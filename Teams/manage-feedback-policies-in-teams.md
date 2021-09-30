@@ -16,13 +16,13 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come usare i criteri di feedback per controllare se Teams utenti dell'organizzazione possono inviare feedback sulle Teams a Microsoft.
-ms.openlocfilehash: 582c5e39fca8dc37cefe8b480b2ff886779f6fa0
-ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
+description: Informazioni su come usare i criteri di feedback per controllare se Teams utenti dell'organizzazione possono inviare feedback su Teams a Microsoft.
+ms.openlocfilehash: 2357af358dad4407fd401b08ff75dfc2560593a2
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942101"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60013010"
 ---
 # <a name="manage-feedback-policies-in-microsoft-teams"></a>Gestire i criteri di feedback in Microsoft Teams
 
@@ -35,16 +35,17 @@ Gli utenti dell'organizzazione possono inviare feedback su Microsoft Teams per f
 
 **Caratteristica **Invia feedback****
 
-Gli utenti possono inviare commenti e suggerimenti su Teams a Microsoft andando su **Come** inviare feedback in Teams  >   desktop e Web.
+Gli utenti possono inviare commenti e suggerimenti su Teams inviare commenti a Microsoft facendo clic su **Invia** feedback in Teams  >   desktop e Web.
 
 
 ![Opzione Invia feedback in Teams](media/manage-feedback-policies-in-teams-give-feedback.png)
 
-Accedere al feedback su dispositivi **mobili usando Impostazioni** Guida &  >  **feedback**  >  **Inviare feedback**.
+Accedere ai feedback su dispositivi **mobili usando Impostazioni** guida &  >  **feedback**  >  **Inviare feedback**.
 
 ![Opzione Invia feedback in Teams per dispositivi mobili](media/feedback3.jpg)
 
  I dati inviati tramite Invia **feedback** e Invia **feedback** sono considerati come "Dati di supporto" ai sensi del contratto di Microsoft 365 o Office 365, incluse le informazioni che altrimenti verrebbero considerate "Dati dei clienti" o "Dati personali".
+
 
 
 **Sondaggi**
@@ -66,7 +67,9 @@ Per gestire i criteri di feedback, usare PowerShell. Usare il cmdlet [ **New-CsT
 Per disattivare e attivare le funzionalità, impostare i parametri seguenti:
 
  - **Inviare commenti** e suggerimenti: impostare **il parametro userInitiatedMode** su **enabled** per consentire agli utenti a cui è assegnato il criterio di inviare feedback. Se si imposta il **parametro su disabled,** la caratteristica viene disattivata e gli utenti a cui è assegnato il criterio non hanno la possibilità di inviare commenti e suggerimenti.
+
  - **Sondaggi:** impostare il **parametro receiveSurveysMode** su **enabled** per consentire agli utenti a cui è assegnato il criterio di ricevere il sondaggio. Per fare in modo che gli utenti ricevano il sondaggio e consentano loro di rifiutare esplicitamente, impostare il parametro **su enabledUserOverride**. In Teams, gli utenti possono quindi passare a Impostazioni privacy e scegliere se partecipare  >   ai sondaggi. Se si imposta il **parametro su disabled,** la caratteristica viene disattivata e gli utenti a cui è assegnato il criterio non riceveranno il sondaggio.
+
  - **Posta** elettronica: usare il flag **AllowEmailCollection** per aggiungere un campo di posta elettronica.
  - **Raccolta log:** usare il flag **AllowLogCollection** per aggiungere il consenso esplicito per la raccolta di log per gli utenti. La raccolta log è attualmente abilitata solo per dispositivi mobili. Per altre informazioni sui dati condivisi tramite i log, vedere altre [informazioni.](https://go.microsoft.com/fwlink/?linkid=2168178)
 

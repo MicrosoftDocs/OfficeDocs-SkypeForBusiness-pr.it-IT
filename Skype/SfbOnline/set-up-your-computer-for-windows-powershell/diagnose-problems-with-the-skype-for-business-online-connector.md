@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - PowerShell
 description: Troubleshoot creating a remote PowerShell session to connect to Skype for Business Online, including Import-Module, concurrent shell, Live ID, and permission errors.
-ms.openlocfilehash: 9157c556eaa2952adf2b67a514eebfb1a9d3abff
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b585a1d4e830fdd692c85f48fbc3d4ae7b65ab57
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58617092"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60013320"
 ---
 # <a name="diagnose-connection-problems-with-the-skype-for-business-online-connector"></a>Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
 
@@ -51,13 +51,6 @@ ms.locfileid: "58617092"
 - [Il numero massimo di shell simultanee per questo utente in Skype for Business Online è stato superato](#the-maximum-number-of-concurrent-shells-for-this-user-in-skype-for-business-online-has-been-exceeded)
 
 - [È stato superato il numero massimo di shell simultanee per questo tenant in Skype for Business Online](#the-maximum-number-of-concurrent-shells-for-this-tenant-in-skype-for-business-online-has-been-exceeded)
-    
-
-> [!IMPORTANT]
-> Per impostazione predefinita, le sessioni di PowerShell si verificano dopo 60 minuti. Per riconnettersi, è necessario chiudere la sessione e avviare una nuova sessione di PowerShell. Di recente è stata avviata una nuova versione di [Skype for Business Online, modulo Windows PowerShell (2046.123 - Pubblicato il 2/10/2019),](https://www.microsoft.com/download/details.aspx?id=39366)che include un nuovo cmdlet denominato **Enable-CsOnlineSessionForReconnection** che riduce il problema di timeout di 60 minuti.
-> La sessione di PowerShell si riconnette ed esegue l'autenticazione, consentendone il nuovo utilizzo senza dover avviare una nuova istanza per riconnettersi.
-
-
 
 ## <a name="import-module-error-caused-by-windows-powershell-execution-policy"></a>Errore di Import-Module causato dal criterio di esecuzione di Windows PowerShell
 <a name="BKMKPowerShellExecutionPolicy"> </a>
@@ -77,14 +70,14 @@ Il criterio di esecuzione di PowerShell consente di determinare quali file di co
 
 Il Modulo del connettore di Skype for Business Online può essere eseguito solo in Windows PowerShell 3.0. Se si prova a importare il modulo in una versione precedente di PowerShell, il processo di importazione non riuscirà con un messaggio di errore simile al seguente:
   
-  - **Errore:** *Import-Module: la versione di PowerShell caricata è '2.0'. Il modulo 'D: Programmi File comuni \\ \\ Microsoft Lync Server \\ 2013 Moduli LyncOnlineConnectorLyncOnlineConnector.psd1' richiede una versione minima di \\ \\ \\ PowerShell '3.0' per l'esecuzione. Verificare l'installazione di PowerShell e riprovare.*
+  - **Errore:** *Import-Module: la versione di PowerShell caricata è '2.0'. Il modulo 'D: Programmi File comuni \\ \\ Microsoft Lync Server \\ 2013 \\ Moduli \\ LyncOnlineConnector LyncOnlineConnector.psd1' richiede una versione minima di \\ PowerShell '3.0' per l'esecuzione. Verificare l'installazione di PowerShell e riprovare.*
 
 - **Soluzione:** l'unico modo per risolvere il problema è installare Windows PowerShell 3.0, disponibile nell'Area download Microsoft all'indirizzo [https://www.microsoft.com/download/details.aspx?id=34595](https://www.microsoft.com/download/details.aspx?id=34595) .
   
 ## <a name="modern-authentication-fails-when-winrm-basic-authentication-has-been-disabled"></a>L'autenticazione moderna non riesce quando l'autenticazione di base di WinRM è stata disabilitata
 <a name="BKMKWinRMBasicAuth"> </a>
 
-La versione più recente del modulo Skype for Business Online Connector usa l'autenticazione moderna, ma il client Windows Remote Management (WinRM) sottostante deve essere configurato per consentire l'autenticazione di base.  L'autenticazione moderna usa i token del portatore, che in genere vengono passati *nell'intestazione Authorization: Bearer.* Windows PowerShell, su cui viene Skype for Business PowerShell, non consente la modifica dell'intestazione.  Al contrario, Skype for Business PowerShell usa *l'intestazione Authorization: Basic* per passare il token del portatore.
+La versione più recente del modulo Skype for Business Online Connector usa l'autenticazione moderna, ma il client Windows Remote Management (WinRM) sottostante deve essere configurato per consentire l'autenticazione di base.  L'autenticazione moderna usa i token del portatore, che in genere vengono passati *nell'intestazione Authorization: Bearer.* Windows PowerShell, su cui viene Skype for Business PowerShell, non consente la modifica di questa intestazione.  Al contrario, Skype for Business PowerShell usa *l'intestazione Authorization: Basic* per passare il token del portatore.
 
 Vedere [Scaricare e installare Windows PowerShell](./download-and-install-windows-powershell-5-1.md) per istruzioni su come abilitare Gestione remota Windows per l'autenticazione di base.
 
@@ -92,7 +85,7 @@ Vedere [Scaricare e installare Windows PowerShell](./download-and-install-window
 <a name="BKMKFailedConnect"> </a>
 
 > [!WARNING] 
-> L'autenticazione Live ID è stata deprecata per Skype For Business online Connector. Usare il Teams di PowerShell per gestire il tenant online. Quando si gestiscono ambienti ibridi, eseguire l'aggiornamento all'aggiornamento cumulativo più recente o usare l'autenticazione oAuth.
+> L'autenticazione Live ID è stata deprecata per Skype For Business online Connector. Usare il Teams PowerShell per gestire il tenant online. Quando si gestiscono ambienti ibridi, eseguire l'aggiornamento all'aggiornamento cumulativo più recente o usare l'autenticazione oAuth.
 
 Sono in genere tre i motivi della non riuscita di un tentativo di connessione, con l'errore riportato di seguito:
 
@@ -118,7 +111,7 @@ Uno dei prerequisiti per l'uso di PowerShell per la gestione di Skype for Busine
 
 - **Errore:** *Get-CsWebTicket: impossibile caricare il modulo Live ID. Verificare che sia installata la versione corretta dell'assistente per l'accesso a Live Id.*
 
-- **Soluzione:** l Microsoft Online Services assistente per l'accesso è disponibile nell'Area download Microsoft [all'indirizzo Microsoft Online Services Sign-In Assistant for IT Professionals RTW](https://www.microsoft.com/download/details.aspx?id=28177)
+- **Risoluzione:** l Microsoft Online Services assistente per l'accesso è disponibile nell'Area download Microsoft [all'indirizzo Microsoft Online Services Sign-In Assistant for IT Professionals RTW](https://www.microsoft.com/download/details.aspx?id=28177)
 
 ## <a name="logon-failed-for-the-user"></a>Accesso non riuscito per l'utente
 <a name="BKMKLogonFailed"> </a>

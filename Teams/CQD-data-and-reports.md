@@ -22,12 +22,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni sui dati e i report disponibili in Microsoft Call Quality Dashboard (CQD).
-ms.openlocfilehash: e184137c927361b1a557973d4ac8e55ea49cf1ea
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 0f54b6c3c69d65b12aa248f7180dec3617273857
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58731805"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60014620"
 ---
 # <a name="data-and-reports-in-call-quality-dashboard-cqd"></a>Dati e report in Call Quality Dashboard (CQD)
 
@@ -38,12 +38,12 @@ Microsoft Call Quality Dashboard (CQD) usa un feed di dati in tempo quasi reale 
 
 È possibile accedere ai dati CQD in diversi modi. Scegli quello più adatto alle tue esigenze:
 
-|  |  |
+|&nbsp;|&nbsp;|
 |---------|---------|
-|Teams di amministrazione [( https://admin.teams.microsoft.com) ](https://admin.teams.microsoft.com)    | I dati CQD  sono inclusi nella pagina Utenti dell'interfaccia di amministrazione di Teams, che mostra i dati più comuni necessari in un formato di facile lettura. Non è possibile personalizzare i dati CQD trovati in **Utenti**.  |
+|Teams di amministrazione [ https://admin.teams.microsoft.com) (](https://admin.teams.microsoft.com)    | I dati CQD  sono inclusi nella pagina Utenti dell'interfaccia di amministrazione di Teams, che mostra i dati più comuni necessari in un formato di facile lettura. Non è possibile personalizzare i dati CQD trovati in **Utenti**.  |
 |Portale CQD [( https://cqd.teams.microsoft.com) ](https://cqd.teams.microsoft.com)     | Riepilogo efficace e report dettagliati che soddisfano la maggior parte delle esigenze, con filtri drill-through. È anche possibile personalizzare i report nel portale CQD. <br><br>È possibile [ottenere due modelli di report CQD](#import-the-cqd-report-templates) che consentono di analizzare i dati nel portale CQD.       |
-|Power BI     | Usare query dirette per visualizzare i dati CQD in Power BI usando modelli Power BI [personalizzati.](CQD-Power-BI-query-templates.md) [Scaricare Power BI di query per CQD.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true)<br><br>È anche possibile [usare l'API REST per accedere ai dati CQD](/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power BI. Usare questo metodo se si vogliono scaricare i dati CQD in modo da poterlo usare offline. L'uso di questo metodo è vantaggioso per prestazioni migliori, particolarmente utili per set di dati di grandi dimensioni che Power BI quando si è online.       |
-|API di Microsoft Graph     | Accedere ai dati sulla qualità delle chiamate manualmente usando [l'API Graph chiamata](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta). Si tratta del metodo più complesso, ma offre il maggior controllo e flessibilità nell'analisi dei dati sulla qualità delle chiamate. Ad esempio, se è necessario unirsi ad altri dati per l'organizzazione, è possibile usare l'API Graph per creare un modello di dati e incorporare i dati sulla qualità delle chiamate.        |
+|Power BI     | Usare query dirette per visualizzare i dati CQD in Power BI usando modelli Power BI [personalizzati.](CQD-Power-BI-query-templates.md) [Scaricare Power BI di query per CQD](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true).<br><br>È anche possibile [usare l'API REST per accedere ai dati CQD](/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power BI. Usare questo metodo se si vogliono scaricare i dati CQD in modo da poterlo usare offline. Il vantaggio dell'uso di questo metodo è un miglioramento delle prestazioni, particolarmente utile per set di dati di grandi dimensioni che Power BI quando si è online.       |
+|API di Microsoft Graph     | Accedere ai dati sulla qualità delle chiamate usando [l'API Graph.](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta) Si tratta del metodo più complesso, ma offre il maggior controllo e flessibilità nell'analisi dei dati sulla qualità delle chiamate. Ad esempio, se è necessario unirsi ad altri dati per l'organizzazione, è possibile usare l'API Graph per creare un modello di dati e incorporare i dati sulla qualità delle chiamate.        |
 
 ## <a name="import-the-cqd-report-templates"></a>Importare i modelli di report CQD
 
@@ -118,7 +118,7 @@ Per impostazione predefinita, il giorno corrente del mese viene usato come ultim
 
 Il riepilogo predefinito e i report CQD dettagliati possono essere tutti necessari per gestire la qualità delle chiamate per l'organizzazione. Se necessario, è possibile [creare report personalizzati.](#create-custom-detailed-reports) 
 
-Se si vuole usare Power BI per analizzare i dati CQD, vedere Usare Power BI per analizzare i dati [di CQD per](CQD-Power-BI-query-templates.md)Teams .
+Se si vuole usare Power BI per analizzare i dati CQD, vedere Usare Power BI per analizzare i dati [di CQD](CQD-Power-BI-query-templates.md)per Teams .
 
 |Funzionalità|Report di riepilogo|Report dettagliati|
 |:--- |:--- |:--- |
@@ -141,12 +141,12 @@ Se si vuole usare Power BI per analizzare i dati CQD, vedere Usare Power BI per 
  
 ### <a name="select-product-data-to-see-in-reports"></a>Selezionare i dati di prodotto da visualizzare nei report
 
-Nei report Riepilogo e Location-Enhanced prodotti è  possibile usare l'elenco a discesa Filtro prodotti per visualizzare tutti i dati di prodotto, solo Microsoft Teams dati o solo Skype for Business online.
+Nei report Riepilogo e Location-Enhanced, è possibile  usare l'elenco a discesa Filtro prodotti per visualizzare tutti i dati di prodotto, solo Microsoft Teams dati o solo Skype for Business online.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot: mostra le opzioni del controllo Filtro prodotti.](media/206ad818-0f72-4c8e-b25e-3cc8fcfbef05.png)
   
-Nei report dettagliati è  possibile usare la dimensione Teams per filtrare i dati Microsoft Teams o Skype for Business online.
+In Report dettagliati è  possibile usare la dimensione Teams per filtrare i dati Microsoft Teams o Skype for Business online.
 
 ## <a name="summary-reports"></a>Report di riepilogo
 
@@ -188,7 +188,7 @@ Usare la scala a destra per misurare i valori di % scarsa.
   
 Il volume complessivo dello stream consente di determinare quanto sono rilevanti le percentuali di scarsa qualità calcolate. Minore è il volume dei flussi complessivi, meno affidabili sono i valori percentuali di scarsa qualità riportati.
   
-### <a name="server-client-tab-and-client-client-tabs"></a>Server-Client e Client-Client schede
+### <a name="server-client-tab-and-client-client-tabs"></a>Server-Client schede e Client-Client testo
 
 Queste due schede forniscono dettagli per i flussi che hanno avuto luogo nei loro scenari da endpoint a endpoint. La Server-Client contiene quattro sezioni comprimibile che rappresentano quattro scenari in cui i flussi multimediali fluirebbero.
   
@@ -221,7 +221,7 @@ Come indicano i nomi, i criteri di classificazione si basano sul tipo di conness
   
 ## <a name="tenant-data-information"></a>Informazioni sui dati del tenant
 
-Il dashboard Report di riepilogo CQD include una pagina Upload dati tenant, accessibile selezionando Dati **tenant Upload** dal menu impostazioni nell'angolo in alto **a** destra. Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio:
+Il dashboard Report di riepilogo CQD include una pagina Upload Tenant **Data,** accessibile selezionando **Tenant Data Upload** dal menu delle impostazioni nell'angolo in alto a destra. Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio:
 
 - Mappa dell'indirizzo IP e delle informazioni geografiche.
 - Mappa di ogni punto di accesso wireless e del relativo indirizzo MAC.
@@ -252,7 +252,7 @@ Se i report CQD predefiniti non soddisfano le proprie esigenze, usare queste ist
 Nell'elenco a discesa dei report nella parte superiore della schermata visualizzata all'accesso nella schermata Report di riepilogo \( selezionare Report  \) **dettagliati** e quindi **Nuovo**. Fare **clic su** Modifica in un report per visualizzare l'editor di query. Ogni report è supportato da una query nel cubo. Un report è una visualizzazione dei dati restituiti dalla query. L'editor di query consente di modificare queste query e le opzioni di visualizzazione del report.
 
 > [!IMPORTANT]
-> L'intervallo di rete può essere usato per rappresentare una supernet (combinazione di più subnet con un singolo prefisso di routing). Tutti i nuovi caricamenti di edifici verranno controllati per verificare la sovrapposizione degli intervalli. Se in precedenza è stato caricato un file di edificio, è consigliabile scaricare il file corrente e ricaricarlo per identificare eventuali sovrapposizioni e risolvere il problema prima di caricarlo di nuovo. Qualsiasi sovrapposizione nei file caricati in precedenza può comportare il mapping errato delle subnet agli edifici nei report. Alcune implementazioni VPN non riportano in modo accurato le informazioni sulla subnet. Quando si aggiunge una subnet VPN al file di edificio, invece di una voce per la subnet, è consigliabile aggiungere voci separate per ogni indirizzo della subnet VPN come rete a 32 bit separata. Ogni riga può avere gli stessi metadati di compilazione. Ad esempio, invece di una riga per 172.16.18.0/24, è necessario avere 256 righe, con una riga per ogni indirizzo compreso tra 172.16.18.0/32 e 172.16.18.255/32 inclusi.
+> L'intervallo di rete può essere usato per rappresentare una supernet (combinazione di più subnet con un singolo prefisso di routing). Tutti i nuovi caricamenti di edifici verranno controllati per verificare la sovrapposizione degli intervalli. Se in precedenza è stato caricato un file di edificio, è consigliabile scaricare il file corrente e ricaricarlo per identificare eventuali sovrapposizioni e risolvere il problema prima di caricarlo di nuovo. Qualsiasi sovrapposizione nei file caricati in precedenza può comportare il mapping errato delle subnet agli edifici nei report. Alcune implementazioni VPN non segnalano in modo accurato le informazioni sulla subnet. Quando si aggiunge una subnet VPN al file di edificio, invece di una voce per la subnet, è consigliabile aggiungere voci separate per ogni indirizzo nella subnet VPN come rete a 32 bit separata. Ogni riga può avere gli stessi metadati di compilazione. Ad esempio, invece di una riga per 172.16.18.0/24, è necessario avere 256 righe, con una riga per ogni indirizzo compreso tra 172.16.18.0/32 e 172.16.18.255/32 inclusi.
 >
 > La colonna VPN è facoltativa e il valore predefinito è 0.  Se il valore della colonna VPN è impostato su 1, la subnet rappresentata da tale riga verrà completamente espansa in modo che corrisponda a tutti gli indirizzi IP all'interno della subnet.  Usare questa opzione con parsimonio e solo per le subnet VPN, in quanto l'espansione completa di queste subnet avrà un impatto negativo sui tempi delle query per le query che implicano la creazione di dati.
 
@@ -311,7 +311,7 @@ Per selezionare più valori di filtro, iniziare aggiungendo un nuovo filtro al r
 
 ![Screenshot dell'aggiunta di un filtro a selezione multipla.](media/qerguide-image-addmultiselectfilter.png)
 
-Fare quindi clic **su Cerca** (un'icona a forma di lente di ingrandimento accanto al nuovo filtro). Verranno visualizzati un campo di testo e diverse opzioni, tra cui **Seleziona tutto** e **Inverti.** Immettere un valore e fare clic **su Cerca** accanto al campo per eseguire la ricerca. In alternativa, lasciare vuoto il campo di testo e fare clic **su Cerca** per visualizzare fino alle prime 100 opzioni.
+Quindi, fare **clic su Cerca** (un'icona a forma di lente di ingrandimento accanto al nuovo filtro). Verranno visualizzati un campo di testo e diverse opzioni, tra cui **Seleziona tutto** e **Inverti.** Immettere un valore e fare clic **su Cerca** accanto al campo per eseguire la ricerca. In alternativa, lasciare vuoto il campo di testo e fare clic **su Cerca** per visualizzare fino alle prime 100 opzioni.
 
 ```powershell
 /filter/[AllStreams].[Second Tenant Id]\|[YOUR TENANT ID HERE]
@@ -356,7 +356,7 @@ L'intero URL sarà simile al seguente:
 
 `https://cqd.teams.microsoft.com/spd/#/Dashboard/2624085/2018-9/filter/[AllStreams].[Is%20Teams]|[True]`
 
-Per applicare filtri URL con valori a selezione multipla, separare ogni valore con un carattere barra verticale ( | ). Ad esempio:
+Per applicare filtri URL con valori a selezione multipla, separare ogni valore con un carattere pipe ( | ). Ad esempio:
 
 `filter/[AllStreams].[Media%20Type]|[Video]|[Audio]|[VBSS]`
 

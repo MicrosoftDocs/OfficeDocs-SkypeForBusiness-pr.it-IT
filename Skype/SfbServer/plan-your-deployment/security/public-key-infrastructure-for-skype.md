@@ -12,26 +12,26 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 737c8a25-23e9-4494-ab76-5a7b729b44ca
-description: Skype for Business Server si basa sui certificati per l'autenticazione del server e per stabilire una catena di trust tra client e server e tra i diversi ruoli del server. Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 e Windows Server 2008 Public Key Infrastructure (PKI) fornisce l'infrastruttura per stabilire e convalidare questa catena di trust.
-ms.openlocfilehash: 733b1bb946147edd184a7b0fecb16ffab2adba51
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Skype for Business Server si basa sui certificati per l'autenticazione del server e per stabilire una catena di trust tra client e server e tra i diversi ruoli del server. L'infrastruttura Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 e Windows Server 2008 Public Key Infrastructure (PKI) fornisce l'infrastruttura per stabilire e convalidare questa catena di trust.
+ms.openlocfilehash: b1e9e7844641fae3c864f9ae15e7a639cdeb8724
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58627928"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60014700"
 ---
 # <a name="public-key-infrastructure-for-skype-for-business-server"></a>Infrastruttura a chiave pubblica per Skype for Business Server
  
-Skype for Business Server si basa sui certificati per l'autenticazione del server e per stabilire una catena di trust tra client e server e tra i diversi ruoli del server. Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 e Windows Server 2008 Public Key Infrastructure (PKI) fornisce l'infrastruttura per stabilire e convalidare questa catena di trust.
+Skype for Business Server si basa sui certificati per l'autenticazione del server e per stabilire una catena di trust tra client e server e tra i diversi ruoli del server. L'infrastruttura Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 e Windows Server 2008 Public Key Infrastructure (PKI) fornisce l'infrastruttura per stabilire e convalidare questa catena di trust.
   
 I certificati sono ID digitali. Identificano un server per nome e ne specificano le proprietà. Per assicurarsi che le informazioni su un certificato siano valide, il certificato deve essere emesso da un'autorità di certificazione attendibile dai client o da altri server che si connettono al server. Se il server si connette solo ad altri client e server su una rete privata, la CA può essere una CA globale (enterprise). Se il server interagisce con entità all'esterno della rete privata, potrebbe essere necessaria una CA pubblica.
   
-Anche se le informazioni del certificato sono valide, deve esistere la possibilità di verificare che il server che presenta il certificato sia effettivamente quello rappresentato dal certificato. È qui che entra Windows'infrastruttura a chiave pubblica.
+Anche se le informazioni del certificato sono valide, deve esistere la possibilità di verificare che il server che presenta il certificato sia effettivamente quello rappresentato dal certificato. È qui che entra Windows'infrastruttura AKI.
   
-Ogni certificato è collegato a una chiave pubblica. Il server denominato nel certificato contiene una chiave privata corrispondente nota solo a esso. Un client o un server che stabilisce la connessione utilizza la chiave pubblica per crittografare in modo casuale alcune informazioni e le invia al server. Se il server decrittografa le informazioni e le restituisce come testo normale, l'entità che effettua la connessione può essere sicura che il server conserci la chiave privata al certificato e pertanto sia il server denominato nel certificato.
+Ogni certificato è collegato a una chiave pubblica. Il server denominato nel certificato contiene una chiave privata corrispondente nota solo a esso. Un client o un server che stabilisce la connessione utilizza la chiave pubblica per crittografare in modo casuale alcune informazioni e le invia al server. Se il server decrittografa le informazioni e le restituisce come testo normale, l'entità che effettua la connessione può essere sicura che il server conserci la chiave privata al certificato e quindi sia il server denominato nel certificato.
   
 > [!NOTE]
-> Non tutte le CA pubbliche sono conformi ai requisiti dei Skype for Business Server certificati. È consigliabile fare riferimento all'elenco dei fornitori certificati di autorità di certificazione pubblica per le esigenze dei certificati pubblici. Per informazioni dettagliate, vedere [Unified Communications Certificate Partners.](https://go.microsoft.com/fwlink/p/?LinkId=140898) 
+> Non tutte le CA pubbliche sono conformi ai requisiti dei Skype for Business Server certificati. È consigliabile fare riferimento all'elenco dei fornitori certificati di autorità di certificazione pubblica per le esigenze dei certificati pubblici. 
   
 ## <a name="crl-distribution-points"></a>Punti di distribuzione CRL
 
@@ -39,6 +39,6 @@ Skype for Business Server tutti i certificati server devono contenere uno o più
   
 ## <a name="enhanced-key-usage"></a>Utilizzo chiavi avanzato
 
-Skype for Business Server tutti i certificati server per supportare l'utilizzo chiavi avanzato (EKU) ai fini dell'autenticazione server. La configurazione del campo EKU per l'autenticazione server significa che il certificato è valido allo scopo di autenticare i server. Questo EKU è essenziale per MTLS. È possibile avere più di una voce nell'EKU, abilitando il certificato per più scopi.
+Skype for Business Server richiede che tutti i certificati server supportino l'utilizzo chiavi avanzato (EKU) ai fini dell'autenticazione server. La configurazione del campo EKU per l'autenticazione server significa che il certificato è valido allo scopo di autenticare i server. Questo EKU è essenziale per MTLS. È possibile avere più di una voce nell'EKU, abilitando il certificato per più scopi.
   
 

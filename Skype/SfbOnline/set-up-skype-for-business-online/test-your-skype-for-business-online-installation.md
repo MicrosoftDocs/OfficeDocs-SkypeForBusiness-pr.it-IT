@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: 'Learn to save time, support calls and increase satisfaction by setting up test accounts and computers, and testing dial-in conferencing, online features such as person-to-person calls, conferencing, and sign in and out. '
-ms.openlocfilehash: a022ad3db1890a71016d5ebffeccb0aaf30441ca
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: a8efe71507b6270181fb0451f06f10a80c7a578b
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58729905"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60014570"
 ---
 # <a name="test-your-skype-for-business-online-installation"></a>Testare l'installazione di Skype for Business online
 
@@ -34,7 +34,7 @@ ms.locfileid: "58729905"
 
 Ecco quello che occorre:
 
-- Almeno tre Microsoft 365 o Office 365 account (il tuo e almeno altri due).
+- Almeno tre Microsoft 365 o Office 365 (il tuo e almeno altri due).
 
 - Un computer per ogni account di prova. Impostare tali computer con la configurazione tipica dei computer dell'organizzazione.
 
@@ -53,7 +53,7 @@ Ecco quello che occorre:
 ## <a name="set-up-test-accounts"></a>Configurare gli account di prova
 <a name="__toc328126910"> </a>
 
-1. Passare a **Amministratore Microsoft 365** o Office 365 utenti e gruppi  >   e quindi selezionare   >   ![ Aggiungi.](../images/328ffb57-5f31-430a-b653-4a6b8e76d338.png) e immetti le informazioni richieste.
+1. Passare a **Amministratore Microsoft 365** o Office 365 utenti e gruppi e  >   quindi selezionare   >   ![ Aggiungi.](../images/328ffb57-5f31-430a-b653-4a6b8e76d338.png) e immetti le informazioni richieste.
 
 2. Al passaggio 4 (Posta elettronica) immettere il proprio indirizzo di posta elettronica. Verrà creato un record che contiene il nome utente e la password per il nuovo utente.
 
@@ -83,7 +83,7 @@ Dopo essere stati configurati per i servizi di audioconferenza, gli utenti ricev
 
 1. Fare clic **su Utenti audioconferenza**  >  .
 
-2. Fare clic sui nomi degli utenti da configurare per i servizi di conferenza telefonica con accesso esterno e quindi su **Modifica** ![ ](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png) modifica.
+2. Fare clic sui nomi degli utenti da configurare per i servizi di conferenza telefonica con accesso esterno e quindi fare clic **su Modifica** ![ ](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png) modifica.
 
 3. Selezionare il proprio provider di servizi di audioconferenza, digitare le informazioni richieste e fare clic su **Salva**.
 
@@ -107,7 +107,7 @@ Verifica che le funzionalità principali di Skype for Business online funzionino
 |[Effettuare l'accesso e disconnettersi da Lync Online](https://support.office.com/article/1f0fb5f3-102e-4397-a5c4-f878cc0009d6) <br/> |Viene visualizzata la schermata di accesso di Skype for Business  <br/> |
 |[Effettuare l'accesso e disconnettersi da Lync Online](https://support.office.com/article/1f0fb5f3-102e-4397-a5c4-f878cc0009d6) <br/> |La finestra di Skype for Business viene chiusa e l'icona di Skype for Business non è più visualizzata nell'area di notifica di Windows.  <br/> |
 
-Non riesci ad accedere? Vedi [Come risolvere i problemi di accesso a Skype for Business online](https://support.microsoft.com/kb/2541980).
+Non riesci ad accedere? Vedere [Risoluzione dei Skype for Business di accesso per gli utenti.](/skypeforbusiness/troubleshoot/online-sign-in/troubleshoot-sign-in-issues-for-users)
 
  **Contatti, presenza e messaggistica istantanea**
 

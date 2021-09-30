@@ -14,13 +14,13 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - seo-marvel-mar2020
-description: Usare una fotocamera contenuto in una Microsoft Teams room, che interagisce con il software di elaborazione delle immagini per consentire ai relatori di disegnare su una lavagna analogica.
-ms.openlocfilehash: ae919e50e7e38394e3e9af70a927d5bcdd959f50
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: Usare una fotocamera del contenuto in una Microsoft Teams room, che interagisce con il software di elaborazione delle immagini per consentire ai relatori di disegnare su una lavagna analogica.
+ms.openlocfilehash: 61c0a1a36630fa31190e57de08379d6e80321a34
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726015"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60013160"
 ---
 # <a name="content-cameras"></a>Videocamere di contenuto
 
@@ -65,7 +65,7 @@ La distanza della fotocamera dalla lavagna si combina con la risoluzione della f
 | 100°        | 0,38 m| 0,77 m   | 1,15 m   |1,53 m   |1,61 m |
 | 110°        | 0,32 m| 0,64 m   | 0,96 m   |1,28 m    |1,31 m |
 | 120°        | 0,26 m| 0,52 m   | 0,79 m   |1,05 m   |1,10 m |
-|             |               |                  |                  |        |                    |                  |
+             
 
 La distanza tra la fotocamera del contenuto e il muro su cui è montata la lavagna dipende dall'HFoV del modello di fotocamera, che varia. Installare fotocamere con un HFoV più grande (ad esempio 120 gradi) più vicino al muro e fotocamere con un HFoV più stretto più lontano dal muro. Controllare l'HFoV prima di iniziare a installare la fotocamera scelta.
 
@@ -86,9 +86,9 @@ In caso contrario, fare riferimento al marketplace Microsoft Teams dispositivi p
 
 ## <a name="camera-settings"></a>Impostazioni fotocamera
 
-Dopo aver installato la fotocamera nella sala, configurarla nella console Microsoft Teams Rooms chat room:
+Dopo aver installato la fotocamera nella sala, configurarla nella console di Microsoft Teams Rooms chat room:
 
-1. Seleziona **Impostazioni** ![ Impostazioni icona. Accedi ](../media/70f1b43f-16d6-4172-9139-71d845c4ed5c.png) come amministratore e seleziona **Dispositivo Impostazioni**.
+1. Selezionare **Impostazioni** ![ Impostazioni icona. Accedere come amministratore e selezionare ](../media/70f1b43f-16d6-4172-9139-71d845c4ed5c.png) Dispositivo **Impostazioni**.
 2. Nella sezione **Impostazioni predefinite fotocamera** selezionare la fotocamera  del contenuto e verificare che sia selezionata l'opzione Miglioramenti al contenuto.
 3. (Facoltativo) Se la fotocamera è stata installata capovolta perché è stata montata dal soffitto, selezionare l'opzione Ruota fotocamera contenuto **di 180°.**
 4. Selezionare **Salva e esci.**

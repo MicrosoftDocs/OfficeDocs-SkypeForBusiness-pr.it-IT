@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: "Informazioni su come passare da un'interfaccia Skype for Business client Lync a un'interfaccia utente di Lync usando PowerShell in Microsoft 365 o Office 365 "
-ms.openlocfilehash: 2345e30bf43a00342b1238533884d749e32095f1
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: ecb494ea274a9652024056c1b0725159565d22af
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58732265"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60014990"
 ---
 # <a name="switching-between-the-skype-for-business-and-the-lync-client-user-interfaces"></a>Passaggio tra le interfacce utente del client Skype for Business e del client Lync
 
@@ -41,7 +41,7 @@ Per le organizzazioni di Skype for Business Online, è possibile usare Remote Po
   
 ## <a name="switching-the-skype-for-business-user-interface-for-users"></a>Cambio dell'interfaccia utente di Skype for Business per gli utenti
 
-Il modulo Windows PowerShell per Skype for Business online consente di creare una sessione remota di Windows PowerShell che si connette a Skype for Business online. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft nel [modulo Windows PowerShell per Skype for Business online.](https://go.microsoft.com/fwlink/?LinkId=294688) Per altre informazioni, vedi[Configurazione del computer per la gestione di Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
+Il modulo Windows PowerShell per Skype for Business online consente di creare una sessione remota di Windows PowerShell che si connette a Skype for Business online. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft all'indirizzo Scaricare e installare il modulo [Teams PowerShell.](../set-up-your-computer-for-windows-powershell/download-and-install-the-skype-for-business-online-connector.md) Per altre informazioni, vedi[Configurazione del computer per la gestione di Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
   
 > [!IMPORTANT]
 > L'impostazione del criterio  _Global_ per il cambio dell'interfaccia utente non verrà applicata a un utente che ha già un criterio personalizzato applicato. Per consentire il cambio dell'interfaccia utente, sarà necessario eseguire il seguente comando per ciascun utente che ha un criterio personalizzato applicato:
@@ -135,16 +135,16 @@ Questa tabella mostra l'esperienza utente quando il criterio viene applicato per
 |:-----|:-----|
 |Il criterio non è impostato. |L'utente continuerà a utilizzare l'interfaccia utente del client Skype for Business.|
 |`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI`<br/>|L'utente continuerà a utilizzare l'interfaccia utente del client Skype for Business.|
-|`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`<br/>|All'utente verrà chiesto di passare all'interfaccia Skype for Business client (Lync). Gli utenti possono cambiare interfaccia in un secondo momento.|
+|`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`<br/>|All'utente verrà chiesto di passare all'interfaccia Skype for Business utente del client Skype for Business (Lync). Gli utenti possono cambiare interfaccia in un secondo momento.|
 |`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI -Identity <username>`|L'utente usa l'Skype for Business utente del client. |
-`Grant-CsClientPolicy-PolicyName ClientPolicyDisableSkypeUI -Identity <username>`|All'utente verrà chiesto di passare all'interfaccia Skype for Business client (Lync). L'amministratore potrà in futuro modificare l'impostazione che consentirà agli utenti di passare all'interfaccia utente del client Skype for Business. |
+`Grant-CsClientPolicy-PolicyName ClientPolicyDisableSkypeUI -Identity <username>`|All'utente verrà chiesto di passare all'interfaccia Skype for Business utente del client Skype for Business (Lync). L'amministratore potrà in futuro modificare l'impostazione che consentirà agli utenti di passare all'interfaccia utente del client Skype for Business. |
    
 Questa tabella mostra l'esperienza utente quando il criterio viene modificato:
   
 |**Impostazione del criterio da parte dell'amministratore**|**Interfaccia utente di Skype for Business (Lync)**|**Interfaccia utente di Skype for Business**|
 |:-----|:-----|:-----|
 |`Grant-CsClientPolicy -PolicyName ClientPolicyEnableSkypeUI`|All'utente verrà chiesto di passare all'Skype for Business utente del client.  <br/> |L'utente continuerà a usare l'Skype for Business utente del client.  <br/> |
-|`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`|L'utente continuerà a usare l'Skype for Business (Lync).  <br/> |All'utente verrà chiesto di passare all'interfaccia Skype for Business client (Lync).  <br/> |
+|`Grant-CsClientPolicy -PolicyName ClientPolicyDisableSkypeUI`|L'utente continuerà a usare l'Skype for Business (Lync).  <br/> |All'utente verrà chiesto di passare all'interfaccia Skype for Business utente del client Skype for Business (Lync).  <br/> |
 |Il criterio non è impostato.  <br/> |Se il criterio non è impostato, gli utenti non potranno mai visualizzare l'interfaccia utente del client Skype for Business (Lync). Gli utenti utilizzeranno sempre l'interfaccia utente del client Skype for Business.  <br/> |L'utente continuerà a usare l'Skype for Business utente del client.  <br/> |
    
 Questa tabella visualizza tutti i criteri personalizzati online disponibili. Sono stati creati nuovi criteri per dare agli amministratori la flessibilità di mantenere il vecchio criterio personalizzato durante il passaggio da un flag EnableSkypeUI all'altro. Utilizza i cmdlet indicati in precedenza per concedere agli utenti uno dei seguenti criteri.

@@ -1,5 +1,5 @@
 ---
-title: Valutare la chiamata in Skype for Business Server
+title: Valuta la mia chiamata in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,14 +12,14 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c4e0c905-33a1-49d8-9276-1b338f94d085
 description: 'Riepilogo: informazioni sulla funzionalità Tariffa chiamata in Skype for Business Server.'
-ms.openlocfilehash: 0d084e80c94928fc11af099dbef5ad6cca6537b7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 73a08b0acb32651c42de4ddda9fe12c7ae9f9655
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58586980"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60014140"
 ---
-# <a name="rate-my-call-in-skype-for-business-server"></a>Valutare la chiamata in Skype for Business Server
+# <a name="rate-my-call-in-skype-for-business-server"></a>Valuta la mia chiamata in Skype for Business Server
 
 **Riepilogo:** Informazioni sulla funzionalità Tariffa chiamata in Skype for Business Server.
 
@@ -67,13 +67,13 @@ I dati degli utenti vengono raccolti in due tabelle nel database di monitoraggio
 
 Le definizioni dei token sono codificate come segue:
 
-|||
+|#|Definizione|
 |:-----|:-----|
-|1   <br/> |DistortedSpeech  <br/> |
-|2   <br/> | ElectronicFeedback <br/> |
+|1  <br/> |DistortedSpeech  <br/> |
+|2  <br/> | ElectronicFeedback <br/> |
 |3   <br/> | BackgroundNoise <br/> |
 |4   <br/> |MuffledSpeech  <br/> |
-|5   <br/> |Echo  <br/> |
+|5  <br/> |Echo  <br/> |
 | 21  <br/> | FrozenVideo <br/> |
 |22  <br/> | PixelatedVideo <br/> |
 |23  <br/> | BlurryImage <br/> |

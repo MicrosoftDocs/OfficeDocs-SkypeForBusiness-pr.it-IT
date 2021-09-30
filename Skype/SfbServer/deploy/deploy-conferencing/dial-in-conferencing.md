@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 38d9f168-80b8-46f2-a1c0-becd84e58e73
 description: 'Riepilogo: leggere questo argomento per informazioni su come configurare le conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: a9d48b5232a446f81de1acf14cddfa054f74d488
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 3533220dc84f131b02f180bb863883b371cbf365
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58609953"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60013790"
 ---
 # <a name="configure-dial-in-conferencing-in-skype-for-business-server"></a>Configurare le conferenze telefoniche con accesso esterno in Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come configurare le conferenze telefoniche con accesso esterno in Skype for Business Server.
   
-Dopo aver creato una topologia che include il carico di lavoro per le conferenze telefoniche e le conferenze telefoniche con accesso esterno selezionate, è necessario eseguire passaggi aggiuntivi per configurare le conferenze telefoniche con accesso esterno. Prima di leggere questo argomento, leggere Pianificare le conferenze telefoniche con accesso esterno [in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md), Requisiti hardware e software per le conferenze [in Skype for Business Server](../../plan-your-deployment/conferencing/hardware-and-software-requirements.md)e Diagramma di flusso di distribuzione ed elenco di controllo per le conferenze telefoniche con accesso esterno [.](deploy-conferencing.md#deployment-flowchart-and-checklist-for-dial-in-conferencing) 
+Dopo aver creato una topologia che include il carico di lavoro per le conferenze telefoniche e le conferenze telefoniche con accesso esterno selezionate, è necessario eseguire passaggi aggiuntivi per configurare le conferenze telefoniche con accesso esterno. Prima di leggere questo argomento, leggere Plan [for dial-in conferencing in Skype for Business Server,](../../plan-your-deployment/conferencing/dial-in-conferencing.md) [Hardware and software requirements for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/hardware-and-software-requirements.md)e il [diagramma](deploy-conferencing.md#deployment-flowchart-and-checklist-for-dial-in-conferencing)di flusso e l'elenco di controllo per le conferenze telefoniche con accesso esterno. 
   
 Per configurare le conferenze telefoniche con accesso esterno, è necessario eseguire le attività seguenti:
   
@@ -60,7 +60,7 @@ Gli utenti delle conferenze telefoniche con accesso esterno aderiscono alle conf
   
 Per configurare i dial plan per le conferenze telefoniche con accesso esterno:
   
-- Indipendentemente dal fatto VoIP aziendale, modificare il dial plan globale per aggiungere un'area di conferenza telefonica con accesso esterno e assicurarsi che una regola di normalizzazione converta in modo accurato i numeri di accesso esterno. Per istruzioni dettagliate, vedere [Create or modify a dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md).
+- Indipendentemente dal fatto che si distribuisca VoIP aziendale, modificare il dial plan globale per aggiungere un'area di conferenza telefonica con accesso esterno e assicurarsi che una regola di normalizzazione converta in modo accurato i numeri di accesso esterno. Per istruzioni dettagliate, vedere [Create or modify a dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md).
     
 - Se non è stato distribuito VoIP aziendale, creare dial plan per i numeri di accesso alle conferenze telefoniche con accesso esterno. Assicurarsi di includere un'area di conferenza telefonica con accesso esterno. Per istruzioni dettagliate, vedere [Create or modify a dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md).
     
@@ -126,7 +126,7 @@ Per ulteriori informazioni, vedere [Set-CsDialPlan.](/powershell/module/skype/se
 ## <a name="configure-dial-in-access-numbers"></a>Configurare i numeri di accesso esterno
 <a name="BKMK_ConfigureDialInAccessNumbers"> </a>
 
-Quando si distribuiscono conferenze telefoniche con accesso esterno, è necessario configurare i numeri di telefono che gli utenti possono comporre dalla rete PSTN (Public Switched Telephone Network) per partecipare alla parte audio delle conferenze. Questi numeri di accesso esterno vengono visualizzati negli inviti alle riunioni e nella pagina Web Conferenze telefoniche con accesso esterno Impostazioni.
+Quando si distribuiscono conferenze telefoniche con accesso esterno, è necessario configurare i numeri di telefono che gli utenti possono comporre dalla rete PSTN (Public Switched Telephone Network) per partecipare alla parte audio delle conferenze. Questi numeri di accesso esterno vengono visualizzati negli inviti alle riunioni e nella pagina Web Impostazioni conferenza telefonica con accesso esterno.
   
 Prima di creare numeri di accesso esterno, è necessario pianificare le aree di conferenza telefonica con accesso esterno e quindi configurare i dial plan con le aree geografiche. Per informazioni dettagliate sulle aree geografiche, vedere [Plan for dial-in conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md). Per informazioni dettagliate sulla configurazione dei dial plan per le conferenze telefoniche con accesso [esterno,](../../deploy/deploy-enterprise-voice/dial-plans.md)vedere Create or modify a dial plan in Skype for Business Server .
   
@@ -157,7 +157,7 @@ Prima di creare numeri di accesso esterno, è necessario pianificare le aree di 
     
 6. In **Nome visualizzato** digitare una descrizione per il numero di accesso esterno. Questo è il nome associato al numero di accesso remoto nei risultati Skype for Business ricerca. Questo nome viene visualizzato nel client quando un utente chiama il numero di accesso. 
     
-7. In **URI linea** digitare il numero E.164 del numero di accesso esterno nel formato URI TEL, preceduto dal simbolo + e senza utilizzare spazi. Ad esempio, tel:+14255550200.
+7. In **URI linea** digitare il numero E.164 del numero di accesso esterno nel formato URI TEL, preceduto dal simbolo + e senza utilizzare spazi. Ad esempio, `tel:+14255550200`.
     
     > [!NOTE]
     > Non è possibile riutilizzare lo stesso URI linea per un altro numero di accesso per conferenze con accesso esterno. 
@@ -206,7 +206,7 @@ Nella procedura illustrata in questo argomento viene descritto come assegnare un
   
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo **Cs-UserAdministrator** o **CsAdministrator**.
     
-2.  Apri Skype for Business Server Pannello di controllo.
+2.  Aprire Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
@@ -217,6 +217,6 @@ Nella procedura illustrata in questo argomento viene descritto come assegnare un
 6. In **Telefonia**, nel campo **URI linea** digitare un numero di telefono normalizzato univoco, ad esempio tel:+14255550200).
     
     > [!NOTE]
-    > È  possibile specificare **l'URI** di linea solo se **Telefonia** è impostata su Solo da PC a **PC,** **VoIP aziendale,** Controllo chiamate remote o Controllo chiamate **remote.** 
+    > È possibile specificare **l'URI** di linea solo se **Telefonia** è impostata su Solo da PC a **PC**, **VoIP aziendale** **,** Controllo chiamate remote o Controllo chiamate remote **solo**. 
   
 7. Fare clic su **Commit**.

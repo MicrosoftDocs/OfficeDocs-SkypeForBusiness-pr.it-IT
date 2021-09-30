@@ -95,7 +95,7 @@
 | 9/9/2021 | [Privacy di Microsoft Teams](/MicrosoftTeams/teams-privacy) | modificato |
 | 9/9/2021 | [Visite virtuali con Microsoft Teams e l’app Bookings](/MicrosoftTeams/expand-teams-across-your-org/bookings-virtual-visits) | aggiunto |
 | 9/9/2021 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | modificato |
-| 9/9/2021 | [Guida introduttiva a Teams per le organizzazioni del settore sanitario](/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc) | modificato |
+| 9/9/2021 | [Introduzione a Teams per le organizzazioni sanitarie](/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc) | modificato |
 | 9/10/2021 | [Musica blocco](/MicrosoftTeams/music-on-hold) | aggiunto |
 | 9/10/2021 | [Configurare ServiceNow per Teams Rooms](/MicrosoftTeams/rooms/microsoft-teams-rooms-configure-servicenow) | modificato |
 | 9/10/2021 | [Requisiti per Microsoft Teams Rooms](/MicrosoftTeams/rooms/requirements) | modificato |

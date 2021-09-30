@@ -17,16 +17,16 @@ ms.collection:
 - IT_Skype4B_Hybrid
 ms.assetid: 2979802e-fc6b-4555-bc43-7cd48f6a1d88
 description: 'Riepilogo: informazioni sui passaggi da eseguire per configurare Riunione Skype Broadcast per la distribuzione ibrida Skype for Business Server locale.'
-ms.openlocfilehash: 92e09820d5c2634041ac91a84e97c90dec243a93
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 99ba1733dc8c353dc17f9a4c9a51a9ed00410d27
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596030"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60013710"
 ---
 # <a name="configure-your-on-premises-deployment-for-skype-meeting-broadcast"></a>Configurare la distribuzione locale per Riunione Skype Broadcast
  
-**Riepilogo:** Informazioni sui passaggi da eseguire per configurare Riunione Skype broadcast per la distribuzione ibrida Skype for Business Server locale.
+**Riepilogo:** Informazioni sui passaggi da eseguire per configurare Riunione Skype Broadcast per la distribuzione ibrida Skype for Business Server locale.
   
 Riunione Skype Broadcast è un servizio online che fa parte di Office 365. Se si esegue Skype for Business Server locale e si desidera usare Riunione Skype Broadcast nell'ambiente, è necessario seguire i passaggi di configurazione descritti in questo argomento. Prima di iniziare, l'ambiente deve essere configurato per la distribuzione ibrida con Skype for Business Online. Per ulteriori informazioni, vedere [Plan hybrid connectivity between Skype for Business Server and Skype for Business Online](../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) e Deploy hybrid connectivity between Skype for Business Server and Skype for Business [Online.](../../SfbHybrid/hybrid/configure-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)
   
@@ -40,7 +40,7 @@ Dovrai eseguire le operazioni seguenti per preparare l'ambiente per Riunione Sky
     
 ### <a name="configure-federation-with-skype-for-business-online-resources"></a>Configurare la federazione con Skype for Business online
 
-Per abilitare la federazione con Skype for Business online, è necessario configurare l'accesso esterno per un provider federato SIP. Per eseguire questa operazione utilizzando il Pannello Skype for Business Server di controllo, attenersi alla seguente procedura:
+Per abilitare la federazione con Skype for Business online, è necessario configurare l'accesso esterno per un provider federato SIP. Per eseguire questa operazione utilizzando il Pannello Skype for Business Server di controllo, eseguire la procedura seguente:
   
 1. Avviare il Skype for Business Server di controllo e selezionare **Accesso esterno** a sinistra.
     
@@ -48,14 +48,12 @@ Per abilitare la federazione con Skype for Business online, è necessario config
     
 3. Configurare il nuovo provider con le impostazioni seguenti:
     
-|||
-|:-----|:-----|
-|**Abilita comunicazioni con questo provider:** <br/> |Selezionato  <br/> |
-|**Nome provider:** <br/> |LyncOnlineResources  <br/> |
-|**Servizio Access Edge (FQDN):** <br/> |sipfed.resources.lync.com  <br/> |
-|**Livello di verifica predefinito** <br/> |Consenti agli utenti di comunicare con tutti gli utenti che usano questo provider.  <br/> |
+   - **Abilita comunicazioni con questo provider:** Selezionato
+   - **Nome provider:** LyncOnlineResources
+   - **Servizio Access Edge (FQDN): sipfed.resources.lync.com**
+   - **Livello di verifica predefinito:** Consenti agli utenti di comunicare con tutti gli utenti che usano questo provider. 
    
-È inoltre possibile abilitare la federazione con Skype for Business Online eseguendo il cmdlet seguente in Skype for Business Server Management Shell:
+È inoltre possibile abilitare la federazione con Skype for Business online eseguendo il cmdlet seguente in Skype for Business Server Management Shell:
   
 ```powershell
 New-CsHostingProvider -Identity LyncOnlineResources -ProxyFqdn sipfed.resources.lync.com -VerificationLevel AlwaysVerifiable -Enabled $True -EnabledSharedAddressSpace $True -HostsOCSUsers $True -IsLocal $False

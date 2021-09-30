@@ -15,17 +15,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: f252b23b-9641-4160-aa81-bf06dc2eced3
-description: 'Riepilogo: informazioni su come consentire agli utenti di effettuare e ricevere chiamate VoIP aziendale in Skype for Business Server.'
-ms.openlocfilehash: 68e12d072e01f9df3691401569a7759ef842570f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: 'Riepilogo: informazioni su come consentire agli utenti di effettuare e ricevere chiamate utilizzando VoIP aziendale in Skype for Business Server.'
+ms.openlocfilehash: 04533245348672afedfac113f3fd64188a2efba2
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607259"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60012770"
 ---
 # <a name="enable-users-for-enterprise-voice-in-skype-for-business-server"></a>Abilitare gli utenti per VoIP aziendale in Skype for Business Server
  
-**Riepilogo:** Informazioni su come consentire agli utenti di effettuare e ricevere chiamate utilizzando VoIP aziendale in Skype for Business Server.
+**Riepilogo:** Informazioni su come consentire agli utenti di effettuare e ricevere chiamate VoIP aziendale in Skype for Business Server.
   
 Dopo aver distribuito VoIP aziendale chiamata tramite lavoro, è possibile utilizzare le procedure seguenti per consentire a un utente di effettuare chiamate tramite VoIP aziendale:
   
@@ -42,7 +42,7 @@ Dopo aver distribuito VoIP aziendale chiamata tramite lavoro, è possibile utili
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo amministrativo **CsVoiceAdministrator,** **CsServerAdministrator** o **CsAdministrator.**
     
-2. Apri Skype for Business Server Pannello di controllo.
+2. Aprire Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
@@ -54,7 +54,7 @@ Dopo aver distribuito VoIP aziendale chiamata tramite lavoro, è possibile utili
     
 7. Nella pagina **Modifica Skype for Business Server utente,** in **Telefonia,** fare clic **su VoIP aziendale**.
     
-8. Fare clic su **URI linea** e quindi digitare un numero di telefono normalizzato univoco, ad esempio tel:+14255550200.
+8. Fare **clic su URI** linea e quindi digitare un numero di telefono normalizzato univoco, ad esempio `tel:+14255550200` .
     
 9. Fare clic su **Commit**.
     
@@ -67,7 +67,7 @@ I criteri vocali globali e a livello di sito vengono assegnati automaticamente a
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Per assegnare un criterio vocale esistente a un utente, eseguire quanto segue al prompt dei comandi:
     
@@ -92,7 +92,7 @@ Per completare la configurazione degli account per gli utenti di VoIP aziendale 
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Per assegnare un dial plan specifico dell'utente, al prompt dei comandi eseguire quanto segue:
     
@@ -106,6 +106,6 @@ Per completare la configurazione degli account per gli utenti di VoIP aziendale 
    Grant-CsDialPlan -Identity "Bob Kelly" -PolicyName DialPlanJapan
    ```
 
-    In questo esempio all'utente con il nome visualizzato Bob Kelly viene assegnato il dial plan utente con nome **DialPlanJapan.**
+    In questo esempio all'utente con il nome visualizzato Bob Kelly viene assegnato il dial plan utente con il nome **DialPlanJapan.**
     
 

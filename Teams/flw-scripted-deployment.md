@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0237ff7d32a677eab1efd8b804b7dc00ca5e4184
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: d7eac555d5b48bb704e2699c99eff7c1a2969cc3
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58733435"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60012760"
 ---
 # <a name="how-to-provision-teams-at-scale-for-frontline-workers"></a>Come eseguire il provisioning di Microsoft Teams su vasta scala per gli operatori sul campo
 
@@ -203,7 +203,7 @@ Gli amministratori possono usare i criteri di installazione app per eseguire le 
 
 Le app vengono aggiunte alla barra dell'app. Questa barra si trova sul lato del client desktop di Teams e nella parte inferiore dei client per dispositivi mobili (iOS e Android) di Teams.
 
-|Client desktop di Teams  |         |Client per dispositivi mobili di Teams  |
+|Client desktop di Teams  | &nbsp; |Client per dispositivi mobili di Teams  |
 |---------|---------|---------|
 |![Screenshot del client desktop di Teams con le app aggiunte alla barra inferiore.](media/flw-teams-desktop-client.png)         |         |![Screenshot del client per dispositivi mobili di Teams con le app aggiunte alla barra inferiore.](media/flw-teams-mobile-client.png) |
 

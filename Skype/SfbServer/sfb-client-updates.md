@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: Fornisce ai professionisti IT collegamenti alle informazioni sugli aggiornamenti più recenti per le versioni perpetue di Skype for Business 2016, Skype for Business 2015 e client Lync 2013
-ms.openlocfilehash: bff52ddfd2a037af9bac9d79d36a2a7acd156baa
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 574deac22c50cfedc71d7d289cfcbe0ecc9e8286
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58581340"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60013940"
 ---
 # <a name="latest-updates-for-versions-of-skype-for-business-that-use-windows-installer-msi"></a>Aggiornamenti più recenti per le versioni di Skype for Business che utilizzano Windows Installer (MSI)
 
@@ -27,7 +27,7 @@ Utilizzare i collegamenti in questa pagina per ottenere ulteriori informazioni e
 > - Le informazioni contenute in questo articolo si applicano solo alle versioni perpetue di Skype for Business che utilizzano la tecnologia di installazione Windows Installer (MSI). Ad esempio, se è stata installata una versione con contratto multilicenza di Skype for Business, ad esempio Skype for Business incluso con Office Professional Plus 2016.
 > - Le informazioni contenute in questo articolo non si applicano alle Microsoft 365 o Office 365 di Skype for Business, ad esempio Skype for Business incluse in Microsoft 365 Apps for enterprise.
 > - Per gli aggiornamenti più recenti dei client per dispositivi mobili, vai all'App Store per il tuo client mobile (iTunes, Google Play o Microsoft Store) per visualizzare i dettagli e installare gli aggiornamenti.
-> - Per sapere quale versione di Skype for Business in uso, vedere Quale versione di [Skype for Business è disponibile?](https://support.microsoft.com/help/3195481/how-to-check-the-version-of-skype-for-business-2016)
+> - Per informazioni sulla versione Skype for Business in uso, vedere Quale versione di [Skype for Business è disponibile?](https://support.microsoft.com/help/3195481/how-to-check-the-version-of-skype-for-business-2016)
 > - Per ulteriori informazioni sull'installazione degli aggiornamenti di Office, vedere [Installare gli aggiornamenti di Office](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5).
 
 Skype for Business compatibilità con Microsoft 365 o Office 365 e l'ambiente locale dipende dai requisiti di sistema per la distribuzione:
@@ -227,33 +227,33 @@ Nome pacchetto|Numero KB|Data di rilascio|
 |Aggiornamento per Lync 2013 | [KB 2812461](https://support.microsoft.com/kb/2812461) | Febbraio 2013  |
 
 
-### <a name="lync-phone-edition-updates"></a>Aggiornamenti di Lync Telefono Edition
+### <a name="lync-phone-edition-updates"></a>Aggiornamenti di Lync Phone Edition
 
 | Nome pacchetto                                                                                                       | Numero KB                                                      | Data di rilascio |
 |:-------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------|:-------------|
-| Aggiornamento cumulativo per Lync Telefono Edition per telefono Aastra 6721ip e Aastra 6725ip                             | [KB 4019527](https://support.microsoft.com/help/4019527) | Aprile 2017   |
-| Aggiornamento cumulativo per Microsoft Lync Telefono Edition per i telefoni HP 4110 e HP 4120                              | [KB 4019528](https://support.microsoft.com/help/4019528) | Aprile 2017   |
-| Aggiornamento cumulativo per Microsoft Lync Telefono Edition per telefoni Polycom CX500, Polycom CX600 e Polycom CX3000 | [KB 4019529](https://support.microsoft.com/help/4019529) | Aprile 2017   |
-| Aggiornamento cumulativo per Lync Telefono Edition per telefoni Aastra 6721ip e Aastra 6725ip                            | [KB 3050585](https://support.microsoft.com/kb/3050585)   | Maggio 2015     |
-| Aggiornamento cumulativo per Lync Telefono Edition per i telefoni HP 4110 e HP 4120                                        | [KB 3050587](https://support.microsoft.com/kb/3050587)   | Maggio 2015     |
-| Aggiornamento cumulativo per Lync Telefono Edition per Polycom CX500, Polycom CX600 e Polycom CX3000                      | [KB 3050588](https://support.microsoft.com/kb/3050588)   | Maggio 2015     |
-| Aggiornamento cumulativo per Lync Telefono Edition per Polycom CX700 e LG-Nortel IP Telefono 8540 telefoni                  | [KB 3050590](https://support.microsoft.com/kb/3050590)   | Maggio 2015     |
-| Aggiornamento cumulativo per Lync Telefono Edition per telefoni Aastra 6721ip e Aastra 6725ip                            | [KB 2954032](https://support.microsoft.com/kb/2954032)         | Aprile 2014   |
-| Aggiornamento cumulativo per Lync Telefono Edition per i telefoni HP 4110 e HP 4120                                        | [KB 2954033](https://support.microsoft.com/kb/2954033)         | Aprile 2014   |
-| Aggiornamento cumulativo per Lync Telefono Edition per telefoni Polycom CX500, Polycom CX600 e Polycom CX3000           | [KB 2954034](https://support.microsoft.com/kb/2954034)         | Aprile 2014   |
-| Aggiornamento cumulativo per Lync Telefono Edition per Polycom CX700 e LG-Nortel IP Telefono 8540 telefoni                  | [KB 2954035](https://support.microsoft.com/kb/2954035)         | Aprile 2014   |
+| Aggiornamento cumulativo per Lync Phone Edition per telefono Aastra 6721ip e Aastra 6725ip                             | [KB 4019527](https://support.microsoft.com/help/4019527) | Aprile 2017   |
+| Aggiornamento cumulativo per Microsoft Lync Phone Edition per i telefoni HP 4110 e HP 4120                              | [KB 4019528](https://support.microsoft.com/help/4019528) | Aprile 2017   |
+| Aggiornamento cumulativo per Microsoft Lync Phone Edition per telefoni Polycom CX500, Polycom CX600 e Polycom CX3000 | [KB 4019529](https://support.microsoft.com/help/4019529) | Aprile 2017   |
+| Aggiornamento cumulativo per Lync Phone Edition per telefoni Aastra 6721ip e Aastra 6725ip                            | [KB 3050585](https://support.microsoft.com/kb/3050585)   | Maggio 2015     |
+| Aggiornamento cumulativo per Lync Phone Edition per telefoni HP 4110 e HP 4120                                        | [KB 3050587](https://support.microsoft.com/kb/3050587)   | Maggio 2015     |
+| Aggiornamento cumulativo per Lync Phone Edition per Polycom CX500, Polycom CX600 e Polycom CX3000                      | [KB 3050588](https://support.microsoft.com/kb/3050588)   | Maggio 2015     |
+| Aggiornamento cumulativo per Lync Phone Edition per Polycom CX700 e LG-Nortel telefoni IP Phone 8540                  | [KB 3050590](https://support.microsoft.com/kb/3050590)   | Maggio 2015     |
+| Aggiornamento cumulativo per Lync Phone Edition per telefoni Aastra 6721ip e Aastra 6725ip                            | [KB 2954032](https://support.microsoft.com/kb/2954032)         | Aprile 2014   |
+| Aggiornamento cumulativo per Lync Phone Edition per telefoni HP 4110 e HP 4120                                        | [KB 2954033](https://support.microsoft.com/kb/2954033)         | Aprile 2014   |
+| Aggiornamento cumulativo per Lync Phone Edition per telefoni Polycom CX500, Polycom CX600 e Polycom CX3000           | [KB 2954034](https://support.microsoft.com/kb/2954034)         | Aprile 2014   |
+| Aggiornamento cumulativo per Lync Phone Edition per Polycom CX700 e LG-Nortel telefoni IP Phone 8540                  | [KB 2954035](https://support.microsoft.com/kb/2954035)         | Aprile 2014   |
 
-### <a name="lync-phone-edition-clients-on-download-center"></a>Client Lync Telefono Edition nell'Area download
+### <a name="lync-phone-edition-clients-on-download-center"></a>Client Lync Phone Edition nell'Area download
 
-Nome del Pacchetto|Data di rilascio|
-|:--- |:--- |:--- |
-|[Lync Telefono Edition per HP 4110 e HP 4120](https://www.microsoft.com/download/en/details.aspx?id=28158) | Aprile 2017 |
-|[Lync Telefono Edition per Polycom CX500, Polycom CX600 e Polycom CX3000](https://www.microsoft.com/download/en/details.aspx?id=23866) | Aprile 2017 |
-|[Lync Telefono Edition per Polycom CX700 e LG-Nortel IP Telefono 8540](https://www.microsoft.com/download/en/details.aspx?id=21644) | Dicembre 2015 |
+| Nome del Pacchetto | Data di rilascio|
+|:--- |:--- |
+|[Lync Phone Edition per HP 4110 e HP 4120](https://www.microsoft.com/download/en/details.aspx?id=28158) | Aprile 2017 |
+|[Lync Phone Edition per Polycom CX500, Polycom CX600 e Polycom CX3000](https://www.microsoft.com/download/en/details.aspx?id=23866) | Aprile 2017 |
+|[Lync Phone Edition per Polycom CX700 e LG-Nortel IP Phone 8540](https://www.microsoft.com/download/en/details.aspx?id=21644) | Dicembre 2015 |
 
 ### <a name="lync-basic-2013-software"></a>Lync Basic 2013 Software
 
-Nome del Pacchetto|Data di rilascio|
+|Nome del Pacchetto|Data di rilascio| |
 |:--- |:--- |:--- |
 |[Lync Basic 2013 (32 bit)](https://www.microsoft.com/download/details.aspx?id=35451) | Ottobre 2012 |
 |[Lync Basic 2013 (64 bit)](https://www.microsoft.com/download/details.aspx?id=35450) | Ottobre 2012 |

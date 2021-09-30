@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ea22beb9-c02e-47cb-836d-97a556969052
 description: 'Riepilogo: esaminare questo argomento per informazioni su come integrare Skype for Business Server con Exchange Server 2016 o Exchange Server 2013.'
-ms.openlocfilehash: 6c830636b8db5b2a4fba02a1a5f34489e691459c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f2650e8a18767e70ab98e8763e9ec2863e99df90
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58609223"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60012560"
 ---
 # <a name="plan-to-integrate-skype-for-business-and-exchange"></a>Pianificare l'integrazione di Skype for Business ed Exchange
  
@@ -40,7 +40,7 @@ Ad Skype for Business Server è possibile utilizzare un certificato Skype for Bu
     
 Per informazioni dettagliate sui certificati di autenticazione da server a server per Skype for Business Server, vedere [Assign a server-to-server authentication certificate to Skype for Business Server](../../manage/authentication/assign-a-server-to-server-certificate.md).
   
-Dopo aver assegnato i certificati, è necessario configurare il servizio di individuazione automatica in Exchange Server. In Exchange Server, il servizio di individuazione automatica configura i profili utente e fornisce l'accesso Exchange servizi quando gli utenti accedono al sistema. Gli utenti presentano il servizio di individuazione automatica con l'indirizzo di posta elettronica e la password; a sua volta, i servizi forniscono all'utente informazioni quali:
+Dopo aver assegnato i certificati, è necessario configurare il servizio di individuazione automatica in Exchange Server. In Exchange Server, il servizio di individuazione automatica configura i profili utente e fornisce l'accesso ai servizi Exchange quando gli utenti accedono al sistema. Gli utenti presentano il servizio di individuazione automatica con l'indirizzo di posta elettronica e la password; a sua volta, i servizi forniscono all'utente informazioni quali:
   
 - Informazioni di connessione sia per la connettività interna che per la connettività Exchange Server.
     
@@ -66,7 +66,7 @@ Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri 
 
 Per informazioni dettagliate sul servizio di individuazione automatica, vedere [Autodiscover Service](/Exchange/architecture/client-access/autodiscover).
   
-Dopo aver configurato il servizio di individuazione automatica, è necessario modificare le Skype for Business Server di configurazione OAuth. in questo modo si Skype for Business Server sapere dove trovare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione di OAuth in Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell. Quando si esegue questo comando, assicurarsi di specificare l'URI per il servizio di individuazione automatica in esecuzione sul Exchange Server e di utilizzare **autodiscover.svc** per puntare al percorso del servizio **anziché aautodiscover.xml** (che punta al file XML utilizzato dal servizio):
+Dopo aver configurato il servizio di individuazione automatica, è necessario modificare le Skype for Business Server di configurazione OAuth. in questo modo si Skype for Business Server sapere dove trovare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione di OAuth in Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell. Quando si esegue questo comando, assicurarsi di specificare l'URI per il servizio di individuazione automatica in esecuzione sul Exchange Server e di utilizzare **autodiscover.svc** per puntare al percorso del servizio anziché **aautodiscover.xml** (che punta al file XML utilizzato dal servizio):
   
 ```PowerShell
 Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc" 
@@ -83,7 +83,7 @@ Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://auto
   
 Oltre a configurare il servizio di individuazione automatica, è inoltre necessario creare un record DNS per il servizio che punta al Exchange Server. Ad esempio, se il servizio di individuazione automatica si trova in autodiscover.litwareinc.com sarà necessario creare un record DNS per autodiscover.litwareinc.com che si risolve nel nome di dominio completo del Exchange Server (ad esempio, atl-exchange-001.litwareinc.com).
   
-Se si sta integrando Skype for Business Server con Exchange Online, i passaggi successivi sono in [Configurare](../../deploy/integrate-with-exchange-server/outlook-web-app.md)l'integrazione tra Skype for Business Server locale e Outlook Web App , altrimenti vedere Integrare Skype for Business Server [con Exchange Server](../../deploy/integrate-with-exchange-server/integrate-with-exchange-server.md).
+Se si sta integrando Skype for Business Server con Exchange Online, i passaggi successivi sono descritti in [Configurare](../../deploy/integrate-with-exchange-server/outlook-web-app.md)l'integrazione tra Skype for Business Server locale e Outlook Web App , altrimenti vedere Integrare Skype for Business Server [con Exchange Server](../../deploy/integrate-with-exchange-server/integrate-with-exchange-server.md).
   
 ## <a name="feature-support"></a>Supporto delle funzionalità
 <a name="feature_support"> </a>
@@ -93,25 +93,25 @@ Se si sta integrando Skype for Business Server con Exchange Online, i passaggi s
 
 Nella tabella seguente vengono fornite informazioni dettagliate sulle funzionalità supportate in varie combinazioni di funzionalità online o locali per Exchange e Skype for Business.
   
-||**Exchange 2016/2013/2010 (locale) + Skype for Business Server (locale)**|**Exchange Online + Skype for Business Server (locale)**|**Exchange 2010 (locale) + Skype for Business Online**|**Exchange 2016/2013 (locale) + Skype for Business Online**|**Exchange Online + Skype for Business Online**|
+|&nbsp;|Exchange 2016/2013/2010 (locale) + Skype for Business Server (locale)|Exchange Online + Skype for Business Server (locale)**|**Exchange 2010 (locale) + Skype for Business Online|Exchange 2016/2013(locale) + Skype for Business Online**|**Exchange Online + Skype for Business Online|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|Presenza in Outlook  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
-|Rispondere tramite messaggistica istantanea, chiamata PSTN, Skype chiamata o videochiamata da un Outlook posta elettronica  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
-|Pianificare e partecipare a riunioni online tramite Outlook  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
-|Presenza in Outlook Web App  <br/> |Y  <br/> |Y  <br/> |N  <br/> |N  <br/> |Y  <br/> |
-|Rispondere tramite messaggistica istantanea, chiamata PSTN, Skype chiamata o videochiamata da un OWA posta elettronica  <br/> |Y  <br/> |Y  <br/> |N  <br/> |N  <br/> |Y  <br/> |
-|Pianificare e partecipare a riunioni online tramite Outlook Web App  <br/> |Y  <br/> |Y  <br/> |N  <br/> |N  <br/> |Y  <br/> |
-|Messaggistica istantanea/Presenza nei client mobili  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
-|Partecipare a riunioni online nei client mobili  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
-|Pubblicare lo stato in base Outlook informazioni sulla disponibilità del calendario  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
-|Elenco contatti (tramite l'archivio contatti unificato)  <br/> |Y (necessario Exchange 2016/2013)  <br/> |Y  <br/> |N  <br/> |N  <br/> |Y  <br/> |
-|Foto contatto ad alta risoluzione (richiede Almeno Lync 2013 o Skype for Business client. Non supportato per LWA, app per dispositivi mobili, Lync 2010, Lync per Mac e altri client meno recenti.  <br/> |Y (necessario Exchange 2016/2013)  <br/> |Y  <br/> |N  <br/> |Y  <br/> |Y  <br/> |
-|Delega riunione  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
-|La cronologia delle conversazioni perse e i registri delle chiamate vengono scritti nella cassetta postale di Exchange dell'utente  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
-|Archiviazione del contenuto (messaggistica istantanea e riunione) in Exchange  <br/> |Y (necessario Exchange 2016/2013)  <br/> |Y  <br/> |N  <br/> |N  <br/> |Y  <br/> |
-|Ricerca contenuto archiviato  <br/> |Y (necessario Exchange 2016/2013)  <br/> |Y  <br/> |N  <br/> |N  <br/> |Y  <br/> |
-|Exchange Segreteria telefonica di messaggistica unificata  <br/> |Y  <br/> |Y  <br/> |N  <br/> |N  <br/> |N  <br/> |
-|Cronologia conversazioni sul lato server  <br/> |Y  <br/> |Y  <br/> |N  <br/> |Y  <br/> |Y  <br/> |
+|Presenza in Outlook   |Y   |Y   |Y   |Y   |Y   |
+|Rispondere tramite messaggistica istantanea, chiamata PSTN, Skype chiamata o videochiamata da un Outlook posta elettronica   |Y   |Y   |Y   |Y   |Y   |
+|Pianificare e partecipare a riunioni online tramite Outlook   |Y   |Y   |Y   |Y   |Y   |
+|Presenza in Outlook Web App   |Y   |Y   |N   |N   |Y   |
+|Rispondere tramite messaggistica istantanea, chiamata PSTN, Skype chiamata o videochiamata da un OWA posta elettronica   |Y   |Y   |N   |N   |Y   |
+|Pianificare e partecipare a riunioni online tramite Outlook Web App   |Y   |Y   |N   |N   |Y   |
+|Messaggistica istantanea/Presenza nei client mobili   |Y   |Y   |Y   |Y   |Y   |
+|Partecipare a riunioni online nei client mobili   |Y   |Y   |Y   |Y   |Y   |
+|Pubblicare lo stato in base Outlook informazioni sulla disponibilità del calendario   |Y   |Y   |Y   |Y   |Y   |
+|Elenco contatti (tramite l'archivio contatti unificato)   |Y (necessario Exchange 2016/2013)   |Y   |N   |N   |Y   |
+|Foto contatto ad alta risoluzione (richiede Almeno Lync 2013 o Skype for Business client. Non supportato per LWA, app per dispositivi mobili, Lync 2010, Lync per Mac e altri client meno recenti.   |Y (necessario Exchange 2016/2013)   |Y   |N   |Y   |Y   |
+|Delega riunione   |Y   |Y   |Y   |Y   |Y   |
+|La cronologia delle conversazioni perse e i registri delle chiamate vengono scritti nella cassetta postale di Exchange dell'utente   |Y   |Y   |Y   |Y   |Y   |
+|Archiviazione del contenuto (messaggistica istantanea e riunione) in Exchange   |Y (necessario Exchange 2016/2013)   |Y   |N   |N   |Y   |
+|Ricerca contenuto archiviato   |Y (necessario Exchange 2016/2013)   |Y   |N   |N   |Y   |
+|Exchange Segreteria telefonica di messaggistica unificata   |Y   |Y   |N   |N   |N   |
+|Cronologia conversazioni sul lato server   |Y   |Y   |N   |Y   |Y   |
 
 > [!NOTE]
 > È disponibile un servizio di Cloud Voicemail supportato per Skype for Business Online, Skype for Business Server 2019, Skype for Business Server 2015 e Lync Server 2013.
@@ -120,7 +120,7 @@ Nella tabella seguente vengono fornite informazioni dettagliate sulle funzionali
 ## <a name="see-also"></a>Vedere anche
 <a name="feature_support"> </a>
 
-[Configurare l'integrazione tra Skype for Business Server locale e Outlook Web App](../../deploy/integrate-with-exchange-server/outlook-web-app.md)
+[Configurare l'integrazione tra Skype for Business Server locali e Outlook Web App](../../deploy/integrate-with-exchange-server/outlook-web-app.md)
   
 [Configurare OAuth tra Skype for Business Online e Exchange locale](../../deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises.md)
 

@@ -19,18 +19,18 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come configurare le impostazioni di rete per le funzionalità vocali cloud in Microsoft Teams.
-ms.openlocfilehash: 701e3900980b628f66d9d62d3dade987fee821fe
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 571b2e2f4c502a41604b5e2660d7e59990dd49bb
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726575"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60015340"
 ---
 # <a name="manage-your-network-topology-for-cloud-voice-features-in-microsoft-teams"></a>Gestire la topologia di rete per le funzionalità vocali cloud in Microsoft Teams
 
 Se l'organizzazione distribuisce il [routing](location-based-routing-plan.md) in base alla posizione per il routing diretto o le chiamate di emergenza [dinamiche,](configure-dynamic-emergency-calling.md)è necessario configurare le impostazioni di rete per l'uso con queste funzionalità vocali cloud in Microsoft Teams. Le impostazioni di rete vengono usate per determinare la posizione di un client Teams e includono aree di rete, siti di rete, subnet e indirizzi IP attendibili. A seconda della funzionalità vocale cloud e della funzionalità che si sta distribuendo, è possibile configurare alcune o tutte queste impostazioni. Per altre informazioni su questi termini, vedere [Impostazioni di rete per le funzionalità vocali cloud.](cloud-voice-network-settings.md)
 
-Le impostazioni di rete vengono configurate nella pagina Topologia **di** rete dell'interfaccia di amministrazione di Microsoft Teams o usando Windows PowerShell.
+Le impostazioni di rete vengono configurate nella pagina **Topologia di** rete dell'interfaccia Microsoft Teams di amministrazione oppure usando Windows PowerShell.
 
 ## <a name="configure-network-settings-in-the-microsoft-teams-admin-center"></a>Configurare le impostazioni di rete nell'Microsoft Teams di amministrazione
 
@@ -116,7 +116,7 @@ New-CsTenantNetworkSite -NetworkSiteID "Hyderabad" -NetworkRegionID "India"
 
 La tabella seguente mostra i siti di rete definiti in questo esempio.
 
-||Sito 1 |Sito 2 |
+|&nbsp;|Sito 1 |Sito 2 |
 |---------|---------|---------|
 |ID sito    |    Sito 1 (Delhi)     |  Sito 2 (Hyderabad)       |
 |ID area geografica  |     Area geografica 1 (India)    |   Area geografica 1 (India)      |
@@ -140,7 +140,7 @@ New-CsTenantNetworkSubnet -SubnetID "2001:4898:e8:25:844e:926f:85ad:dd8e" -MaskB
 
 La tabella seguente mostra le subnet definite in questo esempio.
 
-||Sito 1 |Sito 2 |
+|&nbsp;|Sito 1 |Sito 2 |
 |---------|---------|---------|
 |Subnet ID   |    192.168.0.0     |  2001:4898:e8:25:844e:926f:85ad:dd8e     |
 |Maschera  |     24    |   120      |

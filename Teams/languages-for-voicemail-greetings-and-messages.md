@@ -21,20 +21,21 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sulle lingue che è possibile impostare in Skype for Business per i messaggi di sistema predefiniti e i messaggi di saluto della segreteria telefonica.
-ms.openlocfilehash: 78c3bd30da636bb9a38d413275e2d5b1ae59f0c5
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8393e8a50913548a8e6ec64bcf26154e0af5b148
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58590800"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011940"
 ---
 # <a name="teams-languages-for-voicemail-greetings-and-messages"></a>Teams lingue per i messaggi di saluto e i messaggi della segreteria telefonica
 
 Teams supporta le lingue seguenti per i messaggi di saluto della segreteria telefonica.
   
-||||||
+
+
+|Lingua  |Paese/area geografica |Disponibile da mostrare agli utenti in una e-mail? |Disponibile quando l'utente chiama? |Trascrizione disponibile?  |
 |:-------------|:------------------|:--------------------------------------------|:-------------------------------------|:-----------------------------|
-|**Lingua**  |**Paese/area geografica** |**Disponibile da mostrare agli utenti in una e-mail?** |**Disponibile quando l'utente chiama?** |**Trascrizione disponibile?**  |
 |Arabo        |Egitto              |Sì                                          |Sì                                   |No  |
 |Arabo        |Arabia Saudita       |Sì, ma viene usato l'arabo (Egitto).             |No                                    |No  |
 |Bulgaro     |Bulgaria           |Sì                                          |Sì                                   |No  |

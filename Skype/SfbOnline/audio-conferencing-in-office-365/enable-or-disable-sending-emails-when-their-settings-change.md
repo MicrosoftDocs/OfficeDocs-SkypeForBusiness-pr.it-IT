@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come abilitare o disabilitare Skype dall'invio di messaggi di posta elettronica agli utenti quando cambiano le impostazioni, quali ad esempio le modifiche del pin o del numero predefinito della conferenza. "
-ms.openlocfilehash: 2f322f9cfc9ba7daa60d030c043bdfda4d511d2c
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 9deb04e418d00171375aec34ca873a89c8a31cdf
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728025"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011730"
 ---
 # <a name="enable-or-disable-sending-emails-when-audio-conferencing-settings-change-in-skype-for-business-online"></a>Abilitare o disabilitare l'invio di messaggi di posta elettronica quando vengono modificate le impostazioni di Audioconferenza in Skype for Business online
 
@@ -62,7 +62,7 @@ Ecco un esempio del messaggio di posta elettronica inviato agli utenti quando so
 
 ## <a name="enable-or-disable-email-from-being-sent-to-users"></a>Abilitare o disabilitare l'invio di posta elettronica agli utenti
 
-È possibile usare l'interfaccia di Skype for Business o Windows PowerShell per abilitare o disabilitare la posta elettronica inviata agli utenti.
+È possibile usare l'interfaccia Skype for Business di amministrazione o Windows PowerShell per abilitare o disabilitare la posta elettronica inviata agli utenti.
 
  
 ![Icona che mostra il Skype for Business logo.](../images/sfb-logo-30x30.png) **Uso dell'Skype for Business di amministrazione**
@@ -91,7 +91,7 @@ Ecco un esempio del messaggio di posta elettronica inviato agli utenti quando so
     
 ## <a name="what-else-should-you-know"></a>Informazioni aggiuntive
 
-- Quando i messaggi di posta elettronica automatici sono disabilitati, è comunque possibile attivare manualmente l'invio di un messaggio di posta elettronica con l'ID conferenza e il numero di telefono usando l'interfaccia Skype for Business di amministrazione. Tuttavia, se si fa questo, il PIN non verrà incluso. Se si vuole reimpostare il PIN di audioconferenza e l'invio di messaggi di posta elettronica è disabilitato, è necessario inviarlo all'utente in un altro modo.
+- Quando i messaggi di posta elettronica automatici sono disabilitati, è comunque possibile attivare manualmente l'invio di un messaggio di posta elettronica con l'ID conferenza e il numero di telefono usando l'Skype for Business di amministrazione. Tuttavia, se si fa questo, il PIN non verrà incluso. Se si vuole reimpostare il PIN di audioconferenza e l'invio di messaggi di posta elettronica è disabilitato, è necessario inviarlo all'utente in un altro modo.
     
 - L'invio dei messaggi di posta elettronica agli utenti può essere disabilitato tramite l'interfaccia di amministrazione di Skype for Business o Windows PowerShell.
     
@@ -122,7 +122,7 @@ Ecco un esempio del messaggio di posta elettronica inviato agli utenti quando so
   - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     
     > [!NOTE]
-    > Il modulo Windows PowerShell per Skype for Business online consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft nel [modulo Windows PowerShell per Skype for Business online.](https://go.microsoft.com/fwlink/?LinkId=294688)
+    > Il modulo Windows PowerShell per Skype for Business online consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft all'indirizzo Scaricare e installare il modulo [di PowerShell Teams](https://go.microsoft.com/fwlink/?LinkId=294688)(.. /set-up-your-computer-for-windows-powershell/download-and-install-the-skype-for-business-online-connector.md).
   
 ## <a name="related-topics"></a>Argomenti correlati
 

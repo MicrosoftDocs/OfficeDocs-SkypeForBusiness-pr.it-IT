@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: f3f04d81-8a1f-427f-bd0f-fb659024e096
 description: 'Riepilogo: gestire le impostazioni di configurazione del servizio Web in Skype for Business Server.'
-ms.openlocfilehash: f007a93eb71fc015f71ddef51011008315de82e9
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 875993a006cf175432984dc78fc37a34b45e92ee
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58633610"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60015170"
 ---
 # <a name="manage-web-service-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione del servizio Web in Skype for Business Server
  
@@ -42,7 +42,7 @@ Seguire questa procedura per creare un nuovo criterio servizio Web.
     
    - Per configurare il servizio Web per un pool, fare clic su **Configurazione pool.** In **Selezionare un servizio** fare clic sul servizio a cui verrà applicato il criterio servizio Web e fare clic su **OK.** 
     
-5. In **Nuova impostazione servizio Web,** in Autenticazione **Windows,** **selezionare** **Negozia,** Autenticazione Windows integrata o **Nessuna.**
+5. In **Nuova impostazione servizio Web,** in Autenticazione **Windows** integrata, selezionare **Negozia,** **Autenticazione Windows** integrata o **Nessuna.**
     
 6. Selezionare una o più delle opzioni seguenti in base alle capacità dei client e al supporto nell'ambiente:
     
@@ -102,7 +102,7 @@ Seguire questa procedura per eliminare le impostazioni di configurazione del ser
     
 ## <a name="deleting-web-service-configuration-settings-by-using-windows-powershell-cmdlets"></a>Eliminazione di Impostazioni di configurazione del servizio Web tramite Windows PowerShell cmdlet
 
-È possibile eliminare le impostazioni di configurazione del servizio Web utilizzando Windows PowerShell e il cmdlet **Remove-CsWebServiceConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
+È possibile eliminare le impostazioni di configurazione del servizio Web utilizzando Windows PowerShell e il cmdlet **Remove-CsWebServiceConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere Amministrazione remota di PowerShell per [Microsoft Lync.](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/) Il processo è lo stesso in Skype for Business Server.
   
 ### <a name="to-delete-a-specific-collection-of-web-service-configuration-settings"></a>Per eliminare una raccolta specifica di impostazioni di configurazione di servizi Web
 

@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6ce0e580-8c4a-45de-a54f-e39e438335d6
 description: Informazioni su Skype for Business Cloud Connector Edition, un set di macchine virtuali (VM) in pacchetto che implementano la connettività PSTN locale con Sistema telefonico (Cloud PBX).
-ms.openlocfilehash: bff341213e9426f72fc0a78a9076b5b784871106
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: f27fdd41978cd686a7019876dedbfe63a29af9e9
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728805"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60014150"
 ---
 # <a name="plan-for-skype-for-business-cloud-connector-edition"></a>Pianificare la Skype for Business Cloud Connector Edition
 
@@ -34,7 +34,7 @@ ms.locfileid: "58728805"
 
 Informazioni su Skype for Business Cloud Connector Edition, un set di macchine virtuali (VM) in pacchetto che implementano la connettività PSTN locale con Sistema telefonico (Cloud PBX).
 
-Cloud Connector Edition potrebbe essere la soluzione giusta per l'organizzazione se non si dispone già di una distribuzione di Lync Server o Skype for Business Server esistente. Se si sta ancora esaminando la soluzione Sistema telefonico più giusta per la propria azienda, vedere [Soluzioni di telefonia Microsoft](/microsoftteams/cloud-voice-landing-page).
+Cloud Connector Edition potrebbe essere la soluzione giusta per l'organizzazione se non si dispone già di una distribuzione di Lync Server o Skype for Business Server esistente. Se si sta ancora esaminando la soluzione Sistema telefonico più efficace per la propria azienda, vedere [Soluzioni di telefonia Microsoft](/microsoftteams/cloud-voice-landing-page).
 
 In questo documento vengono descritti i requisiti di Cloud Connector Edition e le topologie supportate e viene illustrato come pianificare la distribuzione di Cloud Connector Edition. Leggere questo articolo prima di configurare l'ambiente Cloud Connector. Quando si è pronti per distribuire e configurare Cloud Connector Edition, vedere [Configure and manage Skype for Business Cloud Connector Edition](configure-skype-for-business-cloud-connector-edition.md).
 
@@ -47,21 +47,21 @@ Cloud Connector Edition è un'offerta ibrida costituita da un set di macchine vi
 
 ![Diagramma della topologia che mostra il gateway Cloud PBX che connette Cloud PBX a una distribuzione locale di Skype for Business.](../../media/bd898e69-6458-4276-aebe-1854f28ed6fa.png)
 
-Poiché Cloud Connector consente di integrare i servizi Sistema telefonico con l'ambiente di telefonia esistente, ad esempio PBX, dispositivi analogici e call center, è possibile implementare una migrazione in più fasi dalla soluzione di telefonia esistente a Sistema telefonico.
+Poiché Cloud Connector consente di integrare i servizi di Sistema telefonico con l'ambiente di telefonia esistente, ad esempio PBX, dispositivi analogici e call center, è possibile implementare una migrazione in più fasi dalla soluzione di telefonia esistente a Sistema telefonico.
 
-Si supponga, ad esempio, che la società abbia un call center sofisticato con funzionalità specifiche Sistema telefonico non fornisce. È possibile scegliere di lasciare agli utenti del servizio clienti la soluzione esistente, ma spostare altri utenti in Sistema telefonico.
+Si supponga, ad esempio, che la società abbia un call center sofisticato con funzionalità specifiche che Sistema telefonico non fornisce. È possibile scegliere di lasciare agli utenti del servizio clienti la soluzione esistente, ma spostare altri utenti in Sistema telefonico.
 
-Cloud Connector fornirà il routing tra gli utenti ospitati in locale e online ed è possibile scegliere di usare il proprio provider PSTN con Sistema telefonico.
+Cloud Connector fornirà il routing tra gli utenti ospitati in locale e online ed è possibile scegliere di utilizzare il proprio provider PSTN con Sistema telefonico.
 
 Durante la pianificazione della distribuzione di Cloud Connector Edition, tenere presente quanto segue:
 
-- Per usare Cloud Connector per sfruttare le soluzioni vocali cloud, è necessario iscriversi a un'organizzazione Microsoft 365 o Office 365 che include Sistema telefonico. Se non si dispone ancora di un'organizzazione Microsoft 365 o Office 365, è possibile imparare a iscriversi qui: [Microsoft 365 for Business](https://products.office.com/business/office). Tieni presente che dovrai iscriverti a un piano che include Skype for Business Online.
+- Per usare Cloud Connector per sfruttare le soluzioni vocali cloud, è necessario iscriversi a un'organizzazione di Microsoft 365 o Office 365 che include Sistema telefonico. Se non si dispone ancora di un'organizzazione Microsoft 365 o Office 365, è possibile imparare a iscriversi qui: [Microsoft 365 for Business](https://products.office.com/business/office). Tieni presente che dovrai iscriverti a un piano che include Skype for Business Online.
 
 - Per registrare le appliance di Cloud Connector con il servizio Skype for Business Online ed eseguire vari cmdlet, Cloud Connector 2.0 e versioni successive richiede un account Microsoft 365 o Office 365 dedicato con i diritti di amministratore tenant di Skype for Business. Le versioni di Cloud Connector precedenti alla 2.0 richiedono un account Microsoft 365 o Office 365 con diritti di amministratore globale tenant.
 
-- Cloud Connector non richiede una distribuzione completa Skype for Business Server locale.
+- Cloud Connector non richiede una distribuzione completa di Skype for Business Server locale.
 
-    Attualmente, Cloud Connector non può coesistere con Lync o Skype for Business server locali. Se si desidera spostare gli utenti lync o Skype for Business esistenti in Microsoft 365 e continuare a fornire telefonia locale agli utenti, prendere in considerazione Sistema telefonico con connettività locale utilizzando una distribuzione di Skype for Business Server esistente. Per ulteriori informazioni, vedere [Plan your Sistema telefonico (Cloud PBX) solution](/microsoftteams/cloud-voice-landing-page.md) e Plan Sistema telefonico with [on-premises PSTN connectivity in Skype for Business Server](plan-phone-system-with-on-premises-pstn-connectivity.md).
+    Attualmente, Cloud Connector non può coesistere con Lync o Skype for Business server locali. Se si desidera spostare gli utenti lync o Skype for Business esistenti in Microsoft 365 e continuare a fornire telefonia locale agli utenti, è consigliabile utilizzare Sistema telefonico con connettività locale utilizzando una distribuzione di Skype for Business Server esistente. Per ulteriori informazioni, vedere [Plan your Sistema telefonico (Cloud PBX) solution](/microsoftteams/cloud-voice-landing-page) e Plan Sistema telefonico with [on-premises PSTN connectivity in Skype for Business Server](plan-phone-system-with-on-premises-pstn-connectivity.md).
 
 - Se si dispone di una distribuzione precedente di Skype for Business o Lync Server ed è stato esteso lo schema, non è necessario pulire lo schema per la distribuzione del connettore cloud, purché tutti i componenti di Skype for Business o Lync Server sono stati rimossi dall'ambiente.
 
@@ -104,7 +104,7 @@ Sezioni dell'articolo:
 ## <a name="cloud-connector-edition-components"></a>Componenti di Cloud Connector Edition
 <a name="BKMK_Components"> </a>
 
-Con Cloud Connector Edition, si distribuisce un set di macchine virtuali in pacchetto che contengono una topologia di Skype for Business Server minima, costituita da un componente edge, un componente Mediation e un ruolo dell'archivio di gestione centrale ( CMS). Verrà inoltre installato un controller di dominio, necessario per il funzionamento interno del connettore cloud. Questi servizi sono configurati per la distribuzione ibrida con l'organizzazione Microsoft 365 o Office 365 che include Skype for Business online.
+Con Cloud Connector Edition, si distribuisce un set di macchine virtuali in pacchetto che contengono una topologia di Skype for Business Server minima, costituita da un componente Edge, un componente Mediation e un ruolo dell'archivio di gestione centrale (CMS). Verrà inoltre installato un controller di dominio, necessario per il funzionamento interno del connettore cloud. Questi servizi sono configurati per la distribuzione ibrida con l'organizzazione Microsoft 365 o Office 365 che include Skype for Business Online Services.
 
 ![Componenti cloud Connector Edition.](../../media/f2d4b8a7-c2f4-4cfc-8137-f187399c1298.png)
 
@@ -132,7 +132,7 @@ I componenti del connettore cloud offrono le funzionalità seguenti:
 
   - Servizi certificati Active Directory per emettere certificati interni
 
-- **Componente mediation** : implementa il protocollo di mapping del gateway SIP e multimediale tra Skype for Business gateway PSTN. Include una replica CMS che sincronizza la configurazione dal database cms globale.
+- **Componente mediation** : implementa il protocollo di mapping gateway SIP e multimediale tra Skype for Business gateway PSTN. Include una replica CMS che sincronizza la configurazione dal database cms globale.
 
 ## <a name="cloud-connector-edition-topologies"></a>Topologie Cloud Connector Edition
 <a name="BKMK_Topologies"> </a>
@@ -217,11 +217,11 @@ Prima di distribuire Cloud Connector Edition, assicurarsi di disporre degli elem
 
 - **Per il computer host -** Le macchine virtuali del connettore cloud devono essere distribuite su hardware dedicato che esegue Windows Server 2012 R2 Datacenter Edition (inglese) con il ruolo Hyper-V abilitato.
 
-    Per la versione 2.0 e successive, la scheda di rete del computer host associata al commutatore Corpnet di Skype for Business deve disporre di un indirizzo IP configurato nella stessa subnet dei computer di rete aziendali del connettore cloud.
+    Per la versione 2.0 e successive, la scheda di rete del computer host associata al commutatore corpnet di Skype for Business deve avere un indirizzo IP configurato nella stessa subnet dei computer di rete aziendali cloud Connector.
 
-- Per le versioni 2.1 e successive, l'appliance host deve avere installato .NET Framework 4.6.1 o versione successiva.
+- Per le versioni 2.1 e successive, l'appliance host deve .NET Framework 4.6.1 o versione successiva.
 
-- **Per le macchine virtuali -** Immagine Windows Server 2012 ISO R2 (in inglese) (con estensione iso). L'ISO verrà convertito in dischi rigidi virtuali per le macchine virtuali che verranno eseguite Skype for Business Cloud Connector Edition.
+- **Per le macchine virtuali -** Un Windows Server 2012 ISO R2 (in inglese) (.iso). L'ISO verrà convertito in dischi rigidi virtuali per le macchine virtuali che verranno eseguite Skype for Business Cloud Connector Edition.
 
 - L'hardware necessario per supportare l'installazione delle 4 macchine virtuali per ogni edizione del connettore cloud nella distribuzione. Sono consigliate le configurazioni seguenti:
 
@@ -245,13 +245,13 @@ Prima di distribuire Cloud Connector Edition, assicurarsi di disporre degli elem
 
 - Se nel computer host è necessario un server proxy per l'esplorazione di Internet, è necessario apportare le modifiche di configurazione seguenti:
 
-  - Per ignorare il proxy, specificare le impostazioni proxy WinHTTP impostate con il server proxy e un elenco di bypass che include "192.168.213". \* rete utilizzata dai servizi Cloud Connector Managements e Skype for Business subnet Corpnet, come definito nel file CloudConnector.ini. In caso contrario, la connettività di gestione avrà esito negativo e impedirà la distribuzione e il ripristino automatico di Cloud Connector. Di seguito è riportato un comando di configurazione winhttp di esempio: netsh winhttp set proxy "10.10.10.175:8080" bypass-list=" \* .local;1. \* ; 172.20. \* ;192.168.218. \* ' \<local\> ".
+  - Per ignorare il proxy, specificare le impostazioni proxy WinHTTP impostate con il server proxy e un elenco di bypass che include "192.168.213". \* rete utilizzata dai servizi Cloud Connector Managements e Skype for Business Subnet Corpnet, come definito nel file CloudConnector.ini. In caso contrario, la connettività di gestione avrà esito negativo e impedirà la distribuzione e il ripristino automatico di Cloud Connector. Di seguito è riportato un comando di configurazione winhttp di esempio: netsh winhttp set proxy "10.10.10.175:8080" bypass-list=" \* .local;1. \* ; 172.20. \* ;192.168.218. \* ' \<local\> ".
 
-  - Specificare le impostazioni proxy per computer anziché per utente. In caso contrario, i download del connettore cloud avranno esito negativo. È possibile specificare le impostazioni proxy per computer con una modifica al Registro di sistema o con l'impostazione di Criteri di gruppo come segue:
+  - Specificare le impostazioni proxy per computer anziché per utente. In caso contrario, i download del connettore cloud avranno esito negativo. È possibile specificare le impostazioni proxy per computer con una modifica del Registro di sistema o con l'impostazione di Criteri di gruppo come segue:
 
   - **Registro di sistema:** HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\Internet Settings] ProxySettingsPerUser dword: 000000000
 
-  - **Criteri di gruppo:** Modelli amministrativi computer Windows componenti di Internet Explorer: Effettuare impostazioni \> proxy per computer \> \> (anziché per utente)
+  - **Criteri di gruppo:** Modelli amministrativi computer Windows componenti Internet Explorer: Effettuare impostazioni \> proxy per computer \> \> (anziché per utente)
 
 - PBX/trunk qualificato o SBC/Gateway qualificato (è consigliabile almeno due gateway).
 
@@ -268,7 +268,7 @@ Prima di distribuire Cloud Connector Edition, assicurarsi di disporre degli elem
 - Un'Microsoft 365 o Office 365 con tutti i record DNS e SRV necessari creati.
 
     > [!IMPORTANT]
-    > Quando si integra il tenant con Cloud Connector Edition, l'utilizzo del suffisso di dominio predefinito, con estensione onmicrosoft.com, come dominio SIP per l'organizzazione non è supportato. > Non è possibile utilizzare sip.\<Domain Name\> come nome dell'interfaccia proxy di Accesso edge del connettore cloud perché questo record DNS viene utilizzato da Microsoft 365 e Office 365.
+    > Quando si integra il tenant con Cloud Connector Edition, l'utilizzo del suffisso di dominio predefinito, onmicrosoft.com, come dominio SIP per l'organizzazione non è supportato. > Non è possibile utilizzare sip.\<Domain Name\> come nome dell'interfaccia proxy di Accesso edge del connettore cloud perché questo record DNS viene utilizzato da Microsoft 365 e Office 365.
 
 - Certificato per l'edge esterno ottenuto da un'autorità di certificazione (CA) pubblica.
 
@@ -422,7 +422,7 @@ In questo caso, tutto il traffico multimediale per il punto finale in Internet p
 
 Il computer host deve essere in grado di raggiungere risorse esterne per installare, aggiornare e gestire correttamente Cloud Connector. La tabella seguente mostra le destinazioni e le porte necessarie tra il computer host e le risorse esterne.
 
-|Direzione  <br/> |IP origine  <br/> |IP destinazione  <br/> |Porta di origine  <br/> |Porta di destinazione  <br/> |Protocollo  <br/> |Scopo  <br/> |
+|Direzione  <br/> |IP origine  <br/> |IP destinazione  <br/> |Porta di origine  <br/> |Porta di destinazione  <br/> |Protocollo  <br/> |Finalità  <br/> |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |In uscita  <br/> |IP host del connettore cloud  <br/> |any  <br/> |any  <br/> |53  <br/> |TCP/UDP  <br/> |DNS  <br/> |
 |In uscita  <br/> |IP host del connettore cloud  <br/> |any  <br/> |any  <br/> |80, 443  <br/> |TCP  <br/> |Elenco di revoche di certificati (CRL)  <br/> |
@@ -432,9 +432,9 @@ Se sono necessarie regole più restrittive, fare riferimento agli URL allowlist 
 
 - [URL dell'elenco di revoche](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) di certificati Office 365 [url e intervalli di indirizzi IP](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US)
 
-- Windows Aggiornamento: [Come configurare un firewall per gli aggiornamenti software](https://technet.microsoft.com/library/bb693717.aspx)
+- Windows Update: [Manage additional Windows Update settings](/windows/deployment/update/waas-wu-settings)
 
-- Skype for Business PowerShell per l'amministratore online: \* .online.lync.com
+- Skype for Business PowerShell per amministratori online: \* .online.lync.com
 
     Se è necessaria un'esclusione proxy per questa destinazione, sarà necessario aggiungerla all'elenco di esclusione WinHTTP.
 
@@ -482,13 +482,13 @@ Quando si configurano le informazioni sul gateway, tenere presente quanto segue:
 |Nome dominio macchina virtuale  <br/> |Nome di dominio per i componenti interni di Cloud Connector. Questo dominio deve essere diverso dal dominio di produzione. Il nome deve essere lo stesso in tutte le appliance Cloud Connector.  <br/> Nome nel file .ini: "VirtualMachineDomain"  <br/> |È preferibile il dominio .local.  <br/> |
 |Nome controller di dominio del connettore cloud  <br/> |Nome del controller di dominio.  <br/> Nome nel .ini file: "ServerName"  <br/> |Deve contenere al massimo 15 caratteri. Immettere solo il nome Netbios.  <br/> |
 |IP/subnet mask del controller di dominio del connettore cloud  <br/> |Indirizzo IP del controller di dominio.  <br/> Nome nel file .ini: "IP"  <br/> ||
-|Microsoft 365 o Office 365 servizio online  <br/> |Deve essere l'impostazione predefinita nella maggior parte dei casi per l'istanza Microsoft 365 o Office 365 a livello mondiale.  <br/> Nome nel file .ini: "OnlineSipFederationFqdn"  <br/> ||
-|SiteName  <br/> |Skype for Business nome del sito; ad esempio Seattle.  <br/> Nome nel file .ini: "SiteName"  <br/> Per la versione 1.4.1 e successive, il nome del sito deve essere diverso per ogni sito e il nome deve corrispondere al sito PSTN, se esistente, definito in Microsoft 365 o Office 365. Si noti che i siti PSTN verranno creati automaticamente durante la registrazione del primo dispositivo in un sito.  <br/> ||
+|Microsoft 365 o Office 365 online del servizio online  <br/> |Deve essere l'impostazione predefinita nella maggior parte dei casi per l'istanza Microsoft 365 o Office 365 a livello mondiale.  <br/> Nome nel file .ini: "OnlineSipFederationFqdn"  <br/> ||
+|SiteName  <br/> |Skype for Business del sito; ad esempio Seattle.  <br/> Nome nel .ini file: "SiteName"  <br/> Per la versione 1.4.1 e successive, il nome del sito deve essere diverso per ogni sito e il nome deve corrispondere al sito PSTN, se esistente, definito in Microsoft 365 o Office 365. Si noti che i siti PSTN verranno creati automaticamente durante la registrazione del primo dispositivo in un sito.  <br/> ||
 |HardwareType  <br/> Versione 1.4.1 e successive  <br/> |Tipo di hardware. Il valore predefinito è Normal. Puoi anche impostare Minimum.  <br/> ||
 |Country Code  <br/> |Codice paese per la composizione.  <br/> Nome nel file .ini: "CountryCode"  <br/> ||
 |Città  <br/> |Città (facoltativo).  <br/> Nome nel file .ini: "City"  <br/> ||
-|Stato  <br/> |Stato (facoltativo).  <br/> Nome nel file .ini: "State"  <br/> ||
-|Indirizzo IP macchina virtuale di base  <br/> |L'indirizzo IP della macchina virtuale di base temporanea che verrà usata per creare il VHDX per tutte le macchine virtuali cloud Connector. Questo IP deve essere nella stessa subnet di rete aziendale perimetrale definita nel passaggio successivo e richiede l'accesso a Internet. Assicurarsi di definire il gateway predefinito aziendale e il DNS instradabile a Internet.  <br/> Nome nel file .ini: "BaseVMIP"  <br/> ||
+|Stato  <br/> |Stato (facoltativo).  <br/> Nome nel .ini file: "State"  <br/> ||
+|Indirizzo IP macchina virtuale di base  <br/> |L'indirizzo IP della macchina virtuale di base temporanea che verrà usata per creare il VHDX per tutte le macchine virtuali del connettore cloud. Questo IP deve essere nella stessa subnet di rete aziendale perimetrale definita nel passaggio successivo e richiede l'accesso a Internet. Assicurarsi di definire il gateway predefinito aziendale e il DNS instradabile a Internet.  <br/> Nome nel file .ini: "BaseVMIP"  <br/> ||
 |WSUSServer  <br/> WSUSStatusServer  <br/> Versione 1.4.1 e successive  <br/> |L'indirizzo del Windows Server Update Services (WSUS), un server Intranet per ospitare gli aggiornamenti da Microsoft Update.  <br/> È possibile lasciare vuoto se WSUS non è necessario.  <br/> ||
 |Subnet mask per la rete interna  <br/> |Cloud Connector configura una rete IP per la comunicazione interna tra i componenti di Cloud Connector. Edge deve inoltre essere connesso a un'altra subnet che consente la connettività Internet.  <br/> Nome nel file .ini: "CorpnetIPPrefixLength" in "Parametri per un pool di rete VM"  <br/> ||
 |Subnet mask per la rete esterna  <br/> |Per la rete esterna del componente Edge.  <br/> Nome nel file .ini: "InternetIPPrefix" in "Parametri per un pool di rete VM"  <br/> ||
@@ -499,13 +499,13 @@ Quando si configurano le informazioni sul gateway, tenere presente quanto segue:
 |Server DNS per la rete interna  <br/> |Verrà configurato nell'interfaccia interna della macchina virtuale temporanea. Deve fornire la risoluzione dei nomi per i nomi Internet. Senza fornire un server DNS, la connessione Internet avrà esito negativo e la distribuzione non verrà completata.  <br/> Nome nel file .ini: "CorpnetDNSIPAddress" in "Parametri per un pool di rete VM  <br/> ||
 |Server DNS per l'interfaccia esterna del componente Edge  <br/> |Verrà configurato nell'interfaccia esterna di Edge.  <br/> Nome nel file .ini: "InternetDNSIPAddress" in "Parametri per un pool di rete VM  <br/> ||
 |Nome del commutatore di gestione  <br/> |L'opzione di gestione è un commutatore temporaneo che verrà creato automaticamente e che verrà utilizzato per la configurazione del connettore cloud durante la distribuzione. Verrà disconnesso automaticamente dopo la distribuzione. Deve essere una subnet diversa da qualsiasi altra rete utilizzata in Cloud Connector.  <br/> Nella maggior parte dei casi è possibile utilizzare il valore suggerito predefinito.  <br/> Nome nel file .ini: "ManagementSwitchName" in "Parametri per un pool di rete VM  <br/> ||
-|Indirizzo subnet di gestione/subnet mask  <br/> |La subnet di gestione è una subnet temporanea che verrà creata automaticamente e che verrà utilizzata per la configurazione di Cloud Connector durante la distribuzione. Verrà rimosso automaticamente dopo la distribuzione. Deve essere una subnet diversa da qualsiasi altra rete utilizzata in Cloud Connector.  <br/> Nomi in .ini file: "ManagementIPPrefix" e "ManagementIPPrefixLength" in "Parameters for a pool of VM network  <br/> ||
+|Indirizzo subnet di gestione/subnet mask  <br/> |La subnet di gestione è una subnet temporanea che verrà creata automaticamente e che verrà utilizzata per la configurazione di Cloud Connector durante la distribuzione. Verrà rimosso automaticamente dopo la distribuzione. Deve essere una subnet diversa da qualsiasi altra rete utilizzata in Cloud Connector.  <br/> Nomi nel file .ini: "ManagementIPPrefix" e "ManagementIPPrefixLength" in "Parameters for a pool of VM network  <br/> ||
 |Computer dell'archivio di gestione centrale  <br/> |Fqdn singolo utilizzato per l'archivio di gestione centrale (CMS). Il nome di dominio ACTIVE verrà utilizzato per generare il nome di dominio completo.  <br/> Nome nel file .ini: "ServerName" in "Parameters for Primary Central Management Service  <br/> |Deve contenere al massimo 15 caratteri. Immettere solo il nome Netbios.  <br/> (Nome pool CMS = Nome server)  <br/> |
 |Indirizzo IP del computer CMS  <br/> |Indirizzo IP per il server CMS (interno nella rete perimetrale).  <br/> Nome nel file INI: "IP" in "Parametri per il servizio di gestione centrale principale  <br/> ||
-|Nome condivisione file  <br/> |Nome condivisione file da creare nel server CMS per i Skype for Business replica (ad esempio, CmsFileStore).  <br/> Nella maggior parte dei casi è possibile utilizzare il valore suggerito predefinito.  <br/> Nome nel file .ini: "CmsFileStore" in "Parametri per il servizio di gestione centrale principale"  <br/> ||
+|Nome condivisione file  <br/> |Nome condivisione file da creare nel server CMS per Skype for Business replica dei dati (ad esempio, CmsFileStore).  <br/> Nella maggior parte dei casi è possibile utilizzare il valore suggerito predefinito.  <br/> Nome nel file .ini: "CmsFileStore" in "Parametri per il servizio di gestione centrale principale  <br/> ||
 |Nome pool di componenti Mediation Server  <br/> |Nome pool del componente Mediation Server. Immettere solo il nome Netbios. Il nome di dominio ACTIVE verrà utilizzato per generare il nome di dominio completo.  <br/> Nome nel .ini file: "PoolName" in "Parametri per un pool di Mediation Server"  <br/> |Deve contenere al massimo 15 caratteri. Immettere solo il nome Netbios.  <br/> |
-|Nome componente Mediation Server  <br/> |Nome componente del componente Mediation 1. Immettere solo il nome Netbios. Il nome di dominio ACTIVE verrà utilizzato per generare il nome di dominio completo.  <br/> Nome nel file .ini: "ServerName" in "Parametri per un pool di Mediation Server"  <br/> |Deve contenere al massimo 15 caratteri. Immettere solo il nome Netbios.  <br/> |
-|Mediation component Machine IP address  <br/> |IP Corpnet interno per il componente Mediation Server (interno nella rete perimetrale).  <br/> Nome nel .ini file: "IP" in "Parametri per un pool di Mediation Server"  <br/> ||
+|Nome componente Mediation Server  <br/> |Nome componente del componente Mediation 1. Immettere solo il nome Netbios. Il nome di dominio ACTIVE verrà utilizzato per generare il nome di dominio completo.  <br/> Nome nel .ini file: "ServerName" in "Parametri per un pool di Mediation Server"  <br/> |Deve contenere al massimo 15 caratteri. Immettere solo il nome Netbios.  <br/> |
+|Mediation component Machine IP address  <br/> |IP Corpnet interno per il componente Mediation Server (interno nella rete perimetrale).  <br/> Nome nel file .ini: "IP" in "Parametri per un pool di Mediation Server"  <br/> ||
 |Nome interno pool di server perimetrali  <br/> |Nome pool del componente edge. Immettere solo il nome Netbios. Il nome di dominio ACTIVE verrà utilizzato per generare il nome di dominio completo.  <br/> Nome nel file .ini: "InternalPoolName" in "Parametri per un pool di server perimetrali"  <br/> |Deve contenere al massimo 15 caratteri. Immettere solo il nome Netbios.  <br/> |
 |Nome interno del server perimetrale  <br/> |Nome componente del componente Edge. Immettere solo il nome Netbios. Il nome di dominio ACTIVE verrà utilizzato per generare il nome di dominio completo.  <br/> Nome nel file .ini: "InternalServerName" in "Parametri per un pool di server perimetrali"  <br/> |Deve contenere al massimo 15 caratteri. Immettere solo il nome Netbios.  <br/> |
 |IP interno del server perimetrale  <br/> |IP della rete perimetrale interna del componente Edge per comunicare con altri componenti del connettore cloud.  <br/> Nome nel file .ini: "InternalServerIPs" in "Parametri per un pool di server perimetrali"  <br/> ||
@@ -526,18 +526,18 @@ Quando si configurano le informazioni sul gateway, tenere presente quanto segue:
 |Protocollo Gateway vocale 2 per il traffico SIP (copiare questa riga se si dispone di più di 2 gateway)  <br/> |TCP o TLS.  <br/> ||
 |Intervallo di porte multimediali esterne per il traffico da e verso il componente Edge  <br/> |Intervallo di porte TCP/UDP per il traffico multimediale da e verso l'interfaccia esterna del perimetro. Deve sempre iniziare da 50 000. Per ulteriori informazioni, vedere "Porte e protocolli".  <br/> |50000 - 59 999  <br/> |
 |Intervallo di porte multimediali per comunicare con/dal componente Mediation tramite il firewall interno  <br/> |Intervallo di porte UDP che verrà utilizzato dal componente Mediation Server per comunicare con client e gateway (consigliato 4 porte per chiamata).  <br/> ||
-|Intervallo di porte multimediali per comunicare con/da Skype for Business client tramite firewall interno  <br/> |A scopo di pianificazione, non è possibile modificare. Le porte devono essere aperte nel firewall interno per comunicare tra Skype for Business client all'interno della rete interna e con il componente Mediation.  <br/> |50 000- 50 019  <br/> |
+|Intervallo di porte multimediali per comunicare con/da client Skype for Business tramite firewall interno  <br/> |A scopo di pianificazione, non è possibile modificare. Le porte devono essere aperte nel firewall interno per comunicare tra i client Skype for Business all'interno della rete interna e con il componente Mediation.  <br/> |50 000- 50 019  <br/> |
 |Password certificato pubblico  <br/> |Deve essere specificato nello script.  <br/> ||
-|Cassaforte Password amministratore modalità  <br/> Solo versione 1.4.2  <br/> |Cassaforte di amministratore in modalità avanzata per il dominio CC interno.  <br/> ||
+|Password di amministratore in modalità provvisoria  <br/> Solo versione 1.4.2  <br/> |Password di amministratore in modalità provvisoria per il dominio CC interno.  <br/> ||
 |Password di amministratore del dominio del connettore cloud  <br/> Solo versione 1.4.2  <br/> |Password per l'amministratore di dominio del connettore cloud (diverso dal dominio di produzione). Il nome utente è Administrator. Non è possibile modificare il nome utente.  <br/> ||
 |Password amministratore macchine virtuali  <br/> Solo versione 1.4.2  <br/> |Usato per configurare la rete di gestione durante la distribuzione.  <br/> Il nome utente è Administrator. Non è possibile modificare il nome utente.  <br/> ||
 |CABackupFile  <br/> Versione 2.0 e successive  <br/> |Utilizzato per salvare il servizio Autorità di certificazione dal server Active Directory in un file quando si distribuiscono più appliance in un sito Cloud Connector. Assicurati di usare la stessa password per tutte le appliance all'interno di un sito Cloud Connector per importare correttamente il file di backup della CA nel nuovo accessorio aggiunto.  <br/> ||
 |CCEService  <br/> Versione 2.0 e successive  <br/> |Utilizzato per il servizio di gestione del connettore cloud; deve accedere alla directory del sito di Cloud Connector. Assicurati di usare la stessa password per tutte le appliance all'interno di un sito Cloud Connector.  <br/> ||
-|Microsoft 365 o Office 365 Tenant Admin  <br/> | L'account viene utilizzato da Cloud Connector per aggiornare e gestire le impostazioni del tenant per Cloud Connector: <br/>  Versione 2.0 e successive: credenziali per un account Microsoft 365 o Office 365 con diritti Skype for Business amministratore. <br/>  Versioni precedenti alla 2.0: credenziali per un account Microsoft 365 o Office 365 con diritti di amministratore tenant globale. <br/> ||
+|Amministratore tenant di Microsoft 365 o Office 365  <br/> | L'account viene utilizzato da Cloud Connector per aggiornare e gestire le impostazioni del tenant per Cloud Connector: <br/>  Versione 2.0 e successive: credenziali per un account dedicato di Microsoft 365 o Office 365 con diritti di amministratore di Skype for Business. <br/>  Versioni precedenti alla 2.0: credenziali per un account dedicato di Microsoft 365 o Office 365 con diritti di amministratore tenant globale. <br/> ||
 |Abilitare il supporto REFER  <br/> |In questo modo verrà definito se il supporto SIP REFER è abilitato o disabilitato nella configurazione trunk per l'IP/PBX. Il valore predefinito è True. Se il gateway IP/PBX supporta il supporto REFER, lasciare true. In caso contrario, questo valore deve essere modificato in False. Se non si è certi che il gateway supporti REFER, vedere [Qualified IP-PBXs and Gateways](../../../SfbPartnerCertification/certification/infra-gateways.md).   <br/> ||
 |EnableFastFailoverTimer  <br/> Versione 2.0 e successive  <br/> |Con il valore predefinito "True", se il gateway non risponde alle chiamate in uscita entro 10 secondi, verrà instradato al successivo gateway disponibile. se non sono presenti trunk aggiuntivi, la chiamata verrà interrotta automaticamente.  <br/> Tuttavia, in un'organizzazione con reti lente e risposte gateway o quando il processo di definizione delle chiamate richiede più di 10 secondi, ciò potrebbe causare l'annullamento inutilmente delle chiamate.  <br/> Quando si effettuano chiamate verso alcuni paesi, ad esempio gli Emirati Arabi Uniti o l'Afghanistan, il processo di definizione delle chiamate può richiedere più di 10 secondi. Se si verificano problemi simili, sarà necessario impostare il valore su False. Non dimenticare di modificare l'impostazione corrispondente nel SBC o nel gateway connesso.  <br/> Il valore può essere True o False. Il valore predefinito è True.  <br/> ||
 |ForwardCallHistory  <br/> Versione 2.0 e successive  <br/> | Questo parametro viene utilizzato per attivare le intestazioni SIP utilizzate per segnalare il chiamante iniziale negli scenari di squillo simultaneo, inoltro di chiamata e trasferimento di chiamata. Se si imposta il parametro su True, verranno attivate due intestazioni SIP: <br/>  History-Info <br/>  Referred-By <br/>  L'intestazione History-Info viene utilizzata per il retargeting delle richieste SIP e "fornisce un meccanismo standard per l'acquisizione delle informazioni della cronologia delle richieste per consentire un'ampia gamma di servizi per reti e utenti finali" ([RFC 4244 - Sezione 1.1).](http://www.ietf.org/rfc/rfc4244.txt) Per le interfacce trunk del connettore cloud, questo viene utilizzato negli scenari di inoltro di chiamata e anello simultaneo.  <br/>  Il valore può essere True o False. Il valore predefinito è False. <br/> ||
-|INOLTRO PAI  <br/> Versione 2.0 e successive  <br/> |PAI è un'estensione privata di SIP che consente ai server SIP di asserire l'identità degli utenti autenticati. Per il provider trunk SIP, l'interfaccia PAI può essere utilizzata a scopo di fatturazione se History-Info e Referred-By non sono presenti. Quando forward P-Asserted-Identity è abilitato nella configurazione, il Mediation Server inoltra le intestazioni PAI con URI Tel SIP dal connettore &amp; cloud nel trunk SIP. Il Mediation Server inolterà le intestazioni PAI con i numeri E.164 dell'URI tel ricevuti solo nel &amp; trunk SIP al connettore cloud. Il Mediation Server inoltra inoltre tutte le intestazioni privacy ricevute in entrambe le direzioni. Se la richiesta SIP inviata dal Mediation Server include un'intestazione Privacy nel formato "Privacy: id" insieme all'intestazione PAI, l'identità asserita deve essere mantenuta privata all'esterno del dominio di trust di rete.  <br/> Il valore può essere True o False. Il valore predefinito è False.  <br/> ||
+|INOLTRO PAI  <br/> Versione 2.0 e successive  <br/> |PAI è un'estensione privata di SIP che consente ai server SIP di asserire l'identità degli utenti autenticati. Per il provider trunk SIP, l'interfaccia PAI può essere utilizzata a scopo di fatturazione se History-Info e Referred-By non sono presenti. Quando forward P-Asserted-Identity è abilitato nella configurazione, il Mediation Server inoltra le intestazioni PAI con URI Tel SIP dal connettore &amp; cloud nel trunk SIP. Il Mediation Server inolterà le intestazioni PAI con i numeri E.164 dell'URI tel ricevuti solo nel &amp; trunk SIP al connettore cloud. Mediation Server inoltra inoltre tutte le intestazioni privacy ricevute in entrambe le direzioni. Se la richiesta SIP inviata dal Mediation Server include un'intestazione Privacy nel formato "Privacy: id" insieme all'intestazione PAI, l'identità asserita deve essere mantenuta privata all'esterno del dominio di trust di rete.  <br/> Il valore può essere True o False. Il valore predefinito è False.  <br/> ||
 
 ### <a name="certificate-requirements"></a>Requisiti per i certificati
 <a name="BKMK_Certs"> </a>
@@ -553,21 +553,21 @@ Ogni componente Edge richiede un certificato da un'autorità di certificazione p
   acessedgepoolnameforsite1.sipdomain.com
   ```
 
-- **Opzione 2.** Se si desidera utilizzare un singolo certificato con caratteri jolly in tutti i server del pool di server perimetrali distribuiti, è possibile utilizzare una voce SAN con caratteri jolly di .sipdomain.com anziché il nome del pool di server perimetrali \* nel certificato. Il nome del soggetto può essere il nome del pool di server perimetrali di accesso di uno dei pool di server perimetrali distribuiti:
+- **Opzione 2.** Se si desidera utilizzare un singolo certificato con caratteri jolly in tutti i server del pool di server perimetrali distribuiti, è possibile utilizzare una voce SAN con caratteri jolly di .sipdomain.com anziché il nome del pool di server perimetrali nel \* certificato. Il nome del soggetto può essere il nome del pool di server perimetrali di accesso di uno dei pool di server perimetrali distribuiti:
 
   ```console
   SN = accessedgepoolnameforsite1.sipdomain.com, SAN = sip.sipdomain.com, SAN = *.sipdomain.com
   ```
 
 > [!NOTE]
-> Non è necessario creare una voce DNS esterna per sip. \<sipdomain\> . com perché questo nome appartiene alla distribuzione Microsoft 365 o Office 365 distribuzione.
+> Non è necessario creare una voce DNS esterna per sip. \<sipdomain\> . com perché questo nome appartiene alla distribuzione di Microsoft 365 o Office 365.
 
 > [!NOTE]
 > Se si desidera utilizzare un singolo certificato per tutti i pool di server perimetrali distribuiti nell'organizzazione e non è possibile utilizzare un certificato con caratteri jolly come definito nell'opzione 2, sarà necessario includere il nome di dominio completo per tutti i pool di server perimetrali distribuiti nel nome SAN nel certificato.
 
  **Se si dispone di più domini SIP:**
 
-Sarà necessario aggiungere un sip.sipdomain.com per ogni dominio SIP e il nome dei pool di access Edge per ogni dominio ( può essere un pool fisico ma con nomi diversi). Di seguito è riportato un esempio di voci SN e SAN in uno scenario con più domini SIP:
+Sarà necessario aggiungere un sip.sipdomain.com per ogni dominio SIP e il nome dei pool di access Edge per dominio ( può essere un pool fisico ma con nomi diversi). Di seguito è riportato un esempio di voci SN e SAN in uno scenario con più domini SIP:
 
 - **Opzione 1.** Il nome soggetto deve contenere il nome del pool assegnato per i componenti perimetrali. Si noti che il nome soggetto non può essere sip.sipdomain.com perché questo nome è riservato per il componente Skype for Business Edge online. La san deve contenere sip.sipdomain.com e il nome del pool di server perimetrali di accesso:
 
@@ -584,7 +584,7 @@ Sarà necessario aggiungere un sip.sipdomain.com per ogni dominio SIP e il nome 
   ```
 
 > [!NOTE]
-> Non è necessario creare una voce DNS esterna per sip. \<sipdomain\> . com perché questo nome appartiene alla distribuzione Microsoft 365 o Office 365 distribuzione.
+> Non è necessario creare una voce DNS esterna per sip. \<sipdomain\> . com perché questo nome appartiene alla distribuzione di Microsoft 365 o Office 365.
 
 Ai fini della distribuzione, è possibile utilizzare la tabella seguente:
 
@@ -610,7 +610,7 @@ In generale, se un componente all'interno di un'appliance si verifica un problem
 
 - **Considerazioni sui componenti mediation, CMS e controller di dominio**
 
-    Si supponga che il componente cms o controller di dominio in un'appliance si insedi. L'appliance può comunque gestire le chiamate in ingresso e in uscita, ma se si riavvia un componente Mediation quando il controller di dominio o il componente CMS non è raggiungibile, l'aggregazione non funzionerà. Lo stesso vale per il riavvio del componente CMS quando il controller di dominio non è disponibile.
+    Si supponga che il componente CMS o controller di dominio in un'appliance si insedi. L'appliance può comunque gestire le chiamate in ingresso e in uscita, ma se si riavvia un componente Mediation quando il controller di dominio o il componente CMS non è raggiungibile, l'aggregazione non funzionerà. Lo stesso vale per il riavvio del componente CMS quando il controller di dominio non è disponibile.
 
     **Suggerimento:** Prima di riavviare i componenti, verificare la disponibilità degli altri componenti nell'appliance.
 
@@ -637,9 +637,9 @@ Nel primo diagramma, un utente interno inserisce una chiamata in uscita nel modo
 
 1. Dave, un utente che si è domiciliato online, ma ora nella rete interna, chiama un utente PSTN esterno.
 
-2. Il traffico SIP viene instradato Skype for Business Online.
+2. Route del traffico SIP a Skype for Business online.
 
-3. Skype for Business Online esegue una ricerca inversa del numero. La ricerca inversa dei numeri ha esito negativo perché questo numero non appartiene a nessuno nell'Skype for Business organizzazione.
+3. Skype for Business online esegue una ricerca inversa del numero. La ricerca inversa dei numeri ha esito negativo perché questo numero non appartiene a nessuno nell'organizzazione Skype for Business.
 
 4. La chiamata viene instradata al componente Edge (sip e flusso multimediale prima tramite Edge online; I contenuti multimediali verranno inviati al componente Mediation Server tramite il firewall interno).
 
@@ -655,7 +655,7 @@ Nel diagramma successivo, un utente interno riceve una chiamata in ingresso come
 
 2. Il traffico SIP viene instradato al componente Mediation Server.
 
-3. Il componente Mediation invia il traffico SIP al componente Edge e quindi passa a Skype for Business Online.
+3. Il componente Mediation invia il traffico SIP al componente Edge e quindi passa a Skype for Business online.
 
 4. Skype for Business Online esegue una ricerca inversa del numero e rileva che si tratta dell'utente Dave.
 
@@ -663,7 +663,7 @@ Nel diagramma successivo, un utente interno riceve una chiamata in ingresso come
 
 6. Il traffico multimediale verrà stabilito tra il gateway e il componente Mediation Server e tra il componente Mediation Server e il punto finale.
 
-![Media Flow in ingresso per Cloud Connector.](../../media/ba5da6f6-e357-43c6-9e8f-4bfdde97c176.png)
+![Flusso multimediale in ingresso per Cloud Connector.](../../media/ba5da6f6-e357-43c6-9e8f-4bfdde97c176.png)
 
 ## <a name="monitoring-and-troubleshooting"></a>Monitoraggio e risoluzione dei problemi
 <a name="BKMK_Monitor"> </a>
@@ -680,29 +680,29 @@ Il meccanismo di monitoraggio e risoluzione dei problemi viene installato automa
 
   - Nella macchina virtuale Archivio di gestione centrale:
 
-     - Skype for Business Master Replicator Agent
+     - Agente replicatore master Skype for Business
 
-     - Skype for Business Replica Replicator Agent
+     - Agente Replicator di Skype for Business
 
   - Nella macchina virtuale Mediation Server:
 
-     - Skype for Business Replica Replicator Agent
+     - Agente Replicator di Skype for Business
 
      - Skype for Business Server Mediation
 
   - Nella macchina virtuale del server perimetrale
 
-     - Skype for Business Replica Replicator Agent
+     - Agente Replicator di Skype for Business
 
      -  Skype for Business Server Access Edge
 
      - Skype for Business Server Audio/Video Edge
 
-     - Skype for Business Server Autenticazione audio/video
+     - Autenticazione audio/video di Skype for Business Server
 
      - Skype for Business Server Web Conferencing Edge
 
-- Regola in ingresso Windows firewall per "CS RTCSRV" su Edge, "CS RTCMEDSRV" nel Mediation Server è disabilitato.
+- Regola in ingresso di Windows Firewall per "CS RTCSRV" su Edge, "CS RTCMEDSRV" nel Mediation Server è disabilitata.
 
 Cloud Connector 2.1 e versioni successive supporta il monitoraggio di Cloud Connector tramite Operations Management Suite (OMS). Per ulteriori informazioni, vedere [Monitor Cloud Connector using Operations Management Suite (OMS)](monitor-cloud-connector-using-operations-management-suite-oms.md)
 

@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 42b797c6-8db8-4ad7-886e-8ddf8deb06f9
 description: 'Riepilogo: informazioni su come associare i report di monitoraggio a un database mirror utilizzato da Skype for Business Server.'
-ms.openlocfilehash: 723d01f732259098c714eaac330eeaf8c686acac
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: ecdf630f6839fa65bf163715e473a3a37cdbcece
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58600661"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60014400"
 ---
 # <a name="associate-monitoring-reports-with-a-mirror-database-in-skype-for-business-server"></a>Associare i report di monitoraggio a un database mirror in Skype for Business Server 
  
@@ -33,15 +33,15 @@ Per fare in modo che i rapporti di monitoraggio esercitino automaticamente il fa
     
    - Prefisso **http:** .
     
-   - Nome di dominio completo (FQDN) del computer in cui è installato Reporting Services ( ad esempio, **atl-sql-001.litwareinc.com**).
+   - Nome di dominio completo (FQDN) del computer in cui è installato Reporting Services, ad esempio `atl-sql-001.litwareinc.com` .
     
    - Stringa di caratteri **/Reports_**.
     
    - Nome dell'istanza del database in cui sono installati i report di monitoraggio( ad esempio, **archinst**).
     
-     Ad esempio, se SQL Server Reporting Services è stato installato nel computer atl-sql-001.litwareinc.com e i rapporti di monitoraggio utilizzano l'istanza di database archinst, l'URL della home page sarà simile al seguente:
+     Ad esempio, se SQL Server Reporting Services è stato installato nel computer e i rapporti di monitoraggio utilizzano l'istanza di database archinst, l'URL della home page sarà `atl-sql-001.litwareinc.com` simile al seguente:
     
-     **http://atl-sql-001.litwareinc.com/Reports_archinst**
+     `http://atl-sql-001.litwareinc.com/Reports_archinst`
     
 2. Dopo aver eseguito l'accesso alla home page di Reporting Services, fare clic su **ServerReports** e quindi su **Reports_Content**. Verrà visualizzata la pagina **Reports_Content** per i report di Skype for Business Server monitoraggio.
     
@@ -51,7 +51,7 @@ Per fare in modo che i rapporti di monitoraggio esercitino automaticamente il fa
     
     Data source=(local)\archinst;initial catalog=LcsCDR
     
-5. Modificare la stringa di connessione in modo da includere il nome del server e l'istanza del database per il database mirror. Ad esempio, se il server è denominato atl-mirror-001 e il database mirror si trova nell'istanza di archinst, sarà necessario aggiungere per specificare il database mirror utilizzando la sintassi seguente:
+5. Modificare la stringa di connessione in modo da includere il nome del server e l'istanza del database per il database mirror. Ad esempio, se il server è denominato atl-mirror-001 e il database mirror si trova nell'istanza di archiviazione, sarà necessario aggiungere per specificare il database mirror utilizzando la sintassi seguente:
     
     Failover Partner=atl-mirror-001\archinst
     
@@ -63,7 +63,7 @@ Per fare in modo che i rapporti di monitoraggio esercitino automaticamente il fa
     
 7. Nella pagina **CDRDB** fare clic sul **Reports_Content** collegamento. Fare clic **sull'origine dati QMSDB** e quindi modificare la stringa di connessione per il database QoE. Ad esempio:
     
-    Data source=(local)\archinst; Failover Partner=atl-mirror-001\archinst;initial catalog=QoEMetrics
+    `Data source=(local)\archinst;Failover Partner=atl-mirror-001\archinst;initial catalog=QoEMetrics`
     
 8. Fare clic su **Applica**.
     

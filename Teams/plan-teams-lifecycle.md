@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fa4d2cfa493ae6bec4429db9c3d01319d889288e
-ms.sourcegitcommit: cf2f96dbd485ac4cc822c5a591ccce6b47f12cc7
+ms.openlocfilehash: 539597393f34f2f02734c57df57097281a4d7839
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59456376"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60012820"
 ---
 # <a name="plan-for-lifecycle-management-in-teams"></a>Pianificare la gestione del ciclo di vita in Teams
 
@@ -109,7 +109,7 @@ Seguire questi collegamenti per ottenere altre informazioni sull'organizzazione 
 -   [Distribuire Cloud Voice](cloud-voice-landing-page.md)
 
 
-|    |     |
+|&nbsp;|&nbsp;|
 |-----------|------------|
 | ![Icona che descrive i punti decisionali.](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Qual è lo scopo del team?</li><li>Chi appartiene al team?</li><li>Il team sarà pubblico o privato?</li><li>I nuovi membri possono aggiungersi in autonomia o vengono aggiunti dai proprietari del team?</li><li>Chi avrà le autorizzazioni necessarie per creare canali o aggiungere schede, bot e connettori?</li></ul> |
 | ![Icona che descrive i passaggi successivi.](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Creare il team.</li><li>Pianificare i canali.</li></ul>|
@@ -123,7 +123,7 @@ Per suscitare interesse, il proprietario del canale può pubblicare un messaggio
 
 Considerare i nomi dei canali prima di crearli in quanto la ridenominazione di un canale del team non comporta la ridenominazione della cartella corrispondente nella raccolta documenti di SharePoint. Ciò può comportare confusione per gli utenti finali. 
 
-|    |     |
+|&nbsp;|&nbsp;|
 |-----------|------------|
 | ![Icona che descrive i punti decisionali.](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Quali canali iniziali verranno aggiunti al team?</li><li>Quali indicazioni, se del caso, saranno fornite per l'aggiunta di nuovi canali? (Saranno organizzate per progetto, per argomento o altro?)</li></ul> |
 | ![Icona che descrive i passaggi successivi.](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Creare i canali iniziali.</li><li>Pubblicare un messaggio di benvenuto.</li><li>Iniziare a collaborare.</li></ul>|
@@ -144,7 +144,7 @@ Poiché i team sono organismi viventi, a volte devono essere controllati e accud
 - Provare diversi tipi di collaborazione sui canali, ad esempio riunioni di canale o conversazioni su schede in merito ai documenti.
 - Usare l'app per dispositivi mobili di Microsoft Teams per aumentare l’impegno.
 
-|    |     |
+|&nbsp;|&nbsp;|
 |-----------|------------|
 | ![Icona che descrive i punti decisionali.](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Chi monitorerà l'utilizzo per identificare i problemi?</li><li>Quali metriche verranno usate per determinare l'integrità di un team?</li><li>Identificare i team che hanno raggiunto la fine della vita utile.</li><li>Identificare i team non integri che hanno ancora uno scopo, ma devono essere rivitalizzati.</li></ul> |
 | ![Icona che descrive il passaggio successivo.](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Implementare un processo per il monitoraggio dell'integrità dei singoli team.</li></ul>|
@@ -161,7 +161,7 @@ I criteri di conservazione applicati ai team o ai servizi associati, come ShareP
 
 Per informazioni su come configurare i criteri di scadenza e conservazione, vedere [Panoramica della sicurezza e della conformità in Microsoft Teams](security-compliance-overview.md).
 
-|    |     |
+|&nbsp;|&nbsp;|
 |-----------|------------|
 | ![Icona che descrive i punti decisionali.](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Definire a cosa corrisponda la fine del ciclo di vita di un team.</li><li>Decidere se mantenere disponibile il contenuto di un team e quanto a lungo.</li></ul> |
 | ![Icona che descrive i passaggi successivi.](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare le procedure consigliate e l'analisi di fine progetto.</li><li>Archiviare i dati, se necessario.</li></ul>|

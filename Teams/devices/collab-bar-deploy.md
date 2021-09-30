@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni sulla distribuzione di Microsoft Teams Rooms su Android.
-ms.openlocfilehash: 2f513bdd8d286c256de97e00373bf8e392080b33
-ms.sourcegitcommit: ab9d27d7ddd1494539ae9424de200c9d0e76a9ec
+ms.openlocfilehash: 4ac068e008b53882dceba5f4ceef6e730a47b3f3
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59984571"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011710"
 ---
 # <a name="deploy-microsoft-teams-rooms-on-android"></a>Distribuire Microsoft Teams Rooms in Android
 
@@ -51,7 +51,7 @@ Per considerazioni sull'installazione fisica, vedere la documentazione del produ
 >
 > Non è consigliabile inserire server proxy tra Teams e Internet. Per altre informazioni sui server proxy e sui Teams, vedere [Server proxy per](../proxy-servers-for-skype-for-business-online.md)Teams .
 
-|    |     |
+|&nbsp;|&nbsp;|
 |-----------|------------|
 | ![Icona che descrive i punti decisionali.](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Verificare che i siti soddisfino i requisiti di conformità del sito per le barre di collaborazione per Microsoft Teams.</li><li>Verificare di aver fornito larghezza di banda sufficiente per ogni sito.</li></ul>|
 | ![Icona che illustra i passaggi successivi.](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Iniziare a pianificare la distribuzione e la configurazione della barra di collaborazione.</li></ul>|
@@ -72,7 +72,7 @@ Quando si crea un account delle risorse, è possibile scegliere se consentire al
 
 Per altre informazioni sugli account Microsoft 365 risorse, vedere [Creare un account delle risorse usando il](resource-account-ui.md)interfaccia di amministrazione di Microsoft 365.
 
-|    |     |
+|&nbsp;|&nbsp;|
 |-----------|------------|
 | ![Icona che descrive i punti decisionali.](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere se effettuare o ricevere chiamate telefoniche esterne e identificare i requisiti di licenza per gli account delle risorse.</li></ul>|
 | ![Icona che illustra i passaggi successivi.](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Preparare gli account delle risorse.</li></ul>|
@@ -96,7 +96,7 @@ Se si vuole assegnare Teams Rooms a singoli utenti per l'uso privato, non è nec
 > [!TIP]
 > Rendere descrittivi e facili da comprendere i nomi visualizzati Microsoft 365 gli account delle risorse. Questi sono i nomi che gli utenti visualizzano quando cercano e aggiungono Teams Rooms alle riunioni. È possibile usare una convenzione come Site Room Name ( Max Room Capacity ), quindi ad esempio Curie, una sala riunioni di 4 persone a Londra, potrebbe avere il nome visualizzato - LON-CURIE(4).
 
-|    |     |
+|&nbsp;|&nbsp;|
 |-----------|------------|
 | ![Icona che descrive i punti decisionali.](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere la convenzione di denominazione per gli account delle risorse dedicati.</li><li>Decidere se creare singoli account o usare script di provisioning in blocco.</li></ul>|
 | ![Icona che illustra i passaggi successivi.](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Iniziare a pianificare la distribuzione del dispositivo.</li></ul>|
@@ -105,7 +105,7 @@ Se si vuole assegnare Teams Rooms a singoli utenti per l'uso privato, non è nec
 
 Successivamente, è necessario creare il piano per distribuire i dispositivi e i dispositivi periferici assegnati alle chat room e quindi procedere con l'installazione e la configurazione.
 
-|    |     |
+|&nbsp;|&nbsp;|
 |-----------|------------|
 | ![Icona che descrive i punti decisionali.](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere chi gestirà la distribuzione sito per sito.</li><li> Identificare le risorse che installeranno Teams Rooms sul sito e intraprendere la configurazione e il test.</li></ul>|
 | ![Icona che illustra i passaggi successivi.](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Avviare il test del dispositivo.</li></ul>|

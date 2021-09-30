@@ -20,14 +20,14 @@ ms.localizationpriority: medium
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2baa4755f63bbb5867a1e259c9edc9a3aeca0718
-ms.sourcegitcommit: ab9d27d7ddd1494539ae9424de200c9d0e76a9ec
+ms.openlocfilehash: c53dc5fb9188cbfa8f32ddacae5486dd62f6a5fc
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59993211"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60015996"
 ---
-# <a name="manage-your-devices-in-microsoft-teams"></a>Gestire i dispositivi in Microsoft Teams
+# <a name="microsoft-teams-managing-your-devices"></a>Microsoft Teams: Gestione dei dispositivi 
 
 È possibile gestire i dispositivi usati con Microsoft Teams nell'organizzazione dall'Microsoft Teams di amministrazione. È possibile visualizzare e gestire l'inventario dei dispositivi per l'organizzazione ed eseguire attività come l'aggiornamento, il riavvio e il monitoraggio della diagnostica per i dispositivi. È anche possibile creare e assegnare profili di configurazione a un dispositivo o a gruppi di dispositivi.
 

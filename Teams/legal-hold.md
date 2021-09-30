@@ -1,5 +1,5 @@
 ---
-title: Applicazione di un blocco Microsoft Teams un utente o un team
+title: Applicazione di un blocco legale Microsoft Teams un utente o un team
 author: markjjo
 ms.author: markjjo
 manager: laurawi
@@ -12,24 +12,24 @@ ms.reviewer: anwara
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Informazioni su come impostare un blocco legale Microsoft Teams un utente o un team tramite il Centro sicurezza & conformità e scoprire quali sono le esigenze di un blocco legale in base ai requisiti di dati.
+description: Informazioni su come impostare un blocco legale Microsoft Teams un utente o un team tramite il Centro sicurezza & conformità e scoprire cosa richiede un blocco legale in base ai requisiti di dati.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 714b96f4ba2ea49d158bcc360a6fa95814674f1551935db64a87fd684ed0010c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ace4098b56539408e8c29e5d16e43c8ae255f372
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54321318"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60013350"
 ---
-# <a name="place-a-microsoft-teams-user-or-team-on-legal-hold"></a>Applicazione di un blocco Microsoft Teams un utente o un team
+# <a name="place-a-microsoft-teams-user-or-team-on-legal-hold"></a>Applicazione di un blocco legale Microsoft Teams un utente o un team
 
-Quando esiste una ragionevole aspettativa di controversie legali, le organizzazioni devono conservare le informazioni archiviate elettronicamente (ESI), inclusi Teams messaggi di chat rilevanti per il caso. Le organizzazioni potrebbero dover conservare tutti i messaggi relativi a un argomento specifico o a determinati utenti. Questo articolo illustra il blocco legale in Microsoft Teams. Per mantenere il contenuto in Microsoft 365, vedere [Creare un blocco di eDiscovery.](https://docs.microsoft.com/microsoft-365/compliance/create-ediscovery-holds)
+Quando esiste una ragionevole aspettativa di controversie legali, le organizzazioni devono conservare le informazioni archiviate elettronicamente (ESI), inclusi Teams messaggi di chat rilevanti per il caso. Le organizzazioni potrebbero dover conservare tutti i messaggi relativi a un argomento specifico o a determinati utenti. Questo articolo illustra il blocco legale in Microsoft Teams. Per mantenere il contenuto in Microsoft 365, vedere [Creare un blocco di eDiscovery.](/microsoft-365/compliance/create-ediscovery-holds)
 
 > [!NOTE]
-> A febbraio 2020 è stato attivato il blocco legale per i canali privati. Le chat del canale privato vengono archiviate nelle cassette postali degli utenti, mentre le normali chat del canale vengono archiviate nella cassetta postale Teams del gruppo. Se esiste già un blocco legale per una cassetta postale utente, il criterio di blocco verrà applicato automaticamente ai messaggi del canale privato archiviati nella cassetta postale. Non sono necessarie altre azioni per l'attivazione di questa opzione da parte di un amministratore. È supportato anche il blocco legale dei file condivisi nei canali privati.
+> A febbraio 2020 è stato attivato il blocco legale per i canali privati. Le chat di canale privato vengono archiviate nelle cassette postali degli utenti, mentre le chat dei canali normali vengono archiviate nella cassetta postale Teams di gruppo. Se esiste già un blocco legale per una cassetta postale utente, il criterio di blocco verrà applicato automaticamente ai messaggi del canale privato archiviati nella cassetta postale. Non sono necessarie altre azioni per l'attivazione di questa opzione da parte di un amministratore. È supportato anche il blocco legale dei file condivisi nei canali privati.
 
-All'Microsoft Teams, un intero team o utenti selezionati può essere sospeso per motivi legali. In questo modo si assicurerà che tutti i messaggi s scambiati in questi team (inclusi i canali privati) o i messaggi s scambio da questi utenti siano individuabili dai responsabili della conformità dell'organizzazione o dagli amministratori Teams aziendali.
+All'Microsoft Teams, un intero team o utenti selezionati può essere sospeso per motivi legali. In questo modo si assicura che tutti i messaggi s scambiati in questi team (inclusi i canali privati) o i messaggi s scambio da tali utenti siano individuabili dai responsabili della conformità dell'organizzazione o dagli amministratori Teams aziendali.
 
 > [!NOTE]
 > L'applicazione di un blocco a un utente non comporta automaticamente il blocco di un gruppo o viceversa.
@@ -44,7 +44,7 @@ Per impostare un blocco legale per un utente o un team in un caso di eDiscovery 
    ![Microsoft Teams scheda eDiscovery selezionata, con il pulsante Crea un caso.](media/LegalHold1.png)
 
    > [!NOTE]
-   > È anche possibile inserire un utente in un blocco associato a un Advanced eDiscovery caso. Per altre informazioni, vedere [Gestire i blocchi in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/managing-holds).
+   > È anche possibile inserire un utente in un blocco associato a un Advanced eDiscovery caso. Per altre informazioni, vedere [Gestire i blocchi in Advanced eDiscovery](/microsoft-365/compliance/managing-holds).
 
 3. Passare alla scheda **Blocchi** nel menu superiore e fare clic **su Crea** per creare un blocco. L'applicazione di un blocco a un utente o a un team mantiene tutti i messaggi s scambiati da tali utenti o messaggi. Quando si crea un nuovo caso, viene visualizzata l'opzione per mettere in blocco cassette postali o siti.
 
@@ -77,10 +77,10 @@ Come guida utile, è possibile usare la tabella seguente per comprendere quale p
 |Teams contenuto del file (ad esempio, contenuto wiki e file)     |SharePoint sito usato dal team.         |
 |Teams dei canali privati     |Sito SharePoint dedicato per canali privati.     |
 |Contenuto privato dell'utente     |L'account OneDrive for Business dell'utente.         |
-|Contenuto della scheda nelle chat|Cassetta postale utente per chat 1:1, chat di gruppo 1:N e conversazioni di canale privato o cassetta postale di gruppo per il contenuto della scheda nei messaggi del canale. Per altre informazioni, vedere la sezione "Conservare il contenuto della scheda" in [Creare un blocco di eDiscovery.](/microsoft-365/compliance/create-ediscovery-holds#preserve-card-content)
-||||
+|Contenuto della scheda nelle chat|Cassetta postale utente per chat 1:1, chat di gruppo 1:N e conversazioni di canali privati o cassetta postale di gruppo per il contenuto della scheda nei messaggi del canale. Per altre informazioni, vedere la sezione "Conservare il contenuto della scheda" in [Creare un blocco di eDiscovery.](/microsoft-365/compliance/create-ediscovery-holds#preserve-card-content)|
+
 
 > [!NOTE]
-> Per mantenere le comunicazioni nei canali privati, è necessario mettere in blocco le cassette postali degli utenti (utenti del canale privato) e quando si usa lo strumento eDiscovery per eseguire ricerche, è consigliabile eseguire una ricerca nella cassetta postale dell'utente. Come è stato detto in precedenza, le chat dei canali privati vengono archiviate nelle cassette postali degli utenti, non nella cassetta postale di gruppo di un team.
+> Per conservare le comunicazioni nei canali privati, è necessario mettere in blocco le cassette postali degli utenti (utenti del canale privato) e, quando si usa lo strumento eDiscovery per la ricerca, è consigliabile cercare nella cassetta postale dell'utente. Come è stato detto in precedenza, le chat dei canali privati vengono archiviate nelle cassette postali degli utenti, non nella cassetta postale di gruppo di un team.
 
 Per altre informazioni su questo argomento per le aree non Teams in Microsoft 365, vedere Gestire i casi di [eDiscovery:](/microsoft-365/compliance/ediscovery-cases#step-4-place-content-locations-on-hold)Mettere in attesa i percorsi di contenuto.

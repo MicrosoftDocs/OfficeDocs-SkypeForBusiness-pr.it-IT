@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ec62b70f-885e-4272-b9d2-a574ea434b64
 description: 'Riepilogo: informazioni su come usare il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: b3bc40cb6b6519b47134fd609854911a2e969655
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 8bd18b7be66c4ea9b3a69cd81d4c72fb641603eb
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728265"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60015080"
 ---
 # <a name="use-call-quality-dashboard-for-skype-for-business-server"></a>Usare il dashboard qualità delle chiamate per Skype for Business Server
 
@@ -53,7 +53,7 @@ Spostare il mouse sui grafici a barre e sulle linee di tendenza per visualizzare
 
 Quando si accede per la prima volta al portale call quality dashboard, viene creato automaticamente un set predefinito di report. Questi report vengono talvolta definiti report di sistema. È possibile modificare o eliminare liberamente questi report o estenderli creando nuovi report figlio e di pari livello.
 
-Al livello superiore, il report "Tendenza mensile Flussi audio" mostra la tendenza mensile per tutti i flussi audio. Spostare il mouse sulle barre di un grafico a barre per visualizzare una visualizzazione più dettagliata dei dati rappresentati dal grafico a barre. Fai clic sul titolo del report Tendenze mensili Flussi audio per passare al report "Managed vs Unmanaged Audio Flussi", in cui i rapporti vengono suddivisi tra chiamate gestite e non gestite. Le chiamate gestite sono chiamate effettuate dall'interno del firewall aziendale tramite connessioni cablate. Le chiamate non gestite includono le chiamate effettuate dall'esterno del firewall aziendale e tutte le chiamate effettuate tramite Wi-Fi.
+Al livello superiore, il report "Tendenza mensile Flussi audio" mostra la tendenza mensile per tutti i flussi audio. Spostare il mouse sulle barre di un grafico a barre per visualizzare una visualizzazione più dettagliata dei dati rappresentati dal grafico a barre. Fai clic sul titolo del report Tendenze mensili di Audio Flussi per passare al report "Managed vs Unmanaged Audio Flussi", in cui i report vengono suddivisi tra chiamate gestite e non gestite. Le chiamate gestite sono chiamate effettuate dall'interno del firewall aziendale tramite connessioni cablate. Le chiamate non gestite includono le chiamate effettuate dall'esterno del firewall aziendale e tutte le chiamate effettuate tramite Wi-Fi.
 
 L'altro report di primo livello è denominato "Istogramma della qualità delle chiamate segnalato dall'utente". Classificazioni qualità chiamata sono i numeri Skype for Business utenti al termine di una chiamata per indicare la qualità della chiamata. I numeri di valutazione sono da 1 a 5, 1 è il peggiore e 5 è il migliore. L'istogramma mostra il numero di chiamate audio con la valutazione indicata in un mese.
 
@@ -119,7 +119,7 @@ I dati utilizzati per queste tabelle sono definiti come segue:
 |InsideCorp |bit |Sì |Bit indica se l'edificio fa parte della rete aziendale. |
 |BuildingOfficeType |nvarchar(150) |Sì |Descrizione del tipo di ufficio dell'edificio. |
 |Area geografica |varchar(25) |Sì |Area geografica in cui si trova l'edificio. |
-|||||
+
 
 **CqdNetwork**
 
@@ -130,7 +130,7 @@ I dati utilizzati per queste tabelle sono definiti come segue:
 |NetworkNameID |int |Sì |Facoltativamente, viene eseguito il mapping a una riga nella tabella CqdNetworkName. |
 |BuildingKey |int |Sì |Chiave esterna corrispondente a una delle voci della tabella CqdBuilding. |
 |UpdatedDate |datetime |No |Datetime dell'ultimo aggiornamento della voce. |
-||||||
+
 
 Per impostazione predefinita, nella tabella successiva è presente una voce (0, "Sconosciuto").
 
@@ -140,7 +140,7 @@ Per impostazione predefinita, nella tabella successiva è presente una voce (0, 
 |:-----|:-----|:-----|:-----|
 |BuildingTypeId |int |No |Chiave primaria per la tabella CqdBuildingType. |
 |BuildingTypeDesc |char(18) |No |Descrizione del tipo di edificio. |
-|||||
+
 
 Per impostazione predefinita, la tabella successiva include una voce (0, "Unknown", 0, null).
 
@@ -152,9 +152,9 @@ Per impostazione predefinita, la tabella successiva include una voce (0, "Unknow
 |OwnershipTypeDesc |varchar(25) |No |Descrizione del tipo di proprietà. |
 |LeaseInd |tinyint |Sì |Indice che fa riferimento a un'altra riga della tabella CqdBuildingOwnershipType, utilizzata per identificare gli edifici in leasing. |
 |Proprietario |varchar(50) |Sì |Proprietario dell'edificio. |
-|||||
 
-Per impostazione predefinita, la tabella successiva include una voce (0, "Sconosciuto", 0, null).
+
+Per impostazione predefinita, la tabella successiva include una voce (0, "Unknown", 0, null).
 
 **CqdBssid**
 
@@ -165,7 +165,7 @@ Per impostazione predefinita, la tabella successiva include una voce (0, "Sconos
 |phy |nvarchar(50) |Sì |Informazioni sul fisico. |
 |ap |nvarchar(50) |Sì |Nome punto di accesso Wifi. |
 |Building |nvarchar(500) |Sì |Nome dell'edificio in cui si trova il punto di accesso WiFi. |
-||||
+
 
 ## <a name="cqd-streams"></a>CQD Flussi
 
@@ -186,7 +186,7 @@ Un flusso CQD è considerato buono, scadente o non classificato. CQM 1.5 ora usa
 |PacketLossRate |Maggiore di 0,1 (10%) |
 |JitterInterArrival |Maggiore di 30 |
 |RatioConcealedSamplesAvg |Maggiore di 0,07 |
-|||
+
 
 Definizione JPDR = Definizione di chiamata scarsa meno RatioConcealedSamplesAvg
 
@@ -205,7 +205,7 @@ CQD non utilizza i campi Caller/Callee, ma "First" e "Second" perché ci sono pa
 |2 (AVMCU) |4 (Skype for Business) |Endpoint 1 |Endpoint 2 |
 |2 (AVMCU) |1 (mMediationServer) |Endpoint 2 |Endpoint 1 |
 |4 (Skype for Business) |4 (Skype for Business) |Chiamante in MediaLine |Il chiamato in MMediaLine |
-|||||
+
 
 Se entrambi gli endpoint sono dello stesso tipo, CQD rende la voce Caller first e la callee second. Per ulteriori informazioni sui nomi degli endpoint, vedere [questo blog.](/archive/blogs/jenstr/call-quality-dashboard-tips-and-tricks)
 
@@ -224,7 +224,7 @@ Una query ben formata contiene tutti e tre i parametri seguenti:
 - Dimensione
 - Filtro
 
-Un esempio di query ben formata potrebbe essere "Show me Poor Flussi [Measurement] by Subnet [Dimension] for Building 6 [Filter]."
+Un esempio di query ben formata è "Show me Poor Flussi [Measurement] by Subnet [Dimension] for Building 6 [Filter]."
 
 ## <a name="what-does-union-do"></a>Cosa fa UNION?
 
@@ -240,7 +240,7 @@ Se wireless viene gestito internamente, è possibile ricreare i report wireless 
 
 ## <a name="operational-processes"></a>Processi operativi
 
-Esaminare e correggere i problemi gestiti Flussi prima di tutto. La qualità in quest'area deve essere al 100% all'interno del controllo e quindi più facile da correggere.
+Esaminare e correggere prima l'Flussi gestito. La qualità in quest'area deve essere al 100% all'interno del controllo e quindi più facile da correggere.
 
 ### <a name="managed-streams"></a>Gestione Flussi
 

@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 19333badf3df580129ab7a805cf27c670748d299
-ms.sourcegitcommit: 6a65e318d49d8990f2b3409ff7bb2c61ea1f2525
+ms.openlocfilehash: 30d2ef7baf485e617ac5d703659a79d6f57e7f76
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "59991145"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011780"
 ---
 # <a name="get-started-with-team-templates-in-the-teams-admin-center"></a>Introduzione ai modelli di team nell'interfaccia Teams di amministrazione
 
@@ -63,25 +63,25 @@ La maggior parte delle proprietà di un team sono incluse e supportate dai model
 
 ## <a name="pre-built-team-templates-in-the-teams-admin-center"></a>Modelli di team predefiniti nell'interfaccia Teams di amministrazione
 
-Ecco i modelli di team predefiniti disponibili nell'Teams di amministrazione. I modelli predefiniti sono modelli creati per settori specifici. Per visualizzare questi modelli, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare **a** modelli Teams  >  **team.**
+Ecco i modelli di team predefiniti disponibili nell'Teams di amministrazione. I modelli predefiniti sono modelli creati per settori specifici. Per visualizzare questi modelli, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare **a** Teams  >  **del team.**
 
 È possibile duplicare i modelli predefiniti, ma non modificarli. Se si vogliono modificare le proprietà in un modello predefinito, è possibile creare un nuovo modello da un modello esistente e quindi aggiungere o rimuovere le proprietà desiderate. Tenere presente che alcune proprietà in alcuni modelli non possono essere modificate.
 
-| Tipo di modello | TemplateId | Proprietà disponibili con questo modello |
+| Tipo di modello | TemplateId | Proprietà incluse nel modello |
 | ------------------ | -------------- | ----------------------------------------------------- |
 | Adottare Office 365 |`com.microsoft.teams.template.AdoptOffice365`|  Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Angolo Champions</li> <li>Moduli del team</li><li>Calendario</li></ul> App: <ul><li>Wiki</li>  <li>Calendario del canale</li> <li>Attività cardine</li><li>Bollettini</li></ul>|
 | Gestire un progetto |`com.microsoft.teams.template.ManageAProject`| Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Risorse</li> <li>Pianificazione</li></ul> App:<ul><li>Wiki</li><li>OneNote</li><li>Attività</li><li>Elenchi</li><li>Power Automate</li></ul> |
-| Gestire un evento|`com.microsoft.teams.template.ManageAnEvent` | Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Budget</li> <li>Contenuto</li><li>Logistica</li> <li>Pianificazione</li> <li> Marketing e pubbliche relazioni</li></ul> App:<ul><li>Wiki</li><li>Sito Web</li> <li>YouTube</li> <li>Attività</li> <li>OneNote</li> <li>Idee per i dipendenti</li> <li>Report di problema</li><li>Power Automate</li><li>Bollettini</li><li>Attività cardine</li></ul> |
+| Gestire un evento|`com.microsoft.teams.template.ManageAnEvent` | Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Budget</li> <li>Contenuto</li><li>Logistica</li> <li>Pianificazione</li> <li> Marketing e pubbliche relazioni</li></ul> App:<ul><li>Wiki</li><li>Sito Web</li> <li>YouTube</li> <li>Attività</li> <li>OneNote</li> <li>Idee per i dipendenti</li> <li>Segnalazione dei problemi</li><li>Power Automate</li><li>Bollettini</li><li>Attività cardine</li></ul> |
 |Dipendenti a bordo|`com.microsoft.teams.template.OnboardEmployees` | Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Chat dei dipendenti</li> <li>Formazione</li></ul>App:<ul><li>Wiki</li><li>Community</li><li>Attività</li><li>Idee per i dipendenti</li><li>Power Automate</li><li>Bollettini</li><li>Attività cardine</li></ul>|
-|Organizzare l'help desk| `com.microsoft.teams.template.OrganizeHelpDesk`|Canali:<ul><li>Generale</li><li>Annunci</li><li>Domande frequenti</li></ul>App:<ul><li>Wiki</li><li>OneNote</li><li>Attività </li><li>Complimenti</li><li>Report di problema</li><li>Power Automate</li><li>Bollettini</li></ul> |
-| Assistenza ai pazienti| `com.microsoft.teams.template.healthcareWard`| Canali:<ul><li>Generale</li><li>Annunci</li><li>Briefing</li><li>Giri di visite</li><li>Personale</li><li>Formazione</li></ul> App: <ul><li>Wiki</li><li>Elenchi  </li><li>Approvazioni</li><li>Bollettini</li><li>Ispezione</li></ul>|
-| Comunicazione di crisi |`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent`| Canali: <ul><li>Generale<li>Annunci</li><li>Notizie del mondo</li><li>Messaggi interni</li><li>Comms esterni</li><li>Approvazioni richiesta</li><li>Escalation dei clienti</li><li>Aggiornamento per dirigenti</li><li>Pianificazione</li><li>Logistica</li></ul>App: <ul><li>Sito Web</li><li>Attività</li><li>Report di problema</li><li>Approvazioni</li><li>Bollettini</li><li>OneNote</li><li>Power Automate</li><li>SharePoint</li></ul>|
-|Filiale bancaria| `com.microsoft.teams.template.CollaborateWithinABankBranch`|Canali: <ul><li>Generale<li>Annunci</li><li>Briefing</li><li>Riunioni con i clienti</li><li>Approvazioni Richiedi </li><li>Coaching</li><li>Sviluppo di competenze</li><li>Elaborazione dei prestiti</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Cose divertenti</li><li>Conformità</li></ul>App:<ul><li>Complimenti </li><li>Report di problema</li><li>Wiki</li><li>Calendario</li><li>Approvazioni</li><li>Bollettini</li><li>Idee</li></ul>|
+|Organizzare l'help desk| `com.microsoft.teams.template.OrganizeHelpDesk`|Canali:<ul><li>Generale</li><li>Annunci</li><li>Domande frequenti</li></ul>App:<ul><li>Wiki</li><li>OneNote</li><li>Attività </li><li>Complimento</li><li>Segnalazione dei problemi</li><li>Power Automate</li><li>Bollettini</li></ul> |
+| Assistenza ai pazienti| `com.microsoft.teams.template.healthcareWard`| Canali:<ul><li>Generale</li><li>Annunci</li><li>Briefing</li><li>Giri di visite</li><li>Personale</li><li>Formazione</li></ul> App: <ul><li>Wiki</li><li>Elenchi  </li><li>Approvazioni</li><li>Bollettini</li><li>Revisione</li></ul>|
+| Comunicazione di crisi |`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent`| Canali: <ul><li>Generale<li>Annunci</li><li>Notizie del mondo</li><li>Messaggi interni</li><li>Comms esterni</li><li>Richiesta di approvazioni</li><li>Escalation dei clienti</li><li>Aggiornamento per dirigenti</li><li>Pianificazione</li><li>Logistica</li></ul>App: <ul><li>Sito Web</li><li>Attività</li><li>Segnalazione dei problemi</li><li>Approvazioni</li><li>Bollettini</li><li>OneNote</li><li>Power Automate</li><li>SharePoint</li></ul>|
+|Filiale bancaria| `com.microsoft.teams.template.CollaborateWithinABankBranch`|Canali: <ul><li>Generale<li>Annunci</li><li>Briefing</li><li>Riunioni con i clienti</li><li>Approvazioni Richiedi </li><li>Coaching</li><li>Sviluppo delle competenze</li><li>Elaborazione dei prestiti</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Elementi divertenti</li><li>Conformità</li></ul>App:<ul><li>Complimento </li><li>Segnalazione dei problemi</li><li>Wiki</li><li>Calendario</li><li>Approvazioni</li><li>Bollettini</li><li>Idee</li></ul>|
 |Risposta a un evento imprevisto| `com.microsoft.teams.template.CoordinateIncidentResponse`|Canali: <ul><li>Generale<li>Annunci</li><li>Logistica</li><li>Pianificazione</li><li>Ripristino</li><li>Urgente</li></ul> App: <ul><li>Wiki</li><li>Excel</li><li>OneNote</li><li>SharePoint</li><li>Attività</li> <li>Approvazioni</li> <li>Ispezione</li> <li>Power Automate</li><li>Bollettini</li><li>Attività cardine</li></ul>|
-|Ospedale| `com.microsoft.teams.template.healthcareHospital` |Canali: <ul><li>Generale</li><li>Annunci</li><li>Conformità</li><li>Pulizie</li><li>Risorse umane</li><li>Farmacia</li></ul> App: <ul><li>Wiki</li><li>Elenchi</li><li>Attività</li><li>Approvazioni</li><li>Turni</li><li>Bollettini</li><li>Ispezione</li><li>Idee</li></ul>|
+|Ospedale| `com.microsoft.teams.template.healthcareHospital` |Canali: <ul><li>Generale</li><li>Annunci</li><li>Conformità</li><li>Pulizie</li><li>Risorse umane</li><li>Farmacia</li></ul> App: <ul><li>Wiki</li><li>Elenchi</li><li>Attività</li><li>Approvazioni</li><li>Turni</li><li>Bollettini</li><li>Revisione</li><li>Idee</li></ul>|
 |Organizzare un negozio| `com.microsoft.teams.template.retailStore` |Canali: <ul><li>Generale<li>Passaggio di consegne del turno</li><li>Conformità dello Store</li><li>Apprendimento</li></ul> App: <ul><li>Wiki</li><li>Attività</li><li>Turni</li><li>Ispezione</li></ul>|
 |Vendita al dettaglio per i responsabili| `com.microsoft.teams.template.retailManagerCollaboration` |Canali: <ul><li>Generale<li>Operazioni</li><li>Apprendimento</li></ul> App: <ul><li>Wiki</li><li>Attività</li><li>Ispezione</li></ul>|
-|Qualità e sicurezza |`com.microsoft.teams.template.QualitySafety`|Canali: <ul><li>Generale<li>Annunci</li><li>Leadership</li><li>Manutenzione</li><li>Linea di produzione 1</li><li>Linea di produzione 2</li><li>Linea di produzione 3</li><li>Salute e sicurezza</li><li>Formazione</li><li>Cose divertenti</li></ul> App: <ul><li>Wiki</li><li>Attività</li> <li>Report di problema</li> <li>Ispezione</li> </ul>|
+|Qualità e sicurezza |`com.microsoft.teams.template.QualitySafety`|Canali: <ul><li>Generale<li>Annunci</li><li>Leadership</li><li>Manutenzione</li><li>Linea di produzione 1</li><li>Linea di produzione 2</li><li>Linea di produzione 3</li><li>Salute e sicurezza</li><li>Formazione</li><li>Elementi divertenti</li></ul> App: <ul><li>Wiki</li><li>Attività</li> <li>Segnalazione dei problemi</li> <li>Ispezione</li> </ul>|
 
 ### <a name="team-templates-by-category-and-industry"></a>Modelli di team per categoria e settore
 
@@ -112,7 +112,7 @@ Per altre informazioni, vedere [Limiti e specifiche di Teams.](limits-specificat
 
 ## <a name="manage-team-templates"></a>Gestire i modelli di team
 
-### <a name="manage-team-templates-in-the-teams-admin-center"></a>Gestire i modelli di team nell'Teams di amministrazione
+### <a name="manage-team-templates-in-the-teams-admin-center"></a>Gestire i modelli di team nell’interfaccia di amministrazione di Teams
 
 #### <a name="view-team-templates"></a>Visualizzare i modelli di team
 
@@ -128,16 +128,16 @@ Per visualizzare i modelli di team, nel riquadro di spostamento sinistro dell'in
 
 #### <a name="apply-team-template-policies"></a>Applicare i criteri dei modelli di team
 
-Per controllare i modelli visualizzati dagli utenti in Teams per la creazione di team, è possibile impostare i criteri dei modelli e assegnarli a utenti e gruppi dell'organizzazione. Per altre informazioni, vedere [Gestire i modelli di team nell'Teams di amministrazione.](templates-policies.md)
+Per controllare i modelli visualizzati dagli utenti nelle Teams per la creazione di team, è possibile impostare i criteri dei modelli e assegnarli a utenti e gruppi dell'organizzazione. Per altre informazioni, vedere [Gestire i modelli di team nell'Teams di amministrazione.](templates-policies.md)
 
 ### <a name="manage-team-templates-using-powershell"></a>Gestire i modelli di team con PowerShell
 
 Usare i cmdlet seguenti per gestire i modelli in PowerShell.
 
-- [Get-CsTeamTemplate](/powershell/module/teams/get-csteamtemplate?view=teams-ps) 
+- [Get-CsTeamTemplate](/powershell/module/teams/get-csteamtemplate?view=teams-ps)
 - [Get-CsTeamTemplateList](/powershell/module/teams/get-csteamtemplatelist?view=teams-ps)
 - [New-CsTeamTemplate](/powershell/module/teams/new-csteamtemplate?view=teams-ps)
-- [Remove-CsTeamTemplate](/powershell/module/teams/remove-csteamtemplate?view=teams-ps) 
+- [Remove-CsTeamTemplate](/powershell/module/teams/remove-csteamtemplate?view=teams-ps)
 - [Update-CsTeamTemplate](/powershell/module/teams/update-csteamtemplate?view=teams-ps)
 
 ## <a name="related-articles"></a>Articoli correlati

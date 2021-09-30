@@ -1,5 +1,5 @@
 ---
-title: Usare Power BI per analizzare i dati CQD per Microsoft Teams
+title: Usare Power BI per analizzare i dati di CQD per Microsoft Teams
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -16,26 +16,26 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 description: Usare Power BI per analizzare i dati CQD per Microsoft Teams.
-ms.openlocfilehash: 67e6c8750d064c8472865a22f1367d297fd4fee5
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4a96a53454f1f4d89feed3ea87342a7991d7975c
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58616322"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60013770"
 ---
-# <a name="use-power-bi-to-analyze-cqd-data-for-microsoft-teams"></a>Usare Power BI per analizzare i dati CQD per Microsoft Teams
+# <a name="use-power-bi-to-analyze-cqd-data-for-microsoft-teams"></a>Usare Power BI per analizzare i dati di CQD per Microsoft Teams
 
 Novità di gennaio 2020: [Scaricare Power BI di query per CQD](https://www.microsoft.com/download/details.aspx?id=102291). Modelli Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati CQD.
 
-Per i report CQD (Call Quality Dashboard) in Teams, se si preferisce usare Power BI per eseguire query e segnalare i dati, scaricare i modelli di Power BI CQD. Quando si aprono i modelli in Power BI, verrà richiesto di accedere con le credenziali di amministratore di CQD. È possibile personalizzare questi modelli di query e distribuirli a chiunque nell'organizzazione abbia una licenza Power BI e autorizzazioni di amministratore di CQD.
+Per i report CQD (Call Quality Dashboard) in Teams, se si preferisce usare Power BI per eseguire query e segnalare i dati, scaricare i modelli Power BI CQD. Quando si aprono i modelli in Power BI, verrà richiesto di accedere con le credenziali di amministratore di CQD. È possibile personalizzare questi modelli di query e distribuirli a chiunque nell'organizzazione abbia una licenza Power BI e autorizzazioni di amministratore di CQD.
 
 Prima di poter usare questi file PBIT, è necessario installare il connettore Power BI per [Microsoft CQD](CQD-Power-BI-connector.md) usando il file *MicrosoftCallQuality.pqx* incluso nel [download.](https://www.microsoft.com/download/details.aspx?id=102291) 
 
 Assicurarsi di avere il ruolo [di accesso CQD](turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd) giusto per accedere ai Power BI report. 
 
-|  |  |
+|&nbsp;|&nbsp;|
 |---------|---------|
-|<strong>(Nuovo!)</strong> Report cronologico Teams Operatore automatico & coda di chiamata CQD.pbit     |  Questo modello fornisce i tre report seguenti:</p><li>Operatore automatico, che mostra l'analisi delle chiamate in arrivo negli operatori automatici.</li><li>Coda di chiamata: mostra l'analisi delle chiamate in arrivo nelle code di chiamata.</li><li>Sequenza temporale agente: mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.</li><br>Per altre informazioni, vedere il [Operatore automatico & cronologia della coda di chiamata.](aa-cq-cqd-historical-reports.md)        |
+|<strong>(Nuovo!)</strong> Report cronologico Teams Operatore automatico & coda di chiamata.pbit     |  Questo modello fornisce i tre report seguenti:</p><li>Operatore automatico: mostra l'analisi delle chiamate in arrivo nei tuoi operatori automatici.</li><li>Coda di chiamata: mostra l'analisi delle chiamate in arrivo nelle code di chiamata.</li><li>Sequenza temporale agente: mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.</li><br>Per altre informazioni, vedere report [Operatore automatico & cronologia della coda di chiamata.](aa-cq-cqd-historical-reports.md)        |
 |Report helpdesk CQD.pbit     |Integrando i dati di edificio e EUII, questo report è progettato per consentire di eseguire il drill-up da un singolo utente per trovare la causa radice a monte della scarsa qualità delle chiamate per tale utente (ad esempio, l'utente si trova in un edificio in cui si verificano problemi di rete).         |
 |CQD Location Enhanced Report.pbit     | Ri-immaginando i report sulla posizione di CQD SPD. Include 9 report, che forniscono informazioni sulla qualità delle chiamate, l'edificio WiFi, l'affidabilità e la tariffa delle chiamate personali (RMC) con ulteriori drill-thrus per edificio o per utente.  Assicurarsi di caricare i dati dell'edificio per ottimizzare l'esperienza di creazione di report.        |
 |CQD Mobile Device Report.pbit     | Fornisce informazioni specifiche per gli utenti di dispositivi mobili, tra cui qualità delle chiamate, affidabilità e tariffa chiamata. Visualizza i report sulla rete mobile, la rete WiFi e il sistema operativo mobile (Android, iOS).        |
@@ -45,7 +45,7 @@ Assicurarsi di avere il ruolo [di accesso CQD](turning-on-and-using-call-quality
 |Report CQD User Feedback (Rate My Call)     | Mostra i dati valuta le chiamate personali in un modo che è possibile usare facilmente per supportare le chiamate per l'organizzazione. Riferimento incrociato con verbatims per identificare le opportunità di formazione degli utenti finali.        |
 
 > [!TIP]
-> Dopo aver configurato i report Power BI per i dati CQD, aggiungerli come scheda a un canale. Dopo aver selezionato **+** in un canale, seleziona **Power BI** e quindi trova il report. Per altre informazioni, vedere [Incorpora report con la](/power-bi/service-embed-report-microsoft-teams)scheda Power BI per Teams . Tenere presente che solo le persone con una licenza Power BI e le credenziali di amministratore CQD possono accedere a questi report.
+> Dopo aver configurato i report Power BI per i dati CQD, aggiungerli come scheda a un canale. Dopo aver selezionato **+** in un canale, selezionare **Power BI** e quindi trovare il report. Per altre informazioni, vedere [Incorpora report con la scheda](/power-bi/service-embed-report-microsoft-teams)Power BI per Teams . Tenere presente che solo le persone con una Power BI e le credenziali di amministratore di CQD possono accedere a questi report.
 
 
 ## <a name="related-topics"></a>Argomenti correlati

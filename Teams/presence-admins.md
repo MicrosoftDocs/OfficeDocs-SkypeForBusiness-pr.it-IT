@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 450decb455b35018c2dc4c02951ee542ab212371
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 8a928b532dcfb87a866f25502f4523078ce9cd48
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58725825"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60012960"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
@@ -33,6 +33,7 @@ La presenza fa parte del profilo utente in Microsoft Teams (e in tutto Microsoft
 
  > [!NOTE]
  > Teams rispetta la configurazione della privacy. Pertanto, se è stata abilitata la modalità privacy, la presenza dell'utente non sarà visibile agli utenti esterni.
+
 ## <a name="presence-states-in-teams"></a>Stati di presenza in Teams
 
 
@@ -50,10 +51,10 @@ La presenza fa parte del profilo utente in Microsoft Teams (e in tutto Microsoft
 | ![Icona orologio giallo, indica Assente.](media/Presence_Away.png) Non al computer| ![Icona orologio giallo, indica Assente.](media/Presence_Away.png) Assente|
 || ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente, ultimo accesso *orario*|
 |![Icona orologio giallo, indica Assente, torno subito.](media/Presence_Away.png) Torno subito| |
-|![Cerchio grigio con una X, indica Offline.](media/Presence_Offline.png) Invisibile|![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Offline. Se gli utenti non effettuano l'accesso ad alcun dispositivo per alcuni minuti, risultano invisibili. | |
+|![Cerchio grigio con una X, indica Offline.](media/Presence_Offline.png) Invisibile|![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Offline. Se gli utenti non effettuano l'accesso ad alcun dispositivo per alcuni minuti, risultano invisibili. |
 || ![Cerchio grigio trasparente, indica Stato sconosciuto.](media/Presence_Unknown.png) Stato sconosciuto|
 || ![Cerchio viola con freccia, indica Fuori sede.](media/Presence_OOF.png) Fuori sede. Fuori sede viene usato quando è impostata una risposta automatica. |
-|||
+
  > [!NOTE]
  > Per gli utenti che hanno la propria cassetta postale in locale, sono previsti ritardi di presenza di un'ora (massimo).
 
@@ -82,7 +83,6 @@ Per impedire agli utenti di visualizzare uno stato che potrebbe non essere perti
 | Occupato|1 giorno|
 | Non disturbare|1 giorno|
 | Altri|7 giorni|
-|||
 
 > [!NOTE]
 > Un utente può anche configurare manualmente una durata per la propria presenza. Ad esempio, un utente può impostare il proprio stato su Invisibile fino a domani mattina.

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c7f78f23-b74f-402f-bedb-4cc308718f5b
 description: 'Riepilogo: leggere questo argomento per informazioni su come assegnare un criterio vocale per gli utenti Sistema telefonico con connettività PSTN locale.'
-ms.openlocfilehash: a3524c77cf27dc4fd9ab3a4f74211fc9040aad75
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: aa31624921aefd1065b0719966af1df9d2b38793
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58582540"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60013170"
 ---
 # <a name="assign-a-voice-routing-policy"></a>Assegnare un criterio di routing vocale
  
@@ -37,16 +37,16 @@ Quando un utente si trova Skype for Business Online e usa Sistema telefonico con
   
 Gli altri criteri vocali definiscono le funzionalità di chiamata disponibili per l'utente. questo criterio vocale è definito da Microsoft ed è identico per tutte le Sistema telefonico utenti di connettività PSTN locali. Viene assegnato automaticamente agli Sistema telefonico utenti.
   
-||**Utente locale**|**Sistema telefonico con l'utente di connettività PSTN locale**|
+|&nbsp;|Utente locale|Sistema telefonico con l'utente di connettività PSTN locale|
 |:-----|:-----|:-----|
-|Funzionalità di chiamata definite in  <br/> |Criteri vocali  <br/> |Criteri vocali predefiniti, assegnati automaticamente quando l'utente ha una licenza per Sistema telefonico.  <br/> |
-|Record di utilizzo PSTN associati a  <br/> |Criteri vocali  <br/> |Criterio di routing vocale, assegnato mentre l'utente è ancora in locale.  <br/> |
+|Funzionalità di chiamata definite in   |Criteri vocali   |Criteri vocali predefiniti, assegnati automaticamente quando l'utente ha una licenza per Sistema telefonico.   |
+|Record di utilizzo PSTN associati a   |Criteri vocali   |Criterio di routing vocale, assegnato mentre l'utente è ancora in locale.   |
    
 Eseguire i passaggi seguenti usando la distribuzione locale, mentre l'utente è ancora presente nella distribuzione locale.
   
 ## <a name="using-a-global-voice-routing-policy"></a>Utilizzo di un criterio di routing vocale globale
 
-Prima di utilizzare un criterio di routing vocale globale per il Sistema telefonico con gli utenti di connettività PSTN locale, è necessario aggiungere i record di utilizzo PSTN al criterio.
+Prima di utilizzare un criterio di routing vocale globale per il Sistema telefonico con gli utenti di connettività PSTN locale, è necessario aggiungere record di utilizzo PSTN al criterio.
   
 ### <a name="to-assign-pstn-usage-records-to-the-global-voice-routing-policy"></a>Per assegnare record di utilizzo PSTN al criterio di routing vocale globale
 
@@ -112,4 +112,4 @@ Indipendentemente dal fatto che si utilizzi il criterio di routing vocale global
 
 In questo esempio, l'utente con il nome visualizzato Bob Kelly viene assegnato al criterio vocale creato in precedenza con il nome HybridVoice.
   
-Per ulteriori informazioni sui criteri di routing vocale, vedere Create [or modify a voice policy and configure PSTN usage records in Skype for Business 2015,](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md) [New-CsVoiceRoutingPolicy](/powershell/module/skype/new-csvoiceroutingpolicy?view=skype-ps)e [Grant-CsVoicePolicy.](/powershell/module/skype/grant-csvoicepolicy?view=skype-ps)
+Per ulteriori informazioni sui criteri di routing vocale, vedere [Create or modify a voice policy and configure PSTN usage records in Skype for Business 2015,](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md) [New-CsVoiceRoutingPolicy](/powershell/module/skype/new-csvoiceroutingpolicy)e [Grant-CsVoicePolicy.](/powershell/module/skype/grant-csvoicepolicy)

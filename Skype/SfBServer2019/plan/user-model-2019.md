@@ -11,13 +11,13 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.collection: ''
-description: Gli argomenti di questa sezione consentono di comprendere come pianificare e distribuire Skype for Business Server in modo da poter pianificare in modo adeguato il numero di utenti nell'organizzazione e pianificare il carico del server generato dalle relative attività.
-ms.openlocfilehash: 090d209d1b60d866ddabe976ffb8b04394712525
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Comprendere come pianificare e distribuire Skype for Business Server in modo da poter pianificare in modo adeguato il numero di utenti nell'organizzazione e pianificare il carico del server generato dalle attività.
+ms.openlocfilehash: 61c6fc38df65782ce7c11fbeed1c60039a06cf6a
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58600891"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011890"
 ---
 # <a name="capacity-planning-for-skype-for-business-server-2019"></a>Pianificazione della capacità per Skype for Business Server 2019
 
@@ -29,12 +29,12 @@ Abbiamo eseguito i test delle prestazioni sull'hardware descritto nella tabella 
 
 **Hardware utilizzato nei test delle prestazioni**
 
-|**Componente hardware**|**Consigliata**|
+|Componente hardware|Consigliata|
 |:-----|:-----|
-|CPU  <br/> |Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore.  <br/> I processori Intel Itanium non sono supportati per Skype for Business Server 2019.  <br/> |
-|Memoria  <br/> |32 gigabyte (GB).  <br/> |
-|Disco  <br/> |UNO DEI SEGUENTI:  <br/> • 8 o più unità disco rigido da 10.000 RPM con almeno 72 GB di spazio libero su disco (due dischi con RAID 1 e 6 con RAID 10).  <br/> OPPURE  <br/> • Unità SSD (Solid State Drive) in grado di fornire lo stesso spazio libero e prestazioni simili a 8 unità disco meccaniche da 10000 RPM.  <br/> |
-|Rete  <br/> |1 scheda di rete a doppia porta, 1 Gbps o superiore (è possibile utilizzare 2 schede di rete, ma devono essere associate a un singolo indirizzo MAC e a un singolo indirizzo IP).  <br/> Le configurazioni dual o multi-homed non sono **supportate** per Front End Server, back-end server e edizione Standard server. <br/> Se non sono esposti al sistema operativo e vengono utilizzati per monitorare e gestire l'hardware del server, è possibile disporre di sistemi di gestione fuori banda, ad esempio DRAC o ILO. Questo scenario non costituisce un server multi-homed ed è supportato.  <br/> |
+|CPU   |Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore.  <br/> I processori Intel Itanium non sono supportati per Skype for Business Server 2019.   |
+|Memoria   |32 gigabyte (GB).   |
+|Disco   |UNO DEI SEGUENTI:  <br/> • 8 o più unità disco rigido da 10.000 RPM con almeno 72 GB di spazio libero su disco (due dischi con RAID 1 e 6 con RAID 10).  <br/> OPPURE  <br/> • Unità SSD (Solid State Drive) in grado di fornire lo stesso spazio libero e prestazioni simili a 8 unità disco meccaniche da 10000 RPM.   |
+|Rete   |1 scheda di rete a doppia porta, 1 Gbps o superiore (è possibile utilizzare 2 schede di rete, ma devono essere associate a un singolo indirizzo MAC e a un singolo indirizzo IP).  <br/> Le configurazioni dual o multi-homed non sono **supportate** per Front End Server, back-end server e edizione Standard server. <br/> Se non sono esposti al sistema operativo e vengono utilizzati per monitorare e gestire l'hardware del server, è possibile disporre di sistemi di gestione fuori banda, ad esempio DRAC o ILO. Questo scenario non costituisce un server multi-homed ed è supportato.   |
 
 ## <a name="summary-of-results"></a>Riepilogo dei risultati
 
@@ -42,20 +42,20 @@ Nella tabella seguente sono riepilogati i suggerimenti.
 
 |**Ruolo del server**|**Numero massimo di utenti supportati**|
 |:-----|:-----|
-|Pool Front End con sedici Front End Server e server back-end o una coppia di server back-end con SQL Always On per la disponibilità elevata.  <br/> |106.000 utenti univoci connessi contemporaneamente, più il 50% di punti di presenza multipli (MPOP) che rappresentano istanze non mobili, più il 40% degli utenti abilitati per dispositivi mobili per un totale di 210.000 endpoint.  <br/> |
-|A/V Conferencing  <br/> |Il servizio A/V Conferencing fornito da un pool Front End supporta le conferenze del pool presupponendo una dimensione massima di conferenza di 250 utenti e una sola conferenza di grandi dimensioni in esecuzione alla volta.  <br/> **Nota:** È inoltre possibile supportare conferenze di grandi dimensioni tra 250 e 1000 utenti distribuendo un pool Front End separato con due Front End Server per ospitare le conferenze di grandi dimensioni. Per informazioni dettagliate, vedere [Plan for large meetings in Skype for Business Server](../../SfbServer/plan-your-deployment/conferencing/large-meetings.md). <br/> |
-|Un server perimetrale  <br/> |18.000 utenti remoti simultanei.  <br/> |
-|Un Director  <br/> |18.000 utenti remoti simultanei.  <br/> |
-|Monitoraggio e archiviazione  <br/> |I servizi front-end di monitoraggio e archiviazione vengono eseguiti in ogni Front End Server, anziché in ruoli del server distinti.  <br/> Il monitoraggio e l'archiviazione richiedono comunque i propri archivi di database. Se si esegue anche Exchange 2013 o versioni successive, è possibile mantenere i dati di archiviazione in Exchange, anziché in un database SQL dedicato.  <br/> |
-|Un Mediation Server  <br/> |Mediation Server collocato con Front End Server viene eseguito in ogni Front End Server di un pool e deve fornire capacità sufficiente per gli utenti nel pool. Per Mediation Server autonomo, vedere la sezione "Mediation Server" più avanti in questo argomento.  <br/> |
-|Un server Standard Edition  <br/> |Se si utilizzano server di edizione Standard per ospitare gli utenti, è consigliabile utilizzare sempre due server, abbinati ai suggerimenti riportati in [Planning for High Availability and Disaster Recovery.](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-high-availability-and-disaster-recovery) Ogni server nella coppia può ospitare fino a 2.500 utenti e, se un server non riesce, il server rimanente può supportare 5.000 utenti in uno scenario di failover.  <br/>  Se la distribuzione include una quantità significativa di traffico audio o video, le prestazioni del server potrebbero risentire di più di 2.500 utenti per server. In questo caso, è consigliabile aggiungere altri edizione Standard server o passare a Skype for Business Server edizione Enterprise. <br/> |
+|Pool Front End con sedici Front End Server e server back-end o una coppia di server back-end con SQL Always On per la disponibilità elevata.   |106.000 utenti univoci connessi contemporaneamente, più il 50% di punti di presenza multipli (MPOP) che rappresentano istanze non mobili, più il 40% degli utenti abilitati per dispositivi mobili per un totale di 210.000 endpoint.   |
+|A/V Conferencing   |Il servizio A/V Conferencing fornito da un pool Front End supporta le conferenze del pool presupponendo una dimensione massima di conferenza di 250 utenti e una sola conferenza di grandi dimensioni in esecuzione alla volta.  <br/> **Nota:** È inoltre possibile supportare conferenze di grandi dimensioni tra 250 e 1000 utenti distribuendo un pool Front End separato con due Front End Server per ospitare le conferenze di grandi dimensioni. Per informazioni dettagliate, vedere [Plan for large meetings in Skype for Business Server.](../../SfbServer/plan-your-deployment/conferencing/large-meetings.md)  |
+|Un server perimetrale   |18.000 utenti remoti simultanei.   |
+|Un Director   |18.000 utenti remoti simultanei.   |
+|Monitoraggio e archiviazione   |I servizi front-end di monitoraggio e archiviazione vengono eseguiti in ogni Front End Server, anziché in ruoli del server distinti.  <br/> Il monitoraggio e l'archiviazione richiedono comunque i propri archivi di database. Se si esegue anche Exchange 2013 o versioni successive, è possibile mantenere i dati di archiviazione in Exchange, anziché in un database SQL dedicato.   |
+|Un Mediation Server   |Mediation Server collocato con Front End Server viene eseguito in ogni Front End Server di un pool e deve fornire capacità sufficiente per gli utenti nel pool. Per Mediation Server autonomo, vedere la sezione "Mediation Server" più avanti in questo argomento.   |
+|Un server Standard Edition   |Se si utilizzano server di edizione Standard per ospitare gli utenti, è consigliabile utilizzare sempre due server, abbinati ai suggerimenti riportati in [Planning for High Availability and Disaster Recovery.](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-high-availability-and-disaster-recovery) Ogni server nella coppia può ospitare fino a 2.500 utenti e, se un server non riesce, il server rimanente può supportare 5.000 utenti in uno scenario di failover.  <br/>  Se la distribuzione include una quantità significativa di traffico audio o video, le prestazioni del server potrebbero risentire di più di 2.500 utenti per server. In questo caso, è consigliabile aggiungere altri edizione Standard server o passare a Skype for Business Server edizione Enterprise.  |
 
 ## <a name="front-end-server"></a>Front End Server
 
 > [!NOTE]
 > I pool stretch non sono supportati per questo ruolo del server.
 
-In un pool Front End, è necessario disporre di un Front End Server per ogni 6.660 utenti ospitati nel pool, presupponendo che l'hyperthreading sia abilitato in tutti i server del pool, che si utilizzi SQL Server Express Edition e che l'hardware del server soddisfi i requisiti del server per [Skype for Business Server 2019.](system-requirements.md) Il numero massimo di utenti in un pool Front End è 106.000, presupponendo che l'hyperthreading sia abilitato e che SQL Server Express Edition sia utilizzato in tutti i server del pool. Se si dispone di più di 106.000 utenti in un sito, è possibile distribuire più di un pool Front End.
+In un pool Front End, è necessario disporre di un Front End Server per ogni 6.660 utenti ospitati nel pool, presupponendo che l'hyperthreading sia abilitato in tutti i server del pool, che si utilizzi SQL Server Express Edition e che l'hardware del server soddisfi i requisiti del server per [Skype for Business Server 2019.](system-requirements.md) Il numero massimo di utenti in un pool Front End è 106.000, presupponendo di nuovo che l'hyperthreading sia abilitato e che SQL Server Express Edition sia utilizzato in tutti i server del pool. Se si dispone di più di 106.000 utenti in un sito, è possibile distribuire più di un pool Front End.
 
 Quando si specifica il numero di utenti in un pool Front End, includere tutti gli utenti ospitati in Survivable Branch Appliance e Survivable Branch Server nelle succursali associate a questo pool Front End.
 
@@ -77,7 +77,7 @@ Nella tabella seguente viene mostrata la larghezza di banda media per la messagg
 
 |**Larghezza di banda media per utente**|**Requisiti di larghezza di banda per Front End Server con 6.660 utenti**|
 |:-----|:-----|
-|3-3,75 KBps  <br/> |13 MBps  <br/> |
+|3-3,75 KBps   |13 MBps   |
 
 > [!NOTE]
 > Per migliorare le prestazioni multimediali della funzionalità A/V Conferencing e Mediation Server nei Front End Server, è consigliabile abilitare il ridimensionamento sul lato ricezione (RSS) sulle schede di rete nei Front End Server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, [vedere Receive Side Scaling (RSS) nella documentazione Windows Server 2012.](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh997036(v=ws.11)) Per informazioni dettagliate su come abilitare RSS, è necessario fare riferimento alla documentazione della scheda di rete.
@@ -86,11 +86,11 @@ Nella tabella seguente viene mostrata la larghezza di banda media per la messagg
 
 Dato il modello utente che il 5% degli utenti di un pool può essere in una conferenza contemporaneamente, un pool di 106.000 utenti potrebbe avere circa 5.300 utenti in conferenze contemporaneamente. Le conferenze saranno variabili nel tipo di contenuti multimediali (ad esempio alcune solo di messaggistica istantanea, altre di messaggistica istantanea e audio, altre audio/video) e nel numero di partecipanti. Non esiste un limite rigido per il numero effettivo di conferenze consentite e l'utilizzo effettivo determina le prestazioni effettive. Ad esempio, se nell'organizzazione sono presenti molte più conferenze in modalità mista rispetto a quelle ipotizzate nel modello utente, potrebbe essere necessario distribuire più Front End Server o A/V Conferencing Server rispetto ai suggerimenti riportati in questo articolo. Per informazioni dettagliate sui presupposti nel modello utente, vedere [Modelli utente in Skype for Business Server](../../SfbServer/plan-your-deployment/capacity/user-models.md).
 
-La dimensione massima supportata per le conferenze ospitata da un pool Front End Skype for Business Server che ospita anche gli utenti è di 250 partecipanti. Mentre è in corso una conferenza con 250 utenti, il pool supporta ancora anche altre conferenze, in modo che un totale del 5% degli utenti del pool si trova in conferenze simultanee. Ad esempio, in un pool di 16 Front End Server e 106.000 utenti, mentre è in corso la conferenza con 250 utenti, Skype for Business Server supporta altri 5.050 utenti che partecipano a conferenze più piccole.
+La dimensione massima supportata per le conferenze ospitata da un pool Front End Skype for Business Server che ospita anche gli utenti è di 250 partecipanti. Mentre è in corso una conferenza per 250 utenti, il pool supporta ancora anche altre conferenze, in modo che un totale del 5% degli utenti del pool si trova in conferenze simultanee. Ad esempio, in un pool di 16 Front End Server e 106.000 utenti, mentre è in corso la conferenza con 250 utenti, Skype for Business Server supporta altri 5.050 utenti che partecipano a conferenze più piccole.
 
-Indipendentemente dal numero di utenti ospitati nel pool Front End o nel server edizione Standard, Skype for Business Server supporta almeno 125 altri utenti che partecipano a conferenze più piccole nello stesso pool o server che ospita una conferenza da 250 utenti.
+Indipendentemente dal numero di utenti ospitati nel pool Front End o nel server edizione Standard, Skype for Business Server supporta almeno 125 altri utenti che partecipano a conferenze più piccole nello stesso pool o server che ospita una conferenza per 250 utenti.
 
-Per abilitare conferenze con un numero di utenti compreso tra 250 e 1000, è possibile configurare un pool Front End separato solo per ospitare tali conferenze. Questo pool Front End non ospiterà alcun utente. Per informazioni dettagliate, vedere [Plan for large meetings in Skype for Business Server](../../SfbServer/plan-your-deployment/conferencing/large-meetings.md).
+Per abilitare conferenze con un numero di utenti compreso tra 250 e 1000, è possibile configurare un pool Front End separato solo per ospitare tali conferenze. Questo pool Front End non ospiterà alcun utente. Per informazioni dettagliate, vedere [Plan for large meetings in Skype for Business Server.](../../SfbServer/plan-your-deployment/conferencing/large-meetings.md)
 
 Se nell'organizzazione sono presenti molte più conferenze in modalità mista di quelle ipotizzate nel modello utente, potrebbe essere necessario distribuire più Front End Server di quanto consigliato in questo documento (fino a un limite di 16 Front End Server). Per informazioni dettagliate sui presupposti nel modello utente, vedere [Modelli utente in Skype for Business Server](../../SfbServer/plan-your-deployment/capacity/user-models.md).
 
@@ -132,8 +132,8 @@ Tutte le tabelle seguenti presuppongono l'utilizzo come riepilogato in [Modelli 
 
 |**Hardware dei server**|**Numero massimo di chiamate**|**Numero massimo di linee T1**|**Numero massimo di linee E1**|
 |:-----|:-----|:-----|:-----|
-|Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore con **hyperthreading** disabilitato, con 64 GB di memoria e una scheda di rete a doppia porta.  <br/> |1500  <br/> |64  <br/> |49  <br/> |
-|Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore, con 64 GB di memoria e una scheda di rete a doppia porta.  <br/> |2000  <br/> |88  <br/> |66  <br/> |
+|Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore con **hyperthreading** disabilitato, con 64 GB di memoria e una scheda di rete a doppia porta.   |1500   |64   |49   |
+|Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore, con 64 GB di memoria e una scheda di rete a doppia porta.   |2000   |88   |66   |
 
 > [!NOTE]
 > Sebbene i server con 64 GB di memoria siano stati utilizzati per il testing delle prestazioni, i server con 32 GB di memoria sono supportati per Mediation Server autonomo e sono sufficienti per fornire le prestazioni illustrate in questa tabella.
@@ -142,7 +142,7 @@ Tutte le tabelle seguenti presuppongono l'utilizzo come riepilogato in [Modelli 
 
 |**Hardware dei server**|**Numero massimo di chiamate**|
 |:-----|:-----|
-|Intel Xeon E5-2673 v3 dual processor, 6 core, 2,4 gigahertz (GHz) o superiore., con 64 GB di memoria e 2 schede di rete da 1 GB.  <br/> |200  <br/> |
+|Intel Xeon E5-2673 v3 dual processor, 6 core, 2,4 gigahertz (GHz) o superiore., con 64 GB di memoria e 2 schede di rete da 1 GB.   |200   |
 
 > [!NOTE]
 > Questo numero è molto più piccolo rispetto ai numeri per il Mediation Server autonomo. Questo perché il Front End Server deve gestire altre funzionalità e funzioni per i 6600 utenti ospitati su di esso, oltre alla transcodatura necessaria per le chiamate vocali.
@@ -162,29 +162,29 @@ Se si distribuisce il monitoraggio o l'archiviazione, la funzionalità front-end
 
 Nella tabella seguente viene indicata approssimativamente la quantità di spazio di archiviazione del database necessaria per utente al giorno per i dati di monitoraggio e archiviazione.
 
-||**Registrazione dei dati (monitoraggio)** <br/> |**QoE (monitoraggio)** <br/> |**Archiviazione** <br/> |
+|&nbsp;|Registrazione dei dati (monitoraggio)  |QoE (monitoraggio)  |Archiviazione  |
 |:-----|:-----|:-----|:-----|
-|Spazio su disco richiesto per utente al giorno  <br/> |49 KB  <br/> |28 KB  <br/> |57 KB  <br/> |
+|Spazio su disco richiesto per utente al giorno   |49 KB   |28 KB   |57 KB   |
 
 Microsoft ha utilizzato l'hardware nella tabella seguente per il server di database per il monitoraggio e l'archiviazione durante i test delle prestazioni. Il test ha raccolto i dati di due pool Front End, ognuno dei quali conteneva 80.000 utenti.
 
 **Hardware utilizzato nei test delle prestazioni di monitoraggio e archiviazione**
 
-|**Componente hardware**|**Consigliata**|
+|Componente hardware|Consigliata|
 |:-----|:-----|
-|CPU  <br/> |Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore.  <br/> |
-|Memoria  <br/> |48 GB  <br/> |
-|Disco  <br/> | UNO DEI SEGUENTI:<br/> • 4 o più unità disco rigido da 10000 RPM con almeno 72 GB di spazio libero su disco (i dischi devono essere in una configurazione RAID 1 2x). <br/>OPPURE <br/>• Unità A stato solido (SSD) in grado di fornire lo stesso spazio libero e prestazioni simili a 4 unità disco meccaniche da 1.0000 RPM.   <br/> |
-|Rete  <br/> | 1 scheda di rete a doppia porta, 1 Gbps o superiore (2 consigliato, che richiede la condivisione con un singolo indirizzo MAC e un singolo indirizzo IP).  <br/> |
+|CPU   |Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore.   |
+|Memoria   |48 GB   |
+|Disco   | UNO DEI SEGUENTI:<br/> • 4 o più unità disco rigido da 10000 RPM con almeno 72 GB di spazio libero su disco (i dischi devono essere in una configurazione RAID 1 2x). <br/>OPPURE <br/>• Unità A stato solido (SSD) in grado di fornire lo stesso spazio libero e prestazioni simili a 4 unità disco meccaniche da 1.0000 RPM.    |
+|Rete   | 1 scheda di rete a doppia porta, 1 Gbps o superiore (2 consigliato, che richiede la condivisione con un singolo indirizzo MAC e un singolo indirizzo IP).   |
 
 **Configurazioni disco consigliate**
 
-|**Unità** <br/> |**Configurazione RAID** <br/> |**Numero di dischi** <br/> |
+|Unità  |Configurazione RAID  |Numero di dischi  |
 |:-----|:-----|:-----|
-|CdR, QoE e file di dati del database di archiviazione in una singola unità  <br/> |1+0  <br/> |16   <br/> |
-|File di registro del database CDR  <br/> |1   <br/> |2   <br/> |
-|File di registro del database QoE  <br/> |1   <br/> |2   <br/> |
-|File di registro del database di archiviazione  <br/> |1   <br/> |2   <br/> |
+|CdR, QoE e file di dati del database di archiviazione in una singola unità   |1+0   |16    |
+|File di registro del database CDR   |1   |2   |
+|File di registro del database QoE   |1   |2   |
+|File di registro del database di archiviazione   |1   |2   |
 
 ## <a name="video-interop-server-capacity"></a>Capacità di Video Interop Server
 

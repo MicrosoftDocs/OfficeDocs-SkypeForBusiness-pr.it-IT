@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: ''
 description: "Riepilogo: preparare i server Skype for Business Server 2019 e l'infrastruttura di dominio con questo argomento. Hardware, sistema operativo, database, software, tutti i requisiti di sistema e i suggerimenti, insieme a DNS certificato, condivisione file e informazioni di Active Directory, sono disponibili qui per garantire una corretta installazione e distribuzione della server farm."
-ms.openlocfilehash: d5714c5606c69d6aba0befa03a6556a5da8ab443
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: cb1d7464406ae089fd31c31971cb246d79a83edb
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728365"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011750"
 ---
 # <a name="system-requirements-for-skype-for-business-server-2019"></a>Requisiti di sistema per Skype for Business Server 2019
  
@@ -31,7 +31,7 @@ Come ci si potrebbe aspettare, è necessario prepararsi prima di iniziare la dis
   
 - [Software](system-requirements.md#Software)
 
-- [Database SQL back-end](system-requirements.md#DBs)
+- [Database di SQL back-end](system-requirements.md#DBs)
   
 - [Active Directory](system-requirements.md#AD)
   
@@ -49,31 +49,31 @@ Dopo aver arrestato la topologia (e in caso contrario, è possibile consultare l
   
 Hardware consigliato per edizione Standard server:
 
-|**Componente hardware**|**Consigliata**|
+|Componente hardware|Consigliata|
 |:-----|:-----|
-|CPU  <br/> |Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore.  <br/> I processori Intel Itanium non sono supportati per Skype for Business Server 2019.  <br/> |
-|Memoria  <br/> |32 gigabyte (GB).  <br/> |
-|Disco  <br/> |UNO DEI SEGUENTI:  <br/> • 8 o più unità disco rigido da 10.000 RPM con almeno 72 GB di spazio libero su disco (due dischi con RAID 1 e 6 con RAID 10).  <br/> OPPURE  <br/> • Unità SSD (Solid State Drive) in grado di fornire lo stesso spazio libero e prestazioni simili a 8 unità disco meccaniche da 10000 RPM.  <br/> |
-|Rete  <br/> |1 scheda di rete a doppia porta, 1 Gbps o superiore (è possibile utilizzare 2 schede di rete, ma devono essere associate a un singolo indirizzo MAC e a un singolo indirizzo IP).  <br/> Le configurazioni dual o multi-homed non sono **supportate** per Front End Server, back-end server e edizione Standard server. <br/> Se non sono esposti al sistema operativo e vengono utilizzati per monitorare e gestire l'hardware del server, è possibile disporre di sistemi di gestione fuori banda, ad esempio DRAC o ILO. Questo scenario non costituisce un server multi-homed ed è supportato.  <br/> |
+|CPU   |Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore.  <br/> I processori Intel Itanium non sono supportati per Skype for Business Server 2019.   |
+|Memoria   |32 gigabyte (GB).   |
+|Disco   |UNO DEI SEGUENTI:  <br/> • 8 o più unità disco rigido da 10.000 RPM con almeno 72 GB di spazio libero su disco (due dischi con RAID 1 e 6 con RAID 10).  <br/> OPPURE  <br/> • Unità SSD (Solid State Drive) in grado di fornire lo stesso spazio libero e prestazioni simili a 8 unità disco meccaniche da 10000 RPM.   |
+|Rete   |1 scheda di rete a doppia porta, 1 Gbps o superiore (è possibile utilizzare 2 schede di rete, ma devono essere associate a un singolo indirizzo MAC e a un singolo indirizzo IP).  <br/> Le configurazioni dual o multi-homed non sono **supportate** per Front End Server, back-end server e edizione Standard server. <br/> Se non sono esposti al sistema operativo e vengono utilizzati per monitorare e gestire l'hardware del server, è possibile disporre di sistemi di gestione fuori banda, ad esempio DRAC o ILO. Questo scenario non costituisce un server multi-homed ed è supportato.   |
 
 
 Hardware consigliato per Front End Server e back-end server:
   
-|**Componente hardware**|**Consigliata**|
+|Componente hardware|Consigliata|
 |:-----|:-----|
-|CPU  <br/> |Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore. <br/> I processori Intel Itanium non sono supportati per Skype for Business Server 2019.  <br/> |
-|Memoria  <br/> |64 gigabyte (GB).  <br/> |
-|Disco  <br/> |UNO DEI SEGUENTI:  <br/> • 8 o più unità disco rigido da 10.000 RPM con almeno 72 GB di spazio libero su disco (due dischi con RAID 1 e 6 con RAID 10).  <br/> OPPURE  <br/> • Unità SSD (Solid State Drive) in grado di fornire lo stesso spazio libero e prestazioni simili a 8 unità disco meccaniche da 10000 RPM.  <br/> |
-|Rete  <br/> |1 scheda di rete a doppia porta, 1 Gbps o superiore (è possibile utilizzare 2 schede di rete, ma devono essere associate a un singolo indirizzo MAC e a un singolo indirizzo IP).  <br/> Le configurazioni dual o multi-homed non sono **supportate** per Front End Server, back-end server e edizione Standard server. <br/> Se non sono esposti al sistema operativo e vengono utilizzati per monitorare e gestire l'hardware del server, è possibile disporre di sistemi di gestione fuori banda, ad esempio DRAC o ILO. Questo scenario non costituisce un server multi-homed ed è supportato.  <br/> |
+|CPU   |Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore. <br/> I processori Intel Itanium non sono supportati per Skype for Business Server 2019.   |
+|Memoria   |64 gigabyte (GB).   |
+|Disco   |UNO DEI SEGUENTI:  <br/> • 8 o più unità disco rigido da 10.000 RPM con almeno 72 GB di spazio libero su disco (due dischi con RAID 1 e 6 con RAID 10).  <br/> OPPURE  <br/> • Unità SSD (Solid State Drive) in grado di fornire lo stesso spazio libero e prestazioni simili a 8 unità disco meccaniche da 10000 RPM.   |
+|Rete   |1 scheda di rete a doppia porta, 1 Gbps o superiore (è possibile utilizzare 2 schede di rete, ma devono essere associate a un singolo indirizzo MAC e a un singolo indirizzo IP).  <br/> Le configurazioni dual o multi-homed non sono **supportate** per Front End Server, back-end server e edizione Standard server. <br/> Se non sono esposti al sistema operativo e vengono utilizzati per monitorare e gestire l'hardware del server, è possibile disporre di sistemi di gestione fuori banda, ad esempio DRAC o ILO. Questo scenario non costituisce un server multi-homed ed è supportato.   |
    
 Hardware consigliato per server perimetrali, Mediation Server autonomi e Director:
   
-|**Componente hardware**|**Consigliata**|
+|Componente hardware|Consigliata|
 |:-----|:-----|
-|CPU  <br/> |Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore.  <br/> I processori Intel Itanium non sono supportati per Skype for Business Server 2019.  <br/> |
-|Memoria  <br/> |32 gigabyte.  <br/> |
-|Disco  <br/> |UNO DEI SEGUENTI:  <br/> • 4 o più unità disco rigido da 10000 RPM con almeno 72 GB di spazio libero su disco (i dischi devono essere in una configurazione RAID 1 2x).  <br/> OPPURE  <br/> • Unità A stato solido (SSD) in grado di fornire lo stesso spazio libero e prestazioni simili a 4 unità disco meccaniche da 1.0000 RPM.  <br/> |
-|Rete  <br/> |1 scheda di rete a doppia porta, 1 Gbps o superiore (è possibile utilizzare 2 schede di rete, ma devono essere associate a un singolo indirizzo MAC e a un singolo indirizzo IP).  <br/> Le configurazioni dual o multi-homed **non sono** supportate per Video Interop Server e Director. <br/> I server perimetrali richiederanno due interfacce di rete che sono schede di rete a doppia porta, 1 Gbps o superiore (o due schede di rete associate, per un totale di quattro, ogni coppia viene associata a un singolo indirizzo MAC e a un singolo indirizzo IP, per un totale di due coppie).  <br/> Nei Mediation Server autonomi è supportata l'installazione di schede di interfaccia di rete aggiuntive per consentire la configurazione di uno specifico indirizzo IP PSTN.  <br/> |
+|CPU   |Processore Intel Xeon E5-2673 v3 con doppio processore, 6 core, 2,4 gigahertz (GHz) o superiore.  <br/> I processori Intel Itanium non sono supportati per Skype for Business Server 2019.   |
+|Memoria   |32 gigabyte.   |
+|Disco   |UNO DEI SEGUENTI:  <br/> • 4 o più unità disco rigido da 10000 RPM con almeno 72 GB di spazio libero su disco (i dischi devono essere in una configurazione RAID 1 2x).  <br/> OPPURE  <br/> • Unità A stato solido (SSD) in grado di fornire lo stesso spazio libero e prestazioni simili a 4 unità disco meccaniche da 1.0000 RPM.   |
+|Rete   |1 scheda di rete a doppia porta, 1 Gbps o superiore (è possibile utilizzare 2 schede di rete, ma devono essere associate a un singolo indirizzo MAC e a un singolo indirizzo IP).  <br/> Le configurazioni dual o multi-homed **non sono** supportate per Video Interop Server e Director. <br/> I server perimetrali richiederanno due interfacce di rete che sono schede di rete a doppia porta, 1 Gbps o superiore (o due schede di rete associate, per un totale di quattro, ogni coppia viene associata a un singolo indirizzo MAC e a un singolo indirizzo IP, per un totale di due coppie).  <br/> Nei Mediation Server autonomi è supportata l'installazione di schede di interfaccia di rete aggiuntive per consentire la configurazione di uno specifico indirizzo IP PSTN.   |
 
 
 > [!NOTE]
@@ -88,11 +88,8 @@ Hardware consigliato per server perimetrali, Mediation Server autonomi e Directo
 
 Dopo aver installato l'hardware, dovrai installare il sistema operativo che ti consentirà di installare e usare correttamente Skype for Business Server 2019.
   
-|||
-|:-----|:-----|
-|Windows Server 2019 <br/> |
-|Windows Server 2016 <br/> ||
-||
+- Windows Server 2019 
+- Windows Server 2016
    
 Qualsiasi elemento diverso da quello dei sistemi operativi elencati qui non funzionerà correttamente. non provare per le installazioni di Skype for Business Server 2019. Ad esempio, l'opzione Server Core non è elencata e pertanto non è supportata.
 
@@ -107,7 +104,7 @@ Qualsiasi elemento diverso da quello dei sistemi operativi elencati qui non funz
 > 
 
   
-## <a name="software-that-should-be-installed-before-a-skype-for-business-server-2019-deployment"></a>Software che deve essere installato prima di una Skype for Business Server 2019
+## <a name="software-that-should-be-installed-before-a-skype-for-business-server-2019-deployment"></a>Software da installare prima di una distribuzione Skype for Business Server 2019
 <a name="Software"> </a>
 
 È necessario installare o configurare alcuni elementi per qualsiasi server che esegue Skype for Business Server 2019. Questi sono elencati di seguito, seguiti da requisiti aggiuntivi per ruoli del server specifici.
@@ -117,21 +114,21 @@ Qualsiasi elemento diverso da quello dei sistemi operativi elencati qui non funz
   
  **Tutti i server:**
   
-|**Software/ruolo**|**Dettagli**|
+|Software/ruolo|Dettagli|
 |:-----|:-----|
-|Windows PowerShell 3.0  <br/> |Tutti Skype for Business Server server devono Windows PowerShell 3.0.  <br/> • Questo deve essere installato per impostazione predefinita con Windows Server 2016.<br/> |
-|Microsoft .NET Framework  <br/> |I servizi WCF sono **una funzionalità** installata come funzionalità Windows, in **Server Manager** inizialmente non sono necessari download. <br/> • È necessario assicurarsi, quando si installa questa funzionalità, o se è già installata e si sta controllando su di essa, che anche l'opzione Attivazione **HTTP** sia selezionata e installata, in questo modo: <br/> ![Screenshot che mostra l'opzione Attivazione HTTP nelle .NET Framework 4.5.](../../SfbServer/media/a4064fa0-fa49-4474-bd98-b9a79ff68f8b.png) <br/> Non preoccuparti se ricevi un popup aggiuntivo che dice che è necessario installare altri elementi per l'installazione dell'attivazione HTTP. È normale; fare clic su OK e procedere. Se non si ottiene questo popup, è possibile presupporre che tali elementi siano già installati e procedere.  <br/> Microsoft .NET Framework viene in genere installato quando Windows Server 2016 è installato. Skype for Business Server richiede Microsoft .NET Framework 4.7 o 4.8, quindi probabilmente è necessario aggiornarlo. L'aggiornamento è disponibile [qui](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows/)<br/> |
-|Media Foundation  <br/> |Ad Windows Server 2016, l'Windows Media Format Runtime viene installato con Microsoft Media Foundation.  <br/> Tutti i Front End Server e i server edizione Standard utilizzati per le conferenze richiedono Windows Media Format Runtime per eseguire i file Windows Media Audio (wma) riprodotti dalle applicazioni Parcheggio di chiamata, Annuncio e Response Group per annunci e musica.  <br/> |
-|Windows Identity Foundation  <br/> |È necessario Windows Identity Foundation 3.5 per supportare gli scenari di autenticazione da server a server per Skype for Business Server 2019.  <br/> • Per Windows Server 2016, non è necessario scaricare nulla. Aprire **Server Manager** e passare all'Aggiunta guidata ruoli e **funzionalità.** **Windows Identity Foundation 3.5** è elencato nella **sezione** Funzionalità. Se è selezionato, sei a posto. In caso contrario, selezionarlo **e fare clic** su Avanti per accedere al **pulsante** Installa. <br/> |
-|Strumenti di amministrazione remota del server  <br/> |Strumenti di amministrazione dei ruoli: strumenti di Servizi di dominio Active Directory e AD LDS  <br/> |
+|Windows PowerShell 3.0   |Tutti Skype for Business Server server devono Windows PowerShell 3.0.  <br/> • Deve essere installato per impostazione predefinita con Windows Server 2016. |
+|Microsoft .NET Framework   |I servizi WCF sono **una funzionalità** installata come funzionalità Windows, in **Server Manager** inizialmente non sono necessari download. <br/> • È necessario assicurarsi che, quando si installa questa funzionalità o se è già installata e si sta controllando, che anche l'opzione Attivazione **HTTP** sia selezionata e installata, in questo modo: <br/>![Screenshot che mostra l'opzione Attivazione HTTP .NET Framework funzionalità 4.5.](../../SfbServer/media/a4064fa0-fa49-4474-bd98-b9a79ff68f8b.png) <br/> Non preoccuparti se ricevi un popup aggiuntivo che dice che è necessario installare altri elementi per l'installazione dell'attivazione HTTP. È normale; fare clic su OK e procedere. Se non si ottiene questo popup, è possibile presupporre che tali elementi siano già installati e procedere.  <br/> Microsoft .NET Framework viene in genere installato quando Windows Server 2016 è installato. Skype for Business Server richiede Microsoft .NET Framework 4.7 o 4.8, quindi probabilmente è necessario aggiornarlo. L'aggiornamento è disponibile [qui](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows/) |
+|Media Foundation   |Ad Windows Server 2016, l Windows Runtime formato multimediale viene installato con Microsoft Media Foundation.  <br/> Tutti i Front End Server e i server edizione Standard utilizzati per le conferenze richiedono Windows Media Format Runtime per eseguire i file Windows Media Audio (wma) riprodotti dalle applicazioni Parcheggio di chiamata, Annuncio e Response Group per annunci e musica.   |
+|Windows Identity Foundation   |È necessario Windows Identity Foundation 3.5 per supportare gli scenari di autenticazione da server a server per Skype for Business Server 2019.  <br/> • Per Windows Server 2016, non è necessario scaricare nulla. Aprire **Server Manager** e passare all'Aggiunta guidata ruoli e **funzionalità.** **Windows Identity Foundation 3.5** è elencato nella **sezione** Funzionalità. Se è selezionato, sei a posto. In caso contrario, selezionarlo **e fare clic** su Avanti per accedere al **pulsante** Installa.  |
+|Strumenti di amministrazione remota del server   |Strumenti di amministrazione dei ruoli: strumenti di Servizi di dominio Active Directory e AD LDS   |
    
  **I Front End Server e edizione Standard server devono inoltre:**
   
-|**Software/ruolo**|**Dettagli**|
+|Software/ruolo|Dettagli|
 |:-----|:-----|
-|Internet Information Services (IIS)  <br/> |IIS è necessario in tutti i Front End Server, nonché in tutti edizione Standard server, con i moduli seguenti selezionati:  <br/> • Funzionalità HTTP comuni: documento predefinito, errori HTTP, contenuto statico  <br/> • Integrità e diagnostica: registrazione HTTP, strumenti di registrazione, traccia  <br/> • Prestazioni: Compressione contenuto statico, Compressione contenuto dinamico  <br/> • Sicurezza: Filtro richieste, Autenticazione mapping certificati client, Windows autenticazione  <br/> • Sviluppo di applicazioni: .NET Extensibility 3.5, .NET Extensibility 4.5, ASP.NET 3.5, ASP.NET 4.5, ESTENSIONI ISAPI, filtri ISAPI  <br/> • Strumenti di gestione: console di gestione IIS, script e strumenti di gestione IIS  <br/> Si noti che è necessario anche l'accesso anonimo, ma si ottiene questo quando si installa IIS, in modo da non avere una posizione per selezionarlo nell'elenco.  <br/> |
-|Runtime formato Windows Media  <br/> | Ad Windows Server 2016, è necessario installare la funzionalità **Media Foundation** in **Server Manager.** In realtà è possibile avviare l'installazione di Skype for Business Server 2019 senza questa operazione, ma verrà richiesto di installarla e quindi riavviare il server, prima che l'installazione di Skype for Business Server 2019 continui. È meglio farlo in anticipo. <br/> |
-|Silverlight  <br/> |È possibile installare la versione più recente di Silverlight [qui.](https://www.microsoft.com/silverlight/)  <br/> |
+|Internet Information Services (IIS)   |IIS è necessario in tutti i Front End Server, nonché in tutti edizione Standard server, con i moduli seguenti selezionati:  <br/> • Funzionalità HTTP comuni: documento predefinito, errori HTTP, contenuto statico  <br/> • Integrità e diagnostica: registrazione HTTP, strumenti di registrazione, traccia  <br/> • Prestazioni: Compressione contenuto statico, Compressione contenuto dinamico  <br/> • Sicurezza: Filtro richieste, Autenticazione mapping certificati client, Windows autenticazione  <br/> • Sviluppo di applicazioni: .NET Extensibility 3.5, .NET Extensibility 4.5, ASP.NET 3.5, ASP.NET 4.5, ESTENSIONI ISAPI, filtri ISAPI  <br/> • Strumenti di gestione: console di gestione IIS, script e strumenti di gestione IIS  <br/> Si noti che è necessario anche l'accesso anonimo, ma si ottiene questo quando si installa IIS, in modo da non avere una posizione per selezionarlo nell'elenco.   |
+|Runtime formato Windows Media   | Ad Windows Server 2016, è necessario installare la funzionalità **Media Foundation** in **Server Manager.** In realtà è possibile avviare l'installazione di Skype for Business Server 2019 senza questa operazione, ma verrà richiesto di installarla e quindi riavviare il server, prima che l'installazione di Skype for Business Server 2019 continui. È meglio farlo in anticipo.  |
+|Silverlight   |È possibile installare la versione più recente di Silverlight [qui.](https://www.microsoft.com/silverlight/)   |
    
 Per aiutarti, ecco uno script di PowerShell di esempio che puoi eseguire per automatizzare questa operazione:
   
@@ -196,15 +193,13 @@ Add-WindowsFeature RSAT-ADDS, Web-Server, Web-Static-Content, Web-Default-Doc, W
 ## <a name="back-end-databases-that-will-work-with-skype-for-business-server-2019"></a>Database back-end che funzionano con Skype for Business Server 2019
 <a name="DBs"> </a>
 
-Quando si installa Skype for Business Server 2019 edizione Standard, si SQL Server 2016 Express (edizione a 64 bit).
+Durante l'Skype for Business Server 2019 edizione Standard, avrai SQL Server 2016 Express (edizione a 64 bit).
 
-Skype for Business Server 2019 edizione Enterprise richiederà un SQL Server completo, come indicato di seguito (solo edizione a 64 bit; non usare edizioni a 32 bit):
+Skype for Business Server 2019 edizione Enterprise richiederà un SQL Server completo, come indicato di seguito (solo edizione a 64 bit; non utilizzare edizioni a 32 bit):
   
-||||
-|:-----|:-----|:-----|
-|Microsoft SQL Server 2019 (edizione a 64 bit) ed è necessario eseguire con gli aggiornamenti più recenti.  <br/> |Microsoft SQL Server 2017 (edizione a 64 bit) ed è necessario eseguire con gli aggiornamenti più recenti.  <br/> |
-Microsoft SQL Server 2016 (edizione a 64 bit) ed è necessario eseguire con gli aggiornamenti più recenti.|
- |
+- Microsoft SQL Server 2019 (edizione a 64 bit) ed è necessario eseguire con gli aggiornamenti più recenti.
+- Microsoft SQL Server 2017 (edizione a 64 bit) ed è necessario eseguire con gli aggiornamenti più recenti.
+- Microsoft SQL Server 2016 (edizione a 64 bit) ed è necessario eseguire con gli aggiornamenti più recenti.
 
 Se l'edizione SQL Server che si desidera utilizzare non è elencata qui, non è possibile utilizzarla.
   
@@ -213,9 +208,9 @@ Se l'edizione SQL Server che si desidera utilizzare non è elencata qui, non è 
   
 ### <a name="sql-clustering-and-sql-always-on"></a>SQL Clustering e SQL Always On
 
-SQL Il clustering con Skype for Business Server 2019 è supportato. Se si desidera configurare SQL clustering, questa operazione viene eseguita in SQL Server.
+SQL È supportato il clustering Skype for Business Server 2019. Se si desidera configurare SQL clustering, questa operazione viene eseguita in SQL Server.
   
-Assicurati di avere una configurazione attiva/passiva per SQL clustering, che è supportata. Non condividere il nodo passivo con altre SQL istanza.
+Assicurarsi di disporre di una configurazione attiva/passiva per SQL clustering, che è supportata. Non condividere il nodo passivo con altre SQL istanza.
   
 Per il clustering di failover, è possibile disporre di quanto segue:
   
@@ -244,15 +239,15 @@ Non installare alcun software client Microsoft Internet Security and Acceleratio
 
 Sebbene gran parte dei dati di configurazione per server e servizi sia archiviata nell'archivio di gestione centrale di Skype for Business Server 2019, esistono alcuni elementi ancora archiviati in Active Directory:
   
-|**Objets Active Directory**|**Tipi di oggetto**|
+|Objets Active Directory|Tipi di oggetto|
 |:-----|:-----|
-|Estensioni dello schema  <br/> |Estensioni degli oggetti utente  <br/> |
-||Estensioni per Skype for Business Server 2015 e Lync Server 2013, per mantenere la compatibilità con le versioni precedenti supportate  <br/> |
-|Dati  <br/> |URI SIP utente e altre impostazioni utente  <br/> |
-||Oggetti contatto per le applicazioni (ad esempio l'applicazione Response Group e il applicazione Operatore conferenza)  <br/> |
-||Dati pubblicati per la compatibilità con le versioni precedenti  <br/> |
-||Un punto di controllo del servizio (SCP) per l'archivio di gestione centrale  <br/> |
-||Account di autenticazione Kerberos (un oggetto computer facoltativo)  <br/> |
+|Estensioni dello schema   |Estensioni degli oggetti utente   |
+||Estensioni per Skype for Business Server 2015 e Lync Server 2013, per mantenere la compatibilità con le versioni precedenti supportate   |
+|Data   |URI SIP utente e altre impostazioni utente   |
+||Oggetti contatto per le applicazioni (ad esempio l'applicazione Response Group e il applicazione Operatore conferenza)   |
+||Dati pubblicati per la compatibilità con le versioni precedenti   |
+||Un punto di controllo del servizio (SCP) per l'archivio di gestione centrale   |
+||Account di autenticazione Kerberos (un oggetto computer facoltativo)   |
    
 ### <a name="os-for-domain-controllers"></a>Sistema operativo per controller di dominio
 
@@ -314,7 +309,7 @@ Non è più facile; si tratta di una foresta a dominio singolo, una topologia co
 
 ![Diagramma a foresta singola, albero singolo e domini mutiple.](../../SfbServer/media/63b9f0dd-6bac-4ba9-ae68-8be032d09dcb.png)
   
-Questo diagramma mostra una singola foresta, ma ha anche uno o più domini figlio (sono presenti tre in questo esempio specifico). Il dominio in cui vengono creati gli utenti potrebbe pertanto essere diverso da quello in cui Skype for Business Server 2019 viene distribuito. Perché preoccuparsi di questo? È importante ricordare che quando si distribuisce un pool Front End Skype for Business Server, tutti i server del pool devono essere in un singolo dominio. È possibile eseguire l'amministrazione tra domini tramite Skype for Business Server di Windows gruppi di amministratori universali.
+Questo diagramma mostra una singola foresta, ma ha anche uno o più domini figlio (sono presenti tre in questo esempio specifico). Pertanto, il dominio in cui vengono creati gli utenti potrebbe essere diverso da quello in cui Skype for Business Server 2019 viene distribuito. Perché preoccuparsi di questo? È importante ricordare che quando si distribuisce un pool Front End Skype for Business Server, tutti i server del pool devono essere in un singolo dominio. È possibile eseguire l'amministrazione tra domini Skype for Business Server supporto di Windows gruppi di amministratori universali.
   
 Nel diagramma precedente, è possibile vedere che gli utenti di un dominio sono in grado di accedere Skype for Business Server pool dallo stesso dominio o da domini diversi, anche se tali utenti sono in un dominio figlio.
   
@@ -334,14 +329,14 @@ Skype for Business Server 2019 supporta più foreste configurate in una topologi
   
 Funzionamento. Un prodotto di sincronizzazione della directory (ad esempio Forefront Identity Manager o FIM) gestisce gli account utente dell'organizzazione per tutta la loro esistenza. Quando un account viene creato o eliminato da una foresta, tale modifica viene sincronizzata fino al contatto corrispondente nella foresta centrale.
   
-Chiaramente, se l'infrastruttura di Active Directory è in atto, il passaggio a questa topologia potrebbe non essere semplice, ma se si è già presenti o si pianifica ancora l'infrastruttura della foresta, questa può essere una buona scelta. È possibile centralizzare la distribuzione Skype for Business Server 2019 in una singola foresta, mentre gli utenti possono cercare, comunicare e visualizzare la presenza di altri utenti in qualsiasi foresta. Tutti gli aggiornamenti dei contatti utente vengono gestiti automaticamente con il software di sincronizzazione.
+Chiaramente, se l'infrastruttura di Active Directory è in atto, il passaggio a questa topologia potrebbe non essere facile, ma se si è già presenti o si pianifica ancora l'infrastruttura della foresta, questa può essere una buona scelta. È possibile centralizzare la distribuzione Skype for Business Server 2019 in una singola foresta, mentre gli utenti possono cercare, comunicare e visualizzare la presenza di altri utenti in qualsiasi foresta. Tutti gli aggiornamenti dei contatti utente vengono gestiti automaticamente con il software di sincronizzazione.
   
 #### <a name="multiple-forests-in-a-skype-for-business-resource-forest-topology"></a>Più foreste in una topologia Skype for Business di risorse locali
 <a name="BKMK_multipleforestopology"> </a>
 
 ![Più foreste in un diagramma della topologia a foresta di risorse.](../../SfbServer/media/41efa3b6-d9e6-47df-992b-fefcfc39a80d.png)
   
-È supportata anche una topologia di foresta di risorse. è dove una foresta è dedicata all'esecuzione delle applicazioni server, ad esempio Microsoft Exchange Server e Skype for Business Server 2019. Questa foresta di risorse ospita anche una rappresentazione sincronizzata degli oggetti utente attivi, ma nessun account utente abilitato all'accesso. La foresta di risorse è quindi un ambiente di servizi condivisi per altre foreste in cui risiedono gli oggetti utente e hanno una relazione di trust a livello di foresta con la foresta di risorse.
+È supportata anche una topologia di foresta di risorse. è qui che una foresta è dedicata all'esecuzione delle applicazioni server, ad esempio Microsoft Exchange Server e Skype for Business Server 2019. Questa foresta di risorse ospita anche una rappresentazione sincronizzata degli oggetti utente attivi, ma nessun account utente abilitato all'accesso. La foresta di risorse è quindi un ambiente di servizi condivisi per altre foreste in cui risiedono gli oggetti utente e hanno una relazione di trust a livello di foresta con la foresta di risorse.
   
 Tenere presente Exchange Server possono essere distribuiti nella stessa foresta di risorse Skype for Business Server o in una foresta diversa.
   
@@ -350,22 +345,22 @@ Per distribuire Skype for Business Server 2019 in questo tipo di topologia, è n
 #### <a name="multiple-forests-in-a-skype-for-business-resource-forest-topology-with-exchange-online"></a>Più foreste in una topologia Skype for Business di risorse con Exchange Online
 <a name="BKMK_multipleforestopology"> </a>
 
-Questa topologia è simile a quella descritta in Più foreste in una topologia [Skype for Business di risorse.](system-requirements.md#BKMK_multipleforestopology)
+Questa topologia è simile alla topologia descritta in Più foreste in una Skype for Business di [foresta di risorse.](system-requirements.md#BKMK_multipleforestopology)
   
 In questa topologia sono presenti una o più foreste utente e Skype for Business Server in una foresta di risorse dedicata. Exchange Server possono essere distribuiti in locale nella stessa foresta di risorse o in una foresta diversa e configurati per la distribuzione ibrida con Exchange Online oppure i servizi di posta elettronica possono essere forniti esclusivamente da Exchange Online per gli account locali. Non è disponibile alcun diagramma per questa topologia.
   
 #### <a name="multiple-forests-in-a-resource-forest-topology-with-skype-for-business-online-and-azure-active-directory-connect"></a>Più foreste in una topologia a foresta di risorse con Skype for Business Online e Azure Active Directory Connessione
 <a name="BKMK_multipleforestopology"> </a>
 
-![Mostra due foreste di Active Directory, una foresta utente e una foresta di risorse. Le due foreste hanno una relazione di trust. Vengono sincronizzati con i Microsoft 365 usando Azure AD Connessione. Tutti gli utenti sono abilitati Skype for Business tramite Microsoft 365.](../../SfbServer/media/6d54558d-8786-4ebf-90f6-55ae3fdb5ae7.jpg)
+![Mostra due foreste di Active Directory, una foresta utente e una foresta di risorse. Le due foreste hanno una relazione di trust. Vengono sincronizzati con i Microsoft 365 azure AD Connessione. Tutti gli utenti sono abilitati Skype for Business tramite Microsoft 365.](../../SfbServer/media/6d54558d-8786-4ebf-90f6-55ae3fdb5ae7.jpg)
   
 Con questo scenario, sono presenti più foreste in locale, con una topologia a foresta di risorse. Esiste una relazione di trust completo tra le foreste di Active Directory. Lo Azure Active Directory Connessione viene utilizzato per sincronizzare gli account tra le foreste utente locali e Microsoft 365 o Office 365.
   
- L'organizzazione ha anche Microsoft 365 o Office 365 e [](/azure/active-directory/connect/active-directory-aadconnect) usa Azure Active Directory Connessione per sincronizzare i propri account locali con Microsoft 365 o Office 365. Gli utenti abilitati per Skype for Business sono abilitati tramite Microsoft 365 o Office 365 e Skype for Business Online. Skype for Business Server non viene distribuito in locale.
+ L'organizzazione ha inoltre Microsoft 365 o Office 365 e [](/azure/active-directory/connect/active-directory-aadconnect) usa Azure Active Directory Connessione per sincronizzare i propri account locali con Microsoft 365 o Office 365. Gli utenti abilitati per Skype for Business sono abilitati tramite Microsoft 365 o Office 365 e Skype for Business Online. Skype for Business Server non viene distribuito in locale.
   
-L'autenticazione Single #A0 è fornita da una farm di Active Directory Federation Services che si trova nella foresta utente.
+L'autenticazione Single #A0 è fornita da una farm di Active Directory Federation Services che si trova nella foresta utenti.
   
-In questo scenario, è supportata la distribuzione di Exchange locale, Exchange Online, una soluzione Exchange ibrida o per non avere Exchange distribuito affatto. Il diagramma mostra solo Exchange locali, ma anche le altre soluzioni Exchange sono completamente supportate.
+In questo scenario, è supportata la distribuzione di Exchange locale, Exchange Online, una soluzione Exchange ibrida o per non distribuire Exchange affatto. Il diagramma mostra solo Exchange locale, ma anche le altre soluzioni Exchange sono completamente supportate.
   
 #### <a name="multiple-forests-in-a-resource-forest-topology-with-hybrid-skype-for-business"></a>Più foreste in una topologia a foresta di risorse con Skype for Business
 <a name="BKMK_multipleforestopology"> </a>
@@ -395,9 +390,9 @@ Skype for Business Server 2019 richiede DNS, per i motivi seguenti:
     
 È importante notare che Skype for Business Server 2019 non supporta i nomi di dominio internazionalizzati (IDN).
   
-Ed è estremamente importante ricordare che qualsiasi nome in DNS sia identico al nome del computer configurato su qualsiasi server utilizzato da Skype for Business Server 2019. In particolare, non è possibile avere nomi brevi nell'ambiente e devono disporre di FQDN per Generatore di topologie.
+Ed è estremamente importante ricordare che qualsiasi nome in DNS è identico al nome del computer configurato su qualsiasi server utilizzato da Skype for Business Server 2019. In particolare, non è possibile avere nomi brevi nell'ambiente e devono disporre di FQDN per Generatore di topologie.
   
-Ciò sembra logico per qualsiasi computer già aggiunto a un dominio, ma se si dispone di un server perimetrale che non fa parte del dominio, potrebbe avere un nome breve predefinito senza suffisso di dominio. Assicurarsi che non sia così, in DNS o nel server perimetrale o in qualsiasi server o pool Skype for Business Server 2019, a tale riguardo.
+Ciò sembra logico per qualsiasi computer già aggiunto a un dominio, ma se si dispone di un server perimetrale che non fa parte del dominio, potrebbe avere un nome breve predefinito senza suffisso di dominio. Assicurati che non sia così, in DNS o nel server perimetrale o in qualsiasi server o pool Skype for Business Server 2019, a questo riguardo.
   
 Sicuramente non usare caratteri Unicode o caratteri di sottolineatura. I caratteri standard (A-Z, a-z, 0-9 e trattini) sono supportati dal DNS esterno e dalle autorità di certificazione pubbliche (è necessario assegnare nomi fqdn al nome del servizio di dominio completo nel certificato, è importante ricordare), quindi è necessario risparmiare molti problemi se si assegna questo nome in mente fin dall'inizio.
   
@@ -406,7 +401,7 @@ Per ulteriori informazioni sui requisiti DNS per rete, vedere la [sezione Networ
 ## <a name="certificates"></a>Certificati
 <a name="Certs"> </a>
 
-Una delle operazioni più importanti che è possibile eseguire prima della distribuzione è assicurarsi di disporre dei certificati in ordine. Skype for Business Server 2019 richiede un'infrastruttura a chiave pubblica (PKI) per le connessioni TLS (Transport Layer Security) e MTLS (Mutual Transport Layer Security). Fondamentalmente, per comunicare in modo sicuro in modo standardizzato, Skype for Business Server certificati emessi dalle autorità di certificazione (CA).
+Una delle operazioni più importanti che è possibile eseguire prima della distribuzione è assicurarsi di disporre dei certificati in ordine. Skype for Business Server 2019 necessita di un'infrastruttura a chiave pubblica (PKI) per le connessioni TLS (Transport Layer Security) e MTLS (Mutual Transport Layer Security). Fondamentalmente, per comunicare in modo sicuro in modo standardizzato, Skype for Business Server certificati emessi dalle autorità di certificazione (CA).
   
 Ecco alcuni degli aspetti che Skype for Business Server 2019 usa i certificati per:
   
@@ -428,7 +423,7 @@ Pertanto, la pianificazione dei certificati è un must. Esamini ora un elenco di
     
 - Tutti i certificati del server devono contenere un punto di distribuzione CRL (CDP).
     
-- Tutti i certificati devono essere firmati utilizzando un algoritmo di firma supportato dal sistema operativo. Skype for Business Server 2019 supporta la famiglia di dimensioni del digest SHA-1 e SHA-2 (224, 256, 384 e 512 bit) e soddisfa o supera i requisiti del sistema operativo.
+- Tutti i certificati devono essere firmati utilizzando un algoritmo di firma supportato dal sistema operativo. Skype for Business Server 2019 supporta la famiglia di prodotti SHA-1 e SHA-2 di dimensioni del digest (224, 256, 384 e 512 bit) e soddisfa o supera i requisiti del sistema operativo.
     
 - La registrazione automatica è supportata per i server interni che eseguono Skype for Business Server 2019.
     
@@ -451,7 +446,7 @@ Saranno inoltre necessari certificati quando Skype for Business Server 2019 comu
   
 Skype for Business Server 2019 include anche il supporto per (senza richiedere) certificati firmati utilizzando la funzione hash crittografica SHA-256. Per supportare l'accesso esterno tramite SHA-256, il certificato esterno deve essere emesso da un'autorità di certificazione pubblica tramite SHA-256.
   
-Per mantenere le cose semplici, i requisiti dei certificati per i server edizione Standard, i pool Front End e altri ruoli sono stati inseriti nelle tabelle seguenti, con il contoso.com fittizio utilizzato per esempi (probabilmente si sta usando qualcos'altro per l'ambiente). Si tratta di tutti i certificati server Web standard, con chiavi private non esportabili. Alcuni aspetti aggiuntivi da notare:
+Per mantenere le cose semplici, i requisiti dei certificati per i server edizione Standard, i pool Front End e altri ruoli sono stati inseriti nelle tabelle seguenti, con il contoso.com fittizio utilizzato per esempi (probabilmente si sta usando qualcos'altro per l'ambiente). Si tratta di tutti i certificati del server Web standard, con chiavi private non esportabili. Alcuni aspetti aggiuntivi da notare:
   
 - L'utilizzo chiavi avanzato del server (EKU) viene configurato automaticamente quando si utilizza la procedura guidata per la richiesta di certificati.
     
@@ -461,49 +456,49 @@ Per mantenere le cose semplici, i requisiti dei certificati per i server edizion
     
 Certificati per edizione Standard server:
   
-|**Certificato**|**Nome soggetto/nome comune**|**Nome alternativo soggetto**|**Esempio**|**Comments**|
+|Certificato|Nome soggetto/nome comune|Nome alternativo del soggetto|Esempio|Commenti|
 |:-----|:-----|:-----|:-----|:-----|
-|Impostazione predefinita  <br/> |FQDN del pool  <br/> |FQDN del pool e FQDN del server  <br/> Se sono presenti più domini SIP ed è stata abilitata la configurazione automatica dei client, la Configurazione guidata certificati rileva e aggiunge l'FQDN di ogni dominio SIP supportato.  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS (Domain Name System) esatta nei criteri di gruppo, saranno inoltre necessarie voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).  <br/> |SN=se01.contoso.com; SAN=se01.contoso.com  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com  <br/> |Nei edizione Standard, il nome di dominio completo del server corrisponde all'FQDN del pool.  <br/> La procedura guidata rileva i domini SIP specificati durante la configurazione e li aggiunge automaticamente al nome alternativo del soggetto.  <br/> È inoltre possibile utilizzare questo certificato per l'autenticazione da server a server.  <br/> |
-|Interno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che corrisponde all'FQDN del server)  <br/> E  <br/> • Soddisfare GLI URL semplici  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=se01.contoso.com; SAN=se01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=se01.contoso.com; SAN=se01.contoso.com; SAN= \* .contoso.com  <br/> |Non è possibile sostituire l'FQDN Web interno in Generatore di topologie.  <br/> Se si dispone di più URL semplici Meet, è necessario includerli tutti come SAN.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
-|Esterno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • URL semplice per l'accesso esterno  <br/> • Soddisfare GLI URL semplici per dominio SIP  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=se01.contoso.com; SAN=webcon01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=se01.contoso.com; SAN=webcon01.contoso.com; SAN= \* .contoso.com  <br/> |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
+|Impostazione predefinita   |FQDN del pool   |FQDN del pool e FQDN del server  <br/> Se sono presenti più domini SIP ed è stata abilitata la configurazione automatica dei client, la Configurazione guidata certificati rileva e aggiunge l'FQDN di ogni dominio SIP supportato.  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS (Domain Name System) esatta nei criteri di gruppo, saranno inoltre necessarie voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).   |SN=se01.contoso.com; SAN=se01.contoso.com  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com   |Nei edizione Standard, il nome di dominio completo del server corrisponde all'FQDN del pool.  <br/> La procedura guidata rileva i domini SIP specificati durante la configurazione e li aggiunge automaticamente al nome alternativo del soggetto.  <br/> È inoltre possibile utilizzare questo certificato per l'autenticazione da server a server.   |
+|Interno Web   |FQDN del server   |Ognuno dei seguenti:  <br/> • FQDN Web interno (che corrisponde all'FQDN del server)  <br/> E  <br/> • Soddisfare GLI URL semplici  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici   |SN=se01.contoso.com; SAN=se01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=se01.contoso.com; SAN=se01.contoso.com; SAN= \* .contoso.com   |Non è possibile sostituire l'FQDN Web interno in Generatore di topologie.  <br/> Se si dispone di più URL semplici Meet, è necessario includerli tutti come SAN.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.   |
+|Esterno Web   |FQDN del server   |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • URL semplice per l'accesso esterno  <br/> • Soddisfare GLI URL semplici per dominio SIP  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici   |SN=se01.contoso.com; SAN=webcon01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=se01.contoso.com; SAN=webcon01.contoso.com; SAN= \* .contoso.com   |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.   |
    
 Certificati per i Front End Server in un pool Front End:
   
-|**Certificato**|**Nome soggetto/nome comune**|**Nome alternativo soggetto**|**Esempio**|**Comments**|
+|Certificato|Nome soggetto/nome comune|Nome alternativo del soggetto|Esempio|Commenti|
 |:-----|:-----|:-----|:-----|:-----|
-|Impostazione predefinita  <br/> |FQDN del pool  <br/> |FQDN del pool e FQDN del server  <br/> Se sono presenti più domini SIP ed è stata abilitata la configurazione automatica dei client, la Configurazione guidata certificati rileva e aggiunge l'FQDN di ogni dominio SIP supportato.  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS (Domain Name System) esatta nei criteri di gruppo, saranno inoltre necessarie voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).  <br/> |SN=eepool.contoso.com; SAN=eepool.contoso.com; SAN=ee01.contoso.com  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com  <br/> |La procedura guidata rileva i domini SIP specificati durante la configurazione e li aggiunge automaticamente al nome alternativo del soggetto.  <br/> È inoltre possibile utilizzare questo certificato per l'autenticazione da server a server.  <br/> |
-|Interno Web  <br/> |FQDN del pool  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che NON corrisponde all'FQDN del server)  <br/> • FQDN server  <br/> • FQDN Skype for Business pool  <br/> E  <br/> • Soddisfare GLI URL semplici  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=ee01.contoso.com; SAN=ee01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=ee01.contoso.com; SAN=ee01.contoso.com; SAN= \* .contoso.com  <br/> |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
-|Esterno Web  <br/> |FQDN del pool  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=ee01.contoso.com; SAN=webcon01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=ee01.contoso.com; SAN=webcon01.contoso.com; SAN= \* .contoso.com  <br/> |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
+|Impostazione predefinita   |FQDN del pool   |FQDN del pool e FQDN del server  <br/> Se sono presenti più domini SIP ed è stata abilitata la configurazione automatica dei client, la Configurazione guidata certificati rileva e aggiunge l'FQDN di ogni dominio SIP supportato.  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS (Domain Name System) esatta nei criteri di gruppo, saranno inoltre necessarie voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).   |SN=eepool.contoso.com; SAN=eepool.contoso.com; SAN=ee01.contoso.com  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com   |La procedura guidata rileva i domini SIP specificati durante la configurazione e li aggiunge automaticamente al nome alternativo del soggetto.  <br/> È inoltre possibile utilizzare questo certificato per l'autenticazione da server a server.   |
+|Interno Web   |FQDN del pool   |Ognuno dei seguenti:  <br/> • FQDN Web interno (che NON corrisponde all'FQDN del server)  <br/> • FQDN server  <br/> • FQDN del pool Skype for Business  <br/> E  <br/> • Soddisfare GLI URL semplici  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici   |SN=ee01.contoso.com; SAN=ee01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=ee01.contoso.com; SAN=ee01.contoso.com; SAN= \* .contoso.com   |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.   |
+|Esterno Web   |FQDN del pool   |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici   |SN=ee01.contoso.com; SAN=webcon01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=ee01.contoso.com; SAN=webcon01.contoso.com; SAN= \* .contoso.com   |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.   |
    
 Certificati per il Director:
   
-|**Certificato**|**Nome soggetto/nome comune**|**Nome alternativo soggetto**|**Esempio**|
+|Certificato|Nome soggetto/nome comune|Nome alternativo del soggetto|Esempio|
 |:-----|:-----|:-----|:-----|
-|Impostazione predefinita  <br/> |Pool Director  <br/> |FQDN del Director, FQDN del pool di server Director.  <br/> Se questo pool è il server di accesso automatico per i client ed è necessaria una corrispondenza DNS rigida nei Criteri di gruppo, saranno necessarie anche voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).  <br/> |pool.contoso.com; SAN=dir01.contoso.com  <br/> Se il pool di server Director rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com  <br/> |
-|Interno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che corrisponde all'FQDN del server)  <br/> • FQDN server  <br/> • FQDN Skype for Business pool  <br/> E  <br/> • Soddisfare GLI URL semplici  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=dir01.contoso.com; SAN=dir01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=dir01.contoso.com; SAN=dir01.contoso.com SAN= \* .contoso.com  <br/> |
-|Esterno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • Soddisfare GLI URL semplici per dominio SIP  <br/> • URL semplice per l'accesso esterno  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |L'FQDN Web esterno del Director deve essere diverso dal pool Front End o dal Front End Server.  <br/> SN=dir01.contoso.com; SAN=directorwebcon01.contoso.com SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=dir01.contoso.com; SAN=directorwebcon01.contoso.com SAN= \* .contoso.com  <br/> |
+|Impostazione predefinita   |Pool Director   |FQDN del Director, FQDN del pool di server Director.  <br/> Se questo pool è il server di accesso automatico per i client ed è necessaria una corrispondenza DNS rigida nei Criteri di gruppo, saranno necessarie anche voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).   |pool.contoso.com; SAN=dir01.contoso.com  <br/> Se il pool di server Director rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com   |
+|Interno Web   |FQDN del server   |Ognuno dei seguenti:  <br/> • FQDN Web interno (che corrisponde all'FQDN del server)  <br/> • FQDN server  <br/> • FQDN del pool Skype for Business  <br/> E  <br/> • Soddisfare GLI URL semplici  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici   |SN=dir01.contoso.com; SAN=dir01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=dir01.contoso.com; SAN=dir01.contoso.com SAN= \* .contoso.com   |
+|Esterno Web   |FQDN del server   |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • Soddisfare GLI URL semplici per dominio SIP  <br/> • URL semplice per l'accesso esterno  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici   |L'FQDN Web esterno del Director deve essere diverso dal pool Front End o dal Front End Server.  <br/> SN=dir01.contoso.com; SAN=directorwebcon01.contoso.com SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=dir01.contoso.com; SAN=directorwebcon01.contoso.com SAN= \* .contoso.com   |
    
 Certificati per Mediation Server autonomo:
   
-|**Certificato**|**Nome soggetto/nome comune**|**Nome alternativo soggetto**|**Esempio**|
+|Certificato|Nome soggetto/nome comune|Nome alternativo del soggetto|Esempio|
 |:-----|:-----|:-----|:-----|
-|Impostazione predefinita  <br/> |FQDN del pool  <br/> |FQDN del pool  <br/> FQDN del server membro del pool  <br/> |SN=medsvr-pool.contoso.net; SAN=medsvr-pool.contoso.net; SAN=medsvr01.contoso.net  <br/> |
+|Impostazione predefinita   |FQDN del pool   |FQDN del pool  <br/> FQDN del server membro del pool   |SN=medsvr-pool.contoso.net; SAN=medsvr-pool.contoso.net; SAN=medsvr01.contoso.net   |
    
 Certificati per Survivable Branch Appliance (in particolare, Survivable Branch Appliance 2015 per Skype for Business Server 2019):
   
-|**Certificato**|**Nome soggetto/nome comune**|**Nome alternativo soggetto**|**Esempio**|
+|Certificato|Nome soggetto/nome comune|Nome alternativo del soggetto|Esempio|
 |:-----|:-----|:-----|:-----|
-|Impostazione predefinita  <br/> |FQDN del dispositivo  <br/> |SIP.\<sipdomain\> (è necessaria una sola voce per ogni dominio SIP)  <br/> |SN=sba01.contoso.net; SAN=sip.contoso.com; SAN=sip.fabrikam.com  <br/> |
+|Impostazione predefinita   |FQDN del dispositivo   |SIP.\<sipdomain\> (è necessaria una sola voce per ogni dominio SIP)   |SN=sba01.contoso.net; SAN=sip.contoso.com; SAN=sip.fabrikam.com   |
    
 ### <a name="certificates-for-external-user-access-edge"></a>Certificati per l'accesso degli utenti esterni (Edge)
 
-Skype for Business Server 2019 supporta l'utilizzo  di un singolo certificato pubblico per l'accesso e le interfacce esterne di Web Conferencing Edge, oltre al servizio di autenticazione A/V, fornito tramite i server perimetrali. L'interfaccia interna di Edge in genere userà un certificato privato emesso dall'autorità di certificazione interna, ma se si preferisce, è possibile utilizzare anche un certificato pubblico per questo, se è di un'autorità di certificazione attendibile.
+Skype for Business Server 2019 supporta l'utilizzo di  un singolo certificato pubblico per le interfacce esterne di Access e Web Conferencing Edge, oltre al servizio di autenticazione A/V, fornito tramite i server perimetrali. L'interfaccia interna di Edge in genere userà un certificato privato emesso dall'autorità di certificazione interna, ma se si preferisce, è possibile utilizzare anche un certificato pubblico per questo, se è di un'autorità di certificazione attendibile.
   
-Anche il proxy inverso utilizzerà un certificato pubblico e crittograferà la comunicazione tra il componente e i client e il componente ai server interni tramite HTTP (o, più precisamente, TLS su HTTP).
+Anche il proxy inverso utilizzerà un certificato pubblico e crittografa la comunicazione tra il componente e i client e il componente ai server interni tramite HTTP (o, più precisamente, TLS su HTTP).
   
 ### <a name="certificates-for-mobility"></a>Certificati per dispositivi mobili
 
-Se si sta distribuendo dispositivi mobili e si sta supportando l'individuazione automatica per i client mobili, sarà necessario includere nei certificati alcune voci aggiuntive del nome soggetto alternativo per supportare le connessioni protette dai client mobili.
+Se si sta distribuendo dispositivi mobili e si sta supportando l'individuazione automatica per i client mobili, è necessario includere nei certificati alcune voci aggiuntive del nome soggetto alternativo per supportare le connessioni protette dai client mobili.
   
 Saranno necessari nomi SAN per l'individuazione automatica nei certificati seguenti:
   
@@ -521,18 +516,18 @@ Se è quello che si sta esaminando e se si dispone di molti domini SIP (il che r
   
 Requisiti del pool di server Director e dei certificati del pool Front End:
   
-|**Descrizione**|**Voce SAN**|
+|Descrizione|Voce SAN|
 |:-----|:-----|
-|URL del servizio di individuazione automatica interno  <br/> |SAN=lyncdiscoverinternal.\<sipdomain\>  <br/> |
-|URL del servizio di individuazione automatica esterno  <br/> |SAN=lyncdiscover.\<sipdomain\>  <br/> |
+|URL del servizio di individuazione automatica interno   |SAN=lyncdiscoverinternal.\<sipdomain\>   |
+|URL del servizio di individuazione automatica esterno   |SAN=lyncdiscover.\<sipdomain\>   |
    
 In alternativa, è possibile utilizzare SAN= \* .\<sipdomain\>
   
 Requisiti del certificato proxy inverso (CA pubblica):
   
-|**Descrizione**|**Voce SAN**|
+|Descrizione|Voce SAN|
 |:-----|:-----|
-|URL del servizio di individuazione automatica esterno  <br/> |SAN=lyncdiscover.\<sipdomain\>  <br/> |
+|URL del servizio di individuazione automatica esterno   |SAN=lyncdiscover.\<sipdomain\>   |
    
 Questa san deve essere assegnata al certificato assegnato al listener SSL nel proxy inverso.
   
@@ -542,11 +537,11 @@ Questa san deve essere assegnata al certificato assegnato al listener SSL nel pr
 ## <a name="file-share"></a>Condivisione file
 <a name="Fileshare"> </a>
 
-Skype for Business Server 2019 può usare la stessa condivisione file per tutti i file di archiviazione. È necessario tenere presente quanto segue:
+Skype for Business Server 2019 può usare la stessa condivisione file per tutto l'archiviazione di file. È necessario tenere presente quanto segue:
   
 - Una condivisione file deve essere in uno spazio di archiviazione collegato diretto (DAS) o in una rete di archiviazione (SAN) e questo include DFS (Distributed File System) e una matrice ridondante di dischi indipendenti (RAID) per gli archivi file. Per ulteriori informazioni su DFS per Windows Server 2012, vedere [questa pagina DFS.](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127250(v=ws.11))
     
-- È consigliabile un cluster condiviso per la condivisione file. Se ne si usa già una, è consigliabile eseguire il clustering Windows Server 2012 versioni successive
+- È consigliabile un cluster condiviso per la condivisione file. Se si usa già una versione, è consigliabile eseguire il clustering Windows Server 2012 versioni successive
 
 > [!Note]
 > **Perché l'ultima Windows?** Le versioni precedenti potrebbero non disporre delle autorizzazioni appropriate per abilitare tutte le funzionalità. È possibile utilizzare Amministrazione cluster per creare le condivisioni file. Per ulteriori informazioni, vedere questo articolo di supporto come creare condivisioni file in un [cluster.](https://support.microsoft.com/help/224967)

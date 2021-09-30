@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: c7e21cce-1dd2-489a-a2eb-f632799f7523
 description: 'Riepilogo: configurare il server di gestione principale, installare System Center Operations Manager e importare Management Pack per Skype for Business Server 2015.'
-ms.openlocfilehash: 926236d673a6988d36699ce0c307441b4aef3357
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 20159d77c34ebaa4a8ed022a5d0f1467deeb89e0
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58635260"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60012120"
 ---
 # <a name="how-to-configure-the-primary-management-server"></a>Come configurare il server di gestione principale
 
@@ -44,26 +44,23 @@ Quando si installa System Center Operations Manager, è necessario installare tu
 - Data warehouse
 
 > [!IMPORTANT]
-> Prima di installare System Center Operations Manager 2012, è necessario installare " Microsoft Report Viewer[2010 Redistributable Package".](https://www.microsoft.com/download/details.aspx?id=6442)
+> È Microsoft Report Viewer 2010 Redistributable Package prima di installare System Center Operations Manager 2012.
 
-Per informazioni dettagliate su questi prodotti e sulla relativa installazione, vedere i collegamenti seguenti:
+Per informazioni dettagliate su questi prodotti e sulla relativa [installazione, vedere System Center Operations Manager 2012](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))
 
-- [System Center Operations Manager 2012](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))
-
-- [System Center Operations Manager 2007](https://technet.microsoft.com/library/bb735860.aspx)
 
 Tenere presente che è possibile avere un solo server di gestione radice per ogni Skype for Business Server distribuzione.
 
 ## <a name="importing-the-skype-for-business-server-2015-management-packs"></a>Importazione dei Management Pack Skype for Business Server 2015
 
-È possibile estendere le funzionalità di System Center Operations Manager installando Management Pack, ovvero software che determina quali elementi System Center Operations Manager è in grado di monitorare, come devono essere monitorati e come devono essere attivati e segnalati gli avvisi. Skype for Business Server 2015 include due System Center Management Pack di Operations Manager che offrono le funzionalità seguenti:
+È possibile estendere le funzionalità di System Center Operations Manager installando Management Pack, ovvero software che determina quali elementi System Center Operations Manager può monitorare, come monitorare tali elementi e come devono essere attivati e segnalati gli avvisi. Skype for Business Server 2015 include System Center Management Pack di Operations Manager che offrono le funzionalità seguenti:
 
 - Component **and User Management Pack** (Microsoft.LS.2015.Monitoring.ComponentAndUser.mp) tiene traccia dei problemi di Skype for Business Server registrati nei registri eventi, registrati dai contatori delle prestazioni o registrati nei record dettagli chiamata (CDR) o nei database QoE (Quality of Experience). Per i problemi critici, System Center Operations Manager può essere configurato per inviare immediatamente una notifica agli amministratori tramite posta elettronica, messaggi istantanei o sms. SMS, o Servizio messaggi brevi, è la tecnologia utilizzata per inviare messaggi di testo da un dispositivo mobile a un altro.
 
     > [!NOTE]
     >  Per informazioni dettagliate sulla configurazione della notifica di Operations Manager, vedere [Configuring Notification.](/previous-versions/system-center/operations-manager-2007-r2/dd440890(v=technet.10))
 
-- **Active Monitoring Management Pack** (Microsoft.LS.2015.Monitoring.ActiveMonitoring.mp) testa in modo proattivo i principali componenti di Skype for Business Server, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o l'esecuzione di chiamate a un telefono situato sulla rete PSTN (Public Switched Telephone Network). Questi test vengono eseguiti utilizzando i cmdlet Skype for Business Server transazione sintetica. Il cmdlet **Test-CsIM** ad esempio viene utilizzato per simulare una conversazione istantanea tra due utenti di test. Se la conversazione simulata ha esito negativo, viene generato un avviso.
+- **Active Monitoring Management Pack** (Microsoft.LS.2015.Monitoring.ActiveMonitoring.mp) testa in modo proattivo i principali componenti di Skype for Business Server, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o l'esecuzione di chiamate a un telefono situato sulla rete PSTN (Public Switched Telephone Network). Questi test vengono eseguiti utilizzando i cmdlet Skype for Business Server di transazione sintetica. Il cmdlet **Test-CsIM** ad esempio viene utilizzato per simulare una conversazione istantanea tra due utenti di test. Se la conversazione simulata ha esito negativo, viene generato un avviso.
 
 L'importazione dei Management Pack è un passaggio fondamentale. Se i Management Pack non vengono importati, non sarà possibile utilizzare Operations Manager per monitorare Skype for Business Server eventi o eseguire Skype for Business Server sintetiche.
 
@@ -100,7 +97,7 @@ Component and User Management Pack viene utilizzato per monitorare solo Skype fo
 
 In generale, è più semplice importare i Management Pack utilizzando la console di Operations Manager. Tuttavia, se si verifica un errore e l'importazione non riesce, la console non fornisce sempre segnalazioni di errori adeguate. In confronto, il shell di Operations Manager fornisce informazioni dettagliate. Se si utilizza Operations Manager e si verificano problemi durante l'importazione di un Management Pack, importarlo utilizzando il shell di Operations Manager. Le informazioni fornite da shell di Operations Manager consentono di determinare il motivo per cui l'importazione non è riuscita.
 
-1. Fare clic sul pulsante **Start,** **scegliere** Tutti i programmi, **Microsoft System Center 2012,** **Operations Manager** e quindi fare clic su **shell di Operations Manager**.
+1. Fare clic sul pulsante **Start,** **scegliere** Tutti i programmi, **Microsoft System Center 2012,** **Operations Manager** e quindi fare clic **su shell di Operations Manager**.
 
 2. In shell di Operations Manager digitare il comando seguente al prompt dei comandi, utilizzando il percorso effettivo della copia del file Microsoft.LS.2015.Monitoring.ActiveMonitoring.mp e quindi premere INVIO:
 

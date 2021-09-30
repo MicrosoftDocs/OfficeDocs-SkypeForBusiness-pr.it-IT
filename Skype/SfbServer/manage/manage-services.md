@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c99ee134-8294-4481-bb4e-710fe85a39ca
 description: In questo articolo viene descritto come gestire i servizi in esecuzione in Skype for Business Server topologia.
-ms.openlocfilehash: 45af8756feda61d0a0bac06beedddcc693591346
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: be613203b9e15640ead1b136ebe1b89f4c4c50ea
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58593640"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60014180"
 ---
 # <a name="manage-services-for-skype-for-business-server"></a>Gestire i servizi per Skype for Business Server
 
@@ -38,10 +38,10 @@ In questo articolo viene descritto come gestire i servizi in esecuzione in Skype
    - Fare clic su **Aggiorna** per visualizzare l'elenco più aggiornato.  
    - Cercare un computer specifico digitando il relativo nome nel campo di ricerca.
     
-## <a name="view-the-status-of-services-running-on-a-skype-for-business-server"></a>Visualizzare lo stato dei servizi in esecuzione in un Skype for Business server
+## <a name="view-the-status-of-services-running-on-a-skype-for-business-server"></a>Visualizzare lo stato dei servizi in esecuzione in un server Skype for Business server
 <a name="view-status"> </a>
 
-È possibile utilizzare Skype for Business Server di controllo per visualizzare tutti i servizi in esecuzione in un computer specifico della topologia di Skype for Business Server e visualizzare lo stato di ogni servizio.
+È possibile utilizzare Skype for Business Server di controllo per visualizzare tutti i servizi in esecuzione in un computer specifico nella topologia di Skype for Business Server e visualizzare lo stato di ogni servizio.
   
 ### <a name="to-view-the-status-of-services-running-on-a-computer"></a>Per visualizzare lo stato dei servizi in esecuzione in un computer
 
@@ -55,7 +55,7 @@ In questo articolo viene descritto come gestire i servizi in esecuzione in Skype
     
 ### <a name="viewing-service-status-with-windows-powershell-cmdlets"></a>Visualizzazione dello stato del servizio Windows cmdlet di PowerShell
 
-È inoltre possibile visualizzare lo stato del servizio utilizzando Windows PowerShell e il cmdlet **Get-CsWindowsService.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
+È inoltre possibile visualizzare lo stato del servizio utilizzando Windows PowerShell e il cmdlet **Get-CsWindowsService.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere Amministrazione remota di PowerShell per [Microsoft Lync.](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/) Il processo è lo stesso in Skype for Business Server.
   
 ### <a name="to-view-service-status"></a>Per visualizzare lo stato del servizio
 
@@ -82,7 +82,7 @@ Per informazioni dettagliate, [vedere Get-CsWindowsService](/powershell/module/s
 ## <a name="view-details-about-a-service"></a>Visualizzare i dettagli su un servizio
 <a name="view_details"> </a>
 
-È possibile utilizzare Skype for Business Server di controllo per visualizzare i dettagli su ogni servizio in esecuzione in un computer specifico della topologia. È possibile visualizzare lo stato di ogni servizio e i dettagli, ad esempio i database, le porte e i servizi dipendenti associati.
+È possibile utilizzare Skype for Business Server pannello di controllo per visualizzare i dettagli su ogni servizio in esecuzione in un computer specifico della topologia. È possibile visualizzare lo stato di ogni servizio e i dettagli, ad esempio i database, le porte e i servizi dipendenti associati.
   
 ### <a name="to-view-details-for-a-service"></a>Per visualizzare i dettagli di un servizio
 

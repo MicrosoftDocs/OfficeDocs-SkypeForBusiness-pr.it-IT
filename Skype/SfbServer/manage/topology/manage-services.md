@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Informazioni su come visualizzare lo stato del servizio, avviare e arrestare i servizi e impedire sessioni per i servizi.
-ms.openlocfilehash: 8c1f527e32d50624fddc1b4b261f6fbd20e97a47
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 52d87c8e2f803f31496e773e82d7466a22711550
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58604821"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60015110"
 ---
 # <a name="manage-services-in-skype-for-business-server"></a>Gestire i servizi in Skype for Business Server
 
@@ -41,7 +41,7 @@ Utilizzare il Skype for Business Server di controllo per visualizzare un elenco 
    
 ## <a name="view-the-status-of-services-running-on-a-computer-in-skype-for-business"></a>Visualizzare lo stato dei servizi in esecuzione in un computer in Skype for Business
 
-Utilizzare il Skype for Business Server di controllo per visualizzare tutti i servizi in esecuzione in un computer specifico della topologia di Skype for Business Server e visualizzare lo stato di ogni servizio.
+Utilizzare il Skype for Business Server per visualizzare tutti i servizi in esecuzione in un computer specifico nella topologia di Skype for Business Server e visualizzare lo stato di ogni servizio.
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business Server di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)
@@ -77,15 +77,15 @@ RoleName                                  Status
 {MediationServer}                         Running
 ```
 
-Per informazioni dettagliate, [vedere Get-CsWindowsService](/powershell/module/skype/Get-CsWindowsService).
+Per informazioni dettagliate, [vedere Get-CsWindowsService](/powershell/module/skype/get-cswindowsservice).
 
 ## <a name="start-or-stop-skype-for-business-services"></a>Avviare o arrestare Skype for Business servizi
 
-Utilizzare il Skype for Business Server di controllo per avviare o arrestare tutti i servizi di Skype for Business Server in esecuzione in un computer specifico oppure per avviare o arrestare un servizio specifico.
+Utilizzare il Skype for Business Server di controllo per avviare o arrestare tutti i servizi Skype for Business Server in esecuzione in un computer specifico oppure per avviare o arrestare un servizio specifico.
 
 ### <a name="start-or-stop-all-skype-for-business-server-services-on-a-computer"></a>Avviare o arrestare tutti i Skype for Business Server in un computer
 
-1. Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server. È possibile determinare se è stato assegnato il ruolo CsServerAdministrator o CsAdministrator RBAC eseguendo un comando simile al seguente:
+1. Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server. È possibile determinare se è stato assegnato il ruolo RBAC CsServerAdministrator o CsAdministrator eseguendo un comando simile al seguente:
 
     ```powershell
     Get-CsAdminRoleAssignment -Identity "kenmyer"`

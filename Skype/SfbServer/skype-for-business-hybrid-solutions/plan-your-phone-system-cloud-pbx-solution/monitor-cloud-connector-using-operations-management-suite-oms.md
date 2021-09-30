@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: edf4a04c-d4c9-4c05-aacc-9e084618bb55
 description: Leggere questo argomento per informazioni su come monitorare la distribuzione di Cloud Connector versione 2.1 e successive tramite Microsoft Operations Management Suite (OMS).
-ms.openlocfilehash: 0589df251fedb8d60ba115920e76b3aa1b327334
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: cf8a79b9b504b5a98592a169d3a507eb938353b9
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58729025"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60012310"
 ---
 # <a name="monitor-cloud-connector-using-operations-management-suite-oms"></a>Monitorare Cloud Connector mediante Operations Management Suite (OMS)
 
@@ -53,7 +53,7 @@ Prima di poter utilizzare OMS per monitorare la distribuzione di Cloud Connector
 
 ## <a name="configure-cloud-connector-to-use-oms"></a>Configurare Cloud Connector per l'utilizzo di OMS
 
-Sarà necessario configurare l'ambiente locale del connettore cloud per l'utilizzo di OMS. A tale scopo, è necessario l'ID e la chiave dell'area di lavoro di OMS, che è possibile trovare utilizzando il portale OMS come segue: Impostazioni -- Origini connesse \> -- \> Windows Server:
+Sarà necessario configurare l'ambiente locale del connettore cloud per l'utilizzo di OMS. A tale scopo, sono necessari l'ID e la chiave dell'area di lavoro di OMS, che è possibile trovare utilizzando il portale OMS come segue: Impostazioni -- Origini connesse \> -- \> Windows Server:
 
 ![Screenshot per Cloud Connector OMS.](../../media/a4bb0a96-c940-435e-a3f5-5ef3062dea83.png)
 
@@ -65,7 +65,7 @@ La modalità di configurazione di Cloud Connector per l'utilizzo di OMS dipende 
 
         Ogni volta che Cloud Connector viene distribuito o aggiornato, tenterà di installare automaticamente l'agente OMS nelle macchine virtuali. Abilita questa funzionalità in modo che l'agente OMS possa superare l'aggiornamento automatico del connettore cloud.
 
-    2. Per configurare l'ID OMS e la chiave, eseguire Set-CcCredential -AccountType OMSWorkspace. 
+    2. Per configurare l'ID e la chiave OMS, eseguire Set-CcCredential -AccountType OMSWorkspace. 
 
 - **Se si sta installando un agente OMS in un'appliance cloud connector** esistente, attenersi alla seguente procedura:
 
@@ -80,7 +80,7 @@ La modalità di configurazione di Cloud Connector per l'utilizzo di OMS dipende 
 
 - **Se si desidera aggiornare l'ID o la chiave dell'area di lavoro OMS in un dispositivo Cloud Connector in cui è già installato un agente OMS:**
 
-    1. Per configurare l'ID OMS e la chiave, eseguire Set-CcCredential -AccountType OMSWorkspace. 
+    1. Per configurare l'ID e la chiave OMS, eseguire Set-CcCredential -AccountType OMSWorkspace. 
 
     2. Per applicare gli aggiornamenti, eseguire Install-CcOMSAgent. 
 
@@ -90,7 +90,7 @@ La modalità di configurazione di Cloud Connector per l'utilizzo di OMS dipende 
 
 ## <a name="configure-oms"></a>Configurare OMS
 
-Successivamente, sarà necessario specificare la configurazione di OMS utilizzando il portale OMS. In particolare, è necessario:
+Successivamente, sarà necessario specificare la configurazione di OMS utilizzando il portale OMS. In particolare, sarà necessario:
 
 - Specificare informazioni sui registri eventi e sui contatori delle prestazioni.
 
@@ -100,7 +100,7 @@ Successivamente, sarà necessario specificare la configurazione di OMS utilizzan
 
 Nel portale OMS è necessario specificare le informazioni sui registri eventi e sui contatori delle prestazioni come indicato di seguito:
 
-1. Passare a Impostazioni- Dati- Windows registri eventi \> e aggiungere i registri eventi \> per: 
+1. Passare a Impostazioni- \> Dati- Windows registri eventi e aggiungere i registri eventi \> per: 
 
    - Lync Server
 
@@ -109,13 +109,13 @@ Nel portale OMS è necessario specificare le informazioni sui registri eventi e 
      > [!NOTE]
      > È necessario immettere manualmente Lync Server nella casella di testo. Non viene visualizzato come opzione nell'elenco a discesa. 
 
-     Per ulteriori informazioni, vedere l'Windows [di dati del registro eventi in Log Analytics](/azure/log-analytics/log-analytics-data-sources-windows-events)
+     Per ulteriori informazioni, vedere Windows [di dati del registro eventi in Log Analytics](/azure/log-analytics/log-analytics-data-sources-windows-events)
 
 2. Passare a Impostazioni- Contatori delle prestazioni Windows dati e \> \> aggiungere contatori delle prestazioni per: 
 
-   - **Contatori a livello del sistema operativo**. È possibile aggiungere contatori a livello del sistema operativo, ad esempio l'utilizzo del processore, l'utilizzo della memoria, l'utilizzo della rete oppure è possibile utilizzare soluzioni esistenti come Capacità e prestazioni, Network Performance Monitor senza aggiungere contatori in modo esplicito. Indipendentemente da come si decide di monitorarli, Microsoft consiglia di monitorare questi contatori del sistema operativo.
+   - **Contatori a livello del sistema operativo**. È possibile aggiungere contatori a livello del sistema operativo, ad esempio l'utilizzo del processore, l'utilizzo della memoria, l'utilizzo della rete, oppure è possibile utilizzare soluzioni esistenti come Capacità e prestazioni, Network Performance Monitor senza aggiungere contatori in modo esplicito. Indipendentemente da come si decide di monitorarli, Microsoft consiglia di monitorare questi contatori del sistema operativo.
 
-   - **Skype for Business contatori**. Esistono numerosi contatori forniti da Skype for Business. È possibile trovare questi contatori accedendo a qualsiasi Mediation Server e aprendo Performance Monitor. Questi contatori iniziano con "LS:". Microsoft consiglia di iniziare almeno con i contatori di capacità seguenti e di aggiungere altri contatori di interesse:
+   - **Skype for Business contatori .** Esistono numerosi contatori forniti da Skype for Business. È possibile trovare questi contatori accedendo a qualsiasi Mediation Server e aprendo Performance Monitor. Questi contatori iniziano con "LS:". Microsoft consiglia di iniziare almeno con i contatori di capacità seguenti e di aggiungere altri contatori di interesse:
 
      Totale chiamate attive:
 
@@ -164,7 +164,7 @@ Per creare questa coppia di avvisi:
 
     La query utilizza il filtro computer *in cui Computer contiene "MediationServer".* Il filtro seleziona solo il computer il cui nome contiene la stringa "MediationServer".
 
-     È necessario sostituire il filtro con il proprio filtro del computer o semplicemente rimuoverlo. È possibile creare filtri stringa complessi senza espressioni regolari. Per ulteriori informazioni, vedere [Operatori stringa](https://docs.loganalytics.io/docs/Language-Reference/Scalar-operators/String-operators). È inoltre possibile scegliere di utilizzare espressioni regolari. È inoltre possibile creare un gruppo di computer salvando una query di ricerca e utilizzando tale gruppo come filtro computer nella query di avviso. Per ulteriori informazioni, vedere [Gruppi di computer in Log Analytics log searches](/azure/log-analytics/log-analytics-computer-groups).
+     È necessario sostituire il filtro con il proprio filtro del computer o semplicemente rimuoverlo. È possibile creare filtri stringa complessi senza espressioni regolari. È inoltre possibile scegliere di utilizzare espressioni regolari. È inoltre possibile creare un gruppo di computer salvando una query di ricerca e utilizzando tale gruppo come filtro computer nella query di avviso. Per ulteriori informazioni, vedere [Gruppi di computer in Log Analytics log searches](/azure/log-analytics/log-analytics-computer-groups).
 
     Per ogni computer, la query di errore otterrà l'ultimo registro eventi sia per l'avvio del servizio RTCMEDSRV che per l'arresto del servizio. Restituirà un registro se l'ultimo evento è l'evento di arresto del servizio. non restituirà nulla se l'ultimo evento è l'evento di avvio del servizio. In breve, la query restituirebbe un elenco di server il cui RTCMEDSRV viene arrestato nell'intervallo di tempo. 
 
@@ -204,7 +204,7 @@ Per creare questo avviso, la query è:
 search *| where Computer contains "MediationServer" | where (Type == "Perf" or Type == "Event") | where ((ObjectName ==  "Processor" and CounterName == "% Processor Time") or EventLog == "Lync Server") | where (CounterValue > 90 or EventID == 22003)
 ```
 
-La query otterrà tutti i contatori di utilizzo del processore e l'evento di arresto del servizio da tutti i computer e restituirà un registro se l'utilizzo del processore supera il 90% o il servizio viene mai arrestato. 
+La query otterrà tutti i contatori di utilizzo del processore e l'evento di arresto del servizio da tutti i computer e restituirà un registro se l'utilizzo del processore supera il 90% o se il servizio viene mai arrestato. 
 
 ## <a name="analyze-the-alerts-in-your-log-analytics-repository"></a>Analizzare gli avvisi nel repository di Log Analytics
 
@@ -251,8 +251,6 @@ Di seguito sono elencati i contatori della capacità delle chiamate che devono e
 Per ulteriori informazioni sull'utilizzo di OMS, vedere:
 
 - [Trovare i dati usando le ricerche nei log in Log Analytics](/azure/log-analytics/log-analytics-log-searches)
-
-- [Informazioni di riferimento sul linguaggio di Analisi dei log di Azure](https://docs.loganalytics.io/docs/Language-Reference)
 
 - [Informazioni sugli avvisi in Log Analytics](/azure/log-analytics/log-analytics-alerts)
 

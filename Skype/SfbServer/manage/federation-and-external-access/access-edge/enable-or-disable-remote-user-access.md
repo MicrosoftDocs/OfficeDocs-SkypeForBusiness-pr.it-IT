@@ -14,17 +14,17 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: Se si abilita l'accesso utente remoto per gli utenti remoti, gli utenti remoti supportati si connettono tramite Internet e non devono connettersi utilizzando una VPN per collaborare con gli utenti interni tramite Skype for Business Server.
-ms.openlocfilehash: c20f6891b463f44fdcd424ca870fbba0826d33bd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Se si abilita l'accesso degli utenti remoti per gli utenti remoti, gli utenti remoti supportati si connettono tramite Internet e non devono connettersi tramite UNA VPN per collaborare con gli utenti interni tramite Skype for Business Server.
+ms.openlocfilehash: 743ec476cc1541fa4163a838f333419280779611
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608193"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60014530"
 ---
 # <a name="enable-or-disable-remote-user-access-in-skype-for-business-server"></a>Abilitare o disabilitare l'accesso utente remoto in Skype for Business Server
 
-Gli utenti remoti sono utenti dell'organizzazione che dispongono di un'identità Active Directory permanente nell'organizzazione. Gli utenti remoti spesso a Skype for Business Server dall'esterno della rete utilizzando una rete privata virtuale (VPN) quando non sono connessi alla rete dell'organizzazione. Tra gli utenti remoti sono inclusi i dipendenti che lavorano dalla propria abitazione o in viaggio e altri lavoratori remoti, ad esempio fornitori considerati attendibili a cui sono state concesse credenziali aziendali. Se si abilita l'accesso utente remoto per gli utenti remoti, gli utenti remoti supportati si connettono tramite Internet e non devono connettersi utilizzando una VPN per collaborare con gli utenti interni tramite Skype for Business Server.
+Gli utenti remoti sono utenti dell'organizzazione che dispongono di un'identità Active Directory permanente nell'organizzazione. Gli utenti remoti spesso a Skype for Business Server dall'esterno della rete utilizzando una rete privata virtuale (VPN) quando non sono connessi alla rete dell'organizzazione. Tra gli utenti remoti sono inclusi i dipendenti che lavorano dalla propria abitazione o in viaggio e altri lavoratori remoti, ad esempio fornitori considerati attendibili a cui sono state concesse credenziali aziendali. Se si abilita l'accesso degli utenti remoti per gli utenti remoti, gli utenti remoti supportati si connettono tramite Internet e non devono connettersi tramite UNA VPN per collaborare con gli utenti interni tramite Skype for Business Server.
 
 Per supportare l'accesso degli utenti remoti, è necessario abilitarlo. Quando si abilita l'accesso degli utenti remoti, tale impostazione si applica all'intera organizzazione. Se successivamente si desidera impedire, in modo temporaneo o permanente, l'accesso degli utenti remoti, è possibile disabilitarlo per l'organizzazione. Attenersi alla procedura descritta in questa sezione per abilitare o disabilitare l'accesso degli utenti remoti per l'organizzazione.
 
@@ -45,9 +45,9 @@ Per supportare l'accesso degli utenti remoti, è necessario abilitarlo. Quando s
 
 5.  In **Modifica configurazione Access Edge** eseguire una delle operazioni seguenti:
     
-      - Per abilitare l'accesso degli utenti remoti per l'organizzazione, selezionare la casella di controllo **Abilita accesso remoto utenti**.
+    - Per abilitare l'accesso degli utenti remoti per l'organizzazione, selezionare la casella di controllo **Abilita accesso remoto utenti**.
     
-      - Per disabilitare l'accesso degli utenti remoti per l'organizzazione, deselezionare la casella di controllo **Abilita accesso remoto utenti**.
+    - Per disabilitare l'accesso degli utenti remoti per l'organizzazione, deselezionare la casella di controllo **Abilita accesso remoto utenti**.
 
 6.  Fare clic su **Commit**.
 
@@ -60,14 +60,16 @@ L'accesso utente remoto può essere gestito utilizzando Windows PowerShell e il 
 
 ## <a name="to-enable-remote-user-access"></a>Per abilitare l'accesso utente remoto
 
-  - Per abilitare l'accesso degli utenti remoti, impostare il valore della proprietà **AllowOutsideUsers** su True ($True):
-    
-        Set-CsAccessEdgeConfiguration -AllowOutsideUsers $True
+Per abilitare l'accesso degli utenti remoti, impostare il valore della proprietà **AllowOutsideUsers** su True ($True):
+
+```powershell
+Set-CsAccessEdgeConfiguration -AllowOutsideUsers $True
+```
 
 ## <a name="to-disable-remote-user-access"></a>Per disabilitare l'accesso utente remoto
 
-  - Per disabilitare l'accesso degli utenti remoti, impostare il valore della proprietà **AllowOutsideUsers** su False ($False):
-    
-        Set-CsAccessEdgeConfiguration -AllowOutsideUsers $False
+Per disabilitare l'accesso degli utenti remoti, impostare il valore della proprietà **AllowOutsideUsers** su False ($False):
 
-
+```powershell
+Set-CsAccessEdgeConfiguration -AllowOutsideUsers $False
+```

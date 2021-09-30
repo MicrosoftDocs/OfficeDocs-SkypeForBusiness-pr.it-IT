@@ -22,12 +22,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sulle lingue che è possibile impostare in Skype for Business per i messaggi di sistema predefiniti e i messaggi di saluto della segreteria telefonica.
-ms.openlocfilehash: 4138af4dfd73fd419416b76bc5e3e5bb3997be15
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 10f3d98ac8fad1c37257aae7077e96d2b5087448
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607413"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60011580"
 ---
 # <a name="languages-for-voicemail-greetings-and-messages"></a>Lingua per i messaggi e i saluti della segreteria telefonica
 
@@ -35,47 +35,47 @@ Puoi configurare Skype for Business per riprodurre il messaggio di saluto della 
 
 Per cambiare la lingua usata da Skype for Business per i messaggi di saluto della segreteria di sistema, consulta [Modificare la lingua predefinita per i messaggi di saluto della segreteria telefonica e le e-mail dell'organizzazione](/microsoftteams/change-the-default-language-for-greetings-and-emails?toc=/skypeforbusiness/toc.json&bc=/skypeforbusiness/breadcrumb/toc.json).
 
-|||||||
+
+|Lingua  |Paese/area geografica |Codice della lingua |Disponibile da mostrare agli utenti in una e-mail? |Disponibile quando l'utente chiama?  |Trascrizione disponibile? |
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|**Lingua** <br/> |**Paese/area geografica** <br/> |**Codice della lingua** <br/> |**Disponibile da mostrare agli utenti in una e-mail?** <br/> |**Disponibile quando l'utente chiama?** <br/> |**Trascrizione disponibile?** <br/> |
-|Arabo <br/> |Egitto  <br/> |ar-EG  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Catalano  <br/> |Catalano  <br/> |ca-ES  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Cinese (semplificato)  <br/> |Cina  <br/> |zh-hans  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Cinese (Hong Kong)  <br/> |Cina  <br/> |zh-hk  <br/> |Sì, ma viene utilizzato il cinese (tradizionale) (zh-hant).  <br/> | Sì <br/> |Sì, ma viene utilizzato il cinese (tradizionale) (zh-hant).  <br/> |
-|Cinese (tradizionale)  <br/> |Taiwan  <br/> |zh-hant  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Croato<br/> |Croazia  <br/> |hr-HR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Ceco <br/> |Repubblica Ceca  <br/> |cs-CZ  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Danese  <br/> |Danimarca  <br/> |da-DK  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Olandese  <br/> |Paesi Bassi  <br/> |nl-NL  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Inglese  <br/> |Australia  <br/> |en-AU  <br/> |Sì, ma viene utilizzato l'inglese americano (en-US).  <br/> |Sì  <br/> |Sì, ma viene utilizzato l'inglese americano (en-US).  <br/> |
-|Inglese  <br/> |Canada  <br/> |en-CA  <br/> |Sì, ma viene utilizzato l'inglese americano (en-US).  <br/> |Sì  <br/> |Sì, ma viene utilizzato l'inglese americano (en-US).  <br/> |
-|Inglese  <br/> |India  <br/> |en-IN  <br/> |Sì, ma viene utilizzato l'inglese americano (en-US).  <br/> |Sì  <br/> |Sì, ma viene utilizzato l'inglese americano (en-US).  <br/> |
-|Inglese  <br/> |Regno Unito  <br/> |en-GB  <br/> |Sì, ma viene utilizzato l'inglese americano (en-US).  <br/> |Sì  <br/> |Sì, ma viene utilizzato l'inglese americano (en-US).  <br/> |
-|Inglese  <br/> |Stati Uniti  <br/> |en-US  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Finlandese  <br/> |Finlandia  <br/> |fi-FL  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Francese  <br/> |Canada  <br/> |fr-CA  <br/> |Sì, ma viene utilizzato il francese continentale (fr-FR).  <br/> |Sì  <br/> |Sì, ma viene utilizzato il francese continentale (fr-FR).  <br/> |
-|Francese  <br/> |Francia  <br/> |fr-FR  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Tedesco  <br/> |Germania  <br/> |de-DE  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Greco <br/> |Grecia  <br/> |el-GR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Ungherese <br/> |Ungheria  <br/> |hu-HU  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Indonesiano <br/> |Indonesia  <br/> |id-ID  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Italiano  <br/> |Italia  <br/> |it-IT  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Giapponese  <br/> |Giappone  <br/> |ja-JP  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Coreano  <br/> |Coreano  <br/> |ko-KR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Norvegese (Bokmål)  <br/> |Norvegia  <br/> |nb-NO  <br/> |Sì  <br/> |No  <br/> |No  <br/> |
-|Polacco  <br/> |Polonia  <br/> |pl-PL  <br/> |Sì  <br/> | Sì <br/> |No  <br/> |
-|Portoghese  <br/> |Brasile  <br/> |pt-BR  <br/> |Sì, ma viene utilizzato il portoghese continentale (pt-PT).  <br/> |Sì  <br/> |Sì  <br/> |
-|Portoghese  <br/> |Portogallo  <br/> |pt-PT  <br/> |Sì  <br/> |Sì  <br/> |Sì, ma viene utilizzato il portoghese brasiliano (pt-BR).  <br/> |
-|Rumeno<br/> |Romania  <br/> |ro-RO  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Russo  <br/> |Russia  <br/> |ru-RU  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Slovacco <br/> |Slovacchia  <br/> |sk-SK  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Sloveno <br/> |Slovenia  <br/> |sl-SI  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Spagnolo  <br/> |Spagna  <br/> |es-ES  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Spagnolo  <br/> |Messico  <br/> |es-MX  <br/> |Sì, ma viene utilizzato lo spagnolo continentale (es-ES).  <br/> |Sì  <br/> |Sì, ma viene utilizzato lo spagnolo continentale (es-ES).  <br/> |
-|Svedese  <br/> |Svezia  <br/> |sv-SE  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Tailandese <br/> |Thailandia  <br/> |th-TH  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Turco  <br/> |Turchia  <br/> |tr-TR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Vietnamita <br/> |Vietnam  <br/> |vi-VN  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
+|Arabo  |Egitto   |ar-EG   |Sì   |Sì   |No   |
+|Catalano   |Catalano   |ca-ES   |Sì   |Sì   |No   |
+|Cinese (semplificato)   |Cina  |zh-hans   |Sì   |Sì   |Sì   |
+|Cinese (Hong Kong)   |Cina   |zh-hk   |Sì, ma viene utilizzato il cinese (tradizionale) (zh-hant).  | Sì  |Sì, ma viene utilizzato il cinese (tradizionale) (zh-hant).   |
+|Cinese (tradizionale)   |Taiwan   |zh-hant   |Sì   |Sì   |No  |
+|Croato |Croazia   |hr-HR  |Sì  |Sì   |No   |
+|Ceco  |Repubblica Ceca   |cs-CZ   |Sì   |Sì   |No   |
+|Danese  |Danimarca   |da-DK  |Sì   |Sì   |No   |
+|Olandese   |Paesi Bassi   |nl-NL  |Sì   |Sì   |No   |
+|Inglese   |Australia   |en-AU   |Sì, ma viene utilizzato l'inglese americano (en-US).  |Sì  |Sì, ma viene utilizzato l'inglese americano (en-US). |
+|Inglese   |Canada   |en-CA   |Sì, ma viene utilizzato l'inglese americano (en-US).  |Sì  |Sì, ma viene utilizzato l'inglese americano (en-US).   |
+|Inglese   |India  |en-IN   |Sì, ma viene utilizzato l'inglese americano (en-US).   |Sì   |Sì, ma viene utilizzato l'inglese americano (en-US).  |
+|Inglese   |Regno Unito   |en-GB   |Sì, ma viene utilizzato l'inglese americano (en-US).   |Sì   |Sì, ma viene utilizzato l'inglese americano (en-US).   |
+|Inglese  |Stati Uniti   |en-US   |Sì  |Sì  |Sì  |
+|Finlandese   |Finlandia   |fi-FL  |Sì  |Sì  |No  |
+|Francese   |Canada   |fr-CA  |Sì, ma viene utilizzato il francese continentale (fr-FR).  |Sì  |Sì, ma viene utilizzato il francese continentale (fr-FR).  |
+|Francese   |Francia   |fr-FR  |Sì  |Sì  |Sì  |
+|Tedesco   |Germania   |de-DE   |Sì   |Sì  |Sì   |
+|Greco  |Grecia   |el-GR   |Sì   |Sì   |No   |
+|Ungherese  |Ungheria   |hu-HU   |Sì   |Sì  |No   |
+|Indonesiano  |Indonesia   |id-ID   |Sì   |Sì   |No  |
+|Italiano   |Italia   |it-IT   |Sì  |Sì   |Sì   |
+|Giapponese   |Giappone   |ja-JP   |Sì   |Sì   |Sì   |
+|Coreano   |Coreano   |ko-KR   |Sì  |Sì   |No   |
+|Norvegese (Bokmål)   |Norvegia  |nb-NO   |Sì   |No  |No   |
+|Polacco   |Polonia   |pl-PL   |Sì   | Sì  |No   |
+|Portoghese   |Brasile   |pt-BR   |Sì, ma viene utilizzato il portoghese continentale (pt-PT).   |Sì  |Sì  |
+|Portoghese  |Portogallo  |pt-PT   |Sì   |Sì   |Sì, ma viene utilizzato il portoghese brasiliano (pt-BR).   |
+|Rumeno |Romania   |ro-RO  |Sì   |Sì   |No   |
+|Russo  |Russia   |ru-RU  |Sì   |Sì   |No   |
+|Slovacco  |Slovacchia   |sk-SK  |Sì   |Sì  |No   |
+|Sloveno  |Slovenia  |sl-SI   |Sì   |Sì   |No   |
+|Spagnolo   |Spagna   |es-ES   |Sì   |Sì   |Sì   |
+|Spagnolo   |Messico   |es-MX   |Sì, ma viene utilizzato lo spagnolo continentale (es-ES).   |Sì   |Sì, ma viene utilizzato lo spagnolo continentale (es-ES).   |
+|Svedese   |Svezia   |sv-SE   |Sì   |Sì   |No   |
+|Tailandese  |Thailandia   |th-TH   |Sì   |Sì   |No   |
+|Turco   |Turchia   |tr-TR   |Sì   |Sì   |No   |
+|Vietnamita  |Vietnam   |vi-VN   |Sì   |Sì   |No   |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

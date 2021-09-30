@@ -1,5 +1,5 @@
 ---
-title: Pianificazione della capacità per il server Chat persistente Skype for Business Server 2015
+title: Pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -13,14 +13,14 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 7a850cd5-c789-4795-a8ff-083be21ae784
 description: 'Riepilogo: leggere questo argomento per informazioni sulla pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 430bceb547be9208348d61dc919ddb463f2d5ca2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d3ff8076a922d6242de0079239a3ff2c73b539a8
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58615572"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60012160"
 ---
-# <a name="capacity-planning-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificazione della capacità per il server Chat persistente Skype for Business Server 2015
+# <a name="capacity-planning-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015
  
 **Riepilogo:** Leggere questo argomento per informazioni sulla pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015.
   
@@ -31,11 +31,11 @@ La pianificazione della capacità è una parte importante della preparazione all
 Prima di leggere questa sezione, è necessario avere familiarità con le topologie di Persistent Chat. Per ulteriori informazioni, vedere [Plan Persistent Chat Server topology](topology.md).
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'aggiornamento di Microsoft Teams.](/microsoftteams/upgrade-start-here) Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
   
 ## <a name="persistent-chat-server-capacity-planning"></a>Pianificazione della capacità del server Chat persistente
 
-Le tabelle seguenti consentono di pianificare la capacità per il server Chat persistente modellando il modo in cui le varie impostazioni del server Chat persistente influiscono sulla capacità.
+Le tabelle seguenti consentono di pianificare la capacità per il server Chat persistente modellando il modo in cui varie impostazioni del server Chat persistente influiscono sulla capacità.
   
 - Pianificare la capacità per il numero di utenti
     
@@ -51,13 +51,11 @@ Utilizzare la tabella di esempio seguente per determinare il numero di utenti ch
   
 **Esempio di capacità massima del pool di server Chat persistente**
 
-|||
-|:-----|:-----|
-|Istanze del servizio Chat persistente attive  <br/> |4   <br/> |
-|Istanze del servizio Persistent Chat  <br/> |8 (può essere attivo solo un massimo di 4; 4 deve essere inattivo)  <br/> |
-|Utenti attivi connessi  <br/> |80,000  <br/> |
-|Totale utenti di cui è stato eseguito il provisioning  <br/> |150,000  <br/> |
-|Numero di endpoint  <br/> |120,000  <br/> |
+- Istanze del servizio Chat persistente attive: 4  <br/> 
+- Istanze del servizio Persistent Chat: 8 (un massimo di 4 può essere attivo; 4 devono essere inattive)  <br/>
+- Utenti attivi connessi: 80.000  <br/>
+- Totale utenti di cui è stato eseguito il provisioning: 150.000  <br/>
+- Numero di endpoint: 120.000  <br/>
    
 Nell'esempio precedente, il piano prevede il supporto del numero massimo di utenti consentito dal server Chat persistente: quattro server/istanze del servizio Chat persistente (possono avere altri quattro server passivi che eseguono il server Chat persistente per la disponibilità elevata e il ripristino di emergenza) e 20.000 utenti per server, per un totale di 80.000 utenti attivi.
   
@@ -67,36 +65,36 @@ La tabella di esempio seguente consente di pianificare la gestione dell'accesso 
   
 **Esempio di gestione dell'accesso alle chat room**
 
-||**Chat room di piccole dimensioni**|**Chat di medie dimensioni**|**Chat room di grandi dimensioni**|**Totale**|
+|&nbsp;|Chat room di piccole dimensioni|Chat di medie dimensioni|Chat room di grandi dimensioni|Totale|
 |:-----|:-----|:-----|:-----|:-----|
-|Dimensioni delle chat room (numero di utenti connessi)  <br/> |30 per sala  <br/> |150 per camera  <br/> |16.000 per camera  <br/> ||
-|Chat  <br/> |32,000  <br/> |1,067  <br/> |10   <br/> |33,077  <br/> |
-|% di sale auditorium  <br/> |1%  <br/> |1%  <br/> |50%  <br/> ||
-|% di sale aperte  <br/> |3%  <br/> |3%  <br/> |50%  <br/> ||
-|Sale aperte (nessuna appartenenza esplicita)  <br/> |960  <br/> |32  <br/> |5   <br/> |997  <br/> |
-|Sale non aperte (sale regolari con appartenenza esplicita)  <br/> |31,040  <br/> |1.035  <br/> |5   <br/> |32,080  <br/> |
-|Sale auditorium (voce relatori aggiuntivi)  <br/> |0  <br/> |32  <br/> |5   <br/> ||
-|Sale gestite dall'appartenenza diretta  <br/> |50%  <br/> |10%  <br/> |0%  <br/> ||
-|Chat gestite per gruppi di utenti  <br/> |50%  <br/> |90%  <br/> |100%  <br/> ||
-|Gruppi di utenti nell'elenco di appartenenze di ogni chat room per le sale aperte (non specificato esplicitamente)  <br/> |0  <br/> |0  <br/> |0  <br/> ||
-|Utenti nell'elenco di appartenenze di ogni chat room per le chat non aperte  <br/> |30  <br/> |150  <br/> |16,000  <br/> ||
-|Gruppi di utenti nell'elenco di appartenenze di ogni chat room per le chat non aperte  <br/> |3   <br/> |5   <br/> |10   <br/> ||
-|Utenti e gruppi di utenti nell'elenco dei manager di ogni chat room (per sale aperte e non aperte)  <br/> |6   <br/> |6   <br/> |6   <br/> ||
-|Utenti e gruppi di utenti in ogni elenco di relatori di chat auditorium (per sale aperte e non aperte)  <br/> |6   <br/> |6   <br/> |6   <br/> ||
-|Entità di appartenenza basata sull'utente in tutte le sale non aperte  <br/> |465,600  <br/> |15,520  <br/> |-  <br/> ||
-|Entità di appartenenza basata su gruppi di utenti in tutte le sale non aperte  <br/> |46,560  <br/> |4656  <br/> |50  <br/> ||
-|Entità basate su utenti e gruppi di utenti in tutte le chat room auditorium  <br/> |0  <br/> |192  <br/> |50  <br/> ||
-|Entità manager basate su utenti e gruppi di utenti in tutti gli elenchi dei manager delle chat room  <br/> |192,000  <br/> |6,400  <br/> |60  <br/> ||
-|Utenti attivi per chat  <br/> |30  <br/> |150  <br/> |16,000  <br/> ||
-|Chat per utente  <br/> |12   <br/> |2   <br/> |2   <br/> |16   <br/> |
-|Gruppi di utenti nell'elenco di appartenenze di ogni chat room  <br/> |10   <br/> |10   <br/> |15   <br/> ||
-|Chat gestite per gruppi di utenti  <br/> |50%  <br/> |50%  <br/> |50%  <br/> ||
-|Entità di appartenenza basata sui gruppi di utenti in tutte le chat  <br/> |155,200  <br/> |5173  <br/> |68  <br/> ||
-|Entità di appartenenza basata sugli utenti in tutte le chat  <br/> |465,600  <br/> |77,600  <br/> |72,000  <br/> ||
-|Utenti e gruppi di utenti in ogni elenco dei gestori delle chat, dei relatori delle chat e degli ambiti  <br/> |6   <br/> |6   <br/> |6   <br/> ||
-|Utenti e gruppi di utenti in tutti gli elenchi di gestione, relatore e ambito di tutte le chat room  <br/> |192,000  <br/> |6400  <br/> |60  <br/> ||
-|Voci di controllo di accesso  <br/> |704,160  <br/> |26,768  <br/> |160  <br/> |731,088  <br/> |
-|Voci di controllo di accesso massime  <br/> ||||2,000,000  <br/> |
+|Dimensioni delle chat room (numero di utenti connessi)   |30 per sala   |150 per camera   |16.000 per camera   ||
+|Chat   |32,000   |1,067   |10    |33,077   |
+|% di sale auditorium   |1%   |1%   |50%   ||
+|% di sale aperte   |3%   |3%   |50%   ||
+|Sale aperte (nessuna appartenenza esplicita)   |960   |32   |5   |997   |
+|Sale non aperte (sale regolari con appartenenza esplicita)   |31,040   |1.035   |5   |32,080   |
+|Sale auditorium (voce relatori aggiuntivi)   |0   |32   |5   ||
+|Sale gestite dall'appartenenza diretta   |50%   |10%   |0%   ||
+|Chat gestite per gruppi di utenti   |50%   |90%   |100%   ||
+|Gruppi di utenti nell'elenco di appartenenze di ogni chat room per le sale aperte (non specificato esplicitamente)   |0   |0   |0   ||
+|Utenti nell'elenco di appartenenze di ogni chat room per le chat non aperte   |30   |150   |16,000   ||
+|Gruppi di utenti nell'elenco di appartenenze di ogni chat room per le chat non aperte   |3    |5   |10    ||
+|Utenti e gruppi di utenti nell'elenco dei manager di ogni chat room (per sale aperte e non aperte)   |6    |6    |6    ||
+|Utenti e gruppi di utenti in ogni elenco di relatori di chat auditorium (per sale aperte e non aperte)   |6    |6    |6    ||
+|Entità di appartenenza basata sull'utente in tutte le sale non aperte   |465,600   |15,520   |-   ||
+|Entità di appartenenza basata su gruppi di utenti in tutte le sale non aperte   |46,560   |4656   |50   ||
+|Entità basate su utenti e gruppi di utenti in tutte le chat room auditorium   |0   |192   |50   ||
+|Entità manager basate su utenti e gruppi di utenti in tutti gli elenchi dei manager delle chat room   |192,000   |6,400   |60   ||
+|Utenti attivi per chat   |30   |150   |16,000   ||
+|Chat per utente   |12    |2   |2   |16    |
+|Gruppi di utenti nell'elenco di appartenenze di ogni chat room   |10    |10    |15    ||
+|Chat gestite per gruppi di utenti   |50%   |50%   |50%   ||
+|Entità di appartenenza basata sui gruppi di utenti in tutte le chat   |155,200   |5173   |68   ||
+|Entità di appartenenza basata sugli utenti in tutte le chat   |465,600   |77,600   |72,000   ||
+|Utenti e gruppi di utenti in ogni elenco dei gestori delle chat, dei relatori delle chat e degli ambiti   |6    |6    |6    ||
+|Utenti e gruppi di utenti in tutti gli elenchi di gestione, relatore e ambito di tutte le chat room   |192,000   |6400   |60   ||
+|Voci di controllo di accesso   |704,160   |26,768   |160   |731,088   |
+|Voci di controllo di accesso massime   ||||2,000,000   |
    
 Nell'esempio precedente, quando si distribuiscono i server Chat persistente in base alle linee guida consigliate, possono gestire fino a 80.000 utenti attivi in un pool a quattro server con la conformità abilitata.
   
@@ -115,30 +113,30 @@ Per ogni chat room, la tabella di pianificazione della capacità precedente spec
   
 ### <a name="plan-capacity-for-managing-chat-room-access-by-invitation"></a>Pianificare la capacità per la gestione dell'accesso alle chat room tramite invito
 
-È possibile utilizzare la seguente tabella di pianificazione della capacità per comprendere il numero di inviti creati e archiviati dal server Chat persistente nel database di Persistent Chat quando è configurato per l'invio di inviti. È possibile gestire gli inviti  nella categoria utilizzando la pagina Impostazioni categoria chat room nel Pannello di controllo di Skype for Business Server oppure utilizzando il cmdlet **Windows PowerShell, set-csPersistentChatCategory.** È possibile gestire gli inviti in una chat room (in  linea con quanto la categoria consente) utilizzando la pagina Gestione chat avviata dal client Skype for Business oppure utilizzando un cmdlet di Windows PowerShell, **set-csPersistentChatRoom.**
+È possibile utilizzare la seguente tabella di pianificazione della capacità per comprendere il numero di inviti creati e archiviati dal server Chat persistente nel database di Persistent Chat quando è configurato per l'invio di inviti. È possibile gestire gli inviti  nella categoria utilizzando la pagina Impostazioni categoria chat room nel Pannello di controllo di Skype for Business Server oppure utilizzando il cmdlet **Windows PowerShell, set-csPersistentChatCategory.** È possibile gestire gli inviti in una chat room ( in  linea con quanto la categoria consente) utilizzando la pagina Gestione chat avviata dal client Skype for Business oppure utilizzando un cmdlet di Windows PowerShell, **set-csPersistentChatRoom**.
   
 I dati di esempio nella tabella seguente presuppongono che nella pagina **Impostazioni**  chat room per il 50% di tutte le chat room l'opzione Inviti sia impostata su **Sì.**
   
 > [!IMPORTANT]
-> Se il valore calcolato per il numero di inviti generati dal server supera 1 milione, le prestazioni del server potrebbero peggiorare in modo significativo. Per evitare questo problema, assicurarsi di ridurre al minimo il numero di chat room configurate per inviare inviti o limitare il numero di utenti che possono partecipare alle chat room configurate per l'invio di inviti. 
+> Se il valore calcolato per il numero di inviti generati dal server supera 1 milione, le prestazioni del server potrebbero peggiorare in modo significativo. Per evitare questo problema, assicurarsi di ridurre al minimo il numero di chat configurate per inviare inviti o limitare il numero di utenti che possono partecipare alle chat room configurate per l'invio di inviti. 
   
 **Esempio di accesso alle chat room tramite invito**
 
-||**Chat room di piccole dimensioni**|**Chat di medie dimensioni**|**Chat room di grandi dimensioni**|**Totale**|
+|&nbsp;|Chat room di piccole dimensioni|Chat di medie dimensioni|Chat room di grandi dimensioni|Totale|
 |:-----|:-----|:-----|:-----|:-----|
-|Utenti che possono accedere alla chat room  <br/> |30 per sala  <br/> |150 per camera  <br/> |16.000 per camera  <br/> ||
-|Percentuale di sale con inviti  <br/> |50%  <br/> |50%  <br/> |50%  <br/> ||
-|Chat configurate per l'invio di inviti  <br/> |16,000  <br/> |533  <br/> |5   <br/> ||
-|Utenti che possono accedere alla chat  <br/> |60  <br/> |225  <br/> |16,000  <br/> ||
-|Inviti generati dal server Chat persistente  <br/> |960,000  <br/> |120,000  <br/> |80,000  <br/> |1,160,000  <br/> |
-|Numero massimo consentito di inviti  <br/> ||||2,000,000  <br/> |
-|Modello 1 - Iniziare con il numero previsto di messaggi per sala al giorno  <br/> |||||
-|Frequenza chat per sala (al giorno)  <br/> |50  <br/> |500  <br/> |100  <br/> |650  <br/> |
-|Frequenza chat (al secondo) in tutte le chat room  <br/> |55.56  <br/> |18.52  <br/> |0.03  <br/> |74  <br/> |
-|Modello 2 - Iniziare con il numero di messaggi pubblicati per utente al giorno  <br/> |||||
-|Frequenza chat per utente al giorno  <br/> |15   <br/> |5   <br/> |0.1  <br/> |20  <br/> |
-|Frequenza chat per sala (al giorno)  <br/> |38  <br/> |375  <br/> |800  <br/> |1,213  <br/> |
-|Frequenza chat (al secondo) in tutte le chat room  <br/> |41.67  <br/> |13.89  <br/> |0.28  <br/> |56  <br/> |
+|Utenti che possono accedere alla chat room   |30 per sala   |150 per camera   |16.000 per camera   ||
+|Percentuale di sale con inviti   |50%   |50%   |50%   ||
+|Chat configurate per l'invio di inviti   |16,000   |533   |5   ||
+|Utenti che possono accedere alla chat   |60   |225   |16,000   ||
+|Inviti generati dal server Chat persistente   |960,000   |120,000   |80,000   |1,160,000   |
+|Numero massimo consentito di inviti   ||||2,000,000   |
+|Modello 1 - Iniziare con il numero previsto di messaggi per sala al giorno   |||||
+|Frequenza chat per sala (al giorno)   |50   |500   |100   |650   |
+|Frequenza chat (al secondo) in tutte le chat room   |55.56   |18.52   |0.03   |74   |
+|Modello 2 - Iniziare con il numero di messaggi pubblicati per utente al giorno   |||||
+|Frequenza chat per utente al giorno   |15    |5   |0.1   |20   |
+|Frequenza chat per sala (al giorno)   |38   |375   |800   |1,213   |
+|Frequenza chat (al secondo) in tutte le chat room   |41.67   |13.89   |0.28   |56   |
    
 ### <a name="plan-capacity-for-persistent-chat-server-performance"></a>Pianificare la capacità per le prestazioni del server Chat persistente
 
@@ -146,39 +144,37 @@ Nella tabella seguente viene descritto il modello utente per il server Chat pers
   
 **Modello utente per le prestazioni del server Chat persistente**
 
-|||
-|:-----|:-----|
-|Numero di utenti attivi connessi  <br/> |80,000  <br/> |
-|Numero di istanze del servizio Server Chat persistente  <br/> |4   <br/> |
-|Numero di utenti di chat di piccole dimensioni  <br/> |30 utenti  <br/> |
-|Numero di utenti di chat di medie dimensioni  <br/> |150 utenti  <br/> |
-|Numero di utenti di chat di grandi dimensioni  <br/> |16.000 utenti  <br/> |
-|Numero totale di chat  <br/> |33,077  <br/> |
-|Numero di chat di piccole dimensioni  <br/> |32,000  <br/> |
-|Numero di chat di medie dimensioni  <br/> |1,067  <br/> |
-|Numero di chat di grandi dimensioni  <br/> |10   <br/> |
-|Numero totale di chat per utente  <br/> |16   <br/> |
-|Numero di chat di piccole dimensioni per utente  <br/> |12   <br/> |
-|Numero di chat di medie dimensioni per utente  <br/> |2   <br/> |
-|Numero di chat di grandi dimensioni per utente  <br/> |2   <br/> |
-|Numero di chat room unite per utente  <br/> |24  <br/> |
-|Frequenza di partecipazione di punta  <br/> |10/secondo  <br/> |
-|Frequenza di chat totale  <br/> |24/secondo  <br/> |
-|Frequenza di chat per chat di piccole dimensioni  <br/> |22,22/secondo  <br/> |
-|Frequenza di chat per chat di medie dimensioni  <br/> |1,67/secondo  <br/> |
-|Frequenza di chat per chat di grandi dimensioni  <br/> |~0,15/secondo  <br/> |
-|Percentuale di chat configurate per l'invio di inviti  <br/> |50%  <br/> |
-|Percentuale di appartenenza diretta  <br/> |50%  <br/> |
-|Percentuale di appartenenza a gruppi  <br/> |50%  <br/> |
-|Numero medio di affiliazioni predecessore in Servizi di dominio Active Directory  <br/> |100 - 200  <br/> |
-|Numero di contatti sottoscritti per utente  <br/> |80  <br/> |
-|Numero medio di endpoint per utente  <br/> |1.5  <br/> |
-|Numero medio di chat visibili per endpoint  <br/> |1.5  <br/> |
-|Numero medio di chat visibili per utente  <br/> |2,25 (50% per 1 camera e 50% per 2 sale); Fino a 6 sale aperte, una per monitor  <br/> |
-|Numero di partecipanti sottoposti a polling per intervallo  <br/> |25 per chat visibile  <br/> |
-|Durata dell'intervallo di polling  <br/> |5 minuti  <br/> |
-|Numero di partecipanti sottoposti a polling al secondo  <br/> |15.000  <br/> |
-|Numero di modifiche delle informazioni sulla presenza all'ora per utente  <br/> |6   <br/> |
-|Numero di modifiche delle informazioni sulla presenza al secondo  <br/> |133.33  <br/> |
+- Numero di utenti attivi connessi: 80.000  <br/>
+- Numero di istanze del servizio Server Chat persistente: 4  <br/>
+- Dimensioni delle chat room di piccole dimensioni: 30 utenti  <br/> 
+- Dimensioni delle chat room medie: 150 utenti  <br/>
+- Dimensioni delle chat room di grandi dimensioni: 16.000 utenti  <br/>
+- Numero totale di chat room: 33.077  <br/> 
+- Numero di chat di piccole dimensioni: 32.000  <br/> 
+- Numero di chat di medie dimensioni: 1.067  <br/> 
+- Numero di chat di grandi dimensioni: 10  <br/> 
+- Numero totale di chat room per utente: 16  <br/> 
+- Numero di chat di piccole dimensioni per utente: 12  <br/> 
+- Numero di chat di medie dimensioni per utente: 2  <br/> 
+- Numero di chat di grandi dimensioni per utente: 2  <br/> 
+- Numero di chat room unite per utente: 24  <br/>
+- Frequenza di join di picco: 10/secondo  <br/> 
+- Frequenza chat totale: 24/secondo  <br/> 
+- Frequenza chat per chat di piccole dimensioni: 22,22/secondo  <br/> 
+- Frequenza chat per chat di medie dimensioni: 1,67/secondo  <br/> 
+- Frequenza di chat per chat di grandi dimensioni: ~0,15/secondo  <br/> 
+- Percentuale di chat room configurate per gli inviti: 50%  <br/>
+- Percentuale di appartenenze dirette: 50%  <br/>
+- Percentuale di appartenenze ai gruppi: 50%  <br/> 
+- Numero medio di affiliazioni predecessore in Servizi di dominio Active Directory: 100 - 200  <br/>
+- Numero di contatti sottoscritti per utente: 80  <br/> 
+- Numero medio di endpoint per utente: 1,5  <br/> 
+- Numero medio di chat visibili per endpoint: 1,5  <br/> 
+- Numero medio di chat visibili per utente: 2,25 (50% per 1 sala e 50% per 2 sale); Fino a 6 sale aperte, una per monitor  <br/> 
+- Numero di partecipanti di cui è stato eseguito il polling per intervallo: 25 per chat visibile  <br/> 
+- Durata dell'intervallo di polling: 5 minuti  <br/> 
+- Numero di partecipanti a cui è stato eseguito il polling al secondo: 15.000  <br/>
+- Numero di modifiche di presenza all'ora per utente: 6  <br/> 
+- Numero di modifiche di presenza al secondo: 133,33  
    
 

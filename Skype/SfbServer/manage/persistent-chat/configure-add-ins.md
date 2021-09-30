@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c1037909-0750-411a-98c1-3a327eed4ae8
 description: 'Riepilogo: informazioni su come configurare i componenti aggiuntivi per le chat room del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: f6ff42e57f72a6fa875e8123af91caa7f4e3efc0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: ab2ccbe3c9f23a7397ecdf7510da63bbd84b9d95
+ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599981"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "60013390"
 ---
 # <a name="configure-add-ins-for-persistent-chat-rooms-in-skype-for-business-server-2015"></a>Configurare i componenti aggiuntivi per le chat room di Persistent Chat Skype for Business Server 2015
  
@@ -29,7 +29,7 @@ I componenti aggiuntivi vengono utilizzati per estendere l'esperienza in sala as
  Prima che gli utenti possano visualizzare un componente aggiuntivo nel client, è necessario aggiungerlo all'elenco dei componenti aggiuntivi registrati e i responsabili o i creatori delle chat room devono associare le chat room al componente aggiuntivo.
   
 > [!NOTE]
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
 
 ## <a name="configure-add-ins-for-chat-rooms-by-using-the-control-panel"></a>Configurare i componenti aggiuntivi per le chat room tramite il Pannello di controllo
 
@@ -71,7 +71,7 @@ Per configurare i componenti aggiuntivi per le chat room tramite il Pannello di 
 
 È possibile creare un nuovo componente aggiuntivo utilizzando il cmdlet **New-CsPersistentChatAddin.**
   
-Ad esempio, il comando seguente crea un nuovo componente aggiuntivo (con il nome ITPersistentChatAddin) per il pool atl-cs-001.contoso.com. Il parametro URL e il valore del parametro specificano il percorso della pagina Web http://atl-cs-001.contoso.com/itchat del componente aggiuntivo:
+Ad esempio, il comando seguente crea un nuovo componente aggiuntivo (con il nome ITPersistentChatAddin) per il `atl-cs-001.contoso.com` pool. Il parametro URL e il valore del parametro specificano il percorso della pagina Web `http://atl-cs-001.contoso.com/itchat` del componente aggiuntivo:
   
 ```PowerShell
 New-CsPersistentChatAddin -Name "ITPersistentChatAddin" -PersistentChatPoolFqdn "atl-cs-001.contoso.com" -Url "http://atl-cs-001.contoso.com/itchat"
@@ -79,7 +79,7 @@ New-CsPersistentChatAddin -Name "ITPersistentChatAddin" -PersistentChatPoolFqdn 
 
 ### <a name="configure-settings-for-an-existing-add-in"></a>Configurare le impostazioni per un componente aggiuntivo esistente
 
-È possibile configurare le impostazioni per un componente aggiuntivo esistente utilizzando il cmdlet **Set-CsPersistentChatAddIn.** Ad esempio, il comando seguente modifica l'URL assegnato al componente aggiuntivo di Persistent Chat ITPersistentChatAddin. In questo caso, l'URL viene modificato in http://atl-cs-001.contoso.com/itchat2:
+È possibile configurare le impostazioni per un componente aggiuntivo esistente utilizzando il cmdlet **Set-CsPersistentChatAddIn.** Ad esempio, il comando seguente modifica l'URL assegnato al componente aggiuntivo di Persistent Chat ITPersistentChatAddin. In questo caso, l'URL viene modificato in `http://atl-cs-001.contoso.com/itchat2` :
   
 ```PowerShell
 Set-CsPersistentChatAddin -Identity "atl-cs-001.contoso.com\ITPersistentChatAddin" -Url "http://atl-cs-001.contoso.com/itchat2"
@@ -95,7 +95,7 @@ Get-CsPersistentChatAddin
 
 ### <a name="remove-an-add-in"></a>Rimuovere un componente aggiuntivo
 
-È possibile rimuovere un componente aggiuntivo utilizzando il cmdlet **Remove-CsPersistentChatAddIn.** Ad esempio, il comando seguente rimuove il componente aggiuntivo di Persistent Chat ITChatAddin trovato nel pool atl-cs-001.contoso.com:
+È possibile rimuovere un componente aggiuntivo utilizzando il cmdlet **Remove-CsPersistentChatAddIn.** Ad esempio, il comando seguente rimuove il componente aggiuntivo di Persistent Chat ITChatAddin trovato nel `atl-cs-001.contoso.com` pool:
   
 ```PowerShell
 Remove-CsPersistentChatAddin -Identity "atl-cs-001.contoso.com\ITChatAddin"
