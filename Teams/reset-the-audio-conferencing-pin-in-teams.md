@@ -21,13 +21,13 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
-description: Informazioni su come reimpostare il PIN di audioconferenza di un utente Microsoft Teams informazioni importanti sui PIN.
-ms.openlocfilehash: 206d625fdf656af5c4b30fdcc9f87dae760807cd
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: Informazioni su come reimpostare il PIN di audioconferenza di un utente in Microsoft Teams informazioni importanti sui PIN.
+ms.openlocfilehash: 6e2e25f05be1b2e14a41d8a102e05f735ef6c09b
+ms.sourcegitcommit: 5eb5acd7910724f7f4a598ecc28b003e5bbe5ea5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58730095"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "60007776"
 ---
 # <a name="reset-the-audio-conferencing-pin-in-microsoft-teams"></a>Reimpostare il PIN di audioconferenza in Microsoft Teams
 
@@ -37,7 +37,7 @@ Le riunioni possono essere avviate quando un utente autenticato partecipa usando
 
 ## <a name="reset-a-users-pin"></a>Reimpostare il PIN dell'utente
 
-![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+![Icona che mostra il logo di Microsoft Teams.](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nel riquadro di spostamento sinistro fare clic **su Utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -52,11 +52,12 @@ Le riunioni possono essere avviate quando un utente autenticato partecipa usando
    
 ## <a name="have-a-user-reset-their-own-pin"></a>Fare in modo che un utente resetti il proprio PIN
 
-1. Fare in modo che l'utente vada a [https://admin0m.online.lync.com/lscp/usp/pstnconferencing](https://admin0m.online.lync.com/lscp/usp/pstnconferencing) .
+1. Fare in modo che l'utente vada a [https://dialin.teams.microsoft.com/usp](https://dialin.teams.microsoft.com/usp) .
 2. Fare clic **su Reimposta PIN**. 
 
 > [!NOTE]
-> Per GCCH, vai a: https://webdir2g.online.gov.skypeforbusiness.us/lscp/usp/pstnconferencing .
+> Per GCCH, vai a: https://dialin.cpc.gov.teams.microsoft.us/usp .
+> Per DoD vai a: https://dialin.cpc.dod.teams.microsoft.us/usp .
 
 ## <a name="what-else-should-you-know-about-pins"></a>Quali sono le altre informazioni utili sul PIN?
 
