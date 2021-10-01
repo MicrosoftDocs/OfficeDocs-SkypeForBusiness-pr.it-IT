@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare le code di chiamata per le piccole imprese in Microsoft 365 Business Voice.
-ms.openlocfilehash: 3a67771127d5c359d798dd5de688d4f26b3cf39e
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 527d0512ae7e58e2141fcc913ba633ea991cc6e5
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58732118"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60045742"
 ---
 # <a name="create-a-call-queue---small-business-tutorial"></a>Creare una coda di chiamata - Esercitazione sulle piccole imprese
 
@@ -53,7 +53,7 @@ Questo video illustra come creare una coda di chiamata in Teams.
 
 Ottenere alcune [Sistema telefonico - Licenze utente virtuale](../teams-add-on-licensing/virtual-user.md) se non sono già disponibili. Ottenere una per ogni coda di chiamata e operatore automatico che si prevede di configurare. Queste licenze sono gratuite, quindi ti consigliamo di ottenere qualche ulteriore prodotto nel caso in cui decidi di apportare modifiche alla configurazione in futuro.
 
-Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita per restituire una chiamata al cliente, è consigliabile impostare l'ID chiamante per gli agenti di chiamata sul numero di telefono principale o sul numero di un operatore automatico appropriato. Per altre informazioni, vedere Gestire i criteri [id chiamante Microsoft Teams](../caller-id-policies.md) informazioni.
+Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita per restituire una chiamata al cliente, è consigliabile impostare l'ID chiamante per gli agenti di chiamata sul numero di telefono principale o sul numero di un operatore automatico appropriato. Per altre informazioni, vedere Gestire i criteri id [chiamante Microsoft Teams](../caller-id-policies.md) informazioni.
 
 <a name="steps"></a>
 
@@ -65,7 +65,7 @@ Quando si crea una coda di chiamata, è possibile aggiungere singoli utenti alla
 
 Per creare un team
 
-1. Prima di **tutto, Teams** sul lato sinistro dell'app, quindi fare clic su Partecipa o crea un **team** nella parte inferiore dell'elenco dei team.
+1. Prima di tutto, **Teams** sul lato sinistro dell'app, quindi fare clic su Partecipa o crea un **team** nella parte inferiore dell'elenco dei team.
 
 2. Quindi fare clic **su Crea team** (prima scheda, angolo in alto a sinistra).
 
@@ -85,7 +85,7 @@ Verrà quindi aggiunto un canale da usare con la coda di chiamata.
 
 Per aggiungere un canale
 
-1. In Teams trovare il team appena creato, fare clic su **Altre** opzioni (...), quindi fare clic **su Aggiungi canale.**
+1. In Teams trovare il team appena creato, fare clic su **Altre opzioni** (...), quindi fare clic **su Aggiungi canale.**
 
 2. Digitare un nome e una descrizione per il canale.
 
@@ -96,13 +96,13 @@ Per aggiungere un canale
 
 # <a name="step-2brresource-accounts"></a>[Passaggio 2 <br> Account delle risorse](#tab/resource-account)
 
-Per ogni coda di chiamata creata è necessario un account della risorsa. È simile a un account utente, ad eccezione del fatto che l'account è associato a un operatore automatico o a una coda di chiamata invece che a una persona. In questo passaggio verrà creato l'account, gli verrà assegnata una licenza *Microsoft 365 Sistema telefonico - Utente* virtuale e quindi verrà utilizzata per iniziare a creare la coda di chiamata.
+Per ogni coda di chiamata creata è necessario un account della risorsa. È simile a un account utente, ad eccezione del fatto che l'account è associato a un operatore automatico o a una coda di chiamata invece che a una persona. In questo passaggio creeremo l'account, gli assegniamo una licenza *Microsoft 365 Sistema telefonico - Utente* virtuale e quindi la useremo per iniziare a creare la coda di chiamata.
 
 ### <a name="create-a-resource-account"></a>Creare un account della risorsa
 
 È possibile creare un account delle risorse nell'Teams di amministrazione.
 
-1. Nell'Teams di amministrazione espandere **Impostazioni a** livello di organizzazione e quindi fare clic su Account **risorse.**
+1. Nell'Teams di amministrazione espandere **Voce** e quindi fare clic su **Account risorse.**
 
 2. Fare clic su **Aggiungi**.
 

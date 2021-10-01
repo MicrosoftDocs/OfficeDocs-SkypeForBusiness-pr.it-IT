@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: "Informazioni su come visualizzare un elenco di utenti dell'organizzazione abilitati per le conferenze telefoniche con accesso esterno dall'Microsoft Teams. "
-ms.openlocfilehash: 7d6c77eaefe3d3247e8b950cfffff156606db008
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 7b49dec0b73385ce09d906a128a47ddd4c723694
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58579590"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60045882"
 ---
 # <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-microsoft-teams"></a>Visualizzare un elenco di utenti abilitati per le audioconferenze in Microsoft Teams
 
@@ -40,7 +40,6 @@ Dopo aver abilitato Microsoft Teams utenti dell'organizzazione per le audioconfe
 
 - Nel riquadro Microsoft Teams di amministrazione fare clic su Utenti nel riquadro **di spostamento sinistro.**
 
-
 ## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?
 
 - Quando si visualizza l'elenco degli utenti abilitati, è possibile selezionare un utente nell'elenco per modificare le impostazioni di audioconferenza per tale utente.
@@ -52,13 +51,13 @@ Dopo aver abilitato Microsoft Teams utenti dell'organizzazione per le audioconfe
     
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
-Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che può semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
+Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
     
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-Per altre informazioni su Windows PowerShell, vedere [Riferimenti su PowerShell in Microsoft Teams](/powershell/module/teams/?view=teams-ps).
+Per altre informazioni su Windows PowerShell, vedere [Riferimenti su PowerShell in Microsoft Teams](/powershell/module/teams/?view=teams-ps&preserve-view=true).
     
 ## <a name="related-topics"></a>Argomenti correlati
 

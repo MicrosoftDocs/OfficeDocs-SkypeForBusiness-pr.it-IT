@@ -22,12 +22,12 @@ appliesto:
 ms.reviewer: ''
 description: Informazioni su come personalizzare i criteri di messaggistica protetta per Microsoft Teams che possono includere conferme di lettura e notifiche di priorità.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 72a0ab4ebce59a9fa65ec67b413892afa0b1e045
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: ededfabcca1ab61ec822f201502658f4d8ac498a
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58727245"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60045518"
 ---
 # <a name="secure-messaging-for-healthcare-organizations"></a>Messaggistica protetta per le organizzazioni del settore sanitario
 
@@ -37,9 +37,9 @@ I criteri di messaggistica vengono usati per controllare quali caratteristiche d
 
 I criteri possono essere gestiti facilmente [nell'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com) accedendo con credenziali di amministratore e scegliendo **Criteri di messaggistica** nel riquadro di spostamento sinistro.
 
- ![Screenshot della pagina Criteri di messaggistica.](../../media/hc-messaging-policy-admin-center.png)
-
-Per modificare i criteri di messaggistica predefiniti esistenti per l'organizzazione, fare clic su **Globale (impostazione predefinita a livello di organizzazione)** e quindi apportare le modifiche desiderate. Per creare nuovi criteri di messaggistica personalizzati, fare clic su **Aggiungi** e quindi selezionare le impostazioni. Al termine, scegliere **Salva**.
+ :::image type="content" source="../../media/hc-messaging-policy-admin-center-new.png" alt-text="Screenshot della pagina Criteri di messaggistica." lightbox="../../media/hc-messaging-policy-admin-center-new.png":::
+ 
+ Per modificare i criteri di messaggistica predefiniti esistenti per l'organizzazione, fare clic su **Globale (impostazione predefinita a livello di organizzazione)** e quindi apportare le modifiche desiderate. Per creare nuovi criteri di messaggistica personalizzati, fare clic su **Aggiungi** e quindi selezionare le impostazioni. Al termine, scegliere **Salva**.
 
 ![Screenshot delle impostazioni dei criteri di messaggistica.](../../media/hc-messaging-policy.png)
 

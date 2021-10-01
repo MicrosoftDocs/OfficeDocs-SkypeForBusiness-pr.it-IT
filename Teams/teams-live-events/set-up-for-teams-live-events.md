@@ -1,7 +1,7 @@
 ---
 title: Configurare gli eventi live in Microsoft Teams
-author: cichur
-ms.author: v-cichur
+author: serdarsoysal
+ms.author: serdars
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -20,12 +20,12 @@ description: Configurare gli eventi live in Teams, tra cui configurare la rete, 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f33490fdccbb67a000278d1e9085b0305204c8f5
-ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
+ms.openlocfilehash: 4d9e21872adb0fb0e34280d29fe928ea3ac056da
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "59432328"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60046192"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi live in Microsoft Teams
 
@@ -50,16 +50,16 @@ I criteri per gli eventi live consentono di controllare chi nell'organizzazione 
 
 <a name="bkcreatepolicy"> </a>
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Criteri eventi**  >  **live riunioni.**
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare **alla** scheda Criteri gestione eventi  >  **live**  >   riunioni.
 2. Eseguire una delle opzioni seguenti:
 
     - Se si vuole modificare il criterio predefinito esistente, scegliere **Globale (predefinito a livello di organizzazione)**.
-    - Se si vuole creare un nuovo criterio personalizzato, scegliere **Aggiungi**.
+    - Se si vuole creare un nuovo criterio personalizzato, scegliere **+Aggiungi**.
     - Se si vuole modificare un criterio personalizzato, selezionare il criterio e quindi scegliere **Modifica**.
 
     Ecco le impostazioni che è possibile modificare per soddisfare le esigenze dell'organizzazione.
 
-    ![Schermata delle impostazioni dei criteri per gli eventi live.](../media/teams-live-events-policies.png "Screenshot dell'impostazione dei criteri per gli eventi live nell'interfaccia di amministrazione di Microsoft Teams.")
+    ![Schermata delle impostazioni dei criteri per gli eventi live.](../media/teams-live-events-policies-new.png "Screenshot dell'impostazione dei criteri per gli eventi live nell'interfaccia di amministrazione di Microsoft Teams.")
 
 |Impostazione  |Descrizione  |
 |---------|---------|
@@ -93,7 +93,7 @@ Per consentire agli utenti di pianificare eventi prodotti con un'app o un dispos
 
 Per la riproduzione di video di eventi live viene usato lo streaming a bitrate adattivo (ABR), ma si tratta di un flusso unicast, vale a dire che ogni spettatore riceve un proprio flusso video da Internet. Quando si trasmettono video o eventi live a moltissimi utenti dell'organizzazione, la larghezza di banda Internet usata dagli spettatori può essere considerevole. Per le organizzazioni che vogliono ridurre il traffico Internet per gli eventi live, le soluzioni per gli eventi live sono integrate con le offerte di reti definite dal software (SDN) o reti per la distribuzione di contenuti aziendali (eCDN) dei partner di fiducia di Microsoft. Queste piattaforme SDN/eCDN consentono alle organizzazioni di ottimizzare la larghezza di banda della rete senza sacrificare le esperienze di visualizzazione degli utenti finali. I partner possono contribuire a garantire una distribuzione più scalabile ed efficiente dei video nell'intera rete aziendale.
 
-**Acquistare e configurare una soluzione all'esterno di Teams** I partner di fiducia di Microsoft del settore offrono consulenza esperta per il ridimensionamento della distribuzione di video. Prima di poter abilitare un provider di distribuzione video da usare con Teams, è necessario acquistare e configurare la soluzione SDN/eCDN all'esterno e separata da Teams.
+**Acquistare e configurare una soluzione all'esterno di Teams** I partner di fiducia di Microsoft del settore offrono consulenza esperta per il ridimensionamento della distribuzione di video. Prima di poter abilitare un provider di distribuzione video per l'uso con Teams, è necessario acquistare e configurare la soluzione SDN/eCDN all'esterno e separata da Teams.
 
 Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate per l'uso con Stream.
 
@@ -103,7 +103,7 @@ Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate pe
 
 - **Ramp OmniCache** offre distribuzione in rete di nuova generazione e assicura la trasmissione ininterrotta di contenuti video nelle WAN globali, aiutando i produttori di eventi a ottimizzare la larghezza di banda della rete e supportare lo streaming di eventi live e on demand. Il supporto di Ramp OmniCache per gli eventi live prodotti in Teams sarà disponibile a breve. [Altre informazioni](https://rampecdn.com).
 
-- **Riverbed,** lo standard di settore nell'ottimizzazione della rete, estende le soluzioni di accelerazione a Microsoft Teams e Stream.  Ora Microsoft 365 clienti possono accelerare in tutta sicurezza il traffico 365, tra cui Teams e Stream, insieme a una grande quantità di altri servizi SaaS aziendali leader per aumentare la produttività della forza lavoro ovunque ci si trovi. Teams e l'accelerazione stream possono essere abilitate con una configurazione senza sforzo, fornita con tutta la garanzia del supporto di livello mondiale di Riverbed e degli investimenti in corso.
+- **Riverbed,** lo standard di settore nell'ottimizzazione della rete, estende le soluzioni di accelerazione a Microsoft Teams e Stream.  Ora Microsoft 365 clienti possono accelerare con sicurezza il traffico a 365, tra cui Teams e Stream, insieme ad altri servizi SaaS aziendali leader per aumentare la produttività della forza lavoro ovunque ci si trovi. Teams e l'accelerazione stream possono essere abilitate con una configurazione senza sforzo che include tutta la garanzia del supporto di livello mondiale di Riverbed e degli investimenti in corso.
 
 > [!NOTE]
 > La soluzione SDN o eCDN scelta è soggetta ai **termini di servizio e all'informativa sulla privacy del provider di terze parti scelto**, che disciplineranno l'uso della soluzione del provider. L'uso della soluzione del provider non sarà soggetto alle condizioni dei servizi online o dei contratti multilicenza Microsoft. Se non accettano i **termini del provider di terze parti** la soluzione non verrà abilitata in Teams.

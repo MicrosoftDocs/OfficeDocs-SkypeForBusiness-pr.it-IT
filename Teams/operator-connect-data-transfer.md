@@ -16,25 +16,26 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 851d04b3e0d24af7a31b820c812046c55fad21f1
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 202303954ed2a730589f965bb4e81e663605b005
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58582190"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60045802"
 ---
 # <a name="data-transfers-between-carriers-and-microsoft-for-operator-connect"></a>Trasferimenti di dati tra corrieri e Microsoft per Connessione con operatore
 
-## <a name="provisioned-and-assigned-numbers"></a>Numeri assegnati e di cui è stato eseguito il provisioning
+Microsoft è il controllore dei Dati personali che elabora in relazione a Connessione con operatore. Il cliente deve informare gli utenti finali delle informazioni seguenti:
 
-Per garantire il corretto funzionamento del programma Connessione con operatore, Microsoft informerà ogni gestore partecipante, tramite un'API, quali numeri di telefono del gestore sono stati assegnati all'interno dell'interfaccia di amministrazione di Teams e l'URI SIP (Session Initiation Protocol Uniform Resource Identifiers) di tale numero di telefono.
+- La funzionalità Connessione con operatore microsoft per Microsoft Teams consente agli utenti Teams utenti finali di comunicare con altri utenti tramite reti di chiamate tramite Microsoft Teams.
+- Quando questa funzionalità è abilitata dall'organizzazione, Microsoft condivide le informazioni con i gestori dei servizi di comunicazione dell'organizzazione (ognuno, un operatore) per garantire il corretto funzionamento del servizio e per la risoluzione dei problemi.
 
-## <a name="call-detail-records-and-quality-data"></a>Call Detail Records and Quality Data
+Informazioni che Microsoft condivide con l'operatore quando si usa Connessione con operatore include:
 
-Microsoft fornirà i record dei dettagli delle chiamate e i dati qualitativi a ogni gestore partecipante tramite un'API. Questa operazione è necessaria affinché Microsoft e il gestore esercitino la risoluzione dei problemi e assicurino il corretto funzionamento del servizio.
+- il numero di telefono e, se applicabile, l'URI SIP assegnato da Microsoft (Session Initiation Protocol Uniform Resource Identifiers) assegnato al numero di telefono;
+- dettagli delle chiamate e dati sulla qualità delle chiamate, ad esempio i numeri di telefono del chiamante e del destinatario della chiamata; chiamare l'invito e l'ora di fine; determinati identificatori chiamanti; durata della chiamata; e informazioni sulle connessioni al servizio (ad esempio, indirizzi IP e sistemi operativi del chiamante e del destinatario della chiamata); e
+- informazioni sulla posizione delle chiamate di emergenza.
 
-## <a name="call-duration-data"></a>Dati sulla durata delle chiamate
+Gli operatori potranno esportare e scaricare le informazioni elencate sopra.
 
-Ogni gestore fornirà a Microsoft, tramite un'API, la durata delle chiamate effettuate dai clienti tramite Microsoft Teams. Microsoft userà questi record per fornire ai clienti informazioni sull'utilizzo e per garantire che i record siano coerenti con quello del gestore. Microsoft archivierà ed elaverà questi record in conformità alle leggi e alle normative vigenti, nonché all'Informativa sulla privacy Microsoft.
-
-Per altre informazioni: [Acquistare, configurare e abilitare](career-coach.md) Assistente alla carriera per Microsoft Teams
+Queste informazioni verranno gestite dall'operatore in conformità alle procedure di privacy dell'operatore. Per altre informazioni, vedere l'informativa sulla privacy e le condizioni per l'uso dell'operatore. Per informazioni sulle procedure di privacy di Microsoft, fare riferimento all'informativa sulla privacy Microsoft applicabile Teams a [questo collegamento.](https://go.microsoft.com/fwlink/?LinkId=521839)

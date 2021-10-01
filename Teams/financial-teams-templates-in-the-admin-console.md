@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 19c6676bb742deacf97afae54f29b369d551b9ae
-ms.sourcegitcommit: 5eb5acd7910724f7f4a598ecc28b003e5bbe5ea5
+ms.openlocfilehash: 51ec855bc9065bb65c0f6eae14a3e41683cfbc6f
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60007766"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60046132"
 ---
 # <a name="use-financial-team-templates"></a>Usa i modelli di team finanziari
 
@@ -38,12 +38,12 @@ La gestione e l'utilizzo dei modelli di team dipendono dal fatto che si sia ammi
 
 |Se sei: | Allora puoi: |
 | ---- | --------- |
-| Un amministratore o un professionista IT |[Gestire i modelli di team nell'interfaccia di amministrazione di Teams](#manage-team-templates-in-the-teams-admin-center). Visualizzare i modelli di team e applicare i criteri di modelli per controllare quali modelli possono essere utilizzati in Teams dal personale per la creazione di team. |
+| Un amministratore o un professionista IT |[Gestire i modelli di team nell’interfaccia di amministrazione di Teams](#manage-team-templates-in-the-teams-admin-center): visualizzare i modelli di team e applicare i criteri di modelli per controllare quali modelli possono essere usati in Teams dal personale per la creazione di team. |
 | Uno sviluppatore | [Usare Microsoft Graph](#use-team-templates-with-microsoft-graph) per creare team dai modelli di team. |
 
 ## <a name="manage-team-templates-in-the-teams-admin-center"></a>Gestire i modelli di team nell’interfaccia di amministrazione di Teams
 
-Gli amministratori possono gestire i modelli di team nell'interfaccia di amministrazione di Microsoft Teams. Qui è possibile visualizzare i dettagli su ogni modello. È anche possibile [creare e assegnare criteri di modelli](templates-policies.md) al personale per controllare i modelli visualizzati in Teams per la creazione di [team](https://support.microsoft.com/office/create-a-team-from-a-template-a90c30f3-9940-4897-ab5b-988e69e4cd9c).
+Gli amministratori possono gestire i modelli di team nell'interfaccia di amministrazione di Microsoft Teams. Qui è possibile visualizzare i dettagli su ogni modello. È anche possibile [creare e assegnare criteri di modelli](templates-policies.md) al personale per controllare i modelli visualizzati in Teams per la creazione di [team](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b).
 
 Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli di team nell'interfaccia di amministrazione di Teams](get-started-with-teams-templates-in-the-admin-console.md).
 
@@ -60,7 +60,7 @@ Centralizza la collaborazione dei dipendenti della tua filiale bancaria con riun
 
 ## <a name="use-team-templates-with-microsoft-graph"></a>Usare i modelli di Teams con Microsoft Graph
 
-Gli sviluppatori possono usare Microsoft Graph per creare team da modelli predefiniti di team. Per altre informazioni sull'uso dei modelli di team con Microsoft Graph, vedere [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md), panoramica dell'API [Microsoft Teams](/graph/teams-concept-overview?view=graph-rest-1.0)e [tipo di risorsa teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-1.0).
+Gli sviluppatori possono usare Microsoft Graph per creare team dai modelli di team predefiniti. Per altre informazioni sull'uso dei modelli di team con Microsoft Graph, vedere [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md), [Panoramica dell'API Microsoft Teams](/graph/teams-concept-overview?view=graph-rest-1.0) e [Tipo di risorsa teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-1.0).
 
 ### <a name="bank-branch"></a>Filiale bancaria
 
@@ -73,3 +73,9 @@ Centralizza la collaborazione dei dipendenti della tua filiale bancaria con riun
 
 > [!NOTE]
 > Per altri modelli applicabili all'organizzazione di servizi finanziari, vedere [Modelli predefiniti di team in Microsoft Graph per le piccole e medie imprese.](smb-templates.md)
+
+## <a name="related-articles"></a>Articoli correlati
+
+- [Introduzione ai modelli di team nell'interfaccia Teams di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)
+- [Creare un team da un modello](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b)
+- [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md)

@@ -21,21 +21,18 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: adc229264513d7ec4ca692dca1731d7390b80dc243b4571757607c1c76b7cacb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0351fe60d46f8bf96dd06df3c64048e390991410
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323948"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60046112"
 ---
-# <a name="plan-for-operator-connect"></a>Pianificare l'Connessione con operatore
+# <a name="plan-for-operator-connect"></a>Pianificare Connessione con operatore
 
->[!NOTE]
->Connessione con operatore è attualmente disponibile solo **nell'anteprima pubblica.** L'anteprima pubblica consente di testare le funzionalità imminenti e fornire feedback. Le funzionalità incluse nell'anteprima pubblica potrebbero non essere complete, potrebbero subire modifiche e non sono supportate in Office 365 Government Cloud.
+Connessione con operatore è un'altra opzione per fornire connettività PSTN (Public Switched Telephone Network) con Teams e Sistema telefonico. Per altre informazioni sulle Teams vocali e sulle opzioni di connettività PSTN, vedere [Pianificare](cloud-voice-landing-page.md) la soluzione vocale Teams e le opzioni [di connettività PSTN.](pstn-connectivity.md)
 
-Connessione con operatore è un'altra opzione per fornire connettività PSTN (Public Switched Telephone Network) con Teams e Sistema telefonico.  
-
-Questo articolo descrive i vantaggi e i requisiti ed elenca gli operatori che partecipano al Connessione con operatore programma.  Se si decide Connessione con operatore soluzione giusta per l'organizzazione, dopo aver letto questo articolo, vedere Configurare Connessione con operatore [.](operator-connect-configure.md)  
+Questo articolo descrive i vantaggi e i requisiti e fornisce un collegamento agli operatori che partecipano al programma Microsoft Connessione con operatore Program.  Se si decide Connessione con operatore è la soluzione giusta per l'organizzazione, dopo aver letto questo articolo, vedere [Configurare](operator-connect-configure.md)Connessione con operatore .  
 
 ## <a name="benefits"></a>Vantaggi
 
@@ -54,28 +51,12 @@ Con Connessione con operatore, se l'operatore esistente è un partecipante al pr
  Connessione con operatore potrebbe essere la soluzione giusta per l'organizzazione se:
 
 - Microsoft Calling Plan non è disponibile nella tua posizione geografica.
-- L'operatore preferito è un partecipante al programma Microsoft Connessione con operatore microsoft.
+- L'operatore preferito è un partecipante al programma Microsoft Connessione con operatore Microsoft.
 - Si vuole trovare un nuovo operatore per abilitare le chiamate in Teams.
 
 Per abilitare le assegnazioni dei numeri di telefono Connessione con operatore, assicurati che gli utenti siano:
 
-- Teams Telefono concesso in licenza. Per altre informazioni, vedere [Che cos'è Sistema telefonico?](what-is-phone-system-in-office-365.md) e Assegnare Teams [licenze per i componenti aggiuntivi agli utenti.](teams-add-on-licensing/assign-teams-add-on-licenses.md)
-- In modalità TeamsOnly. Per altre informazioni, vedere [Comprendere Microsoft Teams e Skype for Business coesistenza e interoperabilità.](teams-and-skypeforbusiness-coexistence-and-interoperability.md)
+- Teams Telefono licenza. Per altre informazioni, vedere [Che cos'è Sistema telefonico?](what-is-phone-system-in-office-365.md) e Assegnare Teams [licenze per i componenti aggiuntivi agli utenti.](teams-add-on-licensing/assign-teams-add-on-licenses.md)
+- In modalità TeamsOnly. Si noti che l'utente deve essere in modalità TeamsOnly, ma non nell'intera organizzazione. Per altre informazioni, vedere [Comprendere Microsoft Teams e Skype for Business e l'interoperabilità.](teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 
-## <a name="available-operators"></a>Operatori disponibili
-
-Gli operatori seguenti sono partecipanti al programma Microsoft Connessione con operatore:
-
-| Operatore | Funzionalità | Copertura paese |
-| --- | --- | --- |
-| `BT`  | Chiamate | Belgio, Danimarca, Finlandia, Francia, Germania, Irlanda, Italia, Lussemburgo, Paesi Bassi, Norvegia, Polonia, Sudafrica, Spagna, Svezia, Svizzera, Regno Unito |
-| `Intrado` | Chiamate | Belgio, Canada, Danimarca, Francia, Germania, Irlanda, Lussemburgo, Paesi Bassi, Spagna, Svezia, Regno Unito, Stati Uniti  |
-| `NTT`  | Chiamate | Austria, Belgio, Brasile, Canada, Cecoia, Danimarca, Finlandia, Francia, Germania, Irlanda, Italia, Lussemburgo, Messico, Paesi Bassi, Norvegia, Polonia, Portogallo, Portorico, Romania, Sudafrica, Spagna, Svezia, Svizzera, Regno Unito, Stati Uniti |
-| `NuWave` | Chiamate | Austria, Belgio, Canada, Danimarca, Francia, Germania, Irlanda, Italia, Paesi Bassi, Portogallo, Spagna, Svezia, Svizzera, Regno Unito, Stati Uniti   |
-| `Orange Business Services` | Chiamate | Austria, Belgio, Cecoia, Danimarca, Finlandia, Francia, Guiana francese, Germania, Guadalupa, Irlanda, Italia, Lussemburgo, Martinica, Mayotte, Paesi Bassi, Norvegia, Polonia, Portogallo, Riunione, Saint Barthélemy, Saint Martin, Spagna, Svalbard, Svezia, Svizzera, Regno Unito  |
-| `Pure IP` | Chiamate | Australia, Austria, Belgio, Brasile, Bulgaria, Canada, Cile, Colombia, Croazia, Cipro, Cecoslovacchia, Danimarca, Finlandia, Francia, Germania, Grecia, Hong Kong S.A.R., Irlanda, Italia, Giappone, Lituania, Lussemburgo, Malaysia, Messico, Paesi Bassi, Nuova Zelanda, Norvegia, Panama, Polonia, Portogallo, PortoRico, Romania, Singapore, Slovacchia, Slovenia, Sudafrica, Spagna, Svezia, Svizzera, Regno Unito, Stati Uniti  |
-| `Rogers Business` | Chiamate | Canada  |
-| `TATA Communications` | Chiamate | Australia, Austria, Belgio, Canada, Cecoia, Danimarca, Francia, Germania, Hong Kong S.A.R., Ungheria, Irlanda, Italia, Malaysia, Messico, Paesi Bassi, Nuova Zelanda, Polonia, Portogallo, Romania, Singapore, Corea del Sud, Spagna, Svezia, Svizzera, Thailandia, Regno Unito, Stati Uniti |
-| `Telekom Deutschland` | Chiamate | Germania  |
-| `Telenor` | Chiamate | Danimarca, Finlandia, Norvegia, Svezia  |
-| `Verizon` | Chiamate | Stati Uniti |
+Per un elenco degli operatori che partecipano al Programma Microsoft Connessione con operatore e dei paesi o aree geografiche in cui è disponibile il servizio, vedere la [directory Microsoft 365 Connessione con operatore.](https://cloudpartners.transform.microsoft.com/practices/microsoft-365-for-operators/directory)

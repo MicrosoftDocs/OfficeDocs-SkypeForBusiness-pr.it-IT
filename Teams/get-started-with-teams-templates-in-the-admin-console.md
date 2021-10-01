@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 30d2ef7baf485e617ac5d703659a79d6f57e7f76
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 636cd41a6107f8fb43b42a6118b8ead9d2b754ef
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011780"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60045572"
 ---
 # <a name="get-started-with-team-templates-in-the-teams-admin-center"></a>Introduzione ai modelli di team nell'interfaccia Teams di amministrazione
 
@@ -63,11 +63,11 @@ La maggior parte delle proprietà di un team sono incluse e supportate dai model
 
 ## <a name="pre-built-team-templates-in-the-teams-admin-center"></a>Modelli di team predefiniti nell'interfaccia Teams di amministrazione
 
-Ecco i modelli di team predefiniti disponibili nell'Teams di amministrazione. I modelli predefiniti sono modelli creati per settori specifici. Per visualizzare questi modelli, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare **a** Teams  >  **del team.**
+Ecco i modelli di team predefiniti disponibili nell'interfaccia Teams di amministrazione. I modelli predefiniti sono modelli creati per settori specifici. Per visualizzare questi modelli, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare **a** modelli Teams  >  **team.**
 
 È possibile duplicare i modelli predefiniti, ma non modificarli. Se si vogliono modificare le proprietà in un modello predefinito, è possibile creare un nuovo modello da un modello esistente e quindi aggiungere o rimuovere le proprietà desiderate. Tenere presente che alcune proprietà in alcuni modelli non possono essere modificate.
 
-| Tipo di modello | TemplateId | Proprietà incluse nel modello |
+| Tipo di modello | TemplateId | Proprietà del modello |
 | ------------------ | -------------- | ----------------------------------------------------- |
 | Adottare Office 365 |`com.microsoft.teams.template.AdoptOffice365`|  Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Angolo Champions</li> <li>Moduli del team</li><li>Calendario</li></ul> App: <ul><li>Wiki</li>  <li>Calendario del canale</li> <li>Attività cardine</li><li>Bollettini</li></ul>|
 | Gestire un progetto |`com.microsoft.teams.template.ManageAProject`| Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Risorse</li> <li>Pianificazione</li></ul> App:<ul><li>Wiki</li><li>OneNote</li><li>Attività</li><li>Elenchi</li><li>Power Automate</li></ul> |
@@ -108,7 +108,7 @@ I modelli sono limitati a un numero specifico di canali, schede e app.
 |App per modello | 50|
 |||
 
-Per altre informazioni, vedere [Limiti e specifiche di Teams.](limits-specifications-teams.md)
+Per altre informazioni, vedere [Limiti e specifiche di Teams](limits-specifications-teams.md).
 
 ## <a name="manage-team-templates"></a>Gestire i modelli di team
 
@@ -116,7 +116,7 @@ Per altre informazioni, vedere [Limiti e specifiche di Teams.](limits-specificat
 
 #### <a name="view-team-templates"></a>Visualizzare i modelli di team
 
-Per visualizzare i modelli di team, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare a modelli Teams  >  **team.** Selezionare un modello per visualizzare altri dettagli, inclusi i canali e le app in esso contenuti.
+Per visualizzare i modelli di team, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare **a** modelli Teams  >  **team.** Selezionare un modello per visualizzare altri dettagli, inclusi i canali e le app in esso contenuti.
 
 #### <a name="create-your-own-team-templates"></a>Creare modelli di team personalizzati
 
@@ -128,7 +128,7 @@ Per visualizzare i modelli di team, nel riquadro di spostamento sinistro dell'in
 
 #### <a name="apply-team-template-policies"></a>Applicare i criteri dei modelli di team
 
-Per controllare i modelli visualizzati dagli utenti nelle Teams per la creazione di team, è possibile impostare i criteri dei modelli e assegnarli a utenti e gruppi dell'organizzazione. Per altre informazioni, vedere [Gestire i modelli di team nell'Teams di amministrazione.](templates-policies.md)
+Per controllare i modelli visualizzati dagli utenti in Teams per la creazione di [team,](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b)è possibile impostare i criteri dei modelli e assegnarli a utenti e gruppi dell'organizzazione. Per altre informazioni, vedere [Gestire i modelli di team nell'Teams di amministrazione.](templates-policies.md)
 
 ### <a name="manage-team-templates-using-powershell"></a>Gestire i modelli di team con PowerShell
 
@@ -142,5 +142,5 @@ Usare i cmdlet seguenti per gestire i modelli in PowerShell.
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Creare un team da un modello](https://support.microsoft.com/office/create-a-team-from-a-template-a90c30f3-9940-4897-ab5b-988e69e4cd9c)
-- [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md) 
+- [Creare un team da un modello](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b)
+- [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md)

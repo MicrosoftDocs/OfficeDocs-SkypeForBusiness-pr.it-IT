@@ -10,58 +10,85 @@ audience: admin
 ms.service: msteams
 ms.collection:
 - M365-collaboration
-description: Informazioni su come gestire Microsoft Teams con Teams PowerShell.
+description: Informazioni su come gestire Microsoft Teams usando Teams PowerShell.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d149def604b1a80b4af5ce18871b9842c4279d00db4d42c40f3556f5b35214d6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 86d5069794d160d4c4241a67f0c8d45fc9cac708
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54299016"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60046022"
 ---
 # <a name="manage-teams-with-microsoft-teams-powershell"></a>Gestire Teams con Microsoft Teams PowerShell
 
-Questo articolo illustra come usare Microsoft Teams PowerShell per gestire Teams e Skype for Business. 
+Questo articolo illustra come usare Microsoft Teams PowerShell per gestire Teams e Skype for Business.
 
 Usare queste indicazioni in combinazione con il riferimento [Microsoft Teams cmdlet](/powershell/teams/?view=teams-ps) e [Skype for Business cmdlet.](/powershell/skype/intro?view=skype-ps)
 
+Per gestire Teams'interfaccia Teams di amministrazione, vedere Gestire Teams [con Azure Cloud Shell.](#manage-teams-with-azure-cloud-shell)
+
 ## <a name="create-and-manage-teams-using-powershell"></a>Creare e gestire team con PowerShell
 
-I cmdlet per la creazione e la gestione dei team si Microsoft Teams [modulo di PowerShell.](https://www.powershellgallery.com/packages/MicrosoftTeams/)
+I cmdlet per la creazione e la gestione dei team sono disponibili [nel Microsoft Teams di PowerShell.](https://www.powershellgallery.com/packages/MicrosoftTeams/)
 
-Teams sono supportati da Office 365, quindi quando si crea un team si crea un gruppo. Sono disponibili un set di cmdlet per il funzionamento nel team di base e le relative impostazioni ( , , ), la gestione degli utenti del team ( , ), nonché i cmdlet per la gestione dei canali ``new-team`` del team ( , ``get-team``  ``set-team`` ``add-teamuser`` ``remove-teamuser`` ``new-teamchannel`` ``remove-teamchannel`` ). Tutti questi cmdlet possono essere eseguiti come utenti finali, ma funzionano solo nei team di cui si è proprietari o di cui si è membri. Gli amministratori globali o gli amministratori Teams, saranno in grado di agire su tutti i team dell'organizzazione.
+Teams sono supportati da Office 365, quindi quando si crea un team si crea un gruppo. Sono disponibili un set di cmdlet per il funzionamento nel team di base e le relative impostazioni ( , , ), la gestione degli utenti del team ( , ), nonché i cmdlet per la gestione dei canali ``new-team`` del team ( , ``get-team``  ``set-team`` ``add-teamuser`` ``remove-teamuser`` ``new-teamchannel`` ``remove-teamchannel`` ). Tutti questi cmdlet possono essere eseguiti come utenti finali, ma funzionano solo con i team di cui si è proprietari o di cui si è membri. Se si è un amministratore globale o un Teams, sarà possibile agire su tutti i team dell'organizzazione.
 
 ```powershell
 New-Team -DisplayName "Contoso Marketing" -Description "Collaboration space for Contoso's Marketing department"
 ```
 
+> [!NOTE]
 > Il **Valore GroupId** usato nei cmdlet Microsoft Teams modulo di PowerShell è uguale alla proprietà **Identity** restituita da nel modulo ``Get-UnifiedGroup`` Exchange PowerShell.
+
+## <a name="manage-teams-with-azure-cloud-shell"></a>Gestire Teams con Azure Cloud Shell
+
+Cloud Shell è una shell interattiva, autenticata e accessibile tramite browser che consente di gestire le risorse. Per altre informazioni su Cloud Shell, vedere [Azure Cloud Shell.](/azure/cloud-shell/overview)
+
+Per accedere a Azure Cloud Shell e usare PowerShell per gestire Teams, accedere all'Teams di amministrazione.
+
+1. Selezionare l'icona Cloud Shell nell'angolo in alto a destra.
+
+    ![Screenshot dell'Teams dell'interfaccia di amministrazione con l'icona di Cloud Shell.](media/cloud-shell-icon-select.png)
+
+1. Quando richiesto, scegliere **PowerShell.**
+
+    ![Screenshot del prompt di Azure Cloud Shell.](media/cloud-shell.png)
+
+1. Eseguire il comando seguente per avviare una Teams di PowerShell:
+
+    ```powershell
+    Connect-MicrosoftTeams
+    ```
+
+Dopo aver completato questi passaggi, si è pronti per eseguire Teams comandi di PowerShell.
+
+> [!IMPORTANT]
+> Se si vogliono usare i cmdlet Cs*, è prima necessario connettersi a Teams usando il ``Connect-MicrosoftTeams -UseDeviceAuthentication`` comando.
 
 ## <a name="manage-policies-via-powershell"></a>Gestire i criteri tramite PowerShell
 
 > [!NOTE]
-> - Skype for Business Online Connector è in fase di consolidamento in Teams PowerShell. Attualmente è disponibile in anteprima pubblica. Nel tempo, Skype for Business cmdlet online che si applicano a Teams saranno disponibili in modo nativo nel modulo Teams PowerShell. I passaggi per l'installazione sono disponibili [nell'articolo Teams PowerShell.](teams-powershell-install.md)
->
+> - Skype for Business Online Connector è in fase di consolidamento in Teams PowerShell. Attualmente è disponibile in anteprima pubblica. Nel tempo, Skype for Business cmdlet online che si applicano a Teams saranno disponibili in modo nativo nel modulo Teams PowerShell. I passaggi per l'installazione sono disponibili [nell'articolo installare Teams PowerShell.](teams-powershell-install.md)
 > - I cmdlet saranno disponibili nella sessione di PowerShell dopo la connessione a Skype for Business Online. Per altre informazioni, vedere [Gestire Skype for Business Online con Office 365 PowerShell.](/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell)
 
-Trovare i cmdlet per la gestione dei criteri [nel modulo Skype for Business cmdlet .](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)
+Trovare i cmdlet per la gestione dei criteri [nel modulo Skype for Business cmdlet.](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)
 
 Un criterio è un gruppo di impostazioni che possono essere applicate in modo granulare ai singoli utenti. Ogni tipo di criterio ha un proprio set di cmdlet per la creazione, la visualizzazione, l'eliminazione e l'aggiornamento dei criteri stessi e quindi l'assegnazione di tali criteri agli utenti. La struttura generale è:
 
 - **Comandi GET** (ad esempio, ): restituisce i documenti dei criteri disponibili per ``Get-CsTeamsMeetingPolicy`` l'assegnazione all'interno dell'organizzazione, inclusi i criteri creati da Microsoft per l'uso e i criteri personalizzati creati.
-   - Per trovare solo i criteri personalizzati creati nell'organizzazione, usare ``-Filter "tag:*"`` .
+  - Per trovare solo i criteri personalizzati creati nell'organizzazione, usare ``-Filter "tag:*"`` .
 
 - **NUOVI** comandi (ad esempio, ``New-CsTeamsMeetingPolicy`` ): crea nuovi criteri per l'organizzazione da assegnare agli utenti dell'organizzazione. Non tutti i criteri supportano la creazione di criteri personalizzati. Spesso si tratta di verificare che i criteri utilizzati nell'organizzazione siano supportati da una combinazione di impostazioni.
 
-- **Comandi SET** ,ad esempio ``Set-CsTeamsMeetingPolicy`` : imposta determinati valori in un determinato criterio. Alcuni criteri non hanno comandi SET disponibili o contengono parametri che non possono essere personalizzati nei criteri. Le descrizioni di PowerShell indicano quali parametri non possono essere personalizzati. 
-   - Per modificare i criteri che verranno assegnati per impostazione predefinita agli utenti dell'organizzazione a cui non è assegnato un criterio personalizzato, eseguire ``Set-Cs<PolicyName> -Identity Global`` .
+- **Comandi SET** (ad ``Set-CsTeamsMeetingPolicy`` esempio, ): imposta determinati valori in un determinato criterio. Alcuni criteri non hanno comandi SET disponibili o contengono parametri che non possono essere personalizzati nei criteri. Le descrizioni di PowerShell indicano quali parametri non possono essere personalizzati.
+  - Per modificare i criteri che verranno assegnati per impostazione predefinita agli utenti dell'organizzazione a cui non è assegnato un criterio personalizzato, eseguire ``Set-Cs<PolicyName> -Identity Global`` .
 
 - **Comandi** REMOVE (ad esempio, ): elimina un criterio ``Remove-CsTeamsMeetingPolicy`` personalizzato creato nel tenant. Se si eliminano criteri personalizzati assegnati ad almeno un utente dell'organizzazione, l'utente verrà nuovamente assegnato ai criteri globali.
-   - Non è possibile rimuovere effettivamente i criteri globali nell'organizzazione, ma se si vuole reimpostare i criteri globali dell'organizzazione alle impostazioni predefinite fornite da Microsoft, eseguire ``Remove-Cs<PolicyName> -Identity Global`` .
+  - Non è possibile rimuovere effettivamente i criteri globali nell'organizzazione, ma se si vuole reimpostare i criteri globali dell'organizzazione alle impostazioni predefinite fornite da Microsoft, eseguire ``Remove-Cs<PolicyName> -Identity Global`` .
 
 - **Comando GRANT** (ad ``Grant-CsTeamsMeetingPolicy`` esempio): assegna un criterio a un utente specifico.
-   - Per rimuovere un'assegnazione di criteri personalizzati e fare in modo che l'utente torni ai criteri predefiniti dell'organizzazione, eseguire ``Grant-Cs<PolicyName> -Identity <User Identity> -PolicyName $null`` .
+  - Per rimuovere un'assegnazione di criteri personalizzati e fare in modo che l'utente torni ai criteri predefiniti dell'organizzazione, eseguire ``Grant-Cs<PolicyName> -Identity <User Identity> -PolicyName $null`` .
 
 > [!TIP]
 > Non tutti i criteri consentono la creazione di criteri personalizzati e alcuni criteri hanno impostazioni che non è possibile personalizzare, quindi è possibile visualizzare l'impostazione ma non impostare un valore personalizzato durante ``set-`` e ``new-`` . La documentazione di ogni cmdlet indica se i parametri sono disponibili per l'uso da parte dei clienti.
@@ -79,7 +106,8 @@ Le configurazioni sono contenitori di impostazioni gestite nel servizio che non 
 - ``Get-Cs<ConfigurationName>`` (ad ``Get-CsTeamsClientConfiguration`` esempio):
 
 - Comandi SET (ad ``Set-CsTeamsClientConfiguration`` esempio, ): impostare le proprietà nella configurazione di quel tipo. Specificare i parametri da modificare.
-   > È possibile fare riferimento alla configurazione che si sta modificando in due modi: specificando -**Identity Global** o eseguendo ``Get-Cs<ConfigurationName>``  |  ``Set-Cs<ConfigurationName>`` .
+    > [!NOTE]
+    > È possibile fare riferimento alla configurazione che si sta modificando in due modi: specificando -**Identity Global** o eseguendo ``Get-Cs<ConfigurationName>``  |  ``Set-Cs<ConfigurationName>`` .
 
 ## <a name="what-can-each-admin-role-do"></a>Cosa può fare ogni ruolo di amministratore?
 

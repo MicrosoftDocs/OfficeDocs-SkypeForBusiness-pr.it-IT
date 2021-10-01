@@ -1,7 +1,7 @@
 ---
-title: Provisioning remoto e accesso per Teams dispositivi Android
-author: cichur
-ms.author: v-cichur
+title: Provisioning remoto e accesso per i Teams Android
+author: serdarsoysal
+ms.author: serdars
 manager: serdars
 ms.reviewer: prgholve
 ms.topic: article
@@ -17,15 +17,15 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come eseguire il provisioning remoto e accedere per Teams dispositivi Android
-ms.openlocfilehash: 20eae8534d06c6f9431b9e9fcb1458812e34cacd
-ms.sourcegitcommit: ab9d27d7ddd1494539ae9424de200c9d0e76a9ec
+description: Scopri come eseguire il provisioning remoto e accedere per Teams dispositivi Android
+ms.openlocfilehash: 818a6a4fc7941c82a52d63016bbdc338f977be29
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59984741"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60046152"
 ---
-# <a name="remote-provisioning-and-sign-in-for-teams-android-devices"></a>Provisioning remoto e accesso per Teams dispositivi Android
+# <a name="remote-provisioning-and-sign-in-for-teams-android-devices"></a>Provisioning remoto e accesso per i Teams Android
 
 Gli amministratori IT possono eseguire il provisioning in remoto e accedere a un dispositivo Teams Android. Per eseguire il provisioning di un dispositivo in remoto, l'amministratore deve caricare gli ID MAC dei dispositivi di cui viene eseguito il provisioning e creare un codice di verifica. L'intero processo può essere completato in remoto dall'Teams di amministrazione.
 
@@ -70,15 +70,15 @@ Nella finestra **Provisioning nuovi dispositivi** è possibile aggiungere manual
 
 1. Nella scheda **In attesa di attivazione** selezionare Aggiungi ID **MAC.**
 
-   ![aggiungere manualmente un indirizzo Mac del dispositivo.](../media/remote-provision-6.png)
+   ![aggiungere manualmente un indirizzo Mac del dispositivo.](../media/remote-provision-6-new.png)
 
 1. Immettere l'ID MAC.
 1. Immettere una posizione che consente ai tecnici di identificare la posizione in cui installare i dispositivi.
 1. Al **termine, selezionare** Applica.
 
-### <a name="upload-a-file-to-add-a-device-mac-address"></a>Upload un file per aggiungere un indirizzo MAC del dispositivo
+### <a name="upload-a-file-to-add-a-device-mac-address"></a>Upload file per aggiungere un indirizzo MAC del dispositivo
 
-1. Nella scheda **In attesa di attivazione** selezionare Upload ID **MAC.**
+1. Nella scheda **In attesa di attivazione** selezionare Upload ID **MAC**.
 2. Scaricare il modello di file.
 3. Immettere l'ID MAC e il percorso e quindi salvare il file.
 4. **Selezionare file** e quindi **selezionare** Upload .
@@ -112,7 +112,7 @@ Quando il dispositivo è acceso e connesso alla rete, il tecnico esegue il provi
 
 Il dispositivo di cui è stato eseguito il provisioning viene visualizzato nella **scheda In** attesa di accesso. Avviare il processo di accesso remoto selezionando il singolo dispositivo.
 
-1. Selezionare un dispositivo nella scheda In attesa **di** accesso.
+1. Selezionare un dispositivo nella scheda In **attesa di** accesso.
 
    ![Finestra con un elenco di dispositivi pronti per l'accesso.](../media/remote-device1.png)
 

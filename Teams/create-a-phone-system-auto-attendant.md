@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per organizzazioni di grandi dimensioni in Microsoft Teams.
-ms.openlocfilehash: 59d12bc7d7bde68be6c42aff4e415713d641679f
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 29e746c9db2da970d4709da126297b6cc38b6c81
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58729085"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60046032"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -36,7 +36,7 @@ Gli operatori automatici consentono alle persone di chiamare l'organizzazione e 
 > [!TIP]
 > Questo articolo è per le organizzazioni di grandi dimensioni. Se l'organizzazione è una piccola azienda, vedere Configurare un operatore [automatico - esercitazione sulle piccole](/microsoftteams/business-voice/create-a-phone-system-auto-attendant-smb) imprese.
 
-Assicurarsi di aver [](plan-auto-attendant-call-queue.md) letto Pianificare gli operatori Teams e le code [](plan-auto-attendant-call-queue.md#getting-started) di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
+Prima di seguire le procedure descritte in questo [articolo,](plan-auto-attendant-call-queue.md) leggere [](plan-auto-attendant-call-queue.md#getting-started) Pianificare gli operatori automatici Teams e le code di chiamata e seguire i passaggi introduttivi.
 
 Gli operatori automatici possono indirizzare le chiamate, in base all'input dei chiamanti, a una delle destinazioni seguenti: <a name="call-routing-options" ></a>
 
@@ -50,7 +50,7 @@ Gli operatori automatici possono indirizzare le chiamate, in base all'input dei 
 
 Durante la configurazione di un operatore automatico, verrà richiesto di scegliere una di queste opzioni in varie fasi.
 
-Per configurare un operatore automatico, nell'interfaccia Teams di amministrazione espandere **Voce**, selezionare **Operatori** automatici e quindi **selezionare Aggiungi**.
+Per configurare un operatore automatico, nell'interfaccia Teams di amministrazione espandere **Voce,** selezionare **Operatori automatici** e quindi **selezionare Aggiungi**.
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -101,7 +101,7 @@ Se si seleziona **Opzioni menu** Riproduci , è possibile scegliere Riproduci un
 
 ![Screenshot delle opzioni dei tasti di scelta rapida.](media/auto-attendant-call-flow-menu-options-complete.png)
 
-Per le opzioni di composizione, assegnare i tasti da 0 a 9 sul tastierino del telefono a una delle destinazioni di routing delle chiamate. (I tasti \* (Ripeti) e (Indietro) sono riservati dal sistema e non \# possono essere riassegnati.
+Per le opzioni di composizione, assegnare i tasti da 0 a 9 sul tastierino del telefono a una delle destinazioni di routing delle chiamate. (I tasti \* (Ripeti) e (Indietro) sono riservati dal sistema e non possono essere \# riassegnati.
 
 Non è necessario che i mapping dei tasti siano continui. È possibile creare un menu con i tasti 0, 1 e 3 mappati alle opzioni, mentre il tasto numero 2 non viene usato.
 
@@ -140,7 +140,7 @@ Il formato necessario per immettere l'interno nel campo del numero di telefono d
 - *x\<extension>*
 
 - Esempio 1: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+15555555678;ext=5678"
-- Esempio 2: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+1555555678x5678"
+- Esempio 2: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+15555555678x5678"
 - Esempio 3: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "x5678"
 
 È possibile impostare l'estensione [nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) o [nell'Azure Active Directory di amministrazione.](https://aad.portal.azure.com) Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
@@ -203,7 +203,7 @@ Dopo aver aggiunto tutte le festività, selezionare **Avanti.**
 > [!NOTE]
 > L'elenco del nome di un nuovo utente nella directory potrebbe richiedere fino a 36 ore.
 
-Al termine dell'impostazione dell'ambito di chiamata, selezionare **Avanti.**
+Dopo aver impostato l'ambito di chiamata, selezionare **Avanti**.
 
 ## <a name="resource-accounts"></a>Account delle risorse
 
@@ -223,13 +223,13 @@ Per [altre informazioni, vedere Gestire Teams account](manage-resource-accounts.
 
 Fare riferimento ai [Prerequisiti per](plan-auto-attendant-call-queue.md#prerequisites) consentire agli operatori automatici di trasferire le chiamate esternamente.  Inoltre:
 
-- Per un account della risorsa con una licenza piano per [chiamate,](calling-plans-for-office-365.md)il numero di telefono per il trasferimento esterno deve essere immesso nel formato E.164 (+[codice paese][codice area][numero di telefono]).
+- Per un account [](calling-plans-for-office-365.md) della risorsa con una licenza piano per chiamate o un [numero Connessione con operatore,](operator-connect-plan.md) il numero di telefono per il trasferimento esterno deve essere immesso nel formato E.164 (+[codice paese][codice area][numero di telefono]).
 
-- Per un account delle risorse con criteri di routing vocale Sistema telefonico License e Direct Routing online, il formato del numero di telefono per il trasferimento esterno dipende dalle impostazioni [SBC (Session Border Controller).](direct-routing-connect-the-sbc.md)
+- Per un account della risorsa con criteri di routing vocale Sistema telefonico License e Routing diretto online, il formato del numero di telefono per il trasferimento esterno dipende dalle impostazioni [SBC (Session Border Controller).](direct-routing-connect-the-sbc.md)
 
 Il numero di telefono in uscita visualizzato viene determinato nel modo seguente:
 
-  - Per i numeri del piano di chiamata, viene visualizzato il numero di telefono del chiamante originale.
+  - Per Piano chiamate e Connessione con operatore numeri di telefono, viene visualizzato il numero di telefono del chiamante originale.
   - Per i numeri di instradamento diretto, il numero inviato si basa sull'impostazione P-Asserted-Identity (PAI) nel SBC, come indicato di seguito:
     - Se è impostato su Disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
     - Se è impostato su Abilitato, viene visualizzato il numero di telefono dell'account della risorsa.

@@ -21,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Informazioni sulla procedura per reimpostare l'ID conferenza di una riunione in Microsoft Teams e ottenere collegamenti agli strumenti di aggiornamento e migrazione delle riunioni.
-ms.openlocfilehash: 6ef5bd8fed266990e5a21edc34e874c218199e87
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 9faff7e86480d85c08e4aba4efdce218ee74a9b0
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728885"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60045512"
 ---
 # <a name="reset-a-conference-id-for-a-user-in-microsoft-teams"></a>Reimpostare un ID conferenza per un utente in Microsoft Teams
 
@@ -37,7 +37,7 @@ Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riu
 
 ## <a name="resetting-the-conference-id-for-a-user"></a>Reimpostazione dell'ID conferenza per un utente
 
-![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+![Icona che mostra il logo di Microsoft Teams.](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nel riquadro di spostamento sinistro fare clic **su Utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -46,7 +46,6 @@ Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riu
 3. In **Audioconferenza fare** clic **su Reimposta ID conferenza.**
 
 2. Nella finestra **Reimposta ID conferenza** fare clic su **Reimposta**. A conference ID will be automatically created and an email sent to the user with the new conference ID. Per impostazione predefinita, i messaggi di posta elettronica vengono inviati agli utenti, ma possono essere disattivati.   
-
     
 > [!NOTE]
 > Dopo la reimpostazione dell'ID conferenza, viene inviata all'utente un'e-mail con il nuovo ID conferenza. Questo messaggio di posta elettronica verrà inviato all'indirizzo di posta elettronica principale, in molti casi, Microsoft 365 o Office 365 cassetta postale. Il messaggio di posta elettronica contiene il nuovo ID conferenza, i numeri di telefono di accesso remoto predefiniti e le istruzioni per l'aggiornamento delle riunioni esistenti. 
@@ -58,7 +57,7 @@ Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riu
 
 - È possibile inviare tutte le informazioni di conferenza all'utente in un messaggio  di posta elettronica che include l'ID conferenza e i numeri di telefono di accesso esterno facendo clic su Invia informazioni conferenza tramite posta elettronica per l'utente nella sezione **Audioconferenza.** Il PIN non è incluso.
     
-- Un ID conferenza da 7 a 9 cifre viene creato dal servizio Teams conferenza. Non è possibile modificarne la lunghezza.
+- Un ID conferenza da 7 a 9 cifre viene creato dal Teams servizio. Non è possibile modificarne la lunghezza.
     
 - Dopo la reimpostazione, il nuovo ID conferenza viene riportato nella sezione **ID conferenza**.
     
@@ -72,7 +71,7 @@ Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazio
     
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-Per altre informazioni su Windows PowerShell, vedere [Riferimenti su PowerShell in Microsoft Teams](/powershell/module/teams/?view=teams-ps).
+Per altre informazioni su Windows PowerShell, vedere [Riferimenti su PowerShell in Microsoft Teams](/powershell/module/teams/?view=teams-ps&preserve-view=true).
     
 ## <a name="related-topics"></a>Argomenti correlati
 

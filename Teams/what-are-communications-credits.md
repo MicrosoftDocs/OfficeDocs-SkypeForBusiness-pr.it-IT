@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Licensing
 description: 'Learn what Communication Credits (PSTN Consumption) billing, how to find rates, and what services you get. '
-ms.openlocfilehash: cd52426a26a5dcefe3a5051a8c8e03e56a2991de
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: ab0daa196de9768e277b292baf1de2b5d456fa78
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58626988"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60045852"
 ---
 # <a name="what-are-communications-credits"></a>Cosa sono i Crediti comunicazioni?
 
@@ -37,7 +37,7 @@ ms.locfileid: "58626988"
     
 - Effettuare chiamate in uscita da una riunione in audioconferenza per aggiungere altri utenti da qualsiasi parte del mondo.
     
-- Chiamata in uscita da una riunione audioconferenza al telefono cellulare con l'app Microsoft Teams o l'app Skype for Business installata in destinazioni non già incluse nell'abbonamento.
+- Chiamata in uscita da una riunione di audioconferenza al telefono cellulare con l'app Microsoft Teams o l'app Skype for Business installata in destinazioni non già incluse nell'abbonamento.
     
 - Comporre numeri di telefono internazionali nel caso siano disponibili abbonamenti per un **Piano per chiamate nazionali**.
     
@@ -60,23 +60,23 @@ Se ti stai chiedendo quale sia il costo delle chiamate per i Piani per chiamate,
 Per usare i numeri verde, sono necessari crediti comunicazioni in quanto le chiamate vengono fatturate al minuto. Inoltre, è consigliabile impostare i Crediti comunicazioni per gli utenti di Piani per chiamate e Audioconferenza che hanno necessità di effettuare chiamate in uscita verso **qualsiasi destinazione PSTN**. Sono inclusi molti paesi/aree geografiche, ma alcune destinazioni PSTN possono non essere incluse in un dato abbonamento Piano per chiamate e Audioconferenza. Se non vengono impostati i Crediti comunicazioni o assegnata una licenza agli utenti e vengono esauriti i minuti per la propria organizzazione (a seconda del Piano per chiamate e Audioconferenza per lo specifico paese/area geografica), quegli utenti non potranno effettuare chiamate o chiamate in uscita dalle riunioni online in audioconferenza.
   
 > [!NOTE]
-> È necessario configurare i Crediti comunicazioni e quindi assegnare una licenza Crediti comunicazioni per ogni utente nella interfaccia di amministrazione di Microsoft 365  >  **Utenti**  >  **attivi**. Le licenze di Crediti comunicazioni vengono visualizzate come illimitate in quantità, in quanto vengono usate per concedere l'accesso al saldo Crediti comunicazioni per qualsiasi utente a cui si assegna la licenza Crediti comunicazioni.
+> È necessario configurare Crediti comunicazioni e quindi assegnare una licenza Crediti comunicazioni per ogni utente nella interfaccia di amministrazione di Microsoft 365  >  **Utenti**  >  **attivi**. Le licenze di Crediti comunicazioni vengono visualizzate come illimitate in quantità, in quanto vengono usate per concedere l'accesso al saldo Crediti comunicazioni per qualsiasi utente a cui si assegna la licenza Crediti comunicazioni.
   
-È consigliabile valutare attentamente l'utilizzo dei servizi PSTN dell'organizzazione per comprendere la configurazione ottimale per i crediti comunicazioni. Per altre informazioni sui servizi PSTN, leggere Sistema telefonico e Piani per [le](calling-plan-landing-page.md) chiamate e domande frequenti [sulle audioconferenze.](Audio-Conferencing-common-questions.md)
+È consigliabile valutare attentamente l'utilizzo dei servizi PSTN dell'organizzazione per comprendere la configurazione ottimale per i crediti comunicazioni. Per altre informazioni sui servizi PSTN, leggere le Sistema telefonico e i piani per [chiamate](calling-plan-landing-page.md) e le domande frequenti relative [alle audioconferenze.](Audio-Conferencing-common-questions.md)
   
 È possibile considerare la fatturazione a consumo con il **pagamento una tantum** del saldo prepagato **OPPURE** l'impostazione di una somma di **autoricarica** ( **opzione consigliata** ) con un saldo minimo che attiverà un acquisto per tale importo da ricaricare. Inizialmente, è consigliabile configurare importi di autoricarica che consentano di monitorare l'uso effettivo e individuare le giuste soglie di autoricarica che soddisfino le proprie esigenze e i piani di utilizzo. I Crediti comunicazioni dovrebbero essere misurati nel tempo per determinare il saldo minimo e gli importi di ricarica in base alle esigenze di ogni organizzazione.
   
 > [!NOTE]
 > È possibile visualizzare i piani e i prezzi accedendo al [interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e selezionando Abbonamenti fatturazione  >    >  **Aggiungi abbonamenti**. 
   
-**Nell'interfaccia di amministrazione di Microsoft 365** Servizi di acquisto fatturazione è possibile selezionare Crediti comunicazioni per aggiungere i crediti e aggiungere il credito manualmente  >    >    >   in qualsiasi momento. È possibile anche abilitare l'opzione **Autoricarica**, che consente di ricaricare automaticamente l'account quando il saldo scende al di sotto della soglia impostata. Se si sceglie di pagare i Crediti comunicazioni versando l'importo in un'unica soluzione e il saldo scende a zero, i servizi di chiamata aggiuntivi illustrati in precedenza non saranno più disponibili. Per questo, è consigliabile utilizzare la funzione " **Autoricarica** " per evitare qualsiasi interruzione del servizio, nel caso in cui i Crediti comunicazioni arrivino a 0 (zero). Per visualizzare il saldo corrente dei Crediti comunicazioni, accedere a **Fatturazione** Dei tuoi prodotti Crediti  >    >  **comunicazioni**.
+Nella finestra **interfaccia di amministrazione di Microsoft 365** Servizi di acquisto fatturazione Add Ons è possibile selezionare Crediti comunicazioni per aggiungere i crediti e aggiungere il credito manualmente  >    >    >   in qualsiasi momento. È possibile anche abilitare l'opzione **Autoricarica**, che consente di ricaricare automaticamente l'account quando il saldo scende al di sotto della soglia impostata. Se si sceglie di pagare i Crediti comunicazioni versando l'importo in un'unica soluzione e il saldo scende a zero, i servizi di chiamata aggiuntivi illustrati in precedenza non saranno più disponibili. Per questo, è consigliabile utilizzare la funzione " **Autoricarica** " per evitare qualsiasi interruzione del servizio, nel caso in cui i Crediti comunicazioni arrivino a 0 (zero). Per visualizzare il saldo corrente dei Crediti comunicazioni, accedere a **Fatturazione** Dei tuoi prodotti Crediti  >    >  **comunicazioni**.
 
 > [!NOTE]
->Verranno inviati messaggi di posta elettronica a **tutti gli utenti** con l'amministratore del servizio Lync, l'amministratore della società, l'amministratore della fatturazione, Amministratore aziendale, Amministratore account utente, Amministratore helpdesk, amministratore del supporto tecnico del servizio, amministratore della fatturazione, amministratore del servizio Lync, amministratori di dispositivi, amministratore delle applicazioni, amministratore di dispositivi cloud, amministratore di dispositivi cloud, amministratore dell'autenticazione con privilegi, amministratore delle comunicazioni Teams, Teams Communications Support Engineer, Teams Communications Support Specialist, ruoli di amministratore di Teams, quando le transazioni di ricarica hanno esito positivo, le transazioni di ricarica non riescono (ad esempio una carta di credito scaduta) e il saldo dei crediti comunicazioni raggiunge lo 0 (zero).
+>Verranno inviati messaggi di  posta elettronica a tutti gli utenti con l'amministratore del servizio Lync, l'amministratore della società, l'amministratore della fatturazione, l'amministratore della società, l'amministratore dell'account utente, l'amministratore del supporto tecnico, l'amministratore del supporto tecnico, l'amministratore del servizio di fatturazione, l'amministratore del servizio Lync, gli amministratori dei dispositivi, l'amministratore delle applicazioni, l'amministratore delle licenze, l'amministratore del dispositivo cloud, l'amministratore dell'autenticazione con privilegi, Teams Amministratore delle comunicazioni, Teams Communications Support Engineer, Teams Communications Support Specialist, Teams Administrator admin roles, when recharge transactions succeed, recharge transactions fail (such as an expired credit card) and or your Communications Credits balance reaches 0 (zero).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
-Ogni organizzazione farà un diverso uso dei piani per chiamate, a seconda del volume e delle tariffe. Sarà necessario chiedere questo tipo di dati di utilizzo al provider di servizi corrente. Per le organizzazioni che usano già Teams come provider di servizi, è possibile ottenere i dati sull'utilizzo esaminando i dati nell'interfaccia di amministrazione di Microsoft Teams > **Analytics & report** Utilizzo e quindi selezionare Utilizzo  >   **PSTN.**
+Ogni organizzazione farà un diverso uso dei piani per chiamate, a seconda del volume e delle tariffe. Sarà necessario chiedere questo tipo di dati di utilizzo al provider di servizi corrente. Per le organizzazioni che usano già Teams come provider di servizi, è possibile ottenere i dati sull'utilizzo esaminando i dati nell'interfaccia di amministrazione di Microsoft Teams > **Analytics & report** Utilizzo e quindi selezionare PSTN e SMS  >   **(anteprima)usage**.
   
 Quando si impostano i Crediti comunicazioni è necessario analizzare l'uso delle chiamate nella propria organizzazione per determinare gli importi da considerare. È possibile ottenere informazioni sull'utilizzo delle chiamate esaminando il report sull'utilizzo PSTN. Questo report permette di esportare i record dei dati di chiamata su Excel e di creare report personalizzati.
 
@@ -118,7 +118,7 @@ Per consultare piani e prezzi, consultare uno di questi link:
     
 - [Sistema telefonico](https://go.microsoft.com/fwlink/?linkid=799763 )
     
-È anche possibile visualizzare informazioni sui prezzi accedendo al [interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e accedendo a **Servizi** di  >  **acquisto fatturazione.**
+È anche possibile visualizzare informazioni sui prezzi accedendo al interfaccia di amministrazione di Microsoft 365 [e](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) accedendo a **Servizi**  >  **di acquisto fatturazione.**
   
 Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere Microsoft Teams [licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
   

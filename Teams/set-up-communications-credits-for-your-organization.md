@@ -23,12 +23,12 @@ ms.custom:
 - Licensing
 - seo-marvel-apr2020
 description: 'Learn how to set up communication credits (PSTN Consumption) billing licenses for your users and organization. '
-ms.openlocfilehash: 6c66556cdcd32bb99b29bd66291d47bad28d44fd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2fc412627bc211d3ec3290d2cb4c64698e0bca9b
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608773"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60045893"
 ---
 # <a name="set-up-communications-credits-for-your-organization"></a>Configurare i Crediti comunicazioni per la propria organizzazione
 
@@ -60,7 +60,7 @@ Per altre informazioni, vedere Microsoft Teams [licenze per i componenti aggiunt
 
 1. Accedere al interfaccia di amministrazione di Microsoft 365 con [l'account](https://portal.office.com/Adminportal) aziendale o dell'istituto di istruzione.
     
-2. Nel riquadro di spostamento sinistro del interfaccia di amministrazione di Microsoft 365, passare a **Servizi**  >  **di acquisto fatturazione**. Scorrere verso il basso e **selezionare Componenti aggiuntivi**.
+2. Nel riquadro di spostamento sinistro del interfaccia di amministrazione di Microsoft 365, passare a **Servizi di**  >  **acquisto fatturazione**. Scorrere verso il basso e **selezionare Componenti aggiuntivi**.
 
 3. Selezionare **Crediti comunicazioni**.
     
@@ -85,15 +85,15 @@ Per altre informazioni, vedere Microsoft Teams [licenze per i componenti aggiunt
     >[!IMPORTANT]
     >Se si è un cliente di licenze volume, è possibile scegliere il numero di contratto enterprise agreement per il pagamento. Se si dispone di più numeri di enterprise agreement, sarà possibile selezionare il contratto enterprise agreement che si desidera utilizzare per il pagamento. Sarà inoltre possibile specificare un numero d'ordine di acquisto per associare il numero di contratto enterprise agreement (se applicabile).
     
-Ogni organizzazione farà un diverso uso dei Piani per chiamate, a seconda del volume e delle tariffe. Sarà necessario chiedere questo tipo di dati di utilizzo al provider di servizi corrente. Le organizzazioni che usano già Skype for Business Online come provider di servizi possono ottenere i dati sull'utilizzo esaminando i dati nell'interfaccia di amministrazione di **Microsoft Teams** report sui dettagli sull'utilizzo  >    >  **PSTN.**
+Ogni organizzazione farà un diverso uso dei Piani per chiamate, a seconda del volume e delle tariffe. Sarà necessario chiedere questo tipo di dati di utilizzo al provider di servizi corrente. Le organizzazioni che già usano Skype for Business Online come provider di servizi possono ottenere i dati sull'utilizzo esaminando i dati nell'interfaccia di amministrazione di **Microsoft Teams** Analytics & report sull'utilizzo dei report di utilizzo PSTN e  >    >    >  **SMS (anteprima).**
   
-Quando si configurano i Crediti comunicazioni, è necessario esaminare l'utilizzo delle chiamate per l'organizzazione per determinare gli importi necessari. Per ottenere informazioni sull'uso delle chiamate, esaminare il report **Dettagli dell'utilizzo della rete PSTN**. Questo report consente di esportare i record dei dati delle chiamate Excel se è necessario archiviare i dati o creare report personalizzati. Per informazioni su come vedere l'utilizzo, vedere [Report sull'utilizzo PSTN.](/skypeforbusiness/skype-for-business-online-reporting/pstn-usage-report)
+Quando si configurano i Crediti comunicazioni, è necessario esaminare l'utilizzo delle chiamate per l'organizzazione per determinare gli importi necessari. È possibile ottenere informazioni sull'utilizzo delle chiamate esaminando il report sull'utilizzo **di PSTN e SMS (anteprima).** Questo report consente di esportare i record dei dati delle chiamate Excel se è necessario archiviare i dati o creare report personalizzati. Per informazioni su come vedere l'utilizzo, vedere [Report sull'utilizzo PSTN.](/skypeforbusiness/skype-for-business-online-reporting/pstn-usage-report)
   
 ## <a name="step-3-assign-a-communications-credits-license-to-users"></a>Passaggio 3: assegnare agli utenti una licenza Crediti comunicazioni
 
 1. Accedere al interfaccia di amministrazione di Microsoft 365 con [l'account](https://portal.office.com/Adminportal) aziendale o dell'istituto di istruzione.
     
-2. Nel riquadro di spostamento sinistro del interfaccia di amministrazione di Microsoft 365 passare a **Utenti**  >  **utenti attivi** e quindi selezionare un utente nell'elenco.
+2. Nel riquadro di spostamento sinistro del interfaccia di amministrazione di Microsoft 365 passare a **Utenti** utenti attivi e quindi  >  selezionare un utente nell'elenco.
     
 3. Scegliere **Licenze e app.**
     
@@ -103,7 +103,7 @@ Quando si configurano i Crediti comunicazioni, è necessario esaminare l'utilizz
     > Anche se ad alcuni utenti è assegnata una licenza **Enterprise E5**, è consigliabile comunque procedere in questo modo.
 
     > [!TIP]
-    > È possibile usare [PowerShell per](/powershell/module/skype/?view=skype-ps) assegnare licenze e app a più utenti con un solo comando.
+    > È possibile usare [PowerShell per](/powershell/module/skype/?view=skype-ps&preserve-view=true) assegnare licenze e app a più utenti con un solo comando.
   
 ## <a name="want-to-know-about-plans-and-pricing"></a>Informazioni su piani e prezzi.
 
@@ -115,7 +115,7 @@ Per consultare piani e prezzi, consultare uno di questi link:
     
 - [Piani Sistema telefonico](https://go.microsoft.com/fwlink/?LinkId=799763)
     
-È anche possibile visualizzare le informazioni [accedendo al interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e andando su **Abbonamenti**  >  **fatturazione**  >  **Aggiungi abbonamenti**.
+È anche possibile visualizzare le informazioni [accedendo al](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) interfaccia di amministrazione di Microsoft 365 e selezionando Abbonamenti fatturazione  >    >  **Aggiungi abbonamenti.**
   
 Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere Microsoft Teams [licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
   

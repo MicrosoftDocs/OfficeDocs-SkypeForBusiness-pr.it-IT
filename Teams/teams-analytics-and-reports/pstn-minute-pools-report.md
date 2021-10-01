@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams Report pool di minuti PSTN
-author: cichur
-ms.author: v-cichur
+author: serdarsoysal
+ms.author: serdars
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -17,12 +17,12 @@ description: Come usare il report Teams pool di minuti PSTN nell'interfaccia di 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f6ea18ce789ab08a92849833f72d1bf291ebaec9
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: ef2e207352bf4ad7ee3d0f6c8fae674c4022e0b0
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58730275"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60045992"
 ---
 # <a name="microsoft-teams-pstn-minute-pools-report"></a>Microsoft Teams Report pool di minuti PSTN
 
@@ -30,9 +30,9 @@ Il report Teams pool di minuti PSTN nell'interfaccia di amministrazione di Micro
 
 ## <a name="view-the-pstn-minute-pools-report"></a>Visualizzare il report pool di minuti PSTN
 
-Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su Analisi & **report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare Pool di minuti **PSTN** e quindi fare clic su **Esegui report.**
+Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Analisi & report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare Minuti PSTN e **pool SMS(anteprima)** e quindi fare clic su **Esegui report.**
 
-![Screenshot del report Teams pool di minuti PSTN nell'interfaccia di amministrazione.](../media/teams-reports-pstn-minute-pools-with-callouts.png "Screenshot del report Teams pool di minuti PSTN nell'Microsoft Teams di amministrazione con callout numerati")
+![Screenshot del report Teams pool di minuti PSTN nell'interfaccia di amministrazione.](../media/teams-reports-pstn-minute-pools-with-callouts.png "Screenshot del report Teams pool di minuti PSTN nell'interfaccia Microsoft Teams di amministrazione con callout numerati")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 

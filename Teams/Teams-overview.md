@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.dashboard.allteamsdocuments
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d16047b643ee8312a250156cbb5abcd083b01bc2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d94c67e4fa00ea5b0206e67963da486ed9b16832
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603645"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60045792"
 ---
 # <a name="welcome-to-microsoft-teams"></a>Benvenuto in Microsoft Teams
 Se si ricopre il ruolo di amministratore di Microsoft Teams nell'organizzazione, questo è il posto giusto. Quando si è pronti a iniziare a usare Teams, iniziare con [Come implementare Teams](./deploy-overview.md) e [Configurare la collaborazione sicura con Microsoft 365 e Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams).
@@ -57,7 +57,6 @@ Per personalizzare e ampliare le funzionalità di Teams, aggiungere app di terze
 > [!TIP]
 > Per un approfondimento sull'architettura di Teams, guardare i video sul canale [Teams Platform Academy](https://aka.ms/TeamsPlatformAcademy).
 
-
 ## <a name="managing-teams"></a>Gestione di Teams
 
 L'amministratore potrà gestire Teams tramite l'interfaccia di amministrazione di Microsoft Teams. Per un orientamento rapido, guardare il video della pagina Gestire Teams con l'interfaccia di amministrazione di Teams (3:03 min):
@@ -76,7 +75,7 @@ Per mantenersi aggiornati sulle novità di Teams e di tutti gli altri prodotti e
 ## <a name="upgrade-from-skype-for-business-to-teams"></a>Aggiornamento da Skype for Business a Teams
 Teams è il client principale per le comunicazioni intelligenti in Microsoft 365 e Office 365 e sostituirà Skype for Business Online. Per mantenersi aggiornati sulle nuove funzionalità in arrivo su Teams, vedere la [Roadmap di Microsoft 365](https://aka.ms/O365Roadmap). A complemento delle funzionalità di chat e messaggistica permanenti, Teams offre un'esperienza completa di riunioni e chiamate, con video e comandi vocali integrati. Consultare l'articolo [Teams è una soluzione completa per riunioni e chiamate](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-is-now-a-complete-meeting-and-calling-solution/ba-p/236042) nel blog di Microsoft Teams.
 
-Se si utilizza Skype for Business e si desidera eseguire l'aggiornamento a Teams oppure se si utilizzano insieme Skype for Business e Teams e si desidera eseguire il passaggio completo a Teams, sono disponibili strumenti, suggerimenti e indicazioni per effettuare correttamente la transizione. Per ulteriori informazioni, vedere [Aggiornamento a Teams](upgrade-start-here.md).
+Se si usa Skype for Business e si vuole eseguire l'aggiornamento a Teams oppure se si usano insieme Skype for Business e Teams e si vuole eseguire il passaggio completo a Teams, sono disponibili strumenti, suggerimenti e indicazioni per effettuare correttamente la transizione. Per altre informazioni, vedere [Aggiornamento a Teams](upgrade-start-here.md).
 
 ## <a name="teamwork"></a>Lavoro in team
 Ogni team è diverso, non esiste un approccio alla collaborazione universale. Microsoft 365 e Office 365 sono progettati per soddisfare le esigenze specifiche di ogni team, consentendo alle persone di comunicare, collaborare e aumentare la propria produttività con applicazioni integrate e appositamente realizzate.
@@ -89,7 +88,7 @@ Quando si decide quali app e servizi di Microsoft 365 o Office 365 usare, valuta
 
 - **SharePoint** per siti, portali, servizi per contenuti intelligenti, automazione di processi aziendali e ricerche di contenuti nell'organizzazione. SharePoint conserva il contenuto delle collaborazioni, rendendo tutti i tipi di contenuti facilmente accessibili e condivisibili tra i team. La stretta integrazione con Outlook, Yammer e Teams consente una perfetta collaborazione ai contenuti nelle esperienze di conversazione.
 
-- **OneDrive for Business** per l'archiviazione e la condivisione di file con persone invitate dagli utenti. OneDrive for Business è l'opzione migliore per archiviare bozze e documenti personali che non si desidera condividere, in quanto il contenuto salvato in OneDrive for Business resta privato finché l'utente non lo condivide con altre persone.
+- **OneDrive for Business** per l'archiviazione e la condivisione di file con persone invitate dagli utenti. OneDrive for Business è l'opzione migliore per archiviare bozze e documenti personali che non si vogliono condividere, perché il contenuto salvato in OneDrive for Business resta privato finché l'utente non lo condivide con altre persone.
 
 - **Yammer** per connettere le persone all'interno dell'organizzazione. Promuovere iniziative a livello aziendale, condividere procedure consigliate e creare community su argomenti di interesse o competenze comuni. Sviluppare nuove idee in collaborazione per incoraggiare dibattiti aperti con le persone all'interno della società.
 

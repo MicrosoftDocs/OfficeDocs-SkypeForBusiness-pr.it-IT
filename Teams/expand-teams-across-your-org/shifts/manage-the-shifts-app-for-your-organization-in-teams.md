@@ -1,7 +1,7 @@
 ---
 title: Gestire l'app Turni per l'organizzazione
-author: cichur
-ms.author: v-cichur
+author: serdarsoysal
+ms.author: serdars
 ms.reviewer: lisawu,gumariam
 manager: serdars
 ms.topic: article
@@ -22,12 +22,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7e58b7452ec3e89ded6f24da17490cf476885d72
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: d7c1bdde4764b56e8c45a8ad9356437525f00b56
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58727835"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60045722"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Turni per l'organizzazione in Microsoft Teams
 
@@ -36,7 +36,7 @@ ms.locfileid: "58727835"
 
 ## <a name="overview-of-shifts"></a>Panoramica di Turni
 
-L'app Turni in Microsoft Teams mantiene i dipendenti in prima linea connessi e sincronizzati. È progettato per la gestione e la comunicazione del tempo per i team in modo rapido ed efficace. Turni consente ai dipendenti in prima linea e ai loro manager di usare i loro dispositivi mobili per gestire le pianificazioni e tenersi in contatto.
+L'app Turni in Microsoft Teams mantiene i dipendenti in prima linea connessi e sincronizzati. È progettato per la gestione e la comunicazione del tempo per i team in modo rapido ed efficace. I turni consentono ai dipendenti in prima linea e ai loro manager di usare i dispositivi mobili per gestire le pianificazioni e tenersi in contatto.
 
 - I manager creano, aggiornano e gestiscono le pianificazioni dei turni per i team. Possono inviare messaggi a una persona ("c'è una perdita sul pavimento") o all'intero team ("il responsabile locale arriverà tra 20 minuti"). Possono anche inviare documenti con criteri, bollettini di notizie e video.
 - I dipendenti visualizzano i propri turni successivi, vedono quali sono gli altri colleghi pianificati per la giornata, possono richiedere o offrire un cambio di turno e richiedere un permesso.
@@ -68,7 +68,7 @@ Turni è abilitato per impostazione predefinita per tutti gli utenti di Teams ne
 
 ### <a name="enable-or-disable-shifts-for-specific-users-in-your-organization"></a>Abilitare o disabilitare Turni per utenti specifici nell'organizzazione
 
-Per consentire o impedire a utenti specifici dell'organizzazione di usare Turni, verificare che l'opzione Turni sia attivata per l'organizzazione nella [pagina Gestisci](../../manage-apps.md) app. Creare quindi criteri di autorizzazione dell'app personalizzati e assegnarli a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](../../teams-app-permission-policies.md).
+Per consentire o impedire a utenti specifici dell'organizzazione di usare Turni, verificare che l'opzione Turni sia attivata per l'organizzazione nella [pagina Gestisci app.](../../manage-apps.md) Creare quindi criteri di autorizzazione dell'app personalizzati e assegnarli a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](../../teams-app-permission-policies.md).
 
 ### <a name="use-the-firstlineworker-app-setup-policy-to-pin-shifts-to-teams"></a>Usare i criteri di configurazione dell'app FirstLineWorker per aggiungere turni Teams
 
@@ -76,9 +76,9 @@ I criteri di configurazione dell’app consentono di personalizzare Teams per ev
  
 Teams include un criterio di configurazione dell'app FirstLineWorker predefinito che è possibile assegnare ai lavoratori in prima linea dell'organizzazione. Per impostazione predefinita, il criterio include le app Attività, Turni, Chat e Chiamate.
 
-Per visualizzare il criterio FirstLineWorker, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a Criteri di configurazione delle **app** Teams  >  app.
+Per visualizzare il criterio FirstLineWorker, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare Teams criteri di configurazione   >  **dell'app.**
 
-![Screenshot dei criteri di configurazione dell'app FirstLineWorker.](../../media/firstline-worker-app-setup-policy.png "Screenshot dei criteri di configurazione dell'app FirstLineWorker nell'Microsoft Teams di amministrazione")
+:::image type="content" source="../../media/firstline-worker-app-setup-policy-new.png" alt-text="Screenshot dei criteri di configurazione dell'app FirstLineWorker nell'Microsoft Teams di amministrazione" lightbox="../../media/firstline-worker-app-setup-policy-new.png":::
 
 #### <a name="assign-the-firstlineworker-app-setup-policy-to-users"></a>Assegnare i criteri di configurazione dell'app FirstLineWorker agli utenti
 

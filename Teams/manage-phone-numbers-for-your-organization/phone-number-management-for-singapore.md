@@ -1,7 +1,7 @@
 ---
 title: Telefono gestione dei numeri per Singapore
-author: cichur
-ms.author: v-cichur
+author: cazawideh
+ms.author: czawideh
 manager: serdars
 ms.reviewer: chandra.kilaru, kristen.kutser
 ms.topic: reference
@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono a Singapore per Microsoft Teams.
-ms.openlocfilehash: 0999a09e0899e65340f0895a1e877b93653a1288
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 176abb49d9480fc7d2e9da71da631d173885c048
+ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595020"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "60045752"
 ---
 # <a name="phone-number-management-for-singapore"></a>Telefono gestione dei numeri per Singapore
 
@@ -37,8 +37,8 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams. |A Singapore è possibile ottenere i numeri di telefono dell'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e contattando [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per Singapore (v.1.0) (en-sg)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-the-united-states-(v.5.0)-(en-us).pdf?raw=true). <br/><br/>Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conoscere il cliente, completarlo per intero e contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.  |
-|Fai trasferire a noi i numeri di telefono.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per Singapore (tutti i numeri) (v.1.0) (en-sg)](https://download.microsoft.com/download/e/3/0/e304e2d3-96b4-43fd-801d-68df4825ce6b/letter-of-authorization-(loa)-for-singapore-(all-numbers)-(v.1.0)-(en-sg).pdf) <br/> <br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) <br/><br/>Il trasferimento di numeri può richiedere da una a sei settimane in questo mercato, a seconda della complessità del porto. <br/><br/>Questi numeri non possono essere usati per le conferenze in questo momento.  |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams. |A Singapore è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e contattando [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per Singapore (v.1.0) (en-sg)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-the-united-states-(v.5.0)-(en-us).pdf?raw=true). <br/><br/>Prima di poter assegnare i numeri di telefono, è necessario scaricare uno dei moduli per conoscere i clienti seguenti:<ul><li>[Conoscere il cliente Singapore - Cinese v1.0 zn-CN](https://download.microsoft.com/download/1/4/7/147324ac-06a5-4c7b-a38b-7efa0166fdf7/know-your-customer-for-singapore-(v1.0)-(zh-CN).pdf)</li><li>[Conoscere il cliente per Singapore - Tamil v1.0 ta-IN](https://download.microsoft.com/download/b/4/8/b48457c1-cef1-4bc7-ae44-71c5302e5eb2/know-your-customer-for-singapore-(v1.0)-(ta-IN).pdf)</li><li>[Conoscere il cliente Singapore - Malese v1.0 ms-MY](https://download.microsoft.com/download/f/5/9/f597a754-9478-4d5b-88af-a2a2fe5bbd62/know-your-customer-for-singapore-(v1.0)-(ms-MY).pdf)</li></ul> <br>completarlo per intero e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.  |
+|Fai trasferire a noi i numeri di telefono.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per Singapore (tutti i numeri) (v.1.0) (en-sg)](https://download.microsoft.com/download/e/9/5/e959053a-4b35-49f9-a23e-7085575c46f2/letter-of-authorization-(loa)-for-singapore-(all-numbers)-(v.1.0)-(en-sg).pdf)<br/> <br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) <br/><br/>Il trasferimento di numeri può richiedere da una a sei settimane in questo mercato, a seconda della complessità del porto. <br/><br/>Questi numeri non possono essere usati per le conferenze in questo momento.  |
 |Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
 |Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
 |Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)|
