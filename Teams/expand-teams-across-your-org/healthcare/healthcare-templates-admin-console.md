@@ -22,12 +22,12 @@ appliesto:
 ms.reviewer: yinchang
 description: Informazioni su come gestire e usare i modelli del team sanitario nell'interfaccia di amministrazione di Teams e con Microsoft Graph per creare rapidamente e facilmente team per l'organizzazione sanitaria.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 00da42e4e573306a3737b1d35e89292b04df4fa4
-ms.sourcegitcommit: 6a65e318d49d8990f2b3409ff7bb2c61ea1f2525
+ms.openlocfilehash: 5345f5e9886bbcb9e4a2274d21d2aabb0be373c6
+ms.sourcegitcommit: 5eb5acd7910724f7f4a598ecc28b003e5bbe5ea5
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/29/2021
-ms.locfileid: "59991125"
+ms.locfileid: "60007806"
 ---
 # <a name="use-healthcare-team-templates"></a>Usare i modelli di team per il settore sanitario
 
@@ -37,16 +37,16 @@ Per le organizzazioni sanitarie, i modelli di team possono essere particolarment
 
 Teams include modelli progettati specificamente per le organizzazioni sanitarie. Usare questi modelli predefiniti per creare rapidamente team in cui il personale possa comunicare e collaborare alle esigenze operative o di assistenza ai pazienti. In questo articolo verranno presentati i modelli di Teams e verrà consigliato come usarli.
 
-La gestione e l'utilizzo dei modelli di team dipendono dall'amministratore o dallo sviluppatore.
+La gestione e l'utilizzo dei modelli di team dipendono dal fatto che si sia amministratori o sviluppatori.
 
-|Se sei: | Quindi, è possibile: |
+|Se sei: | Allora puoi: |
 | ---- | --------- |
-| Un amministratore o un professionista IT |[Gestire i modelli di team nell'interfaccia di amministrazione di Teams.](#manage-team-templates-in-the-teams-admin-center) Visualizzare i modelli di team e applicare criteri di modelli per controllare quali modelli possono essere utilizzati dal personale in Teams per la creazione di team. |
+| Un amministratore o un professionista IT |[Gestire i modelli di team nell'interfaccia di amministrazione di Teams](#manage-team-templates-in-the-teams-admin-center). Visualizzare i modelli di team e applicare i criteri di modelli per controllare quali modelli possono essere utilizzati in Teams dal personale per la creazione di team. |
 | Uno sviluppatore | [Usare Microsoft Graph](#use-team-templates-with-microsoft-graph) per creare team dai modelli di team. |
 
 ## <a name="manage-team-templates-in-the-teams-admin-center"></a>Gestire i modelli di team nell’interfaccia di amministrazione di Teams
 
-Gli amministratori possono creare e gestire team e canali nel client di Teams o nell'interfaccia di amministrazione di Microsoft Teams. Qui è possibile visualizzare i dettagli su ogni modello. È anche possibile [creare e assegnare criteri](../../templates-policies.md) di modelli al personale per controllare i modelli visualizzati in Teams per la creazione di [team.](https://support.microsoft.com/office/create-a-team-from-a-template-a90c30f3-9940-4897-ab5b-988e69e4cd9c) 
+Gli amministratori possono gestire i modelli di team nell'interfaccia di amministrazione di Microsoft Teams. Qui è possibile visualizzare i dettagli su ogni modello. È anche possibile [creare e assegnare criteri di modelli](../../templates-policies.md) al personale per controllare i modelli visualizzati in Teams per la creazione di [team](https://support.microsoft.com/office/create-a-team-from-a-template-a90c30f3-9940-4897-ab5b-988e69e4cd9c). 
 
 Per altre informazioni sui modelli di team in generale, vedere Introduzione ai modelli [di team nell'interfaccia di amministrazione di Teams.](../../get-started-with-teams-templates-in-the-admin-console.md)
 
@@ -60,7 +60,7 @@ Attualmente sono disponibili i modelli di team sanitari predefiniti seguenti. Pe
 | Assistenza ai pazienti |`healthcareWard` | Canali:<ul><li>Generale</li><li>Annunci<ul><li>Bollettini&sup1;</li></ul></li><li>Riunioni informali<ul><li>Elenchi (elenco pazienti)&sup1;</li></ul></li><li>Arrotondamenti<ul><li>Ispezione&sup1;</li></ul></li><li>Personale</li><li>Formazione</li></ul> App: <ul><li>Wiki</li><li>Elenchi</li><li>Attività</li><li>Approvazioni</li><li>Turni</li><li>Bollettini</li><li>Revisione</li></ul>|
 ||||
 
-&sup1; App aggiunta al canale come scheda.
+&sup1; App aggiunta al canale come scheda
 ### <a name="hospital"></a>Ospedale
 
 Questo modello mira a semplificare le comunicazioni e la collaborazione tra più reparti, dispensari e dipartimenti all'interno di un ospedale. Questo modello include un set di canali di base per le operazioni ospedaliere e può essere esteso per essere personalizzato.
@@ -70,10 +70,10 @@ Questo modello mira a semplificare le comunicazioni e la collaborazione tra più
 |Ospedale|`healthcareHospital`|Canali: <ul><li>Generale<ul><li>Elenchi&sup1;</li></ul></li><li>Announcements<ul><li>Bollettini&sup1;</li></ul></li><li>Conformità</li><ul><li>Ispezione&sup1;</li></ul></li><li>Pulizie</li><li>Risorse umane<ul><li>Idee&sup1;</li></ul></li><li>Farmacia</li></ul> App: <ul><li>Wiki</li><li>Attività</li><li>Elenchi</li><li>Approvazioni</li><li>Turni</li><li>Bollettini</li><li>Revisione</li><li>Idee</li></ul>|
 ||||
 
-&sup1; App aggiunta al canale come scheda.
-## <a name="use-team-templates-with-microsoft-graph"></a>Usare i modelli di team con Microsoft Graph
+&sup1; App aggiunta al canale come scheda
+## <a name="use-team-templates-with-microsoft-graph"></a>Usare i modelli di Teams con Microsoft Graph
 
-Gli sviluppatori possono usare Microsoft Graph per creare team da modelli di team predefiniti. Per altre informazioni sull'uso dei modelli di team con Microsoft Graph, vedere Introduzione ai modelli di team con [Microsoft Graph](../../get-started-with-teams-templates.md), panoramica dell'API [Microsoft Teams](/graph/teams-concept-overview?view=graph-rest-1.0)e tipo di risorsa [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-1.0).
+Gli sviluppatori possono usare Microsoft Graph per creare team da modelli predefiniti di team. Per altre informazioni sull'uso dei modelli di team con Microsoft Graph, vedere Introduzione ai modelli di team con [Microsoft Graph](../../get-started-with-teams-templates.md), panoramica dell'API [Microsoft Teams](/graph/teams-concept-overview?view=graph-rest-1.0)e tipo di risorsa [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-1.0).
 
 Ecco i modelli predefiniti del team sanitario.
 ### <a name="ward"></a>Reparto
