@@ -21,13 +21,13 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.callanalytics
 - ms.teamsadmincenter.users.activity.audioqualitycolumn
 - Reporting
-description: Usare la telemetria in tempo reale con dettagli su dispositivi, reti e connettività per risolvere i problemi degli utenti con le riunioni Microsoft Teams pianificate.
-ms.openlocfilehash: 2730cb41267e8d02572f72d4d9ed7f154e021d9d
-ms.sourcegitcommit: 26ce61afcb743c8b9e06b4fa048ad93ab70c31c5
+description: Usare la telemetria in tempo reale con dettagli su dispositivi, reti e connettività per risolvere i problemi degli utenti Microsoft Teams riunioni pianificate.
+ms.openlocfilehash: 94b303687995ac3bcd765991dbfeb41c6f1459e7
+ms.sourcegitcommit: 74d3ab35c344d70b2399bc46a6ced3ab2762a470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "60082956"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60138362"
 ---
 # <a name="use-real-time-telemetry-to-troubleshoot-poor-meeting-quality"></a>Usare la telemetria in tempo reale per risolvere i problemi di qualità scarsa delle riunioni
 
@@ -40,7 +40,7 @@ Questo articolo spiega come usare Real-Time Analytics (RTA) per risolvere i prob
 - Teams Specialista del supporto per le comunicazioni
 - Tecnico supporto comunicazioni Teams
 
-Per altre informazioni sui ruoli Teams di amministratore, vedere Usare i ruoli di Microsoft Teams di amministratore per [gestire Teams](/MicrosoftTeams/using-admin-roles).
+Per altre informazioni sui ruoli Teams di amministratore, vedere Usare i ruoli di Microsoft Teams [di amministratore](/MicrosoftTeams/using-admin-roles)per gestire Teams .
 
 Real-Time Analytics consente agli amministratori IT di esaminare le riunioni pianificate degli utenti importanti e vedere i problemi relativi a audio, video, condivisione di contenuti e rete. Gli amministratori possono usare questa telemetria per analizzare questi problemi durante le riunioni e risolvere i problemi in tempo reale.
 
@@ -50,7 +50,7 @@ Oggi, la risoluzione dei problemi relativi alle singole riunioni è disponibile 
 
 Real-Time Analytics mostra informazioni dettagliate sulle riunioni Teams per ogni utente dell'account Office 365, aggiornato in tempo reale. Include informazioni su dispositivi, rete, connettività, audio, video e problemi di condivisione dei contenuti, che aiuteranno gli amministratori a risolvere i problemi di qualità delle chiamate in modo più efficace.
 
-Gli amministratori Teams ottenere l'accesso completo a tutti i dati di telemetria in tempo reale per ogni utente. È anche possibile assegnare ruoli Azure Active Directory al personale di supporto. Per altre informazioni su questi ruoli, vedere Concedere [l'autorizzazione al personale](set-up-call-analytics.md#give-permission-to-support-and-helpdesk-staff)di supporto e help desk.
+Gli amministratori Teams ottenere l'accesso completo a tutti i dati di telemetria in tempo reale per ogni utente. Inoltre, è possibile assegnare ruoli Azure Active Directory al personale di supporto. Per altre informazioni su questi ruoli, vedere Concedere [l'autorizzazione al personale](set-up-call-analytics.md#give-permission-to-support-and-helpdesk-staff)di supporto e help desk.
 
 ## <a name="where-to-find-per-user-real-time-troubleshooting-telemetry"></a>Dove trovare la telemetria della risoluzione dei problemi in tempo reale per ogni utente
 
@@ -65,6 +65,19 @@ Per ottenere altre informazioni sui partecipanti a una riunione in corso, inclus
 Per esaminare la telemetria di un determinato utente per una riunione in corso, incluse le informazioni su dispositivo, rete, audio, video e condivisione di contenuti, selezionare **l'ID riunione.**
 
 ![Screenshot dei dati della sessione utente di analisi delle chiamate.](media/real-time-telemetry.png)
+
+## <a name="measures-available-in-real-time-analytics"></a>Misure disponibili in Real-Time Analytics
+
+|Nome misura |Unità |Soglia buona |Descrizione |
+|:---|:---|:---|:---|
+|Jitter |Millisecondi |Meno di 30 ms |Instabilità è una misura della variazione del ritardo dei pacchetti per un flusso di dati. Quando l'audio è troppo alto, l'audio può diventare mosso. | 
+|Perdita pacchetti |Percentuale |Meno del 5% |La perdita di pacchetti si verifica quando i pacchetti di dati non riescono a raggiungere la destinazione. La percentuale di pacchetti persi si basa sul numero totale di pacchetti inviati. |
+|Tempo di andata e ritorno |Millisecondi |Meno di 500 ms |Il tempo di round trip è il tempo necessario per un singolo pacchetto per viaggiare dal client all'endpoint remoto e tornare al client. Un tempo di round trip elevato può causare ritardi nella riproduzione del flusso. Un esempio è quando due persone in una riunione parlano involontariamente l'una sull'altra a causa del ritardo. |
+|Bitrate (audio) |Kilobit al secondo (Kbps) |Maggiore di 24 Kbps |Velocità effettiva del flusso audio espressa in kilobit al secondo. |
+|Bitrate (Video & app sharing) |Megabit al secondo (Mbps) | Solo informazioni |Velocità effettiva dello stream video espressa in megabit al secondo. |
+|Frequenza fotogrammi (Video) |Fotogrammi al secondo |360p o versione migliore: 25-30 FPS <br/> 270p o inferiore: 7-15 FPS |Per i flussi video in uscita, la frequenza fotogrammi (FPS) è il numero di fotogrammi al secondo del video inviato dal client. Valori inferiori al previsto possono suggerire vincoli di risorse di sistema, larghezza di banda di rete insufficiente o dispositivi di acquisizione video non appropriati. Risoluzioni diverse hanno intervalli FPS accettabili diversi. |
+|Frequenza fotogrammi (condivisione app) |Frame al secondo (FPS) |Solo informazioni |Per la condivisione delle app, la frequenza fotogrammi è in grado di riconoscere il contenuto per assicurarsi che il numero di frame necessario sia inviato per garantire una buona esperienza, evitando l'invio di frame se non sono necessari. Ad esempio, la condivisione di un documento di testo su schermo richiede solo 1 fotogramma al secondo per produrre un'esperienza ottimale, mentre la condivisione di un video o di contenuto con più attività aumenterà i frame al secondo fino a un massimo di 30 FPS per ottenere un'esperienza più fluida. |
+
 
 ## <a name="client-platforms-supported-for-real-time-telemetry"></a>Piattaforme client supportate per la telemetria in tempo reale
 

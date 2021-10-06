@@ -21,12 +21,12 @@ ms.custom:
 - ms.teamsadmincenter.orgwidesettings.resourceaccounts.overview
 - seo-marvel-apr2020
 description: In questo articolo imparerai a creare, modificare e gestire gli account delle risorse in Microsoft Teams.
-ms.openlocfilehash: 8b58aae22afdff749e82ca67ff8b4a457f72b9de
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 915547fea13a9d5b240e92b7d0a37515a271ebf9
+ms.sourcegitcommit: 74d3ab35c344d70b2399bc46a6ced3ab2762a470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726645"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60138252"
 ---
 # <a name="manage-resource-accounts-in-microsoft-teams"></a>Gestire gli account di risorsa in Microsoft Teams
 
@@ -47,7 +47,7 @@ Ogni account della risorsa richiede una licenza per lavorare con operatori autom
 
 Verrà illustrato come assegnare la licenza a un account delle risorse più avanti in questo articolo.
 
-Per ottenere la licenza per l'utente virtuale, nel interfaccia di amministrazione di Microsoft 365 passare a Abbonamenti ai componenti aggiuntivi Servizi di acquisto fatturazione e scorrere fino alla fine- verrà visualizzato Sistema telefonico - Licenza utente  >    >   virtuale.  Seleziona **Acquista ora**. Il costo è zero, ma è comunque necessario seguire questa procedura per acquisire la licenza.
+Per ottenere la licenza per l'utente virtuale, nel interfaccia di amministrazione di Microsoft 365 passare a Abbonamenti ai componenti aggiuntivi Servizi di acquisto fatturazione e scorrere fino alla fine - verrà visualizzato Sistema telefonico - Licenza utente  >    >   virtuale.  Seleziona **Acquista ora**. Il costo è zero, ma è comunque necessario seguire questa procedura per acquisire la licenza.
 
 ### <a name="obtain-service-numbers"></a>Ottenere i numeri di servizio
 
@@ -61,11 +61,11 @@ Per trasferire un numero da un altro gestore, vedere Trasferire numeri [di telef
 
 ## <a name="create-a-resource-account"></a>Creare un account della risorsa
 
-È possibile creare un account delle risorse nell'Teams di amministrazione.
+È possibile creare un account della risorsa nell'Teams di amministrazione.
 
 ![Screenshot dell'interfaccia utente per l'aggiunta di un account di risorsa.](media/resource-account-add.png)
 
-1. Nell'Teams di amministrazione espandere **Impostazioni a** livello di organizzazione e quindi fare clic su **Account risorse.**
+1. Nell'Teams di amministrazione espandere **Voce** e quindi fare clic su **Account risorse.**
 
 2. Fare clic su **Aggiungi**.
 
@@ -77,9 +77,9 @@ Per trasferire un numero da un altro gestore, vedere Trasferire numeri [di telef
 
 ## <a name="assign-a-license"></a>Assegnare una licenza
 
-Per ogni account della risorsa, è necessario assegnare una *licenza Microsoft 365 Sistema telefonico - Utente* virtuale o Sistema telefonico licenza. 
+Per ogni account della risorsa, è necessario assegnare una licenza *Microsoft 365 Sistema telefonico - Utente* virtuale o Sistema telefonico licenza. 
 
-![Screenshot dell'interfaccia utente per l'assegnazione delle licenze nel interfaccia di amministrazione di Microsoft 365.](media/resource-account-assign-virtual-user-license.png)
+![Screenshot dell'interfaccia utente per l'assegnazione di licenze nel interfaccia di amministrazione di Microsoft 365.](media/resource-account-assign-virtual-user-license.png)
 
 1. Nella finestra interfaccia di amministrazione di Microsoft 365 fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
 
@@ -120,14 +120,14 @@ Vedere i riferimenti seguenti:
 
 ## <a name="change-an-existing-resource-account-to-use-a-virtual-user-license"></a>Modificare un account delle risorse esistente per usare una licenza utente virtuale
 
-Se si decide di cambiare le licenze dell'account delle risorse esistente da una licenza **di Sistema telefonico a** una licenza utente virtuale, è necessario acquisire la licenza utente virtuale gratuita e quindi seguire i passaggi del interfaccia di amministrazione di Microsoft 365 per spostare gli utenti in un abbonamento diverso. [](/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription)
+Se si decide di cambiare le licenze dell'account delle risorse esistenti da una licenza **di Sistema telefonico a** una licenza utente virtuale, è necessario acquisire la licenza utente virtuale gratuita e quindi seguire i passaggi del interfaccia di amministrazione di Microsoft 365 per spostare gli utenti in un abbonamento diverso. [](/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription)
 
 > [!WARNING]
 > Rimuovere sempre una licenza Sistema telefonico e assegnare la licenza utente virtuale nella stessa attività di licenza. Se si rimuove la vecchia licenza, si salvano le modifiche all'account, si aggiunge la nuova licenza e quindi si salvano di nuovo le impostazioni dell'account, l'account della risorsa potrebbe non funzionare più come previsto. In questo caso, è consigliabile creare un nuovo account della risorsa per la licenza utente virtuale e rimuovere l'account della risorsa danneggiato.
 
 ## <a name="skype-for-business-server-2019"></a>Skype Per Business Server 2019
 
-Per gli account delle risorse ospitati in Skype For Business Server 2019 che possono essere usati con le code di chiamata cloud e gli operatori automatici cloud, vedere Pianificare le code di chiamata [cloud](/SkypeforBusiness/hybrid/plan-call-queue) o Pianificare gli operatori automatici [cloud.](/SkypeForBusiness/hybrid/plan-cloud-auto-attendant) Le implementazioni ibride (numeri ospitati nel routing diretto) vengono configurate usando il cmdlet [New-CsHybridApplicationEndpoint](/powershell/module/skype/new-cshybridapplicationendpoint) in un server Skype for Business Server 2019 locale.
+Per gli account delle risorse ospitati in Skype For Business Server 2019 che possono essere usati con le code di chiamata cloud e gli operatori automatici cloud, vedere Pianificare le code di chiamata [cloud](/SkypeforBusiness/hybrid/plan-call-queue) o Pianificare gli operatori automatici [cloud.](/SkypeForBusiness/hybrid/plan-cloud-auto-attendant) Le implementazioni ibride (numeri ospitati in Direct Routing) vengono configurate usando il cmdlet [New-CsHybridApplicationEndpoint](/powershell/module/skype/new-cshybridapplicationendpoint) in un server Skype for Business Server 2019 locale.
 
 Gli ID applicazione da usare durante la creazione delle istanze dell'applicazione sono:
 
@@ -135,7 +135,7 @@ Gli ID applicazione da usare durante la creazione delle istanze dell'applicazion
 - **Coda di chiamata:** 11cd3e2e-fccb-42ad-ad00-878b93575e07
 
 > [!NOTE]
-> Se si vuole che la coda di chiamata o l'operatore automatico sia ricercabile dagli utenti di Skype For Business Server 2019, è consigliabile creare gli account delle risorse in Skype For Business Server 2019, poiché gli account delle risorse online non vengono sincronizzati con Active Directory. Quando i record DNS SRV per sipfederationtls vengono risolti Skype for Business Server 2019, gli account delle risorse devono essere creati in Skype For Business Server 2019 con SfB Management Shell e sincronizzati con Azure AD. 
+> Se si vuole che la coda di chiamata o l'operatore automatico sia ricercabile dagli utenti di Skype For Business Server 2019, è consigliabile creare gli account delle risorse in Skype For Business Server 2019, poiché gli account delle risorse online non vengono sincronizzati con Active Directory. Quando i record SRV DNS per sipfederationtls si risolvono  Skype for Business Server 2019, gli account delle risorse devono essere creati in Skype For Business Server 2019 con SfB Management Shell e sincronizzati con Azure AD.
 
 Per le implementazioni ibride con Skype for Business Server:
 

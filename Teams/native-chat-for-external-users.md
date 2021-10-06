@@ -15,16 +15,16 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: Informazioni sull'esperienza Teams chat nativa per gli utenti con accesso esterno (federato) in Microsoft Teams in cui entrambi gli utenti sono in modalità di aggiornamento TeamsOnly.
-ms.openlocfilehash: 3d94c55dc184d80edbc22be53f1df18c256423c5aa04b7e342b8964463db1aa7
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 992b4dd28d17f1ba8abf7217d622da18813c3118
+ms.sourcegitcommit: 74d3ab35c344d70b2399bc46a6ced3ab2762a470
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54350598"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "60138232"
 ---
 # <a name="native-chat-experience-for-external-federated-users-in-microsoft-teams"></a>Esperienza di chat nativa per utenti esterni (federati) in Microsoft Teams
 
-Quando un Microsoft Teams chatta con un utente esterno (federato), l'esperienza di chat è limitata al testo. Tuttavia, se sia l'utente di Teams che la persona di un'altra organizzazione sono in modalità di aggiornamento TeamsOnly, è possibile avere un'esperienza di chat nativa di Teams, che include formattazione avanzata, @mentions e altre funzionalità di chat. Le Teams chat native con persone di altre organizzazioni sono limitate a 1:1 chat.
+Quando un Microsoft Teams chatta con un utente esterno (federato), l'esperienza di chat è limitata al testo. Tuttavia, se sia l'utente di Teams che la persona in un'altra organizzazione sono in modalità di aggiornamento TeamsOnly, è possibile avere un'esperienza di chat nativa di Teams, che include formattazione avanzata, @mentions e altre funzionalità di chat.
 
 L'esperienza di chat nativa per le persone di altre organizzazioni è attivata per tutti Teams tenant, ma non tutte le persone sono idonee. Per offrire un'esperienza di chat nativa, sia il mittente che il destinatario devono essere configurati per la modalità di aggiornamento TeamsOnly. Per altre informazioni sui criteri di aggiornamento, vedere [Impostazione delle impostazioni di coesistenza e aggiornamento.](setting-your-coexistence-and-upgrade-settings.md)
 
@@ -32,9 +32,9 @@ Per visualizzare un elenco delle funzionalità per gli utenti con accesso estern
 
 ## <a name="how-do-i-know-if-im-in-a-native-chat"></a>Come si fa a sapere se si è in una chat nativa?
 
-Se è possibile scambiare testo nella chat solo con persone di altre organizzazioni, si è in una chat standard di accesso esterno (federato). Se hai altre funzionalità di chat, tra cui formattazione, @mentions, emoji e così via, sei in una chat Teams nativa. 
+Se è possibile scambiare testo nella chat solo con persone di altre organizzazioni, si è in una chat ad accesso esterno (federato) standard. Se hai altre funzionalità di chat, tra cui formattazione, @mentions, emoji e così via, sei in una chat Teams nativa. 
 
-Teams controlla periodicamente la modalità di aggiornamento per le persone di altre organizzazioni e, quando trova un Teams che esegue Teams in modalità di aggiornamento TeamsOnly, ti verrà richiesto di passare a una chat Teams nativa e bloccare la chat originale.
+Teams controlla periodicamente la modalità di aggiornamento per le persone di altre organizzazioni e, quando trova un utente che esegue Teams nella modalità di aggiornamento TeamsOnly, ti chiederà di passare a una chat Teams nativa e bloccare la chat originale.
 
 Quando si passa a una chat Teams nativa, Teams le due conversazioni non vengono unite. Al contrario, vedrai entrambe le chat nel feed chat. La nuova chat nativa Teams è attiva, ma la vecchia chat di solo testo è bloccata.
 
