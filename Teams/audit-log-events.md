@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Informazioni su come recuperare Microsoft Teams dati dal log di controllo nel Centro conformità Microsoft 365.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b6c3b90906fe5a65d0c4fab2fdc20aeb69099743
-ms.sourcegitcommit: 74d3ab35c344d70b2399bc46a6ced3ab2762a470
+ms.openlocfilehash: 5d19e29734f8e62b77a0a355c366c2bdc7a6bbde
+ms.sourcegitcommit: 7b704ba3c9d2db9740c4aad9e5a75a830bbbb63b
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/06/2021
-ms.locfileid: "60138272"
+ms.locfileid: "60148907"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Cercare gli eventi nel log di controllo Microsoft Teams
 
@@ -42,18 +42,20 @@ Per un elenco completo delle Teams di lavoro [](#teams-activities) che vengono v
 
 ## <a name="turn-on-auditing-in-teams"></a>Attivare il controllo in Teams
 
-Prima di esaminare i dati di controllo, è necessario attivare il controllo nel Centro [sicurezza & conformità.](https://protection.office.com) Per assistenza con l'attivazione del controllo, vedere Attivare o disattivare la ricerca [nel log di controllo.](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
+Prima di esaminare i dati di controllo, è necessario attivare il controllo nel Centro conformità Microsoft 365. Per altre informazioni, vedere Attivare o [disattivare il controllo.](/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
 > [!IMPORTANT]
 > I dati di controllo sono disponibili solo dal punto in cui è stato attivato il controllo.
 
 ## <a name="retrieve-teams-data-from-the-audit-log"></a>Recuperare Teams dati dal log di controllo
 
-1. Per recuperare i log di controllo, passare al [Centro sicurezza & conformità.](https://go.microsoft.com/fwlink/?linkid=855775) In **Cerca** selezionare **Ricerca nel log di controllo.**
+1. Per recuperare i log di controllo Teams attività, passare <https://compliance.microsoft.com> a e selezionare **Controllo**.
 
-2. Usare **La ricerca** per filtrare in base alle attività, alle date e agli utenti da controllare.
+2. Nella pagina **Cerca** filtrare le attività, le date e gli utenti da controllare.
 
 3. Esportare i risultati in Excel per ulteriori analisi.
+
+Per istruzioni dettagliate, vedere Eseguire una ricerca [nel log di controllo nel Centro conformità.](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#search-the-audit-log)
 
 > [!IMPORTANT]
 > I dati di controllo sono visibili nel log di controllo solo se il controllo è attivato.
@@ -64,18 +66,17 @@ Il periodo di tempo in cui un record di controllo viene mantenuto ed è possibil
 
 Ecco alcuni suggerimenti per cercare Teams attività nel log di controllo.
 
-![Screenshot della pagina del log di controllo](media/audit-log-search-page.png)
+![Screenshot della pagina di ricerca nel log di controllo nel Centro conformità](media/audit-log-search-page.png)
 
+- È possibile selezionare attività specifiche da cercare facendo clic sulla casella di controllo accanto a una o più attività. Se è selezionata un'attività, è possibile fare clic su di essa per annullare la selezione. È anche possibile usare la casella di ricerca per visualizzare le attività che contengono la parola chiave digitata.
 
-- È possibile selezionare attività specifiche da cercare facendo clic sul nome dell'attività. Oppure è possibile cercare tutte le attività in un gruppo, ad esempio Attività su **file** e cartelle, facendo clic sul nome del gruppo. Se è selezionata un'attività, è possibile fare clic su di essa per annullare la selezione. È anche possibile usare la casella di ricerca per visualizzare le attività che contengono la parola chiave digitata.
+  ![Screenshot dell'elenco a discesa delle attività nella pagina di ricerca nel log di controllo](media/audit-log-search.png)
 
-  ![Screenshot dell'elenco delle attività di ricerca nel log di controllo](media/audit-log-search.png)
+- Per visualizzare gli eventi per le attività eseguite con i cmdlet, selezionare **Mostra risultati per** tutte le attività **nell'elenco** Attività. Se si conosce il nome dell'operazione per queste attività, digitarlo nella casella di ricerca per visualizzare l'attività e quindi selezionarla.
 
-- Per visualizzare gli eventi per le attività eseguite con i cmdlet, selezionare **Mostra risultati per** tutte le attività **nell'elenco** Attività. Se si conosce il nome dell'operazione per queste attività, cercare tutte le attività e quindi filtrare i risultati digitando il nome dell'operazione nella casella nella **colonna** Attività. Per altre informazioni, vedere [Passaggio 3: Filtrare i risultati della ricerca.](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#step-3-filter-the-search-results)
+- Per cancellare i criteri di ricerca correnti, fare clic **su Cancella tutto.** L'intervallo di date torna al valore predefinito degli ultimi sette giorni.
 
-- Per cancellare i criteri di ricerca correnti, fare clic su **Cancella.** L'intervallo di date torna al valore predefinito degli ultimi sette giorni. È anche possibile fare clic **su Cancella tutto per visualizzare i risultati di tutte le attività** per annullare tutte le attività selezionate.
-
-- Se vengono trovati 5.000 risultati, è probabile che siano presenti più di 5.000 eventi che soddisfano i criteri di ricerca. È possibile perfezionare i criteri di ricerca ed eseguire di nuovo la ricerca per restituire meno risultati oppure è possibile esportare tutti i risultati della ricerca selezionando  >  **Esporta scarica tutti i risultati.**
+- Se vengono trovati 5.000 risultati, è probabile che siano presenti più di 5.000 eventi che soddisfano i criteri di ricerca. È possibile perfezionare i criteri di ricerca ed eseguire di nuovo la ricerca per restituire meno risultati oppure è possibile esportare tutti i risultati della ricerca selezionando  >  **Esporta scarica tutti i risultati.** Per istruzioni dettagliate sull'esportazione dei log di controllo, vedere [Esportare i risultati della ricerca in un file.](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#step-3-export-the-search-results-to-a-file)
 
 Guarda questo [video per l'uso](https://www.youtube.com/embed/UBxaRySAxyE) della ricerca nel log audio. Partecipa a Ansuman Acharya, un program manager per Teams, come dimostra come eseguire una ricerca nel log di controllo per Teams.
 
@@ -91,7 +92,7 @@ Uno scenario da tenere sotto controllo, dal punto di vista aziendale, è l'aggiu
 
 ![Criteri per monitorare l'aggiunta di utenti esterni.](media/TeamsExternalUserAddPolicy.png)
 
-Lo screenshot di questo criterio per monitorare l'aggiunta di utenti esterni consente di assegnare un nome al criterio, impostare la gravità in base alle esigenze aziendali, impostarla come (in questo caso) una singola attività e quindi stabilire i parametri che monitoreranno specificamente solo l'aggiunta di utenti non interni e limitare questa attività a Teams.
+Lo screenshot di questo criterio per monitorare l'aggiunta di utenti esterni consente di assegnare un nome al criterio, impostare la gravità in base alle esigenze aziendali, impostarla come (in questo caso) una singola attività e quindi definire i parametri che monitoreranno specificamente solo l'aggiunta di utenti non interni e limitare questa attività a Teams.
 
 I risultati di questo criterio possono essere visualizzati nel log attività:
 
