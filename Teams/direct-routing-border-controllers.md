@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Scopri quali Session Border Controller (SBC) sono stati certificati per l'instradamento diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 04f0a500a22868156850ef1ddcf800aeb0ec07c7
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: ae6b338f8e4ab80dc90d06acbf706c1c336c062d
+ms.sourcegitcommit: 99503baa8b5183972caa8fe61e92a362213599d9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60012300"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "60127383"
 ---
 # <a name="session-border-controllers-certified-for-direct-routing"></a>Session Border Controller certificati per l'instradamento diretto
 
@@ -41,9 +41,7 @@ Microsoft collabora con ogni fornitore per:
 
 Le tabelle di seguito elencano i dispositivi certificati per l'instradamento diretto. Per informazioni sui fornitori di SBC che supportano l'ottimizzazione degli elementi multimediali locali, vedere [Configurare l'ottimizzazione degli elementi multimediali locali per l'instradamento diretto](direct-routing-media-optimization-configure.md).
 
-[Altre informazioni sull'instradamento diretto](https://aka.ms/dr).
-Per eventuali domande sul programma di certificazione di SBC per l'instradamento diretto, contattare drsbccertification@microsoft.com.
-<br/>
+[Altre informazioni sull'instradamento diretto.](https://aka.ms/dr) Per eventuali domande sul programma di certificazione di SBC per l'instradamento diretto, contattare drsbccertification@microsoft.com. <br/>
 
 ## <a name="certified-sbc-vendors"></a>Fornitori di SBC certificati
 
@@ -157,12 +155,12 @@ Nella tabella seguente sono elencati i dispositivi verificati per l'interoperabi
 | [Oracle](https://www.oracle.com/technical-resources/documentation/acme-packet.html) |  Software VME versione 8.3.0.1.2 |     &#10004;     |
 | [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [SBC 1000. Versione software: 8.1.1 (build 527)](https://support.sonus.net/display/UXDOC81/Connect+SBC+Edge+to+Microsoft+Teams+Direct+Routing+to+Support+Analog+Devices)   |     &#10004;     |
 | [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [SBC 2000. Versione software: 8.1.1 (build 527)](https://support.sonus.net/display/UXDOC81/Connect+SBC+Edge+to+Microsoft+Teams+Direct+Routing+to+Support+Analog+Devices)   |     &#10004;     |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 302. Versione software: 16.2.0](https://support.sonus.net/display/VOSDOC162/Configuring+VOS+for+Microsoft+Teams+Direct+Routing)   |     &#10004;     |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 304. Versione software: 16.2.0](https://support.sonus.net/display/VOSDOC162/Configuring+VOS+for+Microsoft+Teams+Direct+Routing)   |     &#10004;     |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 2900A. Versione software: 16.2.0](https://support.sonus.net/display/VOSDOC162/Configuring+VOS+for+Microsoft+Teams+Direct+Routing)   |     &#10004;     |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 4806. Versione software: 16.2.0](https://support.sonus.net/display/VOSDOC162/Configuring+VOS+for+Microsoft+Teams+Direct+Routing)   |     &#10004;     |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 4808. Versione software: 16.2.0](https://support.sonus.net/display/VOSDOC162/Configuring+VOS+for+Microsoft+Teams+Direct+Routing)   |     &#10004;     |
-| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 6000. Versione software: 16.2.0](https://support.sonus.net/display/VOSDOC162/Configuring+VOS+for+Microsoft+Teams+Direct+Routing)   |     &#10004;     |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 302. Versione software: 16.1.1](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances)   |     &#10004;     |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 304. Versione software: 16.1.1](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances)   |     &#10004;     |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 2900A. Versione software: 16.1.1](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances)   |     &#10004;     |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 4806. Versione software: 16.1.1](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances)   |     &#10004;     |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 4808. Versione software: 16.1.1](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances)   |     &#10004;     |
+| [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 6000. Versione software: 16.1.1](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances)   |     &#10004;     |
 | [TE-SYSTEMS](https://www.anynode.de/anynode-and-microsoft-teams/) |  anynode con Grandstream GXW42xx (V1.0.7.10) |     &#10004;     |
   
 Vedere [UserVoice](https://microsoftteams.uservoice.com) per inviare feedback di prodotto su Teams, ad esempio idee per nuove funzionalità.
