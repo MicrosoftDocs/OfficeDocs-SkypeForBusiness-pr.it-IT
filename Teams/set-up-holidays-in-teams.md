@@ -1,7 +1,7 @@
 ---
 title: Configurare le festività in Microsoft Teams
-ms.author: mikeplum
-author: MikePlumleyMSFT
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: oscarr
 ms.topic: article
@@ -19,13 +19,13 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.orgwidesettings.holidays.overview
 - seo-marvel-apr2020
-description: Informazioni su come configurare le festività in Microsoft Teams da usare con gli operatori automatici.
-ms.openlocfilehash: b72eec8778577454c55d9b3e2e999900fcb70143
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: Informazioni su come configurare le festività in Microsoft Teams per l'uso con gli operatori automatici.
+ms.openlocfilehash: b9c86f28b855b7f92d7e4f5d850c2d97baa2a106
+ms.sourcegitcommit: e7f6125d348b6f14eeba28e09d5f1975ad4fde69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58733205"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60249498"
 ---
 # <a name="set-up-holidays-in-microsoft-teams"></a>Configurare le festività in Microsoft Teams
 
@@ -54,13 +54,13 @@ Per creare una festività
 8. Usare l'elenco a discesa per selezionare un'ora di fine per la festività. **L'ora di** fine deve essere dopo **l'ora di inizio**.  
 
    > [!NOTE]
-   > Se la festività è per un giorno intero,ad esempio un  periodo di 24 ore, l'ora di fine deve essere impostata sul giorno successivo e l'ora su 12:00. Ad esempio, se l'organizzazione è chiusa il 1°  gennaio per il giorno di Capodanno, impostare l'ora di inizio su 1 gennaio 12.00 e impostare l'ora di fine su 2 gennaio @ 12.00. 
+   > Se la festività è per un giorno intero, ad esempio un  periodo di 24 ore, l'ora di fine deve essere impostata sul giorno successivo e l'ora su 12:00. Ad esempio, se l'organizzazione è chiusa il 1°  gennaio per il giorno di Capodanno, impostare l'ora di inizio su 1 gennaio 12.00 e impostare l'ora di fine su 2 gennaio @ 12.00. 
 
 9. Facoltativamente, aggiungere altre date per le festività ricorrenti.
 
 10. Selezionare **Salva**.
 
-    ![Screenshot dell'interfaccia utente delle festività con le date impostate per tre anni.](media/holidays-set-up.png)
+    ![Screenshot dell'interfaccia utente delle festività con date impostate per tre anni.](media/holidays-set-up.png)
 
 ## <a name="change-a-holiday"></a>Modificare una festività
 

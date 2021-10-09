@@ -775,6 +775,8 @@ items:
             items:
               - name: Panoramica della pianificazione di Microsoft Teams Rooms
                 href: rooms/rooms-plan.md
+              - name: Confronto delle funzionalità dei dispositivi Teams in Windows e Android
+                href: rooms/teams-devices-feature-comparison.md
               - name: Supporto versione
                 href: rooms/rooms-lifecycle-support.md
               - name: Note sulla versione

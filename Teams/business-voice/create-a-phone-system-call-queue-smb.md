@@ -1,7 +1,7 @@
 ---
 title: Creare una coda di chiamata in Microsoft Teams - Esercitazione su Small Business
-ms.author: mikeplum
-author: MikePlumleyMSFT
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: dobro
 ms.topic: article
@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare le code di chiamata per le piccole imprese in Microsoft 365 Business Voice.
-ms.openlocfilehash: 527d0512ae7e58e2141fcc913ba633ea991cc6e5
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: 9a7bee78545be20544233e1ce153be500a9aed50
+ms.sourcegitcommit: e7f6125d348b6f14eeba28e09d5f1975ad4fde69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60045742"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60249698"
 ---
 # <a name="create-a-call-queue---small-business-tutorial"></a>Creare una coda di chiamata - Esercitazione sulle piccole imprese
 
@@ -53,7 +53,7 @@ Questo video illustra come creare una coda di chiamata in Teams.
 
 Ottenere alcune [Sistema telefonico - Licenze utente virtuale](../teams-add-on-licensing/virtual-user.md) se non sono già disponibili. Ottenere una per ogni coda di chiamata e operatore automatico che si prevede di configurare. Queste licenze sono gratuite, quindi ti consigliamo di ottenere qualche ulteriore prodotto nel caso in cui decidi di apportare modifiche alla configurazione in futuro.
 
-Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita per restituire una chiamata al cliente, è consigliabile impostare l'ID chiamante per gli agenti di chiamata sul numero di telefono principale o sul numero di un operatore automatico appropriato. Per altre informazioni, vedere Gestire i criteri id [chiamante Microsoft Teams](../caller-id-policies.md) informazioni.
+Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita per restituire una chiamata al cliente, è consigliabile impostare l'ID chiamante per gli agenti di chiamata sul numero di telefono principale o sul numero di un operatore automatico appropriato. Per altre informazioni, vedere Gestire i criteri [id chiamante in Microsoft Teams.](../caller-id-policies.md)
 
 <a name="steps"></a>
 
@@ -61,11 +61,11 @@ Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita
 
 # <a name="step-1brcreate-a-team"></a>[Passaggio 1 <br> Creare un team](#tab/create-team)
 
-Quando si crea una coda di chiamata, è possibile aggiungere singoli utenti alla coda oppure usare un gruppo di sicurezza, un gruppo di Microsoft 365 o un team Microsoft Teams lavoro. È [consigliabile usare un canale del team.](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e) In questo modo i membri della coda possono chattare tra loro, condividere idee e creare documenti o altre risorse per aiutare i clienti. Un team fornisce anche una cassetta postale vocale per consentire ai chiamanti di lasciare un messaggio dopo ore o se la coda raggiunge la capacità massima.
+Quando si crea una coda di chiamata, è possibile aggiungere singoli utenti alla coda oppure usare un gruppo di sicurezza, un gruppo di Microsoft 365 o un team Microsoft Teams servizio. È [consigliabile usare un canale del team.](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e) In questo modo i membri della coda possono chattare tra loro, condividere idee e creare documenti o altre risorse per aiutare i clienti. Un team fornisce anche una cassetta postale vocale per consentire ai chiamanti di lasciare un messaggio dopo ore o se la coda raggiunge la capacità massima.
 
 Per creare un team
 
-1. Prima di tutto, **Teams** sul lato sinistro dell'app, quindi fare clic su Partecipa o crea un **team** nella parte inferiore dell'elenco dei team.
+1. Prima di **tutto, Teams** sul lato sinistro dell'app, quindi fai clic su Partecipa o crea un **team** nella parte inferiore dell'elenco dei team.
 
 2. Quindi fare clic **su Crea team** (prima scheda, angolo in alto a sinistra).
 
@@ -85,7 +85,7 @@ Verrà quindi aggiunto un canale da usare con la coda di chiamata.
 
 Per aggiungere un canale
 
-1. In Teams trovare il team appena creato, fare clic su **Altre opzioni** (...), quindi fare clic **su Aggiungi canale.**
+1. In Teams trovare il team appena creato, fare clic su **Altre** opzioni (...), quindi fare clic **su Aggiungi canale.**
 
 2. Digitare un nome e una descrizione per il canale.
 
@@ -96,7 +96,7 @@ Per aggiungere un canale
 
 # <a name="step-2brresource-accounts"></a>[Passaggio 2 <br> Account delle risorse](#tab/resource-account)
 
-Per ogni coda di chiamata creata è necessario un account della risorsa. È simile a un account utente, ad eccezione del fatto che l'account è associato a un operatore automatico o a una coda di chiamata invece che a una persona. In questo passaggio creeremo l'account, gli assegniamo una licenza *Microsoft 365 Sistema telefonico - Utente* virtuale e quindi la useremo per iniziare a creare la coda di chiamata.
+Per ogni coda di chiamata creata è necessario un account della risorsa. È simile a un account utente, ad eccezione del fatto che l'account è associato a un operatore automatico o a una coda di chiamata invece che a una persona. In questo passaggio creeremo l'account, gli assegniamo una licenza *Microsoft 365 Sistema telefonico - Utente* virtuale e lo useremo per iniziare a creare la coda di chiamata.
 
 ### <a name="create-a-resource-account"></a>Creare un account della risorsa
 
@@ -120,7 +120,7 @@ Per ogni coda di chiamata creata è necessario un account della risorsa. È simi
 
 È necessario assegnare una *licenza Microsoft 365 Sistema telefonico - Utente* virtuale all'account della risorsa.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 utenti attivi nell'elenco Utenti attivi fare clic sull'account della risorsa a cui si vuole assegnare una licenza. 
+1. Nell'interfaccia di amministrazione di Microsoft 365 utenti attivi **nell'elenco** Utenti attivi fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
 
 2. Nella scheda **Licenze e app,** in **Licenze,** **selezionare Microsoft 365 Sistema telefonico - Utente virtuale**.
 

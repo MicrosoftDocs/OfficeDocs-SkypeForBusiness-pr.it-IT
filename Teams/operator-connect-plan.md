@@ -3,7 +3,7 @@ title: Connessione con operatore
 author: cazawideh
 ms.author: czawideh
 manager: serdars
-ms.date: 04/12/2021
+ms.date: 09/30/2021
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -21,22 +21,22 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0351fe60d46f8bf96dd06df3c64048e390991410
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: bf1e158eb491f0b4b4f2df19c4aa7ebe46f08950
+ms.sourcegitcommit: e7f6125d348b6f14eeba28e09d5f1975ad4fde69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60046112"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60249668"
 ---
-# <a name="plan-for-operator-connect"></a>Pianificare Connessione con operatore
+# <a name="plan-for-operator-connect"></a>Pianificare l'Connessione con operatore
 
 Connessione con operatore è un'altra opzione per fornire connettività PSTN (Public Switched Telephone Network) con Teams e Sistema telefonico. Per altre informazioni sulle Teams vocali e sulle opzioni di connettività PSTN, vedere [Pianificare](cloud-voice-landing-page.md) la soluzione vocale Teams e le opzioni [di connettività PSTN.](pstn-connectivity.md)
 
-Questo articolo descrive i vantaggi e i requisiti e fornisce un collegamento agli operatori che partecipano al programma Microsoft Connessione con operatore Program.  Se si decide Connessione con operatore è la soluzione giusta per l'organizzazione, dopo aver letto questo articolo, vedere [Configurare](operator-connect-configure.md)Connessione con operatore .  
+Questo articolo descrive i vantaggi e i requisiti e fornisce un collegamento agli operatori che partecipano al programma Microsoft Connessione con operatore.  Se si decide Connessione con operatore la soluzione giusta per l'organizzazione, dopo aver letto questo articolo, vedere [Configurare](operator-connect-configure.md)Connessione con operatore .  
 
 ## <a name="benefits"></a>Vantaggi
 
-Con Connessione con operatore, se l'operatore esistente è un partecipante al programma Microsoft Connessione con operatore, può gestire il servizio per portare le chiamate PSTN in Teams. Il Connessione con operatore offre i vantaggi seguenti:
+Con Connessione con operatore, se l'operatore esistente è partecipante al programma Microsoft Connessione con operatore, può gestire il servizio per portare le chiamate PSTN in Teams. Il Connessione con operatore offre i vantaggi seguenti:
 
 - **Sfruttare i contratti esistenti o trovare un nuovo operatore.** È possibile mantenere l'operatore e i contratti preferiti oppure sceglierne uno nuovo tra una selezione di operatori partecipanti per soddisfare le esigenze aziendali.
 
@@ -51,12 +51,12 @@ Con Connessione con operatore, se l'operatore esistente è un partecipante al pr
  Connessione con operatore potrebbe essere la soluzione giusta per l'organizzazione se:
 
 - Microsoft Calling Plan non è disponibile nella tua posizione geografica.
-- L'operatore preferito è un partecipante al programma Microsoft Connessione con operatore Microsoft.
+- L'operatore preferito è un partecipante al programma Microsoft Connessione con operatore.
 - Si vuole trovare un nuovo operatore per abilitare le chiamate in Teams.
 
 Per abilitare le assegnazioni dei numeri di telefono Connessione con operatore, assicurati che gli utenti siano:
 
 - Teams Telefono licenza. Per altre informazioni, vedere [Che cos'è Sistema telefonico?](what-is-phone-system-in-office-365.md) e Assegnare Teams [licenze per i componenti aggiuntivi agli utenti.](teams-add-on-licensing/assign-teams-add-on-licenses.md)
-- In modalità TeamsOnly. Si noti che l'utente deve essere in modalità TeamsOnly, ma non nell'intera organizzazione. Per altre informazioni, vedere [Comprendere Microsoft Teams e Skype for Business e l'interoperabilità.](teams-and-skypeforbusiness-coexistence-and-interoperability.md)
+- In modalità TeamsOnly. Si noti che l'utente deve essere in modalità TeamsOnly, ma non nell'intera organizzazione. Per altre informazioni, vedere [Comprendere Microsoft Teams e Skype for Business coesistenza e interoperabilità.](teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 
 Per un elenco degli operatori che partecipano al Programma Microsoft Connessione con operatore e dei paesi o aree geografiche in cui è disponibile il servizio, vedere la [directory Microsoft 365 Connessione con operatore.](https://cloudpartners.transform.microsoft.com/practices/microsoft-365-for-operators/directory)

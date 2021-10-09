@@ -1,8 +1,8 @@
 ---
 title: Rispondere alle chiamate in coda e all'operatore automatico
 ms.reviewer: colongma
-ms.author: mikeplum
-author: MikePlumleyMSFT
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 audience: ITPro
 ms.date: 09/20/2018
@@ -19,16 +19,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6c60f0f3bcf5fc683a15c5b22cc7b98aa384d477
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 83659cba18674e04daa0f9d181b9ac5acf53b146
+ms.sourcegitcommit: e7f6125d348b6f14eeba28e09d5f1975ad4fde69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58733365"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60249488"
 ---
 # <a name="answer-auto-attendant-and-call-queue-calls-directly-from-teams"></a>Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams
 
-Teams gli utenti possono ricevere e rispondere alle chiamate dagli operatori automatici cloud e dalle code di chiamata direttamente dal Teams client.
+Teams gli utenti possono ricevere e rispondere alle chiamate dagli operatori automatici cloud e dalle code di chiamata direttamente dal client Teams cloud.
 
 ## <a name="what-are-auto-attendants-and-call-queues"></a>Che cosa sono gli operatori automatici e le code di chiamata?
 
@@ -60,11 +60,11 @@ Il supporto per l'operatore automatico e le chiamate in coda di chiamata è disp
 -    Microsoft Teams iPhone app
 -    Microsoft Teams App Android
 
-Il Teams client è supportato solo con una [modalità di coesistenza di Teams solo](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
+Il Teams client è supportato solo con una [modalità di coesistenza di Teams Solo](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
 
 ## <a name="configure-auto-attendant-and-call-queue-support-for-microsoft-teams"></a>Configurare il supporto dell'operatore automatico e della coda di chiamata per Microsoft Teams
 
-Per ricevere chiamate in coda e operatori automatici Microsoft Teams, è necessario configurare i criteri di interoperabilità e di aggiornamento. Vedere Migrazione [e interoperabilità per le](migration-interop-guidance-for-teams-with-skype.md)organizzazioni che usano Teams insieme a Skype for Business . Se l'operatore automatico e/o la coda di chiamata non sono configurati e si vuole farlo, vedere Configurare un operatore automatico [cloud](create-a-phone-system-auto-attendant.md) e [Creare una coda di chiamata cloud.](create-a-phone-system-call-queue.md)
+Per ricevere chiamate in coda e operatori automatici Microsoft Teams, è necessario configurare i criteri di interoperabilità e i criteri di aggiornamento. Vedere Migrazione [e interoperabilità per le](migration-interop-guidance-for-teams-with-skype.md)organizzazioni che usano Teams insieme a Skype for Business . Se l'operatore automatico e/o la coda di chiamata non sono configurati e si vuole farlo, vedere Configurare un operatore automatico [cloud](create-a-phone-system-auto-attendant.md) e [Creare una coda di chiamata cloud.](create-a-phone-system-call-queue.md)
 
 ## <a name="known-issues"></a>Problemi noti
 
@@ -73,8 +73,9 @@ Quando un agente della coda di chiamata riceve una chiamata sul dispositivo mobi
 
 ## <a name="related-topics"></a>Argomenti correlati
 
--    [Che cosa Sistema telefonico in Microsoft 365 o Office 365](what-is-phone-system-in-office-365.md)
--    [Creare una coda di chiamata cloud](create-a-phone-system-call-queue.md)
--    [Cosa sono gli operatori automatici cloud?](what-are-phone-system-auto-attendants.md)
--    [Configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md)
+[Creare una coda di chiamata cloud](create-a-phone-system-call-queue.md)
+
+[Cosa sono gli operatori automatici cloud?](what-are-phone-system-auto-attendants.md)
+
+[Configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md)
 

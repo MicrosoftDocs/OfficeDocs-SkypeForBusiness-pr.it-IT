@@ -1,7 +1,7 @@
 ---
 title: Pianificare Teams operatori automatici e code di chiamata
-ms.author: mikeplum
-author: MikePlumleyMSFT
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: colongma
 ms.topic: article
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sugli operatori automatici e sulle code di chiamata e su come usarli per aiutare i chiamanti a spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 04cebedc40e64531b272fb5420d19120e15329f1
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: ba30492ac80f3a81e99ed2b356d53ffcbf8f22a2
+ms.sourcegitcommit: e7f6125d348b6f14eeba28e09d5f1975ad4fde69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60045732"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60249538"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare Teams operatori automatici e code di chiamata
 
@@ -93,7 +93,7 @@ Quando si trasferiscono chiamate a un numero di telefono esterno, l'account dell
 > [!NOTE]
 > I numeri di servizio Instradamento diretto per l'operatore automatico e le code di chiamata sono supportati solo per Microsoft Teams utenti e agenti di chiamata.
 > 
-> I trasferimenti tra i trunk Connessione con operatore piano di chiamata e instradamento diretto non sono supportati.
+> I trasferimenti tra i trunk Connessione con operatore piano di chiamata, Connessione con operatore routing diretto non sono supportati.
 > 
 > In uno scenario ibrido, l'account della risorsa deve essere creato in locale. Per altre informazioni, vedere [Pianificare le code di chiamata cloud.](/skypeforbusiness/hybrid/plan-call-queue)
 
@@ -128,7 +128,7 @@ Se necessario, è possibile usare una combinazione di queste opzioni per ogni co
 
 Se si ha un operatore automatico e un'infrastruttura della coda di chiamata esistente e si esegue la migrazione a Teams, è necessario un piano per trasferire i numeri di telefono esistenti ai nuovi operatori automatici e alle nuove code di chiamata. Potrebbe essere necessario creare un ordine [di trasferimento per](phone-number-calling-plans/port-order-overview.md) spostare i numeri da un altro provider. È consigliabile acquisire temporaneamente uno o più nuovi numeri di telefono e testare i flussi dell'operatore automatico e della coda di chiamata prima di cambiarli rispetto ai numeri attualmente in servizio.
 
-*La modalità* conferenza è un'opzione nelle code di chiamata che riduce significativamente il tempo necessario per connettere le chiamate VOIP e PSTN Teams un agente. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono usare uno dei client seguenti:
+*La modalità* conferenza è un'opzione nelle code di chiamata che riduce significativamente il tempo necessario per connettersi Teams chiamate VOIP e PSTN a un agente. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono usare uno dei client seguenti:
 
 - La versione più recente del client desktop Microsoft Teams, dell'app Android o dell'app iOS
 - Microsoft Teams Telefono versione 1449/1.0.94.2020051601 o successiva
@@ -215,7 +215,7 @@ Dopo aver completato le attività di pianificazione descritte in questo articolo
 
 6. Creare i gruppi da usare per contenere gli agenti di chiamata per le code di chiamata.
 
-7. Se si prevede di consentire la chiamata per interno, assicurarsi di aver aggiunto il numero di interno degli utenti al profilo Azure Active Directory interno.
+7. Se si prevede di consentire la chiamata per interno, assicurarsi di aver aggiunto il numero di interno degli utenti al profilo Azure Active Directory telefono.
 
 Dopo aver completato i passaggi precedenti, è possibile creare gli operatori automatici e le code di chiamata. Poiché gli operatori automatici e le code di chiamata possono reindirizzare le chiamate tra loro, fare riferimento al diagramma del flusso di lavoro creato per determinare quale operatore automatico o coda di chiamata deve essere creato per primo. Nell'esempio del diagramma precedente è necessario creare le code di chiamata di vendita e supporto prima di creare l'operatore automatico principale contoso, perché l'operatore automatico principale deve indirizzare i chiamanti alle code di chiamata di vendita e supporto.
 

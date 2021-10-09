@@ -1,7 +1,7 @@
 ---
 title: Informazioni di riferimento sulla composizione e il riconoscimento vocale dell'operatore automatico e della coda di chiamata
-ms.author: mikeplum
-author: MikePlumleyMSFT
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: colongma
 ms.topic: article
@@ -22,12 +22,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sulle opzioni di composizione e riconoscimento vocale dell'operatore automatico e della coda di chiamata in Teams.
-ms.openlocfilehash: 8201389c39dc58f80596a6055c927ecfbbf86e38
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: acd3202a3f27beaf40af09422687be490f0695c5
+ms.sourcegitcommit: e7f6125d348b6f14eeba28e09d5f1975ad4fde69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58605785"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60249688"
 ---
 # <a name="auto-attendant-and-call-queue-dialing-and-voice-recognition-reference"></a>Informazioni di riferimento sulla composizione e il riconoscimento vocale dell'operatore automatico e della coda di chiamata
 
@@ -35,9 +35,9 @@ Chiama per nome è una caratteristica di un operatore automatico noto anche come
 
 ## <a name="searching-for-users"></a>Ricerca di utenti
 
-Gli utenti che desideri trovare e raggiungere usando Chiama per nome non devono avere un numero di telefono o avere piani di chiamata **assegnati,** ma devono essere abilitati VoIP aziendale per gli utenti Skype for Business Server chiamata . La chiamata per nome sarà anche in grado di trovare e trasferire chiamate a Microsoft Teams utenti ospitati in diversi paesi o aree geografiche per organizzazioni multi-nazionali. Dati i prerequisiti necessari, è possibile abilitare in modo esplicito La chiamata per nome in un operatore automatico.
+Gli utenti che desideri trovare e raggiungere usando Chiama per nome non devono avere un numero di telefono o avere piani di chiamata **assegnati,** ma devono essere abilitati VoIP aziendale per gli utenti Skype for Business Server chiamata . Chiama per nome sarà anche in grado di trovare e trasferire chiamate a Microsoft Teams utenti ospitati in diversi paesi o aree geografiche per organizzazioni multi-nazionali. Dati i prerequisiti necessari, è possibile abilitare in modo esplicito La chiamata per nome in un operatore automatico.
 
-Chiama per interno è una caratteristica di un operatore automatico che fa anche parte della ricerca nella directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte del tastierino del telefono (DTMF) per immettere l'estensione del telefono dell'utente che sta cercando di raggiungere e quindi trasferire la chiamata. Gli utenti che desideri trovare e raggiungere usando Chiama per interno non devono avere un numero di telefono o avere piani di chiamata **assegnati,** ma devono essere abilitati VoIP aziendale per gli utenti Skype for Business Server . Sarà anche necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. Chiama per interno sarà anche in grado di trovare e trasferire chiamate a Microsoft Teams utenti ospitati in diversi paesi o aree geografiche per organizzazioni multi-nazionali. Dati i prerequisiti necessari, è possibile abilitare esplicitamente La chiamata per interno in un operatore automatico.
+Chiama per interno è una caratteristica di un operatore automatico che fa anche parte della ricerca nella directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte del tastierino del telefono (DTMF) per immettere l'estensione del telefono dell'utente che sta cercando di raggiungere e quindi trasferire la chiamata. Gli utenti che si vogliono trovare e raggiungere usando Chiama per interno non devono avere un numero di telefono o avere piani di chiamata **assegnati,** ma devono essere abilitati VoIP aziendale per gli utenti Skype for Business Server chiamata . Sarà anche necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. La chiamata per interno sarà anche in grado di trovare e trasferire chiamate a Microsoft Teams utenti ospitati in diversi paesi o aree geografiche per organizzazioni multi-nazionali. Dati i prerequisiti necessari, è possibile abilitare esplicitamente La chiamata per interno in un operatore automatico.
 
 ### <a name="maximum-directory-size"></a>Dimensione massima dell'elenco
 
@@ -124,8 +124,6 @@ Per il riconoscimento vocale sono disponibili i comandi vocali seguenti:
 |Nove  |Premere 9.|
 
 ## <a name="related-topics"></a>Argomenti correlati
-
-[Vantaggi offerti dal Sistema telefonico](here-s-what-you-get-with-phone-system.md)
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](./getting-service-phone-numbers.md)
 

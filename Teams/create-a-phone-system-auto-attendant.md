@@ -1,7 +1,7 @@
 ---
 title: Configurare un operatore automatico per Microsoft Teams
-ms.author: mikeplum
-author: MikePlumleyMSFT
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: colongma
 ms.topic: article
@@ -22,21 +22,21 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per organizzazioni di grandi dimensioni in Microsoft Teams.
-ms.openlocfilehash: 29e746c9db2da970d4709da126297b6cc38b6c81
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: 50c024854481a30f4a612db6320f51818b6d3b0d
+ms.sourcegitcommit: e7f6125d348b6f14eeba28e09d5f1975ad4fde69
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60046032"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "60249528"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
-Gli operatori automatici consentono alle persone di chiamare l'organizzazione e navigare in un sistema di menu per parlare al reparto, alla coda di chiamata, alla persona o a un operatore giusto. È possibile creare operatori automatici per l'organizzazione con l'Microsoft Teams di amministrazione o con PowerShell.
+Gli operatori automatici consentono alle persone di chiamare l'organizzazione e navigare in un sistema di menu per parlare al reparto, alla coda di chiamata, alla persona o a un operatore giusto. È possibile creare operatori automatici per l'organizzazione con l'Microsoft Teams di amministrazione o con PowerShell.You can create auto attendants for your organization with the Microsoft Teams admin center, or with PowerShell.
 
 > [!TIP]
 > Questo articolo è per le organizzazioni di grandi dimensioni. Se l'organizzazione è una piccola azienda, vedere Configurare un operatore [automatico - esercitazione sulle piccole](/microsoftteams/business-voice/create-a-phone-system-auto-attendant-smb) imprese.
 
-Prima di seguire le procedure descritte in questo [articolo,](plan-auto-attendant-call-queue.md) leggere [](plan-auto-attendant-call-queue.md#getting-started) Pianificare gli operatori automatici Teams e le code di chiamata e seguire i passaggi introduttivi.
+Assicurarsi di aver letto Pianificare [gli](plan-auto-attendant-call-queue.md) operatori Teams e le [](plan-auto-attendant-call-queue.md#getting-started) code di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
 
 Gli operatori automatici possono indirizzare le chiamate, in base all'input dei chiamanti, a una delle destinazioni seguenti: <a name="call-routing-options" ></a>
 
@@ -50,7 +50,7 @@ Gli operatori automatici possono indirizzare le chiamate, in base all'input dei 
 
 Durante la configurazione di un operatore automatico, verrà richiesto di scegliere una di queste opzioni in varie fasi.
 
-Per configurare un operatore automatico, nell'interfaccia Teams di amministrazione espandere **Voce,** selezionare **Operatori automatici** e quindi **selezionare Aggiungi**.
+Per configurare un operatore automatico, nell'interfaccia Teams di amministrazione espandere **Voce**, selezionare **Operatori** automatici e quindi **selezionare Aggiungi**.
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -123,7 +123,7 @@ Se non sono stati assegnati tasti di chiamata, scegliere un'opzione per **La ric
 
 **Chiama per nome:** se si abilita questa opzione, i chiamanti possono pronunciare il nome dell'utente o digitarlo sul tastierino del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con Chiama per nome. È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
 
-**Chiama per interno:** se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'interno del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con **Chiama per interno.** È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
+**Chiama per interno:** se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'interno del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con **Chiama per interno**. È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
 
 Gli utenti che si vogliono rendere disponibili per l'estensione Chiamata per interno devono avere un'estensione specificata come parte di uno degli attributi dei telefoni seguenti definiti in Active Directory o Azure Active Directory (per altre informazioni, vedere Aggiungere utenti singolarmente o [in](/microsoft-365/admin/add-users/add-users) blocco).
 
@@ -223,9 +223,9 @@ Per [altre informazioni, vedere Gestire Teams account](manage-resource-accounts.
 
 Fare riferimento ai [Prerequisiti per](plan-auto-attendant-call-queue.md#prerequisites) consentire agli operatori automatici di trasferire le chiamate esternamente.  Inoltre:
 
-- Per un account [](calling-plans-for-office-365.md) della risorsa con una licenza piano per chiamate o un [numero Connessione con operatore,](operator-connect-plan.md) il numero di telefono per il trasferimento esterno deve essere immesso nel formato E.164 (+[codice paese][codice area][numero di telefono]).
+- Per un account [](calling-plans-for-office-365.md) della risorsa con una licenza piano per chiamate o un numero [Connessione con operatore,](operator-connect-plan.md) il numero di telefono per il trasferimento esterno deve essere immesso nel formato E.164 (+[codice paese][codice area][numero di telefono]).
 
-- Per un account della risorsa con criteri di routing vocale Sistema telefonico License e Routing diretto online, il formato del numero di telefono per il trasferimento esterno dipende dalle impostazioni [SBC (Session Border Controller).](direct-routing-connect-the-sbc.md)
+- Per un account delle risorse con criteri di routing vocale Sistema telefonico License e Routing diretto online, il formato del numero di telefono per il trasferimento esterno dipende dalle impostazioni [SBC (Session Border Controller).](direct-routing-connect-the-sbc.md)
 
 Il numero di telefono in uscita visualizzato viene determinato nel modo seguente:
 
@@ -260,7 +260,7 @@ In un Skype for Business ibrido, per trasferire una chiamata dell'operatore auto
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Vantaggi offerti dal Sistema telefonico](./here-s-what-you-get-with-phone-system.md)
+[Ecco cosa si ottiene con Teams Telefono](./here-s-what-you-get-with-phone-system.md)
 
 [Ottenere numeri telefonici di servizio](./getting-service-phone-numbers.md).
 
