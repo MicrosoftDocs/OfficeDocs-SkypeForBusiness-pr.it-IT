@@ -15,30 +15,30 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 060604853b29111372a605ff0ad6212ba1e56a8a
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: 056c82b1f2c7a1872693cc9f4298cee6eea1eefb
+ms.sourcegitcommit: 11882e93618b8d69d21586c7b1f6a4460b96dd7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60046422"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "60283030"
 ---
 # <a name="use-the-frontline-worker-onboarding-wizard-to-get-your-frontline-workforce-up-and-running"></a>Usare l'onboarding guidato Frontline Worker per far entrare in funzione la forza lavoro in prima linea
 
-> [!NOTE]
-> Questa funzionalità non è ancora visualizzata? È attualmente in fase di implementazione e potrebbe non essere ancora disponibile nell'organizzazione. Per essere sempre al top delle funzionalità Teams, consulta la roadmap [Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams)
-
 ## <a name="overview"></a>Panoramica
 
-L'onboarding guidato Frontline Worker nel interfaccia di amministrazione di Microsoft 365 semplifica l'onboarding dei lavoratori in prima linea all'organizzazione. La procedura guidata consente di distribuire rapidamente un'esperienza Microsoft Teams personalizzata per la forza lavoro in prima linea. Usando la procedura guidata, è possibile avviare facilmente la distribuzione pilota di Teams per i lavoratori in prima linea nell'organizzazione.
+L'onboarding guidato Frontline Worker nel interfaccia di amministrazione di Microsoft 365 semplifica l'onboarding dei lavoratori in prima linea nell'organizzazione. La procedura guidata consente di distribuire rapidamente un'esperienza in Microsoft Teams personalizzata per la forza lavoro in prima linea. La procedura guidata consente di avviare facilmente la distribuzione pilota di Teams per i lavoratori in prima linea dell'organizzazione.
 
 La procedura guidata configura un team per i dipendenti in prima linea e assegna licenze [e](manage-policy-packages.md) pacchetti di criteri a ogni membro del team. È possibile creare il team da zero o da un modello [di team](get-started-with-teams-templates-in-the-admin-console.md)e quindi aggiungere utenti e assegnare ruoli. Il ruolo determina il pacchetto di criteri assegnato dalla procedura guidata a ogni utente.
 
 Attualmente, la procedura guidata supporta l'aggiunta di 100 utenti ogni volta che viene eseguita. Stiamo lavorando per aumentare il numero di utenti per esecuzione a breve. Torna qui per gli aggiornamenti più recenti.
 
-La procedura guidata è disponibile per tutte le organizzazioni con almeno una Microsoft 365 F. È possibile eseguire la procedura guidata tutte le volte che è necessario implementare Teams alla forza lavoro in prima linea in posizioni o siti diversi all'interno dell'organizzazione.
+La procedura guidata è disponibile per tutte le organizzazioni che hanno almeno una Microsoft 365 F. È possibile eseguire la procedura guidata tutte le volte che è necessario implementare Teams alla forza lavoro in prima linea in posizioni o siti diversi all'interno dell'organizzazione.
 
 > [!NOTE]
-> Questa procedura guidata consente di accedere rapidamente ai dipendenti in prima linea per Teams attraverso la interfaccia di amministrazione di Microsoft 365. Per altre informazioni su come distribuire Teams ai dipendenti in prima linea usando gli script, vedere Come eseguire il provisioning Teams su larga scala per [Frontline Workers.](flw-scripted-deployment.md)
+> Questa procedura guidata consente di accedere rapidamente ai dipendenti in prima linea per Teams attraverso il interfaccia di amministrazione di Microsoft 365. Per informazioni su come distribuire Teams ai dipendenti in prima linea usando gli script, vedere Come eseguire il provisioning Teams su larga scala per [Frontline Workers.](flw-scripted-deployment.md)
+
+> [!NOTE]
+> La procedura guidata non supporta ancora [le etichette di](sensitivity-labels.md) riservatezza. Se l'organizzazione richiede etichette di riservatezza per creare un team, la procedura guidata non verrà visualizzata nel interfaccia di amministrazione di Microsoft 365.
 
 ## <a name="run-the-wizard"></a>Eseguire la procedura guidata
 
@@ -60,7 +60,7 @@ La procedura guidata è disponibile per tutte le organizzazioni con almeno una M
   
     :::image type="content" source="media/flw-onboarding-wizard-assign-roles.png" alt-text="Screenshot della pagina Assegna ruoli di lavoro della procedura guidata in cui si assegnano ruoli, posizioni e licenze ai membri del team":::
 
-    Assegnando un ruolo di Frontline Worker o Frontline Manager, l'utente riceverà un pacchetto di criteri. Il pacchetto di criteri creerà un'esperienza Teams personalizzata in base al loro ruolo. Questa esperienza include app e criteri pre-aggiunti per la comunicazione e la collaborazione di worker e manager in prima linea.
+    Assegnando un ruolo di Frontline Worker o Frontline Manager, l'utente riceverà un pacchetto di criteri. Il pacchetto di criteri creerà un'esperienza Teams un'esperienza personalizzata in base al loro ruolo. Questa esperienza include app e criteri pre-aggiunti per la comunicazione e la collaborazione di worker e manager in prima linea.
 
     Selezionare quindi una posizione e assegnare una licenza Microsoft 365 F a ogni membro del team. Se non si hanno licenze sufficienti, è possibile selezionare Acquista **altre licenze** per acquistare altre licenze.  
 
