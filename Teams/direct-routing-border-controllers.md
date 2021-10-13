@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Scopri quali Session Border Controller (SBC) sono stati certificati per l'instradamento diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d9859b15b881d53a2f1b3c5b39442331e51be2e
-ms.sourcegitcommit: 74d3ab35c344d70b2399bc46a6ced3ab2762a470
+ms.openlocfilehash: e5aeecf93146a628c897e22868dc6b4f6ed7b795
+ms.sourcegitcommit: 428eda4236bd063f44e2571563dd96bd6ed1749a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60138222"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "60268280"
 ---
 # <a name="session-border-controllers-certified-for-direct-routing"></a>Session Border Controller certificati per l'instradamento diretto
 
@@ -38,10 +38,14 @@ Microsoft collabora con ogni fornitore per:
 
   > [!NOTE]
   > Microsoft supporta Sistema telefonico solo se uno o più dispositivi certificati sono connessi tramite instradamento diretto. Microsoft si riserva il diritto di rifiutare i casi di supporto in cui un dispositivo non certificato è connesso a Sistema telefonico tramite instradamento diretto. Se Microsoft determina che il problema di instradamento diretto di un cliente riguarda un dispositivo SBC di un fornitore, il cliente dovrà contattare il fornitore SBC per ricevere supporto.
+  > La certificazione viene concessa a specifiche versioni del firmware SBC. Qualsiasi versione del firmware SBC documentata di seguito è certificata e supportata. Le versioni del firmware superiori a quelle documentate sono supportate purché la versione principale.secondaria sia la stessa.
+  > Esempio: supportata 6.10.258: in questo caso, sono supportate anche le versioni del firmware 6.10. (258 o versioni successive) Consigliato 6.20.100- in questo caso è consigliabile anche la versione firmware 6.20. (100 o versioni successive) Per domande di supporto su una versione specifica, contattare il fornitore SBC.
 
 Le tabelle di seguito elencano i dispositivi certificati per l'instradamento diretto. Per informazioni sui fornitori di SBC che supportano l'ottimizzazione degli elementi multimediali locali, vedere [Configurare l'ottimizzazione degli elementi multimediali locali per l'instradamento diretto](direct-routing-media-optimization-configure.md).
 
-[Altre informazioni sull'instradamento diretto.](https://aka.ms/dr) Per eventuali domande sul programma di certificazione di SBC per l'instradamento diretto, contattare drsbccertification@microsoft.com. <br/>
+[Altre informazioni sull'instradamento diretto](https://aka.ms/dr).
+Per eventuali domande sul programma di certificazione di SBC per l'instradamento diretto, contattare drsbccertification@microsoft.com. Nota: non accettiamo nuove candidature per la certificazione fino a nuovo avviso.
+<br/>
 
 ## <a name="certified-sbc-vendors"></a>Fornitori di SBC certificati
 
