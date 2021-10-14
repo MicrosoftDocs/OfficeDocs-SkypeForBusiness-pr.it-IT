@@ -20,17 +20,17 @@ ms.custom:
 - Phone System
 - ms.teamsadmincenter.callparkpolicies.overview
 - seo-marvel-apr2020
-description: Informazioni su come usare il parcheggio di chiamata e recuperare per mettere una chiamata in attesa in Microsoft Teams.
-ms.openlocfilehash: 9092e76b9d8db5e29c1dd5881cd6b0f69d70ae4a
-ms.sourcegitcommit: e7f6125d348b6f14eeba28e09d5f1975ad4fde69
+description: Informazioni su come usare il parcheggio di chiamata e recuperare per mettere una chiamata in attesa Microsoft Teams.
+ms.openlocfilehash: ad35f5bdfa6cb60a842705c150f0f511ba45cb63
+ms.sourcegitcommit: 31da77589ac82c43a89a9c53f2a2de5ab52f93c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60249508"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60356504"
 ---
 # <a name="call-park-and-retrieve-in-microsoft-teams"></a>Parcheggio di chiamata e recupero in Microsoft Teams
 
-Il parcheggio di chiamata e il recupero è una funzionalità che consente a un utente di mettere una chiamata in attesa. Quando una chiamata è parcheggiata, il servizio genera un codice univoco per il recupero delle chiamate. L'utente che ha parcheggiato la chiamata o qualcun altro può quindi usare il codice con un'app o un dispositivo supportato per recuperare la chiamata. Per informazioni [dettagliate,](https://support.office.com/article/park-a-call-in-teams-8538c063-d676-4e9a-8045-fc3b7299bb2f) vedere Parcheggiare una chiamata in Teams.
+Il parcheggio di chiamata e il recupero è una funzionalità che consente a un utente di mettere una chiamata in attesa. Quando una chiamata è parcheggiata, il servizio genera un codice univoco per il recupero delle chiamate. L'utente che ha parcheggiato la chiamata o qualcun altro può quindi usare il codice con un'app o un dispositivo supportato per recuperare la chiamata. Per informazioni [dettagliate, vedere Parcheggiare](https://support.office.com/article/park-a-call-in-teams-8538c063-d676-4e9a-8045-fc3b7299bb2f) una chiamata in Teams.
 
 Alcuni degli scenari comuni per l'uso del parcheggio di chiamata sono:
 
@@ -41,17 +41,21 @@ Alcuni degli scenari comuni per l'uso del parcheggio di chiamata sono:
 Per parcheggiare e recuperare le chiamate, un utente deve essere un VoIP aziendale utente e deve essere incluso in un criterio di parcheggio di chiamata.
 
 > [!NOTE]
-> Il parcheggio di chiamata e il recupero sono disponibili solo in [Teams modalità](teams-and-skypeforbusiness-coexistence-and-interoperability.md) di distribuzione e non sono supportati nei telefoni IP Skype for Business telefoni IP.
+> Il parcheggio di chiamata e il recupero sono disponibili [solo in Teams modalità](teams-and-skypeforbusiness-coexistence-and-interoperability.md) di distribuzione e non sono supportati nei telefoni IP Skype for Business telefoni IP.
 
 ## <a name="configure-call-park-and-retrieve"></a>Configurare il parcheggio di chiamata e recuperare
 
 È necessario essere un amministratore Teams per configurare il parcheggio di chiamata e recuperarlo. È disabilitato per impostazione predefinita. È possibile abilitarlo per gli utenti e creare gruppi di utenti usando i criteri di parcheggio di chiamata. Quando si applicano gli stessi criteri a un set di utenti, possono parcheggiare e recuperare le chiamate tra loro.
 
-L'intervallo di numeri di ritiro delle chiamate è predefinito compreso tra 10 e 99 e non può essere modificato. La prima chiamata parcheggiata verrà resa un codice di ritiro di 10, la successiva chiamata parcheggiata verrà resa un codice di ritiro di 11 e così via. fino a quando 99 non viene visualizzato come codice di ritiro. Dopo di che, i codici di ritiro renderizzati ricominciano da 10 di nuovo.  Se sono presenti più di 89 chiamate parcheggiate attive, i codici di ritiro visualizzati continueranno a essere incrementati oltre le 99, in modo che la 90a chiamata parcheggiata attiva sia resa 100 per un codice di ritiro, mentre la 91a chiamata parcheggiata attiva verrà resa un codice di ritiro di 101.
+Per impostazione predefinita, l'intervallo di numeri di ritiro delle chiamate è compreso tra 10 e 99. È anche possibile creare un intervallo personalizzato compreso tra 10 e 9999. La prima chiamata parcheggiata verrà resa un codice di ritiro dell'inizio dell'intervallo (ad esempio 10). La chiamata parcheggiata successiva verrà resa un codice di ritiro incrementato di 1; cio, 11 e così via, finché la fine dell'intervallo non viene resa come codice di ritiro. Dopo di che, i codici di ritiro renderizzati ricominciano dall'inizio dell'intervallo di nuovo. 
 
-Per abilitare un criterio di parcheggio di chiamata
+È possibile specificare un timeout come numero di secondi di attesa prima di squillare quando la chiamata parcheggiata non è stata ritirata. L'intervallo consentito è compreso tra 120 e 1800 secondi e il valore predefinito è 300 secondi.
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Criteri**  >  **del parco chiamate vocali.**
+Per impostare l'intervallo del parco personalizzato e il timeout del parco, usare i cmdlet New e Set-CsTeamsCallParkPolicy disponibili nel modulo di PowerShell 2.6.0 o versione successiva di Teams. Le modifiche all'intervallo del parco personalizzato e al timeout del parco non sono gestibili nell'Teams di amministrazione. Si noti che Teams'interfaccia di amministrazione continuerà a visualizzare i valori predefiniti.
+
+Per abilitare un criterio di parcheggio di chiamata:
+
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare **a** Criteri  >  **del parco chiamate vocali.**
 2. Nella scheda **Gestisci criteri** fare clic su **Aggiungi.**
 3. Assegnare un nome al criterio e quindi impostare **Consenti parcheggio di chiamata** su **Attivata.** Non è possibile personalizzare l'intervallo di risposta e il timeout della chiamata.
 

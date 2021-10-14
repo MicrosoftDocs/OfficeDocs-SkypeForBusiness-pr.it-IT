@@ -16,16 +16,16 @@ f1.keywords:
 description: Configurare l'ottimizzazione del supporto locale per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3e383a9d0435dde2c17a38d8a1879b3bf3fb6e4d
-ms.sourcegitcommit: 99503baa8b5183972caa8fe61e92a362213599d9
+ms.openlocfilehash: 59524c620525505b9fcc19d909f5b4b84cc60720
+ms.sourcegitcommit: 31da77589ac82c43a89a9c53f2a2de5ab52f93c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127403"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60356434"
 ---
 # <a name="configure-local-media-optimization-for-direct-routing"></a>Configurare l'ottimizzazione del supporto locale per il routing diretto
 
-La configurazione per l'ottimizzazione multimediale locale si basa su impostazioni di rete comuni ad altre funzionalità vocali del cloud, ad esempio routing Location-Based e chiamate di emergenza dinamiche. Per altre informazioni sulle aree di rete, i siti di rete, le subnet di rete e gli indirizzi IP attendibili, vedere Impostazioni di rete [per le funzionalità vocali cloud.](cloud-voice-network-settings.md)
+La configurazione per l'ottimizzazione multimediale locale si basa su impostazioni di rete comuni ad altre funzionalità vocali cloud, ad esempio routing Location-Based e chiamate di emergenza dinamiche. Per altre informazioni sulle aree di rete, i siti di rete, le subnet di rete e gli indirizzi IP attendibili, vedere Impostazioni di rete [per le funzionalità vocali cloud.](cloud-voice-network-settings.md)
 
 Prima di configurare l'ottimizzazione multimediale locale, vedere [Ottimizzazione dei supporti locali per il routing diretto.](direct-routing-media-optimization.md)  
 
@@ -51,10 +51,8 @@ Per configurare l'utente e i siti SBC, è necessario:
 3. [Definire la topologia della rete virtuale](#define-the-virtual-network-topology) assegnando SBC ai siti con le modalità pertinenti e i valori SBC proxy.
 
 > [!NOTE]
-> La logica di ottimizzazione dei supporti locali si basa su indirizzi client configurati come esterni o interni, rispetto alle reti aziendali con accesso a un'interfaccia interna SBC (Session Border Controller) certificata direct routing. La posizione del cliente (interna/esterna) viene determinata durante l'elaborazione di ogni chiamata, osservando l'indirizzo usato per raggiungere gli inoltri di trasporto.
-> 
-> Negli scenari VPN a tunnel diviso in cui gli inoltri sono raggiungibili tramite l'ISP, la logica best-route del client preferisce la route predefinita dell'interfaccia locale, ad esempio una rete WiFi pubblica. In questo modo Microsoft segnala all'SBC che il client è esterno, anche se può raggiungere l'interfaccia interna di Direct Routing SBC del cliente. I clienti instradamento diretto che usano l'ottimizzazione dei supporti locali potrebbero avere tempi prolungati di configurazione delle chiamate e in alcuni casi nessun audio durante la ricezione di chiamate dalla RETE PSTN.
-> 
+> L'ottimizzazione locale dei supporti multimediali si basa sul fatto che le posizioni dei client vengono rilevate come esterne o interne rispetto alle reti aziendali con accesso a un'interfaccia interna SBC (Direct Routing) Session Border Controller (SBC).
+> Negli scenari VPN con doppio tunnel quando l'endpoint client viene rilevato come esterno alla rete del cliente, Microsoft segnalerà la posizione esterna alla SBC anche se il client può raggiungere l'interfaccia interna dell'SBC Direct Routing del cliente. I clienti instradamento diretto che usano l'ottimizzazione dei supporti locali potrebbero avere tempi prolungati di configurazione delle chiamate e in alcuni casi nessun audio durante la ricezione di chiamate dalla RETE PSTN.
 > Per evitare questo problema, gli amministratori VPN devono bloccare l'accesso tra utenti VPN remoti e l'interfaccia interna SBC di Routing diretto.
 
 
@@ -146,7 +144,7 @@ PS C:\> Set-CsOnlinePSTNGateway -Identity <Identity> -GatewaySiteID <site ID> -M
 
 Tenere presente quanto segue: 
    - Se il cliente ha un singolo SBC, il parametro -ProxySBC deve essere obbligatorio $null o valore FQDN SBC (scenario SBC centrale con trunk centralizzati).
-   - Il parametro -MediaBypass deve essere impostato su $true per supportare l'ottimizzazione multimediale locale.
+   - Il parametro -MediaBypass deve essere impostato su $true per supportare l'ottimizzazione del supporto multimediale locale.
    - Se per SBC non è impostato il parametro -BypassMode, le intestazioni X-MS non verranno inviate. 
    - Per tutti i parametri viene fatto distinzione tra maiuscole e minuscole, quindi è necessario assicurarsi di usare lo stesso caso usato durante l'installazione.  Ad esempio, i valori gatewaySiteID "Vietnam" e "vietnam" verranno trattati come siti diversi.
 
@@ -161,7 +159,7 @@ Set-CSOnlinePSTNGateway -Identity “IDsbc.contoso.com” -GatewaySiteID “Indo
 ```
 
 > [!NOTE]
-> Per garantire operazioni ininterrotte quando l'ottimizzazione dei supporti locali e il routing di Location-Based (LBR) sono configurati contemporaneamente, gli SBC downstream devono essere abilitati per LBR impostando il parametro GatewaySiteLbrEnabled su $true per ogni SBC downstream. Questa impostazione non è obbligatoria per il proxy SBC.
+> Per garantire operazioni ininterrotte quando l'ottimizzazione dei supporti locali e il routing Location-Based (LBR) sono configurati contemporaneamente, gli SBC downstream devono essere abilitati per LBR impostando il parametro GatewaySiteLbrEnabled su $true per ogni SBC downstream. Questa impostazione non è obbligatoria per il proxy SBC.
 
 In base alle informazioni precedenti, il routing diretto includerà tre intestazioni SIP proprietarie per gli inviti SIP e i nuovi inviti, come illustrato nella tabella seguente.
 
@@ -212,7 +210,7 @@ La tabella seguente mostra la configurazione e l'azione dell'utente finale:
 
 | Posizione fisica dell'utente| L'utente effettua o riceve una chiamata a/da numero | Numero di telefono dell'utente  | Criteri di routing vocale online | Modalità configurata per SBC |
 |:------------|:-------|:-------|:-------|:-------|
-| Vietnam | +84 4 3926 3000 | +84 4 5555 5555   | Priorità 1: ^ \+ 84(\d {9} )$ -VNsbc.contoso.com <br> Priorità 2: .* - proxysbc.contoso.com   | VNsbc.contoso.com – Ignora sempre <br> proxysbc.contoso.com – Ignora sempre
+| Vietnam | +84 4 3926 3000 | +84 4 5555 5555   | Priorità 1: ^ \+ 84(\d {9} )$ -VNsbc.contoso.com <br> Priorità 2: .* - proxysbc.contoso.com   | VNsbc.contoso.com - Ignora sempre <br> proxysbc.contoso.com – Ignora sempre
 
 
 Il diagramma seguente mostra la scala SIP per una chiamata in uscita con modalità ignora sempre e l'utente nella stessa posizione del SBC.
