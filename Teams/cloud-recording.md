@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 22d57e349d22deb6d40227ba15d73a7958bad894
-ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
+ms.openlocfilehash: 9bdf14874765a8cd67f0ea7ffcfdcb05358b061b
+ms.sourcegitcommit: 31da77589ac82c43a89a9c53f2a2de5ab52f93c0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "59432438"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "60356450"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -147,7 +147,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -ChannelRecordingDownload Block
 Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. Se si disattiva questa opzione, durante la riproduzione di una registrazione di riunione non saranno disponibili le opzioni **Cerca** e **Cc**. La persona che ha avviato la registrazione ha bisogno che questa impostazione sia attivata perché la registrazione includa anche una trascrizione.
 
 > [!NOTE]
-> Si noti che la trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua di Teams impostata sull'inglese, e quando durante la riunione si parla inglese. Vengono archiviati insieme alle registrazioni delle riunioni nello spazio di archiviazione nel cloud di OneDrive for Business e SharePoint Online.
+> La trascrizione per le riunioni registrate è al momento supportata solo per: inglese (Stati Uniti), inglese (Canada), inglese (India), inglese (Regno Unito), inglese (Australia), inglese (Nuova Zelanda), tedesco (Germania), portoghese (Brasile), olandese (Paesi Bassi), olandese (Belgio), francese (Francia), spagnolo (Spagna), giapponese (Giappone), francese (Canada), cinese (cantonese, tradizionale), cinese (mandarino, semplificato), hindi (India), italiano (Italia), coreano (Corea), spagnolo (Messico), svedese (Svezia), polacco (Polonia), arabo (Emirati Arabi Uniti), arabo (Arabia Saudita), danese (Danimarca), finlandese (Finlandia), norvegese (Norvegia) e russo (Russia). Vengono archiviati insieme alle registrazioni delle riunioni nello spazio di archiviazione nel cloud di OneDrive for Business e SharePoint Online.
 
 È possibile usare l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare un criterio per le riunioni di Teams con cui controllare se chi avvia la registrazione riceve l'opzione per trascriverne la registrazione.
 
@@ -309,7 +309,7 @@ Sì, la data di scadenza è impostata per ogni file. Gli utenti possono modifica
 
 **In che modo un amministratore può modificare la data di scadenza?**
   
-Gli amministratori potranno modificare l'impostazione di scadenza predefinita in PowerShell (Set-CsTeamsMeetingPolicy -Identity Global -MeetingRecordingExpirationDays) o nell'interfaccia di amministrazione di Teams prima del rilascio della funzionalità. **L'impostazione non è ancora disponibile per la modifica.** Quando l'impostazione sarà disponibile per la modifica, nel Centro messaggi apparirà un post di aggiornamento. Gli amministratori possono modificare questa impostazione nell'interfaccia di amministrazione di Teams, durante l’avvio di questa funzionalità. La modifica delle impostazioni di scadenza influirà solo sulle nuove registrazioni delle riunioni di Teams create da quel punto in poi. Non influirà sulle registrazioni effettuate prima di tale data. 
+Gli amministratori potranno modificare l'impostazione di scadenza predefinita in PowerShell o nell'interfaccia di amministrazione di Teams prima del rilascio della funzionalità. **L'impostazione non è ancora disponibile per la modifica.** Quando l'impostazione sarà disponibile per la modifica, nel Centro messaggi apparirà un post di aggiornamento. Gli amministratori possono modificare questa impostazione nell'interfaccia di amministrazione di Teams, durante l’avvio di questa funzionalità. La modifica delle impostazioni di scadenza influirà solo sulle nuove registrazioni delle riunioni di Teams create da quel punto in poi. Non influirà sulle registrazioni effettuate prima di tale data. 
 
 I valori dei giorni di scadenza possono essere impostati nel modo seguente:
   
@@ -411,7 +411,7 @@ Oggi i sottotitoli codificati per il file video di registrazione sono collegati 
 Eventuali modifiche future al collegamento tra la trascrizione in Teams e la registrazione verranno chiarite qui e nelle notifiche del Centro messaggi. Se apporteremo modifiche in futuro, ci assicureremo che i file di registrazione che risalgono a meno di 60 giorni contengano la trascrizione della riunione sotto forma di sottotitoli.
 
 > [!NOTE]
-> Saranno presenti sottotitoli codificati solo in inglese (la trascrizione della riunione non è ancora disponibile in GCC).
+> La trascrizione della riunione non è ancora disponibile in Government Community Cloud.
 
 ## <a name="ediscovery-and-compliance-for-meeting-recordings"></a>eDiscovery e conformità per le registrazioni delle riunioni
 
