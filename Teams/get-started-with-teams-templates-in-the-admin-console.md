@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 636cd41a6107f8fb43b42a6118b8ead9d2b754ef
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: 1f51c262e26613cf29a7dd2883afbf1cc6871b26
+ms.sourcegitcommit: d23185cf6caeeeb055c36609e7c788a2b2e8d07d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60045572"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "60367518"
 ---
 # <a name="get-started-with-team-templates-in-the-teams-admin-center"></a>Introduzione ai modelli di team nell'interfaccia Teams di amministrazione
 
@@ -41,7 +41,7 @@ Un modello di team in Microsoft Teams è una definizione della struttura di un t
 Questo articolo offre una panoramica dell'uso dei modelli di team nell'Teams di amministrazione. Verranno fornite informazioni sulle proprietà supportate nei modelli, sui modelli predefiniti forniti, sui limiti delle dimensioni dei modelli, su come creare e gestire i modelli e altro ancora.
 
 > [!NOTE]
-> Gli utenti possono [creare team da modelli di team predefiniti](https://support.microsoft.com/office/create-a-team-from-a-template-a90c30f3-9940-4897-ab5b-988e69e4cd9c) o personalizzati nell Teams app. Gli sviluppatori possono anche creare team a livello di programmazione da modelli di team predefiniti usando Microsoft Graph. Per altre informazioni, vedere [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md).
+> Gli utenti possono [creare team da modelli di team predefiniti](https://support.microsoft.com/office/create-a-team-from-a-template-a90c30f3-9940-4897-ab5b-988e69e4cd9c) o personalizzati nell'app Teams team. Gli sviluppatori possono anche creare team a livello di programmazione da modelli di team predefiniti usando Microsoft Graph. Per altre informazioni, vedere [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md).
 
 ## <a name="team-template-capabilities"></a>Funzionalità dei modelli di team
 
@@ -63,7 +63,7 @@ La maggior parte delle proprietà di un team sono incluse e supportate dai model
 
 ## <a name="pre-built-team-templates-in-the-teams-admin-center"></a>Modelli di team predefiniti nell'interfaccia Teams di amministrazione
 
-Ecco i modelli di team predefiniti disponibili nell'interfaccia Teams di amministrazione. I modelli predefiniti sono modelli creati per settori specifici. Per visualizzare questi modelli, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare **a** modelli Teams  >  **team.**
+Ecco i modelli di team predefiniti disponibili nell'Teams di amministrazione. I modelli predefiniti sono modelli creati per settori specifici. Per visualizzare questi modelli, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare **a** Teams  >  **del team.**
 
 È possibile duplicare i modelli predefiniti, ma non modificarli. Se si vogliono modificare le proprietà in un modello predefinito, è possibile creare un nuovo modello da un modello esistente e quindi aggiungere o rimuovere le proprietà desiderate. Tenere presente che alcune proprietà in alcuni modelli non possono essere modificate.
 
@@ -108,7 +108,7 @@ I modelli sono limitati a un numero specifico di canali, schede e app.
 |App per modello | 50|
 |||
 
-Per altre informazioni, vedere [Limiti e specifiche di Teams](limits-specifications-teams.md).
+Per altre informazioni, vedere [Limiti e specifiche di Teams.](limits-specifications-teams.md)
 
 ## <a name="manage-team-templates"></a>Gestire i modelli di team
 
@@ -116,7 +116,7 @@ Per altre informazioni, vedere [Limiti e specifiche di Teams](limits-specificati
 
 #### <a name="view-team-templates"></a>Visualizzare i modelli di team
 
-Per visualizzare i modelli di team, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare **a** modelli Teams  >  **team.** Selezionare un modello per visualizzare altri dettagli, inclusi i canali e le app in esso contenuti.
+Per visualizzare i modelli di team, nel riquadro di spostamento sinistro dell Teams di amministrazione passare **a** modelli Teams  >  **team.** Selezionare un modello per visualizzare altri dettagli, inclusi i canali e le app in esso contenuti.
 
 #### <a name="create-your-own-team-templates"></a>Creare modelli di team personalizzati
 
@@ -144,3 +144,4 @@ Usare i cmdlet seguenti per gestire i modelli in PowerShell.
 
 - [Creare un team da un modello](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b)
 - [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md)
+- [Clonare un team](/graph/api/team-clone?view=graph-rest-1.0&tabs=http)
