@@ -21,12 +21,12 @@ description: L'amministratore IT o di Teams può configurare l'accesso esterno p
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 0fac6c236fba7b8cc17af2bc4c21211a5160d06e
-ms.sourcegitcommit: 99503baa8b5183972caa8fe61e92a362213599d9
+ms.openlocfilehash: 207c46d37503989dddd8039ccdd0c4cd71d6b276
+ms.sourcegitcommit: 279ab5236431961c5181e2c01a69e5aa4290d381
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "60127373"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60462330"
 ---
 # <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 
@@ -163,6 +163,20 @@ Per abilitare la federazione tra gli utenti dell'organizzazione e gli utenti con
 
 > [!IMPORTANT]
 > Non è necessario aggiungere **domini Skype** come domini consentiti per permettere agli utenti di Teams o Skype for Business Online di comunicare con gli utenti di Skype all'interno o all'esterno dell'organizzazione. **Tutti i domini skype** sono consentiti.
+
+## <a name="federation-diagnostic-tool"></a>Strumento di diagnostica della federazione
+
+Gli amministratori possono usare il seguente strumento di diagnostica per verificare che un utente Teams possa comunicare con un utente Teams federato:
+
+1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’interfaccia Amministrazione Microsoft 365. 
+
+   > [!div class="nextstepaction"]
+   > [Esegui test: federazione di Teams](https://aka.ms/TeamsFederationDiag)
+
+2. Nel riquadro Esegui diagnostica immettere il **dell'indirizzo SIP (Session Initiation Protocol)** e il **nome di dominio del tenant federato**, quindi selezionare **Esegui test**.
+
+3. I test restituiranno i passaggi da attuare per risolvere eventuali configurazioni del tenant o di criteri che impediscono la comunicazione con l'utente federato.
+
 
 ## <a name="related-topics"></a>Argomenti correlati
 
