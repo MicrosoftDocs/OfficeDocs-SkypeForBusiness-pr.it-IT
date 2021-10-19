@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams, che fornisce un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
-ms.openlocfilehash: 073f1fa2fbc96ed78cddb6e16201476df2cafa96
-ms.sourcegitcommit: 99bf220249723e954cf5295df3418d93fec80db6
+ms.openlocfilehash: 40dd229a94a92dde70cf50c0a2a3018dab19a9a0
+ms.sourcegitcommit: 279ab5236431961c5181e2c01a69e5aa4290d381
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60275610"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60462352"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -48,7 +48,7 @@ Le code di chiamata forniscono:
 
 - Opzioni di gestione per l'overflow e il timeout della coda.
 
-Prima di seguire le procedure descritte in questo [articolo,](plan-auto-attendant-call-queue.md) leggere [](plan-auto-attendant-call-queue.md#getting-started) Pianificare gli operatori automatici Teams e le code di chiamata e seguire i passaggi introduttivi.
+Prima di seguire le procedure descritte [in questo articolo, leggere Pianificare](plan-auto-attendant-call-queue.md) gli operatori automatici Teams e le code di chiamata e seguire i passaggi introduttivi. [](plan-auto-attendant-call-queue.md#getting-started)
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -58,7 +58,7 @@ Questo video mostra un esempio di base di come creare una coda di chiamata in Te
 
 ## <a name="create-the-call-queue"></a>Creare la coda di chiamata
 
-Per configurare una coda di chiamata, nell'interfaccia Teams di amministrazione espandere **Voce,** fare clic su Code di **chiamata** e quindi su **Aggiungi.**
+Per configurare una coda di chiamata, nell'Teams di amministrazione espandere **Voce,** fare clic su **Code** di chiamata e quindi su **Aggiungi.**
 
 Digitare un nome per la coda di chiamata.
 
@@ -95,7 +95,7 @@ Specificare se si vuole riprodurre un messaggio di saluto ai chiamanti quando ar
 Teams musica predefinita ai chiamanti mentre sono in attesa in una coda. La musica predefinita fornita nelle code Teams chiamate è gratuita di eventuali royalty pagate dall'organizzazione. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
 
 > [!NOTE]
-> L'utente è responsabile della cancellazione e della protezione indipendente di tutti i diritti e le autorizzazioni necessari per l'uso di qualsiasi file musicale o audio con il servizio Microsoft Teams, che può includere proprietà intellettuale e altri diritti in qualsiasi musica, effetti audio, audio, marchi, nomi e altri contenuti nel file audio di tutti i titolari dei diritti rilevanti, che possono includere artisti,  attori, interpreti, musicisti, cantautori, compositori, etichette di registrazione, editori musicali, unioni, gilde, società di diritti, organizzazioni di gestione collettiva e qualsiasi altra parte che possiede, controlla o licenza i diritti di copyright della musica, gli effetti sonori, l'audio e altri diritti di proprietà intellettuale.
+> L'utente è responsabile della cancellazione e della protezione indipendente di tutti i diritti e le autorizzazioni necessari per l'uso di qualsiasi file musicale o audio con il servizio Microsoft Teams, che può includere proprietà intellettuale e altri diritti in qualsiasi musica, effetti audio, audio, marchi, nomi e altri contenuti nel file audio di tutti i titolari di diritti rilevanti, che possono includere artisti,  attori, interpreti, musicisti, cantautori, compositori, etichette di registrazione, editori musicali, unioni, gilde, società di diritti, organizzazioni di gestione collettiva e qualsiasi altra parte che possiede, controlla o licenza i diritti di copyright della musica, gli effetti sonori, l'audio e altri diritti di proprietà intellettuale.
 
 ## <a name="call-agents"></a>Agenti di chiamata
 
@@ -107,7 +107,7 @@ Esaminare i [prerequisiti per l'aggiunta di agenti a una coda di chiamata.](plan
 
 È possibile aggiungere fino a 200 agenti tramite un Teams canale. Per aggiungere un canale alla coda, è necessario essere membri del team o del creatore o proprietario del canale.
 
-Se si vuole usare un canale Teams per gestire la [coda,](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e)selezionare l'opzione **Scegli un team** e fare clic su Aggiungi **canale.** Cercare il team da usare, selezionarlo e fare clic su **Aggiungi.** Selezionare il canale da usare (sono supportati solo i canali standard) e fare clic su **Applica**. 
+Se si vuole usare [un canale Teams](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e)per gestire la coda, selezionare l'opzione Scegli un **team** e fare clic su **Aggiungi canale.** Cercare il team da usare, selezionarlo e fare clic su **Aggiungi.** Selezionare il canale da usare (sono supportati solo i canali standard) e fare clic su **Applica**. 
 
 I client seguenti sono supportati quando si usa un canale Teams per le code di chiamata: 
 
@@ -139,7 +139,7 @@ Per aggiungere un gruppo alla coda, fare clic **su Aggiungi gruppi,** cercare il
   - La versione più recente del client desktop Microsoft Teams, dell'app Android o dell'app iOS
   - Microsoft Teams Telefono versione 1449/1.0.94.2020051601 o successiva
   
-Gli account Teams agenti devono essere impostati sulla Teams solo utenti. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate. È consigliabile abilitare la modalità conferenza per le code di chiamata se tutti gli agenti usano client compatibili.
+Gli account Teams agenti devono essere impostati sulla modalità Teams solo utenti. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate. È consigliabile abilitare la modalità conferenza per le code di chiamata se tutti gli agenti usano client compatibili.
 
 > [!NOTE]
 > La modalità conferenza non è supportata se le chiamate telefoniche vengono instradati alla coda da un gateway di routing diretto abilitato per il routing in base alla posizione.
@@ -236,7 +236,7 @@ I client seguenti sono supportati per gli agenti di chiamata in una coda di chia
   - Microsoft Teams App Android
 
     > [!NOTE]
-    > Le code di chiamata a cui è assegnato un numero di instradamento diretto non supportano Skype for Business client, client Lync o telefoni IP Skype for Business come agenti. Il Teams client è supportato solo con una [modalità di coesistenza di Teams Solo](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
+    > Le code di chiamata a cui è assegnato un numero di instradamento diretto non supportano Skype for Business client, client Lync o telefoni IP Skype for Business telefoni IP come agenti. Il Teams client è supportato solo con una [modalità di coesistenza di Teams Solo](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
 
 ## <a name="call-queue-cmdlets"></a>Cmdlet della coda di chiamata
 
@@ -249,6 +249,19 @@ Puoi anche utilizzare Windows PowerShell per creare e configurare code di chiama
 - [Get-CsCallQueue](/powershell/module/skype/get-CsCallQueue)
 
 - [Remove-CsCallQueue](/powershell/module/skype/remove-CsCallQueue)
+
+## <a name="call-queue-diagnostic-tool"></a>Strumento di diagnostica coda di chiamata
+
+Gli amministratori possono usare lo strumento di diagnostica seguente per verificare che una coda di chiamata sia in grado di ricevere chiamate:
+
+1. Selezionare **Esegui test** di seguito, che popola la diagnostica nel Amministrazione Microsoft 365 centrale. 
+
+   > [!div class="nextstepaction"]
+   > [Esegui test: coda Teams chiamata](https://aka.ms/TeamsCallQueueDiag)
+
+2. Nel riquadro Esegui diagnostica immettere l'Account risorsa nel campo Nome utente o Posta elettronica e quindi selezionare **Esegui test.** 
+
+3. I test restituiranno i passaggi successivi migliori per risolvere eventuali configurazioni di tenant, criteri e account delle risorse per verificare che la coda di chiamata sia in grado di ricevere chiamate.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.users.voice.calldelegation.tooltip
 - seo-marvel-apr2020
 description: Informazioni su come inviare agli utenti un messaggio di posta elettronica con le informazioni relative ai servizi di audioconferenza in Microsoft Teams.
-ms.openlocfilehash: e9954f85d9f5676635dc8d4616c08d0e0d3ac6be
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 057c9a91e1eab20ab7f9ece6c427b6c39ef762b9
+ms.sourcegitcommit: 279ab5236431961c5181e2c01a69e5aa4290d381
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58617172"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60462380"
 ---
 # <a name="shared-line-appearance-in-microsoft-teams"></a>Aspetto della linea condivisa in Microsoft Teams
 
@@ -38,17 +38,17 @@ L'aspetto della linea condivisa fa parte della funzionalità di delega che conse
 
 ## <a name="license-required"></a>Licenza richiesta
 
-Un utente deve avere un Sistema telefonico con connettività PSTN (una licenza piano per le chiamate o Direct Routing OnlineVoiceRoutingPolicy) per essere un delegato o configurare la delega e consentire ad altri utenti di effettuare o ricevere chiamate per loro conto.
+Un utente deve avere un Sistema telefonico con connettività PSTN (una licenza piano per chiamate o Direct Routing OnlineVoiceRoutingPolicy) per essere un delegato o configurare la delega e consentire ad altri utenti di effettuare o ricevere chiamate per loro conto.
 
-Sia i manager che i delegati devono avere Sistema telefonico connettività PSTN (una licenza per il piano di chiamata o direct routing onlineVoiceRoutingPolicy). L'esperienza di linea condivisa fa parte della delega ed è inclusa in Sistema telefonico. Per altri dettagli sul modello di licenza, vedere Microsoft Teams [servizio.](/office365/servicedescriptions/teams-service-description)
+Sia i responsabili che i delegati devono avere a Sistema telefonico connettività PSTN (una licenza per il piano di chiamata o una Direct Routing OnlineVoiceRoutingPolicy). L'esperienza di linea condivisa fa parte della delega ed è inclusa in Sistema telefonico. Per altri dettagli sul modello di licenza, vedere la [descrizione Microsoft Teams servizio.](/office365/servicedescriptions/teams-service-description)
 
 ## <a name="configuring-delegation-and-shared-line-appearance"></a>Configurazione della delega e dell'aspetto della linea condivisa
 
 La delega e l'aspetto della linea condivisa sono caratteristiche guidate dall'utente: non sono disponibili impostazioni di amministratore da configurare. Per informazioni su come usare la funzionalità, vedere [Condividere una linea telefonica con un delegato](https://support.office.com/article/share-a-phone-line-with-a-delegate-16307929-a51f-43fc-8323-3b1bf115e5a8)
 
-L'amministratore tenant può abilitare la delega tramite l'impostazione **TeamsCallingPolicy AllowDelegation** o tramite Teams di amministrazione per il funzionamento di questa funzionalità. 
+L'amministratore tenant può abilitare la delega tramite l'impostazione **TeamsCallingPolicy AllowDelegation** o tramite il portale di amministrazione di Teams per il funzionamento di questa funzionalità. 
 
-L'amministratore tenant può anche configurare le relazioni di delega per un utente nell'Teams di amministrazione. Inoltre, l'utente finale può anche configurare le relazioni di delega direttamente Teams. L'amministratore tenant o l'utente non può bloccare la configurazione tra loro, ma l'interfaccia di amministrazione di Teams e il client di Teams devono mostrare questa relazione in modo accurato in entrambe le posizioni. 
+L'amministratore tenant può anche configurare le relazioni di delega per un utente nell'Teams di amministrazione. Inoltre, l'utente finale può anche configurare le relazioni di delega direttamente Teams. L'amministratore tenant o l'utente non può bloccare la configurazione tra loro, ma l'interfaccia di amministrazione di Teams e il client Teams devono mostrare questa relazione in modo accurato in entrambe le posizioni. 
 
 > [!IMPORTANT]
 > Quando l'amministratore tenant disattiva la delega per un utente (dopo che è stato attivato), deve anche pulire le relazioni di delega per quell'utente nell'interfaccia di amministrazione di Teams per evitare un instradamento non corretto delle chiamate.
@@ -63,10 +63,10 @@ L'aspetto della linea condivisa è attualmente supportato dalle app e dai dispos
 | Ricevere chiamate per conto di un altro | Sì | Sì | Sì | Sì | Sì |
 | Chiamare un numero di telefono per conto di un altro | Sì | Sì | Sì | Sì | Sì |
 | Chiamare un Teams utente per conto di un altro utente | Sì | Sì | Sì | Sì | Sì |
-| Visualizzare la visualizzazione amministratore delle righe condivise | Sì | Sì | Sì | No | No |
-| Visualizzare la visualizzazione amministratore delle attività di chiamata del manager | Sì | Sì | Sì | No | No |
+| Visualizzare la visualizzazione delegata delle righe condivise | Sì | Sì | Sì | No | No |
+| Visualizzare la visualizzazione delegata delle attività di chiamata del manager | Sì | Sì | Sì | No | No |
 | Visualizzare la visualizzazione responsabile dei delegati | Sì | Sì | Sì | No | No |
-| L'amministratore o il responsabile può tenere o riprendere | Sì | Sì | Sì | No | No |
+| Il delegato o il responsabile può tenere o riprendere | Sì | Sì | Sì | No | No |
 
 ## <a name="limitations"></a>Limitazioni
 

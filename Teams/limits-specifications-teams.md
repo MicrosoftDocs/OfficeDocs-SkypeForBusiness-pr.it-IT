@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1518c2bbdf39c53f21026edc9da3dae8cc8ef90c
-ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
+ms.openlocfilehash: 9ac3ebe8d4b8e2572c5e4d6766d671a86101340b
+ms.sourcegitcommit: 5a28d052379aef67531d3023cbe4dff30dba1136
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942391"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60465826"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -67,7 +67,6 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 
 Gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat in Teams devono avere una cassetta postale di Exchange Online (basata sul cloud) perché un amministratore possa eseguire ricerche nelle conversazioni in chat. Il motivo è che le conversazioni che fanno parte dell'elenco chat vengono archiviate nelle cassette postali basate su cloud dei partecipanti. Se un partecipante della chat non ha una cassetta postale di Exchange Online, l'amministratore non potrà eseguire una ricerca né applicare un blocco alle conversazioni in chat. In una distribuzione ibrida di Exchange, ad esempio, gli utenti con una cassetta postale locale potrebbero essere in grado di partecipare a conversazioni che fanno parte dell'elenco chat in Teams. In questo caso, tuttavia, il contenuto delle conversazioni non è disponibile per la ricerca e non può essere bloccato perché gli utenti non hanno cassette postali basate sul cloud. Per ulteriori informazioni, vedere [Come interagiscono Exchange e Microsoft Teams](exchange-teams-interact.md).
 
-La chat di Teams funziona su un back-end di Microsoft Exchange, quindi i limiti di messaggistica di Exchange si applicano alla funzione di chat in Teams.
 
 |Funzionalità  | Limite massimo  |
 |---------|---------|

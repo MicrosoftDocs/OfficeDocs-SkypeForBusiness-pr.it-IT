@@ -1,7 +1,7 @@
 ---
 title: Assegnare, modificare le posizioni per gli interventi di emergenza per gli utenti
-author: cichur
-ms.author: v-cichur
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: jastark, roykuntz
 ms.topic: article
@@ -18,24 +18,24 @@ f1.keywords:
 - NOCSH
 description: In questo articolo viene spiegato come assegnare o modificare la posizione per gli interventi di emergenza per gli utenti dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 146c97be9b416b0e338b6b6c49eeb19171b26cee
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 1edc7bd6f5a1ea1b7a09f6747c1ee61f7dd74758
+ms.sourcegitcommit: 5a28d052379aef67531d3023cbe4dff30dba1136
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58617602"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60465976"
 ---
 # <a name="assign-or-change-the-place-for-an-emergency-location-for-a-user"></a>Assegnare o modificare la posizione di un luogo per gli interventi di emergenza per un utente
 
-Ogni numero di telefono attivo deve avere una posizione di emergenza associata quando lo assegni a un utente. L'indirizzo viene associato quando si ottiene un numero di telefono in Office 365 o quando si trasferisce un numero di telefono. Quando si associa il numero a una posizione di emergenza, è anche possibile aggiungere un luogo per fornire una posizione più esatta all'interno di una posizione fisica. Un luogo può essere il piano, l'ala dell'edificio o il numero dell'ufficio in cui si trova l'utente. È possibile avere un numero illimitato di posti per una determinata posizione di emergenza e cambiare il luogo se l'utente si sposta in un altro ufficio o edificio. Ad esempio, se l'utente passa dal piano 34 al piano 35.
-  
-Per informazioni su come ottenere i Piani per chiamate e il costo, vedere Teams [licenze per i componenti aggiuntivi.](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+Ogni numero di telefono attivo deve avere una posizione di emergenza associata quando lo assegni a un utente. **L'indirizzo viene associato quando si ottiene un numero di telefono in Microsoft 365, quando si trasferisce un numero di telefono a Microsoft 365 o quando si ottiene un numero di telefono dal provider.**
+
+Quando si associa il numero a una posizione di emergenza, è anche possibile aggiungere un luogo per fornire una posizione più esatta all'interno di una posizione fisica. Un luogo può essere il piano, l'ala dell'edificio o il numero dell'ufficio in cui si trova l'utente. È possibile avere un numero illimitato di posti per una determinata posizione di emergenza e cambiare il luogo se l'utente si sposta in un altro ufficio o edificio. Ad esempio, se l'utente passa dal piano 34 al piano 35.
   
 È possibile assegnare o modificare la posizione di un luogo per gli interventi di emergenza per un utente nell'interfaccia di amministrazione di Microsoft Teams o usando PowerShell.
 
 ## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic **su** Numeri Telefono  >  **vocali**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Numeri**  >  **Telefono vocali**.
 
 2. Nella pagina **Telefono numeri** fare clic sulla **scheda Numeri,** selezionare un numero utente nell'elenco e quindi fare clic su **Modifica.**
 

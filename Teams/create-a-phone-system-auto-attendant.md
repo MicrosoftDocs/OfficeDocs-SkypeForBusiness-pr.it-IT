@@ -22,21 +22,21 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per organizzazioni di grandi dimensioni in Microsoft Teams.
-ms.openlocfilehash: 50c024854481a30f4a612db6320f51818b6d3b0d
-ms.sourcegitcommit: e7f6125d348b6f14eeba28e09d5f1975ad4fde69
+ms.openlocfilehash: a17921eee249d8baf10256e0d0ea17d4462494c0
+ms.sourcegitcommit: 279ab5236431961c5181e2c01a69e5aa4290d381
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60249528"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60462356"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
-Gli operatori automatici consentono alle persone di chiamare l'organizzazione e navigare in un sistema di menu per parlare al reparto, alla coda di chiamata, alla persona o a un operatore giusto. È possibile creare operatori automatici per l'organizzazione con l'Microsoft Teams di amministrazione o con PowerShell.You can create auto attendants for your organization with the Microsoft Teams admin center, or with PowerShell.
+Gli operatori automatici consentono alle persone di chiamare l'organizzazione e navigare in un sistema di menu per parlare al reparto, alla coda di chiamata, alla persona o a un operatore giusto. È possibile creare operatori automatici per l'organizzazione con l'Microsoft Teams di amministrazione o con PowerShell.
 
 > [!TIP]
 > Questo articolo è per le organizzazioni di grandi dimensioni. Se l'organizzazione è una piccola azienda, vedere Configurare un operatore [automatico - esercitazione sulle piccole](/microsoftteams/business-voice/create-a-phone-system-auto-attendant-smb) imprese.
 
-Assicurarsi di aver letto Pianificare [gli](plan-auto-attendant-call-queue.md) operatori Teams e le [](plan-auto-attendant-call-queue.md#getting-started) code di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
+Prima di seguire le procedure descritte [in questo articolo, leggere Pianificare](plan-auto-attendant-call-queue.md) gli operatori automatici Teams e le code di chiamata e seguire i passaggi introduttivi. [](plan-auto-attendant-call-queue.md#getting-started)
 
 Gli operatori automatici possono indirizzare le chiamate, in base all'input dei chiamanti, a una delle destinazioni seguenti: <a name="call-routing-options" ></a>
 
@@ -50,7 +50,7 @@ Gli operatori automatici possono indirizzare le chiamate, in base all'input dei 
 
 Durante la configurazione di un operatore automatico, verrà richiesto di scegliere una di queste opzioni in varie fasi.
 
-Per configurare un operatore automatico, nell'interfaccia Teams di amministrazione espandere **Voce**, selezionare **Operatori** automatici e quindi **selezionare Aggiungi**.
+Per configurare un operatore automatico, nell'interfaccia Teams di amministrazione espandere **Voce,** selezionare **Operatori automatici** e quindi **selezionare Aggiungi**.
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -123,9 +123,9 @@ Se non sono stati assegnati tasti di chiamata, scegliere un'opzione per **La ric
 
 **Chiama per nome:** se si abilita questa opzione, i chiamanti possono pronunciare il nome dell'utente o digitarlo sul tastierino del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con Chiama per nome. È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
 
-**Chiama per interno:** se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'interno del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con **Chiama per interno**. È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
+**Chiama per interno:** se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'interno del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con Chiama **per interno.** È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
 
-Gli utenti che si vogliono rendere disponibili per l'estensione Chiamata per interno devono avere un'estensione specificata come parte di uno degli attributi dei telefoni seguenti definiti in Active Directory o Azure Active Directory (per altre informazioni, vedere Aggiungere utenti singolarmente o [in](/microsoft-365/admin/add-users/add-users) blocco).
+Gli utenti che si vogliono rendere disponibili per l'interno di chiamata devono avere un'estensione specificata come parte di uno degli attributi dei telefoni seguenti definiti in Active Directory o Azure Active Directory (per altre informazioni, vedere Aggiungere utenti singolarmente o [in](/microsoft-365/admin/add-users/add-users) blocco).
 
 - OfficePhone
 - HomePhone
@@ -143,7 +143,7 @@ Il formato necessario per immettere l'interno nel campo del numero di telefono d
 - Esempio 2: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+15555555678x5678"
 - Esempio 3: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "x5678"
 
-È possibile impostare l'estensione [nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) o [nell'Azure Active Directory di amministrazione.](https://aad.portal.azure.com) Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
+È possibile impostare l'estensione nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) o nell'Azure Active Directory [di amministrazione.](https://aad.portal.azure.com) Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
 
 > [!NOTE]
 > Se si vogliono usare  sia le  funzionalità Chiama per nome che Chiama per interno, è possibile assegnare un tasto di composizione all'operatore automatico principale per raggiungere un operatore automatico abilitato per Chiama **per nome.** All'interno di tale operatore automatico, è possibile assegnare il tasto 1 (a cui non sono associate lettere) per raggiungere l'operatore automatico Chiama **per** interno.
@@ -225,7 +225,7 @@ Fare riferimento ai [Prerequisiti per](plan-auto-attendant-call-queue.md#prerequ
 
 - Per un account [](calling-plans-for-office-365.md) della risorsa con una licenza piano per chiamate o un numero [Connessione con operatore,](operator-connect-plan.md) il numero di telefono per il trasferimento esterno deve essere immesso nel formato E.164 (+[codice paese][codice area][numero di telefono]).
 
-- Per un account delle risorse con criteri di routing vocale Sistema telefonico License e Routing diretto online, il formato del numero di telefono per il trasferimento esterno dipende dalle impostazioni [SBC (Session Border Controller).](direct-routing-connect-the-sbc.md)
+- Per un account delle risorse con criteri di routing vocale Sistema telefonico License e Direct Routing online, il formato del numero di telefono per il trasferimento esterno dipende dalle impostazioni [SBC (Session Border Controller).](direct-routing-connect-the-sbc.md)
 
 Il numero di telefono in uscita visualizzato viene determinato nel modo seguente:
 
@@ -257,6 +257,19 @@ In un Skype for Business ibrido, per trasferire una chiamata dell'operatore auto
 - [Get-CsAutoAttendantSupportedLanguage](/powershell/module/skype/Get-CsAutoAttendantSupportedLanguage)
 - [Import-CsAutoAttendantHolidays](/powershell/module/skype/import-csautoattendantholidays)
 - [New-CsAutoAttendantCallableEntity](/powershell/module/skype/New-CsAutoAttendantCallableEntity)
+
+## <a name="auto-attendant-diagnostic-tool"></a>Operatore automatico diagnostica
+
+Gli amministratori possono usare lo strumento di diagnostica seguente per verificare che un operatore automatico sia in grado di ricevere chiamate:
+
+1. Selezionare **Esegui test** di seguito, che popola la diagnostica nel centro Amministrazione Microsoft 365 dati. 
+
+   > [!div class="nextstepaction"]
+   > [Esegui test: Teams federativa](https://aka.ms/TeamsAADiag)
+
+2. Nel riquadro Esegui diagnostica immettere l'Account risorsa nel campo Nome utente o Posta elettronica e quindi selezionare **Esegui test.** 
+
+3. I test identificheranno le configurazioni di tenant, criteri o account delle risorse che impediscono all'operatore automatico di ricevere chiamate e fornirà i passaggi per risolvere eventuali problemi identificati.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

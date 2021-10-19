@@ -1,6 +1,6 @@
 ---
-title: Barriere di informazione in Microsoft Teams
-description: Questo articolo spiega quali sono le barriere di informazione in Microsoft Teams e come possono influire sulle Teams.
+title: Barriere all'informazione in Microsoft Teams
+description: Questo articolo spiega cosa sono le barriere di informazione in Microsoft Teams e come possono influire sulle Teams.
 author: robmazz
 ms.author: robmazz
 manager: laurawi
@@ -16,14 +16,14 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e829cb078ee334c36c69aa489c9dec6f3c5eaa10
-ms.sourcegitcommit: 5eb5acd7910724f7f4a598ecc28b003e5bbe5ea5
+ms.openlocfilehash: b0843ce2adf400dca9cf426789adc6180daf3f57
+ms.sourcegitcommit: 5a28d052379aef67531d3023cbe4dff30dba1136
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "60007786"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60465846"
 ---
-# <a name="information-barriers-in-microsoft-teams"></a>Barriere di informazione in Microsoft Teams
+# <a name="information-barriers-in-microsoft-teams"></a>Barriere all'informazione in Microsoft Teams
 
 Le barriere alle informazioni sono criteri che un amministratore può configurare per impedire a singoli utenti o gruppi di comunicare tra loro. Gli IBS sono utili se, ad esempio, un reparto gestisce informazioni che non devono essere condivise con altri reparti. Gli IBS sono utili anche quando un gruppo deve essere isolato o impedito di comunicare con chiunque all'esterno di tale gruppo.
 
@@ -39,7 +39,7 @@ Per Microsoft Teams, le barriere alle informazioni possono determinare e impedir
 >- Non è possibile creare gruppi di barriere alle informazioni tra tenant.
 >- L'uso di bot, app Azure Active Directory (Azure AD), API per l'invio di notifiche del feed attività e alcune API per aggiungere utenti non sono supportate nella versione 1.
 >- I canali privati sono conformi ai criteri di barriere alle informazioni configurate dall'utente.
->- Per informazioni sul supporto per SharePoint siti connessi a Teams, vedere Segmenti associati a Microsoft Teams [siti.](/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites)
+>- Per informazioni sul supporto per le barriere SharePoint siti connessi a Teams, vedere Segmenti associati a Microsoft Teams [siti.](/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites)
 
 ## <a name="background"></a>Sfondo
 
@@ -50,7 +50,7 @@ Tuttavia, dopo l'introduzione degli elementi di base, molte altre aree li hanno 
 - **Istruzione:** gli studenti di un istituto di istruzione non sono in grado di cercare i dettagli di contatto per gli studenti di altri istituti di istruzione.
 - **Legale:** mantenere la riservatezza dei dati ottenuti dall'avvocato di un cliente e impedirne l'accesso da parte di un avvocato della stessa società che rappresenta un cliente diverso.
 - **Governo:** l'accesso e il controllo delle informazioni sono limitati in reparti e gruppi.
-- **Professional servizi:** un gruppo di persone in un'azienda è in grado di chattare con un cliente o un cliente specifico solo tramite l'accesso guest durante l'impegno del cliente.
+- **Professional servizi:** un gruppo di persone in un'azienda è in grado di chattare solo con un cliente o un cliente specifico tramite l'accesso guest durante un impegno del cliente.
 
 Ad esempio, Enrico appartiene al segmento Banking e Pradeep appartiene al segmento Financial advisor. Enrico e Pradeep non possono comunicare tra loro perché i criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti. Tuttavia, Enrico e Pradeep possono comunicare con Lee nelle risorse umane.
 
@@ -110,7 +110,7 @@ I criteri IB vengono attivati quando si verificano Teams eventi seguenti:
 
 - Un utente effettua una chiamata telefonica **in Teams:** ogni volta che un utente avvia una chiamata vocale (tramite VOIP) a un altro utente o gruppo di utenti, la chiamata viene valutata per assicurarsi che non violi i criteri IB di altri membri del team. In caso di violazione, la chiamata vocale viene bloccata.
 
-- **Guest in Teams:** i criteri IB si applicano anche ai guest in Teams. Se i guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere Gestire l'accesso [guest in Microsoft 365 gruppi.](/microsoft-365/admin/create-groups/manage-guest-access-in-groups) Quando gli utenti guest sono individuabili, è [possibile definire i criteri IB.](/office365/securitycompliance/information-barriers-policies)
+- **Guest in Teams:** i criteri IB si applicano anche ai guest in Teams. Se i guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere [Gestire l'accesso guest in Microsoft 365 gruppi](/microsoft-365/admin/create-groups/manage-guest-access-in-groups). Quando gli utenti guest sono individuabili, è [possibile definire i criteri IB.](/office365/securitycompliance/information-barriers-policies)
 
 ## <a name="how-policy-changes-impact-existing-chats"></a>Impatto delle modifiche ai criteri sulle chat esistenti
 
@@ -180,7 +180,7 @@ Attualmente, gli utenti verificano gli scenari seguenti se un criterio IB blocca
 
 ## <a name="teams-policies-and-sharepoint-sites"></a>Teams criteri e SharePoint siti
 
-Quando viene creato un team, viene eseguito il provisioning SharePoint un sito Microsoft Teams per l'esperienza file. I criteri di protezione delle informazioni non vengono rispettati in questo sito SharePoint e nei file per impostazione predefinita. Per abilitare le barriere alle informazioni SharePoint e OneDrive, seguire le istruzioni e i passaggi descritti nell'articolo Usare le barriere di informazioni [con](/sharepoint/information-barriers#enable-sharepoint-and-onedrive-information-barriers-in-your-organization) SharePoint articolo.
+Quando viene creato un team, viene eseguito il provisioning SharePoint un sito di Microsoft Teams per l'esperienza file. Per impostazione predefinita, i criteri di protezione delle informazioni non vengono rispettati in questo SharePoint e nei file. Per abilitare le barriere alle informazioni SharePoint e OneDrive, seguire le istruzioni e i passaggi descritti nell'articolo Usare le barriere di informazioni [con](/sharepoint/information-barriers#enable-sharepoint-and-onedrive-information-barriers-in-your-organization) SharePoint.
 
 ## <a name="information--barrier-modes-and-teams"></a>Modalità di protezione delle informazioni e Teams
 
@@ -191,7 +191,7 @@ La modalità Barriere informazioni consente di rafforzare gli utenti che possono
 
 Microsoft 365 I gruppi creati prima dell'attivazione di un criterio di protezione delle informazioni vengono impostati automaticamente *sulla modalità* di apertura per impostazione predefinita. Dopo aver attivato i criteri IB nel tenant, sarà necessario aggiornare la modalità che rivaluta i gruppi e i siti e comporta la rimozione automatica di utenti non conformi da questi gruppi e siti. Se è necessario  modificare la configurazione della modalità di apertura nei gruppi connessi Teams esistenti per soddisfare i requisiti di conformità per l'organizzazione, è necessario aggiornare le modalità [IB](/sharepoint/information-barriers.md#view-and-manage-IB-mode-as-an-administrator-with-SharePoint-PowerShell) per i siti di SharePoint connessi al team di Teams.
 
-Usare il cmdlet *Set-UnifiedGroup* con il *parametro InformationBarrierMode* che corrisponde alla modalità da usare per i segmenti. L'elenco dei valori consentiti per *il parametro InformationBarrierMode* *è Open* e *Implicit*.
+Usare il cmdlet [Set-UnifiedGroup](/powershell/module/exchange/set-unifiedgroup) con il *parametro InformationBarrierMode* che corrisponde alla modalità da usare per i segmenti. L'elenco dei valori consentiti per *il parametro InformationBarrierMode* *è Open* e *Implicit*.
 
 Ad esempio, per configurare la *modalità implicita* per un gruppo Microsoft 365, si userà il comando di PowerShell seguente:
 
@@ -223,5 +223,5 @@ Per altre informazioni su licenze e autorizzazioni, piani e prezzi, vedere le Mi
 
 ## <a name="availability"></a>Disponibilità
 
-- La funzionalità è disponibile nel cloud pubblico. a gennaio 2021 sono stati lanciati ostacoli alle informazioni nel cloud GCC cloud.
+- La funzionalità è disponibile nel cloud pubblico. nel mese di gennaio 2021 sono stati lanciati ostacoli alle informazioni nel cloud GCC cloud.
 - La funzionalità non è ancora disponibile nei cloud GCC - High e DOD.

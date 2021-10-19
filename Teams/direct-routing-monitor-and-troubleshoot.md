@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come monitorare e risolvere i problemi di configurazione del routing diretto, inclusi i controller dei bordi delle sessioni, i componenti di routing diretto e i trunk di Telecom.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aeff22bf3558c64111f0d1b66c2fd76288f81477
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 97bc8afb3645fca4e06b859b765dfbf1e3fe1859
+ms.sourcegitcommit: 279ab5236431961c5181e2c01a69e5aa4290d381
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726885"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60462320"
 ---
 # <a name="monitor-and-troubleshoot-direct-routing"></a>Monitorare e risolvere i problemi di Instradamento diretto
 
@@ -38,6 +38,19 @@ In caso di problemi di risoluzione dei problemi, è possibile aprire un caso di 
 
 Microsoft sta lavorando alla fornitura di altri strumenti per la risoluzione dei problemi e il monitoraggio. Controllare periodicamente la documentazione per gli aggiornamenti. 
 
+## <a name="direct-routing-diagnostic-tool"></a>Strumento di diagnostica routing diretto
+
+Gli amministratori possono usare lo strumento di diagnostica seguente per verificare che un utente sia configurato correttamente per il routing diretto:
+
+1. Selezionare **Esegui test** di seguito, che popola la diagnostica nel centro Amministrazione Microsoft 365 dati. 
+
+   > [!div class="nextstepaction"]
+   > [Esegui test: Routing diretto](https://aka.ms/TeamsDirectRoutingDiag)
+
+2. Nel riquadro Esegui diagnostica immettere il messaggio di posta  elettronica dell'utente da testare nel campo Nome utente o Posta elettronica e quindi selezionare **Esegui test.**
+
+3. I test restituiranno i passaggi migliori per risolvere eventuali configurazioni di tenant, utenti o criteri per verificare che l'utente sia configurato correttamente per il routing diretto in Microsoft Teams.
+
 ## <a name="monitoring-availability-of-session-border-controllers-using-session-initiation-protocol-sip-options-messages"></a>Monitoraggio della disponibilità dei session border controller tramite i messaggi di opzioni SIP (Session Initiation Protocol)
 
 Il routing diretto usa le opzioni SIP inviate dai session border controller per monitorare l'integrità di SBC. Non sono necessarie azioni da parte dell'amministratore tenant per abilitare il monitoraggio delle opzioni SIP. Le informazioni raccolte vengono prese in considerazione quando si prendono decisioni relative al routing. 
@@ -48,7 +61,7 @@ Il diagramma seguente mostra un esempio della configurazione:
 
 ![Esempio di configurazione delle opzioni SIP.](media/sip-options-config-example.png)
 
-Quando un utente effettua una chiamata al numero +1 425, \<any seven digits> Direct Routing valuta il percorso. Ci sono due SBC nel percorso: sbc1.contoso.com e sbc2.contoso.com. Entrambi gli SBC hanno la stessa priorità nel percorso. Prima di scegliere un SBC, il meccanismo di routing valuta l'integrità degli SBC in base all'ultima volta in cui il servizio SBC ha inviato le opzioni SIP. 
+Quando un utente effettua una chiamata al numero +1 425, \<any seven digits> Direct Routing valuta il percorso. Ci sono due SBC nel percorso: sbc1.contoso.com e sbc2.contoso.com. Entrambi i SBC hanno la stessa priorità nel percorso. Prima di scegliere un SBC, il meccanismo di routing valuta l'integrità degli SBC in base all'ultima volta in cui il servizio SBC ha inviato le opzioni SIP. 
 
 Un SBC è considerato integro se le statistiche al momento dell'invio della chiamata mostrano che SBC invia opzioni ogni minuto.  
 
@@ -66,7 +79,7 @@ L'abbassamento di livello indica che il valore SBC non verrà provato prima. Ad 
 
 Se sbc1.contoso.com le opzioni SIP non vengono inviate a intervalli regolari come descritto in precedenza, viene abbassata di livello. Quindi, sbc2.contoso.com la chiamata. Se sbc2.contoso.con non riesce a recapitare la chiamata, il sbc1.contoso.com (abbassato di livello) viene riprovato prima che venga generato un errore. 
 
-Se due (o più) SBC in un percorso sono considerati integri e uguali, viene applicato Fisher-Yates shuffle per distribuire le chiamate tra gli SBC.
+Se due (o più) SBC in un percorso sono considerati integri e uguali, viene applicato Fisher-Yates casuale per distribuire le chiamate tra gli SBC.
 
 ## <a name="monitor-call-quality-analytics-dashboard-and-sbc-logs"></a>Monitorare il dashboard di Call Quality Analytics e i log SBC 
  
@@ -79,7 +92,7 @@ Per monitorare la configurazione, è possibile usare gli strumenti seguenti:
 
 Il servizio Routing diretto ha codici di errore molto descrittivi riportati nei log di Call Analytics o SBC. 
 
-Il dashboard qualità chiamata fornisce informazioni sulla qualità e l'affidabilità delle chiamate. Per altre informazioni su come risolvere i problemi con Call Analytics, vedere Attivare e usare Call Quality Dashboard per Microsoft Teams e [Skype for Business Online](/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard) e Usare Call Analytics per risolvere i problemi di qualità scarsa delle [chiamate.](/SkypeForBusiness/using-call-quality-in-your-organization/use-call-analytics-to-troubleshoot-poor-call-quality) 
+Il dashboard qualità chiamata fornisce informazioni sulla qualità e l'affidabilità delle chiamate. Per altre informazioni su come risolvere i problemi con Call Analytics, vedere Attivazione e uso di Call Quality Dashboard per Microsoft Teams e [Skype for Business Online](/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard) e Usare Call Analytics per risolvere i problemi di qualità scarsa delle [chiamate.](/SkypeForBusiness/using-call-quality-in-your-organization/use-call-analytics-to-troubleshoot-poor-call-quality) 
 
 In caso di errori di chiamata, Call Analytics fornisce codici SIP standard per facilitare la risoluzione dei problemi. 
 

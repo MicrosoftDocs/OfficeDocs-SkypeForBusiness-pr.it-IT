@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9bdf14874765a8cd67f0ea7ffcfdcb05358b061b
-ms.sourcegitcommit: 31da77589ac82c43a89a9c53f2a2de5ab52f93c0
+ms.openlocfilehash: 2d84d42849667c1cd87a90f9cd8b3480b5ed8bbd
+ms.sourcegitcommit: 279ab5236431961c5181e2c01a69e5aa4290d381
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60356450"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "60462390"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -147,7 +147,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -ChannelRecordingDownload Block
 Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. Se si disattiva questa opzione, durante la riproduzione di una registrazione di riunione non saranno disponibili le opzioni **Cerca** e **Cc**. La persona che ha avviato la registrazione ha bisogno che questa impostazione sia attivata perché la registrazione includa anche una trascrizione.
 
 > [!NOTE]
-> La trascrizione per le riunioni registrate è al momento supportata solo per: inglese (Stati Uniti), inglese (Canada), inglese (India), inglese (Regno Unito), inglese (Australia), inglese (Nuova Zelanda), tedesco (Germania), portoghese (Brasile), olandese (Paesi Bassi), olandese (Belgio), francese (Francia), spagnolo (Spagna), giapponese (Giappone), francese (Canada), cinese (cantonese, tradizionale), cinese (mandarino, semplificato), hindi (India), italiano (Italia), coreano (Corea), spagnolo (Messico), svedese (Svezia), polacco (Polonia), arabo (Emirati Arabi Uniti), arabo (Arabia Saudita), danese (Danimarca), finlandese (Finlandia), norvegese (Norvegia) e russo (Russia). Vengono archiviati insieme alle registrazioni delle riunioni nello spazio di archiviazione nel cloud di OneDrive for Business e SharePoint Online.
+> La trascrizione per le riunioni registrate è al momento supportata solo per: inglese (Stati Uniti), inglese (Canada), inglese (India), inglese (Regno Unito), inglese (Australia), inglese (Nuova Zelanda), tedesco (Germania), portoghese (Brasile), olandese (Paesi Bassi), olandese (Belgio), francese (Francia), spagnolo (Spagna), giapponese (Giappone), francese (Canada), cinese (cantonese, tradizionale), cinese (mandarino, semplificato), hindi (India), italiano (Italia), coreano (Corea), spagnolo (Messico), svedese (Svezia), polacco (Polonia), arabo (Emirati Arabi Uniti), arabo (Arabia Saudita), danese (Danimarca), finlandese (Finlandia), norvegese (Norvegia) e russo (Russia). Le trascrizioni sono conservate insieme alle registrazioni delle riunioni nello spazio di archiviazione cloud in OneDrive for Business e SharePoint Online.
 
 È possibile usare l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare un criterio per le riunioni di Teams con cui controllare se chi avvia la registrazione riceve l'opzione per trascriverne la registrazione.
 
@@ -435,6 +435,33 @@ Per altre informazioni su eDiscovery, vedere l'articolo [Soluzioni di eDiscovery
 - Valore = *Media.Meeting*
 
 Per altre informazioni sulla prevenzione della perdita dei dati, vedere l’articolo [Informazioni sulla prevenzione della perdita di dati](/microsoft-365/compliance/dlp-learn-about-dlp)
+
+## <a name="meeting-recording-diagnostic-tools"></a>Strumenti di diagnostica per la registrazione delle riunioni
+  ### <a name="user-cannot-record-meetings"></a>L'utente non può registrare le riunioni
+
+Gli amministratori possono usare lo strumento di diagnostica seguente per verificare che l'utente sia configurato correttamente per registrare una riunione in Teams:
+
+1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’Admin Centre di Microsoft 365. 
+
+   > [!div class="nextstepaction"]
+   > [Eseguire test: Registrazione riunione](https://aka.ms/MeetingRecordingDiag)
+
+2. Nel riquadro Esegui diagnostica immettere l’indirizzo e-mail dell'utente che non può registrare le riunioni nel campo **Nome utente o E-mail** e quindi selezionare **Esegui test**.
+
+3. I test restituiranno i passaggi successivi migliori per risolvere eventuali configurazioni degli utenti o di criteri per verificare che l'utente sia configurato correttamente per registrare una riunione in Teams.
+  
+  ### <a name="meeting-record-is-missing"></a>Registrazione riunione mancante
+
+Gli amministratori possono usare lo strumento di diagnostica seguente per verificare che la registrazione della riunione sia stata completata correttamente e che sia stata caricata in Stream o OneDrive, in base all'ID riunione e all'ora di inizio della registrazione:
+
+1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’Admin Centre di Microsoft 365. 
+
+   > [!div class="nextstepaction"]
+   > [Esegui test: Registrazione riunione mancante](https://aka.ms/MissingRecordingDiag)
+
+2. Nel riquadro Esegui diagnostica, immettere l'URL della riunione nel campo **URL della riunione registrata** (in genere presente nell'invito alla riunione) e la data della riunione nel campo **Quando è stata registrata la riunione? ** e quindi selezionare **Esegui test**.
+
+3. I test verificano che la registrazione della riunione sia stata completata correttamente e che sia stata caricata in Stream o OneDrive.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
