@@ -21,12 +21,12 @@ appliesto:
 - Microsoft Teams
 - seo-marvel-apr2020
 - seo-marvel-may2020
-ms.openlocfilehash: 19296d5def314bdd54af25c27401a9bbd0972cf2
-ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
+ms.openlocfilehash: ed307d811322d2c217a117d192731cf5d42edcb7
+ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973014"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "60536707"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -34,11 +34,11 @@ Teams offre un'esperienza di collaborazione predefinita che la maggior parte del
 
 Per iniziare, guardare il breve video sulle chat, i team e i canali di Teams (4:30 minuti):
 
+<br/>
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE476Yj]
 
-*Novità di novembre 2019*
- - È ora possibile [usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](use-advisor-teams-roll-out.md). Advisor per Teams (anteprima) guida l'implementazione di Teams. Valuta l'ambiente di Microsoft 365 o Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams.
- - [Canale YouTube dedicato a Microsoft Teams Essentials for IT](https://aka.ms/MicrosoftTeamsforIT), che include brevi video (8-10 minuti) per illustrare come distribuire, configurare e gestire Teams.
+È possibile usare [Assistente per Teams](use-advisor-teams-roll-out.md) per distribuire Microsoft Teams. Assistente per Teams fornisce una guida per l'implementazione di Teams. Valuta l'ambiente di Microsoft 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima di procedere per la corretta implementazione di Teams.
 
 > [!TIP]
 > È consigliabile includere nell'implementazione iniziale di Teams le app in primo piano, ad esempio Planner. Aggiungere ulteriori [app, bot e connettori](deploy-apps-microsoft-teams-landing-page.md) per incentivare l'adozione di Teams.
@@ -102,7 +102,7 @@ L'accesso esterno (in precedenza noto come federazione) consente agli utenti di 
 
 ### <a name="guest-access"></a>Accesso guest
 
-L'accesso guest in Teams consente a utenti esterni all'organizzazione di accedere a team e canali. È possibile usare le impostazioni di accesso guest per controllare quali funzionalità possono o non possono essere usate dagli utenti guest. L'accesso guest è attivato per impostazione predefinita. Per altre informazioni, vedere [Accesso guest in Teams](./guest-access.md).
+L'accesso guest in Teams consente a utenti esterni all'organizzazione di accedere a team e canali. Le impostazioni di accesso guest consentono di controllare quali funzionalità possono essere usate o meno dai guest. L'accesso guest è attivato per impostazione predefinita. Per altre informazioni, vedere [Accesso guest in Teams](./guest-access.md).
 
 > [!NOTE]
 > Per altre informazioni sull'accesso esterno e l'accesso guest, vedere [Comunicare con utenti di altre organizzazioni in Microsoft Teams](communicate-with-users-from-other-organizations.md)

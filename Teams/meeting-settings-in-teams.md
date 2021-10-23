@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 25d66dfc6487d411185e421a7bdef07c1e135156
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: dea6c465600229414dba30c0b0adecc7e5a5caad
+ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58730645"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "60537097"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -37,7 +37,7 @@ L’amministratore usa le impostazioni delle riunioni di Teams per controllare s
 
 Con la partecipazione anonima, chiunque può partecipare alla riunione come utente anonimo facendo clic sul collegamento nell'invito alla riunione. Per altre informazioni, vedere [Partecipare a una riunione senza un account di Teams](https://support.office.com/article/join-a-meeting-without-a-teams-account-c6efc38f-4e03-4e79-b28f-e65a4c039508).
 
-![Icona che mostra il logo di Microsoft Teams.](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+ **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 Per apportare queste modifiche, è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](./using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
@@ -59,7 +59,7 @@ Gli utenti anonimi ora erediteranno i criteri di autorizzazione predefiniti glob
 > [!IMPORTANT]
 > Per impostazione predefinita, l'impostazione per consentire agli utenti anonimi di interagire con le app nelle riunioni è abilitata.
 
-![Icona che mostra il logo di Microsoft Teams.](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+ **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 Per accedere a questa impostazione è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](./using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
@@ -86,7 +86,7 @@ Per accedere a questa impostazione è necessario essere un amministratore del se
 
 ### <a name="customize-your-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
-![Icona che mostra il logo di Microsoft Teams.](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+ **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Passare all’interfaccia di amministrazione.
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
@@ -111,7 +111,7 @@ Se si usa la Qualità del servizio (QoS) per assegnare la priorità al traffico 
 > [!IMPORTANT]
 > Se si attiva la Qualità del servizio (QoS) o si modificano le impostazioni nell'interfaccia di amministrazione di Microsoft Teams per il servizio di Teams, sarà anche necessario [applicare le impostazioni di corrispondenza a tutti i dispositivi degli utenti](QoS-in-Teams-clients.md) e a tutti i dispositivi di rete interni per implementare completamente le modifiche apportate alla Qualità del servizio (QoS) in Teams.
 
- ![Icona che mostra il logo di Microsoft Teams.](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+  **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 1. Passare all’interfaccia di amministrazione.
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
 3. In **Rete**, eseguire quanto descritto di seguito:
@@ -121,9 +121,9 @@ Se si usa la Qualità del servizio (QoS) per assegnare la priorità al traffico 
     - Per consentire l'uso dei contrassegni DSCP per la Qualità del servizio (QoS), attivare **Inserire gli indicatori della Qualità del servizio (QoS) per il traffico multimediale in tempo reale**. È possibile solo usare o non usare gli indicatori; non è possibile quindi impostare indicatori personalizzati per ciascun tipo di traffico. Per altre informazioni sugli indicatori DSCP, vedere [Selezionare un metodo di implementazione QoS](QoS-in-Teams.md#select-a-qos-implementation-method).
         > [!NOTE]
         > Il contrassegno degli indicatori DSCP viene eseguito solitamente tramite le porte di origine e il traffico UDP porterà a un inoltro del trasporto con la porta di destinazione 3478 per impostazione predefinita. Se la società necessita del contrassegno sulle porte di destinazione, contattare il supporto per abilitare la comunicazione verso l'inoltro del trasporto con le porte UDP 3479 (Audio), 3480 (Video) e 3481 (Condivisione).
-    - Per specificare gli intervalli di porte, accanto a **Selezionare un intervallo di porte per ogni tipo di traffico multimediale in tempo reale**, selezionare **Specificare gli intervalli di porte** e quindi immettere la porta iniziale e quella finale per la condivisione audio, video e dello schermo. Se si seleziona questa opzione, è necessario implementare la Qualità del servizio (QoS). 
+    - Per specificare gli intervalli di porte, accanto a **Seleziona un intervallo di porta per ogni tipo di traffico multimediale in tempo reale** selezionare **Specifica gli intervalli di porta** e quindi immettere la porta iniziale e quella finale per la condivisione audio, video e dello schermo. Selezionare questa opzione è necessario per implementare QoS. 
         > [!Note]
-        > Se **i contrassegni per la Qualità del servizio (QoS) per il traffico multimediale in tempo reale** sono attivi, sarà necessario gestire le impostazioni porta. Non vengono gestiti automaticamente.
+        > Se gli **indicatori di Qualità del servizio (QoS) per il traffico multimediale in tempo reale** sono attivi, sarà necessario gestire le impostazioni delle porte, che non vengono gestite automaticamente.
         
         > [!IMPORTANT]
         > Se si seleziona **Utilizzare automaticamente qualsiasi porta disponibile**, vengono usate le porte disponibili tra 1024 e 65535. Usare questa opzione solo quando non si implementa la Qualità del servizio (QoS).
@@ -143,4 +143,4 @@ Tipo di traffico multimediale| Intervallo di porte di origine client \* |Protoco
 
 \* Gli intervalli porta assegnati non possono sovrapporsi e dovrebbero trovarsi uno accanto all'altro.
 
-Dopo aver usato la Qualità del servizio (QoS) per un certo periodo di tempo, è possibile usare le informazioni di utilizzo di ognuno di questi tre carichi di lavoro e scegliere le modifiche da apportare in base alle specifiche esigenze. La [Dashboard di qualità delle chiamate](turning-on-and-using-call-quality-dashboard.md) sarà utile per queste operazioni.
+Dopo che QoS sarà stato usato per un certo periodo tempo, si avranno informazioni di utilizzo sulla richiesta per ognuno di questi tre carichi di lavoro e si potrà scegliere quali modifiche apportare in base alle proprie specifiche esigenze. Il [Dashboard Qualità della chiamata](turning-on-and-using-call-quality-dashboard.md) sarà utile a questo scopo.

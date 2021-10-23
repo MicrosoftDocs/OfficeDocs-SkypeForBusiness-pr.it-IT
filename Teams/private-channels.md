@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: 5d942e268639e30a95878485a931cf1af5be87d5
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: 1f86ceba18a234d7b3a1f41ebdbfe58c777beedf
+ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60045692"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "60536557"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -56,7 +56,7 @@ I membri del team possono vedere solo i canali privati a cui sono stati aggiunti
 
 Il proprietario di un canale privato non può essere rimosso tramite il client di Teams, se si tratta dell'ultimo proprietario di uno o più canali privati.
 
-Se il proprietario di un canale privato lascia l'organizzazione o viene rimosso dal gruppo di Microsoft 365 associato al team, un membro del canale privato viene automaticamente innalzato di livello per ricoprire il ruolo di proprietario del canale privato.
+Se il proprietario di un canale privato lascia l'organizzazione o viene rimosso dal gruppo di Microsoft 365 associato al team, un membro del canale privato viene automaticamente promosso come proprietario del canale privato.
 
 Se un membro del team lascia o viene rimosso da un team, tale utente lascerà o verrà rimosso anche da tutti i canali privati del team. Se l'utente viene aggiunto di nuovo al team, sarà necessario aggiungerlo di nuovo ai canali privati del team.
 
@@ -93,7 +93,6 @@ Ogni canale privato include una siti di SharePoint. La raccolta siti separata co
 
 > [!NOTE]
 > Solo gli utenti con autorizzazioni di proprietario o membro concesse in Microsoft Teams avranno accesso al contenuto nel sito del canale privato.
-> I siti di SharePoint del canale privato non sono inclusi nella pagina Siti attivi della nuova interfaccia di amministrazione di SharePoint.
 > I siti di SharePoint del canale privato creati dopo il 28 giugno 2021 avranno l'ID modello personalizzato TEAMCHANNEL#1.
 
 Un sito di un canale privato sincronizza la classificazione dei dati ed eredita le autorizzazioni di accesso guest dal sito del team padre. L'appartenenza ai gruppi dei membri e di proprietari al sito viene mantenuta sincronizzata con quella ai canali privati in Teams. Le autorizzazioni del sito per un sito di canale privato non possono essere gestite in modo indipendente tramite SharePoint. 
