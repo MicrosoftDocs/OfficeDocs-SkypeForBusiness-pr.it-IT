@@ -20,13 +20,13 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
-description: Informazioni su come assegnare un ID conferenza a un utente in Microsoft Teams e quali devono essere i parametri degli ID conferenza.
-ms.openlocfilehash: 62cbb281af4db60db15676b109b2573c03eb7552
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: Informazioni su come assegnare un ID conferenza a un utente in Microsoft Teams i parametri degli ID conferenza.
+ms.openlocfilehash: 74e43f6dcb5599039007f784ad7ebdd5a053251e
+ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58733255"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "60536867"
 ---
 # <a name="view-and-reset-a-conference-id-assigned-to-a-user-in-microsoft-teams"></a>Visualizzare e reimpostare un ID conferenza assegnato a un utente in Microsoft Teams
 
@@ -43,7 +43,7 @@ Verrà inviato un messaggio di posta elettronica all'utente con l'ID conferenza 
 
 ### <a name="to-view-the-conference-id"></a>Per visualizzare l'ID conferenza
 
-![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+ **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Nel riquadro di spostamento sinistro fare clic **su Utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -63,7 +63,7 @@ Per altre [informazioni, Microsoft Teams informazioni di riferimento su PowerShe
 
 È possibile reimpostare un ID conferenza per un utente se, per esempio, venisse dimenticato.
   
-![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+ **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Nel riquadro di spostamento sinistro fare clic **su Utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 

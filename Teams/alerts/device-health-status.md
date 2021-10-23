@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams Monitoraggio dei dispositivi e avvisi
-author: cichur
-ms.author: v-cichur
+author: cazawideh
+ms.author: czawideh
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -12,16 +12,16 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare le funzionalità di Teams di monitoraggio e avviso nell'interfaccia di amministrazione di Microsoft Teams per monitorare in modo proattivo lo stato di integrità dei Teams dispositivi
+description: Informazioni su come usare le funzionalità di Teams e di avviso nell'interfaccia di amministrazione di Microsoft Teams per monitorare in modo proattivo lo stato di integrità dei Teams dispositivi
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: b44b564da4e772fb3e385b03d61be6874baf11c5
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: ac8ace461e2fb2f5ca8c163a5972fa575baec21d
+ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58735353"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "60536917"
 ---
 # <a name="microsoft-teams-device-health-monitoring"></a>Microsoft Teams dell'integrità dei dispositivi
 
@@ -31,7 +31,7 @@ Prima di iniziare, sono necessarie le autorizzazioni per la creazione di team/ca
 
 ## <a name="configure-device-state-rule"></a>Configurare la regola dello stato del dispositivo
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione selezionare Notifiche **& avvisi**  >  **regole**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione selezionare Notifiche **& avvisi**  >  **Regole**.
 
    ![Sezione Regole nell'interfaccia di amministrazione.](../media/select-rules.png)
 
@@ -70,9 +70,9 @@ Prima di iniziare, sono necessarie le autorizzazioni per la creazione di team/ca
 
 Tutti i dispositivi di accesso usati dall'elenco di utenti selezionato verranno monitorati per lo stato di integrità offline.
 
-## <a name="notifications-in-teams-client"></a>Notifiche nel client Teams
+## <a name="notifications-in-teams-client"></a>Notifiche nel client Teams client
 
-Le notifiche vengono recapitate nel canale **MonitoringAlerts** creato automaticamente del team **di avvisi e notifiche per** gli amministratori.
+Le notifiche vengono recapitate nel canale **MonitoringAlerts** creato automaticamente del team **di avvisi e notifiche per** gli amministratori. Riceverai un avviso entro 15 minuti dalla modalità offline del dispositivo. 
 
 Una notifica offline del dispositivo può includere le informazioni seguenti:
 

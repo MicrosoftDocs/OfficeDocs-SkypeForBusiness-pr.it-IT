@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3ee0e8e7da6410b26f9c4fc256a12c563f15e9bed1562823792bda73c1c29d70
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8c25299a0f0df6863bcb1fbaa4627b891a6e860a
+ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282669"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "60536757"
 ---
 # <a name="survivable-branch-appliance-sba-for-direct-routing"></a>SBA (Survivable Branch Appliance) per il routing diretto
 
@@ -46,10 +46,15 @@ Per ottenere il firmware più recente di Session Border Controller con il Surviv
 - L'SBC deve essere configurato per Media Bypass per assicurarsi che il client Microsoft Teams nel sito di succursale possa avere elementi multimediali che fluino direttamente con SBC. 
 
 - TLS1.2 deve essere abilitato nel sistema operativo della macchina virtuale SBA.
+- Le porte 3443, 4444 e 8443 vengono usate da Microsoft SBA Server per comunicare con il client Teams e devono essere consentite nel firewall. 
+- La porta 5061 (o quella configurata su SBC) viene usata da Microsoft SBA Server per comunicare con SBC e dovrebbe essere consentita nel firewall. 
+- La porta UDP 123 viene usata da Microsoft SBA Server per comunicare con il server NTP e dovrebbe essere consentita nel firewall.
+- La porta 443 viene usata da Microsoft SBA Server per comunicare con Microsoft 365 e dovrebbe essere consentita nel firewall.
+- Gli intervalli IP di Azure e i tag di servizio per il cloud pubblico devono essere definiti in base alle linee guida descritte in: https://www.microsoft.com/download/details.aspx?id=56519
 
 ## <a name="supported-teams-clients"></a>Client Teams supportati
 
-La caratteristica SBA è supportata nei client Microsoft Teams seguenti: 
+La funzionalità SBA è supportata nei client Microsoft Teams seguenti: 
 
 - Microsoft Teams Windows desktop 
 
@@ -57,7 +62,7 @@ La caratteristica SBA è supportata nei client Microsoft Teams seguenti:
 
 ## <a name="how-it-works"></a>Come funziona
 
-Durante un'interruzione di Internet, il client Teams passare automaticamente all'SBA e le chiamate in corso dovrebbero continuare senza interruzioni. Non è richiesta alcuna azione da parte dell'utente. Non appena il client Teams rileva che Internet è in funzione e le chiamate in uscita vengono completate, il client torna alla normale modalità di funzionamento e si connette ad altri Teams servizi. L'SBA carica i record dei dati delle chiamate raccolti nel cloud e la cronologia delle chiamate viene aggiornata in modo che queste informazioni siano disponibili per la revisione da parte dell'amministratore del tenant. 
+Durante un'interruzione di Internet, il client Teams deve passare automaticamente all'SBA e le chiamate in corso dovrebbero continuare senza interruzioni. Non è richiesta alcuna azione da parte dell'utente. Non appena il client Teams rileva che Internet è in funzione e le chiamate in uscita vengono completate, il client torna alla normale modalità di funzionamento e si connette ad altri servizi Teams. L'SBA carica i record dei dati delle chiamate raccolti nel cloud e la cronologia delle chiamate viene aggiornata in modo che queste informazioni siano disponibili per la revisione da parte dell'amministratore del tenant. 
 
 Quando il client Microsoft Teams è in modalità offline, è disponibile la funzionalità correlata alle chiamate seguente: 
 
@@ -72,7 +77,7 @@ Quando il client Microsoft Teams è in modalità offline, è disponibile la funz
 Per il funzionamento della caratteristica SBA, il client di Teams deve sapere quali SBA sono disponibili in ogni sito di succursale e quali SBA sono assegnate agli utenti del sito. I passaggi di configurazione sono i seguenti:
 
 1. Creare le SBA.
-2. Creare i criteri di Teams di succursale.
+2. Creare i criteri Teams di sopravvivenza della filiale.
 3. Assegnare il criterio agli utenti.
 4. Registrare un'applicazione per l'SBA con Azure Active Directory.
 
@@ -172,7 +177,7 @@ Per l'applicazione SBA, tenere presente quanto segue:
 - Tipi di account supportati = Account solo in questa directory dell'organizzazione. 
 - Uri di reindirizzamento Web = https://login.microsoftonline.com/common/oauth2/nativeclient .
 - Token di concessione implicita = token di accesso e token ID. 
-- Autorizzazioni API = Skype e Teams di amministrazione tenant -> autorizzazioni dell'applicazione -> application_access_custom_sba_appliance.
+- Autorizzazioni API = Skype e Teams Tenant Admin Access -> autorizzazioni dell'applicazione -> application_access_custom_sba_appliance.
 - Segreto client: è possibile usare qualsiasi descrizione e scadenza. 
 - Ricordarsi di copiare il segreto client subito dopo la creazione. 
 - L'ID applicazione (client) viene visualizzato nella scheda Panoramica.
@@ -195,7 +200,7 @@ Per istruzioni dettagliate su come configurare session border controller con il 
 
 - [Oracle](https://www.oracle.com/technical-resources/documentation/acme-packet.html#Link-MicrosoftTeams) 
 
-- [TE-SYSTEMS](https://www.anynode.de/microsoft-teams-sba/)
+- [TE-Systems](https://www.anynode.de/microsoft-teams-sba/)
 
 ## <a name="reporting-issues"></a>Segnalazione di problemi
 
@@ -207,8 +212,8 @@ Segnalare eventuali problemi all'organizzazione di supporto del fornitore SBC. Q
 
 - Quando si assegnano criteri di Survivable Branch Appliance a un utente, potrebbe essere necessario del tempo prima che l'SBA venga visualizzato nell'output di Get-CsOnlineUser. 
 
-- La ricerca inversa dei numeri nei contatti di Azure AD non viene eseguita. 
+- La ricerca inversa dei numeri Azure AD contatti non viene eseguita. 
 
 - L'SBA non supporta le impostazioni di inoltro di chiamata. 
 
-- L'esecuzione di una chiamata di emergenza a un numero di emergenza configurato per le chiamate di emergenza dinamiche (E911) non è supportata.
+- L'esecuzione di una chiamata di emergenza a un numero di emergenza configurato per chiamate di emergenza dinamiche (E911) non è supportata.

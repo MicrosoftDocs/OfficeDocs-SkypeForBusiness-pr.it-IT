@@ -22,16 +22,16 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: "Informazioni su come abilitare o disabilitare la partecipazione di chiamanti anonimi a una riunione dall'Teams di amministrazione. "
-ms.openlocfilehash: 5a2abd84514e46a19f3f698650d3acf1ec931410
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: da31c734275113eab3e96b67230a578d0609c1bb
+ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58732745"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "60537307"
 ---
 # <a name="start-an-audio-conference-over-the-phone-without-a-pin-in-microsoft-teams"></a>Avviare un'audioconferenza tramite telefono senza un PIN in Microsoft Teams
 
-Può essere frustrante per gli utenti che a una riunione a una riunione si svolgono nella sala d'attesa della riunione ascoltando musica perché l'organizzatore della riunione Microsoft Teams non ha avviato la riunione. 
+Può essere frustrante per gli utenti che a una riunione a una riunione si svolgono nella sala d'attesa della riunione che ascoltano musica perché l'organizzatore della riunione Microsoft Teams non ha avviato la riunione. 
   
 Se l'organizzatore della riunione chiama per impostazione predefinita, è necessario un PIN per avviare una riunione. È possibile configurarla in modo che chiunque possa accedere a una riunione e non venga richiesto un PIN per avviare la riunione. È possibile usare l'interfaccia di amministrazione per abilitare o disabilitare questa impostazione per un singolo utente.
   
@@ -42,7 +42,7 @@ Non è necessario un PIN per l'organizzatore della riunione se qualcuno ha avvia
   
 ## <a name="enable-or-disable-anonymous-callers-from-joining-a-meeting"></a>Abilitare o disabilitare la partecipazione dei chiamanti anonimi a una riunione
 
-![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+ **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Nel riquadro di spostamento sinistro fare clic su **Utenti.** 
 
@@ -72,7 +72,7 @@ Per altre [informazioni, Microsoft Teams informazioni di riferimento su PowerShe
     
   - Se la riunione non è iniziata (non c'è ancora nessuno nella riunione): al chiamante non verrà chiesto se è l'organizzatore e non gli verrà mai richiesto il PIN. Poiché l'impostazione dell'organizzatore è disattivata, la riunione verrà avviata e i chiamanti anonimi si uniranno alla riunione.
     
-  - Se la riunione è già iniziata (qualcun altro è già nella riunione): al chiamante non verrà chiesto se è l'organizzatore e non gli verrà mai richiesto il PIN; la riunione è già iniziata e il chiamante potrà parteciparvi.
+  - Se la riunione è già iniziata (qualcun altro è già in riunione): a un chiamante non verrà chiesto se è l'organizzatore e non gli verrà mai richiesto di immettere il PIN. la riunione è già iniziata e il chiamante vi partecipa.
     
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 

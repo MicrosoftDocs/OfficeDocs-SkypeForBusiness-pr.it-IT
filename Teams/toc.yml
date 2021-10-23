@@ -359,8 +359,6 @@ items:
             items:
               - name: Informazioni sull'accesso guest
                 href: guest-access.md
-              - name: Elenco di controllo dell'accesso guest
-                href: /microsoft-365/solutions/collaborate-as-team
               - name: Esperienza guest
                 href: guest-experience.md
               - name: Attivare o disattivare l'accesso guest

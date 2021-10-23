@@ -23,27 +23,27 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Informazioni sui passaggi necessari per assegnare un nuovo numero di telefono del servizio al bridge di conferenza per espandere la copertura per gli utenti.
-ms.openlocfilehash: ba12596ea7a10a0d2b0c5fea75beb4ae96b10f07
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: f39a963759e768f4fab70d2a06e6d90b480699e0
+ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726935"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "60536717"
 ---
 # <a name="change-the-phone-numbers-on-your-audio-conferencing-bridge"></a>Cambiare i numeri di telefono del bridge per i servizi di audioconferenza
 
-Quando si acquistano licenze **di audioconferenza,** Microsoft ospita il bridge di audioconferenza per l'organizzazione. Il bridge di audioconferenza fornisce numeri di telefono con accesso esterno da posizioni diverse, in modo che gli organizzatori e i partecipanti possano usarli per partecipare a riunioni Skype for Business o Microsoft Teams tramite telefono.
+Quando si acquistano licenze **di audioconferenza,** Microsoft ospita il bridge di audioconferenza per l'organizzazione. Il bridge di audioconferenza fornisce numeri di telefono per l'accesso esterno da posizioni diverse, in modo che gli organizzatori e i partecipanti possano usarli per partecipare alle riunioni Skype for Business o Microsoft Teams con un telefono.
   
 Oltre ai numeri di telefono già assegnati al bridge di conferenza, è possibile ottenere altri numeri di servizio [(numeri](./getting-service-phone-numbers.md) a pedaggio e a numero verde usati per le audioconferenze) da altre posizioni e quindi assegnarli al bridge di conferenza in modo da poter espandere la copertura per gli utenti.
   
 > [!NOTE]
-> Per poter assegnare/annullare l'assegnazione di un numero di telefono per un bridge di conferenza, il numero di telefono deve essere un *numero* di servizio. Per visualizzare il tipo di numero, passare a Numeri Telefono voce nell'interfaccia di amministrazione di Microsoft Teams e cercare nella  >   **colonna Tipo** numero. Microsoft 365 o Office 365 crediti comunicazioni devono essere impostati per primi per consentire agli utenti di accedere al bridge su un numero verde.
+> Per poter assegnare/annullare l'assegnazione di un numero di telefono per un bridge di conferenza, il numero di telefono deve essere un *numero* di servizio. Per visualizzare il tipo di numero, passare a Numeri Telefono voce nell'interfaccia di amministrazione di Microsoft Teams e cercare nella  >   **colonna Tipo** numero. Microsoft 365 o Office 365 i Crediti comunicazioni devono essere impostati per primi per consentire agli utenti di accedere al bridge su un numero verde.
 
 ## <a name="steps-when-you-are-assigning-a-new-service-phone-number-to-your-conference-bridge"></a>Istruzioni per assegnare un numero telefonico di servizio al tuo bridge di conferenza
 
 ### <a name="step-1---assign-the-new-phone-number-to-your-audio-conferencing-bridge"></a>Passaggio 1 - Assegnare il nuovo numero di telefono al bridge di audioconferenza
 
-![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+ **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Nel riquadro di spostamento sinistro passare **a** Numeri  >  **Telefono vocali.**
 
@@ -57,7 +57,7 @@ Il numero di telefono predefinito del bridge di conferenza definisce l'ID chiama
 
 È possibile impostare come numero predefinito per il bridge di conferenza solo un numero a pedaggio del servizio. **I numeri verde del servizio non possono essere impostati come numero predefinito del bridge di conferenza.** Se si sta assegnando un numero a pedaggio del servizio e si vuole impostarlo come nuovo numero predefinito per il bridge di audioconferenza, eseguire questa procedura:
 
-![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+ **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Nel riquadro di spostamento sinistro passare a **Ponti**  >  **conferenza riunioni**.
 
@@ -69,7 +69,7 @@ Il numero di telefono predefinito del bridge di conferenza definisce l'ID chiama
 
 I numeri di telefono predefiniti di un utente sono quelli inclusi nelle convocazioni di riunione quando pianificano una riunione. Per altre informazioni, inclusa la modalità di assegnazione dei numeri di telefono predefiniti per i nuovi utenti, vedere Impostare i numeri di telefono inclusi negli inviti [in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md) o Impostare i numeri di telefono inclusi negli inviti in [Skype for Business Online.](/SkypeForBusiness/audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites)
 
-![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+ **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Nel riquadro di spostamento sinistro passare a **Utenti** e fare clic sul nome visualizzato dell'utente desiderato nell'elenco.
 
@@ -181,7 +181,7 @@ Per risparmiare tempo automatizzando questo processo, è possibile usare i cmdle
   ```
 
     > [!NOTE]
-    > La posizione usata sopra deve corrispondere alle informazioni di contatto degli utenti impostate nel interfaccia di amministrazione di Microsoft 365.
+    > La posizione usata in precedenza deve corrispondere alle informazioni di contatto degli utenti impostate nel interfaccia di amministrazione di Microsoft 365.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -196,20 +196,20 @@ Get-CsOnlineDialInConferencingBridge -Name "Conference Bridge"
 
 Il risultato, oltre ad altre informazioni come Identity, Name e Region, deve contenere anche DefaultServiceNumber.
 
-**Esempio,** per annullare l'assegnazione, defaultServiceNumber "8005551234"
+**Esempio,** per annullare l'assegnazione, il valore DefaultServiceNumber "8005551234"
 ```PowerShell
 Unregister-CsOnlineDialInConferencingServiceNumber -BridgeName "Conference Bridge" -RemoveDefaultServiceNumber 8005551234 
 ```
 
 ## <a name="about-windows-powershell"></a>Informazioni su Windows PowerShell
 
-Con Windows PowerShell puoi gestire gli utenti e cosa gli è consentito fare oppure no. Windows PowerShell consente di gestire Microsoft 365 o Office 365 e Skype for Business Online usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, soprattutto quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+Con Windows PowerShell puoi gestire gli utenti e cosa gli è consentito fare oppure no. Windows PowerShell consente di gestire Microsoft 365 o Office 365 e Skype for Business Online usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, soprattutto quando è necessario eseguire più attività. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
 
   - [Introduzione a Windows PowerShell e Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
 
-Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso solo del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
 
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
 

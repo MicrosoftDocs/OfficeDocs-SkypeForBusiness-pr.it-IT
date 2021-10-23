@@ -1,7 +1,7 @@
 ---
 title: Aggiungere, modificare, rimuovere posizioni per gli interventi di emergenza
-author: cichur
-ms.author: v-cichur
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: jastark, roykuntz
 ms.topic: article
@@ -16,31 +16,26 @@ appliesto:
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: "Informazioni su come aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione nell'Microsoft Teams di amministrazione. "
+description: "Informazioni su come aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza per l'organizzazione nell'Microsoft Teams di amministrazione. "
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e6523a3a3f19b2c3145bb6e89f47029c4d982ab1
-ms.sourcegitcommit: 5a28d052379aef67531d3023cbe4dff30dba1136
+ms.openlocfilehash: 601d8ce50d5fcf06574f08abb2c78c73a40fefda
+ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60465792"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "60536537"
 ---
 # <a name="add-change-or-remove-an-emergency-location-for-your-organization"></a>Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
 
-**Indipendentemente dall'opzione di connettività [PSTN](pstn-connectivity.md) scelta: Piani per chiamate Microsoft, Connessione con operatore o Instradamento diretto, le posizioni di emergenza possono essere associate a un numero di telefono. Tuttavia, a seconda dell'opzione di connettività PSTN, i requisiti di posizione possono variare.**
+Indipendentemente dall'opzione di connettività [PSTN](pstn-connectivity.md) scelta: Piani per chiamate Microsoft, Connessione con operatore o Instradamento diretto, le posizioni di emergenza possono essere associate a un numero di telefono. Tuttavia, a seconda dell'opzione di connettività PSTN, i requisiti di posizione possono variare.
 
-**Per i Piani per chiamate,** una località di emergenza deve essere associata a un numero di telefono, ma quando ciò accade può variare tra paesi e aree geografiche. Ad esempio, negli Stati Uniti è necessario associare una posizione di emergenza quando si assegna il numero di telefono all'utente. Nel Regno Unito, è necessario associare una posizione di emergenza al numero di telefono quando si ottengono i numeri di telefono da Microsoft 365 o si trasferiscono numeri di telefono dal provider di servizi corrente.
+**Per i Piani per chiamate,** una località di emergenza deve essere associata a un numero di telefono, ma quando ciò accade può variare tra paesi e aree geografiche. Ad esempio, negli Stati Uniti è necessario associare una posizione di emergenza quando si assegna il numero di telefono all'utente. Nel Regno Unito, è necessario associare una posizione di emergenza al numero di telefono quando si ottengono i numeri di telefono da Microsoft 365 o si trasferiscono i numeri di telefono dal provider di servizi corrente.
 
-**Per Connessione con operatore, ...**
-
-**Per il routing diretto...**
-
-**È VERO PER TUTTI E 3?**
 Indipendentemente dal paese o dall'area geografica in cui ci si è, è possibile aggiungere un luogo o un luogo in un luogo per gli interventi di emergenza e rimuovere un luogo per gli interventi di emergenza. A seconda del numero di posizioni fisiche dell'organizzazione, è possibile creare luoghi per edifici, piani e uffici. Vedere [Gestire le chiamate di emergenza.](what-are-emergency-locations-addresses-and-call-routing.md)
 
 È possibile gestire le posizioni di emergenza per l'organizzazione nell'Microsoft Teams di amministrazione o usando PowerShell.
 
-**Per assegnare una località di emergenza, gli utenti, i numeri di telefono e le posizioni di emergenza devono essere tutti nello stesso paese.**  Per altre informazioni, vedere Assegnare o modificare una posizione per gli [interventi di emergenza per un utente.](assign-change-emergency-location-user.md)
+Per assegnare una località di emergenza, gli utenti, i numeri di telefono e le posizioni di emergenza devono essere tutti nello stesso paese.  Per altre informazioni, vedere Assegnare o modificare una posizione per gli [interventi di emergenza per un utente.](assign-change-emergency-location-user.md)
   
 ## <a name="add-an-emergency-location"></a>Aggiungere una posizione per gli interventi di emergenza
 
@@ -52,7 +47,7 @@ Indipendentemente dal paese o dall'area geografica in cui ci si è, è possibile
 4. Selezionare il paese o l'area geografica e quindi immettere l'indirizzo.
 
    > [!NOTE]
-   > In Belgio, Francia, Germania, Irlanda, Paesi Bassi e Spagna, è importante comprendere che per attivare correttamente un numero di telefono in Microsoft 365, l'indirizzo configurato nella posizione di emergenza, usata per acquisire il numero, deve corrispondere al codice di area del numero di telefono.
+   > In Belgio, Francia, Germania, Irlanda, Paesi Bassi e Spagna è importante comprendere che per attivare correttamente un numero di telefono in Microsoft 365, l'indirizzo impostato nella posizione di emergenza, usata per acquisire il numero, deve corrispondere al codice di area del numero di telefono.
 
 5. Se l'indirizzo non viene trovato e si vuole modificarlo manualmente, attivare **Modifica l'indirizzo manualmente.**
 6. Fare clic su **Salva**.

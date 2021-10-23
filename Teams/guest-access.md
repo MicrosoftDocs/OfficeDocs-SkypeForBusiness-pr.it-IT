@@ -19,16 +19,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: L'accesso guest in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali.
-ms.openlocfilehash: 2064ca1fdd816f1948af1f0efcda3021a1c7d2cb
-ms.sourcegitcommit: 279ab5236431961c5181e2c01a69e5aa4290d381
+ms.openlocfilehash: 80c1fcb9012efbc1809b1d1d4252c9801d148ba9
+ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60462340"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "60537087"
 ---
 # <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 
-Con l'accesso guest, è possibile fornire l'accesso a team, documenti in canali, risorse, chat e applicazioni a persone esterne all'organizzazione, pur mantenendo il totale controllo dei dati aziendali. Vedere [Configurare la collaborazione sicura con Microsoft 365 e Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams).
+Tramite l’accesso guest, è possibile consentire l'accesso a team, documenti nei canali, risorse, chat e applicazioni alle persone esterne all’organizzazione, pur mantenendo il totale controllo dei dati aziendali. Vedere [Configurare la collaborazione sicura con Microsoft 365 e Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams). L'accesso guest in Teams è un'impostazione a livello di organizzazione ed è attivato per impostazione predefinita. È possibile controllare l'accesso guest ai singoli team usando le [etichette di riservatezza](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 > [!NOTE]
 > Se si vuole semplicemente trovare, chiamare, chattare e configurare riunioni con persone di altre organizzazioni, usare l’[accesso esterno](manage-external-access.md).
@@ -52,8 +52,6 @@ L'accesso guest in Teams richiede la configurazione di altre impostazioni in Mic
 
 - Per configurare l'accesso degli utenti guest per l’uso generale di Teams, vedere [Collaborare con gli utenti guest in un team](/microsoft-365/solutions/collaborate-as-team).
 - Per collaborare con un'organizzazione partner che usa Azure Active Directory e consentire agli utenti guest di iscriversi autonomamente per l'accesso a Teams, vedere [Creare una Extranet B2B con utenti guest gestiti](/microsoft-365/solutions/b2b-extranet).
-
-L'accesso guest in Teams è un'impostazione a livello di organizzazione ed è attivato per impostazione predefinita. È possibile controllare l'accesso guest ai singoli team usando le [etichette di riservatezza](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 > [!NOTE]
 > Se come amministratori si sperimentano problemi con l'accesso guest in Microsoft Teams, si può selezionare **Esegui test** in basso, per popolare la diagnostica di Accesso guest nell'interfaccia di Amministrazione Microsoft 365. Questi test verificheranno la configurazione e consiglieranno rapidamente i passaggi da intraprendere per abilitare l'accesso guest per il tenant.
