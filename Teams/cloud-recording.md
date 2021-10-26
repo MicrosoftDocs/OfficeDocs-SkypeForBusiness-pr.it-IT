@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d84d42849667c1cd87a90f9cd8b3480b5ed8bbd
-ms.sourcegitcommit: 279ab5236431961c5181e2c01a69e5aa4290d381
+ms.openlocfilehash: a4008aa9f69f525e3fbbeb6fd7596822d7ac9be8
+ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60462390"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "60536897"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -261,9 +261,9 @@ Le dimensioni di una registrazione di 1 ora sono pari a 400 MB. Assicurarsi di a
 >
 > La funzionalità di scadenza automatica descritta in questo articolo non è ancora stata lanciata. Per altre informazioni sulla data di rilascio, vedere la [roadmap (ID funzionalità: 84580)](https://www.microsoft.com/microsoft-365/roadmap?searchterms=82057&filters=&searchterms=84580).
 > 
-> Stiamo fornendo informazioni su come funzionerà questa funzionalità in FUTURO, per pianificarla e modificare le impostazioni dei criteri di Teams in anticipo.
+> Stiamo fornendo informazioni sul funzionamento di questa funzionalità in futuro, così da pianificarne il cambiamento e modificare le impostazioni dei criteri di Teams in anticipo.
 >
-> Il comando per modificare preventivamente l'impostazione di scadenza predefinita in Teams non è ancora disponibile per l'impostazione.  Quando l'impostazione sarà disponibile per la modifica, verrà pubblicato un post aggiornato del Centro messaggi.
+> Il comando per modificare preventivamente l'impostazione di scadenza predefinita in Teams è attualmente in fase di distribuzione, ma potrebbe essere possibile visualizzare l'attributo in PowerShell. L'impostazione non è attualmente disponibile nelle interfacce di amministrazione di Teams. Queste impostazioni saranno disponibili e comunicate in un post del centro messaggi almeno 30 giorni prima dell'avvio della funzionalità.
 >
 >
 
@@ -309,7 +309,7 @@ Sì, la data di scadenza è impostata per ogni file. Gli utenti possono modifica
 
 **In che modo un amministratore può modificare la data di scadenza?**
   
-Gli amministratori potranno modificare l'impostazione di scadenza predefinita in PowerShell o nell'interfaccia di amministrazione di Teams prima del rilascio della funzionalità. **L'impostazione non è ancora disponibile per la modifica.** Quando l'impostazione sarà disponibile per la modifica, nel Centro messaggi apparirà un post di aggiornamento. Gli amministratori possono modificare questa impostazione nell'interfaccia di amministrazione di Teams, durante l’avvio di questa funzionalità. La modifica delle impostazioni di scadenza influirà solo sulle nuove registrazioni delle riunioni di Teams create da quel punto in poi. Non influirà sulle registrazioni effettuate prima di tale data. 
+Gli amministratori potranno modificare l'impostazione di scadenza predefinita in PowerShell o nell'interfaccia di amministrazione di Teams prima del rilascio della funzionalità. La modifica delle impostazioni di scadenza influirà solo sulle nuove registrazioni delle riunioni di Teams (TMR) create da quel punto in poi. Non influirà sulle registrazioni effettuate prima di tale data. Le nuove registrazioni non scadono automaticamente fino al rilascio della funzionalità, anche se è possibile impostare l'attributo dei criteri prima del rilascio.
 
 I valori dei giorni di scadenza possono essere impostati nel modo seguente:
   
@@ -317,6 +317,12 @@ I valori dei giorni di scadenza possono essere impostati nel modo seguente:
 - Il valore può anche essere -1 per impostare il TMR in modo che non scada mai. 
  
 Gli amministratori non possono modificare la data di scadenza per registrazioni delle riunioni di Teams esistenti già caricate in OneDrive o SharePoint prima del rilascio di questa funzionalità. Ciò protegge l'intento dell'utente proprietario della registrazione di Teams.
+  
+Per cambiare il comportamento di scadenza automatica predefinito per il tenant, modificare l'attributo seguente in PowerShell. In questo esempio, il valore predefinito viene modificato a 50 giorni.
+ 
+Set-CsTeamsMeetingPolicy -Identity Global -**Nuovo** MeetingRecordingExpirationDays 50
+
+La possibilità di modificare l'impostazione predefinita nell'interfaccia di amministrazione di Teams verrà distribuita in un secondo momento, almeno 30 giorni prima di attivare la funzionalità di scadenza automatica per impostazione predefinita.
   
 **Un amministratore può impostare il TMR in modo che non scada mai?**
   
@@ -459,7 +465,7 @@ Gli amministratori possono usare lo strumento di diagnostica seguente per verifi
    > [!div class="nextstepaction"]
    > [Esegui test: Registrazione riunione mancante](https://aka.ms/MissingRecordingDiag)
 
-2. Nel riquadro Esegui diagnostica, immettere l'URL della riunione nel campo **URL della riunione registrata** (in genere presente nell'invito alla riunione) e la data della riunione nel campo **Quando è stata registrata la riunione? ** e quindi selezionare **Esegui test**.
+2. Nel riquadro Esegui diagnostica, immettere l'URL della riunione nel campo **URL della riunione registrata** (in genere presente nell'invito alla riunione) e la data della riunione nel campo **Quando è stata registrata la riunione? **, quindi selezionare **Esegui il test**.
 
 3. I test verificano che la registrazione della riunione sia stata completata correttamente e che sia stata caricata in Stream o OneDrive.
 

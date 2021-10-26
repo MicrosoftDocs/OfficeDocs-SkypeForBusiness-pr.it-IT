@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c28a79ddd3608e2e10d3e722577fc9e8d49334cb
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 716a18efda2c2c7f55adf68314dae4b1e07e387b
+ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58727815"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "60537057"
 ---
 # <a name="sign-in-to-microsoft-teams"></a>Accedere a Microsoft Teams
 
@@ -119,7 +119,7 @@ Quando in un dispositivo è configurato questo criterio, gli utenti possono acce
 >1. Il criterio limita solo gli accessi, ma non la possibilità per gli utenti di essere invitati come guest in altri tenant di Azure AD o di passare ad altri tenant (in cui gli utenti sono stati invitati come guest).
 >2. Il criterio richiede Teams per Windows versione 1.3.00.30866 o successiva e Teams per macOS versione 1.3.00.30882 (rilasciati a metà novembre 2020).
 
-**Criteri per Windows** I file modello amministrativi (ADMX/ADML) sono disponibili dal [Centro download](https://www.microsoft.com/download/details.aspx?id=49030) (il nome descrittivo dell'impostazione criterio nel file modello amministrativo è "Limita l'accesso a Teams agli account in tenant specifici"). Inoltre, è possibile impostare manualmente le chiavi nel Registro di sistema di Windows:
+**Criteri per Windows** I file modello amministrativo (ADMX/ADML) sono disponibili dall’ [Area download](https://www.microsoft.com/download/details.aspx?id=49030) (il nome descrittivo dell'impostazione criterio nel file modello amministrativo è "Limita l'accesso a Teams agli account in tenant specifici"). Inoltre, è possibile impostare manualmente le chiavi nel Registro di sistema Windows:
 
 - Nome valore: RestrictTeamsSignInToAccountsFromTenantList
 - Tipo valore: stringa
@@ -145,10 +145,8 @@ L'esperienza di accesso sarà simile a quella standard di Teams.
 
 ## <a name="urls-and-ip-address-ranges"></a>URL e intervalli di indirizzi IP
 
-Teams richiede la connettività a Internet. Per informazioni sugli endpoint che devono essere raggiungibili per i clienti che usano Teams per i piani di Office 365, nel cloud per enti pubblici e in altri cloud, vedere [URL e intervalli di indirizzi IP per Office 365](/office365/enterprise/urls-and-ip-address-ranges).
+Teams richiede una connessione a Internet. Per informazioni sugli endpoint che devono essere raggiungibili dai clienti che usano Teams nei piani di Office 365, in enti pubblici e in altri cloud, leggere [URL di Office 365 e intervalli di indirizzo IP](/office365/enterprise/urls-and-ip-address-ranges).
 
-> [!IMPORTANT]
-> Attualmente Teams richiede l'accesso sulla porta TCP 443 al servizio Google ssl.gstatic.com per tutti gli utenti. Questo avviene anche se non si usa Gstatic. Teams rimuoverà il requisito presto (all'inizio del 2020) e questo articolo verrà aggiornato di conseguenza.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
