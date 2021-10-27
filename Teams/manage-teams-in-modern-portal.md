@@ -1,5 +1,5 @@
 ---
-title: Gestire Microsoft Teams nell'interfaccia di amministrazione di Microsoft Teams
+title: Gestire i team nell'interfaccia di amministrazione di Microsoft Teams
 author: SerdarSoysal
 ms.author: serdars
 manager: serdars
@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 89f31f586fc7b3839dd5820089528f91dfad7e93
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: b84957e7451b75b804d2c279e160a260dabfbea8
+ms.sourcegitcommit: b57e19e20900ff02f3196c811bf1dd1acd149c79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58733837"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60579536"
 ---
 # <a name="manage-teams-in-the-microsoft-teams-admin-center"></a>Gestire i team nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -117,7 +117,7 @@ Le modifiche apportate a un team vengono registrate. Se si modificano le imposta
 
 Alcuni dei team possono non sono presenti nell'elenco dei team nella griglia di panoramica di Teams.
 
-**Causa**: questo problema si verifica quando il profilo del team è stato impostato in modo non corretto (o non è ancora stato impostato) dal sistema, il che può portare a una proprietà mancante durante il suo riconoscimento.
+**Causa**: questo problema si verifica quando il team è stato profilato in modo non corretto oppure non è stato ancora profilato dal sistema e questo comporta il riconoscimento di una proprietà mancante per il team.
 
 **Risoluzione: impostare manualmente la proprietà sul valore corretto tramite MS Graph**
 
