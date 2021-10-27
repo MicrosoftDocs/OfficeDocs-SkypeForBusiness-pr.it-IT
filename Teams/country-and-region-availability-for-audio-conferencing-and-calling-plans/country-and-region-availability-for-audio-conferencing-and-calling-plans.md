@@ -1,7 +1,7 @@
 ---
 title: Disponibilità del paese/area geografica - Audioconferenze, piani per chiamate
-ms.author: crowe
-author: CarolynRowe
+ms.author: czawideh
+author: czawideh
 manager: serdars
 ms.reviewer: mikedav, jastark, oscarr, LolaJacobsen
 ms.topic: reference
@@ -26,12 +26,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Scopri se audioconferenza, Sistema telefonico, Piani per chiamate, Crediti comunicazioni e numeri a pagamento e numeri a pagamento gratuiti sono disponibili in un paese o un'area geografica.
-ms.openlocfilehash: b34ae51dae05d59b320f4d3285efe57131db58d6
-ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
+ms.openlocfilehash: 8480fcbe512ed53bf7a94753b22214b50b8f3f85
+ms.sourcegitcommit: b57e19e20900ff02f3196c811bf1dd1acd149c79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "59432298"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60579526"
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani di chiamata per Paese e area geografica
 
@@ -157,11 +157,11 @@ ms.locfileid: "59432298"
 > - [Venezuela](availability-in-venezuela.md)
 > - [Vietnam](availability-in-vietnam.md)
 
-Se si sta cercando un foglio di calcolo con tutti i paesi e le aree geografiche, scaricare e salvare il foglio di calcolo sulla disponibilità della funzionalità vocale **[Cloud per paese/area geografica.](https://download.microsoft.com/download/d/b/6/db6992c5-ec9a-4b02-8742-59df17dd90a7/country-and-region-availability-(v-06162021)-(en-us).xlsx)**
+Se si sta cercando un foglio di calcolo con tutti i paesi e le aree geografiche, scaricare e salvare il foglio di calcolo sulla disponibilità della funzionalità vocale **[Cloud per paese/area geografica.](https://download.microsoft.com/download/d/b/6/db6992c5-ec9a-4b02-8742-59df17dd90a7/country-and-region-availability-(v-19OCT2021)-(en-us).xlsx)**
 
 ***
 
-Dopo aver verificato se uno dei servizi Skype for Business o Microsoft Teams è disponibile, è possibile visualizzare le licenze per i componenti aggiuntivi Skype for Business e [Microsoft Teams per](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md) acquistare licenze e assegnarle agli utenti.
+Dopo aver verificato se uno dei servizi Skype for Business o Microsoft Teams è disponibile, è possibile visualizzare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams per acquistare licenze e assegnarle [agli](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md) utenti.
 
 > [!NOTE]
 >
@@ -193,7 +193,7 @@ La chiamata in uscita da una riunione in un altro paese/area geografica del mond
   
 ### <a name="phone-system"></a>Sistema telefonico
 
-Con Sistema telefonico, è possibile creare operatori automatici e code di chiamata (con un numero verde o a pagamento) per rispondere alle chiamate in arrivo per l'organizzazione. Quando si aggiunge un piano per le chiamate per gli utenti, questi possono usare Skype for Business per occuparsi di attività di base di controllo delle chiamate, ad esempio effettuare e ricevere chiamate, trasferire chiamate e disattivare e riattivare l'audio delle chiamate. **Sistema telefonico** gli utenti possono fare clic su un nome nella rubrica e Skype for Business una chiamata a tale persona. Per effettuare e ricevere chiamate, **Sistema telefonico** utenti usano i loro dispositivi mobili, un auricolare con un portatile o un PC o uno dei molti telefoni IP che funzionano con Skype for Business.
+Con Sistema telefonico, è possibile creare operatori automatici e code di chiamata (con un numero verde o a pagamento) per rispondere alle chiamate in arrivo per l'organizzazione. Quando aggiungi un Piano chiamate per gli utenti, questi possono usare Skype for Business per occuparsi delle attività di controllo delle chiamate di base, come effettuare e ricevere chiamate, trasferire chiamate e disattivare e riattivare l'audio delle chiamate. **Sistema telefonico** utenti fare clic su un nome nella rubrica e Skype for Business una chiamata a tale persona. Per effettuare e ricevere chiamate, **Sistema telefonico** utenti usano i loro dispositivi mobili, un auricolare con un portatile o un PC o uno dei molti telefoni IP che funzionano con Skype for Business.
 
 La disponibilità di numeri verdi a pagamento per alcune di queste località può variare a seconda dei livelli di inventario. Oltre a ottenere numeri di telefono per singoli utenti, è anche possibile cercare e acquistare numeri a numero verde o a pedaggio per servizi come audioconferenza (per bridge di conferenza), operatori automatici e code di chiamata. Questi vengono detti numeri di servizio. Per ottenere nuovi numeri, consultare [Ottenere numeri di servizio](../getting-service-phone-numbers.md). Ai tuoi utenti, tuttavia, una volta assegnato loro un Piano per le chiamate, puoi assegnare un numero di telefono utente per permettere loro di effettuare e ricevere chiamate. Per trovare questi numeri di telefono, consultare [Recuperare numeri di telefono per gli utenti](../getting-phone-numbers-for-your-users.md). Puoi anche consultare [Assegnare, modificare o rimuovere il numero di telefono di un utente](../assign-change-or-remove-a-phone-number-for-a-user.md).
 
