@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: abybee
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni sulla registrazione Teams basata su criteri per le chiamate & riunioni
+description: Informazioni su Teams registrazione basata su criteri per le chiamate & riunioni
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0bbfb13aac415d89f6853fe993ac8c7110ba7fa8
-ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
+ms.openlocfilehash: 92b80bd9a96cd95b34bd7646902cfdbff1d83447
+ms.sourcegitcommit: c7a6079c9592c28d8b082ff92004ae4706cea76e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941891"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "60600250"
 ---
 # <a name="introduction-to-teams-policy-based-recording-for-callings--meetings"></a>Introduzione alla registrazione Teams basata su criteri per le chiamate & riunioni
 
@@ -53,7 +53,7 @@ I casi di utilizzo della registrazione delle interazioni possono essere suddivis
 
 Ognuna di queste categorie richiede requisiti diversi per l'avvio delle registrazioni, gli elementi registrati, la posizione in cui vengono archiviate le registrazioni, chi viene avvisato, chi controlla l'accesso e come viene gestita la conservazione.
 
-| Tipo                   | Convenienza (Registrazione Teams normale) | Organizzazione - Regolamentata (Registrazione conformità) |
+| Tipo                   | Convenienza (Registrazione Teams) | Organizzazione - Regolamentata (Registrazione conformità) |
 | ---------------------- | ------------------ | --------------- |
 | Iniziatore              | Utente               | Amministratore (sistema)  |
 | Target                 | Per chiamata/riunione | Per utente        |
@@ -62,7 +62,7 @@ Ognuna di queste categorie richiede requisiti diversi per l'avvio delle registra
 | Proprietario dell'accesso           | Utente               | Conformità      |
 | Criteri di conservazione?      | Facoltativo           | Sì             |
 
-Teams offre varie funzionalità per la [registrazione pratica](./cloud-recording.md) e funzionale di riunioni ed eventi live. Registrazione dell'organizzazione significa consentire alle organizzazioni che adottano il Teams per le chiamate e le riunioni di stabilire, tramite criteri amministrativi, quando le chiamate e le riunioni online devono essere registrate e acquisite automaticamente per l'elaborazione e la conservazione successive, come richiesto dai criteri aziendali o normativi pertinenti. Gli utenti ai sensi di questo criterio saranno consapevoli che le interazioni digitali con Teams vengono registrate, ma non saranno in grado di disabilitare la registrazione e non avranno accesso alla registrazione al termine dell'interazione. La registrazione diventa parte dell'archivio aziendale disponibile per il personale legale e di conformità per eDiscovery, il blocco legale e altri usi di conservazione aziendale.
+Teams offre varie funzionalità per la [registrazione pratica](./cloud-recording.md) e funzionale di riunioni ed eventi live. Registrazione dell'organizzazione significa consentire alle organizzazioni che adottano il Teams per le chiamate e le riunioni di stabilire, tramite criteri amministrativi, quando le chiamate e le riunioni online devono essere registrate e acquisite automaticamente per l'elaborazione e la conservazione successive, come richiesto dai criteri aziendali o normativi pertinenti. Gli utenti ai sensi di questo criterio saranno consapevoli che le interazioni digitali con Teams vengono registrate, ma non saranno in grado di disabilitare la registrazione e non avranno accesso alla registrazione una volta completata l'interazione. La registrazione diventa parte dell'archivio aziendale disponibile per il personale legale e di conformità per eDiscovery, il blocco legale e altri usi di conservazione aziendale.
 
 ## <a name="example-user-needs"></a>Esigenze degli utenti di esempio
 
@@ -108,10 +108,10 @@ Teams offre varie funzionalità per la [registrazione pratica](./cloud-recording
 
 ## <a name="solution-architecture-overview"></a>Panoramica dell'architettura della soluzione
 
-Le soluzioni di registrazione della conformità sono integrate con Teams come illustrato nel diagramma seguente:
+Le soluzioni di registrazione della conformità sono integrate con Teams, come illustrato nel diagramma seguente:
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot che mostra l'impostazione dell'app personalizzata del team.](media/hp-compliance-recording-for-teams-calling-and-meetings.jpg "Le immagini mostrano il flusso quando viene inviata e ricevuta una Teams riunione o una chiamata.")
+> ![Screenshot che mostra l'impostazione dell'app personalizzata del team.](media/hp-compliance-recording-for-teams-calling-and-meetings.jpg "Le immagini mostrano il flusso quando una Teams riunione o una chiamata viene inviata e ricevuta.")
 
 > [!NOTE]
 > Questa soluzione è progettata specificamente per abilitare la registrazione della conformità basata su criteri con Teams. Qualsiasi altro utilizzo di questa soluzione non sarà supportato.
@@ -120,7 +120,7 @@ Le soluzioni di registrazione della conformità sono integrate con Teams come il
 ## <a name="recorder"></a>Registratore
 
 Il componente principale della soluzione di registrazione della conformità è il registratore.
-I registratori sono creati come servizi scalabili basati su Azure (bot) che usano la piattaforma di comunicazione [Microsoft](/graph/cloud-communications-concept-overview) e si registrano come applicazioni con Microsoft Graph. Il registratore fornisce l'interazione diretta con le [](/graph/api/resources/communications-api-overview?view=graph-rest-1.0) API della piattaforma di comunicazione Teams chiamate e riunioni e fornisce l'endpoint per l'inserimento di elementi multimediali.
+I registratori sono creati come servizi scalabili basati su Azure (bot) che usano la piattaforma di comunicazione [Microsoft](/graph/cloud-communications-concept-overview) e si registrano come applicazioni con Microsoft Graph. Il registratore fornisce l'interazione diretta con [](/graph/api/resources/communications-api-overview?view=graph-rest-1.0) le API della piattaforma di comunicazione Teams chiamate e riunioni e fornisce l'endpoint per l'inserimento di elementi multimediali.
 
 È [disponibile un'applicazione di registrazione conformità](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/a3943bafd73ce0df780c0e1ac3428e3de13a101f/Samples/BetaSamples/LocalMediaSamples/ComplianceRecordingBot) di esempio che mostra come configurare il bot, creare l'istanza dell'app e assegnare i criteri di conformità. L'esempio include anche esempi sull'utilizzo dell'API per la registrazione di interazioni [specifiche,](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/a3943bafd73ce0df780c0e1ac3428e3de13a101f/Samples/BetaSamples/LocalMediaSamples/ComplianceRecordingBot/FrontEnd/Bot/CallHandler.cs#L135-L138)ad esempio la gestione del [routing](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/a3943bafd73ce0df780c0e1ac3428e3de13a101f/Samples/BetaSamples/LocalMediaSamples/ComplianceRecordingBot/FrontEnd/Http/Controllers/PlatformCallController.cs#L199-L244) delle chiamate in arrivo, la modifica degli stati di registrazione e la rimozione dell'utente che [viene registrato.](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/a3943bafd73ce0df780c0e1ac3428e3de13a101f/Samples/BetaSamples/LocalMediaSamples/ComplianceRecordingBot/FrontEnd/Bot/CallHandler.cs#L121-L126)
 Graph documentazione sulle API specifiche è disponibile qui per [updateRecordingStatus](/graph/api/call-updaterecordingstatus?tabs=http&view=graph-rest-1.0) e [incomingContext.](/graph/api/resources/incomingcontext?view=graph-rest-1.0)
@@ -133,9 +133,9 @@ Due requisiti specifici fondamentali per lo scenario di registrazione della conf
 
 - Il bot registratore deve essere distribuito in Azure
 
-- Il bot registratore deve essere eseguito in una Windows vm in Azure
+- Il bot del registratore deve essere eseguito in una Windows vm in Azure
 
-I requisiti delle macchine virtuali di Azure e Windows si applicano solo al componente bot di Teams, il che significa che un partner può implementare il resto della piattaforma scelta, a condizione che soddisfi i requisiti di prestazioni e funzionalità pertinenti per la registrazione della conformità.
+I requisiti di Azure e della macchina virtuale di Windows si applicano solo al componente bot di Teams, il che significa che un partner può implementare il resto della piattaforma scelta, a condizione che soddisfi i requisiti di prestazioni e funzionalità pertinenti per la registrazione della conformità.
 
 ## <a name="compliance-recording-policy-assignment-and-provisioning"></a>Assegnazione e provisioning dei criteri di registrazione della conformità
 
@@ -225,6 +225,7 @@ I partner seguenti hanno certificato la propria soluzione per Microsoft Teams.<b
 |AudioCodes |[https://www.audiocodes.com/solutions-products/voiceai/meetings-and-recording/smarttap-360](https://www.audiocodes.com/solutions-products/voiceai/meetings-and-recording/smarttap-360) |
 |CallCabinet |[https://www.callcabinet.com/compliance-microsoft-teams-call-recording](https://www.callcabinet.com/compliance-microsoft-teams-call-recording ) |
 |Dubber |[https://www.dubber.net/call-recording/](https://www.dubber.net/call-recording/) |
+|Tecnologia di approfondimento |[https://insightfultechnology.com/teams/](https://insightfultechnology.com/teams/) |
 |NIZZA |[https://www.niceactimize.com/compliance/ms-teams-recording.html](https://www.niceactimize.com/compliance/ms-teams-recording.html) |
 |Numonix |[https://numonix.cloud](https://numonix.cloud)    |
 |Casella rossa |[https://www.redboxvoice.com/compliance-recording-for-microsoft-teams](https://www.redboxvoice.com/compliance-recording-for-microsoft-teams)  |
@@ -236,7 +237,6 @@ I partner seguenti stanno certificando la soluzione per Microsoft Teams.<br/><br
 
 |Partner|Sito Web della soluzione |
 |:--|:--|
-|Tecnologia di approfondimento |[http://www.insightfultechnology.com/what-we-do/fixed-line-voice-recording/](http://www.insightfultechnology.com/what-we-do/fixed-line-voice-recording/) |
 |Landis Technologies |[https://landistechnologies.com/](https://landistechnologies.com/) |
 |Luware |[https://luware.com/en/solution/microsoft-teams-recording/](https://luware.com/en/solution/microsoft-teams-recording/) |
 |Innovazione quercia |[https://www.oakinnovate.com/call-recording](https://www.oakinnovate.com/call-recording) |

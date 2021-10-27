@@ -13,14 +13,14 @@ ms.localizationpriority: medium
 ms.assetid: 6b2b2684-8e9e-49ea-8c46-1c690964f982
 ms.collection:
 - M365-collaboration
-description: Informazioni sui requisiti per il supporto Microsoft Teams Rooms, tra cui la scelta del dispositivo, dei microfoni, degli altoparlanti, delle fotocamere e degli schermi appropriati.
+description: Informazioni sui requisiti per supportare Microsoft Teams Rooms, tra cui la scelta del dispositivo, dei microfoni, degli altoparlanti, delle fotocamere e degli schermi appropriati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0cd552a743df29cc16ca40df2ebe6e48dda95fe
-ms.sourcegitcommit: 31da77589ac82c43a89a9c53f2a2de5ab52f93c0
+ms.openlocfilehash: 2634f7f48a1735f8b8421bc43598fc142db1a53b
+ms.sourcegitcommit: c7a6079c9592c28d8b082ff92004ae4706cea76e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "60356464"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "60600260"
 ---
 # <a name="microsoft-teams-rooms-requirements"></a>Requisiti per Microsoft Teams Rooms
 
@@ -79,6 +79,7 @@ Tutti gli attuali dispositivi e pacchetti per Sala riunioni di Microsoft Teams s
   |Lenovo ThinkSmart Core Kit |Core i5|8 GB|128 GB|
   |[Logitech Tap con Intel NUC](https://www.logitech.com/product/microsoft-rooms)|Core i5|8 GB |128 GB |
   |Logitech Tap e INTEL Tiger Canyon NUC PC |Core i5|8 GB|128 GB|
+  |Console LOGITECH TAP con Lenovo Core Compute |Core i5|8 GB|128 GB|
   |[Logitech Tap e Lenovo ThinkSmart Tiny](https://www.logitech.com/video-collaboration/partners/lenovo.html)|Core i5|8 GB |128 GB|
   |[Poly G10-T con Lenovo ThinkSmart Tiny](https://www.poly.com/us/en/products/video-conferencing/g/g10) |Core i5| 8 GB | 128 GB|
   |[Yealink MVC300 con Intel NUC](https://www.yealink.com/products_154.html)|Core i5|8 GB |128 GB |
@@ -182,7 +183,7 @@ Questi dispositivi sono disponibili in [Presentazione degli accessori per sistem
 |[Shure Intellimix P300 Audio Conferencing Processor](https://www.shure.com/products/mixers/p300) + </br></br> [Shure MXA 910 con Intellimix Ceiling Array Mic](https://www.shure.com/products/microphones/mxa910) | 4.1|
 |[Shure Intellimix P300 Audio Conferencing Processor](https://www.shure.com/products/mixers/p300)+</br></br> [Shure MXA 310 Table Array Mic ](https://www.shure.com/products/microphones/mxa310) +</br></br> [Altoparlante MXN5W-C Ceiling](https://www.shure.com/en-US/products/loudspeakers/mxn5)| P300 DSP: 4.1.11 </br> MxA310 Table Array mic: 4.1.41 </br> Altoparlante MXN5W-C: 1.0.4 |
 |[Shure Intellimix P300 Audio Conferencing Processor](https://www.shure.com/products/mixers/p300) + </br></br> [Shure MXA 910 con Intellimix Ceiling Array Mic](https://www.shure.com/products/microphones/mxa910) +</br></br> [Altoparlante MXN5W-C Ceiling](https://www.shure.com/en-US/products/loudspeakers/mxn5)| P300 DSP: 4.1.11 </br> MXA910 Ceiling Array mic: 4.1.41 </br> Altoparlante MXN5W-C: 1.0.4 |
-|[Shure MXA 710 2ft Table Linear Array Microphone](https://www.shure.com/products/microphones/mxa710) + </br></br> [Shure Intellimix P300 Audio Conferencing Processor](https://www.shure.com/products/mixers/p300) +</br></br> [Altoparlante a soffitto MXN5-C](https://www.shure.com/en-US/products/loudspeakers/mxn5)| MXA710 2ft Table Linear Array Mic: 1.2.0 </br> P300 DSP: 4.4.8 </br> Altoparlante MXN5-C: 1.1.1 |
+|[Shure MXA 710 2ft Table Linear Array Microphone](https://www.shure.com/products/microphones/mxa710) + </br></br> [Shure Intellimix P300 Audio Conferencing Processor](https://www.shure.com/products/mixers/p300) +</br></br> [Altoparlante a soffitto MXN5-C](https://www.shure.com/en-US/products/loudspeakers/mxn5)| MxA710 2ft Table Linear Array Mic: 1.2.0 </br> P300 DSP: 4.4.8 </br> Altoparlante MXN5-C: 1.1.1 |
 |[Shure MXA 710 4ft Wall Linear Array Microphone](https://www.shure.com/products/microphones/mxa710) + </br></br> [Shure Intellimix P300 Audio Conferencing Processor](https://www.shure.com/products/mixers/p300) +</br></br> [Altoparlante a soffitto MXN5-C](https://www.shure.com/en-US/products/loudspeakers/mxn5)| MXA710 4ft Wall Linear Array Mic: 1.2.0 </br> P300 DSP: 4.4.8 </br> Altoparlante MXN5-C: 1.1.1 |
 |[Shure MXA 910 con microfono Intellimix Ceiling Array](https://www.shure.com/products/microphones/mxa910) + </br> [Shure Intellimix Room Software](https://www.shure.com/products/software/intellimix_room) +</br> [Crestron UC-C100-T](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Integrator-Kits/UC-C100-T)| Software per la sala Shure Intellimix: 3.0.4.14 </br> Shure MXA 910 con microfono Intellimix Ceiling Array: 4.4.11 </br> Altoparlanti Shure MXN5-C: 1.2.1 </br> Crestron UC-C100-T: windows IOT 19h2/20h2 OS version with 4.8.31.0 MTR app version </br> BIOS: ASUS Tek Computer INC 9934 27/08/2020 </br> CPU: i5-9500TCPU </br> Memoria fisica: 8 GB di RAM |
 |[Biamp Tesira Fore AVB VT4 Fixed audio DSP](https://www.biamp.com/products/tesira-fixed-audio-dsp)+ &Dagger;</br></br> [Sennheiser TeamConnect Ceiling 2 Microphone](https://sennheiser.com/tcc2)+ &Dagger;</br></br> [Tesira EX-UBT](https://www.biamp.com/products/tesira/tesira-expanders) &Dagger; |  Biamp DSP: 3.12.0.15  </br></br> TCC2:1.3.3 </br></br> EX-UBT: 3.12.0.15 |
