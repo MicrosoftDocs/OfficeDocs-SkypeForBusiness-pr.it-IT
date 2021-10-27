@@ -20,14 +20,14 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 88e4da290fe19f852d18687227768535d405ebd1
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 16749fa21176622bdd68bcd2034eb94c99773f9e
+ms.sourcegitcommit: b57e19e20900ff02f3196c811bf1dd1acd149c79
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58636750"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "60596909"
 ---
-#  <a name="calling-and-call-forwarding-in-teams"></a>Chiamate e inoltro di chiamata in Teams
+# <a name="calling-and-call-forwarding-in-teams"></a>Chiamate e inoltro di chiamata in Teams
 
 In Microsoft Teams, i criteri di chiamata controllano quali funzionalità di chiamata e inoltro di chiamata sono disponibili per gli utenti. I criteri di chiamata determinano se un utente può effettuare chiamate private, usare l'inoltro di chiamata o lo squillo simultaneo ad altri utenti o numeri di telefono esterni, instradare le chiamate alla segreteria telefonica, inviare chiamate a gruppi di chiamate, usare la delega per le chiamate in ingresso e in uscita e così via.
 
@@ -47,7 +47,7 @@ Seguire questa procedura per creare un criterio di chiamata personalizzato.
 
 Seguire questa procedura per modificare un criterio di chiamata esistente.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione selezionare **Criteri per le chiamate**  >  **vocali.**
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione selezionare **Criteri per** le chiamate  >  **vocali.**
 2. Fare clic accanto al criterio da modificare e quindi selezionare **Modifica.**
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva.**
 
@@ -65,7 +65,7 @@ Questa impostazione controlla tutte le funzionalità di chiamata in Teams. Disat
 
 ### <a name="call-forwarding-and-simultaneous-ringing-to-people-in-your-organization"></a>Inoltro di chiamata e squillo simultaneo alle persone dell'organizzazione
 
-Questa impostazione controlla se le chiamate in arrivo possono essere inoltrate ad altri utenti o possono squillare contemporaneamente a un'altra persona. 
+Questa impostazione controlla se le chiamate in arrivo possono essere inoltrate ad altri utenti o possono squillare contemporaneamente a un'altra persona.
 
 ### <a name="call-forwarding-and-simultaneous-ringing-to-external-phone-numbers"></a>Inoltro di chiamata e squillo simultaneo a numeri di telefono esterni
 
@@ -89,11 +89,11 @@ Questa impostazione consente di instradare le chiamate in ingresso ai delegati, 
 
 ### <a name="prevent-toll-bypass-and-send-calls-through-the-pstn"></a>Evitare il bypass a pedaggio e inviare chiamate tramite PSTN 
 
-Se si imposta questa opzione **su Attivata,** le chiamate vengono inviate tramite PSTN e vengono effettuate addebiti invece di inviarle tramite la rete e aggirare i pedaggi.
+Se si imposta questa opzione **su Attivata,** le chiamate verranno inviate tramite PSTN e verranno sostenute spese invece di inviarle tramite la rete e ignorare i pedaggi.
 
 ### <a name="busy-on-busy-is-available-when-in-a-call"></a>Occupato in caso di disponibilità è disponibile durante una chiamata
 
-Occupato (Opzioni occupato) consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata messa in attesa. Le chiamate nuove o in arrivo possono essere rifiutate con un segnale di occupato o instradate di conseguenza alle impostazioni senza risposta dell'utente. È possibile abilitare le opzioni di disponibilità a livello di tenant o a livello di utente. Indipendentemente dal modo in cui vengono configurate le opzioni di disponibilità, gli utenti di una chiamata o di una conferenza o quelli con una chiamata in attesa non possono avviare nuove chiamate o conferenze. Questa impostazione è disabilitata per impostazione predefinita.
+Occupato (Opzioni occupato) consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata messa in attesa. Le chiamate nuove o in arrivo possono essere rifiutate con un segnale di occupato o instradate di conseguenza alle impostazioni senza risposta dell'utente. È possibile abilitare le opzioni di disponibilità a livello di tenant o a livello di utente. Indipendentemente dal modo in cui vengono configurate le opzioni di occupato, gli utenti di una chiamata o di una conferenza o quelli con una chiamata in attesa non possono avviare nuove chiamate o conferenze. Questa impostazione è disabilitata per impostazione predefinita.
 
 ### <a name="web-pstn-calling"></a>Chiamate PSTN Web
 
