@@ -3,7 +3,7 @@ title: Panoramica della guida alla sicurezza di Microsoft Teams
 author: MSFTTracyP
 ms.author: tracyp
 manager: dansimp
-ms.date: 10/15/2020
+ms.date: 10/23/2021
 ms.topic: reference
 ms.service: msteams
 audience: admin
@@ -20,27 +20,27 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7aaf996d32b67a85ec5fd7146dd29cc0f998e743
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 9fadf6685ada5f0625f7347efe3c1e4d8840af96
+ms.sourcegitcommit: b57e19e20900ff02f3196c811bf1dd1acd149c79
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592200"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "60579636"
 ---
 # <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
 
 > [!IMPORTANT]
 > Il modello di servizio di Teams è soggetto a modifiche per migliorare le esperienze degli utenti. Ad esempio, le scadenze del token di accesso o di aggiornamento predefinito potrebbero essere soggette a modifica per migliorare le prestazioni e la resilienza di autenticazione per gli utenti che usano Teams. Le modifiche apportate verranno applicate con l'obiettivo di garantire la protezione e l’affidabilità da progettazione di Teams.
 
-Microsoft Teams, come parte dei servizi Microsoft 365 e Office 365, segue tutte le migliori pratiche e procedure di sicurezza, come la protezione a livello di servizio attraverso misure di difesa avanzate, controlli utente nell'ambito del servizio, potenziamento delle misure di sicurezza e best practice operative. Per i dettagli completi, consultare il [Centro protezione Microsoft](https://microsoft.com/trustcenter).
+Microsoft Teams, come parte dei servizi Microsoft 365 e Office 365, segue tutte le migliori pratiche e procedure di sicurezza, come la protezione a livello di servizio attraverso misure di difesa avanzate, controlli utente nell'ambito del servizio, potenziamento delle misure di sicurezza e Procedure operative consigliate. Per i dettagli completi, consultare il [Centro protezione Microsoft](https://microsoft.com/trustcenter).
 
-## <a name="trustworthy-by-design"></a>Affidabilità da progettazione
+## <a name="trustworthy-by-design"></a>Progettato per l'affidabilità
 
-Teams è progettato e sviluppato in conformità con Microsoft Trustworthy Computing Security Development Lifecycle (SDL) descritto in [Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/sdl/default.aspx). Il primo passo verso la creazione di un sistema di comunicazioni unificato più sicuro è stato quello di progettare modelli di minacce e testare ciascuna funzionalità così come era stata progettata. Ulteriori miglioramenti relativi alla protezione venivano apportati durante il processo e le procedure di codifica. Gli strumenti della fase di compilazione rilevano sovraccarichi del buffer e altre potenziali minacce alla sicurezza prima che il codice venga archiviato nel prodotto finale. Naturalmente, è impossibile progettare un prodotto che sia al sicuro da tutte le possibili minacce alla protezione. Nessun sistema è in grado di garantire una sicurezza totale. Tuttavia, poiché lo sviluppo del prodotto ha accolto principi di progettazione sicuri fin dall'inizio, Teams incorpora tecnologie di protezione standard del settore come parte fondamentale della sua architettura.
+Teams è progettato e sviluppato in conformità con Microsoft Trustworthy Computing Security Development Lifecycle (SDL) descritto in [Microsoft Security Development Lifecycle (SDL)](https://www.microsoft.com/sdl/default.aspx). Il primo passo verso la creazione di un sistema di comunicazioni unificato più sicuro è stato quello di progettare modelli di minacce e testare ciascuna funzionalità così come era stata progettata. Ulteriori miglioramenti relativi alla protezione venivano apportati durante il processo e le procedure di codifica. Gli strumenti della fase di compilazione rilevano sovraccarichi del buffer e altre potenziali minacce alla sicurezza prima che il codice venga archiviato nel prodotto finale. È impossibile progettare un prodotto che sia al sicuro da tutte le possibili minacce alla protezione. Nessun sistema è in grado di garantire una sicurezza totale. Tuttavia, poiché lo sviluppo del prodotto ha accolto principi di progettazione sicuri fin dall'inizio, Teams incorpora tecnologie di protezione standard del settore come parte fondamentale della sua architettura.
 
 ## <a name="trustworthy-by-default"></a>Affidabilità per impostazione predefinita
 
-Le comunicazioni di rete in Teams sono crittografate per impostazione predefinita. Con l'utilizzo dei certificati in tutti i server, OAuth, TLS e SRTP (Secure Real-Time Transport Protocol), tutti i dati di Teams sono protetti sulla rete.
+In Teams le comunicazioni di rete sono crittografate per impostazione predefinita. Con l’utilizzo dei certificati in tutti i server, OAuth, TLS (Transport Layer Security),e SRTP (Secure Real-Time Transport Protocol), tutti i dati di Teams sono protetti sulla rete.
 
 ## <a name="how-teams-handles-common-security-threats"></a>In che modo Teams tratta le minacce alla sicurezza comuni
 
@@ -48,11 +48,11 @@ Questa sezione identifica le più comuni minacce alla sicurezza del servizio Tea
 
 ### <a name="compromised-key-attack"></a>Attacco basato su chiave compromessa
 
-Teams utilizza le funzionalità PKI nel sistema operativo del Server Windows per proteggere i dati della chiave utilizzati per la crittografia nelle connessioni TLS (Transport Layer Security). Le chiavi utilizzate per la crittografia degli elementi multimediali vengono scambiate tramite connessioni TLS.
+Teams utilizza le funzionalità PKI nel sistema operativo del Server Windows per proteggere i dati della chiave utilizzati per la crittografia nelle connessioni TLS. Le chiavi utilizzate per la crittografia dei file multimediali vengono scambiate tramite le connessioni TLS.
 
 ### <a name="network-denial-of-service-attack"></a>Attacco Denial-of-Service di rete
 
-L'attacco Denial-of-Service si verifica quando l'utente malintenzionato impedisce il normale utilizzo e funzionamento della rete da parte di utenti validi. Utilizzando un attacco Denial-of-Service, l'utente malintenzionato può:
+Un attacco Distributed Denial of Service (DDOS) si verifica quando l'utente malintenzionato impedisce il normale utilizzo e funzionamento della rete da parte degli utenti legittimi. Utilizzando un attacco Denial-of-Service, l'utente malintenzionato può:
 
 - Inviare dati non validi alle applicazioni e ai servizi in esecuzione nella rete attaccata per interromperne la normale funzione.
 - Inviare una grande quantità di traffico, sovraccaricando il sistema fino a quando non smette di rispondere o risponde lentamente alle richieste legittime.
@@ -61,35 +61,35 @@ L'attacco Denial-of-Service si verifica quando l'utente malintenzionato impedisc
 
 ### <a name="eavesdropping"></a>Intercettazione
 
-L'intercettazione può verificarsi quando un utente malintenzionato accede al percorso dei dati in una rete e ha la capacità di monitorare e leggere il traffico. Si chiama anche sniffing o snooping. Se il traffico è in testo normale, l'utente malintenzionato può leggerlo quando accede al percorso. Un esempio è un attacco eseguito controllando un router sul percorso dei dati.
+L'intercettazione si verifica quando un utente malintenzionato accede al percorso dei dati in una rete e ha la capacità di monitorare e leggere il traffico. L'intercettazione è detta anche sniffing o snooping. Se il traffico è in testo normale, l'utente malintenzionato può leggerlo quando accede al percorso. Un esempio è un attacco eseguito controllando un router sul percorso dei dati.
 
-Teams usa Mutual TLS (MTLS) per le comunicazioni del server all'interno di Microsoft 365 e Office 365. Usa TLS anche dai client al servizio, rendendo questo attacco molto difficile o impossibileda portare a termine nel periodo di tempo in cui una determinata conversazione potrebbe essere attaccata. TLS autentica tutte le parti ed esegue la crittografia di tutto il traffico. Ciò non impedisce l'intercettazione, ma l'utente malintenzionato non può leggere il traffico a meno che la crittografia non sia interrotta.
+Teams usa la mutual TLS (MTLS) per le comunicazioni server nell'ambiente Microsoft 365 e Office 365 e utiliza anche la TLS dai client verso il servizio interessato. MTLS rende le intercettazioni difficili o impossibili da raggiungere entro il periodo di tempo di una singola conversazione. TLS autentica tutte le parti ed esegue la crittografia di tutto il traffico. Anche se TLS non impedisce le intercettazioni, l'utente malintenzionato non può leggere il traffico a meno che la crittografia non venga interrotta.
 
-Il protocollo TURN viene utilizzato per scopi multimediali in tempo reale. Il protocollo TURN non impone la crittografia del traffico e le informazioni che invia sono protette dall'integrità del messaggio. Sebbene sia aperto alle intercettazioni, le informazioni che invia (cioè gli indirizzi IP e la porta) possono essere estratte direttamente, guardando semplicemente gli indirizzi di origine e destinazione dei pacchetti. Il servizio Teams garantisce che i dati siano validi controllando l'Integrità del Messaggio tramite la chiave derivata da alcune voci, inclusa una password TURN, che non viene mai inviata non crittografata. SRTP viene utilizzato per il traffico multimediale ed è inoltre crittografato.
+Il protocollo TURN viene utilizzato per scopi multimediali in tempo reale. Il protocollo TURN non impone la crittografia del traffico e le informazioni che invia sono protette dall'integrità del messaggio. Sebbene sia aperto alle intercettazioni, le informazioni che invia (cioè gli indirizzi IP e la porta) possono essere estratte direttamente, guardando gli indirizzi di origine e destinazione dei pacchetti. Il servizio Teams garantisce che i dati siano validi controllando l'Integrità del Messaggio tramite la chiave derivata da alcune voci, inclusa una password TURN, che non viene mai inviata non crittografata. SRTP viene utilizzato per il traffico multimediale ed è inoltre crittografato.
 
 ### <a name="identity-spoofing-ip-address-spoofing"></a>Spoofing d'identità (spoofing dell'indirizzo IP)
 
-Lo spoofing si verifica quando l'utente malintenzionato determina e utilizza un indirizzo IP di una rete, un computer o un componente di rete senza essere autorizzato a farlo. La riuscita dell'attacco consente all'utente malintenzionato di operare come se tale utente malintenzionato fosse l'entità normalmente identificata dall'indirizzo IP.
+Lo spoofing si verifica quando l'utente malintenzionato identifica e utilizza un indirizzo IP di una rete, un computer o un componente di rete senza essere autorizzato a farlo. La riuscita dell'attacco consente all'utente malintenzionato di operare come se tale utente malintenzionato fosse l'entità normalmente identificata dall'indirizzo IP.
 
-TLS autentica tutte le parti ed esegue la crittografia di tutto il traffico. L'uso di TLS impedisce all'autore di un attacco di effettuare lo spoofing dell'indirizzo IP su una connessione specifica (ad esempio, connessioni Mutual TLS). Un utente malintenzionato può comunque falsificare l'indirizzo del server DNS. Tuttavia, poiché l'autenticazione in Teams viene eseguita con certificati, un utente malintenzionato non avrebbe un certificato valido richiesto per falsificare una delle parti nella comunicazione.
+TLS autentica tutte le parti ed esegue la crittografia di tutto il traffico. L'uso di TLS impedisce all'autore di un attacco di effettuare lo spoofing dell'indirizzo IP su una connessione specifica (ad esempio, connessioni Mutual TLS). Un utente malintenzionato potrebbe comunque effettuare lo spoofing dell'indirizzo del server DNS (Domain Name System). Tuttavia, poiché l'autenticazione in Teams viene eseguita con certificati, un utente malintenzionato non avrebbe un certificato valido richiesto per falsificare una delle parti nella comunicazione.
 
 ### <a name="man-in-the-middle-attack"></a>Attacco man-in-the-middle
 
-Un attacco man-in-the-middle si verifica quando un utente malintenzionato dirige la comunicazione tra due utenti attraverso il proprio computer senza che i due utenti comunicanti lo sappiano. L'utente malintenzionato può monitorare e leggere il traffico prima di inviarlo al destinatario previsto. Ogni utente della comunicazione, inconsapevolmente, invia e riceve traffico dall'utente malintenzionato, il tutto pensando di comunicare solo con l'utente previsto. Ciò può accadere se un utente malintenzionato riesce a modificare i Servizi di Dominio di Active Directory per aggiungere il proprio server come server attendibile, o modificare il DNS (Domain Name System) per consentire ai client di connettersi tramite l'utente malintenzionato nel percorso verso il server.
+Un attacco man-in-the-middle si verifica quando un utente malintenzionato dirige la comunicazione tra due utenti attraverso il proprio computer senza che i due utenti comunicanti lo sappiano. L'utente malintenzionato può monitorare e leggere il traffico prima di inviarlo al destinatario previsto. Ogni utente della comunicazione, inconsapevolmente, invia e riceve traffico dall'utente malintenzionato, il tutto pensando di comunicare solo con l'utente previsto. Questo scenario può accadere se un utente malintenzionato riesce a modificare i Servizi di Dominio di Active Directory per aggiungere il proprio server come server attendibile, o modificare la confgurazione del DNS per consentire ai client di connettersi tramite l'utente malintenzionato nel percorso verso il server.
 
-Per impedire gli attacchi man-in-the-middle al traffico multimediale tra due endpoint che partecipano alla condivisione di audio, video e applicazioni di Teams è necessario crittografare il flusso multimediale con il protocollo SRTP. Le chiavi crittografiche vengono negoziate tra i due endpoint attraverso un protocollo di segnalazione proprietario (protocollo Teams Call Signaling), che sfrutta il canale UDP/TCP crittografato con TLS 1.2 e AES-256 (in modalità GCM).
+Per impedire gli attacchi man-in-the-middle al traffico multimediale tra due endpoint che partecipano alla condivisione di audio, video e applicazioni di Teams è necessario crittografare il flusso multimediale con il protocollo SRTP. Le chiavi crittografiche vengono negoziate tra i due endpoint attraverso un protocollo di segnalazione proprietario (protocollo Teams Call Signaling), che utilizza il canale UDP/TCP crittografato con TLS 1.2 e AES-256 (in modalità GCM).
 
-### <a name="rtp-replay-attack"></a>Attacco di riproduzione RTP
+### <a name="real-time-transport-protocol-rtp-replay-attack"></a>Attacco replay RTP (Real-Time Transport Protocol)
 
-Un attacco replay si verifica quando una trasmissione di file multimediali valida tra due parti viene intercettata e ritrasmessa per scopi illeciti. Teams utilizza SRTP in combinazione con un protocollo di segnalazione sicuro che protegge le trasmissioni dagli attacchi di ripetizione, abilitando il destinatario a mantenere un indice dei pacchetti RTP già ricevuti e confrontare ogni nuovo pacchetto con quelli già elencati nell'indice.
+Un attacco di riproduzione si verifica quando una trasmissione di file multimediali valida tra due parti viene intercettata e ritrasmessa per scopi illeciti. Teams utilizza SRTP con un protocollo di segnalazione sicuro che protegge le trasmissioni dagli attacchi di ripetizione, abilitando il destinatario a mantenere un indice dei pacchetti RTP già ricevuti e confrontare ogni nuovo pacchetto con quelli già elencati nell'indice.
 
 ### <a name="spim"></a>Messaggi istantanei indesiderati
 
-Gli spim sono messaggi istantanei commerciali non desiderati o richieste di sottoscrizione di presenza, come spam, ma sotto forma di messaggio istantaneo. Sebbene non sia di per sé una compromissione della rete, è quanto meno fastidioso, può ridurre la disponibilità e la produzione delle risorse e può comportare una compromissione della rete. Un esempio di ciò è lo spimming reciproco degli utenti che si inviano richieste. Gli utenti possono bloccarsi a vicenda per impedirlo, ma con la federazione, se si stabilisce un attacco spim coordinato, può essere difficile da superare a meno che non si disabiliti la federazione per il partner.
+Gli spim sono messaggi istantanei commerciali non desiderati o richieste di sottoscrizione di presenza, come spam, ma sotto forma di messaggio istantaneo. Sebbene non sia di per sé una compromissione della rete, è quanto meno fastidioso, può ridurre la disponibilità e la produzione delle risorse e può comportare una compromissione della rete. Un esempio è lo spimming reciproco degli utenti che si inviano richieste. Gli utenti possono bloccarsi l'un l'altro per evitare lo spimming, ma con la federazione, se un attore malintenzionato stabilisce un attacco spim coordinato, può essere difficile da superare a meno che non si disattivi la federazione dal partner.
 
 ### <a name="viruses-and-worms"></a>Virus e worm
 
-Un virus è un'unità di codice il cui scopo è riprodurre unità di codice aggiuntive e simili. Per funzionare, un virus ha bisogno di un host, come un file, un'e-mail o un programma. Come un virus, un worm è un'unità di codice, codificata per riprodurre unità di codice aggiuntive e simili, ma che, a differenza di un virus, non ha bisogno di un host. Virus e worm si manifestano principalmente durante i trasferimenti di file tra client, quando gli URL vengono inviati da altri utenti. Se un virus si trova sul computer, può, ad esempio, utilizzare l'identità dell'utente e inviare messaggi istantanei per suo conto. Le migliori pratiche standard di protezione del client, come la scansione periodica alla ricerca di virus, possono mitigare questo problema.
+Un virus è un'unità di codice il cui scopo è riprodurre unità di codice aggiuntive e simili. Per funzionare, un virus ha bisogno di un host, come un file, un'e-mail o un programma. Come un virus, un worm è un'unità di codice che riproduce più unità di codice simili, ma che a differenza di un virus non ha bisogno di un host. Virus e worm si manifestano principalmente durante i trasferimenti di file tra client, quando gli URL vengono inviati da altri utenti. Se un virus si trova sul computer, può, ad esempio, utilizzare l'identità dell'utente e inviare messaggi istantanei per suo conto. Le migliori pratiche standard di protezione del client, come la scansione periodica alla ricerca di virus, possono mitigare questo problema.
 
 ## <a name="security-framework-for-teams"></a>Framework di sicurezza di Teams
 
@@ -98,7 +98,7 @@ Questa sezione offre una panoramica degli elementi fondamentali che formano il f
 Gli elementi principali sono:
 
 - Azure Active Directory (Azure AD), che fornisce un singolo repository back-end attendibile per gli account utente. Le informazioni sul profilo utente vengono archiviate in Azure AD tramite le azioni di Microsoft Graph.
-  - Tenere presente che potrebbero essere presenti più token emessi, visibili se si esegue il monitoraggio del traffico di rete. Sono inclusi i token Skype, di cui potrebbero essere visibili tracce mentre si osserva il traffico audio e chat.
+  - Potrebbero essere presenti più token emessi, visibili se si esegue il monitoraggio del traffico di rete. Sono inclusi i token Skype, di cui potrebbero essere visibili tracce mentre si osserva il traffico audio e chat.
 - TLS (Transport Layer Security) e Mutual TLS (MTLS) che eseguono la crittografia del traffico dei messaggi istantanei e abilitano l'autenticazione degli endpoint. I flussi audio, video e di condivisione di applicazioni da punto a punto sono crittografati e la relativa integrità è verificata utilizzando il protocollo SRTP (Secure Real-Time Transport Protocol). Nella traccia potrebbe essere visibile anche traffico OAuth, specialmente relativo alle autorizzazioni di negoziazione quando si passa da una scheda all'altra in Teams, ad esempio per passare da Post a File. Per un esempio del flusso OAuth per le schede, [vedere il documento](/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab).
 - Teams usa protocolli standard del settore per l'autenticazione degli utenti, ove possibile.
 
@@ -108,17 +108,17 @@ Nelle sezioni successive vengono illustrate alcune di queste tecnologie principa
 
 Azure Active Directory funziona come servizio directory per Microsoft 365 e Office 365. Archivia tutte le informazioni della directory degli utenti e le assegnazioni dei criteri.
 
-#### <a name="crl-distribution-points"></a>Punti di distribuzione CRL
+#### <a name="certificate-revocation-list-crl-distribution-points"></a>Punti di distribuzione dell'elenco di revoche di certificati (CRL)
 
-Il traffico di Microsoft 365 e Office 365 avviene su canali crittografati TLS/HTTPS, ossia vengono usati certificati per la crittografia di tutto il traffico. Teams richiede che tutti i certificati del server contengano uno o più punti di distribuzione dell'elenco di revoche di certificati (CRL). I punti di distribuzione CRL (CDP) sono posizioni da cui è possibile scaricare i CRL per verificare che il certificato non sia stato revocato dal momento in cui è stato rilasciato e che rientri ancora nel periodo di validità. Un punto di distribuzione CRL è indicato nelle proprietà del certificato come URL ed è HTTP protetto. Il servizio Teams controlla il CRL con ogni autenticazione del certificato.
+Il traffico di Microsoft 365 e Office 365 avviene su canali crittografati TLS/HTTPS, ossia vengono usati certificati per la crittografia di tutto il traffico. Teams tutti i certificati server devono contenere uno o più punti di distribuzione CRL. I punti di distribuzione CRL (CDP) sono posizioni da cui è possibile scaricare i CRL per verificare che il certificato non sia stato revocato dal momento in cui è stato rilasciato e che rientri ancora nel periodo di validità. Un punto di distribuzione CRL è indicato nelle proprietà del certificato come URL ed è HTTP protetto. Il servizio Teams controlla il CRL con ogni autenticazione del certificato.
 
 #### <a name="enhanced-key-usage"></a>Utilizzo delle chiavi avanzato
 
-Tutti i componenti del servizio Teams richiedono che tutti i certificati del server supportino l'utilizzo chiavi avanzato (EKU, Enhanced Key Usage) ai fini dell'autenticazione del server. La configurazione del campo EKU per l'autenticazione del server indica che il certificato è valido ai fini dell'autenticazione dei server. Tale EKU è essenziale per MTLS.
+Tutti i componenti del servizio Teams richiedono che tutti i certificati del server supportino l'utilizzo chiavi avanzato (EKU, Enhanced Key Usage) per l'autenticazione del server. La configurazione del campo EKU per l'autenticazione del server indica che il certificato è valido per ll'autenticazione dei server. Tale EKU è essenziale per MTLS.
 
 ### <a name="tls-and-mtls-for-teams"></a>TLS e MTLS per Teams
 
-I protocolli TLS e MTLS forniscono comunicazioni crittografate e autenticazione degli endpoint su Internet. Teams utilizza questi due protocolli per creare la rete di server affidabili e per garantire che tutte le comunicazioni su quella rete siano crittografate. Tutte le comunicazioni tra server si verificano su MTLS. Le comunicazioni SIP rimanenti o legacy da client a server si verificano su TLS.
+I protocolli TLS e MTLS forniscono comunicazioni crittografate e autenticazione degli endpoint su Internet. Teams utilizza questi due protocolli per creare la rete di server affidabili e per garantire che tutta la comunicazionie su quella rete sia crittografata. Tutta la comunicazione tra server si verifica tramite MTLS. La comunicazione SIP rimanenti o legacy da client a server si verifica su TLS.
 
 TLS consente agli utenti, tramite il proprio software client, di autenticare i server Teams a cui si connettono. In una connessione TLS, il client richiede un certificato valido dal server. Per essere valido, il certificato deve essere stato emesso da una CA che sia considerata affidabile anche dal client e il nome DNS del server deve corrispondere al nome DNS sul certificato. Se il certificato è valido, il client utilizza la chiave pubblica nel certificato per crittografare le chiavi di crittografia simmetriche da utilizzare per la comunicazione, quindi solo il proprietario originale del certificato può utilizzare la propria chiave privata per decrittografare il contenuto della comunicazione. La connessione risultante è affidabile e da quel momento non viene contestata da altri server o client affidabili.
 
@@ -126,36 +126,43 @@ Le connessioni tra server si basano su TLS reciproco (MTLS) per l'autenticazione
 
 TLS e MTLS consentono di impedire sia gli attacchi di intercettazione sia gli attacchi man-in-the-middle. In un attacco man-in-the-middle, l'utente malintenzionato dirige le comunicazioni tra due entità di rete attraverso il computer dell'utente malintenzionato all'insaputa delle due parti. Le specifiche di TLS e Teams di server attendibili attenuano il rischio di un attacco man-in-the-middle parzialmente sul livello dell'applicazione, utilizzando la crittografia coordinata, tramite la crittografia a chiave pubblica tra i due endpoint. Un utente malintenzionato dovrebbe avere un certificato valido e affidabile con la chiave privata corrispondente ed emesso a nome del servizio con cui il client sta comunicando per decrittografare la comunicazione.
 
-> [!NOTE]
-> I dati dei team vengono crittografati durante il transito e quando vengono archiviati nei centri dati Microsoft. Microsoft usa le tecnologie standard del settore, come TLS e SRTP, per crittografare tutti i dati in transito tra i dispositivi degli utenti e i data center Microsoft e tra gli stessi data center Microsoft. Sono inclusi i messaggi, i file, le riunioni e altri contenuti. Vengono crittografati anche i dati aziendali archiviati nei data center Microsoft, in modo da consentire alle organizzazioni di decrittografare i contenuti, se necessario, per rispettare gli obblighi di sicurezza e conformità, ad esempio eDiscovery.
+I dati dei team vengono crittografati durante il transito e quando vengono archiviati nei centri dati Microsoft. Microsoft usa le tecnologie standard del settore, come TLS e SRTP, per crittografare tutti i dati in transito tra i dispositivi degli utenti e i data center Microsoft e tra gli stessi data center Microsoft. I dati in movimento comprendono i messaggi, i file, le riunioni e altri contenuti. Enterprise i dati vengono crittografati anche a riposo nei data center Microsoft, in modo che le organizzazioni possano decrittografare il contenuto, se necessario, per soddisfare gli obblighi di sicurezza e conformità con metodi come eDiscovery. Per altre informazioni sulla crittografia in Microsoft 365, vedere [Crittografia in Microsoft 365](/microsoft-365/compliance/encryption)
 
-### <a name="encryption-for-teams"></a>Crittografia di Teams
+### <a name="encryption-in-teams"></a>Crittografia in Teams
 
-Teams utilizza TLS e MTLS per crittografare i messaggi istantanei. Tutto il traffico da server a server richiede lo standard MTLS, indipendentemente dal fatto che il traffico sia confinato alla rete interna o che attraversi il perimetro della rete interna.
+Esistono più livelli di crittografia in Microsoft 365. La crittografia in Teams funziona con il resto della crittografia Microsoft 365 per proteggere il contenuto dell'organizzazione. Questo articolo descrive le tecnologie di crittografia specifiche per Teams. Per una panoramica della crittografia in Microsoft 365, vedere [Crittografia in Microsoft 365](/microsoft-365/compliance/encryption).
 
-In questa tabella sono riepilogati i protocolli usati da Teams.
+#### <a name="traffic-encryption"></a>Crittografia del traffico
 
-***Crittografia del traffico***
-
+Tutto il traffico da server a server richiede lo standard MTLS, indipendentemente dal fatto che il traffico sia confinato alla rete interna o che attraversi il perimetro della rete interna. In questa tabella sono riepilogati i protocolli usati da Teams.
 
 |**Tipo di traffico**|**Crittografato da**|
 |:-----|:-----|
 |Da server a server|MTLS|
-|Da client a server (ad esempio, messaggistica istantanea e presenza)|TLS|
-|Flussi multimediali (ad esempio, condivisione audio e video di contenuti multimediali)|TLS|
+|Da client a server, ad esempio messaggistica istantanea e presenza|TLS|
+|Flussi multimediali, ad esempio, condivisione audio e video di elementi multimediali|TLS|
 |Condivisione audio e video di contenuti multimediali|SRTP/TLS|
 |Segnalazione|TLS|
+|Crittografia avanzata da client a client (ad esempio, chiamate di crittografia end-to-end)|SRTP/DTLS|
 |||
+
+Teams utilizza TLS e MTLS per crittografare i messaggi istantanei.
 
 #### <a name="media-encryption"></a>Crittografia file multimediali
 
-Il traffico di file multimediali viene crittografato tramite Secure RTP (SRTP), un profilo di Real-Time Transport Protocol (RTP) che offre riservatezza, autenticazione e protezione dagli attacchi di riproduzione al traffico RTP. SRTP utilizza una chiave della sessione generata utilizzando un generatore di numeri casuali sicuro e scambiata utilizzando il canale di segnalazione TLS. Il traffico dei contenuti multimediali tra client viene negoziato attraverso una connessione tra client e server, ma è crittografato con SRTP quando si passa direttamente da client a client.
+I flussi delle chiamate Teams basati sul [modello di offerta e risposta SDP (Session Description Protocol) RFC 4566](https://tools.ietf.org/html/rfc4566) su HTTPS. Una volta che il chiamato accetta una chiamata in arrivo, il chiamante e il chiamato concordano sui parametri di sessione.
+
+Il traffico di file multimediali viene crittografato dal chiamante e passa dal chiamante al chiamato tramite Secure RTP (SRTP), un profilo di Real-Time Transport Protocol (RTP) che offre riservatezza, autenticazione e protezione dagli attacchi di riproduzione al traffico RTP. SRTP utilizza una chiave della sessione generata da un generatore di numeri casuali sicuro e scambiata utilizzando il canale di segnalazione TLS. Nella maggior pare dei casi il traffico dei contenuti multimediali tra client viene negoziato attraverso una connessione tra client e server, ed è crittografato con SRTP quando passa direttamente da client a client.
+
+Nei normali flussi di chiamata, la negoziazione della chiave di crittografia avviene sul canale di segnalazione delle chiamate. In una chiamata crittografata end-to-end, il flusso di segnalazione è lo stesso di una normale chiamata di Teams uno-a-uno. Tuttavia, Teams DTLS per derivare una chiave di crittografia in base ai certificati per chiamata generati in entrambi gli endpoint client. Dato che DTLS deriva la chiave in base ai certificati client, la chiave è opaca per Microsoft. Quando entrambi i client concordano sulla chiave, i supporti multimediali iniziano a fluire usando questa chiave di crittografia negoziata da DTLS su SRTP.
+
+Per proteggersi da un attacco man-in-the-middle tra il chiamante e il chiamato, Teams deriva un codice di sicurezza di 20 cifre dalle impronte digitali SHA-256 dei certificati di chiamata dell'endpoint del chiamante e del chiamato. Il chiamante e il chiamato possono convalidare i codici di sicurezza di 20 cifre leggendoli tra loro per vedere se corrispondono. Se i codici non corrispondono, la connessione tra chiamante e chiamato è stata intercettata da un attacco man-in-the-middle. Se la chiamata è stata compromessa, gli utenti possono terminare la chiamata manualmente.
 
 Teams utilizza un token basato su credenziali per proteggere l'accesso ai contenuti multimediali inoltrati tramite TURN. I contenuti multimediali inoltrano lo scambio del token a un canale protetto tramite TLS.
 
-#### <a name="fips"></a>FIPS
+#### <a name="federal-information-processing-standard-fips"></a>Federal Information Processing Standard (FIPS)
 
-Teams utilizza algoritmi FIPS (Federal Information Processing Standard) per gli scambi di chiavi di crittografia. Per altre informazioni sull'implementazione di FIPS, vedere [Pubblicazione Federal Information Processing Standard (FIPS) 140-2](/microsoft-365/compliance/offering-fips-140-2).
+Teams algoritmi uTilizza algoritmi FIPS compatibili per gli scambi di chiavi di crittografia. Per altre informazioni sull'implementazione di FIPS, vedere [Pubblicazione Federal Information Processing Standard (FIPS) 140-2](/microsoft-365/compliance/offering-fips-140-2).
 
 ### <a name="user-and-client-authentication"></a>Autenticazione utente e client
 
@@ -166,11 +173,11 @@ L'autenticazione è il provisioning delle credenziali utente a un server o servi
 - **Autenticazione moderna (MA)** è l'implementazione Microsoft di OAUTH 2.0 per le comunicazioni da client a server. Offre funzionalità di sicurezza come l'autenticazione a più fattori e l'accesso condizionale. Per usare MA, sia il tenant online sia i client devono essere abilitati per MA. Tutti i client di Teams su PC e dispositivi mobili, oltre al client Web, [supportano MA](./sign-in-teams.md).
 
 > [!NOTE]
-> Se è necessario rispolverare i metodi di autenticazione e autorizzazione di Azure Active Directory, l'introduzione di questo articolo e le sezioni "Informazioni di base sull'autenticazione in Azure AD" possono essere d'aiuto.
+> Se si desiderano maggiori informazioni sui metodi di autenticazione e autorizzazione di Azure Active Directory, l'introduzione di questo articolo e le sezioni "Informazioni di base sull'autenticazione in Azure AD" possono essere d'aiuto.
 
 L'autenticazione di Teams viene eseguita tramite Azure AD e OAuth. Il processo di autenticazione può essere semplificato per:
 
-- Accesso utente > Emissione di token > richiesta successiva per usare il token emesso.
+- L'utente accede > rilascio di token > uso del token emesso per la richiesta.
 
 Le richieste da client a server sono autenticate e autorizzate tramite Azure AD mediante l'uso di OAuth. Gli utenti con credenziali valide emesse da un partner federato sono considerati attendibili ed è possibile eseguire lo stesso processo come utenti nativi. Tuttavia, gli amministratori potrebbero applicare ulteriori limitazioni.
 
@@ -182,7 +189,7 @@ In Teams, gli amministratori IT possono gestire il proprio servizio tramite l'in
 
 ### <a name="configuring-access-to-teams-at-your-internet-boundary"></a>Configurazione dell'accesso a Teams entro il limite Internet
 
-Affinché Teams funzioni correttamente (affinché gli utenti riescano a partecipare alle riunioni e così via), i clienti devono configurare il proprio accesso Internet in modo tale che il traffico UDP e TCP in uscita verso i servizi nel cloud Teams sia consentito. Per ulteriori dettagli, vedere [URL e intervalli di indirizzi IP di Office 365](/office365/enterprise/urls-and-ip-address-ranges).
+Affinché Teams funzioni correttamente, per esempio, affinché gli utenti riescano a partecipare alle riunioni, i clienti devono configurare il proprio accesso Internet in modo tale che il traffico UDP e TCP in uscita verso i servizi nel cloud Teams sia consentito. Per ulteriori informazioni, vedere [URL e intervalli di indirizzi IP per Office 365](/office365/enterprise/urls-and-ip-address-ranges).
 
 ### <a name="udp-3478-3481-and-tcp-443"></a>UDP 3478-3481 e TCP 443
 
@@ -190,7 +197,7 @@ Le porte UDP 3478-3481 e TCP 443 vengono utilizzate dai client per richiedere il
 
 ### <a name="federation-safeguards-for-teams"></a>Protezioni federative di Teams
 
-La federazione consente all'organizzazione di comunicare con altre organizzazioni per condividere messaggistica istantanea e presenza. In Teams, la federazione è attiva per impostazione predefinita. Tuttavia, gli amministratori del tenant hanno la possibilità di controllarla tramite l'interfaccia di amministrazione di Microsoft 365.
+La federazione consente all'organizzazione di comunicare con altre organizzazioni per condividere messaggistica istantanea e presenza. In Teams, la federazione è attiva per impostazione predefinita. Tuttavia, gli amministratori del tenant hanno la possibilità di controllare ls federazione ttramite l'interfaccia di amministrazione di Microsoft 365.
 
 ## <a name="addressing-threats-to-teams-meetings"></a>Risposta alle minacce alle riunioni di Teams
 
@@ -219,14 +226,14 @@ Sono due le opzioni disponibili per controllare chi arriva nelle riunioni di Tea
     |Interrompere o avviare la registrazione     |     S    |    N     |
     |Prendere il controllo quando un altro partecipante condivide una presentazione PowerPoint     |  S         | N        |
 
-Teams offre agli utenti aziendali la possibilità di creare e partecipare in tempo reale a riunioni. Gli utenti aziendali possono anche invitare utenti esterni che non dispongono di un account di Azure AD, Microsoft 365 o Office 365 a partecipare a tali riunioni. Anche gli utenti impiegati da partner esterni con un'identità sicura e autenticata possono partecipare alle riunioni e, se autorizzati a farlo, possono agire da relatori. Gli utenti anonimi non possono creare o partecipare a una riunione come relatori, ma possono essere promossi a tale ruolo una volta che avranno partecipato.
+Teams offre agli utenti aziendali la possibilità di creare e partecipare in tempo reale a riunioni. Gli utenti aziendali possono anche invitare utenti esterni che non dispongono di un account di Azure AD, Microsoft 365 o Office 365 a partecipare a tali riunioni. Anche gli utenti impiegati da partner esterni con un'identità sicura e autenticata possono partecipare alle riunioni e, se autorizzati a farlo, possono agire da relatori. Gli utenti anonimi non possono creare o partecipare a una riunione come relatori, ma possono essere promossi a tale ruolo una volta che vi saranno entrati.
 
 Affinché gli utenti anonimi possano partecipare alle riunioni di Teams, deve essere attivata l'impostazione Partecipanti nell'interfaccia di amministrazione di Teams.
 
 > [!NOTE]
 > Il termine *utenti anonimi* significa utenti che non sono autenticati nel tenant dell'organizzazione. In questo contesto, tutti gli utenti esterni sono considerati anonimi. Gli utenti autenticati includono gli utenti del tenant e gli utenti guest del tenant.
 
-Consentire agli utenti esterni di partecipare alle riunioni di Teams può essere molto utile, ma comporta alcuni rischi per la sicurezza. Per affrontare questi rischi, Teams fornisce le seguenti misure aggiuntive:
+Consentire agli utenti esterni di partecipare alle riunioni di Teams può essere utile, ma comporta alcuni rischi per la sicurezza. Per affrontare questi rischi, Teams fornisce le seguenti misure:
 
 - I ruoli dei partecipanti determinano i privilegi di controllo della riunione.
 - I tipi di partecipante consentono di limitare l'accesso a specifiche riunioni.
@@ -255,13 +262,17 @@ Un relatore può anche promuovere un partecipante al ruolo di relatore durante l
 
 I partecipanti alla riunione sono inoltre classificati per posizione e credenziali. È possibile utilizzare entrambe queste caratteristiche per decidere quali utenti possono accedere a riunioni specifiche. Gli utenti possono essere divisi in modo esteso nelle categorie seguenti:
 
-1. **Utenti che appartengono al tenant**: questi utenti dispongono di credenziali in Azure Active Directory per il tenant.
-    a. *Persone dell'organizzazione*: questi utenti dispongono di credenziali in Azure Active Directory per il tenant. *Persone dell'organizzazione* include gli account guest invitati.
-    b. *Utenti remoti*: questi utenti partecipano dall'esterno della rete aziendale. Possono comprendere i dipendenti che lavorano da casa o in viaggio e altri, come dipendenti di fornitori affidabili, a cui sono state concesse credenziali aziendali per le rispettive condizioni d'uso. Gli utenti remoti possono creare e partecipare alle riunioni, anche come relatori.
-.
-2. **Utenti che non appartengono al tenant**: questi utenti non dispongono di credenziali in Azure Active Directory per il tenant.
-    a. *Utenti federati*: gli utenti federati dispongono di credenziali valide con partner federati e vengono pertanto trattati come autenticati da Teams, ma rimangono comunque esterni per il tenant della riunione o dell'organizzatore. Gli utenti federati possono partecipare alle riunioni ed essere promossi a relatori dopo che hanno partecipato alla riunione, ma non possono creare riunioni in aziende con cui sono federati.
-    b. *Utenti anonimi*: gli utenti anonimi non hanno un'identità di Active Directory e non sono federati con il tenant.
+- **Utenti che appartengono al tenant**. Questi utenti hanno una credenziale in Azure Active Directory per il tenant.
+
+    *Persone dell'organizzazione*: questi utenti dispongono di credenziali in Azure Active Directory per il tenant. *Persone dell'organizzazione* include gli account guest invitati.
+
+    *Utenti remoti*: questi utenti partecipano dall'esterno della rete aziendale. Possono comprendere i dipendenti che lavorano da casa o in viaggio e altri, come dipendenti di fornitori affidabili, a cui sono state concesse credenziali aziendali per le rispettive condizioni d'uso. Gli utenti remoti possono creare e partecipare alle riunioni, anche come relatori.
+
+- **Utenti che non appartengono al tenant**. Questi utenti non hanno credenziali in Azure AD per il tenant.
+
+    *Utenti federati*: gli utenti federati dispongono di credenziali valide con partner federati e vengono pertanto trattati come autenticati da Teams, ma rimangono comunque esterni per il tenant della riunione o dell'organizzatore. Gli utenti federati possono partecipare alle riunioni ed essere promossi a relatori dopo che hanno partecipato alla riunione, ma non possono creare riunioni in aziende con cui sono federati.
+
+    *Utenti anonimi*: gli utenti anonimi non hanno un'identità di Active Directory e non sono federati con il tenant.
 
 Molte riunioni coinvolgono utenti esterni. Queste stesse società desiderano anche rassicurazioni in merito all'identità degli utenti esterni prima di consentire a tali utenti di partecipare a una riunione. Nella sezione seguente viene descritto in che modo Teams limita l'accesso alle riunioni per i tipi di utenti che non sono stati autorizzati in modo esplicito e richiede a tutti i tipi di utente di fornire *credenziali* appropriate per l'accesso a una riunione.
 
@@ -282,7 +293,7 @@ Le impostazioni predefinite sono:
 - *Persone dell'organizzazione e di organizzazioni attendibili*: gli utenti esterni e autenticati dei domini di Teams e Skype for Business, presenti nell'elenco degli utenti esterni consentiti, possono evitare la sala di attesa. Tutti gli altri utenti aspetteranno nella sala di attesa finché non saranno ammessi.
 - *Tutti*: tutti i partecipanti alla riunione evitano la sala di attesa dopo che un utente autenticato ha partecipato alla riunione.
 
-### <a name="presenter-capabilities"></a>Funzionalità del relatore
+### <a name="presenter-capabilities"></a>Funzioni del relatore
 
 Gli organizzatori della riunione controllano se i partecipanti possono presentare durante una riunione. Ogni riunione può essere configurata in modo da limitare i relatori a una delle seguenti opzioni:
 
@@ -292,7 +303,7 @@ Gli organizzatori della riunione controllano se i partecipanti possono presentar
 
 ### <a name="modify-while-meeting-is-running"></a>Modifica delle impostazioni mentre una riunione è in corso
 
-È possibile modificare le opzioni della riunione mentre questa è in corso. La modifica, se salvata, influirà sulla riunione in corso in pochi secondi. Interesserà anche le sessioni future della riunione.
+È possibile modificare le opzioni della riunione mentre questa è in corso. La modifica, una volta salvata, sarà visibile nella riunione in esecuzione in pochi secondi. Interesserà anche le sessioni future della riunione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
