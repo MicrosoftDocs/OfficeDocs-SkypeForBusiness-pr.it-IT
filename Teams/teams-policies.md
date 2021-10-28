@@ -23,13 +23,13 @@ ms.custom:
 - ms.teamsadmincenter.teamsandchannelpolicies.overview
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.discover
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.create
-description: Informazioni su come usare e gestire i criteri dei canali di Teams nell'organizzazione per controllare le attività che gli utenti possono eseguire in team e canali.
-ms.openlocfilehash: 727bb8b133d5119cd396c79561dde453281206f0
-ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
+description: Informazioni su come usare e gestire i criteri dei canali di Teams nell'organizzazione per controllare le attività che gli utenti possono eseguire nei team e nei canali.
+ms.openlocfilehash: 787978d6863a66b39c75f3f2c7315fe1495730c3
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "59432268"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60605612"
 ---
 # <a name="manage-channel-policies-in-microsoft-teams"></a>Gestire i criteri dei canali in Microsoft Teams
 
@@ -68,6 +68,6 @@ Per gestire i criteri dei team, è **possibile accedere Teams** Teams criteri  >
 
 [Canali privati in Teams](private-channels.md)
 
-[Assegnare i criteri agli utenti in Teams](assign-policies.md)
+[Assegnare i criteri agli utenti in Teams](policy-assignment-overview.md)
 
-[New-CsTeamsChannelsPolicy](/powershell/module/skype/new-csteamschannelspolicy?view=skype-ps)
+[New-CsTeamsChannelsPolicy](/powershell/module/skype/new-csteamschannelspolicy)

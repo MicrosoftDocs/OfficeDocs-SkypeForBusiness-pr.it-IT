@@ -17,16 +17,16 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come usare e gestire i criteri di routing vocale di emergenza Microsoft Teams per configurare i numeri di emergenza e specificare la modalità di instradamento delle chiamate di emergenza.
+description: Informazioni su come usare e gestire i criteri di routing vocale di emergenza in Microsoft Teams per configurare i numeri di emergenza e specificare la modalità di instradamento delle chiamate di emergenza.
 ms.custom:
 - seo-marvel-apr2020
 - ms.teamsadmincenter.voice.emergencycallroutingpolicies.overview
-ms.openlocfilehash: 0e7744f87d4fe5be9fb0788166a172ea9709206b
-ms.sourcegitcommit: 5a28d052379aef67531d3023cbe4dff30dba1136
+ms.openlocfilehash: f7a62338cc8fe3fbdc73e88cfca5dd9e525ff150
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60465806"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60605202"
 ---
 # <a name="manage-emergency-voice-routing-policies-for-direct-routing"></a>Gestire i criteri di routing vocale di emergenza per il routing diretto
 
@@ -45,10 +45,10 @@ Se è stato assegnato un criterio di routing vocale di emergenza a un sito di re
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a Criteri di emergenza vocale e quindi fare  >  clic sulla scheda Criteri **routing chiamate.**
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a Criteri di emergenza vocale e quindi fare  >  clic sulla scheda Criteri **routing chiamate.**
 2. Fare clic su **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio.
-4. Per abilitare le chiamate di emergenza dinamiche, attiva **Chiamate di emergenza dinamiche.** Quando le chiamate di emergenza dinamiche sono abilitate, Teams recupera le informazioni sui criteri e sulla posizione dal servizio e include queste informazioni nell'ambito della chiamata di emergenza.
+4. Per abilitare le chiamate di emergenza dinamiche, attiva **Chiamate di emergenza dinamiche.** Quando le chiamate di emergenza dinamiche sono abilitate, Teams le informazioni sui criteri e sulla posizione dal servizio e le include come parte della chiamata di emergenza.
 5. Definire uno o più numeri di emergenza. A questo scopo, in **Numeri di emergenza** fare clic su **Aggiungi** e quindi eseguire le operazioni seguenti:
     1. **Stringa di chiamata di emergenza:** immettere la stringa di chiamata di emergenza. Questa stringa di chiamata indica che una chiamata è una chiamata di emergenza.
         > [!NOTE]
@@ -71,7 +71,7 @@ Vedere [New-CsTeamsEmergencyCallRoutingPolicy](/powershell/module/skype/new-cste
 
 È possibile modificare i criteri globali o i criteri personalizzati creati dall'utente.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a Criteri di emergenza vocale e quindi fare  >  clic sulla scheda Criteri **routing chiamate.**
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a Criteri di emergenza vocale e quindi fare  >  clic sulla scheda Criteri **routing chiamate.**
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi selezionare **Modifica**.
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva.**
 
@@ -101,4 +101,4 @@ Set-CsTenantNetworkSite -identity "site1" -EmergencyCallRoutingPolicy "Emergency
 
 [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
 
-[Assegnare i criteri agli utenti in Teams](assign-policies.md)
+[Assegnare i criteri agli utenti in Teams](policy-assignment-overview.md)

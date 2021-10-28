@@ -22,12 +22,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d7c1bdde4764b56e8c45a8ad9356437525f00b56
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: 87389dfaba68de8cfe02f3291e03d593bb9de75b
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60045722"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60605832"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Turni per l'organizzazione in Microsoft Teams
 
@@ -74,11 +74,11 @@ Per consentire o impedire a utenti specifici dell'organizzazione di usare Turni,
 
 I criteri di configurazione dell’app consentono di personalizzare Teams per evidenziare le app più importanti per gli utenti dell'organizzazione. Le app impostate in un criterio vengono aggiunte alla barra delle app&mdash;la barra sul lato del client desktop di Teams e nella parte inferiore dei client mobile di Teams&mdash;dove gli utenti possono accedervi rapidamente e facilmente.
  
-Teams include un criterio di configurazione dell'app FirstLineWorker predefinito che è possibile assegnare ai lavoratori in prima linea dell'organizzazione. Per impostazione predefinita, il criterio include le app Attività, Turni, Chat e Chiamate.
+Teams include un criterio di configurazione dell'app FirstLineWorker predefinito che è possibile assegnare ai lavoratori in prima linea nell'organizzazione. Per impostazione predefinita, il criterio include le app Attività, Turni, Chat e Chiamate.
 
-Per visualizzare il criterio FirstLineWorker, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare Teams criteri di configurazione   >  **dell'app.**
+Per visualizzare il criterio FirstLineWorker, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a Criteri di configurazione **dell Teams app.**  >  
 
-:::image type="content" source="../../media/firstline-worker-app-setup-policy-new.png" alt-text="Screenshot dei criteri di configurazione dell'app FirstLineWorker nell'Microsoft Teams di amministrazione" lightbox="../../media/firstline-worker-app-setup-policy-new.png":::
+:::image type="content" source="../../media/firstline-worker-app-setup-policy-new.png" alt-text="Screenshot dei criteri di configurazione dell'app FirstLineWorker nell'interfaccia Microsoft Teams di amministrazione" lightbox="../../media/firstline-worker-app-setup-policy-new.png":::
 
 #### <a name="assign-the-firstlineworker-app-setup-policy-to-users"></a>Assegnare i criteri di configurazione dell'app FirstLineWorker agli utenti
 
@@ -95,4 +95,4 @@ Prima di poter eseguire ricerche nel log di controllo, è necessario attivare il
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Guida di Turni per i lavoratori in prima linea](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b)
-- [Assegnare i criteri agli utenti in Teams](../../assign-policies.md)
+- [Assegnare i criteri agli utenti in Teams](../../policy-assignment-overview.md)

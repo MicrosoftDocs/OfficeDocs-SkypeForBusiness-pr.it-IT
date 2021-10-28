@@ -17,12 +17,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come creare e gestire i criteri di routing vocale in Microsoft Teams.
-ms.openlocfilehash: 1717f1b0400f67346034bd9e92bd698305fdd324
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: d9bd26f2322d9b99b0e2ff8e8ba01f0569abc24e
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58727095"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60605578"
 ---
 # <a name="manage-voice-routing-policies-for-direct-routing"></a>Gestire i criteri di routing vocale per il routing diretto
 
@@ -32,7 +32,7 @@ Un criterio di routing vocale è un contenitore per i record di utilizzo PSTN. P
 
 È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. Gli utenti riceveranno automaticamente i criteri globali a meno che non si creino e assegnino criteri personalizzati. Tenere presente che è possibile modificare le impostazioni nel criterio globale, ma non è possibile rinominarlo o eliminarlo.
 
-È importante sapere che l'assegnazione di un criterio di routing vocale a un utente non gli consente di effettuare chiamate PSTN in Teams. Sarà anche necessario abilitare l'utente per il routing Sistema telefonico e completare altri passaggi di configurazione. Per altre informazioni, vedere [Configurare il routing diretto.](direct-routing-configure.md)
+È importante sapere che l'assegnazione di un criterio di routing vocale a un utente non gli consente di effettuare chiamate PSTN in Teams. È anche necessario abilitare l'utente per l'Sistema telefonico routing diretto e completare altri passaggi di configurazione. Per altre informazioni, vedere [Configurare il routing diretto.](direct-routing-configure.md)
 
 ## <a name="create-a-custom-voice-routing-policy"></a>Creare un criterio di routing vocale personalizzato
 
@@ -78,4 +78,4 @@ Vedere anche [Grant-CsOnlineVoiceRoutingPolicy](/powershell/module/skype/grant-c
 
 [Abilitare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-enable.md)
 
-[Assegnare i criteri agli utenti in Teams](assign-policies.md)
+[Assegnare i criteri agli utenti in Teams](policy-assignment-overview.md)

@@ -21,19 +21,19 @@ ms.custom: ms.teamsadmincenter.policypackages.overview
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni sui criteri in un ambiente Education, o EDU, e su come usare e gestire i pacchetti di criteri in Microsoft Teams.
-ms.openlocfilehash: bda6341afa03e4bfebb2e9a619a42ad0a0b879e3
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 80e4b7becb720a6e4e89740ce7bf8c1c49e33af9
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728165"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60605382"
 ---
 # <a name="teams-policies-and-policy-packages-for-education"></a>Criteri e pacchetti di criteri di Teams per l'istruzione
 
 [!INCLUDE [policy-wizard-edu](includes/policy-wizard-edu.md)]
 
 > [!NOTE]
-> Per informazioni approfondite sui criteri in Microsoft Teams, vedere [Assegnare i criteri agli utenti in Microsoft Teams](assign-policies.md).
+> Per informazioni approfondite sui criteri in Microsoft Teams, vedere [Assegnare i criteri agli utenti in Microsoft Teams](policy-assignment-overview.md).
 
 ## <a name="admins-getting-started-with-microsoft-teams-policy-management"></a>Amministratori: introduzione alla gestione dei criteri di Microsoft Teams
 
@@ -41,7 +41,7 @@ Microsoft Teams consente agli utenti di svolgere attività come partecipare a ri
 
 Ecco un elenco delle aree dei criteri principali disponibili in Microsoft Teams. Per altre informazioni sui criteri di ogni area e delle funzionalità che controllano, usare i link seguenti:
 
-- [Riunioni](meeting-policies-in-teams.md)
+- [Riunioni](meeting-policies-overview.md)
 - [Eventi live](teams-live-events/configure-teams-live-events.md)
 - [Chiamate](teams-calling-policy.md) 
 - [Messaggistica](messaging-policies-in-teams.md)
@@ -121,7 +121,7 @@ Un pacchetto di criteri in Teams raccoglie i criteri predefiniti e le impostazio
 
 Gli istituti di istruzione in generale hanno molti utenti con esigenze specifiche, a seconda dell'età e della maturità degli studenti. Ad esempio, si può decidere di concedere ai docenti e al personale l'accesso completo a Microsoft Teams, ma di limitare le funzionalità disponibili agli studenti per promuovere un ambiente di apprendimento sicuro e concentrato. È possibile usare i pacchetti di criteri per personalizzare le impostazioni in base alle esigenze di gruppi diversi nella community dell'istituto di istruzione.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > La raccomandazione principale è di usare la definizione Globale (predefinita per l'intera organizzazione) dei criteri per gli studenti, invece di un pacchetto di criteri. In questo modo si garantisce che tutti gli utenti dell'organizzazione abbiano sempre il gruppo più rigoroso di criteri appropriati per gli studenti. Se questa raccomandazione non soddisfa le esigenze dell'istituto, uno dei pacchetti di criteri per studenti seguenti può essere una valida alternativa. 
 
 Come per l'elenco dei criteri illustrato in precedenza in questo articolo, i pacchetti di criteri contengono criteri predefiniti per:
@@ -180,7 +180,7 @@ Per assegnare un pacchetto di criteri a uno o più utenti, nel riquadro di spost
 
 ![Screenshot che mostra come assegnare un pacchetto di criteri nell'interfaccia di amministrazione.](media/policy-packages-healthcare-assign.png)
 
-Per altre informazioni, vedere [Assegnare un pacchetto di criteri](manage-policy-packages.md#assign-a-policy-package).
+Per altre informazioni, vedere [Assegnare un pacchetto di criteri](assign-policy-packages.md).
 
 Se a un utente è assegnato un criterio e successivamente gli si assegna un criterio diverso, avrà priorità l'assegnazione più recente.
 
@@ -190,13 +190,13 @@ Se a un utente è assegnato un criterio e successivamente gli si assegna un crit
 
 L'assegnazione di pacchetti di criteri ai gruppi consente di assegnare più criteri a un gruppo di utenti, ad esempio un gruppo di sicurezza o una lista di distribuzione. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando vengono aggiunti o rimossi membri da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza. Questo metodo è consigliato per gruppi composti da un massimo di 50.000 utenti, ma funziona anche con i gruppi più grandi.
 
-Per altre informazioni, vedere [Assegnare un pacchetto di criteri a un gruppo](assign-policies.md#assign-a-policy-package-to-a-group).
+Per altre informazioni, vedere [Assegnare un pacchetto di criteri a un gruppo](assign-policy-packages.md#assign-a-policy-package-to-a-group).
 
 #### <a name="assign-a-policy-package-to-a-large-set-batch-of-users"></a>Assegnare un pacchetto di criteri a un set di utenti di grandi dimensioni (batch)
 
 Usare l'assegnazione pacchetti di criteri per batch per assegnare un pacchetto di criteri a grandi set di utenti per volta. Per inviare un batch di utenti e il pacchetto di criteri da assegnare, usare il cmdlet [New-CsBatchPolicyPackageAssignmentOperation](/powershell/module/teams/new-csbatchpolicypackageassignmentoperation). Le assegnazioni vengono elaborate come operazione in background e viene generato un ID operazione per ogni batch.
 
-Un batch può contenere fino a 5.000 utenti. È possibile specificare gli utenti in base all'ID oggetto, all'UPN, all'indirizzo SIP o all'indirizzo di posta elettronica. Per altre informazioni, vedere [Assegnare un pacchetto di criteri a un batch di utenti](assign-policies.md#assign-a-policy-package-to-a-batch-of-users).
+Un batch può contenere fino a 5.000 utenti. È possibile specificare gli utenti in base all'ID oggetto, all'UPN, all'indirizzo SIP o all'indirizzo di posta elettronica. Per altre informazioni, vedere [Assegnare un pacchetto di criteri a un batch di utenti](assign-policy-packages.md#assign-a-policy-package-to-a-batch-of-users).
 
 ## <a name="policies-that-should-be-assigned-for-student-safety"></a>Criteri che è opportuno assegnare per la sicurezza degli studenti
 

@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1e6bd14eabadc96084973d3e998291a577dbbfc7
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 3a2772fe0f190bf7280dc4bb11625aedb3d0157b
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58729815"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60605842"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -93,12 +93,12 @@ Per una panoramica su come creare team, vedere: [Creare un team di classe in Mic
 
 I criteri di Teams consentono di gestire le opzioni disponibili per utenti o gruppi di utenti specifici. I criteri possono essere applicati per definire a chi è consentito usare la chat privata, le chiamate private, la pianificazione delle riunioni, i tipi di contenuto che possono essere condivisi e molto altro ancora.
 
-**Il personale, gli insegnanti e gli studenti degli istituti di istruzione superiore** possono beneficiare delle funzionalità incluse nei criteri (globali) predefiniti. È possibile abilitare altre impostazioni dei criteri per aggiungere ulteriori funzionalità a Teams, tra cui [le funzionalità di traduzione nei criteri di messaggistica](messaging-policies-in-teams.md#messaging-policy-settings) e la [trascrizione automatica delle riunioni](meeting-policies-in-teams.md#allow-transcription) nei criteri delle riunioni.
+**Il personale, gli insegnanti e gli studenti degli istituti di istruzione superiore** possono beneficiare delle funzionalità incluse nei criteri (globali) predefiniti. È possibile abilitare altre impostazioni dei criteri per aggiungere ulteriori funzionalità a Teams, tra cui [le funzionalità di traduzione nei criteri di messaggistica](messaging-policies-in-teams.md#messaging-policy-settings) e la [trascrizione automatica delle riunioni](meetings-policies-recording-and-transcription.md#allow-transcription) nei criteri delle riunioni.
 
 **Negli istituti didattici primari e secondari** può essere necessario limitare le funzionalità disponibili agli studenti. I criteri impostano limiti alle azioni che possono intraprendere gli studenti. Poiché in genere gli studenti sono il gruppo di utenti più numeroso e che spesso riceve le impostazioni più restrittive, è consigliabile che le modifiche ai criteri per gli studenti siano rese "globali" (impostazione predefinita a livello di organizzazione).
 
 > [!IMPORTANT]
-> Per i criteri riunione assegnati agli utenti, è consigliabile configurare l'opzione "Ammetti automaticamente le persone" su "Tutti gli utenti dell'organizzazione". Questa opzione garantisce che gli utenti non autenticati debbano essere ammessi dalla sala di attesa per poter partecipare alle riunioni di Teams. Per altre informazioni, leggere [Gestire i criteri di riunione in Teams](./meeting-policies-in-teams.md#automatically-admit-people).
+> Per i criteri riunione assegnati agli utenti, è consigliabile configurare l'opzione "Ammetti automaticamente le persone" su "Tutti gli utenti dell'organizzazione". Questa opzione garantisce che gli utenti non autenticati debbano essere ammessi dalla sala di attesa per poter partecipare alle riunioni di Teams. Per altre informazioni, leggere [Gestire i criteri di riunione in Teams](meeting-policies-participants-and-guests.md#automatically-admit-people).
 
 **Il personale e gli insegnanti di scuola primaria** dovrebbero disporre di criteri che gli garantiscano le funzionalità di base e che possano essere limitate per gli studenti. Creare nuovi criteri che consentano la pianificazione delle chat private e la pianificazione delle riunioni (le impostazioni predefinite per un nuovo criterio). [Assegnare questi criteri in blocco al personale e ai docenti](batch-group-policy-assignment-edu.md).
 

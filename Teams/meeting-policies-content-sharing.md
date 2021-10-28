@@ -18,13 +18,13 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.contentsharing
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per la condivisione di contenuti.
-ms.openlocfilehash: f1fe77b2a8be552e2c156fda8d0b1bd89fa83d4c
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per la condivisione del contenuto.
+ms.openlocfilehash: 2bd3a4274a147cad8548d0abf84a312ee7f6f259
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726505"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60605622"
 ---
 # <a name="meeting-policy-settings---content-sharing"></a>Impostazioni dei criteri di riunione - Condivisione di contenuti
 
@@ -66,11 +66,11 @@ Questa impostazione è un criterio per utente. Questa impostazione controlla se 
 
 Se questa impostazione è attivata per l'utente, nella barra superiore di una sessione di condivisione compare l'opzione **Concedi controllo**.
 
-![Screenshot che mostra l'opzione Assegna controllo.](media/meeting-policies-give-control.png)
+![Screenshot che mostra l'opzione Concedi controllo.](media/meeting-policies-give-control.png)
 
 Se l'impostazione è disattivata per l'utente, l'opzione **Concedi controllo** non è disponibile.
 
-![Screenshot che mostra che l'opzione Assegna controllo non è disponibile.](media/meeting-policies-give-control-not-available.png)
+![Screenshot che mostra che l'opzione Concedi controllo non è disponibile.](media/meeting-policies-give-control-not-available.png)
 
 Osserviamo l'esempio seguente.
 
@@ -144,5 +144,5 @@ Daniela può creare note nelle riunioni di Amanda, mentre Amanda non può creare
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
-- [Assegnare i criteri agli utenti in Teams](assign-policies.md)
+- [Assegnare i criteri agli utenti in Teams](policy-assignment-overview.md)
 - [Rimuovere dagli utenti il criterio RestrictedAnonymousAccess per le riunioni di Teams](meeting-policies-restricted-anonymous-access.md)

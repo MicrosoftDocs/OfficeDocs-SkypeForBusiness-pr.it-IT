@@ -1,7 +1,7 @@
 ---
 title: "Esempio di script di PowerShell: creare gruppi di sicurezza per docenti e studenti dell'istituto di istruzione"
 author: cichur
-ms.author: v-cichur
+ms.author: serdars
 manager: serdars
 ms.topic: article
 ms.reviewer: angch
@@ -17,16 +17,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3cb1f40d79c25b7e0832c5d1576427b83ba980b2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 05b94c3c5deedcaf0cc375685eb00555288c3b24
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58577810"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60605162"
 ---
 # <a name="powershell-script-sample---create-security-groups-for-educators-and-students-in-your-school"></a>Esempio di script di PowerShell: creare gruppi di sicurezza per docenti e studenti dell'istituto di istruzione
 
-Usare questo script di PowerShell per creare i gruppi di sicurezza necessari per gestire i criteri Microsoft Teams nell'istituto di istruzione. [L'assegnazione dei criteri ai](../assign-policies.md#assign-a-policy-to-a-group) gruppi in Teams consente di assegnare un criterio a un gruppo di utenti, ad esempio un gruppo di sicurezza. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando vengono aggiunti o rimossi membri da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza.
+Usare questo script di PowerShell per creare i gruppi di sicurezza necessari per gestire i criteri Microsoft Teams nell'istituto di istruzione. [L'assegnazione dei criteri ai](../assign-policies-users-and-groups.md#assign-a-policy-to-a-group) gruppi in Teams consente di assegnare un criterio a un gruppo di utenti, ad esempio un gruppo di sicurezza. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando vengono aggiunti o rimossi membri da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza.
 
 Questo script di PowerShell crea due gruppi di sicurezza, uno per personale e docenti e un altro per gli studenti dell'istituto di istruzione, in base al tipo di licenza. È quindi possibile assegnare criteri ai gruppi di sicurezza creati. Per altre informazioni sull'uso di questo script, vedere Assegnare criteri a set di utenti di grandi dimensioni [nell'istituto di istruzione.](../batch-group-policy-assignment-edu.md)
 
@@ -36,10 +36,10 @@ Questo script esegue le operazioni seguenti:
 - Identifica gli studenti a cui è assegnato uno SKU per gli studenti, crea un gruppo di sicurezza e quindi aggiunge gli studenti al gruppo.
 - Aggiorna l'appartenenza di ogni gruppo di sicurezza per aggiungere o rimuovere personale, docenti e studenti a seconda che abbia una licenza.
 
-È necessario eseguire regolarmente questo script per mantenere aggiornati e aggiornati i gruppi di sicurezza.
+È necessario eseguire regolarmente questo script per mantenere aggiornati i gruppi di sicurezza.
 
 > [!IMPORTANT]
-> È importante comprendere le regole di [precedenza](../assign-policies.md#precedence-rules) e la classificazione delle assegnazioni di [gruppo](../assign-policies.md#group-assignment-ranking) quando si assegnano criteri ai gruppi. Assicurarsi di leggere e comprendere i concetti in Informazioni necessarie sull'assegnazione dei criteri [ai gruppi.](../assign-policies.md#what-you-need-to-know-about-policy-assignment-to-groups)
+> È importante comprendere le regole di [precedenza](../assign-policies-users-and-groups.md#precedence-rules) e la classificazione delle assegnazioni di [gruppo](../assign-policies-users-and-groups.md#group-assignment-ranking) quando si assegnano criteri ai gruppi. Assicurarsi di leggere e comprendere i concetti in Informazioni necessarie sull'assegnazione dei criteri [ai gruppi.](../assign-policies-users-and-groups.md#what-you-need-to-know-about-policy-assignment-to-groups)
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
@@ -275,4 +275,4 @@ Stop-Transcript
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Assegnare i criteri agli utenti in Teams](../assign-policies.md)
+[Assegnare i criteri agli utenti in Teams](../policy-assignment-overview.md)

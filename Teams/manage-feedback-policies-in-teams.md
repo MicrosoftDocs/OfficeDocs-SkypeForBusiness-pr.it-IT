@@ -16,33 +16,33 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come usare i criteri di feedback per controllare se Teams utenti dell'organizzazione possono inviare feedback su Teams a Microsoft.
-ms.openlocfilehash: 2357af358dad4407fd401b08ff75dfc2560593a2
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+description: Informazioni su come usare i criteri di feedback per controllare se Teams utenti dell'organizzazione possono inviare feedback sulle Teams a Microsoft.
+ms.openlocfilehash: 4cb8914a793ddb6342b047caada087006da8f670
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60013010"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60605772"
 ---
 # <a name="manage-feedback-policies-in-microsoft-teams"></a>Gestire i criteri di feedback in Microsoft Teams
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-Gli utenti dell'organizzazione possono inviare feedback su Microsoft Teams per farci sapere come stiamo facendo direttamente da Teams desktop, client Web e dispositivi mobili. Stiamo continuamente migliorando l'esperienza Teams e usiamo questo feedback per migliorare Teams migliori.
+Gli utenti dell'organizzazione possono inviare feedback su Microsoft Teams per farci sapere come stiamo facendo direttamente da Teams desktop, client Web e dispositivi mobili. Stiamo continuamente migliorando l'esperienza Teams e usiamo questo feedback per migliorare Teams lavoro.
 
 > [!NOTE]
 > I criteri di feedback non sono disponibili nelle distribuzioni GCC, GCC high o DOD.
 
 **Caratteristica **Invia feedback****
 
-Gli utenti possono inviare commenti e suggerimenti su Teams inviare commenti a Microsoft facendo clic su **Invia** feedback in Teams  >   desktop e Web.
+Gli utenti possono inviare commenti e suggerimenti su Teams a Microsoft andando su **Come** inviare feedback in Teams  >   desktop e Web.
 
 
 ![Opzione Invia feedback in Teams](media/manage-feedback-policies-in-teams-give-feedback.png)
 
-Accedere ai feedback su dispositivi **mobili usando Impostazioni** guida &  >  **feedback**  >  **Inviare feedback**.
+Accedere ai feedback su **dispositivi mobili usando Impostazioni** guida & feedback  >    >  **Inviare feedback**.
 
-![Opzione Invia feedback in Teams per dispositivi mobili](media/feedback3.jpg)
+![Opzione Invia feedback in Teams su dispositivi mobili](media/feedback3.jpg)
 
  I dati inviati tramite Invia **feedback** e Invia **feedback** sono considerati come "Dati di supporto" ai sensi del contratto di Microsoft 365 o Office 365, incluse le informazioni che altrimenti verrebbero considerate "Dati dei clienti" o "Dati personali".
 
@@ -50,7 +50,7 @@ Accedere ai feedback su dispositivi **mobili usando Impostazioni** guida &  >  *
 
 **Sondaggi**
 
-Gli utenti possono anche valutare la loro esperienza con Teams e inviarci dettagli sulla valutazione che danno. Questo sondaggio popup viene visualizzato agli utenti di tanto in tanto in Teams. Quando un utente seleziona **Invia feedback** nella notifica, il sondaggio viene visualizzato per il completamento.
+Gli utenti possono anche valutare la loro esperienza con Teams e inviarci dettagli sulla valutazione che danno. Questo sondaggio popup viene visualizzato per gli utenti di tanto in tanto in Teams. Quando un utente seleziona **Invia feedback** nella notifica, il sondaggio viene visualizzato per il completamento.
 
 ![la notifica e il modulo del sondaggio in Teams.](media/manage-feedback-policies-in-teams-survey.png)
 
@@ -94,4 +94,4 @@ Grant-CsTeamsFeedbackPolicy -Identity user1@contoso.com -PolicyName "New Hire Fe
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Teams Panoramica di PowerShell](teams-powershell-overview.md)
-- [Assegnare i criteri agli utenti in Teams](assign-policies.md)
+- [Assegnare i criteri agli utenti in Teams](policy-assignment-overview.md)

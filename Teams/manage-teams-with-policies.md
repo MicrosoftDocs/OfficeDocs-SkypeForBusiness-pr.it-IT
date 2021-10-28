@@ -15,12 +15,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 307eccf1d6e919593cdfadaf2b902a7a15c7b4cc
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: a08e48a37b90a7d8a99053d01a844c3451314e00
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58588148"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60605592"
 ---
 # <a name="manage-teams-with-policies"></a>Gestire Teams con i criteri
 
@@ -46,15 +46,15 @@ Ad esempio, i criteri di configurazione delle app possono consentire agli utenti
 
 ![Screenshot dei criteri di configurazione delle app.](media/app-setup-policy.png)
 
-Inoltre, i criteri di riunione possono essere usati per controllare le impostazioni audio e video nelle riunioni Teams, ad esempio trascrizioni, registrazioni cloud e audio/video IP.
+Inoltre, è possibile usare i criteri di riunione per controllare le impostazioni audio e video nelle riunioni Teams, ad esempio trascrizioni, registrazioni cloud e audio/video IP.
 
 ![Screenshot dei criteri della riunione.](media/engineering-meeting-policy.png)
 
 ### <a name="teams-for-education"></a>Teams per l'istruzione
 
-È anche possibile usare la procedura [guidata Teams per l'istruzione criteri per](easy-policy-setup-edu.md) configurare e gestire facilmente i criteri per l'ambiente di apprendimento.
+È anche possibile usare la procedura [guidata Teams per l'istruzione criteri di](easy-policy-setup-edu.md) apprendimento per configurare e gestire facilmente i criteri per l'ambiente di apprendimento.
 
-![Screenshot della procedura guidata Teams per l'istruzione criteri di gruppo.](media/easy-policy-setup-quick-setup.png)
+![Screenshot della Teams per l'istruzione guidata criteri di gruppo.](media/easy-policy-setup-quick-setup.png)
 
 ## <a name="types-of-policies"></a>Tipi di criteri
 
@@ -63,9 +63,9 @@ I criteri seguenti possono essere gestiti con Microsoft Teams.
 Tipo di criterio | Descrizione
 ------------|------------
 [Pacchetti di criteri](manage-policy-packages.md) | Un pacchetto di criteri in Microsoft Teams è una raccolta di criteri e impostazioni predefiniti che è possibile assegnare agli utenti con ruoli simili nell'organizzazione.
-[Criteri riunione](meeting-policies-in-teams.md) | I criteri riunione vengono usati per controllare le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti dell'organizzazione. I criteri delle riunioni includono gli argomenti seguenti.<br> - Criteri audio e video<br> - Criteri di condivisione del contenuto e dello schermo<br> - Partecipanti, guest e criteri di accesso<br> - Criteri generali
+[Criteri riunione](meeting-policies-overview.md) | I criteri riunione vengono usati per controllare le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti dell'organizzazione. I criteri delle riunioni includono gli argomenti seguenti.<br> - Criteri audio e video<br> - Criteri di condivisione del contenuto e dello schermo<br> - Partecipanti, guest e criteri di accesso<br> - Criteri generali
 [Criteri vocali e chiamate](voice-and-calling-policies.md)| I criteri vocali e chiamate gestiscono queste impostazioni tramite team come chiamate di emergenza, routing delle chiamate e ID chiamante.
-[Criteri delle app](app-policies.md)| I criteri delle app vengono usati per controllare le applicazioni in Microsoft Teams. Gli amministratori possono consentire o bloccare le app che gli utenti possono installare, aggiungere le applicazioni alla barra delle app Teams di un utente e installare l'applicazione per conto degli utenti.
+[Criteri delle app](app-policies.md)| I criteri delle app vengono usati per controllare le applicazioni in Microsoft Teams. Gli amministratori possono consentire o bloccare le app che gli utenti possono installare, aggiungere applicazioni alla barra delle app Teams di un utente e installare l'applicazione per conto degli utenti.
 [Criteri di messaggistica](messaging-policies-in-teams.md)| I criteri di messaggistica controllano la disponibilità delle funzionalità di chat e canali.
 
 ## <a name="related-topics"></a>Argomenti correlati

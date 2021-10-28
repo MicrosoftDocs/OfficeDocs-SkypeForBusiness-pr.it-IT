@@ -1,7 +1,7 @@
 ---
 title: Gestire i modelli di team nell'interfaccia di amministrazione
 author: cichur
-ms.author: v-cichur
+ms.author: serdars
 manager: serdars
 ms.reviewer: yinchang
 ms.topic: article
@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire i modelli di team nell'interfaccia di amministrazione
-ms.openlocfilehash: c154cdf60b887d5c934e4f63634691c4b9bfcdbd
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: c8b9926290e58fe190d2351820e2bb63560c8c8c
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58732825"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60605372"
 ---
 # <a name="manage-team-templates-in-the-admin-center"></a>Gestire i modelli di team nell'interfaccia di amministrazione
 
@@ -38,13 +38,13 @@ Questo breve video illustra come gestire i criteri dei modelli.
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Espandere criteri **Teams**  >  **modelli .**
+2. Espandere i **Teams**  >  **criteri di modelli.**
 
 3. Selezionare **Aggiungi**.
 
     ![I criteri del modello sono selezionati e l'opzione Aggiungi è evidenziata.](media/template-policies-1.png)
 
-1. Nella sezione **Criteri Impostazioni** modelli completare i campi seguenti:
+1. Nella sezione **Criteri modelli Impostazioni** completare i campi seguenti:
 
     - Nome dei criteri dei modelli
 
@@ -111,8 +111,7 @@ A: Sì.
 1. Nell'interfaccia di amministrazione passare a **Utenti**.
 1. Nella tabella elenco Utenti selezionare gli utenti da assegnare a un determinato criterio di modelli.
 1. Selezionare Modifica impostazioni e modificare il campo Criteri modelli.
-1. Selezionare Applica.
-   Per altre informazioni, vedere Assegnare criteri agli [utenti in Microsoft Teams - Microsoft Teams Documenti \| Microsoft](./assign-policies.md#assign-a-policy-to-a-batch-of-users).
+1. Selezionare Applica. [Altre informazioni](./assign-policies-users-and-groups.md#assign-a-policy-to-a-batch-of-users).
 
 **D: Come si visualizzano tutti gli utenti assegnati a un criterio specifico?**
 
@@ -142,6 +141,6 @@ A: No, i criteri dei modelli per EDU non sono supportati.
 
 - [Creare un modello di team da un modello di team esistente](./create-template-from-existing-template.md)
 
-- [Assegnare criteri agli utenti in Microsoft Teams - Microsoft Teams \| Documenti Microsoft](./assign-policies.md)
+- [Assegnare criteri agli utenti in Microsoft Teams - Microsoft Teams \| Documenti Microsoft](./policy-assignment-overview.md)
 
 - [Assegnare utenti a un criterio in batch](/powershell/module/teams/new-csbatchpolicyassignmentoperation)

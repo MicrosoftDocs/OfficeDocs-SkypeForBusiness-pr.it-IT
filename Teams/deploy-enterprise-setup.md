@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9d67dbb494a0bde5212d405e5710a7c2730734e9
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f05616de4f315cee115ee9767a52eea09297dfcf
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58584630"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60605822"
 ---
 # <a name="set-up-microsoft-teams-in-your-enterprise"></a>Configurare Microsoft Teams nell'azienda
 
@@ -95,7 +95,7 @@ L'**audioconferenza** offre agli utenti la possibilità di partecipare alle riun
 | Decisione | Descrizione |
 |--|--|
 | Quali impostazioni delle riunioni a livello di organizzazione devono essere applicate?| I criteri di riunione controllano quali funzionalità per le riunioni sono disponibili per gli organizzatori e i partecipanti. È possibile controllare se i partecipanti anonimi possono partecipare alle riunioni, personalizzare gli inviti alle riunioni, controllare come vengono gestiti i contenuti multimediali in tempo reale e altro ancora. Le modifiche apportate a queste impostazioni si applicano a tutte le riunioni dell'organizzazione. <p>[Gestire le impostazioni di riunione in Microsoft Teams](meeting-settings-in-teams.md)|
-| Quali criteri di riunione devono essere applicati? | I criteri riunione vengono usati per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti nell'organizzazione. È possibile controllare se gli utenti possono pianificare riunioni private, abilitare l'opzione Riunione immediata, consentire la registrazione delle riunioni e così via. Teams ha un criterio globale che si applica a tutti gli utenti.<p> Se si vuole applicare a tutti lo stesso criterio, è sufficiente modificare questo criterio globale, ad esempio disattivare la registrazione delle riunioni. <p>Se si vogliono usare criteri diversi per gruppi di utenti diversi, ad esempio, un criterio per gli impiegati e un altro per i dirigenti, è possibile creare e assegnare nuovi criteri. Quando si assegna un criterio a un utente, il criterio globale non si applica più a questo utente.<p> [Gestire i criteri di riunione in Teams](meeting-policies-in-teams.md)|
+| Quali criteri di riunione devono essere applicati? | I criteri riunione vengono usati per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti nell'organizzazione. È possibile controllare se gli utenti possono pianificare riunioni private, abilitare l'opzione Riunione immediata, consentire la registrazione delle riunioni e così via. Teams ha un criterio globale che si applica a tutti gli utenti.<p> Se si vuole applicare a tutti lo stesso criterio, è sufficiente modificare questo criterio globale, ad esempio disattivare la registrazione delle riunioni. <p>Se si vogliono usare criteri diversi per gruppi di utenti diversi, ad esempio, un criterio per gli impiegati e un altro per i dirigenti, è possibile creare e assegnare nuovi criteri. Quando si assegna un criterio a un utente, il criterio globale non si applica più a questo utente.<p> [Gestire i criteri di riunione in Teams](meeting-policies-overview.md)|
 | Si vuole consentire la registrazione e l'archiviazione delle riunioni?| Gli organizzatori delle riunioni possono registrare e archiviare le riunioni nel cloud. È possibile attivare e disattivare la registrazione e l'archiviazione delle riunioni usando i criteri di riunione.<p> [Registrazione delle riunioni di Teams nel cloud](cloud-recording.md) |
 
 ### <a name="audio-conferencing"></a>Audioconferenza
@@ -145,12 +145,12 @@ Teams e Microsoft 365 offrono molti strumenti che semplificano la conformità ai
 | [Conformità delle comunicazioni](communication-compliance.md)| Contribuisce a ridurre i rischi associati alle comunicazioni identificando e prendendo misure contro il linguaggio offensivo, volgare e molesto, le immagini per adulti, audaci e cruente, oltre che contro la condivisione di informazioni riservate. |
 | [Registrazione di chiamate e riunioni basata sui criteri](teams-recording-policy.md)| Consente di controllare quando e se le chiamate e le riunioni devono essere registrate e archiviate automaticamente per la successiva elaborazione, conservazione o analisi.|
 | [Etichette di riservatezza](sensitivity-labels.md)| Consente di proteggere e regolare l'accesso alle informazioni sensibili creando etichette che applicano opzioni di privacy selezionate.|
-| [Prevenzione della perdita dei dati](/microsoft-365/compliance/dlp-microsoft-teams?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json&view=o365-worldwide)| Consente di creare regole che determinano la modalità di gestione di determinate informazioni, ad esempio codici fiscali, numeri di carta di credito e così via. È possibile impedire l'invio di determinate informazioni, impedirne l'uscita dall'organizzazione e così via.|
+| [Prevenzione della perdita dei dati](/microsoft-365/compliance/dlp-microsoft-teams?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json)| Consente di creare regole che determinano la modalità di gestione di determinate informazioni, ad esempio codici fiscali, numeri di carta di credito e così via. È possibile impedire l'invio di determinate informazioni, impedirne l'uscita dall'organizzazione e così via.|
 | [eDiscovery](eDiscovery-investigation.md)| Consente di cercare e recuperare contenuto all'interno dell'organizzazione quando l'organizzazione riceve richieste di individuazione nell'ambito di procedimenti legali. |
 | [Blocco a fini giudiziari](legal-hold.md)| Consente di conservare informazioni nell'organizzazione, anche se vengono eliminate da un utente, quando necessario durante procedimenti legali, in modo che possano essere individuate durante le indagini di eDiscovery. |
 | [Ricerca contenuto](content-search.md)| Consente di eseguire query sulle informazioni di Teams su Exchange, SharePoint Online e OneDrive for Business.|
 | [Auditing](audit-log-events.md)| Consente di visualizzare informazioni su un'azione specificata, tra cui l'utente che ha eseguito l'azione, la data e l'ora in cui è stata eseguita, l'indirizzo IP usato e così via. Le azioni includono la creazione o l'eliminazione di team, la creazione di canali, la modifica di impostazioni in Teams e così via.|
-| [Customer Key](/microsoft-365/compliance/customer-key-tenant-level?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json&view=o365-worldwide)| Consente di creare criteri di crittografia dei dati con le chiavi di crittografia fornite.|
+| [Customer Key](/microsoft-365/compliance/customer-key-tenant-level?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json)| Consente di creare criteri di crittografia dei dati con le chiavi di crittografia fornite.|
 
 ## <a name="clients"></a>Client
 
