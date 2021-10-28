@@ -20,12 +20,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 16749fa21176622bdd68bcd2034eb94c99773f9e
-ms.sourcegitcommit: b57e19e20900ff02f3196c811bf1dd1acd149c79
+ms.openlocfilehash: 60a6f78d99f6481f2c10db5467f3e7e7bad9f7fb
+ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "60596909"
+ms.lasthandoff: 10/28/2021
+ms.locfileid: "60606955"
 ---
 # <a name="calling-and-call-forwarding-in-teams"></a>Chiamate e inoltro di chiamata in Teams
 
@@ -47,7 +47,7 @@ Seguire questa procedura per creare un criterio di chiamata personalizzato.
 
 Seguire questa procedura per modificare un criterio di chiamata esistente.
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione selezionare **Criteri per** le chiamate  >  **vocali.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione selezionare **Criteri per le chiamate**  >  **vocali.**
 2. Fare clic accanto al criterio da modificare e quindi selezionare **Modifica.**
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva.**
 
@@ -87,17 +87,17 @@ Questa impostazione controlla se le chiamate in arrivo possono essere inoltrate 
 
 Questa impostazione consente di instradare le chiamate in ingresso ai delegati, consentendo ai delegati di effettuare chiamate in uscita per conto degli utenti per cui hanno autorizzazioni delegate. Per altre informazioni, vedere [Condividere una linea telefonica con un delegato.](https://support.office.com/article/share-a-phone-line-with-a-delegate-16307929-a51f-43fc-8323-3b1bf115e5a8)
 
-### <a name="prevent-toll-bypass-and-send-calls-through-the-pstn"></a>Evitare il bypass a pedaggio e inviare chiamate tramite PSTN 
+### <a name="prevent-toll-bypass-and-send-calls-through-the-pstn"></a>Evitare il bypass a pedaggio e inviare chiamate tramite PSTN
 
 Se si imposta questa opzione **su Attivata,** le chiamate verranno inviate tramite PSTN e verranno sostenute spese invece di inviarle tramite la rete e ignorare i pedaggi.
 
 ### <a name="busy-on-busy-is-available-when-in-a-call"></a>Occupato in caso di disponibilità è disponibile durante una chiamata
 
-Occupato (Opzioni occupato) consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata messa in attesa. Le chiamate nuove o in arrivo possono essere rifiutate con un segnale di occupato o instradate di conseguenza alle impostazioni senza risposta dell'utente. È possibile abilitare le opzioni di disponibilità a livello di tenant o a livello di utente. Indipendentemente dal modo in cui vengono configurate le opzioni di occupato, gli utenti di una chiamata o di una conferenza o quelli con una chiamata in attesa non possono avviare nuove chiamate o conferenze. Questa impostazione è disabilitata per impostazione predefinita.
+Occupato (Opzioni occupato) consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata messa in attesa. Le chiamate nuove o in arrivo possono essere rifiutate con un segnale di occupato o instradate di conseguenza alle impostazioni senza risposta dell'utente. È possibile abilitare le opzioni di disponibilità a livello di tenant o a livello di utente. Indipendentemente dal modo in cui vengono configurate le opzioni di disponibilità, gli utenti di una chiamata o di una conferenza o quelli con una chiamata in attesa non possono avviare nuove chiamate o conferenze. Questa impostazione è disabilitata per impostazione predefinita.
 
 ### <a name="web-pstn-calling"></a>Chiamate PSTN Web
 
-Questa impostazione consente agli utenti di chiamare i numeri PSTN usando Teams web client.
+Questa impostazione consente agli utenti di chiamare numeri PSTN usando Teams web client.
 
 ### <a name="incoming-meeting-invites-are-automatically-answered"></a>Agli inviti alle riunioni in arrivo viene automaticamente risposto
 
@@ -111,4 +111,4 @@ Questa impostazione consente di attivare o disattivare il blocco della musica qu
 
 [Set-CSTeamsCallingPolicy](/powershell/module/skype/set-csteamscallingpolicy)
 
-[Assegnare i criteri agli utenti in Teams](assign-policies.md)
+[Assegnare i criteri agli utenti in Teams](policy-assignment-overview.md)
