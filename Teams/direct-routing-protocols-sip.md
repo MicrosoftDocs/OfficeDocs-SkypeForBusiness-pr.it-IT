@@ -17,12 +17,12 @@ f1.keywords:
 description: Protocolli di routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e0b4f3c19ed82362a066044ff9dd1c695b6690e2
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 01748c0e344cbadf2d771d2ab4bf6ad1f9b14dfb
+ms.sourcegitcommit: 813f1e44bd094bd997dd7423cda7e685ff61498f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58729675"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "60633522"
 ---
 # <a name="direct-routing---sip-protocol"></a>Routing diretto - Protocollo SIP
 
@@ -30,7 +30,7 @@ Questo articolo descrive in che modo Il routing diretto implementa il protocollo
 
 ## <a name="processing-the-incoming-request-finding-the-tenant-and-user"></a>Elaborazione della richiesta in arrivo: ricerca del tenant e dell'utente
 
-Prima di elaborare una chiamata in arrivo o in uscita, i messaggi OPTIONS vengono s scambiati tra il proxy SIP e il servizio SBC. Questi messaggi OPTIONS consentono al proxy SIP di fornire le funzionalità consentite a SBC. È importante che la negoziazione OPTIONS sia riuscita (risposta 200OK), consentendo un'ulteriore comunicazione tra SBC e proxy SIP per stabilire le chiamate. Le intestazioni SIP in un messaggio OPTIONS al proxy SIP sono fornite come esempio di seguito:
+Prima che sia possibile elaborare una chiamata in arrivo o in uscita, i messaggi OPTIONS vengono s scambiati tra il proxy SIP e il servizio SBC. Questi messaggi OPTIONS consentono al proxy SIP di fornire le funzionalità consentite a SBC. È importante che la negoziazione OPTIONS sia riuscita (risposta 200OK), consentendo un'ulteriore comunicazione tra SBC e proxy SIP per stabilire le chiamate. Le intestazioni SIP in un messaggio OPTIONS al proxy SIP sono fornite come esempio di seguito:
 
 | Nome parametro | Esempio del valore | 
 | :---------------------  |:---------------------- |
@@ -56,7 +56,7 @@ Di seguito è riportato un esempio del messaggio Invito SIP in una chiamata in a
 | Request-URI | INVITA sip:+18338006777@sip.pstnhub.microsoft.com SIP /2.0 |
 | Tramite intestazione | Via: SIP/2.0/TLS sbc1.adatum.biz:5058;alias;branch=z9hG4bKac2121518978 | 
 | Max-Forwards intestazione | Max-Forwards:68 |
-| Da intestazione | Da intestazione da: <sip:7168712781@sbc1.adatum.biz;transport=udp;tag=1c747237679 |
+| Da intestazione | Da intestazione da: <sip:+17168712781@sbc1.adatum.biz;transport=udp;tag=1c747237679 |
 | A intestazione | A: sip:+183338006777@sbc1.adatum.biz | 
 | Intestazione CSeq | CSeq: 1 INVITA | 
 | Intestazione contatto | Contatto: <sip: 68712781@sbc1.adatum.biz:5058;transport=tls> | 
@@ -101,7 +101,7 @@ Questo nome (FQDN) deve essere presente anche nei campi Nome comune o Nome alter
 
 Il supporto per i caratteri jolly è descritto in [RFC 2818, sezione 3.1.](https://tools.ietf.org/html/rfc2818#section-3.1) In particolare:
 
-*"I nomi possono contenere il carattere jolly che viene considerato corrispondente a qualsiasi singolo componente del \* nome di dominio o frammento di componente. Ad esempio, .a.com corrisponde foo.a.com ma non bar.foo.a.com. f .com corrisponde foo.com \* \* ma non bar.com".*
+*"I nomi possono contenere il carattere jolly che viene considerato corrispondente a qualsiasi singolo componente del \* nome di dominio o frammento di componente. Ad esempio, \* .a.com corrisponde foo.a.com ma non bar.foo.a.com. f .com corrisponde foo.com \* ma non bar.com".*
 
 Se più valori nell'intestazione Contatto presentata in un messaggio SIP vengono inviati dal servizio SBC, viene usata solo la parte FQDN del primo valore dell'intestazione Contatto.
 
@@ -116,12 +116,21 @@ Attualmente il numero di telefono deve contenere un segno più (+), come illustr
 ```console
 INVITE sip:+18338006777@sip.pstnhub.microsoft.com SIP /2.0
 ```
+#### <a name="from-header"></a>Da intestazione
+
+Per tutte le chiamate in arrivo, l'intestazione Da viene usata per abbinare il numero di telefono del chiamante all'elenco dei numeri di telefono bloccati del chiamato.
+
+Il numero di telefono deve contenere un segno + come illustrato nell'esempio seguente.
+
+```console
+From: <sip:+17168712781@sbc1.adatum.biz;transport=udp;tag=1c747237679
+```
 
 ## <a name="contact-and-record-route-headers-considerations"></a>Considerazioni sulle intestazioni Record-Route contatti
 
 Il proxy SIP deve calcolare l'FQDN dell'hop successivo per le nuove transazioni client nella finestra di dialogo , ad esempio Bye o Re-Invite, e per rispondere alle opzioni SIP. Vengono usati contatti o Record-Route contatti. 
 
-In base a [RFC 3261, sezione 8.1.1.8,](https://tools.ietf.org/html/rfc3261#section-8.1.1.8)l'intestazione contatto è obbligatoria in qualsiasi richiesta che può comportare una nuova finestra di dialogo. La Record-Route è necessaria solo se un proxy vuole mantenere il percorso delle richieste future in una finestra di dialogo. Se un SBC proxy è in uso con Ottimizzazione multimediale locale per il routing [diretto,](./direct-routing-media-optimization.md)sarà necessario configurare una route di record perché il proxy SBC deve rimanere nella route. 
+In base a [RFC 3261, sezione 8.1.1.8,](https://tools.ietf.org/html/rfc3261#section-8.1.1.8)l'intestazione contatto è obbligatoria in qualsiasi richiesta che può comportare una nuova finestra di dialogo. Il Record-Route è necessario solo se un proxy vuole mantenere il percorso delle richieste future in una finestra di dialogo. Se un SBC proxy è in uso con Ottimizzazione multimediale locale per il routing [diretto,](./direct-routing-media-optimization.md)sarà necessario configurare una route di record perché il proxy SBC deve rimanere nella route. 
 
 Microsoft consiglia di usare solo l'intestazione Contatto se non viene usato un SBC proxy:
 
@@ -131,7 +140,7 @@ Microsoft consiglia di usare solo l'intestazione Contatto se non viene usato un 
 
 Per calcolare l'hop successivo, il proxy SIP usa:
 
-- Priorità 1. Record-Route di primo livello. Se il nome di Record-Route di primo livello contiene il nome FQDN, viene usato il nome FQDN per stabilire la connessione in uscita nella finestra di dialogo.
+- Priorità 1. Record-Route di primo livello. Se il nome di Record-Route contiene il nome FQDN, il nome FQDN viene usato per stabilire la connessione in uscita nella finestra di dialogo.
 
 - Priorità 2. Intestazione del contatto. Se Record-Route non esiste, il proxy SIP cerca il valore dell'intestazione Contatto per stabilire la connessione in uscita. Questa è la configurazione consigliata.
 
@@ -311,17 +320,17 @@ Microsoft consiglia di applicare sempre il parametro user=phone per semplificare
 
 ## <a name="history-info-header"></a>History-Info intestazione
 
-L'intestazione History-Info viene usata per il retargeting delle richieste SIP e "fornisce un meccanismo standard per l'acquisizione delle informazioni sulla cronologia delle richieste per consentire un'ampia gamma di servizi per le reti e gli utenti finali". Per altre informazioni, vedere [RFC 4244 – Sezione 1.1.](http://www.ietf.org/rfc/rfc4244.txt) Per Telefono Microsoft sistema, questa intestazione viene usata negli scenari di simulring e inoltro di chiamata.  
+L'intestazione History-Info viene usata per il retargeting delle richieste SIP e "fornisce un meccanismo standard per l'acquisizione delle informazioni della cronologia delle richieste per consentire un'ampia gamma di servizi per le reti e gli utenti finali". Per altre informazioni, vedere [RFC 4244 – Sezione 1.1.](http://www.ietf.org/rfc/rfc4244.txt) Per Telefono Microsoft sistema, questa intestazione viene usata negli scenari di simulring e inoltro di chiamata.  
 
-Se si invia, la History-Info è abilitata nel modo seguente:
+Se l'invio viene History-Info, l'opzione è abilitata nel modo seguente:
 
-- Il proxy SIP inserirà un parametro contenente il numero di telefono associato nelle singole voci History-Info che costituiscono l'intestazione History-Info messaggio inviato al controller PSTN.  Usando solo le voci che hanno il parametro del numero di telefono, il controller PSTN ricostruirà una nuova intestazione History-Info e la passerà al provider trunk SIP tramite proxy SIP.
+- Il proxy SIP inserirà un parametro contenente il numero di telefono associato nelle singole voci History-Info che costituiscono l'intestazione History-Info messaggio inviato al controller PSTN.  Usando solo le voci che hanno il parametro numero di telefono, il controller PSTN ricostruirà una nuova intestazione History-Info e la passerà al provider trunk SIP tramite proxy SIP.
 
 - History-Info'intestazione verrà aggiunta per i casi simultanei di squillo e inoltro di chiamata.
 
 - History-Info'intestazione non verrà aggiunta per i casi di trasferimento di chiamata.
 
-- Una singola voce della cronologia nell'intestazione History-Info ricostruito avrà il parametro del numero di telefono fornito insieme al nome fqdn (sip.pstnhub.microsoft.com) del routing diretto impostato come parte host dell'URI. nell'URI SIP verrà aggiunto un parametro "utente=telefono".  Tutti gli altri parametri associati all'intestazione History-Info originale, ad eccezione dei parametri di contesto del telefono, verranno passati nell'intestazione History-Info telefono.  
+- Una singola voce della cronologia nell'intestazione History-Info ricostruito avrà il parametro del numero di telefono fornito in combinazione con il nome di dominio completo (sip.pstnhub.microsoft.com) del routing diretto impostato come parte host dell'URI. nell'URI SIP verrà aggiunto un parametro "utente=telefono".  Tutti gli altri parametri associati all'intestazione History-Info chiamata originale, ad eccezione dei parametri di contesto del telefono, verranno passati nell'intestazione History-Info telefono.  
 
   > [!NOTE]
   > Le voci private (come determinato dai meccanismi definiti nella Sezione 3.3 di RFC 4244) verranno inoltrate così come il provider trunk SIP è un peer attendibile.
@@ -364,8 +373,8 @@ SBC deve supportare i riavvii ICE come descritto in [RFC 5245, sezione 9.1.1.1.]
 
 Il riavvio in Direct Routing viene implementato in base ai paragrafi seguenti della RFC:
 
-*Per riavviare ICE, un agente DEVE modificare sia ice-pwd che ice-ufrag per il flusso multimediale in un'offerta.  Si noti che è consentito usare un attributo a livello di sessione in un'offerta, ma fornire lo stesso ice-pwd o ice-ufrag come attributo a livello di supporto in un'offerta successiva.  Non si tratta di una modifica della password, ma solo di una modifica della relativa rappresentazione e non causa un riavvio ICE.*
+*Per riavviare ICE, un agente DEVE modificare sia ice-pwd che ice-ufrag per il flusso multimediale in un'offerta.  Si noti che è consentito usare un attributo a livello di sessione in un'offerta, ma fornire lo stesso ice-pwd o ice-ufrag come attributo a livello di media in un'offerta successiva.  Non si tratta di una modifica della password, ma solo di una modifica della relativa rappresentazione e non causa un riavvio ICE.*
 
 *Un agente imposta il resto dei campi nel file SDP per questo flusso multimediale come in un'offerta iniziale di questo flusso multimediale (vedere la Sezione 4.3).  Di conseguenza, l'insieme di candidati PUÒ includere alcuni, nessuno o tutti i candidati precedenti per tale flusso e PUÒ includere un set completamente nuovo di candidati raccolti come descritto nella sezione 4.1.1.*
 
-Se la chiamata è stata inizialmente stabilita con il bypass multimediale e la chiamata viene trasferita a un client Skype for Business, Direct Routing deve inserire un processore multimediale, perché il routing diretto non può essere usato con un client Skype for Business con bypass multimediale. Direct Routing avvia il processo di riavvio ice modificando ice-pwd e ice-ufrag e offrendo nuovi media candidate in un rinvio.
+Se la chiamata è stata inizialmente stabilita con il bypass multimediale e la chiamata viene trasferita a un client di Skype for Business, Direct Routing deve inserire un processore multimediale, perché il routing diretto non può essere usato con un client Skype for Business con bypass multimediale. Direct Routing avvia il processo di riavvio ice modificando ice-pwd e ice-ufrag e offrendo nuovi media candidate in un rinvio.

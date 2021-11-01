@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1f51c262e26613cf29a7dd2883afbf1cc6871b26
-ms.sourcegitcommit: d23185cf6caeeeb055c36609e7c788a2b2e8d07d
+ms.openlocfilehash: a22ced459a9e014b92a7141a224ea20d5f7022d2
+ms.sourcegitcommit: 813f1e44bd094bd997dd7423cda7e685ff61498f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60367518"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "60633512"
 ---
 # <a name="get-started-with-team-templates-in-the-teams-admin-center"></a>Introduzione ai modelli di team nell'interfaccia Teams di amministrazione
 
@@ -41,7 +41,7 @@ Un modello di team in Microsoft Teams è una definizione della struttura di un t
 Questo articolo offre una panoramica dell'uso dei modelli di team nell'Teams di amministrazione. Verranno fornite informazioni sulle proprietà supportate nei modelli, sui modelli predefiniti forniti, sui limiti delle dimensioni dei modelli, su come creare e gestire i modelli e altro ancora.
 
 > [!NOTE]
-> Gli utenti possono [creare team da modelli di team predefiniti](https://support.microsoft.com/office/create-a-team-from-a-template-a90c30f3-9940-4897-ab5b-988e69e4cd9c) o personalizzati nell'app Teams team. Gli sviluppatori possono anche creare team a livello di programmazione da modelli di team predefiniti usando Microsoft Graph. Per altre informazioni, vedere [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md).
+> Gli utenti possono [creare team da modelli di team predefiniti](https://support.microsoft.com/office/create-a-team-from-a-template-a90c30f3-9940-4897-ab5b-988e69e4cd9c) o personalizzati nell Teams app. Gli sviluppatori possono anche creare team a livello di programmazione da modelli di team predefiniti usando Microsoft Graph. Per altre informazioni, vedere [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md).
 
 ## <a name="team-template-capabilities"></a>Funzionalità dei modelli di team
 
@@ -82,6 +82,11 @@ Ecco i modelli di team predefiniti disponibili nell'Teams di amministrazione. I 
 |Organizzare un negozio| `com.microsoft.teams.template.retailStore` |Canali: <ul><li>Generale<li>Passaggio di consegne del turno</li><li>Conformità dello Store</li><li>Apprendimento</li></ul> App: <ul><li>Wiki</li><li>Attività</li><li>Turni</li><li>Ispezione</li></ul>|
 |Vendita al dettaglio per i responsabili| `com.microsoft.teams.template.retailManagerCollaboration` |Canali: <ul><li>Generale<li>Operazioni</li><li>Apprendimento</li></ul> App: <ul><li>Wiki</li><li>Attività</li><li>Ispezione</li></ul>|
 |Qualità e sicurezza |`com.microsoft.teams.template.QualitySafety`|Canali: <ul><li>Generale<li>Annunci</li><li>Leadership</li><li>Manutenzione</li><li>Linea di produzione 1</li><li>Linea di produzione 2</li><li>Linea di produzione 3</li><li>Salute e sicurezza</li><li>Formazione</li><li>Elementi divertenti</li></ul> App: <ul><li>Wiki</li><li>Attività</li> <li>Segnalazione dei problemi</li> <li>Ispezione</li> </ul>|
+|Gestire i volontari| `com.microsoft.teams.template.ManageVolunteers` |Canali: <ul><li>Generale<li>Annunci</li><li>Reporting</li><li>Gestione dei volontari</li><li>Opportunità di impegno</li><li>Onboarding volontario</li></ul> App: <ul><li>Sito Web</li><li>YouTube</li><li>Power BI</li><li>Power Apps</li><li>Attività</li><li>SharePoint</li><li>OneNote</li></ul>|
+||||
+
+&sup1; App aggiunta al canale come scheda.
+
 
 ### <a name="team-templates-by-category-and-industry"></a>Modelli di team per categoria e settore
 
@@ -92,6 +97,7 @@ Per altre informazioni su come usare i modelli predefiniti del settore, vedere:
 - [Modelli di team per enti pubblici](government-teams-templates-in-the-admin-console.md)
 - [Modelli del team sanitario](expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md)
 - [Modelli di team di produzione](manufacturing-teams-templates-in-the-admin-console.md)
+- [Modelli di team per organizzazioni no profit](team-templates-nonprofit.md)
 - [Modelli di team di vendita al dettaglio](retail-teams-templates-in-the-admin-console.md)
 
 ## <a name="team-template-size-limits"></a>Limiti per le dimensioni del modello di team
@@ -108,7 +114,7 @@ I modelli sono limitati a un numero specifico di canali, schede e app.
 |App per modello | 50|
 |||
 
-Per altre informazioni, vedere [Limiti e specifiche di Teams.](limits-specifications-teams.md)
+Per altre informazioni, vedere [Limiti e specifiche di Teams](limits-specifications-teams.md).
 
 ## <a name="manage-team-templates"></a>Gestire i modelli di team
 
@@ -116,7 +122,7 @@ Per altre informazioni, vedere [Limiti e specifiche di Teams.](limits-specificat
 
 #### <a name="view-team-templates"></a>Visualizzare i modelli di team
 
-Per visualizzare i modelli di team, nel riquadro di spostamento sinistro dell Teams di amministrazione passare **a** modelli Teams  >  **team.** Selezionare un modello per visualizzare altri dettagli, inclusi i canali e le app in esso contenuti.
+Per visualizzare i modelli di team, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare **a** modelli Teams  >  **team.** Selezionare un modello per visualizzare altri dettagli, inclusi i canali e le app in esso contenuti.
 
 #### <a name="create-your-own-team-templates"></a>Creare modelli di team personalizzati
 
