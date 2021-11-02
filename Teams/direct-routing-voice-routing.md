@@ -1,5 +1,5 @@
 ---
-title: Configurare il routing vocale per il routing diretto
+title: Configurare il routing delle chiamate per l'instradamento diretto
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -15,26 +15,26 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Informazioni su come configurare il routing vocale con Telefono Microsoft routing diretto di sistema.
-ms.openlocfilehash: 7d02eb6a2eb1546e11693e8e2475b1ed6e2b7685
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: Informazioni su come configurare il routing delle chiamate con Microsoft Direct Routing.
+ms.openlocfilehash: cb8f33d8e5e2ea3e3e14ac47b57d9b5920f2bb2a
+ms.sourcegitcommit: 197debacdcd1f7902f6e16940ef9bec8b07641af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58727135"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60635045"
 ---
-# <a name="configure-voice-routing-for-direct-routing"></a>Configurare il routing vocale per il routing diretto
+# <a name="configure-call-routing-for-direct-routing"></a>Configurare il routing delle chiamate per l'instradamento diretto
 
-Questo articolo descrive come configurare il routing vocale per Sistema telefonico routing diretto.  Questo è il passaggio 3 della procedura seguente per la configurazione del routing diretto:
+Questo articolo descrive come configurare il routing delle chiamate per il routing diretto. Questo è il passaggio 3 della procedura seguente per la configurazione del routing diretto:
 
 - Passaggio 1. [Connessione SBC con Telefono Microsoft sistema e convalidare la connessione](direct-routing-connect-the-sbc.md) 
 - Passaggio 2. [Abilitare gli utenti per routing diretto, segreteria telefonica e segreteria telefonica](direct-routing-enable-users.md)
-- **Passaggio 3. Configurare il routing vocale** (questo articolo)
+- **Passaggio 3. Configurare il routing delle chiamate** (questo articolo)
 - Passaggio 4. [Tradurre i numeri in un formato alternativo](direct-routing-translate-numbers.md) 
 
 Per informazioni su tutti i passaggi necessari per configurare il routing diretto, vedere [Configurare il routing diretto.](direct-routing-configure.md)
 
-## <a name="voice-routing-overview"></a>Panoramica del routing vocale
+## <a name="call-routing-overview"></a>Panoramica del routing delle chiamate
 
 Telefono Microsoft Il sistema ha un meccanismo di routing che consente di inviare una chiamata a uno specifico Session Border Controller (SBC) in base a: 
 
@@ -43,9 +43,9 @@ Telefono Microsoft Il sistema ha un meccanismo di routing che consente di inviar
  
 Gli SBC possono essere designati come attivi e di backup. Quando la SBC configurata come attiva non è disponibile per un percorso di chiamata specifico, la chiamata verrà instradata a un SBC di backup.
  
-Il routing vocale è costituito da elementi seguenti: 
+L'instradamento delle chiamate è costituito da elementi seguenti: 
 
-- **Criteri di routing vocale:** contenitore per gli utilizzi PSTN, che può essere assegnato a un utente o a più utenti. 
+- **Criterio di routing delle chiamate:** detto anche criterio di routing vocale. Contenitore per gli utilizzi PSTN, che può essere assegnato a un utente o a più utenti. 
 
 - **Utilizzi PSTN:** contenitore per route vocali e utilizzi PSTN, che può essere condiviso in criteri di routing vocale diversi. 
 
@@ -102,7 +102,7 @@ L'esempio seguente mostra come:
 3. Creare un criterio di routing vocale.
 4. Assegnare il criterio a un utente denominato Spencer Low.
 
-È possibile usare [l'interfaccia Microsoft Teams di amministrazione](#admincenterexample1) o [PowerShell](#powershellexample1) per eseguire questa procedura.
+È possibile usare [l'interfaccia Microsoft Teams o](#admincenterexample1) [PowerShell](#powershellexample1) per eseguire questa procedura.
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 <a name="admincenterexample1"></a>
@@ -116,7 +116,7 @@ L'esempio seguente mostra come:
 
 La procedura seguente descrive come creare una route vocale. Usare questa procedura per creare le tre route vocali denominate Redmond 1, Redmond 2 e Other +1 per questo esempio usando le impostazioni descritte nella tabella precedente.
 
-1. Nel riquadro di spostamento sinistro dell Microsoft Teams di amministrazione, passare a **Routing**  >  **vocale diretto** e quindi selezionare la scheda **Route** vocali.
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Routing** vocale diretto e quindi  >  selezionare la **scheda Route** vocali.
 2. Fare **clic su** Aggiungi e quindi immettere un nome e una descrizione per la route vocale.
 3. Impostare la priorità e specificare il modello di numero composto.
 4. Per registrare un SBC con la route vocale, in SBC registrati **(facoltativo)** fare clic su Aggiungi **SBC,** selezionare gli SBC da registrare e quindi fare clic su **Applica.**
@@ -125,7 +125,7 @@ La procedura seguente descrive come creare una route vocale. Usare questa proced
 
 #### <a name="step-3-create-a-voice-routing-policy-named-us-only-and-add-the-us-and-canada-pstn-usage-to-the-policy"></a>Passaggio 3: Creare un criterio di routing vocale denominato "Solo Stati Uniti" e aggiungere l'utilizzo PSTN "Stati Uniti e Canada" al criterio
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare **a** Criteri di routing vocale  >  e quindi fare clic su **Aggiungi.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare **a** Criteri  >  **di routing vocale** e quindi fare clic su **Aggiungi.**
 2. Digitare **Solo stati Uniti** come nome e aggiungere una descrizione.
 3. In **Record di utilizzo PSTN** fare clic su Aggiungi utilizzo **PSTN,** selezionare il record di utilizzo PSTN "Stati Uniti e Canada" e quindi fare clic su **Applica.**
 4. Fare clic su **Salva**.
@@ -181,7 +181,7 @@ L'esempio seguente mostra il risultato dell'esecuzione del comando `(Get-CSOnlin
 
 #### <a name="step-2-create-three-voice-routes-redmond-1-redmond-2-and-other-1"></a>Passaggio 2: Creare tre route vocali (Redmond 1, Redmond 2 e Other +1)
 
-Per creare il percorso "Redmond 1", in una sessione di PowerShell in Skype for Business Online immettere:
+Per creare il percorso "Redmond 1", in una sessione di PowerShell in Skype for Business Online, immettere:
 
 ```PowerShell
 New-CsOnlineVoiceRoute -Identity "Redmond 1" -NumberPattern "^\+1(425|206)
@@ -322,7 +322,7 @@ La tabella seguente riepiloga le designazioni di utilizzo e le route vocali dei 
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Stati Uniti e Canada|"Redmond 1"|^\\+1(425 \| 206)(\d {7} )$|1|sbc1.contoso.biz<br/>sbc2.contoso.biz|Percorso attivo per i numeri dei callee +1 425 XXX XX XX o +1 206 XXX XX XX|
 |Stati Uniti e Canada|"Redmond 2"|^\\+1(425 \| 206)(\d {7} )$|2|sbc3.contoso.biz<br/>sbc4.contoso.biz|Percorso di backup per i numeri dei callee +1 425 XXX XX XX o +1 206 XXX XX XX|
-|Stati Uniti e Canada|"Altro +1"|^\\+1(\d {10} )$|3|sbc5.contoso.biz<br/>sbc6.contoso.biz|Percorso per i numeri dei callee +1 XXX XXX XX XX (tranne +1 425 XXX XX XX o +1 206 XXX XX XX)|
+|Stati Uniti e Canada|"Altro +1"|^\\+1(\d {10} )$|3|sbc5.contoso.biz<br/>sbc6.contoso.biz|Percorso per i numeri dei callee +1 XXX XXX XX XX (ad eccezione di +1 425 XXX XX XX o +1 206 XXX XX XX)|
 |Internazionale|Internazionale|\d+|4|sbc2.contoso.biz<br/>sbc5.contoso.biz|Percorso per qualsiasi schema di numeri |
 
   > [!NOTE]
@@ -350,7 +350,7 @@ L'esempio seguente mostra come:
 
 #### <a name="step-2-create-the-international-voice-route"></a>Passaggio 2: Creare la route vocale "Internazionale"
 
-1. Nel riquadro di spostamento sinistro dell Microsoft Teams di amministrazione, passare a **Routing**  >  **vocale diretto** e quindi selezionare la scheda **Route** vocali.
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Routing** vocale diretto e quindi  >  selezionare la **scheda Route** vocali.
 2. Fare **clic su** Aggiungi, immettere "Internazionale" come nome e quindi aggiungere la descrizione.
 3. Impostare la priorità su 4 e quindi impostare lo schema di numeri composto su \d+.
 4. In **SBC registrati (facoltativo)** fare clic su **Aggiungi SBC,** selezionare sbc2.contoso.biz e sbc5.contoso.biz e quindi fare clic su **Applica**.
@@ -361,7 +361,7 @@ L'esempio seguente mostra come:
 
 L'utilizzo PSTN "Stati Uniti e Canada" viene riutilizzato in questo criterio di routing vocale per mantenere una gestione speciale per le chiamate al numero "+1 425 XXX XX XX" e "+1 206 XXX XX XX" come chiamate locali o locali.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare **a** Criteri di routing vocale  >  e quindi fare clic su **Aggiungi.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare **a** Criteri  >  **di routing vocale** e quindi fare clic su **Aggiungi.**
 2. Digitare **No Restrictions** come nome e aggiungere una descrizione.
 3. In **Record di utilizzo PSTN** fare clic su Aggiungi utilizzo **PSTN,** selezionare il record di utilizzo PSTN "Stati Uniti e Canada" e quindi selezionare il record di utilizzo PSTN "Internazionale". Fare clic **su Applica**.
 
@@ -414,7 +414,7 @@ Name                      : International
 
 #### <a name="step-3-create-a-voice-routing-policy-named-no-restrictions"></a>Passaggio 3: Creare un criterio di routing vocale denominato "Nessuna restrizione"
 
-L'utilizzo PSTN "Redmond 1" e "Redmond" vengono riutilizzati in questo criterio di routing vocale per mantenere una gestione speciale per le chiamate ai numeri "+1 425 XXX XX XX" e "+1 206 XXX XX XX" come chiamate locali o locali.
+L'utilizzo PSTN "Redmond 1" e "Redmond" vengono riutilizzati in questo criterio di routing vocale per mantenere una gestione speciale per le chiamate al numero "+1 425 XXX XX XX" e "+1 206 XXX XX XX" come chiamate locali o locali.
 
   ```PowerShell
   New-CsOnlineVoiceRoutingPolicy "No Restrictions" -OnlinePstnUsages "US and Canada", "International"
@@ -459,7 +459,7 @@ OnlineVoiceRoutingPolicy
 No Restrictions
 ```
 
-Il risultato è che i criteri vocali applicati alle chiamate di John Woods sono senza restrizioni e seguiranno la logica del routing delle chiamate disponibile per le chiamate negli Stati Uniti, in Canada e in Internazionali.
+Il risultato è che il criterio vocale applicato alle chiamate di John Woods è senza restrizioni e seguirà la logica del routing delle chiamate disponibile per le chiamate negli Stati Uniti, in Canada e in Internazionali.
 
 ## <a name="see-also"></a>Vedere anche
 

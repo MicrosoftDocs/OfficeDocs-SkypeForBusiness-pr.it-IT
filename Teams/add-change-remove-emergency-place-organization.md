@@ -16,18 +16,24 @@ appliesto:
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: Informazioni su come aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza per l'organizzazione nell'Microsoft Teams di amministrazione.
+description: Informazioni su come aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza per l'organizzazione.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 98135be7b74583ad01718d19796889bdc9a467d1
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: fec188634377b04cb4149d3680acc07eef797149
+ms.sourcegitcommit: 197debacdcd1f7902f6e16940ef9bec8b07641af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60537217"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60634875"
 ---
 # <a name="add-change-or-remove-a-place-for-an-emergency-location-in-your-organization"></a>Aggiungere, modificare o rimuovere un luogo per una posizione di emergenza per l'organizzazione
 
-A seconda del numero di posizioni fisiche dell'organizzazione, è possibile aggiungere luoghi per edifici, piani e uffici per creare una posizione più specifica per gli interventi di emergenza. Per [altre informazioni, vedere](what-are-emergency-locations-addresses-and-call-routing.md) Gestire le chiamate di emergenza.
+A seconda del numero di posizioni fisiche  dell'organizzazione, è possibile aggiungere luoghi per edifici, piani e uffici per creare una posizione più specifica per gli interventi di emergenza.
+
+A seconda dell'opzione di connettività PSTN, tuttavia, la modalità di gestione delle posizioni e dei requisiti di posizione per gli interventi di emergenza può variare. Per altre informazioni, vedere [Gestire le chiamate di emergenza.](what-are-emergency-locations-addresses-and-call-routing.md)
+
+Questo articolo descrive come aggiungere, modificare  o rimuovere una posizione per gli interventi di emergenza per l'organizzazione.
+
+Questo articolo si applica a Piani per chiamate Microsoft, Connessione con operatore e Routing diretto.
 
 È possibile gestire le posizioni di emergenza per l'organizzazione nell'Microsoft Teams di amministrazione o usando PowerShell.
   
@@ -71,6 +77,7 @@ Vedere [Remove-CsOnlineLisLocation](/powershell/module/skype/remove-csonlinelisl
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Aggiungere, modificare o rimuovere un luogo per una posizione di emergenza per l'organizzazione](add-change-remove-emergency-place-organization.md)
+- [Gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md)
+- [Aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-remove-emergency-location-organization.md)
 - [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization)
 - [Termini e condizioni per le chiamate al numero di emergenza](./emergency-calling-terms-and-conditions.md)

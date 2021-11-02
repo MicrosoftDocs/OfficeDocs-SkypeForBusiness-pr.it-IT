@@ -20,18 +20,18 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare Telefono Microsoft Routing diretto di sistema per connettere l'infrastruttura di telefonia locale a Microsoft Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f2e0277afeb7fefc3715aef00138fab3b3ff62bc
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 05e3152c13b0cf6559964d3926d7c66e7cf376e8
+ms.sourcegitcommit: 197debacdcd1f7902f6e16940ef9bec8b07641af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58582360"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60634895"
 ---
 # <a name="configure-direct-routing"></a>Configurare Instradamento diretto
 
 Telefono Microsoft System Direct Routing consente di connettere l'infrastruttura di telefonia locale a Microsoft Teams. L'articolo elenca i passaggi di alto livello necessari per connettere un controller SBC (Session Border Controller) locale supportato al routing diretto e come configurare gli utenti di Teams per l'uso del routing diretto per connettersi alla rete PSTN (Public Switched Telephone Network). Questo articolo contiene collegamenti ad articoli associati per informazioni dettagliate.  
 
-Per informazioni sul fatto che il routing diretto sia la soluzione giusta per l'organizzazione, vedere Sistema telefonico [Routing diretto](direct-routing-landing-page.md). Per informazioni sui prerequisiti e sulla pianificazione della distribuzione, vedere [Pianificare il routing diretto.](direct-routing-plan.md)
+Per informazioni sul fatto che Il routing diretto sia la soluzione giusta per l'organizzazione, vedere Sistema telefonico [Routing diretto](direct-routing-landing-page.md). Per informazioni sui prerequisiti e sulla pianificazione della distribuzione, vedere [Pianificare il routing diretto.](direct-routing-plan.md)
 
 > [!Tip]
 > È anche possibile guardare la sessione seguente per informazioni sui vantaggi del routing diretto, su come pianificarla e su come distribuirla: Routing diretto [in Microsoft Teams](https://aka.ms/teams-direct-routing).
@@ -52,7 +52,7 @@ Per configurare Telefono Microsoft sistema e consentire agli utenti di usare Rou
 
 - **Passaggio 1.** [Connessione SBC con Telefono Microsoft sistema e convalidare la connessione](direct-routing-connect-the-sbc.md)
 - **Passaggio 2.** [Abilitare gli utenti per routing diretto, segreteria telefonica e segreteria telefonica](direct-routing-enable-users.md)
-- **Passaggio 3.** [Configurare il routing vocale](direct-routing-voice-routing.md)
+- **Passaggio 3.** [Configurare il routing delle chiamate](direct-routing-voice-routing.md)
 - **Passaggio 4.** [Tradurre i numeri in un formato alternativo](direct-routing-translate-numbers.md) 
 
 Se si sta configurando un SBC per più tenant, è anche necessario leggere Configurare un [SBC per più tenant.](direct-routing-sbc-multiple-tenants.md)
