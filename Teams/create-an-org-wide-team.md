@@ -8,7 +8,7 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
-description: Informazioni su come creare e gestire un team a livello di organizzazione in Teams per fornire un modo automatico a tutti gli utenti di un'organizzazione di piccole e medie dimensioni di collaborare.
+description: Informazioni su come creare e gestire un team a livello di organizzazione in Teams per fornire un modo automatico di collaborazione a tutti gli utenti di un'organizzazione di piccole e medie dimensioni.
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a3322c55e61fc674be6647b192aff86e4412975
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 058aa530508c03587eae3ff6a55e218bc109bbd2
+ms.sourcegitcommit: 1957a06d4bae3d42b4e3b6d4bd8ff2752a19d377
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728205"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60641176"
 ---
 # <a name="create-an-organization-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
@@ -49,7 +49,7 @@ I tipi di account seguenti non verranno aggiunti al team a livello di organizzaz
 Quando la directory dell'organizzazione viene aggiornata per includere nuovi utenti attivi o per disabilitare gli account degli utenti che non lavorano più nell'azienda, le modifiche vengono sincronizzate automaticamente e gli utenti vengono aggiunti o rimossi dal team. I membri del team non possono uscire da un team a livello di organizzazione. Il proprietario del team può aggiungere o rimuovere manualmente utenti, se necessario.
 
 > [!NOTE]
-> - Se l'opzione A  livello di organizzazione non è visualizzata quando si crea un team e si è un amministratore globale, è possibile che sia stato raggiunto il limite di cinque team a livello di organizzazione oppure che l'organizzazione abbia più del limite di dimensioni corrente di 10.000 membri. Contiamo di aumentare il limite in futuro. I team a livello di organizzazione non sono ancora disponibili per Teams per l'istruzione.
+> - Se l'opzione a  livello di organizzazione non è visualizzata quando si crea un team e si è un amministratore globale, è possibile che sia stato raggiunto il limite di cinque team a livello di organizzazione oppure che l'organizzazione abbia più del limite di dimensioni corrente di 10.000 membri. Contiamo di aumentare il limite in futuro. I team a livello di organizzazione non sono ancora disponibili per Teams per l'istruzione.
 > - Le chat room che non fanno parte di un elenco di chat room, apparecchiature e account delle risorse potrebbero essere aggiunte o sincronizzate con il team a livello di organizzazione. I proprietari del team possono rimuovere facilmente questi account dal team.
 > - Tutte le azioni del sistema per aggiungere o rimuovere membri sono pubblicate nel canale Generale. Inoltre, nel client di Teams sarà indicato che il canale ha nuove attività.
 > - Verrà creato automaticamente un team a livello di organizzazione per l'organizzazione se l'organizzazione non ha più di Teams e non ha più di 5.000 utenti. Il nome del team rifletterà il nome del tenant e avrà un canale Generale. Gli amministratori globali possono modificare questo team come qualsiasi altro team.
@@ -102,7 +102,7 @@ Per altre informazioni, vedere [Gestire gli utenti che possono creare gruppi.](/
 Se questa soluzione alternativa non è un'opzione, è possibile usare PowerShell per creare un team pubblico e aggiungere un amministratore globale come proprietario del team. Quindi, l'amministratore globale deve fare clic su **Altre opzioni** accanto al nome del team, fare clic su **Modifica team** e modificare la privacy in **A livello di organizzazione: tutti gli utenti dell'organizzazione verranno aggiunti automaticamente**. 
 
 > [!NOTE]
-> Solo i proprietari del team possono accedere **all'opzione** Modifica team e solo gli amministratori globali possono vedere **l'opzione a livello di** organizzazione.
+> Solo i proprietari del team possono accedere all'opzione **Modifica team** e solo gli amministratori globali possono vedere **l'opzione a livello di** organizzazione.
 
 ### <a name="is-there-a-way-to-convert-an-existing-team-to-an-organization-wide-team"></a>Esiste un modo per convertire un team esistente in un team a livello di organizzazione?
 

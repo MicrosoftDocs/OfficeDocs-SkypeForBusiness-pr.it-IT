@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2551d0de27bd945dfda1ba943462b33489d7cd42
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 6ba80c74e905fa80f42095afd7a524d202661f21
+ms.sourcegitcommit: 1957a06d4bae3d42b4e3b6d4bd8ff2752a19d377
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58733985"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60641196"
 ---
 # <a name="understand-teams-and-channels-in-microsoft-teams"></a>Informazioni su team e canali in Microsoft Teams
 
@@ -36,12 +36,12 @@ I concetti di team e canali sono fondamentali per un'implementazione sana e prod
 
 - I canali sono gli spazi di collaborazione all'interno di un team in cui viene eseguito il lavoro effettivo. 
 
-Per altre informazioni su team e canali, vedere Panoramica di team e canali [in Microsoft Teams](teams-channels-overview.md). Per indicazioni complete Teams sull'adozione dei Teams [sull'adozione.](https://aka.ms/teamstoolkit) Per altre informazioni sui gruppi Teams e Microsoft 365, vedere Microsoft 365 [Gruppi](office-365-groups.md) e Microsoft Teams e Altre informazioni [su Microsoft 365 gruppi.](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+Per altre informazioni su team e canali, vedere Panoramica [di team e](teams-channels-overview.md)canali in Microsoft Teams . Per indicazioni Teams sull'adozione dei Teams [sull'adozione.](https://aka.ms/teamstoolkit) Per altre informazioni sui gruppi Teams e Microsoft 365, vedere Microsoft 365 [Gruppi](office-365-groups.md) e Microsoft Teams e Altre informazioni su [Microsoft 365 gruppi.](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 
 | &nbsp; |&nbsp;  |
 |---------|---------|
-| Guarda questo breve video   | <iframe width="350" height="200" src="https://www.youtube.com/embed/hjJWtoaRJeE" frameborder="0" allowfullscreen></iframe>   |
+| Guarda questo breve video   | <iframe width="350" height="200" src="https://youtu.be/WkAVgNKn0hs" frameborder="0" allowfullscreen></iframe>   |
 
 
 
@@ -61,4 +61,4 @@ In un team dell'organizzazione (visualizzato a sinistra), potrebbero essere cond
   
 Nella fase [2](teams-adoption-phase2-experiment.md) dell'implementazione si lavora più alla struttura dei team.
 
-![Icona che rappresenta il passaggio successivo.](media/teams-adoption-next-icon.png) Successiva: [Creare i primi team](teams-adoption-your-first-teams.md)
+![Icona che descrive il passaggio successivo.](media/teams-adoption-next-icon.png) Successiva: [Creare i primi team](teams-adoption-your-first-teams.md)

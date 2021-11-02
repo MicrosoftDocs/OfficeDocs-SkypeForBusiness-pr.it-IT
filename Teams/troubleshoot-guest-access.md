@@ -17,12 +17,12 @@ f1.keywords:
 ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5b539116fb5e81156a56c5f73146b92eea898765
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c8d54e236583211c2a8169987bf03ceba756facf
+ms.sourcegitcommit: 1957a06d4bae3d42b4e3b6d4bd8ff2752a19d377
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58600931"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60641216"
 ---
 # <a name="troubleshoot-problems-with-guest-access-in-microsoft-teams"></a>Risolvere i problemi relativi all'accesso guest in Microsoft Teams
 
@@ -39,16 +39,12 @@ ms.locfileid: "58600931"
 L'accesso guest in Teams utilizza Azure Active Directory (Azure AD) Business to Business (B2B) e il relativo modello di licenza. L'accesso guest è incluso in tutti gli abbonamenti di Microsoft 365 Business Standard, Office 365 Enterprise e Office 365 Education. Non sono necessarie altre licenze di Microsoft 365 o Office 365.
 
 > [!NOTE]
-> Teams deve essere abilitato nel tenant di casa di un guest per poter accedere e usare Teams come guest in un altro tenant (risorsa).
+> Teams deve essere abilitato nel tenant home di un guest per poter accedere e usare Teams come guest in un altro tenant (risorsa).
 
 Se vengono visualizzati errori di licenza, leggere il modello di fatturazione per le identità esterne di [Azure AD](/azure/active-directory/external-identities/external-identities-pricing) per determinare i requisiti di licenza per soddisfare le proprie esigenze di accesso guest nell'organizzazione.
 
 - Le licenze guest vengono conteggiate rispetto all'organizzazione che invita: tenerlo presente quando si calcola il numero di licenze necessarie.
-- Le licenze vengono conteggiate in base all'organizzazione, indipendentemente dal fatto che gli invitati provengono da un'altra Microsoft 365 o che utilizzino i loro indirizzi di posta elettronica personali.
-
-## <a name="support-for-b2b-user-types"></a>Supporto per i tipi di utente B2B
-
-Attualmente, Teams prevede il supporto solo per i tipi di utenti guest Stato1 e Stato 2 [come definiti da Azure B2B](/azure/active-directory/b2b/user-properties).
+- Le licenze vengono conteggiate in base all'organizzazione, indipendentemente dal fatto che gli invitati provengono da un'altra Microsoft 365 o utilizzino i loro indirizzi di posta elettronica personali.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
