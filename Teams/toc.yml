@@ -945,7 +945,7 @@ items:
                     href: direct-routing-connect-the-sbc.md
                   - name: 'Passaggio 2: Abilitare gli utenti'
                     href: direct-routing-enable-users.md
-                  - name: 'Passaggio 3: Configurare il routing vocale'
+                  - name: 'Passaggio 3: Configurare il routing per le chiamate'
                     href: direct-routing-voice-routing.md
                   - name: 'Passaggio 4: Tradurre i numeri di telefono'
                     href: direct-routing-translate-numbers.md
@@ -953,7 +953,7 @@ items:
                     href: direct-routing-sbc-multiple-tenants.md
                   - name: Come usare i dispositivi analogici con l'instradamento diretto
                     href: direct-routing-analog-devices.md
-                  - name: Gestire i criteri di routing vocale
+                  - name: Gestire i criteri di routing delle chiamate
                     href: manage-voice-routing-policies.md
                   - name: Gestire le notifiche di chiamata
                     href: direct-routing-call-notifications.md
@@ -1077,7 +1077,7 @@ items:
                 href: emergency-calling-labels.md
           - name: Gestire i criteri delle chiamate di emergenza
             href: manage-emergency-calling-policies.md
-          - name: Gestire i criteri del routing vocale di emergenza per l'instradamento diretto
+          - name: Gestire i criteri del routing delle chiamate di emergenza per l’instradamento diretto
             href: manage-emergency-call-routing-policies.md
       - name: Gestire i criteri vocali e di chiamata in Teams
         href: voice-and-calling-policies.md
