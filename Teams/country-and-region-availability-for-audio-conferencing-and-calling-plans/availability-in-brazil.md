@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Brasile.
-ms.openlocfilehash: 68379b9c48ed70f590eb3d57a171a6af9f4042be
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 059876da21906264bc1961785b7cddcdc49dd132
+ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58609043"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60732737"
 ---
 # <a name="availability-in-brazil"></a>Disponibilità in Brasile
 
@@ -69,7 +69,7 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | <ul><li>Rio de Janeiro <li>  San Paolo <li>Altre città [su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)</ul> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | <ul><li>Rio de Janeiro <li>  San Paolo <li>Altre città [su richiesta](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)</ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    

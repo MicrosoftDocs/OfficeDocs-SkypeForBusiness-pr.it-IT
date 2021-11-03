@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Vietnam.
-ms.openlocfilehash: 029fa5629bd4d81b94b9aac29868222eef51dc1a
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8992019aa20a6c72dd16dd1b5d0588202e40ab1f
+ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58620672"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60733717"
 ---
 # <a name="availability-in-vietnam"></a>Disponibilità in Vietnam
 
@@ -69,8 +69,8 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul><li>Hanoi ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md))<li>Ho Chi Minh ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md))</ul>  <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul><li>Hanoi ([su richiesta](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md))<li>Ho Chi Minh ([su richiesta](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md))</ul>  <br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)) <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).

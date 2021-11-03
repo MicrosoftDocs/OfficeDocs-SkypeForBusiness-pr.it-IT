@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Polonia per Microsoft Teams.
-ms.openlocfilehash: 091b7e550257c8327535e06c281a89838278503c
-ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
+ms.openlocfilehash: 135b94d03989f2f70022d82ac64654a3c95f8d50
+ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942441"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60732667"
 ---
 # <a name="phone-number-management-for-poland"></a>Telefono gestione dei numeri per la Polonia
 
@@ -35,11 +35,11 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 | Cosa vuoi fare? | Scarica i moduli corretti |
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.  |In Polonia è possibile ottenere i numeri di telefono per l'organizzazione usando l'Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e contattando [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per la Polonia (v.1.0) (en-us)](<https://download.microsoft.com/download/a/1/3/a130f4bd-3d48-4918-aea2-62cc24874c78/New phone number request for Poland (v.1.0) (en-us).pdf>). <br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conosci il [cliente,](<https://download.microsoft.com/download/f/f/a/ffa2afce-f85a-44e7-be2b-f571f63b422d/Poland - Know Your Customer.pdf>)completarlo per intero e contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>Telefono i numeri verranno ordinati in blocchi di 10. Ai clienti verrà addebitato l'addebito solo per le licenze del piano chiamate sottoscritte.<br/><br/>I nuovi ordini possono richiedere da 1 a 12 settimane per compilare questo mercato a seconda che il numero di azioni sia presente nella specifica area geografica.|
-|Fai trasferire a noi i numeri di telefono.| Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Polonia (tutti i numeri) (v.1.0) (pl-pl)](<https://download.microsoft.com/download/f/e/1/fe1e6c18-d72c-4327-86c8-4cfb247c2c3f/Poland LOA.pdf>) <br/> <br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) <br/><br/>Il trasferimento di numeri in questo mercato può richiedere fino a tre settimane. Questi numeri non possono essere usati per le conferenze in questo momento.  |
-|Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il Service Desk PTSN per istruzioni sull'elenco](contact-pstn-service-desk.md) dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
-|Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
-|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.  |In Polonia è possibile ottenere i numeri di telefono per l'organizzazione usando l'Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per la Polonia (v.1.0) (en-us)](<https://download.microsoft.com/download/a/1/3/a130f4bd-3d48-4918-aea2-62cc24874c78/New phone number request for Poland (v.1.0) (en-us).pdf>). <br/><br/> Prima di poter assegnare i numeri di telefono, è necessario scaricare il modulo Conosci il [cliente,](<https://download.microsoft.com/download/f/f/a/ffa2afce-f85a-44e7-be2b-f571f63b422d/Poland - Know Your Customer.pdf>)completarlo per intero e contattare [il service desk TNS per istruzioni.](contact-tns-service-desk.md)<br/><br/>Telefono i numeri verranno ordinati in blocchi di 10. Ai clienti verrà addebitato l'addebito solo per le licenze del piano chiamate sottoscritte.<br/><br/>I nuovi ordini possono richiedere da 1 a 12 settimane per compilare questo mercato a seconda che il numero di azioni sia presente nella specifica area geografica.|
+|Fai trasferire a noi i numeri di telefono.| Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Polonia (tutti i numeri) (v.1.0) (pl-pl)](<https://download.microsoft.com/download/f/e/1/fe1e6c18-d72c-4327-86c8-4cfb247c2c3f/Poland LOA.pdf>) <br/> <br/>Compilarlo e [contattare il service desk TNS per istruzioni.](contact-tns-service-desk.md) <br/><br/>Il trasferimento di numeri in questo mercato può richiedere fino a tre settimane. Questi numeri non possono essere usati per le conferenze in questo momento.  |
+|Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il service desk TNS per istruzioni sull'elenco](contact-tns-service-desk.md) dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
+|Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il service desk TNS per istruzioni](contact-tns-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
+|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il Service Desk TNS per istruzioni.](contact-tns-service-desk.md) |
 
    
 ## <a name="related-topics"></a>Argomenti correlati

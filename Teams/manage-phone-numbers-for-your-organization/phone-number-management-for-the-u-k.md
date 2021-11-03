@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono nel Regno Unito per Microsoft Teams.
-ms.openlocfilehash: a5de05c71d333a593806dc26990783c41cf57739
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 151b2f764498d64bb32d258adf1f2b1e006f11e1
+ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58616212"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60733107"
 ---
 # <a name="phone-number-management-for-the-united-kingdom"></a>Telefono gestione dei numeri per il Regno Unito
 
@@ -36,11 +36,11 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica questo modulo. <br/> [Nuova richiesta di numero di telefono per il Regno Unito (v.5.0) (en-gb)](https://download.microsoft.com/download/e/e/9/ee9f629e-4f2b-41c3-8fa3-f206660f4db3/new-phone-number-request-for-the-united-kingdom-(v.5.0)-(en-gb).pdf) <br/><br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)  <br/> |
-|Fai trasferire a noi i numeri di telefono.  <br/> |Scarica questo modulo: <br/> [Lettera di autorizzazione (LOA) per il Regno Unito (tutti i numeri) (v.6.1) (en-us)](https://download.microsoft.com/download/4/3/7/43706e72-81e9-461e-afca-825dad4716f4/letter-of-authorization-(loa)-for-the-u.k.-(all-numbers)-(v.6.1)-(en-us).pdf) <br/> <br/> Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)  <br/> |
-|Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
-|Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
-|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica questo modulo. <br/> [Nuova richiesta di numero di telefono per il Regno Unito (v.5.0) (en-gb)](https://download.microsoft.com/download/e/e/9/ee9f629e-4f2b-41c3-8fa3-f206660f4db3/new-phone-number-request-for-the-united-kingdom-(v.5.0)-(en-gb).pdf) <br/><br/>Compilarlo e [contattare il service desk TNS per istruzioni.](contact-tns-service-desk.md)  <br/> |
+|Fai trasferire a noi i numeri di telefono.  <br/> |Scarica questo modulo: <br/> [Lettera di autorizzazione (LOA) per il Regno Unito (tutti i numeri) (v.6.1) (en-us)](https://download.microsoft.com/download/4/3/7/43706e72-81e9-461e-afca-825dad4716f4/letter-of-authorization-(loa)-for-the-u.k.-(all-numbers)-(v.6.1)-(en-us).pdf) <br/> <br/> Compilarlo e [contattare il service desk TNS per istruzioni.](contact-tns-service-desk.md)  <br/> |
+|Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il service desk TNS per istruzioni](contact-tns-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
+|Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il service desk TNS per istruzioni](contact-tns-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
+|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il Service Desk TNS per istruzioni.](contact-tns-service-desk.md) |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

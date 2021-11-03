@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Cina.
-ms.openlocfilehash: 52d62a5f4c5835debf5784ed40c646451d831531
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2013769f13cd94330ccc64422d5ea874d55155f2
+ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58584780"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60733687"
 ---
 # <a name="availability-in-china"></a>Disponibilità in Cina
 
@@ -71,7 +71,7 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Pechino  <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
-|Sono disponibili numeri verdi gratuiti?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)), ad eccezione dei clienti che acquistano il servizio dalla Cina. I numeri verde non sono disponibili per i clienti che acquistano il servizio dalla Cina. <br/> |
+|Sono disponibili numeri verdi gratuiti?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)), ad eccezione dei clienti che acquistano il servizio dalla Cina. I numeri verde non sono disponibili per i clienti che acquistano il servizio dalla Cina. <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).
   

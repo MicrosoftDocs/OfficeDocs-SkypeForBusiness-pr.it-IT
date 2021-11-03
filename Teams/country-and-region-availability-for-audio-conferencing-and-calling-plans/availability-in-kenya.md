@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Kenya.
-ms.openlocfilehash: f7ec89f4508b383d14b51e36775e5b12a1c6a06f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b27487cdc1ff88717ce3860e159d0b8373b6ba60
+ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58586654"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60733657"
 ---
 # <a name="availability-in-kenya"></a>Disponibilità in Kenya
 
@@ -69,8 +69,8 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Nairobi ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md))  <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Nairobi ([su richiesta](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md))  <br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)) <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).

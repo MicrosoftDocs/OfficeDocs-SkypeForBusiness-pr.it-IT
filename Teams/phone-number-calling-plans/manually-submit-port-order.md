@@ -18,30 +18,30 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come inviare manualmente una richiesta di ordine di trasferimento.
-ms.openlocfilehash: 2a372ee26b9cb7b52b72c635c90a6e0435b7c729
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: 221f35bf300ed9ab33ab3088f18e154ecbecc5e3
+ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60045872"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60733497"
 ---
 # <a name="manually-submit-a-port-order"></a>Inviare manualmente un ordine di portabilità
 
 In alcuni paesi e aree geografiche potrebbe essere necessario inviare manualmente una richiesta di servizio per ottenere numeri di telefono, trasferire numeri di telefono, rilasciare numeri di telefono o cambiare indirizzo. Per vedere cosa è necessario per ogni paese e area geografica o per altre informazioni sulla portabilità dei numeri, vedere Gestire i numeri di telefono [per l'organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
-Seguire i passaggi descritti in questo articolo per inviare manualmente un ordine di trasferimento se il paese o l'area geografica non è elencato nella procedura guidata di [porting in Microsoft ](transfer-phone-numbers-to-teams.md).
+Usare la procedura descritta in questo articolo per inviare manualmente un ordine di trasferimento se il paese o l'area geografica non è elencato nella procedura guidata di [porting in Microsoft ](transfer-phone-numbers-to-teams.md).
 
 ## <a name="manually-submit-a-new-port-order-request"></a>Inviare manualmente una nuova richiesta di ordine di trasferimento
 
-Per inviare manualmente un nuovo ordine di trasferimento, inviare il modulo lettera di autorizzazione (LOA) completato direttamente al service desk PSTN della propria area geografica.
+Per inviare manualmente un nuovo ordine di trasferimento, inviare il modulo lettera di autorizzazione (LOA) completato direttamente al service desk TNS per la propria area geografica.
 
 1. Scarica la [loa per](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) il tuo paese o area geografica.
 2. Compilare il modulo.
-3. Inviarlo al [service desk PSTN della](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md) propria area geografica.
+3. Inviarlo al [service desk TNS della](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md) propria area geografica.
 
 ## <a name="what-else-should-you-know-about-number-porting"></a>Altre informazioni sulla portabilità dei numeri
 
-- Per usare i Piani per chiamate, è necessario acquistare e assegnare licenze agli utenti. Vedere [Teams licenze per i componenti aggiuntivi.](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+- Per usare i Piani per chiamate, è necessario acquistare e assegnare licenze agli utenti. Vedere [Teams licenze per i componenti aggiuntivi](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
 - Devi assegnare i nuovi numeri di telefono a ogni utente. Vedere [Assegnare, modificare o rimuovere un numero di telefono per un utente.](../assign-change-or-remove-a-phone-number-for-a-user.md)
 

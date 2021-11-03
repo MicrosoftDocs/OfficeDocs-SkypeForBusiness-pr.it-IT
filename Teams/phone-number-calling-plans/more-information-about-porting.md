@@ -19,20 +19,20 @@ f1.keywords:
 - CSH
 ms.custom: ms.teamsadmincenter.voice.phonenumbers.porting.moreinfo
 description: Ottieni le indicazioni necessarie per convertire i numeri di telefono in Microsoft Teams.
-ms.openlocfilehash: 5ed15432517ae6ba5709e699c89c341dc86f30f2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: bdfe677a4a76128343382373d027abd5061bd8fc
+ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598390"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60733317"
 ---
 # <a name="more-information-about-porting"></a>Altre informazioni sulla portabilità
 
 Qui troverai altre informazioni sul porting dei numeri di telefono in Microsoft Teams.
 
-Per istruzioni dettagliate, vedere Trasferire numeri di telefono a [Teams](transfer-phone-numbers-to-teams.md).
+Per istruzioni dettagliate, vedere Trasferire i numeri di telefono Teams [.](transfer-phone-numbers-to-teams.md)
 
-Se serve assistenza o se è necessario ottenere altri numeri di telefono, contattare l'assistenza [del service desk PSTN.](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)
+Se serve assistenza o se è necessario ottenere altri numeri di telefono, contattare la Guida [di TNS Service Desk.](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)
 
 ## <a name="port-order-account-information"></a>Informazioni sull'account dell'ordine di trasferimento
 
@@ -47,12 +47,12 @@ Quando si è nella pagina Aggiungi informazioni **sull'account** della procedura
 - Nome organizzazione
     
     > [!NOTE]
-    > Verranno accettati solo 25 caratteri, inclusi gli spazi. Se il nome dell'organizzazione è più lungo di 25 caratteri, i primi 25 caratteri del nome verranno inviati e l'ordine di trasferimento continuerà a essere elaborato.
+    > Verranno accettati solo 25 caratteri, inclusi gli spazi. Se il nome dell'organizzazione è più lungo di 25 caratteri, i primi 25 caratteri del nome verranno inviati e l'ordine di trasferimento verrà comunque elaborato.
   
 - Nome della persona autorizzata a apportare modifiche all'account
     
     > [!NOTE]
-    > Verranno accettati solo 15 caratteri, inclusi gli spazi. Se il nome della persona autorizzata è più lungo di 15 caratteri, i primi 15 caratteri del nome verranno inviati e l'ordine di trasferimento continuerà a essere elaborato. 
+    > Verranno accettati solo 15 caratteri, inclusi gli spazi. Se il nome della persona autorizzata è più lungo di 15 caratteri, i primi 15 caratteri del nome verranno inviati e l'ordine di trasferimento verrà comunque elaborato. 
   
 - Indirizzo del servizio
   

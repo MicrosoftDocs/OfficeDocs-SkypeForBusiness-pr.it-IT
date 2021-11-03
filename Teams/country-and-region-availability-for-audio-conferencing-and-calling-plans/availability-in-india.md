@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'India.
-ms.openlocfilehash: 5a61ded32ca4563a3825d893f671332fa30bb996
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 9468da224b7f5079f091125cb0d2841c4bd79290
+ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611735"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60733067"
 ---
 # <a name="availability-in-india"></a>Disponibilità in India
 
@@ -69,11 +69,11 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul><li>Chennai</li><li>Mumbai<li>Altre città [su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)</ul> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul><li>Chennai</li><li>Mumbai<li>Altre città [su richiesta](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)</ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
 
- Si noti che in India i numeri di servizio possono essere usati solo per le audioconferenze. Quindi, se si vogliono ottenere numeri a numero verde e a numero verde per le audioconferenze, vedere Ottenere numeri di telefono di servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
+ Si noti che in India i numeri di servizio possono essere usati solo per le audioconferenze. Quindi, se vuoi ottenere numeri a numero verde e a numero verde per le audioconferenze, vedi Ottenere numeri di telefono di servizio per Skype for Business [e Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

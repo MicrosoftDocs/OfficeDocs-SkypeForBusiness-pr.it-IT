@@ -17,12 +17,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: 'Learn how to get the status of your port orders, and what the different actions you can take on them. '
-ms.openlocfilehash: 9bf0b66af230ee27036a891572dc92f292cb4d50
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 3699a7ccbc2aa7a54c70c9cd99c9277f56ea40fc
+ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58613045"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60733097"
 ---
 # <a name="whats-the-status-of-your-port-orders"></a>Qual è lo stato degli ordini di portabilità?
 
@@ -36,13 +36,13 @@ La tabella seguente elenca gli stati degli ordini di trasferimento e le azioni c
 |**Operatore di contatto** <br/> |Sì  <br/> |No  <br/> |Sì  <br/> |No  <br/> |L'ordine è stato ricevuto e approvato da Microsoft e stiamo lavorando con il gestore perdente per ottenerlo approvato.  <br/> |
 |**Trasferimento approvato** <br/> |Sì  <br/> |No  <br/> |Sì  <br/> |No  <br/> |L'ordine è stato accettato dal gestore perdente e la data FOC (Firm Order Commitment) è stata impostata.  <br/> |
 |**Trasferimento in sospeso** <br/> |Sì  <br/> |No  <br/> |No  <br/> |No  <br/> |Il trasferimento è di meno di 24 ore, quindi l'ordine non può più essere modificato o annullato.  <br/> |
-|**Errore** <br/> |No  <br/> |Sì  <br/> |Sì  <br/> |Sì (al momento non è possibile eliminare l'ordine di trasferimento in caso di errore. L'ordine di trasferimento deve essere ri-creato oppure è necessario contattare l'assistenza [del service desk PSTN.](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)  <br/> |Il corriere perdente ha rifiutato l'ordine.  <br/> |
+|**Errore** <br/> |No  <br/> |Sì  <br/> |Sì  <br/> |Sì (al momento non è possibile eliminare l'ordine di trasferimento in caso di errore. L'ordine di trasferimento deve essere ri-creato oppure è necessario contattare [il service desk TNS.](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)  <br/> |Il corriere perdente ha rifiutato l'ordine.  <br/> |
 |**Completato** <br/> |Sì  <br/> |No  <br/> |No  <br/> |No  <br/> |I numeri sono stati trasferiti correttamente.  <br/> |
 |**Annullato** <br/> |No  <br/> |Sì  <br/> |No  <br/> |No  <br/> |L'amministratore ha annullato l'ordine.  <br/> |
 
-Per istruzioni dettagliate, vedere Trasferire numeri di telefono a [Teams](transfer-phone-numbers-to-teams.md).
+Per istruzioni dettagliate, vedere Trasferire i numeri di telefono Teams [.](transfer-phone-numbers-to-teams.md)
 
-Se serve assistenza o se è necessario ottenere altri numeri di telefono, contattare il [service desk PSTN.](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)
+Se hai bisogno di assistenza o se hai bisogno di ottenere più numeri di telefono, contatta [il TNS Service Desk.](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

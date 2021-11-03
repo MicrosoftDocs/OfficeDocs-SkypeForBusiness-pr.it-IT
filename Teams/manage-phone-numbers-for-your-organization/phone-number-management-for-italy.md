@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Italia per Microsoft Teams.
-ms.openlocfilehash: d98347f98fc6251be0e1586ad3649d517c636686
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f1a664882f0bb17590f83686efd6afaf86bcdd59
+ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599731"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "60733267"
 ---
 # <a name="phone-number-management-for-italy"></a>Gestione dei numeri di telefono per l'Italia
 
@@ -34,11 +34,11 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti e inviaceli**|
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica uno di questi moduli. <br>  [Nuova richiesta di numero di telefono per l'Italia (v.5.0) (it-it)](https://download.microsoft.com/download/7/2/7/727217df-80e4-4ff5-b9ed-65b84cdceba6/new-phone-number-request-for-italy-(v.5.0)-(it-it).pdf) <br/>  [Nuova richiesta di numero di telefono per l'Italia (v.5.0) (en-us)](https://download.microsoft.com/download/4/1/7/417d2578-3686-4530-87ea-e9f36e8653c1/new-phone-number-request-for-italy-(v.5.0)-(en-us).pdf)<br/>  <br/>Compilarlo e [contattare PTSN per istruzioni](contact-pstn-service-desk.md). |
-|Fai trasferire a noi i numeri di telefono.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per l'Italia (tutti i numeri) (v.6.0) (it-it)](https://download.microsoft.com/download/e/8/a/e8a20665-cbea-4f15-a50c-b8e1f6ef352d/letter-of-authorization-(loa)-for-italy-(all-numbers)-(v.6.0)-(it-it).pdf) <br/> <br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) |
-|Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione.      <br/> |
-|Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
-|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda delle chiamate o dell'operatore automatico, scaricare il modulo servizi directory [per l'Italia (v.1.0) (it-it)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/directory-services-form-for-italy-(v.1.0)-(it-it).pdf?raw=true), compilarlo e [contattare PTSN per istruzioni](contact-pstn-service-desk.md). |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica uno di questi moduli. <br>  [Nuova richiesta di numero di telefono per l'Italia (v.5.0) (it-it)](https://download.microsoft.com/download/7/2/7/727217df-80e4-4ff5-b9ed-65b84cdceba6/new-phone-number-request-for-italy-(v.5.0)-(it-it).pdf) <br/>  [Nuova richiesta di numero di telefono per l'Italia (v.5.0) (en-us)](https://download.microsoft.com/download/4/1/7/417d2578-3686-4530-87ea-e9f36e8653c1/new-phone-number-request-for-italy-(v.5.0)-(en-us).pdf)<br/>  <br/>Compilarlo e [contattare TNS per istruzioni.](contact-tns-service-desk.md) |
+|Fai trasferire a noi i numeri di telefono.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per l'Italia (tutti i numeri) (v.6.0) (it-it)](https://download.microsoft.com/download/e/8/a/e8a20665-cbea-4f15-a50c-b8e1f6ef352d/letter-of-authorization-(loa)-for-italy-(all-numbers)-(v.6.0)-(it-it).pdf) <br/> <br/>Compilarlo e [contattare il service desk TNS per istruzioni.](contact-tns-service-desk.md) |
+|Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il service desk TNS per istruzioni](contact-tns-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione.      <br/> |
+|Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il service desk TNS per istruzioni](contact-tns-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
+|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, scaricare il modulo Servizi directory per l'Italia [(v.1.0) (it-it),](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/directory-services-form-for-italy-(v.1.0)-(it-it).pdf?raw=true)compilarlo e contattare [TNS](contact-tns-service-desk.md)per istruzioni. |
 |Esaminare la Carta dei Sevizi| Scaricare e leggere la [Carta dei servizi per l’Italia (v.1.0) (it-it)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/charter-of-services-for-italy-(v.1.0)-(it-it).pdf?raw=true). |
 
 ## <a name="related-topics"></a>Argomenti correlati
