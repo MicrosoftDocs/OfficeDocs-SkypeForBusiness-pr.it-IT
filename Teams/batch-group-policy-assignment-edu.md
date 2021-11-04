@@ -1,7 +1,7 @@
 ---
 title: Assegnare criteri a grandi set di utenti dell'istituto di istruzione
-author: serdars
-ms.author: serdars
+author: HowlinWolf-92
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: karsmith, angch, cebulnes
 ms.topic: article
@@ -17,19 +17,19 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come assegnare criteri a grandi set di utenti dell'istituto di istruzione in base all'appartenenza ai gruppi o direttamente tramite un'attività batch per scopi scolastici remoti (telescolastica, telescolastica).
 f1keywords: ''
-ms.openlocfilehash: 3cd0bfd791d2416de31d998c693002cce87f6fcd
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7a2321a42910eee77ef9dff3c3aba3165cba156a
+ms.sourcegitcommit: 6da1531dda6a0a3eecdca40e682783cc81c0d3e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745702"
+ms.locfileid: "60785079"
 ---
 # <a name="assign-policies-to-large-sets-of-users-in-your-school"></a>Assegnare criteri a grandi set di utenti dell'istituto di istruzione
 
 [!INCLUDE [policy-wizard-edu](includes/policy-wizard-edu.md)]
 
 > [!NOTE]
-> Per informazioni più esaustivo sull'assegnazione di criteri in Microsoft Teams, vedere [Assegnare criteri](policy-assignment-overview.md)agli utenti in Teams .
+> Per informazioni più esaustivo sull'assegnazione di criteri in Microsoft Teams, vedere Assegnare criteri agli utenti [in Teams](policy-assignment-overview.md).
 
 ## <a name="overview"></a>Panoramica
 
@@ -51,7 +51,7 @@ Tenere presente che i criteri globali verranno applicati a tutti gli utenti dell
 
 In questa esercitazione gli studenti riceveranno i criteri riunione globali e verrà assegnato un criterio di riunione personalizzato denominato EducatorMeetingPolicy a personale e docenti. Si presuppone che siano stati modificati i criteri globali [](policy-packages-edu.md) per personalizzare le impostazioni delle riunioni per gli studenti e che siano stati creati criteri personalizzati che definiscono l'esperienza della riunione per personale e docenti.
 
-![Screenshot della pagina Criteri riunione nell'interfaccia Teams di amministrazione.](media/batch-group-policy-assignment-edu-meeting-policies.png)
+![Screenshot della pagina Criteri riunione nell'Teams di amministrazione.](media/batch-group-policy-assignment-edu-meeting-policies.png)
 
 ## <a name="assign-a-policy-to-a-group"></a>Assegnare un criterio a un gruppo
 
@@ -83,7 +83,7 @@ Se non si riesce a distribuire SDS all'interno dell'ambiente, usare questo scrip
 #### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 > [!NOTE]
-> Attualmente, l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft Teams è disponibile solo per i criteri di chiamata Teams, per i criteri di parcheggio di chiamata Teams, per i criteri di Teams, per gli eventi live Teams, per i criteri per le riunioni Teams e per i criteri di messaggistica Teams. Per altri tipi di criteri, usare PowerShell.
+> Attualmente, l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft Teams è disponibile solo per i criteri di chiamata Teams, i criteri del parcheggio di chiamata Teams, i criteri di Teams, i criteri eventi live Teams, i criteri delle riunioni Teams e i criteri di messaggistica Teams. Per altri tipi di criteri, usare PowerShell.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Riunioni** > **Criteri riunione**.
 2. Selezionare la scheda **Assegnazione criteri di** gruppo.
@@ -205,7 +205,7 @@ Aprire un prompt dei comandi di Windows PowerShell con privilegi elevati (esegui
 Install-Module -Name AzureAD
 ```
 
-Eseguire le operazioni seguenti per connettersi a Azure AD.
+Eseguire quanto segue per connettersi a Azure AD.
 
 ```powershell
 Connect-AzureAD
@@ -213,7 +213,7 @@ Connect-AzureAD
 
 Quando richiesto, accedere con le credenziali di amministratore.
 
-Per altre informazioni, vedere Connessione con il modulo Azure Active Directory [PowerShell per Graph modulo](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Per altre informazioni, vedere [Connessione con il Azure Active Directory PowerShell per Graph modulo.](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 ##### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo Microsoft Teams PowerShell
 

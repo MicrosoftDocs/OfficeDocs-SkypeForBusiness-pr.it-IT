@@ -7,7 +7,7 @@ ms.topic: reference
 ms.service: msteams
 audience: admin
 ms.reviewer: ''
-description: Microsoft Teams prerequisiti dei documenti dell'articolo EDU e configurazione di PowerShell per l'app Genitori.
+description: Microsoft Teams prerequisiti del documento dell'articolo EDU e configurazione di PowerShell per l'app Genitori.
 ms.localizationpriority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MET150
@@ -17,18 +17,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5b79319da9f901fc4546c25d5165f4d2361521a7
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: 8cd05f6ad2b238b4db2d611a6fc00e5f8a57189f
+ms.sourcegitcommit: 6da1531dda6a0a3eecdca40e682783cc81c0d3e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60537007"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60785149"
 ---
 # <a name="deploying-the-parents-app-in-microsoft-teams"></a>Distribuzione dell'app padre in Microsoft Teams
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
-L'abilitazione dell'app genitori in Microsoft Teams è un processo semplice per gli amministratori, che offre un metodo sicuro per i docenti per comunicare agli studenti e ai loro contatti che rimangono nel tenant e che verrà scalato in tutta l'organizzazione dei docenti.
+L'app Per genitori aiuta i docenti Teams connettersi e interagire in modo sicuro con i genitori e i tutori degli studenti delle loro classi usando una chat Teams, che verrà scalata in tutta l'organizzazione dei docenti. Il provisioning di tutti i dati dei genitori e dei tutori viene eseguito School Data Sync, consentendo ai docenti e al personale IT di configurare le attività senza problemi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -45,11 +43,11 @@ L'abilitazione dell'app genitori in Microsoft Teams è un processo semplice per 
 
 - Il proprietario della classe deve avere la chat abilitata
 - Il proprietario della classe deve avere accesso **esterno con Teams account non gestiti da un'organizzazione** abilitata. 
-  - Questa impostazione è disponibile nelle impostazioni a livello di organizzazione > Accesso esterno per il livello di tenant oppure, se si desidera abilitare un determinato set di utenti, vedere PowerShell di seguito.
+  - Questa impostazione è disponibile in Utenti > Accesso esterno per il livello di tenant oppure, se si desidera abilitare un determinato set di utenti, vedere powershell di seguito.
 
 ## <a name="enabling-federated-chat-on-a-per-user-basis"></a>Abilitazione della chat federata per singolo utente
 
-1. Installare l'anteprima Microsoft Teams modulo di PowerShell più recente.
+1. Installare l'anteprima del Microsoft Teams di PowerShell più recente.
 
     ```powershell
     Install-Module -Name PowerShellGet -Force -AllowClobber
@@ -63,7 +61,7 @@ L'abilitazione dell'app genitori in Microsoft Teams è un processo semplice per 
     Connect-MicrosoftTeams -Credential $credential
     ```
 
-Per impostazione predefinita, l'impostazione a livello di tenant che controlla Teams'accesso esterno consumer per il tenant (AllowTeamsConsumer) è disabilitata. Tuttavia, l'impostazione dei criteri che consente Teams'accesso esterno consumer a livello di utente (EnableTeamsConsumerAccess) è abilitata per impostazione predefinita per tutti i criteri di accesso esterno a livello di utente. Sia l'impostazione a livello di tenant che l'impostazione dei criteri a livello di utente devono essere abilitate perché un utente abbia accesso esterno Teams consumer. Se non si vuole che tutti gli utenti del tenant attivino l'accesso esterno Teams un utente consumer, è consigliabile aggiornare i criteri di accesso esterno Teams livello utente assegnati agli utenti prima di abilitare l'impostazione a livello di tenant.
+L'impostazione dei criteri che Teams l'accesso esterno a livello di utente (EnableTeamsConsumerAccess) è abilitata per impostazione predefinita per tutti i criteri di accesso esterno a livello di utente. Sia l'impostazione a livello di tenant (AllowTeamsConsumer) che l'impostazione dei criteri a livello di utente devono essere abilitate per consentire a un utente Teams accesso esterno consumer. Se non si vuole che tutti gli utenti del tenant attivino l'accesso esterno Teams un utente, è consigliabile aggiornare i criteri di accesso esterno Teams livello utente assegnati agli utenti prima di abilitare l'impostazione a livello di tenant.
 
 Se è necessario verificare quali criteri di accesso esterno a livello di utente esistono e a chi sono assegnati, è possibile eseguire la procedura seguente:
     
@@ -76,7 +74,7 @@ Se è necessario verificare quali criteri di accesso esterno a livello di utente
 4. Per ogni criterio diverso da quello "Globale", verificare a quali utenti è assegnato il criterio. Nota: tutti gli utenti a cui non è assegnato un criterio specifico verranno rientrati nel criterio "Globale"
 
     ```powershell
-    Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq “<PolicyName>"} | Select-Object DisplayName,ObjectId,UserPrincipalName
+    Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "<PolicyName>"} | Select-Object DisplayName,ObjectId,UserPrincipalName
     ```
 
 ### <a name="further-powershell-options"></a>Altre opzioni di PowerShell

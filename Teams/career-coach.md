@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 33286dccf3d54ac694b4d74b736b6d899c035aa8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f23f00249c23acb8397127bd51fd05206ce2f3f6
+ms.sourcegitcommit: 6da1531dda6a0a3eecdca40e682783cc81c0d3e0
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/04/2021
-ms.locfileid: "60760544"
+ms.locfileid: "60785089"
 ---
 # <a name="purchase-configure-and-enable-career-coach-for-microsoft-teams"></a>Acquistare, configurare e abilitare Assistente alla carriera per Microsoft Teams
 
@@ -97,13 +97,13 @@ Per istruzioni dettagliate, vedere [Assegnare licenze agli utenti.](/microsoft-3
 
 Assistente alla carriera **gli** utenti dell'istituto di istruzione devono avere la possibilità di connettere il proprio account Microsoft 365 al proprio account LinkedIn, agevolato all'interno di Assistente alla carriera.
 
-1. Accedere all'Azure AD [di amministrazione con](https://aad.portal.azure.com/) un account che è un amministratore globale per l'Azure AD aziendale.
+1. Accedere [all'Azure AD di amministrazione con](https://aad.portal.azure.com/) un account amministratore globale per l'organizzazione Azure AD globale.
 
 2. Selezionare **Utenti**.
 
 3. Nella pagina **Utenti** selezionare **Impostazioni utente.**
 
-4. **Le connessioni all'account LinkedIn** devono essere impostate su **Sì** o gruppo **selezionato** Assistente alla carriera configurato correttamente.
+4. **Le connessioni all'account LinkedIn** devono essere impostate su **Sì** o su Gruppo **selezionato** Assistente alla carriera configurato correttamente.
 
    ![Integrare le connessioni dell'account LinkedIn nell'organizzazione](/azure/active-directory/enterprise-users/media/linkedin-integration/linkedin-integration.png)
 
@@ -165,15 +165,15 @@ Personalizza Assistente alla carriera in base al marchio del tuo istituto di ist
 
 3. **Upload'icona dell'istituto di istruzione**. L'icona viene usata in Assistente alla carriera per identificare contenuti univoci per l'istituto di istruzione, le risorse del catalogo dei corsi in tutta l'app e nella sezione esperienze reali del dashboard. L'icona è formattata nel modo seguente:
 
-- PNG trasparente
-- Proporzioni di 1:1
-- Dimensioni massime di 64 px x 64 px
+    - PNG trasparente
+    - Proporzioni di 1:1
+    - Dimensioni massime di 64 px x 64 px
 
 4. **Upload'anteprima dell'istituto di istruzione**. L'anteprima verrà usata per le risorse del catalogo dei corsi in tutta l'app quando un'immagine specifica non è disponibile per un corso. L'anteprima è formattata nel modo seguente:
 
-- Un PNG
-- Proporzioni di 16:9
-- Dimensioni massime di 360 px x 200 px
+    - Un PNG
+    - Proporzioni di 16:9
+    - Dimensioni massime di 360 px x 200 px
 
 5. Aggiungere **l'URL dell'informativa sulla privacy dell'istituto di istruzione**. Se viene aggiunto, l'informativa sulla privacy dell'istituto sarà disponibile per gli studenti per la revisione nell'app Assistente alla carriera.
 
@@ -270,12 +270,12 @@ La tabella seguente mostra gli elementi da includere nel catalogo dei corsi:
 I campi di studio sono sinonimi di importanti aree di interesse, di laurea e di laurea. Questi titoli fanno riferimento agli studenti quando iniziano a usare l'app e iniziano a configurare il proprio profilo personalizzato.
 
 > [!IMPORTANT]
-> Questa è una sezione obbligatoria: Assistente alla carriera non può essere abilitata senza un elenco di campi di studio.
+> Si tratta di una sezione obbligatoria, Assistente alla carriera non può essere abilitata senza un elenco di campi di studio.
 
 #### <a name="add-the-fields-of-study"></a>Aggiungere i campi di studio
 
 1. Accedere all'interfaccia **[Teams di amministrazione.](https://admin.teams.microsoft.com)**
-1. Selezionare **Teams app Gestisci** app &gt; **[](https://admin.teams.microsoft.com/policies/manage-apps)** &gt; **Assistente alla carriera** &gt; **Impostazioni** &gt; **campi di studio**.  
+1. Selezionare **Teams app Gestisci app** &gt; **[](https://admin.teams.microsoft.com/policies/manage-apps)** &gt; **Assistente alla carriera** &gt; **Impostazioni** &gt; **campi di studio**.  
 
 2. Upload di studio in formato CSV.
 
@@ -325,8 +325,8 @@ Dopo aver completato la configurazione, abilitare l'app per gli studenti e gli u
 
 2. Spostare l'interruttore Stato su **Consentito**.  
 
-  > [!NOTE]
-  > **Consentito** significa che l'app è disponibile per gli utenti dell'istituto di istruzione. Bloccato significa che l'app non è disponibile per gli studenti.
+   > [!NOTE]
+   > **Consentito** significa che l'app è disponibile per gli utenti dell'istituto di istruzione. Bloccato significa che l'app non è disponibile per gli studenti.
 
 ### <a name="add-career-coach-as-an-installed-app"></a>Aggiungere Assistente alla carriera come app installata
 
@@ -370,9 +370,9 @@ Riferimento [Gestire i criteri di configurazione delle app in Microsoft](/micros
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-- Se nell'app Assistente alla carriera viene visualizzato "Assistente alla carriera è in fase di configurazione per l'uso presto", le sezioni necessarie non __sono state completate.__ Prima di poter __usare Assistente alla carriera,__ è necessario completare le sezioni seguenti: [](#course-catalog)Marchio e [preferenze,](#brand-and-preferences)Connessione [LinkedIn,](#linkedin-connection)Catalogo corsi e [Campi di studio.](#fields-of-study)
+- Se nell'app Assistente alla carriera viene visualizzato il messaggio "Assistente alla carriera è attualmente in fase di configurazione per l'uso", le sezioni necessarie non __sono state completate.__ Prima di poter __usare Assistente alla carriera,__ è necessario completare le sezioni seguenti: [](#course-catalog)Marchio e [preferenze,](#brand-and-preferences)Connessione [LinkedIn,](#linkedin-connection)Catalogo corsi e [Campi di studio.](#fields-of-study)
 
-- I cvs per il catalogo dei corsi e il campo di studio hanno formati obbligatori e dimensioni massime di 18 MB. Fare riferimento allo schema [Assistente alla carriera](#course-catalog-document-format-and-schema) del documento del catalogo Assistente alla carriera campi dello [schema](#fields-of-study-document-format-and-schema) del documento di studio per garantire la corretta configurazione.
+- I cvs per il catalogo dei corsi e il campo di studio hanno formati obbligatori e dimensioni massime di 18 MB. Fare riferimento allo schema [Assistente alla carriera](#course-catalog-document-format-and-schema) del documento del Assistente alla carriera dello [schema](#fields-of-study-document-format-and-schema) del documento di studio per garantire la corretta configurazione.
 
 - Nelle pagine delle impostazioni con i campi obbligatori, se i campi non sono completati, la pagina non verrà inviato. Non viene visualizzato un messaggio di avviso. la pagina semplicemente non verrà inviato.
 
