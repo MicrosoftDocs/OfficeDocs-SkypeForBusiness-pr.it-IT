@@ -1,7 +1,7 @@
 ---
-title: Usare modelli di team governativi nell'interfaccia di amministrazione
+title: Usare i modelli di team governativi nell'interfaccia di amministrazione
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -19,14 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f373e2e949d4fe461ef06657e0791f4ff59f4b61
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 466eeb8c412bb09bf6eedcccb8becf49ff0c08a0
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603405"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60777196"
 ---
-# <a name="use-government-team-templates-in-the-admin-center"></a>Usare modelli di team governativi nell'interfaccia di amministrazione
+# <a name="use-government-team-templates-in-the-admin-center"></a>Usare i modelli di team governativi nell'interfaccia di amministrazione
 
 I modelli di team consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallato.
 

@@ -1,6 +1,6 @@
 ---
 title: Skype Considerazioni sulla migrazione del sistema sala
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: df9f33b6-0360-4354-b651-bd35da533e33
 description: Leggere questo argomento per informazioni su come distribuire Skype Room System in un ambiente con più versioni di Skype for Business Server e Lync Server.
-ms.openlocfilehash: 5a158c3f0797bb3d0377762ea2876dbe5b9d26bb
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f3a26b630873bad0d3c8585486c91c7250f452e3
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598160"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60769734"
 ---
 # <a name="skype-room-system-migration-considerations"></a>Skype Considerazioni sulla migrazione del sistema sala
  
@@ -29,7 +29,7 @@ In questa sezione vengono fornite indicazioni se si distribuisce Skype Room Syst
   
 Il componente User Replicator (UR) in Lync Server ottiene gli oggetti utente da Active Directory e li inserisce nel database di SQL Server back-end di Lync Server. Solo l'UR in Lync Server 2013 è a conoscenza Skype di sistema room. L'UR nelle versioni precedenti di Lync Server e Office Communications Server non rilevava gli attributi di Active Directory che designavano gli oggetti LRS e pertanto non ne era a conoscenza. 
   
-Se un account di sistema sala di Skype tenta di accedere a Lync ed esegue l'individuazione automatica in base al record SRV o al record DNS A e se tali account puntano a una versione precedente di Lync Server o Office Communications Server, LRS riceverà una risposta 404 Not Found dal pool legacy. Il pool legacy non sarà in grado di reindirizzare Skype room al pool principale di Lync Server 2013. 
+Se un account di sistema sala Skype tenta di accedere a Lync ed esegue l'individuazione automatica in base al record SRV o al record DNS A e se tali account puntano a una versione precedente di Lync Server o Office Communications Server, LRS riceverà una risposta 404 Not Found dal pool legacy. Il pool legacy non sarà in grado di reindirizzare Skype room al pool principale di Lync Server 2013. 
   
 È possibile risolvere il problema con le opzioni seguenti: 
   
@@ -41,11 +41,11 @@ Se un account di sistema sala di Skype tenta di accedere a Lync ed esegue l'indi
     
 ## <a name="skype-room-system-interoperability-with-a-lync-server-2010-pool"></a>Skype Interoperabilità del sistema sala con un pool di Lync Server 2010
 
-Durante la migrazione, se un utente che si trova in un pool di Lync Server 2010 pianifica una riunione e invita l'account di sistema sala Skype, il client Skype Room System avrà funzionalità limitate durante la partecipazione alla riunione. 
+Durante la migrazione, se un utente che si trova in un pool di Lync Server 2010 pianifica una riunione e invita l'account di sistema sala Skype, il client di sistema sala Skype avrà funzionalità limitate durante la partecipazione alla riunione. 
   
-Quando il client Skype Room System partecipa a una conferenza telefonica pianificata organizzata da un utente in Lync Server 2010, Skype Room System presenta le limitazioni seguenti in riunione: 
+Quando il client Skype Room System partecipa a una conferenza telefonica pianificata organizzata da un utente in Lync Server 2010, Skype Room System presenta le limitazioni seguenti durante le riunioni: 
   
-- Skype Room System non è in grado di visualizzare la raccolta video multi-vista.
+- Skype Room System non è in grado di visualizzare la raccolta video multi-visualizzazione.
     
 - Se il Skype del sistema room è il relatore, non può applicare il blocco video ai partecipanti.
     

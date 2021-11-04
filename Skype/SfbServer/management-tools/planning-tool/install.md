@@ -1,7 +1,7 @@
 ---
 title: Installare lo strumento di pianificazione in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 4/5/2016
@@ -13,17 +13,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: b95b3301-fa1e-4b96-9af4-05b43d39db8d
-description: Prima di iniziare a progettare e pianificare l'infrastruttura di Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
-ms.openlocfilehash: 2cfa5e67d567c108d46db1bc52b5426971aa8ca8
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Prima di iniziare a progettare e pianificare l'infrastruttura Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
+ms.openlocfilehash: b476d5d39515fe14d3f13a3ee9dc0c5b5298fdc1
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58616512"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756885"
 ---
 # <a name="install-the-planning-tool-in-skype-for-business-server-2015"></a>Installare lo strumento di pianificazione in Skype for Business Server 2015
 
-Prima di iniziare a progettare e pianificare l'infrastruttura di Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
+Prima di iniziare a progettare e pianificare l'infrastruttura Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
 
 > [!IMPORTANT]
 > Lo strumento di pianificazione richiede l'installazione da parte di un utente con diritti e autorizzazioni di amministratore nel computer in cui deve essere installato lo strumento.
@@ -85,7 +85,7 @@ Esportando la struttura in Microsoft Excel viene creato un report che visualizza
 
 - Profilo hardware - Visualizza un report sulle configurazioni hardware consigliate per i server specificati nella topologia, tra cui CPU, memoria, disco e interfaccia di rete. Sono incluse anche la quantità e le specifiche consigliate per i componenti server. Inoltre, ogni server viene definito dal sito per fornire una rappresentazione completa dei requisiti del server in base al sito.
 
-- Requisiti delle porte - Visualizza un report di tutte le porte abilitate e l'associazione al bilanciamento del carico DNS (Domain Name System) e ai servizi di bilanciamento del carico hardware (HLB). È consigliabile utilizzare questo report per pianificare le configurazioni firewall e DNS LB e HLB.
+- Requisiti delle porte- Visualizza un report di tutte le porte abilitate e l'associazione al bilanciamento del carico DNS (Domain Name System) e ai servizi di bilanciamento del carico hardware (HLB). È consigliabile utilizzare questo report per pianificare le configurazioni firewall e DNS LB e HLB.
 
 - Rapporto riepilogativo- Visualizza il riepilogo generale delle impostazioni necessarie per configurare la rete di server perimetrali.
 
@@ -102,7 +102,7 @@ L'esportazione del progetto in Microsoft Visio consente di creare un diagramma d
 > [!NOTE]
 > Se la struttura è sufficientemente grande da richiedere più di tre Front End Server, verrà creata una pagina aggiuntiva per il pool Front End, i Front End Server, il computer che esegue SQL Server, gli indirizzi IP e gli FQDN.
 
-- Topologia globale - Diagramma dei siti configurati Skype for Business Server 2015.
+- Topologia globale - Diagramma dei siti Skype for Business Server 2015.
 
 - Scheda Nome sito - Visualizza la topologia di configurazione del sito con server perimetrali, firewall, PSTN (Public Switched Telephone Network) con gateway e la distribuzione interna del server. La distribuzione interna è costituita da server e pool configurati, inclusi i pool Front End, i server basati su SQL Server, Servizi di dominio Active Directory, Director, server messaggistica unificata di Exchange, server Cassette postali Exchange, server Web Apps Office, Mediation Server e server Chat persistente.
 

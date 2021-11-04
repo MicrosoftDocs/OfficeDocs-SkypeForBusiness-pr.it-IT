@@ -1,7 +1,7 @@
 ---
 title: Tabella Conferenze in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 7/15/2015
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c3da6271-b3c6-4898-894f-10456ec794d0
 description: Ogni record in questa tabella contiene i dettagli delle chiamate su una conferenza.
-ms.openlocfilehash: dfc1c12908e60c7a5b205c154e30175168871ceb
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 22d394ca447852a32d8028770d7ceefea7adbcf1
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58635210"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60763414"
 ---
 # <a name="conferences-table-in-skype-for-business-server-2015"></a>Tabella Conferenze in Skype for Business Server 2015
  
@@ -26,7 +26,7 @@ Ogni record in questa tabella contiene i dettagli delle chiamate su una conferen
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**SessionIdTime** <br/> |datetime  <br/> |Principale  <br/> |Ora in cui la richiesta di conferenza è stata acquisita dall'agente cdR. Utilizzato solo come chiave primaria per identificare in modo univoco un'istanza di conferenza.  <br/> |
+|**SessionIdTime** <br/> |datetime  <br/> |Principale  <br/> |Ora in cui la richiesta di conferenza è stata acquisita dall'agente di registrazione chiamata. Utilizzato solo come chiave primaria per identificare in modo univoco un'istanza di conferenza.  <br/> |
 |**SessionIdSeq** <br/> |int  <br/> |Principale  <br/> |Numero ID per identificare la sessione. Utilizzato insieme a **SessionIdTime** per identificare in modo univoco un'istanza di conferenza. * <br/> |
 |**ConferenceUriId** <br/> |int  <br/> |Foreign  <br/> |URI della conferenza. Per ulteriori informazioni, vedere la tabella [ConferenceUris Skype for Business Server 2015.](conferenceuris.md) <br/> |
 |**ConfInstance** <br/> |uniqueidentifier  <br/> | <br/> |Utile per conferenze ricorrenti; ogni istanza di una conferenza ricorrente ha lo stesso **ConferenceUri,** ma avrà una **ConfInstance diversa.** <br/> |

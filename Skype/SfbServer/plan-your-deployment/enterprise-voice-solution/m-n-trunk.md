@@ -1,7 +1,7 @@
 ---
 title: Trunk MN in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,18 +16,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: dc4c5d66-297c-48a5-91b9-b9b8ce44a6e0
 description: Skype for Business Server VoIP aziendale supporta il trunking M:N tra Mediation Server e componenti quali gateway PSTN, session border controller e IP-PBX.
-ms.openlocfilehash: 6c63c01609e35be014aae9c3019c8f96c9b95b41
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 28f5d7e9aae5406f54104e3411ecec6ba65ab7f4
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58601341"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60770124"
 ---
 # <a name="mn-trunk-in-skype-for-business-server"></a>Trunk M:N in Skype for Business Server
  
 Skype for Business Server VoIP aziendale supporta il trunking M:N tra Mediation Server e componenti quali gateway PSTN, session border controller e IP-PBX.
   
-Skype for Business Server supporta una maggiore flessibilità nella definizione di un trunk a scopo di routing delle chiamate rispetto alle versioni precedenti. Un trunk è un'associazione logica tra un Mediation Server e il numero di porta di attesa con un gateway e un numero di porta di attesa. Ciò implica diversi aspetti: un Mediation Server può avere più trunk per lo stesso gateway; un Mediation Server può avere più trunk a gateway diversi; al contrario, un gateway può avere più trunk per Mediation Server diversi.
+Skype for Business Server supporta una maggiore flessibilità nella definizione di un trunk ai fini del routing delle chiamate rispetto alle versioni precedenti. Un trunk è un'associazione logica tra un Mediation Server e il numero di porta di attesa con un gateway e un numero di porta di attesa. Ciò implica diversi aspetti: un Mediation Server può avere più trunk per lo stesso gateway; un Mediation Server può avere più trunk a gateway diversi; al contrario, un gateway può avere più trunk per Mediation Server diversi.
   
 È comunque necessario creare un trunk radice ogni volta che si utilizza Generatore di topologie per aggiungere un gateway alla topologia. Il numero di gateway che un determinato Mediation Server può gestire dipende dalla capacità di elaborazione del server durante le ore di punta di attività. Se si distribuisce un Mediation Server su hardware che supera i requisiti hardware minimi per Skype for Business Server, come descritto [in Server requirements for Skype for Business Server 2015,](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md)la stima del numero di chiamate attive non bypass che un Mediation Server autonomo può gestire è di circa 1000 chiamate. Quando viene distribuito su hardware in base a queste specifiche, il Mediation Server dovrebbe eseguire la transcoding, ma comunque instradare le chiamate per più gateway anche se i gateway non supportano il bypass multimediale.
   
@@ -39,9 +39,9 @@ Il Mediation Server può essere distribuito come pool. questo pool può essere c
     
 - **Session Border Controller.** Per un trunk SIP, l'entità peer è un session border controller (SBC) presso un provider di servizi di telefonia Internet. Nella direzione dal pool Mediation Server al servizio SBC, il controller SBC può ricevere connessioni da qualsiasi Mediation Server nel pool. Nella direzione da SBC al pool, il traffico può essere inviato a qualsiasi Mediation Server nel pool. Un metodo per ottenere questo risultato è tramite il bilanciamento del carico DNS, se supportato dal provider di servizi e da SBC. Un'alternativa consiste nel fornire al provider di servizi gli indirizzi IP di tutti i Mediation Server nel pool e il provider di servizi ne eseguirà il provisioning nel proprio SBC come trunk SIP separato per ogni Mediation Server. Il provider di servizi gestirà quindi il bilanciamento del carico per i propri server. Non tutti i provider di servizi o SBC possono supportare queste funzionalità. Inoltre, il provider di servizi può addebitare costi aggiuntivi per questa funzionalità. In genere, ogni trunk SIP alla SBC comporta una tariffa mensile.
     
-- **IP-PBX.** Nella direzione dal pool Mediation Server alla terminazione SIP IP-PBX, l'IP-PBX può ricevere connessioni da qualsiasi Mediation Server nel pool. Nella direzione da IP-PBX al pool, il traffico può essere inviato a qualsiasi Mediation Server nel pool. Poiché la IP-PBXs non supporta il bilanciamento del carico DNS, è consigliabile definire singole connessioni SIP dirette da IP-PBX a ogni Mediation Server del pool. Il sistema IP-PBX gestirà quindi il bilanciamento del carico distribuendo il traffico sul gruppo di trunk. Si presuppone che il gruppo di trunk disponga di un insieme coerente di regole di routing nel sistema IP-PBX. Prima di poter decidere se un cluster Mediation Server può interagire correttamente con un IP-PBX, è necessario stabilire se un particolare IP-PBX supporta questo concetto di gruppo trunk e come si interseca con l'architettura di ridondanza e clustering del sistema IP-PBX.
+- **IP-PBX.** Nella direzione dal pool Mediation Server alla terminazione SIP IP-PBX, l'IP-PBX può ricevere connessioni da qualsiasi Mediation Server nel pool. Nella direzione da IP-PBX al pool, il traffico può essere inviato a qualsiasi Mediation Server nel pool. Poiché la IP-PBXs non supporta il bilanciamento del carico DNS, è consigliabile definire singole connessioni SIP dirette dal sistema IP-PBX a ogni Mediation Server del pool. Il sistema IP-PBX gestirà quindi il bilanciamento del carico distribuendo il traffico sul gruppo di trunk. Si presuppone che il gruppo di trunk disponga di un insieme coerente di regole di routing nel sistema IP-PBX. Prima di poter decidere se un cluster Mediation Server può interagire correttamente con un IP-PBX, è necessario stabilire se un particolare IP-PBX supporta questo concetto di gruppo trunk e come si interseca con l'architettura di ridondanza e clustering del sistema IP-PBX.
     
-Un pool Mediation Server deve disporre di una visualizzazione uniforme del gateway peer con cui interagisce. Ciò significa che tutti i membri del pool accedono alla stessa definizione del gateway peer dall'archivio di configurazione ed è altrettanto probabile che interagiranno con esso per le chiamate in uscita. Pertanto, non esiste alcun modo per segmentare il pool in modo che alcuni Mediation Server comunichino solo con determinati peer gateway per le chiamate in uscita. Se tale segmentazione è necessaria, è necessario utilizzare un pool separato di Mediation Server. Ciò si verifica, ad esempio, se le funzionalità associate nei gateway PSTN, nei trunk SIP o IP-PBXs per interagire con un pool come descritto in precedenza in questo argomento non sono presenti.
+Un pool Mediation Server deve disporre di una visualizzazione uniforme del gateway peer con cui interagisce. Ciò significa che tutti i membri del pool accedono alla stessa definizione del gateway peer dall'archivio di configurazione ed è altrettanto probabile che interagiranno con esso per le chiamate in uscita. Pertanto, non è possibile segmentare il pool in modo che alcuni Mediation Server comunichino solo con determinati peer gateway per le chiamate in uscita. Se tale segmentazione è necessaria, è necessario utilizzare un pool separato di Mediation Server. Ciò si verifica, ad esempio, se le funzionalità associate nei gateway PSTN, nei trunk SIP o nei IP-PBXs per interagire con un pool come descritto in precedenza in questo argomento non sono presenti.
   
 Un determinato gateway PSTN, IP-PBX o trunk peer SIP può essere instradato a più Mediation Server o trunk. Il numero di gateway che un determinato pool di Mediation Server può controllare dipende dal numero di chiamate che utilizzano il bypass multimediale. Se un numero elevato di chiamate utilizza il bypass multimediale, un Mediation Server nel pool può gestire molte altre chiamate, perché è necessaria solo l'elaborazione del livello di segnalazione. 
   

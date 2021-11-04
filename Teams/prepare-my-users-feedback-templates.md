@@ -1,7 +1,7 @@
 ---
 title: Sondaggi di feedback in Teams o Skype for Business
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.date: 03/31/2018
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f08760e7af5b40a063f0dd43c1b728444884bb9d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: e98ec763d93609d0b5b4a37cf6fa02b71c478def
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594518"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60773436"
 ---
 # <a name="user-feedback-surveys"></a>Sondaggi di feedback degli utenti 
 
@@ -41,7 +41,7 @@ Indicare il livello di accordo con le affermazioni seguenti, in relazione all'us
 | Sono riuscito a effettuare e ricevere chiamate sul mio dispositivo mobile.                                                   |                      |                    |             |                       |                         |                        |
 | Il nuovo sistema telefonico soddisfa tutte le mie esigenze di chiamata (trasferimento, blocco, segreteria telefonica e così via)                                      |                      |                    |             |                       |                         |                        |
 | Vedo il valore dell'integrazione del sistema telefonico con Teams.                                                 |                      |                    |             |                       |                         |                        |
-| Usare Teams telefono mi rende più facile fare il mio lavoro.                                          |                      |                    |             |                       |                         |                        |
+| L Teams come il mio telefono mi rende più facile fare il mio lavoro.                                          |                      |                    |             |                       |                         |                        |
 | La mia esperienza audio con Teams è buona o migliore di quanto non lo fosse con il nostro vecchio sistema telefonico.                   |                      |                    |             |                       |                         |                        |
 
 Se si è scelto **Un po' di disaccordo** o **Completamente** in disaccordo per una delle affermazioni precedenti, spiegare. (Testo aperto)

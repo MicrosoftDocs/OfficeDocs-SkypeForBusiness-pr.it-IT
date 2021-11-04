@@ -1,7 +1,7 @@
 ---
 title: Regola versione client
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/23/2015
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 6e7e94c2-1475-4334-b8da-716b24a4c255
 description: I criteri versione client sono composti da una serie di regole versione client, che definiscono le azioni che dovrebbero essere eseguite quando gli utenti tentano di eseguire l'accesso con specifici client o versioni client.
-ms.openlocfilehash: 5f952c1a1c04e98a2635876d3746e828a086daf9
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 91026c625e2fde1bafe99a1b3ffd8a669130fc70
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58609543"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60758508"
 ---
 # <a name="client-version-rule"></a>Regola versione client
 
@@ -90,7 +90,7 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
   - **Consenti e aggiorna** Consente al client di accedere e ricevere aggiornamenti da Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
 
     > [!NOTE]
-    > Se si seleziona questa azione, viene visualizzata una notifica al successivo accesso degli utenti Skype for Business. La notifica indica che è disponibile un aggiornamento, anche se non sono stati ancora rilasciati aggiornamenti per Windows Server Update Service o Microsoft Update. Per evitare confusione, è consigliabile scegliere questa azione solo quando vengono resi disponibili gli aggiornamenti.
+    > Se si seleziona questa azione, verrà visualizzata una notifica al successivo accesso degli utenti Skype for Business. La notifica indica che è disponibile un aggiornamento, anche se non sono stati ancora rilasciati aggiornamenti per Windows Server Update Service o Microsoft Update. Per evitare confusione, è consigliabile scegliere questa azione solo quando vengono resi disponibili gli aggiornamenti.
 
   - **Consenti con URL** Consente al client di eseguire l'accesso e visualizza un messaggio che indica dove scaricare un'altra versione client. L'URL viene specificato nel campo **URL**.
 

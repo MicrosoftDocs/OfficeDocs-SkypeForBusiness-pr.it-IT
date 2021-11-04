@@ -1,7 +1,7 @@
 ---
 title: Eventi UCWA in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 26cb409d-f4e4-43c7-873f-b694702d491d
 description: 'Riepilogo: informazioni su UNIFIED Communications Web API (UCWA) in Skype for Business Server.'
-ms.openlocfilehash: 9fb052e1494354bc62f097152704bec1888e6523
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 32022d44635e9560e28723812c1247fda38cf00d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598816"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60763624"
 ---
 # <a name="ucwa-events-in-skype-for-business-server"></a>Eventi UCWA in Skype for Business Server
  
 **Riepilogo:** Informazioni su Unified Communications Web API (UCWA) in Skype for Business Server.
   
-Skype for Business Server utilizza UCWA (Unified Communications Web API) per diversi scopi, dall'accesso a Microsoft Exchange per le ricerche di contatti all'aggiornamento della presenza per i client mobili.
+Skype for Business Server utilizza UcWA (Unified Communications Web API) per diversi scopi, dall'accesso a Microsoft Exchange per le ricerche di contatti all'aggiornamento della presenza per i client mobili.
   
 UCWA scriverà i record del comportamento operativo come tipi di evento Informativo, Avviso ed Errore. Nella tabella seguente vengono descritti gli eventi che possono essere scritti dai componenti UCWA.
   
@@ -48,7 +48,7 @@ UCWA scriverà i record del comportamento operativo come tipi di evento Informat
 |20017  <br/> |Error  <br/> |AS MCU is unavailable  <br/> |AS MCU is unavailable  <br/> Vedere se AS MCU è in esecuzione  <br/> |
 |20018  <br/> |Informativa  <br/> |Impossibile connettersi a AS MCU  <br/> |N/D  <br/> |
 |20019  <br/> |Error  <br/> |MCU dati non disponibile  <br/> |MCU dati non disponibile  <br/> Verificare se MCU dati è in esecuzione  <br/> |
-|20020  <br/> |Informativa  <br/> |Impossibile connettersi a MCU dati  <br/> |N/D  <br/> |
+|20020  <br/> |Informativa  <br/> |Impossibile connettersi a MCU di dati  <br/> |N/D  <br/> |
 |20021  <br/> |Error  <br/> |Impossibile partecipare a MCU di messaggistica istantanea  <br/> |Impossibile partecipare a MCU di messaggistica istantanea  <br/> Verificare se la MCU di messaggistica istantanea è in esecuzione  <br/> |
 |20022  <br/> |Error  <br/> |Impossibile partecipare a AV MCU  <br/> |Impossibile partecipare a AV MCU  <br/> Verificare se AV MCU è in esecuzione  <br/> |
 |20023  <br/> |Error  <br/> |Impossibile aggiungere AS MCU  <br/> |Impossibile aggiungere AS MCU  <br/> Vedere se AS MCU è in esecuzione  <br/> |

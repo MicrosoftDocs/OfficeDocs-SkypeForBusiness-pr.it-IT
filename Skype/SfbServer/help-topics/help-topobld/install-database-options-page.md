@@ -1,7 +1,7 @@
 ---
 title: Pagina delle opzioni Installa database
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -14,24 +14,24 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 926c47a0-3957-4892-b61a-7a4b569552c3
-description: "È possibile configurare opzioni avanzate per il posizionamento dei file di database e di registro nell'SQL Server. Le opzioni disponibili sono:"
-ms.openlocfilehash: c8b26656f894fbf2c27b2321f30c174fe10472b3
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: 'È possibile configurare opzioni avanzate per il posizionamento dei file di database e di registro nel SQL Server. Le opzioni disponibili sono:'
+ms.openlocfilehash: 3bf2eaacd374234795806d3a3ff21ad1d38dc646
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58587340"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60777386"
 ---
 # <a name="install-database-options-page"></a>Pagina delle opzioni Installa database
 
-È possibile configurare opzioni avanzate per il posizionamento dei file di database e di registro nell'SQL Server. Le opzioni disponibili sono:
+È possibile configurare opzioni avanzate per il posizionamento dei file di database e di registro nel SQL Server. Le opzioni disponibili sono:
 
 > [!IMPORTANT]
-> Selezionare l'opzione più adatta ai requisiti e ai criteri relativi al posizionamento dei dati e dei file di registro nei SQL Server computer.
+> Selezionare l'opzione più adatta ai requisiti e ai criteri relativi al posizionamento dei file di dati e di registro nei SQL Server computer.
 
- **Determinare automaticamente** il percorso dei file di database: l'opzione predefinita utilizza un algoritmo che determina lo spazio disponibile nel SQL Server e distribuisce i file di database e di registro per ottenere prestazioni ottimali.
+ **Determinare automaticamente il percorso dei file** di database: l'opzione predefinita utilizza un algoritmo che determina lo spazio disponibile nel SQL Server e distribuisce il database e i file di registro per ottenere prestazioni ottimali.
 
- **Use SQL Server instance defaults**: selezionare questa opzione per posizionare i file di database e i file di registro in base alle impostazioni dell'istanza SQL Server. Le opzioni vengono in genere gestite e configurate dall'amministratore del database.
+ **Use SQL Server instance defaults**: selezionare questa opzione per inserire file di database e file di registro in base alle impostazioni dell'istanza SQL Server. Le opzioni vengono in genere gestite e configurate dall'amministratore del database.
 
  **Us these path on target SQL Server**: Selezionare questa opzione per definire i propri percorsi per i file di database e di registro di SQL Server digitando il percorso completo dell'unità e della cartella in cui verranno inseriti i file di database e di registro.
 

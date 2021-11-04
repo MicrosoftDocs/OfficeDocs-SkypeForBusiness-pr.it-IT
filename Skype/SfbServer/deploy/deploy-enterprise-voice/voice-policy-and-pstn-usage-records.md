@@ -1,7 +1,7 @@
 ---
 title: Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: e6ff27e0-e2d1-4445-840f-08f738200c20
 description: 'Riepilogo: creare o modificare i criteri vocali e configurare i record di utilizzo PSTN utilizzando il Skype for Business Server di controllo.'
-ms.openlocfilehash: 80e19ed7c271df8b27f53062d4647a39fd6e7491
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 0188881fe91d527c64b95a8cac49ba91ed12bf5f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58605575"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60769604"
 ---
 # <a name="create-or-modify-a-voice-policy-and-configure-pstn-usage-records-in-skype-for-business"></a>Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for Business
 
@@ -32,13 +32,13 @@ ms.locfileid: "58605575"
 
 ### <a name="to-create-a-voice-policy"></a>Per creare un criterio vocale
 
-1. Apri Skype for Business Server Pannello di controllo.
+1. Aprire Skype for Business Server Pannello di controllo.
 
 2. Sulla barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Criteri vocali.**
 
 3. Nella pagina **Criteri vocali** fare clic su **Nuovo** e quindi selezionare un ambito per il nuovo criterio:
 
-   - **I criteri sito** si applicano a un intero sito, ad eccezione di tutti gli utenti o i gruppi assegnati a un criterio utente. Se si seleziona Sito per un ambito di criteri, scegliere il sito nella **finestra di dialogo Seleziona** sito. Se è già stato creato un criterio vocale per un sito, il sito non verrà visualizzato nella **finestra di** dialogo Seleziona un sito.
+   - **I criteri sito** si applicano a un intero sito, ad eccezione di tutti gli utenti o gruppi assegnati a un criterio utente. Se si seleziona Sito per un ambito di criteri, scegliere il sito nella **finestra di dialogo Seleziona** sito. Se è già stato creato un criterio vocale per un sito, il sito non verrà visualizzato nella **finestra di** dialogo Seleziona un sito.
 
    - **I criteri utente** possono essere applicati a utenti o gruppi specifici.
 
@@ -58,7 +58,7 @@ ms.locfileid: "58605575"
 
    - L'**inoltro di chiamata** consente agli utenti di inoltrare chiamate ad altri telefoni e dispositivi client. Skype for Business Server offre una gamma significativamente più ampia di opzioni di configurazione per l'inoltro di chiamata. Ad esempio, se l'organizzazione desidera evitare che le chiamate in entrata vengano inoltrate esternamente a PSTN, l'amministratore può applicare un criterio vocale specifico per la distribuzione di questa limitazione. La funzionalità è abilitata per impostazione predefinita.
 
-   - La **delega** consente agli utenti di specificare altri utenti per l'invio e la ricezione delle chiamate per loro conto. In Skype for Business Server, un delegato può configurare lo squillo simultaneo che consente alle chiamate in arrivo al proprio manager di squillare tutte le destinazioni di squillo simultaneo del delegato. In questo modo, al delegato viene offerta una maggiore flessibilità quando si trova a dover rispondere a chiamate destinate al proprio manager. La funzionalità è abilitata per impostazione predefinita.
+   - La **delega** consente agli utenti di specificare altri utenti per l'invio e la ricezione delle chiamate per loro conto. In Skype for Business Server, un delegato può configurare lo squillo simultaneo che consente alle chiamate in arrivo al proprio responsabile di squillare tutte le destinazioni di squillo simultaneo del delegato. In questo modo, al delegato viene offerta una maggiore flessibilità quando si trova a dover rispondere a chiamate destinate al proprio manager. La funzionalità è abilitata per impostazione predefinita.
 
    - Il **trasferimento di chiamata** consente agli utenti di trasferire chiamate ad altri utenti. Funzionalità abilitata per impostazione predefinita.
 
@@ -131,7 +131,7 @@ ms.locfileid: "58605575"
 
    - Per utilizzare gli stessi record di utilizzo PSTN per l'inoltro di chiamata e lo squillo simultaneo di questo criterio vocale, selezionare l'opzione **Route tramite gli usi PSTN di chiamata** dal  menu a discesa.
 
-   - Per consentire l'inoltro di chiamata e lo squillo simultaneo solo agli utenti Skype for Business interni, selezionare l'opzione Instrada solo agli utenti Skype for Business interni dal menu a discesa.  Le chiamate non verranno inoltrare ai numeri PSTN esterni.
+   - Per consentire l'inoltro di chiamata e lo squillo simultaneo  solo agli utenti Skype for Business interni, selezionare l'opzione Instrada solo agli utenti Skype for Business interni dal menu a discesa. Le chiamate non verranno inoltrare ai numeri PSTN esterni.
 
    - Per specificare record di utilizzo PSTN diversi per l'inoltro di chiamata e lo squillo simultaneo rispetto a quelli utilizzati per questo criterio vocale, selezionare l'opzione **Route using custom PSTN usages** from the drop-down menu. Questa opzione consente di visualizzare un controllo per selezionare i record di utilizzo PSTN esistenti o per creare nuovi record di utilizzo PSTN specifici per l'inoltro di chiamata e lo squillo simultaneo.
 

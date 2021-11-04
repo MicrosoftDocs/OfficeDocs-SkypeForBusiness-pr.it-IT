@@ -1,7 +1,7 @@
 ---
 title: Modificare le impostazioni di qualità dell'esperienza in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: a6b41de2-1466-4240-8a70-14ce6f0f3ddc
 description: 'Riepilogo: informazioni su come specificare la conservazione dei dati QoE in Skype for Business Server.'
-ms.openlocfilehash: c8480b5deb8007c050968c399ee20eb14755e6ba
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 38bc88866e4bd8b677873b2d502e9268305ccf49
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60013950"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60770244"
 ---
 # <a name="modify-quality-of-experience-settings-in-skype-for-business-server"></a>Modificare le impostazioni di qualità dell'esperienza in Skype for Business Server
 
@@ -30,7 +30,7 @@ Per impostazione predefinita, i dati relativi alla QoE (Quality of Experience) v
 
 Nella procedura seguente viene descritto come configurare le impostazioni per l'eliminazione dei dati QoE.
 
-### <a name="to-specify-retention-of-qoe-data-by-using-skype-for-business-server-control-panel"></a>Per specificare la conservazione dei dati QoE tramite il Skype for Business Server di controllo
+### <a name="to-specify-retention-of-qoe-data-by-using-skype-for-business-server-control-panel"></a>Per specificare la conservazione dei dati QoE tramite Skype for Business Server pannello di controllo
 
 1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **Delegate Setup Permissions**.
 

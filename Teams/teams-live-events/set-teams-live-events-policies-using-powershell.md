@@ -1,7 +1,7 @@
 ---
 title: Usare PowerShell per impostare i criteri per gli eventi live
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.date: 07/10/2019
 ms.topic: article
@@ -18,12 +18,12 @@ description: Esempi di come usare PowerShell per impostare criteri in Teams per 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dd408ab17d91a826b0d85a6c2515e8f21013242a
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 0c167d29811008718b7de080e79b62da1117d118
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58629178"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60769794"
 ---
 # <a name="use-powershell-to-set-live-events-policies-in-microsoft-teams"></a>Usare PowerShell per impostare i criteri per gli eventi live in Microsoft Teams
 
@@ -56,7 +56,7 @@ Grant-CsTeamsMeetingBroadcastPolicy -Identity {user} -PolicyName $null -Verbose
 ```
 
 ### <a name="user-scenarios"></a>Scenari utente
-**Si vuole che tutti gli utenti dell'organizzazione siano in grado di pianificare eventi live**
+**Si vuole che tutti gli utenti dell'organizzazione possano pianificare eventi live**
 
 Se agli utenti sono assegnati i criteri globali, eseguire e verificare che *AllowBroadcastScheduling* *sia impostato su *True*:
 ```PowerShell

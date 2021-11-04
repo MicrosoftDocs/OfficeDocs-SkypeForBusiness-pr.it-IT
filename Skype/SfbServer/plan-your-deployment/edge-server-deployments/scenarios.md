@@ -1,7 +1,7 @@
 ---
 title: Scenari di server perimetrali in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 7b9c211b-deb0-479d-b184-973f08b96d07
 description: 'Riepilogo: esaminare questi scenari per pianificare la topologia di server perimetrali in Skype for Business Server.'
-ms.openlocfilehash: 4035418426975b79a35be7ec84c6affac3ab92d5
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 7d5c3b90f2b99b51eb74e0880c5a35f79025282a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58732086"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60763504"
 ---
 # <a name="edge-server-scenarios-in-skype-for-business-server"></a>Scenari di server perimetrali in Skype for Business Server
  
@@ -42,7 +42,7 @@ Esistono dispositivi NAT che consentono NAT64 (da IPv6 a IPv4) e NAT66 (da IPv6 
 > [!IMPORTANT]
 > Se si utilizza il servizio Controllo di ammissione di chiamata, è necessario utilizzare IPv4 sull'interfaccia interna per farlo funzionare. 
   
-## <a name="single-consolidated-skype-for-business-server-edge-server-with-private-ip-addresses-and-nat"></a>Singolo server perimetrale Skype for Business Server consolidato con indirizzi IP privati e NAT
+## <a name="single-consolidated-skype-for-business-server-edge-server-with-private-ip-addresses-and-nat"></a>Singolo server perimetrale consolidato Skype for Business Server server perimetrale con indirizzi IP privati e NAT
 
 Con questo scenario, non è disponibile alcuna opzione per la disponibilità elevata. Ciò significa che si spende meno per l'hardware e si ha una distribuzione più semplice. Se la disponibilità elevata è un elemento necessario, vedere gli scenari consolidati con scalabilità ridotta riportati di seguito.
   
@@ -54,7 +54,7 @@ Con questo scenario, non è disponibile alcuna opzione per la disponibilità ele
   
 ![Perimetro di rete per edge Scenario singolo consolidato perimetrali.](../../media/Plan_LyncServer_Edge_NetPerimeter_SingleConsolidatedEdge.jpg)
   
-## <a name="single-consolidated-skype-for-business-server-edge-server-with-public-ip-addresses"></a>Singolo server perimetrale consolidato Skype for Business Server server perimetrale con indirizzi IP pubblici
+## <a name="single-consolidated-skype-for-business-server-edge-server-with-public-ip-addresses"></a>Singolo server perimetrale Skype for Business Server consolidato con indirizzi IP pubblici
 
 Con questo scenario, non è disponibile alcuna opzione per la disponibilità elevata. Ciò significa che si spende meno per l'hardware e si ha una distribuzione più semplice. Se la disponibilità elevata è un elemento necessario, vedere gli scenari consolidati con scalabilità ridotta riportati di seguito.
   
@@ -66,7 +66,7 @@ Con questo scenario, non è disponibile alcuna opzione per la disponibilità ele
   
 ![Perimetro di rete per edge Scenario singolo consolidato perimetrali.](../../media/Plan_LyncServer_Edge_NetPerimeter_SingleConsolidatedEdge.jpg)
   
-## <a name="scaled-consolidated-skype-for-business-server-edge-pool-with-dns-load-balancing-and-private-ip-addresses-and-nat"></a>Pool di server perimetrali Skype for Business Server con scalabilità consolidata, con bilanciamento del carico DNS, indirizzi IP privati e NAT
+## <a name="scaled-consolidated-skype-for-business-server-edge-pool-with-dns-load-balancing-and-private-ip-addresses-and-nat"></a>Pool di server perimetrali Skype for Business Server con scalabilità consolidata, con bilanciamento del carico DNS e indirizzi IP privati e NAT
 
 Con questo scenario, è possibile disporre di disponibilità elevata nella distribuzione edge, che offre i vantaggi del supporto della scalabilità e del failover.
   
@@ -82,7 +82,7 @@ Con questo scenario, è possibile disporre di disponibilità elevata nella distr
 
 Con questo scenario, è possibile disporre di disponibilità elevata nella distribuzione edge, che offre i vantaggi del supporto della scalabilità e del failover.
   
-![Scenario perimetrale per topologia perimetrale consolidata con scalabilità consolidata, LB DNS con IP pubblico.](../../media/Plan_LyncServer_Edge_Scenario_ScaledConsolidatedEdgeDNSLBPublicIP.jpg)
+![Scenario perimetrale per server perimetrale consolidato con scalabilità consolidata, LB DNS con IP pubblico.](../../media/Plan_LyncServer_Edge_Scenario_ScaledConsolidatedEdgeDNSLBPublicIP.jpg)
   
 ### <a name="port-diagram"></a>Diagramma delle porte
 

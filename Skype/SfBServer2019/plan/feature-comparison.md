@@ -1,6 +1,6 @@
 ---
 title: Confronto delle funzionalità client desktop per Skype for Business Server 2019
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
@@ -15,13 +15,13 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 16b14d59-7737-4f9d-aa4d-83765a18ea07
-description: 'Riepilogo: Skype for Business Server 2019 o Skype for Business online gli amministratori possono usare queste tabelle per comprendere quali funzionalità sono supportate in quali client.'
-ms.openlocfilehash: 5cfe72bbb680a6b127505b57456de2d513fd41bd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: 'Riepilogo: Skype for Business Server 2019 o Skype for Business online possono usare queste tabelle per comprendere quali funzionalità sono supportate in quali client.'
+ms.openlocfilehash: 556b88bfe587d1d5a5a1c78461863f0ae8f8fbbf
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592950"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60777406"
 ---
 # <a name="desktop-client-feature-comparison-for-skype-for-business-server-2019"></a>Confronto delle funzionalità client desktop per Skype for Business Server 2019
 
@@ -31,10 +31,10 @@ ms.locfileid: "58592950"
 
 Alcune funzionalità disponibili con Skype for Business Server 2019 non sono disponibili in Skype for Business Online; per informazioni specifiche, vedere [Limitazioni dell'account](feature-comparison.md#Online-Hybrid) utente online o ibrido. Skype for Business Gli amministratori online potrebbero voler fare riferimento Skype for Business [Descrizione del](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-service-description) servizio online per informazioni sui diversi piani disponibili.
 
-Nelle tabelle seguenti vengono mostrate le funzionalità disponibili con ogni client compatibile con Skype for Business Server 2019 o Skype for Business Online. È anche possibile fare riferimento al confronto delle funzionalità [del client](../../SfbServer/plan-your-deployment/clients-and-devices/mobile-feature-comparison.md) mobile Skype for Business per i confronti tra funzionalità client di smartphone e tablet. Anche la licenza di accesso client o la licenza di sottoscrizione utente acquistata dall'organizzazione avranno un impatto sulle funzionalità disponibili per gli utenti. La distribuzione del client Completo o Basic agli utenti dipende dalla licenza o dal piano scelto dall'organizzazione. Per altri [dettagli, vedi la Guida](https://products.office.com/skype-for-business/it-pros) alle licenze.
+Nelle tabelle seguenti vengono mostrate le funzionalità disponibili con ogni client compatibile con Skype for Business Server 2019 o Skype for Business Online. Puoi anche fare riferimento al confronto delle funzionalità [del client](../../SfbServer/plan-your-deployment/clients-and-devices/mobile-feature-comparison.md) mobile per Skype for Business per i confronti delle funzionalità client di smartphone e tablet. Anche la licenza di accesso client o la licenza di sottoscrizione utente acquistata dall'organizzazione avranno un impatto sulle funzionalità disponibili per gli utenti. La distribuzione del client Completo o Basic agli utenti dipende dalla licenza o dal piano scelto dall'organizzazione. Per altri [dettagli, vedi la Guida](https://products.office.com/skype-for-business/it-pros) alle licenze.
 
 > [!IMPORTANT]
-> Skype for Business Server 2019 e Skype for Business Online supportano i seguenti client rilasciati in precedenza: Lync 2013, Skype for Business 2015 e Skype for Business 2016, nonché il client Skype for Business 2019. Per informazioni su questi client se utilizzati con altri server, vedere le tabelle di confronto dei client per [Lync Server 2013](/previous-versions/office/lync-server-2013/lync-server-2013-desktop-client-comparison-tables) e Confronto delle funzionalità client desktop per [Skype for Business 2015.](../../SfbServer/plan-your-deployment/clients-and-devices/desktop-feature-comparison.md) 
+> Skype for Business Server 2019 e Skype for Business Online supportano i seguenti client rilasciati in precedenza: Lync 2013, Skype for Business 2015 e Skype for Business 2016, nonché il client Skype for Business 2019. Per informazioni su questi client se utilizzati con altri server, vedere Le tabelle di confronto client per [Lync Server 2013](/previous-versions/office/lync-server-2013/lync-server-2013-desktop-client-comparison-tables) e Confronto delle funzionalità client desktop per [Skype for Business 2015](../../SfbServer/plan-your-deployment/clients-and-devices/desktop-feature-comparison.md). 
 
 
 > [!NOTE]
@@ -86,13 +86,13 @@ In questa tabella vengono illustrate le funzionalità relative alla gestione dei
 
 In questa tabella vengono illustrate le funzionalità relative al supporto della messaggistica istantanea.
 
-|Funzionalità/funzionalità | Skype for Business client 2015, 2016 o 2019 | Skype for Business nel Mac | Client Lync 2013 | 
+|Funzionalità/funzionalità | Skype for Business 2015, 2016 o 2019 | Skype for Business nel Mac | Client Lync 2013 | 
 |:-----|:-----|:-----|:-----|  
 |Avviare la messaggistica istantanea con o inviare un messaggio di posta elettronica a un contatto  |&#x2714;|&#x2714;|&#x2714;|  
 |Spostarsi tra più conversazioni di messaggistica istantanea/Tenere traccia di più conversazioni in una singola finestra a schede   |&#x2714;|&#x2714;|&#x2714;| 
-|Registrare conversazioni istantanee in Outlook  |&#x2714;|&#x2714; Se la cronologia delle conversazioni sul lato server è attivata   |&#x2714;|   
+|Registrare conversazioni istantanee in Outlook  |&#x2714;|&#x2714; se la cronologia delle conversazioni sul lato server è attivata   |&#x2714;|   
 |Controllare l'ortografia |&#x2714;|&#x2714;||   
-|Ricerca competenze (con SharePoint Server)  <br/> Per la ricerca di competenze Skype for Business Server locale e locale SharePoint 2013.  |&#x2714;||&#x2714;|
+|Ricerca competenze (con SharePoint Server)  <br/> Per la ricerca di competenze sono necessari Skype for Business Server locali e locali SharePoint 2013.  |&#x2714;||&#x2714;|
 |Integrazione di Persistent Chat (Group Chat)  <br/> (non disponibile per Skype for Business Online)|&#x2714;||&#x2714;|  
 |Inoltrare una chat room persistente a una Skype for Business riunione con un clic  <br/> (non disponibile per Skype for Business Online) |&#x2714;||&#x2714;| 
 |Immagini in linea di mittente e destinatario nella finestra di messaggistica istantanea |&#x2714;||&#x2714;| 
@@ -108,15 +108,15 @@ In questa tabella vengono illustrate le funzionalità relative al supporto per l
 >  Skype for Business delle riunioni non sono disponibili in Skype for Business online autonomo Piano 1.  Il piano 1 viene [ritirato.](../../SfbOnline/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-for-business-online-plan-1-retirement.md
 )
 
-Nelle sessioni Skype-to-Skype, un utente di Skype for Business Online Piano 1 può partecipare alla condivisione di applicazioni e desktop se viene invitato da un utente che ha accesso alle funzionalità di condivisione.
-Per informazioni dettagliate, vedere Skype for Business [Online Service Description](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-service-description). 
+Nelle sessioni Skype-to-Skype, un utente di Skype for Business Online Piano 1 può partecipare alla condivisione desktop e alle applicazioni se viene invitato da un utente che ha accesso alle funzionalità di condivisione.
+Per informazioni dettagliate, vedere Skype for Business [Descrizione del servizio online.](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-service-description) 
 
 |Funzionalità/funzionalità | Skype for Business 2016 client | Skype for Business nel Mac | Skype for Business Web App | Skype for Business 2015 | Client Lync 2013 | 
 |:-----|:-----|:-----|:-----|:-----|:-----|  
 |Aggiungere la funzionalità audio al computer  |&#x2714;|&#x2714;|&#x2714;(richiede plug-in)  |&#x2714;|&#x2714;| 
 |Aggiungere la funzionalità video |&#x2714;|&#x2714;|&#x2714;(richiede plug-in) |&#x2714;|&#x2714;| 
 |Visualizzare video con più parti (visualizzazione Raccolta)  |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|
-|Condivisione dello schermo basato su video    |&#x2714;|&#x2714;|&#x2714; di sola visualizzazione   ||| 
+|Condivisione dello schermo basato su video    |&#x2714;|&#x2714;|&#x2714; solo visualizzazione   ||| 
 |Utilizzare controlli di relatore nell'ambito delle riunioni |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;| 
 |Accedere all'elenco dettagliato delle riunioni |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|  
 |Partecipare a conversazioni istantanee tra più utenti |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|  
@@ -126,7 +126,7 @@ Per informazioni dettagliate, vedere Skype for Business [Online Service Descript
 |Usare riunioni audio con accesso &#x2777;|&#x2714; |&#x2714;|&#x2714;  |&#x2714;|&#x2714;  |
 |Avviare una riunione riunione|&#x2714;|&#x2714;||&#x2714;|&#x2714;|  
 |Aggiungere e presentare file di Microsoft PowerPoint |&#x2714;| &#x2778; annotazioni non disponibili   |&#x2714;|&#x2714;|&#x2714;| 
-|Esplorare i file di Microsoft PowerPoint |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;| 
+|Esplorare i file PowerPoint Microsoft |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;| 
 |Aggiungere e modificare note OneNote riunione  |&#x2714;||Solo modifica (non aggiunta)  |&#x2714;|&#x2714;|
 |Utilizzare una lavagna |&#x2714;||&#x2714;|&#x2714;|&#x2714;|
 |Effettuare sondaggi |&#x2714;||&#x2714;|&#x2714;|&#x2714;|
@@ -159,7 +159,7 @@ Per informazioni dettagliate, vedere Skype for Business [Online Service Descript
 Questa tabella illustra le funzionalità correlate al supporto dei servizi vocali.
 
 > [!NOTE]
-> Skype for Business Le funzionalità vocali (telefonia) sono limitate a determinati Skype for Business di sottoscrizione online. Per informazioni dettagliate, vedere Skype for Business [Online Service Description](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-service-description). 
+> Skype for Business Le funzionalità vocali (telefonia) sono limitate a determinati Skype for Business di sottoscrizione online. Per informazioni dettagliate, vedere Skype for Business [Descrizione del servizio online.](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-service-description) 
 
  | Funzionalità/funzionalità | Skype for Business 2015, 2016 o 2019 | Skype for Business nel Mac | Client Lync 2013 |  
 |:-----|:-----|:-----|:-----| 
@@ -207,9 +207,9 @@ In questa tabella vengono illustrate le funzionalità relative al supporto per l
 |Registrazione sul lato client di trasferimenti di file, pagine OneNote condivise e PowerPoint annotazioni| &#x2714; &#x2777; ||&#x2714; &#x2777; |
 |Selezionare la risoluzione di registrazione preferita  |&#x2714;||&#x2714;|
 
- &#x2776; registrazione non è disponibile in alcuni piani autonomi Skype for Business Online. La registrazione richiede diritti Skype for Business client completi.
+ &#x2776; la registrazione non è disponibile in Skype for Business piani autonomi online. La registrazione richiede diritti Skype for Business client completi.
 
- &#x2777; registrazione di trasferimenti di file, pagine OneNote condivise e PowerPoint non è disponibile in Skype for Business Online.
+ &#x2777; registrazione dei trasferimenti di file, delle OneNote condivise e delle PowerPoint non è disponibile in Skype for Business Online.
 
 ## <a name="modern-authentication"></a>Autenticazione moderna
 <a name="BKMK_Recording"> </a>
@@ -234,9 +234,9 @@ In questa tabella vengono illustrate le funzionalità relative al supporto per l
 
  | Funzionalità/funzionalità | Skype for Business 2015, 2016 o 2019 | Skype for Business nel Mac | Client Lync 2013 |  
 |:-----|:-----|:-----|:-----|  
-|Archiviazione delle conversazioni di messaggistica istantanea nella Outlook conversazioni|&#x2714; &#x2776; |&#x2714; Se la cronologia delle conversazioni sul lato server è attivata  |&#x2714; &#x2776; | 
+|Archiviazione delle conversazioni di messaggistica istantanea nella Outlook conversazioni|&#x2714; &#x2776; |&#x2714; se la cronologia delle conversazioni sul lato server è attivata  |&#x2714; &#x2776; | 
 |Archiviazione sul lato client di audio, video, condivisione applicazioni, condivisione desktop e contenuto caricato  |&#x2714; &#x2776; ||&#x2714; &#x2776; |
-|Archiviazione lato client di trasferimenti di file, pagine OneNote condivise e PowerPoint annotazioni (non disponibile in Skype for Business Online)  |&#x2714;||&#x2714;|
+|Archiviazione sul lato client di trasferimenti di file, pagine OneNote condivise e PowerPoint annotazioni (non disponibile in Skype for Business Online)  |&#x2714;||&#x2714;|
 |Accedere ai log di accesso Skype for Business'icona nella barra delle applicazioni |&#x2714;||&#x2714;|
 
  &#x2776; Per gli utenti di Skype for Business Online, questa funzionalità richiede Exchange Online ed è controllata dall'attributo di blocco Exchange cassetta postale In-Place'utente.

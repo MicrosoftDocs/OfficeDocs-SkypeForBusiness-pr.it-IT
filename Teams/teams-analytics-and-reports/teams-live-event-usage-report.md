@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams di utilizzo degli eventi live
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -13,24 +13,24 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare il report sull Teams di utilizzo degli eventi live nell'interfaccia di amministrazione di Microsoft Teams per ottenere una panoramica delle attività Teams eventi live nell'organizzazione.
+description: Informazioni su come usare il report sull Teams di utilizzo degli eventi in tempo reale nell'interfaccia di amministrazione di Microsoft Teams per ottenere una panoramica delle attività Teams eventi live nell'organizzazione.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d9f11e64daf1b530704d79c512e5741cda18a48
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: a6c533a9c07c1c620dbc1bd2d26919bbf5251cf3
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58729555"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60763024"
 ---
 # <a name="microsoft-teams-live-event-usage-report"></a>Microsoft Teams di utilizzo degli eventi live
 
-Il Teams di utilizzo degli eventi in tempo reale nell'interfaccia Microsoft Teams di amministrazione mostra la panoramica delle attività per gli eventi live che si svolgono nell'organizzazione. È possibile visualizzare le informazioni sull'utilizzo, tra cui lo stato dell'evento, l'ora di inizio, le visualizzazioni e il tipo di produzione per ogni evento. È possibile ottenere informazioni approfondite sulle tendenze di utilizzo e vedere chi nell'organizzazione pianifica, presenta e produce eventi live.
+Il Teams di utilizzo degli eventi in tempo reale nell'interfaccia di amministrazione Microsoft Teams mostra la panoramica delle attività per gli eventi live che si svolgono nell'organizzazione. È possibile visualizzare le informazioni sull'utilizzo, tra cui lo stato dell'evento, l'ora di inizio, le visualizzazioni e il tipo di produzione per ogni evento. È possibile ottenere informazioni approfondite sulle tendenze di utilizzo e vedere chi nell'organizzazione pianifica, presenta e produce eventi live.
 
 ## <a name="view-the-live-event-usage-report"></a>Visualizzare il report sull'utilizzo degli eventi in tempo reale
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su Analisi & **report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare **Teams'utilizzo degli eventi live.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Analisi & report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare **Teams'utilizzo degli eventi live.**
 2. In **Intervallo di date** selezionare un intervallo predefinito o impostare un intervallo personalizzato. È possibile impostare un intervallo in modo da visualizzare i dati fino a un anno, sei mesi prima e dopo la data corrente.
 3. (Facoltativo) In **Organizzatore** è possibile scegliere di visualizzare solo gli eventi live organizzati da un utente specifico.
 4. Fare clic **su Esegui report.**  

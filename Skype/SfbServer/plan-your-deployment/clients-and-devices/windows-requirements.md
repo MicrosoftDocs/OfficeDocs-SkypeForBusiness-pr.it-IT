@@ -1,6 +1,6 @@
 ---
 title: Windows client e supporto software
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
@@ -17,21 +17,21 @@ ms.collection:
 ms.custom: ''
 ms.assetid: a6851e38-ba9a-4f19-9aa7-d8accf4d62b3
 description: 'Riepilogo: esaminare i requisiti di Windows client durante la pianificazione Skype for Business Server.'
-ms.openlocfilehash: 755f60030c905bfb5a5f488e2573c12b3396ab1e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 143fdf0e03f6ea125e7b1cbfb3aa0e7a6a93788b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58627948"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60770214"
 ---
 # <a name="windows-client-requirements-and-software-support"></a>Windows client e supporto software
  
 **Riepilogo:** Esaminare i requisiti Windows supporto client durante la pianificazione Skype for Business Server.
   
-In questa sezione viene riepilogato il software necessario per supportare i Skype for Business Windows client. Questi client vengono installati quando Microsoft 365 o Office 365 e sono disponibili anche in [Download Skype for Business su tutti i dispositivi.](https://products.office.com/skype-for-business/download-app?tab=tabs-3)
+In questa sezione viene riepilogato il software necessario per supportare i Skype for Business Windows client. Questi client vengono installati Microsoft 365 o Office 365 e sono disponibili anche in [Download Skype for Business su tutti i dispositivi.](https://products.office.com/skype-for-business/download-app?tab=tabs-3)
   
 > [!NOTE]
-> Il componente aggiuntivo per riunioni online per Skype for Business, che supporta la gestione delle riunioni dall'interno del client di messaggistica e collaborazione di Outlook, viene installato automaticamente con Skype for Business. 
+> Il componente aggiuntivo per riunioni online per Skype for Business, che supporta la gestione delle riunioni dal client di messaggistica e collaborazione di Outlook, viene installato automaticamente con Skype for Business. 
   
 **Software necessario per Skype for Business client e il componente aggiuntivo per riunioni online**
 
@@ -77,7 +77,7 @@ Di seguito sono riportati Skype for Business per Windows Phone prerequisiti.
 
 [Pianificare i client riunioni (App Web e app Riunioni)](meetings-clients.md)
   
-[Skype for Business sui requisiti del client Mac](mac-requirements.md)
+[Skype for Business dei client Mac](mac-requirements.md)
 
 [Scaricare Skype for Business tra tutti i dispositivi](https://products.office.com/skype-for-business/download-app?tab=tabs-3)
   

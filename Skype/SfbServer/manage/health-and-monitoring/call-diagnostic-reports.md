@@ -1,7 +1,7 @@
 ---
 title: Rapporti di diagnostica delle chiamate in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 8d362dd9-a119-4601-a3b4-3e7ed0aaa92e
 description: 'Riepilogo: informazioni sui rapporti di diagnostica delle chiamate multi-utente usati in Skype for Business Server.'
-ms.openlocfilehash: 4487c320d591c5d64fd209818824ffd1ce045d48
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b98dfdfd6f39893c70297f837355dcccbe0096a1
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58623648"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60762454"
 ---
 # <a name="call-diagnostic-reports-in-skype-for-business-server"></a>Rapporti di diagnostica delle chiamate in Skype for Business Server
  
@@ -27,7 +27,7 @@ Nei rapporti di diagnostica delle chiamate vengono forniti informazioni riepilog
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Rapporto riepilogativo diagnostica chiamate in Skype for Business Server](summary-report.md) Fornisce un riepilogo complessivo delle sessioni peer-to-peer e delle sessioni di conferenza non riuscite. Le sessioni peer-to-peer sono sessioni che coinvolgono solo due partecipanti. Le sessioni di conferenza coinvolgono tre o più partecipanti.
+- [Rapporto riepilogativo diagnostica chiamate Skype for Business Server](summary-report.md) Fornisce un riepilogo complessivo delle sessioni peer-to-peer non riuscite e delle sessioni di conferenza. Le sessioni peer-to-peer sono sessioni che coinvolgono solo due partecipanti. Le sessioni di conferenza coinvolgono tre o più partecipanti.
     
 - [Rapporto di diagnostica attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md) Fornisce una visualizzazione generale delle tendenze delle sessioni peer-to-peer non riuscite. Una sessione peer-to-peer coinvolge solo due partecipanti.
     

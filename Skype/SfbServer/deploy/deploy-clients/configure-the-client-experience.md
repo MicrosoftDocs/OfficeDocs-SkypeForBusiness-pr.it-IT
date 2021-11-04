@@ -1,7 +1,7 @@
 ---
 title: Configurare l'esperienza client con Skype for Business 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,26 +12,26 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 66867a96-ff00-497d-889c-2e908cc384ce
 description: "Riepilogo: leggere questo argomento per informazioni su come configurare l'esperienza client per Skype for Business utenti."
-ms.openlocfilehash: 61bb5e83378215561be2e073883b2e573d141000
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f7cbbe60de10d50d231faa201f3c8830c14f7450
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58581830"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60773386"
 ---
 # <a name="configure-the-client-experience-with-skype-for-business-2015"></a>Configurare l'esperienza client con Skype for Business 2015
  
 **Riepilogo:** Leggere questo argomento per informazioni su come configurare l'esperienza client per Skype for Business 2015.
   
-Skype for Business 2015 offre una nuova esperienza utente basata sull'esperienza Skype prodotto consumer. Oltre a tutte le funzionalità di Lync, Skype for Business nuove funzionalità con controlli semplificati e icone familiari. Per informazioni dettagliate sulla nuova esperienza client, vedere [Explore Skype for Business.](https://go.microsoft.com/fwlink/?LinkId=529022)
+Skype for Business 2015 offre una nuova esperienza utente basata sull'esperienza Skype prodotto consumer. Oltre a tutte le funzionalità di Lync, Skype for Business nuove funzionalità con controlli semplificati e icone familiari. Per informazioni dettagliate sulla nuova esperienza client, vedere [Explore Skype for Business](https://go.microsoft.com/fwlink/?LinkId=529022).
   
-Skype for Business Server supporta la nuova Skype for Business client e l'esperienza client Lync. Gli amministratori possono scegliere l'esperienza client preferita per gli utenti. Ad esempio, è possibile distribuire l'esperienza client Lync fino a quando gli utenti dell'organizzazione non hanno una formazione completa nella nuova esperienza Skype for Business utente. In caso contrario, se non sono stati ancora aggiornati tutti gli utenti a Skype for Business Server, è consigliabile che tutti gli utenti abbiano la stessa esperienza client finché non vengono aggiornati tutti al nuovo server.
+Skype for Business Server supporta la nuova esperienza Skype for Business client e l'esperienza client Lync. Gli amministratori possono scegliere l'esperienza client preferita per gli utenti. Ad esempio, è possibile distribuire l'esperienza client Lync fino a quando gli utenti dell'organizzazione non hanno una formazione completa nella nuova esperienza Skype for Business utente. In caso contrario, se non sono stati ancora aggiornati tutti gli utenti a Skype for Business Server, è consigliabile che tutti gli utenti abbiano la stessa esperienza client finché non vengono aggiornati tutti al nuovo server.
   
 > [!IMPORTANT]
 > Se nell'organizzazione sono distribuiti Skype for Business Server e Lync Server, l'esperienza client predefinita varia a seconda delle versioni del server e delle impostazioni dell'interfaccia utente. Quando gli utenti Skype for Business per la prima volta, visualizzano sempre l'interfaccia Skype for Business utente, anche se è stata selezionata l'esperienza client Lync. Dopo alcuni minuti, agli utenti viene richiesto di passare alla modalità Lync. Per ulteriori informazioni, vedere **First launch client behavior** più avanti in questo argomento.
   
 > [!NOTE]
-> L'esperienza client di Lync 2013 non è un'opzione per le versioni client Skype for Business 2016 o versioni successive. Prima di tentare di configurare l'ambiente client per l'utilizzo del client Lync 2013, controllare la versione client per assicurarsi che non inizi con il numero 16. ad esempio: 16.x.x.x. 
+> L'esperienza client lync 2013 non è un'opzione per Skype for Business versioni client 2016 o successive. Prima di tentare di configurare l'ambiente client per l'utilizzo del client Lync 2013, controllare la versione client per assicurarsi che non inizi con il numero 16. ad esempio: 16.x.x.x. 
   
 ## <a name="configure-the-client-experience"></a>Configurare l'esperienza client
 
@@ -43,7 +43,7 @@ Set-CsClientPolicy  [-Identity <XdsIdentity] [-EnableSkypeUI <$true | $false>]
 
 dove XdsIdentity fa riferimento al criterio globale o a un criterio sito denominato.
   
-Il comando seguente seleziona l'Skype for Business client per tutti gli utenti dell'organizzazione interessati dal criterio globale (ricordare che i criteri specifici del sito o dell'utente hanno la precedenza sul criterio globale): 
+Il comando seguente consente di selezionare l'Skype for Business client per tutti gli utenti dell'organizzazione interessati dal criterio globale (ricordare che i criteri specifici del sito o dell'utente hanno la precedenza sul criterio globale): 
   
 ```powershell
 Set-CsClientPolicy -Identity Global -EnableSkypeUI $true
@@ -81,7 +81,7 @@ Per impostazione predefinita, quando gli utenti avviano Skype for Business 2015 
   
 Se si desidera visualizzare l'interfaccia utente di Lync quando gli utenti avviano il client Skype for Business per la prima volta, eseguire la procedura seguente prima che il client venga avviato per la prima volta dopo l'aggiornamento:
   
-1. Verificare che il valore di sia impostato su $False nel criterio  `EnableSkypeUI` in uso come descritto in precedenza.
+1. Verificare che il valore di sia impostato $False nel criterio  `EnableSkypeUI` in uso come descritto in precedenza.
     
 2. Aggiornare il Registro di sistema nel computer dell'utente. È consigliabile eseguire questa operazione prima che gli utenti avviino per la prima volta il client Skype for Business ed è consigliabile eseguire questa operazione una sola volta. Per informazioni su come creare un oggetto Criteri di gruppo per aggiornare il Registro di sistema in un computer aggiunto a un dominio, vedere la sezione più avanti nell'argomento.
     
@@ -103,7 +103,7 @@ L'interfaccia utente di Lync verrà ora visualizzata quando gli utenti avviano S
   
 ### <a name="control-the-display-of-the-welcome-screen-tutorial"></a>Controllare la visualizzazione dell'esercitazione sulla schermata iniziale
 
-Quando gli utenti aprono il client Skype for Business, il comportamento predefinito prevede la visualizzazione di una schermata iniziale che include *7 suggerimenti* rapidi che la maggior parte delle persone richiede . È possibile disattivare la visualizzazione della schermata iniziale ma consentire comunque agli utenti di accedere all'esercitazione aggiungendo il seguente valore del Registro di sistema nel computer client:
+Quando gli utenti aprono Skype for Business client, il comportamento predefinito prevede la visualizzazione di una schermata iniziale che include 7 suggerimenti rapidi che la maggior parte *delle persone richiede.* È possibile disattivare la visualizzazione della schermata iniziale ma consentire comunque agli utenti di accedere all'esercitazione aggiungendo il seguente valore del Registro di sistema nel computer client:
   
 Nella chiave **[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Lync]** crea un nuovo **valore DWORD (32 bit).** Il **nome del** valore deve essere **IsBasicTutorialSeenByUser** e i dati **value** devono essere impostati su **1.**
   
@@ -123,7 +123,7 @@ Lync
 "TutorialFeatureEnabled"=dword:00000000
 ```
 
-Puoi riattivare l'esercitazione impostando dati **valore** su **1.**
+Puoi riattivare l'esercitazione impostando i **dati valore** su **1.**
   
 ## <a name="default-client-behaviors"></a>Comportamenti client predefiniti
 
@@ -138,7 +138,7 @@ Se nell'organizzazione sono distribuiti Skype for Business Server e Lync Server,
 |Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |Impostazione predefinita  <br/> |L'utente ha chiesto di passare alla modalità Lync (l'utente può passare a Skype for Business in un secondo momento se si modifica l'impostazione dell'interfaccia utente $true)  <br/> |
 |Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |Vero  <br/> |Skype for Business  <br/> |
 |Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |Falso  <br/> |L'utente ha chiesto di passare alla modalità Lync (l'utente può passare a Skype for Business in un secondo momento se si modifica l'impostazione dell'interfaccia utente $true)  <br/> |
-|Lync Server 2010 o Lync Server 2013 (senza patch)  <br/> |Impostazione predefinita  <br/> |L'utente ha chiesto di passare alla modalità Lync (l'utente non può passare Skype for Business successivo)  <br/> |
+|Lync Server 2010 o Lync Server 2013 (senza patch)  <br/> |Impostazione predefinita  <br/> |L'utente ha chiesto di passare alla modalità Lync (l'utente non può passare a Skype for Business successivo)  <br/> |
    
 La tabella seguente mostra l'esperienza client quando l'amministratore modifica l'impostazione iniziale per l'Skype'interfaccia utente:
   
@@ -147,7 +147,7 @@ La tabella seguente mostra l'esperienza client quando l'amministratore modifica 
 |:-----|:-----|:-----|:-----|
 |Skype for Business Server |Vero  <br/> |L'utente ha chiesto di passare a Skype for Business  <br/> |Skype for Business  <br/> |
 |Skype for Business Server |Falso  <br/> |Modalità Lync  <br/> |L'utente ha chiesto di passare alla modalità Lync  <br/> |
-|Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |Vero  <br/> |L'utente ha chiesto di passare a Skype for Business  <br/> |Skype for Business  <br/> |
+|Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |True  <br/> |L'utente ha chiesto di passare a Skype for Business  <br/> |Skype for Business  <br/> |
 |Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |Falso  <br/> |Modalità Lync  <br/> |L'utente ha chiesto di passare alla modalità Lync  <br/> |
 |Lync Server 2010 o Lync Server 2013 (senza patch)  <br/> |Impostazione predefinita  <br/> |Modalità Lync (non è possibile passare a Skype for Business)  <br/> |Modalità Lync (non è possibile passare a Skype for Business)  <br/> |
    
@@ -175,7 +175,7 @@ Nella procedura seguente viene descritto come modificare il Registro di sistema 
     
 4. Fai clic con il pulsante destro del mouse sul nuovo oggetto Criteri di gruppo appena creato e scegli **Modifica** dal menu.
     
-5. **Nell'Editor Gestione Criteri di gruppo** espandere Configurazione **utente,** **Preferenze,** **Windows Impostazioni** e quindi selezionare il nodo **Registro di** sistema.
+5. **Nell'Editor Gestione Criteri di gruppo** espandere Configurazione **utente,** **Preferenze,** espandere **Windows Impostazioni** e quindi selezionare il nodo **Registro di** sistema.
     
 6. Fare clic con il pulsante destro del mouse sul nodo **Registro** di sistema e quindi **scegliere Nuovo elemento** del Registro di  >  **sistema**.
     

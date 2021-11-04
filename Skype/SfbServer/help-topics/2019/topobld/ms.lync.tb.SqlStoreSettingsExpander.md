@@ -1,7 +1,7 @@
 ---
 title: Espansione delle impostazioni dell'archivio SQL
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: bd269d52-6f87-4433-b9b0-2b543fea845d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per modificare le proprietà di un SQL Server database, è necessario modificare l'istanza SQL Server database. Non è possibile usare la finestra di dialogo Modifica proprietà per azioni come lo spostamento del database del server di archiviazione da un computer all'altro. Inoltre, non è possibile utilizzare la finestra di dialogo Modifica proprietà per modificare l'istanza di SQL Server che ospita l'archivio di gestione centrale.
-ms.openlocfilehash: 46fc03549c4ced4f0a3c44882eab3fcfc03e7df5
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 53d0092b634e102f7fd2511ff57d32fe575e886e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58625378"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60739692"
 ---
 # <a name="sql-store-settings-expander"></a>Espansione delle impostazioni dell'archivio SQL
  
@@ -38,7 +38,7 @@ Per modificare l'istanza SQL Server utilizzata da qualsiasi database diverso dal
     
    - Per utilizzare l'istanza SQL Server predefinita, selezionare **Istanza predefinita** e quindi fare clic su **OK.**
     
-   - Per utilizzare un'istanza di database denominata, selezionare **Istanza denominata**, immettere il nome dell'istanza nella casella di testo e quindi fare clic su **OK**. È necessario immettere solo il nome dell'istanza ,ad esempio ArchivingInstance, e non l'SQL Server percorso completo.
+   - Per utilizzare un'istanza di database denominata, selezionare **Istanza denominata**, immettere il nome dell'istanza nella casella di testo e quindi fare clic su **OK**. È necessario immettere solo il nome dell'istanza,ad esempio ArchivingInstance, e non l'SQL Server percorso completo.
     
 Quando si utilizza  la finestra di dialogo Modifica proprietà, Generatore di topologie non verificherà che l'istanza di database immessa sia valida. Ad esempio, se si digita inavvertitamenteArchivingInstanec come nome dell'istanza e quindi si fa clic su **OK,** Generatore di topologie accetterà tale istanza non valida. Prima di pubblicare questa topologia, è necessario correggere questo errore: se non è possibile trovare un'istanza di SQL Server, Generatore di topologie non creerà tale istanza automaticamente.
   

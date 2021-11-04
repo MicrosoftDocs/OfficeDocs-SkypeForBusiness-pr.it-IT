@@ -1,7 +1,7 @@
 ---
 title: Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/7/2018
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 5fb5b189-56c1-49cf-92c8-e4fd6e2fdd5c
 description: 'Riepilogo: leggere questo argomento per informazioni su come configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 265065a5b4ff52dc65dccb4b0e045e3d9e21c452
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b4377d2151adfccd591bb7c59d7d8854f03e453b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58601881"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755635"
 ---
 # <a name="configure-high-availability-and-disaster-recovery-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015
  
@@ -32,7 +32,7 @@ Skype for Business Server supporta più modalità di disponibilità elevata per 
 > [!NOTE] 
 > La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
   
-Prima di configurare la distribuzione di Persistent Chat per la disponibilità elevata e il ripristino di emergenza, assicurarsi di avere familiarità con i concetti descritti in [Plan for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015.](../../plan-your-deployment/persistent-chat-server/high-availability-and-disaster-recovery.md) La soluzione di ripristino di emergenza per il server Chat persistente descritta in questi argomenti si basa su un pool di server Chat persistente estesa. Il contenuto della pianificazione descrive i requisiti delle risorse e la topologia di pool estesa che consente la disponibilità elevata e il ripristino di emergenza per il server Chat persistente, incluso l'utilizzo del mirroring SQL Server per la disponibilità elevata e il log shipping di SQL Server per il ripristino di emergenza.
+Prima di configurare la distribuzione di Persistent Chat per la disponibilità elevata e il ripristino di emergenza, assicurarsi di avere familiarità con i concetti descritti in [Plan for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015.](../../plan-your-deployment/persistent-chat-server/high-availability-and-disaster-recovery.md) La soluzione di ripristino di emergenza per il server Chat persistente descritta in questi argomenti si basa su un pool di server Chat persistente estesa. Il contenuto della pianificazione descrive i requisiti delle risorse e la topologia del pool estesa che consente la disponibilità elevata e il ripristino di emergenza per il server Chat persistente, incluso l'utilizzo del mirroring SQL Server per la disponibilità elevata e il log shipping di SQL Server per il ripristino di emergenza.
   
 ## <a name="use-topology-builder-to-configure-high-availability-and-disaster-recovery"></a>Utilizzare Generatore di topologie per configurare la disponibilità elevata e il ripristino di emergenza
 
@@ -48,7 +48,7 @@ In Generatore di topologie eseguire la procedura seguente per configurare la dis
     
     c. Abilitare il SQL Server log shipping.
     
-    d. Aggiungere il SQL Server log shipping secondario SQL Server archivio.
+    d. Aggiungere l'SQL Server log shipping secondario SQL Server archivio.
     
     e. Aggiungere il SQL Server mirror dell'archivio per il database secondario.
     
@@ -71,11 +71,11 @@ Utilizzando SQL Server Management Studio, connettersi all'istanza del database d
 6. Se la cartella di backup si trova nel server primario, digitare il percorso locale della cartella di backup nella casella Se la cartella di backup si trova nel server principale, digitare un percorso locale della cartella **(ad esempio: c:\backup).** Se la cartella di backup non si trova nel server principale, è possibile lasciare vuota questa casella.
     
     > [!IMPORTANT]
-    > Se l'account del servizio di SQL Server sul server primario viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella. 
+    > Se l'account di servizio SQL Server sul server primario viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella. 
   
 7. Configurare i **parametri Delete files older than e** Alert if no backup occurs **within** parameters.
     
-8. Esaminare la pianificazione del backup elencata nella casella **Pianificazione** in **Processo di backup.** Per personalizzare la pianificazione per l'installazione, fare clic **su Pianificazione** e modificare la pianificazione SQL Server agent in base alle esigenze.
+8. Esaminare la pianificazione del backup elencata nella casella **Pianificazione** in **Processo di backup.** Per personalizzare la pianificazione per l'installazione, fare clic **su Pianificazione** e modificare la pianificazione SQL Server Agent in base alle esigenze.
     
 9. In **Compressione** selezionare **Usa l'impostazione predefinita del server** e quindi fare clic su **OK.**
     
@@ -85,11 +85,11 @@ Utilizzando SQL Server Management Studio, connettersi all'istanza del database d
     
 12. Nella casella **Database secondario** selezionare il database **mgc** dall'elenco.
     
-13. Nella scheda **Inizializza database** secondario scegliere **l'opzione Sì,** generare un backup completo del database primario e ripristinarlo nel database secondario (e creare il database secondario se non esiste) .
+13. Nella scheda **Inizializza database** secondario scegliere **l'opzione Sì,** generare un backup completo del database primario e ripristinarlo nel database secondario (e creare il database secondario se non esiste).
     
 14. Nella casella **Cartella** di  destinazione per i file copiati della scheda Copia file digitare il percorso della cartella in cui devono essere copiati i backup dei registri delle transazioni. Questa cartella si trova spesso nel server secondario.
     
-15. Si noti la pianificazione della copia elencata nella **casella Pianificazione** in **Copia processo.** Per personalizzare la pianificazione per l'installazione, fare clic **su Pianificazione** e modificare la pianificazione SQL Server agent in base alle esigenze. Questa pianificazione deve essere approssimativamente la stessa della pianificazione di backup.
+15. Si noti la pianificazione della copia elencata nella **casella Pianificazione** in **Copia processo.** Per personalizzare la pianificazione per l'installazione, fare clic **su Pianificazione** e modificare la pianificazione SQL Server Agent in base alle esigenze. Questa pianificazione deve essere approssimativamente la stessa della pianificazione di backup.
     
 16. Nella scheda **Ripristino,** in **Stato database durante il ripristino dei backup,** scegliere l'opzione Nessuna modalità **di** ripristino.
     
@@ -124,11 +124,11 @@ Eseguire la procedura seguente per continuare il log shipping se viene eseguito 
 9. Se la cartella di backup si trova nel server primario, digitare il percorso locale della cartella di backup nella casella Se la cartella di backup si trova nel **server primario,** digitare un percorso locale per la cartella. Se la cartella di backup non si trova nel server principale, è possibile lasciare vuota questa casella.
     
     > [!IMPORTANT]
-    > Se l'account del servizio di SQL Server sul server primario viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella. 
+    > Se l'account di servizio SQL Server sul server primario viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella. 
   
 10. Configurare i **parametri Delete files older than e** Alert if no backup occurs **within** parameters.
     
-11. Esaminare la pianificazione del backup elencata nella casella **Pianificazione** in **Processo di backup.** Per personalizzare la pianificazione per l'installazione, fare clic su **Pianificazione** e modificare la pianificazione SQL Server Agent, in base alle esigenze.
+11. Esaminare la pianificazione del backup elencata nella casella **Pianificazione** in **Processo di backup.** Per personalizzare la pianificazione per l'installazione, fare clic **su Pianificazione** e modificare la pianificazione SQL Server Agent, in base alle esigenze.
     
     > [!IMPORTANT]
     > Utilizzare le stesse impostazioni utilizzate per il database primario. 
@@ -143,7 +143,7 @@ Eseguire la procedura seguente per continuare il log shipping se viene eseguito 
     
 16. Nella scheda **Inizializza database secondario** selezionare l'opzione **No, il database secondario viene inizializzato.**
     
-17. Nella scheda **Copia file,** in **Cartella** di destinazione per i file copiati, digitare il percorso della cartella in cui copiare i backup dei registri delle transazioni e fare clic su **OK.** Questa cartella si trova spesso nel server secondario.
+17. Nella scheda **Copia file,** in **Cartella** di destinazione per i file copiati, digitare il percorso della cartella in cui devono essere copiati i backup dei registri delle transazioni e fare clic su **OK.** Questa cartella si trova spesso nel server secondario.
     
 18. Aprire **l'elenco a** discesa Configurazione script e selezionare **Configurazione script in Nuova finestra query.**
     

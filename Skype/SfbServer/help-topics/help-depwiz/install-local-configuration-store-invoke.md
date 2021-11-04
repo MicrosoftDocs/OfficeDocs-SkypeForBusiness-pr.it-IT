@@ -1,7 +1,7 @@
 ---
 title: Installare un archivio di configurazione locale (Invoke)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 6a3cb2e6-e253-4a3d-b1d7-2b93b3cfc36a
 description: "Nel riquadro Comandi di esecuzione viene visualizzato lo stato delle attività per l'installazione della replica di sola lettura locale dell'archivio di gestione centrale. Durante l'esecuzione delle attività, il riquadro attività viene aggiornato mentre vengono eseguiti i comandi. È consigliabile controllare lo stato delle attività e prendere nota degli eventuali errori o avvisi che vengono visualizzati. Al termine delle attività, viene visualizzato il messaggio Stato attività: Completato e nell'elenco a discesa dei file di registro vengono visualizzati i nomi dei file di registro. Per visualizzare i file di registro creati, selezionare quello desiderato e fare clic su Visualizza registro. Esaminare tutti i file di registro per ricercare messaggi di operazione riuscita, di errore e di avviso."
-ms.openlocfilehash: d72f535e93a2ae2f63ddd99515a8a05e287d1281
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: bee4417114b8559d00bf01f17e2f030c38d94035
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58601631"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60758538"
 ---
 # <a name="install-local-configuration-store-invoke"></a>Installare un archivio di configurazione locale (Invoke)
  

@@ -1,14 +1,14 @@
 ---
 title: Impostazioni di rete per le funzionalità vocali del cloud
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.topic: conceptual
 ms.reviewer: roykuntz
 ms.service: msteams
 audience: admin
 search.appverid: MET150
-description: Informazioni sulle impostazioni di rete che è necessario configurare per il routing Location-Based routing diretto e sui servizi di emergenza migliorati.
+description: Informazioni sulle impostazioni di rete che è necessario configurare per il routing Location-Based routing diretto e i servizi di emergenza migliorati.
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 425f453e5e1b7f90b1486aa35d09f7919e0c33b4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2165ea1e4e9732f0e840b4f0949b230f5243121d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58580220"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60769944"
 ---
 # <a name="network-settings-for-cloud-voice-features-in-microsoft-teams"></a>Impostazioni di rete per le funzionalità vocali cloud in Microsoft Teams
 

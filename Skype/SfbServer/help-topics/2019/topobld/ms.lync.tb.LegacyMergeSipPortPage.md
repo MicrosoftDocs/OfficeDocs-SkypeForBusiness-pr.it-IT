@@ -1,7 +1,7 @@
 ---
 title: Porta SIP per l'unione legacy
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 19bf6b9b-d111-4285-9735-62fd9a04dc3b
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'La porta predefinita SIP del protocollo TCP (Transmission Control Protocol) per la comunicazione con client, pool Front End legacy e server è 5061. Se non è stato utilizzato il valore predefinito, selezionare Porta SIP per tutti i pool e i server: e immettere il nuovo valore.'
-ms.openlocfilehash: cbe3f7e45f93a39423a6ceeca0659bd5c66e1326
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 0bda73048a456a6a4c0be8f4c0556eafedad33de
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58636300"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60739712"
 ---
 # <a name="legacy-merge-sip-port"></a>Porta SIP per l'unione legacy
  

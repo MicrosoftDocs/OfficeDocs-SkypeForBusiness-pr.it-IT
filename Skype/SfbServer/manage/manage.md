@@ -1,7 +1,7 @@
 ---
 title: Gestire Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,13 +12,13 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 603ccdfd-9985-41d8-a526-8570ba9b1b76
-description: 'Riepilogo: esplorare questi collegamenti per informazioni su come gestire e gestire le Skype for Business Server.'
-ms.openlocfilehash: 550e05fdfefb5f3743452b2ecf080b9835297b45
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+description: 'Riepilogo: esplorare questi collegamenti per informazioni su come gestire e gestire Skype for Business Server.'
+ms.openlocfilehash: 23312383a68b05de6d93e52b68f3b5c4c36192dd
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60012520"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60763600"
 ---
 # <a name="manage-skype-for-business-server"></a>Gestire Skype for Business Server 
 
@@ -39,7 +39,7 @@ Visualizzare le risorse seguenti per informazioni su come gestire i Skype for Bu
    
 ##  <a name="articles-about-managing-skype-for-business-server"></a>Articoli sulla gestione dei Skype for Business Server
 
-Gli articoli seguenti su come configurare, monitorare e gestire le Skype for Business Server sono disponibili per la visualizzazione online. 
+Gli articoli seguenti su come configurare, monitorare e gestire Skype for Business Server sono disponibili per la visualizzazione online. 
   
 |&nbsp;|Contenuto|Descrizione|
 |:-----|:-----|:-----|

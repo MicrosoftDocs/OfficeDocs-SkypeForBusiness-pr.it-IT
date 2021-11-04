@@ -1,7 +1,7 @@
 ---
 title: Attività per Teams
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -21,12 +21,12 @@ description: Informazioni su come gestire le attività nell'Microsoft Teams di a
 ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ef615924a4c449a3b2b408d929cf3d2678e4a1e6
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 1c2dbc67fdbc55c9ff2a7b2e16cb0957886de3dd
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728675"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60758308"
 ---
 # <a name="assignments-in-teams-for-education"></a>Assegnare attività in Teams per l'istruzione
 
@@ -37,7 +37,7 @@ Le funzionalità Attività e voti in Teams per l'istruzione i docenti possono as
 > [!Note]
 > Per informazioni dettagliate Teams attività in piattaforme diverse, vedere Teams [funzionalità per piattaforma.](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3)
 
-## <a name="assignments-integrations-in-the-microsoft-teams-admin-center"></a>Integrazioni delle attività nell'interfaccia Microsoft Teams di amministrazione
+## <a name="assignments-integrations-in-the-microsoft-teams-admin-center"></a>Integrazioni di assegnazioni nell'interfaccia Microsoft Teams di amministrazione
 
 Usando le impostazioni di amministrazione nell'Microsoft Teams di amministrazione, è possibile attivare o disattivare le funzionalità per i docenti all'interno dell'organizzazione e per i loro studenti. Di seguito sono riportate le impostazioni relative alle attività:
 
@@ -52,7 +52,7 @@ I messaggi di posta elettronica dei tutori vengono inviati ogni fine settimana a
 2. Attivare l'impostazione Guardiano nell'Microsoft Teams di amministrazione, perché l'impostazione è disattivata per impostazione predefinita. In questo modo gli insegnanti potranno inviare un riepilogo settimanale.
 
    > [!NOTE]
-   > Gli insegnanti possono rifiutare esplicitamente il digest deselezionando l'impostazione all'interno del proprio team di classe personale ( Attività Impostazioni > messaggi di posta elettronica dei **genitori/tutori**).
+   > Gli insegnanti possono rifiutare esplicitamente il digest deselezionando l'impostazione all'interno del proprio team di classe personale ( Attività **Impostazioni > e-mail genitori/tutori**).
 
 Per verificare che genitori otterrà il messaggio di posta elettronica, i tre elementi seguenti devono essere veri:
 
@@ -69,11 +69,11 @@ L'impostazione predefinita per questa funzionalità è - **Disattivato.**
 ### <a name="makecode"></a>MakeCode
 Microsoft MakeCode è una piattaforma di codifica basata su blocchi che dà vita all'informatica per tutti gli studenti. 
 
-MakeCode è un prodotto Microsoft soggetto alle condizioni per l'uso [e](https://go.microsoft.com/fwlink/?LinkID=206977) alle politiche [sulla privacy](https://go.microsoft.com/fwlink/?LinkId=521839) microsoft.
+MakeCode è un prodotto Microsoft soggetto alle condizioni per l'uso [e](https://go.microsoft.com/fwlink/?LinkID=206977) alle politiche sulla [privacy microsoft.](https://go.microsoft.com/fwlink/?LinkId=521839)
 
 L'impostazione predefinita per questa funzionalità è - **Disattivato.**
 
-Per abilitare le assegnazioni MakeCode in Teams, passare all'interfaccia di  amministrazione di **Teams**, passare alla sezione Attività e attivare l'opzione MakeCode **.** Fare clic su **Salva**. Consentire l'applicazione di queste impostazioni per alcune ore.
+Per abilitare le assegnazioni MakeCode in Teams, passare all'interfaccia di  amministrazione di **Teams**, passare alla sezione Attività e impostare l'interruttore MakeCode su **Attivato.** Fare clic su **Salva**. Consentire l'applicazione di queste impostazioni per alcune ore.
 
 Per altre informazioni sul funzionamento di questa funzionalità, vedere questa [dimostrazione video.](https://makecode.com/blog/teams/teams-assignments)
 
@@ -113,4 +113,4 @@ Dopo aver fatto **clic sul pulsante** Salva nell'interfaccia di amministrazione 
 
 Per rimuovere assegnazioni e voti per un singolo utente, passare **all'interfaccia** di amministrazione di Teams e passare alle app Teams **>** Criteri di autorizzazione per creare una nuova definizione dei criteri di autorizzazione delle app.  Quando si crea la nuova definizione dei  criteri, impostare i criteri delle **app Microsoft** su Blocca app specifiche e consentire a tutti gli altri utenti e aggiungere Attività **all'elenco** delle applicazioni bloccate. Dopo aver salvato la nuova definizione dei criteri, assegnarla agli utenti appropriati.
 
-Per rimuovere attività e voti per l'intero tenant, passare **Teams** Interfaccia di amministrazione, passare Teams app >  **Gestisci app** e cercare e selezionare Attività nell'elenco delle applicazioni. Modificare l'impostazione dello stato nella pagina Delle impostazioni dell'applicazione Assegnazione su _Bloccato_. 
+Per rimuovere attività e voti per l'intero tenant, passare **all'interfaccia** di amministrazione di Teams , passare alle  app **Teams > Gestisci app** e cercare e selezionare Attività nell'elenco delle applicazioni. Modificare l'impostazione dello stato nella pagina Delle impostazioni dell'applicazione Assegnazione su _Bloccato_. 

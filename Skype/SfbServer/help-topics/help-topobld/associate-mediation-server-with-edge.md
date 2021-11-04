@@ -1,7 +1,7 @@
 ---
 title: Associare Mediation Server al server perimetrale
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 65c5d93c-9f0d-4a60-8bd1-d05eb6bc2088
 description: 'Per definire un Mediation Server, specificare le impostazioni di associazione del Mediation Server a un Front End Server e a un server o pool di server perimetrali. Per associare il Mediation Server o il pool Mediation Server a un server o pool di server perimetrali, eseguire le operazioni seguenti:'
-ms.openlocfilehash: e213b47575a28b3803d0ccd63f7d986416dbd0f7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: fe4745dc92369c47bdd1e1292bd0b4e6ddab2099
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58630830"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60758328"
 ---
 # <a name="associate-mediation-server-with-edge"></a>Associare Mediation Server con Edge
  

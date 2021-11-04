@@ -1,7 +1,7 @@
 ---
 title: Pianificare IPv6 in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 01f77196-38f4-4292-9480-2e2fbd57eabe
 description: 'Riepilogo: implementare IPv6 prima di installare Skype for Business Server.'
-ms.openlocfilehash: ff58da4a4064c91949446e9107d0f3ff07b720e1
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 6126cd2211a2df0f0a24672d61cf11ce89ad23c7
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58593510"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60770064"
 ---
 # <a name="plan-for-ipv6-in-skype-for-business"></a>Pianificare IPv6 in Skype for Business
  
@@ -52,7 +52,7 @@ Sono disponibili tre opzioni per la configurazione degli indirizzi IP in Skype f
     
 - **Solo IPv6** Al contrario, un'implementazione IPv6 completa escluderà la comunicazione con molti dispositivi esistenti.
     
-- **Dual Stack** Dual stack è una rete in cui sono abilitati sia gli indirizzi IPv4 che gli indirizzi IPv6. Questa configurazione è supportata in Skype for Business Server perché nella maggior parte dei casi la transizione da full-IPv4 a full-IPv6 può richiedere diversi anni.
+- **Dual Stack** Dual stack è una rete in cui sono abilitati sia gli indirizzi IPv4 che gli indirizzi IPv6. Questa configurazione è supportata in Skype for Business Server perché nella maggior parte dei casi la transizione da full-IPv4 a full-IPv6 avrà diversi anni.
     
 Nelle sezioni seguenti viene illustrata la compatibilità tra queste tre configurazioni per varie Skype for Business Server funzionalità.
   
@@ -68,9 +68,9 @@ Nelle sezioni seguenti viene illustrata la compatibilità tra queste tre configu
 |IPv4  <br/> |Dual stack  <br/> |
 |Dual stack  <br/> |IPv4  <br/> |
 |Dual stack  <br/> |Dual stack  <br/> |
-|Dual stack  <br/> |IPv6  <br/> |
-|IPv6  <br/> |Dual stack  <br/> |
-|IPv6  <br/> |IPv6  <br/> |
+|Dual stack  <br/> |Protocollo IPv6  <br/> |
+|Protocollo IPv6  <br/> |Dual stack  <br/> |
+|Protocollo IPv6  <br/> |Protocollo IPv6  <br/> |
    
 ### <a name="peer-to-peer-client"></a>Client peer-to-peer
 <a name="peer"> </a>
@@ -82,8 +82,8 @@ La comunicazione peer-to-peer include audio, audio/video, condivisione di applic
 |IPv4  <br/> |IPv4  <br/> |
 |IPv4  <br/> |Dual stack  <br/> |
 |Dual stack  <br/> |Dual stack  <br/> |
-|IPv6  <br/> |Dual stack  <br/> |
-|IPv6  <br/> |IPv6  <br/> |
+|Protocollo IPv6  <br/> |Dual stack  <br/> |
+|Protocollo IPv6  <br/> |Protocollo IPv6  <br/> |
    
 ### <a name="conferencing"></a>Conferenze
 <a name="conf"> </a>
@@ -96,9 +96,9 @@ Le conferenze includono applicazioni audio/video, condivisione applicazioni e co
 |IPv4  <br/> |Dual stack  <br/> |
 |Dual stack  <br/> |IPv4  <br/> |
 |Dual stack  <br/> |Dual stack  <br/> |
-|Dual stack  <br/> |IPv6  <br/> |
-|IPv6  <br/> |Dual stack  <br/> |
-|IPv6  <br/> |IPv6  <br/> |
+|Dual stack  <br/> |Protocollo IPv6  <br/> |
+|Protocollo IPv6  <br/> |Dual stack  <br/> |
+|Protocollo IPv6  <br/> |Protocollo IPv6  <br/> |
    
 ### <a name="mediation-serverpstn"></a>Mediation Server/PSTN
 <a name="med"> </a>
@@ -109,7 +109,7 @@ Skype for Business Server non supporta il bypass multimediale per le chiamate PS
 |:-----|:-----|:-----|
 |IPv4  <br/> |Dual stack  <br/> |IPv4  <br/> |
 |Dual stack  <br/> |Dual stack  <br/> |IPv4  <br/> |
-|Dual stack  <br/> |Dual stack  <br/> |IPv6  <br/> |
+|Dual stack  <br/> |Dual stack  <br/> |Protocollo IPv6  <br/> |
    
 1. L'interfaccia principale è l'interfaccia che comunica con i Skype for Business Server componenti.
   
@@ -123,8 +123,8 @@ La comunicazione peer-to-peer con utenti remoti include messaggistica istantanea
 |IPv4  <br/> |IPv4  <br/> |
 |Dual stack  <br/> |IPv4  <br/> |
 |Dual stack  <br/> |Dual stack  <br/> |
-|IPv6  <br/> |Dual stack  <br/> |
-|IPv6  <br/> |IPv6  <br/> |
+|Protocollo IPv6  <br/> |Dual stack  <br/> |
+|Protocollo IPv6  <br/> |Protocollo IPv6  <br/> |
    
 ### <a name="front-end-pool-and-edge-pool-configuration"></a>Configurazione di pool Front End e di pool di server perimetrali
 <a name="FE_pool"> </a>
@@ -187,7 +187,7 @@ Se si prevede di configurare Skype for Business Server per IPv6, tenere presenti
     
     È possibile distribuire record DNS IPv6 prima di iniziare a utilizzare IPv6. Se il client o il server non utilizza IPv6, il record non verrà utilizzato come riferimento. Le tecnologie transitorie sceglieranno quale record utilizzare in base alla configurazione e ai criteri della tecnologia.
     
-- Ogni indirizzo IPv6 prevede un ambito. I tre ambiti che è possibile utilizzare per l'indirizzamento IPv6 sono gli indirizzi globali IPv6 (simili agli indirizzi IPv4 pubblici), gli indirizzi locali univoci IPv6 (simili agli intervalli di indirizzi IPv4 privati) e gli indirizzi IPv6 locali dei collegamenti (simili agli indirizzi IP privati automatici in Windows Server per IPv4). Tutti i server di un pool devono disporre di indirizzi IPv6 con lo stesso ambito. 
+- Ogni indirizzo IPv6 prevede un ambito. I tre ambiti che è possibile utilizzare per l'indirizzamento IPv6 sono gli indirizzi IPv6 globali (simili agli indirizzi IPv4 pubblici), gli indirizzi locali univoci IPv6 (simili agli intervalli di indirizzi IPv4 privati) e gli indirizzi IPv6 locali dei collegamenti (simili agli indirizzi IP privati automatici in Windows Server per IPv4). Tutti i server di un pool devono disporre di indirizzi IPv6 con lo stesso ambito. 
     
 > [!IMPORTANT]
 > IPv6 è un argomento complesso e richiede un'attenta pianificazione con il team di rete e il provider Internet per garantire che gli indirizzi assegnati a livello di Windows Server e a livello di Skype for Business Server funzionino come previsto. Vedere i collegamenti alla fine dell'argomento per risorse aggiuntive sull'indirizzamento IPv6 e la pianificazione. 

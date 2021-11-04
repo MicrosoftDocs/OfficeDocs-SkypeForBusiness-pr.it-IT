@@ -1,7 +1,7 @@
 ---
 title: Dettagli tabella CDR in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 896198f5-672b-48ea-852f-0211c0c90857
 description: Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema di database di registrazione dettagli chiamata.
-ms.openlocfilehash: 17450a04cee6463cf5ae9a04f8f4976f59421e80
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 9e368669c03e3b81e6eb7a9e2778a8f0edfe2eef
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58583810"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60744042"
 ---
 # <a name="cdr-table-details-in-skype-for-business-server-2015"></a>Dettagli tabella CDR in Skype for Business Server 2015
  
@@ -30,7 +30,7 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
     
 - [Tabella CallPriorities Skype for Business Server 2015](callpriorities.md)
     
-- [Tabella CallType in Skype for Business Server 2015](calltype.md)
+- [Tabella CallType Skype for Business Server 2015](calltype.md)
     
 - [Tabella ClientVersions in Skype for Business Server 2015](clientversions.md)
     
@@ -42,7 +42,7 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
     
 - [Tabella ConferenceSessionDetails in Skype for Business Server 2015](conferencesessiondetails-0.md)
     
-- [Tabella ConferenceUris Skype for Business Server 2015](conferenceuris.md)
+- [Tabella ConferenceUris in Skype for Business Server 2015](conferenceuris.md)
     
 - [Tabella ContentTypes in Skype for Business Server 2015](contenttypes.md)
     
@@ -64,7 +64,7 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
     
 - [Tabella FocusJoinsAndLeaves Skype for Business Server 2015](focusjoinsandleaves.md)
     
-- [Tabella FrontEnd in Skype for Business Server 2015](frontend.md)
+- [Tabella FrontEnd Skype for Business Server 2015](frontend.md)
     
 - [Tabella Gateways in Skype for Business Server 2015](gateways.md)
     

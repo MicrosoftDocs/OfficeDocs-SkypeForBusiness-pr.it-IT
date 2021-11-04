@@ -1,7 +1,7 @@
 ---
 title: Aggiungere l'archivio file per Front End Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/8/2018
@@ -15,19 +15,19 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 4d18a648-a0e1-4401-a1e6-7a2755ba8c66
 description: È necessario specificare una condivisione file da usare come archivio file per il server Standard Edition o il pool Enterprise Edition Front End. È possibile utilizzare una condivisione file esistente per l'archivio file oppure specificarne una nuova indicando il nome di dominio completo (FQDN) del file server in cui deve essere posizionata la condivisione file, oltre a un nome di cartella per la nuova condivisione file.
-ms.openlocfilehash: cb5393c4867b6f21ac6a325eb9044889738e9142
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2427c5c90fb60d5a0ddef0ca428d336406e15c03
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596710"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60739452"
 ---
 # <a name="add-front-end-file-store"></a>Aggiungere l'archivio file per Front End Server
 
 È necessario specificare una condivisione file da usare come archivio file per il server Standard Edition o il pool Enterprise Edition Front End. È possibile utilizzare una condivisione file esistente per l'archivio file oppure specificarne una nuova indicando il nome di dominio completo (FQDN) del file server in cui deve essere posizionata la condivisione file, oltre a un nome di cartella per la nuova condivisione file.
 
 > [!IMPORTANT]
-> La condivisione file non può essere posizionata edizione Enterprise Front End Server, ma può trovarsi in un server edizione Standard server.
+> La condivisione file non può essere posizionata edizione Enterprise Front End Server, ma può trovarsi in un edizione Standard server.
 
 > [!IMPORTANT]
 > È possibile definire la condivisione file nel Generatore di topologie prima di crearla, ma è necessario crearla nel percorso definito prima di pubblicare la topologia.

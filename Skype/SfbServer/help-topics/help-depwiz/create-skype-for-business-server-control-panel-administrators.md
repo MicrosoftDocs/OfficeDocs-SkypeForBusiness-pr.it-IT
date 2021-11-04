@@ -1,7 +1,7 @@
 ---
 title: Creare amministratori del pannello di controllo di Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/8/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 3312926a-4671-4030-bb92-90ac24c778dd
 description: "Per concedere l'accesso Skype for Business Server 2015, eseguire le operazioni seguenti:"
-ms.openlocfilehash: adb56c801ef270ff50378d8594e879afc8724afa
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: ef975e064d33473d87e44c4e14725b58b28bce27
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58633120"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60744872"
 ---
 # <a name="create-skype-for-business-server-control-panel-administrators"></a>Creare amministratori del pannello di controllo di Skype for Business Server
  

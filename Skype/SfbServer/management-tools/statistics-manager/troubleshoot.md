@@ -1,7 +1,7 @@
 ---
 title: Risoluzione dei problemi del gestore delle statistiche per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 946189fa-521f-455c-9762-904e7e41b791
 description: 'Riepilogo: leggere questo argomento per risolvere i problemi relativi alla distribuzione di Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: 622e3fdecc9cbe0def1f87a623692cb93889bb00
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 3f3bade7c7696e7361b63dc2f539534b6072d34a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58612055"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60777306"
 ---
 # <a name="troubleshoot-statistics-manager-for-skype-for-business-server"></a>Risoluzione dei problemi del gestore delle statistiche per Skype for Business Server
  
@@ -35,7 +35,7 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
 ## <a name="agent-events"></a>Eventi agente
 <a name="BKMK_Agent"> </a>
 
-- **1000** - Impossibile impostare il limitatore del processore (oggetto processo) - Motivo sconosciuto
+- **1000** - Impossibile impostare il limitatore del processore (oggetto Processo) - Motivo sconosciuto
     
 - **1001** - La limitazione dei processi non è consentita nel processo (probabilmente già all'interno di un oggetto processo)
     
@@ -76,7 +76,7 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
   - Assicurarsi di aver seguito le istruzioni per l'importazione della topologia. Vedere [Import the topology](deploy.md#BKMK_ImportTopology). 
     
-  - Se l'agente si trova in un server non elencato nella topologia( ad esempio, i nodi in un cluster AlwaysOn di SQL), sarà necessario aggiungere manualmente l'agente seguendo le istruzioni in [Importare](deploy.md#BKMK_ImportTopology)la topologia .
+  - Se l'agente si trova in un server non elencato nella topologia, ad esempio i nodi in un cluster AlwaysOn di SQL, sarà necessario aggiungere manualmente l'agente seguendo le istruzioni in Importare la [topologia.](deploy.md#BKMK_ImportTopology)
     
   - **4002** - Password listener non valida
     
@@ -96,7 +96,7 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
   - **4005** - Impossibile de-serializzare il codice XML
     
-    Le informazioni sul server nel server Listener sono danneggiate o potrebbe esserci una mancata corrispondenza di versione tra l'agente e i computer listener. Verificare che le versioni corrispondano e controllare se nel registro eventi listener sono disponibili problemi.
+    Le informazioni sul server nel server Listener sono danneggiate o potrebbe esserci una mancata corrispondenza di versione tra l'agente e i computer listener. Verificare che le versioni corrispondano e controllare la presenza di problemi nel registro eventi listener.
     
 ## <a name="listener-events"></a>Eventi listener
 <a name="BKMK_Listener"> </a>
@@ -115,7 +115,7 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
   - **10004** : errore Caching'infrastruttura
     
-  - **10007** — Impostazioni (archiviato in redis)
+  - **10007** - Impostazioni (archiviato in redis)
     
     Il listener non è stato in grado di contattare Redis o recuperare dati ben formati dalla cache e non è stato possibile avviarsi. Verificare che il servizio Redis sia avviato e configurato correttamente nel server.
     
@@ -127,7 +127,7 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
   - **10101** - Interruzione continuata di Redis PING (ogni 60 secondi)
     
-  - **30100** - Ripristino dell'interruzione del ping di Redis
+  - **30100** - Ripristino dell'interruzione del PING di Redis
     
     Questi verranno registrati quando il listener non è in grado di connettersi a Redis. Verificare che Redis sia avviato e che sia disponibile la connettività di rete tra Listener e Redis.
     

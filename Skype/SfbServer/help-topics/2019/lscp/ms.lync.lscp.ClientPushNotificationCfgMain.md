@@ -1,7 +1,7 @@
 ---
 title: Configurazione delle notifiche Push del client mobile
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: b7a85d75-9d36-4980-b669-2a009799d905
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per configurare le Notifiche Push di Microsoft e le Notifiche Push di Apple, è necessario creare un criterio per definire quali tipi di notifiche push sono necessari.
-ms.openlocfilehash: c26788cbe351888aef633cc21a08d46bf3f74deb
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 1f52af141ad9ece3a967595039ca69e3cce3ef9e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58613195"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60739952"
 ---
 # <a name="mobile-client-push-notification-configuration"></a>Client dispositivo mobile: configurazione di notifiche push
  

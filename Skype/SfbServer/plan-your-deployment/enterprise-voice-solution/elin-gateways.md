@@ -1,7 +1,7 @@
 ---
 title: Gestire le posizioni per i gateway ELIN in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ced79c13-4e7e-4034-95cd-6fc913f4f222
 description: Decisioni necessarie per la pianificazione di un database delle informazioni sulla posizione o di un database esterno simile per una distribuzione E9-1-1 tramite gateway ELIN, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: bb0656909866a793bc8d64635b17785020dd646d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f8440e4e125773e91850b890bb2a02c7d1312fde
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596506"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756523"
 ---
 # <a name="manage-locations-for-elin-gateways-in-skype-for-business-server"></a>Gestire le posizioni per i gateway ELIN in Skype for Business Server
 
@@ -38,7 +38,7 @@ Per fare Skype for Business Server automaticamente le posizioni dei client all'i
 Per informazioni dettagliate su come eseguire queste attività, vedere [Configure the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-configure-the-location-database) nella documentazione relativa alla distribuzione.
 
 > [!NOTE]
-> I percorsi aggiunti al database delle posizioni centrale non sono disponibili per il client fino a quando non sono stati pubblicati utilizzando un comando di Skype for Business Server Management Shell e vengono replicati agli archivi locali del pool. Per informazioni dettagliate, vedere [Publishing the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-location-database) nella documentazione relativa alla distribuzione.
+> Le posizioni aggiunte al database delle posizioni centrali non sono disponibili per il client finché non sono state pubblicate tramite un comando di Skype for Business Server Management Shell e vengono replicate agli archivi locali del pool. Per informazioni dettagliate, vedere [Publishing the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-location-database) nella documentazione relativa alla distribuzione.
 
 In questa sezione vengono descritti gli aspetti da prendere in considerazione quando si pianificano l'aggiornamento e la gestione del database delle posizioni.
 
@@ -64,8 +64,8 @@ Dopo aver stabilito come suddividere lo spazio dell'edificio in posizioni, è ne
 
 |**Area dell'edificio**|**Posizione**|**ELIN**|
 |:-----|:-----|:-----|
-|Primo piano  <br/> |1   <br/> |425-555-0100  <br/> |
-|Secondo piano  <br/> |2   <br/> |425-555-0111  <br/> |
+|Primo piano  <br/> |1  <br/> |425-555-0100  <br/> |
+|Secondo piano  <br/> |2  <br/> |425-555-0111  <br/> |
 |Terzo piano  <br/> |3   <br/> |425-555-0123  <br/> |
 
 Le posizioni definite devono soddisfare i requisiti seguenti:

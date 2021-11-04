@@ -1,7 +1,7 @@
 ---
 title: Aggiungere il monitoraggio del Director
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,30 +15,30 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: a9009434-3771-475f-8314-c104f2716a29
 description: "È possibile definire l'archivio SQL Server per il monitoraggio configurando queste proprietà:"
-ms.openlocfilehash: 8db72c50708e21cbdf378f9a7da7d78408ba8e85
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 941ce7329e2c8fa63d769a3518ead9f0522a7729
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585140"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60762784"
 ---
 # <a name="add-director-monitoring"></a>Aggiungere il monitoraggio del Director
  
 È possibile **definire l'archivio SQL Server per il monitoraggio** configurando queste proprietà:
   
-- **Monitoraggio SQL Server archivio**: selezionare un SQL Server di dominio completo (FQDN) (e, facoltativamente, un'istanza SQL Server denominata) dall'elenco.
+- **Monitoraggio SQL Server archivio**: selezionare un SQL Server di dominio completo (FQDN) (e, facoltativamente, un'istanza di SQL Server denominata) dall'elenco.
     
-    Fare **clic su** Nuovo per creare una nuova SQL Server FQDN e, facoltativamente, un nome di istanza per l'archivio Monitoring Server.
+    Fare **clic su** Nuovo per creare una nuova SQL Server FQDN e facoltativamente un nome di istanza per l'archivio Monitoring Server.
     
-- Selezionare la **casella SQL Server il mirroring dell'archivio** se si desidera aggiungere il mirroring del database per il Monitoring Server.
+- Selezionare la **casella di controllo SQL Server mirroring dell'archivio** se si desidera aggiungere il mirroring del database per Monitoring Server.
     
     Selezionare un mirror archivio nell'elenco **Mirror archivio SQL Server monitoraggio**.
     
     Fare **clic su** Nuovo per creare una nuova SQL Server FQDN e facoltativamente un nome di istanza per l'archivio mirror.
     
-- Se è stato selezionato **Abilita mirroring** SQL Server archivio , facoltativamente selezionare Usa il controllo del mirroring di SQL Server per abilitare il **failover** automatico per selezionare un archivio di controllo del mirroring SQL Server dall'elenco.
+- Se è stato selezionato Abilita **mirroring** SQL Server archivio , facoltativamente selezionare Usa controllo **del mirroring** di SQL Server per abilitare il failover automatico per selezionare un archivio di controllo del mirroring SQL Server dall'elenco.
     
-    Fare **clic su Nuovo** per creare una nuova SQL Server fqdn e, facoltativamente, un nome di istanza per l'archivio di controllo del mirroring.
+    Fare **clic su Nuovo** per creare una nuova SQL Server FQDN e facoltativamente un nome di istanza per l'archivio di controllo del mirroring.
     
 Fare clic su **Indietro** per tornare alla finestra di dialogo per la definizione del pool precedente.
   

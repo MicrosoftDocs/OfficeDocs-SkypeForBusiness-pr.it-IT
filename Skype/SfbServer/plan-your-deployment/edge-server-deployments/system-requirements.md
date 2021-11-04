@@ -1,7 +1,7 @@
 ---
 title: Requisiti di sistema dei server perimetrali in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 audience: ITPro
 ms.topic: conceptual
@@ -16,22 +16,22 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ed53a566-0504-46f9-81a7-116a637833af
 description: 'Riepilogo: informazioni sui requisiti di sistema per il server perimetrale in Skype for Business Server.'
-ms.openlocfilehash: bc8a6666f46d093c9f3d2da41f2663c79e94ddf3
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 573c9c71493c4bed59ce6fbde4dafa95848b469f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58622158"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60763494"
 ---
 # <a name="edge-server-system-requirements-in-skype-for-business-server"></a>Requisiti di sistema dei server perimetrali in Skype for Business Server
  
 **Riepilogo:** Informazioni sui requisiti di sistema per il server perimetrale in Skype for Business Server.
   
-Per quanto riguarda la distribuzione del server perimetrale Skype for Business Server, queste sono le operazioni necessarie per il server o i server presenti nell'ambiente stesso, nonché la pianificazione della struttura dell'ambiente. Per ulteriori informazioni su topologia, DNS, certificati e altri problemi relativi all'infrastruttura, vedere la documentazione relativa ai requisiti ambientali.
+Per quanto riguarda la distribuzione di server perimetrali di Skype for Business Server, queste sono le operazioni necessarie per il server o i server presenti nell'ambiente stesso, oltre alla pianificazione della struttura dell'ambiente. Per ulteriori informazioni su topologia, DNS, certificati e altri problemi relativi all'infrastruttura, vedere la documentazione relativa ai requisiti ambientali.
   
 ## <a name="components"></a>Componenti
 
-Quando si parla dell'ambiente di server perimetrali, si fa riferimento a componenti che sono, per la maggior parte, distribuiti in una rete perimetrale (ovvero si tratta di un gruppo di lavoro o di un dominio esterno alla struttura di dominio di Skype for Business Server).
+Quando si parla dell'ambiente del server perimetrale, si fa riferimento a componenti che sono, per la maggior parte, distribuiti in una rete perimetrale (ovvero si tratta di un gruppo di lavoro o di un dominio esterno alla struttura di dominio di Skype for Business Server).
   
 Tenendo presente questo, questi sono i componenti che dovrai tenere a mente per distribuire correttamente Edge:
   
@@ -54,7 +54,7 @@ Questi sono i Skype for Business distribuiti nell'ambiente perimetrale. Il loro 
   
 - **Servizio Access Edge:** fornisce un singolo punto di connessione attendibile per il traffico SIP (Session Initiation Protocol) in ingresso e in uscita.
     
-- **Servizio Web Conferencing Edge:** consente agli utenti esterni di partecipare alle riunioni ospitate nell'ambiente Skype for Business Server interno.
+- **Servizio Web Conferencing Edge:** consente agli utenti esterni di partecipare a riunioni ospitate nell'ambiente Skype for Business Server interno.
     
 - **Servizio A/V Edge:** rende disponibile agli utenti esterni audio, video, condivisione applicazioni e trasferimento di file.
     
@@ -66,7 +66,7 @@ Gli utenti esterni autorizzati possono utilizzare i server perimetrali per conne
 > I server perimetrali vengono distribuiti per fornire connessioni per i client Skype for Business abilitati e altri server perimetrali (in scenari di federazione). Non è possibile connettersi da altri tipi di client o server dell'end point. Il server gateway XMPP può consentire le connessioni con i partner XMPP configurati. Ma anche in questo caso, questi sono gli unici tipi di client e federazione che funzionano. 
 
 > [!NOTE]
-> I gateway xMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../SfBServer2019/migration/migrating-xmpp-federation.md)
+> I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../SfBServer2019/migration/migrating-xmpp-federation.md)
   
 ### <a name="reverse-proxies"></a>Proxy inversi
 <a name="ReverseProxies"> </a>
@@ -89,9 +89,9 @@ E per i dispositivi mobili:
   
 - consente di individuare automaticamente i Front End Server che offrono servizi per dispositivi mobili.
     
-- abilita le notifiche push da Microsoft 365 o Office 365 ai dispositivi mobili.
+- abilita le notifiche push Microsoft 365 o Office 365 ai dispositivi mobili.
     
-I nostri consigli correnti sul proxy inverso sono disponibili nella pagina [Infrastruttura di telefonia per Skype for Business.](../../../SfbPartnerCertification/certification/infra-gateways.md) Quindi il proxy inverso:
+I consigli correnti per il proxy inverso sono disponibili nella pagina [Infrastruttura di telefonia per Skype for Business.](../../../SfbPartnerCertification/certification/infra-gateways.md) Quindi il proxy inverso:
   
 - dovrebbe essere in grado di utilizzare TLS (Transport Layer Security) introdotto nell'ambiente tramite certificati pubblici per connettersi ai servizi Web esterni pubblicati di:
     
@@ -133,7 +133,7 @@ Questo è un ruolo facoltativo. Può essere un singolo server o un pool di serve
   
 Il Director è un server hop successivo interno che riceve il traffico SIP in ingresso dai server perimetrali destinati Skype for Business Server server interni. Preautenta le richieste in ingresso e le reindirizza al pool principale o al server di un utente. Questa preautenticazione consente di eliminare le richieste di account utente non identificate.
   
-Perché è importante? Una funzione importante per un Director è proteggere i server edizione Standard e i Front End Server o i pool Front End da traffico dannoso, ad esempio attacchi Denial of Service (DoS). Se la rete è piena di traffico esterno non valido, il traffico si arresta nel Director.
+Perché è importante? Una funzione importante per un director è proteggere i server edizione Standard e i Front End Server o i pool Front End da traffico dannoso, ad esempio attacchi Denial of Service (DoS). Se la rete è piena di traffico esterno non valido, il traffico si arresta nel Director.
   
 ### <a name="load-balancers"></a>Servizi di bilanciamento del carico
 <a name="LoadBalancers"> </a>
@@ -158,24 +158,24 @@ Per tutti i server perimetrali che eseguono il servizio A/V Edge, questi sono i 
     
 - Non usare NAT nei firewall interni o esterni.
     
-- L'interfaccia interna di Edge deve essere in una rete diversa dall'interfaccia esterna del server perimetrale e il routing tra di essi deve essere disabilitato.
+- L'interfaccia interna di Edge deve essere in una rete diversa rispetto all'interfaccia esterna del server perimetrale e il routing tra di essi deve essere disabilitato.
     
 - L'interfaccia esterna di qualsiasi server perimetrale che esegue il servizio A/V Edge deve utilizzare indirizzi IP instradabili pubblicamente e nessuna conversione NAT o porta su uno qualsiasi degli indirizzi IP esterni di Edge.
     
 #### <a name="hlb-requirements"></a>Requisiti di bilanciamento del carico di rete
 
-Skype for Business Server non ha molti requisiti di affinità basati su cookie. Non è quindi necessario utilizzare una persistenza basata su cookie a meno che **(e** questo non sia specifico di Skype for Business Server 2015) non si abbia Lync Server 2010 Front End Server o pool Front End nell'ambiente Skype for Business Server. Avrebbero bisogno di affinità basata su cookie nel metodo di configurazione consigliato per Lync Server 2010.
+Skype for Business Server non ha molti requisiti di affinità basati su cookie. Pertanto, non è necessario utilizzare una persistenza basata su cookie a meno che **(e** questo non sia specifico di Skype for Business Server 2015) si abbia Lync Server 2010 Front End Server o pool Front End nell'ambiente Skype for Business Server. Avrebbero bisogno di affinità basata su cookie nel metodo di configurazione consigliato per Lync Server 2010.
   
 > [!NOTE]
 > Se decidi di attivare l'affinità basata su cookie per il bilanciamento del carico di rete, non ci sarà alcun problema, anche se l'ambiente non ne ha bisogno. 
   
 Se **l'ambiente non richiede** affinità basata su cookie:
   
-- Nella regola di pubblicazione del proxy inverso per la porta 443, impostare Inoltra intestazione **host** su **True.** In questo modo l'URL originale verrà inoltrato.
+- Nella regola di pubblicazione del proxy inverso per la porta 443 impostare Inoltra intestazione **host** su **True.** In questo modo l'URL originale verrà inoltrato.
     
 Per le distribuzioni **che necessitano** di affinità basata su cookie:
   
-- Nella regola di pubblicazione del proxy inverso per la porta 443, impostare Inoltra intestazione **host** su **True.** In questo modo l'URL originale verrà inoltrato.
+- Nella regola di pubblicazione del proxy inverso per la porta 443 impostare Inoltra intestazione **host** su **True.** In questo modo l'URL originale verrà inoltrato.
     
 - Il cookie del servizio di **bilanciamento del carico** hardware non deve essere contrassegnato come httpOnly.
     
@@ -213,7 +213,7 @@ Ecco i requisiti di bilanciamento del carico di rete per i servizi Web del pool 
 
 È possibile definire il monitoraggio delle porte nei servizi di bilanciamento del carico hardware per determinare quando servizi specifici non sono più disponibili a causa di un errore hardware o di comunicazione. Ad esempio, se il servizio Front End Server (RTCSRV) si interrompe a causa di un errore del Front End Server o del pool Front End, anche il monitoraggio del bilanciamento del carico di rete dovrebbe interrompere la ricezione del traffico nei servizi Web. È consigliabile implementare il monitoraggio delle porte nel bilanciamento del carico di rete per monitorare quanto segue per l'interfaccia esterna HLB:
   
-|**IP virtuale/Porta**|**Porta nodo**|**Computer/Monitor nodo**|**Profilo persistenza**|**Note**|
+|**IP virtuale/Porta**|**Porta nodo**|**Computer/Monitor nodo**|**Profilo persistenza**|2^31 (2 miliardi di termini)|
 |:-----|:-----|:-----|:-----|:-----|
 |\<pool\>web_mco_443_vs  <br/> 443  <br/> |4443  <br/> |Front End  <br/> 5061  <br/> |Nessuno  <br/> |HTTPS  <br/> |
 |\<pool\>web_mco_80_vs  <br/> 80  <br/> |8080  <br/> |Front End  <br/> 5061  <br/> |Nessuno  <br/> |HTTP  <br/> |

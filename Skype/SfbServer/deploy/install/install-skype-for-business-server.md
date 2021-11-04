@@ -1,7 +1,7 @@
 ---
 title: Installare Skype for Business Server nei server della topologia
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/15/2018
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: defd6b2c-f267-4f8c-bc94-8894e2a429b6
 description: "Riepilogo: informazioni su come installare i componenti Skype for Business Server di sistema in ogni server della topologia. Scaricare una versione di valutazione gratuita Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: 89c158243a0cc33faaa1a3b3181dfc1f39094d63
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: bcf2645e6f33865da0f1ad6bbc985e581950693b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58609863"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60745302"
 ---
 # <a name="install-skype-for-business-server-on-servers-in-the-topology"></a>Installare Skype for Business Server nei server della topologia
  
@@ -34,7 +34,7 @@ Dopo aver caricato la topologia nell'archivio di gestione centrale e che Active 
   
 ## <a name="install-skype-for-business-server-system"></a>Installare Skype for Business Server sistema
 
-Dopo aver pubblicato una topologia, è possibile installare i componenti Skype for Business Server in ogni server della topologia. In questa sezione viene illustrata l'installazione Skype for Business Server e la configurazione dei ruoli del server per il pool Front End e gli eventuali ruoli del server collocati con i Server Front End. Per installare e configurare i ruoli del server, eseguire la Distribuzione guidata Skype for Business Server in ogni computer in cui si sta installando un ruolo del server. La Distribuzione guidata consente di completare tutti e quattro i passaggi di distribuzione, tra cui l'installazione dell'archivio di configurazione locale, l'installazione dei Front End Server, la configurazione dei certificati e l'avvio dei servizi.
+Dopo aver pubblicato una topologia, è possibile installare i componenti Skype for Business Server in ogni server della topologia. In questa sezione viene illustrata l'installazione Skype for Business Server e la configurazione dei ruoli del server per il pool Front End e gli eventuali ruoli del server collocati nei Front End Server. Per installare e configurare i ruoli del server, eseguire la Distribuzione guidata Skype for Business Server in ogni computer in cui si sta installando un ruolo del server. La Distribuzione guidata consente di completare tutti e quattro i passaggi di distribuzione, tra cui l'installazione dell'archivio di configurazione locale, l'installazione dei Front End Server, la configurazione dei certificati e l'avvio dei servizi.
   
 > [!IMPORTANT]
 > È necessario utilizzare Generatore di topologie per completare e pubblicare la topologia prima di poter installare Skype for Business Server nei server. 
@@ -49,7 +49,7 @@ Dopo aver pubblicato una topologia, è possibile installare i componenti Skype f
 > Prima di eseguire questa procedura, verificare di aver effettuato l'accesso al server con un account utente di dominio che sia sia un amministratore locale che un membro del gruppo RTCUniversalServerAdmins. 
   
 > [!NOTE]
-> Se non è stato eseguito Skype for Business Server'installazione su questo server, verrà richiesto di specificare un'unità e un percorso per l'installazione. In questo modo è possibile eseguire l'installazione in un'unità diversa dall'unità di sistema, se richiesta dall'organizzazione o in caso di problemi di spazio. È possibile modificare il percorso di installazione per i Skype for Business Server nella finestra di dialogo **Installazione** in una nuova unità disponibile. Se si installano i file di installazione in questo percorso, incluso OCSCore.msi, verranno distribuiti anche gli altri Skype for Business Server file di installazione.
+> Se non è stato eseguito Skype for Business Server'installazione su questo server, verrà richiesto di specificare un'unità e un percorso per l'installazione. In questo modo è possibile eseguire l'installazione in un'unità diversa dall'unità di sistema, se richiesta dall'organizzazione o in caso di problemi di spazio. È possibile modificare il percorso di installazione per Skype for Business Server file nella finestra di dialogo **Installazione** in una nuova unità disponibile. Se si installano i file di installazione in questo percorso, incluso OCSCore.msi, verranno distribuiti anche gli altri Skype for Business Server file di installazione.
   
 > [!IMPORTANT]
 > Prima di iniziare l'installazione, assicurarsi che Windows Server sia aggiornato utilizzando Windows Update. 
@@ -60,14 +60,14 @@ Dopo aver pubblicato una topologia, è possibile installare i componenti Skype f
 
 1. Inserire il supporto Skype for Business Server di installazione. Se l'installazione non viene avviata automaticamente, fare doppio clic su **Installazione**.
     
-2. Il supporto di installazione richiede Microsoft Visual C++ l'esecuzione. Verrà visualizzata una finestra di dialogo in cui viene chiesto se si desidera installarla. Fare clic **su Sì.**
+2. Il supporto di installazione richiede Microsoft Visual C++'esecuzione. Verrà visualizzata una finestra di dialogo in cui viene chiesto se si desidera installarla. Fare clic **su Sì.**
     
 3. Esaminare attentamente il Contratto di Licenza e, se si accetta, selezionare Accetto i termini del contratto di **licenza** e fare clic su **OK.** 
     
 4. Smart Setup è una funzionalità di Skype for Business Server in cui è possibile connettersi a Internet per verificare la disponibilità di aggiornamenti da Microsoft Update (MU) durante il processo di installazione, come illustrato nella figura. Ciò offre un'esperienza migliore assicurandoti di avere gli aggiornamenti più recenti per il prodotto. Fare clic su **Installa** per avviare l'installazione.
     
     > [!NOTE]
-    > Molte organizzazioni hanno distribuito Windows Server Update Services (WSUS) nei propri ambienti aziendali. WSUS consente agli amministratori di gestire completamente la distribuzione degli aggiornamenti rilasciati tramite Microsoft Update ai computer della rete. Nell'ambito della versione dell'aggiornamento cumulativo 1 è stato introdotto Skype for Business Server per l'utilizzo di WSUS da parte di Smart Setup. I clienti con WSUS che distribuiscono Skype for Business Server per la prima volta o effettuano l'aggiornamento dall'ambiente Lync Server 2013 utilizzando la funzionalità di aggiornamento di In-Place avranno un'installazione intelligente che recupera Skype per gli aggiornamenti di Windows da WSUS anziché recuperare gli aggiornamenti da MU. I clienti che desiderano utilizzare l'installazione intelligente devono eseguire SmartSetupWithWSUS.psq in tutti i computer prima di eseguire Setup.exe. 
+    > Molte organizzazioni hanno distribuito Windows Server Update Services (WSUS) nei propri ambienti aziendali. WSUS consente agli amministratori di gestire completamente la distribuzione degli aggiornamenti rilasciati tramite Microsoft Update ai computer della rete. Nell'ambito della versione dell'aggiornamento cumulativo 1 è stato introdotto Skype for Business Server per l'utilizzo di WSUS da parte di Smart Setup. I clienti con WSUS che distribuiscono Skype for Business Server per la prima volta o effettuano l'aggiornamento dall'ambiente Lync Server 2013 utilizzando la funzionalità di aggiornamento di In-Place avranno un'installazione intelligente che recupera Skype per gli aggiornamenti Windows da WSUS anziché recuperare gli aggiornamenti da MU. I clienti che desiderano utilizzare l'installazione intelligente devono eseguire SmartSetupWithWSUS.psq in tutti i computer prima di eseguire Setup.exe. 
   
      ![Screenshot dell'installazione intelligente.](../../media/d35c6cd9-3b8d-4510-871c-30ad07b1f4f2.png)
   
@@ -92,14 +92,14 @@ Dopo aver pubblicato una topologia, è possibile installare i componenti Skype f
 
 1. Esaminare i prerequisiti e quindi fare clic su **Esegui** accanto a **Passaggio 2:** Installazione o rimozione Skype for Business Server componenti .
     
-2. Nella pagina **Configura Skype for Business Server componenti fare** clic su Avanti per configurare i componenti come definito nella topologia pubblicata. 
+2. Nella pagina **Configura Skype for Business Server componenti fare** clic su **Avanti** per configurare i componenti come definito nella topologia pubblicata.
     
 3. Nella **pagina Comandi in esecuzione** viene visualizzato un riepilogo dei comandi e delle informazioni di installazione durante la configurazione. Al termine, è possibile utilizzare l'elenco per selezionare un registro da visualizzare e quindi fare clic **su Visualizza registro**.
     
 4. Dopo Skype for Business Server'installazione dei componenti e dopo aver esaminato i registri  in base alle esigenze, fare clic su Fine per completare questo passaggio dell'installazione.
     
     > [!NOTE]
-    > Se richiesto, riavviare il server (cosa che potrebbe verificarsi Windows'installazione di Esperienza desktop). Quando il computer è di nuovo in esecuzione, è necessario eseguire di nuovo questa procedura (Passaggio 2: Installazione o rimozione Skype for Business Server componenti). 
+    > Riavviare il server se richiesto (cosa che potrebbe verificarsi Windows'installazione di Esperienza desktop). Quando il computer è di nuovo in esecuzione, è necessario eseguire di nuovo questa procedura (Passaggio 2: Installazione o rimozione Skype for Business Server componenti). 
   
     > [!NOTE]
     > Se il programma di installazione rileva prerequisiti non soddisfatti, verrà visualizzato un messaggio "Prerequisito non soddisfatto", come illustrato nella figura. Soddisfare i prerequisiti necessari e quindi avviare di nuovo questa procedura (Passaggio 2: installazione o rimozione Skype for Business Server componenti). 
@@ -142,7 +142,7 @@ Dopo aver pubblicato una topologia, è possibile installare i componenti Skype f
     > [!NOTE]
     > Se l'organizzazione ha creato un modello da utilizzare come alternativa al modello Server Web predefinito della CA, selezionare la casella di controllo, quindi immettere il nome del modello alternativo. È necessario specificare il nome del modello come definito dall'amministratore della CA. 
   
-8. Nella pagina **Nome e sicurezza Impostazioni** specificare un nome **descrittivo.** Utilizzando un nome descrittivo, è possibile identificare rapidamente il certificato e lo scopo. Se questo campo viene lasciato vuoto, verrà generato automaticamente un nome. Impostare il valore **Lunghezza in bit** della chiave o accettare il valore predefinito di 2048 bit. Selezionare **Contrassegna la** chiave privata del certificato come esportabile se si determina che il certificato e la chiave privata devono essere spostati o copiati in altri sistemi e quindi fare clic su **Avanti.**
+8. Nella pagina **Nome e sicurezza Impostazioni** specificare un nome **descrittivo.** Utilizzando un nome descrittivo, è possibile identificare rapidamente il certificato e lo scopo. Se questo campo viene lasciato vuoto, verrà generato automaticamente un nome. Impostare il valore **Lunghezza in bit** della chiave o accettare il valore predefinito di 2048 bit. Selezionare **contrassegna la** chiave privata del certificato come esportabile se si determina che il certificato e la chiave privata devono essere spostati o copiati in altri sistemi e quindi fare clic su **Avanti.**
     
     > [!NOTE]
     > Skype for Business Server requisiti minimi per una chiave privata esportabile. La chiave viene esportata nei server perimetrali di un pool, dove il servizio di autenticazione del Media Relay utilizza copie del certificato anziché i singoli certificati per ogni istanza nel pool. 
@@ -161,9 +161,9 @@ Dopo aver pubblicato una topologia, è possibile installare i componenti Skype f
     
 15. Nella pagina **Esecuzione comandi in corso** fare clic su **Avanti**.
     
-16. Nella pagina On the **Stato richiesta di certificato online** esaminare le informazioni restituite. Verificare che il certificato sia stato emesso e installato nell'archivio certificati locale. Se viene segnalato come emesso e installato, ma non è valido, verificare che il certificato radice della CA sia stato installato nell'archivio ca radice attendibile del server. Per informazioni su come recuperare un certificato di CA radice attendibile, consultare la documentazione sulla CA. Se è necessario visualizzare il certificato recuperato, fare clic su **Visualizza dettagli certificato**. Per impostazione predefinita, la casella di controllo Assegna il certificato a Skype for Business Server **utilizzo dei** certificati è selezionata. Se si desidera assegnare manualmente il certificato, deselezionare la casella di controllo e quindi fare clic su **Fine**.
+16. Nella pagina On the **Stato richiesta di certificato online** esaminare le informazioni restituite. Verificare che il certificato sia stato emesso e installato nell'archivio certificati locale. Se viene segnalato come emesso e installato, ma non è valido, verificare che il certificato radice della CA sia stato installato nell'archivio ca radice attendibile del server. Per informazioni su come recuperare un certificato di CA radice attendibile, consultare la documentazione sulla CA. Se è necessario visualizzare il certificato recuperato, fare clic su **Visualizza dettagli certificato**. Per impostazione predefinita, la casella di controllo Assegna **il certificato Skype for Business Server utilizzo del** certificato è selezionata. Se si desidera assegnare manualmente il certificato, deselezionare la casella di controllo e quindi fare clic su **Fine**.
     
-17. Se è stata deselezionata la casella di controllo Assegna il certificato **Skype for Business Server** gli utilizzi dei certificati nella pagina precedente, verrà visualizzata la pagina **Assegnazione** certificato. Fare clic su **Avanti**.
+17. Se è stata deselezionata la casella di controllo Assegna il certificato **Skype for Business Server** gli utilizzi del certificato nella pagina precedente, verrà visualizzata la **pagina Assegnazione** certificato. Fare clic su **Avanti**.
     
 18. Nella pagina **Archivio certificati** selezionare il certificato richiesto. Se si desidera visualizzarlo, fare clic su **Visualizza dettagli certificato** e quindi su **Avanti** per continuare.
     
@@ -188,7 +188,7 @@ Dopo aver pubblicato una topologia, è possibile installare i componenti Skype f
 
 1. Esaminare i prerequisiti per **Passaggio 4: Avviare i servizi**.
     
-2. Se si tratta di edizione Enterprise pool Front End con almeno tre server, viene utilizzato Windows Fabric ed è necessario utilizzare il cmdlet **Start-CsPool.** Se viene utilizzato un singolo server, come nel caso di edizione Standard, è necessario utilizzare il cmdlet **Start-CsWindowsService.** In questo esempio viene utilizzato edizione Enterprise con tre Front End Server nel pool, aprire **Skype for Business Server Management Shell** ed eseguire il cmdlet **Start-CsPool** come illustrato nella figura. Per tutti gli altri ruoli, edizione Standard server, è necessario **utilizzare Start-CsWindowsService**. Per distribuire ruoli diversi dal ruolo Front End, vedere la documentazione relativa a tali ruoli specifici.
+2. Se si tratta di edizione Enterprise pool Front End con almeno tre server, viene utilizzato Windows Fabric ed è necessario utilizzare il cmdlet **Start-CsPool.** Se viene utilizzato un singolo server, come sempre edizione Standard, è necessario utilizzare il cmdlet **Start-CsWindowsService.** In questo esempio viene utilizzato edizione Enterprise con tre Front End Server nel pool, aprire **Skype for Business Server Management Shell** ed eseguire il cmdlet **Start-CsPool,** come illustrato nella figura. Per tutti gli altri ruoli, edizione Standard server, è necessario **utilizzare Start-CsWindowsService**. Per distribuire ruoli diversi dal ruolo Front End, vedere la documentazione relativa a tali ruoli specifici.
     
      ![Avviare Skype for Business servizi.](../../media/f52ec719-9476-419f-9a78-df08368395f7.png)
   

@@ -1,7 +1,7 @@
 ---
 title: Configurare la partecipazione alle riunioni senza PIN in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c21e8861-bb75-45e8-8485-38daa3b8121c
 description: "Riepilogo: informazioni su come configurare l'opzione di partecipazione alle riunioni senza PIN in Skype for Business Server."
-ms.openlocfilehash: 5e11a727e42ce4d65e21d3e001404a421fc52541
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 1f579a3f88553130bec68a1e6e6070c742f8824d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58617892"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60770264"
 ---
 # <a name="configure-pin-less-meeting-join-in-skype-for-business-server"></a>Configurare la partecipazione alle riunioni senza PIN in Skype for Business Server
  
 **Riepilogo:** Informazioni su come configurare l'opzione di partecipazione alle riunioni senza PIN in Skype for Business Server.
   
-Quando un chiamante con accesso esterno tenta di partecipare a una riunione, il servizio Conference Operatore automatico (CAA) posiziona il chiamante in una penna di attesa diversa dal &#x2014; sala di attesa se un relatore non è già in una chiamata e il chiamante esterno non ha immesso un PIN di leader. L'opzione di partecipazione alla riunione senza PIN consente ai chiamanti con accesso esterno di partecipare a una riunione senza immettere un PIN di leader anche se sono la prima persona di una chiamata. 
+Quando un chiamante con accesso esterno tenta di partecipare a una riunione, il servizio Conference Operatore automatico (CAA) posiziona il chiamante in una penna di attesa diversa dal &#x2014; sala di attesa se un relatore non è già in una chiamata e il chiamante di accesso esterno non ha immesso un PIN di leader. L'opzione di partecipazione alla riunione senza PIN consente ai chiamanti con accesso esterno di partecipare a una riunione senza immettere un PIN di leader anche se sono la prima persona di una chiamata. 
   
 Quando si configura questa funzionalità, tenere presente quanto segue:
   

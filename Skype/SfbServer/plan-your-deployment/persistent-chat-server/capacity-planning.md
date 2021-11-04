@@ -1,7 +1,7 @@
 ---
-title: Pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015
+title: Pianificazione della capacità per il server Chat persistente Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/23/2018
@@ -13,14 +13,14 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 7a850cd5-c789-4795-a8ff-083be21ae784
 description: 'Riepilogo: leggere questo argomento per informazioni sulla pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: d3ff8076a922d6242de0079239a3ff2c73b539a8
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: afa8ecb47913d722a1e1049a549bc6ab2f3800ed
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60012160"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60777866"
 ---
-# <a name="capacity-planning-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015
+# <a name="capacity-planning-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificazione della capacità per il server Chat persistente Skype for Business Server 2015
  
 **Riepilogo:** Leggere questo argomento per informazioni sulla pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015.
   
@@ -31,7 +31,7 @@ La pianificazione della capacità è una parte importante della preparazione all
 Prima di leggere questa sezione, è necessario avere familiarità con le topologie di Persistent Chat. Per ulteriori informazioni, vedere [Plan Persistent Chat Server topology](topology.md).
 
 > [!NOTE] 
-> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'aggiornamento di Microsoft Teams.](/microsoftteams/upgrade-start-here) Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
   
 ## <a name="persistent-chat-server-capacity-planning"></a>Pianificazione della capacità del server Chat persistente
 
@@ -118,7 +118,7 @@ Per ogni chat room, la tabella di pianificazione della capacità precedente spec
 I dati di esempio nella tabella seguente presuppongono che nella pagina **Impostazioni**  chat room per il 50% di tutte le chat room l'opzione Inviti sia impostata su **Sì.**
   
 > [!IMPORTANT]
-> Se il valore calcolato per il numero di inviti generati dal server supera 1 milione, le prestazioni del server potrebbero peggiorare in modo significativo. Per evitare questo problema, assicurarsi di ridurre al minimo il numero di chat configurate per inviare inviti o limitare il numero di utenti che possono partecipare alle chat room configurate per l'invio di inviti. 
+> Se il valore calcolato per il numero di inviti generati dal server supera 1 milione, le prestazioni del server potrebbero peggiorare in modo significativo. Per evitare questo problema, assicurarsi di ridurre al minimo il numero di chat room configurate per inviare inviti o limitare il numero di utenti che possono partecipare alle chat room configurate per l'invio di inviti. 
   
 **Esempio di accesso alle chat room tramite invito**
 
@@ -160,7 +160,7 @@ Nella tabella seguente viene descritto il modello utente per il server Chat pers
 - Numero di chat room unite per utente: 24  <br/>
 - Frequenza di join di picco: 10/secondo  <br/> 
 - Frequenza chat totale: 24/secondo  <br/> 
-- Frequenza chat per chat di piccole dimensioni: 22,22/secondo  <br/> 
+- Frequenza di chat per chat di piccole dimensioni: 22,22/secondo  <br/> 
 - Frequenza chat per chat di medie dimensioni: 1,67/secondo  <br/> 
 - Frequenza di chat per chat di grandi dimensioni: ~0,15/secondo  <br/> 
 - Percentuale di chat room configurate per gli inviti: 50%  <br/>
@@ -171,7 +171,7 @@ Nella tabella seguente viene descritto il modello utente per il server Chat pers
 - Numero medio di endpoint per utente: 1,5  <br/> 
 - Numero medio di chat visibili per endpoint: 1,5  <br/> 
 - Numero medio di chat visibili per utente: 2,25 (50% per 1 sala e 50% per 2 sale); Fino a 6 sale aperte, una per monitor  <br/> 
-- Numero di partecipanti di cui è stato eseguito il polling per intervallo: 25 per chat visibile  <br/> 
+- Numero di partecipanti di cui è stato eseguito il polling per intervallo: 25 per chat room visibile  <br/> 
 - Durata dell'intervallo di polling: 5 minuti  <br/> 
 - Numero di partecipanti a cui è stato eseguito il polling al secondo: 15.000  <br/>
 - Numero di modifiche di presenza all'ora per utente: 6  <br/> 

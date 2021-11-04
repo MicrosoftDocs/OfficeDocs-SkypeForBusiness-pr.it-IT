@@ -1,7 +1,7 @@
 ---
 title: Espansione delle impostazioni generali di Persistent Chat
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/27/2015
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 275ee1ae-ca58-4963-bc95-523319f90d96
 description: 'È possibile modificare le impostazioni generali per il server Chat persistente o il pool di server Chat persistente configurando o definendo queste proprietà:'
-ms.openlocfilehash: 25208b2d4c7e4bc04e648998254406ff4e299d4f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4de31f3fd6af4dfea023d490ea849f5b58963085
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610763"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60762544"
 ---
 # <a name="persistent-chat-general-settings-expander"></a>Espansione delle impostazioni generali di Persistent Chat
  
@@ -42,7 +42,7 @@ ms.locfileid: "58610763"
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa.
     
-- Selezionare la **casella di controllo SQL Server mirroring** dell'archivio principale se si desidera abilitare il mirroring per l'SQL Server principale.
+- Selezionare la **casella di controllo SQL Server mirroring dell'archivio** principale se si desidera abilitare il mirroring per l'SQL Server principale.
     
     Se si è scelto di abilitare il mirroring dell SQL Server store, selezionare l'archivio e l'istanza nell'elenco **Mirroring SQL Server store**.
     
@@ -54,19 +54,19 @@ ms.locfileid: "58610763"
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa per l'archivio di controllo.
     
-- Selezionare la **casella di controllo Usa SQL Server** backup per abilitare il ripristino di emergenza se si desidera abilitare l'utilizzo SQL Server ripristino di emergenza
+- Selezionare la **casella di controllo Usa SQL Server** di backup per abilitare il ripristino di emergenza se si desidera abilitare l'utilizzo SQL Server ripristino di emergenza
     
     Se si è scelto di abilitare il ripristino di emergenza, selezionare un archivio e un'istanza nell'elenco **Archivio SQL Server backup**.
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa.
     
-- Selezionare la **casella di controllo SQL Server mirroring** dell'archivio se si desidera abilitare il mirroring per l'SQL Server di mirroring.
+- Selezionare la **casella di controllo SQL Server mirroring dell'archivio** se si desidera abilitare il mirroring per l'SQL Server di mirroring.
     
-    Se si è scelto di abilitare il mirroring dell SQL Server archivio di backup, selezionare l'archivio e l'istanza nell'elenco **Backup SQL Server store mirror**.
+    Se si è scelto di abilitare il backup SQL Server mirroring dell'archivio, selezionare l'archivio e l'istanza nell'elenco **Backup SQL Server store mirror**.
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa.
     
-- Selezionare la **casella di controllo SQL Server mirroring** per abilitare il failover automatico se si desidera eseguire il failover automatico dell'archivio SQL Server backup.
+- Selezionare la **casella di controllo SQL Server mirroring** per abilitare il failover automatico se si desidera il failover automatico dell'archivio SQL Server backup.
     
     Se si è scelto di abilitare il SQL Server mirroring dell'archivio per abilitare il failover automatico, selezionare l'archivio e l'istanza nell'elenco.
     
@@ -80,11 +80,11 @@ ms.locfileid: "58610763"
     
 - Selezionare la **casella di controllo SQL Server mirroring dell'SQL Server** store.
     
-    Se si è scelto di abilitare la conformità SQL Server mirroring dell'archivio, selezionare **l'archivio e l'istanza nell'elenco Compliance SQL Server store mirror**.
+    Se si è scelto di abilitare la conformità SQL Server mirroring dell'archivio, selezionare **l'archivio e l'istanza nell'elenco SQL Server mirror dell'archivio.**
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa.
     
-- Selezionare la **casella di controllo SQL Server mirroring** per abilitare il failover automatico se si desidera eseguire il failover automatico dell'archivio SQL Server conformità.
+- Selezionare la **casella di controllo SQL Server mirroring** per abilitare il failover automatico se si desidera il failover automatico dell'archivio SQL Server conformità.
     
     Se si è scelto di abilitare il SQL Server mirroring dell'archivio per abilitare il failover automatico, selezionare l'archivio e l'istanza nell'elenco.
     
@@ -100,7 +100,7 @@ ms.locfileid: "58610763"
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa.
     
-- Selezionare la **casella di SQL Server controllo del mirroring** per abilitare il failover automatico se si desidera eseguire il failover automatico dell'archivio di SQL Server backup.
+- Selezionare la **casella di controllo SQL Server mirroring** per abilitare il failover automatico se si desidera eseguire il failover automatico della conformità di backup SQL Server archivio.
     
     Se si è scelto di abilitare il SQL Server mirroring dell'archivio per abilitare il failover automatico, selezionare l'archivio e l'istanza nell'elenco.
     
@@ -118,6 +118,6 @@ ms.locfileid: "58610763"
 
 [Pianificare il server Chat persistente in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)
   
-[Aggiungere un server Chat persistente alla topologia Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/add-persistent-chat-server.md)
+[Aggiungere il server Chat persistente alla topologia Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/add-persistent-chat-server.md)
   
 [Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/configure-hadr-for-persistent-chat.md)

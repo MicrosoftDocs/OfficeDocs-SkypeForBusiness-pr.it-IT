@@ -1,7 +1,7 @@
 ---
 title: SQL Server Reporting Services (Invoke)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 4a4ba8d6-ba43-45b3-b834-372d092561e7
 ROBOTS: NOINDEX, NOFOLLOW
 description: Dopo aver fornito le informazioni necessarie per la distribuzione dei report di Monitoring Server a Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 Report Services, nella pagina Esecuzione comandi viene visualizzato un riepilogo dei comandi emessi per installare i report nel SQL Server Reporting Services.
-ms.openlocfilehash: 7db18c7ed3917d3710340445dea8ce5552335d6c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 37fa7f1c56c9e65e04c0b33993e5dee67561bb92
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592800"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755217"
 ---
 # <a name="sql-server-reporting-services-invoke"></a>SQL Server Reporting Services (Invoke)
  

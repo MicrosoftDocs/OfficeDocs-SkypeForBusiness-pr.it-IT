@@ -1,7 +1,7 @@
 ---
 title: Registrar Security Impostazioni Create New or Edit Existing
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,18 +15,18 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: be480209-e0f4-4c2a-9f95-b0345ee01135
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: b218ae0c0c98b1506af4d6b479dafa0d9531b9cd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4e0fdd8309f67b71bf3984e33b9da7f9c88e95f7
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58600421"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60744552"
 ---
 # <a name="registrar-security-settings-create-new-or-edit-existing"></a>Impostazioni di sicurezza del registrar: crearne di nuove o modificare quelle esistenti
 
 Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Gestire le impostazioni di configurazione della funzione di registrazione Skype for Business Server 2015](../../manage/authentication/registrar-configuration-settings.md)
+- [Gestire le impostazioni di configurazione della funzione di registrazione in Skype for Business Server 2015](../../manage/authentication/registrar-configuration-settings.md)
 
 - [Modificare una funzione di registrazione esistente](/previous-versions/office/lync-server-2013/lync-server-2013-modify-existing-registrar-configuration-settings)
 

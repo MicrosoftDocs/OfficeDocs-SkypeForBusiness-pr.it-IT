@@ -1,7 +1,7 @@
 ---
 title: Certificato in sospeso (Intro)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: d95455f3-39d3-4730-89dd-7f988ae5da95
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per elaborare una richiesta di certificato online in sospeso, ovvero una richiesta che è stata emessa per l'Autorità di certificazione online, ma deve impostata a livello amministrativo in modo da richiedere un processo di approvazione manuale, fare clic su Avanti.
-ms.openlocfilehash: 01d42ea885619520d5629b0ade9a4da24a00ea81
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: e5f5b01a268f3e2bff813270e22e66ea8301a4d5
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58605465"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60755615"
 ---
 # <a name="pending-certificate-intro"></a>Certificato in sospeso (Intro)
  

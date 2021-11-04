@@ -1,7 +1,7 @@
 ---
 title: Importare un certificato (Intro)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 474fac52-0b11-45dd-a211-fd2f1727238b
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per importare un certificato, è necessario specificare il percorso del relativo file. Nella casella di testo Seleziona file di certificato è possibile digitare il percorso completo e il nome del file oppure fare clic sul pulsante Sfoglia e selezionare il percorso e il nome del file, in genere con estensione p7b, pfx o cer.
-ms.openlocfilehash: 7d3e360ee61d1262aaec8d228c5f8833d6abd3e6
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 112a8239d9bc1f48404ac0806ec176ead9480e3d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58616962"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60740062"
 ---
 # <a name="import-certificate-intro"></a>Importare un certificato (Intro)
  

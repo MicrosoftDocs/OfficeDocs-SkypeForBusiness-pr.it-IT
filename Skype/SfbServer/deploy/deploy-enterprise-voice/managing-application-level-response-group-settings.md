@@ -1,7 +1,7 @@
 ---
 title: Gestione delle impostazioni di Response Group a livello di applicazione in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,19 +15,19 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: aab749a1-fa2d-4ce8-a6c6-ebcfa37ce02a
-description: Gestione delle impostazioni di Response Group a livello di applicazione, ad esempio le impostazioni di musica in attesa e di ringback, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 75a9216251b44048811cf1308be431c0eaeae045
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Gestione delle impostazioni di Response Group a livello di applicazione, ad esempio le impostazioni di musica di attesa e di ringback, in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: 6cce6872bc0e1ee017d46eee4ee547c6e9aabd25
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58620172"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60769614"
 ---
 # <a name="managing-application-level-response-group-settings-in-skype-for-business"></a>Gestione delle impostazioni di Response Group a livello di applicazione in Skype for Business
  
-Gestione delle impostazioni di Response Group a livello di applicazione, ad esempio le impostazioni di musica in attesa e di ringback, in Skype for Business Server VoIP aziendale.
+Gestione delle impostazioni di Response Group a livello di applicazione, ad esempio le impostazioni di musica di attesa e di ringback, in Skype for Business Server VoIP aziendale.
   
-Le impostazioni a livello di applicazione per l'applicazione Response Group includono la configurazione predefinita di musica in attesa, il file audio di musica di attesa predefinito, il periodo di tolleranza di ringback dell'agente e la configurazione del contesto di chiamata. È possibile definire solo un set di impostazioni a livello di applicazione per ogni pool. Per visualizzare le impostazioni a livello di applicazione, utilizzare il cmdlet **Get-CsRgsConfiguration**. Per modificare le impostazioni a livello di applicazione, utilizzare il cmdlet **Set-CsRgsConfiguration**.
+Le impostazioni a livello di applicazione per l'applicazione Response Group includono la configurazione di musica di attesa predefinita, il file audio di musica di attesa predefinito, il periodo di tolleranza di ringback dell'agente e la configurazione del contesto di chiamata. È possibile definire solo un set di impostazioni a livello di applicazione per ogni pool. Per visualizzare le impostazioni a livello di applicazione, utilizzare il cmdlet **Get-CsRgsConfiguration**. Per modificare le impostazioni a livello di applicazione, utilizzare il cmdlet **Set-CsRgsConfiguration**.
   
 La musica di attesa predefinita viene riprodotta quando una chiamata viene messa in attesa e non è stata definita alcuna musica di attesa personalizzata. Il contesto di chiamata è disponibile solo per le code assegnate ai flussi di lavoro interattivi. Se il contesto di chiamata è abilitato, un agente può visualizzare informazioni come il tempo di attesa del chiamante o le domande e le risposte del flusso di lavoro quando la chiamata viene ricevuta.
   

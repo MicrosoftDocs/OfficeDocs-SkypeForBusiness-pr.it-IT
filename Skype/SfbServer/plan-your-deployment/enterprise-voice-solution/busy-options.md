@@ -1,7 +1,7 @@
 ---
 title: Pianificare le opzioni di disponibilità per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 5f85c6bc-a962-4283-971c-4380d83b3a66
 description: Informazioni sulla funzionalità Opzioni occupato in Skype for Business Server.
-ms.openlocfilehash: c43a5a0cae0a798f3c38c62b4a1c7895d9704fbb
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d47b31c53b5357a520f6aa0b3a6c0a02c18df8f2
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58583880"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756543"
 ---
 # <a name="plan-for-busy-options-for-skype-for-business-server"></a>Pianificare le opzioni di disponibilità per Skype for Business Server
  
@@ -40,19 +40,19 @@ Se per l'organizzazione sono abilitate le opzioni occupato, tutti gli utenti del
     
 - Segreteria telefonica su Occupato - In cui le nuove chiamate in arrivo verranno inoltrate alla segreteria telefonica se l'utente è occupato.
     
-La funzionalità Opzioni occupato offre funzionalità di failover. Se si verifica un problema e gli utenti esereranno il failover a un altro Front End Server o a un altro pool in Skype for Business Server, le relative impostazioni relative alle opzioni occupato verranno mantenute.
+La funzionalità Opzioni occupato offre funzionalità di failover. Se si verifica un problema e gli utenti esereranno il failover a un altro Front End Server o a un altro pool in Skype for Business Server, le impostazioni relative alle opzioni occupato verranno mantenute.
   
 Indipendentemente dalla configurazione delle opzioni di disponibilità, agli utenti di una chiamata o di una conferenza o a quelli con una chiamata in attesa non viene impedito di avviare nuove chiamate o conferenze. 
   
-Dopo la configurazione, l'impostazione Opzioni occupato è attiva per tutti i dispositivi e i client Skype for Business chiamata dell'utente. In base alle impostazioni di Opzioni occupato dell'utente, la chiamata rifiutata o inviata alla segreteria telefonica non squillerebbe su nessuno dei dispositivi di chiamata dell'utente, inclusi Macintosh, Windows Desktop, client mobili o telefoni IP, a cui l'utente ha effettuato l'accesso. 
+Dopo la configurazione, l'impostazione Opzioni occupato è attiva per tutti i dispositivi e i client di chiamata Skype for Business dell'utente. In base alle impostazioni di Opzioni occupato dell'utente, la chiamata rifiutata o inviata alla segreteria telefonica non squillerebbe su nessuno dei dispositivi di chiamata dell'utente, inclusi Macintosh, Windows Desktop, client mobili o telefoni IP, a cui l'utente ha eseguito l'accesso. 
   
-Gli utenti visualizzano le notifiche di chiamata senza risposta nei Skype for Business e nei dispositivi e riceveranno una notifica anche tramite posta elettronica. I chiamanti la cui chiamata è stata rifiutata a causa di Occupato su occupato riceveranno una notifica nel client Skype for Business che indica che l'utente che ha tentato di raggiungere è occupato in un'altra chiamata.
+Gli utenti visualizzano le notifiche di chiamata senza risposta nei Skype for Business e nei dispositivi e riceveranno una notifica anche tramite posta elettronica. I chiamanti la cui chiamata è stata rifiutata a causa di Occupato su occupato visualizzano una notifica nel client Skype for Business che indica che l'utente che ha tentato di raggiungere è occupato in un'altra chiamata.
   
 È possibile configurare la funzionalità Opzioni occupato utilizzando i cmdlet di PowerShell Skype for Business per:
   
 - Abilitare o disabilitare il criterio vocale Opzioni occupato per il Enterprise.
     
-- Amministrare Occupato su Occupato o Segreteria telefonica su Occupato per tutti gli utenti del Enterprise.
+- Amministra occupato su Occupato o Segreteria telefonica su Occupato per tutti gli utenti del Enterprise.
     
 - Amministrare Occupato su Occupato o Segreteria telefonica su Occupato per tutti gli utenti ospitati in un particolare pool Front End.
     
@@ -84,11 +84,11 @@ Opzioni occupato garantisce l'interoperabilità con le applicazioni vocali segue
     
 - Delega dell'amministratore/capo 
     
-  - Le chiamate in arrivo per gli utenti che sono impostati per una delega del capo/amministratore come Capo o come amministratore avranno la priorità per ignorare le impostazioni Occupato su Occupato e Segreteria telefonica su Occupato.
+  - Le chiamate in arrivo per gli utenti che sono impostati per una delega del capo/amministratore come capo o come amministratore avranno la priorità per ignorare le impostazioni Occupato su Occupato e Segreteria telefonica su Occupato.
     
   - L'esperienza corrente di delega del capo/amministratore rimarrà invariata con opzioni occupato impostate per gli amministratori o il responsabile.
     
-  - Le chiamate correlate alla delega non del capo/amministratore agli amministratori verranno rispettate dalle impostazioni opzioni occupato.
+  - Le chiamate correlate alla delega non del capo/amministratore agli amministratori saranno rispettate dalle impostazioni opzioni occupato.
     
 - Modalità di linea condivisa 
     
@@ -106,7 +106,7 @@ Opzioni occupato garantisce l'interoperabilità con le applicazioni vocali segue
     
   - Agli utenti delle conferenze non viene impedito di avviare nuove chiamate o conferenze tramite Opzioni occupato.
     
-  - Gli utenti delle conferenze sono ancora in grado di ricevere nuovi inviti alle conferenze, ma le nuove chiamate peer-to-peer verranno rifiutate in base alle impostazioni delle opzioni di disponibilità.
+  - Gli utenti delle conferenze sono ancora in grado di ricevere nuovi inviti alle conferenze, ma le nuove chiamate peer-to-peer verranno rifiutate in base alle impostazioni di Opzioni occupato.
     
 - Squillo simultaneo e inoltro di chiamata
     

@@ -1,7 +1,7 @@
 ---
 title: Visualizzazione McuJoinsAndLeaves
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/9/2015
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 6f00b8e7-b8b6-4657-ac5e-d8a571806ae2
 description: La visualizzazione McuJoinsAndLeaves contiene informazioni sulla partecipazione e l'abbandono da parte degli utenti in un server per conferenze. In ogni record di questa visualizzazione sono inclusi dettagli di chiamata su una combinazione di partecipazione o abbandono di un utente e un server per conferenze. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 1b37d0609c82c40e65beb0e58bffc639b738487f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 509eca981381b052962ac516a1b0d5537e8c27f1
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58617732"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60763334"
 ---
 # <a name="mcujoinsandleaves-view"></a>Visualizzazione McuJoinsAndLeaves
  
@@ -26,8 +26,8 @@ La visualizzazione McuJoinsAndLeaves contiene informazioni sulla partecipazione 
   
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
-|**SessionIdTime** <br/> |datetime  <br/> |Data e ora dell'istanza di conferenza. Valore utilizzato insieme a SessionIdSeq per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella Conferenze [Skype for Business Server 2015.](conferences.md) <br/> |
-|**SessionIdSeq** <br/> |int  <br/> |Numero ID per identificare l'istanza di conferenza. Valore utilizzato insieme a SessionIdTime per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella Conferenze [Skype for Business Server 2015.](conferences.md) <br/> |
+|**SessionIdTime** <br/> |datetime  <br/> |Data e ora dell'istanza di conferenza. Valore utilizzato insieme a SessionIdSeq per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella [Conferenze Skype for Business Server 2015.](conferences.md) <br/> |
+|**SessionIdSeq** <br/> |int  <br/> |Numero ID per identificare l'istanza di conferenza. Valore utilizzato insieme a SessionIdTime per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella [Conferenze Skype for Business Server 2015.](conferences.md) <br/> |
 |**McuUri** <br/> |nvarchar(256)  <br/> |URI del server per le conferenze al quale l'utente è connesso.  <br/> |
 |**McuUriType** <br/> |nvarchar(256)  <br/> |URI del server per le conferenze al quale l'utente è connesso. Per ulteriori informazioni, vedere la tabella [UriTypes.](uritypes.md) <br/> |
 |**UserUri** <br/> |nvarchar(450)  <br/> |URI dell'utente le cui informazioni di accesso e abbandono relative al server per le conferenze sono state raccolte.  <br/> |

@@ -1,7 +1,7 @@
 ---
 title: Pianificare la sicurezza in Skype For Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,19 +12,19 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: cbc800db-35f6-45c0-b9f6-d8cee0c7e922
-description: Skype for Business Server contenuto di sicurezza.
-ms.openlocfilehash: 8b5aad37f50b1ea106c2dead8e2443a30c893bf2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Skype for Business Server sicurezza.
+ms.openlocfilehash: 023ef4cb652b727e84a1130f358cdce6506931ab
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58627878"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60744082"
 ---
 # <a name="plan-for-security-in-skype-for-business-server"></a>Pianificare la sicurezza in Skype For Business Server 
  
-Skype for Business Server contenuto di sicurezza. 
+Skype for Business Server sicurezza. 
   
-Questo contenuto si riferisce alla Skype for Business Server sicurezza. La sicurezza è un argomento molto ampio. La sicurezza raggiunge tutte le funzionalità di Skype for Business Server database, servizi e hardware che costituiscono l'ecosistema. Questo contenuto è un supplemento per argomenti specifici sulla sicurezza relativi Skype for Business Server.
+Questo contenuto è correlato alla Skype for Business Server sicurezza. La sicurezza è un argomento molto ampio. La sicurezza raggiunge tutte le funzionalità di Skype for Business Server database, servizi e hardware che costituiscono l'ecosistema. Questo contenuto è un supplemento per argomenti di sicurezza specifici relativi Skype for Business Server.
   
 ## <a name="in-this-section"></a>Argomenti della sezione
 
