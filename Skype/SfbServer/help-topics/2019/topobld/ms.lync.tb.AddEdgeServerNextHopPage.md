@@ -1,7 +1,7 @@
 ---
 title: Aggiungere l'hop successivo del server perimetrale
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 8ef7235d-626c-4cc9-b6ec-9dfeab495cc0
 ROBOTS: NOINDEX, NOFOLLOW
 description: L'hop successivo per il pool Edge Server è un pool Front End (che può essere un pool Enterprise o un server Standard Edition) oppure un server Director, se nella distribuzione è incluso un server di questo tipo.
-ms.openlocfilehash: f4040a158c7f898d5781d4ac1abc4997696ed10c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 95f368eb75319d4e44fd396015ad6c22f79e15f6
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58624218"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60771135"
 ---
 # <a name="add-edge-server-next-hop"></a>Aggiungere Edge Server Next Hop
 

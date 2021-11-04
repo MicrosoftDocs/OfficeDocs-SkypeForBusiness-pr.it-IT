@@ -1,7 +1,7 @@
 ---
 title: Processo di distribuzione per parcheggio di chiamata in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 2000d672-a85f-4262-9d69-0bee9ae3709a
 description: Processo di distribuzione e passaggi per il parcheggio di chiamata in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 1869f7f4ee26e0ad1f81aea44a829a712c3d7298
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 60de591138046f3ccfa1e5c9ca84bed86c32587d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592820"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60758078"
 ---
 # <a name="deployment-process-for-call-park-in-skype-for-business"></a>Processo di distribuzione per parcheggio di chiamata in Skype for Business
  
@@ -39,7 +39,7 @@ I componenti utilizzati da Parcheggio di chiamata vengono installati e abilitati
 |Configurare le impostazioni del parcheggio di chiamata  <br/> | Utilizzare il cmdlet **Set-CsCpsConfiguration** per configurare le impostazioni del parcheggio di chiamata. Come minimo, è consigliabile configurare l'opzione **OnTimeoutURI** per configurare la destinazione di fallback da utilizzare quando si verifica il timeout di una chiamata parcheggiata. È inoltre possibile configurare le impostazioni seguenti: <br/>  (Facoltativo) **EnableMusicOnHold** per abilitare o disabilitare la musica di attesa. <br/>  (Facoltativo) **MaxCallPickupAttempts** per determinare il numero di squilli sul telefono di destinazione di una chiamata parcheggiata prima dell'inoltro all'URI (Uniform Resource Identifier) di fallback. <br/>  (Facoltativo) **CallPickupTimeoutThreshold** per determinare quanto tempo deve trascorrere dopo che una chiamata è stata parcheggiata prima che squilli sul telefono da cui è stata effettuata la risposta. <br/> |RTCUniversalServerAdmins  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> |[Configurare le impostazioni del parcheggio di chiamata in Skype for Business](configure-call-park-settings.md) <br/> |
 |Se lo si desidera, personalizzare la musica di attesa  <br/> |Utilizzare il cmdlet **Set-CsCallParkServiceMusicOnHoldFile** per personalizzare e caricare un file audio, se non si desidera utilizzare la musica di attesa predefinita. <br/> |RTCUniversalServerAdmins  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> |[Personalizzare la musica del parcheggio di chiamata in attesa inSkype for Business](customize-call-park-music-on-hold.md) <br/> |
 |Configurare i criteri vocali per abilitare parcheggio di chiamata per gli utenti  <br/> |Utilizzare Skype for Business Server pannello di controllo o il cmdlet **Set-CSVoicePolicy** con l'opzione **EnableCallPark** per abilitare Parcheggio di chiamata per gli utenti nei criteri vocali. <br/> Per impostazione predefinita, parcheggio di chiamata è disabilitato per tutti gli utenti.  <br/> Se si dispone di più criteri vocali, verificare che la proprietà EnableCallPark sia impostata per ogni criterio vocale e non solo per quello predefinito.  <br/> |RTCUniversalServerAdmins  <br/> CsVoiceAdministrator  <br/> CsUserAdministrator  <br/> CsAdministrator  <br/> |[Abilitare parcheggio di chiamata per gli utenti in Skype for Business](enable-call-park-for-users.md) <br/> |
-|Verificare le regole di normalizzazione del parcheggio di chiamata  <br/> |I codici orbit di Parcheggio di chiamata non devono essere normalizzati. Verificare che le regole di normalizzazione non includano alcun intervallo dei codici orbit. Se necessario, creare regole di normalizzazione aggiuntive per impedire che vengano normalizzati i codici orbit.  <br/> |RTCUniversalServerAdmins  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> |[Verificare le regole di normalizzazione per parcheggio di chiamata in Skype for Business](verify-normalization-rules-for-call-park.md) <br/> |
+|Verificare le regole di normalizzazione del parcheggio di chiamata  <br/> |I codici orbit di Parcheggio di chiamata non devono essere normalizzati. Verificare che le regole di normalizzazione non includano alcun intervallo dei codici orbit. Se necessario, creare regole di normalizzazione aggiuntive per impedire che vengano normalizzati i codici orbit.  <br/> |RTCUniversalServerAdmins  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> |[Verificare le regole di normalizzazione per Parcheggio di chiamata in Skype for Business](verify-normalization-rules-for-call-park.md) <br/> |
 |Verificare la distribuzione del parcheggio di chiamata  <br/> |Testare il parcheggio e il recupero delle chiamate per assicurarsi che la configurazione funzioni come previsto.  <br/> |-  <br/> |[(Facoltativo) Verificare la distribuzione del parcheggio di chiamata in Skype for Business](optional-verify-call-park-deployment.md) <br/> |
    
 

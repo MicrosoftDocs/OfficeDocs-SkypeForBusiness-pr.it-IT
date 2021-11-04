@@ -1,7 +1,7 @@
 ---
 title: Abilitazione del controllo di ammissione di chiamata
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: " Dopo aver configurato la rete del servizio Controllo di ammissione di chiamata, è necessario abilitare il servizio Controllo di ammissione di chiamata per applicare le limitazioni della larghezza di banda."
-ms.openlocfilehash: 8fdb53eb555d1a7eb2b74fbb0650da958950a831
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 723578d37d8094e53ed9e4f9505984e43b1f3b3d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58609263"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60750205"
 ---
 # <a name="enabling-call-admission-control-in-skype-for-business-server"></a>Abilitazione del controllo di ammissione di chiamata in Skype for Business Server
 
@@ -27,14 +27,14 @@ Il servizio Controllo di ammissione di chiamata è una rete di aree, siti e subn
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Globale.**
 
 4.  Nella pagina  **Globale** fare clic sulla scheda della configurazione  **Globale**.
    
     > [!NOTE]  
-    > È possibile configurare una sola rete per qualsiasi Skype for Business Server distribuzione, quindi non saranno mai presenti più configurazioni di rete nell'elenco. Non è possibile rinominare la configurazione globale.
+    > È possibile configurare una sola rete per qualsiasi Skype for Business Server distribuzione, quindi non saranno mai presenti più di una configurazione di rete nell'elenco. Non è possibile rinominare la configurazione globale.
 
 5.  Scegliere **Mostra dettagli** dal menu **Modifica**.
 

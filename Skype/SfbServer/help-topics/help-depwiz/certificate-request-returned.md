@@ -1,7 +1,7 @@
 ---
 title: Richiesta di certificato (Returned)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 4/1/2015
@@ -14,13 +14,13 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 4ada9045-0fdf-4470-8574-2fa08bab9392
-description: "Nella pagina Stato richiesta certificato online vengono presentate informazioni importanti risultanti dalla creazione e dall'emissione della richiesta di certificato online. Viene fornita l'identificazione digitale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella di controllo Assegna questo certificato Skype for Business Server'utilizzo del certificato è selezionata. Se si fa clic su Fine, il certificato verrà assegnato automaticamente a Lync Server 2013 per gli scopi definiti durante i passaggi di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi per cui verrà assegnato il certificato sono i seguenti:"
-ms.openlocfilehash: e87e16f79a30aa037ba0a7ee3e9ad1379536ca6e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: "Nella pagina Stato richiesta certificato online vengono presentate informazioni importanti risultanti dalla creazione e dall'emissione della richiesta di certificato online. Viene fornita l'identificazione digitale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella di controllo Assegna questo certificato Skype for Business Server'utilizzo dei certificati è selezionata. Se si fa clic su Fine, il certificato verrà assegnato automaticamente a Lync Server 2013 per gli scopi definiti durante i passaggi di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi per cui verrà assegnato il certificato sono i seguenti:"
+ms.openlocfilehash: ec715e7270247ca35707ea89694b4970c7ece25c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58616092"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60764264"
 ---
 # <a name="certificate-request-returned"></a>Richiesta di certificato (restituito)
  
@@ -37,6 +37,6 @@ Fare clic sul pulsante **Visualizza dettagli certificato** per visualizzare il c
 Fare clic su **Fine** per completare il processo di richiesta del certificato online. Se è stata selezionata la casella di controllo Assegna questo certificato **Skype for Business Server utilizzo** del certificato, il certificato verrà assegnato automaticamente. Se si è scelto di deselezionare questa casella di controllo, sarà necessario assegnare il certificato in un passaggio separato. 
   
 > [!IMPORTANT]
-> Se il certificato radice dell'Autorità di certificazione emittente non si trova nell'archivio Autorità di certificazione radice attendibile del computer o se i certificati ca intermedi non si trova nell'archivio appropriato, verrà visualizzato lo stato riepilogativo, come illustrato nell'immagine seguente. Non si ha pertanto la possibilità di assegnare il certificato. Per completare il processo di assegnazione del certificato, è perciò necessario importare il certificato radice della CA emittente e gli eventuali certificati della CA intermedia e quindi assegnarlo facendo clic su **Assegna** nella pagina principale della Configurazione guidata certificati.
+> Se il certificato radice dell'Autorità di certificazione emittente non si trova nell'archivio autorità di certificazione radice attendibile del computer o se i certificati ca intermedi non si trova nell'archivio appropriato, verrà visualizzato lo stato riepilogativo, come illustrato nell'immagine seguente. Non si ha pertanto la possibilità di assegnare il certificato. Per completare il processo di assegnazione del certificato, è perciò necessario importare il certificato radice della CA emittente e gli eventuali certificati della CA intermedia e quindi assegnarlo facendo clic su **Assegna** nella pagina principale della Configurazione guidata certificati.
   
 

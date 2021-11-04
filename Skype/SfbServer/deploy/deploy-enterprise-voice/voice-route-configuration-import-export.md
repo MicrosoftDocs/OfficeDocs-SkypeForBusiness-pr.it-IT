@@ -1,7 +1,7 @@
 ---
-title: Esportare o importare un file di configurazione delle route vocali in Skype for Business
+title: Esportare o importare un file di configurazione della route vocale in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,17 +15,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 02ce922d-9ca8-4513-b09f-9de51f5c5bdc
-description: 'Riepilogo: informazioni su come esportare o importare un file di configurazione del routing vocale in Skype for Business Server utilizzando il Skype for Business Server di controllo.'
-ms.openlocfilehash: bbad8ca1a9d11074bb99fcd9655b8a8281953344
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: 'Riepilogo: informazioni su come esportare o importare un file di configurazione del routing vocale in Skype for Business Server utilizzando il Pannello Skype for Business Server di controllo.'
+ms.openlocfilehash: 7b3b0ae7e7fe49b645fd5a6ee6b6b4d9fcc1affd
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58626148"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60773226"
 ---
-# <a name="export-or-import-a-voice-route-configuration-file-in-skype-for-business"></a>Esportare o importare un file di configurazione delle route vocali in Skype for Business
+# <a name="export-or-import-a-voice-route-configuration-file-in-skype-for-business"></a>Esportare o importare un file di configurazione della route vocale in Skype for Business
  
-**Riepilogo:** Informazioni su come esportare o importare un file di configurazione del routing vocale Skype for Business Server utilizzando il Pannello Skype for Business Server controllo.
+**Riepilogo:** Informazioni su come esportare o importare un file di configurazione del routing vocale in Skype for Business Server utilizzando il Pannello Skype for Business Server di controllo.
   
 Se si desidera salvare la configurazione del routing vocale senza pubblicarla, eseguire la procedura seguente per salvare e recuperare uno snapshot della configurazione del routing vocale. 
   

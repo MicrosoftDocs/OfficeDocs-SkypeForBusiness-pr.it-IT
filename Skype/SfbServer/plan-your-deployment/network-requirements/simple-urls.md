@@ -1,7 +1,7 @@
 ---
 title: Requisiti DNS per gli URL semplici in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 3a3c9b22-892f-45a7-b05c-539d358a1a86
 description: "Riepilogo: leggere le considerazioni relative all'URL semplice in questo argomento prima di implementare i record DNS per Skype for Business Server."
-ms.openlocfilehash: cbc8a6f99704f9c450847d0ca3c5173b0066715e
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: d638ff2d3d1b89deaad90c054698692e70ffaae7
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011720"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60777916"
 ---
 # <a name="dns-requirements-for-simple-urls-in-skype-for-business-server"></a>Requisiti DNS per gli URL semplici in Skype for Business Server
 
@@ -42,7 +42,7 @@ La definizione di un URL semplice richiederà anche l'impostazione di un record 
 
 Generatore di topologie e i cmdlet Skype for Business Server Management Shell applicano diverse regole di convalida per gli URL semplici. È obbligatorio impostare URL semplici riunione e per accesso esterno, mentre l'impostazione dell'URL semplice di amministrazione è facoltativa. Ogni dominio SIP deve disporre di un URL semplice riunione separato, ma sono sufficienti un URL semplice per accesso esterno e un URL semplice di amministrazione per l'intera organizzazione.
 
-Ogni URL semplice dell'organizzazione deve avere un nome univoco e non può essere un prefisso di un altro URL semplice( ad esempio, non è possibile impostarlo come URL semplice Meet e come URL semplice `SfB2015.contoso.com/Meet` `SfB2015.contoso.com/Meet/Dialin` dialin). I nomi di URL semplici non possono contenere il nome di dominio completo di alcun pool o le informazioni sulle porte (ad esempio, https://FQDN:88/meet non sono consentite). Tutti gli URL semplici devono iniziare con il prefisso https:// semplice. 
+Ogni URL semplice dell'organizzazione deve avere un nome univoco e non può essere un prefisso di un altro URL semplice( ad esempio, non è possibile impostarlo come URL semplice Meet e come URL semplice `SfB2015.contoso.com/Meet` `SfB2015.contoso.com/Meet/Dialin` dialin). I nomi di URL semplici non possono contenere il nome di dominio completo di alcun pool o qualsiasi informazione sulla porta (ad esempio, https://FQDN:88/meet non è consentita). Tutti gli URL semplici devono iniziare con il prefisso https:// semplice. 
 
 Gli URL semplici possono includere solo caratteri alfanumerici, ovvero a-z, A-Z, 0-9 e il punto (.). Se si utilizzano altri caratteri, gli URL semplici potrebbero non funzionare come previsto.
 

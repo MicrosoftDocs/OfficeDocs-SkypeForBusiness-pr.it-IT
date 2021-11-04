@@ -1,7 +1,7 @@
 ---
 title: Test di ripristino di emergenza in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Eseguire un ripristino di sistema per un server Skype for Business Server pool per testare il processo di ripristino di emergenza documentato
-ms.openlocfilehash: a98f2de4d860c4a769526428958ba9b952cfc573
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 94d4d4d1a832db3bb72a844818675dba04c214b9
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58609243"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60743452"
 ---
 # <a name="disaster-recovery-testing-in-skype-for-business-server"></a>Test di ripristino di emergenza in Skype for Business Server
 
@@ -26,7 +26,7 @@ Si noti che la pianificazione in base alla quale le organizzazioni eseguono i te
 
 Esportare la Skype for Business Server, i criteri e le impostazioni di configurazione in un file. Tra l'altro, questo file può essere utilizzato per ripristinare queste informazioni nell'archivio di gestione centrale dopo un aggiornamento, un errore hardware o un altro problema che ha comportato la perdita di dati.
 
-Importare Skype for Business Server topologia, criteri e impostazioni di configurazione nell'archivio di gestione centrale o nel computer locale, come illustrato nei comandi seguenti: 
+Importare la Skype for Business Server, i criteri e le impostazioni di configurazione nell'archivio di gestione centrale o nel computer locale, come illustrato nei comandi seguenti: 
 
 `Import-CsConfiguration -ByteInput <Byte[]> [-Force <SwitchParameter>] [-LocalStore <SwitchParameter>]`
 
@@ -34,11 +34,11 @@ Importare Skype for Business Server topologia, criteri e impostazioni di configu
 
 Per eseguire il backup dei dati di produzione:
 
-- Eseguire il backup dei database RTC e LCSLog utilizzando il processo di backup SQL Server standard per eseguire il dump del database in un dispositivo di dump su file o su nastro.
+- Eseguire il backup dei database RTC e LCSLog utilizzando il processo di backup SQL Server standard per eseguire il dump del database in un file o in un dispositivo di dump su nastro.
 - Utilizzare un'applicazione di backup di terze parti per eseguire il backup dei dati su file o su nastro.
 - Utilizzare il cmdlet Export-CsUserData per creare un'esportazione XML dell'intero database RTC.
 - Utilizzare il backup del file system o il backup di terze parti per eseguire il backup del contenuto delle riunioni e dei log di conformità.
-- Utilizzare lo Export-CsConfiguration da riga di comando per eseguire il backup delle Skype for Business Server predefinite.
+- Utilizzare lo Export-CsConfiguration da riga di comando per eseguire il backup Skype for Business Server impostazioni.
 
 Il primo passaggio della procedura di failover include uno spostamento forzato degli utenti dal pool di produzione al pool di ripristino di emergenza. Si tratta di uno spostamento forzato perché il pool di produzione non sarà disponibile per accettare la rilocazione dell'utente.
 

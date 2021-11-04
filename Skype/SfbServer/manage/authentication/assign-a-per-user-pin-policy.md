@@ -1,7 +1,7 @@
 ---
 title: Assegnare un criterio PIN per utente in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d8211c64-0b63-4193-a074-673da7d14287
 description: 'Riepilogo: stage AV and OAuth certificates for Skype for Business Server.'
-ms.openlocfilehash: 6925b8b042da41f82c505a79afcc5b7678454fbd
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 2ca870ff500c5a963db17f90262c2f128c847d60
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60012720"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60750355"
 ---
 # <a name="assign-a-per-user-pin-policy-in-skype-for-business-server"></a>Assegnare un criterio PIN per utente in Skype for Business Server
 
 **Riepilogo:** Stage AV and OAuth certificates for Skype for Business Server.
   
-Il criterio PIN (Personal Identification Number) per le conferenze telefoniche con accesso esterno è una delle singole impostazioni di un account utente che può essere configurato nel Skype for Business Server Di controllo.
+Il criterio PIN (Personal Identification Number) per le conferenze telefoniche con accesso esterno è una delle singole impostazioni di un account utente che può essere configurato nel Skype for Business Server Pannello di controllo.
   
 La distribuzione di uno o più criteri PIN per utente è facoltativa. Puoi anche distribuire solo un criterio PIN a livello globale o un criterio PIN a livello di sito. Se si distribuiscono i criteri per utente, è necessario assegnarli in modo esplicito agli utenti, ai gruppi o agli oggetti contatto. Le autorizzazioni e i diritti utente relativi all'utilizzo dei PIN per le conferenze telefoniche con accesso esterno vengono automaticamente predefiniti rispetto a quelli definiti nel criterio PIN a livello globale quando non vengono assegnati criteri specifici a livello di sito o per utente.
   

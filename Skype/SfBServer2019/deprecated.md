@@ -1,7 +1,7 @@
 ---
 title: Cosa è deprecato da Skype for Business Server 2019
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: 'Riepilogo: queste funzionalità sono state rimosse Skype for Business Server 2019.'
-ms.openlocfilehash: cdc7b54f815c324707ee657d8365aa842f28293d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 65229e091d903ca18fee89224e45aedef8c0ca40
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595030"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60771725"
 ---
 # <a name="whats-deprecated-from-skype-for-business-server-2019"></a>Cosa è deprecato da Skype for Business Server 2019
 
@@ -27,7 +27,7 @@ Alcune funzionalità non evidenziate sono incluse in Skype for Business Server 2
 
 ## <a name="features-deprecated-in-skype-for-business-server-2019"></a>Funzionalità deprecate in Skype for Business Server 2019 
 
-Le funzionalità e le funzionalità seguenti sono state deprecate in Skype for Business Server 2019.
+Le funzionalità e le funzionalità seguenti sono state deprecate Skype for Business Server 2019.
 
 ### <a name="xmpp-gateways-for-skype-for-business-server"></a>Gateway XMPP per Skype for Business Server
 
@@ -41,7 +41,7 @@ La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, ved
 
 ### <a name="sql-mirroring-for-skype-for-business-server"></a>SQL Mirroring per Skype for Business Server
 
-SQL Il mirroring non può essere distribuito con Skype for Business Server 2019. Altre opzioni per la disponibilità elevata e il ripristino di emergenza sono ancora supportate ed è consigliabile scegliere tra queste opzioni. Vedere [Plan for high availability and disaster recovery in Skype for Business Server](../SfbServer/plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md) per esaminare le opzioni.
+SQL Non è possibile distribuire il mirroring con Skype for Business Server 2019. Altre opzioni per la disponibilità elevata e il ripristino di emergenza sono ancora supportate ed è consigliabile scegliere tra queste opzioni. Vedere [Plan for high availability and disaster recovery in Skype for Business Server](../SfbServer/plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md) per esaminare le opzioni.
 
 ### <a name="in-place-upgrades"></a>Aggiornamenti sul posto 
 

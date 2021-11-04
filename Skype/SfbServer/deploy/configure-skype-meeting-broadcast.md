@@ -1,7 +1,7 @@
 ---
 title: Configurare la distribuzione locale per Riunione Skype Broadcast
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection:
 - IT_Skype4B_Hybrid
 ms.assetid: 2979802e-fc6b-4555-bc43-7cd48f6a1d88
 description: 'Riepilogo: informazioni sui passaggi da eseguire per configurare Riunione Skype Broadcast per la distribuzione ibrida Skype for Business Server locale.'
-ms.openlocfilehash: 99ba1733dc8c353dc17f9a4c9a51a9ed00410d27
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 9d1ccadfc6a8bed52a7f6d4aa72bd72c2a5e94c8
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60013710"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60771698"
 ---
 # <a name="configure-your-on-premises-deployment-for-skype-meeting-broadcast"></a>Configurare la distribuzione locale per Riunione Skype Broadcast
  
@@ -40,7 +40,7 @@ Dovrai eseguire le operazioni seguenti per preparare l'ambiente per Riunione Sky
     
 ### <a name="configure-federation-with-skype-for-business-online-resources"></a>Configurare la federazione con Skype for Business online
 
-Per abilitare la federazione con Skype for Business online, è necessario configurare l'accesso esterno per un provider federato SIP. Per eseguire questa operazione utilizzando il Pannello Skype for Business Server di controllo, eseguire la procedura seguente:
+Per abilitare la federazione con Skype for Business online, è necessario configurare l'accesso esterno per un provider federato SIP. Per eseguire questa operazione utilizzando il Pannello Skype for Business Server di controllo, attenersi alla seguente procedura:
   
 1. Avviare il Skype for Business Server di controllo e selezionare **Accesso esterno** a sinistra.
     
@@ -53,7 +53,7 @@ Per abilitare la federazione con Skype for Business online, è necessario config
    - **Servizio Access Edge (FQDN): sipfed.resources.lync.com**
    - **Livello di verifica predefinito:** Consenti agli utenti di comunicare con tutti gli utenti che usano questo provider. 
    
-È inoltre possibile abilitare la federazione con Skype for Business online eseguendo il cmdlet seguente in Skype for Business Server Management Shell:
+È inoltre possibile abilitare la federazione con Skype for Business Online eseguendo il cmdlet seguente in Skype for Business Server Management Shell:
   
 ```powershell
 New-CsHostingProvider -Identity LyncOnlineResources -ProxyFqdn sipfed.resources.lync.com -VerificationLevel AlwaysVerifiable -Enabled $True -EnabledSharedAddressSpace $True -HostsOCSUsers $True -IsLocal $False

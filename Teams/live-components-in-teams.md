@@ -1,7 +1,7 @@
 ---
 title: Gestire i componenti in tempo reale in Teams
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 audience: Admin
 ms.topic: conceptual
@@ -18,20 +18,20 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 031f49d79659e0d5af1152e054466255d208a146
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b8bda034030f2ccb6e12e23908f16ca212f4add0
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58631460"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60750335"
 ---
 # <a name="manage-live-components-in-teams"></a>Gestire i componenti in tempo reale in Teams
 
 I componenti in tempo reale Teams chat offrono un nuovo modo per ideare, creare e prendere decisioni insieme. Inviare un componente, ad esempio una tabella, un elenco attività o un paragrafo, in cui tutti gli utenti della chat possono modificare le modifiche in linea e vedere le modifiche non appena vengono apportate. Questo significa che puoi raccogliere idee e feedback dal tuo team tenendo meno riunioni e riducendo al minimo la necessità di lunghi thread di chat.
 
-**È possibile eseguire più velocemente le attività insieme.** È possibile creare un'agenda, tenere traccia delle azioni di un gruppo o prendere appunti collettivamente. Questi sono solo alcuni scenari semplificati con i componenti in tempo reale.
+**È possibile eseguire più velocemente le attività insieme.** È possibile creare un'agenda, tenere traccia delle attività di un gruppo o prendere appunti collettivamente. Questi sono solo alcuni scenari semplificati con i componenti in tempo reale.
 
-**Condividere componenti.** In questa versione è possibile condividere i componenti in tempo reale in Teams chat. I destinatari possono modificare da qualsiasi posizione e visualizzare immediatamente gli aggiornamenti, indipendentemente da dove sono state apportate le modifiche. Nelle versioni future, i componenti in tempo reale saranno supportati Teams note e canali delle riunioni, Outlook e infine in tutte Microsoft 365 applicazioni.
+**Condividere componenti.** In questa versione è possibile condividere i componenti in tempo reale in Teams chat. I destinatari possono modificare da qualsiasi posizione e visualizzare immediatamente gli aggiornamenti, indipendentemente da dove sono state apportate le modifiche. Nelle versioni future, i componenti in tempo reale saranno supportati Teams note e canali delle riunioni, Outlook e infine in tutte le Microsoft 365 applicazioni.
 
 **Inizia in chat, crea da lì.** Ogni componente creato da Teams chat viene salvato automaticamente in un file in OneDrive. Quindi, potresti iniziare a collaborare in chat e poi passare al file, dove hai uno spazio visivo più ampio per la modifica e puoi aggiungere tutti i componenti che vuoi.
 
@@ -63,17 +63,17 @@ I componenti in tempo reale sono Microsoft Fluid Framework supportati in Microso
    
    L'applicazione della modifica all'interno della tenancy sarà breve. 
 
-La funzionalità sarà disponibile in Teams Windows Desktop, Mac, iOS, Android. Se abilitata, gli utenti visualizzano una nuova opzione per l'inserimento di componenti in tempo reale nell'esperienza di composizione del messaggio per questi client.
+La funzionalità sarà disponibile in Teams Windows Desktop, Mac, iOS, Android. Se questa opzione è abilitata, gli utenti visualizzano una nuova opzione per l'inserimento di componenti in tempo reale nell'esperienza di composizione del messaggio per questi client.
 
 ## <a name="disabling-fluid-framework-through-sharepoint-online-powershell-cmdlet"></a>Disabilitazione Fluid Framework cmdlet di PowerShell SharePoint online
 
 1. [Connessione per SharePoint PowerShell online.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-2. Disabilitare Fluid usando il cmdlet Set-SPOTenant Set-SPOTenant -IsFluidEnabled $false. 
+2. Disabilitare Fluid usando il cmdlet Set-SPOTenant cmdlet Set-SPOTenant -IsFluidEnabled $false. 
 
    L'applicazione della modifica all'interno della tenancy sarà breve. 
 
-Se è necessario abilitare di nuovo questa funzionalità, è possibile usare SharePoint cmdlet di PowerShell online.
+Se è necessario abilitare di nuovo questa funzionalità, è possibile usare i cmdlet di PowerShell SharePoint online.
 
 ```powershell
 C:\\WINDOWS\\system32&gt; Connect-SPOService
@@ -89,7 +89,7 @@ PS C:\\WINDOWS\\system32&gt;
 
 - La creazione di una tabella o di un elenco attività come primo componente dopo il riavvio dell Teams app potrebbe richiedere del tempo aggiuntivo.
 
-- Gli altri membri della chat riceveranno una notifica tramite posta elettronica quando vengono menzionati con il simbolo @. Le notifiche con menzioni nel feed attività Teams saranno disponibili a breve.
+- Gli altri membri della chat riceveranno una notifica tramite posta elettronica quando vengono menzionati con un simbolo di @. Le notifiche con menzioni nel feed attività Teams saranno disponibili a breve.
 
 - La ricerca di componenti in tempo reale Teams ricerca restituirà un collegamento al componente in office.com, non al messaggio di chat stesso.
 
@@ -119,9 +119,9 @@ I partecipanti alla chat devono avere un account OneDrive per creare componenti 
 
 **Come vengono `.fluid` condivisi i file?**
 
-I componenti in tempo reale possono essere inseriti Teams chat o copiati da una chat a un'altra. I componenti in tempo reale non sono ancora supportati nei canali. Per impostazione predefinita, vengono assegnate le autorizzazioni esistenti del tenant, ma gli utenti possono modificare le autorizzazioni prima dell'invio per assicurarsi che tutti gli utenti possano accedervi.
+I componenti in tempo reale possono essere inseriti Teams chat o copiati da una chat a un'altra. I componenti in tempo reale non sono ancora supportati nei canali. Per impostazione predefinita, vengono assegnate le autorizzazioni esistenti del tenant, ma gli utenti possono modificare le autorizzazioni prima dell'invio per assicurarsi che tutti possano accedere.
 
-L'apertura di componenti Teams chat in Office.com offre funzionalità di condivisione nella parte superiore della finestra, in modo analogo alle opzioni di condivisione offerte per altri Office documenti.
+L'apertura di componenti da Teams chat in Office.com offre funzionalità di condivisione nella parte superiore della finestra, in modo analogo alle opzioni di condivisione offerte per altri Office documenti.
 
 **Cosa succede se `.fluid` un file viene danneggiato o danneggiato?**
 

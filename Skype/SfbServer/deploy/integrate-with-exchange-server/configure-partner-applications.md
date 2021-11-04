@@ -1,7 +1,7 @@
 ---
 title: Configurare le applicazioni partner in Skype for Business Server 2015 e Exchange Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 12/20/2018
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 9c3a3054-6201-433f-b128-4c49d3341370
 description: "Riepilogo: configurare l'autenticazione da server a server Exchange Server 2016 o Exchange Server 2013 e Skype for Business Server."
-ms.openlocfilehash: 4d88676b3c2cfc01935388b49b120ca99d1b7025
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 0f85c617558ae348eaa554efcb5aff1fb4a624d2
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607613"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60771464"
 ---
 # <a name="configure-partner-applications-in-skype-for-business-server-and-exchange-server"></a>Configurare le applicazioni partner in Skype for Business Server e Exchange Server
  
@@ -27,13 +27,13 @@ ms.locfileid: "58607613"
   
 L'autenticazione da server a server richiede in genere due server che devono comunicare tra loro e un server token di sicurezza di terze parti. Se il server A e il server B devono comunicare, entrambi i server in genere iniziano contattando un server token e ottenendo un token di sicurezza reciprocamente attendibile. Il server A presenta quindi tale token di sicurezza al Server B (e viceversa) come modo per garantirne l'autenticità e l'affidabilità.
   
-Tuttavia, questa è una regola generale. Skype for Business Server, Exchange Server 2016, Exchange Server 2013 e SharePoint Server 2013 non devono utilizzare un server token di terze parti per comunicare tra loro; questo perché questi prodotti server possono creare token di sicurezza che possono essere accettati l'uno dall'altro senza la necessità di un server token separato. Questa funzionalità è disponibile solo in Skype for Business Server, Exchange Server 2016, Exchange Server 2013 e SharePoint Server 2013. Se è necessario configurare l'autenticazione da server a server con altri server, inclusi altri prodotti server Microsoft, sarà necessario farlo utilizzando un server token di terze parti.
+Tuttavia, questa è una regola generale. Skype for Business Server, Exchange Server 2016, Exchange Server 2013 e SharePoint Server 2013 non è necessario utilizzare un server token di terze parti per comunicare tra loro; questo perché questi prodotti server possono creare token di sicurezza che possono essere accettati l'uno dall'altro senza la necessità di un server token separato. Questa funzionalità è disponibile solo in Skype for Business Server, Exchange Server 2016, Exchange Server 2013 e SharePoint Server 2013. Se è necessario configurare l'autenticazione da server a server con altri server, inclusi altri prodotti server Microsoft, sarà necessario farlo utilizzando un server token di terze parti.
   
 Per configurare l'autenticazione da server a server tra Skype for Business Server e Exchange Server è necessario eseguire due operazioni: 1) è necessario assegnare i certificati appropriati a ogni server. e, 2) è necessario configurare ogni server in modo che sia un'applicazione partner dell'altro server: ciò significa che è necessario configurare Skype for Business Server come applicazione partner per Exchange Server e configurare Exchange Server come applicazione partner per Skype for Business Server.
   
 ## <a name="configuring-skype-for-business-server-to-be-a-partner-application-for-exchange-server"></a>Configurazione di Skype for Business Server essere un'applicazione partner per Exchange Server
 
-Il modo più semplice per configurare Skype for Business Server come applicazione partner con Exchange Server 2016 o Exchange Server 2013 è eseguire lo script Configure-EnterprisePartnerApplication.ps1, uno script di Windows PowerShell fornito con Exchange Server. Per eseguire questo script, è necessario fornire l'URL per il documento dei metadati di Skype for Business Server autenticazione. in genere corrisponde al nome di dominio completo del pool Skype for Business Server seguito dal suffisso /metadata/json/1. Ad esempio:
+Il modo più semplice per configurare Skype for Business Server come applicazione partner con Exchange Server 2016 o Exchange Server 2013 è eseguire lo script Configure-EnterprisePartnerApplication.ps1, uno script Windows PowerShell fornito con Exchange Server. Per eseguire questo script, è necessario fornire l'URL per il documento dei metadati di Skype for Business Server autenticazione. in genere corrisponde al nome di dominio completo del pool Skype for Business Server seguito dal suffisso /metadata/json/1. Ad esempio:
   
 ```console
 https://atl-cs-001.litwareinc.com/metadata/json/1
@@ -61,7 +61,7 @@ Dopo aver configurato Skype for Business Server come applicazione partner per Ex
 https://autodiscover.litwareinc.com/autodiscover/metadata/json/1
 ```
 
-In Skype for Business Server, le applicazioni partner vengono configurate utilizzando il cmdlet [New-CsPartnerApplication.](/powershell/module/skype/new-cspartnerapplication?view=skype-ps) Oltre a specificare l'URI dei metadati, devi anche impostare il livello di attendibilità dell'applicazione su Completo. in questo modo Exchange di rappresentare sia se stesso che qualsiasi utente autorizzato nell'area di autenticazione. Ad esempio:
+In Skype for Business Server, le applicazioni partner vengono configurate utilizzando il cmdlet [New-CsPartnerApplication.](/powershell/module/skype/new-cspartnerapplication?view=skype-ps) Oltre a specificare l'URI dei metadati, devi anche impostare il livello di attendibilità dell'applicazione su Completo. in questo modo Exchange rappresentare se stesso e qualsiasi utente autorizzato nell'area di autenticazione. Ad esempio:
   
 ```powershell
 New-CsPartnerApplication -Identity Exchange -ApplicationTrustLevel Full -MetadataUrl "https://autodiscover.litwareinc.com/autodiscover/metadata/json/1"
@@ -69,7 +69,7 @@ New-CsPartnerApplication -Identity Exchange -ApplicationTrustLevel Full -Metadat
 
 In alternativa, è possibile creare un'applicazione partner copiando e modificando il codice di script disponibile nella documentazione relativa all'autenticazione da Skype for Business Server server a server. Per ulteriori informazioni, vedere l'articolo Manage [server-to-server authentication (OAuth) and partner applications in Skype for Business Server.](../../manage/authentication/server-to-server-and-partner-applications.md)
   
-Se le applicazioni partner sono state configurate correttamente per Skype for Business Server e Exchange Server, è stata configurata anche l'autenticazione da server a server tra i due prodotti. Skype for Business Server include un cmdlet di Windows PowerShell, [Test-CsExStorageConnectivity,](/powershell/module/skype/test-csexstorageconnectivity?view=skype-ps) che consente di verificare che l'autenticazione da server a server sia stata configurata correttamente e che il servizio Skype for Business Server Archiviazione sia in grado di connettersi a Exchange Server. Il cmdlet esegue questa operazione connettendosi alla cassetta postale di un utente di Exchange Server, scrivendo un elemento nella cartella Cronologia conversazioni per tale utente e quindi eliminando (facoltativamente) tale elemento.
+Se le applicazioni partner sono state configurate correttamente per Skype for Business Server e Exchange Server, è stata configurata anche l'autenticazione da server a server tra i due prodotti. Skype for Business Server include un cmdlet di Windows PowerShell, [Test-CsExStorageConnectivity,](/powershell/module/skype/test-csexstorageconnectivity?view=skype-ps) che consente di verificare che l'autenticazione da server a server sia stata configurata correttamente e che il Skype for Business Server Archiviazione Il servizio può connettersi Exchange Server. Il cmdlet esegue questa operazione connettendosi alla cassetta postale di un utente di Exchange Server, scrivendo un elemento nella cartella Cronologia conversazioni per tale utente e quindi eliminando (facoltativamente) tale elemento.
   
 Per testare l'integrazione di Skype for Business Server e Exchange Server, eseguire un comando simile al seguente da Skype for Business Server Management Shell:
   

@@ -1,7 +1,7 @@
 ---
 title: Richiesta di certificato (richiesta di firma del certificato)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: f0541273-92b4-41d6-aa24-34ee5c549db8
 description: Per creare una richiesta offline, è necessario innanzitutto creare una richiesta di firma del certificato. Digitare il percorso e il nome del file per la richiesta di firma del certificato nella casella di testo Nome file. È possibile fare clic su Sfoglia per selezionare un percorso in cui creare la richiesta di firma del certificato. Fare clic su Avanti per continuare.
-ms.openlocfilehash: 5f4ebd3c52cc569ffcfcafe8ac62a56aad00be0e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b2ff4494fa3f0345eb68d682cb4906b01bb6c19d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58587528"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60750585"
 ---
 # <a name="certificate-request-certificate-signing-request"></a>Richiesta di certificato (richiesta di firma del certificato)
  

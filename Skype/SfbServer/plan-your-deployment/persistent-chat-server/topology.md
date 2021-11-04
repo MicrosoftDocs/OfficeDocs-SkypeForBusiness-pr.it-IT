@@ -1,7 +1,7 @@
 ---
 title: Pianificare la topologia del server Chat persistente
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 5/17/2016
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 6a0a14a0-baad-44e9-b26e-4d192c0a0e70
 description: 'Riepilogo: leggere questo argomento per informazioni sui componenti e le topologie del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 63c82eee1a640616aaf8f390a66b2d67678b36ff
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: f50059617ca777b283a62eb8a487b59c3742327a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58725945"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60749935"
 ---
 # <a name="plan-persistent-chat-server-topology"></a>Pianificare la topologia del server Chat persistente
  
@@ -27,7 +27,7 @@ ms.locfileid: "58725945"
 Il server Chat persistente supporta configurazioni sia a server singolo che a server multiplo. È possibile installare il server Chat persistente in un Skype for Business Server 2015 edizione Enterprise o edizione Standard Server. 
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
   
 ## <a name="persistent-chat-server-components"></a>Componenti del server Chat persistente
 
@@ -64,13 +64,13 @@ Anche se è possibile distribuire il server Chat persistente in un edizione Stan
   
 Skype for Business Server 2015 supporta un'ampia gamma di scenari di collocazione, offrendo la flessibilità necessaria per risparmiare sui costi hardware eseguendo più componenti in un server (se si dispone di un'organizzazione di piccole dimensioni) o per eseguire singoli componenti in server diversi (se si dispone di un'organizzazione più grande che necessita di scalabilità e prestazioni). È consigliabile considerare i fattori di scalabilità prima di decidere se collocare i componenti. Gli scenari di collocazione differiscono Skype for Business Server server edizione Enterprise 2015 edizione Standard 2015. 
   
-Nelle sezioni seguenti vengono descritte in modo più dettagliato le topologie, inclusi gli scenari di collocazione e le opzioni per i server di database back-end. Per informazioni dettagliate sulla collocazione di tutti i ruoli e i database del server, vedere [Topology Basics for Skype for Business Server 2015](../../plan-your-deployment/topology-basics/topology-basics.md).
+Nelle sezioni seguenti vengono descritte in modo più dettagliato le topologie, inclusi gli scenari di collocazione e le opzioni per i server di database back-end. Per informazioni dettagliate sulla collocazione di tutti i ruoli e i database del server, vedere [Topology Basics for Skype for Business Server 2015.](../../plan-your-deployment/topology-basics/topology-basics.md)
   
 ### <a name="standard-edition-server-with-persistent-chat-server-collocated-on-the-front-end-server"></a>edizione Standard Server con server Chat persistente collocato nel Front End Server
 
 Con edizione Standard, è possibile collocare Persistent Chat nel Front End Server. Questa è la configurazione più semplice e di base. È necessario verificare che il Front End Server esistente abbia una capacità sufficiente in termini di risorse fisiche: CPU, memoria, spazio su disco e così via.
   
-Inoltre, è possibile collocare il server back-end del server Chat persistente e il database di conformità di Persistent Chat (se abilitato) nel server back-end locale SQL Server Express server back-end. Puoi anche scegliere di usare un'SQL Server separata con un'istanza dedicata. 
+È inoltre possibile collocare il server back-end del server Chat persistente e il database di conformità di Persistent Chat (se abilitato) nel server back-end SQL Server Express locale. Puoi anche scegliere di usare un'SQL Server separata con un'istanza dedicata. 
   
 > [!IMPORTANT]
 > Non è possibile aggiungere ulteriori server a un pool di server Chat persistente se il primo server Chat persistente è collocato con edizione Standard Front End Server. È consigliabile installare il primo server come istanza autonoma in modo da poter aggiungere altri server in un secondo momento, se necessario. 
@@ -79,13 +79,13 @@ Inoltre, è possibile collocare il server back-end del server Chat persistente e
 
 Con edizione Standard, è possibile installare il server Chat persistente come istanza autonoma e aggiungere altri server in un secondo momento, se necessario. 
   
-È possibile collocare il server back-end del server Chat persistente e il database di conformità di Persistent Chat (se abilitato) nel server SQL Server Express back-end locale. Puoi anche scegliere di usare un'SQL Server separata con un'istanza dedicata. 
+È possibile collocare il server back-end del server Chat persistente e il database di conformità di Persistent Chat (se abilitato) nel server back-end locale SQL Server Express server back-end. Puoi anche scegliere di usare un'SQL Server separata con un'istanza dedicata. 
   
 ### <a name="enterprise-edition-server-with-a-single-persistent-chat-server"></a>edizione Enterprise Server con un singolo server Chat persistente
 
 Con edizione Enterprise, è necessario installare il server Chat persistente in un computer separato. Ciò significa che non è possibile collocare il server Chat persistente edizione Enterprise Front End Server. Questa distribuzione richiede un server separato che esegue il server Chat persistente e il servizio di conformità (se abilitato).
   
-È tuttavia possibile collocare il database SQL Server per il server Chat persistente nel database back-end di edizione Enterprise pool Front End.
+È tuttavia possibile collocare il database SQL Server per il server Chat persistente nel database back-end di un pool Front End edizione Enterprise server.
   
 > [!NOTE]
 > Se si prevede di utilizzare SQL disponibilità AlwaysOn per il ripristino di emergenza, tenere presente che non è supportato per i database del server Chat persistente. 
@@ -93,7 +93,7 @@ Con edizione Enterprise, è necessario installare il server Chat persistente in 
 Se si colloca il database di Persistent Chat con il database back-end, è possibile utilizzare una singola istanza di SQL Server per uno o per tutti i database oppure è possibile utilizzare un'istanza separata di SQL Server per ogni database.
   
 > [!IMPORTANT]
-> Il server che ospita il database di Persistent Chat può ospitare altri database. Tuttavia, quando si considera la collocazione del database di Persistent Chat con altri database, tenere presente che se si archiviano i messaggi di più di pochi utenti, lo spazio su disco necessario per il database di Persistent Chat può aumentare molto. Per questo motivo, non è consigliabile collocare il database di Persistent Chat con il database back-end. 
+> Il server che ospita il database di Persistent Chat può ospitare altri database. Tuttavia, quando si considera di collocare il database di Persistent Chat con altri database, tenere presente che se si archiviano i messaggi di più di pochi utenti, lo spazio su disco necessario per il database di Persistent Chat può aumentare molto. Per questo motivo, non è consigliabile collocare il database di Persistent Chat con il database back-end. 
   
 Nella figura seguente vengono illustrati tutti i componenti di una topologia per un singolo server Chat persistente con conformità abilitata (facoltativo).
   
@@ -105,7 +105,7 @@ Nella figura seguente vengono illustrati tutti i componenti di una topologia per
 
 Con edizione Enterprise, è possibile distribuire una topologia a più server per una maggiore capacità e affidabilità. Una topologia a più server è la stessa della topologia a server singolo, ad eccezione del fatto che più server ospitano il server Chat persistente e possono essere scalati più in alto. La topologia a più server può includere fino a quattro computer attivi che eseguono il server Chat persistente (le configurazioni di disponibilità elevata e ripristino di emergenza ne consentono fino a otto, ma solo quattro possono essere attive e le restanti quattro in standby). Ogni server può supportare fino a 20.000 utenti simultanei, per un totale di 80.000 utenti simultanei connessi a un pool di server Chat persistente con 4 server. Più computer che eseguono il server Chat persistente devono risiedere nello stesso dominio di Servizi di dominio Active Directory Skype for Business Server e del servizio di conformità.
   
-Nella figura seguente vengono illustrati tutti i componenti di una topologia a più server con più computer che eseguono il server Chat persistente, il servizio di conformità facoltativo e un database di conformità separato.
+Nella figura seguente vengono mostrati tutti i componenti di una topologia a più server con più computer che eseguono il server Chat persistente, il servizio di conformità facoltativo e un database di conformità separato.
   
 **Topologia a più server**
 

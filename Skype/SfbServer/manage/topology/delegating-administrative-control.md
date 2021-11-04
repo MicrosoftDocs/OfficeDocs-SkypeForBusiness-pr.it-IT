@@ -1,7 +1,7 @@
 ---
 title: Delegare il controllo amministrativo Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,16 +11,16 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: ''
-ms.openlocfilehash: 580a0c31d3321564d76f248408facaffa4f399a2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 1ee1cdce6bae163ea51ebb73ac9b536e75b204a8
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58580520"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60743422"
 ---
 # <a name="delegate-administrative-control-of-skype-for-business-server"></a>Delegare il controllo amministrativo Skype for Business Server 
 
-In Skype for Business Server, le attività amministrative vengono delegate agli utenti utilizzando la funzionalità RBAC (Role-Based Access Control). Quando si installa Skype for Business Server, vengono creati automaticamente diversi ruoli RBAC. Questi ruoli corrispondono ai gruppi di sicurezza universali in Servizi di dominio Active Directory. Ad esempio, il ruolo RBAC CsHelpDesk corrisponde al gruppo CsHelpDesk presente nel contenitore Utenti in Servizi di dominio Active Directory. Inoltre, ogni ruolo RBAC è associato a un set di Skype for Business ServerWindows PowerShell cmdlet.   Questi cmdlet rappresentano le attività che possono essere eseguite dagli utenti a cui è stato assegnato il ruolo RBAC specificato. Ad esempio, al ruolo CsHelpDesk sono stati assegnati i cmdlet Lock-CsClientPin e UnlockCsClientPin. Ciò significa che gli utenti a cui è stato assegnato il ruolo CsHelpDesk possono bloccare e sbloccare i numeri PIN degli utenti. Tuttavia, al ruolo CsHelpDesk non è stato assegnato New-CsVoicePolicy cmdlet. Ciò significa che gli utenti a cui è stato assegnato il ruolo CsHelpDesk non possono creare nuovi criteri vocali.
+In Skype for Business Server, le attività amministrative vengono delegate agli utenti tramite la funzionalità RBAC (Role-Based Access Control). Quando si installa Skype for Business Server, vengono creati automaticamente diversi ruoli RBAC. Questi ruoli corrispondono ai gruppi di sicurezza universali in Servizi di dominio Active Directory. Ad esempio, il ruolo RBAC CsHelpDesk corrisponde al gruppo CsHelpDesk presente nel contenitore Utenti in Servizi di dominio Active Directory. Inoltre, ogni ruolo RBAC è associato a un set di Skype for Business ServerWindows PowerShell cmdlet.   Questi cmdlet rappresentano le attività che possono essere eseguite dagli utenti a cui è stato assegnato il ruolo RBAC specificato. Ad esempio, al ruolo CsHelpDesk sono stati assegnati i cmdlet Lock-CsClientPin e UnlockCsClientPin. Ciò significa che gli utenti a cui è stato assegnato il ruolo CsHelpDesk possono bloccare e sbloccare i numeri PIN degli utenti. Tuttavia, al ruolo CsHelpDesk non è stato assegnato il cmdlet New-CsVoicePolicy. Ciò significa che gli utenti a cui è stato assegnato il ruolo CsHelpDesk non possono creare nuovi criteri vocali.
 
 ## <a name="viewing-information-about-rbac-roles"></a>Visualizzazione delle informazioni sui ruoli RBAC
 

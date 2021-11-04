@@ -1,7 +1,7 @@
 ---
 title: Introduzione ai modelli di team di produzione nell'interfaccia di amministrazione
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b030b3a9635c0ba3f7737e4b749d47ac93fba862
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c7d7c7d648d36f38bc25bae946136388bd6485d2
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58604415"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60739052"
 ---
 # <a name="use-manufacturing-team-templates-in-the-admin-center"></a>Usare i modelli di team di produzione nell'interfaccia di amministrazione
 
@@ -44,5 +44,5 @@ Centralizzare le comunicazioni, l'accesso alle risorse e le operazioni degli imp
 
 | Tipologia di modello base|baseTemplateId| Proprietà del modello base |
 | ------------------|-- |----------------------------------------------------- |
-|Qualità e sicurezza|`com.microsoft.teams.template.QualitySafety` |Canali: <ul><li>Generale<li>Annunci</li><li>Riga 1</li><li>Riga 2</li><li>Riga 3</li><li>Sicurezza</li><li>Formazione</li><li>Manutenzione</li><li>Cose divertenti</li></ul> App: <ul><li>Wiki</li><li>Programmazione</li></ul>|
+|Qualità e sicurezza|`com.microsoft.teams.template.QualitySafety` |Canali: <ul><li>Generale<li>Annunci</li><li>Riga 1</li><li>Riga 2</li><li>Riga 3</li><li>Sicurezza</li><li>Formazione</li><li>Manutenzione</li><li>Elementi divertenti</li></ul> App: <ul><li>Wiki</li><li>Planner</li></ul>|
 ||||

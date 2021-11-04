@@ -5,7 +5,7 @@ ms:assetid: c78d7e9b-c496-40c6-9249-06ced9cb87f3
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ552455(v=OCS.15)
 ms:contentKeyID: 48679566
 mtps_version: v=OCS.15
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Informazioni su come configurare il supporto per gli utenti di provider federati SIP.
-ms.openlocfilehash: 552f0971685dd62dd89a27e03c62d0617b6c01d7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 01284c93043f92df87f28b02e704b8a7deaa41e7
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58612305"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60743502"
 ---
 # <a name="manage-sip-federated-providers-for-your-organization-in-skype-for-business-server"></a>Gestire i provider federati SIP per l'organizzazione in Skype for Business Server
 
@@ -36,7 +36,7 @@ Per configurare il supporto per gli utenti di provider federati SIP, è necessar
 
 La connettività di messaggistica istantanea pubblica consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider pubblici.
 
-Skype for Business Server ha configurazioni del provider pubblico per la messaggistica istantanea. Ogni provider pubblico è configurato con il nome di dominio completo del server perimetrale del provider e il livello di verifica predefinito Consenti agli utenti di comunicare solo con gli utenti del proprio elenco contatti che utilizzano **questo provider.**
+Skype for Business Server sono disponibili configurazioni del provider pubblico per la messaggistica istantanea. Ogni provider pubblico è configurato con il nome di dominio completo del server perimetrale del provider e il livello di verifica predefinito Consenti agli utenti di comunicare solo con gli utenti del proprio elenco contatti che utilizzano **questo provider.**
 
 Come impostazione predefinita, nessuno dei provider pubblici è abilitato. Prima di abilitare i provider pubblici, è consigliabile completare il contratto di licenza e il provisioning. Puoi abilitare il provider prima di completare le attività di licenza e provisioning. Gli utenti non saranno in grado di comunicare con i contatti di tali provider fino al completamento del lavoro necessario. Per informazioni dettagliate sulle licenze e sul provisioning dei provider pubblici, vedere [Configure policies to control public user acces](../external-access-policies/configure-policies-to-control-public-user-access.md).
 

@@ -1,7 +1,7 @@
 ---
 title: Espansione delle impostazioni di distribuzione
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 7220ec1f-38cb-4297-870e-591a832cd2f2
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'È possibile modificare le proprietà di una distribuzione esistente con le sezioni seguenti:'
-ms.openlocfilehash: ee6e5dd07351f8d63ea706d9428de16ff5ec0652
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c49a82a0e21fdda5fa9f81df598fcf9087f9d2c5
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58580950"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757688"
 ---
 # <a name="deployment-settings-expander"></a>Espansione delle impostazioni di distribuzione
 
@@ -73,7 +73,7 @@ Dopo aver apportato tutte le modifiche desiderate nella pagina Modifica propriet
 > [!IMPORTANT]
 > Dopo aver definito, pubblicato e distribuito l'archivio di gestione centrale per l'infrastruttura, non sarà possibile cambiare la posizione di tale archivio senza spostarlo in un altro Front End tramite un processo esterno.
 
-Per informazioni dettagliate sullo spostamento dell'archivio di gestione centrale, vedere [Move-CsManagementServer](/powershell/module/skype/move-csmanagementserver?view=skype-ps) in Windows PowerShell cmdlet reference.
+Per informazioni dettagliate sullo spostamento dell'archivio di gestione centrale, [vedere Move-CsManagementServer](/powershell/module/skype/move-csmanagementserver?view=skype-ps) in Windows PowerShell cmdlet.
 
 
 Per informazioni dettagliate sulla definizione e sulla configurazione di queste impostazioni, vedere [Defining and Configuring the Topology](/previous-versions/office/lync-server-2013/lync-server-2013-defining-and-configuring-the-topology).

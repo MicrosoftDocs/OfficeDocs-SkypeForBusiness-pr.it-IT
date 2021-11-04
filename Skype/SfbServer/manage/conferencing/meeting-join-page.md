@@ -1,7 +1,7 @@
 ---
 title: Configurare la pagina di partecipazione alla riunione in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,22 +12,22 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 6537765e-4384-416f-92f1-a7f3b39ebe56
 description: 'Riepilogo: informazioni su come configurare la pagina di partecipazione alla riunione in Skype for Business Server.'
-ms.openlocfilehash: ba90c771321732956b38f5f07af10798829fc54f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 39a9fd42fd7d1017ece572856f6d85a09e1f55fe
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58587092"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60743562"
 ---
 # <a name="configure-the-meeting-join-page-in-skype-for-business-server"></a>Configurare la pagina di partecipazione alla riunione in Skype for Business Server
  
 **Riepilogo:** Informazioni su come configurare la pagina di partecipazione alla riunione in Skype for Business Server.
   
-Quando un utente fa clic su un collegamento a una riunione in una convocazione di riunione, la pagina di partecipazione alla riunione rileva se un client Skype for Business è già installato nel computer dell'utente. In caso affermativo, il client viene aperto e accede alla riunione. Se non è installato un client, per impostazione predefinita viene aperto Skype for Business client. 
+Quando un utente fa clic su un collegamento a una riunione in una convocazione di riunione, la pagina di partecipazione alla riunione rileva se un client Skype for Business è già installato nel computer dell'utente. In caso affermativo, il client viene aperto e accede alla riunione. Se un client non è installato, per impostazione predefinita viene aperto Skype for Business client. 
   
 ## <a name="configure-the-meeting-join-page"></a>Configurare la pagina di partecipazione alle riunioni
 
-È possibile modificare il comportamento della pagina di partecipazione alla riunione se si desidera consentire agli utenti di partecipare alle riunioni con altre versioni del client. Queste opzioni di configurazione sono state rimosse dal Skype for Business Server di controllo, ma è possibile configurarle utilizzando il cmdlet Set-CsWebServiceConfiguration.
+È possibile modificare il comportamento della pagina di partecipazione alla riunione se si desidera consentire agli utenti di partecipare alle riunioni con altre versioni del client. Queste opzioni di configurazione sono state rimosse dal Pannello di controllo di Skype for Business Server, ma è possibile configurarle utilizzando il cmdlet Set-CsWebServiceConfiguration.
   
 **Parametri Set-CsWebServiceConfiguration pagina di partecipazione alle riunioni**
 

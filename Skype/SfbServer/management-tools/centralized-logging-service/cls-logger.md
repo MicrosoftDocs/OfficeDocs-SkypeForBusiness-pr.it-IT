@@ -1,7 +1,7 @@
 ---
 title: CLS Logger per Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/25/2017
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 1eaf8cdf-3dcd-4d6e-ae68-b6f6f9431ad8
 description: 'Riepilogo: informazioni su come usare il Logger del servizio di registrazione centralizzata (CLS) in Skype for Business Server 2015.'
-ms.openlocfilehash: e35375dd1715f2d9b2e64cc42339af7247d098d4
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: bd468818335125e764dc6094ad32f7c7cad7f72e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58730235"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60739082"
 ---
 # <a name="cls-logger-for-skype-for-business-server-2015"></a>CLS Logger per Skype for Business Server 2015
  
@@ -79,7 +79,7 @@ Per cercare i log, selezionare la scheda "Cerca log CLS" e fare clic sul pulsant
   
 > **Cartella file di registro** Cartella in cui salvare i risultati della ricerca nei log. (Obbligatorio)
 > 
-> **Livello di registrazione** Questo determina il livello più basso che verrà visualizzato nei risultati. Ad esempio, se l'opzione Avviso è selezionata, verranno visualizzati solo Avviso, Errore e Errore irreversibile. Il valore predefinito è Debug.
+> **Livello di registrazione** Questo determina il livello più basso che verrà visualizzato nei risultati. Ad esempio, se è selezionata l'opzione Avviso, verranno visualizzati solo Avviso, Errore e Errore irreversibile. Il valore predefinito è Debug.
 > 
 > **Pool** Pool di computer su cui eseguire la ricerca nei log, questi sono i nodi padre della visualizzazione albero. (Obbligatorio)
 > 
@@ -116,7 +116,7 @@ Per cercare i log, selezionare la scheda "Cerca log CLS" e fare clic sul pulsant
 1. Nella scheda **Modifica scenari** fare clic sul **pulsante Crea** scenario.
     
     > [!NOTE]
-    > La creazione di un nuovo scenario clona la configurazione dello scenario attualmente selezionato. Se si fa **clic su Impostazioni** prima di creare un nuovo scenario, verrà avviato senza alcun componente e contrassegni selezionati.
+    > La creazione di un nuovo scenario clona la configurazione dello scenario attualmente selezionato. Se si fa **clic su Impostazioni** prima di creare un nuovo scenario, verrà avviato senza componenti e contrassegni selezionati.
   
 2. Immettere il nome dello scenario che si desidera creare e premere INVIO oppure fare clic sul pulsante OK.
     

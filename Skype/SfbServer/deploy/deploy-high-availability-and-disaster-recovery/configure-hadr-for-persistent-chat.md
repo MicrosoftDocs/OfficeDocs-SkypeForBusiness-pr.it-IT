@@ -1,7 +1,7 @@
 ---
 title: 'Business Server 2015: Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente'
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/7/2018
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 5fb5b189-56c1-49cf-92c8-e4fd6e2fdd5c
 description: Informazioni su come configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015.
-ms.openlocfilehash: 9b7157b0f1bd3d1891edac752310343b7211b961
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: ce69159126a134893e03ca97e6ac3c2fc20bfda5
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608583"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60738892"
 ---
 # <a name="business-server-2015-configure-high-availability-and-disaster-recovery-for-persistent-chat-server"></a>Business Server 2015: Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente
  
@@ -29,7 +29,7 @@ Skype for Business Server supporta più modalità di disponibilità elevata per 
 > [!NOTE]
 > I gruppi di disponibilità AlwaysOn non sono supportati con i server Chat persistente. 
   
-Prima di configurare la distribuzione di Persistent Chat per la disponibilità elevata e il ripristino di emergenza, assicurarsi di avere familiarità con i concetti descritti in [Plan for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015.](../../plan-your-deployment/persistent-chat-server/high-availability-and-disaster-recovery.md) La soluzione di ripristino di emergenza per il server Chat persistente descritta in questi argomenti si basa su un pool di server Chat persistente estesa. Il contenuto della pianificazione descrive i requisiti delle risorse e la topologia di pool estesa che consente la disponibilità elevata e il ripristino di emergenza per il server Chat persistente, incluso l'utilizzo del mirroring SQL Server per la disponibilità elevata e il log shipping di SQL Server per il ripristino di emergenza.
+Prima di configurare la distribuzione di Persistent Chat per la disponibilità elevata e il ripristino di emergenza, assicurarsi di avere familiarità con i concetti descritti in [Plan for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015.](../../plan-your-deployment/persistent-chat-server/high-availability-and-disaster-recovery.md) La soluzione di ripristino di emergenza per il server Chat persistente descritta in questi argomenti si basa su un pool di server Chat persistente estesa. Il contenuto della pianificazione descrive i requisiti delle risorse e la topologia del pool estesa che consente la disponibilità elevata e il ripristino di emergenza per il server Chat persistente, incluso l'utilizzo del mirroring SQL Server per la disponibilità elevata e il log shipping di SQL Server per il ripristino di emergenza.
   
 ## <a name="use-topology-builder-to-configure-high-availability-and-disaster-recovery"></a>Utilizzare Generatore di topologie per configurare la disponibilità elevata e il ripristino di emergenza
 
@@ -45,7 +45,7 @@ In Generatore di topologie eseguire la procedura seguente per configurare la dis
     
     c. Abilitare il SQL Server log shipping.
     
-    d. Aggiungere il SQL Server log shipping secondario SQL Server archivio.
+    d. Aggiungere l'SQL Server log shipping secondario SQL Server archivio.
     
     e. Aggiungere il SQL Server mirror dell'archivio per il database secondario.
     
@@ -78,7 +78,7 @@ Utilizzando SQL Server Management Studio, connettersi all'istanza del database d
     
 10. In **Istanze e database del server secondario** fare clic su **Aggiungi.**
     
-11. Fare **Connessione** e connettersi all'istanza di SQL Server configurata come server secondario.
+11. Fare **Connessione** e connettersi all'istanza di SQL Server che è stato configurato come server secondario.
     
 12. Nella casella **Database secondario** selezionare il database **mgc** dall'elenco.
     
@@ -140,7 +140,7 @@ Eseguire la procedura seguente per continuare il log shipping se viene eseguito 
     
 16. Nella scheda **Inizializza database secondario** selezionare l'opzione **No, il database secondario viene inizializzato.**
     
-17. Nella scheda **Copia file,** in **Cartella** di destinazione per i file copiati, digitare il percorso della cartella in cui copiare i backup dei registri delle transazioni e fare clic su **OK.** Questa cartella si trova spesso nel server secondario.
+17. Nella scheda **Copia file,** in **Cartella** di destinazione per i file copiati, digitare il percorso della cartella in cui devono essere copiati i backup dei registri delle transazioni e fare clic su **OK.** Questa cartella si trova spesso nel server secondario.
     
 18. Aprire **l'elenco a** discesa Configurazione script e selezionare **Configurazione script in Nuova finestra query.**
     

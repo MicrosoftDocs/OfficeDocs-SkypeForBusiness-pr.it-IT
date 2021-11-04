@@ -1,7 +1,7 @@
 ---
 title: Gestire le applicazioni attendibili
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Un'applicazione attendibile è un'applicazione basata su Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK considerato attendibile da Skype for Business Server.
-ms.openlocfilehash: ef03aa21b64ec305829ed5da8ef84a0d5b8bfd92
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4164f00b787ac8f234d13ba7c31e54c79cb1efd7
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596560"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60750165"
 ---
 # <a name="manage-trusted-applications-in-skype-for-business-server"></a>Gestire le applicazioni attendibili in Skype for Business Server
 
@@ -53,7 +53,7 @@ Utilizzare questo articolo per informazioni su come configurare un nuovo server 
 
 È possibile utilizzare il Skype for Business Server di controllo per visualizzare un elenco delle applicazioni attendibili distribuite nell'ambiente Skype for Business Server locale. Un'applicazione attendibile è un'applicazione basata su Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK considerato attendibile da Skype for Business Server. Questa relazione di trust è riepilogata nell'elenco seguente:
 
-  - Le applicazioni attendibili non vengono sfidate per l'autenticazione Skype for Business Server.
+  - Le applicazioni attendibili non vengono sfidate per l'autenticazione da Skype for Business Server.
 
   - Le applicazioni attendibili non sono limitate da Skype for Business Server per le transazioni SIP, le connessioni o le chiamate VoIP (Voice over Internet Protocol) in uscita.
 
@@ -68,7 +68,7 @@ Nel Pannello Skype for Business Server di controllo è possibile visualizzare il
 
 1.  Da un account utente assegnato al ruolo CsServerAdministrator, CsAdministrator, CsHelpDesk o CsViewOnlyAdministrator, accedere a un computer nella distribuzione interna. Per informazioni dettagliate sui ruoli amministrativi predefiniti disponibili in Skype for Business Server, vedere [Role-based access control (RBAC)](../plan-your-deployment/security/role-based-access-control-rbac.md).
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.
 
 3.  Sulla barra di spostamento sinistra fare clic **su Topologia** e quindi su **Applicazione attendibile.**
 

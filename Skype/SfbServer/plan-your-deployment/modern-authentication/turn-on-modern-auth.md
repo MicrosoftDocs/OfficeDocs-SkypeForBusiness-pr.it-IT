@@ -1,7 +1,7 @@
 ---
 title: Pianificazione della disattivazione dei metodi di autenticazione legacy internamente ed esternamente alla rete
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -14,12 +14,12 @@ ms.collection: IT_Skype16
 ms.custom: tracyp
 ms.assetid: ''
 description: In questo articolo vengono descritti i cmdlet che offrono agli amministratori un maggiore controllo dei metodi di autenticazione utilizzati all'interno e all'esterno di un'azienda. Gli amministratori possono attivare o disattivare i metodi di autenticazione internamente o esternamente alla rete.
-ms.openlocfilehash: 7bad18e79e1595c7dfe4518d73b6dd764e313e22
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 65ec31dcd4a320b42da746eece41009f70e886af
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58601361"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60777956"
 ---
 # <a name="planning-to-turn-off-legacy-authentication-methods-internally-and-externally-to-your-network"></a>Pianificazione della disattivazione dei metodi di autenticazione legacy internamente ed esternamente alla rete.
 
@@ -28,7 +28,7 @@ ms.locfileid: "58601361"
 >  + [https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/modern-authentication/topologies-supported](./topologies-supported.md)
 >  + [https://docs.microsoft.com/skypeforbusiness/manage/authentication/use-adal](/skypeforbusiness/manage/authentication/use-adal)
   
-L'autenticazione moderna non solo abilita metodi di autenticazione più sicuri, come Two-Factor Auth o Certificate-based Auth, ma può eseguire l'autorizzazione dell'utente senza bisogno di un nome utente o di una password. È molto utile.
+L'autenticazione moderna non solo abilita metodi di autenticazione più sicuri, come l'autenticazione di Two-Factor o l'autenticazione basata su certificato, ma può eseguire l'autorizzazione dell'utente senza bisogno di un nome utente o di una password. È molto utile.
 
 Questo articolo consente di collegare alla rete i buchi che sono stati sfruttati per attacchi DoS (Denial Of Service) ai server Skype for Business, disattivando i metodi meno recenti utilizzati per l'autenticazione, esternamente, internamente o entrambi. Ad esempio, un metodo utile per arrestare gli attacchi DOS è disattivare l'autenticazione integrata Windows (che include NTLM e Kerberos). La disattivazione di NTLM esternamente e l'utilizzo dell'autenticazione basata su certificati consente di proteggere le password dall'esposizione. Questo perché NTLM usa le credenziali della password per autenticare gli utenti, ma l'autenticazione basata su certificato , abilitata dall'autenticazione moderna, non lo fa. Ciò significa che un'opzione ideale per ridurre gli attacchi DOS è bloccare NTLM esternamente e utilizzare solo l'autenticazione basata su certificato.
 
@@ -47,7 +47,7 @@ Questi cmdlet verranno installati solo dopo l'aggiornamento cumulativo di luglio
 È importante tenere presente che si tratta delle topologie supportate coinvolte in questo scenario. Se, ad esempio, è necessario accedere a Supporto tecnico per informazioni sul blocco di un metodo, sarà necessario disporre di una configurazione tra i tipi seguenti. 
 
 > [!IMPORTANT]
-> Nella tabella e nelle descrizioni seguenti,  *l'autenticazione* moderna è abbreviata come *ma e Windows'autenticazione* integrata è abbreviata come __Win__. Come promemoria, Windows'autenticazione integrata è costituito da due metodi: l'autenticazione NTLM e Kerberos. È necessario sapere questo per leggere correttamente la tabella.
+> Nella tabella e nelle descrizioni seguenti,  *l'autenticazione* moderna è abbreviata come *MA e Windows'autenticazione* integrata è abbreviata come __Win__. Come promemoria, Windows'autenticazione integrata è costituito da due metodi: l'autenticazione NTLM e Kerberos. È necessario sapere questo per leggere correttamente la tabella.
 
 
 |       |Esternamente  |Internamente  |Parametro  |
@@ -68,7 +68,7 @@ __Tipo 4 Descrizione:__ Questa topologia blocca NTLM *internamente* e esternamen
 
 __Tipo 5 Descrizione:__ esternamente, i client ADAL moderni utilizzeranno MA e tutti i client che non supportano ADAL utilizzeranno i metodi di autenticazione legacy. Tuttavia, *internamente tutti* *i client* utilizzeranno l'autenticazione legacy (inclusi tutti i client che supportano ADAL).
 
-È piuttosto facile perdere traccia dell'obiettivo di proteggere le password nelle opzioni disponibili. Tieni presente che la situazione ideale è usare MA esternamente (ad esempio, configurando l'autenticazione basata su certificato), per evitare attacchi DOS. Se lo si sfrutta internamente per i client moderni, la rete sarà a prova di futuro anche per quanto riguarda gli attacchi DOS Skype for Business Server dos.
+È piuttosto facile perdere traccia dell'obiettivo di proteggere le password nelle opzioni disponibili. Tieni presente che la situazione ideale è usare MA esternamente (ad esempio, configurando l'autenticazione basata su certificato), per evitare attacchi DOS. Se lo si sfrutta internamente per i client moderni, si sarà anche a prova di futuro la rete per quanto riguarda gli Skype for Business Server DOS.
 
 ## <a name="why-to-use-set-csauthconfig-at-the-global-level"></a>Perché usare Set-CsAuthConfig a livello globale
 
@@ -88,7 +88,7 @@ Potrebbe essere più opportuno eseguire un'operazione Get- per questi valori e s
 
 > [!NOTE]
 > 
-> Nota: dopo aver configurato CsAuthConfig, è necessario eseguire Enable-CsComputer in ogni computer per avere effetto sulle impostazioni.
+> Nota: dopo aver configurato CsAuthConfig, è necessario eseguire Enable-CsComputer in ogni computer per fare in modo che le impostazioni appartienino effetto.
 
 > [!IMPORTANT]
 > Se si utilizza Lync Web Access (LWA) ed è necessario utilizzare LBA (Forms-based Access) per l'accesso esterno, riconfigurare LWA in modo che i client possano accedervi con Accesso anonimo per supportare questi scenari. Allo stesso modo, se si utilizza Pin di accesso esterno, FBA verrà bloccato solo per gli utenti esterni. Se devono modificare il pin, dovranno accedere all'azienda per farlo internamente.

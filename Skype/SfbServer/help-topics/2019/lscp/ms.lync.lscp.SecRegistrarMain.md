@@ -1,7 +1,7 @@
 ---
 title: Impostazioni di sicurezza di una funzione di registrazione
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: dd3c9b37-607e-445f-9e15-b6c92adcfb87
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 472004e08c98dff2bf525deab33447e140964d6e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d3c0682be8004f35a9a257f0ae75bf7dd6583735
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614764"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60771314"
 ---
 # <a name="registrar-security-settings"></a>Impostazioni di sicurezza del registrar
 

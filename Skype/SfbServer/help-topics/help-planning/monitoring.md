@@ -1,7 +1,7 @@
 ---
 title: 'Skype for Business Server: strumento di pianificazione del monitoraggio'
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 4/6/2016
@@ -16,12 +16,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 9bbe86d0-b51a-4787-9029-d59e73c7906a
 description: In Skype for Business Server 2015, il monitoraggio viene utilizzato per raccogliere informazioni sull'utilizzo e dati QoE (Quality of Experience) sulle sessioni di comunicazione in cui sono coinvolti gli utenti.
-ms.openlocfilehash: a6410745ed1bdcf54f9ecd4356bad27e6e41d79b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 94e7b4f89a637a7fcba7993f9c9671514bf69ed3
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596720"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60770644"
 ---
 # <a name="skype-for-business-server-monitoring-planning-tool"></a>Skype for Business Server: strumento di pianificazione del monitoraggio
 

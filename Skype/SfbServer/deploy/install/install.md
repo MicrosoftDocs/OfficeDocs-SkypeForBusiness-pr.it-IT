@@ -1,7 +1,7 @@
 ---
 title: Installare Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 7/14/2018
@@ -14,19 +14,19 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.custom: Strat_SB_Admin
 ms.assetid: 71299b34-8783-4384-9949-0d3162c8a36e
-description: "Riepilogo: informazioni su come preparare l'ambiente per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: 9e30a3d91f5aaaf8d1717123ffd59499e96fbd7d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: "Riepilogo: informazioni su come preparare l'ambiente per un'installazione di Skype for Business Server. Scarica una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: acbe9f23c2158966200600caa92d33d0aafc6b1a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58609823"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60773206"
 ---
 # <a name="install-skype-for-business-server"></a>Installare Skype for Business Server
  
-**Riepilogo:** Informazioni su come preparare l'ambiente per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
+**Riepilogo:** Informazioni su come preparare l'ambiente per un'installazione di Skype for Business Server. Scarica una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
   
-In questo articolo viene illustrata un'installazione di esempio di Skype for Business Server. In questo articolo non viene eseguito un tentativo di eseguire tutte le procedure necessarie per eseguire un'installazione Skype for Business Server completa. L'obiettivo è fornire procedure di esempio in una topologia strettamente definita che include funzionalità di base di meet-and-share.
+In questo articolo viene illustrata un'installazione di esempio di Skype for Business Server. In questo articolo non viene eseguito un tentativo di eseguire tutte le procedure necessarie per eseguire un'Skype for Business Server completa. L'obiettivo è fornire procedure di esempio in una topologia strettamente definita che include funzionalità di base di meet-and-share.
   
 ## <a name="overview-of-the-install-process-for-skype-for-business-server"></a>Panoramica del processo di installazione per Skype for Business Server
 
@@ -42,13 +42,13 @@ Skype for Business Server è un prodotto avanzato e il processo di installazione
 > [!IMPORTANT]
 > Le procedure descritte in questa sezione sono un esempio di utilizzo di un insieme ristretto di requisiti e presuppongono che siano già state prese decisioni specifiche. Le procedure effettive che è necessario installare Skype for Business Server saranno probabilmente molto diverse. Utilizzare le procedure descritte in questa sezione solo come esempio e non come guida dettagliata per l'installazione di Skype for Business Server in ogni ambiente. 
   
-La Skype for Business Server e l'esecuzione per la prima volta implica otto passaggi principali. È necessario comprendere che le procedure di esempio descritte in questa sezione non sono le uniche procedure necessarie per l'installazione Skype for Business Server. Gli otto passaggi seguenti sono semplicemente esempi che consentono di comprendere meglio il processo complessivo e di ottenere un ambiente di lavoro di base funzionante. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. Gli otto passaggi sono:
+Per Skype for Business Server per la prima volta, sono necessari otto passaggi principali. È necessario comprendere che le procedure di esempio descritte in questa sezione non sono le uniche procedure necessarie per l'installazione Skype for Business Server. Gli otto passaggi seguenti sono semplicemente esempi che consentono di comprendere meglio il processo complessivo e di ottenere un ambiente di lavoro di base funzionante. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. Gli otto passaggi sono:
   
 ![Panoramica del processo di installazione.](../../media/b1a59b39-a7f0-4781-ac4d-2dfef7ca3700.png)
   
 - [Installare i prerequisiti per Skype for Business Server](install-prerequisites.md) : installare i prerequisiti in tutti i server che costituiscono la Skype for Business Server topologia. Si noti che i prerequisiti non sono gli stessi per tutti i ruoli. Ad esempio, i server che forniscono il ruolo front-end dispongono di un set di prerequisiti e i server che forniscono un ruolo director dispongono di un set diverso di prerequisiti. Per ulteriori dettagli, vedere la documentazione relativa alla pianificazione dei prerequisiti.
     
-- [Creare una condivisione file in Skype for Business Server](create-a-file-share.md) : Creare una condivisione file che verrà utilizzata dai server in tutta Skype for Business Server topologia.
+- [Creare una condivisione file in Skype for Business Server](create-a-file-share.md) : creare una condivisione file che verrà utilizzata dai server in tutta la Skype for Business Server topologia.
     
 - [Installare gli strumenti di amministrazione in Skype for Business Server](install-administrative-tools.md) : gli strumenti di amministrazione includono Generatore di topologie e Pannello di controllo. È necessario installare gli strumenti di amministrazione in almeno un server della topologia o in una workstation di gestione a 64 bit che esegue una versione del sistema operativo Windows supportata per Skype for Business Server.
     
@@ -56,7 +56,7 @@ La Skype for Business Server e l'esecuzione per la prima volta implica otto pass
     
 - [Creare record DNS per Skype for Business Server](create-dns-records.md) : per Skype for Business Server corretto, è necessario che siano presenti diverse impostazioni DNS. In questo modo i client sanno come accedere ai servizi e i server conoscono l'uno dell'altro. Queste impostazioni devono essere completate una sola volta per ogni distribuzione perché una volta assegnata una voce DNS, questa è disponibile in tutto il dominio.
     
-- [Creare e pubblicare](create-and-publish-new-topology.md) una nuova topologia in Skype for Business Server : prima di poter installare il sistema Skype for Business Server in ognuno dei server della topologia, è necessario creare una topologia e pubblicarla. Quando si pubblica una topologia, le informazioni sulla topologia vengono caricate nel database dell'archivio di gestione centrale. Se si tratta di un pool edizione Enterprise, si sta creando il database dell'archivio di gestione centrale la prima volta che si pubblica una nuova topologia. Se si tratta edizione Standard, è necessario eseguire il processo Prepare First edizione Standard Server dalla Distribuzione guidata prima di pubblicare una topologia. In questo modo si prepara edizione Standard'installazione di un'istanza SQL Server Express Edition e la creazione dell'archivio di gestione centrale.
+- [Creare e pubblicare](create-and-publish-new-topology.md) una nuova topologia in Skype for Business Server : prima di poter installare il sistema Skype for Business Server in ognuno dei server della topologia, è necessario creare una topologia e pubblicarla. Quando si pubblica una topologia, le informazioni sulla topologia vengono caricate nel database dell'archivio di gestione centrale. Se si tratta di un pool edizione Enterprise, si sta creando il database dell'archivio di gestione centrale la prima volta che si pubblica una nuova topologia. Se si tratta di edizione Standard, è necessario eseguire il processo Prepare First edizione Standard Server dalla Distribuzione guidata prima di pubblicare una topologia. Questa operazione si prepara per edizione Standard installando un'istanza SQL Server Express Edition e creando l'archivio di gestione centrale.
     
 - [Installare Skype for Business Server](install-skype-for-business-server.md) nei server della topologia: dopo aver caricato la topologia nell'archivio di gestione centrale e che Active Directory sa quali server eseguiranno i ruoli, è necessario installare il sistema Skype for Business Server in ognuno dei server della topologia.
     

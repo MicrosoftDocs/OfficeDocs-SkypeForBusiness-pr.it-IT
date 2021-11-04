@@ -1,7 +1,7 @@
 ---
 title: Classi e descrizioni dello schema in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 10/20/2015
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 7d43b920-ac37-40cc-adfe-be289bda6e9e
 description: In questa sezione vengono descritte tutte le classi dello schema utilizzate da Skype for Business Server .
-ms.openlocfilehash: ec9c4a7612455df6d004289f88ccdb7efb3d6334
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d7f05cd76074740e49f3972c97875e8993dd7b06
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596440"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60743262"
 ---
 # <a name="schema-classes-and-descriptions-in-skype-for-business-server"></a>Classi e descrizioni dello schema in Skype for Business Server
  
@@ -38,7 +38,7 @@ In questa sezione vengono descritte tutte le classi dello schema utilizzate da S
 |msRTCSIP-ConferenceDirectories  <br/> |Questa classe è un contenitore per più istanze di directory conferenze e non include alcun attributo.  <br/> |Novità di Communications Server 2007 R2.  <br/> |
 |msRTCSIP-ConferenceDirectory  <br/> |Questa classe contiene gli attributi che rappresentano le impostazioni per una directory conferenze specifica.  <br/> |Novità di Communications Server 2007 R2.  <br/> |
 |msRTCSIP-ConnectionPoint  <br/> |Punto di controllo del servizio generico (SCP) per specificare il computer come server che esegue Skype for Business Server.  <br/> |Novità di Lync 2010.  <br/> |
-|msRTCSIP-DefaultCWABank  <br/> |Questa classe ausiliaria contiene le impostazioni per un Skype for Business Web App bancario.  <br/> |Novità di Communications Server 2007 R2.  <br/> |
+|msRTCSIP-DefaultCWABank  <br/> |Questa classe ausiliaria contiene le impostazioni per una Skype for Business Web App bancaria.  <br/> |Novità di Communications Server 2007 R2.  <br/> |
 |msRTCSIP-Domain  <br/> |Questa classe contiene gli attributi che definiscono i domini configurati della funzione di registrazione SIP.  <br/> |-  <br/> |
 |msRTCSIP-EdgeProxy  <br/> |Questo contenitore di classe rappresenta un singolo servizio Access Edge. Poiché nella rete perimetrale viene distribuito un servizio Access Edge e i clienti in genere non consentono l'accesso a Servizi di dominio Active Directory dalla rete perimetrale, le istanze del servizio Access Edge non vengono unite alla rete Active Directory della intranet. I proxy di accesso non vengono pertanto registrati automaticamente in Servizi di dominio Active Directory. L'amministratore deve configurare manualmente l'esistenza di ogni istanza del servizio Access Edge in Servizi di dominio Active Directory.  <br/> |-  <br/> |
 |msRTCSIP-EnterpriseMCUSettings  <br/> |Questa classe ausiliaria di msRTCSIP-MCU contiene gli attributi che rappresentano le impostazioni per i server per conferenze.  <br/> |Novità di Microsoft Office Communications Server 2007.  <br/> |
@@ -46,11 +46,11 @@ In questa sezione vengono descritte tutte le classi dello schema utilizzate da S
 |msRTCSIP-EnterpriseServerSettings  <br/> |Questa classe ausiliaria di msRTCSIP-Server contiene gli attributi che rappresentano le impostazioni per i server SIP.  <br/> |-  <br/> |
 |msRTCSIP-Federation  <br/> |Questa classe ausiliaria di msRTCSIP-GlobalContainer contiene tutte le impostazioni relative alla federazione.  <br/> |-  <br/> |
 |msRTCSIP-GlobalContainer  <br/> |Questa classe contiene tutte le impostazioni che si applicano in una Skype for Business Server distribuzione.  <br/> |-  <br/> |
-|msRTCSIP-GlobalUserPolicy (obsoleta)  <br/> |Questa classe rappresenta un singolo criterio Office riunione di Communications Server.  <br/> |Obsoleto in Lync Server 2010.  <br/> |
+|msRTCSIP-GlobalUserPolicy (obsoleta)  <br/> |Questa classe rappresenta un singolo Office di riunione di Communications Server.  <br/> |Obsoleto in Lync Server 2010.  <br/> |
 |msRTCSIP-GlobalTopologySetting  <br/> |Oggetto impostazione della topologia globale locale.  <br/> |Novità di Lync Server 2010.  <br/> |
 |msRTCSIP-GlobalTopologySettings  <br/> |Contenitore di oggetti impostazione della topologia globale.  <br/> |Novità di Lync Server 2010.  <br/> |
 |msRTCSIP-LocalNormalization  <br/> |Questa classe è un contenitore che rappresenta un'istanza di una regola di normalizzazione della località.  <br/> |-  <br/> |
-|msRTCSIP-LocationContactMapping  <br/> |Questa classe viene creata dall'applicazione Operatore conferenza e contiene gli attributi utilizzati per categorizzare i numeri di telefono delle conferenze per area geografica.  <br/> |Novità di Communications Server 2007 R2.  <br/> |
+|msRTCSIP-LocationContactMapping  <br/> |Questa classe viene creata dal applicazione Operatore conferenza e contiene gli attributi utilizzati per categorizzare i numeri di telefono delle conferenze per area geografica.  <br/> |Novità di Communications Server 2007 R2.  <br/> |
 |msRTCSIP-LocationContactMappings  <br/> |Questa classe è un contenitore per più istanze di mapping dei contatti località e non include alcun attributo.  <br/> |Novità di Communications Server 2007 R2.  <br/> |
 |msRTCSIP-LocationProfile  <br/> |Questa classe è un contenitore che rappresenta un profilo località specifico.  <br/> |-  <br/> |
 |msRTCSIP-LocationProfiles (obsoleta)  <br/> |Questa classe è un contenitore per più profili località e non include alcun attributo.  <br/> |Obsoleto in Lync Server 2010.  <br/> |

@@ -1,7 +1,7 @@
 ---
 title: Pagina per l'aggiunta dell'archivio SQL per Front End Server per Lync Server 2010
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 84bbd899-4ce1-4b3b-9bdb-a08cefb626d3
-description: Definire le proprietà dei SQL Server per il nuovo pool Front End che si sta configurando.
-ms.openlocfilehash: f999327894b406ba814b0e46dc6c6c7007a50776
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Definire le proprietà degli SQL Server per il nuovo pool Front End che si sta configurando.
+ms.openlocfilehash: 2fd58add5d04d6fb232e42c33276fcdf6878f6be
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610783"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60739362"
 ---
 # <a name="add-front-end-sql-store-page-for-lync-server-2010"></a>Pagina per l'aggiunta dell'archivio SQL per Front End Server per Lync Server 2010
  
-Definire le proprietà dei SQL Server per il nuovo pool Front End che si sta configurando.
+Definire le proprietà degli SQL Server per il nuovo pool Front End che si sta configurando.
   
 > [!IMPORTANT]
 > Se si sta configurando un server edizione Standard, questa finestra di dialogo verrà visualizzata ma non sarà possibile configurare le impostazioni. Fare clic su **Avanti** per continuare.

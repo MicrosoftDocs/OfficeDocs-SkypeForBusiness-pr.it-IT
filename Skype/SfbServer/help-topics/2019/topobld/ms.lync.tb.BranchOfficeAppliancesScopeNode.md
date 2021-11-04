@@ -1,7 +1,7 @@
 ---
 title: Nodo dell'ambito di Survivable Branch Appliance
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 8117b88a-0a34-4bf4-b1dd-ded72b5c9c18
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Nel nodo Survivable Branch Appliance sono elencati i Survivable Branch Appliance di questo sito di succursale. È possibile eseguire l'operazione seguente:"
-ms.openlocfilehash: e5aef4fbc138b606973aabe941dba2a54b16ccb6
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 5dfda329cae81a56012e5a1905a4b085b8e55046
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58624148"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60771084"
 ---
 # <a name="branch-office-appliances-scope-node"></a>Nodo dell'ambito di Branch Office Appliance
  

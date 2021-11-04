@@ -1,7 +1,7 @@
 ---
-title: Configurare l'integrazione tra Skype for Business Server locale e Outlook Web App
+title: Configurare l'integrazione tra Skype for Business Server locali e Outlook Web App
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/7/2016
@@ -14,18 +14,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 95a20117-2064-43c4-94fe-cac892cadb6f
 description: 'Riepilogo: integrare Skype for Business Server e Outlook Web App.'
-ms.openlocfilehash: 9edbd804347cd8eba8db609c73066b9030c73ba7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 9555303ad5bcb3ad15702f0cf1768549330e33cd
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621758"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60738862"
 ---
-# <a name="configure-integration-between-on-premises-skype-for-business-server-and-outlook-web-app"></a>Configurare l'integrazione tra Skype for Business Server locale e Outlook Web App
+# <a name="configure-integration-between-on-premises-skype-for-business-server-and-outlook-web-app"></a>Configurare l'integrazione tra Skype for Business Server locali e Outlook Web App
 
 **Riepilogo:** Integrare Skype for Business Server e Outlook Web App.
 
-I clienti che usano distribuzioni di Skype for Business Server locali possono configurare l'interoperabilità con Microsoft Outlook Web App in Microsoft Exchange Online in modalità di distribuzione ibrida. Le funzionalità di interoperabilità includono l'accesso Single #A0 e la messaggistica istantanea e l'integrazione della presenza con l Outlook Web App interno. Per abilitare questa integrazione, è necessario configurare il server perimetrale nella distribuzione di Skype for Business Server locale completando le attività seguenti:
+I clienti che usano distribuzioni Skype for Business Server locali possono configurare l'interoperabilità con Microsoft Outlook Web App in Microsoft Exchange Online in modalità di distribuzione ibrida. Le funzionalità di interoperabilità includono l'accesso Single #A0 e la messaggistica istantanea e l'integrazione della presenza con l Outlook Web App interno. Per abilitare questa integrazione, è necessario configurare il server perimetrale nella distribuzione di Skype for Business Server locale completando le attività seguenti:
 
 - Configurare uno spazio di indirizzi SIP condiviso
 
@@ -33,9 +33,9 @@ I clienti che usano distribuzioni di Skype for Business Server locali possono co
 
 - Verificare la replica dell'archivio di gestione centrale aggiornato
 
-## <a name="configure-a-shared-sip-address-space"></a>Configurare uno spazio indirizzi SIP condiviso
+## <a name="configure-a-shared-sip-address-space"></a>Configurare uno spazio di indirizzi SIP condiviso
 
-Per integrare gli indirizzi locali Skype for Business Server con Exchange Online, è necessario configurare uno spazio di indirizzi SIP condiviso. Lo stesso spazio di indirizzi di dominio SIP è supportato sia dal Skype for Business Server che dal Exchange Online servizio.
+Per integrare gli indirizzi locali Skype for Business Server con Exchange Online, è necessario configurare uno spazio di indirizzi SIP condiviso. Lo stesso spazio di indirizzi del dominio SIP è supportato sia dal Skype for Business Server che dal Exchange Online servizio.
 
 Utilizzando Skype for Business Server Management Shell, configurare il server perimetrale per la federazione eseguendo il cmdlet **Set-CSAccessEdgeConfiguration,** utilizzando i parametri visualizzati nell'esempio seguente:
 
@@ -92,6 +92,6 @@ Verificare se le informazioni visualizzate corrispondono alle modifiche apportat
 
 ## <a name="see-also"></a>Vedere anche
 
-[Fornire Skype for Business Server di caselle vocali agli utenti nella messaggistica unificata Exchange ospitata](/previous-versions/office/lync-server-2013/lync-server-2013-providing-lync-server-users-voice-mail-on-hosted-exchange-um)
+[Fornire Skype for Business Server agli utenti della segreteria telefonica nella messaggistica unificata Exchange ospitata](/previous-versions/office/lync-server-2013/lync-server-2013-providing-lync-server-users-voice-mail-on-hosted-exchange-um)
 
 [Integrazione della Exchange messaggistica unificata ospitata in Skype for Business Server](/previous-versions/office/lync-server-2013/lync-server-2013-hosted-exchange-unified-messaging-integration)

@@ -5,7 +5,7 @@ ms:assetid: ab1051c3-8380-4d72-86df-37a61b1e4a41
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg405409(v=OCS.15)
 ms:contentKeyID: 48185049
 mtps_version: v=OCS.15
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: QoS (Quality of Service) è una tecnologia di rete utilizzata in alcune organizzazioni per offrire un'esperienza ottimale per gli utenti finali per le comunicazioni audio e video.
-ms.openlocfilehash: 33c580e61be0dcd2a5a193a654294a5ea9087d12
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 646d06e7fbd710b8c623b2d54dae773192227d91
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58612165"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60757261"
 ---
 # <a name="managing-quality-of-service-qos-in-skype-for-business-server"></a>Gestione della qualità del servizio (QoS) in Skype for Business Server
 
@@ -41,6 +41,6 @@ Skype for Business Server offre il supporto completo per la qualità del servizi
 
   - [Configurazione degli intervalli di porte e dei criteri di qualità del servizio per i server perimetrali](configuring-port-ranges-for-your-edge-servers.md). Anche se non è necessario, è possibile configurare i server Perimetrali in modo che utilizzino gli stessi intervalli di porte degli altri server. La configurazione di un criterio qualità del servizio deve essere eseguita solo per il lato interno dei server perimetrali. Questo perché La qualità del servizio è progettata per l'utilizzo nella rete interna e non in Internet.
 
-- [Configurazione degli intervalli di porte e dei criteri di](configuring-port-ranges-for-your-skype-clients.md) qualità del servizio per i client in Skype for Business Server  Questi intervalli di porte si applicano solo ai computer client e in genere sono diversi dagli intervalli di porte configurati nei server. Si noti Skype for Business Server non supporta QoS per Windows sistemi operativi diversi da Windows 10.
+- [Configurazione di intervalli di porte e criteri di](configuring-port-ranges-for-your-skype-clients.md) qualità del servizio per i client in Skype for Business Server  Questi intervalli di porte si applicano solo ai computer client e in genere sono diversi dagli intervalli di porte configurati nei server. Si noti Skype for Business Server non supporta QoS per Windows sistemi operativi diversi da Windows 10.
 
 

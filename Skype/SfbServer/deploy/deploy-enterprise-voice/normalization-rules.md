@@ -1,7 +1,7 @@
 ---
 title: Creare o modificare una regola di normalizzazione in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: e8547d7b-f74d-4a73-9a7d-df20d7a87fcd
 description: 'Riepilogo: informazioni su come definire, creare e modificare una regola di normalizzazione in Skype for Business Server.'
-ms.openlocfilehash: 3e06aa9821761803c033255c4da3f636ba296dda
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c624e9bb42b113a87c5774f90df77c23488d1b32
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58626208"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60773276"
 ---
 # <a name="create-or-modify-a-normalization-rule-in-skype-for-business"></a>Creare o modificare una regola di normalizzazione in Skype for Business
 
@@ -45,7 +45,7 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
    - **Lunghezza** Specificare il numero di cifre nel modello di corrispondenza e specificare se si desidera che il motivo corrisponda esattamente a questa lunghezza, che corrisponda a numeri composto di almeno questa lunghezza o che corrispondano a numeri di qualsiasi lunghezza.
 
-   - **Cifre da rimuovere** (Facoltativo) Specificare il numero di cifre iniziale da rimuovere dai numeri composto a cui si desidera che il formato corrisponda.
+   - **Cifre da rimuovere** (facoltativo) Specificare il numero di cifre iniziale da rimuovere dai numeri composto a cui si desidera che il formato corrisponda.
 
    - **Cifre da aggiungere** (facoltativo) Specificare le cifre da aggiungere ai numeri composto a cui si desidera che il formato corrisponda.
 
@@ -95,7 +95,7 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
    - In **Regola di conversione** specificare un modello per il formato dei numeri di telefono E.164 convertiti.
 
-     Ad esempio, se si immette ^(\d )$ in Corrispondenza a questo modello e {7} +1425$1 in **Regola** di conversione, la regola normalizza da 5550100 a +14255550100. 
+     Ad esempio, se si immette ^(\d )$ in Corrispondenza questo modello e {7} +1425$1 in Regola di conversione, la regola normalizza da 5550100 a +14255550100.  
 
 7. (Facoltativo) Se la regola di normalizzazione restituisce un numero di telefono interno all'organizzazione, selezionare **Estensione interna**.
 

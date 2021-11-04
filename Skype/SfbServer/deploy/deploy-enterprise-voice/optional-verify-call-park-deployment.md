@@ -1,7 +1,7 @@
 ---
 title: (Facoltativo) Verificare la distribuzione del parcheggio di chiamata in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: fcfe0962-1a9c-4cbd-847c-fed40e3b1480
 description: Verifica della distribuzione di Parcheggio di chiamata in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 279f55e058678bdd33616a71642555b134052018
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 86644cc3b626bcb59b1991bcb57e17b7c1716931
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58579950"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60773236"
 ---
 # <a name="optional-verify-call-park-deployment-in-skype-for-business"></a>(Facoltativo) Verificare la distribuzione del parcheggio di chiamata in Skype for Business
  
@@ -29,7 +29,7 @@ Dopo aver installato e configurato Parcheggio di chiamata, è necessario verific
 - Chiama un utente con Parcheggio di chiamata abilitato e che l'utente parcheggia la chiamata.
     
     > [!NOTE]
-    > Se il parcheggio di chiamata è stato abilitato nei criteri vocali appena prima di eseguire questo test, l'utente che parcheggia la chiamata deve disconnettersi da Skype for Business e quindi accedere di nuovo per poter visualizzare l'opzione Parcheggio di chiamata nell'elenco chiamate di trasferimento. 
+    > Se è stato abilitato Parcheggio di chiamata nei criteri vocali prima di eseguire questo test, l'utente che parcheggia la chiamata deve disconnettersi da Skype for Business e quindi accedere di nuovo per poter visualizzare l'opzione Parcheggio di chiamata nell'elenco chiamate di trasferimento. 
   
 - Comporre il numero di orbit per recuperare la chiamata.
     

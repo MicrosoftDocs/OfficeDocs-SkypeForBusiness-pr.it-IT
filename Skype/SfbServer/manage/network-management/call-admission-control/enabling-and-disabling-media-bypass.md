@@ -1,7 +1,7 @@
 ---
 title: Abilitazione e disabilitazione del bypass multimediale
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Utilizzare le procedure descritte in questo articolo per abilitare o disabilitare il bypass multimediale tramite il Pannello Skype for Business Server controllo.
-ms.openlocfilehash: 6881b1627cf648cc948b5e8b3564fa3b12caa183
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: abbbc6bf77a5fe1aea22de9c5f225ac694cf1d1d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58604817"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60750285"
 ---
 # <a name="enabling-and-disabling-media-bypass-in-skype-for-business-server"></a>Abilitazione e disabilitazione del bypass multimediale in Skype for Business Server
 

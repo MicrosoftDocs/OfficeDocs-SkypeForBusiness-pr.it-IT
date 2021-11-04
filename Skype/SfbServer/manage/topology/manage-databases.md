@@ -1,7 +1,7 @@
 ---
 title: Gestire i database con un gruppo di disponibilità AlwaysOn in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,16 +12,16 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 026c4469-f471-4e4f-a77d-a7d22a925e5a
 description: 'Riepilogo: informazioni su come aggiungere altri database di Skype for Business Server a un gruppo di disponibilità AlwaysOn esistente e sui passaggi aggiuntivi necessari dopo aver patchato o aggiornato un server back-end che fa parte di un gruppo di disponibilità AlwaysOn in Skype for Business Server.'
-ms.openlocfilehash: a4c809aaaea4932185bb8a63fa4767784d745988
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c47d5833b7569faa424415b1e5b7315bab4d4aae
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608073"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60756993"
 ---
 # <a name="manage-databases-with-an-alwayson-availability-group-in-skype-for-business-server"></a>Gestire i database con un gruppo di disponibilità AlwaysOn in Skype for Business Server
 
-Utilizzare i passaggi descritti in questo articolo per aggiungere altri database di Skype for Business Server a un gruppo di disponibilità AlwaysOn esistente in Skype for Business Server e per informazioni sui passaggi aggiuntivi necessari dopo aver patchato o aggiornato un server back-end che fa parte di un gruppo di disponibilità AlwaysOn in Skype for Business Server.
+Utilizzare la procedura descritta in questo articolo per aggiungere altri database di Skype for Business Server a un gruppo di disponibilità AlwaysOn esistente in Skype for Business Server e per informazioni sui passaggi aggiuntivi necessari dopo aver patchato o aggiornato un server back-end che fa parte di un gruppo di disponibilità AlwaysOn in Skype for Business Server.
 
 ## <a name="add-databases-to-an-alwayson-availability-group"></a>Aggiungere database a un gruppo di disponibilità AlwaysOn 
 
@@ -31,9 +31,9 @@ Utilizzare i passaggi descritti in questo articolo per aggiungere altri database
     
    - Aprire Generatore di topologie, selezionare **Scarica topologia dalla distribuzione esistente** e fare clic su **OK.**
     
-   - Espandere Skype for Business Server, espandere la topologia ed espandere SQL Server **archivi**. Fare clic con il SQL del nuovo gruppo di disponibilità AlwaysOn e scegliere **Modifica proprietà**.
+   - Espandere Skype for Business Server, espandere la topologia ed espandere SQL Server **archivi**. Fare clic con il pulsante destro del SQL del nuovo gruppo di disponibilità AlwaysOn e scegliere **Modifica proprietà**.
     
-   - Nella parte inferiore della pagina, nella casella **SQL Server FQDN,** digitare il nome di dominio completo del nodo primario del gruppo di disponibilità AlwaysOn.At the bottom of the page, in the SQL Server FQDN box, type in the FQDN of the primary node of the AlwaysOn Availability Group.
+   - Nella parte inferiore della pagina, nella casella **SQL Server FQDN,** digitare il nome di dominio completo del nodo primario del gruppo di disponibilità AlwaysOn.
     
 3. Pubblicare la topologia. Scegliere **Topologia** dal menu Azione **e** quindi **Pubblica**. Nella pagina di conferma fare clic su **Avanti.**
     
@@ -45,7 +45,7 @@ Dopo aver patchato un server back-end che fa parte di un gruppo di disponibilit�
 
 1. Installare l'aggiornamento nel server Skype for Business server.
     
-2. Eseguire il comando di PowerShell seguente in Skype for Business Management Shell (connesso con un account autorizzato in modo appropriato per applicare le modifiche ai database alwayson di SQL) come indicato di seguito:
+2. Eseguire il comando di PowerShell seguente in Skype for Business Management Shell (connesso con un account autorizzato in modo appropriato per applicare le modifiche ai database AlwaysOn di SQL) come indicato di seguito:
     
     ```PowerShell
     Install-CsDatabase -Update -ConfiguredDatabases -SqlServerFqdn [sqlpool.contoso.com] -Verbose

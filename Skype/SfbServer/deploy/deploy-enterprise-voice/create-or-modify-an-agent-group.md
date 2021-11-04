@@ -1,7 +1,7 @@
 ---
 title: Creare o modificare un gruppo di agenti in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f1461fff-51c1-4f4b-9311-8cba02c333fc
 description: Creare o modificare un gruppo di agenti in Response Group, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 367e8e752042d7b8585fdae918f747aa77085223
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f17b3839e483f1886e69f84b33980f5384b50066
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589018"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60771561"
 ---
 # <a name="create-or-modify-an-agent-group-in-skype-for-business"></a>Creare o modificare un gruppo di agenti in Skype for Business
  
@@ -29,7 +29,7 @@ Creare o modificare un gruppo di agenti in Response Group, in Skype for Business
   
 Quando si crea un gruppo di agenti, è necessario selezionare gli agenti assegnati al gruppo e specificare impostazioni aggiuntive per il gruppo, ad esempio il metodo di routing e se un agente possa o meno accedere al gruppo e disconnettervisi. 
   
-Un agente che deve accedere e disconnettersi dal gruppo, diverso dall'accesso o dalla Skype for Business, è definito agente formale. Gli agenti formali devono aver effettuato l'accesso al gruppo per poter ricevere le chiamate instradate a tale gruppo. Questo requisito può rivelarsi utile per gli agenti che rispondono alle chiamate provenienti dal gruppo a tempo parziale. Gli agenti formali a cui si accede e escno dai gruppi facendo clic su una voce di menu in Skype for Business per aprire il browser Internet Windows Internet Explorer e visualizzare una console della pagina Web.
+Un agente che deve accedere e disconnettersi dal gruppo, che è diverso dall'accesso o dalla Skype for Business, è definito agente formale. Gli agenti formali devono aver effettuato l'accesso al gruppo per poter ricevere le chiamate instradate a tale gruppo. Questo requisito può rivelarsi utile per gli agenti che rispondono alle chiamate provenienti dal gruppo a tempo parziale. Gli agenti formali a cui si accede e si disconnennendono dai propri gruppi facendo clic su una voce di menu in Skype for Business per aprire il browser Internet Windows Internet Explorer e visualizzare una console per le pagine Web.
   
 Un agente che non esegue l'accesso o la disconnessione dal gruppo viene definito agente informale. Gli agenti informali vengono automaticamente connessi al gruppo quando a Skype for Business e non possono disconnettersi dal gruppo.
   
@@ -47,7 +47,7 @@ Utilizzare una delle procedure seguenti per creare o modificare un gruppo di age
     > [!NOTE]
     > Se si è tra i delegati alla gestione di un Response Group per un flusso di lavoro gestito, è possibile creare gruppi da utilizzare nei flussi di lavoro da gestire. 
   
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.  
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.  
     
 3. Sulla barra di navigazione sinistra fare clic su **Response Group** e quindi su **Gruppo**.
     
@@ -63,7 +63,7 @@ Utilizzare una delle procedure seguenti per creare o modificare un gruppo di age
     
 7. Nel campo **Criteri di partecipazione** selezionare una delle opzioni indicate di seguito per impostare il comportamento di accesso per il gruppo:
     
-   - Selezionare **Informale** per specificare che gli agenti del gruppo non devono connettersi e disconnettersi dal gruppo. Gli agenti vengono automaticamente connessi al gruppo quando a Skype for Business.
+   - Selezionare **Informale** per specificare che gli agenti del gruppo non devono connettersi e disconnettersi dal gruppo. Gli agenti vengono automaticamente connessi al gruppo quando a loro volta a Skype for Business.
     
    - Selezionare **Formale** per specificare che gli agenti inclusi nel gruppo devono eseguire l'accesso e la disconnessione dal gruppo. Quando si seleziona questa opzione, gli agenti fare clic su una voce di menu in Skype for Business per aprire Internet Explorer e visualizzare una console pagina Web per l'accesso e la disconnessione dal gruppo.
     
@@ -74,7 +74,7 @@ Utilizzare una delle procedure seguenti per creare o modificare un gruppo di age
   
 9. In **Metodo di routing** selezionare il metodo per il routing delle chiamate agli agenti del gruppo, nel modo seguente:
     
-   - Per offrire una nuova chiamata prima all'agente che è rimasto inattivo più a lungo (ha avuto una presenza di **Available** o **Inactive** in Skype for Business il più lungo), fare clic su **Longest idle**. 
+   - Per offrire una nuova chiamata prima all'agente che è rimasto inattivo più a lungo (ha avuto una presenza di **Available** o **Inactive** Skype for Business il più lungo), fare clic su **Longest idle**. 
     
    - Per inoltrare una nuova chiamata a tutti gli agenti disponibili contemporaneamente, fare clic su **Parallelo**. La chiamata verrà inviata al primo agente che la accetta.
     
@@ -104,7 +104,7 @@ Utilizzare una delle procedure seguenti per creare o modificare un gruppo di age
     
       - Se è selezionato il routing seriale o round robin, il server inoltra una chiamata in arrivo all'agente appropriato in base al metodo di routing e all'ordine con cui sono elencati gli agenti nella lista di distribuzione.
     
-      - Se la lista di distribuzione contiene utenti per i quali Lync Server 2010 è abilitato ma VoIP aziendale non è abilitato, verranno aggiunti al gruppo di agenti come agenti disarettivi. Assicurarsi che tutti i membri della lista di distribuzione VoIP aziendale abilitati per i propri account utente.
+      - Se la lista di distribuzione contiene utenti per i quali Lync Server 2010 è abilitato ma VoIP aziendale non è abilitato, questi verranno aggiunti al gruppo di agenti come agenti non autorizzati. Assicurarsi che tutti i membri della lista di distribuzione VoIP aziendale abilitati per i propri account utente.
     
     > [!IMPORTANT]
     > Se si utilizza una lista di distribuzione di posta elettronica, le appartenenze nascoste o le liste nascoste potrebbero diventare visibili all'amministratore o agli utenti di Response Group. 

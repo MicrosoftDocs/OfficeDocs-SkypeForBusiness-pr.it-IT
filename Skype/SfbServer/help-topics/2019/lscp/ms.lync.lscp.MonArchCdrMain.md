@@ -1,7 +1,7 @@
 ---
 title: Registrazione dettagli chiamata
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: e3daddf8-ac49-4b96-bf05-44b5a01d7aab
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 6f3fd225c057f9c57d79e7d818c37170bd74ddf4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 531772f02721568d7373e99c1310fd7b544f0197
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58618092"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60773056"
 ---
 # <a name="call-detail-recording"></a>Registrazione dettagli chiamata
  

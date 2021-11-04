@@ -1,7 +1,7 @@
 ---
 title: Numero di Telefono non assegnato Crea nuovo o Modifica esistente
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 58903e40-6b93-40d6-88f8-1201743cd9be
 ROBOTS: NOINDEX, NOFOLLOW
 description: I numeri non assegnati sono numeri di telefono validi per l'organizzazione ma non assegnati a un utente o un telefono. La tabella dei numeri non assegnati identifica come si desidera gestire le chiamata a numeri non assegnati.
-ms.openlocfilehash: fb9542cb48fbcbda2bba42a2d691e26030edc9dd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: aac7a56d174a699fba070f2a08bc2f0ef92bad1e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58606525"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60764514"
 ---
 # <a name="unassigned-phone-number-create-new-or-edit-existing"></a>Numero di telefono non assegnato: crearne uno nuovo o modificarne uno esistente
 
@@ -46,7 +46,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - Il numero deve corrispondere all'espressione regolare ( `tel:` )?( \+ )? [1-9]\d {0,17} (;ext=[1-9]\d {0,9} )?. Questo significa che il numero può iniziare con la stringa 'tel:'. Se non si specifica tale stringa, verrà aggiunta automaticamente, ad esempio un segno più (+) e una cifra da 1 a 9. Il numero di telefono può contenere fino a 17 cifre e può essere seguito da un interno nel formato ;ext= seguito dal numero dell'interno.
 
-- **Servizio annunci** Selezionare **Annuncio** per fare in modo  che l'applicazione Annuncio gestirà la chiamata Exchange messaggistica unificata per fare in modo che un Exchange messaggistica unificata Operatore automatico gestire la chiamata in arrivo.
+- **Servizio annunci** Selezionare **Annuncio** per fare in modo  che l'applicazione Annuncio gestirà la chiamata Exchange messaggistica unificata per fare in modo che un Exchange di messaggistica unificata Operatore automatico gestire la chiamata in arrivo.
 
 - Se è stato selezionato **Annuncio** per **Servizio Annuncio**:
 

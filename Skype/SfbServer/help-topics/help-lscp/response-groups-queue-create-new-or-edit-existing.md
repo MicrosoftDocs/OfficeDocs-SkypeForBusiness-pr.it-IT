@@ -1,7 +1,7 @@
 ---
-title: Coda Response Group Crea nuovo o Modifica esistente
+title: Coda Di Response Group Crea nuovo o Modifica esistente
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/24/2015
@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: cbdde536-8668-4a08-9862-8615e8691fd7
-description: Le code di Response Group contengono le chiamate a un Response Group finché un agente non risponde alla chiamata.
-ms.openlocfilehash: fe8486ae94df3d7532f2a672cbd272000ff06f2f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Le code di Response Group contengono le chiamate a un Response Group fino a quando un agente non risponde alla chiamata.
+ms.openlocfilehash: c70742f19a088785275516f927e5a6fa7d5f9e6b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58602741"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60750505"
 ---
 # <a name="response-groups-queue-create-new-or-edit-existing"></a>Coda dei Response Group: crearne una nuova o modificarne una esistente
 
-Le code di Response Group contengono le chiamate a un Response Group finché un agente non risponde alla chiamata.
+Le code di Response Group contengono le chiamate a un Response Group fino a quando un agente non risponde alla chiamata.
 
 ## <a name="ui-reference"></a>Riferimenti UI
 

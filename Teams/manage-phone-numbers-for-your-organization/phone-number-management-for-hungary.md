@@ -1,7 +1,7 @@
 ---
 title: Telefono gestione dei numeri per l'Ungheria
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: chandra.kilaru, kristen.kutser
 ms.topic: reference
@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Ungheria per Microsoft Teams.
-ms.openlocfilehash: 33b7bbc485413e86c73016f80a0674d69a119340
-ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
+ms.openlocfilehash: c233b4743479b2c42b36bea511a4c3f63de7ac6a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60733337"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60771755"
 ---
 # <a name="phone-number-management-for-hungary"></a>Telefono gestione dei numeri per l'Ungheria
 
@@ -37,7 +37,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.<br/> |In Ungheria è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per l'Ungheria (v.1.0) (hu-hu)](https://download.microsoft.com/download/4/d/3/4d3a57e0-c092-492c-a9dc-7a5376e30414/New%20phone%20number%20request%20for%20Hungary.pdf).<br/><br/> Prima di assegnarti i numeri di telefono, devi scaricare il modulo Conosci il tuo cliente, compilarlo per intero e inviarlo a Microsoft.<br/><br>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.  |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.<br/> |In Ungheria è possibile ottenere i numeri di telefono dell'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per l'Ungheria (v.1.0) (hu-hu)](https://download.microsoft.com/download/4/d/3/4d3a57e0-c092-492c-a9dc-7a5376e30414/New%20phone%20number%20request%20for%20Hungary.pdf).<br/><br/> Prima di assegnarti i numeri di telefono, devi scaricare il modulo Conosci il tuo cliente, compilarlo per intero e inviarlo a Microsoft.<br/><br>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.  |
 |Fai trasferire a noi i numeri di telefono.<br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per l'Ungheria (tutti i numeri) (v.1.0) (hu-hu)](https://download.microsoft.com/download/f/b/1/fb17b2df-b5cf-45b7-89f0-0cbf250df1f7/letter-of-authorization-(loa)-for-hungary-(all-numbers)-(v1.0)-(hu-hu)%20(1).pdf) <br/> <br/>Compilarlo e [contattare il service desk TNS per istruzioni.](contact-tns-service-desk.md) <br/><br/>Il completamento del trasferimento di numeri in questo mercato può richiedere da due a tre settimane. <br/><br/>Questi numeri non possono essere usati per le conferenze in questo momento.   |
 |Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere. <br/> |
 |Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il service desk TNS per istruzioni](contact-tns-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |

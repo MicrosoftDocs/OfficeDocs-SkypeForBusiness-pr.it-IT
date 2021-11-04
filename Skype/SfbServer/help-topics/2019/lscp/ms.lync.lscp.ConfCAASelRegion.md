@@ -1,7 +1,7 @@
 ---
 title: Selezionare aree
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 1b79b214-cc7b-4686-b7e2-f451910335fd
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare la finestra di dialogo Seleziona aree per trovare le aree disponibili nell'ambiente. Per utilizzare un'area esistente, selezionarla nell'elenco e quindi fare clic su OK.
-ms.openlocfilehash: 1a876046865e10fab558a626785122f6c3658424
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4e716ff4cf557c6ba46c396f530df6e4b35aba71
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58579840"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60771444"
 ---
 # <a name="select-regions"></a>Selezionare aree geografiche
  

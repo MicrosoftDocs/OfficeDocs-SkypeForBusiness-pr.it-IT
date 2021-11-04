@@ -1,7 +1,7 @@
 ---
 title: Definire i computer nel pool Persistent Chat
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/27/2015
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: f87c3abb-d8b4-4e51-af84-9b579e3807c5
 description: È possibile definire i computer che saranno parte di un pool di server Chat persistente digitando il nome di dominio completo (FQDN) in FQDN computer. Questo nome deve essere quello del computer così com'è definito nei record host DNS (A o AAAA).
-ms.openlocfilehash: f0e17a04d2e7165014adc06ddfeddeccf4ae89b4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c739cb8aff3cc95a6fa64b73f28131b4a8d0f77c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58622488"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60739272"
 ---
 # <a name="define-computers-in-persistent-chat-pool"></a>Definire computer nel pool di Chat persistente
  
@@ -44,4 +44,4 @@ Fare clic su **Guida** per accedere alla Guida sensibile al contesto, come quest
 
 [Pianificare il server Chat persistente in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)
   
-[Aggiungere un server Chat persistente alla topologia Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/add-persistent-chat-server.md)
+[Aggiungere il server Chat persistente alla topologia Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/add-persistent-chat-server.md)

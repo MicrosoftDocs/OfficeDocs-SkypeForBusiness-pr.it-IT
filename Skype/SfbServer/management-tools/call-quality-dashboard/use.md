@@ -1,7 +1,7 @@
 ---
 title: Usare il dashboard qualità delle chiamate per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,22 +13,22 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ec62b70f-885e-4272-b9d2-a574ea434b64
 description: 'Riepilogo: informazioni su come usare il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: 8bd18b7be66c4ea9b3a69cd81d4c72fb641603eb
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: ad4c1b295b672900b632903fc653691c03cc5193
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60015080"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60739102"
 ---
 # <a name="use-call-quality-dashboard-for-skype-for-business-server"></a>Usare il dashboard qualità delle chiamate per Skype for Business Server
 
 **Riepilogo:** Informazioni su come usare il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
 
-Call Quality Dashboard (CQD) consente ai professionisti IT di utilizzare dati aggregati per identificare i problemi di creazione di problemi di qualità multimediale confrontando le statistiche per gruppi di utenti per identificare tendenze e modelli. CQD non si concentra sulla risoluzione di problemi relativi alle singole chiamate, ma sull'identificazione di problemi e soluzioni applicabili a molti utenti.
+Call Quality Dashboard (CQD) consente ai professionisti IT di utilizzare dati aggregati per identificare i problemi di creazione di problemi di qualità multimediale confrontando le statistiche per gruppi di utenti per identificare tendenze e modelli. CQD non si concentra sulla risoluzione di singoli problemi di chiamata, ma sull'identificazione di problemi e soluzioni che si applicano a molti utenti.
 
 ## <a name="call-quality-dashboard-user-guide"></a>Guida per l'utente del dashboard di qualità delle chiamate
 
-CQD è un portale Web per la creazione e l'organizzazione rapida di report basati su dati QoE (Quality of Experience). CQD distribuisce un cubo SSAS per aggregare i dati nel database delle metriche QoE e consente agli amministratori di creare e modificare report o di eseguire indagini in tempo reale. Sebbene sia possibile utilizzare Excel per connettersi direttamente al cubo, il portale è ottimizzato per diversi flussi di lavoro che coinvolgono dati QoE. I dati includono:
+CQD è un portale Web per la creazione e l'organizzazione rapida di report basati su dati QoE (Quality of Experience). CQD distribuisce un cubo SSAS per aggregare i dati nel database delle metriche QoE e consente agli amministratori di creare e modificare report o eseguire indagini in tempo reale. Sebbene sia possibile utilizzare Excel per connettersi direttamente al cubo, il portale è ottimizzato per diversi flussi di lavoro che coinvolgono dati QoE. I dati includono:
 
 - Dati dei report memorizzati nella cache per un accesso rapido
 - Collegamenti diretti alle pagine dei report per la condivisione e la pubblicazione di informazioni
@@ -47,7 +47,7 @@ Quando si visita il dashboard qualità delle chiamate, viene visualizzata la sch
 3. Il breadcrumb consente di identificare la posizione corrente all'interno della gerarchia del set di report.
 4. I report con sottoreport vengono visualizzati con un collegamento blu. Fare clic sul collegamento per eseguire il drill-down dei report figlio.
 
-Spostare il mouse sui grafici a barre e sulle linee di tendenza per visualizzare valori dettagliati. Il report con lo stato attivo mostra il menu azioni: "Modifica", "Clone", "Elimina" e "Scarica".
+Spostare il mouse sui grafici a barre e sulle linee di tendenza per visualizzare valori dettagliati. Il report con lo stato attivo mostra il menu delle azioni: "Modifica", "Clone", "Elimina" e "Scarica".
 
 ### <a name="default-reports"></a>Report predefiniti
 
@@ -132,7 +132,7 @@ I dati utilizzati per queste tabelle sono definiti come segue:
 |UpdatedDate |datetime |No |Datetime dell'ultimo aggiornamento della voce. |
 
 
-Per impostazione predefinita, nella tabella successiva è presente una voce (0, "Sconosciuto").
+Per impostazione predefinita, la tabella successiva include una voce (0, "Sconosciuto").
 
 **CqdBuildingType**
 
@@ -196,7 +196,7 @@ CQD non utilizza i campi Caller/Callee, ma "First" e "Second" perché ci sono pa
 
  **First** Sarà sempre l'endpoint del server (ad esempio, AV MCU o Mediation Server) se un server è coinvolto nel flusso.
 
- **Second** Sarà sempre l'endpoint client, a meno che non sia Server-Server flusso.
+ **Second** Sarà sempre l'endpoint client, a meno che non sia un Server-Server flusso.
 
 **Esempio di classificazione First e Second**
 
@@ -240,7 +240,7 @@ Se wireless viene gestito internamente, è possibile ricreare i report wireless 
 
 ## <a name="operational-processes"></a>Processi operativi
 
-Esaminare e correggere prima l'Flussi gestito. La qualità in quest'area deve essere al 100% all'interno del controllo e quindi più facile da correggere.
+Esaminare e correggere i problemi Flussi prima di tutto. La qualità in quest'area deve essere al 100% all'interno del controllo e quindi più facile da correggere.
 
 ### <a name="managed-streams"></a>Gestione Flussi
 

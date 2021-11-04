@@ -1,7 +1,7 @@
 ---
 title: Espansione delle impostazioni dell'hop successivo del server perimetrale
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,15 +15,15 @@ ms.localizationpriority: medium
 ms.assetid: 7bb385b7-18c2-42a3-b8a9-cea7bf0c8fc9
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per impostare o modificare il pool hop successivo che verrà utilizzato dai server perimetrali per comunicare con l'infrastruttura interna, selezionare un server Director, un pool di server Director, un Front End Server o un pool front-end server nell'elenco. Nell'elenco vengono visualizzati solo i Director o i Front End Server configurati in Generatore di topologie.
-ms.openlocfilehash: f1c852ad908b9985dfe74016790589fb5e36d1fe
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: cef9c72da22c70814ad5dc3af07eea076339dde1
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58590210"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60771014"
 ---
 # <a name="edge-next-hop-settings-expander"></a>Espansione delle impostazioni per Edge Next Hop
 
-Per impostare o modificare il **pool hop** successivo che verrà utilizzato dai server perimetrali per comunicare con l'infrastruttura interna, selezionare un server Director, un pool di server Director, un Front End Server o un pool Front End Server nell'elenco. Nell'elenco vengono visualizzati solo i Director o i Front End Server configurati in Generatore di topologie.
+Per impostare o modificare il **pool hop** successivo che verrà utilizzato dai server perimetrali per comunicare con l'infrastruttura interna, selezionare un server Director, un pool di server Director, un Front End Server o un pool front-end server nell'elenco. Nell'elenco vengono visualizzati solo i Director o i Front End Server configurati in Generatore di topologie.
 
 Per informazioni dettagliate sulla definizione e sulla configurazione delle impostazioni per i servizi Edge, vedere [Define Your Edge Topology](/previous-versions/office/lync-server-2013/lync-server-2013-define-your-edge-topology).
