@@ -1,7 +1,7 @@
 ---
 title: Installare e testare Skype for Business per Windows Phone
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,17 +11,17 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 54289bbe-97e7-44bf-8611-4e740fc5b998
-description: 'Riepilogo: informazioni su come installare e testare Skype for Business nella Windows Phone.'
-ms.openlocfilehash: 53a06d80deb99c5f05a9f7a21ab5a5fd171e2797
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: 'Riepilogo: informazioni su come installare e testare Skype for Business nel Windows Phone.'
+ms.openlocfilehash: e227acad57552eb9d548c6bd8f694dd52d4dfd99
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58727325"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60764914"
 ---
 # <a name="install-and-test-skype-for-business-for-windows-phone"></a>Installare e testare Skype for Business per Windows Phone
  
-**Riepilogo:** Informazioni su come installare e testare Skype for Business nel Windows Phone.
+**Riepilogo:** Informazioni su come installare e testare Skype for Business nella Windows Phone.
   
 L Skype for Business per Windows Phone app offre Skype for Business presenza, messaggistica istantanea e chiamate vocali e video Windows dispositivi mobili. Gli utenti con Lync 2013 o riceveranno automaticamente l'app aggiornata o verrà richiesto di aggiornarla manualmente, a seconda delle impostazioni utente. I nuovi utenti possono scaricarlo [da Windows Phone Marketplace.](https://go.microsoft.com/fwlink/p/?linkid=231901) L Skype for Business per Windows Phone app è disponibile solo in Windows Phone 8.1 e versioni successive.
   
@@ -29,7 +29,7 @@ Prima di indirizzare gli utenti dell'organizzazione a scaricare l'app, è necess
   
 ## <a name="install-skype-for-business-windows-phone-81"></a>Installare Skype for Business Windows Phone 8.1
 
-1. Passare a [Windows Phone 8 update central](https://www.windowsphone.com/en-us/how-to/wp8/update-central) per aggiornare il telefono Windows Phone 8.1.
+1. Passare a [Windows Phone 8 update central](https://www.windowsphone.com/en-us/how-to/wp8/update-central) per aggiornare il telefono a Windows Phone 8.1.
     
 2. Dal telefono, passare a **Store** e cercare **Skype for Business**.
     
@@ -52,9 +52,9 @@ Prima di indirizzare gli utenti dell'organizzazione a scaricare l'app, è necess
    - **Notifiche push** Ricevere un avviso quando si riceve una nuova messaggistica istantanea o una nuova chiamata. Normalmente **on** (scelta consigliata).
     
      > [!IMPORTANT]
-     > Se dissegni questa impostazione, non ti verranno notificati messaggistica unificata, chiamate o altri avvisi Skype for Business per Windows Phone a meno che l'app non sia attiva. 
+     > Se dissegni questa impostazione, non ti verrà notificato di messaggistica unificata, chiamate o altri avvisi Skype for Business per Windows Phone a meno che l'app non sia attiva. 
   
-   - **Consentire l'accesso alla rubrica** Cercare i contatti nel telefono cellulare quando si ricercano i contatti in Skype for Business per Windows Phone.
+   - **Consentire l'accesso alla rubrica** Cercare i contatti sul cellulare quando si ricercano i contatti in Skype for Business per Windows Phone.
     
 6. Toccare **Avanti** per iniziare a usare Skype for Business per Windows Phone.
     
@@ -98,7 +98,7 @@ Dopo aver configurato il client e aver eseguito correttamente l'accesso, usa i t
     
 3. Apri un'altra applicazione nel dispositivo.
     
-4. In un client diverso, ad esempio il client desktop, accedi a Skype for Business con l'account dell'utente B.
+4. In un altro client, ad esempio il client desktop, accedi a Skype for Business con l'account dell'utente B.
     
 5. Inviare un messaggio istantaneo dall'utente B all'utente A.
     

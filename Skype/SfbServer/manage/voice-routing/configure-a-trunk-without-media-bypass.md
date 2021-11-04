@@ -1,7 +1,7 @@
 ---
 title: Skype for Business Server - Configurare un trunk senza bypass multimediale
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,16 +11,16 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: 'Come configurare un trunk con bypass multimediale abilitato. '
-ms.openlocfilehash: 00a13c046fa3d830f73e933d9764ac9024687a88
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 906e5d793ba9b671d9a3d19b144ceac89b74428b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598810"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60751735"
 ---
 # <a name="skype-for-business-server---configure-a-trunk-without-media-bypass"></a>Skype for Business Server - Configurare un trunk senza bypass multimediale
 
-Per configurare un trunk con il bypass multimediale disabilitato, attenersi alla procedura che segue. Se si desidera configurare un trunk con bypass multimediale abilitato, vedere [Configure a trunk with media bypass in Skype for Business Server](configure-a-trunk-with-media-bypass.md).
+Per configurare un trunk con il bypass multimediale disabilitato, attenersi alla procedura che segue. Se si desidera configurare un trunk con bypass multimediale abilitato, vedere Configurare un [trunk con bypass multimediale in Skype for Business Server](configure-a-trunk-with-media-bypass.md).
 
 Una configurazione trunk, come quella descritta di seguito, raggruppa un set di parametri che vengono applicati ai trunk assegnati a questa configurazione trunk. Per una determinata configurazione trunk è possibile specificare un ambito globale (corrispondente a tutti i trunk che non presentano una configurazione di sito o di pool più specifica) o un ambito di sito o di pool. La configurazione trunk a livello di pool viene usata per definire un singolo trunk come ambito di una determinata configurazione trunk.
 
@@ -72,7 +72,7 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 
 10. Organizzare i record utilizzo PSTN in modo da ottenere prestazioni ottimali. Per modificare la posizione di un record nell'elenco, selezionare il record utilizzo PSTN e fare clic sulle frecce verso l'alto o verso il basso.
     > [!Important] 
-    > L'ordine in cui i record utilizzo PSTN sono elencati nella configurazione trunk è significativo. Skype for Business Server attraversa l'elenco dall'alto verso il basso. 
+    > L'ordine in cui i record utilizzo PSTN sono elencati nella configurazione trunk è significativo. Skype for Business Server l'elenco dall'alto verso il basso. 
 
 11. Per abilitare il bypass multimediale per i client protetti da NAT o firewall, selezionare **Abilita latch RTP** e un SBC che supporti il latch.
 12. **Per abilitare l'invio** delle informazioni sulla cronologia delle chiamate al peer gateway del Mediation Server, è necessario selezionare Abilita cronologia chiamate di inoltro.
@@ -81,8 +81,8 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 15. (Facoltativo) Associare **e configurare le regole di conversione dei numeri di chiamata** per il trunk. Queste regole di conversione si applicano al numero chiamante per le chiamate in uscita.
     - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
     - Per definire una nuova regola di conversione e associarla al trunk, fare clic su **Nuovo**. Per informazioni dettagliate sulla definizione di una nuova regola, vedere [Defining translation rules in Skype for Business Server](defining-translation-rules.md).
-    - Per modificare una regola di conversione già associata al trunk, fare clic sul nome della regola e quindi su **Mostra dettagli**. Per informazioni dettagliate, vedere [Defining translation rules in Skype for Business Server](defining-translation-rules.md).
-    - Per copiare una regola di conversione esistente in modo da usarla come punto di partenza per definire una nuova regola, fare clic sul nome della regola, su **Copia** e quindi su **Incolla**. Per informazioni dettagliate, vedere [Defining translation rules in Skype for Business Server](defining-translation-rules.md).
+    - Per modificare una regola di conversione già associata al trunk, fare clic sul nome della regola e quindi su **Mostra dettagli**. Per informazioni dettagliate, [vedere Defining translation rules in Skype for Business Server](defining-translation-rules.md).
+    - Per copiare una regola di conversione esistente in modo da usarla come punto di partenza per definire una nuova regola, fare clic sul nome della regola, su **Copia** e quindi su **Incolla**. Per informazioni dettagliate, [vedere Defining translation rules in Skype for Business Server](defining-translation-rules.md).
     - Per rimuovere una regola di conversione dal trunk, evidenziare il nome della regola e fare clic su **Rimuovi**.
 
     > [!Warning]
@@ -91,8 +91,8 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 16. (Facoltativo) Associare e configurare le **Regole di conversione per il numero chiamato** per il trunk. Tali regole sono applicabili al numero chiamato in una chiamata in uscita.
     - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. In Seleziona regole di conversione fare clic sulle regole che si desidera associare al trunk e quindi fare clic su **OK.**
     - Per definire una nuova regola di conversione e associarla al trunk, fare clic su **Nuovo**. Per informazioni dettagliate sulla definizione di una nuova regola, vedere [Defining translation rules in Skype for Business Server](defining-translation-rules.md).
-    - Per modificare una regola di conversione già associata al trunk, fare clic sul nome della regola e quindi su **Mostra dettagli**. Per informazioni dettagliate, vedere [Defining translation rules in Skype for Business Server](defining-translation-rules.md).
-    - Per copiare una regola di conversione esistente in modo da usarla come punto di partenza per definire una nuova regola, fare clic sul nome della regola, su **Copia** e quindi su **Incolla**. Per informazioni dettagliate, vedere [Defining translation rules in Skype for Business Server](defining-translation-rules.md).
+    - Per modificare una regola di conversione già associata al trunk, fare clic sul nome della regola e quindi su **Mostra dettagli**. Per informazioni dettagliate, [vedere Defining translation rules in Skype for Business Server](defining-translation-rules.md).
+    - Per copiare una regola di conversione esistente in modo da usarla come punto di partenza per definire una nuova regola, fare clic sul nome della regola, su **Copia** e quindi su **Incolla**. Per informazioni dettagliate, [vedere Defining translation rules in Skype for Business Server](defining-translation-rules.md).
     - Per rimuovere una regola di conversione dal trunk, evidenziare il nome della regola e fare clic su **Rimuovi**.
 
     > [!Caution] 
@@ -101,7 +101,7 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 17. Assicurarsi che le regole di conversione del trunk siano disposte nell'ordine corretto. Per cambiare la posizione di una regola nell'elenco, evidenziare il nome della regola e quindi fare clic sulla freccia verso l'alto o verso il basso.
 
     > [!Important] 
-    > Skype for Business Server l'elenco delle regole di conversione dall'alto verso il basso e utilizza la prima regola che corrisponde al numero composto. Se si configura un trunk in modo che un numero che viene composto possa soddisfare più regole di conversione, verificare che le regole più restrittive siano elencate al di sopra di quelle meno restrittive. Se ad esempio sono state incluse una regola di conversione per qualsiasi numero di 11 cifre e una regola di conversione solo per i numeri di 11 cifre che iniziano con +1425, verificare che la regola per i numeri di 11 cifre sia elencata al di sotto della regola più restrittiva. 
+    > Skype for Business Server l'elenco delle regole di conversione dall'alto verso il basso e utilizza la prima regola corrispondente al numero composto. Se si configura un trunk in modo che un numero che viene composto possa soddisfare più regole di conversione, verificare che le regole più restrittive siano elencate al di sopra di quelle meno restrittive. Se ad esempio sono state incluse una regola di conversione per qualsiasi numero di 11 cifre e una regola di conversione solo per i numeri di 11 cifre che iniziano con +1425, verificare che la regola per i numeri di 11 cifre sia elencata al di sotto della regola più restrittiva. 
 
 18. Dopo aver terminato la configurazione del trunk, fare clic su **OK**.
 19. Nella pagina **Configurazione trunk** fare clic su **Commit** e quindi su **Salva tutto**. 

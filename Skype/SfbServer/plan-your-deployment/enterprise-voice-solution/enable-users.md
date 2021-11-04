@@ -1,7 +1,7 @@
 ---
 title: Abilitare gli utenti per E9-1-1 in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 3cc64f5b-492e-4c47-9713-3c376f2aad02
 description: Decisioni necessarie per i criteri percorso per una distribuzione di E9-1-1 in Skype for Business Server VoIP aziendale, inclusi gli utenti da abilitare e come supportare gli utenti mobili.
-ms.openlocfilehash: 6a28a27942c93f20aa9b96fcf3b94e554602527c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 61f545018def3268c92729bb52edbbf6e2a5ed29
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598750"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60765284"
 ---
 # <a name="enable-users-for-e9-1-1-in-skype-for-business-server"></a>Abilitare gli utenti per E9-1-1 in Skype for Business Server
  
@@ -33,7 +33,7 @@ Skype for Business Server può assegnare un criterio percorso ai client in base 
   
  **Valutare se si prevede di abilitare tutti gli utenti o di limitare il supporto a specifiche aree geografiche dell'organizzazione**
   
-> È possibile assegnare una posizione a tutti gli utenti dell'organizzazione utilizzando un criterio percorso globale. Tuttavia, assegnando un criterio percorso a un sito di rete di Skype for Business Server e quindi aggiungendo subnet al sito, è possibile limitare il supporto E9-1-1 a posizioni selezionate all'interno dell'organizzazione e specificare il comportamento di routing E9-1-1 in base al sito. 
+> È possibile assegnare una posizione a tutti gli utenti dell'organizzazione utilizzando un criterio percorso globale. Tuttavia, assegnando un criterio percorso a un sito di rete Skype for Business Server e quindi aggiungendo subnet al sito, è possibile limitare il supporto E9-1-1 a posizioni selezionate all'interno dell'organizzazione e specificare il comportamento di routing E9-1-1 in base al sito. 
     
  **Valutare se si prevede di abilitare singoli utenti mediante un criterio utente**
   
@@ -41,6 +41,6 @@ Skype for Business Server può assegnare un criterio percorso ai client in base 
     
  **Valutare se abilitare per E9-1-1 i client che effettuano il roaming all'esterno della rete o si connettono da una subnet non definita**
   
-> Se agli utenti viene assegnato un criterio percorso globale, sito o per utente, può essere necessario immettere manualmente una posizione nel client se il client non si trova all'interno di una subnet definita o se il servizio informazioni percorso non ha trovato alcuna posizione. Per informazioni dettagliate, [vedere Define the user experience for manually acquiring a location in Skype for Business Server.](manually-acquiring-a-location.md)
+> Se agli utenti viene assegnato un criterio percorso globale, sito o per utente, può essere necessario immettere manualmente una posizione nel client se il client non si trova all'interno di una subnet definita o se il servizio informazioni percorso non ha trovato alcuna posizione. Per informazioni dettagliate, [vedere Define the user experience for manually acquiring a location in Skype for Business Server](manually-acquiring-a-location.md).
     
 

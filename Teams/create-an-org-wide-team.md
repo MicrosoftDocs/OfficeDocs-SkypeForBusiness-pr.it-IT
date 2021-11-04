@@ -1,7 +1,7 @@
 ---
 title: Creare un team a livello di organizzazione in Microsoft Teams
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 ms.reviewer: phlouie
 manager: serdars
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 058aa530508c03587eae3ff6a55e218bc109bbd2
-ms.sourcegitcommit: 1957a06d4bae3d42b4e3b6d4bd8ff2752a19d377
+ms.openlocfilehash: b266bf4cfef25761ce492cb93090ff3df380994d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60641176"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60745612"
 ---
 # <a name="create-an-organization-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
@@ -36,7 +36,7 @@ Solo gli amministratori globali possono creare team a livello di organizzazione.
 
 ![Screenshot dell'opzione a livello di organizzazione per creare un team a livello di organizzazione.](media/create-org-wide-team.png "Schermata dell'opzione a livello di organizzazione per creare un team a livello di organizzazione")
 
-Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali e gli amministratori dei servizi Teams vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a Teams, all'utente viene assegnata una Microsoft Teams Exploratory. Per altre informazioni sulla licenza Esplorativa, vedere Gestire la licenza esplorativa [Microsoft Teams esplorativo.](teams-exploratory.md) 
+Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali e gli amministratori dei servizi Teams vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a Teams, all'utente viene assegnata una Microsoft Teams Exploratory. Per altre informazioni sulla licenza Esplorativa, vedere Gestire [la licenza esplorativa Microsoft Teams esplorativo.](teams-exploratory.md) 
 
 I tipi di account seguenti non verranno aggiunti al team a livello di organizzazione:
 

@@ -1,7 +1,7 @@
 ---
-title: Teams comportamento delle app per gli utenti non standard
+title: Teams delle app per gli utenti non standard
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 ms.reviewer: joglocke
 manager: serdars
 ms.topic: article
@@ -17,14 +17,14 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 882fda0be339c8f9869c5b83fbeff3e97d5892ee
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4ad7f7c5f92a5bbde4e8a01d8616305bbf06f980
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58619402"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60745542"
 ---
-# <a name="microsoft-teams-apps-behavior-for-non-standard-users"></a>Microsoft Teams delle app per gli utenti non standard
+# <a name="microsoft-teams-apps-behavior-for-non-standard-users"></a>Microsoft Teams comportamento delle app per gli utenti non standard
 
 Questo articolo descrive il comportamento delle app in Teams quando gli utenti guest, esterni (federati) e anonimi sono presenti in un Teams locale.
 
@@ -33,7 +33,7 @@ Questo articolo descrive il comportamento delle app in Teams quando gli utenti g
 - Un **utente esterno (federato)** appartiene a un altro dominio e non ha accesso ai team o alle risorse del team dell'organizzazione.
 
   > [!Note]
-  > Per un confronto più dettagliato tra utenti guest e utenti esterni, vedere Comunicare con [utenti di altre organizzazioni.](./communicate-with-users-from-other-organizations.md)
+  > Per un confronto più dettagliato tra utenti guest e utenti esterni, vedere Comunicare [con utenti di altre organizzazioni.](./communicate-with-users-from-other-organizations.md)
 
 - Un **utente anonimo** è un concetto in Teams riunioni in cui l'utente ha partecipato alla riunione tramite un collegamento. L'utente non ha eseguito l'accesso con l'account Microsoft o dell'organizzazione.
 

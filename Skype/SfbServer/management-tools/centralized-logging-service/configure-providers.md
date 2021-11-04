@@ -1,7 +1,7 @@
 ---
 title: Configurare i provider per il servizio di registrazione centralizzata in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/1/2018
@@ -14,20 +14,20 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 6a197ecf-b56b-45e0-8e7c-f532ec5164ff
 description: 'Riepilogo: informazioni su come configurare i provider di scenari per il servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: ef1c728615d34e074ea041e261b4fc5b220e1fdd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: a0c15061f209da9389018412322ea705f93b614f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58616542"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60751665"
 ---
 # <a name="configure-providers-for-centralized-logging-service-in-skype-for-business-server-2015"></a>Configurare i provider per il servizio di registrazione centralizzata in Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come configurare i provider di scenari per il servizio di registrazione centralizzata in Skype for Business Server 2015.
   
-I concetti e la configurazione dei provider nel servizio di registrazione centralizzata sono tra i più importanti da comprendere. I provider vengono mappati direttamente Skype for Business Server componenti del ruolo del server nel modello Skype for Business Server di traccia. Il provider definisce i componenti di un Skype for Business Server 2015 che verrà tracciato, il tipo di messaggi (ad esempio, irreversibile, errore o avviso) da raccogliere e i flag (ad esempio, TF_Connection o TF_Diag). I provider sono i componenti tracciabili in ogni Skype for Business Server del server. Tramite i provider vengono definiti il livello e il tipo di traccia per i componenti (ad esempio, S4, SIPStack, messaggistica istantanea e presenza). Il provider definito viene utilizzato in uno scenario per raggruppare tutti i provider per una determinata raccolta logica riferita a una condizione problematica specifica.
+I concetti e la configurazione dei provider nel servizio di registrazione centralizzata sono uno dei più importanti da comprendere. I provider vengono mappati direttamente Skype for Business Server componenti del ruolo del server nel modello Skype for Business Server di traccia. Il provider definisce i componenti di un Skype for Business Server 2015 che verrà tracciato, il tipo di messaggi (ad esempio, irreversibile, errore o avviso) da raccogliere e i flag (ad esempio, TF_Connection o TF_Diag). I provider sono i componenti tracciabili in ogni Skype for Business Server del server. Tramite i provider vengono definiti il livello e il tipo di traccia per i componenti (ad esempio, S4, SIPStack, messaggistica istantanea e presenza). Il provider definito viene utilizzato in uno scenario per raggruppare tutti i provider per una determinata raccolta logica riferita a una condizione problematica specifica.
   
-Per eseguire le funzioni del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza RBAC (Role-Based Access Control) CsAdministrator o CsServerAdministrator oppure di un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC (Role-Based Access Control) a cui è stato assegnato questo cmdlet , inclusi gli eventuali ruoli RBAC personalizzati creati dall'utente, eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
+Per eseguire le funzioni del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator basato sui ruoli (RBAC) oppure di un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC (Role-Based Access Control) a cui è stato assegnato questo cmdlet , inclusi gli eventuali ruoli RBAC personalizzati creati dall'utente, eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
   
 ```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Skype for Business Server 2015 cmdlet"}
@@ -44,7 +44,7 @@ Nella parte restante di questo argomento viene illustrato come definire provider
 > [!IMPORTANT]
 > Come già accennato, i provider sono uno strumento dalle grandi potenzialità. Gli scenari, tuttavia, sono ancora più efficaci perché incorporano tutte le informazioni necessarie per impostare ed eseguire la traccia sui componenti rappresentati dai provider. Dato che gli scenari sono in effetti una raccolta di provider, possono essere paragonati all'esecuzione di un file batch contenente centinaia di comandi per raccogliere grandi quantità di informazioni anziché eseguire centinaia di comandi, uno alla volta, dalla riga di comando. 
   
-Invece di richiedere un'approfondita ricerca nei dettagli dei provider, il servizio di registrazione centralizzata offre una serie di scenari già definiti. Gli scenari forniti riguardano la maggior parte dei possibili problemi che si verificano. In rari casi, potrebbe essere necessario creare e definire provider e assegnarli agli scenari. È consigliabile acquisire familiarità con ognuno degli scenari forniti prima di analizzare la necessità di creare nuovi provider e scenari. Anche se le informazioni sulla creazione di provider sono disponibili qui per acquisire familiarità con il modo in cui gli scenari usano gli elementi del provider per raccogliere informazioni di traccia, al momento non vengono forniti dettagli sui provider stessi. 
+Invece di richiedere un'approfondita ricerca nei dettagli dei provider, il servizio di registrazione centralizzata offre una serie di scenari già definiti. Gli scenari forniti riguardano la maggior parte dei possibili problemi che si verificano. In rari casi, potrebbe essere necessario creare e definire provider e assegnarli agli scenari. È consigliabile acquisire familiarità con ognuno degli scenari forniti prima di analizzare la necessità di creare nuovi provider e scenari. Sebbene le informazioni sulla creazione di provider siano disponibili qui per acquisire familiarità con il modo in cui gli scenari usano gli elementi del provider per raccogliere informazioni di traccia, al momento non vengono forniti dettagli sui provider stessi. 
   
 Introdotto in [Centralized Logging Service in Skype for Business 2015,](centralized-logging-service.md)gli elementi chiave della definizione di un provider da utilizzare in uno scenario sono:
   
@@ -74,7 +74,7 @@ Introdotto in [Centralized Logging Service in Skype for Business 2015,](centrali
     
   - **TF_Diag** Fornisce eventi di diagnostica che è possibile utilizzare per diagnosticare o risolvere i problemi del componente. Per SipStack, ad esempio, si tratta di errori dei certificati oppure di avvisi/errori DNS.
     
-  - **TF_Protocol** Fornisce messaggi di protocollo quali i messaggi SIP e Community Codec Pack.
+  - **TF_Protocol** Fornisce messaggi di protocollo come i messaggi SIP e Community Codec Pack.
     
   - **TF_Component** Abilita la registrazione dei componenti specificati come parte dei provider.
     
@@ -82,7 +82,7 @@ Introdotto in [Centralized Logging Service in Skype for Business 2015,](centrali
     
 ### <a name="to-review-information-about-existing-centralized-logging-service-scenario-providers"></a>Per esaminare le informazioni sui provider di scenari esistenti del servizio di registrazione centralizzata
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 2. Per esaminare la configurazione dei provider esistenti, digitare il comando seguente:
     
@@ -96,7 +96,7 @@ Introdotto in [Centralized Logging Service in Skype for Business 2015,](centrali
    Get-CsClsScenario -Identity "global/CAA"
    ```
 
-    Il comando visualizza un elenco dei provider con i flag, le impostazioni e i componenti associati. Se le informazioni visualizzate non sono sufficienti o se l'elenco è troppo lungo per il formato di elenco Windows PowerShell predefinito, è possibile visualizzare ulteriori informazioni definendo un metodo di output diverso. A tale scopo, digitare:
+    Il comando visualizza un elenco dei provider con i flag, le impostazioni e i componenti associati. Se le informazioni visualizzate non sono sufficienti o se l'elenco è troppo lungo per il formato di Windows PowerShell predefinito, è possibile visualizzare ulteriori informazioni definendo un metodo di output diverso. A tale scopo, digitare:
     
    ```PowerShell
    Get-CsClsScenario -Identity "global/CAA" | Select-Object -ExpandProperty Provider
@@ -106,7 +106,7 @@ Introdotto in [Centralized Logging Service in Skype for Business 2015,](centrali
     
 ### <a name="to-define-a-new-centralized-logging-service-scenario-provider"></a>Per definire un nuovo provider di scenari del servizio di registrazione centralizzata
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 2. Un provider di scenari è costituito dal componente da tracciare, i flag da utilizzare e il livello di dettaglio per la raccolta dei dati. Per definire questi elementi, digitare:
     
@@ -120,7 +120,7 @@ Introdotto in [Centralized Logging Service in Skype for Business 2015,](centrali
    $LyssProvider = New-CsClsProvider -Name "Lyss" -Type "WPP" -Level "Info" -Flags "All"
    ```
 
--Level raccoglie messaggi irreversibili, di errore, di avviso e di informazioni. I flag utilizzati sono tutti definiti per il provider Lyss e includono TF_Connection, TF_Diag e TF_Protocol.Dopo aver definito la variabile $LyssProvider, è possibile utilizzarla con il cmdlet **New-CsClsScenario** per raccogliere le tracce dal provider Lyss. Per completare la creazione e l'assegnazione del provider a un nuovo scenario, digitare:
+-Level raccoglie messaggi irreversibili, di errore, di avviso e di informazioni. I flag utilizzati sono tutti quelli definiti per il provider Lyss e includono TF_Connection, TF_Diag e TF_Protocol.Dopo aver definito la variabile $LyssProvider, è possibile utilizzarla con il cmdlet **New-CsClsScenario** per raccogliere le tracce dal provider Lyss. Per completare la creazione e l'assegnazione del provider a un nuovo scenario, digitare:
 
 ```PowerShell
 New-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider $LyssProvider
@@ -129,7 +129,7 @@ New-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider $LyssProvid
 Dove $LyssProvider è la variabile che contiene lo scenario definito creato con **New-CsClsProvider**.
 ### <a name="to-change-an-existing-centralized-logging-service-scenario-provider"></a>Per modificare un provider di scenari del servizio di registrazione centralizzata esistente
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 2. Per aggiornare o modificare la configurazione di un provider esistente, digitare:
     
@@ -156,7 +156,7 @@ Set-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider @{Add=$ABSP
 In cui ogni provider definito con la direttiva Add è già stato definito tramite il processo **New-CsClsProvider**.
 ### <a name="to-remove-a-scenario-provider"></a>Per rimuovere un provider di scenari
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 2. I cmdlet indicati consentono di aggiornare i provider esistenti e di crearne di nuovi. Per rimuovere un provider, è necessario utilizzare la direttiva Replace per il parametro Provider in **Set-CsClsScenario**. L'unico modo per rimuovere completamente un provider consiste nel sostituirlo con un provider ridefinito con lo stesso nome e poi utilizzare la direttiva Update. Il provider LyssProvider utilizzato negli esempi precedenti, ad esempio, è definito con il tipo di log WPP, il livello di registrazione Debug e i flag TF_CONNECTION e TF_DIAG. È necessario modificare i flag in "All". per modificare il provider digitare il comando seguente:
     

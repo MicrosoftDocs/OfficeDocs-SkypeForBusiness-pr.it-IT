@@ -1,7 +1,7 @@
 ---
 title: Aggiungere il server di archiviazione
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 6a7106eb-8fd3-492a-a45c-f099496b11a2
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per distribuire un server di archiviazione nella progettazione della topologia, è necessario specificare il nome di dominio completo (FQDN) del server in cui si desidera distribuire l'archiviazione. Prima di pubblicare una topologia che include l'archiviazione e l'Skype for Business Server, è necessario aver completato tutti i prerequisiti per la distribuzione dell'archiviazione.
-ms.openlocfilehash: 17fd5e5e0202b532e27c2fb89c58e2e0784c9945
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b5c66ee6fb9a243a876b666bc58ac7ee419fb9df
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58588808"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60750825"
 ---
 # <a name="add-archiving-server"></a>Aggiungere server di archiviazione
  

@@ -1,7 +1,7 @@
 ---
 title: Creare o modificare una raccolta di impostazioni di configurazione di registrazione dei dati in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c830be5a-2a82-468d-9c46-d3fec0f79fd0
 description: 'Riepilogo: informazioni sulla registrazione dettagli chiamata in Skype for Business Server.'
-ms.openlocfilehash: 1f508df7d139d81d3c91dc1cf9355b61fd028dbc
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 9e77cc7782116f317504cbbee98d0731d69ed5e8
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60015150"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60751745"
 ---
 # <a name="create-or-modify-a-collection-of-cdr-configuration-settings-in-skype-for-business-server"></a>Creare o modificare una raccolta di impostazioni di configurazione di registrazione dei dati in Skype for Business Server
  
@@ -42,7 +42,7 @@ Quando si installa Skype for Business Server viene creata automaticamente una si
   
 ### <a name="to-create-cdr-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per creare le impostazioni di configurazione della registrazione dei dati tramite Skype for Business Server pannello di controllo
 
-1. In Skype for Business Server pannello di controllo fare clic **su Monitoraggio e archiviazione.**
+1. Nel Skype for Business Server di controllo fare clic **su Monitoraggio e archiviazione.**
     
 2. Nella scheda **Registrazione dettagli chiamata** fare clic su **Nuovo.**
     
@@ -50,9 +50,9 @@ Quando si installa Skype for Business Server viene creata automaticamente una si
     
 4. Nella finestra di dialogo **Nuova impostazione di registrazione dettagli chiamata** selezionare le opzioni desiderate e quindi fare clic su **Commit**.
     
-### <a name="to-modify-existing-cdr-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per modificare le impostazioni di configurazione di registrazione dei dati esistenti tramite il Skype for Business Server Di controllo
+### <a name="to-modify-existing-cdr-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per modificare le impostazioni di configurazione di registrazione dei dati esistenti tramite il Skype for Business Server di controllo
 
-1. In Skype for Business Server pannello di controllo fare clic **su Monitoraggio e archiviazione.**
+1. Nel Skype for Business Server di controllo fare clic **su Monitoraggio e archiviazione.**
     
 2. Fare doppio clic sulla raccolta di impostazioni da modificare oppure selezionare la raccolta, fare clic su **Modifica** e quindi su **Mostra dettagli.** Si noti che è possibile modificare una sola raccolta alla volta. Per apportare le stesse modifiche a più raccolte, utilizzare Skype for Business Server Management Shell.
     

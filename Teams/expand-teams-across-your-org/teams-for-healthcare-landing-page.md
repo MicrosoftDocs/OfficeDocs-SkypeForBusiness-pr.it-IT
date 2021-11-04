@@ -2,7 +2,7 @@
 title: Teams per il settore sanitario
 description: Informazioni sulle risorse di amministrazione disponibili per la gestione dei Teams per i team sanitari dell'organizzazione.
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.topic: article
 audience: admin
@@ -17,16 +17,16 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce4bf4f19aa9bee13aa41a1a7090172e41cb5851
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: cf556f8041f4b94d49813f24702ceff7ecde4afb
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58730115"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60764994"
 ---
 # <a name="teams-for-healthcare"></a>Teams per il settore sanitario
 
-Teams fornisce ai team sanitari e ai professionisti del settore sanitario un modo sicuro per comunicare, coordinare l'assistenza ai pazienti e migliorare l'efficienza operativa. Qui troverai le risorse di amministrazione necessarie per gestire i Teams per i team sanitari dell'organizzazione.
+Teams fornisce ai team sanitari e ai professionisti sanitari un modo sicuro per comunicare, coordinare l'assistenza ai pazienti e migliorare l'efficienza operativa. Qui troverai le risorse di amministrazione necessarie per gestire i Teams per i team sanitari dell'organizzazione.
 
 |    &nbsp;           |         &nbsp;      |
 | ------------- | ------------- |

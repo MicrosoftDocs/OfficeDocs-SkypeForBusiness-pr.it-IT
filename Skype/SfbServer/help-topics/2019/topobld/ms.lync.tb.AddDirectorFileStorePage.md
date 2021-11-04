@@ -1,7 +1,7 @@
 ---
 title: Aggiungere l'archivio file per il Director
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: a15b69e0-d3d1-4648-af25-1c0f25e5da8e
 ROBOTS: NOINDEX, NOFOLLOW
 description: È necessario specificare una condivisione file da usare come archivio file per i Director. È possibile usare una condivisione file esistente per l'archivio file oppure specificarne una nuova indicando il nome di dominio completo (FQDN) del file server in cui deve trovarsi la condivisione file e un nome di cartella per la nuova condivisione file.
-ms.openlocfilehash: e2ca8cca0298d15dbb6056d1ff0e7d6e6679ef42
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 9d2531ee588ecfbae39b3dce402deaebf84d1d04
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58629918"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60750775"
 ---
 # <a name="add-director-file-store"></a>Aggiungere l'archivio file per il Director
 

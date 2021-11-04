@@ -1,7 +1,7 @@
 ---
 title: Visualizzare le impostazioni di configurazione delle riunioni in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,25 +12,25 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 932c7e2d-6de3-4176-ac6e-ec230f8230f2
 description: 'Riepilogo: informazioni su come visualizzare le impostazioni di configurazione delle riunioni in Skype for Business Server.'
-ms.openlocfilehash: 79a05b35d5bdac952d009445b92c9f1b30883027
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: db374c3db105b0ffcefe9d846c9c4c17904b14ee
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58578820"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766544"
 ---
 # <a name="view-meeting-configuration-settings-in-skype-for-business-server"></a>Visualizzare le impostazioni di configurazione delle riunioni in Skype for Business Server
  
 **Riepilogo:** Informazioni su come visualizzare le impostazioni di configurazione delle riunioni in Skype for Business Server.
   
-È possibile visualizzare le impostazioni di configurazione delle riunioni Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell.
+È possibile visualizzare le impostazioni di configurazione delle riunioni Skype for Business Server Pannello di controllo o tramite Skype for Business Server Management Shell.
   
 ## <a name="view-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Visualizzare le impostazioni di configurazione delle riunioni Skype for Business Server Pannello di controllo
 <a name="BKMK_ViewJoinSettings"> </a>
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2.  Apri Skype for Business Server Pannello di controllo.
+2.  Aprire Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Configurazione riunione.**
     

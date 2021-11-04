@@ -1,6 +1,6 @@
 ---
 title: Assegnare criteri a grandi set di utenti dell'istituto di istruzione
-author: cichur
+author: serdars
 ms.author: serdars
 manager: serdars
 ms.reviewer: karsmith, angch, cebulnes
@@ -17,19 +17,19 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come assegnare criteri a grandi set di utenti dell'istituto di istruzione in base all'appartenenza ai gruppi o direttamente tramite un'attività batch per scopi scolastici remoti (telescolastica, telescolastica).
 f1keywords: ''
-ms.openlocfilehash: 839a66cbaad393f21053ee385017f6a870c60d83
-ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
+ms.openlocfilehash: 3cd0bfd791d2416de31d998c693002cce87f6fcd
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "60605182"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60745702"
 ---
 # <a name="assign-policies-to-large-sets-of-users-in-your-school"></a>Assegnare criteri a grandi set di utenti dell'istituto di istruzione
 
 [!INCLUDE [policy-wizard-edu](includes/policy-wizard-edu.md)]
 
 > [!NOTE]
-> Per informazioni più esaustivo sull'assegnazione di criteri in Microsoft Teams, vedere Assegnare criteri agli utenti [in Teams](policy-assignment-overview.md).
+> Per informazioni più esaustivo sull'assegnazione di criteri in Microsoft Teams, vedere [Assegnare criteri](policy-assignment-overview.md)agli utenti in Teams .
 
 ## <a name="overview"></a>Panoramica
 
@@ -49,9 +49,9 @@ Tenere presente che in Teams gli utenti ottengono automaticamente i criteri glob
 
 Tenere presente che i criteri globali verranno applicati a tutti gli utenti dell'istituto di istruzione finché non si crea un criterio personalizzato e lo si assegna al personale e ai docenti.
 
-In questa esercitazione gli studenti riceveranno i criteri riunione globali e verrà assegnato un criterio di riunione personalizzato denominato EducatorMeetingPolicy a personale e docenti. Si presuppone che siano stati modificati i criteri globali [](policy-packages-edu.md) per personalizzare le impostazioni delle riunioni per gli studenti e che siano stati creati criteri personalizzati che definiscono l'esperienza di riunione per personale e docenti.
+In questa esercitazione gli studenti riceveranno i criteri riunione globali e verrà assegnato un criterio di riunione personalizzato denominato EducatorMeetingPolicy a personale e docenti. Si presuppone che siano stati modificati i criteri globali [](policy-packages-edu.md) per personalizzare le impostazioni delle riunioni per gli studenti e che siano stati creati criteri personalizzati che definiscono l'esperienza della riunione per personale e docenti.
 
-![Screenshot della pagina Criteri riunione nell'Teams di amministrazione.](media/batch-group-policy-assignment-edu-meeting-policies.png)
+![Screenshot della pagina Criteri riunione nell'interfaccia Teams di amministrazione.](media/batch-group-policy-assignment-edu-meeting-policies.png)
 
 ## <a name="assign-a-policy-to-a-group"></a>Assegnare un criterio a un gruppo
 
@@ -83,7 +83,7 @@ Se non si riesce a distribuire SDS all'interno dell'ambiente, usare questo scrip
 #### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 > [!NOTE]
-> Attualmente, l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft Teams è disponibile solo per i criteri di chiamata Teams, i criteri di parcheggio di chiamata Teams, i criteri di Teams, gli eventi live Teams, i criteri delle riunioni Teams e i criteri di messaggistica Teams. Per altri tipi di criteri, usare PowerShell.
+> Attualmente, l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft Teams è disponibile solo per i criteri di chiamata Teams, per i criteri di parcheggio di chiamata Teams, per i criteri di Teams, per gli eventi live Teams, per i criteri per le riunioni Teams e per i criteri di messaggistica Teams. Per altri tipi di criteri, usare PowerShell.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Riunioni** > **Criteri riunione**.
 2. Selezionare la scheda **Assegnazione criteri di** gruppo.
@@ -97,7 +97,7 @@ Se non si riesce a distribuire SDS all'interno dell'ambiente, usare questo scrip
 
 Per rimuovere un'assegnazione di  Criteri di gruppo, nella scheda Assegnazione criteri di gruppo della pagina dei criteri selezionare l'assegnazione di gruppo e quindi **scegliere Rimuovi**.
 
-Per modificare la classificazione di un'assegnazione di gruppo, è necessario prima rimuovere l'assegnazione di Criteri di gruppo. Seguire quindi i passaggi precedenti per assegnare il criterio a un gruppo.
+Per modificare la classificazione di un'assegnazione di gruppo, è necessario prima di tutto rimuovere l'assegnazione di Criteri di gruppo. Seguire quindi i passaggi precedenti per assegnare il criterio a un gruppo.
 
 #### <a name="using-powershell"></a>Utilizzo di PowerShell
 
@@ -195,7 +195,7 @@ Seguire questa procedura per assegnare un criterio di riunione personalizzato de
 
 #### <a name="connect-to-the-azure-ad-powershell-for-graph-module-and-the-teams-powershell-module"></a>Connessione al modulo Azure AD PowerShell per Graph e al modulo Teams PowerShell
 
-Prima di eseguire la procedura descritta in questo articolo, è necessario installare e connettersi al modulo di PowerShell di Azure AD per Graph (per identificare gli utenti in base alle licenze assegnate) e al modulo di PowerShell di Microsoft Teams (per assegnare i criteri a tali utenti).
+Prima di eseguire i passaggi descritti in questo articolo, è necessario installare e connettersi al modulo di PowerShell di Azure AD per Graph (per identificare gli utenti in base alle licenze assegnate) e al modulo di PowerShell di Microsoft Teams (per assegnare i criteri a tali utenti).
 
 ##### <a name="install-and-connect-to-the-azure-ad-powershell-for-graph-module"></a>Installare e connettersi al modulo Azure AD PowerShell per Graph
 
@@ -213,7 +213,7 @@ Connect-AzureAD
 
 Quando richiesto, accedere con le credenziali di amministratore.
 
-Per altre informazioni, vedere [Connessione con il Azure Active Directory PowerShell per Graph modulo](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Per altre informazioni, vedere Connessione con il modulo Azure Active Directory [PowerShell per Graph modulo](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 ##### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo Microsoft Teams PowerShell
 
@@ -270,7 +270,7 @@ New-CsBatchPolicyAssignmentOperation -PolicyType TeamsMeetingPolicy -PolicyName 
 ```
 
 > [!NOTE]
-> Per assegnare un tipo di criterio diverso in blocco, ad esempio TeamsMessagingPolicy, è necessario passare al criterio che si sta assegnando e al ```PolicyType``` ```PolicyName``` nome del criterio.
+> Per assegnare un tipo di criterio diverso in blocco, ad esempio TeamsMessagingPolicy, è necessario passare al criterio che si sta assegnando e ```PolicyType``` ```PolicyName``` al nome del criterio.
 
 #### <a name="get-the-status-of-a-bulk-assignment"></a>Ottenere lo stato di un'assegnazione in blocco
 

@@ -1,7 +1,7 @@
 ---
 title: Gestire il server Chat persistente in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/28/2016
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c58ee4f4-563b-4d0c-be91-c62df886caa9
 description: 'Riepilogo: informazioni su come gestire il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: cf3db48a15c0b8897277d172d114112bcb6df79b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 821442de529c50d8ac8db3ab5272dcc48d06c8e5
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58622208"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766474"
 ---
 # <a name="manage-persistent-chat-server-in-skype-for-business-server-2015"></a>Gestire il server Chat persistente in Skype for Business Server 2015
  
@@ -35,11 +35,11 @@ Per usare il Pannello di controllo:
   
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL amministratore.
+2. Dal menu **Start** seleziona il pannello Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
     
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat.**
     
-Nella tabella seguente sono riepilogati Windows PowerShell cmdlet disponibili per la gestione del server Chat persistente. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, [vedere Skype for Business Server 2015 Management Shell.](../management-shell.md)
+Nella tabella seguente sono riepilogati Windows PowerShell cmdlet disponibili per facilitare la gestione del server Chat persistente. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, [vedere Skype for Business Server 2015 Management Shell](../management-shell.md).
   
 
 |**Cmdlet**|**Descrizione**|

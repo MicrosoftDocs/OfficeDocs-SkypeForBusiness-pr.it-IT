@@ -1,7 +1,7 @@
 ---
 title: Skype for Business Server Strumento di pianificazione del ripristino di emergenza
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 4/8/2016
@@ -16,12 +16,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 88ad1820-d4ef-4eb6-831b-a8574c085bd0
 description: Skype for Business Server 2015 include misure di ripristino di emergenza consentendo di associare pool Front End situati in due data center.
-ms.openlocfilehash: 97baf11efb001b6ff02dc9beb083590205536449
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f331b82015804de7a5d12ab273350e651e6a0ed8
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58628798"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60746112"
 ---
 # <a name="skype-for-business-server-disaster-recovery-planning-tool"></a>Skype for Business Server Strumento di pianificazione del ripristino di emergenza
  

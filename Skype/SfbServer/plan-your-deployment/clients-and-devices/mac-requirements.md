@@ -1,6 +1,6 @@
 ---
 title: Skype for Business dei client Mac
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 790d3e89-2b68-411b-b282-38de5d34dd10
 description: Leggere questo argomento per informazioni sui requisiti hardware, software e infrastruttura per l'Skype for Business in un Mac.
-ms.openlocfilehash: e25995173b44cf4f5892c1a34f77529042125c58
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 3a4d80bea5bd56f94b5239a537d059c4409d8f33
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60014470"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60745912"
 ---
 # <a name="skype-for-business-on-mac-client-requirements"></a>Skype for Business dei client Mac
  
@@ -31,7 +31,7 @@ Il [Skype for Business sul client Mac](https://products.office.com/skype-for-bus
   
 ## <a name="hardware-and-software-requirements-for-skype-for-business-on-mac"></a>Requisiti hardware e software per Skype for Business mac
 
-Il Skype for Business sul client Mac richiede Mac OS X El Capitan e versioni successive e utilizza almeno 100 MB di spazio su disco. Supportiamo l'uso di tutti i dispositivi audio e video incorporati. I dispositivi esterni devono essere elencati [Microsoft Teams dispositivi](https://www.microsoft.com/microsoft-teams/across-devices/devices). 
+Il Skype for Business sul client Mac richiede Mac OS X El Capitan e versioni successive e utilizza almeno 100 MB di spazio su disco. Supportiamo l'uso di tutti i dispositivi audio e video incorporati. I dispositivi esterni devono essere elencati [Microsoft Teams dispositivi .](https://www.microsoft.com/microsoft-teams/across-devices/devices) 
   
 > [!NOTE]
 > Questo elenco è preliminare e alcuni dispositivi possono essere qualificati per Lync, ma non sono supportati Skype for Business sul Mac. Fare riferimento ai [requisiti di sistema](https://products.office.com/office-system-requirements) per l'hardware minimo necessario.
@@ -58,7 +58,7 @@ Il client ha gli stessi requisiti dei client per dispositivi mobili in quanto è
 Il Skype for Business sul client Mac supporta l'autenticazione basata su certificato, l'autenticazione moderna Microsoft e l'autenticazione a più fattori quando viene distribuita e abilitata.
   
 > [!NOTE]
-> A causa di una limitazione corrente, le credenziali dell'Exchange dell'utente devono essere uguali a Skype for Business credenziali. 
+> A causa di una limitazione corrente, le credenziali Exchange dell'utente devono essere uguali a Skype for Business credenziali. 
   
 ### <a name="certificates"></a>Certificati
 
@@ -68,7 +68,7 @@ L'elenco di revoche di certificati HTTP deve essere definito e accessibile dal c
   
 ### <a name="dns"></a>DNS
 
-I dispositivi mobili devono essere distribuiti correttamente per Skype for Business sul client Mac per funzionare correttamente. Uno scenario di errore comune consiste nel fatto che entrambe le voci DNS seguenti possono essere risolvibili nella rete interna:
+I dispositivi mobili devono essere distribuiti correttamente Skype for Business sul client Mac per funzionare correttamente. Uno scenario di errore comune consiste nel fatto che entrambe le voci DNS seguenti possono essere risolvibili nella rete interna:
   
 - lyncdiscoverinternal.\<sipdomain\>
     

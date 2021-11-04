@@ -1,7 +1,7 @@
 ---
 title: Aggiungere l'indirizzo IP di NAT del server perimetrale (2010)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: aacc1166-0f3b-4593-9747-85bb42ee4599
 description: Se l'indirizzo IP pubblico di questo pool di server perimetrali viene convertito con Network Address Translation (NAT), è necessario specificare l'indirizzo IP pubblico da convertire, che deve essere l'indirizzo IP esterno del servizio A/V Edge.
-ms.openlocfilehash: 10fef7be044a0dca70e8692dd0e0000c3c4cc703
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c50428c8871f0bdae8b3f88bd43ebaefc20ef232
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58628748"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60776366"
 ---
 # <a name="add-edge-server-nat-ip-2010"></a>Aggiungere Edge Server NAT IP 2010
  

@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: dea6c465600229414dba30c0b0adecc7e5a5caad
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: 731ed3aa7b9cb7b2511d7ffa1614bdf06522ac0e
+ms.sourcegitcommit: 1957a06d4bae3d42b4e3b6d4bd8ff2752a19d377
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60537097"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60641236"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -109,6 +109,14 @@ Per accedere a questa impostazione è necessario essere un amministratore del se
 Se si usa la Qualità del servizio (QoS) per assegnare la priorità al traffico di rete, è possibile abilitare gli indicatori QoS e impostare gli intervalli porta per ogni tipo di traffico multimediale. L’impostazione dell'intervallo di porte per diversi tipi di traffico è un unico passaggio per gestire i contenuti multimediali in tempo reale; per altre informazioni, vedere [Qualità del servizio (QoS) in Teams](qos-in-teams.md).
 
 > [!IMPORTANT]
+> Sistemi basati su Apple: l'unica istanza in cui i dispositivi basati su Apple impostano effettivamente il valore DSCP è se vengono soddisfatte tutte le condizioni seguenti:
+> - iOS.
+> - Rete WiFi.
+> - Interruttori Cisco.
+> - L'amministratore di rete ha aggiunto l'app all'elenco approvato.
+>
+> Sistemi basati su Android: non esistono limitazioni note.
+>
 > Se si attiva la Qualità del servizio (QoS) o si modificano le impostazioni nell'interfaccia di amministrazione di Microsoft Teams per il servizio di Teams, sarà anche necessario [applicare le impostazioni di corrispondenza a tutti i dispositivi degli utenti](QoS-in-Teams-clients.md) e a tutti i dispositivi di rete interni per implementare completamente le modifiche apportate alla Qualità del servizio (QoS) in Teams.
 
   **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
@@ -119,6 +127,10 @@ Se si usa la Qualità del servizio (QoS) per assegnare la priorità al traffico 
     ![Screenshot delle impostazioni di rete per le riunioni nell'interfaccia di amministrazione.](media/meeting-settings-network.png "Screenshot delle impostazioni di rete per le riunioni di Teams nell'interfaccia di amministrazione di Microsoft Teams")
 
     - Per consentire l'uso dei contrassegni DSCP per la Qualità del servizio (QoS), attivare **Inserire gli indicatori della Qualità del servizio (QoS) per il traffico multimediale in tempo reale**. È possibile solo usare o non usare gli indicatori; non è possibile quindi impostare indicatori personalizzati per ciascun tipo di traffico. Per altre informazioni sugli indicatori DSCP, vedere [Selezionare un metodo di implementazione QoS](QoS-in-Teams.md#select-a-qos-implementation-method).
+
+        > [!IMPORTANT]
+        > Si noti che l'abilitazione di QoS viene eseguita solo sugli endpoint per contrassegnare i pacchetti che lasciano il client. È comunque consigliabile applicare regole QoS corrispondenti in tutti i dispositivi di rete interna per il traffico in arrivo.
+        
         > [!NOTE]
         > Il contrassegno degli indicatori DSCP viene eseguito solitamente tramite le porte di origine e il traffico UDP porterà a un inoltro del trasporto con la porta di destinazione 3478 per impostazione predefinita. Se la società necessita del contrassegno sulle porte di destinazione, contattare il supporto per abilitare la comunicazione verso l'inoltro del trasporto con le porte UDP 3479 (Audio), 3480 (Video) e 3481 (Condivisione).
     - Per specificare gli intervalli di porte, accanto a **Seleziona un intervallo di porta per ogni tipo di traffico multimediale in tempo reale** selezionare **Specifica gli intervalli di porta** e quindi immettere la porta iniziale e quella finale per la condivisione audio, video e dello schermo. Selezionare questa opzione è necessario per implementare QoS. 

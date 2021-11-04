@@ -1,7 +1,7 @@
 ---
 title: Creare un nuovo criterio PIN in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 8bdf0478-fe9f-4371-93ff-db39381a25db
 description: 'Riepilogo: creare un nuovo criterio PIN in Skype for Business Server.'
-ms.openlocfilehash: 2b777cbf3f130222cda40811e0bb310cf895c79e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 24d131792fdc7ae90a8799f231dd94a3e854c576
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58583950"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60751785"
 ---
 # <a name="create-a-new-pin-policy-in-skype-for-business-server"></a>Creare un nuovo criterio PIN in Skype for Business Server
  
 **Riepilogo:** Creare un nuovo criterio PIN in Skype for Business Server.
   
-È possibile utilizzare la pagina Criteri **PIN** per fornire l'autenticazione pin agli utenti che si connettono a Skype for Business telefoni IP. Per utilizzare l'autenticazione tramite PIN, verificare che sia selezionata l'opzione **Abilita autenticazione PIN** nelle impostazioni relative ai servizi Web.
+È possibile utilizzare la pagina **Criteri PIN** per fornire l'autenticazione PIN (Personal Identification Number) agli utenti che si connettono a Skype for Business telefoni IP. Per utilizzare l'autenticazione tramite PIN, verificare che sia selezionata l'opzione **Abilita autenticazione PIN** nelle impostazioni relative ai servizi Web.
   
 Per creare criteri PIN a livello di utente o di sito, eseguire la procedura seguente. 
   
@@ -32,7 +32,7 @@ Per creare criteri PIN a livello di utente o di sito, eseguire la procedura segu
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
     
 3. Sulla barra di spostamento sinistra fare clic su **Sicurezza** e quindi su **Criteri PIN**.
     

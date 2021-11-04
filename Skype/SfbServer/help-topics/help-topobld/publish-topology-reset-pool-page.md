@@ -1,7 +1,7 @@
 ---
 title: Pubblica topologia, pagina Reimposta pool
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/27/2015
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: de13aab5-ac3c-44ac-9484-f97cafcf203a
 description: Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
-ms.openlocfilehash: 7e7e4110232dd877f25e99294f868df5255886f4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8a9fc299e38ae3ba94d41a7c75d71a19c9d55067
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58601481"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766674"
 ---
 # <a name="publish-topology-reset-pool-page"></a>Pubblicare topologia, pagina Reimposta pool
  

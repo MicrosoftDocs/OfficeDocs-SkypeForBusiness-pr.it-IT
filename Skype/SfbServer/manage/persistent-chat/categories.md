@@ -1,7 +1,7 @@
 ---
 title: Gestire le categorie nel server Chat persistente in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 1/31/2018
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: b0c834b9-b5c8-41d5-865b-c8b180e76d13
 description: 'Riepilogo: informazioni su come gestire le categorie del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: a69d8ec3119f9f94f9f5c864ec0e0d2d613b0e20
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: e9892f032d5af24d1394fddc6965ead6e769472e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58622218"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60776196"
 ---
 # <a name="manage-categories-in-persistent-chat-server-in-skype-for-business-server-2015"></a>Gestire le categorie nel server Chat persistente in Skype for Business Server 2015
  
@@ -34,7 +34,7 @@ La definizione di AllowedMembers e Creators per una categoria ha i vantaggi segu
     
 - Un utente incluso nell'elenco Creator può creare nuove chat room nella categoria. Se si desidera implementare un sistema in cui un numero limitato di persone nell'organizzazione può creare chat room, questo controllo può essere utilizzato per soddisfare tali requisiti. 
     
-Gli utenti, le unità organizzative e i gruppi di utenti identificati come creatori della categoria sono gli unici utenti e gruppi a cui è consentito creare chat room nella categoria. Dopo aver creato la categoria, è possibile scegliere utenti, unità organizzative e gruppi di utenti nell'elenco AllowedMembers della categoria come responsabili e membri della chat room per gestire e partecipare alla chat room. 
+Gli utenti, le unità organizzative (OU) e i gruppi di utenti identificati come creatori della categoria sono gli unici utenti e gruppi a cui è consentito creare chat room nella categoria. Dopo aver creato la categoria, è possibile scegliere utenti, unità organizzative e gruppi di utenti nell'elenco AllowedMembers della categoria come responsabili e membri della chat room per gestire e partecipare alla chat room. 
   
 Prima di configurare le categorie, leggere Categorie di Chat persistente, chat room e ruoli utente [in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/categories-chat-rooms-and-user-roles.md).
   
@@ -47,7 +47,7 @@ Prima di configurare le categorie, leggere Categorie di Chat persistente, chat r
 
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL amministratore.
+2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
     
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Categoria**.
     
@@ -119,7 +119,7 @@ New-CsPersistentChatCategory -Name "HelpDesk" -PersistentChatPoolFqdn "atl-cs-00
 
 È possibile configurare una categoria esistente utilizzando il cmdlet **Set-CsPersistentCategory.**
   
-Ad esempio, il comando seguente specifica che user1 è allowedMember e Creator, mentre a user2 viene negato l'accesso alle chat room nella categoria:
+Ad esempio, il comando seguente specifica che user1 è allowedMember e Creator, mentre a user2 viene negato l'accesso alle chat room della categoria:
   
 ```PowerShell
 Set-CsPersistentChatCategory -Identity testCat -AllowedMembers @{Add="sip:user1@contoso.com", "CN=container,DC=contoso,DC=com"}  -DeniedMembers @{Add="sip:user2@contoso.com"}

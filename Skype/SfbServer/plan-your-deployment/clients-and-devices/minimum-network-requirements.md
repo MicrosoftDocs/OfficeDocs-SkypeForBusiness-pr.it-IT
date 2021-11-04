@@ -1,6 +1,6 @@
 ---
 title: Requisiti minimi di rete per l’app Riunioni Skype
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
@@ -17,18 +17,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d9666787-e72b-41e1-ba37-aec5fb849a10
 description: 'Riepilogo: informazioni per le organizzazioni che non usano Microsoft 365 o Office 365 e devono accedere alle riunioni ospitate dalle organizzazioni che lo fanno.'
-ms.openlocfilehash: 29b9103d741440a480be27e9d4268d6cc8d94c47
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2d27e578e448c44cd13190d4aedf1e15f611d997
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58615612"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60751575"
 ---
 # <a name="skype-meetings-app-minimum-network-requirements"></a>Requisiti minimi di rete per l’app Riunioni Skype
  
 **Riepilogo:**  Informazioni per le organizzazioni che non usano Microsoft 365 o Office 365 e devono accedere alle riunioni ospitate dalle organizzazioni che lo fanno. Questo articolo non è destinato agli utenti di queste app.
   
-Per consentire agli utenti di usare l'app Riunioni di Skype per partecipare alle riunioni ospitate in Skype for Business Online, gli amministratori di rete delle organizzazioni che non usano Microsoft 365 o Office 365 devono consentire o altrimenti rendere disponibili gli FQDN, gli IP e le porte indicati di seguito.
+Per consentire agli utenti di usare l'app Riunioni di Skype per partecipare alle riunioni ospitate in Skype for Business Online, gli amministratori di rete delle organizzazioni che non usano Microsoft 365 o Office 365 devono consentire o rendere disponibili in altro modo fqdn, IP e porte indicati di seguito.
 
 ## <a name="requirements-for-skype-meetings-app-connectivity"></a>Requisiti per la connettività dell'app Skype riunioni
 
@@ -47,4 +47,4 @@ Le informazioni elencate di seguito sono un sottoinsieme di URL Office 365 ip e 
 
 [Distribuire client scaricabili Web in Skype for Business Server](../../deploy/deploy-clients/deploy-web-downloadable-clients.md)
 
-[Piattaforme supportate per l Skype a app Riunioni](https://support.office.com/client/results?Shownav=true&amp;lcid=1033&amp;ns=SKFBWA&amp;version=15&amp;omkt=en-US&amp;ver=15&amp;HelpID=SfBWebApp4001)
+[Piattaforme supportate per l'app Skype riunioni](https://support.office.com/client/results?Shownav=true&amp;lcid=1033&amp;ns=SKFBWA&amp;version=15&amp;omkt=en-US&amp;ver=15&amp;HelpID=SfBWebApp4001)

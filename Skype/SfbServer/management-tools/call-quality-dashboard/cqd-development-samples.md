@@ -1,7 +1,7 @@
 ---
 title: Esempi di sviluppo in DQC
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 8ca9bf7a-2d6f-48d5-a821-531009726525
 description: "Riepilogo: esaminare un'esercitazione e gli esempi di sviluppo per Call Quality Dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 3d6c813ea8df6a1b1c9b6c991767c45c85f9fb34
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: ba49af8e8ce79b87c57d761a47b54b6574f3a7f5
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58727515"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60751715"
 ---
 # <a name="cqd-development-samples"></a>Esempi di sviluppo in DQC
 
@@ -34,7 +34,7 @@ Esercitazione: Creazione di una presentazione di report personalizzata tramite l
 
 CQD offre un accesso rapido e semplice alle informazioni aggregate sulla qualità delle chiamate per le distribuzioni Skype for Business Server locali. CQD è costituito da tre componenti: il database QoE Archive, il cubo e il portale. Il portale è il livello di presentazione principale e può essere ulteriormente diviso nei tre componenti seguenti:
 
-1. Servizio dati, accessibile per gli utenti autenticati tramite l'API dei dati per [call quality dashboard (CQD) in Skype for Business Server](data-api.md).
+1. Servizio dati, accessibile per gli utenti autenticati tramite l'API dati per il dashboard di qualità delle chiamate [(CQD) in Skype for Business Server](data-api.md).
 
 2. Repository Service, accessibile per gli utenti autenticati tramite [l'API repository per call quality dashboard (CQD) in Skype for Business Server](repository-api.md).
 
@@ -48,7 +48,7 @@ CQD viene creato seguendo la metodologia CQM (Call Quality Methodology), quindi 
 
 ### <a name="how-the-dashboard-consumes-the-data-service"></a>Modalità di utilizzo del servizio dati nel dashboard
 
-Quando si accede alla home page CQD (ad esempio, il set di report e i report corrispondenti per un utente autenticato e autorizzato verranno recuperati http://localhost/cqd) dal servizio repository. Verrà creato un URL completo dall'ID del set di report e dal mese-anno (ID set di report è il numero intero dopo la sezione '/#/' nell'URL e per impostazione predefinita l'anno-mese corrente viene aggiunto alla fine dell'ID del set di report dopo la barra). Le definizioni di report vengono archiviate in formato JSON e, quando vengono recuperate dal servizio repository, verranno utilizzate come input per il servizio dati. Il servizio dati genera query MDX (Multi-Dimension Expressions) basate sull'input e quindi esegue queste query MDX sul cubo per recuperare i dati per ogni report. 
+Quando si accede alla home page CQD (ad esempio, il set di report e i report corrispondenti per un utente autenticato e autorizzato verranno recuperati http://localhost/cqd) dal servizio repository. Verrà creato un URL completo dall'ID del set di report e dal mese-anno (ID set di report è il numero intero dopo la sezione '/#/' nell'URL e per impostazione predefinita l'anno-mese corrente viene aggiunto alla fine dell'ID del set di report dopo la barra). Le definizioni dei report vengono archiviate in formato JSON e, quando vengono recuperate dal servizio repository, verranno utilizzate come input per il servizio dati. Il servizio dati genera query MDX (Multi-Dimension Expressions) basate sull'input e quindi esegue queste query MDX sul cubo per recuperare i dati per ogni report. 
 
 ### <a name="building-customized-reports"></a>Creazione di report personalizzati
 
@@ -116,7 +116,7 @@ Questo esempio può essere ulteriormente destrutturato in tre passaggi:
 
 2. Inviare la query al servizio dati tramite chiamata AJAX. Devono essere forniti i seguenti parametri di richiesta:
 
-   a. url (che deve essere http://[ServerName]/QoEDataService/RunQuery).
+   a. url (che deve essere http://[NomeServer]/QoEDataService/RunQuery).
 
    b. dati (questa è la rappresentazione in forma di stringa dell'oggetto JSON definito nella variabile 'query'). Data Service restituirà i risultati della query come parametro della funzione call back per l'esito positivo.
 
@@ -312,7 +312,7 @@ Un esempio rapido è il seguente, il codice contiene un blocco che è un semplic
 </html>
 ```
 
-In questo modo verrà visualizzata una pagina Web simile a quella riportata nella figura (senza la definizione del report al momento della visita iniziale). Ottieni l'ID del set di report dal portale CQD (è dopo l'accesso '/#/' nell'URL del portale CQD (ad esempio, nella prima figura l'ID del set di report è 3024 e inserisci questo ID set di report nella sezione input di questa pagina Web. Premere il pulsante "carica" e visualizzare la definizione completa (misurazioni, dimensioni, elenchi di filtri) del set di report.
+In questo modo verrà visualizzata una pagina Web simile a quella riportata nella figura (senza la definizione del report al momento della visita iniziale). Ottenere l'ID del set di report dal portale CQD (è dopo l'accesso '/#/' nell'URL del portale CQD (ad esempio, nella prima figura l'ID del set di report è 3024) e inserisci questo ID set di report nella sezione input di questa pagina Web. Premere il pulsante "carica" e visualizzare la definizione completa (misurazioni, dimensioni, elenchi di filtri) del set di report.
 
 In sintesi, per ottenere rapidamente la definizione completa di un set di report/report. Ecco come procedere:
 

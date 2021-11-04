@@ -1,7 +1,7 @@
 ---
 title: Skype for Business Server Strumento di pianificazione della panoramica delle funzionalità
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 4/6/2016
@@ -15,19 +15,19 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 44783b37-c87f-41f2-9de1-39176f1856ab
-description: Informazioni sullo strumento di Skype for Business Server panoramica delle funzionalità.
-ms.openlocfilehash: 74436290cfade5993a466b1e444d81a256e5882e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Informazioni sullo strumento di pianificazione Skype for Business Server panoramica delle funzionalità.
+ms.openlocfilehash: 44926f016a9b9aabe9981ec66f32638b3a958da6
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58618872"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60744402"
 ---
 # <a name="skype-for-business-server-feature-overview-planning-tool"></a>Skype for Business Server Strumento di pianificazione della panoramica delle funzionalità
  
 Skype for Business Server 2015 Planning Tool
   
-È possibile utilizzare la **pagina Siti** centrali dello Strumento di pianificazione per progettare la Skype for Business Server distribuzione. È possibile creare due distribuzioni centralizzate o distribuite. Una distribuzione centralizzata dispone di un solo sito centrale, che include tutti Skype for Business utenti dell'organizzazione. Una distribuzione distribuita include più di un sito centrale. Se si distribuisce Skype for Business Server in più siti centrali, si immetterà il numero di utenti in ogni sito centrale nello Strumento di pianificazione.
+È possibile utilizzare la **pagina Siti centrali** dello Strumento di pianificazione per progettare la Skype for Business Server distribuzione. È possibile creare due distribuzioni centralizzate o distribuite. Una distribuzione centralizzata dispone di un solo sito centrale, che include tutti Skype for Business utenti dell'organizzazione. Una distribuzione distribuita include più di un sito centrale. Se si distribuiscono Skype for Business Server in più siti centrali, sarà necessario immettere il numero di utenti in ogni sito centrale nello Strumento di pianificazione.
   
 Per completare la definizione del sito centrale, è innanzitutto necessario fornire le informazioni seguenti:
   
@@ -55,7 +55,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Chiamate in conferenza**
     
-    Le conferenze telefoniche con accesso esterno consentono agli utenti di partecipare a un A/V da un telefono sulla rete PSTN. Per le conferenze telefoniche con accesso esterno è necessario distribuire le applicazioni Operatore conferenza e Annuncio conferenza Service.
+    Le conferenze telefoniche con accesso esterno consentono agli utenti di partecipare a un A/V da un telefono sulla rete PSTN. Per le conferenze telefoniche con accesso esterno è necessario distribuire le applicazioni Operatore conferenza e Annuncio conferenza service.
     
 - **Conferenze Web**
     
@@ -83,7 +83,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Mobilità**
     
-    Quando distribuisci il servizio per dispositivi mobili di Skype for Business Server 2015, gli utenti possono usare dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
+    Quando distribuisci il servizio per dispositivi mobili di Skype for Business Server 2015, gli utenti possono usare i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
     
 - **Cassetta postale Exchange W15**
     
@@ -99,7 +99,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Messaggistica unificata di Exchange**
     
-    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la Exchange messaggistica unificata per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica delle chiamate e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
+    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la messaggistica unificata Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica di chiamata e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
     
 ### <a name="additional-deployment-options"></a>Opzioni di distribuzione aggiuntive
 
@@ -123,7 +123,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Exchange Integrazione dell'archiviazione**
     
-    Se si dispone di utenti ospitati in Exchange 2013 e le relative cassette postali sono state messe In-Place blocco, è possibile selezionare l'opzione per integrare l'archiviazione di Skype for Business Server 2015 con Exchange archiviazione.
+    Se si dispone di utenti ospitati in Exchange 2013 e le relative cassette postali sono state messe In-Place archiviazione, è possibile selezionare l'opzione per integrare l'archiviazione di Skype for Business Server 2015 con Exchange archiviazione.
     
 - **IPv4**
     
@@ -139,7 +139,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 ### <a name="server-applications"></a>Applicazioni server
 
- **Le applicazioni** server contengono le opzioni seguenti:
+ **Le applicazioni server** contengono le opzioni seguenti:
   
 - **Response Group**
     
@@ -151,7 +151,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Parcheggio di chiamata**
     
-    L'applicazione Parcheggio di chiamata consente a un utente di VoIP aziendale di mettere in attesa una chiamata da un telefono e quindi di ricevere la chiamata da un altro telefono senza creare un collegamento tra le risorse del telefono che ha ricevuto la chiamata. L'applicazione Parcheggio di chiamata è utile quando un utente deve trasferire una chiamata, ma il destinatario specifico è sconosciuto. 
+    L'applicazione Parcheggio di chiamata consente a un utente VoIP aziendale di mettere in attesa una chiamata da un telefono e quindi di ricevere la chiamata da un altro telefono senza creare un collegamento tra le risorse del telefono che ha ricevuto la chiamata. L'applicazione Parcheggio di chiamata è utile quando un utente deve trasferire una chiamata, ma il destinatario specifico è sconosciuto. 
     
 - **Operatore conferenza**
     
@@ -159,7 +159,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Annuncio conferenza**
     
-    applicazione Annuncio conferenza toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
+    applicazione Annuncio conferenza produce toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
     
 - **Servizio Controllo di ammissione di chiamata**
     

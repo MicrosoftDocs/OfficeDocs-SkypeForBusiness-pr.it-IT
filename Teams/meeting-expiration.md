@@ -1,7 +1,7 @@
 ---
 title: Criteri di riunione e scadenza della riunione in Microsoft Teams
 author: cichur
-ms.author: serdars
+ms.author: v-mahoffman
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Informazioni su come usare le impostazioni dei criteri riunione per controllare la scadenza della riunione Microsoft Teams.
-ms.openlocfilehash: 578fbefc6b3321be0b7397019172d3ddd40c3d0d
-ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
+ms.openlocfilehash: 0fda2344f58a8781749234fb260e847ac0d44aac
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "60605422"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60751515"
 ---
 # <a name="meeting-policies-and-meeting-expiration-in-microsoft-teams"></a>Criteri di riunione e scadenza della riunione in Microsoft Teams
 
@@ -63,7 +63,7 @@ Ecco un riepilogo del funzionamento della scadenza della riunione per ognuna del
 |Se si vuole...&nbsp;&nbsp; |Eseguire questa operazione&nbsp;&nbsp;&nbsp;&nbsp;  |Comportamento di partecipazione alla riunione&nbsp;&nbsp;&nbsp;&nbsp;  |
 |---------------------------|---------------------|---------|
 |Scadenza riunione privata ora riunioni avviate da un utente&nbsp;&nbsp;|Disattivare **Consenti riunione ora nelle riunioni private.**&nbsp;&nbsp;|Nessuno può partecipare alle riunioni **private di Meet now** avviate dall'utente.|
-|Scadere le riunioni private pianificate da un utente&nbsp;&nbsp;|Disattivare **Consenti pianificazione riunioni private** _e_ Consenti Outlook componente **aggiuntivo**. &nbsp;&nbsp;|Nessuno può partecipare a riunioni private pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare alle riunioni seguenti:<ul><li>Riunioni private avvenute in passato.</li><li>Riunioni private pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni private ricorrenti.</li></ul><br>Sia **Consenti pianificazione riunioni private** che Consenti Outlook **componente** aggiuntivo deve essere disattivato per scadere le riunioni private pianificate da un utente. Se un'impostazione è disattivata e l'altra è attivata, i collegamenti e gli ID conferenza delle riunioni esistenti rimangono attivi e non saranno scaduti.|
+|Scadere le riunioni private pianificate da un utente&nbsp;&nbsp;|Disattivare **Consenti pianificazione riunioni private** _e_ Consenti Outlook componente **aggiuntivo**. &nbsp;&nbsp;|Nessuno può partecipare a riunioni private pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare alle riunioni seguenti:<ul><li>Riunioni private avvenute in passato.</li><li>Riunioni private pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni private ricorrenti.</li></ul><br>Sia **Consenti pianificazione riunioni private** che Consenti Outlook **componente** aggiuntivo deve essere disattivato per la scadenza delle riunioni private pianificate da un utente. Se un'impostazione è disattivata e l'altra è attivata, i collegamenti e gli ID conferenza delle riunioni esistenti rimangono attivi e non saranno scaduti.|
 |Scadenza del canale **Riunione ora riunioni** avviate da un utente&nbsp;&nbsp;|Disattiva **Consenti riunione ora nei canali e** _disattiva_ Consenti pianificazione delle riunioni **dei canali.**&nbsp;&nbsp;|Nessuno può partecipare al canale **Riunione ora** le riunioni avviate dall'utente.|
 |Scadere le riunioni del canale pianificate da un utente&nbsp;&nbsp;|Disattivare **Consenti pianificazione delle riunioni del canale**.&nbsp;&nbsp;|Nessuno può partecipare alle riunioni del canale pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare alle riunioni seguenti:<ul><li>Riunioni del canale avvenute in passato.</li><li>Riunioni del canale pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni di canale ricorrenti.</li></ul>|
 

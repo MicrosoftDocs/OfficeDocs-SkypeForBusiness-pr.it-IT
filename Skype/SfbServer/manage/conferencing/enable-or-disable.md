@@ -1,7 +1,7 @@
 ---
 title: Abilitare o disabilitare le conferenze telefoniche con accesso esterno in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,24 +12,24 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c1f7cf91-8434-42ec-b09d-7d9d01e0b357
 description: 'Riepilogo: informazioni su come utilizzare il Pannello di controllo o Management Shell per abilitare o disabilitare le conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: ebdc13d94a840b3eaceb37332a6775e5d725bb9a
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 45a47d411570d20273c9a3a9ace3536641157fde
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58609283"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766574"
 ---
 # <a name="enable-or-disable-dial-in-conferencing-in-skype-for-business-server"></a>Abilitare o disabilitare le conferenze telefoniche con accesso esterno in Skype for Business Server
  
 **Riepilogo:** Informazioni su come utilizzare il Pannello di controllo o Management Shell per abilitare o disabilitare le conferenze telefoniche con accesso esterno in Skype for Business Server.
   
-È possibile abilitare le conferenze telefoniche con accesso esterno Skype for Business Server Pannello di controllo o tramite Skype for Business Server Management Shell.
+È possibile abilitare le conferenze telefoniche con accesso esterno Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell.
   
 ## <a name="enable-or-disable-dial-in-conferencing-by-using-skype-for-business-server-control-panel"></a>Abilitare o disabilitare le conferenze telefoniche con accesso esterno tramite Skype for Business Server Pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2.  Apri Skype for Business Server Pannello di controllo.
+2.  Aprire Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza.**
     

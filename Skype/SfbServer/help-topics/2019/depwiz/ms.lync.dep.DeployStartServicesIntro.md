@@ -1,7 +1,7 @@
 ---
 title: Avviare servizi (Intro)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 524c6ff0-d695-45e1-9c47-c68698f5f3ce
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per avviare i servizi nel server Skype for Business Server ruolo che si sta distribuendo, esaminare la schermata introduttiva. Si noti che i comandi emessi per avviare Skype for Business Server non attendere l'avvio del servizio. Questo è il massimo sforzo per l'avvio dei servizi, di cui è consigliabile monitorare lo stato effettivo mediante Microsoft Management Console (MMC) dei servizi Windows. Fare clic su Avanti per avviare l'attività Avvia servizi.
-ms.openlocfilehash: 77eef504680a27ea27a5c56f32edd872d14d5a70
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: a553da8176f3e49876f70a75d022199b914ff258
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598030"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60764704"
 ---
 # <a name="startservices-intro"></a>Avviare servizi (Intro)
  

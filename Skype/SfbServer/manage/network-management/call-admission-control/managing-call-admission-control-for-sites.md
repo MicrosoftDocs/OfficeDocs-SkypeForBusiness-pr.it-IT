@@ -1,7 +1,7 @@
 ---
 title: Gestione del controllo di ammissione di chiamata per i siti
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: I siti di rete sono gli uffici o le postazioni in ogni area di rete delle distribuzioni del servizio Controllo di ammissione di chiamata (CAC, Call Admission Control), del servizio per chiamate di emergenza E9-1-1 e di bypass multimediale.
-ms.openlocfilehash: c391c75b4434412e055403d621e884706c30dee5
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 114c8687de3273e09f4cc4ef122a0c584f97237e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58590130"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60745962"
 ---
 # <a name="managing-call-admission-control-for-sites-in-skype-for-business-server"></a>Gestione del controllo di ammissione di chiamata per i siti in Skype for Business Server
 
@@ -36,7 +36,7 @@ All'interno di una configurazione del servizio Controllo di ammissione di chiama
     
      **New-CsNetworkInterSitePolicy -Identity Reno_Portland -NetworkSiteID1 Reno -NetworkSiteID2 Portland -BWPolicyProfileID LowBWLimits**
     
-    In questo esempio viene creato un nuovo collegamento di sito di rete denominato Reno Portland che imposta i limiti di larghezza di banda tra i siti di rete di Reno e \_ Portland. Il profilo dei criteri di larghezza di banda e siti di rete deve essere già presente prima dell'esecuzione di questo comando.
+    In questo esempio viene creato un nuovo collegamento di sito di rete denominato Reno Portland che imposta i limiti di larghezza di banda tra i siti \_ di rete Reno e Portland. Il profilo dei criteri di larghezza di banda e siti di rete deve essere già presente prima dell'esecuzione di questo comando.
 
 Per descrizioni dettagliate dei parametri, [vedere New-CsNetworkInterSitePolicy.](/powershell/module/skype/New-CsNetworkInterSitePolicy) Per ottenere un elenco dei profili dei criteri di larghezza di banda che è possibile applicare al collegamento di sito di rete, chiamare il cmdlet **Get-CsNetworkBandwidthPolicyProfile**. Per informazioni dettagliate, [vedere Get-CsNetworkBandwidthPolicyProfile.](/powershell/module/skype/Get-CsNetworkBandwidthPolicyProfile)
 
@@ -68,13 +68,13 @@ Per descrizioni dettagliate dei parametri, [vedere Remove-CsNetworkInterSitePoli
 
 ## <a name="view-network-site-information"></a>Visualizzare le informazioni sui siti di rete
 
-I siti di rete sono gli uffici o le postazioni configurate in ogni area di una distribuzione del servizio Controllo di ammissione di chiamata (CAC) o del servizio per chiamate di emergenza Enhanced 9-1-1. È possibile visualizzare le informazioni sui siti di rete nel Skype for Business Server di controllo o in Skype for Business Server Management Shell. 
+I siti di rete sono gli uffici o le postazioni configurate in ogni area di una distribuzione del servizio Controllo di ammissione di chiamata (CAC) o del servizio per chiamate di emergenza Enhanced 9-1-1. È possibile visualizzare le informazioni sui siti di rete nel Skype for Business Server pannello di controllo o Skype for Business Server Management Shell. 
 
-### <a name="to-view-network-site-information-in-skype-for-business-server-control-panel"></a>Per visualizzare le informazioni sui siti di rete nel Skype for Business Server di controllo
+### <a name="to-view-network-site-information-in-skype-for-business-server-control-panel"></a>Per visualizzare le informazioni sui siti di rete nel Skype for Business Server Di controllo
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Sito.**
 
@@ -88,7 +88,7 @@ I siti di rete sono gli uffici o le postazioni configurate in ogni area di una d
 
 ### <a name="viewing-network-site-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sui siti di rete tramite Windows PowerShell cmdlet
 
-È possibile visualizzare le informazioni sui siti di rete utilizzando Windows PowerShell e il cmdlet Get-CsNetworkSite rete. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+È possibile visualizzare le informazioni sui siti di rete utilizzando Windows PowerShell e il cmdlet Get-CsNetworkSite di rete. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
 
 ### <a name="to-view-network-site-information"></a>Per visualizzare informazioni sui siti di rete
 
@@ -111,13 +111,13 @@ Per ulteriori informazioni, vedere l'argomento della guida relativo al cmdlet [G
 
 ## <a name="create-or-modify-network-sites"></a>Creare o modificare siti di rete 
 
-I siti di rete sono gli uffici o le postazioni configurate in ogni area di una distribuzione del servizio Controllo di ammissione di chiamata (CAC) o del servizio per chiamate di emergenza Enhanced 9-1-1. È possibile utilizzare il Pannello Skype for Business Server per configurare i siti e associarli alle aree geografiche. Ad esempio, un'area di rete per il Nord America potrebbe essere associata a siti di rete come Chicago, Redmond e Vancouver. Deve essere creato un sito di rete del servizio Controllo di ammissione di chiamata per ogni sito di un'organizzazione, anche se tale sito non presenta limitazioni della larghezza di banda. Dal Pannello Skype for Business Server di controllo è possibile creare, modificare ed eliminare siti di rete. Seguire le procedure seguenti per creare o modificare un sito di rete. 
+I siti di rete sono gli uffici o le postazioni configurate in ogni area di una distribuzione del servizio Controllo di ammissione di chiamata (CAC) o del servizio per chiamate di emergenza Enhanced 9-1-1. È possibile utilizzare il Skype for Business Server di controllo per configurare i siti e associarli alle aree geografiche. Ad esempio, un'area di rete per il Nord America potrebbe essere associata a siti di rete come Chicago, Redmond e Vancouver. Deve essere creato un sito di rete del servizio Controllo di ammissione di chiamata per ogni sito di un'organizzazione, anche se tale sito non presenta limitazioni della larghezza di banda. Dal Pannello Skype for Business Server di controllo è possibile creare, modificare ed eliminare siti di rete. Seguire le procedure seguenti per creare o modificare un sito di rete. 
 
 ### <a name="to-create-a-network-site"></a>Per creare un sito di rete
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Sito.**
 
@@ -151,7 +151,7 @@ I siti di rete sono gli uffici o le postazioni configurate in ogni area di una d
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Sito.**
 
@@ -168,7 +168,7 @@ Non è possibile modificare la tabella **Subnet associate** in questa pagina. L'
 
 ## <a name="delete-an-existing-network-site"></a>Eliminare un sito di rete esistente
 
-I siti di rete sono gli uffici o le postazioni configurate in ogni area di una distribuzione del servizio Controllo di ammissione di chiamata (CAC) o del servizio per chiamate di emergenza Enhanced 9-1-1. È possibile utilizzare il Pannello Skype for Business Server per configurare i siti e associarli alle aree geografiche. Ad esempio, un'area di rete per il Nord America potrebbe essere associata a siti di rete come Chicago, Redmond e Vancouver. Deve essere creato un sito di rete del servizio Controllo di ammissione di chiamata per ogni sito di un'organizzazione, anche se tale sito non presenta limitazioni della larghezza di banda. Dal Pannello Skype for Business Server di controllo è possibile creare, modificare ed eliminare siti di rete. Per eliminare un sito di rete esistente, usare la procedura che segue. Per informazioni dettagliate sulla creazione o la modifica di siti di rete, vedere [Managing call admission control for sites](managing-call-admission-control-for-sites.md).
+I siti di rete sono gli uffici o le postazioni configurate in ogni area di una distribuzione del servizio Controllo di ammissione di chiamata (CAC) o del servizio per chiamate di emergenza Enhanced 9-1-1. È possibile utilizzare il Skype for Business Server di controllo per configurare i siti e associarli alle aree geografiche. Ad esempio, un'area di rete per il Nord America potrebbe essere associata a siti di rete come Chicago, Redmond e Vancouver. Deve essere creato un sito di rete del servizio Controllo di ammissione di chiamata per ogni sito di un'organizzazione, anche se tale sito non presenta limitazioni della larghezza di banda. Dal Pannello Skype for Business Server di controllo è possibile creare, modificare ed eliminare siti di rete. Per eliminare un sito di rete esistente, usare la procedura che segue. Per informazioni dettagliate sulla creazione o la modifica di siti di rete, vedere [Managing call admission control for sites](managing-call-admission-control-for-sites.md).
 
 
 ### <a name="to-delete-a-network-site"></a>Per eliminare un sito di rete

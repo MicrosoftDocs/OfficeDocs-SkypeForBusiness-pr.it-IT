@@ -1,7 +1,7 @@
 ---
 title: Creare criteri di conferenza in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 8c685326-8356-4075-bf95-32324b16ef81
 description: 'Riepilogo: informazioni su come creare criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: d067ce36b600a3dbfca3df318a2fd6d449518160
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 1b90a081470cd2df1182bc32d0558a86f860b36a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595578"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766604"
 ---
 # <a name="create-conferencing-policies-in-skype-for-business-server"></a>Creare criteri di conferenza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come creare criteri di conferenza in Skype for Business Server.
   
-È possibile creare criteri di conferenza Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell.
+È possibile creare criteri di conferenza utilizzando Skype for Business Server Pannello di controllo o Skype for Business Server Management Shell.
   
 ## <a name="create-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Creare criteri di conferenza tramite il Skype for Business Server Pannello di controllo
 
@@ -84,7 +84,7 @@ ms.locfileid: "58595578"
     
     - Per impedire i trasferimenti di file, deselezionare la casella di controllo **Consenti ai partecipanti di trasferire file**. Per impostazione predefinita, gli utenti possono trasferire file.
     
-    - Per impedire l'utilizzo delle annotazioni, deselezionare la casella di controllo **Consenti annotazioni**. Per utilizzare le annotazioni in presentazioni PowerPoint condivise, deselezionare la casella di controllo Abilita PowerPoint **annotazioni.** Per impostazione predefinita, le annotazioni sono consentite.
+    - Per impedire l'utilizzo delle annotazioni, deselezionare la casella di controllo **Consenti annotazioni**. Per utilizzare le annotazioni nelle presentazioni PowerPoint condivise, deselezionare la casella di controllo Abilita PowerPoint **annotazioni.** Per impostazione predefinita, le annotazioni sono consentite.
     
     - Per impedire l'utilizzo dei sondaggi, deselezionare la casella di controllo **Consenti sondaggi**. Per impostazione predefinita, i sondaggi sono consentiti.
     

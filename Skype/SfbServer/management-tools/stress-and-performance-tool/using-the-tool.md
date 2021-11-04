@@ -1,7 +1,7 @@
 ---
-title: Utilizzo dello strumento Skype for Business Server 2015 Stress and Performance
+title: Utilizzo dello Skype for Business Server 2015 Stress and Performance Tool
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 ms.date: 2/13/2018
 manager: serdars
@@ -14,18 +14,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 93f42230-24a2-418d-9770-bf4670a9d78f
 description: Per eseguire lo strumento stress e prestazioni di Skype for Business Server 2015, è necessario essere in grado di gestire utenti, contatti e profili utente, configurare lo strumento per l'esecuzione e quindi esaminare l'output o i risultati prodotti dallo strumento.
-ms.openlocfilehash: 6db23c259aa19e8ec9e590218ff233461c677aa0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d54374e81319a6a95ec61fbb2ab5885e2ec368ca
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58586878"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60751585"
 ---
-# <a name="using-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Utilizzo dello strumento Skype for Business Server 2015 Stress and Performance
+# <a name="using-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Utilizzo dello Skype for Business Server 2015 Stress and Performance Tool
  
 Per eseguire lo strumento stress e prestazioni di Skype for Business Server 2015, è necessario essere in grado di gestire utenti, contatti e profili utente, configurare lo strumento per l'esecuzione e quindi esaminare l'output o i risultati prodotti dallo strumento.
   
-Esistono quattro aree coinvolte nell'esecuzione dello strumento Skype for Business Server 2015 Stress and Performance Tool (il file eseguibile è LyncPerfTool.exe):
+Esistono quattro aree coinvolte nell'esecuzione dello strumento Skype for Business Server 2015 Stress and Performance Tool (l'eseguibile è LyncPerfTool.exe):
   
 - [Creare utenti e contatti](using-the-tool.md#BKMK_CreateUsersAndContacts)
     
@@ -59,7 +59,7 @@ Questo è un elenco di termini utili che potrebbero essere utili durante la lett
   
 Devi usare lo strumento di provisioning Skype for Business Server utente per creare utenti e contatti per la simulazione del carico.
   
-Lo **Skype for Business Server User Provisioning Tool** viene installato con il pacchetto Skype for Business Server Strumento stress **e** prestazioni. Assicurarsi che il programma di installazione del pacchetto (CapacityPlanningTool.msi) sia stato eseguito nel Front End Server o nel server edizione Standard che si intende testare.
+Lo **Skype for Business Server user provisioning tool** viene installato con il pacchetto Skype for Business Server Stress and Performance **Tool.** Assicurarsi che il programma di installazione del pacchetto (CapacityPlanningTool.msi) sia stato eseguito nel Front End Server o nel server edizione Standard che si intende testare.
   
 È possibile avviare lo strumento di provisioning degli utenti di Skype for Business Server eseguendo il file UserProvisioningTool.exe (disponibile in %InstalledDirectory%LyncStressAndPerfTool\LyncStress) nel Front End Server o nel server edizione Standard.
   
@@ -86,7 +86,7 @@ Se si dispone di un file XML preconfigurato che contiene già le impostazioni pe
     
 6. Nel campo **Telefono codice area** digitare il codice di area a tre cifre da utilizzare in tutti gli account utente di test. Assicurarsi che il codice area scelto non sia in conflitto con i codici di area di altri utenti in Active Directory.
     
-7. Fare clic per selezionare **la casella di controllo** Voice Enabled se si desidera abilitare gli utenti di test per VoIP aziendale.
+7. Fare clic per selezionare **la casella di controllo Voice Enabled** se si desidera abilitare gli utenti di test per VoIP aziendale.
     
 8. Nel **campo Numero di utenti** assegnare il numero totale di utenti di test che si desidera creare.
     
@@ -96,7 +96,7 @@ Se si dispone di un file XML preconfigurato che contiene già le impostazioni pe
   
 #### <a name="create-users-button"></a>Pulsante Crea utenti
 
-Quando fai clic sul **pulsante Crea utenti,** i parametri di input immessi vengono convalidati. Se sono presenti errori di convalida, verrà richiesto di correggerli. In caso contrario, se tutti i valori sono corretti, gli utenti inizieranno a comparire in Active Directory (indipendentemente dall'unità organizzativa specificata). Vedrai un indicatore di stato nella parte inferiore dello strumento durante l'esecuzione. Non chiudere l'applicazione mentre l'indicatore di stato è attivo.
+Quando fai clic sul **pulsante Crea utenti,** i parametri di input immessi vengono convalidati. Se sono presenti errori di convalida, verrà richiesto di correggerli. In caso contrario, se tutti i valori sono corretti, gli utenti inizieranno a comparire in Active Directory (indipendentemente dall'unità organizzativa specificata). Vedrai un indicatore di stato nella parte inferiore dello strumento mentre viene eseguito. Non chiudere l'applicazione mentre l'indicatore di stato è attivo.
   
 La creazione degli utenti richiede tempo, quindi pianifica di conseguenza. Questo processo può richiedere da diversi minuti per pochi utenti a poche ore per un numero elevato di utenti.
   
@@ -110,7 +110,7 @@ Se non si ha accesso al controller di dominio Active Directory nell'ambiente di 
 Quando fai clic sul **pulsante Elimina utenti,** i parametri di input della scheda verranno convalidati. Se sono presenti errori di convalida, verrà richiesto di correggerli e, se i valori di input sono corretti, gli utenti di test specificati verranno disabilitati ed eliminati da Active Directory. Anche in questo caso, nella parte inferiore di questa scheda verrà visualizzata una barra di stato e non è consigliabile chiudere l'applicazione mentre l'indicatore di stato è attivo.
   
 > [!NOTE]
-> Sono supportati solo i numeri di telefono formattati con gli Stati Uniti. Telefono sono sempre assegnati agli utenti e tutti gli utenti creati da UserProvisioningTool.exe sono abilitati per VoIP aziendale per impostazione predefinita. Tutti gli scenari in cui viene utilizzato il numero di telefono, ad esempio le chiamate Operatore automatico conferenza o UC-PSTN, utilizzano questo numero di telefono per instradare correttamente le chiamate. Per questo motivo, *ogni utente* deve avere un numero di *telefono univoco.*
+> Sono supportati solo i numeri di telefono formattati con gli Stati Uniti. Telefono sono sempre assegnati agli utenti e tutti gli utenti creati da UserProvisioningTool.exe sono abilitati per VoIP aziendale per impostazione predefinita. Tutti gli scenari in cui viene utilizzato il numero di telefono, ad esempio chiamate Operatore automatico conferenza o CHIAMATE UC-PSTN, utilizzano questo numero di telefono per instradare correttamente le chiamate. Per questo motivo, *ogni utente* deve avere un numero di *telefono univoco.*
   
 > [!NOTE]
 > **Se è necessario creare utenti due volte, il comando avrà esito negativo a meno che non si utilizzi un codice di area diverso o se gli utenti precedenti sono stati disabilitati utilizzando il cmdlet Disable-CsUser.**
@@ -119,7 +119,7 @@ Quando fai clic sul **pulsante Elimina utenti,** i parametri di input della sche
 > Prima di creare i contatti, è innanzitutto necessario completare la replica degli utenti,che viene eseguita dalla scheda Utenti. 
   
 > [!IMPORTANT]
-> Se gli utenti sono appena stati creati, è necessario attendere il completamento Skype for Business Server e popolare gli account utente nel database. **Se gli utenti non hanno completato la replica, verrà visualizzato un errore.** È possibile sapere quando gli utenti hanno completato la replica se il servizio Front End di Skype for Business Server 2015 è stato avviato o eseguendo correttamente il cmdlet Get-CsUser sull'ultimo utente del numero totale specificato.
+> Se gli utenti sono appena stati creati, è necessario attendere il completamento Skype for Business Server e popolare gli account utente nel database. **Se gli utenti non hanno completato la replica, verrà visualizzato un errore.** È possibile sapere quando gli utenti hanno completato la replica se il servizio Front End di Skype for Business Server 2015 è stato avviato oppure eseguendo correttamente il cmdlet Get-CsUser sull'ultimo utente del numero totale specificato.
   
 #### <a name="contacts-creation-tab"></a>Scheda Creazione contatti
 
@@ -199,11 +199,11 @@ Per importare questi file nel database LIS, utilizzare i cmdlet di PowerShell se
 ## <a name="configure-user-profile"></a>Configurare il profilo utente
 <a name="BKMK_UserProfile"> </a>
 
-Dopo aver creato gli utenti (tramite lo strumento di creazione utenti), è possibile configurare i profili utente con lo strumento di configurazione del carico di Skype for Business Server 2015 (UserProfileGenerator.exe).
+Dopo aver creato gli utenti (tramite lo Strumento di creazione utenti), è possibile configurare i profili utente con lo strumento di configurazione del carico di Skype for Business Server 2015 (UserProfileGenerator.exe).
   
 ### <a name="running-the-skype-for-business-server-2015-load-configuration-tool"></a>Esecuzione dello strumento di Skype for Business Server 2015 Load Configuration
 
-Avvia lo strumento Di configurazione del carico (UserProfileGenerator.exe) e compila le schede. Questo strumento crea una directory per ognuno dei computer client necessari per eseguire le simulazioni. Ogni directory client include uno script per avviare lo strumento Skype for Business Server 2015 Stress and Performance (LyncPerfTool.exe). Nelle sezioni seguenti vengono forniti esempi di come compilare i campi in ogni scheda dello strumento di Skype for Business Server 2015 Load Configuration.
+Avvia lo strumento Carica configurazione (UserProfileGenerator.exe) e compila le schede. Questo strumento crea una directory per ognuno dei computer client necessari per eseguire le simulazioni. Ogni directory client include uno script per avviare lo strumento Skype for Business Server 2015 Stress and Performance (LyncPerfTool.exe). Nelle sezioni seguenti vengono forniti esempi di come compilare i campi in ogni scheda dello Skype for Business Server 2015 Load Configuration.
   
 > [!IMPORTANT]
 > I valori specifici dell'utente utilizzati nello strumento di configurazione del carico (UserProfileGenerator.exe) devono corrispondere ai valori specificati nello strumento di creazione utenti di Skype for Business Server 2015 (UserProvisioningTool.exe) per il pool. 
@@ -224,7 +224,7 @@ La **scheda Configurazione** comune dello strumento di configurazione del carico
     
 5. Nel **campo Numero di** utenti immettere il numero totale di utenti che si desidera configurare.
     
-6. Nel campo **Dominio utente** immettere il dominio utilizzato per l'URI SIP. Viene utilizzato per creare l'URI SIP di ogni utente per accedere al front-end server o al server edizione Standard di Skype for Business Server 2015 e può essere diverso dal dominio account.
+6. Nel campo **Dominio utente** immettere il dominio utilizzato per l'URI SIP. Viene utilizzato per creare l'URI SIP di ogni utente per accedere al front-end server o al server edizione Standard di Skype for Business Server 2015 e può essere diverso dal dominio dell'account.
     
 7. Nel campo **Dominio account** immettere l'accesso al dominio di Servizi di dominio Active Directory.
     
@@ -286,7 +286,7 @@ Questa è la scheda per la configurazione di tutti gli scenari correlati alla vo
   
 Le opzioni disponibili sono:
   
-- **VoIP -** Fare clic **sul pulsante** Avanzate e aggiungere i valori per i campi PhoneAreaCode e LocationProfile (dial plan). Verrà inoltre restituito un valore per Livello di carico. Se si sceglie un livello di carico per VoIP o Gateway UC/PSTN abilitato, verrà generata una rete PSTN (Public Switched Telephone Network) per il file di configurazione delle comunicazioni unificate (UC) per simulare le chiamate esterne.
+- **VoIP -** Fare clic **sul pulsante** Avanzate e aggiungere i valori per i campi PhoneAreaCode e LocationProfile (dial plan). Verrà inoltre restituito un valore per Livello di carico. Se si sceglie un livello di carico per VoIP o Gateway UC/PSTN abilitato, verrà generata una rete PSTN (Public Switched Telephone Network) per il file di configurazione delle comunicazioni unificate per simulare le chiamate esterne.
     
 - **Gateway UC/PSTN -** È necessario scegliere un valore livello di carico e quando si sceglie un valore diverso da Disabilitato, è anche necessario fornire un valore per il codice di area PSTN facendo clic sul **pulsante** Avanzate. Fare **clic su** Aggiungi in Mediation Server e PSTN. Assicurati di avere una route configurata per il codice di area.
     
@@ -319,7 +319,7 @@ Web App supporta gli scenari di conferenza tramite il server UCWA (Unified Commu
 - **Servizi di conferenza vocale -** Selezionare un valore per Livello di carico.
     
 > [!NOTE]
-> Accanto a ognuno degli scenari **è** presente un pulsante Avanzate. Le finestre di dialogo avanzate contengono valori specifici per ogni scenario che modificano il comportamento dello Strumento stress e prestazioni e abilitano la personalizzazione.> Per ognuno degli scenari di Web App, se il livello di carico è **Personalizzato,** viene utilizzato il valore specificato nel campo **ConversationsPerHour** anziché il valore predefinito.
+> Accanto a ognuno degli scenari **è** presente un pulsante Avanzate. Le finestre di dialogo avanzate contengono valori specifici per ogni scenario che modificano il comportamento dello Strumento stress e prestazioni e abilitano la personalizzazione.> Per ognuno degli scenari dell'app Web, se il livello di carico è **Personalizzato,** viene utilizzato il valore specificato nel campo **ConversationsPerHour** anziché il valore predefinito.
   
 #### <a name="mobility-tab"></a>Scheda Dispositivi mobili
 
@@ -334,7 +334,7 @@ Di seguito sono disponibili le opzioni seguenti:
 - **Presenza e messaggistica istantanea P2P/Audio -** Selezionare un valore per Livello di carico per abilitare la simulazione per dispositivi mobili.
     
 > [!NOTE]
-> Accanto a ognuno degli scenari **è** presente un pulsante Avanzate. Le finestre di dialogo avanzate contengono valori specifici per ogni scenario che modificano il comportamento dello Strumento stress e prestazioni e abilitano la personalizzazione.> Per ognuno degli scenari per dispositivi mobili, se il livello di carico è **Personalizzato,** viene utilizzato il valore specificato nel campo **ConversationsPerHour** anziché il valore predefinito.
+> Accanto a ognuno degli scenari **è** presente un pulsante Avanzate. Le finestre di dialogo avanzate contengono valori specifici per ogni scenario che modificano il comportamento dello Strumento stress e prestazioni e abilitano la personalizzazione.> Per ognuno degli scenari per dispositivi mobili, se il livello di carico è **Personalizzato,** verrà utilizzato il valore specificato nel campo **ConversationsPerHour** anziché il valore predefinito.
   
 #### <a name="summary-tab"></a>Scheda Riepilogo
 
@@ -346,7 +346,7 @@ La scheda Riepilogo indica quali utenti utilizzare per ognuno degli scenari.
   
 È possibile configurare manualmente gli intervalli  di numeri utente selezionando la casella di controllo Abilita generazione di intervalli utente personalizzati e quindi facendo doppio clic nello scenario nella tabella contenente l'intervallo di utenti che si desidera personalizzare.
   
-Controlla **(RunClient.bat)** Aggiungi ritardo di accesso all'avvio per includere ritardi nei file batch generati in modo che corrispondano alla frequenza di accesso. Ciò è utile per evitare sovraccarichi del server quando si accede a un numero elevato di utenti.
+Check **(RunClient.bat) Add sign-in delay when starting** in order to include delays in the generated batch files to correspond to the sign-in rate. Ciò è utile per evitare sovraccarichi del server quando si accede a un numero elevato di utenti.
   
 Fare **clic su** Genera file e selezionare la cartella in cui si desidera generare la configurazione. Quando i file sono stati creati correttamente, verrà visualizzata una finestra di dialogo.
   
@@ -359,19 +359,19 @@ Fare **clic su** Genera file e selezionare la cartella in cui si desidera genera
   
 ### <a name="running-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Esecuzione dello strumento Skype for Business Server 2015 Stress and Performance
 
-Lo strumento load configuration (UserProfileGenerator.exe) crea un file batch che consente di eseguire lo strumento Stress and Performance (LyncPerfTool.exe) registrando i contatori delle prestazioni e caricando il file di configurazione XML. Il file batch esegue un'istanza di LyncPerfTool.exe per ogni file di configurazione. Per eseguire il file batch, attenersi alla seguente procedura:
+Lo strumento di configurazione del carico (UserProfileGenerator.exe) crea un file batch che consente di eseguire lo strumento Stress and Performance (LyncPerfTool.exe) registrando i contatori delle prestazioni e caricando il file di configurazione XML. Il file batch esegue un'istanza di LyncPerfTool.exe per ogni file di configurazione. Per eseguire il file batch, attenersi alla seguente procedura:
   
 ### <a name="run-the-stress-and-performance-test"></a>Eseguire il test stress e prestazioni
 
-1. Copiare la cartella con le cartelle e i file di configurazione all'interno della directory LyncPerfTool.exe in ogni computer client. Ad esempio, se i file di configurazione sono stati generati nella cartella denominata 1.28_13.16.16, copiare tale cartella nella cartella in cui è presente LyncPerfTool.exe. Eseguire questa operazione su ogni client.
+1. Copiare la cartella con le cartelle e i file di configurazione all'interno della directory LyncPerfTool.exe in ogni computer client. Ad esempio, se sono stati generati i file di configurazione nella cartella denominata 1.28_13.16.16, copiare la cartella nella cartella con LyncPerfTool.exe in essa. Eseguire questa operazione su ogni client.
     
-2. Passare alla cartella del client ed eseguire lo script batch **RunClient.** È possibile fare doppio clic sul file batch in Windows Explorer e verranno eseguiti tutti i file di configurazione per il client. È inoltre possibile eseguire lo script da una cartella client utilizzando la sintassi seguente:
+2. Passare alla cartella del client ed eseguire lo script batch **RunClient.** È possibile fare doppio clic sul file batch in Windows Explorer e verranno eseguiti tutti i file di configurazione per tale client. È inoltre possibile eseguire lo script da una cartella client utilizzando la sintassi seguente:
     
    ```console
    RunClient0.bat "C:\Program Files\Skype for Business Server 2015\LyncStressAndPerfTool\LyncStress" 
    ```
 
-Per eseguire lo strumento Stress and Performance direttamente, aprire un prompt dei comandi e digitare il comando seguente nella riga di comando (e quando si esegue questa operazione per la prima volta, assicurarsi di registrare i contatori delle prestazioni , come illustrato nella nota più avanti  `regsvr32 /i /n /s LyncPerfToolPerf.dll` in questo argomento):
+Per eseguire lo strumento Stress and Performance direttamente, aprire un prompt dei comandi e digitare il comando seguente nella riga di comando (e quando si esegue questa operazione per la prima volta, assicurarsi di registrare i contatori delle prestazioni , come illustrato nella nota più avanti in questo  `regsvr32 /i /n /s LyncPerfToolPerf.dll` argomento):
   
 ```console
 LyncPerfTool.exe /file:IM_client0.xml
@@ -396,7 +396,7 @@ La frequenza di accesso utente massima per il pool è di circa 12 al secondo. Ci
 ## <a name="interpreting-the-results"></a>Interpretazione dei risultati
 <a name="BKMK_Interpret"> </a>
 
-Lo Skype for Business Server 2015 Stress and Performance Tool dispone di numerosi contatori che consentono di comprendere cosa sta facendo il client e se si verificano problemi.
+Lo Skype for Business Server 2015 Stress and Performance Tool include numerosi contatori che consentono di comprendere cosa sta facendo il client e se si verificano problemi.
   
 ### <a name="client-counters"></a>Contatori client
 

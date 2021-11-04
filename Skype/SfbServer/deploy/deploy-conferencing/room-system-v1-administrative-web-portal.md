@@ -1,7 +1,7 @@
 ---
 title: Distribuire il portale Web amministrativo di SRS v1 in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.assetid: 81822efa-2100-4017-a470-8a5b98c49522
 ms.collection: M365-voice
 description: Il portale Web amministrativo Skype for Business Server Skype Room Systems v1 (SRS v1, in precedenza noto come Lync Room System) è un portale Web che le organizzazioni possono utilizzare per gestire le proprie sale riunioni Skype Room Systems. Gli amministratori possono utilizzare il portale Web di amministrazione di SRS v1 per monitorare l'integrità dei dispositivi, ad esempio monitorando i dispositivi audio/video. Con questo portale, gli amministratori possono raccogliere in remoto informazioni di diagnostica per monitorare l'integrità delle sale riunioni.
-ms.openlocfilehash: 0b52657d33b4da97266a635b53459ed21fd4a944
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: aa59b142ee7147772af3c13a7e9bf4dffbbc520c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58729115"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60751345"
 ---
 # <a name="deploy-srs-v1-administrative-web-portal-in-skype-for-business-server"></a>Distribuire il portale Web amministrativo di SRS v1 in Skype for Business Server
 
@@ -61,7 +61,7 @@ Per utilizzare il portale Web amministrativo di SRS v1, è necessario installare
 
 4. Creare un gruppo di sicurezza di Active Directory con nome LRSFullAccessAdminGroup.
 
-    Creare il gruppo con Ambito gruppo come Globale e Tipo di gruppo come Security.SIP gli utenti che vengono aggiunti a questo gruppo sono autorizzati a utilizzare tutte le funzionalità del portale di amministrazione in una singola Skype locale. Per includere il supporto per la gestione in blocco Skype chat room, vedere il passaggio 5.
+    Creare il gruppo con Ambito gruppo come Globale e Tipo di gruppo come Security.SIP gli utenti che vengono aggiunti a questo gruppo sono autorizzati a utilizzare tutte le funzionalità del portale di amministrazione in una singola Skype room. Per includere il supporto per la gestione in blocco Skype chat room, vedere il passaggio 5.
 
      ![Elenco di gruppi di amministratori con ruolo di gruppo di sicurezza.](../../media/LRS_LRSFullAccessAdminGroup.png)
 
@@ -155,7 +155,7 @@ La pagina di riepilogo fornisce le informazioni seguenti per tutte le sale SRS d
 
 - **Tag** Nome personalizzato che l'amministratore assegna alla sala. Il tag può essere impostato nel portale facendo clic sul nome della sala.
 
-- **Integrità** Lo stato di integrità della sala, derivato dallo stato Aggrega integrità della sala, visualizzato nella sezione Integrità della pagina Impostazioni chat room.
+- **Integrità** Lo stato di integrità della sala, derivato dallo stato di integrità aggregata della sala, visualizzato nella sezione Integrità della pagina Impostazioni chat room.
 
 - **Riunione successiva** Data e ora di pianificazione della riunione successiva.
 
@@ -190,7 +190,7 @@ La sezione Risoluzione dei problemi può essere utilizzata per raccogliere in re
 
 #### <a name="health"></a>Sanità
 
-La sezione Health fornisce un'indicazione visiva dell'integrità della connessione Skype for Business Server, del dispositivo audio, del dispositivo video, dello stato di resilienza e del dispositivo schermo.
+La sezione Integrità fornisce un'indicazione visiva dell'integrità della connessione Skype for Business Server, del dispositivo audio, del dispositivo video, dello stato di resilienza e del dispositivo schermo.
 
 ![Lync Room System Admin Portal Room Health.](../../media/LRS_AdminPortal_RoomInfoHealth.png)
 

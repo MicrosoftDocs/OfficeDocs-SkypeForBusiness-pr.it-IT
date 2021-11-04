@@ -1,7 +1,7 @@
 ---
 title: Trunking SIP in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 7c586401-d0e5-4017-b3e1-fe5e7f8fc6db
 description: Informazioni sul trunking SIP in Skype for Business Server VoIP aziendale
-ms.openlocfilehash: d10f14a8c3f65309c52351a0721aa042faad47b6
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 599745b59d3597afa9e9f4cdc23b6c648fdbbab0
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728235"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60744192"
 ---
 # <a name="sip-trunking-in-skype-for-business-server"></a>Trunking SIP in Skype for Business Server
 
@@ -31,7 +31,7 @@ Il protocollo SIP (Session Initiation Protocol) viene utilizzato per avviare e g
 
 ## <a name="what-is-sip-trunking"></a>Cos'è il trunking SIP?
 
-Un trunk SIP è una connessione IP che consente di stabilire un collegamento di comunicazione SIP tra l'organizzazione e un provider di servizi di telefonia Internet (ITSP) oltre il firewall. In genere, un trunk SIP viene utilizzato per connettere il sito centrale dell'organizzazione a un PROVIDER ITSP. In alcuni casi, è anche possibile scegliere di utilizzare il trunking SIP per connettere un sito derivato a un ITSP.
+Un trunk SIP è una connessione IP che consente di stabilire un collegamento di comunicazione SIP tra l'organizzazione e un provider di servizi di telefonia Internet (ITSP) oltre il firewall. In genere, viene utilizzato un trunk SIP per connettere il sito centrale dell'organizzazione a un PROVIDER ITSP. In alcuni casi, è anche possibile scegliere di utilizzare il trunking SIP per connettere un sito derivato a un ITSP.
 
 La distribuzione del trunking SIP può essere un grande passo verso la semplificazione delle telecomunicazioni dell'organizzazione e la preparazione per i miglioramenti aggiornati alle comunicazioni in tempo reale. Uno dei principali vantaggi del trunking SIP è che è possibile consolidare le connessioni dell'organizzazione alla rete PSTN (Public Switched Telephone Network) in un sito centrale, anziché al trunking TDM (Time Division Multiplexing) predecessore, che in genere richiede un trunk separato da ogni sito di succursale.
 
@@ -76,7 +76,7 @@ Per informazioni dettagliate sui Mediation Server, vedere [Mediation Server comp
 
 ### <a name="centralized-vs-distributed-sip-trunking"></a>Trunking SIP centralizzato o distribuito
 
-Il trunking SIP centralizzato instrada tutto il traffico VoIP, incluso il traffico del sito di succursale, attraverso il sito centrale. Il modello di distribuzione centralizzata è semplice, conveniente ed è in genere l'approccio consigliato per l'implementazione di trunk SIP con Skype for Business Server.
+Il trunking SIP centralizzato instrada tutto il traffico VoIP, incluso il traffico del sito di succursale, attraverso il sito centrale. Il modello di distribuzione centralizzata è semplice, conveniente ed è in genere l'approccio consigliato per l'implementazione dei trunk SIP con Skype for Business Server.
 
 Il trunking SIP distribuito è un modello di distribuzione in cui vengono implementati trunk SIP locali in uno o più siti di succursale. Il traffico VoIP viene quindi instradato dal sito di succursale direttamente a un provider di servizi senza passare attraverso il sito centrale.
 
@@ -97,7 +97,7 @@ A seconda della posizione geografica dei siti e del traffico previsto all'intern
 Per scegliere se distribuire il trunking SIP centralizzato o distribuito, è necessaria un'analisi costi-benefici. In alcuni casi può essere vantaggioso scegliere il modello di trunking SIP distribuito, anche quando non è obbligatorio. In una distribuzione completamente centralizzata, tutto il traffico dei siti di succursale viene instradato su collegamenti WAN. Per non incorrere nei costi della larghezza di banda necessaria per i collegamenti WAN, può essere preferibile utilizzare il trunking SIP distribuito. È ad esempio possibile distribuire un server edizione Standard in un sito di succursale con federazione nel sito centrale oppure un Survivable Branch Appliance o un Survivable Branch Server con un gateway di piccole dimensioni.
 
 > [!NOTE]
-> Per informazioni dettagliate sul trunking SIP distribuito, vedere [Branch site SIP trunking in Skype for Business Server.](branch-site.md)
+> Per informazioni dettagliate sul trunking SIP distribuito, vedere [Branch site SIP trunking in Skype for Business Server](branch-site.md).
 
 ### <a name="supported-sip-trunking-connection-types"></a>Tipi di connessione supportati per il trunking SIP
 
@@ -107,7 +107,7 @@ Skype for Business Server supporta i tipi di connessione seguenti per il trunkin
 
 - Una connessione privata senza altro traffico, ad esempio una connessione su fibra ottica dedicata o linea T1. Questo tipo di connessione è in genere il più affidabile e sicuro. Garantisce un'elevata capacità di trasporto delle chiamate, ma è anche il più costoso. Non è richiesta una VPN. Le connessioni private sono appropriate per le organizzazioni con un elevato volume di chiamate o con requisiti di disponibilità e sicurezza rigorosi.
 
-- Internet è il tipo di connessione meno costoso, ma è anche il meno affidabile. La connessione Internet è l'Skype for Business Server di connessione trunking SIP che richiede VPN.
+- Internet è il tipo di connessione meno costoso, ma è anche il meno affidabile. La connessione Internet è l'Skype for Business Server di connessione trunking SIP che richiede vpn.
 
 #### <a name="selecting-a-connection-type"></a>Scelta di un tipo di connessione
 

@@ -1,7 +1,7 @@
 ---
 title: Integrazione tra Skype for Business Online e Exchange server
 ms.reviewer: cbland
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 4/2/2019
@@ -14,24 +14,24 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ffe4c3ba-7bab-49f1-b229-5142a87f94e6
 description: La configurazione dell'autenticazione OAuth tra Exchange locale e Skype for Business Online abilita le funzionalità di Skype for Business e Exchange Integration descritte in Supporto delle funzionalità.
-ms.openlocfilehash: 8adb5209a00d1b42dc57f9de8635ade40966f9f1
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 0e811a7feb713e2c356acdeba5461a212bfff17e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621778"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60764774"
 ---
 # <a name="configure-integration-and-oauth-between-skype-for-business-online-and-exchange-server"></a>Configurare l'integrazione e OAuth tra Skype for Business Online e Exchange Server 
 
-La configurazione dell'integrazione tra Exchange server e Skype for Business Online abilita le funzionalità di Skype for Business e Exchange Integration descritte in [Supporto delle funzionalità.](../../plan-your-deployment/integrate-with-exchange/integrate-with-exchange.md#feature_support)
+La configurazione dell'integrazione tra Exchange server e Skype for Business Online abilita le funzionalità Skype for Business e Exchange Integration descritte in [Supporto delle funzionalità.](../../plan-your-deployment/integrate-with-exchange/integrate-with-exchange.md#feature_support)
 
-Questo argomento si applica all'integrazione con Exchange Server 2013 fino al 2019.
+Questo argomento si applica all'integrazione Exchange Server 2013 fino al 2019.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Tempo stimato per il completamento di questa attività: 15 minuti
 
--  Per eseguire queste procedure, è necessario disporre delle autorizzazioni appropriate. Per sapere quali autorizzazioni sono necessarie, vedere l'argomento autorizzazioni Exchange [e dell'infrastruttura shell.](/exchange/exchange-and-shell-infrastructure-permissions-exchange-2013-help)
+-  Per eseguire queste procedure, è necessario disporre delle autorizzazioni appropriate. Per sapere quali autorizzazioni sono necessarie, vedere l'argomento autorizzazioni Exchange [e infrastruttura shell.](/exchange/exchange-and-shell-infrastructure-permissions-exchange-2013-help)
 
 - Per informazioni sui tasti di scelta rapida che è possibile utilizzare con le procedure in questo argomento, vedere [Tasti di scelta rapida nell'interfaccia di amministrazione di Exchange]( https://go.microsoft.com/fwlink/p/?LinkId=746512).
 
@@ -45,7 +45,7 @@ Eseguire la procedura descritta nell'articolo seguente:
 
 [Configurazione dell'autenticazione OAuth tra organizzazioni Exchange ed Exchange Online](/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help)
 
-### <a name="step-2-create-a-new-mail-user-account-for-the-skype-for-business-online-partner-application"></a>Passaggio 2: Creare un nuovo account utente di posta per l Skype for Business appalto partner online
+### <a name="step-2-create-a-new-mail-user-account-for-the-skype-for-business-online-partner-application"></a>Passaggio 2: Creare un nuovo account utente di posta per l'applicazione Skype for Business partner online
 
 Questo passaggio viene eseguito nel server Exchange server. Verrà creato un utente di posta elettronica e gli verranno assegnati i diritti di ruolo di gestione appropriati. Questo account verrà quindi utilizzato nel passaggio successivo.
 
@@ -103,9 +103,9 @@ In Exchange PowerShell nell'organizzazione Exchange locale, eseguire lo script d
 
 ### <a name="step-5-upload-the-on-premises-authorization-certificate-to-azure-active-directory-acs"></a>Passaggio 5: Upload il certificato di autorizzazione locale per Azure Active Directory ACS
 
-Successivamente, usare Windows PowerShell per caricare il certificato di autorizzazione locale esportato nel passaggio precedente in Azure Active Directory Access Control Services (ACS). A tale scopo, è necessario che Azure Active Directory modulo per Windows PowerShell cmdlet sia già installato. Se non è installato, passare a per installare il modulo [https://aka.ms/aadposh](/previous-versions/azure/jj151815(v=azure.100)) Azure Active Directory per Windows PowerShell. Completare i passaggi seguenti dopo l'installazione Azure Active Directory modulo per Windows PowerShell.
+Successivamente, usare Windows PowerShell per caricare il certificato di autorizzazione locale esportato nel passaggio precedente in Azure Active Directory Access Control Services (ACS). A tale scopo, è necessario che Azure Active Directory modulo per Windows PowerShell cmdlet sia già installato. Se non è installato, passare a per installare il modulo [https://aka.ms/aadposh](/previous-versions/azure/jj151815(v=azure.100)) Azure Active Directory per Windows PowerShell. Completare i passaggi seguenti dopo l'installazione del modulo Azure Active Directory per Windows PowerShell.
 
-1. Fare clic **sul Azure Active Directory modulo per Windows PowerShell** per aprire un'Windows PowerShell di lavoro in cui sono installati i cmdlet di Azure AD. Tutti i comandi in questo passaggio verranno eseguiti utilizzando il Windows PowerShell per Azure Active Directory console.
+1. Fare clic **sul Azure Active Directory modulo** Windows PowerShell per aprire un'Windows PowerShell di lavoro in cui sono installati Azure AD cmdlet. Tutti i comandi in questo passaggio verranno eseguiti utilizzando il Windows PowerShell per Azure Active Directory console.
 
 2. Salvare il testo seguente in un file script di PowerShell denominato, ad  `UploadAuthCert.ps1` esempio.
 
@@ -126,7 +126,7 @@ Successivamente, usare Windows PowerShell per caricare il certificato di autoriz
 
 3. Eseguire lo script di PowerShell creato nel passaggio precedente. Esempio:  `.\UploadAuthCert.ps1`
 
-4. Dopo avere avviato lo script, viene visualizzata una finestra di dialogo relativa alle credenziali. Immettere le credenziali per l'account di amministratore tenant dell'organizzazione di Microsoft Online Azure AD. Dopo aver eseguito lo script, lasciare aperta la Windows PowerShell per Azure AD. Questa verrà utilizzata per eseguire uno script di PowerShell nel prossimo passaggio.
+4. Dopo avere avviato lo script, viene visualizzata una finestra di dialogo relativa alle credenziali. Immettere le credenziali per l'account di amministratore tenant dell'organizzazione Azure AD Microsoft Online. Dopo aver eseguito lo script, lasciare aperto il Windows PowerShell per Azure AD sessione. Questa verrà utilizzata per eseguire uno script di PowerShell nel prossimo passaggio.
 
 ### <a name="step-6-verify-that-the-certificate-has-uploaded-to-the-skype-for-business-service-principal"></a>Passaggio 6: verificare che il certificato sia stato caricato nell'entità Skype for Business servizio
 1. In PowerShell aperto e autenticato per Azure Active Directory, eseguire il comando seguente
@@ -146,7 +146,7 @@ Verificare che la configurazione sia corretta verificando che alcune funzionalit
 
 3. Verificare che i messaggi di chat archiviati siano archiviati nella cassetta postale locale dell'utente nella cartella Ripuliture utilizzando [EWSEditor.](/archive/blogs/webdav_101/where-to-get-ewseditor)
 
-In alternativa, esaminare il traffico. Il traffico in un handshake OAuth è veramente distintivo (e non è simile all'autenticazione di base), in particolare intorno alle aree di autenticazione, in cui inizierai a vedere il traffico dell'autorità emittente simile al seguente: 000000004-0000-0ff1-ce00-00000000000000@ (a volte con un segno / prima del segno @), nei token che vengono passati. Non verrà visualizzato un nome utente o una password, che è il punto di OAuth. Tuttavia, verrà visualizzata l'autorità emittente "Office", in questo caso "4" Skype for Business, e l'area di autenticazione dell'abbonamento.
+In alternativa, esaminare il traffico. Il traffico in un handshake OAuth è veramente distintivo (e non è simile all'autenticazione di base), in particolare intorno alle aree di autenticazione, in cui inizierai a vedere il traffico dell'autorità emittente simile al seguente: 000000004-0000-0ff1-ce00-00000000000000@ (a volte con un segno / prima del segno @), nei token che vengono passati. Non verrà visualizzato un nome utente o una password, che è il punto di OAuth. Tuttavia, verrà visualizzata l'autorità di Office ' (in questo caso "4" è Skype for Business) e l'area di autenticazione dell'abbonamento.
 
 Se si desidera essere certi di aver utilizzato OAuth correttamente, assicurarsi di sapere cosa aspettarsi e conoscere l'aspetto del traffico. Ecco [](https://tools.ietf.org/html/draft-ietf-oauth-v2-23#page-34)cosa aspettarsi, ecco un esempio piuttosto standard di traffico [OAuth in](https://download.microsoft.com/download/8/5/8/858F2155-D48D-4C68-9205-29460FD7698F/[MS-SPS2SAUTH].pdf) un'applicazione Microsoft (molto utile da leggere, anche se non usa token Refresh) e sono disponibili estensioni Fiddler che ti consentiranno di esaminare il token JWT OAuth (JSON Web Token).
 

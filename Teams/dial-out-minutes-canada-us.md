@@ -1,7 +1,7 @@
 ---
 title: Office 365 Audioconferenza estesa Minuti di chiamata in uscita per Stati Uniti e Canada
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 39b8bc2aee158ea5992c4255932606cf4f5f81ac
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: cd2c1ec4f5a4c96f62b54a9c97cecb003b05e731
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58605805"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60751525"
 ---
 # <a name="office-365-audio-conferencing-extended-dial-out-minutes-to-us-and-canada"></a>Office 365 Audioconferenza estesa Minuti di chiamata in uscita per Stati Uniti e Canada
 
@@ -37,8 +37,8 @@ Per i clienti che adottano il servizio di audioconferenza e hanno un'elevata esi
 | I minuti sono in pool?  |No. Un organizzatore della riunione avrà un numero praticamente illimitato di minuti di chiamata in uscita per gli Stati Uniti e il Canada al mese. |
 | Questo nuovo SKU del componente aggiuntivo sostituirà i 60 minuti inclusi nelle audioconferenze? | No. I 60 minuti di audioconferenza esistenti per utente al mese, in pool a livello di tenant, continueranno a essere applicati a tutti i paesi dei servizi di conferenza telefonica con accesso esterno dell'area A.|
 | Che cos'è la disponibilità del canale?  | È disponibile in EA/EAS, EES, CSP e Web Direct.  |
-| Qual è la disponibilità del segmento? | È disponibile per i settori commerciale (inclusi i settori pubblici commerciali wwe), per l'istruzione, per le organizzazioni no profit e per gli Stati Uniti GCC |
-| Cosa succede se un utente con Extended Dial-out Minutes to USA/CAN si trova negli Stati Uniti e si reca in un altro paese al di fuori di un Audio-Conferencing di vendita al mercato? Il servizio di accesso remoto funzionerà? | Sì. Se un utente con sede negli Stati Uniti (ovvero la licenza di Office 365 è assegnata negli Stati Uniti) si è recato in Zimbabwe (un mercato attualmente non in vendita per le audioconferenze), tutti i minuti di chiamata in uscita effettuati negli Stati Uniti o in Canada continueranno a essere applicati ai loro Minuti estesi di chiamata in uscita verso STATI UNITI/CAN, indipendentemente da dove viene effettuata la chiamata. |
+| Qual è la disponibilità del segmento? | È disponibile per i settori commerciale (inclusi i settori pubblici commerciali wwe), per l'istruzione, per le organizzazioni no profit e per le organizzazioni GCC |
+| Cosa succede se un utente con Extended Dial-out Minutes to USA/CAN si trova negli Stati Uniti e si reca in un altro paese all'esterno di un Audio-Conferencing di vendita a destinazione? Il servizio di accesso remoto funzionerà? | Sì. Se un utente con sede negli Stati Uniti (ovvero la licenza di Office 365 è assegnata negli Stati Uniti) è stato recato in Zimbabwe (un mercato attualmente non in una posizione di vendita per audioconferenza), tutti i minuti di chiamata in uscita effettuati negli Stati Uniti o in Canada continueranno a essere applicati ai loro Minuti estesi di chiamata in uscita verso STATI UNITI/CAN, indipendentemente da dove viene effettuata la chiamata. |
 |||
 
 <sup>1</sup> Microsoft si riserva il diritto di limitare o terminare l'uso della funzionalità in caso di utilizzo anomalo o sospetto di utilizzo per scopi fraudolenti.

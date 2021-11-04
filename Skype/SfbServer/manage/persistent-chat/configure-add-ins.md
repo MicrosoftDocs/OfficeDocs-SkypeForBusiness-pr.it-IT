@@ -1,7 +1,7 @@
 ---
 title: Configurare i componenti aggiuntivi per le chat room di Persistent Chat Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/28/2016
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c1037909-0750-411a-98c1-3a327eed4ae8
 description: 'Riepilogo: informazioni su come configurare i componenti aggiuntivi per le chat room del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: ab2ccbe3c9f23a7397ecdf7510da63bbd84b9d95
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 183ac4cbbdcdddfea65b3a6acab44ef4c81fe662
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60013390"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60745952"
 ---
 # <a name="configure-add-ins-for-persistent-chat-rooms-in-skype-for-business-server-2015"></a>Configurare i componenti aggiuntivi per le chat room di Persistent Chat Skype for Business Server 2015
  
@@ -29,7 +29,7 @@ I componenti aggiuntivi vengono utilizzati per estendere l'esperienza in sala as
  Prima che gli utenti possano visualizzare un componente aggiuntivo nel client, è necessario aggiungerlo all'elenco dei componenti aggiuntivi registrati e i responsabili o i creatori delle chat room devono associare le chat room al componente aggiuntivo.
   
 > [!NOTE]
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
 
 ## <a name="configure-add-ins-for-chat-rooms-by-using-the-control-panel"></a>Configurare i componenti aggiuntivi per le chat room tramite il Pannello di controllo
 
@@ -37,7 +37,7 @@ Per configurare i componenti aggiuntivi per le chat room tramite il Pannello di 
   
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
+2. Dal menu **Start** seleziona il pannello Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
     
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Componente aggiuntivo**.
     

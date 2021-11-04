@@ -1,7 +1,7 @@
 ---
 title: Selezionare un operatore automatico di messaggistica unificata di Exchange
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,17 +15,17 @@ ms.localizationpriority: medium
 ms.assetid: ce6764ce-c88f-4050-895e-d1d886106972
 ROBOTS: NOINDEX, NOFOLLOW
 description: Usare la finestra di dialogo Seleziona Operatore automatico messaggistica unificata di Exchange per selezionare un operatore automatico di messaggistica unificata di Exchange che gestirà le chiamate in arrivo a un intervallo di numeri non assegnati.
-ms.openlocfilehash: 06976c1e6652f808623971cf2282e72c55f6d13f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 82a9c69ba935ccbbfb8d2ff17baee02b7c3eea4f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58577970"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60750955"
 ---
 # <a name="select-exchange-um-auto-attendant"></a>Selezionare un operatore automatico di messaggistica unificata di Exchange
 
 > [!NOTE]
-> Exchange La messaggistica unificata rimane disponibile Skype for Business Server 2019 quando si integra Skype for Business 2019 con Exchange 2013 o Exchange 2016. A causa delle modifiche apportate al supporto in Exchange 2019, l'integrazione di messaggistica unificata di Exchange viene de-enfatizzata a favore delle funzionalità Cloud Voicemail e cloud Operatore automatico.  Per [ulteriori informazioni, vedere Plan Cloud Voicemail service](../../../../SfBhybrid/hybrid/plan-cloud-voicemail.md) e Plan for Skype for Business Server and Exchange Server [migration.](../../../../SfBhybrid/hybrid/plan-um-migration.md)
+> Exchange La messaggistica unificata rimane disponibile Skype for Business Server 2019 quando si integra Skype for Business 2019 con Exchange 2013 o Exchange 2016. A causa delle modifiche apportate al supporto in Exchange 2019, l'integrazione di messaggistica unificata di Exchange viene de-enfatizzata a favore delle funzionalità di Cloud Voicemail e cloud Operatore automatico.  Per [ulteriori informazioni, vedere Plan Cloud Voicemail service](../../../../SfBhybrid/hybrid/plan-cloud-voicemail.md) e Plan for Skype for Business Server and Exchange Server [migration.](../../../../SfBhybrid/hybrid/plan-um-migration.md)
  
 Usare la finestra di dialogo **Seleziona Operatore automatico messaggistica unificata di Exchange** per selezionare un operatore automatico di messaggistica unificata di Exchange che gestirà le chiamate in arrivo a un intervallo di numeri non assegnati.
   

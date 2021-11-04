@@ -1,7 +1,7 @@
 ---
 title: Aggiornare Skype for Business locale a Teams
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e8d8b104354e442116dd908b686bc5e1d18f22d2
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 584243197f15b746a0fa5638fbba3141e93f34bd
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58731155"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60777136"
 ---
 # <a name="upgrade-from-a-skype-for-business-on-premises-deployment-to-teams"></a>Eseguire l'aggiornamento da Skype for Business distribuzione locale a Teams
 
@@ -50,7 +50,7 @@ Seguire le indicazioni di questo articolo se è stato distribuito Skype for Busi
 
 Il prerequisito fondamentale per l'aggiornamento degli utenti a Teams è la distribuzione della connettività ibrida.
 
-Per altre informazioni, vedere [Distribuire la connettività ibrida tra Skype for Business Server e Skype for Business Online](/skypeforbusiness/skype-for-business-hybrid-solutions/deploy-hybrid-connectivity/deploy-hybrid-connectivity)
+Per altre informazioni, vedere [Distribuire la connettività ibrida tra](/skypeforbusiness/skype-for-business-hybrid-solutions/deploy-hybrid-connectivity/deploy-hybrid-connectivity) Skype for Business Server e Skype for Business Online
 
 ## <a name="step-2-implement-your-chosen-upgrade-journey-for-your-organization"></a>Passaggio 2: Implementare il percorso di aggiornamento scelto per l'organizzazione
 
@@ -66,6 +66,6 @@ Per ulteriori informazioni, vedere:
 
 La transizione dai sistemi telefonici locali a Teams consente di sfruttare Sistema telefonico Direct Routing ("Direct Routing") o i Piani per le chiamate forniti da Microsoft per Microsoft 365 o Office 365.
 
-Se non si usa Piani per chiamate, è necessario eseguire la transizione della distribuzione voIP aziendale a Sistema telefonico Direct Routing nell'ambito dell'aggiornamento a Teams.
+Se non si usa Piani per chiamate, è necessario eseguire la transizione della distribuzione voIP aziendale a Sistema telefonico Routing diretto nell'ambito dell'aggiornamento a Teams.
 
-Per altre informazioni, vedere [considerazioni aggiuntive per Sistema telefonico routing diretto.](./direct-routing-landing-page.md) Se hai intenzione di usare Piani per chiamate, consulta le nostre indicazioni per trasferire i tuoi numeri di telefono a [Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
+Per altre informazioni, vedere [considerazioni aggiuntive per Sistema telefonico routing diretto.](./direct-routing-landing-page.md) Se hai intenzione di usare Piani per chiamate, consulta le nostre indicazioni per trasferire i tuoi numeri di telefono a [Teams.](phone-number-calling-plans/transfer-phone-numbers-to-teams.md)

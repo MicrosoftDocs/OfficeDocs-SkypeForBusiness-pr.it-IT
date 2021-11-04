@@ -1,7 +1,7 @@
 ---
 title: Gestire le impostazioni di configurazione del servizio Web in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: f3f04d81-8a1f-427f-bd0f-fb659024e096
 description: 'Riepilogo: gestire le impostazioni di configurazione del servizio Web in Skype for Business Server.'
-ms.openlocfilehash: 875993a006cf175432984dc78fc37a34b45e92ee
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 5311609fa1c554364f1b91ea2ddf9643840dea05
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60015170"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60746002"
 ---
 # <a name="manage-web-service-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione del servizio Web in Skype for Business Server
  
@@ -42,7 +42,7 @@ Seguire questa procedura per creare un nuovo criterio servizio Web.
     
    - Per configurare il servizio Web per un pool, fare clic su **Configurazione pool.** In **Selezionare un servizio** fare clic sul servizio a cui verrà applicato il criterio servizio Web e fare clic su **OK.** 
     
-5. In **Nuova impostazione servizio Web,** in Autenticazione **Windows** integrata, selezionare **Negozia,** **Autenticazione Windows** integrata o **Nessuna.**
+5. In **Nuova impostazione servizio Web,** in Autenticazione **Windows,** selezionare **Negozia,** **Autenticazione** Windows integrata o **Nessuna.**
     
 6. Selezionare una o più delle opzioni seguenti in base alle capacità dei client e al supporto nell'ambiente:
     

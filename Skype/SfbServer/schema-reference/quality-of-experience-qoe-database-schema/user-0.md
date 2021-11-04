@@ -1,7 +1,7 @@
 ---
 title: Tabella utente
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/1/2018
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 6b52047e-286d-47ab-b7bc-a9b266f62d82
 description: La tabella User è una tabella di supporto in cui è archiviato un elenco dei diversi utenti che hanno partecipato alle sessioni registrate nel database. Ogni record della tabella rappresenta un utente.
-ms.openlocfilehash: 4278c3649ea55db969295f4068fcfe268a7258bb
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b8a2fc4775fe36f710cb54c937261a806eef2054
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58582550"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60776006"
 ---
 # <a name="user-table"></a>Tabella utente
  

@@ -1,7 +1,7 @@
 ---
 title: Creare una condivisione file in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 12/20/2018
@@ -16,17 +16,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 053076b0-441c-44d9-8dbc-7a36d8ecafe4
-description: "Riepilogo: informazioni su come creare una condivisione file Windows Server come parte dell'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: b7d766a38791a7fc21b4e86844684ed174769e60
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: "Riepilogo: informazioni su come creare una condivisione file Windows Server come parte dell'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: c14d7a765a4b55e1fe909f33f4e038062427872b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58727965"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60751175"
 ---
 # <a name="create-a-file-share-in-skype-for-business-server"></a>Creare una condivisione file in Skype for Business Server
  
-**Riepilogo:** Informazioni su come creare una condivisione file Windows Server come parte dell'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
+**Riepilogo:** Informazioni su come creare una condivisione file Windows Server come parte dell'installazione di Skype for Business Server. Scarica una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
   
 Skype for Business Server richiede una condivisione file in modo che i computer in tutta la topologia possano scambiare file. La creazione di una condivisione file è il passaggio 2 di 8 del processo di installazione per Skype for Business Server. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. Per informazioni dettagliate sulla condivisione file, vedere [Environmental requirements for Skype for Business Server](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or Server requirements for Skype for Business Server [2019.](../../../SfBServer2019/plan/system-requirements.md)
   
@@ -37,7 +37,7 @@ Skype for Business Server richiede una condivisione file in modo che i computer 
 In questa sezione viene illustrata la creazione di una condivisione file di Windows server di base. Una condivisione file Windows Server di base è supportata con Skype for Business Server. Tuttavia, non fornisce esplicitamente disponibilità elevata. Per un ambiente a disponibilità elevata, è consigliabile una condivisione file DFS (Distributed File System). Per ulteriori informazioni su una condivisione file a disponibilità elevata e DFS, vedere [Plan for high availability and disaster recovery in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md).
   
 > [!NOTE]
-> Windows Server 2012 R2 ha fatto grandi passi avanti nel fornire soluzioni di condivisione file Archiviazione (SAN) simili a una rete utilizzando la piattaforma Windows Server. Rispetto a un'appliance tradizionale basata su SAN, una soluzione di archiviazione Windows Server 2012 R2 può ridurre i costi dimezzi con un impatto minimo sulle prestazioni. Per ulteriori informazioni sulle opzioni di condivisione file in Windows Server 2012 R2, vedere il white paper scaricabile [Windows Server 2012 R2 Archiviazione](https://download.microsoft.com/download/9/4/A/94A15682-02D6-47AD-B209-79D6E2758A24/Windows_Server_2012_R2_Storage_White_Paper.pdf). 
+> Windows Server 2012 R2 ha fatto grandi passi avanti nel fornire soluzioni di condivisione file Archiviazione(SAN) simili a san utilizzando la piattaforma Windows Server. Rispetto a un'appliance tradizionale basata su SAN, una soluzione di archiviazione Windows Server 2012 R2 può ridurre i costi dimezzi con un impatto minimo sulle prestazioni. Per ulteriori informazioni sulle opzioni di condivisione file in Windows Server 2012 R2, vedere il white paper scaricabile [Windows Server 2012 R2 Archiviazione](https://download.microsoft.com/download/9/4/A/94A15682-02D6-47AD-B209-79D6E2758A24/Windows_Server_2012_R2_Storage_White_Paper.pdf). 
   
 Guarda la procedura video per **creare una condivisione file:**
   
@@ -70,7 +70,7 @@ Avviso: impossibile accedere alle autorizzazioni di condivisione per " \\ <domai
 
 >Ciò è previsto se non si è un amministratore nel file server o se si tratta di una condivisione DFS (Distributed File System). Se le autorizzazioni di condivisione sono già state configurate, questo avviso può essere ignorato. Se si tratta di una nuova condivisione, fare riferimento alla documentazione per informazioni dettagliate sulla configurazione manuale delle autorizzazioni di condivisione.
 
->A causa dell'impossibilità di accedere alle autorizzazioni di condivisione in una condivisione DFS, Skype for Business Server non sarà possibile impostare esplicitamente i gruppi nella condivisione file. Per assicurarsi che Skype for Business Server componenti possano accedere alla condivisione file con le autorizzazioni appropriate, verificare che i gruppi RTC seguenti siano aggiunti con autorizzazioni di condivisione di livello Lettura e Modifica oltre agli amministratori locali con autorizzazioni di condivisione Controllo completo.
+>A causa dell'impossibilità di accedere alle autorizzazioni di condivisione in una condivisione DFS, Skype for Business Server non sarà in grado di impostare esplicitamente i gruppi nella condivisione file. Per assicurarsi che Skype for Business Server componenti possano accedere alla condivisione file con le autorizzazioni appropriate, verificare che i gruppi RTC seguenti siano aggiunti con autorizzazioni di condivisione di livello Lettura e Modifica oltre agli amministratori locali con autorizzazioni di condivisione Controllo completo.
 * RTCHSUniversalServices
 * RTCComponentUniversalServices
 * RTCUniversalServerAdmins

@@ -1,7 +1,7 @@
 ---
 title: Stato del routing vocale delle modifiche di commit per la configurazione del routing vocale
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 2e5086fb-3c3b-432a-9eab-a9b12cb79d76
 description: In caso di mancato completamento delle modifiche, esaminare i messaggi in questa finestra di dialogo, modificare la configurazione del routing vocale e ritentare.
-ms.openlocfilehash: 4fa0de36774716805ad818176d0dce848ee8398d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 7a3b935261aaccee6fe127d26564f13733905573
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58626708"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60744432"
 ---
 # <a name="voice-routing-status-of-commit-changes-for-voice-routing-configuration"></a>Routing vocale: stato delle modifiche apportate alla configurazione del routing vocale
  

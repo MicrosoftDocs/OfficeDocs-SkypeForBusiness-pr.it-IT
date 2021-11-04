@@ -1,7 +1,7 @@
 ---
 title: Modifiche apportate da Grant-CsOUPermission in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 10/20/2015
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: d744d352-1ad9-4447-8e2b-28e768d2ed1b
 description: Per delegare Skype for Business Server amministrazione, è possibile aggiungere autorizzazioni a unità organizzative specificate in modo che i membri dei gruppi universali RTC creati dalla preparazione della foresta possano accedere alle unità organizzative senza essere membri del gruppo Domain Admins.
-ms.openlocfilehash: f700b03f95be05e00d4e5eb032d9dd50ceb1352b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b5c507cf91a880c73c7b377deafb672ed25b1125
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58613906"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60745842"
 ---
 # <a name="changes-made-by-grant-csoupermission-in-skype-for-business-server"></a>Modifiche apportate da Grant-CsOUPermission in Skype for Business Server
  
@@ -56,7 +56,7 @@ Quando si esegue il cmdlet **Grant-CsOuPermission** per gli oggetti Computer in 
    
 ## <a name="granting-permission-for-contact-or-appcontact-objects"></a>Concessione dell'autorizzazione per oggetti Contact o AppContact
 
-Quando si esegue il cmdlet **Grant-CsOuPermission** per gli oggetti Contact o AppContact in un'unità organizzativa, ai gruppi vengono concesse le autorizzazioni come illustrato nella tabella seguente.
+Quando si esegue il cmdlet **Grant-CsOuPermission** per gli oggetti Contact o AppContact in un'unità organizzativa, ai gruppi vengono concesse le autorizzazioni, come illustrato nella tabella seguente.
   
 **Autorizzazioni concesse per oggetti Contact o AppContact**
 

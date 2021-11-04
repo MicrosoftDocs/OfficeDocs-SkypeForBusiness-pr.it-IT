@@ -1,7 +1,7 @@
 ---
 title: Distribuire Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 12/20/2018
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 0cf43c54-e544-40c5-8659-a876f614a3b3
 description: "Riepilogo: esplorare questi collegamenti per informazioni su come installare e configurare Skype for Business Server 2015 e l'aggiornamento da versioni precedenti di Lync Server."
-ms.openlocfilehash: ec5843fde868f29d6b345da654b47830c13f376f
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 0b7a43533708af8f3ab017b5796b5c9dc413cafc
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011970"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60764784"
 ---
 # <a name="deploy-skype-for-business-server-2015"></a>Distribuire Skype for Business Server 2015
  
@@ -53,13 +53,13 @@ Gli articoli seguenti su come installare e configurare Skype for Business Server
 |![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Configurare l'esperienza client con Skype for Business](deploy-clients/configure-the-client-experience.md)  |Scopri come configurare l'esperienza client.   |
 |![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Distribuire la connettività ibrida tra Skype for Business Server e Skype for Business Online](../../SfbHybrid/hybrid/configure-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)  |Informazioni su come configurare i prerequisiti per una distribuzione ibrida e quindi configurare la distribuzione per gestire gli utenti tra Skype for Business Server locale e Skype for Business Online.   |
 |![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Distribuire il server perimetrale in Skype for Business Server 2015](deploy-edge-server/deploy-edge-server.md)  |Se gli utenti dell'organizzazione comunicano con utenti esterni che non sono connessi alla rete interna, è necessario distribuire Edge Server.   |
-|![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Distribuire VoIP aziendale in Skype for Business Server 2015](deploy-enterprise-voice/deploy-enterprise-voice.md)  |Informazioni su come distribuire una soluzione voIP aziendale completa, che offre una ricca integrazione con Outlook e Exchange e molte funzionalità avanzate come Response Group, Parcheggio di chiamata, chiamate in team, Prelievo chiamate di gruppo e supporto avanzato per emergenza E9-1-1.   |
+|![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Distribuire VoIP aziendale in Skype for Business Server 2015](deploy-enterprise-voice/deploy-enterprise-voice.md)  |Informazioni su come distribuire una soluzione voIP aziendale completa, che offre un'integrazione completa con Outlook e Exchange e molte funzionalità avanzate come Response Group, Parcheggio di chiamata, chiamate in team, Prelievo chiamate di gruppo e supporto avanzato per emergenza E9-1-1.   |
 |![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Distribuire il server Chat persistente in Skype for Business Server 2015](deploy-persistent-chat-server/deploy-persistent-chat-server.md)  |Se si desidera che gli utenti dell'organizzazione partecipino a conversazioni basate su argomenti persistenti nel tempo, è necessario distribuire il server Chat persistente.   |
 |![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Distribuire Video Interop Server in Skype for Business Server 2015](deploy-video-interop-server/deploy-video-interop-server.md)  |Se vuoi supportare l'interoperabilità video, leggi come distribuire Video Interop Server (VIS).   |
    
 ## <a name="additional-resources-about-planning-for-skype-for-business-server"></a>Risorse aggiuntive sulla pianificazione di Skype for Business Server
 
-Le risorse seguenti su come pianificare Skype for Business Server sono disponibili da altri esperti in materia. 
+Le risorse seguenti su come pianificare le Skype for Business Server sono disponibili da altri esperti in materia. 
   
 |&nbsp;|Contenuto|Descrizione|
 |:-----|:-----|:-----|

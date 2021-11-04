@@ -1,7 +1,7 @@
 ---
 title: Gestire le conferenze in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 825e051c-83a5-420d-a5ef-f77afa368e2e
 description: 'Riepilogo: informazioni su come gestire le conferenze in Skype for Business Server.'
-ms.openlocfilehash: 8f91e6c7e87c5e7a2032e6c3eb9d6b220ec3da51
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: ef1afdecaec5ae237020b1681d95b556a37e2ab8
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58636070"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60751775"
 ---
 # <a name="manage-conferencing-in-skype-for-business-server"></a>Gestire le conferenze in Skype for Business Server
  
@@ -45,11 +45,11 @@ In Skype for Business Server, è possibile gestire i dettagli delle conferenze s
     
 ## <a name="manage-conferencing-by-using-skype-for-business-server-control-panel-or-by-using-skype-for-business-server-management-shell"></a>Gestire le conferenze tramite Skype for Business Server Pannello di controllo o tramite Skype for Business Server Management Shell
 
-È possibile gestire la maggior parte dei criteri di conferenza e delle impostazioni di configurazione Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell. Alcune impostazioni di configurazione sono disponibili solo tramite Skype for Business Server Management Shell.
+È possibile gestire la maggior parte dei criteri di conferenza e delle impostazioni di configurazione Skype for Business Server Pannello di controllo o tramite Skype for Business Server Management Shell. Alcune impostazioni di configurazione sono disponibili solo tramite Skype for Business Server Management Shell.
   
 - Per gestire le impostazioni dei criteri di conferenza:
     
-  - Nel Pannello di controllo seleziona Servizio **di | Criteri conferenza**.
+  - Nel Pannello di controllo selezionare Servizio **di | Criteri conferenza**.
     
   - In PowerShell cercare i cmdlet **-CsConferencingPolicy.**
     
@@ -69,11 +69,11 @@ In Skype for Business Server, è possibile gestire i dettagli delle conferenze s
     
   - Nel Pannello di controllo selezionare Servizio **di | Routing vocale**.
     
-  - In Skype for Business Server Management Shell cercare i cmdlet **-CsDialPlan** e **-CsVoice.**
+  - In Skype for Business Server Management Shell cercare i cmdlet **-CsDialPlan** **e -CsVoice.**
     
 - Per gestire le impostazioni dei criteri PIN:
     
-  - Nel Pannello di controllo seleziona Servizio **di | Criteri PIN**.
+  - Nel Pannello di controllo selezionare Servizio **di | Criteri PIN**.
     
   - In Skype for Business Server Management Shell cercare i cmdlet **-CsPinPolicy.**
     
@@ -97,7 +97,7 @@ In Skype for Business Server, è possibile gestire i dettagli delle conferenze s
 
 |**Cmdlet**|**Descrizione**|
 |:-----|:-----|
-|[Get-CsMeetingConfiguration](/powershell/module/skype/get-csmeetingconfiguration?view=skype-ps) <br/> |Restituisce informazioni sulle impostazioni di configurazione delle riunioni attualmente in uso nell'organizzazione. Le impostazioni di configurazione delle riunioni consentono di determinare il tipo di riunioni che gli utenti possono creare e di controllare come (o anche se) gli utenti anonimi e gli utenti delle conferenze telefoniche con accesso esterno possono partecipare a queste riunioni.  <br/> |
+|[Get-CsMeetingConfiguration](/powershell/module/skype/get-csmeetingconfiguration?view=skype-ps) <br/> |Restituisce informazioni sulle impostazioni di configurazione delle riunioni attualmente in uso nell'organizzazione. Le impostazioni di configurazione delle riunioni consentono di determinare il tipo di riunioni che gli utenti possono creare e di controllare in che modo (o anche se) gli utenti anonimi e gli utenti delle conferenze telefoniche con accesso esterno possono partecipare a tali riunioni.  <br/> |
 |[New-CsMeetingConfiguration](/powershell/module/skype/new-csmeetingconfiguration?view=skype-ps) <br/> |Crea una nuova raccolta di impostazioni di configurazione delle riunioni nell'ambito del sito o del servizio. Si noti che queste impostazioni influiscono solo sulle riunioni pianificate. non influiscono sulle riunioni ad hoc create facendo clic sull'opzione Riunione Skype for Business.  <br/> |
 |[Remove-CsMeetingConfiguration](/powershell/module/skype/remove-csmeetingconfiguration?view=skype-ps) <br/> |Elimina una raccolta esistente di impostazioni di configurazione delle riunioni.  <br/> |
 |[Set-CsMeetingConfiguration](/powershell/module/skype/set-csmeetingconfiguration?view=skype-ps) <br/> |Modifica le impostazioni di configurazione delle riunioni attualmente in uso nell'organizzazione.  <br/> |
@@ -116,7 +116,7 @@ In Skype for Business Server, è possibile gestire i dettagli delle conferenze s
 |**Cmdlet**|**Descrizione**|
 |:-----|:-----|
 |[Get-CsConferenceDirectory](/powershell/module/skype/get-csconferencedirectory?view=skype-ps) <br/> |Restituisce informazioni sulle directory conferenze configurate per l'utilizzo nell'organizzazione. Le directory conferenze vengono utilizzate per consentire agli utenti di conferenze telefoniche con accesso esterno di individuare le informazioni sulle conferenze.  <br/> |
-|[Get-CsDialInConferencingConfiguration](/powershell/module/skype/get-csdialinconferencingconfiguration?view=skype-ps) <br/> |Recupera informazioni su come Skype for Business Server quando gli utenti aderiscono o abbandonano una conferenza telefonica con accesso remoto.  <br/> |
+|[Get-CsDialInConferencingConfiguration](/powershell/module/skype/get-csdialinconferencingconfiguration?view=skype-ps) <br/> |Recupera informazioni sul modo in Skype for Business Server quando gli utenti aderiscono o abbandonano una conferenza telefonica con accesso remoto.  <br/> |
 |[Get-CsDialInConferencingAccessNumber](/powershell/module/skype/get-csdialinconferencingaccessnumber?view=skype-ps) <br/> |Restituisce informazioni su tutti i numeri di accesso alle conferenze telefoniche con accesso esterno configurati per l'utilizzo nell'organizzazione.  <br/> |
 |[Get-CsDialInConferencingDtmfConfiguration](/powershell/module/skype/get-csdialinconferencingdtmfconfiguration?view=skype-ps) <br/> |Restituisce le impostazioni della segnalazione DTMF (Dual Tone Multi-Frequency) per le conferenze telefoniche con accesso esterno. La tecnologia DTMF consente agli utenti che accedono dall'esterno a una conferenza di controllarne le impostazioni, ad esempio disattivare o riattivare il proprio audio oppure bloccare e sbloccare la conferenza, mediante la tastiera del telefono.  <br/> |
 |[Get-CsDialInConferencingLanguageList](/powershell/module/skype/get-csdialinconferencinglanguagelist?view=skype-ps) <br/> |Restituisce un elenco di lingue, incluse le lingue regionali/di minoranza, supportate per l'utilizzo con Skype for Business Server conferenze telefoniche con accesso remoto. Queste lingue vengono utilizzate per trasmettere messaggi e istruzioni audio agli utenti che partecipano a una conferenza tramite telefono.  <br/> |
@@ -167,9 +167,9 @@ In Skype for Business Server, è possibile gestire i dettagli delle conferenze s
 |[Test-CsASConference](/powershell/module/skype/test-csasconference?view=skype-ps) <br/> |Verifica che due utenti possano partecipare a una conferenza di condivisione applicazioni.  <br/> |
 |[Test-CsAudioConferencingProvider](/powershell/module/skype/test-csaudioconferencingprovider?view=skype-ps) <br/> |Verifica se un utente può connettersi al proprio provider di servizi di audioconferenza. Un provider di servizi di audioconferenza è una società di terze parti che fornisce servizi di conferenza alle organizzazioni. Tra l'altro, i provider di servizi di audioconferenza consentono agli utenti che si trovano fuori sede e non connessi alla rete aziendale o a Internet di partecipare alla parte audio di una conferenza o di una riunione.  <br/> |
 |[Test-CsAVConference](/powershell/module/skype/test-csavconference?view=skype-ps) <br/> |Verifica se due utenti possono partecipare a una conferenza audio/video (A/V).  <br/> |
-|[Test-CsDataConference](/powershell/module/skype/test-csdataconference?view=skype-ps) <br/> |Verifica se una coppia di utenti può partecipare Skype for Business Server una conferenza Web che include attività quali la condivisione o la visualizzazione di PowerPoint diapositive, lavagne o sondaggi. Il cmdlet verifica inoltre che il servizio web conferencing Skype for Business Server sia in grado di individuare un server Web Apps Office e che un client possa caricare un file PowerPoint per la trasmissione da Office Web Apps Server.  <br/> |
+|[Test-CsDataConference](/powershell/module/skype/test-csdataconference?view=skype-ps) <br/> |Verifica se una coppia di utenti può partecipare o meno a una conferenza Web di Skype for Business Server che include attività quali la condivisione o la visualizzazione di PowerPoint diapositive, lavagne o sondaggi. Il cmdlet verifica inoltre che il servizio web conferencing di Skype for Business Server sia in grado di individuare il server app Web Office e che un client possa caricare un file PowerPoint per la trasmissione da Office Web Apps Server.  <br/> |
 |[Test-CsDialInConferencing](/powershell/module/skype/test-csdialinconferencing?view=skype-ps) <br/> |Verifica se un utente può partecipare a una sessione di conferenza telefonica con accesso esterno.  <br/> |
 |[Test-CsDialPlan](/powershell/module/skype/test-csdialplan?view=skype-ps) <br/> |Verifica un numero di telefono rispetto a un dial plan (precedentemente noto come profilo località) e restituisce la regola di normalizzazione che verrà applicata al numero, nonché il numero convertito dopo l'applicazione della regola di normalizzazione.  <br/> |
-|[Test-CsMcxConference](/powershell/module/skype/test-csmcxconference?view=skype-ps) <br/> |Verifica la capacità di tre utenti di partecipare a una conferenza Skype for Business Server Mobility Service. Il servizio per dispositivi mobili consente agli utenti di telefoni cellulari come iPhone e Windows telefoni di eseguire operazioni quali lo scambio di messaggi istantanei e informazioni sulla presenza; archiviare e recuperare la segreteria telefonica internamente anziché con il proprio provider wireless; e sfruttare le funzionalità Skype for Business Server, ad esempio Chiamata tramite lavoro e conferenze telefoniche con accesso esterno.  <br/> **Nota:** I client che utilizzano MCX non sono supportati in Skype for Business Server 2019.|
+|[Test-CsMcxConference](/powershell/module/skype/test-csmcxconference?view=skype-ps) <br/> |Verifica la capacità di tre utenti di partecipare a una Skype for Business Server servizio per dispositivi mobili. Il servizio per dispositivi mobili consente agli utenti di telefoni cellulari come iPhone e Windows telefoni di eseguire operazioni quali lo scambio di messaggi istantanei e informazioni sulla presenza; archiviare e recuperare la segreteria telefonica internamente anziché con il proprio provider wireless; e sfruttare le funzionalità Skype for Business Server, ad esempio Chiamata tramite lavoro e conferenze telefoniche con accesso esterno.  <br/> **Nota:** I client che utilizzano MCX non sono supportati in Skype for Business Server 2019.|
 |[Test-CsUcwaConference](/powershell/module/skype/test-csucwaconference?view=skype-ps) <br/> |Verifica la capacità di una coppia di utenti di pianificare, partecipare e quindi condurre una conferenza online utilizzando l'API Unified Communications Web (UCWA).  <br/> |
 |[Debug-CsDataConference](/powershell/module/skype/debug-csdataconference?view=skype-ps) <br/> |Restituisce informazioni di diagnostica per le funzionalità di conferenza dati incluse in Skype for Business Server.  <br/> |

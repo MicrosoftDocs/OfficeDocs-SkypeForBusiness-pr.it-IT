@@ -1,7 +1,7 @@
 ---
 title: Disponibilità in Tunisia
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole, fafan
 ms.topic: reference
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Tunisia.
-ms.openlocfilehash: 84385fa01e70f4e59c11198b1163470e54f2bbcf
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d37be85d42c11b549961220e777fdb641bd328a5
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610343"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60775976"
 ---
 # <a name="availability-in-tunisia"></a>Disponibilità in Tunisia
 
