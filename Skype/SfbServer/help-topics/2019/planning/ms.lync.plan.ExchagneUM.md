@@ -1,7 +1,7 @@
 ---
 title: Exchange Messaggistica unificata (strumento di pianificazione)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,20 +15,20 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: cb767f83-2684-4006-a1f2-c6f0adf50f62
 ROBOTS: NOINDEX, NOFOLLOW
-description: Skype for Business Server 2015 supporta l'integrazione con Exchange messaggistica unificata per la combinazione di messaggistica vocale e messaggistica elettronica in un'unica infrastruttura di messaggistica.
-ms.openlocfilehash: ed3ecf579e7b57c64f88946afd4500d7d759a9f5
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Skype for Business Server 2015 supporta l'integrazione con Exchange messaggistica unificata per combinare la messaggistica vocale e la messaggistica elettronica in un'unica infrastruttura di messaggistica.
+ms.openlocfilehash: 5fcff1051fc90e63ff409845fb5e26b826668a3f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58580980"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60760119"
 ---
 # <a name="exchange-unified-messaging-planning-tool-in-skype-for-business-2015"></a>Exchange Messaggistica unificata (strumento di pianificazione) in Skype for Business 2015
 
 > [!NOTE]
 > Exchange La messaggistica unificata nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
 
-Skype for Business Server 2015 supporta l'integrazione con Exchange messaggistica unificata per la combinazione di messaggistica vocale e messaggistica elettronica in un'unica infrastruttura di messaggistica.
+Skype for Business Server 2015 supporta l'integrazione con Exchange messaggistica unificata per combinare la messaggistica vocale e la messaggistica elettronica in un'unica infrastruttura di messaggistica.
 
 Per dettagli, vedere:
 

@@ -1,7 +1,7 @@
 ---
 title: Unione legacy - Tipo di server perimetrale
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 47bedf17-25cb-4fc2-9e23-be695bd86fd0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per un Server perimetrale singolo o un Server perimetrale consolidato con carico bilanciato, fare clic su Avanti per specificare le informazioni di configurazione. Per un server perimetrale espanso, la configurazione di ogni server deve essere modificata in una configurazione perimetrale consolidata prima di poter essere unita.
-ms.openlocfilehash: bba4ee2776a87084858c2a32d1e3f05d7536457b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 54a295a33c2f7e14b17c2f9d5b803d753a1b75b4
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58631790"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759918"
 ---
 # <a name="legacy-merge-edge-type"></a>Unione legacy - Tipo di server perimetrale
  

@@ -533,6 +533,8 @@ items:
             href: general-teams-templates-in-the-admin-console.md
           - name: Modelli di team per le categorie manifatturiere
             href: manufacturing-teams-templates-in-the-admin-console.md
+          - name: Modelli di team di categoria no profit
+            href: team-templates-nonprofit.md
           - name: Gestire i criteri per i modelli di team
             href: templates-policies.md
       - name: Lavorare con persone esterne all'organizzazione
@@ -1553,6 +1555,11 @@ items:
             href: flw-realwear.md
           - name: Walkie-talkie
             href: walkie-talkie.md
+      - name: Teams per organizzazioni no profit
+        href: expand-teams-across-your-org/teams-for-nonprofit-landing-page.md
+        items:
+          - name: Usare i modelli no profit di team
+            href: team-templates-nonprofit.md
       - name: Teams per la vendita al dettaglio
         href: expand-teams-across-your-org/teams-for-retail-landing-page.md
         items:

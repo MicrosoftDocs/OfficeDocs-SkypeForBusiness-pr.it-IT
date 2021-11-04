@@ -1,7 +1,7 @@
 ---
 title: Informazioni su team e canali in Microsoft Teams
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.date: 10/29/2018
 audience: Admin
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6ba80c74e905fa80f42095afd7a524d202661f21
-ms.sourcegitcommit: 1957a06d4bae3d42b4e3b6d4bd8ff2752a19d377
+ms.openlocfilehash: 7af581966c2822e88ce439d5c590331f220cef7a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60641196"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766074"
 ---
 # <a name="understand-teams-and-channels-in-microsoft-teams"></a>Informazioni su team e canali in Microsoft Teams
 
@@ -36,7 +36,7 @@ I concetti di team e canali sono fondamentali per un'implementazione sana e prod
 
 - I canali sono gli spazi di collaborazione all'interno di un team in cui viene eseguito il lavoro effettivo. 
 
-Per altre informazioni su team e canali, vedere Panoramica [di team e](teams-channels-overview.md)canali in Microsoft Teams . Per indicazioni Teams sull'adozione dei Teams [sull'adozione.](https://aka.ms/teamstoolkit) Per altre informazioni sui gruppi Teams e Microsoft 365, vedere Microsoft 365 [Gruppi](office-365-groups.md) e Microsoft Teams e Altre informazioni su [Microsoft 365 gruppi.](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+Per altre informazioni su team e canali, vedere Panoramica [di team e](teams-channels-overview.md)canali in Microsoft Teams . Per indicazioni Teams sull'adozione dei Teams [sull'adozione.](https://aka.ms/teamstoolkit) Per altre informazioni sui gruppi Teams e Microsoft 365, vedere Microsoft 365 [Gruppi](office-365-groups.md) e Microsoft Teams e Altre informazioni [su Microsoft 365 gruppi.](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 
 | &nbsp; |&nbsp;  |

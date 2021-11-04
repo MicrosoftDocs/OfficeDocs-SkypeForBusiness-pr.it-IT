@@ -1,7 +1,7 @@
 ---
 title: Aggiungere database di archiviazione a una distribuzione esistente in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 3b67df85-181d-45ca-ba48-bb74a439f242
 description: 'Riepilogo: leggere questo argomento per informazioni su come aggiungere database di archiviazione alla Skype for Business Server distribuzione.'
-ms.openlocfilehash: 36d825ef79befa430edfd126bd9cd5a5d840b2f1
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d7174919ef34cd77bf7da316d23808ea1cfaff7f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611325"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60778936"
 ---
 # <a name="add-archiving-databases-to-an-existing-deployment-in-skype-for-business-server"></a>Aggiungere database di archiviazione a una distribuzione esistente in Skype for Business Server
  
@@ -30,7 +30,7 @@ ms.locfileid: "58611325"
 - Pubblicare la topologia aggiornata per aggiungere il database di archiviazione alla Skype for Business Server distribuzione.
     
 > [!NOTE]
-> Se si desidera utilizzare l'integrazione di Microsoft Exchange per archiviare i dati e i file di archiviazione nei server Exchange per tutti gli utenti della distribuzione, non specificare Archivio **SQL Server** archiviazione o Usa informazioni di mirroring di **SQL Server Store.**
+> Se si desidera utilizzare l'integrazione di Microsoft Exchange per archiviare i dati e i file di archiviazione nei server Exchange per tutti gli utenti della distribuzione, non specificare Archivio **SQL Server** archiviazione o Usa informazioni di mirroring dell'archivio **di SQL Server.**
   
 ### <a name="add-an-archiving-database-to-your-topology"></a>Aggiungere un database di archiviazione alla topologia
 
@@ -58,7 +58,7 @@ ms.locfileid: "58611325"
     
    - Fare clic su **Istanza predefinita** per usare l'istanza predefinita oppure su **Istanza denominata** per specificare un'istanza diversa, quindi specificare l'istanza che si vuole usare.
     
-   - Se l'istanza SQL Server specificata si trova in una relazione di mirroring, selezionare la casella di controllo Questa istanza di **SQL è in** relazione di mirroring e quindi, in **Numero** porta mirror, specificare il numero di porta.
+   - Se l'istanza SQL Server specificata si trova in una relazione di mirroring, selezionare la casella di controllo Questa istanza di SQL è in relazione **di mirroring** e quindi, in **Numero** porta mirror, specificare il numero di porta.
     
 9. Se si desidera utilizzare il mirroring dell SQL Server store, selezionare **Abilita mirroring** SQL Server Store e quindi eseguire le operazioni seguenti:
     
@@ -70,15 +70,15 @@ ms.locfileid: "58611325"
     
      b. Fare clic su **Istanza predefinita** per usare l'istanza predefinita oppure su **Istanza denominata** per specificare un'istanza diversa, quindi specificare l'istanza che si vuole usare.
     
-     c. Se l'istanza SQL Server specificata si trova in una relazione di mirroring, selezionare la casella di controllo Questa istanza di **SQL è in** relazione di mirroring e quindi, in **Numero** porta mirror, specificare il numero di porta.
+     c. Se l'istanza SQL Server specificata si trova in una relazione di mirroring, selezionare la casella di controllo Questa istanza di SQL è in relazione **di mirroring** e quindi, in **Numero** porta mirror, specificare il numero di porta.
     
-   - Se si abilita il mirroring SQL Server e si desidera includere un controllo del mirroring di SQL Server (una terza istanza separata di SQL Server in grado di rilevare l'integrità del SQL Server primario e delle istanze mirror), selezionare la casella di controllo Usa **controllo del mirroring SQL Server** per abilitare il failover automatico e quindi eseguire una delle operazioni seguenti:
+   - Se si abilita il mirroring SQL Server e si desidera includere un controllo del mirroring di SQL Server (una terza istanza di SQL Server separata in grado di rilevare l'integrità delle istanze SQL Server e mirror primarie), selezionare la casella di controllo Usa **controllo del mirroring** di SQL Server per abilitare il failover automatico e quindi eseguire una delle seguenti attività: e:
     
      a. In **SQL Server FQDN** specificare il nome di dominio completo del server in cui si desidera creare il nuovo SQL Server di mirroring.
     
      b. Fare clic su **Istanza predefinita** per usare l'istanza predefinita oppure su **Istanza denominata** per specificare un'istanza diversa, quindi specificare l'istanza che si vuole usare per il controllo di mirroring.
     
-     c. Se l'istanza SQL Server specificata si trova in una relazione di mirroring, selezionare la casella di controllo Questa istanza di **SQL è in** relazione di mirroring e quindi, in **Numero** porta mirror, specificare il numero di porta.
+     c. Se l'istanza SQL Server specificata si trova in una relazione di mirroring, selezionare la casella di controllo Questa istanza di SQL è in relazione **di mirroring** e quindi, in **Numero** porta mirror, specificare il numero di porta.
     
 10. Per salvare la configurazione, fare clic su **OK**.
     
@@ -87,7 +87,7 @@ ms.locfileid: "58611325"
 1. In un computer che esegue Skype for Business Server o in cui sono installati gli strumenti di amministrazione di Skype for Business Server, accedere utilizzando un account membro del gruppo Users locale (o un account con diritti utente equivalenti).
     
     > [!NOTE]
-    > È possibile definire una topologia utilizzando un account membro del gruppo Users locale, tuttavia, per pubblicare una topologia, necessaria per aggiungere un server alla topologia, è necessario utilizzare un account membro del gruppo **Domain Admins** e del gruppo **RTCUniversalServerAdmins** e che dispone delle autorizzazioni di controllo completo (lettura, scrittura e modifica) nella condivisione file utilizzata per l'archivio file di Skype for Business Server (in modo che Generatore di topologie possa configurare l'elenco di controllo di accesso discrezionale (DACL) necessario o un account con diritti equivalenti.
+    > È possibile definire una topologia utilizzando un account membro del gruppo Users locale, ma per pubblicare una topologia, necessaria per aggiungere un server alla topologia, è necessario utilizzare un account membro del gruppo **Domain Admins** e **rtcUniversalServerAdmins** e che dispone delle autorizzazioni di controllo completo (lettura,  scrivere e modificare) nella condivisione file in uso per l'archivio file di Skype for Business Server ,in modo che Generatore di topologie possa configurare l'elenco di controllo di accesso discrezionale (DACL) necessario o un account con diritti equivalenti.
   
 2. Aprire la topologia creata nella sezione precedente utilizzando Generatore di topologie.
     

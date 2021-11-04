@@ -1,7 +1,7 @@
 ---
 title: Richiesta di certificato (Specify Termplate)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: d00ed98f-46f2-4367-b34c-513e5eafdd06
 ROBOTS: NOINDEX, NOFOLLOW
 description: La pagina Specifica modello di certificato alternativo consente di definire un modello di certificato diverso dal modello WebServer utilizzato per impostazione predefinita. Selezionare la casella di controllo Usa il modello di certificato alternativo per l'Autorità di certificazione selezionata e quindi specificare il nome del modello di certificato alternativo nella casella di testo Nome modello del certificato. È necessario utilizzare il nome del modello così com'è definito nell'Autorità di certificazione (CA). Fare clic su Indietro per tornare alla pagina precedente. Fare clic su Annulla per terminare il processo di richiesta del certificato.
-ms.openlocfilehash: b4494831969e5b060d6ea4d114e92be1668c8fed
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 358abe26c6334e2853fab5bbe5a1733030e77af1
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611113"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60738822"
 ---
 # <a name="certificate-request-specify-termplate"></a>Richiesta di certificato (specificare modello)
  

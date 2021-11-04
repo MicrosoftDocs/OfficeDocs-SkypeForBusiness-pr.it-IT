@@ -1,6 +1,6 @@
 ---
-title: Utilizzare Config.xml per eseguire attività di installazione nei Skype for Business client
-ms.author: v-cichur
+title: Utilizzare Config.xml per eseguire attività di installazione in Skype for Business client
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,14 +12,14 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 0813184a-ab40-417c-b3a3-c2090766b831
 description: 'Riepilogo: come usare il file Config.xml per specificare istruzioni di installazione aggiuntive.'
-ms.openlocfilehash: f79dcc1d31fdd862ca8705552d7894dcdd90fcd7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 76bf5980f7ced3c2e92f53ade8a51eaf3835054d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58620492"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60742942"
 ---
-# <a name="use-configxml-to-perform-installation-tasks-in-skype-for-business-clients"></a>Utilizzare Config.xml per eseguire attività di installazione nei Skype for Business client
+# <a name="use-configxml-to-perform-installation-tasks-in-skype-for-business-clients"></a>Utilizzare Config.xml per eseguire attività di installazione in Skype for Business client
 
 **Riepilogo:** Come usare il file Config.xml per specificare istruzioni di installazione aggiuntive.
 
@@ -39,7 +39,7 @@ Sebbene lo Strumento di personalizzazione di Office sia lo strumento principale 
 
 È consigliabile utilizzare il file Config.xml per configurare l Skype for Business installazione invisibile all'utente. 
 
-Per impostazione predefinita, Config.xml file archiviato nella cartella di base del prodotto (ad esempio, \ _product_. WW) indica al programma di installazione di installare il prodotto. Ad esempio, il file Config.xml nella cartella seguente installa Skype for Business:
+Per impostazione predefinita, Config.xml file archiviato nella cartella di base del prodotto (ad esempio, \ _product_. WW) indica al programma di installazione di installare il prodotto. Ad esempio, il file Config.xml nella cartella seguente viene installato Skype for Business:
 
 - \\server\share\Skype15\Skype. WW \Config.xml
 
@@ -57,7 +57,7 @@ Gli Config.xml più comunemente utilizzati per l Skype for Business installazion
 | Impostazione  <br/>           | Specifica i valori per le Windows installer. Di seguito sono riportati gli attributi tipici: <br/>  Setting Id=" *name*" (il nome della Windows Installer)  <br/>  Value=" *value*" (valore da assegnare alla proprietà)  <br/>                                                             |
 | DistributionPoint  <br/> | Percorso completo del punto di installazione di rete da cui deve essere eseguita l'installazione Include l'attributo Location: <br/>  Location=" *path*"  <br/>                                                                                                                                     |
 
-L'esempio seguente mostra un file Config.xml per un'installazione invisibile all'utente tipica del client Skype for Business client. 
+Nell'esempio seguente viene illustrato un file Config.xml per un'installazione invisibile all'utente tipica del client Skype for Business client. 
 
 ```xml
 <Configuration Product="Lync"> 

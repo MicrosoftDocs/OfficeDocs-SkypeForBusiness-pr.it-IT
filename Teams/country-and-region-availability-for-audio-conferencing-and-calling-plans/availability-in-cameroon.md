@@ -1,7 +1,7 @@
 ---
 title: Disponibilità in Camerun
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: fafan
 ms.topic: reference
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per camerun.
-ms.openlocfilehash: e63bdf922073c57df9cd2d914c982d6197847ac9
-ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
+ms.openlocfilehash: 59b959e50f9d80e5ff502cf632f68f6910b0be18
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60733747"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754009"
 ---
 # <a name="availability-in-cameroon"></a>Disponibilità in Camerun
 

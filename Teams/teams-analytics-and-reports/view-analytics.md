@@ -1,7 +1,7 @@
 ---
 title: Visualizzare l'analisi in Teams
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ MS.collection:
 description: Informazioni su analisi tra team, analisi per team e analisi per canale in Teams, che consentono agli utenti di visualizzare i dati di utilizzo per i team o i canali di cui fanno parte.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 54abc3545ca6d2935a78e3924cbd62e948c02bf1
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 86c14b49de7b6ea8175d486aa86e03ceeff068c7
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58731735"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60742972"
 ---
 # <a name="view-analytics-in-teams"></a>Visualizzare l'analisi in Teams
 
@@ -35,7 +35,7 @@ Gli utenti possono filtrare una di queste visualizzazioni per visualizzare i dat
 
 ## <a name="view-cross-team-analytics"></a>Visualizzare l'analisi tra team
 
-1. In Teams, nella parte inferiore dell'elenco dei team, accanto **a Partecipa o crea un team,** fare clic su Gestisci **team.**
+1. In Teams, nella parte inferiore dell'elenco dei team, accanto a Partecipa o crea **un team,** fai clic **su Gestisci team.**
 2. Fare clic **sulla scheda** Analisi.
 3. Selezionare un intervallo di date per visualizzare i dati di utilizzo per tutti i team di cui si è membri o di cui si è proprietari.
 

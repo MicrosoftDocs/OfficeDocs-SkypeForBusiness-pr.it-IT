@@ -1,7 +1,7 @@
 ---
 title: Get Integration Log
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,13 +12,13 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 8856f6bc-5460-4f35-acf2-f7662f01579b
-description: "Riepilogo: informazioni sull'operazione Get Integration Log, che fa parte dell'API dati per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: c4d94497a7ed2b7ca1a9c716ede0eef466b0f1ad
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: "Riepilogo: informazioni sull'operazione Get Integration Log, che fa parte dell'API dei dati per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: 8eca61cf97cc79f34be1f6473f3223b9f2a639d4
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58578770"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759708"
 ---
 # <a name="get-integration-log"></a>Get Integration Log
  

@@ -1,7 +1,7 @@
 ---
 title: Elenco di controllo prima esecuzione per il Pannello di controllo di Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -14,17 +14,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 4d0c7306-e87e-464a-82ad-a5537f141500
 ROBOTS: NOINDEX, NOFOLLOW
-description: Benvenuti nel Pannello Skype for Business Server, l'interfaccia utente basata sul Web per l'amministrazione e la gestione di Skype for Business Server. È possibile utilizzare il Pannello di controllo per eseguire i tipi di attività amministrative eseguite tramite Microsoft Management Console nelle versioni precedenti.
-ms.openlocfilehash: 05f2882622325ed9b4bdb837811941ccb34b0401
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Benvenuti nel Pannello di Skype for Business Server, l'interfaccia utente basata sul Web per l'amministrazione e la gestione di Skype for Business Server. È possibile utilizzare il Pannello di controllo per eseguire i tipi di attività amministrative eseguite tramite Microsoft Management Console nelle versioni precedenti.
+ms.openlocfilehash: 21f4f2f3add2ba287357243463967e93d3ebe7b4
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58609775"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60742762"
 ---
 # <a name="first-run-checklist-for-skype-for-business-server-control-panel"></a>Elenco di controllo prima esecuzione per il Pannello di controllo di Skype for Business Server
 
-Benvenuti nel Pannello Skype for Business Server, l'interfaccia utente basata sul Web per l'amministrazione e la gestione di Skype for Business Server. È possibile utilizzare il Pannello di controllo per eseguire i tipi di attività amministrative eseguite tramite Microsoft Management Console nelle versioni precedenti.
+Benvenuti nel Pannello di Skype for Business Server, l'interfaccia utente basata sul Web per l'amministrazione e la gestione di Skype for Business Server. È possibile utilizzare il Pannello di controllo per eseguire i tipi di attività amministrative eseguite tramite Microsoft Management Console nelle versioni precedenti.
 
 È consigliabile eseguire una serie di attività importanti dopo aver distribuito Skype for Business Server. Alcune di queste attività sono passaggi di configurazione iniziale che potrebbero essere già stati eseguiti durante la distribuzione, mentre altre sono miglioramenti o modifiche di impostazioni configurate durante la distribuzione o impostazioni predefinite. Altre attività descritte in questo argomento consentono di convalidare le configurazioni effettuate durante il processo di distribuzione.
 

@@ -1,7 +1,7 @@
 ---
 title: Update Item
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: b1c15c56-cdae-4f3e-838a-52f0940cf729
 description: "Riepilogo: informazioni sull'operazione Update Item, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 5634a36f4366c7c81214f9527de490a8862cfa65
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: ef77a4a73cd83743b718988657dcf4f4eb9fd404
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58606165"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759688"
 ---
 # <a name="update-item"></a>Update Item
  

@@ -1,7 +1,7 @@
 ---
-title: Aggiungere un server Chat persistente alla topologia Skype for Business Server 2015
+title: Aggiungere il server Chat persistente alla topologia Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/28/2016
@@ -13,14 +13,14 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 6b4f4d69-3c9d-4bc7-bc9b-46427a095de2
 description: 'Riepilogo: leggere questo argomento per informazioni su come aggiungere il server Chat persistente alla topologia Skype for Business Server 2015.'
-ms.openlocfilehash: 1ea8904ea59dd7ac7d35df1ed0ebcbbe0e3cd9f4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b3fe63921ca666844776c420a27cd2717d6f84be
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607239"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753413"
 ---
-# <a name="add-persistent-chat-server-to-your-skype-for-business-server-2015-topology"></a>Aggiungere un server Chat persistente alla topologia Skype for Business Server 2015
+# <a name="add-persistent-chat-server-to-your-skype-for-business-server-2015-topology"></a>Aggiungere il server Chat persistente alla topologia Skype for Business Server 2015
  
 **Riepilogo:** Leggere questo argomento per informazioni su come aggiungere il server Chat persistente alla topologia Skype for Business Server 2015.
   
@@ -42,7 +42,7 @@ Per distribuire più pool di server Chat persistente, ripetere lo stesso process
 1. In un computer che esegue Skype for Business Server o in cui sono installati gli strumenti di amministrazione di Skype for Business Server, accedere utilizzando un account membro del gruppo Users locale (o un account con diritti utente equivalenti).
     
     > [!NOTE]
-    > È possibile definire una topologia utilizzando un account membro del gruppo Users locale, ma per pubblicare una topologia, necessaria per installare Skype for Business Server, è necessario utilizzare un account membro del gruppo **Domain Admins** e del gruppo **RTCUniversalServerAdmins** e che dispone delle autorizzazioni di controllo completo (lettura, scrittura e modifica) nell'archivio file che si desidera utilizzare per l'archivio file del server Chat persistente (in modo che Generatore di topologie possa configurare i DACL necessari) o un account con diritti equivalenti.
+    > È possibile definire una topologia utilizzando un account membro del gruppo Users locale, ma per pubblicare una topologia, necessaria per installare Skype for Business Server, è necessario utilizzare un account membro del gruppo **Domain Admins** e **rtcUniversalServerAdmins** e che dispone delle autorizzazioni di controllo completo (lettura,  scrivere e modificare) nell'archivio file che si desidera utilizzare per l'archivio file del server Chat persistente (in modo che Generatore di topologie possa configurare i DACL necessari) o un account con diritti equivalenti.
   
 2. Avviare Generatore di topologie.
     
@@ -68,7 +68,7 @@ Per distribuire più pool di server Chat persistente, ripetere lo stesso process
     
    - Per usare un archivio SQL Server esistente, nell'elenco a discesa fare clic sul nome dell SQL Server store che si desidera utilizzare.
     
-   - Per specificare un nuovo database SQL Server database, fare clic su **Nuovo** e in Definisci nuovo **SQL store** eseguire le operazioni seguenti:
+   - Per specificare un nuovo database SQL Server database, fare clic su **Nuovo** e in Definisci nuovo **SQL archivio** eseguire le operazioni seguenti:
     
    - In **SQL Server FQDN** specificare il nome di dominio completo del SQL Server in cui si desidera creare il nuovo database SQL Server database.
     
@@ -80,7 +80,7 @@ Per distribuire più pool di server Chat persistente, ripetere lo stesso process
 9. Definire l'SQL Server di conformità se è stata abilitata la conformità.
     
     > [!IMPORTANT]
-    > Per informazioni dettagliate su come configurare i mirror SQL Server per la disponibilità elevata per il database del server Chat persistente e il database di conformità del server Chat persistente, vedere [Configure high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015.](../../deploy/deploy-high-availability-and-disaster-recovery/configure-hadr-for-persistent-chat.md) 
+    > Per informazioni dettagliate su come configurare i mirror di SQL Server per la disponibilità elevata per il database del server Chat persistente e il database di conformità del server Chat persistente, vedere [Configure high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015.](../../deploy/deploy-high-availability-and-disaster-recovery/configure-hadr-for-persistent-chat.md) 
   
 10. Definire l'archivio file. Un archivio file è una cartella in cui è archiviata una copia di qualunque file caricato nell'archivio dei file (ad esempio, gli allegati pubblicati in una chat room). Nel caso di una topologia di server Chat persistente a più server, questo deve essere un percorso UNC (Universal Naming Convention). e per una topologia di server Chat persistente a server singolo, può essere un percorso di file locale.
     
@@ -109,7 +109,7 @@ Dopo aver aggiornato la topologia in Generatore di topologie, è necessario pubb
   
 Prima di pubblicare la topologia, installare i database per il server Chat persistente. Utilizzare Generatore di topologie per installare i database selezionando **Azione** **e Installa database**.
   
-1. In un computer che esegue Skype for Business Server o in cui sono installati gli strumenti di amministrazione di Skype for Business Server, accedere utilizzando un account membro sia del gruppo **Domain Admins** che del gruppo **RTCUniversalServerAdmins** e che dispone delle autorizzazioni di controllo completo (lettura, scrittura e modifica) nell'archivio file da utilizzare per l'archivio file del server Chat persistente (in modo che Generatore di topologie possa configurare gli elenchi di controllo di accesso discrezionale (DACL) necessari) o un account con diritti utente equivalenti.
+1. In un computer che esegue Skype for Business Server o in cui sono installati gli strumenti di amministrazione di Skype for Business Server, accedere utilizzando un account membro sia del gruppo **Domain Admins** che del gruppo **RTCUniversalServerAdmins** e che dispone delle autorizzazioni di controllo completo (lettura, scrittura e modifica) nell'archivio file da utilizzare per l'archivio file Archivio file del server Chat persistente (in modo che Generatore di topologie possa configurare gli elenchi di controllo di accesso discrezionale (DACL) necessari) o un account con diritti utente equivalenti.
     
 2. Avviare Generatore di topologie. Selezionare **Apri topologia da un file locale** se è stato salvato in locale.
     

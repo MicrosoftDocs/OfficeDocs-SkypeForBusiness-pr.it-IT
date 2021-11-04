@@ -1,7 +1,7 @@
 ---
 title: Definire trunk aggiuntivi in Generatore di topologie in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: e68b8377-50a2-452a-bf5c-910929e34236
 description: 'Riepilogo: informazioni su come definire un trunk aggiuntivo tra un Mediation Server e un peer gateway in Generatore di topologie in Skype for Business Server.'
-ms.openlocfilehash: 42f435079a66f7dba6c325ad8afbb1b28a3e3753
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: a3a1094bdc9d0f92eba5cfa1ace87f14db0011de
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585856"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60748872"
 ---
 # <a name="define-additional-trunks-in-topology-builder-in-skype-for-business-server"></a>Definire trunk aggiuntivi in Generatore di topologie in Skype for Business Server
  
@@ -36,9 +36,9 @@ Un trunk è una connessione logica tra un Mediation Server e un gateway.
   
 ### <a name="to-define-an-additional-trunk-between-a-mediation-server-and-a-gateway-peer"></a>Per definire un trunk aggiuntivo tra un Mediation Server e un peer gateway
 
-1. Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server 2015** e quindi Skype for Business Server Generatore di topologie **2015**.
+1. Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server 2015** e quindi fare clic su Skype for Business Server Generatore di topologie **2015.**
     
-2. In Skype for Business Server, il nome del sito, **Componenti** condivisi , fare clic con il pulsante destro del mouse sul nodo **Trunk e** quindi scegliere **Nuovo trunk**.
+2. In Skype for Business Server, il nome del sito, **Componenti condivisi**, fare clic con il pulsante destro del mouse sul nodo **Trunk e** quindi scegliere Nuovo **trunk**.
    1. In **Definisci nuovo trunk**, specificare un nome descrittivo per identificare in modo univoco il trunk. Non è possibile definire due trunk con lo stesso nome.
     
       > [!NOTE]

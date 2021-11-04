@@ -1,7 +1,7 @@
 ---
 title: Novità di Skype for Business Server 2019 | Funzionalità
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: 'Riepilogo: queste funzionalità sono nuove in Skype for Business Server 2019.'
-ms.openlocfilehash: b58c61702d447a7b68e9fa7e09cc6e539e682582
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c701b9397e43744f8673dfb8c6f56cac2c6d56c7
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58600901"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60748972"
 ---
 # <a name="whats-in-skype-for-business-server-2019"></a>Novità di Skype for Business Server 2019
 
 **Riepilogo:** Leggere questo argomento per informazioni sulle nuove funzionalità in Skype for Business Server 2019.  
 
-Le nuove funzionalità di Skype for Business Server 2019 includono le seguenti:
+Le nuove funzionalità di Skype for Business Server 2019 includono:
   
 - Cloud Voicemail  
 - Connettore dati chiamate
@@ -31,11 +31,11 @@ Le nuove funzionalità di Skype for Business Server 2019 includono le seguenti:
 
 ## <a name="unified-messaging-services-cloud-voicemail"></a>Servizi di messaggistica unificata: Cloud Voicemail
 
-Exchange La messaggistica unificata rimane disponibile Skype for Business Server 2019 quando si integra Skype for Business 2019 con Exchange 2013 o Exchange 2016. A causa delle modifiche apportate al supporto in Exchange 2019, l'integrazione di messaggistica unificata di Exchange viene de-enfatizzata a favore delle funzionalità Cloud Voicemail e Cloud Operatore automatico.  
+Exchange La messaggistica unificata rimane disponibile Skype for Business Server 2019 quando si integra Skype for Business 2019 con Exchange 2013 o Exchange 2016. A causa delle modifiche apportate al supporto in Exchange 2019, l'integrazione di messaggistica unificata di Exchange viene de-enfatizzata a favore delle funzionalità Cloud Voicemail e cloud Operatore automatico.  
 
 Cloud Voicemail consente a tutti gli utenti di Skype for Business 2019&#x2014;che siano ospitati in locale o online&#x2014;di avere accesso allo stesso servizio di segreteria telefonica in Microsoft Cloud. Cloud Voicemail offre i vantaggi seguenti sia per gli utenti locali che per gli utenti online:
 
-- Accesso alla segreteria telefonica nella propria Exchange utilizzando Skype for Business Online, Teams o Outlook client
+- Accesso alla segreteria telefonica nella propria Exchange utilizzando i client Skype for Business Online, Teams o Outlook
 - Possibilità di utilizzare il portale basato sul Web per gestire le opzioni della segreteria telefonica
 
 Per [ulteriori informazioni, vedere Plan Cloud Voicemail service](../sfbhybrid/hybrid/plan-cloud-voicemail.md) e Plan for Skype for Business Server and Exchange Server [migration.](../sfbhybrid/hybrid/plan-um-migration.md)

@@ -1,7 +1,7 @@
 ---
 title: Personalizzare la musica del parcheggio di chiamata in attesa inSkype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 3d78e6f9-a4ae-49f4-a89f-4515acb49dac
 description: Personalizzare la musica del parcheggio di chiamata in attesa Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 5fd9872c0cc6ac8c63e996d38b3cfe2c34b6fc68
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 925749819a041ed451df816902dae8b932cffbbd
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585846"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753617"
 ---
 # <a name="customize-call-park-music-on-hold-inskype-for-business"></a>Personalizzare la musica del parcheggio di chiamata in attesa inSkype for Business
  
@@ -34,7 +34,7 @@ Puoi specificare il tuo file musicale da usare per la musica in attesa, invece d
   
 ### <a name="to-customize-the-music-file"></a>Per personalizzare il file musicale
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions.**
+1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions**.
     
 2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     

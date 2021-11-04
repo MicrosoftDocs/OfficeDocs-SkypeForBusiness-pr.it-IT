@@ -1,7 +1,7 @@
 ---
 title: Espansione delle impostazioni di modifica del server perimetrale per Lync Server 2010
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 74a66817-7092-4b2f-a2af-bc1a2c9e5fed
 description: 'È possibile modificare le impostazioni per il server perimetrale o il pool di server perimetrali configurando le proprietà seguenti:'
-ms.openlocfilehash: b7784e15d7446a51dfa9aed03dd1154bba157485
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: bb94c152fae183af3198f3fae99501ee33759bca
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58635330"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60765780"
 ---
 # <a name="edit-edge-settings-expander-for-lync-server-2010"></a>Modificare l'espansione delle impostazioni del server perimetrale per Lync Server 2010
  
@@ -35,7 +35,7 @@ ms.locfileid: "58635330"
     > [!IMPORTANT]
     > È possibile definire attivamente un solo server perimetrale o un pool di server perimetrali per la federazione. La configurazione mostrata nella schermata associata indica che un altro server perimetrale o un pool di server perimetrali è già configurato per la federazione. Il record SRV DNS esterno per la federazione (_sipfederationtls._tcp. ) punta al server perimetrale o al pool di server perimetrali \<external domain name\> per la federazione. 
   
-- La porta di replica della configurazione interna **(HTTPS),** per impostazione predefinita alla porta TCP 4443, è la porta su cui viene replicata la copia locale (ovvero locale dei server perimetrali) dell'archivio di gestione centrale. La copia locale dell'archivio di gestione centrale si trova nel database **RTCLOCAL** nell'SQL Server in ogni computer. La replica è unidirezionale, avviata dal server di gestione centrale (o dal Front End Server o dal pool Front End che detiene il ruolo server di gestione centrale) ai server perimetrali ed è una porta di interfaccia interna.
+- La porta di replica della configurazione interna **(HTTPS),** per impostazione predefinita alla porta TCP 4443, è la porta su cui viene replicata la copia locale (ovvero locale dei server perimetrali) dell'archivio di gestione centrale. La copia locale dell'archivio di gestione centrale si trova nel database **RTCLOCAL** nella SQL Server in ogni computer. La replica è unidirezionale, avviata dal server di gestione centrale (o dal Front End Server o dal pool Front End che detiene il ruolo server di gestione centrale) ai server perimetrali ed è una porta di interfaccia interna.
     
   **Selezione hop successivo**
   

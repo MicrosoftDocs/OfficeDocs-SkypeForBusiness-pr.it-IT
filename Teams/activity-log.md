@@ -1,6 +1,6 @@
 ---
 title: Visualizzare le assegnazioni dei criteri nel log attività nell'Microsoft Teams di amministrazione
-author: cichur
+author: serdars
 ms.author: serdars
 ms.reviewer: jastark
 manager: serdars
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0c1ce06f8c74570a7d5da5056b89772d5446562b
-ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
+ms.openlocfilehash: 21caf6d694c201b12527b4be3f33856b887d177b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "60605642"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60743082"
 ---
 # <a name="view-your-policy-assignments-in-the-activity-log"></a>Visualizzare le assegnazioni dei criteri nel log attività
 
@@ -35,9 +35,9 @@ Quando si assegnano criteri agli utenti nell'Microsoft Teams di amministrazione,
 
 Per visualizzare le assegnazioni dei criteri nel log attività:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare a **Home** e quindi in Log **attività** selezionare **Visualizza dettagli.**
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Home** e quindi in Log **attività** selezionare **Visualizza dettagli.**
 2. È possibile visualizzare tutte le assegnazioni dei criteri o filtrare l'elenco in base allo stato per visualizzare solo le assegnazioni non **avviate,** **in** corso o **completate.** Verranno visualizzate le informazioni seguenti su ogni attività:
-    - **Nome:** nome dell'assegnazione dei criteri. Fare clic sul collegamento per visualizzare altri dettagli. Include il numero di utenti a cui è stato assegnato il criterio e il numero di assegnazioni completate, in corso e non avviate. Verranno visualizzati anche l'elenco degli utenti nel batch e lo stato e il risultato per ogni utente. Ecco un esempio:
+    - **Nome:** nome dell'assegnazione dei criteri. Fare clic sul collegamento per visualizzare altri dettagli. Questo include il numero di utenti a cui è stato assegnato il criterio e il numero di assegnazioni completate, in corso e non avviate. Verranno visualizzati anche l'elenco degli utenti nel batch e lo stato e il risultato per ogni utente. Ecco un esempio:
 
         ![Screenshot dell'oggetto.](media/activity-log-policy-assignment-detail.png)
 

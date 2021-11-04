@@ -1,7 +1,7 @@
 ---
 title: Configurare Skype for Business Server per l'utilizzo dell'archivio contatti unificato
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/7/2018
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 6aa17ae3-764e-4986-a900-85a3cdb8c1fc
 description: "Riepilogo: configurare l'archivio contatti unificato per Exchange Server e Skype for Business Server."
-ms.openlocfilehash: d3e83f052f866e0d87d27c94fad8c2a7f46f4db0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d75db18a799d1384a88a0b66cd1cd73d5e01c639
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58620102"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60765834"
 ---
 # <a name="configure-skype-for-business-server-to-use-the-unified-contact-store"></a>Configurare Skype for Business Server per l'utilizzo dell'archivio contatti unificato
  
@@ -44,7 +44,7 @@ Se si preferisce non eseguire la migrazione di tutti i contatti nell'archivio co
 Set-CsUserServicesPolicy -Identity global -UcsAllowed $False
 ```
 
-Dopo aver disabilitato l'archivio contatti unificato nel criterio globale, è possibile creare un criterio per utente che consenta l'utilizzo dell'archivio contatti unificato. in questo modo è possibile fare in modo che alcuni utenti mantenino i propri contatti nell'archivio contatti unificato, mentre altri continuano a mantenere i contatti in Skype for Business Server. È possibile creare criteri di servizi per utente utilizzando un comando simile al seguente:
+Dopo aver disabilitato l'archivio contatti unificato nel criterio globale, è possibile creare un criterio per utente che consenta l'utilizzo dell'archivio contatti unificato. in questo modo è possibile fare in modo che alcuni utenti mantenino i propri contatti nell'archivio contatti unificato mentre altri continuano a mantenere i contatti in Skype for Business Server. È possibile creare criteri di servizi per utente utilizzando un comando simile al seguente:
   
 ```powershell
 New-CsUserServicesPolicy -Identity "AllowUnifiedContactStore" -UcsAllowed $True
@@ -56,7 +56,7 @@ Dopo aver creato il nuovo criterio, bisognerà assegnarlo agli utenti ai quali s
 Grant-CsUserServicesPolicy -Identity "Ken Myer" -PolicyName "AllowUnifiedContactStore"
 ```
 
-Dopo l'assegnazione del criterio, Skype for Business Server inizierà a eseguire la migrazione dei contatti dell'utente nell'archivio contatti unificato. Al termine della migrazione, i contatti dell'utente verranno archiviati in Exchange anziché Skype for Business Server. Se l'utente accede a Lync 2013 al termine della migrazione, verrà visualizzata una finestra di messaggio che gli chiederà di disconnettersi da Skype for Business e quindi di eseguire di nuovo l'accesso per completare il processo. Agli utenti a cui non è stato assegnato questo criterio per utente non verrà eseguita la migrazione dei contatti nell'archivio contatti unificato. Questo perché tali utenti vengono gestiti dal criterio globale e l'utilizzo dell'archivio contatti unificato è stato disabilitato nel criterio globale.
+Dopo l'assegnazione del criterio, Skype for Business Server inizierà a eseguire la migrazione dei contatti dell'utente nell'archivio contatti unificato. Al termine della migrazione, l'utente avrà i suoi contatti archiviati in Exchange anziché Skype for Business Server. Se l'utente accede a Lync 2013 al termine della migrazione, verrà visualizzata una finestra di messaggio che gli chiederà di disconnettersi da Skype for Business e quindi di eseguire di nuovo l'accesso per completare il processo. Agli utenti a cui non è stato assegnato questo criterio per utente non verrà eseguita la migrazione dei contatti nell'archivio contatti unificato. Questo perché tali utenti vengono gestiti dal criterio globale e l'utilizzo dell'archivio contatti unificato è stato disabilitato nel criterio globale.
   
 È possibile verificare che i contatti di un utente siano stati migrati correttamente nell'archivio contatti unificato eseguendo il cmdlet [Test-CsUnifiedContactStore](/powershell/module/skype/test-csunifiedcontactstore?view=skype-ps) da Skype for Business Server Management Shell:
   
@@ -64,7 +64,7 @@ Dopo l'assegnazione del criterio, Skype for Business Server inizierà a eseguire
 Test-CsUnifiedContactStore -UserSipAddress "sip:kenmyer@litwareinc.com" -TargetFqdn "atl-cs-001.litwareinc.com"
 ```
 
-Se Test-CsUnifiedContactStore ha esito positivo, significa che i contatti per l'utente sip:kenmyer@ litwareinc .com sono stati migrati nell'archivio contatti <span></span> <span></span> unificato.
+Se Test-CsUnifiedContactStore ha esito positivo, significa che i contatti per l'utente sip:kenmyer@ litwareinc .com sono stati migrati <span></span> <span></span> nell'archivio contatti unificato.
   
 ## <a name="rolling-back-the-unified-contact-store"></a>Rollback (ripristino) dell'archivio unificato per i contatti
 
@@ -93,6 +93,6 @@ Ciò significa anche che, dopo aver assegnato all'utente un nuovo criterio dei s
 Invoke-CsUcsRollback -Identity "Ken Myer"
 ```
 
-Se si modifica il criterio dei servizi utente ma non si esegue il cmdlet Invoke-CsUcsRollback, i contatti di Ken non saranno rimossi dall'archivio unificato per i contatti. Cosa succede se si esegue il cmdlet Invoke-CsUcsRollback ma non si modifica il criterio dei servizi utente di Ken Myer? In questo caso, i contatti di Ken vengono rimossi temporaneamente dall'archivio unificato per i contatti. È importante ricordare che questa rimozione è temporanea. Dopo che i contatti di Ken sono stati rimossi dall'archivio contatti unificato, Skype for Business Server attenderà 7 giorni e quindi controlla per vedere quali criteri di servizi utente sono stati assegnati a Ken. Se a Ken è ancora assegnato un criterio che consente l'utilizzo dell'archivio unificato per i contatti, i contatti saranno automaticamente spostati nuovamente nell'archivio unificato per i contatti. Per rimuovere temporaneamente i contatti dall'archivio unificato per i contatti, è necessario modificare il criterio dei servizi utente, oltre ad eseguire il cmdlet Invoke-CsUcsRollback.
+Se si modifica il criterio dei servizi utente ma non si esegue il cmdlet Invoke-CsUcsRollback, i contatti di Ken non saranno rimossi dall'archivio unificato per i contatti. Cosa succede se si esegue il cmdlet Invoke-CsUcsRollback ma non si modifica il criterio dei servizi utente di Ken Myer? In questo caso, i contatti di Ken vengono rimossi temporaneamente dall'archivio unificato per i contatti. È importante ricordare che questa rimozione è temporanea. Dopo che i contatti di Ken sono stati rimossi dall'archivio contatti unificato, Skype for Business Server attenderà 7 giorni e quindi verifica quali criteri di servizi utente sono stati assegnati a Ken. Se a Ken è ancora assegnato un criterio che consente l'utilizzo dell'archivio unificato per i contatti, i contatti saranno automaticamente spostati nuovamente nell'archivio unificato per i contatti. Per rimuovere temporaneamente i contatti dall'archivio unificato per i contatti, è necessario modificare il criterio dei servizi utente, oltre ad eseguire il cmdlet Invoke-CsUcsRollback.
   
 A causa del numero elevato di variabili che possono influire sulla migrazione, è difficile stimare il tempo necessario prima che gli account siano migrati completamente nell'archivio contatti unificato. Come regola generale, tuttavia, la migrazione non ha effetto immediato: anche quando si esegue la migrazione di un numero limitato di contatti, potrebbero essere necessario 10 minuti o più prima del completamento dello spostamento.

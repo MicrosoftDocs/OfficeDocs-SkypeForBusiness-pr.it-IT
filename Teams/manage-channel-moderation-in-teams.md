@@ -1,7 +1,7 @@
 ---
 title: Configurare e gestire la moderazione dei canali
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: jotaing
 ms.topic: article
@@ -16,20 +16,20 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come configurare canali per la moderazione in Microsoft Teams, incluso come aggiungere membri del team come moderatori del canale.
+description: Informazioni su come configurare canali per la moderazione nelle Microsoft Teams, incluso come aggiungere membri del team come moderatori del canale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5e1a58f7f09c94ae5178add3897b84e3571eef03
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: a012eb26ac9017e0d6a1110505aa1d1025c6a779
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726135"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753989"
 ---
 # <a name="set-up-and-manage-channel-moderation-in-microsoft-teams"></a>Configurare e gestire la moderazione dei canali in Microsoft Teams
 
 In Microsoft Teams, i proprietari del team possono attivare la moderazione per un canale standard per controllare chi può avviare nuovi post e rispondere ai post in quel canale.
 
-I proprietari del team possono anche aggiungere membri del team come moderatori. Un proprietario del team potrebbe non avere le competenze in materia a livello di canale per supportare al meglio la moderazione dei canali. Consentendo a membri specifici del team di moderare un canale, la responsabilità di gestire contenuto e contesto all'interno di un canale viene condivisa tra i proprietari del team e i moderatori del canale. Ad esempio, un proprietario del team può aggiungere i proprietari di attività o i proprietari di contenuto come moderatori, in modo da controllare la condivisione delle informazioni in quel canale.
+I proprietari del team possono anche aggiungere membri del team come moderatori. Un proprietario del team potrebbe non avere le competenze in materia a livello di canale per supportare al meglio la moderazione dei canali. Consentendo a membri specifici del team di moderare un canale, la responsabilità di gestire contenuto e contesto all'interno di un canale viene condivisa tra i proprietari del team e i moderatori del canale. Ad esempio, il proprietario di un team può aggiungere i proprietari di attività o i proprietari di contenuto come moderatori, in modo da controllare la condivisione delle informazioni in quel canale.
 
 > [!NOTE]
 > La moderazione dei canali è disponibile per i canali standard. Non è disponibile per il canale Generale o per i canali privati.
@@ -54,7 +54,7 @@ In questo scenario, il proprietario del team aggiunge i clienti potenziali di ma
 
 ### <a name="use-a-channel-for-class-discussions-in-teams-for-education"></a>Usare un canale per le discussioni di classe in Teams per l'istruzione
 
-In Teams per l'istruzione, un docente di scienze vuole usare un canale per coinvolgere gli studenti in discussioni mirate su argomenti specifici della classe.
+In Teams per l'istruzione, un docente di scienze vuole usare un canale per coinvolgere gli studenti in discussioni mirate su specifici argomenti della classe.
 
 In questo scenario, il docente consente agli assistenti didattici di moderare il canale. Gli assistenti didattici possono quindi creare nuovi post per avviare e avviare discussioni con gli studenti.
 

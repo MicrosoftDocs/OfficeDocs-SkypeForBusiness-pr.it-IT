@@ -1,7 +1,7 @@
 ---
-title: Rapporto controllo di ammissione di chiamata Skype for Business Server
+title: Rapporto controllo di ammissione di chiamata in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,19 +11,19 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: ea4b0c9f-7f93-4b8a-b901-01e1636c44fb
-description: 'Riepilogo: informazioni sui Rapporti di controllo di ammissione di chiamata utilizzati Skype for Business Server.'
-ms.openlocfilehash: a48e7aed8c18823a6bae279a1f1484f5f981d279
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: 'Riepilogo: informazioni sui rapporti di controllo di ammissione di chiamata utilizzati Skype for Business Server.'
+ms.openlocfilehash: 83259ed107113d5a013aa3a239ce9ef1eeab833b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58606195"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754767"
 ---
-# <a name="call-admission-control-report-in-skype-for-business-server"></a>Rapporto controllo di ammissione di chiamata Skype for Business Server
+# <a name="call-admission-control-report-in-skype-for-business-server"></a>Rapporto controllo di ammissione di chiamata in Skype for Business Server
  
 **Riepilogo:** Informazioni sui Rapporti di controllo di ammissione di chiamata utilizzati in Skype for Business Server.
   
-Il Rapporto controllo di ammissione di chiamata fornisce informazioni sulle sessioni peer-to-peer e di conferenza sottoposte alle limitazioni imposte dal servizio Controllo di ammissione di chiamata. Controllo di ammissione di chiamata consente agli amministratori di consentire o meno sessioni di comunicazione in base ai vincoli di larghezza di banda. Gli amministratori possono ad esempio creare criteri che limitano la larghezza di banda disponibile per le chiamate vocali e video. Se il limite di larghezza di banda viene raggiunto, non è possibile avviare ulteriori chiamate vocali o video se prima non termina una delle chiamate in corso liberando le risorse di rete necessarie.
+Il Rapporto controllo di ammissione di chiamata fornisce informazioni sulle sessioni peer-to-peer e di conferenza sottoposte alle limitazioni imposte dal servizio Controllo di ammissione di chiamata. Controllo di ammissione di chiamata consente agli amministratori di consentire o meno le sessioni di comunicazione in base ai vincoli di larghezza di banda. Gli amministratori possono ad esempio creare criteri che limitano la larghezza di banda disponibile per le chiamate vocali e video. Se il limite di larghezza di banda viene raggiunto, non è possibile avviare ulteriori chiamate vocali o video se prima non termina una delle chiamate in corso liberando le risorse di rete necessarie.
   
 ## <a name="accessing-the-call-admission-control-report"></a>Accesso al Rapporto controllo di ammissione di chiamata
 

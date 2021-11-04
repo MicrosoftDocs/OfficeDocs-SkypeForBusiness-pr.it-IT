@@ -1,7 +1,7 @@
 ---
 title: Aggiungere Office Web Apps Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/8/2018
@@ -15,25 +15,25 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 8825dfb1-4b3d-4e01-ba4a-2bd800c6de3b
 description: 'La procedura guidata Define New Office Web Apps Server definisce un nuovo Office Web Apps Server nella distribuzione. È necessario inserire le informazioni seguenti:'
-ms.openlocfilehash: 830156c8e3f77baa1a63bf90b190a5929e0401af
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 16b996dd065bb3445306d05b28b818a831ef0a70
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621288"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747893"
 ---
 # <a name="add-office-web-apps-server"></a>Aggiungere Office Web Apps Server
 
 La **procedura guidata Define New Office Web Apps Server** definisce un nuovo Office Web Apps Server nella distribuzione. È necessario inserire le informazioni seguenti:
 
- **Office FQDN server Web Apps**: Digitare il nome di dominio completo del server che ospiterà il server Office Web Apps Server
+ **Office FQDN del server Web Apps:** digitare il nome di dominio completo del server che ospiterà il server Office Web Apps Server
 
- **Office'URL** di individuazione del server Web Apps: digitare l'URL (Uniform Resource Locator) completo del Office Web Apps Server
+ Office di individuazione **del server Web Apps:** digitare l'URL (Uniform Resource Locator) completo del server Office Web Apps
 
 > [!TIP]
-> Il comportamento predefinito dell'URL di individuazione Office **Web Apps Server** è quello di creare l'URL in base al nome di dominio completo del server Office Web Apps nel formato: `https://<FQDN of the Office Web Apps Server/hosting/discovery` . Nella maggior parte dei casi non è necessario modificare il formato predefinito. Potrebbe essere necessario modificare il formato predefinito nel caso in cui il server app Web Office e l'URL di individuazione Office Web Apps Server siano diversi. Ad esempio, il Office Web Apps Server viene posizionato nella rete perimetrale e avrà un URL diverso in base alla posizione.
+> Il comportamento predefinito dell'URL di individuazione Office **Web Apps Server** è quello di creare l'URL in base al nome di dominio completo del server Office Web Apps nel formato: `https://<FQDN of the Office Web Apps Server/hosting/discovery` . Nella maggior parte dei casi non è necessario modificare il formato predefinito. Potrebbe essere necessario modificare il formato predefinito nel caso in cui il server Office Web Apps e l'URL di individuazione Office Web Apps Server siano diversi. Ad esempio, il Office Web Apps Server viene posizionato nella rete perimetrale e avrà un URL diverso in base alla posizione.
 
- Office Web Apps Server viene distribuito in una rete **esterna,ovvero perimetro/Internet:** selezionare la casella di controllo se il server app Web Office è posizionato all'esterno del firewall interno, ad esempio la rete perimetrale, la rete esterna o un'altra area di rete diversa dalla rete interna.
+ Office Web Apps Server viene distribuito in una rete esterna, ovvero **perimetrale/Internet:** selezionare la casella di controllo se il server app Web Office è posizionato all'esterno del firewall interno, ad esempio la rete perimetrale, la rete esterna o un'altra area di rete diversa dalla rete interna.
 
 ## <a name="see-also"></a>Vedere anche
 

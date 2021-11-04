@@ -1,7 +1,7 @@
 ---
 title: Connessioni SIP dirette in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,17 +15,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 0a37737d-9628-4e36-b27b-c134fa5a3882
-description: Le connessioni SIP dirette sono supportate tra Skype for Business Server e gateway PSTN e IP-PBX in VoIP aziendale.
-ms.openlocfilehash: 1a3a2354074819f40780896897a8e9a2790a9421
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: Le connessioni SIP dirette Skype for Business Server gateway PSTN e IP-PBX in VoIP aziendale.
+ms.openlocfilehash: b08067518f4f9e60214a34d8220a7ae367978ee5
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726265"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754453"
 ---
 # <a name="direct-sip-connections-in-skype-for-business-server"></a>Connessioni SIP dirette in Skype for Business Server
 
-Le connessioni SIP dirette sono supportate tra Skype for Business Server e gateway PSTN e IP-PBX in VoIP aziendale.
+Le connessioni SIP dirette Skype for Business Server gateway PSTN e IP-PBX in VoIP aziendale.
 
 È possibile utilizzare connessioni SIP dirette per connettersi Skype for Business Server a una delle opzioni seguenti:
 
@@ -42,7 +42,7 @@ Per implementare una connessione SIP diretta, è fondamentalmente necessario ese
 
 Se l'organizzazione utilizza una delle distribuzioni descritte in questa sezione, è possibile utilizzare Skype for Business Server come unica soluzione di telefonia per parte o per tutta l'organizzazione. In questa sezione vengono descritte in dettaglio le distribuzioni seguenti:
 
-- **Distribuzione incrementale:** Questa opzione presuppone che si abbia un'infrastruttura PBX (Private Branch Exchange) esistente e che si intenda introdurre VoIP aziendale in modo incrementale a gruppi o team più piccoli all'interno dell'organizzazione.
+- **Distribuzione incrementale:** Questa opzione presuppone che si abbia un'infrastruttura PBX (Private Branch Exchange) esistente e si intenda introdurre VoIP aziendale in modo incrementale a gruppi o team più piccoli all'interno dell'organizzazione.
 
 - **Distribuzione solo VoIP:** questa opzione presuppone che si consideri la distribuzione di VoIP aziendale in un sito che non dispone di un'infrastruttura di telefonia tradizionale.
 
@@ -52,7 +52,7 @@ Nella distribuzione incrementale, Skype for Business Server è l'unica soluzione
 
 L'opzione incrementale è consigliata se si dispone di gruppi di utenti chiaramente definiti che hanno requisiti di comunicazione in comune e che si prestano alla gestione centralizzata. Questa opzione è efficace anche se si dispone di team o reparti distribuiti in aree geografiche ampie, in cui il risparmio in costi a lunga distanza può essere significativo. In realtà, questa opzione è utile per creare team virtuali i cui membri potrebbero essere sparsi in tutto il mondo. È possibile creare, modificare o eliminare tali team in rapida risposta ai cambiamenti dei requisiti aziendali.
 
-Nella figura seguente viene illustrata la topologia generica per la distribuzione di VoIP aziendale dietro un PBX. Questa è la topologia consigliata per la distribuzione incrementale.
+Nella figura seguente viene illustrata la topologia generica per la distribuzione di VoIP aziendale dietro un SISTEMA PBX. Questa è la topologia consigliata per la distribuzione incrementale.
 
 **Opzione di distribuzione incrementale**
 
@@ -64,9 +64,9 @@ Nella figura seguente viene illustrata la topologia generica per la distribuzion
 > [!NOTE]
 > Il percorso multimediale mostrato in questa figura ha il bypass multimediale abilitato (configurazione consigliata). Se si sceglie di disabilitare il bypass multimediale, il percorso multimediale viene instradato attraverso il Mediation Server.
 
-In questa topologia, i reparti o i gruppi di lavoro selezionati sono abilitati per VoIP aziendale. Un gateway PSTN collega il gruppo di lavoro abilitato al protocollo VoIP (Voice over Internet Protocol) al PBX. Gli utenti abilitati per VoIP aziendale, inclusi i lavoratori remoti, comunicano attraverso la rete IP. Le chiamate VoIP aziendale utenti alla rete PSTN e ai colleghi che non sono abilitati per VoIP aziendale vengono instradati al gateway PSTN appropriato. Le chiamate provenienti da colleghi ancora nel sistema PBX o dai chiamanti sulla rete PSTN vengono instradati al gateway PSTN, che inoltra le chiamate a Skype for Business Server per il routing.
+In questa topologia, i reparti o i gruppi di lavoro selezionati sono abilitati per la VoIP aziendale. Un gateway PSTN collega il gruppo di lavoro abilitato al protocollo VoIP (Voice over Internet Protocol) al PBX. Gli utenti abilitati per VoIP aziendale, inclusi i lavoratori remoti, comunicano attraverso la rete IP. Le chiamate VoIP aziendale utenti alla rete PSTN e ai colleghi che non sono abilitati per VoIP aziendale vengono instradati al gateway PSTN appropriato. Le chiamate provenienti da colleghi ancora nel sistema PBX o da chiamanti sulla rete PSTN vengono instradati al gateway PSTN, che inoltra le chiamate a Skype for Business Server per il routing.
 
-Esistono due configurazioni consigliate per la connessione di VoIP aziendale a un'infrastruttura PBX esistente per l'interoperabilità: VoIP aziendale dietro il PBX e VoIP aziendale di fronte al PBX.
+Esistono due configurazioni consigliate per la VoIP aziendale a un'infrastruttura PBX esistente per l'interoperabilità: VoIP aziendale dietro il PBX e VoIP aziendale davanti al PBX.
 
 #### <a name="enterprise-voice-behind-the-pbx"></a>VoIP aziendale Dietro il PBX
 
@@ -110,7 +110,7 @@ I gateway PSTN (Public Switched Telephone Network) sono componenti hardware di t
 
 Un'organizzazione con più siti distribuisce in genere uno o più gateway in ogni sito. I siti di succursale possono connettersi alla rete PSTN tramite un gateway o tramite un Survivable Branch Appliance, che combina gateway e server in un'unica casella. Se i siti di succursale utilizzano un gateway, nel sito sono necessari sia una funzione di registrazione che un Mediation Server, a meno che il collegamento WAN non sia resiliente. Uno o più Mediation Server, collocati nei Front End Server, possono instradare le chiamate per uno o più gateway in ogni sito. È consigliabile distribuire la funzione di registrazione, il Mediation Server e il gateway necessari nel sito come Survivable Branch Appliance.
 
-Determinare il numero, le dimensioni e la posizione dei gateway PSTN è forse la decisione più importante e costosa da prendere durante la pianificazione dell'VoIP aziendale aziendale.
+Determinare il numero, le dimensioni e la posizione dei gateway PSTN è forse la decisione più importante e costosa che è necessario prendere durante la pianificazione dell'infrastruttura VoIP aziendale locale.
 
 Ecco le principali domande da considerare. Tenere presente che le risposte a queste domande sono tutte interdipendenti
 

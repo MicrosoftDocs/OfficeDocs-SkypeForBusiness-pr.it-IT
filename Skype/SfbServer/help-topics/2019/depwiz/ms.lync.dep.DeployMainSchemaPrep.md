@@ -1,7 +1,7 @@
 ---
 title: Preparare lo schema
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -14,22 +14,22 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 337aa234-c5f3-4468-a047-2023848e942c
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per preparare lo schema per Servizi di dominio Active Directory, eseguire il passaggio Preparare lo schema nella Skype for Business Server guidata. Fare clic su Esegui per avviare la preparazione dello schema.
-ms.openlocfilehash: f5dd2a7958eafc65f69a6df4344f10973714b58a
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Per preparare lo schema per Servizi di dominio Active Directory, eseguire il passaggio Preparare lo schema nella Distribuzione guidata Skype for Business Server guidata. Fare clic su Esegui per avviare la preparazione dello schema.
+ms.openlocfilehash: 6eb657bab4f4985c6ea5dd6d75c93f2e42cd6ef0
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58626058"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60738623"
 ---
 # <a name="prepare-schema"></a>Preparare lo schema
  
-Per preparare lo schema per Servizi di dominio Active Directory, eseguire il passaggio Preparare lo schema nella Skype for Business Server guidata. Fare clic su **Esegui** per avviare la preparazione dello schema. Il passaggio Prepare Schema legge i file di definizione dello schema forniti nella directory \Programmi\Skype for Business Server 2019\Deployment\Setup nel sistema in cui è in esecuzione la Distribuzione guidata. Tali file sono inoltre disponibili nella directory \Support\Schema dei supporti di installazione. Nel corso del passaggio di preparazione dello schema, quest'ultimo verrà esteso e verrà segnalato lo stato del processo. Verrà inoltre notificato il completamento del processo. La schermata di riepilogo consentirà di visualizzare i registri del processo. Esaminare tali registri per accertarsi che la preparazione sia stata completata correttamente.
+Per preparare lo schema per Servizi di dominio Active Directory, eseguire il passaggio Preparare lo schema nella Distribuzione guidata Skype for Business Server guidata. Fare clic su **Esegui** per avviare la preparazione dello schema. Il passaggio Prepare Schema legge i file di definizione dello schema forniti nella directory \Programmi\Skype for Business Server 2019\Deployment\Setup nel sistema in cui è in esecuzione la Distribuzione guidata. Tali file sono inoltre disponibili nella directory \Support\Schema dei supporti di installazione. Nel corso del passaggio di preparazione dello schema, quest'ultimo verrà esteso e verrà segnalato lo stato del processo. Verrà inoltre notificato il completamento del processo. La schermata di riepilogo consentirà di visualizzare i registri del processo. Esaminare tali registri per accertarsi che la preparazione sia stata completata correttamente.
   
 > [!IMPORTANT]
 > Per estendere lo schema, è necessario essere connessi al dominio come membri del gruppo Schema Admins e del gruppo Enterprise Admins. 
   
-Vengono aggiunte classi e attributi per estendere lo schema di Servizi di dominio Active Directory per supportare Skype for Business Server server, servizio e oggetti utente. Prima di estendere lo schema, è consigliabile effettuare un backup dello stato del sistema per il controller di dominio con il ruolo master schema. 
+Le classi e gli attributi vengono aggiunti per estendere lo schema di Servizi di dominio Active Directory per supportare Skype for Business Server server, servizio e oggetti utente. Prima di estendere lo schema, è consigliabile effettuare un backup dello stato del sistema per il controller di dominio con il ruolo master schema. 
   
 > [!CAUTION]
 > L'estensione dello schema non è un'operazione reversibile. È consigliabile fare tutti gli sforzi possibili per limitare il potenziale impatto di un'estensione dello schema non riuscita e per garantire che l'estensione dello schema avrà esito positivo. Ciò è particolarmente importante in caso di perdita di comunicazione o di qualsiasi altro errore nel server. È consigliabile eseguire un backup del controller di dominio master schema e un backup completo di Active Directory. 

@@ -1,7 +1,7 @@
 ---
 title: Aggiungere l'archivio SQL Server di backup per Conformità Persistent Chat
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/27/2015
@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 358b74bd-a97d-4f28-9bed-af633ea0099e
-description: Configurare gli archivi di conformità di SQL Server backup che forniranno database di backup per gli archivi di conformità del server Chat persistente o del server Chat SQL Server persistente.
-ms.openlocfilehash: b15cfb3ed23147bb6a6c9e2ea816350343cadf72
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: È possibile configurare gli archivi di SQL Server di backup che forniranno database di backup per il server Chat persistente o per gli archivi di conformità del server Chat persistente SQL Server database.
+ms.openlocfilehash: 8d70a8f82c58d0a66fef00695b3677305e5e6a9e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58615772"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747862"
 ---
 # <a name="add-persistent-chat-compliance-backup-sql-server-store"></a>Aggiungere l'archivio SQL Server di conformità di backup per Chat persistente
  
-Configurare gli archivi di conformità di SQL Server backup che forniranno database di backup per gli archivi di conformità del server Chat persistente o del server Chat SQL Server persistente.
+È possibile configurare gli archivi di SQL Server di backup che forniranno database di backup per il server Chat persistente o per gli archivi di conformità del server Chat persistente SQL Server database.
   
  **SQL Server archivio:** selezionare un SQL Server esistente e facoltativamente un'istanza per Persistent Chat.
   
@@ -32,17 +32,17 @@ Fare **clic su** Nuovo per definire una nuova SQL Server e facoltativamente una 
   
 Selezionare la **casella di controllo Abilita mirroring** SQL Server archivio per configurare un database di SQL Server e un'istanza facoltativa che fornirà un database con mirroring per i dati di conformità del backup di Persistent Chat.
   
-Selezionare nell'elenco **Mirroring SQL Server archiviare** un'SQL Server e un'istanza facoltativa per fungere da mirror SQL Server per la conformità di backup di Persistent Chat SQL Server.
+Selezionare nell'elenco **Mirroring SQL Server archiviare** un SQL Server e un'istanza facoltativa per fungere da mirror SQL Server per la conformità di backup di Persistent Chat SQL Server.
   
 Fare **clic su** Nuovo per definire una nuova SQL Server e facoltativamente una nuova istanza per il mirroring SQL Server Persistent Chat.
   
 Nell'elenco **Usa controllo del mirroring di SQL Server per abilitare il failover automatico** selezionare un server SQL Server che fungerà da server di controllo negli scenari di failover. Il server di controllo non esegue il mirroring o ospita i dati per i server Chat persistente, ma garantisce che solo un SQL Server in una configurazione con mirroring sia il SQL Server attivo in qualsiasi momento.
   
-Fare **clic su** Nuovo per definire un nuovo SQL Server di controllo facoltativamente un'istanza per il controllo di conformità del backup di Persistent Chat SQL Server mirroring.
+Fare **clic su** Nuovo per definire un nuovo SQL Server un'istanza per la conformità del backup di Persistent Chat SQL Server controllo del mirroring.
   
 Fare clic su **Indietro** per tornare alla finestra di dialogo per la definizione del pool precedente.
   
-Fare **clic** su Avanti dopo aver immesso le opzioni per la configurazione dell'archivio SQL Server backup del pool e per procedere con la definizione del pool di server Chat persistente.
+Fare **clic** su Avanti dopo aver immesso le opzioni per la configurazione dell'archivio di SQL Server di backup del pool e per procedere con la definizione del pool di server Chat persistente.
   
 Fare clic su **Annulla** per eliminare tutte le modifiche e chiudere la procedura guidata **Definisci nuovo pool Persistent Chat**.
   

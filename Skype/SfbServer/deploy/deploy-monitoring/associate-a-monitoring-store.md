@@ -1,7 +1,7 @@
 ---
 title: Associare un archivio di monitoraggio a un pool Front End in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: d3a20d5e-3f24-4cff-bc9b-4f84fea30e6b
 description: 'Riepilogo: informazioni su come associare pool Front End a un archivio di monitoraggio utilizzato da Skype for Business Server.'
-ms.openlocfilehash: cff7c2d7bc85916e7e79f4f78005c81f798bcbf7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 7261f86e86bc06426afd0cac8ca9142ab4398fe5
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58601891"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60778906"
 ---
 # <a name="associate-a-monitoring-store-with-a-front-end-pool-in-skype-for-business-server"></a>Associare un archivio di monitoraggio a un pool Front End in Skype for Business Server 
 **Riepilogo:** Informazioni su come associare pool Front End a un archivio di monitoraggio utilizzato da Skype for Business Server.
@@ -42,7 +42,7 @@ In alternativa, è possibile associare un pool Front End esistente a un archivio
     
 6. Nella finestra di dialogo **Modifica proprietà** nella scheda **Generale** selezionare l'opzione **Monitoraggio (registrazione dettagli chiamata e registrazione metrica QoE** e quindi selezionare un database di SQL Server esistente nell'elenco a discesa **Archivio SQL Server monitoraggio**. In alternativa, fare clic su **Nuovo** per associare il pool a un nuovo archivio database. Se si sceglie di utilizzare il nuovo archivio database, nella finestra di dialogo **Definisci nuovo archivio SQL** immettere il nome di dominio completo del computer SQL Server nella casella **FQDN SQL Server**. Se si desidera utilizzare l'istanza di SQL Server predefinita per l'archivio, selezionare **Istanza predefinita**, altrimenti selezionare **Istanza denominata** e immettere il nome dell'istanza nella casella **Istanza denominata**.
     
-    La  finestra di dialogo Modifica proprietà consente inoltre di creare un mirror di SQL per il database di monitoraggio(un mirror SQL consente di gestire due copie del database di monitoraggio, una archiviata nel computer dell'archivio di monitoraggio e l'altra nel computer mirror di SQL). Per abilitare il mirroring, selezionare T la sua SQL è in relazione **di mirroring** e immettere il numero di porta per il server mirror nella casella Numero porta **mirroring.**
+    La  finestra di dialogo Modifica proprietà consente inoltre di creare un mirror di SQL per il database di monitoraggio(un mirror SQL consente di mantenere due copie del database di monitoraggio, una archiviata nel computer dell'archivio di monitoraggio e l'altra nel computer mirror di SQL). Per abilitare il mirroring, selezionare T la sua SQL è **in relazione di mirroring** e immettere il numero di porta per il server mirror nella casella Numero porta **mirroring.**
     
 7. Nella finestra di dialogo **Modifica proprietà** fare clic su **OK**.
     
@@ -78,9 +78,9 @@ In alternativa, è possibile installare il database di monitoraggio eseguendo la
     
 3. Nella pagina **Distribuisci,** in **Passaggio 2:** Installazione o rimozione Skype for Business Server componenti , fare clic su **Esegui di nuovo**.
     
-4. Nella pagina Installazione Skype for Business Server componenti fare clic su Avanti nella pagina Installazione **Skype for Business Server componenti.** 
+4. Nella pagina Installazione Skype for Business Server componenti del programma di installazione fare clic su Avanti nella pagina Installazione **Skype for Business Server** **componenti.**
     
-5. Nella pagina Specificare il percorso degli elementi **MSI digitare** il percorso del file Ocscore.msi (un file incluso nel supporto di installazione Skype for Business Server) e quindi fare clic su **Avanti.**
+5. Nella pagina Specificare il percorso degli elementi **MSI digitare** il percorso del file Ocscore.msi (un file incluso nel supporto di installazione di Skype for Business Server) e quindi fare clic su **Avanti.**
     
 6. Nella pagina **Esecuzione comandi in corso** fare clic su **Fine**.
     

@@ -1,7 +1,7 @@
 ---
 title: Configurare gli scenari per il servizio di registrazione centralizzata in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 12/20/2018
@@ -14,23 +14,23 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 6c3bf826-e7fd-4002-95dc-01020641ef01
 description: 'Riepilogo: informazioni su come creare, modificare e rimuovere scenari per il servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: b4dea0146cfb80d8f28a102d4cf719a28b7bb188
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: da9a3c431be78a3abeab929fab86f1bf45e6cfa7
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58619712"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766344"
 ---
 # <a name="configure-scenarios-for-the-centralized-logging-service-in-skype-for-business-server-2015"></a>Configurare gli scenari per il servizio di registrazione centralizzata in Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come creare, modificare e rimuovere scenari per il servizio di registrazione centralizzata in Skype for Business Server 2015.
   
-Gli scenari definiscono l'ambito (ovvero globale, sito, pool o computer) e i provider da utilizzare nel servizio di registrazione centralizzata. Attraverso gli scenari si attivano o disattivano le tracce per i provider (ad esempio, S4, SIPStack, messaggistica immediata e presenza). Attraverso la configurazione di uno scenario, è possibile raggruppare tutti i provider per una data raccolta logica relativa a un problema specifico. Se si trova che uno scenario deve essere modificato per soddisfare le esigenze di risoluzione dei problemi e registrazione, gli strumenti di debug di Skype for Business Server 2015 forniscono un modulo Windows PowerShell denominato ClsScenarioEdit.psm1 contenente una funzione denominataEdit-CsClsScenario. Il modulo consente di modificare le proprietà dello scenario. In questo argomento sono forniti esempi di funzionamento del modulo. Scaricare gli Skype for Business Server 2015 [Debugging Tools](https://go.microsoft.com/fwlink/p/?LinkId=285257) prima di procedere.
+Gli scenari definiscono l'ambito (ovvero globale, sito, pool o computer) e i provider da utilizzare nel servizio di registrazione centralizzata. Attraverso gli scenari si attivano o disattivano le tracce per i provider (ad esempio, S4, SIPStack, messaggistica immediata e presenza). Attraverso la configurazione di uno scenario, è possibile raggruppare tutti i provider per una data raccolta logica relativa a un problema specifico. Se si trova che uno scenario deve essere modificato per soddisfare le proprie esigenze di risoluzione dei problemi e registrazione, gli strumenti di debug di Skype for Business Server 2015 forniscono un modulo di Windows PowerShell denominato ClsScenarioEdit.psm1 contenente una funzione denominataEdit-CsClsScenario. Il modulo consente di modificare le proprietà dello scenario. In questo argomento sono forniti esempi di funzionamento del modulo. Scaricare gli Skype for Business Server 2015 [Debugging Tools](https://go.microsoft.com/fwlink/p/?LinkId=285257) prima di procedere.
   
 > [!IMPORTANT]
-> Per un determinato ambito (sito, globale, pool o computer), è possibile eseguire un massimo di due scenari alla volta. Per determinare quali scenari sono attualmente in esecuzione, utilizzare Windows PowerShell [e Get-CsClsScenario](/powershell/module/skype/get-csclsscenario?view=skype-ps). Utilizzando Windows PowerShell e [Set-CsClsScenario](/powershell/module/skype/set-csclsscenario?view=skype-ps), è possibile modificare dinamicamente gli scenari in esecuzione. È possibile modificare gli scenari durante una sessione di registrazione, al fine di regolare o rifinire i dati che vengono raccolti, nonché i provider. 
+> Per un determinato ambito (sito, globale, pool o computer), è possibile eseguire un massimo di due scenari alla volta. Per determinare quali scenari sono attualmente in esecuzione, utilizzare Windows PowerShell [e Get-CsClsScenario](/powershell/module/skype/get-csclsscenario?view=skype-ps). Utilizzando Windows PowerShell [Set-CsClsScenario,](/powershell/module/skype/set-csclsscenario?view=skype-ps)è possibile modificare dinamicamente gli scenari in esecuzione. È possibile modificare gli scenari durante una sessione di registrazione, al fine di regolare o rifinire i dati che vengono raccolti, nonché i provider. 
   
-Per eseguire le funzioni del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator basati sui ruoli o un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet, inclusi gli eventuali ruoli RBAC personalizzati creati dall'utente, eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
+Per eseguire le funzioni del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza RBAC (Role-Based Access Control) CsAdministrator o CsServerAdministrator oppure di un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet, inclusi gli eventuali ruoli RBAC personalizzati creati dall'utente, eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
   
 ```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Skype for Business Server 2015 cmdlet"}
@@ -168,7 +168,7 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
    ```
 
     > [!TIP]
-    > Lo scaricamento corretto del modulo torna al prompt dei Windows PowerShell comando. Per verificare che il modulo sia stato scaricato, digitare  `Get-Help Edit-CsClsScenario` . Windows PowerShell tenterà di individuare la Guida per il cmdlet e avrà esito negativo. 
+    > Lo scaricamento corretto del modulo torna al prompt Windows PowerShell comando. Per verificare che il modulo sia stato scaricato, digitare  `Get-Help Edit-CsClsScenario` . Windows PowerShell tenterà di individuare la Guida per il cmdlet e avrà esito negativo. 
   
 ### <a name="to-remove-an-existing-provider-from-a-scenario-with-the-edit-clscontroller-module"></a>Per rimuovere un provider esistente da uno scenario attraverso il modulo Edit-ClsController
 
@@ -219,7 +219,7 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
    Edit-CsClsScenario -ScenarioName AlwaysOn -ProviderName ChatServer -Level Info -Flags TF_COMPONENT
    ```
 
-    -Loglevel può essere di tipo Fatal, Error, Warning, Info, Verbose, Debug o All. -Flags può essere uno qualsiasi dei flag supportati dal provider, ad esempio TF_COMPONENT, TF_DIAG. -Flags può anche essere di valore ALL
+    -Loglevel può essere di tipo Fatal, Error, Warning, Info, Verbose, Debug o All. -Flags può essere uno dei flag supportati dal provider, ad esempio TF_COMPONENT, TF_DIAG. -Flags può anche essere di valore ALL
     
    L'esempio precedente può essere digitato anche attraverso la caratteristiche di posizione del cmdlet. Ad esempio, per aggiungere il provider ChatServer allo scenario AlwaysOn, digitare:
     

@@ -1,7 +1,7 @@
 ---
 title: Integrare Skype for Business Server con Exchange Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 12/20/2018
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 795dc1c6-524f-4012-8b66-103b55198044
 description: 'Riepilogo: esaminare i passaggi di integrazione Exchange Server 2016 o Exchange Server 2013 e Skype for Business Server.'
-ms.openlocfilehash: 44b27328252384d6c7635cee2f0c98dafdd180ac
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 46e7380669ee93a9fa4a61511f362a809387a022
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621788"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60778846"
 ---
 # <a name="integrate-skype-for-business-server-with-exchange-server"></a>Integrare Skype for Business Server con Exchange Server
 
@@ -27,7 +27,7 @@ ms.locfileid: "58621788"
 
 Exchange Server 2013 o versioni successive e Skype for Business Server sono compatibili e si integrano bene. Ad esempio, Skype for Business informazioni sulla presenza degli utenti possono essere segnalate in Microsoft Outlook; allo stesso modo, Skype for Business può accedere al calendario Outlook di un utente, notare che l'utente ha una riunione pianificata e mostrare la presenza dell'utente come Occupato durante la riunione. Anche se non è necessario eseguire Exchange Server per eseguire Skype for Business Server (o viceversa) i due prodotti insieme migliorano l'esperienza utente reciproca.
 
-Questa documentazione fornisce informazioni sull'integrazione di Skype for Business Server e Exchange Server 2016 o Exchange Server 2013, ma presuppone che l'installazione e la configurazione iniziali di questi due prodotti siano già state completate. Per informazioni dettagliate sulla Skype for Business Server, vedere Skype for Business Server [Tech Center.](../../../Hub/index.yml) Per informazioni dettagliate sulla Exchange Server, vedere la documentazione relativa alla distribuzione per la versione di Exchange.
+Questa documentazione fornisce informazioni sull'integrazione di Skype for Business Server e Exchange Server 2016 o Exchange Server 2013, ma presuppone che l'installazione e la configurazione iniziali di questi due prodotti siano già state completate. Per informazioni dettagliate sulla Skype for Business Server, vedere il [Skype for Business Server Tech Center.](../../../Hub/index.yml) Per informazioni dettagliate sulla Exchange Server, vedere la documentazione relativa alla distribuzione per la versione di Exchange.
 
 Se si sta integrando un'installazione locale di Skype for Business Server con Microsoft Exchange Online, vedere [Configure integration between on-premises Skype for Business Server and Outlook Web App](outlook-web-app.md).
 

@@ -1,7 +1,7 @@
 ---
 title: Aggiungere i dettagli del sito
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: c34def73-c5a1-4e89-80c2-f2c6cd654924
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile specificare i dettagli sulla posizione del sito, come la città, la provincia o il codice di avviamento postale. Tutti questi dettagli che riguardano la posizione sono facoltativi.
-ms.openlocfilehash: 7460e4127580770a62a2ed6bb6d2e55c4345d41a
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: e2ff3016722b0cb6c46b2092c30b80a06d61f5c3
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58581620"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759948"
 ---
 # <a name="add-site-details"></a>Aggiungere i dettagli del sito
  

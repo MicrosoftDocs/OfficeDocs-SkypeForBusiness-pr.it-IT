@@ -1,7 +1,7 @@
 ---
 title: Nodo di ambito degli archivi file
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 9d88f69d-8641-4405-a26d-99414af679a5
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Nel nodo Archivi file vengono elencati gli archivi file della topologia. È possibile eseguire l'operazione seguente:"
-ms.openlocfilehash: 46fdf3586b5848a77bce1a704537d616ccb6c46b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 9514fe6ea1d6f268a8c0082459e5739274cbd082
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585210"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60742323"
 ---
 # <a name="file-stores-scope-node"></a>Nodo di ambito degli archivi file
  

@@ -1,7 +1,7 @@
 ---
 title: Gestire le impostazioni di configurazione delle riunioni in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 2e6c4f48-464e-4b8e-b7f4-68cdc1ae4ad9
 description: 'Riepilogo: informazioni su come gestire le impostazioni di configurazione delle riunioni in Skype for Business Server.'
-ms.openlocfilehash: 14e84021e398308fe1b2d3d2187329c30dcb8412
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: fe622a04e25795471e8f757c352fcaebd7fb1e3b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603925"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754835"
 ---
 # <a name="manage-meeting-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione delle riunioni in Skype for Business Server
  
@@ -37,17 +37,17 @@ Le impostazioni di configurazione delle riunioni definiscono quanto segue:
     
 - Se gli utenti anonimi (non autenticati) sono ammessi per impostazione predefinita
     
-È possibile definire le caratteristiche delle riunioni Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell. 
+È possibile definire le caratteristiche delle riunioni Skype for Business Server Pannello di controllo o tramite Skype for Business Server Management Shell. 
   
 È possibile specificare le impostazioni delle riunioni a livello globale (creato per impostazione predefinita), a livello di sito o di pool. Per impostazione predefinita, le impostazioni globali definiscono l'esperienza di riunione. Se si creano impostazioni a livello di pool, tali impostazioni si applicheranno a tutte le riunioni ospitate da tale pool. Se invece non si creano impostazioni a livello di pool, si applicheranno le impostazioni a livello di sito, se esistenti. Se non si definiscono impostazioni a livello di sito, le impostazioni globali si applicheranno a tutte le riunioni.
   
-## <a name="manage-meeting-settings-by-using-skype-for-business-server-control-panel"></a>Gestire le impostazioni delle riunioni tramite Skype for Business Server Pannello di controllo
+## <a name="manage-meeting-settings-by-using-skype-for-business-server-control-panel"></a>Gestire le impostazioni delle riunioni tramite il Skype for Business Server Pannello di controllo
 
-Per gestire le impostazioni delle riunioni tramite Skype for Business Server Pannello di controllo:
+Per gestire le impostazioni delle riunioni tramite Skype for Business Server pannello di controllo:
   
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2.  Apri Skype for Business Server Pannello di controllo.
+2.  Aprire Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Configurazione riunione.**
     

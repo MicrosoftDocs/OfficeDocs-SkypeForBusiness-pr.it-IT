@@ -1,7 +1,7 @@
 ---
 title: Log di acquisizione della ricerca creati dal servizio di registrazione centralizzato in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 12/20/2018
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 1b75b218-d84f-47a7-8a0a-b7e016b1cc79
 description: 'Riepilogo: informazioni su come cercare e leggere i registri di acquisizione del servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: ff33e2d680c83b9d997e2c17d8852d8bd816edbf
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: e5a1935b5c2bfcfccd0001adab53d04f6d8a1307
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58636040"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766334"
 ---
 # <a name="search-capture-logs-created-by-the-centralized-logging-service-in-skype-for-business-server-2015"></a>Log di acquisizione della ricerca creati dal servizio di registrazione centralizzato in Skype for Business Server 2015
  
@@ -177,10 +177,10 @@ Vengono restituite tutte le voci di log con componenti di traccia per SIPStack, 
 
 ## <a name="read-capture-logs-from-the-centralized-logging-service"></a>Lettura dei registri di acquisizione dal servizio di registrazione centralizzata
 
-Si comprende il reale vantaggio del servizio di registrazione centralizzata dopo l'esecuzione della ricerca e si dispone di un file che è possibile utilizzare per rilevare un problema segnalato. È possibile leggere il file in diversi modi. Il file di output è in un formato di testo standard ed è possibile utilizzare Notepad.exe o qualsiasi altro programma che consenta di aprire e leggere un file di testo. Per file di dimensioni maggiori e problemi più complessi, è possibile utilizzare uno strumento come Snooper.exe progettato per leggere e analizzare l'output di registrazione dal servizio di registrazione centralizzato. Snooper è incluso con gli strumenti di debug disponibili come download separato. È possibile scaricare gli strumenti di debug qui: [https://go.microsoft.com/fwlink/?LinkId=285257](https://go.microsoft.com/fwlink/?LinkId=285257) . Quando si installano gli strumenti di debug, non vengono creati brevi tagli e voci di menu. Dopo aver installato gli strumenti di debug, aprire Windows Explorer, una finestra della riga di comando o Skype for Business Server Management Shell e passare alla directory (percorso predefinito) C:\Programmi\Skype for Business Server 2015\Debugging Tools. Fare doppio clic Snooper.exe o digitare Snooper.exe e quindi premere INVIO se si utilizza la riga di comando o Skype for Business Server Management Shell.
+Si comprende il reale vantaggio del servizio di registrazione centralizzata dopo l'esecuzione della ricerca e si dispone di un file che è possibile utilizzare per rilevare un problema segnalato. È possibile leggere il file in diversi modi. Il file di output è in un formato di testo standard ed è possibile utilizzare Notepad.exe o qualsiasi altro programma che consenta di aprire e leggere un file di testo. Per file di grandi dimensioni e problemi più complessi, è possibile utilizzare uno strumento come Snooper.exe progettato per leggere e analizzare l'output di registrazione dal servizio di registrazione centralizzato. Snooper è incluso con gli strumenti di debug disponibili come download separato. È possibile scaricare gli strumenti di debug qui: [https://go.microsoft.com/fwlink/?LinkId=285257](https://go.microsoft.com/fwlink/?LinkId=285257) . Quando si installano gli strumenti di debug, non vengono creati brevi tagli e voci di menu. Dopo aver installato gli strumenti di debug, aprire Windows Explorer, una finestra della riga di comando o Skype for Business Server Management Shell e passare alla directory (percorso predefinito) C:\Programmi\Skype for Business Server 2015\Debugging Tools. Fare doppio clic Snooper.exe o digitare Snooper.exe e quindi premere INVIO se si utilizza la riga di comando o Skype for Business Server Management Shell.
   
 > [!IMPORTANT]
-> Lo scopo di questo argomento non è quello di illustrare in dettaglio e discutere le tecniche di risoluzione dei problemi. La risoluzione dei problemi e i processi che lo circondano sono un argomento complesso. Per informazioni dettagliate sulla risoluzione dei problemi di base e sulla risoluzione di carichi di lavoro specifici, vedere il manuale Microsoft Lync Server 2010 Resource Kit all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=211003](https://go.microsoft.com/fwlink/p/?linkId=211003) . I processi e le procedure sono ancora applicabili Skype for Business Server 2015. 
+> Lo scopo di questo argomento non è quello di illustrare in dettaglio e discutere le tecniche di risoluzione dei problemi. La risoluzione dei problemi e i processi che lo circondano sono un argomento complesso. Per informazioni dettagliate sulla risoluzione dei problemi di base e sulla risoluzione di carichi di lavoro specifici, vedere il manuale Microsoft Lync Server 2010 Resource Kit all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=211003](https://go.microsoft.com/fwlink/p/?linkId=211003) . I processi e le procedure si applicano ancora Skype for Business Server 2015. 
   
 ### <a name="to-open-a-log-file-in-snooper"></a>Per aprire un file di registro in Snooper
 

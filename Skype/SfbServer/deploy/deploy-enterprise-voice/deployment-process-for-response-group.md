@@ -1,7 +1,7 @@
 ---
 title: Processo di distribuzione per Response Group in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,18 +16,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d390c8a1-dc6e-44d8-b386-2be1fca9877c
 description: Processo di distribuzione e passaggi per Response Group in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: ef3c5810758d7d3c4df070ca2adf70ef80025ffe
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: cbc8a26e88cc98f32042ba00fab1ecf181af67d4
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60015300"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60765874"
 ---
 # <a name="deployment-process-for-response-group-in-skype-for-business"></a>Processo di distribuzione per Response Group in Skype for Business
 
 Processo di distribuzione e passaggi per Response Group in Skype for Business Server VoIP aziendale.
 
-Response Group è una VoIP aziendale che instrada e accoda le chiamate in arrivo a gruppi di persone, denominati agenti, ad esempio un help desk o un service desk del cliente.
+Response Group è una funzionalità VoIP aziendale che instrada e accoda le chiamate in arrivo a gruppi di persone, denominati agenti, ad esempio un help desk o un servizio clienti.
 
 I componenti necessari per Response Group vengono installati e abilitati automaticamente nel server Standard Edition o Front End Server quando si distribuisce VoIP aziendale. Per rendere Response Group disponibile agli utenti, è necessario configurare i gruppi di agenti, quindi le code e quindi i flussi di lavoro. Inoltre, un amministratore di Response Group può delegare la configurazione di un flusso di lavoro esistente a un responsabile di Response Group, che può quindi modificare e riconfigurare il flusso di lavoro e i gruppi di agenti e le code associati.
 
@@ -136,9 +136,9 @@ Per SQL Server 2008 R2 e SQL Server 2012, utilizzare le regole di confronto Lati
 
 |**Fase**|**Procedura**|**Autorizzazioni**|**Documentazione relativa alla distribuzione**|
 |:-----|:-----|:-----|:-----|
-|Abilitare gli utenti per Skype for Business e per VoIP aziendale  <br/> |Abilitare gli utenti che saranno agenti per Skype for Business e VoIP aziendale. Gli utenti devono essere abilitati per poter essere aggiunti a gruppi di agenti. In genere, gli utenti sono abilitati per Skype for Business durante la edizione Enterprise o edizione Standard server. Gli utenti sono abilitati per VoIP aziendale durante la VoIP aziendale distribuzione.  <br/> |RTCUniversalUserAdmins  <br/> CsUserAdministrator  <br/> CsAdministrator  <br/> |[Abilitare o disabilitare gli utenti per Lync Server 2013 Preview](/previous-versions/office/lync-server-2013/lync-server-2013-disable-or-re-enable-user-account-for-lync-server) <br/> [Abilitare gli utenti per VoIP aziendale in Skype for Business Server](enable-users-for-enterprise-voice.md) <br/> |
+|Abilitare gli utenti per Skype for Business e per VoIP aziendale  <br/> |Abilitare gli utenti che saranno agenti per Skype for Business e VoIP aziendale. Gli utenti devono essere abilitati per poter essere aggiunti a gruppi di agenti. In genere, gli utenti sono abilitati Skype for Business durante la edizione Enterprise o edizione Standard server. Gli utenti sono abilitati per VoIP aziendale durante la VoIP aziendale distribuzione.  <br/> |RTCUniversalUserAdmins  <br/> CsUserAdministrator  <br/> CsAdministrator  <br/> |[Abilitare o disabilitare gli utenti per Lync Server 2013 Preview](/previous-versions/office/lync-server-2013/lync-server-2013-disable-or-re-enable-user-account-for-lync-server) <br/> [Abilitare gli utenti per VoIP aziendale in Skype for Business Server](enable-users-for-enterprise-voice.md) <br/> |
 |Creazione e configurazione di Response Group, costituiti da gruppi di agenti, code e flussi di lavoro  <br/> |1. Utilizzare il Skype for Business Server o Skype for Business Server Management Shell per eseguire le operazioni seguenti:  <br/> a. Creare e configurare gruppi di agenti.  <br/> b. Creare e configurare code.  <br/> 2. Facoltativamente, utilizzare Skype for Business Server Management Shell per creare orari di ufficio e festività di Response Group predefiniti.  <br/> 3. Utilizzare lo strumento di configurazione di Response Group o Skype for Business Server Management Shell per creare flussi di lavoro (gruppi di risposta o flussi di chiamate IVR), inclusi orari di ufficio e festività di Response Group personalizzati.  <br/> È possibile accedere a Strumento di configurazione di Response Group Skype for Business Server Pannello di controllo.  <br/> |RTCUniversalServerAdmins  <br/> CsResponseGroupAdministrator  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> CsResponseGroupManager  <br/> |[Creare gruppi di agenti per Response Group](/previous-versions/office/lync-server-2013/lync-server-2013-create-response-group-agent-groups) <br/> [Creare code di Response Group](/previous-versions/office/lync-server-2013/lync-server-2013-create-response-group-queues) <br/> [(Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business](optional-define-response-group-business-hours.md) <br/> [(Facoltativo) Definire i set di festività di Response Group in Skype for Business](optional-define-response-group-holiday-sets.md) <br/> [Progettazione e creazione di flussi di lavoro di Response Group in Skype for Business](designing-and-creating-response-group-workflows.md) <br/> |
-|(Facoltativo) Personalizzazione delle impostazioni a livello di applicazione  <br/> |Utilizzare Skype for Business Server Management Shell per personalizzare la configurazione predefinita di musica in attesa, il file audio di musica di attesa predefinito, il periodo di tolleranza di ringback dell'agente e la configurazione del contesto di chiamata.  <br/> |RTCUniversalServerAdmins  <br/> CsResponseGroupAdministrator  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> |[Gestione delle impostazioni di Response Group a livello di applicazione in Skype for Business](managing-application-level-response-group-settings.md) <br/> |
+|(Facoltativo) Personalizzazione delle impostazioni a livello di applicazione  <br/> |Utilizzare Skype for Business Server Management Shell per personalizzare la configurazione predefinita di musica in attesa, il file audio di musica in attesa predefinito, il periodo di tolleranza di ringback dell'agente e la configurazione del contesto di chiamata.  <br/> |RTCUniversalServerAdmins  <br/> CsResponseGroupAdministrator  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> |[Gestione delle impostazioni di Response Group a livello di applicazione in Skype for Business](managing-application-level-response-group-settings.md) <br/> |
 |(Facoltativo) Delega della gestione dei Response Group  <br/> |Assegnare agli utenti il ruolo CsResponseGroupManager per delegare la configurazione dei Response Group. I responsabili di Response Group possono quindi configurare i Response Group a loro assegnati.  <br/> |RTCUniversalServerAdmins  <br/> CsResponseGroupAdministrator  <br/> CsVoiceAdministrator  <br/> CsServerAdministrator  <br/> CsAdministrator  <br/> |[Pianificazione del controllo di accesso basato sui ruoli](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-role-based-access-control) <br/> |
 |Verificare la distribuzione di Response Group  <br/> |Testare la risposta alle chiamate nei flussi di lavoro del gruppo di risposta e del sistema IVR per assicurare che la configurazione funzioni come previsto.  <br/> |-  <br/> |-  <br/> |
 

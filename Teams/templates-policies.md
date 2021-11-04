@@ -1,7 +1,7 @@
 ---
 title: Gestire i modelli di team nell'interfaccia di amministrazione
-author: cichur
-ms.author: serdars
+author: serdars
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: yinchang
 ms.topic: article
@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire i modelli di team nell'interfaccia di amministrazione
-ms.openlocfilehash: c8b9926290e58fe190d2351820e2bb63560c8c8c
-ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
+ms.openlocfilehash: 0ab167cc66a897c0f89679cd2a403a385b2b1b01
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "60605372"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766064"
 ---
 # <a name="manage-team-templates-in-the-admin-center"></a>Gestire i modelli di team nell'interfaccia di amministrazione
 
@@ -38,13 +38,13 @@ Questo breve video illustra come gestire i criteri dei modelli.
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Espandere i **Teams**  >  **criteri di modelli.**
+2. Espandere criteri **Teams**  >  **modelli.**
 
 3. Selezionare **Aggiungi**.
 
     ![I criteri del modello sono selezionati e l'opzione Aggiungi è evidenziata.](media/template-policies-1.png)
 
-1. Nella sezione **Criteri modelli Impostazioni** completare i campi seguenti:
+1. Nella sezione **Criteri Impostazioni** modelli completare i campi seguenti:
 
     - Nome dei criteri dei modelli
 
@@ -90,7 +90,7 @@ Gli utenti assegnati a un criterio potranno visualizzare solo i modelli visualiz
 
 **D: È possibile assegnare utenti in batch ai criteri dei modelli di team?**
   
-A: Sì, l'assegnazione in batch per i criteri di modello è in PowerShell. Il tipo di criterio per questa azione è TeamsTemplatePermissionPolicy. [Ulteriori informazioni](/powershell/module/teams/new-csbatchpolicyassignmentoperation)
+A: Sì, l'assegnazione batch per i criteri di modello in PowerShell. Il tipo di criterio per questa azione è TeamsTemplatePermissionPolicy. [Ulteriori informazioni](/powershell/module/teams/new-csbatchpolicyassignmentoperation)
 
 **D: I gruppi possono essere assegnati ai criteri dei modelli di team?**
 

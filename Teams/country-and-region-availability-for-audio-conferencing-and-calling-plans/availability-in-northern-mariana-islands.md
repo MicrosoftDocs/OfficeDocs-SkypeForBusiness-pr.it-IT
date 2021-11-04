@@ -1,7 +1,7 @@
 ---
 title: Disponibilità nelle Isole Marianne settentrionali
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: fafan
 ms.topic: reference
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per le Isole Marianne settentrionali.
-ms.openlocfilehash: 0924e44c075adffd61b3d3a5dd397598a576bcd2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8be7e802cb399b8e4d874fabddc4c9389fc07627
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58582400"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753955"
 ---
 # <a name="availability-in-northern-mariana-islands"></a>Disponibilità nelle Isole Marianne settentrionali
 

@@ -1,7 +1,7 @@
 ---
 title: Assegnare un certificato di autenticazione da server a server a Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: c7413954-2504-47f4-a073-44548aff1c0c
 description: 'Riepilogo: assegnare un certificato di autenticazione da server a server per Skype for Business Server.'
-ms.openlocfilehash: 67e9b618e882a257047a4569e790d96c73bf386b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b36db3956dc801d4874a13033bba60917b7112af
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621082"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60754879"
 ---
 # <a name="assign-a-server-to-server-authentication-certificate-to-skype-for-business-server"></a>Assegnare un certificato di autenticazione da server a server a Skype for Business Server
 **Riepilogo:** Assegnare un certificato di autenticazione da server a server per Skype for Business Server.

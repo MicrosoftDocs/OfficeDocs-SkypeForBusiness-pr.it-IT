@@ -1,7 +1,7 @@
 ---
 title: Skype for Business Server Exchange strumento di pianificazione della messaggistica unificata
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 12/20/2018
@@ -16,16 +16,16 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: cb767f83-2684-4006-a1f2-c6f0adf50f62
 description: Skype for Business Server supporta l'integrazione con Exchange messaggistica unificata per combinare la messaggistica vocale e la messaggistica di posta elettronica in un'unica infrastruttura di messaggistica.
-ms.openlocfilehash: 4363cd9c2ce79d2d55403f4f4f6a63b096125e85
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 008b50b3bfd1c6732c3a7164f31dcc596461156b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58615852"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60772362"
 ---
 # <a name="skype-for-business-server-exchange-unified-messaging-planning-tool"></a>Skype for Business Server Exchange strumento di pianificazione della messaggistica unificata
 
-Skype for Business Server 2015 supporta l'integrazione con Exchange messaggistica unificata per la combinazione di messaggistica vocale e messaggistica elettronica in un'unica infrastruttura di messaggistica.
+Skype for Business Server 2015 supporta l'integrazione con Exchange messaggistica unificata per combinare la messaggistica vocale e la messaggistica elettronica in un'unica infrastruttura di messaggistica.
 
 Per dettagli, vedere:
 

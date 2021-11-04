@@ -1,7 +1,7 @@
 ---
 title: Configurare un'area di rete Crea nuova o Modifica esistente
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 0277b988-e12e-4786-9001-9c212495cb89
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: dd9ac1556be4c4c49c2da1340ea472fb2bfe537e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 29f9345e38830c7ae76a75f3e98bee5ecf612c58
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58584090"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60772512"
 ---
 # <a name="configure-a-network-region-create-new-or-edit-existing"></a>Configurare un'area di rete: crearne una nuova o modificarne una esistente
 

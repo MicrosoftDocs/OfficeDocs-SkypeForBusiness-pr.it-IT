@@ -1,7 +1,7 @@
 ---
 title: Associare i report di monitoraggio a un database mirror in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 42b797c6-8db8-4ad7-886e-8ddf8deb06f9
 description: 'Riepilogo: informazioni su come associare i report di monitoraggio a un database mirror utilizzato da Skype for Business Server.'
-ms.openlocfilehash: ecdf630f6839fa65bf163715e473a3a37cdbcece
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: a30a107f8a5f5df6bb11bc8c409bf7376438f619
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60014400"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60748852"
 ---
 # <a name="associate-monitoring-reports-with-a-mirror-database-in-skype-for-business-server"></a>Associare i report di monitoraggio a un database mirror in Skype for Business Server 
  

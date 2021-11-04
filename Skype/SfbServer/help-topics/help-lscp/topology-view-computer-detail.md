@@ -1,7 +1,7 @@
 ---
 title: Topologia Visualizza dettagli computer
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 482d8d7b-d674-46b5-b8b7-19bc0f20e9b2
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 4423c02885bf6fd83c5b095bdcae7ebcc3cfa17d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f8a98d60de17cd5473fa04ef6f4c989b323c99db
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610903"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60772422"
 ---
 # <a name="topology-view-computer-detail"></a>Topologia: visualizzare dettagli computer
 

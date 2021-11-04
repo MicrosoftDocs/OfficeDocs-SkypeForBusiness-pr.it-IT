@@ -1,7 +1,7 @@
 ---
 title: tblPrincipalType
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/9/2015
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 32e1c1d6-80f4-4624-bf4e-b4c77d3982fa
 description: Nella tabella tblPrincipalType sono inclusi i tipi di entità per classificare gli elementi contenuti nella tabella tblPrincipal.
-ms.openlocfilehash: 5a4e38c7e29de235c4244e0617575f0732ab4362
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 3fa86d3cfed058387681ff0fc5eb2b3ec7afb26d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58633500"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60743112"
 ---
 # <a name="tblprincipaltype"></a>tblPrincipalType
  
@@ -43,11 +43,11 @@ Nella tabella tblPrincipalType sono inclusi i tipi di entità per classificare g
 
 |**ID**|**Ruolo**|**Descrizione**|**Utente**|
 |:-----|:-----|:-----|:-----|
-|1   <br/> |Qualsiasi  <br/> |Entità generica senza tipo conosciuto. Non usata nella tabella tblPrincipal.  <br/> ||
-|2   <br/> |AnyUser  <br/> |Entità generica di tipo utente. Non usate nella tabella tblPrincipal.  <br/> |Sì  <br/> |
+|1  <br/> |Qualsiasi  <br/> |Entità generica senza tipo conosciuto. Non usata nella tabella tblPrincipal.  <br/> ||
+|2  <br/> |AnyUser  <br/> |Entità generica di tipo utente. Non usate nella tabella tblPrincipal.  <br/> |Sì  <br/> |
 |3   <br/> |AnyGroup  <br/> |Entità generica con semantica di gruppo. Non usata nella tabella tblPrincipal.  <br/> ||
 |4   <br/> |SystemUser  <br/> |Entità utilizzata internamente dal server Chat persistente.  <br/> ||
-|5   <br/> |Utente  <br/> |Utente normale.  <br/> |Sì  <br/> |
+|5  <br/> |User  <br/> |Utente normale.  <br/> |Sì  <br/> |
 |8   <br/> |DC  <br/> |Controller di dominio Servizi di dominio Active Directory.  <br/> ||
 |9   <br/> |Gruppo  <br/> |Gruppo di sicurezza di Active Directory.  <br/> ||
 |10   <br/> |Cartella  <br/> |Contenitore o unità organizzativa di Active Directory.  <br/> ||

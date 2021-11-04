@@ -1,7 +1,7 @@
 ---
 title: Criteri PIN
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,18 +15,18 @@ ms.localizationpriority: medium
 ms.assetid: 16e5b03c-c313-4792-9353-65f33b5e775a
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 857fb1513dd9bb0be07113a6aa2a13f91795898d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 6bb3cc48843ba2032925d72a9184fb622bacdd61
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585240"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60742632"
 ---
 # <a name="pin-policy"></a>Criteri PIN
 
 Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
- **Usare i criteri PIN per i telefoni IP** Questo criterio PIN (Personal Identification Number) supporta l'autenticazione per gli utenti che si connettono a Skype for Business Server tramite un telefono IP.
+ **Usare i criteri PIN per i telefoni IP** Questo criterio PIN (Personal Identification Number) supporta l'autenticazione per gli utenti che si connettono Skype for Business Server tramite un telefono IP.
 - [Creare un nuovo criterio PIN in Skype for Business Server](../../../manage/authentication/create-a-new-pin-policy.md)
 
 - [Modificare un criterio PIN esistente in Skype for Business Server](../../../manage/authentication/modify-an-existing-pin-policy.md)

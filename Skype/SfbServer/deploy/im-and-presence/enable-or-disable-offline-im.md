@@ -1,7 +1,7 @@
 ---
 title: Abilitare o disabilitare la messaggistica istantanea offline in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c0f44352-fb4a-45d3-85b0-a4320d4b8339
 description: Informazioni su come abilitare o disabilitare la messaggistica istantanea offline in Skype for Business Server.
-ms.openlocfilehash: 31c27a84965e3b75515c206f8dc984b2eaa178eb
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 36894fb2a1ed11428b21b572a28e9ac177a4237d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58578040"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753328"
 ---
 # <a name="enable-or-disable-offline-instant-messaging-im-in-skype-for-business-server"></a>Abilitare o disabilitare la messaggistica istantanea offline in Skype for Business Server
  
@@ -53,17 +53,17 @@ La messaggistica istantanea offline è una funzionalità sul lato client incorpo
 
 La messaggistica istantanea offline non sarà disponibile per i mittenti se dispone di un criterio client che disabilita il salvataggio automatico dei messaggi offline nella cartella della cronologia conversazioni (EnableIMAutoArchiving = $false). Non esiste alcun meccanismo per verificare se il destinatario è in grado di ricevere messaggi offline.
   
-Per i messaggi offline inviati all'interno della stessa organizzazione, questi verranno ricevuti come messaggio di posta elettronica  con classe messaggio IM.Note.MissedConversation e verranno inclusi nella cartella Conversazione senza risposta di Outlook, nonché nella cronologia delle conversazioni che verrà selezionata nella scheda Elenco recente/Cronologia conversazioni nei client Skype for Business.
+Per i messaggi offline inviati all'interno della stessa organizzazione, verranno ricevuti come messaggi di posta elettronica con  la classe messaggio IM.Note.MissedConversation e verranno inclusi nella cartella Conversazione senza risposta di Outlook, nonché nella cronologia delle conversazioni che verrà selezionata nella scheda cronologia elenco/conversazione recente nei client Skype for Business.
   
 Per i messaggi offline inviati dall'organizzazione federata, questi verranno ricevuti come messaggio di posta elettronica senza IM.Note.MisssedConversation e non verranno raccolti nelle cartelle della conversazione senza risposta o della cronologia delle conversazioni. 
   
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Esiste un timer di due minuti da quando viene inviato un messaggio offline quando viene raccolto ed elaborato. Se i messaggi offline non possono essere elaborati, verranno visualizzati nella directory seguente: 
+Esiste un timer di due minuti da quando un messaggio offline viene inviato a quando viene raccolto ed elaborato. Se i messaggi offline non possono essere elaborati, verranno visualizzati nella directory seguente: 
   
   <pre>  %localappdata%\microsoft\office\16.0\lync\SipUserAddress\History Spooler   </pre>
 
-Il registro Skype for Business ETL conterrà informazioni sull'elaborazione dei messaggi offline ed è la fonte migliore per l'indagine/risoluzione dei problemi. 
+Il registro Skype for Business ETL conterrà informazioni sull'elaborazione dei messaggi offline ed è l'origine migliore per l'indagine/risoluzione dei problemi. 
   
 > [!NOTE]
 > È stato segnalato un problema a causa del quale i messaggi offline non sono stati inviati e la cartella "Bozze" era piena di messaggi. Ciò si è verificato Exchange cassette postali locali. Il problema è stato risolto in tutti i canali C2R dal 14/06/2016.  

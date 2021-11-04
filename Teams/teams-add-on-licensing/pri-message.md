@@ -1,6 +1,6 @@
 ---
-title: Notifiche di priorità nella messaggistica Teams messaggistica
-ms.author: v-cichur
+title: Notifiche di priorità nella Teams messaggistica
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.reviewer: salu
@@ -20,17 +20,17 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni sulle notifiche di priorità nella Microsoft Teams messaggistica.
-ms.openlocfilehash: b8ee9173aa0b6da0bfc72d8b9ebbf68047c4df69
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 19b9b45dd3b5c5047bf1c1d57a9666cd4b2ddcf8
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58629988"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766094"
 ---
 # <a name="messaging-policies-licensing"></a>Gestione delle licenze per i criteri di messaggistica
 
 Stiamo sentendo dai clienti di tutto il mondo come la pandemia COVID-19 (Coronavirus) abbia creato nuove sfide mentre lavorano per gestire drastici cambiamenti nelle loro attività quotidiane. La possibilità di connettersi direttamente e rapidamente con i membri del team durante le condizioni in rapida evoluzione è essenziale per mantenere la continuità aziendale durante la risposta alla crisi e il ritorno di molti di noi sul luogo di lavoro.
 
-Originariamente annunciato a giugno 2019, [](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462) le notifiche prioritarie per Microsoft Teams concedono agli utenti la possibilità di inviare continuamente notifiche che si ripetono ogni due minuti per un massimo di 20 minuti su tutti i messaggi contrassegnati come urgenti. Le notifiche prioritarie sono state rese disponibili come promozione per tutti Teams clienti fino alla seconda metà del 2020.
+Originariamente annunciato a giugno 2019, [](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462) le notifiche di priorità per Microsoft Teams concedono agli utenti la possibilità di inviare continuamente notifiche che si ripetono ogni due minuti per un massimo di 20 minuti su tutti i messaggi contrassegnati come urgenti. Le notifiche di priorità sono state rese disponibili come promozione per tutti Teams clienti fino alla seconda metà del 2020.
 
 Questa promozione è stata terminata immediatamente e le notifiche prioritarie sono state rese disponibili a tutti Teams clienti come funzionalità di base. Gli utenti potranno ora inviare e ricevere messaggi urgenti illimitati con notifica prioritaria. [Altre informazioni sulla gestione delle notifiche di priorità.](../messaging-policies-in-teams.md)

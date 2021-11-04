@@ -1,7 +1,7 @@
 ---
 title: Configurazione guidata certificati
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 6ab661d7-5741-4cad-bbe4-62cf862ded85
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per richiedere, assegnare, rimuovere o visualizzare i certificati, è possibile utilizzare la Configurazione guidata certificati. A tale scopo, è necessario essere connessi come membri del gruppo RTCUniversalServerAdmins. Per richiedere un certificato a un'Autorità di certificazione (CA) pubblica, non è necessario appartenere ad altri gruppi. Per richiedere un certificato dall'infrastruttura a chiave pubblica (PKI) dell'organizzazione, è necessario confermare le eventuali appartenenze ai gruppi aggiuntive necessarie. Durante l'attività Richiesta, è possibile immettere credenziali alternative che verranno utilizzate per richiedere il certificato all'autorità di certificazione emittente dell'infrastruttura a chiave pubblica.
-ms.openlocfilehash: 9d966786f65311920370890a7091012929af7fa3
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 7b5776de91b814b289f28b86c38f29e3a35e54c6
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621688"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60738782"
 ---
 # <a name="certificate-wizard"></a>Configurazione guidata certificati
  

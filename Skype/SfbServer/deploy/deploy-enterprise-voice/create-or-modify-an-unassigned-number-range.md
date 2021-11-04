@@ -1,7 +1,7 @@
 ---
 title: Creare o modificare un intervallo di numeri non assegnati in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: a102b226-0460-4d5c-82f9-79b8444fa958
 description: Creare, modificare o eliminare intervalli di numeri non assegnati per l'applicazione Annuncio in Skype for Business Server VoIP aziendale. Ciò influisce sulla modalità di gestione delle chiamate ai numeri non assegnati.
-ms.openlocfilehash: eb20f43729c29911cb9f45888564c8ab5a0ac739
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4ad3193994d41d26546da36614baee64c2298cec
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58620242"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753753"
 ---
 # <a name="create-or-modify-an-unassigned-number-range-in-skype-for-business-server"></a>Creare o modificare un intervallo di numeri non assegnati in Skype for Business Server
  
@@ -45,7 +45,7 @@ Utilizzare una delle procedure seguenti per configurare intervalli di numeri non
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **Delegate Setup Permissions**.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.  
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Funzionalità vocali** e quindi su **Numero non assegnato**.
     
@@ -91,7 +91,7 @@ Utilizzare una delle procedure seguenti per configurare intervalli di numeri non
     
 ### <a name="to-use-skype-for-business-server-management-shell-to-configure-unassigned-phone-numbers"></a>Per utilizzare Skype for Business Server Management Shell per configurare i numeri di telefono non assegnati
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions.**
+1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions**.
     
 2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
@@ -134,11 +134,11 @@ Utilizzare una delle procedure seguenti per configurare intervalli di numeri non
 
 ## <a name="delete-an-unnasigned-number-range"></a>Eliminare un intervallo di numeri non assegnati
 
-### <a name="to-use-skype-for-business-server-control-panel-to-delete-an-unassigned-number-range"></a>Per utilizzare Skype for Business Server di controllo per eliminare un intervallo di numeri non assegnati
+### <a name="to-use-skype-for-business-server-control-panel-to-delete-an-unassigned-number-range"></a>Per utilizzare Skype for Business Server pannello di controllo per eliminare un intervallo di numeri non assegnati
 
 1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **Delegate Setup Permissions**.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.  
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Funzionalità vocali** e quindi su **Numero non assegnato**.
     
@@ -150,7 +150,7 @@ Utilizzare una delle procedure seguenti per configurare intervalli di numeri non
     
 ### <a name="to-use-skype-for-business-server-management-shell-to-delete-an-unassigned-number-range"></a>Per utilizzare Skype for Business Server Management Shell per eliminare un intervallo di numeri non assegnati
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions.**
+1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions**.
     
 2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     

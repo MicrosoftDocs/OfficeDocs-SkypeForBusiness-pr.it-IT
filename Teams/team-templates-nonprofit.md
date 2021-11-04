@@ -19,13 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07c335797b2092b42cacb8f0daa92947e7a2349a
-ms.sourcegitcommit: 813f1e44bd094bd997dd7423cda7e685ff61498f
+ms.openlocfilehash: 2f0a6218d9843c0ed99c80c517fe9986f41d79b6
+ms.sourcegitcommit: 1957a06d4bae3d42b4e3b6d4bd8ff2752a19d377
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "60633556"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "60641346"
 ---
 # <a name="use-nonprofit-team-templates"></a>Usare i modelli no profit di team
 
@@ -41,7 +40,7 @@ In questo articolo sono contenute tutte le informazioni riguardanti il modello d
 
 Riunire il personale per comunicare e collaborare alle attività e alla gestione dei volontari.
 
-Questo modello include app e canali progettati per semplificare le attività di gestione dei volontari. Il personale può organizzare e condividere i materiali di onboarding e i documenti usati più di frequente, visualizzare i report, rimanere aggiornati sugli annunci e gli eventi importanti del team e altro ancora. Il modello integra anche Volunteer Management, un'app che è parte di Microsoft Cloud per le organizzazioni no profit, e che permette al personale di gestire le opportunità di coinvolgimento dei volontari all'interno di Teams.
+Questo modello include app e canali progettati per semplificare le attività di gestione dei volontari. Il personale può organizzare e condividere i materiali di onboarding e i documenti usati più di frequente, visualizzare i report, rimanere aggiornati sugli annunci e gli eventi importanti del team e altro ancora. Il modello integra anche [Volunteer Management](/dynamics365/industry/nonprofit/volunteer-management-use), un'app che è parte di [Microsoft Cloud per le organizzazioni no profit](/industry/nonprofit/), e che permette al personale di gestire le opportunità di coinvolgimento dei volontari all'interno di Teams.
 
 Questi sono le app e i canali forniti con il modello di team Gestisci volontari.
 
@@ -88,3 +87,4 @@ Per altre informazioni sui modelli di team in generale, vedere Introduzione ai m
 ## <a name="related-articles"></a>Articoli correlati
 
 - [Documentazione della Guida di Teams](https://support.microsoft.com/teams)
+- [Documentazione di Microsoft Cloud per organizzazioni no profit](/industry/nonprofit/)

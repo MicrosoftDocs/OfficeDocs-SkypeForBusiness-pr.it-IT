@@ -1,7 +1,7 @@
 ---
 title: Esaminare i report dell'amministratore in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 4/5/2016
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 22d480ea-cd64-4d09-99fe-96e997570844
 description: Nei rapporti di amministrazione sono incluse informazioni dettagliate per la distribuzione e le operazioni. I report vengono generati in base alle selezioni contrassegnate in Siti di progettazione. Il progettista può dare valore aggiunto ai rapporti modificando i diagrammi di rete e definendo gli indirizzi IP completi e i nomi di dominio completi (FQDN) dei server, dei pool e dei servizi di bilanciamento del carico.
-ms.openlocfilehash: fe2d14856a1d884dc04ff8cf2de4ebba41eb95eb
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: e2a30e27b5b1928dacc36e5592033090484f065a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58730395"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766294"
 ---
 # <a name="review-the-administrator-reports-in-skype-for-business-server-2015"></a>Esaminare i report dell'amministratore in Skype for Business Server 2015
 
@@ -38,7 +38,7 @@ La funzionalità report amministratore consente di:
 ## <a name="review-the-summary-report"></a>Esaminare il rapporto riepilogativo
 <a name="Summary_report"> </a>
 
-Il Skype for Business amministratore è il primo di quattro report utili che documenta la progettazione in dettaglio. Le informazioni contenute in questo report e gli altri tre report associati sono utili per l'information technology Teams:
+Il Skype for Business dell'amministratore è il primo di quattro report importanti che documenta la progettazione in dettaglio. Le informazioni contenute in questo report e gli altri tre report associati sono utili per l'information technology Teams:
 
 ![Rapporto di amministrazione riepilogativo generale.](../../media/General_Summary_Report_Admin_Report.png)
 

@@ -1,7 +1,7 @@
 ---
 title: Verificare la topologia in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 7/14/2018
@@ -16,19 +16,19 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: a4f4bad1-fc59-47ce-a3ea-b1b893769db6
-description: "Riepilogo: informazioni su come verificare che la topologia Skype for Business Server e i server Active Directory funzionino come previsto. Scaricare una versione di valutazione gratuita Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: 0d8bc0a8ead8d435acf23965c461b57dab93edc2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: "Riepilogo: informazioni su come verificare che la topologia Skype for Business Server e i server Active Directory funzionino come previsto. Scarica una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: ba098dd808fec192cc944ed3796d5e11b0d8af31
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58605525"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753239"
 ---
 # <a name="verify-the-topology-in-skype-for-business-server"></a>Verificare la topologia in Skype for Business Server
  
 **Riepilogo:** Informazioni su come verificare che la Skype for Business Server e i server Active Directory funzionino come previsto. Scarica una versione di valutazione gratuita di Skype for Business Server dal [Centro di valutazione Microsoft.](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server)
   
-Dopo aver pubblicato la topologia e aver installato i componenti di sistema di Skype for Business Server in ognuno dei server della topologia, è possibile verificare che la topologia funzioni come previsto. Ciò include la verifica che la configurazione sia stata propagata a tutti i server Active Directory in modo che l'intero dominio sappia Skype for Business è disponibile nel dominio. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. Verificare che la topologia sia il passaggio 8 di 8.
+Dopo aver pubblicato la topologia e aver installato i componenti di sistema di Skype for Business Server in ognuno dei server della topologia, è possibile verificare che la topologia funzioni come previsto. Ciò include la verifica che la configurazione sia stata propagata a tutti i server Active Directory in modo che l'intero Skype for Business sia disponibile nel dominio. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. Verificare che la topologia sia il passaggio 8 di 8.
   
 ![Diagramma di panoramica.](../../media/c8698b53-1282-4978-a9a6-ca3f7a778f60.png)
   
@@ -41,7 +41,7 @@ Il passaggio finale consiste nel testare il pool Front End e verificare che Skyp
 1. Utilizzare Utenti e computer di Active Directory per aggiungere l'oggetto utente di Active Directory del ruolo di amministratore per la distribuzione di Skype for Business Server (in cui è installato il Pannello di controllo di Skype for Business Server) al gruppo **CSAdministrator.**
     
     > [!IMPORTANT]
-    > Se non si aggiungono gli utenti e i gruppi appropriati al gruppo CsAdministors, all'apertura del Pannello di controllo di Skype for Business Server verrà visualizzato un messaggio di errore che indica "Accesso non autorizzato: accesso negato a causa di un errore di autorizzazione RBAC (Role-Based Access Control). 
+    > Se non si aggiungono gli utenti e i gruppi appropriati al gruppo CsAdministors, all'apertura del Pannello di controllo di Skype for Business Server verrà visualizzato un messaggio di errore che indica che l'accesso non autorizzato è stato negato a causa di un errore di autorizzazione RBAC (Role-Based Access Control). 
   
 2. Se l'oggetto utente è connesso, disconnettersi e rieseguire l'accesso per registrare la nuova assegnazione al gruppo.
     
@@ -96,6 +96,6 @@ Il passaggio finale consiste nel testare il pool Front End e verificare che Skyp
   
 12. Accedere a un computer aggiunto al dominio e a un altro utente a un altro computer del dominio.
     
-13. Installare Skype for Business client in ognuno dei due computer client e quindi verificare che entrambi gli utenti possano accedere a Skype for Business Server e inviare messaggi istantanei l'uno all'altro.
+13. Installare Skype for Business client in ognuno dei due computer client, quindi verificare che entrambi gli utenti possano accedere a Skype for Business Server e inviare messaggi istantanei l'uno all'altro.
     
 

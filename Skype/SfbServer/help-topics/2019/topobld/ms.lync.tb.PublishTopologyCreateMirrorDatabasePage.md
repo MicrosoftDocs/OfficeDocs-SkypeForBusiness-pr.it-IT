@@ -1,7 +1,7 @@
 ---
 title: Pubblica topologia, pagina Creare database mirror
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: f05ffca1-e972-4ee2-8370-2ef5df03e179
 ROBOTS: NOINDEX, NOFOLLOW
 description: Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
-ms.openlocfilehash: 7fd9f4618f37a1c388445aaf6d20bdaebfc5f55d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 1ac4388de8f57a7765bc712ab6a4d98f23648708
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58635530"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60772766"
 ---
 # <a name="publish-topology-create-mirror-database-page"></a>Pubblicare topologia, pagina Creare database mirror
  

@@ -1,7 +1,7 @@
 ---
 title: Aumentare la consapevolezza e implementare la formazione
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.date: 11/09/2018
 audience: Admin
@@ -21,16 +21,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b1c4c31687e5812c14b4a62deacb16fdd3550969
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 9d3ba97744998014d0cfb6199aac71d63590a41f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58725535"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60753887"
 ---
 # <a name="drive-awareness-and-implement-training-for-microsoft-teams"></a>Aumentare la consapevolezza e implementare la formazione per Microsoft Teams
 
-La consapevolezza e la formazione sono il segmento di marketing e comunicazione della strategia generale di adozione. In questo modo i dipendenti saranno a conoscenza delle nuove funzionalità di Microsoft Teams e dei servizi Microsoft 365 di Office 365 e delle app sottostanti.
+La consapevolezza e la formazione sono il segmento di marketing e comunicazione della strategia generale di adozione. In questo modo i dipendenti saranno a conoscenza delle nuove funzionalità di Microsoft Teams e dei servizi e delle app Microsoft 365 o Office 365 di lavoro.
    
 Sia per i progetti pilota iniziali che per l'eventuale implementazione a livello aziendale, le comunicazioni interne dovrebbero essere prioritarie. Devono includere:
 
@@ -43,18 +43,18 @@ Per le fasi pilota, ecco i passaggi minimi per il successo:
 - Rendere disponibile la documentazione self-help, inclusi i video sui prodotti.
 - Tenere una riunione di avvio con gli utenti pilota per entusiasmarli per la loro partecipazione. L'importanza di creare un senso di comunità con entusiasmo non può essere sopravalutata.
 
-Dopo aver lavorato al progetto pilota iniziale, è possibile espandere le attività precedenti per raggiungere l'intera organizzazione. A seconda delle dimensioni, questa operazione può richiedere tempo e essere affrontata in varie fasi in base all'area geografica, al profilo utente o all'organizzazione. Durante l'implementazione di questa scala più ampia, incoraggiare il coinvolgimento dei comunicatori nell'organizzazione. È consigliabile coinvolgere queste persone in anticipo e spesso quando si usano i materiali di adozione disponibili o si progettano i propri.
+Dopo aver lavorato al progetto pilota iniziale, è possibile espandere le attività precedenti per raggiungere l'intera organizzazione. A seconda delle dimensioni, questa operazione può richiedere tempo e essere affrontata in fasi per area geografica, profilo utente o organizzazione. Durante l'implementazione di questa scala più ampia, incoraggiare il coinvolgimento dei comunicatori nell'organizzazione. È consigliabile coinvolgere queste persone in anticipo e spesso quando si usano i materiali di adozione disponibili o si progettano i propri.
 
 Se l'azienda ha un portale intranet centrale per notizie, informazioni o supporto, è possibile usarlo come hub per informazioni su questa implementazione. Fornendo informazioni, formazione e indicazioni scritte ampiamente disponibili, gli utenti possono essere rapidamente a bordo. Molti utenti potranno semplicemente fare un salto quando Teams disponibili e lo incoraggiamo. Sappiamo anche che ogni individuo impara in modi diversi; un portale informazioni centrale può supportare tutti gli stili di apprendimento all'interno dell'organizzazione.
 
 ## <a name="implement-end-user-training"></a>Implementare la formazione per gli utenti finali
 
-Usa le nostre risorse per fornire formazione per gli utenti finali mentre le persone iniziano a usare Microsoft Teams e altri servizi Microsoft 365 o Office 365 utenti. Visita le pagine delle risorse per saperne di più:
+Usa le nostre risorse per offrire formazione per gli utenti finali mentre le persone iniziano a usare Microsoft Teams e altri servizi Microsoft 365 o Office 365. Visita le pagine delle risorse per saperne di più:
 
 - [Formazione per utenti finali con istruttore per Teams](instructor-led-training-teams-landing-page.yml)
 - [Formazione per amministratori per Teams](itadmin-readiness.md)
 - [Video di formazione online per gli utenti finali](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)
-- [Formazione su Coffee in the Cloud online per & professionisti IT](https://aka.ms/CoffeeintheCloud) 
+- [Formazione online su Coffee in the Cloud per & professionisti IT](https://aka.ms/CoffeeintheCloud) 
 - [Strumenti di adozione](https://aka.ms/O365AdoptionTools)
 
 ## <a name="measure-and-share-success"></a>Misurare e condividere il successo
@@ -67,8 +67,8 @@ Come per qualsiasi campagna di comunicazione e adozione, è importante identific
 - Visualizzazioni dei video di formazione
 - Partecipazione a eventi di apprendimento
 
-Condividere le informazioni che si ottengono dai canali di feedback con l'hashtag #TeamsStories per un facile recupero. Condividere un #TeamsStory ogni mese nella intranet per evidenziare i dipendenti che stanno abbracciando il cambiamento per aumentare la produttività e la collaborazione nell'ambiente. È anche possibile condividerle con noi nel forum Driving Adoption sul sito Web microsoft technical Community. Condividere questi esempi reali dall'interno della propria azienda è estremamente utile per realizzare cambiamenti sostenuti nel tempo con la community degli utenti.
+Condividi le informazioni che ricevi dai tuoi canali di feedback con l'hashtag #TeamsStories per un facile recupero. Condividere un #TeamsStory ogni mese nella intranet per evidenziare i dipendenti che stanno abbracciando il cambiamento per aumentare la produttività e la collaborazione nell'ambiente. È anche possibile condividerle con noi nel forum Driving Adoption sul sito Web microsoft technical Community. Condividere questi esempi reali dall'interno della propria azienda è estremamente utile per realizzare cambiamenti sostenuti nel tempo con la community degli utenti.
 
-[Altre informazioni sui report di Microsoft Teams sull'utilizzo dei dati nella interfaccia di amministrazione di Microsoft 365.](teams-activity-reports.md)
+[Altre informazioni sui report di Microsoft Teams di utilizzo nel interfaccia di amministrazione di Microsoft 365.](teams-activity-reports.md)
 
-![Icona che illustra i passaggi successivi.](media/teams-adoption-next-icon.png) Successiva: [Pianificare le revisioni dell'integrità dei servizi](teams-adoption-schedule-service-health-reviews.md)
+![Icona che descrive i passaggi successivi.](media/teams-adoption-next-icon.png) Successiva: [Pianificare le revisioni dell'integrità dei servizi](teams-adoption-schedule-service-health-reviews.md)

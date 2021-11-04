@@ -1,7 +1,7 @@
 ---
 title: Esperienza di solo visualizzazione nelle riunioni
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 ms.reviewer: christi.balaki
 manager: serdars
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b2af0ae753357497be6ea54b89534f2220b7cbf6
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
-ms.translationtype: HT
+ms.openlocfilehash: 6e56f1722d75c8126e8f19ac297e301dfc4e8706
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58732295"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766034"
 ---
 # <a name="teams-view-only-meeting-experience"></a>Esperienza di sola visualizzazione nelle riunioni di Teams
 
@@ -128,7 +128,7 @@ I partecipanti nella sala di sola visualizzazione non potranno usare le seguenti
 - I partecipanti nella sala di sola visualizzazione non vengono inclusi nel report sui partecipanti.
 - I partecipanti nella sala di sola visualizzazione hanno un'esperienza video singola. Possono accedere l'altoparlante attivo o i contenuti che vengono condivisi, ma non entrambi.
 - Al momento non supportiamo i layout **Galleria**, **Galleria estesa**, o **Modalità Insieme** per gli utenti nella sala di sola visualizzazione.
-- I partecipanti di sola visualizzazione sono supportati solamente dai seguenti criteri di sala di attesa: "Solo tu", "Persone nella mia organizzazione e guest", "Persone nella mia organizzazione, organizzazioni attendibili e guest" e "Tutti". Se si usano criteri di sala di attesa che non supportano i partecipanti di sola visualizzazione, ai partecipanti di sola visualizzazione saranno espulsi dalla riunione. 
+- I partecipanti di sola visualizzazione sono supportati solo dai criteri di lobby seguenti: "Persone nell'organizzazione", "Persone dell'organizzazione e guest", "Persone dell'organizzazione, organizzazioni attendibili e guest" e "Tutti". Se si usano criteri di sala di attesa che non supportano i partecipanti di sola visualizzazione, ai partecipanti di sola visualizzazione saranno espulsi dalla riunione. 
 - I partecipanti nella sala di sola visualizzazione non avranno la stessa latenza dei partecipanti normali. <sup>1</sup>
 
   <sup>1</sup> I partecipanti nella sala di sola visualizzazione avrannno un ritardo audio e video di 30 secondi durante la riunione.  

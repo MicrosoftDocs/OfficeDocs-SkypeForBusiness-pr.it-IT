@@ -1,7 +1,7 @@
 ---
 title: Preparare il dominio corrente (Intro)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,15 +15,15 @@ ms.localizationpriority: medium
 ms.assetid: 25f2e262-d6ed-4081-bbfd-5f8be5997e6b
 ROBOTS: NOINDEX, NOFOLLOW
 description: La pagina Prepara dominio inizia il processo di preparazione del dominio per Skype for Business Server. Fare clic su Avanti per iniziare la preparazione del dominio.
-ms.openlocfilehash: 1149e57e4f3b8aa71273740f0fcaa1327c603c34
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 69e5747bcb11b9dcfa139837414f189be0a46886
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621648"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60738748"
 ---
 # <a name="prepare-current-domain-intro"></a>Preparare il dominio corrente (Intro)
  
-La **pagina Prepara** dominio inizia il processo di preparazione del dominio per Skype for Business Server. Fare clic su **Avanti** per iniziare la preparazione del dominio.
+La **pagina Prepara dominio** inizia il processo di preparazione del dominio per Skype for Business Server. Fare clic su **Avanti** per iniziare la preparazione del dominio.
   
 

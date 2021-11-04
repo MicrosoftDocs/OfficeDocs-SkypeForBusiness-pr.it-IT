@@ -1,7 +1,7 @@
 ---
 title: Richiesta di certificato (Additional Subject Alternate Names)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 99ef9628-72a5-463d-8dd6-4b783dcc8360
 ROBOTS: NOINDEX, NOFOLLOW
 description: L'opzione Configura nomi soggetti alternativi aggiuntivi consente di aggiungere ulteriori nomi soggetti alternativi al certificato prima della finalizzazione e della richiesta del certificato. Per aggiungere il nome soggetto alternativo, digitare il relativo nome di dominio completo (FQDN) e quindi fare clic su Aggiungi. Se è stato aggiunto un nome soggetto alternativo che deve essere eliminato, evidenziarlo e quindi fare clic su Rimuovi. Per rimuovere tutte le voci di nomi soggetti alternativi che sono state aggiunte, fare clic su Cancella tutto.
-ms.openlocfilehash: 217343ab9481545654bad94f382637473da4b4f4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b0819a0f04532b41b8645f09d9bac92a9fff3370
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58609779"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60748772"
 ---
 # <a name="certificate-request-additional-subject-alternate-names"></a>Richiesta di certificato (nomi soggetto alternativi aggiuntivi)
  

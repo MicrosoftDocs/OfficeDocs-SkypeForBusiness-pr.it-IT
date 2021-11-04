@@ -1,7 +1,7 @@
 ---
 title: Preparare il dominio corrente
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,16 +15,16 @@ ms.localizationpriority: medium
 ms.assetid: bfcb37ca-34eb-4d0d-9694-6edd2e7fe0f3
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Per preparare un dominio per ospitare server che eseguono utenti di Skype for Business Server o Skype for Business Server, è necessario completare passaggio 5: Preparare il dominio corrente, come descritto nell'argomento Using Setup to Run Domain Preparation. Per poter completare tale passaggio, è necessario essere connessi come membri del gruppo Domain Admins nel dominio che si sta preparando oppure come membri del gruppo Enterprise Admins della foresta a cui appartiene il dominio. Per preparare il dominio, eseguire le operazioni seguenti:"
-ms.openlocfilehash: 74725bde4f50219a2d46cca4ab0ab32daa733b83
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 782c98d7b2d67a74b11e36493ef2e9f873be0f18
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58616912"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60738692"
 ---
 # <a name="prepare-current-domain"></a>Preparare il dominio corrente
 
-Per preparare un dominio per ospitare server che eseguono utenti di Skype for Business Server o Skype for Business Server, è necessario completare **Passaggio 5: Preparare** il dominio corrente, come descritto nell'argomento [Using Setup to Run Domain Preparation](/previous-versions/office/lync-server-2013/lync-server-2013-running-domain-preparation). Per poter completare tale passaggio, è necessario essere connessi come membri del gruppo Domain Admins nel dominio che si sta preparando oppure come membri del gruppo Enterprise Admins della foresta a cui appartiene il dominio. Per preparare il dominio, eseguire le operazioni seguenti:
+Per preparare un dominio per ospitare server che eseguono utenti di Skype for Business Server o Skype for Business Server, è necessario completare **passaggio 5: Preparare** il dominio corrente , come descritto nell'argomento [Using Setup to Run Domain Preparation](/previous-versions/office/lync-server-2013/lync-server-2013-running-domain-preparation). Per poter completare tale passaggio, è necessario essere connessi come membri del gruppo Domain Admins nel dominio che si sta preparando oppure come membri del gruppo Enterprise Admins della foresta a cui appartiene il dominio. Per preparare il dominio, eseguire le operazioni seguenti:
 
 1. Dalla cartella Skype for Business Server o dal supporto di installazione, eseguire Setup.exe per avviare la Skype for Business Server guidata.
 
@@ -37,4 +37,4 @@ Per preparare un dominio per ospitare server che eseguono utenti di Skype for Bu
 5. Nella colonna **Azione** espandere **Preparazione** dominio , cercare un risultato di esecuzione alla fine di ogni attività per verificare che la preparazione del dominio sia stata completata correttamente, chiudere il registro e quindi fare clic **\<Success\>** su **Fine**.
 
 > [!TIP]
-> Se è necessario esaminare i file di registro creati dalla Distribuzione guidata Skype for Business Server, è possibile trovarli nel computer in cui è stata eseguita la Distribuzione guidata nella directory Utenti dell'utente di Servizi di dominio Active Directory che ha eseguito il passaggio. Ad esempio, se l'utente ha eseguito l'accesso come amministratore di dominio nel Contoso.net di dominio, i file di registro si trovano in: C:\Users\Administrator.Contoso\AppData\Local\Temp.
+> Se è necessario esaminare i file di registro creati dalla Distribuzione guidata di Skype for Business Server, è possibile trovarli nel computer in cui è stata eseguita la Distribuzione guidata nella directory Utenti dell'utente di Servizi di dominio Active Directory che ha eseguito il passaggio. Ad esempio, se l'utente ha eseguito l'accesso come amministratore di dominio nel Contoso.net di dominio, i file di registro si trovano in: C:\Users\Administrator.Contoso\AppData\Local\Temp.

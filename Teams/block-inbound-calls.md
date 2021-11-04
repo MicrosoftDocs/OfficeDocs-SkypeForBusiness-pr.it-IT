@@ -1,6 +1,6 @@
 ---
 title: Bloccare le chiamate in Microsoft Teams
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.topic: article
@@ -14,21 +14,21 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 ms.custom: Learn how to use PowerShell to manage inbound call blocking.
-ms.openlocfilehash: 6388c65e5f2c8600c263153b1a943bf485670fe4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4e7e6d40173bb5917a6cf540481257b21253eeaa
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58631430"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766224"
 ---
 # <a name="block-inbound-calls"></a>Bloccare le chiamate in ingresso
 
 Piani per chiamate Microsoft, routing diretto e Connessione con operatore supportano il blocco delle chiamate in ingresso dalla rete PSTN (Public Switched Telephone Network). Questa caratteristica consente a un amministratore di definire un elenco di schemi numerici a livello globale del tenant in modo che l'ID chiamante di ogni chiamata PSTN in arrivo al tenant possa essere verificato in base all'elenco per trovare una corrispondenza. Se viene effettuata una corrispondenza, una chiamata in arrivo viene rifiutata.
 
-Questa funzionalità di blocco delle chiamate in ingresso funziona solo per le chiamate in ingresso che provengono dalla rete PSTN e funzionano solo a livello globale del tenant. I singoli Teams utenti non possono modificare l'elenco. Il client Teams consente ai singoli utenti di bloccare le chiamate PSTN. Per informazioni su come gli utenti finali possono implementare il blocco delle chiamate, vedere [Gestire le impostazioni delle chiamate in Teams](https://support.microsoft.com/office/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f).
+Questa funzionalità di blocco delle chiamate in ingresso funziona solo per le chiamate in ingresso che provengono dalla rete PSTN e funzionano solo a livello globale del tenant. I singoli Teams utenti non possono modificare questo elenco. Il client Teams consente ai singoli utenti di bloccare le chiamate PSTN. Per informazioni su come gli utenti finali possono implementare il blocco delle chiamate, vedere [Gestire le impostazioni delle chiamate in Teams](https://support.microsoft.com/office/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f).
 
 >[!NOTE]
-> I chiamanti bloccati potrebbero avere comportamenti leggermente diversi quando sono stati bloccati. Il comportamento si basa sul modo in cui il gestore del chiamante bloccato gestisce la notifica che la chiamata non può essere completata correttamente. Alcuni esempi possono includere un messaggio dell'operatore che indica che la chiamata non può essere completata come chiamata o semplicemente la chiamata.
+> I chiamanti bloccati potrebbero avere comportamenti leggermente diversi quando sono stati bloccati. Il comportamento si basa sul modo in cui il gestore del chiamante bloccato gestisce la notifica che la chiamata non è consentita per il completamento. Alcuni esempi possono includere un messaggio dell'operatore che indica che la chiamata non può essere completata come chiamata o semplicemente la chiamata.
 
 ## <a name="call-blocking-admin-controls-and-information"></a>Informazioni e controlli di amministrazione del blocco delle chiamate
 
@@ -166,7 +166,7 @@ Test-CsInboundBlockedNumberPattern –Tenant <GUID> -PhoneNumber <String>
 
 ### <a name="examples"></a>Esempi
 
-In questi esempi è possibile vedere che il numero di telefono 1 (312) 555-8884 è bloccato perché dovrebbe essere compreso nell'intervallo bloccato precedente, mentre il numero di telefono 1 (312) 555-8883 è autorizzato a chiamare in base all'esenzione creata in precedenza.
+In questi esempi si può vedere che il numero di telefono 1 (312) 555-8884 è bloccato perché dovrebbe essere nell'intervallo bloccato sopra, mentre il numero di telefono 1 (312) 555-8883 è autorizzato a chiamare come dovrebbe essere basato sull'esenzione creata in precedenza.
 
 ```PowerShell
 Test-CsInboundBlockedNumberPattern -PhoneNumber 13125558884

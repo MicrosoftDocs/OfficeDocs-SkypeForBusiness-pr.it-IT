@@ -1,7 +1,7 @@
 ---
 title: Pubblica topologia, pagina Reimposta pool
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: de13aab5-ac3c-44ac-9484-f97cafcf203a
 ROBOTS: NOINDEX, NOFOLLOW
 description: Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
-ms.openlocfilehash: cedf28847dd8dd6c727784131e0155f93caa8536
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: cf44ba11a0e71f4b37e947c9d208933154b938b4
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58626838"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60772682"
 ---
 # <a name="publish-topology-reset-pool-page"></a>Pubblicare topologia, pagina Reimposta pool
  
