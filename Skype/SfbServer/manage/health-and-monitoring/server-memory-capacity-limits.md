@@ -1,7 +1,7 @@
 ---
 title: Monitorare i limiti di capacità della memoria del server in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 1697ea71-6fcf-480d-b4e9-cd79f94d247e
 description: 'Riepilogo: informazioni su come monitorare i limiti di capacità della memoria del server in Skype for Business Server.'
-ms.openlocfilehash: 224de5c2727efe02ba2303a2eeb30e189ed4d67e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: df24f96c8fca1927c1222e2bf42981f5cebf7aac
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595516"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60768704"
 ---
 # <a name="monitor-for-server-memory-capacity-limits-in-skype-for-business-server"></a>Monitorare i limiti di capacità della memoria del server in Skype for Business Server
  
@@ -44,7 +44,7 @@ Per determinare i limiti appropriati, è innanzitutto necessario determinare la 
 Memoria totale utilizzata dal servizio Per dispositivi mobili Mcx (MB) = 164 + (400 + 134) / 1024 ***** Conteggio sessioni attualmente attive con sottoscrizioni presenza attive + 400 / 1024 * **(** Conteggio sessioni attualmente attive con sottoscrizioni  -  **presenza attive**)
   
 > [!IMPORTANT]
-> Lo strumento di calcolo della capacità di Microsoft Lync Server 2010 è un foglio di calcolo prepopolato con tutte le formule che consentono a una pianificazione di determinare quali saranno i requisiti per i server Skype for Business, tra cui CPU, memoria e unità disco rigido. È possibile [scaricare il foglio di calcolo e un documento associato.](https://go.microsoft.com/fwlink/p/?LinkID=212657) 
+> Il calcolatore della capacità di Microsoft Lync Server 2010 è un foglio di calcolo prepopolato con tutte le formule che consentono a un responsabile della pianificazione di determinare quali saranno i requisiti per i server Skype for Business, tra cui CPU, memoria e unità disco rigido. È possibile [scaricare il foglio di calcolo e un documento associato.](https://go.microsoft.com/fwlink/p/?LinkID=212657) 
   
 Il Front End Server necessita di memoria disponibile sufficiente per supportare il servizio per dispositivi mobili in situazioni di failover. È possibile monitorare la memoria disponibile corrente nel Front End Server utilizzando il contatore **Memory\Available Mbytes** oppure utilizzando l'equazione citata in precedenza per pianificare la quantità di memoria che si prevede verrà utilizzata dal servizio per dispositivi mobili.
   

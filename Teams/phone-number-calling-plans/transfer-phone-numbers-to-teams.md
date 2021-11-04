@@ -1,7 +1,7 @@
 ---
 title: Trasferire i numeri di telefono Microsoft Teams
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: tonysmit
 ms.topic: article
@@ -19,12 +19,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare la procedura guidata di porting per trasferire il numero di telefono dal provider di servizi corrente a Microsoft Teams.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b8c2b96da4750ec31616fa577063f58b57a17986
-ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
+ms.openlocfilehash: 2b86210d5e8ac7fe70db0e3774ee7483aad9236a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60733077"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60761744"
 ---
 # <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire i numeri di telefono Microsoft Teams
 
@@ -77,7 +77,7 @@ Prima di iniziare, è consigliabile esaminare le informazioni in [Che cos'è un 
     1. Fare **clic su Scarica il modello** per scaricare la loa per il proprio paese o area geografica. 
     2. Stampare il file LOA.
     3. Impostare la firma LOA da parte della persona autorizzata a apportare modifiche all'account.
-    4. Analizzare la firma LOA e quindi fare clic su Upload **una lettera** di autorizzazione firmata per caricarla.
+    4. Analizzare la firma LOA e quindi fare clic su Upload **una lettera di** autorizzazione firmata per caricarla.
 
     > [!NOTE]
     > Dopo aver caricato il tuo LOA, invia l'ordine. Il caricamento della loa non è sufficiente. Devi anche inviare l'ordine per poterlo elaborare.

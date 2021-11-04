@@ -1,7 +1,7 @@
 ---
 title: Sviluppare il dashboard qualità delle chiamate per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 664917b4-c954-40b6-864e-f72db94c6180
 description: 'Riepilogo: informazioni su come sviluppare soluzioni per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: 8ba991d0c68edaed057a1a5a8dae0bfb31a4f839
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: ea7f2faad9c7aa8f0d0e9323aa0a10a544b26cb4
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596550"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60762324"
 ---
 # <a name="develop-call-quality-dashboard-for-skype-for-business-server"></a>Sviluppare il dashboard qualità delle chiamate per Skype for Business Server
  

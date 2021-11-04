@@ -1,7 +1,7 @@
 ---
 title: Distribuire lo strumento SEFAUtil in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fb556e50-88dd-4404-a3d5-be36f5ba41e6
 description: Distribuzione dello strumento SEFAUtil in Skype for Business Server.
-ms.openlocfilehash: 4848bc2c73cbcfc132bd996622a25512dedc2bf1
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 40f35f227a2e1753f3362cd01b29883e06e1b893
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58612755"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60761534"
 ---
 # <a name="deploy-the-sefautil-tool-in-skype-for-business"></a>Distribuire lo strumento SEFAUtil in Skype for Business
  
@@ -39,7 +39,7 @@ Per distribuire e gestire la risposta alle chiamate di gruppo, è necessario uti
   
 ### <a name="to-deploy-sefautil"></a>Per distribuire SEFAUtil
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions.**
+1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions**.
     
 2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
@@ -50,7 +50,7 @@ Per distribuire e gestire la risposta alle chiamate di gruppo, è necessario uti
    ```
     > [!NOTE]
     > FQDN pool: FQDN del server o del pool che ospiterà l'applicazione SEFAUtil (in genere Skype for Business server Front End o pool).
-    > FQDN funzione di registrazione pool: FQDN del Skype for Business Front End Server o del pool associato a questo pool di applicazioni.
+    > FQDN di registrazione pool: FQDN del Skype for Business Front End Server o del pool associato a questo pool di applicazioni.
     > Sito pool: ID sito del sito in cui si trova il pool.
 
 4. Definire lo strumento SEFAUtil come applicazione attendibile. Nella riga di comando digitare il comando seguente:
@@ -72,7 +72,7 @@ Per distribuire e gestire la risposta alle chiamate di gruppo, è necessario uti
     
 7. Verificare che lo strumento SEFAUtil sia in esecuzione correttamente, come indicato di seguito: 
     
-    a. Eseguire lo strumento dal prompt dei Windows con privilegi di amministratore per visualizzare le impostazioni di inoltro di chiamata di un utente nella distribuzione.
+    a. Eseguire lo strumento dal prompt Windows comandi con privilegi di amministratore per visualizzare le impostazioni di inoltro di chiamata di un utente nella distribuzione.
     
     b. Visualizzare le impostazioni di inoltro di chiamata di un utente. Nella riga di comando digitare il comando seguente:
     

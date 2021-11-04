@@ -1,7 +1,7 @@
 ---
 title: Configurare l'elenco contatti smart nei Skype for Business client
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 4eecb5f7-3ef7-4582-a6cb-9f4aa068338d
 description: 'Riepilogo: informazioni su come attivare la funzionalità Elenco contatti smart nel client Skype for Business smart.'
-ms.openlocfilehash: d7e2957b6b8622ea8c3ce3dc2974e7dbb7ff51d4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f70ffcd6893c361262c0f0f8e712d7dd0db247e7
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58580000"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60775856"
 ---
 # <a name="configure-smart-contacts-list-in-skype-for-business-clients"></a>Configurare l'elenco contatti smart nei Skype for Business client
 
 **Riepilogo:** Informazioni su come attivare la funzionalità Elenco contatti smart nel client Skype for Business smart.
 
-La funzionalità Elenco contatti smart consente la popolamento automatico degli elenchi di contatti per gli utenti finali. Al primo utilizzo Skype for Business, gli utenti visualizzano automaticamente il manager e altre persone nel team. Questa funzionalità è attivata per impostazione predefinita per gli utenti Microsoft 365 e Office 365, ma è necessario abilitare esplicitamente questa funzionalità per gli utenti locali configurando l'impostazione dei criteri client.
+La funzionalità Elenco contatti smart consente la popolamento automatico degli elenchi di contatti per gli utenti finali. Al primo utilizzo Skype for Business, gli utenti visualizzano automaticamente il manager e altre persone nel team. Questa funzionalità è attivata per impostazione predefinita per gli utenti di Microsoft 365 e Office 365, ma è necessario abilitare esplicitamente questa funzionalità per gli utenti locali configurando l'impostazione dei criteri client.
 
 Quando si configura questa funzionalità, tenere presente quanto segue:
 

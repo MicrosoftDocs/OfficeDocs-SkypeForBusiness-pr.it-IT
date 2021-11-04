@@ -5,7 +5,7 @@ ms:assetid: 5571811e-34c8-443a-b94c-1ab5d4275581
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg520995(v=OCS.15)
 ms:contentKeyID: 48184160
 mtps_version: v=OCS.15
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Dopo avere distribuito uno o più server Edge Server, è necessario abilitare i tipi di accesso esterno da supportare per l'organizzazione.
-ms.openlocfilehash: acd69cf74d6e7a17265543fb326f279b3bc3360f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d2e7e19e461e0b7777969aac4a73a50bb683e69c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58582750"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60763714"
 ---
 # <a name="manage-external-access-policy-for-your-organization"></a>Gestire i criteri di accesso esterno per l'organizzazione
 
@@ -44,7 +44,7 @@ Queste opzioni includono i tipi di accesso esterno seguenti:
   - **Abilitare le comunicazioni con utenti federati**   Abilitare questa opzione se si desidera supportare l'accesso degli utenti ai domini partner federati. Questa impostazione consente di configurare la possibilità per gli utenti di comunicare con altri domini federati SIP, nonché con provider ospitati come Microsoft 365 o Office 365. 
 
 
-  - **Abilitare le comunicazioni con utenti remoti**   Abilitare questa opzione se si desidera che gli utenti dell'organizzazione esterni al firewall, ad esempio i telecomunicazioni e gli utenti in viaggio, siano in grado di connettersi a Skype for Business Server tramite Internet.
+  - **Abilitare le comunicazioni con utenti remoti**   Abilitare questa opzione se si desidera che gli utenti dell'organizzazione esterni al firewall, ad esempio i telelavoratori e gli utenti in viaggio, possano connettersi a Skype for Business Server tramite Internet.
 
   - **Abilitare le comunicazioni con utenti pubblici**   Abilitare questa opzione se si desidera che gli utenti interni siano in grado di comunicare con i contatti del provider di messaggistica istantanea pubblica.
    

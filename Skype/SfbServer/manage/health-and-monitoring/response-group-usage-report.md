@@ -1,7 +1,7 @@
 ---
 title: Rapporto utilizzo Response Group in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 3248b320-a552-400a-8485-6891af4eb0f3
 description: "Riepilogo: informazioni sull'applicazione Response Group in Skype for Business Server."
-ms.openlocfilehash: 6d065f8313a770ce05b10925c9c854cec7e256e5
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 7b26114e81141e4e77bc3fd6b3887ab109526f50
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58623628"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60768724"
 ---
 # <a name="response-group-usage-report-in-skype-for-business-server"></a>Rapporto utilizzo Response Group in Skype for Business Server
 

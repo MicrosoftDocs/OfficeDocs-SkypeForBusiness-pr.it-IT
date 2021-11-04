@@ -5,7 +5,7 @@ ms:assetid: 090aea0f-ef0b-49da-9c80-02d9279f2fa6
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg520946(v=OCS.15)
 ms:contentKeyID: 48183343
 mtps_version: v=OCS.15
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,16 +15,16 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: La connettività di messaggistica istantanea consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider di servizi di messaggistica istantanea pubblici.
-ms.openlocfilehash: 13ef277693c219436e37fc2b9ddee8b78ff5ebc0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2482270d27843b546246e11fb1bcadcc45c900da
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58625198"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60774956"
 ---
 # <a name="configure-policies-to-control-public-user-access-in-skype-for-business-server"></a>Configurare i criteri per controllare l'accesso degli utenti pubblici in Skype for Business Server
 
-La connettività di messaggistica istantanea pubblica consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider di servizi di messaggistica istantanea pubblici. È possibile configurare uno o più criteri di accesso degli utenti esterni per controllare se gli utenti pubblici possono collaborare con utenti Skype for Business Server interni. La connettività di messaggistica istantanea pubblica è una funzionalità aggiunta che si basa sulla configurazione della distribuzione e degli utenti. Dipende anche dal provisioning del servizio presso il provider di messaggistica istantanea pubblico. 
+La connettività di messaggistica istantanea pubblica consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider di servizi di messaggistica istantanea pubblici. È possibile configurare uno o più criteri di accesso utente esterno per controllare se gli utenti pubblici possono collaborare con utenti Skype for Business Server interni. La connettività di messaggistica istantanea pubblica è una funzionalità aggiunta che si basa sulla configurazione della distribuzione e degli utenti. Dipende anche dal provisioning del servizio presso il provider di messaggistica istantanea pubblico. 
 
 Per controllare l'accesso degli utenti pubblici, è possibile configurare i criteri a livello globale, di sito e di utente. Skype for Business Server impostazioni dei criteri applicate a un livello di criteri possono sostituire le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Skype for Business Server è la seguente: i criteri utente (maggiore influenza) sostituiscono i criteri sito e i criteri sito sostituiscono i criteri globali (minore influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto.
 
@@ -42,7 +42,7 @@ Utilizzare la procedura seguente per configurare un criterio per supportare l'ac
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Accesso utente esterno** e quindi su **Criteri di accesso esterno**.
 
@@ -66,7 +66,7 @@ Utilizzare la procedura seguente per configurare un criterio per supportare l'ac
 
 7.  Fare clic su **Commit**.
 
-Per abilitare l'accesso degli utenti pubblici, è necessario abilitare anche il supporto della federazione nell'organizzazione. Per informazioni dettagliate, [vedere Configure policies to control federated user access in Skype for Business Server](configure-policies-to-control-federated-user-access.md).
+Per abilitare l'accesso degli utenti pubblici, è necessario abilitare anche il supporto della federazione nell'organizzazione. Per informazioni dettagliate, vedere [Configure policies to control federated user access in Skype for Business Server](configure-policies-to-control-federated-user-access.md).
 
 Se si tratta di un criterio utente, è necessario applicarlo anche agli utenti pubblici che si desidera possano collaborare con gli utenti pubblici. 
 

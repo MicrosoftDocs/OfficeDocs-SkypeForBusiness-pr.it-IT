@@ -1,7 +1,7 @@
 ---
 title: User Impostazioni Service for Call Quality Dashboard (CQD)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: eafeb54a-2574-415b-b991-a0ff0470d8c3
 description: "Riepilogo: informazioni sul servizio di Impostazioni utente, che fa parte dell'API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: ec710b018e05ac887214d180bb76b847fec1cf10
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 010ac5ee79ee03c8ff1137be80f2e2e520d27e77
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608043"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60762284"
 ---
 # <a name="user-settings-service-for-call-quality-dashboard-cqd"></a>User Impostazioni Service for Call Quality Dashboard (CQD)
  
@@ -30,7 +30,7 @@ Il servizio di Impostazioni utente fa parte dell'API repository per il dashboard
 
 Le impostazioni utente sono coppie chiave-valore che le applicazioni possono utilizzare per archiviare metadati per vari scopi, tra cui la personalizzazione dei comportamenti delle applicazioni per utente. Ogni utente riceve un archivio per le impostazioni utente. Solo i proprietari possono aggiungere, modificare e rimuovere le impostazioni utente.
   
- **Global Impostazioni**
+ **Impostazioni Impostazioni**
   
 Le impostazioni globali sono le impostazioni utente di proprietà dell'utente di sistema e tutti gli utenti hanno accesso in sola lettura. Le impostazioni globali sono costanti: vengono create durante la creazione del repository e non cambiano mai.
   

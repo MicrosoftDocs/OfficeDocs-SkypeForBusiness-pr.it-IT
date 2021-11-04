@@ -1,7 +1,7 @@
 ---
 title: Creare le impostazioni di configurazione di Qualità dell'esperienza in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 64f05569-07c7-4f76-a96b-ea4125a510d5
 description: 'Riepilogo: informazioni sulle impostazioni QoE (Quality of Experience) in Skype for Business Server.'
-ms.openlocfilehash: 8c92f5844562e3a99cfc8d8701d7a72b9022267c
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 71fda331338e8792245c7ac0ee3dfa408345f390
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60012170"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60762394"
 ---
 # <a name="create-quality-of-experience-configuration-settings-in-skype-for-business-server"></a>Creare le impostazioni di configurazione di Qualità dell'esperienza in Skype for Business Server
  
@@ -39,7 +39,7 @@ Le impostazioni di configurazione QoE possono essere create utilizzando Skype fo
 > [!NOTE]
 > Il cmdlet New-CsQoEConfiguration include opzioni aggiuntive non disponibili Skype for Business Server Pannello di controllo. Per ulteriori informazioni, vedere [l'argomento della Guida New-CsQoEConfiguration.](/powershell/module/skype/new-csqoeconfiguration?view=skype-ps)
   
-### <a name="to-create-qoe-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per creare impostazioni di configurazione QoE tramite il Pannello Skype for Business Server di controllo
+### <a name="to-create-qoe-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per creare le impostazioni di configurazione QoE tramite il Skype for Business Server Di controllo
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **Delegate Setup Permissions**.
     

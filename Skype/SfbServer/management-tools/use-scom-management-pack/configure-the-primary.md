@@ -1,7 +1,7 @@
 ---
 title: Come configurare il server di gestione principale
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/1/2018
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: c7e21cce-1dd2-489a-a2eb-f632799f7523
 description: 'Riepilogo: configurare il server di gestione principale, installare System Center Operations Manager e importare Management Pack per Skype for Business Server 2015.'
-ms.openlocfilehash: 20159d77c34ebaa4a8ed022a5d0f1467deeb89e0
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 98a6cb9f18a5ff3fe008e7d07f5101884e5aa0f0
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60012120"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60774596"
 ---
 # <a name="how-to-configure-the-primary-management-server"></a>Come configurare il server di gestione principale
 
@@ -49,18 +49,18 @@ Quando si installa System Center Operations Manager, è necessario installare tu
 Per informazioni dettagliate su questi prodotti e sulla relativa [installazione, vedere System Center Operations Manager 2012](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12))
 
 
-Tenere presente che è possibile avere un solo server di gestione radice per ogni Skype for Business Server distribuzione.
+Tenere presente che è possibile disporre di un solo server di gestione radice per Skype for Business Server distribuzione.
 
 ## <a name="importing-the-skype-for-business-server-2015-management-packs"></a>Importazione dei Management Pack Skype for Business Server 2015
 
-È possibile estendere le funzionalità di System Center Operations Manager installando Management Pack, ovvero software che determina quali elementi System Center Operations Manager può monitorare, come monitorare tali elementi e come devono essere attivati e segnalati gli avvisi. Skype for Business Server 2015 include System Center Management Pack di Operations Manager che offrono le funzionalità seguenti:
+È possibile estendere le funzionalità di System Center Operations Manager installando Management Pack, ovvero software che determina quali elementi System Center Operations Manager è in grado di monitorare, come devono essere monitorati e come devono essere attivati e segnalati gli avvisi. Skype for Business Server 2015 include System Center Management Pack di Operations Manager che offrono le funzionalità seguenti:
 
 - Component **and User Management Pack** (Microsoft.LS.2015.Monitoring.ComponentAndUser.mp) tiene traccia dei problemi di Skype for Business Server registrati nei registri eventi, registrati dai contatori delle prestazioni o registrati nei record dettagli chiamata (CDR) o nei database QoE (Quality of Experience). Per i problemi critici, System Center Operations Manager può essere configurato per inviare immediatamente una notifica agli amministratori tramite posta elettronica, messaggi istantanei o sms. SMS, o Servizio messaggi brevi, è la tecnologia utilizzata per inviare messaggi di testo da un dispositivo mobile a un altro.
 
     > [!NOTE]
     >  Per informazioni dettagliate sulla configurazione della notifica di Operations Manager, vedere [Configuring Notification.](/previous-versions/system-center/operations-manager-2007-r2/dd440890(v=technet.10))
 
-- **Active Monitoring Management Pack** (Microsoft.LS.2015.Monitoring.ActiveMonitoring.mp) testa in modo proattivo i principali componenti di Skype for Business Server, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o l'esecuzione di chiamate a un telefono situato sulla rete PSTN (Public Switched Telephone Network). Questi test vengono eseguiti utilizzando i cmdlet Skype for Business Server di transazione sintetica. Il cmdlet **Test-CsIM** ad esempio viene utilizzato per simulare una conversazione istantanea tra due utenti di test. Se la conversazione simulata ha esito negativo, viene generato un avviso.
+- **Active Monitoring Management Pack** (Microsoft.LS.2015.Monitoring.ActiveMonitoring.mp) testa in modo proattivo i principali componenti di Skype for Business Server, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o l'esecuzione di chiamate a un telefono situato sulla rete PSTN (Public Switched Telephone Network). Questi test vengono eseguiti utilizzando i cmdlet Skype for Business Server transazione sintetica. Il cmdlet **Test-CsIM** ad esempio viene utilizzato per simulare una conversazione istantanea tra due utenti di test. Se la conversazione simulata ha esito negativo, viene generato un avviso.
 
 L'importazione dei Management Pack è un passaggio fondamentale. Se i Management Pack non vengono importati, non sarà possibile utilizzare Operations Manager per monitorare Skype for Business Server eventi o eseguire Skype for Business Server sintetiche.
 
@@ -87,7 +87,7 @@ Component and User Management Pack viene utilizzato per monitorare solo Skype fo
 
 5. Nella finestra **di dialogo Connessione** catalogo online fare clic su **No.**
 
-6. Nella finestra **di dialogo Seleziona Management Pack** da importare individuare e selezionare i file Microsoft.LS.2015.Monitoring.ActiveMonitoring.mp e Microsoft.LS.2015.Monitoring.ComponentAndUser.mp e quindi fare clic su **Apri**. Per selezionare più file nella finestra di dialogo, fare clic sul primo file e quindi tenere premuto CTRL e fare clic sui file successivi.
+6. Nella finestra **di dialogo Seleziona Management Pack** da importare individuare e selezionare i Microsoft.LS.2015.Monitoring.ActiveMonitoring.mp e Microsoft.LS.2015.Monitoring.ComponentAndUser.mp e quindi fare clic su **Apri**. Per selezionare più file nella finestra di dialogo, fare clic sul primo file e quindi tenere premuto CTRL e fare clic sui file successivi.
 
 7. Nella finestra di dialogo **Seleziona Management Pack**, fare clic su **Installa**. Se compare un messaggio di errore e l'installazione ha esito negativo, molto probabilmente i file dei pacchetti di gestione si trovano in una cartella protetta da Controllo account utente di Windows. In questo caso, copiare i file in una cartella diversa e quindi riavviare il processo di importazione e installazione.
 

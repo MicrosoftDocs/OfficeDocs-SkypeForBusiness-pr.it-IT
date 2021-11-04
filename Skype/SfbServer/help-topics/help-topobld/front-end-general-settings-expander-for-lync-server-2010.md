@@ -1,7 +1,7 @@
 ---
 title: Espansione delle impostazioni generali di Front End Server per Lync Server 2010
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 58269c38-98d9-499f-ab69-6a63a6e5530e
 description: 'È possibile modificare le proprietà del Front End Server o del pool Front End modificando o configurando gli attributi seguenti. La pagina di configurazione è suddivisa nelle sezioni seguenti:'
-ms.openlocfilehash: 60f926a796ce38ecc17e033a4eef3dcd10ae1904
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d7257a8abf61f2d081562e72b40811017dcefaa0
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58600131"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60768774"
 ---
 # <a name="front-end-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni generali di Front End per Lync Server 2010
 
@@ -39,11 +39,11 @@ ms.locfileid: "58600131"
 
     **Caratteristiche e funzionalità**
 
-- **Servizio di conferenza**: selezionare la casella di controllo per aggiungere funzionalità di conferenza alla distribuzione. Queste funzionalità includono audio, video, condivisione di applicazioni, condivisione desktop e conferenze Web. Sarà necessario creare e associare un Office Web Apps Server per le conferenze Web (definito più avanti in questa pagina Proprietà).
+- **Servizio di conferenza**: selezionare la casella di controllo per aggiungere funzionalità di conferenza alla distribuzione. Queste funzionalità includono audio, video, condivisione di applicazioni, condivisione desktop e conferenze Web. Sarà necessario creare e associare un Office Web Apps Server per conferenze Web (definito più avanti in questa pagina Proprietà).
 
 - Se si è selezionato Servizio di conferenza, è possibile selezionare la casella di controllo **Servizi di conferenza telefonica con accesso esterno (PSTN)** per abilitare le funzionalità di conferenza telefonica con accesso esterno.
 
-- Selezionare la casella di controllo **VoIP aziendale** se si desidera distribuire funzionalità per consentire a Lync Server 2013 di agire come sistema vocale telefonico utilizzando tecnologie VoIP (Voice over IP), inclusa la possibilità di distribuire telefoni del ricevitore, trunk SIP o connettività di rete telefonica a commutazione pubblica utilizzando Mediation Server, gateway PSTN e IP-PBX, in combinazione o da soli, in base alla progettazione e ai requisiti. Per informazioni dettagliate VoIP aziendale, vedere [VoIP aziendale](/previous-versions/office/lync-server-2013/lync-server-2013-enterprise-voice) e [Plan for VoIP aziendale in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice.md)
+- Selezionare la casella di controllo **VoIP aziendale** se si desidera distribuire funzionalità per consentire a Lync Server 2013 di agire come sistema vocale telefonico utilizzando tecnologie VoIP (Voice over IP), inclusa la possibilità di distribuire telefoni del ricevitore, trunk SIP o connettività di rete a commutazione pubblica tramite Mediation Server, gateway PSTN e IP-PBX, in combinazione o da soli,  in base alla progettazione e ai requisiti. Per informazioni dettagliate VoIP aziendale, vedere [VoIP aziendale](/previous-versions/office/lync-server-2013/lync-server-2013-enterprise-voice) e [Plan for VoIP aziendale in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice.md)
 
     **Associazioni**
 
@@ -88,10 +88,10 @@ ms.locfileid: "58600131"
 
 - È necessario definire i trunk associati al Mediation Server collocato. Se sono già stati definiti, i trunk potranno essere associati al Mediation Server.
 
-    Se a un Mediation Server sono associati più gateway, è possibile specificare il gateway predefinito selezionando il gateway che si desidera impostare come predefinito e facendo clic su **Rendi predefinito.** Se si vuole rimuovere il gateway predefinito corrente, selezionarlo e fare clic su **Annulla predefinito**.
+    Se a un Mediation Server sono associati più gateway, è possibile specificare il gateway predefinito selezionando il gateway che si desidera impostare come predefinito e facendo clic su **Rendi predefinito**. Se si vuole rimuovere il gateway predefinito corrente, selezionarlo e fare clic su **Annulla predefinito**.
 
 > [!IMPORTANT]
-> Se si apportano modifiche alle proprietà in questa finestra di dialogo, è necessario pubblicare la topologia ed eseguire la distribuzione guidata di Skype for Business Server in tutti i server interessati. Dopo la pubblicazione della nuova topologia, viene fornito un elenco dei server interessati in cui deve essere eseguita la Distribuzione guidata di Skype for Business Server come collegamento nella schermata di riepilogo della pubblicazione della topologia completata. Per informazioni dettagliate sulla pubblicazione della topologia aggiornata, vedere [Publish the Topology](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-topology). Per informazioni dettagliate sulla distribuzione guidata Skype for Business Server, vedere [Strumenti di amministrazione di Lync Server.](/previous-versions/office/lync-server-2013/lync-server-2013-lync-server-administrative-tools)
+> Se si apportano modifiche alle proprietà in questa finestra di dialogo, è necessario pubblicare la topologia ed eseguire la distribuzione guidata di Skype for Business Server in tutti i server interessati. Dopo la pubblicazione della nuova topologia, viene fornito un elenco dei server interessati in cui deve essere eseguita la Distribuzione guidata di Skype for Business Server come collegamento nella schermata di riepilogo della pubblicazione della topologia completata. Per informazioni dettagliate sulla pubblicazione della topologia aggiornata, vedere [Publish the Topology](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-topology). Per informazioni dettagliate sulla Distribuzione guidata Skype for Business Server, vedere [Strumenti di amministrazione di Lync Server.](/previous-versions/office/lync-server-2013/lync-server-2013-lync-server-administrative-tools)
 
 Fare clic su **OK** per salvare le modifiche al documento della topologia.
 

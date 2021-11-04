@@ -1,6 +1,6 @@
 ---
 title: Distribuire il plug-in VDI di Lync con Skype for Business Server
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.reviewer: krishra
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 11d3bd5d-6dd3-471c-b842-b072fa197714
 description: In questo argomento vengono illustrate le procedure di distribuzione per l'Skype for Business durante la connessione a un desktop virtuale remoto.
-ms.openlocfilehash: 9d745321a398828d6ec31a55528008b467ddea47
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 64bbe73f1a0a4a1d2bde59cd86f1cf3a0f5d911e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608613"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60775836"
 ---
 # <a name="deploy-the-lync-vdi-plug-in-with-skype-for-business-server"></a>Distribuire il plug-in VDI di Lync con Skype for Business Server
  
-In questo argomento vengono illustrate le procedure di distribuzione per l'Skype for Business durante la connessione a un desktop virtuale remoto. Considerazioni sulla pianificazione sono [disponibili in Plan for Skype for Business in VDI environments.](../../plan-your-deployment/clients-and-devices/vdi-environments.md)
+In questo argomento vengono illustrate le procedure di distribuzione per l'Skype for Business durante la connessione a un desktop virtuale remoto. Considerazioni sulla pianificazione sono [disponibili in Plan for Skype for Business in VDI environments](../../plan-your-deployment/clients-and-devices/vdi-environments.md).
   
-Un Virtual Desktop Infrastructure (VDI) viene utilizzato in alcune organizzazioni in cui i problemi di sicurezza e conformità sono particolarmente sensibili. Gli utenti sono in computer Windows e utilizzano client su un desktop virtuale. L Skype for Business su una connessione come questa richiede software aggiuntivo per plug-in VDI.
+Un Virtual Desktop Infrastructure (VDI) viene utilizzato in alcune organizzazioni in cui i problemi di sicurezza e conformità sono particolarmente sensibili. Gli utenti sono in computer Windows e utilizzano client su un desktop virtuale. L Skype for Business su una connessione come questa richiede software aggiuntivo plug-in VDI.
   
 Sono disponibili due soluzioni per il componente plug-in VDI, una offerta da Microsoft e una offerta da Citrix. Microsoft consiglia di utilizzare la nuova soluzione HDX RealTime Optimization Pack nelle nuove distribuzioni, ma continuerà a supportare il plug-in VDI di Lync originale per il resto del ciclo di vita. 
   
@@ -68,7 +68,7 @@ Per preparare Connessione Desktop remoto per il plug-in VDI lync, eseguire la pr
 
 Dopo aver abilitato il plug-in VDI di Lync, l'utente segue questi passaggi quando accede a Skype for Business sul desktop virtuale.
   
-1. L'utente specifica le proprie credenziali nel client Skype for Business in esecuzione sul desktop virtuale.
+1. L'utente specifica le proprie credenziali nel Skype for Business client in esecuzione sul desktop virtuale.
     
 2. Dopo Skype for Business rileva il plug-in VDI di Lync, Skype for Business all'utente di immettere di nuovo le credenziali. In questa finestra di dialogo è consigliabile che l'utente selezioni la casella di controllo **Salva la password** in modo che non venga richiesta di nuovo l'immissione delle credenziali per gli accessi successivi.
     

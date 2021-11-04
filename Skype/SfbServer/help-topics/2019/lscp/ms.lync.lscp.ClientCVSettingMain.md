@@ -1,7 +1,7 @@
 ---
 title: Configurazione versione client
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: cb17314e-b89e-4821-8855-12f8fd2edc9b
 ROBOTS: NOINDEX, NOFOLLOW
 description: Oltre a specificare la versione dei client che si desidera supportare nell'ambiente, è possibile specificare un'azione predefinita per i client per i quali non sono già stati definiti criteri delle versioni. In questo modo, è possibile limitare le versioni client usate nell'ambiente e ciò può contribuire a tenere sotto controllo i costi associati al supporto di più versioni client.
-ms.openlocfilehash: e60e9a0225da3dbb2379f31eba3043a00c4e9144
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 57a999b9300947fc74091852f0729aea91739eae
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592780"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60761404"
 ---
 # <a name="client-version-configuration"></a>Configurazione versione client
 

@@ -1,6 +1,6 @@
 ---
 title: Provisioning di Skype di Exchange e Skype room
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,17 +12,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: fa71a2da-2cc9-4ad1-8ec9-08d1c9c5247a
 ms.collection: M365-voice
-description: Leggere questi argomenti per informazioni su come eseguire il provisioning Exchange e Skype account per Skype Room System.
-ms.openlocfilehash: 00fb6c2d3d9a0eb9a68d4aca868f035c1300aff3
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Leggere questi argomenti per informazioni su come effettuare il provisioning Exchange e Skype account per Skype Room System.
+ms.openlocfilehash: 7fe7eb6b1c9fa010ae650115ca63bb59c66d9804
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58583310"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60775816"
 ---
 # <a name="provisioning-of-skype-room-system-exchange-and-skype-accounts"></a>Provisioning di Skype di Exchange e Skype room
  
-Leggere questi argomenti per informazioni su come eseguire il provisioning Exchange e Skype account per Skype Room System. 
+Leggere questi argomenti per informazioni su come effettuare il provisioning Exchange e Skype account per Skype Room System. 
 
 > [!NOTE]
 > Microsoft Teams Rooms è un prodotto diverso con dipendenze e procedure di distribuzione diverse. Per informazioni su Microsoft Teams Rooms, vedere panoramica Microsoft Teams Rooms [distribuzione.](/MicrosoftTeams/rooms/rooms-deploy)
@@ -32,7 +32,7 @@ Leggere questi argomenti per informazioni su come eseguire il provisioning Excha
   
 ## <a name="provisioning-of-skype-room-system-exchange-amp-skype-for-business-accounts"></a>Provisioning di Skype room system Exchange &amp; Skype for Business account
 
-Negli argomenti seguenti viene descritto come effettuare il provisioning e la gestione Skype account Exchange e Skype for Business room:
+Negli argomenti seguenti viene descritto come eseguire il provisioning e la gestione Skype di Exchange e Skype for Business per:
   
 - Distribuzioni locali della singola foresta
     
@@ -42,6 +42,6 @@ Negli argomenti seguenti viene descritto come effettuare il provisioning e la ge
     
 - Distribuzioni ibride
     
-- Skype Sistema sala e Skype for Business federati
+- Skype Sistema sala e Skype for Business partner federati
     
 - Gestire gli account Skype Room System

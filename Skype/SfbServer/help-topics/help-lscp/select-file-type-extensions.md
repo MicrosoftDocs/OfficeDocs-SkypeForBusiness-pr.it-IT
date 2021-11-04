@@ -1,7 +1,7 @@
 ---
 title: Selezionare le estensioni di file
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 3638cdc8-71dd-4a22-8613-83859af97387
 description: Utilizzare la finestra di dialogo Seleziona estensioni tipo di file per specificare le estensioni dei tipi di file che si desidera bloccare o consentire rispettivamente selezionando o deselezionando le caselle di controllo accanto alle singole estensioni in Estensioni tipo di file. Fare clic sulla freccia per espandere una categoria e visualizzare tutte le relative estensioni. Per selezionare tutte le estensioni di una categoria, selezionare il nome della categoria.
-ms.openlocfilehash: 18339e11b60e232ed3a85c4708976111ad0a11bb
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c9a7e8301efeb7da59fdcd96dafc96ffd6e3e6e1
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58634510"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60764004"
 ---
 # <a name="select-file-type-extensions"></a>Selezionare estensioni del tipo di file
  

@@ -1,7 +1,7 @@
 ---
 title: Creare collegamenti di area di rete in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f8163910-8935-475d-88a2-3aa44feb9dbe
 description: Creare o modificare collegamenti di area di rete, utilizzati VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server.
-ms.openlocfilehash: bea44eaabf94c2b37db4d9e50f9266744670fb2a
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: dd46e7d7043d7d1814b7a23ac755624af0af4c69
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594164"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60775796"
 ---
 # <a name="create-network-region-links-in-skype-for-business-server"></a>Creare collegamenti di area di rete in Skype for Business Server
  
@@ -33,7 +33,7 @@ Nella topologia di esempio è presente un collegamento tra il Nord America e le 
   
 ### <a name="to-create-network-region-links-by-using-skype-for-business-server-management-shell"></a>Per creare collegamenti di area di rete tramite Skype for Business Server Management Shell
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 2. Eseguire il cmdlet New-CsNetworkRegionLink per creare i collegamenti area di rete e applicare i profili di criteri di larghezza di banda appropriati. Ad esempio, eseguire:
     
@@ -47,7 +47,7 @@ Nella topologia di esempio è presente un collegamento tra il Nord America e le 
 
 ### <a name="to-create-network-region-links-by-using-skype-for-business-server-control-panel"></a>Per creare collegamenti di area di rete tramite il Skype for Business Server Pannello di controllo
 
-1. Apri Skype for Business Server Pannello di controllo.
+1. Aprire Skype for Business Server Pannello di controllo.
     
 2. Sulla barra di spostamento sinistra fare clic su **Configurazione di rete**.
     

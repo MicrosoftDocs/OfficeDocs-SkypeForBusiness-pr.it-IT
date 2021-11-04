@@ -1,6 +1,6 @@
 ---
 title: Skype Licenza software Skype for Business Room System
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,18 +12,18 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 78a664ba-fefc-4423-ac8f-b58e6fbc2e55
 description: Leggere questo argomento per informazioni su come verificare se si dispone di un contratto multilicenza Skype for Business software.
-ms.openlocfilehash: dadb373bacd5af72c11d8e8945825acce7bc5b5e
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: dc605af5bc4f922e1da1669fb471ad46173a7646
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011530"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60761574"
 ---
 # <a name="skype-room-system-skype-for-business-software-license"></a>Skype Sistema sala: Skype for Business licenza software
  
 Leggere questo argomento per informazioni su come verificare se si dispone di un contratto multilicenza Skype for Business software. 
   
-Skype Room System usa un client Skype for Business, che richiede un contratto multilicenza software. Prima di distribuire il primo Skype Room System, individuare lo stato dei contratti multilicenza della distribuzione, utilizzando i server di gestione delle chiavi (Servizio di gestione delle chiavi) o più chiavi di attivazione (MAK).
+Skype Room System usa un client Skype for Business, che richiede un contratto multilicenza software. Prima di distribuire il primo Skype Room System, individuare lo stato con contratti multilicenza della distribuzione, utilizzando i server di gestione delle chiavi (Servizio di gestione delle chiavi) o più chiavi di attivazione (MAK).
   
 ## <a name="key-management-servers-kms"></a>Server di gestione delle chiavi (Servizio di gestione delle chiavi)
 
@@ -33,11 +33,11 @@ Da un prompt dei comandi eseguire:  `nslookup -type=srv _vlmcs._tcp >%temp%\kms.
   
 Per configurare un Servizio di gestione delle chiavi, vedere Servizio di gestione delle chiavi [activation of Office 2013](/previous-versions/office/office-2013-resource-kit/ee624357(v=office.15)) e [GVLKs for Servizio di gestione delle chiavi and Active Directory activation of Office 2013](/DeployOffice/vlactivation/gvlks)
   
-Office 2013 Generic Volume License Key for Lync: 2MG3G-3BNTT-3MFW9-KDQW3-TCK7R (Questa chiave fa sì che Skype Room System cerca un Servizio di gestione delle chiavi nella rete).
+Office 2013 Generic Volume License Key for Lync: 2MG3G-3BNTT-3MFW9-KDQW3-TCK7R (Questa chiave fa in modo che Skype Room System cerca un Servizio di gestione delle chiavi nella rete).
   
 ## <a name="multiple-activation-keys-mak-from-the-volume-license-service-center-vlsc"></a>Codici ad attivazione multipla (MAK) dal Centro servizi per contratti multilicenza (VLSC)
 
-Se il cliente usa qualsiasi altro software con contratti multilicenza, il reparto IT gestirà le attivazioni software e il Contratto multilicenza (VLA) tramite VLSC. In questo modo la società potrà anche acquistare Skype for Business attivazioni VL, dopo di che la società può ottenere un codice ADK per l'input nella console di amministrazione di Skype Room System.
+Se il cliente usa qualsiasi altro software con contratti multilicenza, il reparto IT gestirà le attivazioni software e il Contratto multilicenza (VLA) tramite VLSC. In questo modo la società potrà anche acquistare Skype for Business attivazioni VL, dopo di che la società potrà ottenere un codice ADK per l'input nella console di amministrazione di Skype Room System.
   
 Un cliente con una VLA deve conoscere le proprie credenziali VLSC, che verranno utilizzate per amministrare il contratto e ottenere il codice ADK. In caso di dubbi, il reparto finanziario del cliente dovrebbe essere in grado di verificare se il cliente ha pagato una VLA.
   

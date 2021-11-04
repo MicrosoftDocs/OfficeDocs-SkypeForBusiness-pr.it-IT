@@ -1,7 +1,7 @@
 ---
 title: Disponibilità elevata del server back-end in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,17 +12,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: c559aacb-4e1d-4e78-9582-41f966ad418d
-description: Informazioni sulle opzioni di disponibilità elevata del server back-end supportate in Skype for Business Server, inclusi i gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn, il mirroring del database e il clustering SQL failover.
-ms.openlocfilehash: ce84429d77b8da426913d873d99d2f70badc4d12
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Informazioni sulle opzioni di disponibilità elevata del server back-end supportate in Skype for Business Server, inclusi i gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn, il mirroring del database e SQL clustering di failover.
+ms.openlocfilehash: 6020f1a474c450da66fcb6fd5249db39fb0c29be
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595484"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60773506"
 ---
 # <a name="back-end-server-high-availability-in-skype-for-business-server"></a>Disponibilità elevata del server back-end in Skype for Business Server
  
-Informazioni sulle opzioni di disponibilità elevata del server back-end supportate in Skype for Business Server, inclusi i gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn, il mirroring del database e il clustering SQL failover.
+Informazioni sulle opzioni di disponibilità elevata del server back-end supportate in Skype for Business Server, inclusi i gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn, il mirroring del database e SQL clustering di failover.
   
 Per migliorare la disponibilità elevata per i server back-end, sono disponibili quattro opzioni:
   
@@ -36,7 +36,7 @@ Per migliorare la disponibilità elevata per i server back-end, sono disponibili
     
 L'utilizzo di una di queste soluzioni è facoltativo, ma è consigliabile mantenere la continuità aziendale dell'organizzazione. In caso contrario, la perdita di un singolo server di database potrebbe causare la perdita di dati Skype for Business Server dati. 
   
-È possibile configurare il mirroring del database utilizzando solo Generatore di topologie. Per i gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn o il clustering di failover SQL, si utilizza SQL Server per creare la soluzione a disponibilità elevata, quindi è possibile utilizzare Generatore di topologie per associarla a un pool Front End.
+È possibile configurare il mirroring del database utilizzando solo Generatore di topologie. Per i gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn o il clustering di failover di SQL, si utilizza SQL Server per creare la soluzione a disponibilità elevata, quindi è possibile utilizzare Generatore di topologie per associarla a un pool Front End.
   
 Se si utilizza la disponibilità elevata del server back-end in un pool Front End associato a un altro pool Front End per il ripristino di emergenza, è consigliabile utilizzare la stessa soluzione a disponibilità elevata back-end in entrambi i pool. 
   
@@ -52,7 +52,7 @@ Skype for Business Server supporta il mirroring con il software di database segu
 
 - SQL Server 2014, sia edizione Enterprise che edizione Standard
     
-- SQL Server 2012 SP2 e CU2, sia edizione Enterprise che edizione Standard
+- SQL Server 2012 SP2 e CU2, edizione Enterprise e edizione Standard
     
 
 > [!NOTE]
@@ -60,7 +60,7 @@ Skype for Business Server supporta il mirroring con il software di database segu
     
 Il mirroring asincrono del database non è supportato per la disponibilità elevata del server back-end in Skype for Business Server. Nel resto di questo documento, il mirroring del database significa mirroring sincrono del database, se non diversamente specificato esplicitamente. 
   
-Quando si distribuisce il mirroring del database in un pool Front End, viene eseguito il mirroring di tutti i database Skype for Business Server del pool, incluso l'archivio di gestione centrale, se si trova nel pool, nonché del database dell'applicazione Response Group e del database dell'applicazione Parcheggio di chiamata, se tali applicazioni sono in esecuzione nel pool. 
+Quando si distribuisce il mirroring del database in un pool Front End, viene eseguito il mirroring di tutti i database di Skype for Business Server nel pool, incluso l'archivio di gestione centrale, se si trova nel pool, nonché del database dell'applicazione Response Group e del database dell'applicazione Parcheggio di chiamata, se tali applicazioni sono in esecuzione nel pool. 
   
 Con il mirroring del database, non è necessario utilizzare l'archiviazione condivisa per i server. Ogni server mantiene la propria copia dei database nello spazio di archiviazione locale. 
   
@@ -85,14 +85,14 @@ Prima di configurare il mirroring del server, è necessario configurare corretta
 Con il mirroring SQL, la modalità di recupero del database è impostata sempre su **Completa**. Ciò significa che è necessario monitorare le dimensioni del log delle transizioni ed eseguire regolarmente il backup dei log più grandi, per evitare che la memoria del disco dei server di back-end si riempia. La frequenza dei backup dei log delle transizioni dipende dal tasso di crescita dei log, che a sua volta dipende dalle transazioni del database relative alle attività degli utenti nel pool Front End. Per pianificare correttamente, è consigliabile determinare il tasso di crescita stimato del log delle transazioni per il carico di lavoro della distribuzione di Lync. I seguenti articoli contengono informazioni aggiuntive sul backup SQL e la gestione dei log:
   
 > [!IMPORTANT]
-> L'utilizzo di Generatore di topologie o cmdlet per configurare e rimuovere il mirroring di SQL è supportato solo quando i server primari, mirror e di controllo (se desiderato) appartengono tutti allo stesso dominio. Per configurare il mirroring SQL tra server su domini diversi, vedere la documentazione relativa a SQL Server. 
+> L'utilizzo di Generatore di topologie o cmdlet per configurare e rimuovere il mirroring di SQL è supportato solo quando i server primario, mirror e di controllo (se desiderato) appartengono tutti allo stesso dominio. Per configurare il mirroring SQL tra server su domini diversi, vedere la documentazione relativa a SQL Server. 
 
 > [!NOTE]
-> SQL Il mirroring è disponibile Skype for Business Server 2015, ma non è più supportato in Skype for Business Server 2019. I gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn e i metodi di clustering di failover SQL sono preferiti con Skype for Business Server 2019.
+> SQL Il mirroring è disponibile Skype for Business Server 2015, ma non è più supportato in Skype for Business Server 2019. I gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn e i metodi SQL clustering di failover sono preferiti con Skype for Business Server 2019.
   
 ### <a name="recovery-time-for-automatic-back-end-server-failover-with-database-mirroring"></a>Tempo di ripristino per il failover automatico del server back-end con mirroring del database
 
-Per il failover back-end automatico con mirroring del database, l'obiettivo di progettazione per l'obiettivo RTO (Recovery Time Objective) è 5 minuti. A causa del mirroring sincrono del database, non prevediamo la perdita di dati durante gli errori del server back-end, tranne in rari casi in cui sia i Front End Server che il server back-end si verificano contemporaneamente durante lo spostamento dei dati tra i server. L'obiettivo in termini di punto di ripristino (RPO, Recovery Point Objective) è 5 minuti.
+Per il failover back-end automatico con mirroring del database, l'obiettivo di progettazione per l'obiettivo RTO (Recovery Time Objective) è 5 minuti. A causa del mirroring sincrono del database, non prevediamo la perdita di dati durante gli errori del server back-end, tranne in rari casi in cui i Front End Server e il server back-end si verificano contemporaneamente durante lo spostamento dei dati tra i server. L'obiettivo in termini di punto di ripristino (RPO, Recovery Point Objective) è 5 minuti.
   
 ### <a name="user-experience-during-back-end-server-failure-with-database-mirroring"></a>Esperienza utente durante un errore del server back-end con mirroring del database
 
@@ -108,7 +108,7 @@ Se si verifica un errore sia del server principale che dei server back-end mirro
 
 Skype for Business Server supporta i gruppi di disponibilità AlwaysOn solo come attivi/passivi, non attivi/attivi. 
   
-Per usare i gruppi di disponibilità AlwaysOn o le istanze del cluster di failover AlwaysOn, è innanzitutto necessario SQL Server per configurare e configurare la soluzione a disponibilità elevata. È quindi possibile utilizzare Generatore di topologie per associarlo a un pool Front End.
+Per utilizzare i gruppi di disponibilità AlwaysOn o le istanze del cluster di failover AlwaysOn, è innanzitutto necessario utilizzare SQL Server per configurare e configurare la soluzione a disponibilità elevata. È quindi possibile utilizzare Generatore di topologie per associarlo a un pool Front End.
 
 Skype for Business Server supporta AlwaysOn con il software di database seguente:
 
@@ -132,7 +132,7 @@ Skype for Business Server supporta AlwaysOn con il software di database seguente
 > SQL Server 2019, 2017 e 2016 sono le uniche versioni supportate da Skype for Business Server 2019.
 
 > [!NOTE]
-> I gruppi di  disponibilità Always On non sono supportati SQL 2016, 2017 e 2019 Standard Edition, ma è possibile usare istanze del cluster di failover Always On. Per altre informazioni, vedere [Edizioni e funzionalità supportate di SQL Server 2016.](/sql/sql-server/editions-and-components-of-sql-server-2016?view=sql-server-2017)
+> I gruppi di  disponibilità Always On non sono supportati SQL 2016, 2017 e 2019 Standard Edition, ma è possibile usare le istanze del cluster di failover Always On. Vedi [Edizioni e funzionalità supportate di SQL Server 2016 per](/sql/sql-server/editions-and-components-of-sql-server-2016?view=sql-server-2017) altre informazioni.
   
 > [!IMPORTANT]
 > I nomi delle istanze per più istanze del gruppo di disponibilità AlwaysOn devono essere uguali. 
@@ -151,13 +151,13 @@ Skype for Business Server supporta il SQL Server clustering di failover con il s
 
 - SQL Server 2014, sia edizione Enterprise che edizione Standard
     
-- SQL Server 2012 SP2 e CU2, sia edizione Enterprise che edizione Standard
+- SQL Server 2012 SP2 e CU2, edizione Enterprise e edizione Standard
 
-Per utilizzare SQL clustering di failover, è necessario innanzitutto configurare e configurare il cluster SQL Server prima di distribuire il pool Front End.To use SQL failover clustering, you should first set up and configure the SQL Server cluster before deploying your Front End pool. Per le procedure consigliate e le istruzioni di installazione per il clustering di failover in SQL Server 2012, vedere [https://technet.microsoft.com/library/hh231721.aspx](/sql/sql-server/failover-clusters/install/sql-server-failover-cluster-installation) .
+Per utilizzare SQL clustering di failover, è necessario innanzitutto configurare il cluster di SQL Server prima di distribuire il pool Front End. Per le procedure consigliate e le istruzioni di installazione per il clustering di failover in SQL Server 2012, vedere [https://technet.microsoft.com/library/hh231721.aspx](/sql/sql-server/failover-clusters/install/sql-server-failover-cluster-installation) .
 
 > [!NOTE]
 > SQL Server 2019, 2017 e SQL Server 2016 sono le uniche versioni supportate da Skype for Business Server 2019.
     
-Per utilizzare SQL clustering di failover, è necessario innanzitutto configurare e configurare il cluster SQL Server prima di distribuire il pool Front End.To use SQL failover clustering, you should first set up and configure the SQL Server cluster before deploying your Front End pool. Per le procedure consigliate e le istruzioni di installazione per il clustering di failover SQL Server 2014 e 2016, vedere [https://technet.microsoft.com/library/hh231721.aspx](/sql/sql-server/failover-clusters/install/sql-server-failover-cluster-installation) . Per il clustering di failover in SQL Server 2008, vedere [https://technet.microsoft.com/library/ms189134(v=sql.105).aspx](/previous-versions/sql/sql-server-2008-r2/ms189134(v=sql.105)) .
+Per utilizzare SQL clustering di failover, è necessario innanzitutto configurare il cluster di SQL Server prima di distribuire il pool Front End. Per le procedure consigliate e le istruzioni di installazione per il clustering di failover SQL Server 2014 e 2016, vedere [https://technet.microsoft.com/library/hh231721.aspx](/sql/sql-server/failover-clusters/install/sql-server-failover-cluster-installation) . Per il clustering di failover in SQL Server 2008, vedere [https://technet.microsoft.com/library/ms189134(v=sql.105).aspx](/previous-versions/sql/sql-server-2008-r2/ms189134(v=sql.105)) .
   
 Quando si installa SQL Server, è consigliabile installare SQL Server Management Studio per gestire i percorsi dei file di database e di registro. SQL Server Management Studio viene installato come componente facoltativo quando si installa SQL Server.

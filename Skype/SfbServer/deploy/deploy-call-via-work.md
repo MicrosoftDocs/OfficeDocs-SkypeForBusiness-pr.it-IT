@@ -1,7 +1,7 @@
 ---
 title: Distribuire chiamate tramite lavoro in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4802d733-14ef-4509-92b9-07173614e45f
 description: 'Riepilogo: informazioni su come distribuire Call Via Work in Skype for Business Server per alcuni o tutti gli utenti.'
-ms.openlocfilehash: c6113c4447e30d59a262bf2c02b3f7ff2db171f2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 98d7cc08b2cb4101f1d9d062e62ef32a3998691b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58624418"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60761610"
 ---
 # <a name="deploy-call-via-work-in-skype-for-business-server"></a>Distribuire chiamate tramite lavoro in Skype for Business Server
  
@@ -38,7 +38,7 @@ Call Via Work usa UNIFIED Communications Web API (UCWA), che viene installato au
     
 - È necessario abilitare tutti gli utenti di Call Via Work per VoIP aziendale. In questo caso, è necessario configurare il Skype for Business DID per ogni utente sul numero DID corrispondente per il sistema telefonico PBX corrispondente. 
     
-- Tutti gli utenti che utilizzano Call  Via Work devono avere la configurazione automatica selezionata nell'opzione **Connessioni** avanzate nel Skype for Business client. In questo modo il client può individuare gli URL UCWA. **Configurazione automatica** è la selezione predefinita.
+- Tutti gli utenti che utilizzano Chiama  tramite lavoro  devono avere la configurazione automatica selezionata nell'opzione Connessioni avanzate nel Skype for Business client. In questo modo il client può individuare gli URL UCWA. **Configurazione automatica** è la selezione predefinita.
     
 - Per ogni utente di Call Via Work, abilita l'inoltro di chiamata e lo squillo simultaneo. 
     
@@ -50,7 +50,7 @@ Call Via Work usa UNIFIED Communications Web API (UCWA), che viene installato au
 
 Una volta installati i prerequisiti, eseguire le operazioni seguenti:
   
-- Creare un numero di telefono globale per la distribuzione Skype for Business visualizzato nell'ID chiamante PBX degli utenti che effettuano chiamate di chiamata tramite ufficio. 
+- Creare un numero di telefono globale per la distribuzione che Skype for Business visualizzato nell'ID chiamante PBX degli utenti che effettuano chiamate call via work. 
     
 - Creare uno o più criteri Di chiamata tramite lavoro
     

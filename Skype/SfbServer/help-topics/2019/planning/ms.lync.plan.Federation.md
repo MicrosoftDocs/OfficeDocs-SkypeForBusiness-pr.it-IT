@@ -1,7 +1,7 @@
 ---
 title: Federazione (strumento di pianificazione)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,17 +15,17 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 63ea8a5e-a040-4892-9440-0fdbeef66fc0
 ROBOTS: NOINDEX, NOFOLLOW
-description: I server perimetrali possono essere configurati per consentire agli utenti interni ed esterni di accedere ai contatti nelle organizzazioni o nei servizi partner.
-ms.openlocfilehash: c0a7bb6ed7fd3ec575e1f1c4ee3332dbe95a8f3b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: I server perimetrali possono essere configurati per consentire agli utenti interni ed esterni di accedere ai contatti nelle organizzazioni partner o nei servizi.
+ms.openlocfilehash: 6090ef424293f36f6cdca7c0d70541b3c453c38b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58582990"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60775556"
 ---
 # <a name="federation-planning-tool"></a>Federazione (strumento di pianificazione)
  
-I server perimetrali possono essere configurati per consentire agli utenti interni ed esterni di accedere ai contatti nelle organizzazioni o nei servizi partner.
+I server perimetrali possono essere configurati per consentire agli utenti interni ed esterni di accedere ai contatti nelle organizzazioni partner o nei servizi.
   
  La federazione funziona Skype for Business Server come per Microsoft Lync 2013. Per ulteriori informazioni sulla preparazione dell'ambiente per la federazione, vedere i seguenti argomenti:
   

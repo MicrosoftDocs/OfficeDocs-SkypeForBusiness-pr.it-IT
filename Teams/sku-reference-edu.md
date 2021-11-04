@@ -1,7 +1,7 @@
 ---
 title: Informazioni di riferimento su SKU education
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: karsmith
 ms.topic: article
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Elenca i piani di licenza per istituti di istruzione e studenti e gli ID SKU.
 f1keywords: ''
-ms.openlocfilehash: b0fd67dd27a497712e48cb0664712963a61d678c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8f6c4a1821488b14bd95bdaab670788a880b109f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58627078"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60774376"
 ---
 # <a name="education-sku-reference"></a>Informazioni di riferimento su SKU education
 
@@ -65,7 +65,7 @@ Questo articolo elenca i piani di licenza per istituti di istruzione e studenti 
 |Office 365 A3 Vantaggio per l'uso degli studenti     |ENTERPRISEPACKPLUS_STUUSEBNFT         |476aad1e-7a7f-473c-9d20-35665a5cbd4f         |
 |Office 365 A5 Vantaggio per l'uso degli studenti    |ENTERPRISEPREMIUM_STUUSEBNFT         |f6e603f1-1a6d-4d32-a730-34b809cb9731         |
 |Office 365 A5 senza audioconferenze per studenti  |ENTERPRISEPREMIUM_NOPSTNCONF_STUUSEBNFT         |bc86c9cd-3058-43ba-9972-141678675ac1         |
-|Office 365 Education homeschool per studenti     |STANDARDWOFFPACK_HOMESCHOOL_STU         |afbb89a7-db5f-45fb-8af0-1bc5c5015709         |
+|Office 365 Education per Homeschool per studenti     |STANDARDWOFFPACK_HOMESCHOOL_STU         |afbb89a7-db5f-45fb-8af0-1bc5c5015709         |
 |Office 365 A1 per studenti (per dispositivo)     |STANDARDWOFFPACK_STUDENT_DEVICE         |160d609e-ab08-4fce-bc1c-ea13321942ac         |
 |Office 365 A1 Plus per gli studenti     |STANDARDWOFFPACK_IW_STUDENT         |e82ae690-a2d5-4d76-8d30-7c6e01e6022e         |
 

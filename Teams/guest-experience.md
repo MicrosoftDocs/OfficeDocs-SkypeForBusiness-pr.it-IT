@@ -19,12 +19,12 @@ appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
 description: Questo articolo descrive la funzionalità Microsoft Teams disponibile per gli utenti guest.
-ms.openlocfilehash: 2d8c3656abe6f1749251574ab01368a46984cee9
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: c58e70896c14719e9aa0289ef0cf6d636393d09d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58729615"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60774576"
 ---
 # <a name="guest-experience-in-teams"></a>Esperienza guest in Teams
 
@@ -110,3 +110,5 @@ La tabella seguente mostra le funzionalità per chiamate e riunioni disponibili 
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Abbandonare un organizzazione come utente guest](/azure/active-directory/b2b/leave-the-organization)
+
+[Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione](communicate-with-users-from-other-organizations.md)

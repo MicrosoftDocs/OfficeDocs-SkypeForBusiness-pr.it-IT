@@ -5,7 +5,7 @@ ms:assetid: 5485e208-81e4-4e59-9aeb-1232c11dd8a2
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398359(v=OCS.15)
 ms:contentKeyID: 48184180
 mtps_version: v=OCS.15
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,16 +15,16 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: 'Quando si configurano criteri per supportare le comunicazioni con partner federati, i criteri si applicano agli utenti dei domini federati. '
-ms.openlocfilehash: 86d3988df429b3bc9ef2972aa27e0a6ed03ceb72
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 892ba1207f0c3426b3577364f19652514e8e2110
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58588588"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60763754"
 ---
 # <a name="configure-policies-to-control-federated-user-access-in-skype-for-business-server"></a>Configurare i criteri per controllare l'accesso degli utenti federati in Skype for Business Server
 
-Quando si configurano criteri per supportare le comunicazioni con partner federati, i criteri si applicano agli utenti dei domini federati. È possibile configurare uno o più criteri di accesso degli utenti esterni per controllare se gli utenti dei domini federati possono collaborare con gli Skype for Business Server utenti. Per controllare l'accesso utente federato, è possibile configurare criteri a livello globale, di sito e di utente. Skype for Business Server impostazioni dei criteri applicate a un livello di criteri possono sostituire le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Skype for Business Server è la seguente: i criteri utente (maggiore influenza) sostituiscono i criteri sito e i criteri sito sostituiscono i criteri globali (minore influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto.
+Quando si configurano criteri per supportare le comunicazioni con partner federati, i criteri si applicano agli utenti dei domini federati. È possibile configurare uno o più criteri di accesso utente esterno per controllare se gli utenti dei domini federati possono collaborare con gli Skype for Business Server utenti. Per controllare l'accesso utente federato, è possibile configurare criteri a livello globale, di sito e di utente. Skype for Business Server impostazioni dei criteri applicate a un livello di criteri possono sostituire le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Skype for Business Server è la seguente: i criteri utente (maggiore influenza) sostituiscono i criteri sito e i criteri sito sostituiscono i criteri globali (minore influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto.
 
 
 > [!NOTE]  
@@ -67,7 +67,7 @@ Se si tratta di criteri utente è inoltre necessario applicarli agli utenti ai q
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Avviare il Skype per Busines Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server** e quindi fare clic su Skype for Business Server **Management Shell.**
+2.  Avviare il Skype per Busines Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** Skype for Business Server **e** quindi fare clic su Skype for Business Server **Management Shell.**
 
 3.  Digitare quanto segue in Skype for Business Server Management Shell:
     
@@ -84,7 +84,7 @@ Se si tratta di criteri utente è inoltre necessario applicarli agli utenti ai q
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Avviare la Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Microsoft Skype for Business Server** e quindi fare clic su Skype for Business Server **Management Shell.**
+2.  Avviare la Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Microsoft Skype for Business Server** e quindi fare clic su Skype for Business Server **Management Shell**.
 
 3.  Digitare quanto segue in Skype for Business Server Management Shell:
     

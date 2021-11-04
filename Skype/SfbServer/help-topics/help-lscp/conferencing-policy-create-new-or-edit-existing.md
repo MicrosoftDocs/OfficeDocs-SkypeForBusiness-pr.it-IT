@@ -1,7 +1,7 @@
 ---
 title: Criteri conferenza Crea nuovo o Modifica esistente
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/24/2015
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: ebd2f120-b57a-4c94-9509-20e098f4b0f4
 description: Un criterio di conferenza definisce le funzionalità e le funzionalità che gli utenti hanno a disposizione durante una conferenza (nota anche come riunione).
-ms.openlocfilehash: 3af54cc96418fdd5d55576947e6a0e59b1cbc485
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: be0e6ee522d3bff98ab87cc8bbab7057499b0ede
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596800"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60775206"
 ---
 # <a name="conferencing-policy-create-new-or-edit-existing"></a>Criteri conferenza: crearne di nuovi o modificare quelli esistenti
 
@@ -80,7 +80,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - **Abilitare le annotazioni** Se si consente la collaborazione dati, selezionare questa casella di controllo per consentire ai partecipanti di creare annotazioni su schermo sul contenuto condiviso durante la conferenza.
 
-  - **Abilitare PowerPoint annotazioni** Se si consente l'annotazione, selezionare questa casella di controllo per consentire ai partecipanti di creare annotazioni in PowerPoint diapositive condivise durante la conferenza.
+  - **Abilitare PowerPoint annotazioni** Se si consente l'annotazione, selezionare questa casella di controllo per consentire ai partecipanti di creare annotazioni nelle diapositive PowerPoint condivise durante la conferenza.
 
   - **Abilitare i polling** Se si consente la collaborazione dati, selezionare questa casella di controllo per consentire ai partecipanti di tenere un sondaggio durante una conferenza.
 

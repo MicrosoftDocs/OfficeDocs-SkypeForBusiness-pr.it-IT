@@ -1,7 +1,7 @@
 ---
 title: Pianificare i criteri percorso per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: da3cca7f-f6e5-4b6f-90a1-2008e3dd1ebd
 description: Leggere questo argomento per informazioni su come pianificare i criteri percorso per una distribuzione avanzata di servizi di emergenza (E9-1-1) in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: b250108fb20a9a1d75069b1036ab7c2fba332443
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d305d2e453c375616dbba7e077c552372767f2ae
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58601411"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60762134"
 ---
 # <a name="plan-location-policies-for-skype-for-business-server"></a>Pianificare i criteri percorso per Skype for Business Server
  
@@ -30,7 +30,7 @@ Leggere questo argomento per informazioni su come pianificare i criteri percorso
 > [!NOTE]
 > Skype for Business Server ora supporta la configurazione di più numeri di emergenza per un client. Se si desidera configurare più numeri di emergenza, è necessario seguire le informazioni in Pianificare più numeri di emergenza [in Skype for Business Server](multiple-emergency-numbers.md) e Configurare più numeri di emergenza [in Skype for Business](../../deploy/deploy-enterprise-voice/configure-multiple-emergency-numbers.md). 
   
-È possibile creare criteri percorso utilizzando il Skype for Business pannello di controllo o il cmdlet [New-CsLocationPolicy.](/powershell/module/skype/new-cslocationpolicy?view=skype-ps) Per ulteriori informazioni, vedere [Create location policies in Skype for Business Server.](../../deploy/deploy-enterprise-voice/create-location-policies.md)
+È possibile creare criteri percorso utilizzando il Skype for Business pannello di controllo o il cmdlet [New-CsLocationPolicy.](/powershell/module/skype/new-cslocationpolicy?view=skype-ps) Per ulteriori informazioni, vedere [Create location policies in Skype for Business Server](../../deploy/deploy-enterprise-voice/create-location-policies.md).
   
 Ogni criterio percorso contiene le informazioni seguenti:
   
@@ -55,14 +55,14 @@ Questa impostazione viene utilizzata solo quando **è abilitato l'opzione Abilit
   
  **Dichiarazione di non responsabilità per il servizio di emergenza avanzato**
   
-Questa impostazione consente di specificare la dichiarazione di non responsabilità che gli utenti visualizzano se ignorano la richiesta di una posizione. In Skype for Business Server, è possibile utilizzare i criteri percorso per impostare dichiarazioni di non responsabilità diverse per diverse impostazioni locali o set di utenti diversi.
+Questa impostazione consente di specificare la dichiarazione di non responsabilità che gli utenti visualizzano se ignorano la richiesta di una posizione. In Skype for Business Server, puoi usare i criteri percorso per impostare dichiarazioni di non responsabilità diverse per diverse impostazioni locali o set di utenti diversi.
   
  **Stringa di composizione di emergenza (numero di composizione E9-1-1)**
   
 Questa stringa di composizione (meno il "+" iniziale, ma inclusa qualsiasi normalizzazione eseguita dal dial plan dell'utente) indica che una chiamata è una chiamata di emergenza. La **stringa di composizione di** emergenza fa in modo che il client includa informazioni sulla posizione e sulla richiamata con la chiamata.
   
 > [!NOTE]
-> Se l'organizzazione non utilizza un prefisso di accesso alla linea esterna, non è necessario creare una regola di normalizzazione dial plan corrispondente che aggiunge un "+" alla stringa 911 prima di inviare la chiamata al routing in uscita su un server che esegue Skype for Business Server; "+" verrà anteposto automaticamente dal client Skype for Business come risultato del criterio percorso. Tuttavia, se il sito utilizza un prefisso di accesso esterno, è necessario aggiungere una regola di normalizzazione al criterio dial plan applicabile che rimuove il prefisso di accesso esterno e aggiunge "+". Ad esempio, se la posizione utilizza un prefisso di accesso esterno 9 e un utente compone il 9 911 per effettuare una chiamata di emergenza, il client utilizzerà il relativo criterio dial plan per normalizzare il valore su +911 prima che il numero composto venga valutato dalle route nel profilo di posizione del chiamante. 
+> Se l'organizzazione non utilizza un prefisso di accesso alla linea esterna, non è necessario creare una regola di normalizzazione dial plan corrispondente che aggiunge un "+" alla stringa 911 prima di inviare la chiamata al routing in uscita su un server che esegue Skype for Business Server; il "+" verrà anteposto automaticamente dal client Skype for Business come risultato del criterio percorso. Tuttavia, se il sito utilizza un prefisso di accesso esterno, è necessario aggiungere una regola di normalizzazione al criterio dial plan applicabile che rimuove il prefisso di accesso esterno e aggiunge "+". Ad esempio, se la posizione utilizza un prefisso di accesso esterno 9 e un utente compone il 9 911 per effettuare una chiamata di emergenza, il client utilizzerà il relativo criterio dial plan per normalizzare il valore su +911 prima che il numero composto venga valutato dalle route nel profilo di posizione del chiamante. 
   
  **Maschere stringa di composizione di emergenza (maschera di composizione E9-1-1)**
   

@@ -1,7 +1,7 @@
 ---
 title: Teams e Outlook di posta elettronica
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: afef90629f771520bc4f61758c9ad6e51f22246a
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 16103b19385af5d9e4519302df1ecde62c0b6cc3
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58734156"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60774316"
 ---
 # <a name="teams-and-outlook-email-integration"></a>Teams e Outlook di posta elettronica
 
@@ -27,15 +27,15 @@ Microsoft Teams include funzionalità che consentono agli utenti dell'organizzaz
 
 ## <a name="share-to-outlook"></a>Condividi con Outlook
 
-**Condividi con Outlook** consente agli utenti di condividere una copia di una conversazione Teams a un messaggio di posta elettronica in Outlook, senza dover uscire Teams. Questa funzionalità è utile se gli utenti devono condividere conversazioni o aggiornamenti di stato con utenti esterni al team o persino all'organizzazione. Passare all'inizio della conversazione in Teams, selezionare ̇ ̇ ̇ **Altre** opzioni e quindi selezionare **Condividi** per Outlook .  Per altre informazioni, vedere [Condividere Outlook da Teams](https://support.office.com/article/share-to-outlook-from-teams-f9dabbe9-9e9b-4e35-99dd-2eeeb67c4f6d).
+**Condividi con Outlook** consente agli utenti di condividere una copia di una conversazione Teams a un messaggio di posta elettronica in Outlook, senza dover uscire Teams. Questa funzionalità è utile se gli utenti devono condividere conversazioni o aggiornamenti di stato con utenti esterni al team o persino all'organizzazione. Passare all'inizio della conversazione in Teams, selezionare ̇ ̇ ̇ **Altre** opzioni e quindi selezionare **Condividi per** Outlook .  Per altre informazioni, vedere [Condividere Outlook da Teams](https://support.office.com/article/share-to-outlook-from-teams-f9dabbe9-9e9b-4e35-99dd-2eeeb67c4f6d).
 
-![Screenshot che mostra la caratteristica Condividi Outlook in Teams.](media/share-to-outlook.png)
+![Screenshot che mostra la caratteristica Condividi in Outlook in Teams.](media/share-to-outlook.png)
 
-Per usare questa funzionalità, Outlook sul web deve essere attivata per l'utente. Se Outlook sul web è disattivata,  l'opzione Condividi su Outlook non viene visualizzata in Teams per l'utente. Per informazioni su come attivare e disattivare le Outlook sul web, vedere Abilitare o disabilitare Outlook sul web [per una cassetta postale.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
+Per usare questa funzionalità, Outlook sul web deve essere attivata per l'utente. Se Outlook sul web è disattivata,  l'opzione Condividi su Outlook non viene visualizzata in Teams per l'utente. Per la procedura per attivare e disattivare le Outlook sul web, vedere Abilitare o disabilitare le Outlook sul web [per una cassetta postale.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
 
 ## <a name="actionable-activity-emails"></a>Messaggi di posta elettronica di attività utilizzabili
 
-Gli utenti ottengono automaticamente messaggi di posta elettronica di attività perse che li aiutano a recuperare le conversazioni perse in Teams. I messaggi di posta elettronica delle attività perse mostrano le risposte più recenti di  una conversazione, inclusi i messaggi inviati dopo il messaggio perso, e gli utenti possono fare clic su Rispondi per rispondere direttamente dall'interno Outlook. Per altre informazioni, vedere [Rispondere ai messaggi di posta](https://support.office.com/article/reply-to-missed-activity-emails-from-outlook-bc0cf587-db26-4946-aac7-8eebd84f1381)elettronica delle attività perse Outlook . 
+Gli utenti ottengono automaticamente messaggi di posta elettronica di attività perse che li aiutano a recuperare le conversazioni perse in Teams. I messaggi di posta elettronica delle attività perse mostrano le risposte più recenti di  una conversazione, inclusi i messaggi inviati dopo il messaggio perso, e gli utenti possono fare clic su Rispondi per rispondere direttamente dall'interno di Outlook. Per altre informazioni, vedere [Rispondere ai messaggi di posta](https://support.office.com/article/reply-to-missed-activity-emails-from-outlook-bc0cf587-db26-4946-aac7-8eebd84f1381)elettronica delle attività perse Outlook . 
 
 > [!NOTE]
 > Questa caratteristica non è supportata in Outlook per Mac o in alcune versioni precedenti di Outlook per Windows. Per altre informazioni, vedere [Messaggi utilizzabili in](/outlook/actionable-messages/)Outlook e Office 365 gruppi .

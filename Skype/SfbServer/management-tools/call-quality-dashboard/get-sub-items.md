@@ -1,7 +1,7 @@
 ---
 title: Get Sub-Items
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 0542eba9-3dda-40de-bba8-095d22825e4e
 description: "Riepilogo: informazioni sull'operazione Get Sub-Items, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 0fb1421d604cce450d28077558f2d00f20c2ff01
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 3d17ab46ece202ea36dce45b6266a1cd3de74928
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58591120"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60774646"
 ---
 # <a name="get-sub-items"></a>Get Sub-Items
  
 **Riepilogo:** Informazioni sull'operazione Get Sub-Items, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Get Sub-Items fa parte di Item Service nell'API repository per call quality dashboard.
+L'operazione Get Sub-Items fa parte di Item Service nell'API repository per il dashboard qualità delle chiamate.
   
 ## <a name="get-sub-items"></a>Get Sub-Items
 

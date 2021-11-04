@@ -1,7 +1,7 @@
 ---
 title: Gestire 9-1-1 avanzato e il servizio di posizione
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -10,24 +10,24 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: Skype for Business Server supporta chiamate enhanced 9-1-1 (E9-1-1) da Skype for Business client. Quando si configura Skype for Business Server per E9-1-1, le chiamate di emergenza effettuate da Skype for Business includono informazioni sulla posizione di risposta di emergenza (ERL) dal database del servizio informazioni sulla posizione.
-ms.openlocfilehash: 9ac2b594a5ad13401c01ad5fcf1ea46f46cd016f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Skype for Business Server supporta chiamate enhanced 9-1-1 (E9-1-1) da Skype for Business client. Quando si configura Skype for Business Server per E9-1-1, le chiamate di emergenza effettuate da Skype for Business includono le informazioni sulla posizione di risposta di emergenza (ERL) dal database del servizio informazioni sulla posizione.
+ms.openlocfilehash: cff19de879066163f53de6b8d51ef8384d451438
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58580610"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60763774"
 ---
 # <a name="manage-enhanced-9-1-1-and-the-location-service-in-skype-for-busines-server"></a>Gestire 9-1-1 avanzato e il servizio di posizione in Skype per Busines Server
 
-Skype for Business Server supporta chiamate enhanced 9-1-1 (E9-1-1) da Skype for Business client. Quando si configura Skype for Business Server per E9-1-1, le chiamate di emergenza effettuate da Skype for Business includono informazioni sulla posizione di risposta di emergenza (ERL) dal database del servizio informazioni sulla posizione. Utilizzare le procedure descritte in questo articolo per gestire i criteri percorso.
+Skype for Business Server supporta chiamate enhanced 9-1-1 (E9-1-1) da Skype for Business client. Quando si configura Skype for Business Server per E9-1-1, le chiamate di emergenza effettuate da Skype for Business includono le informazioni sulla posizione di risposta di emergenza (ERL) dal database del servizio informazioni sulla posizione. Utilizzare le procedure descritte in questo articolo per gestire i criteri percorso.
 
 > [!Note]
 > Per informazioni dettagliate sulla distribuzione di funzionalità VoIP aziendale avanzate, ad esempio E9-1-1 e il servizio Informazioni percorso, vedere [Deploy advanced VoIP aziendale features](../deploy/deploy-enterprise-voice/deploy-advanced-enterprise-voice-features.md).
 
-In Skype for Business Server, è possibile utilizzare i criteri percorso per applicare le impostazioni relative alla funzionalità Enhanced 9-1-1 (E9-1-1) e alle impostazioni di posizione per utenti o contatti. I criteri di posizione determinano se un utente è abilitato per E9-1-1 e in questo caso il funzionamento di una chiamata di emergenza. Ad esempio, è possibile usare i criteri di posizione per definire il numero di emergenza (ad esempio il 113 in Italia), se la sicurezza aziendale deve essere automaticamente notificata e come instradare la chiamata.
+In Skype for Business Server, è possibile utilizzare i criteri percorso per applicare le impostazioni correlate alla funzionalità Enhanced 9-1-1 (E9-1-1) e alle impostazioni di posizione per utenti o contatti. I criteri di posizione determinano se un utente è abilitato per E9-1-1 e in questo caso il funzionamento di una chiamata di emergenza. Ad esempio, è possibile usare i criteri di posizione per definire il numero di emergenza (ad esempio il 113 in Italia), se la sicurezza aziendale deve essere automaticamente notificata e come instradare la chiamata.
 
-È possibile configurare i criteri percorso dal **gruppo Configurazione di** rete nel Pannello Skype for Business Server controllo. Dal Pannello Skype for Business Server controllo è possibile visualizzare, creare, modificare o eliminare i criteri percorso. Utilizzare la seguente procedura per visualizzare informazioni sui criteri percorso. 
+È possibile configurare i criteri percorso dal **gruppo Configurazione di** rete nel Pannello Skype for Business Server controllo. Dal Pannello Skype for Business Server di controllo è possibile visualizzare, creare, modificare o eliminare i criteri percorso. Utilizzare la seguente procedura per visualizzare informazioni sui criteri percorso. 
 
 
 ## <a name="view-location-policy-information"></a>Visualizzare le informazioni sui criteri percorso 
@@ -80,7 +80,7 @@ In Skype for Business Server, è possibile ignorare la quantità di tempo predef
           - **Dichiarazione di non responsabilità**   Questa opzione è uguale a **Obbligatorio,** tranne per il fatto che l'utente non può ignorare il prompt senza immettere le informazioni sulla posizione. L'utente può comunque effettuare una chiamata di emergenza, ma non è possibile effettuare altre chiamate senza immettere le informazioni. Viene inoltre visualizzato il testo della dichiarazione di non responsabilità per comunicare all'utente le conseguenze derivanti dal rifiuto di immettere le informazioni sulla posizione. Per impostare il testo della dichiarazione di non responsabilità, è necessario utilizzare Skype for Business Server Management Shell per eseguire il cmdlet **Set-CsLocationPolicy** o il cmdlet **New-CsLocationPolicy** con il parametro EnhancedEmergencyServiceDisclaimer. Per informazioni dettagliate, [vedere Set-CsLocationPolicy](/powershell/module/skype/Set-CsLocationPolicy) o [New-CsLocationPolicy.](/powershell/module/skype/New-CsLocationPolicy)
           
     
-      - **Usa la posizione solo per** i servizi di Skype for Business può usare le informazioni sulla posizione per vari motivi (ad esempio, per informare i membri del team della posizione corrente). Selezionare questa casella di controllo per verificare che le informazioni sulla posizione siano disponibili solo per l'utilizzo con una chiamata di emergenza.
+      - **Usa la posizione solo per** i servizi di emergenza Skype for Business le informazioni sulla posizione per vari motivi (ad esempio, per informare i membri del team della posizione corrente). Selezionare questa casella di controllo per verificare che le informazioni sulla posizione siano disponibili solo per l'utilizzo con una chiamata di emergenza.
     
       - **Utilizzo PSTN**   L'utilizzo PSTN (Public Switched Telephone Network) che verrà impiegato per determinare la route vocale utilizzata per instradare le chiamate di emergenza dai client che utilizzano questo profilo. La route associata a tale utilizzo deve puntare a un trunk SIP dedicato alle chiamate di emergenza o a un gateway ELIN (Emergency Location Identification Number) che instrada le chiamate di emergenza al punto di raccolta PSAP più vicino.
     

@@ -1,7 +1,7 @@
 ---
 title: Gestire le impostazioni di configurazione del server per conferenze in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 36bed690-6e22-4e11-88c1-b40a20836c6a
 description: 'Riepilogo: informazioni su come gestire le impostazioni di configurazione del server per conferenze in Skype for Business Server.'
-ms.openlocfilehash: 7ba225920fd511d70efe1e063cb77dbd77d9721f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 14fed927e18d291cf17a5c00ee82dac7ef80a6d1
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58623728"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60773706"
 ---
 # <a name="manage-conferencing-server-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione del server per conferenze in Skype for Business Server
  
 **Riepilogo:** Informazioni su come gestire le impostazioni di configurazione del server per conferenze in Skype for Business Server.
   
-In questo argomento viene descritto come gestire le impostazioni di configurazione delle conferenze. Per ulteriori informazioni su come pianificare e distribuire le conferenze, vedere [Plan for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md) e Deploy conferencing in [Skype for Business Server](../../deploy/deploy-conferencing/deploy-conferencing.md).
+In questo argomento viene descritto come gestire le impostazioni di configurazione delle conferenze. Per ulteriori informazioni su come pianificare e distribuire le conferenze, vedere [Plan for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md) and Deploy conferencing in [Skype for Business Server](../../deploy/deploy-conferencing/deploy-conferencing.md).
   
 Le impostazioni di configurazione delle conferenze determinano elementi quali la dimensione massima consentita per il contenuto e gli stampati delle riunioni; la quantità massima di larghezza di banda per il servizio Conferenza condivisione applicazioni; limiti di archiviazione e periodi di scadenza; gli URL per i download interni ed esterni del client supportato; puntatori a URL interni ed esterni in cui gli utenti possono ottenere informazioni e risorse per le conferenze; e le porte utilizzate per la condivisione delle applicazioni, l'audio client, i trasferimenti di file e il traffico multimediale. Queste impostazioni consentono di gestire i server effettivi. Queste impostazioni possono essere impostate tramite Skype for Business Server Management Shell.
   
@@ -50,7 +50,7 @@ New-CsConferencingConfiguration -Identity site:Redmond -Organization Litwareinc
 
 Si noti che è possibile disporre di una sola raccolta di questo tipo per sito, pertanto questo comando avrà esito negativo se il sito Redmond dispone già di una raccolta di impostazioni di configurazione delle conferenze. 
   
-Nell'esempio seguente viene definita una nuova raccolta di impostazioni di configurazione delle conferenze, che vengono inizialmente archiviate in memoria e quindi applicate al sito Redmond in un secondo momento. 
+Nell'esempio seguente viene definita una nuova raccolta di impostazioni di configurazione delle conferenze, inizialmente archiviate in memoria e quindi applicate al sito Redmond in un secondo momento. 
   
 Nel primo comando viene utilizzato il cmdlet **New-CsConferencingConfiguration** per creare una nuova raccolta in memoria di impostazioni archiviate nella variabile $x. Il parametro InMemory consente di specificare che la raccolta deve essere creata in memoria anziché essere immediatamente applicata al sito Redmond.
   

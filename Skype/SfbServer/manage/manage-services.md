@@ -1,7 +1,7 @@
 ---
 title: Gestire i servizi per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c99ee134-8294-4481-bb4e-710fe85a39ca
 description: In questo articolo viene descritto come gestire i servizi in esecuzione in Skype for Business Server topologia.
-ms.openlocfilehash: be613203b9e15640ead1b136ebe1b89f4c4c50ea
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 6ef87e9dfba890e36a0a00fb9d7fd1161ca2f04d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60014180"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60768694"
 ---
 # <a name="manage-services-for-skype-for-business-server"></a>Gestire i servizi per Skype for Business Server
 
@@ -53,7 +53,7 @@ In questo articolo viene descritto come gestire i servizi in esecuzione in Skype
    - Per visualizzare lo stato più recente dei servizi in esecuzione sul computer, fare clic su **Ottieni stato servizio**.
    - Per visualizzare un elenco di servizi specifici in esecuzione sul computer e lo stato di ogni servizio, fare clic su **Proprietà** e quindi su **Chiudi** per tornare all'elenco.
     
-### <a name="viewing-service-status-with-windows-powershell-cmdlets"></a>Visualizzazione dello stato del servizio Windows cmdlet di PowerShell
+### <a name="viewing-service-status-with-windows-powershell-cmdlets"></a>Visualizzazione dello stato del servizio Windows cmdlet powershell
 
 È inoltre possibile visualizzare lo stato del servizio utilizzando Windows PowerShell e il cmdlet **Get-CsWindowsService.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere Amministrazione remota di PowerShell per [Microsoft Lync.](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/) Il processo è lo stesso in Skype for Business Server.
   
@@ -82,7 +82,7 @@ Per informazioni dettagliate, [vedere Get-CsWindowsService](/powershell/module/s
 ## <a name="view-details-about-a-service"></a>Visualizzare i dettagli su un servizio
 <a name="view_details"> </a>
 
-È possibile utilizzare Skype for Business Server pannello di controllo per visualizzare i dettagli su ogni servizio in esecuzione in un computer specifico della topologia. È possibile visualizzare lo stato di ogni servizio e i dettagli, ad esempio i database, le porte e i servizi dipendenti associati.
+È possibile utilizzare Skype for Business Server di controllo per visualizzare i dettagli su ogni servizio in esecuzione in un computer specifico della topologia. È possibile visualizzare lo stato di ogni servizio e i dettagli, ad esempio i database, le porte e i servizi dipendenti associati.
   
 ### <a name="to-view-details-for-a-service"></a>Per visualizzare i dettagli di un servizio
 
@@ -131,7 +131,7 @@ Per informazioni dettagliate, [vedere Get-CsWindowsService](/powershell/module/s
 ## <a name="prevent-sessions-for-services"></a>Impedire le sessioni per i servizi
 <a name="prevent_session"> </a>
 
-È possibile utilizzare il Skype for Business Server di controllo per impedire nuove sessioni per tutti i servizi Skype for Business Server in esecuzione in un computer specifico o per impedire nuove sessioni per un servizio Skype for Business Server specifico.
+È possibile utilizzare il Skype for Business Server di controllo per impedire nuove sessioni per tutti i servizi di Skype for Business Server in esecuzione in un computer specifico o per impedire nuove sessioni per un servizio Skype for Business Server specifico.
   
 ### <a name="to-prevent-new-sessions-for-all-skype-for-business-services-on-a-computer"></a>Per impedire nuove sessioni per tutti i Skype for Business in un computer
 

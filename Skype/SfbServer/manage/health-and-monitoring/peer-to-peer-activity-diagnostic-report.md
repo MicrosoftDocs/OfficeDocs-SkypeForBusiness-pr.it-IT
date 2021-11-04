@@ -1,7 +1,7 @@
 ---
 title: Rapporto di diagnostica attività peer-to-peer in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 025e8ab4-2e64-4a6b-8f52-caf756a5cac3
 description: 'Riepilogo: informazioni sul Rapporto di diagnostica attività peer-to-peer in Skype for Business Server.'
-ms.openlocfilehash: de0bbd43b12209cacac319952040afc526556db6
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 703592939b5f90311a4b9da551a6ebfe28989c31
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58622288"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60774836"
 ---
 # <a name="peer-to-peer-activity-diagnostic-report-in-skype-for-business-server"></a>Rapporto di diagnostica attività peer-to-peer in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto di diagnostica attività peer-to-peer in Skype for Business Server.
   
-Il Rapporto di diagnostica attività peer-to-peer fornisce informazioni sull'esito positivo o negativo delle sessioni di comunicazione peer-to-peer. Tenere presente Skype for Business Server distingue tra diversi tipi di errore:
+Il Rapporto di diagnostica attività peer-to-peer fornisce informazioni sull'esito positivo o negativo delle sessioni di comunicazione peer-to-peer. Tenere presente Skype for Business Server distinguere tra diversi tipi di errore:
   
 - **Errore previsto**. Un errore previsto è in genere un errore solo nel senso più tecnico del termine. Si supponga ad esempio di chiamare un utente, che però non è in ufficio e dunque non può rispondere al telefono. Poiché la chiamata non ha ricevuto risposta, tecnicamente viene considerata un errore. D'altra parte, si è verificato un errore previsto: Skype for Business Server non prevede che tu risponda al telefono se non sei disponibile a rispondere al telefono. Analogamente, si verificherà un errore previsto se si tenta di inviare un messaggio istantaneo a un utente offline, oppure connesso a un telefono che non supporta la messaggistica istantanea.
     

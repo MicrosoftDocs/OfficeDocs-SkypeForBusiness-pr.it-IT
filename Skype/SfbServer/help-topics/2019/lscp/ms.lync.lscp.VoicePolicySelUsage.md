@@ -1,7 +1,7 @@
 ---
 title: Selezionare un record utilizzo PSTN
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 80a5b130-2b36-4318-9870-f5176c8d8f62
 ROBOTS: NOINDEX, NOFOLLOW
 description: Usare la finestra di dialogo Seleziona record utilizzo PSTN per trovare un record utilizzo PSTN (Public Switched Telephone Network) esistente utilizzabile.
-ms.openlocfilehash: 55ca82a2774298262548b195e0ba5fd4312c639e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f643129e794bb2b08af528828830f3cff9f99f23
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599281"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60761334"
 ---
 # <a name="select-pstn-usage-record"></a>Selezionare il record di utilizzo PSTN
  

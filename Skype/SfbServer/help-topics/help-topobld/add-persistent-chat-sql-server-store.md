@@ -1,7 +1,7 @@
 ---
 title: Aggiungere l'archivio SQL Server per Persistent Chat
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/27/2015
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: c8e6064a-8127-4c25-8685-06f49d8bbfce
 description: Configurare gli archivi SQL Server che forniranno database per il server Chat persistente o il pool di server Chat persistente.
-ms.openlocfilehash: 7d3f9754e402c6049c4d0fd8cec9dd97758b5d32
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 27063ed9a2858714e6fd26db9fad98db1c47f95e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58630840"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60763944"
 ---
 # <a name="add-persistent-chat-sql-server-store"></a>Aggiungere l'archivio SQL Server per Chat persistente
  
@@ -30,9 +30,9 @@ Configurare gli archivi SQL Server che forniranno database per il server Chat pe
   
 Fare **clic su** Nuovo per definire una nuova SQL Server e facoltativamente una nuova istanza per i dati di Persistent Chat.
   
-Selezionare la **casella di controllo Abilita mirroring** SQL Server archivio per configurare un database di SQL Server e un'istanza facoltativa che fornirà un database con mirroring per i dati di Persistent Chat.
+Selezionare la **casella di controllo Abilita mirroring** SQL Server archivio dati per configurare un database di SQL Server e un'istanza facoltativa che fornirà un database con mirroring per i dati di Persistent Chat.
   
-Selezionare nell'elenco **Mirroring SQL Server archiviare** un'SQL Server e un'istanza facoltativa per fungere da mirror SQL Server per il SQL Server persistente.
+Selezionare nell'elenco **Mirroring SQL Server archiviare** un'SQL Server e un'istanza facoltativa per fungere da mirror SQL Server per il SQL Server di Persistent Chat.
   
 Fare **clic su** Nuovo per definire una nuova SQL Server e facoltativamente una nuova istanza per il mirroring SQL Server Persistent Chat.
   
@@ -42,7 +42,7 @@ Fare **clic su** Nuovo per definire un nuovo SQL Server di controllo, facoltativ
   
 Fare clic su **Indietro** per tornare alla finestra di dialogo per la definizione del pool precedente.
   
-Fare **clic** su Avanti dopo aver immesso le opzioni per la configurazione dell SQL Server store del pool e per procedere con la definizione del pool di server Chat persistente.
+Fare **clic** su Avanti dopo aver immesso le opzioni per la configurazione dell'archivio SQL Server pool e per procedere con la definizione del pool del server Chat persistente.
   
 Fare clic su **Annulla** per eliminare tutte le modifiche e chiudere la procedura guidata **Definisci nuovo pool Persistent Chat**.
   

@@ -1,7 +1,7 @@
 ---
 title: Valuta la mia chiamata in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c4e0c905-33a1-49d8-9276-1b338f94d085
 description: 'Riepilogo: informazioni sulla funzionalità Tariffa chiamata in Skype for Business Server.'
-ms.openlocfilehash: 73a08b0acb32651c42de4ddda9fe12c7ae9f9655
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 7786a5e3cb41918c34e5413259b27a01e3f94aaf
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60014140"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60768754"
 ---
 # <a name="rate-my-call-in-skype-for-business-server"></a>Valuta la mia chiamata in Skype for Business Server
 
 **Riepilogo:** Informazioni sulla funzionalità Tariffa chiamata in Skype for Business Server.
 
-Rate My Call è stata una nuova funzionalità dei client di Skype for Business 2015 e 2016 su Windows che offre alle aziende un modo per ottenere feedback dagli utenti finali.
+Rate My Call è stata una nuova funzionalità dei client Skype for Business 2015 e 2016 su Windows che offre alle aziende un modo per ottenere feedback dagli utenti finali.
 
 La finestra Valuta chiamata offre un sistema di classificazione "a stella" e token predefiniti per le chiamate audio e video. Inoltre, gli amministratori possono abilitare un campo personalizzato per fornire feedback.
 

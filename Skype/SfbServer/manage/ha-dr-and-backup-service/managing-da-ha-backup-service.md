@@ -2,7 +2,7 @@
 title: Gestione del ripristino di emergenza, della disponibilità elevata e del servizio di backup
 ms.reviewer: ''
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Informazioni sulle procedure per le operazioni di ripristino di emergenza e sulla manutenzione del servizio di backup, che sincronizza i dati in pool Front End abbinati.
-ms.openlocfilehash: b8635728710efbd2c820b6ca57333f77b56d04e5
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 962f595dffb56f36ce8d6008db62308c352706cd
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58612265"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60763704"
 ---
 # <a name="managing-skype-for-business-server-disaster-recovery-high-availability-and-backup-service"></a>Gestione Skype for Business Server ripristino di emergenza, disponibilità elevata e servizio di backup
 
@@ -28,7 +28,7 @@ Le procedure di ripristino di emergenza descritte in questa sezione presuppongon
 
   - Si dispone di una distribuzione con pool Front End abbinati, che si trovano in siti diversi, come descritto in [Plan for high availability and disaster recovery.](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md) Il servizio di backup è stato eseguito nei pool abbinati per mantenerli sincronizzati.
 
-  - Se l'archivio di gestione centrale è ospitato in uno dei due pool, viene installato e in esecuzione in entrambi i pool associati, con uno di questi pool che ospita il master attivo e l'altro pool che ospita lo standby.
+  - Se l'archivio di gestione centrale è ospitato in uno dei due pool, viene installato ed eseguito in entrambi i pool associati, con uno di questi pool che ospita il master attivo e l'altro pool che ospita lo standby.
 
 > [!IMPORTANT]
 > Nelle procedure seguenti il parametro *PoolFQDN* si riferisce al nome di dominio completo (FQDN) del pool interessato dall'emergenza, non al pool da cui gli utenti interessati dal problema vengono reindirizzati. Per lo stesso gruppo di utenti interessati dal problema, si riferisce allo stesso pool nei cmdlet di failover e failback (il pool che ospitava gli utenti prima del failover).<BR><br>Si supponga ad esempio un caso in cui per tutti gli utenti ospitati in un pool P1 sia stato eseguito il failover nel pool di backup, P2. Se l'amministratore desidera spostare tutti gli utenti serviti da P2 in modo che siano serviti da P1, è necessario che esegua le procedure seguenti: 

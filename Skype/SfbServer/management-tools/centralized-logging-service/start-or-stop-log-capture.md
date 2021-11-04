@@ -1,7 +1,7 @@
 ---
 title: Avviare o arrestare l'acquisizione del registro CLS Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/1/2018
@@ -14,18 +14,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 0512b9ce-7f5b-48eb-a79e-f3498bacf2de
 description: 'Riepilogo: informazioni su come avviare o arrestare una sessione di acquisizione dei registri del servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: 5ed9630f21e409c240871c981db6346d2d2d9599
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 051ea00f65e6bdcce563c9f4e9d3c0f634e8c09b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726955"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60774612"
 ---
 # <a name="start-or-stop-cls-log-capture-in-skype-for-business-server-2015"></a>Avviare o arrestare l'acquisizione del registro CLS Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come avviare o arrestare una sessione di acquisizione dei registri del servizio di registrazione centralizzata in Skype for Business Server 2015.
   
-Per acquisire i registri di traccia utilizzando il servizio di registrazione centralizzata, è necessario eseguire un comando per avviare la registrazione in uno o più computer e pool. Vengono inoltre emersi parametri che definiscono quali computer o pool, quali scenari eseguire (ad esempio, AlwaysOn, un altro scenario predefinito o uno scenario creato), quali componenti di Skype for Business Server (ad esempio, S4, SipStack) da tracciare.
+Per acquisire i registri di traccia utilizzando il servizio di registrazione centralizzata, è necessario eseguire un comando per avviare la registrazione in uno o più computer e pool. Vengono inoltre emersi parametri che definiscono i computer o i pool, gli scenari da eseguire (ad esempio, AlwaysOn, un altro scenario predefinito o uno scenario creato), i componenti di Skype for Business Server (ad esempio, S4, SipStack) da tracciare.
   
 Per acquisire le informazioni giuste è necessario assicurarsi di usare lo scenario corretto per la raccolta di informazioni pertinenti al problema. Nel servizio di registrazione centralizzata, uno scenario è il concetto di attivazione della registrazione in base a una raccolta di componenti server, livelli di registrazione e flag, che è molto più efficiente e utile rispetto alla necessità di definire questi elementi in base al server. Si definisce e specifica uno scenario da eseguire, e questo viene eseguito in modo coerente in tutti i server e i pool nell'ambito dell'infrastruttura.
   

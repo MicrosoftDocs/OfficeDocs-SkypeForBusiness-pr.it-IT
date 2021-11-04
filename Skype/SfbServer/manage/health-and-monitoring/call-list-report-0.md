@@ -1,7 +1,7 @@
 ---
 title: Rapporto elenco chiamate in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 9739f9f0-7a37-4844-91d5-f089d2011013
 description: 'Riepilogo: informazioni sul Rapporto elenco chiamate utilizzato in Skype for Business Server.'
-ms.openlocfilehash: 1e07eab0251218eaa66434dac6f15a6a782e10cc
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 7fe1a638bda3c830a7593f4a9048f7c4fc178229
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599005"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60762414"
 ---
 # <a name="call-list-report-in-skype-for-business-server"></a>Rapporto elenco chiamate in Skype for Business Server
  
@@ -59,7 +59,7 @@ Il rapporto Elenco chiamate è accessibile da qualsiasi dei rapporti seguenti:
     
 - Rapporto [prestazioni server in Skype for Business Server](server-performance.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamate scarsa)
     
-Dall'interno del Rapporto elenco chiamate è possibile accedere al Rapporto dettagli chiamata [in](call-detail-report.md) Skype for Business Server facendo clic sulla metrica Dettagli.
+Dall'interno del Rapporto elenco chiamate è possibile accedere al Rapporto dettagli chiamata [in Skype for Business Server](call-detail-report.md) facendo clic sulla metrica Dettagli.
   
 ## <a name="making-the-best-use-of-the-call-list-report"></a>Uso ottimale del rapporto Elenco chiamate
 

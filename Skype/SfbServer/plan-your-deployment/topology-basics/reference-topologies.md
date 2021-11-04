@@ -1,7 +1,7 @@
 ---
 title: Topologie di riferimento per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 0453aeee-c41f-44e6-a6e0-aaace526ca08
 description: Topologie di riferimento per Skype for Business Server, inclusi diagrammi e decisioni da prendere per organizzazioni di grandi, medie e piccole dimensioni.
-ms.openlocfilehash: 1f6598415627ca48181a6346007704536163ea94
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 270814a8a4dacccdec8919a0e31c9c6098603493
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58729755"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60762104"
 ---
 # <a name="reference-topologies-for-skype-for-business-server"></a>Topologie di riferimento per Skype for Business Server
 
@@ -39,9 +39,9 @@ La topologia di riferimento per le organizzazioni di piccole dimensioni mostra c
 
 ![Diagramma della topologia di riferimento che distribuisce tre server.](../../media/LyncServer2013_Planning_ReferenceTopologies_Topology1.jpg)
 
-- **Coppia di edizione Standard server distribuiti** Questa organizzazione ha 4.000 utenti nel sito centrale. Hanno distribuito due server edizione Standard e li hanno associati per abilitare la disponibilità elevata e il ripristino di emergenza. Ogni server contiene 2.000 utenti, ma le informazioni su tutti gli utenti vengono sincronizzate tra i due server. In caso di problemi, un amministratore può eseguire il failover di tali utenti per essere serviti dall'altro server, con un minimo di interruzione per gli utenti. Per ulteriori informazioni sulle funzionalità di disponibilità elevata e ripristino di emergenza in Skype for Business Server, vedere [Plan for high availability and disaster recovery in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md).
+- **Coppia di edizione Standard server distribuiti** Questa organizzazione ha 4.000 utenti nel sito centrale. Hanno distribuito due server edizione Standard e li hanno associati per consentire la disponibilità elevata e il ripristino di emergenza. Ogni server contiene 2.000 utenti, ma le informazioni su tutti gli utenti vengono sincronizzate tra i due server. In caso di problemi, un amministratore può eseguire il failover di tali utenti per essere serviti dall'altro server, con un minimo di interruzione per gli utenti. Per ulteriori informazioni sulle funzionalità di disponibilità elevata e ripristino di emergenza in Skype for Business Server, vedere [Plan for high availability and disaster recovery in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md).
 
-- **È consigliata la distribuzione di un server perimetrale.** Anche se non è necessario distribuire un server perimetrale per la messaggistica istantanea interna, la presenza e le conferenze, è consigliabile utilizzarne uno persino per le distribuzioni di piccole dimensioni. È possibile ottimizzare l'Skype for Business Server investimenti distribuendo un server perimetrale per fornire servizio agli utenti attualmente esterni ai firewall dell'organizzazione. Tra i vantaggi derivanti dall'utilizzo di server perimetrali sono inclusi i seguenti:
+- **È consigliata la distribuzione di un server perimetrale.** Anche se non è necessario distribuire un server perimetrale per la messaggistica istantanea interna, la presenza e le conferenze, è consigliabile utilizzarne uno persino per le distribuzioni di piccole dimensioni. È possibile ottimizzare l Skype for Business Server'investimento distribuendo un server perimetrale per fornire servizio agli utenti attualmente esterni ai firewall dell'organizzazione. Tra i vantaggi derivanti dall'utilizzo di server perimetrali sono inclusi i seguenti:
 
   - Gli utenti dell'organizzazione possono utilizzare Skype for Business Server, se lavorano da casa o sono fuori strada.
 
@@ -55,7 +55,7 @@ La topologia di riferimento per le organizzazioni di piccole dimensioni mostra c
 
 - **Distribuzione di Messaggistica unificata di Exchange.** Questa topologia di riferimento include un Exchange di messaggistica unificata, che viene eseguito Microsoft Exchange Server, non Skype for Business Server.
 
-- **Office Server Web Apps.** È consigliabile distribuire un Office Web Apps Server o Office web apps server farm in ogni organizzazione che utilizza le conferenze Web. Office Il server Web Apps consente di presentare PowerPoint diapositive in conferenze Web.
+- **Office Server Web Apps.** È consigliabile distribuire un Office web apps server o Office farm di server Web Apps in ogni organizzazione che utilizza le conferenze Web. Office Il server Web Apps consente di PowerPoint diapositive in conferenze Web.
 
 ## <a name="reference-topology-for-a-medium-organization"></a>Topologia di riferimento per un'organizzazione di medie dimensioni
 
@@ -73,9 +73,9 @@ La topologia di riferimento con disponibilità elevata e un solo data center è 
 
     Se desideravano aggiungere la capacità di ripristino di emergenza, potevano prendere in considerazione la creazione di un altro datacenter e l'aggiunta di un altro pool Front End e l'associazione con il pool Front End nel datacenter corrente. Quindi, se si verifica un'emergenza che interessa il pool principale, gli amministratori possono eseguire il failover degli utenti nel pool di backup.
 
-- **I server back-end sono con mirroring** Per offrire maggiore disponibilità per le funzionalità utente di base, l'organizzazione ha distribuito una coppia di server back-end con mirroring per ogni pool Front End.
+- **I server back-end sono con mirroring** Per garantire maggiore disponibilità per le funzionalità utente di base, l'organizzazione ha distribuito una coppia di server back-end con mirroring per ogni pool Front End.
 
-- **Opzioni di database del Monitoring Server.** Questa organizzazione ha distribuito monitoraggio per garantire la qualità delle VoIP aziendale e conferenze audio/video. Il monitoraggio viene distribuito in ogni Front End Server e il database di monitoraggio è collocato con i server back-end. Sono inoltre supportate le topologie in cui il database di monitoraggio si trova in un server separato.
+- **Opzioni di database del Monitoring Server.** Questa organizzazione ha distribuito monitoraggio per garantire la qualità delle chiamate VoIP aziendale e conferenze audio/video. Il monitoraggio viene distribuito in ogni Front End Server e il database di monitoraggio è collocato con i server back-end. Sono inoltre supportate le topologie in cui il database di monitoraggio si trova in un server separato.
 
 - **Disponibilità elevata dei server perimetrali** In questa organizzazione di esempio con 20.000 utenti, un solo server perimetrale sarebbe sufficiente per le prestazioni. Tuttavia, hanno distribuito un pool di due server perimetrali distribuiti per garantire la disponibilità elevata.
 
@@ -85,17 +85,17 @@ La topologia di riferimento con disponibilità elevata e un solo data center è 
 
 - **Distribuzione di Messaggistica unificata di Exchange.** Questa topologia di riferimento include un Exchange di messaggistica unificata, che viene eseguito Microsoft Exchange Server, non Skype for Business Server.
 
-- **Office Server Web Apps.** È consigliabile distribuire un Office Web Apps Server o Office web apps server farm in ogni organizzazione che utilizza le conferenze Web. Office Il server Web Apps consente di presentare diapositive di Powerpoint in conferenze Web.
+- **Office Server Web Apps.** È consigliabile distribuire un Office web apps server o Office farm di server Web Apps in ogni organizzazione che utilizza le conferenze Web. Office Il server Web Apps consente di presentare diapositive di Powerpoint in conferenze Web.
 
 - **È possibile aggiungere director.** Se l'organizzazione desidera aumentare la sicurezza dagli attacchi Denial of Service, potrebbe anche distribuire un pool di Director. Un Director è un ruolo del server facoltativo separato in Skype for Business Server che non ospita account utente o fornisce servizi di presenza o conferenza. Funge da server hop successivo interno a cui un server perimetrale instrada il traffico SIP in ingresso destinato ai server interni. Il Director esegue l'autenticazione preliminare delle richieste in ingresso e le reindirizza al pool principale o al server dell'utente. La pre-autenticazione nel Server Director consente di eliminare le richieste dagli account utente sconosciuti alla distribuzione. Un Director consente di isolare i Front End Server da traffico dannoso, ad esempio attacchi Denial of Service (DoS). Se la rete viene inondata di traffico esterno non valido in un attacco di questo tipo, il traffico termina con il Director.
 
-- **System Center Operations Manager è consigliato.** È consigliabile monitorare l'integrità della distribuzione Skype for Business Server per garantire la disponibilità del servizio per gli utenti finali. È possibile utilizzare System Center Management Pack di Operations Manager per Skype for Business disponibile come download gratuito da Microsoft. Con il Management Pack di Skype for Business, è possibile ricevere in modo proattivo avvisi in tempo reale quando si verificano problemi, eseguire transazioni sintetiche per testare la funzionalità di Skype for Business end-to-end, ottenere report sulla disponibilità del servizio e così via. In questo modo è possibile rispondere in modo proattivo ai problemi relativi alla distribuzione prima che gli utenti finali li verifichino.
+- **System Center Operations Manager è consigliato.** È consigliabile monitorare l'integrità della distribuzione Skype for Business Server per garantire la disponibilità del servizio per gli utenti finali. È possibile utilizzare System Center Management Pack di Operations Manager per Skype for Business disponibile come download gratuito da Microsoft. Con il Management Pack di Skype for Business, è possibile ricevere avvisi in tempo reale in caso di problemi, eseguire transazioni sintetiche per testare la funzionalità di Skype for Business end-to-end, ottenere report sulla disponibilità del servizio e così via. In questo modo è possibile rispondere in modo proattivo ai problemi relativi alla distribuzione prima che gli utenti finali li verifichino.
 
 ## <a name="reference-topology-for-a-large-organization"></a>Topologia di riferimento per un'organizzazione di grandi dimensioni
 
 La topologia di riferimento per un'organizzazione di grandi dimensioni con più data center supportati è per qualsiasi dimensione dell'organizzazione con più di un sito centrale. La topologia esatta nel diagramma seguente è per un'organizzazione di 50.000 utenti, con 20.000 utenti nel sito centrale A, 20.000 nel sito centrale B e un totale di 10.000 in sito centrale C e siti di succursale. Il tipo di topologia mostrato in questo diagramma può ospitare organizzazioni con un numero qualsiasi di utenti.
 
-Oltre alla disponibilità elevata fornita dai pool di Front End Server, questa topologia aggiunge il supporto per il ripristino di emergenza. I pool Front End nei siti centrali A e B sono associati tra loro. Se uno di questi pool si verifica un errore, l'amministratore può spostare i servizi per gli utenti interessati nel pool associato nel sito non interessato.
+Oltre alla disponibilità elevata fornita dai pool di Front End Server, questa topologia aggiunge il supporto per il ripristino di emergenza. I pool Front End nei siti centrali A e B sono associati tra loro. Se uno di questi pool non è più in funzione, l'amministratore può spostare i servizi per gli utenti interessati nel pool associato nel sito non interessato.
 
 Questa topologia è illustrata in più diagrammi, con una panoramica seguita da visualizzazioni dettagliate dei siti centrali.
 
@@ -117,11 +117,11 @@ Questa topologia è illustrata in più diagrammi, con una panoramica seguita da 
 
 - **I pool Front End sono associati per abilitare il ripristino di emergenza.** I pool Front End nel sito A e nel sito B sono associati tra loro per fornire supporto per il ripristino di emergenza. Se il pool in un sito ha esito negativo, l'amministratore può eseguire il failover degli utenti da tale sito al pool Front End associato nell'altro sito, con un minimo di interruzione del servizio per gli utenti. Ognuno di questi due pool Front End dispone di sei server, il che è sufficiente per tutti i 40.000 utenti in entrambi i pool in caso di failover. Per ulteriori informazioni, vedere [Plan for high availability and disaster recovery in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md).
 
-- **I server back-end sono con mirroring** Per offrire maggiore disponibilità per le funzionalità utente di base, l'organizzazione ha distribuito una coppia di server back-end con mirroring per ogni pool Front End. Si tratta di una topologia facoltativa ed è possibile scegliere di distribuire un singolo server back-end. SQL sono supportati anche il clustering e i gruppi di disponibilità AlwaysOn. Per ulteriori informazioni, vedere [Back End Server high availability in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/back-end-server.md).
+- **I server back-end sono con mirroring** Per garantire maggiore disponibilità per le funzionalità utente di base, l'organizzazione ha distribuito una coppia di server back-end con mirroring per ogni pool Front End. Si tratta di una topologia facoltativa ed è possibile scegliere di distribuire un singolo server back-end. SQL sono supportati anche il clustering e i gruppi di disponibilità AlwaysOn. Per ulteriori informazioni, vedere [Back End Server high availability in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/back-end-server.md).
 
-- **Utilizzo edizione Standard server in un sito di succursale.** Questa organizzazione considera il sito C come sito di succursale perché ha solo 600 dipendenti. Tuttavia, gli utenti hanno molte conferenze audio/video tra loro. Se è stato distribuito in Skype for Business Server come sito di succursale, i supporti per queste conferenze verrebbero eseguiti attraverso la rete WAN (Wide Area Network) da e verso un sito centrale in cui è distribuito un Front End Server. Per evitare questo potenziale carico di larghezza di banda, hanno installato una coppia di server edizione Standard in questo sito, che ospiteranno queste conferenze. Poiché i edizione Standard sono installati lì, Skype for Business Server per definizione lo considera un sito centrale e viene considerato come tale in Generatore di topologie e nello Strumento di pianificazione.
+- **Utilizzo edizione Standard server in un sito di succursale.** Questa organizzazione considera il sito C come sito di succursale perché ha solo 600 dipendenti. Tuttavia, gli utenti hanno molte conferenze audio/video tra loro. Se è stato distribuito in Skype for Business Server come sito di succursale, i supporti per queste conferenze verrebbero eseguiti attraverso la rete WAN (Wide Area Network) da e verso un sito centrale in cui è distribuito un Front End Server. Per evitare questo potenziale carico di larghezza di banda, hanno installato una coppia di server edizione Standard in questo sito, che ospiteranno queste conferenze. Poiché i edizione Standard sono installati in questa posizione, Skype for Business Server per definizione lo considera un sito centrale e viene considerato come tale in Generatore di topologie e nello Strumento di pianificazione.
 
-    Un solo edizione Standard server sarebbe sufficiente per le prestazioni, ma l'organizzazione ne ha distribuiti due e li ha associati insieme per garantire la disponibilità elevata in caso di problemi di un server.
+    Un solo edizione Standard server sarebbe sufficiente per le prestazioni, ma l'organizzazione ne ha distribuiti due e li ha associati per garantire una disponibilità elevata nel caso in cui un server si insedi.
 
     Sebbene il sito C sia considerato un sito centrale, non è necessario distribuire i server perimetrali in tale sito. In questo esempio, il sito C utilizzerà i server perimetrali distribuiti nel sito A.
 
@@ -144,8 +144,8 @@ Questa topologia è illustrata in più diagrammi, con una panoramica seguita da 
 
     Per informazioni dettagliate Exchange messaggistica unificata, vedere [On-Premises Exchange Unified Messaging Integration](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-exchange-unified-messaging-integration) e [Hosted Exchange Unified Messaging Integration](/previous-versions/office/lync-server-2013/lync-server-2013-hosted-exchange-unified-messaging-integration) nella documentazione relativa alla pianificazione.
 
-- **Office Server Web Apps.** È consigliabile distribuire un Office Web Apps Server o Office farm di server Web Apps in ogni organizzazione che utilizza le conferenze Web. È possibile distribuire una singola farm Office server Web Apps in un sito che serve il traffico da tutti i siti o distribuirla in ogni sito. Office Il server Web Apps consente di presentare diapositive di Powerpoint in conferenze Web.
+- **Office Server Web Apps.** È consigliabile distribuire un Office web apps server o Office farm di server Web Apps in ogni organizzazione che utilizza le conferenze Web. È possibile distribuire una singola farm Office server Web Apps in un sito che serve il traffico da tutti i siti o distribuirla in ogni sito. Office Il server Web Apps consente di presentare diapositive di Powerpoint in conferenze Web.
 
 - **È possibile aggiungere director.** Se l'organizzazione desidera aumentare la sicurezza dagli attacchi Denial of Service, può anche distribuire un pool di Director. Un Director è un ruolo del server facoltativo separato in Skype for Business Server che non ospita account utente o fornisce servizi di presenza o conferenza. Funge da server hop successivo interno a cui un server perimetrale instrada il traffico SIP in ingresso destinato ai server interni. Il Director esegue l'autenticazione preliminare delle richieste in ingresso e le reindirizza al pool principale o al server dell'utente. La pre-autenticazione nel Server Director consente di eliminare le richieste dagli account utente sconosciuti alla distribuzione. Un Director consente di isolare i Front End Server da traffico dannoso, ad esempio attacchi Denial of Service (DoS). Se la rete viene inondata di traffico esterno non valido in un attacco di questo tipo, il traffico termina con il Director.
 
-- **System Center Operations Manager è consigliato.** È consigliabile monitorare l'integrità della distribuzione Skype for Business Server per garantire la disponibilità del servizio per gli utenti finali. È possibile utilizzare System Center Management Pack di Operations Manager per Skype for Business disponibile come download gratuito da Microsoft. Con il Management Pack di Skype for Business, è possibile ricevere in modo proattivo avvisi in tempo reale quando si verificano problemi, eseguire transazioni sintetiche per testare la funzionalità di Skype for Business end-to-end, ottenere report sulla disponibilità del servizio e così via. In questo modo è possibile rispondere in modo proattivo ai problemi relativi alla distribuzione prima che gli utenti finali li verifichino.
+- **System Center Operations Manager è consigliato.** È consigliabile monitorare l'integrità della distribuzione Skype for Business Server per garantire la disponibilità del servizio per gli utenti finali. È possibile utilizzare System Center Management Pack di Operations Manager per Skype for Business disponibile come download gratuito da Microsoft. Con il Management Pack di Skype for Business, è possibile ricevere avvisi in tempo reale in caso di problemi, eseguire transazioni sintetiche per testare la funzionalità di Skype for Business end-to-end, ottenere report sulla disponibilità del servizio e così via. In questo modo è possibile rispondere in modo proattivo ai problemi relativi alla distribuzione prima che gli utenti finali li verifichino.

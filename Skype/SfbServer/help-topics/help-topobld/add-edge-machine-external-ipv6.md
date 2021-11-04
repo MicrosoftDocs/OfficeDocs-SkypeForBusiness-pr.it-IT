@@ -1,7 +1,7 @@
 ---
 title: Aggiungere l'indirizzo IPv6 esterno del computer perimetrale
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: e901509e-f667-41ef-96f5-67251b05a167
 description: In Indirizzo IPv6 esterno immettere l'indirizzo IP esterno che punta al servizio Access Edge, al servizio Web Conferencing Edge e al servizio A/V Edge.
-ms.openlocfilehash: ef3f2416567e389cb85d36f102d44e0d29152c1e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 233f40abf691d58431ea52ea87a710b85c600eda
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621282"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60774116"
 ---
 # <a name="add-edge-machine-external-ipv6"></a>Aggiungere Edge Machine External IPv6
  

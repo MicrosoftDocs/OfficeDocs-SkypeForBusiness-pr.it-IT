@@ -1,7 +1,7 @@
 ---
 title: Usare Teams con i servizi desktop remoto
-author: cichur
-ms.author: serdars
+author: serdars
+ms.author: v-mahoffman
 ms.reviewer: alivano
 manager: serdars
 ms.topic: article
@@ -17,20 +17,20 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8250991790b6fc2e326a31829e8afc3f8659df74
-ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
+ms.openlocfilehash: 063ded4b2e2963ab30126c5af967017bf4981cef
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "60605572"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60774366"
 ---
 # <a name="teams-in-remote-desktop-services"></a>Teams in Servizi Desktop remoto
 
-Questo articolo descrive i requisiti e le limitazioni per l'uso di Microsoft Teams in un ambiente di Servizi Desktop remoto.
+Questo articolo descrive i requisiti e le limitazioni per l'Microsoft Teams in un ambiente di Servizi Desktop remoto.
 
 ## <a name="what-is-rds"></a>Che cos'è Servizi Desktop remoto?
 
-Servizi Desktop remoto è la piattaforma ideale per la creazione di soluzioni di virtualizzazione per ogni esigenza del cliente finale. Servizi Desktop remoto consente di distribuire singole applicazioni virtualizzate, fornire un accesso sicuro per dispositivi mobili e desktop remoti e offrire agli utenti finali la possibilità di eseguire le applicazioni e i desktop dal cloud.
+Servizi Desktop remoto è la piattaforma ideale per la creazione di soluzioni di virtualizzazione per ogni esigenza del cliente finale. Servizi Desktop remoto consente di distribuire singole applicazioni virtualizzate, fornire un accesso sicuro per dispositivi mobili e desktop remoto e offrire agli utenti finali la possibilità di eseguire le applicazioni e i desktop dal cloud.
 
 Servizi Desktop remoto offre flessibilità di distribuzione, efficienza dei costi ed estendibilità. Servizi Desktop remoto viene fornito tramite un'ampia gamma di opzioni di distribuzione, tra cui Windows Server 2016 per le distribuzioni locali, Microsoft Azure per le distribuzioni cloud e una solida gamma di soluzioni per i partner.
 A seconda dell'ambiente e delle preferenze, è possibile configurare la soluzione Servizi Desktop remoto per la virtualizzazione basata su sessione, come infrastruttura desktop virtuale (VDI)
@@ -45,21 +45,21 @@ Se l'organizzazione vuole usare solo le funzionalità di chat e collaborazione i
 
 È possibile impostare criteri usando l'interfaccia Microsoft Teams o PowerShell. La propagazione delle modifiche ai criteri potrebbe richiedere del tempo (alcune ore). Se le modifiche per un determinato account non sono immediatamente disponibili, riprovare tra qualche ora.
 
-[**Criteri di chiamata:**](teams-calling-policy.md)Teams include il criterio di chiamata Predefinito DisallowCalling, in cui tutte le funzionalità di chiamata sono disattivate. Assegnare il criterio DisallowCalling a tutti gli utenti dell'organizzazione che usano Teams in un ambiente virtualizzato.
+[**Criteri di chiamata:**](teams-calling-policy.md)Teams include il criterio di chiamata DisallowCalling predefinito, in cui tutte le funzionalità di chiamata sono disattivate. Assegnare il criterio DisallowCalling a tutti gli utenti dell'organizzazione che usano Teams in un ambiente virtualizzato.
 
 [**Criteri riunione:**](meeting-policies-overview.md)Teams include i criteri predefiniti per le riunioni AllOff, in cui tutte le caratteristiche della riunione sono disattivate. Assegnare il criterio AllOff a tutti gli utenti dell'organizzazione che usano Teams in un ambiente virtualizzato.
 
-#### <a name="assign-policies-using-the-microsoft-teams-admin-center"></a>Assegnare criteri tramite l'interfaccia Microsoft Teams di amministrazione
+#### <a name="assign-policies-using-the-microsoft-teams-admin-center"></a>Assegnare criteri usando l'interfaccia Microsoft Teams di amministrazione
 
 Per assegnare i criteri di chiamata DisallowCalling e i criteri della riunione AllOff a un utente:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare a **Utenti**.
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Utenti**.
 2. Selezionare l'utente selezionandolo a sinistra del nome utente e quindi **selezionare Modifica impostazioni.**
 3. Eseguire la procedura seguente:
 
     a.  In **Criteri di chiamata** selezionare **DisallowCalling**.
 
-    b.  In **Criteri riunione** selezionare **AllOff.**
+    b.  In **Criteri riunione** selezionare **AllOff**.
 
 4. Selezionare **Applica**.
 
@@ -71,7 +71,7 @@ Per assegnare un criterio a più utenti contemporaneamente:
 
 In caso contrario, è anche possibile eseguire la procedura seguente:
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare al criterio da assegnare. Ad esempio:
+1. Nel riquadro di spostamento sinistro dell Microsoft Teams di amministrazione passare al criterio da assegnare. Ad esempio:
 
     - Passare a **Criteri**  >  **chiamate vocali** e quindi selezionare **DisallowCalling**.
     - Passare a **Criteri**  >  **riunione riunioni** e quindi selezionare **AllOff.**
@@ -80,7 +80,7 @@ In caso contrario, è anche possibile eseguire la procedura seguente:
 3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 4. Dopo aver aggiunto gli utenti, selezionare **Salva**.
 
-#### <a name="assign-policies-using-powershell"></a>Assegnare criteri con PowerShell
+#### <a name="assign-policies-using-powershell"></a>Assegnare criteri tramite PowerShell
 
 L'esempio seguente mostra come usare [Grant-CsTeamsCallingPolicy](/powershell/module/skype/grant-csteamscallingpolicy) per assegnare il criterio di chiamata DisallowCalling a un utente.
 

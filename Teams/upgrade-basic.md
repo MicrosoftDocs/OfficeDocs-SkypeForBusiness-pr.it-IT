@@ -1,13 +1,13 @@
 ---
 title: Elenco di controllo per l'aggiornamento| Skype Business to Teams Upgrade | Passaggi di base
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.topic: article
 ms.service: msteams
 ms.reviewer: landerl
 audience: admin
-description: Seguire questo piano d'azione in dieci passaggi accelerato per passare da una configurazione Skype for Business di base a una Microsoft Teams configurazione.
+description: Seguire questo piano d'azione in dieci passaggi accelerato per passare da una configurazione Skype for Business di base a Microsoft Teams configurazione.
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
@@ -23,20 +23,20 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f8ccf491ed1e9ac8ee4b8bb9fbacfa2067c0e0f3
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 465b718e00de6416492dd2a8e5e88bfa3ced95b1
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58636400"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60774246"
 ---
 # <a name="upgrade-basic"></a>Aggiornamento di base
 
 <a name="about-upgrade-basic"></a>
 
-Progettato per le organizzazioni di piccole dimensioni o per quelle che usano solo Skype for Business Online per la messaggistica istantanea (chat) e le riunioni, l'elenco di controllo Aggiornamento di base è un piano d'azione accelerato che include le attività di base, le attività consigliate e le risorse associate per implementare correttamente il passaggio da Skype for Business a Teams.
+Progettato per le organizzazioni di piccole dimensioni o per quelle che usano solo Skype for Business Online per messaggistica istantanea (chat) e riunioni, l'elenco di controllo Aggiornamento di base è un piano d'azione accelerato che include le attività di base, le attività consigliate e le risorse associate per l'implementazione di un passaggio riuscito da Skype for Business a Teams.
 
-Questi dieci semplici passaggi forniscono tutto il necessario per un aggiornamento efficace. Sono progettati per essere completati in circa 30-45 giorni, ma è consigliabile modificare le date di completamento delle attività in base alla programmazione dell'aggiornamento dell'organizzazione.
+Questi dieci semplici passaggi offrono tutto il necessario per un aggiornamento efficace. Sono progettati per essere completati in circa 30-45 giorni, ma è consigliabile modificare le date di completamento delle attività in base alla programmazione dell'aggiornamento dell'organizzazione.
 
 > [!IMPORTANT]
 > Skype for Business Online verrà ritirato il 31 luglio 2021. Dopo tale periodo, il Skype for Business online non sarà più accessibile o supportato. Per ottimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, è importante iniziare il viaggio verso Microsoft Teams oggi.
@@ -60,7 +60,7 @@ Non si ha familiarità con Teams? [Scopri](https://products.office.com/microsoft
 
 *(Da quattro a sei settimane prima dell'aggiornamento)*
 
-I dirigenti senior sono responsabili del successo aziendale; assicurarsi di tenerli a conoscere le modifiche tecnologiche. Poiché è possibile che non tutti gli utenti hanno ricevuto o letto la notifica dell'idoneità all'aggiornamento, è necessario informare gli stakeholder (ad esempio, CEO, professionisti IT, marketing e clienti potenziali dell'helpdesk) prima di iniziare a pianificare l'aggiornamento.
+I dirigenti senior sono responsabili del successo aziendale; assicurarsi di tenerli a conoscere le modifiche tecnologiche. Poiché è possibile che non tutti gli utenti hanno ricevuto o letto la notifica dell'idoneità all'aggiornamento, è necessario informare gli stakeholder (ad esempio CEO, professionisti IT, marketing e clienti potenziali dell'helpdesk) prima di iniziare a pianificare l'aggiornamento.
 
 **Risorse:**
 
@@ -148,7 +148,7 @@ Mantenere il momento dell'aggiornamento abilitando la notifica di aggiornamento 
 
 *(Circa cinque giorni prima dell'aggiornamento)*
 
-Gli utenti sono occupati con le loro responsabilità quotidiane. Ricordando loro l'aggiornamento in sospeso, è possibile assicurarsi che si ricordino di eseguire i passaggi necessari per prepararsi per Teams. Questo è il momento ideale per ricordare agli utenti la formazione disponibile e come iniziare a usare Teams.
+Gli utenti sono occupati con le loro responsabilità quotidiane. Ricordando loro l'aggiornamento in sospeso, è possibile assicurarsi che si ricordino di eseguire i passaggi necessari per prepararsi per Teams. Questo è il momento perfetto per ricordare agli utenti la formazione disponibile e come iniziare a usare Teams.
 
 **Risorse:**
 
@@ -164,7 +164,7 @@ Gli utenti sono occupati con le loro responsabilità quotidiane. Ricordando loro
 
 *(Giorno dell'aggiornamento)*
 
-Oggi è il giorno in cui l'organizzazione esegue ufficialmente l'aggiornamento a Teams come soluzione di comunicazione e collaborazione. Nell'Microsoft Teams di amministrazione attiva l'opzione di aggiornamento impostando la modalità di coesistenza **su Teams solo**. Nell'interfaccia di amministrazione passare a **Impostazioni**  >  **Teams aggiornamento**.) Gli utenti riceveranno una notifica nel client Skype for Business che sono stati aggiornati a Teams.
+Oggi è il giorno in cui l'organizzazione esegue ufficialmente l'aggiornamento a Teams come soluzione di comunicazione e collaborazione. Nell'Microsoft Teams di amministrazione attivare l'opzione di aggiornamento impostando la modalità di coesistenza su **Solo Teams .** Nell'interfaccia di amministrazione passare a **Livello di organizzazione**  >  Impostazioni **Teams aggiornamento**.) Gli utenti riceveranno una notifica nel client Skype for Business che sono stati aggiornati a Teams.
 
 Dopo l'aggiornamento, è consigliabile inviare un messaggio di posta elettronica di benvenuto a Teams.
 

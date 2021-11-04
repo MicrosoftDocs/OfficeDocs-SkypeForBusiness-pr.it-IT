@@ -1,7 +1,7 @@
 ---
 title: Distribuire Skype for Business Server 2019
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 7/9/2018
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ''
 description: 'Riepilogo: esplorare questi collegamenti per informazioni su come installare e configurare Skype for Business Server 2019.'
-ms.openlocfilehash: 44f1b932451d1e9da3bdf52066ad91d553f86b2b
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: defa81886e5ae2cda536776b35722d3c08e9700e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60012140"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60761620"
 ---
 # <a name="deploy-skype-for-business-server-2019"></a>Distribuire Skype for Business Server 2019
  
@@ -39,7 +39,7 @@ Gli articoli seguenti su come installare e configurare Skype for Business Server
 |&nbsp;|Contenuto|Descrizione|
 |:-----|:-----|:-----|
 |![Icona per la documentazione.](/office/media/icons/paragraph-writing-blue.svg)|[Requisiti di sistema per Skype for Business Server 2019](../plan/system-requirements.md)   |Informazioni sui requisiti del server e dell'ambiente per Skype for Business Server.   |
-|![Icona per la documentazione.](/office/media/icons/paragraph-writing-blue.svg)|[Nozioni di base sulla topologia per Skype for Business Server](../../SfbServer/plan-your-deployment/topology-basics/topology-basics.md)  |Informazioni sulle opzioni della topologia e sugli scenari di collocazione dei server per Skype for Business Server.   |
+|![Icona per la documentazione.](/office/media/icons/paragraph-writing-blue.svg)|[Nozioni di base sulla topologia per Skype for Business Server](../../SfbServer/plan-your-deployment/topology-basics/topology-basics.md)  |Informazioni sulle opzioni di topologia e sugli scenari di collocazione dei server per Skype for Business Server.   |
 |![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)|[Installare Skype for Business Server](../../SfbServer/deploy/install/install.md) |Informazioni su come installare Skype for Business Server in diverse topologie, sia in ambienti fisici che virtuali.   |
 |![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)| [Migrazione a Skype for Business Server 2019](../migration/migration-to-skype-for-business-server-2019.md)  |Informazioni su come eseguire la migrazione da versioni precedenti di Skype for Business o Lync Server.   |
 |![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)|[Configurare l'esperienza client con Skype for Business](../../SfbServer/deploy/deploy-clients/configure-the-client-experience.md)  |Scopri come configurare l'esperienza client.   |

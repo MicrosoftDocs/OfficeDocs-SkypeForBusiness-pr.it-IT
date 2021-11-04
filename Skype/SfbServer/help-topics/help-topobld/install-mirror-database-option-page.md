@@ -1,7 +1,7 @@
 ---
 title: Pagina delle opzioni Installa database mirror
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,18 +15,18 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 7500896a-14ea-4b11-aaee-be3d81314536
 description: 'È possibile configurare la sezione Impostazioni database mirror definendo le impostazioni seguenti:'
-ms.openlocfilehash: 894ff38814ef2c50f3492216531db45246a67548
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: cfd32d4316bae824c0510f6ff921426dd161597c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599107"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60775036"
 ---
 # <a name="install-mirror-database-option-page"></a>Pagina delle opzioni Installa database mirror
  
 È possibile configurare la sezione **Impostazioni database mirror** definendo le impostazioni seguenti:
   
-- Digitare il **percorso della condivisione file** per definire il percorso per i file di backup SQL Server per il database di cui eseguire il mirroring.
+- Digitare il **percorso della condivisione file** per definire il percorso per il backup SQL Server file per il database di cui viene eseguito il mirroring.
     
     > [!NOTE]
     > L'SQL Server principale (istanza denominata o istanza predefinita) deve disporre delle autorizzazioni di scrittura per la condivisione file definita qui. L'SQL Server mirror (istanza denominata o istanza predefinita) deve disporre delle autorizzazioni di lettura per la stessa condivisione file. 

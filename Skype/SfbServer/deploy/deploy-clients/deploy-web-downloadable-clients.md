@@ -1,6 +1,6 @@
 ---
 title: Distribuire client scaricabili Web in Skype for Business Server
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: b6301e98-051c-4e4b-8e10-ec922a8f508a
 description: "Riepilogo: distribuire l'app Skype for Business Web App e Skype riunioni usata con Skype for Business."
-ms.openlocfilehash: 65b786cbdd999971c5825406087cd8d7f35a155e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c262ab4e9180ae9e02bc899793437a86ffe12ead
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58601951"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60761594"
 ---
 # <a name="deploy-web-downloadable-clients-in-skype-for-business-server"></a>Distribuire client scaricabili Web in Skype for Business Server
 
-**Riepilogo:** Distribuire l Skype for Business App Web 2015 e l'app riunioni Skype usata con Skype for Business Server.
+**Riepilogo:** Distribuire l Skype for Business App Web 2015 e l Skype app Riunioni usate con Skype for Business Server.
 
-Skype for Business Web App è un client Web di Internet Information Services (IIS) installato nel server che esegue Skype for Business Server e per impostazione predefinita viene distribuito su richiesta agli utenti che non dispongono già del client Skype for Business. Questi utenti di riunioni si connettono più spesso che non si connettono dall'esterno della rete. Ogni volta che un utente fa clic sull'URL di una riunione ma non ha installato il client Skype for Business, all'utente viene presentata l'opzione per partecipare alla riunione utilizzando la versione più recente di Skype for Business Web App, Skype Meetings App o Skype for Business per Mac.
+Skype for Business Web App è un client Web di Internet Information Services (IIS) installato nel server che esegue Skype for Business Server e per impostazione predefinita viene distribuito su richiesta agli utenti che non dispongono già del client Skype for Business. Questi utenti di riunioni si connettono più spesso che non si connettono dall'esterno della rete. Ogni volta che un utente fa clic sull'URL di una riunione ma non ha installato il client Skype for Business, all'utente viene presentata la possibilità di partecipare alla riunione utilizzando la versione più recente di Skype for Business Web App, Skype Meetings App o Skype for Business per Mac.
 
 Le funzionalità vocali, video e di condivisione in Skype for Business Web App richiedono un controllo microsoft ActiveX utilizzato come plug-in dal browser dell'utente. È possibile installare il controllo ActiveX in anticipo o consentire agli utenti di installarlo quando richiesto, cosa che avviene la prima volta che usano Skype for Business Web App o la prima volta che accedono a una funzionalità che richiede il controllo ActiveX.
 
@@ -33,22 +33,22 @@ Le funzionalità vocali, video e di condivisione in Skype for Business Web App r
 ## <a name="enable-multi-factor-authentication-for-skype-for-business-web-app"></a>Abilitare l'autenticazione a più fattori per Skype for Business Web App
 <a name="MFA"> </a>
 
-Skype for Business Web App, Skype'app Riunioni e Skype for Business per Mac supportano l'autenticazione a più fattori. Oltre al nome utente e alla password, è possibile richiedere metodi di autenticazione aggiuntivi, ad esempio smart card o PIN, per autenticare gli utenti che si uniscono da reti esterne quando aseguono Skype for Business riunioni. È possibile abilitare l'autenticazione a più fattori distribuendo il server federativo Active Directory Federation Service (AD FS) e abilitando l'autenticazione passiva in Skype for Business Server. Dopo la configurazione di ADFS, agli utenti esterni che tentano di partecipare alle riunioni di Skype for Business viene presentata una pagina Web di autenticazione Skype for Business più fattori di AD FS che contiene il nome utente e la password di verifica insieme agli eventuali metodi di autenticazione aggiuntivi configurati.
+Skype for Business Web App, Skype'app Riunioni e Skype for Business per Mac supportano l'autenticazione a più fattori. Oltre al nome utente e alla password, è possibile richiedere metodi di autenticazione aggiuntivi, ad esempio smart card o PIN, per autenticare gli utenti che si uniscono da reti esterne quando aseguono Skype for Business riunioni. È possibile abilitare l'autenticazione a più fattori distribuendo il server federativo Active Directory Federation Service (AD FS) e abilitando l'autenticazione passiva in Skype for Business Server. Dopo la configurazione di ADFS, agli utenti esterni che tentano di partecipare alle riunioni di Skype for Business viene presentata una pagina Web di autenticazione a più fattori di AD FS che contiene la richiesta di conferma del nome utente e della password insieme a eventuali metodi di autenticazione aggiuntivi configurati.
 
 > [!IMPORTANT]
 > Se si intende configurare ADFS per l'autenticazione a più fattori, è importante considerare quanto segue:
 
 - L'autenticazione ADFS a più fattori funziona se il partecipante e l'organizzatore della riunione sono entrambi nella stessa organizzazione o sono entrambi di un'organizzazione federata AD FS. L'autenticazione ADFS a più fattori non funziona per gli utenti federati di Lync perché l'infrastruttura Web di Lync Server attualmente non la supporta.
 
-- Se si utilizzano servizi di bilanciamento del carico hardware, abilitare la persistenza dei cookie nei servizi di bilanciamento del carico in modo che tutte le richieste dei client dell'app Skype for Business Web App o riunioni siano gestite dallo stesso Front End Server.
+- Se si utilizzano servizi di bilanciamento del carico hardware, abilitare la persistenza dei cookie nei servizi di bilanciamento del carico in modo che tutte le richieste provenienti dai client dell'app Skype for Business Web App o Riunioni siano gestite dallo stesso Front End Server.
 
-- Quando si stabilisce un trust relying party tra i server Skype for Business Server e AD FS, assegnare una durata token sufficientemente lunga da estendersi per la durata massima delle riunioni Skype for Business riunioni. 240 minuti in genere sono una durata sufficiente per i token.
+- Quando si stabilisce un trust relying party tra i server Skype for Business Server e AD FS, assegnare una durata token sufficientemente lunga da estendersi sulla durata massima delle riunioni Skype for Business riunioni. 240 minuti in genere sono una durata sufficiente per i token.
 
 - Questa configurazione non si applica ai client mobili Lync.
 
 ### <a name="configure-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
 
-1. Installare un ruolo del server federativo ADFS. Per informazioni dettagliate, vedere la Guida alla distribuzione [di Active Directory Federation Services 2.0](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd807092(v=ws.10))
+1. Installare un ruolo del server federativo ADFS. Per informazioni dettagliate, vedere la [Guida alla distribuzione di Active Directory Federation Services 2.0](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd807092(v=ws.10))
 
 2. Creare certificati per ADFS. Per ulteriori informazioni, vedere [la sezione "Certificati server](/previous-versions/azure/azure-services/jj205462(v=azure.100)) federativi" dell'argomento Pianificare e distribuire ADFS per l'utilizzo con Single Sign-on.
 
@@ -116,14 +116,14 @@ Se l'installazione del plug-in non riesce in un computer che esegue Windows Serv
 
 5. Tornare a partecipare alla riunione.
 
-## <a name="enable-skype-meetings-app-to-replace-skype-for-business-web-app-optional-skype-for-business-server-2015-only"></a>Abilita Skype'app Riunioni per sostituire Skype for Business Web App (facoltativo, solo Skype for Business Server 2015)
+## <a name="enable-skype-meetings-app-to-replace-skype-for-business-web-app-optional-skype-for-business-server-2015-only"></a>Abilita Skype'app Riunioni per sostituire Skype for Business Web App (facoltativo, Skype for Business Server 2015)
 <a name="SMA_Enable"> </a>
 
-Questa procedura è facoltativa e si applica Skype for Business Server 2015 CU5 e versioni successive. In caso contrario, gli utenti esterni continueranno a partecipare alle riunioni Skype for Business Web App.
+Questa procedura è facoltativa e si applica Skype for Business Server 2015 CU5 e versioni successive. Se non viene utilizzato, gli utenti esterni continueranno a partecipare alle riunioni Skype for Business Web App.
 
 ### <a name="enable-simplified-meeting-join-and-skype-meetings-app"></a>Abilitare la partecipazione semplificata alle riunioni Skype'app Riunioni
 
-1. Quando abiliti l'accesso a rete per la distribuzione di contenuti (rete CDN), gli utenti potranno connettersi a rete CDN online e ottenere l'app riunioni Skype (su Windows) e Skype for Business per Mac (su Mac) e useranno l'esperienza semplificata di partecipazione alle riunioni.
+1. Quando abiliti l'accesso al rete per la distribuzione di contenuti (rete CDN), gli utenti potranno connettersi a rete CDN online e ottenere l'app riunioni Skype (su Windows) e Skype for Business per Mac (su Mac) e verrà utilizzata l'esperienza semplificata di partecipazione alle riunioni.
 
    ```powershell
    Set-CsWebServiceConfiguration -MeetingUxUseCdn $True
@@ -144,7 +144,7 @@ Questa procedura è facoltativa e si applica Skype for Business Server 2015 CU5 
    ```
 
 > [!NOTE]
-> Con MeetingUxUseCdn nell'Skype for Business Server 2015 cumulativo 5, il valore predefinito è impostato su False. Ciò causa un problema per cui il client Skype for Business per Mac non è in grado di partecipare alle riunioni dei partner non federati come guest, anche se l'amministratore di Skype for Business ha impostato MeetingUxUseCdn su True. Per il funzionamento, Skype for Business Server 2015 deve disporre dell'aggiornamento cumulativo 7, 6.0.9319.534 o versione successiva. Vedere [Enable Skype Meetings App to replace Skype for Business Web App in Skype for Business Server 2015.](https://support.microsoft.com/kb/4132312)
+> Con MeetingUxUseCdn nell'Skype for Business Server 2015 cumulativo 5, il valore predefinito è impostato su False. Ciò causa un problema per cui Skype for Business per Mac client non è in grado di partecipare alle riunioni dei partner non federati come guest, anche se l'amministratore di Skype for Business ha impostato MeetingUxUseCdn su True. Per il funzionamento, Skype for Business Server 2015 deve disporre dell'aggiornamento cumulativo 7, 6.0.9319.534 o versione successiva. Vedere [Enable Skype Meetings App to replace Skype for Business Web App in Skype for Business Server 2015.](https://support.microsoft.com/kb/4132312)
 
 
 ## <a name="see-also"></a>Vedere anche

@@ -1,7 +1,7 @@
 ---
 title: Avviare servizi (Invoke)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/26/2015
@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 7992440b-8545-4af9-b3ac-ea200b9de084
-description: Nel riquadro di riepilogo del riquadro Esecuzione comandi in corso viene visualizzato lo stato delle attività emesse per avviare i servizi per il server dei ruoli di Skype for Business Server 2015 che si sta distribuendo. Il riepilogo nel riquadro attività task non rappresenta un'indicazione in tempo reale dell'avvio dei servizi. Alcuni dei servizi Skype for Business Server potrebbero richiedere molto tempo per iniziare il processo di avvio iniziale. Le attività inviano il comando di avvio, ma non determinano se il servizio viene poi avviato. Se si desidera monitorare l'avvio e lo stato del servizio, è consigliabile utilizzare Microsoft Management Console (MMC) nei servizi di Windows.
-ms.openlocfilehash: b6c6dbf4e4c397b129d20438f3402fc26da33bdb
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Nel riquadro di riepilogo del riquadro Esecuzione comandi in corso viene visualizzato lo stato delle attività emesse per avviare i servizi per il server dei ruoli di Skype for Business Server 2015 che si sta distribuendo. Il riepilogo nel riquadro attività task non rappresenta un'indicazione in tempo reale dell'avvio dei servizi. Alcuni dei servizi Skype for Business Server potrebbero richiedere un tempo prolungato per avviare il processo di avvio iniziale. Le attività inviano il comando di avvio, ma non determinano se il servizio viene poi avviato. Se si desidera monitorare l'avvio e lo stato del servizio, è consigliabile utilizzare Microsoft Management Console (MMC) nei servizi di Windows.
+ms.openlocfilehash: 109a3e333919162ff244361a101b17616c3bc3d0
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58615962"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60769074"
 ---
 # <a name="start-services-invoke"></a>Avviare servizi (Invoke)
  
-Nel riquadro di riepilogo **del** riquadro Esecuzione comandi in corso viene visualizzato lo stato delle attività emesse per avviare i servizi per il server dei ruoli di Skype for Business Server 2015 che si sta distribuendo. Il riepilogo nel riquadro attività task non rappresenta un'indicazione in tempo reale dell'avvio dei servizi. Alcuni dei servizi Skype for Business Server potrebbero richiedere molto tempo per iniziare il processo di avvio iniziale. Le attività inviano il comando di avvio, ma non determinano se il servizio viene poi avviato. Se si desidera monitorare l'avvio e lo stato del servizio, è consigliabile utilizzare Microsoft Management Console (MMC) nei servizi di Windows.
+Nel riquadro di riepilogo **del** riquadro Esecuzione comandi in corso viene visualizzato lo stato delle attività emesse per avviare i servizi per il server dei ruoli di Skype for Business Server 2015 che si sta distribuendo. Il riepilogo nel riquadro attività task non rappresenta un'indicazione in tempo reale dell'avvio dei servizi. Alcuni dei servizi Skype for Business Server potrebbero richiedere un tempo prolungato per avviare il processo di avvio iniziale. Le attività inviano il comando di avvio, ma non determinano se il servizio viene poi avviato. Se si desidera monitorare l'avvio e lo stato del servizio, è consigliabile utilizzare Microsoft Management Console (MMC) nei servizi di Windows.
   
 Sotto il riquadro attività è disponibile un elenco a discesa in cui è incluso il file di registro **Avvio servizi**. Per visualizzare il file di registro, fare clic su **Visualizza registro**. Fare clic su **Fine** per completare l'attività.
   
