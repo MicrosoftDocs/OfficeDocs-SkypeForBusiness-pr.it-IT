@@ -1,7 +1,7 @@
 ---
 title: Configurare l'integrazione con Office Web Apps Server in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,25 +12,25 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: b7e9149e-bf16-4120-afe0-3ee09c88f5eb
 description: "Riepilogo: leggere questo argomento per informazioni su come configurare l'integrazione tra Office Web Apps Server e Skype for Business Server per abilitare le presentazioni PowerPoint per le conferenze Web."
-ms.openlocfilehash: 753ab05e533d77311c9910cb26fe7980b83b1a36
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 27f5010b0e95ce7a84847ca52747f581697bde9c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596000"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60740122"
 ---
 # <a name="configure-integration-with-office-web-apps-server-in-skype-for-business-server"></a>Configurare l'integrazione con Office Web Apps Server in Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come configurare l'integrazione tra Office Web Apps Server e Skype for Business Server per abilitare PowerPoint presentazioni per conferenze Web.
   
-Skype for Business Server utilizza Office Web Apps Server per gestire le PowerPoint per le conferenze Web. Per informazioni sui vantaggi di questo approccio, vedere [Plan for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md).
+Skype for Business Server utilizza Office Web Apps Server per gestire le presentazioni PowerPoint per le conferenze Web. Per informazioni sui vantaggi di questo approccio, vedere [Plan for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md).
   
 Prima di poter configurare Skype for Business Server per l'utilizzo di Office Web Apps Server, è necessario verificare che Office Web Apps Server sia già distribuito e configurato. Per informazioni su Office Web Apps Server, vedere l'articolo [Distribuire l'infrastruttura: Office Online Server](/webappsserver/deploy-the-infrastructure-office-web-apps-server). 
   
 Dopo aver installato correttamente Office Web Apps Server e aver configurato correttamente la Web farm, è necessario configurare Skype for Business Server per comunicare con il nuovo server aggiungendo l'URL di individuazione del server Office Web Apps alla topologia di Skype for Business Server. 
   
 > [!NOTE]
-> L'ultima iterazione Office Web Apps Server è denominata Office Online Server, supportata da Skype for Business Server. Per ulteriori dettagli, fare riferimento alla documentazione [Office Online Server .](/officeonlineserver/office-online-server) 
+> L'iterazione più recente Office Web Apps Server è denominata Office Online Server, supportata da Skype for Business Server. Per ulteriori dettagli, fare riferimento alla documentazione [Office Online Server.](/officeonlineserver/office-online-server) 
   
 ## <a name="configure-skype-for-business-server-to-communicate-with-office-web-apps-server"></a>Configurare Skype for Business Server per comunicare con Office Web Apps Server
 
@@ -42,13 +42,13 @@ Per aggiungere il server Office Web Apps alla topologia, eseguire le operazioni 
     
 3. Nella casella **Salva topologia con nome** digitare un nome per il documento della topologia (ad esempio **TopologiaPreServerWebApps**) nella casella **Nome file** e quindi fare clic su **Salva**. Questa topologia potrà essere recuperata e ripubblicata in seguito se si verificano problemi con la nuova topologia.
     
-4. In Generatore di topologie espandere **Skype for Business Server**, espandere il nome del **sito,** espandere edizione Enterprise Pool Front End , fare clic con il pulsante destro del mouse sul nome di uno dei pool e quindi scegliere **Modifica proprietà**.
+4. In Generatore di topologie espandere **Skype for Business Server**, espandere il nome del sito, espandere **edizione Enterprise Pool Front End**, fare clic con il pulsante destro del mouse sul nome di uno dei pool e quindi scegliere Modifica **proprietà**.
     
 5. Nella scheda **Generale** della finestra di dialogo **Modifica proprietà** individuare il titolo **Associa il pool a un server Office Web Apps** e quindi fare clic su **Nuovo** oppure selezionare un server Office Web Apps esistente nell'elenco a discesa.
     
 6. Nella finestra di dialogo **Definire un nuovo server Office Web Apps** digitare il nome di dominio completo (FQDN) del computer del server Office Web Apps nella casella **FQDN server Office Web Apps**. L'URL di individuazione del server Office Web Apps dovrebbe comparire così automaticamente nella casella **URL di individuazione server Office Web Apps**.
     
-   - Se il server Office Web Apps è installato in locale e nella stessa area di rete di Skype for Business Server, l'opzione Office Web Apps Server viene distribuita in una rete **esterna( perimetro/Internet)** non deve essere selezionata.
+   - Se il server web apps Office è installato in locale e nella stessa area di rete di Skype for Business Server, l'opzione Office Web Apps Server viene distribuita in una rete **esterna( perimetro/Internet)** non deve essere selezionata.
     
    - Se il server Office Web Apps è distribuito all'esterno del firewall interno, allora selezionare l'opzione **Il server Office Web Apps è distribuito in una rete esterna (perimetro/Internet)**.
     
@@ -68,7 +68,7 @@ Dopo aver aggiunto l'URL di individuazione alla topologia, è necessario pubblic
     
 ## <a name="configure-access-for-external-users"></a>Configurare l'accesso per gli utenti esterni
 
-Se si desidera che gli utenti esterni, ovvero gli utenti che accedono dall'esterno del firewall dell'organizzazione, abbiano accesso alle presentazioni di Office Web Apps Server PowerPoint, sarà necessario utilizzare Office Web Apps Server e un server proxy inverso. Sarà inoltre necessario creare e configurare una regola di pubblicazione del sito Web, in modo da garantire che gli utenti siano in grado di connettersi al server. 
+Se si desidera che gli utenti esterni, ovvero gli utenti che accedono dall'esterno del firewall dell'organizzazione, abbiano accesso alle presentazioni di Office Web Apps Server PowerPoint, sarà necessario utilizzare un server web apps Office e un server proxy inverso. Sarà inoltre necessario creare e configurare una regola di pubblicazione del sito Web, in modo da garantire che gli utenti siano in grado di connettersi al server. 
   
 ## <a name="validate-the-configuration"></a>Convalidare la configurazione
 

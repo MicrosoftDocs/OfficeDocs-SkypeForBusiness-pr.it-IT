@@ -1,7 +1,7 @@
 ---
 title: Selezionare agenti
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/24/2015
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: b5cf912b-8273-4c2c-a1e5-f25530b264d0
 description: Gli agenti sono utenti designati per rispondere alle chiamate di Response Group. Ai Response Group deve essere assegnato un gruppo di agenti che identifichi quali agenti possono ricevere le chiamate da tale gruppo. Un modo per creare un gruppo di agenti consiste nel definire un gruppo personalizzato selezionando gli utenti idonei. Gli utenti idonei sono abilitati Skype for Business Server e VoIP aziendale.
-ms.openlocfilehash: 8d05669cca0b9f00f7d50a435f4e3a81fb0720be
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2b73848c05be89f08940139ee2f988493b1d1794
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58625358"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737982"
 ---
 # <a name="select-agents"></a>Selezionare agenti
 
@@ -32,7 +32,7 @@ Gli agenti sono utenti designati per rispondere alle chiamate di Response Group.
 
 Nell'elenco seguente sono descritti i controlli presenti nella finestra di dialogo **Seleziona agenti**.
 
-- **Trova** Cerca l'indirizzo SIP o il nome visualizzato di un utente. Immettere il nome o l'indirizzo per intero o in parte. Lasciare vuota la casella di ricerca per visualizzare tutti gli utenti abilitati Skype for Business Server e VoIP aziendale.
+- **Trova** Cerca l'indirizzo SIP o il nome visualizzato di un utente. Immettere il nome o l'indirizzo per intero o in parte. Lasciare vuota la casella di ricerca per visualizzare tutti gli utenti abilitati per Skype for Business Server e VoIP aziendale.
 
 - **Numero massimo di utenti da visualizzare** Modifica il numero di risultati restituiti visualizzati. Usare questo contatore per limitare la ricerca se si prevede di ottenere molti risultati.
 

@@ -1,7 +1,7 @@
 ---
 title: Eliminare le impostazioni di configurazione delle riunioni in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 8ebafb86-13b9-468e-beda-f85f6786da85
 description: 'Riepilogo: informazioni su come eliminare le impostazioni di configurazione delle riunioni in Skype for Business Server.'
-ms.openlocfilehash: 8aa83668be612e2c35d2f0c541c0494ca5cbd24b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 44b1808c5e5d27bb7dd8aef7ebcef9e26923bb6c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595548"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737832"
 ---
 # <a name="delete-meeting-configuration-settings-in-skype-for-business-server"></a>Eliminare le impostazioni di configurazione delle riunioni in Skype for Business Server
  
@@ -27,7 +27,7 @@ ms.locfileid: "58595548"
   
 È possibile eliminare una configurazione di sito o utente, ma non è possibile eliminare la configurazione globale. Se si tenta di eliminare la configurazione globale, viene reimpostata automaticamente ai valori predefiniti.
   
-## <a name="delete-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Eliminare le impostazioni di configurazione delle riunioni Skype for Business Server Pannello di controllo
+## <a name="delete-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Eliminare le impostazioni di configurazione delle riunioni tramite Skype for Business Server Pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     

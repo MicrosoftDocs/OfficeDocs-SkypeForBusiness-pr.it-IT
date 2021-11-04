@@ -1,7 +1,7 @@
 ---
-title: Configurazione dei criteri per lo strumento Skype for Business Server 2015 Stress and Performance
+title: Configurazione dei criteri per lo Skype for Business Server 2015 Stress and Performance Tool
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 ms.date: 11/11/2015
 manager: serdars
@@ -14,14 +14,14 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 7e1435e2-d073-4265-8067-ebcb5bf28835
 description: Configurazione dei criteri per Skype for Business Server 2015 Stress and Performance Tool.
-ms.openlocfilehash: 9523dff4a2db09b229ef1500e6634674d85c1472
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: ba08b12b94847ac130a5f95770ad9cf4c71e0e8c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611955"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60771992"
 ---
-# <a name="configuring-policies-for-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Configurazione dei criteri per lo strumento Skype for Business Server 2015 Stress and Performance
+# <a name="configuring-policies-for-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Configurazione dei criteri per lo Skype for Business Server 2015 Stress and Performance Tool
  
 Configurazione dei criteri per Skype for Business Server 2015 Stress and Performance Tool.
   
@@ -95,7 +95,7 @@ Per ulteriori dettagli, vedere Conferencing and Dial-in Conferencing cmdlets.
 ## <a name="server-call-park-service"></a>Servizio Parcheggio di chiamata del server
 <a name="ServerCallParkServ"> </a>
 
-Questa opzione è effettivamente disabilitata per impostazione predefinita. Se è necessario testare CallParkConfiguration.ps1 script di esempio, è possibile esaminare lo script di esempio. Inoltre, consultare i cmdlet dell'applicazione parcheggio di chiamata in base alle esigenze.
+Questa opzione è effettivamente disabilitata per impostazione predefinita. È possibile esaminare lo script CallParkConfiguration.ps1 esempio se è necessario testare questo script. Inoltre, consultare i cmdlet dell'applicazione parcheggio di chiamata in base alle esigenze.
   
 ## <a name="emergency-calls"></a>Chiamate di emergenza
 <a name="EmergencyCalls"> </a>

@@ -1,7 +1,7 @@
 ---
 title: Pianificare la topologia di conferenza per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 7392dfa7-791a-4723-88ff-0ef8a9ef11c8
 description: 'Riepilogo: leggere questo argomento per informazioni sulla pianificazione della topologia di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 09d793a75ab72ef96d3ded85156c99a7590e087d
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: a4d458bf7bea512e773a09551e2fa0c72a982592
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58732635"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737712"
 ---
 # <a name="plan-your-conferencing-topology-for-skype-for-business-server"></a>Pianificare la topologia di conferenza per Skype for Business Server
  
@@ -33,7 +33,7 @@ In questo argomento vengono descritte le nozioni di base sulla topologia per le 
     
 - Requisiti per riunioni di grandi dimensioni
     
-Per ulteriori informazioni sui requisiti hardware e software, vedere Requisiti hardware e software per le conferenze [in Skype for Business Server](hardware-and-software-requirements.md).
+Per ulteriori informazioni sui requisiti hardware e software, vedere Requisiti hardware e [software per le](hardware-and-software-requirements.md)conferenze in Skype for Business Server .
   
 ## <a name="supported-topologies"></a>Topologie supportate
 
@@ -76,7 +76,7 @@ Le conferenze Web richiedono quanto segue:
 - Integrazione con Office web apps server/Office Online Server, necessaria per condividere PowerPoint file durante una conferenza.
     
 > [!NOTE]
-> L'iterazione più recente Office Web Apps Server è denominata Office Online Server, supportata da Skype for Business Server. Per ulteriori dettagli, fare riferimento alla [documentazione Office Online Server .](/officeonlineserver/office-online-server) 
+> L'iterazione più recente Office Web Apps Server è denominata Office Online Server, supportata da Skype for Business Server. Per ulteriori dettagli, fare riferimento alla documentazione [Office Online Server.](/officeonlineserver/office-online-server) 
   
 Skype for Business Server offre i modi seguenti per configurare Office web apps server/Office Online Server. A seconda delle esigenze, è possibile:
   
@@ -84,18 +84,18 @@ Skype for Business Server offre i modi seguenti per configurare Office web apps 
     
     I client Skype for Business esterni possono connettersi a Skype for Business Server e Office Web Apps Server/Office Online Server utilizzando un server proxy inverso, ovvero un server che accetta le richieste da Internet e le inoltra alla rete interna. I client interni non devono utilizzare il server proxy inverso perché possono connettersi direttamente Office server web apps/Office Online Server. Questa topologia è ideale se si desidera utilizzare una farm Office Web Apps Server/Office Online Server dedicata utilizzata solo da Skype for Business Server.
     
-- **Usa un server web Office/Office Online Server distribuito esternamente.** In questa topologia, Skype for Business Server viene distribuito in locale e utilizza un server/Office Online Server web apps di Office distribuito all'esterno dell'area Skype for Business Server rete. Ciò può verificarsi quando Office Web Apps Server/Office Online Server viene condiviso tra più applicazioni dell'azienda e viene distribuito in una rete che richiede a Skype for Business Server di utilizzare l'interfaccia esterna di Office Web Apps Server/Office Online Server e viceversa.
+- **Usa un server web Office/Office Online Server distribuito esternamente.** In questa topologia, Skype for Business Server viene distribuito in locale e usa un server/Office Online Server web apps di Office distribuito all'esterno dell'area di rete Skype for Business Server. Ciò può verificarsi quando Office Web Apps Server/Office Online Server viene condiviso tra più applicazioni dell'azienda e viene distribuito in una rete che richiede a Skype for Business Server di utilizzare l'interfaccia esterna di Office Web Apps Server/Office Online Server e viceversa.
     
-    Non è necessario installare un server proxy inverso. al contrario, tutte le richieste dal Office web apps/Office Online Server a Skype for Business Server vengono instradati attraverso il server perimetrale. Sia i client interni che i Skype for Business esterni si connettono Office server Web Apps/Office Online Server utilizzando l'URL esterno.
+    Non è necessario installare un server proxy inverso. al contrario, tutte le richieste dal server Office Web Apps/Office Online Server a Skype for Business Server vengono instradati attraverso il server perimetrale. Sia i client interni che i Skype for Business esterni si connettono Office web apps server/Office Online Server utilizzando l'URL esterno.
     
-    Se il Office Online Server/server web apps Office viene distribuito all'esterno del firewall interno, selezionare l'opzione **Office Il server Web Apps è** distribuito in una rete esterna, ovvero perimetrale/Internet, in Generatore di topologie.
+    Se il server/Office Online Server di Office Web Apps viene distribuito all'esterno del firewall interno, selezionare l'opzione **Office Il server Web Apps viene** distribuito in una rete esterna, ovvero perimetrale/Internet, in Generatore di topologie.
     
 Per ulteriori informazioni, vedere [Configure integration with Office Web Apps Server in Skype for Business Server](../../deploy/deploy-conferencing/office-web-app-server.md). 
   
 Indipendentemente dalla topologia selezionata, è fondamentale aprire le porte del firewall corrette. È necessario assicurarsi che i nomi DNS, gli indirizzi IP e le porte non siano bloccati dai firewall nel server web apps di Office/Office Online Server, nel servizio di bilanciamento del carico o Skype for Business Server.
   
 > [!NOTE]
-> Un'altra opzione per fornire l'accesso esterno Office web apps server/Office Online Server è distribuire il server nella rete perimetrale. Se si sceglie di eseguire questa operazione, tenere presente che per l'installazione di Office Web Apps Server/Office Online Server è necessario che il computer server sia membro del dominio di Active Directory. A meno che i criteri di rete non consentano ai computer della rete perimetrale di essere membri di dominio di Active Directory, è consigliabile non installare Office Web Apps Server/Office Online Server nella rete perimetrale. È invece consigliabile installare Office web apps server/Office Online Server nella rete interna e fornire agli utenti esterni l'accesso tramite il server proxy inverso. 
+> Un'altra opzione per fornire l'accesso esterno Office web apps server/Office Online Server è distribuire il server nella rete perimetrale. Se si sceglie di eseguire questa operazione, tenere presente che l'installazione di Office Web Apps Server/Office Online Server richiede che il computer server sia membro del dominio di Active Directory. A meno che i criteri di rete non consentano ai computer della rete perimetrale di essere membri di dominio di Active Directory, è consigliabile non installare Office Web Apps Server/Office Online Server nella rete perimetrale. È invece consigliabile installare Office web apps server/Office Online Server nella rete interna e fornire agli utenti esterni l'accesso tramite il server proxy inverso. 
   
 ## <a name="topology-requirements-for-large-meetings"></a>Requisiti di topologia per riunioni di grandi dimensioni
 
@@ -105,7 +105,7 @@ Una singola riunione di grandi dimensioni richiede almeno un Front End Server e 
 
 ![Topologia di riunioni di grandi dimensioni.](../../media/06858900-a262-4a47-96d0-51abd6827064.png)
   
-L'utente che ospita riunioni di grandi dimensioni deve disporre dell'account utente nel pool Front End. Non è tuttavia consigliabile ospitare altri account utente in questo pool. Usarlo invece solo per le riunioni di grandi dimensioni. È preferibile creare un account utente speciale in questo pool da usare solo per ospitare riunioni di grandi dimensioni. Poiché l'impostazione di riunione di grandi dimensioni è ottimizzata per le prestazioni, l'utilizzo come utente normale potrebbe avere problemi, ad esempio l'impossibilità di promuovere una sessione P2P a una riunione quando è coinvolto un endpoint PSTN.
+L'utente che ospita le riunioni di grandi dimensioni deve disporre dell'account utente nel pool Front End. Non è tuttavia consigliabile ospitare altri account utente in questo pool. Usarlo invece solo per le riunioni di grandi dimensioni. È preferibile creare un account utente speciale in questo pool da usare solo per ospitare riunioni di grandi dimensioni. Poiché l'impostazione di riunione di grandi dimensioni è ottimizzata per le prestazioni, l'utilizzo come utente normale potrebbe avere problemi, ad esempio l'impossibilità di promuovere una sessione P2P a una riunione quando è coinvolto un endpoint PSTN.
   
 La gestione di un pool con esattamente due server Front End richiede alcune considerazioni speciali. Per ulteriori informazioni, vedere [Topology Basics for Skype for Business Server 2015](../../plan-your-deployment/topology-basics/topology-basics.md) e [Reference topologies for Skype for Business Server 2015](../../plan-your-deployment/topology-basics/reference-topologies.md).
   
@@ -115,8 +115,8 @@ Note aggiuntive sulla topologia:
   
 - È necessaria una condivisione file per l'archiviazione del contenuto delle riunioni e, se il server di archiviazione è distribuito e abilitato, per l'archiviazione dei file di archiviazione. La condivisione di file può essere dedicata al pool oppure corrispondere a quella usata da un altro pool nello stesso sito di distribuzione. Per informazioni dettagliate sulla configurazione della condivisione file, vedere [Create a file share in Skype for Business Server 2015.](../../deploy/install/create-a-file-share.md)
     
-- È Office server/Office Online Server Web Apps per abilitare la funzionalità PowerPoint presentazione in riunioni di grandi dimensioni. Il server/Office Online Server di Office Web Apps può essere dedicato al pool di riunioni di grandi dimensioni oppure può essere lo stesso Office Web Apps Server/Office Online Server utilizzato da altri pool nel sito in cui è distribuito il pool dedicato. Per ulteriori informazioni, vedere [Configure integration with Office Web Apps Server in Skype for Business Server](../../deploy/deploy-conferencing/office-web-app-server.md). 
+- È Office server/Office Online Server Web Apps per abilitare la funzionalità PowerPoint presentazione in riunioni di grandi dimensioni. Il server/Office Online Server di Office Web Apps può essere dedicato al pool di riunioni di grandi dimensioni oppure può essere lo stesso server web apps di Office/Office Online Server utilizzato da altri pool nel sito in cui è distribuito il pool dedicato. Per ulteriori informazioni, vedere [Configure integration with Office Web Apps Server in Skype for Business Server](../../deploy/deploy-conferencing/office-web-app-server.md). 
     
-- Il bilanciamento del carico dei Front End Server richiede il bilanciamento del carico hardware per il traffico HTTP (ad esempio, il download del contenuto delle riunioni). Per il traffico SIP è consigliato il bilanciamento del carico DNS. Per informazioni dettagliate, vedere [Load balancing requirements for Skype for Business](../../plan-your-deployment/network-requirements/load-balancing.md). 
+- Il bilanciamento del carico dei Front End Server richiede il bilanciamento del carico hardware per il traffico HTTP (ad esempio, il download del contenuto delle riunioni). Per il traffico SIP è consigliato il bilanciamento del carico DNS. Per informazioni dettagliate, vedere [Requisiti di bilanciamento del carico per Skype for Business](../../plan-your-deployment/network-requirements/load-balancing.md). 
     
-- Se si desidera utilizzare Monitoring Server per il pool di riunioni di grandi dimensioni dedicato, è consigliabile utilizzare Monitoring Server e il relativo database condivisi tra tutti i pool Front End Server della distribuzione di Skype for Business Server. Per ulteriori informazioni, vedere [Plan for monitoring in Skype for Business Server.](../../plan-your-deployment/monitoring.md)
+- Se si desidera utilizzare Monitoring Server per il pool di riunioni di grandi dimensioni dedicato, è consigliabile utilizzare Monitoring Server e il relativo database condivisi tra tutti i pool Front End Server della distribuzione di Skype for Business Server. Per ulteriori informazioni, vedere [Plan for monitoring in Skype for Business Server](../../plan-your-deployment/monitoring.md).

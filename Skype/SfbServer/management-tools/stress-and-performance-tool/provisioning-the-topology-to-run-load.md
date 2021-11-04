@@ -1,7 +1,7 @@
 ---
 title: Provisioning della topologia per l'esecuzione del carico in scenari di stress e prestazioni
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 ms.date: 12/17/2015
 manager: serdars
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 143cf9bd-b935-494d-817c-a8b0ccc61eb8
 description: Skype for Business Server topologia 2015 modifiche o provisioning per consentire agli utenti di eseguire correttamente lo strumento Stress and Performance.
-ms.openlocfilehash: 224a2c1afde71ce94b69826ee0222dce729d22d4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 1967e923bff7ed0321b3b6b59dce763ba4f448bd
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611915"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60771912"
 ---
 # <a name="provisioning-the-topology-to-run-load-in-stress-and-performance-scenarios"></a>Provisioning della topologia per l'esecuzione del carico in scenari di stress e prestazioni
  
@@ -39,7 +39,7 @@ A seconda delle impostazioni e della configurazione esistenti per la distribuzio
    Set-ExecutionPolicy -Unrestricted
    ```
 
-2. Per configurare in modo Skype for Business Server, è necessario:
+2. Per configurare Skype for Business Server, è necessario:
     
     - Acquisire familiarità con la topologia Skype for Business Server 2015, ad esempio nomi di computer, istanze di servizio, nomi di sito e criteri.
     

@@ -1,7 +1,7 @@
 ---
 title: Esclusioni di analisi antivirus per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 5d742259-ef3b-417a-920b-e1fa0e48f043
 description: Panoramica dell'interoperabilità degli scanner antivirus con Skype for Business Server.
-ms.openlocfilehash: e4016527937c7cfc3c39eb37d2a7b75202fad076
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 105abd3618c5e869681edc31321a07ab0bce9d57
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58588498"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737652"
 ---
 # <a name="antivirus-scanning-exclusions-for-skype-for-business-server"></a>Esclusioni di analisi antivirus per Skype for Business Server
 
@@ -30,7 +30,7 @@ Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento d
 > I percorsi di cartelle e file elencati di seguito sono i percorsi predefiniti per Skype for Business Server. Per tutti i percorsi per i quali non è stata utilizzata l'impostazione predefinita, escludere i percorsi specificati per l'organizzazione anziché i percorsi predefiniti specificati in questo argomento.
 
 > [!IMPORTANT]
-> Tenere presente che alcuni programmi antivirus potrebbero avere bisogno di percorsi assoluti e non relativi per l'elenco di esclusione.
+> Tenere presente che alcuni programmi antivirus potrebbero avere bisogno di percorsi assoluti, non relativi, per l'elenco di esclusione.
 
 - Skype for Business Server processi:
 
@@ -99,7 +99,7 @@ Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento d
 - SQL Server Back-End processi:
 
     > [!NOTE]
-    > Tieni presente che questi percorsi sono specifici della SQL Server versione.
+    > Tieni presente che questi percorsi sono specifici per SQL Server versione.
 
   - %ProgramFiles%\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\Binn\SQLServr.exe
 
@@ -142,4 +142,4 @@ Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento d
 
   - File di registro e dati di SQL Server, inclusi quelli per il database back-end, l'archivio utente, l'archivio di archiviazione, l'archivio di monitoraggio e l'archivio applicazioni. I file di registro e di database possono essere specificati in Generatore di topologie. Per informazioni dettagliate sui dati e i file di registro per ogni database, inclusi i nomi predefiniti, vedere [SQL Server Data and Log File Placement](/previous-versions/office/lync-server-2013/lync-server-2013-sql-server-data-and-log-file-placement) nella documentazione relativa alla distribuzione.
 
-  - SQL Server file di dati e di registro, inclusi quelli per il database front-end, l Skype for Business store e l'archivio RtcDatabase. In genere sono in %localdrive%\CSData.
+  - SQL Server file di dati e di registro, inclusi quelli per il database front-end, l Skype for Business e l'archivio RtcDatabase. In genere sono in %localdrive%\CSData.

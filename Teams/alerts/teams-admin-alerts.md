@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams Monitoraggio e avvisi
 author: vaibhav
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 audience: Admin
 ms.topic: conceptual
@@ -16,18 +16,18 @@ description: Informazioni sulle funzionalità Teams avvisi e notifiche disponibi
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 38380adecf3ce54d12b06e74f4467e39697d67f4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f97905320912ec1a63aa4580018c134bed3589c4
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592360"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737472"
 ---
 # <a name="microsoft-teams-monitoring-and-alerting"></a>Microsoft Teams e avvisi
 
-Le nuove funzionalità di monitoraggio e avviso per Microsoft Teams sono disponibili nell'interfaccia Teams di amministrazione. Usare diversi set di  regole disponibili nella sezione Avvisi & notifiche nell'interfaccia di amministrazione di Teams per monitorare Teams e ricevere avvisi. Ad esempio, è possibile monitorare attivamente l'integrità dei dispositivi Teams, ad esempio telefoni IP, barre di collaborazione e altri dispositivi, se passano in modo imprevisto offline.  
+Le nuove funzionalità di monitoraggio e avviso per Microsoft Teams sono disponibili nell'Teams di amministrazione. Usare diversi set di  regole disponibili nella sezione Avvisi & notifiche nell'interfaccia di amministrazione di Teams per monitorare Teams funzionalità e ricevere avvisi. Ad esempio, è possibile monitorare attivamente l'integrità dei dispositivi Teams ip, ad esempio telefoni IP, barre di collaborazione e altri dispositivi, se in modo imprevisto passano offline.  
 
-L'organizzazione può usare Teams e gli avvisi per eseguire le operazioni seguenti:
+L'organizzazione può usare il Teams e gli avvisi per eseguire le operazioni seguenti:
 
 - Gestire automaticamente Teams funzionalità
 - Essere avvisati se mostrano qualcosa di imprevisto.
@@ -43,9 +43,9 @@ L'organizzazione può usare Teams e gli avvisi per eseguire le operazioni seguen
 
 ## <a name="teams-monitoring-rules-reference"></a>riferimento Teams regole di monitoraggio
 
-Continuiamo ad aggiungere e migliorare l'esperienza Teams di monitoraggio aggiungendo varie funzionalità di monitoraggio e funzionalità di configurazione. Ecco un elenco delle regole di Teams di monitoraggio dei messaggi attualmente disponibili nell'interfaccia Teams di amministrazione.
+Continuiamo ad aggiungere e migliorare l'esperienza Teams monitoraggio aggiungendo varie funzionalità di monitoraggio e funzionalità di configurazione. Ecco un elenco delle regole di monitoraggio Teams attualmente disponibili nell'interfaccia Teams di amministrazione.
 
 
 |Regola  |Funzionalità di monitoraggio|Cosa viene monitorato? |
 |---------|---------|---------|
-|[Stato di integrità del dispositivo](device-health-status.md)  |Teams Dispositivi | Pro monitorare attivamente i dispositivi Teams offline.|
+|[Stato di integrità del dispositivo](device-health-status.md)  |Teams Dispositivi | Pro monitorare attivamente Teams dispositivi se passano offline.|

@@ -1,7 +1,7 @@
 ---
 title: Espansione delle impostazioni del server perimetrale
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/25/2015
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: c73780cd-0033-4287-9ecd-ecf65ca61e62
 description: 'Per modificare le impostazioni per un pool con un solo server perimetrale o di più server perimetrali, sono disponibili queste sezioni:'
-ms.openlocfilehash: 5d511f3fbb3e862016ddeeeae461c65af13f9598
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8565aed29c3a7173dadff4d2d6cd4836ada4493d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58633650"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737862"
 ---
 # <a name="edge-settings-expander"></a>Espansione delle impostazioni del server perimetrale
 
@@ -38,7 +38,7 @@ Per modificare le impostazioni per un pool con un solo server perimetrale o di p
 
 Nome di dominio completo (FQDN) interno del pool di server perimetrali. Modificare l'FQDN del pool per cambiare questa impostazione.
 
-Selezionare la casella di controllo Abilita federazione per il pool di server perimetrali **(porta 5061)** se si configura la federazione con un partner attendibile lync server 2013, Microsoft Lync Server 2010 o Microsoft Office Communications Server 2007 R2.
+Selezionare la casella di controllo Abilita federazione per il pool di server perimetrali **(porta 5061)** se si configura la federazione con un partner attendibile di Lync Server 2013, Microsoft Lync Server 2010 o Microsoft Office Communications Server 2007 R2.
 
 Selezionare **Abilita la federazione XMPP per questo pool di server perimetrali (porta 5269)** per abilitare la federazione XMPP.
 

@@ -1,7 +1,7 @@
 ---
 title: Gestire gli annunci di partecipazione e di lasciare conferenze in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: cb09f9c2-c6dc-4083-b45a-8b6773341373
 description: 'Riepilogo: informazioni su come gestire gli annunci di partecipazione e di lasciare conferenze Skype for Business Server.'
-ms.openlocfilehash: f2219fc8d55485a4c34a8730fbec6b556d57b728
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 375cd1da4e60ccd9c6d7e4eb2864d49279e3c62a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58625208"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60765484"
 ---
 # <a name="manage-conference-join-and-leave-announcements-in-skype-for-business-server"></a>Gestire gli annunci di partecipazione e di lasciare conferenze in Skype for Business Server
  
@@ -38,7 +38,7 @@ Quando gli utenti con accesso remoto aderiscono o escono da una conferenza, il a
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo Cs-ServerAdministrator o CsAdministrator.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Eseguire il comando seguente al prompt:
     
@@ -57,7 +57,7 @@ Questo cmdlet consente di recuperare informazioni sulla necessità o meno ai par
    [-EntryExitAnnouncementsType <UseNames | ToneOnly]
    ```
 
-Nell'esempio seguente le impostazioni vengono configurate nell'ambito del sito per Redmond. Gli annunci sono attivati ma ai partecipanti non viene richiesto di specificare il proprio nome durante l'accesso a una conferenza. Quando i partecipanti a una conferenza entrano o abbandonano una conferenza, viene riprodotto un tono:
+Nell'esempio seguente le impostazioni vengono configurate nell'ambito del sito per Redmond. Gli annunci sono attivati ma ai partecipanti non viene richiesto di specificare il proprio nome durante l'accesso a una conferenza. Quando i partecipanti a una conferenza entrano o abbandonano una conferenza viene riprodotto un tono:
   
 ```PowerShell
 Set-CsDialinConferencingConfiguration -Identity site:Redmond

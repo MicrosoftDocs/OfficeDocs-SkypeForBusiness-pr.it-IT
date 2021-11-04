@@ -5,7 +5,7 @@ ms:assetid: 6f0ae442-6624-4e3f-849a-5b9e387fb8cf
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204996(v=OCS.15)
 ms:contentKeyID: 48184469
 mtps_version: v=OCS.15
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: In questo articolo viene descritto come configurare gli intervalli di porte per i server perimetrali e come configurare un criterio qualità del servizio per i server A/V Edge.
-ms.openlocfilehash: 9e9ec2e3f6aff938866655f3534b2a45ab77f726
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 1f455ab417ed111a34134e3581806b4ce2a4bd57
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58634280"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60778306"
 ---
 # <a name="configuring-port-ranges-and-a-quality-of-service-policy-for-your-edge-servers-in-skype-for-business-server"></a>Configurazione degli intervalli di porte e dei criteri di qualità del servizio per i server perimetrali in Skype for Business Server
 
@@ -80,13 +80,13 @@ Alternativamente, è possibile utilizzare il comando seguente per configurare si
 
   **Get-CsService -EdgeServer | Select-Object Identity, MediaCommunicationPortStart, MediaCommunicationPortCount**
 
-Anche in questo caso, mentre forniamo queste opzioni, ti consigliamo vivamente di lasciare le cose così come sono per la configurazione delle porte.
+Anche in questo caso, mentre forniamo queste opzioni, ti consigliamo vivamente di lasciare le cose come sono per la configurazione delle porte.
 
 ## <a name="configure-a-qos-policy-for-your-av-edge-servers"></a>Configurare un criterio QoS per i server A/V Edge
 
 Oltre alla creazione di criteri QoS per i Conferencing Server, server applicazioni e Mediation Server, è necessario anche creare criteri audio e video per il sito interno degli A/V Edge Server. I criteri utilizzati nei server perimetrali, tuttavia, sono diversi da quelli utilizzati nei Conferencing Server, server applicazioni e Mediation Server. Per i Server di conferenza, applicazione e Mediation Server è stato specificato un intervallo di porte di origine. con i server perimetrali, è necessario specificare un intervallo di porte di destinazione. Per questo, non è possibile applicare semplicemente i criteri QoS per conferenze, applicazioni e Mediation Server ai server perimetrali: questi criteri semplicemente non funzionano. È necessario invece creare nuovi criteri e applicarli solo ai server perimetrali.
 
-Nella procedura seguente viene descritto il processo di creazione di oggetti Criteri di gruppo di Active Directory che possono essere utilizzati per gestire la qualità del servizio nei server perimetrali. Naturalmente, è possibile che i server perimetrali siano server autonomi che non dispongono di account di Active Directory. In questo caso, è possibile utilizzare Criteri di gruppo locali anziché Criteri di gruppo di Active Directory: l'unica differenza consiste nel fatto che è necessario creare questi criteri locali utilizzando l'Editor Criteri di gruppo locali e creare singolarmente lo stesso insieme di criteri in ogni server perimetrale. Per avviare l'Editor Criteri di gruppo locali in un server perimetrale, eseguire le operazioni seguenti:
+Nella procedura seguente viene descritto il processo di creazione di oggetti Criteri di gruppo di Active Directory che possono essere utilizzati per gestire la qualità del servizio nei server perimetrali. Naturalmente, è possibile che i server perimetrali siano server autonomi che non dispongono di account di Active Directory. In questo caso, è possibile utilizzare Criteri di gruppo locali anziché Criteri di gruppo di Active Directory: l'unica differenza consiste nel fatto che è necessario creare questi criteri locali utilizzando l'Editor Criteri di gruppo locali e creare singolarmente lo stesso set di criteri in ogni server perimetrale. Per avviare l'Editor Criteri di gruppo locali in un server perimetrale, eseguire le operazioni seguenti:
 
 1.  Fare clic su **Start** quindi scegliere **Esegui**.
 
@@ -94,7 +94,7 @@ Nella procedura seguente viene descritto il processo di creazione di oggetti Cri
 
 Se si creano criteri basati su Active Directory, è necessario accedere a un computer in cui sia installato Gestione Criteri di gruppo. In tal caso, aprire Gestione Criteri di gruppo (fare clic sul pulsante **Start**, scegliere Strumenti di amministrazione **e** quindi Gestione Criteri di **gruppo**), quindi eseguire la procedura seguente:
 
-1.  In Gestione Criteri di gruppo, individuare il contenitore in cui creare il nuovo criterio. Ad esempio, se tutti i computer Skype for Business Server si trovano in un'unità organizzativa denominata Skype for Business Server, il nuovo criterio deve essere creato nell'Skype for Business Server organizzativa.
+1.  In Gestione Criteri di gruppo, individuare il contenitore in cui creare il nuovo criterio. Ad esempio, se tutti i computer Skype for Business Server si trovano in un'unità organizzativa denominata Skype for Business Server, il nuovo criterio deve essere creato nell'unità organizzativa Skype for Business Server.
 
 2.  Fai clic con il pulsante destro del mouse sul contenitore appropriato, quindi fai clic su Crea un oggetto Criteri di gruppo in questo dominio **e collegalo qui.**
 
@@ -126,7 +126,7 @@ Dopo aver creato i criteri QoS per il traffico audio, devi creare un secondo cri
 
 Se si decide di creare un criterio per la gestione del traffico di condivisione applicazioni, è necessario creare un terzo criterio, apportando le sostituzioni seguenti:
 
-  - Utilizzare un nome di criterio diverso (e univoco), ad esempio Skype for Business Server **Condivisione applicazioni**.
+  - Utilizzare un nome di criterio diverso (e univoco), ad esempio condivisione Skype for Business Server **applicazioni**.
 
   - Impostare il valore DSCP su **24** invece di 46. Come indicato prima, non è obbligatorio usare il valore DSCP 24. L'unico requisito consiste nell'usare un valore DSCP diverso da quello usato per l'audio.
 

@@ -1,7 +1,7 @@
 ---
 title: Disponibilità e gestione elevata del pool Front End
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,26 +12,26 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 965041b7-3136-49f2-89c1-8b30417cb8ea
-description: Informazioni sulla gestione dei pool Front End in Skype for Business Server, tra cui la gestione dei pool, la perdita di quorum e i passaggi speciali per i pool con solo due Front End Server.
-ms.openlocfilehash: 2eabc5e32937b88de4a3c4bbd474e20e132c1984
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Informazioni sulla gestione dei pool Front End in Skype for Business Server, tra cui la gestione dei pool, la perdita di quorum e la procedura speciale per i pool con solo due Front End Server.
+ms.openlocfilehash: 5d9eef2a027131db960b05508ece28cf95b992dc
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585010"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737682"
 ---
 # <a name="front-end-pool-high-availability-and-management"></a>Disponibilità e gestione elevata del pool Front End
  
-Informazioni sulla gestione dei pool Front End in Skype for Business Server, tra cui la gestione dei pool, la perdita di quorum e i passaggi speciali per i pool con solo due Front End Server.
+Informazioni sulla gestione dei pool Front End in Skype for Business Server, tra cui la gestione dei pool, la perdita di quorum e la procedura speciale per i pool con solo due Front End Server.
   
-In Skype for Business Server,l'architettura dei pool Front End utilizza un modello di sistemi distribuiti, con i dati di ogni utente conservati su fino a tre Front End Server nel pool. È consigliabile che tutti edizione Enterprise pool Front End includano almeno tre Front End Server.
+In Skype for Business Server, l'architettura dei pool Front End utilizza un modello di sistemi distribuiti, con i dati di ogni utente conservati su fino a tre Front End Server nel pool. È consigliabile che tutti edizione Enterprise pool Front End includano almeno tre Front End Server.
 
 > [!NOTE]
 > Skype for Business Server 2019 non supporta edizione Enterprise pool Front End con due Front End Server e non consente la pubblicazione della topologia in tale scenario.
   
 ## <a name="planning-for-the-management-of-front-end-pools"></a>Pianificazione della gestione dei pool Front End
 
- Skype for Business Server viene utilizzato un modello di sistemi distribuiti basato su Windows Fabric. In questo modello, i dati importanti per ogni utente e conferenza vengono archiviati in tre Front End Server in un pool Front End. Questi tre server che archiviano un determinato set di dati sono denominatireplica.
+ Skype for Business Server un modello di sistemi distribuiti basato su Windows Fabric. In questo modello, i dati importanti per ogni utente e conferenza vengono archiviati in tre Front End Server in un pool Front End. Questi tre server che archiviano un determinato set di dati sono denominatireplica.
   
 Con il modello distribuito per i pool Front End, un determinato numero di server di un pool deve essere in esecuzione per il funzionamento del pool. Esistono due modalità di perdita per un pool.
   
@@ -45,12 +45,12 @@ La prima volta che si avvia un nuovo pool Front End, è essenziale che l'85% dei
   
 |Numero totale di server nel pool  <br/> |Numero di server che devono essere in esecuzione per il primo avvio del pool  <br/> |
 |:-----|:-----|
-|2   <br/> |1   <br/> |
+|2  <br/> |1  <br/> |
 |3   <br/> |3   <br/> |
 |4   <br/> |3   <br/> |
-|5   <br/> |4   <br/> |
-|6   <br/> |5   <br/> |
-|7   <br/> |5   <br/> |
+|5  <br/> |4   <br/> |
+|6   <br/> |5  <br/> |
+|7   <br/> |5  <br/> |
 |8   <br/> |6   <br/> |
 |9   <br/> |7   <br/> |
 |10   <br/> |8   <br/> |
@@ -71,7 +71,7 @@ Per il funzionamento di un pool Front End, non può essere in caso di perdita de
   
 |Numero totale di Front End Server nel pool  <br/> |Numero minimo di server attivi per il funzionamento del pool  <br/> |
 |:-----|:-----|
-|2   <br/> |1   <br/> |
+|2  <br/> |1  <br/> |
 |3-4  <br/> |Qualsiasi 2  <br/> |
 |5-6  <br/> |Qualsiasi 3  <br/> |
 |7   <br/> |Qualsiasi 4  <br/> |

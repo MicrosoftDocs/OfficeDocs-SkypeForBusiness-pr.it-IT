@@ -1,7 +1,7 @@
 ---
 title: Configurare l'escape della segreteria telefonica in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,21 +15,21 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: a1d19e6c-82ff-4768-8ae5-da981368ce40
-description: "Riepilogo: informazioni su come configurare l'escape della casella vocale Skype for Business Server tramite Skype for Business Server Management Shell."
-ms.openlocfilehash: 469353dba39b5f4f6b7e4cdd458862d068da97c0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: "Riepilogo: informazioni su come configurare l'escape della segreteria telefonica Skype for Business Server tramite Skype for Business Server Management Shell."
+ms.openlocfilehash: 3414b099587b45918b28ac3e11dcf75924f41dd6
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58597220"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60740102"
 ---
 # <a name="configure-voice-mail-escape-in-skype-for-business"></a>Configurare l'escape della segreteria telefonica in Skype for Business
 
 **Riepilogo:** Informazioni su come configurare l'escape della casella vocale Skype for Business Server tramite Skype for Business Server Management Shell.
 
-Quando un utente configura lo squillo simultaneo a un telefono cellulare, un chiamante viene in genere instradato alla segreteria telefonica personale dell'utente se il telefono cellulare è spento, fuori batteria o fuori portata. Con Skype for Business Server , gli utenti possono scegliere di instradare le chiamate aziendali al sistema di caselle vocali aziendali. In particolare, è possibile configurare un timer e, se la segreteria telefonica dell'operatore risponde alla chiamata entro l'intervallo di tempo definito, Skype for Business Server si disconnette dal sistema di caselle vocali dell'operatore (e dalla segreteria telefonica personale dell'utente), mentre gli endpoint rimanenti dell'utente nel sistema aziendale continuano a squillare. In questo modo, il chiamante viene automaticamente instradato alla segreteria telefonica aziendale dell'utente.
+Quando un utente configura lo squillo simultaneo a un telefono cellulare, un chiamante viene in genere instradato alla segreteria telefonica personale dell'utente se il telefono cellulare è spento, fuori batteria o fuori portata. Con Skype for Business Server , gli utenti possono scegliere di instradare le chiamate correlate all'azienda al sistema di caselle vocali aziendale. In particolare, è possibile configurare un timer e se la segreteria telefonica dell'operatore risponde alla chiamata entro l'intervallo di tempo definito, Skype for Business Server si disconnette dal sistema di caselle vocali dell'operatore (e dalla segreteria telefonica personale dell'utente), mentre gli endpoint rimanenti dell'utente nel sistema aziendale continuano a squillare. In questo modo, il chiamante viene automaticamente instradato alla segreteria telefonica aziendale dell'utente.
 
-Questa configurazione viene eseguita utilizzando il cmdlet Skype for Business Server Management **Shell, Set-CsVoicePolicy**, a livello di criteri vocali, con i parametri seguenti.
+Questa configurazione viene eseguita utilizzando il cmdlet Skype for Business Server Management Shell, **Set-CsVoicePolicy**, a livello di criteri vocali, con i parametri seguenti.
 
 ### <a name="to-configure-voice-mail-escape"></a>Per configurare l'escape del sistema di caselle vocali
 

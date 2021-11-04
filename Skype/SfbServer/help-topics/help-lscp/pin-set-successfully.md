@@ -1,7 +1,7 @@
 ---
 title: PIN impostato correttamente
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: c6e210d1-bcac-4527-adc6-691a5723270c
 description: Per utilizzare la posta elettronica per inviare il PIN all'utente, fare clic su Apri posta elettronica per inviare il nuovo PIN all'utente. Per copiare il PIN nel messaggio di posta elettronica, selezionare Mostra PIN.
-ms.openlocfilehash: 77198e7ad9bd4e6a5a23f3cb621beb22f4dd2307
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 73f79b414d22ca257d1863683129fd2ddf5c5b1f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599229"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60738012"
 ---
 # <a name="pin-set-successfully"></a>PIN impostato correttamente
  

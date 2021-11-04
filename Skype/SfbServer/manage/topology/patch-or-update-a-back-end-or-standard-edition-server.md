@@ -1,7 +1,7 @@
 ---
 title: Applicare patch o aggiornare un server back-end o edizione Standard server in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: f95f8d3a-e039-484e-97bd-d727db21a12b
 description: 'Riepilogo: informazioni su come installare un aggiornamento o una patch in un server back-end in Skype for Business Server.'
-ms.openlocfilehash: 2b7292b71f57d7396c5b90bce3746b73b98f6f43
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 6c2a03358f5fc5f1253f65d1ff2bc202871da678
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58619752"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737782"
 ---
 # <a name="patch-or-update-a-back-end-server-or-standard-edition-server-in-skype-for-business-server"></a>Applicare patch o aggiornare un server back-end o edizione Standard server in Skype for Business Server
  
@@ -25,9 +25,9 @@ ms.locfileid: "58619752"
   
 In questo argomento viene illustrato come installare un aggiornamento in un server edizione Enterprise back-end o edizione Standard server.
   
-Se un server back-end non è disponibile per almeno 30 minuti durante l'aggiornamento, gli utenti potrebbero passare alla modalità resilienza. Al termine dell'aggiornamento e i server back-end si sono nuovamente connessi ai Front End Server nel pool, gli utenti vengono restituiti alla funzionalità completa. Se l'aggiornamento richiede meno di 30 minuti, gli utenti non ne saranno interessati.
+Se un server back-end non è disponibile per almeno 30 minuti durante l'aggiornamento, gli utenti possono passare alla modalità resilienza. Al termine dell'aggiornamento e i server back-end si sono nuovamente connessi ai Front End Server nel pool, gli utenti vengono restituiti alla funzionalità completa. Se l'aggiornamento richiede meno di 30 minuti, gli utenti non ne saranno interessati.
   
-### <a name="to-update-a-back-end-server-or-standard-edition-server"></a>Per aggiornare un server back-end o un server edizione Standard server
+### <a name="to-update-a-back-end-server-or-standard-edition-server"></a>Per aggiornare un server back-end o edizione Standard server
 
 1. Eseguire l'accesso al server da aggiornare come membro del ruolo CsAdministrator.
     
@@ -47,7 +47,7 @@ Se un server back-end non è disponibile per almeno 30 minuti durante l'aggiorna
     net stop w3svc
    ```
 
-6. Chiudere tutte le Skype for Business Server Management Shell.
+6. Chiudere tutte Skype for Business Server Management Shell.
     
 7. Installare l'aggiornamento.
     

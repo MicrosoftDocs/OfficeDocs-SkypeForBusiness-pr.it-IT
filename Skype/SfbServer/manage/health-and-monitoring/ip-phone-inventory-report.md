@@ -1,7 +1,7 @@
 ---
 title: Report inventario Telefono ip in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,35 +12,35 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: aa7d6b31-cb09-4e68-b020-aa5dd0081c20
 description: 'Riepilogo: informazioni sul Report inventario Telefono IP in Skype for Business Server.'
-ms.openlocfilehash: 00677d5ed31303cd87df6547d2cab99323f6ed53
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 7c3854148c9eb04268c5a3491a6efb00168e5544
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58630590"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60740552"
 ---
 # <a name="ip-phone-inventory-report-in-skype-for-business-server"></a>Report inventario Telefono ip in Skype for Business Server
  
-**Riepilogo:** Informazioni sul Report inventario Telefono ip in Skype for Business Server.
+**Riepilogo:** Informazioni sul Report inventario Telefono IP in Skype for Business Server.
   
-Il rapporto Telefono inventario ip riporta informazioni sui telefoni IP attualmente in uso nell'organizzazione. Il Rapporto inventario IP fornisce un elenco dettagliato dei telefoni IP effettivamente utilizzati durante il periodo di reporting specificato. Tra l'altro, questo report consente agli amministratori di sapere se sono ancora in uso telefoni obsoleti che devono essere sostituiti; può anche avvisare gli amministratori del fatto che nell'organizzazione sono presenti telefoni costosi che vengono utilizzati raramente. Questo tipo di informazioni può essere prezioso quando è il momento di acquistare nuovi telefoni o di ridistribuire i telefoni esistenti. Ad esempio, a un utente che usa raramente il proprio telefono costoso potrebbe essere richiesto di scambiare telefoni con un utente che usa il proprio telefono molto più frequentemente.
+Il rapporto Telefono'inventario ip riporta informazioni sui telefoni IP attualmente in uso nell'organizzazione. Il Rapporto inventario IP fornisce un elenco dettagliato dei telefoni IP effettivamente utilizzati durante il periodo di reporting specificato. Tra l'altro, questo report consente agli amministratori di sapere se sono ancora in uso telefoni obsoleti che devono essere sostituiti; può anche avvisare gli amministratori del fatto che nell'organizzazione sono presenti telefoni costosi che vengono utilizzati raramente. Questo tipo di informazioni può essere prezioso quando è il momento di acquistare nuovi telefoni o di ridistribuire i telefoni esistenti. Ad esempio, a un utente che usa raramente il proprio telefono costoso potrebbe essere richiesto di scambiare telefoni con un utente che usa il proprio telefono molto più frequentemente.
   
 Va notato che questo report presenta alcune limitazioni quando si tratta di essere utilizzato come un vero report di inventario. Per prima cosa, il rapporto ip Telefono elenca semplicemente tutti i telefoni che hanno effettuato l'accesso a Skype for Business Server durante il periodo di tempo specificato, ordinati in base all'ora dell'ultimo accesso. Se un telefono non ha avuto accesso durante il periodo di tempo specificato, non verrà elencato nel rapporto inventario. Sono inclusi i telefoni connessi prima dell'inizio del periodo di tempo e ancora connessi durante l'intervallo di tempo specificato. Ad esempio, si supponga di voler esaminare tutto l'inventario telefonico per luglio 2015. Si supponga, inoltre, che diversi telefoni si sono connessi a Skype for Business Server il 30 giugno 2015 e che fossero ancora connessi a partire dal 1° luglio. Questi telefoni non verranno visualizzati nel report inventario per il 1° luglio.
   
 È anche importante notare che il report inventario potrebbe includere telefoni che l'organizzazione non usa più. Si supponga, ad esempio, che un numero di telefoni Fabrikam connessi al sistema il 1° luglio 2015; 5 giorni dopo l'organizzazione si è liberata di tutti i telefoni Fabrikam e li ha sostituiti con un modello Contoso più recente. I telefoni Fabrikam verranno comunque visualizzati nel report "inventario" semplicemente perché hanno eseguito l'accesso al sistema durante il mese di luglio.
   
-Inoltre, il report inventario Telefono IP non riporta totali riepilogati per i diversi tipi di telefoni. Si supponga, ad esempio, di avere 105 telefoni Polycom CX600. Il report non ti dirà che hai 105 di questi telefoni; al contrario, verranno semplicemente visualizzati 105 voci separate per Polycom Cx600. L'unico modo per sapere che ci sono 105 voci per Polycom Cx600 sarebbe quello di contare ognuna di queste voci manualmente.
+Inoltre, il report inventario Telefono IP non riporta i totali di riepilogo per i diversi tipi di telefoni. Si supponga, ad esempio, di avere 105 telefoni Polycom CX600. Il report non ti dirà che hai 105 di questi telefoni; al contrario, verranno semplicemente visualizzati 105 voci separate per Polycom Cx600. L'unico modo per sapere che ci sono 105 voci per Polycom Cx600 sarebbe quello di contare ognuna di queste voci manualmente.
   
 > [!TIP]
-> In caso contrario, esportare i dati e Microsoft Excel o Windows PowerShell per eseguire il conteggio. 
+> In caso contrario, esportare i dati e Microsoft Excel o Windows PowerShell per eseguire il conteggio per conto dell'utente. 
   
-## <a name="accessing-the-ip-phone-inventory-report"></a>Accesso al report dell'Telefono ip
+## <a name="accessing-the-ip-phone-inventory-report"></a>Accesso al report inventario Telefono ip
 
-È possibile accedere Telefono report inventario ip dalla home page Dei report di monitoraggio. Se fai clic sulla metrica URI utente puoi accedere al Rapporto attività utente per tale utente. Se si fa clic sulla metrica Ultima attività per una chiamata peer-to-peer, verrà visualizzato il Rapporto dettagli sessione peer-to-peer. Se si fa clic sulla stessa metrica per una conferenza, verrà visualizzato il Rapporto dettagli conferenza.
+L'Telefono inventario ip è accessibile dalla home page Dei report di monitoraggio. Se fai clic sulla metrica URI utente puoi accedere al Rapporto attività utente per tale utente. Se si fa clic sulla metrica Ultima attività per una chiamata peer-to-peer, verrà visualizzato il Rapporto dettagli sessione peer-to-peer. Se si fa clic sulla stessa metrica per una conferenza, verrà visualizzato il Rapporto dettagli conferenza.
   
 ## <a name="making-the-best-use-of-the-ip-phone-inventory-report"></a>Utilizzo ottimale del report dell'Telefono IP
 
-Se si è interessati alle informazioni di utilizzo solo per un particolare tipo di telefono (ad esempio, "Con quale frequenza gli utenti usano un telefono Polycom CX600?"), è possibile ottenere queste informazioni direttamente dal Report inventario ip Telefono filtrando per quel particolare tipo di telefono. Tuttavia, se si desiderano informazioni di riepilogo per tutti i telefoni (quante persone usano un Polycom CX600, quanti usano un ip8540 di LG-Nortel e così via), sarà necessario esportare i dati e utilizzare un'altra applicazione (ad esempio Windows PowerShell) per eseguire questo tipo di analisi. Si supponga, ad esempio, di esportare i dati in un file con valori delimitati da virgole (C:\Data\IP_Phone_Inventory_Report.csv). In tal caso, puoi usare questi due comandi per fornire dati di riepilogo per tutti i telefoni:
+Se si è interessati solo alle informazioni di utilizzo per un particolare tipo di telefono (ad esempio, "Con quale frequenza gli utenti usano un telefono Polycom CX600?") è possibile ottenere queste informazioni direttamente dal rapporto inventario ip Telefono filtrando per quel particolare tipo di telefono. Tuttavia, se si desiderano informazioni di riepilogo per tutti i telefoni (quante persone usano un Polycom CX600, quanti usano un LG-Nortel IP8540 e così via), sarà necessario esportare i dati e usare un'altra applicazione (ad esempio Windows PowerShell) per eseguire questo tipo di analisi. Si supponga ad esempio di esportare i dati in un file con valori delimitati da virgole (C:\Data\IP_Phone_Inventory_Report.csv). In tal caso, puoi usare questi due comandi per fornire dati di riepilogo per tutti i telefoni:
   
 ```PowerShell
 $phones = Import-Csv "C:\Data\IP_Phone_Inventory_Report.csv"
@@ -72,7 +72,7 @@ $phones = Import-Csv "C:\Data\IP_Phone_Inventory_Report.csv"
 $phones | Where-Object {$_."Last activity" -eq ""}
 ```
 
-Vengono restituiti dati simili ai seguenti per ogni telefono che non è stato utilizzato:
+In questo modo vengono restituiti dati simili ai seguenti per ogni telefono che non è stato utilizzato:
   
 <pre>
 Manufacturer     : POLYCOM
@@ -85,7 +85,7 @@ Last logoff time : 8/30/2010 5:59:07 PM
 Last activity    :
 </pre>
 
-Un altro modo interessante per usare il Rapporto inventario ip Telefono è questo: se si dispone dell'indirizzo MAC di un Telefono IP, è possibile individuare l'utente che ha usato per ultimo quel telefono semplicemente immettendo tale indirizzo nella casella di testo indirizzo MAC. Il report Inventario Telefono IP riporta , tra le altre cose, l'indirizzo SIP dell'utente che ha effettuato l'ultimo accesso con quel telefono. In alternativa, è possibile immettere un indirizzo SIP utente (nella casella Prefisso URI utente) per trovare tutti i telefoni utilizzati da tale utente.
+Un altro modo interessante per usare il Rapporto inventario ip Telefono è il seguente: se si dispone dell'indirizzo MAC di un Telefono IP, è possibile individuare l'utente che ha usato il telefono per ultimo semplicemente immettendo tale indirizzo nella casella di testo indirizzo MAC. Il report Inventario Telefono IP riporta , tra le altre cose, l'indirizzo SIP dell'utente che ha effettuato l'ultimo accesso con quel telefono. In alternativa, è possibile immettere un indirizzo SIP utente (nella casella Prefisso URI utente) per trovare tutti i telefoni utilizzati da tale utente.
   
 ## <a name="filters"></a>Filtri
 
@@ -109,7 +109,7 @@ Nella tabella seguente sono elencati i filtri che è possibile utilizzare con il
    
 ## <a name="metrics"></a>Metriche
 
-Nella tabella seguente sono elencate le informazioni fornite nel Report Telefono ip.
+Nella tabella seguente sono elencate le informazioni fornite nel report inventario Telefono IP.
   
 **Metriche del rapporto Telefono inventario ip**
 

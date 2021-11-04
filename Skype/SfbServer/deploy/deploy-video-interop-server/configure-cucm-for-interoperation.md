@@ -1,7 +1,7 @@
 ---
 title: Configurare CUCM per l'interoperabilità con Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: eab3d9f6-ec40-49bf-9162-1a7f5a59451f
 description: "Riepilogo: configurare CUCM per l'utilizzo con Skype for Business Server."
-ms.openlocfilehash: a27af30cd4934743f8b83260ffd46fa3c65cbcd8
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 809ad19e89f398c507673ec677b4ce882d341327
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585632"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60741322"
 ---
 # <a name="configure-cucm-for-interoperation-with-skype-for-business-server"></a>Configurare CUCM per l'interoperabilità con Skype for Business Server
  
@@ -27,7 +27,7 @@ ms.locfileid: "58585632"
 > [!CAUTION]
 > Questa funzionalità viene testata con Cisco Unified Communications Manager (CallManager o CUCM) versione 10.5 utilizzando la configurazione trunk solo su TCP. Verificare che l'ambiente CUCM soddisfi questi criteri prima di procedere. 
   
-Le impostazioni descritte qui sono solo esempi di come è possibile configurare CUCM per l'utilizzo con un VIS. Per ottenere lo stesso risultato, è possibile utilizzare anche altre impostazioni e/o utilizzi della funzionalità CUCM alternativa. Non è consigliabile utilizzare la configurazione ottimale per uno scenario specifico.
+Le impostazioni descritte qui sono solo esempi di come cucm può essere configurato per l'utilizzo con un VIS. Per ottenere lo stesso risultato, è possibile utilizzare anche altre impostazioni e/o utilizzi della funzionalità CUCM alternativa. Non è consigliabile utilizzare la configurazione ottimale per uno scenario specifico.
   
 È necessario confermare o modificare diverse impostazioni CUCM per l'interoperabilità con il VIS. Seguire le procedure seguenti per evitare di perdere le impostazioni necessarie.
   
@@ -74,7 +74,7 @@ Le impostazioni descritte qui sono solo esempi di come è possibile configurare 
     
 14. Impostare Protocollo dispositivo su SIP e premere **Avanti**.
     
-15. In Informazioni dispositivo imposta il nome e la descrizione del dispositivo (probabilmente su un valore simile a SfBVideoInterop_SIPTrunk) e imposta l'elenco dei gruppi di risorse multimediali su un MRGL che contiene le risorse multimediali giuste. 
+15. In Informazioni dispositivo imposta il nome e la descrizione del dispositivo (probabilmente su qualcosa come SfBVideoInterop_SIPTrunk) e imposta l'elenco dei gruppi di risorse multimediali su un MRGL che contiene le risorse multimediali giuste. 
     
 16. Scorrere ulteriormente verso il basso. Media Termination Point (MTP) non è necessario per le videochiamate, se non è già deselezionato, deselezionalo. Selezionare l'opzione **Esegui in tutti i nodi CM unificati attivi.** Tieni presente che devi aggiungere tutti i nodi CUCM alla Skype for Business Server configurazione.
     

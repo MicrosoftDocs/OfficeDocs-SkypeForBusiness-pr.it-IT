@@ -1,6 +1,6 @@
 ---
 title: Microsoft Teams display
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.reviewer: weizxue
@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Questo articolo fornisce una panoramica delle funzionalità supportate Microsoft Teams display.
-ms.openlocfilehash: f600394e3be741927a12c70ff4a91658be9a05fc
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: bad65986cecddc59cea6c0b2c2a545b647595758
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58586600"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737462"
 ---
 # <a name="microsoft-teams-displays"></a>Microsoft Teams display
 
@@ -44,19 +44,19 @@ Oltre alle funzionalità [supportate dai telefoni Teams](phones-for-teams.md#fea
 
 Teams licenze possono essere acquistate come parte di Microsoft 365 [e Office 365 abbonamenti.](/office365/servicedescriptions/teams-service-description) Per altre informazioni sulle licenze necessarie per l'uso Teams display, vedere Chiamate vocali e [videochiamate con Microsoft Teams](https://products.office.com/microsoft-teams/voice-calling).
 
-Per altre informazioni su come ottenere Teams, vedere Come [si ottiene l'accesso a Microsoft Teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
+Per altre informazioni su come ottenere Teams, vedere Come si ottiene l'accesso a [Microsoft Teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
 
 ## <a name="deploy-teams-displays-using-intune"></a>Distribuire Teams display usando Intune
 
-Per altre informazioni su come distribuire gli schermi Teams intune, vedere Distribuire Teams [telefoni e](phones-displays-deploy.md)Teams schermi .
+Per altre informazioni su come distribuire gli schermi Teams intune, vedere Distribuire Teams telefoni e Teams [schermi.](phones-displays-deploy.md)
 
 ## <a name="manage-teams-displays-in-your-organization"></a>Gestire Teams visualizzati nell'organizzazione
 
-Per gestire i dispositivi Teams, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare a Teams **display**. Da qui è possibile modificare il profilo di configurazione del dispositivo, gestire gli aggiornamenti, riavviare i dispositivi, aggiungere e rimuovere tag per i dispositivi e altro ancora. Per altre informazioni, vedere [Gestire i dispositivi in Teams.](device-management.md)
+Per gestire i dispositivi Teams display, nel riquadro di spostamento sinistro dell Microsoft Teams di amministrazione passare a Teams **display**. Da qui è possibile modificare il profilo di configurazione del dispositivo, gestire gli aggiornamenti, riavviare i dispositivi, aggiungere e rimuovere tag per i dispositivi e altro ancora. Per altre informazioni, vedere [Gestire i dispositivi in Teams](device-management.md).
 
 ## <a name="upgrade-teams-phones-to-teams-displays"></a>Aggiornare Teams telefoni a Teams display
 
-Teams display è l'evoluzione Teams telefoni. È possibile aggiornare i Teams telefoni dell'organizzazione a Teams tramite l'interfaccia Microsoft Teams di amministrazione. Questa opzione è disponibile solo per i telefoni che supportano l'aggiornamento a Teams display. Per altre informazioni, vedere [Aggiornare Teams telefoni a Teams display](upgrade-phones-to-displays.md).
+Teams display è l'evoluzione Teams telefoni. È possibile aggiornare Teams telefoni dell'organizzazione a Teams display usando l'interfaccia Microsoft Teams di amministrazione. Questa opzione è disponibile solo per i telefoni che supportano l'aggiornamento a Teams display. Per altre informazioni, vedere [Aggiornare Teams telefoni a Teams schermi.](upgrade-phones-to-displays.md)
 
 ## <a name="see-also"></a>Vedere anche
 

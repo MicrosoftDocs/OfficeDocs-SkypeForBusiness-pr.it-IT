@@ -1,7 +1,7 @@
 ---
 title: App store personalizzate
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: prem
 ms.topic: article
@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sull'app store personalizzato in Microsoft Teams.
-ms.openlocfilehash: 06663505a173d7fa1a5d53957fbf2df8fdd232d0
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 773e2aa7deb0d419ea60e32dc834dee8f730009a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728905"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60741662"
 ---
 # <a name="custom-apps-store-in-microsoft-teams"></a>App personalizzate archiviate in Microsoft Teams
 
@@ -44,7 +44,7 @@ Questo articolo descrive le caratteristiche dell'archivio app personalizzate e c
 <a name="orglogo"> </a>
 <!-- Do not remove the bookmark link above. -->
 
-Qui è possibile caricare il logo dell'organizzazione. Il logo selezionato verrà visualizzato nel client Teams in **App**  >  **create per la pagina tenant.**
+Qui è possibile caricare il logo dell'organizzazione. Il logo selezionato verrà visualizzato nel client Teams **app**  >  **create per la pagina tenant.**
 
 Quando si seleziona **l'opzione Scegli un'immagine,** è possibile caricare il file desiderato. Il logo deve essere 240x60 oppure verrà ridimensionato in base a tale dimensione. Non deve essere superiore a 5 MB. I formati supportati sono:
 
@@ -87,9 +87,9 @@ Le opzioni disponibili sono:
   - .jpg
 - Scegliere uno sfondo personalizzato. Quando si seleziona **Scegli un colore personalizzato,** si apre un selettore colori. Selezionare il colore desiderato regolando la scala del selettore colori.
 
-L'immagine o il colore di sfondo viene usato come sfondo per il banner superiore nel Teams app tenant.
+L'immagine o il colore di sfondo viene usato come sfondo per il banner principale nel Teams app del tenant.
 
-## <a name="customize-the-text-color-of-your-name"></a>Personalizzare il colore del testo del proprio nome
+## <a name="customize-the-text-color-of-your-name"></a>Personalizzare il colore del testo del nome
 
 <!-- Bookmark used by Context Sensitive Help (CSH). Do not delete. -->
 <a name="textcolor"> </a>
@@ -109,7 +109,7 @@ Per visualizzare in anteprima le modifiche, selezionare **Anteprima app store** 
 ![anteprima dell'app store personalizzato.](media/PowerAppsInStore650w.png)
 
 > [!Note]
-> La rappresentazione può variare rispetto alla versione finale dell'archivio app personalizzato, perché alcuni colori predefiniti si basano sulla versione di Teams client degli utenti.
+> La rappresentazione può variare rispetto alla versione finale dell'archivio app personalizzato perché alcuni colori predefiniti sono basati sulla versione di Teams client degli utenti.
 
 ## <a name="related-article"></a>Articolo correlato
 

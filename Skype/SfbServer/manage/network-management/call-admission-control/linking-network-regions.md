@@ -1,7 +1,7 @@
 ---
 title: Collegamento di aree di rete
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,20 +11,20 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: "È possibile configurare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. "
-ms.openlocfilehash: 56e94f6cc9e9bf0bd43c607eef53561a6129d468
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d194daf8e35a3e4b6b23c1c34fc8b4d4c2fea14f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58600071"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60746892"
 ---
 # <a name="linking-network-regions-in-skype-for-business-server"></a>Collegamento delle aree di rete in Skype for Business Server
 
-È possibile configurare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. Utilizzare le sezioni di questo articolo per visualizzare le informazioni sui collegamenti all'area di lavoro oppure configurare o eliminare i collegamenti di area netwrok. 
+È possibile configurare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. Utilizzare le sezioni di questo articolo per visualizzare le informazioni sui collegamenti all'area di lavoro oppure configurare o eliminare i collegamenti di area di rete. 
 
 ## <a name="view-network-region-link-information"></a>Visualizzare le informazioni sui collegamenti dell'area di rete 
 
-È possibile visualizzare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. Le aree di una rete sono collegate mediante una connettività WAN fisica. Puoi usare il Pannello Skype for Business Server per visualizzare un collegamento esistente tra due aree di rete. 
+È possibile visualizzare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. Le aree di una rete sono collegate mediante una connettività WAN fisica. Puoi usare il Pannello di controllo Skype for Business Server per visualizzare un collegamento esistente tra due aree di rete. 
 
 
 ### <a name="to-view-a-network-region-link-in-skype-for-business-server-control-panel"></a>Per visualizzare un collegamento a un'area di rete Skype for Business Server Pannello di controllo

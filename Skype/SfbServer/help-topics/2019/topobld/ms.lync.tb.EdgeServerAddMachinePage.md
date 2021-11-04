@@ -1,7 +1,7 @@
 ---
 title: Server perimetrale - Aggiungere un computer
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: bdae4545-942e-4f76-9d3f-6ac5d1ebe213
 ROBOTS: NOINDEX, NOFOLLOW
 description: Specificare il nome di dominio completo (FQDN) di ogni computer che si vuole aggiungere come server perimetrale nel pool. Dopo aver aggiunto un computer all'elenco, è possibile aggiornare l'FQDN del computer o rimuoverlo dal pool in qualsiasi momento prima di pubblicare la topologia. Dopo aver pubblicato la topologia, per poter modificare l'FQDN è necessario eliminare il server in Generatore di topologie e poi aggiungere al pool un nuovo server con il nuovo FQDN. Per informazioni dettagliate sulla progettazione della topologia per un pool di server perimetrali, vedere Define Your Edge Topology nella documentazione relativa alla distribuzione di server perimetrali.
-ms.openlocfilehash: 2e37ad61d6571900b998c2b92d8eed67cbcf0fa0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 45103dc27a64badfca94acf8d639f386ce09584a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58591690"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60778536"
 ---
 # <a name="edge-server-add-machine"></a>Aggiungere computer del server perimetrale
 

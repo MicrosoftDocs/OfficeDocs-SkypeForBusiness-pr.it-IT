@@ -1,7 +1,7 @@
 ---
 title: Telefono gestione dei numeri per la Romania
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: chandra.kilaru, kristen.kutser
 ms.topic: reference
@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Romania per Microsoft Teams.
-ms.openlocfilehash: bdd5669e5edb02913cd98a54f8320ed065bd9b0d
-ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
+ms.openlocfilehash: 176ece5e20ae3e83bcb03b24858d3e9f7b1244ff
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60733327"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759298"
 ---
 # <a name="phone-number-management-for-romania"></a>Telefono gestione dei numeri per la Romania
 
@@ -37,7 +37,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams. <br/> |In Romania è possibile ottenere i numeri di telefono per l'organizzazione usando l'Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per la Romania (v.1.0) (rm-rm).](https://download.microsoft.com/download/1/4/d/14d27bf9-4326-409e-be0c-30f88d1fae83/new-phone-number-request-for-romania-(v1.0)-(ro-RO).pdf) <br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conoscere il cliente, completarlo per intero e contattare [il TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato. |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams. <br/> |In Romania è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per la Romania (v.1.0) (rm-rm).](https://download.microsoft.com/download/1/4/d/14d27bf9-4326-409e-be0c-30f88d1fae83/new-phone-number-request-for-romania-(v1.0)-(ro-RO).pdf) <br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conoscere il cliente, completarlo per intero e contattare [il TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato. |
 |Fai trasferire a noi i numeri di telefono.<br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Romania (tutti i numeri) (v.1.0) (rm-rm)](https://download.microsoft.com/download/9/c/1/9c1dcdc3-2161-4e2e-bdce-34397d20782e/letter-of-authorization-(loa)-for-romania-(all-numbers)-(v.1.0)-(rm-rm).pdf) <br/> <br/>Compilarlo e [contattare il service desk TNS per istruzioni.](contact-tns-service-desk.md)<br/><br/>Il trasferimento di numeri in questo mercato può richiedere da quattro a cinque settimane. <br/><br/>Questi numeri non possono essere usati per le conferenze in questo momento.  <br/> |
 |Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il service desk TNS per istruzioni](contact-tns-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
 |Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il service desk TNS per istruzioni](contact-tns-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |

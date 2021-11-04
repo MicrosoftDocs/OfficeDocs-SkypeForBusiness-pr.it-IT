@@ -1,7 +1,7 @@
 ---
 title: Pianificazione avanzata del DNS dei server perimetrali per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 audience: ITPro
 manager: serdars
@@ -16,18 +16,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f3a5895f-f64f-44eb-9a5e-8d606ac1fc38
 description: Visualizzare gli scenari per Skype for Business Server di distribuzione. Che si desideri un singolo server o si preferisca un pool di server con DNS o HLB, questo argomento dovrebbe essere utile.
-ms.openlocfilehash: 208098fe44238d9d96debbde7b8c00daf6622b91
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8aada20b1ffe712a5b4cf0f9df42b139f25248dc
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58602351"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737672"
 ---
 # <a name="advanced-edge-server-dns-planning-for-skype-for-business-server"></a>Pianificazione avanzata del DNS dei server perimetrali per Skype for Business Server
  
 **Riepilogo:** Esaminare gli scenari per Skype for Business Server di distribuzione. Che si desideri un singolo server o si preferisca un pool di server con DNS o HLB, questo argomento dovrebbe essere utile.
   
-Quando si tratta di pianificazione dns (Domain Name System) per Skype for Business Server, molti fattori possono giocare nella decisione. Se la struttura di dominio dell'organizzazione è già in atto, potrebbe essere necessario esaminare come procedere. Inizieremo con gli argomenti trovati di seguito:
+Quando si tratta di pianificazione dns (Domain Name System) per Skype for Business Server, molti fattori possono essere determinanti per la decisione. Se la struttura di dominio dell'organizzazione è già in atto, potrebbe essere necessario esaminare come procedere. Inizieremo con gli argomenti trovati di seguito:
   
 - [Procedura dettagliata di Skype for Business client che individuano i servizi](../../plan-your-deployment/edge-server-deployments/advanced-edge-server-dns.md#WalkthroughOfSkype)
     
@@ -42,7 +42,7 @@ Quando si tratta di pianificazione dns (Domain Name System) per Skype for Busine
 ## <a name="walkthrough-of-skype-for-business-clients-locating-services"></a>Procedura dettagliata di Skype for Business client che individuano i servizi
 <a name="WalkthroughOfSkype"> </a>
 
-Skype for Business client sono simili alle versioni precedenti dei client Lync nel modo in cui trovano e accedono ai servizi in Skype for Business Server. In questa sezione viene specificato in dettaglio il processo di percorso del server.
+Skype for Business client sono simili alle versioni precedenti dei client Lync nel modo in cui trovano e accedono ai servizi in Skype for Business Server. In questa sezione viene dettagliato il processo di percorso del server.
   
 1. lyncdiscoverinternal.\<domain\>
     
@@ -112,9 +112,9 @@ I record DNS per le zone interne ed esterne verranno elencati qui, ma è possibi
     
   - Record DNS A e AAAA (se si utilizza l'indirizzamento IPv6) o record CNAME per l'individuazione automatica dei servizi Web Skype for Business Server **(facoltativo).**
     
-- Tutte le Skype for Business Server perimetrali interne nella rete perimetrale utilizzano questa zona DNS interna per la risoluzione delle query da contoso.com.
+- Tutte le Skype for Business Server perimetrali interne nella rete perimetrale utilizzano questa zona DNS interna per la risoluzione delle query contoso.com.
     
-- Tutti i server che eseguono Skype for Business Server e i client che eseguono Skype for Business Server nella rete aziendale, puntano ai server DNS interni per la risoluzione delle query su contoso.com oppure utilizzano il file Host in ogni server perimetrale ed elencano i record A e AAAA (se si utilizza l'indirizzamento IPv6) per il server hop successivo (in particolare per il VIP del director o del pool di server Director, VIP del pool Front End o server edizione Standard).
+- Tutti i server che eseguono Skype for Business Server e i client che eseguono Skype for Business Server nella rete aziendale, puntano ai server DNS interni per la risoluzione delle query su contoso.com oppure utilizzano il file Host in ogni server perimetrale ed elencano i record A e AAAA (se si utilizza l'indirizzamento IPv6) per il server hop successivo (in particolare per il server Director o il pool di server Director)  VIP, VIP del pool Front End o edizione Standard server).
     
 ### <a name="external-dns"></a>DNS esterno
 
@@ -122,7 +122,7 @@ I record DNS per le zone interne ed esterne verranno elencati qui, ma è possibi
     
 - Questa tabella contoso.com contiene:
     
-  - Dns A and AAAA (if you're using IPv6 addressing) or CNAME records, for automatic discovery of Skype for Business Server web services. Questo è per l'uso con dispositivi mobili.
+  - DNS A and AAAA (if you're using IPv6 addressing) or CNAME records, for automatic discovery of Skype for Business Server web services. Questo è per l'uso con dispositivi mobili.
     
   - Dns A and AAAA (if you're using IPv6 addressing) and SRV records for the Edge external interface of each Skype for Business Server Edge Server or hardware load balanced (HLB) VIP in the perimeter network.
     
@@ -151,7 +151,7 @@ Per approfondire l'esempio, non funziona:
     
      *Un utente che accede come tim@litwareinc.com non funziona per la configurazione automatica, perché il dominio SIP (litwareinc.com) non corrisponde al dominio nel pool (fabrikam.com).* 
     
-Ora che sappiamo tutto questo, se hai bisogno di requisiti automatici per i client Skype for Business senza DNS split brain, hai queste opzioni:
+Ora che sappiamo tutto questo, se è necessario un requisito automatico per i client Skype for Business senza DNS split brain, sono disponibili queste opzioni:
   
 - **Oggetti Criteri di gruppo (GPO)**
     
@@ -168,9 +168,9 @@ Ora che sappiamo tutto questo, se hai bisogno di requisiti automatici per i clie
     
 - **Area interna pin-point**
     
-    Se la creazione di un'intera zona nel DNS interno non è un'opzione, è possibile creare zone pin-point (dedicate) corrispondenti ai record SRV necessari per la configurazione automatica e popolare tali zone utilizzando dnscmd.exe. Dnscmd.exe è obbligatorio perché l'interfaccia utente DNS non supporta la creazione di zone pin-point.
+    Se la creazione di un'intera zona nel DNS interno non è un'opzione, è possibile creare zone pin-point (dedicate) corrispondenti ai record SRV necessari per la configurazione automatica e popolare tali aree utilizzando dnscmd.exe. Dnscmd.exe è necessario perché l'interfaccia utente DNS non supporta la creazione di zone pin-point.
     
-    Ad esempio, se il dominio SIP è contoso.com e si dispone di un pool Front End denominato pool01 contenente due Front End Server, nel DNS interno saranno necessarie le seguenti zone di punti di ancoraggio e record A:
+    Ad esempio, se il dominio SIP è contoso.com e si dispone di un pool Front End denominato pool01 che contiene due Front End Server, nel DNS interno saranno necessarie le seguenti zone pin-point e record A:
     
   ```console
   dnscmd . /zoneadd _sipinternaltls._tcp.contoso.com. /dsprimary
@@ -248,7 +248,7 @@ Il bilanciamento del carico DNS consente di:
   
 - Bilanciamento del carico SIP da server a server nei server perimetrali.
     
-- Bilanciamento del carico Delle applicazioni UCAS (Unified Communication Application Services), ad esempio Operatore automatico conferenza, Response Group e Parcheggio di chiamata.
+- Bilanciamento del carico delle applicazioni UCAS (Unified Communication Application Services), ad esempio servizi di conferenza Operatore automatico, Response Group e Parcheggio di chiamata.
     
 - Impedire nuove connessioni alle applicazioni UCAS (noto anche come drenaggio).
     

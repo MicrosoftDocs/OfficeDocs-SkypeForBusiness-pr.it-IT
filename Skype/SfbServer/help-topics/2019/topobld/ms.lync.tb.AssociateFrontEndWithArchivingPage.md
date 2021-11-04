@@ -1,7 +1,7 @@
 ---
 title: Associare Front End Server al server di archiviazione
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: a0d732ab-e845-4f46-8f7b-3ba506597a92
 ROBOTS: NOINDEX, NOFOLLOW
 description: A ogni pool Front End e a ogni Survivable Branch Appliance può essere associato un solo server di archiviazione. Quando l'archiviazione è abilitata per il sito, il server di archiviazione raccoglie e registra il contenuto dei messaggi istantanei e delle conferenze Web proveniente dalle conversazioni che coinvolgono gli utenti ospitati nei pool e nei Survivable Branch Appliance associati.
-ms.openlocfilehash: 71b8c9fe38ea292d541c180a997ae4d0551068b3
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 59245f68fb75a1e2cd459ab342ea2eaf2c818291
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58631780"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60741102"
 ---
 # <a name="associate-front-end-with-archiving"></a>Associare Front End Server al server di archiviazione
  

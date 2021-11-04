@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams fase di adozione 1 - Start
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.date: 10/29/2018
 audience: Admin
@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
-description: In questo articolo verranno trattate le attività nella fase di avvio Microsoft Teams adozione. Informazioni sulle procedure consigliate per Microsoft Teams configurazione e pianificazione del team.
+description: In questo articolo verranno trattate le attività nella fase di avvio Microsoft Teams'adozione. Informazioni sulle procedure consigliate per Microsoft Teams configurazione e pianificazione del team.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 72bdeb6307970676de1b242738ec2d50789fa7c2
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 4cf809a665a008adf7b7e613a58f4ff274c6a708
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728085"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60741532"
 ---
 # <a name="microsoft-teams-adoption-phase-1---start"></a>Microsoft Teams fase di adozione 1 - Start
 
@@ -50,9 +50,9 @@ La tabella seguente elenca i ruoli principali per il team di progetto. In un'org
 
 | Ruolo | Responsabilità | Reparto |
 | ---- | ---------------- | ---------- |
-| Executive Sponsor<sup>1</sup> | Comunicare una visione di alto livello. Connessione Teams l'implementazione delle principali iniziative di mission e priority presso l'azienda. | Leadership dei dirigenti |
-| Proprietario successo<sup>1</sup> | Assicurarsi che gli obiettivi aziendali siano realizzati dall'Teams aziendale. | Qualsiasi reparto |
-| Program Manager<sup>1</sup> | Supervisionare l'intero processo Teams di esecuzione e implementazione. | IT |
+| Executive Sponsor<sup>1</sup> | Comunicare una visione di alto livello. Connessione Teams'implementazione delle principali iniziative di mission e priorità dell'azienda. | Leadership dei dirigenti |
+| Proprietario successo<sup>1</sup> | Assicurarsi che gli obiettivi aziendali siano realizzati Teams'implementazione. | Qualsiasi reparto |
+| Program Manager<sup>1</sup> | Supervisionare l'intero Teams di avvio e implementazione. | IT |
 | Champions<sup>1</sup> | Aiuta a evangelizzare Teams, supportare la creazione di competenze e fornire informazioni dettagliate sull'utilizzo. | Più reparti |
 | Cliente potenziale della formazione | Gestire e comunicare contenuti di formazione su Teams. | IT o altro |
 | Clienti potenziali del reparto (stakeholder)<sup>2</sup> | Identificare il modo in cui specifici reparti useranno Teams e incoraggiare l'impegno. | Qualsiasi reparto (gestione) |
@@ -63,11 +63,11 @@ La tabella seguente elenca i ruoli principali per il team di progetto. In un'org
 <sup>1</sup> Questi ruoli sono essenziali per il successo del progetto.</br>
 <sup>2</sup> Questi ruoli sono importanti per il successo complessivo del programma.
 
-Nella maggior parte dei casi, questo team iniziale dovrebbe essere un piccolo gruppo di persone con una mentalità simile che sono interessate a Teams e possono anche essere in grado di essere in grado di eseguire l'implementazione. Quando il piano di adozione passa a fasi aggiuntive, si includeranno più persone nel team. Ti suggeriamo anche di sfruttare le risorse Microsoft disponibili per aiutarti. 
+Nella maggior parte dei casi, questo team iniziale deve essere un piccolo gruppo di persone con una mentalità simile che sono interessate a Teams e che possono anche essere in grado di essere in grado di eseguire l'implementazione. Quando il piano di adozione passa a fasi aggiuntive, si includeranno più persone nel team. Ti suggeriamo anche di sfruttare le risorse Microsoft disponibili per aiutarti. 
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-Il [servizio tecnico Microsoft Community](https://aka.ms/TechCommunity) informazioni approfondite sull'adozione e sui problemi tecnici forniti da peer per molti Microsoft 365 e Office 365 prodotti. È consigliabile partecipare alle community seguenti:
+Il [servizio tecnico Microsoft Community](https://aka.ms/TechCommunity) fornisce informazioni approfondite fornite da peer sull'adozione e sui problemi tecnici per molti Microsoft 365 e Office 365 prodotti. È consigliabile partecipare alle community seguenti:
 
 - [Microsoft Teams technical Community:](https://aka.ms/TeamsCommunity) ottenere risposte alle domande sui prodotti, imparare da altri clienti di Teams e seguire il blog per rimanere aggiornati sulle nuove funzionalità e sui casi di utilizzo per Teams. 
 - [Programma Campioni](https://aka.ms/O365Champions) e community di Driving Adoption: è possibile apprendere dai colleghi come guidare al meglio l'adozione di carichi di lavoro di Microsoft 365 o Office 365 come Teams, SharePoint, Yammer e altri prodotti. Aperto ai professionisti IT, agli utenti aziendali, allo sviluppatore "accidentale" e a chiunque sia interessato a guidare l'adozione di servizi cloud.  

@@ -5,7 +5,7 @@ ms:assetid: 8f556849-692b-44a0-9514-4468fc9a39d0
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398725(v=OCS.15)
 ms:contentKeyID: 48184825
 mtps_version: v=OCS.15
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -14,20 +14,20 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: È possibile configurare uno o più criteri di accesso utente esterno per controllare se gli utenti remoti possono collaborare con utenti Skype for Business Server interni. Per controllare l'accesso degli utenti remoti è possibile configurare criteri a livello globale, di sito e di utente.
-ms.openlocfilehash: 3400544e39941aca408ca99f4c323f97e8c2cd0b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: È possibile configurare uno o più criteri di accesso degli utenti esterni per controllare se gli utenti remoti possono collaborare con utenti Skype for Business Server interni. Per controllare l'accesso degli utenti remoti è possibile configurare criteri a livello globale, di sito e di utente.
+ms.openlocfilehash: 4029a2fe21c4d7a013808cd77b28d670d1bf994f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58625188"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60772042"
 ---
 # <a name="configure-policies-to-control-remote-user-access-in-skype-for-business-server"></a>Configurare i criteri per controllare l'accesso degli utenti remoti in Skype for Business Server
 
-È possibile configurare uno o più criteri di accesso utente esterno per controllare se gli utenti remoti possono collaborare con utenti Skype for Business Server interni. Per controllare l'accesso degli utenti remoti è possibile configurare criteri a livello globale, di sito e di utente. I criteri a livello di sito hanno la priorità sui criteri globali e i criteri utente hanno la priorità sui criteri a livello di sito e globali. Per informazioni dettagliate sui tipi di criteri che è possibile configurare, vedere [Managing federation and external access to Skype for Business Server](../managing-federation-and-external-access.md). Skype for Business Server impostazioni dei criteri applicate a un livello di criteri possono sostituire le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Skype for Business Server è la seguente: i criteri utente (maggiore influenza) sostituiscono i criteri sito e i criteri sito sostituiscono i criteri globali (minore influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto.
+È possibile configurare uno o più criteri di accesso degli utenti esterni per controllare se gli utenti remoti possono collaborare con utenti Skype for Business Server interni. Per controllare l'accesso degli utenti remoti è possibile configurare criteri a livello globale, di sito e di utente. I criteri a livello di sito hanno la priorità sui criteri globali e i criteri utente hanno la priorità sui criteri a livello di sito e globali. Per informazioni dettagliate sui tipi di criteri che è possibile configurare, vedere [Managing federation and external access to Skype for Business Server](../managing-federation-and-external-access.md). Skype for Business Server impostazioni dei criteri applicate a un livello di criteri possono sostituire le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Skype for Business Server è la seguente: i criteri utente (maggiore influenza) sostituiscono i criteri sito e i criteri sito sostituiscono i criteri globali (minore influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto.
 
 > [!NOTE]  
-> È possibile configurare criteri per il controllo dell'accesso degli utenti remoti anche se non si è abilitato l'accesso utente remoto per l'organizzazione. I criteri configurati, tuttavia, verranno applicati solo dopo l'abilitazione dell'accesso utente remoto per l'organizzazione. Inoltre, se si specifica un criterio utente per controllare l'accesso degli utenti remoti, il criterio si applica solo agli utenti abilitati per Skype for Business Server e configurati per l'utilizzo del criterio. Per informazioni dettagliate sulla specifica degli utenti che possono accedere a Skype for Business Server da posizioni [remote,](assign-an-external-user-access-policy.md)vedere Assign an external user access policy .
+> È possibile configurare criteri per il controllo dell'accesso degli utenti remoti anche se non si è abilitato l'accesso utente remoto per l'organizzazione. I criteri configurati, tuttavia, verranno applicati solo dopo l'abilitazione dell'accesso utente remoto per l'organizzazione. Inoltre, se si specifica un criterio utente per controllare l'accesso degli utenti remoti, il criterio si applica solo agli utenti abilitati per Skype for Business Server e configurati per l'utilizzo del criterio. Per informazioni dettagliate sulla specifica degli utenti che possono accedere a Skype for Business Server da posizioni remote, vedere [Assign an external user access policy.](assign-an-external-user-access-policy.md)
 
 Eseguire la procedura seguente per configurare ogni criterio di accesso esterno che si desidera utilizzare per controllare l'accesso degli utenti remoti.
 

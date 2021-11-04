@@ -1,7 +1,7 @@
 ---
 title: Gestire l'autenticazione in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,13 +12,13 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d7b17445-1b01-4b7a-9b7f-f86ad59f1a2b
-description: "Riepilogo: utilizzare le procedure seguenti per gestire la Skype for Business Server e l'autenticazione."
-ms.openlocfilehash: 77d7163f6064be51ba4c835d7f61363820b23da8
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: 'Riepilogo: utilizzare le procedure seguenti per gestire la Skype for Business Server sicurezza e autenticazione.'
+ms.openlocfilehash: 5f9403adf5d31f3692c4778bb19867279c6767e7
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603975"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60772142"
 ---
 # <a name="manage-authentication-in-skype-for-business-server"></a>Gestire l'autenticazione in Skype for Business Server
  
@@ -32,7 +32,7 @@ Utilizzare le procedure seguenti per gestire la sicurezza Skype for Business Ser
     
 - [Passaggio dei certificati AV e OAuth in Skype for Business Server tramite -Roll in Set-CsCertificate](stage-av-and-oauth-certificates.md)
     
-- [Assegnare un certificato di autenticazione da server a server Skype for Business Server](assign-a-server-to-server-certificate.md)
+- [Assegnare un certificato di autenticazione da server a server a Skype for Business Server](assign-a-server-to-server-certificate.md)
 
 - [Configurare l'autenticazione da server a server per un Skype for Business Server ibrido.](configure-a-hybrid-environment.md)
 

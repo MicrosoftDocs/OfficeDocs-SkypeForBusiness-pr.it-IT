@@ -1,7 +1,7 @@
 ---
 title: Pianificare più numeri di emergenza in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 5ed45a22-ddf0-419f-84da-895a73df855f
 description: Leggere questo argomento per informazioni su come pianificare più numeri di emergenza in Skype for Business Server.
-ms.openlocfilehash: 06b65e889c4a1ae9badf84d3d6fc948405ed4db9
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8e4761b22295d71c33af414e2a92dac7bf1210d6
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58634230"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60741963"
 ---
 # <a name="plan-for-multiple-emergency-numbers-in-skype-for-business-server"></a>Pianificare più numeri di emergenza in Skype for Business Server
  
@@ -35,7 +35,7 @@ Questa funzionalità è utile anche per i provider di servizi sanitari negli Sta
 
 È possibile configurare le chiamate di emergenza creando criteri percorso che definiscono la modalità di implementazione delle chiamate di emergenza. Il criterio percorso viene utilizzato per definire il numero che costituisce una chiamata di emergenza, ad esempio 911 negli Stati Uniti. 999 e 112 nel Regno Unito. Il criterio percorso determina se un utente è abilitato per le chiamate di emergenza e, in tal caso, qual è il comportamento di una chiamata di emergenza. È inoltre possibile definire se la sicurezza aziendale deve essere notificata automaticamente e come instradare la chiamata.
   
-Per ulteriori informazioni sulla definizione e la modifica di un criterio percorso, vedere [Plan location policies for Skype for Business Server](location-policies.md) e Create location policies in [Skype for Business Server](../../deploy/deploy-enterprise-voice/create-location-policies.md). Questi argomenti descrivono i concetti relativi ai criteri percorso. Tuttavia, è necessario seguire le istruzioni in [Configurare più numeri di](../../deploy/deploy-enterprise-voice/configure-multiple-emergency-numbers.md) emergenza in Skype for Business per configurare più numeri di emergenza.
+Per ulteriori informazioni sulla definizione e la modifica di un criterio [percorso,](../../deploy/deploy-enterprise-voice/create-location-policies.md)vedere Plan location policies for [Skype for Business Server](location-policies.md) e Create location policies in Skype for Business Server . Questi argomenti descrivono i concetti relativi ai criteri percorso. Tuttavia, è necessario seguire le istruzioni in Configurare più numeri di emergenza [in](../../deploy/deploy-enterprise-voice/configure-multiple-emergency-numbers.md) Skype for Business per configurare più numeri di emergenza.
   
 Quando si pianificano più numeri di emergenza, tenere presente quanto segue:
   
@@ -46,7 +46,7 @@ Quando si pianificano più numeri di emergenza, tenere presente quanto segue:
   
 - Per ogni numero di emergenza, è possibile specificare zero o più maschere di composizione di emergenza, che sono univoche per un determinato criterio di posizione.
     
-    Una maschera di composizione è un numero che si desidera convertire nel valore del numero di chiamata di emergenza quando viene composto. Si supponga ad esempio di immettere un valore pari a 212 in questo campo e che il campo numero di chiamata di emergenza abbia un valore pari a 911. Quando un utente compone il numero 212, il numero viene convertito in 911. Ciò consente di comporre numeri di emergenza alternativi e di avere comunque i servizi di emergenza per raggiungere la chiamata (ad esempio, se un utente di un paese o di un'area geografica con un numero di emergenza diverso tenta di comporre il numero di quel paese o area geografica anziché il numero del paese o dell'area geografica in cui si trova). È possibile definire più maschere di composizione del numero di emergenza separando i valori con un punto e virgola. Ad esempio, 212;414. Il limite di stringa per una maschera di composizione è di 100 caratteri. Ogni carattere deve essere costituito da una cifra compresa tra 0 e 9.
+    Una maschera di composizione è un numero che si desidera convertire nel valore del numero di chiamata di emergenza quando viene composto. Si supponga ad esempio di immettere un valore pari a 212 in questo campo e che il campo numero di chiamata di emergenza abbia un valore pari a 911. Quando un utente compone il numero 212, il numero viene convertito in 911. Ciò consente di comporre numeri di emergenza alternativi e di avere comunque i servizi di emergenza per raggiungere la chiamata (ad esempio, se un utente di un paese o di un'area geografica con un numero di emergenza diverso tenta di comporre il numero del paese o dell'area geografica anziché il numero del paese o dell'area geografica in cui si trova). È possibile definire più maschere di composizione del numero di emergenza separando i valori con un punto e virgola. Ad esempio, 212;414. Il limite di stringa per una maschera di composizione è di 100 caratteri. Ogni carattere deve essere costituito da una cifra compresa tra 0 e 9.
     
 - Ogni criterio percorso dispone di un singolo utilizzo PSTN (Public Switched Telephone Network) utilizzato per determinare quale route vocale viene utilizzata per instradare le chiamate di emergenza dai client che utilizzano questo criterio. L'utilizzo può avere una route univoca per ogni numero di emergenza.
     

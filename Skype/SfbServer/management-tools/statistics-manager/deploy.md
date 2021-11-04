@@ -1,7 +1,7 @@
 ---
 title: Distribuire il gestore delle statistiche per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 37b2bb9c-c5d4-4fb0-a976-670b7594b82f
 description: 'Riepilogo: leggere questo argomento per informazioni su come distribuire Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: 966d6aa71eff93f616ae0eb1a7443aebab600016
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 6444f89f43ea4951e186af589f5986e5a3e7bc9e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58612095"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60778156"
 ---
 # <a name="deploy-statistics-manager-for-skype-for-business-server"></a>Distribuire il gestore delle statistiche per Skype for Business Server
  
@@ -166,7 +166,7 @@ Installare un agente in ogni Skype for Business Server che si desidera monitorar
     
    - **Installa Dir:** Questa è la directory in cui verranno installati i file binari. È possibile modificarla rispetto all'impostazione predefinita utilizzando il **pulsante Sfoglia.**
     
-   - **AppData Dir:** Si tratta della directory in cui verranno archiviati la cartella Logs e il file password.txt crittografato. È possibile modificare l'impostazione predefinita. Non verrà eliminato durante la disinstallazione.
+   - **AppData Dir:** Questa è la directory in cui verranno archiviati la cartella Logs e il file password.txt crittografato. È possibile modificare l'impostazione predefinita. Non verrà eliminato durante la disinstallazione.
     
 3. Fare clic su **Installa**.
     
@@ -179,7 +179,7 @@ msiexec /l install.log /i StatsManPerfAgent.msi SERVICE_THUMBPRINT=<thumbprint> 
 ### <a name="import-the-topology"></a>Importare la topologia
 <a name="BKMK_ImportTopology"> </a>
 
-Dopo l'installazione e l'esecuzione di Gestione statistiche, è necessario importare la topologia di Skype for Business Server in modo che Gestione statistiche conosca il sito, il pool e il ruolo di ogni server. Per importare la topologia Skype for Business Server, utilizzare il cmdlet [Get-CsPool](/powershell/module/skype/get-cspool?view=skype-ps) per recuperare informazioni su ogni pool in uso nell'organizzazione, quindi importare tali informazioni in Gestione statistiche.
+Dopo l'installazione e l'esecuzione di Gestione statistiche, è necessario importare la topologia di Skype for Business Server in modo che Gestione statistiche conosca il sito, il pool e il ruolo di ogni server. Per importare la topologia di Skype for Business Server, utilizzare il cmdlet [Get-CsPool](/powershell/module/skype/get-cspool?view=skype-ps) per recuperare le informazioni su ogni pool in uso nell'organizzazione e quindi importare tali informazioni in Gestione statistiche.
   
 Per importare la Skype for Business Server, attenersi alla seguente procedura:
   
@@ -214,7 +214,7 @@ Il comando seguente consente di visualizzare tutte le opzioni:
 Get-Help .\Update-StatsManServerInfo.ps1 -Detailed 
 ```
 
-Per visualizzare le informazioni sul server attualmente importate, eseguire lo script seguente: 
+Per visualizzare le informazioni sul server attualmente importato, eseguire lo script seguente: 
   
 ```powershell
 .\Get-StatsManServerInfo.ps1
@@ -267,7 +267,7 @@ Se l'avvio di un agente non riesce, verificare quanto segue:
   .\PerfAgentStorageManager.exe -redis=localhost -a=getcountervalues  -counter="\\*\Processor Information\% Processor Time_Mean_Mean\_Total" -file:all-processor.csv
   ```
 
-Per informazioni su tutti gli eventi che potrebbero essere visualizzati nel registro eventi dell'applicazione, vedere [Troubleshoot Statistics Manager for Skype for Business Server](troubleshoot.md).
+Per informazioni su tutti gli eventi che è possibile visualizzare nel registro eventi dell'applicazione, vedere [Troubleshoot Statistics Manager for Skype for Business Server](troubleshoot.md).
   
 ## <a name="create-a-self-signed-certificate"></a>Creare un certificato autofirmato
 <a name="BKMK_SelfCert"> </a>

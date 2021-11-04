@@ -1,7 +1,7 @@
 ---
 title: Gestire le opzioni di archiviazione in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 50399f26-58a3-4ce2-8229-32a8cafc7733
 description: 'Riepilogo: informazioni su come configurare le opzioni di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: c38142f9a3c4e0db6c856bb1c75846399e9d62dd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4ab0f64db30638b29367f113acc342077b84b113
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58616612"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747310"
 ---
 # <a name="manage-archiving-options-in-skype-for-business-server"></a>Gestire le opzioni di archiviazione in Skype for Business Server
 
@@ -59,7 +59,7 @@ L'archiviazione viene inizialmente configurata durante la distribuzione, ma è p
     
 ## <a name="configure-archiving-options-by-using-windows-powershell"></a>Configurare le opzioni di archiviazione tramite Windows PowerShell
 
-È inoltre possibile configurare le opzioni di archiviazione utilizzando i cmdlet Windows PowerShell elencati nella tabella seguente. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, [vedere Skype for Business Server Management Shell](../management-shell.md).
+È inoltre possibile configurare le opzioni di archiviazione utilizzando i cmdlet Windows PowerShell elencati nella tabella seguente. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, [vedere Skype for Business Server Management Shell.](../management-shell.md)
   
 
 |**Cmdlet**|**Descrizione**|

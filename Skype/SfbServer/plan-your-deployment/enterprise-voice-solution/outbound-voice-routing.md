@@ -1,7 +1,7 @@
 ---
 title: Pianificare il routing vocale in uscita in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,18 +16,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fde45195-6eb4-403c-9094-57df7fc0bd2a
 description: Informazioni sul routing vocale in uscita in Skype for Business Server VoIP aziendale, incluse le impostazioni di routing delle chiamate, i dial plan, le regole di normalizzazione, i criteri vocali, i record di utilizzo PSTN e le route vocali.
-ms.openlocfilehash: 233556993c5feb3eac9a6b773161a2491361e35e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 47b0b196579d69612c3c9d62c8ca9aade008535e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58593550"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759508"
 ---
 # <a name="plan-for-outbound-voice-routing-in-skype-for-business-server"></a>Pianificare il routing vocale in uscita in Skype for Business Server
  
 Informazioni sul routing vocale in uscita in Skype for Business Server VoIP aziendale, incluse le impostazioni di routing delle chiamate, i dial plan, le regole di normalizzazione, i criteri vocali, i record di utilizzo PSTN e le route vocali.
   
-Il routing delle chiamate in uscita si applica VoIP aziendale chiamate in uscita destinate a un gateway PSTN (Public Switched Telephone Network), un trunk o un PBX (Private Branch Exchange). Quando un Skype for Business esegue una chiamata, il server normalizza il numero di telefono nel formato E.164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a trovare una corrispondenza, applica la logica di routing delle chiamate in uscita in base alla stringa di composizione fornita. È possibile definire tale logica configurando le impostazioni del server descritte nella tabella seguente.
+Il routing delle chiamate in uscita si applica VoIP aziendale chiamate destinate a un gateway PSTN (Public Switched Telephone Network), un trunk o un PBX (Private Branch Exchange). Quando un Skype for Business esegue una chiamata, il server normalizza il numero di telefono nel formato E.164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a trovare una corrispondenza, applica la logica di routing delle chiamate in uscita in base alla stringa di composizione fornita. È possibile definire tale logica configurando le impostazioni del server descritte nella tabella seguente.
   
 **Skype for Business Server Routing delle chiamate in uscita Impostazioni**
 
@@ -49,7 +49,7 @@ Le regole di normalizzazione definiscono il modo in cui i numeri di telefono esp
 
 L'ambito di un dial plan determina il livello gerarchico a cui è possibile applicare il dial plan. In Skype for Business Server, a un utente può essere assegnato un dial plan specifico per utente. Se non viene assegnato un dial plan utente, viene applicato il dial plan del pool Front End. Se non esiste alcun dial plan del pool Front End, viene applicato il dial plan del sito. Infine, se non è presente alcun altro dial plan applicabile all'utente, viene applicato il dial plan globale.
   
-I client ottengono i livelli di ambito del dial plan tramite le impostazioni di provisioning in banda fornite quando gli utenti a questo Skype for Business. L'amministratore può gestire e assegnare livelli di ambito del dial plan utilizzando il Skype for Business Server di controllo.
+I client ottengono livelli di ambito del dial plan tramite le impostazioni di provisioning in banda fornite quando gli utenti a questo Skype for Business. L'amministratore può gestire e assegnare livelli di ambito del dial plan utilizzando il Skype for Business Server di controllo.
   
 > [!NOTE]
 > Il dial plan del gateway PSTN (Public Switched Telephone Network) a livello di servizio viene applicato alle chiamate in arrivo da un determinato gateway. 
@@ -82,7 +82,7 @@ Per pianificare un dial plan, attenersi alla seguente procedura:
     
 - Decidere se sono necessari più dial plan per una singola località. 
     
-    Se l'organizzazione gestisce un singolo dial plan in più posizioni, potrebbe essere comunque necessario creare un dial plan separato per gli utenti di VoIP aziendale che esereranno la migrazione da un PBX (Private Branch Exchange) e che dovranno conservare gli interni esistenti.
+    Se l'organizzazione gestisce un singolo dial plan in più posizioni, potrebbe essere comunque necessario creare un dial plan separato per gli utenti di VoIP aziendale che esereranno la migrazione da un PBX (Private Branch Exchange) e che dovranno mantenere gli interni esistenti.
     
 - Decidere se sono necessari dial plan per utente. Ad esempio, se in un sito di succursale sono presenti utenti registrati nel sito centrale o utenti registrati in un Survivable Branch Appliance, è possibile prendere in considerazione scenari di composizione speciali per tali utenti che utilizzano dial plan e regole di normalizzazione per utente. Per informazioni dettagliate, vedere [Plan for VoIP aziendale resiliency in Skype for Business Server](enterprise-voice-resiliency.md).
     
@@ -200,12 +200,12 @@ I passaggi seguenti consentono di pianificare i criteri vocali necessari per la 
     
 ### <a name="voice-policy-scope"></a>Ambito dei criteri vocali
 
-L'ambito dei criteri vocali determina il livello gerarchico a cui è possibile applicare il criterio. In Skype for Business Server, è possibile configurare i criteri vocali con i livelli di ambito seguenti (elencati dal più specifico al più generale).
+L'ambito dei criteri vocali determina il livello gerarchico a cui è possibile applicare il criterio. In Skype for Business Server, è possibile configurare i criteri vocali con i livelli di ambito seguenti (elencati dai più specifici ai più generici).
   
 - Il **criterio vocale utente** può essere assegnato a singoli utenti, gruppi o oggetti contatto. Questo è il criterio di livello più basso. È possibile distribuire criteri vocali utente per abilitare le funzionalità per determinati utenti o gruppi in un sito, ma non per altri nello stesso sito. Si potrebbe decidere ad esempio di disabilitare le chiamate interurbane per alcuni dipendenti. Ai fini dell'assegnazione di un criterio vocale, un oggetto contatto viene considerato un singolo utente.
     
     > [!NOTE]
-    > È consigliabile distribuire criteri vocali utente per gli utenti VoIP aziendale del sito di succursale registrati nella distribuzione del sito centrale o per gli utenti registrati in un Survivable Branch Appliance. 
+    > È consigliabile distribuire criteri vocali utente per gli utenti del sito di succursale VoIP aziendale registrati nella distribuzione del sito centrale o gli utenti registrati in un Survivable Branch Appliance. 
   
 - Il **criterio vocale di sito** si applica a un intero sito, con l'eccezione degli utenti, gruppi o oggetti contatto a cui è stato assegnato un criterio vocale utente. Per definire un criterio vocale di sito, è necessario specificare il sito a cui si applica il criterio. Se non viene assegnato un criterio vocale utente, viene utilizzato il criterio vocale di sito.
     
@@ -329,6 +329,6 @@ Durante la creazione delle route delle chiamate in uscita, tenere presente i fat
     
 - Se la parte dell'URI della richiesta relativa al dominio non contiene un dominio supportato per l'azienda, il componente di routing in uscita nel server non elabora la chiamata.
     
-- Se un utente non è abilitato per VoIP aziendale, il server applica un'altra logica di routing, come appropriato.
+- Se un utente non è abilitato per VoIP aziendale, il server applica un'altra logica di routing, in base alle esigenze.
     
 - Se una chiamata viene instradata a un gateway completamente occupato (tutte le linee di trunk sono occupate), il gateway rifiuta la chiamata e la logica di routing in uscita la reindirizza alla successiva route Least Cost Routing. È necessario valutare con attenzione questo aspetto perché un gateway adatto nelle dimensioni a una piccola sede all'estero, ad esempio Zurigo, potrebbe in realtà trasportare una quantità significativa di traffico non locale per le chiamate internazionali dirette in Svizzera. Se il gateway non presenta dimensioni adeguate a questo traffico aggiuntivo, le chiamate dirette in Svizzera potrebbero essere instradate mediante un gateway in Germania, con conseguenti tariffe più alte.

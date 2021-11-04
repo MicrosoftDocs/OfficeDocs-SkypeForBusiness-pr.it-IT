@@ -1,7 +1,7 @@
 ---
 title: Autenticazione utente e client per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 77f4b62a-f75c-424d-8f02-a6519090015d
 description: Un utente attendibile è un utente le cui credenziali sono state autenticate da un server attendibile in Skype for Business Server. Tale server è in genere un server Standard Edition, Enterprise Edition Front End o Director. Skype for Business Server si basa su Servizi di dominio Active Directory come unico archivio back-end attendibile delle credenziali utente.
-ms.openlocfilehash: 069ce556f37591f7332e8e968dc02e657b090d03
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d256efdf69afce16a06b3b055a9446b29deb7cb0
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58627798"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737642"
 ---
 # <a name="user-and-client-authentication-for-skype-for-business-server"></a>Autenticazione utente e client per Skype for Business Server
  
@@ -50,7 +50,7 @@ I certificati client forniscono un modo alternativo per autenticare gli utenti S
   
 ### <a name="cryptographic-requirements-due-to-asp-net-45"></a>Requisiti di crittografia dovuti a ASP.NET 4.5 
 
-A partire da Skype for Business Server 2015 CU5, AES non è supportato per ASP.NET 4.6 e ciò potrebbe causare l'avvio dell'app riunioni Skype. Se un client utilizza AES come valore di convalida della chiave del computer, sarà necessario reimpostare il valore della chiave del computer su SHA-1 o su un altro algoritmo supportato a livello di sito dell'app riunioni di Skype in IIS. Se necessario, vedere Gestione configurazione ASP.NET [IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-aspnet-configuration-management) per istruzioni.
+A partire Skype for Business Server 2015 CU5, AES non è supportato per ASP.NET 4.6 e ciò potrebbe causare un errore di avvio dell'app Riunioni Skype. Se un client utilizza AES come valore di convalida della chiave del computer, sarà necessario reimpostare il valore della chiave del computer su SHA-1 o su un altro algoritmo supportato a livello di sito dell'app riunioni di Skype in IIS. Se necessario, vedere [Gestione configurazione ASP.NET IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-aspnet-configuration-management) per istruzioni.
   
 Altri valori supportati sono:
   
@@ -60,4 +60,4 @@ Altri valori supportati sono:
     
 - HMACSHA512
     
-  I valori AES, 3DES e MD5 non sono più consentiti, in quanto una volta erano ASP.NET 4. [Miglioramenti della crittografia in ASP.NET 4.5, pt. 2](https://blogs.msdn.microsoft.com/webdev/2012/10/23/cryptographic-improvements-in-asp-net-4-5-pt-2/) ha altri dettagli.
+  I valori AES, 3DES e MD5 non sono più consentiti, in quanto una volta erano ASP.NET 4. [Miglioramenti della crittografia in ASP.NET 4.5, pt. 2](https://blogs.msdn.microsoft.com/webdev/2012/10/23/cryptographic-improvements-in-asp-net-4-5-pt-2/) include ulteriori dettagli.

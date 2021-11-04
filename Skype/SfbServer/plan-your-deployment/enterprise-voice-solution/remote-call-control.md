@@ -1,7 +1,7 @@
 ---
 title: Pianificare il controllo delle chiamate remote in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 688a0328-1aa7-449f-b5f7-98c876112ed2
 description: Il controllo delle chiamate remote era una funzionalità delle versioni precedenti di Lync Server che consente agli utenti di controllare i telefoni PBX con Lync Server. In Skype for Business Server, questa funzionalità è stata sostituita con Chiama tramite lavoro. Nelle versioni client per Skype for Business Server 2015 e successive, il controllo delle chiamate remote non è più disponibile per la configurazione nel client ed è stato rimosso per l'utilizzo.
-ms.openlocfilehash: de06005cb26e163a6f7f26c64e6863b6e6f4acbb
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 23d8f25f4a416c10bf4fd186db68a729703891ca
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60015290"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60746742"
 ---
 # <a name="plan-for-remote-call-control-in-skype-for-business"></a>Pianificare il controllo delle chiamate remote in Skype for Business
  
@@ -43,6 +43,6 @@ Per ulteriori informazioni, vedere [Remote Call Control](/previous-versions/offi
 
 [Pianificare la chiamata tramite lavoro in Skype for Business Server](call-via-work.md)
   
-[Confronto delle funzionalità del client desktop per Skype for Business](../../plan-your-deployment/clients-and-devices/desktop-feature-comparison.md)
+[Confronto delle funzionalità client desktop per Skype for Business](../../plan-your-deployment/clients-and-devices/desktop-feature-comparison.md)
 
 [Effettuare una Skype for Business chiamata, ma usare il telefono da tavolo PBX per l'audio](https://support.office.com/article/Make-a-Skype-for-Business-call-but-use-your-PBX-desk-phone-for-audio-6a316c11-a05e-460c-b969-32ff0ad848e6)

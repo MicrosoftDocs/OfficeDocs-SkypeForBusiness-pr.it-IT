@@ -1,7 +1,7 @@
 ---
 title: Spostare i dati dell'archivio file in un nuovo archivio file in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 8/30/2016
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 8d1d5819-add2-4f5d-a436-74c00a281df0
 description: "Se è necessario rimuovere il file server che attualmente funge da archivio file per la distribuzione di Skype for Business Server 2015 o se è necessario apportare altre modifiche che renderebbero l'archivio file corrente non disponibile, è innanzitutto necessario creare una nuova condivisione. È quindi necessario eseguire la procedura seguente:"
-ms.openlocfilehash: 10571b398b6e39624c408f0e36baa317212f9b21
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 73e66930f4c47ead3df01e04d30930b0257204e2
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614256"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60778376"
 ---
 # <a name="move-file-store-data-to-a-new-file-store-in-skype-for-business-server-2015"></a>Spostare i dati dell'archivio file in un nuovo archivio file in Skype for Business Server 2015
 
@@ -42,7 +42,7 @@ Se è necessario rimuovere il file server che attualmente funge da archivio file
 
 3. Sulla barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.
 
-4. Per ogni pool di server Director, Server Director, server edizione Standard e pool Front End che utilizza l'archivio file che si intende rimuovere, selezionare il server o il pool, fare clic su Azione e quindi su Arresta tutti i **servizi.** 
+4. Per ogni pool di server Director, Director, server edizione Standard e pool Front End che utilizza l'archivio file che si intende rimuovere, selezionare il server o il pool, fare clic su Azione e quindi su Arresta tutti i **servizi.**
 
 5. Accedere al computer in cui è installato Generatore di topologie come membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins.
 
@@ -65,7 +65,7 @@ Se è necessario rimuovere il file server che attualmente funge da archivio file
 
 13. In **Modifica proprietà,** in **Associazioni** in **Archivio file** selezionare la nuova condivisione file e quindi fare clic su **OK.**
 
-14. Pubblicare la topologia, controllare lo stato della replica e quindi eseguire Skype for Business Server distribuzione guidata in base alle esigenze. Per informazioni dettagliate, vedere [Common Procedures for Removing Lync Servers and Components](/previous-versions/office/skype-server-2010/gg195688(v=ocs.14)).
+14. Pubblicare la topologia, controllare lo stato della replica ed eseguire Skype for Business Server distribuzione guidata in base alle esigenze. Per informazioni dettagliate, vedere [Common Procedures for Removing Lync Servers and Components](/previous-versions/office/skype-server-2010/gg195688(v=ocs.14)).
 
 15. Avviare un prompt dei comandi: fare clic sul **pulsante Start,** scegliere **Esegui** e quindi digitare cmd.exe.
 

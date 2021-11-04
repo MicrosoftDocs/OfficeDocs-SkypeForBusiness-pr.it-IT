@@ -1,7 +1,7 @@
 ---
 title: Rapporto prestazioni server in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 942bb39a-1790-498e-9d99-8f6ce2d155c3
 description: 'Riepilogo: informazioni sul Rapporto prestazioni server in Skype for Business Server.'
-ms.openlocfilehash: 2e51832cf3d5d4b7dca816aa17ded0483dc88efd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 1d276d0dd4deec374ff88ca32d143855dae8919b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58632860"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60746912"
 ---
 # <a name="server-performance-report-in-skype-for-business-server"></a>Rapporto prestazioni server in Skype for Business Server
  

@@ -1,7 +1,7 @@
 ---
 title: Ripristino di emergenza del pool Front End in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 142caf34-0f20-47f3-9d32-ce25ab622fad
 description: Per il ripristino di emergenza, Skype for Business Server l'associazione del pool con il failover nel caso in cui un pool si insedi.
-ms.openlocfilehash: b6a2c33c123f70850335ce55aba06071ff4104eb
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 6559b5af285027d9f1cb6ea3682304dedbbb4165
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728835"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60740432"
 ---
 # <a name="front-end-pool-disaster-recovery-in-skype-for-business-server"></a>Ripristino di emergenza del pool Front End in Skype for Business Server
  
@@ -32,7 +32,7 @@ Se il pool in un sito ha esito negativo, è possibile eseguire il failover degli
   
 Due data center che includono pool Front End abbinati tra loro possono essere a qualsiasi distanza. È consigliabile associare due data center nella stessa area geografica mondiale, con collegamenti ad alta velocità tra di essi. 
   
-La presenza di due data center in aree geografiche del mondo è possibile, ma potrebbe incorrere in una perdita di dati maggiore in caso di emergenza, a causa della latenza nella replica dei dati.
+La presenza di due data center in aree geografiche del mondo è possibile, ma potrebbe verificarsi una perdita di dati maggiore in caso di emergenza, a causa della latenza nella replica dei dati.
   
 Quando si pianificano i pool da associare, è necessario tenere presente che sono supportati solo gli abbinamenti seguenti:
   
@@ -62,7 +62,7 @@ Tutti i numeri degli obiettivi relativi al tempo e al punto di ripristino riport
   
 ## <a name="central-management-store-failover"></a>Failover dell'archivio di gestione centrale
 
-L'archivio di gestione centrale contiene i dati di configurazione relativi ai server e ai servizi nella distribuzione. Ogni Skype for Business Server distribuzione include un archivio di gestione centrale, ospitato dal server back-end di un pool Front End.
+L'archivio di gestione centrale contiene i dati di configurazione relativi ai server e ai servizi nella distribuzione. Ogni Skype for Business Server di distribuzione include un archivio di gestione centrale, ospitato dal server back-end di un pool Front End.
   
 Se si associa il pool che ospita l'archivio di gestione centrale, nel pool di backup viene impostato un database dell'archivio di gestione centrale di backup. In qualsiasi momento, uno dei due database dell'archivio di gestione centrale è attivo e l'altro è di standby. Il contenuto viene replicato dal servizio di backup dal database attivo alla modalità standby.
   
@@ -76,11 +76,11 @@ Gli obiettivi di progettazione per il failover dell'archivio di gestione central
   
 ## <a name="front-end-pool-pairing-data-security"></a>Sicurezza dei dati di associazione del pool Front End
 
-Il servizio di backup trasferisce continuamente i dati utente e il contenuto delle conferenze tra due pool Front End abbinati. I dati utente contengono GLI URI SIP dell'utente, nonché pianificazioni di conferenze, elenchi di contatti e impostazioni. Il contenuto delle conferenze include i caricamenti PowerPoint Microsoft e le lavagne usate nelle conferenze.
+Il servizio di backup trasferisce continuamente i dati utente e il contenuto delle conferenze tra due pool Front End abbinati. I dati utente contengono GLI URI SIP dell'utente, nonché pianificazioni di conferenze, elenchi di contatti e impostazioni. Il contenuto delle conferenze include i caricamenti di microsoft PowerPoint e le lavagne usate nelle conferenze.
   
 Dal pool di origine, questi dati vengono esportati dall'archiviazione locale, compressi e quindi trasferiti nel pool di destinazione, dove vengono decompressi e importati nell'archiviazione locale. Il Servizio di backup presume che i collegamenti di comunicazione tra i due data center si trovino all'interno di una rete aziendale protetta da Internet. Non crittografa i dati trasferiti tra i due data center, né i dati incapsulati in modo nativo all'interno di un protocollo sicuro, ad esempio HTTPS. Pertanto, è possibile un attacco man-in-the-middle da parte del personale interno all'interno della rete aziendale.
   
-Qualsiasi azienda che distribuisce Skype for Business Server più data center e utilizza la funzionalità di ripristino di emergenza deve garantire che il traffico tra i data center sia protetto dalla rete Intranet aziendale. Le aziende che si preoccupano della protezione da attacchi interni devono proteggere i collegamenti di comunicazione tra i data center. Si tratta di un requisito standard che aiuta anche protech molti altri tipi di dati sensibili aziendali trasferiti tra data center.
+Qualsiasi azienda che distribuisce Skype for Business Server tra più data center e utilizza la funzionalità di ripristino di emergenza deve garantire che il traffico tra i data center sia protetto dalla rete Intranet aziendale. Le aziende che si preoccupano della protezione da attacchi interni devono proteggere i collegamenti di comunicazione tra i data center. Si tratta di un requisito standard che aiuta anche protech molti altri tipi di dati sensibili aziendali trasferiti tra data center.
   
 Sebbene in un'azienda esista il pericolo di attacchi man-in-the-middle, è relativamente contenuto se paragonato al rischio di esporre il traffico in Internet. In particolare, i dati utente esposti dal servizio di backup (ad esempio gli URI SIP) sono generalmente disponibili per tutti i dipendenti dell'azienda tramite altri mezzi, ad esempio la Rubrica globale o altro software di directory. Pertanto, l'attenzione deve essere concentrata sulla protezione della rete WAN tra i due data center quando viene utilizzato il servizio di backup per copiare i dati tra i due pool associati.
   
@@ -97,7 +97,7 @@ Un'altra soluzione possibile consiste nell'utilizzare IPSec solo per proteggere 
 - Il servizio SMB (TCP/445) da ogni Front End Server nel pool B all'archivio file utilizzato dal pool A.
     
 > [!CAUTION]
->  IPsec non è destinato a sostituire la sicurezza a livello di applicazione, ad esempio SSL/TLS. Un vantaggio dell'utilizzo di IPsec è che può garantire la sicurezza del traffico di rete per le applicazioni esistenti senza doverle modificare. Le aziende che desiderano proteggere semplicemente il trasporto tra i due data center devono consultare i rispettivi fornitori di hardware di rete su come configurare connessioni WAN protette utilizzando le attrezzature del fornitore.
+>  IPsec non è destinato a sostituire la sicurezza a livello di applicazione, ad esempio SSL/TLS. Un vantaggio dell'utilizzo di IPsec è che può garantire la sicurezza del traffico di rete per le applicazioni esistenti senza doverle modificare. Le aziende che desiderano proteggere semplicemente il trasporto tra i due data center devono consultare i rispettivi fornitori di hardware di rete su come configurare connessioni WAN protette utilizzando l'attrezzatura del fornitore.
   
 ## <a name="see-also"></a>Vedere anche
 

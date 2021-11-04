@@ -1,7 +1,7 @@
 ---
 title: Pianificare la messaggistica istantanea e la presenza in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,26 +12,26 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 70d2151e-9382-485d-ab14-758597571a74
 description: 'Riepilogo: informazioni su come pianificare la messaggistica istantanea e la presenza in Skype for Business Server.'
-ms.openlocfilehash: 8498526c97794dce29d791318b025321e932081b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 20de382c034e2049bdb7bb2b36f2da9bc847b876
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599891"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737662"
 ---
 # <a name="plan-for-instant-messaging-and-presence-in-skype-for-business-server"></a>Pianificare la messaggistica istantanea e la presenza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come pianificare la messaggistica istantanea e la presenza in Skype for Business Server.
   
-Pianificare la messaggistica istantanea e la presenza in Skype for Business Server. Per informazioni sulle opzioni di distribuzione specifiche, ad esempio l'abilitazione o la disabilitazione della messaggistica istantanea offline, vedere [Deploy instant messaging and presence in Skype for Business Server](../deploy/im-and-presence/im-and-presence.md).
+Pianificare la messaggistica istantanea e la presenza in Skype for Business Server. Per informazioni su opzioni di distribuzione specifiche, ad esempio l'abilitazione o la disabilitazione della messaggistica istantanea offline, vedere [Deploy instant messaging and presence in Skype for Business Server](../deploy/im-and-presence/im-and-presence.md).
   
 ## <a name="plan-for-instant-messaging-and-presence-in-skype-for-business-server"></a>Pianificare la messaggistica istantanea e la presenza in Skype for Business Server
 
-I Front End Server forniscono funzionalità di Skype for Business Server quali la messaggistica istantanea e la presenza e sono inclusi in ogni Skype for Business Server distribuzione. Sono disponibili due edizioni: Skype for Business Server edizione Enterprise, progettata principalmente per organizzazioni di grandi dimensioni, e Skype for Business Server edizione Standard, progettata principalmente per le organizzazioni più piccole che desiderano un investimento hardware più piccolo e non richiedono opzioni di disponibilità elevata complete. Entrambe le edizioni supportano tutti Skype for Business Server, inclusi messaggistica istantanea, presenza, conferenze e VoIP aziendale.
+I Front End Server forniscono funzionalità di Skype for Business Server quali la messaggistica istantanea e la presenza e sono inclusi in ogni Skype for Business Server distribuzione. Sono disponibili due edizioni: Skype for Business Server edizione Enterprise, progettata principalmente per organizzazioni più grandi, e Skype for Business Server edizione Standard, progettata principalmente per le organizzazioni più piccole che desiderano un investimento hardware più piccolo e non richiedono opzioni di disponibilità elevata complete. Entrambe le edizioni supportano tutti Skype for Business Server, inclusi messaggistica istantanea, presenza, conferenze e VoIP aziendale.
   
 La messaggistica istantanea consente agli utenti di comunicare tra loro in tempo reale mediante i loro computer con messaggi di testo. Sono supportate le sessioni di messaggistica istantanea sia tra due che tra più parti. Un partecipante a una conversazione di messaggistica istantanea tra due parti può aggiungere un terzo partecipante in qualsiasi momento. In tal caso, la finestra relativa alla conversazione cambia in modo da supportare le funzionalità di conferenza.
   
-La presenza fornisce agli utenti informazioni sullo stato di altri utenti nella rete. Lo stato di presenza di un utente fornisce informazioni per aiutare gli altri a decidere se tentare di contattare l'utente e se usare la messaggistica istantanea, il telefono o la posta elettronica. La presenza induce a scegliere la comunicazione istantanea ma, segnalando anche se un utente è in riunione o fuori ufficio, consente di capire quando la comunicazione istantanea non può essere utilizzata. Questo stato di presenza viene visualizzato come icona di presenza in Skype for Business e in altre applicazioni in grado di riconoscere la presenza, tra cui il client di messaggistica e collaborazione di Microsoft Outlook, le tecnologie Microsoft SharePoint e Microsoft Office. L'icona di presenza rappresenta la disponibilità e la disponibilità correnti dell'utente a comunicare. 
+La presenza fornisce agli utenti informazioni sullo stato di altri utenti nella rete. Lo stato di presenza di un utente fornisce informazioni per aiutare gli altri a decidere se tentare di contattare l'utente e se usare la messaggistica istantanea, il telefono o la posta elettronica. La presenza induce a scegliere la comunicazione istantanea ma, segnalando anche se un utente è in riunione o fuori ufficio, consente di capire quando la comunicazione istantanea non può essere utilizzata. Questo stato di presenza viene visualizzato come icona di presenza in Skype for Business e in altre applicazioni in grado di riconoscere la presenza, tra cui il client di messaggistica e collaborazione di Microsoft Outlook, le tecnologie Microsoft SharePoint e Microsoft Office. L'icona presenza rappresenta la disponibilità e la disponibilità correnti dell'utente a comunicare. 
   
 ### <a name="technical-requirements"></a>Requisiti tecnici
 
@@ -41,7 +41,7 @@ La messaggistica istantanea e la presenza vengono sempre eseguite edizione Enter
 
 È possibile aumentare notevolmente i vantaggi dell'investimento in Skype for Business Server consentendo agli utenti di comunicare con utenti esterni. Gli utenti esterni possono essere:
   
-- Utenti remoti: gli utenti dell'organizzazione, quando lavorano all'esterno dei firewall e utilizzano i portatili o altri dispositivi Skype for Business Server esterni.
+- Utenti remoti: gli utenti dell'organizzazione, quando lavorano all'esterno dei firewall e usano i laptop o altri dispositivi Skype for Business Server esterni.
     
 - Utenti federati: utenti di società con cui si lavora che eseguono anche Skype for Business Server. Per consentire agli utenti di mettersi facilmente in contatto con questi utenti, si creano relazioni federate con le relative società. 
     

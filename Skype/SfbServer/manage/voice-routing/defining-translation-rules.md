@@ -1,7 +1,7 @@
 ---
 title: Definizione delle regole di conversione in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Skype for Business Server VoIP aziendale le chiamate in base ai numeri di telefono normalizzati nel formato E.164. Ciò significa che tutte le stringhe componete devono essere normalizzate nel formato E.164 allo scopo di eseguire la ricerca di numeri inversa (RNL) in modo che possano essere convertite nell'URI SIP corrispondente. Skype for Business Server consente di modificare l'ID chiamato e la presentazione dell'ID chiamante.
-ms.openlocfilehash: ca51ef7cbb1619877abf1291ffaa2c76087ec6d3
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 9dee0e90a9cd06abef43d190cc391861f4ad1438
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58629638"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737722"
 ---
 # <a name="defining-translation-rules-in-skype-for-business-server"></a>Definizione delle regole di conversione in Skype for Business Server
 
@@ -31,7 +31,7 @@ Skype for Business Server offre la possibilità di convertire anche il numero di
 **Per configurare l'ID chiamante utilizzando il Skype for Business Server pannello di controllo**
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [Delegate setup permissions](/previous-versions/office/lync-server-2013/lync-server-2013-delegate-setup-permissions).
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Install and open administrative tools](../../management-tools/install-and-open-administrative-tools.md).
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)
 3. Nella barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Configurazione trunk**.
 4. Nella pagina Configurazione trunk fare doppio clic su un trunk esistente, ad esempio il trunk **Globale** per visualizzare la finestra di dialogo **Modifica configurazione trunk**.
 5. Per configurare la presentazione dell'ID chiamante:
@@ -47,7 +47,7 @@ Skype for Business Server offre la possibilità di convertire anche il numero di
 ## <a name="called-id-presentation"></a>Presentazione ID chiamata
 
 > [!Important]
-> La possibilità di associare una o più regole di conversione a  una configurazione trunk di VoIP aziendale deve essere utilizzata come alternativa alla configurazione delle regole di conversione nel trunk peer. Non associare regole di conversione a una VoIP aziendale trunk se sono state configurate regole di conversione nel trunk peer perché le due regole potrebbero essere in conflitto. 
+> La possibilità di associare una o più regole di conversione a  una configurazione trunk VoIP aziendale è progettata per essere utilizzata come alternativa alla configurazione delle regole di conversione nel trunk peer. Non associare regole di conversione a una VoIP aziendale trunk se sono state configurate regole di conversione nel trunk peer perché le due regole potrebbero essere in conflitto. 
 
 È possibile utilizzare uno dei metodi seguenti per creare e modificare una regola di conversione:
 
@@ -64,7 +64,7 @@ Seguire questa procedura se si desidera definire una regola di conversione immet
 **Per definire una regola tramite lo strumento Crea regola di conversione**
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [Delegate setup permissions](/previous-versions/office/lync-server-2013/lync-server-2013-delegate-setup-permissions).
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Install and open administrative tools](../../management-tools/install-and-open-administrative-tools.md).
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)
 3. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in [Configure a trunk with media bypass](GET LINK AFTER MIGRATION)through step 10 o Configure a trunk without media [bypass](GET LINK AFTER MIGRATION) through step 9.
 4. In **Nome** nella pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome descrittivo del formato del numero da convertire.
 5. (Facoltativo) In **Descrizione** digitare una descrizione della regola di conversione, ad esempio Composizione **interurbana** internazionale .
@@ -99,7 +99,7 @@ Eseguire questa procedura se si desidera definire una regola di conversione scri
 **Per definire manualmente una regola di conversione**
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [Delegate setup permissions](/previous-versions/office/lync-server-2013/lync-server-2013-delegate-setup-permissions).
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Install and open administrative tools](../../management-tools/install-and-open-administrative-tools.md).
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)
 3. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in [Configure a trunk with media bypass](GET LINK AFTER MIGRATION)through step 10 o Configure a trunk without media [bypass](GET LINK AFTER MIGRATION) through step 9.
 4. Nel campo **Nome** della pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome che descriva il formato del numero da convertire.
 5. (Facoltativo) In **Descrizione** digitare una descrizione della regola di conversione. ad esempio, **composizione interurbana** internazionale degli Stati Uniti .
@@ -108,7 +108,7 @@ Eseguire questa procedura se si desidera definire una regola di conversione scri
     - In **Trova corrispondenza per questo formato** specificare il modello di formato da utilizzare per trovare corrispondenze con i numeri da convertire.
     - In **Regola di conversione** specificare un modello per il formato dei numeri convertiti.
 
-    Ad esempio, se si immette **^ \+ (\d {9} \d+)$** **in** Corrispondenza questo modello e **011$1** **in** Regola di conversione, la regola convertirà +441235551010 in 011441235551010.
+    Ad esempio, se si immette **^ \+ (\d {9} \d+)$** in Corrispondenza questo **modello** e **011$1** **in** Regola di conversione, la regola convertirà +441235551010 in 011441235551010.
 8. Fare clic su **OK** per salvare la regola di conversione.
 9. Fare clic su **OK** per salvare la configurazione del trunk.
 10. Nella pagina **Configurazione trunk** fare clic su **Commit** e quindi su **Salva tutto**. 

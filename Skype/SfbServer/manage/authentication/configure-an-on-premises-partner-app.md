@@ -1,7 +1,7 @@
 ---
 title: Configurare un'applicazione partner locale per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 696f2b26-e5d0-42b5-9785-a26c2ce25bb7
 description: "Riepilogo: configurare un'applicazione partner locale per Skype for Business Server."
-ms.openlocfilehash: d0907d73d6a23c0a5b9a1f1725503b72c5bce993
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 65e5d32787b13043d30b6cb03a7d9cdbc047c46a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60012620"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60772122"
 ---
 # <a name="configure-an-on-premises-partner-application-for-skype-for-business-server"></a>Configurare un'applicazione partner locale per Skype for Business Server
  
 **Riepilogo:** Configurare un'applicazione partner locale per Skype for Business Server.
   
-Dopo aver assegnato il certificato OAuthTokenIssuer, devi configurare le applicazioni Skype for Business Server partner. La procedura che sta per essere illustrata configura sia Microsoft Exchange Server 2013 che SharePoint di agire come applicazioni partner, che è facoltativo. Per configurare un'applicazione partner locale, è necessario innanzitutto copiare lo script di Windows PowerShell seguente e incollare il codice in Blocco note (o in qualsiasi altro editor di testo):
+Dopo aver assegnato il certificato OAuthTokenIssuer, devi configurare le applicazioni Skype for Business Server partner. La procedura che sta per essere illustrata configura sia Microsoft Exchange Server 2013 che SharePoint agire come applicazioni partner, che è facoltativo. Per configurare un'applicazione partner locale, è necessario innanzitutto copiare lo script di Windows PowerShell seguente e incollare il codice in Blocco note (o in qualsiasi altro editor di testo):
   
 ```PowerShell
 if ((Get-CsPartnerApplication -ErrorAction SilentlyContinue) -ne $Null)
@@ -104,7 +104,7 @@ New-CsPartnerApplication : Cannot bind parameter 'MetadataUrl' to the target. Ex
 
 Questo messaggio di errore indica in genere uno di due problemi: 1) uno degli URL specificati nello script non è valido (ovvero uno degli URL dei metadati non è corretto) oppure 2) non è possibile contattare uno degli URL dei metadati. In questi casi, verificare che gli URL siano corretti e accessibili, quindi rieseguire lo script.
   
-Dopo aver creato l'applicazione partner per Skype for Business Server è necessario configurare Skype for Business Server essere un'applicazione partner per Exchange 2013. È possibile configurare le applicazioni partner per Exchange 2013 eseguendo lo script Configure-EnterprisePartnerApplication.ps1; devi solo specificare l'URL dei metadati per Skype for Business Server e indicare che Skype for Business Server è la nuova applicazione partner. 
+Dopo aver creato l'applicazione partner per Skype for Business Server è necessario configurare Skype for Business Server essere un'applicazione partner per Exchange 2013. È possibile configurare le applicazioni partner per Exchange 2013 eseguendo lo script Configure-EnterprisePartnerApplication.ps1; tutto ciò che devi fare è specificare l'URL dei metadati per Skype for Business Server e indicare che Skype for Business Server è la nuova applicazione partner. 
   
 Per configurare Skype for Business Server come applicazione partner per Exchange, aprire Exchange Management Shell ed eseguire un comando simile al seguente
   

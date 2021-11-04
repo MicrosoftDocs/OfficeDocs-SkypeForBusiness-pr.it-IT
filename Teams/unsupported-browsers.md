@@ -1,7 +1,7 @@
 ---
-title: Microsoft Teams riunioni in browser non supportati
+title: Microsoft Teams riunioni su browser non supportati
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -16,19 +16,19 @@ search.appverid: MET150
 description: Scopri come Teams audio e video nei browser non supportati.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 62ba55bd7a199731956c37e4cd12ff1684c9a9a5
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 213de938360754efd95b5fb460c0cf5a3c735203
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58613435"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60740142"
 ---
-# <a name="microsoft-teams-meetings-on-unsupported-browsers"></a>Microsoft Teams riunioni in browser non supportati
+# <a name="microsoft-teams-meetings-on-unsupported-browsers"></a>Microsoft Teams riunioni su browser non supportati
 
 Alcuni browser, ad esempio Internet Explorer 11, Safari e Firefox, supportano l'app Web Microsoft Teams, ma non supportano alcune delle funzionalità Teams chiamate e riunioni. Per aggirare questa limitazione, l'app Web Teams consente agli utenti di ricevere l'audio tramite una connessione PSTN e di visualizzare il contenuto presentato (condivisione dello schermo) a una velocità di visualizzazione ridotta.
 
 > [!Note]
-> Microsoft 365 le app e i servizi non supporteranno Internet Explorer 11 a partire dal 17 agosto 2021 (Microsoft Teams non supporterà Internet Explorer 11 in precedenza, a partire dal 30 novembre 2020). [Altre informazioni](https://aka.ms/AA97tsw). Si noti che Internet Explorer 11 rimarrà un browser supportato. Internet Explorer 11 è un componente del [](/lifecycle/faq/internet-explorer-microsoft-edge) sistema operativo Windows e segue i criteri relativi al ciclo di vita per il prodotto in cui è installato.
+> Microsoft 365 app e servizi non supporteranno Internet Explorer 11 a partire dal 17 agosto 2021 (Microsoft Teams non supporterà Internet Explorer 11 in precedenza, a partire dal 30 novembre 2020). [Altre informazioni](https://aka.ms/AA97tsw). Si noti che Internet Explorer 11 rimarrà un browser supportato. Internet Explorer 11 è un componente del sistema [](/lifecycle/faq/internet-explorer-microsoft-edge) operativo Windows e segue i criteri relativi al ciclo di vita del prodotto in cui è installato.
 
 Quando Teams rileva un browser non supportato, viene visualizzato automaticamente un messaggio che spiega il problema e le limitazioni della sessione. Il messaggio fornisce altre istruzioni per accedere all'audio della riunione, ad esempio per consigliare all'utente di lasciare un numero di chiamata in modo che Teams possa chiamare l'utente o indicare all'utente di chiamare il numero della conferenza incluso nell'invito alla riunione. Il messaggio incoraggia anche l'utente a scaricare e usare il [client desktop](https://teams.microsoft.com/downloads) Teams per l'esperienza Teams completa.
 
@@ -36,7 +36,7 @@ Se PSTN non è disponibile, l'utente non visualizza le istruzioni per accedere a
 
 ## <a name="browser-limitations"></a>Limitazioni del browser
 
-Gli utenti che usano Teams'app Web in browser non supportati avranno le limitazioni seguenti:
+Le persone che usano Teams web app nei browser non supportati avranno le limitazioni seguenti:
 
 - L'audio è disponibile solo tramite una connessione PSTN. Gli utenti non possono usare il microfono.
 - Gli utenti non possono condividere la fotocamera o vedere i video di altri partecipanti, ma possono visualizzare il contenuto presentato tramite la condivisione dello schermo basata su immagini.

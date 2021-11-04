@@ -1,7 +1,7 @@
 ---
 title: Ruoli amministrativi e Skype for Business Server pannello di controllo
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 7d1ff1e0-eb89-4703-be50-71e94329d8b2
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per consentire di delegare le attività amministrative mantenendo standard elevati per la sicurezza, Skype for Business Server supporta il controllo degli accessi in base ai ruoli (RBAC).
-ms.openlocfilehash: 381564dca2e7d7dfe7a6e971bfdb92556b80dea5
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8ede6e5c45a7dbd47e3cf7522edf34b290f10e7a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58609753"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60752935"
 ---
 # <a name="administrative-roles-and-skype-for-business-server-control-panel"></a>Ruoli amministrativi e Skype for Business Server pannello di controllo
 

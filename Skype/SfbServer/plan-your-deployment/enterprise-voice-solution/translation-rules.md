@@ -1,7 +1,7 @@
 ---
 title: Regole di conversione in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,18 +16,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6e067bd4-4931-4385-81ac-2acae45a16d8
 description: Informazioni sulle regole di conversione e sulla normalizzazione delle stringhe di composizione in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 94e5fdf3428694f672622c62b76e81886afe1682
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 535b98c53367689d3b3002fdda14fb8a706a7f3a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58606075"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60746722"
 ---
 # <a name="translation-rules-in-skype-for-business-server"></a>Regole di conversione in Skype for Business Server
 
 Informazioni sulle regole di conversione e sulla normalizzazione delle stringhe di composizione in Skype for Business Server VoIP aziendale.
 
- VoIP aziendale che tutte le stringhe di composizione siano normalizzate nel formato E.164 allo scopo di eseguire la ricerca di numeri inversa (RNL). Le regole di conversione sono supportate sia per i numeri chiamati che per i numeri chiamanti. Il peer principale ,ovvero il gateway associato, il PBX (Private Branch Exchange) o il trunk SIP, potrebbe richiedere che i numeri siano in un formato di composizione locale. Per convertire i numeri dal formato E.164 a quello locale, è possibile definire una o più regole di conversione per modificare l'URI richiesta prima di eseguirne il routing al trunk peer. È possibile, ad esempio, scrivere una regola di conversione per rimuovere +44 dall'inizio di una stringa di composizione e sostituirlo con 0144.
+ VoIP aziendale richiede che tutte le stringhe di composizione siano normalizzate nel formato E.164 allo scopo di eseguire la ricerca di numeri inversa (RNL). Le regole di conversione sono supportate sia per i numeri chiamati che per i numeri chiamanti. Il peer principale ,ovvero il gateway associato, il PBX (Private Branch Exchange) o il trunk SIP, potrebbe richiedere che i numeri siano in un formato di composizione locale. Per convertire i numeri dal formato E.164 a quello locale, è possibile definire una o più regole di conversione per modificare l'URI richiesta prima di eseguirne il routing al trunk peer. È possibile, ad esempio, scrivere una regola di conversione per rimuovere +44 dall'inizio di una stringa di composizione e sostituirlo con 0144.
 
 Eseguendo la conversione delle route in uscita sul server, è possibile ridurre i requisiti di configurazione in ogni singolo trunk peer per convertire i numeri di telefono in un formato di composizione locale. Quando si pianificano i gateway e il numero di gateway da associare a un cluster Mediation Server specifico, può essere utile raggruppare i trunk peer con requisiti di composizione locali simili. In questo modo è possibile ridurre il numero di regole di conversione necessarie e il tempo necessario per scriverle.
 
@@ -42,5 +42,5 @@ Per informazioni dettagliate su come implementare le regole di conversione, vede
 
 |**Descrizione**|**Cifre iniziali**|**Lunghezza**|**Cifre da rimuovere**|**Cifre da aggiungere**|**Formato corrispondente**|**Conversione**|**Esempio**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Composizione convenzionale di interurbane negli Stati Uniti  <br/> (rimuovere il '+')  <br/> |+1  <br/> |Esattamente 12  <br/> |1   <br/> |0  <br/> |^\+(1\d {10} ) $  <br/> |$1  <br/> |+14255551010 diventa 14255551010  <br/> |
-|Composizione di interurbane internazionali negli Stati Uniti  <br/> (rimuovere '+' e aggiungere 011)  <br/> |+  <br/> |Almeno 11  <br/> |1   <br/> |011  <br/> |^\+(\d {9} \d+)$  <br/> |011$1  <br/> |+441235551010 diventa 011441235551010  <br/> |
+|Composizione convenzionale di interurbane negli Stati Uniti  <br/> (rimuovere il '+')  <br/> |+1  <br/> |Esattamente 12  <br/> |1  <br/> |0  <br/> |^\+(1\d {10} ) $  <br/> |$1  <br/> |+14255551010 diventa 14255551010  <br/> |
+|Composizione di interurbane internazionali negli Stati Uniti  <br/> (rimuovere '+' e aggiungere 011)  <br/> |+  <br/> |Almeno 11  <br/> |1  <br/> |011  <br/> |^\+(\d {9} \d+)$  <br/> |011$1  <br/> |+441235551010 diventa 011441235551010  <br/> |

@@ -1,7 +1,7 @@
 ---
 title: Definizione delle regole di normalizzazione in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Skype for Business Server regole di normalizzazione usano .NET Framework espressioni regolari per convertire i numeri di telefono composto nel formato E.164; in altre parole, le regole di normalizzazione prendono il numero di telefono composto da un utente e lo convertono nel formato utilizzato internamente da Skype for Business Server. A ogni dial plan deve essere assegnata una o più regole di normalizzazione.
-ms.openlocfilehash: 4b78207f90bb013b8be4161b7319cb605ad148e5
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: e2cf2deaefa18323dcd69e9f09703d6994f101c4
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58602491"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60778286"
 ---
 # <a name="defining-normalization-rules-in-skype-for-business-server"></a>Definizione delle regole di normalizzazione in Skype for Business Server
 
@@ -37,7 +37,7 @@ Completare i passaggi seguenti se si desidera creare o modificare una regola di 
 **Per definire una regola mediante Crea regola di normalizzazione**
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [Delegate setup permissions](/previous-versions/office/lync-server-2013/lync-server-2013-delegate-setup-permissions).
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Install and open administrative tools](../../management-tools/install-and-open-administrative-tools.md).
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)
 3. (Facoltativo) Seguire i passaggi descritti in [Create a dial plan](../../deploy/deploy-enterprise-voice/dial-plans.md#to-create-a-dial-plan) through step 11 o Modify a dial [plan](../../deploy/deploy-enterprise-voice/dial-plans.md#to-modify-a-dial-plan) through step 10. 
 4. In **Nuova regola di normalizzazione** o **Modifica regola di normalizzazione** digitare un nome descrittivo del formato del numero da normalizzare in **Nome**, ad esempio **Prefisso5Cifre**.
 5. (Facoltativo) In **Descrizione** digitare una descrizione della regola di normalizzazione, ad esempio "Converte prefissi a 5 cifre".
@@ -75,7 +75,7 @@ Completare i passaggi seguenti se si desidera creare o modificare manualmente un
 **Per definire manualmente una regola di normalizzazione**
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [Delegate setup permissions](/previous-versions/office/lync-server-2013/lync-server-2013-delegate-setup-permissions).
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Install and open administrative tools](../../management-tools/install-and-open-administrative-tools.md).
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)
 3. (Facoltativo) Seguire i passaggi descritti in [Create a dial plan](GET LINK AFTER MIGRATION) through step 11 o Modify a dial [plan](GET LINK AFTER MIGRATION) through step 10.  
 4. In Nuova regola  **di normalizzazione** o Modifica regola di normalizzazione digitare un nome che descriva il modello di numero normalizzato in **Nome** , ad esempio nome regola di normalizzazione **5DigitExtension**.
 5. (Facoltativo) In **Descrizione** digitare una descrizione della regola di normalizzazione, ad esempio "Converte prefissi a 5 cifre".

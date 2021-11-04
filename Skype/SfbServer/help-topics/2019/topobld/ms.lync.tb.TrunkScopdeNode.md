@@ -1,7 +1,7 @@
 ---
 title: Nodo dell'ambito del trunk
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 6561236d-fe30-451d-ac74-7545eb98267a
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Fare clic con il pulsante destro del mouse su un trunk SIP esistente in Generatore di topologie per eseguire le operazioni seguenti:'
-ms.openlocfilehash: ccd49b54900a6f482cc672555e7ac9d6c839ebea
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f412028ff5fab647dca4114401d2173fb287ae26
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58605235"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60738112"
 ---
 # <a name="trunk-scope-node"></a>Nodo dell'ambito del trunk
  

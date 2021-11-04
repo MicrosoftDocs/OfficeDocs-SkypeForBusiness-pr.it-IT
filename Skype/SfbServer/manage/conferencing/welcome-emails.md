@@ -1,7 +1,7 @@
 ---
-title: Inviare messaggi di benvenuto agli utenti con accesso Skype for Business Server
+title: Inviare messaggi di benvenuto agli utenti con accesso in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,20 +12,20 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 5507827b-6f8d-4ea4-94e6-1cf72c1d38eb
 description: 'Riepilogo: informazioni su come accogliere gli utenti alle conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 4304952bbede0f35183a80f789783bbfc4a8cfbd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 64dd7086b1a40de0c0cc2e0b33a66257153541cd
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58578800"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60772072"
 ---
-# <a name="send-welcome-email-to-dial-in-users-in-skype-for-business-server"></a>Inviare messaggi di benvenuto agli utenti con accesso Skype for Business Server
+# <a name="send-welcome-email-to-dial-in-users-in-skype-for-business-server"></a>Inviare messaggi di benvenuto agli utenti con accesso in Skype for Business Server
  
 **Riepilogo:** Informazioni su come accogliere gli utenti alle conferenze telefoniche con accesso esterno in Skype for Business Server.
   
 Dopo aver configurato le conferenze telefoniche con accesso esterno e aver verificato che funzioni correttamente, è necessario impostare i pin di identificazione personale iniziali (PIN) per gli utenti e informare gli utenti della disponibilità della funzionalità. È possibile includere istruzioni introduttive, ad esempio il PIN iniziale e il collegamento alla pagina Web Impostazioni conferenza telefonica con accesso esterno. 
   
-In genere, si utilizza il cmdlet **Set-CsClientPin** per reimpostare i PIN, ma è possibile utilizzare la procedura descritta in questo argomento se si desidera inviare un messaggio di benvenuto introduttivo con le informazioni sul PIN. Se non si desidera inviare tale messaggio, è possibile utilizzare **Set-CsClientPin**.
+In genere, si utilizza il cmdlet **Set-CsClientPin** per reimpostare i PIN, ma è possibile utilizzare la procedura descritta in questo argomento se si desidera inviare un messaggio di posta elettronica introduttivo di benvenuto con le informazioni sul PIN. Se non si desidera inviare tale messaggio, è possibile utilizzare **Set-CsClientPin**.
   
 Lo script **Set-CsPinSendCAWelcomeMail** consente di impostare il PIN e inviare un messaggio di benvenuto a un singolo utente. Per impostazione predefinita, lo script non reimposta un PIN se è già impostato, ma è possibile utilizzare il parametro Force per forzarne la reimpostazione. Il messaggio di posta elettronica viene inviato utilizzando il protocollo SMTP (Simple Mail Transfer Protocol).
   
@@ -37,7 +37,7 @@ Lo script **Set-CsPinSendCAWelcomeMail** consente di impostare il PIN e inviare 
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Eseguire il comando seguente al prompt:
     

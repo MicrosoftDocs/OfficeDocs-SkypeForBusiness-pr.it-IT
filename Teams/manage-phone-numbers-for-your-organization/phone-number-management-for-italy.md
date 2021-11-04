@@ -1,7 +1,7 @@
 ---
 title: Gestione dei numeri di telefono per l'Italia
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: davlick,krkilaru
 ms.topic: reference
@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Italia per Microsoft Teams.
-ms.openlocfilehash: f1a664882f0bb17590f83686efd6afaf86bcdd59
-ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
+ms.openlocfilehash: 1b74b96e37fdb4bbe98c68567e619d146e20fa06
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60733267"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737522"
 ---
 # <a name="phone-number-management-for-italy"></a>Gestione dei numeri di telefono per l'Italia
 

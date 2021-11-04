@@ -1,7 +1,7 @@
 ---
 title: Nome di dominio completo (FQDN) per unione legacy
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: d72841ff-3c4d-4233-a933-f3a95d75d89b
 description: L'FQDN interno del pool di accessi perimetrali viene utilizzato per diversi scenari in cui gli utenti interni comunicano con utenti esterni per la federazione, l'accesso degli utenti remoti e la connettività di messaggistica istantanea pubblica. Se nell'ambiente legacy è stato distribuito un Edge Server con bilanciamento del carico, immettere il nome di dominio completo (FQDN) del servizio di bilanciamento del carico interno.
-ms.openlocfilehash: 5131f6c5cb563e66a0a83f0c4c608d8e7e8895a3
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 06bc7f2ea91c499ef33c26ffc734f3e470a3bfbc
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608213"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60772222"
 ---
 # <a name="legacy-merge-fqdn"></a>Nome di dominio completo (FQDN) per unione legacy
  

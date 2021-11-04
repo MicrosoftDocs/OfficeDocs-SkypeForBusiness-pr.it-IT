@@ -1,7 +1,7 @@
 ---
 title: Componenti di connettività PSTN in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6b2a3f7d-760f-4f09-8432-312c98a7e6b7
 description: Informazioni sul trunking SIP e sui gateway PSTN per VoIP aziendale in Skype for Business Server.
-ms.openlocfilehash: 8aa3914eac1a716380b69971b0c576186dbfac17
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d0650f4948837fdb169c1c4a3672e25dccb8012f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58620972"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60746732"
 ---
 # <a name="pstn-connectivity-components-in-skype-for-business-server"></a>Componenti di connettività PSTN in Skype for Business Server
  
@@ -47,7 +47,7 @@ I gateway PSTN sono dispositivi di terze parti che convertono i segnali e i cont
   
 ## <a name="private-branch-exchanges"></a>Centralini
 
- Se si dispone di un'infrastruttura vocale esistente che utilizza un PBX (Private Branch Exchange), è possibile utilizzare il sistema PBX con VoIP aziendale.
+ Se si dispone di un'infrastruttura vocale esistente che utilizza un PBX (Private Branch Exchange), è possibile utilizzare il SISTEMA PBX con VoIP aziendale.
   
 Gli scenari di integrazione tra VoIP aziendale e PBX supportati sono i seguenti:
   

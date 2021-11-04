@@ -5,7 +5,7 @@ ms:assetid: 6d907507-825b-4354-9c03-337a459f72de
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg521013(v=OCS.15)
 ms:contentKeyID: 48184455
 mtps_version: v=OCS.15
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -14,13 +14,13 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di controllo di Skype for Business Server nella pagina Criteri di accesso esterno.
-ms.openlocfilehash: dc8ebdd0fc37d638f4d129dd995ebd2f179b0026
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di Skype for Business Server nella pagina Criteri di accesso esterno.
+ms.openlocfilehash: 53be2748328211c901a2daeeb0ca84e70cfd6511
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58582760"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60765454"
 ---
 # <a name="delete-a-site-or-user-policy-for-external-user-access"></a>Eliminare criteri sito o utente per l'accesso degli utenti esterni
 
@@ -31,14 +31,14 @@ Se sono stati creati o configurati criteri di accesso utente esterno che non si 
   - Ripristinare le impostazioni predefinite per i criteri globali che negano qualsiasi tipo di accesso agli utenti esterni. I criteri globali non possono essere eliminati.
 
 
-È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di Skype for Business Server nella **pagina Criteri di accesso** esterno. L'eliminazione del criterio globale non lo elimina effettivamente, ma lo reimposta solo alle impostazioni predefinite, che non includono il supporto per le opzioni di accesso degli utenti esterni. Per informazioni dettagliate sulla reimpostazione del criterio globale, vedere [Reset the global policy for external user access](reset-the-global-policy-for-external-user-access.md).
+È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di controllo di Skype for Business Server nella **pagina Criteri di accesso** esterno. L'eliminazione del criterio globale non lo elimina effettivamente, ma lo reimposta solo alle impostazioni predefinite, che non includono il supporto per le opzioni di accesso degli utenti esterni. Per informazioni dettagliate sulla reimpostazione del criterio globale, vedere [Reset the global policy for external user access](reset-the-global-policy-for-external-user-access.md).
 
 
 ## <a name="to-delete-a-site-or-user-policy-for-external-user-access"></a>Per eliminare criteri sito o utente per l'accesso utente esterno
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
 3.  Fare clic su **Accesso utente esterno** e quindi su **Criteri di accesso esterno**.
 

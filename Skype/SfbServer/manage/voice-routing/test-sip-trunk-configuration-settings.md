@@ -1,7 +1,7 @@
 ---
 title: Skype for Business Server - Testare le impostazioni di configurazione dei trunk SIP
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -10,13 +10,13 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: 'Le impostazioni di configurazione dei trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PST), un PBX o un SBC presso il provider di servizi. '
-ms.openlocfilehash: 1684a2a45de1dd6608ab5fea70fa3bf2e1652723
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: 'Le impostazioni di configurazione dei trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PST), un PBX o un servizio SBC presso il provider di servizi. '
+ms.openlocfilehash: e0d8a5807f97924c0b733d75065f0ce3d512255e
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58617822"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60765364"
 ---
 # <a name="skype-for-business-server---test-sip-trunk-configuration-settings"></a>Skype for Business Server - Testare le impostazioni di configurazione dei trunk SIP
 

@@ -1,7 +1,7 @@
 ---
 title: Gestire chat room nel server Chat persistente in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 1/31/2018
@@ -13,27 +13,27 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 7b2e1302-280c-4efe-9ec8-787687b414da
 description: 'Riepilogo: informazioni su come gestire le chat room del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 928fef65d63165721957ca0622b959860d82704e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 5eb69b3f852ce8e093947cdd04cc00b6bfdc19e3
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58630570"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60746882"
 ---
 # <a name="manage-chat-rooms-in-persistent-chat-server-in-skype-for-business-server-2015"></a>Gestire chat room nel server Chat persistente in Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come gestire le chat room del server Chat persistente in Skype for Business Server 2015.
   
-La creazione e la gestione delle chat room è molto più semplice con l'uso corretto delle categorie. Una categoria definisce gli utenti che possono creare o partecipare alle chat room. Prima di tentare di gestire le chat room, leggere Categorie di chat persistenti, chat room e ruoli utente [in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/categories-chat-rooms-and-user-roles.md) e Gestire le categorie nel server Chat persistente [Skype for Business Server 2015](categories.md).
+La creazione e la gestione delle chat room è molto più semplice con l'uso corretto delle categorie. Una categoria definisce gli utenti che possono creare o partecipare alle chat room. Prima di tentare di gestire le chat room, leggere Categorie di chat persistente, chat room e ruoli utente [in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/categories-chat-rooms-and-user-roles.md) e Gestire le categorie nel server Chat persistente [in Skype for Business Server 2015](categories.md).
   
 > [!NOTE]
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
 
-È possibile configurare e gestire chat room utilizzando l'interfaccia della riga di comando di Windows PowerShell o il client Skype for Business se si è membri della chat room. In questo argomento viene descritto come gestire le chat room utilizzando l'Windows PowerShell della riga di comando. Se si desidera gestire chat room utilizzando il client Skype for Business, vedere la Guida del client. 
+È possibile configurare e gestire chat room utilizzando l'interfaccia della riga di comando di Windows PowerShell o il client Skype for Business se si è membri della chat room. In questo argomento viene descritto come gestire le chat room utilizzando l'Windows PowerShell della riga di comando. Se si desidera gestire le chat room utilizzando il client Skype for Business, vedere la Guida del client. 
   
 Le chat room possono essere di due tipi: Normale e Auditorium. Una chat room normale consente a tutti i membri di pubblicare e leggere messaggi. Un auditorium è un tipo di chat room in cui solo i relatori possono pubblicare, ma tutti possono leggere.
   
-Who possibile accedere e gestire chat room dipende dai ruoli utente come indicato di seguito:
+Who accesso e gestione delle chat room dipende dai ruoli utente, come indicato di seguito:
   
 - Gli utenti devono essere membri di una chat room per poter pubblicare e leggere messaggi.
     
@@ -75,7 +75,7 @@ Oltre ai parametri precedenti, il cmdlet **Set-CsPersistentChatRoom** consente d
   
 - Membri. Configura l'appartenenza alla chat room. È possibile aggiungere o rimuovere singoli o più membri utilizzando un singolo cmdlet specificando l'indirizzo SIP degli utenti. Per consentire l'aggiunta in blocco degli utenti, è possibile specificare anche unità organizzative o gruppi di distribuzione di Active Directory.
     
-- Responsabili. Consente di assegnare responsabili alla chat room. I responsabili dispongono delle autorizzazioni per definire l'appartenenza a una chat room insieme ad altre impostazioni.
+- Responsabili. Consente di assegnare responsabili alla chat room. I manager dispongono delle autorizzazioni per definire l'appartenenza a una chat room insieme ad altre impostazioni.
     
 - Relatori. Consente di assegnare relatori a una chat room Auditorium. 
     

@@ -1,7 +1,7 @@
 ---
 title: Progettare il trunk SIP per E9-1-1 in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4f93b974-b460-45c7-a4a8-6f38e34840f5
 description: Pianificazione delle topologie di trunking SIP per una distribuzione E9-1-1 che utilizza provider di trunking SIP, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: b9a270a63ebfeb1e8132d84f270b72d6cd47710e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8454b50d5d2f55a8df05e70cb2737eccce81a793
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58625168"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759548"
 ---
 # <a name="design-the-sip-trunk-for-e9-1-1-in-skype-for-business-server"></a>Progettare il trunk SIP per E9-1-1 in Skype for Business Server
  
@@ -37,7 +37,7 @@ Esistono due modi per implementare un trunk SIP in un Skype for Business Server 
     
 Se si sceglie quest'ultimo metodo, assicurarsi che il modello e il modello SBC scelto siano stati certificati e supportino il passaggio dei dati di posizione PIDF-LO (Presence Information Data Format Location Object) come parte del relativo SIP INVITE. In caso contrario, le chiamate arriveranno al provider di servizi di emergenza privato delle informazioni sulla posizione. Per informazioni dettagliate sugli SBC certificati, vedere ["Infrastruttura qualificata per Microsoft Lync"](../../../SfbPartnerCertification/lync-cert/qualified-ip-pbx-gateway.md) e "Infrastruttura di telefonia [per Skype for Business"](../../../SfbPartnerCertification/certification/infra-gateways.md). 
   
-I provider di servizi E9-1-1 forniscono l'accesso a una coppia di SBC per la ridondanza. È necessario prendere diverse decisioni relative alla topologia Mediation Server e alla configurazione del routing delle chiamate. Verranno trattati entrambi gli SBC come peer uguali e si utilizzerà il routing round robin per le chiamate tra di essi oppure si designerà uno SBC come primario e l'altro come secondario?
+I provider di servizi E9-1-1 forniscono l'accesso a una coppia di SBC per la ridondanza. È necessario prendere diverse decisioni relative alla topologia Mediation Server e alla configurazione del routing delle chiamate. Verranno trattati entrambi gli SBC come peer uguali e verrà utilizzato il routing round robin per le chiamate tra di essi oppure si designerà uno SBC come primario e l'altro come secondario?
   
 Per informazioni dettagliate sulla distribuzione di un trunk SIP in Skype for Business Server, vedere [Trunking SIP in Skype for Business Server](sip-trunking.md). Le domande seguenti consentono di decidere come distribuire i trunk SIP per E9-1-1.
   
@@ -55,4 +55,4 @@ Per informazioni dettagliate sulla distribuzione di un trunk SIP in Skype for Bu
     
  **Il servizio Controllo di ammissione di chiamata è abilitato?**
   
-> Skype for Business Server non gestisce le chiamate di emergenza in modo diverso rispetto a una chiamata ordinaria. Per questo motivo, la gestione della larghezza di banda o il controllo di ammissione di chiamata può avere un impatto negativo su una configurazione E9-1-1. Le chiamate di emergenza verranno bloccate o instradate al gateway PSTN locale se è abilitato un controllo di ammissione di chiamata e viene superato il limite configurato su un collegamento in cui vengono instradate le chiamate di emergenza. Come indicato in precedenza in questo argomento, tali chiamate non avranno dati sulla posizione e devono essere instradati manualmente all'ECRC.
+> Skype for Business Server non gestisce le chiamate di emergenza in modo diverso rispetto a una chiamata ordinaria. Per questo motivo, la gestione della larghezza di banda o il controllo di ammissione di chiamata (CAC) può avere un impatto negativo su una configurazione E9-1-1. Le chiamate di emergenza verranno bloccate o instradate al gateway PSTN locale se è abilitato un controllo di ammissione di chiamata e il limite configurato viene superato su un collegamento in cui vengono instradate le chiamate di emergenza. Come indicato in precedenza in questo argomento, tali chiamate non avranno dati sulla posizione e devono essere instradati manualmente all'ECRC.

@@ -1,7 +1,7 @@
 ---
 title: Minacce alla sicurezza comuni nell'informatica moderna
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/22/2016
@@ -13,17 +13,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 56d22197-e8e2-46b8-b3a3-507bd663700e
-description: Poiché Skype for Business Server è un sistema di comunicazione di livello aziendale, è consigliabile tenere presente gli attacchi di sicurezza comuni che potrebbero influire sull'infrastruttura e sulle comunicazioni.
-ms.openlocfilehash: 04fa1eb040c1e208781d862da0bd92bc68a77dbd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Poiché Skype for Business Server è un sistema di comunicazione di livello aziendale, è necessario essere consapevoli degli attacchi di sicurezza comuni che potrebbero influire sull'infrastruttura e sulle comunicazioni.
+ms.openlocfilehash: dcc889ea43c06c2f8166d588b8d7e5eb7075b52c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58629510"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60741922"
 ---
 # <a name="common-security-threats-in-modern-day-computing"></a>Minacce alla sicurezza comuni nell'informatica moderna
  
-Poiché Skype for Business Server è un sistema di comunicazione di livello aziendale, è consigliabile tenere presente gli attacchi di sicurezza comuni che potrebbero influire sull'infrastruttura e sulle comunicazioni.
+Poiché Skype for Business Server è un sistema di comunicazione di livello aziendale, è necessario essere consapevoli degli attacchi di sicurezza comuni che potrebbero influire sull'infrastruttura e sulle comunicazioni.
   
 ## <a name="compromised-key-attack"></a>Attacco tramite chiave compromessa
 
@@ -35,7 +35,7 @@ Una chiave è un codice o un numero segreto utilizzato per crittografare, decrit
     
 Un attacco di compromissione della chiave si verifica quando l'autore dell'attacco riesce a determinare la chiave privata o la chiave di sessione. In questo caso, l'autore dell'attacco può utilizzare la chiave per decrittografare i dati crittografati all'insaputa del mittente.
   
-Skype for Business Server utilizza le funzionalità PKI nel sistema operativo Windows Server per proteggere i dati chiave utilizzati per la crittografia per le connessioni TLS (Transport Layer Security). Le chiavi utilizzate per la crittografia multimediale vengono scambiate su connessioni TLS.
+Skype for Business Server vengono utilizzate le funzionalità PKI nel sistema operativo Windows Server per proteggere i dati chiave utilizzati per la crittografia per le connessioni TLS (Transport Layer Security). Le chiavi utilizzate per la crittografia multimediale vengono scambiate su connessioni TLS.
   
 ## <a name="network-denial-of-service-attack"></a>Attacco Denial of Service alla rete
 
@@ -53,7 +53,7 @@ L'attacco di tipo Denial of Service si verifica quando l'autore dell'attacco imp
 
 Un attacco eavesdropping può verificarsi quando l'autore di un attacco ottiene l'accesso al percorso dei dati in una rete e ha la possibilità di monitorare e leggere il traffico. Questo tipo di attacco è anche denominato sniffing o snooping. Se il traffico è in testo normale, l'autore dell'attacco può leggerlo quando ottiene l'accesso al percorso. Un esempio è un attacco eseguito controllando un router nel percorso dei dati. 
   
-L'impostazione e il suggerimento predefinito per il traffico all'interno di Skype for Business Server è l'utilizzo di MTLS (Mutual TLS) tra server attendibili e TLS da client a server. Questa misura di protezione renderebbe un attacco molto difficile o impossibile da realizzare entro il periodo di tempo in cui si verifica una determinata conversazione. TLS autentica tutte le parti e crittografa tutto il traffico. Questo processo non impedisce che si verifichi un attacco eavesdropping, ma l'autore dell'attacco non può leggere il traffico a meno che non venga violata la crittografia.
+L'impostazione e il suggerimento predefiniti per il traffico all'interno di Skype for Business Server è l'utilizzo di MTLS (Mutual TLS) tra server attendibili e TLS da client a server. Questa misura di protezione renderebbe un attacco molto difficile o impossibile da realizzare entro il periodo di tempo in cui si verifica una determinata conversazione. TLS autentica tutte le parti e crittografa tutto il traffico. Questo processo non impedisce che si verifichi un attacco eavesdropping, ma l'autore dell'attacco non può leggere il traffico a meno che non venga violata la crittografia.
   
 Il protocollo TURN (Traversal Using Relay NAT) non impone la crittografia del traffico e le informazioni che sta inviando sono protette dall'integrità dei messaggi. Anche se è aperto alle intercettazioni, le informazioni che sta inviando (ovvero gli indirizzi IP e la porta) possono essere estratte direttamente esaminando semplicemente gli indirizzi di origine e di destinazione dei pacchetti. Il servizio A/V Edge garantisce che i dati siano validi controllando l'integrità del messaggio utilizzando la chiave derivata da alcuni elementi, inclusa una password TURN, che non viene mai inviata in testo non crittografato. Se si usa Secure Real Time Protocol (SRTP), viene crittografato anche il traffico multimediale.
   
@@ -61,7 +61,7 @@ Il protocollo TURN (Traversal Using Relay NAT) non impone la crittografia del tr
 
 Lo spoofing dell'identità si verifica quando l'utente malintenzionato determina e utilizza un numero di telefono di un utente valido (ID chiamante) o un indirizzo IP di una rete, un computer o un componente di rete senza essere autorizzato a farlo. Un attacco riuscito consente all'autore dell'attacco di operare come se l'autore dell'attacco fosse l'entità normalmente identificata dal numero di telefono (ID chiamante) o dall'indirizzo IP.
 
-Nel contesto di Skype for Business Server, lo spoofing degli indirizzi IP entra in gioco solo se un amministratore ha eseguito entrambe le operazioni seguenti:
+Nel contesto della Skype for Business Server, lo spoofing degli indirizzi IP entra in gioco solo se un amministratore ha eseguito entrambe le operazioni seguenti:
   
 - Ha configurato connessioni che supportano solo TCP (Transmission Control Protocol). Questa operazione è sconsigliata perché le comunicazioni TCP non vengono crittografate.
     
@@ -73,7 +73,7 @@ D'altra parte, lo spoofing dell'ID chiamante entra in gioco quando è stato stab
   
 ## <a name="man-in-the-middle-attack"></a>Attacco man-in-the-middle
 
-Un attacco man-in-the-middle si verifica quando un utente malintenzionato reinstrada le comunicazioni tra due utenti attraverso il computer dell'autore dell'attacco senza che i due utenti comunichino. L'autore dell'attacco può monitorare e leggere il traffico prima di inviarlo al destinatario previsto. Ogni utente della comunicazione invia e riceve il traffico dall'autore dell'attacco a propria insaputa, pensando di comunicare solo con l'utente previsto. Questa situazione può verificarsi se l'autore di un attacco può modificare Servizi di dominio Active Directory per aggiungere il server come server trusted o modificare DNS (Domain Name System) per fare in modo che i client si connettano all'autore dell'attacco mentre cercano di raggiungere il server. Un attacco man-in-the-middle può verificarsi anche con il traffico multimediale tra due client. Tuttavia, in Skype for Business Server condivisione di applicazioni, video e audio point-to-point, i flussi vengono crittografati con SRTP, utilizzando chiavi crittografiche negoziate tra i peer che utilizzano SIP (Session Initiation Protocol) su TLS. I server come Group Chat utilizzano HTTPS per aumentare la sicurezza del traffico Web.
+Un attacco man-in-the-middle si verifica quando un utente malintenzionato reinstrada le comunicazioni tra due utenti attraverso il computer dell'autore dell'attacco senza che i due utenti comunichino. L'autore dell'attacco può monitorare e leggere il traffico prima di inviarlo al destinatario previsto. Ogni utente della comunicazione invia e riceve il traffico dall'autore dell'attacco a propria insaputa, pensando di comunicare solo con l'utente previsto. Questa situazione può verificarsi se l'autore di un attacco può modificare Servizi di dominio Active Directory per aggiungere il server come server trusted o modificare DNS (Domain Name System) per fare in modo che i client si connettano all'autore dell'attacco mentre cercano di raggiungere il server. Un attacco man-in-the-middle può verificarsi anche con il traffico multimediale tra due client. Tuttavia, in Skype for Business Server condivisione di applicazioni, video e audio point-to-point, i flussi vengono crittografati con SRTP, utilizzando chiavi di crittografia negoziate tra i peer che utilizzano SIP (Session Initiation Protocol) su TLS. I server come Group Chat utilizzano HTTPS per aumentare la sicurezza del traffico Web.
   
 ## <a name="rtp-replay-attack"></a>Attacco di tipo replay RTP
 

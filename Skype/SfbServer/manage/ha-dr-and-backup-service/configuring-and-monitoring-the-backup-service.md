@@ -2,7 +2,7 @@
 title: Configurazione e monitoraggio del servizio di backup
 ms.reviewer: ''
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: È possibile utilizzare i Skype for Business Server Management Shell per configurare e monitorare il servizio di backup.
-ms.openlocfilehash: df0e7d985e9941e4af41a4cec5456774e5a3a4dd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f50f8ab13c2013505beace71f7e35cbc7674777c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58612295"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60747044"
 ---
 # <a name="configuring-and-monitoring-the-backup-service-in-skype-for-business-server"></a>Configurazione e monitoraggio del servizio di backup in Skype for Business Server
 

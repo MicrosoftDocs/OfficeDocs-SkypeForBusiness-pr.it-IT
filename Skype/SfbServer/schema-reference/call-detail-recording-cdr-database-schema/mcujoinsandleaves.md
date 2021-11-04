@@ -1,7 +1,7 @@
 ---
 title: Tabella McuJoinsAndLeaves Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 7/15/2015
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 4e073366-0b5d-45b4-a3f6-d63dd5fd9f25
 description: Ogni record in questa tabella contiene i dettagli sulle chiamate relative a una combinazione di un utente che partecipa o lascia e un server per conferenze. Ad esempio, se un utente partecipa a una conferenza che include conferenze Web ed elementi audio/video, verrà creato un record per la partecipazione alle conferenze Web dell'utente e verrà creato un altro record per l'aggiunta alle conferenze audio/video dell'utente.
-ms.openlocfilehash: 5d01781dd0d16abb3f03cdc8f6021981e7ebfff7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: df18ca4785fab9b56057eb439ab55caa2b1a170f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58629468"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60737602"
 ---
 # <a name="mcujoinsandleaves-table-in-skype-for-business-server-2015"></a>Tabella McuJoinsAndLeaves Skype for Business Server 2015
  
@@ -26,8 +26,8 @@ Ogni record in questa tabella contiene i dettagli sulle chiamate relative a una 
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**SessionIdTime** <br/> |datetime  <br/> |Primaria, esterna  <br/> |Data e ora dell'istanza di conferenza. Utilizzato insieme a **SessionIdSeq** per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella Conferenze [Skype for Business Server 2015.](conferences.md) <br/> |
-|**SessionIdSeq** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero ID per identificare l'istanza di conferenza. Utilizzato insieme a **SessionIdTime** per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella Conferenze [Skype for Business Server 2015.](conferences.md) <br/> |
+|**SessionIdTime** <br/> |datetime  <br/> |Primaria, esterna  <br/> |Data e ora dell'istanza di conferenza. Utilizzato insieme a **SessionIdSeq** per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella [Conferenze Skype for Business Server 2015.](conferences.md) <br/> |
+|**SessionIdSeq** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero ID per identificare l'istanza di conferenza. Utilizzato insieme a **SessionIdTime** per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella [Conferenze Skype for Business Server 2015.](conferences.md) <br/> |
 |**UserId** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero univoco che identifica l'utente. Per ulteriori [informazioni, vedere](users.md) la tabella Utenti. <br/> |
 |**McuUserInstance** <br/> |int  <br/> |Principale  <br/> |Se un utente è connesso a più computer o dispositivi contemporaneamente, McuUserInstance identifica in modo univoco la combinazione utente/dispositivo.  <br/> |
 |**IsFromPstn** <br/> |bit  <br/> | <br/> |Indica se l'utente sta partecipando da una rete PSTN o meno.  <br/> |

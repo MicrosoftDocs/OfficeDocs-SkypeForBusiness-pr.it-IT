@@ -1,7 +1,7 @@
 ---
 title: Pianificazione dell'autenticazione moderna (ADAL) con Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: In questo articolo viene illustrato il tipo di autenticazione moderna (basata su Active Directory Authentication Library (ADAL) e OAuth 2.0.
-ms.openlocfilehash: 29bbe33754b2363e84f449115bd51396ad9af932
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: af2ab64b2719348f2c1bb860ae560ea79509921f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614016"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759498"
 ---
 # <a name="how-to-use-modern-authentication-adal-with-skype-for-business"></a>Come usare l'autenticazione moderna (ADAL) con Skype for Business
  
@@ -27,7 +27,7 @@ In questo articolo viene illustrata l'autenticazione moderna (basata su Active D
 
 ADAL è l'acronimo di "Active Directory Authentication Library" e, insieme a OAuth 2.0, è alla base dell'autenticazione moderna. Questa libreria di codice è progettata per rendere le risorse protette nella directory disponibili per le applicazioni client (ad esempio Skype for Business) tramite token di sicurezza. ADAL funziona con OAuth 2.0 per abilitare più scenari di autenticazione e autorizzazione, come l'autenticazione a più fattori (MFA) e altre forme di autenticazione SAML.
   
-Un'ampia gamma di app che agiscono come client possono sfruttare l'autenticazione moderna per ottenere assistenza per ottenere risorse protette. In Skype for Business Server, questa tecnologia viene utilizzata tra i client locali e i server locali per fornire agli utenti un livello adeguato di autorizzazione per le risorse.
+Un'ampia gamma di app che agiscono come client possono sfruttare l'autenticazione moderna per ottenere assistenza per accedere a risorse protette. In Skype for Business Server, questa tecnologia viene utilizzata tra i client locali e i server locali per fornire agli utenti un livello adeguato di autorizzazione per le risorse.
   
 Le conversazioni di autenticazione moderna (basate su ADAL e OAuth 2.0) hanno alcuni elementi in comune.
   
@@ -37,7 +37,7 @@ Le conversazioni di autenticazione moderna (basate su ADAL e OAuth 2.0) hanno al
     
 - Esiste una connessione OAuth, in altre parole, una connessione dedicata all'autorizzazione  *di*  un utente ad accedere a una risorsa. OAuth è anche noto con il nome più descrittivo, "Server-to-Server" e spesso è abbreviato come S2S.
     
-Nelle Skype for Business Server di autenticazione moderna (ADAL), Skype for Business Server comunica tramite ADFS (ADFS 3.0 in Windows Server 2012 R2). L'autenticazione può avvenire utilizzando un altro provider di identità (IdP), ma Skype for Business server deve essere configurato per comunicare direttamente con ADFS. Se ADFS non è stato configurato per l'utilizzo Skype for Business Server completare [l'installazione di ADFS.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd727938(v=ws.10))
+Nelle Skype for Business Server di autenticazione moderna (ADAL), Skype for Business Server comunica tramite ADFS (ADFS 3.0 in Windows Server 2012 R2). L'autenticazione può avvenire utilizzando un altro provider di identità (IdP), ma Skype for Business server deve essere configurato per comunicare direttamente con ADFS. Se ADFS non è stato configurato per l'utilizzo con Skype for Business Server completare [l'installazione di ADFS.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd727938(v=ws.10))
   
 ADAL è incluso nell'aggiornamento cumulativo di marzo 2016 per Skype for Business Server 2015 e l'aggiornamento  cumulativo di marzo 2016 per Skype for Business deve essere installato ed è necessario per la corretta configurazione. Per Skype for Business Server 2019, è disponibile dalla versione iniziale del prodotto.
   
@@ -46,4 +46,4 @@ ADAL è incluso nell'aggiornamento cumulativo di marzo 2016 per Skype for Busine
   
 Per una corretta configurazione, è necessario scaricare un pacchetto di PowerShell .ps1 file con i comandi utilizzati da ADAL.
 
-Per informazioni su come implementare l'autenticazione moderna in Skype for Business, vedere: Come utilizzare l'autenticazione [moderna (ADAL) con](/microsoft-365/enterprise/hybrid-modern-auth-overview) Skype for Business
+Per informazioni su come implementare l'autenticazione moderna in Skype for Business, vedere: Come usare l'autenticazione [moderna (ADAL) con](/microsoft-365/enterprise/hybrid-modern-auth-overview) Skype for Business

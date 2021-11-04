@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceDriver
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/1/2018
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: ca91a0b4-98c0-49f6-af9d-7d0f8ac75f1a
 description: La tabella DeviceDriver è una tabella di supporto. Ogni record rappresenta un driver utilizzato da un dispositivo di acquisizione o di rendering.
-ms.openlocfilehash: 1dc316d68903455de03c2d1f5ace461f5eef478f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 31b847ce089ca042282ad04aa4af77fc0e6681c6
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603785"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60740272"
 ---
 # <a name="devicedriver-table"></a>Tabella DeviceDriver
  

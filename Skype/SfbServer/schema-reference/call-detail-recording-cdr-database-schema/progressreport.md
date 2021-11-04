@@ -1,7 +1,7 @@
 ---
 title: Tabella ProgressReport
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 10/20/2015
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 38e5f060-5e9b-4185-87b2-7ef61c4bb75f
 description: I rapporti sullo stato sono basati sui dati caricati dal client nel database al termine di una chiamata o di una sessione. Le relazioni sullo stato verranno scritte solo per le chiamate e le sessioni che Skype for Business Server 2015 potrebbero essere utili per scopi diagnostici.
-ms.openlocfilehash: 2c744cbf3755118a6d6fbee4837363e80b00ae44
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 666320d64e319816666404dff3afd4f27b7413f4
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58623528"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60740282"
 ---
 # <a name="progressreport-table"></a>Tabella ProgressReport
  
@@ -30,7 +30,7 @@ I campi ErrorTime, ErrorReportSeq e ProgressReportSeq non fanno necessariamente 
 |:-----|:-----|:-----|:-----|
 |**ErrorTime** <br/> |datetime  <br/> |Primaria, esterna  <br/> |Data e ora della segnalazione degli errori di stato inclusa nel rapporto sullo stato. Per ulteriori informazioni, vedere [la tabella ErrorReport Skype for Business Server 2015.](errorreport.md) <br/> |
 |**ErrorId** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero ID utilizzato insieme a ErrorTime e ProgressReportSeq per identificare in modo univoco un rapporto sullo stato. Per ulteriori informazioni, vedere [la tabella ErrorReport Skype for Business Server 2015.](errorreport.md) <br/> |
-|**ErrorReportSeq** <br/> |int  <br/> |Primaria/o, esterna/o  <br/> |Numero ID che identifica la segnalazione errori. ErrorReporSeq viene utilizzato insieme a ErrorTime per identificare in modo univoco una segnalazione errori. Per ulteriori informazioni, vedere la tabella ErrorReport Skype for Business Server [2015](errorreport.md) <br/> Questo campo è stato introdotto in Microsoft Lync Server 2013.  <br/> |
+|**ErrorReportSeq** <br/> |int  <br/> |Primaria/o, esterna/o  <br/> |Numero ID che identifica la segnalazione errori. ErrorReporSeq viene utilizzato insieme a ErrorTime per identificare in modo univoco una segnalazione errori. Per ulteriori informazioni, vedere [la tabella ErrorReport Skype for Business Server 2015](errorreport.md) <br/> Questo campo è stato introdotto in Microsoft Lync Server 2013.  <br/> |
 |**ProgressReportSeq** <br/> |int  <br/> |Principale  <br/> |Numero ID per identificare il rapporto sullo stato. Utilizzato insieme a ErrorTime ed ErrorReportSeq per identificare in modo univoco un rapporto sullo stato.  <br/> |
 |**MsDiagId** <br/> |int  <br/> ||ID diagnostica del rapporto sullo stato.  <br/> Questo campo è stato introdotto in Microsoft Lync Server 2013.  <br/> |
 |**SourceId** <br/> |int  <br/> |Foreign  <br/> |Server che ha inviato la segnalazione errori (se il report è stato inviato da un componente server). Per ulteriori [informazioni, vedere](servers.md) la tabella Servers. Questo campo è stato introdotto in Microsoft Lync Server 2013. <br/> |

@@ -1,7 +1,7 @@
 ---
 title: Disponibilità in Guam
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole, fafan
 ms.topic: reference
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per Guam.
-ms.openlocfilehash: d4c4721003bbd21a1056143cf6a37a654a6c7886
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 78f3b64cd7311ceee0f680c5edc6703f9c2d9b29
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610383"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759318"
 ---
 # <a name="availability-in-guam"></a>Disponibilità in Guam
 

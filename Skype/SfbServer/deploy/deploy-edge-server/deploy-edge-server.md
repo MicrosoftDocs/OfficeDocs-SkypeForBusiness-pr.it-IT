@@ -1,7 +1,7 @@
 ---
 title: Distribuire il server perimetrale in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 2fdf418e-e571-4f2b-bb83-91fdcf738edb
 description: "Riepilogo: informazioni su come distribuire un server perimetrale o un pool di server perimetrali nell'Skype for Business Server locale."
-ms.openlocfilehash: a956f82b3ef5e6b0860a160b264b365dc0f0aa06
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 701b1d0280360f91e9f89898e956da5e24161692
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58579370"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60740112"
 ---
 # <a name="deploy-edge-server-in-skype-for-business-server"></a>Distribuire il server perimetrale in Skype for Business Server
  
@@ -32,7 +32,7 @@ Perché distribuire un server perimetrale o un pool di server perimetrali nell'S
 
 Come indicato in precedenza, molte attività vengono suddivise in una distribuzione di server perimetrali per Skype for Business Server. Questo elenco di controllo offre una panoramica delle attività da eseguire e collegamenti a passaggi più dettagliati.
   
-Ci auguriamo che tu abbia iniziato nella sezione Pianificare le distribuzioni di [server perimetrali in Skype for Business Server.](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md) In caso contrario, molte delle cose a cui ci riferiamo sono dettagliate qui. La sezione relativa alla distribuzione contiene solo procedure, quindi se si desidera conoscere il motivo di questi passaggi, la pianificazione è il punto di inizio.
+Ci auguriamo che tu abbia iniziato nella sezione [Plan for Edge Server deployments in Skype for Business Server.](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md) In caso contrario, molte delle cose a cui ci riferiamo sono dettagliate qui. La sezione relativa alla distribuzione contiene solo procedure, quindi se si desidera conoscere il motivo di questi passaggi, la pianificazione è il punto di inizio.
   
 Questa documentazione presuppone inoltre che tu abbia già completato la distribuzione di base di Skype for Business Server. È possibile eseguire tale distribuzione side-by-side con edge, ma è necessario seguire prima questi passaggi e quindi sarà possibile apportare le modifiche della topologia per il server perimetrale documentate qui.
   
@@ -42,7 +42,7 @@ Questi sono i passaggi di alto livello che dovrai seguire e i luoghi in cui trov
     
 - [Requisiti ambientali dei server perimetrali in Skype for Business Server](../../plan-your-deployment/edge-server-deployments/edge-environmental-requirements.md)
     
-- [Creare la topologia Perimetrale per Skype for Business Server](create-your-edge-topology.md)
+- [Creare la topologia perimetrale per Skype for Business Server](create-your-edge-topology.md)
     
 - [Distribuire server perimetrali in Skype for Business Server](deploy-edge-servers.md)
     

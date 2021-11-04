@@ -1,7 +1,7 @@
 ---
 title: Aggiornare il gestore delle statistiche per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 71f5d0a0-ca81-4ac1-b590-8f854504f21f
 description: 'Riepilogo: leggere questo argomento per informazioni su come aggiornare Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: caa2a5f7576a046c990315b638e618a379dd039e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2196f07d25fb761055df4432f0c2fd930368474d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611985"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60772002"
 ---
 # <a name="upgrade-statistics-manager-for-skype-for-business-server"></a>Aggiornare il gestore delle statistiche per Skype for Business Server
  
@@ -48,7 +48,7 @@ Prima di eseguire l'aggiornamento, assicurarsi di disporre delle informazioni se
 
 Lo script raccoglierà le informazioni sul certificato corrente e la password del listener, disinstalla la versione precedente del prodotto e quindi installerà la nuova versione del prodotto. L'istanza di Redis installata nel server non verrà toccata, quindi tutti i dati archiviati nella cache verranno conservati tramite il processo di aggiornamento.
   
-1. Inserire i file MSI per la nuova versione dell'agente, del listener e del sito Web insieme allo script di Update-StatsMan.ps1 in una singola cartella nel computer listener.
+1. Inserire i file MSI per la nuova versione dell'agente, del listener e del sito Web insieme allo script Update-StatsMan.ps1 in una singola cartella nel computer listener.
     
 2. Aprire una finestra di PowerShell amministrativa. Aggiornare il componente Listener:
     
@@ -99,7 +99,7 @@ Se per qualche motivo, l'aggiornamento automatico ha esito negativo, è sempre p
 1. Nel computer listener disinstallare listener, sito Web e agente (se installato nel server) tramite il Pannello di controllo Programmi e funzionalità. 
     
     > [!NOTE]
-    >  Mantenere Redis installato in modo che i dati nella cache siano mantenuti attraverso il processo di aggiornamento.
+    >  Mantenere Redis installato in modo che i dati nella cache siano mantenuti tramite il processo di aggiornamento.
   
 2. Installare le nuove versioni dei componenti, inclusi i valori salvati in precedenza quando richiesto. Per ulteriori informazioni sull'installazione dei componenti, vedere [Deploy Statistics Manager](deploy.md#BKMK_Deploy)
 

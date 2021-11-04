@@ -1,7 +1,7 @@
 ---
 title: Download e aggiornamenti per Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 07/23/2018
@@ -13,16 +13,16 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: Trovare e gestire gli aggiornamenti per Skype for Business Server o Lync 2013. Utilizzare i collegamenti per ottenere ulteriori informazioni e quindi scaricare gli aggiornamenti.
-ms.openlocfilehash: 2da27f65f9468c164e706da05692919017ce5ea9
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 60fa56020a9a0a59f7890e71009cd65acd6636b4
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58578550"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60741732"
 ---
 # <a name="skype-for-business-downloads-and-updates"></a>Download e aggiornamenti per Skype for Business
 
-La _Skype for Business web download e aggiornamenti_ disponibile una volta su Technet è stata ritirata. Il contenuto è stato riorganizzato in pagine client e server. Seguire questi collegamenti al contenuto necessario:
+La _Skype for Business web download e aggiornamenti_ che una volta era in Technet è stata ritirata. Il contenuto è stato riorganizzato in pagine client e server. Seguire questi collegamenti al contenuto necessario:
 
 - [Aggiornamenti per Skype for Business client che](sfb-client-updates.md) contengono le sezioni:
     - [Skype for Business client 2016](sfb-client-updates.md#skype-for-business-2016-client-updates)

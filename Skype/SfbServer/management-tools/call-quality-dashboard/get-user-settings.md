@@ -1,7 +1,7 @@
 ---
 title: Ottenere impostazioni utente
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,16 +13,16 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: bdfe063b-e808-4f3c-884a-acbbabb9be0a
 description: "Riepilogo: informazioni sull'operazione Get User Impostazioni, che fa parte del servizio di Impostazioni utente. Il servizio di Impostazioni utente fa parte dell'API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 9ac219a46a1a747650c9f89feaf6e017d0d56bed
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b7be08df46aa63287d931a566d26671bfecfc3b8
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592540"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60778176"
 ---
 # <a name="get-user-settings"></a>Ottenere impostazioni utente
  
-**Riepilogo:** Informazioni sull'operazione Get User Impostazioni, che fa parte di User Impostazioni Service. Il servizio di Impostazioni utente fa parte dell'API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get User Impostazioni, che fa parte del servizio di Impostazioni utente. Il servizio di Impostazioni utente fa parte dell'API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
 L'operazione Get User Impostazioni fa parte del servizio di Impostazioni utente nell'API repository per il dashboard qualità delle chiamate.
   

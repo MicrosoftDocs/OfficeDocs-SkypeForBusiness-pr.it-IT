@@ -1,7 +1,7 @@
 ---
 title: Pianificare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 5/17/2016
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: d9aa622a-95a3-4d8e-8d49-cbfe183f25bf
 description: 'Riepilogo: leggere questo argomento per informazioni su come pianificare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 2a07b9e84e390f8d012308895229eb0da369107c
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 55ab4da8fbb5e0ddd6c2eaa3c8912a472d8e112f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58731435"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60740392"
 ---
 # <a name="plan-for-high-availability-and-disaster-recovery-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015
  
@@ -30,7 +30,7 @@ La disponibilità elevata e il ripristino di emergenza per il server Chat persis
 > L'SQL gruppi di disponibilità AlwaysOn non è supportato con i database del server Chat persistente. 
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
   
 ## <a name="resource-requirements"></a>Requisiti in termini di risorse
 
@@ -38,13 +38,13 @@ Prima di configurare il server Chat persistente per la disponibilità elevata e 
   
 - Un'istanza di database dedicata che si trova nello stesso data center fisico in cui si trova il front-end principale del servizio server Chat persistente. Questo database fungerà da SQL Server mirror per il database di Persistent Chat primario. Facoltativamente, designare un SQL Server aggiuntivo da utilizzare come controllo del mirroring se si desidera un failover automatico nel database mirror.
     
-- Un'istanza di database dedicata nell'altro data center fisico. Questo database fungerà da SQL Server database secondario di log shipping per il database nel data center principale.
+- Un'istanza di database dedicata nell'altro data center fisico. Questo database verrà utilizzato come database secondario SQL Server log shipping per il database nel data center principale.
     
 - Un'istanza di database dedicata da utilizzare come SQL Server mirror per il database secondario. Facoltativamente, designare un'SQL Server al server come controllo del mirroring. Entrambi devono trovarsi nello stesso data center fisico del database secondario.
     
 - Se la conformità del server Chat persistente è abilitata, sono necessarie altre tre istanze di database dedicate. La distribuzione è identica a quella descritta in precedenza per il database di Persistent Chat. Sebbene sia possibile per il database di conformità condividere la stessa istanza SQL Server del database di Persistent Chat, sono consigliate istanze autonome per la disponibilità elevata e il ripristino di emergenza.
     
-- È necessario creare e designare una condivisione file per i log delle transazioni SQL Server log shipping. Tutti SQL server in entrambi i data center che eseguono database di Persistent Chat devono disporre dell'accesso in lettura/scrittura a questa condivisione file. Tale condivisione non è definita come parte di un ruolo FileStore.
+- È necessario creare e designare una condivisione file per i log delle transazioni di SQL Server log shipping. Tutti SQL server in entrambi i data center che eseguono database di Persistent Chat devono disporre dell'accesso in lettura/scrittura a questa condivisione file. Tale condivisione non è definita come parte di un ruolo FileStore.
     
 - Una condivisione file nel server database secondario da utilizzare come cartella di destinazione per i registri delle transazioni SQL Server copiati dalla condivisione file del server principale.
     

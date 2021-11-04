@@ -1,6 +1,6 @@
 ---
 title: Confronto delle funzionalità dei client mobili per Skype for Business
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 ms.reviewer: PhillipGarding
 manager: serdars
@@ -17,16 +17,16 @@ ms.collection:
 ms.custom: ''
 ms.assetid: b2c950c9-76a5-400a-b146-9b1a22790c12
 description: 'Riepilogo: esaminare il supporto delle funzionalità per il client mobile durante la pianificazione Skype for Business Server.'
-ms.openlocfilehash: 576947499c506052c5204d4826489ae9a2a60037
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 9b619219666a89e40870caf4cea80a683011775c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614126"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759568"
 ---
 # <a name="mobile-client-feature-comparison-for-skype-for-business"></a>Confronto delle funzionalità dei client mobili per Skype for Business
  
-**Riepilogo:** Esaminare il supporto delle funzionalità per il client mobile durante la pianificazione di Skype for Business Server.
+**Riepilogo:** Esaminare il supporto delle funzionalità per il client mobile durante la pianificazione Skype for Business Server.
   
 In questo articolo vengono confrontate le funzionalità Skype for Business client mobili e il client desktop Skype for Business nelle categorie seguenti:
   
@@ -50,10 +50,10 @@ In questo articolo vengono confrontate le funzionalità Skype for Business clien
     
 -  Autenticazione moderna
     
-Nelle tabelle seguenti sono elencate le funzionalità disponibili per Skype for Business utenti in una distribuzione locale di Skype for Business Server. Le stesse funzionalità sono disponibili anche per gli utenti Skype for Business Online e Microsoft 365 o Office 365, se non diversamente indicato nelle note a piè di pagina della tabella.
+Nelle tabelle seguenti sono elencate le funzionalità disponibili per Skype for Business utenti in una distribuzione locale di Skype for Business Server. Le stesse funzionalità sono disponibili anche per gli utenti Skype for Business online e Microsoft 365 o Office 365, se non diversamente indicato nelle note a piè di pagina della tabella.
   
 > [!NOTE]
-> Per informazioni e risorse online per gli utenti finali, vedere [Discover Skype for Business](https://go.microsoft.com/fwlink/p/?LinkId=528686). 
+> Per informazioni e risorse online per gli utenti finali, vedere [Discover Skype for Business.](https://go.microsoft.com/fwlink/p/?LinkId=528686) 
   
 > [!NOTE]
 > Per confrontare le funzionalità disponibili in altri client Skype for Business desktop, vedere [Desktop client feature comparison for Skype for Business](desktop-feature-comparison.md). 
@@ -73,7 +73,7 @@ Nelle tabelle seguenti sono elencate le funzionalità disponibili per Skype for 
 |Usare una tastiera esterna per l'accessibilità  <br/> |&#x2714;||&#x2714;|&#x2714;|
 |Supporto del programma Analisi utilizzo software Microsoft  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
    
- &#x2776; In Windows Phone, Skype for Business automaticamente dopo un periodo di inattività, come indicato di seguito:
+ &#x2776; in Windows Phone, Skype for Business automaticamente dopo un periodo di inattività, come indicato di seguito:
   
 - Se l'utente ha abilitato le notifiche push, Skype for Business dopo 10 giorni di inattività.
     
@@ -85,7 +85,7 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
   
  &#x2778; le notifiche sono disponibili quando l'app è in esecuzione in background.
  
- &#x2779; entrambi i servizi di notifica mobile Google/Android/GCNS e Apple/APNS usano la crittografia HTTPS/TLS per il recapito delle notifiche. Il payload della notifica viene gestito in testo normale durante l'elaborazione da parte del provider di notifiche.
+ &#x2779; sia Google/Android/GCNS che i servizi di notifica mobile Apple/APNS usano la crittografia HTTPS/TLS per il recapito delle notifiche. Il payload della notifica viene gestito in testo normale durante l'elaborazione da parte del provider di notifiche.
  
 -   Skype for Business per Android riceve notifiche semplici (recapitate tramite GCNS) senza dati del cliente.
 -   Skype for Business per iOS riceve notifiche (recapitate tramite APNS) che possono includere i dati del cliente per la chiamata o il messaggio.
@@ -173,7 +173,7 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
 |Accedere all'elenco dettagliato dei partecipanti alle conferenze di messaggistica istantanea  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Condividere il desktop o un programma  <br/> |&#x2714;||||
 |Visualizzare il desktop o il programma condiviso (VbSS o RDP)  <br/> |&#x2714;|&#x2714; &#x2777; |&#x2714; &#x2777; |&#x2714; &#x2777; |
-|Visualizzare file PowerPoint condivisi  <br/> |&#x2714;|&#x2714; &#x2777; |&#x2714; &#x2777;&#x2778; |&#x2714; &#x2777; &#x2778;|
+|Visualizzare i file PowerPoint condivisi  <br/> |&#x2714;|&#x2714; &#x2777; |&#x2714; &#x2777;&#x2778; |&#x2714; &#x2777; &#x2778;|
 |Upload e presentare PowerPoint file  <br/> |&#x2714;||&#x2714; &#x2777; |&#x2714; &#x2777; |
 |Usare gli strumenti per le riunioni (usare lavagna, condurre sondaggi, condividere file)  <br/> |&#x2714;||||
 |Esplorare un elenco delle proprie riunioni  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
@@ -185,7 +185,7 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
   
  &#x2777; richiede una connessione WiFi per impostazione predefinita.
  
- &#x2778; La visualizzazione di video incorporati in PowerPoint presentazioni non è supportata.
+ &#x2778; la visualizzazione di video incorporati in PowerPoint presentazioni non è supportata.
   
 ## <a name="telephony-support"></a>Supporto per telefonia
 
@@ -210,7 +210,7 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
   
  &#x2777; Per Skype for Business online e/o Microsoft 365 o Office 365 utenti, questa funzionalità è supportata dai partner Microsoft.
   
- &#x2778; Windows solo client Desktop.
+ &#x2778; Windows solo client desktop.
   
 ## <a name="external-user-support"></a>Supporto per utenti esterni
 
@@ -223,7 +223,7 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
 |Condurre chiamate con più utenti esterni.  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Usare Chiama tramite ufficio per raggiungere un contatto federato sul proprio telefono cellulare chiamando il numero di ufficio pubblicato &#x2776;            <br/> ||&#x2714;|&#x2714;|&#x2714;|
    
- &#x2776; per impostazione predefinita, agli utenti federati viene assegnata la relazione di privacy Contatti esterni. Per poter raggiungere un contatto federato sul proprio cellulare chiamando il numero di ufficio pubblicato, il contatto federato deve assegnare manualmente la relazione di privacy Colleghi.
+ &#x2776; Per impostazione predefinita, agli utenti federati viene assegnata la relazione di privacy Contatti esterni. Per poter raggiungere un contatto federato sul proprio cellulare chiamando il numero di ufficio pubblicato, il contatto federato deve assegnare manualmente la relazione di privacy Colleghi.
   
 ## <a name="address-book-integration"></a>Integrazione della rubrica
 

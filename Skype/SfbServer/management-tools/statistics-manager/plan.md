@@ -1,7 +1,7 @@
 ---
 title: Pianificare il gestore delle statistiche per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: f0ec68e1-de01-4a92-b67d-703149b05caf
 description: 'Riepilogo: leggere questo argomento per informazioni su Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: 2ba909e5bcc526a40374f5f9fdbbcf15c1cf7c39
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 79f8bc38169d6cba52160772cd9ba0869e761b30
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58730755"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60778146"
 ---
 # <a name="plan-for-statistics-manager-for-skype-for-business-server"></a>Pianificare il gestore delle statistiche per Skype for Business Server
 
@@ -28,11 +28,11 @@ ms.locfileid: "58730755"
 
 È possibile utilizzare Gestione statistiche per identificare i problemi di prestazioni in corso, visualizzare i risultati di una modifica pianificata all'ambiente, tenere traccia della risoluzione delle interruzioni e molto altro ancora. Gestione statistiche è configurato con soglie KHI (Key Health Indicator) e può essere personalizzato in base alle esigenze specifiche della distribuzione.
 
-È possibile distribuire Gestione statistiche in una distribuzione locale in cui un singolo server ospita tutti i componenti di Gestione statistiche sul lato server. Per ulteriori informazioni sulla distribuzione di Gestione statistiche, vedere [Deploy Statistics Manager for Skype for Business Server](deploy.md). Se si dispone già di una distribuzione esistente di Gestione statistiche, ma non è stato ancora eseguito l'aggiornamento alla versione 2.0, vedere [What's new in Release 2.0](plan.md#BKMK_WhatsNew) e [Upgrade Statistics Manager for Skype for Business Server](upgrade.md).
+È possibile distribuire Gestione statistiche in una distribuzione locale in cui un singolo server ospita tutti i componenti di Gestione statistiche sul lato server. Per ulteriori informazioni sulla distribuzione di Gestione statistiche, vedere [Deploy Statistics Manager for Skype for Business Server](deploy.md). Se si dispone già di una distribuzione esistente di Gestione statistiche, ma non è stato ancora eseguito l'aggiornamento alla versione 2.0, vedere [Novità della versione 2.0](plan.md#BKMK_WhatsNew) e Gestione statistiche di aggiornamento per [Skype for Business Server](upgrade.md).
 
 In questa sezione sono contenute le seguenti sezioni:
 
-- [Caratteristiche e funzionalità](plan.md#BKMK_Features)
+- [Funzionalità e caratteristiche](plan.md#BKMK_Features)
 
 - [Novità della versione 2.0](plan.md#BKMK_WhatsNew)
 
@@ -44,7 +44,7 @@ In questa sezione sono contenute le seguenti sezioni:
 
 - [Considerazioni sulla sicurezza](plan.md#BKMK_Security)
 
-## <a name="features-and-capabilities"></a>Caratteristiche e funzionalità
+## <a name="features-and-capabilities"></a>Funzionalità e caratteristiche
 <a name="BKMK_Features"> </a>
 
 Gestione statistiche consente di:
@@ -88,7 +88,7 @@ Di seguito vengono descritte le novità della versione 2.0. Se si dispone di una
 
 - Sono stati aggiunti molti nuovi contatori per SQL server, più Skype for Business contatori di utilizzo e così via.
 
-- Integrazione del nodo Watcher per l'agente di gestione statistiche: se l'agente è installato in un nodo Watcher, le statistiche delle transazioni sintetiche verranno segnalate come contatori a Gestione statistiche.
+- Integrazione del nodo Watcher per l'agente di gestione delle statistiche: se l'agente è installato in un nodo Watcher, le statistiche delle transazioni sintetiche verranno segnalate come contatori a Gestione statistiche.
 
 - Numerosi miglioramenti di affidabilità e prestazioni.
 
@@ -120,7 +120,7 @@ Gestione statistiche richiede inoltre **Redis**, un server di struttura dei dati
 
 In una distribuzione locale, un singolo server ospita tutti i componenti di Gestione statistiche sul lato server.
 
-Il diagramma seguente mostra una distribuzione locale, in cui il sito Web, l'hub, il listener e il sistema di memorizzazione nella cache di Gestione statistiche sono ospitati in un singolo computer. Gestione statistiche sta monitorando tre Skype for Business server, ognuno dei quali dispone di un singolo agente che trasmette i dati al listener. Gli utenti si connettono a un singolo sito Web per visualizzare tutti i dati aggregati da Gestione statistiche:
+Il diagramma seguente mostra una distribuzione locale, in cui il sito Web, l'hub, il listener e il sistema di memorizzazione nella cache di Gestione statistiche sono ospitati in un singolo computer. Gestione statistiche sta monitorando tre Skype for Business, ognuno dei quali dispone di un singolo agente che trasmette i dati al listener. Gli utenti si connettono a un singolo sito Web per visualizzare tutti i dati aggregati da Gestione statistiche:
 
 ![Distribuzione locale di Gestione statistiche.](../../media/c7c9d0b5-a70b-4d8c-aec4-0128a29b90b6.png)
 

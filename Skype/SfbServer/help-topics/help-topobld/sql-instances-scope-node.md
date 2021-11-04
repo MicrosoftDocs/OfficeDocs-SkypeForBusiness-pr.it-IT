@@ -1,7 +1,7 @@
 ---
 title: Nodo dell'ambito delle istanze SQL
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/25/2015
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 399dce5b-bd51-4693-89d9-3463c1d73ded
 description: "Nel nodo SQL archivi vengono elencati SQL Server database della topologia. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: 4224b469eb041082550c7a0d588614283b702a30
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 6651527cd5bfdbca73aec1539d25a0e2194aa01d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58602541"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60765634"
 ---
 # <a name="sql-instances-scope-node"></a>Nodo dell'ambito delle istanze SQL
  
@@ -28,7 +28,7 @@ Nel **nodo SQL archivi** vengono elencati SQL Server database della topologia. �
   
 - **Nuovo archivio SQL**. Avvia la **procedura guidata Define New SQL Store,** che consente di aggiungere un nuovo database di SQL Server alla topologia.
     
-Oltre alle opzioni SQL Server database, è possibile eseguire le attività generali seguenti:
+Oltre alle opzioni SQL Server database, è possibile eseguire le attività generali seguenti:In addition to the SQL Server database options, you can perform the following general tasks:
   
 - **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti da versioni precedenti o rimuovere la distribuzione.
     
