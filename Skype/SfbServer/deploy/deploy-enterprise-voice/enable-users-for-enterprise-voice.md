@@ -1,7 +1,7 @@
 ---
 title: Abilitare gli utenti per VoIP aziendale in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f252b23b-9641-4160-aa81-bf06dc2eced3
 description: 'Riepilogo: informazioni su come consentire agli utenti di effettuare e ricevere chiamate utilizzando VoIP aziendale in Skype for Business Server.'
-ms.openlocfilehash: 04533245348672afedfac113f3fd64188a2efba2
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 27c60b7532411c50d6613635a28a638a5cfbc97d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60012770"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60749367"
 ---
 # <a name="enable-users-for-enterprise-voice-in-skype-for-business-server"></a>Abilitare gli utenti per VoIP aziendale in Skype for Business Server
  
@@ -30,7 +30,7 @@ ms.locfileid: "60012770"
 Dopo aver distribuito VoIP aziendale chiamata tramite lavoro, è possibile utilizzare le procedure seguenti per consentire a un utente di effettuare chiamate tramite VoIP aziendale:
   
 > [!NOTE]
-> Delle procedure seguenti, solo la prima può essere eseguita utilizzando Skype for Business Server Pannello di controllo. Per le procedure rimanenti, è possibile utilizzare solo Skype for Business Server Management Shell. 
+> Delle procedure seguenti, solo la prima può essere eseguita utilizzando Skype for Business Server pannello di controllo. Per le procedure rimanenti, è possibile utilizzare solo Skype for Business Server Management Shell. 
   
 - Abilitare l'account utente per VoIP aziendale.
     

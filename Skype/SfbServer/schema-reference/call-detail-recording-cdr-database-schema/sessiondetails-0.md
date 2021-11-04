@@ -1,7 +1,7 @@
 ---
 title: Visualizzazione SessionDetails
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 7/15/2015
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: ea328c6f-cf22-48dd-8f7f-f1666c9148c8
 description: Nella visualizzazione SessionDetails vengono archiviate informazioni relative alle sessioni peer-to-peer, ovvero le chiamate telefoniche VoIP-VoIP, le sessioni di messaggistica istantanea tra due utenti e altri tipi di sessioni. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 454cefc905409e0488121addab2cac5df55ef34d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 5a278960912ac38dc75fe398e3d75de710785800
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58625128"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60767454"
 ---
 # <a name="sessiondetails-view"></a>Visualizzazione SessionDetails
  
@@ -26,7 +26,7 @@ Nella visualizzazione SessionDetails vengono archiviate informazioni relative al
   
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
-|**SessionIdTime** <br/> |datetime  <br/> |Ora della richiesta di sessione. Valore usato in combinazione con SessionIdSeq per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere [la tabella Dialogs Skype for Business Server 2015](dialogs.md) Table. <br/> |
+|**SessionIdTime** <br/> |datetime  <br/> |Ora della richiesta di sessione. Valore usato in combinazione con SessionIdSeq per identificare in modo univoco una sessione. Per ulteriori [informazioni, vedere la tabella Dialogs Skype for Business Server 2015](dialogs.md) Table. <br/> |
 |**SessionIdSeq** <br/> |int  <br/> |Numero ID per identificare la sessione. Valore usato in combinazione con SessionIdTime per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) <br/> |
 |**InviteTime** <br/> |datetime  <br/> |Ora della prima richiesta INVITE. Questo campo è solitamente compilato con dati generati dal messaggio INVITE iniziale della sessione. In mancanza del messaggio INVITE, il campo viene compilato con la data e l'ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO).  <br/> |
 |**FromUri** <br/> |nvarchar(450)  <br/> |URI dell'utente che ha avviato la sessione.  <br/> |

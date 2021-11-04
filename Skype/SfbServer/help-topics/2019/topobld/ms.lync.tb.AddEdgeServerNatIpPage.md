@@ -1,7 +1,7 @@
 ---
 title: Aggiungere l'indirizzo IP di NAT del server perimetrale
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: aa97fd0e-48b9-4a66-b55a-12291641c967
 ROBOTS: NOINDEX, NOFOLLOW
 description: L'indirizzo IP pubblico è l'indirizzo IP utilizzato da Network Address Translation (NAT). L'indirizzo IP deve essere instradabile pubblicamente. Questa operazione è necessaria perché è stata selezionata l'opzione Indirizzo IP del pool Edge Server convertito da NAT nella pagina Selezione funzionalità di questa procedura guidata.
-ms.openlocfilehash: 20fc7b116fe5d0b57b7f818f89a6a473e58a6a4a
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 16d90e7bf9453a6ae2d6b154bd6257d20bd6ca2a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58633900"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766974"
 ---
 # <a name="add-edge-server-nat-ip"></a>Aggiungere Edge Server NAT IP
 

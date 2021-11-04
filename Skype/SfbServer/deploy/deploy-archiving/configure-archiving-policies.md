@@ -1,7 +1,7 @@
 ---
 title: Configurare i criteri di archiviazione per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: e8e48087-d4f0-4fe1-9e7e-f2b3e07f815f
 description: 'Riepilogo: leggere questo argomento per informazioni su come configurare i criteri di archiviazione iniziali per Skype for Business Server utenti.'
-ms.openlocfilehash: 545febf0e84aa7ff9ad6295978f88a2dca406792
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 62e61d951c7e05effa68afd13c849c027b40a896
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611295"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60749525"
 ---
 # <a name="configure-archiving-policies-for-skype-for-business-server"></a>Configurare i criteri di archiviazione per Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come configurare i criteri di archiviazione iniziali per Skype for Business Server utenti.
   
-In Skype for Business Server vengono utilizzati criteri per abilitare e disabilitare l'archiviazione per le comunicazioni interne e esterne per gli utenti ospitati in Skype for Business Server. Sono incluse le attività seguenti:
+In Skype for Business Server vengono utilizzati i criteri per abilitare e disabilitare l'archiviazione per le comunicazioni interne e esterne per gli utenti ospitati in Skype for Business Server. Sono incluse le attività seguenti:
   
 - Criteri globali creati per impostazione predefinita quando si distribuisce Skype for Business Server
     
@@ -69,7 +69,7 @@ Quando si distribuiscono i Front End Server, Skype for Business Server un criter
     
 ## <a name="site-policies"></a>Criteri sito
 
-È possibile abilitare o disabilitare l'archiviazione per siti specifici creando un criterio di archiviazione per ognuno di tali siti. I criteri sito hanno la precedenza sul criterio globale, mentre i criteri utente hanno la precedenza su criteri sito. I criteri di archiviazione si applicano solo se non si utilizza l'integrazione di Microsoft Exchange o, se si utilizza l'integrazione di Microsoft Exchange, ma si dispone di alcuni utenti che non sono ospitati in Exchange e hanno le loro cassette postali messe In-Place blocco.
+È possibile abilitare o disabilitare l'archiviazione per siti specifici creando un criterio di archiviazione per ognuno di tali siti. I criteri sito hanno la precedenza sul criterio globale, mentre i criteri utente hanno la precedenza su criteri sito. I criteri di archiviazione si applicano solo se non si utilizza l'integrazione di Microsoft Exchange o, se si utilizza l'integrazione di Microsoft Exchange, ma si dispone di alcuni utenti che non sono ospitati in Exchange e hanno le loro cassette postali messe In-Place conservazione.
   
 ### <a name="create-an-archiving-policy-for-a-site"></a>Creare criteri di archiviazione per un sito
 
@@ -99,7 +99,7 @@ Quando si distribuiscono i Front End Server, Skype for Business Server un criter
     
 ## <a name="user-policies"></a>Criteri utente
 
-È possibile abilitare o disabilitare l'archiviazione per utenti specifici creando e configurando un criterio di archiviazione per gli utenti e quindi applicando il criterio a utenti o gruppi di utenti specifici. I criteri utente sostituiscono eventuali criteri globali o sito. I criteri di archiviazione si applicano solo se non si utilizza l'integrazione di Microsoft Exchange o, se si utilizza l'integrazione di Microsoft Exchange, ma si dispone di alcuni utenti che non sono ospitati in Exchange e hanno le loro cassette postali messe In-Place blocco.
+È possibile abilitare o disabilitare l'archiviazione per utenti specifici creando e configurando un criterio di archiviazione per gli utenti e quindi applicando il criterio a utenti o gruppi di utenti specifici. I criteri utente sostituiscono eventuali criteri globali o sito. I criteri di archiviazione si applicano solo se non si utilizza l'integrazione di Microsoft Exchange o, se si utilizza l'integrazione di Microsoft Exchange, ma si dispone di alcuni utenti che non sono ospitati in Exchange e hanno le loro cassette postali messe In-Place conservazione.
   
 ### <a name="configure-an-archiving-policy-for-users-homed-on-skype-for-business-server"></a>Configurare un criterio di archiviazione per gli utenti ospitati in Skype for Business Server
 

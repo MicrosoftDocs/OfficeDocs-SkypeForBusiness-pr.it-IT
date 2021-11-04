@@ -1,7 +1,7 @@
 ---
 title: Nome di dominio completo (FQDN) per unione legacy
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: d72841ff-3c4d-4233-a933-f3a95d75d89b
 ROBOTS: NOINDEX, NOFOLLOW
 description: L'FQDN interno del pool di accessi perimetrali viene utilizzato per diversi scenari in cui gli utenti interni comunicano con utenti esterni per la federazione, l'accesso degli utenti remoti e la connettività di messaggistica istantanea pubblica. Se nell'ambiente legacy è stato distribuito un Edge Server con bilanciamento del carico, immettere il nome di dominio completo (FQDN) del servizio di bilanciamento del carico interno.
-ms.openlocfilehash: 25d366e963110e5f41e5fcc5787ef6c952784b99
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: a3a2017f62ffabe8f427f7e5bd048f8c6e5c3d67
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58628968"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60752385"
 ---
 # <a name="legacy-merge-fqdn"></a>Nome di dominio completo (FQDN) per unione legacy
  

@@ -1,7 +1,7 @@
 ---
 title: Pianificare l'applicazione Response Group in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6cc333e7-4029-4372-86b2-016040c415fb
 description: Pianificazione dei Response Group in Skype for Business Server VoIP aziendale, che consente di configurare il routing delle chiamate a gruppi di utenti. Include i requisiti per i file audio.
-ms.openlocfilehash: 41decf3e61e32867dd6b1d726bb551f8c2ae38f0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 3ca8159ca3d6fc37aa5c8f1f3f88f8188929f71f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58631580"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60767554"
 ---
 # <a name="plan-for-the-response-group-application-in-skype-for-business-server"></a>Pianificare l'applicazione Response Group in Skype for Business Server
 
@@ -78,7 +78,7 @@ I responsabili di Response Group possono utilizzare gli strumenti seguenti per g
 
 - Skype for Business Server Management Shell
 
-Response Group si adatta bene agli ambienti di reparto o di gruppo di lavoro (per informazioni dettagliate, vedere [Capacity Planning for Response Group)](/previous-versions/office/lync-server-2013/lync-server-2013-capacity-planning-for-response-group)e può essere distribuito in installazioni di telefonia completamente nuove. Supporta le chiamate in arrivo dalla distribuzione VoIP aziendale e dalla rete del gestore locale. Gli agenti possono utilizzare Skype for Business, Lync 2013, Lync 2010, Lync 2010 Attendant o Lync Telefono Edition per effettuare le chiamate instradati.
+Response Group si adatta bene agli ambienti di reparto o di gruppo di lavoro (per informazioni dettagliate, vedere [Capacity Planning for Response Group)](/previous-versions/office/lync-server-2013/lync-server-2013-capacity-planning-for-response-group)e può essere distribuito in installazioni di telefonia completamente nuove. Supporta le chiamate in arrivo dalla distribuzione VoIP aziendale e dalla rete del gestore locale. Gli agenti possono utilizzare Skype for Business, Lync 2013, Lync 2010, Lync 2010 Attendant o Lync Telefono Edition per effettuare le chiamate instradati a loro.
 
 ## <a name="deployment-and-requirements"></a>Distribuzione e requisiti
 
@@ -90,7 +90,7 @@ L'applicazione Response Group ha gli stessi requisiti hardware, i requisiti del 
 
 Se si utilizzano file Windows Media Audio (wma) per la musica e gli annunci di Response Group, in tutti i Front End Server o nei server Standard Edition che eseguono l'applicazione Response Group deve essere installato Runtime formato multimediale Windows per i server che eseguono Windows Server 2008 R2 o Microsoft Media Foundation per i server che eseguono Windows Server 2012 o Windows Server 2012 R2. Per Windows Server 2008 R2, Windows Media Format Runtime viene installato come parte di Windows Desktop Experience.
 
-Response Group utilizza **Language Pack** per supportare la sintesi vocale e il riconoscimento vocale. Queste tecnologie vocali vengono usate quando si configurano messaggi, ad esempio messaggi di benvenuto o di altro tipo, nonché domande e risposte IVR (Interactive Voice Response). Per impostazione predefinita, i 26 Language Pack supportati vengono installati quando si distribuisce Skype for Business Server.
+Response Group usa **Language Pack** per supportare la sintesi vocale e il riconoscimento vocale. Queste tecnologie vocali vengono usate quando si configurano messaggi, ad esempio messaggi di benvenuto o di altro tipo, nonché domande e risposte IVR (Interactive Voice Response). Per impostazione predefinita, i 26 Language Pack supportati vengono installati quando si distribuisce Skype for Business Server.
 
 ### <a name="port-requirements"></a>Requisiti delle porte
 
@@ -110,7 +110,7 @@ L'applicazione Response Group utilizza le porte seguenti:
 
 L'applicazione Response Group supporta il formato di file wave (wav) e il formato di file Windows Media Audio (wma) per i messaggi di Response Group, la musica di attesa o le domande IVR (Interactive Voice Response).
 
-Il formato di file audio Windows Media richiede che runtime formato multimediale Windows sia installato nei Front End Server che eseguono Windows Server 2008 R2 e Windows Server 2008. Per ulteriori dettagli, vedere i "Requisiti software" presi già in esame in questa sezione.
+Il formato di file audio Windows Media richiede che runtime formato multimediale di Windows sia installato nei Front End Server che eseguono Windows Server 2008 R2 e Windows Server 2008. Per ulteriori dettagli, vedere i "Requisiti software" presi già in esame in questa sezione.
 
 #### <a name="supported-wave-file-formats"></a>Formati di file wave supportati
 
@@ -191,9 +191,9 @@ Il client specifico che è possibile utilizzare dipende dal tipo di utente di Re
 
 - **Chiamanti**: possono chiamare un Response Group utilizzando uno qualsiasi dei client elencati in precedenza e utilizzando un telefono standard nella rete PSTN (Public Switched Telephone Network).
 
-- **Gli agenti informali** ,ovvero gli agenti che non eseguono l'accesso e la disconnessione dai propri gruppi per accettare chiamate, possono accettare chiamate utilizzando Attendant, Lync o Lync Telefono Edition. Gli agenti informali vengono automaticamente connessi ai propri gruppi quando a Skype for Business Server tramite uno di questi client.
+- **Gli agenti informali** ,ovvero gli agenti che non eseguono l'accesso e la disconnessione dai gruppi per accettare chiamate, possono accettare chiamate utilizzando Attendant, Lync o Lync Telefono Edition. Gli agenti informali vengono automaticamente connessi ai propri gruppi quando a Skype for Business Server tramite uno di questi client.
 
-- Gli agenti formali **(gli** agenti che devono accedere e uscire dai propri gruppi per accettare chiamate) possono accettare le chiamate utilizzando Skype for Business e accedendo alla console degli agenti dalla voce di menu oppure utilizzando Attendant e accedendo alla console dell'agente direttamente da Internet Explorer.
+- Gli agenti formali **(gli** agenti che devono accedere e uscire dai propri gruppi per accettare le chiamate) possono accettare chiamate utilizzando Skype for Business e accedendo alla console degli agenti dalla voce di menu oppure utilizzando Operatore e accedendo alla console dell'agente direttamente da Internet Explorer.
 
 ## <a name="capacity-planning"></a>Pianificazione della capacità
 
@@ -209,7 +209,7 @@ Nella tabella seguente viene descritto il modello utente di Response Group che �
 
 |**Metrica**|**Per edizione Enterprise pool <br/> (con 8 Front End Server)**|**Per server Standard Edition**|
 |:-----|:-----|:-----|
-|Chiamate in entrata al secondo  <br/> |16   <br/> |2   <br/> |
+|Chiamate in entrata al secondo  <br/> |16   <br/> |2  <br/> |
 |Chiamate simultanee connesse a IVR o MoH  <br/> |480  <br/> |60  <br/> |
 |Sessioni anonime simultanee (senza messaggistica istantanea)  <br/> |224  <br/> |28  <br/> |
 |Sessioni anonime simultanee (con messaggistica istantanea)  <br/> |64  <br/> |8   <br/> |

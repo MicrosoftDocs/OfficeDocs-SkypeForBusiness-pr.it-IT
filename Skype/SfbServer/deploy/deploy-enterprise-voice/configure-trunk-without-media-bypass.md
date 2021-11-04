@@ -1,7 +1,7 @@
 ---
 title: 'Skype for Business Server: Configurare un trunk senza bypass multimediale'
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 3422e93e-7bd2-4470-968c-dc38345b18ca
 description: 'Riepilogo: configurare un trunk senza bypass multimediale abilitato per Skype for Business Server.'
-ms.openlocfilehash: 2f6edcf34f7da82da53ca10b523468b4ba794209
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 09d178cf2deeb27ec47c39090f7dcc233af3cbb0
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58590580"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759118"
 ---
 # <a name="skype-for-business-server-configure-a-trunk-without-media-bypass"></a>Skype for Business Server: Configurare un trunk senza bypass multimediale
 
@@ -48,7 +48,7 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
    - **Trunk pool**: scegliere il nome del trunk al quale si applica questa configurazione trunk in **Seleziona un servizio** e fare clic su **OK**. Questo trunk può essere il trunk radice o qualsiasi altro trunk definito in Generatore di topologie. Si noti che se è già stata creata una configurazione trunk per un trunk specifico, tale trunk non verrà visualizzato in **Seleziona un servizio**.
 
      > [!NOTE]
-     > Dopo aver selezionato l'ambito della configurazione trunk, non è possibile modificarlo. > Il **campo Nome** è precompilato con il nome del sito o del servizio associato alla configurazione trunk e non può essere modificato.
+     > Dopo aver selezionato l'ambito della configurazione trunk, non è possibile modificarlo. > il **campo Nome** è precompilato con il nome del sito o del servizio associato alla configurazione trunk e non può essere modificato.
 
 4. Selezionare una delle opzioni di **Livello di supporto crittografia** seguenti:
 
@@ -66,7 +66,7 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 
 8. (Facoltativo) Per abilitare il routing tra trunk, associare e configurare i record utilizzo PSTN a questa configurazione trunk. Gli utilizzi PSTN associati a questa configurazione trunk verranno applicati per tutte le chiamate in arrivo tramite il trunk che non proviene da un endpoint Skype for Business Server remoto. Per gestire i record utilizzo PSTN associati a una configurazione trunk, usare uno di questi metodi:
 
-   - Per selezionare uno o più record da un elenco di tutti i record di utilizzo PSTN disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. Evidenziare i record da associare a questa configurazione trunk e quindi fare clic su **OK**.
+   - Per selezionare uno o più record da un elenco di tutti i record di utilizzo PSTN disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona.** Evidenziare i record da associare a questa configurazione trunk e quindi fare clic su **OK**.
 
    - Per rimuovere un record utilizzo PSTN da questa configurazione trunk, selezionare il record e fare clic su **Rimuovi**.
 
@@ -113,7 +113,7 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 9. Organizzare i record utilizzo PSTN in modo da ottenere prestazioni ottimali. Per modificare la posizione di un record nell'elenco, selezionare il record di utilizzo PSTN e fare clic sulle frecce su o giù.
 
     > [!IMPORTANT]
-    > L'ordine in cui i record utilizzo PSTN sono elencati nella configurazione trunk è significativo. Skype for Business Server attraversa l'elenco dall'alto verso il basso.
+    > L'ordine in cui i record utilizzo PSTN sono elencati nella configurazione trunk è significativo. Skype for Business Server l'elenco dall'alto verso il basso.
 
 10. Per abilitare il bypass multimediale per i client protetti da NAT o firewall, selezionare **Abilita latch RTP** e un SBC che supporti il latch.
 

@@ -1,7 +1,7 @@
 ---
 title: Aggiungere l'indirizzo IP esterno del server perimetrale (2010)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 11/17/2018
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: adb2778d-fd46-4ab9-899d-f97f71493659
 description: È possibile configurare le proprietà in questa pagina in modo che il server perimetrale punti alle posizioni esterne del servizio Access Edge, del servizio Web Conferencing Edge e del servizio A/V Edge.
-ms.openlocfilehash: 32a98e391c547877074911adccd7813ca7a12923
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 88636f9718bb600a220cdf4dd912ec12abfca7e1
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614266"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60752145"
 ---
 # <a name="add-edge-server-external-ip-2010"></a>Aggiungere Edge Server External IP 2010
 

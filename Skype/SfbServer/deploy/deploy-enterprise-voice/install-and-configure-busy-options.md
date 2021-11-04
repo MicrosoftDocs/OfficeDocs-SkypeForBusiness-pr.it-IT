@@ -1,7 +1,7 @@
 ---
-title: Installare e configurare opzioni occupato per Skype for Business Server
+title: Installare e configurare opzioni di disponibilità per Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fb0faac8-ca1c-4abb-9959-d19def294c64
 description: Informazioni su come installare e configurare le opzioni occupato in Skype for Business Server.
-ms.openlocfilehash: 58c70360a9e25ccefcd62181ab5a1a5b222ae9a5
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 60ff279d1d763cda8ed5c03809c7244a05aec1e9
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58600681"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759068"
 ---
-# <a name="install-and-configure-busy-options-for-skype-for-business-server"></a>Installare e configurare opzioni occupato per Skype for Business Server
+# <a name="install-and-configure-busy-options-for-skype-for-business-server"></a>Installare e configurare opzioni di disponibilità per Skype for Business Server
 
 Informazioni su come installare e configurare le opzioni occupato in Skype for Business Server.
 
@@ -38,15 +38,15 @@ Indipendentemente dalla configurazione delle opzioni di disponibilità, agli ute
 
 Per ulteriori informazioni sulla funzionalità Opzioni occupato, vedere [Plan for Busy Options for Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/busy-options.md).
 
-## <a name="install"></a>Installa
+## <a name="install"></a>Installare
 
-Assicurarsi di avere installato la versione più recente di Skype for Business Server e di aver installato la patch più recente. A tale scopo, arrestare prima tutti i servizi ed eseguire il programma di Skype for Business Server di aggiornamento nel modo seguente:
+Assicurarsi di avere installato la versione più recente di Skype for Business Server e di aver installato la patch più recente. A tale scopo, arrestare prima tutti i servizi ed eseguire il programma di Skype for Business Server di aggiornamento come indicato di seguito:
 
 1. Eseguire il Stop-CsWindowsService comando.
 
-2. Eseguire il SkypeServerUpdateInstaller.exe di installazione in ogni Front End Server di un pool.
+2. Eseguire il SkypeServerUpdateInstaller.exe in ogni Front End Server di un pool.
 
-3. Eseguire il SkypeServerUpdateInstaller.exe di installazione su ogni Survivable Branch Server (SBS), se si desidera garantire il supporto per il failover in SBS.
+3. Eseguire il SkypeServerUpdateInstaller.exe su ogni Survivable Branch Server (SBS), se si desidera garantire il supporto per il failover in SBS.
 
 Il programma di installazione distribuirà la versione più recente dell'applicazione Opzioni occupato. Tuttavia, l'applicazione non è abilitata per impostazione predefinita. Per abilitare l'applicazione, eseguire la procedura seguente:
 
@@ -64,7 +64,7 @@ Il programma di installazione distribuirà la versione più recente dell'applica
    Get-CsSite
    ```
 
-    Utilizzare il valore Identity (ad esempio: Site:Redmond1) recuperato da Get-CsSite per recuperare i criteri vocali del sito nel modo seguente:
+    Utilizzare il valore Identity (ad esempio: Site:Redmond1) recuperato da Get-CsSite per recuperare i criteri vocali del sito come segue:
 
    ```powershell
    Get-CsVoicePolicy -Identity Site:Redmond1
@@ -97,7 +97,7 @@ Il programma di installazione distribuirà la versione più recente dell'applica
    Start-CsWindowsService
    ```
 
-## <a name="configure"></a>Configura
+## <a name="configure"></a>Configurazione
 
 Per configurare le opzioni occupato, utilizzare il cmdlet [Set-CsBusyOptions.](https://technet.microsoft.com/library/8ffbb832-3e55-4d6c-9a7c-5ce2df22de2e.aspx)
 
@@ -154,4 +154,4 @@ ScriptName :
 Script     :
 </pre>
 
-È inoltre possibile utilizzare Windows visualizzatore eventi per verificare che l'installazione delle opzioni occupato sia stata eseguita correttamente e che Skype for Business Server le opzioni occupato siano state caricate correttamente. Per verificare le opzioni occupato, aprire Visualizzatore eventi - Registri applicazioni e servizi **\> - Skype \> (o Lync) Server** e cercare ID evento = 30253.
+È inoltre possibile utilizzare Windows visualizzatore eventi per verificare che l'installazione delle opzioni occupato sia stata eseguita correttamente e che Skype for Business Server le opzioni occupato siano state caricate correttamente. Per verificare le opzioni di occupato, aprire Visualizzatore eventi - Registri applicazioni e servizi **\> - Skype \> (o Lync) Server** e cercare ID evento = 30253.

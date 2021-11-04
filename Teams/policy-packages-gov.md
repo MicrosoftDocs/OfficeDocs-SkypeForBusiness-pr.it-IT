@@ -1,7 +1,7 @@
 ---
 title: Teams di criteri per enti pubblici
-author: cichur
-ms.author: serdars
+author: serdars
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: aaglick
 ms.topic: article
@@ -17,17 +17,17 @@ ms.custom: ''
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare e gestire i Teams dei criteri per l'organizzazione governativa.
-ms.openlocfilehash: 745957168c221caf566d04a795e378c642b8ae9a
-ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
+ms.openlocfilehash: 02680b18d32e62a8a559ac6d2a30708e5aa05497
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "60605442"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60749595"
 ---
 # <a name="teams-policy-packages-for-government"></a>Teams di criteri per enti pubblici
 
 > [!NOTE]
-> I pacchetti di criteri non sono attualmente disponibili nelle distribuzioni Microsoft 365 government GCC High o DoD.
+> I pacchetti di criteri non sono attualmente disponibili nelle distribuzioni Microsoft 365 Government GCC High o DoD.
 
 ## <a name="overview"></a>Panoramica
 
@@ -51,7 +51,7 @@ Teams attualmente include i pacchetti di criteri per enti pubblici seguenti.
 
 ![Screenshot dei pacchetti di criteri sanitari.](media/policy-packages-gov.png)
 
-A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare facilmente i criteri collegati a un determinato pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri Per i funzionari della sicurezza pubblica agli utenti dell'organizzazione, viene creato un criterio denominato PublicSafety_Officer per ogni criterio nel pacchetto.
+A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare facilmente i criteri collegati a un determinato pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri per i funzionari della sicurezza pubblica agli utenti dell'organizzazione, viene creato un criterio denominato PublicSafety_Officer per ogni criterio nel pacchetto.
 
 ![Screenshot dei criteri nel pacchetto di operatori clinici del settore sanitario.](media/policy-packages-public-safety-officer.png)
 

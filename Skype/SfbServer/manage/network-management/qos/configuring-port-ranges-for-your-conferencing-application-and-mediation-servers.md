@@ -5,7 +5,7 @@ ms:assetid: 4d6eaa5d-0127-453f-be6a-e55384772d83
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204872(v=OCS.15)
 ms:contentKeyID: 48184074
 mtps_version: v=OCS.15
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: In questo articolo viene descritto come configurare gli intervalli di porte e un criterio qualità del servizio per i server per conferenze, applicazioni e Mediation Server.
-ms.openlocfilehash: 6e5b420b4ccc8cc59a45834cbd898ccc5b2ec180
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 6785756af5c79eb27d2b4e15b86155d1d58bbc88
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58634290"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60760724"
 ---
 # <a name="configuring-port-ranges-and-a-quality-of-service-policy-for-your-conferencing-application-and-mediation-servers"></a>Configurazione degli intervalli di porte e dei criteri qualità del servizio per i server per conferenze, applicazioni e Mediation Server
 
@@ -28,7 +28,7 @@ In questo articolo viene descritto come configurare gli intervalli di porte e un
 
 ## <a name="configure-port-ranges"></a>Configurare gli intervalli di porte
 
-Per implementare la qualità del servizio, è consigliabile configurare intervalli di porte identici per la condivisione di applicazioni, video e audio nei server Di conferenza, Applicazione e Mediation Server. inoltre, tali intervalli di porte non devono sovrapporsi in alcun modo. Per utilizzare un semplice esempio, si supponga di utilizzare le porte da 10000 a 10999 per i video sui server per conferenze. Ciò significa che è necessario riservare anche le porte da 10000 a 10999 per i video nei server Applicazioni e Mediation Server. In caso contrario, QoS non funzionerà come previsto.
+Per implementare la qualità del servizio, è consigliabile configurare intervalli di porte identici per la condivisione di audio, video e applicazioni nei server Di conferenza, Applicazione e Mediation Server. inoltre, tali intervalli di porte non devono sovrapporsi in alcun modo. Per utilizzare un semplice esempio, si supponga di utilizzare le porte da 10000 a 10999 per i video sui server per conferenze. Ciò significa che è necessario riservare anche le porte da 10000 a 10999 per i video nei server Applicazioni e Mediation Server. In caso contrario, QoS non funzionerà come previsto.
 
 Analogamente, si supponga di riservare le porte da 10000 a 10999 per i video, ma di riservare le porte da 10500 a 11999 per l'audio. Ciò può creare problemi per qualità del servizio, perché gli intervalli di porte si sovrappongono. Con QoS, ogni modalità deve avere un set univoco di porte: se usi le porte da 10000 a 10999 per i video, dovrai usare un intervallo diverso (ad esempio, da 11000 a 11999 per l'audio).
 
@@ -41,7 +41,7 @@ Per impostazione predefinita, gli intervalli di porte audio e video non si sovra
   Get-CsService -MediationServer | Select-Object Identity, AudioPortStart, AudioPortCount
 
 > [!WARNING]  
-> Come puoi vedere nei comandi precedenti, a ogni tipo di porta , audio, video e condivisione di applicazioni, vengono assegnati due valori di proprietà distinti: l'inizio della porta e il numero di porte. L'inizio della porta indica la prima porta utilizzata per tale modalità. Ad esempio, se l'inizio della porta audio è uguale a 50000, significa che la prima porta utilizzata per il traffico audio è la porta 50000. Se il numero di porte audio è 2 (che non è un valore valido, ma viene usato qui a scopo illustrativo), significa che solo due porte vengono allocate per l'audio. Se la prima porta è la porta 50000 e sono presenti un totale di due porte, significa che la seconda deve essere la porta 50001 (gli intervalli di porte devono essere contigui). Di conseguenza, l'intervallo di porte per l'audio è compreso tra 50000 e 50001, inclusi.<BR><br>Si noti anche che i server applicazioni e i Mediation Server supportano QoS solo per l'audio. Per questi server non è quindi necessario modificare le porte di condivisione video o applicazioni.
+> Come puoi vedere nei comandi precedenti, a ogni tipo di porta, audio, video e condivisione di applicazioni, vengono assegnati due valori di proprietà distinti: l'inizio della porta e il numero di porte. L'inizio della porta indica la prima porta utilizzata per tale modalità. Ad esempio, se l'inizio della porta audio è uguale a 50000, significa che la prima porta utilizzata per il traffico audio è la porta 50000. Se il numero di porte audio è 2 (che non è un valore valido, ma viene usato qui a scopo illustrativo), significa che solo due porte vengono allocate per l'audio. Se la prima porta è la porta 50000 e sono presenti un totale di due porte, significa che la seconda deve essere la porta 50001 (gli intervalli di porte devono essere contigui). Di conseguenza, l'intervallo di porte per l'audio è compreso tra 50000 e 50001, inclusi.<BR><br>Si noti anche che i server applicazioni e i Mediation Server supportano QoS solo per l'audio. Per questi server non è quindi necessario modificare le porte di condivisione video o applicazioni.
 
 Se esegui i tre comandi precedenti, vedrai che i valori di porta predefiniti per Skype for Business Server sono configurati in questo modo:
 
@@ -96,7 +96,7 @@ Se esegui i tre comandi precedenti, vedrai che i valori di porta predefiniti per
 </tbody>
 </table>
 
-Come indicato in precedenza, quando si configurano le porte di Skype for Business Server per QoS, è necessario verificare che: 1) le impostazioni delle porte audio siano identiche tra i server di conferenza, applicazioni e Mediation Server; e 2) gli intervalli di porte non si sovrappongono. Se si osserva la tabella precedente, si nota che gli intervalli di porte sono identici per i tre tipi di server. Ad esempio, la porta audio iniziale corrisponde alla porta 49152 per ciascun tipo di server. Anche il numero totale di porte riservate all'audio in ciascun server è identico: 8348. Tuttavia gli intervalli di porte si sovrappongono: le porte audio iniziano in corrispondenza della porta 49152, ma lo stesso avviene per le porte riservate alla condivisione delle applicazioni. Per ottimizzare l'uso di Quality of Service, è necessario riconfigurare la condivisione delle applicazioni in modo che usi un intervallo esclusivo, ad esempio impostando l'inizio alla porta 40803 e l'uso di 8348 porte. Perché 8348 porte? Se si sommano questi valori , ovvero 40803 + 8348, significa che la condivisione applicazioni utilizzerà le porte 40803 fino alla porta 49150. Poiché le porte audio iniziano con la porta 49152, gli intervalli di porte non si sovrappongono più.
+Come indicato in precedenza, quando si configurano le porte di Skype for Business Server per QoS, è necessario verificare che: 1) le impostazioni delle porte audio siano identiche tra i server di conferenza, applicazioni e Mediation Server. e 2) gli intervalli di porte non si sovrappongono. Se si osserva la tabella precedente, si nota che gli intervalli di porte sono identici per i tre tipi di server. Ad esempio, la porta audio iniziale corrisponde alla porta 49152 per ciascun tipo di server. Anche il numero totale di porte riservate all'audio in ciascun server è identico: 8348. Tuttavia gli intervalli di porte si sovrappongono: le porte audio iniziano in corrispondenza della porta 49152, ma lo stesso avviene per le porte riservate alla condivisione delle applicazioni. Per ottimizzare l'uso di Quality of Service, è necessario riconfigurare la condivisione delle applicazioni in modo che usi un intervallo esclusivo, ad esempio impostando l'inizio alla porta 40803 e l'uso di 8348 porte. Perché 8348 porte? Se si sommano questi valori , 40803 + 8348, significa che la condivisione applicazioni utilizzerà le porte 40803 tramite la porta 49150. Poiché le porte audio iniziano con la porta 49152, gli intervalli di porte non si sovrappongono più.
 
 Dopo aver selezionato il nuovo intervallo di porte per la condivisione delle applicazioni, è possibile apportare la modifica utilizzando il cmdlet Set-CsConferencingServer. Questa modifica non è necessaria per i server applicazioni e i Mediation Server, perché questi server non gestiscono il traffico relativo alla condivisione applicazioni. Per questi server i valori delle porte devono essere modificati solo se si decide di riassegnare le porte usate per il traffico audio.
 
@@ -173,7 +173,7 @@ Per verificare che i criteri QoS siano stati applicati, effettuare le operazioni
 
 2.  Nella finestra **di** dialogo Esegui digitare **regedit** e quindi premere INVIO.
 
-3.  Nell'Editor del Registro di sistema espandere **Computer**, **HKEY \_ LOCAL \_ MACHINE**, **SOFTWARE**, **Criteri**, **Microsoft**, **Windows** e quindi fare clic su **QoS**. In **QoS** dovrebbero essere presenti le chiavi del Registro di sistema per ognuno dei Criteri QoS creati. Ad esempio, se sono stati creati due nuovi criteri (uno denominato QoS audio Skype for Business Server e l'altro QoS video Skype for Business Server), dovrebbero essere presenti voci del Registro di sistema per QoS audio Skype for Business Server e QoS video Skype for Business Server.
+3.  Nell'Editor del Registro di sistema espandere **Computer**, **HKEY \_ LOCAL \_ MACHINE**, **SOFTWARE**, **Criteri**, **Microsoft**, Windows **e** quindi fare clic su **QoS**. In **QoS** dovrebbero essere presenti le chiavi del Registro di sistema per ognuno dei Criteri QoS creati. Ad esempio, se sono stati creati due nuovi criteri (uno denominato QoS audio Skype for Business Server e l'altro QoS video Skype for Business Server), dovrebbero essere presenti voci del Registro di sistema per QoS audio Skype for Business Server e QoS video Skype for Business Server.
 
 Per assicurare che i pacchetti di rete siano contrassegnati con il valore DSCP appropriato, è consigliabile creare una nuova voce del Registro di sistema su ogni computer completando la procedura seguente:
 

@@ -1,7 +1,7 @@
 ---
 title: Elenco di tabelle QoE
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/13/2018
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 176194d7-d184-4e23-94bb-cb62b4db47f5
 description: Lo schema del database è costituito dalle tabelle seguenti.
-ms.openlocfilehash: 1d6d60d06dcb6cbfdde6a4fdbbd2746d00aa8531
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 0532d1574bcbbe80a58195d2c14ea6920375153f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58601271"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60767294"
 ---
 # <a name="list-of-qoe-tables"></a>Elenco di tabelle QoE
  
@@ -34,7 +34,7 @@ Lo schema del database è costituito dalle tabelle seguenti.
 |[Tabella NetworkConnectionDetail](networkconnectiondetail.md) <br/> |Mappe tipi di connessione di rete agli identificatori di connessione di rete utilizzati altrove nel database qualità dell'esperienza.  <br/> |
 |[Tabella PurgeSettings (QoE)](purgesettings-qoe.md) <br/> |Archivia le informazioni che specificano se e quando i record di qualità dell'esperienza non aggiornati verranno eliminati automaticamente dal database QoE.  <br/> |
 |[Tabella TraceRoute](traceroute.md) <br/> |Archivia le informazioni di routing per le chiamate.  <br/> |
-|[Tabella UserAgentDef (QoE)](useragentdef-qoe.md) <br/> |Mappe degli agenti utente ai nomi descrittivi dell'agente.  <br/> |
+|[Tabella UserAgentDef (QoE)](useragentdef-qoe.md) <br/> |Mappe identificatori agente utente ai nomi descrittivi dell'agente.  <br/> |
 |[Tabella VideoMetricsThreshold](videometricsthreshold.md) <br/> |Archivia valori ottimali e accettabili per le metriche di qualità dell'esperienza usate con le videochiamate.  <br/> |
 |[Tabella UserAgent](useragent.md) <br/> |Archivia le stringhe dell'agente utente SIP (Session Initiation Protocol) e i tipi UA utilizzati nelle sessioni audio e video.  <br/> |
 |[Tabella utente](user-0.md) <br/> |Archivia gli URI di utenti, conferenze e telefonici utilizzati nelle sessioni audio e video.  <br/> |

@@ -1,7 +1,7 @@
 ---
 title: Panoramica delle funzionalità (Strumento di pianificazione)
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.assetid: 44783b37-c87f-41f2-9de1-39176f1856ab
 ROBOTS: NOINDEX, NOFOLLOW
 description: Skype for Business Server Strumento di pianificazione
-ms.openlocfilehash: c1272cf0809be097e9f5b0282b165ef899744520
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 0b47d1dad12d4933f042217b4762d7bb4f766c6c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58600501"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60758778"
 ---
 # <a name="feature-overview-planning-tool"></a>Panoramica delle funzionalità (Strumento di pianificazione)
  
@@ -55,7 +55,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Chiamate in conferenza**
     
-    Le conferenze telefoniche con accesso esterno consentono agli utenti di partecipare a un A/V da un telefono sulla rete PSTN. Per le conferenze telefoniche con accesso esterno è necessario distribuire le applicazioni Operatore conferenza e Annuncio conferenza Service.
+    Le conferenze telefoniche con accesso esterno consentono agli utenti di partecipare a un A/V da un telefono sulla rete PSTN. Per le conferenze telefoniche con accesso esterno è necessario distribuire le applicazioni Operatore conferenza e Annuncio conferenza service.
     
 - **Conferenze Web**
     
@@ -66,7 +66,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     Persistent Chat consente a più utenti di partecipare a conversazioni in cui pubblicano e accedono a contenuto su argomenti specifici, tra cui testo, collegamenti e file. Nonostante gli utenti possano comunicare in tempo reale durante una sessione, il contenuto di ogni sessione può essere salvato in modo permanente e quindi restare disponibile anche al termine di una sessione.
 
     > [!NOTE] 
-    > La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Skype for Business to Microsoft Teams upgrade](/MicrosoftTeams/upgrade-start-here). Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
+    > La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Skype for Business to Microsoft Teams upgrade](/MicrosoftTeams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
     
 ### <a name="users"></a>Utenti
 
@@ -90,10 +90,10 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Cassetta postale Exchange W15**
     
-    Skype for Business Server consente di archiviare i messaggi della segreteria telefonica Exchange messaggistica unificata; tali messaggi della segreteria telefonica verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
+    Skype for Business Server consente di archiviare i messaggi di segreteria telefonica Exchange messaggistica unificata; tali messaggi della segreteria telefonica verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
 
     > [!NOTE]
-    > Exchange La messaggistica unificata nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+    > Exchange La messaggistica unificata come precedentemente nota non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
     
 ### <a name="voice"></a>Voce
 
@@ -105,10 +105,10 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Messaggistica unificata di Exchange**
     
-    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica delle chiamate e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
+    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la messaggistica unificata Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica di chiamata e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
 
     > [!NOTE]
-    > Exchange La messaggistica unificata nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+    > Exchange La messaggistica unificata come precedentemente nota non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
     
 ### <a name="additional-deployment-options"></a>Opzioni di distribuzione aggiuntive
 
@@ -132,7 +132,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Exchange Integrazione dell'archiviazione**
     
-    Se si dispone di utenti ospitati in Exchange e le relative cassette postali sono state messe In-Place archiviazione, è possibile selezionare l'opzione per integrare l'archiviazione Skype for Business Server con Exchange archiviazione.
+    Se si dispone di utenti ospitati in Exchange e le relative cassette postali sono state messe In-Place conservazione, è possibile selezionare l'opzione per integrare l'archiviazione Skype for Business Server con Exchange archiviazione.
     
 - **IPv4**
     
@@ -160,7 +160,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Parcheggio di chiamata**
     
-    L'applicazione Parcheggio di chiamata consente a un utente di VoIP aziendale di mettere in attesa una chiamata da un telefono e quindi di ricevere la chiamata da un altro telefono senza creare un collegamento tra le risorse del telefono che ha ricevuto la chiamata. L'applicazione Parcheggio di chiamata è utile quando un utente deve trasferire una chiamata, ma il destinatario specifico è sconosciuto. 
+    L'applicazione Parcheggio di chiamata consente a un utente VoIP aziendale di mettere in attesa una chiamata da un telefono e quindi di ricevere la chiamata da un altro telefono senza creare un collegamento tra le risorse del telefono che ha ricevuto la chiamata. L'applicazione Parcheggio di chiamata è utile quando un utente deve trasferire una chiamata, ma il destinatario specifico è sconosciuto. 
     
 - **Operatore conferenza**
     
@@ -168,7 +168,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Annuncio conferenza**
     
-    applicazione Annuncio conferenza toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
+    applicazione Annuncio conferenza produce toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
     
 - **Servizio Controllo di ammissione di chiamata**
     

@@ -1,7 +1,7 @@
 ---
 title: Aggiungere collocazioni di server Front End Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 23e3bda7-a8bf-4da4-88e5-098ae2aa268f
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per una distribuzione di Server Enterprise, il servizio A/V Conferencing viene collocato nel pool Front End. È anche possibile collocare Mediation Server sul pool Front End oppure distribuirlo come server autonomo. Se il servizio di conferenza è abilitato, il servizio A/V Conferencing sarà sempre collocato.
-ms.openlocfilehash: 32fe5e00aeaf75197454a1bc901215279b2829d8
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 093afe3a741f197b76654d4399b68bfa523d84a6
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58600491"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60758728"
 ---
 # <a name="add-front-end-server-collocations"></a>Aggiungere collocazioni di Front End Server
 

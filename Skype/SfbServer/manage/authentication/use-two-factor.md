@@ -1,7 +1,7 @@
 ---
 title: Usare l'autenticazione a due fattori con Skype for Business client e Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d4136e61-c3ab-4b26-85c8-c1b2c24f5ee3
 description: "Riepilogo: utilizzare l'autenticazione a due fattori con Skype for Business Server e Skype for Business."
-ms.openlocfilehash: 5b1003c78020e1181112a0ccadaf66a7d1dd4da4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 3bcba5d4bdd6aacee794b40273b2cb92c83df50a
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58587124"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60767864"
 ---
 # <a name="use-two-factor-authentication-with-skype-for-business-client-and-skype-for-business-server"></a>Usare l'autenticazione a due fattori con Skype for Business client e Skype for Business Server
  
@@ -46,15 +46,15 @@ Le informazioni di accesso vengono in genere configurate automaticamente quando 
     
 ## <a name="sign-out-of-skype-for-business"></a>Disconnettersi da Skype for Business
 
-Al termine dell'Skype for Business, è possibile chiudere lo schermo, disconnettersi dalla sessione o uscire dal programma dal menu File. Nella tabella seguente vengono illustrate le differenze tra le opzioni.
+Dopo aver terminato di usare Skype for Business, è possibile chiudere lo schermo, disconnettersi dalla sessione o uscire dal programma dal menu File. Nella tabella seguente vengono illustrate le differenze tra le opzioni.
   
 |**Opzione**|**Funzione**|**Come eseguirlo**|
 |:-----|:-----|:-----|
-|Chiudi  <br/> |Chiude lo schermo, ma consente Skype for Business sessione identificata con l'ID utente continui a essere eseguita. In questo modo puoi continuare a ricevere notifiche e interagire con altri utenti. <br/> <br/> Puoi recuperare lo schermo in qualsiasi momento facendo clic sull'icona Skype for Business sulla barra delle applicazioni o nell'area di notifica nella parte inferiore dello schermo.  <br/> | Nella finestra Skype for Business principale eseguire una delle operazioni seguenti: <br/> 1. Selezionare il **pulsante Opzioni,** quindi selezionare **Chiudi**  >  **file.**  <br/> 2. Fare clic **sul** pulsante Chiudi (X) nell'angolo superiore destro della finestra. <br/> |
-|Disconnettersi  <br/> |Termina la sessione associata all'ID utente, ma Skype for Business continua a essere eseguita in background. Quando ci si disconnette, viene visualizzata la finestra di accesso.  <br/> **Suggerimento:** Selezionare **Elimina le informazioni di accesso quando** ci si disconnette per rimuovere il record dell'ID di accesso e della password dal computer. Questa operazione potrebbe semplificare la risoluzione dei problemi di accesso per gli utenti del supporto. Può anche contribuire a garantire che le informazioni di accesso siano più sicure rendendo difficile per gli utenti non autorizzati accedere con le credenziali. <br/> |Nella finestra Skype for Business principale, selezionare il **pulsante Opzioni,** quindi selezionare **Disconnei**  >  **file**.  <br/> |
-|Esci  <br/> |Termina la Skype for Business e arresta il Skype for Business sul computer. Dopo la chiusura, se si desidera riavviare, selezionare **Avvia**  >  **tutti i programmi** > Skype for Business. <br/> |Nella finestra Skype for Business principale, selezionare il **pulsante Opzioni,** quindi selezionare **File**  >  **Esci.**  <br/> |
+|Chiudi  <br/> |Chiude lo schermo, ma consente di Skype for Business la sessione identificata con l'ID utente continua a essere eseguita. In questo modo puoi continuare a ricevere notifiche e interagire con altri utenti. <br/> <br/> Puoi recuperare lo schermo in qualsiasi momento facendo clic sull'icona Skype for Business sulla barra delle applicazioni o sull'area di notifica nella parte inferiore dello schermo.  <br/> | Nella finestra Skype for Business principale eseguire una delle operazioni seguenti: <br/> 1. Selezionare il **pulsante Opzioni,** quindi selezionare **Chiudi**  >  **file.**  <br/> 2. Fare clic **sul** pulsante Chiudi (X) nell'angolo superiore destro della finestra. <br/> |
+|Disconnettersi  <br/> |Termina la sessione associata all'ID utente, ma Skype for Business continua a essere eseguita in background. Quando ci si disconnette, viene visualizzata la finestra di accesso.  <br/> **Suggerimento:** Selezionare **Elimina le informazioni di accesso quando** ci si disconnette per rimuovere il record dell'ID di accesso e della password dal computer. Questa operazione potrebbe semplificare la risoluzione dei problemi di accesso per gli utenti del supporto. Può anche contribuire a garantire che le informazioni di accesso siano più sicure rendendo difficile per gli utenti non autorizzati accedere con le credenziali. <br/> |Nella finestra Skype for Business principale, selezionare il **pulsante Opzioni,** quindi selezionare **Disconnennei**  >  **file.**  <br/> |
+|Esci  <br/> |Termina la Skype for Business e arresta il Skype for Business sul computer. Dopo aver chiuso, se si desidera riavviare, selezionare **Avvia**  >  **tutti i programmi** > Skype for Business. <br/> |Nella finestra Skype for Business principale, selezionare il **pulsante Opzioni,** quindi selezionare **File**  >  **Esci.**  <br/> |
    
-## <a name="sign-in-to-skype-for-business-with-a-smart-card"></a>Accedere a Skype for Business con una smart card
+## <a name="sign-in-to-skype-for-business-with-a-smart-card"></a>Accedere a un Skype for Business con una smart card
 
 Alcune organizzazioni ora usano un processo di accesso a più passaggi, denominato autenticazione a due fattori, per aumentare la sicurezza per gli utenti. Se si prevede di utilizzare questa opzione, è necessaria una "smart card" per accedere a Skype for Business. Le smart card possono essere fisiche o virtuali:
   
@@ -141,7 +141,7 @@ Prima di usare la smart card per la prima  volta, è consigliabile fare clic su 
 4. Digitare il numero pin per la smart card e quindi fare clic su **OK.**
     
     > [!NOTE]
-    > Se non è stato assegnato un numero PIN della smart card dal supporto tecnico, utilizzare il valore predefinito, ovvero 12345678. 
+    > Se non è stato assegnato un numero PIN della smart card dal supporto tecnico, utilizzare il valore predefinito, che è 12345678. 
   
 ## <a name="see-also"></a>Vedere anche
 

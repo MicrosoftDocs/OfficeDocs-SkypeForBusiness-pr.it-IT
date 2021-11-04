@@ -1,7 +1,7 @@
 ---
 title: Elenco di controllo finale per la distribuzione del controllo di ammissione di chiamata Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d56a525f-3da5-4ac0-a311-0c5efd98c9df
 description: Elenco di controllo finale per la distribuzione del servizio Controllo di ammissione di chiamata in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 70fadce643fa21d9551a6a6ba26a2883579eee1f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 11bf5a69b273f1311399090cc893bee1f4732443
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594144"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759078"
 ---
 # <a name="call-admission-control-deployment-final-checklist-for-skype-for-business-server"></a>Distribuzione del controllo di ammissione di chiamata: elenco di controllo finale per Skype for Business Server
  

@@ -1,7 +1,7 @@
 ---
 title: Espansione delle impostazioni generali del server di archiviazione
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/25/2015
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 0b820af7-8d00-42e2-979c-dbae17159a08
 description: "In Generatore di topologie è possibile modificare le proprietà di un singolo server che esegue l'archiviazione facendo clic con il pulsante destro del mouse sul server che esegue Archiviazione nell'albero della console e scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e quindi scegliendo Modifica proprietà e modificando una delle opzioni seguenti:"
-ms.openlocfilehash: c2e7cdca346c908d4154d5f711bcd13f6306ed06
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c8537e661a5e2b854df144782977507b5e3a4f3f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58591510"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60768134"
 ---
 # <a name="archiving-server-general-settings-expander"></a>Espansione delle impostazioni generali del server di archiviazione
  

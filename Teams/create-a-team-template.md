@@ -1,7 +1,7 @@
 ---
 title: Creare un modello di team personalizzato in Microsoft Teams
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 ms.reviewer: aaglick
 manager: serdars
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c3c388ab19d74370612531e3ac998ff3e928e0d3
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: b7f3574121bb056208748be522af0b9a5f744846
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726895"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60749695"
 ---
 # <a name="create-a-custom-team-template-in-microsoft-teams"></a>Creare un modello di team personalizzato in Microsoft Teams
 
@@ -38,7 +38,7 @@ Per iniziare:
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro **espandere** Teams  >  **Team**.
+2. Nel riquadro di spostamento sinistro espandere **Teams**  >  **Team**.
 
 3. Selezionare **Aggiungi**.
 
@@ -53,7 +53,7 @@ Per iniziare:
 
     ![Immagine della finestra di dialogo di denominazione delle impostazioni dei modelli di team.](media/template-add-a-name.png)
 
-6. Nella sezione **canali, schede e app** aggiungere tutti i canali e le app di cui il team ha bisogno.
+6. Nella sezione **canali, schede e app** aggiungere i canali e le app di cui il team ha bisogno.
 
     1. Nella sezione **Canali** selezionare **Aggiungi**.
     2. Nella finestra **di dialogo** Aggiungi assegnare un nome al canale.
@@ -106,7 +106,7 @@ Stiamo lavorando a una correzione per i futuri team creati da modelli personaliz
 
 ![messaggio di errore del browser.](media/browser-error-message.png)
 
-**Soluzione:** in caso di problemi con la visualizzazione del contenuto della scheda del sito Web, si verrà reindirizzati all'apertura della scheda in una pagina Web separata oppure all'apertura di Teams nell'app desktop per visualizzare l'app della scheda del sito Web.
+**Soluzione:** in caso di problemi con la visualizzazione del contenuto della scheda del sito Web, si verrà reindirizzati all'apertura della scheda in una pagina Web separata o all'apertura di Teams nell'app desktop per visualizzare l'app della scheda del sito Web.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

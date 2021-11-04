@@ -1,7 +1,7 @@
 ---
 title: Configurare criteri vocali, record di utilizzo PSTN e route vocali in Skype for Business
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 1e5a15f9-6f42-4dc6-baaa-24daf54afc4d
 description: 'Riepilogo: informazioni su come configurare criteri vocali, record di utilizzo PSTN e route vocali in Skype for Business Server.'
-ms.openlocfilehash: d38e843645b9c3e45103fb7ea52f4c5f7cd5ceea
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 62fcd557a0cdbaf8064e49f7c1c695f0f6f31880
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621838"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60759058"
 ---
 # <a name="configure-voice-policies-pstn-usage-records-and-voice-routes-in-skype-for-business"></a>Configurare criteri vocali, record di utilizzo PSTN e route vocali in Skype for Business
  
@@ -46,7 +46,7 @@ Per i passaggi dettagliati per l'esecuzione di ognuna di queste attività, veder
     
 - [Creare o modificare una route vocale in Skype for Business](create-or-modify-a-voice-route.md)
     
-- [Esportare o importare un file di configurazione delle route vocali in Skype for Business](voice-route-configuration-import-export.md)
+- [Esportare o importare un file di configurazione della route vocale in Skype for Business](voice-route-configuration-import-export.md)
     
 - [Pubblicare le modifiche in sospeso nella configurazione del routing vocale in Skype for Business](voice-route-config-changes.md)
     

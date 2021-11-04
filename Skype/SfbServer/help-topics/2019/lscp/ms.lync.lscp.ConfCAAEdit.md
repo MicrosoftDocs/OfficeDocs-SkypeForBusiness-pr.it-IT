@@ -1,7 +1,7 @@
 ---
 title: Numero di accesso con accesso remoto Crea nuovo o Modifica esistente
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 97a2b794-77da-40c0-9f9a-3c5fe6cc683d
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 0e3e06aa9987d87f1aca8ee22e435474c1b571a2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c2edf9fd4fdf33ce8fa772bce611e7b183f28096
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58612715"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60767084"
 ---
 # <a name="dial-in-access-number-create-new-or-edit-existing"></a>Numero di accesso esterno: crearne uno nuovo o modificarne uno esistente
 

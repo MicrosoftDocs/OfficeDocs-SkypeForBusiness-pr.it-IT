@@ -1,7 +1,7 @@
 ---
 title: Elenco delle tabelle cdR in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 2/1/2018
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 031843fd-c7ff-4534-9b02-8847aad70807
 description: Lo schema del database di registrazione dettagli chiamata (CDR) è costituito dalle tabelle riportate di seguito.
-ms.openlocfilehash: acc509fc895c015ec213bd18560986b3f6d12aa7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 1e8c76080089005977154c3e23d924a4b98dc6b5
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58635130"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60746662"
 ---
 # <a name="list-of-cdr-tables-in-skype-for-business-server-2015"></a>Elenco delle tabelle cdR in Skype for Business Server 2015
  
@@ -65,7 +65,7 @@ Lo schema del database di registrazione dettagli chiamata (CDR) è costituito da
 |:-----|:-----|
 |[Tabella Conferenze in Skype for Business Server 2015](conferences.md) <br/> |In questa tabella sono archiviate le informazioni relative a tutte le conferenze che sono state archiviate o di cui sono stati registrati i dettagli, inclusi l'URI conferenza e la data/ora di inizio e fine.  <br/> |
 |[Tabella ConferenceSessionDetails in Skype for Business Server 2015](conferencesessiondetails-0.md) <br/> |In questa tabella sono archiviate le informazioni relative a tutte le sessioni di conferenza basate su SIP, inclusi la data/ora di inizio e fine, l'ID utente, il codice di risposta e l'ID diagnostica di ogni sessione.  <br/> |
-|[Tabella FocusJoinsAndLeaves Skype for Business Server 2015](focusjoinsandleaves.md) <br/> |In questa pagina sono archiviate le informazioni sulle partecipazioni e le abbandonazioni alle conferenze, tra cui il ruolo degli utenti e la versione client.  <br/> |
+|[Tabella FocusJoinsAndLeaves Skype for Business Server 2015](focusjoinsandleaves.md) <br/> |In questa pagina sono archiviate le informazioni sulle partecipazioni e le abbandonazioni alle conferenze, tra cui il ruolo e la versione client degli utenti.  <br/> |
 |[Tabella McuJoinsAndLeaves Skype for Business Server 2015](mcujoinsandleaves.md) <br/> |In questa tabella sono archiviate le informazioni relative agli A/V Conferencing Server coinvolti in una conferenza e la data/ora di partecipazione e abbandono degli utenti.  <br/> |
    
 ## <a name="tables-for-messages-in-im-conferences"></a>Tabelle per i messaggi nelle conferenze di messaggistica istantanea
@@ -73,14 +73,14 @@ Lo schema del database di registrazione dettagli chiamata (CDR) è costituito da
 |**Tavolo**|**Descrizione**|
 |:-----|:-----|
 |[Tabella ConferenceMessageCount in Skype for Business Server 2015](conferencemessagecount.md) <br/> |In questa tabella è archiviato, per ogni conferenza di messaggistica istantanea, il numero dei messaggi inviati da ogni utente.  <br/> |
-|[Tabella IMReportSummary in Skype for Business Server 2015](imreportsummary.md) <br/> |Questa tabella fornisce un rapporto complessivo sulle sessioni di messaggistica istantanea tenute in un'organizzazione.  <br/> |
+|[Tabella IMReportSummary Skype for Business Server 2015](imreportsummary.md) <br/> |Questa tabella fornisce un rapporto complessivo sulle sessioni di messaggistica istantanea tenute in un'organizzazione.  <br/> |
    
 ## <a name="tables-for-peer-to-peer-sessions"></a>Tabelle per le sessioni peer-to-peer
 
 |**Tavolo**|**Descrizione**|
 |:-----|:-----|
 |[Tabella SessionDetails](sessiondetails.md) <br/> |In questa tabella sono archiviate le informazioni relative a tutte le sessioni peer-to-peer, inclusi la data/ora di inizio e fine, l'ID utente, il codice di risposta e il numero dei messaggi per ogni utente.  <br/> |
-|[Tabella FileTransfers in Skype for Business Server 2015](filetransfers-0.md) <br/> |In questa tabella sono archiviate le informazioni relative alle sessioni di trasferimento file, inclusi il nome di file e il risultato (accettazione, rifiuto o annullamento).  <br/> |
+|[Tabella FileTransfers Skype for Business Server 2015](filetransfers-0.md) <br/> |In questa tabella sono archiviate le informazioni relative alle sessioni di trasferimento file, inclusi il nome di file e il risultato (accettazione, rifiuto o annullamento).  <br/> |
 |[Media table](media.md) <br/> |In questa tabella sono archiviate le informazioni relative ai diversi tipi di contenuto multimediale coinvolti nelle sessioni peer-to-peer.  <br/> |
    
 ## <a name="table-for-voip-call-details"></a>Tabella per i dettagli delle chiamate VoIP
@@ -106,11 +106,11 @@ Lo schema del database di registrazione dettagli chiamata (CDR) è costituito da
 |**Tavolo**|**Descrizione**|
 |:-----|:-----|
 |[Tabella delle applicazioni in Skype for Business Server 2015](application.md) <br/> |Archivia le informazioni sui vari processi Skype for Business Server 2015 coinvolti nel routing e nelle connessioni.  <br/> |
-|[Tabella CallType in Skype for Business Server 2015](calltype.md) <br/> |Archivia informazioni sui tipi di chiamata, ad esempio "audio", "messaggistica istantanea", "audio e video" e "condivisione applicazioni".  <br/> |
+|[Tabella CallType Skype for Business Server 2015](calltype.md) <br/> |Archivia informazioni sui tipi di chiamata, ad esempio "audio", "messaggistica istantanea", "audio e video" e "condivisione applicazioni".  <br/> |
 |[Tabella ErrorCategory in Skype for Business Server 2015](errorcategory.md) <br/> |Archivia il nome descrittivo per ogni Skype for Business Server diagnostica 2015.  <br/> |
 |[Tabella ErrorDef in Skype for Business Server 2015](errordef.md) <br/> |In questa tabella sono archiviate le informazioni relative ai tipi di errori con le relative definizioni.  <br/> |
 |[Tabella ErrorReport in Skype for Business Server 2015](errorreport.md) <br/> |In questa tabella sono archiviate le informazioni relative agli errori che si sono verificati.  <br/> |
-|[Tabella ProgressReport](progressreport.md) <br/> |In questa tabella sono archiviate le informazioni sui rapporti sullo stato dei vari passaggi Skype for Business Server processi 2015.  <br/> |
+|[Tabella ProgressReport](progressreport.md) <br/> |In questa tabella sono archiviate le informazioni sui rapporti sullo stato dei vari passaggi Skype for Business Server 2015.  <br/> |
    
 Le tabelle nell'elenco seguente vengono utilizzate internamente da Skype for Business Server 2015. I relativi dettagli non vengono illustrati in questo documento.
   

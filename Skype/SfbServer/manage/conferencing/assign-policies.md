@@ -1,7 +1,7 @@
 ---
 title: Assegnare criteri di conferenza in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: f384d19b-0950-4ec6-9d93-2c5958b83e71
 description: 'Riepilogo: informazioni su come assegnare criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 3ae21518cf53aad48d4fc9b6963d0e5402007db9
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: e63e59f806bcef14a50f75924527aa0f8733799b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58635280"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60767834"
 ---
 # <a name="assign-conferencing-policies-in-skype-for-business-server"></a>Assegnare criteri di conferenza in Skype for Business Server
  

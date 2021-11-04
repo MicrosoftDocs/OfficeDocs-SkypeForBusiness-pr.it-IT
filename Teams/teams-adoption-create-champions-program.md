@@ -1,7 +1,7 @@
 ---
-title: Crea il tuo programma campioni per Microsoft Teams
+title: Crea il tuo programma di campioni per Microsoft Teams
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.date: 10/30/2018
 audience: Admin
@@ -21,14 +21,14 @@ f1.keywords:
 description: Scopri come formare un team di campioni per promuovere l'adozione Teams promuovendo la consapevolezza, l'adozione e l'istruzione nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f9a6c9c81b1f36655d99b9fdfeecacda406bab6f
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: aba4c0ffcf13e93c0fd0c39a64a8135e54fa592f
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58731185"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60760404"
 ---
-# <a name="create-your-champions-program-for-microsoft-teams"></a>Crea il tuo programma campioni per Microsoft Teams
+# <a name="create-your-champions-program-for-microsoft-teams"></a>Crea il tuo programma di campioni per Microsoft Teams
 
 I campioni sono essenziali per aumentare la consapevolezza, l'adozione e l'istruzione nell'organizzazione. Un campione è una persona, principalmente motivata dall'aiutare gli altri, che è interessato alle nuove tecnologie (in particolare Teams) e aiutare altri dipendenti a usarla in linea con le procedure consigliate. A seconda delle dimensioni dell'organizzazione, questa può essere una parte formale del ruolo della persona, ma spesso i dipendenti si assalino da soli a causa della motivazione principale per aiutare gli altri.
 

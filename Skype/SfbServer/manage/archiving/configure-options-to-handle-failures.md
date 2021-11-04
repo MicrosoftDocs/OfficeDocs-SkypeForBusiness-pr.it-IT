@@ -1,7 +1,7 @@
 ---
 title: Configurare le opzioni di archiviazione per gestire gli errori in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,13 +11,13 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 31fd4e7c-3c68-48dd-9fad-8863831accd7
-description: "Riepilogo: informazioni su come bloccare le sessioni di messaggistica istantanea e di conferenza in caso di un Skype for Business Server che impedisse l'archiviazione."
-ms.openlocfilehash: f86b26178963621b4d71a657e589a63f1351aeef
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: "Riepilogo: informazioni su come bloccare le sessioni di messaggistica istantanea e di conferenza in caso di errore Skype for Business Server che impedirebbe l'archiviazione."
+ms.openlocfilehash: 24bfa5190f4aa86a51d7737c952e6536a7d89b34
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592570"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60767924"
 ---
 # <a name="configure-archiving-options-to-handle-failures-in-skype-for-business-server"></a>Configurare le opzioni di archiviazione per gestire gli errori in Skype for Business Server
 
@@ -31,7 +31,7 @@ Per specificare se le sessioni di comunicazione devono essere consentite in caso
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Configurazione archiviazione**.
     

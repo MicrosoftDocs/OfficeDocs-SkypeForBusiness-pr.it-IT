@@ -1,7 +1,7 @@
 ---
 title: Eliminare un criterio di archiviazione esistente in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 8b88bed9-2b37-4caf-b119-48688076e06a
 description: 'Riepilogo: informazioni su come eliminare un criterio di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: acc4f0b5a1576b1e46989f5717754e700de0a86d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4c660a3143774d0b7db0c5b9cfff3688dd47acdb
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58632940"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60767874"
 ---
 # <a name="delete-an-existing-archiving-policy-in-skype-for-business-server"></a>Eliminare un criterio di archiviazione esistente in Skype for Business Server
 
 **Riepilogo:** Informazioni su come eliminare un criterio di archiviazione per Skype for Business Server.
   
-È possibile eliminare un criterio utente o un criterio sito, ma non il criterio globale. Se si elimina il criterio globale, Skype for Business Server automaticamente il criterio ai valori predefiniti.
+È possibile eliminare un criterio utente o un criterio sito, ma non il criterio globale. Se si elimina il criterio globale, Skype for Business Server reimposta automaticamente il criterio ai valori predefiniti.
   
 ## <a name="delete-a-policy-by-using-the-control-panel"></a>Eliminare un criterio tramite il Pannello di controllo
 

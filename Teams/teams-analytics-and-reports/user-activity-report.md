@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams attività utente
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -13,16 +13,16 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare il report attività Teams utente nell'interfaccia di amministrazione di Microsoft Teams per vedere come gli utenti dell'organizzazione usano Teams.
+description: Informazioni su come usare il report attività Teams utente nell'interfaccia di amministrazione di Microsoft Teams per vedere in che modo gli utenti dell'organizzazione usano Teams.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 570bc016f7272872840eaab43ec9e8352116e0c3
-ms.sourcegitcommit: 1957a06d4bae3d42b4e3b6d4bd8ff2752a19d377
+ms.openlocfilehash: 4f4de8663a873600ee7d7e3fa674c8f38bccbaa1
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60641206"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60749565"
 ---
 # <a name="microsoft-teams-user-activity-report"></a>Microsoft Teams attività utente
 
@@ -35,10 +35,10 @@ Il report Teams attività degli utenti fornisce informazioni dettagliate sui tip
 
 Per apportare queste modifiche, è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](../using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione selezionare Analisi **& report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare Teams **utente.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione selezionare Analisi & **report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare **Teams'attività utente.**
 2. In **Intervallo di date** selezionare un intervallo e quindi selezionare Esegui **report.**
 
-    ![Screenshot del report attività Teams utente nell'Teams di amministrazione con callout.](../media/teams-reports-user-activity-with-callouts.png "Screenshot del report attività Teams utente nell'interfaccia Teams di amministrazione con callout")
+    ![Screenshot del report attività Teams utente nell'Teams di amministrazione con callout.](../media/teams-reports-user-activity-with-callouts.png "Screenshot del report attività Teams utente nell'interfaccia Teams con callout")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 
@@ -60,7 +60,7 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 
 Per rendere anonimi i Teams report attività utente, è necessario essere un amministratore globale. In questo modo si nasconderanno le informazioni identificabili (usando hash MD5), ad esempio il nome visualizzato, la posta elettronica e l'ID AAD nel report e nella relativa esportazione.
 
-1. In interfaccia di amministrazione di Microsoft 365 passare alla scheda  Impostazioni Org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
+1. In interfaccia di amministrazione di Microsoft 365 passare alla  scheda Impostazioni Org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
     
 2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo in interfaccia di amministrazione di Microsoft 365 e Teams di amministrazione.
   

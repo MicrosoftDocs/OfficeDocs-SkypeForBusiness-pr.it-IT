@@ -1,7 +1,7 @@
 ---
 title: Componenti necessari per VoIP aziendale in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ee219976-c39a-4b2f-988d-886c339700f7
 description: Riepilogo dei componenti VoIP aziendale in Skype for Business Server.
-ms.openlocfilehash: 77a2fdf049ac85eae47ad9f4085c5bcaf92f401a
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 80fce2f32521f2d4d5e493efafebbc344cba0e26
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58633580"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60768524"
 ---
 # <a name="components-required-for-enterprise-voice-in-skype-for-business-server"></a>Componenti necessari per VoIP aziendale in Skype for Business Server
  
@@ -29,13 +29,13 @@ Riepilogo dei componenti VoIP aziendale in Skype for Business Server.
   
 Per distribuire VoIP aziendale, nella topologia sono necessari i componenti seguenti. 
   
-- Uno o più Mediation Server, che traducono la segnalazione e, in alcune configurazioni, i supporti tra il Skype for Business Server interno, l'infrastruttura VoIP aziendale e un gateway PSTN (Public Switched Telephone Network) o un trunk SIP (Session Initiation Protocol). I Mediation Server sono il componente più importante nella distribuzione VoIP aziendale distribuzione. Per ulteriori informazioni, vedere [Mediation Server component in Skype for Business Server](mediation-server.md).
+- Uno o più Mediation Server, che traducono la segnalazione e, in alcune configurazioni, i supporti tra il Skype for Business Server interno, l'infrastruttura VoIP aziendale e un gateway PSTN (Public Switched Telephone Network) o un trunk SIP (Session Initiation Protocol). I Mediation Server sono il componente più importante nella distribuzione VoIP aziendale distribuzione. Per ulteriori informazioni, vedere [Componente Mediation Server in Skype for Business Server](mediation-server.md).
     
     I Mediation Server possono essere collocati con Front End Server o installati come server autonomi.
     
 - Componenti di connettività PSTN, che possono includere trunk SIP o gateway PSTN. Per ulteriori informazioni, vedere [Componenti di connettività PSTN in Skype for Business Server](pstn-connectivity.md).
     
-- Server perimetrali, che consente l'utilizzo VoIP aziendale funzionalità da parte degli utenti quando si trova all'esterno del firewall dell'organizzazione. 
+- Server perimetrali, che consente l'utilizzo di VoIP aziendale da parte degli utenti quando si trova all'esterno del firewall dell'organizzazione. 
     
     Il servizio Access Edge fornisce la segnalazione SIP per le chiamate Skype for Business utenti esterni al firewall dell'organizzazione. Il servizio A/V Edge consente l'attraversamento del contenuto multimediale in NAT e nei firewall. Un chiamante che utilizza un client per le comunicazioni unificate dall'esterno del firewall aziendale utilizza il servizio A/V Edge per singole chiamate e conferenze telefoniche.
     

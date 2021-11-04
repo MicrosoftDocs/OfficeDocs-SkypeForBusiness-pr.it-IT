@@ -1,7 +1,7 @@
 ---
 title: Pagina iniziale per i server Front End Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 3f6e69ed-4add-4dc8-acb8-dfe050819f5a
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare questa procedura guidata per definire un nuovo pool Front End per un sito. Ogni sito deve disporre almeno di un pool Enterprise Edition o di un Server Standard. Per informazioni dettagliate sui requisiti per l'utilizzo della procedura guidata per creare un nuovo pool Front End, vedere Define and Configure a Front End Pool nella documentazione relativa alla distribuzione.
-ms.openlocfilehash: bd1b32c4f3bee9b24dae47d428529b9f9a90150c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 633d99919d6f15fce62c57a85872951d5bb7e118
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58580900"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60752425"
 ---
 # <a name="front-end-start-page"></a>Pagina iniziale di Front End
 

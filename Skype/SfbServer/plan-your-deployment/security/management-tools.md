@@ -1,7 +1,7 @@
 ---
 title: Windows PowerShell e Skype for Business Server di gestione
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 6a285f7c-0ef5-4cab-9976-d03be276e35d
 description: 'In Skype for Business Server, gli strumenti di gestione vengono implementati tramite Windows PowerShell. Windows PowerShell include un ambiente da riga di comando, comandi specifici del prodotto e un linguaggio di script completo. Skype for Business Server strumenti implementati tramite Windows PowerShell includono:'
-ms.openlocfilehash: ff8cafa49f502c14bd9d6f67de35e0109b30e44b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 0c9707a9af4befc9a055021426ebd5041c534d7d
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595328"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60767504"
 ---
 # <a name="windows-powershell-and-skype-for-business-server-management-tools"></a>Windows PowerShell e Skype for Business Server di gestione
  
@@ -29,6 +29,6 @@ In Skype for Business Server, gli strumenti di gestione vengono implementati tra
     
 - **Skype for Business Server pannello di controllo**. È possibile utilizzare l'Skype for Business Server utente del Pannello di controllo per gestire le attività più comuni nella distribuzione.
     
-Questi strumenti utilizzano i cmdlet di Windows PowerShell per la gestione della distribuzione, inclusi quasi 550 cmdlet specifici del prodotto. I cmdlet di sicurezza inclusi in Skype for Business Server vengono utilizzati principalmente per gestire l'autenticazione e i diritti utente e le autorizzazioni. È disponibile un'ampia gamma di cmdlet per la gestione dell'autenticazione, inclusi i cmdlet per l'autenticazione tramite certificato e PIN. Inoltre, diversi cmdlet consentono di utilizzare la nuova funzionalità RBAC (Role-Based Access Control) per delegare il controllo amministrativo Skype for Business Server. Per informazioni dettagliate sui cmdlet Skype for Business Server, [vedere Skype for Business Server Management Shell](../../manage/management-shell.md).
+Questi strumenti utilizzano i cmdlet di Windows PowerShell per la gestione della distribuzione, inclusi quasi 550 cmdlet specifici del prodotto. I cmdlet di sicurezza inclusi in Skype for Business Server vengono utilizzati principalmente per gestire l'autenticazione e i diritti utente e le autorizzazioni. È disponibile un'ampia gamma di cmdlet per la gestione dell'autenticazione, inclusi i cmdlet per l'autenticazione tramite certificato e PIN. Inoltre, diversi cmdlet consentono di utilizzare la nuova funzionalità RBAC (Role-Based Access Control) per delegare il controllo amministrativo delle Skype for Business Server. Per informazioni dettagliate sui cmdlet Skype for Business Server, [vedere Skype for Business Server Management Shell](../../manage/management-shell.md).
   
 Le funzionalità per la sicurezza degli script per Windows PowerShell sono progettate appositamente per evitare alcuni dei problemi di sicurezza correlati agli script di tecnologie meno recenti, incluso Microsoft Visual Basic Scripting Edition (VBScript). Le funzionalità di sicurezza di Windows PowerShell sono pensate per creare un ambiente in cui gli utenti non possono eseguire gli script facilmente o in modo inconsapevole. Le funzionalità di sicurezza di Windows PowerShell sono abilitate per impostazione predefinita. È possibile modificare lo stato di queste funzionalità per adattarle alle esigenze specifiche per gli script e a un'ampia gamma di obiettivi per la sicurezza. Ciò non significa che l'esecuzione degli script sia resa impossibile dalla shell. L'obiettivo, per impostazione predefinita, è invece quello di rendere difficile per gli utenti eseguire script senza esserne consapevoli. Per informazioni dettagliate, [vedere Windows PowerShell Script Security](/previous-versions/msdn10/gg261722(v=msdn.10)).

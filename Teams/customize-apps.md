@@ -1,7 +1,7 @@
 ---
 title: Personalizzare le app in Microsoft Teams
 author: cichur
-ms.author: v-cichur
+ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: v-tbasra
 ms.topic: article
@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come personalizzare le app in Microsoft Teams.
-ms.openlocfilehash: c5e42bd498c1332d2b36c03ec661ae488fcf16aa
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 21baefe7a75c869ed8d401d19f948526b31d615c
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60015020"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60749625"
 ---
 # <a name="customize-apps-in-microsoft-teams"></a>Personalizzare le app in Microsoft Teams
 
@@ -43,7 +43,7 @@ Vedere lo [schema Teams manifesto](/microsoftteams/platform/resources/schema/man
 
 > [!NOTE]
 > Al momento, la personalizzazione delle app non è supportata in Government Community Cloud High (GCCH) o Department of Defense (DoD).
-> Attualmente, questa funzionalità non è disponibile per le app Microsoft Teams sideloaded.
+> Attualmente, questa funzionalità non è disponibile per le app Microsoft Teams affiancate.
 
 ## <a name="customize-the-apps-details"></a>Personalizzare i dettagli dell'app
 
@@ -51,7 +51,7 @@ Per iniziare a personalizzare un'app, completare la procedura seguente:
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Espandere **Teams app e** selezionare Gestisci **app**.
+2. Espandere **Teams app e** selezionare Gestisci **app.**
 
 3. Controllare la **colonna Personalizzabile** dell'elenco delle app e ordinare in base alle app personalizzabili.
 
@@ -89,7 +89,7 @@ Per iniziare a personalizzare un'app, completare la procedura seguente:
 
    1. Upload un'icona. Usare un'icona a colori (192x192) pixel in formato PNG.
 
-   1. Scegliere un colore per il contorno di un'icona. Usare un solo pixel del contorno trasparente (32x32) in formato PNG.
+   1. Scegliere un colore per il contorno di un'icona. Usare un contorno trasparente (32x32) pixel in formato PNG.
 
    1. Selezionare un colore principale dell'app corrispondente all'icona.
 
@@ -101,7 +101,7 @@ Per iniziare a personalizzare un'app, completare la procedura seguente:
 
    L'app personalizzata è ora elencata nella **pagina Gestisci app.** Sarà disponibile una sola versione dell'app, perché la personalizzazione delle caratteristiche dell'app non crea una copia dell'app.
 
-Ora gli Teams gli utenti finali possono aprire il Teams client per visualizzare l'app personalizzata.
+Ora gli Teams utenti finali possono aprire il Teams client per visualizzare l'app personalizzata.
 
    ![App personalizzata nel Teams client.](media/contoso-app.png)
 
@@ -114,7 +114,7 @@ La nota seguente include dettagli importanti sulla personalizzazione di un'app.
 > - I dati di personalizzazione forniti dall'amministratore vengono archiviati nell'area geografica più vicina.
 > - L'utente è responsabile della validità dei collegamenti alle condizioni d'uso o all'informativa sulla privacy.
 > - Nel caso in cui l'autore dell'app non consenta più la personalizzazione di un campo, nella pagina dei dettagli dell'app viene visualizzato un messaggio che informa l'amministratore dei campi che non possono più essere personalizzati. Tutte le modifiche apportate al campo verranno ripristinate ai valori originali.
-> - È consigliabile testare le modifiche alla personalizzazione delle app in un tenant di test Teams prima di apportare queste modifiche nell'ambiente di produzione.
+> - È consigliabile testare le modifiche alla personalizzazione delle app in un tenant Teams di test prima di apportare queste modifiche nell'ambiente di produzione.We recommend testing app customization changes in a Teams test tenant before making these changes in your production environment.
 > - Le modifiche alla personalizzazione potrebbero richiedere fino a 24 ore per consentire agli utenti di visualizzare le modifiche.
 
 ## <a name="review-app-details"></a>Esaminare i dettagli dell'app
@@ -139,7 +139,7 @@ In qualsiasi momento, è possibile reimpostare i dettagli dell'app sulle imposta
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Espandere **Teams app e** selezionare Gestisci **app**.
+2. Espandere **Teams app e** selezionare Gestisci **app.**
 
 3. Selezionare il nome dell'app.
 
@@ -171,7 +171,7 @@ No, gli amministratori del tenant doranno rimuovere manualmente qualsiasi app pe
 
 **Le proprietà personalizzate verranno visualizzate nella schermata di consenso all'autorizzazione del grafico?**
 
-No, la schermata di consenso delle autorizzazioni mostrerà comunque il valore originale inviato dall'autore.
+No, la schermata di consenso all'autorizzazione mostrerà comunque il valore originale inviato dall'autore.
 
 ## <a name="related-article"></a>Articolo correlato
 

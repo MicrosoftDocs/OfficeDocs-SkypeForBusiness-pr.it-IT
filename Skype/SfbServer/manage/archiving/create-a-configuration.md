@@ -1,7 +1,7 @@
 ---
 title: Creare una configurazione di archiviazione in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: dc574afa-0b7d-404f-99b3-c812430b7c70
 description: 'Riepilogo: informazioni su come creare una configurazione di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: 68ea35ef81c3a387aa95c54172bb1decc6c5624b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: abb7f6c894dae734a45d7668f5b1b590d869c9c6
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58606225"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60767904"
 ---
 # <a name="create-an-archiving-configuration-in-skype-for-business-server"></a>Creare una configurazione di archiviazione in Skype for Business Server
 
@@ -51,7 +51,7 @@ Per configurare le opzioni di archiviazione per un sito o un pool specifico:
     
    - Per bloccare l'attività quando l'archiviazione non è disponibile, selezionare la casella di controllo **Blocca sessioni di messaggistica istantanea o Web Conferencing se l'archiviazione non riesce**.
     
-   - Per utilizzare i Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
+   - Per utilizzare la Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
     
    - Per abilitare l'eliminazione dei dati, selezionare la casella di controllo **Abilita eliminazione dei dati di archiviazione** e quindi eseguire una delle operazioni seguenti:
     

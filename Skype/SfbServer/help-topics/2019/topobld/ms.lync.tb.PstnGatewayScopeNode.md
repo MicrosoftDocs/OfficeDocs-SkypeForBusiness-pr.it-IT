@@ -1,7 +1,7 @@
 ---
 title: Nodo dell'ambito del gateway PSTN
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 85a52bf7-98cb-4dd4-892e-2d1ba5669593
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'In questo nodo vengono mostrati il nome di dominio completo (FQDN), il Mediation Server associato e altre informazioni di base su questo gateway PSTN (Public Switched Telephone Network). È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: d9bcfdde0f77d5bfe0f19e6c5bda5af1f596b965
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: fcad34392b76e19deb18611e0585d086d363a1cb
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58624068"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60766890"
 ---
 # <a name="pstn-gateway-scope-node"></a>Nodo dell'ambito del gateway PSTN
  

@@ -1,7 +1,7 @@
 ---
 title: Tabella HardwareVersions in Skype for Business Server 2015
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 ms.date: 3/9/2015
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: ca05582b-082c-4bab-9233-36fc9434dbca
 description: La tabella HardwareVersions è una tabella di supporto. In ogni record sono archiviate informazioni su una versione hardware del dispositivo.
-ms.openlocfilehash: 81522e0c49516667114045956a035b3ce6f160b9
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 698ceaa0e446c6a29fd48b2d8694636f3937c26b
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58618702"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60746682"
 ---
 # <a name="hardwareversions-table-in-skype-for-business-server-2015"></a>Tabella HardwareVersions in Skype for Business Server 2015
  

@@ -1,7 +1,7 @@
 ---
 title: Test delle autorizzazioni di amministratore in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Come testare le autorizzazioni di amministratore in Skype for Business Server
-ms.openlocfilehash: 08721b556de6e7b162eb76fbed953dae422b33b7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 80971dab292252775f9a58cbf822d746326c8abf
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58580560"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60760694"
 ---
 # <a name="testing-admin-permissions-in-skype-for-business-server"></a>Test delle autorizzazioni di amministratore in Skype for Business Server
 
@@ -24,16 +24,16 @@ ms.locfileid: "58580560"
 |--|--|
 |Pianificazione della verifica|Dopo la distribuzione Skype for Business Server iniziale. Se necessario, se si verificano problemi relativi alle autorizzazioni.|
 |Strumento di testing|Windows PowerShell|
-|Autorizzazioni necessarie|Quando vengono eseguiti localmente Skype for Business Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.<br><br/>Quando viene eseguito utilizzando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che dispone dell'autorizzazione per eseguire il cmdlet Test-CsOUPermission. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, dal prompt dei comandi Windows PowerShell seguente:<br/><br/>Get-CsAdminRole Where-Object \| {$_. Cmdlet -match "Test-CsOUPermission"}|
+|Autorizzazioni necessarie|Quando vengono eseguiti localmente Skype for Business Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.<br><br/>Quando viene eseguito utilizzando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che dispone dell'autorizzazione per eseguire il cmdlet Test-CsOUPermission. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando seguente dal prompt Windows PowerShell:<br/><br/>Get-CsAdminRole \| Where-Object {$_. Cmdlet -match "Test-CsOUPermission"}|
 |||
 
 ## <a name="description"></a>Descrizione
 
-Quando si installa Skype for Business Server, una delle attività eseguite dal programma di installazione assegna al gruppo RTCUniversalUserAdmins le autorizzazioni di Active Directory necessarie per gestire utenti, computer, contatti, contatti dell'applicazione e persone inetOrg. Se è stata disabilitata l'ereditarietà delle autorizzazioni in Active Directory, il programma di installazione non sarà in grado di assegnare tali autorizzazioni. Di conseguenza, i membri del gruppo RTCUniversalUserAdmins non saranno in grado di gestire Skype for Business Server entità. Tali privilegi di gestione saranno disponibili solo per gli amministratori di dominio. 
+Quando si installa Skype for Business Server, una delle attività eseguite dal programma di installazione assegna al gruppo RTCUniversalUserAdmins le autorizzazioni di Active Directory necessarie per gestire utenti, computer, contatti, contatti dell'applicazione e persone InetOrg. Se è stata disabilitata l'ereditarietà delle autorizzazioni in Active Directory, il programma di installazione non sarà in grado di assegnare tali autorizzazioni. Di conseguenza, i membri del gruppo RTCUniversalUserAdmins non saranno in grado di gestire Skype for Business Server entità. Tali privilegi di gestione saranno disponibili solo per gli amministratori di dominio. 
 
 Il cmdlet Test-CsOUPermission verifica che le autorizzazioni necessarie per gestire utenti, computer e altri oggetti siano impostate su un contenitore di Active Directory. Se tali autorizzazioni non sono impostate, è possibile risolvere il problema eseguendo il [cmdlet Grant-CsOUPermission](/powershell/module/skype/Grant-CsOUPermission). 
 
-Si noti Grant-CsOUPermission solo assegnare autorizzazioni ai membri del gruppo RTCUniversalUserAdmins. Non è possibile utilizzare questo cmdlet per concedere autorizzazioni a un utente o a un gruppo arbitrario. Se si desidera che un utente o un gruppo diverso abbia autorizzazioni di gestione degli utenti, è necessario aggiungere tale utente (o gruppo) al gruppo RTCUniversalUserAdmins. 
+Tenere presente Grant-CsOUPermission possono assegnare autorizzazioni solo ai membri del gruppo RTCUniversalUserAdmins. Non è possibile utilizzare questo cmdlet per concedere autorizzazioni a un utente o a un gruppo arbitrario. Se si desidera che un utente o un gruppo diverso abbia autorizzazioni di gestione degli utenti, è necessario aggiungere tale utente (o gruppo) al gruppo RTCUniversalUserAdmins. 
 
 
 ## <a name="running-the-test"></a>Esecuzione del test

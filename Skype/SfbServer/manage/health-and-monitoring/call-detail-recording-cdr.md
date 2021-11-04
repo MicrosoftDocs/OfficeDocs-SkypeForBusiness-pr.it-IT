@@ -1,7 +1,7 @@
 ---
 title: Registrazione dettagli chiamata (CDR) in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-cichur
+ms.author: v-mahoffman
 author: cichur
 manager: serdars
 audience: ITPro
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 67726075-c77c-4191-a64f-a1cf5c7bcbb2
 description: 'Riepilogo: informazioni sui record di registrazione dettagli chiamata (CDR) utilizzati in Skype for Business Server.'
-ms.openlocfilehash: 0453bbe4e8bbd4a9bf8c2fe06b33599375171280
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 93085e0078456cfe371eafe1103bd54ae8006802
+ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610653"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60767764"
 ---
 # <a name="call-detail-recording-cdr-in-skype-for-business-server"></a>Registrazione dettagli chiamata (CDR) in Skype for Business Server
  
@@ -35,7 +35,7 @@ La funzionalità di registrazione dettagli chiamata (CDR) registra le informazio
     
 - [Eliminare una raccolta esistente di impostazioni di configurazione di registrazione dei dati in Skype for Business Server](delete-configuration-settings.md)
     
-- [Eliminare manualmente i database di registrazione dettagli chiamata e qualità dell'esperienza in Skype for Business Server](../../deploy/deploy-monitoring/purgecall-detail-recording-and-qoe.md)
+- [Eliminare manualmente i database di registrazione dettagli chiamata e Qualità dell'esperienza in Skype for Business Server](../../deploy/deploy-monitoring/purgecall-detail-recording-and-qoe.md)
     
 ## <a name="see-also"></a>Vedere anche
 
