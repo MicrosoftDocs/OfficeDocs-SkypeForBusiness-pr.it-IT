@@ -8,27 +8,27 @@ audience: admin
 ms.topic: article
 ms.service: msteams
 ms.localizationpriority: medium
-description: Informazioni sulle impostazioni di amministrazione nell'app Complimenti nell'interfaccia Microsoft Teams di amministrazione
-ms.openlocfilehash: a65fae76440a520e4ed0054f9ac039e417c0e60e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: Informazioni sulle impostazioni di amministrazione nell'app Complimenti nell'Microsoft Teams di amministrazione
+ms.openlocfilehash: c67f70150c2b8635bd317f724004471f4b73e800
+ms.sourcegitcommit: 36761f644b9af5bdef30fe1c3817defc278b965e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763054"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "60793454"
 ---
-# <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l Complimenti app nell'interfaccia Microsoft Teams di amministrazione
+# <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimenti nell'interfaccia Microsoft Teams di amministrazione
 
 > [!NOTE]
 > Gli amministratori devono avere una licenza Teams per accedere a questa funzionalità. Se si prova ad accedere a questa funzionalità senza Teams licenza, viene visualizzato un messaggio di errore.
 
-L Complimenti app in Microsoft Teams consente agli utenti di mostrare apprezzamento ai membri dell'organizzazione o della classe. Con una selezione di set di badge tra cui scegliere e l'opzione per creare i propri badge, Complimenti è progettato per aiutare a riconoscere l'impegno che si fa nell'ampia gamma di attività che gli utenti Teams eserviranno, dai docenti ai lavoratori in prima linea. Per altre informazioni, vedere [Inviare Complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
+L Complimenti app in Microsoft Teams consente agli utenti di mostrare apprezzamento ai membri dell'organizzazione o della classe. Con una selezione di set di badge tra cui scegliere e l'opzione per creare i propri badge, Complimenti è progettato per aiutare a riconoscere l'impegno che si fa nell'ampia gamma di lavoro che gli utenti di Teams esereranno, dai docenti ai lavoratori in prima linea. Per altre informazioni, vedere [Inviare Complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
 
 Gli amministratori possono controllare quali badge sono disponibili per l'organizzazione dall'Microsoft Teams di amministrazione. Nel riquadro di spostamento sinistro passare a Teams **app > Gestisci app**. Nell'elenco delle app fare clic su **Complimenti** e quindi selezionare **Impostazioni**.  Da qui è possibile scegliere di abilitare i set di badge predefiniti e predefiniti e creare badge personalizzati.
 
 ![Screenshot della Impostazioni per l'app Complimenti.](media/manage-praise-app-settings.png)
 
 > [!NOTE]
-> La Complimenti dell'app non è disponibile per i cloud governativi degli Stati Uniti.
+> L Complimenti app è disponibile per GCC cloud, ma non per GCC High o DoD.
 
 ## <a name="use-built-in-badge-sets"></a>Usare set di badge predefiniti
 
