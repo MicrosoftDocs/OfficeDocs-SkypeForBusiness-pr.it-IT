@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: In questo articolo viene fornita una panoramica del nuovo Pannello di controllo.
-ms.openlocfilehash: 8a4f8e073b424969951a69c620dd5f65a582fd75
-ms.sourcegitcommit: b57e19e20900ff02f3196c811bf1dd1acd149c79
+ms.openlocfilehash: 77e26b810bfd61effa5d94ec3648c440476a7cbe
+ms.sourcegitcommit: eba9fc680233e9e03773a2942f22afe6247eec41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60579870"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60824644"
 ---
 # <a name="control-panel"></a>Pannello di controllo
 
@@ -50,3 +50,11 @@ Il nuovo Pannello di controllo include voci di menu di uso comune che riguardano
 |Configurazione dispositivo         |    [Configurazione dispositivo](use-powershell-client-menu.md#device-configuration)     |
 |Criteri per dispositivi mobili         |    [Criteri per dispositivi mobili](use-powershell-client-menu.md#mobility-policy)     |
 |Configurazione notifica Push         |    [Configurazione notifica Push](use-powershell-client-menu.md#push-notification-configuration)     |
+
+## <a name="security"></a>Sicurezza
+
+|Sottomenu  |Origine delle informazioni per il cmdlet  |
+|---------|---------|
+|Registrar         |    [Registrar](use-powershell-security-menu.md#registrar)     |
+|Web Service      |  [Web Service](use-powershell-security-menu.md#web-service)       |
+|Criteri PIN    | [Criteri PIN](use-powershell-security-menu.md#pin-policy)        |

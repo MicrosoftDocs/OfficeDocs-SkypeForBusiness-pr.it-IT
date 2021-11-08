@@ -12,13 +12,13 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.collection: ''
-description: 'Riepilogo: Skype for Business Server pannello di controllo al mapping cmdlet.'
-ms.openlocfilehash: e4d72aad28167e3be427f203b8e5b80e2305a636
-ms.sourcegitcommit: b57e19e20900ff02f3196c811bf1dd1acd149c79
+description: 'Riepilogo: Skype for Business Server pannello di controllo al mapping cmdlet per il menu Client.'
+ms.openlocfilehash: 1dc0c3a9638af8fdec90fccb633909b9ccf40405
+ms.sourcegitcommit: eba9fc680233e9e03773a2942f22afe6247eec41
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60579839"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60824654"
 ---
 # <a name="client"></a>Client
 
@@ -38,7 +38,7 @@ In questo articolo vengono descritti i sottomenu seguenti:
 
 ## <a name="client-version-policy"></a>Criteri delle versioni client
 
-La voce del sottomenu **CLIENT VERSION POLICY** nel menu **Client** restituisce informazioni sui client supportati Skype for Business Server ambiente. Un criterio versione client consente di specificare i client che possono accedere a Skype for Business Server sistema.
+La voce di sottomenu **CLIENT VERSION POLICY** nel menu **Client** restituisce informazioni sui client supportati in Skype for Business Server ambiente. Un criterio di versione client consente di specificare i client che possono accedere a Skype for Business Server sistema.
 
 Prendiamo in considerazione le varie attività che un utente può eseguire su **CLIENT VERSION POLICY** e i cmdlet Skype for Business a cui tali attività sono mappate.
 
@@ -59,7 +59,7 @@ Prendiamo in considerazione le varie attività che un utente può eseguire su **
 
 ---
 
-> **Scenario 2:** creare un nuovo criterio versione client
+> **Scenario 2:** creare un nuovo criterio di versione client
 
    ![Nuovi criteri versione client](./media/clientversionpolicy-2.png)
 
@@ -179,7 +179,7 @@ Prendiamo in considerazione le varie attività che un utente può eseguire su **
 
  La voce del sottomenu **CLIENT VERSION CONFIGURATION** restituisce informazioni sui client supportati Skype for Business Server ambiente.
 
-Prendere in considerazione le varie attività che un utente può eseguire su **CLIENT VERSION CONFIGURATION** e i cmdlet Skype for Business a cui tali attività sono mappate.
+Prendere in considerazione le varie attività che un utente può eseguire in **CLIENT VERSION CONFIGURATION** e i cmdlet Skype for Business a cui tali attività sono mappate.
 
 ---
 > **Scenario 1:** elencare tutte le configurazioni delle versioni client
@@ -456,7 +456,7 @@ Set-CsTestDevice -Identity site:Redmond/UCPhone -IdentifierType SerialNumber -Id
 
 **La voce** del sottomenu DEVICE LOG CONFIGURATION consente di gestire il servizio Web Aggiornamento dispositivi, un componente di Skype for Business Server che consente agli amministratori di distribuire gli aggiornamenti del firmware ai telefoni e ad altri dispositivi che eseguono Skype for Business.
 
-Prendiamo in considerazione le varie attività che un utente può eseguire in **DEVICE LOG CONFIGURATION** e i cmdlet Skype for Business a cui tali attività sono mappate.
+Prendiamo in considerazione le varie attività che un utente può eseguire su **DEVICE LOG CONFIGURATION** e i cmdlet Skype for Business a cui tali attività sono mappate.
 
 ---
 > **Scenario 1:** elencare tutte le configurazioni dei log del dispositivo
@@ -541,7 +541,7 @@ Set-CsDeviceUpdateConfiguration -Identity global -MaxLogFileSize 2048000 -MaxLog
 
 ## <a name="device-configuration"></a>Configurazione dispositivo
 
-**La voce di** sottomenu DEVICE CONFIGURATION consente di amministrare le informazioni relative alle opzioni di gestione per i telefoni UC. Queste opzioni includono la modalità di sicurezza necessaria e se il telefono deve essere bloccato automaticamente dopo un periodo di inattività specificato.
+**La voce del** sottomenu DEVICE CONFIGURATION consente di amministrare le informazioni relative alle opzioni di gestione per i telefoni UC. Queste opzioni includono la modalità di sicurezza necessaria e se il telefono deve essere bloccato automaticamente dopo un periodo di inattività specificato.
 
 Prendiamo in considerazione le varie attività che un utente può eseguire su **DEVICE CONFIGURATION** e i cmdlet Skype for Business a cui tali attività sono mappate.
 
@@ -595,7 +595,7 @@ Prendiamo in considerazione le varie attività che un utente può eseguire su **
 
 ---
 
-> **Scenario 4**: Eliminare le configurazioni del dispositivo scelte
+> **Scenario 4:** eliminare le configurazioni del dispositivo scelte
 
    ![Elimina configurazione dispositivo](./media/device-configuration-4.png)
 
@@ -613,7 +613,7 @@ Prendiamo in considerazione le varie attività che un utente può eseguire su **
 
 > **Scenario 5:** aggiorna la configurazione di un dispositivo
 
-   ![Aggiornare la configurazione dei dispositivi](./media/device-configuration-5.png)
+   ![Aggiornare la configurazione del dispositivo](./media/device-configuration-5.png)
 
 ***Cmdlet***
 
@@ -629,9 +629,9 @@ Prendiamo in considerazione le varie attività che un utente può eseguire su **
 
 ## <a name="mobility-policy"></a>Criteri per dispositivi mobili
 
-**I CRITERI DI MOBILITÀ** determinano se un utente può usare o meno Skype for Business Mobile. Questi criteri gestiscono inoltre la capacità di un utente di utilizzare la funzionalità Chiamata tramite ufficio, che consente agli utenti di effettuare e ricevere chiamate telefoniche sul cellulare utilizzando il numero dell'ufficio anziché quello del cellulare. I criteri per dispositivi mobili possono essere utilizzati anche per rendere le Wi-Fi un requisito quando si effettuano o ricevono chiamate.
+**I criteri di** mobilità determinano se un utente può usare o meno Skype for Business Mobile. Questi criteri gestiscono inoltre la capacità di un utente di utilizzare la funzionalità Chiamata tramite ufficio, che consente agli utenti di effettuare e ricevere chiamate telefoniche sul cellulare utilizzando il numero dell'ufficio anziché quello del cellulare. I criteri per dispositivi mobili possono essere utilizzati anche per rendere le Wi-Fi un requisito quando si effettuano o ricevono chiamate.
 
-Prendiamo in considerazione le varie attività che un utente può eseguire su **CRITERI** DI MOBILITÀ e i cmdlet Skype for Business a cui tali attività sono mappate.
+Prendere in considerazione le varie attività che un utente può eseguire su **CRITERI** DI MOBILITÀ e i cmdlet Skype for Business a cui tali attività sono mappate.
 
 ---
 
