@@ -2,7 +2,7 @@
 title: Utilizzo del modello utente per la pianificazione della capacità per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 902ab23e-94d6-482a-9d6e-c0b28dc3e03d
 description: In questo articolo vengono fornite indicazioni sul numero di server necessari in un sito per il numero di utenti in tale sito, in base all'utilizzo descritto in Modelli utente in Skype for Business Server.
-ms.openlocfilehash: 4f2027debf7a8c2f787a77149212bccf2f8c90c0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 145e790c0f6c7ceeaa7330c0cd48ad68bc15b331
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60750005"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60846359"
 ---
 # <a name="capacity-planning-user-model-usage-for-skype-for-business-server"></a>Utilizzo del modello utente per la pianificazione della capacità per Skype for Business Server
 
@@ -92,9 +92,9 @@ Dato il modello utente che il 5% degli utenti di un pool può essere in una conf
 
 La dimensione massima supportata per le conferenze ospitata da un Skype for Business Server Front End che ospita anche gli utenti è di 250 partecipanti. Mentre è in corso una conferenza per 250 utenti, il pool supporta ancora anche altre conferenze, in modo che un totale del 5% degli utenti del pool si trova in conferenze simultanee. Ad esempio, in un pool di 12 Front End Server e 80.000 utenti, mentre è in corso la conferenza con 250 utenti, Skype for Business Server supporta altri 3.750 utenti che partecipano a conferenze più piccole.
 
-Indipendentemente dal numero di utenti ospitati nel pool Front End o nel server edizione Standard, Skype for Business Server supporta almeno 125 altri utenti che partecipano a conferenze più piccole nello stesso pool o server che ospita una conferenza per 250 utenti.
+Indipendentemente dal numero di utenti ospitati nel pool Front End o nel server edizione Standard, Skype for Business Server supporta almeno 125 altri utenti che partecipano a conferenze più piccole nello stesso pool o server che ospita una conferenza da 250 utenti.
 
-Per abilitare conferenze con un numero di utenti compreso tra 250 e 1000, è possibile configurare un pool Front End separato solo per ospitare tali conferenze. Questo pool Front End non ospiterà alcun utente. Per informazioni dettagliate, vedere [Plan for large meetings in Skype for Business Server.](../../plan-your-deployment/conferencing/large-meetings.md)
+Per abilitare conferenze con un numero di utenti compreso tra 250 e 1000, è possibile configurare un pool Front End separato solo per ospitare tali conferenze. Questo pool Front End non ospiterà alcun utente. Per informazioni dettagliate, vedere [Plan for large meetings in Skype for Business Server](../../plan-your-deployment/conferencing/large-meetings.md).
 
 Se nell'organizzazione sono presenti più conferenze in modalità mista di quelle ipotizzate nel modello utente, potrebbe essere necessario distribuire più Front End Server di quanto consigliato in questo documento (fino a un limite di 12 Front End Server). Per informazioni dettagliate sui presupposti nel modello utente, vedere [Modelli utente in Skype for Business Server](user-models.md).
 
@@ -158,11 +158,11 @@ Tutte le tabelle seguenti presuppongono che l'utilizzo sia riepilogato [in Model
 
 Sebbene gran parte delle informazioni del database sia archiviata principalmente nei Front End Server, è consigliabile verificare che i server back-end soddisfino i suggerimenti hardware elencati in precedenza in questa sezione e in [Server Hardware Platforms](/previous-versions/office/lync-server-2013/lync-server-2013-server-hardware-platforms).
 
-Per garantire la disponibilità elevata del server back-end, è consigliabile distribuire gruppi di disponibilità AlwaysOn o mirroring del server. Per ulteriori informazioni, vedere [Back End Server high availability in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/back-end-server.md).
+Per garantire la disponibilità elevata del server back-end, è consigliabile distribuire gruppi di disponibilità AlwaysOn o mirroring del server. Per ulteriori informazioni, vedere [Back End Server high availability in Skype for Business Server.](../../plan-your-deployment/high-availability-and-disaster-recovery/back-end-server.md)
 
 ## <a name="monitoring-and-archiving"></a>Monitoraggio e archiviazione
 
-Se si distribuisce il monitoraggio o l'archiviazione, la funzionalità front-end di questi servizi viene eseguita nei Front End Server, ognuno dei quali utilizza il proprio archivio database, separato dall'archivio back-end. In alternativa, se è stato distribuito Exchange 2013, è possibile archiviare i dati di archiviazione dei messaggi istantanei in Exchange anziché in un archivio SQL dedicato.
+Se si distribuisce il monitoraggio o l'archiviazione, la funzionalità front-end di questi servizi viene eseguita nei Front End Server, ognuno dei quali utilizza il proprio archivio database, separato dall'archivio back-end. In alternativa, se è stata Exchange 2013, è possibile archiviare i dati di archiviazione dei messaggi istantanei in Exchange anziché in un archivio SQL dedicato.
 
 Nella tabella seguente viene indicata approssimativamente la quantità di spazio di archiviazione del database necessaria per utente al giorno per i dati di monitoraggio e archiviazione.
 

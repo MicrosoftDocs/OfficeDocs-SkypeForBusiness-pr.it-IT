@@ -2,7 +2,7 @@
 title: Configurare le conferenze telefoniche con accesso esterno in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 38d9f168-80b8-46f2-a1c0-becd84e58e73
 description: 'Riepilogo: leggere questo argomento per informazioni su come configurare le conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 8cc3a27e9051d0fd73bff68cc4213020d6658844
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 3e7a91b200eb6211a26b379d866608ff31658488
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60761564"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60845929"
 ---
 # <a name="configure-dial-in-conferencing-in-skype-for-business-server"></a>Configurare le conferenze telefoniche con accesso esterno in Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come configurare le conferenze telefoniche con accesso esterno in Skype for Business Server.
   
-Dopo aver creato una topologia che include il carico di lavoro per le conferenze telefoniche e le conferenze telefoniche con accesso esterno selezionate, è necessario eseguire passaggi aggiuntivi per configurare le conferenze telefoniche con accesso esterno. Prima di leggere questo argomento, leggere Pianificare le conferenze telefoniche con accesso esterno [in Skype for Business Server,](../../plan-your-deployment/conferencing/dial-in-conferencing.md)Requisiti hardware e software per le conferenze [in Skype for Business Server](../../plan-your-deployment/conferencing/hardware-and-software-requirements.md)e Diagramma di flusso di distribuzione ed elenco di controllo per le conferenze telefoniche con accesso esterno. [](deploy-conferencing.md#deployment-flowchart-and-checklist-for-dial-in-conferencing) 
+Dopo aver creato una topologia che include il carico di lavoro per le conferenze telefoniche e le conferenze telefoniche con accesso esterno selezionate, è necessario eseguire passaggi aggiuntivi per configurare le conferenze telefoniche con accesso esterno. Prima di leggere questo argomento, leggere Pianificare le conferenze telefoniche con accesso esterno [in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md), Requisiti hardware e software per le conferenze [in Skype for Business Server](../../plan-your-deployment/conferencing/hardware-and-software-requirements.md)e Diagramma di flusso di distribuzione ed elenco di controllo per le conferenze telefoniche con accesso esterno [.](deploy-conferencing.md#deployment-flowchart-and-checklist-for-dial-in-conferencing) 
   
 Per configurare le conferenze telefoniche con accesso esterno, è necessario eseguire le attività seguenti:
   
@@ -54,7 +54,7 @@ Per configurare le conferenze telefoniche con accesso esterno, è necessario ese
 ## <a name="configure-dial-plans"></a>Configurare i dial plan
 <a name="BKMK_ConfigureDialPlans"> </a>
 
-Quando si distribuiscono conferenze telefoniche con accesso esterno, è necessario creare o modificare uno o più dial plan per il routing dei numeri di telefono di accesso esterno. È inoltre necessario verificare che ogni dial plan contenga almeno una regola di normalizzazione, una regola che converte i numeri di telefono in numeri di telefono completi in formato E.164. 
+Quando si distribuiscono conferenze telefoniche con accesso esterno, è necessario creare o modificare uno o più dial plan per il routing dei numeri di telefono di accesso esterno. È inoltre necessario assicurarsi che ogni dial plan contenga almeno una regola di normalizzazione, una regola che converte i numeri di telefono in numeri di telefono completi in formato E.164. 
   
 Gli utenti delle conferenze telefoniche con accesso esterno aderiscono alle conferenze come utenti aziendali autenticati immettendo il pin e il numero di telefono. È necessaria una regola di normalizzazione per convertire le estensioni in numeri di telefono completi in modo che gli utenti possano essere autenticati quando immettono solo un interno telefonico.
   
@@ -64,7 +64,7 @@ Per configurare i dial plan per le conferenze telefoniche con accesso esterno:
     
 - Se non è stato distribuito VoIP aziendale, creare dial plan per i numeri di accesso alle conferenze telefoniche con accesso esterno. Assicurarsi di includere un'area di conferenza telefonica con accesso esterno. Per istruzioni dettagliate, vedere [Create or modify a dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md).
     
-- Se è stato distribuito VoIP aziendale, modificare VoIP aziendale dial plan in base alle esigenze per includere aree geografiche e utilizzare regole di normalizzazione appropriate per i numeri di accesso esterno. È inoltre possibile creare dial plan dedicati che vengono utilizzati solo per i numeri di accesso esterno. Per istruzioni dettagliate, vedere [Create or modify a dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md).
+- Se è stato distribuito VoIP aziendale, modificare VoIP aziendale dial plan in base alle esigenze per includere aree geografiche e utilizzare le regole di normalizzazione appropriate per i numeri di accesso esterno. È inoltre possibile creare dial plan dedicati che vengono utilizzati solo per i numeri di accesso esterno. Per istruzioni dettagliate, vedere [Create or modify a dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md).
     
 Per informazioni dettagliate sulla creazione di regole di normalizzazione, vedere [Create or modify a normalization rule in Skype for Business](../../deploy/deploy-enterprise-voice/normalization-rules.md).
   

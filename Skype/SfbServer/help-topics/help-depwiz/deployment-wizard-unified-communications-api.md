@@ -2,7 +2,7 @@
 title: API per comunicazioni unificate della Distribuzione guidata
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 0eb47fc9-17fe-4ccf-b7c9-1a2cf95f943c
 description: Per informazioni dettagliate sull'utilizzo della Distribuzione guidata Skype for Business Server 2015, vedere Install Skype for Business Server 2015.
-ms.openlocfilehash: e42c72749cf1f48e3b9f87fec9cefaf8fab0c71c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: fd09356e2ef5b67c61514deb0d72a725418144de
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60739662"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60846669"
 ---
 # <a name="deployment-wizard-unified-communications-api"></a>Distribuzione guidata: API per le comunicazioni unificate
  

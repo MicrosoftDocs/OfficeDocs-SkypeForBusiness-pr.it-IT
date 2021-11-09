@@ -1,7 +1,7 @@
 ---
 title: Distribuire Microsoft Teams Rooms con Microsoft 365 o Office 365
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms con Microsoft 365 o Office 365, dove Teams o Skype for Business e Exchange sono entrambi online.
-ms.openlocfilehash: d052683b1f393afd777f6e17a4b38b96f17d6b5a
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: cf323332b6c9b7742a2a10a12017553f462b8619
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60741582"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60846079"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-microsoft-365-or-office-365"></a>Distribuire Microsoft Teams Rooms con Microsoft 365 o Office 365
 
@@ -34,21 +34,21 @@ Prima di distribuire Microsoft Teams Rooms con Microsoft 365 o Office 365, assic
 
 Per abilitare Skype for Business, è necessario disporre di quanto segue:
 
-- Skype for Business Online (Piano 2 o piano basato Enterprise) o versione successiva nel piano Microsoft 365 o Office 365 piano. Il piano deve consentire le funzionalità di conferenza telefonica con accesso esterno.
+- Skype for Business Online (Piano 2 o un piano basato Enterprise) o versione successiva nel piano Microsoft 365 o Office 365. Il piano deve consentire le funzionalità di conferenza telefonica con accesso esterno.
 
 - Se sono necessarie funzionalità di accesso esterno da una riunione, è necessaria una licenza per audioconferenza e Sistema telefonico audio.  Se sono necessarie funzionalità di accesso esterno da una riunione, è necessaria una licenza per i servizi di audioconferenza.
 
 - Gli utenti del tenant devono avere Exchange cassette postali.
 
-- L'account Microsoft Teams Rooms richiede almeno una licenza di Skype for Business Online (Piano 2), ma non richiede una licenza Exchange Online licenza. Vedere [Microsoft Teams Rooms licenze per](rooms-licensing.md) informazioni dettagliate.
+- L Microsoft Teams Rooms account richiede almeno una licenza di Skype for Business Online (Piano 2), ma non richiede una licenza Exchange Online licenza. Vedere [Microsoft Teams Rooms licenze per](rooms-licensing.md) informazioni dettagliate.
 
-Per informazioni dettagliate sui Skype for Business online, vedere la [Skype for Business Descrizione del servizio online.](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-service-description)
+Per informazioni dettagliate Skype for Business piani online, vedere la [Skype for Business Descrizione del servizio online.](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-service-description)
 
 ### <a name="add-a-device-account"></a>Aggiungere un account del dispositivo
 
-1. Connessione per Exchange Online PowerShell. Per istruzioni, vedere [Connessione a Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
+1. Connessione a Exchange Online PowerShell. Per istruzioni, vedere [Connessione per Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. In Exchange Online PowerShell creare una nuova cassetta postale della chat room o modificare una cassetta postale della chat room esistente. Per impostazione predefinita, alle cassette postali della chat room non sono associati account, quindi è necessario aggiungere un account quando si crea o si modifica una cassetta postale della chat room che le consente di eseguire l'autenticazione con Skype Room Systems v2.
+2. In Exchange Online PowerShell creare una nuova cassetta postale sala o modificare una cassetta postale della chat room esistente. Per impostazione predefinita, alle cassette postali della chat room non sono associati account, quindi è necessario aggiungere un account quando si crea o si modifica una cassetta postale della chat room che le consente di eseguire l'autenticazione con Skype Room Systems v2.
 
    - Per creare una nuova cassetta postale della chat room, usare la sintassi seguente:
 
@@ -92,7 +92,7 @@ Per informazioni dettagliate sui Skype for Business online, vedere la [Skype for
 
    - DeleteComments: $false (Mantenere il testo nel corpo del messaggio delle convocazioni di riunione in arrivo).
 
-   - DeleteSubject: $false (Mantieni l'oggetto delle convocazioni riunione in arrivo).
+   - DeleteSubject: $false (Mantieni l'oggetto delle convocazioni di riunione in arrivo).
 
    - RemovePrivateProperty: $false (assicura che il contrassegno privato inviato dall'organizzatore della riunione nella convocazione di riunione originale rimanga come specificato).
 
@@ -108,7 +108,7 @@ Per informazioni dettagliate sui Skype for Business online, vedere la [Skype for
 
    Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-CalendarProcessing](/powershell/module/exchange/mailboxes/set-calendarprocessing).
 
-4. Connessione a PowerShell di MS Online per impostare Active Directory eseguendo il `Connect-MsolService -Credential $cred` cmdlet di PowerShell. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](/powershell/azure/active-directory/overview?view=azureadps-1.0)
+4. Connessione a PowerShell di MS Online per impostare Active Directory eseguendo il `Connect-MsolService -Credential $cred` cmdlet PowerShell. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](/powershell/azure/active-directory/overview?view=azureadps-1.0)
 
    > [!NOTE]
    > [Azure Active Directory PowerShell 2.0](/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato.
@@ -124,7 +124,7 @@ Per informazioni dettagliate sui Skype for Business online, vedere la [Skype for
    Set-AzureADUserPassword -UserPrincipalName <Account> -EnforceChangePasswordPolicy $false
    ```  -->
 
-   Questo esempio imposta la password per l'account Rigel1@contoso.onmicrosoft.com non scadrà mai.
+   Questo esempio imposta la password per l'account Rigel1@contoso.onmicrosoft.com non scade mai.
 
    ```PowerShell
    Set-MsolUser -UserPrincipalName "Rigel1@contoso.onmicrosoft.com" -PasswordNeverExpires $true
@@ -160,7 +160,7 @@ Per informazioni dettagliate sui Skype for Business online, vedere la [Skype for
    Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
    ```  -->
 
-   Successivamente, è possibile aggiungere una licenza usando il pulsante `Set-MsolUserLicense` <!--Set-AzureADUserLicense --> cmdlet. Questo esempio aggiunge la licenza Sala riunioni all'account:
+   Successivamente, è possibile aggiungere una licenza usando il pulsante `Set-MsolUserLicense` <!--Set-AzureADUserLicense --> cmdlet. Questo esempio aggiunge la licenza Sala riunioni'account:
 
    ```PowerShell
    Set-MsolUser -UserPrincipalName "Rigel1@contoso.onmicrosoft.com" -UsageLocation "US"
@@ -207,7 +207,7 @@ Per informazioni dettagliate sui Skype for Business online, vedere la [Skype for
     Get-CsOnlineUser -Identity "Rigel1@contoso.onmicrosoft.com" | Select -Expand RegistrarPool
    ```
 
-   Abilitare quindi l'account Microsoft Teams Rooms per Skype for Business Server eseguendo il cmdlet seguente:
+   Quindi, abilitare l'account Microsoft Teams Rooms per Skype for Business Server eseguendo il cmdlet seguente:
 
    ``` Powershell
    Enable-CsMeetingRoom -Identity "Rigel1@contoso.onmicrosoft.com" -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress

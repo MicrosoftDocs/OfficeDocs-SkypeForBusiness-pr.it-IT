@@ -2,7 +2,7 @@
 title: Modelli utente in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: c551371c-d740-4372-bada-f0d713ec0d33
 description: I modelli utente descritti qui forniscono la base per le misurazioni e i consigli di pianificazione della capacità descritti in Capacity planning user model usage for Skype for Business Server.
-ms.openlocfilehash: e72a16668c0247a23ac4d032e0a3f09b06a71cc5
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 22f5d45c5b8c5f75979e061814c03a5b9ffc3e8d
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60768634"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60846349"
 ---
 # <a name="user-models-in-skype-for-business-server"></a>Modelli utente in Skype for Business Server
  
@@ -33,11 +33,11 @@ Nella tabella seguente viene descritto il modello utente per la registrazione, i
 |**Categoria**|**Descrizione**|
 |:-----|:-----|
 |Dimensione e distribuzione  <br/> |Viene creato un modello di distribuzione estesa con tre siti centrali e un pool Front End per sito.  <br/> |
-|Percentuale di utenti di Active Directory  <br/> |Si presuppone che il 70% di tutti gli utenti di Active Directory nell'organizzazione siano abilitati per Skype for Business Server. L'80% di tali utenti abilitati è connesso Skype for Business Server ogni giorno (80% di concorrenza). Gli utenti simultanei rappresentano la base per i valori indicati nel resto di questa sezione.  <br/> |
-|Cambiamenti in Active Directory  <br/> |Si presuppone che lo 0,5% degli utenti totali sia creato e abilitato per Skype for Business in Active Directory ogni settimana e che lo 0,5% degli utenti totali sia disabilitato da Active Directory e da Skype for Business ogni settimana. Per il 5% degli utenti viene modificato almeno un attributo di Active Directory ogni settimana.  <br/> |
+|Percentuale di utenti di Active Directory  <br/> |Si presuppone che il 70% di tutti gli utenti di Active Directory nell'organizzazione siano abilitati per Skype for Business Server. L'80% di tali utenti abilitati è connesso a Skype for Business Server ogni giorno (80% di concorrenza). Gli utenti simultanei rappresentano la base per i valori indicati nel resto di questa sezione.  <br/> |
+|Cambiamenti in Active Directory  <br/> |Si presuppone che lo 0,5% degli utenti totali sia stato creato e abilitato per Skype for Business in Active Directory ogni settimana e che lo 0,5% degli utenti totali sia disabilitato da Active Directory e da Skype for Business ogni settimana. Per il 5% degli utenti viene modificato almeno un attributo di Active Directory ogni settimana.  <br/> |
 |Gruppi di distribuzione di Active Directory  <br/> |Si parte dal presupposto che il numero di gruppi di distribuzione di Active Directory nell'organizzazione sia pari a tre volte il numero di tutti gli utenti in Active Directory. Le dimensioni dei gruppi di distribuzione sono le seguenti:  <br/> • Il 64% ha 2-30 utenti  <br/> • Il 13% ha 31-50 utenti  <br/> • Il 10% ha 51-100 utenti  <br/> • Il 13% ha 101-500 utenti  <br/> |
 |Utenti di VoIP (Voice over IP)  <br/> |Il 60% Skype for Business Server utenti sono abilitati per le comunicazioni unificate (UC), ovvero i loro numeri di telefono sono di proprietà di Skype for Business Server.  <br/> |
-|Distribuzione dei client registrati  <br/> |Il 65% dei client esegue Skype for Business software, tra cui Skype for Business e Lync Telefono Edition.  <br/> 30% dei client che eseguono software client da una versione precedente di Lync.  <br/> 5% dei client che usano Skype for Business Web App.  <br/> Se la mobilità è abilitata, presupporremo che il 40% degli utenti utilizzi la mobilità contemporaneamente alle altre opzioni client registrate citate in precedenza. In questo caso, il rapporto MPOP (Multiple Point of Presence) del client è 1:1,9. Se l'utilizzo dei dispositivi mobili è disabilitato, il rapporto MPOP invece è pari a 1:1,5.  <br/> |
+|Distribuzione dei client registrati  <br/> |Il 65% dei client esegue Skype for Business software, tra cui Skype for Business Lync Telefono Edition.  <br/> 30% dei client che eseguono software client da una versione precedente di Lync.  <br/> 5% dei client che usano Skype for Business Web App.  <br/> Se la mobilità è abilitata, presupporremo che il 40% degli utenti utilizzi la mobilità contemporaneamente alle altre opzioni client registrate citate in precedenza. In questo caso, il rapporto MPOP (Multiple Point of Presence) del client è 1:1,9. Se l'utilizzo dei dispositivi mobili è disabilitato, il rapporto MPOP invece è pari a 1:1,5.  <br/> |
 |Distribuzione degli utenti remoti  <br/> |Il 70% degli utenti si connette internamente.  <br/> 30% degli utenti che si connettono tramite un server perimetrale (è anche possibile avere un Director qui, ma non è necessario).  <br/> |
 |Distribuzione dei contatti  <br/> |Il numero massimo di contatti di cui può disporre un utente è 1.000. Meno dell'1% degli utenti dispone di 1.000 contatti. Meno del 25% degli utenti dispone di 100 o più contatti.  <br/> Media di 80 contatti per gli utenti con connettività a cloud pubblici. Di questi utenti:  <br/> • Il 50% dei contatti si trova all'interno dell'organizzazione. Il 10% di questi utenti è rappresentato da utenti remoti che si connettono dall'esterno del firewall.  <br/> • Il 40% dei contatti è Skype utenti.  <br/> • Il 10% dei contatti è di partner federati.  <br/> Media di 50 contatti per gli utenti senza connettività a cloud pubblici. Di questi utenti:  <br/> • L'80% dei contatti si trova all'interno dell'organizzazione. Il 10% di questi utenti è rappresentato da utenti remoti che si connettono dall'esterno del firewall.  <br/> • Il 20% dei contatti è di partner federati.  <br/> Ogni utente dispone di un gruppo di distribuzione nell'elenco contatti. Per i test delle prestazioni, si presuppone che i gruppi di distribuzione siano sempre espansi.  <br/> |
 |Durata delle sessioni  <br/> |La sessione di accesso utente dura in media 12 ore. Tutti gli utenti eseguono l'accesso entro 120 minuti dall'avvio della sessione.  <br/> |
