@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204760(v=OCS.15)
 ms:contentKeyID: 48183694
 mtps_version: v=OCS.15
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,31 +14,31 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: In questo articolo viene descritto come configurare gli intervalli di porte per i client e configurare i criteri qualità del servizio in Skype for Business Server per i client in esecuzione Windows 10.
-ms.openlocfilehash: b2382a5060d0723f76312a089ab50b0b41314c8e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: In questo articolo viene descritto come configurare gli intervalli di porte per i client e configurare i criteri qualità del servizio in Skype for Business Server per i client in esecuzione in Windows 10.
+ms.openlocfilehash: 5fa7a425bbb734307b487f63aa7fdf809f627661
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60742112"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60860073"
 ---
-# <a name="configuring-port-ranges-and-a-quality-of-service-policy-for-your-clients-in-skype-for-business-server"></a>Configurazione di intervalli di porte e criteri di qualità del servizio per i client in Skype for Business Server
+# <a name="configuring-port-ranges-and-a-quality-of-service-policy-for-your-clients-in-skype-for-business-server"></a>Configurazione degli intervalli di porte e dei criteri di qualità del servizio per i client in Skype for Business Server
 
-In questo articolo viene descritto come configurare gli intervalli di porte per i client e configurare i criteri qualità del servizio in Skype for Business Server per i client in esecuzione Windows 10.
+In questo articolo viene descritto come configurare gli intervalli di porte per i client e configurare i criteri qualità del servizio in Skype for Business Server per i client in esecuzione in Windows 10.
 
 ## <a name="configure-port-ranges"></a>Configurare gli intervalli di porte
 
-Per impostazione predefinita, Skype for Business applicazioni client possono utilizzare qualsiasi porta tra le porte 1024 e 65535 quando sono coinvolte in una sessione di comunicazione; ciò è dovuto al fatto che intervalli di porte specifici non vengono abilitati automaticamente per i client. Per utilizzare la qualità del servizio, tuttavia, è necessario riassegnare i vari tipi di traffico (audio, video, supporti, condivisione applicazioni e trasferimento di file) a una serie di intervalli di porte univoci. A tale scopo, è possibile utilizzare il cmdlet Set-CsConferencingConfiguration.
+Per impostazione predefinita, Skype for Business applicazioni client possono utilizzare qualsiasi porta tra le porte 1024 e 65535 quando sono coinvolte in una sessione di comunicazione. ciò è dovuto al fatto che intervalli di porte specifici non vengono abilitati automaticamente per i client. Per utilizzare la qualità del servizio, tuttavia, è necessario riassegnare i vari tipi di traffico (audio, video, supporti, condivisione applicazioni e trasferimento di file) a una serie di intervalli di porte univoci. A tale scopo, è possibile utilizzare il cmdlet Set-CsConferencingConfiguration.
 
 > [!NOTE]  
-> Gli utenti finali non possono apportare queste modifiche. Le modifiche alle porte possono essere apportate solo dagli amministratori che utilizzano il cmdlet Set-CsConferencingConfiguration.
+> Gli utenti finali non possono apportare queste modifiche. Le modifiche alle porte possono essere apportate solo dagli amministratori utilizzando il cmdlet Set-CsConferencingConfiguration.
 
 
 È possibile determinare gli intervalli di porte attualmente utilizzati per le sessioni di comunicazione eseguendo il comando seguente da Skype for Business Server Management Shell:
 
 **Get-CsConferencingConfiguration**
 
-Presupponendo che non siano state apportate modifiche alle impostazioni di conferenza dopo l'installazione di Skype for Business Server, è consigliabile ottenere informazioni che includono i valori delle proprietà seguenti:
+Presupponendo che non siano state apportate modifiche alle impostazioni di conferenza dopo l'installazione Skype for Business Server, è consigliabile ottenere informazioni che includono i valori delle proprietà seguenti:
 
 ClientMediaPortRangeEnabled : False<br/>
 ClientAudioPort : 5350<br/>
@@ -54,7 +54,7 @@ Se si osserva attentamente l'output precedente, si noteranno due aspetti importa
 
 **ClientMediaPortRangeEnabled : False**
 
-Questo è importante perché, quando questa proprietà è impostata su False, i client Skype for Business utilizzeranno qualsiasi porta disponibile tra le porte 1024 e 65535 quando partecipano a una sessione di comunicazione. ciò vale indipendentemente da qualsiasi altra impostazione di porta, ad esempio ClientMediaPort o ClientVideoPort. Se si desidera limitare l'utilizzo a un set di porte specificato (operazione che si desidera eseguire se si prevede di implementare la qualità del servizio), è innanzitutto necessario abilitare gli intervalli di porte multimediali client. Questa operazione può essere eseguita utilizzando il comando Windows PowerShell seguente:
+Questo è importante perché, quando questa proprietà è impostata su False, i client Skype for Business utilizzeranno qualsiasi porta disponibile tra le porte 1024 e 65535 quando sono coinvolti in una sessione di comunicazione. ciò vale indipendentemente da qualsiasi altra impostazione di porta, ad esempio ClientMediaPort o ClientVideoPort. Se si desidera limitare l'utilizzo a un set di porte specificato (operazione che si desidera eseguire se si prevede di implementare la qualità del servizio), è innanzitutto necessario abilitare gli intervalli di porte multimediali client. Questa operazione può essere eseguita utilizzando il comando Windows PowerShell seguente:
 
 **Set-CsConferencingConfiguration -ClientMediaPortRangeEnabled $True**
 

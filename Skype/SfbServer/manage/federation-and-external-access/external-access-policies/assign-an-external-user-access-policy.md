@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398551(v=OCS.15)
 ms:contentKeyID: 48184483
 mtps_version: v=OCS.15
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Se un utente è stato abilitato per Skype for Business Server, è possibile configurare la federazione SIP, l'accesso degli utenti remoti e la connettività di messaggistica istantanea pubblica nel Pannello di controllo di Skype for Business Server applicando i criteri appropriati a utenti specifici.
-ms.openlocfilehash: e0e1fd7c1597200f576ff329433eb106f1c425da
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 400c49dfc7d0c893af98a8da7bc53894a39d6a9a
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762464"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60843919"
 ---
 # <a name="assign-an-external-user-access-policy-to-a-skype-for-business-enabled-user"></a>Assegnare un criterio di accesso utente esterno a un Skype for Business abilitato
 

@@ -2,7 +2,7 @@
 title: Strumento di pianificazione delle audioconferenze video
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 4/6/2016
 audience: ITPro
@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 466f5d2e-0e70-434c-8318-dfdefe679a31
 description: Skype for Business Server conferenze audio/video (A/V) 2015 consente agli utenti di partecipare a conferenze audio o video in tempo reale.
-ms.openlocfilehash: 95f364af5bbbb9bd23f7881003420c9ab051dc75
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 6ebb9c93edef168c35fe95bce450accd5c577981
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60766304"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60843759"
 ---
 # <a name="audio-video-conferencing-planning-tool"></a>Strumento di pianificazione delle audioconferenze video
  
-Skype for Business Server conferenze audio/video (A/V) 2015 consente agli utenti di partecipare a conferenze audio o video in tempo reale.
+Skype for Business Server audio/video (A/V) 2015 consente agli utenti di partecipare a conferenze audio o video in tempo reale.
   
 Per informazioni dettagliate sull'abilitazione delle conferenze audio/video nell'organizzazione, vedere l'argomento seguente e i relativi argomenti secondari: 
   

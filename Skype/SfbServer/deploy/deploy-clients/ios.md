@@ -1,7 +1,7 @@
 ---
 title: Installare e testare Skype for Business per iOS
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.reviewer: PhillipGarding
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 142abc98-608d-40c7-ab4d-66acc010426b
 description: "Riepilogo: come installare e testare l'app Skype for Business per iOS."
-ms.openlocfilehash: 62b7720efbc24606f63f5df83c9082fb4ebf9611
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b3bcdddbafe5ae0c578f1f5e38f44696ed01dd66
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60758158"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60843529"
 ---
 # <a name="install-and-test-skype-for-business-for-ios"></a>Installare e testare Skype for Business per iOS
  
 **Riepilogo:** Come installare e testare l'app Skype for Business per iOS.
   
-L Skype for Business app per iOS consente Skype for Business presenza, messaggistica istantanea e chiamate vocali e video ai dispositivi iOS. Gli utenti con Lync 2013 o riceveranno automaticamente l'app aggiornata o verrà richiesto di aggiornarla manualmente, a seconda delle impostazioni utente. I nuovi utenti possono scaricarlo dall'Apple App Store. L Skype for Business app per iOS è disponibile solo nelle versioni iOS 8.0 e successive.
+L'Skype for Business per iOS consente di Skype for Business presenza, messaggistica istantanea e chiamate vocali e video ai dispositivi iOS. Gli utenti con Lync 2013 o riceveranno automaticamente l'app aggiornata o verrà richiesto di aggiornarla manualmente, a seconda delle impostazioni utente. I nuovi utenti possono scaricarlo dall'Apple App Store. L Skype for Business app per iOS è disponibile solo nelle versioni iOS 8.0 e successive.
   
 ## <a name="installing-skype-for-business-for-ios"></a>Installazione di Skype for Business per iOS
 
@@ -35,7 +35,7 @@ L Skype for Business app per iOS consente Skype for Business presenza, messaggis
     
 ## <a name="verifying-mobile-client-installation"></a>Verifica dell'installazione del client per dispositivi mobili
 
-Dopo aver eseguito correttamente l'accesso, usa i test seguenti per verificare che l'Skype for Business di installazione funzioni correttamente nel dispositivo iOS. 
+Dopo aver eseguito correttamente l'accesso, usa i test seguenti per verificare che l Skype for Business installazione funzioni correttamente nel dispositivo iOS. 
   
 ### <a name="search-for-a-contact-in-the-corporate-directory"></a>Cercare un contatto nella directory aziendale
 
@@ -65,7 +65,7 @@ Dopo aver eseguito correttamente l'accesso, usa i test seguenti per verificare c
     
 2. Aprire un'altra applicazione nel dispositivo mobile. 
     
-3. In un altro client, accedi a Skype for Business con l'account dell'utente B. 
+3. In un altro client, accedere a Skype for Business con l'account dell'utente B. 
     
 4. Inviare un messaggio istantaneo dall'utente B all'utente A. 
     

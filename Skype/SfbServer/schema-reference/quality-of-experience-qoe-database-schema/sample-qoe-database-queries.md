@@ -2,7 +2,7 @@
 title: Query di database QoE di esempio
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 04e6bdd3-bbd1-47ca-8114-94a3db6beeeb
 description: In questa sezione sono incluse query di esempio per il database della qualità percepita dagli utenti (QoE).
-ms.openlocfilehash: 4e8abfb4cbc66b5976db92b2023fff957147d6bc
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 0e7a654c4f091a1b156ebcc5dcd5e99233c29f00
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60776096"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60834934"
 ---
 # <a name="sample-qoe-database-queries"></a>Query di database QoE di esempio
  

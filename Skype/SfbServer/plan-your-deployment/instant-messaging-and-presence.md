@@ -2,7 +2,7 @@
 title: Pianificare la messaggistica istantanea e la presenza in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -12,22 +12,22 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 70d2151e-9382-485d-ab14-758597571a74
 description: 'Riepilogo: informazioni su come pianificare la messaggistica istantanea e la presenza in Skype for Business Server.'
-ms.openlocfilehash: 20de382c034e2049bdb7bb2b36f2da9bc847b876
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b81da143bf7b8d917d88939d8b28261910bb8f5a
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60737662"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60835084"
 ---
 # <a name="plan-for-instant-messaging-and-presence-in-skype-for-business-server"></a>Pianificare la messaggistica istantanea e la presenza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come pianificare la messaggistica istantanea e la presenza in Skype for Business Server.
   
-Pianificare la messaggistica istantanea e la presenza in Skype for Business Server. Per informazioni su opzioni di distribuzione specifiche, ad esempio l'abilitazione o la disabilitazione della messaggistica istantanea offline, vedere [Deploy instant messaging and presence in Skype for Business Server](../deploy/im-and-presence/im-and-presence.md).
+Pianificare la messaggistica istantanea e la presenza in Skype for Business Server. Per informazioni sulle opzioni di distribuzione specifiche, ad esempio l'abilitazione o la disabilitazione della messaggistica istantanea offline, vedere [Deploy instant messaging and presence in Skype for Business Server](../deploy/im-and-presence/im-and-presence.md).
   
 ## <a name="plan-for-instant-messaging-and-presence-in-skype-for-business-server"></a>Pianificare la messaggistica istantanea e la presenza in Skype for Business Server
 
-I Front End Server forniscono funzionalità di Skype for Business Server quali la messaggistica istantanea e la presenza e sono inclusi in ogni Skype for Business Server distribuzione. Sono disponibili due edizioni: Skype for Business Server edizione Enterprise, progettata principalmente per organizzazioni più grandi, e Skype for Business Server edizione Standard, progettata principalmente per le organizzazioni più piccole che desiderano un investimento hardware più piccolo e non richiedono opzioni di disponibilità elevata complete. Entrambe le edizioni supportano tutti Skype for Business Server, inclusi messaggistica istantanea, presenza, conferenze e VoIP aziendale.
+I Front End Server forniscono funzionalità di Skype for Business Server di base come la messaggistica istantanea e la presenza e sono inclusi in ogni Skype for Business Server distribuzione. Sono disponibili due edizioni: Skype for Business Server edizione Enterprise, progettata principalmente per organizzazioni più grandi, e Skype for Business Server edizione Standard, progettata principalmente per le organizzazioni più piccole che desiderano un investimento hardware più piccolo e non richiedono opzioni di disponibilità elevata complete. Entrambe le edizioni supportano tutti Skype for Business Server, inclusi messaggistica istantanea, presenza, conferenze e VoIP aziendale.
   
 La messaggistica istantanea consente agli utenti di comunicare tra loro in tempo reale mediante i loro computer con messaggi di testo. Sono supportate le sessioni di messaggistica istantanea sia tra due che tra più parti. Un partecipante a una conversazione di messaggistica istantanea tra due parti può aggiungere un terzo partecipante in qualsiasi momento. In tal caso, la finestra relativa alla conversazione cambia in modo da supportare le funzionalità di conferenza.
   
@@ -41,7 +41,7 @@ La messaggistica istantanea e la presenza vengono sempre eseguite edizione Enter
 
 È possibile aumentare notevolmente i vantaggi dell'investimento in Skype for Business Server consentendo agli utenti di comunicare con utenti esterni. Gli utenti esterni possono essere:
   
-- Utenti remoti: gli utenti dell'organizzazione, quando lavorano all'esterno dei firewall e usano i laptop o altri dispositivi Skype for Business Server esterni.
+- Utenti remoti: gli utenti dell'organizzazione, quando lavorano all'esterno dei firewall e usano i portatili o altri dispositivi Skype for Business Server esterni.
     
 - Utenti federati: utenti di società con cui si lavora che eseguono anche Skype for Business Server. Per consentire agli utenti di mettersi facilmente in contatto con questi utenti, si creano relazioni federate con le relative società. 
     
@@ -58,7 +58,7 @@ La messaggistica istantanea e la presenza vengono sempre eseguite edizione Enter
   
 ### <a name="archiving-im-content"></a>Archiviazione del contenuto di messaggistica istantanea
 
-Skype for Business Server offre funzionalità che è possibile utilizzare se l'organizzazione deve rispettare le normative di conformità. È possibile utilizzare l'archiviazione per archiviare il contenuto dei messaggi istantanei per tutti gli utenti dell'organizzazione o solo per determinati utenti specificati. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](archiving/archiving.md). 
+Skype for Business Server offre funzionalità che è possibile utilizzare se l'organizzazione deve rispettare le normative di conformità. È possibile utilizzare l'archiviazione per archiviare il contenuto dei messaggi istantanei per tutti gli utenti dell'organizzazione o solo per determinati utenti specificati. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server.](archiving/archiving.md) 
   
 Se è stato distribuito anche Microsoft Exchange Server 2013, è possibile integrare l'archiviazione dei dati di Exchange con l'archiviazione dei dati di Skype for Business Server e utilizzare un singolo strumento per cercare entrambi i tipi di dati archiviati. Per ulteriori informazioni, vedere [Configure Skype for Business Server to use Exchange Server archiving](../deploy/integrate-with-exchange-server/use-exchange-archiving.md).
   
@@ -72,6 +72,6 @@ Gli unici componenti necessari per la messaggistica istantanea e la presenza son
     
 ### <a name="supported-collocation"></a>Collocazione supportata
 
-La collocazione è definita come con un singolo server, o gruppo di server, con più ruoli installati. Per informazioni dettagliate sulla collocazione, vedere [Topology Basics for Skype for Business Server](topology-basics/topology-basics.md). 
+La collocazione è definita come con un singolo server, o gruppo di server, con più ruoli installati. Per informazioni dettagliate sulla collocazione, vedere [Topology Basics for Skype for Business Server.](topology-basics/topology-basics.md) 
   
 

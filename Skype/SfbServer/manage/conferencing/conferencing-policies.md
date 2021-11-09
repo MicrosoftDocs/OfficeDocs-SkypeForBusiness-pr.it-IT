@@ -2,7 +2,7 @@
 title: Gestire i criteri di conferenza in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 34ec5e41-6fe6-450b-81b0-0d17b9989839
 description: 'Riepilogo: informazioni su come gestire i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: f2678c964cc56de44aff37d49aae5f3c61ebc298
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 8a4c209e711ba6ff332873147c0523839807b108
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60766624"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60835304"
 ---
 # <a name="manage-conferencing-policies-in-skype-for-business-server"></a>Gestire i criteri di conferenza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come gestire i criteri di conferenza in Skype for Business Server.
   
-In questo argomento viene descritto come gestire i criteri di conferenza. Per ulteriori informazioni su come pianificare e distribuire le conferenze, vedere [Plan for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md) and Deploy conferencing in [Skype for Business Server](../../deploy/deploy-conferencing/deploy-conferencing.md).
+In questo argomento viene descritto come gestire i criteri di conferenza. Per ulteriori informazioni su come pianificare e distribuire le conferenze, vedere [Plan for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md) e Deploy conferencing in [Skype for Business Server](../../deploy/deploy-conferencing/deploy-conferencing.md).
   
 I criteri di conferenza consentono di definire un'ampia gamma di opzioni di pianificazione e partecipazione, che vanno dal fatto che una riunione possa includere audio e video IP al numero massimo di persone che possono partecipare. È possibile utilizzare i criteri di conferenza per gestire la sicurezza, la larghezza di banda e gli aspetti legali delle riunioni.
   
@@ -31,9 +31,9 @@ I criteri di conferenza consentono di definire un'ampia gamma di opzioni di pian
   
 Poiché esiste un criterio globale per impostazione predefinita, non è possibile crearne uno nuovo. Non è possibile inoltre eliminare il criterio globale esistente, ma è possibile modificarlo per personalizzare le impostazioni predefinite.
   
-## <a name="manage-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Gestire i criteri di conferenza tramite il Skype for Business Server Pannello di controllo
+## <a name="manage-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Gestire i criteri di conferenza tramite Skype for Business Server Pannello di controllo
 
-Per gestire i criteri di conferenza tramite il Skype for Business Server Pannello di controllo:
+Per gestire i criteri di conferenza tramite Skype for Business Server Pannello di controllo:
   
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     

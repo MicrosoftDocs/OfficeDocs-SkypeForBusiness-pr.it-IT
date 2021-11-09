@@ -2,7 +2,7 @@
 title: Informazioni di base sul DNS
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 2618cfa1-2e2c-4f1d-a5e5-70a0286591a7
 description: Windows Server 2016 software incorporato in grado di fornire servizi DNS, è quindi possibile consultare la documentazione disponibile, ad esempio la Guida allo scenario dei criteri DNS. Se si preferisce, è possibile scegliere una soluzione di terze parti.
-ms.openlocfilehash: fe5c38aa22f87e9096d9c887c387938e1cf66ab3
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ca6bb3a7e7676f7eec5e7b8d384757099f012514
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765234"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60835004"
 ---
 # <a name="dns-basics"></a>Informazioni di base sul DNS
  
@@ -27,7 +27,7 @@ Come procedura consigliata, è consigliabile dedicare un server specifico nell'i
   
 ## <a name="dns-records"></a>Record DNS
 
-Ogni mapping di un nome a un indirizzo IP (e che potrebbe essere un indirizzo IPv4 o IPv6) viene archiviato in un record DNS sul server DNS. Il nome è descritto nel rapporto DNS in modo specifico come FQDN, ovvero un nome di dominio completo. Sebbene *contoso.com* sia un nome di dominio valido, è abbreviato per *\* .contoso.com,* quindi è ambiguo e potrebbe fare riferimento a qualsiasi server nel dominio. Un esempio di fqdn che fa riferimento a un singolo server nel dominio potrebbe essere **meeting01.contoso.com**.
+Ogni mapping di un nome a un indirizzo IP (e che potrebbe essere un indirizzo IPv4 o IPv6) viene archiviato in un record DNS sul server DNS. Il nome è descritto nel rapporto DNS in modo specifico come FQDN, ovvero un nome di dominio completo. Anche *contoso.com* è un nome di dominio valido, è abbreviazione di *\* .contoso.com,* quindi è ambiguo e potrebbe fare riferimento a qualsiasi server nel dominio. Un esempio di fqdn che fa riferimento a un singolo server nel dominio potrebbe **essere meeting01.contoso.com**.
   
 > [!IMPORTANT]
 > Per impostazione predefinita, il nome computer di un computer che non fa parte di un dominio è un nome host e non un nome di dominio completo (FQDN). In Generatore di topologie vengono utilizzati fqdn e non nomi host. Pertanto, è necessario configurare un suffisso DNS sul nome del computer da distribuire come server perimetrale che non fa parte di un dominio. **Utilizzare solo caratteri standard** (inclusi A-Z, a-z, 0-9 e trattini) quando si assegnano FQDN ai server che eseguono Skype for Business Server. Non utilizzare caratteri Unicode o di sottolineatura. I caratteri non standard in un nome di dominio completo spesso non sono supportati da AUTORITÀ di certificazione pubbliche e DNS esterne, ovvero quando il nome di dominio completo deve essere assegnato al nome di dominio completo nel certificato.

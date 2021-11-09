@@ -2,7 +2,7 @@
 title: Requisiti hardware e software per le conferenze in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: bfa31b24-a02f-410f-a8ec-206ca4d5b620
 description: 'Riepilogo: leggere questo argomento per informazioni sui requisiti hardware e software per le conferenze in Skype for Business Server.'
-ms.openlocfilehash: 16f5d44258474657e901933cdbf9bb66c178b5e0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4cb6192475b56d78d1cf03b69eea86b67c05519f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754473"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60859893"
 ---
 # <a name="hardware-and-software-requirements-for-conferencing-in-skype-for-business-server"></a>Requisiti hardware e software per le conferenze in Skype for Business Server
 
@@ -49,7 +49,7 @@ Se si decide di abilitare le conferenze Web, è necessario pianificare quanto se
 
 Il Skype for Business Server web conferencing archivia il contenuto condiviso durante le riunioni nell'archivio file. Come parte della distribuzione, è necessario specificare una condivisione file da utilizzare come archivio file per il server edizione Standard o edizione Enterprise pool Front End. È possibile usare una condivisione file esistente per l'archivio file oppure specificarne una nuova indicando il nome di dominio completo (FQDN) del file server in cui deve trovarsi la condivisione file e un nome di cartella per la nuova condivisione file. Per ulteriori informazioni, vedere [Create a file share in Skype for Business Server.](../../deploy/install/create-a-file-share.md) Il servizio per conferenze Web crittografa il contenuto prima di archiviarlo nell'archivio file.
 
-Skype for Business Server supporta l'utilizzo di condivisioni file in un archivio collegato diretto (DAS) o in una rete di archiviazione (SAN), incluso DFS (Distributed File System), e su un array ridondante di dischi indipendenti (RAID) per gli archivi file. Dopo che Skype for Business Server distribuzione guidata ha definito il percorso della condivisione file, Skype for Business Server una struttura di cartelle all'interno della condivisione file simile alla seguente:
+Skype for Business Server supporta l'utilizzo di condivisioni file in un archivio collegato diretto (DAS) o in una rete san (Storage Area Network), incluso DFS (Distributed File System), e su un array ridondante di dischi indipendenti (RAID) per gli archivi file. Dopo che Skype for Business Server distribuzione guidata ha definito il percorso della condivisione file, Skype for Business Server una struttura di cartelle all'interno della condivisione file simile alla seguente:
 
 - 1-ApplicationServer-1
 
@@ -69,7 +69,7 @@ Il servizio di conferenza Web archivia quindi il contenuto, ad esempio diapositi
 
 Per utilizzare le funzionalità di conferenza Web, è necessario installare Office Web Apps Server e configurare Skype for Business Server per comunicare con Office Web Apps Server.
 
-Office Il server Web Apps deve essere installato in un computer autonomo che non esegue Skype for Business Server, SQL Server o qualsiasi altra applicazione server. Non è necessario che nel computer sia installata alcuna Office di installazione. In qualsiasi computer utilizzato per eseguire Office Web Apps Server deve essere installato anche un set specifico di software (inclusi .NET Framework 4.5 e Windows PowerShell 3.0). Questi requisiti, insieme alle informazioni sulla configurazione di certificati e Internet Information Services (IIS), sono descritti in dettaglio nel sito [Web Microsoft Office Web Apps Deployment](/webappsserver/deploy-the-infrastructure-office-web-apps-server).
+Office Il server Web Apps deve essere installato in un computer autonomo che non esegue Skype for Business Server, SQL Server o qualsiasi altra applicazione server. Non è necessario che nel computer sia installata alcuna Office di installazione. In qualsiasi computer utilizzato per eseguire Office Web Apps Server deve essere installato anche un set specifico di software (inclusi .NET Framework 4.5 e Windows PowerShell 3.0). Questi requisiti, insieme alle informazioni sulla configurazione di certificati e Internet Information Services (IIS), sono descritti in dettaglio nel sito Web Microsoft Office distribuzione di app [Web](/webappsserver/deploy-the-infrastructure-office-web-apps-server).
 
 Per informazioni su come configurare Skype for Business Server per l'utilizzo con Office Web Apps Server, vedere [Configure integration with Office Web Apps Server in Skype for Business Server](../../deploy/deploy-conferencing/office-web-app-server.md).
 
@@ -81,7 +81,7 @@ Per informazioni sulla pianificazione della capacità audio e video per le confe
 
 È possibile utilizzare il servizio Controllo di ammissione di chiamata per gestire la larghezza di banda di rete utilizzata dalle conferenze audio/video. Ciò è importante per le reti con restrizioni, ad esempio collegamenti a larghezza di banda limitata tra siti centrali e siti di succursale. Per informazioni dettagliate, vedere [Plan for call admission control in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md).
 
-Se si distribuiscono audioconferenze nella rete, gli utenti dovranno utilizzare dispositivi audio, ad esempio cuffie, per partecipare a una conferenza audio. Se si distribuiscono videoconferenze, è necessario distribuire dispositivi video, ad esempio webcam per gli utenti. Per i dispositivi audio e video, la distribuzione dei dispositivi e la formazione degli utenti sono passaggi importanti da prendere in considerazione. Per ulteriori informazioni, vedere [Plan for clients and devices](../../plan-your-deployment/clients-and-devices/clients-and-devices.md). Microsoft consiglia di utilizzare dispositivi per comunicazioni unificate certificati da Microsoft per tutti i tipi di dispositivi, per garantire un'esperienza utente ottimale. Per informazioni dettagliate sui dispositivi certificati uc, vedere [Telefoni e dispositivi per Skype for Business](../../../SfbPartnerCertification/certification/devices-ip-phones.md).
+Se si distribuiscono audioconferenze nella rete, gli utenti dovranno utilizzare dispositivi audio, ad esempio cuffie, per partecipare a una conferenza audio. Se si distribuiscono videoconferenze, è necessario distribuire dispositivi video, ad esempio webcam per gli utenti. Per i dispositivi audio e video, la distribuzione dei dispositivi e la formazione degli utenti sono passaggi importanti da prendere in considerazione. Per ulteriori informazioni, vedere [Plan for clients and devices](../../plan-your-deployment/clients-and-devices/clients-and-devices.md). Microsoft consiglia di utilizzare dispositivi per comunicazioni unificate certificati da Microsoft per tutti i tipi di dispositivi, per garantire un'esperienza utente ottimale. Per informazioni dettagliate sui dispositivi certificati per le comunicazioni unificate, vedere Telefoni e dispositivi [per Skype for Business](../../../SfbPartnerCertification/certification/devices-ip-phones.md).
 
 ## <a name="requirements-for-dial-in-conferencing"></a>Requisiti per le conferenze telefoniche con accesso esterno
 
@@ -97,7 +97,7 @@ Prima di configurare le conferenze telefoniche con accesso esterno, è necessari
 
 - Applicazione Annuncio conferenza
 
-- Pagina Web Impostazioni conferenza telefonica con accesso esterno
+- Pagina Web conferenze telefoniche Impostazioni accesso esterno
 
 - Almeno un Mediation Server e almeno un gateway PSTN
 
@@ -109,7 +109,7 @@ applicazione Operatore conferenza e applicazione Annuncio conferenza è necessar
 
 Skype for Business Server non supporta la personalizzazione dei prompt vocali e della musica per le conferenze telefoniche con accesso esterno. Tuttavia, se si ha una forte necessità aziendale che richiede di modificare i file audio predefiniti, vedere l'articolo della Microsoft Knowledge Base 961177, Come personalizzare i [prompt](https://go.microsoft.com/fwlink/p/?linkid=3052&amp;kbid=961177)vocali o i file musicali per le audioconferenze con accesso esterno.
 
-applicazione Operatore conferenza e applicazione Annuncio conferenza hanno i requisiti seguenti per la musica in attesa, il nome registrato e i file di richiesta audio:
+applicazione Operatore conferenza e applicazione Annuncio conferenza hanno i requisiti seguenti per la musica in attesa, il nome registrato e i file di prompt audio:
 
 - Formato file WMA (Windows Media Audio)
 
@@ -121,7 +121,7 @@ applicazione Operatore conferenza e applicazione Annuncio conferenza hanno i req
 
 ### <a name="user-requirements-for-dial-in-conferencing"></a>Requisiti utente per le conferenze telefoniche con accesso esterno
 
-Gli utenti delle conferenze telefoniche con accesso esterno devono avere un numero di telefono univoco o un interno assegnato al loro account. Questo requisito supporta l'autenticazione durante l'accesso esterno. Enterprise utenti (ovvero gli utenti che dispongono di credenziali di Servizi di dominio Active Directory e account Skype for Business Server all'interno dell'organizzazione) immettere il proprio numero di telefono (o interno) e un PIN (Personal Identification Number) per accedere alle conferenze come utente autenticato.
+Gli utenti delle conferenze telefoniche con accesso esterno devono avere un numero di telefono univoco o un interno assegnato al loro account. Questo requisito supporta l'autenticazione durante l'accesso esterno. gli utenti di Enterprise (ovvero gli utenti che dispongono di credenziali di Servizi di dominio Active Directory e account Skype for Business Server all'interno dell'organizzazione) immettono il proprio numero di telefono (o interno) e un PIN (Personal Identification Number) per accedere alle conferenze come utente autenticato.
 
 ## <a name="port-requirements-for-conferencing"></a>Requisiti delle porte per le conferenze
 
@@ -143,7 +143,7 @@ Per utilizzare le funzionalità di conferenza, è Skype for Business Server che 
 |Front End Server  <br/> |Skype for Business Server Servizio condivisione applicazioni  <br/> |49152-65535  <br/> |TCP  <br/> |Intervallo di porte di attesa multimediali per la condivisione delle applicazioni.  <br/> |
 |Front End Server  <br/> |Skype for Business Server Annuncio conferenza servizio  <br/> |5073  <br/> |TCP  <br/> |Utilizzato per le richieste SIP in arrivo per il servizio Skype for Business Server Annuncio conferenza ,ovvero per le conferenze telefoniche con accesso esterno.  <br/> |
 |Tutti i server interni  <br/> |Vari  <br/> |49152-57500  <br/> |TCP/UDP  <br/> |Intervallo di porte multimediali utilizzato per le conferenze audio su tutti i server interni. Utilizzato da tutti i server che terminano l'audio: Front End Server (per il servizio Skype for Business Server Operatore conferenza, il servizio Skype for Business Server Annuncio conferenza e il servizio Skype for Business Server Audio/Video Conferencing) e Mediation Server.  <br/> |
-|Office Server Web Apps  <br/> ||443  <br/> ||Usato da Skype for Business Server per connettersi al Office Web Apps Server.  <br/> |
+|Office Server Web Apps  <br/> ||443  <br/> ||Usato da Skype for Business Server per connettersi Office server Web Apps.  <br/> |
 
 **Porte client necessarie**
 

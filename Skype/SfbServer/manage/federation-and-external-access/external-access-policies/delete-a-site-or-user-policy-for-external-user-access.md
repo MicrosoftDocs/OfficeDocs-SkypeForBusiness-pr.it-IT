@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg521013(v=OCS.15)
 ms:contentKeyID: 48184455
 mtps_version: v=OCS.15
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,13 +14,13 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di Skype for Business Server nella pagina Criteri di accesso esterno.
-ms.openlocfilehash: 53be2748328211c901a2daeeb0ca84e70cfd6511
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di controllo di Skype for Business Server nella pagina Criteri di accesso esterno.
+ms.openlocfilehash: 136b7f612dc2dcc0625e7f844ecf6ad38aba0c37
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765454"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60834224"
 ---
 # <a name="delete-a-site-or-user-policy-for-external-user-access"></a>Eliminare criteri sito o utente per l'accesso degli utenti esterni
 
@@ -38,7 +38,7 @@ Se sono stati creati o configurati criteri di accesso utente esterno che non si 
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Fare clic su **Accesso utente esterno** e quindi su **Criteri di accesso esterno**.
 
@@ -49,7 +49,7 @@ Se sono stati creati o configurati criteri di accesso utente esterno che non si 
 
 ## <a name="removing-pin-policies-by-using-windows-powershell-cmdlets"></a>Rimozione dei criteri PIN tramite Windows PowerShell cmdlet
 
-I criteri di accesso esterno possono essere eliminati utilizzando Windows PowerShell e il cmdlet Remove-CsExternalAccessPolicy. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+I criteri di accesso esterno possono essere eliminati utilizzando Windows PowerShell e il cmdlet Remove-CsExternalAccessPolicy.External access policies can be deleted by using Windows PowerShell and the Remove-CsExternalAccessPolicy cmdlet. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
 
 
 ## <a name="to-remove-a-specific-external-access-policy"></a>Per rimuovere un criterio di accesso esterno specifico

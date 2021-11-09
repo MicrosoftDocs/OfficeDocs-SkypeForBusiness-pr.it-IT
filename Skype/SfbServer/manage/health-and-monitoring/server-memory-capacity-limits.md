@@ -2,7 +2,7 @@
 title: Monitorare i limiti di capacità della memoria del server in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 1697ea71-6fcf-480d-b4e9-cd79f94d247e
 description: 'Riepilogo: informazioni su come monitorare i limiti di capacità della memoria del server in Skype for Business Server.'
-ms.openlocfilehash: df24f96c8fca1927c1222e2bf42981f5cebf7aac
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e66d1fd318af5848b91110780d325fa78e3d21ce
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60768704"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60860083"
 ---
 # <a name="monitor-for-server-memory-capacity-limits-in-skype-for-business-server"></a>Monitorare i limiti di capacità della memoria del server in Skype for Business Server
  
@@ -29,7 +29,7 @@ ms.locfileid: "60768704"
 > [!NOTE]
 > Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
   
-Due contatori delle prestazioni per dispositivi mobili consentono di determinare l'utilizzo corrente e di pianificare la capacità per il servizio per dispositivi mobili di Skype for Business Server (Mcx), nonché di monitorare l'utilizzo della memoria per UCWA. Per UCWA, la categoria contatore è **LS:WEB - UCWA.** Per il servizio per dispositivi mobili (Mcx), i contatori sono nella categoria **LS:WEB - Mobile Communication Service.** I contatori da monitorare sono:
+Due contatori delle prestazioni per dispositivi mobili consentono di determinare l'utilizzo corrente e di pianificare la capacità per Skype for Business Server Mobility Service (Mcx), nonché di monitorare l'utilizzo della memoria per UCWA. Per UCWA, la categoria contatore è **LS:WEB - UCWA.** Per il servizio per dispositivi mobili (Mcx), i contatori sono nella categoria **LS:WEB - Mobile Communication Service.** I contatori da monitorare sono:
   
 - **Conteggio** sessioni attualmente attive con sottoscrizioni presenza attiva , ovvero il numero corrente di endpoint registrati tramite UCWA o il servizio per dispositivi mobili (Mcx) con sottoscrizioni di presenza attive (numero di utenti mobili sempre connessi)
     

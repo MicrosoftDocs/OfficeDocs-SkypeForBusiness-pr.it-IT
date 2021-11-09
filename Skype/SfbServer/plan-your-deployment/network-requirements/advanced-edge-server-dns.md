@@ -2,7 +2,7 @@
 title: Pianificazione avanzata del DNS dei server perimetrali per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 audience: ITPro
 manager: serdars
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f3a5895f-f64f-44eb-9a5e-8d606ac1fc38
 description: Visualizzare gli scenari per Skype for Business Server di distribuzione. Che si desideri un singolo server o si preferisca un pool di server con DNS o HLB, questo argomento dovrebbe essere utile.
-ms.openlocfilehash: 8aada20b1ffe712a5b4cf0f9df42b139f25248dc
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 2c9ea99ae8f5ae7c6151dc337bd5571d739ff549
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60737672"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60844109"
 ---
 # <a name="advanced-edge-server-dns-planning-for-skype-for-business-server"></a>Pianificazione avanzata del DNS dei server perimetrali per Skype for Business Server
  
@@ -168,9 +168,9 @@ Ora che sappiamo tutto questo, se è necessario un requisito automatico per i cl
     
 - **Area interna pin-point**
     
-    Se la creazione di un'intera zona nel DNS interno non è un'opzione, è possibile creare zone pin-point (dedicate) corrispondenti ai record SRV necessari per la configurazione automatica e popolare tali aree utilizzando dnscmd.exe. Dnscmd.exe è necessario perché l'interfaccia utente DNS non supporta la creazione di zone pin-point.
+    Se la creazione di un'intera zona nel DNS interno non è un'opzione, è possibile creare zone pin-point (dedicate) che corrispondono ai record SRV necessari per la configurazione automatica e popolare tali zone utilizzando dnscmd.exe. Dnscmd.exe è necessario perché l'interfaccia utente DNS non supporta la creazione di zone pin-point.
     
-    Ad esempio, se il dominio SIP è contoso.com e si dispone di un pool Front End denominato pool01 che contiene due Front End Server, nel DNS interno saranno necessarie le seguenti zone pin-point e record A:
+    Ad esempio, se il dominio SIP è contoso.com e si dispone di un pool Front End denominato pool01 contenente due Front End Server, nel DNS interno saranno necessarie le seguenti zone di punti di ancoraggio e record A:
     
   ```console
   dnscmd . /zoneadd _sipinternaltls._tcp.contoso.com. /dsprimary
@@ -203,7 +203,7 @@ Ora che sappiamo tutto questo, se è necessario un requisito automatico per i cl
 ## <a name="dns-disaster-recovery"></a>Ripristino di emergenza DNS
 <a name="DNSDR"> </a>
 
-Per configurare DNS per reindirizzare Skype for Business Server traffico Web ai siti di ripristino di emergenza e failover, è necessario utilizzare un provider DNS che supporti GeoDNS. È possibile configurare i record DNS per supportare il ripristino di emergenza, in modo che le funzionalità che utilizzano i servizi Web continuino anche se un intero pool Front End non è più in funzione. Questa funzionalità di ripristino di emergenza supporta gli URL semplici di individuazione automatica, meet e accesso remoto.
+Per configurare DNS per reindirizzare Skype for Business Server web ai siti di ripristino di emergenza e failover, è necessario utilizzare un provider DNS che supporti GeoDNS. È possibile configurare i record DNS per supportare il ripristino di emergenza, in modo che le funzionalità che utilizzano i servizi Web continuino anche se un intero pool Front End non è più in funzione. Questa funzionalità di ripristino di emergenza supporta gli URL semplici di individuazione automatica, meet e accesso remoto.
   
 È possibile definire e configurare record A (AAAA) host DNS aggiuntivi se si utilizza IPv6 per la risoluzione interna ed esterna dei servizi Web presso il provider GeoDNS. I dettagli seguenti presuppongono che i pool associati, geograficamente dislocati, e che geoDNS supportato dal **provider** abbia **DNS** round robin o sia configurato per l'utilizzo di Pool1 come primario ed esepari il pool2 in caso di perdita di comunicazioni o di interruzione dell'alimentazione.
   

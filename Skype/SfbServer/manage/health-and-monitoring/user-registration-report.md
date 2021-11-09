@@ -2,7 +2,7 @@
 title: Rapporto registrazione utente in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,19 +11,19 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 151d5cc9-cc1b-4cfa-be9c-55ebe321f7a4
-description: 'Riepilogo: informazioni sul Rapporto registrazione utenti in Skype for Business Server.'
-ms.openlocfilehash: e137fae97f9b39f45dd619d2ed90a4180897c713
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: 'Riepilogo: informazioni sul Rapporto registrazione utente in Skype for Business Server.'
+ms.openlocfilehash: 52927330e00ae1400aceb7db0e935ce1cb5ecff0
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778326"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60834194"
 ---
 # <a name="user-registration-report-in-skype-for-business-server"></a>Rapporto registrazione utente in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto registrazione utenti in Skype for Business Server.
   
-Il Rapporto registrazione utenti offre una panoramica dell'attività di accesso degli utenti, in particolare informazioni sul numero di utenti che hanno eseguito l'accesso a Skype for Business Server in un periodo di tempo specificato (ogni ora, ogni giorno, settimanalmente, mensilmente). Tenere presente che il report indica solo il numero di persone che hanno eseguito l'accesso. Non viene specificato quali utenti hanno effettuato l'accesso. I report di monitoraggio non forniscono informazioni su quali utenti specifici usano Skype for Business Server (e quali non lo sono). Tuttavia, è possibile ottenere una stima approssimativa delle informazioni utente utilizzando il Rapporto attività utente.
+Il Rapporto registrazione utenti fornisce una panoramica dell'attività di accesso degli utenti, in particolare informazioni sul numero di utenti che hanno eseguito l'accesso a Skype for Business Server in un periodo di tempo specificato (ogni ora, ogni giorno, settimanalmente, mensilmente). Tenere presente che il report indica solo il numero di persone che hanno eseguito l'accesso. Non viene specificato quali utenti hanno effettuato l'accesso. I report di monitoraggio non forniscono informazioni su quali utenti specifici usano Skype for Business Server (e quali non lo sono). Tuttavia, è possibile ottenere una stima approssimativa delle informazioni utente utilizzando il Rapporto attività utente.
   
 Quando si forniscono informazioni sugli accessi degli utenti, il Rapporto registrazione utenti fa due importanti distinzioni. Innanzitutto, suddivide gli accessi in due categorie principali: accessi interni e accessi esterni. Gli accessi interni rappresentano gli utenti che hanno eseguito l'accesso dall'interno del firewall dell'organizzazione, ovvero mentre sono connessi alla rete aziendale. Gli accessi esterni rappresentano gli utenti che hanno eseguito l'accesso dall'esterno del firewall tramite un server perimetrale(ad esempio, un utente che ha eseguito l'accesso da un Internet café viene conteggiato come accesso esterno). Se è necessario conoscere il numero di utenti connessi dall'esterno del firewall, il Rapporto registrazione utenti può fornire queste informazioni.
   
@@ -35,7 +35,7 @@ Il rapporto registrazione utenti è accessibile solo dalla home page Relazioni m
   
 ## <a name="making-the-best-use-of-the-user-registration-report"></a>Utilizzo ottimale del rapporto registrazione utenti
 
-Dopo aver distribuito Skype for Business Server una domanda comune è: Come è possibile sapere se gli utenti usano effettivamente questa nuova tecnologia? Sebbene presenti qualche limitazione, il rapporto registrazione utenti può contribuire a fornire una risposta al riguardo. Per determinare se gli utenti usano o meno Skype for Business Server, è necessario eseguire due operazioni. Innanzitutto, occorre acquisire il valore metrico degli utenti con accesso univoco dal rapporto registrazione utenti. Questo valore indica il numero di utenti distinti connessi a Skype for Business Server.
+Dopo aver distribuito Skype for Business Server una domanda comune è la seguente: Come è possibile sapere se gli utenti usano effettivamente questa nuova tecnologia? Sebbene presenti qualche limitazione, il rapporto registrazione utenti può contribuire a fornire una risposta al riguardo. Per determinare se gli utenti usano o Skype for Business Server, è necessario eseguire due operazioni. Innanzitutto, occorre acquisire il valore metrico degli utenti con accesso univoco dal rapporto registrazione utenti. Questo valore indica il numero di utenti distinti connessi a Skype for Business Server.
   
 In confronto, la metrica Totale accessi mostra il numero totale di volte in cui chiunque ha effettuato l'accesso Skype for Business Server. Si supponga ad esempio che Ken Myer abbia eseguito l'accesso Skype for Business Server cinque volte diverse in un singolo giorno. In tal caso, Ken Myer conta come cinque sessioni di accesso separate per la metrica Totale accessi, ma solo un utente di accesso per la metrica Utenti accesso univoco. Allo stesso modo, non è raro che un utente abiliti l'accesso da più dispositivi o da più posizioni. Ad esempio, un utente può accedere utilizzando il computer desktop, il computer portatile e un telefono IP che accede automaticamente a Skype for Business Server. In questo esempio è presente un utente univoco con tre accessi.
   

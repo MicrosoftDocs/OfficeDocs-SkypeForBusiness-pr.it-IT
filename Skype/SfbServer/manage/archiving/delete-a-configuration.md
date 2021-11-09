@@ -2,7 +2,7 @@
 title: Eliminare una configurazione di archiviazione in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: fed12cb5-2c80-476a-af3b-d55b450c5fbc
 description: 'Riepilogo: informazioni su come eliminare una configurazione di archiviazione in Skype for Business Server.'
-ms.openlocfilehash: f0489fb26526a8e68935754a8689e28eca9ef335
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: defd9377453234e400dbf75a7d0261c52904adda
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60767884"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60851029"
 ---
 # <a name="delete-an-archiving-configuration-in-skype-for-business-server"></a>Eliminare una configurazione di archiviazione in Skype for Business Server
 
@@ -31,7 +31,7 @@ Per eliminare una configurazione di archiviazione tramite il Pannello di control
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Configurazione archiviazione**.
     
@@ -58,13 +58,13 @@ Il comando seguente rimuove tutte le impostazioni di configurazione dell'archivi
 Get-CsArchivingConfiguration -Filter "site:*" | Remove-CsArchivingConfiguration
 ```
 
-Il comando successivo consente di rimuovere tutte le impostazioni di configurazione dell'archiviazione Exchange'archiviazione è stata disabilitata:
+Il comando successivo consente di rimuovere tutte le impostazioni di configurazione dell'archiviazione in cui Exchange'archiviazione è stata disabilitata:
   
 ```PowerShell
 Get-CsArchivingConfiguration | Where-Object {$_.EnableExchangeArchiving -eq $False} | Remove-CsArchivingConfiguration
 ```
 
-È inoltre possibile utilizzare il cmdlet **Remove-CsArchivingConfiguration** per reimpostare le impostazioni globali ai valori predefiniti. Si supponga, ad esempio, di aver abilitato l'archiviazione delle sessioni di messaggistica istantanea a livello globale. il comando seguente reimposta il valore predefinito None, che disabiliterà l'archiviazione a livello globale:
+È inoltre possibile utilizzare il cmdlet **Remove-CsArchivingConfiguration** per reimpostare le impostazioni globali ai valori predefiniti. Si supponga, ad esempio, di aver abilitato l'archiviazione delle sessioni di messaggistica istantanea a livello globale. il comando seguente reimposta il valore predefinito none, disabilitando l'archiviazione a livello globale:
   
 ```PowerShell
 Remove-CsArchivingConfiguration -Identity global

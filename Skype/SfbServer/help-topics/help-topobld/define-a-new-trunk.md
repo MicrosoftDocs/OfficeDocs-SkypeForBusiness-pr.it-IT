@@ -2,7 +2,7 @@
 title: Definire un nuovo trunk
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: e5d97b27-5ae8-41e0-8ee9-0c3f6d5dd123
 description: 'È possibile definire un nuovo trunk SIP (Session Initiation Protocol) fornendo le informazioni seguenti:'
-ms.openlocfilehash: 5aaaa05a340a503cf69f8ca78240794d29058655
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b23b27ca49de3344a9d99e531c17b4fb02b7cc51
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778506"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60851380"
 ---
 # <a name="define-a-new-trunk"></a>Definire un nuovo trunk
 

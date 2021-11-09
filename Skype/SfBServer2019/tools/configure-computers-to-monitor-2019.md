@@ -2,7 +2,7 @@
 title: Configurare i Skype for Business Server computer che verranno monitorati
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -13,18 +13,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: "Riepilogo: installare i file dell'agente Operations Manager nel computer Skype for Business Server 2019 da monitorare e configurare il computer in modo che funzioni come proxy System Center locale."
-ms.openlocfilehash: c0ceac289fa9185c38b68a3824faa29a3db7433d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 975c9eaa7d70720fefa52b8adc84b4f17200f972
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777116"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60859643"
 ---
 # <a name="configure-the-skype-for-business-server-computers-to-monitore"></a>Configurare i Skype for Business Server computer da monitorare
 
 **Riepilogo:** Installare i file agente di Operations Manager nel computer Skype for Business Server 2019 da monitorare e configurare il computer in modo che agirà come proxy System Center locale.
 
-Ogni Skype for Business Server 2019 che si desidera monitorare deve essere in grado di segnalare autonomamente l'esistenza al server di gestione. Per abilitare questo processo, è necessario installare i file dell'agente Operations Manager in ognuno dei computer da monitorare. Dopo aver installato i file dell'agente, è necessario configurare il computer in modo che agirà come proxy System Center proxy. Prima di eseguire queste procedure, assicurarsi di aver installato e Skype for Business Server in questi computer.
+Ogni Skype for Business Server 2019 che si desidera monitorare deve essere in grado di segnalare autonomamente l'esistenza al server di gestione. Per abilitare questo processo, è necessario installare i file dell'agente Operations Manager in ognuno dei computer da monitorare. Dopo aver installato i file dell'agente, è necessario configurare il computer in modo che agirà come proxy System Center locale. Prima di eseguire queste procedure, assicurarsi di aver installato e Skype for Business Server in questi computer.
 
 ## <a name="installing-a-certificate-on-a-watcher-node-located-outside-the-perimeter-network"></a>Installazione di un certificato in un nodo Watcher posizionato all'esterno del perimetro della rete
 <a name="watcher_node_outside"> </a>
@@ -39,7 +39,7 @@ Se si distribuisce un agente in una di queste posizioni, sarà inoltre necessari
 
 2. Nell'System Center guidata di Operation Manager fare clic su **Installa agente Operations Manager** da Installa agente in Installazioni facoltative
 
-3. Nella pagina System Center installazione guidata di System Center Operations Manager fare clic su **Avanti.**
+3. Nella pagina System Center installazione guidata di Operations Manager fare clic su **Avanti** nella pagina Iniziale dell'System Center installazione guidata di Operations Manager.
 
 4. Nella pagina Cartella di destinazione selezionare la cartella in cui verranno installati i file dell'agente Operations Manager e fare clic su **Avanti.**
 
@@ -57,7 +57,7 @@ Se si distribuisce un agente in una di queste posizioni, sarà inoltre necessari
 
 11. Fare clic su **Exit**.
 
-Per System Center 2012, è possibile verificare che l'agente sia stato creato facendo clic sul pulsante **Start**, scegliendo Tutti i programmi **,** facendo clic su **System Center Operations Manager 2012** e quindi su **Operations 2012 Manager Shell**. Nella casella shell di Operations Manager digitare il comando Windows PowerShell seguente e quindi premere INVIO:
+Per System Center 2012, è possibile verificare che l'agente sia stato creato facendo clic sul pulsante **Start**, scegliendo Tutti i programmi **,** facendo clic su System Center Operations Manager **2012** e quindi su **Operations 2012 Manager Shell**. Nella casella shell di Operations Manager digitare il comando Windows PowerShell seguente e quindi premere INVIO:
 ```PowerShell
 Get-SCOMAgent
 ```

@@ -1,8 +1,8 @@
 ---
-title: Visualizzare le informazioni di configurazione della registrazione dettagli Skype for Business Server
+title: Visualizzare le informazioni sulla configurazione della registrazione dettagli dettagli Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,14 +12,14 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 77bd553f-da89-4c84-a5d0-2f7e91d04383
 description: 'Riepilogo: informazioni su come usare la registrazione dettagli chiamata in Skype for Business Server.'
-ms.openlocfilehash: 97019a9d8689cf9eb5cacac82d6776b44bc4283d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 3039db1ff1af74f311f4abc16975f8360509a5c4
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60743482"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60844179"
 ---
-# <a name="view-cdr-configuration-information-in-skype-for-business-server"></a>Visualizzare le informazioni di configurazione della registrazione dettagli Skype for Business Server
+# <a name="view-cdr-configuration-information-in-skype-for-business-server"></a>Visualizzare le informazioni sulla configurazione della registrazione dettagli dettagli Skype for Business Server
  
 **Riepilogo:** Informazioni su come usare la registrazione dettagli chiamata (CDR) in Skype for Business Server.
   
@@ -33,13 +33,13 @@ Quando si installa Skype for Business Server, viene creata automaticamente una s
     
 2. Nella scheda **Registrazione dettagli chiamata** viene visualizzato un elenco delle impostazioni di configurazione per la registrazione dettagli chiamata; per ciascuna raccolta di impostazioni comparirà il **Nome** della raccolta, se la Registrazione dettagli chiamata è abilitata o meno (la proprietà **CDR** property), e se l'eliminazione è abilitata (la proprietà **Eliminazione CDR**). Per visualizzare informazioni dettagliate su una raccolta, fare doppio clic sulla raccolta o selezionare la raccolta appropriata, fare clic su **Modifica** e quindi su **Mostra dettagli**. Si noti che è possibile visualizzare le informazioni dettagliate per una raccolta singola di impostazioni di configurazione per la registrazione dettagli chiamata alla volta.
     
-## <a name="viewing-cdr-configuration-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni di configurazione di registrazione dei dati tramite Windows PowerShell cmdlet
+## <a name="viewing-cdr-configuration-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni di configurazione della registrazione master tramite Windows PowerShell cmdlet
 
-È possibile visualizzare le impostazioni di configurazione della registrazione dettagli Windows PowerShell e il cmdlet Get-CsCdrConfiguration registrazione dettagli dettagli. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere Amministrazione remota di PowerShell per [Microsoft Lync.](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/) Il processo è lo stesso in Skype for Business Server.
+È possibile visualizzare le impostazioni di configurazione della registrazione dettagli dettagli Windows PowerShell e il cmdlet Get-CsCdrConfiguration registrazione dettagli dettagli. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere Amministrazione remota di PowerShell per [Microsoft Lync.](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/) Il processo è lo stesso in Skype for Business Server.
   
 ### <a name="to-view-cdr-configuration-information"></a>Visualizzare le informazioni di configurazione della registrazione dettagli chiamata
 
-- Per visualizzare le informazioni su tutte le impostazioni di configurazione della registrazione dettagli dettagli ricerca, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
+- Per visualizzare informazioni su tutte le impostazioni di configurazione della registrazione dettagli dettagli ricerca, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
     
   ```PowerShell
   Get-CsCdrConfiguration

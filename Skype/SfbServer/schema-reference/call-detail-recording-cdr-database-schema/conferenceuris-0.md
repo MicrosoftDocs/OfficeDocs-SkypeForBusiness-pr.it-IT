@@ -2,7 +2,7 @@
 title: Visualizzazione ConferenceUris
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 9a3cdcea-426e-4b6b-9876-ba746a8de706
 description: Nella vista ConfernceUris sono archiviate informazioni sugli URI che hanno partecipato alle sessioni di conferenza. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 79b4efda696bd757cb63d681e2c82f00d7a7b263
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 6bbcc35c19688b320df8a57447aab4dda64bf4ef
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749895"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60843659"
 ---
 # <a name="conferenceuris-view"></a>Visualizzazione ConferenceUris
  

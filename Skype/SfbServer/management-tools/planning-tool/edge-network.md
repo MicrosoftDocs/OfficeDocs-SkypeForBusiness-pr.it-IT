@@ -2,7 +2,7 @@
 title: Strumento di pianificazione della rete perimetrale
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 4/8/2016
 audience: ITPro
@@ -14,12 +14,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: d7f85abf-2045-4b08-ba29-c6211a3f6ff6
 description: 'La maggior parte dei componenti perimetrali viene distribuita in una rete perimetrale. I componenti seguenti costituiscono la topologia perimetrale della rete perimetrale. Tranne dove specificato, i componenti fanno parte degli scenari di server perimetrali in Skype for Business Server 2015 e si trova nella rete perimetrale. I componenti perimetrali includono quanto segue:'
-ms.openlocfilehash: e7fa651cc5f80f3f5753e49949348e39007f2476
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 5df387611886e8907b38161bab783a72924c5788
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763534"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850969"
 ---
 # <a name="edge-network-planning-tool"></a>Strumento di pianificazione della rete perimetrale
  

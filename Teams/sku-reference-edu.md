@@ -1,6 +1,6 @@
 ---
 title: Informazioni di riferimento su SKU education
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: karsmith
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Elenca i piani di licenza per istituti di istruzione e studenti e gli ID SKU.
 f1keywords: ''
-ms.openlocfilehash: 8f6c4a1821488b14bd95bdaab670788a880b109f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 8fb6077a34f20a694542caae724315868a66a3cc
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60774376"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60843569"
 ---
 # <a name="education-sku-reference"></a>Informazioni di riferimento su SKU education
 
@@ -41,7 +41,7 @@ Questo articolo elenca i piani di licenza per istituti di istruzione e studenti 
 |Office 365 Education E4 per istituti di docente      |ENTERPRISEWITHSCAL_FACULTY         |16732e85-c0e3-438e-a82f-71f39cbe2acb         |
 |Microsoft 365 Education A3 per istituti di docente      |M365EDU_A3_FACULTY         |4b590615-0888-425a-a965-b3bf7789848d         |
 |Microsoft 365 Education A5 per istituti di docente       |M365EDU_A5_FACULTY         |e97c048c-37a4-45fb-ab50-922fbf07a370         |
-|Microsoft 365 A5 audioconferenze per istituti di docente     |M365EDU_A5_NOPSTNCONF_FACULTY         |e578b273-6db4-4691-bba0-8d691f4da603         |
+|Microsoft 365 A5 audioconferenza per istituti di docente     |M365EDU_A5_NOPSTNCONF_FACULTY         |e578b273-6db4-4691-bba0-8d691f4da603         |
 |Office 365 Education per Homeschool per istituti di istruzione     |STANDARDWOFFPACK_HOMESCHOOL_FAC         |43e691ad-1491-4e8c-8dc9-da6b8262c03b         |
 |Office 365 A1 per istituti di docente (per dispositivo)     |STANDARDWOFFPACK_FACULTY_DEVICE         |af4e28de-6b52-4fd3-a5f4-6bf708a304d3         |
 
@@ -60,12 +60,12 @@ Questo articolo elenca i piani di licenza per istituti di istruzione e studenti 
 |Microsoft 365 Education A5 per studenti        |M365EDU_A5_STUDENT       |46c119d4-0379-4a9d-85e4-97c66d3f909e        |
 |Microsoft 365 A5 Vantaggi per l'uso degli studenti     |M365EDU_A5_STUUSEBNFT         |31d57bc7-3a05-4867-ab53-97a17835a411         |
 |Microsoft 365 A5 audioconferenza per studenti      |M365EDU_A5_NOPSTNCONF_STUDENT         |a25c01ce-bab1-47e9-a6d0-ebe939b99ff9         |
-|Microsoft 365 A5 senza audioconferenze per studenti    |M365EDU_A5_NOPSTNCONF_STUUSEBNFT         |81441ae1-0b31-4185-a6c0-32b6b84d419f         |
+|Microsoft 365 A5 senza audioconferenze per gli studenti    |M365EDU_A5_NOPSTNCONF_STUUSEBNFT         |81441ae1-0b31-4185-a6c0-32b6b84d419f         |
 |Office 365 A3 per studenti     |ENTERPRISEPACKPLUS_STUDENT         |98b6e773-24d4-4c0d-a968-6e787a1f8204         |
 |Office 365 A3 Vantaggio per l'uso degli studenti     |ENTERPRISEPACKPLUS_STUUSEBNFT         |476aad1e-7a7f-473c-9d20-35665a5cbd4f         |
 |Office 365 A5 Vantaggio per l'uso degli studenti    |ENTERPRISEPREMIUM_STUUSEBNFT         |f6e603f1-1a6d-4d32-a730-34b809cb9731         |
 |Office 365 A5 senza audioconferenze per studenti  |ENTERPRISEPREMIUM_NOPSTNCONF_STUUSEBNFT         |bc86c9cd-3058-43ba-9972-141678675ac1         |
-|Office 365 Education per Homeschool per studenti     |STANDARDWOFFPACK_HOMESCHOOL_STU         |afbb89a7-db5f-45fb-8af0-1bc5c5015709         |
+|Office 365 Education homeschool per studenti     |STANDARDWOFFPACK_HOMESCHOOL_STU         |afbb89a7-db5f-45fb-8af0-1bc5c5015709         |
 |Office 365 A1 per studenti (per dispositivo)     |STANDARDWOFFPACK_STUDENT_DEVICE         |160d609e-ab08-4fce-bc1c-ea13321942ac         |
 |Office 365 A1 Plus per gli studenti     |STANDARDWOFFPACK_IW_STUDENT         |e82ae690-a2d5-4d76-8d30-7c6e01e6022e         |
 

@@ -1,8 +1,8 @@
 ---
-title: Prerequisiti e configurazione per lo strumento Skype per Busines Stress and Performance Tool
+title: Prerequisiti e configurazione per lo strumento Skype busines stress and performance
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 ms.date: 12/20/2018
 manager: serdars
 audience: ITPro
@@ -13,17 +13,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 948c176c-75ce-418d-891a-a68427d61e40
-description: Requisiti o prerequisiti per lo strumento Skype for Business Server 2015 Stress and Performance Tool. Come installare o configurare lo strumento Stress and Performance.
-ms.openlocfilehash: 87c42d63e394c6beea68c23b8e1d7cff7b07266c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: Requisiti o prerequisiti per lo strumento Skype for Business Server 2015 Stress and Performance. Come installare o configurare lo strumento Stress and Performance.
+ms.openlocfilehash: 60ff4476a92949b2f5ba0d7a027b5cadf3eab533
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60771922"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60835164"
 ---
-# <a name="prerequisites-and-setup-for-the-skype-for-busines-stress-and-performance-tool"></a>Prerequisiti e configurazione per lo strumento Skype per Busines Stress and Performance Tool
+# <a name="prerequisites-and-setup-for-the-skype-for-busines-stress-and-performance-tool"></a>Prerequisiti e configurazione per lo strumento Skype busines stress and performance
  
-Requisiti o prerequisiti per lo strumento Skype for Business Server 2015 Stress and Performance Tool. Come installare o configurare lo strumento Stress and Performance.
+Requisiti o prerequisiti per lo strumento Skype for Business Server 2015 Stress and Performance. Come installare o configurare lo strumento Stress and Performance.
   
 Sono disponibili le sezioni seguenti dei requisiti di configurazione hardware, software e di sistema di cui è necessario tenere conto prima di eseguire lo strumento Stress and Performance:
   
@@ -38,7 +38,7 @@ Inoltre, abbiamo anche una sezione di seguito per l'installazione dello strument
 ## <a name="client-hardware-requirements"></a>Requisiti hardware client
 <a name="ClientHardwareReqs"> </a>
 
-Quando si esegue lo Strumento stress e prestazioni nella distribuzione di Skype for Business Server 2015, è necessario soddisfare almeno questi requisiti hardware per ogni 4500 utenti nel test:
+Quando si esegue lo Strumento stress e prestazioni nella distribuzione di Skype for Business Server 2015, è necessario soddisfare almeno questi requisiti hardware per ogni 4500 utenti del test:
   
 - Scheda di rete da 1 gigabit
     
@@ -61,7 +61,7 @@ Inoltre, i computer devono soddisfare i requisiti software seguenti:
     
 - È necessario che la funzionalità Esperienza desktop sia abilitata in Windows.
     
-- È necessario installare Microsoft Visual C++ 2013 (x64). [Scaricare Visual C++ 2013 qui](https://www.microsoft.com/download/details.aspx?id=40784)
+- Sarà necessario installare Microsoft Visual C++ 2013 (x64). [Scaricare Visual C++ 2013 qui](https://www.microsoft.com/download/details.aspx?id=40784)
     
 - You're going to need Skype for Business Server 2015 successfully deployed.
     

@@ -2,7 +2,7 @@
 title: Distribuire il bypass multimediale in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 1bd35f90-8587-48a1-b0c2-095a4053fc77
 description: Distribuire il bypass multimediale in Skype for Business Server VoIP aziendale. Include i prerequisiti e l'elenco di controllo del processo di distribuzione.
-ms.openlocfilehash: f5bed4cf31158ea170b78110f3b6f5561aedb21d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: c5699d1116faa6bc3b8ae0178ec617bcf06c1ef4
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769664"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60834694"
 ---
 # <a name="deploy-media-bypass-in-skype-for-business-server"></a>Distribuire il bypass multimediale in Skype for Business Server
  
@@ -48,5 +48,5 @@ Nella tabella seguente viene fornita una panoramica del processo di distribuzion
 |**Fase**|**Procedura**|**Ruoli**|**Documentazione relativa alla distribuzione**|
 |:-----|:-----|:-----|:-----|
 |Configurare i trunk per il bypass multimediale  <br/> |Se non è già stato fatto, configurare uno o più trunk per il bypass multimediale.  <br/> | Membro del gruppo RTCUniversalServerAdmins o membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator <br/> |[Configurare un trunk con bypass multimediale in Skype for Business Server](configure-trunk-with-media-bypass.md) <br/> |
-|Configurare il bypass multimediale a livello globale  <br/> |Configurare il bypass multimediale per tutte le chiamate alla rete PSTN o per determinate chiamate basate su siti di rete e aree di rete.  <br/> | Membro del gruppo RTCUniversalServerAdmins o membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator <br/> |[Configurare il bypass multimediale in Skype for Business Server per ignorare sempre il Mediation Server](bypass-the-mediation-server.md) <br/> [Configurare le impostazioni globali di bypass multimediale in Skype for Business Server per usare le informazioni sul sito e sull'area geografica](use-site-and-region-information.md) <br/> |
+|Configurare il bypass multimediale a livello globale  <br/> |Configurare il bypass multimediale per tutte le chiamate alla rete PSTN o per determinate chiamate basate su siti di rete e aree di rete.  <br/> | Membro del gruppo RTCUniversalServerAdmins o membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator <br/> |[Configurare il bypass multimediale in Skype for Business Server per ignorare sempre il Mediation Server](bypass-the-mediation-server.md) <br/> [Configurare le impostazioni globali di bypass multimediale in Skype for Business Server utilizzare le informazioni sul sito e sull'area geografica](use-site-and-region-information.md) <br/> |
 |Associare subnet a siti di rete, se necessario  <br/> |Se si configura il bypass multimediale per l'utilizzo delle informazioni su siti e aree geografiche, è necessario associare le subnet della distribuzione a siti e aree di rete (se non è già stato fatto per un'altra funzionalità vocale).  <br/> | Membro del gruppo RTCUniversalServerAdmins o membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator <br/> |[Associare una subnet a un sito di rete](deploy-network.md#BKMK_AssociateSubnets) <br/> |

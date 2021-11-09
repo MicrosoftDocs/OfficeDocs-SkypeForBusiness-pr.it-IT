@@ -2,7 +2,7 @@
 title: 'Skype for Business Server: Pianificare il dashboard qualità delle chiamate'
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: cc2fbf41-a7e0-4ef8-a939-47bc42da5529
 description: 'Riepilogo: informazioni su cosa considerare quando si pianifica il dashboard qualità delle chiamate.'
-ms.openlocfilehash: 42b80c8e426f438a1608d3c71a41b20dd9d27a63
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: c9ab2cafcd05ac7ea0585b0f3af2924b9fa4f0cf
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777346"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60835174"
 ---
 # <a name="skype-for-business-server-plan-for-call-quality-dashboard"></a>Skype for Business Server: Pianificare il dashboard qualità delle chiamate 
  
@@ -26,7 +26,7 @@ ms.locfileid: "60777346"
   
 ## <a name="overview-of-the-skype-for-business-server-call-quality-dashboard"></a>Panoramica del dashboard Skype for Business Server qualità delle chiamate
 
-Il Skype for Business Server call quality dashboard (CQD) è un livello di creazione di report in cima al database di qualità dell'esperienza nel Monitoring Server in Skype for Business Server. CQD utilizza Microsoft SQL Server Analysis Services per fornire informazioni aggregate sull'utilizzo e sulla qualità delle chiamate, nonché per filtrare e eseguire pivot sul set di dati. Le funzionalità CQD includono:
+Il Skype for Business Server call quality dashboard (CQD) è un livello di reporting in cima al database di qualità dell'esperienza nel Monitoring Server in Skype for Business Server. CQD utilizza Microsoft SQL Server Analysis Services per fornire informazioni aggregate sull'utilizzo e sulla qualità delle chiamate, nonché per filtrare e eseguire pivot sul set di dati. Le funzionalità CQD includono:
   
 - **Archiviazione dei dati QoE tramite il componente di archiviazione QoE di CQD.** Il componente di archiviazione QoE può archiviare i dati QoE per una durata molto più lunga rispetto al Monitoring Server. In questo modo è possibile creare tendenze e creare report per un massimo di sette mesi di dati alla volta, con la possibilità di far scorrere la finestra dei report fino a quando sono presenti dati.
 - **Creazione di report e analisi con la potenza e la velocità di Microsoft SQL Server Analysis Services.** CQD utilizza Microsoft SQL Analysis Services per fornire funzionalità di riepilogo, filtro e pivot veloci per alimentare il dashboard tramite un cubo di analisi. La velocità di esecuzione dei report e la possibilità di eseguire il drill-down nei dati possono ridurre notevolmente i tempi di analisi.
@@ -99,7 +99,7 @@ CQD fornisce l'archiviazione dei dati QoE e un'analisi rapida e approfondita dei
   
 ### <a name="when-to-deploy-cqd"></a>Quando distribuire CQD
 
- **CQD può essere distribuito per stabilire una misurazione della qualità delle chiamate di base, anche se un'organizzazione non ha problemi di qualità delle chiamate.** La definizione di una misurazione della qualità delle chiamate di base è importante perché ogni organizzazione ha una combinazione diversa di Wi-Fi rispetto a lavoratori di ufficio cablati e remoti. Quando si verificano problemi di qualità delle chiamate, le misurazioni più recenti della qualità delle chiamate possono essere confrontate con gli intervalli di tempo precedenti. Le funzionalità di tendenza di CQD consentono di rilevare facilmente le modifiche alla qualità delle chiamate nel tempo.
+ **CQD può essere distribuito per stabilire una misurazione della qualità delle chiamate di base, anche se un'organizzazione non ha problemi di qualità delle chiamate.** Stabilire una misurazione della qualità delle chiamate di base è importante perché ogni organizzazione ha una combinazione diversa di Wi-Fi rispetto ai dipendenti di ufficio e cablati e remoti. Quando si verificano problemi di qualità delle chiamate, le misurazioni più recenti della qualità delle chiamate possono essere confrontate con gli intervalli di tempo precedenti. Le funzionalità di tendenza di CQD consentono di rilevare facilmente le modifiche alla qualità delle chiamate nel tempo.
   
  **CQD può essere distribuito per individuare in modo proattivo le aree di problema che potrebbero influire sulla qualità delle chiamate.** Anche se la qualità media delle chiamate per un'organizzazione potrebbe soddisfare gli obiettivi impostati dall'organizzazione, potrebbero esserci sacche di problemi di qualità delle chiamate nascosti dietro le metriche medie. CQD consente la suddivisione delle metriche di qualità delle chiamate in base a tabelle pivot per molte dimensioni nel database QoEMetrics. Individuare gli outlier nei gruppi peer è un modo rapido per individuare in modo proattivo i problemi di qualità delle chiamate.
   
@@ -109,7 +109,7 @@ CQD fornisce l'archiviazione dei dati QoE e un'analisi rapida e approfondita dei
 
  **È consigliabile distribuire CQD se i report QoE devono essere evasi per più di 3 mesi di dati.** Il database QoEMetrics e i report del server di monitoraggio sono progettati per conservare e segnalare un piccolo set di dati. Il database delle metriche QoE è ottimizzato per gli inserimenti veloci e pertanto le prestazioni dei report possono essere ostacolate da un elevato volume di chiamate o dall'accesso di report concorrenti al database. Il database QoE Archive di CQD fornisce una seconda copia dei dati delle metriche QoE con funzionalità di conservazione molto più lunghe. Il portale è inoltre ottimizzato per visualizzare fino a 7 mesi di dati alla volta e può creare report su tutti i dati nell'archivio QoE in base alle esigenze.
   
- **È consigliabile distribuire CQD se sono necessari report QoE personalizzati.** Il portale include una funzionalità editor di report per la creazione e la creazione di prototipi di report in modo semplice e rapido. Rende inoltre disponibili API REST per l'accesso a livello di codice ai dati del cubo, consentendo una presentazione personalizzata tramite HTML/JavaScript o molti altri framework. Non è più necessario creare nuove query SQL per creare visualizzazioni dati personalizzate per la creazione di report.
+ **È consigliabile distribuire CQD se sono necessari report QoE personalizzati.** Il portale include una funzionalità editor di report per la creazione e la creazione di prototipi di report in modo semplice e rapido. Rende inoltre disponibili API REST per l'accesso a livello di codice ai dati del cubo, consentendo una presentazione personalizzata tramite HTML/JavaScript o molti altri framework. Non è più necessario creare nuove query di SQL allo scopo di creare visualizzazioni dati personalizzate per la creazione di report.
   
  **È consigliabile distribuire CQD se la funzionalità di creazione di report QoE esistente non soddisfa la velocità o la profondità richieste dall'organizzazione.** CQD include molti report incorporati. I report sono immediatamente utili e illustrano come l'analisi progressiva dei dati possa offrire ulteriori approfondimenti a ogni livello. La gerarchia dei report consente inoltre di gestire i numerosi report in modo logico e favorisce la creazione di molti altri report facilmente accessibili e comprensibili. CQD non offre solo velocità e flessibilità, ma è anche ottimizzato per i flussi di lavoro sviluppati dalla metodologia della qualità delle chiamate.
   
@@ -173,7 +173,7 @@ CQD, inclusi tutti i componenti e i componenti dipendenti, può essere distribui
 |Sistemi operativi supportati    |Windows Server 2016, Windows Server 2019   |
 |Funzionalità SQL Server   |SQL Server 2017, SQL Server 2019   |
    
-CQD utilizza Microsoft SQL Server, Microsoft SQL Server Analysis Services e Microsoft Internet Information Services quindi i requisiti hardware e software minimi di CQD sono fondamentalmente gli stessi di tali componenti dipendenti. Tuttavia, in base ai requisiti dell'organizzazione relativi all'aggiornamento dei dati (che dipenderà in parte dal volume di dati QoE generati dall'organizzazione) e dai costi di distribuzione, è consigliabile prendere ulteriori considerazioni sulla distribuzione.
+CQD utilizza Microsoft SQL Server, Microsoft SQL Server Analysis Services e Microsoft Internet Information Services in modo che i requisiti hardware e software minimi di CQD siano fondamentalmente gli stessi di tali componenti dipendenti. Tuttavia, in base ai requisiti dell'organizzazione relativi all'aggiornamento dei dati (che dipenderà in parte dal volume di dati QoE generati dall'organizzazione) e dai costi di distribuzione, è consigliabile prendere ulteriori considerazioni sulla distribuzione.
   
 L'elaborazione dei dati in CQD è suddivisa in due fasi principali: 
   
@@ -183,7 +183,7 @@ L'elaborazione dei dati in CQD è suddivisa in due fasi principali:
     
   **Elaborazione dell'archivio QoE.** L'attività di elaborazione QoE Archive copia i dati dal database Delle metriche QoE nel Monitoring Server al database di archiviazione QoE. Esistono due situazioni in cui il tempo di elaborazione dell'attività avrebbe caratteristiche di prestazioni fondamentalmente diverse. Il primo è dopo l'installazione iniziale di CQD. Quando l'attività viene eseguita per la prima volta dopo una nuova installazione, l'attività di elaborazione QoE Archive copierà tutti i dati presenti nel database Delle metriche QoE nel database di archiviazione QoE. Il secondo è l'elaborazione periodica dopo questo round iniziale. L'attività di elaborazione dell'archivio QoE viene eseguita ogni 15 minuti ed elabora eventuali nuovi record QoE presenti nel database delle metriche QoE. In genere, il tempo di elaborazione iniziale non è un problema perché viene eseguito solo la prima volta, quando viene installato CQD. Tuttavia, se il provisioning del server CQD è molto inferiore, questa attività può richiedere diverse ore. Fare riferimento alla tabella seguente, ad esempio i tempi di elaborazione iniziali dell'archivio QoE.
   
-  **Elaborazione cubo CQD.** L'attività di elaborazione del cubo aggrega i dati dal database QoE Archive al cubo. Il tempo di elaborazione del cubo iniziale e il tempo di elaborazione successivo del cubo sono determinati dall'edizione SQL Server Analysis Services utilizzata per il cubo CQD. Se si utilizza l'edizione Standard, non vi è alcuna differenza tra il tempo di elaborazione del cubo iniziale e il tempo di elaborazione del cubo successivo perché ogni volta che i dati del cubo vengono aggiornati, sarà sempre un'elaborazione completa di tutti i dati disponibili. Ciò significa che i tempi di elaborazione del cubo aumentano con l'aumentare della quantità di dati nel database di archiviazione QoE. Poiché business intelligence Edition e edizione Enterprise di SQL Server supportano la partizione, se viene utilizzata una delle due edizioni, solo l'esecuzione iniziale e processerà tutti i dati nel database di archiviazione QoE. Nelle esecuzioni successive, quando l'attività viene attivata ogni 15 minuti, l'attività eelaborare solo i nuovi record aggiunti al database di archiviazione QoE dopo l'ultima esecuzione dell'attività. Una volta al giorno, ci sarà anche un'elaborazione completa nella partizione che contiene i dati del mese corrente.
+  **Elaborazione cubo CQD.** L'attività di elaborazione del cubo aggrega i dati dal database QoE Archive al cubo. Il tempo di elaborazione del cubo iniziale e il tempo di elaborazione successivo del cubo sono determinati dall'edizione di SQL Server Analysis Services utilizzata per il cubo CQD. Se si utilizza l'edizione Standard, non vi è alcuna differenza tra il tempo di elaborazione del cubo iniziale e il tempo di elaborazione del cubo successivo perché ogni volta che i dati del cubo vengono aggiornati, sarà sempre un'elaborazione completa di tutti i dati disponibili. Ciò significa che i tempi di elaborazione del cubo aumentano con l'aumentare della quantità di dati nel database di archiviazione QoE. Poiché business intelligence Edition e edizione Enterprise di SQL Server supportano la partizione, se viene utilizzata una delle due edizioni, solo l'esecuzione iniziale e processerà tutti i dati nel database di archiviazione QoE. Nelle esecuzioni successive, quando l'attività viene attivata ogni 15 minuti, l'attività eelaborare solo i nuovi record aggiunti al database di archiviazione QoE dopo l'ultima esecuzione dell'attività. Una volta al giorno, ci sarà anche un'elaborazione completa nella partizione che contiene i dati del mese corrente.
   
 Le caratteristiche del computer fisico possono influire sulle prestazioni di CQD e sulle funzionalità software disponibili dai componenti SQL Server computer. Il componente di archiviazione QoE sarà più intensivo del disco rispetto ad altri componenti, mentre il componente Cubo richiederà più CPU e memoria. Tutti questi fattori contribuiscono al tempo totale di elaborazione dei dati di CQD, che influisce direttamente sull'freshness e sulla disponibilità dei dati. Le organizzazioni devono prendere decisioni sull'hardware e sul software in base alle singole esigenze dell'organizzazione. 
   
@@ -282,7 +282,7 @@ Di seguito sono riportati i servizi ruolo IIS necessari (in ordine gerarchico):
   - Console di gestione IIS
     
 > [!NOTE]
->  Nota quanto segue per i requisiti precedenti:> sono disponibili le versioni 3.5 e 4.5 di .Net Framework. Entrambi sono necessari (in particolare, è necessario 3.5 SP1).> In alcuni sistemi, se ASP.NET viene installato prima dell'installazione di IIS, ASP.NET potrebbe non essere registrato in IIS. Il problema si manifesta con l'assenza di pool di applicazioni per la versione .Net corrispondente e manca anche la versione CLR .NET nella configurazione del pool di app. Per risolvere un problema di questo tipo in Windows Server 2008 R2, eseguire `%systemroot%\Microsoft.NET\Framework64\4.0.30319\aspnet_regiis.exe -iru` . In Windows Server 2012 e Windows Server 2012 R2, eseguire seguito dalla rimozione del modulo "ServiceModel" dal sito Web predefinito in Gestione IIS.> Gli strumenti di gestione sono facoltativi, ma `dism /online /enable-Feature /all /FeatureName:WCF-HTTP-Activation45` consigliati.
+>  Nota quanto segue per i requisiti precedenti:> sono disponibili le versioni 3.5 e 4.5 di .Net Framework. Entrambi sono necessari (in particolare, è necessario 3.5 SP1).> In alcuni sistemi, se ASP.NET viene installato prima dell'installazione di IIS, ASP.NET potrebbe non essere registrato in IIS. Il problema si manifesta con l'assenza di pool di applicazioni per la versione .Net corrispondente e manca anche la versione CLR .NET nella configurazione del pool di app. Per risolvere un problema di questo tipo Windows Server 2008 R2, eseguire `%systemroot%\Microsoft.NET\Framework64\4.0.30319\aspnet_regiis.exe -iru` . In Windows Server 2012 e Windows Server 2012 R2, eseguire seguito dalla rimozione del modulo "ServiceModel" dal sito Web predefinito in Gestione IIS.> Gli strumenti di gestione sono facoltativi, ma `dism /online /enable-Feature /all /FeatureName:WCF-HTTP-Activation45` consigliati.
   
 Per installare questi requisiti tramite PowerShell, eseguire le operazioni seguenti:
   
@@ -299,7 +299,7 @@ Sono supportate le SQL Server seguenti:
 - CQD 2015: SQL Server 2012, SQL Server 2014, SQL Server 2016
 - CQD 2019: SQL Server 2017, SQL Server 2019 
     
-L'edizione di business intelligence Enterprise è consigliata per motivi di prestazioni. Queste edizioni consentono l'uso di più file di partizione che possono essere elaborati in parallelo, il che è vantaggioso per l'elaborazione di dati che si estendono su più mesi o più. 
+Business Intelligence o Enterprise è consigliata per motivi di prestazioni. Queste edizioni consentono l'uso di più file di partizione che possono essere elaborati in parallelo, il che è vantaggioso per l'elaborazione di dati che si estendono su più mesi o più. 
   
 Anche se non è consigliato, è supportata anche l'edizione Standard. L'elaborazione sarà vincolata a una singola partizione (che deve essere configurata durante l'installazione). 
   

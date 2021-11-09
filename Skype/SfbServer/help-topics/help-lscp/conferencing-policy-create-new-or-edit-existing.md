@@ -2,7 +2,7 @@
 title: Criteri conferenza Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: ebd2f120-b57a-4c94-9509-20e098f4b0f4
 description: Un criterio di conferenza definisce le funzionalità e le funzionalità che gli utenti hanno a disposizione durante una conferenza (nota anche come riunione).
-ms.openlocfilehash: be0e6ee522d3bff98ab87cc8bbab7057499b0ede
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 58cfce747ef476c626efa04e74bf5140bf6f33fc
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60775206"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60844639"
 ---
 # <a name="conferencing-policy-create-new-or-edit-existing"></a>Criteri conferenza: crearne di nuovi o modificare quelli esistenti
 
@@ -63,7 +63,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Consentire ai partecipanti anonimi di effettuare chiamate in uscita** Selezionare questa casella di controllo se si consente agli utenti di accedere alle conferenze e si desidera consentire agli utenti non autenticati (anonimi) di partecipare a una conferenza tramite chiamate in uscita. Con le chiamate in uscita, il server per conferenze chiama l'utente, il quale accede alla conferenza rispondendo al telefono.
 
-- **Consenti ai partecipanti non abilitati VoIP aziendale chiamate in uscita** Se è stato abilitato l'audio in **Audio/video,** selezionare questa casella di controllo per consentire agli utenti non abilitati per VoIP aziendale di partecipare a una conferenza tramite chiamate in uscita. Con le chiamate in uscita, il server per conferenze chiama l'utente, il quale accede alla conferenza rispondendo al telefono.
+- **Consenti ai partecipanti non abilitati per VoIP aziendale chiamate in uscita** Se è stato abilitato l'audio in **Audio/video,** selezionare questa casella di controllo per consentire agli utenti non abilitati per VoIP aziendale di partecipare a una conferenza tramite chiamate in uscita. Con le chiamate in uscita, il server per conferenze chiama l'utente, il quale accede alla conferenza rispondendo al telefono.
 
 - **Consentire più flussi video** Se è stato abilitato il video in **Audio/video,** selezionare questa casella di controllo per consentire agli utenti di organizzare conferenze con video visualizzazione Raccolta. Quando questa casella di controllo è selezionata, questa impostazione consente agli utenti di organizzare conferenze che inviano più flussi video. Quando questa casella di controllo non è selezionata, gli utenti possono organizzare solo conferenze che inviano un singolo flusso video.
 

@@ -2,7 +2,7 @@
 title: Configurazione versione client Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 07fec57c-5cd3-422a-829a-0b62cb0092c4
 ROBOTS: NOINDEX, NOFOLLOW
 description: Le impostazioni di configurazione della versione client vengono utilizzate per attivare o disattivare il controllo della versione client. La configurazione della versione client globale viene installata con Skype for Business Server e viene utilizzata per abilitare o disabilitare il controllo della versione client per l'intera distribuzione del server. Quando la configurazione globale è abilitata, tutti i criteri delle versioni client in vigore avranno effetto quando gli utenti tenteranno di accedere. È possibile disabilitare la configurazione della versione client globale se non si desidera che si verifichi alcun controllo della versione client.
-ms.openlocfilehash: 8f55d270a3c5bb2d884f2191d821de70e3fea273
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: c66306de18434cbec72e57af0e062841eb2a663c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773166"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60859553"
 ---
 # <a name="client-version-configuration-create-new-or-edit-existing"></a>Configurazione delle versioni client: crearne una nuova o modificarne una esistente
 

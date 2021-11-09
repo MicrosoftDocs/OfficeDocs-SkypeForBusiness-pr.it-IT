@@ -2,7 +2,7 @@
 title: Aggiungere computer VIS
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: acf278d6-36bc-4cfe-839e-54149e72dc1d
 description: I passaggi necessari per definire un nuovo vis o gateway video in Generatore di topologie sono descritti online in Create a VIS pool in Skype for Business Server 2015.
-ms.openlocfilehash: b0fc54b7e8a393fc7dbb0d1e66622e4c7ea8ef95
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4c8385849178439c9dab1b33b403c1a2bbfeba5f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60737872"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60844299"
 ---
 # <a name="add-vis-machine"></a>Aggiungere computer VIS
  

@@ -2,7 +2,7 @@
 title: Strumento di pianificazione della panoramica delle funzionalità
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 4/6/2016
 audience: ITPro
@@ -14,12 +14,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 44783b37-c87f-41f2-9de1-39176f1856ab
 description: Descripbes the Skype for Business Server 2015 planning tool.
-ms.openlocfilehash: 87250dba5df1b7f338f4cb9159a7583f1fd5f4fa
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7351ef19480f4153ee98db58ab2ba70b34e3df06
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756937"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850939"
 ---
 # <a name="feature-overview-planning-tool"></a>Strumento di pianificazione della panoramica delle funzionalità
  
@@ -87,7 +87,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Mobilità**
     
-    Quando distribuisci il servizio per dispositivi mobili di Skype for Business Server 2015, gli utenti possono usare dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
+    Quando distribuisci il servizio per dispositivi mobili di Skype for Business Server 2015, gli utenti possono usare i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
     
 - **Cassetta postale Exchange W15**
     
@@ -103,7 +103,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Messaggistica unificata di Exchange**
     
-    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la messaggistica unificata Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica di chiamata e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
+    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica delle chiamate e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
     
 ### <a name="additional-deployment-options"></a>Opzioni di distribuzione aggiuntive
 

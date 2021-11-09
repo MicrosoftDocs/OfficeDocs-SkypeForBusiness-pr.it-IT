@@ -2,7 +2,7 @@
 title: Gestire la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 1/31/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 4346e70b-ac48-4ab9-853e-3cdd6dcfe678
 description: 'Riepilogo: informazioni su come gestire la disponibilità elevata e il ripristino di emergenza del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 3b45f38f1a530e91b75693196c5e64e206b10121
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: bf24bbb7f8672f0bc3a75b83f4f57320dc975092
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60774766"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60860013"
 ---
 # <a name="manage-high-availability-and-disaster-recovery-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Gestire la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015
  
@@ -27,7 +27,7 @@ ms.locfileid: "60774766"
 In questo argomento viene descritto come eseguire il failover e il fail back del server Chat persistente. Prima di leggere questo argomento, leggere Plan [for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/high-availability-and-disaster-recovery.md) e [Configure high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015.](../../deploy/deploy-persistent-chat-server/configure-hadr-for-persistent-chat.md)
 
 > [!NOTE]
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
   
 ## <a name="fail-over-persistent-chat-server"></a>Failover del server Chat persistente
 
@@ -105,7 +105,7 @@ Questi passaggi sono pensati per consentite il ripristino della configurazione e
 1. Cancellare tutti i server dall'elenco Server Chat persistente Active Server utilizzando il cmdlet **Set-CsPersistentChatActiveServer** da Skype for Business Server Management Shell. In questo modo tutti i server Chat persistente non si connettono al database mgc e al database mgccomp durante il failback.
     
     > [!IMPORTANT]
-    > L SQL Server agent sul server back-end secondario del server Chat persistente deve essere in esecuzione con un account con privilegi. In particolare, l'account deve disporre di: 
+    > L'SQL Server sul server back-end secondario del server Chat persistente deve essere in esecuzione con un account con privilegi. In particolare, l'account deve disporre di: 
   
    - Accesso in lettura alla condivisione di rete in cui vengono posizionati i backup.
     

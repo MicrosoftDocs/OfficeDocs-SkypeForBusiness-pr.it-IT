@@ -2,7 +2,7 @@
 title: Pianificare la VoIP aziendale resilienza in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,18 +16,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: b3671dcb-6a8b-4a06-84da-0c8837b35099
 description: Informazioni su come supportare la resilienza vocale in Skype for Business Server VoIP aziendale, sia nei siti centrali che nei siti di succursale. Le opzioni del sito di succursale includono la distribuzione di Survivable Branch Appliance o Survivable Branch Server.
-ms.openlocfilehash: ec0d542318023fdc638926e78ff6ffdeceefba5f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: a2dc18817f28595cdfdf65be35df85d0ad93239b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778006"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60851880"
 ---
 # <a name="plan-for-enterprise-voice-resiliency-in-skype-for-business-server"></a>Pianificare la VoIP aziendale resilienza in Skype for Business Server
 
 Informazioni su come supportare la resilienza vocale in Skype for Business Server VoIP aziendale, sia nei siti centrali che nei siti di succursale. Le opzioni del sito di succursale includono la distribuzione di Survivable Branch Appliance o Survivable Branch Server.
 
-La resilienza vocale si riferisce alla capacità degli utenti di continuare a effettuare e ricevere chiamate se un sito centrale che ospita Skype for Business Server diventa non disponibile, sia a causa di un errore della rete WAN (Wide Area Network) che di un'altra causa. In caso di errore di un sito centrale, il servizio VoIP aziendale deve proseguire senza interruzione mediante failover ininterrotto su un sito di backup. In caso di errore della WAN, le chiamate dei siti di succursale devono essere reindirizzate a un PSTN locale. In questa sezione viene illustrata la pianificazione della resilienza vocale in caso di errore di un sito centrale o della WAN.
+La resilienza vocale si riferisce alla capacità degli utenti di continuare a effettuare e ricevere chiamate se un sito centrale che ospita Skype for Business Server diventa non disponibile, indipendentemente dal fatto che si sia verificato un errore della rete WAN o un'altra causa. In caso di errore di un sito centrale, il servizio VoIP aziendale deve proseguire senza interruzione mediante failover ininterrotto su un sito di backup. In caso di errore della WAN, le chiamate dei siti di succursale devono essere reindirizzate a un PSTN locale. In questa sezione viene illustrata la pianificazione della resilienza vocale in caso di errore di un sito centrale o della WAN.
 
 ## <a name="central-site-resiliency"></a>Resilienza del sito centrale
 
@@ -43,7 +43,7 @@ Questo argomento descrive la soluzione consigliata per la protezione della resil
 
 ### <a name="architecture-and-topology"></a>Architettura e topologia
 
-La pianificazione della resilienza vocale in un sito centrale richiede una conoscenza di base del ruolo centrale svolto dalla funzione di Skype for Business Server registrar per abilitare il failover vocale. Il Skype for Business Server registrar è un servizio che consente la registrazione e l'autenticazione dei client e fornisce servizi di routing. Viene eseguito in tutti edizione Standard server, Front End Server, Director o Survivable Branch Appliance. Un pool di registrazione è costituito da servizi di registrazione in esecuzione nel pool Front End e residenti nello stesso sito. Un Skype for Business client individua il pool Front End tramite il meccanismo di individuazione seguente:
+La pianificazione della resilienza vocale in un sito centrale richiede una conoscenza di base del ruolo centrale svolto dalla funzione di registrazione Skype for Business Server per abilitare il failover vocale. La Skype for Business Server registrar è un servizio che consente la registrazione e l'autenticazione dei client e fornisce servizi di routing. Viene eseguito in tutti edizione Standard server, Front End Server, Director o Survivable Branch Appliance. Un pool di registrazione è costituito da servizi di registrazione in esecuzione nel pool Front End e residenti nello stesso sito. Un Skype for Business client individua il pool Front End tramite il meccanismo di individuazione seguente:
 
 1. Record SRV DNS
 
@@ -82,7 +82,7 @@ I requisiti e le raccomandazioni seguenti per l'implementazione della resilienza
 
 - Per il pool di registrazione principale deve esistere un singolo pool di registrazione di backup posizionato in un diverso sito centrale.
 
-- Il pool di registrazione principale deve essere configurato per il failover sul pool di registrazione di backup. Per impostazione predefinita, il pool principale è impostato per eseguire il failover sul pool di back dopo un intervallo di 300 secondi. È possibile modificare questo intervallo utilizzando il Generatore Skype for Business Server topologia.
+- Il pool di registrazione principale deve essere configurato per il failover sul pool di registrazione di backup. Per impostazione predefinita, il pool principale è impostato per eseguire il failover sul pool di back dopo un intervallo di 300 secondi. È possibile modificare questo intervallo utilizzando il Skype for Business Server Generatore di topologie.
 
 - Configurare una route di failover. Durante la configurazione della route specificare un gateway posizionato in un sito diverso da quello del gateway impostato nella route principale.
 
@@ -129,7 +129,7 @@ A seconda della modalità di configurazione, le funzionalità vocali seguenti po
 
   - Modificare i record DNS SRV in modo che i server di messaggistica unificata di Exchange nel sito centrale puntino ai server di messaggistica unificata di Exchange di backup in un altro sito.
 
-  - Configurare il dial plan di messaggistica unificata di Exchange di ogni utente in modo che includa server messaggistica unificata Exchange sia nel sito centrale che nel sito di backup, ma designare il server di Exchange di messaggistica unificata come disabilitato. Se il sito principale non è più disponibile, l Exchange amministratore deve contrassegnare i Exchange di messaggistica unificata nel sito di backup come abilitati.
+  - Configurare il dial plan di Exchange di messaggistica unificata di ogni utente in modo che includa server di messaggistica unificata Exchange sia nel sito centrale che nel sito di backup, ma designare il server di Exchange di messaggistica unificata come disabilitato. Se il sito principale non è più disponibile, l Exchange amministratore deve contrassegnare i Exchange di messaggistica unificata nel sito di backup come abilitati.
 
     Se nessuna delle soluzioni precedenti è possibile, Exchange la messaggistica unificata non sarà disponibile nel caso in cui il sito centrale non sia più disponibile.
 
@@ -267,7 +267,7 @@ Preparare gli utenti per la resilienza del sito di succursale impostando il pool
 
 #### <a name="registrar-assignments-for-branch-users"></a>Assegnazioni di registrazione per utenti di succursale
 
-Indipendentemente dalla soluzione di resilienza del sito di succursale scelta, sarà necessario assegnare una funzione di registrazione principale a ogni utente. Gli utenti dei siti di succursale devono sempre registrarsi con la funzione di registrazione nel sito di succursale, indipendentemente dal fatto che si trovi nel Survivable Branch Appliance, nel Survivable Branch Server o nel server Skype for Business Server Standard o edizione Enterprise autonomo. È necessario un record di risorse del servizio DNS (Domain Name System) (SRV) in modo che un client possa individuare il relativo pool di registrazione. Se il Survivable Branch Appliance non è più disponibile, i client dei siti di succursale scopriranno automaticamente la funzione di registrazione di backup.
+Indipendentemente dalla soluzione di resilienza del sito di succursale scelta, sarà necessario assegnare una funzione di registrazione principale a ogni utente. Gli utenti del sito di succursale devono sempre registrarsi con la funzione di registrazione nel sito di succursale, indipendentemente dal fatto che si trovi nel Survivable Branch Appliance, nel Survivable Branch Server o nel server Skype for Business Server Standard o edizione Enterprise autonomo. È necessario un record di risorse del servizio DNS (Domain Name System) (SRV) in modo che un client possa individuare il relativo pool di registrazione. Se il Survivable Branch Appliance non è più disponibile, i client dei siti di succursale scopriranno automaticamente la funzione di registrazione di backup.
 
 Se un sito di succursale non dispone di un server DNS, esistono due modi alternativi per configurare l'individuazione del Survivable Branch Appliance o del Survivable Branch Server:
 
@@ -330,11 +330,11 @@ Per configurare il funzionamento continuato (survivability) della segreteria tel
 
 - L Skype for Business Server amministratore deve prendere il numero di telefono AA e utilizzare tale numero di telefono come numero dell'operatore automatico di messaggistica unificata di **Exchange** nelle impostazioni di reindirizzamento della segreteria telefonica per il Survivable Branch Appliance o il server di succursale.
 
-- L Skype for Business Server amministratore deve ottenere il numero di telefono di accesso del  sottoscrittore di messaggistica unificata di Exchange e utilizzarlo come numero di accesso del sottoscrittore nelle impostazioni di reindirizzamento della segreteria telefonica per il Survivable Branch Appliance o il Survivable Branch Server.
+- L Skype for Business Server amministratore deve ottenere il numero di telefono di accesso del  sottoscrittore di messaggistica unificata di Exchange e utilizzare tale numero come numero di accesso del sottoscrittore nelle impostazioni di reindirizzamento della segreteria telefonica per il Survivable Branch Appliance o il Survivable Branch Server.
 
 - L Skype for Business Server amministratore deve configurare la messaggistica unificata Exchange in modo che sia associato un solo dial plan a tutti gli utenti di succursale che necessitano dell'accesso alla segreteria telefonica durante un'interruzione della rete WAN.
 
-- Quando il collegamento WAN non è disponibile, le chiamate agli utenti del sito di succursale possono essere instradati alla cassetta postale vocale di messaggistica unificata di Exchange dell'utente, ma solo se il criterio vocale applicato alla chiamata specifica un numero di telefono della segreteria telefonica univoco e non include un numero di interno.
+- Quando il collegamento WAN non è disponibile, le chiamate agli utenti del sito di succursale possono essere instradati alla cassetta vocale di messaggistica unificata di Exchange dell'utente, ma solo se il criterio vocale applicato alla chiamata specifica un numero di telefono della segreteria telefonica univoco e non include un numero di interno.
 
 #### <a name="hardware-and-software-requirements-for-branch-site-resiliency"></a>Requisiti hardware e software per la resilienza dei siti di succursale
 
@@ -344,7 +344,7 @@ I requisiti hardware e software variano a seconda della soluzione di resilienza 
 
 L'hardware e il software necessari sono incorporati nel Survivable Branch Appliance. È tuttavia consigliabile che ogni sito di succursale distribuisca un server DHCP per ottenere gli indirizzi IP dei client. in caso contrario, alla scadenza del lease DHCP, i client non avranno connettività IP.
 
-Se i server DNS aziendali si trovano solo nei siti centrali, gli utenti dei siti di succursale non saranno in grado di connettersi a essi durante un'interruzione della Skype for Business Server rete WAN e pertanto l'individuazione che utilizza il record di risorse DNS SRV (service) avrà esito negativo. Per garantire il reindirizzamento dei prompt durante un'interruzione della rete WAN, i record DNS devono essere memorizzati nella cache nel sito di succursale. Se il router di succursale lo supporta, attivare la memorizzazione nella cache DNS. In caso contrario, è possibile distribuire un server DNS nella succursale. Può trattarsi di un server autonomo o di una versione del Survivable Branch Appliance che supporta le funzionalità DNS. Per informazioni dettagliate, contattare il provider del Survivable Branch Appliance.
+Se i server DNS dell'organizzazione si trovano solo nei siti centrali, gli utenti dei siti di succursale non saranno in grado di connettersi a essi durante un'interruzione della Skype for Business Server rete WAN e pertanto l'individuazione che utilizza il record di risorse DNS SRV (service) avrà esito negativo. Per garantire il reindirizzamento dei prompt durante un'interruzione della rete WAN, i record DNS devono essere memorizzati nella cache nel sito di succursale. Se il router di succursale lo supporta, attivare la memorizzazione nella cache DNS. In caso contrario, è possibile distribuire un server DNS nella succursale. Può trattarsi di un server autonomo o di una versione del Survivable Branch Appliance che supporta le funzionalità DNS. Per informazioni dettagliate, contattare il provider del Survivable Branch Appliance.
 
 > [!NOTE]
 > Presso un sito di succursale non è necessario un controller di dominio. Il Survivable Branch Appliance autentica i client utilizzando uno speciale certificato che invia il client in risposta alla richiesta di certificato del client quando esegue l'accesso.

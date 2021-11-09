@@ -1,6 +1,6 @@
 ---
 title: Criteri di riunione e scadenza della riunione in Microsoft Teams
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.topic: article
@@ -17,16 +17,16 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Informazioni su come usare le impostazioni dei criteri riunione per controllare la scadenza della riunione Microsoft Teams.
-ms.openlocfilehash: 0fda2344f58a8781749234fb260e847ac0d44aac
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 484a873e319a6af46640f8eb3b17a5edc7c175e2
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60751515"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60843989"
 ---
 # <a name="meeting-policies-and-meeting-expiration-in-microsoft-teams"></a>Criteri di riunione e scadenza della riunione in Microsoft Teams
 
-[I criteri](meeting-policies-overview.md) riunione in Microsoft Teams consentono di controllare se gli utenti dell'organizzazione possono avviare e pianificare le riunioni e le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. È possibile gestire i criteri riunione nell'interfaccia di amministrazione di Microsoft Teams o usando i cmdlet di PowerShell [Get](/powershell/module/skype/get-csteamsmeetingpolicy), [New](/powershell/module/skype/new-csteamsmeetingpolicy), [Set](/powershell/module/skype/set-csteamsmeetingpolicy), [Remove](/powershell/module/skype/remove-csteamsmeetingpolicy), [Grant](/powershell/module/skype/grant-csteamsmeetingpolicy) -CsTeamsMeetingPolicy.
+[I criteri](meeting-policies-overview.md) riunione Microsoft Teams vengono usati per controllare se gli utenti dell'organizzazione possono avviare e pianificare riunioni e le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. È possibile gestire i criteri riunione nell'interfaccia di amministrazione di Microsoft Teams o usando i cmdlet di PowerShell [Get](/powershell/module/skype/get-csteamsmeetingpolicy), [New](/powershell/module/skype/new-csteamsmeetingpolicy), [Set](/powershell/module/skype/set-csteamsmeetingpolicy), [Remove](/powershell/module/skype/remove-csteamsmeetingpolicy), [Grant](/powershell/module/skype/grant-csteamsmeetingpolicy) -CsTeamsMeetingPolicy.
 
 Le impostazioni dei criteri di riunione che controllano se gli utenti possono avviare e pianificare riunioni e controllano anche la scadenza delle riunioni pianificate dagli utenti. Quando un collegamento di partecipazione alla riunione e l'ID conferenza per una riunione scadono, nessuno può partecipare alla riunione. Le impostazioni dei criteri di riunione seguenti determinano se gli utenti possono avviare e pianificare riunioni in Teams. Questo articolo illustra le impostazioni della riunione.
 

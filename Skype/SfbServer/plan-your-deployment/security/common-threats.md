@@ -2,7 +2,7 @@
 title: Minacce alla sicurezza comuni nell'informatica moderna
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/22/2016
 audience: ITPro
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 56d22197-e8e2-46b8-b3a3-507bd663700e
 description: Poiché Skype for Business Server è un sistema di comunicazione di livello aziendale, è necessario essere consapevoli degli attacchi di sicurezza comuni che potrebbero influire sull'infrastruttura e sulle comunicazioni.
-ms.openlocfilehash: dcc889ea43c06c2f8166d588b8d7e5eb7075b52c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 8f546ff95bec714f9ddd922b4b786d4a6bd5549c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60741922"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60851810"
 ---
 # <a name="common-security-threats-in-modern-day-computing"></a>Minacce alla sicurezza comuni nell'informatica moderna
  
@@ -91,7 +91,7 @@ Un virus è un'unità di codice il cui scopo è quello di riprodurre altre unit�
 
 Skype for Business Server può divulgare informazioni su una rete pubblica che potrebbero essere collegate a un individuo. È possibile suddividere i tipi di informazioni in due categorie specifiche:
   
-- **Dati sulla presenza avanzata** I dati sulla presenza avanzata sono informazioni che un utente può scegliere di condividere o non condividere tramite un collegamento a un partner federato o con i contatti all'interno di un'organizzazione. Questi dati non vengono condivisi con gli utenti di una rete di messaggistica istantanea pubblica. Con i criteri client e altre configurazioni dei client, parte del controllo può venire affidato all'amministratore di sistema. In Skype for Business Server, la modalità privacy della presenza avanzata può essere configurata per un singolo utente per impedire agli utenti di Skype for Business non presenti nell'elenco Contatti dell'utente di visualizzare le informazioni sulla presenza dell'utente. La modalità privacy della presenza avanzata non impedisce agli utenti di Microsoft Office Communicator 2007 e Microsoft Office Communicator 2007 R2 di visualizzare le informazioni sulla presenza di un utente. Per informazioni dettagliate sulla distribuzione del client e della [presenza,](../../plan-your-deployment/instant-messaging-and-presence.md)vedere Deploy clients for [Skype for Business Server](../../deploy/deploy-clients/deploy-clients.md) e Plan for instant messaging and presence in Skype for Business Server .
+- **Dati sulla presenza avanzata** I dati sulla presenza avanzata sono informazioni che un utente può scegliere di condividere o non condividere tramite un collegamento a un partner federato o con i contatti all'interno di un'organizzazione. Questi dati non vengono condivisi con gli utenti di una rete di messaggistica istantanea pubblica. Con i criteri client e altre configurazioni dei client, parte del controllo può venire affidato all'amministratore di sistema. In Skype for Business Server, è possibile configurare la modalità privacy della presenza avanzata per un singolo utente per impedire agli utenti di Skype for Business non presenti nell'elenco Contatti dell'utente di visualizzare le informazioni sulla presenza dell'utente. La modalità privacy della presenza avanzata non impedisce agli utenti di Microsoft Office Communicator 2007 e Microsoft Office Communicator 2007 R2 di visualizzare le informazioni sulla presenza di un utente. Per informazioni dettagliate sulla distribuzione del client e della [presenza,](../../plan-your-deployment/instant-messaging-and-presence.md)vedere Deploy clients for [Skype for Business Server](../../deploy/deploy-clients/deploy-clients.md) e Plan for instant messaging and presence in Skype for Business Server .
     
 - **Dati obbligatori** I dati obbligatori sono necessari per il corretto funzionamento del server o del client e NON sono sotto il controllo dell'amministrazione del client o del sistema. Si tratta di informazioni necessarie a livello di server o di rete ai fini del routing, del mantenimento dello stato e della segnalazione.
     

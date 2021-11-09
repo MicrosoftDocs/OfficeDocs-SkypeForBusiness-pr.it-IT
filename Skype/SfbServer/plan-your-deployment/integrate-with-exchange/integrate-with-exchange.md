@@ -2,7 +2,7 @@
 title: Pianificare l'integrazione di Skype for Business ed Exchange
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ea22beb9-c02e-47cb-836d-97a556969052
 description: 'Riepilogo: esaminare questo argomento per informazioni su come integrare Skype for Business Server con Exchange Server 2016 o Exchange Server 2013.'
-ms.openlocfilehash: 323add0bdc06617f80fba852b8179b3f6b7e315d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 8613f080aa878c5111a4c69c38b77f9c16606b26
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773466"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60844129"
 ---
 # <a name="plan-to-integrate-skype-for-business-and-exchange"></a>Pianificare l'integrazione di Skype for Business ed Exchange
  
@@ -42,7 +42,7 @@ Per informazioni dettagliate sui certificati di autenticazione da server a serve
   
 Dopo aver assegnato i certificati, è necessario configurare il servizio di individuazione automatica in Exchange Server. In Exchange Server, il servizio di individuazione automatica configura i profili utente e fornisce l'accesso Exchange servizi quando gli utenti accedono al sistema. Gli utenti presentano il servizio di individuazione automatica con l'indirizzo di posta elettronica e la password; a sua volta, i servizi forniscono all'utente informazioni quali:
   
-- Informazioni di connessione per la connettività interna ed esterna a Exchange Server.
+- Informazioni di connessione sia per la connettività interna che per la connettività Exchange Server.
     
 - Posizione del server Cassette postali dell'utente.
     
@@ -66,7 +66,7 @@ Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri 
 
 Per informazioni dettagliate sul servizio di individuazione automatica, vedere [Autodiscover Service](/Exchange/architecture/client-access/autodiscover).
   
-Dopo aver configurato il servizio di individuazione automatica, è necessario modificare le Skype for Business Server di configurazione OAuth. in questo modo si Skype for Business Server sapere dove trovare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione di OAuth in Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell. Quando si esegue questo comando, assicurarsi di specificare l'URI per il servizio di individuazione automatica in esecuzione sul Exchange Server e di utilizzare **autodiscover.svc** per puntare al percorso del servizio anziché **aautodiscover.xml** (che punta al file XML utilizzato dal servizio):
+Dopo aver configurato il servizio di individuazione automatica, è necessario modificare le Skype for Business Server di configurazione OAuth. in questo modo si Skype for Business Server sapere dove trovare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione di OAuth in Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell. Quando si esegue questo comando, assicurarsi di specificare l'URI per il servizio di individuazione automatica in esecuzione sul Exchange Server e di utilizzare **autodiscover.svc** per puntare al percorso del servizio **anziché aautodiscover.xml** (che punta al file XML utilizzato dal servizio):
   
 ```PowerShell
 Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc" 
@@ -81,7 +81,7 @@ Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://auto
 > [!NOTE]
 > Per chi non avesse familiarità con la tecnologia, OAuth è un protocollo di autorizzazione standard utilizzato da numerosi siti Web di rilievo. Con OAuth, le credenziali e le password degli utenti non vengono passate da un computer all'altro. L'autenticazione e l'autorizzazione sono invece basate sullo scambio di token di sicurezza. Tali token consentono l'accesso a uno specifico set di risorse per un tempo specifico. 
   
-Oltre a configurare il servizio di individuazione automatica, è inoltre necessario creare un record DNS per il servizio che punta al Exchange Server. Ad esempio, se il servizio di individuazione automatica si trova in autodiscover.litwareinc.com sarà necessario creare un record DNS per autodiscover.litwareinc.com che si risolve nel nome di dominio completo del Exchange Server (ad esempio, atl-exchange-001.litwareinc.com).
+Oltre a configurare il servizio di individuazione automatica, è inoltre necessario creare un record DNS per il servizio che punta alla propria Exchange Server. Ad esempio, se il servizio di individuazione automatica si trova in autodiscover.litwareinc.com sarà necessario creare un record DNS per autodiscover.litwareinc.com che si risolve nel nome di dominio completo del Exchange Server (ad esempio, atl-exchange-001.litwareinc.com).
   
 Se si sta integrando Skype for Business Server con Exchange Online, i passaggi successivi sono in [Configurare](../../deploy/integrate-with-exchange-server/outlook-web-app.md)l'integrazione tra Skype for Business Server locale e Outlook Web App , altrimenti vedere Integrare Skype for Business Server [con Exchange Server](../../deploy/integrate-with-exchange-server/integrate-with-exchange-server.md).
   
@@ -91,9 +91,9 @@ Se si sta integrando Skype for Business Server con Exchange Online, i passaggi s
 >[!Important]
 > Skype for Business Online verrà ritirato il 31 luglio 2021 dopo che le integrazioni Exchange elencate di seguito che includono il servizio non saranno più supportate.
 
-Nella tabella seguente vengono fornite informazioni dettagliate sulle funzionalità supportate in varie combinazioni di Exchange e Skype for Business.
+Nella tabella seguente vengono fornite informazioni dettagliate sulle funzionalità supportate in varie combinazioni di funzionalità online o locali per Exchange e Skype for Business.
   
-|&nbsp;|Exchange 2016/2013/2010 (locale) + Skype for Business Server (locale)|Exchange Online + Skype for Business Server (locale)**|**Exchange 2010 (locale) + Skype for Business Online|Exchange 2016/2013(in locale) + Skype for Business Online**|**Exchange Online + Skype for Business Online|
+|&nbsp;|Exchange 2016/2013/2010 (locale) + Skype for Business Server (locale)|Exchange Online + Skype for Business Server (locale)**|**Exchange 2010 (locale) + Skype for Business Online|Exchange 2016/2013(locale) + Skype for Business Online**|**Exchange Online + Skype for Business Online|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Presenza in Outlook   |Y   |Y   |Y   |Y   |Y   |
 |Rispondere tramite messaggistica istantanea, chiamata PSTN, Skype chiamata o videochiamata da un Outlook posta elettronica   |Y   |Y   |Y   |Y   |Y   |

@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ552443(v=OCS.15)
 ms:contentKeyID: 48679555
 mtps_version: v=OCS.15
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Dopo aver distribuito uno o più server perimetrali, è necessario abilitare i tipi di accesso al dominio o al provider esterno, l'accesso degli utenti remoti e l'accesso utente anonimo alle conferenze tramite i server perimetrali che saranno supportati per l'organizzazione.
-ms.openlocfilehash: 18d4f6e0225c14d3eb5198cb1dc9214c10875267
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ff152ea25bbea750815e0619ce521ede8d8d7203
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60766514"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60860093"
 ---
 # <a name="manage-access-edge-configuration-for-your-organization"></a>Gestire la configurazione Access Edge per l'organizzazione
 
@@ -45,7 +45,7 @@ Queste opzioni includono i tipi seguenti di accesso, che possono essere configur
 
 **Visualizzazione delle informazioni di configurazione di Access Edge tramite Windows PowerShell cmdlet**
 
-  - Le informazioni di configurazione di Access Edge possono essere visualizzate utilizzando Windows PowerShell e il cmdlet **Get-CsAccessEdgeConfiguration.** Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+  - Le informazioni di configurazione di Access Edge possono essere visualizzate Windows PowerShell e il cmdlet **Get-CsAccessEdgeConfiguration.** Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
     
     Per visualizzare informazioni su tutte le impostazioni di configurazione di Access Edge, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
     

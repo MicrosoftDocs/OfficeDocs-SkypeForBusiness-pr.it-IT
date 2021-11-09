@@ -2,7 +2,7 @@
 title: Specificare la conservazione dei dati di registrazione dei dati in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c0fd6056-87bc-4136-902a-f1b37cd3a1ca
 description: 'Riepilogo: informazioni su come gestire i dati di registrazione dettagli chiamata (CDR) per Skype for Business Server.'
-ms.openlocfilehash: ac021da1c2235256e4b9bffc2f8664a1572d27d1
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b232e853e28f2dbdee33c666e65ca89932796941
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60742132"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60852010"
 ---
 # <a name="specify-retention-of-cdr-data-in-skype-for-business-server"></a>Specificare la conservazione dei dati di registrazione dei dati in Skype for Business Server
  

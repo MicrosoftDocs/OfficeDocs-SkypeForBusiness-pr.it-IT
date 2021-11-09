@@ -2,7 +2,7 @@
 title: Tabella ConferenceSessionDetails in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 7/15/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 9eae6a54-69fd-4966-aa17-7ecee1297ad8
 description: Ogni record rappresenta una sessione di conferenza, che può indicare la sessione con Focus o la sessione con un server per conferenze specifico.
-ms.openlocfilehash: 087dd056dae0041ab63934b25038672a74410343
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: fc69150cf95ca0f00a4c1731aeda44f1e674a6cd
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759448"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60843669"
 ---
 # <a name="conferencesessiondetails-table-in-skype-for-business-server-2015"></a>Tabella ConferenceSessionDetails in Skype for Business Server 2015
  
@@ -28,9 +28,9 @@ Ogni record rappresenta una sessione di conferenza, che può indicare la session
 |:-----|:-----|:-----|:-----|
 |**SessionIdTime** <br/> |Datetime  <br/> |Primaria, esterna  <br/> |Ora della richiesta di sessione; utilizzato insieme a **SessionIdSeq** per identificare in modo univoco una sessione di conferenza. Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) <br/> |
 |**SessionIdSeq** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero ID per identificare la sessione. Utilizzato insieme a **SessionIdTime** per identificare in modo univoco una sessione di conferenza. Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) * <br/> |
-|**ConferenceUriId** <br/> |int  <br/> |Foreign  <br/> |URI di conferenza Focus associato alla sessione. Per ulteriori informazioni, vedere la tabella [ConferenceUris Skype for Business Server 2015.](conferenceuris.md) Si tratta di un URI di conferenza basata su Focus. <br/> |
+|**ConferenceUriId** <br/> |int  <br/> |Foreign  <br/> |URI di conferenza Focus associato alla sessione. Per ulteriori informazioni, vedere la [tabella ConferenceUris Skype for Business Server 2015.](conferenceuris.md) Si tratta di un URI di conferenza basata su Focus. <br/> |
 |**ConfInstance** <br/> |uniqueIdentifier  <br/> ||Identificatore che consente di distinguere le istanze delle conferenze ricorrenti. Ogni istanza ha lo stesso ConferenceURI ma un valore ConfInstance diverso.  <br/> Questo campo è stato introdotto in Microsoft Lync Server 2013.  <br/> |
-|**McuConferenceUriId** <br/> |int  <br/> |Foreign  <br/> |URI di conferenza del server per conferenze associato alla sessione. Per ulteriori informazioni, vedere la tabella [ConferenceUris Skype for Business Server 2015.](conferenceuris.md) Si tratta di un URI di conferenza basata su server di conferenza. Per le sessioni di conferenza Focus, questa colonna sarà null. <br/> |
+|**McuConferenceUriId** <br/> |int  <br/> |Foreign  <br/> |URI di conferenza del server per conferenze associato alla sessione. Per ulteriori informazioni, vedere la [tabella ConferenceUris Skype for Business Server 2015.](conferenceuris.md) Si tratta di un URI di conferenza basata su server di conferenza. Per le sessioni di conferenza Focus, questa colonna sarà null. <br/> |
 |**UserId** <br/> |int  <br/> |Foreign  <br/> |ID di un utente nella sessione di conferenza. Per ulteriori [informazioni, vedere](users.md) la tabella Utenti. <br/> |
 |**UserEndpointId** <br/> |uniqueidentifier  <br/> ||GUID per l'identificazione dell'istanza dell'endpoint. Ad esempio, se un utente accede a due computer con lo stesso account, ogni computer disporrà di un ID endpoint diverso.  <br/> |
 |**OnBehalfOfId** <br/> |int  <br/> |Foreign  <br/> |Indica l'ID dell'utente per conto del quale il chiamante esegue la chiamata. Per ulteriori [informazioni, vedere](users.md) la tabella Utenti. <br/> |
@@ -49,7 +49,7 @@ Ogni record rappresenta una sessione di conferenza, che può indicare la session
 |**MediationServerId** <br/> |int  <br/> |Foreign  <br/> |Mediation Server utilizzato dalla chiamata. Per ulteriori informazioni, vedere la tabella [MediationServers.](mediationservers.md) <br/> |
 |**GatewayId** <br/> |int  <br/> |Foreign  <br/> |Gateway utilizzato dalla chiamata. Per ulteriori informazioni, vedere la tabella [Gateways Skype for Business Server 2015.](gateways.md) <br/> |
 |**EdgeServerId** <br/> |int  <br/> |Foreign  <br/> |Server perimetrale utilizzato dalla chiamata. Per ulteriori informazioni, vedere la tabella [EdgeServers Skype for Business Server 2015.](edgeservers.md) <br/> |
-|**ContentTypeId** <br/> |int  <br/> |Foreign  <br/> |Tipo di contenuto utilizzato nella sessione. Per ulteriori informazioni, vedere [la tabella ContentTypes Skype for Business Server 2015.](contenttypes.md) <br/> |
+|**ContentTypeId** <br/> |int  <br/> |Foreign  <br/> |Tipo di contenuto utilizzato nella sessione. Per ulteriori [informazioni, vedere la tabella ContentTypes Skype for Business Server 2015.](contenttypes.md) <br/> |
 |**InviteTime** <br/> |datetime  <br/> ||Ora della prima richiesta INVITE. Questo campo viene in genere popolato con i dati generati dal messaggio INVITE iniziale nella sessione. Se non sono presenti messaggi INVITE, il campo viene popolato con data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO).  <br/> |
 |**ResponseTime** <br/> |datetime  <br/> ||Ora della prima risposta SIP. Questo campo viene in genere popolato con i dati generati dal messaggio INVITE iniziale nella sessione. Se non sono presenti messaggi INVITE, il campo viene popolato con data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO).  <br/> |
 |**SessionEndTime** <br/> |datetime  <br/> ||Ora di fine della sessione.  <br/> |

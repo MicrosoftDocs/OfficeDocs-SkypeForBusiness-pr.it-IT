@@ -2,7 +2,7 @@
 title: Richiesta di certificato (Returned)
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 4ada9045-0fdf-4470-8574-2fa08bab9392
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Nella pagina Stato richiesta certificato online vengono presentate informazioni importanti risultanti dalla creazione e dall'emissione della richiesta di certificato online. Viene fornita l'identificazione digitale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella di controllo Assegna questo certificato Skype for Business Server'utilizzo del certificato è selezionata. Se si fa clic su Fine, il certificato verrà assegnato automaticamente Skype for Business Server per gli scopi definiti durante i passaggi di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi per cui verrà assegnato il certificato sono i seguenti:"
-ms.openlocfilehash: 7f92c95fa5d1588d7563791dca38da46c550048b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: "Nella pagina Stato richiesta certificato online vengono presentate informazioni importanti risultanti dalla creazione e dall'emissione della richiesta di certificato online. Viene fornita l'identificazione digitale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella di controllo Assegna questo certificato Skype for Business Server'utilizzo dei certificati è selezionata. Se si fa clic su Fine, il certificato verrà assegnato automaticamente Skype for Business Server per gli scopi definiti durante i passaggi di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi per cui verrà assegnato il certificato sono i seguenti:"
+ms.openlocfilehash: b6abbc26fab49e3f4036e5d487417d46f14220fa
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60740052"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60851560"
 ---
 # <a name="certificate-request-returned"></a>Richiesta di certificato (restituito)
  
-Nella pagina **Stato richiesta certificato online** vengono presentate informazioni importanti risultanti dalla creazione e dall'emissione della richiesta di certificato online. Viene fornita l'identificazione digitale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella di controllo **Assegna questo certificato Skype for Business Server'utilizzo dei** certificati è selezionata. Se si fa **clic su Fine**, il certificato verrà assegnato automaticamente Skype for Business Server per gli scopi definiti durante i passaggi di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi per cui verrà assegnato il certificato sono i seguenti:
+Nella pagina **Stato richiesta certificato online** vengono presentate informazioni importanti risultanti dalla creazione e dall'emissione della richiesta di certificato online. Viene fornita l'identificazione digitale del certificato che identifica in modo univoco il certificato. Per impostazione predefinita, la casella di controllo **Assegna questo certificato Skype for Business Server gli utilizzi dei** certificati è selezionata. Se si fa **clic su Fine**, il certificato verrà assegnato automaticamente Skype for Business Server per gli scopi definiti durante i passaggi di creazione della richiesta di certificato. Per impostazione predefinita, gli scopi per cui verrà assegnato il certificato sono i seguenti:
   
 - Server Default for Mutual Transport Layer Security (MTLS) - Connessioni a client e altri server
     

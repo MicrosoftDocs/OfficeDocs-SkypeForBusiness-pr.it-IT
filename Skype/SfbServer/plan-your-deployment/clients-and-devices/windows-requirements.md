@@ -1,7 +1,7 @@
 ---
 title: Windows client e supporto software
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 2/16/2018
@@ -16,13 +16,13 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: a6851e38-ba9a-4f19-9aa7-d8accf4d62b3
-description: 'Riepilogo: esaminare i requisiti di Windows client durante la pianificazione Skype for Business Server.'
-ms.openlocfilehash: 143fdf0e03f6ea125e7b1cbfb3aa0e7a6a93788b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: 'Riepilogo: esaminare i requisiti Windows supporto client durante la pianificazione Skype for Business Server.'
+ms.openlocfilehash: b38c1d7a3565fbc2250766dbed3a0413b914388f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60770214"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60859903"
 ---
 # <a name="windows-client-requirements-and-software-support"></a>Windows client e supporto software
  
@@ -58,7 +58,7 @@ Se si prevede di utilizzare le funzionalità di conferenza Skype for Business, e
 ## <a name="system-requirements-for-skype-for-business-for-windows-phone"></a>Requisiti di sistema per Skype for Business per Windows Phone
  
  
-Microsoft Skype for Business per Windows Phone fornisce messaggistica istantanea, presenza avanzata e telefonia per gli utenti dell'organizzazione che si connettono da uno smartphone o Windows Professional dispositivo mobile. I dispositivi mobili consentono agli utenti di estendere la portata Skype for Business. In questo argomento vengono descritte le considerazioni sulla pianificazione Skype for Business per Windows Phone che includono l'identificazione di prerequisiti e requisiti tecnici, componenti necessari e indicazioni per la distribuzione.
+Microsoft Skype for Business per Windows Phone fornisce messaggistica istantanea, presenza avanzata e telefonia per gli utenti dell'organizzazione che si connettono da uno smartphone o Windows Professional dispositivo mobile. I dispositivi mobili consentono agli utenti di estendere la portata Skype for Business. In questo argomento vengono descritte le considerazioni sulla pianificazione per Skype for Business per Windows Phone che includono l'identificazione dei prerequisiti e dei requisiti tecnici, i componenti necessari e le linee guida per la distribuzione.
   
 ### <a name="skype-for-business-for-windows-phone-prerequisites"></a>Skype for Business per Windows Phone Prerequisiti
 
@@ -79,6 +79,6 @@ Di seguito sono riportati Skype for Business per Windows Phone prerequisiti.
   
 [Skype for Business dei client Mac](mac-requirements.md)
 
-[Scaricare Skype for Business tra tutti i dispositivi](https://products.office.com/skype-for-business/download-app?tab=tabs-3)
+[Scaricare Skype for Business tutti i dispositivi](https://products.office.com/skype-for-business/download-app?tab=tabs-3)
   
 [Microsoft 365 e Office di sistema](https://products.office.com/office-system-requirements)

@@ -1,8 +1,8 @@
 ---
-title: Visualizzare le informazioni sulla configurazione trunk in Skype for Business Server
+title: Visualizzare le informazioni di configurazione trunk in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,14 +11,14 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi.
-ms.openlocfilehash: b27e3dd72e7a4aebee907541b1ec0250cf7cfd3f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b7623765f8d1341066fd127e82c89ab1fa14c79c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778256"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60843829"
 ---
-# <a name="view-trunk-configuration-information-in-skype-for-business-server"></a>Visualizzare le informazioni sulla configurazione trunk in Skype for Business Server
+# <a name="view-trunk-configuration-information-in-skype-for-business-server"></a>Visualizzare le informazioni di configurazione trunk in Skype for Business Server
 
 Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi.
 
@@ -30,7 +30,7 @@ Quando si installa Skype for Business Server, viene creata automaticamente una r
 
 **Per visualizzare le informazioni di configurazione dei trunk SIP tramite Skype for Business Server pannello di controllo**
 
-1. Nel Pannello Skype for Business Server, fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
+1. Nel Pannello Skype for Business Server di controllo fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
 2. Nella scheda **Configurazione trunk** verrà visualizzato un elenco di tutte le raccolte di impostazioni di configurazione trunk. per ogni raccolta verranno visualizzati i valori per le proprietà  **Name,** **Scope,** **State** e Media **bypass,** insieme al numero di utilizzi **PSTN,** **alle** regole dei numeri chiamanti e alle regole numeri chiamate associate alla raccolta. Per visualizzare ulteriori dettagli su una raccolta di impostazioni di configurazione trunk, fare clic sulla raccolta di interesse, su **Modifica** e quindi **su Mostra dettagli.** Si noti che è possibile visualizzare informazioni dettagliate solo per una raccolta di impostazioni di configurazione trunk alla volta.
 
 ## <a name="viewing-sip-trunk-configuration-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni di configurazione dei trunk SIP tramite Windows PowerShell cmdlet

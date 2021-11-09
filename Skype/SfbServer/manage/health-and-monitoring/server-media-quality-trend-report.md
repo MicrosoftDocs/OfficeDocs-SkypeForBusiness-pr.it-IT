@@ -2,7 +2,7 @@
 title: Rapporto tendenze qualità multimediale server in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 8a51fd13-1487-4632-b5ec-f7ae2abe8ed4
 description: 'Riepilogo: informazioni sul Rapporto tendenze qualità multimediale server in Skype for Business Server.'
-ms.openlocfilehash: d813e6d0935a24652b99beb4da9b854197ba98dd
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 03091deedf502c4a6d9d65dc5e9f14532a9147ab
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60774796"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60851019"
 ---
 # <a name="server-media-quality-trend-report-in-skype-for-business-server"></a>Rapporto tendenze qualità multimediale server in Skype for Business Server
  

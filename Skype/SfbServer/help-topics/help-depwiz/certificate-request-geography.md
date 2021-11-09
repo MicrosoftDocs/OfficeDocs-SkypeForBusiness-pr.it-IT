@@ -2,7 +2,7 @@
 title: Richiesta di certificato (Geography)
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: aef0110c-b4b0-453c-a2dd-602372e64952
 description: Nella pagina Dati geografici vengono richieste ulteriori informazioni sulla richiesta del certificato. In tale pagina è possibile selezionare il Paese e quindi digitare la Provincia e la Città in una casella di testo. Si noti che, invece di utilizzare abbreviazioni, è consigliabile specificare per esteso il nome della provincia e della città.
-ms.openlocfilehash: b6fefb87266a38fefecc544c3c679099259a66bc
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ebeb03188004e24451e54b681daf676033ef7ffa
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60740952"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60834384"
 ---
 # <a name="certificate-request-geography"></a>Richiesta di certificato (geografia)
  

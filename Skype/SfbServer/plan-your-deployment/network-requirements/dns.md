@@ -2,7 +2,7 @@
 title: Requisiti DNS per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c50e38d2-b1e4-4ebd-8dc3-85d4ae7a76ee
 description: 'Riepilogo: esaminare le considerazioni relative al DNS in questo argomento prima di implementare Skype for Business Server.'
-ms.openlocfilehash: 4c332d9b7e315a928d488861363c2080ecf0997c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: fa81b85fb7254130302ed9163a652f03ec1bf33c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60770074"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60859833"
 ---
 # <a name="dns-requirements-for-skype-for-business-server"></a>Requisiti DNS per Skype for Business Server
 
@@ -44,7 +44,7 @@ Nelle tabelle seguenti vengono mostrati i record DNS Skype for Business Server p
 
 **Mapping DNS interni**
 
-|Tipo di record|Valore|Viene risolto in|Finalità|Obbligatorio|
+|Tipo di record|Valore|Viene risolto in|Finalità|Obbligatoria|
 |:-----|:-----|:-----|:-----|:-----|
 |A/AAAA   |Front End pool FQDN  <br/> *FE-pool. <span></span> contoso <span></span> .com*   |Indirizzi IP del server del pool Front End  <br/>  DNS LB a *192.168.21.122 192.168.21.123 192.168.21.124*   |Bilanciamento del carico DNS dei pool Front End. Mappe il nome del pool Front End in un set di indirizzi IP.  <br/> Vedere [Deploying DNS Load Balancing on Front End Pools and Director Pools](load-balancing.md#BK_FE_Dir)  |Y   |
 |A/AAAA   | FQDN di ogni Front End Server o edizione Standard server in un pool o in un server autonomo <br/>  *FE01. <span></span> contoso. <span></span> com FE02. <span></span> contoso <span></span> .com FE03. <span></span> contoso <span></span> .com*   |IP corrispondente di ogni server  <br/> *192.168.21.122 192.168.21.123 192.168.21.124*   |Mappe il nome del server al relativo indirizzo IP.   |Y   |
@@ -61,18 +61,18 @@ Nelle tabelle seguenti vengono mostrati i record DNS Skype for Business Server p
 |CNAME   |lyncdiscoverinternal.*\<sipdomain\>* <br/> lyncdiscoverinternal. *<span></span>contoso <span></span> .com*   |FQDN pool FE HLB o FQDN director  <br/> Web-int. <span></span> contoso <span></span> .com   |Servizio di individuazione automatica interno1 <br/> Se lo si desidera, è possibile implementare questo metodo come CNAME anziché come record A.   ||
 |A/AAAA   |sip.*\<sipdomain\>* <br/> sip. *<span></span> contoso <span></span> .com*  |Indirizzi IP del server del pool Front End (o a ogni indirizzo IP del server Director)  <br/>  DNS LB a *192.168.21.122 192.168.21.123 192.168.21.124*   |Obbligatorio per la configurazione automatica, vedere [Procedura dettagliata Skype for Business client che individuano i servizi](../../plan-your-deployment/edge-server-deployments/advanced-edge-server-dns.md#WalkthroughOfSkype) <br/> Record o record che puntano ai server del pool Front End o ai server Director nella rete interna o al servizio Access Edge quando il client è esterno   |&#x2777;  |
 |A/AAAA   |ucupdates-r2.*\<sipdomain\>* <br/> ucupdates-r2. *<span></span> contoso <span></span> .com*  |VIP del pool FE HLB o VIP di bilanciamento del carico di rete del pool di server Director o IP edizione Standard/server Director  <br/>  192.168.21.121  |La distribuzione di questo record è facoltativa &#x2778;  ||
-|SRV   |\_sipinternaltls. \_ tcp.*\<sipdomain\>* <br/>Porta 5061 <br/>\_sipinternaltls. \_ tcp. *<span></span> contoso <span></span> .com* <br/>Porta 5061  |Front End pool FQDN  <br/>*FE-Pool. <span></span> contoso <span></span> .com*  |Abilita l'accesso automatico 1 dell'utente interno al front-end server/pool o edizione Standard server/pool che autentica e reindirizza le richieste client per l'accesso.  |&#x2777; |
+|SRV   |\_sipinternaltls. \_ tcp.*\<sipdomain\>* <br/>Porta 5061 <br/>\_sipinternaltls. \_ tcp. *<span></span> contoso <span></span> .com* <br/>Porta 5061  |Front End pool FQDN  <br/>*FE-Pool. <span></span> contoso <span></span> .com*  |Abilita l'accesso automatico dell'utente interno 1 al front-end server/pool o edizione Standard server/pool che autentica e reindirizza le richieste client per l'accesso.  |&#x2777; |
 |A/AAAA |sipinternal.*\<sipdomain\>* <br/>sipinternal. <span></span> *contoso <span></span> .com*  |Front End pool FQDN  <br/>_FE-Pool. <span></span> contoso <span></span> .com_  |Accesso utente interno &#x2776;  |&#x2777;  |
 |SRV   | \_ntp. \_ udp.*\<sipdomain\>* <br/> \_ntp. \_ udp. <span></span> *contoso <span></span> .com*  |TimeServer FQDN  <br/> north-america.pool.ntp.org   |Origine NTP necessaria per i dispositivi Lync Telefono Edition   |Questa operazione è necessaria per supportare i portatili desktop.   |
-|SRV   |\_sipfederationtls. \_ tcp.*\<sipdomain\>* <br/>\_sipfederationtls. \_ tcp. <span></span> *contoso <span></span> .com*  | FQDN del servizio Access Edge <br/> EdgePool-int. <span></span> *contoso <span></span> .com*  |Creare un record SRV per ogni dominio SIP che dispone di client IOS o Windows telefono cellulare.   |Per il supporto di client per dispositivi mobili   |
+|SRV   |\_sipfederationtls. \_ tcp.*\<sipdomain\>* <br/>\_sipfederationtls. \_ tcp. <span></span> *contoso <span></span> .com*  | FQDN del servizio Access Edge <br/> EdgePool-int. <span></span> *contoso <span></span> .com*  |Creare un record SRV per ogni dominio SIP con client ioS o Windows telefono cellulare.   |Per il supporto di client per dispositivi mobili   |
 |A/AAAA   |URL amministratore  <br/>*Web-int. <span></span> contoso <span></span> .com*  |HLB FE Pool VIP  <br/> 192.168.21.121   |Skype for Business Server Pannello di controllo, vedere [URL semplici](dns.md#BK_Simple)  ||
 |A/AAAA   |URL di meet  <br/>*Web-int. <span></span> contoso <span></span> .com*  |HLB FE Pool VIP  <br/> 192.168.21.121   |Riunioni online, vedere [URL semplici](dns.md#BK_Simple)  ||
 |A/AAAA   |URL di accesso esterno  <br/>*Web-int. <span></span> contoso <span></span> .com*  |HLB FE Pool VIP  <br/> 192.168.21.121   |Conferenze telefoniche con accesso esterno, vedere [URL semplici](dns.md#BK_Simple)  ||
 |A/AAAA   |FQDN dei servizi Web interni  <br/>*Web-int. <span></span> contoso <span></span> .com*  |HLB FE Pool VIP  <br/> 192.168.21.121   |Skype for Business Servizio Web utilizzato da Skype for Business Web App   ||
-|A/AAAA   |Office Web Apps Server pool FQDN  <br/> OWA. <span></span> contoso <span></span> .com   | Office Indirizzo VIP del pool di server Web Apps <br/> 192.168.1.5   |Definisce l'FQDN Office del pool di server Web Apps   ||
+|A/AAAA   |Office Web Apps Server pool FQDN  <br/> OWA. <span></span> contoso <span></span> .com   | Office Indirizzo VIP del pool di server Web Apps <br/> 192.168.1.5   |Definisce il nome di Office FQDN del pool di server Web Apps   ||
 |A/AAAA   | FQDN Web interno <br/> Web-int. <span></span> contoso <span></span> .com   | Indirizzo VIP del pool Front End <br/> 192.168.21.121   |Definisce l'FQDN Web interno utilizzato da Skype for Business Web App  <br/> Se si utilizza il bilanciamento del carico DNS in questo pool, il pool Front End e la web farm interna non possono avere lo stesso FQDN.   ||
 
-&#x2776; utilizzato da un client per individuare il Front End Server o il pool Front End ed essere autenticato e connesso come utente. Per ulteriori dettagli, vedere [Walkthrough of Skype for Business clients che individuano i servizi.](../../plan-your-deployment/edge-server-deployments/advanced-edge-server-dns.md#WalkthroughOfSkype)
+&#x2776; Utilizzato da un client per individuare il Front End Server o il pool Front End ed essere autenticato e connesso come utente. Per ulteriori dettagli, vedere [Walkthrough of Skype for Business clients che individuano i servizi.](../../plan-your-deployment/edge-server-deployments/advanced-edge-server-dns.md#WalkthroughOfSkype)
 
 &#x2777; Questa operazione è necessaria solo per supportare i client legacy precedenti a Lync 2013 e i portatili desktop.
 
@@ -86,19 +86,19 @@ Nel diagramma seguente viene illustrato un esempio che include record DNS intern
 
 **Mapping DNS della rete perimetrale (interfacce interne ed esterne)**
 
-|Tipo di record|Valore|Viene risolto in|Finalità|Obbligatorio|
+|Tipo di record|Valore|Viene risolto in|Finalità|Obbligatoria|
 |:--- |:--- |:--- |:--- |:--- |
 |A/AAAA   |FQDN del pool di server perimetrali interno  <br/>*EdgePool-int. <span></span> contoso <span></span> .com*  |Indirizzi IP del pool di server perimetrali con connessione interna  <br/> 172.25.33.10, 172.25.33.11   |Indirizzi IP dell'interfaccia interna del pool di server perimetrali consolidato   |Y   |
 |A/AAAA   |FQDN server perimetrale  <br/>*Cons-1. <span></span> contoso <span></span> .com*  |IP del server con connessione interna per un server nel pool di server perimetrali  <br/> 172.25.33.10   |Creare un record per ogni server del pool con l'FQDN del server che punta all'IP del nodo del server interno nel pool, vedere [DNS Load Balancing on Edge Server Pools](load-balancing.md#BK_Edge).   |Y   |
 |A/AAAA   |FQDN del pool di servizi Access Edge  <br/>*Access1. <span></span> contoso <span></span> .com*  |Indirizzi IP esterni del pool di servizi Access Edge  <br/> 131.107.16.10, 131.107.16.11   |Questo servizio fornisce un singolo punto di connessione attendibile per il traffico SIP (Session Initiation Protocol) sia in ingresso che in uscita.   |Y   |
 |A/AAAA   |FQDN del pool di servizi Web Conferencing Edge  <br/>*Webcon1. <span></span> contoso <span></span> .com*  |Indirizzi IP esterni del servizio Web Conferencing Edge  <br/> 131.107.16.90, 131.107.16.91   |Il servizio Web Conferencing Edge consente agli utenti esterni di partecipare alle riunioni ospitate nell'ambiente Skype for Business Server interno.   |Y   |
 |A/AAAA   |*av.\<sip-domain\>* FQDN pool <br/>*AV1. <span></span> contoso <span></span> .com*  |Indirizzi IP esterni A/V Edge  <br/> 131.107.16.170, 131.107.16.171   |Il servizio A/V Edge rende disponibili agli utenti esterni audio, video, condivisione applicazioni e trasferimento di file.   |Y   |
-|CNAME   |sip.*\<sipdomain\>* <br/> sip. *<span></span> contoso <span></span> .com*  |FQDN del pool di server perimetrali di accesso esterno  <br/>*Access1. <span></span> contoso <span></span> .com*  |Individua il pool di server perimetrali . Vedere [Procedura dettagliata di individuazione Skype for Business client che individuano i servizi](../../plan-your-deployment/edge-server-deployments/advanced-edge-server-dns.md#WalkthroughOfSkype)  |Y   |
-|SRV   |\_sip. \_ tls.*\<sipdomain\>* <br/>\_sip. \_ tls. <span></span> *contoso <span></span> .com*  |FQDN access edge esterno  <br/>_Access1. <span></span> contoso <span></span> .com_  |Utilizzato per l'accesso degli utenti esterni. Vedere [Procedura dettagliata di individuazione Skype for Business client che individuano i servizi](../../plan-your-deployment/edge-server-deployments/advanced-edge-server-dns.md#WalkthroughOfSkype)  |Y   |
+|CNAME   |sip.*\<sipdomain\>* <br/> sip. *<span></span> contoso <span></span> .com*  |FQDN del pool di server perimetrali di accesso esterno  <br/>*Access1. <span></span> contoso <span></span> .com*  |Individua il pool di server perimetrali . Vedere [Procedura dettagliata di Skype for Business client che individuano i servizi](../../plan-your-deployment/edge-server-deployments/advanced-edge-server-dns.md#WalkthroughOfSkype)  |Y   |
+|SRV   |\_sip. \_ tls.*\<sipdomain\>* <br/>\_sip. \_ tls. <span></span> *contoso <span></span> .com*  |FQDN access edge esterno  <br/>_Access1. <span></span> contoso <span></span> .com_  |Utilizzato per l'accesso degli utenti esterni. Vedere [Procedura dettagliata di Skype for Business client che individuano i servizi](../../plan-your-deployment/edge-server-deployments/advanced-edge-server-dns.md#WalkthroughOfSkype)  |Y   |
 |SRV   |\_sipfederationtls. \_ tcp.*\<sipdomain\>* <br/>\_sipfederationtls. \_ tcp. <span></span> *contoso <span></span> .com*  |FQDN access edge esterno  <br/>*Access1. <span></span> contoso <span></span> .com*  |Usato per la federazione e la connettività di messaggistica istantanea pubblica   |&#x2776;  |
 |SRV   |\_xmpp-server. \_ tcp. *<sipdomain \>* <br/>\_xmpp-server. \_ tcp. *<span></span> contoso <span></span> .com*  |FQDN access edge esterno  <br/>*Access1. <span></span> contoso <span></span> .com*  |Il servizio proxy XMPP accetta e invia messaggi XMPP (Extensible Messaging and Presence Protocol) a e da partner federati XMPP configurati.   |Y, per distribuire la federazione, altrimenti facoltativo  <br/> Non disponibile in Skype for Business Server 2019.|
 |SRV   |\_sipfederationtls. \_ tcp.*\<sipdomain\>* <br/>\_sipfederationtls. \_ tcp. *<span></span> contoso <span></span> .com*  |FQDN access edge esterno  <br/>*Access1. <span></span> contoso <span></span> .com*  |Per supportare il servizio di notifica Push e il servizio notifica Push Apple, devi creare un record SRV per ogni dominio SIP. &#x2778;  ||
-|A/AAAA   |FQDN dei servizi Web del pool Front End esterno  <br/>*Web-ext. <span></span> contoso <span></span> .com*  |Indirizzo IP pubblico proxy inverso, proxy all'indirizzo VIP dei servizi Web esterni per il pool Front End &#x2776; <br/> 131.107.155.1 proxy a 192.168.21.120   |Interfaccia esterna del pool Front End utilizzata da Skype for Business Web App   |Y   |
+|A/AAAA   |FQDN dei servizi Web del pool Front End esterno  <br/>*Web-ext. <span></span> contoso <span></span> .com*  |Indirizzo IP pubblico proxy inverso, proxy all'indirizzo VIP dei servizi Web esterni per il pool Front End &#x2776; <br/> 131.107.155.1 proxy a 192.168.21.120   |Interfaccia esterna del pool Front End utilizzata Skype for Business Web App   |Y   |
 |A/AAAA/CNAME   |lyncdiscover.*\<sipdomain\>* <br/> lyncdiscover. *<span></span> contoso <span></span> .com*  |Indirizzo IP pubblico proxy inverso, viene risolto nell'indirizzo VIP servizi Web esterni per il pool di server Director, se disponibile, o per il pool Front End se non si dispone di un server Director &#x2777; <br/> 131.107.155.1 proxy a 192.168.21.120   | Record esterno per l'individuazione automatica del client, usato anche da Mobility, Skype for Business Web App e dall'app Web dell'utilità di pianificazione, risolto dal server proxy inverso <br/> Per supportare il servizio di notifica Push e il servizio notifica Push Apple, creare un record SRV per ogni dominio SIP con client Microsoft Lync Mobile. 3   |Y   |
 |A/AAAA   |meet.*\<sipdomain\>* <br/> meet. *<span></span> contoso <span></span> .com*  |Indirizzo IP pubblico proxy inverso, risolto nell'interfaccia Web esterna per il pool Front End  <br/> 131.107.155.1 proxy a 192.168.21.120   |Proxy per Skype for Business Web  <br/> Vedere [URL semplici](dns.md#BK_Simple)  |Y   |
 |A/AAAA   |accesso remoto.*\<sipdomain\>* <br/> accesso remoto. *<span></span> contoso <span></span> .com*  |Indirizzo IP pubblico proxy inverso, proxy all'interfaccia Web esterna per il pool Front End  <br/> 131.107.155.1 proxy a 192.168.21.120   |Proxy per Skype for Business Web  <br/> Vedere [URL semplici](dns.md#BK_Simple)  |Y   |
@@ -128,7 +128,7 @@ Il DNS split brain è una configurazione DNS in cui sono disponibili due zone DN
 
 Se si prevede di ospitare alcuni utenti online e altri in locale, fare riferimento all'articolo Hybrid connectivity planning [Skype for Business server 2019](../../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?toc=/SkypeForBusiness/sfbhybridtoc/toc.json). Sarà necessario configurare DNS normalmente per Skype for Business Server 2015 e aggiungere altri record DNS.
 
-È inoltre consigliabile fare riferimento Office 365 URL e intervalli di indirizzi IP per verificare che gli utenti avranno accesso alle risorse [https://aka.ms/o365ips](/microsoft-365/enterprise/urls-and-ip-address-ranges) online necessarie.
+È inoltre consigliabile fare riferimento a "URL Office 365 e intervalli di indirizzi IP" all'indirizzo per verificare che gli utenti avranno accesso alle risorse [https://aka.ms/o365ips](/microsoft-365/enterprise/urls-and-ip-address-ranges) online necessarie.
 
 ## <a name="simple-urls"></a>URL semplici
 <a name="BK_Simple"> </a>
@@ -141,11 +141,11 @@ Skype for Business Server supporta l'utilizzo di tre URL "semplici" per accedere
 
     Con l'URL semplice Riunione, i collegamenti per partecipare alle riunioni sono facili da comprendere e da comunicare.
 
-- **L'accesso esterno** consente l'accesso alla pagina Web Impostazioni conferenza telefonica con accesso esterno. In questa pagina vengono visualizzati i numeri di accesso esterno per conferenze con le lingue disponibili, le informazioni sulla conferenza assegnate (ovvero per le riunioni che non devono essere pianificate) e i controlli DTMF in conferenza e supporta la gestione del PIN (Personal Identification Number) e delle informazioni di conferenza assegnate. L'URL semplice per accesso esterno è incluso in tutti gli inviti a riunioni, in modo che gli utenti che desiderano eseguire l'accesso esterno alla riunione dispongano delle informazioni necessarie sul numero di telefono e sul PIN. Un esempio di URL semplice per l'accesso esterno è https:// <span></span> dialin. <span></span> contoso <span></span> .com.
+- **L'accesso esterno** consente l'accesso alla pagina Web Impostazioni conferenza telefonica con accesso esterno. In questa pagina vengono visualizzati i numeri di accesso esterno per conferenze con le lingue disponibili, le informazioni sulla conferenza assegnate (ovvero per le riunioni che non devono essere pianificate) e i controlli DTMF in conferenza e supporta la gestione del PIN (Personal Identification Number) e delle informazioni di conferenza assegnate. L'URL semplice per accesso esterno è incluso in tutti gli inviti a riunioni, in modo che gli utenti che desiderano eseguire l'accesso esterno alla riunione dispongano delle informazioni necessarie sul numero di telefono e sul PIN. Un esempio dell'URL semplice per l'accesso esterno è https:// <span></span> dialin. <span></span> contoso <span></span> .com.
 
-- **L'amministratore** consente l'accesso rapido Skype for Business Server pannello di controllo. Da qualsiasi computer all'interno dei firewall dell'organizzazione, un amministratore può aprire il Pannello di controllo di Skype for Business Server digitando l'URL semplice amministratore in un browser. L'URL semplice di amministrazione è interno all'organizzazione. Un esempio dell'URL semplice admin è https:// <span></span> admin. <span></span> contoso <span></span> .com.
+- **L'amministratore** consente l'accesso rapido Skype for Business Server pannello di controllo. Da qualsiasi computer all'interno dei firewall dell'organizzazione, un amministratore può aprire il Pannello di controllo di Skype for Business Server digitando l'URL semplice amministratore in un browser. L'URL semplice di amministrazione è interno all'organizzazione. Un esempio dell'URL semplice amministratore è https:// <span></span> amministratore. <span></span> contoso <span></span> .com.
 
-Gli URL semplici vengono descritti in dettaglio in Requisiti DNS per gli [URL semplici in Skype for Business Server](simple-urls.md).
+Gli URL semplici sono descritti in dettaglio in Requisiti DNS per gli [URL semplici in Skype for Business Server](simple-urls.md).
 
 ## <a name="dns-by-server-role"></a>DNS per ruolo del server
 <a name="BK_Servers"> </a>
@@ -154,7 +154,7 @@ Gli URL semplici vengono descritti in dettaglio in Requisiti DNS per gli [URL se
 
 ### <a name="dns-records-for-individual-servers-or-pools"></a>Record DNS per singoli server o pool
 
-Questi requisiti di record generici si applicano a qualsiasi ruolo del server utilizzato Skype for Business. Un pool è un set di server che eseguono gli stessi servizi che funzionano insieme per gestire le richieste client indirizzate tramite un servizio di bilanciamento del carico. Per [informazioni dettagliate, vedere Load balancing requirements for Skype for Business](load-balancing.md)
+Questi requisiti di record generici si applicano a qualsiasi ruolo del server utilizzato da Skype for Business. Un pool è un set di server che eseguono gli stessi servizi che funzionano insieme per gestire le richieste client indirizzate tramite un servizio di bilanciamento del carico. Per [informazioni dettagliate, vedere Load balancing requirements for Skype for Business](load-balancing.md)
 
 **Record DNS Requirements for Server/pool roles (presuppone il bilanciamento del carico DNS)**
 

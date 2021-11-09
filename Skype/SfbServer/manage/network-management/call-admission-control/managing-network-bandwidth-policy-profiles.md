@@ -2,7 +2,7 @@
 title: Gestione dei profili dei criteri di larghezza di banda di rete
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Utilizzare le procedure descritte in questo articolo per visualizzare, creare, modificare o eliminare i profili dei criteri di larghezza di banda di rete.
-ms.openlocfilehash: 4c109c5512bfc3e0876aef036b8bb645cd2791fc
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: fee0d4f57847747b0e25c98bc99183daa22a9996
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60742122"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850999"
 ---
 # <a name="managing-network-bandwidth-policy-profiles-in-skype-for-business-server"></a>Gestione dei profili di criteri di larghezza di banda di rete in Skype for Business Server
 
@@ -30,7 +30,7 @@ In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda ven
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
 3.  Nella barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Criteri larghezza di banda**.
 
@@ -71,7 +71,7 @@ In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda ven
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Criteri larghezza di **banda.**
 
@@ -99,7 +99,7 @@ In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda ven
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Criteri larghezza di **banda.**
 
@@ -123,7 +123,7 @@ In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda ven
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Criteri larghezza di **banda.**
 

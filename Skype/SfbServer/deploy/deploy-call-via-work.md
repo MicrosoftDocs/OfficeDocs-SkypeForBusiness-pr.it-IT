@@ -2,7 +2,7 @@
 title: Distribuire chiamate tramite lavoro in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,30 +15,30 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4802d733-14ef-4509-92b9-07173614e45f
 description: 'Riepilogo: informazioni su come distribuire Call Via Work in Skype for Business Server per alcuni o tutti gli utenti.'
-ms.openlocfilehash: 98d7cc08b2cb4101f1d9d062e62ef32a3998691b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 932d94c13d4ba9ead63504cfba66175db52084d7
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60761610"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60851620"
 ---
 # <a name="deploy-call-via-work-in-skype-for-business-server"></a>Distribuire chiamate tramite lavoro in Skype for Business Server
  
 **Riepilogo:** Informazioni su come distribuire Call Via Work in Skype for Business Server per alcuni o tutti gli utenti.
   
-Seguire questa procedura per distribuire Call Via Work per gli utenti. Considerazioni sulla pianificazione sono [descritte](../plan-your-deployment/enterprise-voice-solution/call-via-work.md)in Plan for Call Via Work in Skype for Business Server . Nelle versioni precedenti del controllo delle chiamate remote di Lync Server era una funzionalità che consente agli utenti di controllare i telefoni PBX con Lync Server. In Skype for Business Server, questa funzionalità è stata sostituita con Chiama tramite lavoro. 
+Seguire questa procedura per distribuire Call Via Work per gli utenti. Le considerazioni sulla pianificazione sono [descritte](../plan-your-deployment/enterprise-voice-solution/call-via-work.md)in Plan for Call Via Work in Skype for Business Server . Nelle versioni precedenti del controllo delle chiamate remote di Lync Server era una funzionalità che consente agli utenti di controllare i telefoni PBX con Lync Server. In Skype for Business Server, questa funzionalità è stata sostituita con Chiama tramite lavoro. 
   
 ## <a name="prerequisites-for-call-via-work"></a>Prerequisiti per la chiamata tramite lavoro
 
-Call Via Work usa UNIFIED Communications Web API (UCWA), che viene installato automaticamente in tutti Skype for Business Server Front End Server. Per abilitare gli utenti per La chiamata tramite lavoro, è inoltre necessario disporre dei prerequisiti seguenti: 
+Call Via Work utilizza UNIFIED Communications Web API (UCWA), che viene installata automaticamente in tutti Skype for Business Server Front End Server. Per abilitare gli utenti per La chiamata tramite lavoro, è inoltre necessario disporre dei prerequisiti seguenti: 
   
 - È necessario disporre di un Mediation Server distribuito, come parte di un Front End Server o come ruolo autonomo. È inoltre necessario distribuire un gateway IP-PBX.
     
 - Tutti gli utenti che saranno abilitati per La chiamata tramite ufficio devono disporre di un DID (Direct Inward Dialing) nel sistema telefonico PBX. 
     
-- È necessario abilitare tutti gli utenti di Call Via Work per VoIP aziendale. In questo caso, è necessario configurare il Skype for Business DID per ogni utente sul numero DID corrispondente per il sistema telefonico PBX corrispondente. 
+- È necessario abilitare tutti gli utenti chiamata tramite lavoro per VoIP aziendale. In questo caso, è necessario configurare il Skype for Business DID per ogni utente sul numero DID corrispondente per il sistema telefonico PBX corrispondente. 
     
-- Tutti gli utenti che utilizzano Chiama  tramite lavoro  devono avere la configurazione automatica selezionata nell'opzione Connessioni avanzate nel Skype for Business client. In questo modo il client può individuare gli URL UCWA. **Configurazione automatica** è la selezione predefinita.
+- Tutti gli utenti che utilizzano Call  Via Work devono avere la configurazione automatica selezionata nell'opzione **Connessioni** avanzate nel Skype for Business client. In questo modo il client può individuare gli URL UCWA. **Configurazione automatica** è la selezione predefinita.
     
 - Per ogni utente di Call Via Work, abilita l'inoltro di chiamata e lo squillo simultaneo. 
     
@@ -50,7 +50,7 @@ Call Via Work usa UNIFIED Communications Web API (UCWA), che viene installato au
 
 Una volta installati i prerequisiti, eseguire le operazioni seguenti:
   
-- Creare un numero di telefono globale per la distribuzione che Skype for Business visualizzato nell'ID chiamante PBX degli utenti che effettuano chiamate call via work. 
+- Creare un numero di telefono globale per la distribuzione che Skype for Business visualizzato nell'ID chiamante PBX degli utenti che effettuano chiamate di chiamata tramite ufficio. 
     
 - Creare uno o più criteri Di chiamata tramite lavoro
     

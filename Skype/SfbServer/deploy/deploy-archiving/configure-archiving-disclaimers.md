@@ -2,7 +2,7 @@
 title: Configurare le dichiarazioni di non responsabilità di archiviazione per gli utenti esterni in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 394ac291-05cd-4fa1-acb3-714af538b47f
 description: 'Riepilogo: leggere questo argomento per informazioni su come configurare una dichiarazione di non responsabilità di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: a5777a416d634f6d767efbec97f2c72bc7899c47
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 05eaec40556b383525331405463ee6d0a10e0a13
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773396"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60834714"
 ---
 # <a name="configure-archiving-disclaimers-for-external-users-in-skype-for-business-server"></a>Configurare le dichiarazioni di non responsabilità di archiviazione per gli utenti esterni in Skype for Business Server
  
@@ -33,7 +33,7 @@ Per consentire agli utenti esterni di collaborare con gli utenti nella distribuz
 
 1. Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
     
 3. Sulla barra di spostamento sinistra fare clic su **Federazione e accesso esterno** e quindi su **Configurazione Access Edge**.
     

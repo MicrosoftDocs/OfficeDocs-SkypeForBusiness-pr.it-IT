@@ -2,7 +2,7 @@
 title: Abilitazione e disabilitazione del bypass multimediale
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Utilizzare le procedure descritte in questo articolo per abilitare o disabilitare il bypass multimediale tramite il Pannello Skype for Business Server controllo.
-ms.openlocfilehash: abbbc6bf77a5fe1aea22de9c5f225ac694cf1d1d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e8465d376e32d677d52cb0bdb57e86d9aa9fac44
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60750285"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60852000"
 ---
 # <a name="enabling-and-disabling-media-bypass-in-skype-for-business-server"></a>Abilitazione e disabilitazione del bypass multimediale in Skype for Business Server
 
@@ -33,7 +33,7 @@ Puoi abilitare e configurare il bypass multimediale dal Skype for Business Serve
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Globale.**
 
@@ -60,14 +60,14 @@ Puoi abilitare e configurare il bypass multimediale dal Skype for Business Serve
 
 ## <a name="disable-network-media-bypass"></a>Disabilitare il bypass multimediale di rete
 
-Le impostazioni di bypass multimediale si applicano a livello globale in una Skype for Business Server distribuzione. Il bypass multimediale consente alle chiamate di ignorare il Mediation Server. Per informazioni dettagliate su quando usare il bypass multimediale, vedi [Pianificare il bypass multimediale.](../../../plan-your-deployment/enterprise-voice-solution/media-bypass.md) Puoi disabilitare il bypass multimediale dal Skype for Business Server pannello di controllo. 
+Le impostazioni di bypass multimediale si applicano a livello globale in una Skype for Business Server distribuzione. Il bypass multimediale consente alle chiamate di ignorare il Mediation Server. Per informazioni dettagliate su quando usare il bypass multimediale, vedi [Pianificare il bypass multimediale.](../../../plan-your-deployment/enterprise-voice-solution/media-bypass.md) Puoi disabilitare il bypass multimediale dal Skype for Business Server di controllo. 
 
 
 ### <a name="to-disable-media-bypass"></a>Per disabilitare il bypass multimediale
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Globale.**
 
