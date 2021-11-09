@@ -2,7 +2,7 @@
 title: Nodo dell'ambito di Survivable Branch Appliance
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 8632ddaa-9572-4129-9db4-de0f13438d43
 description: 'Questo nodo mostra il nome di dominio completo (FQDN), i pool e i server associati e le informazioni sulla resilienza su questo Survivable Branch Appliance. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: d192ce72e082180904a3bee877838dd2464c6249
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 229ac07533334562a8b1f2cb956bfdd8b47e0282
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747812"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60840088"
 ---
 # <a name="branch-office-appliance-scope-node"></a>Nodo dell'ambito di Branch Office Appliance
  

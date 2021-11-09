@@ -1,8 +1,8 @@
 ---
-title: Utilizzo dello Skype for Business Server 2015 Stress and Performance Tool
+title: Utilizzo dello strumento Skype for Business Server 2015 Stress and Performance
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 ms.date: 2/13/2018
 manager: serdars
 audience: ITPro
@@ -14,18 +14,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 93f42230-24a2-418d-9770-bf4670a9d78f
 description: Per eseguire lo strumento stress e prestazioni di Skype for Business Server 2015, è necessario essere in grado di gestire utenti, contatti e profili utente, configurare lo strumento per l'esecuzione e quindi esaminare l'output o i risultati prodotti dallo strumento.
-ms.openlocfilehash: d54374e81319a6a95ec61fbb2ab5885e2ec368ca
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b71148f4fcf26726b530861b147336a1c7b1d12e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60751585"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60839848"
 ---
-# <a name="using-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Utilizzo dello Skype for Business Server 2015 Stress and Performance Tool
+# <a name="using-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Utilizzo dello strumento Skype for Business Server 2015 Stress and Performance
  
 Per eseguire lo strumento stress e prestazioni di Skype for Business Server 2015, è necessario essere in grado di gestire utenti, contatti e profili utente, configurare lo strumento per l'esecuzione e quindi esaminare l'output o i risultati prodotti dallo strumento.
   
-Esistono quattro aree coinvolte nell'esecuzione dello strumento Skype for Business Server 2015 Stress and Performance Tool (l'eseguibile è LyncPerfTool.exe):
+Esistono quattro aree coinvolte nell'esecuzione dello strumento Skype for Business Server 2015 Stress and Performance (il file eseguibile è LyncPerfTool.exe):
   
 - [Creare utenti e contatti](using-the-tool.md#BKMK_CreateUsersAndContacts)
     
@@ -38,7 +38,7 @@ Esistono quattro aree coinvolte nell'esecuzione dello strumento Skype for Busine
 ## <a name="create-users-and-contacts"></a>Creare utenti e contatti
 <a name="BKMK_CreateUsersAndContacts"> </a>
 
-È necessario utilizzare lo strumento di provisioning degli utenti Skype for Business Server 2015 (SB 2015 UserProvisioningTool.exe) per creare utenti e contatti per i test di stress e prestazioni.
+È necessario utilizzare lo strumento di provisioning degli utenti Skype for Business Server 2015 (SB 2015) UserProvisioningTool.exe per creare utenti e contatti per i test di stress e prestazioni.
   
 Questo è un elenco di termini utili che potrebbero essere utili durante la lettura degli argomenti:
   
@@ -48,7 +48,7 @@ Questo è un elenco di termini utili che potrebbero essere utili durante la lett
     
 - **Liste di distribuzione** - O DLL. Si tratta di oggetti in Servizi di dominio Active Directory che contengono un elenco di utenti di Servizi di dominio Active Directory. Vengono utilizzati per facilitare le comunicazioni tra gruppi di persone.
     
-- **Location Info Service** - Servizio Skype for Business Server 2015 che, quando viene abilitato e configurato per telefono, consente il recupero della posizione fisica per i servizi Enhanced 911 (E911).
+- **Location Info Service** - Servizio Skype for Business Server 2015 che, quando è abilitato e configurato per telefono, consente il recupero della posizione fisica per i servizi Enhanced 911 (E911).
     
 - **U.S. Telefono Numbers** - Numeri Telefono assegnati all'utente oltre all'URI SIP utilizzato per il routing delle chiamate in ingresso e in uscita in RNL (Reverse Number Lookup).
     
@@ -59,12 +59,12 @@ Questo è un elenco di termini utili che potrebbero essere utili durante la lett
   
 Devi usare lo strumento di provisioning Skype for Business Server utente per creare utenti e contatti per la simulazione del carico.
   
-Lo **Skype for Business Server user provisioning tool** viene installato con il pacchetto Skype for Business Server Stress and Performance **Tool.** Assicurarsi che il programma di installazione del pacchetto (CapacityPlanningTool.msi) sia stato eseguito nel Front End Server o nel server edizione Standard che si intende testare.
+Lo **Skype for Business Server user provisioning tool** viene installato con il pacchetto Skype for Business Server Strumento stress **e** prestazioni. Assicurarsi che il programma di installazione del pacchetto (CapacityPlanningTool.msi) sia stato eseguito nel Front End Server o nel server edizione Standard che si intende testare.
   
 È possibile avviare lo strumento di provisioning degli utenti di Skype for Business Server eseguendo il file UserProvisioningTool.exe (disponibile in %InstalledDirectory%LyncStressAndPerfTool\LyncStress) nel Front End Server o nel server edizione Standard.
   
 > [!IMPORTANT]
-> Quando si crea un numero elevato di utenti(ad esempio, 10.000 o più), eseguire il UserProvisioningTool.exe. È necessario eseguire questa operazione perché lo strumento creerà e configurerà  *nuovi utenti*  di Active Directory.
+> Quando si crea un numero elevato di utenti, ad esempio 10.000 o più, eseguire il UserProvisioningTool.exe. È necessario eseguire questa operazione perché lo strumento creerà e configurerà  *nuovi utenti*  di Active Directory.
   
 Quando si apre lo strumento di provisioning degli utenti, fare clic su Configurazione e selezionare Carica configurazione. 
   
@@ -86,7 +86,7 @@ Se si dispone di un file XML preconfigurato che contiene già le impostazioni pe
     
 6. Nel campo **Telefono codice area** digitare il codice di area a tre cifre da utilizzare in tutti gli account utente di test. Assicurarsi che il codice area scelto non sia in conflitto con i codici di area di altri utenti in Active Directory.
     
-7. Fare clic per selezionare **la casella di controllo Voice Enabled** se si desidera abilitare gli utenti di test per VoIP aziendale.
+7. Fare clic per selezionare **la casella di controllo** Voice Enabled se si desidera abilitare gli utenti di test per VoIP aziendale.
     
 8. Nel **campo Numero di utenti** assegnare il numero totale di utenti di test che si desidera creare.
     
@@ -119,7 +119,7 @@ Quando fai clic sul **pulsante Elimina utenti,** i parametri di input della sche
 > Prima di creare i contatti, è innanzitutto necessario completare la replica degli utenti,che viene eseguita dalla scheda Utenti. 
   
 > [!IMPORTANT]
-> Se gli utenti sono appena stati creati, è necessario attendere il completamento Skype for Business Server e popolare gli account utente nel database. **Se gli utenti non hanno completato la replica, verrà visualizzato un errore.** È possibile sapere quando gli utenti hanno completato la replica se il servizio Front End di Skype for Business Server 2015 è stato avviato oppure eseguendo correttamente il cmdlet Get-CsUser sull'ultimo utente del numero totale specificato.
+> Se gli utenti sono appena stati creati, è necessario attendere il completamento Skype for Business Server e popolare gli account utente nel database. **Se gli utenti non hanno completato la replica, verrà visualizzato un errore.** È possibile sapere quando gli utenti hanno completato la replica se il servizio Front End di Skype for Business Server 2015 è stato avviato o eseguendo correttamente il cmdlet Get-CsUser sull'ultimo utente del numero totale specificato.
   
 #### <a name="contacts-creation-tab"></a>Scheda Creazione contatti
 
@@ -199,11 +199,11 @@ Per importare questi file nel database LIS, utilizzare i cmdlet di PowerShell se
 ## <a name="configure-user-profile"></a>Configurare il profilo utente
 <a name="BKMK_UserProfile"> </a>
 
-Dopo aver creato gli utenti (tramite lo Strumento di creazione utenti), è possibile configurare i profili utente con lo strumento di configurazione del carico di Skype for Business Server 2015 (UserProfileGenerator.exe).
+Dopo aver creato gli utenti (tramite lo strumento di creazione utenti), è possibile configurare i profili utente con lo strumento di configurazione del carico di Skype for Business Server 2015 (UserProfileGenerator.exe).
   
 ### <a name="running-the-skype-for-business-server-2015-load-configuration-tool"></a>Esecuzione dello strumento di Skype for Business Server 2015 Load Configuration
 
-Avvia lo strumento Carica configurazione (UserProfileGenerator.exe) e compila le schede. Questo strumento crea una directory per ognuno dei computer client necessari per eseguire le simulazioni. Ogni directory client include uno script per avviare lo strumento Skype for Business Server 2015 Stress and Performance (LyncPerfTool.exe). Nelle sezioni seguenti vengono forniti esempi di come compilare i campi in ogni scheda dello Skype for Business Server 2015 Load Configuration.
+Avvia lo strumento Carica configurazione (UserProfileGenerator.exe) e compila le schede. Questo strumento crea una directory per ognuno dei computer client necessari per eseguire le simulazioni. Ogni directory client include uno script per avviare lo strumento Skype for Business Server 2015 Stress and Performance (LyncPerfTool.exe). Nelle sezioni seguenti vengono forniti esempi di come compilare i campi in ogni scheda dello strumento di Skype for Business Server 2015 Load Configuration.
   
 > [!IMPORTANT]
 > I valori specifici dell'utente utilizzati nello strumento di configurazione del carico (UserProfileGenerator.exe) devono corrispondere ai valori specificati nello strumento di creazione utenti di Skype for Business Server 2015 (UserProvisioningTool.exe) per il pool. 
@@ -224,7 +224,7 @@ La **scheda Configurazione** comune dello strumento di configurazione del carico
     
 5. Nel **campo Numero di** utenti immettere il numero totale di utenti che si desidera configurare.
     
-6. Nel campo **Dominio utente** immettere il dominio utilizzato per l'URI SIP. Viene utilizzato per creare l'URI SIP di ogni utente per accedere al front-end server o al server edizione Standard di Skype for Business Server 2015 e può essere diverso dal dominio dell'account.
+6. Nel campo **Dominio utente** immettere il dominio utilizzato per l'URI SIP. Viene utilizzato per creare l'URI SIP di ogni utente per accedere al front-end server o al server edizione Standard di Skype for Business Server 2015 e può essere diverso dal dominio account.
     
 7. Nel campo **Dominio account** immettere l'accesso al dominio di Servizi di dominio Active Directory.
     
@@ -255,7 +255,7 @@ La **scheda Configurazione** comune dello strumento di configurazione del carico
     
 - **Collaborazione dati -** Scegliere un livello di carico per la collaborazione dati, che include le conferenze dati.
     
-- **Espansione lista di distribuzione -** Fare clic **sul** pulsante Avanzate e compilare il campo con gli stessi valori configurati nella scheda DL dello Strumento di creazione utente (UserProvisioningTool.exe). Scegliere un livello di carico.
+- **Espansione lista di distribuzione -** Fare clic **sul pulsante** Avanzate e compilare il campo con gli stessi valori configurati nella scheda DL dello Strumento di creazione utente (UserProvisioningTool.exe). Scegliere un livello di carico.
     
 - **Query Web rubrica -** Si tratta del servizio di ricerca della rubrica anziché del download del file della rubrica. Se si desidera abilitare questa impostazione per i download di file della rubrica, fare clic sul pulsante **Avanzate** e **impostare EnableABSDownload** su True. Assegnare un valore per il livello di carico.
     
@@ -319,7 +319,7 @@ Web App supporta gli scenari di conferenza tramite il server UCWA (Unified Commu
 - **Servizi di conferenza vocale -** Selezionare un valore per Livello di carico.
     
 > [!NOTE]
-> Accanto a ognuno degli scenari **è** presente un pulsante Avanzate. Le finestre di dialogo avanzate contengono valori specifici per ogni scenario che modificano il comportamento dello Strumento stress e prestazioni e abilitano la personalizzazione.> Per ognuno degli scenari dell'app Web, se il livello di carico è **Personalizzato,** viene utilizzato il valore specificato nel campo **ConversationsPerHour** anziché il valore predefinito.
+> Accanto a ognuno degli scenari **è** presente un pulsante Avanzate. Le finestre di dialogo avanzate contengono valori specifici per ogni scenario che modificheranno il comportamento dello Strumento stress e prestazioni e abiliteranno la personalizzazione.> Per ognuno degli scenari dell'app Web, se il livello di carico è **Personalizzato,** verrà utilizzato il valore specificato nel campo **ConversationsPerHour** anziché il valore predefinito.
   
 #### <a name="mobility-tab"></a>Scheda Dispositivi mobili
 
@@ -334,7 +334,7 @@ Di seguito sono disponibili le opzioni seguenti:
 - **Presenza e messaggistica istantanea P2P/Audio -** Selezionare un valore per Livello di carico per abilitare la simulazione per dispositivi mobili.
     
 > [!NOTE]
-> Accanto a ognuno degli scenari **è** presente un pulsante Avanzate. Le finestre di dialogo avanzate contengono valori specifici per ogni scenario che modificano il comportamento dello Strumento stress e prestazioni e abilitano la personalizzazione.> Per ognuno degli scenari per dispositivi mobili, se il livello di carico è **Personalizzato,** verrà utilizzato il valore specificato nel campo **ConversationsPerHour** anziché il valore predefinito.
+> Accanto a ognuno degli scenari **è** presente un pulsante Avanzate. Le finestre di dialogo avanzate contengono valori specifici per ogni scenario che modificano il comportamento dello Strumento stress e prestazioni e abilitano la personalizzazione.> Per ognuno degli scenari per dispositivi mobili, se il livello di carico è **Personalizzato,** viene utilizzato il valore specificato nel campo **ConversationsPerHour** anziché il valore predefinito.
   
 #### <a name="summary-tab"></a>Scheda Riepilogo
 
@@ -363,9 +363,9 @@ Lo strumento di configurazione del carico (UserProfileGenerator.exe) crea un fil
   
 ### <a name="run-the-stress-and-performance-test"></a>Eseguire il test stress e prestazioni
 
-1. Copiare la cartella con le cartelle e i file di configurazione all'interno della directory LyncPerfTool.exe in ogni computer client. Ad esempio, se sono stati generati i file di configurazione nella cartella denominata 1.28_13.16.16, copiare la cartella nella cartella con LyncPerfTool.exe in essa. Eseguire questa operazione su ogni client.
+1. Copiare la cartella con le cartelle e i file di configurazione all'interno della directory LyncPerfTool.exe in ogni computer client. Ad esempio, se i file di configurazione sono stati generati nella cartella denominata 1.28_13.16.16, copiare tale cartella nella cartella in cui è presente LyncPerfTool.exe. Eseguire questa operazione su ogni client.
     
-2. Passare alla cartella del client ed eseguire lo script batch **RunClient.** È possibile fare doppio clic sul file batch in Windows Explorer e verranno eseguiti tutti i file di configurazione per tale client. È inoltre possibile eseguire lo script da una cartella client utilizzando la sintassi seguente:
+2. Passare alla cartella del client ed eseguire lo script batch **RunClient.** È possibile fare doppio clic sul file batch in Windows Explorer e verranno eseguiti tutti i file di configurazione per il client. È inoltre possibile eseguire lo script da una cartella client utilizzando la sintassi seguente:
     
    ```console
    RunClient0.bat "C:\Program Files\Skype for Business Server 2015\LyncStressAndPerfTool\LyncStress" 
@@ -396,7 +396,7 @@ La frequenza di accesso utente massima per il pool è di circa 12 al secondo. Ci
 ## <a name="interpreting-the-results"></a>Interpretazione dei risultati
 <a name="BKMK_Interpret"> </a>
 
-Lo Skype for Business Server 2015 Stress and Performance Tool include numerosi contatori che consentono di comprendere cosa sta facendo il client e se si verificano problemi.
+Lo Skype for Business Server 2015 Stress and Performance Tool dispone di numerosi contatori che consentono di comprendere cosa sta facendo il client e se si verificano problemi.
   
 ### <a name="client-counters"></a>Contatori client
 

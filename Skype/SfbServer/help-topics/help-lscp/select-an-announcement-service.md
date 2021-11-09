@@ -2,7 +2,7 @@
 title: Selezionare un servizio Annuncio
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 676f4d80-6826-4fa0-9430-4ebdb4b5a03e
 description: Utilizzare la finestra di dialogo Seleziona un Servizio Annuncio per selezionare un servizio Annuncio che gestirà le chiamate in arrivo a un intervallo di numeri non assegnati.
-ms.openlocfilehash: c02add8cefec93f11f6bb3843d9208b6f49f1db8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ba6dac3880f769d4b02619dc86b1c65b66239182
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60776546"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60852320"
 ---
 # <a name="select-an-announcement-service"></a>Selezionare un servizio Annuncio
  

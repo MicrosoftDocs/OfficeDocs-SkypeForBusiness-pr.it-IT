@@ -1,6 +1,6 @@
 ---
 title: Audioconferenza con routing diretto, GCCH e DoD
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: oscarr
@@ -20,16 +20,16 @@ f1.keywords:
 ms.localizationpriority: medium
 description: L'amministratore può imparare a usare le audioconferenze con il routing diretto in ambienti GCCH e DoD.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a1fade545e2896dac9bc9e486db2b3d31475fe2
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 1e4500e5560a1e5b14af51137f98e98823f7b333
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763084"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60853950"
 ---
 # <a name="audio-conferencing-with-direct-routing-for-gcc-high-and-dod"></a>Audioconferenza con Instradamento diretto per GCC High e DoD
 
-Le audioconferenze con routing diretto per GCC High e DoD consentono ai partecipanti di partecipare alle riunioni di Teams nell'organizzazione GCC High o DoD usando un dispositivo telefonico. I partecipanti alla riunione potrebbero scegliere di usare un dispositivo telefonico per partecipare Teams riunioni in scenari come quando la connettività Internet è limitata o quando gli utenti sono in viaggio e non hanno accesso Teams. I partecipanti possono scegliere di partecipare alle riunioni componendo l'accesso a un numero di telefono esterno per l'organizzazione o facendo in modo che la riunione sia con accesso esterno al dispositivo telefonico.
+Le audioconferenze con routing diretto per GCC High e DoD consentono ai partecipanti di partecipare alle riunioni Teams nell'organizzazione GCC High o DoD usando un dispositivo telefonico. I partecipanti alla riunione potrebbero scegliere di usare un dispositivo telefonico per partecipare Teams riunioni in scenari come quando la connettività Internet è limitata o quando gli utenti sono in viaggio e non hanno accesso Teams. I partecipanti possono scegliere di partecipare alle riunioni componendo l'accesso a un numero di telefono esterno per l'organizzazione o facendo in modo che la riunione sia con accesso esterno al dispositivo telefonico.
 
 Con le audioconferenze con routing diretto per GCC High e DoD, l'organizzazione usa i propri numeri come numeri di telefono per l'accesso esterno e tutte le chiamate in uscita delle riunioni verso i dispositivi telefonici vengono instradati tramite Routing diretto. Per abilitare il servizio, le organizzazioni devono configurare Il routing diretto e configurare i numeri di telefono che possono essere usati come numeri di telefono per l'accesso esterno. Il requisito per l'uso del routing diretto è diverso dal servizio di audioconferenza offerto alle organizzazioni non GCC High e non DoD in cui i numeri di telefono per l'accesso esterno sono forniti da Microsoft.
 
@@ -37,9 +37,9 @@ Con le audioconferenze con routing diretto per GCC High e DoD, l'organizzazione 
 
 ### <a name="step-1-get-audio-conferencing-with-direct-routing-for-gcc-high-or-dod-licenses"></a>Passaggio 1: Ottenere audioconferenze con routing diretto GCC licenze High o DoD 
 
-Per usare le audioconferenze in GCC High o DoD, l'organizzazione e gli utenti dell'organizzazione devono avere una audioconferenza con la licenza Di routing diretto assegnata. Ecco le licenze necessarie per abilitare le audioconferenze con routing diretto GCC High o DoD.
+Per usare le audioconferenze in GCC High o DoD, l'organizzazione e gli utenti dell'organizzazione devono avere una audioconferenza con una licenza di routing diretto assegnata. Ecco le licenze necessarie per abilitare l'audioconferenza con routing diretto per GCC High o DoD.
 
-- GCC Alta: una licenza per audioconferenza , GCC High Tenant per l'organizzazione e Audioconferenza, GCC licenze High per gli utenti.
+- GCC Alta: una licenza per audioconferenza , GCC High Tenant per l'organizzazione e audioconferenza, GCC licenze High per gli utenti.
 
 - DoD: Audioconferenza - Licenza DoD Tenant per l'organizzazione e Audioconferenza - Licenze DoD per gli utenti.
 
@@ -163,14 +163,14 @@ Per modificare le impostazioni del bridge di audioconferenza dell'organizzazione
 
 ### <a name="step-9-optional-set-the-phone-numbers-included-in-the-meeting-invites-of-the-users-in-your-organization"></a>Passaggio 9: (Facoltativo) Impostare i numeri di telefono inclusi negli inviti alla riunione degli utenti dell'organizzazione
 
-Per modificare il set di numeri di telefono inclusi negli inviti alla riunione degli utenti è l'organizzazione, vedere Impostare i numeri di telefono inclusi negli inviti [in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md).
+Per modificare il set di numeri di telefono inclusi negli inviti alle riunioni degli utenti è l'organizzazione, vedere Impostare i numeri di telefono inclusi negli inviti [in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md).
 
 ## <a name="audio-conferencing-capabilities-not-supported-in-audio-conferencing-with-direct-routing-for-gcc-high-and-dod"></a>Funzionalità di audioconferenza non supportate nelle audioconferenze con routing diretto GCC High e DoD
 
-Di seguito sono riportate le funzionalità di audioconferenza non supportate nelle audioconferenze con routing diretto per GCC High e DoD:
+Di seguito sono riportate le funzionalità di audioconferenza non supportate nelle audioconferenze con routing diretto GCC High e DoD:
 
 - Notifiche di entrata e uscita con la registrazione del nome. Per le audioconferenze con routing diretto, le notifiche di entrata e uscita vengono riprodotte nella riunione come toni.
 
 - Disabilitare l'uso di numeri verde per l'organizzatore specifico delle riunioni. I controlli a livello utente per limitare l'uso di numeri verde per partecipare alle riunioni dell'organizzazione non sono applicabili alle chiamate instradati tramite Routing diretto.
 
-- Invio di messaggi di posta elettronica di notifica agli utenti quando le impostazioni cambiano. I messaggi di posta elettronica di notifica di audioconferenza non sono supportati per le audioconferenze con routing diretto per GCC High e DoD.
+- Invio di messaggi di posta elettronica di notifica agli utenti quando le impostazioni cambiano. I messaggi di posta elettronica di notifica per i servizi di audioconferenza non sono supportati per le audioconferenze con routing diretto GCC high e dod.

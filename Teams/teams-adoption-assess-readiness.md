@@ -1,6 +1,6 @@
 ---
 title: Quanto è pronta l'organizzazione per Microsoft Teams?
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 11/01/2018
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 24f52433e3b52b728873d13eb06db65d8ecbaa60
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 105df2024ad67710b1de1e92208deeab6c7b9226
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60760414"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60865625"
 ---
 # <a name="how-ready-is-your-organization-for-microsoft-teams"></a>Quanto è pronta l'organizzazione per Microsoft Teams?
 
@@ -92,7 +92,7 @@ Ogni approccio dell'organizzazione cambia in modo diverso, a seconda dell'area g
     > [!TIP]
     > Personalizzare il tipo e l'importo della formazione in base alle competenze e alle persone. Mantenete aggiornati i corsi di formazione non appena verranno online le nuove funzionalità.
 
-3. Oltre a questa distribuzione del servizio, quante altre modifiche sono in corso? (*Adattabilità*) <br/>Le modifiche potrebbero includere Office/Windows, spostamenti di uffici, fusioni, rielivi e così via.
+3. Oltre a questa distribuzione del servizio, quante altre modifiche sono in corso? (*Adattabilità*) <br/>Le modifiche potrebbero includere Office/Windows, spostamenti in ufficio, fusioni, rielivi e così via.
     - Nessuno
     - 1-3 modifiche
     - Più di 3 modifiche

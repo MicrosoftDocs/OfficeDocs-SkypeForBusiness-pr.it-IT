@@ -2,7 +2,7 @@
 title: Configurare Skype for Business Server per l'utilizzo dell'archivio contatti unificato
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/7/2018
 audience: ITPro
@@ -14,18 +14,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 6aa17ae3-764e-4986-a900-85a3cdb8c1fc
 description: "Riepilogo: configurare l'archivio contatti unificato per Exchange Server e Skype for Business Server."
-ms.openlocfilehash: d75db18a799d1384a88a0b66cd1cd73d5e01c639
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ed28f57350e2ce1d7ed5f92d712bdf5ecc7f3de4
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765834"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60853670"
 ---
 # <a name="configure-skype-for-business-server-to-use-the-unified-contact-store"></a>Configurare Skype for Business Server per l'utilizzo dell'archivio contatti unificato
  
 **Riepilogo:** Configurare l'archivio contatti unificato Exchange Server 2016 o Exchange Server 2013 e Skype for Business Server.
   
-Utilizzando l'archivio contatti unificato, gli utenti mantengono un singolo elenco contatti e quindi dispongono di tali contatti disponibili in più applicazioni, tra cui Skype for Business, Microsoft Outlook 2013 e Microsoft Outlook Web App 2013. Quando si abilita l'archivio contatti unificato per un utente, i contatti dell'utente non vengono archiviati Skype for Business Server e recuperati in base alle esigenze. I contatti vengono invece archiviati in Exchange Server 2016 o Exchange Server 2013 e vengono recuperati utilizzando Exchange Web Services.
+Utilizzando l'archivio contatti unificato, gli utenti mantengono un singolo elenco contatti e quindi dispongono di tali contatti disponibili in più applicazioni, tra cui Skype for Business, Microsoft Outlook 2013 e Microsoft Outlook Web App 2013. Quando si abilita l'archivio contatti unificato per un utente, i contatti dell'utente non vengono archiviati in Skype for Business Server e recuperati in base alle esigenze. I contatti vengono invece archiviati in Exchange Server 2016 o Exchange Server 2013 e vengono recuperati utilizzando Exchange Web Services.
   
 > [!NOTE]
 > Tecnicamente, le informazioni di contatto sono archiviate in una coppia di cartelle trovate nella cassetta postale Exchange'utente. I contatti stessi vengono archiviati in una cartella denominata Skype for Business Contatti visibile agli utenti finali. I metadati relativi ai contatti vengono archiviati in una sottocartella non visibile agli utenti finali. 
@@ -34,7 +34,7 @@ Utilizzando l'archivio contatti unificato, gli utenti mantengono un singolo elen
 
 Se l'autenticazione da server a server tra Skype for Business Server e Exchange Server è già configurata, è stato abilitato anche l'archivio contatti unificato. non è necessaria alcuna configurazione aggiuntiva del server. Tuttavia, per spostare i contatti di un utente all'interno dell'archivio unificato è necessaria la configurazione di un ulteriore account utente. Per impostazione predefinita, i contatti utente vengono mantenuti in Skype for Business Server e non nell'archivio contatti unificato.
   
-L'accesso all'archivio contatti unificato viene gestito utilizzando i Skype for Business Server dei servizi utente. I criteri sono dotati di una proprietà singola (UcsAllowed), utilizzata per determinare il percorso in cui sono archiviati i contatti di un utente. Se un utente è gestito da un criterio di servizi utente in cui UcsAllowed è stato impostato su True ($True), i contatti dell'utente verranno archiviati nell'archivio contatti unificato. Se l'utente è gestito da un criterio di servizi utente in cui UcsAllowed è stato impostato su False ($False), i suoi contatti verranno archiviati in Skype for Business Server.
+L'accesso all'archivio contatti unificato viene gestito utilizzando i criteri Skype for Business Server servizi utente. I criteri sono dotati di una proprietà singola (UcsAllowed), utilizzata per determinare il percorso in cui sono archiviati i contatti di un utente. Se un utente è gestito da un criterio di servizi utente in cui UcsAllowed è stato impostato su True ($True), i contatti dell'utente verranno archiviati nell'archivio contatti unificato. Se l'utente è gestito da un criterio di servizi utente in cui UcsAllowed è stato impostato su False ($False), i suoi contatti verranno archiviati in Skype for Business Server.
   
 Quando si installa Skype for Business Server, viene installato anche un singolo criterio dei servizi utente (configurato nell'ambito globale). Il valore UcsAllowed in questo criterio è impostato su True, il che significa che, per impostazione predefinita, i contatti utente verranno archiviati nell'archivio contatti unificato (presupponendo che sia stato distribuito e configurato). Se si desidera eseguire la migrazione di tutti i contatti utente nell'archivio contatti unificato, non è necessario eseguire alcun'operazione. 
   
@@ -56,15 +56,15 @@ Dopo aver creato il nuovo criterio, bisognerà assegnarlo agli utenti ai quali s
 Grant-CsUserServicesPolicy -Identity "Ken Myer" -PolicyName "AllowUnifiedContactStore"
 ```
 
-Dopo l'assegnazione del criterio, Skype for Business Server inizierà a eseguire la migrazione dei contatti dell'utente nell'archivio contatti unificato. Al termine della migrazione, l'utente avrà i suoi contatti archiviati in Exchange anziché Skype for Business Server. Se l'utente accede a Lync 2013 al termine della migrazione, verrà visualizzata una finestra di messaggio che gli chiederà di disconnettersi da Skype for Business e quindi di eseguire di nuovo l'accesso per completare il processo. Agli utenti a cui non è stato assegnato questo criterio per utente non verrà eseguita la migrazione dei contatti nell'archivio contatti unificato. Questo perché tali utenti vengono gestiti dal criterio globale e l'utilizzo dell'archivio contatti unificato è stato disabilitato nel criterio globale.
+Dopo l'assegnazione del criterio, Skype for Business Server inizierà a eseguire la migrazione dei contatti dell'utente nell'archivio contatti unificato. Al termine della migrazione, i contatti dell'utente verranno archiviati in Exchange anziché Skype for Business Server. Se l'utente accede a Lync 2013 al termine della migrazione, verrà visualizzata una finestra di messaggio che gli chiederà di disconnettersi da Skype for Business e quindi di eseguire di nuovo l'accesso per completare il processo. Agli utenti a cui non è stato assegnato questo criterio per utente non verrà eseguita la migrazione dei contatti nell'archivio contatti unificato. Questo perché tali utenti vengono gestiti dal criterio globale e l'utilizzo dell'archivio contatti unificato è stato disabilitato nel criterio globale.
   
-È possibile verificare che i contatti di un utente siano stati migrati correttamente nell'archivio contatti unificato eseguendo il cmdlet [Test-CsUnifiedContactStore](/powershell/module/skype/test-csunifiedcontactstore?view=skype-ps) da Skype for Business Server Management Shell:
+È possibile verificare che i contatti di un utente siano stati migrati correttamente nell'archivio contatti unificato eseguendo il cmdlet [Test-CsUnifiedContactStore](/powershell/module/skype/test-csunifiedcontactstore?view=skype-ps) dall'interno di Skype for Business Server Management Shell:
   
 ```powershell
 Test-CsUnifiedContactStore -UserSipAddress "sip:kenmyer@litwareinc.com" -TargetFqdn "atl-cs-001.litwareinc.com"
 ```
 
-Se Test-CsUnifiedContactStore ha esito positivo, significa che i contatti per l'utente sip:kenmyer@ litwareinc .com sono stati migrati <span></span> <span></span> nell'archivio contatti unificato.
+Se Test-CsUnifiedContactStore ha esito positivo, significa che i contatti per l'utente sip:kenmyer@ litwareinc .com sono stati migrati nell'archivio contatti <span></span> <span></span> unificato.
   
 ## <a name="rolling-back-the-unified-contact-store"></a>Rollback (ripristino) dell'archivio unificato per i contatti
 
@@ -87,7 +87,7 @@ Questo comando assegna all'utente Ken Myer il nuovo criterio, e fa in modo che i
   
 La terminologia "impedisce la migrazione dei contatti di Ken nell'archivio contatti unificato" è importante tenere presente quando si utilizza l'archivio contatti unificato. Se si assegna semplicemente a Ken un nuovo criterio servizi utente, i contatti non verranno spostati dall'archivio contatti unificato. Quando un utente accede a Skype for Business Server, il sistema controlla i criteri dei servizi utente dell'utente per verificare se i suoi contatti devono essere conservati nell'archivio contatti unificato. Se la risposta è sì, ovvero se la proprietà UcsAllowed è impostata su $True, tali contatti verranno migrati nell'archivio contatti unificato, presupponendo che tali contatti non siano già presenti nell'archivio contatti unificato. Se la risposta è no, Skype for Business Server semplicemente ignora i contatti dell'utente e passa all'attività successiva. Ciò significa che Skype for Business Server i contatti di un utente non verranno spostati automaticamente dall'archivio contatti unificato, indipendentemente dal valore della proprietà UcsAllowed.
   
-Ciò significa anche che, dopo aver assegnato all'utente un nuovo criterio dei servizi utente, è necessario eseguire il cmdlet [Invoke-CsUcsRollback](/powershell/module/skype/invoke-csucsrollback?view=skype-ps) per spostare i contatti dell'utente fuori da Exchange Server e tornare a Skype for Business Server. Ad esempio, dopo avere assegnato a Ken Myer un nuovo criterio dei servizi utente, è possibile spostare i suoi contatti fuori dall'archivio unificato per i contatti, utilizzando il seguente comando:
+Ciò significa anche che, dopo aver assegnato all'utente un nuovo criterio servizi utente, è necessario eseguire il cmdlet [Invoke-CsUcsRollback](/powershell/module/skype/invoke-csucsrollback?view=skype-ps) per spostare i contatti dell'utente fuori da Exchange Server e tornare a Skype for Business Server. Ad esempio, dopo avere assegnato a Ken Myer un nuovo criterio dei servizi utente, è possibile spostare i suoi contatti fuori dall'archivio unificato per i contatti, utilizzando il seguente comando:
   
 ```powershell
 Invoke-CsUcsRollback -Identity "Ken Myer"

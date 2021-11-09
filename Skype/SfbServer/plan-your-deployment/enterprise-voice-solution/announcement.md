@@ -2,7 +2,7 @@
 title: Pianificare l'applicazione Annuncio in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -15,19 +15,19 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 2abee804-2599-48bb-90b2-15df0bae5e20
-description: Pianificazione dell'applicazione annuncio in Skype for Business Server VoIP aziendale, che configura cosa fare con le chiamate telefoniche a numeri di telefono non assegnati nelle organizzazioni. Include i requisiti per i file audio.
-ms.openlocfilehash: 26dbd9a0bf1513812cb08034216194ca67a92b39
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: Pianificazione dell'applicazione annuncio in Skype for Business Server VoIP aziendale, che configura le attività da eseguire con le chiamate telefoniche a numeri di telefono non assegnati nelle organizzazioni. Include i requisiti per i file audio.
+ms.openlocfilehash: 6dc2317c170585c6688e04b191182cf7ae500b12
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778096"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60838498"
 ---
 # <a name="plan-for-the-announcement-application-in-skype-for-business"></a>Pianificare l'applicazione Annuncio in Skype for Business
 
-Pianificazione dell'applicazione annuncio in Skype for Business Server VoIP aziendale, che configura cosa fare con le chiamate telefoniche a numeri di telefono non assegnati nelle organizzazioni. Include i requisiti per i file audio.
+Pianificazione dell'applicazione annuncio in Skype for Business Server VoIP aziendale, che configura le attività da eseguire con le chiamate telefoniche a numeri di telefono non assegnati nelle organizzazioni. Include i requisiti per i file audio.
 
-L'applicazione annuncio Skype for Business Server consente di configurare la gestione delle chiamate telefoniche in arrivo quando il numero composto è valido per l'organizzazione, ma non è assegnato a un utente o a un telefono. È possibile trasferire queste chiamate a una destinazione predeterminata (numero di telefono, URI SIP o segreteria telefonica) oppure riprodurre un annuncio audio o entrambe le opzioni. L'applicazione Annuncio consente di evitare il caso in cui un chiamante compone un numero errato e riceve un tono di occupato oppure il client SIP riceve un messaggio di errore. In questa sezione sono incluse informazioni sulla pianificazione specifiche per l'applicazione Annuncio
+L'Skype for Business Server Annuncio consente di configurare la gestione delle chiamate telefoniche in arrivo quando il numero composto è valido per l'organizzazione, ma non è assegnato a un utente o a un telefono. È possibile trasferire queste chiamate a una destinazione predeterminata (numero di telefono, URI SIP o segreteria telefonica) oppure riprodurre un annuncio audio o entrambe le opzioni. L'applicazione Annuncio consente di evitare il caso in cui un chiamante compone un numero errato e riceve un tono di occupato oppure il client SIP riceve un messaggio di errore. In questa sezione sono incluse informazioni sulla pianificazione specifiche per l'applicazione Annuncio
 
 Quando si distribuisce l'applicazione Annuncio, è necessario configurare una tabella dei numeri non assegnati che determina l'azione da eseguire quando un utente compone un numero non assegnato. La tabella dei numeri non assegnati contiene intervalli di numeri di telefono validi per l'organizzazione e specifica quale applicazione annuncio gestisce ogni intervallo. Quando un chiamante compone un numero di telefono valido per l'organizzazione ma non assegnato a nessuno, Skype for Business Server cerca il numero nella tabella di routing dei numeri non assegnati, identifica l'intervallo in cui rientra il numero e instrada la chiamata all'applicazione Annuncio specificata per tale intervallo. L'applicazione Annuncio risponde alla chiamata e riproduce un messaggio audio (se è stato configurato per farlo) e quindi disconnette la chiamata o la trasferisce a una destinazione predeterminata, ad esempio a un operatore. È possibile utilizzare Skype for Business Server Management Shell per configurare più messaggi audio o per trasferire destinazioni.
 
@@ -35,7 +35,7 @@ Il modo in cui configurare la tabella dei numeri non assegnati dipende da come s
 
 ## <a name="deployment-and-requirements"></a>Distribuzione e requisiti
 
-L'applicazione Annuncio viene installata automaticamente con l'applicazione Response Group. Le applicazioni Annuncio e Response Group sono componenti standard di una distribuzione VoIP aziendale: quando si distribuisce VoIP aziendale, entrambe le applicazioni vengono distribuite automaticamente.
+L'applicazione Annuncio viene installata automaticamente con l'applicazione Response Group. Le applicazioni Annuncio e Response Group sono componenti standard di una distribuzione VoIP aziendale: quando si distribuisce VoIP aziendale, entrambe queste applicazioni vengono distribuite automaticamente.
 
 ### <a name="software-requirements"></a>Requisiti software
 

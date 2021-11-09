@@ -2,7 +2,7 @@
 title: Gestire il mapping dei tasti per i comandi DTMF in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,17 +11,17 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: f91e80ee-a587-4a1b-ac8f-12fa102c098c
-description: 'Riepilogo: informazioni su come gestire il mapping dei tasti dei comandi DTMF (Dual-Tone Multi-Frequency) in Skype for Business Server.'
-ms.openlocfilehash: bd9f5b4e4560d3b89e713782ad2e8a19991a1382
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: 'Riepilogo: informazioni su come gestire il mapping dei tasti dei comandi DTMF (Dual Tone Multi-Frequency) in Skype for Business Server.'
+ms.openlocfilehash: f4b380bddb9a0bc244887c44c85f02157f75b0e6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763854"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60837638"
 ---
 # <a name="manage-key-mapping-for-dtmf-commands-in-skype-for-business-server"></a>Gestire il mapping dei tasti per i comandi DTMF in Skype for Business Server
  
-**Riepilogo:** Informazioni su come gestire il mapping dei tasti dei comandi DTMF (Dual-Tone Multi-Frequency) in Skype for Business Server.
+**Riepilogo:** Informazioni su come gestire il mapping dei tasti dei comandi DTMF (Dual Tone Multi-Frequency) in Skype for Business Server.
   
 Gli utenti delle conferenze telefoniche con accesso esterno possono premere i tasti sulla tastiera del telefono per eseguire comandi DTMF (Dual-Tone Multi-Frequency). I comandi DTMF consentono agli utenti che affollano una conferenza di controllare le impostazioni della conferenza (ad esempio, la disattivazione e l'attivazione dell'audio o il blocco e lo sblocco della conferenza) utilizzando la tastiera del telefono. 
   
@@ -33,7 +33,7 @@ Quando si creano nuove impostazioni DTMF per i siti, le impostazioni del sito ha
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo Cs-ServerAdministrator o CsAdministrator.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 3. Per visualizzare le impostazioni DTMF utilizzate per le conferenze telefoniche con accesso esterno, al prompt dei comandi eseguire il comando seguente:
     

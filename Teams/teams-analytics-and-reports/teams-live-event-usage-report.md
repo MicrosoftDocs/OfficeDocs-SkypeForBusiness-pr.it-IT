@@ -1,6 +1,6 @@
 ---
 title: Microsoft Teams di utilizzo degli eventi live
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 audience: Admin
@@ -17,12 +17,12 @@ description: Informazioni su come usare il report sull Teams di utilizzo degli e
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6c533a9c07c1c620dbc1bd2d26919bbf5251cf3
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e46c0e55eb4808f3c0b112dae72049649fc7f4a8
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763024"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60865545"
 ---
 # <a name="microsoft-teams-live-event-usage-report"></a>Microsoft Teams di utilizzo degli eventi live
 
@@ -41,7 +41,7 @@ Il Teams di utilizzo degli eventi in tempo reale nell'interfaccia di amministraz
 
 |Callout |Descrizione  |
 |--------|-------------|
-|**1**   |Il Teams evento live può essere visualizzato per le tendenze degli ultimi 7, 28 giorni o per un intervallo di date personalizzato impostato dall'utente. |
+|**1**   |Il Teams evento live può essere visualizzato per le tendenze degli ultimi 7, 28 giorni o un intervallo di date personalizzato impostato. |
 |**2**   |Ogni report ha una data in cui è stato generato. Il report riflette l'attività quasi in tempo reale quando la pagina viene aggiornata. |
 |**3**   |<ul><li>L'asse X del grafico è l'intervallo di date selezionato per il report.</li> <li> L'asse Y è il numero totale di visualizzazione.</li> </ul>Posizionare il puntatore del mouse sul punto in una data specifica per visualizzare il numero di visualizzazioni in tutti gli eventi live in quella data.|
 |**4**   |La tabella fornisce una suddivisione di ogni evento live. <ul><li>**Evento** è il nome visualizzato dell'evento live. Fare clic sul nome dell'evento [per ottenere maggiori dettagli](#view-event-details) sull'evento. </li> <li>**Ora inizio** si riferisce alla data e all'ora di inizio dell'evento.</li> <li>**Lo stato dell'evento** indica se l'evento ha avuto luogo.  </li><li>**Organizzatore** è il nome dell'organizzatore dell'evento.</li> <li>**I relatori** sono i nomi dei relatori dell'evento.</li><li>**I produttori** sono i nomi dei produttori di eventi.</li><li>**Visualizzazioni** è il numero di visualizzazioni univoche dopo il completamento dell'evento.</li><li>**Registrazione** indica se l'impostazione di registrazione è attivata o disattivata.</li><li>**Tipo di produzione** indica se l'evento viene prodotto in Teams da un'applicazione o un dispositivo esterno.</li></li> </ul>Si noti che se un account utente non esiste più in Azure AD, il nome utente viene visualizzato come "--" nella tabella. <br><br>Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella. |

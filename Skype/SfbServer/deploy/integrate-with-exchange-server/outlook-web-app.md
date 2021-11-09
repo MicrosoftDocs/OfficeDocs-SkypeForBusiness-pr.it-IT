@@ -2,7 +2,7 @@
 title: Configurare l'integrazione tra Skype for Business Server locali e Outlook Web App
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/7/2016
 audience: ITPro
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 95a20117-2064-43c4-94fe-cac892cadb6f
 description: 'Riepilogo: integrare Skype for Business Server e Outlook Web App.'
-ms.openlocfilehash: 9555303ad5bcb3ad15702f0cf1768549330e33cd
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: cebb8fed6b87dac6ec2c981730d303994c952741
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60738862"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60853680"
 ---
 # <a name="configure-integration-between-on-premises-skype-for-business-server-and-outlook-web-app"></a>Configurare l'integrazione tra Skype for Business Server locali e Outlook Web App
 
@@ -35,7 +35,7 @@ I clienti che usano distribuzioni Skype for Business Server locali possono confi
 
 ## <a name="configure-a-shared-sip-address-space"></a>Configurare uno spazio di indirizzi SIP condiviso
 
-Per integrare gli indirizzi locali Skype for Business Server con Exchange Online, è necessario configurare uno spazio di indirizzi SIP condiviso. Lo stesso spazio di indirizzi del dominio SIP è supportato sia dal Skype for Business Server che dal Exchange Online servizio.
+Per integrare gli indirizzi locali Skype for Business Server con Exchange Online, è necessario configurare uno spazio di indirizzi SIP condiviso. Lo stesso spazio di indirizzi di dominio SIP è supportato sia dal Skype for Business Server che dal Exchange Online servizio.
 
 Utilizzando Skype for Business Server Management Shell, configurare il server perimetrale per la federazione eseguendo il cmdlet **Set-CSAccessEdgeConfiguration,** utilizzando i parametri visualizzati nell'esempio seguente:
 

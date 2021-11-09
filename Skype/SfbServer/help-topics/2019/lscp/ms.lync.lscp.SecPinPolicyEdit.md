@@ -2,7 +2,7 @@
 title: Criteri PIN Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 344b9be6-dd37-46bc-bfa4-5c06f6666aa7
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 5314f334ea570074e9a74e39478ed3adfa512cbd
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 00d4b0eb0aa8f163c770f436241a18f1d45793de
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60742662"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60852630"
 ---
 # <a name="pin-policy-create-new-or-edit-existing"></a>Criteri PIN: crearne di nuovi o modificare quelli esistenti
 

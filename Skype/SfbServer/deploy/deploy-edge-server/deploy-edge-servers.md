@@ -2,7 +2,7 @@
 title: Distribuire server perimetrali in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,18 +15,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 63c7251c-080a-4175-99a6-f86d0266d6bc
 description: "Riepilogo: informazioni su come distribuire i server perimetrali nell'Skype for Business Server locale."
-ms.openlocfilehash: db09f8560b41fd43a7d005b70866888e0db27c75
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 30beb7b42b2f77e82d83768d918102cbaa0f7f5e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773326"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60852730"
 ---
 # <a name="deploy-edge-servers-in-skype-for-business-server"></a>Distribuire server perimetrali in Skype for Business Server
  
 **Riepilogo:** Informazioni su come distribuire i server perimetrali nell'Skype for Business Server locale.
   
-Le sezioni seguenti contengono i passaggi che devono essere seguiti dopo che è stato esaminato il piano di Skype for Business Server [per](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md) le distribuzioni di server perimetrali nella documentazione Skype for Business Server distribuzione. I passaggi di distribuzione sono i seguenti:
+Le sezioni seguenti contengono i passaggi che devono essere seguiti dopo la revisione del piano di Skype for Business Server per le distribuzioni di server perimetrali [nella](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md) documentazione Skype for Business Server documentazione. I passaggi di distribuzione sono i seguenti:
   
 - Interfacce di rete
     
@@ -38,7 +38,7 @@ Le sezioni seguenti contengono i passaggi che devono essere seguiti dopo che è 
     
 ## <a name="network-interfaces"></a>Interfacce di rete
 
-Come illustrato in Pianificazione, l'interfaccia di rete verrà configurata con DNS nella rete perimetrale che ospita i server perimetrali oppure senza DNS nella rete perimetrale.
+Come illustrato in Pianificazione, l'interfaccia di rete verrà configurata con DNS nella rete perimetrale che ospita i server perimetrali o senza DNS nella rete perimetrale.
   
 ### <a name="interface-configuration-with-dns-servers-in-the-perimeter-network"></a>Configurazione dell'interfaccia con i server DNS nella rete perimetrale
 
@@ -51,11 +51,11 @@ Come illustrato in Pianificazione, l'interfaccia di rete verrà configurata con 
     
    a. Tre indirizzi IP statici nella subnet della rete perimetrale esterna e puntano il gateway predefinito all'interfaccia interna del firewall esterno. Configurare le impostazioni DNS della scheda in modo che puntino a una coppia di server DNS perimetrali.
     
-   b. Un indirizzo IP statico nella subnet della rete perimetrale esterna e puntare il gateway predefinito all'interfaccia interna del firewall esterno. Configurare le impostazioni DNS della scheda in modo che puntino a una coppia di server DNS perimetrali. Questa configurazione è accettabile solo se in precedenza la topologia è stata configurata in modo da avere valori non standard nelle assegnazioni delle porte, come illustrato nell'articolo Creare la topologia Edge per [Skype for Business Server.](create-your-edge-topology.md)
+   b. Un indirizzo IP statico nella subnet della rete perimetrale esterna e puntare il gateway predefinito all'interfaccia interna del firewall esterno. Configurare le impostazioni DNS della scheda in modo che puntino a una coppia di server DNS perimetrali. Questa configurazione è accettabile SOLO se in precedenza la topologia è stata configurata in modo da avere valori non standard nelle assegnazioni delle porte, come illustrato nell'articolo Creare la topologia [Edge](create-your-edge-topology.md) per Skype for Business Server.
     
 3. Nell'interfaccia interna configurare un IP statico nella subnet della rete perimetrale interna e non impostare un gateway predefinito. Configurare le impostazioni DNS della scheda in modo che puntino ad almeno un server DNS, ma preferibilmente a una coppia di server DNS perimetrali.
     
-4. Creare route statiche persistenti nell'interfaccia interna a tutte le reti interne in cui risiedono client, Skype for Business Server e Exchange messaggistica unificata.
+4. Creare route statiche persistenti nell'interfaccia interna a tutte le reti interne in cui risiedono client, Skype for Business Server e Exchange di messaggistica unificata.
     
 ### <a name="interface-configuration-without-dns-servers-in-the-perimeter-network"></a>Configurazione dell'interfaccia senza server DNS nella rete perimetrale
 
@@ -68,11 +68,11 @@ Come illustrato in Pianificazione, l'interfaccia di rete verrà configurata con 
     
    a. Tre indirizzi IP statici nella subnet della rete perimetrale esterna. Sarà inoltre necessario configurare il gateway predefinito nell'interfaccia esterna, ad esempio definendo il router con connessione Internet o il firewall esterno come gateway predefinito. Configurare le impostazioni DNS della scheda in modo che puntino a un server DNS esterno, idealmente una coppia di server DNS esterni.
     
-   b. Un indirizzo IP statico nella subnet della rete perimetrale esterna. Sarà inoltre necessario configurare il gateway predefinito nell'interfaccia esterna, ad esempio definendo il router con connessione Internet o il firewall esterno come gateway predefinito. Configurare le impostazioni DNS della scheda in modo che puntino a un server DNS esterno o idealmente a una coppia di server DNS esterni. Questa configurazione è accettabile solo se in precedenza la topologia è stata configurata in modo da avere valori non standard nelle assegnazioni delle porte, come illustrato nell'articolo Creare la topologia Edge per [Skype for Business Server.](create-your-edge-topology.md)
+   b. Un indirizzo IP statico nella subnet della rete perimetrale esterna. Sarà inoltre necessario configurare il gateway predefinito nell'interfaccia esterna, ad esempio definendo il router con connessione Internet o il firewall esterno come gateway predefinito. Configurare le impostazioni DNS della scheda in modo che puntino a un server DNS esterno o idealmente a una coppia di server DNS esterni. Questa configurazione è accettabile SOLO se in precedenza la topologia è stata configurata in modo da avere valori non standard nelle assegnazioni delle porte, come illustrato nell'articolo Creare la topologia [Edge](create-your-edge-topology.md) per Skype for Business Server.
     
 3. Nell'interfaccia interna configurare un IP statico nella subnet della rete perimetrale interna e non impostare un gateway predefinito. Lasciare vuote anche le impostazioni DNS della scheda.
     
-4. Creare route statiche persistenti nell'interfaccia interna a tutte le reti interne in cui risiedono client, Skype for Business Server e Exchange messaggistica unificata.
+4. Creare route statiche persistenti nell'interfaccia interna a tutte le reti interne in cui risiedono client, Skype for Business Server e Exchange di messaggistica unificata.
     
 5. Modificare il file HOST in ogni server perimetrale in modo che contenga un record per il server hop successivo o l'IP virtuale (VIP). Questo record sarà il server Director, edizione Standard server o il pool Front End configurato come indirizzo dell'hop successivo del server perimetrale in Generatore di topologie. Se si utilizza il bilanciamento del carico DNS, includere una riga per ogni membro del pool dell'hop successivo.
     
@@ -86,7 +86,7 @@ Per completare correttamente questi passaggi, è necessario aver seguito i passa
     
 3. Avviare la **Distribuzione guidata**.
     
-4. Una volta aperta la procedura guidata, fare clic su **Installa o aggiorna Skype for Business Server sistema**.
+4. Una volta aperta la procedura guidata, fare **clic su Installa o aggiorna Skype for Business Server sistema**.
     
 5. La procedura guidata eseguirà controlli per verificare se è già installato qualcosa. Poiché questa è la prima volta che si esegue la procedura guidata, è necessario iniziare dal **passaggio 1. Installare l'archivio di configurazione locale.**
     
@@ -100,7 +100,7 @@ Per completare correttamente questi passaggi, è necessario aver seguito i passa
     
 10. Nella Distribuzione guidata fare clic **su Passaggio 2. Installazione o rimozione di Skype for Business Server componenti**. La procedura guidata installerà quindi i Skype for Business Server Edge specificati nel file di configurazione XML archiviato nel computer locale.
     
-11. Al termine dell'installazione, è possibile passare ai passaggi della **sezione Certificati** riportata di seguito.
+11. Al termine dell'installazione, è possibile passare ai passaggi descritti nella **sezione Certificati** riportata di seguito.
     
 ## <a name="certificates"></a>Certificati
 
@@ -327,7 +327,7 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
     
 &nbsp;&nbsp;&nbsp;j. Nella pagina **Nome soggetto/Nomi soggetto alternativi** le informazioni necessarie devono essere popolate automaticamente dalla procedura guidata.
     
-&nbsp;&nbsp;&nbsp;k. Nella pagina **Impostazione dominio SIP nei nomi soggetto alternativi (SAN, Subject Alternate Names)** selezionare la casella di controllo dominio per aggiungere un sip.<sipdomain> nell'elenco dei nomi alternativi soggetto.
+&nbsp;&nbsp;&nbsp;k. Nella pagina **Impostazione dominio SIP nei nomi soggetto alternativi (SAN, Subject Alternate Names)** selezionare la casella di controllo dominio per aggiungere un sip.\<sipdomain> nell'elenco dei nomi alternativi soggetto.
     
 &nbsp;&nbsp;&nbsp;l. Nella pagina **Configura nomi soggetto alternativi** aggiuntivi è necessario aggiungere eventuali nomi alternativi soggetto aggiuntivi necessari.
     
@@ -408,7 +408,7 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
     
 &nbsp;&nbsp;&nbsp;n. Fare clic su **OK** nella finestra di dialogo di conclusione dell'esportazione.
     
-&nbsp;&nbsp;&nbsp;o. Sarà ora necessario tornare alla sezione Importa il certificato prima di questo e importare il certificato in tutti i server perimetrali rimanenti, quindi procedere con l'assegnazione, di seguito.
+&nbsp;&nbsp;&nbsp;o. È ora necessario tornare alla sezione Importare il certificato prima di questo e importare il certificato in tutti i server perimetrali rimanenti, quindi procedere con l'assegnazione, di seguito.
     
  
 ### <a name="4-assign-the-certificate"></a>4. Assegnare il certificato

@@ -2,7 +2,7 @@
 title: Selezionare un sito
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 09472310-a40f-4360-b6f1-1a9ac8888965
 description: Utilizzare la finestra di dialogo Seleziona un sito per trovare i siti disponibili nell'ambiente. Per utilizzare un sito esistente, fare clic su un sito nell'elenco e quindi fare clic su OK.
-ms.openlocfilehash: e73d7db8b652f3d4ece5618dd2a29e56ead3b0ea
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f0fffc815a8a2cd5237b07c80aee1122006f5186
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60748172"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60837988"
 ---
 # <a name="select-a-site"></a>Selezionare un sito
 

@@ -2,7 +2,7 @@
 title: Distribuire Video Interop Server in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: bb7d2abd-d033-4d7d-b588-6d9228c3eccf
 description: 'Riepilogo: distribuire il ruolo del server VIS in Skype for Business Server.'
-ms.openlocfilehash: 31c6638eda9ded797babf96115580d5565a1a375
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 932bbbaea04bc672c21767c055c53f10df5dc715
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745282"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60853690"
 ---
 # <a name="deploy-video-interop-server-in-skype-for-business-server"></a>Distribuire Video Interop Server in Skype for Business Server
  
 **Riepilogo:** Distribuire il ruolo del server VIS in Skype for Business Server.
   
-Skype for Business Server possono ora integrarsi direttamente con i sistemi di teleconferenza Cisco (VTC), ad esempio Cisco C60 o Cisco MX300. Ciò richiede l'introduzione di un nuovo ruolo del server denominato Video Interop Server (VIS) e la corretta configurazione sia del VIS che dell'attrezzatura con cui interagisce. Un VTC si registra con l'infrastruttura Cisco esistente, ad esempio Cisco Unified Communication Manager (CUCM), e viene utilizzato un trunk SIP video tra CUCM e il pool VIS.
+Skype for Business Server può ora integrarsi direttamente con i sistemi di teleconferenza Cisco (VTC), ad esempio Cisco C60 o Cisco MX300. Ciò richiede l'introduzione di un nuovo ruolo del server denominato Video Interop Server (VIS) e la corretta configurazione sia del VIS che dell'attrezzatura con cui interagisce. Un VTC si registra con l'infrastruttura Cisco esistente, ad esempio Cisco Unified Communication Manager (CUCM), e viene utilizzato un trunk SIP video tra CUCM e il pool VIS.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 

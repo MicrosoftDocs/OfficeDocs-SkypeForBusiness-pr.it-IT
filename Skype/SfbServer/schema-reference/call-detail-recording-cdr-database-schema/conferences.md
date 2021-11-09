@@ -2,7 +2,7 @@
 title: Tabella Conferenze in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 7/15/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c3da6271-b3c6-4898-894f-10456ec794d0
 description: Ogni record in questa tabella contiene i dettagli delle chiamate su una conferenza.
-ms.openlocfilehash: 22d394ca447852a32d8028770d7ceefea7adbcf1
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: cbcda30c47b4bbeac012f80d64f297a9a1259f2c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763414"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60838448"
 ---
 # <a name="conferences-table-in-skype-for-business-server-2015"></a>Tabella Conferenze in Skype for Business Server 2015
  
@@ -28,7 +28,7 @@ Ogni record in questa tabella contiene i dettagli delle chiamate su una conferen
 |:-----|:-----|:-----|:-----|
 |**SessionIdTime** <br/> |datetime  <br/> |Principale  <br/> |Ora in cui la richiesta di conferenza è stata acquisita dall'agente di registrazione chiamata. Utilizzato solo come chiave primaria per identificare in modo univoco un'istanza di conferenza.  <br/> |
 |**SessionIdSeq** <br/> |int  <br/> |Principale  <br/> |Numero ID per identificare la sessione. Utilizzato insieme a **SessionIdTime** per identificare in modo univoco un'istanza di conferenza. * <br/> |
-|**ConferenceUriId** <br/> |int  <br/> |Foreign  <br/> |URI della conferenza. Per ulteriori informazioni, vedere la tabella [ConferenceUris Skype for Business Server 2015.](conferenceuris.md) <br/> |
+|**ConferenceUriId** <br/> |int  <br/> |Foreign  <br/> |URI della conferenza. Per ulteriori informazioni, vedere la [tabella ConferenceUris Skype for Business Server 2015.](conferenceuris.md) <br/> |
 |**ConfInstance** <br/> |uniqueidentifier  <br/> | <br/> |Utile per conferenze ricorrenti; ogni istanza di una conferenza ricorrente ha lo stesso **ConferenceUri,** ma avrà una **ConfInstance diversa.** <br/> |
 |**ConferenceStartTime** <br/> |datetime  <br/> | <br/> |Ora di inizio conferenza.  <br/> |
 |**ConferenceEndTime** <br/> |datetime  <br/> | <br/> |Ora di inizio conferenza.  <br/> |

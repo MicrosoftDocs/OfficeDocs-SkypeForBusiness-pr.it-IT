@@ -2,7 +2,7 @@
 title: Configurazione archiviazione
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 9c2fd164-a9b8-40e6-a1c4-423a7fe34aba
 description: "Le configurazioni di archiviazione consentono di controllare le opzioni di archiviazione per la distribuzione Skype for Business Server, inclusa l'abilitazione e la disabilitazione delle opzioni seguenti:"
-ms.openlocfilehash: d8dadcb81254254b96802870e8d4e9a22da038a1
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b2babf5e5fdc5c1a0f7b01bb0a22c516fde062d5
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60744732"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60838808"
 ---
 # <a name="archiving-configuration"></a>Configurazione archiviazione
  
@@ -41,7 +41,7 @@ Le configurazioni di archiviazione includono la configurazione globale e, facolt
 - **Configurazione pool (facoltativo)** È possibile specificare una o più configurazioni di archiviazione del pool per controllare le opzioni di archiviazione per un pool specifico. La configurazione di un pool sostituisce la configurazione globale e la configurazione del sito, ma solo per i pool specificati nelle configurazioni del pool di archiviazione. È possibile modificare o eliminare le configurazioni del pool.
     
 > [!NOTE]
-> Le configurazioni di archiviazione si applicano agli utenti ospitati in Skype for Business Server e, se si utilizza Exchange per archiviare i dati di archiviazione in Microsoft Exchange, agli utenti ospitati in Exchange 2013 ma sono implementati in modo leggermente diverso per gli utenti ospitati in Exchange 2013. Le differenze sono descritte nella sezione successiva. 
+> Le configurazioni di archiviazione si applicano agli utenti ospitati in Skype for Business Server e, se si utilizza Exchange per archiviare i dati di archiviazione in Microsoft Exchange, agli utenti ospitati in Exchange 2013, ma sono implementati in modo leggermente diverso per gli utenti ospitati in Exchange 2013. Le differenze sono descritte nella sezione successiva. 
   
 Nella **pagina Configurazione archiviazione** sono elencati i criteri di archiviazione configurati per la distribuzione. Vengono inoltre visualizzati il nome del criterio, l'ambito (globale, sito o pool) e le opzioni di archiviazione abilitate per ogni configurazione di archiviazione. Nella pagina **Configurazione archiviazione** sono disponibili le opzioni seguenti:
 - **Nuovo** È possibile aggiungere una o più delle configurazioni di archiviazione facoltative seguenti.

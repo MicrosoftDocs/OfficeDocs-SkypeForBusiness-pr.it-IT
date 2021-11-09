@@ -1,6 +1,6 @@
 ---
 title: Microsoft Teams fase di adozione 2 - Esperimento
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 11/01/2018
@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
-description: In questo articolo imparerai a condurre la fase sperimentale di Microsoft Teams adozione.
+description: In questo articolo imparerai a svolgere la fase sperimentale di adozione Microsoft Teams sperimentale.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,16 +21,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 177ce9d4ee32f1cb620482acfdbf12086e5b5966
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 882b842e0906426e46132c0a1de10cef5762ea72
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745462"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60865565"
 ---
 # <a name="microsoft-teams-adoption-phase-2---experiment"></a>Microsoft Teams fase di adozione 2 - Esperimento
 
-Ora si è in grado di avere un team di progetto eccezionale e informazioni critiche sull'organizzazione e si è pronti a sperimentare con Teams. È consigliabile sperimentare da 2 a 3 progetti del mondo reale all'interno di un gruppo guidato da una stakeholder con cui si ha una relazione positiva e nella cui organizzazione ci sono un numero sufficiente di primi utenti per fornire feedback significativi. Indipendentemente dal fatto che l'organizzazione sia di grandi dimensioni o di piccole dimensioni, è consigliabile completare questa fase per ottenere informazioni su come Teams migliorare la collaborazione oltre a usare le funzionalità di chat e archiviazione di file.  
+Ora si è in grado di avere un team di progetto eccezionale e informazioni critiche sull'organizzazione e si è pronti a sperimentare con Teams. È consigliabile sperimentare da 2 a 3 progetti del mondo reale all'interno di un gruppo guidato da una stakeholder con cui si ha una relazione positiva e nella cui organizzazione ci sono un numero sufficiente di primi utenti per fornire feedback significativi. Indipendentemente dal fatto che l'organizzazione sia di grandi dimensioni o di piccole dimensioni, è consigliabile completare questa fase per ottenere informazioni approfondite su come Teams migliorare la collaborazione oltre a usare le funzionalità di archiviazione di chat e file.  
 
 In questa fase verranno completati i passaggi seguenti:
 

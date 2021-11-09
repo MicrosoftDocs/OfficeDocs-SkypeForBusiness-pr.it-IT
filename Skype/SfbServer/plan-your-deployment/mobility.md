@@ -2,7 +2,7 @@
 title: Pianificare la mobilità per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 ms.date: 2/17/2018
 manager: serdars
 audience: ITPro
@@ -14,18 +14,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 7117eff5-6860-4673-b366-afe0756c4bb2
 description: Pianificare l'implementazione di Mobility per Skype for Business Server.
-ms.openlocfilehash: 5d78739be230c7c68157d8bae474bf63133a96d7
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: a323e9e68ee78af1ea80979c12eb6b0a66906041
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60746712"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60852940"
 ---
 # <a name="plan-for-mobility-for-skype-for-business-server"></a>Pianificare la mobilità per Skype for Business Server
  
 Pianificare l'implementazione di Mobility per Skype for Business Server.
   
-Con Skype for Business Server, puoi distribuire la funzionalità Per dispositivi mobili per fornire Skype for Business Server funzionalità nei dispositivi mobili. In questo articolo vengono fornite informazioni dettagliate sulla funzionalità per dispositivi mobili e viene illustrata la pianificazione della distribuzione.
+Con Skype for Business Server, puoi distribuire la funzionalità per dispositivi mobili per fornire Skype for Business Server funzionalità nei dispositivi mobili. In questo articolo vengono fornite informazioni dettagliate sulla funzionalità per dispositivi mobili e viene illustrata la pianificazione della distribuzione.
   
 La funzionalità per dispositivi mobili per Skype for Business Server è in grado di supportare i client mobili per Skype for Business, nonché i client Lync che tornano alla versione 2010. Dopo la distribuzione, gli utenti possono connettersi alla distribuzione di Skype for Business Server usando i dispositivi mobili iOS, Android e Windows Phone supportati per sfruttare diverse funzionalità, tra cui VoIP aziendale. Di seguito è stato incluso un elenco parziale e puoi anche controllare Confronto funzionalità [client desktop](clients-and-devices/desktop-feature-comparison.md) per Skype for Business per altre info:
   
@@ -49,16 +49,16 @@ La funzionalità per dispositivi mobili per Skype for Business Server è in grad
     
 - Video partecipante (H.264)
     
-- Visualizzazione del contenuto delle riunioni (PowerPoint condivisione di applicazioni e desktop)
+- Visualizzazione del contenuto delle riunioni (PowerPoint e condivisione desktop/applicazioni)
     
 Tutto questo viene ottenuto tramite l'API Web Unified Communications o UCWA. UCWA è stato introdotto per la prima volta in Lync Server 2013 ed è ancora in uso per Skype for Business Server. Esiste una funzionalità aggiuntiva per la comunicazione con i client Lync 2010, ovvero il servizio per dispositivi mobili (MCX). Si tratta di servizi gratuiti, che consentono ai client Lync Server 2010 e 2013, nonché ai client Skype for Business, di accedere correttamente Skype for Business Server distribuzione.
   
 > [!NOTE]
 > Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
   
-È importante notare che, sebbene tutte queste funzionalità siano disponibili dopo l'implementazione di Mobility, potrebbero funzionare in modo leggermente diverso in alcuni dispositivi. Abbiamo un sito Web che illustra quali funzionalità funzionano su quali dispositivi, in Confronto delle funzionalità dei client mobili [per Skype for Business](clients-and-devices/mobile-feature-comparison.md). Abbiamo anche alcune informazioni su dispositivi e sistema operativo importanti in [Plan for clients and devices](clients-and-devices/clients-and-devices.md).
+È importante notare che, sebbene tutte queste funzionalità siano disponibili dopo l'implementazione di Mobility, potrebbero funzionare in modo leggermente diverso in alcuni dispositivi. Abbiamo un sito Web che illustra le funzionalità che funzionano su quali dispositivi, in Confronto delle funzionalità dei client mobili [per Skype for Business](clients-and-devices/mobile-feature-comparison.md). Abbiamo anche alcune informazioni su dispositivi e sistema operativo importanti in [Plan for clients and devices](clients-and-devices/clients-and-devices.md).
   
-Per dispositivi mobili viene utilizzata la funzionalità di individuazione automatica, che consente ai client di individuare automaticamente i servizi Web di Skype for Business Server senza che gli utenti dovranno immettere alcun URL (non dovranno nemmeno conoscerli). Se è necessario eseguire alcune operazioni di risoluzione dei problemi, l'immissione manuale degli URL è ancora supportata.
+I dispositivi mobili usano la funzionalità di individuazione automatica, che consente ai client di individuare automaticamente i servizi Web di Skype for Business Server senza che gli utenti dovranno immettere alcun URL (non dovranno nemmeno conoscerli). Se è necessario eseguire alcune operazioni di risoluzione dei problemi, l'immissione manuale degli URL è ancora supportata.
   
 Sono supportate anche le notifiche push, per quando l'app Skype for Business non è in esecuzione in background (o per i dispositivi mobili che non supportano le applicazioni in esecuzione in background). A un dispositivo mobile viene inviata una notifica push relativa a un evento che si verifica quando il dispositivo o l'app non è attiva. Un buon esempio è la mancanza di un messaggio di messaggistica istantanea quando il telefono non è attivo, il che comporta l'invio di una notifica push (viene presentata come avviso popup o notifica, ad esempio quando l'app è in esecuzione in background). Con le notifiche push, gli utenti non mancheranno le chiamate vocali o di messaggistica istantanea.
   
@@ -79,7 +79,7 @@ Esistono quattro servizi che comprendono Mobility per Skype for Business Server:
   
 - **UNIFIED Communications Web API (UCWA)**
     
-    Fornisce servizi per le comunicazioni in tempo reale con client mobili e Web per Skype for Business Server. Quando Skype for Business Server distribuzione, viene creata una directory virtuale UCWA nei servizi Web interni ed esterni. Componente virtuale in questa directory virtuale che accetta chiamate da client abilitati per UCWA. Le app client comunicano tramite un'interfaccia REST (Representational State Transfer) per:
+    Fornisce servizi per le comunicazioni in tempo reale con client mobili e Web per Skype for Business Server. Quando Skype for Business Server viene distribuita, viene creata una directory virtuale UCWA nei servizi Web interni ed esterni. Componente virtuale in questa directory virtuale che accetta chiamate da client abilitati per UCWA. Le app client comunicano tramite un'interfaccia REST (Representational State Transfer) per:
     
   - presence
     
@@ -97,7 +97,7 @@ Esistono quattro servizi che comprendono Mobility per Skype for Business Server:
     
 - **Servizio per dispositivi mobili (MCX)**
     
-    Supporta Skype for Business Server, ad esempio messaggistica istantanea, presenza e contatti, nei dispositivi mobili. Il servizio per dispositivi mobili viene installato in ogni Front End Server di ogni pool destinato a supportare Skype for Business Server funzionalità nei dispositivi mobili. Quando si installa Skype for Business Server 2015 viene creata una nuova directory virtuale (Mcx) sia nei siti Web interni che esterni nei Front End Server.
+    Supporta Skype for Business Server, ad esempio messaggistica istantanea, presenza e contatti, nei dispositivi mobili. Il servizio per dispositivi mobili viene installato in ogni Front End Server di ogni pool destinato a supportare Skype for Business Server funzionalità nei dispositivi mobili. Quando si installa Skype for Business Server 2015 viene creata una nuova directory virtuale (Mcx) sia nei siti Web interni che in siti Web esterni nei Front End Server.
     
     > [!NOTE]
     > Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
@@ -128,13 +128,13 @@ Il servizio per dispositivi mobili è supportato nei Front End Server se colloca
 ## <a name="technical-requirements"></a>Requisiti tecnici
 <a name="TechRequirements"> </a>
 
-È importante pianificare i vari scenari di applicazioni per dispositivi mobili che possono verificarsi per gli utenti di dispositivi mobili. Ad esempio, un utente potrebbe iniziare a usare un'app per dispositivi mobili all'esterno del lavoro connettendosi tramite una rete 3G, quindi passare alla rete aziendale Wi-Fi quando raggiunge il lavoro. Possono passare al 4G quando lasciano l'edificio. La pianificazione ora consentirà di supportare queste transizioni di rete e garantire un'esperienza utente coerente.
+È importante pianificare i vari scenari di applicazioni per dispositivi mobili che possono verificarsi per gli utenti di dispositivi mobili. Ad esempio, un utente potrebbe iniziare a usare un'app per dispositivi mobili al di fuori del lavoro connettendosi tramite una rete 3G e quindi passare alla rete aziendale Wi-Fi quando raggiunge il lavoro. Possono passare al 4G quando lasciano l'edificio. La pianificazione ora consentirà di supportare queste transizioni di rete e garantire un'esperienza utente coerente.
   
 ### <a name="dns-configuration"></a>Configurazione del sistema DNS
 
 I servizi per dispositivi mobili Mcx e UCWA utilizzano DNS nello stesso modo. Con Individuazione automatica, i dispositivi mobili usano DNS per individuare le risorse. Durante la ricerca DNS, un tentativo di connessione all'FQDN associato al record DNS interno (lyncdiscoverinternal.[ nome di dominio interno]). Se non è possibile utilizzare il record DNS interno per effettuare tale connessione, viene tentata una seconda connessione, questa volta al record DNS esterno (lyncdiscover.[ sipdomain]). Allora perché ne hai due? Un dispositivo mobile interno alla rete sarà in grado di utilizzare l'URL di individuazione automatica interno. I dispositivi mobili esterni utilizzeranno l'URL di individuazione automatica esterno. In entrambi i casi, il servizio di individuazione automatica restituirà tutti gli URL del servizio Web per il pool principale dell'utente, che include il servizio per dispositivi mobili (Mcx e UCWA).
   
-Si prevede che le richieste di individuazione automatica esterne verranno inviate attraverso il proxy inverso configurato per Skype for Business Server. Tuttavia, sia l'URL del servizio per dispositivi mobili interno che l'URL del servizio per dispositivi mobili esterno sono associati all'FQDN dei servizi Web esterni. Pertanto, indipendentemente dal fatto che un dispositivo mobile sia interno o esterno alla rete, il dispositivo si connette sempre al servizio Skype for Business Server Mobility esternamente, tramite il proxy inverso.
+Si prevede che le richieste di individuazione automatica esterne verranno inviate tramite il proxy inverso configurato per Skype for Business Server. Tuttavia, sia l'URL del servizio per dispositivi mobili interno che l'URL del servizio per dispositivi mobili esterno sono associati all'FQDN dei servizi Web esterni. Pertanto, indipendentemente dal fatto che un dispositivo mobile sia interno o esterno alla rete, il dispositivo si connette sempre al servizio Skype for Business Server Mobility esternamente, tramite il proxy inverso.
   
 > [!NOTE]
 > Come abbiamo appena fatto vedere, tutto il traffico del servizio per dispositivi mobili (interno ed esterno) passa attraverso il proxy inverso. Ma a volte si verifica un problema quando il traffico interno esce da un'interfaccia, solo per provare a tornare sulla stessa interfaccia. Ciò può violare le regole di sicurezza di spoofing (formalmente denominato spoofing dei pacchetti TCP). Dovrai consentire a **Hair Pinning di** avere la funzione Mobility.
@@ -244,15 +244,15 @@ Le notifiche push vengono usate per le applicazioni per dispositivi mobili che s
   
 |**Funzionalità**|**Nome parametro**|**Descrizione**|**Impostazione predefinita**|
 |:-----|:-----|:-----|:-----|
-|Abilitare i dispositivi mobili  <br/> |EnableMobility  <br/> |Controlla gli utenti in un determinato ambito in cui Skype for Business client mobile installato. Se il criterio è impostato su False, gli utenti non potranno accedere con il client.  <br/> |True  <br/> |
+|Abilitare i dispositivi mobili  <br/> |EnableMobility  <br/> |Controlla gli utenti in un determinato ambito in cui Skype for Business client mobile installato. Se il criterio è impostato su False, gli utenti non potranno accedere con il client.  <br/> |Vero  <br/> |
 |Voce esterna  <br/> |EnableOutsideVoice  <br/> |Consente a un utente di utilizzare Chiama tramite lavoro, che consente agli utenti di inviare e ricevere chiamate utilizzando il numero di lavoro anziché il numero di cellulare. Se è impostato su False, gli utenti non saranno in grado di effettuare o ricevere chiamate sul proprio cellulare quando utilizzano il numero di telefono dell'ufficio.  <br/> |Vero  <br/> |
-|Abilita audio e video IP  <br/> |EnableIPAudioVideo  <br/> |Impostata sul valore predefinito, consente a un utente di usare VoIP per effettuare o ricevere chiamate telefoniche o videochiamate sul dispositivo mobile. Se impostato su False, gli utenti non potranno usare il dispositivo mobile per eseguire una di queste operazioni.  <br/> |True  <br/> |
+|Abilita audio e video IP  <br/> |EnableIPAudioVideo  <br/> |Impostata sul valore predefinito, consente a un utente di usare VoIP per effettuare o ricevere chiamate telefoniche o videochiamate sul dispositivo mobile. Se impostato su False, gli utenti non potranno usare il dispositivo mobile per eseguire una di queste operazioni.  <br/> |Vero  <br/> |
 |Richiedi WiFi per IP Audio  <br/> |RequireWiFiForIPAudio  <br/> |Definisce se un client dovrà effettuare e ricevere chiamate tramite VoIP su WiFi anziché su una rete dati cellulare. Se è impostato su True, gli utenti potranno effettuare e ricevere chiamate VoIP solo quando sono connessi tramite WiFi.  <br/> |Falso  <br/> |
 |Richiedi WiFi per IP Video  <br/> |RequireWiFiForIPVideo  <br/> |Definisce se un client dovrà effettuare e ricevere videochiamate su WiFi anziché su una rete dati cellulare. Se è impostato su True, gli utenti potranno effettuare e ricevere chiamate VoIP solo quando sono connessi tramite WiFi.  <br/> |Falso  <br/> |
    
 ### <a name="should-users-who-arent-enabled-for-enterprise-voice-be-able-to-use-click-to-join-to-join-conferences"></a>Gli utenti che non sono abilitati per VoIP aziendale possono usare Click to Join per partecipare alle conferenze?
 
-Per consentire agli utenti di accedere alle funzionalità per dispositivi mobili e chiamare tramite il lavoro, è necessario che siano abilitati per VoIP aziendale. Tuttavia, anche se non sono abilitati, possono comunque partecipare alle conferenze facendo clic su un collegamento nel dispositivo mobile, ma solo se è assegnato un criterio vocale appropriato. È possibile:
+Per consentire agli utenti di accedere alle funzionalità per dispositivi mobili e di chiamare tramite il lavoro, è necessario che siano abilitati per VoIP aziendale. Tuttavia, anche se non sono abilitati, possono comunque partecipare alle conferenze facendo clic su un collegamento nel dispositivo mobile, ma solo se è assegnato un criterio vocale appropriato. È possibile:
   
 - assegnare un criterio vocale specifico a questi utenti o,
     
@@ -261,4 +261,4 @@ Per consentire agli utenti di accedere alle funzionalità per dispositivi mobili
 In entrambi i casi, il criterio vocale assegnato deve disporre di record di utilizzo PSTN (Public Switched Telephone Network) e route che definiranno dove gli utenti potranno effettuare chiamate in uscita per partecipare alle conferenze.
   
 > [!NOTE]
-> Gli utenti mobili che desiderano utilizzare Il clic per partecipare richiedono un criterio vocale, insieme ai record di utilizzo PSTN correlati e alle route vocali, perché quando fanno clic su tale collegamento nei dispositivi mobili, una chiamata in uscita da Skype for Business Server sarà il risultato. 
+> Gli utenti mobili che desiderano utilizzare Il clic per partecipare richiedono un criterio vocale, insieme ai record di utilizzo PSTN correlati e alle route vocali, perché quando fanno clic su tale collegamento nei dispositivi mobili, ne risulta una chiamata in uscita da Skype for Business Server. 

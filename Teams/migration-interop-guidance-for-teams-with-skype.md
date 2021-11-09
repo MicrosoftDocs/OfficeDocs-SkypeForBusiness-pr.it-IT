@@ -20,20 +20,23 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: eccf725a4221b62370590c1739436c194992a2e7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 9e7138acede1f6d67d5bd13d1e5edf413389f8b5
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58577980"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60865464"
 ---
 # <a name="coexistence-modes---reference"></a>Modalità di coesistenza - Riferimento
+
+> [!Important] 
+> - Dopo il ritiro di Skype for Business Online il 31 luglio 2021, non è più possibile assegnare una modalità di coesistenza diversa da TeamsOnly a un utente che si trova nel cloud. Come nel caso precedente al ritiro, agli utenti ospitati in Skype for Business Server locale può essere assegnata qualsiasi modalità diversa *da* TeamsOnly. 
 
 Le modalità di coesistenza offrono agli utenti finali un'esperienza semplice e prevedibile quando le organizzazioni passano da Skype for Business a Teams. Per un'organizzazione che si sposta su Teams, la modalità TeamsOnly è la destinazione finale per ogni utente, anche se non è necessario assegnare a tutti gli utenti TeamsOnly (o qualsiasi modalità) contemporaneamente. Prima che gli utenti raggiungano la modalità TeamsOnly, le organizzazioni possono usare qualsiasi modalità di Skype for Business (SfBOnly, SfBWithTeamsCollab, SfBWithTeamsCollabAndMeetings) per garantire comunicazioni prevedibili tra gli utenti di TeamsOnly e quelli che non lo sono ancora.
 
 Dal punto di vista tecnico, la modalità di un utente regola diversi aspetti dell'esperienza dell'utente:
 
-- *Routing in arrivo:* in quale client (Teams o Skype for Business) vengono effettuate chat e chiamate in arrivo? 
+- *Routing in arrivo:* in quale client (Teams o Skype for Business) vengono effettuate le chat e le chiamate in arrivo? 
 - *Pubblicazione della* presenza: la presenza dell'utente viene visualizzata ad altri utenti in base all'attività Teams o Skype for Business? 
 - *Pianificazione delle riunioni:* quale servizio viene usato per pianificare nuove riunioni e verificare che il componente aggiuntivo appropriato sia presente in Outlook? TeamsUpgradePolicy non regola l'partecipazione alla riunione. Gli utenti possono *sempre partecipare* a qualsiasi riunione, sia che si Skype for Business una riunione Teams riunione.
 - *Esperienza client:* quali funzionalità sono disponibili in Teams e/o Skype for Business client? Gli utenti possono avviare chiamate e chat in Teams, Skype for Business o entrambe? L'Teams & canali è disponibile?  
@@ -43,16 +46,16 @@ Per altre informazioni sul routing e sul comportamento di presenza in base alla 
 Tuttavia, dal punto di vista dell'esperienza, la modalità può essere descritta come definizione dell'esperienza per:
 - *Chat e chiamate:* quale client usa un utente?
 - *Pianificazione riunione:* gli utenti pianificano nuove riunioni Teams o Skype for Business riunioni?
-- *Disponibilità delle funzionalità di collaborazione nel Teams client*. La Teams & canali e file è disponibile mentre gli utenti hanno ancora Skype for Business?
+- *Disponibilità delle funzionalità di collaborazione in Teams client*. La Teams & Canali e file è disponibile mentre gli utenti hanno ancora Skype for Business?
 
-Le modalità sono elencate di seguito.
+Le modalità sono elencate di seguito. Gli utenti cloud devono essere TeamsOnly e gli utenti ospitati in locale devono essere in qualsiasi modalità diversa da TeamsOnly. 
 </br>
 </br>
 
 |Modalità|Chiamate e chat|Pianificazione riunione<sup>1</sup>|Teams & canali|Use Case|
 |---|---|---|---|---|
-|**TeamsOnly <sup>2</sup>**</br>*Possibile solo se l'utente non ha un account locale in Skype for Business Server*|Teams|Teams|Sì|Stato finale dell'aggiornamento. Anche l'impostazione predefinita per i nuovi tenant.|
-|Isole|In entrambi i|In entrambi i|Sì|Configurazione predefinita. Consente a un singolo utente di valutare entrambi i client affiancati. Le chat e le chiamate possono essere effettuate in entrambi i client, quindi gli utenti devono sempre eseguire entrambi i client. Per evitare un'esperienza di Skype for Business confusa o regressa, le comunicazioni esterne (federate), i servizi vocali PSTN e le applicazioni vocali, l'integrazione di Office e diverse altre integrazioni continuano a essere gestite da Skype for Business.|
+|**TeamsOnly <sup>2</sup>**</br>*Possibile solo se l'utente non ha un account locale in Skype for Business Server*|Teams|Teams|Sì|Stato finale dell'aggiornamento. L'impostazione predefinita per i nuovi tenant, a meno che non venga rilevata una configurazione ibrida.|
+|Isole|In entrambi i|In entrambi i|Sì|Configurazione predefinita per le organizzazioni ibride. Consente a un singolo utente di valutare entrambi i client affiancati. Le chat e le chiamate possono essere effettuate in entrambi i client, quindi gli utenti devono sempre eseguire entrambi i client. Per evitare un'esperienza Skype for Business confusa o regredita, le comunicazioni esterne (federate), i servizi vocali PSTN e le applicazioni vocali, l'integrazione di Office e diverse altre integrazioni continuano a essere gestite da Skype for Business.|
 |SfBWithTeamsCollabAndMeetings<sup>2</sup>|Skype for Business|Teams|Sì|"Riunioni per prime". Principalmente per le organizzazioni locali che possono trarre vantaggio dalla funzionalità Teams riunione, se non sono ancora pronte per spostare le chiamate nel cloud.|
 |SfBWithTeamsCollab|Skype for Business|Skype for Business|Sì|Punto di partenza alternativo per organizzazioni complesse che necessitano di un controllo amministrativo più stretto.|
 |SfBOnly|Skype for Business|Skype for Business|No<sup>3</sup>|Scenario specializzato per le organizzazioni con requisiti rigorosi per il controllo dei dati. Teams viene usato solo per partecipare alle riunioni pianificate da altri.|
@@ -63,11 +66,11 @@ Le modalità sono elencate di seguito.
 
 **Note:**
 
-<sup>1</sup> La possibilità di partecipare a una riunione esistente(pianificata in Teams o in Skype for Business) non è regolata dalla modalità. Per impostazione predefinita, gli utenti possono sempre partecipare a qualsiasi riunione a cui sono stati invitati.
+<sup>1</sup> La possibilità di partecipare a una riunione esistente (pianificata in Teams o in Skype for Business) non è regolata dalla modalità. Per impostazione predefinita, gli utenti possono sempre partecipare a qualsiasi riunione a cui sono stati invitati.
 
 <sup>2</sup> Per impostazione predefinita, quando si assegna TeamsOnly o SfbWithTeamsCollabAndMeetings a un singolo utente, tutte le riunioni Skype for Business pianificate da tale utente per il futuro vengono convertite in riunioni Teams. Se si desidera, è possibile lasciare queste riunioni come riunioni Skype for Business specificando quando si concede TeamsUpgradePolicy o deselezionando la casella di controllo nel portale di amministrazione di `-MigrateMeetingsToTeams $false` Teams. La possibilità di convertire le riunioni da Skype for Business a Teams non è disponibile quando si concede TeamsUpgradePolicy a livello di tenant. 
 
-<sup>3</sup> Attualmente, Teams non ha la possibilità di disabilitare la funzionalità Teams e canali, quindi questa funzionalità rimane abilitata per il momento.
+<sup>3</sup> Attualmente, Teams non è possibile disabilitare la funzionalità Teams e canali, quindi questa funzionalità rimane abilitata per il momento.
 
 
 ## <a name="using-teamsupgradepolicy"></a>Uso di TeamsUpgradePolicy
@@ -79,10 +82,10 @@ TeamsUpgradePolicy espone due proprietà chiave: Mode e NotifySfbUsers.
 |Parametro|Tipo|Valori consentiti</br>(impostazione predefinita in corsivo)|Descrizione|
 |---|---|---|---|
 |Modalità|Enum|*Isole*</br>TeamsOnly</br>SfBOnly</br>SfBWithTeamsCollab</br>SfBWithTeamsCollabAndMeetings|Indica la modalità in cui deve essere eseguito il client.|
-|NotifySfbUsers|Bool|*False* o true|Indica se visualizzare un banner nel client Skype for Business che informa l'utente che Teams presto sostituirà Skype for Business. Questo non può essere vero se Mode=TeamsOnly.|
+|NotifySfbUsers|Bool|*False* o true|Indica se visualizzare un banner nel client Skype for Business informare l'utente che Teams presto sostituirà Skype for Business. Questo non può essere vero se Mode=TeamsOnly.|
 |||||
 
-Teams tutte le istanze pertinenti di TeamsUpgradePolicy tramite criteri predefiniti di sola lettura. Di conseguenza, sono disponibili solo i cmdlet Get e Grant. Le istanze predefinite sono elencate di seguito.
+Teams fornisce tutte le istanze pertinenti di TeamsUpgradePolicy tramite criteri predefiniti di sola lettura. Di conseguenza, sono disponibili solo i cmdlet Get e Grant. Le istanze predefinite sono elencate di seguito.
 </br>
 </br>
 
@@ -108,7 +111,7 @@ Queste istanze dei criteri possono essere concesse a singoli utenti o a livello 
 
 ## <a name="the-teams-client-user-experience-when-using-skype-for-business-modes"></a>Esperienza Teams client quando si usano le modalità Skype for Business client
 
-Quando un utente è in una delle modalità Skype for Business (SfBOnly, SfBWithTeamsCollab, SfBWithTeamsCollabAndMeetings), tutte le chat e le chiamate in arrivo vengono instradati al client Skype for Business dell'utente. Per evitare confusione tra gli utenti finali e garantire la corretta funzionalità di routing, chiamate e chat nel client Teams viene disabilitata automaticamente quando un utente si trova in una delle modalità Skype for Business messaggi. Analogamente, la pianificazione delle riunioni in Teams viene disabilitata automaticamente quando gli utenti sono in modalità SfBOnly o SfBWithTeamsCollab e abilitata automaticamente quando un utente è in modalità SfBWithTeamsCollabAndMeetings. Per informazioni dettagliate, vedere [Teams client e conformità alle modalità di coesistenza.](./teams-client-experience-and-conformance-to-coexistence-modes.md)
+Quando un utente è in una delle modalità Skype for Business (SfBOnly, SfBWithTeamsCollab, SfBWithTeamsCollabAndMeetings), tutte le chat e le chiamate in arrivo vengono instradati al client Skype for Business dell'utente. Per evitare confusione tra gli utenti finali e garantire la corretta funzionalità di routing, chiamate e chat nel client di Teams viene disabilitata automaticamente quando un utente è in una delle Skype for Business predefinite. Analogamente, la pianificazione delle riunioni in Teams viene disabilitata automaticamente quando gli utenti sono in modalità SfBOnly o SfBWithTeamsCollab e abilitata automaticamente quando un utente è in modalità SfBWithTeamsCollabAndMeetings. Per informazioni dettagliate, [vedere Teams client e conformità alle modalità di coesistenza.](./teams-client-experience-and-conformance-to-coexistence-modes.md)
 
 > [!Note] 
 > - Prima del recapito dell'applicazione automatica di Teams e canali, le modalità SfbOnly e SfBWithTeamsCollab si comportano allo stesso modo.
@@ -120,11 +123,11 @@ Quando un utente è in una delle modalità Skype for Business (SfBOnly, SfBWithT
 
 |Modalità|Spiegazione|
 |---|---|
-|**Isole**</br>(impostazione predefinita)|Un utente esegue sia Skype for Business che Teams affiancati. Questo utente:</br><ul><li>Può avviare chat e chiamate VoIP in Skype for Business o Teams client. Nota: gli utenti con Skype for Business ospitati in locale non possono avviare da Teams per raggiungere un altro utente Skype for Business, indipendentemente dalla modalità del destinatario.<li>Riceve chat & chiamate VoIP avviate in Skype for Business da un altro utente nel client Skype for Business.<li>Riceve chat & chiamate VoIP avviate in Teams da un altro utente nel client di Teams se sono nello *stesso tenant.*<li>Riceve chat & chiamate VoIP avviate in Teams da un altro utente nel client Skype for Business se si tratta di un *tenant federato.* <li>Ha la funzionalità PSTN come indicato di seguito:<ul><li>Quando l'utente si trova in Skype for Business locale e ha VoIP aziendale, le chiamate PSTN vengono sempre avviate e ricevute in Skype for Business.<li>Quando l'utente è ospitata in Skype for Business Online e ha Telefono Microsoft System, l'utente avvia e riceve sempre chiamate PSTN in Skype for Business:<ul><li>Questo accade se l'utente ha un piano per chiamate Microsoft o si connette alla rete PSTN tramite Skype for Business Cloud Connector Edition o una distribuzione locale di Skype for Business Server (voce ibrida).<li>**Nota: Sistema telefonico routing diretto non è supportato in modalità Isole.**</ul></ul><li>Riceve le chiamate Microsoft Call Queues e Auto-Attendant in Skype for Business:<ul><li>Telefono i numeri assegnati alle code di chiamata  e agli operatori automatici non possono essere Sistema telefonico instradamento diretto in modalità Isole.</ul></ul><li>È possibile pianificare riunioni in Teams o Skype for Business (e per impostazione predefinita verranno visualizzati entrambi i plug-in).<li>Può partecipare a qualsiasi Skype for Business o Teams riunione; la riunione si aprirà nel rispettivo cliente.</ul>|
-|**SfBOnly**|Un utente esegue solo Skype for Business. Questo utente:</br><ul><li>Può avviare chat e chiamate solo Skype for Business chiamate.<li>Riceve qualsiasi chat o chiamata nel client Skype for Business, indipendentemente da dove è stato avviato, a meno che l'iniziatore non sia un utente Teams con Skype for Business ospitata in locale. *<li> Può pianificare solo Skype for Business riunioni, ma </br> \* può partecipare* a Skype for Business o Teams riunioni. L'uso della modalità Isole con utenti locali non è consigliato in combinazione con altri utenti in modalità SfBOnly. Se un utente di Teams con Skype for Business ospitata in locale avvia una chiamata o una chat con un utente SfBOnly, l'utente SfBOnly non è raggiungibile e riceve una chat o un messaggio di posta elettronica persa.*|
-|**SfBWithTeamsCollab**|Un utente esegue sia Skype for Business che Teams affiancati. Questo utente:</br><ul><li>Ha la funzionalità di un utente in modalità SfBOnly.<li>Ha Teams abilitata solo per la collaborazione di gruppo (Canali); la pianificazione di chat/chiamate/riunioni è disabilitata.</ul>|
-|**SfBWithTeamsCollab </br> AndMeetings**|Un utente esegue sia Skype for Business che Teams affiancati. Questo utente:<ul><li>Ha la funzionalità di chat e chiamate dell'utente in modalità SfBOnly.<li>Ha Teams per la collaborazione di gruppo (canali, incluse le conversazioni dei canali); chat e chiamate sono disabilitate.<li>Può pianificare solo Teams riunioni, ma può partecipare a Skype for Business o Teams riunioni.</ul>|
-|**TeamsOnly**</br>(richiede SfB Online home)|Un utente esegue solo Teams. Questo utente:<ul><li>Riceve tutte le chat e le chiamate nel Teams client, indipendentemente da dove è stato avviato.<li>Può avviare chat e chiamate Teams solo.<li>Può pianificare le riunioni solo Teams, ma può partecipare a Skype for Business o Teams riunioni.<li>Può continuare a usare i Skype for Business IP.<br><br>*L'uso della modalità TeamsOnly in combinazione con altri utenti in modalità Isole non è consigliato finché Teams'adozione non è satura; in altre parti, tutti gli utenti della modalità Isole usano e monitorano attivamente i client Teams e Skype for Business isole. Se un utente TeamsOnly avvia una chiamata o una chat con un utente delle Isole, la chiamata o la chat verrà atterrato nel client di Teams dell'utente delle Isole; se l'utente isole non usa o monitora Teams, l'utente apparirà offline e non sarà raggiungibile dall'utente TeamsOnly.*</ul> |
+|**Isole**</br>(solo locale)|Un utente esegue sia Skype for Business che Teams affiancati. Questo utente:</br><ul><li>Può avviare chat e chiamate VoIP in Skype for Business o Teams client. Nota: gli utenti con Skype for Business ospitati in locale non possono avviare da Teams per raggiungere un altro utente Skype for Business, indipendentemente dalla modalità del destinatario.<li>Riceve chat & chiamate VoIP avviate in Skype for Business da un altro utente nel client Skype for Business.<li>Riceve chat & chiamate VoIP avviate in Teams da un altro utente nel client di Teams se sono nello *stesso tenant.*<li>Riceve chat & chiamate VoIP avviate in Teams da un altro utente nel client Skype for Business se si tratta di un *tenant federato.* <li>Ha la funzionalità PSTN come indicato di seguito:<ul><li>Quando l'utente si trova in Skype for Business locale e ha VoIP aziendale, le chiamate PSTN vengono sempre avviate e ricevute in Skype for Business.<li>Quando l'utente è ospitata in Skype for Business Online e ha Telefono Microsoft System, l'utente avvia e riceve sempre chiamate PSTN in Skype for Business:<ul><li>Questo accade se l'utente ha un piano per chiamate Microsoft o si connette alla rete PSTN tramite Skype for Business Cloud Connector Edition o una distribuzione locale di Skype for Business Server (voce ibrida).<li>**Nota: Sistema telefonico routing diretto non è supportato in modalità Isole.**</ul></ul><li>Riceve le chiamate Microsoft Call Queues e Auto-Attendant in Skype for Business:<ul><li>Telefono i numeri assegnati alle code di chiamata  e agli operatori automatici non possono essere Sistema telefonico instradamento diretto in modalità Isole.</ul></ul><li>Può pianificare riunioni in Teams o Skype for Business (e per impostazione predefinita visualizza entrambi i plug-in).<li>Può partecipare a qualsiasi Skype for Business o Teams riunione; la riunione si aprirà nel rispettivo cliente.</ul>|
+|**SfBOnly**</br>(solo locale)|Un utente esegue solo Skype for Business. Questo utente:</br><ul><li>Può avviare chat e chiamate Skype for Business solo.<li>Riceve qualsiasi chat/chiamata nel client Skype for Business, indipendentemente da dove è stato avviato, a meno che l'iniziatore non sia un utente di Teams con Skype for Business ospitata in locale. *<li> Può pianificare solo Skype for Business riunioni, ma </br> \* può partecipare* a Skype for Business o Teams riunioni. L'uso della modalità Isole con utenti locali non è consigliato in combinazione con altri utenti in modalità SfBOnly. Se un utente di Teams con Skype for Business ospitata in locale avvia una chiamata o una chat con un utente SfBOnly, l'utente SfBOnly non è raggiungibile e riceve una chat o un messaggio di posta elettronica persa.*|
+|**SfBWithTeamsCollab**</br>(solo locale)|Un utente esegue sia Skype for Business che Teams affiancati. Questo utente:</br><ul><li>Ha la funzionalità di un utente in modalità SfBOnly.<li>Ha Teams abilitata solo per la collaborazione di gruppo (Canali); la pianificazione di chat/chiamate/riunioni è disabilitata.</ul>|
+|**SfBWithTeamsCollab </br> AndMeetings**</br>(solo locale)|Un utente esegue sia Skype for Business che Teams affiancati. Questo utente:<ul><li>Ha la funzionalità di chat e chiamate dell'utente in modalità SfBOnly.<li>Ha Teams per la collaborazione di gruppo (canali, incluse le conversazioni dei canali); chat e chiamate sono disabilitate.<li>Può pianificare solo Teams riunioni, ma può partecipare a Skype for Business o Teams riunioni.</ul>|
+|**TeamsOnly**</br>(solo utenti cloud)|Un utente esegue solo Teams. Questo utente:<ul><li>Riceve le chat e le chiamate nel client Teams, indipendentemente da dove è stato avviato.<li>Può avviare chat e chiamate da Teams solo.<li>Può pianificare le riunioni solo Teams, ma può partecipare a Skype for Business o Teams riunioni.<li>Può continuare a usare i Skype for Business IP.<br><br>*L'uso della modalità TeamsOnly in combinazione con altri utenti in modalità Isole non è consigliato finché Teams'adozione non è satura; in altre parti, tutti gli utenti della modalità Isole usano e monitorano attivamente i client Teams e Skype for Business isole. Se un utente TeamsOnly avvia una chiamata o una chat con un utente delle Isole, tale chiamata o chat verrà atterrato nel client di Teams dell'utente delle Isole; se l'utente isole non usa o monitora Teams, l'utente apparirà offline e non sarà raggiungibile dall'utente TeamsOnly.*</ul> |
 |||
 
 

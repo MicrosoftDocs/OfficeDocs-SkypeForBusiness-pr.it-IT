@@ -2,7 +2,7 @@
 title: Configurare le impostazioni e gli utenti di test del nodo Watcher
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/13/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: Configurare gli account utente di test e le impostazioni del nodo Watcher per Skype for Business Server sintetiche.
-ms.openlocfilehash: f0f997ebcbb3c663fa9a63ac3060f476d627ef4f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b01b99136cf8fc8495dbf090b8e1def5f56ff77c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60746382"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60837438"
 ---
 # <a name="skype-for-business-server-configure-watcher-node-test-users-and-settings"></a>Skype for Business Server: Configurare le impostazioni e gli utenti di test del nodo Watcher
  
@@ -35,7 +35,7 @@ Dopo avere configurato il computer che fungerà da nodo Watcher, è necessario e
 
 Gli account di test non devono rappresentare persone effettive, ma devono essere account di Active Directory validi. Inoltre, questi account devono essere abilitati per Skype for Business Server, devono avere indirizzi SIP validi e devono essere abilitati per VoIP aziendale (per utilizzare la transazione sintetica Test-CsPstnPeerToPeerCall). 
   
-Se si utilizza il metodo di autenticazione TrustedServer, è necessario assicurarsi che tali account esistano e configurarli come specificato. Assegnare almeno tre utenti di test per ogni pool che si desidera testare. Se si utilizza il metodo di autenticazione Negotiate, è necessario utilizzare anche il cmdlet Set-CsTestUserCredential e Skype for Business Server Management Shell per consentire a questi account di test di funzionare con le transazioni sintetiche. A tale scopo, eseguire un comando simile al seguente (questi comandi presuppongono che i tre account utente di Active Directory siano stati creati e che questi account siano abilitati per Skype for Business Server):
+Se si utilizza il metodo di autenticazione TrustedServer, è necessario assicurarsi che tali account esistano e configurarli come specificato. Assegnare almeno tre utenti di test per ogni pool che si desidera testare. Se si utilizza il metodo di autenticazione Negotiate, è necessario utilizzare anche il cmdlet Set-CsTestUserCredential e Skype for Business Server Management Shell per consentire l'utilizzo di questi account di test con le transazioni sintetiche. A tale scopo, eseguire un comando simile al seguente (questi comandi presuppongono che i tre account utente di Active Directory siano stati creati e che questi account siano abilitati per Skype for Business Server):
   
 ```PowerShell
 Set-CsTestUserCredential -SipAddress "sip:watcher1@litwareinc.com" -UserName "litwareinc\watcher1" -Password "P@ssw0rd"
@@ -214,7 +214,7 @@ Questo comando testerà ogni nodo Watcher nella distribuzione e confermerà se l
   
 - Il ruolo di registrazione necessario è installato
     
-- La chiave del Registro di sistema necessaria viene creata (completata quando si esegue il cmdlet Set-CsWatcherNodeConfiguration)
+- Viene creata la chiave del Registro di sistema necessaria (completata quando è stato eseguito il cmdlet Set-CsWatcherNodeConfiguration)
     
 - I server eseguono la versione corretta di Skype for Business Server
     
@@ -254,7 +254,7 @@ Per impostazione predefinita, i nodi Watcher utilizzano gli URL Web esterni di u
 Set-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com" -UseInternalWebUrls $True
 ```
 
-Se si reimposta questa proprietà sul valore predefinito False ($False), il watcher utilizzerà di nuovo gli URL esterni:
+Se si reimposta questa proprietà sul valore predefinito False ($False) il watcher utilizzerà di nuovo gli URL esterni:
   
 ```PowerShell
 Set-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com" -UseInternalWebUrls $False
@@ -267,7 +267,7 @@ La maggior parte delle transazioni sintetiche può essere eseguita in un nodo Wa
   
 ### <a name="data-conferencing-synthetic-transaction"></a>Transazione sintetica per conferenze dati
 
-Se il computer del nodo Watcher si trova all'esterno della rete perimetrale, probabilmente non sarà possibile eseguire la transazione sintetica per conferenze dati a meno che non si disabiliti innanzitutto le impostazioni proxy del browser Internet Windows Internet Explorer® per l'account Servizio di rete completando la procedura seguente:
+Se il computer del nodo Watcher si trova all'esterno della rete perimetrale, probabilmente non sarà possibile eseguire la transazione sintetica di conferenza dati a meno che non si disabilitino innanzitutto le impostazioni proxy del browser Internet Windows Internet Explorer® per l'account Servizio di rete completando la procedura seguente:
   
 1. Nel computer del nodo Watcher fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Accessori,** fare clic con il pulsante destro del mouse su **Prompt** dei comandi e quindi scegliere Esegui **come amministratore.**
     
@@ -328,7 +328,7 @@ Per eseguire questa transazione sintetica, è necessario configurare:
     
 ### <a name="unified-contact-store-synthetic-transaction"></a>Transazione sintetica archivio contatti unificato
 
-La transazione sintetica dell'archivio contatti unificato verifica la possibilità Skype for Business Server recuperare i contatti per conto di un utente da Exchange.
+La transazione sintetica dell'archivio contatti unificato verifica la capacità Skype for Business Server recuperare i contatti per conto di un utente da Exchange.
   
 Per utilizzare questa transazione sintetica, devono essere soddisfatte le condizioni seguenti:
   
@@ -336,13 +336,13 @@ Per utilizzare questa transazione sintetica, devono essere soddisfatte le condiz
     
 - Gli utenti di test devono disporre di una cassetta Exchange valida.
     
-Dopo aver soddisfatto queste condizioni, è possibile eseguire il cmdlet Windows PowerShell seguente per eseguire la migrazione degli elenchi di contatti degli utenti di test a Exchange:
+Dopo aver soddisfatto queste condizioni, è possibile eseguire il cmdlet Windows PowerShell seguente per eseguire la migrazione degli elenchi contatti degli utenti di test a Exchange:
   
 ```PowerShell
 Test-CsUnifiedContactStore -TargetFqdn pool0.contoso.com -UserSipAddress sip:testUser1@contoso.com -RegistrarPort 5061 -Authentication TrustedServer -Setup
 ```
 
-La migrazione degli elenchi di contatti degli utenti di test a Exchange potrebbe richiedere del tempo. Per monitorare lo stato della migrazione, è possibile eseguire la stessa riga di comando senza il flag -Setup:
+La migrazione degli elenchi di contatti degli utenti di test a Exchange. Per monitorare lo stato della migrazione, è possibile eseguire la stessa riga di comando senza il flag -Setup:
   
 ```PowerShell
 Test-CsUnifiedContactStore -TargetFqdn pool0.contoso.com -UserSipAddress sip:testUser1@contoso.com -RegistrarPort 5061 -Authentication TrustedServer
@@ -360,7 +360,7 @@ Per abilitare la transazione sintetica XMPP, è necessario fornire un parametro 
 Set-CsWatcherNodeConfiguration -Identity pool0.contoso.com -Tests @{Add="XmppIM"} -XmppTestReceiverMailAddress user1@litwareinc.com
 ```
 
-In questo esempio, sarà Skype for Business Server esistente una regola per instradare i messaggi per litwareinc.com a un gateway XMPP.In this example, a Skype for Business Server rule will need to exist to route messages for litwareinc.com to an XMPP gateway.
+In questo esempio, per instradare i messaggi per litwareinc.com a un gateway XMPP, è necessario che sia presente una regola Skype for Business Server esistente.
 
 > [!NOTE]
 > I gateway XMPP e i proxy erano disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../migration/migrating-xmpp-federation.md)
@@ -426,7 +426,7 @@ Test-CsRegistration -TargetFqdn atl-cs-001.litwareinc.com -OutLoggerVariable Reg
   
 Quando si esegue questo comando, verrà visualizzato un output simile al seguente:
   
-Fqdn di destinazione : atl-cs-001.litwareinc.com risultato : Latenza errore : 00:00:00 Messaggio di errore : questo computer non dispone di certificati assegnati. Diagnosi: è possibile accedere a informazioni molto più dettagliate per questo errore rispetto al solo messaggio di errore mostrato qui. Per accedere a queste informazioni in formato HTML, utilizzare un comando simile al seguente per salvare le informazioni archiviate nella variabile RegistrationTest in un file HTML:
+Fqdn di destinazione : atl-cs-001.litwareinc.com Risultato : Latenza errore : 00:00:00 Messaggio di errore : al computer non sono assegnati certificati. Diagnosi: è possibile accedere a informazioni molto più dettagliate per questo errore rispetto al solo messaggio di errore mostrato qui. Per accedere a queste informazioni in formato HTML, utilizzare un comando simile al seguente per salvare le informazioni archiviate nella variabile RegistrationTest in un file HTML:
   
 ```PowerShell
 $RegistrationTest.ToHTML() | Out-File C:\Logs\Registration.html
@@ -440,7 +440,7 @@ $RegistrationTest.ToXML() | Out-File C:\Logs\Registration.xml
 
 Puoi visualizzare questi file usando Windows Internet Explorer, Microsoft Visual Studio o qualsiasi altra applicazione in grado di aprire file HTML/XML.
   
-Le transazioni sintetiche eseguite dall'interno di System Center Operations Manager genererà automaticamente questi file di registro per gli errori. Questi log non verranno generati se l'esecuzione ha esito negativo prima Skype for Business Server PowerShell è in grado di caricare ed eseguire la transazione sintetica. 
+Le transazioni sintetiche eseguite dall'interno System Center Operations Manager genererà automaticamente questi file di registro per gli errori. Questi log non verranno generati se l'esecuzione ha esito negativo prima Skype for Business Server PowerShell è in grado di caricare ed eseguire la transazione sintetica. 
   
 > [!IMPORTANT]
 > Per impostazione predefinita, Skype for Business Server i file di registro in una cartella non condivisa. Per rendere questi registri facilmente accessibili, è consigliabile condividere questa cartella. Ad esempio: \\ atl-watcher-001.litwareinc.com\WatcherNode.

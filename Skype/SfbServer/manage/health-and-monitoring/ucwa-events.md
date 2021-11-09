@@ -2,7 +2,7 @@
 title: Eventi UCWA in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 26cb409d-f4e4-43c7-873f-b694702d491d
 description: 'Riepilogo: informazioni su UNIFIED Communications Web API (UCWA) in Skype for Business Server.'
-ms.openlocfilehash: 32022d44635e9560e28723812c1247fda38cf00d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f4e1cfb344d8b27f2fef63f0c1c45ce1e4639627
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763624"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60853020"
 ---
 # <a name="ucwa-events-in-skype-for-business-server"></a>Eventi UCWA in Skype for Business Server
  
 **Riepilogo:** Informazioni su Unified Communications Web API (UCWA) in Skype for Business Server.
   
-Skype for Business Server utilizza UcWA (Unified Communications Web API) per diversi scopi, dall'accesso a Microsoft Exchange per le ricerche di contatti all'aggiornamento della presenza per i client mobili.
+Skype for Business Server utilizza UCWA (Unified Communications Web API) per diversi scopi, dall'accesso a Microsoft Exchange per le ricerche di contatti all'aggiornamento della presenza per i client mobili.
   
 UCWA scriverà i record del comportamento operativo come tipi di evento Informativo, Avviso ed Errore. Nella tabella seguente vengono descritti gli eventi che possono essere scritti dai componenti UCWA.
   
@@ -33,8 +33,8 @@ UCWA scriverà i record del comportamento operativo come tipi di evento Informat
 |20002  <br/> |Error  <br/> |UCWA ha rilevato un'eccezione imprevista durante l'inizializzazione  <br/> |Si è verificato un errore imprevisto durante l'inizializzazione  <br/> Esaminare i dettagli dell'eccezione nella voce del registro eventi associata per determinare la possibile causa  <br/> |
 |20003  <br/> |Error  <br/> |UCWA ha rilevato un'eccezione non gestita  <br/> |Si è verificata un'eccezione non gestita  <br/> Riavviare il server. Se il problema persiste, contattare il supporto tecnico  <br/> |
 |20004  <br/> |Error  <br/> |Impossibile accedere Exchange foto HD  <br/> |Connessione a Exchange non disponibile  <br/> Verificare che la connessione a Exchange sia disponibile  <br/> |
-|20005  <br/> |Informativa  <br/> |È stato ripristinato dall'errore di accesso Exchange foto HD  <br/> |N/D  <br/> |
-|20006  <br/> |Error  <br/> |Impossibile accedere Exchange ricerca contatti  <br/> |Connessione a Exchange non disponibile  <br/> Verificare che la connessione a Exchange sia disponibile  <br/> |
+|20005  <br/> |Informativa  <br/> |È stato ripristinato dal mancato accesso Exchange foto HD  <br/> |N/D  <br/> |
+|20006  <br/> |Error  <br/> |Impossibile accedere Exchange per la ricerca di contatti  <br/> |Connessione a Exchange non disponibile  <br/> Verificare che la connessione a Exchange sia disponibile  <br/> |
 |20007  <br/> |Informativa  <br/> |È stato ripristinato dall'errore di ricerca del contatto in Exchange  <br/> |N/D  <br/> |
 |20008  <br/> |Avviso  <br/> |Tentare di sottoscrivere più sottoscrizioni di presenza consentite per ogni applicazione  <br/> |Tentare di sottoscrivere più sottoscrizioni di presenza consentite per ogni applicazione  <br/> Verificare la presenza di sottoscrizioni non necessarie nei client  <br/> |
 |20009  <br/> |Avviso  <br/> |Tentare di sottoscrivere più sottoscrizioni di presenza consentite per batch  <br/> |Tentare di sottoscrivere più sottoscrizioni di presenza consentite per batch  <br/> Verificare la presenza di sottoscrizioni non necessarie nei client  <br/> |

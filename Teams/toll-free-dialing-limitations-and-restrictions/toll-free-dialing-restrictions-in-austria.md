@@ -1,7 +1,7 @@
 ---
 title: Restrizioni di composizione a numero verde in Austria
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.reviewer: davlick, krkilaru
 ms.topic: reference
@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come comporre numeri a numero verde in ogni paese/area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli specifici, restrizioni e limiti per la disponibilità di servizi gratuiti in cui è disponibile il servizio a pagamento. Il formato o i formati di composizione mostrano i codici di accesso necessari in ogni paese o area geografica per comporre il numero verde.
-ms.openlocfilehash: cc658d961624bd719f2f2d1d0868c8783ce48c05
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 635459bd0c3ebd2016a317c9fd50fc1311d801d9
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60766054"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60853810"
 ---
 # <a name="toll-free-dialing-restrictions-in-austria"></a>Restrizioni di composizione a numero verde in Austria
 

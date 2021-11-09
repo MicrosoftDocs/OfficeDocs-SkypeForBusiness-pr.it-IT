@@ -2,7 +2,7 @@
 title: (Facoltativo) Definire i set di festività di Response Group in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 56c37b3b-6517-49b9-86b7-ae48cc349119
 description: Creare o modificare i set di festività di Response Group in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 8978789a5ac5b050123bad619c093ec4e895c36e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 307dfefb42f31102755bd4469ed8c24129e41767
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773266"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60852720"
 ---
 # <a name="optional-define-response-group-holiday-sets-in-skype-for-business"></a>(Facoltativo) Definire i set di festività di Response Group in Skype for Business
  

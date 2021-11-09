@@ -2,7 +2,7 @@
 title: Prerequisiti di sicurezza e configurazione per VoIP aziendale in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 15354abe-733e-466b-bcd4-a6cfbf58caf8
 description: 'Riepilogo: informazioni sui prerequisiti di sicurezza e configurazione per VoIP aziendale in Skype for Business Server.'
-ms.openlocfilehash: 48cb415208008441f306dd0384c494149f65c4e4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 01f7be3bfe3e43d53d574632f228681be5af4ba4
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778916"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60839078"
 ---
 # <a name="security-and-configuration-prerequisites-for-enterprise-voice-in-skype-for-business-server"></a>Prerequisiti di sicurezza e configurazione per VoIP aziendale in Skype for Business Server
  
@@ -50,7 +50,7 @@ Prima della distribuzione, verificare quanto segue:
   
 ## <a name="user-configuration"></a>Configurazione utente
 
-Se il Mediation Server è stato collocato con ogni pool Front End o edizione Standard server durante la distribuzione front-end, le impostazioni utente necessarie per VoIP aziendale sono state configurate automaticamente durante l'installazione dei file per tali ruoli del server.
+Se il Mediation Server è stato collocato con ogni pool Front End o server edizione Standard durante la distribuzione front-end, le impostazioni utente necessarie per VoIP aziendale sono state configurate automaticamente durante l'installazione dei file per tali ruoli del server.
   
 Se si sta procedendo ora alla distribuzione del carico di lavoro di VoIP aziendale, prima di iniziare il processo di distribuzione designare un numero di telefono primario per ogni utente che si intende abilitare per VoIP aziendale. In qualità di amministratori, è necessario verificare che questo numero sia univoco. Prima dell'implementazione, tutti i numeri di telefono principali devono essere normalizzati (formattati correttamente) e copiati nella proprietà **URI** linea di ogni utente usando Skype for Business Server Pannello di controllo.
   
@@ -61,7 +61,7 @@ Se si sta procedendo ora alla distribuzione del carico di lavoro di VoIP azienda
 
 Dopo aver verificato i prerequisiti software e ambientali per VoIP aziendale è possibile:
   
-- Installare mediation server, come descritto in Deploy [a Mediation Server in Topology Builder in Skype for Business Server](deploy-a-mediation-server.md), ma solo se si desidera distribuire un Mediation Server autonomo o un pool perché i Mediation Server vengono installati come parte del processo di distribuzione del server edizione Standard o del pool Front End quando sono collocati.
+- Installare il Mediation Server, come descritto in Deploy [a Mediation Server in Topology Builder in Skype for Business Server](deploy-a-mediation-server.md), ma solo se si desidera distribuire un Mediation Server autonomo o un pool perché i Mediation Server vengono installati come parte del processo di distribuzione del pool Front End o del server edizione Standard quando collocati.
     
 - In caso contrario, iniziare a configurare le impostazioni per instradare le chiamate VoIP aziendale utenti, come descritto [in Configure trunks in Skype for Business Server](configure-trunks.md).
     

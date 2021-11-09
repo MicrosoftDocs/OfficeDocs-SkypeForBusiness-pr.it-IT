@@ -1,6 +1,6 @@
 ---
 title: Telefono gestione dei numeri per la Svezia
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: davlick,krkilaru
@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Svezia per Microsoft Teams.
-ms.openlocfilehash: 3cb5152fea4897e4970775b17bb3b4a41959b37b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 23580c70651cbb7ab53c4c1ef9efd31f02fd555e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60775966"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60839768"
 ---
 # <a name="phone-number-management-for-sweden"></a>Telefono gestione dei numeri per la Svezia
 

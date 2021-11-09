@@ -1,7 +1,7 @@
 ---
 title: Skype Gestibilità e strumenti del sistema sala
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c336ee9a-1ed8-4f64-9f7f-89549ae24c40
 description: Leggere questo argomento per informazioni sugli strumenti di gestione per Skype Room System.
-ms.openlocfilehash: 04b609e14b6ccffb5224a3041b1e8be25dcf7574
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 976ed518941ded1278bf34a1c991a20adb8a0d8c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60758138"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60865413"
 ---
 # <a name="skype-room-system-manageability-and-tools"></a>Skype Gestibilità e strumenti del sistema sala
  
@@ -50,11 +50,11 @@ Per ulteriori informazioni, vedere l'articolo seguente:
   - Skype for Business Strumento di analisi dell'integrità (Excel)    
   - Skype for Business Analizzatore connettività a 32 bit o a 64 bit
     
-- Esaminare [Utili nuovi strumenti di risoluzione dei](/archive/blogs/educloud/useful-new-troubleshooting-and-analysis-tools-for-office-365)problemi e analisi per Office 365 . Verificare di disporre di un pool Skype for Business e di un server web apps Office e di poter condividere una PowerPoint deck utilizzando il client Skype for Business.
+- Esaminare [Utili nuovi strumenti di risoluzione dei](/archive/blogs/educloud/useful-new-troubleshooting-and-analysis-tools-for-office-365)problemi e analisi per Office 365 . Verificare di disporre di un pool Skype for Business e di un server Office Web Apps e di poter condividere una PowerPoint deck utilizzando il client Skype for Business.
     
 - Se la sala riunioni dispone già di una cassetta postale per le risorse, abilitarla per Skype for Business.
     
-- Se necessario, richiedere un DID (numero di telefono) per il sistema Sala riunioni e aggiornare il campo Telefono generale nello strumento Active Directory.
+- Se necessario, richiedere un DID (numero di telefono) per Sala riunioni System e aggiornare il campo General Telephone nello strumento Active Directory.
     
 ## <a name="network"></a>Rete
 
@@ -84,7 +84,7 @@ Skype Room System è un sistema incorporato che può essere completamente integr
     
   - Aggiunta facoltativa al dominio a Servizi di dominio Active Directory, abilitando la gestione e il controllo degli account di sicurezza locali.
     
-- Puoi anche gestire l'account amministratore locale usando l'Skype for Business di amministrazione locale.
+- Puoi anche gestire l'account di amministratore locale usando l'Skype for Business di amministrazione locale.
     
 - Skype Room System viene aggiornato tramite i processi standard di Microsoft Update.
     
@@ -92,15 +92,15 @@ Skype Room System è un sistema incorporato che può essere completamente integr
     
   - Skype for Business utilizza la crittografia end-to-end e l'autorizzazione per tutte le modalità di comunicazione
     
-  - Skype Room System supporta gli standard Skype for Business sicurezza e conformità. Per ulteriori informazioni, vedere [Plan for security in Skype For Business Server.](../../plan-your-deployment/security/security.md)
+  - Skype Room System supporta gli standard Skype for Business sicurezza e conformità. Per [ulteriori informazioni, vedere Plan for security in Skype For Business Server.](../../plan-your-deployment/security/security.md)
     
 ## <a name="license"></a>License
 
-Verificare di usare un Servizio di gestione delle chiavi per l'attivazione del software. In tal caso, potrebbe essere necessario controllare o aggiungere la chiave Skype for Business client Servizio di gestione delle chiavi chiave. Se non si utilizza Servizio di gestione delle chiavi, richiedere il codice "Product Key" per contratti multilicenza per il codice ad attivazione Skype for Business client.
+Verificare di usare un Servizio di gestione delle chiavi per l'attivazione del software. In tal caso, potrebbe essere necessario controllare o aggiungere la chiave Skype for Business client Servizio di gestione delle chiavi chiave. Se non si usa Servizio di gestione delle chiavi, richiedere il codice "Product Key" per contratti multilicenza per il codice ad attivazione Skype for Business client.
   
 ## <a name="license-keys"></a>Codici di licenza
 
-Skype Room System esegue il Skype for Business desktop in background. Se Skype Room System è un membro di dominio, scoprirà la tua Servizio di gestione delle chiavi. (e se ha il codice Servizio di gestione delle chiavi per contratti multilicenza, verrà attivato automaticamente). I contratti multilicenza forniscono anche un codice ADK, che viene immesso quando viene visualizzato xxxxx-xxxxx-xxxxx-xxxxx. È necessario l'accesso a Internet per l'attivazione tramite codice ad attivazione Servizio di gestione delle chiavi). Per ulteriori informazioni, vedere Volume activation of Office 2013.
+Skype Room System esegue Skype for Business client desktop in background. Se Skype Room System è un membro di dominio, scoprirà la tua Servizio di gestione delle chiavi. (e se ha il codice Servizio di gestione delle chiavi per contratti multilicenza, verrà attivato automaticamente). I contratti multilicenza forniscono anche un codice ADK, che viene immesso quando viene visualizzato xxxxx-xxxxx-xxxxx-xxxxx. È necessario l'accesso a Internet per l'attivazione tramite codice ad attivazione Servizio di gestione delle chiavi). Per ulteriori informazioni, vedere Volume activation of Office 2013.
   
 - Per immettere il codice ADK, passare a OEM Impostazioni \> SRS Licensing Tool. Fare clic su Controlla stato. Quando lo stato indica "il prodotto non è attivato", immetti il codice.
     
@@ -118,19 +118,19 @@ Skype Room System esegue il Skype for Business desktop in background. Se Skype R
 
 Verificare che l'autorità di certificazione utilizzata per emettere il certificato Office Web Apps Server 2013 abbia un percorso HTTP incluso nella proprietà Certificate Revocation List.
   
-Importare il file del certificato (con estensione crt) nel Skype Room System se si utilizza Skype for Business Server. È facilmente ottenuta dalla condivisione CertEnroll del server CA o nella cartella Radice attendibile di qualsiasi DOMINIO aggiunto al PC.
+Importare il file di certificato (con estensione crt) nel Skype room se si utilizza Skype for Business Server. È facilmente ottenuta dalla condivisione CertEnroll del server CA o nella cartella Radice attendibile di qualsiasi DOMINIO aggiunto al PC.
   
 ## <a name="certificates"></a>Certificati
 
 Verificare che l'Autorità di certificazione abbia un percorso http per l'elenco di revoche di certificati. In caso contrario, aggiornare l'autorità di certificazione per includerne una.
   
-Installare i certificati nella configurazione dell'amministratore di Skype Room System in System Impostazioni Certificate Manager.Install certificates in the admin setup of the Skype Room System under System Impostazioni \> Certificate Manager. È necessaria l'Enterprise ca radice per il certificato interno.
+Installare i certificati nella configurazione dell'amministratore di Skype Room System in System Impostazioni Certificate Manager.Install certificates in the admin setup of the Skype Room System under System Impostazioni \> Certificate Manager. È necessaria la ca Enterprise radice per il certificato interno.
   
 Un modo per ottenere i certificati necessari è individuare l'autorità di certificazione che ha emesso i certificati. Ad Skype for Business Server, in un PC in Skype for Business fare clic su Impostazioni \> Strumenti Conferenza telefonica con accesso \> Impostazioni. Verrà aperta una pagina Web protetta dall'autorità di certificazione che ha emesso i certificati interni. Fare clic sull'icona Blocca sulla barra degli indirizzi del browser per visualizzare un report sulla sicurezza. Fare clic su Visualizza certificati ed esaminare la proprietà Punto di distribuzione CRL. Il secondo parametro CN deve essere il nome del server dell'autorità di certificazione. Apri ora Windows Explorer per \\ \< CA Server Name \> l'indirizzo \CertEnroll. Copiare i due file crl e il file crt in un'unità flash e metterlo nella parte sinistra della scheda SMART.
   
 Importare il file crt nella Skype Room System nella cartella Autorità di certificazione sala attendibile.
   
-Importare i file crl nel Skype Room System nella cartella Autorità di certificazione intermedie. È necessario modificare il filtro delle estensioni di file in Gestione certificati in .crl per visualizzare i file.
+Importare i file crl nel Skype Room System nella cartella Intermediate Certificate Authorities. È necessario modificare il filtro delle estensioni di file in Gestione certificati in .crl per visualizzare i file.
   
 Nota: il server Office Web Apps 2013 può condividere la stessa CA Skype for Business. In caso di non accesso, non sarà possibile condividere PowerPoint in una riunione. Verificare con l'IT e ottenere i file CRT e CRL dalla condivisione di rete CA CertEnroll, come spiegato in precedenza. 
   

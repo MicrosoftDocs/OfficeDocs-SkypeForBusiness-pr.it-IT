@@ -2,7 +2,7 @@
 title: Gestione delle impostazioni di Response Group a livello di applicazione in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,17 +15,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: aab749a1-fa2d-4ce8-a6c6-ebcfa37ce02a
-description: Gestione delle impostazioni di Response Group a livello di applicazione, ad esempio le impostazioni di musica di attesa e di ringback, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 6cce6872bc0e1ee017d46eee4ee547c6e9aabd25
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: Gestione delle impostazioni di Response Group a livello di applicazione, ad esempio le impostazioni di musica in attesa e di ringback, in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: 7ac6b9e03f8a738baa5bb41bac858da1ce057c8b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769614"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60839668"
 ---
 # <a name="managing-application-level-response-group-settings-in-skype-for-business"></a>Gestione delle impostazioni di Response Group a livello di applicazione in Skype for Business
  
-Gestione delle impostazioni di Response Group a livello di applicazione, ad esempio le impostazioni di musica di attesa e di ringback, in Skype for Business Server VoIP aziendale.
+Gestione delle impostazioni di Response Group a livello di applicazione, ad esempio le impostazioni di musica in attesa e di ringback, in Skype for Business Server VoIP aziendale.
   
 Le impostazioni a livello di applicazione per l'applicazione Response Group includono la configurazione di musica di attesa predefinita, il file audio di musica di attesa predefinito, il periodo di tolleranza di ringback dell'agente e la configurazione del contesto di chiamata. È possibile definire solo un set di impostazioni a livello di applicazione per ogni pool. Per visualizzare le impostazioni a livello di applicazione, utilizzare il cmdlet **Get-CsRgsConfiguration**. Per modificare le impostazioni a livello di applicazione, utilizzare il cmdlet **Set-CsRgsConfiguration**.
   
@@ -35,7 +35,7 @@ La musica di attesa predefinita viene riprodotta quando una chiamata viene messa
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 3. Nella riga di comando digitare il comando seguente:
     

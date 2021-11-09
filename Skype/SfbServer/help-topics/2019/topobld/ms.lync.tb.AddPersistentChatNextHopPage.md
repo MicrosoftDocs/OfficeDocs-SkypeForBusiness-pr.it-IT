@@ -2,7 +2,7 @@
 title: Pagina Aggiungere hop successivo di Chat persistente
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: a47c824d-a76a-413b-9335-bfe5ffef15db
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare questa pagina per definire l'hop successivo dal server Chat persistente nella distribuzione. Per ulteriori informazioni su come distribuire il server Chat persistente, vedere Deploy Persistent Chat Server in Skype for Business Server 2015.
-ms.openlocfilehash: 155601d5db39703fb233ecfb90dbdf10a01e0f2e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 0f8a74aa14b3cb58f0ad47ac22d5c7086846c40e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759958"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60837078"
 ---
 # <a name="add-persistent-chat-next-hop-page"></a>Pagina Aggiungere hop successivo di Chat persistente
 

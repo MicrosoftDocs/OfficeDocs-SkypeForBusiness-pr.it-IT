@@ -2,7 +2,7 @@
 title: Skype for Business Server 2015 Stress and Performance Tool
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 ms.date: 4/6/2016
 manager: serdars
 audience: ITPro
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: f2f7d19b-18c8-4a41-9b17-80d35b73d742
 description: Lo Skype for Business Server 2015 Stress and Performance Tool viene utilizzato durante la pianificazione della capacità e l'ottimizzazione delle prestazioni in ambienti non di produzione o di test.
-ms.openlocfilehash: 565f868ae81915b6bcb595f13c2d184d82db62b8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 140ca0d169c9863fe3104837dae294ee49bc0f48
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60766264"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60839858"
 ---
 # <a name="skype-for-business-server-2015-stress-and-performance-tool"></a>Skype for Business Server 2015 Stress and Performance Tool
  
@@ -33,7 +33,7 @@ Lo Skype for Business Server 2015 Stress and Performance Tool include strumenti 
     
 - Misurare le prestazioni delle Skype for Business Server distribuzione
     
-Questo strumento viene in genere utilizzato dopo aver utilizzato lo Strumento di pianificazione di [Skype for Business Server 2015](../../management-tools/planning-tool/planning-tool.md) per progettare la topologia e perfezionando la topologia con lo strumento di calcolo della pianificazione della capacità di [Skype for Business Server 2015.](../../management-tools/capacity-planning-calculator.md) 
+Questo strumento viene in genere utilizzato dopo aver utilizzato lo strumento di pianificazione di [Skype for Business Server 2015](../../management-tools/planning-tool/planning-tool.md) per progettare la topologia e aver perfezionato la topologia con lo strumento di calcolo della pianificazione della capacità di [Skype for Business Server 2015.](../../management-tools/capacity-planning-calculator.md) 
 
 > [!NOTE]
 > Questo strumento non verrà aggiornato per Skype for Business Server 2019.
@@ -74,9 +74,9 @@ Per saperne di più, consultare gli articoli seguenti:
     
   - [Provisioning della topologia per l'esecuzione del carico in scenari di stress e prestazioni](provisioning-the-topology-to-run-load.md)
     
-  - [Configurazione dei criteri per lo Skype for Business Server 2015 Stress and Performance Tool](configuring-policies.md)
+  - [Configurazione dei criteri per lo strumento Skype for Business Server 2015 Stress and Performance](configuring-policies.md)
     
-- [Utilizzo dello strumento Skype for Business Server 2015 Stress and Performance](using-the-tool.md)
+- [Utilizzo dello Skype for Business Server 2015 Stress and Performance Tool](using-the-tool.md)
     
 - [Domande frequenti per lo Skype for Business Server 2015 Stress and Performance Tool](faq.md)
     

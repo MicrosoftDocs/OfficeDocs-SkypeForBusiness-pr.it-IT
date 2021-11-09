@@ -2,7 +2,7 @@
 title: Nodo dell'ambito del computer
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 337f5424-5bb4-45ef-83ca-117ada93498c
 description: "In questo nodo vengono mostrati il nome di dominio completo (FQDN) del server e la configurazione dell'indirizzo IP del server. È possibile eseguire le azioni seguenti:"
-ms.openlocfilehash: 158913442441abcaa05737f7e78a96c22bfa8d2c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: c49dd50d8e017f869a025ecf449dcbeb2e4ef098
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60760774"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60837758"
 ---
 # <a name="machine-scope-node"></a>Nodo dell'ambito del computer
  

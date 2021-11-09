@@ -2,7 +2,7 @@
 title: Selezionare un servizio
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
@@ -15,18 +15,18 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: b6086162-8a41-4e75-afa3-7d1889ffdc90
 description: Utilizzare la finestra di dialogo Seleziona un servizio per trovare i servizi disponibili nell'ambiente. Per usare un servizio esistente, fare clic su di esso nell'elenco e quindi fare clic su OK.
-ms.openlocfilehash: fc4f3f7c52bc1cb97b4f67c999fa0b417c71d053
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 62a61c0f370f09815176540128b42961033014cc
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60752155"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60840238"
 ---
 # <a name="select-a-service"></a>Selezionare un servizio
 
 Utilizzare la **finestra di dialogo Seleziona** un servizio per trovare i servizi disponibili nell'ambiente. Per usare un servizio esistente, fare clic su di esso nell'elenco e quindi fare clic su **OK**.
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015](../../manage/manage.md).
 
 ## <a name="tasks-you-can-perform"></a>Attività eseguibili
 
@@ -38,7 +38,7 @@ Nella pagina **Seleziona un servizio** è possibile eseguire le attività seguen
 
 - [Configurare le opzioni del server chat persistente a livello globale o per il pool di server chat persistente](/previous-versions/office/lync-server-2013/lync-server-2013-configure-persistent-chat-server-options-globally-or-for-persistent-chat-server-pool)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015](../../manage/manage.md).
 
 ## <a name="to-configure-categories-for-chat-rooms"></a>Per configurare le categorie delle chat room
 

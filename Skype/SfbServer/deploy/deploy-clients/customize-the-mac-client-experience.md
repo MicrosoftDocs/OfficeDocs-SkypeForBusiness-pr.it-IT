@@ -1,7 +1,7 @@
 ---
-title: Personalizzare l'esperienza del client Mac in Skype for Business
+title: Personalizzare l'esperienza client Mac in Skype for Business
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.reviewer: PhillipGarding
 audience: ITPro
@@ -12,20 +12,20 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: d1d9cfec-e923-4d02-a306-ee40a9114cb8
 description: Questo articolo descrive le preferenze client e le impostazioni predefinite disponibili per il Skype for Business sul client Mac e come modificarle dall'esterno dell'app.
-ms.openlocfilehash: ed702585e0fb7cdd78bdf318b77b8a2513870498
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 909756b25f9ad3ee17536f24a4143b5b72180918
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773356"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60838348"
 ---
-# <a name="customize-the-mac-client-experience-in-skype-for-business"></a>Personalizzare l'esperienza del client Mac in Skype for Business
+# <a name="customize-the-mac-client-experience-in-skype-for-business"></a>Personalizzare l'esperienza client Mac in Skype for Business
  
 Questo articolo descrive le preferenze client e le impostazioni predefinite disponibili per il Skype for Business sul client Mac e come modificarle dall'esterno dell'app.
   
 ## <a name="skype-for-business-on-mac-client-preference-settings"></a>Skype for Business delle preferenze del client Mac
 
-Alcune funzionalità e comportamenti disponibili per l Skype for Business nei client Mac sono determinati dalle impostazioni di preferenza nel client. Le Skype for Business su Mac si trovano in un file che si trova nei Mac in cui è installato il client Skype for Business che si trova nel percorso seguente: 
+Alcune funzionalità e comportamenti disponibili per l'Skype for Business nei client Mac sono determinati dalle impostazioni di preferenza nel client. Le Skype for Business preferenze del Mac si trovano in un file che si trova nei Mac in cui è installato il client Skype for Business che si trova nel percorso seguente: 
   
  **~/Library/Containers/com.microsoft.SkypeForBusiness/Data/Library/Preferences/com.microsoft.SkypeForBusiness.plist**
   

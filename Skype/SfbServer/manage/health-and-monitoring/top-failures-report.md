@@ -2,7 +2,7 @@
 title: Rapporto errori principali in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 438942e2-580a-4b67-9d42-f116111fb26a
 description: 'Riepilogo: informazioni sul Rapporto errori principali in Skype for Business Server.'
-ms.openlocfilehash: 11a71d2c4a68f15e334f913d7672bf49319f77dc
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 3e752ad2f15e6739fb6f1a34aa9f30e86767041d
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60774786"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60853030"
 ---
 # <a name="top-failures-report-in-skype-for-business-server"></a>Rapporto errori principali in Skype for Business Server
  
@@ -33,7 +33,7 @@ Le informazioni vengono registrate nel rapporto non solo per il numero totale di
   
 ## <a name="accessing-the-top-failures-report"></a>Accesso al Rapporto errori principali
 
-È possibile accedere al Rapporto errori principali dalla home page Relazioni monitoraggio. Facendo clic sulla metrica Sessioni segnalate si visualizza il [Rapporto distribuzione errori in Skype for Business Server](failure-distribution-report.md).
+È possibile accedere al Rapporto errori principali dalla home page Relazioni monitoraggio. Facendo clic sulla metrica Sessioni segnalate si visualizza il Rapporto distribuzione errori [in Skype for Business Server](failure-distribution-report.md).
   
 ## <a name="making-the-best-use-of-the-top-failures-report"></a>Utilizzo ottimale del Rapporto errori principali
 

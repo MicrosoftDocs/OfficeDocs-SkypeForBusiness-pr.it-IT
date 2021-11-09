@@ -2,7 +2,7 @@
 title: Spostare i dati dell'archivio file in un nuovo archivio file in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 8d1d5819-add2-4f5d-a436-74c00a281df0
 description: "Se è necessario rimuovere il file server che attualmente funge da archivio file per la distribuzione di Skype for Business Server o se è necessario apportare altre modifiche che renderebbero l'archivio file corrente non disponibile, è innanzitutto necessario creare una nuova condivisione. È quindi necessario eseguire la procedura seguente:"
-ms.openlocfilehash: 606b3e1f405e75f58612831e896ff8003c87c682
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ab214a4ed23810aa14cefed205cf33dbccb52849
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745942"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60838548"
 ---
 # <a name="move-file-store-data-to-a-new-file-store-in-skype-for-business-server"></a>Spostare i dati dell'archivio file in un nuovo archivio file in Skype for Business Server
 
@@ -37,15 +37,15 @@ Se è necessario rimuovere il file server che attualmente funge da archivio file
 
 1. Accedere a un computer come membro del gruppo RTCUniversersalServerAdmins o CsServerAdministrator in cui è installato Skype for Business Server strumenti di amministrazione.
 
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo.
 
 3. Sulla barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.
 
-4. Per ogni pool di server Director, Server Director, server edizione Standard e pool Front End che utilizza l'archivio file che si intende rimuovere, selezionare il server o il pool, fare clic su Azione e quindi su Arresta tutti i **servizi.** 
+4. Per ogni pool di server Director, Server Director, server edizione Standard e pool Front End che utilizza l'archivio file che si intende rimuovere, selezionare il server o il pool, fare clic su **Azione** e quindi su Arresta tutti i **servizi.**
 
 5. Accedere al computer in cui è installato Generatore di topologie come membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins.
 
-6. Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server** e quindi fare clic Skype for Business Server Generatore **di topologie.**
+6. Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** Skype for Business Server **e** quindi Skype for Business Server Generatore **di topologie.**
 
 7. Selezionare un server o un pool che utilizza l'archivio file ed eseguire le operazioni seguenti:
 
@@ -64,7 +64,7 @@ Se è necessario rimuovere il file server che attualmente funge da archivio file
 
    b. In **Modifica proprietà,** in **Associazioni** in **Archivio file** selezionare la nuova condivisione file e quindi fare clic su **OK.**
 
-9. Pubblicare la topologia, controllare lo stato della replica ed eseguire la Skype for Business Server distribuzione guidata in base alle esigenze. Per informazioni dettagliate, vedere [Common Procedures for Removing Lync Servers and Components](/previous-versions/office/skype-server-2010/gg195688(v=ocs.14)).
+9. Pubblicare la topologia, controllare lo stato della replica e quindi eseguire Skype for Business Server distribuzione guidata in base alle esigenze. Per informazioni dettagliate, vedere [Common Procedures for Removing Lync Servers and Components](/previous-versions/office/skype-server-2010/gg195688(v=ocs.14)).
 
 10. Avviare un prompt dei comandi: fare clic sul **pulsante Start,** scegliere **Esegui** e quindi digitare cmd.exe.
 

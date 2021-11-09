@@ -2,7 +2,7 @@
 title: Selezionare membri non consentiti
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: c626b6b4-15f3-4a59-bb1d-55dc8c60f5cb
 description: Un amministratore di Persistent Chat può creare e gestire categorie di chat room. Come parte della creazione e della gestione delle categorie di chat room, un amministratore di Persistent Chat può configurare entità (gruppi/contenitori/utenti di Servizi di dominio Active Directory) che hanno accesso per essere membri/creatori di chat room di una determinata categoria. Un amministratore di Persistent Chat può anche aggiungere DeniedMembers a una categoria e questi diventano esclusioni esplicite all'elenco di elementi consentiti. DeniedMembers esegue l'override di ciò che è in AllowedMembers.
-ms.openlocfilehash: c888368f5f26ccfb9f37445c0a0fdddf563a4c71
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 283c358d6b0eab79f667ec7ca17dc9eca3977586
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60764064"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60837958"
 ---
 # <a name="select-denied-members"></a>Selezionare membri non consentiti
 

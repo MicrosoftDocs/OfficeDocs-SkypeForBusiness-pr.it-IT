@@ -2,7 +2,7 @@
 title: Configurare SharePoint Server per la ricerca di dati Skype for Business archiviati
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 12/20/2018
 audience: ITPro
@@ -14,20 +14,20 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 17f49365-8778-4962-a41b-f96faf6902f1
 description: 'Riepilogo: configurare SharePoint Server per cercare i dati archiviati da Exchange Server e Skype for Business Server.'
-ms.openlocfilehash: ab7fe3127f4837334142dd1f4138df81f7dadf21
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: d3274c29ccdae22a382d045fc6db3ee448223332
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765854"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60839628"
 ---
 # <a name="configure-sharepoint-server-to-search-for-archived-skype-for-business-data"></a>Configurare SharePoint Server per la ricerca di dati Skype for Business archiviati
  
 **Riepilogo:** Configurare SharePoint Server per cercare i dati archiviati da Exchange Server 2016 o Exchange Server 2013 e Skype for Business Server.
   
-Uno dei principali vantaggi dell'archiviazione delle trascrizioni di messaggistica istantanea e conferenze Web in Exchange Server anziché Skype for Business Server è che l'archiviazione dei dati nello stesso percorso consente agli amministratori di utilizzare un singolo strumento per cercare i dati Exchange archiviati e/o archiviati Skype for Business Server. Poiché tutti i dati vengono archiviati nella stessa posizione (Exchange) qualsiasi strumento in grado di cercare i dati Exchange archiviati può anche cercare i dati Skype for Business Server archiviati.
+Uno dei principali vantaggi dell'archiviazione delle trascrizioni di messaggistica istantanea e conferenze Web in Exchange Server anziché Skype for Business Server è che l'archiviazione dei dati nello stesso percorso consente agli amministratori di utilizzare un singolo strumento per cercare i dati Exchange archiviati e/o i dati Skype for Business Server archiviati. Poiché tutti i dati vengono archiviati nella stessa posizione (Exchange) qualsiasi strumento in grado di cercare i dati Exchange archiviati può anche cercare i dati Skype for Business Server archiviati.
   
-Uno strumento che semplifica la ricerca dei dati archiviati è Microsoft SharePoint Server 2013. Se si desidera utilizzare SharePoint per cercare dati Skype for Business Server, è necessario innanzitutto completare tutti i passaggi necessari per configurare l'archiviazione Exchange in Skype for Business Server. Dopo Exchange Server e Skype for Business Server, è necessario installare l'API gestita di Exchange [Web Services](https://go.microsoft.com/fwlink/p/?LinkId=258305) nel SharePoint Server. Il file scaricato (EWSManagedAPI.msi) può essere salvato in qualsiasi cartella del SharePoint server.
+Uno strumento che semplifica la ricerca di dati archiviati è Microsoft SharePoint Server 2013. Se si desidera utilizzare SharePoint per cercare i dati Skype for Business Server, è necessario innanzitutto completare tutti i passaggi necessari per configurare l'archiviazione Exchange in Skype for Business Server. Dopo Exchange Server e Skype for Business Server, è necessario installare l'API gestita di Exchange [Web Services](https://go.microsoft.com/fwlink/p/?LinkId=258305) nel SharePoint Server. Il file scaricato (EWSManagedAPI.msi) può essere salvato in qualsiasi cartella del SharePoint server.
   
 Al termine del download del file, eseguire la procedura seguente in SharePoint Server:
   
@@ -94,7 +94,7 @@ Eseguire quindi un comando simile al seguente, che concede all'utente specificat
 Add-RoleGroupMember "Discovery Management" -Member "kenmyer"
 ```
 
-Dopo aver stabilito l'autenticazione da server a server tra Exchange e SharePoint, il passaggio successivo consiste nel creare un sito eDiscovery in SharePoint. A tale fine, è possibile eseguire comandi simili ai seguenti da SharePoint Management Shell:
+Dopo aver stabilito l'autenticazione da server a server tra Exchange e SharePoint, il passaggio successivo consiste nel creare un sito eDiscovery in SharePoint. Questa operazione può essere eseguita eseguendo comandi simili ai seguenti da SharePoint Management Shell:
   
 ```powershell
 $template = Get-SPWebTemplate | Where-Object {$_.Title -eq "eDiscovery Center"}
@@ -104,13 +104,13 @@ New-SPSite -Url "https://atl-sharepoint-001/sites/discovery" -OwnerAlias "kenmye
 > [!NOTE]
 > "eDiscovery" è l'abbreviazione di "individuazione elettronica" e in genere si riferisce al processo di ricerca in archivi elettronici di elementi che possano essere "considerati ragionevolmente ammissibili come prova" in un tribunale. 
   
-Quando il nuovo sito è pronto, il passaggio successivo consiste nel configurare Exchange Server in modo che agirà come origine dei risultati per SharePoint. È possibile eseguire questa operazione completando la procedura seguente dalla SharePoint Amministrazione centrale:
+Quando il nuovo sito è pronto, il passaggio successivo consiste nel configurare Exchange Server di agire come origine dei risultati per SharePoint. È possibile eseguire questa operazione completando la procedura seguente dalla SharePoint Amministrazione centrale:
   
 1. Nella pagina Amministrazione centrale fare clic su **Gestisci applicazioni di servizio**, quindi su **Applicazione servizio di ricerca**.
     
 2. In Applicazione servizio di ricerca: nella pagina Amministrazione ricerca fare clic su **Origini di risultati** e quindi su **Nuova origine dei risultati**.
     
-3. Nel riquadro **Nuova origine dei risultati** specificare un nome per la nuova origine dei risultati, ad esempio **Microsoft Exchange**, nella casella **Nome**. Selezionare **Exchange** come protocollo di origine dei risultati **e** quindi immettere l'URL di origine dei servizi Web per il server Exchange nella casella **URL** di origine Exchange risultati. L'URL di origine avrà un aspetto simile al seguente:
+3. Nel riquadro **Nuova origine dei risultati** specificare un nome per la nuova origine dei risultati, ad esempio **Microsoft Exchange**, nella casella **Nome**. Selezionare **Exchange** come protocollo dell'origine dei risultati **e** quindi immettere l'URL di origine dei servizi Web per il server Exchange nella casella **URL** di origine Exchange risultati. L'URL di origine avrà un aspetto simile al seguente:
     
     `https://atl-exchange-001.litwareinc.com/ews/exchange.asmx`
     
@@ -136,6 +136,6 @@ Infine, creare un nuovo caso di eDiscovery e un nuovo set di eDiscovery completa
     
 8. Nella pagina Set eDiscovery fare clic su **Salva** per salvare il nuovo set eDiscovery.
     
-A questo punto è possibile cercare la cassetta postale specificata (kenmyer) e/o abilitare In-Place conserva allo stesso modo per qualsiasi altro contenuto o origine dei risultati SharePoint.
+A questo punto è possibile cercare nella cassetta postale specificata (kenmyer) e/o abilitare In-Place conserva allo stesso modo per qualsiasi altro contenuto o origine dei risultati SharePoint.
   
 

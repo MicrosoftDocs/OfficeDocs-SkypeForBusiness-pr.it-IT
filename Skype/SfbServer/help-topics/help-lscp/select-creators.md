@@ -2,7 +2,7 @@
 title: Selezionare i creatori
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: f8d9ed6f-22ba-470e-b0b4-0da3cea5e961
 description: La creazione e la gestione delle chat room persistenti è molto più semplice con l'uso corretto delle categorie. Un amministratore di Persistent Chat può definire AllowedMembers e Creators per ogni categoria e può anche definire le impostazioni e i comportamenti predefiniti delle chat room che verranno applicati a tutte le chat room create nella categoria. Gli amministratori di Persistent Chat creano e gestiscono categorie Skype for Business Server pannello di controllo o Windows PowerShell cmdlet.
-ms.openlocfilehash: e3494f80864b14a3aae457f3a2c808690df52c77
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: d0b794c8f378f46d7713875b83560de37ac7c8b3
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60739522"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60837978"
 ---
 # <a name="select-creators"></a>Selezionare creatori
 
@@ -34,7 +34,7 @@ Nella pagina **Seleziona creatori**, è possibile eseguire le attività seguenti
 
 - [Nuove caratteristiche del server chat persistente](/previous-versions/office/lync-server-2013/lync-server-2013-new-persistent-chat-server-features)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015](../../manage/manage.md).
 
 ## <a name="to-configure-categories-for-chat-rooms"></a>Per configurare le categorie delle chat room
 

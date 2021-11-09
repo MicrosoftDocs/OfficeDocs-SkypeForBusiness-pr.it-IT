@@ -2,7 +2,7 @@
 title: Gestire i Front End Server in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: ab748733-6bad-4c93-8dda-db8d5271653d
 description: 'Riepilogo: informazioni su come aggiungere, rimuovere, applicare patch o aggiornare Front End Server in Skype for Business Server.'
-ms.openlocfilehash: 4322d9456488201f029a80d3f91aaa94c9a2d3d0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: daa56be66a09d0969c193021aa3b847fc5972413
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60760644"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60837528"
 ---
 # <a name="manage-front-end-servers-in-skype-for-business-server"></a>Gestire i Front End Server in Skype for Business Server
  

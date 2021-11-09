@@ -2,7 +2,7 @@
 title: Aggiungere il computer Front End Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: e7fe2522-1bd2-416a-9dbb-51cacea9c6e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Specificare il nome di dominio completo (FQDN) di ogni computer che si desidera aggiungere come Front End Server nel pool. Dopo aver aggiunto un computer all'elenco, è possibile aggiornare l'FQDN del computer o rimuoverlo dal pool in qualsiasi momento prima di pubblicare la topologia. Dopo la pubblicazione della topologia, per poter modificare l'FQDN, è necessario eliminare il server in Generatore di topologie e quindi aggiungere al pool un nuovo server con il nuovo FQDN. Per informazioni dettagliate sull'aggiunta di un pool Front End alla topologia, vedere Define and Configure a Front End Pool nella documentazione relativa alla distribuzione.
-ms.openlocfilehash: 356ad03beeda1816747e95801379b7b7ba7c0ab8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: df6753d27d6e70227b415a3cd0d1f1f6c85fdee6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60771034"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60839308"
 ---
 # <a name="add-front-end-machine"></a>Aggiungere un computer front-end
 
