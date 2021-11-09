@@ -2,7 +2,7 @@
 title: Modificare la topologia in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 4/5/2016
 audience: ITPro
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 47425ab1-5645-4d6f-b202-64bcce43e3ef
 description: Dopo aver completato le domande iniziali, è possibile modificare il nome di dominio completo (FQDN) e gli indirizzi IP per il sito. A tale scopo, nella pagina Topologia globale fare doppio clic sul sito che si desidera modificare.
-ms.openlocfilehash: 2276f2959329c77744054976e3a49f5ad72778ae
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 698f7e5e94666a67dd01c55a877a037452fd58e2
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60776166"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60861193"
 ---
 # <a name="edit-the-topology-in-skype-for-business-server-2015"></a>Modificare la topologia in Skype for Business Server 2015
 

@@ -2,7 +2,7 @@
 title: Gestire le posizioni per i provider di servizi trunk SIP in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,29 +16,29 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d9b33b56-66c2-4dee-b056-faaf98925bf2
 description: Decisioni necessarie per la pianificazione di un database delle informazioni sulla posizione o di un database esterno simile per una distribuzione E9-1-1 tramite provider di trunking SIP, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 4bc74933623f1a435288246ac695c9545c8606d1
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4667ea571fe3bbb022c8dd1ee1483e6195165ec9
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60751545"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60855293"
 ---
 # <a name="manage-locations-for-sip-trunk-service-providers-in-skype-for-business-server"></a>Gestire le posizioni per i provider di servizi trunk SIP in Skype for Business Server
 
 Decisioni necessarie per la pianificazione di un database delle informazioni sulla posizione o di un database esterno simile per una distribuzione E9-1-1 tramite provider di trunking SIP, in Skype for Business Server VoIP aziendale.
 
-Per configurare Skype for Business Server per individuare automaticamente i client all'interno di una rete, è necessario popolare il database del servizio informazioni percorso con una wiremap di rete e pubblicare i percorsi oppure collegare un database esterno che contiene già i mapping corretti. Come parte di questo processo, è necessario convalidare gli indirizzi civici delle posizioni con il provider di servizi E9-1-1. Per informazioni dettagliate, [vedere Configure the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-configure-the-location-database) nella documentazione relativa alla distribuzione.
+Per configurare Skype for Business Server per l'individuazione automatica dei client all'interno di una rete, è necessario popolare il database del servizio informazioni percorso con una wiremap di rete e pubblicare le posizioni oppure creare un collegamento a un database esterno che contiene già i mapping corretti. Come parte di questo processo, è necessario convalidare gli indirizzi civici delle posizioni con il provider di servizi E9-1-1. Per informazioni dettagliate, [vedere Configure the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-configure-the-location-database) nella documentazione relativa alla distribuzione.
 
 Il database del servizio informazioni sulla posizione viene popolato con un ERL (Emergency Response Location), costituito da un indirizzo civico e dall'indirizzo specifico all'interno di un edificio. Il campo Posizione del servizio **informazioni** sulla posizione, che è la posizione specifica all'interno di un edificio, ha una lunghezza massima di 20 caratteri (spazi inclusi). Tentare di includere, in tale lunghezza, gli elementi seguenti:
 
 - Un nome di facile comprensione che identifichi la posizione del chiamante del servizio di emergenza (911), per consentire agli addetti del servizio di emergenza di trovare immediatamente la posizione specifica quando si recano all'indirizzo. Questo nome di posizione può includere il numero di edificio, l'indicazione della scala, il numero del piano, il numero di porta e così via. Evitare nomi alternativi noti solo ai dipendenti, che potrebbero indirizzare gli addetti del servizio di emergenza nel posto sbagliato.
 
-- Identificatore di posizione che consente agli utenti di vedere facilmente che il Skype for Business ha selezionato la posizione corretta. Il Skype for Business client concatena automaticamente e visualizza i campi **Location** e **City** individuati nell'intestazione. È consigliabile aggiungere l'indirizzo dell'edificio a ogni identificatore di posizione, ad esempio "1° piano <street number> ". Se non viene specificato l'indirizzo, un identificatore di posizione generico come "1° piano" potrebbe riferirsi a qualsiasi edificio della città.
+- Un identificatore di posizione che consente agli utenti di vedere facilmente che il Skype for Business ha selezionato la posizione corretta. Il Skype for Business client concatena automaticamente e visualizza i campi **Location** e **City** individuati nell'intestazione. È consigliabile aggiungere l'indirizzo dell'edificio a ogni identificatore di posizione, ad esempio "1° piano \<street number> ". Se non viene specificato l'indirizzo, un identificatore di posizione generico come "1° piano" potrebbe riferirsi a qualsiasi edificio della città.
 
 - Se la posizione è approssimativa perché è determinata da un punto di accesso wireless, è possibile aggiungere la parola **[Near]** (ad esempio, "Near 1st Floor 1234").
 
 > [!NOTE]
-> Le posizioni aggiunte al database delle posizioni centrali non sono disponibili per il client finché non vengono pubblicate utilizzando un comando di Skype for Business Server Management Shell e vengono replicate agli archivi locali del pool. Per informazioni dettagliate, vedere [Publishing the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-location-database) nella documentazione relativa alla distribuzione.
+> Le posizioni aggiunte al database delle posizioni centrali non sono disponibili per il client finché non vengono pubblicate tramite un comando di Skype for Business Server Management Shell e vengono replicate agli archivi locali del pool. Per informazioni dettagliate, vedere [Publishing the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-location-database) nella documentazione relativa alla distribuzione.
 
 Nelle sezioni seguenti vengono illustrate le considerazioni da tenere in considerazione durante la compilazione e la gestione del database delle località.
 
@@ -52,7 +52,7 @@ Esaminare dove si trovano i dati e quali operazioni è necessario eseguire per c
 
  **Valutare se si dispone di un database di terze parti contenente già un mapping di posizioni.**
 
-Utilizzando l'opzione Secondary Location Information service per connettersi a un database di terze parti, è possibile raggruppare e gestire le posizioni utilizzando una piattaforma offline. Uno dei vantaggi di questo approccio è che le posizioni possono essere associate non solo a identificatori di rete, ma anche a un utente. Ciò significa che il servizio informazioni sulla posizione può restituire più indirizzi, provenienti dal servizio informazioni sulla posizione secondario, a un client Skype for Business secondario. L'utente può quindi scegliere la posizione più appropriata.
+Utilizzando l'opzione Secondary Location Information service per connettersi a un database di terze parti, è possibile raggruppare e gestire le posizioni utilizzando una piattaforma offline. Uno dei vantaggi di questo approccio è che le posizioni possono essere associate non solo a identificatori di rete, ma anche a un utente. Ciò significa che il servizio informazioni percorso può restituire più indirizzi, provenienti dal servizio informazioni sulla posizione secondario, a un client Skype for Business secondario. L'utente può quindi scegliere la posizione più appropriata.
 
 Per l'integrazione con il servizio informazioni percorso, il database di terze parti deve seguire lo schema di richiesta/risposta percorso di Lync Server. Per informazioni dettagliate,  [vedere "[MS-E911WS]: Web Service for E911 Support Protocol Specification"](/openspecs/office_protocols/ms-e911ws/ab5d7449-2c15-434b-bf65-fdf38b8ffabd). Per informazioni dettagliate sulla distribuzione di un servizio informazioni percorso secondario, vedere [Configure a secondary Location Information service in Skype for Business Server](../../deploy/deploy-enterprise-voice/secondary-location-information-service.md) nella documentazione relativa alla distribuzione.
 

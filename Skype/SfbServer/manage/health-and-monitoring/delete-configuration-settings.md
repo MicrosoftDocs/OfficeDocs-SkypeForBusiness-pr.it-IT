@@ -2,7 +2,7 @@
 title: Eliminare una raccolta esistente di impostazioni di configurazione di registrazione dei dati in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 8ebf5da8-c0fc-498c-8d85-527d3be8479a
 description: 'Riepilogo: informazioni su come rimuovere le impostazioni di configurazione della registrazione dei dati in Skype for Business Server.'
-ms.openlocfilehash: b72891493a88a733dfd18761023ba875a3b6bc07
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 8218d0b51045d3962825555bd5b248cb58262a37
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763685"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60854320"
 ---
 # <a name="delete-an-existing-collection-of-cdr-configuration-settings-in-skype-for-business-server"></a>Eliminare una raccolta esistente di impostazioni di configurazione di registrazione dei dati in Skype for Business Server
  
@@ -73,4 +73,4 @@ Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [R
   
 ## <a name="see-also"></a>Vedere anche
 
-[Eliminare manualmente i database di registrazione dettagli chiamata e qualità dell'esperienza in Skype for Business Server](../../deploy/deploy-monitoring/purgecall-detail-recording-and-qoe.md)
+[Eliminare manualmente i database di registrazione dettagli chiamata e Qualità dell'esperienza in Skype for Business Server](../../deploy/deploy-monitoring/purgecall-detail-recording-and-qoe.md)

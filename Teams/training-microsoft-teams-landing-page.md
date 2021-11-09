@@ -3,7 +3,7 @@ title: Formazione per gli amministratori di Microsoft Teams
 ms.reviewer: ''
 description: Questi video con esercitazioni e queste risorse per la formazione con docente destinate a utenti finali e amministratori consentono di sfruttare al massimo Microsoft Teams nell'organizzazione.
 ms.topic: overview
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 audience: admin
 manager: serdars
@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: f5bb784eeec96f9b383a941d547b31f789a408fb
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 70b24d1e8f3b47b4a8f690e823e922c16807a0da
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60768284"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60860923"
 ---
 # <a name="microsoft-teams-training"></a>Formazione su Microsoft Teams
 

@@ -2,7 +2,7 @@
 title: Distribuire pool Front End associati per il ripristino di emergenza in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 2f12467c-8b90-43e6-831b-a0b096427f17
 description: È possibile decidere di utilizzare pool Front End abbinati per fornire protezione da ripristino di emergenza, ma non è un requisito.
-ms.openlocfilehash: 9aec106905b2d8628e30461dce130f301aef1b25
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 27909f44f0d86cac3100437f7df094b5f72ba1be
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60741332"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60855100"
 ---
 # <a name="deploy-paired-front-end-pools-for-disaster-recovery-in-skype-for-business-server"></a>Distribuire pool Front End associati per il ripristino di emergenza in Skype for Business Server
  
@@ -53,7 +53,7 @@ ms.locfileid: "60741332"
 
     Consente di configurare altri servizi necessari per il corretto funzionamento dell'accoppiamento di backup.
     
-9. Al termine dell'installazione dei componenti necessari per l'associazione di backup in ogni Front end Server in entrambi i pool, assicurarsi di ri-applicare qualsiasi aggiornamento cumulativo esistente applicato in precedenza su questi Front End Server in entrambi i pool e quindi continuare con il passaggio successivo.
+9. Al termine dell'installazione dei componenti necessari per l'associazione di backup in ogni Front end Server in entrambi i pool, assicurarsi di applicare di nuovo qualsiasi aggiornamento cumulativo esistente applicato in precedenza su questi Front End Server in entrambi i pool e quindi continuare con il passaggio successivo.
 
 10. Da un prompt Skype for Business Server Management Shell eseguire quanto segue: 
     

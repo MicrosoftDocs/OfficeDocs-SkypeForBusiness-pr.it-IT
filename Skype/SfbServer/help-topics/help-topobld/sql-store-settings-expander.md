@@ -2,7 +2,7 @@
 title: Espansione delle impostazioni dell'archivio SQL
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: bd269d52-6f87-4433-b9b0-2b543fea845d
-description: Per modificare le proprietà di un SQL Server database, è necessario modificare l'istanza SQL Server database. Non è possibile usare la finestra di dialogo Modifica proprietà per azioni come lo spostamento del database del server di archiviazione da un computer all'altro. Inoltre, non è possibile utilizzare la finestra di dialogo Modifica proprietà per modificare l'istanza di SQL Server che ospita l'archivio di gestione centrale.
-ms.openlocfilehash: 8a0debb5bff3befa2f4b15fa93ce16634d280cc0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: Per modificare le proprietà di un database SQL Server database, è necessario modificare l'istanza SQL Server database. Non è possibile usare la finestra di dialogo Modifica proprietà per azioni come lo spostamento del database del server di archiviazione da un computer all'altro. Inoltre, non è possibile utilizzare la finestra di dialogo Modifica proprietà per modificare l'istanza SQL Server che ospita l'archivio di gestione centrale.
+ms.openlocfilehash: 0c5af1546b601933705daf4b4e1a6817fe4b04ee
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60750375"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60861373"
 ---
 # <a name="sql-store-settings-expander"></a>Espansione delle impostazioni dell'archivio SQL
  
-Per modificare le proprietà di un SQL Server database, è necessario modificare l'istanza SQL Server database. Non è possibile usare la finestra di dialogo **Modifica proprietà** per azioni come lo spostamento del database del server di archiviazione da un computer all'altro. Inoltre, non è possibile utilizzare la finestra **di** dialogo Modifica proprietà per modificare l'istanza di SQL Server che ospita l'archivio di gestione centrale.
+Per modificare le proprietà di un database SQL Server database, è necessario modificare l'istanza SQL Server database. Non è possibile usare la finestra di dialogo **Modifica proprietà** per azioni come lo spostamento del database del server di archiviazione da un computer all'altro. Inoltre, non è possibile utilizzare la finestra **di** dialogo Modifica proprietà per modificare l'istanza di SQL Server che ospita l'archivio di gestione centrale.
   
 ## <a name="editing-the-properties-of-a-sql-server-database"></a>Modifica delle proprietà di un SQL Server database
 
@@ -38,7 +38,7 @@ Per modificare l'istanza SQL Server utilizzata da qualsiasi database diverso dal
     
    - Per utilizzare l'istanza SQL Server predefinita, selezionare **Istanza predefinita** e quindi fare clic su **OK.**
     
-   - Per utilizzare un'istanza di database denominata, selezionare **Istanza denominata**, immettere il nome dell'istanza nella casella di testo e quindi fare clic su **OK**. È necessario immettere solo il nome dell'istanza,ad esempio ArchivingInstance, e non l'SQL Server percorso completo.
+   - Per utilizzare un'istanza di database denominata, selezionare **Istanza denominata**, immettere il nome dell'istanza nella casella di testo e quindi fare clic su **OK**. È necessario immettere solo il nome dell'istanza(ad esempio ArchivingInstance) e non l'intero SQL Server percorso.
     
 Quando si utilizza  la finestra di dialogo Modifica proprietà, Generatore di topologie non verificherà che l'istanza di database immessa sia valida. Ad esempio, se si digita inavvertitamenteArchivingInstanec come nome dell'istanza e quindi si fa clic su **OK,** Generatore di topologie accetterà tale istanza non valida. Prima di pubblicare questa topologia, è necessario correggere questo errore: se non è possibile trovare un'istanza di SQL Server, Generatore di topologie non creerà tale istanza automaticamente.
   

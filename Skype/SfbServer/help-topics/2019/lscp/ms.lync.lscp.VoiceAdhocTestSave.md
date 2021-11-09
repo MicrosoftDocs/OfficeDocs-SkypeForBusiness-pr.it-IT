@@ -2,7 +2,7 @@
 title: Salvare le informazioni di un test case di routing vocale
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 7874119d-d92b-484e-bbda-62f65241debd
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile utilizzare la finestra di dialogo Salva informazioni test case di routing vocale per salvare un nuovo test case di routing vocale temporaneo. In Salva informazioni test case di routing vocale digitare il nome che si desidera assegnare al test case in Nome e quindi fare clic su OK.
-ms.openlocfilehash: 59b0c997d1f3a2b34213881435b5eb1ff3d7ddc8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 184a1de7eeadf975751303f25a08cb117ac7e8c0
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769414"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60845729"
 ---
 # <a name="save-voice-routing-test-case-information"></a>Salvare le informazioni di un test case di routing vocale
  

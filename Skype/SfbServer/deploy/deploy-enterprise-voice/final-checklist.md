@@ -2,7 +2,7 @@
 title: Elenco di controllo finale per la distribuzione del controllo di ammissione di chiamata Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d56a525f-3da5-4ac0-a311-0c5efd98c9df
 description: Elenco di controllo finale per la distribuzione del servizio Controllo di ammissione di chiamata in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 11bf5a69b273f1311399090cc893bee1f4732443
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ca9162604d1a25ecbde0df800e891931cd756d99
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759078"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60855110"
 ---
 # <a name="call-admission-control-deployment-final-checklist-for-skype-for-business-server"></a>Distribuzione del controllo di ammissione di chiamata: elenco di controllo finale per Skype for Business Server
  
@@ -34,11 +34,11 @@ Utilizzare l'elenco di controllo seguente per verificare di aver completato tutt
     > [!NOTE]
     > I server perimetrali non sono necessari per implementare il controllo di ammissione di chiamata. 
   
-- Verificare che il servizio Controllo di ammissione di chiamata sia abilitato, come specificato in [Abilitare il controllo di](enable-call-admission-control.md)ammissione di chiamata in Skype for Business Server .
+- Verificare che il servizio Controllo di ammissione di chiamata sia abilitato, come specificato in Abilitare il controllo di ammissione [di chiamata in Skype for Business Server](enable-call-admission-control.md).
     
 - Verificare che il controllo di ammissione di chiamata sia abilitato in tutti i siti centrali. Questa operazione può essere eseguita tramite Generatore di topologie. Se durante la pubblicazione viene generato un avviso, *non ignorarlo.*
     
-- Assicurarsi che tutte le subnet gestite nella rete aziendale siano configurate nelle impostazioni di configurazione della rete. È inoltre essenziale che ogni subnet sia associata a un sito di rete, come illustrato [in Deploy network regions, sites and subnets in Skype for Business](deploy-network.md).
+- Assicurarsi che tutte le subnet gestite nella rete aziendale siano configurate nelle impostazioni di configurazione della rete. È inoltre essenziale che ogni subnet sia associata a un sito di rete, come illustrato in Distribuire aree [di rete,](deploy-network.md)siti e subnet in Skype for Business .
     
 - Verificare che la subnet o gli indirizzi IP di tutti i Front End Server, Survivable Branch Appliance (SBA), Audio/Video Conferencing Server (se in un pool separato) e Mediation Server siano configurati nelle impostazioni di configurazione di rete.
     

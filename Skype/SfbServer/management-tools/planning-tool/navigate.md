@@ -2,7 +2,7 @@
 title: Esplorare lo strumento di pianificazione in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 4/5/2016
 audience: ITPro
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 01d28e07-7fdc-41f9-9b6d-75dad8c14f6a
 description: È possibile spostarsi Skype for Business Server 2015 Planning Tool utilizzando una combinazione di una barra degli strumenti, pulsanti e collegamenti specifici della pagina e riquadri specifici del contesto. I riquadri specifici del contesto forniscono informazioni di progettazione per la pianificazione e la capacità rilevanti per le opzioni di selezione in una pagina specifica.
-ms.openlocfilehash: 6601b4830c1bee071ea5ad7e9dbaaa533d7d761a
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 6485d23d8f7aa6bfafd039ab1832be7a06f65449
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60751595"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60845379"
 ---
 # <a name="navigate-the-planning-tool-in-skype-for-business-server-2015"></a>Esplorare lo strumento di pianificazione in Skype for Business Server 2015
 
@@ -29,13 +29,13 @@ All'avvio dello strumento di pianificazione, un progettista visualizza innanzitu
 
 ![Pagina iniziale dello strumento di pianificazione.](../../media/Planning_Tool_Welcome.png)
 
-Nella pagina iniziale, il progettista sceglie **Informazioni di base**, **Progetta siti** o **Visualizza**. Per informazioni dettagliate, [vedere Create the initial topology design for Skype for Business Server 2015](create-the-initial-design.md).
+Nella pagina iniziale, il progettista sceglie **Informazioni di base,** **Progetta siti** o **Visualizza.** Per informazioni dettagliate, [vedere Create the initial topology design for Skype for Business Server 2015](create-the-initial-design.md).
 
 Nella parte superiore dello Strumento di pianificazione è disponibile una barra degli strumenti che consente di accedere facilmente alle funzioni utilizzate di frequente. La barra degli strumenti viene visualizzata qui come riferimento e ogni funzione verrà illustrata negli argomenti correlati.
 
 ![Barra degli strumenti dello strumento di pianificazione.](../../media/Planning_Tool_Toolbar_Annotated.jpg)
 
-Lo strumento di pianificazione dispone di una sezione Collegamenti esterni sul lato sinistro dello strumento. Da qui, il progettista ha un facile accesso alle informazioni sulla pianificazione e alla distribuzione e ad altre risorse tecniche come formazione, blog tecnici, forum e altre risorse scaricabili. Anche nella sezione Collegamenti esterni è disponibile un collegamento feedback al team Skype for Business Server strumento di pianificazione 2015.
+Lo strumento di pianificazione dispone di una sezione Collegamenti esterni sul lato sinistro dello strumento. Da qui, il progettista ha un facile accesso alle informazioni sulla pianificazione e alla distribuzione e ad altre risorse tecniche come formazione, blog tecnici, forum e altre risorse scaricabili. Anche nella sezione Collegamenti esterni è disponibile un collegamento Feedback al team Skype for Business Server strumento di pianificazione 2015.
 
 ![Finestra di dialogo Collegamenti esterni dello strumento di pianificazione.](../../media/Planning_Tool_External_Links_Dialog.jpg)
 

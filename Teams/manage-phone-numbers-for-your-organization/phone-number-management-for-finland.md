@@ -1,6 +1,6 @@
 ---
 title: Telefono gestione dei numeri per la Finlandia
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: chandra.kilaru, kristen.kutser
@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Finlandia per Microsoft Teams.
-ms.openlocfilehash: 57f5429bb618f46b4fc198728e459af6a48049b5
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: d4b12a5c5b6ca55d42249978a2beb71e082a128b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777176"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60844989"
 ---
 # <a name="phone-number-management-for-finland"></a>Telefono gestione dei numeri per la Finlandia
 
@@ -37,7 +37,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.<br/> |In Finlandia è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>Nuova richiesta di numero di telefono per la Finlandia (v.1.0) (en-fi)]().<br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conoscere il cliente per la Finlandia [(v.1.0) (fi-FI)](https://download.microsoft.com/download/d/5/3/d5393c6b-eb6e-45e3-975e-d8a501571366/new-phone-number-request-for-finland-(v1.0)-(fi-FI).pdf) Conoscere il modulo del cliente, compilarlo per intero e inviarlo a Microsoft.<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.   |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.<br/> |In Finlandia è possibile ottenere i numeri di telefono dell'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>Nuova richiesta di numero di telefono per la Finlandia (v.1.0) (en-fi)]().<br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conoscere il cliente per la Finlandia [(v.1.0) (fi-FI)](https://download.microsoft.com/download/d/5/3/d5393c6b-eb6e-45e3-975e-d8a501571366/new-phone-number-request-for-finland-(v1.0)-(fi-FI).pdf) Conoscere il modulo del cliente, compilarlo per intero e inviarlo a Microsoft.<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.   |
 |Fai trasferire a noi i numeri di telefono.| Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Finlandia (tutti i numeri) (v.1.0) (en-fi)](https://download.microsoft.com/download/a/6/8/a68d6c80-daf5-4d40-ba6e-d0f99db1041b/letter-of-authorization-(loa)-for-finland-(all-numbers)-(v1.0)-(en-fi).pdf) <br/> <br/>Compilarlo e [contattare il service desk TNS per istruzioni.](contact-tns-service-desk.md) <br/><br/>Il completamento del trasferimento di numeri in questo mercato può richiedere da due a tre settimane. <br/><br/> Questi numeri non possono essere usati per le conferenze in questo momento.   |
 |Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il service desk TNS per istruzioni](contact-tns-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
 |Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il service desk TNS per istruzioni](contact-tns-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |

@@ -2,7 +2,7 @@
 title: SQL Server Reporting Services (Invoke)
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,16 +15,16 @@ ms.localizationpriority: medium
 ms.assetid: 4a4ba8d6-ba43-45b3-b834-372d092561e7
 ROBOTS: NOINDEX, NOFOLLOW
 description: Dopo aver fornito le informazioni necessarie per la distribuzione dei report di Monitoring Server a Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 Report Services, nella pagina Esecuzione comandi viene visualizzato un riepilogo dei comandi emessi per installare i report nel SQL Server Reporting Services.
-ms.openlocfilehash: 37fa7f1c56c9e65e04c0b33993e5dee67561bb92
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 6ba343e31df4fbf5c29b90dbebd26c7c008732b6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755217"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60860773"
 ---
 # <a name="sql-server-reporting-services-invoke"></a>SQL Server Reporting Services (Invoke)
  
-Dopo aver fornito le informazioni necessarie per la distribuzione dei report di Monitoring Server a Microsoft SQL Server Report Services, nella pagina Esecuzione comandi viene visualizzato un riepilogo dei comandi emessi per installare i report nel SQL Server Reporting Services.
+Dopo aver fornito le informazioni necessarie per la distribuzione dei report di Monitoring Server a Microsoft SQL Server Report Services, nella pagina Esegui comandi viene visualizzato un riepilogo dei comandi emessi per installare i report nel SQL Server Reporting Services.
   
 Esaminare il riepilogo dei comandi e notare qualsiasi messaggio di errore o di avviso visualizzato dai comandi. Se viene generato un file di registro, selezionarlo nell'elenco a discesa sotto la finestra di riepilogo e fare clic su **Visualizza registro** per visualizzarlo.
   

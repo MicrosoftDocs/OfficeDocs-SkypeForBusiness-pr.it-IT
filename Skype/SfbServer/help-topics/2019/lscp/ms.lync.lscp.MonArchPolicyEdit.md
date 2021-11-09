@@ -2,7 +2,7 @@
 title: Criteri di archiviazione Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: a4f948e7-e8f6-449a-8907-f61c5b143c05
 ROBOTS: NOINDEX, NOFOLLOW
-description: "I criteri di archiviazione consentono di controllare l'archiviazione delle comunicazioni interne ed esterne nella distribuzione per gli utenti ospitati in Skype for Business Server. I criteri di archiviazione includono il criterio globale e, facoltativamente, uno o più criteri per sito e utente:"
-ms.openlocfilehash: a5df0231622f9967484574ac1a11a89f15fd163e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: "I criteri di archiviazione consentono di controllare l'archiviazione delle comunicazioni interne ed esterne nella distribuzione per gli utenti ospitati Skype for Business Server. I criteri di archiviazione includono il criterio globale e, facoltativamente, uno o più criteri per sito e utente:"
+ms.openlocfilehash: 0cf89285cd1549a1d84c7ab5ef3c553ca829c770
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773046"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60861653"
 ---
 # <a name="archiving-policy-create-new-or-edit-existing"></a>Criteri di archiviazione: crearne di nuovi o modificare quelli esistenti
  
-I criteri di archiviazione consentono di controllare l'archiviazione delle comunicazioni interne ed esterne nella distribuzione per gli utenti ospitati in Skype for Business Server. I criteri di archiviazione includono il criterio globale e, facoltativamente, uno o più criteri per sito e utente:
+I criteri di archiviazione consentono di controllare l'archiviazione delle comunicazioni interne ed esterne nella distribuzione per gli utenti ospitati Skype for Business Server. I criteri di archiviazione includono il criterio globale e, facoltativamente, uno o più criteri per sito e utente:
   
 - **Criteri globali** Il criterio globale viene creato per impostazione predefinita in tutte Skype for Business Server distribuzione. È possibile modificare il criterio globale, ma non eliminarlo. Se si tenta di eliminarlo, tutte le opzioni verranno ripristinate ai valori predefiniti.
     
@@ -33,7 +33,7 @@ I criteri di archiviazione consentono di controllare l'archiviazione delle comun
 - **Criteri utente (facoltativo)** È possibile specificare uno o più criteri di archiviazione utente, ognuno dei quali può essere configurato per abilitare e disabilitare l'archiviazione per le comunicazioni interne o esterne per un utente specifico. Un criterio utente ha la precedenza sui criteri globali e i criteri sito, ma solo per gli utenti a cui si assegna un criterio utente. È possibile modificare o eliminare i criteri utente.
     
 > [!NOTE]
-> Se si utilizza Exchange di archiviazione per archiviare i dati di archiviazione in Microsoft Exchange, i criteri di Exchange controllano l'archiviazione per gli utenti ospitati in Exchange. Per abilitare l'archiviazione per tali utenti, è necessario che la cassetta postale dell'utente sia In-Place blocco. 
+> Se si utilizza l'Exchange per archiviare i dati di archiviazione in Microsoft Exchange, i criteri di Exchange controllano l'archiviazione per gli utenti ospitati in Exchange. Per abilitare l'archiviazione per tali utenti, è necessario che la cassetta postale dell'utente sia In-Place blocco. 
   
 Per configurare le impostazioni per un criterio di archiviazione nuovo o esistente, è necessario specificare le opzioni seguenti:
 - **Nome** Ogni criterio di archiviazione richiede un nome. Il nome è determinato dal tipo di criterio che si sta aggiungendo o modificando:

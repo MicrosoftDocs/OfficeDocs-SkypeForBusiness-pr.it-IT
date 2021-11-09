@@ -2,7 +2,7 @@
 title: Gestire le conferenze in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 825e051c-83a5-420d-a5ef-f77afa368e2e
 description: 'Riepilogo: informazioni su come gestire le conferenze in Skype for Business Server.'
-ms.openlocfilehash: ef1afdecaec5ae237020b1681d95b556a37e2ab8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 122b7d797983df9bb3ef6252234099869650a66e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60751775"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60845459"
 ---
 # <a name="manage-conferencing-in-skype-for-business-server"></a>Gestire le conferenze in Skype for Business Server
  
 **Riepilogo:** Informazioni su come gestire le conferenze in Skype for Business Server.
   
-In questo argomento viene descritto come gestire le conferenze. Per ulteriori informazioni su come pianificare e distribuire le conferenze, vedere [Plan for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md) e Deploy conferencing in [Skype for Business Server](../../deploy/deploy-conferencing/deploy-conferencing.md).
+In questo argomento viene descritto come gestire le conferenze. Per ulteriori informazioni su come pianificare e distribuire le conferenze, vedere [Plan for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md) and Deploy conferencing in [Skype for Business Server](../../deploy/deploy-conferencing/deploy-conferencing.md).
   
 In Skype for Business Server, è possibile gestire i dettagli delle conferenze specificando le impostazioni di configurazione e criteri come indicato di seguito. Tenere presente che i termini conferenza e riunione vengono talvolta utilizzati in modo intercambiabile. In generale, tuttavia, è possibile pensare a una riunione come a un'istanza specifica di conferenza.
   
@@ -45,7 +45,7 @@ In Skype for Business Server, è possibile gestire i dettagli delle conferenze s
     
 ## <a name="manage-conferencing-by-using-skype-for-business-server-control-panel-or-by-using-skype-for-business-server-management-shell"></a>Gestire le conferenze tramite Skype for Business Server Pannello di controllo o tramite Skype for Business Server Management Shell
 
-È possibile gestire la maggior parte dei criteri di conferenza e delle impostazioni di configurazione Skype for Business Server Pannello di controllo o tramite Skype for Business Server Management Shell. Alcune impostazioni di configurazione sono disponibili solo tramite Skype for Business Server Management Shell.
+È possibile gestire la maggior parte dei criteri di conferenza e delle impostazioni di configurazione Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell. Alcune impostazioni di configurazione sono disponibili solo tramite Skype for Business Server Management Shell.
   
 - Per gestire le impostazioni dei criteri di conferenza:
     
@@ -142,7 +142,7 @@ In Skype for Business Server, è possibile gestire i dettagli delle conferenze s
 
 |**Cmdlet**|**Descrizione**|
 |:-----|:-----|
-|[Get-CsPinPolicy](/powershell/module/skype/get-cspinpolicy?view=skype-ps) <br/> |Restituisce informazioni sui criteri PIN client configurati per l'utilizzo nell'organizzazione. L'autenticazione PIN consente agli utenti di accedere Skype for Business Server fornendo un PIN anziché un nome utente e una password.  <br/> |
+|[Get-CsPinPolicy](/powershell/module/skype/get-cspinpolicy?view=skype-ps) <br/> |Restituisce informazioni sui criteri PIN client configurati per l'utilizzo nell'organizzazione. L'autenticazione PIN consente agli utenti Skype for Business Server l'accesso fornendo un PIN anziché un nome utente e una password.  <br/> |
 |[Grant-CsPinPolicy](/powershell/module/skype/grant-cspinpolicy?view=skype-ps) <br/> |Assegna un criterio PIN client a un utente o a un gruppo di utenti.  <br/> |
 |[New-CsPinPolicy](/powershell/module/skype/new-cspinpolicy?view=skype-ps) <br/> |Crea un nuovo criterio PIN (Personal Identification Number) del client.  <br/> |
 |[Remove-CsPinPolicy](/powershell/module/skype/remove-cspinpolicy?view=skype-ps) <br/> |Rimuove il criterio PIN specificato.  <br/> |
@@ -167,9 +167,9 @@ In Skype for Business Server, è possibile gestire i dettagli delle conferenze s
 |[Test-CsASConference](/powershell/module/skype/test-csasconference?view=skype-ps) <br/> |Verifica che due utenti possano partecipare a una conferenza di condivisione applicazioni.  <br/> |
 |[Test-CsAudioConferencingProvider](/powershell/module/skype/test-csaudioconferencingprovider?view=skype-ps) <br/> |Verifica se un utente può connettersi al proprio provider di servizi di audioconferenza. Un provider di servizi di audioconferenza è una società di terze parti che fornisce servizi di conferenza alle organizzazioni. Tra l'altro, i provider di servizi di audioconferenza consentono agli utenti che si trovano fuori sede e non connessi alla rete aziendale o a Internet di partecipare alla parte audio di una conferenza o di una riunione.  <br/> |
 |[Test-CsAVConference](/powershell/module/skype/test-csavconference?view=skype-ps) <br/> |Verifica se due utenti possono partecipare a una conferenza audio/video (A/V).  <br/> |
-|[Test-CsDataConference](/powershell/module/skype/test-csdataconference?view=skype-ps) <br/> |Verifica se una coppia di utenti può partecipare o meno a una conferenza Web di Skype for Business Server che include attività quali la condivisione o la visualizzazione di PowerPoint diapositive, lavagne o sondaggi. Il cmdlet verifica inoltre che il servizio web conferencing di Skype for Business Server sia in grado di individuare il server app Web Office e che un client possa caricare un file PowerPoint per la trasmissione da Office Web Apps Server.  <br/> |
+|[Test-CsDataConference](/powershell/module/skype/test-csdataconference?view=skype-ps) <br/> |Verifica se una coppia di utenti può partecipare o meno a una conferenza Web di Skype for Business Server che include attività quali la condivisione o la visualizzazione di PowerPoint diapositive, lavagne o sondaggi. Il cmdlet verifica inoltre che il servizio web conferencing Skype for Business Server sia in grado di individuare un server Web Apps Office e che un client possa caricare un file PowerPoint per la trasmissione da parte di Office Web Apps Server.  <br/> |
 |[Test-CsDialInConferencing](/powershell/module/skype/test-csdialinconferencing?view=skype-ps) <br/> |Verifica se un utente può partecipare a una sessione di conferenza telefonica con accesso esterno.  <br/> |
 |[Test-CsDialPlan](/powershell/module/skype/test-csdialplan?view=skype-ps) <br/> |Verifica un numero di telefono rispetto a un dial plan (precedentemente noto come profilo località) e restituisce la regola di normalizzazione che verrà applicata al numero, nonché il numero convertito dopo l'applicazione della regola di normalizzazione.  <br/> |
-|[Test-CsMcxConference](/powershell/module/skype/test-csmcxconference?view=skype-ps) <br/> |Verifica la capacità di tre utenti di partecipare a una Skype for Business Server servizio per dispositivi mobili. Il servizio per dispositivi mobili consente agli utenti di telefoni cellulari come iPhone e Windows telefoni di eseguire operazioni quali lo scambio di messaggi istantanei e informazioni sulla presenza; archiviare e recuperare la segreteria telefonica internamente anziché con il proprio provider wireless; e sfruttare le funzionalità Skype for Business Server, ad esempio Chiamata tramite lavoro e conferenze telefoniche con accesso esterno.  <br/> **Nota:** I client che utilizzano MCX non sono supportati in Skype for Business Server 2019.|
+|[Test-CsMcxConference](/powershell/module/skype/test-csmcxconference?view=skype-ps) <br/> |Verifica la capacità di tre utenti di partecipare a una Skype for Business Server servizio per dispositivi mobili. Il servizio per dispositivi mobili consente agli utenti di telefoni cellulari come iPhone e Windows di eseguire operazioni quali lo scambio di messaggi istantanei e informazioni sulla presenza; archiviare e recuperare la segreteria telefonica internamente anziché con il proprio provider wireless; e sfruttare le funzionalità Skype for Business Server, ad esempio Chiamata tramite lavoro e conferenze telefoniche con accesso esterno.  <br/> **Nota:** I client che utilizzano MCX non sono supportati in Skype for Business Server 2019.|
 |[Test-CsUcwaConference](/powershell/module/skype/test-csucwaconference?view=skype-ps) <br/> |Verifica la capacità di una coppia di utenti di pianificare, partecipare e quindi condurre una conferenza online utilizzando l'API Unified Communications Web (UCWA).  <br/> |
 |[Debug-CsDataConference](/powershell/module/skype/debug-csdataconference?view=skype-ps) <br/> |Restituisce informazioni di diagnostica per le funzionalità di conferenza dati incluse in Skype for Business Server.  <br/> |

@@ -2,7 +2,7 @@
 title: Eliminare le impostazioni di configurazione di Qualità dell'esperienza in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: fd0c4c2f-3bfb-42cb-9b6a-f0f8d5aa9e81
 description: 'Riepilogo: informazioni su come eliminare le impostazioni QoE (Quality of Experience) in Skype for Business Server.'
-ms.openlocfilehash: 036944af245b608ccae9836670133f99f8004068
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 96c6f15903a3e7cdc4305c6c90faddf0ee8ff743
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763664"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60854310"
 ---
 # <a name="delete-quality-of-experience-configuration-settings-in-skype-for-business-server"></a>Eliminare le impostazioni di configurazione di Qualità dell'esperienza in Skype for Business Server
  
@@ -31,7 +31,7 @@ Tieni presente che puoi anche "eliminare" le impostazioni globali. Tuttavia, le 
   
 È possibile rimuovere le impostazioni di configurazione QoE utilizzando il Skype for Business Server o il cmdlet [Remove-CsQoEConfiguration.](/powershell/module/skype/remove-csqoeconfiguration?view=skype-ps)
   
-### <a name="to-delete-qoe-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per eliminare le impostazioni di configurazione QoE tramite il Skype for Business Server Di controllo
+### <a name="to-delete-qoe-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per eliminare le impostazioni di configurazione QoE tramite Skype for Business Server Pannello di controllo
 
 1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **Delegate Setup Permissions**.
     
@@ -45,7 +45,7 @@ Tieni presente che puoi anche "eliminare" le impostazioni globali. Tuttavia, le 
     
 ## <a name="removing-qoe-configuration-settings-by-using-windows-powershell-cmdlets"></a>Rimozione della configurazione QoE Impostazioni tramite Windows PowerShell cmdlet
 
-È possibile eliminare le impostazioni di configurazione QoE utilizzando Windows PowerShell e il cmdlet **Remove-CsQoEConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere Amministrazione remota di PowerShell per [Microsoft Lync.](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/) Il processo è lo stesso in Skype for Business Server.
+È possibile eliminare le impostazioni di configurazione QoE utilizzando Windows PowerShell e il cmdlet **Remove-CsQoEConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere Amministrazione remota di PowerShell per [Microsoft Lync.](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/) Il processo è lo stesso in Skype for Business Server.
   
 ### <a name="to-remove-a-specified-collection-of-qoe-configuration-settings"></a>Per rimuovere una raccolta specificata di impostazioni di configurazione QoE
 
@@ -75,4 +75,4 @@ Per informazioni dettagliate, [vedere Remove-CsQoEConfiguration](/powershell/mod
   
 ## <a name="see-also"></a>Vedere anche
 
-[Eliminare manualmente i database di registrazione dettagli chiamata e Qualità dell'esperienza in Skype for Business Server](../../deploy/deploy-monitoring/purgecall-detail-recording-and-qoe.md)
+[Eliminare manualmente i database di registrazione dettagli chiamata e qualità dell'esperienza in Skype for Business Server](../../deploy/deploy-monitoring/purgecall-detail-recording-and-qoe.md)

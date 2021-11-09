@@ -2,7 +2,7 @@
 title: Pannello di controllo - Ricerca utente aggiornata
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 50feb75f-92a1-4916-b92e-c039e1290c52
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile utilizzare i risultati di una query di ricerca per configurare gli utenti per Skype for Business Server. È possibile ricercare utenti in base al nome visualizzato, al nome, al cognome, al nome dell'account SAM (Security Accounts Manager), all'indirizzo SIP o all'URI (Uniform Resource Identifier) della linea. È inoltre possibile cercare utenti utilizzando il Pannello di controllo di Lync Server o lo snap-in Utenti e computer di Active Directory.
-ms.openlocfilehash: efcb183eb9f763113d5db4c49c86b1d3594173c0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 3c5bdc9de490adbc022f00342d291d012da78d4b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60758848"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60854930"
 ---
 # <a name="control-panel---updated-user-search"></a>Pannello di controllo (aggiornato): ricerca utenti
 
@@ -80,7 +80,7 @@ Aggiungere ulteriore testo descrittivo in base alle necessità.
 
     Per aggiungere un nuovo contatto, fare clic sulla freccia verso il basso e selezionare **Abilita contatti** per aprire la finestra di dialogo [Users: New Contact Objects](ms.lync.lscp.UserNewContact.md).
 
-- **Modifica** Fare **clic su** Modifica e quindi su Mostra dettagli per visualizzare i dettagli dell'utente selezionato oppure fare clic su **Seleziona** tutti i risultati della ricerca per selezionare tutti gli utenti visualizzati nella tabella dei risultati. 
+- **Modifica** Fare **clic su** Modifica e quindi su Mostra dettagli  per visualizzare i dettagli dell'utente selezionato oppure fare clic su Seleziona tutti i risultati della ricerca per selezionare tutti gli utenti visualizzati nella tabella dei risultati. 
 
 - **Azione** Fare **clic su** Azione e quindi selezionare l'azione che si desidera eseguire per gli utenti selezionati nei risultati della ricerca. Sono disponibili le azioni seguenti:
 

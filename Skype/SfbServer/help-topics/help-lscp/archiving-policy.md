@@ -2,7 +2,7 @@
 title: Criteri archiviazione
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 9b69f1fa-8f3b-450e-aa89-91fd462f198d
 description: "I criteri di archiviazione consentono di abilitare e disabilitare l'archiviazione per gli utenti ospitati Skype for Business Server. In ogni criterio di archiviazione è possibile abilitare o disabilitare l'archiviazione per una o entrambe le opzioni seguenti:"
-ms.openlocfilehash: 37452d6bc5274aad19508522bef60ec23e363fe4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 85842f6722300dfe4b169a443eef512720a997cb
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757538"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60860533"
 ---
 # <a name="archiving-policy"></a>Criteri archiviazione
  

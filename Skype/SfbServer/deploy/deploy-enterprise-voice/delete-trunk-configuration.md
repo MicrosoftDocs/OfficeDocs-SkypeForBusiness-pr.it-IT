@@ -2,7 +2,7 @@
 title: 'Skype for Business Server: eliminare una raccolta esistente di impostazioni di configurazione trunk SIP'
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 3b25f14d-884b-42dd-a866-460d276d3e43
 description: 'Riepilogo: informazioni su come eliminare una raccolta di impostazioni di configurazione trunk tramite il Pannello Skype for Business Server controllo.'
-ms.openlocfilehash: 19de05f2b31bc7a083aca7a04d71c32f17d0ea85
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: d438db687c8af918a1ac0da67542048ac2fa0bae
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60771541"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60860883"
 ---
 # <a name="skype-for-business-server-delete-an-existing-collection-of-sip-trunk-configuration-settings"></a>Skype for Business Server: eliminare una raccolta esistente di impostazioni di configurazione trunk SIP 
  
@@ -43,9 +43,9 @@ Gli amministratori possono inoltre creare impostazioni di configurazione persona
     
 - Se si rimuovono impostazioni con ambito sito, tutti i trunk SIP gestiti da tali impostazioni verranno ora gestiti dalla raccolta globale di impostazioni di configurazione trunk.
     
-### <a name="to-remove-trunk-configuration-settings-with-skype-for-business-server-control-panel"></a>Per rimuovere le impostazioni di configurazione trunk con Skype for Business Server Pannello di controllo
+### <a name="to-remove-trunk-configuration-settings-with-skype-for-business-server-control-panel"></a>Per rimuovere le impostazioni di configurazione trunk con Skype for Business Server pannello di controllo
 
-1. Nel Skype for Business Server di controllo fare clic **su Routing vocale** e quindi su Configurazione **trunk.**
+1. Nel Skype for Business Server di controllo fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
     
 2. Nella scheda **Configurazione trunk** selezionare la raccolta di impostazioni di configurazione trunk SIP da eliminare, fare clic su **Modifica** e quindi su **Elimina.** Per eliminare più raccolte nella stessa operazione, fare clic sulla prima raccolta da eliminare, quindi tenere premuto CTRL e fare clic su qualsiasi altra raccolta che si desidera rimuovere.
     
@@ -57,7 +57,7 @@ Gli amministratori possono inoltre creare impostazioni di configurazione persona
     
 6. Se si decide di non eliminare più la raccolta, fare clic su **Commit**, quindi su **Annulla tutte le modifiche di cui non è stato eseguito il commit**. Quando viene visualizzata Skype for Business Server finestra **di dialogo** Pannello di controllo, fare clic su **OK.**
     
-## <a name="removing-trunk-configuration-settings-by-using-skype-for-business-server-management-shell-cmdlets"></a>Rimozione della configurazione trunk Impostazioni tramite i cmdlet Skype for Business Server Management Shell
+## <a name="removing-trunk-configuration-settings-by-using-skype-for-business-server-management-shell-cmdlets"></a>Rimozione della configurazione trunk Impostazioni tramite i cmdlet di Skype for Business Server Management Shell
 
 È possibile eliminare le impostazioni di configurazione trunk utilizzando Skype for Business Server Management Shell e il cmdlet **Remove-CsTrunkConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Skype for Business Server Management Shell.
   

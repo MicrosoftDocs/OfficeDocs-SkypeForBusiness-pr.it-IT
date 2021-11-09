@@ -2,7 +2,7 @@
 title: Componente Mediation Server in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 5b19edef-4a54-43c9-aa12-5643b8108355
 description: Informazioni sui Mediation Server in Skype for Business Server, incluse le topologie supportate e le relative relazioni con i trunk M:N, il bypass multimediale e il controllo di ammissione di chiamata.
-ms.openlocfilehash: 2cd436929d865d51b92f5d2353de4b98e36f03db
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 10d35081e1b6af1d7ee634fa3507a9c6d46f3954
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759518"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60861173"
 ---
 # <a name="mediation-server-component-in-skype-for-business-server"></a>Componente Mediation Server in Skype for Business Server
  
@@ -49,11 +49,11 @@ Le funzioni principali del Mediation Server sono le seguenti:
     
 - Connessione di client esterni alla rete a componenti ICE interni, che consentono l'attraversamento multimediale di NAT e firewall.
     
-- Funge da intermediario per i flussi di chiamata non supportati da un gateway, ad esempio le chiamate provenienti da lavoratori remoti su un VoIP aziendale clien.t
+- Funge da intermediario per i flussi di chiamata non supportati da un gateway, ad esempio le chiamate provenienti da lavoratori remoti VoIP aziendale clien.t
     
 - Nelle distribuzioni che includono il trunking SIP, l'utilizzo del provider di servizi di trunking SIP per fornire il supporto PSTN elimina la necessità di un gateway PSTN.
     
-Nella figura seguente vengono illustrati i protocolli di segnalazione e multimediali utilizzati dal Mediation Server durante la comunicazione con un gateway PSTN di base e l'VoIP aziendale di rete.
+Nella figura seguente vengono mostrati i protocolli di segnalazione e multimediali utilizzati dal Mediation Server durante la comunicazione con un gateway PSTN di base e l'VoIP aziendale di rete.
   
 **Protocolli di segnalazione e multimediali utilizzati dal Mediation Server**
 
@@ -124,7 +124,7 @@ Nella figura seguente viene illustrata una semplice topologia costituita da due 
 
 ![Topologia vocale con gateway WAN Mediation Server.](../../media/Plan_LyncServer_Voice_Topo_MedSvrWanGwy.jpg)
   
-Nella figura seguente viene illustrata una topologia semplice in cui Mediation Server è collocato nel pool Front End nel sito 1 e dispone di una connessione SIP diretta all'IP-PBX nel sito 1. In questa figura, il Mediation Server controlla anche un gateway PSTN nel sito 2. Si supponga Skype for Business utenti presenti sia nei siti 1 che in quello 2. Presupporre inoltre che l'IP-PBX abbia un processore multimediale associato che deve essere attraversato da tutti i supporti provenienti da endpoint Skype for Business prima di essere inviato agli endpoint multimediali controllati dall'IP-PBX. In questa topologia, il bypass multimediale è abilitato a livello globale per l'utilizzo di informazioni su siti e aree e i trunk per il PBX e il gateway PSTN hanno il bypass multimediale abilitato.
+Nella figura seguente viene illustrata una topologia semplice in cui Mediation Server è collocato nel pool Front End nel sito 1 e dispone di una connessione SIP diretta all'IP-PBX nel sito 1. In questa figura, il Mediation Server controlla anche un gateway PSTN nel sito 2. Si supponga Skype for Business utenti esistenti sia nei siti 1 che in quello 2. Presupporre inoltre che l'IP-PBX abbia un processore multimediale associato che deve essere attraversato da tutti i supporti provenienti da endpoint Skype for Business prima di essere inviato agli endpoint multimediali controllati dall'IP-PBX. In questa topologia, il bypass multimediale è abilitato a livello globale per l'utilizzo di informazioni su siti e aree e i trunk per il PBX e il gateway PSTN hanno il bypass multimediale abilitato.
   
 **Esempio di siti connessi tramite un collegamento WAN a un server Mediation Server nel sito 1 e a un sistema PBX nel sito 2**
 
@@ -170,4 +170,4 @@ Per le interazioni con un IP-PBX, se l'IP-PBX non supporta correttamente le inte
 Infine, se nel sito centrale è presente un sistema PBX TDM o se il sistema IP-PBX richiede un gateway PSTN, è necessario distribuire un gateway nella route di chiamata che connette il server Mediation Server e il sistema PBX.
   
 > [!NOTE]
-> Per migliorare le prestazioni multimediali del Mediation Server autonomo, è consigliabile abilitare il ridimensionamento sul lato ricezione (RSS) sulle schede di rete in questi server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere "Miglioramenti della scalabilità sul lato [ricezione in Windows Server".](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh997036(v=ws.11)) Per informazioni dettagliate su come abilitare RSS, vedere la documentazione della scheda di rete. 
+> Per migliorare le prestazioni multimediali del Mediation Server autonomo, è consigliabile abilitare il ridimensionamento sul lato ricezione (RSS) sulle schede di rete in questi server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere "Miglioramenti della scalabilità sul lato [ricezione in Windows Server"](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh997036(v=ws.11)). Per informazioni dettagliate su come abilitare RSS, vedere la documentazione della scheda di rete. 

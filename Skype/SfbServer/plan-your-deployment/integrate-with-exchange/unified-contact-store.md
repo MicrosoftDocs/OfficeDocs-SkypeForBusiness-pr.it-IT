@@ -2,7 +2,7 @@
 title: Pianificare l'archivio contatti unificato in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 6/8/2017
 audience: ITPro
@@ -13,17 +13,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d56e11be-43dd-45d4-8ac6-3adfb03f5d1a
-description: "Riepilogo: leggere questo argomento durante la pianificazione dell'integrazione Skype for Business Server con Exchange 2013."
-ms.openlocfilehash: f14d089717ac593ee94cf021a7e742d260dcf6dc
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: "Riepilogo: esaminare questo argomento durante la pianificazione dell'integrazione Skype for Business Server con Exchange 2013."
+ms.openlocfilehash: 9334d8cdacfcc4ab2bf6cc733ce26faa7ff05280
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762094"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60855230"
 ---
 # <a name="plan-for-unified-contact-store-in-skype-for-business-server-2015"></a>Pianificare l'archivio contatti unificato Skype for Business Server 2015
  
-**Riepilogo:** Leggere questo argomento durante la pianificazione dell'integrazione Skype for Business Server con Exchange 2013 o 2016.
+**Riepilogo:** Leggere questo argomento durante la pianificazione dell'integrazione Skype for Business Server con Exchange 2013 o 2016.Review this topic while planning to integrate Skype for Business Server with Exchange 2013 or 2016.
   
 L'archivio contatti unificato offre un'esperienza di contatto coerente tra i prodotti Microsoft Office e consente agli utenti di archiviare tutte le informazioni di contatto in Exchange 2013, ma consente di essere disponibili a livello globale in Skype for Business, Exchange, Outlook e Outlook Web Access.
   
@@ -37,11 +37,11 @@ Per implementare l'archivio contatti unificato in Skype for Business Server:
     
 - Le cassette postali degli utenti devono essere migrate Exchange 2013.
     
-- È necessario configurare l'autenticazione da server a server tra Skype for Business Server e Exchange 2013 o 2016.
+- È necessario che l'autenticazione da server a server sia configurata tra Skype for Business Server e Exchange 2013 o 2016.
     
     > [!NOTE]
     > Per i requisiti dettagliati sulla configurazione dell'autenticazione tra Skype for Business Server e Exchange 2013 o 2016, vedere [Manage server-to-server authentication (OAuth) and partner applications in Skype for Business Server nella](../../manage/authentication/server-to-server-and-partner-applications.md) documentazione relativa alle operazioni.
   
 ## <a name="see-also"></a>Vedere anche
 
-[Distribuire un archivio contatti unificato in Skype for Business Server](../../deploy/deploy-unified-contact-store.md)
+[Distribuire l'archivio contatti unificato in Skype for Business Server](../../deploy/deploy-unified-contact-store.md)

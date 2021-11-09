@@ -2,7 +2,7 @@
 title: Espansione delle impostazioni generali di Front End Server per Lync Server 2010
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 58269c38-98d9-499f-ab69-6a63a6e5530e
 description: 'È possibile modificare le proprietà del Front End Server o del pool Front End modificando o configurando gli attributi seguenti. La pagina di configurazione è suddivisa nelle sezioni seguenti:'
-ms.openlocfilehash: d7257a8abf61f2d081562e72b40811017dcefaa0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b515acd1aa475247f0f87206a0af50eedb21a294
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60768774"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60855563"
 ---
 # <a name="front-end-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni generali di Front End per Lync Server 2010
 
@@ -91,7 +91,7 @@ ms.locfileid: "60768774"
     Se a un Mediation Server sono associati più gateway, è possibile specificare il gateway predefinito selezionando il gateway che si desidera impostare come predefinito e facendo clic su **Rendi predefinito**. Se si vuole rimuovere il gateway predefinito corrente, selezionarlo e fare clic su **Annulla predefinito**.
 
 > [!IMPORTANT]
-> Se si apportano modifiche alle proprietà in questa finestra di dialogo, è necessario pubblicare la topologia ed eseguire la distribuzione guidata di Skype for Business Server in tutti i server interessati. Dopo la pubblicazione della nuova topologia, viene fornito un elenco dei server interessati in cui deve essere eseguita la Distribuzione guidata di Skype for Business Server come collegamento nella schermata di riepilogo della pubblicazione della topologia completata. Per informazioni dettagliate sulla pubblicazione della topologia aggiornata, vedere [Publish the Topology](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-topology). Per informazioni dettagliate sulla Distribuzione guidata Skype for Business Server, vedere [Strumenti di amministrazione di Lync Server.](/previous-versions/office/lync-server-2013/lync-server-2013-lync-server-administrative-tools)
+> Se si apportano modifiche alle proprietà in questa finestra di dialogo, è necessario pubblicare la topologia ed eseguire la distribuzione guidata di Skype for Business Server in tutti i server interessati. Dopo la pubblicazione della nuova topologia, viene fornito un elenco dei server interessati in cui deve essere eseguita la Distribuzione guidata di Skype for Business Server come collegamento nella schermata di riepilogo della pubblicazione della topologia completata. Per informazioni dettagliate sulla pubblicazione della topologia aggiornata, vedere [Publish the Topology](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-topology). Per informazioni dettagliate sulla distribuzione guidata Skype for Business Server, vedere [Strumenti di amministrazione di Lync Server.](/previous-versions/office/lync-server-2013/lync-server-2013-lync-server-administrative-tools)
 
 Fare clic su **OK** per salvare le modifiche al documento della topologia.
 

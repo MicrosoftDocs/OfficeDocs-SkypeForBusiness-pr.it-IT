@@ -2,7 +2,7 @@
 title: Parcheggio di chiamata
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: b752617d-554d-470e-b17b-387403ac74ed
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quando una chiamata è parcheggiata, viene trasferita a un numero temporaneo in cui la chiamata viene mantenuta fino a quando qualcuno non la recupera o si verifica il timeout. È necessario configurare una tabella con gli intervalli di numeri di interno che si stanno riservando per le chiamate parcheggiate. Questi interni devono essere virtuali (ossia interni a cui non è assegnato alcun utente o telefono). Ogni pool che esegue l'applicazione Parcheggio di chiamata può avere uno o più intervalli di estensioni. Tali intervalli devono essere univoci nell'intera distribuzione.
-ms.openlocfilehash: b7abb0cf68a49c686c787531715f5dc7924ca056
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f37913066bb2bf0a0eb6eec767501a3b16534ec6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60771224"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60845699"
 ---
 # <a name="call-park"></a>Parcheggio di chiamata
 

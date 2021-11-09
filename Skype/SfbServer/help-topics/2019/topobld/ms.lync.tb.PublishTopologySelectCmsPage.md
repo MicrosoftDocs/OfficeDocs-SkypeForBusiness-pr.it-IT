@@ -2,7 +2,7 @@
 title: Pubblica topologia, pagina Seleziona l'archivio di gestione centrale
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: df447066-2840-431b-bc4e-acf8aa692d71
 ROBOTS: NOINDEX, NOFOLLOW
 description: Pubblicare la topologia configurata utilizzando Generatore di topologie. Viene richiesto di selezionare da un elenco quale Front End Server o pool Front End assumerà il ruolo di conservare l'archivio di gestione centrale. Solo un Front End Server o un pool Front End può mantenere questo ruolo in un determinato momento.
-ms.openlocfilehash: 435b13109e573116734ae3a688abd07044199509
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4f4658b13a634d5f1d231d4e8fe7683b3fc38b8f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60771024"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60860563"
 ---
 # <a name="publish-topology-select-cms-page"></a>Pubblicare topologia, pagina Seleziona l'archivio di gestione centrale
  

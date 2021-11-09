@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg182549(v=OCS.15)
 ms:contentKeyID: 48184813
 mtps_version: v=OCS.15
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Il supporto della federazione è necessario per consentire agli utenti che dispongono di un account con un'organizzazione cliente o partner attendibile, inclusi i domini partner e gli utenti di provider di messaggistica istantanea pubblica supportati, di collaborare con gli utenti all'interno dell'organizzazione.
-ms.openlocfilehash: 7c87ad567bef1b073dae80e8bc669d6f0d52e3a6
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 638a5d0274679a9d9745656e1b2d740791185b04
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765474"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60854350"
 ---
 # <a name="enable-or-disable-federation-and-public-im-connectivity-in-skype-for-business-server"></a>Abilitare o disabilitare la federazione e la connettività di messaggistica istantanea pubblica in Skype for Business Server
 
@@ -67,7 +67,7 @@ Per consentire agli utenti federati di collaborare con gli utenti nella distribu
 
 ## <a name="enabling-or-disabling-federation-and-public-im-connectivity-by-using-windows-powershell-cmdlets"></a>Abilitazione o disabilitazione della federazione e della connettività di messaggistica istantanea pubblica tramite Windows PowerShell cmdlet
 
-La federazione e la connettività di messaggistica istantanea pubblica possono essere gestite anche utilizzando Windows PowerShell e il cmdlet Set-CsAccessEdgeConfiguration. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+La federazione e la connettività per la messaggistica istantanea pubblica possono essere gestite anche utilizzando Windows PowerShell e il cmdlet Set-CsAccessEdgeConfiguration. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
 
 ## <a name="to-enable-federation-and-public-im-connectivity"></a>Per abilitare la federazione e la connettività di messaggistica istantanea pubblica
 

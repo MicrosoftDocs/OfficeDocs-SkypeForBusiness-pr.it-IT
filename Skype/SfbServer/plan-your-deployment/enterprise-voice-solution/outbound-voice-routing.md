@@ -2,7 +2,7 @@
 title: Pianificare il routing vocale in uscita in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,18 +16,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fde45195-6eb4-403c-9094-57df7fc0bd2a
 description: Informazioni sul routing vocale in uscita in Skype for Business Server VoIP aziendale, incluse le impostazioni di routing delle chiamate, i dial plan, le regole di normalizzazione, i criteri vocali, i record di utilizzo PSTN e le route vocali.
-ms.openlocfilehash: 47b0b196579d69612c3c9d62c8ca9aade008535e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 1c8331f1959b03166ecd02b65e6fa1080bb43993
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759508"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60861073"
 ---
 # <a name="plan-for-outbound-voice-routing-in-skype-for-business-server"></a>Pianificare il routing vocale in uscita in Skype for Business Server
  
 Informazioni sul routing vocale in uscita in Skype for Business Server VoIP aziendale, incluse le impostazioni di routing delle chiamate, i dial plan, le regole di normalizzazione, i criteri vocali, i record di utilizzo PSTN e le route vocali.
   
-Il routing delle chiamate in uscita si applica VoIP aziendale chiamate destinate a un gateway PSTN (Public Switched Telephone Network), un trunk o un PBX (Private Branch Exchange). Quando un Skype for Business esegue una chiamata, il server normalizza il numero di telefono nel formato E.164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a trovare una corrispondenza, applica la logica di routing delle chiamate in uscita in base alla stringa di composizione fornita. È possibile definire tale logica configurando le impostazioni del server descritte nella tabella seguente.
+Il routing delle chiamate in uscita si applica alle chiamate VoIP aziendale destinate a un gateway PSTN (Public Switched Telephone Network), a un trunk o a un PBX (Private Branch Exchange). Quando un Skype for Business esegue una chiamata, il server normalizza il numero di telefono nel formato E.164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a trovare una corrispondenza, applica la logica di routing delle chiamate in uscita in base alla stringa di composizione fornita. È possibile definire tale logica configurando le impostazioni del server descritte nella tabella seguente.
   
 **Skype for Business Server Routing delle chiamate in uscita Impostazioni**
 
@@ -62,7 +62,7 @@ I livelli di ambito del dial plan sono definiti come segue:
     
 - **Dial plan del sito**: può essere creato per un intero sito, ad eccezione di tutti gli utenti, i gruppi o gli oggetti contatto a cui è assegnato un dial plan del pool o un dial plan utente. Per definire un dial plan sito, è necessario specificare il sito a cui applicare il dial plan.
     
-- **Dial plan globale**: Dial plan predefinito installato con il prodotto. È possibile modificare il dial plan globale, ma non eliminarlo. Questo dial plan si applica a tutti VoIP aziendale utenti, gruppi e oggetti contatto nella distribuzione, a meno che non si configura e si assegna un dial plan con un ambito più specifico.
+- **Dial plan globale**: Dial plan predefinito installato con il prodotto. È possibile modificare il dial plan globale, ma non eliminarlo. Questo dial plan si applica a tutti VoIP aziendale utenti, gruppi e oggetti contatto nella distribuzione, a meno che non venga configurato e assegnato un dial plan con un ambito più specifico.
     
 ### <a name="planning-for-dial-plans"></a>Pianificazione di dial plan
 
@@ -82,7 +82,7 @@ Per pianificare un dial plan, attenersi alla seguente procedura:
     
 - Decidere se sono necessari più dial plan per una singola località. 
     
-    Se l'organizzazione gestisce un singolo dial plan in più posizioni, potrebbe essere comunque necessario creare un dial plan separato per gli utenti di VoIP aziendale che esereranno la migrazione da un PBX (Private Branch Exchange) e che dovranno mantenere gli interni esistenti.
+    Se l'organizzazione gestisce un singolo dial plan in più posizioni, potrebbe essere comunque necessario creare un dial plan separato per gli utenti di VoIP aziendale che esereranno la migrazione da un PBX (Private Branch Exchange) e che dovranno conservare gli interni esistenti.
     
 - Decidere se sono necessari dial plan per utente. Ad esempio, se in un sito di succursale sono presenti utenti registrati nel sito centrale o utenti registrati in un Survivable Branch Appliance, è possibile prendere in considerazione scenari di composizione speciali per tali utenti che utilizzano dial plan e regole di normalizzazione per utente. Per informazioni dettagliate, vedere [Plan for VoIP aziendale resiliency in Skype for Business Server](enterprise-voice-resiliency.md).
     
@@ -304,11 +304,11 @@ Skype for Business Server offre flessibilità nel modo in cui le chiamate vengon
 
 La possibilità di specificare i trunk verso cui vengono instradati diversi numeri consente di determinare quali route comportano i costi minori e di implementarle di conseguenza. In generale, per ridurre i costi delle chiamate interurbane, è consigliabile scegliere il trunk con il gateway più vicino alla località del numero di destinazione. Se ad esempio ci si trova a New York e si sta chiamando un numero a Roma, è possibile trasmettere la chiamata tramite la rete IP al trunk con il gateway nell'ufficio di Roma, sostenendo in questo modo solo i costi di una chiamata locale.
   
-Per un esempio dell'utilizzo del routing meno costose, tenere presente quanto segue: Fabrikam decide di consentire agli utenti tedeschi di comporre numeri statunitensi utilizzando il trunk statunitense. Fabrikam desidera inoltre configurare il sistema in modo che tutte le chiamate degli utenti di Skype for Business Server statunitensi verso la Germania e i paesi/aree geografiche adiacenti terminino nel trunk con il gateway in Germania. Questo instradamento consente di risparmiare, perché una chiamata dalla Germania all'Austria, ad esempio, è meno costosa di una chiamata dagli Stati Uniti all'Austria.
+Per un esempio dell'utilizzo del routing meno costose, tenere presente quanto segue: Fabrikam decide di consentire agli utenti tedeschi di comporre numeri statunitensi utilizzando il trunk statunitense. Fabrikam desidera inoltre configurare il sistema in modo che tutte le chiamate degli utenti di Skype for Business Server statunitensi verso la Germania e i paesi adiacenti terminino nel trunk con il gateway in Germania. Questo instradamento consente di risparmiare, perché una chiamata dalla Germania all'Austria, ad esempio, è meno costosa di una chiamata dagli Stati Uniti all'Austria.
   
 ### <a name="translating-outbound-dial-strings"></a>Conversione delle stringhe di composizione in uscita
 
-Skype for Business Server tutte le stringhe di composizione devono essere normalizzate nel formato E.164 allo scopo di eseguire la ricerca di numeri inversa (RNL). Per i trunk con gateway o IX (Private Branch Exchange) che richiedono numeri convertiti in formati di composizione locali, Skype for Business Server consente di creare una o più regole che consentono di modificare il numero chiamato (ad esempio URI di richiesta) prima di instradarlo al trunk. È ad esempio possibile scrivere una regola per rimuovere il prefisso +44 all'inizio di una stringa di composizione e sostituirlo con 0144.
+Skype for Business Server tutte le stringhe di composizione devono essere normalizzate nel formato E.164 allo scopo di eseguire la ricerca di numeri inversa (RNL). Per i trunk con gateway o IP (Private Branch Exchange) che richiedono numeri convertiti in formati di composizione locali, Skype for Business Server consente di creare una o più regole che consentono di modificare il numero chiamato (ad esempio URI di richiesta) prima di instradarlo al trunk. È ad esempio possibile scrivere una regola per rimuovere il prefisso +44 all'inizio di una stringa di composizione e sostituirlo con 0144.
   
 Con Skype for Business Server, è possibile creare una o più regole che assistono nella modifica del numero chiamante prima di instradarlo al trunk.
   

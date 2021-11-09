@@ -2,7 +2,7 @@
 title: Pianificare i criteri percorso per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: da3cca7f-f6e5-4b6f-90a1-2008e3dd1ebd
 description: Leggere questo argomento per informazioni su come pianificare i criteri percorso per una distribuzione avanzata di servizi di emergenza (E9-1-1) in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: d305d2e453c375616dbba7e077c552372767f2ae
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 661706aa9ae60f87dc60814d71c2b0b8c8dcc2ce
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762134"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60855323"
 ---
 # <a name="plan-location-policies-for-skype-for-business-server"></a>Pianificare i criteri percorso per Skype for Business Server
  
@@ -62,7 +62,7 @@ Questa impostazione consente di specificare la dichiarazione di non responsabili
 Questa stringa di composizione (meno il "+" iniziale, ma inclusa qualsiasi normalizzazione eseguita dal dial plan dell'utente) indica che una chiamata è una chiamata di emergenza. La **stringa di composizione di** emergenza fa in modo che il client includa informazioni sulla posizione e sulla richiamata con la chiamata.
   
 > [!NOTE]
-> Se l'organizzazione non utilizza un prefisso di accesso alla linea esterna, non è necessario creare una regola di normalizzazione dial plan corrispondente che aggiunge un "+" alla stringa 911 prima di inviare la chiamata al routing in uscita su un server che esegue Skype for Business Server; il "+" verrà anteposto automaticamente dal client Skype for Business come risultato del criterio percorso. Tuttavia, se il sito utilizza un prefisso di accesso esterno, è necessario aggiungere una regola di normalizzazione al criterio dial plan applicabile che rimuove il prefisso di accesso esterno e aggiunge "+". Ad esempio, se la posizione utilizza un prefisso di accesso esterno 9 e un utente compone il 9 911 per effettuare una chiamata di emergenza, il client utilizzerà il relativo criterio dial plan per normalizzare il valore su +911 prima che il numero composto venga valutato dalle route nel profilo di posizione del chiamante. 
+> Se l'organizzazione non utilizza un prefisso di accesso alla linea esterna, non è necessario creare una regola di normalizzazione dial plan corrispondente che aggiunge un "+" alla stringa 911 prima di inviare la chiamata al routing in uscita su un server che esegue Skype for Business Server; "+" verrà anteposto automaticamente dal client Skype for Business come risultato del criterio percorso. Tuttavia, se il sito utilizza un prefisso di accesso esterno, è necessario aggiungere una regola di normalizzazione al criterio dial plan applicabile che rimuove il prefisso di accesso esterno e aggiunge "+". Ad esempio, se la posizione utilizza un prefisso di accesso esterno 9 e un utente compone il 9 911 per effettuare una chiamata di emergenza, il client utilizzerà il relativo criterio dial plan per normalizzare il valore su +911 prima che il numero composto venga valutato dalle route nel profilo di posizione del chiamante. 
   
  **Maschere stringa di composizione di emergenza (maschera di composizione E9-1-1)**
   

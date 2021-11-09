@@ -2,7 +2,7 @@
 title: Skype for Business Server 2015 Planning Tool
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 12/20/2018
 audience: ITPro
@@ -14,24 +14,24 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 2a352f62-c5cb-4ef1-9aa9-7f0c1ab47455
 description: Indicazioni sull'utilizzo dello Skype for Business Server 2015 Planning Tool.
-ms.openlocfilehash: d7574366fda49ccfa86b1190cfe3ea03e476bc5d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: d88504af2935ad0143c7f7c1ca85f17e3f9c7c8b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60739072"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60845319"
 ---
 # <a name="skype-for-business-server-2015-planning-tool"></a>Skype for Business Server 2015 Planning Tool
  
 Indicazioni sull'utilizzo dello Skype for Business Server 2015 Planning Tool.
   
-Lo Skype for Business Server 2015 Planning Tool è uno strumento basato su procedure guidate e simile a un colloquio che pone domande sulla topologia di Skype for Business Server 2015 che si sta progettando. Lo Strumento di pianificazione utilizza le informazioni fornite, insieme alle procedure consigliate per la progettazione e la capacità della topologia, per presentare una topologia consigliata in base alle risposte fornite.
+Lo Skype for Business Server 2015 Planning Tool è uno strumento simile a una procedura guidata che pone domande sulla topologia di Skype for Business Server 2015 che si sta progettando. Lo Strumento di pianificazione utilizza le informazioni fornite, insieme alle procedure consigliate per la progettazione e la capacità della topologia, per presentare una topologia consigliata in base alle risposte fornite.
   
 In ultima analisi, l'obiettivo dello strumento di pianificazione è semplificare la potenziale complessità della progettazione di una topologia Skype for Business Server 2015. Lo strumento fornisce inoltre riferimenti contestuali alla documentazione relativa alla pianificazione e alla distribuzione all'interno dello strumento, purché sia disponibile una connessione Internet per connettersi al sito Web Microsoft.
   
 Dopo aver personalizzato la topologia con gli indirizzi TCP/IP e i nomi di dominio completi (FQDN) dell'infrastruttura, lo strumento di pianificazione rende disponibile una serie di report che riguardano la denominazione DNS (Domain Name System), le regole firewall, i certificati e altro ancora. 
   
-L'uso di questo strumento è il primo passaggio nella pianificazione dell'implementazione. Il passaggio successivo consiste nell'immettere le specifiche delle informazioni del sito nel calcolatore della capacità di [Skype for Business Server 2015,](https://www.microsoft.com/download/details.aspx?id=51196)regolare in base alle esigenze, quindi utilizzare lo strumento stress e prestazioni di [Skype for Business Server 2015](https://www.microsoft.com/download/details.aspx?id=50367) per simulare e verificare che l'implementazione soddci alle proprie esigenze.
+L'uso di questo strumento è il primo passaggio nella pianificazione dell'implementazione. Il passaggio successivo consiste nell'immettere le specifiche delle informazioni del sito nel calcolatore della capacità di [Skype for Business Server 2015,](https://www.microsoft.com/download/details.aspx?id=51196)regolare in base alle esigenze, quindi utilizzare lo strumento stress e prestazioni di [Skype for Business Server 2015](https://www.microsoft.com/download/details.aspx?id=50367) per simulare e verificare che l'implementazione sia in grado di soddisfare le proprie esigenze.
   
 Lo strumento di pianificazione consente inoltre di esportare informazioni in due formati:
   

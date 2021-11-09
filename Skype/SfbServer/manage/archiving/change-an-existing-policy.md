@@ -2,7 +2,7 @@
 title: Modificare un criterio di archiviazione esistente in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 4cf600be-ba3d-4bce-aa22-e158b9ccf8a9
 description: 'Riepilogo: informazioni su come modificare i criteri di archiviazione degli utenti per Skype for Business Server.'
-ms.openlocfilehash: 555a8822ddf563b8ddce88ed94d56f153c93c795
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b6ddc379f2b5652311be051d47d644a8e2923c1c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60767958"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60854390"
 ---
 # <a name="change-an-existing-archiving-policy-in-skype-for-business-server"></a>Modificare un criterio di archiviazione esistente in Skype for Business Server
  
@@ -29,7 +29,7 @@ Quando si distribuisce per la Skype for Business Server, si impostano i criteri 
 
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Criteri di archiviazione**.
     

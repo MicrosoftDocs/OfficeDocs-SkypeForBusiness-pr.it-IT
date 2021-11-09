@@ -2,7 +2,7 @@
 title: Nodo dell'ambito delle istanze SQL
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
@@ -15,16 +15,16 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 399dce5b-bd51-4693-89d9-3463c1d73ded
 description: "Nel nodo SQL archivi vengono elencati SQL Server database della topologia. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: 6651527cd5bfdbca73aec1539d25a0e2194aa01d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7bda856e8e4bde303daa5ddee3dca57eb5bfab9a
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765634"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60861403"
 ---
 # <a name="sql-instances-scope-node"></a>Nodo dell'ambito delle istanze SQL
  
-Nel **nodo SQL archivi** vengono elencati SQL Server database della topologia. È possibile eseguire l'operazione seguente:
+Il **nodo SQL archivi** elenca i SQL Server database nella topologia. È possibile eseguire l'operazione seguente:
   
 - **Nuovo archivio SQL**. Avvia la **procedura guidata Define New SQL Store,** che consente di aggiungere un nuovo database di SQL Server alla topologia.
     

@@ -2,7 +2,7 @@
 title: Espansione delle impostazioni generali di Persistent Chat
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 275ee1ae-ca58-4963-bc95-523319f90d96
 description: 'È possibile modificare le impostazioni generali per il server Chat persistente o il pool di server Chat persistente configurando o definendo queste proprietà:'
-ms.openlocfilehash: 4de31f3fd6af4dfea023d490ea849f5b58963085
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 8047b6a3d8e4f81056af20feb2d5a36416bac2b8
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762544"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60854420"
 ---
 # <a name="persistent-chat-general-settings-expander"></a>Espansione delle impostazioni generali di Persistent Chat
  
@@ -44,31 +44,31 @@ ms.locfileid: "60762544"
     
 - Selezionare la **casella di controllo SQL Server mirroring dell'archivio** principale se si desidera abilitare il mirroring per l'SQL Server principale.
     
-    Se si è scelto di abilitare il mirroring dell SQL Server store, selezionare l'archivio e l'istanza nell'elenco **Mirroring SQL Server store**.
+    Se si è scelto di abilitare SQL Server di archiviazione, selezionare l'archivio e l'istanza nell'elenco **Mirroring SQL Server archivio**.
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa.
     
 - Selezionare la **casella di controllo SQL Server mirroring** per abilitare il failover automatico se si desidera il failover automatico dell'archivio SQL Server principale.
     
-    Se si è scelto di abilitare il SQL Server mirroring dell'archivio per abilitare il failover automatico, selezionare l'archivio e l'istanza nell'elenco.
+    Se si è scelto di abilitare SQL Server di mirroring dell'archivio per abilitare il failover automatico, selezionare l'archivio e l'istanza nell'elenco.
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa per l'archivio di controllo.
     
-- Selezionare la **casella di controllo Usa SQL Server** di backup per abilitare il ripristino di emergenza se si desidera abilitare l'utilizzo SQL Server ripristino di emergenza
+- Selezionare la **casella di controllo Usa SQL Server di** backup per abilitare il ripristino di emergenza se si desidera abilitare l'utilizzo del SQL Server di emergenza
     
     Se si è scelto di abilitare il ripristino di emergenza, selezionare un archivio e un'istanza nell'elenco **Archivio SQL Server backup**.
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa.
     
-- Selezionare la **casella di controllo SQL Server mirroring dell'archivio** se si desidera abilitare il mirroring per l'SQL Server di mirroring.
+- Selezionare la **casella di controllo SQL Server mirroring** dell'archivio dati se si desidera abilitare il mirroring per l'SQL Server di mirroring di backup.
     
-    Se si è scelto di abilitare il backup SQL Server mirroring dell'archivio, selezionare l'archivio e l'istanza nell'elenco **Backup SQL Server store mirror**.
+    Se si è scelto di abilitare il mirroring dell SQL Server archivio di backup, selezionare l'archivio e l'istanza nell'elenco **Backup SQL Server store mirror**.
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa.
     
 - Selezionare la **casella di controllo SQL Server mirroring** per abilitare il failover automatico se si desidera il failover automatico dell'archivio SQL Server backup.
     
-    Se si è scelto di abilitare il SQL Server mirroring dell'archivio per abilitare il failover automatico, selezionare l'archivio e l'istanza nell'elenco.
+    Se si è scelto di abilitare SQL Server di mirroring dell'archivio per abilitare il failover automatico, selezionare l'archivio e l'istanza nell'elenco.
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa per l'archivio di controllo.
     
@@ -86,7 +86,7 @@ ms.locfileid: "60762544"
     
 - Selezionare la **casella di controllo SQL Server mirroring** per abilitare il failover automatico se si desidera il failover automatico dell'archivio SQL Server conformità.
     
-    Se si è scelto di abilitare il SQL Server mirroring dell'archivio per abilitare il failover automatico, selezionare l'archivio e l'istanza nell'elenco.
+    Se si è scelto di abilitare SQL Server di mirroring dell'archivio per abilitare il failover automatico, selezionare l'archivio e l'istanza nell'elenco.
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa per l'archivio di controllo.
     
@@ -96,13 +96,13 @@ ms.locfileid: "60762544"
     
 - Selezionare la **casella di controllo SQL Server mirroring dell'SQL Server** store.
     
-    Se si è scelto di abilitare la conformità SQL Server mirroring dell'archivio, selezionare l'archivio e l'istanza nell'elenco **Backup compliance SQL Server store mirror**.
+    Se si è scelto di abilitare la conformità SQL Server mirroring dell'archivio, selezionare l'archivio e l'istanza dall'elenco **Backup compliance SQL Server store mirror**.
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa.
     
-- Selezionare la **casella di controllo SQL Server mirroring** per abilitare il failover automatico se si desidera eseguire il failover automatico della conformità di backup SQL Server archivio.
+- Selezionare la **casella di SQL Server controllo del mirroring** per abilitare il failover automatico se si desidera eseguire il failover automatico dell'archivio di SQL Server backup.
     
-    Se si è scelto di abilitare il SQL Server mirroring dell'archivio per abilitare il failover automatico, selezionare l'archivio e l'istanza nell'elenco.
+    Se si è scelto di abilitare SQL Server di mirroring dell'archivio per abilitare il failover automatico, selezionare l'archivio e l'istanza nell'elenco.
     
     Fare clic su **Nuovo** per definire un nuovo archivio SQL Server e una nuova istanza facoltativa per l'archivio di controllo.
     

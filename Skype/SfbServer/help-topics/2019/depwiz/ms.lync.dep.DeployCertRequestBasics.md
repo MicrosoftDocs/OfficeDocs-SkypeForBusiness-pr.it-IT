@@ -2,7 +2,7 @@
 title: Richiesta di certificato (Basic)
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 2c6b40d5-207a-4ca9-a090-e43350f4968f
 ROBOTS: NOINDEX, NOFOLLOW
 description: La pagina Nome e sicurezza Impostazioni fornisce una casella di testo per definire un nome descrittivo, un elenco a discesa per la lunghezza in bit della coppia di chiavi pubbliche e private e una casella di controllo che consente di contrassegnare la chiave privata del certificato come esportabile.
-ms.openlocfilehash: bd25ae54d5f5fe801c1beaf0de1c81eb2d7a0b60
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: da3125456a97408dd9f3e694a16238d5657fc1d6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60740032"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60861753"
 ---
 # <a name="certificate-request-basic"></a>Richiesta di certificato (Basic)
  

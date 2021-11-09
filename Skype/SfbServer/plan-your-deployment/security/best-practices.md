@@ -2,7 +2,7 @@
 title: Procedure consigliate per l'infrastruttura di base in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -11,17 +11,17 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 44aff88d-536c-4613-a81e-5398c9c6a648
-description: È probabile che siano già state intraprese azioni per progettare la tolleranza di errore nel sistema, ad esempio garantendo la ridondanza hardware, prendendo precauzioni in caso di interruzioni dell'alimentazione, installando con regolarità gli aggiornamenti antivirus e della sicurezza e monitorando l'attività dei server. Queste procedure sono vantaggiose non solo per l'Skype for Business Server di rete, ma anche per l'intera rete. Se queste procedure non sono state implementate, è consigliabile farlo prima di distribuire Skype for Business Server.
-ms.openlocfilehash: c3f07914f69881f4a9ce0c1f7d4451809b06f8e4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: È probabile che siano già state intraprese azioni per progettare la tolleranza di errore nel sistema, ad esempio garantendo la ridondanza hardware, prendendo precauzioni in caso di interruzioni dell'alimentazione, installando con regolarità gli aggiornamenti antivirus e della sicurezza e monitorando l'attività dei server. Queste procedure sono vantaggiose non solo dell'Skype for Business Server aziendale, ma anche dell'intera rete. Se queste procedure non sono state implementate, è consigliabile farlo prima di distribuire Skype for Business Server.
+ms.openlocfilehash: 352541cf2dfa91eef24f09c4aebd2788c589a10f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60737632"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60860943"
 ---
 # <a name="best-practices-for-your-core-infrastructure-in-skype-for-business-server"></a>Procedure consigliate per l'infrastruttura di base in Skype for Business Server
  
-È probabile che siano già state intraprese azioni per progettare la tolleranza di errore nel sistema, ad esempio garantendo la ridondanza hardware, prendendo precauzioni in caso di interruzioni dell'alimentazione, installando con regolarità gli aggiornamenti antivirus e della sicurezza e monitorando l'attività dei server. Queste procedure sono vantaggiose non solo per l'Skype for Business Server di rete, ma anche per l'intera rete. Se queste procedure non sono state implementate, è consigliabile farlo prima di distribuire Skype for Business Server.
+È probabile che siano già state intraprese azioni per progettare la tolleranza di errore nel sistema, ad esempio garantendo la ridondanza hardware, prendendo precauzioni in caso di interruzioni dell'alimentazione, installando con regolarità gli aggiornamenti antivirus e della sicurezza e monitorando l'attività dei server. Queste procedure sono vantaggiose non solo dell'Skype for Business Server aziendale, ma anche dell'intera rete. Se queste procedure non sono state implementate, è consigliabile farlo prima di distribuire Skype for Business Server.
   
 Per proteggere i server della distribuzione Skype for Business Server da danni accidentali o intenzionali che potrebbero causare tempi di inattività, adottare le precauzioni seguenti:
   
