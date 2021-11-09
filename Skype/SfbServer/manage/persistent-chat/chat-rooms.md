@@ -2,7 +2,7 @@
 title: Gestire chat room nel server Chat persistente in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 1/31/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 7b2e1302-280c-4efe-9ec8-787687b414da
 description: 'Riepilogo: informazioni su come gestire le chat room del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 5eb69b3f852ce8e093947cdd04cc00b6bfdc19e3
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 63566d897901be32b7d0f33ea099bac202e61515
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60746882"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60830850"
 ---
 # <a name="manage-chat-rooms-in-persistent-chat-server-in-skype-for-business-server-2015"></a>Gestire chat room nel server Chat persistente in Skype for Business Server 2015
  
@@ -27,9 +27,9 @@ ms.locfileid: "60746882"
 La creazione e la gestione delle chat room è molto più semplice con l'uso corretto delle categorie. Una categoria definisce gli utenti che possono creare o partecipare alle chat room. Prima di tentare di gestire le chat room, leggere Categorie di chat persistente, chat room e ruoli utente [in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/categories-chat-rooms-and-user-roles.md) e Gestire le categorie nel server Chat persistente [in Skype for Business Server 2015](categories.md).
   
 > [!NOTE]
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
 
-È possibile configurare e gestire chat room utilizzando l'interfaccia della riga di comando di Windows PowerShell o il client Skype for Business se si è membri della chat room. In questo argomento viene descritto come gestire le chat room utilizzando l'Windows PowerShell della riga di comando. Se si desidera gestire le chat room utilizzando il client Skype for Business, vedere la Guida del client. 
+È possibile configurare e gestire chat room utilizzando l'interfaccia della riga di comando di Windows PowerShell oppure il client Skype for Business se si è membri della chat room. In questo argomento viene descritto come gestire le chat room tramite l'Windows PowerShell della riga di comando. Se si desidera gestire le chat room utilizzando il client Skype for Business, vedere la Guida del client. 
   
 Le chat room possono essere di due tipi: Normale e Auditorium. Una chat room normale consente a tutti i membri di pubblicare e leggere messaggi. Un auditorium è un tipo di chat room in cui solo i relatori possono pubblicare, ma tutti possono leggere.
   
@@ -159,7 +159,7 @@ Clear-CsPersistentChatRoom -Identity "atl-cs-001.contoso.com\ITChatRoom" -EndDat
 
 ## <a name="remove-a-message-from-a-room"></a>Rimuovere un messaggio da una sala
 
-È possibile rimuovere uno o più messaggi nel database di Persistent Chat e facoltativamente sostituire il messaggio con un messaggio predefinito o con un messaggio fornito dall'amministratore utilizzando il cmdlet **Remove-CsPersistentChatMessage.** Ad esempio, il comando seguente rimuove tutti i messaggi dalla chat room ITChatRoom che sono stati pubblicati dall'utente kenmyer@contoso.com:
+È possibile rimuovere uno o più messaggi nel database di Persistent Chat e facoltativamente sostituire il messaggio con un messaggio predefinito o con un messaggio fornito dall'amministratore utilizzando il cmdlet **Remove-CsPersistentChatMessage.** Ad esempio, il comando seguente rimuove tutti i messaggi dalla chat room ITChatRoom che sono stati pubblicati dall'kenmyer@contoso.com:
   
 ```PowerShell
 Remove-CsPersistentChatMessage -Identity "atl-persistentchat-001.contoso.com\ITChatRoom" -UserUri "sip:kenmyer@contoso.com"

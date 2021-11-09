@@ -2,7 +2,7 @@
 title: Selezionare agenti
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: b5cf912b-8273-4c2c-a1e5-f25530b264d0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli agenti sono utenti designati per rispondere alle chiamate di Response Group. Ai Response Group deve essere assegnato un gruppo di agenti che identifichi quali agenti possono ricevere le chiamate da tale gruppo. Un modo per creare un gruppo di agenti consiste nel definire un gruppo personalizzato selezionando gli utenti idonei. Gli utenti idonei sono abilitati Skype for Business Server e VoIP aziendale.
-ms.openlocfilehash: 6d1aaa217589ec2448e5a176dbe94dcf78cf5fed
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 63fc4ff4af8a158a32e6097025377adc88b7f780
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778736"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60830590"
 ---
 # <a name="select-agents"></a>Selezionare agenti
 

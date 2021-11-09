@@ -1,6 +1,6 @@
 ---
-title: Microsoft Teams utilizzo del dispositivo
-author: cichur
+title: Microsoft Teams utilizzo dei dispositivi
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 audience: Admin
@@ -13,27 +13,27 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare il report sull Teams di utilizzo dei dispositivi nell'interfaccia di amministrazione di Microsoft Teams per vedere in che modo gli utenti dell'organizzazione si connettono a Teams.
+description: Informazioni su come usare il report sull'Teams di utilizzo dei dispositivi nell'interfaccia di amministrazione di Microsoft Teams per vedere come gli utenti dell'organizzazione si connettono a Teams.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 261a25cd998243c205424dd1a403166e03e1d921
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 6795ef120c8e382fcdb2125e128083180bdc98d6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749575"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60835984"
 ---
-# <a name="microsoft-teams-device-usage-report"></a>Microsoft Teams utilizzo del dispositivo
+# <a name="microsoft-teams-device-usage-report"></a>Microsoft Teams utilizzo dei dispositivi
 
-Il report Teams utilizzo dei dispositivi nell'interfaccia Microsoft Teams di amministrazione fornisce informazioni su come gli utenti si connettono a Teams. È possibile usare il report per visualizzare i dispositivi usati all'interno dell'organizzazione, incluso il numero di Teams da dispositivi mobili quando si è in viaggio.  
+Il report Teams utilizzo dei dispositivi nell'interfaccia di amministrazione di Microsoft Teams fornisce informazioni su come gli utenti si connettono a Teams. È possibile usare il report per visualizzare i dispositivi usati all'interno dell'organizzazione, incluso il numero di Teams usati dai propri dispositivi mobili quando si è in viaggio.  
 
 ## <a name="view-the-device-usage-report"></a>Visualizzare il report sull'utilizzo del dispositivo
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Analisi & report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare Teams **utilizzo del dispositivo.**
 2. In **Intervallo di date** selezionare un intervallo e quindi fare clic su Esegui **report.**
 
-    ![Screenshot del report sull Teams utilizzo dei dispositivi nell'Teams di amministrazione con callout.](../media/teams-reports-device-usage-with-callouts.png "Screenshot del report sull Teams utilizzo dei dispositivi nell'interfaccia Teams con callout")
+    ![Screenshot del report sull Teams di utilizzo dei dispositivi nell'Teams di amministrazione con callout.](../media/teams-reports-device-usage-with-callouts.png "Screenshot del report sull Teams di utilizzo dei dispositivi nell'Teams di amministrazione con callout")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 
@@ -42,7 +42,7 @@ Il report Teams utilizzo dei dispositivi nell'interfaccia Microsoft Teams di amm
 |**1**   |Il Teams di utilizzo dei dispositivi può essere visualizzato per le tendenze degli ultimi 7 o 30 giorni.  |
 |**2**   |Ogni report ha una data in cui è stato generato il report. I report in genere riflettono una latenza di 24 ore dal momento dell'attività. |
 |**3**   |<ul><li>L'asse X del grafico rappresenta i diversi dispositivi (**Windows**, **Mac**, **Linux**, **iOS**, **Android Telefono**, **Web**) usati per connettersi a Teams. </li><li>L'asse Y è il numero di utenti che usano il dispositivo nel periodo di tempo selezionato.</li> </ul>Passare il puntatore del mouse sulla barra che rappresenta un dispositivo per visualizzare il numero di utenti che usano il dispositivo per connettersi a Teams.|
-|**4**   |La tabella fornisce una suddivisione dell'utilizzo del dispositivo per utente. <ul><li>**Nomeutente** è il nome visualizzato dell'utente. È possibile fare clic sul nome visualizzato per passare alla pagina delle impostazioni dell'utente nell'Microsoft Teams di amministrazione. </li><li>**Windows** selezionato se l'utente era attivo nel client desktop Teams in un computer Windows basato su Windows.</li><li>**Mac** è selezionato se l'utente era attivo nel client desktop Teams in un computer macOS. </li> <li>**Linux** è selezionato se l'utente era attivo nel client desktop Teams in un computer Linux. </li> <li>**iOS** è selezionato se l'utente era attivo nel client Teams per dispositivi mobili per iOS.</li><li>**Il telefono Android** è selezionato se l'utente era attivo nel client Teams mobile per Android. <li><li>**Web** è selezionato se l'utente era attivo nel client Teams Web. <li>**L'ultima attività** è l'ultima data (UTC) a cui l'utente ha partecipato a un'Teams attività.</li> </ul> Si noti che se un account utente non esiste più in Azure AD, il nome utente viene visualizzato come "--" nella tabella. <br><br>Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella. |
+|**4**   |La tabella fornisce una suddivisione dell'utilizzo del dispositivo per utente. <ul><li>**Nomeutente** è il nome visualizzato dell'utente. È possibile fare clic sul nome visualizzato per passare alla pagina delle impostazioni dell'utente nell'Microsoft Teams di amministrazione. </li><li>**Windows** selezionato se l'utente era attivo nel client desktop Teams in un computer Windows basato su Windows.</li><li>**Mac** è selezionato se l'utente era attivo nel client desktop Teams in un computer macOS. </li> <li>**Linux** è selezionato se l'utente era attivo nel client desktop Teams in un computer Linux. </li> <li>**iOS** è selezionato se l'utente era attivo nel client Teams per dispositivi mobili per iOS.</li><li>**Il telefono Android** è selezionato se l'utente era attivo nel client Teams mobile per Android. <li><li>**Web** è selezionato se l'utente era attivo nel Teams web client. <li>**L'ultima attività** è l'ultima data (UTC) a cui l'utente ha partecipato a un'Teams attività.</li> </ul> Si noti che se un account utente non esiste più in Azure AD, il nome utente viene visualizzato come "--" nella tabella. <br><br>Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella. |
 |**5**   |Selezionare **Modifica colonne** per aggiungere o rimuovere colonne nella tabella. |
 |**6**   |È possibile esportare il report in un file CSV per l'analisi offline. Fare **clic su Esporta in Excel** e quindi nella scheda **Download** fare clic su **Scarica** per scaricare il report quando è pronto.<br><br>![Screenshot della scheda Download che mostra i report esportati.](../media/teams-reports-export-to-csv.png)|
 

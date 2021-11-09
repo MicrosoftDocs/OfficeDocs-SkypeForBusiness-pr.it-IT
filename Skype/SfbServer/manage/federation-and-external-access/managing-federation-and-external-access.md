@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg520966(v=OCS.15)
 ms:contentKeyID: 48183665
 mtps_version: v=OCS.15
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: È possibile abilitare e configurare l'accesso degli utenti esterni per controllare se gli utenti esterni supportati possono collaborare con utenti Skype for Business Server interni.
-ms.openlocfilehash: 2521d3f4d4134c4edb89904e5a7db4e4026b79e6
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 42e0644cbad51681f979f83041e4c260788039d1
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60743552"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836368"
 ---
 # <a name="managing-federation-and-external-access-to-skype-for-business-server"></a>Gestione della federazione e dell'accesso esterno Skype for Business Server
 

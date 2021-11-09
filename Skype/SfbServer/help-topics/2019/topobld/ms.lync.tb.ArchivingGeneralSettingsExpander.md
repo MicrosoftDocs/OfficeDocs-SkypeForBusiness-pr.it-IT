@@ -2,7 +2,7 @@
 title: Espansione delle impostazioni generali del server di archiviazione
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 0b820af7-8d00-42e2-979c-dbae17159a08
 ROBOTS: NOINDEX, NOFOLLOW
 description: "In Generatore di topologie è possibile modificare le proprietà di un singolo server che esegue l'archiviazione facendo clic con il pulsante destro del mouse sul server che esegue Archiviazione nell'albero della console e scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e quindi scegliendo Modifica proprietà e modificando una delle opzioni seguenti:"
-ms.openlocfilehash: f12b43f027ef0a562f8e15aeb265091e3e85d0a9
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 331aa14ff8adee17c201c4e1bf71dbe411d97ac8
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778566"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836818"
 ---
 # <a name="archiving-server-general-settings-expander"></a>Espansione delle impostazioni generali del server di archiviazione
  

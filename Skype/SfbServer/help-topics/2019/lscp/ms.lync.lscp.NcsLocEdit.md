@@ -2,7 +2,7 @@
 title: Criteri percorso Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: d9b30b3b-570b-49a6-b2b4-46b0cf490153
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile configurare i criteri percorso per determinare se enhanced 9-1-1 (E9-1-1) è abilitato e come viene utilizzato, nonché come vengono utilizzate le informazioni sulla posizione per utenti e contatti.
-ms.openlocfilehash: 8f45fefbd13d20e5bdbef2500b17a394f544aad1
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 95f11519421926074201d02a92bcfc64758ed015
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60764644"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60863003"
 ---
 # <a name="location-policy-create-new-or-edit-existing"></a>Criteri percorso: crearne di nuovi o modificare quelli esistenti
 
@@ -66,6 +66,6 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - **Unidirediret** Specifica che la terza parte può solo ascoltare la chiamata tra il chiamante e l'operatore PSAP.
 
-  - **Bidirediret** Specifica che la terza parte può partecipare alla chiamata tra il chiamante e l'operatore PSAP.
+  - **Bidiredirei** Specifica che la terza parte può partecipare alla chiamata tra il chiamante e l'operatore PSAP.
 
 Per informazioni dettagliate VoIP aziendale funzionalità e funzionalità del servizio di emergenza, vedere [Overview of E9-1-1](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-e9-1-1) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di criteri percorso, vedere [Configuring Location Policy](/previous-versions/office/lync-server-2013/lync-server-2013-viewing-location-policy-information) nella documentazione relativa alle operazioni.

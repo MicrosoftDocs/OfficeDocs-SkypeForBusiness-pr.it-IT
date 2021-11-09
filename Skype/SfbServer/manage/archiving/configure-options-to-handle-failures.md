@@ -2,7 +2,7 @@
 title: Configurare le opzioni di archiviazione per gestire gli errori in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,13 +11,13 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 31fd4e7c-3c68-48dd-9fad-8863831accd7
-description: "Riepilogo: informazioni su come bloccare le sessioni di messaggistica istantanea e di conferenza in caso di errore Skype for Business Server che impedirebbe l'archiviazione."
-ms.openlocfilehash: 24bfa5190f4aa86a51d7737c952e6536a7d89b34
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: "Riepilogo: informazioni su come bloccare le sessioni di messaggistica istantanea e di conferenza in caso di errore Skype for Business Server che impedisse l'archiviazione."
+ms.openlocfilehash: f3f20bf53a784972c720ce5578d78462cbb222c8
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60767924"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836468"
 ---
 # <a name="configure-archiving-options-to-handle-failures-in-skype-for-business-server"></a>Configurare le opzioni di archiviazione per gestire gli errori in Skype for Business Server
 

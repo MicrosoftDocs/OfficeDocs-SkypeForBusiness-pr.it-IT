@@ -2,7 +2,7 @@
 title: Distribuire Skype for Business Server 2019
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 7/9/2018
 audience: ITPro
@@ -17,16 +17,16 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ''
 description: 'Riepilogo: esplorare questi collegamenti per informazioni su come installare e configurare Skype for Business Server 2019.'
-ms.openlocfilehash: defa81886e5ae2cda536776b35722d3c08e9700e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 47005c5b1b236e9f93dec33bf10ddef80c96a3c8
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60761620"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60842508"
 ---
 # <a name="deploy-skype-for-business-server-2019"></a>Distribuire Skype for Business Server 2019
  
-**Riepilogo:** Esplorare questi collegamenti per informazioni su come installare e configurare Skype for Business Server 2019 ed eseguire la migrazione da versioni precedenti.
+**Riepilogo:** Esplora questi collegamenti per informazioni su come installare e configurare Skype for Business Server 2019 ed eseguire la migrazione da versioni precedenti.
   
 Skype for Business Server offre soluzioni di messaggistica istantanea, presenza, conferenze, video e telefonia in grado di supportare i requisiti di collaborazione a livello aziendale. In questo argomento vengono forniti collegamenti a informazioni su come distribuire e configurare Skype for Business Server. 
   
@@ -39,18 +39,18 @@ Gli articoli seguenti su come installare e configurare Skype for Business Server
 |&nbsp;|Contenuto|Descrizione|
 |:-----|:-----|:-----|
 |![Icona per la documentazione.](/office/media/icons/paragraph-writing-blue.svg)|[Requisiti di sistema per Skype for Business Server 2019](../plan/system-requirements.md)   |Informazioni sui requisiti del server e dell'ambiente per Skype for Business Server.   |
-|![Icona per la documentazione.](/office/media/icons/paragraph-writing-blue.svg)|[Nozioni di base sulla topologia per Skype for Business Server](../../SfbServer/plan-your-deployment/topology-basics/topology-basics.md)  |Informazioni sulle opzioni di topologia e sugli scenari di collocazione dei server per Skype for Business Server.   |
+|![Icona per la documentazione.](/office/media/icons/paragraph-writing-blue.svg)|[Nozioni di base sulla topologia per Skype for Business Server](../../SfbServer/plan-your-deployment/topology-basics/topology-basics.md)  |Informazioni sulle opzioni della topologia e sugli scenari di collocazione dei server per Skype for Business Server.   |
 |![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)|[Installare Skype for Business Server](../../SfbServer/deploy/install/install.md) |Informazioni su come installare Skype for Business Server in diverse topologie, sia in ambienti fisici che virtuali.   |
 |![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)| [Migrazione a Skype for Business Server 2019](../migration/migration-to-skype-for-business-server-2019.md)  |Informazioni su come eseguire la migrazione da versioni precedenti di Skype for Business o Lync Server.   |
 |![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)|[Configurare l'esperienza client con Skype for Business](../../SfbServer/deploy/deploy-clients/configure-the-client-experience.md)  |Scopri come configurare l'esperienza client.   |
 |![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)| [Configurare la connettività ibrida tra Skype for Business Server e Skype for Business Online](../../SfbHybrid/hybrid/configure-hybrid-connectivity.md)  |Informazioni su come configurare i prerequisiti per una distribuzione ibrida e quindi configurare la distribuzione per gestire gli utenti tra Skype for Business Server locale e Skype for Business Online.   |
 |![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)| [Distribuire server perimetrali in Skype for Business Server](../../SfbServer/deploy/deploy-edge-server/deploy-edge-servers.md)  |Se gli utenti dell'organizzazione comunicano con utenti esterni che non sono connessi alla rete interna, è necessario distribuire Edge Server.   |
-|![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)| [Distribuire VoIP aziendale in Skype for Business Server](../../SfbServer/deploy/deploy-enterprise-voice/deploy-enterprise-voice.md)  |Informazioni su come distribuire una soluzione voIP aziendale completa, che offre una ricca integrazione con Outlook e Exchange e molte funzionalità avanzate come Response Group, Parcheggio di chiamata, chiamate in team, Prelievo chiamate di gruppo e supporto avanzato per emergenza E9-1-1.   |
+|![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)| [Distribuire VoIP aziendale in Skype for Business Server](../../SfbServer/deploy/deploy-enterprise-voice/deploy-enterprise-voice.md)  |Informazioni su come distribuire una soluzione voIP aziendale completa, che offre un'integrazione avanzata con Outlook e Exchange e molte funzionalità avanzate come Response Group, Parcheggio di chiamata, chiamate in team, Prelievo chiamate di gruppo e supporto avanzato per emergenza E9-1-1.   |
 | ![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)| [Distribuire Video Interop Server in Skype for Business Server](../../SfbServer/deploy/deploy-video-interop-server/deploy-video-interop-server.md)  |Se vuoi supportare l'interoperabilità video, leggi come distribuire Video Interop Server (VIS).   |
    
 ## <a name="additional-resources-about-planning-for-skype-for-business-server"></a>Risorse aggiuntive sulla pianificazione di Skype for Business Server
 
-Le risorse seguenti su come pianificare le Skype for Business Server sono disponibili da altri esperti in materia. 
+Le risorse seguenti su come pianificare Skype for Business Server sono disponibili da altri esperti in materia. 
   
 |&nbsp;|Contenuto|Descrizione|
 |:-----|:-----|:-----|

@@ -1,6 +1,6 @@
 ---
 title: Introduzione all'adozione di Microsoft Teams
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 11/01/2018
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8634e1071585fe026faec0fcfc5b2753317ae6b4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 346843be81bbe6a4cb31f5706548fdc7d05d0d1f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769824"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60842518"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-teams"></a>Introduzione all'adozione di Microsoft Teams
 
@@ -42,9 +42,9 @@ Prima di iniziare, verificare che:
 
 ## <a name="adoption-framework"></a>Framework di adozione
 
-Microsoft 365 e Office 365 un framework di adozione applicabile ai carichi di lavoro principali del servizio. Questo framework illustra i passaggi principali che qualsiasi organizzazione deve eseguire per supportare i servizi cloud. Per altre informazioni sul framework generale per l'adozione, vedere la documentazione e le [risorse Enterprise microsoft.](/microsoft-365/enterprise/) 
+Microsoft 365 e Office 365 un framework di adozione applicabile ai carichi di lavoro principali del servizio. Questo framework illustra i passaggi principali che qualsiasi organizzazione deve eseguire per supportare i servizi cloud. Per altre informazioni sul framework di adozione generale, vedere la documentazione e le risorse [Enterprise Microsoft.](/microsoft-365/enterprise/) 
 
-In questo Teams di adozione, i passaggi sono stati organizzati in fasi e sono stati forniti indicazioni Teams specifiche, come descritto [in](#adoption-phases)Fasi di adozione.
+In questo Teams di adozione, abbiamo organizzato i passaggi in fasi e fornito indicazioni Teams specifiche come descritto in [Fasi](#adoption-phases)di adozione , avanti.
 
 ## <a name="adoption-phases"></a>Fasi di adozione 
 
@@ -54,7 +54,7 @@ Ogni progetto di adozione varia in base alle dimensioni e alla complessità in b
 
 - **Esperimento:** in questa fase di crescita controllata, porterai a bordo i tuoi campioni interni e i primi utenti a bordo. Si parlerà con gli utenti aziendali per identificare gli scenari che trarrebbe immediatamente vantaggio dalle funzionalità di collaborazione e comunicazione Teams disponibili. Raccoglierai feedback che informeranno la fase di adozione su vasta scala e prenderemo decisioni relative alla governance e alla gestione del ciclo di vita che garantiranno una distribuzione corretta.
 
-- **Scala:** questa è la fase di distribuzione su larga scala in cui verranno Teams funzionalità per tutti i dipendenti. In questa fase, le dimensioni dell'organizzazione determineranno se si tratta di un progetto "grande" che si attiva Teams per tutti i dipendenti contemporaneamente o se ci si avvicina in base all'area geografica, alla business unit o a un altro metodo di segmentazione della popolazione dei dipendenti. In questa fase si passa a un modello di recapito continuo. Dipendenti, dirigenti e business unit vorranno espandere l'uso di Teams e richiederanno formazione e impegno per comprendere come usare al meglio Teams e altre caratteristiche di Microsoft 365 o Office 365.
+- **Scala:** questa è la fase di distribuzione su larga scala in cui verranno Teams funzionalità per tutti i dipendenti. In questa fase, le dimensioni dell'organizzazione determineranno se si tratta di un progetto "grande" che attiva Teams per tutti i dipendenti contemporaneamente o se ci si avvicina in base all'area geografica, alla business unit o a un altro metodo di segmentazione della popolazione dei dipendenti. In questa fase si passa a un modello di recapito continuo. Dipendenti, dirigenti e business unit vorranno espandere l'uso di Teams e richiederanno formazione e impegno per comprendere come usare al meglio Teams e altre caratteristiche di Microsoft 365 o Office 365.
 
 Ognuna di queste fasi di adozione dipende dalla preparazione tecnica e ambientale per Teams. Iniziamo!
 

@@ -2,7 +2,7 @@
 title: Definire l'ambito della distribuzione di E9-1-1 in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 2c572dfd-e901-471d-b5a0-18bc8d1d5328
 description: Decisioni necessarie per la pianificazione di una distribuzione di E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: b576f2d9e7dbf9cb82484803ca6e93afb4440795
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: a1757477d9d4de2a0e26c3490bb6214e6c14e1e9
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777996"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836248"
 ---
 # <a name="define-the-scope-of-the-e9-1-1-deployment-in-skype-for-business-server"></a>Definire l'ambito della distribuzione di E9-1-1 in Skype for Business Server
 
@@ -31,7 +31,7 @@ Prima di configurare Skype for Business per E9-1-1, è necessario pianificare la
 
  **Quali sono i criteri e gli obblighi legali dell'organizzazione per quanto riguarda E9-1-1?**
 
- Le disposizioni legali del servizio E9-1-1 per i PBX (denominati sistemi telefonici multilinea, o MLTS, nella terminologia relativa a E9-1-1) variano a seconda delle località. È consigliabile consultare il team legale per comprendere gli obblighi che possono applicarsi alla distribuzione di Skype for Business nelle aree geografiche pertinenti.
+ Le disposizioni legali del servizio E9-1-1 per i PBX (denominati sistemi telefonici multilinea, o MLTS, nella terminologia relativa a E9-1-1) variano a seconda delle località. È consigliabile consultare il team legale per comprendere gli obblighi che possono essere applicati alla distribuzione di Skype for Business nelle aree geografiche pertinenti.
 
  **Aree dell'organizzazione che devono essere abilitate per il servizio E9-1-1**
 

@@ -2,7 +2,7 @@
 title: Gestire Skype for Business Server 2015 con SCOM Management Pack
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/13/2018
 audience: ITPro
@@ -14,18 +14,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ca03f9ab-a227-4903-85a8-427df6a0a5bb
 description: "Riepilogo: informazioni su come configurare l'Skype for Business Server 2015 per l'utilizzo con System Center Operations Manager."
-ms.openlocfilehash: 43fba4fa3672621052d51314e1d39ead5f4d568b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4fb6d0c900285b473012d5f9051f25c8c30320f6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60766274"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836288"
 ---
 # <a name="manage-skype-for-business-server-2015-using-scom-management-pack"></a>Gestire Skype for Business Server 2015 con SCOM Management Pack
  
 **Riepilogo:** Informazioni su come configurare l'Skype for Business Server 2015 per l'utilizzo con System Center Operations Manager.
   
-In un mondo ideale, non si verificano mai problemi con Skype for Business Server 2015. Tuttavia, Skype for Business Server possono essere influenzati da fattori esterni, ad esempio arresti anomali della rete e errori hardware. Utilizzando i Skype for Business Server 2015 Management Pack, è possibile identificare e risolvere potenziali problemi in modo proattivo. In questo modo, i Management Pack Skype for Business Server 2015 estendono le funzionalità di System Center Operations Manager.
+In un mondo ideale, non si verificano mai problemi con Skype for Business Server 2015. Tuttavia, Skype for Business Server possono essere influenzati da fattori esterni, ad esempio arresti anomali della rete e errori hardware. Utilizzando i Skype for Business Server 2015 Management Pack, è possibile identificare e risolvere i potenziali problemi in modo proattivo. In questo modo, i Management Pack Skype for Business Server 2015 estendono le funzionalità di System Center Operations Manager.
   
 Queste informazioni sono state scritte in base alla versione 9319.0 del Monitoring Pack per Skype for Business Server 2015.
   
@@ -35,9 +35,9 @@ Queste informazioni sono state scritte in base alla versione 9319.0 del Monitori
   
 Identificare e  [configurare il server di gestione principale](configure-the-primary.md). A tale scopo, è necessario installare System Center Operations Manager 2012 SP1 o R2. 
   
- Identificare e [configurare Skype for Business Server computer che verranno monitorati.](configure-computers-to-monitor.md) Per monitorare un computer Skype for Business Server utilizzando System Center Operations Manager, è necessario installare i file dell'agente di System Center Operations Manager e configurare ogni server per agire come proxy. 
+ Identificare e [configurare Skype for Business Server computer che verranno monitorati.](configure-computers-to-monitor.md) Per monitorare un computer Skype for Business Server utilizzando System Center Operations Manager, è necessario installare i file dell'agente di System Center Operations Manager e configurare ogni server in modo che agirà come proxy. 
   
- Identificare e [installare e configurare i nodi Watcher.](watcher-nodes.md) I nodi Watch Skype for Business Server er sono computer che eseguono periodicamente transazioni sintetiche, ovvero cmdlet di Windows PowerShell che verificano che i componenti chiave di Skype for Business Server, ad esempio la possibilità di accedere al sistema o la possibilità di scambiare messaggi istantanei, funzionino come previsto. 
+ Identificare e [installare e configurare i nodi Watcher.](watcher-nodes.md) I nodi Watch Skype for Business Server er sono computer che eseguono periodicamente transazioni sintetiche Windows PowerShell cmdlet che verificano che i componenti chiave di Skype for Business Server, ad esempio la possibilità di accedere al sistema o la possibilità di scambiare messaggi istantanei, funzionino come previsto. 
   
 ## <a name="system-center-operations-manager-root-management-server-and-agent-support"></a>System Center Supporto degli agenti e del server di gestione radice di Operations Manager
 
@@ -49,7 +49,7 @@ I Management Pack possono essere utilizzati con System Center Operations Manager
 |Server in cluster   |Non supportate.   |
 |Monitoraggio senza agenti   |Non supportate.   |
 |Ambiente virtuale   |Sì.   |
-|Ruoli del server aggiunti a un dominio   |Tutti i ruoli Skype for Business Server 2015 del server devono essere aggiunti a un dominio.   |
+|Ruoli del server aggiunti a un dominio   |Tutti i ruoli Skype for Business Server 2015 devono essere aggiunti a un dominio.   |
 |Ruoli del server autonomi   |Skype for Business Server server perimetrali 2015 non devono essere aggiunti a un dominio.   |
 |Limitazioni della topologia   |Tutti i ruoli del server in una distribuzione devono essere monitorati dallo stesso gruppo di gestione di Operations Manager.   |
 |Nodo Watcher delle transazioni sintetiche   |La disponibilità dello scenario di monitoraggio con un nodo Watcher delle transazioni sintetiche è supportata (è necessaria una configurazione aggiuntiva). I nodi Watcher non devono essere aggiunti a un dominio.   |
@@ -71,7 +71,7 @@ Per eseguire un nodo Synthetic Transaction Watcher, è innanzitutto necessario i
     
 -  Microsoft .NET Framework 4.5
     
-- Skype for Business Server di installazione di base (OcsCore.msi) e UCMA (Unified Communications Managed API) (le versioni devono corrispondere alla Skype for Business Server WatcherNode.msi precedente)
+- Skype for Business Server file di installazione di base (OcsCore.msi) e UCMA (Unified Communications Managed API) (le versioni devono corrispondere alla Skype for Business Server WatcherNode.msi precedente)
     
 ## <a name="files-in-this-monitoring-pack"></a>File in questo Monitoring Pack
 
@@ -85,7 +85,7 @@ Il Monitoring Pack per Skype for Business Server 2015 include i file seguenti:
     
 ## <a name="whats-new"></a>Novità
 
-Le funzionalità seguenti sono una novità di Skype for Business Server Management Pack 2015.
+Le funzionalità seguenti sono una novità di Skype for Business Server 2015 Management Pack.
 
 - **Modifiche [nell'aggiornamento di settembre 2019](https://www.microsoft.com/en-in/download/details.aspx?id=47364)** Alcuni avvisi hanno rimosso caratteri speciali. In alcuni casi i caratteri speciali interferiscono con la funzionalità di notifica del canale di comando SCOM.
 
@@ -103,8 +103,8 @@ Il Skype for Business Server 2015 Management Pack sfrutta un'ampia gamma di funz
   
 |Scenario di monitoraggio|Descrizione|
 |:-----|:-----|
-|Transazioni sintetiche   | Windows PowerShell per testare e garantire la disponibilità elevata di scenari quali l'accesso, la presenza, la messaggistica istantanea e le conferenze per gli utenti. <br/> Le transazioni sintetiche possono essere eseguite da qualsiasi posizione geografica, anche all'interno dell'azienda, all'esterno dell'azienda e nelle succursali.  <br/> Quando una transazione sintetica ha esito negativo, vengono creati log s HTML per determinare l'esatta natura dell'errore. Ciò include la comprensione dell'azione non riuscita, della latenza di ogni azione, della riga di comando utilizzata per eseguire il test e dell'errore specifico che si è verificato.   |
-|Avvisi di affidabilità delle chiamate   |I record dettagli chiamata (CDR) scritti dai Skype for Business Server 2015 riflettono se gli utenti sono in grado di connettersi a una chiamata o perché una chiamata viene terminata. Gli avvisi di affidabilità delle chiamate interrogano il database cdR per generare avvisi che indicano quando un numero elevato di utenti verifica problemi di connettività per le chiamate peer-to-peer o la funzionalità di conferenza di base.  <br/> La copertura dello scenario include chiamate audio, messaggistica istantanea peer-to-peer e altre funzionalità di conferenza.   |
+|Transazioni sintetiche   | Windows PowerShell cmdlet per testare e garantire la disponibilità elevata di scenari quali l'accesso, la presenza, la messaggistica istantanea e le conferenze per gli utenti. <br/> Le transazioni sintetiche possono essere eseguite da qualsiasi posizione geografica, anche all'interno dell'azienda, all'esterno dell'azienda e nelle succursali.  <br/> Quando una transazione sintetica ha esito negativo, vengono creati log s HTML per determinare l'esatta natura dell'errore. Ciò include la comprensione dell'azione non riuscita, della latenza di ogni azione, della riga di comando utilizzata per eseguire il test e dell'errore specifico che si è verificato.   |
+|Avvisi di affidabilità delle chiamate   |I record dettagli chiamata (CDR) scritti da Skype for Business Server 2015 riflettono se gli utenti sono in grado di connettersi a una chiamata o perché una chiamata viene terminata. Gli avvisi di affidabilità delle chiamate interrogano il database cdR per generare avvisi che indicano quando un numero elevato di utenti verifica problemi di connettività per le chiamate peer-to-peer o la funzionalità di conferenza di base.  <br/> La copertura dello scenario include chiamate audio, messaggistica istantanea peer-to-peer e altre funzionalità di conferenza.   |
 |Avvisi di qualità multimediale   |Query di database che osservano i report QoE pubblicati dai Skype for Business Server 2015 al termine di ogni chiamata. Queste query generano avvisi che consentono di individuare scenari in cui è più probabile che gli utenti sperimentino una qualità multimediale compromessa durante le chiamate e le conferenze. I dati si basano su metriche chiave, come la latenza e la perdita dei pacchetti, che contribuiscono direttamente alla qualità dell'esperienza utente.   |
 |Avvisi di integrità dei componenti   |I singoli componenti del server generano avvisi tramite registri eventi e contatori delle prestazioni per indicare condizioni di errore che possono influire in modo significativo sugli scenari utente. Questi avvisi indicano diverse condizioni, ad esempio servizi non in esecuzione, frequenze di errore elevate, latenza elevata dei messaggi o problemi di connettività.   |
 |Monitoraggio dell'integrità delle dipendenze   |Skype for Business Server può avere esito negativo per diversi motivi esterni. Il Management Pack monitora e raccoglie i dati per le dipendenze esterne critiche che possono indicare problemi gravi. Queste dipendenze includono la Internet Information Services (IIS) e la CPU dei server utilizzati per Skype for Business Server.   |
@@ -118,7 +118,7 @@ Gli avvisi sono classificati nelle categorie seguenti:
   
  **Avvisi di priorità media:** Questi avvisi indicano condizioni che influiscono su un sottoinsieme di utenti o indicano problemi di qualità delle chiamate, ad esempio errori dei componenti, latenza nello stabilire le chiamate o qualità audio inferiore nelle chiamate. Gli avvisi in questa categoria sono con stato, ovvero la natura dell'avviso cambia in base allo stato della connessione di rete. Ad esempio, se i tempi di definizione delle chiamate indicano la latenza ma poi tornano a una soglia normale, questo avviso con priorità media verrà risolto automaticamente in System Center Operations Manager e gli amministratori non dovranno eseguire alcuna azione. Gli avvisi che non possono essere risolti automaticamente vengono in genere indirizzati dagli amministratori nello stesso giorno lavorativo.
   
- **Altri avvisi:** Questi avvisi vengono generati da componenti che potrebbero influire su un utente o un sottoinsieme di utenti specifico. Ad esempio, un avviso tipico è che il servizio Rubrica non è stato in grado di analizzare la voce servizi di dominio Active Directory® (AD DS) per l'utente: testuser@contoso.com. Gli amministratori possono gestire questi avvisi ogni volta che hanno tempo a disposizione.
+ **Altri avvisi:** Questi avvisi vengono generati da componenti che potrebbero influire su un utente o un sottoinsieme di utenti specifico. Ad esempio, un avviso tipico è che il servizio Rubrica non è stato in grado di analizzare la voce di Servizi di dominio Active Directory® per l'utente: testuser@contoso.com. Gli amministratori possono gestire questi avvisi ogni volta che hanno tempo a disposizione.
   
 ### <a name="synthetic-transactions"></a>Transazioni sintetiche
 
@@ -177,7 +177,7 @@ La tabella seguente mostra gli stati di integrità degli oggetti Skype for Busin
 |Skype for Business Server Sito   |Rappresenta posizioni geografiche diverse in cui vengono distribuiti i servizi.   |
 |Skype for Business Server Pool   |Pool (all'interno di un sito) che fornisce servizi di comunicazione, ad esempio messaggistica istantanea e conferenze, agli utenti. Applicabile ai pool Front End, ai pool di server perimetrali e ai pool di server Director, anche se in un determinato pool è presente un solo computer.   |
 |Skype for Business Server Ruolo   |Ruolo del server che ospita Skype for Business Server Service.   |
-|Skype for Business Server Servizio   |Rappresenta una funzionalità distribuita in un computer specifico, ad esempio il servizio utente fp01.contoso.com.   |
+|Skype for Business Server Servizio   |Rappresenta una funzionalità distribuita in un computer specifico, ad esempio un servizio utente fp01.contoso.com.   |
 |Skype for Business Server Componente   |Un componente del servizio, ad esempio il componente Di download della Rubrica, fa parte del servizio Web.   |
 |Skype for Business Server Pool Watcher   |Un'istanza di transazioni sintetiche in esecuzione in un pool.   |
 |Skype for Business Server Registrar Watcher   |Istanza di transazioni sintetiche eseguite su un pool di registrazione.   |
@@ -190,7 +190,7 @@ La tabella seguente mostra gli stati di integrità degli oggetti Skype for Busin
   
 Un Skype for Business Server può contenere più sistemi Skype for Business Server singoli (con più Skype for Business Server ruolo, Skype for Business Server servizio e Skype for Business Server componente). Di conseguenza, l'errore di un singolo server o componente è meno critico per l'integrità complessiva del pool di Skype for Business Server, perché altri server nello stesso pool possono fornire il servizio dell'applicazione al client. L'integrità verrà rollup a un livello percentuale nel pool Skype for Business Server locale. 
   
-Il Skype for Business Server Pool Watcher esegue transazioni sintetiche in un pool Skype for Business Server di archiviazione. L'errore consecutivo di una o più transazioni sintetiche (un processo noto come intervallo di polling consecutivo) esegue il rollup dello stato di integrità critico al livello del pool (peggiore di qualsiasi transazione sintetica), come illustrato nel diagramma seguente. 
+Il Skype for Business Server Pool Watcher esegue transazioni sintetiche su un Skype for Business Server pool. L'errore consecutivo di una o più transazioni sintetiche (un processo noto come intervallo di polling consecutivo) esegue il rollup dello stato di integrità critico al livello del pool (peggiore di qualsiasi transazione sintetica), come illustrato nel diagramma seguente. 
   
 ![Polling consecutivo di SCOM Rollup.](../../media/655de542-cca7-4eda-8052-9a7703ecd0e9.png)
   

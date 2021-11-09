@@ -2,7 +2,7 @@
 title: Installare i prerequisiti per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/7/2018
 audience: ITPro
@@ -16,13 +16,13 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 2ef91a1e-2899-44c8-8e2c-527cb9114a0a
-description: "Riepilogo: informazioni sui server e sui ruoli del server che è necessario configurare prima di installare Skype for Business Server. Scaricare una versione di valutazione gratuita Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: 8b646ea95b13454d1b025cfbfdae186c927859e4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: "Riepilogo: informazioni sui server e sui ruoli del server che è necessario configurare prima di installare Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: 97b348cedef3fe460a26c52672fc856a5eeda98e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60751155"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60849409"
 ---
 # <a name="install-prerequisites-for-skype-for-business-server"></a>Installare i prerequisiti per Skype for Business Server
  
@@ -37,7 +37,7 @@ L'installazione dei prerequisiti consiste nella configurazione di Windows Server
 Skype for Business Server il sistema operativo Windows Server e alcuni prerequisiti prima di poterlo installare. Per informazioni dettagliate sulla pianificazione dei prerequisiti, vedere [Server requirements for Skype for Business Server](../../../SfBServer2019/plan/system-requirements.md). 
   
 > [!TIP]
-> Questa procedura utilizza Windows Server 2012 R2. Se si utilizza una versione diversa di Windows Server, la procedura potrebbe essere leggermente diversa. 
+> In questa procedura viene Windows Server 2012 R2. Se si utilizza una versione diversa di Windows Server, la procedura potrebbe essere leggermente diversa. 
   
 > [!IMPORTANT]
 > Prima di iniziare, verificare che Windows Server sia aggiornato utilizzando Windows Update. 

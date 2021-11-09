@@ -2,7 +2,7 @@
 title: Criteri PIN Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 344b9be6-dd37-46bc-bfa4-5c06f6666aa7
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 26de4b568db8bdaaa98bdce114f20c2eba82b206
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e863f072077c798c6f9f24c558e48b15e6488687
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60744602"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60862743"
 ---
 # <a name="pin-policy-create-new-or-edit-existing"></a>Criteri PIN: crearne di nuovi o modificare quelli esistenti
 
@@ -38,4 +38,4 @@ Per saperne di più: fare clic sul collegamento all'attività che si desidera es
 
 - [Eliminare le impostazioni del PIN di conferenza telefonica con accesso esterno per un sito o un gruppo di utenti](/previous-versions/office/lync-server-2013/lync-server-2013-delete-dial-in-conferencing-pin-settings-for-a-site-or-group-of-users)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015](../../manage/manage.md).

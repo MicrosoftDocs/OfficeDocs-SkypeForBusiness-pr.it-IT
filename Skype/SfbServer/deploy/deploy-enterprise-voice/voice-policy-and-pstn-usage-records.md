@@ -2,7 +2,7 @@
 title: Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: e6ff27e0-e2d1-4445-840f-08f738200c20
 description: 'Riepilogo: creare o modificare i criteri vocali e configurare i record di utilizzo PSTN utilizzando il Skype for Business Server di controllo.'
-ms.openlocfilehash: 0188881fe91d527c64b95a8cac49ba91ed12bf5f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 5dedb504a6d2d3e75b168bf32ff1f0ccb7ed94f8
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769604"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60828379"
 ---
 # <a name="create-or-modify-a-voice-policy-and-configure-pstn-usage-records-in-skype-for-business"></a>Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for Business
 
@@ -56,9 +56,9 @@ ms.locfileid: "60769604"
      > [!NOTE]
      > Questa funzionalità è configurabile solo tramite Skype for Business Server Management Shell
 
-   - L'**inoltro di chiamata** consente agli utenti di inoltrare chiamate ad altri telefoni e dispositivi client. Skype for Business Server offre una gamma significativamente più ampia di opzioni di configurazione per l'inoltro di chiamata. Ad esempio, se l'organizzazione desidera evitare che le chiamate in entrata vengano inoltrate esternamente a PSTN, l'amministratore può applicare un criterio vocale specifico per la distribuzione di questa limitazione. La funzionalità è abilitata per impostazione predefinita.
+   - L'**inoltro di chiamata** consente agli utenti di inoltrare chiamate ad altri telefoni e dispositivi client. Skype for Business Server offre una gamma notevolmente più ampia di opzioni di configurazione per l'inoltro di chiamata. Ad esempio, se l'organizzazione desidera evitare che le chiamate in entrata vengano inoltrate esternamente a PSTN, l'amministratore può applicare un criterio vocale specifico per la distribuzione di questa limitazione. La funzionalità è abilitata per impostazione predefinita.
 
-   - La **delega** consente agli utenti di specificare altri utenti per l'invio e la ricezione delle chiamate per loro conto. In Skype for Business Server, un delegato può configurare lo squillo simultaneo che consente alle chiamate in arrivo al proprio responsabile di squillare tutte le destinazioni di squillo simultaneo del delegato. In questo modo, al delegato viene offerta una maggiore flessibilità quando si trova a dover rispondere a chiamate destinate al proprio manager. La funzionalità è abilitata per impostazione predefinita.
+   - La **delega** consente agli utenti di specificare altri utenti per l'invio e la ricezione delle chiamate per loro conto. In Skype for Business Server, un delegato può configurare lo squillo simultaneo che consente alle chiamate in arrivo al proprio manager di squillare tutte le destinazioni di squillo simultaneo del delegato. In questo modo, al delegato viene offerta una maggiore flessibilità quando si trova a dover rispondere a chiamate destinate al proprio manager. La funzionalità è abilitata per impostazione predefinita.
 
    - Il **trasferimento di chiamata** consente agli utenti di trasferire chiamate ad altri utenti. Funzionalità abilitata per impostazione predefinita.
 
@@ -131,7 +131,7 @@ ms.locfileid: "60769604"
 
    - Per utilizzare gli stessi record di utilizzo PSTN per l'inoltro di chiamata e lo squillo simultaneo di questo criterio vocale, selezionare l'opzione **Route tramite gli usi PSTN di chiamata** dal  menu a discesa.
 
-   - Per consentire l'inoltro di chiamata e lo squillo simultaneo  solo agli utenti Skype for Business interni, selezionare l'opzione Instrada solo agli utenti Skype for Business interni dal menu a discesa. Le chiamate non verranno inoltrare ai numeri PSTN esterni.
+   - Per consentire l'inoltro di chiamata e lo squillo simultaneo solo agli utenti Skype for Business interni, selezionare l'opzione Instrada solo agli utenti Skype for Business interni dal menu **a** discesa. Le chiamate non verranno inoltrare ai numeri PSTN esterni.
 
    - Per specificare record di utilizzo PSTN diversi per l'inoltro di chiamata e lo squillo simultaneo rispetto a quelli utilizzati per questo criterio vocale, selezionare l'opzione **Route using custom PSTN usages** from the drop-down menu. Questa opzione consente di visualizzare un controllo per selezionare i record di utilizzo PSTN esistenti o per creare nuovi record di utilizzo PSTN specifici per l'inoltro di chiamata e lo squillo simultaneo.
 
@@ -183,7 +183,7 @@ ms.locfileid: "60769604"
 12. Nella pagina **Criteri vocali** fare clic su **Commit** e quindi su **Salva tutto**.
 
     > [!NOTE]
-    > Ogni volta che si crea o si modifica un criterio vocale, è necessario eseguire il **comando Commit all** per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
+    > Ogni volta che si crea o si modifica un criterio vocale, è necessario eseguire il **comando Commit all** per pubblicare la modifica della configurazione. Per informazioni dettagliate, [vedere Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
 
 13. (Facoltativo) L'escape della segreteria telefonica rileva che la segreteria telefonica dell'utente ha immediatamente risposto a una chiamata e disconnette la chiamata al sistema di caselle vocali del telefono cellulare. In questo modo la chiamata continuerà a squillare sugli altri endpoint dell'utente, offrendo all'utente la possibilità di rispondere alla chiamata. Per informazioni dettagliate su come configurare un criterio di segreteria telefonica, vedere [Configure voice mail escape in Skype for Business](configure-voice-mail-escape.md).
 
@@ -207,7 +207,7 @@ ms.locfileid: "60769604"
      > [!NOTE]
      > Questa funzionalità è configurabile solo tramite Skype for Business Server Management Shell
 
-   - L'**inoltro di chiamata** consente agli utenti di inoltrare chiamate ad altri telefoni e dispositivi client. Skype for Business Server offre una gamma significativamente più ampia di opzioni di configurazione per l'inoltro di chiamata. Ad esempio, se l'organizzazione desidera evitare che le chiamate in entrata vengano inoltrate esternamente a PSTN, l'amministratore può applicare un criterio vocale specifico per la distribuzione di questa limitazione. La funzionalità è abilitata per impostazione predefinita.
+   - L'**inoltro di chiamata** consente agli utenti di inoltrare chiamate ad altri telefoni e dispositivi client. Skype for Business Server offre una gamma notevolmente più ampia di opzioni di configurazione per l'inoltro di chiamata. Ad esempio, se l'organizzazione desidera evitare che le chiamate in entrata vengano inoltrate esternamente a PSTN, l'amministratore può applicare un criterio vocale specifico per la distribuzione di questa limitazione. La funzionalità è abilitata per impostazione predefinita.
 
    - La **delega** consente agli utenti di specificare altri utenti per l'invio e la ricezione delle chiamate per loro conto. In Skype for Business Server, un delegato può configurare lo squillo simultaneo che consente alle chiamate in arrivo al proprio manager di squillare tutte le destinazioni di squillo simultaneo del delegato. In questo modo, al delegato viene offerta una maggiore flessibilità quando si trova a dover rispondere a chiamate destinate al proprio manager. La funzionalità è abilitata per impostazione predefinita.
 

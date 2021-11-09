@@ -1,6 +1,6 @@
 ---
 title: Disponibilità in Giamaica
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole, fafan
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Giamaica.
-ms.openlocfilehash: ecac9baf800bd588d295fd686c14ca748183f407
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 940ca93742e3c52630575c637116e0d9d79658c8
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745682"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60863153"
 ---
 # <a name="availability-in-jamaica"></a>Disponibilità in Giamaica
 
@@ -72,7 +72,7 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 |Sono disponibili numeri verdi a tariffa?  <br/> |No <br/> |
 |Sono disponibili numeri a numero verde?  <br/> |Sì  <br/> |
    
- Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere i numeri di telefono del servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
+ Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di [chiamata,](../getting-service-phone-numbers.md)vedere Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams .
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

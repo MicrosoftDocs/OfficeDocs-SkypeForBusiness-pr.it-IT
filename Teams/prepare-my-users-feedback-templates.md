@@ -1,6 +1,6 @@
 ---
 title: Sondaggi di feedback in Teams o Skype for Business
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 03/31/2018
@@ -16,12 +16,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e98ec763d93609d0b5b4a37cf6fa02b71c478def
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: cebd19b40513ece384112e6fdc3efa1be54155b1
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773436"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836034"
 ---
 # <a name="user-feedback-surveys"></a>Sondaggi di feedback degli utenti 
 
@@ -31,7 +31,7 @@ Personalizzare le domande seguenti e quindi trasferirle in uno strumento di sond
 
 Ai fini di questi *sondaggi,* il nuovo sistema telefonico si riferisce all'uso delle funzionalità di chiamata in Microsoft Teams o Skype for Business, oltre a dispositivi come un telefono multimediale o un cellulare. Tutti i riferimenti a Microsoft Teams in questi sondaggi si applicano anche ai Skype for Business.
 
-Indicare il livello di accordo con le affermazioni seguenti, in relazione all'uso di Teams come telefono. 
+Indicare il livello di accordo con le istruzioni seguenti, in relazione all'uso di Teams come telefono. 
 
 |     &nbsp;                              | Completamente d'accordo | Un po' d'accordo | Neutro | Un po' in disaccordo | Completamente in disaccordo | N/D o non è stato utilizzato |
 |--------------------------------------------------------------------------------------------------------------------------|----------------------|--------------------|-------------|-----------------------|-------------------------|------------------------|
@@ -41,7 +41,7 @@ Indicare il livello di accordo con le affermazioni seguenti, in relazione all'us
 | Sono riuscito a effettuare e ricevere chiamate sul mio dispositivo mobile.                                                   |                      |                    |             |                       |                         |                        |
 | Il nuovo sistema telefonico soddisfa tutte le mie esigenze di chiamata (trasferimento, blocco, segreteria telefonica e così via)                                      |                      |                    |             |                       |                         |                        |
 | Vedo il valore dell'integrazione del sistema telefonico con Teams.                                                 |                      |                    |             |                       |                         |                        |
-| L Teams come il mio telefono mi rende più facile fare il mio lavoro.                                          |                      |                    |             |                       |                         |                        |
+| L Teams come telefono mi rende più facile fare il mio lavoro.                                          |                      |                    |             |                       |                         |                        |
 | La mia esperienza audio con Teams è buona o migliore di quanto non lo fosse con il nostro vecchio sistema telefonico.                   |                      |                    |             |                       |                         |                        |
 
 Se si è scelto **Un po' di disaccordo** o **Completamente** in disaccordo per una delle affermazioni precedenti, spiegare. (Testo aperto)

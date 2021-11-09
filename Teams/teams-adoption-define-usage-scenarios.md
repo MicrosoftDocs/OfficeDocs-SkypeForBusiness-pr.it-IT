@@ -1,6 +1,6 @@
 ---
 title: Definire scenari di utilizzo per Microsoft Teams
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 10/31/2018
@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come scegliere gli scenari di utilizzo più applicabili per la fase di sperimentazione della Teams adozione.
+description: Informazioni su come scegliere gli scenari di utilizzo più applicabili per la fase di esperimento dell'Teams adozione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8d110e3b921c24e1b32382b8a69056546948464f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 55b25ab0367909da0136a7761b7e763965c5804d
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60766084"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60842558"
 ---
 # <a name="define-usage-scenarios-for-microsoft-teams"></a>Definire scenari di utilizzo per Microsoft Teams
 
@@ -47,7 +47,7 @@ Altri scenari da considerare sono:
 
 ![Illustrazione di Teams casi d'uso per ogni scenario.](media/teams-adoption-use-cases.png)
 
-Il movimento di modernizzazione di questo scenario è un processo cumulativo: è possibile creare scenari più semplici per creare entusiasmo, familiarità e credibilità con questo nuovo modo di lavorare. Passare quindi ad aree di impatto più ambiziose. Con l'impatto Microsoft Teams sui colleghi aziendali, ne saranno coinvolti altri e si crea un momento di forza. Per molti dei nostri clienti, una volta ottenuto questo processo, gli stakeholder aziendali si avvicinano a loro dopo aver appreso come i colleghi hanno ottenuto valore Microsoft Teams.
+Il movimento di modernizzazione di questo scenario è un processo cumulativo: è possibile creare scenari più semplici per creare entusiasmo, familiarità e credibilità con questo nuovo modo di lavorare. Passare quindi ad aree di impatto più ambiziose. Più l'impatto con Microsoft Teams è dimostrato ai colleghi aziendali, più di loro si impegheranno e si crea un momento di forza. Per molti dei nostri clienti, una volta ottenuto questo processo, gli stakeholder aziendali si avvicinano a loro dopo aver appreso come i colleghi hanno ottenuto valore da Microsoft Teams.
 
 ## <a name="interview-business-stakeholders"></a>Intervistare gli stakeholder aziendali
 
@@ -70,6 +70,6 @@ Dopo aver parlato con uno o più stakeholder aziendali, è possibile assegnare p
 ![Illustrazione che mostra l'impatto dello scenario rispetto alla difficoltà.](media/teams-adoption-impact-difficulty.png)
 
 > [!Note]
-> Siamo sempre desiderosi di scoprire come i nostri clienti usano Teams nuovi modi innovativi. Condividi le tue #TeamsStories con noi nel forum di discussione [Driving Adoption.](https://techcommunity.microsoft.com/t5/driving-adoption/ct-p/DrivingAdoption) Includere l'hashtag **#TeamsStories** nel post. Siamo sempre interessati a come si usa Teams nell'organizzazione.
+> Siamo sempre desiderosi di scoprire come i nostri clienti usano Teams nuovi modi innovativi. Condividi le tue #TeamsStories con noi nel forum di discussione [Driving Adoption.](https://techcommunity.microsoft.com/t5/driving-adoption/ct-p/DrivingAdoption) Includere l'hashtag **#TeamsStories** nel post. Siamo sempre interessati al modo in cui usi i Teams nella tua organizzazione.
 
 ![Icona che rappresenta il passaggio successivo.](media/teams-adoption-next-icon.png) Successivo: [Onboard early adopters and gather feedback](teams-adoption-onboard-early-adopters.md).

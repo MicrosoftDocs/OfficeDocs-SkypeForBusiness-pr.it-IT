@@ -2,7 +2,7 @@
 title: Gestire l'autenticazione in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,13 +12,13 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d7b17445-1b01-4b7a-9b7f-f86ad59f1a2b
-description: 'Riepilogo: utilizzare le procedure seguenti per gestire la Skype for Business Server sicurezza e autenticazione.'
-ms.openlocfilehash: 5f9403adf5d31f3692c4778bb19867279c6767e7
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: "Riepilogo: utilizzare le procedure seguenti per gestire la Skype for Business Server e l'autenticazione."
+ms.openlocfilehash: b66dfe414b8ce4be7ca699c21d672cae785012fa
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60772142"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60830940"
 ---
 # <a name="manage-authentication-in-skype-for-business-server"></a>Gestire l'autenticazione in Skype for Business Server
  

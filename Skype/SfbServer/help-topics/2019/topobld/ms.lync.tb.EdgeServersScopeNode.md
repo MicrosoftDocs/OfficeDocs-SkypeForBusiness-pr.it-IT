@@ -2,7 +2,7 @@
 title: Nodo dell'ambito dei server perimetrali
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 0d49587e-5079-4fe0-a9b9-fb0853811fca
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Nel nodo Pool Edge Server vengono elencati i pool Edge Server della topologia. È possibile eseguire l'operazione seguente:"
-ms.openlocfilehash: ee61bfb119a86b94c256b4ca099a20df5883d458
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: aefca966a9816986fe37fc6e9515d8815a9034af
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759928"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60849149"
 ---
 # <a name="edge-servers-scope-node"></a>Nodo dell'ambito dei server perimetrali
  

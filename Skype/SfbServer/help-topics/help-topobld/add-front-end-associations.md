@@ -2,7 +2,7 @@
 title: Aggiungere associazioni di Front End Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 95620425-defd-47fd-a5c0-e4a283d812a5
 description: 'È ora possibile abilitare il supporto di funzionalità specifiche che richiedono la distribuzione di altri server associando ruoli del server al pool Front End. È inoltre possibile associare ruoli del server con il pool Front End in un secondo momento. I ruoli del server che possono essere associati a un pool Front End includono quanto segue:'
-ms.openlocfilehash: 9d2e2912b6f9ad53dc194c4fa0267f29d83263f9
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: dd1e5a7ffa91e5a46cde0faff99fe67ab083e7bc
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762704"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60862613"
 ---
 # <a name="add-front-end-associations"></a>Aggiungere associazioni di Front End Server
 

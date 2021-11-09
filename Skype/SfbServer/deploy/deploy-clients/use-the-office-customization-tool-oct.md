@@ -2,7 +2,7 @@
 title: Utilizzare lo Strumento Office personalizzazione di Office in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -11,13 +11,13 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 26647cb6-ba84-4ba7-8b6f-2cf86818e530
-description: 'Riepilogo: come usare lo strumento di personalizzazione Office con il client Skype for Business client.'
-ms.openlocfilehash: 435ce2e1b9644fe5f30968a0766abe69165ca387
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: 'Riepilogo: come usare lo strumento Office personalizzazione con Skype for Business client.'
+ms.openlocfilehash: c561fe9865d06b26ea46981bdf528515a465deea
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60738952"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60830680"
 ---
 # <a name="use-the-office-customization-tool-oct-in-skype-for-business-server"></a>Utilizzare lo Strumento Office personalizzazione di Office in Skype for Business Server
  
@@ -35,10 +35,10 @@ Gli amministratori utilizzano lo Strumento di personalizzazione di Office per cr
   
 - **Installazione** Utilizzato per specificare il percorso di installazione predefinito nel client e nel nome dell'organizzazione predefinito, origini di installazione di rete aggiuntive, codice Product Key, contratto di licenza con l'utente finale, livello di visualizzazione, versioni precedenti di Office da rimuovere, programmi personalizzati da eseguire durante l'installazione, impostazioni di sicurezza e proprietà del programma di installazione.
     
-- **Funzionalità** Usato per configurare le impostazioni utente e personalizzare la modalità di Office di installazione delle funzionalità. Gli amministratori possono utilizzare lo Strumento di personalizzazione di Office per specificare valori predefiniti iniziali delle impostazioni delle applicazioni Office per gli utenti. Gli utenti possono modificare la maggior parte delle impostazioni dopo l'installazione.
+- **Funzionalità** Usato per configurare le impostazioni utente e personalizzare la modalità Office di installazione delle funzionalità. Gli amministratori possono utilizzare lo Strumento di personalizzazione di Office per specificare valori predefiniti iniziali delle impostazioni delle applicazioni Office per gli utenti. Gli utenti possono modificare la maggior parte delle impostazioni dopo l'installazione.
     
 - **Contenuto aggiuntivo** Usato per aggiungere o rimuovere file, aggiungere o rimuovere voci del Registro di sistema e configurare collegamenti.
     
-- **Outlook** Usato per personalizzare il profilo di Outlook predefinito di un utente, specificare le impostazioni Exchange, aggiungere account, rimuovere account ed esportare le impostazioni e specificare i gruppi di invio e ricezione.
+- **Outlook** Utilizzato per personalizzare il profilo di Outlook predefinito di un utente, specificare le impostazioni Exchange, aggiungere account, rimuovere account ed esportare le impostazioni e specificare i gruppi di invio e ricezione.
     
 Per informazioni sullo Strumento di personalizzazione di Office, vedere [Use the Oct to customize Office 2013.](/previous-versions/office/office-2013-resource-kit/cc179132(v=office.15)) Si noti che queste informazioni si applicano anche alle versioni successive di Office.

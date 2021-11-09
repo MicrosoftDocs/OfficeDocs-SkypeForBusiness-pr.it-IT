@@ -2,7 +2,7 @@
 title: Ambito di gateway video
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 2071b375-4978-4ff5-ae38-5e4a621bf6a3
 ROBOTS: NOINDEX, NOFOLLOW
 description: I passaggi necessari per definire un nuovo vis o gateway video in Generatore di topologie sono descritti online in Create a VIS pool in Skype for Business Server.
-ms.openlocfilehash: 6e39e03eb360437d3a72c2aa57edaf1853b6c770
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 655ae62f9764370ae6b2d090a7dc4ab2928dc386
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769144"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836668"
 ---
 # <a name="video-gateway-scope"></a>Ambito di gateway video
  

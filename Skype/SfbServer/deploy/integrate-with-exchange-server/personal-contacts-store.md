@@ -2,7 +2,7 @@
 title: Configurare l'archivio contatti personali nei computer client Lync 2010
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 1/29/2019
 audience: ITPro
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ec69a6cb-07f2-4057-9544-55035f83eeae
 description: "Riepilogo: configurare l'archivio contatti personale utilizzato dai client legacy."
-ms.openlocfilehash: 9a9b5938d7e97460a6b8582f1563eeeb4c369272
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: de9bc9472f619f7d35bbc4585d806f6cd82c295a
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749357"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60842368"
 ---
 # <a name="configure-the-personal-contacts-store-on-lync-2010-client-computers"></a>Configurare l'archivio contatti personali nei computer client Lync 2010
   
@@ -32,7 +32,7 @@ Per configurare questo valore in un singolo computer, eseguire la procedura segu
   
 1. Nel computer client fare clic sul **pulsante Start** e quindi scegliere **Esegui.**
 2. Nella finestra di dialogo **Esegui** digitare regedit e quindi premere INVIO.
-3. Nell'Editor del Registro di **sistema espandere HKEY_LOCAL_MACHINE**, **software**, **Criteri**, **Microsoft** e quindi espandere Communicator **.**
+3. Nell'Editor del Registro di sistema espandere **HKEY_LOCAL_MACHINE**, **software**, **Criteri**, **Microsoft** e quindi espandere **Communicator**.
 4. Fare clic con **il Communicator,** scegliere **Nuovo** e quindi **valore DWORD (32 bit).**
 5. Dopo aver creato il nuovo valore, digitare PersonalContactStoreOverride e quindi premere INVIO per rinominare il valore.
 6. Verificare che il valore di PersonalContactStoreOverride sia impostato su 0 e quindi chiudere l'editor del Registro di sistema.

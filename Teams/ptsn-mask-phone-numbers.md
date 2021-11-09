@@ -1,6 +1,6 @@
 ---
 title: Mascherare i numeri di telefono nelle Microsoft Teams riunioni
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: moakram
@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come mascherare i numeri di telefono nelle Microsoft Teams riunioni
-ms.openlocfilehash: d34d2f38a3a1fe2219816184a5f127312cd0475e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: afdbaa4f2f437728aad14e3731ab3e26ba90f36d
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60758268"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60828429"
 ---
 # <a name="mask-phone-numbers-in-microsoft-teams-meetings"></a>Mascherare i numeri di telefono nelle Microsoft Teams riunioni
 
@@ -33,8 +33,8 @@ Per una maggior privacy, i numeri di telefono dei partecipanti che a una riunion
 
 Per casi d'uso specifici del settore, gli amministratori hanno la possibilità di scegliere come vengono visualizzati i numeri di telefono dei partecipanti ai servizi di audioconferenza nelle riunioni organizzate nel tenant. Gli amministratori possono scegliere tra tre opzioni:
 
-- Telefono numeri vengono mascherati solo da partecipanti esterni. I partecipanti che appartengono al tenant dell'organizzatore della riunione continuano a visualizzare il numero di telefono completo.
-- Telefono i numeri vengono mascherati da tutti i partecipanti alla riunione, ad eccezione dell'organizzatore.
+- Telefono i numeri vengono mascherati solo da partecipanti esterni. I partecipanti che appartengono al tenant dell'organizzatore della riunione continuano a visualizzare il numero di telefono completo.
+- Telefono i numeri sono mascherati da tutti i partecipanti alla riunione, ad eccezione dell'organizzatore.
 - Telefono i numeri vengono smascherati, che li rende visibili a tutti i partecipanti alla riunione.
 
 Questa impostazione viene applicata a tutte le superfici della riunione in cui sono esposti i numeri di telefono.

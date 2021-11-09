@@ -2,7 +2,7 @@
 title: Tabella ClientVersions in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 542316cf-a6db-4d52-ab28-8bf6d27a3b48
 description: La tabella ClientVersions è una tabella di supporto in cui è archiviato un elenco dei diversi tipi di client e delle versioni che hanno partecipato alle sessioni registrate nel database. Ogni record della tabella rappresenta una versione client.
-ms.openlocfilehash: b3db255430e5b591db813b76fb01bd20d3f24118
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 230310d414c9dc34a92317e6369e18643b86f8d5
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765124"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60842698"
 ---
 # <a name="clientversions-table-in-skype-for-business-server-2015"></a>Tabella ClientVersions in Skype for Business Server 2015
  

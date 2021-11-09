@@ -2,7 +2,7 @@
 title: Creare un nuovo criterio di archiviazione in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 50c39731-ba2f-49c2-a571-6dc373f6aaeb
 description: 'Riepilogo: informazioni su come creare un nuovo criterio di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: a07edaae5d8c7c7cafc0e9a76d2b2d7574c5713b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: d60ca9399681bf44fadcf7767b7be1499e99cb99
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60767894"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836448"
 ---
 # <a name="create-a-new-archiving-policy-in-skype-for-business-server"></a>Creare un nuovo criterio di archiviazione in Skype for Business Server
 
@@ -31,7 +31,7 @@ Per creare un nuovo criterio di archiviazione utilizzando il Pannello di control
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Criteri di archiviazione**.
     

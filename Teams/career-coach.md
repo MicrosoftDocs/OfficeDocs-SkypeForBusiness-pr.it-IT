@@ -1,6 +1,6 @@
 ---
 title: Acquistare, configurare e abilitare Assistente alla carriera per Microsoft Teams
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 ms.reviewer: alaina.creager
 manager: serdars
@@ -16,16 +16,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f23f00249c23acb8397127bd51fd05206ce2f3f6
-ms.sourcegitcommit: 6da1531dda6a0a3eecdca40e682783cc81c0d3e0
+ms.openlocfilehash: 114bc83039c42170bcc20d24419f840b3b3d339b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60785089"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60849579"
 ---
 # <a name="purchase-configure-and-enable-career-coach-for-microsoft-teams"></a>Acquistare, configurare e abilitare Assistente alla carriera per Microsoft Teams
 
-Assistente alla carriera è un'app Microsoft Teams per l'istruzione basata su LinkedIn che fornisce indicazioni personalizzate per gli studenti dell'istruzione superiore per esplorare il percorso di carriera. Assistente alla carriera offre agli istituti di istruzione una soluzione di carriera unificata per gli studenti per scoprire il percorso di carriera, far crescere le competenze del mondo reale e creare la propria rete in un'unica posizione.
+Assistente alla carriera è un'app Microsoft Teams per l'istruzione basata su LinkedIn che fornisce indicazioni personalizzate per gli studenti dell'istruzione superiore per esplorare il percorso di carriera. Assistente alla carriera offre agli istituti di istruzione una soluzione di carriera unificata per gli studenti per scoprire il percorso di carriera, sviluppare competenze reali e creare la propria rete in un'unica posizione.
 
 ## <a name="supported-languages"></a>Lingue supportate
 
@@ -87,7 +87,7 @@ Per abilitare Assistente alla carriera per l'istituto di istruzione, esaminare g
 
 ## <a name="purchase-the-career-coach-licenses"></a>Acquistare le licenze Assistente alla carriera licenze
 
-Assistente alla carriera è disponibile in tutto il mondo (ad eccezione della Cina e della Russia) per istituti di istruzione superiore qualificati come licenza per componenti aggiuntivi tramite Enrollment for Education Solutions (EES), Cloud Service Providers (CSP) e interfaccia di amministrazione di Microsoft 365 (web direct). Come app Microsoft Teams, i clienti devono avere Microsoft 365 A3/A5 o Office 365 A1/A3/A5 per acquistare il componente aggiuntivo Assistente alla carriera licenza.
+Assistente alla carriera è disponibile in tutto il mondo (ad eccezione della Cina e della Russia) per istituti di istruzione superiore qualificati come licenza per componenti aggiuntivi tramite Enrollment for Education Solutions (EES), Cloud Service Providers (CSP) e interfaccia di amministrazione di Microsoft 365 (web direct). Come app Microsoft Teams, i clienti devono avere Microsoft 365 A3/A5 o Office 365 A1/A3/A5 per acquistare la licenza Assistente alla carriera componente aggiuntivo.
 
 ### <a name="assign-app-licenses-to-users"></a>Assegnare licenze per le app agli utenti
 
@@ -97,13 +97,13 @@ Per istruzioni dettagliate, vedere [Assegnare licenze agli utenti.](/microsoft-3
 
 Assistente alla carriera **gli** utenti dell'istituto di istruzione devono avere la possibilità di connettere il proprio account Microsoft 365 al proprio account LinkedIn, agevolato all'interno di Assistente alla carriera.
 
-1. Accedere [all'Azure AD di amministrazione con](https://aad.portal.azure.com/) un account amministratore globale per l'organizzazione Azure AD globale.
+1. Accedere all'interfaccia [Azure AD di](https://aad.portal.azure.com/) amministrazione con un account amministratore globale per l'organizzazione Azure AD globale.
 
 2. Selezionare **Utenti**.
 
 3. Nella pagina **Utenti** selezionare **Impostazioni utente.**
 
-4. **Le connessioni all'account LinkedIn** devono essere impostate su **Sì** o su Gruppo **selezionato** Assistente alla carriera configurato correttamente.
+4. **Le connessioni all'account LinkedIn** devono essere impostate su **Sì** o gruppo **selezionato** Assistente alla carriera configurato correttamente.
 
    ![Integrare le connessioni dell'account LinkedIn nell'organizzazione](/azure/active-directory/enterprise-users/media/linkedin-integration/linkedin-integration.png)
 
@@ -123,7 +123,7 @@ Usare Microsoft Teams di amministrazione per configurare Assistente alla carrier
 > [!IMPORTANT]
 > Per accedere alla pagina, è necessario essere un amministratore globale o Teams del servizio.
 
-1. Accedere all'interfaccia **[Teams di amministrazione.](https://admin.teams.microsoft.com)**
+1. Accedere **[all'interfaccia Teams di amministrazione.](https://admin.teams.microsoft.com)**
 
 2. Nel riquadro di spostamento sinistro selezionare Teams  >  **[app Gestisci app.](https://admin.teams.microsoft.com/policies/manage-apps)**  
 
@@ -159,7 +159,7 @@ Personalizza Assistente alla carriera in base al marchio del tuo istituto di ist
 
 ![nella Assistente alla carriera di personalizzazione dell'interfaccia di amministrazione.](media/career-coach-brand.png)
 
-1. Accedere all'interfaccia **[Teams di amministrazione.](https://admin.teams.microsoft.com)**
+1. Accedere **[all'interfaccia Teams di amministrazione.](https://admin.teams.microsoft.com)**
 
 2. Selezionare **Teams app Gestisci app**  >  **[Assistente alla carriera](https://admin.teams.microsoft.com/policies/manage-apps)** marchio e  >    >  **preferenze.**
 
@@ -181,14 +181,14 @@ Personalizza Assistente alla carriera in base al marchio del tuo istituto di ist
 
 ### <a name="linkedin-connection"></a>Connessione LinkedIn
 
-La configurazione di LinkedIn Assistente alla carriera con i dati degli ex allievi pubblici di LinkedIn.
+La configurazione di LinkedIn si connette Assistente alla carriera con i dati degli ex allievi pubblici di LinkedIn.
 
 > [!IMPORTANT]
 > Questa è una sezione obbligatoria: Assistente alla carriera non può essere abilitata senza la verifica della connessione alla pagina LinkedIn.
 
 #### <a name="add-the-linkedin-page"></a>Aggiungere la pagina LinkedIn
   
-1. Accedere all'interfaccia **[Teams di amministrazione.](https://admin.teams.microsoft.com)**
+1. Accedere **[all'interfaccia Teams di amministrazione.](https://admin.teams.microsoft.com)**
 
 2. Selezionare **Teams app Gestisci app**  >  **[Assistente alla carriera](https://admin.teams.microsoft.com/policies/manage-apps)** connessione  >    >  **LinkedIn**.
 
@@ -212,7 +212,7 @@ La configurazione di LinkedIn Assistente alla carriera con i dati degli ex allie
 
 2. Copiare il collegamento di verifica e condividerlo con l'amministratore della pagina LinkedIn dell'istituto di istruzione. Altre informazioni sul ruolo di super amministratore della pagina LinkedIn nella documentazione [di amministrazione della pagina LinkedIn.](https://www.linkedin.com/help/linkedin/answer/102672)
 
-3. L'amministratore della pagina LinkedIn userà il collegamento di verifica univoco Assistente alla carriera alla pagina dell'istituto di istruzione. Per [altre informazioni, vedere Documentazione aggiuntiva sulla](https://www.linkedin.com/help/linkedin/answer/102672) verifica della pagina LinkedIn.
+3. L'amministratore della pagina LinkedIn userà il collegamento di verifica univoco per associare Assistente alla carriera alla pagina dell'istituto di istruzione. Per [altre informazioni, vedere Documentazione aggiuntiva sulla](https://www.linkedin.com/help/linkedin/answer/102672) verifica della pagina LinkedIn.
 
    ![verifica della pagina linkedin nel portale per sviluppatori linkedin.](media/career-coach-linkedin-verification.png)
 
@@ -221,7 +221,7 @@ La configurazione di LinkedIn Assistente alla carriera con i dati degli ex allie
 Il catalogo dei corsi rappresenta i corsi e le classi offerti agli studenti dall'istituto di istruzione.
 
 > [!IMPORTANT]
-> Questa è una sezione obbligatoria: Assistente alla carriera non può essere abilitata senza un catalogo dei corsi.
+> Si tratta di una sezione obbligatoria, Assistente alla carriera non può essere abilitata senza un catalogo dei corsi.
 
 Questi corsi vengono usati all'interno dell'app in due aree:
 
@@ -235,7 +235,7 @@ Per creare il catalogo dei corsi, creare un elenco di tutti i corsi insegnati pr
 
 1. Accedere all'interfaccia **[Teams di amministrazione.](https://admin.teams.microsoft.com)**
 
-1. Selezionare **Teams app Gestisci app** &gt; **[](https://admin.teams.microsoft.com/policies/manage-apps)** &gt; **Assistente alla carriera** &gt; **Impostazioni** &gt; **catalogo corsi.**  
+1. Selezionare **Teams app Gestisci app** &gt; **[Assistente alla carriera](https://admin.teams.microsoft.com/policies/manage-apps)** &gt;  &gt; **Impostazioni** catalogo &gt; **corsi**.  
 
 2. Upload corsi in formato CSV con le colonne obbligatorie: courseId, title e sourceLink. Ogni riga deve includere dati per ognuna delle colonne obbligatorie. _L'inclusione dei campi consigliati migliora l'esperienza degli studenti grazie alla restituzione di risultati di ricerca e identificazione delle competenze migliori._
 
@@ -270,14 +270,14 @@ La tabella seguente mostra gli elementi da includere nel catalogo dei corsi:
 I campi di studio sono sinonimi di importanti aree di interesse, di laurea e di laurea. Questi titoli fanno riferimento agli studenti quando iniziano a usare l'app e iniziano a configurare il proprio profilo personalizzato.
 
 > [!IMPORTANT]
-> Si tratta di una sezione obbligatoria, Assistente alla carriera non può essere abilitata senza un elenco di campi di studio.
+> Questa è una sezione obbligatoria: Assistente alla carriera non può essere abilitata senza un elenco di campi di studio.
 
 #### <a name="add-the-fields-of-study"></a>Aggiungere i campi di studio
 
 1. Accedere all'interfaccia **[Teams di amministrazione.](https://admin.teams.microsoft.com)**
 1. Selezionare **Teams app Gestisci app** &gt; **[](https://admin.teams.microsoft.com/policies/manage-apps)** &gt; **Assistente alla carriera** &gt; **Impostazioni** &gt; **campi di studio**.  
 
-2. Upload di studio in formato CSV.
+2. Upload campo di studio in formato CSV.
 
 3. Selezionare **Invia**.
 
@@ -300,7 +300,7 @@ Assistente alla carriera può essere personalizzato in modo da essere univoco pe
 
 #### <a name="add-customized-experiences"></a>Aggiungere esperienze personalizzate
 
-1. Accedere all'interfaccia **[Teams di amministrazione.](https://admin.teams.microsoft.com)**
+1. Accedere **[all'interfaccia Teams di amministrazione.](https://admin.teams.microsoft.com)**
 
 1. Selezionare **Teams app Gestisci app** &gt; **[Assistente alla carriera](https://admin.teams.microsoft.com/policies/manage-apps)** &gt;   >  **Impostazioni** &gt; **personalizzazione**.
 
@@ -317,11 +317,11 @@ Ora che la Assistente alla carriera è stata configurata per l'organizzazione. S
 Dopo aver completato la configurazione, abilitare l'app per gli studenti e gli utenti con licenza in modo che abbia accesso a Assistente alla carriera.  
   
 > [!IMPORTANT]
-> È necessario disporre delle autorizzazioni di Teams globali o di amministratore.
+> È necessario avere autorizzazioni di amministratore globale o Teams di amministratore.
 
-1. Accedere all'interfaccia **[Teams di amministrazione.](https://admin.teams.microsoft.com)**
+1. Accedere **[all'interfaccia Teams di amministrazione.](https://admin.teams.microsoft.com)**
 
-1. Selezionare **Teams app Gestisci** app &gt; **[](https://admin.teams.microsoft.com/policies/manage-apps)** &gt; **Assistente alla carriera**.
+1. Selezionare **Teams app Gestisci app** &gt; **[](https://admin.teams.microsoft.com/policies/manage-apps)** &gt; **Assistente alla carriera**.
 
 2. Spostare l'interruttore Stato su **Consentito**.  
 
@@ -333,10 +333,10 @@ Dopo aver completato la configurazione, abilitare l'app per gli studenti e gli u
 > [!IMPORTANT]
 > Questo passaggio assicura che i Assistente alla carriera siano configurati correttamente per l'organizzazione e che gli studenti trovino Assistente alla carriera.
 
-1. Accedere all'interfaccia **[Teams di amministrazione.](https://admin.teams.microsoft.com)**
+1. Accedere **[all'interfaccia Teams di amministrazione.](https://admin.teams.microsoft.com)**
 
 2. Selezionare **Teams criteri di** configurazione delle app e selezionare i criteri &gt;  preferiti.
-Se non si è certi dei criteri da [usare,](/microsoftteams/policy-packages-edu) è possibile fare [](/microsoftteams/easy-policy-setup-edu?tabs=students%2Cstudent-settings) riferimento alla documentazione relativa alla gestione dei criteri di Microsoft Teams o usare la Procedura guidata Criteri didattici per configurare un criterio per Microsoft Teams.
+Se non si è certi dei criteri da usare, è possibile fare [](/microsoftteams/easy-policy-setup-edu?tabs=students%2Cstudent-settings) riferimento alla documentazione relativa alla gestione dei criteri di [Microsoft Teams](/microsoftteams/policy-packages-edu) o usare la Procedura guidata Criteri didattici per configurare un criterio per Microsoft Teams.
 
 3. In App installate selezionare **Aggiungi app.**
 
@@ -351,10 +351,10 @@ Se non si è certi dei criteri da [usare,](/microsoftteams/policy-packages-edu) 
 
 L'aggiunta Assistente alla carriera rende l'app più accessibile e visibile per gli studenti.
 
-1. Accedere all'interfaccia **[Teams di amministrazione.](https://admin.teams.microsoft.com)**
+1. Accedere **[all'interfaccia Teams di amministrazione.](https://admin.teams.microsoft.com)**
 
 2. Selezionare **Teams criteri di** configurazione delle app e selezionare i criteri &gt;  preferiti.
-Se non si è certi dei criteri da [usare,](/microsoftteams/policy-packages-edu) è possibile fare [](/microsoftteams/easy-policy-setup-edu?tabs=students%2Cstudent-settings) riferimento alla documentazione relativa alla gestione dei criteri di Microsoft Teams o usare la Procedura guidata Criteri didattici per configurare un criterio per Microsoft Teams.
+Se non si è certi dei criteri da usare, è possibile fare [](/microsoftteams/easy-policy-setup-edu?tabs=students%2Cstudent-settings) riferimento alla documentazione relativa alla gestione dei criteri di [Microsoft Teams](/microsoftteams/policy-packages-edu) o usare la Procedura guidata Criteri didattici per configurare un criterio per Microsoft Teams.
 
 3. In **App aggiunte** scegliere Aggiungi **app.**
 
@@ -370,19 +370,19 @@ Riferimento [Gestire i criteri di configurazione delle app in Microsoft](/micros
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-- Se nell'app Assistente alla carriera viene visualizzato il messaggio "Assistente alla carriera è attualmente in fase di configurazione per l'uso", le sezioni necessarie non __sono state completate.__ Prima di poter __usare Assistente alla carriera,__ è necessario completare le sezioni seguenti: [](#course-catalog)Marchio e [preferenze,](#brand-and-preferences)Connessione [LinkedIn,](#linkedin-connection)Catalogo corsi e [Campi di studio.](#fields-of-study)
+- Se nell'app Assistente alla carriera viene visualizzato "Assistente alla carriera è in fase di configurazione per l'uso presto" nell'app Assistente alla carriera, le sezioni necessarie non __sono state completate.__ Per poter usare __Assistente alla carriera,__ è necessario completare le sezioni seguenti: Marchio [](#course-catalog)e [preferenze,](#brand-and-preferences)Connessione [LinkedIn,](#linkedin-connection)Catalogo corsi e [Campi di studio.](#fields-of-study)
 
 - I cvs per il catalogo dei corsi e il campo di studio hanno formati obbligatori e dimensioni massime di 18 MB. Fare riferimento allo schema [Assistente alla carriera](#course-catalog-document-format-and-schema) del documento del Assistente alla carriera dello [schema](#fields-of-study-document-format-and-schema) del documento di studio per garantire la corretta configurazione.
 
 - Nelle pagine delle impostazioni con i campi obbligatori, se i campi non sono completati, la pagina non verrà inviato. Non viene visualizzato un messaggio di avviso. la pagina semplicemente non verrà inviato.
 
-- Quando si configura il Assistente alla carriera, potrebbe essere visualizzato un banner di errore che indica che non è possibile aggiornare le impostazioni dell'app. Riprova". Ciò è probabilmente dovuto al provisioning del tenant Assistente alla carriera'app, che può richiedere fino a 15 minuti. In questo caso, attendere 15 minuti prima di inviarlo di nuovo.
+- Quando si configura il Assistente alla carriera, potrebbe essere visualizzato un banner di errore che indica che non è possibile aggiornare le impostazioni dell'app. Riprova". Ciò è probabilmente dovuto al provisioning del tenant dell Assistente alla carriera app, che può richiedere fino a 15 minuti. In questo caso, attendere 15 minuti prima di inviarlo di nuovo.
 
 - Se l Assistente alla carriera app non viene visualizzata in Microsoft Teams, le modifiche ai criteri potrebbero non essere state applicate. L'aggiornamento delle modifiche ai criteri può richiedere alcune ore. L Assistente alla carriera app non sarà disponibile in Microsoft Teams fino al completamento delle modifiche.
 
 ## <a name="removing-your-tenant-data"></a>Rimozione dei dati del tenant
 
-I dati del tenant includono informazioni caricate o generate come parte della configurazione dell'applicazione. Per eliminare tutti i dati in un tenant Assistente alla carriera, chiedere all'amministratore globale del tenant di aprire un [ticket](https://edusupport.microsoft.com/support?product_id=career_coach) di supporto che richiede che i dati del tenant siano eliminati definitivamente. Tenere presente che questo processo non è reversibile. Al termine della rimozione dei dati, l'applicazione Assistente alla carriera tornerà allo stato preconfigurato e non personalizzato per tutti gli utenti e un amministratore di Teams dovrà configurare di nuovo l'applicazione per continuare a usarla.
+I dati del tenant includono informazioni caricate o generate come parte della configurazione dell'applicazione. Per eliminare tutti i dati all'interno di un tenant Assistente alla carriera, chiedere all'amministratore globale del tenant di aprire un [ticket](https://edusupport.microsoft.com/support?product_id=career_coach) di supporto che richiede l'eliminazione definitiva dei dati del tenant. Tenere presente che questo processo non è reversibile. Al termine della rimozione dei dati, l'applicazione Assistente alla carriera tornerà allo stato preconfigurato e non personalizzato per tutti gli utenti e un amministratore di Teams dovrà configurare di nuovo l'applicazione per continuare a usarla.
 
 Di seguito viene illustrato il processo di eliminazione:
 
@@ -407,7 +407,7 @@ Le risorse seguenti ti aiuteranno a pianificare l'app Assistente alla carriera a
 
 - [Kit di orientamento virtuale online](https://www.microsoft.com/education/remote-learning/virtual-orientation)
 
-- [Limiti e specifiche dei Teams canali](limits-specifications-teams.md)
+- [Limiti e specifiche di Teams canali](limits-specifications-teams.md)
 
 - [Guida introduttiva alla formazione per gli amministratori per Microsoft Teams](ITAdmin-readiness.md)
 

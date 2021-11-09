@@ -1,6 +1,6 @@
 ---
 title: Telefono gestione dei numeri per la Nuova Zelanda
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: chandra.kilaru, kristen.kutser
@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Nuova Zelanda per Microsoft Teams.
-ms.openlocfilehash: bcc35abd46cd2efd199b95ec5659352eb5832ea3
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 549dc8706c38ee0190fef7f440b194594ea05560
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60774516"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60830800"
 ---
 # <a name="phone-number-management-for-new-zealand"></a>Telefono gestione dei numeri per la Nuova Zelanda
 
@@ -37,7 +37,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.|In Nuova Zelanda è possibile ottenere i numeri di telefono per l'organizzazione usando l'Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per la Nuova Zelanda (v.1.0) (mi-nz)](https://download.microsoft.com/download/4/a/a/4aa04212-a13d-46bf-b09e-1efbcbb2e622/new-phone-number-request-for-new-zealand-(v1.0)-(mi-NZ).pdf). <br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conoscere il cliente, completarlo per intero e contattare [il TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.  |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.|In Nuova Zelanda è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per la Nuova Zelanda (v.1.0) (mi-nz)](https://download.microsoft.com/download/4/a/a/4aa04212-a13d-46bf-b09e-1efbcbb2e622/new-phone-number-request-for-new-zealand-(v1.0)-(mi-NZ).pdf). <br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conoscere il cliente, completarlo per intero e contattare [il TNS Service Desk per istruzioni.](contact-tns-service-desk.md)<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.  |
 |Fai trasferire a noi i numeri di telefono.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Nuova Zelanda (tutti i numeri) (v.1.0) (en-nz)](https://download.microsoft.com/download/e/6/7/e67f46ef-e1cd-4e70-a5cc-f53fd74285aa/letter-of-authorization-(loa)-for-new-zealand-(all-numbers)-(v1.0)-(en-nz).pdf) <br/> <br/>Compilarlo e [contattare il service desk TNS per istruzioni.](contact-tns-service-desk.md) <br/><br>Il trasferimento di numeri può richiedere da una a sei settimane in questo mercato, a seconda della complessità del porto.<br/><br/>Questi numeri non possono essere usati per le conferenze in questo momento.  |
 |Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il service desk TNS per istruzioni](contact-tns-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
 |Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il service desk TNS per istruzioni](contact-tns-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |

@@ -1,6 +1,6 @@
 ---
 title: Scadenza e rinnovo del team in Microsoft Teams
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 audience: Admin
@@ -11,17 +11,17 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni sulla scadenza e il rinnovo del team e su come usare i criteri di scadenza Microsoft 365 di gruppo per pulire automaticamente i team inutilizzati Microsoft Teams.
+description: Informazioni sulla scadenza e il rinnovo del team e su come usare Microsoft 365 criteri di scadenza del gruppo per pulire automaticamente i team inutilizzati Microsoft Teams.
 f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fb56013f411349907f602ff603441c41e6c68368
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 543678baf7604b4c7ea80a4c913ba8713ed841b2
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60758248"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60828439"
 ---
 # <a name="team-expiration-and-renewal-in-microsoft-teams"></a>Scadenza e rinnovo del team in Microsoft Teams
 

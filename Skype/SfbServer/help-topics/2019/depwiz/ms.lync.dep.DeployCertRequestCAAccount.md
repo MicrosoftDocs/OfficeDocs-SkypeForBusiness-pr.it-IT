@@ -2,7 +2,7 @@
 title: Richiesta di certificato Certificate Request (Certificate Authority Account)
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 6251322d-ac36-4760-b467-bcd543af22aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per inviare una richiesta, l'Autorità di certificazione (CA) può richiedere credenziali diverse da quelle attualmente utilizzate dall'utente per connettersi.
-ms.openlocfilehash: f538914f4ca755bd7f7db4ba4e264ce9135da292
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e3c21cf04dbe56534c5b0b7d4eb72d2eaba8c514
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749327"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856203"
 ---
 # <a name="certificate-request-certificate-authority-account"></a>Richiesta di certificato (account autorità di certificazione)
  

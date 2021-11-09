@@ -1,7 +1,7 @@
 ---
 title: Skype Distribuzioni locali a foresta singola del sistema sala
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -12,22 +12,22 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 80da9d71-3dcd-4ca4-8bd1-6d8196823206
 description: Leggere questo argomento per informazioni su come distribuire Skype Room System in un ambiente locale a foresta singola.
-ms.openlocfilehash: 8768ecfa8aba01074bee5315580fde79ba9c3afc
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 0f8ab644efc3d832fd5e201bd49517971ba5ba08
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759148"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60828419"
 ---
 # <a name="skype-room-system-single-forest-on-premises-deployments"></a>Skype Distribuzioni locali a foresta singola del sistema sala
  
 Leggere questo argomento per informazioni su come distribuire Skype Room System in un ambiente locale a foresta singola.
   
-In questa sezione viene fornita una panoramica dei passaggi per il provisioning dell'account Skype Room System in Exchange Server e Skype for Business Server ospitati in una distribuzione locale a foresta singola.
+In questa sezione viene fornita una panoramica dei passaggi per il provisioning dell'account di Skype Room System in Exchange Server e Skype for Business Server ospitati in una distribuzione locale a foresta singola.
   
 ## <a name="single-forest-on-premises-deployments"></a>Distribuzioni locali della singola foresta
 
-Se si dispone già di un account cassetta postale della risorsa per la sala conferenze, è possibile utilizzarlo. In caso contrario, sarà necessario crearne uno nuovo. È possibile utilizzare Exchange Management Shell (PowerShell) o Exchange Management Console per creare un nuovo account cassetta postale delle risorse. È consigliabile utilizzare una nuova cassetta postale (eliminare la cassetta postale precedente e creare di nuovo) per Skype Room System. Assicurarsi di eseguire il backup dei dati della cassetta postale prima di eliminarli ed esportarlo di nuovo nella cassetta postale ri-creata utilizzando il client Outlook (per ulteriori informazioni, vedere Esportare o eseguire il backup di messaggi, calendario, attività e contatti). Per ripristinare le riunioni perse eliminando la cassetta postale, vedere Connessione [o ripristinare una cassetta postale eliminata.](/exchange/connect-or-restore-a-deleted-mailbox-exchange-2013-help) 
+Se si dispone già di un account cassetta postale della risorsa per la sala conferenze, è possibile utilizzarlo. In caso contrario, sarà necessario crearne uno nuovo. È possibile utilizzare Exchange Management Shell (PowerShell) o Exchange Management Console per creare un nuovo account cassetta postale per le risorse. È consigliabile utilizzare una nuova cassetta postale (eliminare la cassetta postale precedente e creare di nuovo) per Skype Room System. Assicurarsi di eseguire il backup dei dati della cassetta postale prima di eliminarli e quindi esportarlo di nuovo nella cassetta postale ri-creata utilizzando il client Outlook (per ulteriori informazioni, vedere Esportare o eseguire il backup di messaggi, calendario, attività e contatti). Per ripristinare le riunioni perse eliminando la cassetta postale, [vedere Connessione o ripristinare una cassetta postale eliminata.](/exchange/connect-or-restore-a-deleted-mailbox-exchange-2013-help) 
   
 Per utilizzare un account cassetta postale delle risorse esistente (ad esempio, LRS-01) eseguire la procedura seguente:
   
@@ -65,7 +65,7 @@ Per utilizzare un account cassetta postale delle risorse esistente (ad esempio, 
    Set-Mailbox -Identity LRS01@contoso.com -MailTipTranslations $Temp.MailTipTranslations
    ```
 
-5. Facoltativo: configurare il testo di accettazione delle riunioni che fornisce agli utenti informazioni Skype for Business Sala riunioni e cosa aspettarsi quando pianificano e aderiscono alle riunioni. 
+5. Facoltativo: configurare il testo di accettazione delle riunioni che fornisce agli utenti informazioni sulle Skype for Business Sala riunioni e su cosa aspettarsi quando pianificano e aderiscono alle riunioni. 
     
    ```powershell
    Set-CalendarProcessing -Identity LRS01 -AddAdditionalResponse $TRUE -AdditionalResponse "This is the Additional Response Text"
@@ -95,7 +95,7 @@ Pertanto, se l'account è disabilitato, è necessario abilitare questo account i
 
 In questa sezione viene fornita una panoramica dei passaggi necessari per abilitare Skype for Business per l'account della sala riunioni, che verrà configurato in Skype Room System. 
   
-Dopo aver creato un account della cassetta postale delle risorse per le sale per conferenze, utilizzare Skype for Business Server Management Shell per abilitare gli account Skype Room System per Skype for Business servizi.
+Dopo aver creato un account della cassetta postale delle risorse per le sale conferenze, utilizzare Skype for Business Server Management Shell per abilitare gli account Skype Room System per Skype for Business servizi.
   
 > [!NOTE]
 > La procedura seguente presuppone che sia stato abilitato l'account Skype Room System in Active Directory. 
@@ -106,7 +106,7 @@ Dopo aver creato un account della cassetta postale delle risorse per le sale per
    Enable-CsMeetingRoom -SipAddress "sip:LRS01@contoso.com" -domaincontroller DC-ND-001.contoso.com -RegistrarPool LYNCPool15.contoso.com -Identity LRS01
    ```
 
-2. Facoltativo: consentire a questo account di effettuare e ricevere chiamate telefoniche PSTN abilitando l'account per VoIP aziendale. VoIP aziendale non è necessario per Skype Room System, ma se non lo si abilita per VoIP aziendale, il client Skype Room System non sarà in grado di fornire la funzionalità di composizione PSTN:
+2. Facoltativo: consentire a questo account di effettuare e ricevere chiamate telefoniche PSTN abilitando l'account per VoIP aziendale. VoIP aziendale non è necessario per Skype Room System, ma se non lo si abilita per VoIP aziendale, il client Skype Room System non sarà in grado di fornire funzionalità di composizione PSTN:
     
    ```powershell
    Set-CsMeetingRoom LRS01 -domaincontroller DC-ND-001.contoso.com -LineURItel: +14255550555;ext=50555"
@@ -114,4 +114,4 @@ Dopo aver creato un account della cassetta postale delle risorse per le sale per
    ```
 
 > [!NOTE]
-> Se si abilita VoIP aziendale per l'account della sala Skype sala riunioni, assicurarsi di configurare un criterio vocale con restrizioni adatto all'organizzazione. Se il Skype for Business Sala riunioni è una risorsa disponibile pubblicamente, chiunque potrebbe usarla per partecipare a una riunione, pianificata o ad hoc. Dopo la partecipazione a una riunione, la persona potrebbe chiamare qualsiasi numero. In Skype for Business Server, la funzionalità di chiamata in uscita dalle conferenze utilizza il criterio vocale dell'utente, in questo caso l'account di sistema sala Skype utilizzato per partecipare alla riunione. Nelle versioni precedenti di Lync Server viene utilizzato il criterio vocale dell'organizzatore. Pertanto, se un utente di una versione precedente di Lync Server pianifica una sala riunioni e invita l'account sala di sistema sala Skype, chiunque può utilizzare il Skype for Business Sala riunioni per partecipare alla riunione e può comporre qualsiasi numero di telefono nazionale/regionale o internazionale, purché l'organizzatore sia autorizzato a comporre tali numeri. 
+> Se si abilita VoIP aziendale per l'account della sala Skype sala riunioni, assicurarsi di configurare un criterio vocale con restrizioni adatto all'organizzazione. Se la Skype for Business Sala riunioni è una risorsa disponibile pubblicamente, chiunque potrebbe usarla per partecipare a una riunione, pianificata o ad hoc. Dopo la partecipazione a una riunione, la persona potrebbe chiamare qualsiasi numero. In Skype for Business Server, la funzionalità di chiamata in uscita dalle conferenze utilizza il criterio vocale dell'utente, in questo caso l'account di sistema sala Skype utilizzato per partecipare alla riunione. Nelle versioni precedenti di Lync Server viene utilizzato il criterio vocale dell'organizzatore. Pertanto, se un utente di una versione precedente di Lync Server pianifica una sala riunioni e invita l'account sala di sistema sala Skype, chiunque può utilizzare il Skype for Business Sala riunioni per partecipare alla riunione e può comporre qualsiasi numero di telefono nazionale/regionale o internazionale, purché l'organizzatore sia autorizzato a comporre tali numeri. 

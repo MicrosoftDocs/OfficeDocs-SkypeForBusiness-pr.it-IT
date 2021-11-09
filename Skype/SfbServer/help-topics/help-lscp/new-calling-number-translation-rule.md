@@ -2,7 +2,7 @@
 title: Nuova regola di conversione per il numero del chiamante
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 2b6493f1-1be5-45b4-841a-09425cb302e1
 description: 'È possibile utilizzare Nuova configurazione trunk: Nuova regola di conversione per il numero del chiamante per creare una nuova regola di conversione. Per informazioni dettagliate sulle regole di conversione, vedere gli argomenti seguenti:'
-ms.openlocfilehash: 92bf8a1b017a39f94a7772e17b1fa274ea9c4705
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 67ada28f4e7eb9962dfc181ed9daae9331b926d3
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60758418"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60827899"
 ---
 # <a name="new-calling-number-translation-rule"></a>Nuova regola di traduzione dei numeri del chiamante
 

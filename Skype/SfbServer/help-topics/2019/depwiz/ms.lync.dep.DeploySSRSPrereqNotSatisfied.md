@@ -2,7 +2,7 @@
 title: SQL Server Reporting Services (prerequisiti non soddisfatti)
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: b6be29df-b882-4ba8-ba40-8062eb3bb14d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Questa pagina verrà visualizzata se nell'infrastruttura non è distribuito alcun Monitoring Server. Questo significa che i requisiti minimi per la distribuzione dei rapporti sui Monitoring Server non sono stati soddisfatti.
-ms.openlocfilehash: 5ed5a84c5ac9b6da5b662f607ba3706d60ca2c97
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: df4dd71b0c66cb8bf2a8303638001e4f09b8e119
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755207"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60843409"
 ---
 # <a name="sql-server-reporting-services-prerequisites-not-satisfied"></a>SQL Server Reporting Services (prerequisiti non soddisfatti)
 

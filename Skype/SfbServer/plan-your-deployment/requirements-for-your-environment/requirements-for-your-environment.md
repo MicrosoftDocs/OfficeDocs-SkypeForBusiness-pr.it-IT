@@ -2,7 +2,7 @@
 title: Requisiti per l'Skype for Business locale
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 8/17/2015
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 306d3397-f305-4919-bdb1-aa7bb7b5c534
 description: "Riepilogo: descrizione degli argomenti relativi ai requisiti di sistema e di rete o di infrastruttura per Skype for Business Server 2015. Se è necessario installare o configurare qualsiasi elemento come prerequisito per l'installazione e la distribuzione Skype for Business Server 2015, sarà qui."
-ms.openlocfilehash: a74b9d19be63769567f710ceb78cba304a53a759
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 0bc44108a256e54a180b14293f37fc15510c97e5
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756503"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836204"
 ---
 # <a name="requirements-for-your-skype-for-business-2015-environment"></a>Requisiti per l'Skype for Business 2015
  

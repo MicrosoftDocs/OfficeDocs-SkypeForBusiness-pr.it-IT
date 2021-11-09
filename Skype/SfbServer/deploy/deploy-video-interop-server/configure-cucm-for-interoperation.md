@@ -2,7 +2,7 @@
 title: Configurare CUCM per l'interoperabilità con Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: eab3d9f6-ec40-49bf-9162-1a7f5a59451f
 description: "Riepilogo: configurare CUCM per l'utilizzo con Skype for Business Server."
-ms.openlocfilehash: 809ad19e89f398c507673ec677b4ce882d341327
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 2e5e2cfc207fd9c4e52f7cd4da553dc756fddb4c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60741322"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60863093"
 ---
 # <a name="configure-cucm-for-interoperation-with-skype-for-business-server"></a>Configurare CUCM per l'interoperabilità con Skype for Business Server
  
@@ -76,9 +76,9 @@ Le impostazioni descritte qui sono solo esempi di come cucm può essere configur
     
 15. In Informazioni dispositivo imposta il nome e la descrizione del dispositivo (probabilmente su qualcosa come SfBVideoInterop_SIPTrunk) e imposta l'elenco dei gruppi di risorse multimediali su un MRGL che contiene le risorse multimediali giuste. 
     
-16. Scorrere ulteriormente verso il basso. Media Termination Point (MTP) non è necessario per le videochiamate, se non è già deselezionato, deselezionalo. Selezionare l'opzione **Esegui in tutti i nodi CM unificati attivi.** Tieni presente che devi aggiungere tutti i nodi CUCM alla Skype for Business Server configurazione.
+16. Scorrere ulteriormente verso il basso. Media Termination Point (MTP) non è necessario per le videochiamate, se non è già deselezionato, deselezionalo. Selezionare l'opzione **Esegui su tutti i nodi CM unificati attivi.** Tieni presente che devi aggiungere tutti i nodi CUCM alla Skype for Business Server configurazione.
     
-17. Scorrere ulteriormente verso il basso. Impostare le opzioni Chiamate in ingresso e Impostazioni parte connessa come illustrato.
+17. Scorrere ulteriormente verso il basso. Impostare le opzioni Chiamate in ingresso e Connessione Impostazioni come illustrato.
     
     |**Parametro**|**Impostazione consigliata**|
     |:-----|:-----|
@@ -131,7 +131,7 @@ Le impostazioni descritte qui sono solo esempi di come cucm può essere configur
     
     |**Parametro**|**Impostazione consigliata**|
     |:-----|:-----|
-    |Area geografica  <br/> |Impostazione predefinita  <br/> |
+    |Area geografica  <br/> |Predefinita  <br/> |
     |Elenco preferenze codec audio  <br/> |Impostazione predefinita di sistema  <br/> |
     |Velocità in bit audio massima  <br/> |64 kbps (G.722, G.711)  <br/> |
     |Velocità in bit sessione massima per le videochiamate  <br/> |200000 kbps  <br/> |

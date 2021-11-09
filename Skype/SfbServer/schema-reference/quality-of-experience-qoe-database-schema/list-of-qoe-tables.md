@@ -2,7 +2,7 @@
 title: Elenco di tabelle QoE
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/13/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 176194d7-d184-4e23-94bb-cb62b4db47f5
 description: Lo schema del database è costituito dalle tabelle seguenti.
-ms.openlocfilehash: 0532d1574bcbbe80a58195d2c14ea6920375153f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7b97746b3f8a490da7fb06d903ca6f7676f2d6b5
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60767294"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60849589"
 ---
 # <a name="list-of-qoe-tables"></a>Elenco di tabelle QoE
  
@@ -34,7 +34,7 @@ Lo schema del database è costituito dalle tabelle seguenti.
 |[Tabella NetworkConnectionDetail](networkconnectiondetail.md) <br/> |Mappe tipi di connessione di rete agli identificatori di connessione di rete utilizzati altrove nel database qualità dell'esperienza.  <br/> |
 |[Tabella PurgeSettings (QoE)](purgesettings-qoe.md) <br/> |Archivia le informazioni che specificano se e quando i record di qualità dell'esperienza non aggiornati verranno eliminati automaticamente dal database QoE.  <br/> |
 |[Tabella TraceRoute](traceroute.md) <br/> |Archivia le informazioni di routing per le chiamate.  <br/> |
-|[Tabella UserAgentDef (QoE)](useragentdef-qoe.md) <br/> |Mappe identificatori agente utente ai nomi descrittivi dell'agente.  <br/> |
+|[Tabella UserAgentDef (QoE)](useragentdef-qoe.md) <br/> |Mappe degli agenti utente ai nomi descrittivi dell'agente.  <br/> |
 |[Tabella VideoMetricsThreshold](videometricsthreshold.md) <br/> |Archivia valori ottimali e accettabili per le metriche di qualità dell'esperienza usate con le videochiamate.  <br/> |
 |[Tabella UserAgent](useragent.md) <br/> |Archivia le stringhe dell'agente utente SIP (Session Initiation Protocol) e i tipi UA utilizzati nelle sessioni audio e video.  <br/> |
 |[Tabella utente](user-0.md) <br/> |Archivia gli URI di utenti, conferenze e telefonici utilizzati nelle sessioni audio e video.  <br/> |
@@ -64,7 +64,7 @@ Lo schema del database è costituito dalle tabelle seguenti.
 |[Tabella session](session.md) <br/> |Archivia le informazioni generali su una sessione audio o audio/video. Una sessione è definita come una finestra di dialogo SIP audio o video tra due endpoint.  <br/> |
 |[Tabella MediaLine](medialine-0.md) <br/> |Archivia le informazioni su ogni linea multimediale in una sessione. Una linea multimediale è una raccolta di uno o più flussi audio e video. In genere, una singola linea multimediale avrà due flussi, audio o video.  <br/> |
 |[Tabella AudioStream](audiostream.md) <br/> |Archivia le metriche di qualità multimediale audio per ogni flusso audio nella linea multimediale.  <br/> |
-|[Tabella AudioSignal](audiosignal.md) <br/> |Archivia le metriche di qualità multimediale audio nella linea multimediale. Sono incluse le metriche di annullamento dell'eco acustico (AEC) e di controllo automatico del guadagno (AGC).  <br/> |
+|[Tabella AudioSignal](audiosignal.md) <br/> |Archivia le metriche di qualità multimediale audio nella linea multimediale. Sono incluse le metriche di annullamento dell'eco acustica (AEC) e di controllo automatico del guadagno (AGC).  <br/> |
 |[Tabella VideoStream](videostream.md) <br/> |Archivia le metriche di qualità multimediale video per ogni flusso audio nella linea multimediale.  <br/> |
 |[Tabella AudioClientEvent](audioclientevent.md) <br/> |Archivia le metriche di qualità multimediale audio raccolte dall'evento client.  <br/> |
 |[Tabella VideoClientEvent](videoclientevent.md) <br/> |Archivia le metriche di qualità multimediale video raccolte dall'evento client.  <br/> |
@@ -74,7 +74,7 @@ Lo schema del database è costituito dalle tabelle seguenti.
 
 |**Tavolo**|**Descrizione**|
 |:-----|:-----|
-|**Tabella ServerSummary** <br/> |Archivia i dati di riepilogo per i server, questi dati vengono utilizzati solo per la creazione di report QoE( Quality of Experience).  <br/> |
+|**Tabella ServerSummary** <br/> |Archivia i dati di riepilogo per i server, questi dati vengono utilizzati solo per i report QoE (Quality of Experience).  <br/> |
 |**Tabella UserSummary** <br/> |Archivia i dati di riepilogo per gli utenti, questi dati vengono utilizzati solo per i report QoE.  <br/> |
 |**Tabella CallTypeSummary** <br/> |Archiviare i dati di riepilogo per i tipi di chiamata, questi dati vengono utilizzati solo per i report QoE.  <br/> |
    

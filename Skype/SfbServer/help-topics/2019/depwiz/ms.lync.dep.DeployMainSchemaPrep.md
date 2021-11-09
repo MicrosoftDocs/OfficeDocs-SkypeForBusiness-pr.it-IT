@@ -2,7 +2,7 @@
 title: Preparare lo schema
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,17 +14,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 337aa234-c5f3-4468-a047-2023848e942c
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per preparare lo schema per Servizi di dominio Active Directory, eseguire il passaggio Preparare lo schema nella Distribuzione guidata Skype for Business Server guidata. Fare clic su Esegui per avviare la preparazione dello schema.
-ms.openlocfilehash: 6eb657bab4f4985c6ea5dd6d75c93f2e42cd6ef0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: Per preparare lo schema per Servizi di dominio Active Directory, eseguire il passaggio Preparare lo schema nella Skype for Business Server guidata. Fare clic su Esegui per avviare la preparazione dello schema.
+ms.openlocfilehash: 88a9ca5f93263b4d8a514db3c987bcd3a63d87a0
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60738623"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60842348"
 ---
 # <a name="prepare-schema"></a>Preparare lo schema
  
-Per preparare lo schema per Servizi di dominio Active Directory, eseguire il passaggio Preparare lo schema nella Distribuzione guidata Skype for Business Server guidata. Fare clic su **Esegui** per avviare la preparazione dello schema. Il passaggio Prepare Schema legge i file di definizione dello schema forniti nella directory \Programmi\Skype for Business Server 2019\Deployment\Setup nel sistema in cui è in esecuzione la Distribuzione guidata. Tali file sono inoltre disponibili nella directory \Support\Schema dei supporti di installazione. Nel corso del passaggio di preparazione dello schema, quest'ultimo verrà esteso e verrà segnalato lo stato del processo. Verrà inoltre notificato il completamento del processo. La schermata di riepilogo consentirà di visualizzare i registri del processo. Esaminare tali registri per accertarsi che la preparazione sia stata completata correttamente.
+Per preparare lo schema per Servizi di dominio Active Directory, eseguire il passaggio Preparare lo schema nella Skype for Business Server guidata. Fare clic su **Esegui** per avviare la preparazione dello schema. Il passaggio Prepare Schema legge i file di definizione dello schema forniti nella directory \Programmi\Skype for Business Server 2019\Deployment\Setup nel sistema in cui è in esecuzione la Distribuzione guidata. Tali file sono inoltre disponibili nella directory \Support\Schema dei supporti di installazione. Nel corso del passaggio di preparazione dello schema, quest'ultimo verrà esteso e verrà segnalato lo stato del processo. Verrà inoltre notificato il completamento del processo. La schermata di riepilogo consentirà di visualizzare i registri del processo. Esaminare tali registri per accertarsi che la preparazione sia stata completata correttamente.
   
 > [!IMPORTANT]
 > Per estendere lo schema, è necessario essere connessi al dominio come membri del gruppo Schema Admins e del gruppo Enterprise Admins. 
@@ -47,6 +47,6 @@ Per eseguire un backup del controller di dominio master schema e un backup compl
 5. Nel caso improbabile di un errore di estensione dello schema, ripristinare lo stato del sistema del controller di dominio e di Active Directory utilizzando il backup dello stato del sistema eseguito in precedenza.
     
 > [!NOTE]
-> Se è necessario esaminare i file di registro creati dalla Distribuzione guidata Skype for Business Server, è possibile trovare i file nel computer in cui è stata eseguita la Distribuzione guidata nella directory Utenti dell'utente di Active Directory che ha eseguito il passaggio. Ad esempio, se l'utente ha eseguito l'accesso come amministratore di dominio nel Contoso.net di dominio, i file di registro si trovano in: C:\Users\Administrator.Contoso\AppData\Local\Temp 
+> Se è necessario esaminare i file di registro creati dalla Distribuzione guidata di Skype for Business Server, è possibile trovare i file nel computer in cui è stata eseguita la Distribuzione guidata nella directory Utenti dell'utente di Active Directory che ha eseguito il passaggio. Ad esempio, se l'utente ha eseguito l'accesso come amministratore di dominio nel Contoso.net di dominio, i file di registro si trovano in: C:\Users\Administrator.Contoso\AppData\Local\Temp 
   
 

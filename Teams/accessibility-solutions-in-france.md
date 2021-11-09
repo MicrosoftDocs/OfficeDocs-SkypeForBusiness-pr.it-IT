@@ -1,7 +1,7 @@
 ---
 title: Soluzioni di accessibilità per Skype for Business Online e Microsoft Teams
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.reviewer: lshook
 ms.topic: article
@@ -23,12 +23,12 @@ ms.custom:
 - seo-marvel-jul2020
 hideEdit: true
 description: Fournir des expériences accessibles à tous est au cœur de la mission de Microsoft, qui consiste à permettre à chaque personne et à chaque organisation de la planète d'accomplir davantage. Microsoft offre un certo nombre de fonctionnalités d'accessibilité pour Skype Entreprise et Microsoft Teams qui s'inscrivent dans son engagement fort en faveur de l'accessibilité et de l'inclusion.
-ms.openlocfilehash: 0a784bff8b59ea607d28c98d46a8c8b495c3a7f1
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7f8b3fb225e04785e3454fdcffa3a7a6a33e8bae
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60770004"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60849569"
 ---
 # <a name="accessibility-solutions-for-skype-for-business-online-and-microsoft-teams-in-france"></a>Soluzioni di accessibilità per Skype for Business Online e Microsoft Teams in Francia
 
@@ -49,13 +49,13 @@ Microsoft Teams fournit des pages d'aide avec des raccourcis clavier et des inst
 
 - Raccourcis clavier pour appeler, envoyer des messages et naviguer dans Microsoft Teams [https://support.office.com/fr-fr/article/raccourcis-clavier-de-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR](https://support.office.com/fr-fr/article/raccourcis-clavier-de-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR)
 
-- Utilisation d'un lecteur d'écran pour créer et modifier des équipes pour les conversations dans Microsoft Teams [https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-cr%C3%A9er-des-%C3%A9quipes-dans-microsoft-teams-fcd5a839-0458-47d2-9688-7cffb66779c5?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR](https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-cr%C3%A9er-des-%C3%A9quipes-dans-microsoft-teams-fcd5a839-0458-47d2-9688-7cffb66779c5?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR)
+- Utilizzo d'un lecteur d'écran pour créer et modifier des équipes pour les conversations dans Microsoft Teams [https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-cr%C3%A9er-des-%C3%A9quipes-dans-microsoft-teams-fcd5a839-0458-47d2-9688-7cffb66779c5?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR](https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-cr%C3%A9er-des-%C3%A9quipes-dans-microsoft-teams-fcd5a839-0458-47d2-9688-7cffb66779c5?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR)
 
 - Inviato di commenti des messages privés ou chatter dans Microsoft Teams à l'aide d'un lecteur d'écran[https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-envoyer-un-message-ou-discuter-en-priv%C3%A9-dans-microsoft-teams-c99901c9-00dc-44d4-8921-4aa120bf298b?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR](https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-envoyer-un-message-ou-discuter-en-priv%C3%A9-dans-microsoft-teams-c99901c9-00dc-44d4-8921-4aa120bf298b?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR)
 
 - Utilisation d'un lecteur d'écran pour trouver et répondre aux alertes dans Microsoft Teams [https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-rechercher-des-alertes-et-y-r%C3%A9pondre-dans-microsoft-teams-8290757e-789d-4e5a-a2ac-9ae4a07d55c2?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR](https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-rechercher-des-alertes-et-y-r%C3%A9pondre-dans-microsoft-teams-8290757e-789d-4e5a-a2ac-9ae4a07d55c2?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR)
 
-Microsoft Teams permet désormais aux utilisateurs de brouiller leur arrière-plan ou d'utiliser une image de fond pendant les réunions, ce qui peut être utile aux personnes malentendantes qui ont du mal à lire sur les lèvres et à celles qui peuvent être facilement distraites par un environnement actif: [ https://support.office.com/fr-fr/article/rendre-votre-arri ère-plan-flou-dans-une-réunion-en-équipe-f77a2381-443a-499d-825e-509a140f4780?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR](https://support.office.com/fr-fr/article/rendre-votre-arrière-plan-flou-dans-une-réunion-en-équipe-f77a2381-443a-499d-825e-509a140f4780?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR).
+Microsoft Teams permet désormais aux utilisateurs de brouiller leur arrière-plan ou d'utiliser une image de fond pendant les réunions, ce qui peut être utile aux personnes malentendantes qui ont du mal à lire sur les lèvres et à celles qui peuvent être facilement distraites par un environnement actif: [ https://support.office.com/fr-fr/article/rendre-votre-arri ère-plan-flou-dans-une-réunion-en -équipe-f77a2381-443a-499d-825e-509a140f4780?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR](https://support.office.com/fr-fr/article/rendre-votre-arrière-plan-flou-dans-une-réunion-en-équipe-f77a2381-443a-499d-825e-509a140f4780?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR).
 Les utilisateurs de Microsoft Teams peuvent gérer les notifications par le biais des paramètres, désactiver entièrement les notifications en activant le mode "Ne pas déranger", et masquer, mettre en sourdine et épingler les discussions, tout cela contribuant à minimiser les distractions et à aider l'utilisateur à se concentrer dans un environnement très actif. La possibilité d'activer la suppression du bruit en temps réel pour réduire le bruit de fond pendant les réunions sera ajoutée.
 
 Microsoft Teams introduit une fonction "lever la main" qui permettra à toute personne participant à une réunion Microsoft Teams d'envoyer un signal visuel indiquant qu'elle a quelque chose à dire, utile à tous les utilisateurs qui souhaitent participer pleinement aux discussions de la réunion, y compris les personnes souffrant de troubles de la parole.

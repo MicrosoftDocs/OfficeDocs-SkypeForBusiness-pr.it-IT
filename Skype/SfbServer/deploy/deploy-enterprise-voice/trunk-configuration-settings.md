@@ -1,8 +1,8 @@
 ---
-title: 'Skype for Business Server: creare una nuova raccolta di impostazioni di configurazione trunk'
+title: Creare una nuova raccolta di impostazioni di configurazione trunk in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,17 +15,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 4ebd710c-38cd-4cff-9a45-df029d424580
-description: 'Riepilogo: informazioni su come creare una nuova raccolta di impostazioni di configurazione trunk tramite il Pannello Skype for Business Server controllo.'
-ms.openlocfilehash: 95eae0c14aad532b3f3f80e01c2acc0918751496
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: 'Riepilogo: informazioni su come creare una nuova raccolta di impostazioni di configurazione trunk tramite il Pannello Skype for Business Server di controllo.'
+ms.openlocfilehash: 2a6db1b82693ce78bd48ff8cc816503026871a09
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755655"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856293"
 ---
-# <a name="skype-for-business-server-create-a-new-collection-of-trunk-configuration-settings"></a>Skype for Business Server: creare una nuova raccolta di impostazioni di configurazione trunk
+# <a name="create-a-new-collection-of-trunk-configuration-settings-in-skype-for-business-server"></a>Creare una nuova raccolta di impostazioni di configurazione trunk in Skype for Business Server
 
-**Riepilogo:** Informazioni su come creare una nuova raccolta di impostazioni di configurazione trunk tramite il Pannello Skype for Business Server controllo.
+**Riepilogo:** Informazioni su come creare una nuova raccolta di impostazioni di configurazione trunk tramite il Pannello Skype for Business Server di controllo.
   
 Le impostazioni di configurazione dei trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (Branch eXchange) di IP-Public o un session border controller (SBC) presso il provider di servizi. Queste impostazioni consentono di specificare quanto segue:
   
@@ -61,9 +61,9 @@ Quando si creano le impostazioni di configurazione dei trunk SIP Skype for Busin
 |Numero chiamato  <br/> |N/D  <br/> |Indica che il numero di telefono da testare è il numero di telefono della persona che riceve la chiamata.  <br/> |
    
 > [!NOTE]
-> I Skype for Business Server CsTrunkConfiguration supportano proprietà aggiuntive non visualizzate Skype for Business Server Pannello di controllo. Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsTrunkConfiguration.](/powershell/module/skype/new-cstrunkconfiguration)
+> I cmdlet Skype for Business Server CsTrunkConfiguration supportano proprietà aggiuntive non visualizzate Skype for Business Server Pannello di controllo. Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsTrunkConfiguration.](/powershell/module/skype/new-cstrunkconfiguration)
   
-### <a name="to-create-new-trunk-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per creare nuove impostazioni di configurazione trunk tramite Skype for Business Server pannello di controllo
+### <a name="to-create-new-trunk-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per creare nuove impostazioni di configurazione trunk tramite il Skype for Business Server pannello di controllo
 
 1. Nel Skype for Business Server di controllo fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
     

@@ -2,7 +2,7 @@
 title: Selezionare una coda di timeout
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 3ced887e-a8f2-4c77-9093-cdf0afc4cb97
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare la finestra di dialogo Seleziona una coda di timeout per selezionare la coda a cui vengono inoltrate le chiamate in caso di timeout.
-ms.openlocfilehash: f6c0390b3ada73bd77a6df716fd3e026c7faa0a4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 20ffa2a370422f8f066fd178bb8f9ab65cac2026
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769464"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60830550"
 ---
 # <a name="select-time-out-queue"></a>Selezionare una coda di timeout
  

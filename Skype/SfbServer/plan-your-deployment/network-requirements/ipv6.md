@@ -2,7 +2,7 @@
 title: Pianificare IPv6 in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 01f77196-38f4-4292-9480-2e2fbd57eabe
 description: 'Riepilogo: implementare IPv6 prima di installare Skype for Business Server.'
-ms.openlocfilehash: 6126cd2211a2df0f0a24672d61cf11ce89ad23c7
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 21fa37d187f32c9b679a49a3b8181b1a5e2732d1
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60770064"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60849749"
 ---
 # <a name="plan-for-ipv6-in-skype-for-business"></a>Pianificare IPv6 in Skype for Business
  
@@ -187,7 +187,7 @@ Se si prevede di configurare Skype for Business Server per IPv6, tenere presenti
     
     È possibile distribuire record DNS IPv6 prima di iniziare a utilizzare IPv6. Se il client o il server non utilizza IPv6, il record non verrà utilizzato come riferimento. Le tecnologie transitorie sceglieranno quale record utilizzare in base alla configurazione e ai criteri della tecnologia.
     
-- Ogni indirizzo IPv6 prevede un ambito. I tre ambiti che è possibile utilizzare per l'indirizzamento IPv6 sono gli indirizzi IPv6 globali (simili agli indirizzi IPv4 pubblici), gli indirizzi locali univoci IPv6 (simili agli intervalli di indirizzi IPv4 privati) e gli indirizzi IPv6 locali dei collegamenti (simili agli indirizzi IP privati automatici in Windows Server per IPv4). Tutti i server di un pool devono disporre di indirizzi IPv6 con lo stesso ambito. 
+- Ogni indirizzo IPv6 prevede un ambito. I tre ambiti che è possibile utilizzare per l'indirizzamento IPv6 sono gli indirizzi globali IPv6 (simili agli indirizzi IPv4 pubblici), gli indirizzi locali univoci IPv6 (simili agli intervalli di indirizzi IPv4 privati) e gli indirizzi IPv6 locali dei collegamenti (simili agli indirizzi IP privati automatici in Windows Server per IPv4). Tutti i server di un pool devono disporre di indirizzi IPv6 con lo stesso ambito. 
     
 > [!IMPORTANT]
 > IPv6 è un argomento complesso e richiede un'attenta pianificazione con il team di rete e il provider Internet per garantire che gli indirizzi assegnati a livello di Windows Server e a livello di Skype for Business Server funzionino come previsto. Vedere i collegamenti alla fine dell'argomento per risorse aggiuntive sull'indirizzamento IPv6 e la pianificazione. 
@@ -195,11 +195,11 @@ Se si prevede di configurare Skype for Business Server per IPv6, tenere presenti
 ## <a name="migration-and-coexistence-considerations-for-ipv6"></a>Considerazioni sulla migrazione e la coesistenza per IPv6
 <a name="migration"> </a>
 
-IP versione 6 (IPv6) non è supportato in Lync Server 2010 o Office Communications Server. A scopo pilota, è possibile testare Lync Server 2010 e Skype for Business Server coesistenza dual stack. È consigliabile aggiornare tutti i pool per un determinato sito centrale a Skype for Business Server prima di abilitare IPv6 (rete dual stack) per uno qualsiasi dei pool. Se è necessario configurare un pool solo per IPv6, è consigliabile configurare un pool solo IPv6 nell'ambiente di prova a fini di test.
+IP versione 6 (IPv6) non è supportato in Lync Server 2010 o Office Communications Server. A scopo pilota, è possibile testare Lync Server 2010 e Skype for Business Server coesistenza a doppio stack. È consigliabile aggiornare tutti i pool per un determinato sito centrale a Skype for Business Server prima di abilitare IPv6 (rete dual stack) per uno qualsiasi dei pool. Se è necessario configurare un pool solo per IPv6, è consigliabile configurare un pool solo IPv6 nell'ambiente di prova a fini di test.
   
 Durante la migrazione e in caso di coesistenza sono supportati gli scenari seguenti:
   
-- Skype for Business Server pool di Lync Server 2013 e Lync Server 2010 in modalità IPv4, coesistenti con Skype for Business Server in modalità dual stack.
+- Skype for Business Server, Lync Server 2013 e Lync Server 2010 in modalità IPv4, coesistono con Skype for Business Server in modalità dual stack.
     
 - Skype for Business Server pool in modalità solo IPv6, se il pool solo IPv6 è in silo.
     

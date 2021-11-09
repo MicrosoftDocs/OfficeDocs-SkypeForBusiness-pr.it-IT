@@ -2,7 +2,7 @@
 title: Visualizzare i criteri di conferenza in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c1c0976e-2bfb-475b-9255-ed6b093d8798
 description: 'Riepilogo: informazioni su come visualizzare i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: cb401abbf6fec1a280099ca30c570338d419c55e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7a7768aaef91fde0914c2f1e693bdcca6a6a74b7
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762474"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836438"
 ---
 # <a name="view-conferencing-policies-in-skype-for-business-server"></a>Visualizzare i criteri di conferenza in Skype for Business Server
  

@@ -2,7 +2,7 @@
 title: Distribuire aree di rete, siti e subnet in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: bf7a3dc4-71a2-4559-a547-d90305d4f904
 description: 'Creare o modificare aree di rete, siti di rete e associare subnet di rete in Skype for Business Server. Tutte queste funzionalità vengono utilizzate per le funzionalità VoIP aziendale avanzate: bypass multimediale, controllo di ammissione di chiamata e routing basato sulla posizione.'
-ms.openlocfilehash: 72c8fcf9bbdeb50df5806a0a8c020fcec4bb0022
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4d726466153f30b7c5fdd3ac478b1b2444838ae6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60738912"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856303"
 ---
 # <a name="deploy-network-regions-sites-and-subnets-in-skype-for-business"></a>Distribuire aree di rete, siti e subnet in Skype for Business
 
@@ -43,7 +43,7 @@ Potrebbe tuttavia essere necessario modificare una definizione di area di rete e
 
 ### <a name="to-create-a-network-region-using-skype-for-business-server-management-shell"></a>Per creare un'area di rete tramite Skype for Business Server Management Shell
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Eseguire il cmdlet New-CsNetworkRegion per creare le aree di rete:
 
@@ -83,7 +83,7 @@ Potrebbe tuttavia essere necessario modificare una definizione di area di rete e
 
 ### <a name="to-modify-a-network-region-using-skype-for-business-server-management-shell"></a>Per modificare un'area di rete tramite Skype for Business Server Management Shell
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Eseguire il cmdlet Set-CsNetworkRegion per modificare un'area di rete esistente:
 
@@ -125,7 +125,7 @@ Se sono già stati creati siti di rete per una di queste funzionalità, non è n
 
 ### <a name="to-create-a-network-site-by-using-skype-for-business-server-management-shell"></a>Per creare un sito di rete tramite Skype for Business Server Management Shell
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Eseguire il cmdlet New-CsNetworkSite per creare i siti di rete:
 
@@ -178,7 +178,7 @@ Se sono già stati creati siti di rete per una di queste funzionalità, non è n
 
 ### <a name="to-modify-a-network-site-by-using-skype-for-business-server-management-shell"></a>Per modificare un sito di rete tramite Skype for Business Server Management Shell
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Eseguire il cmdlet Set-CsNetworkSite per modificare i siti di rete:
 
@@ -226,7 +226,7 @@ Tutti gli indirizzi IP pubblici configurati dei server perimetrali audio/video n
 
 ### <a name="to-associate-a-subnet-with-a-network-site-by-using-skype-for-business-server-management-shell"></a>Per associare una subnet a un sito di rete tramite Skype for Business Server Management Shell
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Eseguire il cmdlet **New-CsNetworkSubnet** per associare una subnet a un sito di rete:
 
@@ -258,7 +258,7 @@ Tutti gli indirizzi IP pubblici configurati dei server perimetrali audio/video n
 
      `172.11.15.0, 31, "EMEA:Subnet in Paris", Paris`
 
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 3. Eseguire il cmdlet seguente per importare **subnet.csv** e quindi archiviarne il contenuto nell'archivio di gestione di Lync Server:
 
@@ -266,7 +266,7 @@ Tutti gli indirizzi IP pubblici configurati dei server perimetrali audio/video n
    import-csv subnet.csv | foreach {New-CsNetworkSubnet -Identity $_.IPAddress -MaskBits $_.mask -Description $_.description -NetworkSiteID $_.NetworkSiteID}
    ```
 
-### <a name="to-associate-a-subnet-with-a-network-site-by-using-skype-for-business-server-control-panel"></a>Per associare una subnet a un sito di rete tramite il Skype for Business Server di controllo
+### <a name="to-associate-a-subnet-with-a-network-site-by-using-skype-for-business-server-control-panel"></a>Per associare una subnet a un sito di rete tramite Skype for Business Server pannello di controllo
 
 1. Aprire Skype for Business Server Pannello di controllo.
 

@@ -2,7 +2,7 @@
 title: Aggiungere opzioni per il server perimetrale
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 2405f227-4297-40d0-a117-55427a9e4052
 description: "Selezionare tutte le funzionalità che si desidera abilitare per il pool Edge Server. Per impostazione predefinita, il pool di server perimetrali supporta gli utenti remoti dell'organizzazione che a cui accede dall'esterno del firewall utilizzando una rete privata virtuale (VPN). Sono disponibili le opzioni seguenti per le funzionalità del pool Edge Server:"
-ms.openlocfilehash: 9f7df9ca951274bf7fea309c74577c6c79bd9822
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e9da9c45335cf023dc7da99656fe8a266164efc9
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762724"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60862623"
 ---
 # <a name="add-edge-server-options"></a>Aggiungere opzioni Edge Server
 

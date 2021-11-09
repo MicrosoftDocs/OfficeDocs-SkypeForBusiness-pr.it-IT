@@ -2,7 +2,7 @@
 title: Installare gli strumenti di amministrazione in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 7/14/2018
 audience: ITPro
@@ -16,17 +16,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 52ee7da4-59ba-499a-a105-d93fa9941334
-description: "Riepilogo: informazioni su come installare gli strumenti di amministrazione necessari per un'installazione di Skype for Business Server. Scarica una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: d2f80627aceee47559a06ab604e1cc8827d310b8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: "Riepilogo: informazioni su come installare gli strumenti di amministrazione necessari per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: 686b0af861638f446fc490f1d99489d4f4747a0b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753249"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60849419"
 ---
 # <a name="install-administrative-tools-in-skype-for-business-server"></a>Installare gli strumenti di amministrazione in Skype for Business Server
  
-**Riepilogo:** Informazioni su come installare gli strumenti di amministrazione necessari per un'installazione di Skype for Business Server. Scarica una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
+**Riepilogo:** Informazioni su come installare gli strumenti di amministrazione necessari per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
   
 Gli strumenti di amministrazione includono Generatore di topologie e il Pannello di controllo. Gli strumenti di amministrazione devono essere installati in almeno un server della topologia o in una workstation di gestione a 64 bit che esegue una versione del sistema operativo Windows supportata per Skype for Business Server. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. L'installazione degli strumenti di amministrazione è il passaggio 3 di 8.
   
@@ -63,7 +63,7 @@ Guarda la procedura video per **Installare gli strumenti di amministrazione**:
     
    - **Skype for Business Server Management Shell** Programma di PowerShell preconfigurato che consente l'amministrazione di Skype for Business Server.
     
-     Al termine dell'installazione dei componenti di base, verrà avviata automaticamente Skype for Business Server distribuzione guidata, come illustrato nella figura. 
+     Una volta completata l'installazione dei componenti di base, la Skype for Business Server guidata verrà avviata automaticamente, come illustrato nella figura. 
     
      ![Skype for Business Server Distribuzione guidata.](../../media/310c3437-83f9-48fa-a1e1-9fd09009fe31.png)
   
@@ -75,7 +75,7 @@ Guarda la procedura video per **Installare gli strumenti di amministrazione**:
     
     ![Skype for Business Server Strumenti di amministrazione.](../../media/760873dd-9c87-4efb-bf98-7162d876fd18.png)
   
-   - **Skype for Business Server Generatore di topologie** Programma utilizzato per creare, distribuire e gestire topologie.
+   - **Skype for Business Server generatore di topologie** Programma utilizzato per creare, distribuire e gestire topologie.
     
    - **Skype for Business Server pannello di controllo** Programma utilizzato per amministrare l'installazione.
     

@@ -2,7 +2,7 @@
 title: Creare o modificare una coda in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,17 +15,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: b9d6366a-839f-4651-a01d-9254546cadeb
-description: Creare o modificare una coda di Response Group in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 7cc079b458f4aae2748c212dd5c0bcf710142716
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: Creare o modificare una coda di Response Group, in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: 6a4eb09e144bd7381ababdf37a0905c4ea9bac06
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765904"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60842428"
 ---
 # <a name="create-or-modify-a-queue-in-skype-for-business"></a>Creare o modificare una coda in Skype for Business
  
-Creare o modificare una coda di Response Group in Skype for Business Server VoIP aziendale.
+Creare o modificare una coda di Response Group, in Skype for Business Server VoIP aziendale.
   
 Le code contengono i chiamanti fino a quando un agente non risponde alla chiamata. Quando l'applicazione Response Group cerca un agente disponibile, cerca i gruppi di agenti nell'ordine in cui sono elencati. È possibile selezionare i gruppi di agenti assegnati alla coda e specificare il comportamento di quest'ultima, ad esempio limitando il numero di chiamate che possono essere contenute nella coda e per quanto tempo una chiamata può restare in attesa che un agente risponda.
   
@@ -38,7 +38,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     > [!NOTE]
     > Se si è uno dei responsabili di Response Group delegati per un flusso di lavoro gestito, è possibile creare o modificare le code di Response Group e assegnarle ai flussi di lavoro gestiti personalmente. 
   
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.  
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Response Group** e quindi su **Coda**.
     

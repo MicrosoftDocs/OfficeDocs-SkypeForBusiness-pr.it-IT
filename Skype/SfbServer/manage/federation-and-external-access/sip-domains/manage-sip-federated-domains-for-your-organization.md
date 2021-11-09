@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ552454(v=OCS.15)
 ms:contentKeyID: 48679565
 mtps_version: v=OCS.15
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Informazioni su come gestire e configurare i domini SIP con cui è possibile eseguire la federazione,
-ms.openlocfilehash: 455cac695ead7f073269fe3df0e70ea5b26ccb0e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b50da7b95bab938a3b5026ce859f423f8a2718a9
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60743542"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836358"
 ---
 # <a name="manage-sip-federated-domains-for-your-organization-in-skype-for-business-server"></a>Gestire i domini federati SIP per l'organizzazione in Skype for Business Server
 
@@ -41,7 +41,7 @@ Se è stato configurato il supporto per i partner federati, è possibile specifi
 ### <a name="to-add-an-external-domain-to-the-list-of-allowed-domains"></a>Per aggiungere un dominio esterno all'elenco dei domini consentiti
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 3.  Nella barra di spostamento sinistra fare clic su **Accesso utente esterno** e quindi su **Domini federati**.
 4.  Nella pagina **Domini federati** fare clic su **Nuovo** e quindi su **Dominio consentito**.
 5.  In **Nuovi domini federati** eseguire le operazioni seguenti:
@@ -71,7 +71,7 @@ Impedire a uno o più domini esterni di connettersi all'organizzazione. A tale s
 ### <a name="to-add-an-external-domain-to-the-list-of-blocked-domains"></a>Per aggiungere un dominio esterno all'elenco dei domini bloccati
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 3.  Nella barra di spostamento sinistra fare clic su **Accesso utente esterno**.
 4.  Fare clic su **Domini federati**, su **Nuovo** e quindi su **Dominio bloccato**.
 5.  In **Nuovi domini federati** eseguire le operazioni seguenti:

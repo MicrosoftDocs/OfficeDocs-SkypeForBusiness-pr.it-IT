@@ -1,6 +1,6 @@
 ---
 title: Monitorare l'utilizzo e il feedback in Microsoft Teams
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 03/20/2019
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dbb08816dddb29694c6983cd9172b3be8d04ed6d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 577d6ca4085b6e985d5fccde436ea5f56048d1fd
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777526"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856393"
 ---
 # <a name="monitor-usage-and-feedback-in-microsoft-teams"></a>Monitorare l'utilizzo e il feedback in Microsoft Teams
 È importante sapere in che modo gli utenti usano Teams e com'è la loro esperienza con Teams. I report sull'utilizzo consentono di comprendere meglio i modelli di utilizzo e, insieme al feedback degli utenti, forniscono informazioni approfondite utili per l'implementazione su scala più ampia e per stabilire come assegnare la priorità alle attività di formazione e comunicazione.

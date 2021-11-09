@@ -2,7 +2,7 @@
 title: Come configurare le impostazioni e gli utenti di test del nodo Watcher
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/13/2018
 audience: ITPro
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ab2e0d93-cf52-4a4e-b5a4-fd545df7a1a9
 description: Come configurare gli account utente di test e le impostazioni del nodo Watcher per Skype for Business Server sintetiche.
-ms.openlocfilehash: d80e939132c609f9ed6f505a4f759f3fc2c46e07
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e21842550da1a5a96c96cef5ac7e8c728777799b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759648"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60849759"
 ---
 # <a name="how-to-configure-watcher-node-test-users-and-settings"></a>Come configurare le impostazioni e gli utenti di test del nodo Watcher
  
@@ -36,7 +36,7 @@ Dopo avere configurato il computer che fungerà da nodo Watcher, è necessario e
 
 Gli account di test non devono rappresentare persone effettive, ma devono essere account di Active Directory validi. Inoltre, questi account devono essere abilitati per Skype for Business Server, devono avere indirizzi SIP validi e devono essere abilitati per VoIP aziendale (per utilizzare la transazione sintetica Test-CsPstnPeerToPeerCall). 
   
-Se si utilizza il metodo di autenticazione TrustedServer, è necessario assicurarsi che tali account esistano e configurarli come specificato. Assegnare almeno due utenti di test per ogni pool che si desidera testare. Se si utilizza il metodo di autenticazione Negotiate, è necessario utilizzare anche il cmdlet Set-CsTestUserCredential e Skype for Business Server Management Shell per consentire a questi account di test di funzionare con le transazioni sintetiche. A tale scopo, eseguire un comando simile al seguente (questi comandi presuppongono che i due account utente di Active Directory siano stati creati e che questi account siano abilitati per Skype for Business Server):
+Se si utilizza il metodo di autenticazione TrustedServer, è necessario assicurarsi che tali account esistano e configurarli come specificato. Assegnare almeno due utenti di test per ogni pool che si desidera testare. Se si utilizza il metodo di autenticazione Negotiate, è necessario utilizzare anche il cmdlet Set-CsTestUserCredential e Skype for Business Server Management Shell per consentire l'utilizzo di questi account di test con le transazioni sintetiche. A tale scopo, eseguire un comando simile al seguente (questi comandi presuppongono che i due account utente di Active Directory siano stati creati e che questi account siano abilitati per Skype for Business Server):
   
 ```PowerShell
 Set-CsTestUserCredential -SipAddress "sip:watcher1@litwareinc.com" -UserName "litwareinc\watcher1" -Password "P@ssw0rd"
@@ -259,7 +259,7 @@ Per impostazione predefinita, i nodi Watcher utilizzano gli URL Web esterni di u
 Set-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com" -UseInternalWebUrls $True
 ```
 
-Se si reimposta questa proprietà sul valore predefinito False ($False), il watcher utilizzerà di nuovo gli URL esterni:
+Se si reimposta questa proprietà sul valore predefinito False ($False) il watcher utilizzerà di nuovo gli URL esterni:
   
 ```PowerShell
 Set-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com" -UseInternalWebUrls $False
@@ -272,7 +272,7 @@ La maggior parte delle transazioni sintetiche può essere eseguita in un nodo Wa
   
 ### <a name="data-conferencing-synthetic-transaction"></a>Transazione sintetica per conferenze dati
 
-Se il computer del nodo Watcher si trova all'esterno della rete perimetrale, probabilmente non sarà possibile eseguire la transazione sintetica per conferenze dati a meno che non si disabiliti innanzitutto le impostazioni proxy del browser Internet Windows Internet Explorer® per l'account Servizio di rete completando la procedura seguente:
+Se il computer del nodo Watcher si trova all'esterno della rete perimetrale, probabilmente non sarà possibile eseguire la transazione sintetica di conferenza dati a meno che non si disabilitino innanzitutto le impostazioni proxy del browser Internet Windows Internet Explorer® per l'account Servizio di rete completando la procedura seguente:
   
 1. Nel computer del nodo Watcher fare clic su **Start**, scegliere **Tutti i programmi**, **Accessori**, quindi fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.
     
@@ -335,7 +335,7 @@ Per eseguire questa transazione sintetica, è necessario configurare:
     
 ### <a name="unified-contact-store-synthetic-transaction"></a>Transazione sintetica archivio contatti unificato
 
-La transazione sintetica dell'archivio contatti unificato verifica la possibilità Skype for Business Server recuperare i contatti per conto di un utente da Exchange.
+La transazione sintetica dell'archivio contatti unificato verifica la capacità Skype for Business Server recuperare i contatti per conto di un utente da Exchange.
   
 Per utilizzare questa transazione sintetica, devono essere soddisfatte le condizioni seguenti:
   
@@ -343,13 +343,13 @@ Per utilizzare questa transazione sintetica, devono essere soddisfatte le condiz
     
 - Gli utenti di test devono disporre di una cassetta Exchange valida.
     
-Dopo aver soddisfatto queste condizioni, è possibile eseguire il cmdlet Windows PowerShell seguente per eseguire la migrazione degli elenchi di contatti degli utenti di test a Exchange:
+Dopo aver soddisfatto queste condizioni, è possibile eseguire il cmdlet Windows PowerShell seguente per eseguire la migrazione degli elenchi contatti degli utenti di test a Exchange:
   
 ```PowerShell
 Test-CsUnifiedContactStore -TargetFqdn pool0.contoso.com -UserSipAddress sip:testUser1@contoso.com -RegistrarPort 5061 -Authentication TrustedServer -Setup
 ```
 
-La migrazione degli elenchi di contatti degli utenti di test a Exchange potrebbe richiedere del tempo. Per monitorare lo stato della migrazione, è possibile eseguire la stessa riga di comando senza il flag -Setup:
+La migrazione degli elenchi di contatti degli utenti di test a Exchange. Per monitorare lo stato della migrazione, è possibile eseguire la stessa riga di comando senza il flag -Setup:
   
 ```PowerShell
 Test-CsUnifiedContactStore -TargetFqdn pool0.contoso.com -UserSipAddress sip:testUser1@contoso.com -RegistrarPort 5061 -Authentication TrustedServer

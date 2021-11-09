@@ -2,7 +2,7 @@
 title: Tabella FocusJoinsAndLeaves Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 7/15/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: e6f0212c-67e9-4061-8720-d0296e855991
 description: Ogni record in questa tabella contiene le informazioni di registrazione dettagli chiamata relative all'accesso di un utente e lasciare le informazioni per una conferenza. Ogni conferenza è rappresentata in questa tabella da un record per ogni volta che un utente partecipa e lascia la conferenza.
-ms.openlocfilehash: ca5ba1776478566c57d8e5992b86db2dd300613b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f48c36e4a6d12150594c7e5c0bfb44046b6804cf
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777786"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60828579"
 ---
 # <a name="focusjoinsandleaves-table-in-skype-for-business-server-2015"></a>Tabella FocusJoinsAndLeaves Skype for Business Server 2015
  
@@ -36,7 +36,7 @@ Ogni record in questa tabella contiene le informazioni di registrazione dettagli
 |**UserRole** <br/> |int  <br/> | <br/> |Ruolo di questo utente nella conferenza, ad esempio Relatore o Partecipante.  <br/> |
 |**UserJoinTime** <br/> |datetime  <br/> | <br/> |Ora in cui l'utente partecipa alla conferenza.  <br/> |
 |**UserLeaveTime** <br/> |datetime  <br/> | <br/> |Ora in cui l'utente lascia la conferenza.  <br/> |
-|**ClientVerId** <br/> |int  <br/> |Foreign  <br/> |Versione del software client dell'utente, a cui si fa riferimento alla [tabella ClientVersions in Skype for Business Server 2015.](clientversions.md)  <br/> |
+|**ClientVerId** <br/> |int  <br/> |Foreign  <br/> |Versione del software client dell'utente, a cui si fa riferimento alla [tabella ClientVersions in Skype for Business Server 2015](clientversions.md).  <br/> |
 |**UserEndpointId** <br/> |uniqueIdentifier  <br/> ||Identificatore univoco globale (GUID) dell'endpoint utilizzato nella conferenza.  <br/> Questo campo è stato introdotto in Microsoft Lync Server 2013.  <br/> |
 |**LastModifiedTime** <br/> |Datetime  <br/> ||Per uso interno del servizio di monitoraggio.  <br/> Questo campo è stato introdotto Skype for Business Server 2015.  <br/> |
    

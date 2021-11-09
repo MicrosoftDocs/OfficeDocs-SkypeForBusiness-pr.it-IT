@@ -2,7 +2,7 @@
 title: Tabella Tenant
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c1b070c1-2c59-4ca9-910b-43f673f97fda
 description: La tabella Tenants è una tabella di supporto in cui viene archiviato un elenco dei diversi tenant. Ogni record della tabella rappresenta un tenant.
-ms.openlocfilehash: 6cb4c5edbf2751e06012628be48690c46592ca9a
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 37387fe3bbb4bae7b09a0898ee65373f5342c488
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759408"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60863333"
 ---
 # <a name="tenants-table"></a>Tabella Tenant
  
@@ -30,6 +30,6 @@ La tabella Tenants è una tabella di supporto in cui viene archiviato un elenco 
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**TenantId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica questo ID tenant.  <br/> |
-|**TenantKey** <br/> |nvarchar(256)  <br/> || Valori consentiti: <br/>  00000000-0000-0000-0000-000000000000 - Enterprise <br/>  00000000-0000-0000-0000-000000000001 - Federato <br/>  00000000-0000-0000-0000-000000000002 - Anonimo <br/>  00000000-0000-0000-0000-000000000003 - Connettività per messaggistica istantanea pubblica <br/> |
+|**TenantKey** <br/> |nvarchar(256)  <br/> || Valori consentiti: <br/>  000000000-0000-0000-0000-000000000000 - Enterprise <br/>  00000000-0000-0000-0000-000000000001 - Federato <br/>  00000000-0000-0000-0000-000000000002 - Anonimo <br/>  00000000-0000-0000-0000-000000000003 - Connettività per messaggistica istantanea pubblica <br/> |
    
 

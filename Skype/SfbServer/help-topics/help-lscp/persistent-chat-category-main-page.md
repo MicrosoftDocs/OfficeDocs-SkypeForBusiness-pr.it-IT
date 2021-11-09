@@ -2,7 +2,7 @@
 title: Pagina principale della categoria Persistent Chat
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: b71c6e6f-681c-4230-954d-3e95ab64ca00
 description: È possibile utilizzare la sezione Categoria della pagina Persistent Chat per configurare le categorie. Una categoria di chat persistente è una struttura logica per l'organizzazione delle chat room. Una categoria definisce un insieme predefinito di elenchi di controllo di accesso per il controllo degli utenti e dei gruppi di utenti che possono creare chat room o prendervi parte. Le categorie possono essere usate per applicare gli ethical wall tra le varie suddivisioni all'interno delle organizzazioni.
-ms.openlocfilehash: dd03180802cc8844f2b0a5d43c35f9d78a48bb32
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: fbbfb0185b463a6f63bb9016b77e4539a003505e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60768954"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836578"
 ---
 # <a name="persistent-chat-category-main-page"></a>Pagina principale della categoria di Chat persistente
  
@@ -44,7 +44,7 @@ Nella pagina **Categoria** è possibile eseguire le attività seguenti:
 
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Dal menu **Start** seleziona il pannello Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore. .
+2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore. .
     
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Categoria**.
     

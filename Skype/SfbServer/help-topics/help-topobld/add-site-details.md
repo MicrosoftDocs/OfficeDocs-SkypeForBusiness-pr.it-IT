@@ -2,7 +2,7 @@
 title: Aggiungere i dettagli del sito
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: c34def73-c5a1-4e89-80c2-f2c6cd654924
 description: È possibile specificare i dettagli sulla posizione del sito, come la città, la provincia o il codice di avviamento postale. Tutti questi dettagli che riguardano la posizione sono facoltativi.
-ms.openlocfilehash: 4259cb2022a54e4ef48063ae5cb0807b116b47fe
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 9c02a7ebf132515eece16ada1a6632984f8c814b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60768165"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60862573"
 ---
 # <a name="add-site-details"></a>Aggiungere i dettagli del sito
  

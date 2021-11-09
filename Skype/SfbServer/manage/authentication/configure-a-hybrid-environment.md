@@ -2,7 +2,7 @@
 title: Configurare l'autenticazione da server a server per un Skype for Business Server ibrido
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 700639ec-5264-4449-a8a6-d7386fad8719
 description: "Riepilogo: configurare l'autenticazione da server a server per un Skype for Business Server ibrido."
-ms.openlocfilehash: fcec1e982af0c5ad778a83fe6af9b58fbd44c7e4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 617c388dc4c4120beb457e4e2c90246e06c76d6d
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60746072"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60830930"
 ---
 # <a name="configure-server-to-server-authentication-for-a-skype-for-business-server-hybrid-environment"></a>Configurare l'autenticazione da server a server per un Skype for Business Server ibrido.
 
@@ -75,7 +75,7 @@ $TenantID = (Get-CsTenant -Filter {DisplayName -eq "Fabrikam.com"}).TenantId
 Per eseguire questo script, è necessario aver installato Skype for Business PowerShell online e connettersi al tenant con questo modulo. Se non sono stati installati questi cmdlet, lo script avrà esito negativo perché il cmdlet Get-CsTenant non sarà disponibile. Al termine dello script, è necessario configurare una relazione di trust tra Skype for Business Server e il server di autorizzazione e una seconda relazione di trust tra Exchange 2013/2016 e il server di autorizzazione. È possibile farlo soltanto attraverso i cmdlet di Microsoft Online Services.
 
 > [!NOTE]
-> Se i cmdlet di Microsoft Online Services non sono stati installati, sarà necessario installarlo dal repository di PowerShell con il cmdlet `install-module MSOnline` . Informazioni dettagliate per l'installazione e l'Microsoft Online Services modulo sono disponibili nel Microsoft 365 web. Queste istruzioni illustrano anche come configurare single sign-on, federazione e sincronizzazione tra Microsoft 365 o Office 365 e Active Directory. 
+> Se i cmdlet di Microsoft Online Services non sono stati installati, sarà necessario installarlo dal repository powershell con il cmdlet `install-module MSOnline` . Informazioni dettagliate per l'installazione e l'Microsoft Online Services modulo sono disponibili nel Microsoft 365 web. Queste istruzioni illustrano anche come configurare single sign-on, federazione e sincronizzazione tra Microsoft 365 o Office 365 e Active Directory. 
 
 
 

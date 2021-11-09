@@ -1,13 +1,13 @@
 ---
 title: PowerShell di aggiornamento di base| Microsoft Teams| Concedere i criteri di interoperabilità per l'aggiornamento
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.topic: article
 ms.service: msteams
 audience: admin
 ms.reviewer: landerl
-description: Informazioni su un'interruzione dell'aggiornamento a Microsoft Teams se l'interfaccia di amministrazione non è stata accesa nel tenant.
+description: Informazioni su un stopgap per l'aggiornamento a Microsoft Teams se l'interfaccia di amministrazione non è stata accesa nel tenant.
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a281a835240db1ee61959e468eb868e833878f16
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 1f6fc4ade75e7ee954104fe723751b5ef6d4ccca
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762944"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60830750"
 ---
 # <a name="upgrading-your-users-from-skype-for-business-online-to-microsoft-teams"></a>Aggiornamento degli utenti da Skype for Business Online a Microsoft Teams
 
@@ -34,7 +34,7 @@ ms.locfileid: "60762944"
 
 Gli aspetti tecnici della migrazione dell'aggiornamento implicano la notifica agli utenti che Skype for Business verrà eseguito l'aggiornamento a Teams e quindi spostarli in una modalità **Teams solo** versione. Questa procedura può essere eseguita tramite una sessione Skype for Business remota Windows PowerShell o tramite l'Microsoft Teams di amministrazione.
 
-Stiamo attivamente implementazione degli strumenti [](manage-teams-skypeforbusiness-admin-center.md)di aggiornamento nell'interfaccia di amministrazione Microsoft Teams e dovrebbe essere disponibile a breve nel tenant. Non appena sarà disponibile, è possibile trovare informazioni sulla migrazione degli utenti in Impostazione [delle impostazioni di coesistenza e aggiornamento.](./setting-your-coexistence-and-upgrade-settings.md)
+Stiamo implementazione attiva degli strumenti [](manage-teams-skypeforbusiness-admin-center.md)di aggiornamento nell'interfaccia di amministrazione Microsoft Teams e dovrebbe essere disponibile a breve nel tenant. Non appena sarà disponibile, è possibile trovare informazioni sulla migrazione degli utenti in Impostazione [delle impostazioni di coesistenza e aggiornamento.](./setting-your-coexistence-and-upgrade-settings.md)
 
 Se si è pronti per l'aggiornamento, è possibile usare i [comandi di PowerShell](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) elencati nella tabella seguente.
 

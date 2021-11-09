@@ -2,7 +2,7 @@
 title: Tabella ErrorReport in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 7/15/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: ae0287b4-e8ca-4f8c-84ef-502897dcaa2a
 description: Nella tabella ErrorReport sono archiviate informazioni sugli errori che si sono verificati. Ogni record corrisponde a un'occorrenza di un errore. Gli errori vengono acquisiti dall'agente registrazione dettagli chiamata in esecuzione nel Front End Server o inviati dal client.
-ms.openlocfilehash: fd74743ed0b9dcd2fb9bb4cfa651f840528cb58c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 3047ede92ec248f612249a27b7c04fc3c9f046c1
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745772"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60849639"
 ---
 # <a name="errorreport-table-in-skype-for-business-server-2015"></a>Tabella ErrorReport in Skype for Business Server 2015
  
@@ -35,7 +35,7 @@ Nella tabella ErrorReport sono archiviate informazioni sugli errori che si sono 
 |**SessionIdTime** <br/> |datetime  <br/> |Foreign  <br/> |Valore utilizzato insieme a **SessionIdSeq** per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) <br/> |
 |**SessionIdSeq** <br/> |int  <br/> |Foreign  <br/> |Numero ID per identificare la sessione. Valore utilizzato insieme a **SessionIdTime** per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) <br/> |
 |**SourceId** <br/> |int  <br/> |Foreign  <br/> |Server che ha inviato la segnalazione errori (se il report viene inviato da un componente server). Per ulteriori [informazioni, vedere](servers.md) la tabella Servers. <br/> Questo campo è stato introdotto in Microsoft Lync Server 2013.  <br/> |
-|**ApplicationId** <br/> |int  <br/> |Foreign  <br/> |Server che ha inviato la segnalazione errori (se il report viene inviato da un componente server). Per ulteriori informazioni, vedere la tabella [Application Skype for Business Server 2015.](application.md) <br/> Questo campo è stato introdotto in Microsoft Lync Server 2013.  <br/> |
+|**ApplicationId** <br/> |int  <br/> |Foreign  <br/> |Server che ha inviato la segnalazione errori (se il report viene inviato da un componente server). Per ulteriori [informazioni, vedere la tabella Application Skype for Business Server 2015.](application.md) <br/> Questo campo è stato introdotto in Microsoft Lync Server 2013.  <br/> |
 |**MsDiagHeader** <br/> |image  <br/> | <br/> |Ulteriori informazioni sull'errore.  <br/> Questi dati possono essere convertiti in formato testo utilizzando la sintassi seguente:  <br/>  `cast(cast(Detail as varbinary(max)) as varchar(max))` <br/> |
 |**ClientVersionId** <br/> |int  <br/> |Foreign  <br/> |Versione client dell'endpoint che invia la segnalazione errori. Per ulteriori informazioni, vedere la tabella [ClientVersions Skype for Business Server 2015.](clientversions.md) <br/> |
 |**IsCapturedByServer** <br/> |bit  <br/> ||È la segnalazione errori acquisita dall'agente di registrazione dei dati in esecuzione sul server front-end o inviata dal client.  <br/> |

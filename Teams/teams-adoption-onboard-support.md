@@ -1,6 +1,6 @@
 ---
-title: Supporto onboard per Microsoft Teams
-author: cichur
+title: Supporto a bordo per Microsoft Teams
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 11/01/2018
@@ -21,16 +21,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a0663712bb676519019785d3639fc3712d3f03d0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 54e4696e1f50f16e9c98fd6543e8a4ca2bb021a1
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60771731"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60849489"
 ---
-# <a name="onboard-support-for-microsoft-teams"></a>Supporto onboard per Microsoft Teams
+# <a name="onboard-support-for-microsoft-teams"></a>Supporto a bordo per Microsoft Teams
 
-Per assicurarsi che i team di primi utenti e campioni avranno il supporto appropriato quando inizieranno a usare Teams, incontrare il personale di supporto ed esaminare le funzionalità di Teams. I membri chiave dell'organizzazione di supporto potrebbero voler partecipare al programma di adozione iniziale. Incoraggiare l'uso di Teams nei propri scenari. È possibile eseguire l'onboarding di base del prodotto usando le risorse di formazione online.  
+Per assicurarsi che i team di primi utenti e campioni avranno il supporto appropriato quando inizieranno a usare Teams, incontra il personale di supporto e rivedi le funzionalità di Teams. I membri chiave dell'organizzazione di supporto potrebbero voler partecipare al programma di adozione iniziale. Incoraggiare l'uso di Teams nei propri scenari. È possibile eseguire l'onboarding di base del prodotto usando le risorse di formazione online.  
 
 - [Fondazioni - Componenti di base di Microsoft Teams](https://youtu.be/V6B4KraD-FM)
 - [Risoluzione dei Teams](https://youtu.be/0KNh9KNpXcA)

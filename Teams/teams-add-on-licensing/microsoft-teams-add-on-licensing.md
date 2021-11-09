@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams licenze per i componenti aggiuntivi
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.reviewer: mikedav
 ms.topic: conceptual
@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni sulle licenze per i componenti aggiuntivi per Microsoft Teams e sulle funzionalità disponibili con ogni licenza.
-ms.openlocfilehash: 456d65bee894fa57483ac48223d79074c2b9e4c4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 37b312c8fd3cf9632a1d38118637e9bcbdb62b4f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60767124"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60836004"
 ---
 # <a name="microsoft-teams-add-on-licenses"></a>Microsoft Teams licenze per i componenti aggiuntivi
 
@@ -41,7 +41,7 @@ Ecco un elenco di funzionalità che è possibile aggiungere con Teams licenze pe
 |:-----|:-----|:-----|:-----|
 |Funzionalità|Descrizione|Small Business (<300 utenti)|Grandi aziende (>300 utenti)|
 **Microsoft 365 Business Voice** <br/> | [Business Voice](../business-voice/whats-business-voice.md) è una soluzione di telefonia progettata per le piccole e medie imprese con un massimo di 300 utenti che include Sistema telefonico, audioconferenze, un piano per chiamate nazionali e altro ancora. Sistema telefonico funzionalità disponibili includono la segreteria telefonica, l'ID chiamante, il parcheggio di chiamata, l'inoltro di chiamata, gli operatori automatici e le code di chiamata. <br> Per sapere se Business Voice è disponibile nel proprio paese o area geografica, vedere Disponibilità di Paese [e area geografica per Voce aziendale.](../business-voice/country-region-availability.md) Per informazioni sui prezzi, vedere [Prezzi per VoIP aziendale.](https://go.microsoft.com/fwlink/?linkid=2127221) <br/> |&#x2713;||
-|**Audioconferenza** <br/> |A volte gli utenti dell'organizzazione dovranno usare un telefono per accedere a una riunione Teams al posto del computer. Configurare le [audioconferenze](../audio-conferencing-in-office-365.md) per gli utenti che pianificano o conducono riunioni. <br/> Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762).  <br/> <br/>Se sei una piccola o media azienda con un massimo di 300 utenti e attualmente non hai licenze di audioconferenza, puoi ottenere audioconferenza gratis per un anno. A partire dal 1° ottobre 2020, l'offerta di audioconferenza gratuita è disponibile per gli utenti con licenze Microsoft 365 Business Basic, Business Standard, Business Premium, Enterprise E1 o Enterprise E3. Per altre informazioni, vedere [Configurare le audioconferenze per le piccole e medie imprese.](../audio-conferencing-smb.md)|&#x2713;|&#x2713;|
+|**Audioconferenza** <br/> |A volte gli utenti dell'organizzazione dovranno usare un telefono per accedere a una riunione Teams invece del computer. Configurare le [audioconferenze](../audio-conferencing-in-office-365.md) per gli utenti che pianificano o conducono riunioni. <br/> Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762).  <br/> <br/>Se sei una piccola o media azienda con un massimo di 300 utenti e attualmente non hai licenze di audioconferenza, puoi ottenere audioconferenza gratis per un anno. A partire dal 1° ottobre 2020, l'offerta di audioconferenza gratuita è disponibile per gli utenti con licenze Microsoft 365 Business Basic, Business Standard, Business Premium, Enterprise E1 o Enterprise E3. Per altre informazioni, vedere [Configurare le audioconferenze per le piccole e medie imprese.](../audio-conferencing-smb.md)|&#x2713;|&#x2713;|
 |**Numeri verde** |Se si vogliono numeri a pagamento per audioconferenze, operatori automatici o code di chiamata, è necessario [configurare Crediti comunicazioni.](../set-up-communications-credits-for-your-organization.md) <br/> |&#x2713;|&#x2713;|
 |**Sistema telefonico** <br/> |[Sistema telefonico](../what-is-phone-system-in-office-365.md) è un servizio telefonico ospitato che offre funzionalità di controllo delle chiamate e PBX (Private Branch Exchange), con opzioni per la connessione alla rete PSTN (Public Switched Telephone Network). Sistema telefonico funzionalità includono la segreteria telefonica cloud, l'ID chiamante, il parcheggio di chiamata, l'inoltro di chiamata, gli operatori automatici, le code di chiamata, il trasferimento di chiamata, l'ID chiamante e altro ancora. <br>Per altre informazioni, vedere Ecco cosa si ottiene con [Sistema telefonico.](../here-s-what-you-get-with-phone-system.md) Per informazioni sui prezzi, vedere [Prezzi per Sistema telefonico](https://go.microsoft.com/fwlink/?linkid=799763).  <br/> |&#x2713;<sup>1</sup>|&#x2713;|
 |**Piani di chiamata** <br/> |Se vuoi che gli utenti possano chiamare numeri di telefono all'esterno dell'organizzazione, ottieni un [Piano per le chiamate.](../calling-plans-for-office-365.md) Sono disponibili piani per chiamate nazionali e piani per chiamate nazionali e internazionali. Per informazioni sui prezzi, vedere [Prezzi per i piani per chiamate.](https://go.microsoft.com/fwlink/?linkid=799761 )  <br/> |&#x2713;<sup>1</sup>|&#x2713;|
@@ -52,7 +52,7 @@ Ecco un elenco di funzionalità che è possibile aggiungere con Teams licenze pe
 
 ## <a name="what-voice-features-are-available-with-my-plan"></a>Quali funzionalità vocali sono disponibili con il piano?
 
-Vedere quali licenze di componenti aggiuntivi sono necessarie per ottenere le funzionalità vocali in Teams, a seconda del piano in uso.
+Scopri quali licenze per i componenti aggiuntivi sono necessarie per ottenere le funzionalità vocali in Teams, a seconda del piano in uso.
 
 A seconda delle funzionalità vocali desiderate, è consigliabile confrontare se è più conveniente passare a un piano che include tali caratteristiche. Ad esempio, per la maggior parte delle organizzazioni di grandi dimensioni, l'acquisto di un pacchetto di software in un piano Microsoft 365 Enterprise comporta un costo complessivo inferiore. In genere, quando si acquistano più licenze di componenti aggiuntivi singolarmente invece che come parte di un piano, si potrebbe avere un costo combinato più elevato.
 
@@ -67,8 +67,8 @@ Per le piccole o medie imprese (meno di 300 utenti), è possibile ottenere le fu
 
 Per Microsoft 365 Business Voice, è possibile scegliere tra due opzioni:
 
-- **Microsoft 365 Business Voice con un piano per le** chiamate: ottieni questa opzione se vuoi che tutta la gestione dei numeri di telefono e la fatturazione siano gestite da Microsoft.
-- Microsoft 365 Business Voice senza un piano per chiamate **(instradamento diretto):** è possibile ottenerlo se si vuole che la gestione e la fatturazione di tutti i numeri di telefono siano gestiti dal provider di telefonia di terze parti. È necessario configurare e distribuire [](../direct-routing-landing-page.md) il routing diretto per connettere i controller di confine di sessione (SBC) locali a Microsoft 365 o Office 365.
+- **Microsoft 365 Business Voice con un piano per le chiamate:** ottieni questo se vuoi che tutta la gestione dei numeri di telefono e la fatturazione siano gestite da Microsoft.
+- Microsoft 365 Business Voice senza un piano per chiamate **(routing diretto):** è possibile ottenerlo se si vuole che tutti i numeri di telefono e la fatturazione siano gestiti dal provider di telefonia di terze parti. È necessario configurare e distribuire [](../direct-routing-landing-page.md) il routing diretto per connettere i controller SBC (Session Border Controller) locali a Microsoft 365 o Office 365.
 
 Per altre informazioni, vedere Cosa è necessario acquistare per usare [Microsoft 365 Business Voice?](../business-voice/what-to-buy.md).
 
@@ -98,14 +98,14 @@ Ecco un riepilogo basato sul piano di licenza.
 <td>Microsoft 365 Business Basic<br />
 Microsoft 365 Business Standard Microsoft 365 Business Premium</td>
 <td>Microsoft 365 Business Voice<br>Piano per chiamate internazionali <br />(facoltativo) Crediti comunicazioni </td><td>Oppure</td>
-<td>Microsoft 365 Business Voice piano di chiamata<br />
+<td>Microsoft 365 Business Voice piano per chiamate<br />
 Crediti per le comunicazioni per audioconferenze </td><td>Oppure</td>
 <td>Crediti per le comunicazioni per audioconferenze</td>
 </tr>
 <tr class="odd">
 <td>Microsoft 365 Enterprise E1/E3<br>Office 365 Enterprise E1/E3<br>Microsoft 365 F3<br>Office 365 F3<br>Microsoft 365 F1</td>
 <td>Microsoft 365 Business Voice<br>Piano per chiamate internazionali <br />(facoltativo) Crediti comunicazioni </td><td>Oppure</td>
-<td>Microsoft 365 Business Voice piano di chiamata</td><td>Oppure</td>
+<td>Microsoft 365 Business Voice piano per chiamate</td><td>Oppure</td>
 <td>Audioconferenza<br> Sistema telefonico<br>Piano per chiamate nazionali<br>Piano per chiamate nazionali e internazionali (facoltativo)<br>Crediti comunicazioni</td>
 </tr>
 <tr class="even">
@@ -263,7 +263,7 @@ Ecco un riepilogo, in base al piano di licenza.
 
   <sup>1</sup> Disponibile solo per le organizzazioni con meno di 300 utenti.
 
-Per altre informazioni, vedere Microsoft 365 [per enti](https://www.microsoft.com/microsoft-365/government/) pubblici [e Office 365 Government piani.](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans)
+Per altre informazioni, vedere Microsoft 365 [per enti](https://www.microsoft.com/microsoft-365/government/) pubblici [e Office 365 Government piani](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans).
 
 > [!NOTE]
 > Se è necessario usare un servizio telefonico di terze [parti,](../direct-routing-landing-page.md) l'instradamento diretto viene distribuito nell'organizzazione oppure, se i piani per chiamate non sono disponibili nel proprio paese o area geografica, è necessario usare Il routing diretto per le funzionalità vocali.
@@ -296,11 +296,11 @@ Ecco un riepilogo, in base al piano di licenza.
 <td></td>
 </tr>
 <tr class="even">
-<td>Microsoft 365 Nonprofit Business Basic<br>Microsoft 365 Nonprofit Business Standard</td><td>Microsoft 365 Business Voice <sup>1</sup><br>Piano per chiamate internazionali (facoltativo)<br>Crediti comunicazioni</td><td>Oppure</td><td>Microsoft 365 Business Voice senza Piano chiamate<sup>1</sup></td>
+<td>Microsoft 365 Nonprofit Business Basic<br>Microsoft 365 Nonprofit Business Standard</td><td>Microsoft 365 Business Voice <sup>1</sup><br>Piano per chiamate internazionali (facoltativo)<br>Crediti comunicazioni</td><td>Oppure</td><td>Microsoft 365 Business Voice piano chiamate<sup>1</sup></td>
 </tr>
 <tr>
 <td>Microsoft 365 Organizzazione no profit E1 o E3<br>Office 365 Nonprofit E1 o E3<br>Microsoft 365 F3<br>Office 365 F3</td>
-<td>Microsoft 365 Business Voice <sup>1</sup><br>Piano per chiamate internazionali (facoltativo)<br>Crediti comunicazioni</td><td>Oppure</td><td>Microsoft 365 Business Voice senza Piano chiamate<sup>1</sup></td>
+<td>Microsoft 365 Business Voice <sup>1</sup><br>Piano per chiamate internazionali (facoltativo)<br>Crediti comunicazioni</td><td>Oppure</td><td>Microsoft 365 Business Voice piano chiamate<sup>1</sup></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -329,11 +329,11 @@ Per altre informazioni, vedere Microsoft 365 [e Office 365 Nonprofit offerte](ht
 
 ### <a name="trial-offers-for-licensing-plans"></a>Offerte di valutazione per i piani di licenza
 
-In risposta a una maggiore necessità di lavorare in remoto (o lavorare da casa), Microsoft ha diverse offerte di valutazione Teams gratuite per organizzazioni governative, didattiche e no profit. Le versioni di valutazione sono disponibili per questi piani:
+In risposta a una maggiore necessità di lavorare in remoto (o lavorare da casa), Microsoft offre diverse offerte di valutazione Teams gratuite per organizzazioni governative, didattiche e no profit. Le versioni di valutazione sono disponibili per questi piani:
 
 - Office 365 Enterprise valutazione [E1](../e1-trial-license.md) (sospesa a partire dal 1° luglio 2020), versione di valutazione di E3 ed E5
-- Office 365 Education [versione di valutazione A1](../teams-edu-licensing.md)
-- Office 365 Government versione di valutazione [G1](../g1-trial-license.md) (sospesa a partire dal 1° luglio 2020)
+- Office 365 Education versione [di valutazione A1](../teams-edu-licensing.md)
+- Office 365 Government versione [di valutazione G1](../g1-trial-license.md) (sospesa a partire dal 1° luglio 2020)
 
 Per iscriversi a un'offerta di valutazione, vedere [Iscriversi per un'offerta di valutazione.](https://transform.microsoft.com/customer-trials?tab=requestnewtrial)
 
@@ -391,7 +391,7 @@ Ecco un riepilogo delle offerte di valutazione per le funzionalità vocali.
  Vedere anche:
 
 - [Versione gratuita di Teams](../manage-freemium.md)
-- [Teams esplorativa:](../teams-exploratory.md) attualmente non sono disponibili offerte di valutazione per le funzionalità vocali da usare con l'esperienza esplorativa Teams esplorativa.
+- [Teams esplorativo:](../teams-exploratory.md) attualmente non sono disponibili offerte di valutazione per le funzionalità vocali da usare con l'esperienza esplorativa Teams esplorativo.
 - [Telefono Microsoft Sistema - Licenza utente](virtual-user.md) virtuale
 
 * * *
