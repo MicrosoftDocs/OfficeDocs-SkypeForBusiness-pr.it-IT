@@ -2,7 +2,7 @@
 title: Associare Front End Server al server perimetrale
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: f09c9b3e-1f5f-4486-8113-e62c10cff138
 description: A ogni pool Front End può essere associato un solo server perimetrale o pool di server perimetrali. Quando si abilita l'accesso degli utenti esterni per un sito, è possibile fornire supporto per gli utenti remoti. È inoltre possibile abilitare il supporto per gli utenti federati, che possono includere il supporto per gli utenti di specifici provider di connettività di messaggistica istantanea pubblica (ad esempio Windows Live) e il supporto per gli utenti anonimi.
-ms.openlocfilehash: 6a9288da87e259f770ae2404196a89770133df94
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7cb9b98931c8898d02183352bf051760cf4b5cb9
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60752075"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60863843"
 ---
 # <a name="associate-front-end-with-edge"></a>Associare Front End Server al server perimetrale
 

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Teams attività utente
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 audience: Admin
@@ -13,20 +13,20 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare il report attività Teams utente nell'interfaccia di amministrazione di Microsoft Teams per vedere in che modo gli utenti dell'organizzazione usano Teams.
+description: Informazioni su come usare il report attività Teams utente nell'interfaccia di amministrazione di Microsoft Teams per vedere come gli utenti dell'organizzazione usano Teams.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4f4de8663a873600ee7d7e3fa674c8f38bccbaa1
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: dd33b28f4157a6ba58ab2c4291bfa4ef558e97ca
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749565"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60832990"
 ---
 # <a name="microsoft-teams-user-activity-report"></a>Microsoft Teams attività utente
 
-Il report Teams attività degli utenti fornisce informazioni dettagliate sui tipi di attività che gli utenti dell'organizzazione esee in Teams. È possibile vedere quanti utenti comunicano in modo non pianificato tramite riunioni non pianificate (1:1 e chiamate di gruppo). Vedere quante riunioni un Teams ha organizzato e le riunioni a cui un Teams ha partecipato. Visualizza i dettagli sui minuti dello schermo, video e audio e le statistiche sulle comunicazioni chat, ad esempio il numero di utenti che rispondono e pubblicano messaggi del canale e il numero di utenti che si impegnano in messaggi di chat 1:1 o di gruppo.
+Il report Teams attività degli utenti offre informazioni approfondite sui tipi di attività che gli utenti dell'organizzazione ese in Teams. È possibile vedere quanti utenti comunicano in modo non pianificato tramite riunioni non pianificate (1:1 e chiamate di gruppo). Vedere quante riunioni un Teams ha organizzato e le riunioni a cui un Teams ha partecipato. Visualizza i dettagli sui minuti dello schermo, video e audio e le statistiche sulle comunicazioni chat, ad esempio il numero di utenti che rispondono e pubblicano messaggi del canale e il numero di utenti che si impegnano in messaggi di chat 1:1 o di gruppo.
 
 > [!NOTE]
 > La possibilità di pianificare un report attività utente non è al momento disponibile.
@@ -35,10 +35,10 @@ Il report Teams attività degli utenti fornisce informazioni dettagliate sui tip
 
 Per apportare queste modifiche, è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](../using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione selezionare Analisi & **report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare **Teams'attività utente.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione selezionare **Analisi & report**  >  **sull'utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare Teams **utente.**
 2. In **Intervallo di date** selezionare un intervallo e quindi selezionare Esegui **report.**
 
-    ![Screenshot del report attività Teams utente nell'Teams di amministrazione con callout.](../media/teams-reports-user-activity-with-callouts.png "Screenshot del report attività Teams utente nell'interfaccia Teams con callout")
+    ![Screenshot del report attività Teams utente nell'interfaccia Teams di amministrazione con callout.](../media/teams-reports-user-activity-with-callouts.png "Screenshot del report attività Teams utente nell'Teams di amministrazione con callout")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 

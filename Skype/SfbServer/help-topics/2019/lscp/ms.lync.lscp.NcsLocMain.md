@@ -2,7 +2,7 @@
 title: Criteri percorso
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 5530cf17-4520-40b5-ba70-c62692685048
 ROBOTS: NOINDEX, NOFOLLOW
 description: I criteri percorso determinano se i servizi di emergenza avanzati sono abilitati e come vengono utilizzati, oltre a definire come vengono utilizzate le informazioni percorso per utenti e contatti.
-ms.openlocfilehash: 6be87514ef98d23ccc0440b55451d40d7f2bc584
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 3226a166ee9389501d9c63c71b933601de633f38
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60752871"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60831510"
 ---
 # <a name="location-policy"></a>Criteri percorso
 
@@ -78,4 +78,4 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Maschera E9-1-1** Specifica un numero composto da un utente che viene quindi convertito nel numero di chiamata di emergenza.
 
-Per informazioni dettagliate VoIP aziendale funzionalità del servizio di emergenza, vedere [Overview of E9-1-1](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-e9-1-1) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di criteri percorso, vedere [Configuring Location Policy](/previous-versions/office/lync-server-2013/lync-server-2013-viewing-location-policy-information) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate VoIP aziendale funzionalità e funzionalità del servizio di emergenza, vedere [Overview of E9-1-1](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-e9-1-1) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di criteri percorso, vedere [Configuring Location Policy](/previous-versions/office/lync-server-2013/lync-server-2013-viewing-location-policy-information) nella documentazione relativa alle operazioni.

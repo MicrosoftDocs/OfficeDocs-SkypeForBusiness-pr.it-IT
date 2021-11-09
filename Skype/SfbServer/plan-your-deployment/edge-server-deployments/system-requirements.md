@@ -2,7 +2,7 @@
 title: Requisiti di sistema dei server perimetrali in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 audience: ITPro
 ms.topic: conceptual
 manager: serdars
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ed53a566-0504-46f9-81a7-116a637833af
 description: 'Riepilogo: informazioni sui requisiti di sistema per il server perimetrale in Skype for Business Server.'
-ms.openlocfilehash: 573c9c71493c4bed59ce6fbde4dafa95848b469f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f61412ab8246945e50af0276e46ac53ca080605c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763494"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60863463"
 ---
 # <a name="edge-server-system-requirements-in-skype-for-business-server"></a>Requisiti di sistema dei server perimetrali in Skype for Business Server
  
@@ -31,7 +31,7 @@ Per quanto riguarda la distribuzione di server perimetrali di Skype for Business
   
 ## <a name="components"></a>Componenti
 
-Quando si parla dell'ambiente del server perimetrale, si fa riferimento a componenti che sono, per la maggior parte, distribuiti in una rete perimetrale (ovvero si tratta di un gruppo di lavoro o di un dominio esterno alla struttura di dominio di Skype for Business Server).
+Quando si parla dell'ambiente server perimetrale, si fa riferimento a componenti che sono, per la maggior parte, distribuiti in una rete perimetrale (ovvero si tratta di un gruppo di lavoro o di un dominio esterno alla struttura di dominio di Skype for Business Server).
   
 Tenendo presente questo, questi sono i componenti che dovrai tenere a mente per distribuire correttamente Edge:
   
@@ -54,7 +54,7 @@ Questi sono i Skype for Business distribuiti nell'ambiente perimetrale. Il loro 
   
 - **Servizio Access Edge:** fornisce un singolo punto di connessione attendibile per il traffico SIP (Session Initiation Protocol) in ingresso e in uscita.
     
-- **Servizio Web Conferencing Edge:** consente agli utenti esterni di partecipare a riunioni ospitate nell'ambiente Skype for Business Server interno.
+- **Servizio Web Conferencing Edge:** consente agli utenti esterni di partecipare alle riunioni ospitate nell'ambiente Skype for Business Server interno.
     
 - **Servizio A/V Edge:** rende disponibile agli utenti esterni audio, video, condivisione applicazioni e trasferimento di file.
     
@@ -89,7 +89,7 @@ E per i dispositivi mobili:
   
 - consente di individuare automaticamente i Front End Server che offrono servizi per dispositivi mobili.
     
-- abilita le notifiche push Microsoft 365 o Office 365 ai dispositivi mobili.
+- abilita le notifiche push da Microsoft 365 o Office 365 ai dispositivi mobili.
     
 I consigli correnti per il proxy inverso sono disponibili nella pagina [Infrastruttura di telefonia per Skype for Business.](../../../SfbPartnerCertification/certification/infra-gateways.md) Quindi il proxy inverso:
   
@@ -133,7 +133,7 @@ Questo è un ruolo facoltativo. Può essere un singolo server o un pool di serve
   
 Il Director è un server hop successivo interno che riceve il traffico SIP in ingresso dai server perimetrali destinati Skype for Business Server server interni. Preautenta le richieste in ingresso e le reindirizza al pool principale o al server di un utente. Questa preautenticazione consente di eliminare le richieste di account utente non identificate.
   
-Perché è importante? Una funzione importante per un director è proteggere i server edizione Standard e i Front End Server o i pool Front End da traffico dannoso, ad esempio attacchi Denial of Service (DoS). Se la rete è piena di traffico esterno non valido, il traffico si arresta nel Director.
+Perché è importante? Una funzione importante per un Director è proteggere i server edizione Standard e i Front End Server o i pool Front End da traffico dannoso, ad esempio attacchi Denial of Service (DoS). Se la rete è piena di traffico esterno non valido, il traffico si arresta nel Director.
   
 ### <a name="load-balancers"></a>Servizi di bilanciamento del carico
 <a name="LoadBalancers"> </a>
@@ -164,7 +164,7 @@ Per tutti i server perimetrali che eseguono il servizio A/V Edge, questi sono i 
     
 #### <a name="hlb-requirements"></a>Requisiti di bilanciamento del carico di rete
 
-Skype for Business Server non ha molti requisiti di affinità basati su cookie. Pertanto, non è necessario utilizzare una persistenza basata su cookie a meno che **(e** questo non sia specifico di Skype for Business Server 2015) si abbia Lync Server 2010 Front End Server o pool Front End nell'ambiente Skype for Business Server. Avrebbero bisogno di affinità basata su cookie nel metodo di configurazione consigliato per Lync Server 2010.
+Skype for Business Server non ha molti requisiti di affinità basati su cookie. Non è quindi necessario utilizzare una persistenza basata su cookie, a meno che **(e** questo non sia specifico di Skype for Business Server 2015) si abbia Lync Server 2010 Front End Server o pool Front End nell'ambiente Skype for Business Server. Avrebbero bisogno di affinità basata su cookie nel metodo di configurazione consigliato per Lync Server 2010.
   
 > [!NOTE]
 > Se decidi di attivare l'affinità basata su cookie per il bilanciamento del carico di rete, non ci sarà alcun problema, anche se l'ambiente non ne ha bisogno. 
@@ -224,4 +224,4 @@ Sono stati trattati i requisiti hardware e software dei server perimetrali nei r
   
 ## <a name="collocation"></a>Collocazione
 
-La collocazione dei server perimetrali è stata trattata nella documentazione [di](../../plan-your-deployment/topology-basics/topology-basics.md) base Skype for Business Server topologia.
+La collocazione dei server perimetrali è stata trattata nella documentazione [di](../../plan-your-deployment/topology-basics/topology-basics.md) base sulla Skype for Business Server topologia.

@@ -2,7 +2,7 @@
 title: Tabella SIPResponseMetaData
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: cf723737-4a75-4352-829b-f4954aa59716
 description: Nella tabella SIPResponseMetaDataTable è contenuto un elenco di codici di risposta SIP con la classificazione e la definizione di ogni codice. Questi codici vengono generati in risposta a eventi che influiscono sui dispositivi SIP e sulle sessioni di comunicazioni SIP. Il codice di risposta 403 ad esempio viene generato quando un dispositivo SIP invia una richiesta, che però non viene soddisfatta dal server.
-ms.openlocfilehash: b0da53bded9f748643514a8235991d1124762ff9
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: acf2c3166628af3a4633e98713ca25a5ae703ff6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60761964"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60863393"
 ---
 # <a name="sipresponsemetadata-table"></a>Tabella SIPResponseMetaData
  

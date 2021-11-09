@@ -2,7 +2,7 @@
 title: Gestire le impostazioni del PIN in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d4a104e2-830c-47f1-a5dd-de7a937cc83a
 description: 'Riepilogo: gestire le impostazioni del PIN in Skype for Business Server.'
-ms.openlocfilehash: 711da221deca483098ceda3288a424522531d6f8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 840da2accd7a84caa8c5e4b409873d721d679732
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762504"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60848569"
 ---
 # <a name="manage-pin-settings-in-skype-for-business-server"></a>Gestire le impostazioni del PIN in Skype for Business Server
  
@@ -38,7 +38,7 @@ Utilizzare le procedure descritte nelle sezioni seguenti per gestire i PIN in Sk
     
 - [Assegnare un criterio PIN per utente in Skype for Business Server](assign-a-per-user-pin-policy.md)
     
-Utilizzare le procedure seguenti per gestire i PIN delle conferenze telefoniche con accesso esterno degli utenti nella **sezione Utenti** del Pannello Skype for Business Server di controllo.
+Utilizzare le procedure seguenti per gestire i PIN per le conferenze telefoniche con accesso esterno degli utenti nella **sezione Utenti** Skype for Business Server Pannello di controllo.
   
 - [Impostare il PIN di conferenza telefonica con accesso esterno di un utente in Skype for Business Server](set-a-user-s-dial-in-conferencing-pin.md)
     

@@ -2,7 +2,7 @@
 title: Domande frequenti per lo Skype for Business Server 2015 Stress and Performance Tool
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 ms.date: 11/11/2015
 manager: serdars
 audience: ITPro
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ce18db60-5f6b-423d-bc41-91e7c80fb7e3
 description: Skype for Business domande frequenti su Stress and Performance Tool 2015, utili per individuare le configurazioni degli strumenti supportate, risolvere i problemi relativi agli strumenti e chiarire i comportamenti che possono verificarsi durante l'esecuzione degli strumenti Stress and Performance.
-ms.openlocfilehash: 7a922293b4e8b938d6ed9c1d3f763a47b70a5c6c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: fb81d31711b027d58b8d5b97ecd6d14f32c0fa0f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60771942"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857293"
 ---
 # <a name="faq-for-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Domande frequenti per lo Skype for Business Server 2015 Stress and Performance Tool
  
@@ -43,7 +43,7 @@ Se la memoria dei client è insufficiente, è consigliabile ridurre il numero di
 
 Non dovresti farlo. Questo scenario non è supportato perché potrebbe non riuscire a causa di una mancata corrispondenza binaria e anche perché l'obiettivo è misurare l'utilizzo delle risorse nel server. L'esecuzione dello strumento in realtà influisce sulle prestazioni del server e invalida i dati e le misurazioni.
   
-## <a name="can-i-run-lyncperftoolexe-on-a-virtual-server-or-on-microsoft-hyper-v-server-20082012"></a>È possibile eseguire LyncPerfTool.exe in un server virtuale o Microsoft Hyper-V Server 2008/2012?
+## <a name="can-i-run-lyncperftoolexe-on-a-virtual-server-or-on-microsoft-hyper-v-server-20082012"></a>È possibile eseguire LyncPerfTool.exe su un server virtuale o Microsoft Hyper-V Server 2008/2012?
 
 Sì, è possibile.
   
@@ -57,7 +57,7 @@ Controllare il contatore Totale endpoint attivi nei server per verificare se gli
   
 ## <a name="how-can-i-be-sure-that-something-is-being-measured"></a>Come posso essere sicuro che venga misurato qualcosa?
 
-Esistono contatori delle prestazioni di LyncPerfTool che indicano se gli utenti si connettono ed eseguono azioni, ma il modo più semplice per verificare che le azioni vengano misurate è accedere a uno degli account con un client Skype for Business 2015 ed eseguire tali azioni manualmente. Controllare i risultati per verificare che le misurazioni sono state prese.
+Esistono contatori delle prestazioni di LyncPerfTool che indicano se gli utenti si connettono ed eseguono azioni, ma il modo più semplice per verificare che le azioni vengano misurate è accedere a uno degli account con un client di Skype for Business 2015 ed eseguire tali azioni manualmente. Controllare i risultati per verificare che le misurazioni sono state prese.
   
 ## <a name="i-have-lync-server-2010-capacity-planning-tools-andor-lync-server-2013-capacity-planning-tools-installed-is-that-okay"></a>Sono installati gli strumenti di pianificazione della capacità di Lync Server 2010 e/o Lync Server 2013. È tutto a posto?
 

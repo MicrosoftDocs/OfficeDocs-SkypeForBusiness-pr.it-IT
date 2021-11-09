@@ -2,7 +2,7 @@
 title: Eseguire il backup e il ripristino dei database di Persistent Chat in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/28/2016
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 4f2b689b-7f15-48dc-a069-da7bc8527def
 description: 'Riepilogo: informazioni su come eseguire il backup e il ripristino dei database del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 0f875fd62eab26873b8dcc3617de709a397f4ba8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 3c294a33a82a9279e05e1d69e48b531f8b85e3c0
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762344"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60841168"
 ---
 # <a name="back-up-and-restore-persistent-chat-databases-in-skype-for-business-server-2015"></a>Eseguire il backup e il ripristino dei database di Persistent Chat in Skype for Business Server 2015
  
@@ -47,7 +47,7 @@ Se si desidera utilizzare il cmdlet **Export-CsPersistentChatData,** è possibil
 Export-CsPersistentChatData [-FileName <String>] <COMMON PARAMETERS>
 ```
 
-oppure
+o
   
 ```PowerShell
 Export-CsPersistentChatData [-AsBytes <SwitchParameter>] <COMMON PARAMETERS>
@@ -67,7 +67,7 @@ La modalità di ripristino dei dati di Persistent Chat dipende dal metodo utiliz
 Import-CsPersistentChatData -FileName <String> <COMMON PARAMETERS>
 ```
 
-oppure
+o
   
 ```PowerShell
 Import-CsPersistentChatData -ByteInput <Byte > <COMMON PARAMETERS>

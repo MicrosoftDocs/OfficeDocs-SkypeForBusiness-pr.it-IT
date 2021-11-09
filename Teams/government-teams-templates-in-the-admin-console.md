@@ -1,6 +1,6 @@
 ---
 title: Usare i modelli di team governativi nell'interfaccia di amministrazione
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 audience: Admin
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 466eeb8c412bb09bf6eedcccb8becf49ff0c08a0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 819eb3297ae3b486e7c9d93053911c5090cfae29
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777196"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60840748"
 ---
 # <a name="use-government-team-templates-in-the-admin-center"></a>Usare i modelli di team governativi nell'interfaccia di amministrazione
 
@@ -44,5 +44,5 @@ Centralizzare le comunicazioni e le risorse critiche per il team di gestione del
 
 | Tipologia di modello base |baseTemplateId | Proprietà del modello base |
 |-------------------|-------|---------------------------------------------------------------------------|
-|Coordinare la risposta agli eventi imprevisti|`com.microsoft.teams.template.CoordinateIncidentResponse`|Canali: <ul><li>Generale<li>Annunci</li><li>Logistica</li><li>Pianificazione</li><li>Ripristino</li><li>Urgente</li></ul> App: <ul><li>Wiki</li><li>Excel</li><li>OneNote</li><li>SharePoint</li><li>Programmazione</li></ul>|
+|Coordinare la risposta agli eventi imprevisti|`com.microsoft.teams.template.CoordinateIncidentResponse`|Canali: <ul><li>Generale<li>Annunci</li><li>Logistica</li><li>Pianificazione</li><li>Ripristino</li><li>Urgente</li></ul> App: <ul><li>Wiki</li><li>Excel</li><li>OneNote</li><li>SharePoint</li><li>Planner</li></ul>|
 ||||

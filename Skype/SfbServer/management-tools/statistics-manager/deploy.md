@@ -2,7 +2,7 @@
 title: Distribuire il gestore delle statistiche per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 37b2bb9c-c5d4-4fb0-a976-670b7594b82f
 description: 'Riepilogo: leggere questo argomento per informazioni su come distribuire Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: 6444f89f43ea4951e186af589f5986e5a3e7bc9e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4cfedb385078cd12413cb9f27059f7b5ed8023a1
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778156"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857433"
 ---
 # <a name="deploy-statistics-manager-for-skype-for-business-server"></a>Distribuire il gestore delle statistiche per Skype for Business Server
  
@@ -29,7 +29,7 @@ ms.locfileid: "60778156"
 Prima di tentare di installare Gestione statistiche, assicurarsi di avere familiarità con i requisiti software, di rete e hardware. Per ulteriori informazioni, vedere [Plan for Statistics Manager for Skype for Business Server](plan.md).
   
 > [!NOTE]
-> Se si esegue l'aggiornamento da una versione precedente di Gestione statistiche, vedere Gestione statistiche [di aggiornamento per Skype for Business Server](upgrade.md). 
+> Se si esegue l'aggiornamento da una versione precedente di Gestione statistiche, vedere [Upgrade Statistics Manager for Skype for Business Server](upgrade.md). 
   
 > [!NOTE]
 > Il sito Web Gestione statistiche è stato testato e funziona correttamente in Internet Explorer 11+, Edge 20.10240+ e Chrome 46+ (versione sempreverde corrente). 
@@ -185,7 +185,7 @@ Per importare la Skype for Business Server, attenersi alla seguente procedura:
   
 1. In un host con i cmdlet Skype for Business Server PowerShell:
     
-    a. Eseguire il comando seguente: 
+    a. Eseguire il comando riportato di seguito: 
     
    ```PowerShell
    Get-CsPool | Export-Clixml -Path mypoolinfo.xml
@@ -228,7 +228,7 @@ Se si desidera monitorare i server non presenti nella topologia di Skype for Bus
    cd C:\Program Files\Skype for Business Server StatsMan Listener
    ```
 
-2. Eseguire il comando seguente:
+2. Eseguire il comando riportato di seguito:
     
    ```powershell
     .\Update-StatsManServerInfo.ps1 -HostName <hostname> -SiteName <name of site> -PoolName <poolName> -Roles <role1>[,<role2>,<roleN>]

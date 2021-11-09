@@ -1,7 +1,7 @@
 ---
 title: Cos'è un ordine di portabilità?
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.reviewer: mikedav, roykuntz, jastark
 ms.topic: article
@@ -18,26 +18,26 @@ ms.custom:
 - ms.teamsadmincenter.voice.phonenumbers.porting.overview
 - Calling Plans
 description: Ottenere una panoramica degli ordini di trasferimento e su come trasferire i numeri di telefono dal provider di servizi a Teams.
-ms.openlocfilehash: 936c915a79f7271ba85830122e374840f1a7050b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: a6ff4bffe4602eca7150a9f6c8c1b69782646e7c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60740242"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60833030"
 ---
 # <a name="whats-a-port-order"></a>Cos'è un ordine di portabilità?
 
-Se attualmente si ha un gestore o un provider di servizi di telefonia e si hanno già numeri di telefono per gli utenti o i servizi, è necessario creare un *"* ordine di trasferimento " per trasferire questi numeri di telefono a Microsoft Teams. Quando i numeri vengono esportati, è possibile assegnarli agli utenti e ai servizi, ad esempio audioconferenze (per bridge di conferenza), operatori automatici e code di chiamata.
+Se attualmente si ha un gestore o un provider di servizi di telefonia e si hanno già numeri di telefono per gli utenti o i servizi, è necessario creare un *"* ordine di trasferimento " per trasferire tali numeri di telefono a Microsoft Teams. Quando i numeri vengono esportati, è possibile assegnarli agli utenti e ai servizi, ad esempio audioconferenze (per bridge di conferenza), operatori automatici e code di chiamata.
   
 Dopo aver portato i numeri di telefono in Teams, Microsoft diventa il provider di servizi ed è possibile disconnettere il servizio con il provider di servizi o il gestore precedente.
 
-Esaminare le informazioni contenute in questo articolo per acquisire familiarità con la portabilità dei numeri. Dopo di che, si dovrebbe essere pronti per creare un ordine di trasferimento e trasferire i numeri di telefono. Per [istruzioni dettagliate, Teams](transfer-phone-numbers-to-teams.md) vedere Trasferire numeri di telefono a Teams telefono.
+Esaminare le informazioni contenute in questo articolo per acquisire familiarità con la portabilità dei numeri. Dopo di che, si dovrebbe essere pronti per creare un ordine di trasferimento e trasferire i numeri di telefono. Vedere [Trasferire i numeri di telefono Teams](transfer-phone-numbers-to-teams.md) per istruzioni dettagliate.
   
 ## <a name="what-countries-or-regions-support-number-porting"></a>Quali paesi o aree geografiche supportano la portabilità dei numeri?
 
 È possibile trasferire o trasferire numeri di telefono in tutti i paesi o aree geografiche supportati, ma la modalità di invio di una richiesta di ordine di trasferimento dipende dal paese o dall'area geografica da cui provengono i numeri di telefono. Per un elenco dei paesi e delle aree geografiche che supportano la portabilità dei numeri, vedere [Gestire i numeri di telefono per l'organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)  
 
-Attualmente, [la procedura guidata di porting](transfer-phone-numbers-to-teams.md) nell'Microsoft Teams di amministrazione supporta il recupero di numeri di telefono per Regno Unito, Stati Uniti e Canada. Per ottenere numeri di telefono per altri paesi e aree geografiche, è possibile [inviare manualmente un ordine di trasferimento.](manually-submit-port-order.md)
+Attualmente, [la procedura guidata di porting](transfer-phone-numbers-to-teams.md) nell'interfaccia Microsoft Teams di amministrazione supporta il recupero di numeri di telefono per Regno Unito, Stati Uniti e Canada. Per ottenere numeri di telefono per altri paesi e aree geografiche, è possibile [inviare manualmente un ordine di trasferimento.](manually-submit-port-order.md)
   
 ## <a name="what-numbers-can-be-transferred"></a>Quali numeri possono essere trasferiti?
 
@@ -74,9 +74,9 @@ In generale, è possibile trasferire qualsiasi numero di telefono di un provider
   
 - Telefono numeri usati per le connessioni dati, ad esempio per le linee DSL o le connessioni Internet a banda larga.
 
-- Telefono numeri dedicati al fax.
+- Telefono numeri dedicati all'invio di fax.
 
-    Se sono già presenti numeri di telefono dedicati usati  per l'invio di fax, è possibile trasferire questi numeri in Teams, ma i servizi fax non continueranno a funzionare come previsto. I servizi fax non sono disponibili per Teams clienti, anche se si hanno licenze per Sistema telefonico, piano per chiamate nazionali o piano per chiamate internazionali.
+    Se sono presenti numeri di telefono dedicati in uso  per l'invio di fax, è possibile trasferire questi numeri in Teams, ma i servizi fax non continueranno a funzionare come previsto. I servizi fax non sono disponibili per Teams clienti, anche se si hanno licenze per Sistema telefonico, piano per chiamate nazionali o piano per chiamate internazionali.
 
     Se si porta il numero di telefono in Teams, è possibile assegnarlo a un utente dell'organizzazione invece di usarlo per l'invio di fax.
 
@@ -131,14 +131,14 @@ Ecco altre informazioni su come inviare richieste di portabilità dei numeri per
 
 Dopo aver completato la richiesta di ordine di trasferimento, l'elaborazione richiede da 7 a 14 giorni. Tuttavia, a seconda del provider di servizi, l'operazione può richiedere fino a 30 giorni. Dopo il port over dei numeri di telefono, si otterrà un messaggio di posta elettronica da Microsoft per insodinviare l'invito.
   
-Per controllare lo stato dell'ordine di trasferimento, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a Numeri Telefono vocali e quindi fare clic su Cronologia  >   **ordini.** Ogni stato dell'ordine di trasferimento è elencato nella **colonna** Stato.
+Per controllare lo stato dell'ordine di trasferimento, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare a Numeri Telefono vocali e quindi fare clic  >  su **Cronologia ordini.** Ogni stato dell'ordine di trasferimento è elencato nella **colonna** Stato.
   
 ## <a name="can-user-subscriber-phone-numbers-be-converted-to-service-numbers"></a>I numeri di telefono degli utenti (abbonati) possono essere convertiti in numeri di servizio?
 <a name="bkmk_type_1"> </a>
 
 Sì, possono. È solo necessario inviare una richiesta di servizio che includa il GUID del tenant dell'organizzazione e i numeri di telefono da convertire. A questo scopo, vedere [Gestire i numeri di telefono per l'organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
-## <a name="can-i-port-out-my-numbers-from-teams-to-a-different-phone-service-provider-or-carrier"></a>È possibile eseguire il port out dei numeri da Teams a un altro provider di servizi telefonici o gestore telefonico?
+## <a name="can-i-port-out-my-numbers-from-teams-to-a-different-phone-service-provider-or-carrier"></a>È possibile eseguire il port out dei numeri da Teams a un altro gestore o provider di servizi telefonici?
 
 Per inviare i numeri da Teams a un altro gestore, è necessario inviare una richiesta con il nuovo gestore. È anche necessario impostare un PIN di portabilità nell'Microsoft Teams di amministrazione.
 

@@ -2,7 +2,7 @@
 title: Coda dei Response Group
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 29bde940-6107-494f-9bee-b6ebfa135e41
 ROBOTS: NOINDEX, NOFOLLOW
 description: I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. Le code di Response Group contengono le chiamate a un Response Group fino a quando un agente non risponde alla chiamata.
-ms.openlocfilehash: f4b055650a027efed0534b6a0b4ff9b19b6001f4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f33df7df7a0c129bbe522c39d9612377e85774ef
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60748722"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60831390"
 ---
 # <a name="response-groups-queue"></a>Coda dei Response Group
 

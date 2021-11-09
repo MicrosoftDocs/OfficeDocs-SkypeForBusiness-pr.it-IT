@@ -2,7 +2,7 @@
 title: Monitorare la mobilità per le prestazioni in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 9c831c63-9a7d-48ec-9118-f8a7e80ddd04
 description: "Riepilogo: informazioni sul servizio per dispositivi mobili (Mcx) e sull'API Web per comunicazioni unificate (UCWA) in Skype for Business Server."
-ms.openlocfilehash: 5f8adbbdc653d8cdf2e19ce3f82fc4fdb0383505
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 5560e869a4b3313cf63ef4466aa9f8ce394766d1
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60746922"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60863563"
 ---
 # <a name="monitor-mobility-for-performance-in-skype-for-business-server"></a>Monitorare la mobilità per le prestazioni in Skype for Business Server
  
@@ -44,7 +44,7 @@ Altri limiti sui server che possono influire sulle prestazioni dei dispositivi m
 
 - [Monitorare i limiti di capacità della memoria del server in Skype for Business Server](server-memory-capacity-limits.md)
     
-- [Monitorare l'utilizzo di Servizi per dispositivi mobili e UCWA in Skype for Business Server](service-and-ucwa-usage.md)
+- [Monitorare l'utilizzo del servizio per dispositivi mobili e UCWA in Skype for Business Server](service-and-ucwa-usage.md)
     
 - [Configurare il servizio per dispositivi mobili per prestazioni elevate in Skype for Business Server](configure-service.md)
     

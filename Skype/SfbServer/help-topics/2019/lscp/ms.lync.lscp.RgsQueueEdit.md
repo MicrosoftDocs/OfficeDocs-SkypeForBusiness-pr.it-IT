@@ -1,8 +1,8 @@
 ---
-title: Coda Di Response Group Crea nuovo o Modifica esistente
+title: Coda Response Group Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: cbdde536-8668-4a08-9862-8615e8691fd7
 ROBOTS: NOINDEX, NOFOLLOW
 description: Le code di Response Group contengono le chiamate a un Response Group fino a quando un agente non risponde alla chiamata.
-ms.openlocfilehash: 995a2ec25184f451fe28a7f32ac9335b1b7248e3
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 1595439c8d85bf5525ef5cecdc250856d9d2596f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745222"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60832700"
 ---
 # <a name="response-groups-queue-create-new-or-edit-existing"></a>Coda dei Response Group: crearne una nuova o modificarne una esistente
 
@@ -46,11 +46,11 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - **Disconnect**
 
-  - **Inoltra alla segreteria telefonica** Se si seleziona questa opzione, in **Indirizzo SIP** digitare un indirizzo del sistema di caselle vocali nel formato sip: <username> @ <domainname> (ad esempio, sip:bob@contoso.com).
+  - **Inoltra alla segreteria telefonica** Se si seleziona questa opzione, in **Indirizzo SIP** digitare un indirizzo del sistema di caselle vocali nel formato sip: \<username> @ \<domainname> (ad esempio, sip:bob \@ contoso.com).
 
-  - **Inoltra al numero di telefono** Se si seleziona questa opzione, in **Indirizzo SIP** digitare il numero di telefono nel formato sip: <number> @ <domainname> (ad esempio, sip:+14255550121@contoso.com).
+  - **Inoltra al numero di telefono** Se si seleziona questa opzione, in Indirizzo **SIP** digitare il numero di telefono nel formato sip: \<number> @ \<domainname> (ad esempio, sip:+14255550121 \@ contoso.com).
 
-  - **Inoltra a indirizzo SIP** Selezionare questa opzione per inoltrare la chiamata a un altro utente. In **Indirizzo SIP** digitare l'URI dell'utente nel formato sip: <username> @ <domainname> .
+  - **Inoltra a indirizzo SIP** Selezionare questa opzione per inoltrare la chiamata a un altro utente. In **Indirizzo SIP** digitare l'URI dell'utente nel formato sip: \<username> @ \<domainname> .
 
   - **Inoltra a un'altra coda** Se si seleziona questa opzione, passare alla coda che deve ricevere le chiamate al timeout delle chiamate.
 
@@ -64,11 +64,11 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - **Disconnect**
 
-  - **Inoltra alla segreteria telefonica** Se si seleziona questa opzione, in **Indirizzo SIP** digitare un indirizzo del sistema di caselle vocali nel formato sip: <username> @ <domainname> (ad esempio, sip:bob@contoso.com).
+  - **Inoltra alla segreteria telefonica** Se si seleziona questa opzione, in **Indirizzo SIP** digitare un indirizzo del sistema di caselle vocali nel formato sip: \<username> @ \<domainname> (ad esempio, sip:bob@contoso.com).
 
-  - **Inoltra al numero di telefono** Se si seleziona questa opzione, in **Indirizzo SIP** digitare il numero di telefono nel formato sip: <number> @ <domainname> (ad esempio, sip:+14255550121@contoso.com).
+  - **Inoltra al numero di telefono** Se si seleziona questa opzione, in **Indirizzo SIP** digitare il numero di telefono nel formato sip: \<number> @ \<domainname> (ad esempio, sip:+14255550121@contoso.com).
 
-  - **Inoltra a indirizzo SIP** Selezionare questa opzione per inoltrare la chiamata a un altro utente. In **Indirizzo SIP** digitare l'URI dell'utente nel formato sip: <username> @ <domainname> .
+  - **Inoltra a indirizzo SIP** Selezionare questa opzione per inoltrare la chiamata a un altro utente. In **Indirizzo SIP** digitare l'URI dell'utente nel formato sip: \<username> @ \<domainname> .
 
   - **Inoltra a un'altra coda** Se si seleziona questa opzione, passare alla coda che deve ricevere le chiamate quando viene raggiunta la soglia di overflow della coda.
 

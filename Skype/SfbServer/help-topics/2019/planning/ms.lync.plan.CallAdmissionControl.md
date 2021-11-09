@@ -2,7 +2,7 @@
 title: Controllo di ammissione di chiamata (Strumento di pianificazione)
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.assetid: 7b73e678-3e5c-491c-bef1-0eb72cf60398
 ROBOTS: NOINDEX, NOFOLLOW
 description: Il controllo di ammissione di chiamata (CAC) determina, in base alla larghezza di banda di rete disponibile, se consentire di stabilire sessioni di comunicazione in tempo reale, ad esempio chiamate vocali o videochiamate.
-ms.openlocfilehash: 0e84efb85bd64bb883690dcbe9f96003b2b731e3
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e72b64f595ebca9e83df722b09c14a7f971651cd
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757778"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60831350"
 ---
 # <a name="call-admission-control-planning-tool"></a>Controllo di ammissione di chiamata (Strumento di pianificazione)
  

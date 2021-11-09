@@ -2,7 +2,7 @@
 title: Categorie di chat persistente, chat room e ruoli utente in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 8/17/2015
 audience: ITPro
@@ -12,13 +12,13 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 343a0563-9ca5-4ad0-b4f3-a72f1d7f1a81
-description: 'Riepilogo: leggere questo argomento per informazioni su categorie, chat room e ruoli utente e amministratore per il server Chat persistente Skype for Business Server 2015.'
-ms.openlocfilehash: 0c468092016fae578e3c96987fed88b37db9d1c0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: 'Riepilogo: leggere questo argomento per informazioni su categorie, chat room e ruoli utente e amministratore per il server Chat persistente in Skype for Business Server 2015.'
+ms.openlocfilehash: 212e731da29bc327487e0e6512db413546d20670
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765214"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857253"
 ---
 # <a name="persistent-chat-categories-chat-rooms-and-user-roles-in-skype-for-business-server-2015"></a>Categorie di chat persistente, chat room e ruoli utente in Skype for Business Server 2015
  
@@ -33,7 +33,7 @@ ms.locfileid: "60765214"
 - Ruoli di amministratore
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
     
 ## <a name="categories-for-organizing-chat-rooms"></a>Categorie per l'organizzazione delle chat room
 
@@ -42,7 +42,7 @@ Le categorie consentono di organizzare chat room e controllare quali utenti e gr
 La logica principale per il concetto di membri consentiti e negati è la parete etica. Ad esempio è frequente negli istituti bancari e finanziari la presenza di vincoli etici che impediscono ai commercianti e agli analisti di condividere le comunicazioni quando implementano criteri e convenzioni. Per ovviare a questo problema, un amministratore può creare le categorie in modo che una categoria consenta la creazione e l'uso delle chat ai commercianti e un'altra agli analisti. Gli utenti non possono essere aggiunti come membri di una chat room se la categoria padre la impedisce.
   
 > [!IMPORTANT]
-> I membri consentiti e negati di una categoria non sono uguali **a** un ruolo Membro, che si applica a una chat room di Persistent Chat.> Le ricerche visualizzano tutte le chat room aperte e chiuse per le quali l'utente che esegue la ricerca si trova nell'elenco Dei membri consentiti e negati. Le chat segrete non vengono visualizzate, a meno che l'utente che esegue la ricerca non ne sia membro. L'utente può eseguire la ricerca solo delle chat di cui è già membro o di quelle per le quali può richiedere l'appartenenza. 
+> I membri consentiti e negati in una categoria non sono uguali **a** un ruolo Membro, che si applica a una chat room di Persistent Chat.> Le ricerche visualizzano tutte le chat room aperte e chiuse per le quali l'utente che esegue la ricerca si trova nell'elenco dei membri Consentiti e Negati. Le chat segrete non vengono visualizzate, a meno che l'utente che esegue la ricerca non ne sia membro. L'utente può eseguire la ricerca solo delle chat di cui è già membro o di quelle per le quali può richiedere l'appartenenza. 
   
 ## <a name="chat-rooms-and-user-roles"></a>Chat room e ruoli utente
 

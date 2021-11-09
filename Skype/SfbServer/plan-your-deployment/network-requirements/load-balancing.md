@@ -2,7 +2,7 @@
 title: Requisiti di bilanciamento del carico per Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 84489328-64a4-486c-9384-a3e5c8ed9c8b
 description: 'Riepilogo: esaminare le considerazioni sul bilanciamento del carico prima di implementare Skype for Business Server.'
-ms.openlocfilehash: a738a615c773b3f2861899e061fbdbd664e05636
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4bdfc9d9958154df8ce485c945dbe8accd630ed8
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777946"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60840998"
 ---
 # <a name="load-balancing-requirements-for-skype-for-business"></a>Requisiti di bilanciamento del carico per Skype for Business
  
@@ -49,7 +49,7 @@ La Skype for Business Server topologia perimetrale consolidata con scalabilità 
   
 - Federazione con organizzazioni che utilizzano Office Communications Server 2007 R2 o Office Communications Server 2007
     
-- Exchange Messaggistica unificata per utenti remoti che Exchange messaggistica unificata prima Exchange 2010 con SP1
+- Exchange Messaggistica unificata per gli utenti remoti che Exchange messaggistica unificata prima di Exchange 2010 con SP1
     
 - Connettività con utenti di messaggistica istantanea pubblica
     
@@ -82,7 +82,7 @@ Di seguito sono riportati i requisiti di bilanciamento del carico hardware per i
     
 ### <a name="other-hardware-load-balancer-requirements"></a>Altri requisiti del servizio di bilanciamento del carico hardware
 
-I requisiti di affinità basati su cookie sono notevolmente Skype for Business Server per i servizi Web. Se si distribuisce Skype for Business Server e non vengono mantenuti i Front End Server o i pool Front End di Lync Server 2010, non è necessaria la persistenza basata su cookie. Tuttavia, se si manterranno temporaneamente o definitivamente i Front End Server di Lync Server 2010 o i pool Front End, si continuerà a utilizzare la persistenza basata su cookie quando viene distribuita e configurata per Lync Server 2010. 
+I requisiti di affinità basati su cookie sono notevolmente Skype for Business Server per i servizi Web. Se si distribuisce Skype for Business Server e non si conserva alcun Front End Server di Lync Server 2010 o pool Front End, non è necessaria la persistenza basata su cookie. Tuttavia, se si manterranno temporaneamente o definitivamente i Front End Server di Lync Server 2010 o i pool Front End, si continuerà a utilizzare la persistenza basata su cookie quando viene distribuita e configurata per Lync Server 2010. 
   
 > [!NOTE]
 > **La decisione di usare l'affinità basata sui cookie anche se la distribuzione non la richiede** non determina un impatto negativo. 
@@ -240,7 +240,7 @@ Per la distribuzione del bilanciamento del carico DNS in pool Front End e pool d
 - Per supportare il nome di dominio completo utilizzato dal bilanciamento del carico DNS, è necessario effettuare il provisioning di DNS per risolvere il nome di dominio completo del pool (ad esempio pool01.contoso.com) negli indirizzi IP di tutti i server del pool (ad esempio 192.168.1.1, 192.168.1.2 e così via). Includere solo gli indirizzi IP dei server attualmente distribuiti.
     
     > [!CAUTION]
-    > Se si dispone di più pool Front End o Front End Server, il nome di dominio completo dei servizi Web esterni deve essere univoco. Se ad esempio si definisce l'FQDN dei servizi Web esterni di un Front End Server **come pool01.contoso.com**, non è possibile utilizzare pool01.contoso.com **per** un altro pool Front End o Front End Server. Se si distribuiscono anche Director, il nome di dominio completo dei servizi Web esterni definito per qualsiasi server Director o pool di server Director deve essere univoco da qualsiasi altro server Director o pool di server Director, nonché da qualsiasi pool Front End o Front End Server. Se si decide di sostituire i servizi Web interni con un fqdn autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
+    > Se si dispone di più pool Front End o Front End Server, il nome di dominio completo dei servizi Web esterni deve essere univoco. Se ad esempio si definisce l'FQDN dei servizi Web esterni di un  Front End Server **come pool01.contoso.com**, non è possibile utilizzare pool01.contoso.com per un altro pool Front End o Front End Server. Se si distribuiscono anche Director, il nome di dominio completo dei servizi Web esterni definito per qualsiasi server Director o pool di server Director deve essere univoco da qualsiasi altro server Director o pool di server Director, nonché da qualsiasi pool Front End o Front End Server. Se si decide di sostituire i servizi Web interni con un fqdn autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
   
 ### <a name="dns-load-balancing-on-edge-server-pools"></a>Bilanciamento del carico DNS in pool di server perimetrali
 <a name="BK_Edge"> </a>

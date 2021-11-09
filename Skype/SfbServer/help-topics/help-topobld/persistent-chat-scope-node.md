@@ -2,7 +2,7 @@
 title: Nodo dell'ambito di Persistent Chat
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 35dfc16f-7190-4993-9d4a-e0262bf35166
 description: Per iniziare la creazione di un nuovo server Chat persistente o di un nuovo pool di server Chat persistente, in Generatore di topologie fare clic con il pulsante destro del mouse sui pool di Persistent Chat e quindi scegliere Nuovo pool di Chat persistente
-ms.openlocfilehash: 44c245e6d913b7569bd2a6f7f3f8ea4306e27cbb
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: af8bdc498b098a9a716d7920e0f5ea83f2b686e9
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747566"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857583"
 ---
 # <a name="persistent-chat-scope-node"></a>Nodo dell'ambito di Persistent Chat
  

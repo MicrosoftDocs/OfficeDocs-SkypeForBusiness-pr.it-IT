@@ -2,7 +2,7 @@
 title: Personalizzare le proprietà dell'account utente per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 505d9619-adab-4cc4-b054-89286e18a19b
 description: È possibile utilizzare le procedure descritte in questa sezione per modificare le proprietà dei singoli account utente.
-ms.openlocfilehash: 47e1c09e898a023bbebacbeb57f855568a9a0131
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: c2a2f63e31d17e90cea528c3fc8ef88dd1952902
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60750155"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856653"
 ---
 # <a name="customize-user-account-properties-for-skype-for-business-server"></a>Personalizzare le proprietà dell'account utente per Skype for Business Server
  
@@ -150,7 +150,7 @@ Per informazioni dettagliate sulla configurazione della telefonia per un'organiz
     
    b. Se i comandi vengono eseguiti in remoto in un altro computer, ad esempio si accede al computer ed eseguire i comandi in remoto in un Front End Server di edizione Standard: da un account utente assegnato al ruolo CsUserAdministrator o csAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi fare clic su Skype for Business Server **Management Shell**.
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi fare clic su Skype for Business Server **Management Shell.**
     
 3. Per spostare singoli utenti, utilizzare il cmdlet Move-CsUser come indicato di seguito:
     

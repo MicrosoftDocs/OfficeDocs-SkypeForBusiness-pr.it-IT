@@ -1,6 +1,6 @@
 ---
 title: Ottimizzare il feedback e la creazione di report Microsoft Teams'adozione
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 11/01/2018
@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come ottenere il feedback degli utenti e usare la creazione di report sull'integrità dei servizi in Teams adozione.
+description: Informazioni su come ottenere il feedback degli utenti e usare la creazione di report sull'integrità dei servizi nell Teams in adozione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 136e6a2b2155a7215b468f1c2309b54db7914605
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: a52e0035099ccb764272566c899ee5811c18ac5b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745492"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60840718"
 ---
 # <a name="optimize-feedback-and-reporting-for-your-microsoft-teams-adoption"></a>Ottimizzare il feedback e la creazione di report per l'adozione Microsoft Teams utenti
 
@@ -44,20 +44,20 @@ Durante tutta la fase dell'esperimento si acquisiranno informazioni su come le p
 
 ## <a name="invest-in-your-champions"></a>Investi nei tuoi campioni
 
-Mentre ti prepari a scalare l'uso Microsoft Teams, recluta altri campioni in ogni business unit o gruppo a cui stai espandendo. Iscrivere queste persone entusiastie al programma di formazione sul servizio e standardizzare come e quando ci si incontra con loro.
+Mentre ti prepari a scalare l'uso delle Microsoft Teams, recluta altri campioni in ogni business unit o gruppo a cui stai espandendo. Iscrivere queste persone entusiastie al programma di formazione sul servizio e standardizzare come e quando ci si incontra con loro.
  
 È chiaro nella progettazione del programma campioni cosa riceveranno i dipendenti e cosa dovrebbero dare se diventano campioni. I requisiti comuni per i programmi sono gli orari di ufficio pianificati, la partecipazione alle chiamate mensili della community e la partecipazione a community online interne per supportare la transizione a queste nuove esperienze.  
 
 Procedura consigliata: tenere una riunione Teams per i campioni interni. Suddividere l'agenda tra l'insegnamento di nuove funzionalità, l'indirizzamento del feedback e la fornitura di strumenti self-service per la community dei dipendenti.
 
-Procedure consigliate: fare in modo che i rappresentanti del reparto di supporto interno o dell'helpdesk IT si unino alla community dei campioni per rimanere aggiornati sulle nuove informazioni sull'Teams utilizzo. 
+Procedure consigliate: i rappresentanti del reparto di supporto interno o dell'helpdesk IT si uniranno alla community dei campioni per rimanere aggiornati sulle nuove informazioni sull'utilizzo Teams lavoro. 
 
 ## <a name="service-reporting"></a>Creazione di report sui servizi
 
-Esistono tre tipi di report che è consigliabile esaminare durante la distribuzione e l'adozione di Microsoft Teams:
+Esistono tre tipi di report che è consigliabile esaminare durante la distribuzione e l'adozione Microsoft Teams:
 
 - [Integrità dei](https://status.office365.com/) servizi: da Microsoft 365, Office 365 e dal reparto di supporto IT interno.
-- [Microsoft 365 report nell'interfaccia](/microsoft-365/admin/activity-reports/activity-reports) di amministrazione, da Microsoft 365 o Office 365 report Microsoft 365 report nell'interfaccia di amministrazione, Microsoft Teams [utente.](/microsoft-365/admin/activity-reports/microsoft-teams-user-activity) È anche possibile usare le informazioni di altri sistemi all'interno dell'organizzazione.
+- [Microsoft 365 report nell'interfaccia](/microsoft-365/admin/activity-reports/activity-reports) di amministrazione, da Microsoft 365 o Office 365 report Microsoft 365 report nell'interfaccia di [amministrazione, Microsoft Teams'attività degli utenti.](/microsoft-365/admin/activity-reports/microsoft-teams-user-activity) È anche possibile usare le informazioni di altri sistemi all'interno dell'organizzazione.
 - Soddisfazione del servizio: raccolta da forum della community interni e sondaggi su esperienze specifiche
 
 ![Icona che rappresenta il passaggio successivo.](media/teams-adoption-next-icon.png) Successivo: [Aumentare la consapevolezza e implementare la formazione](teams-adoption-drive-awareness.md)

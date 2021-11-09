@@ -2,7 +2,7 @@
 title: Panoramica delle funzionalità (Strumento di pianificazione)
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.assetid: 44783b37-c87f-41f2-9de1-39176f1856ab
 ROBOTS: NOINDEX, NOFOLLOW
 description: Skype for Business Server Strumento di pianificazione
-ms.openlocfilehash: 0b47d1dad12d4933f042217b4762d7bb4f766c6c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ee6578aeb51aa0cf9f6a4066c78d6038a057763b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60758778"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60832690"
 ---
 # <a name="feature-overview-planning-tool"></a>Panoramica delle funzionalità (Strumento di pianificazione)
  
@@ -55,7 +55,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Chiamate in conferenza**
     
-    Le conferenze telefoniche con accesso esterno consentono agli utenti di partecipare a un A/V da un telefono sulla rete PSTN. Per le conferenze telefoniche con accesso esterno è necessario distribuire le applicazioni Operatore conferenza e Annuncio conferenza service.
+    Le conferenze telefoniche con accesso esterno consentono agli utenti di partecipare a un A/V da un telefono sulla rete PSTN. Per le conferenze telefoniche con accesso esterno è necessario distribuire le applicazioni Operatore conferenza e Annuncio conferenza Service.
     
 - **Conferenze Web**
     
@@ -78,22 +78,22 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Federazione con versioni precedenti**
     
-- **Federazione con provider di servizi di messaggistica istantanea pubblici** Consente agli utenti dell'organizzazione di stabilire comunicazioni con provider di servizi di messaggistica istantanea pubblici come MSN, Yahoo!e AOL. Per stabilire la federazione con reti di messaggistica istantanea pubbliche, è necessaria una licenza separata.
+- **Federazione con provider di servizi di messaggistica istantanea pubblici** Consente agli utenti dell'organizzazione di stabilire comunicazioni con provider di servizi di messaggistica istantanea pubblici come MSN, Yahoo!e AOL. È necessaria una licenza separata per stabilire la federazione con reti di messaggistica istantanea pubbliche.
     
 - **Federazione con provider di servizi basati su XMPP**
     
-    Skype for Business Server 2015 è stato introdotto un proxy XMPP completamente integrato (distribuito nei server perimetrali) e un gateway XMPP distribuito nei Front End Server. È possibile distribuire L'aggiunta e la configurazione del proxy XMPP e del gateway XMPP consentiranno agli utenti di Skype for Business Server di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
+    Skype for Business Server 2015 ha introdotto un proxy XMPP completamente integrato (distribuito nei server perimetrali) e un gateway XMPP distribuito nei Front End Server. È possibile distribuire L'aggiunta e la configurazione del proxy XMPP e del gateway XMPP consentiranno agli utenti di Skype for Business Server di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
     
 - **Mobilità**
     
-    Quando distribuisci il servizio per dispositivi mobili Skype for Business Server, gli utenti possono usare dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
+    Quando distribuisci il servizio per dispositivi mobili Skype for Business Server, gli utenti possono usare i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
     
 - **Cassetta postale Exchange W15**
     
     Skype for Business Server consente di archiviare i messaggi di segreteria telefonica Exchange messaggistica unificata; tali messaggi della segreteria telefonica verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
 
     > [!NOTE]
-    > Exchange La messaggistica unificata come precedentemente nota non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+    > Exchange La messaggistica unificata come nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
     
 ### <a name="voice"></a>Voce
 
@@ -105,10 +105,10 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Messaggistica unificata di Exchange**
     
-    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la messaggistica unificata Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica di chiamata e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
+    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica delle chiamate e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
 
     > [!NOTE]
-    > Exchange La messaggistica unificata come precedentemente nota non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+    > Exchange La messaggistica unificata come nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
     
 ### <a name="additional-deployment-options"></a>Opzioni di distribuzione aggiuntive
 
@@ -132,7 +132,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Exchange Integrazione dell'archiviazione**
     
-    Se si dispone di utenti ospitati in Exchange e le relative cassette postali sono state messe In-Place conservazione, è possibile selezionare l'opzione per integrare l'archiviazione Skype for Business Server con Exchange archiviazione.
+    Se si dispone di utenti ospitati in Exchange e le relative cassette postali sono state messe In-Place archiviazione, è possibile selezionare l'opzione per integrare l'archiviazione Skype for Business Server con Exchange archiviazione.
     
 - **IPv4**
     

@@ -2,7 +2,7 @@
 title: Creare o modificare una route vocale in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d189057d-cc9d-4622-9d10-f5385d703faf
 description: 'Riepilogo: informazioni su come creare o modificare una route vocale in Skype for Business Server utilizzando il Pannello Skype for Business Server di controllo.'
-ms.openlocfilehash: ee7f4a0f5d09a36fd1d8e5bcd88a15cd01cc6657
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 28acf24352f2eb517f75a6afa5ce35a7d5166ab2
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755769"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60831630"
 ---
 # <a name="create-or-modify-a-voice-route-in-skype-for-business"></a>Creare o modificare una route vocale in Skype for Business
  
@@ -104,7 +104,7 @@ ms.locfileid: "60755769"
     
 8. Per associare uno o più trunk PSTN (Public Switched Telephone Network) alla route vocale, fare clic su **Aggiungi** e quindi selezionare un trunk nell'elenco.
     
-9. Per associare uno o più utilizzi PSTN  alla route vocale, fare clic su Seleziona e scegliere un record nell'elenco dei record di utilizzo PSTN definiti per la distribuzione VoIP aziendale locale.
+9. Per associare uno o più utilizzi PSTN  alla route vocale, fare clic su Seleziona e scegliere un record dall'elenco dei record di utilizzo PSTN definiti per la distribuzione VoIP aziendale locale.
     
     > [!NOTE]
     > Per visualizzare le proprietà di ognuno dei record di utilizzo PSTN disponibili, vedere [View PSTN usage records in Skype for Business](view-pstn-usage-records.md). > Per creare o modificare i record di utilizzo PSTN, vedere [Create or modify a voice policy and configure PSTN usage records in Skype for Business](voice-policy-and-pstn-usage-records.md). 

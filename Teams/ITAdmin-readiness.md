@@ -1,7 +1,7 @@
 ---
 title: Risorse di formazione per gli amministratori - Microsoft Teams
 ms.reviewer: jhwang
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 description: Video di formazione, PowerPoint, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6b25a360219477d5dd698f6ef7cbd79f664f4b92
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: fd6397776b63194dd7f880391decb02e0cb4ed35
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777746"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60840908"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Guida introduttiva alla formazione per gli amministratori per Microsoft Teams
 
@@ -40,8 +40,8 @@ Usare le risorse di formazione per istruirsi sulle Teams, insegnare ad altri o e
 
 |&nbsp; |&nbsp; |&nbsp;  |
 |---------|---------|---------|
-|Teams essenziali per [**l'IT**](https://aka.ms/MicrosoftTeamsforIT) - La serie di video "Teams for IT" di Microsoft Mechanics mostra all'amministratore come implementare, configurare e gestire Teams.     |[**Supportare i lavoratori**](support-remote-work-with-teams.md#support-remote-workers-using-microsoft-teams) remoti Microsoft Teams - Ottenere le indicazioni necessarie, inclusi i collegamenti alla formazione, per supportare gli utenti che lavorano da casa.         |Gestire la collaborazione in team [**per l'IT-**](/learn/paths/m365-manage-team-collaboration) Informazioni su come usare i Teams per facilitare il lavoro in team e la comunicazione all'interno dell'organizzazione tra applicazioni e dispositivi.         |
-|[**Certificazione Service Adoption Specialist**](/learn/paths/m365-service-adoption) : il corso di certificazione Microsoft Service Adoption Specialist Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.     |[**Introduzione al lavoro in team in Microsoft 365**](/learn/modules/intro-to-teamwork-in-m365/index) - Le caratteristiche del corso di certificazione Microsoft Service Adoption Specialist Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.        |[**Microsoft 365 Certified: Teamwork Administrator Associate**](/learn/certifications/m365-teamwork-administrator) - Microsoft 365 Teamwork Administrators configura, distribuisce e gestisce i carichi di lavoro di Microsoft 365 o Office 365, ad esempio SharePoint (online, locale e ibrido), OneDrive e Teams.        |
+|Teams essenziali per [**l'IT**](https://aka.ms/MicrosoftTeamsforIT) - La serie di video "Teams for IT" di Microsoft Mechanics mostra all'amministratore come implementare, configurare e gestire Teams.     |[**Supportare i**](support-remote-work-with-teams.md#support-remote-workers-using-microsoft-teams) lavoratori remoti Microsoft Teams - Ottenere le indicazioni necessarie, inclusi i collegamenti alla formazione, per supportare gli utenti che lavorano da casa.         |Gestire la collaborazione in team [**per l'IT-**](/learn/paths/m365-manage-team-collaboration) Informazioni su come usare i Teams per facilitare il lavoro in team e la comunicazione all'interno dell'organizzazione tra applicazioni e dispositivi.         |
+|[**Certificazione Service Adoption Specialist**](/learn/paths/m365-service-adoption) : il corso di certificazione Microsoft Service Adoption Specialist Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.     |[**Introduzione al lavoro in team in Microsoft 365**](/learn/modules/intro-to-teamwork-in-m365/index) - Le funzionalità del corso di certificazione Microsoft Service Adoption Specialist sono Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.        |[**Microsoft 365 Certified: Teamwork Administrator Associate-**](/learn/certifications/m365-teamwork-administrator) Microsoft 365 Teamwork Administrators configura, distribuisce e gestisce i carichi di lavoro di Microsoft 365 o Office 365, ad esempio SharePoint (online, locale e ibrido), OneDrive e Teams.        |
 
 <h2>Formazione tecnica</h2>
 
@@ -62,7 +62,7 @@ Usare le risorse di formazione per istruirsi sulle Teams, insegnare ad altri o e
 | Routing diretto | [Video 1: Pianificazione del routing diretto in Teams](https://aka.ms/teams-dr-plan)<br>[Video 2: Configurazione e gestione del routing diretto in Teams](https://aka.ms/teams-dr-config)<br>[Video 3: Migrazione al routing diretto in Teams](https://aka.ms/teams-dr-migrate)  | [Presentazione](https://aka.ms/teams-direct-routing-deck) |
 | Aggiornamento da Skype for Business a Teams | [Video 1: Introduzione all'aggiornamento](https://aka.ms/teams-upgrade-intro)</br>[Video 2: Pianificare l'aggiornamento](https://aka.ms/teams-upgrade-plan)</br>[Video 3: Coesistenza e interoperabilità](https://aka.ms/teams-upgrade-coexistence-interop)</br>[Video 4: Esperienza dell'amministratore](https://aka.ms/teams-upgrade-admin) | [Presentazione](https://aka.ms/teams-upgrade-deck)|
 
-<h2>Teams Rooms Fondamenta per professionisti IT & AV</h2>
+<h2>Teams Rooms Basi per professionisti IT & AV</h2>
 
 <p>La tabella seguente contiene collegamenti a corsi di formazione video completi, con PowerPoint presentazione (in formato PDF) in Microsoft Teams Rooms.  
 
@@ -75,12 +75,12 @@ Usare le risorse di formazione per istruirsi sulle Teams, insegnare ad altri o e
 | Modulo 5: Configurazione e avvio Microsoft Teams Rooms (32:27 min) | [Video](https://www.youtube.com/watch?v=Q_6F6CNcpxI) | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-5-starting-and-configuring-teams-rooms.pdf?raw=true) |
 | Modulo 6: Gestione Microsoft Teams Rooms, Parte 1 (18:31 min) | [Video](https://www.youtube.com/watch?v=XMoZa9XGQfw) | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-6-managing-teams-rooms-part-1.pdf?raw=true) |
 | Modulo 7: Gestione Microsoft Teams Rooms, Parte 2 (41:06 min) | [Video](https://www.youtube.com/watch?v=vDCYM5sKylc) | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-7-managing-teams-rooms-part-2.pdf?raw=true) |
-| Modulo 8: Microsoft Teams Rooms-- Suggerimenti, trucchi e risoluzione dei problemi (18:14 min)|[Video](https://www.youtube.com/watch?v=W3b-iRrFECA)  | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-8a-tips-tricks-troubleshooting.pdf?raw=true)|
+| Modulo 8: Microsoft Teams Rooms--Suggerimenti, trucchi e risoluzione dei problemi (18:14 min)|[Video](https://www.youtube.com/watch?v=W3b-iRrFECA)  | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-8a-tips-tricks-troubleshooting.pdf?raw=true)|
 | Istruzioni di join con un solo tocco |  | [Presentazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-8b-one-touch-join-instructions.pdf?raw=true)  |
 
 <h2>Teams Dispositivi Android</h2>
 
-<p>La tabella seguente contiene collegamenti a corsi di formazione completi, con deck di PowerPoint (in formato PDF), su dispositivi Android Microsoft Teams che includono schermi Teams, telefoni Teams, Teams Rooms per Android e pannelli Teams.  
+<p>La tabella seguente contiene collegamenti a corsi di formazione completi, con PowerPoint deck (in formato PDF), su dispositivi Android Microsoft Teams che includono schermi Teams, telefoni Teams, Teams Rooms per Android e pannelli Teams.  
 
 | Modulo | PowerPoint presentazione (PDF)  |
 | ------------| -------------------- |
@@ -98,17 +98,17 @@ Usare le risorse di formazione per istruirsi sulle Teams, insegnare ad altri o e
 | Criteri di prevenzione della perdita dei dati per Microsoft Teams                     | Informazioni su come aggiungere Microsoft Teams criteri di prevenzione della perdita dei dati esistenti e come creare un nuovo criterio, in base a un modello o completamente personalizzato in base alle esigenze di protezione dei dati dell'organizzazione.                        | [Teams Guida alla prevenzione della perdita dei dati](https://aka.ms/teamsdlpguide)         |
 | Gestione della conformità in Teams                                                | Usare le Microsoft 365 Security, Microsoft 365 Compliance e Microsoft Teams admin center, nonché Windows PowerShell per gestire e configurare i criteri di Microsoft Teams di un'organizzazione Office 365 Impostazioni. | [Gestione della conformità in Teams guida](https://aka.ms/complianceinteamsinteractiveguide)      |
 | Teams Advisor: Distribuzione di chat, team, canali e app in Microsoft Teams | Informazioni su come usare Teams advisor per valutare l'ambiente e creare un piano per la distribuzione di chat, team, canali e app.                                                                                         |  [Teams Guida per gli consulenti](https://aka.ms/MicrosoftTeamsAdvisorInteractiveguide)  |
-| Snellire l Teams di amministrazione con PowerShell e i gruppi dinamici        | Convertire un gruppo Office 365'appartenenza statica in dinamico e usare Windows PowerShell per assegnare un nuovo criterio di autorizzazione app a tutti i membri.                                                                         |  [Guida all'Teams di amministrazione](https://aka.ms/StreamliningTeamsadminInteractiveGuide) |
-| Gestione Teams e Accesso guest nell'Microsoft Teams di amministrazione         | Informazioni su come configurare e gestire l'Microsoft Teams e l'accesso guest per l'organizzazione.                                                                                                                              | [Guida alla gestione Teams e accesso guest](https://aka.ms/TeamsandGuestAccessInteractiveGuide)    |
-| Configurare Teams Sistema telefonico: Operatore automatico & di chiamata                   | Eseguire il processo di creazione e distribuzione di una coda di chiamata e di Operatore automatico nell'ambito delle chiamate Microsoft Teams tramite l'interfaccia Microsoft Teams di amministrazione.                                                          |  [Configurazione della Teams del sistema telefonico](https://aka.ms/TeamsPhoneInteractiveGuide)             |
+| Snellire l Teams amministrativa con PowerShell e i gruppi dinamici        | Convertire un gruppo Office 365'appartenenza statica in dinamico e usare Windows PowerShell per assegnare un nuovo criterio di autorizzazione app a tutti i membri.                                                                         |  [Guida all'Teams di amministrazione](https://aka.ms/StreamliningTeamsadminInteractiveGuide) |
+| Gestione Teams e Accesso guest nell'interfaccia Microsoft Teams di amministrazione         | Informazioni su come configurare e gestire l'Microsoft Teams e l'accesso guest per l'organizzazione.                                                                                                                              | [Guida alla Teams e all'accesso guest](https://aka.ms/TeamsandGuestAccessInteractiveGuide)    |
+| Configurare Teams Sistema telefonico: coda Operatore automatico & chiamata                   | Eseguire il processo di creazione e distribuzione di una coda di chiamata e di un Operatore automatico nell'ambito delle chiamate Microsoft Teams tramite l'interfaccia di amministrazione Microsoft Teams servizio.                                                          |  [Configurazione della Teams del sistema telefonico](https://aka.ms/TeamsPhoneInteractiveGuide)             |
 | Configurare il routing diretto: connessione di SBC e routing vocale                 | Usare Microsoft Teams Sistema telefonico routing diretto per l'integrazione con l'infrastruttura di telefonia esistente.                                                                                                              | [Guida alla configurazione del routing diretto](https://aka.ms/DirectRoutingInteractiveGuide)          |
-| Configurare la governance in Microsoft Teams                                     | Informazioni su come creare criteri di conservazione Teams messaggistica per l'organizzazione e su come archiviare, eliminare e ripristinare singoli Teams                                                                                   |  [Configurare la governance in Microsoft Teams guida](https://aka.ms/TeamsGovernanceInteractiveGuide)        |
+| Configurare la governance in Microsoft Teams                                     | Informazioni su come creare criteri di conservazione Teams messaggistica per l'organizzazione e su come archiviare, eliminare e ripristinare singoli Teams                                                                                   |  [Configurare la governance nella guida Microsoft Teams governance](https://aka.ms/TeamsGovernanceInteractiveGuide)        |
 | Configurazione e distribuzione di riunioni Microsoft Teams riunioni                          | Eseguire il processo di distribuzione del carico di lavoro delle riunioni per Microsoft Teams.                                                                                                                                       |  [Guida alla configurazione e alla distribuzione Microsoft Teams riunioni](https://aka.ms/TeamsMeetingsInteractiveGuide)          |
 | Configurare le audioconferenze per Microsoft Teams                            | Scopri le funzionalità di audioconferenza in Teams e scopri come assegnare bridge di conferenza e numeri di telefono per l'accesso esterno.                                                                                          |  [Configurazione di audioconferenze per Microsoft Teams guida](https://aka.ms/AudioConferencingInteractiveGuide)      |
 | Configurazione di Microsoft Teams per Firstline Worker                           | Informazioni su come configurare e distribuire l'ambiente Microsoft Teams per Firstline Workforce.                                                                                                                  | [Guida alla configurazione Microsoft Teams per Firstline Workers](https://aka.ms/ConfigFLWInteractiveGuide)              |
-| Identity for the frontline workforce: Empower IT, managers, and frontline workers                    | Informazioni su come integrare i Microsoft Teams con i sistemi HR esistenti, configurare la gestione delle identità con delega leggera e configurare l'accesso semplificato e transizioni fluide per gli utenti che usano dispositivi condivisi.                                                                                                                  | [Guida all'identità dei lavoratori in prima linea](https://aka.ms/FLWIdentityIG)              |
+| Identity for the frontline workforce: Empower IT, managers, and frontline workers                    | Informazioni su come integrare Microsoft Teams con i sistemi HR esistenti, configurare la gestione delle identità con delega leggera e configurare l'accesso semplificato e transizioni fluide per gli utenti che usano dispositivi condivisi.                                                                                                                  | [Guida all'identità dei lavoratori in prima linea](https://aka.ms/FLWIdentityIG)              |
 | Distribuzione di Microsoft Teams Rooms                           | Informazioni su come creare e configurare un account da usare con Microsoft Teams Rooms e gestire il dispositivo nell'Microsoft Teams di amministrazione.                                                                                                                  | [Distribuzione di Microsoft Teams Rooms](https://aka.ms/teamsroomslab)              |
-|Uso di Teams dispositivi Android certificati|Informazioni su come gestire e aggiornare Microsoft Teams telefoni, Microsoft Teams schermi, Microsoft Teams Rooms e Microsoft Teams pannelli.|[Uso di dispositivi Microsoft Teams Android certificati](https://aka.ms/teamsandroiddeviceslab)|
+|Uso di dispositivi Teams Android certificati|Informazioni su come gestire e aggiornare Microsoft Teams telefoni, Microsoft Teams schermi, Microsoft Teams Rooms e Microsoft Teams pannelli.|[Uso dei Microsoft Teams Android certificati](https://aka.ms/teamsandroiddeviceslab)|
 
 <h2>Guide introduttive</h2>
 

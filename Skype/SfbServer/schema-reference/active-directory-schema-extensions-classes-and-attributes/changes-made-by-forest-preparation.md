@@ -2,7 +2,7 @@
 title: Modifiche apportate dalla preparazione della foresta in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 2e12613e-59f2-4810-a32d-24a9789a4a6e
 description: In questa sezione vengono descritti gli oggetti e le impostazioni globali e i gruppi amministrativi e di servizio universali creati durante il passaggio di preparazione della foresta.
-ms.openlocfilehash: 3da4c97a5dab0b7738f01201f9c0cc5b4e34a782
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 8226c2e9b692699902faa751fafe14424e43ed45
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745872"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60828639"
 ---
 # <a name="changes-made-by-forest-preparation-in-skype-for-business-server"></a>Modifiche apportate dalla preparazione della foresta in Skype for Business Server
 
@@ -74,7 +74,7 @@ Nella tabella riportata di seguito vengono descritti i gruppi di servizio.
 |RTCComponentUniversalServices  <br/> |Include gli account di servizio utilizzati per eseguire A/V Conferencing Server, Servizi Web, Mediation Server, Server di archiviazione e Monitoring Server.  <br/> |
 |RTCProxyUniversalServices  <br/> |Include gli account di servizio utilizzati per eseguire Skype for Business Server server perimetrali.  <br/> |
 |RTCUniversalConfigReplicator  <br/> |Include i server che possono partecipare alla Skype for Business Server dell'archivio di gestione centrale.  <br/> |
-|RTCSBAUniversalServices  <br/> |Concede l'accesso in sola lettura alle Skype for Business Server, ma consente la configurazione per l'installazione di un survivable branch server e di una distribuzione di survivable branch appliance.  <br/> |
+|RTCSBAUniversalServices  <br/> |Concede l'accesso in sola lettura alle impostazioni Skype for Business Server, ma consente la configurazione per l'installazione di un survivable branch server e di una distribuzione di survivable branch appliance.  <br/> |
 
 Durante la preparazione della foresta vengono quindi aggiunti i gruppi amministrativi e di servizio ai gruppi di infrastruttura appropriati, come indicato di seguito:
 

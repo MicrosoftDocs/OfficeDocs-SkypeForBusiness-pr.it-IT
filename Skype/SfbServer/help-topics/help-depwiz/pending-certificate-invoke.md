@@ -2,7 +2,7 @@
 title: Certificato in sospeso (Invoke)
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: adb5e0f3-17a6-40c2-9c95-c9cd2b558b54
 description: Nella pagina Esecuzione comandi in corso viene visualizzato lo stato dei comandi che recuperano il certificato in sospeso. Al termine dell'attività, diventa disponibile il file di registro Recupero certificati in sospeso. Fare clic su Visualizza registro per visualizzare lo stato di elaborazione e di completamento dell'attività. Fare clic su Avanti per continuare.
-ms.openlocfilehash: ab5ffd29cecc206b0723b5e8daf69a5ffe628165
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 23bbfca4e36fffc12039bf220f863dfe1131530f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60739652"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60831090"
 ---
 # <a name="pending-certificate-invoke"></a>Certificato in sospeso (Invoke)
  

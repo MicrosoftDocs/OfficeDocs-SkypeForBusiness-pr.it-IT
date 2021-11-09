@@ -1,6 +1,6 @@
 ---
 title: Usare il componente aggiuntivo Riunione di Microsoft Teams in Outlook
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 audience: Admin
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 687bd993eb972a1d459812a54f81e364b9d64a22
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 38787b6f3fe11c1dfd8a9883f06bf19206360ec6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749112"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60840898"
 ---
 # <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 
@@ -114,7 +114,7 @@ A causa di alcune limitazioni nel rilascio iniziale, Outlook Mobile supporta sol
 
 Come amministratore, è possibile configurare un'impostazione criterio per le riunioni di Teams per controllare quale componente aggiuntivo per le riunioni di Outlook viene usato per *gli utenti in modalità Isole*. È possibile specificare se gli utenti possono usare solo il componente aggiuntivo Riunione di Teams o sia Riunione di Teams che Riunione di Skype for Business per programmare le riunioni in Outlook.
 
-È possibile applicare questo criterio agli utenti in modalità Isole e hanno impostato il parametro **AllowOutlookAddIn** su **True** nel loro criterio per le riunioni di Teams. Per la procedura su come impostare questo criterio, vedere [Impostazioni dei criteri di riunione - Generale](meeting-policies-in-teams-general.md#meeting-provider-for-islands-mode).
+È possibile applicare questo criterio agli utenti in modalità Isole e che hanno impostato il parametro **AllowOutlookAddIn** su **True** nel loro criterio per le riunioni di Teams. Per la procedura su come impostare questo criterio, vedere [Impostazioni dei criteri di riunione - Generale](meeting-policies-in-teams-general.md#meeting-provider-for-islands-mode).
 
 ## <a name="other-considerations"></a>Altre considerazioni
 

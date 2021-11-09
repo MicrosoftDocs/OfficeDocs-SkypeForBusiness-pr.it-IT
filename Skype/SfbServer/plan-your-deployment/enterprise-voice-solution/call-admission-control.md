@@ -2,7 +2,7 @@
 title: Pianificare il controllo di ammissione di chiamata in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/16/2018
 audience: ITPro
@@ -16,17 +16,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 6fda0195-4c89-4dea-82e8-624f03e3d062
-description: Informazioni sul controllo di ammissione di chiamata, che può impedire l'accesso alle chiamate se la qualità del contenuto multimediale non è Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 59b8d3f74d138e087f4a5b49b7a40d6ec935a829
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: Informazioni sul controllo di ammissione di chiamata, che può impedire l'accesso alle chiamate se hanno una qualità multimediale scarsa, in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: 6260321a29ad138fae41eacb9a1bee5d322d1684
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60768644"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60841078"
 ---
 # <a name="plan-for-call-admission-control-in-skype-for-business-server"></a>Pianificare il controllo di ammissione di chiamata in Skype for Business Server
 
-Informazioni sul controllo di ammissione di chiamata, che può impedire l'accesso alle chiamate se la qualità del contenuto multimediale non è Skype for Business Server VoIP aziendale.
+Informazioni sul controllo di ammissione di chiamata, che può impedire l'accesso alle chiamate se hanno una qualità multimediale scarsa, in Skype for Business Server VoIP aziendale.
 
 Per le applicazioni basate su IP, ad esempio telefonia, video e condivisione di applicazioni, la larghezza di banda disponibile delle reti aziendali non è generalmente considerata un fattore limitante negli ambienti LAN. Nei collegamenti WAN tra i siti tuttavia la larghezza di banda della rete può essere limitata.
 
@@ -37,7 +37,7 @@ Il Servizio Controllo di ammissione di chiamata determina se è disponibile una 
 In questa sezione viene descritta la funzionalità di Controllo di ammissione di chiamata e viene illustrata la relativa pianificazione.
 
 > [!NOTE]
-> Skype for Business Server dispone di tre funzionalità VoIP aziendale avanzate: controllo di ammissione di chiamata, servizi di emergenza (E9-1-1) e bypass multimediale. Per una panoramica delle informazioni di pianificazione comuni a tutte e tre queste funzionalità, vedere Impostazioni di rete per le funzionalità VoIP aziendale avanzate [in Skype for Business Server](network-settings-for-advanced-features.md).
+> Skype for Business Server dispone di tre funzionalità VoIP aziendale avanzate: controllo di ammissione di chiamata, servizi di emergenza (E9-1-1) e bypass multimediale. Per una panoramica delle informazioni di pianificazione comuni a tutte e tre queste funzionalità, vedere Impostazioni di rete per le funzionalità VoIP aziendale [avanzate in Skype for Business Server](network-settings-for-advanced-features.md).
 
 La progettazione del controllo di ammissione di Skype for Business Server offre quattro attributi principali:
 
@@ -90,9 +90,9 @@ Il controllo di ammissione di chiamata non viene applicato oltre i limiti dell S
 
 ### <a name="call-admission-control-of-pstn-connections"></a>Controllo di ammissione di chiamata di connessioni PSTN
 
-Il controllo di ammissione di chiamata è applicabile nel Mediation Server indipendentemente dal fatto che sia connesso a un IP/PBX, a un gateway PSTN o a un trunk SIP. Poiché Mediation Server è un agente utente back-to-back (B2BUA), termina i supporti. Ha due lati di connessione: un lato connesso a Skype for Business Server e un lato gateway, che è connesso a gateway PSTN, IP/PBX o trunk SIP. Per informazioni dettagliate sulle connessioni PSTN, vedere [Plan for PSTN connectivity in Skype for Business Server](pstn-connectivity-0.md).
+Il controllo di ammissione di chiamata è applicabile nel Mediation Server indipendentemente dal fatto che sia connesso a un IP/PBX, a un gateway PSTN o a un trunk SIP. Poiché Mediation Server è un agente utente back-to-back (B2BUA), termina i supporti. Ha due lati di connessione: un lato connesso a Skype for Business Server e un lato gateway, connesso a gateway PSTN, IP/PBX o trunk SIP. Per informazioni dettagliate sulle connessioni PSTN, vedere [Plan for PSTN connectivity in Skype for Business Server](pstn-connectivity-0.md).
 
-Il controllo di ammissione di chiamata può essere applicato su entrambi i lati del Mediation Server, a meno che non sia abilitato il bypass multimediale. Se il bypass multimediale è abilitato, il traffico multimediale non attraversa il Mediation Server, ma passa direttamente tra il client Skype for Business e il gateway. In questo caso, il controllo di ammissione di chiamata non è necessario. Per informazioni dettagliate, vedere [Plan for media bypass in Skype for Business](media-bypass.md).
+Il controllo di ammissione di chiamata può essere applicato su entrambi i lati del Mediation Server, a meno che non sia abilitato il bypass multimediale. Se il bypass multimediale è abilitato, il traffico multimediale non attraversa il Mediation Server, ma scorre direttamente tra il client Skype for Business e il gateway. In questo caso, il controllo di ammissione di chiamata non è necessario. Per informazioni dettagliate, vedere [Plan for media bypass in Skype for Business](media-bypass.md).
 
 Nella figura seguente viene illustrata l'applicazione di controllo di ammissione di chiamata in connessioni PSTN con o senza il bypass multimediale abilitato.
 
@@ -138,10 +138,10 @@ La topologia dell'esempio include tre aree di rete, ovvero Nord America, EMEA e 
 
 ### <a name="associating-a-central-site-with-each-network-region"></a>Associazione di un sito centrale a ogni area di rete
 
-Il controllo di ammissione di chiamata richiede Skype for Business Server un sito centrale per ogni area di rete. Il sito centrale selezionato deve avere la connettività di rete più efficiente e la larghezza di banda più ampia verso tutti gli altri siti nell'area di rete. La topologia di rete dell'esempio precedente mostra tre aree di rete, ognuna con un sito centrale che gestisce le decisioni relative al servizio Controllo di ammissione di chiamata. Per questo esempio l'associazione appropriata è illustrata nella tabella seguente.
+Il servizio controllo di ammissione di Skype for Business Server è definito per ogni area di rete. Il sito centrale selezionato deve avere la connettività di rete più efficiente e la larghezza di banda più ampia verso tutti gli altri siti nell'area di rete. La topologia di rete dell'esempio precedente mostra tre aree di rete, ognuna con un sito centrale che gestisce le decisioni relative al servizio Controllo di ammissione di chiamata. Per questo esempio l'associazione appropriata è illustrata nella tabella seguente.
 
 > [!NOTE]
-> I siti centrali non corrispondono necessariamente a siti di rete. Negli esempi in questa documentazione alcuni siti centrali, come Chicago, Londra e Pechino, hanno lo stesso nome di alcuni siti di rete. Tuttavia, anche se un sito centrale e un sito di rete condividono lo stesso nome, il sito centrale è un elemento della topologia di Skype for Business Server, mentre il sito di rete fa parte della rete complessiva in cui si trova la topologia Skype for Business Server.
+> I siti centrali non corrispondono necessariamente a siti di rete. Negli esempi in questa documentazione alcuni siti centrali, come Chicago, Londra e Pechino, hanno lo stesso nome di alcuni siti di rete. Tuttavia, anche se un sito centrale e un sito di rete condividono lo stesso nome, il sito centrale è un elemento della topologia di Skype for Business Server, mentre il sito di rete fa parte della rete complessiva in cui risiede la topologia Skype for Business Server.
 
 **Aree di rete, siti centrali e siti di rete**
 
@@ -240,7 +240,7 @@ Per ogni sito di rete sarà necessario collaborare con l'amministratore della re
 In questo esempio, al sito New York nell'area Nord America sono assegnate le subnet IP seguenti: 172.29.80.0/23, 157.57.216.0/25, 172.29.91.0/23, 172.29.81.0/24. Si supponga che Bob, che di solito lavora a Detroit, si sposti nell'ufficio di New York per un corso di formazione. Quando accende il suo computer e si connette alla rete, al computer verrà assegnato un indirizzo IP in uno dei quattro intervalli prenotati per New York, ad esempio 172.29.80.103.
 
 > [!CAUTION]
-> Le subnet IP specificate durante la configurazione della rete nel server devono corrispondere al formato specificato dai computer client per poter essere utilizzate correttamente per il bypass multimediale. Un Skype for Business client accetta l'indirizzo IP locale e maschera l'indirizzo IP con la subnet mask associata. Durante la determinazione dell'ID di bypass associato a ogni client, la funzione di registrazione confronterà l'elenco delle subnet IP associate a ogni sito di rete con la subnet fornita dal client per individuare una corrispondenza esatta. Per questo motivo è importante che le subnet immesse durante la configurazione della rete nel server siano subnet effettive, anziché virtuali. Se si distribuisce il controllo di ammissione di chiamata, ma non il bypass multimediale, il controllo di ammissione di chiamata funzionerà correttamente anche se si configurano subnet virtuali. Ad esempio, se un client accede a un computer con indirizzo IP 172.29.81.57 con una subnet mask IP di 255.255.255.0, Skype for Business richiederà l'ID bypass associato alla subnet 172.29.81.0. Se la subnet è definita come 172.29.0.0/16, anche se il client appartiene alla subnet virtuale, la funzione di registrazione non la considererà una corrispondenza esatta perché cerca nello specifico la subnet 172.29.81.0. Pertanto, è importante che l'amministratore immissione subnet esattamente come fornito dai client Skype for Business (di cui viene eseguito il provisioning con subnet durante la configurazione di rete in modo statico o da DHCP).
+> Le subnet IP specificate durante la configurazione della rete nel server devono corrispondere al formato specificato dai computer client per poter essere utilizzate correttamente per il bypass multimediale. Un Skype for Business client utilizza l'indirizzo IP locale e maschera l'indirizzo IP con la subnet mask associata. Durante la determinazione dell'ID di bypass associato a ogni client, la funzione di registrazione confronterà l'elenco delle subnet IP associate a ogni sito di rete con la subnet fornita dal client per individuare una corrispondenza esatta. Per questo motivo è importante che le subnet immesse durante la configurazione della rete nel server siano subnet effettive, anziché virtuali. Se si distribuisce il controllo di ammissione di chiamata, ma non il bypass multimediale, il controllo di ammissione di chiamata funzionerà correttamente anche se si configurano subnet virtuali. Ad esempio, se un client accede a un computer con indirizzo IP 172.29.81.57 con una subnet mask IP di 255.255.255.0, Skype for Business richiederà l'ID bypass associato alla subnet 172.29.81.0. Se la subnet è definita come 172.29.0.0/16, anche se il client appartiene alla subnet virtuale, la funzione di registrazione non la considererà una corrispondenza esatta perché cerca nello specifico la subnet 172.29.81.0. Di conseguenza, è importante che l'amministratore immissione di subnet esattamente come fornito dai client Skype for Business (di cui viene eseguito il provisioning con subnet durante la configurazione di rete in modo statico o da DHCP).
 
 ## <a name="best-practices-for-call-admission-control"></a>Procedure consigliate per il controllo di ammissione di chiamata
 

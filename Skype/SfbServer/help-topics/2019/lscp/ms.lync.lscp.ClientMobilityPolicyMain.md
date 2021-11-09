@@ -2,7 +2,7 @@
 title: Criteri per dispositivi mobili client
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 6ab53530-143d-4f1e-90cd-a92685f98a20
 ROBOTS: NOINDEX, NOFOLLOW
 description: Nella pagina ClientCriteri dispositivi mobili vengono visualizzati i criteri dispositivi mobili disponibili nella distribuzione.
-ms.openlocfilehash: 45882ca5a3c894b95b75d357855647ba2c993df8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e4b030ac2665c833f19844d1f792be874d2324bd
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757978"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60840488"
 ---
 # <a name="clients-mobility-policy"></a>Client: criteri dispositivi mobili
 

@@ -2,7 +2,7 @@
 title: Aggiungere caratteristiche di Front End Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 97441ec2-573a-4ba4-ab4c-df4cf6baf321
 ROBOTS: NOINDEX, NOFOLLOW
 description: Selezionare tutte le funzionalità che si desidera abilitare per il pool Front End. È necessario distribuire come minimo la messaggistica istantanea, che è sempre abilitata e non può essere disabilitata. È inoltre possibile distribuire altre funzionalità, ad esempio le conferenze, VoIP aziendale e il servizio Controllo di ammissione di chiamata. Alcune funzionalità variano a seconda della topologia.
-ms.openlocfilehash: 8c9b615a721ff33abc20ebb049e3d18f5ed0ccd8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 6989234d12c4e6a415eb9949550a6ad1c187b25a
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60760099"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60832600"
 ---
 # <a name="add-front-end-features"></a>Aggiungere funzionalità di Front End Server
 

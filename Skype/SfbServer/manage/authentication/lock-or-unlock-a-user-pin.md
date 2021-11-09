@@ -2,7 +2,7 @@
 title: Bloccare o sbloccare un PIN utente in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 3d293a8a-e182-4547-8b06-2603c3c77329
 description: 'Riepilogo: bloccare o sbloccare il PIN di conferenza telefonica con accesso esterno di un utente per Skype for Business Server.'
-ms.openlocfilehash: ccd575182bbac85b20879eaec8bb3e7a951fda1e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 1ae1deea84b099852decd9acbc6315049484b0b3
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762514"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60848599"
 ---
 # <a name="lock-or-unlock-a-user-pin-in-skype-for-business-server"></a>Bloccare o sbloccare un PIN utente in Skype for Business Server
  
@@ -26,11 +26,11 @@ ms.locfileid: "60762514"
   
 Puoi bloccare o sbloccare il PIN di un utente dalla **sezione Utenti** Skype for Business Server Pannello di controllo.
   
-### <a name="to-lock-a-users-pin-in-skype-for-business-server-control-panel"></a>Per bloccare il PIN di un utente nel Skype for Business Server di controllo
+### <a name="to-lock-a-users-pin-in-skype-for-business-server-control-panel"></a>Per bloccare il PIN di un utente nel Skype for Business Server Pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.  
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
@@ -57,11 +57,11 @@ Puoi bloccare o sbloccare il PIN di un utente dalla **sezione Utenti** Skype for
     
    f. Fare clic sull'utente, su **Azione** e quindi su **Blocca PIN**.
     
-### <a name="to-unlock-a-users-pin-in-skype-for-business-server-control-panel"></a>Per sbloccare il PIN di un utente nel Skype for Business Server di controllo
+### <a name="to-unlock-a-users-pin-in-skype-for-business-server-control-panel"></a>Per sbloccare il PIN di un utente nel Skype for Business Server pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.  
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     

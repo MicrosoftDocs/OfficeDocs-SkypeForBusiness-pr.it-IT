@@ -1,6 +1,6 @@
 ---
 title: Disponibilità a Saint Kitts e Nevis
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole, fafan
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per Saint Kitts e Nevis.
-ms.openlocfilehash: acb4b5f60248f1a881a8ecb2f392c20b4a389f08
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 0fd87457c253964d91d91af9d5d4cbb22c9a6d88
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745632"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60840878"
 ---
 # <a name="availability-in-saint-kitts-and-nevis"></a>Disponibilità a Saint Kitts e Nevis
 
@@ -72,7 +72,7 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 |Sono disponibili numeri verdi a tariffa?  <br/> |No <br/> |
 |Sono disponibili numeri a numero verde?  <br/> |Sì  <br/> |
    
- Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere i numeri di telefono del servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
+ Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di [chiamata,](../getting-service-phone-numbers.md)vedere Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams .
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

@@ -2,7 +2,7 @@
 title: Espansione dei computer Persistent Chat
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 15bc1c8f-71bd-4d66-bba1-cac0f2fe90bf
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile attivare o disattivare un server Chat persistente distribuito o un pool di server Chat persistente utilizzando i server o i pool elencati nelle impostazioni dello stato del computer. Selezionare un server o pool dall'elenco e fare clic sul pulsante Rendi attivo per impostare un server o pool come attivo.
-ms.openlocfilehash: fb47b572aae7859071edae4c6c38a905c6a9e1ab
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 140d7fa534451d2755a02584f50eb31564d22d26
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60764324"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60831150"
 ---
 # <a name="persistent-chat-machines-expander"></a>Espansione dei computer Persistent Chat
 

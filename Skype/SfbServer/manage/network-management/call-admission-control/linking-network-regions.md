@@ -2,7 +2,7 @@
 title: Collegamento di aree di rete
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: "È possibile configurare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. "
-ms.openlocfilehash: d194daf8e35a3e4b6b23c1c34fc8b4d4c2fea14f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 718f9223749c86fdff5ce98d1d652a0a3f1a9fbc
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60746892"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60841178"
 ---
 # <a name="linking-network-regions-in-skype-for-business-server"></a>Collegamento delle aree di rete in Skype for Business Server
 
@@ -24,14 +24,14 @@ ms.locfileid: "60746892"
 
 ## <a name="view-network-region-link-information"></a>Visualizzare le informazioni sui collegamenti dell'area di rete 
 
-È possibile visualizzare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. Le aree di una rete sono collegate mediante una connettività WAN fisica. Puoi usare il Pannello di controllo Skype for Business Server per visualizzare un collegamento esistente tra due aree di rete. 
+È possibile visualizzare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. Le aree di una rete sono collegate mediante una connettività WAN fisica. Puoi usare il Pannello Skype for Business Server per visualizzare un collegamento esistente tra due aree di rete. 
 
 
 ### <a name="to-view-a-network-region-link-in-skype-for-business-server-control-panel"></a>Per visualizzare un collegamento a un'area di rete Skype for Business Server Pannello di controllo
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Collegamento **area.**
 
@@ -42,9 +42,9 @@ ms.locfileid: "60746892"
 
 5.  Scegliere **Elimina** dal menu **Mostra dettagli**.
 
-### <a name="view-network-region-link-information-by-using-windows-powershell-cmdlets"></a>Visualizzare le informazioni sui collegamenti dell'area di rete Windows PowerShell cmdlet
+### <a name="view-network-region-link-information-by-using-windows-powershell-cmdlets"></a>Visualizzare le informazioni sui collegamenti di area di rete Windows PowerShell cmdlet
 
-È possibile visualizzare i collegamenti di area di rete utilizzando Windows PowerShell e il cmdlet **Get-CsNetworkRegionLink.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+È possibile visualizzare i collegamenti di aree di rete utilizzando Windows PowerShell e il cmdlet **Get-CsNetworkRegionLink.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
 
 
 ### <a name="to-view-network-region-link-information"></a>Per visualizzare informazioni su un collegamento area di rete
@@ -63,13 +63,13 @@ Per informazioni dettagliate, vedere [Get-CsNetworkRegionLink](/powershell/modul
 
 ## <a name="configure-network-region-links"></a>Configurare i collegamenti di area di rete 
 
-È possibile configurare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. Le aree di una rete sono collegate mediante una connettività WAN fisica. Puoi usare il Pannello di controllo Skype for Business Server per definire un collegamento tra due aree di rete e impostare i limiti di larghezza di banda per le connessioni audio e video tra queste aree.
+È possibile configurare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. Le aree di una rete sono collegate mediante una connettività WAN fisica. Puoi usare il Pannello di controllo Skype for Business Server per definire un collegamento tra due aree di rete e impostare le limitazioni di larghezza di banda per le connessioni audio e video tra queste aree.
 
 ### <a name="to-create-a-network-region-link"></a>Per creare un collegamento a un'area di rete
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Collegamento **area.**
 
@@ -92,7 +92,7 @@ Per informazioni dettagliate, vedere [Get-CsNetworkRegionLink](/powershell/modul
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Collegamento **area.**
 
@@ -107,13 +107,13 @@ Per informazioni dettagliate, vedere [Get-CsNetworkRegionLink](/powershell/modul
 
 ## <a name="delete-network-region-links"></a>Eliminare collegamenti di area di rete
 
-È possibile configurare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. Le aree di una rete sono collegate mediante una connettività WAN fisica. Puoi usare il Pannello di controllo Skype for Business Server per eliminare un collegamento esistente tra due aree di rete. 
+È possibile configurare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. Le aree di una rete sono collegate mediante una connettività WAN fisica. Puoi usare il Pannello di Skype for Business Server per eliminare un collegamento esistente tra due aree di rete. 
 
 ### <a name="to-delete-a-network-region-link"></a>Per eliminare un collegamento area di rete
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Collegamento **area.**
 

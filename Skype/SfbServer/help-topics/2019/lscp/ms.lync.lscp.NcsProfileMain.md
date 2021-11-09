@@ -2,7 +2,7 @@
 title: Profilo criteri larghezza di banda
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 6a7ad229-31f3-477e-b254-f45858213fa8
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 49ae145d0ee014e2099aaabb2eedb80342013639
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 60b38711b3ea1cdcb55aac68288b93df06dee552
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60741162"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60831480"
 ---
 # <a name="bandwidth-policy-profile"></a>Profilo criteri larghezza di banda
 

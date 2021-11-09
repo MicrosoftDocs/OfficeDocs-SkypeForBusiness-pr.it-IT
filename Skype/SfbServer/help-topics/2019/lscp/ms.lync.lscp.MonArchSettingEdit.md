@@ -2,7 +2,7 @@
 title: Configurazione di archiviazione Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 49096960-c442-4846-be8f-03c167acea41
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Le configurazioni di archiviazione vengono utilizzate per controllare le opzioni di archiviazione per la distribuzione. Le configurazioni di archiviazione includono la configurazione globale e, facoltativamente, una o più configurazioni di siti e pool:'
-ms.openlocfilehash: 2a9e3a64560e347c959b464fe8da57e994f2e5c9
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 145d86cce250204a219bd9e983a07765259b9144
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757908"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60831520"
 ---
 # <a name="archiving-configuration-create-new-or-edit-existing"></a>Configurazione archiviazione: crearne una nuova o modificarne una esistente
  

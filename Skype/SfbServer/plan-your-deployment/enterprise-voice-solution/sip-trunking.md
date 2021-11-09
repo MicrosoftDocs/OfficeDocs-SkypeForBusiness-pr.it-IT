@@ -2,7 +2,7 @@
 title: Trunking SIP in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 7c586401-d0e5-4017-b3e1-fe5e7f8fc6db
 description: Informazioni sul trunking SIP in Skype for Business Server VoIP aziendale
-ms.openlocfilehash: 599745b59d3597afa9e9f4cdc23b6c648fdbbab0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 6278526a83e5af4b0020c9dbb822eabad7053426
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60744192"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60841018"
 ---
 # <a name="sip-trunking-in-skype-for-business-server"></a>Trunking SIP in Skype for Business Server
 
@@ -76,7 +76,7 @@ Per informazioni dettagliate sui Mediation Server, vedere [Mediation Server comp
 
 ### <a name="centralized-vs-distributed-sip-trunking"></a>Trunking SIP centralizzato o distribuito
 
-Il trunking SIP centralizzato instrada tutto il traffico VoIP, incluso il traffico del sito di succursale, attraverso il sito centrale. Il modello di distribuzione centralizzata è semplice, conveniente ed è in genere l'approccio consigliato per l'implementazione dei trunk SIP con Skype for Business Server.
+Il trunking SIP centralizzato instrada tutto il traffico VoIP, incluso il traffico del sito di succursale, attraverso il sito centrale. Il modello di distribuzione centralizzata è semplice, conveniente ed è in genere l'approccio consigliato per l'implementazione di trunk SIP con Skype for Business Server.
 
 Il trunking SIP distribuito è un modello di distribuzione in cui vengono implementati trunk SIP locali in uno o più siti di succursale. Il traffico VoIP viene quindi instradato dal sito di succursale direttamente a un provider di servizi senza passare attraverso il sito centrale.
 
@@ -101,7 +101,7 @@ Per scegliere se distribuire il trunking SIP centralizzato o distribuito, è nec
 
 ### <a name="supported-sip-trunking-connection-types"></a>Tipi di connessione supportati per il trunking SIP
 
-Skype for Business Server supporta i tipi di connessione seguenti per il trunking SIP:
+Skype for Business Server supporta i seguenti tipi di connessione per il trunking SIP:
 
 - MPLS (Multiprotocol Label Switching) è una rete privata che indirizza e trasferisce i dati da un nodo di rete al successivo. La larghezza di banda in una rete MPLS viene condivisa con altri sottoscrittori e a ogni pacchetto di dati viene assegnata un'etichetta per distinguere i dati di un sottoscrittore da quello di un altro. Questo tipo di connessione non richiede una rete privata virtuale (VPN). Un potenziale svantaggio è che il traffico IP eccessivo può interferire con l'operazione VoIP a meno che non abbai priorità.
 

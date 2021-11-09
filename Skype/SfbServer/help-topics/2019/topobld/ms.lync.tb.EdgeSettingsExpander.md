@@ -2,7 +2,7 @@
 title: Espansione delle impostazioni del server perimetrale
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: c73780cd-0033-4287-9ecd-ecf65ca61e62
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le impostazioni per un pool con un solo server perimetrale o di più server perimetrali, sono disponibili queste sezioni:'
-ms.openlocfilehash: 7ea357ebf5b0de6001bd74b5dec9f54e33e8d914
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 1f67b701e97b02a5b801d93e2d5757cdff287aa3
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60739772"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60855943"
 ---
 # <a name="edge-settings-expander"></a>Espansione delle impostazioni del server perimetrale
 

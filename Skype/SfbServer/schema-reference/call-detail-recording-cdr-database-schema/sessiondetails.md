@@ -2,7 +2,7 @@
 title: Tabella SessionDetails
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 783d2508-e31f-4b54-be0c-63aa5ec21c04
 description: Ogni record rappresenta una sessione peer-to-peer, ovvero una chiamata telefonica VoIP-VoIP, una sessione di messaggistica istantanea con due partecipanti o un altro tipo di sessione. È possibile eseguire un table join con la tabella Media per trovare i dettagli di ogni supporto coinvolto in questa sessione.
-ms.openlocfilehash: 2dee827e93da94378e529964b2911ff1f79793ef
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e7b89dc242fb3e4adec215948915218b579631ef
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762024"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60863433"
 ---
 # <a name="sessiondetails-table"></a>Tabella SessionDetails
  
@@ -29,7 +29,7 @@ Si noti che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWithDeskPh
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**SessionIdTime** <br/> |datetime  <br/> |Primaria, esterna  <br/> |Data e ora della richiesta di sessione. Valore utilizzato insieme a **SessionIdSeq** per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) <br/> |
-|**SessionIdSeq** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero ID per identificare la sessione. Utilizzato insieme a **SessionIdTime** per identificare in modo univoco una sessione.* Per ulteriori informazioni, vedere la tabella [Dialogs in Skype for Business Server 2015.](dialogs.md) <br/> |
+|**SessionIdSeq** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero ID per identificare la sessione. Utilizzato insieme a **SessionIdTime** per identificare in modo univoco una sessione.* Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) <br/> |
 |**CorrelationId** <br/> |uniqueidentifier  <br/> ||GUID per correlare più sessioni.  <br/> |
 |**ReplaceDialogIdTime** <br/> |datetime  <br/> |Foreign  <br/> |Numero ID per l'identificazione della finestra di dialogo sostituita dalla sessione corrente. Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) <br/> |
 |**ReplaceDialogIdSeq** <br/> |int  <br/> |Foreign  <br/> |Numero ID per l'identificazione della sessione. Valore utilizzato in combinazione con **ReplacesDialogIdTime** per identificare in modo univoco una sessione sostituita da questa sessione. Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) <br/> |

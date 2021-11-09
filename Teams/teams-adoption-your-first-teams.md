@@ -1,6 +1,6 @@
 ---
 title: Creare i primi team in Microsoft Teams
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 11/01/2018
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a72fba1a2bfd8d0546d2f757df9a73b0aa55287e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 332c106ca8f3ea881bbef95805c1228a6687cc65
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749585"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60832980"
 ---
 # <a name="create-your-first-teams-in-microsoft-teams"></a>Creare i primi team in Microsoft Teams
 
@@ -51,7 +51,7 @@ Nei team iniziali è consigliabile aggiungere gli elementi seguenti per fare rif
 | Consapevolezza e adozione | [Teams Adoption Hub](https://aka.ms/DriveTeamsAdoption)<br/>[Microsoft Teams Customer Success Kit](https://aka.ms/TeamsCustomerSuccess)|
 | Coinvolgimento aziendale | Wiki - Indicazioni per l'impegno<br/>Modulo - Richiesta di Teams consulenza<br/>Elenco - Richieste di impegno |
 |Early adopters | Community di feedback aggiunta <br/> OneNote domande frequenti e temi comuni |
-| Feedback e segnalazione | Report sull'Microsoft 365 o sull Office 365 di utilizzo bloccati (solo per Microsoft 365 o Office 365 amministratori) |
+| Feedback e segnalazione | Report sull'utilizzo Microsoft 365 o Office 365 bloccati (solo per Microsoft 365 o Office 365 amministratori) |
 | Sicurezza e conformità | Portale di attendibilità Microsoft <br/> [Documentazione sulla sicurezza e la conformità](/office365/securitycompliance/index)<br/> [Roadmap](/office365/securitycompliance/security-roadmap) |
 | Strategia e pianificazione | Collaborazione North Star PowerPoint <br/> Piano di Project service adoption |
 | Formazione | Formazione personalizzata di formazione <br/> [Formazione online di Teams](https://aka.ms/TeamsTraining) |
@@ -64,6 +64,6 @@ Nei team iniziali è consigliabile aggiungere gli elementi seguenti per fare rif
 
 ## <a name="making-the-switch-to-microsoft-teams"></a>Passaggio a Microsoft Teams
 
-Quando si inizia a usare Teams, sarà importante che l'utente e il resto del team di progetto si impegnino Teams usare la chat, i canali e le risorse per eseguire il progetto. L'uso personale di Teams è fondamentale per la qualità del progetto di adozione. È consigliabile evitare di frammentare il progetto continuando a conversazioni con il team di progetto di base nella posta elettronica. Passando alla Teams si modella il comportamento che si vuole che i dipendenti si accoglino. Impostare il tono, iniziare a utilizzare le informazioni del progetto in un'unica posizione.  
+Quando si inizia a usare Teams, sarà importante che l'utente e il resto del team di progetto si impegnino Teams usare chat, canali e risorse per eseguire il progetto. L'uso personale di Teams è fondamentale per la qualità del progetto di adozione. È consigliabile evitare di frammentare il progetto continuando a conversazioni con il team di progetto di base nella posta elettronica. Se si passa a Teams si modella il comportamento che si vuole che i dipendenti si accoglino. Impostare il tono, iniziare a utilizzare le informazioni del progetto in un'unica posizione.  
 
 ![Icona che descrive il passaggio successivo.](media/teams-adoption-next-icon.png) Successiva: [Quanto è pronta l'organizzazione per Microsoft Teams?](teams-adoption-assess-readiness.md)

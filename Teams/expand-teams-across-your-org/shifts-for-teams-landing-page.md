@@ -1,8 +1,8 @@
 ---
 title: Turni per Teams
-description: Ottenere le indicazioni per l'amministratore necessarie per configurare e gestire Turni, lo strumento di gestione della pianificazione, in Teams.
+description: Ottenere le indicazioni per l'amministratore necessarie per configurare e gestire turni, lo strumento di gestione della pianificazione, in Teams.
 ms.topic: conceptual
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 audience: admin
 manager: serdars
@@ -21,16 +21,16 @@ searchScope:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 5e8de5e2c43751c1578678bff9e1f6e9099c4a6a
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 509345043de3e26821043322454ec4f0e4ad05a2
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756097"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60848209"
 ---
 # <a name="shifts-for-teams"></a>Turni per Teams
 
-Teams fornisce ai dipendenti in prima linea dell'organizzazione gli strumenti necessari per comunicare e collaborare in modo efficace. Vedere le risorse seguenti per altre informazioni su come configurare e gestire turni, lo strumento di gestione della pianificazione in Teams.
+Teams fornisce ai dipendenti in prima linea dell'organizzazione gli strumenti necessari per comunicare e collaborare in modo efficace. Vedere le risorse seguenti per altre informazioni su come configurare e gestire i turni, lo strumento di gestione della pianificazione in Teams.
 
 ### <a name="set-up-and-manage-shifts-for-your-organization"></a>Configurare e gestire turni per l'organizzazione
 
@@ -42,7 +42,7 @@ Teams fornisce ai dipendenti in prima linea dell'organizzazione gli strumenti ne
 
 |&nbsp;|&nbsp;|
 | ------------- | ------------- |
-| ![api.](../media/api-small.svg) | **[MAIUSC Graph API](/graph/api/resources/shift?view=graph-rest-1.0)** I turni Graph API consentono di integrare i dati di Turni con sistemi di gestione della forza lavoro esterni. Avrai la flessibilità necessaria per creare esperienze di turni personalizzate nel back-end, offrendo agli utenti un'esperienza di front-end ricca in Teams.             |
+| ![api.](../media/api-small.svg) | **[MAIUSC Graph API](/graph/api/resources/shift?view=graph-rest-1.0)** I turni Graph API consentono di integrare i dati di Turni con sistemi di gestione della forza lavoro esterni. Si ha la flessibilità necessaria per creare esperienze di turni personalizzate nel back-end, offrendo agli utenti un'esperienza di front-end ricca Teams.             |
 | ![api.](../media/api-small.svg) | **[Integrazioni di gestione della forza lavoro](https://github.com/OfficeDev/Microsoft-Teams-Shifts-WFM-Connectors)** Se si usano sistemi di gestione della forza lavoro di terze parti, come Kronos e JDA, per la pianificazione, l'orario e la partecipazione, è possibile eseguire l'integrazione direttamente con le API e l'SDK di Turni Graph con integrazioni open source. |
 | ![api.](../media/process-flow-teams-small.svg) | **[Turni + Power Automate](https://github.com/OfficeDev/Microsoft-Teams-Shifts-Power-Automate-Templates)** Turni e Power Automate consente di prendere informazioni da Turni e creare flussi di lavoro personalizzati con altre app ed eseguire operazioni su larga scala. Automatizzare i processi chiave con poco o nessun codice. I trigger e i modelli supportano diversi scenari, ad esempio l'abilitazione delle approvazioni automatici per le richieste di turno quando non è necessaria l'approvazione di un responsabile. |
 

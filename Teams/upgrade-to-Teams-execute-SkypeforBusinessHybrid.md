@@ -1,6 +1,6 @@
 ---
 title: Aggiornare Skype for Business distribuzione ibrida a Teams
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.topic: article
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 24dc9deedc23456efcd1dc646ba05bff6ef818d8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ef173755673cf22ece6c3f8325b2d0392092c1eb
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777146"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60840658"
 ---
 # <a name="upgrade-from-a-skype-for-business-hybrid-deployment-to-teams"></a>Eseguire l'aggiornamento da Skype for Business distribuzione ibrida a Teams
 
@@ -59,6 +59,6 @@ Dopo aver spostato gli utenti in Skype for Business Online, è possibile assegna
 
 ## <a name="phone-system-and-teams-upgrade"></a>Sistema telefonico e Teams aggiornamento
 
-Se stai eseguendo la transizione della distribuzione ibrida di Skype for Business a Sistema telefonico con Piani per le chiamate e Microsoft sarà il tuo provider di rete PSTN (Public Switched Telephone Network) e presupponendo che sia stata completata la portabilità del numero di telefono, l'aggiornamento degli utenti a Teams esegue automaticamente la transizione delle chiamate PSTN in ingresso a Teams.
+Se si esegue la transizione della distribuzione ibrida di Skype for Business a Sistema telefonico con Piani per le chiamate e Microsoft sarà il provider di rete PSTN (Public Switched Telephone Network) e presupponendo che sia stata completata la portabilità del numero di telefono, l'aggiornamento degli utenti a Teams esegue automaticamente la transizione delle chiamate PSTN in ingresso a Teams.
 
-Se Piani per chiamate non è disponibile o si prevede di usare il provider di connettività PSTN esistente, è necessario eseguire la transizione della distribuzione voIP aziendale o della distribuzione vocale ibrida che usa la distribuzione locale esistente o Cloud Connector Edition per Telefono Microsoft System Direct Routing. Per aggiornare gli utenti a Teams, vedere le considerazioni aggiuntive per [Sistema telefonico routing diretto.](./direct-routing-landing-page.md)
+Se Piani per chiamate non è disponibile o si prevede di usare il provider di connettività PSTN esistente, è necessario eseguire la transizione della distribuzione voIP aziendale o della distribuzione vocale ibrida che usa la distribuzione locale esistente o Cloud Connector Edition a Telefono Microsoft System Direct Routing. Per aggiornare gli utenti a Teams, vedere le considerazioni aggiuntive per [Sistema telefonico routing diretto.](./direct-routing-landing-page.md)

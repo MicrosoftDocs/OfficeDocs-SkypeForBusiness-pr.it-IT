@@ -2,7 +2,7 @@
 title: Gestire le impostazioni di configurazione del server per conferenze in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 36bed690-6e22-4e11-88c1-b40a20836c6a
 description: 'Riepilogo: informazioni su come gestire le impostazioni di configurazione del server per conferenze in Skype for Business Server.'
-ms.openlocfilehash: 14fed927e18d291cf17a5c00ee82dac7ef80a6d1
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 9e0b6cbd83ebebcb2f66d178ee8c69d42702a249
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773706"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60841258"
 ---
 # <a name="manage-conferencing-server-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione del server per conferenze in Skype for Business Server
  

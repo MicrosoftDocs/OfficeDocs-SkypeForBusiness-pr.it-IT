@@ -2,7 +2,7 @@
 title: Aggiungere il servizio Web del Director
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 3ed3bdde-c3b5-4fe9-a96b-37099cbd6234
 description: L'URL di base è l'identità dei servizi Web per l'URL meno https://. Ad esempio, se l'URL completo per i servizi Web del pool è `https://pool01.contoso.net` , l'URL di base è `pool01.contoso.net` .
-ms.openlocfilehash: 0d1e365fa4bf44b98d5b23aabbdf08c2889ed881
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 26e7056e670225aabf812bfe9dc782d800325757
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762734"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60863983"
 ---
 # <a name="add-director-web-service"></a>Aggiungere il servizio Web del Director
  

@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204872(v=OCS.15)
 ms:contentKeyID: 48184074
 mtps_version: v=OCS.15
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: In questo articolo viene descritto come configurare gli intervalli di porte e un criterio qualità del servizio per i server per conferenze, applicazioni e Mediation Server.
-ms.openlocfilehash: 6785756af5c79eb27d2b4e15b86155d1d58bbc88
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 9dfa3e7ccb5b69cd112911f700528cc6fc484d89
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60760724"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856663"
 ---
 # <a name="configuring-port-ranges-and-a-quality-of-service-policy-for-your-conferencing-application-and-mediation-servers"></a>Configurazione degli intervalli di porte e dei criteri qualità del servizio per i server per conferenze, applicazioni e Mediation Server
 
@@ -28,7 +28,7 @@ In questo articolo viene descritto come configurare gli intervalli di porte e un
 
 ## <a name="configure-port-ranges"></a>Configurare gli intervalli di porte
 
-Per implementare la qualità del servizio, è consigliabile configurare intervalli di porte identici per la condivisione di audio, video e applicazioni nei server Di conferenza, Applicazione e Mediation Server. inoltre, tali intervalli di porte non devono sovrapporsi in alcun modo. Per utilizzare un semplice esempio, si supponga di utilizzare le porte da 10000 a 10999 per i video sui server per conferenze. Ciò significa che è necessario riservare anche le porte da 10000 a 10999 per i video nei server Applicazioni e Mediation Server. In caso contrario, QoS non funzionerà come previsto.
+Per implementare la qualità del servizio, è consigliabile configurare intervalli di porte identici per la condivisione di applicazioni, video e audio nei server Di conferenza, Applicazione e Mediation Server. inoltre, tali intervalli di porte non devono sovrapporsi in alcun modo. Per utilizzare un semplice esempio, si supponga di utilizzare le porte da 10000 a 10999 per i video sui server per conferenze. Ciò significa che è necessario riservare anche le porte da 10000 a 10999 per i video nei server Applicazioni e Mediation Server. In caso contrario, QoS non funzionerà come previsto.
 
 Analogamente, si supponga di riservare le porte da 10000 a 10999 per i video, ma di riservare le porte da 10500 a 11999 per l'audio. Ciò può creare problemi per qualità del servizio, perché gli intervalli di porte si sovrappongono. Con QoS, ogni modalità deve avere un set univoco di porte: se usi le porte da 10000 a 10999 per i video, dovrai usare un intervallo diverso (ad esempio, da 11000 a 11999 per l'audio).
 

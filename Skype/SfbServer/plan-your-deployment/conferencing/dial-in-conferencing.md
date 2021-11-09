@@ -2,7 +2,7 @@
 title: Pianificare le conferenze telefoniche con accesso esterno in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: ea024a26-37b3-410e-961b-83ab85c07540
 description: 'Riepilogo: leggere questo argomento per informazioni sulla pianificazione delle conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: ec4bfdbb514f1027ff11098cc1ba78045faf1553
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 84d034ba358213a0f79548df6cc1ca027098633b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763524"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60841088"
 ---
 # <a name="plan-for-dial-in-conferencing-in-skype-for-business-server"></a>Pianificare le conferenze telefoniche con accesso esterno in Skype for Business Server
  
@@ -25,7 +25,7 @@ ms.locfileid: "60763524"
   
 Le conferenze telefoniche con accesso esterno sono una funzionalità facoltativa di Skype for Business Server che consente ai partecipanti alla riunione di partecipare alla parte audio di una riunione chiamandoli da un telefono. Le conferenze telefoniche con accesso esterno sono un sottoinsieme delle funzionalità di audioconferenza e richiedono interventi di configurazione aggiuntive. In questo argomento vengono descritte le informazioni necessarie prima di distribuire le conferenze telefoniche con accesso esterno per l'organizzazione. 
   
-Alcuni dei componenti necessari per le conferenze telefoniche con accesso esterno sono specifici per le conferenze telefoniche con accesso esterno e altri sono VoIP aziendale componenti. Sebbene le conferenze telefoniche con accesso esterno utilizzino alcuni degli stessi componenti utilizzati da VoIP aziendale, è possibile distribuire le conferenze telefoniche con accesso esterno anche se non si distribuiscono VoIP aziendale. In questa sezione vengono descritti i componenti necessari per le conferenze telefoniche con accesso esterno. Per ulteriori informazioni sulla pianificazione di una soluzione VoIP aziendale completa, vedere [Plan your VoIP aziendale solution in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice-solution.md).
+Alcuni dei componenti necessari per le conferenze telefoniche con accesso esterno sono specifici per le conferenze telefoniche con accesso esterno e altri sono VoIP aziendale componenti. Sebbene le conferenze telefoniche con accesso esterno utilizzino alcuni degli stessi componenti utilizzati VoIP aziendale, è possibile distribuire le conferenze telefoniche con accesso esterno anche se non si distribuiscono VoIP aziendale. In questa sezione vengono descritti i componenti necessari per le conferenze telefoniche con accesso esterno. Per ulteriori informazioni sulla pianificazione di una soluzione VoIP aziendale completa, vedere [Plan your VoIP aziendale solution in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice-solution.md).
   
 Per le conferenze telefoniche con accesso esterno è necessario fornire connettività alla rete PSTN (Public Switched Telephone Network) distribuendo un Mediation Server. Oltre a distribuire un Mediation Server, è necessario considerare quanto segue per consentire le conferenze telefoniche con accesso esterno per l'organizzazione:
   
@@ -40,13 +40,13 @@ Per le conferenze telefoniche con accesso esterno è necessario fornire connetti
 - Supporto per utenti aziendali e anonimi
     
 > [!NOTE]
-> Se si distribuiscono conferenze telefoniche con accesso esterno, è necessario distribuirla in ogni pool in cui si distribuiscono Skype for Business Server conferenza telefonica. Non è necessario assegnare numeri di accesso, i numeri che i partecipanti chiamano per partecipare a una conferenza, in ogni pool, ma è necessario distribuire la funzionalità di accesso esterno in ogni pool. Questo requisito supporta la funzionalità dei nomi registrati quando un utente chiama un numero di accesso da un pool per partecipare a una Skype for Business Server conferenza in un pool diverso. 
+> Se si distribuiscono conferenze telefoniche con accesso esterno, è necessario distribuirla in ogni pool in cui si distribuisce Skype for Business Server conferenza telefonica. Non è necessario assegnare numeri di accesso, i numeri che i partecipanti chiamano per partecipare a una conferenza, in ogni pool, ma è necessario distribuire la funzionalità di accesso esterno in ogni pool. Questo requisito supporta la funzionalità dei nomi registrati quando un utente chiama un numero di accesso da un pool per partecipare a una Skype for Business Server conferenza in un pool diverso. 
   
 ## <a name="plan-for-pstn-connectivity"></a>Pianificare la connettività PSTN
 
 Per le conferenze telefoniche con accesso esterno sono necessari almeno un Mediation Server e almeno un gateway PSTN (Public Switched Telephone Network). 
   
-È possibile distribuire un Mediation Server in un sito centrale o in un sito di succursale. In un sito centrale è possibile collocare un Mediation Server in un pool Front End o in un server edizione Standard oppure distribuirlo in un server o in un pool autonomo. In un sito di succursale è possibile distribuire un Mediation Server in un server autonomo o come componente del Survivable Branch Appliance.
+È possibile distribuire un Mediation Server in un sito centrale o in un sito di succursale. In un sito centrale è possibile collocare un Mediation Server in un pool Front End o un server edizione Standard oppure distribuirlo in un server o in un pool autonomo. In un sito di succursale è possibile distribuire un Mediation Server in un server autonomo o come componente del Survivable Branch Appliance.
   
 È possibile distribuire un gateway PSTN in un sito centrale o in un sito di succursale. In un sito di succursale, il gateway PSTN può essere autonomo o un componente del Survivable Branch Appliance.
   

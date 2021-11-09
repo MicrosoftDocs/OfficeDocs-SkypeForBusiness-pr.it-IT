@@ -2,7 +2,7 @@
 title: Progettare il trunk SIP per E9-1-1 in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4f93b974-b460-45c7-a4a8-6f38e34840f5
 description: Pianificazione delle topologie di trunking SIP per una distribuzione E9-1-1 che utilizza provider di trunking SIP, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 8454b50d5d2f55a8df05e70cb2737eccce81a793
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 36362b9ff516f3f15a990d5d70c42c0bea6119b3
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759548"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60841028"
 ---
 # <a name="design-the-sip-trunk-for-e9-1-1-in-skype-for-business-server"></a>Progettare il trunk SIP per E9-1-1 in Skype for Business Server
  
@@ -51,7 +51,7 @@ Per informazioni dettagliate sulla distribuzione di un trunk SIP in Skype for Bu
     
  **È consigliabile distribuire un trunk SIP separato per ogni succursale?**
   
-> Skype for Business Server fornisce diverse strategie per gestire la resilienza vocale nelle succursali, tra cui: avere reti di dati resilienti, distribuire un trunk SIP in ogni succursale o distribuire chiamate al gateway locale durante le interruzioni. Per informazioni dettagliate, [vedere Trunking SIP in Skype for Business Server](sip-trunking.md).
+> Skype for Business Server offre diverse strategie per gestire la resilienza vocale nelle succursali, tra cui: avere reti di dati resilienti, distribuire un trunk SIP in ogni succursale o distribuire chiamate al gateway locale durante le interruzioni. Per informazioni dettagliate, [vedere Trunking SIP in Skype for Business Server](sip-trunking.md).
     
  **Il servizio Controllo di ammissione di chiamata è abilitato?**
   

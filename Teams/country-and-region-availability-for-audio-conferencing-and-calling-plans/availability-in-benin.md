@@ -1,6 +1,6 @@
 ---
 title: Disponibilità in Benin
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole, fafan
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Benin.
-ms.openlocfilehash: 1959c1debcf128ea1ba82b1201039e69adf54ef6
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 1879ca63993f51755d75a2de0c534c9d07eb6230
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777596"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60833070"
 ---
 # <a name="availability-in-benin"></a>Disponibilità in Benin
 
@@ -72,7 +72,7 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì <br/> |
 |Sono disponibili numeri a numero verde?  <br/> |No  <br/> |
    
- Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere i numeri di telefono del servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
+ Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di [chiamata,](../getting-service-phone-numbers.md)vedere Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams .
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

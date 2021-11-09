@@ -2,7 +2,7 @@
 title: Federazione (strumento di pianificazione)
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.assetid: 63ea8a5e-a040-4892-9440-0fdbeef66fc0
 ROBOTS: NOINDEX, NOFOLLOW
 description: I server perimetrali possono essere configurati per consentire agli utenti interni ed esterni di accedere ai contatti nelle organizzazioni partner o nei servizi.
-ms.openlocfilehash: 6090ef424293f36f6cdca7c0d70541b3c453c38b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 768d67d236e5da2fc53ee63eb3ba1765c1248bcc
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60775556"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60840408"
 ---
 # <a name="federation-planning-tool"></a>Federazione (strumento di pianificazione)
  

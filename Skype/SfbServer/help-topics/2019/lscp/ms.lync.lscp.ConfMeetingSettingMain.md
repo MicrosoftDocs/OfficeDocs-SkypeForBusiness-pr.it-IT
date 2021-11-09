@@ -2,7 +2,7 @@
 title: Configurazione riunione
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 24e8f749-d54c-4315-a8fe-bb9303b356ef
 ROBOTS: NOINDEX, NOFOLLOW
 description: Le impostazioni di configurazione delle riunioni definiscono il tipo di conferenze (denominate anche riunioni) che gli utenti possono creare e controllano in che modo (o se) gli utenti anonimi e gli utenti delle conferenze telefoniche con accesso esterno possono partecipare a queste conferenze. Queste impostazioni si applicano solo alle riunioni pianificate. Non si applicano alle riunioni ad hoc create facendo clic sull'opzione Riunione ora nel client.
-ms.openlocfilehash: 3ed5a27acef99f05fe9bc0a5f2ba9bbb5300a15e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4eb66e999cfc8c3682e0c1f5b54004bf57efa1e7
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769524"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60831530"
 ---
 # <a name="meeting-configuration"></a>Configurazione riunione
 
@@ -52,7 +52,7 @@ Nell'elenco seguente sono descritti i comandi della pagina.
 
 - **Nuovo** Avvia una nuova configurazione di riunione del sito o di riunione del pool.
 
-- **Modifica** Apre la configurazione della riunione selezionata per modificarla, seleziona tutte le configurazioni riunione nell'elenco oppure elimina la configurazione del sito o del pool selezionata.
+- **Modifica** Apre la configurazione della riunione selezionata per modificarla, seleziona tutte le configurazioni riunione nell'elenco o elimina la configurazione del sito o del pool selezionata.
 
     > [!NOTE]
     > Per la configurazione riunione globale, l'opzione **Elimina** consente di riportare le impostazioni ai valori predefiniti.

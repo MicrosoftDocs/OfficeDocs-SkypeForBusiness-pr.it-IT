@@ -2,7 +2,7 @@
 title: Pianificazione della capacità per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: e557ed2c-9cb2-4c90-8fd1-96a814c47c19
 description: Gli argomenti di questa sezione consentono di comprendere come pianificare e distribuire Skype for Business Server in modo da poter pianificare in modo adeguato il numero di utenti nell'organizzazione e pianificare il carico del server generato dalle relative attività.
-ms.openlocfilehash: efb72de54c65eca99ad40b05c191433eebfed34f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e683eb2605c2a66a836321028595e2f034baf183
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778106"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856563"
 ---
 # <a name="capacity-planning-for-skype-for-business-server"></a>Pianificazione della capacità per Skype for Business Server
  

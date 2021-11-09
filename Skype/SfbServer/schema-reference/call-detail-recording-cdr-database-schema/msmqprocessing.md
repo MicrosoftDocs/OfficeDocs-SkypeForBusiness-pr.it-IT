@@ -2,7 +2,7 @@
 title: Tabella MSMQProcessing
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: e0415f76-d125-4c15-861b-f5780ac1aef2
 description: La tabella MSMQProcessing è per esclusivo utilizzo interno. Questa tabella è stata introdotta Skype for Business Server 2015.
-ms.openlocfilehash: 85633a85229a3f8fc15dd0ca46d353419bcc46e0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 1bfc692ebb017071b7c5838386bba26902675173
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745752"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60848329"
 ---
 # <a name="msmqprocessing-table"></a>Tabella MSMQProcessing
  

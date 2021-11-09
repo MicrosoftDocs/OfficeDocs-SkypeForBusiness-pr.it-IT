@@ -1,6 +1,6 @@
 ---
 title: Eseguire l'onboarding degli early adopter e raccogliere feedback
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 11/01/2018
@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Scegliere i primi utenti per la fase di sperimentazione dell'Teams e quindi raccogliere feedback per il progetto.
+description: Scegliere i primi utenti per la fase di Teams e quindi raccogliere feedback per il progetto.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 47c51e869e25726e73863091a88e4f7289d7693c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: a87a6802a538609e9899f2645833a1e9bdab120f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753867"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60840728"
 ---
 # <a name="onboard-early-adopters-and-gather-feedback-for-microsoft-teams"></a>Onboard early adopters and gather feedback for Microsoft Teams
 

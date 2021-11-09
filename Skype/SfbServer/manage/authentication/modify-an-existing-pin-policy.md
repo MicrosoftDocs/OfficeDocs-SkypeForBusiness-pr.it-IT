@@ -2,7 +2,7 @@
 title: Modificare un criterio PIN esistente in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 517caaee-3349-4fa6-8d86-e4da3258a445
 description: 'Riepilogo: modificare un criterio PIN esistente in Skype for Business Server.'
-ms.openlocfilehash: dac6540407ed019fe9147d86bc119426a6679574
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: a03e192b5dd9b11de17e6c920baee6613312fc84
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754869"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60848579"
 ---
 # <a name="modify-an-existing-pin-policy-in-skype-for-business-server"></a>Modificare un criterio PIN esistente in Skype for Business Server
  
@@ -32,7 +32,7 @@ Eseguire questa procedura per modificare un criterio PIN a livello di utente o d
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
     
 3. Sulla barra di spostamento sinistra fare clic su **Sicurezza** e quindi su **Criteri PIN**.
     

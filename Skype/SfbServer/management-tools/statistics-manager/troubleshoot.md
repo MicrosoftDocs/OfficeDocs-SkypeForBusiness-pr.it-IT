@@ -2,7 +2,7 @@
 title: Risoluzione dei problemi del gestore delle statistiche per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 946189fa-521f-455c-9762-904e7e41b791
 description: 'Riepilogo: leggere questo argomento per risolvere i problemi relativi alla distribuzione di Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: 3f3bade7c7696e7361b63dc2f539534b6072d34a
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 6e6edefe8d6070a917f817b3b6d79bf35ff36599
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777306"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857343"
 ---
 # <a name="troubleshoot-statistics-manager-for-skype-for-business-server"></a>Risoluzione dei problemi del gestore delle statistiche per Skype for Business Server
  
@@ -76,7 +76,7 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
   - Assicurarsi di aver seguito le istruzioni per l'importazione della topologia. Vedere [Import the topology](deploy.md#BKMK_ImportTopology). 
     
-  - Se l'agente si trova in un server non elencato nella topologia, ad esempio i nodi in un cluster AlwaysOn di SQL, sarà necessario aggiungere manualmente l'agente seguendo le istruzioni in Importare la [topologia.](deploy.md#BKMK_ImportTopology)
+  - Se l'agente si trova in un server non elencato nella topologia( ad esempio, i nodi in un cluster AlwaysOn di SQL), sarà necessario aggiungere manualmente l'agente seguendo le istruzioni in [Importare](deploy.md#BKMK_ImportTopology)la topologia .
     
   - **4002** - Password listener non valida
     
@@ -113,9 +113,9 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
   - **10003** - Errore redis
     
-  - **10004** : errore Caching'infrastruttura
+  - **10004** - Errore Caching'infrastruttura
     
-  - **10007** - Impostazioni (archiviato in redis)
+  - **10007** — Impostazioni (archiviato in redis)
     
     Il listener non è stato in grado di contattare Redis o recuperare dati ben formati dalla cache e non è stato possibile avviarsi. Verificare che il servizio Redis sia avviato e configurato correttamente nel server.
     
