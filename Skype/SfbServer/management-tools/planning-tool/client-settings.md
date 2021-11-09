@@ -2,7 +2,7 @@
 title: Strumento di Impostazioni client
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 4/6/2016
 audience: ITPro
@@ -14,12 +14,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 0f0a866a-b85d-4fb6-843b-90bb3c977498
 description: La funzionalità per dispositivi mobili di Skype for Business Server 2015 supporta Skype for Business nei dispositivi mobili. Per informazioni dettagliate, vedere Planning for Mobility.
-ms.openlocfilehash: 86df1e25db261fe147e9933afad90dcd1c84049d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 000d691f8b7d7a7c99874a77bd8ff6e7c13cb5ba
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759678"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60862143"
 ---
 # <a name="client-settings-planning-tool"></a>Strumento di Impostazioni client
 

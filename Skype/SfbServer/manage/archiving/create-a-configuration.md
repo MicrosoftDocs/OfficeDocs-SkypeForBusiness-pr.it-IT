@@ -2,7 +2,7 @@
 title: Creare una configurazione di archiviazione in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: dc574afa-0b7d-404f-99b3-c812430b7c70
 description: 'Riepilogo: informazioni su come creare una configurazione di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: abb7f6c894dae734a45d7668f5b1b590d869c9c6
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 76fd2785f172cc9dd4b76df97d3c29a78e831e46
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60767904"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850039"
 ---
 # <a name="create-an-archiving-configuration-in-skype-for-business-server"></a>Creare una configurazione di archiviazione in Skype for Business Server
 
@@ -29,7 +29,7 @@ Per configurare le opzioni di archiviazione per un sito o un pool specifico:
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Configurazione archiviazione**.
     
@@ -51,7 +51,7 @@ Per configurare le opzioni di archiviazione per un sito o un pool specifico:
     
    - Per bloccare l'attività quando l'archiviazione non è disponibile, selezionare la casella di controllo **Blocca sessioni di messaggistica istantanea o Web Conferencing se l'archiviazione non riesce**.
     
-   - Per utilizzare la Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
+   - Per utilizzare i Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
     
    - Per abilitare l'eliminazione dei dati, selezionare la casella di controllo **Abilita eliminazione dei dati di archiviazione** e quindi eseguire una delle operazioni seguenti:
     

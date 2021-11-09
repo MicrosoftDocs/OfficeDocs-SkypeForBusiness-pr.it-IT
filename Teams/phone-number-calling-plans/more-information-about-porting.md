@@ -1,6 +1,6 @@
 ---
 title: Altre informazioni sulla portabilità
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: tonysmit,jastark
@@ -19,18 +19,18 @@ f1.keywords:
 - CSH
 ms.custom: ms.teamsadmincenter.voice.phonenumbers.porting.moreinfo
 description: Ottieni le indicazioni necessarie per convertire i numeri di telefono in Microsoft Teams.
-ms.openlocfilehash: 02023cc88fbab5b1063ed2734db500aa3c14aa9c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 362f7865f820e91e911791685293b7ca9c1786cd
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60761754"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60848179"
 ---
 # <a name="more-information-about-porting"></a>Altre informazioni sulla portabilità
 
 Qui troverai altre informazioni sul porting dei numeri di telefono in Microsoft Teams.
 
-Per istruzioni dettagliate, vedere Trasferire numeri di telefono a [Teams.](transfer-phone-numbers-to-teams.md)
+Per istruzioni dettagliate, vedere Trasferire i numeri di telefono Teams [.](transfer-phone-numbers-to-teams.md)
 
 Se serve assistenza o se è necessario ottenere altri numeri di telefono, contattare la Guida [di TNS Service Desk.](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)
 

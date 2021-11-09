@@ -2,7 +2,7 @@
 title: Testare le conferenze telefoniche con accesso esterno in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,24 +12,24 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: f4ccbfd4-6075-466f-b459-20561318803d
 description: 'Riepilogo: informazioni su come testare le conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 0a2a612b242a83c5e1d98525f040bf96c4e69ca8
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4c4e56c846cd6c4f522abdfc0a4a9cc76b5fe979
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773626"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60847359"
 ---
 # <a name="test-dial-in-conferencing-in-skype-for-business-server"></a>Testare le conferenze telefoniche con accesso esterno in Skype for Business Server
  
 **Riepilogo:** Informazioni su come testare le conferenze telefoniche con accesso esterno in Skype for Business Server.
   
-Come verifica finale della configurazione delle conferenze telefoniche con accesso esterno, è possibile cercare dial plan con un'area di conferenza telefonica con accesso esterno non utilizzata da alcun numero di accesso e numeri di telefono per i quali non è specificata un'area di conferenza telefonica con accesso esterno. È inoltre necessario verificare che il servizio di conferenza telefonica con Impostazioni e i numeri di accesso esterno funzionino correttamente.
+Come verifica finale della configurazione delle conferenze telefoniche con accesso esterno, è possibile cercare dial plan con un'area di conferenza telefonica con accesso esterno non utilizzata da alcun numero di accesso e numeri di telefono per i quali non è specificata un'area di conferenza telefonica con accesso esterno. È inoltre necessario verificare che la pagina Web Servizi di Impostazioni accesso esterno e i numeri di accesso esterno funzionino correttamente.
   
 ## <a name="find-dial-plans-with-a-dial-in-conferencing-region-that-is-not-used-by-an-access-number"></a>Trovare dial plan con un'area di conferenza telefonica con accesso esterno non utilizzata da un numero di accesso
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo Cs-ServerAdministrator o CsAdministrator.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 3. Eseguire il comando seguente al prompt:
     
@@ -45,7 +45,7 @@ Per ulteriori informazioni, vedere [Get-CsDialInConferencingAccessNumber](/power
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo Cs-ServerAdministrator o CsAdministrator.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 3. Eseguire il comando seguente al prompt:
     
@@ -69,7 +69,7 @@ Per verificare che la pagina Web Impostazioni conferenza telefonica con accesso 
 
 1. Eseguire l'accesso al computer come membro del gruppo RTCUniversalServerAdmins oppure del ruolo Cs-ServerAdministrator o CsAdministrator.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 3. Al prompt dei comandi eseguire il comando seguente:
     

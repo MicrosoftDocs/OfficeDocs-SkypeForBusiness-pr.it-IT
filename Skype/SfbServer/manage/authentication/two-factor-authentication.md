@@ -2,7 +2,7 @@
 title: Gestire l'autenticazione a due fattori in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 16f08710-8961-4659-acbf-ebb95a198fb4
 description: "Riepilogo: gestire l'autenticazione a due fattori in Skype for Business Server."
-ms.openlocfilehash: d5d5500cbcab93f53e58626bf5826dcc060903e2
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: af21fd551c8495a49c8617b25e4669bdd27ec0c0
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747172"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60847419"
 ---
 # <a name="manage-two-factor-authentication-in-skype-for-business-server"></a>Gestire l'autenticazione a due fattori in Skype for Business Server
  
@@ -32,7 +32,7 @@ Quando si configura un ambiente Skype for Business Server per supportare l'auten
   
 ## <a name="client-support"></a>Supporto client
 
-Gli aggiornamenti cumulativi per il client desktop di Lync Server 2013: luglio 2013 e il client Skype for Business sono gli unici client che attualmente supportano l'autenticazione a due fattori.
+Gli aggiornamenti cumulativi per lync Server 2013: client desktop di luglio 2013 e il client Skype for Business sono gli unici client che attualmente supportano l'autenticazione a due fattori.
   
 ## <a name="topology-requirements"></a>Requisiti della topologia
 
@@ -49,11 +49,11 @@ A meno che questi tipi di autenticazione non siano disabilitati a livello di ser
   
 ## <a name="skype-for-business-service-discovery"></a>Skype for Business Individuazione servizio
 
-I record DNS utilizzati dai client interni e/o esterni per individuare i servizi Skype for Business devono essere configurati per la risoluzione in un server Skype for Business non abilitato per l'autenticazione a due fattori. Con questa configurazione, gli utenti di pool di Skype for Business non abilitati per l'autenticazione a due fattori non doranno immettere un PIN per l'autenticazione, mentre gli utenti di pool di Skype for Business abilitati per l'autenticazione a due fattori doranno immettere il PIN per l'autenticazione.
+I record DNS utilizzati dai client interni e/o esterni per individuare i servizi Skype for Business devono essere configurati per la risoluzione in un server Skype for Business non abilitato per l'autenticazione a due fattori. Con questa configurazione, gli utenti di pool Skype for Business non abilitati per l'autenticazione a due fattori non doranno immettere un PIN per l'autenticazione, mentre gli utenti di pool Skype for Business abilitati per l'autenticazione a due fattori doranno immettere il PIN per l'autenticazione.
   
 ## <a name="exchange-authentication"></a>Exchange Autenticazione
 
-I clienti che hanno distribuito l'autenticazione a due fattori per Microsoft Exchange potrebbero trovare che alcune funzionalità nel client non sono disponibili. Questo comportamento è basato sulla progettazione, poiché il client Skype for Business non supporta l'autenticazione a due fattori per le funzionalità che dipendono dall'Exchange integrata.
+I clienti che hanno distribuito l'autenticazione a due fattori per Microsoft Exchange potrebbero trovare che alcune funzionalità nel client non sono disponibili. Questo comportamento è basato sulla progettazione, in quanto il client Skype for Business non supporta l'autenticazione a due fattori per le funzionalità che dipendono dall'Exchange integrata.
   
 ## <a name="contacts"></a>Contatti
 
@@ -63,7 +63,7 @@ Skype for Business utenti configurati per sfruttare la funzionalità Archivio co
   
 ## <a name="skill-search"></a>Ricerca competenze
 
-I clienti che hanno configurato la funzionalità ricerca competenze nell'ambiente Skype for Business troveranno che questa funzionalità non funziona quando Skype for Business è abilitata per l'autenticazione a due fattori. Si tratta di una procedura di progettazione, in quanto Microsoft SharePoint attualmente non supporta l'autenticazione a due fattori.
+I clienti che hanno configurato la funzionalità di ricerca competenze nell'ambiente Skype for Business troveranno che questa funzionalità non funziona quando Skype for Business è abilitata per l'autenticazione a due fattori. Si tratta di una procedura di progettazione, in quanto Microsoft SharePoint attualmente non supporta l'autenticazione a due fattori.
   
 ## <a name="credentials"></a>Credentials
 

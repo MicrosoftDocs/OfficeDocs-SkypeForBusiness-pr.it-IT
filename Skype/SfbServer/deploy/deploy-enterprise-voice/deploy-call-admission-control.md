@@ -2,7 +2,7 @@
 title: Distribuire il controllo di ammissione di chiamata in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,20 +16,20 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ce3e6e71-1e33-4cff-849a-c0468e61fef6
 description: Il servizio Controllo di ammissione di chiamata è una soluzione che determina se è possibile stabilire una sessione in tempo reale in base alla larghezza di banda disponibile per evitare di fornire una qualità audio/video scadente per gli utenti su reti congestionate.
-ms.openlocfilehash: b22074df1eac0727334371d92097333a589eb684
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f7d813d85a3c3eadd770c1dc939358506c230d44
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753597"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60861903"
 ---
 # <a name="deploy-call-admission-control-in-skype-for-business-server"></a>Distribuire il controllo di ammissione di chiamata in Skype for Business Server
  
-Il servizio Controllo di ammissione di chiamata è una soluzione che determina se è possibile stabilire una sessione in tempo reale in base alla larghezza di banda disponibile per evitare di fornire una qualità audio/video scadente per gli utenti su reti congestionate. Per ulteriori informazioni, vedere [Plan for call admission control in Skype for Business Server.](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md)
+Il servizio Controllo di ammissione di chiamata è una soluzione che determina se è possibile stabilire una sessione in tempo reale in base alla larghezza di banda disponibile per evitare di fornire una qualità audio/video scadente per gli utenti su reti congestionate. Per ulteriori informazioni, vedere [Plan for call admission control in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/call-admission-control.md).
   
 ### <a name="to-deploy-call-admission-control"></a>Per distribuire Controllo di ammissione di chiamata
 
-1.  Raccogliere tutte le informazioni necessarie per la topologia di rete aziendale, come descritto in [Esempio:](../../plan-your-deployment/enterprise-voice-solution/example-gathering-requirements.md)Raccolta dei requisiti per il controllo di ammissione di chiamata in Skype for Business Server .
+1.  Raccogliere tutte le informazioni necessarie per la topologia di rete aziendale, come descritto in [Esempio: Raccolta](../../plan-your-deployment/enterprise-voice-solution/example-gathering-requirements.md)dei requisiti per il controllo di ammissione di chiamata in Skype for Business Server .
     
 2. Se non è già stato fatto, è necessario definire aree e siti di rete e associare subnet ai siti di rete. Per informazioni dettagliate, vedere [Deploy network regions, sites and subnets in Skype for Business](deploy-network.md).
     

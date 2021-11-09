@@ -2,7 +2,7 @@
 title: Preparare un singolo server Standard Edition (Intro)
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/23/2015
 audience: ITPro
@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: fe11d380-54c9-47e7-a676-02b9a59dc93f
-description: Per iniziare l'installazione di un server edizione Standard di Skype for Business Server 2015 che contenerà l'archivio di gestione centrale e altri servizi collocati selezionati, è necessario essere connessi come membri del gruppo Administrators locale nel server che diventerà il server edizione Standard. Nella pagina Prepara singolo server Standard sono illustrati i requisiti per l'installazione iniziale. Il computer deve essere membro del dominio in cui verrà distribuito ed è necessario aver completato per la foresta la preparazione dello schema, della foresta e del dominio.
-ms.openlocfilehash: 14012f8d94b4b1f5a6a4a339854270f412743731
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: Per avviare l'installazione di un server di edizione Standard di Skype for Business Server 2015 che contenerà l'archivio di gestione centrale e altri servizi collocati selezionati, è necessario essere connessi come membri del gruppo Administrators locale nel server che diventerà il server edizione Standard. Nella pagina Prepara singolo server Standard sono illustrati i requisiti per l'installazione iniziale. Il computer deve essere membro del dominio in cui verrà distribuito ed è necessario aver completato per la foresta la preparazione dello schema, della foresta e del dominio.
+ms.openlocfilehash: 58c25ce952cb888f4595af2b67395b4d764edc5d
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757568"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850149"
 ---
 # <a name="prepare-single-standard-edition-server-intro"></a>Preparare un singolo server Standard Edition (Intro)
  
-Per iniziare l'installazione di un server edizione Standard di Skype for Business Server 2015 che contenerà l'archivio di gestione centrale e altri servizi collocati selezionati, è necessario essere connessi come membri del gruppo Administrators locale nel server che diventerà il server edizione Standard. Nella pagina **Prepara singolo server Standard** sono illustrati i requisiti per l'installazione iniziale. Il computer deve essere membro del dominio in cui verrà distribuito ed è necessario aver completato per la foresta la preparazione dello schema, della foresta e del dominio.
+Per avviare l'installazione di un server di edizione Standard di Skype for Business Server 2015 che contenerà l'archivio di gestione centrale e altri servizi collocati selezionati, è necessario essere connessi come membri del gruppo Administrators locale nel server che diventerà il server edizione Standard. Nella pagina **Prepara singolo server Standard** sono illustrati i requisiti per l'installazione iniziale. Il computer deve essere membro del dominio in cui verrà distribuito ed è necessario aver completato per la foresta la preparazione dello schema, della foresta e del dominio.
   
 Questa particolare attività è progettata per configurare un server edizione Standard come primo server dell'infrastruttura. Questa attività installa l'archivio di gestione centrale, che SQL Server Express, nel server edizione Standard server. Se è già stato distribuito un altro edizione Standard server o pool Front End, fare clic su **Annulla.**
   

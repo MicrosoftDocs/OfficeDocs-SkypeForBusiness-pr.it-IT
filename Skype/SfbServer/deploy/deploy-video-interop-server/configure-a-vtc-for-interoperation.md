@@ -2,7 +2,7 @@
 title: Configurare un VTC per l'interoperabilità con Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 1016aed6-99fe-452e-8b20-81c814808c3d
 description: "Riepilogo: configurare i dispositivi VTC per l'utilizzo con Skype for Business Server."
-ms.openlocfilehash: 07f6a8742b26a7637e5dd321034ecb2cd0818cec
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f3804c0d7f86710fbefa9477d6cf1790b0f16af9
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60751275"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60861803"
 ---
 # <a name="configure-a-vtc-for-interoperation-with-skype-for-business-server"></a>Configurare un VTC per l'interoperabilità con Skype for Business Server
  
@@ -55,7 +55,7 @@ Le impostazioni descritte qui sono solo esempi di come cucm può essere configur
     
    |**Parametro**|**Impostazione consigliata**|
    |:-----|:-----|
-   |Modalità H.323  <br/> | Off <br/> |
+   |Modalità H.323  <br/> | Disattivato <br/> |
    |Modalità HTTP  <br/> | Attivato <br/> |
    | Modalità SIP <br/> | Attivato <br/> |
    |Modalità Telnet  <br/> | Attivato <br/> |
@@ -69,7 +69,7 @@ Le impostazioni descritte qui sono solo esempi di come cucm può essere configur
    |**Parametro**|**Impostazione consigliata**|
    |:-----|:-----|
    |Profilo 1 - DefaultTransport  <br/> | TCP <br/> |
-   |Profilo 1 - In uscita  <br/> | Off <br/> |
+   |Profilo 1 - In uscita  <br/> | Disattivato <br/> |
    |Profilo 1 - TlsVerify  <br/> | Attivato <br/> |
    |Profilo 1 - Tipo  <br/> | Cisco <br/> |
    |Profilo 1 - URI  <br/> | Assegnato automaticamente alla registrazione CUCM <br/> |
@@ -78,20 +78,20 @@ Le impostazioni descritte qui sono solo esempi di come cucm può essere configur
 Il VTC è ora configurato per l'interoperabilità. Prima che il servizio possa iniziare, è necessario eseguire i passaggi finali sul lato CUCM.
 ### <a name="configure-vtc-devices-on-cucm"></a>Configurare i dispositivi VTC in CUCM
 
-1. Accedi a CUCM e passa a Cisco Unified CM Administration- \> Device- \> Telefono- \> Find. 
+1. Accedere a CUCM e passare a Cisco Unified CM Administration- \> Device- \> Telefono- \> Find. 
     
 2. Selezionare il dispositivo VTC da configurare. Verificare le impostazioni seguenti nella schermata Telefono configurazione, correggendo in base alle esigenze. Dopo aver modificato o verificato queste impostazioni, fare clic su **Salva.**
     
    |**Parametro**|**Impostazione consigliata**|
    |:-----|:-----|
-   |Informazioni sul dispositivo - modello Telefono pulsante  <br/> | Standard Cisco Telepresence Codec C40 <br/> |
-   |Informazioni sul dispositivo - Profilo Telefono comune  <br/> | Profilo comune Telefono standard <br/> |
+   |Informazioni dispositivo - modello Telefono pulsante  <br/> | Standard Cisco Telepresence Codec C40 <br/> |
+   |Informazioni sul dispositivo - Profilo Telefono comune  <br/> | Standard Common Telefono Profile <br/> |
    |Informazioni sul dispositivo - Spazio di ricerca chiamante  <br/> | CSS_SfBVideoInterop <br/> |
    |Informazioni dispositivo - Spazio di ricerca chiamate AAR  <br/> | CSS_SfBVideoInterop <br/> |
    |Informazioni dispositivo - Elenco gruppi di risorse multimediali  <br/> | MRGL_SfBVideoInterop <br/> |
    |Informazioni specifiche del protocollo - Profilo di sicurezza del dispositivo  <br/> | Cisco Telepresence Codec C40 <br/> |
    |Informazioni specifiche del protocollo - Rerouting Calling Search Space  <br/> | CSS_SfBVideoInterop <br/> |
-   |Informazioni specifiche del protocollo - Subscribe Calling Search Space  <br/> | CSS_SfBVideoInterop <br/> |
+   |Informazioni specifiche del protocollo - SUBSCRIBE Calling Search Space  <br/> | CSS_SfBVideoInterop <br/> |
    |Informazioni specifiche del protocollo -Profilo SIP  <br/> | Profilo SIP standard per endpoint di telepresenza <br/> |
    
 3. Dopo aver salvato la configurazione VTC, torna alla schermata Telefono configurazione del dispositivo. Nella parte superiore della schermata del gruppo Associazione fai clic sull'associazione per l'interoperabilità video. Verrà visualizzata la schermata Configurazione numero di directory. 

@@ -2,7 +2,7 @@
 title: CLS Logger per Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/25/2017
 audience: ITPro
@@ -13,13 +13,13 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 1eaf8cdf-3dcd-4d6e-ae68-b6f6f9431ad8
-description: 'Riepilogo: informazioni su come usare il Logger del servizio di registrazione centralizzata (CLS) in Skype for Business Server 2015.'
-ms.openlocfilehash: bd468818335125e764dc6094ad32f7c7cad7f72e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: 'Riepilogo: informazioni su come utilizzare il Logger del servizio di registrazione centralizzata (CLS) in Skype for Business Server 2015.'
+ms.openlocfilehash: dbe8ef417eb702943c76214be492151ee4d1dac7
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60739082"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60862183"
 ---
 # <a name="cls-logger-for-skype-for-business-server-2015"></a>CLS Logger per Skype for Business Server 2015
  

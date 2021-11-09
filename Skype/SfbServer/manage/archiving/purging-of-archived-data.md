@@ -2,7 +2,7 @@
 title: Gestire l'eliminazione dei dati archiviati in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 14c2b4fd-f612-4909-808d-09c655fc9f8a
 description: "Riepilogo: informazioni su come gestire l'eliminazione dei dati archiviati per Skype for Business Server."
-ms.openlocfilehash: e5800711756fcccde90ba9907adbe1e9309a677b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4050bc40d72cb8a2b306ab050298bb74b7c96dbd
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778356"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60847439"
 ---
 # <a name="manage-purging-of-archived-data-in-skype-for-business-server"></a>Gestire l'eliminazione dei dati archiviati in Skype for Business Server
 
@@ -33,7 +33,7 @@ Per gestire l'eliminazione dei dati archiviati tramite il Pannello di controllo:
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Configurazione archiviazione**.
     
@@ -77,7 +77,7 @@ Per disabilitare l'eliminazione automatica dei record di archiviazione, impostar
 Set-CsArchivingConfiguration -Identity "site:Redmond" -EnablePurging $False
 ```
 
-Nell'esempio seguente viene utilizzato il cmdlet **Invoke-CsArchivingDatabasePurge** per eliminare tutti i record di più di 24 ore dal database di archiviazione atl-sql-001.contoso.com. Per assicurarsi che tutti i record siano stati eliminati, inclusi quelli che non sono stati esportati, il parametro PurgeExportedArchivesOnly è impostato su False ($False):
+Nell'esempio seguente viene utilizzato il cmdlet **Invoke-CsArchivingDatabasePurge** per eliminare tutti i record di più di 24 ore dal database di archiviazione in atl-sql-001.contoso.com. Per assicurarsi che tutti i record siano stati eliminati, inclusi quelli che non sono stati esportati, il parametro PurgeExportedArchivesOnly è impostato su False ($False):
   
 ```PowerShell
 Invoke-CsArchivingDatabasePurge -Identity "service:ArchivingDatabase:atl-sql-001.contoso.com" -PurgeArchivingDataOlderThanHours 24 -PurgeExportedArchivesOnly $False

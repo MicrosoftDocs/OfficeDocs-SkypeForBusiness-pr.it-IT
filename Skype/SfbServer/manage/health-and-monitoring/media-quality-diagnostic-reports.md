@@ -1,8 +1,8 @@
 ---
-title: Rapporti di diagnostica della qualità multimediale in Skype for Business Server
+title: Rapporti di diagnostica qualità multimediale in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,14 +12,14 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: ea61428e-a1d5-4189-aae6-3db19ddc5cf2
 description: 'Riepilogo: informazioni sui rapporti di diagnostica della qualità multimediale in Skype for Business Server.'
-ms.openlocfilehash: ba646f0043eb57a97374b7843263e9994d4aa889
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: bd575fa954ecd38e957b5c0c0a55d1341f6cec4c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754745"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60862323"
 ---
-# <a name="media-quality-diagnostic-reports-in-skype-for-business-server"></a>Rapporti di diagnostica della qualità multimediale in Skype for Business Server
+# <a name="media-quality-diagnostic-reports-in-skype-for-business-server"></a>Rapporti di diagnostica qualità multimediale in Skype for Business Server
  
 **Riepilogo:** Informazioni sui rapporti di diagnostica della qualità multimediale in Skype for Business Server.
   
@@ -27,7 +27,7 @@ Nei Rapporti diagnostica qualità multimediale vengono fornite informazioni sull
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Rapporto riepilogativo qualità multimediale in Skype for Business Server](summary.md) Fornisce dati qualitativi complessivi per diversi tipi di endpoint, tra cui chiamate peer-to-peer VoIP aziendale chiamate VoIP aziendale conferenze telefoniche e chiamate che si basano, almeno in parte, sulla rete PSTN (Public Switched Telephone Network).
+- [Rapporto riepilogativo qualità multimediale Skype for Business Server](summary.md) Fornisce dati qualitativi complessivi per diversi tipi di endpoint VoIP aziendale, tra cui chiamate peer-to-peer, chiamate VoIP aziendale conferenze telefoniche e chiamate che si basano, almeno in parte, sulla rete PSTN (Public Switched Telephone Network).
     
 - [Rapporto di confronto qualità multimediale in Skype for Business Server](comparison.md) Fornisce un confronto tra i valori di qualità delle chiamate per diversi tipi di chiamate audio, ad esempio le chiamate effettuate su una rete wireless e le chiamate effettuate tramite una connessione cablata.
     
@@ -35,7 +35,7 @@ Nei Rapporti diagnostica qualità multimediale vengono fornite informazioni sull
     
 - [Rapporto percorso in Skype for Business Server](location-report.md) Fornisce un elenco dei percorsi di rete e un riepilogo della qualità multimediale delle chiamate che si verificano in ogni posizione. Ai fini di questo rapporto, i percorsi sono basati su subnet IP.
     
-- [Device Report in Skype for Business Server](device-report.md) Fornisce un riepilogo dei dispositivi utilizzati per le VoIP aziendale e include la qualità media media delle chiamate in base al dispositivo.
+- [Device Report in Skype for Business Server](device-report.md) Fornisce un riepilogo dei dispositivi utilizzati per le VoIP aziendale e include la qualità media delle chiamate in base al dispositivo.
     
 - [Rapporto elenco chiamate in Skype for Business Server](call-list-report-0.md) Fornisce informazioni dettagliate sulle chiamate telefoniche effettuate o ricevute all'interno dell'organizzazione.
     

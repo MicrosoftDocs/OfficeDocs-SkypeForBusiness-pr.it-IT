@@ -2,7 +2,7 @@
 title: Visualizzare un certificato
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: bfc6db2d-141e-4395-819a-65ba4629ccca
 ROBOTS: NOINDEX, NOFOLLOW
 description: Nella pagina Visualizza certificato viene visualizzato un riquadro che consente di selezionare un certificato valido nell'archivio certificati locale. È possibile selezionare un certificato e quindi fare clic su Visualizza dettagli certificato. Il certificato verrà visualizzato in un nuovo riquadro. Nel riquadro Certificato è possibile visualizzare informazioni sul certificato Generale. Fare clic sulla scheda Dettagli per visualizzare informazioni dettagliate sul certificato, ad esempio il nome soggetto e il nome alternativo soggetto. Il percorso di certificazione visualizza il percorso del certificato di trust per il certificato. Dopo aver esaminato le informazioni del certificato, fare clic su OK.
-ms.openlocfilehash: cb76e0720ad1a1f50946bf573a19e9996c2e647d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 29c8128a63d690bf9a94e949be188e19a4dc78c0
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749347"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60848029"
 ---
 # <a name="view-certificate"></a>Visualizzare un certificato
  

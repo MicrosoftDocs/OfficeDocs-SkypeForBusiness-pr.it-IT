@@ -2,7 +2,7 @@
 title: Calcolatore di pianificazione della capacità di Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 ms.date: 2/1/2018
 manager: serdars
 audience: ITPro
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: bc4d93b1-0c38-4bf8-8b65-692ff3e2446d
 description: 'Riepilogo: come usare lo strumento calcolatrice capacità.'
-ms.openlocfilehash: bfceeb643f9043053c70670f19cbc91b325acbb4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b0369ffd30a4904057a44d594527ad017a712096
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745922"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60862193"
 ---
 # <a name="skype-for-business-server-capacity-planning-calculator"></a>Calcolatore di pianificazione della capacità di Skype for Business Server
  
@@ -30,17 +30,17 @@ ms.locfileid: "60745922"
 > - Skype for Business Server 2019.
 > - Skype for Business Server 2015.
   
-La calcolatrice della capacità [di Skype for Business Server 2015](https://www.microsoft.com/download/details.aspx?id=51196) e la calcolatrice della capacità di [Skype for Business Server 2019](https://www.microsoft.com/download/details.aspx?id=57509) aumentano lo strumento di pianificazione di [Skype for Business](https://www.microsoft.com/download/details.aspx?id=50357) e la documentazione relativa alla distribuzione ( Pianificare la distribuzione di[Skype for Business Server 2015](../plan-your-deployment/plan-your-deployment.md) e Pianificare rispettivamente la distribuzione [di Skype for Business Server 2019).](../../SfBServer2019/plan/plan-your-deployment-2019.md) Utilizzare il calcolatore dopo aver esaminato la guida e aver creato una topologia consigliata utilizzando lo strumento di pianificazione.
+La calcolatrice della capacità di [Skype for Business Server 2015](https://www.microsoft.com/download/details.aspx?id=51196) e la calcolatrice della capacità di [Skype for Business Server 2019](https://www.microsoft.com/download/details.aspx?id=57509) aumentano lo strumento di pianificazione [di Skype for Business](https://www.microsoft.com/download/details.aspx?id=50357) e la documentazione relativa alla distribuzione ( Pianificare la distribuzione di Skype for Business Server[2015](../plan-your-deployment/plan-your-deployment.md) e Pianificare rispettivamente la distribuzione [di Skype for Business Server 2019).](../../SfBServer2019/plan/plan-your-deployment-2019.md) Utilizzare il calcolatore dopo aver esaminato la guida e aver creato una topologia consigliata utilizzando lo strumento di pianificazione.
   
 Il Skype for Business Server capacity calculator consente di determinare i requisiti del server in base al numero di utenti e agli strumenti di comunicazione utilizzati dall'organizzazione. Dopo aver determinato il profilo utente e le funzioni che si desidera abilitare per gli utenti, utilizzare il calcolatore per determinare il numero di server, memoria e larghezza di banda necessari. Questa versione dello strumento di calcolo non fornisce indicazioni per i requisiti di I/O su disco.
   
 Se si dispone di informazioni accurate e dettagliate sul proprio profilo utente specifico, è possibile trarre vantaggio dalla calcolatrice. Ad esempio, la percentuale di utenti abilitati alla voce, la media delle chiamate per utente all'ora, la durata delle chiamate e la percentuale di utenti simultanei nelle conferenze possono fare una differenza enorme nei requisiti del server. L'accuratezza dei suggerimenti creati dal calcolatore dipende dall'accuratezza delle informazioni fornite.
   
-Dopo aver utilizzato lo strumento di pianificazione e lo strumento di calcolo della pianificazione della capacità, è consigliabile simulare il carico proposto e pianificato per assicurarsi che Skype for Business Server verrà eseguito il provisioning adeguato. Per eseguire test di stress in un carico simulato, utilizzare lo strumento [Skype for Business Server Stress and Performance](https://www.microsoft.com/download/details.aspx?id=50367) documentato in Skype for Business Server Stress and Performance [Tool](./stress-and-performance-tool/stress-and-performance-tool.md).
+Dopo aver utilizzato lo strumento di pianificazione e lo strumento di calcolo della pianificazione della capacità, è consigliabile simulare il carico proposto e pianificato per assicurarsi che Skype for Business Server verrà eseguito il provisioning adeguato. Per eseguire test di stress in un carico simulato, utilizzare lo strumento Skype for Business Server [Stress and Performance](https://www.microsoft.com/download/details.aspx?id=50367) documentato in Skype for Business Server Stress and Performance [Tool](./stress-and-performance-tool/stress-and-performance-tool.md).
   
 ## <a name="using-the-capacity-calculator"></a>Utilizzo del calcolatore della capacità
 
-La calcolatrice è un Microsoft Excel foglio di calcolo. Le celle di input sono di colore arancione. I valori predefiniti vengono immessi nelle celle (per Skype for Business Server 2015, 80.000 utenti in un pool con dodici Front End Server, mentre per Skype for Business Server 2019, 106.000 utenti in un pool con sedici Front End Server), ma è consigliabile modificare questi valori in base alle esigenze dell'organizzazione.
+La calcolatrice è un Microsoft Excel foglio di calcolo. Le celle di input sono di colore arancione. I valori predefiniti vengono immessi nelle celle (per Skype for Business Server 2015, 80.000 utenti in un pool con 12 Front End Server, mentre per Skype for Business Server 2019, 106.000 utenti in un pool con sedici Front End Server), ma è consigliabile modificare questi valori in base alle esigenze dell'organizzazione.
   
 Il modello di utilizzo contiene le sezioni seguenti. Per calcolare i requisiti di capacità, immettere i dati come descritto a partire dalla parte superiore del foglio e lavorando in basso riga per riga: 
   

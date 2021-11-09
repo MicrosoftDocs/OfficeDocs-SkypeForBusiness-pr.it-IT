@@ -2,7 +2,7 @@
 title: Pagina di riepilogo dell'unione legacy
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 0e298963-cc86-445a-87f4-d611ef2167ee
 description: La migrazione da Microsoft Office Communications Server 2007 R2 a Lync Server 2013 utilizza le funzionalità di Generatore di topologie per unire le topologie esistenti. Nella schermata di riepilogo vengono specificate tutte le azioni e le selezioni effettuate durante la configurazione dell'unione di Office Communications Server 2007 R2 nella configurazione di Generatore di topologie di Lync Server 2013.
-ms.openlocfilehash: 9c379dfa350e5aa6de0885d96cb33bb26233ef0c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 8d4e8d7adc2bd2469c60b3e9e4cc9b3f1c37650e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60768094"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60847579"
 ---
 # <a name="legacy-merge-summary-page"></a>Pagina di riepilogo dell'unione legacy
 

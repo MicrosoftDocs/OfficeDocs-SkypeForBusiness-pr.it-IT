@@ -2,7 +2,7 @@
 title: Cosa è deprecato da Skype for Business Server 2019
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: overview
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: 'Riepilogo: queste funzionalità sono state rimosse Skype for Business Server 2019.'
-ms.openlocfilehash: 65229e091d903ca18fee89224e45aedef8c0ca40
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7f956aed60a65d074776756e0c6254e2aa3d9629
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60771725"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60846979"
 ---
 # <a name="whats-deprecated-from-skype-for-business-server-2019"></a>Cosa è deprecato da Skype for Business Server 2019
 
@@ -37,11 +37,11 @@ Skype for Business Server 2015 e i relativi predecessori hanno consentito di con
 
 Il server Chat persistente è un ruolo facoltativo che consente a più utenti dell'organizzazione di partecipare a conversazioni di chat room persistenti nel tempo. Non è possibile distribuire chat persistente con Skype for Business Server 2019. Questo ruolo del server viene rimosso da Generatore di topologie e dal codice. 
 
-La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here)
+La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here).
 
 ### <a name="sql-mirroring-for-skype-for-business-server"></a>SQL Mirroring per Skype for Business Server
 
-SQL Non è possibile distribuire il mirroring con Skype for Business Server 2019. Altre opzioni per la disponibilità elevata e il ripristino di emergenza sono ancora supportate ed è consigliabile scegliere tra queste opzioni. Vedere [Plan for high availability and disaster recovery in Skype for Business Server](../SfbServer/plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md) per esaminare le opzioni.
+SQL Il mirroring non può essere distribuito con Skype for Business Server 2019. Altre opzioni per la disponibilità elevata e il ripristino di emergenza sono ancora supportate ed è consigliabile scegliere tra queste opzioni. Vedere [Plan for high availability and disaster recovery in Skype for Business Server](../SfbServer/plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md) per esaminare le opzioni.
 
 ### <a name="in-place-upgrades"></a>Aggiornamenti sul posto 
 

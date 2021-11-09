@@ -1,8 +1,8 @@
 ---
-title: Aggiungere criteri percorso a un sito di rete in Skype for Business Server
+title: Aggiungere un criterio percorso a un sito di rete in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,14 +16,14 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 43bfab8a-3d6b-4ca4-8425-879fd910502e
 description: Assegnare criteri percorso E9-1-1 ai siti di rete in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 9d248d91703284d58b27e5fd593af95ddf4edaf3
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ae35958d9ff95e32f129d3992d52145e3bef51b5
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765954"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60848049"
 ---
-# <a name="add-a-location-policy-to-a-network-site-in-skype-for-business-server"></a>Aggiungere criteri percorso a un sito di rete in Skype for Business Server
+# <a name="add-a-location-policy-to-a-network-site-in-skype-for-business-server"></a>Aggiungere un criterio percorso a un sito di rete in Skype for Business Server
  
 Assegnare criteri percorso E9-1-1 ai siti di rete in Skype for Business Server VoIP aziendale. 
   
@@ -41,7 +41,7 @@ Per informazioni dettagliate sull'utilizzo dei siti di rete, vedere la documenta
     
 ### <a name="to-assign-a-location-policy-to-an-existing-network-site"></a>Per assegnare un criterio percorso a un sito di rete esistente
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 2. Eseguire i cmdlet seguenti per modificare un sito di rete esistente.
     
@@ -53,7 +53,7 @@ Per informazioni dettagliate sull'utilizzo dei siti di rete, vedere la documenta
 
 ### <a name="to-assign-a-location-policy-to-a-new-network-site"></a>Per assegnare un criterio percorso a un nuovo sito di rete
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 2. Eseguire il cmdlet seguente per creare un nuovo sito di rete.
     

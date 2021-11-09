@@ -2,7 +2,7 @@
 title: Rapporto distribuzione metriche qualità multimediale in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,16 +12,16 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: d07996e6-b0a5-4ff8-9512-ab707762b4e2
 description: 'Riepilogo: informazioni sul Rapporto distribuzione metriche qualità multimediale in Skype for Business Server.'
-ms.openlocfilehash: 773dceacfc7ca955a893d740ef4832ee8d94cb0e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 00899681190e532af971c719c2e81f655facf7ab
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60746955"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60862313"
 ---
 # <a name="the-media-quality-metrics-distribution-report-in-skype-for-business-server"></a>Rapporto distribuzione metriche qualità multimediale in Skype for Business Server 
  
-**Riepilogo:** Informazioni sul Rapporto distribuzione metriche di qualità multimediale in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto distribuzione metriche qualità multimediale in Skype for Business Server.
   
 Il Rapporto distribuzione metriche di qualità multimediale consente di visualizzare un grafico che mostra i valori di distribuzione per una metrica Qualità dell'esperienza, ad esempio instabilità o perdita di pacchetti. Si supponga, ad esempio, che gli utenti esemplino un totale di 10 chiamate telefoniche. queste 10 chiamate segnalano i seguenti tempi di roundtrip:
   

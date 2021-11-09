@@ -1,7 +1,7 @@
 ---
 title: Pianificare i client riunioni (App Web e app Riunioni)
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 2/16/2018
@@ -17,20 +17,20 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 31e95e16-f79f-46c6-b123-973fa56a824e
 description: "Riepilogo: i professionisti IT devono esaminare i requisiti di supporto per l'app riunioni Skype for Business Web App e Skype durante la pianificazione di Skype for Business Server. Questo articolo non è destinato agli utenti di queste app."
-ms.openlocfilehash: 615fff0be39afd41745087d4dae4ea40385e034b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: dbf9f83599e36189c172daa37cdb7444659aad83
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60762264"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60862123"
 ---
 # <a name="plan-for-meetings-clients-web-app-and-meetings-app"></a>Pianificare i client riunioni (App Web e app Riunioni)
  
-**Riepilogo:** I professionisti IT devono esaminare i requisiti di supporto per l'app riunioni Skype for Business Web App e Skype durante la pianificazione per Skype for Business Server. Questo articolo non è destinato agli utenti di queste app.
+**Riepilogo:** I professionisti IT devono esaminare i requisiti di supporto per l'app riunioni Skype for Business Web App e Skype durante la pianificazione di Skype for Business Server. Questo articolo non è destinato agli utenti di queste app.
   
 Dopo aver implementato Skype for Business Server, gli utenti dell'organizzazione probabilmente avranno installato il client Skype for Business come parte del processo di distribuzione. 
   
-In seguito, tali utenti possono creare riunioni e invitare utenti esterni all'organizzazione e gli invitati alle riunioni potrebbero non avere alcuna versione del client Skype for Business. Quando questi utenti fanno clic sull'URL per l'invito alla riunione, viene rilevata la mancanza di un client e all'invitato senza un client Skype for Business verrà richiesto di scaricare e installare un client leggero solo per le riunioni in modo che possa partecipare alla riunione.
+In seguito, tali utenti possono creare riunioni e invitare utenti esterni all'organizzazione e gli invitati potrebbero non avere alcuna versione del client Skype for Business riunione. Quando gli utenti fanno clic sull'URL per l'invito alla riunione, viene rilevata la mancanza di un client e all'invitato senza un client Skype for Business verrà richiesto di scaricare e installare un client leggero solo per le riunioni in modo che possa partecipare alla riunione.
   
 > [!NOTE]
 > L Skype for Business Web App e Skype riunioni sono disponibili solo quando si tenta di accedere a una riunione senza dover Skype for Business. La Guida dell'utente per queste app è disponibile all'indirizzo [https://aka.ms/smahelp](https://aka.ms/smahelp) . 
@@ -40,17 +40,17 @@ In seguito, tali utenti possono creare riunioni e invitare utenti esterni all'or
   
 Per impostazione predefinita, il server che ospita la riunione invierà l'utente a scaricare e installare Skype for Business Web App per partecipare alla riunione. Il Skype for Business Web App viene archiviato nel Front End Server e viene inviato al partecipante alla riunione. 
   
-Ad Skype for Business Server, Skype Meetings App (su Windows) e Skype for Business per Mac (su Mac) sono disponibili come sostituzioni per Skype for Business Web App a partire da CU5, ma fornendo le app sostitutive richiede la configurazione aggiuntiva descritta in [Enable Skype Meetings App to replace Skype for Business Web App (Optional)](../../deploy/deploy-clients/deploy-web-downloadable-clients.md#SMA_Enable). Se Skype Meetings App e Skype for Business per Mac sono abilitati, gli utenti scaricano la versione più recente delle app da Microsoft 365 o Office 365 rete per la distribuzione di contenuti (rete CDN) anziché dal server Skype for Business. Per Skype for Business Server 2019, l'uso dell'app riunioni Skype e Skype for Business per Mac è l'unica opzione.
+Ad Skype for Business Server, Skype Meetings App (su Windows) e Skype for Business per Mac (su Mac) sono disponibili come sostituzioni per Skype for Business Web App a partire da CU5, ma fornendo le app sostitutive richiede la configurazione aggiuntiva descritta in [Enable Skype Meetings App to replace Skype for Business Web App (Optional)](../../deploy/deploy-clients/deploy-web-downloadable-clients.md#SMA_Enable). Se Skype Meetings App e Skype for Business per Mac sono abilitati, gli utenti scaricano la versione più recente delle app da Microsoft 365 o Office 365 rete per la distribuzione di contenuti (rete CDN) anziché dal server Skype for Business. Per Skype for Business Server 2019, l'Skype'app Riunioni e Skype for Business per Mac è l'unica opzione.
   
-Skype L'app Riunioni offre un'esperienza browser semplificata per scaricare e installare l'app e partecipare alle riunioni, inclusa la partecipazione con un solo clic per gli utenti di Internet Explorer. Skype L'app Riunioni presenta anche molti miglioramenti rispetto al Skype for Business Web App per l'affidabilità e l'esperienza delle riunioni. 
+Skype L'app Riunioni offre un'esperienza browser semplificata per scaricare e installare l'app e partecipare alle riunioni, inclusa la partecipazione con un solo clic per gli utenti di Internet Explorer. Skype L'app Riunioni include anche molti miglioramenti rispetto al Skype for Business Web App per l'affidabilità e l'esperienza delle riunioni. 
   
 > [!NOTE]
-> A Skype for Business Server 2015 CU5 o versioni successive, le riunioni tenute con Skype for Business Online non invieranno più a un utente senza client il Skype for Business Web App, ma verranno inviate Skype Meetings App (su Windows) o Skype for Business per Mac (su Mac). A Skype for Business Server 2015 CU5 o versioni successive, se abiliti l'app Riunioni di Skype per sostituire [Skype for Business Web App (facoltativo),](../../deploy/deploy-clients/deploy-web-downloadable-clients.md#SMA_Enable)gli utenti senza client verranno inviati Skype Meetings App o Skype for Business per Mac di Skype for Business Web App. 
+> A Skype for Business Server 2015 CU5 o versioni successive, le riunioni tenute con Skype for Business Online non invieranno più a un utente senza client il Skype for Business Web App, ma verranno inviate Skype Meeting App (su Windows) o Skype for Business per Mac (su Mac). A Skype for Business Server 2015 CU5 o versioni successive, se abiliti l'app Riunioni di Skype per sostituire [Skype for Business Web App (facoltativo),](../../deploy/deploy-clients/deploy-web-downloadable-clients.md#SMA_Enable)gli utenti senza client verranno inviati Skype Meetings App o Skype for Business per Mac di Skype for Business Web App. 
   
 ## <a name="software-requirements"></a>Requisiti software
 <a name="OS-Browser"> </a>
 
-Per utilizzare il Skype for Business Web App, un utente deve disporre di una delle combinazioni di browser e sistema operativo supportate seguenti. 
+Per utilizzare il Skype for Business Web App, un utente deve disporre di una delle combinazioni di sistema operativo e browser supportate seguenti. 
   
 **Sistema operativo e supporto minimo dei browser per Skype for Business Web App**
 
@@ -65,7 +65,7 @@ Per utilizzare il Skype for Business Web App, un utente deve disporre di una del
    
 &#x2776; Il plug-in Skype for Business Web App browser richiede un plug-in di condivisione specifico per usare la funzionalità vocale, video, condivisione e visualizzazione dello schermo in corso e altre funzionalità. A un partecipante alla riunione viene data la possibilità di installare il plug-in di condivisione quando partecipa alla riunione o quando avvia una di queste funzionalità. In Windows 8 e Windows 8.1, il plug-in di condivisione può essere installato solo se si esegue Internet Explorer 10 o Internet Explorer 11 per il desktop. Queste funzionalità non sono disponibili con le versioni non desktop di Internet Explorer 10 e 11. Si noti che Firefox e Safari versione 12.0 e successive non sono più supportati.
   
-&#x2777; Nei sistemi operativi Windows 7, Windows Server 2008 R2 e Macintosh supportati sono disponibili tutte le funzionalità, tra cui voce basata su computer, video, visualizzazione applicazioni, condivisione applicazioni, visualizzazione desktop e condivisione desktop. Per usare queste funzionalità, è necessario installare un plug-in quando richiesto. Mac OS X versione 10.7 non è più supportato.  Nota anche che l'app Web non verrà installata in OS X 10.15 o versione successiva.  È consigliabile usare la versione più recente di Skype for Business per Mac che supporta scenari di join anonimi in futuro.
+&#x2777; Nei sistemi operativi Windows 7, Windows Server 2008 R2 e Macintosh supportati sono disponibili tutte le funzionalità, tra cui voce basata su computer, video, visualizzazione delle applicazioni, condivisione di applicazioni, visualizzazione desktop e condivisione desktop. Per usare queste funzionalità, è necessario installare un plug-in quando richiesto. Mac OS X versione 10.7 non è più supportato.  Nota anche che l'app Web non verrà installata in OS X 10.15 o versione successiva.  È consigliabile usare la versione più recente di Skype for Business per Mac che supporta scenari di join anonimi in futuro.
   
 &#x2778;'accesso all'app Web da Chrome su Windows verrà avviato un piccolo programma che carica l'app Web in un frame incorporato di Internet Explorer. Per il corretto caricamento dell'app Web, è necessario che sia installata una delle versioni supportate di Internet Explorer.
   
@@ -90,14 +90,14 @@ I requisiti hardware del computer sono determinati dal sistema operativo e dal b
 ## <a name="network-requirements"></a>Requisiti di rete
 <a name="Network"> </a>
 
-Se un utente di Skype for Business Web App o Skype Meetings App verifica problemi di connessione, è probabile che l'infrastruttura di rete dell'organizzazione non sia configurata per supportare Office 365 come descritto in URL di Office 365 e intervalli di indirizzi [IP.](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US) Questo è il caso se la riunione è stata creata da un utente di Skype for Business Online o Skype for Business Server. 
+Se un utente di Skype for Business Web App o Skype Meetings App verifica problemi di connessione, è probabile che l'infrastruttura di rete dell'organizzazione non sia configurata per supportare Office 365, come descritto in URL e intervalli di indirizzi IP di [Office 365.](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US) Questo è il caso se la riunione è stata creata da un utente di Skype for Business Online o Skype for Business Server. 
   
 Se l'utente si trova in una rete non configurata come descritto, molte funzionalità dell'app potrebbero non funzionare e potrebbero non essere affatto in grado di connettersi alla riunione.
   
 ## <a name="supported-meetings-features"></a>Funzionalità riunioni supportate
 <a name="BKMK_Conferencing"> </a>
 
-Questa tabella confronta le funzionalità Riunioni disponibili per gli utenti del client Skype for Business, Skype for Business Web App, Skype Riunioni e Lync Web App. Lync Web App è elencato a scopo di confronto delle funzionalità: un utente sta scaricando e usando Lync Web App solo se la riunione è stata ospitata su un server Lync 2013.
+In questa tabella vengono confrontate le funzionalità Riunioni disponibili per gli utenti del client Skype for Business, Skype for Business Web App, Skype'app Riunioni e Lync Web App. Lync Web App è elencato a scopo di confronto delle funzionalità: un utente sta scaricando e usando Lync Web App solo se la riunione è stata ospitata su un server Lync 2013.
 
 | Funzionalità/funzionalità | Skype for Business 2016 o 2019 | Skype for Business sul client Mac | App Riunioni Skype | Skype for Business Web App | Lync Web App |
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -141,7 +141,7 @@ Questa tabella confronta le funzionalità Riunioni disponibili per gli utenti de
   
  &#x2777; Per Skype for Business Online, questa funzionalità richiede Servizi di conferenza PSTN Microsoft, Exchange messaggistica unificata o un provider di servizi di audioconferenza di terze parti.
   
- &#x2778; Il client Lync per Mac 2011 non può visualizzare le presentazioni di Microsoft Office 2013 PowerPoint quando sono state condivise in una conferenza dal Skype for Business Web App.
+ &#x2778; Il client Lync per Mac 2011 non può visualizzare le presentazioni Microsoft Office 2013 PowerPoint quando sono state condivise in una conferenza dal Skype for Business Web App.
   
 ## <a name="known-issues-and-troubleshooting"></a>Problemi noti e risoluzione dei problemi
 <a name="BKMK_Conferencing"> </a>
@@ -164,11 +164,11 @@ Per gli utenti finali, la [Guida online](https://aka.ms/smahelp) per queste app 
     
 ### <a name="aes-support"></a>Supporto AES 
 
-A partire da Skype for Business Server 2015 CU5, AES non è supportato per ASP.NET 4.6 e ciò potrebbe causare l'avvio dell'app Riunioni Skype. [I requisiti di crittografia dovuti a ASP.NET 4.5](../security/user-and-client-authentication.md#cryptographic-requirements-due-to-asp-net-45) hanno maggiori dettagli.
+A partire da Skype for Business Server 2015 CU5, AES non è supportato per ASP.NET 4.6 e ciò potrebbe causare un errore di avvio dell'app riunioni Skype. [I requisiti di crittografia dovuti a ASP.NET 4.5](../security/user-and-client-authentication.md#cryptographic-requirements-due-to-asp-net-45) hanno maggiori dettagli.
   
 ## <a name="see-also"></a>Vedere anche
 <a name="BKMK_Conferencing"> </a>
 
 [Distribuire client scaricabili Web in Skype for Business Server](../../deploy/deploy-clients/deploy-web-downloadable-clients.md)
 
-[Piattaforme supportate per l'app Skype riunioni](https://support.office.com/client/results?Shownav=true&amp;lcid=1033&amp;ns=SKFBWA&amp;version=15&amp;omkt=en-US&amp;ver=15&amp;HelpID=SfBWebApp4001)
+[Piattaforme supportate per l Skype a app Riunioni](https://support.office.com/client/results?Shownav=true&amp;lcid=1033&amp;ns=SKFBWA&amp;version=15&amp;omkt=en-US&amp;ver=15&amp;HelpID=SfBWebApp4001)

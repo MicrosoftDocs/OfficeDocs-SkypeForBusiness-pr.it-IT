@@ -2,7 +2,7 @@
 title: Uso del dashboard di monitoraggio in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: e00e5783-116f-481f-ad17-3af847d6769a
 description: 'Riepilogo: informazioni sul dashboard di monitoraggio in Skype for Business Server.'
-ms.openlocfilehash: b03c85355d2217763066ddce68e55eab65343249
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ac68ae2174fcd7c4266da77c2d079c2f9a31d8e5
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60772032"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60862303"
 ---
 # <a name="using-the-monitoring-dashboard-in-skype-for-business-server"></a>Uso del dashboard di monitoraggio in Skype for Business Server
  
@@ -87,7 +87,7 @@ Per impostazione predefinita, il dashboard di monitoraggio mostra i dati per le 
     
 Oltre alle metriche utilizzo sistema, le metriche seguenti visualizzano il totale per il giorno corrente e i sei giorni precedenti (se si seleziona **Visualizzazione** settimanale ) o per la settimana corrente e le ultime sei settimane se si seleziona Visualizzazione mensile **.**
   
-## <a name="per-user-call-diagnostics"></a>Per-User diagnostica delle chiamate
+## <a name="per-user-call-diagnostics"></a>Per-User di chiamata
 
  **Utenti con errori di chiamata**
   

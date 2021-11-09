@@ -1,7 +1,7 @@
 ---
 title: Skype for Business compatibilità con Office app
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 2/16/2018
@@ -16,22 +16,22 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ac3a1046-b438-4e21-9d4f-3b0057dd685d
 description: Comprendere i modi in cui è possibile accedere Skype for Business funzionalità da Outlook altre Microsoft Office applicazioni.
-ms.openlocfilehash: e4b826cf6ba79b8db31ec5dec57c8d6bfca5280f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 06a019416ad8d32b0234b08c01b09630dd07a2ef
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773566"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60862133"
 ---
 # <a name="skype-for-business-compatibility-with-office-apps"></a>Skype for Business compatibilità con Office app
  
 Comprendere i modi in cui è possibile accedere Skype for Business funzionalità da Outlook altre Microsoft Office applicazioni.
   
-In questo argomento viene descritta la compatibilità Skype for Business con diverse versioni di Microsoft Office suite. 
+In questo argomento viene descritta la compatibilità di Skype for Business con diverse versioni di Microsoft Office suite. 
   
 ## <a name="office-and-skype-for-business"></a>Office e Skype for Business
 
-Nella tabella seguente vengono descritte le funzionalità Skype for Business supportate da diverse versioni di Office dopo la distribuzione e l'integrazione di Exchange, come descritto in [Integrate Skype for Business Server with Exchange Server](../../deploy/integrate-with-exchange-server/integrate-with-exchange-server.md).
+Nella tabella seguente vengono descritte le funzionalità di Skype for Business supportate da diverse versioni di Office dopo la distribuzione e l'integrazione di Exchange, come descritto in [Integrare Skype for Business Server con Exchange Server](../../deploy/integrate-with-exchange-server/integrate-with-exchange-server.md).
   
 **Skype for Business e Microsoft Office compatibilità**
 
@@ -53,7 +53,7 @@ Nella tabella seguente vengono descritte le funzionalità Skype for Business sup
 |Messaggistica istantanea e presenza nei file di Microsoft Word e Microsoft Excel (smart tag abilitati)    |Solo Microsoft Word    |Solo Microsoft Word    |No    |
 |Messaggistica istantanea e presenza nei siti di Microsoft SharePoint (è necessario che Outlook sia installato)    |Sì    |Sì    |No    |
    
-&#x2776; - Si presuppone che sia stato installato e attualmente in esecuzione un Skype for Business sul client Mac o sul client Lync 2011 per Mac.
+&#x2776; - Si presuppone che sia stato installato e attualmente in esecuzione un Skype for Business nel client Mac o nel client Lync 2011 per Mac.
   
 ## <a name="exchange-server-and-skype-for-business"></a>Exchange Server e Skype for Business
 
@@ -65,8 +65,8 @@ Nella tabella seguente viene descritto Skype for Business supporto per diverse v
 |:-----|:-----|
 |Exchange Server 2019 (solo Skype for Business Server 2019) |Come nel Exchange Server 2013    |
 |Exchange Server 2016    |Come nel Exchange Server 2013  <br/> |
-|Exchange Server 2013  <br/> |Come per Exchange Server 2010, con l'aggiunta di  <br/>&bull;&nbsp;&nbsp;Archivio contatti unificato  <br/>&bull;&nbsp;&nbsp;Immagini ad alta risoluzione  <br/>&bull;&nbsp;&nbsp;Integrazione dell'archiviazione  <br/> **Nota:** Per informazioni dettagliate, vedere [Integrate Skype for Business Server with Exchange Server](../../deploy/integrate-with-exchange-server/integrate-with-exchange-server.md).  <br/> |
-|Exchange Server 2010  <br/>(Skype for Business Server solo 2015) |Le funzionalità seguenti sono disponibili solo tramite i Servizi Web Exchange:  <br/>&bull;&nbsp;&nbsp;Lettura o eliminazione di elementi nella cartella Cronologia conversazioni  <br/>&bull;&nbsp;&nbsp;Lettura o eliminazione di elementi del sistema di caselle vocali  <br/>&bull;&nbsp;&nbsp;Visualizzare le informazioni sulla disponibilità estese e l'oggetto e la posizione della riunione  <br/>&bull;&nbsp;&nbsp;Exchange contatto  <br/> Le cartelle pubbliche sono facoltative Exchange Server 2010.  <br/> |
+|Exchange Server 2013  <br/> |Come il Exchange Server 2010, con l'aggiunta di  <br/>&bull;&nbsp;&nbsp;Archivio contatti unificato  <br/>&bull;&nbsp;&nbsp;Immagini ad alta risoluzione  <br/>&bull;&nbsp;&nbsp;Integrazione dell'archiviazione  <br/> **Nota:** Per informazioni dettagliate, vedere [Integrate Skype for Business Server with Exchange Server](../../deploy/integrate-with-exchange-server/integrate-with-exchange-server.md).  <br/> |
+|Exchange Server 2010  <br/>(Skype for Business Server solo 2015) |Le funzionalità seguenti sono disponibili solo tramite i Servizi Web Exchange:  <br/>&bull;&nbsp;&nbsp;Lettura o eliminazione di elementi nella cartella Cronologia conversazioni  <br/>&bull;&nbsp;&nbsp;Lettura o eliminazione di elementi del sistema di caselle vocali  <br/>&bull;&nbsp;&nbsp;Visualizzare le informazioni sulla disponibilità estese e l'oggetto e la posizione della riunione  <br/>&bull;&nbsp;&nbsp;Exchange sincronizzazione dei contatti  <br/> Le cartelle pubbliche sono facoltative Exchange Server 2010.  <br/> |
    
 ## <a name="see-also"></a>Vedere anche
  

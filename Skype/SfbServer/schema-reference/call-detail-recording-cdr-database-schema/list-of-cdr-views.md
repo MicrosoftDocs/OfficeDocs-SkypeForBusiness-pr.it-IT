@@ -2,7 +2,7 @@
 title: Elenco di visualizzazioni CDR
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 7/15/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 2f72aead-d1da-4185-b75c-f6c31d76a6b3
 description: Le visualizzazioni consentono di accedere facilmente alle informazioni sugli scenari più comuni usati per restituire dati dal database CDR. È consigliabile utilizzare le visualizzazioni per la creazione di report personalizzati anziché le tabelle di database di registrazione dei dati effettive. ciò è dovuto al fatto che è più probabile che le visualizzazioni del database mantengano la compatibilità con le versioni future.
-ms.openlocfilehash: 7154319dba584516dcff3c41d23e5af31bee4621
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 713e9bef620f36901031024395cc3b51898e433d
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60746612"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60847059"
 ---
 # <a name="list-of-cdr-views"></a>Elenco di visualizzazioni CDR
  
