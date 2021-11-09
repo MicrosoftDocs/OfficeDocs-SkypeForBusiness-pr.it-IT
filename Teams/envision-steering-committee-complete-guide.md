@@ -1,6 +1,6 @@
 ---
 title: Comitato direttivo per la distribuzione vocale nel cloud
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 03/13/2018
@@ -16,12 +16,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b182e3ccc5e650e4ace3535b23bb6828bf2c88b5
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: cd588928f71926981c42f7c909e00c544243279e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769914"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60858873"
 ---
 # <a name="steering-committee"></a>Comitato direttivo
 
@@ -94,7 +94,7 @@ Le risorse seguenti devono essere completate e incluse nella presentazione per l
 
 -   Follow-up su attività del comitato di direzione precedenti
 
--   Comitato direttivo PowerPoint, relazione sullo stato di alto livello del progetto
+-   Relazione sullo stato PowerPoint di alto livello del progetto
 
     -   Esaminare il progetto a partire da una revisione mensile/trimestrale/annuale.
 
@@ -128,7 +128,7 @@ Le risorse seguenti devono essere completate e incluse nella presentazione per l
 
         -   Identificare i passaggi successivi e l'assistenza che potrebbe essere richiesta ai membri del comitato.
 
--   Panoramica sulla qualità: usare le indicazioni [di Preparare la rete per Teams](prepare-network.md).
+-   Panoramica sulla qualità: usare le indicazioni [di Preparare la rete per Teams.](prepare-network.md)
 
     -   Prepararsi a spiegare i risultati di questi report qualitativi in modo approfondito e includere suggerimenti per correggere eventuali problemi noti.
 

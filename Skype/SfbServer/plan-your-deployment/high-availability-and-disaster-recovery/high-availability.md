@@ -2,7 +2,7 @@
 title: Disponibilità e gestione elevata del pool Front End
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -12,17 +12,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 965041b7-3136-49f2-89c1-8b30417cb8ea
-description: Informazioni sulla gestione dei pool Front End in Skype for Business Server, tra cui la gestione dei pool, la perdita di quorum e la procedura speciale per i pool con solo due Front End Server.
-ms.openlocfilehash: 5d9eef2a027131db960b05508ece28cf95b992dc
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: Informazioni sulla gestione dei pool Front End in Skype for Business Server, tra cui la gestione dei pool, la perdita di quorum e i passaggi speciali per i pool con solo due Front End Server.
+ms.openlocfilehash: f8ad22c7728fc4fb62980a81fa659558aaba4be7
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60737682"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60831850"
 ---
 # <a name="front-end-pool-high-availability-and-management"></a>Disponibilità e gestione elevata del pool Front End
  
-Informazioni sulla gestione dei pool Front End in Skype for Business Server, tra cui la gestione dei pool, la perdita di quorum e la procedura speciale per i pool con solo due Front End Server.
+Informazioni sulla gestione dei pool Front End in Skype for Business Server, tra cui la gestione dei pool, la perdita di quorum e i passaggi speciali per i pool con solo due Front End Server.
   
 In Skype for Business Server, l'architettura dei pool Front End utilizza un modello di sistemi distribuiti, con i dati di ogni utente conservati su fino a tre Front End Server nel pool. È consigliabile che tutti edizione Enterprise pool Front End includano almeno tre Front End Server.
 
@@ -31,7 +31,7 @@ In Skype for Business Server, l'architettura dei pool Front End utilizza un mode
   
 ## <a name="planning-for-the-management-of-front-end-pools"></a>Pianificazione della gestione dei pool Front End
 
- Skype for Business Server un modello di sistemi distribuiti basato su Windows Fabric. In questo modello, i dati importanti per ogni utente e conferenza vengono archiviati in tre Front End Server in un pool Front End. Questi tre server che archiviano un determinato set di dati sono denominatireplica.
+ Skype for Business Server viene utilizzato un modello di sistemi distribuiti basato su Windows Fabric. In questo modello, i dati importanti per ogni utente e conferenza vengono archiviati in tre Front End Server in un pool Front End. Questi tre server che archiviano un determinato set di dati sono denominatireplica.
   
 Con il modello distribuito per i pool Front End, un determinato numero di server di un pool deve essere in esecuzione per il funzionamento del pool. Esistono due modalità di perdita per un pool.
   

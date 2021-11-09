@@ -2,7 +2,7 @@
 title: Verifica della replica nel dominio
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 4846b787-d55e-4364-bdcd-2dee33f0251c
 description: "Per verificare la replica della preparazione del dominio eseguita nel Passaggio 1: Preparare lo schema, è necessario eseguire un cmdlet da Skype for Business Server Management Shell Lync Server Management Shell. Per eseguire il cmdlet di Windows PowerShell, effettuare l'accesso in qualità di membro del gruppo Domain Admins a un computer membro del dominio che è stato preparato. Eseguire le operazioni seguenti:"
-ms.openlocfilehash: 195fff7628f9c0cdd52efe7dada2fc94d4e16cfe
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 600d024aa1f2d024c56e08afa20b7f24de086710
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60772572"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857783"
 ---
 # <a name="verify-replication-in-the-domain"></a>Verificare la replica nel dominio
  

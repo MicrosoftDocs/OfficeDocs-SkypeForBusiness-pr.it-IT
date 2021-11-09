@@ -1,8 +1,8 @@
 ---
 title: Espandere Microsoft Teams all'interno dell'organizzazione
-description: Informazioni sulle risorse disponibili per la creazione della distribuzione Teams standard per ottenere il massimo dal Teams specifici tipi di organizzazione.
+description: Informazioni sulle risorse disponibili per la creazione della distribuzione Teams standard per ottenere il massimo Teams specifici tipi di organizzazione.
 ms.topic: conceptual
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 audience: admin
@@ -15,16 +15,16 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 03bb7b1d8d7cf2a30fd4ee2d80ceec71f4e05fdd
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 30a9017417e6c4d50745fe1ec1bf492d65dc6b81
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777556"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60858783"
 ---
 # <a name="expand-microsoft-teams-across-your-organization"></a>Espandere Microsoft Teams all'interno dell'organizzazione
 
-Queste risorse si basano sulle linee guida standard Teams distribuzione e sono progettate per consentire di ottenere il massimo Teams specifici tipi di organizzazione. Se non è ancora stata Teams distribuzione, vedere il percorso consigliato per Teams in Come [implementare](../deploy-overview.md)Microsoft Teams .
+Queste risorse si basano sulle linee guida standard Teams distribuzione e sono progettate per consentire di ottenere il massimo Teams specifici tipi di organizzazione. Se non è ancora stata Teams distribuzione, vedere il percorso consigliato per Teams in [Come implementare](../deploy-overview.md)Microsoft Teams .
 
 |&nbsp; |&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;| 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 

@@ -2,7 +2,7 @@
 title: Dettagli della visualizzazione QoE
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 6a658318-a317-4546-a44c-a9c473d8e86a
 description: Le viste disponibili soddisfano gli scenari più comuni per la restituzione di dati dal database di SQL Server QoE. È consigliabile utilizzare le visualizzazioni per la creazione di report personalizzati anziché accedere direttamente alle tabelle di database. questo perché è più probabile che le visualizzazioni mantengano la compatibilità con le versioni future.
-ms.openlocfilehash: 5e0a4b4c83d6cc2b04eb2075e8f6248a0061cbdb
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f3a22ba6b8984334e3b4c4f1e7cea293a7741b01
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60741772"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60858073"
 ---
 # <a name="qoe-view-details"></a>Dettagli della visualizzazione QoE
  

@@ -1,6 +1,6 @@
 ---
 title: Teams per le visite virtuali - Report di amministrazione
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 audience: ITPro
@@ -23,12 +23,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: ansantam
 description: Visualizzare i report di amministrazione per Teams visite ai connettori EHR
-ms.openlocfilehash: 3a7514dec687fdd5d82928e4a2a8986b3add4eee
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7ec22bdfd7a73ba39c9e94d0c65f2da6f1f5f973
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769864"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60858763"
 ---
 # <a name="microsoft-teams-ehr-connector-admin-reports"></a>Microsoft Teams Report di amministrazione del connettore EHR
 

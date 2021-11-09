@@ -1,6 +1,6 @@
 ---
 title: Gestire l'app Complimenti nell'interfaccia Teams di amministrazione
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: jozhuan
@@ -8,22 +8,22 @@ audience: admin
 ms.topic: article
 ms.service: msteams
 ms.localizationpriority: medium
-description: Informazioni sulle impostazioni di amministrazione nell'app Complimenti nell'Microsoft Teams di amministrazione
-ms.openlocfilehash: c67f70150c2b8635bd317f724004471f4b73e800
-ms.sourcegitcommit: 36761f644b9af5bdef30fe1c3817defc278b965e
+description: Informazioni sulle impostazioni di amministratore nell'app Complimenti nell'interfaccia Microsoft Teams di amministrazione
+ms.openlocfilehash: 1d460a785a318723bf8e0d0852132863ef7513f8
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "60793454"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60858033"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimenti nell'interfaccia Microsoft Teams di amministrazione
 
 > [!NOTE]
 > Gli amministratori devono avere una licenza Teams per accedere a questa funzionalità. Se si prova ad accedere a questa funzionalità senza Teams licenza, viene visualizzato un messaggio di errore.
 
-L Complimenti app in Microsoft Teams consente agli utenti di mostrare apprezzamento ai membri dell'organizzazione o della classe. Con una selezione di set di badge tra cui scegliere e l'opzione per creare i propri badge, Complimenti è progettato per aiutare a riconoscere l'impegno che si fa nell'ampia gamma di lavoro che gli utenti di Teams esereranno, dai docenti ai lavoratori in prima linea. Per altre informazioni, vedere [Inviare Complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
+L Complimenti app in Microsoft Teams consente agli utenti di mostrare apprezzamento ai membri dell'organizzazione o della classe. Con una selezione di set di badge tra cui scegliere e l'opzione per creare i propri badge, Complimenti è progettato per aiutare a riconoscere l'impegno che si fa nell'ampia gamma di lavoro che gli utenti Teams fanno, dai docenti ai lavoratori in prima linea. Per altre informazioni, vedere [Inviare Complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
 
-Gli amministratori possono controllare quali badge sono disponibili per l'organizzazione dall'Microsoft Teams di amministrazione. Nel riquadro di spostamento sinistro passare a Teams **app > Gestisci app**. Nell'elenco delle app fare clic su **Complimenti** e quindi selezionare **Impostazioni**.  Da qui è possibile scegliere di abilitare i set di badge predefiniti e predefiniti e creare badge personalizzati.
+Gli amministratori possono controllare quali badge sono disponibili per l'organizzazione dall'Microsoft Teams di amministrazione. Nel riquadro di spostamento sinistro passare a Teams **app > Gestisci app**. Nell'elenco delle app fare clic **su Complimenti** e quindi selezionare **Impostazioni**.  Da qui è possibile scegliere di abilitare i set di badge predefiniti e predefiniti e creare badge personalizzati.
 
 ![Screenshot della Impostazioni per l'app Complimenti.](media/manage-praise-app-settings.png)
 
@@ -32,7 +32,7 @@ Gli amministratori possono controllare quali badge sono disponibili per l'organi
 
 ## <a name="use-built-in-badge-sets"></a>Usare set di badge predefiniti
 
-I set predefiniti sono raccolte di badge progettati da Microsoft per l Complimenti app. Questi set non sono modificabili dagli amministratori. Il set di badge predefinito è già abilitato e disponibile nell'app Complimenti predefinita. Per modificare la disponibilità del set predefinito o di qualsiasi set di badge, impostare l'interruttore corrispondente su Attivato o Disattivato. 
+I set predefiniti sono raccolte di badge progettati da Microsoft per l'app Complimenti predefinita. Questi set non sono modificabili dagli amministratori. Il set di badge predefinito è già abilitato e disponibile nell'app Complimenti predefinita. Per modificare la disponibilità del set predefinito o di qualsiasi set di badge, impostare l'interruttore corrispondente su Attivato o Disattivato. 
 
 <a name="default-badges"></br></a>
 
@@ -116,7 +116,7 @@ Di seguito è riportato un elenco di colori di esempio per iniziare:
 
 ## <a name="badge-set-assets"></a>Risorse del set di badge
 
-I set di badge predefiniti non possono essere modificati, quindi quando è abilitato un set predefinito, tutti i badge nel set vengono aggiunti all'app Complimenti predefinita. Se si vogliono aggiungere badge specifici da un set predefinito e osare altri utenti, creare di nuovo i badge da usare come badge personalizzati. È possibile scaricare l'immagine del badge e trovare il testo e i colori di sfondo dei badge dai set predefiniti nelle tabelle seguenti.
+I set di badge predefiniti non possono essere modificati, quindi quando è abilitato un set predefinito, tutti i badge del set vengono aggiunti all'app Complimenti. Se si vogliono aggiungere badge specifici da un set predefinito e osare altri utenti, creare di nuovo i badge da usare come badge personalizzati. È possibile scaricare l'immagine del badge e trovare il testo e i colori di sfondo dei badge dai set predefiniti nelle tabelle seguenti.
 
 ### <a name="default-badges-assets"></a>Risorse badge predefinite
 

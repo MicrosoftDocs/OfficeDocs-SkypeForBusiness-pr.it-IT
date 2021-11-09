@@ -2,7 +2,7 @@
 title: Pianificazione della capacità per il server Chat persistente Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/23/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 7a850cd5-c789-4795-a8ff-083be21ae784
 description: 'Riepilogo: leggere questo argomento per informazioni sulla pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: afa8ecb47913d722a1e1049a549bc6ab2f3800ed
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4b84d06a7b6c7f20f26d22ed5718da9abf8108d9
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777866"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60834062"
 ---
 # <a name="capacity-planning-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificazione della capacità per il server Chat persistente Skype for Business Server 2015
  
@@ -113,7 +113,7 @@ Per ogni chat room, la tabella di pianificazione della capacità precedente spec
   
 ### <a name="plan-capacity-for-managing-chat-room-access-by-invitation"></a>Pianificare la capacità per la gestione dell'accesso alle chat room tramite invito
 
-È possibile utilizzare la seguente tabella di pianificazione della capacità per comprendere il numero di inviti creati e archiviati dal server Chat persistente nel database di Persistent Chat quando è configurato per l'invio di inviti. È possibile gestire gli inviti  nella categoria utilizzando la pagina Impostazioni categoria chat room nel Pannello di controllo di Skype for Business Server oppure utilizzando il cmdlet **Windows PowerShell, set-csPersistentChatCategory.** È possibile gestire gli inviti in una chat room ( in  linea con quanto la categoria consente) utilizzando la pagina Gestione chat avviata dal client Skype for Business oppure utilizzando un cmdlet di Windows PowerShell, **set-csPersistentChatRoom**.
+È possibile utilizzare la seguente tabella di pianificazione della capacità per comprendere il numero di inviti creati e archiviati dal server Chat persistente nel database di Persistent Chat quando è configurato per l'invio di inviti. È possibile gestire gli inviti  nella categoria utilizzando la pagina Impostazioni categoria chat room nel Pannello di controllo di Skype for Business Server oppure utilizzando il cmdlet **Windows PowerShell, set-csPersistentChatCategory.** È possibile gestire gli inviti in una chat room (in  linea con quanto la categoria consente) utilizzando la pagina Gestione chat avviata dal client Skype for Business oppure utilizzando un cmdlet di **Windows PowerShell, set-csPersistentChatRoom.**
   
 I dati di esempio nella tabella seguente presuppongono che nella pagina **Impostazioni**  chat room per il 50% di tutte le chat room l'opzione Inviti sia impostata su **Sì.**
   

@@ -2,7 +2,7 @@
 title: Definire un gateway in Generatore di topologie in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 456e5a96-d9f6-42a6-862c-a69464391628
 description: 'Riepilogo: informazioni su come definire un gateway PSTN in Generatore di topologie in Skype for Business Server.'
-ms.openlocfilehash: c3ea9b02f39b3ef93c7c725735599a3940f33641
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 2e8a69fb1a884597f4e6ecde1a3811a88982d13e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753607"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857953"
 ---
 # <a name="define-a-gateway-in-topology-builder-in-skype-for-business-server"></a>Definire un gateway in Generatore di topologie in Skype for Business Server
  
@@ -31,9 +31,9 @@ Seguire questa procedura per utilizzare Generatore di topologie per definire un 
   
 ### <a name="to-define-a-peer-for-the-mediation-server"></a>Per definire un peer per il Mediation Server
 
-1. Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server 2015** e quindi fare clic su Skype for Business Server Generatore di topologie **2015.**
+1. Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server 2015** e quindi Skype for Business Server Generatore di topologie **2015**.
     
-2. In Skype for Business Server nome del sito, Componenti condivisi, fare clic con il pulsante destro del mouse sul nodo **Gateway PSTN** e quindi scegliere **Nuovo gateway PSTN.**
+2. In Skype for Business Server, il nome del sito, Componenti condivisi, fare clic con il pulsante destro del mouse sul nodo **Gateway PSTN** e quindi scegliere **Nuovo gateway PSTN.**
 3. Nella finestra **Definisci nuovo gateway IP/PSTN** digitare il nome di dominio completo (FQDN) o l'indirizzo IP del peer e quindi fare clic su **Avanti**.
     
     > [!NOTE]
@@ -61,7 +61,7 @@ Seguire questa procedura per utilizzare Generatore di topologie per definire un 
 9. In **Porta Mediation Server associata** digitare la porta di attesa che verrà utilizzata dal Mediation Server per i messaggi SIP provenienti dal gateway.
     
     > [!NOTE]
-    > Con il supporto di più trunk Skype for Business Server, è possibile definire più porte di segnalazione SIP nel Mediation Server per la comunicazione con più gateway PSTN. Quando si definisce un trunk, la porta **Mediation Server** associata deve essere all'interno dell'intervallo delle porte di attesa per il rispettivo protocollo consentito dal Mediation Server. Questo intervallo di porte è definito in pool Skype for Business Server e Mediation Pool. Fare clic con il pulsante destro del mouse sul pool Mediation Server di interesse e **scegliere Modifica proprietà**. Specificare l'intervallo di porte nel campo **Porte di attesa**.
+    > Con il supporto di più trunk Skype for Business Server, è possibile definire più porte di segnalazione SIP nel Mediation Server per le comunicazioni con più gateway PSTN. Quando si definisce un trunk, la porta **Mediation Server** associata deve essere all'interno dell'intervallo delle porte di attesa per il rispettivo protocollo consentito dal Mediation Server. Questo intervallo di porte è definito in pool Skype for Business Server mediation pool. Fare clic con il pulsante destro del mouse sul pool Mediation Server di interesse e **scegliere Modifica proprietà**. Specificare l'intervallo di porte nel campo **Porte di attesa**.
   
 10. Verificare che il peer definito sia in esecuzione e che utilizzi l'FQDN o l'indirizzo IP specificato. Quindi fare clic **su Fine.**
     

@@ -2,7 +2,7 @@
 title: Servizi di dominio Active Directory per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -12,17 +12,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 5483afd5-d8af-4825-ae95-a82dbe941dbf
-description: Servizi di dominio Active Directory funziona come servizio directory per le reti Windows Server 2003, Windows Server 2008, Windows Server 2012 e Windows Server 2012 R2. Servizi di dominio Active Directory funge anche da base per la Skype for Business Server di sicurezza. Lo scopo di questa sezione è descrivere come Skype for Business Server servizi di dominio Active Directory per creare un ambiente attendibile per la messaggistica istantanea, le conferenze Web, i supporti multimediali e la voce. Per informazioni dettagliate sulla preparazione dell'ambiente per Servizi di dominio Active Directory, vedere Install Skype for Business Server nella documentazione relativa alla distribuzione. Per informazioni dettagliate sul ruolo di Servizi di dominio Active Directory nelle reti Windows Server, vedere la documentazione per la versione del sistema operativo in uso.
-ms.openlocfilehash: 496abf7f0210a1663c1158da56c8fb1cce66f068
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: Servizi di dominio Active Directory funziona come servizio directory per le reti Windows Server 2003, Windows Server 2008, Windows Server 2012 e Windows Server 2012 R2. Servizi di dominio Active Directory funge anche da base per la Skype for Business Server di sicurezza. Lo scopo di questa sezione è quello di descrivere come Skype for Business Server utilizza Servizi di dominio Active Directory per creare un ambiente attendibile per la messaggistica istantanea, le conferenze Web, i supporti multimediali e la voce. Per informazioni dettagliate sulla preparazione dell'ambiente per Servizi di dominio Active Directory, vedere Install Skype for Business Server nella documentazione relativa alla distribuzione. Per informazioni dettagliate sul ruolo di Servizi di dominio Active Directory nelle reti Windows Server, vedere la documentazione per la versione del sistema operativo in uso.
+ms.openlocfilehash: a96d2691513ae98195856f717b338a98e589a28e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759468"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60859013"
 ---
 # <a name="active-directory-domain-services-for-skype-for-business-server"></a>Servizi di dominio Active Directory per Skype for Business Server
  
-Servizi di dominio Active Directory funziona come servizio directory per le reti Windows Server 2003, Windows Server 2008, Windows Server 2012 e Windows Server 2012 R2. Servizi di dominio Active Directory funge anche da base per la Skype for Business Server di sicurezza. Lo scopo di questa sezione è descrivere come Skype for Business Server servizi di dominio Active Directory per creare un ambiente attendibile per la messaggistica istantanea, le conferenze Web, i supporti multimediali e la voce. Per informazioni dettagliate sulla preparazione dell'ambiente per Servizi di dominio Active Directory, vedere [Install Skype for Business Server](../../deploy/install/install.md) nella documentazione relativa alla distribuzione. Per informazioni dettagliate sul ruolo di Servizi di dominio Active Directory nelle reti Windows Server, vedere la documentazione per la versione del sistema operativo in uso.
+Servizi di dominio Active Directory funziona come servizio directory per le reti Windows Server 2003, Windows Server 2008, Windows Server 2012 e Windows Server 2012 R2. Servizi di dominio Active Directory funge anche da base per la Skype for Business Server di sicurezza. Lo scopo di questa sezione è quello di descrivere come Skype for Business Server utilizza Servizi di dominio Active Directory per creare un ambiente attendibile per la messaggistica istantanea, le conferenze Web, i supporti multimediali e la voce. Per informazioni dettagliate sulla preparazione dell'ambiente per Servizi di dominio Active Directory, vedere [Install Skype for Business Server](../../deploy/install/install.md) nella documentazione relativa alla distribuzione. Per informazioni dettagliate sul ruolo di Servizi di dominio Active Directory nelle reti Windows Server, vedere la documentazione per la versione del sistema operativo in uso.
   
 Skype for Business Server utilizza Servizi di dominio Active Directory per archiviare:
   
@@ -50,22 +50,22 @@ Durante la preparazione della foresta, Skype for Business Server diversi gruppi 
   
 - **Gruppi amministrativi**. Questi gruppi definiscono i ruoli di amministratore fondamentali per una Skype for Business Server rete. Durante la preparazione della foresta, questi gruppi di amministratori vengono aggiunti ai Skype for Business Server dell'infrastruttura.
     
-- **Gruppi di servizi**. Questi gruppi sono account di servizio necessari per accedere a vari servizi forniti da Skype for Business Server.
+- **Gruppi di servizi**. Questi gruppi sono account di servizio necessari per accedere ai vari servizi forniti da Skype for Business Server.
     
 - **Gruppi di infrastrutture**. Questi gruppi forniscono l'autorizzazione per accedere ad aree specifiche dell'Skype for Business Server aziendale. Fungono da componenti dei gruppi amministrativi ed è consigliabile non modificarli o aggiungervi direttamente utenti. Durante la preparazione della foresta, specifici gruppi di servizi e di amministrazione vengono aggiunti ai gruppi di infrastruttura appropriati.
     
-Per informazioni dettagliate sui gruppi universali specifici creati durante la preparazione di Active Directory per Skype for Business Server, nonché sui gruppi di servizi e di amministrazione che vengono aggiunti ai gruppi di infrastruttura, vedere [Changes made by forest preparation in Skype for Business Server](../../schema-reference/active-directory-schema-extensions-classes-and-attributes/changes-made-by-forest-preparation.md) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate sui gruppi universali specifici creati durante la preparazione di Active Directory per Skype for Business Server, nonché sui gruppi di servizi e di amministrazione che vengono aggiunti ai gruppi di infrastruttura, vedere Changes made by forest preparation in Skype for Business Server nella documentazione relativa alla [distribuzione.](../../schema-reference/active-directory-schema-extensions-classes-and-attributes/changes-made-by-forest-preparation.md)
   
 > [!NOTE]
-> Skype for Business Server supporta i gruppi universali nel Windows Server 2012, nonché i sistemi operativi Windows Server 2003 per i controller di dominio. Ai membri dei gruppi universali, che possono includere altri gruppi e account di qualsiasi dominio della foresta o dell'albero di dominio, è possibile assegnare autorizzazioni in qualsiasi dominio della foresta o dell'albero di dominio. Il supporto dei gruppi universali, combinato con la delega dell'amministratore, semplifica la gestione di una Skype for Business Server distribuzione. Non è più necessario, ad esempio, aggiungere un dominio a un altro per consentire a un amministratore di gestirli entrambi. 
+> Skype for Business Server supporta i gruppi universali nell'Windows Server 2012, nonché i sistemi operativi Windows Server 2003 per i controller di dominio. Ai membri dei gruppi universali, che possono includere altri gruppi e account di qualsiasi dominio della foresta o dell'albero di dominio, è possibile assegnare autorizzazioni in qualsiasi dominio della foresta o dell'albero di dominio. Il supporto dei gruppi universali, combinato con la delega dell'amministratore, semplifica la gestione di una Skype for Business Server distribuzione. Non è più necessario, ad esempio, aggiungere un dominio a un altro per consentire a un amministratore di gestirli entrambi. 
   
 ## <a name="role-based-access-control"></a>Controllo di accesso basato sui ruoli
 
-Oltre a creare gruppi di amministrazione e servizi universali e aggiungere gruppi di servizi e di amministrazione ai gruppi universali appropriati, la preparazione della foresta crea anche gruppi RBAC (Role-Based Access Control). Per informazioni dettagliate sui gruppi RBAC specifici creati dalla preparazione della foresta, vedere [Changes made by forest preparation in Skype for Business Server](../../schema-reference/active-directory-schema-extensions-classes-and-attributes/changes-made-by-forest-preparation.md) nella documentazione relativa alla distribuzione. Per ulteriori informazioni sui gruppi RBAC, vedere [Role-based access control (RBAC) for Skype for Business Server](role-based-access-control-rbac.md).
+Oltre a creare gruppi di amministrazione e servizi universali e aggiungere gruppi di servizi e di amministrazione ai gruppi universali appropriati, la preparazione della foresta crea anche Role-Based gruppi di controllo di accesso (RBAC). Per informazioni dettagliate sui gruppi RBAC specifici creati dalla preparazione della foresta, vedere [Changes made by forest preparation in Skype for Business Server](../../schema-reference/active-directory-schema-extensions-classes-and-attributes/changes-made-by-forest-preparation.md) nella documentazione relativa alla distribuzione. Per ulteriori informazioni sui gruppi RBAC, vedere [Role-based access control (RBAC) for Skype for Business Server](role-based-access-control-rbac.md).
   
 ## <a name="access-control-entries-aces-and-inheritance"></a>Voci di controllo di accesso ed ereditarietà
 
-Il processo di preparazione della foresta prevede la creazione sia di voci di controllo di accesso pubbliche che private e l'aggiunta delle voci di controllo di accesso per i gruppi universali creati. Vengono create voci di controllo di accesso private specifiche nel contenitore delle impostazioni globali utilizzato Skype for Business Server. Questo contenitore viene utilizzato solo da Skype for Business Server e si trova nel contenitore Configurazione o nel contenitore Sistema nel dominio radice, a seconda della posizione in cui vengono archiviate le impostazioni globali.
+Il processo di preparazione della foresta prevede la creazione sia di voci di controllo di accesso pubbliche che private e l'aggiunta delle voci di controllo di accesso per i gruppi universali creati. Vengono create voci di controllo di accesso private specifiche nel contenitore delle impostazioni globali utilizzato da Skype for Business Server. Questo contenitore viene utilizzato solo da Skype for Business Server e si trova nel contenitore Configurazione o nel contenitore Sistema nel dominio radice, a seconda della posizione in cui vengono archiviate le impostazioni globali.
   
 Questa operazione comporta l'aggiunta delle voci di controllo di accesso necessarie ai gruppi universali che concedono autorizzazioni per ospitare e gestire gli utenti nell'ambito del dominio. Con la preparazione del dominio vengono create voci di controllo di accesso nella radice del dominio e tre contenitori predefiniti per utenti, computer e controller di dominio.
   
@@ -75,9 +75,9 @@ Le organizzazioni scelgono spesso di bloccare Servizi di dominio Active Director
   
 ## <a name="server-information"></a>Informazioni sui server
 
-Durante l'Skype for Business Server le informazioni sul server vengono pubblicate nei tre percorsi seguenti in Servizi di dominio Active Directory:
+Durante l'attivazione, Skype for Business Server pubblica le informazioni sul server nei tre percorsi seguenti in Servizi di dominio Active Directory:
   
-- Un punto di connessione del servizio (SCP) in ogni oggetto computer di Active Directory corrispondente a un computer fisico in cui Skype for Business Server è installato.
+- Un punto di connessione del servizio (SCP) in ogni oggetto computer Active Directory corrispondente a un computer fisico in cui Skype for Business Server è installato.
     
 - Oggetti server creati nel contenitore della classe **msRTCSIP-Pools**.
     

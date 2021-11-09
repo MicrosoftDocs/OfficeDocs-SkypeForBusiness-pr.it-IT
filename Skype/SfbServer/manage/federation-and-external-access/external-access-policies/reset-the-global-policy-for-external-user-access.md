@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg182545(v=OCS.15)
 ms:contentKeyID: 48184675
 mtps_version: v=OCS.15
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Non è possibile eliminare completamente un criterio globale. Se si **utilizza l'opzione** Elimina nel criterio globale, vengono ripristinate solo le impostazioni predefinite del criterio globale, che non includono il supporto per le opzioni di accesso degli utenti esterni.
-ms.openlocfilehash: b3748ee6a2e8bcfde9cec58a45db48f73bbabcc3
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e55107de4aec5832b8c04dcf679fd9d5f5555c53
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765434"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60849989"
 ---
 # <a name="reset-the-global-policy-for-external-user-access-in-skype-for-business-server"></a>Reimpostare i criteri globali per l'accesso degli utenti esterni in Skype for Business Server 
 
@@ -36,7 +36,7 @@ Non è possibile eliminare completamente un criterio globale. **L'opzione** Elim
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins o con diritti utente equivalenti o assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.
 
 3.  Sulla barra di spostamento sinistra fare clic su **Accesso utente esterno** e quindi su **Criteri di accesso esterno**.
 

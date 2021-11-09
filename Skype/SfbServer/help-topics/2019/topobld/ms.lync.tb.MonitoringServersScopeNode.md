@@ -2,7 +2,7 @@
 title: Nodo dell'ambito dei server Monitoring Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 16fa839b-8eb5-4b81-82c5-65fe9a00614b
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Nel nodo Monitoring Server vengono elencati i Monitoring Server della topologia. È possibile eseguire l'operazione seguente:"
-ms.openlocfilehash: 6e1211e8c34c1e34567a9a3f8a49479c8aa49f6d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: d34782925f25a41303680fbcf32328a462bdfb31
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60764334"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60859163"
 ---
 # <a name="monitoring-servers-scope-node"></a>Nodo dell'ambito dei server Monitoring Server
  

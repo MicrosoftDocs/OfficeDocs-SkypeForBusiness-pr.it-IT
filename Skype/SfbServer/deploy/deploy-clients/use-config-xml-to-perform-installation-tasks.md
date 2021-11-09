@@ -1,7 +1,7 @@
 ---
 title: Utilizzare Config.xml per eseguire attività di installazione in Skype for Business client
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.reviewer: PhillipGarding
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 0813184a-ab40-417c-b3a3-c2090766b831
 description: 'Riepilogo: come usare il file Config.xml per specificare istruzioni di installazione aggiuntive.'
-ms.openlocfilehash: 76bf5980f7ced3c2e92f53ade8a51eaf3835054d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e0dcc16a09540965346ea014a8c39be0470e4f09
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60742942"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60858673"
 ---
 # <a name="use-configxml-to-perform-installation-tasks-in-skype-for-business-clients"></a>Utilizzare Config.xml per eseguire attività di installazione in Skype for Business client
 
@@ -50,7 +50,7 @@ Gli Config.xml più comunemente utilizzati per l Skype for Business installazion
 
 | **Elemento**              | **Descrizione**                                                                                                                                                                                                                                                                                         |
 |:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configurazione  <br/>     | Elemento di primo livello (obbligatorio). Contiene l'attributo Product, ad esempio: Product=Lync (funziona per Skype for Business client)  <br/>                                                                                                                                                          |
+| Configurazione  <br/>     | Elemento di primo livello (obbligatorio). Contiene l'attributo Product, ad esempio: Product=Lync (Funziona per Skype for Business client)  <br/>                                                                                                                                                          |
 | OptionState  <br/>       | Specifica come vengono gestite caratteristiche specifiche del prodotto durante l'installazione. Utilizzare gli attributi seguenti per impedire l'installazione di Servizi di integrazione applicativa, che include componenti condivisi che interferiscono con Outlook: <br/>  Id="LOBiMain" <br/>  State="Absent" <br/>  Children="Force" <br/> |
 | Visualizza  <br/>           | Livello di interfaccia utente visualizzato all'utente dal programma di installazione. Di seguito sono riportati gli attributi tipici: <br/>  CompletionNotice="Yes"                                                                                                                                                                                |
 | Registrazione  <br/>           | Opzioni per il tipo di registrazione eseguita dal programma di installazione. Di seguito sono riportati gli attributi tipici: <br/>  Type ="Off"                                                                                                                                                                                       |

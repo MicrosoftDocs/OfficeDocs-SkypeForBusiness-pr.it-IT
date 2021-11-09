@@ -2,7 +2,7 @@
 title: Espansione delle impostazioni del gateway PSTN
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 0fd103df-150d-4ea8-b522-18dbc50f5061
 description: 'Per modificare o cambiare le impostazioni per un gateway PSTN (Public Switched Telephone Network), modificare i campi seguenti:'
-ms.openlocfilehash: 3a2da96ccb52beffd99f4a4d900c57acd8a841e7
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ce3b7801182659062f1c623b0266160af8de88c5
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765694"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60832190"
 ---
 # <a name="pstn-gateway-settings-expander"></a>Espansione delle impostazioni del gateway PSTN
  

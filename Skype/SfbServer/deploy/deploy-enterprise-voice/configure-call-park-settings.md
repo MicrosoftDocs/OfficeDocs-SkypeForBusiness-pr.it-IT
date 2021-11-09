@@ -2,7 +2,7 @@
 title: Configurare le impostazioni del parcheggio di chiamata in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 3bed9d09-8363-4fff-a220-f0f6d3a81241
 description: Modificare le impostazioni del parcheggio di chiamata in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 81d523991f1df5d9bc24f19d212ae63fa5b0beb1
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 686484fd42982f2b64623b652851482b85d3e1b8
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759138"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60833932"
 ---
 # <a name="configure-call-park-settings-in-skype-for-business"></a>Configurare le impostazioni del parcheggio di chiamata in Skype for Business
 
@@ -44,7 +44,7 @@ Usare il cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration*
 
 ### <a name="to-configure-call-park-settings"></a>Per configurare le impostazioni del parcheggio di chiamata
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Eseguire: 
 

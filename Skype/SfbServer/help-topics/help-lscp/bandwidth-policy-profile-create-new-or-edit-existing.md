@@ -2,7 +2,7 @@
 title: Profilo criteri larghezza di banda Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 7c1d072e-a891-48a9-81c0-3696e372f222
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: a865d0add8618636a535ffcb211a3e00325cda0b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e91212ab6570482f474d584e9e1e9c83085c9988
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60770854"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60859143"
 ---
 # <a name="bandwidth-policy-profile-create-new-or-edit-existing"></a>Profilo criteri larghezza di banda: crearne uno nuovo o modificarne uno esistente
 

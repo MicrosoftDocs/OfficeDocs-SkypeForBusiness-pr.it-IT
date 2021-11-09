@@ -2,7 +2,7 @@
 title: Rapporto attività conferenza in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,16 +12,16 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 22ddb509-af16-4fc8-9b98-6f58caa6f37e
 description: 'Riepilogo: informazioni sul Rapporto attività conferenza utilizzato in Skype for Business Server.'
-ms.openlocfilehash: fcbe28d031abc7803cd8b84a67c3baeef42eff08
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: c136bfaeb40a9b84c2861332636916353856855f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60774946"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60849929"
 ---
 # <a name="conference-activity-report-in-skype-for-business-server"></a>Rapporto attività conferenza in Skype for Business Server
  
-**Riepilogo:** Informazioni sul Rapporto attività conferenza utilizzato in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto attività conferenza usato in Skype for Business Server.
   
 Con il Rapporto attività conferenza è semplice rispondere a domande come queste: quante conferenze si tengono ogni giorno e quando hanno luogo? Informazioni di questo tipo non sono solo utili di per sé, ma anche come strumenti di risoluzione dei problemi. Si supponga ad esempio che gli utenti si lamentino del fatto che la rete sia particolarmente lenta a metà giornata. Un rapido sguardo ai rapporti attività di conferenza potrebbe suggerire un possibile motivo: molte più conferenze vengono pianificate tra le 10.00 e le 14.00 in qualsiasi altro momento.
   

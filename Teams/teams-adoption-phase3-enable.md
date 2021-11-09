@@ -1,6 +1,6 @@
 ---
-title: Microsoft Teams fase di adozione 3 - Scala
-author: cichur
+title: Microsoft Teams fase 3 - Scalabilità
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 11/01/2018
@@ -21,16 +21,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: acf0e51436aaad905c1713af7f6131be08b9e704
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 51d69c0f96248c74f285fbc99ac4a66182de88cd
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745452"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60833972"
 ---
-# <a name="microsoft-teams-adoption-phase-3---scale"></a>Microsoft Teams fase di adozione 3 - Scala
+# <a name="microsoft-teams-adoption-phase-3---scale"></a>Microsoft Teams fase 3 - Scalabilità
 
-In questa fase si useranno i propri apprendimenti, il team di progetto di talento e le relazioni con stakeholder, campioni e early adopter per supportare l'abilitazione su larga scala dei Teams per l'organizzazione. I passaggi seguenti verranno completati mentre ci si prepara per il continuo impegno aziendale relativo all'uso delle risorse Microsoft Teams:
+In questa fase si useranno i propri apprendimenti, il team di progetto di talento e le relazioni con stakeholder, campioni e primi utenti per supportare l'abilitazione su larga scala dei Teams per l'organizzazione. I passaggi seguenti verranno completati mentre ci si prepara per il continuo impegno aziendale relativo all'uso delle risorse Microsoft Teams:
 
 1. Definire i risultati e le misure di successo.
 2. Selezionare la strategia di servizio.

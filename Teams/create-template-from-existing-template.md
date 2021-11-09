@@ -1,6 +1,6 @@
 ---
 title: Creare un nuovo modello da un modello di team esistente in Microsoft Teams
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 ms.reviewer: aaglick
 manager: serdars
@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 095596684c52615340efa32e7dcfd78eb3e9e823
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ac461654031507dad1340de7d0e0998aee61b3c1
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60745592"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60831760"
 ---
 # <a name="create-a-new-team-template-from-an-existing-team-template-in-microsoft-teams"></a>Creare un nuovo modello di team da un modello di team esistente in Microsoft Teams
 
@@ -31,7 +31,7 @@ Microsoft Teams sono disponibili modelli predefiniti che possono essere salvati 
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro **espandere** Teams  >  **Team**.
+2. Nel riquadro di spostamento sinistro espandere **Teams**  >  **Team**.
 
 3. Nella sezione **Modelli team** selezionare accanto a un modello di team da duplicare per evidenziarlo.
 

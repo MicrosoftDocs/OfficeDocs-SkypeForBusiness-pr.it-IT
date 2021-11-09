@@ -2,7 +2,7 @@
 title: Creare o modificare una regola di normalizzazione in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: e8547d7b-f74d-4a73-9a7d-df20d7a87fcd
 description: 'Riepilogo: informazioni su come definire, creare e modificare una regola di normalizzazione in Skype for Business Server.'
-ms.openlocfilehash: c624e9bb42b113a87c5774f90df77c23488d1b32
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: c01505a4a4c961c7c1b3ed394ec5595b57642ddb
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773276"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60831636"
 ---
 # <a name="create-or-modify-a-normalization-rule-in-skype-for-business"></a>Creare o modificare una regola di normalizzazione in Skype for Business
 
@@ -31,7 +31,7 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
 ### <a name="to-define-a-normalization-rule-by-using-build-a-normalization-rule"></a>Per definire una regola di normalizzazione tramite La creazione di una regola di normalizzazione
 
-1. Aprire Skype for Business Server pannello di controllo
+1. Aprire Skype for Business Server Pannello di controllo
 
 2. (Facoltativo) Seguire i passaggi descritti in [Create or modify a dial plan in Skype for Business Server](dial-plans.md) through step 11 o Modify a Dial [Plan](/previous-versions/office/lync-server-2013/lync-server-2013-modify-a-dial-plan) through step 10.
 
@@ -75,11 +75,11 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 11. Nella pagina **Dial plan** fare clic su **Commit** e quindi su **Salva tutto**.
 
     > [!NOTE]
-    > Ogni volta che si crea o si modifica una regola di normalizzazione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
+    > Ogni volta che si crea o si modifica una regola di normalizzazione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, [vedere Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
 
 ### <a name="to-define-a-normalization-rule-manually"></a>Per definire manualmente una regola di normalizzazione
 
-1. Aprire Skype for Business Server pannello di controllo
+1. Aprire Skype for Business Server Pannello di controllo
 
 2. (Facoltativo) Seguire i passaggi descritti in [Creare o modificare un dial plan in Skype for Business Server](dial-plans.md).
 
@@ -95,7 +95,7 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
    - In **Regola di conversione** specificare un modello per il formato dei numeri di telefono E.164 convertiti.
 
-     Ad esempio, se si immette ^(\d )$ in Corrispondenza questo modello e {7} +1425$1 in Regola di conversione, la regola normalizza da 5550100 a +14255550100.  
+     Ad esempio, se si immette ^(\d )$ in Corrispondenza a questo modello e {7} +1425$1 in Regola di conversione, la regola normalizza da 5550100 a +14255550100.  
 
 7. (Facoltativo) Se la regola di normalizzazione restituisce un numero di telefono interno all'organizzazione, selezionare **Estensione interna**.
 
@@ -108,4 +108,4 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 11. Nella pagina **Dial plan** fare clic su **Commit** e quindi su **Salva tutto**.
 
     > [!NOTE]
-    > Ogni volta che si crea o si modifica una regola di normalizzazione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
+    > Ogni volta che si crea o si modifica una regola di normalizzazione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, [vedere Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.

@@ -2,7 +2,7 @@
 title: Aggiungere l'archivio SQL Server di backup per Conformità Persistent Chat
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 358b74bd-a97d-4f28-9bed-af633ea0099e
 description: È possibile configurare gli archivi di SQL Server di backup che forniranno database di backup per il server Chat persistente o per gli archivi di conformità del server Chat persistente SQL Server database.
-ms.openlocfilehash: 8d70a8f82c58d0a66fef00695b3677305e5e6a9e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 818fda030415f8b1274b3dadf2ceed000f40a16d
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747862"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857673"
 ---
 # <a name="add-persistent-chat-compliance-backup-sql-server-store"></a>Aggiungere l'archivio SQL Server di conformità di backup per Chat persistente
  

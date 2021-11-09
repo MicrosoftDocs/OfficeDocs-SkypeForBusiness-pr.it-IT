@@ -1,6 +1,6 @@
 ---
 title: Microsoft Teams requisiti | Migliorare il servizio
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.topic: conceptual
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4cfb52a796f0b4636773bced09f68336b1f90df2
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 13389c55cc35d9ffe1555f2f28c9f225e6eed4ee
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773426"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60841988"
 ---
 # <a name="get-the-most-out-of-teams-after-upgrading"></a>Ottenere il massimo dall'Teams dopo l'aggiornamento
 
@@ -31,11 +31,11 @@ ms.locfileid: "60773426"
 
 Questo articolo fa parte della fase operational excellence del percorso di aggiornamento, che inizia non appena è stato completato l'aggiornamento da Skype for Business a Teams.
 
-Questo articolo offre una panoramica dei requisiti per ottenere il massimo dal funzionamento Teams dopo l'aggiornamento. Monitorando continuamente Teams funzionalità dei servizi, si può essere certi di offrire il massimo valore per l'organizzazione.
+Questo articolo fornisce una panoramica dei requisiti per ottenere il massimo dal funzionamento Teams dopo l'aggiornamento. Monitorando continuamente Teams funzionalità del servizio, si può essere certi di offrire il massimo valore per l'organizzazione.
 
 ## <a name="enhance-your-service-overview"></a>Panoramica dei servizi ottimizzati
 
-Dopo aver distribuito Teams nell'organizzazione e aver eseguito il servizio con qualità e affidabilità, il passaggio successivo consiste nel valutare regolarmente se si hanno opportunità per migliorare i servizi. Fa parte della pianificazione continua del miglioramento del servizio, uno standard moderno per la gestione dei servizi cloud.
+Dopo aver distribuito correttamente il Teams all'organizzazione e aver eseguito il servizio con qualità e affidabilità, il passaggio successivo consiste nel valutare regolarmente se si hanno opportunità per migliorare i servizi. Fa parte della pianificazione continua del miglioramento del servizio, uno standard moderno per la gestione dei servizi cloud.
 
 Un ottimo modo per assicurarsi di ottenere sempre il massimo dei servizi è monitorare le roadmap pubbliche di [Teams per](https://products.office.com/business/office-365-roadmap?filters=microsoft%20teams) i nuovi miglioramenti delle funzionalità che potrebbero essere di interesse per l'organizzazione. Se si ha accesso al interfaccia di amministrazione di Microsoft 365, si riceveranno regolarmente aggiornamenti sulle nuove e mutevoli funzionalità tramite il Centro messaggi.
 

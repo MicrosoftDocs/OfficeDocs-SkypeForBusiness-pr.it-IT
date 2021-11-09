@@ -1,7 +1,7 @@
 ---
 title: Confronto delle funzionalità dei client mobili per Skype for Business
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 2/16/2018
@@ -16,17 +16,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: b2c950c9-76a5-400a-b146-9b1a22790c12
-description: 'Riepilogo: esaminare il supporto delle funzionalità per il client mobile durante la pianificazione Skype for Business Server.'
-ms.openlocfilehash: 9b619219666a89e40870caf4cea80a683011775c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: 'Riepilogo: esaminare il supporto delle funzionalità per il client mobile durante la pianificazione di Skype for Business Server.'
+ms.openlocfilehash: f1bbb046827ef762f5def1d532089e9621c32b28
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759568"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60834124"
 ---
 # <a name="mobile-client-feature-comparison-for-skype-for-business"></a>Confronto delle funzionalità dei client mobili per Skype for Business
  
-**Riepilogo:** Esaminare il supporto delle funzionalità per il client mobile durante la pianificazione Skype for Business Server.
+**Riepilogo:** Esaminare il supporto delle funzionalità per il client per dispositivi mobili durante la pianificazione di Skype for Business Server.
   
 In questo articolo vengono confrontate le funzionalità Skype for Business client mobili e il client desktop Skype for Business nelle categorie seguenti:
   
@@ -50,10 +50,10 @@ In questo articolo vengono confrontate le funzionalità Skype for Business clien
     
 -  Autenticazione moderna
     
-Nelle tabelle seguenti sono elencate le funzionalità disponibili per Skype for Business utenti in una distribuzione locale di Skype for Business Server. Le stesse funzionalità sono disponibili anche per gli utenti Skype for Business online e Microsoft 365 o Office 365, se non diversamente indicato nelle note a piè di pagina della tabella.
+Nelle tabelle seguenti sono elencate le funzionalità disponibili per Skype for Business utenti in una distribuzione locale di Skype for Business Server. Le stesse funzionalità sono disponibili anche per gli utenti Skype for Business Online e Microsoft 365 o Office 365, se non diversamente indicato nelle note a piè di pagina della tabella.
   
 > [!NOTE]
-> Per informazioni e risorse online per gli utenti finali, vedere [Discover Skype for Business.](https://go.microsoft.com/fwlink/p/?LinkId=528686) 
+> Per informazioni e risorse online per gli utenti finali, vedere [Discover Skype for Business](https://go.microsoft.com/fwlink/p/?LinkId=528686). 
   
 > [!NOTE]
 > Per confrontare le funzionalità disponibili in altri client Skype for Business desktop, vedere [Desktop client feature comparison for Skype for Business](desktop-feature-comparison.md). 
@@ -104,7 +104,7 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
 |Pubblicare lo stato in base alle informazioni sulla disponibilità del calendario  <br/> |&#x2714; &#x2776; ||||
 |Impostare lo stato di presenza manuale (ad esempio Occupato, Non disturbare e così via)  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
    
- &#x2776; Skype for Business i client mobili non aggiornano la presenza di un utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se un utente del client per dispositivi mobili è anche connesso al client desktop Skype for Business, il client desktop aggiorna la presenza dell'utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se l'utente ha eseguito l'accesso solo a un client per dispositivi mobili, la presenza dell'utente non viene aggiornato in base alle informazioni del calendario sulla disponibilità.
+ &#x2776; Skype for Business i client mobili non aggiornano la presenza di un utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se un utente client per dispositivi mobili è anche connesso al client desktop Skype for Business, il client desktop aggiorna la presenza dell'utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se l'utente ha eseguito l'accesso solo a un client per dispositivi mobili, la presenza dell'utente non viene aggiornato in base alle informazioni del calendario sulla disponibilità.
   
 ## <a name="contacts-and-contact-groups-support"></a>Supporto per contatti e gruppi di contatti
 

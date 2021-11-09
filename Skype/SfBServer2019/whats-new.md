@@ -2,7 +2,7 @@
 title: Novità di Skype for Business Server 2019 | Funzionalità
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: overview
@@ -11,19 +11,19 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
-description: 'Riepilogo: queste funzionalità sono nuove in Skype for Business Server 2019.'
-ms.openlocfilehash: c701b9397e43744f8673dfb8c6f56cac2c6d56c7
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: 'Riepilogo: queste funzionalità sono nuove Skype for Business Server 2019.'
+ms.openlocfilehash: 2acfaef02b140d8e52fce43e0fef9125378047ea
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60748972"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60858023"
 ---
 # <a name="whats-in-skype-for-business-server-2019"></a>Novità di Skype for Business Server 2019
 
 **Riepilogo:** Leggere questo argomento per informazioni sulle nuove funzionalità in Skype for Business Server 2019.  
 
-Le nuove funzionalità di Skype for Business Server 2019 includono:
+Le nuove funzionalità di Skype for Business Server 2019 includono le seguenti:
   
 - Cloud Voicemail  
 - Connettore dati chiamate
@@ -35,7 +35,7 @@ Exchange La messaggistica unificata rimane disponibile Skype for Business Server
 
 Cloud Voicemail consente a tutti gli utenti di Skype for Business 2019&#x2014;che siano ospitati in locale o online&#x2014;di avere accesso allo stesso servizio di segreteria telefonica in Microsoft Cloud. Cloud Voicemail offre i vantaggi seguenti sia per gli utenti locali che per gli utenti online:
 
-- Accesso alla segreteria telefonica nella propria Exchange utilizzando i client Skype for Business Online, Teams o Outlook
+- Accesso alla segreteria telefonica nella propria Exchange utilizzando Skype for Business Online, Teams o Outlook client
 - Possibilità di utilizzare il portale basato sul Web per gestire le opzioni della segreteria telefonica
 
 Per [ulteriori informazioni, vedere Plan Cloud Voicemail service](../sfbhybrid/hybrid/plan-cloud-voicemail.md) e Plan for Skype for Business Server and Exchange Server [migration.](../sfbhybrid/hybrid/plan-um-migration.md)

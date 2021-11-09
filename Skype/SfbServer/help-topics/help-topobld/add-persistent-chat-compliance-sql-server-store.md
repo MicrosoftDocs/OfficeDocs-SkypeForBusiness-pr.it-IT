@@ -2,7 +2,7 @@
 title: Aggiungere l'archivio SQL Server per Conformità Persistent Chat
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
@@ -15,24 +15,24 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: b9771b53-e19a-4a12-bf01-24bae6f7e482
 description: Configurare i criteri di SQL Server che forniranno i database per la funzionalità di conformità del server Chat persistente o del server Chat persistente.
-ms.openlocfilehash: e6db005c44606a7d79f25e5999630cc805ed5f54
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: af6915193afc095ae5ce8cef087bbc652555e9b3
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747842"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857633"
 ---
 # <a name="add-persistent-chat-compliance-sql-server-store"></a>Aggiungere l'archivio SQL Server di conformità per Chat persistente
  
 Configurare i criteri di SQL Server che forniranno i database per la funzionalità di conformità del server Chat persistente o del server Chat persistente.
   
- **SQL Server archivio:** selezionare un SQL Server esistente e facoltativamente un'istanza per Persistent Chat.
+ **SQL Server:** selezionare un'SQL Server esistente e facoltativamente un'istanza per Persistent Chat.
   
 Fare **clic su** Nuovo per definire una nuova SQL Server e facoltativamente una nuova istanza per i dati di conformità di Persistent Chat.
   
-Selezionare la **casella di controllo Abilita mirroring** SQL Server archivio per configurare un database di SQL Server e un'istanza facoltativa che fornirà un database con mirroring per i dati di conformità di Persistent Chat.
+Selezionare la **casella di controllo Abilita mirroring** SQL Server store per configurare un database di SQL Server e un'istanza facoltativa che fornirà un database con mirroring per i dati di conformità di Persistent Chat.
   
-Selezionare nell'elenco **Mirroring SQL Server archiviare** un'SQL Server e un'istanza facoltativa per fungere da mirror SQL Server per la conformità di Persistent Chat SQL Server.
+Selezionare nell'elenco **Mirroring SQL Server archiviare** un'SQL Server e un'istanza facoltativa per agire come mirror SQL Server per la conformità di Persistent Chat SQL Server.
   
 Fare **clic su** Nuovo per definire una nuova SQL Server e facoltativamente una nuova istanza per il mirroring SQL Server Persistent Chat.
   

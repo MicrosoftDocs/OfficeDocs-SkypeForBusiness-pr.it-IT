@@ -2,7 +2,7 @@
 title: Tabella PurgeSettings (QoE)
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 31b85d1c-3f32-4f67-94bf-9389cdd282c5
 description: "Nella tabella PurgeSettings sono contenute informazioni che specificano se e quando i record QoE (qualità percepita dagli utenti) obsoleti verranno eliminati automaticamente dal database QoE. Tenere presente che le informazioni relative all'eliminazione possono essere ottenute anche dall'interno di Skype for Business Server Management Shell eseguendo il comando seguente:"
-ms.openlocfilehash: 2c6eada1b64d5ba4ac1ee34185d89c31abcbd3c0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ec89cdfbd634c32ab7a51265ed28e9ee89207892
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763114"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60858083"
 ---
 # <a name="purgesettings-table-qoe"></a>Tabella PurgeSettings (QoE)
  

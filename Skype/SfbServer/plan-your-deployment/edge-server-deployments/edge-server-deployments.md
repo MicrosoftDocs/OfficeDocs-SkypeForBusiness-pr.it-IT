@@ -2,7 +2,7 @@
 title: Pianificare le distribuzioni dei server perimetrali in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 9cdc3e23-3f6a-4e4d-9e04-f038596b6700
 description: "Riepilogo: pianificare l'ambiente Skype for Business Server Edge. Questo argomento illustra i concetti di Edge e ti consente di organizzarti con i nostri argomenti più approfonditi."
-ms.openlocfilehash: ad92c0d61381595ac2274bf52aa108efe5703a90
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ae6dd672e3da6568d41898a4bc2ae022b23ad3f3
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60746862"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60834114"
 ---
 # <a name="plan-for-edge-server-deployments-in-skype-for-business-server"></a>Pianificare le distribuzioni dei server perimetrali in Skype for Business Server
  
@@ -41,9 +41,9 @@ L'accesso utente esterno, che è quello fornito da server perimetrali, consente 
   
 - Messaggistica istantanea e presenza per le comunicazioni: gli utenti esterni autorizzati possono partecipare a conversazioni e conferenze di messaggistica istantanea. Possono ottenere informazioni sulla presenza per altri utenti (che ottengono anche le informazioni sulla presenza). Non sarà possibile eseguire conferenze tra più partecipanti se si utilizza un provider di messaggistica istantanea pubblico, si tratta di una comunicazione strettamente peer-to-peer. Tuttavia, sono supportati entrambi i protocolli SIP e XMPP.
     
-- Conferenze audio/video ( A/V): gli utenti esterni autorizzati possono partecipare alle conferenze audio e video Skype for Business Server video.
+- Conferenze audio/video : gli utenti esterni autorizzati possono partecipare alle conferenze audio e video Skype for Business Server video e audio.
     
-- Conferenze Web: gli utenti esterni autorizzati possono partecipare alle Skype for Business conferenze. Se si desidera, è inoltre possibile abilitare la partecipazione per utenti remoti, utenti federati e utenti anonimi. Gli utenti di messaggistica istantanea pubblica non possono partecipare alle conferenze. Esistono anche opzioni per consentire a questi utenti di partecipare alla condivisione di applicazioni e desktop e anche di agire come organizzatori o relatori di riunioni.
+- Conferenze Web: gli utenti esterni autorizzati possono partecipare alle conferenze Skype for Business aziendali. Se si desidera, è inoltre possibile abilitare la partecipazione per utenti remoti, utenti federati e utenti anonimi. Gli utenti di messaggistica istantanea pubblica non possono partecipare alle conferenze. Esistono anche opzioni per consentire a questi utenti di partecipare alla condivisione di applicazioni e desktop e anche di agire come organizzatori o relatori di riunioni.
     
 L'accesso ai dispositivi mobili è supportato, come VoIP aziendale. È possibile invitare utenti esterni a tali riunioni a cui si desidera partecipare, anche utenti anonimi, se si desidera concedere loro le autorizzazioni.
   

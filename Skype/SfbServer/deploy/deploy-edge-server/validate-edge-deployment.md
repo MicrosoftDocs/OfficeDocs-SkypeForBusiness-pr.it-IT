@@ -2,7 +2,7 @@
 title: Convalidare la distribuzione di Edge in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 audience: ITPro
 manager: serdars
 ms.topic: quickstart
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 69837f86-d141-4884-a4ca-c7e7463afaad
 description: 'Riepilogo: informazioni su come verificare che la distribuzione del server perimetrale o del pool di server perimetrali funzioni in Skype for Business Server.'
-ms.openlocfilehash: d3552d814a9b30433cbeb53674737563b11f8283
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b8a538d457c2f785d2bdff96dd379524c2df1a28
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60771608"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60841928"
 ---
 # <a name="validate-your-edge-deployment-in-skype-for-business-server"></a>Convalidare la distribuzione di Edge in Skype for Business Server
  
@@ -32,7 +32,7 @@ Dopo aver distribuito il server perimetrale o il pool di server perimetrali, è 
 
 Anche se la convalida della connettività viene eseguita automaticamente nel server perimetrale o nel pool di server perimetrali quando vengono installati i server perimetrali, è comunque possibile confermarlo automaticamente con Windows PowerShell. Eseguire il cmdlet Get-CsManagementStoreReplicationStatus sul server interno con l'archivio di gestione centrale o su qualsiasi computer aggiunto a un dominio in cui sono installati Skype for Business Server Core Components (OcsCore.msi).
   
-Il risultato iniziale dell'esecuzione di questo comando può dare lo stato False, anziché True, per la replica. In questo caso, eseguire il cmdlet Invoke-CsManagementStoreReplication. Concedere un po' di tempo per completare la replica ed eseguire di nuovo Get-CsManagementStoreReplicationStatus cmdlet.
+Il risultato iniziale dell'esecuzione di questo comando può dare lo stato False, anziché True, per la replica. In questo caso, eseguire il cmdlet Invoke-CsManagementStoreReplication. Concedere un po' di tempo per completare la replica, quindi eseguire di Get-CsManagementStoreReplicationStatus cmdlet.
   
 ## <a name="verify-connectivity-for-your-external-users"></a>Verificare la connettività per gli utenti esterni
 
@@ -46,7 +46,7 @@ Qualsiasi test per l'accesso degli utenti esterni deve includere ogni tipo di ut
     
 - Utenti anonimi.
     
-- Gli utenti dell'organizzazione che hanno effettuato l'Skype for Business in remoto, ma non utilizzano vpn.
+- Gli utenti dell'organizzazione connessi Skype for Business remoto, ma che non usano vpn.
     
 Questi test determineranno se il server perimetrale è:
   

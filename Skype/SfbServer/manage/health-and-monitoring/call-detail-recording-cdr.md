@@ -2,7 +2,7 @@
 title: Registrazione dettagli chiamata (CDR) in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 67726075-c77c-4191-a64f-a1cf5c7bcbb2
 description: 'Riepilogo: informazioni sui record di registrazione dettagli chiamata (CDR) utilizzati in Skype for Business Server.'
-ms.openlocfilehash: 93085e0078456cfe371eafe1103bd54ae8006802
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4b699b382443d0820845856bebd83604374bf236
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60767764"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60858333"
 ---
 # <a name="call-detail-recording-cdr-in-skype-for-business-server"></a>Registrazione dettagli chiamata (CDR) in Skype for Business Server
  
@@ -27,7 +27,7 @@ La funzionalità di registrazione dettagli chiamata (CDR) registra le informazio
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Visualizzare le informazioni di configurazione della registrazione dettagli Skype for Business Server](view-configuration-information.md)
+- [Visualizzare le informazioni sulla configurazione della registrazione dettagli dettagli Skype for Business Server](view-configuration-information.md)
     
 - [Abilitare la registrazione dettagli chiamata in Skype for Business Server](enable-cdr.md)
     
@@ -35,7 +35,7 @@ La funzionalità di registrazione dettagli chiamata (CDR) registra le informazio
     
 - [Eliminare una raccolta esistente di impostazioni di configurazione di registrazione dei dati in Skype for Business Server](delete-configuration-settings.md)
     
-- [Eliminare manualmente i database di registrazione dettagli chiamata e Qualità dell'esperienza in Skype for Business Server](../../deploy/deploy-monitoring/purgecall-detail-recording-and-qoe.md)
+- [Eliminare manualmente i database di registrazione dettagli chiamata e qualità dell'esperienza in Skype for Business Server](../../deploy/deploy-monitoring/purgecall-detail-recording-and-qoe.md)
     
 ## <a name="see-also"></a>Vedere anche
 

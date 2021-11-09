@@ -2,7 +2,7 @@
 title: Procedura guidata ibrida Modifica utenti
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 57930738-0d43-4e2f-aaa1-bb0801e9ed32
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare la procedura guidata Modifica utenti per modificare gli account utente nella distribuzione. Per ulteriori informazioni, vedere Use the Hybrid Manageability wizard.
-ms.openlocfilehash: ea445859e6d438536dc4dc4bf2cb517435217764
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: db688464bf41583156e294de61ebb3e6d29796c1
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60748752"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60865273"
 ---
 # <a name="hybrid-wizard-edit-users"></a>Configurazione ibrida guidata: modificare utenti
 

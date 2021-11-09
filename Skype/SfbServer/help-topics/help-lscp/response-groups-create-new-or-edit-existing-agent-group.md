@@ -2,7 +2,7 @@
 title: Response Group Crea nuovo o Modifica gruppo di agenti esistente
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 79eaaf6c-6928-4925-8220-c7ada6b37205
 description: I gruppi di agenti definiscono quali utenti possono rispondere alle chiamate a un Response Group (anche definito agenti) e le impostazioni che si applicano a tutti gli agenti del gruppo.
-ms.openlocfilehash: 6b0d28bf9e8aa2ea0b995a0af08c7a608d56b327
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 0c0342d59896176f8d46a74cd728c301a98ff4f6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757332"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60859093"
 ---
 # <a name="response-groups-create-new-or-edit-existing-agent-group"></a>Response Group: creare un nuovo gruppo di agenti o modificarne uno esistente
 
@@ -65,7 +65,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
     > L'ordine in cui sono elencati gli agenti nella lista di distribuzione determina l'ordine in cui riceveranno le chiamate per il routing di tipo round robin e seriale.
 
     > [!NOTE]
-    > Le appartenenze nascoste o gli elenchi nascosti potrebbero diventare visibili agli amministratori o agli utenti di Response Group. Per informazioni dettagliate, [vedere Create or modify an agent group in Skype for Business 2015](../../deploy/deploy-enterprise-voice/create-or-modify-an-agent-group.md).
+    > Le appartenenze nascoste o gli elenchi nascosti potrebbero diventare visibili agli amministratori o agli utenti di Response Group. Per informazioni dettagliate, [vedere Create or modify an agent group in Skype for Business 2015.](../../deploy/deploy-enterprise-voice/create-or-modify-an-agent-group.md)
 
   - Selezionare **Definisci un gruppo di agenti personalizzato** per selezionare gli utenti da assegnare come agenti per il Response Group. Fare clic su **Seleziona** per aggiungere un agente all'elenco oppure su **Rimuovi** per eliminare un agente selezionato dall'elenco.
 

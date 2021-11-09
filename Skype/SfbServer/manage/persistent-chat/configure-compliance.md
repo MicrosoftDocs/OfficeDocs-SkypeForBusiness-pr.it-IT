@@ -2,7 +2,7 @@
 title: Configurare il servizio di conformità per il server Chat persistente in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 1/31/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 24e36ea3-fb8a-45a4-b6b7-38c2e256b218
 description: 'Riepilogo: informazioni su come configurare il servizio Conformità server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: af574e4b449211f1631c332e7f494fba6c75e750
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 23f28c2071063e2729deb54eea9703a7699e3e07
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778316"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60858243"
 ---
 # <a name="configure-the-compliance-service-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Configurare il servizio di conformità per il server Chat persistente in Skype for Business Server 2015
 
@@ -41,7 +41,7 @@ La conformità di Persistent Chat consente agli amministratori di gestire un arc
 Queste informazioni possono essere recuperate dal database SQL conformità in base alle esigenze. 
 
 > [!NOTE]
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
 
 ## <a name="configure-the-compliance-service-by-using-windows-powershell"></a>Configurare il servizio di conformità tramite Windows PowerShell
 
@@ -51,7 +51,7 @@ Dopo aver abilitato il servizio di conformità utilizzando Generatore di topolog
 Set-CsPersistentChatComplianceConfiguration [-Identity <XdsIdentity>] <COMMON PARAMETERS>
 ```
 
-oppure
+o
 
 ```PowerShell
 Set-CsPersistentChatComplianceConfiguration [-Instance <PSObject>] <COMMON PARAMETERS>
@@ -138,7 +138,7 @@ Nella tabella seguente vengono descritti gli attributi del messaggio Type, Conte
 
 |**Attributo**|**Descrizione**|**Facoltativo/Obbligatorio**|
 |:-----|:-----|:-----|
-|Tipo  <br/> |Specifica il tipo di messaggio. I tipi di messaggio sono descritti nella tabella Tipi di messaggio dell'elemento Messages.  <br/> |Obbligatorio  <br/> |
+|Tipo  <br/> |Specifica il tipo di messaggio. I tipi di messaggio sono descritti nella tabella Tipi di messaggio dell'elemento Messages.  <br/> |Obbligatoria  <br/> |
 |Contenuto  <br/> |Contenuto del messaggio. Questo attributo non è utilizzato per i messaggi con Type Join o Part.  <br/> |Facoltativo  <br/> |
 |ID  <br/> |Specifica l'ID univoco del contenuto. Questo attributo è utilizzato solo con i messaggi con Type Chat.  <br/> |Facoltativo  <br/> |
 
@@ -149,10 +149,10 @@ Ogni elemento Sender contiene cinque attributi, ovvero Username, ID, Email, Inte
 |**Attributo**|**Descrizione**|**Facoltativo/Obbligatorio**|
 |:-----|:-----|:-----|
 |Username  <br/> |Nome del mittente.  <br/> |Facoltativo  <br/> |
-|ID  <br/> |ID univoco del mittente.  <br/> |Obbligatorio  <br/> |
+|ID  <br/> |ID univoco del mittente.  <br/> |Obbligatoria  <br/> |
 |Posta elettronica  <br/> |Indirizzo di posta elettronica del mittente.  <br/> |Facoltativo  <br/> |
 |Interno  <br/> |Determina se l'utente è interno o federato. Se il valore è impostato su true, l'utente è interno.  <br/> |Facoltativo  <br/> |
-|URI  <br/> |URI SIP dell'utente.  <br/> |Obbligatorio  <br/> |
+|URI  <br/> |URI SIP dell'utente.  <br/> |Obbligatoria  <br/> |
 
 Negli esempi seguenti vengono mostrati i tipi di messaggio che l'elemento Messages può contenere. Sono inoltre disponibili esempi di utilizzo per ogni elemento.
 

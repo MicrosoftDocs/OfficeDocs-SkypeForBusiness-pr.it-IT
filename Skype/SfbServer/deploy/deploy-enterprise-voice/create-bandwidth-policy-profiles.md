@@ -2,7 +2,7 @@
 title: Creare profili dei criteri di larghezza di banda in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: a71881ef-b04a-465e-9abb-0577bfd182f3
 description: Creare o modificare i criteri di larghezza di banda utilizzati VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server.
-ms.openlocfilehash: 458ab2d93f1e099aef32521129700921caebba50
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: d1c7391abb535f3d7309809adea5b66a28087c75
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60761544"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60841908"
 ---
 # <a name="create-bandwidth-policy-profiles-in-skype-for-business-server"></a>Creare profili dei criteri di larghezza di banda in Skype for Business Server 
  
@@ -66,7 +66,7 @@ I criteri di esempio creati nella procedura seguente impostano limiti per il tra
    New-CsNetworkBandwidthPolicyProfile -Identity 25Mb_Link -Description "BW profile for 25Mb links" -AudioBWLimit 10000 -AudioBWSessionLimit 200 -VideoBWLimit 7000 -VideoBWSessionLimit 700
    ```
 
-### <a name="to-create-bandwidth-policy-profiles-by-using-skype-for-business-server-control-panel"></a>Per creare profili di criteri di larghezza di banda tramite il Skype for Business Server di controllo
+### <a name="to-create-bandwidth-policy-profiles-by-using-skype-for-business-server-control-panel"></a>Per creare profili di criteri di larghezza di banda tramite Skype for Business Server pannello di controllo
 
 1. Aprire Skype for Business Server Pannello di controllo.
     

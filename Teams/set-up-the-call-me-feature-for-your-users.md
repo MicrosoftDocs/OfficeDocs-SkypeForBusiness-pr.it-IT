@@ -1,6 +1,6 @@
 ---
 title: Configurare la funzionalità Chiamami per gli utenti
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 ms.reviewer: macai, phedry
 manager: serdars
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 search.appverid: MET150
-description: Informazioni su come configurare la funzionalità Chiamami in Teams in modo che gli utenti possano partecipare alla parte audio tramite telefono quando usano il computer per l'audio potrebbe non essere possibile.
+description: Informazioni su come configurare la funzionalità Chiamami in Teams in modo che gli utenti possano partecipare alla parte audio telefonicamente quando usano il computer per l'audio potrebbe non essere possibile.
 ms.localizationpriority: medium
 ms.collection:
 - M365-voice
@@ -17,12 +17,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c9269de290ff4aec3380dccc7c114c7113256973
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 708b521d52dc3732e89ec1e3c27ab45c74481361
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60766155"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60842028"
 ---
 # <a name="set-up-the-call-me-feature-for-your-users"></a>Configurare la funzionalità Chiamami per gli utenti
 
@@ -59,11 +59,11 @@ Un altro modo per partecipare è accedere direttamente alla riunione. Nella sche
 
 Se un utente verifica problemi audio quando usa il computer durante una riunione, l'utente può passare facilmente all'uso del telefono per l'audio. Teams rileva quando si verifica un problema audio o del dispositivo e reindirizza l'utente all'uso del telefono visualizzando l'opzione **Chiamami indietro.**
 
-Ecco un esempio del messaggio  e dell'opzione Chiamami indietro che viene visualizzata quando Teams non rileva un microfono.
+Ecco un esempio del messaggio  e dell'opzione Richiamami visualizzata quando Teams non rileva un microfono.
 
 ![Schermata dell'opzione Richiama.](media/set-up-the-call-me-feature-for-your-users-no-mic.PNG)
 
-L'utente fa clic **su Chiamami indietro**, che visualizza lo schermo **Usa telefono per l'audio.** Da qui, possono immettere il proprio numero di telefono e fare Teams riunione telefonica e partecipare alla riunione o effettuare l'accesso manualmente alla riunione.
+L'utente fa clic **su Chiamami indietro**, che visualizza lo schermo **Usa telefono per l'audio.** Da qui, possono immettere il proprio numero di telefono e fare Teams chiamata alla riunione e partecipare alla riunione o effettuare l'accesso manualmente alla riunione.
 
 ## <a name="set-up-the-call-me-feature"></a>Configurare la funzionalità Chiama
 

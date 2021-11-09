@@ -2,7 +2,7 @@
 title: Espansione del nodo di ambito di Office Online Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: f934e076-1022-40cd-8a4a-0b90ccf6f2a6
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Fare clic con il pulsante destro Office server Web Apps in Generatore di topologie per eseguire le operazioni seguenti:'
-ms.openlocfilehash: 1230c983de7d3d5e12402f6bc7e076f9f0bca57f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 31ef705099e89591011fe0be01f70dab6d89466b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60742313"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60865113"
 ---
 # <a name="office-web-apps-server-scope-node-expander"></a>Espansione del nodo di ambito di Office Online Server
  

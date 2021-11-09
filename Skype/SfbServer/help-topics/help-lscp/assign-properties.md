@@ -2,7 +2,7 @@
 title: Assegnare proprietà
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 50c799a3-90a0-4d58-8f8b-17eea56144dc
 description: Utilizzare la finestra di dialogo Assegna proprietà per specificare una descrizione e un ID sito di rete per più subnet alla volta. In Descrizione digitare la descrizione che si desidera utilizzare per le subnet selezionate. In ID sito di rete selezionare l'ID sito di rete che si desidera assegnare alle subnet selezionate. Per assegnare tali proprietà alle subnet selezionate, fare clic su OK.
-ms.openlocfilehash: d56a52d7cbf6fd1f8a3cbcb630f48e245fb34674
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 369ecefd5e36d3fc0e941f87fe3bcc1caa9df73f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769034"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60832290"
 ---
 # <a name="assign-properties"></a>Assegnare proprietà
  
