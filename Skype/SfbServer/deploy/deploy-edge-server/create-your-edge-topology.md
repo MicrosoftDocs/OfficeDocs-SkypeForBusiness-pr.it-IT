@@ -2,7 +2,7 @@
 title: Creare la topologia perimetrale per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 5ea18841-afdc-4ccb-8d86-30584c1f5aca
 description: 'Riepilogo: informazioni su come creare, pubblicare ed esportare la topologia di server perimetrali in Skype for Business Server.'
-ms.openlocfilehash: ff7c2e69c3ee18da5c798fbdf96719bd14146d45
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b016475f32e38b1353f7ef14f91e203843cd748b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60775806"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60844859"
 ---
 # <a name="create-your-edge-topology-for-skype-for-business-server"></a>Creare la topologia perimetrale per Skype for Business Server
  
@@ -187,9 +187,9 @@ Se non si è certi di ciò che è necessario, prima di iniziare a seguire questi
     
 ### <a name="defining-the-topology-for-a-hardware-load-balanced-edge-server-pool"></a>Definizione della topologia per un pool di server perimetrali con bilanciamento del carico hardware
 
-1. Accedere al server Skype for Business Server edizione Standard o a Skype for Business Server Front End Server.
+1. Accedere al server Skype for Business Server edizione Standard o a un front-Skype for Business Server Front End Server.
     
-2. Una volta presente, **aprire Skype for Business Server Generatore di topologie.**
+2. Una volta presente, aprire **Skype for Business Server Generatore di topologie.**
     
 3. Nell'albero della console espandere il sito in cui si desidera distribuire il server perimetrale.
     
@@ -256,7 +256,7 @@ Se non si è certi di ciò che è necessario, prima di iniziare a seguire questi
     
 ## <a name="publish-your-edge-server-topology"></a>Pubblicare la topologia di server perimetrali
 
-Dopo aver completato i passaggi precedenti, è il momento di pubblicare questa nuova topologia, che consentirà anche di esportarla nel server perimetrale o nel pool di server perimetrali di Skype for Business Server. Eseguire la procedura seguente:
+Dopo aver completato i passaggi precedenti, è necessario pubblicare questa nuova topologia, che consentirà anche di esportarla nel server perimetrale o nel pool di server perimetrali di Skype for Business Server. Eseguire la procedura seguente:
   
 1. Avviare **Generatore di topologie** (se non è già stato avviato dalla procedura precedente).
     

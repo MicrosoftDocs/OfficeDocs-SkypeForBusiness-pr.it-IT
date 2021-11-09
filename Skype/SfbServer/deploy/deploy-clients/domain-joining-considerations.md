@@ -1,7 +1,7 @@
 ---
 title: Skype Considerazioni sull'aggiunta al dominio del sistema sala
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 3034fdcb-7c89-42c4-9c5e-13400e82d88f
 description: Leggere questo argomento per informazioni su come aggiungere un PC Skype appliance room al dominio.
-ms.openlocfilehash: a3a5e4b8fb1f4af7c67e0cfa91ff9237be438347
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: d3c94a4983bddb051bda29badf5c569eeef635a3
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60751375"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60844869"
 ---
 # <a name="skype-room-system-domain-joining-considerations"></a>Skype Considerazioni sull'aggiunta al dominio del sistema sala
  
@@ -25,7 +25,7 @@ Leggere questo argomento per informazioni su come aggiungere un PC Skype applian
   
 ## <a name="domain-joining-considerations"></a>Considerazioni sull'unione del dominio
 
-Puoi aggiungere il PC Skype appliance room system al dominio di Active Directory o lasciarlo in un gruppo di lavoro. Prima di prendere questa decisione, considerare i punti seguenti:
+Puoi aggiungere il PC Skype Appliance room system al dominio di Active Directory o lasciarlo in un gruppo di lavoro. Prima di prendere questa decisione, considerare i punti seguenti:
   
 - L'aggiunta al PC Skype appliance Room System consente di importare automaticamente la catena di certificati radice privata dell'organizzazione.
     
@@ -51,9 +51,9 @@ Puoi aggiungere il PC Skype appliance room system al dominio di Active Directory
     
   - Push Windows Update to Skype Room System
     
-- In alternativa, potresti decidere di lasciare il PC dell'appliance nel gruppo di lavoro. Come per il client Skype for Business desktop, è necessario importare manualmente la catena di certificati radice nel PC Skype Appliance di Room System. Non è necessario importare la catena di certificati radice se la distribuzione di Skype for Business usa un certificato pubblico (ad esempio, Entrust, VeriSign e così via). 
+- In alternativa, potresti decidere di lasciare il PC dell'appliance nel gruppo di lavoro. Come per il client Skype for Business desktop, è necessario importare manualmente la catena di certificati radice nel PC dell'appliance Skype Room System. Non è necessario importare la catena di certificati radice se la distribuzione di Skype for Business usa un certificato pubblico (ad esempio, Entrust, VeriSign e così via). 
     
-Se si prevede di aggiungere computer Skype Room System al dominio, per evitare di aggiungere il computer Skype Room System inavvertitamente a un'unità organizzativa non intenzionale, che potrebbe non essere libera dagli oggetti Criteri di gruppo, assicurarsi di aggiungere l'unità organizzativa corretta. È possibile utilizzare il cmdlet seguente dal computer Skype Room System per partecipare all'unità organizzativa corretta e non ricevere oggetti Criteri di gruppo che potrebbero bloccare la funzionalità LRS. Contattare l'amministratore di sistema o il partner OEM per eseguire questo cmdlet:
+Se si prevede di aggiungere computer Skype Room System al dominio, per evitare di aggiungere inavvertitamente un computer Skype Room System Skype un'unità organizzativa non intenzionale, che potrebbe non essere libera dagli oggetti Criteri di gruppo, assicurarsi di aggiungere l'unità organizzativa corretta. È possibile utilizzare il cmdlet seguente dal computer Skype Room System per partecipare all'unità organizzativa corretta e non ricevere oggetti Criteri di gruppo che potrebbero bloccare la funzionalità LRS. Contattare l'amministratore di sistema o il partner OEM per eseguire questo cmdlet:
   
 ```powershell
 $username = "contso.local\LRS01"

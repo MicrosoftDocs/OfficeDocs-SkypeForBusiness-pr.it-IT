@@ -2,7 +2,7 @@
 title: Gestire Skype for Business Server 2019 con SCOM Management Pack
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 10/26/2018
 audience: ITPro
@@ -13,18 +13,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: "Riepilogo: informazioni su come configurare l'Skype for Business Server 2019 per l'utilizzo con System Center Operations Manager."
-ms.openlocfilehash: 69954c7568702e4e3d6e9618bdd7e37243c61ef6
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e0e5f7c090c51fbe3b7b022f890fd3fc8f254aa3
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60751495"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60844889"
 ---
 # <a name="manage-skype-for-business-server-2019-using-scom-management-pack"></a>Gestire Skype for Business Server 2019 con SCOM Management Pack
  
 **Riepilogo:** Informazioni su come configurare l'Skype for Business Server 2019 per l'utilizzo con System Center Operations Manager.
   
-In un mondo ideale, non si verificano mai problemi con Skype for Business Server 2019. Tuttavia, Skype for Business Server possono essere influenzati da fattori esterni, ad esempio arresti anomali della rete e errori hardware. Utilizzando i Skype for Business Server 2019 Management Pack, è possibile identificare e risolvere i potenziali problemi in modo proattivo. In questo modo, i Management Pack Skype for Business Server 2019 estendono le funzionalità di System Center Operations Manager.
+In un mondo ideale, non si verificano mai problemi con Skype for Business Server 2019. Tuttavia, Skype for Business Server possono essere influenzati da fattori esterni, ad esempio arresti anomali della rete e errori hardware. Utilizzando i Skype for Business Server 2019 Management Pack, è possibile identificare e risolvere potenziali problemi in modo proattivo. In questo modo, i Management Pack Skype for Business Server 2019 estendono le funzionalità di System Center Operations Manager.
   
 Queste informazioni sono state scritte in base alla versione 9319.0 del Monitoring Pack per Skype for Business Server 2019 communications software.
   
@@ -70,7 +70,7 @@ Per eseguire un nodo Synthetic Transaction Watcher, è innanzitutto necessario i
     
 -  Microsoft .NET Framework 4.5
     
-- Skype for Business Server di installazione di base (OcsCore.msi) e UCMA (Unified Communications Managed API) (le versioni devono corrispondere alla versione Skype for Business Server WatcherNode.msi)
+- Skype for Business Server file di installazione di base (OcsCore.msi) e UCMA (Unified Communications Managed API) (le versioni devono corrispondere alla Skype for Business Server WatcherNode.msi precedente)
     
 ## <a name="files-in-this-monitoring-pack"></a>File in questo Monitoring Pack
 
@@ -187,7 +187,7 @@ La tabella seguente mostra gli stati di integrità degli oggetti Skype for Busin
    
 ![SCOM Rollup.](../../SfbServer/media/de16195d-3aed-412e-9def-07a481d2ff0f.png)
   
-Un Skype for Business Server può contenere più sistemi Skype for Business Server singoli (con più di un ruolo Skype for Business Server, Skype for Business Server servizio e Skype for Business Server componente). Di conseguenza, l'errore di un singolo server o componente è meno critico per l'integrità complessiva del pool di Skype for Business Server, perché altri server nello stesso pool possono fornire il servizio dell'applicazione al client. L'integrità verrà rollup a un livello percentuale nel pool Skype for Business Server locale. 
+Un Skype for Business Server può contenere più sistemi Skype for Business Server singoli (con più Skype for Business Server ruolo, Skype for Business Server servizio e Skype for Business Server componente). Di conseguenza, l'errore di un singolo server o componente è meno critico per l'integrità complessiva del pool di Skype for Business Server, perché altri server nello stesso pool possono fornire il servizio dell'applicazione al client. L'integrità verrà rollup a un livello percentuale nel pool Skype for Business Server locale. 
   
 Il Skype for Business Server Pool Watcher esegue transazioni sintetiche su un Skype for Business Server pool. L'errore consecutivo di una o più transazioni sintetiche (un processo noto come intervallo di polling consecutivo) esegue il rollup dello stato di integrità critico al livello del pool (peggiore di qualsiasi transazione sintetica), come illustrato nel diagramma seguente. 
   
@@ -219,7 +219,7 @@ I collegamenti seguenti si connettono alle informazioni sulle attività comuni a
     
 - [Come rimuovere un Management Pack di Operations Manager](/previous-versions/system-center/system-center-2012-R2/hh230746(v=sc.12))
     
-I collegamenti seguenti collegano l'utente alle informazioni sulle attività comuni associate ai Monitoring Pack System Center 2007:
+I collegamenti seguenti si connettono alle informazioni sulle attività comuni associate ai Monitoring Pack System Center 2007:
   
 - [Amministrazione del ciclo di vita del Management Pack](/previous-versions/system-center/operations-manager-2007-r2/cc974486(v=technet.10))
     
@@ -235,7 +235,7 @@ I collegamenti seguenti collegano l'utente alle informazioni sulle attività com
     
 - [Come rimuovere un Management Pack](/previous-versions/system-center/operations-manager-2007-r2/cc974489(v=technet.10))
     
-Per domande su Operations Manager e sui Monitoring Pack, vedere il forum della community di [System Center Operations Manager.](https://go.microsoft.com/fwlink/p/?LinkID=179635)
+Per domande su Operations Manager e sui Monitoring Pack, vedere il forum System Center [community di Operations Manager.](https://go.microsoft.com/fwlink/p/?LinkID=179635)
   
 Una risorsa utile è il blog [System Center di Operations Manager Unleashed,](https://opsmgrunleashed.wordpress.com/) che contiene post "By Example" per specifici monitoring pack.
   

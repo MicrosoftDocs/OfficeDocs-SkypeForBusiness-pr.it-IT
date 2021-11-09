@@ -2,7 +2,7 @@
 title: Accedere ai dati di monitoraggio in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 845385ca-5532-4fa2-91b9-51c6de6fec91
 description: 'Riepilogo: informazioni sui dati di monitoraggio utilizzati in Skype for Business Server.'
-ms.openlocfilehash: 416eeb0f1ec724b2d07200ce87d35a466336f9c1
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 49adf9caca82f97b0483743f65c7dea7b0f72a01
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763674"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60852070"
 ---
 # <a name="access-monitoring-data-in-skype-for-business-server"></a>Accedere ai dati di monitoraggio in Skype for Business Server
  
@@ -29,6 +29,6 @@ Uno strumento da prendere in considerazione per l'accesso e l'analisi dei dati d
   
 Monitoring Reports richiede l'utilizzo di SQL Server Reporting Service. SQL Server Reporting Service può essere installato contemporaneamente a SQL Server o dopo l'installazione di SQL Server.
   
-Per ulteriori informazioni, vedere l'argomento [Install Monitoring Reports in Skype for Business Server.](../../deploy/deploy-monitoring/install-monitoring-reports.md)
+Per ulteriori informazioni, vedere l'argomento [Install Monitoring Reports in Skype for Business Server](../../deploy/deploy-monitoring/install-monitoring-reports.md).
   
 
