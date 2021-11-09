@@ -2,7 +2,7 @@
 title: Gestire i servizi in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,16 +11,16 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Informazioni su come visualizzare lo stato del servizio, avviare e arrestare i servizi e impedire sessioni per i servizi.
-ms.openlocfilehash: c48a6a07605096dfdccc96539d01e5607e171b9b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: cc5218f5347eb2124f42b8881bce730c74889bda
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756983"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864733"
 ---
 # <a name="manage-services-in-skype-for-business-server"></a>Gestire i servizi in Skype for Business Server
 
-È possibile utilizzare il Pannello di controllo di Skype for Business Server per visualizzare un elenco di tutti i computer che eseguono Skype for Business Server nella topologia, visualizzare lo stato dei servizi, avviare o arrestare i servizi e impedire sessioni per i servizi.
+È possibile utilizzare il Pannello di controllo di Skype for Business Server per visualizzare un elenco di tutti i computer che eseguono Skype for Business Server nella topologia, visualizzare lo stato dei servizi, avviare o arrestare i servizi e impedire le sessioni per i servizi.
 
 - [Visualizzare un elenco di computer che eseguono Skype for Business Server](#view-a-list-of-computers-running-skype-for-business-server)
 - [Visualizzare lo stato dei servizi in esecuzione in un computer in Skype for Business](#view-the-status-of-services-running-on-a-computer-in-skype-for-business)
@@ -32,7 +32,7 @@ ms.locfileid: "60756983"
 Utilizzare il Skype for Business Server di controllo per visualizzare un elenco di tutti i computer che eseguono Skype for Business nella topologia e visualizzare lo stato del servizio di ognuno di essi. È possibile ordinare l'elenco in base al computer, al pool o al sito. 
 
 1. Da un account utente assegnato a uno dei ruoli amministrativi predefiniti per Skype for Business Server, accedere a qualsiasi computer nella distribuzione interna. Per ulteriori informazioni, vedere [Role-based access control (RBAC) for Skype for Business Server](../../plan-your-deployment/security/role-based-access-control-rbac.md).
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business Server di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business Server di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)
 3. Sulla barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.
 4. Nella pagina Stato eseguire una delle operazioni seguenti in base alle esigenze:
     - Ordinare l'elenco facendo clic sull'intestazione di colonna **Computer**, **Pool** o **Sito** e quindi sulla freccia verso l'alto o verso il basso.
@@ -81,7 +81,7 @@ Per informazioni dettagliate, [vedere Get-CsWindowsService](/powershell/module/s
 
 ## <a name="start-or-stop-skype-for-business-services"></a>Avviare o arrestare Skype for Business servizi
 
-Utilizzare il Skype for Business Server di controllo per avviare o arrestare tutti i servizi Skype for Business Server in esecuzione in un computer specifico oppure per avviare o arrestare un servizio specifico.
+Utilizzare il Skype for Business Server di controllo per avviare o arrestare tutti i servizi di Skype for Business Server in esecuzione in un computer specifico oppure per avviare o arrestare un servizio specifico.
 
 ### <a name="start-or-stop-all-skype-for-business-server-services-on-a-computer"></a>Avviare o arrestare tutti i Skype for Business Server in un computer
 
@@ -91,7 +91,7 @@ Utilizzare il Skype for Business Server di controllo per avviare o arrestare tut
     Get-CsAdminRoleAssignment -Identity "kenmyer"`
     ```
 
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business Server di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business Server di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)
 3. Sulla barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.
 4. Nella pagina Stato ordinare o scorrere l'elenco per trovare il computer in cui sono in esecuzione i servizi che si desidera avviare o arrestare e quindi fare clic su di esso.
 5. Fare clic su **Azione**.

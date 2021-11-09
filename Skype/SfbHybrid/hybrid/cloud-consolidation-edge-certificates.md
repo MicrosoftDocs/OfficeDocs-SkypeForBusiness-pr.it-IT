@@ -20,13 +20,13 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 ms.localizationpriority: medium
-description: Questa appendice include la procedura dettagliata per l'aggiornamento del certificato perimetrale nell'ambito del consolidamento cloud per Teams e Skype for Business.
-ms.openlocfilehash: 1c4708f593b1a9bd8fbc2a427e2f0c5df9feab5c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Questa appendice include la procedura dettagliata per aggiornare il certificato perimetrale come parte del consolidamento cloud per Teams e Skype for Business.
+ms.openlocfilehash: bb8d2eabf17d83546737d3d94fb4add5dc0a892e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610203"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857113"
 ---
 # <a name="update-the-edge-certificate"></a>Aggiornare il certificato perimetrale
 
@@ -39,7 +39,7 @@ Il nome soggetto alternativo (SAN) del certificato in tutti i server perimetrali
 
 **Passaggi:**
 
-1.  Ottenere un nuovo certificato edge esterno per il server perimetrale con tutte le voci esistenti più voci aggiuntive nella san per tutti i domini SIP nell'ambiente cloud (esclusi i domini *.onmicrosoft.com) nel formato "sip. <DomainName> ".
+1.  Ottenere un nuovo certificato edge esterno per il server perimetrale con tutte le voci esistenti più voci aggiuntive nella san per tutti i domini SIP nell'ambiente cloud (esclusi i domini *.onmicrosoft.com) nel formato `sip.<DomainName>` .
 2.  Installare il certificato in locale in ogni server perimetrale e assegnarlo al servizio edge Skype in ogni servizio perimetrale.  Per la procedura dettagliata, vedere la sezione "Certificati dell'interfaccia perimetrale esterna" [in Deploy Edge Service in Skype for Business Server 2015](../../SfbServer/deploy/deploy-edge-server/deploy-edge-servers.md).
 3.  Riavviare il servizio Edge in ognuno dei server perimetrali. È possibile eseguire questa operazione per una singola casella con i comandi di PowerShell seguenti:
 

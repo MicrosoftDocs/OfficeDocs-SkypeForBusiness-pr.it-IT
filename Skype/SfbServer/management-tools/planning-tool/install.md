@@ -2,7 +2,7 @@
 title: Installare lo strumento di pianificazione in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 4/5/2016
 audience: ITPro
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: b95b3301-fa1e-4b96-9af4-05b43d39db8d
 description: Prima di iniziare a progettare e pianificare l'infrastruttura Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
-ms.openlocfilehash: b476d5d39515fe14d3f13a3ee9dc0c5b5298fdc1
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 5d9dc6204647daf03adfab6fcf3cf091d7ba5415
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756885"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850889"
 ---
 # <a name="install-the-planning-tool-in-skype-for-business-server-2015"></a>Installare lo strumento di pianificazione in Skype for Business Server 2015
 
@@ -58,7 +58,7 @@ Dopo aver soddisfatto i requisiti di preinstallazione, è possibile installare l
 
 2. Utilizzando Windows Explorer o una finestra di comando, individuare la directory in cui sono stati scaricati i file di installazione dello strumento di pianificazione.
 
-3. Individuare il SkypeForBusinessPlanningTool.msi. In Windows Explorer fai doppio clic sul file. Nella finestra di comando digitare il nome del file e quindi premere **INVIO** per eseguire il file.
+3. Individuare il SkypeForBusinessPlanningTool.msi. In Windows Explorer fare doppio clic sul file. Nella finestra di comando digitare il nome del file e quindi premere **INVIO** per eseguire il file.
 
 4. Nella pagina iniziale dell'installazione guidata **Skype for Business Server 2015, Planning Tool Setup Wizard,** fare clic su **Avanti.**
 
@@ -104,7 +104,7 @@ L'esportazione del progetto in Microsoft Visio consente di creare un diagramma d
 
 - Topologia globale - Diagramma dei siti Skype for Business Server 2015.
 
-- Scheda Nome sito - Visualizza la topologia di configurazione del sito con server perimetrali, firewall, PSTN (Public Switched Telephone Network) con gateway e la distribuzione interna del server. La distribuzione interna è costituita da server e pool configurati, inclusi i pool Front End, i server basati su SQL Server, Servizi di dominio Active Directory, Director, server messaggistica unificata di Exchange, server Cassette postali Exchange, server Web Apps Office, Mediation Server e server Chat persistente.
+- Scheda Nome sito - Visualizza la topologia di configurazione del sito con server perimetrali, firewall, PSTN (Public Switched Telephone Network) con gateway e la distribuzione interna del server. La distribuzione interna è costituita da server e pool configurati, inclusi pool Front End, server basati su SQL Server, Servizi di dominio Active Directory, Director, server messaggistica unificata Exchange, server Cassette postali Exchange, server Web Apps Office, Mediation Server e server Chat persistente.
 
 - Edge Network Diagram - Diagramma che illustra in dettaglio la configurazione del server perimetrale con indirizzi IP e FQDN associati. Sono inoltre inclusi il bilanciamento del carico DNS e i dispositivi di bilanciamento del carico hardware. Vengono inoltre visualizzati i Director e il Front End Server o il pool Front End, con LB DNS o HLB associati e l'indirizzo IP assegnato (lo strumento di pianificazione supporta sia gli indirizzi IPv4 che IPv6) e FQDN.
 

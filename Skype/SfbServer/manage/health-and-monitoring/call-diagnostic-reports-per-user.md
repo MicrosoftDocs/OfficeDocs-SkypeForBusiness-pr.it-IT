@@ -2,7 +2,7 @@
 title: Rapporti di diagnostica delle chiamate (per utente) in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 9da13470-001e-415f-b8c5-29b1f3b531ba
 description: 'Riepilogo: informazioni sui rapporti di diagnostica delle chiamate per utente usati in Skype for Business Server.'
-ms.openlocfilehash: 4bb9adb37b37ea06627ba5f678d32b5bdcb50b00
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 03b3afba9a9177bc1628c100ca5083f1be96b48e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60766494"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864853"
 ---
 # <a name="call-diagnostic-reports-per-user-in-skype-for-business-server"></a>Rapporti di diagnostica delle chiamate (per utente) in Skype for Business Server
   
@@ -43,11 +43,11 @@ Ken.my
 
 ## <a name="to-access-the-user-activity-report"></a>Per accedere al Rapporto attività utente
 
-È possibile accedere al Report attività utente dalla home page dei report di monitoraggio. Puoi anche raggiungere il Rapporto attività utente facendo clic sulla metrica URI utente nel Report inventario Telefono [ip in Skype for Business Server](ip-phone-inventory-report.md). Dall'interno del Rapporto attività utente, facendo clic sull'URI conferenza (per una conferenza) si visualizza il Rapporto dettagli conferenza. Analogamente, facendo clic sulla metrica Dettagli per una chiamata peer-to-peer si visualizza il Rapporto dettagli sessione [peer-to-peer in Skype for Business Server](peer-to-peer-session-detail-report.md).
+È possibile accedere al Report attività utente dalla home page dei report di monitoraggio. Puoi anche raggiungere il Rapporto attività utente facendo clic sulla metrica URI utente nel Report inventario Telefono [IP in Skype for Business Server](ip-phone-inventory-report.md). Dall'interno del Rapporto attività utente, facendo clic sull'URI conferenza (per una conferenza) si visualizza il Rapporto dettagli conferenza. Analogamente, facendo clic sulla metrica Dettagli per una chiamata peer-to-peer si visualizza il Rapporto dettagli sessione [peer-to-peer in Skype for Business Server](peer-to-peer-session-detail-report.md).
 
 ## <a name="making-the-best-use-of-the-user-activity-report"></a>Utilizzo ottimale del report attività utente
 
-Anche se nel Rapporto attività utente sono disponibili molte informazioni, a volte può essere difficile individuarlo. Ad esempio, tutte le attività utente che si svolgono nell'organizzazione durante un periodo specificato sono incluse nel Rapporto attività utente. ciò significa che, nascosto, all'interno del report sono informazioni sugli utenti che hanno effettivamente usato Skype for Business Server in qualche modo.
+Anche se nel Rapporto attività utente sono disponibili molte informazioni, a volte può essere difficile individuarlo. Ad esempio, tutte le attività utente che si svolgono nell'organizzazione durante un periodo specificato sono incluse nel Rapporto attività utente. ciò significa che, nascosto, all'interno del report sono informazioni sugli utenti effettivamente usati Skype for Business Server in qualche modo.
 
 > [!NOTE]
 > Tecnicamente, è possibile che alcune attività degli utenti non vengano registrare: mentre Skype for Business Server cerca di mantenere le informazioni su tutte le chiamate telefoniche, è possibile che una chiamata possa essere stata effettuata senza che le informazioni sulla chiamata siano state scritte nel database. Skype for Business Server è progettato per offrire uno sguardo estremamente accurato, ma non necessariamente perfetto, al modo Skype for Business Server viene usato. Il fatto che non vi sia alcuna garanzia che il 100% di tutte le chiamate sia registrato spiega perché il monitoraggio Skype for Business Server non deve essere utilizzato come sistema di fatturazione. In secondo momento, un report di monitoraggio può visualizzare al massimo 1.000 record. Ciò significa che, a seconda della quantità di attività utente svolta e del periodo di tempo di riferimento, la query potrebbe non restituire tutti i dati effettivamente memorizzati nel database. 

@@ -1,6 +1,6 @@
 ---
 title: Gestire i componenti in tempo reale in Teams
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 audience: Admin
@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b8bda034030f2ccb6e12e23908f16ca212f4add0
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 6be8db0fdde7509f5721277b4ee631f7a814171d
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60750335"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60830220"
 ---
 # <a name="manage-live-components-in-teams"></a>Gestire i componenti in tempo reale in Teams
 
@@ -31,7 +31,7 @@ I componenti in tempo reale Teams chat offrono un nuovo modo per ideare, creare 
 
 **È possibile eseguire più velocemente le attività insieme.** È possibile creare un'agenda, tenere traccia delle attività di un gruppo o prendere appunti collettivamente. Questi sono solo alcuni scenari semplificati con i componenti in tempo reale.
 
-**Condividere componenti.** In questa versione è possibile condividere i componenti in tempo reale in Teams chat. I destinatari possono modificare da qualsiasi posizione e visualizzare immediatamente gli aggiornamenti, indipendentemente da dove sono state apportate le modifiche. Nelle versioni future, i componenti in tempo reale saranno supportati Teams note e canali delle riunioni, Outlook e infine in tutte le Microsoft 365 applicazioni.
+**Condividere componenti.** In questa versione è possibile condividere i componenti in tempo reale in Teams chat. I destinatari possono modificare da qualsiasi posizione e visualizzare immediatamente gli aggiornamenti, indipendentemente da dove sono state apportate le modifiche. Nelle versioni future, i componenti in tempo reale saranno supportati Teams note e canali delle riunioni, Outlook e infine in tutte Microsoft 365 applicazioni.
 
 **Inizia in chat, crea da lì.** Ogni componente creato da Teams chat viene salvato automaticamente in un file in OneDrive. Quindi, potresti iniziare a collaborare in chat e poi passare al file, dove hai uno spazio visivo più ampio per la modifica e puoi aggiungere tutti i componenti che vuoi.
 
@@ -69,11 +69,11 @@ La funzionalità sarà disponibile in Teams Windows Desktop, Mac, iOS, Android. 
 
 1. [Connessione per SharePoint PowerShell online.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-2. Disabilitare Fluid usando il cmdlet Set-SPOTenant cmdlet Set-SPOTenant -IsFluidEnabled $false. 
+2. Disabilitare Fluid usando il cmdlet Set-SPOTenant-IsFluidEnabled Set-SPOTenant -IsFluidEnabled $false. 
 
    L'applicazione della modifica all'interno della tenancy sarà breve. 
 
-Se è necessario abilitare di nuovo questa funzionalità, è possibile usare i cmdlet di PowerShell SharePoint online.
+Se è necessario abilitare di nuovo questa funzionalità, è possibile usare i cmdlet di PowerShell SharePoint Online.
 
 ```powershell
 C:\\WINDOWS\\system32&gt; Connect-SPOService
@@ -89,7 +89,7 @@ PS C:\\WINDOWS\\system32&gt;
 
 - La creazione di una tabella o di un elenco attività come primo componente dopo il riavvio dell Teams app potrebbe richiedere del tempo aggiuntivo.
 
-- Gli altri membri della chat riceveranno una notifica tramite posta elettronica quando vengono menzionati con un simbolo di @. Le notifiche con menzioni nel feed attività Teams saranno disponibili a breve.
+- Gli altri membri della chat riceveranno una notifica tramite posta elettronica quando vengono menzionati con un simbolo di @. Le notifiche at-mentions nel feed Teams attività saranno disponibili a breve.
 
 - La ricerca di componenti in tempo reale Teams ricerca restituirà un collegamento al componente in office.com, non al messaggio di chat stesso.
 
@@ -111,7 +111,7 @@ Gli utenti possono cercare contenuti nei `.fluid` file da Office.com e OneDrive 
 
 I partecipanti alla chat devono avere un account OneDrive per creare componenti in tempo reale. Senza un account OneDrive valido, i partecipanti alla chat potrebbero comunque essere in grado di collaborare a un componente creato da altri utenti che hanno un account OneDrive valido, ma non possono crearne uno personalizzato.
 
-[Se](https://support.microsoft.com/en-us/office/move-files-and-folders-between-onedrive-and-sharepoint-5916f90d-f58a-4bf9-b135-10853f516d0b) si sposta un file da OneDrive a un sito SharePoint, il componente in tempo reale non viene caricato `.fluid` Teams chat.
+[Se](https://support.microsoft.com/en-us/office/move-files-and-folders-between-onedrive-and-sharepoint-5916f90d-f58a-4bf9-b135-10853f516d0b) si sposta un file OneDrive un sito SharePoint, il componente in tempo reale non viene caricato `.fluid` Teams chat.
 
 **Cosa succede se il proprietario del file lascia la società?**
 
@@ -121,7 +121,7 @@ I partecipanti alla chat devono avere un account OneDrive per creare componenti 
 
 I componenti in tempo reale possono essere inseriti Teams chat o copiati da una chat a un'altra. I componenti in tempo reale non sono ancora supportati nei canali. Per impostazione predefinita, vengono assegnate le autorizzazioni esistenti del tenant, ma gli utenti possono modificare le autorizzazioni prima dell'invio per assicurarsi che tutti possano accedere.
 
-L'apertura di componenti da Teams chat in Office.com offre funzionalità di condivisione nella parte superiore della finestra, in modo analogo alle opzioni di condivisione offerte per altri Office documenti.
+L'apertura di componenti Teams chat in Office.com offre funzionalità di condivisione nella parte superiore della finestra, in modo analogo alle opzioni di condivisione offerte per altri Office documenti.
 
 **Cosa succede se `.fluid` un file viene danneggiato o danneggiato?**
 

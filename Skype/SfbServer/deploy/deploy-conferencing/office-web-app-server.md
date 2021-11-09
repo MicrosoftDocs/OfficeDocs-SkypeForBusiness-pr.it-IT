@@ -2,7 +2,7 @@
 title: Configurare l'integrazione con Office Web Apps Server in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -12,16 +12,16 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: b7e9149e-bf16-4120-afe0-3ee09c88f5eb
 description: "Riepilogo: leggere questo argomento per informazioni su come configurare l'integrazione tra Office Web Apps Server e Skype for Business Server per abilitare le presentazioni PowerPoint per le conferenze Web."
-ms.openlocfilehash: 27f5010b0e95ce7a84847ca52747f581697bde9c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 291e246651a5c4f909f2e739e76de65d8c983c5b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60740122"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60835954"
 ---
 # <a name="configure-integration-with-office-web-apps-server-in-skype-for-business-server"></a>Configurare l'integrazione con Office Web Apps Server in Skype for Business Server
  
-**Riepilogo:** Leggere questo argomento per informazioni su come configurare l'integrazione tra Office Web Apps Server e Skype for Business Server per abilitare PowerPoint presentazioni per conferenze Web.
+**Riepilogo:** Leggere questo argomento per informazioni su come configurare l'integrazione tra Office Web Apps Server e Skype for Business Server per abilitare le presentazioni PowerPoint per le conferenze Web.
   
 Skype for Business Server utilizza Office Web Apps Server per gestire le presentazioni PowerPoint per le conferenze Web. Per informazioni sui vantaggi di questo approccio, vedere [Plan for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md).
   
@@ -42,13 +42,13 @@ Per aggiungere il server Office Web Apps alla topologia, eseguire le operazioni 
     
 3. Nella casella **Salva topologia con nome** digitare un nome per il documento della topologia (ad esempio **TopologiaPreServerWebApps**) nella casella **Nome file** e quindi fare clic su **Salva**. Questa topologia potrà essere recuperata e ripubblicata in seguito se si verificano problemi con la nuova topologia.
     
-4. In Generatore di topologie espandere **Skype for Business Server**, espandere il nome del sito, espandere **edizione Enterprise Pool Front End**, fare clic con il pulsante destro del mouse sul nome di uno dei pool e quindi scegliere Modifica **proprietà**.
+4. In Generatore di topologie espandere **Skype for Business Server**, espandere il nome del **sito,** espandere edizione Enterprise Pool Front End , fare clic con il pulsante destro del mouse sul nome di uno dei pool e quindi scegliere **Modifica proprietà**.
     
 5. Nella scheda **Generale** della finestra di dialogo **Modifica proprietà** individuare il titolo **Associa il pool a un server Office Web Apps** e quindi fare clic su **Nuovo** oppure selezionare un server Office Web Apps esistente nell'elenco a discesa.
     
 6. Nella finestra di dialogo **Definire un nuovo server Office Web Apps** digitare il nome di dominio completo (FQDN) del computer del server Office Web Apps nella casella **FQDN server Office Web Apps**. L'URL di individuazione del server Office Web Apps dovrebbe comparire così automaticamente nella casella **URL di individuazione server Office Web Apps**.
     
-   - Se il server web apps Office è installato in locale e nella stessa area di rete di Skype for Business Server, l'opzione Office Web Apps Server viene distribuita in una rete **esterna( perimetro/Internet)** non deve essere selezionata.
+   - Se il server app Web Office è installato in locale e nella stessa area di rete di Skype for Business Server, l'opzione Office Web Apps Server viene distribuita in una rete **esterna( perimetro/Internet)** non deve essere selezionata.
     
    - Se il server Office Web Apps è distribuito all'esterno del firewall interno, allora selezionare l'opzione **Il server Office Web Apps è distribuito in una rete esterna (perimetro/Internet)**.
     
@@ -72,9 +72,9 @@ Se si desidera che gli utenti esterni, ovvero gli utenti che accedono dall'ester
   
 ## <a name="validate-the-configuration"></a>Convalidare la configurazione
 
-Dopo Office server Web Apps è stato aggiunto alla topologia e dopo la pubblicazione di tale topologia, nel registro eventi di Skype for Business Server dovrebbero essere visualizzati due nuovi eventi del registro eventi. Innanzitutto, deve essere aggiunto un evento LS Data MCU (ID evento 41034). questo evento segnala che il Office Web Apps è stato individuato:
+Dopo Office server Web Apps è stato aggiunto alla topologia e dopo la pubblicazione di tale topologia, nel registro eventi di Skype for Business Server dovrebbero essere visualizzati due nuovi eventi del registro eventi. Innanzitutto, deve essere aggiunto un evento LS Data MCU (ID evento 41034). questo evento segnala che il Office Web Apps Server è stato individuato:
   
- **Web Conferencing Server Office Web Apps Server viene individuato e PowerPoint contenuto è abilitato.**
+ **Web Conferencing Server Office Web Apps Server viene individuato, PowerPoint contenuto è abilitato.**
   
 Inoltre, dovrebbe essere visualizzato un altro evento LS Data MCU (ID evento 41032) che restituisce gli URL di Office Web Apps Server. Ad esempio, dovrebbe essere visualizzato un evento simile al seguente:
   
@@ -94,4 +94,4 @@ Se viene visualizzato un evento LS Data MCU con ID evento 41033, l'individuazion
   
 Se Office Web Apps Server sembra essere configurato correttamente ed è stato riconosciuto dal processo di individuazione, è possibile verificare che Office Web Apps Server funzioni come previsto condividendo una presentazione di PowerPoint tra una coppia di client Skype for Business. Se l'utente A può caricare e visualizzare la presentazione di PowerPoint e l'utente B può partecipare alla riunione e visualizzare la presentazione, Office Web Apps Server funziona correttamente.
   
-Anche se Office Web Apps Server sembra essere configurato correttamente, è possibile che venga visualizzato il messaggio di errore "Alcune funzionalità di condivisione non sono disponibili a causa di problemi di connettività del server" quando si tenta di condividere una presentazione di PowerPoint. Se si riceve questo messaggio di errore, riavviare i Front End Server associati al nuovo Office Web Apps Server.
+Anche se Office Web Apps Server sembra essere configurato correttamente, è possibile che venga visualizzato il messaggio di errore "Alcune funzionalità di condivisione non sono disponibili a causa di problemi di connettività del server" quando si tenta di condividere una presentazione PowerPoint web. Se si riceve questo messaggio di errore, riavviare i Front End Server associati al nuovo Office Web Apps Server.

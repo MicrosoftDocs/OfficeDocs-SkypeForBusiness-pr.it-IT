@@ -2,7 +2,7 @@
 title: Modifiche allo schema in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: d760cb93-77d4-4d64-adb7-416b808f36f8
 description: Prima di distribuire e Skype for Business Server, è necessario preparare Servizi di dominio Active Directory estendendo lo schema. Le estensioni dello schema aggiungono le classi e gli attributi necessari per Skype for Business Server.
-ms.openlocfilehash: 000aad35a546556a2a6bceaedc0d0fdb9deb2420
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 9f5a0f5e3b70925a39d94df9d3fec6728ef6429c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60743282"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60829820"
 ---
 # <a name="schema-changes-in-skype-for-business-server"></a>Modifiche allo schema in Skype for Business Server
  
@@ -35,7 +35,7 @@ Skype for Business Server richiede diverse nuove classi e attributi e modifica a
     
   - Estensioni per le classi per mantenere la compatibilità con le versioni precedenti supportate di Lync Server.
     
-- **Dati** (archiviati in Skype for Business Server schema esteso e in classi di schema esistenti):
+- **Dati** (archiviati in Skype for Business Server schema esteso e nelle classi dello schema esistenti):
     
   - URI (Uniform Resource Identifier) SIP dell'utente e altre impostazioni utente
     
@@ -45,7 +45,7 @@ Skype for Business Server richiede diverse nuove classi e attributi e modifica a
     
   - Account di autenticazione Kerberos (un oggetto computer facoltativo)
     
-In questo argomento vengono descritte le modifiche dello schema di Active Directory richieste da Skype for Business Server. Non vengono descritte le modifiche allo schema introdotte dalle versioni precedenti di Office Communications Server. Per un elenco delle classi e delle relative descrizioni, vedere Classi e [descrizioni](schema-classes-and-descriptions.md)dello schema in Skype for Business Server . Per un elenco degli attributi e delle relative descrizioni, vedere Attributi e descrizioni dello [schema in Skype for Business Server](schema-attributes-and-descriptions.md). Per un elenco delle classi con gli attributi che possono contenere, vedere [Attributi dello schema per](schema-attributes-by-class.md)classe in Skype for Business Server .
+In questo argomento vengono descritte le modifiche dello schema di Active Directory richieste Skype for Business Server. Non vengono descritte le modifiche allo schema introdotte dalle versioni precedenti di Office Communications Server. Per un elenco delle classi e delle relative descrizioni, vedere Classi e [descrizioni](schema-classes-and-descriptions.md)dello schema in Skype for Business Server . Per un elenco degli attributi e delle relative descrizioni, vedere Attributi e [descrizioni](schema-attributes-and-descriptions.md)dello schema in Skype for Business Server . Per un elenco delle classi con gli attributi che possono contenere, vedere [Attributi dello schema per](schema-attributes-by-class.md)classe in Skype for Business Server .
   
 Il prefisso msRTCSIP identifica le classi e gli attributi specifici per Skype for Business Server.
   
@@ -59,7 +59,7 @@ Nella tabella seguente vengono descritti gli attributi di Active Directory aggiu
 |:-----|:-----|
 |msExchUserHoldPolicies  <br/> |Questo attributo multivalore contiene gli identificatori per i criteri di blocco applicabili all'utente. I criteri di conservazione mantengono gli elementi delle cassette postali per l'utente per tutta la durata del blocco. Questo attributo è condiviso con Exchange 2013.  <br/> |
 |msRTCSIP-UserRoutingGroupId  <br/> |Questo è l'ID del gruppo di routing SIP. Gli utenti dello stesso gruppo verranno registrati nello stesso Front End Server.  <br/> |
-|msRTCSIP-MirrorBackEndServer  <br/> |Questo attributo viene utilizzato per archiviare il SQL Server back-end con mirroring utilizzato dal pool Front End.  <br/> |
+|msRTCSIP-MirrorBackEndServer  <br/> |Questo attributo viene utilizzato per archiviare il back-end SQL Server con mirroring utilizzato dal pool Front End.  <br/> |
    
 ## <a name="modified-active-directory-classes"></a>Classi di Active Directory modificate
 

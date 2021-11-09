@@ -2,7 +2,7 @@
 title: Espansione delle impostazioni del computer perimetrale per Lync Server 2010
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: fb72a5b5-70f4-44af-8dfd-c5d32e563882
 description: "Per modificare le proprietà per i computer server perimetrali come singolo server perimetrale o come computer membri in un pool di server perimetrali, configurare le impostazioni di configurazione del nome del server e dell'indirizzo IP:"
-ms.openlocfilehash: 215e103cd7fd41ec6d6788f5884ce741170d19cd
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 667d0736e3a964d95842f5d7b8551c7fd0be5e07
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60739282"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60829040"
 ---
 # <a name="edge-machine-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni del computer perimetrale per Lync Server 2010
  

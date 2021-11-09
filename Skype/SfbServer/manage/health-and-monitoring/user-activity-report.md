@@ -2,7 +2,7 @@
 title: Rapporto attività utente in Skype for Business Server 25
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 3aa6fef2-ea02-4f0f-93e8-fa2e0a953d79
 description: 'Riepilogo: informazioni sul Rapporto attività utente in Skype for Business Server.'
-ms.openlocfilehash: 2d0021a1a8ab72da972c68da94a0a99b84eb7d28
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: c78718e55740afdd42ceff11e1ab62d6198c15ec
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778336"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60828739"
 ---
 # <a name="user-activity-report-in-skype-for-business-server"></a>Rapporto attività utente in Skype for Business Server
 
@@ -47,7 +47,7 @@ Ken.my
 
 ## <a name="making-the-best-use-of-the-user-activity-report"></a>Utilizzo ottimale del report attività utente
 
-Anche se nel Rapporto attività utente sono disponibili molte informazioni, a volte può essere difficile individuarlo. Ad esempio, tutte le attività utente che si svolgono nell'organizzazione durante un periodo specificato sono incluse nel Rapporto attività utente. ciò significa che, nascosto, all'interno del report sono informazioni sugli utenti che hanno effettivamente usato Skype for Business Server in qualche modo.
+Anche se nel Rapporto attività utente sono disponibili molte informazioni, a volte può essere difficile individuarlo. Ad esempio, tutte le attività utente che si svolgono nell'organizzazione durante un periodo specificato sono incluse nel Rapporto attività utente. ciò significa che, nascosto, all'interno del report sono informazioni sugli utenti effettivamente usati Skype for Business Server in qualche modo.
 
 > [!NOTE]
 > Tecnicamente, è possibile che alcune attività degli utenti non vengano registrare: mentre Skype for Business Server cerca di mantenere le informazioni su tutte le chiamate telefoniche, è possibile che una chiamata possa essere stata effettuata senza che le informazioni sulla chiamata siano state scritte nel database. Skype for Business Server è progettato per offrire uno sguardo estremamente accurato, ma non necessariamente perfetto, al modo Skype for Business Server viene usato. Il fatto che non vi sia alcuna garanzia che il 100% di tutte le chiamate sia registrato spiega perché il monitoraggio Skype for Business Server non deve essere utilizzato come sistema di fatturazione. In secondo momento, un report di monitoraggio può visualizzare al massimo 1.000 record. Ciò significa che, a seconda della quantità di attività utente svolta e del periodo di tempo di riferimento, la query potrebbe non restituire tutti i dati effettivamente memorizzati nel database. 

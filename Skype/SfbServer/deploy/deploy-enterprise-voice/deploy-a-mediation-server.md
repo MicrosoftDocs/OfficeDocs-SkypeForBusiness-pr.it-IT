@@ -2,7 +2,7 @@
 title: Distribuire un Mediation Server in Generatore di topologie in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/7/2018
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 59d8f5ba-5064-4ea5-b4bf-2b9736e0fedd
 description: 'Riepilogo: informazioni su come definire e distribuire un Mediation Server in Generatore di topologie in Skype for Business Server.'
-ms.openlocfilehash: 9eb3f00d8530739b3a4e9986da14038ff7d6ed26
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7dd3704b47b384d3fab62a7cc051adcf5b380c0e
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60764894"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857033"
 ---
 # <a name="deploy-a-mediation-server-in-topology-builder-in-skype-for-business-server"></a>Distribuire un Mediation Server in Generatore di topologie in Skype for Business Server
  
@@ -93,7 +93,7 @@ La connessione tra Skype for Business Server (un Mediation Server collocato in u
     
 8. Nella pagina **Selezionare un server perimetrale** eseguire una delle operazioni seguenti:
     
-   - Se si desidera fornire la connettività PSTN agli utenti esterni abilitati per VoIP aziendale, in Selezionare il pool di server perimetrali utilizzato da **questo Mediation Server** fare clic sul nome di dominio completo del pool di server perimetrali che utilizzerà il pool Mediation Server per fornire la connettività PSTN a tali utenti esterni e quindi fare clic su **Avanti.**
+   - Se si desidera fornire la connettività PSTN agli utenti esterni abilitati per VoIP aziendale, in Seleziona pool di server perimetrali utilizzato da **questo Mediation Server** fare clic sul nome di dominio completo del pool di server perimetrali che utilizzerà il pool Mediation Server per fornire la connettività PSTN a tali utenti esterni e quindi fare clic su **Avanti.**
     
    - Se non si prevede di abilitare gli utenti esterni per VoIP aziendale o se non si desidera fornire la connettività PSTN agli utenti quando si trova all'esterno della rete interna, fare clic su **Avanti.**
     
@@ -109,7 +109,7 @@ Seguire i passaggi descritti in questo argomento per utilizzare Generatore di to
     
 2. Nell'albero della console di Generatore di topologie espandere il nodo **Pool Mediation** Server e fare clic con il pulsante destro del mouse sul Mediation Server creato in precedenza.
     
-3. Per impostazione predefinita, le porte di attesa SIP nel Mediation Server sono 5070 per il traffico TLS da Skype for Business Server e 5067 per il traffico TLS da peer (ad esempio gateway, PCX o SBC). La porta TCP è disabilitata per impostazione predefinita. È necessario abilitare la porta TCP in presenza di gateway che non supportano TLS.
+3. Per impostazione predefinita, le porte di attesa SIP nel Mediation Server sono 5070 per il traffico TLS da Skype for Business Server e 5067 per il traffico TLS da peer (ad esempio gateway, PCx o SBC). La porta TCP è disabilitata per impostazione predefinita. È necessario abilitare la porta TCP in presenza di gateway che non supportano TLS.
     
 4. Specificare l'intervallo di porte di attesa TLS o TCP desiderato che il Mediation Server accetterà le connessioni in ingresso dai gateway PSTN.
     

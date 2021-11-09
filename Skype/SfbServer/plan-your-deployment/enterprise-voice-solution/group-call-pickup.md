@@ -2,7 +2,7 @@
 title: Pianificare la risposta alle chiamate di gruppo in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 3dc0eca8-c773-463c-96bb-9cd6afa2a840
 description: Pianificazione della risposta alle chiamate di gruppo in Skype for Business Server VoIP aziendale, che consente agli utenti di rispondere alle chiamate originariamente destinate ad altri utenti.
-ms.openlocfilehash: 27d0ae55891981c715127cf6d61aab7135448cc3
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 94868d78790d9cfaafaf35915c9c3cd1c7a9793f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765254"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850699"
 ---
 # <a name="plan-for-group-call-pickup-in-skype-for-business"></a>Pianificare la risposta alle chiamate di gruppo in Skype for Business
  
@@ -57,7 +57,7 @@ La risposta alle chiamate di gruppo non può essere utilizzata per rispondere ai
 - Chiamate da un contatto a cui è stata assegnata la relazione di privacy amici e familiari
     
     > [!TIP]
-    > Un utente membro di un gruppo di prelievo delle chiamate può impedire il recupero di determinate chiamate tramite la risposta alle chiamate di gruppo contrassegnando il contatto come contatto personale nel client Skype for Business chiamata. Per contrassegnare un contatto come contatto personale, impostare la relazione di privacy per il contatto su Amici e familiari. Qualsiasi chiamata in arrivo dai contatti con la relazione di privacy impostata su Amici e famiglia non può essere recuperata utilizzando La risposta alle chiamate di gruppo. 
+    > Un utente membro di un gruppo di prelievo delle chiamate può impedire il recupero di determinate chiamate tramite la risposta alle chiamate di gruppo contrassegnando il contatto come contatto personale nel client Skype for Business gruppo. Per contrassegnare un contatto come contatto personale, impostare la relazione di privacy per il contatto su Amici e familiari. Qualsiasi chiamata in arrivo dai contatti con la relazione di privacy impostata su Amici e famiglia non può essere recuperata utilizzando La risposta alle chiamate di gruppo. 
   
 - Parte video delle chiamate audio/video 
     
@@ -130,6 +130,6 @@ Nella tabella seguente viene descritto il modello utente Di prelievo chiamata di
 > Per i pool Front End con meno di otto Front End Server, calcolare le metriche in modo lineare. Ad esempio, se il pool Front End dispone di un Front End Server, calcolare il carico massimo come 1/8 dei valori riportati nella tabella. 
   
 > [!NOTE]
-> È possibile aumentare o ridurre il numero consigliato di utenti per gruppo e il numero di gruppi purché non si superi il numero massimo di utenti per pool. Ad esempio, il server edizione Standard può avere 120 gruppi con 25 utenti per gruppo perché il numero di utenti abilitati per la risposta alle chiamate di gruppo è ancora all'interno del modello di utente massimo (ovvero, 120 gruppi per 25 utenti è 3.000 utenti abilitati per la risposta alle chiamate di gruppo). 
+> È possibile aumentare o ridurre il numero consigliato di utenti per gruppo e il numero di gruppi purché non si superi il numero massimo di utenti per pool. Ad esempio, il server edizione Standard può avere 120 gruppi con 25 utenti per gruppo perché il numero di utenti abilitati per la risposta alle chiamate di gruppo è ancora compreso nel modello di utente massimo (ovvero, 120 gruppi per 25 utenti è 3.000 utenti abilitati per la risposta alle chiamate di gruppo). 
   
 

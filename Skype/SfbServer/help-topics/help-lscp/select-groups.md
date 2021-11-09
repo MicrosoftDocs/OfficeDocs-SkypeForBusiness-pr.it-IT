@@ -2,7 +2,7 @@
 title: Selezionare gruppi
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: d780f676-c2c5-4f57-90dd-df5fcd204d76
 description: Le code di Response Group contengono le chiamate ai Response Group fino a quando un agente non risponde alla chiamata. Alle code sono assegnati gruppi di agenti. Quando si crea o si modifica una coda, si utilizza la finestra di dialogo Seleziona gruppi per selezionare uno o più gruppi di agenti da assegnare alla coda.
-ms.openlocfilehash: d3c81cca2c396b158521866c27d06300fc2f4001
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 192963d7d8f2d72c330793a4cf63627d8f0b8dc6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60742262"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60842999"
 ---
 # <a name="select-groups"></a>Selezionare gruppi
 

@@ -2,7 +2,7 @@
 title: Distribuire il dashboard qualità delle chiamate per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 287f64f5-0f8a-455a-8979-7b34bf0217bb
 description: 'Riepilogo: informazioni sul processo di distribuzione per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: 88f484091b68379d390b921235f78ff9a7a1dd08
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 87caf5566c509580c211f68b685a868de2d2df58
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60751705"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60829920"
 ---
 # <a name="deploy-call-quality-dashboard-for-skype-for-business-server"></a>Distribuire il dashboard qualità delle chiamate per Skype for Business Server
  
@@ -36,9 +36,9 @@ Call Quality Dashboard (CQD) è costituito da tre componenti principali:
     
 ![Componenti CQD.](../../media/ef3359b1-c98b-4cc5-a549-c84c6e03c011.png)
   
-Il processo di installazione dell'archivio QoE prevede la creazione del database di archiviazione QoE, la distribuzione di una stored procedure di SQL Server che sposterà i dati dal database delle metriche QoE di origine nel database di archiviazione QoE e la configurazione del processo agente di SQL Server per l'esecuzione della stored procedure a intervalli regolari. 
+Il processo di installazione dell'archivio QoE prevede la creazione del database di archiviazione QoE, la distribuzione di una stored procedure di SQL Server che sposterà i dati dal database delle metriche QoE di origine nel database di archiviazione QoE e la configurazione del processo agente di SQL Server per eseguire la stored procedure a intervalli regolari. 
   
-La distribuzione del cubo ottiene informazioni dall'utente in cui si trova l'archivio QoE, distribuisce il cubo e configura un processo agente di SQL Server normale che aggiorna il cubo a intervalli regolari.
+La distribuzione del cubo ottiene informazioni dall'utente in cui si trova l'archivio QoE, distribuisce il cubo e configura un processo agente SQL Server normale che aggiorna il cubo a intervalli regolari.
   
 L'installazione del portale crea un database repository in cui viene archiviato il mapping degli utenti CQD ai report/query di ogni utente. Viene quindi impostata un'applicazione Web IIS, ovvero il dashboard in cui gli utenti possono visualizzare un set predefinito di report, nonché personalizzare e creare query personalizzate per visualizzare i dati del cubo. L'installazione del portale crea due applicazioni Web aggiuntive che espongono le API per gli utenti per accedere al repository e al cubo a livello di programmazione. Queste API vengono usate anche internamente dal dashboard.
   
@@ -111,7 +111,7 @@ La distribuzione del dashboard qualità delle chiamate implica la configurazione
      > [!NOTE]
      >  La selezione dell'opzione Usa più partizioni non può essere modificata al termine dell'installazione. Per modificarla, la funzionalità Cubo deve essere prima disinstallata e quindi reinstallata utilizzando l'opzione "Cambia" nel Pannello di controllo.
   
-   - **Cube User - User Name &amp; Password: nome** e password dell'account del servizio di dominio (mascherati) che attiveranno l'elaborazione del cubo. Se per l'installazione è stato selezionato il componente archivio QoE, questo campo verrà precompilato con il valore specificato nella pagina Configurazione archivio per l'utente processo agente di SQL, ma è consigliabile specificare un account di servizio di dominio diverso in modo che il programma di installazione possa concederne il privilegio meno necessario.
+   - **Cube User - User Name &amp; Password: nome** e password dell'account del servizio di dominio (mascherati) che attiveranno l'elaborazione del cubo. Se per l'installazione è stato selezionato il componente di archiviazione QoE, questo campo verrà precompilato con il valore specificato nella pagina Configurazione archivio per l'utente processo agente di SQL, ma è consigliabile specificare un account di servizio di dominio diverso in modo che il programma di installazione possa concederne il privilegio meno necessario.
     
 9. Quando si fa clic su Avanti, verrà eseguito un altro round di convalida e verrà segnalato qualsiasi problema. Al termine della convalida, il programma di installazione verrà visualizzato nella pagina Configurazione portale. 
     
@@ -119,7 +119,7 @@ La distribuzione del dashboard qualità delle chiamate implica la configurazione
     
     - **QoE Archive SQL Server: SQL Server** nome dell'istanza per cui si trova il database di archiviazione QoE. Si noti che, a differenza della pagina Configurazione archivio QoE e della pagina Configurazione cubo, il nome del computer non è fisso e deve essere specificato. Se per l'installazione è stato selezionato il componente di archiviazione QoE, questo campo verrà precompilato con il valore specificato nella pagina Configurazione archivio QoE.
     
-    - **Cube Analysis Server: SQL Server** di istanza di Analysis Services per la posizione del cubo. Se è stato selezionato il componente Cubo per l'installazione, questo campo verrà precompilato con il valore specificato nella pagina Configurazione cubo.
+    - **Cube Analysis Server: SQL Server'istanza** di Analysis Services per la posizione del cubo. Se è stato selezionato il componente Cubo per l'installazione, questo campo verrà precompilato con il valore specificato nella pagina Configurazione cubo.
     
     - **Repository SQL Server: SQL Server** nome dell'istanza in cui deve essere creato il database repository. Se il nome dell'istanza di SQL Server per cui si trova il database di archiviazione QoE è stato fornito in precedenza nell'installazione (in altri componenti), questo campo verrà precompilato con il nome dell'istanza del database di archiviazione QoE SQL Server. Può trattarsi di qualsiasi SQL Server istanza.
     
@@ -129,7 +129,7 @@ La distribuzione del dashboard qualità delle chiamate implica la configurazione
     
 11. Quando si fa clic su Avanti, verrà eseguita la convalida finale per assicurarsi che le istanze di SQL Server siano accessibili utilizzando le credenziali fornite e che IIS sia disponibile nel computer. Al termine della convalida, il programma di installazione procederà con la configurazione. 
     
-Al termine del programma di installazione, molto probabilmente il processo SQL Server Agent sarà in corso, eseguendo il caricamento iniziale dei dati QoE e l'elaborazione del cubo. A seconda della quantità di dati in QoE, il portale non avrà ancora i dati disponibili per la visualizzazione. Per verificare lo stato del caricamento dei dati e dell'elaborazione del cubo, passare a  `http://<machinename>/CQD/#/Health` . 
+Al termine del programma di installazione, è molto probabile che il processo SQL Server Agent sia in corso, eseguendo il caricamento iniziale dei dati QoE e l'elaborazione del cubo. A seconda della quantità di dati in QoE, il portale non avrà ancora i dati disponibili per la visualizzazione. Per verificare lo stato del caricamento dei dati e dell'elaborazione del cubo, passare a  `http://<machinename>/CQD/#/Health` . 
 > [!NOTE]
 > Si noti che l'URL per il controllo dello stato dell'elaborazione del cubo di download fa distinzione tra maiuscole e minuscole. Se si immette "integrità", l'URL non funzionerà. Devi immettere "Health" alla fine dell'URL con la maiuscola H. 
   
@@ -159,7 +159,7 @@ Successivamente, gli amministratori devono aggiungere nuove regole consenti e co
   
 ![Distribuire il dashboard qualità delle chiamate.](../../media/8cfdc141-ec89-4552-921b-53196f497cbf.png)
   
-I dettagli di configurazione vengono archiviati web.config nella directory fisica del portale.
+I dettagli di configurazione sono archiviati web.config nella directory fisica del portale.
   
 ```xml
 <?xml version="1.0" encoding="UTF-8"?> <configuration> <system.webServer> <security> <authorization> <remove users="*" roles="" verbs="" /> <add accessType="Allow" roles="CQDPortalUsers" /> </authorization> </security> </system.webServer> </configuration> 
@@ -219,7 +219,7 @@ In rari casi, il programma di installazione non riesce a creare le impostazioni 
     
      ![Distribuire il dashboard qualità delle chiamate.](../../media/5d9e38fb-8a50-41a2-a423-3ce983a83d0c.png)
   
-3. Per "Windows autenticazione", fai clic su Impostazioni avanzata sul lato destro.
+3. Per "Windows autenticazione", fare clic su Impostazioni avanzata sul lato destro.
     
      ![Distribuire il dashboard qualità delle chiamate.](../../media/cad29486-df40-4cc9-82f3-bbdaca52d9ca.png)
   
@@ -235,7 +235,7 @@ Per abilitare SSL/TLS in IIS e forzare gli utenti a connettersi tramite HTTPS si
   
 1. Configurare Secure Sockets Layer in IIS, vedere [Configuring Secure Sockets Layer in IIS 7](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771438(v=ws.10)). Al termine, sostituire  `http` con `https` .
     
-2. Per istruzioni sull'abilitazione di TLS nelle connessioni SQL Server, vedere Come abilitare la crittografia SSL per un'istanza di [SQL Server tramite Microsoft Management Console.](https://support.microsoft.com/kb/316898/)
+2. Per istruzioni sull'abilitazione di TLS nelle connessioni SQL Server, vedere [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console.](https://support.microsoft.com/kb/316898/)
     
 ## <a name="cube-sync-fails"></a>Sincronizzazione cubo non riuscita
 
@@ -388,7 +388,7 @@ L'importazione di edifici offre la possibilità di ottenere informazioni dettagl
 > [!NOTE]
 > Questo passaggio è facoltativo, ma consigliato.
   
-Importare subnet e mapparle agli edifici importati nell'ultimo passaggio. Se si è deciso di non popolare NetworkName, assicurarsi che ogni voce in questa tabella utilizzi un NetworkNameID di 0. Per ulteriori informazioni sulla SQL e sui parametri per il dashboard qualità delle chiamate, vedere [Use Call Quality Dashboard for Skype for Business Server](./use.md).
+Importare subnet e mapparle agli edifici importati nell'ultimo passaggio. Se si è deciso di non popolare NetworkName, assicurarsi che ogni voce in questa tabella utilizzi un NetworkNameID di 0. Per ulteriori informazioni sulla sintassi SQL e sui parametri per il dashboard qualità delle chiamate, vedere [Use Call Quality Dashboard for Skype for Business Server](./use.md).
   
  **Sintassi SQL esempio**
   

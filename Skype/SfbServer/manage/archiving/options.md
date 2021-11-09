@@ -2,7 +2,7 @@
 title: Gestire le opzioni di archiviazione in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 50399f26-58a3-4ce2-8229-32a8cafc7733
 description: 'Riepilogo: informazioni su come configurare le opzioni di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: 4ab0f64db30638b29367f113acc342077b84b113
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: d382cd829a9db8472df286580f6bd5d4b3baf036
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747310"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856773"
 ---
 # <a name="manage-archiving-options-in-skype-for-business-server"></a>Gestire le opzioni di archiviazione in Skype for Business Server
 
@@ -53,7 +53,7 @@ L'archiviazione viene inizialmente configurata durante la distribuzione, ma è p
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
     
 3. Sulla barra di spostamento sinistra fare clic su **Configurazione archiviazione.**
     

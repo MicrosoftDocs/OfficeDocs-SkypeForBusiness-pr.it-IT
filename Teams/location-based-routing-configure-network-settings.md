@@ -1,6 +1,6 @@
 ---
 title: Configurare le impostazioni di rete - Routing basato sulla posizione
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.topic: article
@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f3c487828ea3b19bcd3c99604aac473c53d9e46e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: bbe82aa178668ab43f279d830984b4a3d5263e5d
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749052"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60829630"
 ---
 # <a name="configure-network-settings-for-location-based-routing"></a>Configurare le impostazioni di rete per l'instradamento basato sulla posizione
 
@@ -32,7 +32,7 @@ Questo articolo descrive come configurare le impostazioni di rete per Location-B
 
 ## <a name="define-network-regions"></a>Definire le aree di rete
 
-Un'area di rete contiene una raccolta di siti di rete e collega varie parti di una rete in più aree geografiche. Per la procedura di configurazione delle aree di rete, vedere Gestire la topologia di rete per le [funzionalità cloud in Teams.](manage-your-network-topology.md)
+Un'area di rete contiene una raccolta di siti di rete e collega varie parti di una rete in più aree geografiche. Per la procedura di configurazione delle aree di rete, vedere Gestire la topologia di rete per le [funzionalità cloud in Teams](manage-your-network-topology.md).
 
 ## <a name="define-network-sites"></a>Definire i siti di rete
 
@@ -50,7 +50,7 @@ Per Location-Based routing, le subnet IP nella posizione in cui gli endpoint Tea
 
 Gli indirizzi IP attendibili sono gli indirizzi IP esterni Internet della rete aziendale e vengono usati per determinare se l'endpoint dell'utente si trova all'interno della rete aziendale. Per la procedura di configurazione degli indirizzi IP attendibili, vedere Gestire la topologia di rete per le [funzionalità cloud in Teams](manage-your-network-topology.md).
 
-Se l'indirizzo IP esterno dell'utente corrisponde a un indirizzo IP presente nell'elenco indirizzi IP attendibili, il routing di Location-Based controlla per determinare la subnet interna in cui si trova l'endpoint dell'utente. Se l'indirizzo IP esterno dell'utente non corrisponde a un indirizzo IP definito nell'elenco indirizzi IP attendibili, l'endpoint viene classificato come in una posizione sconosciuta e le chiamate PSTN da o verso un utente abilitato per il routing Location-Based vengono bloccate.
+Se l'indirizzo IP esterno dell'utente corrisponde a un indirizzo IP presente nell'elenco indirizzi IP attendibili, Location-Based Routing controlla per determinare la subnet interna in cui si trova l'endpoint dell'utente. Se l'indirizzo IP esterno dell'utente non corrisponde ad alcun indirizzo IP definito nell'elenco indirizzi IP attendibili, l'endpoint viene classificato come in una posizione sconosciuta e le chiamate PSTN da o verso un utente abilitato per il routing Location-Based vengono bloccate.
 
 ## <a name="next-steps"></a>Passaggi successivi
 

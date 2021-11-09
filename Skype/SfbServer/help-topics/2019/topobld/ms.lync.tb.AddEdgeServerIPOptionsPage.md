@@ -2,7 +2,7 @@
 title: Aggiungere opzioni IP del server perimetrale
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: f458287f-e7a5-45f2-8393-3e1377be81d9
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Skype for Business Server consente di configurare gli indirizzi IPv4 e IPv6 per ogni interfaccia per il server perimetrale e il pool di server perimetrali. Ecco come fare:'
-ms.openlocfilehash: ec350921c0a3778b6474d555f0ca0950a2b1518d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: cd742999521c4700b969ac001153135b403962df
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60772896"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60829320"
 ---
 # <a name="add-edge-server-ip-options"></a>Aggiungere opzioni Edge Server IP
  

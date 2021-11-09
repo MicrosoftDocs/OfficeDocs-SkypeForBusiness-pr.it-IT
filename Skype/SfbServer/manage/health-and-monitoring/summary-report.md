@@ -2,7 +2,7 @@
 title: Rapporto riepilogativo diagnostica chiamate in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,16 +12,16 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 9091de56-13e6-440e-9353-f57c10c906fe
 description: 'Riepilogo: informazioni sul Rapporto riepilogativo diagnostica chiamate utilizzato in Skype for Business Server.'
-ms.openlocfilehash: 88537a3f52679883fb5cf051a28d2c0c42294d16
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ef50ecde07fdd7354bd97c40bddfe4fb5e762d08
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60757298"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60827569"
 ---
 # <a name="call-diagnostic-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo diagnostica chiamate in Skype for Business Server
  
-**Riepilogo:** Informazioni sul Rapporto riepilogativo diagnostica chiamata utilizzato in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto riepilogativo diagnostica chiamate utilizzato in Skype for Business Server.
   
 Il Rapporto riepilogativo di diagnostica chiamate offre un quadro generale delle sessioni di conferenza e peer-to-peer non riuscite. Il rapporto illustra la percentuale generale degli errori per entrambi i tipi di sessioni e ulteriori dettagli sui problemi in base al tipo di modalità della sessione:
   
@@ -37,7 +37,7 @@ Il Rapporto riepilogativo di diagnostica chiamate offre un quadro generale delle
     
 ## <a name="accessing-the-call-diagnostic-summary-report"></a>Accesso al Rapporto riepilogativo di diagnostica chiamate
 
-Il Rapporto riepilogativo di diagnostica chiamate è accessibile dalla home page Rapporti di monitoraggio. Dal Rapporto riepilogativo diagnostica chiamate è possibile accedere al Rapporto di diagnostica attività [peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md) facendo clic sulla metrica Frequenza errori nella sezione Riepilogo sessione peer-to-peer del report. È inoltre possibile accedere al [Rapporto di diagnostica conferenze in Skype for Business Server](conference-diagnostic-report.md) facendo clic su una delle metriche conferenza seguenti:
+Il Rapporto riepilogativo di diagnostica chiamate è accessibile dalla home page Rapporti di monitoraggio. Dal Rapporto riepilogativo diagnostica chiamate è possibile accedere al Rapporto di diagnostica attività [peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md) facendo clic sulla metrica Frequenza errori nella sezione Riepilogo sessioni peer-to-peer del report. È inoltre possibile accedere al [Rapporto di diagnostica conferenze in Skype for Business Server](conference-diagnostic-report.md) facendo clic su una delle metriche conferenza seguenti:
   
 - Frequenza generale errori sessione
     

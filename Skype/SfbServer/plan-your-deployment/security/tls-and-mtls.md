@@ -2,7 +2,7 @@
 title: TLS e MTLS per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: b32a5b85-fc82-42dc-a9b2-96400f8cd2b8
 description: I protocolli TRANSPORT Layer Security (TLS) e Mutual Transport Layer Security (MTLS) forniscono comunicazioni crittografate e l'autenticazione degli endpoint su Internet. Skype for Business Server questi due protocolli per creare la rete di server attendibili e per garantire che tutte le comunicazioni su tale rete siano crittografate. Tutte le comunicazioni SIP tra server avvengono tramite MTLS. Le comunicazioni SIP da client a server avvengono tramite TLS.
-ms.openlocfilehash: 05dbde5907831867e6dfba7cf6f26b83e3e1c60b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7156df69c8c01e97a1feabfb92cd0c2330083899
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60744052"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864623"
 ---
 # <a name="tls-and-mtls-for-skype-for-business-server"></a>TLS e MTLS per Skype for Business Server
  
@@ -28,6 +28,6 @@ TLS consente agli utenti, tramite il software client, di autenticare Skype for B
   
 Le connessioni da server a server si basano su MTLS per l'autenticazione reciproca. In una connessione MTLS, il server che ha originato un messaggio e il server che lo riceve scambiano certificati da un'autorità di certificazione reciprocamente attendibile. I certificati dimostrano l'identità di ogni server all'altro. Nelle distribuzioni Skype for Business Server, i certificati emessi dall'autorità di certificazione dell'organizzazione che sono durante il periodo di validità e non revocati dalla CA emittente vengono automaticamente considerati validi da tutti i client e i server interni perché tutti i membri di un dominio di Active Directory considera attendibile la CA di Enterprise in tale dominio. Negli scenari federati, la CA emittente deve essere attendibile da entrambi i partner federati. Ogni partner può utilizzare un'autorità di certificazione diversa, se lo si desidera, purché tale CA sia attendibile anche dall'altro partner. Questa relazione di trust viene eseguita più facilmente dai server perimetrali che hanno il certificato CA radice del partner nelle rispettive CA radice attendibili o tramite un'autorità di certificazione di terze parti attendibile da entrambe le parti.
   
-TLS e MTLS aiutano a prevenire sia le intercettazioni che gli attacchi man-in-the-middle. In un attacco man-in-the-middle, l'utente malintenzionato reinstrada le comunicazioni tra due entità di rete attraverso il computer dell'autore dell'attacco senza la conoscenza di entrambe le parti. Le specifiche TLS e Skype for Business Server dei server attendibili (solo quelle specificate in Generatore di topologie) attenuano il rischio di un attacco man-in-the-middle parzialmente a livello di applicazione utilizzando la crittografia end-to-end coordinata utilizzando la crittografia a chiave pubblica tra i due endpoint e un utente malintenzionato dovrebbe disporre di un certificato valido e attendibile con la chiave privata corrispondente e rilasciato al nome del serv ice a cui il client sta comunicando per decrittografare la comunicazione. In definitiva, tuttavia, è necessario seguire le procedure di sicurezza consigliate con l'infrastruttura di rete (in questo caso DNS aziendale). Skype for Business Server presuppone che il server DNS sia considerato attendibile nello stesso modo in cui i controller di dominio e i cataloghi globali sono attendibili, ma DNS fornisce un livello di protezione dagli attacchi dirottamento DNS impedendo al server di un utente malintenzionato di rispondere correttamente a una richiesta di nome contraffatto.
+TLS e MTLS aiutano a prevenire sia le intercettazioni che gli attacchi man-in-the-middle. In un attacco man-in-the-middle, l'utente malintenzionato reinstrada le comunicazioni tra due entità di rete attraverso il computer dell'autore dell'attacco senza la conoscenza di entrambe le parti. Le specifiche TLS e Skype for Business Server dei server attendibili (solo quelle specificate in Generatore di topologie) attenuano il rischio di un attacco man-in-the-middle parzialmente a livello di applicazione utilizzando la crittografia end-to-end coordinata utilizzando la crittografia a chiave pubblica tra i due endpoint e un utente malintenzionato dovrebbe disporre di un certificato valido e attendibile con la chiave privata corrispondente e rilasciato al nome del serv ice a cui il client sta comunicando per decrittografare la comunicazione. In definitiva, tuttavia, è necessario seguire le procedure di sicurezza consigliate con l'infrastruttura di rete (in questo caso DNS aziendale). Skype for Business Server presuppone che il server DNS sia considerato attendibile nello stesso modo in cui sono attendibili i controller di dominio e i cataloghi globali, ma DNS fornisce un livello di protezione dagli attacchi dirottamento DNS impedendo al server di un utente malintenzionato di rispondere correttamente a una richiesta al nome contraffatto.
   
 

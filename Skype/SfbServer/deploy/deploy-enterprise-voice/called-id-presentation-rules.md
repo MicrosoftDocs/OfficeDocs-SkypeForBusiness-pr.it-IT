@@ -2,7 +2,7 @@
 title: Creare o modificare una regola di conversione per la presentazione ID denominata in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,24 +16,24 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ba112df8-3bb4-48e4-a353-4bf9110ccd71
 description: 'Riepilogo: informazioni su come definire una regola di conversione utilizzando lo strumento Crea regola di conversione in Skype for Business Server.'
-ms.openlocfilehash: 780fc46c93d1f183263192edb33999d758b95c8c
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 82e737ddcd7ed7c17de3cdd968d31996e50074be
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60738942"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864433"
 ---
 # <a name="create-or-modify-a-translation-rule-for-called-id-presentation-in-skype-for-business-server"></a>Creare o modificare una regola di conversione per la presentazione ID denominata in Skype for Business Server
 
 **Riepilogo:** Scopri come definire una regola di conversione usando lo strumento Crea una regola di conversione in Skype for Business Server.
 
-Seguire questa procedura se si desidera definire una regola di  conversione immettendo un set di valori nello strumento Crea regola di conversione e abilitando il Pannello di controllo di Skype for Business Server per generare automaticamente il modello di corrispondenza e la regola di conversione corrispondenti. In alternativa, è possibile scrivere manualmente un'espressione regolare per definire il formato e la regola di conversione corrispondenti. Per informazioni dettagliate, vedere [Create or Modify a Translation Rule Manually](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-translation-rule-manually).
+Seguire questa procedura se si desidera definire una regola di  conversione immettendo un set di valori nello strumento Crea una regola di conversione e abilitando il Pannello di controllo di Skype for Business Server per generare automaticamente il modello di corrispondenza e la regola di conversione corrispondenti. In alternativa, è possibile scrivere manualmente un'espressione regolare per definire il formato e la regola di conversione corrispondenti. Per informazioni dettagliate, vedere [Create or Modify a Translation Rule Manually](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-translation-rule-manually).
 
 ### <a name="to-define-a-rule-by-using-the-build-a-translation-rule-tool"></a>Per definire una regola tramite lo strumento Crea regola di conversione
 
 1. Aprire Skype for Business Server Pannello di controllo.
 
-2. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in Configure [a trunk with media bypass in Skype for Business Server](configure-trunk-with-media-bypass.md) through step 10 o Configure a trunk without media bypass in [Skype for Business Server](configure-trunk-without-media-bypass.md) through step 9.
+2. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in Configure a trunk with media bypass in Skype for Business Server through step 10 o Configure a trunk without media bypass in Skype for Business Server through step 9.To begin defining a translation rule, follow the steps in [Configure a trunk with media bypass in Skype for Business Server](configure-trunk-with-media-bypass.md) through step 10 or Configure a trunk without media bypass in [Skype for Business Server](configure-trunk-without-media-bypass.md) through step 9.
 
 3. In **Nome** nella pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome descrittivo del formato del numero da convertire.
 
@@ -70,13 +70,13 @@ Seguire questa procedura se si desidera definire una regola di  conversione imme
 8. Nella pagina **Configurazione trunk** fare clic su **Commit** e quindi su **Salva tutto**.
 
    > [!NOTE]
-   > Ogni volta che si crea o modifica una regola di conversione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
+   > Ogni volta che si crea o modifica una regola di conversione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, [vedere Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
 
 ### <a name="to-define-a-translation-rule-manually"></a>Per definire manualmente una regola di conversione
 
-1. Aprire Skype for Business Server pannello di controllo
+1. Aprire Skype for Business Server Pannello di controllo
 
-2. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in Configure [a trunk with media bypass in Skype for Business Server](configure-trunk-with-media-bypass.md) through step 10 o Configure a trunk without media bypass in [Skype for Business Server](configure-trunk-without-media-bypass.md) through step 9.
+2. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in Configure a trunk with media bypass in Skype for Business Server through step 10 o Configure a trunk without media bypass in Skype for Business Server through step 9.To begin defining a translation rule, follow the steps in [Configure a trunk with media bypass in Skype for Business Server](configure-trunk-with-media-bypass.md) through step 10 or Configure a trunk without media bypass in [Skype for Business Server](configure-trunk-without-media-bypass.md) through step 9.
 
 3. Nel campo **Nome** della pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome che descriva il formato del numero da convertire.
 
@@ -99,7 +99,7 @@ Seguire questa procedura se si desidera definire una regola di  conversione imme
 9. Nella pagina **Configurazione trunk** fare clic su **Commit** e quindi su **Salva tutto**.
 
     > [!NOTE]
-    > Ogni volta che si crea o modifica una regola di conversione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
+    > Ogni volta che si crea o modifica una regola di conversione, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, [vedere Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
 
 ## <a name="see-also"></a>Vedere anche
 

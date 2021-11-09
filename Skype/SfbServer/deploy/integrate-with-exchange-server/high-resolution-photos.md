@@ -2,7 +2,7 @@
 title: Configurare l'uso di foto ad alta risoluzione in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 12/20/2018
 audience: ITPro
@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 995da78a-dc44-45a3-908d-16fe36cfa0d9
 description: "Riepilogo: configurare l'utilizzo di foto ad alta risoluzione in Exchange Server 2019, Exchange Server 2016, Exchange Server 2013 o Exchange Online e Skype for Business Server."
-ms.openlocfilehash: 342d00be9f2c4d52483ff7da931bfc8f47c9e2e2
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 8a28e151d99440b1ec682eab2a473f3cffac7ac4
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60761464"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856993"
 ---
 # <a name="configure-the-use-of-high-resolution-photos-in-skype-for-business-server"></a>Configurare l'uso di foto ad alta risoluzione in Skype for Business Server
  
@@ -31,7 +31,7 @@ In Skype for Business Server, le foto possono essere archiviate nella cassetta p
     
 - 96 pixel per 96 pixel, da usare in Microsoft Outlook 2013 Web App, Microsoft Outlook 2013, Skype for Business Web App e Skype for Business.
     
-- 648 pixel per 648 pixel per l'uso in Skype for Business e Skype for Business Web App Skype for Business Web App.
+- 648 pixel per 648 pixel da usare in Skype for Business e Skype for Business Web App Skype for Business Web App.
     
 > [!NOTE]
 > Se si dispone delle risorse, è consigliabile caricare foto 648 x 648; che fornisce la risoluzione massima e la qualità ottimale dell'immagine in una delle applicazioni Office 2013. Ogni foto JPEG con una dimensione di 648 x 648 e una profondità di 24 bit determina una dimensione del file di circa 240 kilobyte. Ciò significa che sarà necessario circa 1 megabyte di spazio su disco per ogni 4 foto di utenti. 

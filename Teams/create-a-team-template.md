@@ -1,6 +1,6 @@
 ---
 title: Creare un modello di team personalizzato in Microsoft Teams
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 ms.reviewer: aaglick
 manager: serdars
@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b7f3574121bb056208748be522af0b9a5f744846
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: a7bb0805705797587f9475fe7a6ee759165e884b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749695"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864483"
 ---
 # <a name="create-a-custom-team-template-in-microsoft-teams"></a>Creare un modello di team personalizzato in Microsoft Teams
 
@@ -38,7 +38,7 @@ Per iniziare:
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro espandere **Teams**  >  **Team**.
+2. Nel riquadro di spostamento sinistro **espandere** Teams  >  **Team**.
 
 3. Selezionare **Aggiungi**.
 
@@ -106,7 +106,7 @@ Stiamo lavorando a una correzione per i futuri team creati da modelli personaliz
 
 ![messaggio di errore del browser.](media/browser-error-message.png)
 
-**Soluzione:** in caso di problemi con la visualizzazione del contenuto della scheda del sito Web, si verrà reindirizzati all'apertura della scheda in una pagina Web separata o all'apertura di Teams nell'app desktop per visualizzare l'app della scheda del sito Web.
+**Soluzione:** in caso di problemi di visualizzazione del contenuto della scheda del sito Web, si verrà reindirizzati all'apertura della scheda in una pagina Web separata oppure all'apertura di Teams nell'app desktop per visualizzare l'app della scheda del sito Web.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

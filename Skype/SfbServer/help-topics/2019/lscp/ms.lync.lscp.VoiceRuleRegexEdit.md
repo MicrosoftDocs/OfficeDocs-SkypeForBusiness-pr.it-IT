@@ -2,7 +2,7 @@
 title: Regola di conversione Digitare un'espressione regolare
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 5ee83724-b399-4f8d-8f6d-4b53a26296b4
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Nel campo Trova corrispondenza con specificare il modello di formato da utilizzare per trovare corrispondenze con i numeri da convertire. Nel campo Regola di conversione specificare un modello di formato dei numeri convertiti. '
-ms.openlocfilehash: 2f6a0eb82e745c63ee6e0b3cfd7303b9359846b4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 9aff74da1529d1e146f830780f152ec71d370be9
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60738430"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60843289"
 ---
 # <a name="translation-rule-type-a-regular-expression"></a>Regola di traduzione: digitare un'espressione regolare
  

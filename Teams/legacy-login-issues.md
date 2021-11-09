@@ -1,7 +1,7 @@
 ---
 title: Problemi di ricezione di messaggi e chiamate in sistemi legacy in Teams
 ms.reviewer: ''
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.date: 05/29/2020
@@ -17,12 +17,12 @@ description: Risolvere i problemi relativi alla ricezione di messaggi e chiamate
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fb36f4be70b174a324f017b1e52529f457e83f36
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 69a3f070b247507e0d22535179353860434e94ad
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60768304"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857143"
 ---
 # <a name="issues-receiving-messages-and-calls-on-legacy-systems"></a>Problemi di ricezione di messaggi e chiamate in sistemi legacy
 
@@ -39,7 +39,7 @@ Gli utenti potrebbero avere problemi a ricevere messaggi o chiamate se usano ver
 > [!NOTE]
 > La precompilazione del nome utente per i nomi che terminano in ".local" o ".corp" è disattivata per impostazione predefinita, non è necessario impostare una chiave del Registro di sistema allo scopo.
 
-Per altre informazioni, vedere Accedere [Microsoft Teams con l'autenticazione](sign-in-teams.md) moderna.
+Per altre informazioni, vedere Accedere [Microsoft Teams usare l'autenticazione](sign-in-teams.md) moderna.
 
 ## <a name="skype-token-revocation"></a>Skype revoca del token
 

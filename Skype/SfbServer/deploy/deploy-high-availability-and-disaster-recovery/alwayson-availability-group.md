@@ -2,7 +2,7 @@
 title: Distribuire un gruppo di disponibilità Always On in un server back-end in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -13,16 +13,16 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: c93c01e6-626c-40ad-92dd-373b0fe9189f
 description: Distribuire (installare) un gruppo di disponibilità Always On nella Skype for Business Server distribuzione.
-ms.openlocfilehash: 69a7627850da06a2a120c0c37fbf83f87c17c277
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: c30a17ee0852cab3e8e61ee7751a6e8f5f5a6bd1
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60755645"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60829470"
 ---
 # <a name="deploy-an-always-on-availability-group-on-a-back-end-server-in-skype-for-business-server"></a>Distribuire un gruppo di disponibilità Always On in un server back-end in Skype for Business Server
  
-Distribuire (installare) un gruppo di disponibilità Always On nella distribuzione Skype for Business Server locale.
+Distribuire (installare) un gruppo di disponibilità Always On nella Skype for Business Server distribuzione.
   
 La modalità di distribuzione di un gruppo di disponibilità dipende dalla distribuzione in un nuovo pool, in un pool esistente che utilizza il mirroring o in un pool esistente che attualmente non dispone di disponibilità elevata per il database back-end.
   
@@ -76,7 +76,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
 4. È consigliabile configurare le impostazioni del quorum del cluster per l'utilizzo di un controllo della condivisione file. A tale scopo, eseguire la procedura seguente:
     
-   - Fare clic con il pulsante destro del mouse sul nome del cluster, scegliere **Altre azioni** e quindi Fare clic su Configura quorum **cluster Impostazioni**.
+   - Fare clic con il pulsante destro del mouse sul nome del cluster, scegliere **Altre azioni** e quindi Fare clic su Configura **quorum Impostazioni**.
     
    - Nella pagina **Selezione opzione di configurazione quorum** fare clic su Seleziona il controllo del **quorum.**
     
@@ -88,15 +88,15 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
 5. In ogni server del cluster, abilitare la funzionalità di gruppo di disponibilità in Gestione configurazione SQL Server.
     
-   - Aprire Gestione configurazione SQL Server. Nell'albero sul lato sinistro dello schermo fare clic su **SQL Server Servizi,** quindi fare doppio clic sul servizio SQL Server servizio. 
+   - Aprire Gestione configurazione SQL Server. Nell'albero sul lato sinistro dello schermo fare clic su **SQL Server Servizi,** quindi fare doppio clic sul SQL Server servizio. 
     
    - Nella casella **Proprietà** selezionare la **scheda Disponibilità elevata AlwaysOn.** Selezionare la **casella di controllo Abilita gruppi di disponibilità AlwaysOn.** Riavviare SQL Server servizio quando richiesto.
    
-6. Utilizzare Generatore di topologie per creare il pool Front End, come illustrato in Creare e pubblicare una nuova [topologia in Skype for Business Server](../../deploy/install/create-and-publish-new-topology.md). In questo caso, specificare il gruppo di disponibilità come SQL per il pool.
+6. Utilizzare Generatore di topologie per creare il pool Front End, come illustrato in Creare e pubblicare una nuova topologia [in Skype for Business Server](../../deploy/install/create-and-publish-new-topology.md). In questo caso, specificare il gruppo di disponibilità come SQL per il pool.
     
 7. Creare il gruppo di disponibilità.
     
-   - Aprire SQL Server Management Studio e connettersi all'SQL Server istanza.
+   - Apri SQL Server Management Studio e connettiti all'SQL Server istanza.
     
    - In Esplora oggetti espandere la **cartella Disponibilità elevata Always On.** Fare clic con il pulsante destro **del mouse** sulla cartella Gruppi di disponibilità e scegliere Creazione guidata nuovo gruppo **di disponibilità.**
     
@@ -118,9 +118,9 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
    - Fare **clic su** Aggiungi e quindi nella casella Indirizzo **IPv4** specificare l'indirizzo IP virtuale preferito e quindi fare clic su **OK.**
     
-   - Nella pagina **Selezione sincronizzazione** dati iniziale selezionare Completo e specificare una cartella accessibile per le repliche e per cui l'account di servizio SQL Server utilizzato da entrambe le repliche dispone delle autorizzazioni di scrittura. Fare clic su **Avanti**.
+   - Nella pagina Selezione **sincronizzazione** dati iniziale selezionare Completo e specificare una cartella accessibile per le repliche e per cui l'account di servizio SQL Server utilizzato da entrambe le repliche dispone delle autorizzazioni di scrittura. Fare clic su **Avanti**.
     
-     Questa condivisione file verrà utilizzata temporaneamente quando si inizializzano i database. Se si gestiscono database di grandi dimensioni, è consigliabile inizializzarli manualmente nel caso in cui la larghezza di banda di rete non sia in grado di contenere le dimensioni dei backup del database.
+     Questa condivisione file verrà utilizzata temporaneamente quando si inizializzano i database. Se si gestiscono database di grandi dimensioni, è consigliabile inizializzarli manualmente nel caso in cui la larghezza di banda di rete non possa contenere le dimensioni dei backup del database.
     
    - Nella pagina Convalida verificare che tutti i controlli di convalida siano stati eseguiti correttamente, quindi fare clic su **Avanti.**
     
@@ -130,7 +130,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
    - Aprire Generatore di topologie, selezionare **Scarica topologia dalla distribuzione esistente** e fare clic su **OK.**
     
-   - Espandere Skype for Business Server, espandere la topologia ed espandere SQL Server **Archivi**. Fare clic con il SQL del nuovo gruppo di disponibilità AlwaysOn e scegliere **Modifica proprietà**.
+   - Espandere Skype for Business Server, espandere la topologia ed espandere SQL Server **archivi**. Fare clic con il pulsante destro del SQL del nuovo gruppo di disponibilità AlwaysOn e scegliere **Modifica proprietà**.
     
      - Nella parte inferiore della pagina, nella casella **SQL Server FQDN,** modificare il valore in FQDN del listener del gruppo di disponibilità.
     
@@ -138,7 +138,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
    - Apri SQL Server Management Studio e passa al gruppo di disponibilità. Eseguire il failover a una replica secondaria.
     
-   - Aprire Skype for Business Server Management Shell e digitare il cmdlet seguente per creare SQL account di accesso per questa replica:
+   - Aprire Skype for Business Server Management Shell e digitare il cmdlet seguente per creare SQL account di accesso per la replica:
     
    ```powershell
    Install-CsDatabase -Update
@@ -174,7 +174,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
 4. Utilizzare SQL Server Management Studio per interrompere il mirror.
     
-   - Aprire SQL Server Management Studio, accedere ai database, fare clic con il pulsante destro del mouse su **Attività** e scegliere **Mirror**. Quindi fare **clic su Rimuovi mirroring** e fare clic su **OK.**
+   - Aprire SQL Server Management Studio database, fare clic con il pulsante destro del mouse su **Attività** e scegliere **Mirror.** Quindi fare **clic su Rimuovi mirroring** e fare clic su **OK.**
     
    - Ripetere questa operazione per tutti i database del pool che verranno convertiti in un gruppo di disponibilità.
     
@@ -198,7 +198,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
    - Selezionare i server da aggiungere al cluster e quindi fare clic **su Esegui tutti i test**.
     
-   - Nella casella **Riepilogo** selezionare gli eventuali errori rilevati dalla procedura guidata. Fare quindi **clic su Fine** per completare la convalida.
+   - Nella casella **Riepilogo** controllare gli eventuali errori rilevati dalla procedura guidata. Fare quindi **clic su Fine** per completare la convalida.
     
      La procedura guidata probabilmente segnala diversi avvisi, soprattutto se non si utilizza l'archiviazione condivisa. Non è necessario utilizzare l'archiviazione condivisa. Tuttavia, se vengono visualizzati messaggi **di** errore, è necessario risolvere tali problemi prima di continuare.
     
@@ -216,7 +216,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
 8. È consigliabile configurare le impostazioni del quorum del cluster per l'utilizzo di un controllo della condivisione file. A tale scopo, eseguire la procedura seguente:
     
-   - Fare clic con il pulsante destro del mouse sul nome del cluster, scegliere **Altre azioni** e fare clic su Configura quorum **cluster Impostazioni**.
+   - Fare clic con il pulsante destro del mouse sul nome del cluster, scegliere **Altre azioni** e quindi Fare clic su Configura quorum **cluster Impostazioni**.
     
    - Nella pagina **Selezione opzione di configurazione quorum** fare clic su Seleziona il controllo del **quorum.**
     
@@ -234,7 +234,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
 10. Creare il gruppo di disponibilità.
     
-    - Apri SQL Server Management Studio e connettiti all'SQL Server istanza.
+    - Aprire SQL Server Management Studio e connettersi all'SQL Server istanza.
     
     - In Esplora oggetti espandere la **cartella Disponibilità elevata Always On.** Fare clic con il pulsante destro **del mouse** sulla cartella Gruppi di disponibilità e scegliere Creazione guidata nuovo gruppo **di disponibilità.**
     
@@ -266,7 +266,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
 11. Creare un nuovo archivio specificando il listener del gruppo di disponibilità e specificando l'entità del mirror precedente come nodo primario del gruppo di disponibilità.
     
-    - Apre lo strumento di generazione topologia Nella topologia espandere Componenti condivisi **,** fare clic con il pulsante destro del mouse su **SQL Server archivi** e scegliere Nuovo **SQL Server Store**.
+    - Apre lo strumento di generazione topologia Nella topologia espandere Componenti **condivisi,** fare clic con il pulsante destro del mouse su **SQL Server archivi** e scegliere Nuovo **SQL Server Archivio**.
     
     - Nella pagina **Definisci nuovo SQL Store** selezionare innanzitutto la casella di controllo Disponibilità elevata **Impostazioni** e quindi verificare che nella casella di riepilogo SQL Gruppi di disponibilità AlwaysOn sia visualizzato.
     
@@ -330,7 +330,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
    - Selezionare i server da aggiungere al cluster e quindi fare clic **su Esegui tutti i test**.
     
-   - Nella casella **Riepilogo** selezionare gli eventuali errori rilevati dalla procedura guidata. Fare quindi **clic su Fine** per completare la convalida.
+   - Nella casella **Riepilogo** controllare gli eventuali errori rilevati dalla procedura guidata. Fare quindi **clic su Fine** per completare la convalida.
     
      La procedura guidata probabilmente segnala diversi avvisi, soprattutto se non si utilizza l'archiviazione condivisa. Non è necessario utilizzare l'archiviazione condivisa. Tuttavia, se vengono visualizzati messaggi **di** errore, è necessario risolvere tali problemi prima di continuare.
     
@@ -348,7 +348,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
 4. È consigliabile configurare le impostazioni del quorum del cluster per l'utilizzo di un controllo della condivisione file. A tale scopo, eseguire la procedura seguente:
     
-   - Fare clic con il pulsante destro del mouse sul nome del cluster, scegliere **Altre azioni** e fare clic su Configura quorum **cluster Impostazioni**.
+   - Fare clic con il pulsante destro del mouse sul nome del cluster, scegliere **Altre** azioni e fare clic **su Configura quorum cluster Impostazioni**.
     
    - Nella pagina **Selezione opzione di configurazione quorum** fare clic su Seleziona il controllo del **quorum.**
     
@@ -360,7 +360,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
 5. In ogni server del cluster, abilitare Il gruppo di disponibilità in Gestione configurazione SQL Server.
     
-   - Aprire Gestione configurazione SQL Server. Nell'albero sul lato sinistro dello schermo fare clic su **SQL Server Servizi,** quindi fare doppio clic sul servizio SQL Server servizio. 
+   - Aprire Gestione configurazione SQL Server. Nell'albero sul lato sinistro dello schermo fare clic su **SQL Server Servizi,** quindi fare doppio clic sul SQL Server servizio. 
     
    - Nella casella **Proprietà** selezionare la **scheda Disponibilità elevata AlwaysOn.** Selezionare la **casella di controllo Abilita gruppi di disponibilità AlwaysOn.** Riavviare SQL Server servizio quando richiesto.
     
@@ -388,9 +388,9 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
    - Fare **clic su** Aggiungi e quindi nella casella Indirizzo **IPv4** specificare l'indirizzo IP virtuale preferito e quindi fare clic su **OK.**
     
-   - Nella pagina **Selezione sincronizzazione** dati iniziale selezionare Completo e specificare una cartella accessibile per le repliche e per cui l'account di servizio SQL Server utilizzato da entrambe le repliche dispone delle autorizzazioni di scrittura. Fare clic su **Avanti**.
+   - Nella pagina Selezione **sincronizzazione** dati iniziale selezionare Completo e specificare una cartella accessibile per le repliche e per cui l'account di servizio SQL Server utilizzato da entrambe le repliche dispone delle autorizzazioni di scrittura. Fare clic su **Avanti**.
     
-     Questa condivisione file verrà utilizzata temporaneamente quando si inizializzano i database. Se si gestiscono database di grandi dimensioni, è consigliabile inizializzarli manualmente nel caso in cui la larghezza di banda di rete non sia in grado di contenere le dimensioni dei backup del database.
+     Questa condivisione file verrà utilizzata temporaneamente quando si inizializzano i database. Se si gestiscono database di grandi dimensioni, è consigliabile inizializzarli manualmente nel caso in cui la larghezza di banda di rete non possa contenere le dimensioni dei backup del database.
     
      - Nella pagina Convalida verificare che tutti i controlli di convalida siano stati eseguiti correttamente, quindi fare clic su **Avanti.**
     
@@ -400,7 +400,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
    - Apre lo strumento di generazione topologia Nella topologia espandere Componenti **condivisi,** fare clic con il pulsante destro del mouse su **SQL Server archivi** e scegliere Nuovo **SQL Server Archivio**.
     
-   - Nella pagina **Definisci nuovo SQL Store** selezionare innanzitutto la casella di controllo Disponibilità elevata **Impostazioni** e quindi verificare che nella casella di riepilogo SQL Gruppi di disponibilità AlwaysOn sia visualizzato.
+   - Nella pagina Definisci **nuovo SQL Store** selezionare innanzitutto la casella di controllo Disponibilità elevata **Impostazioni** e quindi verificare che nella casella di riepilogo SQL Gruppi di disponibilità AlwaysOn sia visualizzato.
     
    - Nella casella **SQL Server FQDN listener** disponibilità digitare il nome di dominio completo del listener creato al momento della creazione del gruppo di disponibilità.
     
@@ -428,7 +428,7 @@ La modalità di distribuzione di un gruppo di disponibilità dipende dalla distr
     
     - Apri SQL Server Management Studio e passa al gruppo di disponibilità. Eseguire il failover a una replica secondaria.
     
-    - Aprire Skype for Business Server Management Shell e digitare il cmdlet seguente per creare SQL account di accesso per questa replica:
+    - Aprire Skype for Business Server Management Shell e digitare il cmdlet seguente per creare SQL account di accesso per la replica:
     
       ```powershell
       Install-CsDatabase -Update

@@ -20,18 +20,18 @@ ms.custom: ms.teamsadmincenter.dashboard.trainingvideos.enduserteamstraining
 ROBOTS: NOINDEX
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 45856ed0e452c6ed1c04e0d724551a17316112a95b1f3cefcda5b481b8868e6b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f9b4175769ea9d6cc57167c086b28ee5ef4e742d
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54339394"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850529"
 ---
 # <a name="teams-in-30"></a>Teams in 30
 <div id="main" class="v2">
     <div class="container">
-        <p>Microsoft è entusiasta di invitarti <strong>a Teams in 30</strong>, una serie di laboratori interattivi in tempo reale progettati per aiutare le organizzazioni di medie dimensioni (500-5000 dipendenti) a essere operativo con Microsoft Teams in appena 30 giorni. Unisciti a noi per ottenere indicazioni e procedure consigliate testate nel tempo e ottenere risposte alle Teams domande. I partecipanti al workshop riceveranno anche un invito esclusivo per l'orario di ufficio a microfono aperto con Teams esperto.
-           <p><font color="#6264A7">Sei pronto per iniziare?</font> Incoraggiamo tutti i membri del team di progetto a iniziare con Informazioni di base <i>con Teams in 30</i> sessione. Fare clic sul titolo di una sessione di seguito per iscriversi.
+        <p>Microsoft è felice di invitarti <strong>a Teams in 30</strong>, una serie di laboratori interattivi in tempo reale progettati per aiutare le organizzazioni di medie dimensioni (500-5000 dipendenti) a essere operativo con Microsoft Teams in appena 30 giorni. Unisciti a noi per ottenere indicazioni e procedure consigliate testate nel tempo e ottenere risposte alle Teams domande. I partecipanti al workshop riceveranno anche un invito esclusivo per l'orario di ufficio a microfono aperto con Teams esperto.
+           <p><font color="#6264A7">Sei pronto per iniziare?</font> Incoraggiamo tutti i membri del team di progetto a iniziare con Informazioni di base <i>con Teams in 30</i> sessioni. Fare clic sul titolo di una sessione di seguito per iscriversi.
  <ul id="home-all" class="panelContent cardsF cols cols2">        
     <li>
         <a href="https://aka.ms/GetstartedT30"target="_blank">
@@ -54,7 +54,7 @@ ms.locfileid: "54339394"
         </a>
     </li>
    <li>
-        <a href="https://aka.ms/ReadyendusersT30"target="_blank"">
+        <a href="https://aka.ms/ReadyendusersT30"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -73,7 +73,7 @@ ms.locfileid: "54339394"
         </a>
     </li>
         <li> 
-        <a href="https://aka.ms/Preparepart1T30"target="_blank"">
+        <a href="https://aka.ms/Preparepart1T30"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -91,7 +91,7 @@ ms.locfileid: "54339394"
         </div>
         </a>
     </li> <li>
-        <a href="https://aka.ms/Preparepart2T30"target="_blank"">
+        <a href="https://aka.ms/Preparepart2T30"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -110,7 +110,7 @@ ms.locfileid: "54339394"
         </a>
     </li> 
  <li>
-        <a href="https://aka.ms/OptimizeexpandT30"target="_blank"">
+        <a href="https://aka.ms/OptimizeexpandT30"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -130,7 +130,7 @@ ms.locfileid: "54339394"
         </a>
     </li>
    <li>
-        <a href="https://aka.ms/TeamsChalkTalks"target="_blank"">
+        <a href="https://aka.ms/TeamsChalkTalks"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -141,7 +141,7 @@ ms.locfileid: "54339394"
                     </div>
                     <div class="cardText">
                     <h3>Teams Colloqui con Gessetto</h3>
-                    <p>Facilitati da esperti in materia, questi laboratori interattivi online offrono un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche relative ad alcuni degli scenari più popolari e accattivanti in Teams. I colloqui con Gessetto presuppongono che sia stata completata un'implementazione Teams base.</p>
+                    <p>Facilitati da esperti in materia, questi laboratori interattivi online offrono un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche relative ad alcuni degli scenari più popolari e accattivanti in Teams. Chalk Talks presuppone che sia stata completata un'implementazione Teams base.</p>
                     <p><strong>Prerequisito:</strong>Teams in 30 partecipanti al workshop O già abilitati per Teams all'interno dell'organizzazione.</p>
                     <p><i>Gruppo di destinatari: amministratori IT</i></p>
                     </div>

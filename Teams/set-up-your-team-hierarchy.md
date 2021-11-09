@@ -1,6 +1,6 @@
 ---
 title: Configurare la gerarchia di destinazione del team
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.topic: conceptual
@@ -15,12 +15,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f3cad8a28c2ced4953a21071a0e1af5fe3e5b313
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f65ffa8fa6dc661451669ded8f407bb519468112
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60761724"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850549"
 ---
 # <a name="set-up-your-team-targeting-hierarchy"></a>Configurare la gerarchia di destinazione del team
 
@@ -100,7 +100,7 @@ Dopo aver aggiunto le tre colonne obbligatorie, è possibile aggiungere colonne 
 |Modi per aggiungere attributi|Descrizione |Esempio  |
 |---|---------|---------|
 |Se i valori di un attributo si escludono a vicenda, il nome della colonna specificato diventa il nome dell'attributo.|Ogni riga può contenere un valore per l'attributo e ogni colonna dell'attributo può contenere fino a 50 valori univoci. Ogni valore può contenere fino a 100 caratteri. Il set di valori di attributo specificato nella colonna dell'attributo verrà visualizzato come valori di filtro per tale attributo quando si selezionano i team dei destinatari usando la gerarchia di destinazione del team.|Si vuole consentire agli utenti di filtrare gli archivi in base al layout. I valori di questo attributo si escludono a vicenda perché un archivio può avere un solo layout. <br><br>Per aggiungere un attributo per filtrare gli archivi in base al layout, aggiungere una colonna denominata Layout negozio. In questo esempio, i valori per l'attributo di layout Store sono Compact, Standard e Large.
-|Se è necessario indicare più valori per un attributo e i valori non si escludono a vicenda, usare il formato **AttributeName:UniqueValue** per i nomi di colonna. <br><br>**IMPORTANTE** Assicurarsi di usare i due punti solo per l'inglese (:) poiché unicode non è supportato come delimitatore di colonna attributo. |Stringa di testo prima dei due punti (:) diventa il nome dell'attributo. Tutte le colonne che contengono la stessa stringa di testo prima dei due punti (:) sono raggruppati in una sezione del menu di filtro. Ognuna delle stringhe dopo i due punti diventa il valore della sezione.<br><br>Ogni riga può avere un valore pari a 0 (zero) o 1 per l'attributo. Il valore 0 indica che l'attributo non è applicabile al nodo e il valore 1 indica che l'attributo si applica a tale nodo.|Si vuole consentire agli utenti di filtrare gli archivi in base al reparto. Un negozio può avere più reparti e quindi i valori per questo attributo non si escludono a vicenda.<br><br>In questo esempio vengono aggiunti Reparti:Abbigliamento, Reparti:Elettronica, Reparti:Alimenti, Reparti:Casa e Giardino, Reparti:Articoli sportivi come colonne di attributo. I reparti diventano il nome dell'attributo e gli utenti possono filtrare in base ai reparti Abbigliamento, Elettronica, Alimenti, Casa e Giardino e Articoli sportivi.|
+|Se è necessario indicare più valori per un attributo e i valori non si escludono a vicenda, usare il formato **AttributeName:UniqueValue** per i nomi di colonna. <br><br>**IMPORTANTE** Assicurarsi di usare i due punti (due punti) solo in :) poiché unicode non è supportato come delimitatore di colonna attributo. |Stringa di testo prima dei due punti (:) diventa il nome dell'attributo. Tutte le colonne che contengono la stessa stringa di testo prima dei due punti (:) sono raggruppati in una sezione del menu di filtro. Ognuna delle stringhe dopo i due punti diventa il valore della sezione.<br><br>Ogni riga può avere un valore pari a 0 (zero) o 1 per l'attributo. Il valore 0 indica che l'attributo non è applicabile al nodo e il valore 1 indica che l'attributo si applica a tale nodo.|Si vuole consentire agli utenti di filtrare gli archivi in base al reparto. Un negozio può avere più reparti e quindi i valori per questo attributo non si escludono a vicenda.<br><br>In questo esempio vengono aggiunti Reparti:Abbigliamento, Reparti:Elettronica, Reparti:Alimenti, Reparti:Casa e Giardino, Reparti:Articoli sportivi come colonne di attributo. I reparti diventano il nome dell'attributo e gli utenti possono filtrare in base ai reparti Abbigliamento, Elettronica, Alimenti, Casa e Giardino e Articoli sportivi.|
 
 Quando si aggiunge una colonna attributo, tenere presente quanto segue:
 
@@ -151,7 +151,7 @@ Los Angeles Store,West Regional Zone,204a1287-2efb-4a8a-88e0-56fbaf5a2389,Large,
 ## <a name="apply-your-hierarchy"></a>Applicare la gerarchia
 
 > [!NOTE] 
-> Per eseguire questo passaggio, è necessario installare e usare il modulo Teams anteprima pubblica di PowerShell dalla raccolta di PowerShell. Per la procedura di installazione del modulo, vedere Installare Teams PowerShell.
+> Per eseguire questo passaggio, è necessario installare e usare il Teams di anteprima pubblica di PowerShell dalla raccolta di PowerShell. Per la procedura di installazione del modulo, vedere Installare Teams PowerShell.
 
 > [!NOTE]
 > Government Community Cloud (GCC) i clienti devono usare l'anteprima del [cmdlet versione 2.4.0 o](https://www.powershellgallery.com/packages/MicrosoftTeams/2.4.0-preview) successiva per assicurarsi che i dati siano instradati all'ambiente GCC, invece che all'ambiente cloud pubblico.
@@ -202,11 +202,11 @@ Quando si conferma l'eliminazione, il messaggio di stato continuerà a visualizz
 ### <a name="install-the-teams-powershell-module"></a>Installare il modulo Teams PowerShell
 
 > [!IMPORTANT]
-> Per eseguire questo passaggio, è necessario installare e usare il modulo Teams anteprima pubblica di PowerShell dalla [raccolta di PowerShell.](https://www.powershellgallery.com/packages/MicrosoftTeams/) Per la procedura di installazione del modulo, vedere Installare [Teams PowerShell.](teams-powershell-install.md)
+> Per eseguire questo passaggio, è necessario installare e usare il modulo Teams di anteprima pubblica di PowerShell dalla [raccolta di PowerShell.](https://www.powershellgallery.com/packages/MicrosoftTeams/) Per la procedura di installazione del modulo, vedere Installare [Teams PowerShell.](teams-powershell-install.md)
 
 ### <a name="sample-script"></a>Script di esempio
 
-Lo script seguente può essere usato per creare i team e caricare un file di .csv nel tenant Microsoft Teams team. Se si ha una gerarchia esistente, questo script la sostituirà.
+Lo script seguente può essere usato per creare i team e caricare un file .csv nel tenant Microsoft Teams. Se si ha una gerarchia esistente, questo script la sostituirà.
 
 #### <a name="create-teams-for-a-simple-hierarchy"></a>Creare team per una gerarchia semplice
 
@@ -272,11 +272,11 @@ Description: TeamID in row # doesn't match a valid Group ID. Please view our doc
 
 Verificare di usare l'ID team corretto per il team nel file CSV dello schema. L'ID Team deve essere uguale all'ID gruppo del gruppo Microsoft 365 che lo contiene. È possibile cercare l'ID gruppo del team nell'Microsoft Teams di amministrazione.
 
-1. Nel riquadro di spostamento sinistro [dell'Microsoft Teams di amministrazione](https://admin.teams.microsoft.com/)passare a Teams Gestisci   >  **team.**
+1. Nel riquadro di spostamento sinistro [dell'Microsoft Teams di amministrazione](https://admin.teams.microsoft.com/)passare a Teams Gestisci   >  **team**.
 2. Se la **colonna ID** gruppo non è visualizzata nella tabella, selezionare Modifica colonne nell'angolo **in** alto a destra della tabella e quindi attivare **ID gruppo.**
 3. Trovare il team nell'elenco e quindi individuare l'ID gruppo.
 
-Verificare che l'ID team nel file CSV dello schema corrisponda all'ID gruppo visualizzato nell'interfaccia di amministrazione Microsoft Teams lavoro.
+Verificare che l'ID team nel file CSV dello schema corrisponda all'ID gruppo visualizzato nell'interfaccia di amministrazione Microsoft Teams di amministrazione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

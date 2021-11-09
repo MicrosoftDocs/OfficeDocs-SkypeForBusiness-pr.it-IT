@@ -2,7 +2,7 @@
 title: Espansione delle impostazioni dell'Archivio di gestione centrale
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 4b882923-ed6f-44f3-ad9c-aabad5a3bc00
 description: È possibile spostare il server di gestione centrale da un pool Front End definito in un altro pool Front End definito. Per cambiare la posizione del server di gestione centrale, selezionare il pool Front End nell'elenco a discesa in Front End Server in cui installare server di gestione centrale. Un Front End Server può essere un pool Front End Enterprise o Standard.
-ms.openlocfilehash: 3e36f0e70123c9e3065951d917d2428431774553
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 9f8866420bd4309a908c77150378529605cd0016
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60743762"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60830200"
 ---
 # <a name="cms-settings-expander"></a>Espansione delle impostazioni CMS
  

@@ -2,7 +2,7 @@
 title: Contatori delle prestazioni per dispositivi mobili in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: d18ed85a-673d-4695-aa3f-ac83a38ab90a
 description: 'Riepilogo: informazioni sui contatori delle prestazioni che è possibile utilizzare per monitorare i server che eseguono UCWA (Unified Communications Web API) e il Skype for Business Server Mcx Mobility Service.'
-ms.openlocfilehash: 983caf353b5fb18a438a9ad2128ec24feec97742
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: e89ffdb590a7028bd1fa9a9594b6ba0bcce9be11
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754735"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60827579"
 ---
 # <a name="mobility-performance-counters-in-skype-for-business-server"></a>Contatori delle prestazioni per dispositivi mobili in Skype for Business Server
  
@@ -54,15 +54,15 @@ Il nome della categoria per i contatori nella tabella Mcx Mobility Service è **
 |Tempo medio di avvio applicazione (ms)  <br/> |Tempo medio di avvio dell'applicazione in millisecondi  <br/> |
 |Durata media per sessione (ms)  <br/> |Durata media di una sessione in millisecondi  <br/> |
 |Errori di join MCU dati  <br/> |Numero di errori di join MCU dati  <br/> |
-|Exchange Latenza ricerca contatti (ms)  <br/> |Questo contatore indica il tempo medio, in millisecondi, per cercare il contatto in Exchange  <br/> |
-|Exchange Latenza get foto HD (ms)  <br/> |Questo contatore indica il tempo medio( in millisecondi) per recuperare una foto da Exchange  <br/> |
+|Exchange Latenza ricerca contatti (ms)  <br/> |Questo contatore indica il tempo medio, in millisecondi, per la ricerca del contatto in Exchange  <br/> |
+|Exchange Latenza get foto HD (ms)  <br/> |Questo contatore indica il tempo medio in millisecondi per recuperare una foto da Exchange  <br/> |
 |Risposte HTTP 4xx/secondo  <br/> |Frequenza al secondo di risposte con codice HTTP 4xx  <br/> |
 |Risposte HTTP 5xx/secondo  <br/> |Frequenza al secondo di risposte con codice HTTP 5xx  <br/> |
 |Errori di aggiunta MCU di messaggistica istantanea  <br/> |Numero di errori di aggiunta MCU di messaggistica istantanea  <br/> |
 |Numero di errori di get di foto di Active Directory  <br/> |Numero totale di errori durante il recupero delle foto da Active Directory  <br/> |
 |Numero di errori di ricerca contatti  <br/> |Numero totale di errori di ricerca dei contatti in Exchange  <br/> |
 |Numero di errori di deserializzazione  <br/> |Numero totale di errori di deserializzazione  <br/> |
-|Numero di errori di hd photo get  <br/> |Numero totale di errori nel recupero delle foto HD da Exchange  <br/> |
+|Numero di errori di hd photo get  <br/> |Numero totale di errori durante il recupero delle foto HD da Exchange  <br/> |
 |Oltre il numero massimo di sottoscrizioni per applicazione  <br/> |Numero di richieste di sottoscrizione oltre il numero massimo consentito per ogni applicazione  <br/> |
 |Oltre il numero massimo di sottoscrizioni per batch  <br/> |Numero di richieste di sottoscrizione oltre il numero massimo consentito per batch  <br/> |
 |Errori sottoscrizione presenza  <br/> |Numero di errori durante la sottoscrizione della presenza  <br/> |
@@ -85,7 +85,7 @@ Il nome della categoria per i contatori nella tabella Mcx Mobility Service è **
 |**Contatore**|**Descrizione**|
 |:-----|:-----|
 |Durata media di una sessione in millisecondi  <br/> |Durata media di una sessione in millisecondi  <br/> |
-|Sottoscrizioni alle notifiche Push correnti  <br/> |Numero corrente di sottoscrizioni di notifica push. Questo numero, insieme a Currently Active Session Count, rappresenta il sottoinsieme di sessioni attualmente attive registrate per Windows Mobile o iPhone dispositivi mobili.  <br/> |
+|Sottoscrizioni alle notifiche Push correnti  <br/> |Numero corrente di sottoscrizioni di notifica push. Questo numero, in combinazione con Conteggio sessioni attualmente attive, rappresenta il sottoinsieme di sessioni attualmente attive registrate per Windows dispositivi mobili o iPhone mobili.  <br/> |
 |Conteggio polling timeout rete attualmente attivo  <br/> |Numero di polling di rete timeout  <br/> |
 |Conteggio polling attualmente attivo  <br/> |Numero di polling attualmente attivi (connessioni di lunga durata al server)  <br/> |
 |Conteggio sessioni attualmente attive  <br/> |Numero corrente di endpoint registrati nel servizio per dispositivi mobili  <br/> |

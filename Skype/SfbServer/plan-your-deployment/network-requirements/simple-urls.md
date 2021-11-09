@@ -2,7 +2,7 @@
 title: Requisiti DNS per gli URL semplici in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 3a3c9b22-892f-45a7-b05c-539d358a1a86
 description: "Riepilogo: leggere le considerazioni relative all'URL semplice in questo argomento prima di implementare i record DNS per Skype for Business Server."
-ms.openlocfilehash: d638ff2d3d1b89deaad90c054698692e70ffaae7
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 1dd3b4b06b704e7d840dd6f430a9ba9782913a3b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777916"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864673"
 ---
 # <a name="dns-requirements-for-simple-urls-in-skype-for-business-server"></a>Requisiti DNS per gli URL semplici in Skype for Business Server
 
 **Riepilogo:** Leggere le considerazioni relative all'URL semplice in questo argomento prima di implementare i record DNS per Skype for Business Server.
 
-Gli URL semplici semplificano la partecipazione alle riunioni per gli utenti e semplificano l'accesso Skype for Business Server agli amministratori. Gli URL semplici utilizzano il proprio dominio, che non deve corrispondere ad alcun dominio SIP definito. 
+Gli URL semplici semplificano la partecipazione alle riunioni per gli utenti e semplificano l'Skype for Business Server per gli amministratori. Gli URL semplici utilizzano il proprio dominio, che non deve corrispondere ad alcun dominio SIP definito. 
 
 Skype for Business Server supporta i tre URL semplici seguenti: Meet, Dial-In e Admin. È necessario configurare URL semplici per Meet e Accesso esterno e l'URL semplice amministratore è facoltativo. I record DNS (Domain Name System) necessari per supportare gli URL semplici dipendono da come sono stati definiti gli URL e dall'eventuale impostazione del supporto del ripristino di emergenza per gli URL semplici. 
 
@@ -123,7 +123,7 @@ Quando si usa questo metodo, è possibile configurare ciascun indirizzo GeoDNS i
 
 È possibile specificare la stessa configurazione per l'URL semplice per accesso esterno. A tale scopo, creare record aggiuntivi come quelli dell'esempio precedente,  `dialin` `meet` sostituendoli nei record DNS. Per l'URL semplice di amministrazione, usare una delle tre opzioni elencate precedentemente in questa sezione.
 
-Dopo avere completato la configurazione, è necessario usare un'applicazione di monitoraggio per impostare il monitoraggio HTTP per il controllo degli errori. Per l'accesso esterno, monitorare per assicurarsi che HTTPS GET lyncdiscover.<sipdomain> le richieste all'FQDN Web esterno o all'indirizzo IP del servizio di bilanciamento del carico per i due pool hanno esito positivo. Ad esempio, le richieste seguenti non devono includere alcuna intestazione **ACCEPT** e devono restituire **200 OK**.
+Dopo avere completato la configurazione, è necessario usare un'applicazione di monitoraggio per impostare il monitoraggio HTTP per il controllo degli errori. Per l'accesso esterno, monitorare per assicurarsi che HTTPS GET lyncdiscover.\<sipdomain> le richieste all'FQDN Web esterno o all'indirizzo IP del servizio di bilanciamento del carico per i due pool hanno esito positivo. Ad esempio, le richieste seguenti non devono includere alcuna intestazione **ACCEPT** e devono restituire **200 OK**.
 
 ```console
 HTTPS GET Pool1ExternalWebFQDN.contoso.com/autodiscover/autodiscoverservice.svc/root

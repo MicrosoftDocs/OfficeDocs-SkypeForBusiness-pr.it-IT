@@ -2,7 +2,7 @@
 title: Applicare un criterio di archiviazione agli utenti in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: bebd45d1-93c3-4e80-8933-755b699b2209
 description: 'Riepilogo: informazioni su come assegnare un criterio di archiviazione agli utenti in Skype for Business Server.'
-ms.openlocfilehash: 343afcca74947f4a9e40830775c2149adcbc58af
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 9be6f37f6c84e089a387eec4e3ad982ec2ae9e14
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60765564"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856803"
 ---
 # <a name="apply-an-archiving-policy-to-users-in-skype-for-business-server"></a>Applicare un criterio di archiviazione agli utenti in Skype for Business Server
 
@@ -49,7 +49,7 @@ Per applicare un criterio utente tramite il Pannello di controllo:
     
 ## <a name="apply-a-user-policy-by-using-windows-powershell"></a>Applicare criteri utente tramite Windows PowerShell
 
-È inoltre possibile applicare un criterio utente utilizzando il cmdlet **Grant-CsArchivingPolicy Windows PowerShell.CsArchivingPolicy.**
+È inoltre possibile applicare un criterio utente utilizzando il cmdlet **Grant-CsArchivingPolicy Windows PowerShell il cmdlet Grant-CsArchivingPolicy.**
   
 Il comando seguente assegna il criterio di archiviazione per utente RedmondArchivingPolicy all'utente Ken Myer:
   
@@ -57,7 +57,7 @@ Il comando seguente assegna il criterio di archiviazione per utente RedmondArchi
 Grant-CsArchivingPolicy -Identity "Ken Myer" -PolicyName "RedmondArchivingPolicy"
 ```
 
-Questo comando assegna il criterio di archiviazione per utente RedmondArchivingPolicy a tutti gli utenti con account ospitati nel pool di registrazione atl-cs-001.contoso.com. Per informazioni dettagliate sul parametro Filter utilizzato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser.](/powershell/module/skype/get-csuser?view=skype-ps)
+Questo comando assegna il criterio di archiviazione per utente RedmondArchivingPolicy a tutti gli utenti che dispongono di account ospitati nel pool di registrazione atl-cs-001.contoso.com. Per informazioni dettagliate sul parametro Filter utilizzato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser.](/powershell/module/skype/get-csuser?view=skype-ps)
   
 ```PowerShell
 Get-CsUser -Filter {RegistrarPool -eq "atl-cs-001.contoso.com"} | Grant-CsArchivingPolicy -PolicyName "RedmondArchivingPolicy"

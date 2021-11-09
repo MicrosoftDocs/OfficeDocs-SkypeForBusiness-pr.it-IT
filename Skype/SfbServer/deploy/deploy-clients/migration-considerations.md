@@ -1,7 +1,7 @@
 ---
 title: Skype Considerazioni sulla migrazione del sistema sala
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: df9f33b6-0360-4354-b651-bd35da533e33
 description: Leggere questo argomento per informazioni su come distribuire Skype Room System in un ambiente con più versioni di Skype for Business Server e Lync Server.
-ms.openlocfilehash: f3a26b630873bad0d3c8585486c91c7250f452e3
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 1b57115a332a647143fc0a3a7ca2c1ee178ad5fe
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769734"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850509"
 ---
 # <a name="skype-room-system-migration-considerations"></a>Skype Considerazioni sulla migrazione del sistema sala
  
@@ -27,9 +27,9 @@ Leggere questo argomento per informazioni su come distribuire Skype Room System 
 
 In questa sezione vengono fornite indicazioni se si distribuisce Skype Room System in un ambiente multi-pool che include diverse versioni di Skype for Business Server o Lync Server. 
   
-Il componente User Replicator (UR) in Lync Server ottiene gli oggetti utente da Active Directory e li inserisce nel database di SQL Server back-end di Lync Server. Solo l'UR in Lync Server 2013 è a conoscenza Skype di sistema room. L'UR nelle versioni precedenti di Lync Server e Office Communications Server non rilevava gli attributi di Active Directory che designavano gli oggetti LRS e pertanto non ne era a conoscenza. 
+Il componente User Replicator (UR) in Lync Server ottiene gli oggetti utente da Active Directory e li inserisce nel database di SQL Server back-end di Lync Server. Solo l'UR in Lync Server 2013 è a conoscenza Skype oggetti di sistema room. L'UR nelle versioni precedenti di Lync Server e Office Communications Server non rilevava gli attributi di Active Directory che designavano gli oggetti LRS e pertanto non ne era a conoscenza. 
   
-Se un account di sistema sala Skype tenta di accedere a Lync ed esegue l'individuazione automatica in base al record SRV o al record DNS A e se tali account puntano a una versione precedente di Lync Server o Office Communications Server, LRS riceverà una risposta 404 Not Found dal pool legacy. Il pool legacy non sarà in grado di reindirizzare Skype room al pool principale di Lync Server 2013. 
+Se un account di Skype Room System tenta di accedere a Lync ed esegue l'individuazione automatica in base al record SRV o al record DNS A e se tali account puntano a una versione precedente di Lync Server o Office Communications Server, LRS riceverà una risposta 404 Not Found dal pool legacy. Il pool legacy non sarà in grado di reindirizzare Skype Room System al relativo pool principale di Lync Server 2013. 
   
 È possibile risolvere il problema con le opzioni seguenti: 
   
@@ -47,7 +47,7 @@ Quando il client Skype Room System partecipa a una conferenza telefonica pianifi
   
 - Skype Room System non è in grado di visualizzare la raccolta video multi-visualizzazione.
     
-- Se il Skype del sistema room è il relatore, non può applicare il blocco video ai partecipanti.
+- Se il Skype è il relatore, non può applicare il blocco video ai partecipanti.
     
 - Skype Il sistema sala non può visualizzare una risoluzione video di 1080p (in ingresso o in uscita), anche se il criterio di conferenza di Lync Server 2013 lo consente, a causa delle seguenti condizioni: 
     

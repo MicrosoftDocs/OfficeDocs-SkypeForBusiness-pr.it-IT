@@ -2,7 +2,7 @@
 title: Creare criteri percorso in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f1878194-c756-4794-8fa1-15dd2118b4b3
 description: Leggere questo argomento per informazioni su come configurare i criteri percorso del servizio di emergenza avanzato (E9-1-1) in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 889a20e0b48955be1ce0ba8c891d6c4825b79dab
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 5d8ead66a66a0cf92c39acfe9cb1d547422362d0
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60741442"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850449"
 ---
 # <a name="create-location-policies-in-skype-for-business-server"></a>Creare criteri percorso in Skype for Business Server
 
@@ -29,7 +29,7 @@ Leggere questo argomento per informazioni su come configurare i criteri percorso
 
 Skype for Business Server utilizza un criterio percorso per abilitare Skype for Business client per E9-1-1 durante la registrazione del client. I criteri percorso contengono le impostazioni che definiscono la modalità di implementazione di E9-1-1. Per ulteriori informazioni, vedere [Plan location policies for Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/location-policies.md).
 
-I criteri percorso vengono definiti utilizzando il Skype for Business pannello di controllo o il cmdlet [New-CsLocationPolicy.](/powershell/module/skype/new-cslocationpolicy?view=skype-ps)
+È possibile definire i criteri percorso utilizzando Skype for Business pannello di controllo o il cmdlet [New-CsLocationPolicy.](/powershell/module/skype/new-cslocationpolicy?view=skype-ps)
 
 > [!NOTE]
 > Skype for Business Server ora supporta la configurazione di più numeri di emergenza per un client. Se si desidera configurare più numeri di emergenza, è necessario seguire le informazioni in Pianificare più numeri di emergenza [in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/multiple-emergency-numbers.md) e Configurare più numeri di emergenza [in Skype for Business](configure-multiple-emergency-numbers.md). 
@@ -43,7 +43,7 @@ Per ulteriori informazioni, vedere [Plan location policies for Skype for Busines
 
 | **Elemento**                               | **Valore**                                                                                                                                                                          |
 |:------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| EnhancedEmergencyServicesEnabled  <br/>   | **True** <br/>                                                                                                                                                                     |
+| EnhancedEmergencyServicesEnabled  <br/>   | **Vero** <br/>                                                                                                                                                                     |
 | LocationRequired  <br/>                   | **Dichiarazione di non responsabilità** <br/>                                                                                                                                                               |
 | EnhancedEmergencyServiceDisclaimer  <br/> | È necessario impostare un percorso per il criterio aziendale. Se non si imposta un percorso, in caso di emergenza non sarà possibile essere individuati dai servizi di emergenza. Impostare un percorso.  <br/> |
 | UseLocationForE911Only  <br/>             | **Falso** <br/>                                                                                                                                                                    |

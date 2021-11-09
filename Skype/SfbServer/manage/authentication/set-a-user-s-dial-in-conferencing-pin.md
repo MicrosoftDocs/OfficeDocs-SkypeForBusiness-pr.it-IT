@@ -2,7 +2,7 @@
 title: Impostare il PIN di conferenza telefonica con accesso esterno di un utente in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 4252b5a5-4267-4513-b18e-0253a8d66f72
 description: 'Riepilogo: impostare il PIN di conferenza telefonica con accesso esterno di un utente per Skype for Business Server.'
-ms.openlocfilehash: e5735c58f6e46d16f55146521ad876cd8990151f
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 45ee99a0e9ab1b10c429fae470e528ffdd2c3326
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60772102"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856683"
 ---
 # <a name="set-a-users-dial-in-conferencing-pin-in-skype-for-business-server"></a>Impostare il PIN di conferenza telefonica con accesso esterno di un utente in Skype for Business Server
  
@@ -33,7 +33,7 @@ Per partecipare a una conferenza telefonica con accesso esterno come utente aute
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.  
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
@@ -65,7 +65,7 @@ Per partecipare a una conferenza telefonica con accesso esterno come utente aute
     
 7. Nella finestra di dialogo **Imposta PIN** eseguire una delle operazioni seguenti:
     
-   - Per consentire Skype for Business Server il PIN dell'utente, selezionare Genera automaticamente **un PIN valido** (impostazione predefinita).
+   - Per consentire Skype for Business Server di generare il PIN dell'utente, selezionare Genera automaticamente **un PIN valido** (impostazione predefinita).
     
    - Per creare un PIN personalizzato, fare clic su **Immetti manualmente un PIN specifico**, fare clic sulla casella di testo e quindi digitare un PIN che soddisfi i requisiti PIN specificati nelle impostazioni del criterio PIN.
     
@@ -81,11 +81,11 @@ Per partecipare a una conferenza telefonica con accesso esterno come utente aute
     
 ## <a name="assigning-a-user-pin-by-using-windows-powershell-cmdlets"></a>Assegnazione di un PIN utente tramite Windows PowerShell cmdlet
 
-È possibile assegnare i numeri pin anche utilizzando il cmdlet Set-CsClientPin. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere Amministrazione remota di PowerShell per [Microsoft Lync.](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/) 
+È possibile assegnare i numeri PIN anche utilizzando il cmdlet Set-CsClientPin. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere Amministrazione remota di PowerShell per [Microsoft Lync.](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/) 
   
 ### <a name="to-auto-assign-a-pin-number-to-a-user"></a>Per assegnare automaticamente un numero PIN a un utente
 
-Il comando seguente assegna un numero PIN all'utente Ken Myer. Poiché il parametro Pin non è incluso, Skype for Business Server genererà e assegni automaticamente il numero PIN.
+Il comando seguente assegna un numero PIN all'utente Ken Myer. Poiché il parametro Pin non è incluso, Skype for Business Server genererà e assegna automaticamente il numero PIN.
     
   ```PowerShell
   Set-CsClientPin -Identity "Ken Myer" 

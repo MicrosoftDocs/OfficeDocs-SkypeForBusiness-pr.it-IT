@@ -2,7 +2,7 @@
 title: Tabella AppSharingMetricsThreshold
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 782cfab9-01a6-4843-aea1-28f47b0b51f7
 description: La tabella AppSharingMetricsThreshold contiene i valori ottimali e accettabili delle metriche QoE utilizzate con la condivisione delle applicazioni. Questi valori soglia sono utilizzati per determinare se l'esperienza di condivisione deve essere classificata come insufficiente.
-ms.openlocfilehash: d11c19886feebd77ff8b8dda262d969eb76c6434
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 23e97758d5398b8c8797900f043de7c1b6a3ebf6
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759358"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864563"
 ---
 # <a name="appsharingmetricsthreshold-table"></a>Tabella AppSharingMetricsThreshold
  

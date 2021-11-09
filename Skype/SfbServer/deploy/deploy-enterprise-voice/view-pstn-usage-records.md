@@ -2,7 +2,7 @@
 title: Visualizzare i record di utilizzo PSTN in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,16 +16,16 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 65025c78-c263-472c-9ff9-e170588f10b5
 description: 'Riepilogo: informazioni su come visualizzare i record di utilizzo PSTN utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.'
-ms.openlocfilehash: 2b09ed19de6ff205ee7d76e7379c8b4c5fc12d06
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f5da972c6a8403a89764433c898c8717dd0630a8
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60771521"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850389"
 ---
 # <a name="view-pstn-usage-records-in-skype-for-business"></a>Visualizzare i record di utilizzo PSTN in Skype for Business
 
-**Riepilogo:** Informazioni su come visualizzare i record di utilizzo PSTN utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
+**Riepilogo:** Informazioni su come visualizzare i record di utilizzo PSTN utilizzando Skype for Business Server pannello di controllo o Skype for Business Server Management Shell.
 
 Un record di utilizzo PSTN (Public Switched Telephone Network) specifica una classe di chiamata (ad esempio interna, locale o interurbana) che può essere effettuata da vari utenti o gruppi di utenti in un'organizzazione. Per informazioni dettagliate, vedere [PSTN Usage Records](/previous-versions/office/lync-server-2013/lync-server-2013-pstn-usage-records) nella documentazione relativa alla pianificazione.
 
@@ -40,7 +40,7 @@ Un record di utilizzo PSTN (Public Switched Telephone Network) specifica una cla
     > [!NOTE]
     > In una pagina di sola lettura per il record di utilizzo PSTN selezionato vengono visualizzati le route e i criteri vocali associati.
 
-### <a name="to-view-pstn-usage-information-by-using-skype-for-business-server-management-shell-cmdlets"></a>Per visualizzare le informazioni sull'utilizzo PSTN utilizzando Skype for Business Server Management Shell
+### <a name="to-view-pstn-usage-information-by-using-skype-for-business-server-management-shell-cmdlets"></a>Per visualizzare le informazioni sull'utilizzo PSTN tramite i cmdlet Skype for Business Server Management Shell
 
 - Per visualizzare informazioni su tutti gli utilizzi PSTN, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
 

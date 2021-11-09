@@ -2,7 +2,7 @@
 title: Pianificare il bypass multimediale in Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 9ea090b3-f607-46f7-97dd-2510052524e5
 description: Decisioni necessarie per la pianificazione del bypass multimediale in Skype for Business Server VoIP aziendale. Include l'interoperabilità con il servizio Controllo di ammissione di chiamata( CAC).
-ms.openlocfilehash: ef06cd7e97623024ab921bf71a006645d1d97a07
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 37bd24ba10ae506749a305f3fd5dfa55ca067fdc
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759528"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60827479"
 ---
 # <a name="plan-for-media-bypass-in-skype-for-business"></a>Pianificare il bypass multimediale in Skype for Business
 

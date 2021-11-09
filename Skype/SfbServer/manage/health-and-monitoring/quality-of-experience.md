@@ -2,7 +2,7 @@
 title: Qualità dell'esperienza (QoE) in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,22 +12,22 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 097fb65e-4a3e-45ff-a88c-d6022dc8f872
 description: "Riepilogo: gestire la qualità dell'esperienza (QoE) in Skype for Business Server."
-ms.openlocfilehash: 926c7ff30e8712a7cf03bca2bdbfb088be614584
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: b8b50567efcc46cc1938174e150754313b0690e1
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60754705"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60828779"
 ---
 # <a name="quality-of-experience-qoe-in-skype-for-business-server"></a>Qualità dell'esperienza (QoE) in Skype for Business Server
  
 **Riepilogo:** Gestire la qualità dell'esperienza (QoE) in Skype for Business Server.
   
-La qualità percepita dagli utenti (QoE, Quality of Experience) registra dati numerici che indicano la qualità multimediale e le informazioni sui partecipanti, i nomi di dispositivi, i driver, gli indirizzi IP e i tipi di endpoint coinvolti nelle chiamate e nelle sessioni. Quando si installa Skype for Business Server, si installerà anche una raccolta predefinita di impostazioni di configurazione globali per QoE. Utilizzare gli argomenti di questa sezione per configurare le impostazioni QoE. 
+La qualità percepita dagli utenti (QoE, Quality of Experience) registra dati numerici che indicano la qualità multimediale e le informazioni sui partecipanti, i nomi di dispositivi, i driver, gli indirizzi IP e i tipi di endpoint coinvolti nelle chiamate e nelle sessioni. Quando si installa Skype for Business Server, verrà installata anche una raccolta predefinita di impostazioni di configurazione globali per QoE. Utilizzare gli argomenti di questa sezione per configurare le impostazioni QoE. 
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Creare impostazioni di configurazione per la qualità dell'esperienza in Skype for Business Server](create-qoe-configuration-settings.md)
+- [Creare le impostazioni di configurazione di Qualità dell'esperienza in Skype for Business Server](create-qoe-configuration-settings.md)
     
 - [Abilitare la qualità dell'esperienza in Skype for Business Server](enable-qoe.md)
     

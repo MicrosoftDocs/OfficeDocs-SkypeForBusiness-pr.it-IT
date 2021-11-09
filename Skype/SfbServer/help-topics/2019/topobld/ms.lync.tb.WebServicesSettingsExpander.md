@@ -2,7 +2,7 @@
 title: Espansione delle impostazioni dei servizi Web
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: aefc9f51-a171-4a58-be65-7accb470cb2a
 ROBOTS: NOINDEX, NOFOLLOW
 description: Da Generatore di topologie è possibile modificare le impostazioni delle porte utilizzate sia per i servizi Web interni che per i servizi Web esterni. Inoltre, se si distribuisce il bilanciamento del carico DNS (Domain Name System), è possibile utilizzare Generatore di topologie per configurare il nome di dominio completo (FQDN) del pool che si risolve negli indirizzi IP fisici di tutti i server del pool.
-ms.openlocfilehash: d0302c3f892840e32e3efa4342f389e6e24e0206
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4e9a03d4a41c845a66d4f3ee41ba39c30d2e64eb
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60748452"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60835684"
 ---
 # <a name="web-services-settings-expander"></a>Espansione delle impostazioni dei servizi Web
  

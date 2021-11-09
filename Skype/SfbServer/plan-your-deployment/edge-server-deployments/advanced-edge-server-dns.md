@@ -2,7 +2,7 @@
 title: Pianificare la distribuzione di Advanced Edge Server per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 audience: ITPro
 ms.topic: conceptual
 manager: serdars
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f3a5895f-f64f-44eb-9a5e-8d606ac1fc38
 description: Esaminare gli scenari Skype for Business Server opzioni di distribuzione, sia che si desideri un singolo server che un pool di server con DNS o HLB.
-ms.openlocfilehash: 5b58d9aa79566f7aee3ac102f1c5e73996bc6dae
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 5fa829bf805529792abb408cd6716e2948dd69ef
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60767644"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60842769"
 ---
 # <a name="plan-advanced-edge-server-deployment-for-skype-for-business-server"></a>Pianificare la distribuzione di Advanced Edge Server per Skype for Business Server
  
@@ -114,7 +114,7 @@ I record DNS per le zone interne ed esterne verranno elencati qui, ma è possibi
     
 - Tutte le Skype for Business Server perimetrali interne nella rete perimetrale utilizzano questa zona DNS interna per la risoluzione delle query contoso.com.
     
-- Tutti i server che eseguono Skype for Business Server e i client che eseguono Skype for Business Server nella rete aziendale, puntano ai server DNS interni per la risoluzione delle query in contoso.com oppure utilizzano il file Host in ogni server perimetrale ed elencano i record A e AAAA (se si utilizza l'indirizzamento IPv6) per il server hop successivo (in particolare per il server Director o il pool di server Director)  VIP, VIP del pool Front End o edizione Standard server).
+- Tutti i server che eseguono Skype for Business Server e i client che eseguono Skype for Business Server nella rete aziendale, puntano ai server DNS interni per la risoluzione delle query su contoso.com oppure utilizzano il file Host in ogni server perimetrale ed elencano i record A e AAAA (se si utilizza l'indirizzamento IPv6) per il server hop successivo (in particolare per il server Director o il pool di server Director)  VIP, VIP del pool Front End o edizione Standard server).
     
 ### <a name="external-dns"></a>DNS esterno
 
@@ -151,7 +151,7 @@ Per approfondire l'esempio, non funziona:
     
      *Un utente che accede come tim@litwareinc.com non funziona per la configurazione automatica, perché il suo dominio SIP (litwareinc.com) non corrisponde al dominio nel pool (fabrikam.com).* 
     
-Ora che sappiamo tutto questo, se hai bisogno di requisiti automatici per i client Skype for Business senza DNS split brain, hai queste opzioni:
+Ora che sappiamo tutto questo, se è necessario un requisito automatico per i client Skype for Business senza DNS split brain, sono disponibili queste opzioni:
   
 - **Oggetti Criteri di gruppo (GPO)**
     
@@ -168,9 +168,9 @@ Ora che sappiamo tutto questo, se hai bisogno di requisiti automatici per i clie
     
 - **Area interna pin-point**
     
-    Se la creazione di un'intera zona nel DNS interno non è un'opzione, è possibile creare zone pin-point (dedicate) corrispondenti ai record SRV necessari per la configurazione automatica e popolare tali aree utilizzando dnscmd.exe. Dnscmd.exe è necessario perché l'interfaccia utente DNS non supporta la creazione di zone pin-point.
+    Se la creazione di un'intera zona nel DNS interno non è un'opzione, è possibile creare zone pin-point (dedicate) che corrispondono ai record SRV necessari per la configurazione automatica e popolare tali zone utilizzando dnscmd.exe. Dnscmd.exe è necessario perché l'interfaccia utente DNS non supporta la creazione di zone pin-point.
     
-    Ad esempio, se il dominio SIP è contoso.com e si dispone di un pool Front End denominato pool01 che contiene due Front End Server, nel DNS interno saranno necessarie le seguenti zone pin-point e record A:
+    Ad esempio, se il dominio SIP è contoso.com e si dispone di un pool Front End denominato pool01 contenente due Front End Server, nel DNS interno saranno necessarie le seguenti zone di punti di ancoraggio e record A:
     
   ```console
   dnscmd . /zoneadd _sipinternaltls._tcp.contoso.com. /dsprimary
@@ -203,7 +203,7 @@ Ora che sappiamo tutto questo, se hai bisogno di requisiti automatici per i clie
 ## <a name="dns-disaster-recovery"></a>Ripristino di emergenza DNS
 <a name="DNSDR"> </a>
 
-Per configurare DNS per reindirizzare Skype for Business Server web ai siti di ripristino di emergenza e failover, è necessario utilizzare un provider DNS che supporti GeoDNS. È possibile configurare i record DNS per supportare il ripristino di emergenza, in modo che le funzionalità che utilizzano i servizi Web continuino anche se un intero pool Front End non è più in funzione. Questa funzionalità di ripristino di emergenza supporta gli URL semplici di individuazione automatica, meet e accesso remoto.
+Per configurare DNS per reindirizzare Skype for Business Server traffico Web ai siti di ripristino di emergenza e failover, è necessario utilizzare un provider DNS che supporti GeoDNS. È possibile configurare i record DNS per supportare il ripristino di emergenza, in modo che le funzionalità che utilizzano i servizi Web continuino anche se un intero pool Front End non è più in funzione. Questa funzionalità di ripristino di emergenza supporta gli URL semplici di individuazione automatica, meet e accesso remoto.
   
 È possibile definire e configurare record A (AAAA) host DNS aggiuntivi se si utilizza IPv6 per la risoluzione interna ed esterna dei servizi Web presso il provider GeoDNS. I dettagli seguenti presuppongono che i pool associati, geograficamente dislocati, e che geoDNS supportato dal **provider** abbia **DNS** round robin o sia configurato per l'utilizzo di Pool1 come primario ed esepari il pool2 in caso di perdita di comunicazioni o interruzione dell'alimentazione.
   
@@ -242,13 +242,13 @@ Ad esempio, se in un pool denominato pool01.contoso.com sono presenti tre Front 
 - Se il client tenta tutte le voci memorizzate nella cache senza una connessione corretta, l'utente riceve una notifica che indica che al momento non sono disponibili Skype for Business Server server.
     
 > [!NOTE]
-> Il bilanciamento del carico basato su DNS è diverso dal round robin DNS (DNS RR), che in genere si riferisce al bilanciamento del carico basandosi su DNS per assegnare un ordine diverso di indirizzi IP per i server nel pool. In genere, DNS RR abilita la distribuzione del carico, ma non consente di abilitare il failover. Ad esempio, se la connessione all'unico indirizzo IP restituito dalla query DNS A (o AAAA in uno scenario IPv6) ha esito negativo, la connessione avrà esito negativo. In questo modo la RR DNS è meno affidabile rispetto al bilanciamento del carico basato su DNS. È comunque possibile utilizzare DNS RR in combinazione con il bilanciamento del carico basato su DNS, se necessario. 
+> Il bilanciamento del carico basato su DNS è diverso dal round robin DNS (DNS RR), che in genere si riferisce al bilanciamento del carico basandosi su DNS per assegnare un ordine diverso di indirizzi IP per i server nel pool. In genere, DNS RR abilita la distribuzione del carico, ma non consente di abilitare il failover. Ad esempio, se la connessione all'unico indirizzo IP restituito dalla query DNS A (o AAAA in uno scenario IPv6) ha esito negativo, la connessione avrà esito negativo. Ciò rende la RR DNS meno affidabile del bilanciamento del carico basato su DNS. È comunque possibile utilizzare DNS RR in combinazione con il bilanciamento del carico basato su DNS, se necessario. 
   
 Il bilanciamento del carico DNS consente di:
   
 - Bilanciamento del carico SIP da server a server nei server perimetrali.
     
-- Bilanciamento del carico delle applicazioni UCAS (Unified Communication Application Services), ad esempio servizi di conferenza Operatore automatico, Response Group e Parcheggio di chiamata.
+- Bilanciamento del carico Delle applicazioni UCAS (Unified Communication Application Services), ad esempio Operatore automatico Conferencing, Response Group e Parcheggio di chiamata.
     
 - Impedire nuove connessioni alle applicazioni UCAS (noto anche come drenaggio).
     

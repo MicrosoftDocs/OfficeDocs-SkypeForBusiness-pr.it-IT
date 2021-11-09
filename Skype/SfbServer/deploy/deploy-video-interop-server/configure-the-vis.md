@@ -2,7 +2,7 @@
 title: Configurare Video Interop Server in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 0fde142b-70b1-46c6-b1f9-f9d70115371d
 description: 'Riepilogo: configurare il ruolo ViS (Video Interop Server) in Skype for Business Server.'
-ms.openlocfilehash: 61ab8f8b5c6538491de63696d9445672ce9211cf
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4148cf404fba4718f56c3c8db7ffe180881b3ae7
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60741302"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60835814"
 ---
 # <a name="configure-the-video-interop-server-in-skype-for-business-server"></a>Configurare Video Interop Server in Skype for Business Server
  
@@ -28,9 +28,9 @@ ms.locfileid: "60741302"
   
 ## <a name="configure-video-trunk-and-dial-plan"></a>Configurare trunk video e dial plan
 
-Utilizzare i seguenti comandi di Windows PowerShell per specificare la configurazione del trunk video e il dial plan da associare ai nuovi trunk definiti nel Documento di topologia tra il VIS e tutti i gateway video. Tutte queste impostazioni possono essere impostate a livello globale, sito o servizio (gateway video). 
+Utilizzare i seguenti comandi Windows PowerShell per specificare la configurazione del trunk video e il dial plan da associare ai nuovi trunk definiti nel Documento di topologia tra il VIS e tutti i gateway video. Tutte queste impostazioni possono essere impostate a livello globale, sito o servizio (gateway video). 
   
-Viene creato un dial plan con ambito globale per ogni Skype for Business Server distribuzione. Questo dial plan viene applicato da VIS a tutti i trunk che non dispongono di dial plan con ambito più specifico. 
+Viene creato un dial plan con ambito globale per Skype for Business Server distribuzione. Questo dial plan viene applicato da VIS a tutti i trunk che non dispongono di dial plan con ambito più specifico. 
   
 ### <a name="configure-the-vis-using-windows-powershell"></a>Configurare il sistema VIS utilizzando Windows PowerShell
 
@@ -74,7 +74,7 @@ Il **comando Remove-CsVoiceNormalizationRule** è necessario per ignorare una re
 Per una chiamata trunk SIP video da un gateway video il cui URI di richiesta contiene un numero non E.164, VIS leggerà il nome del dial plan associato al trunk associato e includerà il nome del dial plan nella parte del contesto telefonico dell'URI richiesta nell'invito inviato da VIS al Front End. L'applicazione di traduzione nel Front End estrae e applica le regole di normalizzazione associate al dial plan all'URI della richiesta.
 ## <a name="trunk-configuration-options"></a>Opzioni di configurazione trunk
 
-I Windows PowerShell per la configurazione dei trunk video menzionati in precedenza erano nuovi Skype for Business Server 2015. Le impostazioni associate alla configurazione del trunk video richiedono una breve spiegazione.
+I Windows PowerShell per la configurazione del trunk video menzionati in precedenza erano nuovi Skype for Business Server 2015. Le impostazioni associate alla configurazione del trunk video richiedono una breve spiegazione.
   
  **GatewaySendsRtcpForActiveCalls** Questo parametro determina se i pacchetti RTCP vengono inviati dal VTC al VIS per le chiamate attive. Una chiamata attiva in questo contesto è una chiamata in cui il flusso dei supporti è consentito almeno in una direzione. Se GatewaySendsRtcpForActiveCalls è impostato su True, VIS può terminare una chiamata se non riceve pacchetti RTCP per un periodo superiore a 30 secondi. L'impostazione predefinita è **True**.
   

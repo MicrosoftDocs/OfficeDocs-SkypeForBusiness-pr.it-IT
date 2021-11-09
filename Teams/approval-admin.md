@@ -1,6 +1,6 @@
 ---
 title: Disponibilità dell'applicazione Approvazioni in Teams
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 ms.reviewer: farhazk
 manager: serdars
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 35491e8f55e55741f8567c3711f8612464c968e4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 33af895358695227d9f7e76ec5b80fb733749342
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60769994"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850609"
 ---
 # <a name="teams-approvals-app-availability"></a>Disponibilità dell'app Approvazioni in Teams
 
@@ -65,7 +65,7 @@ Common Data Model (CDM) è il linguaggio dei dati condiviso usato dalle applicaz
 
 Altre informazioni sui [flussi di lavoro di Approvazioni](/power-automate/modern-approvals).
 
-Approvazioni creati da un modello archiviano ancora i dati in CDS, ad esempio il titolo, i dettagli, l'ID del modello e altro ancora. Le risposte inviate nella richiesta di approvazione vengono archiviate in Moduli. Altre informazioni  [sull'archiviazione dei dati per Microsoft Forms.](https://support.microsoft.com/office/data-storage-for-microsoft-forms-97a34e2e-98e1-4dc2-b6b4-7a8444cb1dc3#:~:text=Where%20data%20is%20stored%20for%20Microsoft%20Forms.%20Microsoft,European-based%20tenants%20is%20stored%20on%20servers%20in%20Europe)
+Approvazioni creati da un modello archiviano comunque i dati in CDS, ad esempio il titolo, i dettagli, l'ID del modello e altro ancora. Le risposte inviate nella richiesta di approvazione vengono archiviate in Moduli. Altre informazioni  [sull'archiviazione dei dati per Microsoft Forms.](https://support.microsoft.com/office/data-storage-for-microsoft-forms-97a34e2e-98e1-4dc2-b6b4-7a8444cb1dc3#:~:text=Where%20data%20is%20stored%20for%20Microsoft%20Forms.%20Microsoft,European-based%20tenants%20is%20stored%20on%20servers%20in%20Europe)
 
 >[!Note]
 >Se si elimina il modello di modulo nel sito Di Microsoft Forms, il modello Approvazione verrà eliminato e gli utenti non saranno in grado di avviare la richiesta. Gli utenti riceveranno un messaggio di errore "Tabella CDBNonFound" quando si prova ad aprire un modello approvazione eliminato in Microsoft Forms.
@@ -97,7 +97,7 @@ L'app Approvazioni di Teams consente di accedere alle funzionalità seguenti:
 
 Autorizzazioni per i modelli di approvazione
 
-- Tutti i proprietari dei team possono creare un modello di approvazione per i team di cui sono proprietari.
+- Tutti i proprietari del team possono creare un modello di approvazione per i team di cui sono proprietari.
 
 - Quando un amministratore crea un modello per l'intera organizzazione per la prima volta, crea automaticamente un nuovo team di Teams per tutti gli amministratori del tenant, inclusi gli amministratori dei servizi globali e del team. Questi amministratori verranno aggiunti come proprietari del team, in modo che possano gestire insieme i modelli dell'organizzazione. Gli amministratori che non hanno più accesso all'organizzazione dopo la creazione del team devono essere aggiunti manualmente come proprietari del team in modo da avere le stesse autorizzazioni per gestire i modelli a livello di organizzazione.
 
@@ -195,7 +195,7 @@ Tramite l'app Approvazioni di Teams, gli utenti hanno accesso alla creazione di 
 > [!Note]
 > L'utente riceve il ruolo di visualizzatore della richiesta se fa parte della chat o del canale in cui è stata creata l'approvazione. Non è possibile intervenire sulla richiesta se al momento della creazione dell'approvazione non è stato assegnato il ruolo specifico.
 
-## <a name="approvals-e-signature-integration"></a>Approvazioni di firma elettronica
+## <a name="approvals-e-signature-integration"></a>Approvazioni di e-signature
 
 Le approvazioni delle firme elettroniche create dall'app Approvazioni vengono archiviate nell'ambiente cloud del provider selezionato. Per altre informazioni sull'archiviazione relativa al contratto di firma elettronica, vedere la documentazione di archiviazione del provider selezionato.
 
@@ -205,8 +205,8 @@ Per usare la Approvazioni di firma elettronica dell'app, sono necessari gli elem
 
 Per la Approvazioni di firma elettronica di terze parti, i partner della firma di terze parti verranno visualizzati nell'app Teams Approvazioni per impostazione predefinita. È possibile disabilitare specifici provider di firme elettroniche accedendo alle impostazioni dell'app nell'Teams di amministrazione.
 
-1. Nell'Teams di amministrazione, in **Gestisci app,** selezionare l'app Approvazioni e scegliere **Impostazioni**. 
+1. Nell'Teams di amministrazione, in **Gestisci app,** selezionare l'app Approvazioni **e** scegliere **Impostazioni**.
 
-2. Ogni provider di firme elettroniche ha un interruttore accanto al provider che si trova nella posizione attiva (destra) per impostazione predefinita. Scorrere l'interruttore verso sinistra per disabilitare uno specifico provider di firme elettroniche. Se un Teams disabilita un provider, gli utenti finali non potranno vedere il provider durante la creazione di un'approvazione. Gli utenti finali non saranno inoltre in grado di visualizzare le richieste di firma elettronica effettuate con il provider.
+2. Per impostazione predefinita, ogni provider di firme elettroniche ha un interruttore accanto alla posizione attiva (a destra). Scorrere l'interruttore verso sinistra per disabilitare uno specifico provider di firme elettroniche. Se un Teams disabilita un provider, gli utenti finali non potranno vedere il provider durante la creazione di un'approvazione. Gli utenti finali non saranno inoltre in grado di visualizzare le richieste di firma elettronica effettuate con il provider.
 
 Le firme Approvazioni create dall'app Approvazioni vengono archiviate nel cloud del provider selezionato. Sarà quindi necessario accedere al sito del provider per esportare i dati relativi alle firme elettroniche. Fare riferimento alla documentazione del provider relativa all'esportazione e alla conservazione di questi contratti.

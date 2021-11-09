@@ -6,7 +6,7 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204996(v=OCS.15)
 ms:contentKeyID: 48184469
 mtps_version: v=OCS.15
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: In questo articolo viene descritto come configurare gli intervalli di porte per i server perimetrali e come configurare un criterio qualità del servizio per i server A/V Edge.
-ms.openlocfilehash: 1f455ab417ed111a34134e3581806b4ce2a4bd57
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ae955eb8863f561cc1837b7f0319f7424f13e99c
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60778306"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60829940"
 ---
 # <a name="configuring-port-ranges-and-a-quality-of-service-policy-for-your-edge-servers-in-skype-for-business-server"></a>Configurazione degli intervalli di porte e dei criteri di qualità del servizio per i server perimetrali in Skype for Business Server
 
@@ -94,11 +94,11 @@ Nella procedura seguente viene descritto il processo di creazione di oggetti Cri
 
 Se si creano criteri basati su Active Directory, è necessario accedere a un computer in cui sia installato Gestione Criteri di gruppo. In tal caso, aprire Gestione Criteri di gruppo (fare clic sul pulsante **Start**, scegliere Strumenti di amministrazione **e** quindi Gestione Criteri di **gruppo**), quindi eseguire la procedura seguente:
 
-1.  In Gestione Criteri di gruppo, individuare il contenitore in cui creare il nuovo criterio. Ad esempio, se tutti i computer Skype for Business Server si trovano in un'unità organizzativa denominata Skype for Business Server, il nuovo criterio deve essere creato nell'unità organizzativa Skype for Business Server.
+1.  In Gestione Criteri di gruppo, individuare il contenitore in cui creare il nuovo criterio. Ad esempio, se tutti i computer Skype for Business Server si trovano in un'unità organizzativa denominata Skype for Business Server, il nuovo criterio deve essere creato nell'Skype for Business Server ou.
 
 2.  Fai clic con il pulsante destro del mouse sul contenitore appropriato, quindi fai clic su Crea un oggetto Criteri di gruppo in questo dominio **e collegalo qui.**
 
-3.  Nella finestra **di dialogo** Nuovo oggetto Criteri di gruppo digitare un nome per il nuovo oggetto Criteri di gruppo nella casella **Nome,** ad esempio **Skype for Business Server Audio,** e quindi fare clic su **OK.**
+3.  Nella finestra **di** dialogo Nuovo oggetto Criteri di gruppo digitare un nome per il nuovo oggetto Criteri di gruppo nella casella **Nome,** ad esempio **Skype for Business Server Audio,** e quindi fare clic su **OK.**
 
 4.  Fare clic con il pulsante destro del mouse sul criterio appena creato e quindi scegliere **Modifica**.
 
@@ -126,7 +126,7 @@ Dopo aver creato i criteri QoS per il traffico audio, devi creare un secondo cri
 
 Se si decide di creare un criterio per la gestione del traffico di condivisione applicazioni, è necessario creare un terzo criterio, apportando le sostituzioni seguenti:
 
-  - Utilizzare un nome di criterio diverso (e univoco), ad esempio condivisione Skype for Business Server **applicazioni**.
+  - Utilizzare un nome di criterio diverso (e univoco), ad esempio condivisione **Skype for Business Server applicazioni**.
 
   - Impostare il valore DSCP su **24** invece di 46. Come indicato prima, non è obbligatorio usare il valore DSCP 24. L'unico requisito consiste nell'usare un valore DSCP diverso da quello usato per l'audio.
 

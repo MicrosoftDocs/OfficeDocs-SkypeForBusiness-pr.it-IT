@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.collection: ''
 description: Panoramica dell'uso di un operatore automatico cloud con Skype for Business Server 2019
-ms.openlocfilehash: ee79c52b8aaf4518511a51cea95b16d32008694c
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 832ba7fc5e93a76cc3e05d09baecd880241f6c46
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011510"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60857083"
 ---
 # <a name="plan-cloud-auto-attendants"></a>Pianificare gli operatori automatici cloud
 
@@ -37,7 +37,7 @@ Una chiamata in arrivo a un operatore automatico cloud può assumere uno dei div
 ![Diagramma per gli operatori automatici.](../../SfBServer2019/media/AA-plan-concept.png)
 
 1. Via Skype for Business Server 2019
-2. Tramite [session border controller](/MicrosoftTeams/direct-routing-border-controllers) e [routing diretto.](/microsoftteams/direct-routing-plan-media-bypass)
+2. Tramite [session border controller](/microsoftteams/direct-routing-border-controllers) e [routing diretto.](/microsoftteams/direct-routing-plan-media-bypass)
 3. Tramite un numero presente online in Microsoft 365 o Office 365.
 
 Vedere anche:
@@ -57,16 +57,16 @@ Oltre ai requisiti precedenti, è necessario configurare i requisiti seguenti pe
 
 - Connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare l'operatore automatico cloud per gli utenti locali, è necessario assicurarsi di avere configurato la connettività ibrida tra gli ambienti locali e online. Questa operazione viene talvolta definita configurazione di dominio diviso.
 
-   Per ulteriori informazioni, vedere [Plan hybrid connectivity between Skype for Business Server and Microsoft 365 or Office 365](plan-hybrid-connectivity.md) e Configure hybrid connectivity between Skype for Business Server and Microsoft 365 [or Office 365](configure-hybrid-connectivity.md).
+   Per ulteriori informazioni, vedere [Plan hybrid connectivity between Skype for Business Server and Microsoft 365 or Office 365](plan-hybrid-connectivity.md) and Configure hybrid connectivity between Skype for Business Server and Microsoft 365 [or Office 365](configure-hybrid-connectivity.md).
 
-- Se si sta assegnando un numero di telefono all'operatore automatico, è necessaria una licenza [Office 365 Enterprise E5.](../../SfbOnline/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e5-with-audio-conferencing.md)
+- Se stai assegnando un numero di telefono all'operatore automatico, dovrai disporre di una licenza [Office 365 Enterprise E5.](../../SfbOnline/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e5-with-audio-conferencing.md)
 - Creare un [account di risorsa](/MicrosoftTeams/manage-resource-accounts) online o un [account](configure-onprem-ra.md) di risorsa locale per ogni operatore automatico e assegnare numeri di telefono e licenze. 
 
 ## <a name="migration-and-interoperability"></a>Migrazione e interoperabilità
 
-Se si prevede di distribuire Skype for Business Server 2019 e/o Exchange Server 2019, è necessario pianificare attentamente la migrazione per garantire il supporto continuo per gli operatori automatici. Tenere presente quanto segue:
+Se si prevede di distribuire Skype for Business Server 2019 e/o Exchange Server 2019, è necessario pianificare con attenzione la migrazione per garantire il supporto continuo per gli operatori automatici. Tenere presente quanto segue:
 
-- Exchange Server 2019 non fornisce più Exchange di messaggistica unificata
+- Exchange Server 2019 non fornisce più la Exchange di messaggistica unificata
 - Exchange La messaggistica unificata è in modalità ritiro
 - Skype for Business Server 2019 non si integra più con la Exchange Online messaggistica unificata
 
@@ -84,14 +84,14 @@ Per ulteriori informazioni sulla pianificazione della migrazione, vedere [Plan f
 
 Attualmente non è possibile eseguire la migrazione automatica nel cloud di un sistema di operatore automatico di messaggistica unificata creato Exchange 2013 o 2016. Per creare di nuovo manualmente un sistema di operatore automatico, è necessario:
 
-1. Utilizzare Exchange comandi di PowerShell di amministrazione per esaminare la struttura del vecchio sistema di operatori automatici, inclusi eventuali operatori automatici annidati e code di chiamata.  
+1. Utilizzare Exchange comandi di PowerShell di amministrazione per esaminare la struttura del sistema dell'operatore automatico precedente, inclusi eventuali operatori automatici annidati e code di chiamata.  
 2. Creare copie di script di sintesi vocale o messaggi registrati associati a ogni nodo dell'operatore automatico di messaggistica unificata.
 3. Creare endpoint locali per ogni nodo dell'operatore automatico, inclusa l'assegnazione di numeri di telefono di prova e licenze agli oggetti. Tieni presente che ora hai la possibilità di assegnare licenze per i numeri di telefono locali usati dai servizi online come Sistema telefonico.
 4. Implementare un nuovo servizio operatore automatico cloud con Microsoft Teams e Sistema telefonico. Per [informazioni dettagliate sull'implementazione, vedere Configure resource accounts.](configure-onprem-ra.md) In questo modo, caricare gli script di sintesi vocale o i messaggi registrati associati a ogni nodo dell'operatore automatico di messaggistica unificata.
 5. Testare la funzionalità dell'operatore automatico Cloud.
-6. Riassegnare il numero di telefono assegnato al vecchio Exchange automatico di messaggistica unificata all'operatore automatico cloud principale appena creato.
+6. Riassegnare il numero di telefono assegnato al vecchio operatore Exchange di messaggistica unificata all'operatore automatico cloud principale appena creato.
 
-Vedere [Moving an Exchange um auto attendant or call queue to Sistema telefonico](configure-onprem-ra.md#moving-an-exchange-um-auto-attendant-or-call-queue-to-phone-system) for details on these steps.
+Per [informazioni dettagliate su Exchange, vedere Moving an Exchange um auto attendant or call queue to Sistema telefonico.](configure-onprem-ra.md#moving-an-exchange-um-auto-attendant-or-call-queue-to-phone-system)
 
 Quando si dispone di una struttura solida che soddisfa le proprie esigenze e di uno script che guida i clienti in modo efficiente, passare a [Configurare gli account delle risorse.](configure-onprem-ra.md)
 

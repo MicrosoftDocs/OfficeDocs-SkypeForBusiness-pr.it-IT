@@ -2,7 +2,7 @@
 title: Gestione delle route dell'area di rete
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Una route area di rete definisce la route tra una coppia di aree di rete. Ogni coppia di aree di rete nella distribuzione del servizio Controllo di ammissione di chiamata richiede una route di questo tipo.
-ms.openlocfilehash: 30782564076c5a6bb5961f904fe30b1cfe0d0ef5
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 18bee9a28eed10affae1b0dab855c379709b37bb
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60750195"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864753"
 ---
 # <a name="managing-network-region-routes-in-skype-for-business-server"></a>Gestione delle route delle aree di rete in Skype for Business Server
 
@@ -24,13 +24,13 @@ Una *route area di rete* definisce la route tra una coppia di aree di rete. Ogni
 
 ## <a name="view-network-region-route-information"></a>Visualizzare le informazioni sulle route dell'area di rete 
 
-Ogni area di una configurazione di controllo di ammissione di chiamata deve in qualche modo poter accedere a tutte le altre aree. Mentre i collegamenti area impostano limitazioni della larghezza di banda nelle connessioni tra aree e rappresentano anche i collegamenti fisici, una route determina il percorso collegato che verrà attraversato dalla connessione per passare da un'area all'altra. Utilizzare le procedure seguenti per visualizzare le route dell'area di rete esistenti Skype for Business Server Pannello di controllo o Skype for Business Server Management Shell. 
+Ogni area di una configurazione di controllo di ammissione di chiamata deve in qualche modo poter accedere a tutte le altre aree. Mentre i collegamenti area impostano limitazioni della larghezza di banda nelle connessioni tra aree e rappresentano anche i collegamenti fisici, una route determina il percorso collegato che verrà attraversato dalla connessione per passare da un'area all'altra. Utilizzare le procedure seguenti per visualizzare le route delle aree di rete esistenti Skype for Business Server Pannello di controllo o Skype for Business Server Management Shell. 
 
 ### <a name="to-view-network-region-route-information-in-skype-for-business-server-control-panel"></a>Per visualizzare le informazioni sulle route dell'area di rete nel Skype for Business Server Pannello di controllo
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Route **area.**
 
@@ -46,7 +46,7 @@ Ogni area di una configurazione di controllo di ammissione di chiamata deve in q
 
 ### <a name="viewing-network-region-route-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sulle route dell'area di rete tramite Windows PowerShell cmdlet
 
-Le informazioni sulla route dell'area di rete possono essere visualizzate utilizzando Windows PowerShell e il cmdlet Get-CsNetworkInterRegionRoute rete. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+Le informazioni sulla route dell'area di rete possono essere visualizzate Windows PowerShell e il cmdlet Get-CsNetworkInterRegionRoute rete. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
 
 ### <a name="to-view-network-region-route-information"></a>Per visualizzare le informazioni sulle route dell'area di rete
 
@@ -73,7 +73,7 @@ Ogni area di una configurazione di controllo di ammissione di chiamata deve in q
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Route **area.**
 
@@ -100,7 +100,7 @@ Ogni area di una configurazione di controllo di ammissione di chiamata deve in q
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Route **area.**
 
@@ -121,7 +121,7 @@ Ogni area di una configurazione di controllo di ammissione di chiamata deve in q
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Route **area.**
 

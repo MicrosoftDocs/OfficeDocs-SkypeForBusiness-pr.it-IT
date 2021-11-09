@@ -2,7 +2,7 @@
 title: Gestire i database con un gruppo di disponibilità AlwaysOn in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 026c4469-f471-4e4f-a77d-a7d22a925e5a
 description: 'Riepilogo: informazioni su come aggiungere altri database di Skype for Business Server a un gruppo di disponibilità AlwaysOn esistente e sui passaggi aggiuntivi necessari dopo aver patchato o aggiornato un server back-end che fa parte di un gruppo di disponibilità AlwaysOn in Skype for Business Server.'
-ms.openlocfilehash: c47d5833b7569faa424415b1e5b7315bab4d4aae
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: fe74cd804aff746a3d6c52163ed96d6b270703ce
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60756993"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60827509"
 ---
 # <a name="manage-databases-with-an-alwayson-availability-group-in-skype-for-business-server"></a>Gestire i database con un gruppo di disponibilità AlwaysOn in Skype for Business Server
 

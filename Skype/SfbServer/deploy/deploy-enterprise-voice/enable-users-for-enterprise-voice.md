@@ -2,7 +2,7 @@
 title: Abilitare gli utenti per VoIP aziendale in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,21 +16,21 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f252b23b-9641-4160-aa81-bf06dc2eced3
 description: 'Riepilogo: informazioni su come consentire agli utenti di effettuare e ricevere chiamate utilizzando VoIP aziendale in Skype for Business Server.'
-ms.openlocfilehash: 27c60b7532411c50d6613635a28a638a5cfbc97d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 3dab9488b1d184f5d3dd215f4012933de1ca0245
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749367"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864343"
 ---
 # <a name="enable-users-for-enterprise-voice-in-skype-for-business-server"></a>Abilitare gli utenti per VoIP aziendale in Skype for Business Server
  
-**Riepilogo:** Informazioni su come consentire agli utenti di effettuare e ricevere chiamate VoIP aziendale in Skype for Business Server.
+**Riepilogo:** Informazioni su come consentire agli utenti di effettuare e ricevere chiamate utilizzando VoIP aziendale in Skype for Business Server.
   
 Dopo aver distribuito VoIP aziendale chiamata tramite lavoro, è possibile utilizzare le procedure seguenti per consentire a un utente di effettuare chiamate tramite VoIP aziendale:
   
 > [!NOTE]
-> Delle procedure seguenti, solo la prima può essere eseguita utilizzando Skype for Business Server pannello di controllo. Per le procedure rimanenti, è possibile utilizzare solo Skype for Business Server Management Shell. 
+> Delle procedure seguenti, solo la prima può essere eseguita utilizzando Skype for Business Server Pannello di controllo. Per le procedure rimanenti, è possibile utilizzare solo Skype for Business Server Management Shell. 
   
 - Abilitare l'account utente per VoIP aziendale.
     
@@ -61,13 +61,13 @@ Dopo aver distribuito VoIP aziendale chiamata tramite lavoro, è possibile utili
 Per completare l'abilitazione di un utente per VoIP aziendale, assicurarsi che all'utente siano assegnati un criterio vocale e un dial plan, globali (assegnati per impostazione predefinita) o specifici dell'utente. Per impostazione predefinita, a tutti gli utenti vengono assegnati un criterio vocale globale e un dial plan. Se nel sito principale dell'utente esistono criteri vocali o un dial plan a livello di sito, i criteri del sito verranno applicati automaticamente all'utente. Per applicare criteri vocali o un dial plan per utente, è necessario eseguire i cmdlet **Grant-CsVoicePolicy** e **Grant-CsDialPlan**. Per informazioni dettagliate, vedere le procedure seguenti in questo argomento.
 ## <a name="voice-policy-assignment"></a>Assegnazione di criteri vocali
 
-I criteri vocali globali e a livello di sito vengono assegnati automaticamente a tutti gli account utente abilitati per VoIP aziendale. È inoltre possibile creare criteri vocali applicabili a utenti o gruppi specifici. Questi criteri per utente devono essere assegnati esplicitamente agli utenti o ai gruppi. Se si desidera utilizzare il criterio vocale globale o del sito per tutti gli utenti abilitati per VoIP aziendale, è possibile ignorare questa sezione e passare alla sezione Assegnazione [dial plan](enable-users-for-enterprise-voice.md#BKMK_DialPlanAssignment) più avanti in questo argomento.
+I criteri vocali globali e a livello di sito vengono assegnati automaticamente a tutti gli account utente abilitati per VoIP aziendale. È inoltre possibile creare criteri vocali applicabili a utenti o gruppi specifici. Questi criteri per utente devono essere assegnati esplicitamente agli utenti o ai gruppi. Se si desidera utilizzare i criteri vocali globali o del sito per tutti gli utenti abilitati per VoIP aziendale, è possibile ignorare questa sezione e passare alla sezione Assegnazione [dial plan](enable-users-for-enterprise-voice.md#BKMK_DialPlanAssignment) più avanti in questo argomento.
   
 ### <a name="to-assign-a-user-specific-voice-policy"></a>Per assegnare criteri vocali specifici dell'utente
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 3. Per assegnare un criterio vocale esistente a un utente, eseguire quanto segue al prompt dei comandi:
     
@@ -92,7 +92,7 @@ Per completare la configurazione degli account per gli utenti di VoIP aziendale 
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 3. Per assegnare un dial plan specifico dell'utente, al prompt dei comandi eseguire quanto segue:
     

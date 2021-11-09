@@ -2,7 +2,7 @@
 title: Creare o modificare un dial plan in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,16 +16,16 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d2fef3d0-7e78-4591-b712-d62ac71d71a5
 description: 'Riepilogo: informazioni su come creare o modificare un dial plan utilizzando il Pannello Skype for Business Server di controllo.'
-ms.openlocfilehash: b5d2e7fa5c91dfbbfe87f68bed258960167990bb
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: c5c4a819c21708f31fbe0bf4801900143d0d4538
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749377"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864363"
 ---
 # <a name="create-or-modify-a-dial-plan-in-skype-for-business-server"></a>Creare o modificare un dial plan in Skype for Business Server
 
-**Riepilogo:** Informazioni su come creare o modificare un dial plan utilizzando il Skype for Business Server Pannello di controllo.
+**Riepilogo:** Informazioni su come creare o modificare un dial plan utilizzando il Pannello Skype for Business Server di controllo.
 
 ### <a name="to-create-a-dial-plan"></a>Per creare un dial plan
 
@@ -47,7 +47,7 @@ ms.locfileid: "60749377"
 4. Se si crea un dial plan utente, immettere un nome descrittivo nel campo **Nome** della finestra di dialogo **Nuovo dial plan**. Dopo aver salvato tale nome, non è più possibile modificarlo.
 
     > [!NOTE]
-    > Per i dial plan del sito, il campo **Nome** è prepopolato con il nome del sito e non può essere modificato.> Per i dial plan del pool, il campo **Nome** viene prepopolato con il gateway PSTN o il nome della funzione di registrazione e non può essere modificato.
+    > Per i dial plan del sito, il campo **Nome** è prepopolato con il nome del sito e non può essere modificato.> Per i dial plan del pool, il campo **Nome** è prepopolato con il nome del gateway PSTN o del registrar e non può essere modificato.
 
 5. Il campo **Nome semplice** viene prepopolato con lo stesso nome visualizzato nel campo **Nome**. Se si desidera, è possibile modificare il campo per specificare un nome più descrittivo che rifletta il sito, il servizio o l'utente al quale viene applicato il dial plan.
 
@@ -93,13 +93,13 @@ ms.locfileid: "60749377"
 13. Nella pagina **Dial plan** fare clic su **Commit** e quindi su **Salva tutto**.
 
     > [!NOTE]
-    > Ogni volta che si crea un dial plan, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
+    > Ogni volta che si crea un dial plan, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, [vedere Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
 
 ### <a name="to-modify-a-dial-plan"></a>Per modificare un dial plan
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **Delegate Setup Permissions**.
 
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.
 
 3. Sulla barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Dial plan**.
 
@@ -155,7 +155,7 @@ ms.locfileid: "60749377"
 13. Nella pagina **Dial plan** fare clic su **Commit** e quindi su **Salva tutto**.
 
     > [!NOTE]
-    > Ogni volta che si crea o si modifica un dial plan, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
+    > Ogni volta che si crea o si modifica un dial plan, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, [vedere Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
 
 ## <a name="see-also"></a>Vedere anche
 

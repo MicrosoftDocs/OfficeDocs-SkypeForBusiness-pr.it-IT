@@ -2,7 +2,7 @@
 title: Pianificare il server Chat persistente in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 8/17/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 9e652487-a123-40c0-ae61-47fb8ecc4a20
 description: 'Riepilogo: leggere questo argomento per informazioni su come pianificare il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: a697337570dfbf66e752234435d1335661638c54
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7adeb623f581d7ce6f3bfad5dadafd143299fad5
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60763464"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60842718"
 ---
 # <a name="plan-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificare il server Chat persistente in Skype for Business Server 2015
  
@@ -39,7 +39,7 @@ Il server Chat persistente può contribuire a migliorare le comunicazioni all'in
 - Seguire le normative di conformità distribuendo facoltativamente il servizio conformità di Persistent Chat
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
     
 ## <a name="persistent-chat-server-high-level-architecture"></a>Architettura di alto livello del server Chat persistente
 
@@ -79,7 +79,7 @@ Se l'organizzazione dispone di normative che richiedono l'archiviazione dell'att
   
 ### <a name="web-services"></a>Servizi Web
 
-I servizi Web Persistent Chat vengono eseguiti Skype for Business Front End Server. I servizi Web dipendono da Internet Information Services (IIS) e vengono implementati come componenti Web:
+I servizi Web di Persistent Chat vengono eseguiti Skype for Business Front End Server. I servizi Web dipendono da Internet Information Services (IIS) e vengono implementati come componenti Web:
   
 - I servizi Web Persistent Chat per il caricamento e il download di file sono responsabili dell'inserimento e del recupero di file dalle chat room.
     
@@ -103,7 +103,7 @@ Se si decide di distribuire il server Chat persistente, sarà necessario determi
     
 - Di che tipo di componenti aggiuntivi si vuole effettuare il provisioning? I componenti aggiuntivi migliorano l'esperienza nella sala sfruttando il riquadro di estendibilità nel client Skype for Business per fornire un contesto rilevante per la sala. È possibile scegliere i componenti aggiuntivi generici che si ritengono più utili, ad esempio il sito Web aziendale, i documenti di collaborazione interni e così via. I responsabili di chat room, se vogliono, possono scegliere uno dei componenti aggiuntivi registrati e associarlo alla propria chat. 
     
-- Quali sono i requisiti di disponibilità elevata e di ripristino di emergenza? Il server Chat persistente supporta SQL Server mirroring e SQL Server clustering per la disponibilità elevata. Per il ripristino di emergenza, il server Chat persistente supporta fino a 8 server (4 attivi e 4 di standby) in un pool con estensione con SQL Server log shipping. 
+- Quali sono i requisiti di disponibilità elevata e di ripristino di emergenza? Il server Chat persistente supporta il mirroring SQL Server e SQL Server clustering per la disponibilità elevata. Per il ripristino di emergenza, il server Chat persistente supporta fino a 8 server (4 attivi e 4 di standby) in un pool con estensione SQL Server log shipping. 
     
 - Ci sono requisiti normativi da rispettare? Se la società si trova in un paese o un'area geografica in cui i dati devono essere conservati all'interno del paese, potrebbe essere necessario distribuire più pool di server Chat persistente, ognuno locale in una specifica area geografica. Una chat room, una categoria o un componente aggiuntivo non si estende su pool, ma appartiene a un solo pool di server Chat persistente. 
     
@@ -114,7 +114,7 @@ Se si decide di distribuire il server Chat persistente, sarà necessario determi
 
 Per ulteriori informazioni sull'installazione e la configurazione del server Chat persistente, vedere i seguenti argomenti:
   
-- Per informazioni dettagliate su come distribuire il server Chat persistente, vedere [Deploy Persistent Chat Server in Skype for Business Server 2015.](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md) 
+- Per informazioni dettagliate su come distribuire il server Chat persistente, vedere [Deploy Persistent Chat Server in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md). 
     
 - Per informazioni dettagliate su come configurare le impostazioni nella distribuzione del server Chat persistente, vedere [Manage Persistent Chat Server in Skype for Business Server 2015.](../../manage/persistent-chat/persistent-chat.md)
     

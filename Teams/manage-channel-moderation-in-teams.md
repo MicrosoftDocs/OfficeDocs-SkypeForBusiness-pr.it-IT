@@ -1,6 +1,6 @@
 ---
 title: Configurare e gestire la moderazione dei canali
-author: cichur
+author: HowlinWolf-92
 ms.author: v-mahoffman
 manager: serdars
 ms.reviewer: jotaing
@@ -16,14 +16,14 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come configurare canali per la moderazione nelle Microsoft Teams, incluso come aggiungere membri del team come moderatori del canale.
+description: Informazioni su come configurare canali per la moderazione in Microsoft Teams, incluso come aggiungere membri del team come moderatori del canale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a012eb26ac9017e0d6a1110505aa1d1025c6a779
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: dbfdec9af83bda6c0b14a6371e0694d68e25d1d1
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60753989"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60829560"
 ---
 # <a name="set-up-and-manage-channel-moderation-in-microsoft-teams"></a>Configurare e gestire la moderazione dei canali in Microsoft Teams
 
@@ -76,7 +76,7 @@ Per attivare la moderazione per un canale, in **Moderazione canale** fare clic s
 
 ### <a name="add-or-remove-channel-moderators"></a>Aggiungere o rimuovere moderatori del canale
 
-In **Who sono i moderatori?**, fare clic su **Gestisci** e quindi aggiungere o rimuovere i membri del team come moderatori. I proprietari e i moderatori del team possono aggiungere e rimuovere altri moderatori.  
+In **Who i moderatori?**, fare clic su **Gestisci** e quindi aggiungere o rimuovere i membri del team come moderatori. I proprietari e i moderatori del team possono aggiungere e rimuovere altri moderatori.  
 
 ### <a name="set-team-member-permissions"></a>Impostare le autorizzazioni per i membri del team
 

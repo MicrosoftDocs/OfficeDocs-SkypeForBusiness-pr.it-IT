@@ -2,7 +2,7 @@
 title: Utilizzare le opzioni della riga di comando del programma di installazione con Skype for Business client
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -12,18 +12,18 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 99878c3c-ff31-48e2-8424-580d7b07a7bf
 description: 'Riepilogo: informazioni sulle operazioni Setup.exe riga di comando in Office installazione.'
-ms.openlocfilehash: 00d76dddef6a2cc8ba1bcda87ceadb22f7269dcb
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 6a64ac821019f49f8cbb4988ad0e42da0363245b
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60742932"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850480"
 ---
 # <a name="use-setup-command-line-options-with-skype-for-business-clients"></a>Utilizzare le opzioni della riga di comando del programma di installazione con Skype for Business client
  
 **Riepilogo:** Informazioni sulle Setup.exe della riga di comando in Office installazione.
   
-La riga di comando di Setup.exe consente di eseguire un numero limitato di operazioni di configurazione di Office. Anziché utilizzare le opzioni della riga di comando del programma di installazione, in genere si utilizzerà lo Strumento di personalizzazione di Office e il file Config.xml per la configurazione del prodotto e la personalizzazione delle funzionalità.
+La riga di comando di Setup.exe consente di eseguire un numero limitato di operazioni di configurazione di Office. Anziché utilizzare le opzioni della riga di comando del programma di installazione, in genere si utilizzerà lo Strumento di personalizzazione di Office e il file Config.xml per l'installazione del prodotto e la personalizzazione delle funzionalità.
   
 La riga di comando di Setup.exe di Office riconosce le opzioni descritte nella tabella seguente.
   
@@ -36,7 +36,7 @@ La riga di comando di Setup.exe di Office riconosce le opzioni descritte nella t
 |/config [percorso]  <br/> |Specifica il file Config.xml utilizzato durante l'installazione. Utilizzare l'opzione /config per specificare il file Config.xml personalizzato per Skype for Business installazioni, ad esempio:`/config \\server\share\Skype15\Skype.WW\Config.xml` <br/> |
 |/modify Skype  <br/> |Utilizzato con un file Config.xml modificato per eseguire l'installazione in modalità manutenzione e apportare modifiche a un'installazione esistente di Office. Ad esempio, è possibile utilizzare l'opzione /modify per aggiungere o rimuovere Skype for Business funzionalità.  <br/> |
 |/repair Skype  <br/> |Esegue il programma di installazione dal computer dell'utente per ripristinare Skype for Business.  <br/> |
-|/uninstall Skype  <br/> |Esegue il programma di installazione per Skype for Business dal computer dell'utente.  <br/> |
+|/uninstall Skype  <br/> |Esegue il programma di Skype for Business per rimuovere i dati dal computer dell'utente.  <br/> |
    
 
 

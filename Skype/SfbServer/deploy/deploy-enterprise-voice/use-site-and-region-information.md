@@ -1,8 +1,8 @@
 ---
-title: Configurare le impostazioni globali di bypass multimediale in Skype for Business Server usare le informazioni sul sito e sull'area geografica
+title: Configurare le impostazioni globali di bypass multimediale in Skype for Business Server utilizzare le informazioni sul sito e sull'area geografica
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,14 +16,14 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 0a21cdf1-f350-49da-b346-70806f256bea
 description: Configurare il bypass multimediale da utilizzare solo per determinati siti e aree geografiche in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 2d1c10ce06421635783a50bf97286c8d752f478b
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 7ec292f768633d64959704599269c0fb9cedd4fd
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60741352"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60829500"
 ---
-# <a name="configure-media-bypass-global-settings-in-skype-for-business-server-to-use-site-and-region-information"></a>Configurare le impostazioni globali di bypass multimediale in Skype for Business Server usare le informazioni sul sito e sull'area geografica
+# <a name="configure-media-bypass-global-settings-in-skype-for-business-server-to-use-site-and-region-information"></a>Configurare le impostazioni globali di bypass multimediale in Skype for Business Server utilizzare le informazioni sul sito e sull'area geografica
  
 Configurare il bypass multimediale da utilizzare solo per determinati siti e aree geografiche in Skype for Business Server VoIP aziendale. 
   

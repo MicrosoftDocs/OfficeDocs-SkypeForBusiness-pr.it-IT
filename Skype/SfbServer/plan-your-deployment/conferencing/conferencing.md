@@ -2,7 +2,7 @@
 title: Pianificare le conferenze in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 10add1ea-d693-406c-9dc9-853df0ab05da
 description: 'Riepilogo: leggere questo argomento per informazioni sulle funzionalità e le funzionalità di conferenza in Skype for Business Server.'
-ms.openlocfilehash: cfaf1544d158af6d04ca6b4709b85d168aa74ebd
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: f5eb0d549b5d0b120017d36e4f904b931e0ea278
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60759558"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864713"
 ---
 # <a name="plan-for-conferencing-in-skype-for-business-server"></a>Pianificare le conferenze in Skype for Business Server
  
@@ -41,7 +41,7 @@ In questo argomento sono incluse le sezioni seguenti:
 
 In Skype for Business Server sono disponibili quattro tipi di conferenze: conferenze Web, conferenze audio e video (A/V), conferenze telefoniche con accesso esterno e conferenze di messaggistica istantanea. 
   
-È possibile scegliere di abilitare tutti i tipi di conferenza o di utilizzare un solo tipo, a seconda delle proprie esigenze. Ad esempio, è possibile abilitare tutti i tipi, incluse le conferenze telefoniche con accesso esterno, per consentire agli utenti che non sono in grado di partecipare a una conferenza con un client Skype for Business di chiamare e partecipare all'audio della riunione da un telefono. Quando si distribuisce Skype for Business Server, le funzionalità di conferenza di messaggistica istantanea vengono distribuite automaticamente. è possibile specificare se distribuire conferenze Web, A/V e con accesso esterno utilizzando Generatore di topologie. Per ulteriori informazioni, vedere [Deploy conferencing in Skype for Business Server](../../deploy/deploy-conferencing/deploy-conferencing.md). 
+È possibile scegliere di abilitare tutti i tipi di conferenza o di utilizzare un solo tipo, a seconda delle proprie esigenze. Ad esempio, è possibile abilitare tutti i tipi, incluse le conferenze telefoniche con accesso esterno, per consentire agli utenti che non sono in grado di partecipare a una conferenza con un client Skype for Business di chiamare e partecipare all'audio della riunione da un telefono. Quando si distribuisce Skype for Business Server, le funzionalità di conferenza di messaggistica istantanea vengono distribuite automaticamente. è possibile specificare se distribuire conferenze Web, A/V e con accesso esterno utilizzando Generatore di topologie. Per ulteriori informazioni, vedere [Deploy conferencing in Skype for Business Server.](../../deploy/deploy-conferencing/deploy-conferencing.md) 
   
 Nelle sottosezioni seguenti vengono descritte le funzionalità e le funzionalità di ogni tipo di conferenza.
   
@@ -75,7 +75,7 @@ Le conferenze audio e video consentono audio e video nella riunione. L'audio con
     
 - **Aggiunta di un utente tramite chiamata in uscita.** I relatori e i partecipanti a cui è stata concessa l'autorizzazione possono aggiungere numeri PSTN alle conferenze e disporre della chiamata in uscita per la conferenza a tali numeri.
     
-  Skype for Business Server offre diverse funzionalità che gli utenti possono utilizzare per configurare l'esperienza di videoconferenza per l'utente, tra cui:
+  Skype for Business Server sono disponibili diverse funzionalità che gli utenti possono utilizzare per configurare l'esperienza di videoconferenza per l'utente, tra cui:
   
 - **Visualizzazione Raccolta.** Nelle conferenze video con più di due persone, gli utenti visualizzano automaticamente tutti gli utenti della conferenza. Se alla conferenza sono presenti più di cinque partecipanti, il video dei partecipanti più attivi viene visualizzato nella riga superiore e solo la foto viene visualizzata per gli altri partecipanti. Il video con più parti è attivato per impostazione predefinita.
     
@@ -103,7 +103,7 @@ Di seguito sono riportati i componenti che supportano le funzionalità di confer
     
 - **applicazione Annuncio conferenza.** Il applicazione Annuncio conferenza è un'applicazione di comunicazione unificata che riproduce toni e istruzioni ai partecipanti PSTN su determinate azioni, ad esempio quando i partecipanti a partecipare o uscire da una conferenza, i partecipanti vengono disattivati o disattivati, qualcuno entra nella sala di attesa della conferenza o la conferenza è bloccata o sbloccata. applicazione Annuncio conferenza supporta anche comandi DTMF (Dual Tone Multi-Frequency) dalla tastiera del telefono. Il applicazione Annuncio conferenza viene installato e attivato automaticamente per impostazione predefinita quando si abilitano le conferenze telefoniche con accesso esterno.
     
-- **Pagina Servizi di conferenza telefonica Impostazioni accesso esterno.** Nella pagina Impostazioni conferenza telefonica con accesso esterno vengono visualizzati i numeri di accesso esterno delle conferenze con le lingue disponibili, le informazioni sulla conferenza assegnate (ovvero per le riunioni che non devono essere pianificate) e i controlli DTMF in conferenza e supporta la gestione del PIN (Personal Identification Number) e delle informazioni di conferenza assegnate. La pagina Servizi di Impostazioni accesso esterno viene installata automaticamente come parte dei servizi Web.
+- **Pagina Servizi di conferenza telefonica Impostazioni accesso esterno.** Nella pagina Impostazioni conferenza telefonica con accesso esterno vengono visualizzati i numeri di accesso esterno per conferenze con le rispettive lingue disponibili, le informazioni sulla conferenza assegnate (ovvero per le riunioni che non devono essere pianificate) e i controlli DTMF in conferenza e supporta la gestione del PIN (Personal Identification Number) e delle informazioni di conferenza assegnate. La pagina Servizi di Impostazioni accesso esterno viene installata automaticamente come parte dei servizi Web.
     
 - **Mediation Server e gateway PSTN.** Per le conferenze telefoniche con accesso esterno è necessario un Mediation Server per tradurre la segnalazione (e i supporti in alcune configurazioni) tra Skype for Business Server e il gateway PSTN e un gateway PSTN per tradurre la segnalazione e i supporti tra il Mediation Server e il gateway PSTN. Per le conferenze telefoniche con accesso esterno, è necessario distribuire almeno un server Mediation Server e almeno uno dei componenti seguenti:
     
@@ -114,13 +114,13 @@ Di seguito sono riportati i componenti che supportano le funzionalità di confer
   - SBC (Session Border Controller), per un provider di servizi di telefonia Internet a cui viene eseguita la connessione tramite la configurazione di un trunk SIP
     
   > [!NOTE]
-  > Se si distribuisce anche VoIP aziendale, Mediation Server e gateway PSTN fanno parte della VoIP aziendale distribuzione. Se non si distribuisce VoIP aziendale, è necessario distribuire almeno un server Mediation Server e un gateway PSTN, un sistema IP-PBX o un servizio SBC per le conferenze telefoniche con accesso esterno. 
+  > Se si distribuiscono anche VoIP aziendale, Mediation Server e gateway PSTN fanno parte della VoIP aziendale distribuzione. Se non si distribuisce VoIP aziendale, è necessario distribuire almeno un server Mediation Server e un gateway PSTN, un sistema IP-PBX o un servizio SBC per le conferenze telefoniche con accesso esterno. 
   
 - **Archivio file.** L'archivio file viene utilizzato per i file audio dei nomi registrati. Si tratta di un componente standard di ogni distribuzione Enterprise Edition o Standard Edition.
     
 - **Archivio utente.** L'archivio utente viene usato per archiviare i PIN Skype for Business Server utente. I PIN vengono sottoposti a hashing. Si tratta di un componente standard di ogni distribuzione Enterprise Edition o Standard Edition.
     
-- **Office Server Web Apps.** Per utilizzare le funzionalità di conferenza Web, gli amministratori devono installare Office Web Apps Server e devono configurare Skype for Business Server per comunicare con Office Web Apps Server.
+- **Office Server Web Apps.** Per poter utilizzare le funzionalità di conferenza Web, gli amministratori devono installare Office Web Apps Server e devono configurare Skype for Business Server per comunicare con Office Web Apps Server.
     
 ## <a name="conferencing-policies"></a>Criteri conferenza
 
@@ -128,15 +128,15 @@ Per applicare i criteri dell'organizzazione e controllare l'utilizzo della largh
   
 ## <a name="support-for-large-meetings"></a>Supporto per riunioni di grandi dimensioni
 
-La dimensione delle riunioni che Skype for Business Server può supportare dipende dal fatto che le conferenze siano ospitate in un pool condiviso o dedicato:
+Le dimensioni delle riunioni che Skype for Business Server possono supportare dipendono dal fatto che le conferenze siano ospitate in un pool condiviso o dedicato:
   
 - In un pool condiviso, Skype for Business Server può ospitare riunioni con un massimo di 250 utenti. Un pool condiviso è un pool che ospita tutti Skype for Business Server di lavoro, tra cui messaggistica istantanea e presenza, conferenze e VoIP aziendale. 
     
-- In un pool dedicato, Skype for Business Server può supportare le riunioni con un massimo di 1000 partecipanti che utilizzano conferenze Web e audio/video (A/V), inclusa la condivisione di presentazioni PowerPoint video. Ciò richiede un pool dedicato per supportare riunioni di grandi dimensioni e gestito in modo da assicurare l'hosting di una sola riunione di grandi dimensioni alla volta. 
+- In un pool dedicato, Skype for Business Server può supportare riunioni con un massimo di 1000 partecipanti che utilizzano conferenze Web e audio/video (A/V), inclusa la condivisione di presentazioni PowerPoint video. Ciò richiede un pool dedicato per supportare riunioni di grandi dimensioni e gestito in modo da assicurare l'hosting di una sola riunione di grandi dimensioni alla volta. 
     
 Per ulteriori informazioni sulla gestione di riunioni di grandi dimensioni, vedere [Plan for large meetings in Skype for Business Server](large-meetings.md).
   
-Se l'organizzazione richiede funzionalità di riunione più grandi, è consigliabile implementare un ambiente ibrido che si avvale di Riunione Skype Broadcast, un servizio online che fa parte di Microsoft 365 e Office 365. Riunione Skype La trasmissione consente agli utenti di ospitare e trasmettere riunioni a un pubblico online di grandi dimensioni fino a 10.000 partecipanti. L'utilizzo di Riunione Skype Broadcast richiede che Skype for Business Server sia già configurato in una configurazione ibrida con un'organizzazione Microsoft 365 o Office 365 di produzione. Tutti gli utenti devono disporre di un tenant online definito come prerequisito. Se si è interessati alla distribuzione di una soluzione ibrida in grado di sfruttare Riunione Skype Broadcast, vedere [Configure your on-premises deployment for Riunione Skype Broadcast](../../deploy/configure-skype-meeting-broadcast.md).
+Se l'organizzazione richiede funzionalità di riunione più grandi, è consigliabile implementare un ambiente ibrido che si avvale di Riunione Skype Broadcast, un servizio online che fa parte di Microsoft 365 e Office 365. Riunione Skype La trasmissione consente agli utenti di ospitare e trasmettere riunioni a un pubblico online di grandi dimensioni fino a 10.000 partecipanti. L'utilizzo di Riunione Skype Broadcast richiede che Skype for Business Server sia già configurato in una configurazione ibrida con un'organizzazione Microsoft 365 o Office 365 di produzione. Tutti gli utenti devono disporre di un tenant online definito come prerequisito. Se si desidera distribuire una soluzione ibrida in grado di sfruttare Riunione Skype Broadcast, vedere [Configure your on-premises deployment for Riunione Skype Broadcast](../../deploy/configure-skype-meeting-broadcast.md).
   
 ## <a name="determine-your-organizations-needs"></a>Determinare le esigenze delle organizzazioni
 
@@ -147,15 +147,15 @@ Per determinare le funzionalità di conferenza da distribuire, è necessario con
   
 - **Si desiderano abilitare le conferenze Web, che includono funzionalità di collaborazione sui documenti e condivisione di applicazioni?**
     
-    In tal caso, è necessario abilitare le conferenze per il pool Front End utilizzando lo Strumento di pianificazione o generatore di topologie. Per ulteriori informazioni, vedere [Deploy conferencing in Skype for Business Server](../../deploy/deploy-conferencing/deploy-conferencing.md).
+    In tal caso, è necessario abilitare le conferenze per il pool Front End utilizzando lo Strumento di pianificazione o generatore di topologie. Per ulteriori informazioni, vedere [Deploy conferencing in Skype for Business Server.](../../deploy/deploy-conferencing/deploy-conferencing.md)
     
     Per la condivisione di applicazioni è richiesta e viene utilizzata più larghezza di banda di rete rispetto alla collaborazione sui documenti. Skype for Business Server fornisce un meccanismo di limitazione per controllare ogni sessione di condivisione delle applicazioni. Per impostazione predefinita, il limite è impostato su 1,5 Kb/secondo per ogni sessione. Se non si desidera abilitare la condivisione delle applicazioni ma si desidera collaborare ai documenti, è possibile abilitare le conferenze e utilizzare i criteri di conferenza per disabilitare la condivisione delle applicazioni. Per informazioni dettagliate sulla configurazione dei criteri di conferenza, vedere [Manage conferencing policies in Skype for Business Server](../../manage/conferencing/conferencing-policies.md).
     
-    Per consentire agli utenti di condividere PowerPoint presentazioni, è necessario configurare Office Web Apps Server. Per informazioni dettagliate sulla configurazione Office server Web Apps, vedere [Configure integration with Office Web Apps Server in Skype for Business Server](../../deploy/deploy-conferencing/office-web-app-server.md).
+    Per consentire agli utenti di condividere PowerPoint presentazioni, è necessario configurare Office Web Apps Server. Per informazioni dettagliate sulla configurazione di Office Web Apps Server, vedere [Configure integration with Office Web Apps Server in Skype for Business Server](../../deploy/deploy-conferencing/office-web-app-server.md).
     
 - **Si desidera abilitare le conferenze audio e video?**
     
-    In tal caso, è necessario abilitare le conferenze per il pool Front End utilizzando lo Strumento di pianificazione o generatore di topologie. Per ulteriori informazioni, vedere [Deploy conferencing in Skype for Business Server](../../deploy/deploy-conferencing/deploy-conferencing.md).
+    In tal caso, è necessario abilitare le conferenze per il pool Front End utilizzando lo Strumento di pianificazione o generatore di topologie. Per ulteriori informazioni, vedere [Deploy conferencing in Skype for Business Server.](../../deploy/deploy-conferencing/deploy-conferencing.md)
     
     Le conferenze audio e video richiedono e utilizzano più larghezza di banda di rete rispetto alle conferenze Web (che includono la collaborazione di documenti e la condivisione di applicazioni). Se non si desidera abilitare le conferenze audio e video ma si desidera abilitare le conferenze Web, è possibile abilitare le conferenze e utilizzare i criteri di conferenza per disabilitare le conferenze audio/video.
     

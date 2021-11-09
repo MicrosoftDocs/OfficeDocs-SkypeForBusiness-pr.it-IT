@@ -2,7 +2,7 @@
 title: Distribuire Skype connettività in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: fb51860b-6f46-4b71-b8c8-682d0982d36d
 description: 'Riepilogo: informazioni su come connettersi Skype for Business Server con Skype consumer. Nota anche come Skype connettività.'
-ms.openlocfilehash: 003e9a69dc4213b662795b0570afb3ca152d7e00
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: c8bdbf96fcbf0831433ad2274d8ab89911df1de5
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60751305"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60835824"
 ---
 # <a name="deploy-skype-connectivity-in-skype-for-business-server"></a>Distribuire Skype connettività in Skype for Business Server
 
@@ -32,7 +32,7 @@ Skype La connettività Skype for Business agli utenti la possibilità di cercare
   
 ## <a name="skype-directory-search"></a>Skype Ricerca directory
 
-Skype La funzionalità di ricerca directory Skype for Business gli utenti con la possibilità di cercare Skype contatti. La funzionalità di ricerca consente agli utenti di eseguire ricerche utilizzando quanto segue:
+Skype La funzionalità di ricerca directory Skype for Business agli utenti la possibilità di cercare Skype contatti. La funzionalità di ricerca consente agli utenti di eseguire ricerche utilizzando quanto segue:
   
 - **Search by display name, example "John Doe"** - This could return many results, so you might not find what you are looking for.
     
@@ -49,17 +49,17 @@ Skype La funzionalità di ricerca directory Skype for Business gli utenti con la
   
 ## <a name="supported-deployment-matrix-for-skype-directory-search"></a>Matrice di distribuzione supportata per Skype Directory Search
 
-Nella tabella seguente viene descritto il supporto per Skype ricerca directory.
+Nella tabella seguente viene descritto il supporto per Skype ricerca nella directory.
   
 
 |&nbsp;|Skype for Business Server Front End|Lync Server 2013 (o versione precedente) Front End|Commenti|
 |:-----|:-----|:-----|:-----|
 |Skype for Business Server Edge   |Supportato   |Non supportato   |Skype for Business Server e Edge sono prerequisiti per Skype Ricerca directory   |
-|Skype for Business Server Edge + Lync Server 2013 Edge distribuito affiancato   |Supportato   |Non supportato   |Skype Il traffico di ricerca directory fluisce Skype for Business Server server Edge. Il traffico federativo passa attraverso il perimetro configurato dall'amministratore. Ad esempio, l'amministratore potrebbe scegliere di continuare a inviare il traffico federativo tramite i server Edge di Lync Server 2013 che non supportano la ricerca Skype directory.   |
+|Skype for Business Server Edge + Lync Server 2013 Edge distribuito affiancato   |Supportato   |Non supportato   |Skype Il traffico di ricerca directory fluisce Skype for Business Server server Edge. Il traffico federativo passa attraverso il perimetro configurato dall'amministratore. Ad esempio, l'amministratore potrebbe scegliere di continuare a inviare il traffico federativo attraverso i server Edge di Lync Server 2013 che non supportano la ricerca Skype directory.   |
 |Lync Server 2013 (o versione precedente) Edge   |Non supportato   |Non supportato   ||
    
 > [!NOTE]
-> Il servizio Rubrica in Skype for Business Server Front End trova il server perimetrale in base all'esistenza della porta di ricerca Skype 4443 nel server perimetrale. 
+> Il servizio Rubrica in Skype for Business Server Front End trova il server perimetrale in base all'esistenza della porta Skype Search 4443 nel server perimetrale. 
   
 > [!NOTE]
 > Nel caso in cui un cliente abbia più siti nella distribuzione locale e se ha distribuito un solo server o pool di server perimetrali di Skype for Business Server, il traffico di ricerca da tutti i siti passa attraverso il singolo server perimetrale disponibile. L'amministratore deve assicurarsi che i pool di tutti i siti possano accedere al server o al pool di server perimetrali Skype for Business Server distribuito. 
@@ -79,7 +79,7 @@ Skype La connettività è anche una funzionalità di Skype for Business Online, 
   
 For Microsoft 365 Midsize Business, Office 365 Enterprise, Microsoft 365 Education, and Office 365 for Government: Sign in to the interfaccia di amministrazione di Microsoft 365 and passare all'Skype for Business di amministrazione. Passare a Comunicazioni esterne. In Provider di servizi di messaggistica istantanea pubblica fare clic su Abilita. Se si desidera controllare l'accesso dei singoli utenti Skype connettività, è possibile farlo modificando le impostazioni delle comunicazioni esterne dei singoli utenti.
   
-Per Office 365 Small Business Premium: accedere a Office 365 e accedere a Servizio di amministrazione Impostazioni \> \> messaggistica istantanea, riunioni e conferenze. Attivare Comunicazioni esterne. L'opzione Comunicazioni esterne attiva la connettività Skype e le comunicazioni con altre organizzazioni che utilizzano Skype for Business.
+Per Office 365 Small Business Premium: accedere a Office 365 e accedere a Servizio di amministrazione Impostazioni \> \> messaggistica istantanea, riunioni e conferenze. Attivare Comunicazioni esterne. L'opzione Comunicazioni esterne attiva sia la connettività Skype che le comunicazioni con altre organizzazioni che utilizzano Skype for Business.
   
 Per ulteriori informazioni sull'Skype for Business online, vedere:
   
@@ -93,16 +93,16 @@ Per ulteriori informazioni sull'Skype for Business online, vedere:
     
 ## <a name="deploying-skype-connectivity-for-skype-for-business-server"></a>Distribuzione della Skype connettività per Skype for Business Server
 
-Skype for Business Server'architettura di accesso federativo per supportare la connettività con Skype. Questa connettività consente agli Skype for Business Server utenti di aggiungere Skype. Skype client possono anche aggiungere Skype for Business utenti al proprio elenco contatti. In base ai criteri impostati a livello amministrativo Skype for Business Server gli utenti saranno in grado di comunicare utilizzando la messaggistica istantanea, vedere la presenza reciproca e avviare chiamate audio e video. Skype connettività è anche una funzionalità di Skype for Business Online e può essere abilitata per i clienti di Skype for Business Online dall'Skype for Business Administration Center all'interno del interfaccia di amministrazione di Microsoft 365.
+Skype for Business Server'architettura di accesso federativo per supportare la connettività con Skype. Questa connettività consente agli Skype for Business Server utenti di aggiungere Skype. Skype client possono anche aggiungere Skype for Business utenti all'elenco contatti. In base ai criteri impostati a livello amministrativo Skype for Business Server gli utenti saranno in grado di comunicare utilizzando la messaggistica istantanea, vedere la presenza dell'altro e avviare chiamate audio e video. Skype connettività è anche una funzionalità di Skype for Business Online e può essere abilitata per i clienti di Skype for Business Online dall'Skype for Business Administration Center all'interno del interfaccia di amministrazione di Microsoft 365.
   
 > [!NOTE]
-> Se Skype for Business Server è già configurata per connettersi a Windows Messenger tramite PIC (Public Instant Messaging Connectivity), la distribuzione è già configurata per la Skype messaggistica unificata. L'unica modifica da prendere in considerazione è rinominare la voce PIC di Messenger esistente come Skype. 
+> Se Skype for Business Server è già configurata per la connessione a Windows Messenger tramite PIC (Public Instant Messaging Connectivity), la distribuzione è già configurata per la Skype messaggistica unificata. L'unica modifica da prendere in considerazione è rinominare la voce PIC di Messenger esistente come Skype. 
   
 ### <a name="the-skype-for-business-server-public-im-connectivity-provisioning-site-is-no-longer-available"></a>Il Skype for Business Server di provisioning della connettività di messaggistica istantanea pubblica non è più disponibile
 
 Il sito utilizzato in precedenza per effettuare manualmente il provisioning della federazione tra le distribuzioni locali di Skype for Business e Skype non è più necessario e verrà arrestato il 15/08/2019. La federazione Skype ora utilizza l'individuazione di partner federati, che è lo stesso meccanismo necessario per la federazione con Skype for Business Online.
 
-La comunicazione tra qualsiasi distribuzione di Skype for Business locale e gli utenti di Skype tramite l'infrastruttura di messaggistica istantanea pubblica esistente ora richiede che la configurazione del server perimetrale locale sia compatibile con Skype for Business Online.
+La comunicazione tra qualsiasi distribuzione di Skype for Business locale e utenti di Skype tramite l'infrastruttura di messaggistica istantanea pubblica esistente ora richiede che la configurazione del server perimetrale locale sia compatibile con Skype for Business Online.
 
 > [!NOTE]
 > La maggior parte dei clienti non ha bisogno di alcuna azione, incluse tutte le distribuzioni federate con Skype for Business Online.
@@ -120,16 +120,16 @@ Le distribuzioni locali sono necessarie per pubblicare un record SRV DNS federat
 
 Ulteriori indicazioni sui certificati esterni sono disponibili in [Pianificazione dei certificati.](../plan-your-deployment/edge-server-deployments/edge-environmental-requirements.md#certificate-planning)
 
-#### <a name="faqs"></a>Domande Frequenti
+#### <a name="faqs"></a>Domande frequenti
 
 **Perché il sito Web di provisioning viene arrestato?**
 Il meccanismo di provisioning della messaggistica istantanea pubblica (PIC.LYNC.COM) distribuito nel 2006 non è più utilizzabile e verrà arrestato il 15/08/2019. La federazione di messaggistica istantanea pubblica presupporrà invece lo stesso modello di federazione utilizzato da Skype for Business Online, noto come "individuazione partner", in base al quale una distribuzione locale è pubblicamente individuabile dai relativi record DNS SRV federativi.
 
 **Questa modifica significa che la federazione di messaggistica istantanea pubblica è deprecata?**
-No. La federazione di messaggistica istantanea pubblica continuerà a essere supportata per molti anni, probabilmente finché il Skype for Business locale non raggiungerà la fine del ciclo di vita.
+No. La federazione della messaggistica istantanea pubblica continuerà a essere supportata per molti anni, probabilmente fino a quando il Skype for Business locale non raggiungerà la fine del ciclo di vita.
 
 **La nostra azienda ha una relazione ibrida (spazio di indirizzi condiviso) con Skype for Business Online, ne siamo interessati?**
-No, poiché si sta già federatendo con Skype for Business Online, questa modifica non influisce sull'utente.
+No, poiché si sta già federazione con Skype for Business Online, questa modifica non influisce sull'utente.
  
 **Questo cambiamento significa che la società deve abilitare la federazione con Skype for Business Online?**
 No. Se le impostazioni del proxy del server perimetrale non abilitano la federazione con il provider di hosting Skype for Business Online (sipfed.online.lync.com), questa modifica non influisce su questo. Tuttavia, gli stessi requisiti DNS e certificati che si applicano alla federazione con Skype for Business Online ora si applicano anche alla federazione con Skype utenti.
@@ -151,12 +151,12 @@ Esistono tre passaggi principali necessari per abilitare la federazione e PIC. Q
     
 #### <a name="1-configure-federation-and-pic"></a>1. Configurare Federazione e PIC
 
-La federazione è necessaria per consentire Skype utenti di comunicare con Skype for Business utenti dell'organizzazione. La connettività PIC (Public Instant Messaging Connectivity) è una classe di federazione e deve essere configurata per consentire agli utenti Skype for Business di comunicare con Skype utenti. La federazione e pic vengono configurate utilizzando il Skype for Business Server pannello di controllo.
+La federazione è necessaria per consentire Skype utenti di comunicare con Skype for Business utenti dell'organizzazione. La connettività PIC (Public Instant Messaging Connectivity) è una classe di federazione e deve essere configurata per consentire agli utenti Skype for Business di comunicare con Skype utenti. La federazione e pic sono configurate tramite il Skype for Business Server pannello di controllo.
   
 > [!NOTE]
-> La federazione PIC non è più supportata dalle versioni dei prodotti precedenti a Lync Server 2010 (Live Communication Server, Office Communications Server). Le piattaforme supportate per la federazione PIC includono Skype for Business Server, Lync Server 2013 e Lync Server 2010. 
+> La federazione PIC non è più supportata dalle versioni precedenti a Lync Server 2010 (Live Communication Server, Office Communications Server). Le piattaforme supportate per la federazione PIC includono Skype for Business Server, Lync Server 2013 e Lync Server 2010. 
   
-La federazione è necessaria per consentire Skype utenti di comunicare con Skype for Business utenti dell'organizzazione. Pic (Public Instant Messaging Connectivity) è una classe di federazione e deve essere configurato per consentire agli utenti Skype for Business Server di comunicare con Skype utenti. La federazione e pic vengono configurate utilizzando la finestra di dialogo di configurazione di Edge Skype for Business Server pannello di controllo, come illustrato nella figura.
+La federazione è necessaria per consentire Skype utenti di comunicare con Skype for Business utenti dell'organizzazione. Pic (Public Instant Messaging Connectivity) è una classe di federazione e deve essere configurato per consentire agli utenti Skype for Business Server di comunicare con Skype utenti. La federazione e pic vengono configurate utilizzando la finestra di dialogo di configurazione di Edge del Skype for Business Server pannello di controllo, come illustrato nella figura.
   
 ![Definire un nuovo pool di server perimetrali.](../media/32d7f255-c6ad-426d-96c2-2ef4d81f3b51.png)
   
@@ -167,7 +167,7 @@ Vengono completate le attività amministrative che devono essere eseguite nel se
   
 #### <a name="2-configure-at-least-one-policy-to-support-federated-user-access"></a>2. Configurare almeno un criterio per supportare l'accesso utente federato
 
-Utilizzando il Skype for Business Server, un amministratore deve configurare uno o più criteri di accesso degli utenti esterni per controllare se gli Skype utenti possono collaborare con utenti Skype for Business Server interni.
+Utilizzando il Pannello di controllo di Skype for Business Server, un amministratore deve configurare uno o più criteri di accesso utente esterno per controllare se gli Skype utenti possono collaborare con utenti Skype for Business Server interni.
   
 #### <a name="3-configure-the-skype-pic-provider-setting"></a>3. Configurare l'impostazione Skype provider PIC
 
@@ -224,10 +224,10 @@ Nella tabella seguente viene descritto lo stato di interoperabilità tra la vers
 |Skype Client|Aggiungere contatti, messaggistica istantanea, presenza, audio e videochiamata|Commento|
 |:-----|:-----|:-----|
 |Skype Windows Desktop   |7.6 o versione successiva, Windows XP e versioni successive   |**NEW**: Supporto aggiunto per Windows Skype client in esecuzione su Windows XP e Windows Vista (richiede la versione client più recente **7.26 o successiva)**  |
-|Skype Mobile - Android Telefono e Tablet   |6.19 o versione successiva, con sistema operativo Android versione 4.0.3 o successiva   |I dispositivi con specifiche basse potrebbero non supportare le videochiamate   |
+|Skype Mobile - Android Telefono tablet   |6.19 o versione successiva, con sistema operativo Android versione 4.0.3 o successiva   |I dispositivi con specifiche basse potrebbero non supportare le videochiamate   |
 |Skype Mobile - iOS   |6.11 o versione successiva, su IOS 7 o versione successiva   |Non sono supportati iPhone 4 e versioni precedenti, iPod 4° generazione e versioni precedenti, iPad prima generazione   |
 |Skype Mac   |7.19 o versione successiva, in Mac OS X 10.9 (Mavericks) o versione successiva   |Richiede Mac OSX 10.9 o versione successiva   |
-|Skype Universal Windows App (Windows 10) Desktop e mobile   |Windows 10 (aggiornamento redstone 1 o versione successiva)   |Windows L'app universale riceverà l'aggiornamento nell'autunno 2016 aggiungendo il supporto per l'interoperabilità   |
+|Skype Universal Windows App (Windows 10) Desktop e mobile   |Windows 10 (aggiornamento Redstone 1 o versione successiva)   |Windows L'app universale riceverà l'aggiornamento nell'autunno 2016 aggiungendo il supporto per l'interoperabilità   |
    
 Nella tabella seguente viene descritto lo stato di interoperabilità tra la versione più recente di Skype for Business e la versione più recente di Skype consumer. 
   

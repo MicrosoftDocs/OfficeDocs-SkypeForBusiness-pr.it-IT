@@ -2,7 +2,7 @@
 title: Gestire l'autenticazione da server a server (OAuth) e le applicazioni partner in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 38848373-c8c6-4097-bf7f-699fe471348d
 description: 'Riepilogo: gestire OAuth e le applicazioni partner in Skype for Business Server.'
-ms.openlocfilehash: d49006bd01de80bd23d8f70954478b6b6a2bbea4
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 5a5141af7473f1d49e1c19e2a454e1e46d9f65d5
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60760744"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856693"
 ---
 # <a name="manage-server-to-server-authentication-oauth-and-partner-applications-in-skype-for-business-server"></a>Gestire l'autenticazione da server a server (OAuth) e le applicazioni partner in Skype for Business Server
  
@@ -37,15 +37,15 @@ Skype for Business Server supporta tre scenari di autenticazione da server a ser
   
 - Configurare l'autenticazione da server a server tra un'installazione locale di Skype for Business Server e un'installazione locale di Exchange e/o SharePoint Server.
     
-- Configurare l'autenticazione da server a server tra una coppia di componenti Microsoft 365 o Office 365 (ad esempio, tra Microsoft Exchange Server e Skype for Business Server o tra Skype for Business Server e SharePoint).
+- Configurare l'autenticazione da server a server tra una coppia di componenti di Microsoft 365 o Office 365 (ad esempio, tra Microsoft Exchange Server e Skype for Business Server o tra Skype for Business Server e SharePoint).
     
-- Configurare l'autenticazione da server a server in un ambiente cross-premise( ovvero l'autenticazione da server a server tra un server locale e un componente Microsoft 365 o Office 365).
+- Configurare l'autenticazione da server a server in un ambiente cross-premise, ovvero l'autenticazione da server a server tra un server locale e un componente Microsoft 365 o Office 365).
     
 Si noti che, a questo punto, solo Exchange 2013, SharePoint Server, Lync Server 2013, Skype for Business Server 2015 e Skype for Business 2019 supportano l'autenticazione da server a server; se non si esegue uno di questi server, non sarà possibile implementare completamente l'autenticazione OAuth.
   
 È inoltre necessario notare che l'autenticazione da server a server è facoltativa: se Skype for Business Server non deve comunicare con altri server (ad esempio Exchange), l'autenticazione da server a server può essere ignorata del tutto. Se l'autenticazione da server a server è già configurata per Lync Server 2013 e altre applicazioni, non è necessario eseguire di nuovo questa operazione per Skype for Business Server. 
   
-Tuttavia, l'autenticazione da server a server è necessaria se si desidera utilizzare alcune delle funzionalità di Skype for Business Server, ad esempio l'"archivio contatti unificato". Con l'archivio contatti unificato, Skype for Business Server le informazioni di contatto vengono archiviate in Exchange anziché in Skype for Business Server; in questo modo gli utenti possono disporre di un singolo set di contatti facilmente accessibile da Skype for Business, Outlook o Outlook Web Access. Poiché l'archivio contatti unificato richiede Skype for Business Server condividere le informazioni con Exchange, è necessario utilizzare l'autenticazione da server a server per distribuire la funzionalità. L'autenticazione da server a server è necessaria anche se si sceglie di utilizzare l'archiviazione Exchange, in cui le trascrizioni delle sessioni di messaggistica istantanea vengono salvate come messaggi di posta elettronica Exchange anziché come singoli record di database.
+Tuttavia, l'autenticazione da server a server è necessaria se si desidera utilizzare alcune delle funzionalità di Skype for Business Server, ad esempio l'"archivio contatti unificato". Con l'archivio contatti unificato, Skype for Business Server le informazioni di contatto vengono archiviate in Exchange anziché in Skype for Business Server; in questo modo gli utenti possono disporre di un unico set di contatti facilmente accessibile da Skype for Business, Outlook o Outlook Web Access. Poiché l'archivio contatti unificato richiede Skype for Business Server condividere informazioni con Exchange, è necessario utilizzare l'autenticazione da server a server per distribuire la funzionalità. L'autenticazione da server a server è necessaria anche se si sceglie di utilizzare l'archiviazione Exchange, in cui le trascrizioni delle sessioni di messaggistica istantanea vengono salvate come messaggi di posta elettronica Exchange anziché come singoli record di database.
   
 Perché la Microsoft 365 o Office 365 di Skype for Business Server comunichi con la controparte Exchange, Skype for Business Server deve prima ottenere un token di sicurezza dal server di autorizzazione. Skype for Business Server quindi usa il token di sicurezza per identificarsi per Exchange. Le Microsoft 365 o Office 365 di Exchange devono eseguire lo stesso processo per comunicare con Skype for Business Server.
   
@@ -58,7 +58,7 @@ Per configurare l'autenticazione da server a server per un'implementazione local
 - Configurare il server con cui Skype for Business Server comunicherà come "applicazione partner". Ad esempio, se Skype for Business Server deve comunicare con Exchange, sarà necessario configurare Exchange essere un'applicazione partner.
     
 > [!NOTE]
-> Un"applicazione partner" è qualsiasi applicazione con cui Skype for Business Server possibile scambiare direttamente token di sicurezza, senza dover passare attraverso un server di token di sicurezza di terze parti. 
+> Un'applicazione partner è qualsiasi applicazione Skype for Business Server può scambiare direttamente token di sicurezza senza dover passare attraverso un server di token di sicurezza di terze parti. 
   
 Tieni presente che OAuth è una parte fondamentale del prodotto e non può essere disabilitato o rimosso.
   

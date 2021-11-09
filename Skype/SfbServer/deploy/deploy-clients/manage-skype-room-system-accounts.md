@@ -1,7 +1,7 @@
 ---
 title: Gestire gli account Skype Room System
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -12,24 +12,24 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 7b389efc-9685-42e9-9504-be437d20ff57
 ms.collection: M365-voice
-description: Leggere questo argomento per informazioni su come gestire gli Skype di sistema room.
-ms.openlocfilehash: aa25b61f8f42043d9bcabe99ff20c1fcf6d1950e
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+description: Leggere questo argomento per informazioni su come gestire Skype di sistema room.
+ms.openlocfilehash: 2ae91a977a837e2b1b54db8d127551b5f53bb1a8
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60741482"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864453"
 ---
 # <a name="manage-skype-room-system-accounts"></a>Gestire gli account Skype Room System
  
-Leggere questo argomento per informazioni su come gestire gli Skype di sistema room. 
+Leggere questo argomento per informazioni su come gestire Skype di sistema room. 
 
 > [!NOTE]
-> Microsoft Teams Rooms è un prodotto diverso con dipendenze e procedure di distribuzione diverse. Per informazioni sulle Microsoft Teams Rooms, vedere panoramica Microsoft Teams Rooms [gestione dei dati.](/microsoftteams/rooms/rooms-manage)
+> Microsoft Teams Rooms è un prodotto diverso con dipendenze e procedure di distribuzione diverse. Per informazioni su Microsoft Teams Rooms, vedere panoramica Microsoft Teams Rooms [gestione dei dati.](/microsoftteams/rooms/rooms-manage)
   
 ## <a name="move-the-skype-room-system-account-between-pools"></a>Spostare l'account Skype room tra pool
 
-Se è necessario spostare l'account di Skype Room System da un pool di Skype for Business Server Skype for Business Server a un altro , ad esempio durante gli aggiornamenti, utilizzare il comando seguente per spostare il pool di account di Skype Room System: 
+Se è necessario spostare l'account di Skype Room System da un pool di Skype for Business Server a un altro (ad esempio, durante gli aggiornamenti), utilizzare il comando seguente per spostare il pool di account di Skype Room System: 
   
 ```powershell
 Move-CsMeetingRoom -Identity LRS01 -Target "LYNCPool15-2.contoso.com"
@@ -45,4 +45,4 @@ Disable-CsMeetingRoom LRS01 -domaincontroller DC-ND-001.contoso.com
 
 ## <a name="optional-create-a-skype-room-system-administrator-group-in-active-directory"></a>Facoltativo: creare un Skype amministratore del sistema room in Active Directory
 
-Ogni Skype room System client che si aggiunge al dominio può essere gestito completamente da un utente di dominio con diritti di amministratore locale nel PC dell'appliance Skype Room System. Pertanto, è possibile creare un gruppo di amministratori dedicato in Active Directory e assegnare a questo gruppo i diritti amministrativi durante la configurazione del nuovo computer Skype Room System.
+Ogni Skype del sistema room che si aggiunge al dominio può essere gestito completamente da un utente di dominio con diritti di amministratore locale nel PC dell'appliance Skype Room System. Pertanto, è possibile creare un gruppo di amministratori dedicato in Active Directory e assegnare a questo gruppo i diritti amministrativi durante la configurazione del nuovo computer Skype Room System.

@@ -2,7 +2,7 @@
 title: Pianificare i requisiti di rete per Skype for Business
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 35c7bb3f-8e0f-48b7-8a2c-857d4b42a4c4
 description: 'Riepilogo: esaminare le considerazioni sui componenti di rete riportate di seguito prima di implementare Skype for Business Server.'
-ms.openlocfilehash: b2b8496b307111261c77f93d45d3332b42ead90d
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 3e5912cb00bb704afdfc5d568b66711a1ddf472f
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60777926"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60864703"
 ---
 # <a name="plan-network-requirements-for-skype-for-business"></a>Pianificare i requisiti di rete per Skype for Business
 
@@ -48,12 +48,12 @@ La scheda di rete di ogni server nella topologia Skype for Business Server deve 
 ## <a name="audiovideo-network-requirements"></a>Requisiti di rete audio/video
 <a name="AV_req"> </a>
 
-I requisiti di rete per audio/video (A/V) in una Skype for Business Server distribuzione includono quanto segue:Network requirements for audio/video (A/V) in a Skype for Business Server deployment include the following:
+I requisiti di rete per audio/video (A/V) in una Skype for Business Server distribuzione includono:
 
 - Se si distribuisce un singolo server perimetrale o un pool di server perimetrali utilizzando il bilanciamento del carico DNS, è possibile configurare il  _firewall_ esterno per eseguire nat (Network Address Translation). Non è possibile configurare il firewall interno _per_ eseguire NAT. Per informazioni dettagliate, vedere [Pianificazione di porte e firewall.](../edge-server-deployments/edge-environmental-requirements.md#port-and-firewall-planning)
 
     > [!IMPORTANT]
-    > Se si dispone di un pool di server perimetrali e si utilizza un servizio di bilanciamento del carico hardware, è necessario utilizzare gli indirizzi IP pubblici nei server perimetrali e non è possibile utilizzare NAT per i server o il pool nel dispositivo con nat,ad esempio un dispositivo firewall o un commutatore LAN. Per informazioni dettagliate, vedere [Edge Server scenarios in Skype for Business Server.](../edge-server-deployments/scenarios.md)
+    > Se si dispone di un pool di server perimetrali e si utilizza un servizio di bilanciamento del carico hardware, è necessario utilizzare gli indirizzi IP pubblici nei server perimetrali e non è possibile utilizzare NAT per i server o il pool nel dispositivo con nat,ad esempio un dispositivo firewall o un commutatore LAN. Per informazioni dettagliate, vedere [Edge Server scenarios in Skype for Business Server](../edge-server-deployments/scenarios.md).
 
 - Se nell'organizzazione è prevista un'infrastruttura di qualità del servizio (QoS), il sottosistema multimediale è progettato per essere utilizzato nell'infrastruttura esistente.
 
@@ -63,7 +63,7 @@ Per garantire una qualità multimediale ottimale, eseguire le operazioni seguent
 
 - Effettuare il provisioning dei collegamenti di rete per supportare la velocità effettiva di 65 kilobit al secondo (Kbps) per flusso audio e 500 Kbps per flusso video, se abilitati, durante i periodi di utilizzo di picco. Una sessione audio o video bidiredibile usa due flussi, quindi una semplice connessione audio/telefono richiederà 130 KBps per coprire ogni flusso. Il video utilizzerà allo stesso modo un totale di 1000 Kbps per effettuare una connessione a monte e a valle.
 
-- Per far fronte ai picchi imprevisti di traffico e all'aumento dell'utilizzo nel tempo, gli endpoint multimediali di Skype for Business Server possono adattarsi a diverse condizioni di rete e supportare una velocità effettiva tre volte superiore per audio e video mantenendo comunque una qualità accettabile. Non presupporre che questa adattabilità maschera il problema quando non viene eseguito il provisioning di una rete. In una rete con provisioning ridotto, la capacità degli endpoint multimediali di Skype for Business Server di gestire in modo dinamico diverse condizioni di rete (ad esempio, la perdita temporanea di pacchetti elevati) è ridotta.
+- Per far fronte ai picchi imprevisti di traffico e all'aumento dell'utilizzo nel tempo, gli endpoint multimediali di Skype for Business Server possono adattarsi a diverse condizioni di rete e supportare una velocità effettiva tre volte superiore per audio e video mantenendo comunque una qualità accettabile. Non presupporre che questa adattabilità maschera il problema quando non viene eseguito il provisioning di una rete. In una rete con provisioning ridotto, la capacità degli endpoint multimediali di Skype for Business Server di gestire in modo dinamico diverse condizioni di rete (ad esempio, perdita temporanea di pacchetti elevati) è ridotta.
 
 - Per i collegamenti di rete in cui il provisioning è molto costoso e difficile, potrebbe essere necessario prendere in considerazione il provisioning per un volume di traffico inferiore. In questo scenario, lasciare che l'elasticità degli endpoint multimediali Skype for Business Server assorba la differenza tra il volume di traffico e il livello di traffico di picco, al costo di una certa riduzione della qualità vocale. Inoltre, ci sarà una diminuzione della sala riunioni altrimenti disponibile per assorbire picchi improvvisi nel traffico.
 
@@ -114,7 +114,7 @@ Una parte importante della pianificazione della rete è garantire che la rete si
 ### <a name="media-traffic-network-usage"></a>Utilizzo della rete del traffico multimediale
 <a name="Net_req"> </a>
 
-L'utilizzo della larghezza di banda per il traffico multimediale può essere difficile da calcolare per la quantità di variabili diverse, ad esempio l'utilizzo di codec, la risoluzione e i livelli di attività. L'utilizzo della larghezza di banda è una funzione del codec utilizzato e dell'attività del flusso, che può variare a seconda degli scenari. Nella tabella seguente sono elencati i codec audio usati in genere in Skype for Business Server scenari.
+L'utilizzo della larghezza di banda per il traffico multimediale può essere difficile da calcolare per la quantità di variabili diverse, ad esempio l'utilizzo di codec, la risoluzione e i livelli di attività. L'utilizzo della larghezza di banda è una funzione del codec utilizzato e dell'attività del flusso, che può variare a seconda degli scenari. Nella tabella seguente sono elencati i codec audio utilizzati in genere in Skype for Business Server scenari.
 
 **Larghezza di banda codec audio**
 
@@ -162,7 +162,7 @@ La larghezza di banda necessaria dipende dalla risoluzione, dalla qualità, dall
 
 - **Velocità in bit payload minima** Questa è la velocità in bit al di sotto della quale un endpoint Skype for Business Server passaggio alla successiva risoluzione inferiore. Per garantire una determinata risoluzione, la velocità in bit del payload video disponibile non deve scendere al di sotto di questa velocità in bit minima per tale risoluzione. Questo valore consente di comprendere il valore più basso possibile se la velocità in bit massima non è disponibile o pratica. Per alcuni utenti, un video a velocità in bit così bassa potrebbe offrire un'esperienza video inaccettabile, quindi usa cautela con queste velocità in bit minime del payload video. Nota che per le scene video statiche e immutate, la velocità in bit effettiva potrebbe scendere temporaneamente al di sotto della velocità in bit minima.
 
-Skype for Business Server supporta molte risoluzioni. In questo modo Skype for Business Server di adattarsi a larghezza di banda di rete e funzionalità client di ricezione diverse. Le proporzioni predefinite per Skype for Business Server sono 16:9. Le proporzioni 4:3 legacy sono ancora supportate per le webcam che non consentono l'acquisizione nelle proporzioni 16:9.
+Skype for Business Server supporta molte risoluzioni. In questo modo Skype for Business Server di adattarsi alla larghezza di banda di rete e alle funzionalità client di ricezione diverse. Le proporzioni predefinite per Skype for Business Server sono 16:9. Le proporzioni 4:3 legacy sono ancora supportate per le webcam che non consentono l'acquisizione nelle proporzioni 16:9.
 
 Video FEC è sempre incluso nella velocità in bit del payload video quando viene utilizzato, quindi non ci sono valori separati per con fec video e senza FEC video.
 
@@ -214,7 +214,7 @@ Nelle tabelle seguenti sono riportati i valori per i diversi scenari.
 |Audio  <br/> |Banda stretta RTAudio  <br/> |29.3  <br/> |44.8  <br/> |56.6  <br/> |
 |Audio  <br/> |BANDA LARGA DI SETA  <br/> |44.3  <br/> |69  <br/> |105  <br/> |
 |Video principale quando si chiamano Skype for Business Server endpoint  <br/> |H.264  <br/> |460  <br/> |4010 (per una risoluzione massima di 1920x1080)  <br/> |Già incluso  <br/> |
-|Video principale quando si chiamano gli endpoint di Lync 2010 o Office Communicator 2007 R2  <br/> |RTVideo  <br/> |460  <br/> |2510 (per una risoluzione massima di 1280x720)  <br/> |Già incluso  <br/> |
+|Video principale quando si chiamano gli endpoint di Lync 2010 Office Communicator 2007 R2  <br/> |RTVideo  <br/> |460  <br/> |2510 (per una risoluzione massima di 1280x720)  <br/> |Già incluso  <br/> |
 |Video panoramico quando si chiamano Skype for Business Server endpoint  <br/> |H.264  <br/> |190  <br/> |2010 (per una risoluzione massima di 1920x288)  <br/> |Già incluso  <br/> |
 |Video panoramico quando si chiamano gli endpoint di Lync 2010  <br/> |RTVideo  <br/> |190  <br/> |510 (per una risoluzione massima di 960x144)  <br/> |Già incluso  <br/> |
 

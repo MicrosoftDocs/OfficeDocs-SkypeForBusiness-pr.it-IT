@@ -2,7 +2,7 @@
 title: Esportare i dati archiviati in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 8214bb0a-baa7-414f-9eee-313b65223fa3
 description: 'Riepilogo: informazioni su come esportare i dati archiviati per Skype for Business Server.'
-ms.openlocfilehash: e78ec210e993a11bf0ae17d4e41270602d2bf24a
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: ef9ffca2612adb088f9d06cdbaad809f72278595
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60740652"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60856783"
 ---
 # <a name="export-archived-data-in-skype-for-business-server"></a>Esportare i dati archiviati in Skype for Business Server
 
@@ -25,7 +25,7 @@ ms.locfileid: "60740652"
   
 I dati archiviati nei database di archiviazione non sono disponibili per la ricerca o in un formato leggibile, ma è possibile utilizzare il cmdlet **Export-CsArchivingData** per estrarre i record dal database e salvarli come file EML (Outlook Electronic Mail).
   
-Se si abilita l'integrazione di Microsoft Exchange, i dati vengono archiviati in Exchange archiviati. I dati archiviati in Exchange sono ricercabili e individuabili. Per informazioni dettagliate sull'accesso ai dati archiviati in Exchange, vedere la documentazione Exchange.
+Se si abilita l'integrazione Exchange Microsoft, i dati vengono archiviati in Exchange archiviati. I dati archiviati in Exchange sono ricercabili e individuabili. Per informazioni dettagliate sull'accesso ai dati archiviati in Exchange, vedere la Exchange documentazione.
   
 ## <a name="exporting-archiving-data-by-using-windows-powershell-cmdlets"></a>Esportazione dei dati di archiviazione tramite Windows PowerShell cmdlet
 

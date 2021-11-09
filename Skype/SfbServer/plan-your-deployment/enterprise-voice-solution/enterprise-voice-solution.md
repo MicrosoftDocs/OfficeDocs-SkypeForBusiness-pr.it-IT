@@ -2,7 +2,7 @@
 title: Pianificare la VoIP aziendale in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f9c6fd1d-c379-47d1-8447-19274ace9951
 description: 'Riepilogo: informazioni sulle opzioni disponibili per la pianificazione di una soluzione vocale e di comunicazione unificata in Skype for Business Server.'
-ms.openlocfilehash: 2cd47f1b3655166ced3bec5591a7b8197639544a
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 71fc511d6c435ab6b1cd5f553d668acd2fb606a7
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749955"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60829860"
 ---
 # <a name="plan-your-enterprise-voice-solution-in-skype-for-business-server"></a>Pianificare la VoIP aziendale in Skype for Business Server
  
@@ -29,13 +29,13 @@ ms.locfileid: "60749955"
   
 Skype for Business Server offre due opzioni di VoIP aziendale locali, VoIP aziendale e Call Via Work, per integrare il sistema telefonico dell'organizzazione con la distribuzione di Skype for Business Server, rendendo possibile una vera e propria comunicazione unificata soluzione. Entrambe le opzioni consentono agli utenti di usare Skype for Business client per avviare chiamate vocali con altri utenti, sia all'interno che all'esterno dell'organizzazione.
   
-Puoi anche usare sia l'VoIP aziendale che call via work together.
+Puoi anche usare sia VoIP aziendale chiamata tramite lavoro insieme.
   
-- VoIP aziendale è l'offerta vocale più completa. Si tratta di una soluzione VoIP (Voice over IP) basata su software, che offre un set di funzionalità molto ricco, inclusa una ricca integrazione con Outlook e Exchange, e molte funzionalità avanzate come Response Group, Parcheggio di chiamata, chiamate di team, Prelievo chiamata di gruppo e supporto avanzato di emergenza E9-1-1. Con VoIP aziendale, gli utenti usano un dispositivo audio, ad esempio un auricolare con il computer o un telefono abilitato voIP, anziché un telefono PSTN o PBX tradizionale.
+- VoIP aziendale è l'offerta vocale più completa. Si tratta di una soluzione VoIP (Voice over IP) basata su software, che offre un set di funzionalità molto ricco, inclusa una ricca integrazione con Outlook e Exchange, e molte funzionalità avanzate come Response Group, Parcheggio di chiamata, chiamate di team, Prelievo chiamate di gruppo e supporto avanzato di emergenza E9-1-1. Con VoIP aziendale, gli utenti usano un dispositivo audio, ad esempio un auricolare con il computer o un telefono abilitato voIP, anziché un telefono PSTN o PBX tradizionale.
     
-- Call Via Work offre un modo per integrare la soluzione Skype for Business con i sistemi telefonici PBX esistenti. Un utente abilitato per Chiama tramite lavoro può fare clic Skype for Business per chiamare un altro utente, all'interno della distribuzione o un utente esterno. La chiamata viene completata utilizzando il telefono PBX dell'utente. Inoltre, questi utenti possono fare clic Skype for Business partecipare alle conferenze.
+- Call Via Work offre un modo per integrare la soluzione Skype for Business con i sistemi telefonici PBX esistenti. Un utente abilitato per La chiamata tramite lavoro può fare clic Skype for Business per chiamare un altro utente, all'interno della distribuzione o un utente esterno. La chiamata viene completata utilizzando il telefono PBX dell'utente. Inoltre, questi utenti possono fare clic Skype for Business per partecipare alle conferenze.
     
-    La distribuzione delle chiamate tramite ufficio è anche un vantaggio per gli utenti che dispongono ancora di telefoni PBX ma che sono in fase di transizione a VoIP aziendale, poiché consente a questi utenti di usare il client Skype for Business per controllare le chiamate telefoniche.
+    La distribuzione delle chiamate tramite ufficio è anche un vantaggio per gli utenti che dispongono ancora di telefoni PBX ma che sono in fase di transizione a VoIP aziendale, in quanto consente agli utenti di utilizzare il client Skype for Business per controllare le chiamate telefoniche.
     
      Call Via Work offre un set più limitato di funzionalità vocali rispetto aEnterprise Voice. Ad esempio, non supporta la delega, la chiamata del team, il Response Group o l'E9-1-1 avanzato.
     

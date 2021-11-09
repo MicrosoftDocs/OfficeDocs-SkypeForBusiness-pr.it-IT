@@ -2,7 +2,7 @@
 title: Installare Skype for Business Server
 ms.reviewer: ''
 ms.author: v-mahoffman
-author: cichur
+author: HowlinWolf-92
 manager: serdars
 ms.date: 7/14/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection: IT_Skype16
 ms.custom: Strat_SB_Admin
 ms.assetid: 71299b34-8783-4384-9949-0d3162c8a36e
 description: "Riepilogo: informazioni su come preparare l'ambiente per un'installazione di Skype for Business Server. Scarica una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: acbe9f23c2158966200600caa92d33d0aafc6b1a
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 6b99befcafea7467d0a7211b4e18add7395ebb75
+ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60773206"
+ms.lasthandoff: 11/08/2021
+ms.locfileid: "60850349"
 ---
 # <a name="install-skype-for-business-server"></a>Installare Skype for Business Server
  
@@ -52,11 +52,11 @@ Per Skype for Business Server per la prima volta, sono necessari otto passaggi p
     
 - [Installare gli strumenti di amministrazione in Skype for Business Server](install-administrative-tools.md) : gli strumenti di amministrazione includono Generatore di topologie e Pannello di controllo. È necessario installare gli strumenti di amministrazione in almeno un server della topologia o in una workstation di gestione a 64 bit che esegue una versione del sistema operativo Windows supportata per Skype for Business Server.
     
-- [Preparare Active Directory per Skype for Business Server](prepare-active-directory.md) : Skype for Business Server funziona a stretto contatto con Active Directory. È necessario preparare il dominio di Active Directory per l'utilizzo con Skype for Business Server. È possibile eseguire questa operazione tramite la Distribuzione guidata e viene eseguita una sola volta per il dominio. Questo perché il processo crea gruppi e modifica il dominio ed è necessario farlo una sola volta.
+- [Preparare Active Directory per Skype for Business Server](prepare-active-directory.md) : Skype for Business Server funziona a stretto contatto con Active Directory. È necessario preparare il dominio di Active Directory per l'utilizzo Skype for Business Server. È possibile eseguire questa operazione tramite la Distribuzione guidata e viene eseguita una sola volta per il dominio. Questo perché il processo crea gruppi e modifica il dominio ed è necessario farlo una sola volta.
     
 - [Creare record DNS per Skype for Business Server](create-dns-records.md) : per Skype for Business Server corretto, è necessario che siano presenti diverse impostazioni DNS. In questo modo i client sanno come accedere ai servizi e i server conoscono l'uno dell'altro. Queste impostazioni devono essere completate una sola volta per ogni distribuzione perché una volta assegnata una voce DNS, questa è disponibile in tutto il dominio.
     
-- [Creare e pubblicare](create-and-publish-new-topology.md) una nuova topologia in Skype for Business Server : prima di poter installare il sistema Skype for Business Server in ognuno dei server della topologia, è necessario creare una topologia e pubblicarla. Quando si pubblica una topologia, le informazioni sulla topologia vengono caricate nel database dell'archivio di gestione centrale. Se si tratta di un pool edizione Enterprise, si sta creando il database dell'archivio di gestione centrale la prima volta che si pubblica una nuova topologia. Se si tratta di edizione Standard, è necessario eseguire il processo Prepare First edizione Standard Server dalla Distribuzione guidata prima di pubblicare una topologia. Questa operazione si prepara per edizione Standard installando un'istanza SQL Server Express Edition e creando l'archivio di gestione centrale.
+- [Creare e pubblicare](create-and-publish-new-topology.md) una nuova topologia in Skype for Business Server : prima di poter installare il sistema Skype for Business Server in ognuno dei server della topologia, è necessario creare una topologia e pubblicarla. Quando si pubblica una topologia, le informazioni sulla topologia vengono caricate nel database dell'archivio di gestione centrale. Se si tratta di un pool edizione Enterprise, si sta creando il database dell'archivio di gestione centrale la prima volta che si pubblica una nuova topologia. Se si tratta edizione Standard, è necessario eseguire il processo Prepare First edizione Standard Server dalla Distribuzione guidata prima di pubblicare una topologia. In questo modo si prepara edizione Standard'installazione di un'istanza SQL Server Express Edition e la creazione dell'archivio di gestione centrale.
     
 - [Installare Skype for Business Server](install-skype-for-business-server.md) nei server della topologia: dopo aver caricato la topologia nell'archivio di gestione centrale e che Active Directory sa quali server eseguiranno i ruoli, è necessario installare il sistema Skype for Business Server in ognuno dei server della topologia.
     
