@@ -17,12 +17,12 @@ f1.keywords:
 description: Protocolli di routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 01748c0e344cbadf2d771d2ab4bf6ad1f9b14dfb
-ms.sourcegitcommit: 813f1e44bd094bd997dd7423cda7e685ff61498f
+ms.openlocfilehash: 0a58d40bb59e81376995f4a92421d479f5f4abda
+ms.sourcegitcommit: 115e44f33fc7993f6eb1bc781f83eb02a506e29b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "60633522"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60909577"
 ---
 # <a name="direct-routing---sip-protocol"></a>Routing diretto - Protocollo SIP
 
@@ -44,6 +44,7 @@ Prima che sia possibile elaborare una chiamata in arrivo o in uscita, i messaggi
 
 > [!NOTE]
 > Le intestazioni SIP non contengono userinfo nell'URI SIP in uso. Come da [RFC 3261, sezione 19.1.1,](https://tools.ietf.org/html/rfc3261#section-19.1.1)la parte userinfo di un URI è facoltativa e può essere assente quando l'host di destinazione non ha una nozione di utenti o quando l'hosst stesso è la risorsa identificata. Se il segno @ è presente in un URI SIP, il campo utente NON DEVE essere vuoto.
+> Tenere presente che l'URI SIPS non deve essere usato con il routing diretto perché non è supportato.
 
 In una chiamata in arrivo, il proxy SIP deve trovare il tenant a cui è destinata la chiamata e trovare l'utente specifico all'interno del tenant. L'amministratore del tenant potrebbe configurare numeri non DID, ad esempio +1001, in più tenant. Pertanto, è importante trovare il tenant specifico in cui eseguire la ricerca di numeri perché i numeri non DID potrebbero essere uguali in più organizzazioni Microsoft 365 o Office 365.  
 
@@ -67,7 +68,7 @@ Alla ricezione dell'invito, il proxy SIP esegue la procedura seguente:
 
    - Opzione 1. Il nome FQDN completo presentato nell'intestazione Contatto deve corrispondere al nome comune/soggetto alternativo del certificato presentato.  
 
-   - Opzione 2. La parte relativa al dominio del nome FQDN presentata nell'intestazione Contatto (ad esempio adatum.biz del nome FQDN sbc1.adatum.biz) deve corrispondere al valore jolly in Nome comune/Nome alternativo oggetto , ad esempio *.adatum.biz.
+   - Opzione 2. La parte relativa al dominio del nome FQDN presentata nell'intestazione Contatto , ad esempio adatum.biz del nome FQDN sbc1.adatum.biz, deve corrispondere al valore jolly in Nome comune/Nome alternativo oggetto , ad esempio *.adatum.biz.
 
 2. Provare a trovare un tenant usando il nome FQDN completo presentato nell'intestazione Contatto.  
 
@@ -101,7 +102,7 @@ Questo nome (FQDN) deve essere presente anche nei campi Nome comune o Nome alter
 
 Il supporto per i caratteri jolly è descritto in [RFC 2818, sezione 3.1.](https://tools.ietf.org/html/rfc2818#section-3.1) In particolare:
 
-*"I nomi possono contenere il carattere jolly che viene considerato corrispondente a qualsiasi singolo componente del \* nome di dominio o frammento di componente. Ad esempio, \* .a.com corrisponde foo.a.com ma non bar.foo.a.com. f .com corrisponde foo.com \* ma non bar.com".*
+*"I nomi possono contenere il carattere jolly che viene considerato corrispondente a qualsiasi singolo componente del \* nome di dominio o frammento di componente. Ad esempio, .a.com corrisponde foo.a.com ma non bar.foo.a.com. f .com corrisponde a foo.com \* \* ma non bar.com".*
 
 Se più valori nell'intestazione Contatto presentata in un messaggio SIP vengono inviati dal servizio SBC, viene usata solo la parte FQDN del primo valore dell'intestazione Contatto.
 
@@ -140,7 +141,7 @@ Microsoft consiglia di usare solo l'intestazione Contatto se non viene usato un 
 
 Per calcolare l'hop successivo, il proxy SIP usa:
 
-- Priorità 1. Record-Route di primo livello. Se il nome di Record-Route contiene il nome FQDN, il nome FQDN viene usato per stabilire la connessione in uscita nella finestra di dialogo.
+- Priorità 1. Record-Route di primo livello. Se il nome di Record-Route di primo livello contiene il nome FQDN, il nome FQDN viene usato per stabilire la connessione in uscita nella finestra di dialogo.
 
 - Priorità 2. Intestazione del contatto. Se Record-Route non esiste, il proxy SIP cerca il valore dell'intestazione Contatto per stabilire la connessione in uscita. Questa è la configurazione consigliata.
 
@@ -167,7 +168,7 @@ La tabella seguente riepiloga le differenze e le analogie del flusso di chiamata
 
 ###  <a name="non-media-bypass-flow"></a>Flusso di bypass non multimediale
 
-Un Teams utente potrebbe avere più endpoint contemporaneamente. Ad esempio, Teams per Windows client, Teams per iPhone client e Teams Telefono (Teams client Android). Ogni endpoint potrebbe segnalare una pausa HTTP nel modo seguente:
+Un Teams utente potrebbe avere più endpoint contemporaneamente. Ad esempio, Teams per Windows, Teams per iPhone client e Teams Telefono (Teams client Android). Ogni endpoint potrebbe segnalare una pausa HTTP nel modo seguente:
 
 -   Stato della chiamata: convertito dal proxy SIP nel messaggio SIP 180. Quando si riceve il messaggio 180, lo SBC deve generare squilli locali.
 
@@ -189,7 +190,7 @@ Un Teams utente potrebbe avere più endpoint contemporaneamente. Ad esempio, Tea
 
 3.  Per ogni messaggio di stato della chiamata ricevuto dai client, il proxy SIP converte il messaggio Stato chiamata nel messaggio SIP "SIP SIP/2.0 180 Trying". L'intervallo per l'invio di tali messaggi è definito dall'intervallo dei messaggi ricevuti dal Controllore chiamate. Nel diagramma seguente sono presenti due 180 messaggi generati dal proxy SIP. Questi messaggi provengono dai due Teams endpoint dell'utente. Ogni client ha un ID tag univoco.  Ogni messaggio proveniente da un endpoint diverso sarà una sessione separata (il parametro "tag" nel campo "A" sarà diverso). Tuttavia, un endpoint potrebbe non generare immediatamente il messaggio 180 e inviare immediatamente il messaggio 183, come illustrato nel diagramma seguente.
 
-4.  Quando un endpoint genera un messaggio Media Answer con gli indirizzi IP dei candidati per i supporti multimediali dell'endpoint, il proxy SIP converte il messaggio ricevuto in un messaggio "Stato sessione SIP 183" con il SDP del client sostituito dal provider di servizi multimediali dal processore multimediale. Nel diagramma seguente l'endpoint di Fork 2 ha risposto alla chiamata. Se il trunk non viene ignorato, il messaggio SIP 183 viene generato una sola volta (Ring Bot o Client End Point). Il 183 potrebbe essere una forchetta esistente o crearne una nuova.
+4.  Quando un endpoint genera un messaggio Media Answer con gli indirizzi IP dei candidati per i supporti multimediali dell'endpoint, il proxy SIP converte il messaggio ricevuto in un messaggio "Stato sessione SIP 183" con il SDP del client sostituito dal provider di servizi multimediali dal processore multimediale. Nel diagramma seguente, l'endpoint da Fork 2 ha risposto alla chiamata. Se il trunk non viene ignorato, il messaggio SIP 183 viene generato una sola volta (Ring Bot o Client End Point). Il 183 potrebbe essere una forchetta esistente o crearne una nuova.
 
 5.  Viene inviato un messaggio di accettazione chiamata con i candidati finali dell'endpoint che hanno accettato la chiamata. Il messaggio accettazione chiamata viene convertito in messaggio SIP 200. 
 
@@ -282,7 +283,7 @@ Lo standard è illustrato nella sezione 6 di RFC 5589. Le RFC correlate sono:
 Questa opzione presuppone che il proxy SIP agisca da transferor e invii un messaggio Di riferimento a SBC. L'SBC funge da cessione e gestisce il riferimento per generare una nuova offerta per il trasferimento. Esistono due casi possibili:
 
 - La chiamata viene trasferita a un partecipante PSTN esterno. 
-- La chiamata viene trasferita da un Teams utente a un altro utente Teams nello stesso tenant tramite SBC. 
+- La chiamata viene trasferita da un Teams utente a un altro Teams utente nello stesso tenant tramite SBC. 
 
 Se la chiamata viene trasferita da un utente di Teams a un altro tramite SBC, il servizio SBC dovrebbe emettere un nuovo invito (avviare una nuova finestra di dialogo) per l'obiettivo di trasferimento (l'utente Teams) usando le informazioni ricevute nel messaggio Di riferimento. 
 
@@ -322,7 +323,7 @@ Microsoft consiglia di applicare sempre il parametro user=phone per semplificare
 
 L'intestazione History-Info viene usata per il retargeting delle richieste SIP e "fornisce un meccanismo standard per l'acquisizione delle informazioni della cronologia delle richieste per consentire un'ampia gamma di servizi per le reti e gli utenti finali". Per altre informazioni, vedere [RFC 4244 – Sezione 1.1.](http://www.ietf.org/rfc/rfc4244.txt) Per Telefono Microsoft sistema, questa intestazione viene usata negli scenari di simulring e inoltro di chiamata.  
 
-Se l'invio viene History-Info, l'opzione è abilitata nel modo seguente:
+Se si invia, la History-Info è abilitata nel modo seguente:
 
 - Il proxy SIP inserirà un parametro contenente il numero di telefono associato nelle singole voci History-Info che costituiscono l'intestazione History-Info messaggio inviato al controller PSTN.  Usando solo le voci che hanno il parametro numero di telefono, il controller PSTN ricostruirà una nuova intestazione History-Info e la passerà al provider trunk SIP tramite proxy SIP.
 
@@ -330,7 +331,7 @@ Se l'invio viene History-Info, l'opzione è abilitata nel modo seguente:
 
 - History-Info'intestazione non verrà aggiunta per i casi di trasferimento di chiamata.
 
-- Una singola voce della cronologia nell'intestazione History-Info ricostruito avrà il parametro del numero di telefono fornito in combinazione con il nome di dominio completo (sip.pstnhub.microsoft.com) del routing diretto impostato come parte host dell'URI. nell'URI SIP verrà aggiunto un parametro "utente=telefono".  Tutti gli altri parametri associati all'intestazione History-Info chiamata originale, ad eccezione dei parametri di contesto del telefono, verranno passati nell'intestazione History-Info telefono.  
+- Una singola voce della cronologia nell'intestazione History-Info ricostruita avrà il parametro del numero di telefono fornito insieme al nome fqdn (sip.pstnhub.microsoft.com) di Routing diretto impostato come parte host dell'URI. nell'URI SIP verrà aggiunto un parametro "utente=telefono".  Tutti gli altri parametri associati all'intestazione History-Info, ad eccezione dei parametri di contesto del telefono, verranno passati nell'intestazione History-Info telefono.  
 
   > [!NOTE]
   > Le voci private (come determinato dai meccanismi definiti nella Sezione 3.3 di RFC 4244) verranno inoltrate così come il provider trunk SIP è un peer attendibile.
@@ -373,8 +374,8 @@ SBC deve supportare i riavvii ICE come descritto in [RFC 5245, sezione 9.1.1.1.]
 
 Il riavvio in Direct Routing viene implementato in base ai paragrafi seguenti della RFC:
 
-*Per riavviare ICE, un agente DEVE modificare sia ice-pwd che ice-ufrag per il flusso multimediale in un'offerta.  Si noti che è consentito usare un attributo a livello di sessione in un'offerta, ma fornire lo stesso ice-pwd o ice-ufrag come attributo a livello di media in un'offerta successiva.  Non si tratta di una modifica della password, ma solo di una modifica della relativa rappresentazione e non causa un riavvio ICE.*
+*Per riavviare ICE, un agente DEVE modificare sia ice-pwd che ice-ufrag per il flusso multimediale in un'offerta.  Si noti che è consentito usare un attributo a livello di sessione in un'offerta, ma fornire lo stesso ice-pwd o ice-ufrag come attributo a livello di supporto in un'offerta successiva.  Non si tratta di una modifica della password, ma solo di una modifica della relativa rappresentazione e non causa un riavvio ICE.*
 
 *Un agente imposta il resto dei campi nel file SDP per questo flusso multimediale come in un'offerta iniziale di questo flusso multimediale (vedere la Sezione 4.3).  Di conseguenza, l'insieme di candidati PUÒ includere alcuni, nessuno o tutti i candidati precedenti per tale flusso e PUÒ includere un set completamente nuovo di candidati raccolti come descritto nella sezione 4.1.1.*
 
-Se la chiamata è stata inizialmente stabilita con il bypass multimediale e la chiamata viene trasferita a un client di Skype for Business, Direct Routing deve inserire un processore multimediale, perché il routing diretto non può essere usato con un client Skype for Business con bypass multimediale. Direct Routing avvia il processo di riavvio ice modificando ice-pwd e ice-ufrag e offrendo nuovi media candidate in un rinvio.
+Se la chiamata è stata inizialmente stabilita con bypass multimediale e la chiamata viene trasferita a un client Skype for Business, Direct Routing deve inserire un processore multimediale, perché il routing diretto non può essere usato con un client Skype for Business con bypass multimediale. Direct Routing avvia il processo di riavvio ice modificando ice-pwd e ice-ufrag e offrendo nuovi media candidate in un rinvio.
