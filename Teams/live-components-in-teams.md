@@ -18,20 +18,22 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6be8db0fdde7509f5721277b4ee631f7a814171d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 7c05888191c98e2b7fe11637ad8fe5ba8a8c1132
+ms.sourcegitcommit: 2ce417430b2aac770997daaf5ef5d844aa97fd84
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60830220"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "60911860"
 ---
 # <a name="manage-live-components-in-teams"></a>Gestire i componenti in tempo reale in Teams
 
 I componenti in tempo reale Teams chat offrono un nuovo modo per ideare, creare e prendere decisioni insieme. Inviare un componente, ad esempio una tabella, un elenco attività o un paragrafo, in cui tutti gli utenti della chat possono modificare le modifiche in linea e vedere le modifiche non appena vengono apportate. Questo significa che puoi raccogliere idee e feedback dal tuo team tenendo meno riunioni e riducendo al minimo la necessità di lunghi thread di chat.
+> [!Note]
+> I componenti in tempo reale sono la prima funzionalità [dell'app Microsoft Loop](https://www.microsoft.com/en-us/microsoft-loop) a essere disponibile in Teams. Tenere presente che "Componenti in tempo reale" verrà rinominato "Componenti loop" all'inizio del 2022.
 
 **È possibile eseguire più velocemente le attività insieme.** È possibile creare un'agenda, tenere traccia delle attività di un gruppo o prendere appunti collettivamente. Questi sono solo alcuni scenari semplificati con i componenti in tempo reale.
 
-**Condividere componenti.** In questa versione è possibile condividere i componenti in tempo reale in Teams chat. I destinatari possono modificare da qualsiasi posizione e visualizzare immediatamente gli aggiornamenti, indipendentemente da dove sono state apportate le modifiche. Nelle versioni future, i componenti in tempo reale saranno supportati Teams note e canali delle riunioni, Outlook e infine in tutte Microsoft 365 applicazioni.
+**Condividere componenti.** In questa versione è possibile condividere i componenti in tempo reale in Teams chat. I destinatari possono modificare da qualsiasi posizione e visualizzare immediatamente gli aggiornamenti, indipendentemente da dove sono state apportate le modifiche. Nelle versioni future, i componenti in tempo reale saranno supportati Teams nelle note e nei canali delle riunioni, Outlook e infine in tutte Microsoft 365 applicazioni.
 
 **Inizia in chat, crea da lì.** Ogni componente creato da Teams chat viene salvato automaticamente in un file in OneDrive. Quindi, potresti iniziare a collaborare in chat e poi passare al file, dove hai uno spazio visivo più ampio per la modifica e puoi aggiungere tutti i componenti che vuoi.
 
@@ -39,13 +41,11 @@ I componenti in tempo reale Teams chat offrono un nuovo modo per ideare, creare 
 
 Disponibile nelle app Teams su Windows, Mac, Linux, iOS e Android.
 
-A partire dall'inizio di settembre, i componenti in tempo reale saranno disponibili a livello globale. A fine settembre sarà disponibile per Government Community Cloud Mod (GCC).
-
 ## <a name="settings-management"></a>Impostazioni gestione
 
 I componenti in tempo reale sono Microsoft Fluid Framework supportati in Microsoft 365 suite e controllati da SharePoint Online e non dall'Teams di amministrazione.
 
-È necessaria la versione più recente del modulo [di PowerShell SharePoint Online](/office365/enterprise/powershell/manage-sharepoint-online-with-office-365-powershell) per abilitare o disabilitare tutte le esperienze fluide nel tenant Office 365 online. Microsoft Fluid Framework'impostazione predefinita è **ON** per tutti i tenant di rilascio mirati. Poiché i componenti in tempo reale sono progettati per la collaborazione, i componenti vengono sempre condivisi come modificabili da altri utenti, anche se il tenant è impostato per impostazione predefinita su sola visualizzazione per altri tipi di file. Per altre **informazioni,** vedere il collegamento Altre informazioni accanto all'impostazione.
+È necessaria l'ultima versione del modulo [di PowerShell SharePoint Online](/office365/enterprise/powershell/manage-sharepoint-online-with-office-365-powershell) per abilitare o disabilitare tutte le esperienze fluide nel tenant Office 365 online. Microsoft Fluid Framework'impostazione predefinita è **ON** per tutti i tenant di rilascio mirati. Poiché i componenti in tempo reale sono progettati per la collaborazione, i componenti vengono sempre condivisi come modificabili da altri utenti, anche se il tenant è impostato per impostazione predefinita su sola visualizzazione per altri tipi di file. Per altre **informazioni,** vedere il collegamento Altre informazioni accanto all'impostazione.
 
 ## <a name="checking-if-the-fluid-framework-is-enabled-through-the-sharepoint-online-powershell-cmdlet"></a>Verificare se il Fluid Framework è abilitato tramite il cmdlet di PowerShell SharePoint Online
 
@@ -55,7 +55,7 @@ I componenti in tempo reale sono Microsoft Fluid Framework supportati in Microso
 
 3. Verificare che il valore di IsFluidEnabled sia **true.**
 
-## <a name="enabling-the-fluid-framework-through-the-sharepoint-online-powershell-cmdlet"></a>Abilitazione del Fluid Framework tramite il cmdlet di PowerShell SharePoint Online 
+## <a name="enabling-the-fluid-framework-through-the-sharepoint-online-powershell-cmdlet"></a>Abilitazione del Fluid Framework tramite il cmdlet di PowerShell SharePoint Online
 
 1. [Connessione per SharePoint PowerShell online.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps#to-connect-with-a-user-name-and-password) 
 
@@ -65,11 +65,11 @@ I componenti in tempo reale sono Microsoft Fluid Framework supportati in Microso
 
 La funzionalità sarà disponibile in Teams Windows Desktop, Mac, iOS, Android. Se questa opzione è abilitata, gli utenti visualizzano una nuova opzione per l'inserimento di componenti in tempo reale nell'esperienza di composizione del messaggio per questi client.
 
-## <a name="disabling-fluid-framework-through-sharepoint-online-powershell-cmdlet"></a>Disabilitazione Fluid Framework cmdlet di PowerShell SharePoint online
+## <a name="disabling-fluid-framework-through-sharepoint-online-powershell-cmdlet"></a>Disabilitazione Fluid Framework tramite il cmdlet di PowerShell SharePoint Online
 
 1. [Connessione per SharePoint PowerShell online.](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
-2. Disabilitare Fluid usando il cmdlet Set-SPOTenant-IsFluidEnabled Set-SPOTenant -IsFluidEnabled $false. 
+2. Disabilitare Fluid usando il cmdlet Set-SPOTenant di Set-SPOTenant -IsFluidEnabled $false. 
 
    L'applicazione della modifica all'interno della tenancy sarà breve. 
 
@@ -81,21 +81,42 @@ cmdlet Connect-SPOService at command pipeline position 1
 
 Supply values for the following parameters:
 Url: <https://a830edad9050849822e21011208-admin.sharepoint.com/>
-PS C:\\WINDOWS\\system32&gt; set-SPOTenant -isFluidEnabled $false
+PS C:\\WINDOWS\\system32&gt; set-SPOTenant -isFluidEnabled $true
 PS C:\\WINDOWS\\system32&gt;
 ```
+## <a name="known-issues"></a>Problemi noti
+
+- I componenti in tempo reale nella chat non possono essere modificati tramite app Office quando si usa Teams su Android.
+
+- Se le autorizzazioni predefinite per i file del tenant sono impostate su Persone specifiche **(solo** le persone specificate dall'utente) e il mittente rimuove alcuni utenti dall'elenco Persone specifiche nella finestra di dialogo delle autorizzazioni durante la creazione di un componente, questi utenti potrebbero comunque avere accesso al contenuto. Questo problema è dovuto alla limitazione della gestione degli accessi della finestra di dialogo delle autorizzazioni e verrà risolto nella versione futura.
+
+- Se le impostazioni dei criteri di accesso condizionale del tenant impediscono la connessione della rete client a , i componenti in tempo reale non funzionano come previsto per salvare le modifiche in tempo `https://pushchannel.1drv.ms` reale al servizio.
 
 ## <a name="known-limitations"></a>Limitazioni note
 
-- La creazione di una tabella o di un elenco attività come primo componente dopo il riavvio dell Teams app potrebbe richiedere del tempo aggiuntivo.
-
-- Gli altri membri della chat riceveranno una notifica tramite posta elettronica quando vengono menzionati con un simbolo di @. Le notifiche at-mentions nel feed Teams attività saranno disponibili a breve.
-
 - La ricerca di componenti in tempo reale Teams ricerca restituirà un collegamento al componente in office.com, non al messaggio di chat stesso.
 
-- I componenti in tempo reale vengono disabilitati nelle chat federate e abilitati per le normali chat con un account Guest con Azure B2B.
+- I componenti in tempo reale vengono disabilitati nelle chat federate.
 
-- Anche se è possibile condividere un componente nei canali Teams e in altre app Microsoft 365, i destinatari ottengono un collegamento nella maggior parte delle posizioni al momento. La modifica in linea è pianificata per altre esperienze in futuro.
+- I guest B2B non potranno collaborare su componenti in tempo reale condivisi con loro tramite Collegamento di condivisione aziendale, a meno che il tenant non setti l'opzione di accesso esterno per consentire ai guest B2B di avere lo stesso livello di accesso dei membri del tenant.
+
+- Teams Il supporto completo del client Web per i componenti in tempo reale sarà disponibile a breve.
+
+- I componenti in tempo reale non sono ancora supportati nei canali Teams, ma la loro modifica in linea nei canali è pianificata per altre esperienze in futuro.
+
+- Con le autorizzazioni per i file predefinite del tenant impostate su Persone specifiche **(solo** le persone specificate dall'utente), per copiare il collegamento al componente live e incollarli in un'altra chat è necessario che il mittente usi la finestra di dialogo delle autorizzazioni e a cui aggiungere i destinatari nell'opzione Persone specifiche per concedere correttamente l'accesso.
+
+- Con le autorizzazioni per i file predefinite del tenant impostate su Persone specifiche **(solo** le persone specificate dall'utente), la creazione di un componente live nella chat di gruppo con più di 20 membri richiederà al mittente di selezionare manualmente le opzioni di autorizzazione per il componente.
+
+- I componenti in tempo reale nella chat non vengono caricati solo se il file è stato spostato in una raccolta diversa. Se il file viene spostato in un'altra cartella, continuerà a essere caricato in chat.
+
+## <a name="how-to-check-your-tenants-default-file-permissions"></a>Come controllare le autorizzazioni file predefinite del tenant
+
+1. Passare al [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/).
+
+2. A sinistra, in **Interfaccia di amministrazione,** **selezionare SharePoint**.
+
+3. Selezionare **Condivisione** criteri e in Collegamenti a file e cartelle visualizzare le autorizzazioni predefinite per i file del  >  tenant. 
 
 ## <a name="storage-of-fluid-files"></a>Archiviazione di `.fluid` file
 
@@ -111,7 +132,7 @@ Gli utenti possono cercare contenuti nei `.fluid` file da Office.com e OneDrive 
 
 I partecipanti alla chat devono avere un account OneDrive per creare componenti in tempo reale. Senza un account OneDrive valido, i partecipanti alla chat potrebbero comunque essere in grado di collaborare a un componente creato da altri utenti che hanno un account OneDrive valido, ma non possono crearne uno personalizzato.
 
-[Se](https://support.microsoft.com/en-us/office/move-files-and-folders-between-onedrive-and-sharepoint-5916f90d-f58a-4bf9-b135-10853f516d0b) si sposta un file OneDrive un sito SharePoint, il componente in tempo reale non viene caricato `.fluid` Teams chat.
+[Se](https://support.microsoft.com/en-us/office/move-files-and-folders-between-onedrive-and-sharepoint-5916f90d-f58a-4bf9-b135-10853f516d0b) si sposta un file da OneDrive a un sito SharePoint, il componente in tempo reale non viene caricato `.fluid` Teams chat.
 
 **Cosa succede se il proprietario del file lascia la società?**
 
@@ -121,7 +142,7 @@ I partecipanti alla chat devono avere un account OneDrive per creare componenti 
 
 I componenti in tempo reale possono essere inseriti Teams chat o copiati da una chat a un'altra. I componenti in tempo reale non sono ancora supportati nei canali. Per impostazione predefinita, vengono assegnate le autorizzazioni esistenti del tenant, ma gli utenti possono modificare le autorizzazioni prima dell'invio per assicurarsi che tutti possano accedere.
 
-L'apertura di componenti Teams chat in Office.com offre funzionalità di condivisione nella parte superiore della finestra, in modo analogo alle opzioni di condivisione offerte per altri Office documenti.
+L'apertura di componenti Teams chat in Office.com offre funzionalità di condivisione nella parte superiore della finestra, in modo simile alle opzioni di condivisione offerte per altri Office documenti.
 
 **Cosa succede se `.fluid` un file viene danneggiato o danneggiato?**
 
@@ -129,4 +150,4 @@ Cronologia versioni consente di rivedere e copiare da versioni precedenti del fi
 
 **Quali app possono aprire e modificare `.fluid` i file?**
 
-`.fluid`I file possono essere aperti solo come collegamenti nel browser, ad esempio Office.com, e come componenti in tempo reale in Teams chat. Se scaricati, non possono essere riaperti senza prima caricarli di nuovo in OneDrive for Business o SharePoint Online.
+`.fluid`I file possono essere aperti solo come collegamenti nel browser, ad esempio Office.com, e come componenti in tempo reale in Teams chat. Se vengono scaricati, non possono essere riaperti senza prima caricarli di nuovo in OneDrive for Business o SharePoint Online.
