@@ -21,17 +21,14 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come instradare le chiamate a numeri non assegnati nell'organizzazione.
-ms.openlocfilehash: 2574a0ac734ed6caee1eadf5a5ee006111713055
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: 93d9ce289820bdcf9bb4a1e13e78bb8794b77dbd
+ms.sourcegitcommit: bdca3b5eb35a17b27c5a052d83ab229b7c911dd4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60536997"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "60947503"
 ---
 # <a name="routing-calls-to-unassigned-numbers"></a>Routing delle chiamate a numeri non assegnati
-
-> [!NOTE]
-> Questa funzionalità è disponibile come versione di anteprima pubblica.
 
 L'amministratore può instradare le chiamate a numeri non assegnati nell'organizzazione. Ad esempio, è possibile instradare le chiamate a numeri non assegnati nel modo seguente: 
 
@@ -39,11 +36,11 @@ L'amministratore può instradare le chiamate a numeri non assegnati nell'organiz
 
 - Instradare tutte le chiamate a un determinato numero non assegnato al switchboard principale.
 
-È possibile instradare le chiamate a numeri non assegnati a un utente, a un account della risorsa associato a un Operatore automatico o a una coda di chiamata o a un servizio di annuncio che riproduca un file audio personalizzato per il chiamante.
+È possibile instradare le chiamate a numeri non assegnati a un utente, a un account della risorsa associato a un Operatore automatico o a una coda di chiamata o a un servizio di annuncio che riproduce un file audio personalizzato per il chiamante.
 
 ## <a name="configuration"></a>Configurazione
 
-Per instradare le chiamate a un numero non assegnato, usare il cmdlet New/Get/Set/Remove-CsTeamsUnassignedNumberTreatment disponibile Teams nel modulo di PowerShell 2.5.1 o versione successiva.
+Per instradare le chiamate a un numero non assegnato, usare il cmdlet New/Get/Set/Remove-CsTeamsUnassignedNumberTreatment disponibile nel modulo di PowerShell 2.5.1 o versione successiva di Teams.
 
 È necessario specificare il numero o l'intervallo di numeri chiamati e il routing associato per le chiamate a questi numeri. Ad esempio, il comando seguente specifica che tutte le chiamate al numero +1 (555) 222-3333 verranno instradati all'account della risorsa aa@contoso.com:
 
@@ -72,7 +69,7 @@ New-CsTeamsUnassignedNumberTreatment -Identity TR1 -Pattern "^\+1555333\d{4}$" -
 
 - Per instradare le chiamate ai numeri di abbonato al Piano chiamate Microsoft non assegnato, il tenant deve avere crediti [comunicazioni disponibili.](what-are-communications-credits.md)
 
-- Per instradare le chiamate a numeri di servizio del piano chiamate Microsoft non assegnato, il tenant deve avere almeno una licenza Sistema telefonico - Utente virtuale.
+- Per instradare le chiamate a numeri di servizio del Piano chiamate Microsoft non assegnato, è necessario che il tenant abbia almeno una licenza Sistema telefonico - Utente virtuale.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
