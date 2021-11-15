@@ -1,8 +1,8 @@
 ---
-title: Teams per Visite virtuali
-author: HowlinWolf-92
-ms.author: v-mahoffman
-manager: serdars
+title: Visite virtuali con Teams - Integrazione in Epic EHR
+author: LanaChin
+ms.author: v-lanachin
+manager: samanro
 audience: ITPro
 ms.topic: conceptual
 ms.service: msteams
@@ -22,18 +22,18 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ansantam
-description: Usare Microsoft Teams per configurare il sistema di visite virtuali
-ms.openlocfilehash: 3ba0ff974f9a8381eab054bb92468762dc1d8cc8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+description: Informazioni su come integrare il connettore Teams EHR per consentire agli operatori sanitari dell'organizzazione di effettuare visite virtuali con pazienti o altri provider in Teams direttamente dal sistema Epic EHR.
+ms.openlocfilehash: 48d2cfd69dd9d5cd8be2fcd5a0c29fca7162d246
+ms.sourcegitcommit: 4df3d144296b9b8982109be7edaffd636aabdf29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60859733"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960045"
 ---
-# <a name="virtual-visits-with-teams---integration-into-ehr"></a>Visite virtuali con Teams - Integrazione in CCE
+# <a name="virtual-visits-with-teams---integration-into-epic-ehr"></a>Visite virtuali con Teams - Integrazione in Epic EHR
 
-Microsoft Teams Il connettore EHR (Electronic Health Record) consente ai medici di avviare facilmente una visita virtuale del paziente o una consultazione con un altro provider in Teams direttamente dal sistema EHR. Basato sul cloud di Microsoft 365, Microsoft Teams semplifica e assicura la collaborazione e la comunicazione con strumenti di chat, video, voce e assistenza sanitaria in un unico hub che supporta la conformità con HIPAA, la certificazione HITECH e altro ancora.
-Con la piattaforma di comunicazione e collaborazione di Teams, il personale medico può facilmente superare la complessità e la confusione di sistemi frammentati per dedicare il proprio tempo a fornire la migliore assistenza possibile. Microsoft Teams Il connettore EHR (Electronic Health Record) può:
+Microsoft Teams connettore EHR (Electronic Health Record) consente ai medici di avviare facilmente una visita virtuale del paziente o una consultazione con un altro provider in Teams direttamente dal sistema EHR. Basato sul cloud di Microsoft 365, Microsoft Teams semplifica e assicura la collaborazione e la comunicazione con strumenti di chat, video, voce e assistenza sanitaria in un unico hub che supporta la conformità con HIPAA, la certificazione HITECH e altro ancora.
+Con la piattaforma di comunicazione e collaborazione di Teams, il personale medico può facilmente superare la complessità e la confusione di sistemi frammentati per dedicare il proprio tempo a fornire la migliore assistenza possibile. Microsoft Teams connettore EHR (Electronic Health Record) può:
 
 - Avvia Teams visite virtuali dal sistema provider EHR con un flusso di lavoro clinico integrato.
 - Consentire ai pazienti di partecipare Teams visite virtuali dall'interno del portale dei pazienti.
@@ -49,7 +49,7 @@ Prima di integrare il connettore CCE, è necessario verificare di avere i prereq
 
 - Accesso all'app Microsoft Teams nel [marketplace App Orchard di Epic](https://apporchard.epic.com/Gallery?id=6153).
 
-- Abbonamento attivo a Microsoft Cloud per il settore sanitario o abbonamento all'offerta Microsoft Teams autonoma del connettore EHR (applicata solo durante i test di produzione).
+- Abbonamento attivo a Microsoft Cloud per il settore sanitario o abbonamento all'offerta autonoma Microsoft Teams connettore EHR (applicata solo durante i test di produzione).
 
 - Gli utenti devono avere una licenza Microsoft 365 o Office 365 appropriata che includa le riunioni di Microsoft Teams.
 
@@ -99,7 +99,7 @@ Per completare questo passaggio, l'amministratore di Microsoft 365 deve ricevere
 
 ### <a name="approve-or-view-configuration"></a>[Approvare o visualizzare la configurazione](#approve-or-view-configuration)
 
-L'analista del cliente Epic per l'organizzazione sanitaria che è stata aggiunta come responsabile approvazione deve ora usare lo stesso URL del connettore EHR del passaggio precedente per accedere usando le credenziali Microsoft 365 servizio. Dopo aver completato la convalida, al responsabile approvazione verrà chiesto di accedere con le credenziali di Epic per convalidare l'organizzazione Epic.
+L'analista del cliente Epic per l'organizzazione sanitaria aggiunta come responsabile approvazione ora deve usare lo stesso URL del connettore EHR del passaggio precedente per accedere usando le credenziali Microsoft 365 servizio. Dopo aver completato la convalida, al responsabile approvazione verrà chiesto di accedere con le credenziali di Epic per convalidare l'organizzazione Epic.
 
 > [!Note]
 > L'amministratore di Microsoft 365 e il Customer Analyst di Epic nell'organizzazione possono essere la stessa persona. In questo caso, aggiungere il proprio nome utente come responsabile approvazione. Sarà comunque necessario accedere a Epic per convalidare l'accesso. Le informazioni di accesso di Epic vengono usate solo per convalidare l'URL di base FHIR. Con questo accesso, Microsoft non archivia le credenziali o accede ai dati CCE.
@@ -179,4 +179,4 @@ Il connettore CCE di Microsoft Teams non archivia né trasferisce dati personali
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Teams visite virtuali](ehr-admin-reports.md)
+[Teams di amministrazione del connettore EHR](ehr-admin-reports.md)

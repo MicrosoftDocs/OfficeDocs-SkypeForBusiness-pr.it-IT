@@ -17,12 +17,12 @@ description: Informazioni su come usare il report sull Teams di utilizzo degli e
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e46c0e55eb4808f3c0b112dae72049649fc7f4a8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 504c8822146efa7101ca1435cab961a86068ccaf
+ms.sourcegitcommit: 4df3d144296b9b8982109be7edaffd636aabdf29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60865545"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60959895"
 ---
 # <a name="microsoft-teams-live-event-usage-report"></a>Microsoft Teams di utilizzo degli eventi live
 
@@ -30,31 +30,33 @@ Il Teams di utilizzo degli eventi in tempo reale nell'interfaccia di amministraz
 
 ## <a name="view-the-live-event-usage-report"></a>Visualizzare il report sull'utilizzo degli eventi in tempo reale
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Analisi & report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare **Teams'utilizzo degli eventi live.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su Analisi & **report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare l'Teams **di eventi live.**
 2. In **Intervallo di date** selezionare un intervallo predefinito o impostare un intervallo personalizzato. È possibile impostare un intervallo in modo da visualizzare i dati fino a un anno, sei mesi prima e dopo la data corrente.
 3. (Facoltativo) In **Organizzatore** è possibile scegliere di visualizzare solo gli eventi live organizzati da un utente specifico.
 4. Fare clic **su Esegui report.**  
 
-    ![Screenshot del report sull Teams di utilizzo degli eventi in tempo reale nell'Teams di amministrazione con callout.](../media/teams-live-event-usage-report-with-callouts.png "Screenshot del report sull Teams di utilizzo degli eventi live nell'Teams di amministrazione con callout")
+   :::image type="content" alt-text="Screenshot del report sull Teams di utilizzo degli eventi in tempo reale nell'Teams di amministrazione con callout." source="../media/teams-live-event-usage-report-with-callouts.png" lightbox="../media/teams-live-event-usage-report-with-callouts.png":::
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 
 |Callout |Descrizione  |
 |--------|-------------|
-|**1**   |Il Teams evento live può essere visualizzato per le tendenze degli ultimi 7, 28 giorni o un intervallo di date personalizzato impostato. |
+|**1**   |Il Teams evento live può essere visualizzato per le tendenze degli ultimi 7, 28 giorni o un intervallo di date personalizzato impostato dall'utente. |
 |**2**   |Ogni report ha una data in cui è stato generato. Il report riflette l'attività quasi in tempo reale quando la pagina viene aggiornata. |
 |**3**   |<ul><li>L'asse X del grafico è l'intervallo di date selezionato per il report.</li> <li> L'asse Y è il numero totale di visualizzazione.</li> </ul>Posizionare il puntatore del mouse sul punto in una data specifica per visualizzare il numero di visualizzazioni in tutti gli eventi live in quella data.|
 |**4**   |La tabella fornisce una suddivisione di ogni evento live. <ul><li>**Evento** è il nome visualizzato dell'evento live. Fare clic sul nome dell'evento [per ottenere maggiori dettagli](#view-event-details) sull'evento. </li> <li>**Ora inizio** si riferisce alla data e all'ora di inizio dell'evento.</li> <li>**Lo stato dell'evento** indica se l'evento ha avuto luogo.  </li><li>**Organizzatore** è il nome dell'organizzatore dell'evento.</li> <li>**I relatori** sono i nomi dei relatori dell'evento.</li><li>**I produttori** sono i nomi dei produttori di eventi.</li><li>**Visualizzazioni** è il numero di visualizzazioni univoche dopo il completamento dell'evento.</li><li>**Registrazione** indica se l'impostazione di registrazione è attivata o disattivata.</li><li>**Tipo di produzione** indica se l'evento viene prodotto in Teams da un'applicazione o un dispositivo esterno.</li></li> </ul>Si noti che se un account utente non esiste più in Azure AD, il nome utente viene visualizzato come "--" nella tabella. <br><br>Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella. |
 |**5**   |Selezionare **Modifica colonne** per aggiungere o rimuovere colonne nella tabella.|
 
 ## <a name="notes"></a>Note
-Visualizzazione di un massimo di 100 eventi live che corrispondono ai criteri del report corrente. Per visualizzare altri eventi live, applicare filtri data per ridurre le dimensioni dell'elenco.
+Vengono visualizzati fino a 100 eventi live che corrispondono ai criteri del report corrente. Per visualizzare altri eventi live, applicare filtri data per ridurre le dimensioni dell'elenco. 
+
+Tutti gli utenti che guardano la registrazione dell'evento o dell'evento su richiesta non verranno inclusi nel conteggio delle visualizzazione. 
 
 ## <a name="view-event-details"></a>Visualizzare i dettagli dell'evento
 
 La pagina dei dettagli dell'evento live fornisce un riepilogo dei dettagli di un evento live ed elenca tutti i file, incluse le trascrizioni e le registrazioni, associati all'evento. Fare clic su un nome file per visualizzare o scaricare il file.
 
-![Screenshot che mostra i dettagli di un evento live.](../media/teams-live-event-usage-report-event-detail.png)
+:::image type="content" alt-text="Screenshot che mostra i dettagli di un evento live." source="../media/teams-live-event-usage-report-event-detail.png" lightbox="../media/teams-live-event-usage-report-event-detail.png":::
 
 Se l'organizzazione è abilitata per [Hive](https://www.hivestreaming.com/partners/integration-partners/microsoft/) eCDN o [Kollective](https://kollective.com) eCDN, è possibile ottenere ulteriori analisi dei partecipanti facendo clic sul collegamento del report del partner.
 

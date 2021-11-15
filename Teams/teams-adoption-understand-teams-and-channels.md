@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Altre informazioni sulla strutturazione di team e canali in Microsoft Teams e su come usare Teams per la collaborazione tra organizzazioni.
+description: Altre informazioni sulla strutturazione di team e canali in Microsoft Teams e su come usare Teams per guidare la collaborazione tra organizzazioni.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 17ae2ae79b35ed0b75347bd7a061ebb6789b4284
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: d3d71e8c542b5f39ab979ae876e0c82868ca380a
+ms.sourcegitcommit: 4df3d144296b9b8982109be7edaffd636aabdf29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60855180"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60959815"
 ---
 # <a name="understand-teams-and-channels-in-microsoft-teams"></a>Informazioni su team e canali in Microsoft Teams
 
@@ -36,12 +36,12 @@ I concetti di team e canali sono fondamentali per un'implementazione sana e prod
 
 - I canali sono gli spazi di collaborazione all'interno di un team in cui viene eseguito il lavoro effettivo. 
 
-Per altre informazioni su team e canali, vedere Panoramica di team e canali [in Microsoft Teams](teams-channels-overview.md). Per indicazioni Teams sull'adozione dei Teams [per l'adozione.](https://aka.ms/teamstoolkit) Per altre informazioni sui gruppi Teams e Microsoft 365, vedere Microsoft 365 [Gruppi](office-365-groups.md) e Microsoft Teams e Altre informazioni [su Microsoft 365 gruppi.](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+Per altre informazioni su team e canali, vedere Panoramica di team e canali [in Microsoft Teams](teams-channels-overview.md). Per indicazioni complete Teams sull'adozione dei Teams [sull'adozione.](https://aka.ms/teamstoolkit) Per altre informazioni sui gruppi Teams e Microsoft 365, vedere Microsoft 365 [Gruppi](office-365-groups.md) e Microsoft Teams e Altre informazioni [su Microsoft 365 gruppi.](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 
 | &nbsp; |&nbsp;  |
 |---------|---------|
-| Guarda questo breve video   | <iframe width="350" height="200" src="https://youtu.be/WkAVgNKn0hs" frameborder="0" allowfullscreen></iframe>   |
+| Guarda questo breve video   | <iframe width="350" height="200" src="https://www.youtube.com/embed/WkAVgNKn0hs" frameborder="0" allowfullscreen></iframe>   |
 
 
 

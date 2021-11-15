@@ -15,26 +15,26 @@ appliesto:
 ms.localizationpriority: medium
 ms.custom: ''
 description: Informazioni su come gestire la funzionalità Musica blocco in Sistema telefonico.
-ms.openlocfilehash: 7f67e4f26ecac837b93257ca79a757d49daf239b
-ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
+ms.openlocfilehash: e2f2347ca4368a8665d77ff2424a5c0082c1b0d8
+ms.sourcegitcommit: 4df3d144296b9b8982109be7edaffd636aabdf29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "60605562"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960125"
 ---
 # <a name="music-on-hold"></a>Musica blocco
 
 Quando un Microsoft Teams un utente mette in attesa una chiamata in arrivo dalla rete PSTN (Public Switched Telephone Network), il chiamante PSTN può ascoltare la musica selezionata.
 
-La musica riprodotta è la musica predefinita fornita da Microsoft o la musica personalizzata caricata e configurata. L'amministratore tenant può configurare se Musica blocco è disponibile creando un criterio di chiamata Teams e assegnando il criterio all'Teams utente.
+La musica riprodotta è la musica predefinita fornita da Microsoft o la musica personalizzata caricata e configurata. L'amministratore del tenant può configurare se Musica blocco è disponibile creando un criterio di chiamata Teams e assegnando il criterio all'Teams utente.
 
-Si noti che i chiamanti PSTN possono ascoltare Musica blocco anche in altri scenari. ad esempio, quando chiamano in una coda di chiamata cloud o quando la chiamata è parcheggiata da un Microsoft Teams utente. Questi scenari non sono coperti o controllati dalle funzionalità menzionate in questo articolo.
+Si noti che i chiamanti PSTN possono ascoltare Musica in attesa anche in altri scenari, ad esempio quando chiamano in una coda di chiamate cloud o quando la chiamata è parcheggiata da un Microsoft Teams utente. Questi scenari non sono coperti o controllati dalle funzionalità menzionate in questo articolo.
 
 ## <a name="configure-music-on-hold"></a>Configurare Musica blocco
 
 Per configurare Musica blocco:
 
-1.  Nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare a Criteri **> chiamate vocali**.
+1.  Nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione, passare a Criteri > **chiamate vocali**.
 
 2.  Nella scheda **Gestisci criteri** selezionare uno dei criteri esistenti o crearne uno nuovo.
 
@@ -46,19 +46,16 @@ Se un utente Teams ha un criterio di chiamata Teams con Musica in attesa imposta
 
 ## <a name="configure-custom-music"></a>Configurare musica personalizzata
 
-> [!NOTE]
-> Questa funzionalità è disponibile come versione di anteprima pubblica.
-
 Oltre a riprodurre musica predefinita per i chiamanti PSTN, è possibile caricare un file audio personalizzato con musica o altro contenuto audio e configurare il file audio per la riproduzione al chiamante PSTN.
 Ad esempio, un reparto o un'organizzazione potrebbe voler riprodurre un annuncio personalizzato o musica personalizzata quando i chiamanti PSTN esterni vengono messi in attesa.  
 
 > [!NOTE]
-> L'utente è responsabile della cancellazione e della protezione indipendente di tutti i diritti e le autorizzazioni necessari per l'uso di qualsiasi file musicale o audio con il Microsoft Teams servizio. Questo può includere proprietà intellettuale e altri diritti in qualsiasi musica, effetti audio, audio, marchi, nomi e altri contenuti nel file audio di tutti i titolari di diritti pertinenti. I titolari possono includere artisti, attori, interpreti, musicisti, cantautori, compositori, etichette di registrazione, editori di musica, unioni, gilde, società di diritti, organizzazioni di gestione collettiva e qualsiasi altra parte che possiede, controlla o licenze i diritti di copyright della musica, gli effetti sonori, l'audio e altri diritti di proprietà intellettuale.
+> L'utente è responsabile della cancellazione e della protezione indipendente di tutti i diritti e le autorizzazioni necessari per l'uso di qualsiasi file musicale o audio con il servizio Microsoft Teams audio. Questo può includere proprietà intellettuale e altri diritti in qualsiasi musica, effetti audio, audio, marchi, nomi e altri contenuti nel file audio di tutti i titolari di diritti pertinenti. I titolari possono includere artisti, attori, interpreti, musicisti, cantautori, compositori, etichette di registrazione, editori di musica, unioni, gilde, società di diritti, organizzazioni di gestione collettiva e qualsiasi altra parte che possiede, controlla o licenze i diritti di copyright della musica, gli effetti sonori, l'audio e altri diritti di proprietà intellettuale.
 
-Per configurare il blocco Musica personalizzato, usare i cmdlet di PowerShell New/Get/Set/Grant/Remove-CsTeamsCallHoldPolicy e Import/Get/Remove-CsOnlineAudioFile Teams nel modulo di PowerShell 2.5.0 o versione successiva.
+Per configurare il blocco Musica personalizzato, usare i cmdlet di PowerShell New/Get/Set/Grant/Remove-CsTeamsCallHoldPolicy e Import/Get/Remove-CsOnlineAudioFile nel modulo di PowerShell Teams 2.5.0 o versione successiva.
 
 
-1. Assicurarsi che l Teams'utente abbia Musica blocco per i chiamanti PSTN impostato su Abilitato nel criterio Teams chiamate. 
+1. Verificare che l Teams'utente abbia Musica blocco per i chiamanti PSTN impostato su Abilitato nel criterio Teams chiamate. 
 
 2. Upload file audio personalizzato.
 
@@ -77,9 +74,9 @@ FileName      : customMoH1.mp3
 ApplicationId : TenantGlobal
 ```
 
-### <a name="reference-the-audio-file-in-a-teams-call-hold-policy"></a>Fare riferimento al file audio in un criterio di Teams chiamata
+### <a name="reference-the-audio-file-in-a-teams-call-hold-policy"></a>Fare riferimento al file audio in un criterio di Teams di chiamata
 
-Dopo aver caricato il file audio, è necessario fare riferimento al file in un criterio di blocco delle chiamate di Teams usando l'ID del file quando si crea o si imposta un criterio di blocco chiamata Teams chiamata. Ad esempio:
+Dopo aver caricato il file audio, è necessario fare riferimento al file in un criterio di blocco delle chiamate di Teams usando l'ID del file quando si crea o si imposta un criterio di blocco Teams chiamata. Ad esempio:
 
 ```PowerShell
 C:\> New-CsTeamsCallHoldPolicy -Identity "CustomMoH1" -Description "Custom MoH using CustomMoH1.mp3" -AudioFileId $AudioFile.Id
@@ -93,11 +90,11 @@ C:\> Grant-CsTeamsCallHoldPolicy -PolicyName "CustomMoH1" -Identity user1@contos
 
 Per ottenere informazioni sui file audio caricati, usare il cmdlet Get-CsOnlineAudioFile.
 
-Per rimuovere un file audio caricato, usare il cmdlet Remove-CsOnlineAudioFile caricamento. Prima di rimuovere un file audio, verificare di non usarlo in teamsCallHoldPolicy.
+Per rimuovere un file audio caricato, usare il cmdlet Remove-CsOnlineAudioFile. Prima di rimuovere un file audio, verificare di non usarlo in teamsCallHoldPolicy.
 
 ## <a name="feature-availability"></a>Disponibilità delle funzionalità
 
-La tabella seguente indica le caratteristiche in cui i client e i dispositivi supportano Musica blocco e Musica blocco. Microsoft continua ad aggiungere il supporto per le funzionalità, quindi controlla spesso la disponibilità aggiuntiva.
+La tabella seguente indica le funzionalità in cui i client e i dispositivi supportano Musica blocco e il blocco Musica personalizzato. Microsoft continua ad aggiungere il supporto per le funzionalità, quindi controlla spesso la disponibilità aggiuntiva.
 
 
 | Funzionalità | Desktop <br> Windows/Mac OS | Browser | Dispositivi mobili <br> iOS | Dispositivi mobili <br> Android | Teams Telefono |
@@ -109,13 +106,13 @@ La tabella seguente indica le caratteristiche in cui i client e i dispositivi su
 
 - Musica blocco è disponibile solo nel cloud commerciale.
 
-- Musica il blocco è disponibile solo quando l'utente è in modalità TeamsOnly.
+- Musica blocco è disponibile solo quando l'utente è in modalità TeamsOnly.
 
-- Se l'utente Teams è abilitato per Location-Based routing, Musica non può essere riprodotto al chiamante.
+- Se l'utente Teams chiamato è abilitato per Location-Based routing, Musica non può essere riprodotto al chiamante.
 
 - Non è possibile esportare il file audio dopo il caricamento. puoi solo rimuoverlo.
 
-- Le Musica di blocco non sono disponibili per gli utenti configurati per l'aspetto della linea condivisa (delega) e quando viene usato Il parcheggio di chiamata. Verrà riprodotta Musica blocco standard.
+- Le Musica blocco non sono disponibili per gli utenti configurati per l'aspetto della linea condivisa (delega) e quando viene usato Il parcheggio di chiamata. Verrà riprodotta Musica blocco standard.
 
 - In alcuni scenari, una chiamata di bypass multimediale direct routing verrà convertita in bypass non multimediale per la riproduzione di Musica in attesa e la chiamata rimarrà come bypass non multimediale finché la chiamata non viene terminata.
 
