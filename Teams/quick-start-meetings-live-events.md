@@ -20,12 +20,12 @@ ms.localizationpriority: high
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3e3a74b5e156817ec9b28608d725800858c3b350
-ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
+ms.openlocfilehash: caabea3e1310ad704953171836dcdfb35506609a
+ms.sourcegitcommit: 4df3d144296b9b8982109be7edaffd636aabdf29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "59432538"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60960065"
 ---
 # <a name="quick-start---meetings-webinars-and-live-events"></a>Guida introduttiva: riunioni, webinar ed eventi live 
 
@@ -51,9 +51,9 @@ La tabella seguente riepiloga brevemente i tre tipi di riunioni, il numero di pa
 | Eventi live | Fino a 20,000** |- Trasmissione a un pubblico vasto. <br>- Sessione di domande e risposte con moderatore per l'interazione con il pubblico. <br> - È possibile specificare i produttori e i relatori, inclusi i relatori esterni.<br>- Supporta funzionalità di produzione più avanzate. | No |
 ||||
 
-*Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 31 dicembre 2021.<br>
+*Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 30 giugno 2022.<br>
 
-**Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 31 dicembre 2021. È possibile pianificare numeri ancora maggiori con eventi live in Yammer e/o Microsoft Stream. Per altre informazioni, vedere [Eventi live in Microsoft 365](/stream/live-event-m365). Si noti che gli eventi che superano 20.000 partecipanti richiedono il [programma di assistenza per eventi live](/stream/live-events-assistance). 
+**Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 30 giugno 2022. È possibile pianificare numeri ancora maggiori con eventi live in Yammer e/o Microsoft Stream. Per altre informazioni, vedere [Eventi live in Microsoft 365](/stream/live-event-m365). Si noti che gli eventi che superano 20.000 partecipanti richiedono il [programma di assistenza per eventi live](/stream/live-events-assistance). 
 
 **Considerazioni in merito a riunioni di grandi dimensioni, webinar ed eventi live**: quando si ospitano riunioni di grandi dimensioni, considerare quanto segue:
 

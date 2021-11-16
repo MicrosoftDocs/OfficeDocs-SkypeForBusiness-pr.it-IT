@@ -18,12 +18,12 @@ description: Informazioni sull'anteprima pubblica in Microsoft Teams. Provare le
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: ea71e9a00b49c498240be0ca876a0f1baeed27eb
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: e4a223431cef73d1fd9ec0578148b9f9d6f1d6d8
+ms.sourcegitcommit: 4df3d144296b9b8982109be7edaffd636aabdf29
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60834734"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "60959875"
 ---
 # <a name="microsoft-teams-public-preview"></a>Anteprima pubblica in Microsoft Teams
 
@@ -38,9 +38,9 @@ Per un elenco delle funzionalità disponibili nell'anteprima pubblica di Teams, 
 
 L'anteprima pubblica è abilitata per singolo utente e l'opzione per attivarla è controllata da un criterio amministrativo. I criteri di aggiornamento vengono usati per gestire gli utenti delle anteprime di Teams e Office che visualizzano le funzionalità non definitive o di anteprima nell'app Teams. È possibile usare il criterio globale (predefinito a livello dell'organizzazione) e personalizzarlo oppure creare uno o più criteri personalizzati per gli utenti. Questo criterio deve essere assegnato a utenti specifici in quanto non sovrascrive il criterio globale.
 
-1. Accedere all'interfaccia di amministrazione.
+1. Accedere all'[interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com/).
 
-2. Selezionare **Teams** > **Criteri di aggiornamento** e quindi selezionare l'opzione **Aggiorna criteri**.
+2. Selezionare **Teams** > **Criteri di aggiornamento di Teams**.
 
 1. Selezionare **Aggiungi** per creare un nuovo criterio o selezionare un criterio esistente per aprire **Aggiorna criterio**.
 
