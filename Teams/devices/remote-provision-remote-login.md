@@ -1,9 +1,8 @@
 ---
-title: Provisioning remoto e accesso per i Teams Android
-author: serdarsoysal
-ms.author: serdars
+title: Provisioning remoto e accesso per Teams dispositivi Android
+author: cazawideh
+ms.author: czawideh
 manager: serdars
-ms.reviewer: prgholve
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -17,15 +16,15 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Scopri come eseguire il provisioning remoto e accedere per Teams dispositivi Android
-ms.openlocfilehash: 818a6a4fc7941c82a52d63016bbdc338f977be29
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+description: Informazioni su come eseguire il provisioning remoto e accedere per Teams dispositivi Android
+ms.openlocfilehash: e7e5acd491f15d4cc52ce1b898112da868f80594
+ms.sourcegitcommit: a3b3eb85354d62b2a5325ba7c8dda88352c6711a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60046152"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61070150"
 ---
-# <a name="remote-provisioning-and-sign-in-for-teams-android-devices"></a>Provisioning remoto e accesso per i Teams Android
+# <a name="remote-provisioning-and-sign-in-for-teams-android-devices"></a>Provisioning remoto e accesso per Teams dispositivi Android
 
 Gli amministratori IT possono eseguire il provisioning in remoto e accedere a un dispositivo Teams Android. Per eseguire il provisioning di un dispositivo in remoto, l'amministratore deve caricare gli ID MAC dei dispositivi di cui viene eseguito il provisioning e creare un codice di verifica. L'intero processo può essere completato in remoto dall'Teams di amministrazione.
 
@@ -108,7 +107,7 @@ Quando il dispositivo è acceso e connesso alla rete, il tecnico esegue il provi
 
    ![Nome tenant nella pagina di accesso.](../media/provision-code.png)
 
-## <a name="sign-in-remotely"></a>Accedere in remoto
+## <a name="first-time-remote-sign-in"></a>Primo accesso remoto
 
 Il dispositivo di cui è stato eseguito il provisioning viene visualizzato nella **scheda In** attesa di accesso. Avviare il processo di accesso remoto selezionando il singolo dispositivo.
 
@@ -120,7 +119,8 @@ Il dispositivo di cui è stato eseguito il provisioning viene visualizzato nella
 
    ![la finestra Accedi a un utente per un singolo dispositivo.](../media/sign-in-user.png)
 
-## <a name="related-article"></a>Articolo correlato
+## <a name="related-articles"></a>Articoli correlati
 
 - [Gestire i dispositivi in Teams](device-management.md)
+- [Accesso remoto e disconnessione](remote-sign-in-and-sign-out.md)
 - [Aggiornare Teams dispositivi in remoto](remote-update.md)
