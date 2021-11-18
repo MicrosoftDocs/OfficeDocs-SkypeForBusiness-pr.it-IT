@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a76559ea1ec140b18acbcc49f92b724a0e1bdc3a
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b87aaae3feeef9552cd64d76bb777cb081a6102e
+ms.sourcegitcommit: d9778b925873648213f05e27385255ba66cf8492
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58604455"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61055427"
 ---
 # <a name="manage-microsoft-teams-settings-for-your-organization"></a>Gestire le impostazioni di Microsoft Teams per l'organizzazione
 
@@ -36,9 +36,9 @@ ms.locfileid: "58604455"
 
 Per altre informazioni, vedere [Impostazioni di amministrazione per le app in Teams](admin-settings.md).  
 
-## <a name="teams-org-wide-settings-in-the-microsoft-teams-admin-center"></a>Impostazioni di Teams a livello di organizzazione nell'interfaccia di amministrazione di Microsoft Teams
+## <a name="teams-external-access-and-guest-access-settings-in-the-microsoft-teams-admin-center"></a>Impostazioni di accesso esterno e degli utenti guest di Teams nell'interfaccia di amministrazione di Microsoft Teams
 
-Nell'interfaccia di amministrazione di Microsoft Teams è possibile controllare le impostazioni degli utenti a livello di organizzazione. Per modificare le impostazioni a livello di organizzazione, passare all'interfaccia di amministrazione di Microsoft Teams e selezionare **Impostazioni organizzazione**. È possibile configurare le impostazioni seguenti.
+È possibile controllare le impostazioni di accesso esterno e degli utenti guest nell'interfaccia di amministrazione di Microsoft Teams. Per modificare queste impostazioni, passare all'interfaccia di amministrazione di Microsoft Teams, quindi selezionare **Utenti.** È possibile configurare le impostazioni seguenti.
 
 ### <a name="external-access"></a>Accesso esterno
 
@@ -54,6 +54,10 @@ Per aggiungere o bloccare un dominio:
 ### <a name="guest-access"></a>Accesso guest
 
 L'**accesso guest** in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali. Chiunque abbia un account di posta elettronica aziendale o personale, come Outlook, Gmail o altri, può partecipare come guest in Teams e avere accesso completo a chat, riunioni e file del team. Per altre informazioni, vedere [Accesso guest in Microsoft Teams](guest-access.md).
+
+## <a name="teams-settings-and-teams-upgrade-settings-in-the-microsoft-teams-admin-center"></a>Impostazioni di Teams e impostazioni di aggiornamento di Teams nell'interfaccia di amministrazione di Microsoft Teams
+
+È possibile controllare le impostazioni di Teams e le impostazioni di aggiornamento di Teams nell'interfaccia di amministrazione di Microsoft Teams. Per modificare queste impostazioni, passare all'interfaccia di amministrazione di Microsoft Teams, quindi selezionare **Teams**. È possibile configurare le impostazioni seguenti.
 
 ### <a name="teams-settings"></a>Impostazioni di Teams
 
@@ -102,11 +106,7 @@ La ricerca nella directory con ambito di Microsoft Teams usa i criteri rubrica d
 
 La chat supervisionata consente a organizzazioni e istituti di istruzione di limitare le funzionalità di chat usando autorizzazioni basate sui ruoli. Queste autorizzazioni controllano la quantità di supervisione necessaria per un utente durante la chat con altri utenti. Altre informazioni sulla [chat supervisionata](supervise-chats-edu.md).
 
-### <a name="skype-for-business"></a>Skype for Business
-
-Usare questa pagina per gestire le funzionalità di Skype for Business per gli utenti di Skype for Business dell'organizzazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](skype-for-business-settings.md).
-
-### <a name="teams-upgrade"></a>Aggiornamento di Teams
+### <a name="teams-upgrade-settings"></a>Impostazioni di aggiornamento di Teams
 
 È possibile usare queste impostazioni per configurare il modo in cui gli utenti verranno aggiornati da Skype for Business a Microsoft Teams. 
 
@@ -125,6 +125,7 @@ La modalità di coesistenza scelta determina l'instradamento  delle chiamate e d
 
 Qui è possibile scegliere l'app che gli utenti useranno per partecipare alle riunioni di Skype for Business (Skype for Business o [App Riunioni Skype](https://support.office.com/article/What-is-Skype-Meetings-App-Skype-for-Business-Web-App-1FF3D412-718A-4982-8FF2-A4992608CDB5)). Questa impostazione non dipende dall'impostazione della modalità di coesistenza.
 
+### <a name="planning-settings-in-the-microsoft-teams-admin-center"></a>Impostazioni di pianificazione nell'interfaccia di amministrazione di Microsoft Teams
 
 #### <a name="network-planner"></a>Network Planner
 
@@ -132,6 +133,11 @@ Network Planner consente di determinare e organizzare i requisiti di rete per la
 
 È anche possibile selezionare l'opzione "Scarica l'app di Teams in background per gli utenti Skype for Business".  Per impostazione predefinita, questa opzione è attivata. Quando l'opzione è attivata, l'app Teams verrà scaricata in background per gli utenti che eseguono l'app Skype for Business in PC Windows. Questo accade si verifica se la modalità di coesistenza dell'utente è Solo Teams o se nell'app Skype for Business è abilitata una notifica di aggiornamento in sospeso.
 
+## <a name="other-settings-in-the-microsoft-teams-admin-center"></a>Altre impostazioni nell'interfaccia di amministrazione di Microsoft Teams
+
+### <a name="skype-for-business"></a>Skype for Business
+
+Usare questa pagina per gestire le funzionalità di Skype for Business per gli utenti di Skype for Business dell'organizzazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](skype-for-business-settings.md).
 
 ## <a name="how-can-i-tell-which-features-are-available"></a>Come si fa a determinare quali funzionalità sono disponibili?
 

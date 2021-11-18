@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cc920db842d37129a122ed69a8816e66a4c16d9e
-ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
+ms.openlocfilehash: ea57cc0f2a0809400376372952dfd7b274f40a02
+ms.sourcegitcommit: d9778b925873648213f05e27385255ba66cf8492
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "59432448"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "61055417"
 ---
 # <a name="it-admin-guide-to-education-insights-in-microsoft-teams"></a>Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams
 
@@ -175,6 +175,8 @@ Per accedere a Insights, gli utenti devono avere una licenza A1, A3 o A5 per Mic
 
 *Insights per l'istruzione Premium* è un aggiornamento a pagamento che offre ai responsabili dell'istruzione una visualizzazione a livello aziendale dei dati Insights per l'istruzione e un accesso esteso alle visualizzazioni dei dati cronologici per i docenti. Gli istituti di istruzione idonei possono acquistare una licenza per il componente aggiuntivo *Insights per l'istruzione Premium* tramite Enrollment for Education Solutions (EES), Microsoft Cloud Service Provider (CSP) e l'interfaccia di amministrazione di Microsoft 365 (web direct).
 
+Il componente aggiuntivo di Insights per l'istruzione Premium sarà disponibile per le organizzazioni in base all'acquisto delle licenze per tutti gli studenti digitalmente attivi nel tenant.
+
 ## <a name="student-information-system-sis-integration"></a>Integrazione del sistema informativo degli studenti (SIS)
 Fornendo un maggiore numero di dati a Insights, il supporto dei docenti nei confronti degli studenti migliorerà e allo stesso tempo anche il supporto dei responsabili per l’istruzione verso i docenti.
 
@@ -269,3 +271,7 @@ Verificare anche che gli studenti *non* [abbiano partecipato alla riunione della
 
 > [!NOTE]
 > Se non si è trovata una risposta alla propria domanda, [aprire un ticket di supporto](https://aka.ms/edusupport). Includere gli screenshot pertinenti che rappresentano il problema e la data in cui si è verificato. Aggiungere gli eventuali altri dati che si pensa potrebbero essere utili per risolvere il problema.
+
+### <a name="what-licenses-do-i-need-to-activate-education-insights-premium"></a>Quali licenze occorrono per attivare Insights per l'istruzione Premium?
+Per abilitare Insights per l'istruzione Premium per l'organizzazione, il tenant deve acquistare le licenze in base al numero di studenti digitalmente attivi nel tenant dell'organizzazione. Ovvero per tutti gli studenti che usano una classe di Teams come parte del lavoro dell'istituto di istruzione per attività come riunioni, comunicazioni, chat, attività, modifica di file, blocco appunti della classe o Reflect.
+
