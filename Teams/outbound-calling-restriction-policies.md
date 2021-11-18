@@ -1,5 +1,5 @@
 ---
-title: Restrizioni per le chiamate in uscita - Audioconferenza & chiamate PSTN
+title: Restrizioni per le chiamate in uscita - Servizi di audioconferenza & chiamate PSTN
 ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
@@ -21,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Gli amministratori possono controllare il tipo di audioconferenza e le chiamate PSTN degli utenti finali che possono essere effettuate dagli utenti.
-ms.openlocfilehash: 93f219feea677afe83c1c1dc031d6b878b219a45
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: 43fda0e088cc0b7c29bd270d20f0701f0391f8ce
+ms.sourcegitcommit: 47f537a81659ec5ecb7dfdb57589fa133199ec57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60536877"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "61066547"
 ---
 # <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente
 
@@ -42,7 +42,7 @@ I controlli delle chiamate in uscita possono essere applicati in base all'utente
 Per scoprire quali paesi e aree geografiche sono considerati zona A, vedere Aree geografiche [e aree geografiche per audioconferenza.](audio-conferencing-zones.md)
 
    > [!NOTE]
-   > Una chiamata è considerata nazionale se il numero composto si trova nello stesso paese in cui è stato configurato Microsoft 365 o Office 365 per l'organizzatore della riunione (nel caso delle audioconferenze) o per l'utente finale (nel caso delle chiamate PSTN dell'utente finale).
+   > Una chiamata viene considerata nazionale se il numero composto si trova nello stesso paese in cui è stato configurato Microsoft 365 o Office 365 per l'organizzatore della riunione (nel caso delle audioconferenze) o per l'utente finale (nel caso delle chiamate PSTN dell'utente finale).
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
@@ -64,7 +64,7 @@ Per scoprire quali paesi e aree geografiche sono considerati zona A, vedere Aree
 
 Le restrizioni per le chiamate in uscita sono controllate da un singolo criterio denominato OnlineDialOutPolicy, che ha un attributo di restrizione per ogni criterio. Il criterio non può essere personalizzato, ma esistono istanze dei criteri predefinite per ogni combinazione di impostazioni.
 
-È possibile usare il cmdlet Get-CSOnlineDialOutPolicy per visualizzare i criteri di chiamata in uscita e usare il comando seguente per la configurazione.
+È possibile usare il cmdlet Get-CSOnlineDialOutPolicy per visualizzare i criteri per le chiamate in uscita e usare il comando seguente per la configurazione.
 
 **Impostare i criteri a livello di utente con il cmdlet seguente.** Il cmdlet Grant non contiene la parola "Online" come fa il cmdlet Get.
 
@@ -75,7 +75,7 @@ Grant-CsDialoutPolicy -Identity <username> -PolicyName <policy name>
 **Impostare i criteri a livello di tenant con il cmdlet seguente.**
 
 ```powershell
-Grant-CsDialoutPolicy  -Tenant <guid> -PolicyName <policy name>  -Global 
+Grant-CsDialoutPolicy -PolicyName <policy name>  -Global 
 ```
 
 Tutti gli utenti del tenant a cui non è assegnato alcun criterio di accesso remoto riceveranno questo criterio. Gli altri utenti rimangono con i criteri correnti.
