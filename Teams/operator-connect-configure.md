@@ -21,20 +21,20 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6c19981f4cc7edb556b245da2aac0b320705cc64
-ms.sourcegitcommit: 99bf220249723e954cf5295df3418d93fec80db6
+ms.openlocfilehash: 2fa7a7c314fe2d31e5306ec96902f8ca87e44355
+ms.sourcegitcommit: 5c88a07f07f9faad294d614d507e43173efc5f46
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60275570"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111966"
 ---
 # <a name="configure-operator-connect"></a>Configurare Connessione con operatore
 
-Questo articolo descrive come configurare Connessione con operatore. Prima di configurare Connessione con operatore, leggere Pianificare [](operator-connect-plan.md) Connessione con operatore informazioni sui prerequisiti e sulle licenze.
+Questo articolo descrive come configurare Connessione con operatore. Prima di configurare Connessione con operatore, leggere Pianificare Connessione con operatore [informazioni](operator-connect-plan.md) sui prerequisiti e sulle licenze.
 
 ## <a name="enable-an-operator"></a>Abilitare un operatore
 
-È possibile abilitare, modificare e rimuovere operatori nell'Teams di amministrazione. Nel riquadro di spostamento sinistro passare a Operatori > **vocali.**
+È possibile abilitare, modificare e rimuovere operatori nell'Teams di amministrazione. Nel riquadro di spostamento sinistro passare a Operatori > **vocali**.
 
 Per abilitare un operatore:
 
@@ -42,7 +42,7 @@ Per abilitare un operatore:
 
 2. **Selezionare i paesi.** In **Impostazioni operatore** selezionare i paesi da abilitare con l'operatore selezionato.
 
-3. **Fornisci informazioni di contatto** Le informazioni di contatto, inclusi il nome completo e l'indirizzo di posta elettronica, verranno condivise automaticamente con l'operatore. È possibile modificare queste informazioni in un secondo momento. Inoltre, dovrai fornire le dimensioni dell'azienda e avrai la possibilità di fornire il tuo numero di telefono. Gli operatori useranno queste informazioni per contattare l'utente con maggiori dettagli sulle Connessione con operatore.
+3. **Fornisci informazioni di contatto** Le informazioni di contatto, inclusi il nome completo e l'indirizzo di posta elettronica, verranno condivise automaticamente con l'operatore. È possibile modificare queste informazioni in un secondo momento. Inoltre, dovrai fornire le dimensioni dell'azienda e avrai la possibilità di fornire il tuo numero di telefono. Gli operatori useranno queste informazioni per contattare l'utente con maggiori dettagli su Connessione con operatore.
 
 4. Accettare l'avviso di trasferimento dei dati.
 
@@ -50,7 +50,7 @@ Per abilitare un operatore:
 
 ## <a name="set-up-phone-numbers"></a>Configurare i numeri di telefono
 
-La modalità di configurazione dei numeri di telefono dipende dalla configurazione dei numeri per i nuovi utenti o dallo spostamento dei numeri esistenti da Piani per chiamate Microsoft o Instradamento diretto.
+La modalità di configurazione dei numeri di telefono dipende dalla configurazione dei numeri per i nuovi utenti o dallo spostamento dei numeri esistenti da Piani per chiamate Microsoft o Routing diretto.
 
 - Se è necessario acquisire numeri di telefono per i nuovi utenti, vedere Acquisire numeri per i nuovi utenti [Teams nuovi utenti](#acquire-numbers-for-new-teams-users).
 
@@ -64,11 +64,11 @@ Per acquisire numeri per i nuovi Teams utenti, seguire questa procedura:
 
 1. **Assegnare una Sistema telefonico licenza.** È possibile assegnare una Sistema telefonico agli utenti dal interfaccia di amministrazione di Microsoft 365 o usando PowerShell. Per altre informazioni, vedere [Assegnare Teams licenze per i componenti aggiuntivi agli utenti.](teams-add-on-licensing/assign-teams-add-on-licenses.md)
 
-2. Gli utenti a cui verranno assegnati numeri di telefono acquisiti con Connessione con operatore devono essere in modalità TeamsOnly. Se l'organizzazione è in modalità TeamsOnly, tutti gli utenti sono in modalità TeamsOnly. Per verificare questo problema, nell'interfaccia Teams di amministrazione passare a Impostazioni a livello di organizzazione > Teams **aggiornamento.** Se l'organizzazione è in modalità Isole, verificare se specifici utenti sono in modalità TeamsOnly. Passare a **Utenti** e selezionare un account utente. Nella scheda **Account,** in **Teams,** la modalità di coesistenza deve essere impostata su 'TeamsOnly'.
+2. Gli utenti a cui verranno assegnati numeri di telefono acquisiti con Connessione con operatore devono essere in modalità TeamsOnly. Se l'organizzazione è in modalità TeamsOnly, tutti gli utenti sono in modalità TeamsOnly. Per verificare questa opzione, nell'interfaccia Teams di amministrazione passare a impostazioni Teams > Teams **di aggiornamento.** Se l'organizzazione è in modalità Isole, verificare se specifici utenti sono in modalità TeamsOnly. Passare a **Utenti** e selezionare un account utente. Nella scheda **Account,** in **Teams,** la modalità di coesistenza deve essere impostata su 'TeamsOnly'.
 
 3. **Acquisire numeri.** Accedi al sito Web del tuo operatore per ordinare e acquisire numeri di telefono. Per un elenco dei siti Web degli operatori, passare alla [directory Microsoft 365 Connessione con operatore.](https://cloudpartners.transform.microsoft.com/practices/microsoft-365-for-operators/directory) È necessario specificare l'ID tenant. Se non si conosce l'ID tenant, vedere Trovare [l'ID tenant](/onedrive/find-your-office-365-tenant-id) Microsoft 365 per altre informazioni.
 
-4. **Assegnare numeri.** Una volta completato l'ordine, l'operatore carica i numeri nel tenant. Per visualizzare i numeri e il provider nell'Teams di amministrazione, accedere a Numeri > Telefono **vocali**. Assegnare numeri agli utenti dall'Teams di amministrazione o usando PowerShell. Per altre informazioni, vedere [Assegnare numeri.](#assign-numbers)
+4. **Assegnare numeri.** Una volta completato l'ordine, l'operatore carica i numeri nel tenant. Per visualizzare i numeri e il provider nell'interfaccia Teams di amministrazione, accedere a **Numeri > Telefono vocali**. Assegnare numeri agli utenti dall'Teams di amministrazione o usando PowerShell. Per altre informazioni, vedere [Assegnare numeri.](#assign-numbers)
 
 > [!NOTE]
 > Oltre a ottenere numeri di telefono per gli [utenti,](getting-phone-numbers-for-your-users.md)è possibile ottenere numeri a numero verde o a numero verde per servizi come audioconferenza (per bridge di conferenza), Operatori automatici e Code di chiamata (detti anche numeri di servizio). I numeri di servizio hanno una capacità di chiamate contemporanee superiore ai numeri di telefono per utenti o abbonati. Ad esempio, un numero di servizio può gestire centinaia di chiamate contemporaneamente, mentre il numero di telefono di un utente può gestire solo alcune chiamate contemporaneamente. Per ottenere i numeri di servizio, contattare l'operatore.
@@ -89,7 +89,7 @@ Per altre informazioni sulle chiamate di emergenza, vedere [Gestire le chiamate]
 
 ### <a name="move-numbers-from-calling-plans-to-operator-connect"></a>Spostare i numeri da Piani per chiamate a Connessione con operatore
 
-1. Contattare l'operatore per convertire i numeri Connessione con operatore. Vedere [Microsoft 365 Connessione con operatore directory per](https://cloudpartners.transform.microsoft.com/practices/microsoft-365-for-operators/directory) trovare il sito Web dell'operatore.
+1. Contattare l'operatore per convertire i numeri in Connessione con operatore. Vedere [Microsoft 365 Connessione con operatore directory per](https://cloudpartners.transform.microsoft.com/practices/microsoft-365-for-operators/directory) trovare il sito Web dell'operatore.
 
 2. Dopo che l'operatore ha completato l'ordine di trasferimento, è possibile annullare l'assegnazione dei numeri di telefono del piano di chiamata degli utenti e rimuovere la licenza per il piano di chiamata. Quindi, l'operatore può caricare i numeri nel tenant.
 
@@ -115,7 +115,7 @@ Per altre informazioni sulle chiamate di emergenza, vedere [Gestire le chiamate]
 
 3. Accedi al sito Web del tuo operatore per ordinare e acquisire numeri di telefono. Per trovare il sito Web degli operatori, vedere la [directory Microsoft 365 Connessione con operatore.](https://cloudpartners.transform.microsoft.com/practices/microsoft-365-for-operators/directory) È necessario specificare l'ID tenant. Se non si conosce l'ID tenant, vedere Trovare [l'ID tenant](/onedrive/find-your-office-365-tenant-id) Microsoft 365 per altre informazioni.
 
-4. Una volta completato l'ordine, l'operatore carica i numeri nel tenant. Per visualizzare i numeri e il provider nell'Teams di amministrazione, accedere a Numeri > Telefono **vocali**. Assegnare Connessione con operatore numeri di telefono agli utenti usando l'interfaccia Teams di amministrazione o PowerShell. Per altre informazioni, vedere [Assegnare numeri.](#assign-numbers)
+4. Una volta completato l'ordine, l'operatore carica i numeri nel tenant. Per visualizzare i numeri e il provider nell'interfaccia Teams di amministrazione, accedere a **Numeri > Telefono vocali**. Assegnare Connessione con operatore numeri di telefono agli utenti usando l'interfaccia Teams di amministrazione o PowerShell. Per altre informazioni, vedere [Assegnare numeri.](#assign-numbers)
 
 ### <a name="assign-numbers"></a>Assegnare numeri
 
@@ -142,4 +142,4 @@ Per rilasciare i numeri di telefono dall'Teams di amministrazione, passare alla 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Pianificare Teams operatori automatici e code di chiamata](plan-auto-attendant-call-queue.md)
+- [Pianificare l'Teams operatori automatici e le code di chiamata](plan-auto-attendant-call-queue.md)

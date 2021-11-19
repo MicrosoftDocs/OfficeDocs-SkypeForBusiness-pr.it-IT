@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.reviewer: ''
 description: Informazioni su come gestire l'app Bookings in Teams per gli utenti dell'organizzazione.
-ms.openlocfilehash: 42e7c4741104f417f7e24a0e6441acb57cac203a
-ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
+ms.openlocfilehash: ae471bfee1901396ee3419380fcd7620e21231fe
+ms.sourcegitcommit: 5c88a07f07f9faad294d614d507e43173efc5f46
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973054"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61111976"
 ---
 # <a name="manage-the-bookings-app-in-microsoft-teams"></a>Gestire l'app Bookings in Microsoft Teams
 
@@ -41,7 +41,7 @@ Le utilità di pianificazione possono gestire più calendari di reparto e del pe
 
 - Microsoft Bookings deve essere attivato per l'organizzazione.
 
-- Gli utenti devono avere una licenza appropriata. Office 365 A3, A5, E3, E5, F1, F3, Microsoft 365 A3, A5, E3 ed E5, Business Standard sono supportati.
+- Gli utenti devono avere una licenza appropriata. Office 365 A3, A5, E3, E5, F1, F3, Microsoft 365 A3, A5, E3, E5, F1, F3 e Business Standard sono supportati.
 
 - Tutti gli utenti dell'app Bookings e tutti i membri del personale che partecipano alle riunioni devono avere una licenza che supporti Teams pianificazione delle riunioni.
 
@@ -49,7 +49,7 @@ Le utilità di pianificazione possono gestire più calendari di reparto e del pe
 
 ## <a name="availability-of-bookings-in-teams"></a>Disponibilità di Bookings in Teams
 
-L'app Microsoft Bookings per Teams è disponibile sul desktop e sul Web. È disponibile in [App in Teams](https://teams.microsoft.com/l/app/4c4ec2e8-4a2c-4bce-8d8f-00fc664a4e5b?source=store-copy-link) e in Gestisci **app** nell'Teams di amministrazione.
+L'app Microsoft Bookings per Teams è disponibile sul desktop e sul Web. È disponibile in App [in Teams](https://teams.microsoft.com/l/app/4c4ec2e8-4a2c-4bce-8d8f-00fc664a4e5b?source=store-copy-link) e in **Gestisci app** nell'Teams di amministrazione.
 
 ### <a name="control-access-to-bookings-within-your-organization"></a>Controllare l'accesso a Bookings all'interno dell'organizzazione
 
@@ -61,13 +61,13 @@ Per informazioni su come attivare o disattivare Microsoft Bookings nel interfacc
 
 ## <a name="recommended-meeting-policy-settings"></a>Impostazioni dei criteri per le riunioni consigliate
 
-Per abilitare l'esperienza migliore per Bookings, creare un  criterio di riunione Teams per ammettere automaticamente tutti gli utenti dell'organizzazione e assegnare il criterio al personale. In questo modo il personale può partecipare automaticamente all'appuntamento e abilitare l'esperienza di sala d'attesa per i partecipanti esterni. Altre informazioni su come ammettere [automaticamente le persone alle riunioni.](meeting-policies-participants-and-guests.md#automatically-admit-people)
+Per abilitare l'esperienza ottimale per Bookings, creare un  criterio Teams riunione per ammettere automaticamente tutti gli utenti dell'organizzazione e assegnare il criterio al personale. In questo modo il personale può partecipare automaticamente all'appuntamento e abilitare l'esperienza di sala d'attesa per i partecipanti esterni. Altre informazioni su come ammettere [automaticamente le persone alle riunioni.](meeting-policies-participants-and-guests.md#automatically-admit-people)
 
 ## <a name="optional-staff-approvals-setting"></a>Impostazione facoltativa delle approvazioni del personale
 
 Come impostazione di privacy aggiuntiva, è possibile scegliere di richiedere al personale di acconsentire esplicitamente prima che le informazioni sulla disponibilità della pianificazione siano condivise tramite Bookings e prima che possano essere prenotati per un appuntamento.  
 
-Per abilitare questa impostazione, passare a **interfaccia di amministrazione di Microsoft 365** Impostazioni Impostazioni e quindi \>  \> selezionare **Bookings**.
+Per abilitare questa impostazione, passare a **interfaccia di amministrazione di Microsoft 365** \> **Impostazioni** \> **Impostazioni** e quindi selezionare Prenotazioni .
 
 Con questa impostazione attivata, il personale riceverà un messaggio di posta elettronica in cui viene chiesto di approvare l'appartenenza a un calendario di prenotazione.  
 
@@ -88,7 +88,7 @@ Set-Mailbox -identity business@domain.onmicrosoft.com -WindowsEmailAddress busin
 Per altre informazioni, vedere la documentazione di PowerShell per il cmdlet [Set-Mailbox](/powershell/module/exchange/mailboxes/set-mailbox).
 
 > [!NOTE]
-> Se si usa una configurazione ibrida di Exchange, è consigliabile testare a fondo il flusso di posta tra Exchange locale e Exchange Online quando si modifica il dominio predefinito.
+> Se si usa una configurazione ibrida Exchange, è consigliabile testare a fondo il flusso di posta tra Exchange e Exchange Online locale quando si modifica il dominio predefinito.
 
 ## <a name="sending-feedback"></a>Invio di feedback
 
