@@ -20,20 +20,24 @@ ms.custom:
 - seo-marvel-mar2020
 hideEdit: true
 description: "Microsoft Teams est l'outil de chat collaboratif d'Office 365 qui intègre toutes les personnes, contenus et outils don't votre équipe a besoin pour être plus impliquée et efficace. "
-ms.openlocfilehash: 00ad78c4c38865a242f303dc1a5900995906d649
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: b366a21f278735c887f9c92a23f87e7217228218
+ms.sourcegitcommit: e6dc3f6818f7761b6b1e9645769636e991be15c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60014580"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61129876"
 ---
 # <a name="microsoft-teams-en-301-549-dclaration-de-conformit-en-matire-daccessibilit"></a>Microsoft Teams: EN 301 549 Déclaration de conformité en matière d'accessibilité
 
-Data : 2 ottobre 2018
+Data : 23 giugno 2021
 
 Nom du produit : Microsoft Teams
 
-Descrizione du produit: Microsoft Teams est l'outil de chat collaboratif d'Office 365 qui intègre toutes les personnes, contenus et outils don't votre équipe a besoin pour être plus impliquée et efficace.
+Descrizione du produit: Microsoft Teams, Teams for Work et Teams per l'istruzione sont des plateformes qui permettent à toutes les personnes de chatter, de créer des canaux, de suivre les activités, de partager des calendriers et de passer des appels/ faire des réunions, ainsi que d'utiliser une console d'administrateur.
+
+Cette déclaration de conformité ne couvre pas les extensions de fonctionnalités qui peuvent être installées et déployées au sein de la plateforme Teams (par exemple, les applications Office 365 telles que Word, PowerPoint, Excel, OneNote, les listes de fichiers de SharePoint , et autres), don't beaucoup font l'objet de déclarations de conformité distinctes dans les rapports de conformité des produits Microsoft.
+
+Remarque : Teams ne prend pas en charge tous les paramètres de Windows, mais prend en charge un zoom intégré jusqu'à 200 %.
 
 Plate-forme : Win32
 
@@ -42,7 +46,6 @@ Versione du produit : 1.2.00.6412
 Sito Web en matière d'accessibilité : [Accessibilità Microsoft](https://www.microsoft.com/accessibility/)
 
 Pour obtenir de l'aide sur ce rapport, veuillez [nous envoyer un email](mailto:edad@microsoft.com?subject=Conformance%20Statement).
-
 
 ## <a name="section-1-champ-dapplication"></a>Sezione 1 Campione d'applicazione
 
@@ -70,7 +73,7 @@ La présente attestation de conformité à la norme [EN 301 549 v2.1.2](http://w
 |**5.6.2 Statut visuel**<br/> Dans le cas où la TIC est dotée d'une commande de verrouillage et où cette commande n'est pas présentée visuellement à l'utilisateur, la TIC propose au moins un mode de fonctionnement avec lequel il est possible de déterminer visuellement le statut de la commande lorsque la commande est présentée. |Non applicabile  | |
 |**5.7 Répétition automatique des touches**<br/> Dans le cas où la TIC est dotée de la fonction répétition automatique des touches et où cette fonction ne peut être désactivée :<br/> a) le délai avant la répétition automatique est réglable jusqu'à au moins 2 secondes ; et<br/> b) la vitesse de répétition peut être réduite jusqu'à un caractère par intervalle de 2 secondes.|Non applicabile  | |
 |**5.8 Acceptation des doubles frappes sur le clavier**<br/> Dans le cas où un clavier est fourni, le délai, après une frappe sur le clavier, pendant lequel une autre frappe ne sera pas acceptée si elle est identique à la frappe précédente est réglable jusqu'à au moins 0,5 seconde. |Non applicabile  | |
-|**5.9 Azioni simultanées de l'utilisateur**<br/> Dans le cas où la TIC nécessite, pour fonctionner, plusieurs actions simultanées de l'utilisateur, cette TIC propose au moins un mode de fonctionnement qui ne ne ne nécessite pas plusieurs actions simultanées de la part de l'utilisateur pour fonctionner. |Pris en charge  | |
+|**5.9 Azioni simultanées de l'utilisateur**<br/> Dans le cas où la TIC nécessite, pour fonctionner, plusieurs actions simultanées de l'utilisateur, cette TIC propose au moins un mode de fonctionnement qui ne ne nécessite pas plusieurs actions simultanées de la part de l'utilisateur pour fonctionner. |Pris en charge  | |
 
 ## <a name="section-6-tic-avec-communication-voix-bidirectionnelle"></a>Sezione 6 TIC avec communication voix bidirectionnelle
 
@@ -111,7 +114,7 @@ Cette section ne s'applique pas à Microsoft Teams.
 
 | Critères | Fonctionnalités prises en charge | Remarques et explications |
 | --- | --- | --- |
-|**11.1.1.1.1 Contenu non textuel (lezione d'écran prise en charge)**<br/>Dans le cas où la TIC est un logiciel non-web qui est doté d'une interface utilisateur et qui prend en charge l'accès aux technologies d'assistance pour la lecture d'écran, elle remplit les Critères de Succès WCAG 2.1 indiqués dans le Tableau 1.1.1 Contenu non textueluel|Pris en charge  | |
+|**11.1.1.1.1 Contenu non textuel (lecture d'écran prise en charge)**<br/>Dans le cas où la TIC est un logiciel non-web qui est doté d'une interface utilisateur et qui prend en charge l'accès aux technologies d'assistance pour la lecture d'écran, elle remplit les Critères de Succès WCAG 2.1 indiqués dans le Tableau 1.1.1 Contenu non textueluel|Pris en charge  | |
 |**11.1.2.1.1 Seulement audio et vidéo seulement (préenregistré)**<br/>Dans le cas où la TIC est un logiciel non-web qui est doté d'une interface utilisateur et qui prend en charge l'accès aux technologies d'assistance pour la lecture d'écran et où aucune information sonore préenregistrée n'est nécessaire pour permettre l'utilisation des fonctions fermées de la TIC, elle remplit les Critères de Succès WCAG 2.1 indiqués dans le Tableau 1.2.1 Audio seulement et vidéo seulement (préenregistré).|Non applicabile| |
 |**11.1.2.2 Sous-titres (préenregistrés)**<br/>Dans le cas où la TIC est un logiciel non-web qui est doté d'une interface utilisateur, elle remplit les Critères de Succès WCAG 2.1 indiqués dans le Tableau 1.2.2 : Sous-titres (préenregistrés).|<br/>Non applicabile| |
 |**11.1.2.3.1 Audiodescription ou média alternatif (préenregistré)**<br/>Dans le cas où la TIC est un logiciel non-web qui est doté d'une interface utilisateur et qui prend en charge l'accès aux technologies d'assistance pour la lecture d'écran, elle remplit les Critères de Succès WCAG 2.1 indiqués dans le Tableau 1.2.3 : Audiodescription ou média de remplacement (préenregistré).| Non applicabile | |
@@ -195,8 +198,7 @@ Cette section ne s'applique pas à Microsoft Teams.
 
 Cette section ne s'applique pas à Microsoft Teams.
 
-
-&copy; 2019 Microsoft Corporation. Tous droits réservés. Les noms des sociétés et des produits mentionnés dans le présent document peuvent être les marques de leurs propriétaires respectifs. Les informations qui figurent dans le présent document constituent l'opinion actuelle de Microsoft Corporation sur les thèmes concernés à la date de publication. Microsoft ne peut garantir l'exactitude d'une information présentée après la date de publication. Microsoft ha incontrato régulièrement à jour ses sites Internet et publie de nouvelles informations sur l'accessibilité de ses produits dès qu'elles sont disponibles.
+&copy; 2021 Microsoft Corporation. Tous droits réservés. Les noms des sociétés et des produits mentionnés dans le présent document peuvent être les marques de leurs propriétaires respectifs. Les informations qui figurent dans le présent document constituent l'opinion actuelle de Microsoft Corporation sur les thèmes concernés à la date de publication. Microsoft ne peut garantir l'exactitude d'une information présentée après la date de publication. Microsoft ha incontrato régulièrement à jour ses sites Internet et publie de nouvelles informations sur l'accessibilité de ses produits dès qu'elles sont disponibles.
 
 La personnalisation du produit annule la présente déclaration de conformité de Microsoft. Les clients ont la possibilité de faire des déclarations de conformité indépendantes s'ils ont contrôlé avec toute la diligence raisonnable nécessaire que les mesures de personnalisation qu'ils ont prises remplissent toutes les exigences.
 
