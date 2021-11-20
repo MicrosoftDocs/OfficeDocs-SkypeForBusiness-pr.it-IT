@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams per partecipanti e guest.
-ms.openlocfilehash: 2c87434aa198169854e59b6a2a93ed9ceed9cd2f
-ms.sourcegitcommit: d9778b925873648213f05e27385255ba66cf8492
+ms.openlocfilehash: aab9dda3f0a6bd5674cde2614fbbe0987292d6bf
+ms.sourcegitcommit: 32ba2ed0343e19f56e62fb3c507923c95f11b1bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61055357"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124233"
 ---
 # <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione - Partecipanti e ospiti
 
@@ -40,6 +40,7 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 
 > [!NOTE]
 >Le opzioni per partecipare a una riunione variano in base alle impostazioni di ogni gruppo di Teams e al metodo di connessione. Se il gruppo ha le funzionalità di audioconferenza e le usa per la connessione, vedere [Audioconferenza](/microsoftteams/audio-conferencing-in-office-365). Se il gruppo di Teams non ha le funzionalità di audioconferenza, vedere [Partecipare a una riunione in Teams](https://support.office.com/article/join-a-meeting-in-teams-1613bb53-f3fa-431e-85a9-d6a91e3468c9).
+
 
 ## <a name="let-anonymous-people-start-a-meeting"></a>Consenti alle persone anonime di avviare una riunione
 
@@ -65,7 +66,7 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 |**Utenti dell’organizzazione e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, aderiscono direttamente alla riunione senza aspettare nella sala d'attesa. Gli utenti di organizzazioni attendibili e gli utenti anonimi aspettano nella sala d'attesa. Questa è l'impostazione predefinita.    |
 |**Utenti dell'organizzazione, organizzazioni attendibili e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti di organizzazioni attendibili, accedono direttamente alla riunione senza passare dalla sala di attesa.  Gli utenti anonimi attendono nella sala di attesa.   |
 |**Utenti dell’organizzazione**    |Gli utenti autenticati dall'interno dell'organizzazione aderiscono alla riunione direttamente senza aspettare nella sala d'attesa.  Gli utenti di organizzazioni attendibili, utenti guest e utenti anonimi aspettano nella sala d'attesa.          |
-|**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala d'attesa. Nella pagina Teams opzioni per le riunioni del client, viene visualizzato come "Solo io".          |
+|**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala d'attesa. Nella pagina Teams opzioni per le riunioni del cliente viene visualizzato come "Solo io".          |
 |**Solo utenti invitati**    |Solo gli utenti invitati e gli organizzatori della riunione possono partecipare alla riunione direttamente senza aspettare nella sala d'attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala d'attesa. Nella pagina Teams opzioni per le riunioni del cliente viene visualizzato come "Persone invitate". Gli utenti aggiunti come parte di un gruppo di distribuzione doranno passare attraverso la sala d'attesa.      |
 
 ## <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa

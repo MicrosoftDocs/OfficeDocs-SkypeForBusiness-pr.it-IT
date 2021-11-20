@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c2e598a44fade1805824354606229668fb3494d3
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: d9c75d531cc2371c8ce5c6baf2eb22924129bbb6
+ms.sourcegitcommit: 32ba2ed0343e19f56e62fb3c507923c95f11b1bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850579"
+ms.lasthandoff: 11/19/2021
+ms.locfileid: "61124243"
 ---
 # <a name="install-microsoft-teams-using-microsoft-endpoint-configuration-manager"></a>Installare Microsoft Teams usando Microsoft Endpoint Configuration Manager
 
@@ -44,8 +44,6 @@ Ecco i collegamenti ai file MSI:
 **Per garantire una distribuzione efficace, tenere presente quanto segue:**
 
 - Installare la versione a 64 bit di Teams nei sistemi operativi a 64 bit. Se si prova a installare la versione a 64 bit di Teams in un sistema operativo a 32 bit, l'installazione non riuscirà e non si riceverà un messaggio di errore.
-
-- Se il tenant del cliente si trova nei cloud GCCH o DoD, il cliente deve impostare l'endpoint iniziale nel Registro di sistema aggiungendo il valore **CloudType** alla chiave nel Registro **HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Teams**. Il tipo di **CloudType** è **DWORD** e i valori sono (0 = Unset, 1 = commercial, 2 = GCC, 3 = GCCH, 4 = DOD). Impostare l'endpoint con la chiave di Registro di sistema limita Teams dal connettersi all'endpoint cloud corretto per la connettività di pre-accesso con Teams.
 
 - Teams può anche essere incluso in una distribuzione di Microsoft 365 Apps for enterprise. Per altre informazioni, vedere [Distribuire Microsoft Teams con Microsoft 365 Apps for enterprise](/deployoffice/teams-install).
 
