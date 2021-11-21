@@ -22,26 +22,29 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 6cf78791a1ece16a3a90b096271210b88d356f23
-ms.sourcegitcommit: 32ba2ed0343e19f56e62fb3c507923c95f11b1bd
+ms.openlocfilehash: 8e8ecc32d35aac6fb6bc504df1a8d00520b4578c
+ms.sourcegitcommit: e6dc3f6818f7761b6b1e9645769636e991be15c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124283"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "61129866"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
 L’amministratore usa le impostazioni delle riunioni di Teams per controllare se gli utenti anonimi possono partecipare alle riunioni di Teams, personalizzare gli inviti alle riunioni e, se si vuole attivare la Qualità del servizio (QoS), impostare gli intervalli di porte per il traffico in tempo reale. Queste impostazioni si applicano a tutte le riunioni di Teams che gli utenti pianificano nell'organizzazione. È possibile gestire le impostazioni da **Riunioni** > **Impostazioni riunione** nell'interfaccia di amministrazione di Microsoft Teams.
 
-A partire da novembre 2021, gli amministratori possono anche controllare se specifici utenti o gruppi di utenti possono consentire agli utenti anonimi di partecipare alle riunioni che organizzano. Questo criterio per organizzatore è più restrittivo e sostituisce le impostazioni degli utenti anonimi a livello di organizzazione che gli amministratori gestiscono nell'interfaccia di amministrazione di Teams.
+A partire da novembre 2021, gli amministratori possono anche controllare se utenti o gruppi di utenti specifici possono consentire a utenti anonimi di partecipare alle riunioni che organizzano. Questo criterio per organizzatore è più restrittivo e sostituisce le impostazioni degli utenti anonimi a livello di organizzazione riportate di seguito che gli amministratori gestiscono nell'interfaccia di amministrazione di Teams.
+
+> [!Important]
+ > **-DisableAnonymousJoin** è l'impostazione dei criteri a livello di organizzazione. Verrà deprecato in futuro, quindi i criteri per organizzatore rappresenteranno l'unico modo per controllare l'accesso anonimo.
 
 ## <a name="allow-anonymous-users-to-join-meetings"></a>Consentire agli utenti anonimi di partecipare alle riunioni
 
-Con la partecipazione anonima, chiunque può partecipare alla riunione come utente anonimo facendo clic sul collegamento nell'invito alla riunione. Per altre informazioni, vedere [Partecipare a una riunione senza un account di Teams](https://support.office.com/article/join-a-meeting-without-a-teams-account-c6efc38f-4e03-4e79-b28f-e65a4c039508).
+Con la partecipazione anonima, chiunque può partecipare alla riunione come utente anonimo facendo clic sul collegamento nell'invito alla riunione. Per altre informazioni, vedere [Partecipare a una riunione senza un account di Teams](https://support.office.com/article/join-a-meeting-without-a-teams-account-c6efc38f-4e03-4e79-b28f-e65a4c039508). È possibile controllare la capacità degli utenti anonimi di partecipare alle riunioni a livello dell'organizzazione o per organizzatore della riunione usando due impostazioni dei criteri diverse.
 
- ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
+ ### <a name="using-the-microsoft-teams-admin-center-to-configure-organization-wide-policy"></a>Uso dell'interfaccia di amministrazione di Microsoft Teams per configurare i criteri a livello di organizzazione
 
-Per apportare queste modifiche, è necessario essere un amministratore di Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](./using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
+Per apportare tali modifiche, è necessario essere un amministratore di Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](./using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
 1. Passare all'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.net).
 
@@ -54,20 +57,20 @@ Per apportare queste modifiche, è necessario essere un amministratore di Teams.
 > [!CAUTION]
 > Se non si vuole consentire agli utenti anonimi di partecipare alle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
 
-### <a name="using-powershell"></a>Utilizzo di PowerShell
+### <a name="using-powershell-to-configure-per-organizer-policy"></a>Uso di PowerShell per configurare i criteri per organizzatore
 
-Gli amministratori possono ora controllare se specifici utenti o gruppi di utenti possono consentire agli utenti anonimi di partecipare alle riunioni che organizzano. Questo nuovo criterio per organizzatore viene controllato usando il parametro **-AllowAnonymousUsersToJoinMeeting** in [Set-CsTeamsMeetingPolicy.](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) Viene fornito con Teams PowerShell versione 2.6.0 e successive.
+Gli amministratori possono ora controllare se utenti o gruppi di utenti specifici possono consentire agli utenti anonimi di partecipare alle riunioni che organizzano. Questo nuovo criterio per organizzatore viene controllato usando il parametro **-AllowAnonymousUsersToJoinMeeting** in [Set-CsTeamsMeetingPolicy.](/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) Viene fornito con Teams PowerShell versione 2.6.0 e successive.
 
 È possibile usare criteri, a livello di organizzazione o per organizzatore, per gestire l'accesso anonimo. È consigliabile implementare i criteri per organizzatore. L'impostazione dei criteri a livello di organizzazione verrà deprecata in futuro e i criteri per organizzatore saranno l'unico modo per controllare l'accesso anonimo.
 
-Poiché i criteri a livello di organizzazione e per organizzatore controllano l'accesso anonimo, l'impostazione più restrittiva sarà effettiva. Ad esempio, se non si consente l'accesso anonimo a livello di organizzazione, questo sarà il criterio effettivo indipendentemente da ciò che si configura per il criterio per organizzatore. Pertanto, per consentire agli utenti anonimi di partecipare alle riunioni, è necessario configurare entrambi i criteri per consentire l'accesso anonimo impostando i valori seguenti:
+Poiché i criteri a livello di organizzazione e per organizzatore controllano l'accesso anonimo, sarà effettiva l'impostazione più restrittiva. Ad esempio, se non si consente l'accesso anonimo a livello di organizzazione, questo sarà il criterio effettivo indipendentemente da ciò viene configurato per il criterio per organizzatore. Pertanto, per consentire agli utenti anonimi di partecipare alle riunioni, è necessario configurare entrambi i criteri per consentire l'accesso anonimo impostando i valori seguenti:
 
-- **-DisableAnonymousJoin impostato** su **$false**
+- **-DisableAnonymousJoin** impostato su **$false**
 - **-AllowAnonymousUsersToJoinMeeting** impostato su **$true**
 
 Qualsiasi altra combinazione di valori impedirà agli utenti anonimi di partecipare alle riunioni.
 > [!NOTE]
-> Per usare i criteri per organizzatore per le organizzazioni con l'aggiunta anonima disattivata per ogni organizzazione, gli amministratori devono creare un criterio e quindi assegnarlo agli utenti. Per informazioni su come farlo, vedere [Gestire i criteri riunione in Microsoft Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-overview).
+> Per usare i criteri per organizzatore per le organizzazioni con l'aggiunta anonima disattivata per ogni organizzazione, gli amministratori devono creare un criterio e quindi assegnarlo agli utenti. Per informazioni su come farlo, vedere [Gestire i criteri riunione in Microsoft Teams](/microsoftteams/meeting-policies-overview).
 
 
 ## <a name="allow-anonymous-users-to-interact-with-apps-in-meetings"></a>Consentire agli utenti anonimi di interagire con le app nelle riunioni
