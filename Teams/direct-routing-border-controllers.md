@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Scopri quali Session Border Controller (SBC) sono stati certificati per l'instradamento diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5dd419bab9fbe885d3d361d2fdb19758bd392e3
-ms.sourcegitcommit: 99bf220249723e954cf5295df3418d93fec80db6
+ms.openlocfilehash: 97f8ffbf6613ca4106a68284c8e889375a7b0feb
+ms.sourcegitcommit: b3b295557d494f77a7ebd9f49ec55f2507da956c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2021
-ms.locfileid: "60275580"
+ms.lasthandoff: 11/22/2021
+ms.locfileid: "61135199"
 ---
 # <a name="session-border-controllers-certified-for-direct-routing"></a>Session Border Controller certificati per l'instradamento diretto
 
@@ -37,7 +37,7 @@ Microsoft collabora con ogni fornitore per:
 - Stabilire un processo di supporto congiunto con i fornitori di SBC.
 
   > [!NOTE]
-  > Microsoft supporta Sistema telefonico solo se uno o più dispositivi certificati sono connessi tramite instradamento diretto. Microsoft si riserva il diritto di rifiutare i casi di supporto in cui un dispositivo non certificato è connesso a Sistema telefonico tramite instradamento diretto. Se Microsoft determina che il problema di instradamento diretto di un cliente riguarda un dispositivo SBC di un fornitore, il cliente dovrà contattare il fornitore SBC per ricevere supporto.
+  > Microsoft supporta Sistema telefonico solo se uno o più dispositivi certificati sono connessi tramite instradamento diretto. In caso di problemi, il cliente deve prima contattare l'assistenza clienti dei fornitori SBC. Se necessario, il fornitore SBC invierà il problema a Microsoft tramite canali interni. Microsoft si riserva il diritto di rifiutare i casi di supporto in cui un dispositivo non certificato è connesso a Sistema telefonico tramite instradamento diretto. Se Microsoft determina che il problema di instradamento diretto di un cliente riguarda un dispositivo SBC di un fornitore, il cliente dovrà contattare nuovamente il fornitore SBC per ricevere supporto.
   >
   > La certificazione viene concessa a specifiche versioni del firmware SBC. Qualsiasi versione del firmware SBC documentata di seguito è certificata e supportata. Le versioni del firmware superiori a quelle documentate sono supportate purché la versione principale.secondaria sia la stessa.
   >
