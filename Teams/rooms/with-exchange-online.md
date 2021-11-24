@@ -14,17 +14,17 @@ ms.collection:
 - M365-collaboration
 ms.custom: seo-marvel-apr2020
 ms.assetid: f3ba85b8-442c-4133-963f-76f1c8a1fff9
-description: Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms con Exchange Online e Skype for Business Server locali.
-ms.openlocfilehash: e1331526660b928b49beeebf2e70e2552afdacd8
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms con Exchange Online e Skype for Business Server locale.
+ms.openlocfilehash: 7e80da026164fc2b1feba3d03c220e4622454e49
+ms.sourcegitcommit: 95c7603b47fcd5fba8f762a4590693ee9f026328
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58636660"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153289"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-online"></a>Distribuire Microsoft Teams Rooms con Exchange Online
 
-Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms con Exchange Online e Skype for Business Server locali.
+Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms con Exchange Online e Skype for Business Server locale.
   
 Se l'organizzazione ha una combinazione di servizi, con alcuni ospitati in locale e alcuni ospitati online, la configurazione dipenderà da dove è ospitato ogni servizio. Questo argomento riguarda le distribuzioni ibride per Microsoft Teams Rooms con Exchange ospitate online. Poiché questo tipo di distribuzione offre moltissime varianti diverse, non è possibile fornire istruzioni dettagliate per tutte. Il processo seguente funziona per molte configurazioni. Se il processo non è giusto per la configurazione, è consigliabile usare Windows PowerShell per ottenere lo stesso risultato finale documentato qui e per altre opzioni di distribuzione.
 
@@ -32,12 +32,12 @@ Il modo più semplice per configurare gli account utente è configurarli usando 
 
 ## <a name="requirements"></a>Requisiti
 
-Prima di distribuire Microsoft Teams Rooms con Exchange Online, assicurarsi di aver soddisfatto i requisiti. Per altre informazioni, vedere requisiti [Microsoft Teams Rooms.](requirements.md)
+Prima di distribuire Microsoft Teams Rooms con Exchange Online, assicurarsi di aver soddisfatto i requisiti. Per altre informazioni, vedere Microsoft Teams Rooms [requisiti.](requirements.md)
   
 Per distribuire Microsoft Teams Rooms con Exchange Online, seguire la procedura seguente. Assicurarsi di avere le autorizzazioni appropriate per eseguire i cmdlet associati. 
 
    > [!NOTE]
-   >  I [cmdlet Azure Active Directory module per Windows PowerShell](/powershell/azure/active-directory/overview) in questa sezione, ad esempio Set-MsolUser, sono stati testati nella configurazione degli account per Microsoft Teams Rooms dispositivi. È possibile che altri cmdlet funzionino, ma non sono stati testati in questo scenario specifico.
+   >  I [cmdlet Azure Active Directory module for Windows PowerShell](/powershell/azure/active-directory/overview) in questa sezione, ad esempio Set-MsolUser, sono stati testati nella configurazione degli account per Microsoft Teams Rooms dispositivi. È possibile che altri cmdlet funzionino, ma non sono stati testati in questo scenario specifico.
 
 Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe essere necessario convertire l'account utente in un utente gestito prima di eseguire questa procedura e quindi convertire di nuovo l'utente in un utente federato dopo aver completato questa procedura.
   
@@ -71,7 +71,7 @@ Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe e
 
    ``` Powershell
    Set-CalendarProcessing -Identity 'PROJECT01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -AllowConflicts $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-   Set-CalendarProcessing -Identity 'PROJECT01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Skype Meeting room!"
+   Set-CalendarProcessing -Identity 'PROJECT01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Microsoft Teams Meeting room!"
    ```
 
 ### <a name="add-an-email-address-for-your-on-premises-domain-account"></a>Aggiungere un indirizzo di posta elettronica per l'account di dominio locale
@@ -81,14 +81,14 @@ Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe e
 3. Digitare la password per l'account. Sarà necessario digitare di nuovo per la verifica. Verificare che la **casella di controllo Password non scada** mai sia l'unica opzione selezionata.
 
     > [!NOTE]
-    > La **selezione della password non scade** mai è un requisito per Skype for Business Server in Microsoft Teams Rooms. Le regole di dominio potrebbero proibire le password che non scadono. In tal caso, è necessario creare un'eccezione per ogni account Microsoft Teams Rooms utente.
+    > La **selezione della password non scade** mai è un requisito per Skype for Business Server in Microsoft Teams Rooms. Le regole di dominio potrebbero proibire le password che non scadono. In tal caso, sarà necessario creare un'eccezione per ogni account Microsoft Teams Rooms utente.
   
 4. Fare **clic su** Fine per creare l'account.
 5. Dopo aver creato l'account, eseguire una sincronizzazione della directory. Questa operazione può essere eseguita usando [Set-MsolDirSyncConfiguration](/powershell/module/msonline/set-msoldirsyncconfiguration) in PowerShell. Al termine, passare alla pagina degli utenti e verificare che i due account creati nei passaggi precedenti siano stati uniti.
 
 ### <a name="assign-a-microsoft-365-or-office-365-license"></a>Assegnare una Microsoft 365 o Office 365 licenza
 
-1. Prima di tutto, connettersi ad Azure AD per applicare alcune impostazioni dell'account. È possibile eseguire questo cmdlet per connettersi. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](/powershell/azure/active-directory/overview)
+1. Prima di tutto, connettersi Azure AD per applicare alcune impostazioni dell'account. È possibile eseguire questo cmdlet per connettersi. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](/powershell/azure/active-directory/overview)
 
    > [!NOTE]
    > [Azure Active Directory PowerShell 2.0](/powershell/azure/active-directory/overview) non è supportato.
@@ -118,7 +118,7 @@ Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe e
 ### <a name="enable-the-user-account-with-skype-for-business-server"></a>Abilitare l'account utente con Skype for Business Server
 
 > [!NOTE]
-> Se si sta configurando Teams Rooms partecipare solo Microsoft Teams riunioni, non è necessario eseguire la procedura seguente. I passaggi seguenti sono necessari solo se si vuole abilitare il supporto per Skype for Business.
+> Se si sta configurando un Teams Rooms solo per partecipare a Microsoft Teams riunioni, non è necessario eseguire la procedura seguente. I passaggi seguenti sono necessari solo se si vuole abilitare il supporto per Skype for Business.
 
 1. Creare una sessione Windows PowerShell remota da un PC come segue:
 
@@ -140,7 +140,7 @@ Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe e
    Enable-CsMeetingRoom -Identity $rm -RegistrarPool 'sippoolbl20a04.infra.lync.com' -SipAddressType EmailAddress
    ```
 
-    Se non si sa quale valore usare per il parametro RegistrarPool nell'ambiente, è possibile ottenere il valore da un utente Skype for Business Server esistente usando questo comando
+    Se non si è certi del valore da usare per il parametro RegistrarPool nell'ambiente, è possibile ottenere il valore da un utente Skype for Business Server esistente usando questo comando
 
    ``` Powershell
    Get-CsUser -Identity 'alice@contoso.com'| fl *registrarpool*
@@ -149,22 +149,22 @@ Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe e
 ### <a name="assign-a-skype-for-business-server-license-to-your-microsoft-teams-rooms-account"></a>Assegnare una Skype for Business Server al proprio account Microsoft Teams Rooms
 
 > [!NOTE]
-> Se si sta configurando Teams Rooms partecipare solo Microsoft Teams riunioni, non è necessario eseguire la procedura seguente. I passaggi seguenti sono necessari solo se si vuole abilitare il supporto per Skype for Business.
+> Se si sta configurando un Teams Rooms solo per partecipare a Microsoft Teams riunioni, non è necessario eseguire la procedura seguente. I passaggi seguenti sono necessari solo se si vuole abilitare il supporto per Skype for Business.
 
 1. Accedere come amministratore tenant, aprire il interfaccia di amministrazione di Microsoft 365 e fare clic sull'app Amministratore.
 2. Fare clic **su Utenti e gruppi** e quindi su Aggiungi **utenti, reimpostazione password e altro ancora.**
-3. Fare clic Microsoft Teams Rooms account e quindi fare clic sull'icona della penna per modificare le informazioni dell'account.
+3. Fare clic sull Microsoft Teams Rooms account e quindi fare clic sull'icona della penna per modificare le informazioni sull'account.
 4. Fare clic **su Licenze**.
 5. In **Assegna licenze** selezionare Skype for Business (Piano 2) o Skype for Business (Piano 3), a seconda dei requisiti VoIP aziendale licenze. È necessario usare una licenza di Piano 3 se si vuole usare VoIP aziendale in Microsoft Teams Rooms.
 6. Fare clic su **Salva**.
 
-Per la convalida, dovresti essere in grado di usare qualsiasi client Skype for Business per accedere a questo account.
+Per la convalida, dovrebbe essere possibile usare qualsiasi client Skype for Business per accedere a questo account.
 
 > [!NOTE]
 > Se attualmente si usano SKU E1, E3, E4 o E5 con Skype for Business Piano 2 con audioconferenza o con Sistema telefonico e un piano per chiamate, questi continueranno a funzionare. Tuttavia, è consigliabile passare a un modello di licenza più semplice, come descritto [Teams Sala riunioni](rooms-licensing.md)aggiornamento delle licenze, dopo la scadenza delle licenze correnti.
 
 > [!IMPORTANT]
-> Se si usa il Skype for Business Piano 2, è possibile usare il Microsoft Teams Rooms solo in modalità solo Skype for Business, ovvero tutte le riunioni verranno Skype for Business riunioni. Per abilitare la sala riunioni per le riunioni Microsoft Teams riunioni, è consigliabile acquistare la licenza Sala riunioni riunione.
+> Se si usa il Skype for Business Piano 2, è possibile usare il Microsoft Teams Rooms solo in modalità solo Skype for Business, quindi tutte le riunioni verranno Skype for Business riunioni. Per abilitare la sala riunioni per le riunioni Microsoft Teams, è consigliabile acquistare la licenza Sala riunioni riunione.
   
 ## <a name="related-topics"></a>Argomenti correlati
 
