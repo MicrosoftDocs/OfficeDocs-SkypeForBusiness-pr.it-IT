@@ -22,18 +22,18 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 8e8ecc32d35aac6fb6bc504df1a8d00520b4578c
-ms.sourcegitcommit: e6dc3f6818f7761b6b1e9645769636e991be15c3
+ms.openlocfilehash: a4a2eea55336639925d8c07c00ded4057456e1ff
+ms.sourcegitcommit: 95c7603b47fcd5fba8f762a4590693ee9f026328
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61129866"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "61153309"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
 L’amministratore usa le impostazioni delle riunioni di Teams per controllare se gli utenti anonimi possono partecipare alle riunioni di Teams, personalizzare gli inviti alle riunioni e, se si vuole attivare la Qualità del servizio (QoS), impostare gli intervalli di porte per il traffico in tempo reale. Queste impostazioni si applicano a tutte le riunioni di Teams che gli utenti pianificano nell'organizzazione. È possibile gestire le impostazioni da **Riunioni** > **Impostazioni riunione** nell'interfaccia di amministrazione di Microsoft Teams.
 
-A partire da novembre 2021, gli amministratori possono anche controllare se utenti o gruppi di utenti specifici possono consentire a utenti anonimi di partecipare alle riunioni che organizzano. Questo criterio per organizzatore è più restrittivo e sostituisce le impostazioni degli utenti anonimi a livello di organizzazione riportate di seguito che gli amministratori gestiscono nell'interfaccia di amministrazione di Teams.
+Tramite un'impostazione dei criteri per organizzatore, gli amministratori possono ora controllare se specifici utenti o gruppi di utenti possono consentire agli utenti anonimi di partecipare alle riunioni che organizzano. Le impostazioni dei criteri per organizzatore e a livello di organizzazione controllano l'accesso anonimo e vengono applicate le impostazioni più restrittive.
 
 > [!Important]
  > **-DisableAnonymousJoin** è l'impostazione dei criteri a livello di organizzazione. Verrà deprecato in futuro, quindi i criteri per organizzatore rappresenteranno l'unico modo per controllare l'accesso anonimo.
