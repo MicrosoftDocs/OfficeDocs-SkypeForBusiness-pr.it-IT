@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 973ed6056ae8e73b79d7596b2f325cda8cdc48b1
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: c5db10ce87dc98cfb793eefb1daa953385c95f6d
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58732315"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61205287"
 ---
 # <a name="configure-desktop-sharing-in-microsoft-teams"></a>Configurare la condivisione desktop in Microsoft Teams
 
@@ -70,7 +70,7 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
 
 ## <a name="use-powershell-to-configure-shared-desktop"></a>Usare PowerShell per configurare il desktop condiviso
 
-Inoltre, è possibile usare il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) per controllare la condivisione del desktop. Impostare i seguenti parametri:
+Inoltre, è possibile usare il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) per controllare la condivisione del desktop. Impostare i seguenti parametri:
 
 - Descrizione
 - ScreenSharingMode
@@ -81,4 +81,4 @@ Inoltre, è possibile usare il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/mod
 - AllowWhiteboard
 - AllowSharedNotes
 
-[Altre informazioni sull'utilizzo del cmdlet csTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps).
+[Altre informazioni sull'utilizzo del cmdlet csTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy).

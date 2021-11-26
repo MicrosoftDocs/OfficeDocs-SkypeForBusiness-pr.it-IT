@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni sui criteri di messaggistica e su come possono essere usati per controllare la messaggistica chat in Teams.
-ms.openlocfilehash: 73c354261d92044fea0a2efeb4e1613b3f3a63a9
-ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
+ms.openlocfilehash: b2163e780706a17b7793f8451b1bdb85a1830b2b
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973024"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61205266"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in Teams
 
@@ -85,16 +85,16 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 <a name="bkchat"> </a>
 
 - **Chat**  Attivare questa impostazione se si vuole che gli utenti dell'organizzazione possano usare l'app Teams per chattare con altre persone.
-- **Usare Giphy nelle conversazioni**  Se attivi Giphys, gli utenti possono includere Giphys nelle conversazioni in chat con altre persone. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una classificazione dei contenuti. Oltre a attivare questa impostazione, è [](/deployoffice/privacy/manage-privacy-controls#policy-setting-for-optional-connected-experiences) necessario abilitare esperienze connesse facoltative per consentire a Giphys di accedere alle conversazioni.
+- *Usare Giphy nelle* conversazioni * Se si attiva Giphys, gli utenti possono includere Giphys nelle conversazioni in chat con altre persone. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una classificazione dei contenuti. Oltre a attivare questa impostazione, è [](/deployoffice/privacy/manage-privacy-controls#policy-setting-for-optional-connected-experiences) necessario abilitare esperienze connesse facoltative per consentire a Giphys di accedere alle conversazioni.
 - **Classificazione del contenuto Giphy**
   - **Nessuna restrizione** Questo significa che gli utenti saranno in grado di inserire qualsiasi Giphy nelle chat, indipendentemente dalla classificazione del contenuto.
   - **Moderato**  Questo significa che gli utenti saranno in grado di inserire Giphys nelle chat, ma saranno moderatamente limitati dai contenuti per adulti.
   - **Strict**  Questo significa che gli utenti saranno in grado di inserire Giphys nelle chat, ma saranno strettamente limitati dai contenuti per adulti.
-- **Usare meme nelle conversazioni** Se attivi Memes, gli utenti possono includere Memes nelle conversazioni in chat con altre persone.
-- **Usare adesivi nelle conversazioni** Se si attiva questa opzione, gli utenti possono includere adesivi nelle conversazioni in chat con altre persone.
-- **Consenti anteprime URL** Usare questa impostazione per attivare o disattivare l'anteprima automatica degli URL nei messaggi.
+- **Meme nelle conversazioni** Se attivi Memes, gli utenti possono includere Memes nelle conversazioni in chat con altre persone.
+- **Adesivi nelle conversazioni** Se si attiva questa opzione, gli utenti possono includere adesivi nelle conversazioni in chat con altre persone.
+- **Anteprime url** Usare questa impostazione per attivare o disattivare l'anteprima automatica degli URL nei messaggi.
 - **Tradurre i messaggi** Attivare questa impostazione per consentire agli utenti di tradurre Teams messaggi nella lingua specificata dalle impostazioni della lingua personale per Microsoft 365 o Office 365.
-- **Consentire lo strumento di lettura immersiva per la visualizzazione dei messaggi** Attivare questa impostazione per consentire agli utenti di visualizzare i messaggi in Microsoft Strumento di lettura immersiva. Strumento di lettura immersiva è uno strumento di apprendimento che offre un'esperienza di lettura a schermo intero per aumentare la leggibilità del testo.
+- **Lettore immersivo per i messaggi** Attivare questa impostazione per consentire agli utenti di visualizzare i messaggi in Microsoft Strumento di lettura immersiva. Strumento di lettura immersiva è uno strumento di apprendimento che offre un'esperienza di lettura a schermo intero per aumentare la leggibilità del testo.
 - **Inviare messaggi urgenti usando le notifiche di priorità** Se si attiva questa opzione, gli utenti possono inviare messaggi usando le [notifiche di priorità.](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462) Le notifiche di priorità notificano agli utenti ogni 2  minuti per 20 minuti o finché i messaggi contrassegnati come urgenti non vengono ricevuti e letti dal destinatario. Questa caratteristica aumenta la probabilità che il messaggio si agiti in modo appropriato.
 - **Creare messaggi vocali**
   > [!Important]
@@ -109,7 +109,7 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 - **Ruolo di autorizzazione chat** Usare questa impostazione per definire il ruolo di chat supervisionato dell'utente.  Altre informazioni sulla [chat supervisionata](supervise-chats-edu.md).
 
 > [!NOTE]
-> Alcune di queste impostazioni, ad esempio Giphys, possono essere configurate anche a livello di team dai proprietari del team e a livello di canale privato dai proprietari dei canali privati.
+> Alcune di queste impostazioni, ad esempio giphys, possono anche essere configurate a livello di team dai proprietari del team e a livello di canale privato dai proprietari di canali privati.
 
 ### <a name="related-topics"></a>Argomenti correlati
 

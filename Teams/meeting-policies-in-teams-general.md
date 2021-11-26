@@ -18,38 +18,38 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.general
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni generali dei criteri delle riunioni in Teams.
-ms.openlocfilehash: be28acd1a343988fef94546f405a1f7a3684d4ce
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: Informazioni su come gestire le impostazioni generali dei criteri riunione in Teams.
+ms.openlocfilehash: b7c08799ee9e7c2b1e6239b17abaa66b7d1e3d47
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58731665"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61177937"
 ---
 # <a name="meeting-policy-settings---general"></a>Impostazioni dei criteri di riunione - Generale
 
 <a name="bkgeneral"> </a>
 
-Questo articolo descrive le impostazioni generali dei criteri per le riunioni Teams riunioni:
+Questo articolo descrive le impostazioni dei criteri generali seguenti per le Teams riunioni:
 
-- [Consenti l'uso di Riunione immediata nei canali](#allow-meet-now-in-channels)
-- [Consenti il componente aggiuntivo per Outlook](#allow-the-outlook-add-in)
-- [Consenti la pianificazione delle riunioni di canale](#allow-channel-meeting-scheduling)
-- [Consenti la pianificazione di riunioni private](#allow-scheduling-private-meetings)
-- [Consenti l'uso di Riunione immediata nelle riunioni private](#allow-meet-now-in-private-meetings)
+- [Incontra ora nei canali](#meet-now-in-channels)
+- [Outlook componente aggiuntivo](#outlook-add-in)
+- [Pianificazione delle riunioni del canale](#channel-meeting-scheduling)
+- [Pianificazione privata delle riunioni](#private-meeting-scheduling)
+- [Riunione in corso in riunioni private](#meet-now-in-private-meetings)
 - [Modalità ruolo relatore designato](#designated-presenter-role-mode)
-- [Consenti report impegno](#allow-engagement-report)
-- [Consentire la registrazione alla riunione](#allow-meeting-registration)
-- [Who possibile registrare](#who-can-register)
+- [Report impegno](#engagement-report)
+- [Registrazione della riunione](#meeting-registration)
+- [Who può registrarsi](#who-can-register)
 - [Provider di riunioni per la modalità Isole](#meeting-provider-for-islands-mode)
 
-## <a name="allow-meet-now-in-channels"></a>Consenti l'uso di Riunione immediata nei canali
+## <a name="meet-now-in-channels"></a>Incontra ora nei canali
 
 Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione ad hoc in un canale di Teams. Se si attiva questa opzione,  gli utenti possono fare clic sul pulsante Riunione per avviare una riunione ad hoc o pianificare una riunione nel canale. Il valore predefinito è True.
 
-[![Screenshot che mostra l'icona Meet now sotto un messaggio. ](media/meeting-policies-meet-now.png)](media/meeting-policies-meet-now.png#lightbox)
+[![Screenshot che mostra l'icona Meet now sotto un messaggio. ](media/meeting-policies-meet-now.png) ](media/meeting-policies-meet-now.png#lightbox)
 
-## <a name="allow-the-outlook-add-in"></a>Consenti il componente aggiuntivo per Outlook
+## <a name="outlook-add-in"></a>Outlook componente aggiuntivo
 
 Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione consente di controllare se è possibile pianificare riunioni di Teams dall'interno di Outlook (Windows, Mac, Web e Mobile).
 
@@ -57,7 +57,7 @@ Questo è un criterio per utente e si applica prima dell'inizio di una riunione.
 
 Se si disattiva questa impostazione, gli utenti non potranno pianificare riunioni di Teams durante la creazione di una nuova riunione in Outlook. In Outlook per Windows, ad esempio, l'opzione **Nuova riunione di Teams** non comparirà sulla barra multifunzione.
 
-## <a name="allow-channel-meeting-scheduling"></a>Consenti la pianificazione delle riunioni di canale
+## <a name="channel-meeting-scheduling"></a>Pianificazione delle riunioni del canale
 
 Usare il criterio AllowChannelMeetingScheduling esistente per controllare i tipi di eventi che è possibile creare nei calendari del canale di un team. Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di Teams. Per impostazione predefinita, questa impostazione è attivata. 
 
@@ -69,7 +69,7 @@ L'opzione Pianifica una riunione sarà disabilitata.
 
 La selezione del canale è disabilitata.
 
-[![Screenshot che mostra l'opzione del calendario per la selezione del canale in cui si vuole pianificare una riunione. ](media/meeting-policies-select-a-channel-to-meet-in.png)](media/meeting-policies-select-a-channel-to-meet-in.png#lightbox)
+[![Screenshot che mostra l'opzione del calendario per la selezione del canale in cui si vuole pianificare una riunione. ](media/meeting-policies-select-a-channel-to-meet-in.png) ](media/meeting-policies-select-a-channel-to-meet-in.png#lightbox)
 
 Nella pagina dei post del canale, gli elementi seguenti verranno disabilitati:
 
@@ -94,13 +94,13 @@ L'app del calendario del canale sarà visualizzata nella sezione **App Microsoft
 
 ![Screenshot che mostra i criteri di autorizzazione dell'app nell'Teams di amministrazione.](media/manage-microsoft-apps-policy.png)
 
-## <a name="allow-scheduling-private-meetings"></a>Consenti la pianificazione di riunioni private
+## <a name="private-meeting-scheduling"></a>Pianificazione privata delle riunioni
 
 Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare riunioni private in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
 
 Si noti che, disattivando **Consenti la pianificazione di riunioni private** e **Consenti la pianificazione delle riunioni di canale**, le opzioni **Aggiungi partecipanti obbligatori** e **Aggiungi canale** vengono disabilitate per gli utenti in Teams. Per impostazione predefinita, questa impostazione è attivata.
 
-## <a name="allow-meet-now-in-private-meetings"></a>Consenti l'uso di Riunione immediata nelle riunioni private
+## <a name="meet-now-in-private-meetings"></a>Riunione in corso in riunioni private
 
 Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione privata ad hoc.  Per impostazione predefinita, questa impostazione è attivata.
 
@@ -120,11 +120,11 @@ Per specificare il valore predefinito dell'impostazione **Chi può essere un rel
 
 Dopo aver impostato il valore predefinito, gli organizzatori delle riunioni possono ancora modificare questa impostazione in Teams e scegliere chi può essere un relatore nelle riunioni pianificate.
 
-## <a name="allow-engagement-report"></a>Consenti report impegno
+## <a name="engagement-report"></a>Report impegno
 
 Questo è un criterio per utente. Questa impostazione controlla se gli organizzatori delle riunioni possono scaricare il [Rapporto partecipazione a riunione](teams-analytics-and-reports/meeting-attendance-report.md).
 
-Questo criterio è disattivato per impostazione predefinita e consente agli organizzatori di vedere chi ha registrato e partecipato alle riunioni e ai webinar che hanno configurato. Per attivare questa opzione nell'interfaccia Teams di amministrazione, passare a Criteri riunione riunioni e impostare  >  il criterio su **Abilitato.**
+Questo criterio è disattivato per impostazione predefinita e consente agli organizzatori di vedere chi ha registrato e partecipato alle riunioni e ai webinar che hanno configurato. Per attivarlo nell'interfaccia Teams, passare a Criteri riunione riunioni e impostare  >  il criterio su **Abilitato.**
 
 È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 
@@ -132,26 +132,26 @@ Per consentire a un organizzatore della riunione di scaricare il report sulla pa
 
 Per evitare che un organizzatore della riunione scarichi il rapporto, impostare il parametro su **Disabilitato**.
 
-## <a name="allow-meeting-registration"></a>Consentire la registrazione alla riunione
+## <a name="meeting-registration"></a>Registrazione della riunione
 
 Questo è un criterio per utente. Se si attiva questa opzione, gli utenti dell'organizzazione possono configurare webinar. Questo criterio è abilitato per impostazione predefinita.
 
-Per modificare questo criterio nell'Teams di amministrazione, passare **a Criteri riunione**  >  **riunioni**. Per disattivare la registrazione alla riunione, impostare il criterio su **Disattivato.**
+Per modificare questo criterio nell'interfaccia Teams di amministrazione, passare **a Criteri riunione**  >  **riunioni**. Per disattivare la registrazione alla riunione, impostare il criterio su **Disattivato.**
 
 È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 
-Per attivare la registrazione della riunione, impostare il  **parametro AllowMeetingRegistration** su **True**. Questa opzione è impostata **su True** per impostazione predefinita.
+Per attivare la registrazione della riunione, impostare il  **parametro MeetingRegistration** su **True**. Questa opzione è impostata **su True** per impostazione predefinita.
 
 Per disattivare la registrazione della riunione e impedire agli utenti di pianificare webinar, impostare il parametro su **False**.
 
-## <a name="who-can-register"></a>Who possibile registrare
+## <a name="who-can-register"></a>Who può registrarsi
 
-Questo criterio controlla quali utenti possono registrarsi e partecipare ai webinar. Questo criterio include due opzioni, disponibili solo se l'opzione Consenti **registrazione riunione** è attivata.
+Questo criterio controlla quali utenti possono registrarsi e partecipare ai webinar. Questo criterio include due opzioni, disponibili solo se è **attivata** la registrazione alla riunione.
 
-- Impostare **Who** possibile registrarsi su **Tutti** se si vuole consentire a tutti, inclusi gli utenti anonimi, di registrare e partecipare ai webinar impostati dagli utenti dell'organizzazione.
-- Impostare **Who** possibile registrarsi a **Tutti** gli utenti dell'organizzazione se si vuole consentire solo agli utenti dell'organizzazione di registrarsi e partecipare ai webinar.
+- Impostare **Who** può registrarsi su **Tutti** se si vuole consentire a tutti, inclusi gli utenti anonimi, di registrare e partecipare ai webinar impostati dagli utenti dell'organizzazione.
+- Impostare **Who possibile registrarsi** a **Tutti** nell'organizzazione se si vuole consentire solo agli utenti dell'organizzazione di registrarsi e partecipare ai webinar.
 
-Per impostazione predefinita, **Who registrazione è** impostato su **Tutti**. Per modificare questo criterio nell'Teams di amministrazione, passare **a Criteri riunione**  >  **riunioni**.
+Per impostazione predefinita, **Who registrazione** è impostato su **Tutti**. Per modificare questo criterio nell'Teams di amministrazione, passare a **Criteri**  >  **riunione riunioni**.
 
 È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 

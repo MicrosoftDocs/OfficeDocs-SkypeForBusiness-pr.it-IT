@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 01335cce21a4550158f3c87da12c8a23166a39de
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 1fbcadfefffe40bbd7c2919f269185b8116b7237
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58624808"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61205276"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -68,7 +68,7 @@ La tabella seguente costituisce un riferimento utile e rapido sulla disponibilit
 
 <sup>8</sup> È necessario soddisfare i requisiti elencati nella sezione [Requisiti per creare e visualizzare riunioni per le cassette postali ospitate in locale](#requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises).
 
-<sup>9</sup> È necessario almeno una licenza Exchange Online piano 1. Per altre informazioni, vedere [Cercare Teams di chat per gli utenti locali.](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users)
+<sup>9</sup> È necessario almeno una licenza Exchange Online piano 1. Per altre informazioni, vedere [Cercare Teams dati della chat per gli utenti locali.](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users)
 
 <sup>10</sup> Gli utenti locali possono usare Teams per aggiornare l'immagine del profilo anche se il Outlook sul criterio cassetta postale `SetPhotoEnabled` Web è impostato su `false` .
 
@@ -110,12 +110,12 @@ Se le cassette postali sono ospitate in locale, per creare e visualizzare riunio
 
 Per abilitare la delega del calendario per questi utenti:
 
-- È anche necessario completare i passaggi come descritto in [Configurare l'integrazione e OAuth tra Skype for Business Online e Exchange Server;](/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises) questi passaggi forniranno all'Teams di pianificazione le autorizzazioni necessarie per confermare le autorizzazioni delegato.
+- È anche necessario completare i passaggi come descritto in Configurare l'integrazione e OAuth tra Skype for Business Online e [Exchange Server;](/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises)questi passaggi forniranno all'applicazione di pianificazione di Teams le autorizzazioni necessarie per confermare le autorizzazioni dei delegati.
  
   > [!NOTE]
   > Il passaggio 2 include l'assegnazione del ruolo ArchiveApplication, che non è obbligatorio per la delega.
 
-- Il Teams pianificazione per Outlook richiede Exchange 2013 CU19 o versione successiva quando si pianifica una riunione per conto di un altro utente. Questo permette di supportare l’individuazione non autenticata della cassetta postale da parte del servizio per controllare le autorizzazioni di delega rispetto alla cassetta postale del delegante. La posizione del delegato e del delegante può essere Exchange 2013 o versioni successive oppure Exchange Online, ma l'individuazione automatica deve risolversi in Exchange 2013 CU19 o versioni successive.
+- Il Teams Pianificazione per Outlook richiede Exchange 2013 CU19 o versione successiva quando si pianifica una riunione per conto di un altro utente. Questo permette di supportare l’individuazione non autenticata della cassetta postale da parte del servizio per controllare le autorizzazioni di delega rispetto alla cassetta postale del delegante. La posizione del delegato e del delegante può essere Exchange 2013 o versioni successive oppure Exchange Online, ma l'individuazione automatica deve risolversi in Exchange 2013 CU19 o versioni successive.
 
 ## <a name="additional-considerations"></a>Considerazioni aggiuntive
 
@@ -125,7 +125,7 @@ Di seguito sono riportate alcune considerazioni aggiuntive su come implementare 
 
 - Controllare e proteggere la configurazione dei criteri di conformità in Teams ed Exchange con l’accesso condizionale. Per ulteriori informazioni, vedere [Come funzionano i criteri di accesso condizionale per Teams?](security-compliance-overview.md#how-conditional-access-policies-work-for-teams)
 
-- Se l’organizzazione possiede dei requisiti di conformità per garantire che tutte le discussioni delle riunioni siano individuabili, è consigliabile disabilitare le riunioni private se l’organizzatore dispone di una cassetta postale di Exchange locale. Per ulteriori informazioni, vedere [Consentire la pianificazione di riunioni private](./meeting-policies-in-teams-general.md#allow-scheduling-private-meetings).
+- Se l’organizzazione possiede dei requisiti di conformità per garantire che tutte le discussioni delle riunioni siano individuabili, è consigliabile disabilitare le riunioni private se l’organizzatore dispone di una cassetta postale di Exchange locale. Per altre informazioni, vedere [Pianificazione privata delle riunioni.](./meeting-policies-in-teams-general.md#private-meeting-scheduling)
 
 - In una distribuzione ibrida di Exchange, il contenuto dei messaggi di chat è disponibile per la ricerca, indipendentemente dal fatto che i partecipanti alla chat abbiano una cassetta postale basata sul cloud o una cassetta postale locale. Per ulteriori informazioni, consultare [Ricerca in cassette postali basate sul cloud per gli utenti locali](/office365/securitycompliance/search-cloud-based-mailboxes-for-on-premises-users). Per informazioni sulla ricerca di contenuto in Teams, consultare [Ricerca contenuto nel Centro conformità di Microsoft 365](/Office365/SecurityCompliance/content-search#searching-microsoft-teams-and-office-365-groups).
 

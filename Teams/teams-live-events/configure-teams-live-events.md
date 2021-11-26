@@ -15,19 +15,19 @@ ms.collection:
 - m365initiative-meetings
 - m365initiative-meetings-enabler
 - enabler-strategic
-description: Informazioni su come gestire le impostazioni Teams eventi live che si svolgono nell'organizzazione.
+description: Informazioni su come gestire le impostazioni per Teams eventi live che si svolgono nell'organizzazione.
 f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.liveevents.settings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a1c25ed5b00adf162ceb5d75d9207e43e489f3c6
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: ac7558f2177ab468043e624d6230106179f79a6e
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60536527"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61205236"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi live in Microsoft Teams
 
@@ -67,7 +67,7 @@ Se è stata acquistata e configurata una soluzione SDN (Software Defined Network
 
     ![Impostazioni del provider di distribuzione video di terze parti nell'interfaccia di amministrazione.](../media/teams-live-events-settings-distribution-provider-new.png "Schermata delle impostazioni del provider di distribuzione video di terze parti per gli eventi live")
 
-    - **Usare un provider di distribuzione di terze parti** Attivare questa opzione per abilitare il provider di distribuzione video di terze parti.
+    - **Provider di distribuzione di terze parti** Attivare questa opzione per abilitare il provider di distribuzione video di terze parti.
     - **Nome provider SDN** Scegliere il provider in uso.
     - **Configurazione SDN** Immettere i dettagli di Configurazione SDN.
         

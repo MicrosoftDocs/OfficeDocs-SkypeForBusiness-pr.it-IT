@@ -1,5 +1,5 @@
 ---
-title: Teams per l'istruzione Creazione guidata Criteri per applicare facilmente i criteri per l'apprendimento sicuro
+title: Teams per l'istruzione guidata criteri per applicare facilmente i criteri per l'apprendimento sicuro
 author: serdars
 ms.author: v-mahoffman
 manager: serdars
@@ -17,20 +17,20 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare la procedura guidata Teams per l'istruzione criteri di apprendimento per applicare facilmente criteri per studenti e docenti per mantenere sicuro l'ambiente di apprendimento.
 f1keywords: ''
-ms.openlocfilehash: 2d58372af73bd1b0b62ed0d320ac2d0b9097a326
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 4b514d2642ba383ca91aa320f8f89dcb1405b7e2
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60741652"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61205486"
 ---
-# <a name="use-the-teams-for-education-policy-wizard-to-easily-apply-policies-for-a-safe-learning-environment"></a>Usare la Procedura guidata Teams per l'istruzione criteri per applicare facilmente i criteri per un ambiente di apprendimento sicuro
+# <a name="use-the-teams-for-education-policy-wizard-to-easily-apply-policies-for-a-safe-learning-environment"></a>Usare la Teams per l'istruzione guidata criteri di protezione per applicare facilmente i criteri per un ambiente di apprendimento sicuro
 
 ## <a name="overview"></a>Panoramica
 
 La Microsoft Teams per l'istruzione guidata criteri semplifica la gestione dei criteri per studenti e docenti. Usarlo per applicare in modo semplice e rapido il set più importante di criteri rilevanti per la creazione di un'esperienza di apprendimento sicura e produttiva.
 
-I criteri in Teams consentono di controllare il comportamento Teams nell'ambiente e le caratteristiche disponibili per gli utenti. Ad esempio, esistono criteri per le chiamate, criteri riunione e criteri di messaggistica, per citarne alcuni e ogni area dei criteri può essere personalizzata in base alle esigenze dell'organizzazione.
+I criteri in Teams consentono di controllare il comportamento Teams nell'ambiente e le funzionalità disponibili per gli utenti. Ad esempio, esistono criteri per le chiamate, criteri riunione e criteri di messaggistica, per citarne alcuni e ogni area dei criteri può essere personalizzata in base alle esigenze dell'organizzazione.
 
 Per mantenere un ambiente di apprendimento sicuro e mirato, è importante impostare criteri per controllare cosa possono fare gli studenti in Teams. Ad esempio, è possibile usare i criteri per controllare chi può usare la chat privata e le chiamate private, chi può pianificare riunioni e quali tipi di contenuto possono essere condivisi. È anche possibile usare i criteri per attivare Teams caratteristiche che arricchiscono l'esperienza di apprendimento.
 
@@ -41,9 +41,9 @@ Per mantenere al sicuro l'esperienza di apprendimento, è necessario modificare 
 Questo articolo illustra come eseguire la procedura guidata.
 
 > [!IMPORTANT]
-> I criteri applicati dalla procedura guidata soddisferanno le esigenze della maggior parte Teams per l'istruzione clienti. La procedura guidata regola la definizione globale (predefinita a livello di organizzazione) di un set di criteri di base con impostazioni consigliate per la sicurezza degli studenti e la applica agli studenti. La procedura guidata crea e assegna anche un set di criteri personalizzati a docenti e personale. La Teams per l'istruzione i clienti non dovranno usare altri metodi di assegnazione dei criteri dopo l'esecuzione della procedura guidata. Usare altri metodi di *assegnazione* dei criteri solo se si vogliono creare e gestire manualmente criteri per studenti, docenti e personale.
+> I criteri applicati dalla procedura guidata soddisferanno le esigenze della maggior parte Teams per l'istruzione clienti. La procedura guidata regola la definizione globale (predefinita a livello di organizzazione) di un set di criteri di base con impostazioni consigliate per la sicurezza degli studenti e la applica agli studenti. La procedura guidata crea e assegna anche un set di criteri personalizzati a docenti e personale. La Teams per l'istruzione i clienti non dovranno usare altri metodi di assegnazione dei criteri dopo l'esecuzione di questa procedura guidata. Usare altri metodi di *assegnazione* dei criteri solo se si vogliono creare e gestire manualmente criteri per studenti, docenti e personale.
 
-## <a name="teams-for-education-policy-wizard"></a>Teams per l'istruzione Creazione guidata Criteri
+## <a name="teams-for-education-policy-wizard"></a>Teams per l'istruzione guidata Criteri di gruppo
 
 <a name="polwiz_intro"> </a>
 
@@ -56,7 +56,7 @@ La procedura guidata configura i criteri in base al tipo di istituto di istruzio
 
 È necessario eseguire la procedura guidata una sola volta. I nuovi studenti ottengono automaticamente le definizioni dei criteri globali (impostazione predefinita a livello di organizzazione) applicate dalla procedura guidata e ai nuovi membri aggiunti al gruppo selezionato vengono assegnati automaticamente i criteri personalizzati.
 
-Inoltre, ogni volta che una nuova funzionalità viene aggiunta a Teams, il valore predefinito appropriato pertinente dell'EDU del criterio per tale caratteristica verrà aggiunto automaticamente al valore globale (impostazione predefinita a livello di organizzazione) senza richiedere l'intervento dell'amministratore. In questo modo si garantisce la sicurezza e l'coinvolgimento degli studenti nei criteri più sicuri.
+Inoltre, ogni volta che viene aggiunta una nuova funzionalità a Teams, il valore predefinito appropriato pertinente dell'EDU del criterio per tale caratteristica verrà aggiunto automaticamente al valore globale (impostazione predefinita a livello di organizzazione) senza richiedere l'intervento dell'amministratore. In questo modo si garantisce la sicurezza e l'coinvolgimento degli studenti nei criteri più sicuri.
 
 > [!NOTE]
 > Per un elenco dettagliato delle definizioni dei criteri applicate dalla procedura [guidata,](#policies-applied-by-the-wizard) vedere Criteri applicati dalla procedura guidata.
@@ -131,7 +131,7 @@ Ad esempio, è stato assegnato un criterio di riunione direttamente ai docenti e
 
 La procedura guidata modifica e applica automaticamente [questi criteri.](#policies-applied-by-the-wizard) Sono disponibili alcune misure aggiuntive, che è possibile adottare in base alle esigenze dell'istituto per rimanere al sicuro.
 
-Per altri consigli sulla sicurezza, vedere Tenere gli studenti al sicuro [Teams l'apprendimento a](https://support.microsoft.com/office/keeping-students-safe-while-using-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8#ID0EBBAAA) distanza.
+Per altri consigli sulla sicurezza, vedere Tenere gli studenti [al sicuro Teams l'apprendimento a](https://support.microsoft.com/office/keeping-students-safe-while-using-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8#ID0EBBAAA) distanza.
 
 <a name="polwiz_mc"> </a>
 
@@ -139,7 +139,7 @@ Per altri consigli sulla sicurezza, vedere Tenere gli studenti al sicuro [Teams 
 
 Attualmente, la procedura guidata applica i criteri consigliati quando viene eseguita. È importante sapere che quando i nuovi criteri diventano disponibili in Teams, le impostazioni globali (predefinite a livello di organizzazione) per la sicurezza degli studenti vengono aggiornate automaticamente dalla procedura guidata. 
 
-Tuttavia, controllare [spesso](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter) il Centro messaggi (nel interfaccia di amministrazione di Microsoft 365) per rimanere aggiornati sulle nuove caratteristiche e sui criteri e le impostazioni dei criteri in Teams. 
+Tuttavia, controllare [spesso](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter) il Centro messaggi (nel interfaccia di amministrazione di Microsoft 365) per rimanere aggiornati sulle nuove caratteristiche e sui relativi criteri e impostazioni dei criteri in Teams. 
 
 ## <a name="make-changes-in-the-wizard"></a>Apportare modifiche nella procedura guidata
 
@@ -147,7 +147,7 @@ Tuttavia, controllare [spesso](https://admin.microsoft.com/AdminPortal/Home?#/Me
 
 Se è necessario apportare modifiche dopo aver eseguito la procedura guidata, è possibile eseguirla di nuovo e modificare le selezioni.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare  a **Home** e quindi nel riquadro Configurazione dei criteri per un ambiente di apprendimento sicuro selezionare **Cambia**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare a **Home** e quindi nel riquadro Configurazione semplice dei criteri per un ambiente di apprendimento sicuro selezionare **Cambia**. 
 2. Da qui, continuare con ogni pagina della procedura guidata per apportare le modifiche. È possibile modificare il tipo di istituto, il gruppo di docenti e personale a cui si vogliono assegnare i criteri o entrambi.
 
 La tabella seguente riepiloga cosa succede quando si apporta una modifica nella procedura guidata.
@@ -201,34 +201,34 @@ Ecco un elenco delle definizioni dei criteri globali (predefinite a livello di o
 |Area criteri |Area secondaria  |Impostazione dei criteri  |Principale o Secondario |Istruzione superiore |
 |---------|---------|---------|---------|---------|
 |Criteri di team   |         |Creare canali privati         |Disattivato       |Attivato|
-|Criteri per le riunioni    |Generale         |Consenti l'uso di Riunione immediata nei canali         |Disattivato      |Attivato|
-|  |        |Consenti il componente aggiuntivo per Outlook         |Disattivato       |Attivato|
-|  |        |Consenti la pianificazione delle riunioni di canale        |Disattivato      |Attivato|
-|  |        |Consenti la pianificazione di riunioni private       |Disattivato      |Attivato|
-|  |        |Consentire la registrazione alla riunione              |Attivato       |Attivato|
-|  |        |Who possibile registrare    |Tutti gli utenti dell'organizzazione      |Tutti gli utenti dell'organizzazione|
-|  |Video & audio        |Consenti la trascrizione        |Attivato       |Attivato|
-|  |        |Consenti la registrazione cloud         |Disattivato      |Attivato|
+|Criteri per le riunioni    |Generale         |Incontra ora nei canali         |Disattivato      |Attivato|
+|  |        |Outlook componente aggiuntivo         |Disattivato       |Attivato|
+|  |        |Pianificazione delle riunioni del canale        |Disattivato      |Attivato|
+|  |        |Pianificazione privata delle riunioni       |Disattivato      |Attivato|
+|  |        |Registrazione della riunione              |Attivato       |Attivato|
+|  |        |Who può registrarsi    |Tutti gli utenti dell'organizzazione      |Tutti gli utenti dell'organizzazione|
+|  |Video & audio        |Trascrizione        |Attivato       |Attivato|
+|  |        |Registrazione nel cloud         |Disattivato      |Attivato|
 |  |        |Modalità per audio IP       |Audio in uscita e in arrivo abilitato        |Audio in uscita e in arrivo abilitato|
 |  |        |Modalità per video IP         |Video in uscita e in arrivo abilitato     |Video in uscita e in arrivo abilitato|
-|  |       |Consenti video IP         |Attivato         |Attivato|
+|  |       |Video IP         |Attivato         |Attivato|
 |  |       |Consenti streaming NDI         |Disattivato         |Disattivato|
 |  |       |Velocità in bit supporto (KB)         |50,000         |50,000|
 |  |Condivisione di contenuti       |Modalità condivisione schermo         |Schermo intero         |Schermo intero|
 |  |       |Consenti a un partecipante di fornire o richiedere il controllo         |Attivato         |Attivato|
 |  |       |Consenti a un partecipante esterno di fornire o richiedere il controllo         |Attivato         |Attivato|
-|  |       |Consenti la condivisione di PowerPoint        |Attivato         |Attivato|
-|  |       |Consenti la lavagna         |Attivato         |Attivato|
-|  |       |Consenti note condivise         |Attivato        |Attivato|
+|  |       |PowerPoint condivisione        |Attivato         |Attivato|
+|  |       |Whiteboard         |Attivato         |Attivato|
+|  |       |Note condivise         |Attivato        |Attivato|
 |  |Partecipanti & guest       |Consenti alle persone anonime di avviare una riunione       |Disattivato         |Attivato|
 |  |       |Ruoli con diritti di relatore nelle riunioni        |EveryoneUserOverride         |EveryoneUserOverride|
 |  |       |Ammetti automaticamente le persone        |EveryoneInCompany|EveryoneInCompany|
 |  |       |Consenti agli utenti che chiamano di ignorare la sala di attesa        |Disattivato         |Disattivato|
-|  |       |Consenti l'uso di Riunione immediata nelle riunioni private        |Disattivato         |Attivato|
-|  |       |Abilita i sottotitoli in tempo reale       |Disabilitato ma l'utente può eseguire l'override         |Disabilitato ma l'utente può eseguire l'override|
-|  |       |Consenti l'uso della chat nelle riunioni          |Attivato         |Attivato|
-|Criteri per gli eventi live  |       |Consenti la pianificazione         |Disattivato         |Disattivato|
-|  |       |Consenti trascrizione per i partecipanti          |Attivato       |Attivato|
+|  |       |Riunione in corso in riunioni private        |Disattivato         |Attivato|
+|  |       |Didascalie in tempo reale       |Disabilitato ma l'utente può eseguire l'override         |Disabilitato ma l'utente può eseguire l'override|
+|  |       |Chattare nelle riunioni         |Attivato         |Attivato|
+|Criteri per gli eventi live  |       |Pianificazione di eventi live         |Disattivato         |Disattivato|
+|  |       |Trascrizione per i partecipanti          |Attivato       |Attivato|
 |  |       |Chi può aggiungere eventi live pianificati        |Tutti gli utenti dell'organizzazione        |Tutti gli utenti dell'organizzazione|
 |  |       |Who registrare un evento         |Sempre         |Sempre|
 |Criteri di messaggistica  |       |I proprietari possono eliminare i messaggi inviati         |Disattivato|Attivato|
@@ -236,22 +236,22 @@ Ecco un elenco delle definizioni dei criteri globali (predefinite a livello di o
 |  |       |Modificare i messaggi inviati         |Disattivato         |Attivato|
 |  |       |Conferme di lettura         |Controllato dall'utente         |Controllato dall'utente|
 |  |       |Chat         |Disattivato         |Attivato|
-|  |       |Usare Giphys nelle conversazioni         |Disattivato         |Attivato|
+|  |       |Giphys nelle conversazioni         |Disattivato         |Attivato|
 |  |       |Classificazione del contenuto Giphy         |Strict        |Strict|
-|  |       |Usare Memes nelle conversazioni         |Attivato         |Attivato|
-|  |       |Usare gli adesivi nelle conversazioni         |Attivato         |Attivato|
-|  |       |Consenti anteprime URL        |Attivato         |Attivato|
+|  |       |Meme nelle conversazioni         |Attivato         |Attivato|
+|  |       |Adesivi nelle conversazioni         |Attivato         |Attivato|
+|  |       |Anteprime url        |Attivato         |Attivato|
 |  |       |Tradurre i messaggi         |Attivato         |Attivato|
-|  |       |Consentire lo strumento di lettura immersiva per la visualizzazione dei messaggi        |Attivato      |Attivato|
+|  |       |Lettore immersivo per i messaggi        |Attivato      |Attivato|
 |  |       |Invio di messaggi urgenti con notifiche priorità  |Disattivato         |Attivato|
 |  |       |Creare messaggi vocali         |Consentito nelle chat e nei canali         |Consentito nelle chat e nei canali|
 |  |       |Nei dispositivi mobili, visualizza i canali preferiti sopra le chat recenti     |Abilitata         |Abilitata|
 |  |       |Rimuovere utenti dalle chat di gruppo         |Disattivato         |Attivato|
-|Criteri di autorizzazione per le app  |       |App Microsoft         |Bloccare app specifiche e consentire a tutti gli altri > Walkie Talkie bloccato         |Consenti tutte le app|
+|Criteri di autorizzazione per le app  |       |App Microsoft         |Bloccare app specifiche e consentire a tutti gli > Walkie Talkie bloccato         |Consenti tutte le app|
 |  |       |App di terze parti         |Consenti tutte le app         |Consenti tutte le app|
 |  |       |App personalizzate         |Consenti tutte le app         |Consenti tutte le app|
 |Criteri di configurazione delle app  |           |Upload app personalizzate           |Disattivato         |Disattivato|
-|  |       |Consentire l'aggiunta di utenti |Attivato         |Attivato|
+|  |       |Blocco dell'utente |Attivato         |Attivato|
 |  |       |App installate         |Nessuno         |Nessuno|
 |  |       |App aggiunte         |Attività, Calendario, Teams         |Attività, Chat, Teams, Calendario, Chiamate, File
 |Criteri di chiamata  |       |Effettuare chiamate private         |Disattivato        |Attivato|
@@ -271,34 +271,34 @@ Ecco un elenco delle definizioni dei criteri personalizzati assegnate ai docenti
 |Area criteri |Area secondaria  |Impostazione dei criteri  |Principale o Secondario |Istruzione superiore |
 |---------|---------|---------|---------|---------|
 |Criteri di team   |         |Creare canali privati         |Attivato       |Attivato|
-|Criteri per le riunioni    |Generale         |Consenti l'uso di Riunione immediata nei canali         |Attivato      |Attivato|
-|  |        |Consenti il componente aggiuntivo per Outlook         |Attivato       |Attivato|
-|  |        |Consenti la pianificazione delle riunioni di canale        |Attivato      |Attivato|
-|  |        |Consenti la pianificazione di riunioni private       |Attivato      |Attivato|
-|  |        |Consentire la registrazione alla riunione              |Attivato       |Attivato|
-|  |        |Who possibile registrare    |Tutti gli utenti dell'organizzazione      |Tutti gli utenti dell'organizzazione|
-|  |Video & audio        |Consenti la trascrizione        |Attivato       |Attivato|
-|  |        |Consenti la registrazione cloud         |Attivato      |Attivato|
+|Criteri per le riunioni    |Generale         |Incontra ora nei canali         |Attivato      |Attivato|
+|  |        |Outlook componente aggiuntivo         |Attivato       |Attivato|
+|  |        |Pianificazione delle riunioni del canale        |Attivato      |Attivato|
+|  |        |Pianificazione privata delle riunioni       |Attivato      |Attivato|
+|  |        |Registrazione della riunione              |Attivato       |Attivato|
+|  |        |Who può registrarsi    |Tutti gli utenti dell'organizzazione      |Tutti gli utenti dell'organizzazione|
+|  |Video & audio        |Trascrizione        |Attivato       |Attivato|
+|  |        |Registrazione nel cloud         |Attivato      |Attivato|
 |  |        |Modalità per audio IP       |Audio in uscita e in arrivo abilitato        |Audio in uscita e in arrivo abilitato|
 |  |        |Modalità per video IP         |Video in uscita e in arrivo abilitato     |Video in uscita e in arrivo abilitato|
-|  |       |Consenti video IP         |Attivato         |Attivato|
+|  |       |Video IP         |Attivato         |Attivato|
 |  |       |Consenti streaming NDI         |Disattivato         |Disattivato|
 |  |       |Velocità in bit supporto (KB)         |50,000         |50,000|
 |  |Condivisione di contenuti       |Modalità condivisione schermo         |Schermo intero         |Schermo intero|
 |  |       |Consenti a un partecipante di fornire o richiedere il controllo         |Attivato         |Attivato|
 |  |       |Consenti a un partecipante esterno di fornire o richiedere il controllo         |Attivato         |Attivato|
-|  |       |Consenti la condivisione di PowerPoint        |Attivato         |Attivato|
-|  |       |Consenti la lavagna         |Attivato         |Attivato|
-|  |       |Consenti note condivise         |Attivato        |Attivato|
+|  |       |PowerPoint condivisione        |Attivato         |Attivato|
+|  |       |Whiteboard         |Attivato         |Attivato|
+|  |       |Note condivise         |Attivato        |Attivato|
 |  |Partecipanti & guest       |Consenti alle persone anonime di avviare una riunione       |Attivato        |Attivato|
 |  |       |Ruoli con diritti di relatore nelle riunioni        |OrganizerOnlyUserOverride         |OrganizerOnlyUserOverride|
 |  |       |Ammetti automaticamente le persone        |OrganizerOnly|OrganizerOnly|
 |  |       |Consenti agli utenti che chiamano di ignorare la sala di attesa        |Disattivato         |Disattivato|
-|  |       |Consenti l'uso di Riunione immediata nelle riunioni private        |Attivato         |Attivato|
-|  |       |Abilita i sottotitoli in tempo reale       |Disabilitato ma l'utente può eseguire l'override         |Disabilitato ma l'utente può eseguire l'override|
-|  |       |Consenti l'uso della chat nelle riunioni          |Attivato         |Attivato|
-|Criteri per gli eventi live  |       |Consenti la pianificazione         |Attivato         |Attivato|
-|  |       |Consenti trascrizione per i partecipanti          |Attivato       |Attivato|
+|  |       |Riunione in corso in riunioni private        |Attivato         |Attivato|
+|  |       |Didascalie in tempo reale       |Disabilitato ma l'utente può eseguire l'override         |Disabilitato ma l'utente può eseguire l'override|
+|  |       |Chattare nelle riunioni         |Attivato         |Attivato|
+|Criteri per gli eventi live  |       |Pianificazione di eventi live         |Attivato         |Attivato|
+|  |       |Trascrizione per i partecipanti          |Attivato       |Attivato|
 |  |       |Chi può aggiungere eventi live pianificati        |Tutti gli utenti dell'organizzazione        |Tutti gli utenti dell'organizzazione|
 |  |       |Who registrare un evento         |Registra sempre         |Registra sempre|
 |Criteri di messaggistica  |       |I proprietari possono eliminare i messaggi inviati         |Attivato|Attivato|
@@ -306,13 +306,13 @@ Ecco un elenco delle definizioni dei criteri personalizzati assegnate ai docenti
 |  |       |Modificare i messaggi inviati         |Attivato         |Attivato|
 |  |       |Conferme di lettura         |Controllato dall'utente         |Controllato dall'utente|
 |  |       |Chat         |Attivato         |Attivato
-|  |       |Usare Giphys nelle conversazioni         |Attivato        |Attivato|
+|  |       |Giphys nelle conversazioni         |Attivato        |Attivato|
 |  |       |Classificazione del contenuto Giphy         |Strict        |Strict|
-|  |       |Usare Memes nelle conversazioni         |Attivato         |Attivato|
-|  |       |Usare gli adesivi nelle conversazioni         |Attivato         |Attivato|
-|  |       |Consenti anteprime URL        |Attivato         |Attivato|
+|  |       |Meme nelle conversazioni         |Attivato         |Attivato|
+|  |       |Adesivi nelle conversazioni         |Attivato         |Attivato|
+|  |       |Anteprime url        |Attivato         |Attivato|
 |  |       |Tradurre i messaggi         |Attivato         |Attivato|
-|  |       |Consentire lo strumento di lettura immersiva per la visualizzazione dei messaggi        |Attivato      |Attivato|
+|  |       |Lettore immersivo per i messaggi        |Attivato      |Attivato|
 |  |       |Invio di messaggi urgenti con notifiche priorità  |Attivato         |Attivato|
 |  |       |Creare messaggi vocali         |Consentito nelle chat e nei canali         |Consentito nelle chat e nei canali|
 |  |       |Nei dispositivi mobili, visualizza i canali preferiti sopra le chat recenti     |Abilitata         |Abilitata|

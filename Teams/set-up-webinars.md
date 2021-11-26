@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire i criteri webinar per Teams riunioni.
-ms.openlocfilehash: 35c0cc2ab6c05d123aae45bc0c375cf815db36b4
-ms.sourcegitcommit: 74d3ab35c344d70b2399bc46a6ced3ab2762a470
+ms.openlocfilehash: 19918d7a32a9a5069dab8dc87011de6112bbe364
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60138212"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61205556"
 ---
 # <a name="set-up-for-webinars-in-microsoft-teams"></a>Configurare webinar in Microsoft Teams
 
@@ -37,37 +37,37 @@ I webinar sono riunioni strutturate in cui relatori e partecipanti hanno ruoli c
 Dopo aver impostato webinar nell'organizzazione, gli utenti possono pianificare webinar e aprire la registrazione ai partecipanti. A differenza delle riunioni tradizionali che includono molte discussioni e attività, i webinar sono pensati per presentazioni interattive e forniscono strumenti per l'analisi dei partecipanti.
 
 > [!IMPORTANT]
-> Per consentire agli utenti di configurare webinar, Elenchi Microsoft devono essere configurati in SharePoint abilitando la creazione di elenchi personali. Per altre informazioni, vedere [Impostazioni di controllo per Elenchi Microsoft.](/sharepoint/control-lists)
+> Per consentire agli utenti di configurare webinar, Elenchi Microsoft devono essere configurati in SharePoint abilitando la creazione di elenchi personali. Per altre informazioni, vedere [Impostazioni di controllo per Elenchi Microsoft](/sharepoint/control-lists).
 
 ## <a name="allow-users-to-schedule-webinars-in-the-teams-admin-center"></a>Consentire agli utenti di pianificare webinar nell'Teams di amministrazione
 
 È possibile usare l'Teams di amministrazione per configurare webinar per l'organizzazione. I criteri per configurare i webinar sono presenti nell'interfaccia di amministrazione Teams riunioni in **Criteri**  >  **riunione**.
 
-### <a name="allow-meeting-registration"></a>Consentire la registrazione alla riunione
+### <a name="meeting-registration"></a>Registrazione della riunione
 
 Se si attiva questa opzione, gli utenti possono pianificare webinar. Per impostazione predefinita, questa opzione è attivata. Se si vuole disattivare la registrazione alla riunione, impostare questo criterio su **Disattivato.**
 
 > [!IMPORTANT]
-> **Consentire la pianificazione di riunioni private** deve essere in corso perché la registrazione della riunione funzioni. Per impostazione predefinita, questo criterio è attivato nell'Teams di amministrazione. Per gli studenti dei tenant dell'istruzione, questo criterio è disattivato per impostazione predefinita. Per altre informazioni su come abilitare la pianificazione privata delle riunioni per gli studenti, vedere Teams per l'istruzione [criteri e pacchetti di criteri.](policy-packages-edu.md)
+> **La pianificazione privata delle riunioni** deve essere in esecuzione perché la registrazione della riunione funzioni. Per impostazione predefinita, questo criterio è attivato nell'Teams di amministrazione. Per gli studenti dei tenant dell'istruzione, questo criterio è disattivato per impostazione predefinita. Per altre informazioni su come abilitare la pianificazione privata delle riunioni per gli studenti, vedere Teams per l'istruzione [criteri e pacchetti di criteri.](policy-packages-edu.md)
 
-### <a name="who-can-register"></a>Who registrarsi
+### <a name="who-can-register"></a>Who può registrarsi
 
 Se si seleziona **Tutti**, tutti gli utenti, inclusi gli utenti anonimi, possono registrarsi e partecipare ai webinar. Se si seleziona **Tutti nell'organizzazione,** solo gli utenti dell'organizzazione possono registrarsi per i webinar. Se la registrazione alla riunione è disattivata, questa opzione non sarà disponibile e nessuno potrà registrarsi per i webinar.
 
 > [!NOTE]
 > Il valore predefinito per Who **può registrarsi** è **Tutti gli utenti dell'organizzazione** nei tenant dell'istruzione. Per altre informazioni, vedere Teams per l'istruzione [guidata Criteri.](easy-policy-setup-edu.md)
 
-### <a name="allow-engagement-report"></a>Consenti report impegno
+### <a name="engagement-report"></a>Report impegno
 
-Se si attiva questa opzione, gli organizzatori possono visualizzare i report sugli utenti che hanno registrato e partecipato ai webinar che hanno configurato. Questo criterio è disattivato per impostazione predefinita. Per altre informazioni, vedere [Criteri riunione in Teams - Consenti report impegno.](meeting-policies-in-teams-general.md#allow-engagement-report) Per informazioni sull'esperienza utente finale, vedere Visualizzare e [scaricare i report sulla partecipazione alla riunione.](https://support.microsoft.com/office/view-and-download-meeting-attendance-reports-in-teams-ae7cf170-530c-47d3-84c1-3aedac74d310?ui=en-US&#x26;rs=en-US&#x26;ad=US)
+Se si attiva questa opzione, gli organizzatori possono visualizzare i report sugli utenti che hanno registrato e partecipato ai webinar che hanno configurato. Questo criterio è disattivato per impostazione predefinita. Per altre informazioni, vedere [Criteri riunione in Teams - Report impegno.](meeting-policies-in-teams-general.md#engagement-report) Per informazioni sull'esperienza utente finale, vedere Visualizzare e [scaricare i report sulla partecipazione alla riunione.](https://support.microsoft.com/office/view-and-download-meeting-attendance-reports-in-teams-ae7cf170-530c-47d3-84c1-3aedac74d310?ui=en-US&#x26;rs=en-US&#x26;ad=US)
 
 ## <a name="allow-users-to-schedule-webinars-using-powershell"></a>Consentire agli utenti di pianificare webinar con PowerShell
 
 È possibile usare gli attributi seguenti all'interno Windows PowerShell cmdlet **Set-CsTeamsMeetingPolicy** per configurare i webinar in Teams.
 
-- AllowMeetingRegistration
+- MeetingRegistration
 - WhoCanRegister
-- AllowPrivateMeetingScheduling
+- PrivateMeetingScheduling
 
 Per altre informazioni sul cmdlet, vedere [Set-CsTeamsMeetingPolicy.](/powershell/module/skype/set-csteamsmeetingpolicy)
 
@@ -76,21 +76,21 @@ Per altre informazioni sul cmdlet, vedere [Set-CsTeamsMeetingPolicy.](/powershel
 
 ### <a name="allow-users-to-schedule-webinars"></a>Consentire agli utenti di pianificare webinar
 
-È possibile limitare la registrazione solo agli utenti dell'organizzazione o aprirla a tutti gli utenti interni ed esterni al tenant. Per impostazione predefinita, **WhoCanRegister** è abilitato e impostato su **Tutti** per il criterio Globale **(impostazione** predefinita a livello di organizzazione). Se si vuole disattivare la registrazione alla riunione, impostare **AllowMeetingRegistration** su **False**.
+È possibile limitare la registrazione solo agli utenti dell'organizzazione o aprirla a tutti gli utenti interni ed esterni al tenant. Per impostazione predefinita, **WhoCanRegister** è abilitato e impostato su **Tutti** per il criterio Globale **(impostazione** predefinita a livello di organizzazione). Se si vuole disattivare la registrazione della riunione, impostare **Registrazione Riunioni** su **False**.
 
 > [!IMPORTANT]
-> **AllowPrivateMeetingScheduling** deve essere impostato su **True** perché **AllowMeetingRegistration** funzioni.
+> **PrivateMeetingScheduling** deve essere impostato su **True** per il funzionamento **di MeetingRegistration.**
 
 1. Attivare la registrazione alla riunione
 
 ```powershell
-Set-CsTeamsMeetingPolicy -AllowMeetingRegistration $True
+Set-CsTeamsMeetingPolicy -MeetingRegistration $True
 ```
 
 2. Attivare la pianificazione privata delle riunioni
 
 ```powershell
-Set-CsTeamsMeetingPolicy -AllowPrivateMeetingScheduling $True
+Set-CsTeamsMeetingPolicy -PrivateMeetingScheduling $True
 ```
 
 3. Configurare gli utenti che possono registrarsi per i webinar
@@ -108,14 +108,14 @@ Set-CsTeamsMeetingPolicy -WhoCanRegister Everyone
 ```
 
 > [!CAUTION]
-> Se l'accesso anonimo è disattivato nelle impostazioni della riunione, gli utenti anonimi non possono partecipare ai webinar. Per altre informazioni e abilitare questa impostazione, vedere [Impostazioni riunione in Teams](meeting-settings-in-teams.md).
+> Se l'accesso anonimo è disattivato nelle impostazioni della riunione, gli utenti anonimi non possono partecipare ai webinar. Per altre informazioni e abilitare questa impostazione, vedere [Impostazioni riunione in Teams.](meeting-settings-in-teams.md)
 
 ### <a name="collect-meeting-attendance"></a>Raccogliere la partecipazione alla riunione
 
-Se si vuole che gli organizzatori analizzino chi ha registrato e partecipato ai webinar, è necessario attivare il criterio **AllowEngagementReport.** A questo scopo, eseguire il comando seguente in PowerShell.
+Se si vuole che gli organizzatori analizzino chi ha registrato e partecipato ai webinar, è necessario attivare il criterio **EngagementReport.** A questo scopo, eseguire il comando seguente in PowerShell.
 
 ```powershell
-Set-CsTeamsMeetingPolicy -AllowEngagementReport Enabled
+Set-CsTeamsMeetingPolicy -EngagementReport Enabled
 ```
 
 ## <a name="configure-webinar-settings"></a>Configurare le impostazioni del webinar
@@ -126,4 +126,4 @@ Dopo aver abilitato l'ambiente per i webinar, non è necessaria alcuna ulteriore
 
 - [Criteri riunione in Teams - Generale](meeting-policies-in-teams-general.md)
 - [Documentazione di Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy)
-- [Teams per l'istruzione Creazione guidata Criteri](easy-policy-setup-edu.md)
+- [Teams per l'istruzione guidata Criteri di gruppo](easy-policy-setup-edu.md)

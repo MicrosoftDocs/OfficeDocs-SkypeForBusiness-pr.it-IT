@@ -16,13 +16,13 @@ appliesto:
 f1.keywords:
 - CSH
 ms.custom: ''
-description: Informazioni su come usare le impostazioni dei criteri riunione per controllare la scadenza della riunione Microsoft Teams.
-ms.openlocfilehash: 7912c57e12de83f112bb1c80b1c44d81d9d6b857
-ms.sourcegitcommit: 32ba2ed0343e19f56e62fb3c507923c95f11b1bd
+description: Informazioni su come usare le impostazioni dei criteri di riunione per controllare la scadenza della riunione Microsoft Teams.
+ms.openlocfilehash: 8768410666d003f12cffb80995981b887059f93a
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124263"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61178017"
 ---
 # <a name="meeting-policies-and-meeting-expiration-in-microsoft-teams"></a>Criteri di riunione e scadenza della riunione in Microsoft Teams
 
@@ -30,11 +30,11 @@ ms.locfileid: "61124263"
 
 Le impostazioni dei criteri di riunione che controllano se gli utenti possono avviare e pianificare riunioni e controllano anche la scadenza delle riunioni pianificate dagli utenti. Quando un collegamento di partecipazione alla riunione e l'ID conferenza per una riunione scadono, nessuno può partecipare alla riunione. Le impostazioni dei criteri di riunione seguenti determinano se gli utenti possono avviare e pianificare riunioni in Teams. Questo articolo illustra le impostazioni della riunione.
 
-- [Consenti riunione ora nei canali:](meeting-policies-in-teams-general.md#allow-meet-now-in-channels)controlla se un utente può avviare una riunione improvvisata in un canale.
-- [Consenti pianificazione riunione canale:](meeting-policies-in-teams-general.md#allow-channel-meeting-scheduling)controlla se un utente può pianificare una riunione in un canale.
-- [Consenti pianificazione riunioni private:](meeting-policies-in-teams-general.md#allow-scheduling-private-meetings)controlla se un utente può pianificare una riunione privata in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
-- [Consenti l Outlook aggiungi in:](meeting-policies-in-teams-general.md#allow-the-outlook-add-in)controlla se un utente può pianificare una riunione privata da Outlook. Una riunione è privata quando non viene pubblicata in un canale in un team.
-- [Consenti riunione ora in riunioni private:](meeting-policies-in-teams-general.md#allow-meet-now-in-private-meetings)controlla se un utente può avviare una riunione privata esemptuosa.
+- [Riunione nei canali:](meeting-policies-in-teams-general.md#meet-now-in-channels)controlla se un utente può avviare una riunione esemptuosa in un canale.
+- [Pianificazione delle riunioni del canale:](meeting-policies-in-teams-general.md#channel-meeting-scheduling)controlla se un utente può pianificare una riunione in un canale.
+- [Pianificazione di riunioni private:](meeting-policies-in-teams-general.md#private-meeting-scheduling)controlla se un utente può pianificare una riunione privata in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
+- [Outlook aggiungi in:](meeting-policies-in-teams-general.md#outlook-add-in)controlla se un utente può pianificare una riunione privata da Outlook. Una riunione è privata quando non viene pubblicata in un canale in un team.
+- [Riunione ora in riunioni private:](meeting-policies-in-teams-general.md#meet-now-in-private-meetings)controlla se un utente può avviare una riunione privata esemptuosa.
 
 Per impostazione predefinita, queste impostazioni sono disponibili. Quando una di queste impostazioni è disattivata, qualsiasi utente a cui è assegnato il criterio non può avviare o pianificare nuove riunioni di quel tipo. Allo stesso tempo, i collegamenti di partecipazione alla riunione e gli ID conferenza di tutte le riunioni esistenti di quel tipo che l'utente ha avviato o pianificato in precedenza scadono.
 
@@ -62,10 +62,10 @@ Ecco un riepilogo del funzionamento della scadenza della riunione per ognuna del
 
 |Se si vuole...&nbsp;&nbsp; |Eseguire questa operazione&nbsp;&nbsp;&nbsp;&nbsp;  |Comportamento di partecipazione alla riunione&nbsp;&nbsp;&nbsp;&nbsp;  |
 |---------------------------|---------------------|---------|
-|Scadenza riunione privata ora riunioni avviate da un utente&nbsp;&nbsp;|Disattivare **Consenti riunione ora nelle riunioni private.**&nbsp;&nbsp;|Nessuno può partecipare alle riunioni **private di Meet now** avviate dall'utente.|
-|Scadere le riunioni private pianificate da un utente&nbsp;&nbsp;|Disattivare **Consenti pianificazione riunioni private** _e_ Consenti Outlook componente **aggiuntivo**. &nbsp;&nbsp;|Nessuno può partecipare a riunioni private pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare alle riunioni seguenti:<ul><li>Riunioni private avvenute in passato.</li><li>Riunioni private pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni private ricorrenti.</li></ul><br>Sia **Consenti pianificazione riunioni private** che **Consenti** Outlook componente aggiuntivo deve essere disattivato per scadere le riunioni private pianificate da un utente. Se un'impostazione è disattivata e l'altra è attivata, i collegamenti e gli ID conferenza delle riunioni esistenti rimangono attivi e non saranno scaduti.|
-|Scadenza del canale **Riunione ora riunioni** avviate da un utente&nbsp;&nbsp;|Disattiva **Consenti riunione ora nei canali e** _disattiva_ Consenti pianificazione delle riunioni **dei canali.**&nbsp;&nbsp;|Nessuno può partecipare al canale **Riunione ora** le riunioni avviate dall'utente.|
-|Scadere le riunioni del canale pianificate da un utente&nbsp;&nbsp;|Disattivare **Consenti pianificazione delle riunioni del canale**.&nbsp;&nbsp;|Nessuno può partecipare alle riunioni del canale pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare alle riunioni seguenti:<ul><li>Riunioni del canale avvenute in passato.</li><li>Riunioni del canale pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni di canale ricorrenti.</li></ul>|
+|Scadenza riunione privata ora riunioni avviate da un utente&nbsp;&nbsp;|Disattivare **Riunione ora in riunioni private.**&nbsp;&nbsp;|Nessuno può partecipare alle riunioni **private di Meet now** avviate dall'utente.|
+|Scadere le riunioni private pianificate da un utente&nbsp;&nbsp;|Disattivare **la pianificazione delle riunioni private** _e_ disattivare Outlook **componente aggiuntivo**. &nbsp;&nbsp;|Nessuno può partecipare a riunioni private pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare alle riunioni seguenti:<ul><li>Riunioni private avvenute in passato.</li><li>Riunioni private pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni private ricorrenti.</li></ul><br>La **pianificazione delle riunioni private** e Outlook **componente** aggiuntivo deve essere disattivata per scadere le riunioni private pianificate da un utente. Se un'impostazione è disattivata e l'altra è attivata, i collegamenti e gli ID conferenza delle riunioni esistenti rimangono attivi e non saranno scaduti.|
+|Scadenza del canale **Riunione ora riunioni** avviate da un utente&nbsp;&nbsp;|Disattiva **Riunione ora nei canali e** _disattiva_ La pianificazione delle riunioni **del Canale.**&nbsp;&nbsp;|Nessuno può partecipare al canale **Riunione ora** le riunioni avviate dall'utente.|
+|Scadere le riunioni del canale pianificate da un utente&nbsp;&nbsp;|Disattivare **la pianificazione delle riunioni del Canale**.&nbsp;&nbsp;|Nessuno può partecipare alle riunioni del canale pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare alle riunioni seguenti:<ul><li>Riunioni del canale avvenute in passato.</li><li>Riunioni del canale pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni di canale ricorrenti.</li></ul>|
 
 Se si vuole che gli utenti accertano le riunioni pianificate o avviate in precedenza da un determinato utente, è possibile:
 
@@ -77,23 +77,23 @@ Se si vuole che gli utenti accertano le riunioni pianificate o avviate in preced
 
 ## <a name="changes-to-meeting-expiration"></a>Modifiche alla scadenza della riunione
 
-Tutte le registrazioni Teams riunione appena create avranno una scadenza predefinita di 60 giorni. Questa opzione è disponibile per impostazione predefinita per tutti i tenant. Questo significa che, per impostazione predefinita, tutti i TMR creati dopo l'accosto di questa *caratteristica* verranno eliminati 60 giorni dopo la data di creazione. Gli amministratori possono anche impostare le riunioni in modo che **non scadano mai automaticamente.** Il OneDrive e SharePoint monitorerà la data di scadenza impostata in tutti i TMR e sposterà automaticamente i TMR nel Cestino alla data di scadenza.
+Tutte le registrazioni Teams riunione create di recente avranno una scadenza predefinita di 60 giorni. Questa opzione è disponibile per impostazione predefinita per tutti i tenant. Questo significa che, per impostazione predefinita, tutti i TMR creati dopo l'accosto di questa *caratteristica* verranno eliminati 60 giorni dopo la data di creazione. Gli amministratori possono anche impostare le riunioni in modo che **non scadano mai automaticamente.** Il sistema OneDrive e SharePoint monitorerà la data di scadenza impostata in tutti i TMR e sposterà automaticamente i TMR nel Cestino alla data di scadenza.
 
 La scadenza automatica delle riunioni è un meccanismo di pulizia leggero per ridurre i disordini di archiviazione creati da TMR meno recenti. In media, in tutti i clienti, il 99% dei TMR non viene osservato dopo 60 giorni. Riteniamo che quasi tutti i clienti trarranno vantaggio dal carico di archiviazione ridotto nel tenant rimuovendo le registrazioni che probabilmente non verranno più visualizzate dopo 60 giorni. Il nostro obiettivo è offrire un'esperienza il più pulita possibile a tutti i clienti per impostazione predefinita.
 
-Usare la scadenza della riunione per limitare OneDrive o SharePoint per il consumo di spazio di archiviazione nel cloud basato sui record Teams riunione. Una tipica registrazione della riunione consuma circa 400 MB all'ora di registrazione.
+Usare la scadenza della riunione per limitare OneDrive o SharePoint consumo di spazio di archiviazione nel cloud basato sui record Teams riunione. Una tipica registrazione della riunione consuma circa 400 MB all'ora di registrazione.
 
 > [!NOTE]
 > La data di scadenza predefinita massima per gli utenti di A1 è 30 giorni.
 
 ### <a name="expiration-date"></a>Data di scadenza
 
-- La data di scadenza viene calcolata come giorno di creazione più il numero predefinito di giorni impostato nei criteri di Teams **dall'amministratore.** 
+- La data di scadenza viene calcolata come giorno di creazione più il numero predefinito di giorni impostato nel criterio di Teams **dall'amministratore.** 
 - La riproduzione non influisce sulla data di scadenza.
 
 ### <a name="change-the-default-expiration-date"></a>Modificare la data di scadenza predefinita
 
-Gli amministratori possono modificare l'impostazione di scadenza predefinita in PowerShell o nell Teams di amministrazione. Tutte le modifiche avranno effetto solo *sui TMR* appena creati da quel punto in poi. Non influisce sulle registrazioni create prima di tale data. Gli amministratori non possono modificare la data di scadenza nei TMR esistenti. Questa operazione viene eseguita per proteggere la decisione dell'utente proprietario del TMR. Sia le riunioni che le chiamate possono essere controllate da questa impostazione.
+Gli amministratori possono modificare l'impostazione di scadenza predefinita in PowerShell o nell'Teams di amministrazione. Tutte le modifiche avranno effetto solo *sui TMR* appena creati da quel punto in poi. Non influisce sulle registrazioni create prima di tale data. Gli amministratori non possono modificare la data di scadenza nei TMR esistenti. Questa operazione viene eseguita per proteggere la decisione dell'utente proprietario del TMR. Sia le riunioni che le chiamate possono essere controllate da questa impostazione.
 
 Il valore della data di scadenza può essere impostato nel modo seguente:
 
@@ -147,7 +147,7 @@ No, le registrazioni migrate non avranno una scadenza. Al contrario, si consigli
 
 ### <a name="how-is-this-feature-different-from-the-expiration-message-i-see-when-a-tmr-upload-to-onedrive-and-sharepoint-fails"></a>In che modo questa funzionalità è diversa dal messaggio di scadenza visualizzato quando un caricamento TMR in OneDrive e SharePoint non riesce?
 
-Quando una registrazione non viene caricata in OneDrive o SharePoint, l'applicazione Teams visualizza nella chat un messaggio che indica che gli utenti hanno fino a 21 giorni per scaricare il TMR prima che venga eliminata definitivamente dal server Teams. Questa esperienza di scadenza esistente a causa di caricamenti TMR non riusciti non è correlata alla funzionalità di OneDrive e SharePoint di scadenza automatica discussa nel documento della Guida.
+Quando una registrazione non viene caricata in OneDrive o SharePoint, l'applicazione Teams visualizza nella chat un messaggio che indica che gli utenti hanno fino a 21 giorni per scaricare il TMR prima che venga eliminato definitivamente dal server Teams. Questa esperienza di scadenza esistente a causa di caricamenti TMR non riusciti non è correlata alla funzionalità di OneDrive e SharePoint di scadenza automatica discussa nel documento della Guida.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.audioandvideo
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per audio e video.
-ms.openlocfilehash: 27153896065d3358927755d3cd1b303c2b1141a0
-ms.sourcegitcommit: ab9d27d7ddd1494539ae9424de200c9d0e76a9ec
+ms.openlocfilehash: 9cd2a82c87106e8060d168766915e4249b9193a5
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2021
-ms.locfileid: "59984621"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61177997"
 ---
 # <a name="meeting-policy-settings-for-audio--video"></a>Impostazioni dei criteri per le riunioni per & video
 
@@ -35,7 +35,7 @@ Questo articolo descrive le impostazioni dei criteri di riunione specifiche per 
 
 - [Modalità per audio IP](#mode-for-ip-audio)
 - [Modalità per video IP](#mode-for-ip-video)
-- [Consenti video IP](#allow-ip-video)
+- [Video IP](#ip-video)
 - [Velocità in bit supporto (Kbs)](#media-bit-rate-kbs)
 - [Modalità filtri video](#video-filters-mode)
 - [Consenti impostazioni di sfondo personalizzate](#allow-custom-background-settings)
@@ -73,11 +73,11 @@ Questa impostazione non si applica ai dispositivi delle sale riunioni come i dis
 Questa impostazione non è ancora disponibile per gli ambienti Microsoft 365 Government Community Cloud (GCC), GCC High o Department of Defense (DoD).
 
 > [!NOTE]
-> Questa impostazione controlla il video in uscita e in arrivo, mentre l'impostazione **Consenti video IP** controlla solo il video in uscita. Per altre informazioni, vedere [Quale impostazione dei criteri per video IP ha la precedenza?](#which-ip-video-policy-setting-takes-precedence) e [Gestire audio/video per i partecipanti alle riunioni](#manage-audiovideo-for-meeting-participants).
+> Tenere presente che questa impostazione controlla sia il video in uscita che quello in arrivo, mentre l'impostazione **video IP** controlla il video in uscita. Per altre informazioni, vedere [Quale impostazione dei criteri per video IP ha la precedenza?](#which-ip-video-policy-setting-takes-precedence) e [Gestire audio/video per i partecipanti alle riunioni](#manage-audiovideo-for-meeting-participants).
 
 Per altre informazioni, vedere [Gestire audio/video per i partecipanti alle riunioni](#manage-audiovideo-for-meeting-participants).
 
-### <a name="allow-ip-video"></a>Consenti video IP
+### <a name="ip-video"></a>Video IP
 
 Questa è una combinazione di criterio per organizzatore e criterio per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni, gli amministratori possono volere un maggiore controllo sugli utenti che possono usare il video nelle riunioni. Questa impostazione controlla se è possibile attivare il video nelle riunioni ospitate da un utente e nelle chiamate tra due persone e di gruppo avviate da un utente. Nei Teams per dispositivi mobili, questa impostazione controlla se gli utenti possono condividere foto e video in una riunione.
 
@@ -92,7 +92,7 @@ Le riunioni organizzate da un utente che ha questa impostazione di criteri abili
 
 Osserviamo l'esempio seguente.
 
-|Utente |Criterio di riunione  |Consenti video IP |
+|Utente |Criterio di riunione  |Video IP |
 |---------|---------|---------|
 |Daniela   | Globale   | Attivato       |
 |Amanda    | CriterioRiunionePosizione1        | Disattivato      |
@@ -109,22 +109,22 @@ Per altre informazioni, vedere [Gestire audio/video per i partecipanti alle riun
 
 Per un utente, l'impostazione di criteri più restrittiva per il video ha la precedenza. Ecco alcuni esempi.
 
-|Consenti video IP|Modalità per video IP|Esperienza di riunione|
+|Video IP|Modalità per video IP|Esperienza di riunione|
 |---------|---------|---------|
 |Organizzatore: **Attivato**<br><br>Partecipante: **Attivato** |Partecipante: **Disabilitato**        |L'impostazione **Modalità per video IP** ha la precedenza. Il partecipante al quale è assegnato questo criterio non può attivare o visualizzare i video condivisi dagli altri.|
 |Organizzatore: **Attivato**<br><br>Partecipante: **Attivato** |Partecipante: **Video in uscita e in arrivo abilitato**          |Il partecipante al quale è assegnato questo criterio può attivare o visualizzare i video condivisi dagli altri.         |
-|Organizzatore: **Attivato**<br><br>Partecipante: **Disattivato** |Partecipante: **Video in uscita e in arrivo abilitato**         |L'impostazione **Consenti video IP** ha la precedenza. I partecipanti possono solo visualizzare video in arrivo e non inviare video in uscita.         |
+|Organizzatore: **Attivato**<br><br>Partecipante: **Disattivato** |Partecipante: **Video in uscita e in arrivo abilitato**         |**L'impostazione video IP** ha la precedenza. I partecipanti possono solo visualizzare video in arrivo e non inviare video in uscita.         |
 |Organizzatore: **Attivato**<br><br>Partecipante: **Disattivato** |Partecipante: **Disabilitato**         |L'impostazione **Modalità per video IP** ha la precedenza. Il partecipante non può visualizzare il video in arrivo o in uscita.|
-|Organizzatore: **Disattivato**    |       |L'opzione **Consenti video IP** ha la precedenza poiché è disattivata per l'organizzatore. Nessuno può attivare il video nelle riunioni organizzate dall'utente a cui è assegnato questo criterio.         |
+|Organizzatore: **Disattivato**    |       |**L'impostazione video IP** ha la precedenza perché è disattivata per l'organizzatore. Nessuno può attivare il video nelle riunioni organizzate dall'utente a cui è assegnato questo criterio.         |
 
 ### <a name="manage-audiovideo-for-meeting-participants"></a>Gestire audio/video per i partecipanti alle riunioni
 
 |Per:  |Impostare le impostazioni di criteri seguenti  |
 |---------|---------|
-|Disabilitare audio e video per i partecipanti nelle riunioni  |Modalità per audio IP: **Disabilitata**<br> Modalità per video IP: **Disabilitato**<br>Consenti video IP: N/D       |
-|Abilitare solo video e audio in arrivo per i partecipanti nelle riunioni  |Modalità per audio IP: **Audio in uscita e in arrivo abilitato**<br> Modalità per video IP: **Video in uscita e in arrivo abilitato**<br>Consenti video IP: **Disattivato**       |
-|Disabilitare video per i partecipanti nelle riunioni (i partecipanti hanno solo audio)|  Modalità per audio IP: **Abilita audio in uscita e in arrivo**<br> Modalità per video IP: **Disabilitato**<br>Consenti video IP: N/D
-|Abilitare audio e video per i partecipanti nelle riunioni    |Modalità per audio IP: **Audio in uscita e in arrivo abilitato** (impostazione predefinita)<br> Modalità per video IP: **Video in uscita e in arrivo abilitato** (impostazione predefinita)<br>Consenti video IP: **Attivata** (impostazione predefinita)    |
+|Disabilitare audio e video per i partecipanti nelle riunioni  |Modalità per audio IP: **Disabilitata**<br> Modalità per video IP: **Disabilitato**<br>Video IP: N/D       |
+|Abilitare solo video e audio in arrivo per i partecipanti nelle riunioni  |Modalità per audio IP: **Audio in uscita e in arrivo abilitato**<br> Modalità per video IP: **Video in uscita e in arrivo abilitato**<br>Video IP: **Disattivato**       |
+|Disabilitare video per i partecipanti nelle riunioni (i partecipanti hanno solo audio)|  Modalità per audio IP: **Abilita audio in uscita e in arrivo**<br> Modalità per video IP: **Disabilitato**<br>Video IP: N/D
+|Abilitare audio e video per i partecipanti nelle riunioni    |Modalità per audio IP: **Audio in uscita e in arrivo abilitato** (impostazione predefinita)<br> Modalità per video IP: **Video in uscita e in arrivo abilitato** (impostazione predefinita)<br>Video IP: **On** (impostazione predefinita)    |
 
 Vengono applicati i criteri più restrittivi tra i criteri dell'organizzatore della riunione e i criteri dell'utente. Ad esempio, se un organizzatore ha un criterio che limita il video e un criterio di un utente non limita il video, i partecipanti alla riunione ereditano il criterio dell'organizzatore della riunione e non hanno accesso al video nelle riunioni. Ciò significa che possono partecipare alla riunione solo con l'audio.
 
@@ -133,7 +133,7 @@ Vengono applicati i criteri più restrittivi tra i criteri dell'organizzatore de
 
 #### <a name="teams-mobile-clients"></a>Client Teams per dispositivi mobili
 
-Per gli utenti di client Teams per dispositivi mobili, la possibilità di condividere foto e video durante una riunione dipende anche dall'impostazione **Consenti video IP** o **Modalità video IP**. A seconda dell'impostazione di criteri che ha la precedenza, la possibilità di condividere video e foto non sarà disponibile. Questa impostazione non interessa la condivisione dello schermo, che si configura usando un'impostazione [Modalità di condivisione dello schermo](meeting-policies-content-sharing.md#screen-sharing-mode) separata. Inoltre, è possibile impostare un [criterio per dispositivi mobili di Teams](/powershell/module/skype/new-csteamsmobilitypolicy) per impedire agli utenti di dispositivi mobili di usare il video IP tramite una rete cellulare, il che significa che devono usare una connessione WiFi.
+Per gli utenti Teams client mobili, la possibilità di condividere foto e video durante una riunione è determinata anche dall'impostazione della modalità **video IP** o **video IP.** A seconda dell'impostazione di criteri che ha la precedenza, la possibilità di condividere video e foto non sarà disponibile. Questa impostazione non interessa la condivisione dello schermo, che si configura usando un'impostazione [Modalità di condivisione dello schermo](meeting-policies-content-sharing.md#screen-sharing-mode) separata. Inoltre, è possibile impostare un [criterio per dispositivi mobili di Teams](/powershell/module/skype/new-csteamsmobilitypolicy) per impedire agli utenti di dispositivi mobili di usare il video IP tramite una rete cellulare, il che significa che devono usare una connessione WiFi.
 
 ### <a name="media-bit-rate-kbs"></a>Velocità in bit supporto (KB)
 
@@ -153,7 +153,7 @@ Questo è un criterio per utente. Questa impostazione controlla se gli utenti po
 
 Per specificare se gli utenti possono personalizzare lo sfondo del video in una riunione, impostare il parametro **VideoFiltersMode** (impostazione Seleziona filtri **video** nell'interfaccia di amministrazione di Teams) come segue:
 
-|Valore dell'impostazione in PowerShell|Impostazione del valore nell'Teams di amministrazione |Comportamento  |
+|Valore dell'impostazione in PowerShell|Impostazione del valore nell Teams di amministrazione |Comportamento  |
 |---------|---------|---------|
 |**NoFilters** |**Nessun filtro**    |Un utente non può personalizzare lo sfondo del video.|
 |**BlurOnly**     |**Solo sfocatura dello sfondo**|Gli utenti hanno la possibilità di sfocare lo sfondo del video. |
@@ -165,7 +165,7 @@ Per specificare se gli utenti possono personalizzare lo sfondo del video in una 
 
 ### <a name="allow-custom-background-settings"></a>Consenti impostazioni di sfondo personalizzate
 
-È possibile aggiungere immagini di sfondo personalizzate da usare per ogni tenant. Questa caratteristica consente alle aziende di applicare il marchio aziendale Teams riunioni.
+È possibile aggiungere immagini di sfondo personalizzate da usare per ogni tenant. Questa funzionalità consente alle aziende di applicare il marchio aziendale Teams riunioni.
 
 1. Passare all'interfaccia di amministrazione di Teams.
 

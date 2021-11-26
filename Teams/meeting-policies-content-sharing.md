@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.contentsharing
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per la condivisione del contenuto.
-ms.openlocfilehash: 2bd3a4274a147cad8548d0abf84a312ee7f6f259
-ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
+ms.openlocfilehash: 6c713800aa0f95c7adfd6655455e6ff332f91595
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "60605622"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61205316"
 ---
 # <a name="meeting-policy-settings---content-sharing"></a>Impostazioni dei criteri di riunione - Condivisione di contenuti
 
@@ -35,9 +35,9 @@ Questo articolo descrive le impostazioni dei criteri di riunione seguenti relati
 - [Modalità condivisione schermo](#screen-sharing-mode)
 - [Consenti a un partecipante di fornire o richiedere il controllo](#allow-a-participant-to-give-or-request-control)
 - [Consenti a un partecipante esterno di fornire o richiedere il controllo](#allow-an-external-participant-to-give-or-request-control)
-- [Consenti la condivisione di PowerPoint](#allow-powerpoint-sharing)
-- [Consenti la lavagna](#allow-whiteboard)
-- [Consenti note condivise](#allow-shared-notes)
+- [PowerPoint condivisione](#powerpoint-sharing)
+- [Whiteboard](#whiteboard)
+- [Note condivise](#shared-notes)
 
 ## <a name="screen-sharing-mode"></a>Modalità condivisione schermo
 
@@ -99,39 +99,39 @@ La possibilità per gli utenti federati di concedere il controllo a utenti ester
 
 Per usare PowerShell per controllare i partecipanti esterni autorizzati a concedere il controllo o accettare richieste di controllo, usare il cmdlet AllowExternalParticipantGiveRequestControl.
 
-### <a name="allow-powerpoint-sharing"></a>Consenti la condivisione di PowerPoint
+### <a name="powerpoint-sharing"></a>PowerPoint condivisione
 
 Questo è un criterio per utente. Questa impostazione controlla se l'utente può condividere le presentazioni di PowerPoint in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, guest e federati, ereditano i criteri dell'organizzatore della riunione.
 
 Osserviamo l'esempio seguente.
 
-|Utente |Criterio di riunione  |Consenti la condivisione di PowerPoint |
+|Utente |Criterio di riunione  |PowerPoint condivisione |
 |---------|---------|---------|
 |Daniela   | Globale   | Attivato       |
 |Amanda   | CriterioRiunionePosizione1        | Disattivato   |
 
 Amanda non può condividere le presentazioni di PowerPoint nelle riunioni, anche se è l'organizzatrice della riunione. Daniela può condividere le presentazioni di PowerPoint anche se la riunione è organizzata da Amanda. Amanda può visualizzare le presentazioni di PowerPoint condivise da altri nella riunione, anche se non può condividere presentazioni di PowerPoint.
 
-## <a name="allow-whiteboard"></a>Consenti la lavagna
+## <a name="whiteboard"></a>Whiteboard
 
 Questa impostazione è un criterio per utente. Questa impostazione controlla se un utente può condividere la lavagna in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, B2B e federati, ereditano i criteri dell'organizzatore della riunione.
 
 Osserviamo l'esempio seguente.
 
-|Utente |Criterio di riunione  |Consenti la lavagna|
+|Utente |Criterio di riunione  |Whiteboard|
 |---------|---------|---------|
 |Daniela   | Globale   | Attivato       |
 |Amanda   | CriterioRiunionePosizione1        | Disattivato   |
 
 Amanda non può condividere la lavagna in una riunione, anche se è l'organizzatrice della riunione. Daniela può condividere la lavagna anche se una riunione è organizzata da Amanda.  
 
-## <a name="allow-shared-notes"></a>Consenti note condivise
+## <a name="shared-notes"></a>Note condivise
 
 Questa impostazione è un criterio per utente. Questa impostazione controlla se un utente può creare e condividere note in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, B2B e federati, ereditano i criteri dell'organizzatore della riunione. La scheda **Note riunione** è attualmente supportata solo nelle riunioni con meno di 20 partecipanti.
 
 Osserviamo l'esempio seguente.
 
-|Utente |Criterio di riunione  |Consenti note condivise |
+|Utente |Criterio di riunione  |Note condivise |
 |---------|---------|---------|
 |Daniela   | Globale   | Attivato       |
 |Amanda   | CriterioRiunionePosizione1 | Disattivato |

@@ -20,12 +20,12 @@ description: Configurare gli eventi live in Teams, tra cui configurare la rete, 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4d9e21872adb0fb0e34280d29fe928ea3ac056da
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: 5911ee829284917e5d16a6e254004ad7c49f8660
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60046192"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61205446"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi live in Microsoft Teams
 
@@ -50,7 +50,7 @@ I criteri per gli eventi live consentono di controllare chi nell'organizzazione 
 
 <a name="bkcreatepolicy"> </a>
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare **alla** scheda Criteri gestione eventi  >  **live**  >   riunioni.
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare alla **scheda** Criteri gestione eventi  >  **live**  >   riunioni.
 2. Eseguire una delle opzioni seguenti:
 
     - Se si vuole modificare il criterio predefinito esistente, scegliere **Globale (predefinito a livello di organizzazione)**.
@@ -65,8 +65,8 @@ I criteri per gli eventi live consentono di controllare chi nell'organizzazione 
 |---------|---------|
 |**Titolo**     |Questo è il titolo del criterio che viene visualizzato nella pagina dei criteri per gli eventi live. Non può contenere caratteri speciali o più di 64 caratteri.          |
 |**Descrizione**    |Inserire una descrizione di facile comprensione del criterio.         |
-|**Consenti la pianificazione**     |Se si attiva questa impostazione, gli utenti dell'organizzazione possono creare e pianificare eventi live in Team. È importante sapere che, se si vuole che gli utenti possano pianificare un evento live prodotto con un'app o un dispositivo esterno, è necessario eseguire altre operazioni. Per altre informazioni, vedere [Consentire agli utenti di pianificare eventi prodotti con un'app o un dispositivo esterno](#enable-users-to-schedule-events-that-were-produced-with-an-external-app-or-device).     |
-|**Consenti trascrizione per i partecipanti** |Questa impostazione può essere applicata solo agli eventi prodotti in Teams. Attivandola, i partecipanti potranno visualizzare didascalie e sottotitoli in tempo reale durante l'evento live.         |
+|**Pianificazione di eventi live**     |Se si attiva questa impostazione, gli utenti dell'organizzazione possono creare e pianificare eventi live in Team. È importante sapere che, se si vuole che gli utenti possano pianificare un evento live prodotto con un'app o un dispositivo esterno, è necessario eseguire altre operazioni. Per altre informazioni, vedere [Consentire agli utenti di pianificare eventi prodotti con un'app o un dispositivo esterno](#enable-users-to-schedule-events-that-were-produced-with-an-external-app-or-device).     |
+|**Trascrizione per i partecipanti** |Questa impostazione può essere applicata solo agli eventi prodotti in Teams. Attivandola, i partecipanti potranno visualizzare didascalie e sottotitoli in tempo reale durante l'evento live.         |
 |**Chi può aggiungere eventi live pianificati**    |Scegliere una delle opzioni seguenti.<br><br>**Tutti** Gli utenti possono creare eventi live a cui può partecipare chiunque, incluse persone esterne all'organizzazione. Questa impostazione abilita il tipo di autorizzazione **Pubblico** in Teams quando un utente pianifica un evento live.<br> **Tutti gli utenti dell'organizzazione** Gli utenti possono creare eventi live a cui possono partecipare le persone dell'organizzazione, compresi gli [utenti guest](../add-guests.md) aggiunti all'organizzazione. Gli utenti non possono creare eventi live aperti agli utenti anonimi. Questa impostazione abilita il tipo di autorizzazione **A livello di organizzazione** in Teams quando un utente pianifica un evento live.<br> **Utenti o gruppi specifici** Gli utenti possono creare eventi live a cui possono partecipare solo utenti o gruppi specifici dell'organizzazione. Gli utenti non possono creare eventi live aperti a tutte le persone dell'organizzazione o a utenti anonimi. Questa impostazione abilita il tipo di autorizzazione **Persone e gruppi** in Teams quando un utente pianifica un evento live.       |
 |**Impostazione della registrazione**  <br>     | Questa impostazione può essere applicata solo agli eventi prodotti in Teams. Scegliere una delle opzioni seguenti. <br><br> **Registra sempre** Gli eventi live creati dagli utenti vengono sempre registrati. Una volta terminato l'evento, i membri del team dell'evento possono scaricare la registrazione e i partecipanti possono guardare l'evento. <br> **Non registrare mai** Gli eventi live creati dagli utenti non vengono mai registrati. <br>**L'organizzatore può registrare o meno** Gli utenti possono decidere se registrare l'evento live. Se viene registrato, i membri del team dell'evento possono scaricare la registrazione e i partecipanti possono guardare l'evento.
 
@@ -103,7 +103,7 @@ Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate pe
 
 - **Ramp OmniCache** offre distribuzione in rete di nuova generazione e assicura la trasmissione ininterrotta di contenuti video nelle WAN globali, aiutando i produttori di eventi a ottimizzare la larghezza di banda della rete e supportare lo streaming di eventi live e on demand. Il supporto di Ramp OmniCache per gli eventi live prodotti in Teams sarà disponibile a breve. [Altre informazioni](https://rampecdn.com).
 
-- **Riverbed,** lo standard di settore nell'ottimizzazione della rete, estende le soluzioni di accelerazione a Microsoft Teams e Stream.  Ora Microsoft 365 clienti possono accelerare con sicurezza il traffico a 365, tra cui Teams e Stream, insieme ad altri servizi SaaS aziendali leader per aumentare la produttività della forza lavoro ovunque ci si trovi. Teams e l'accelerazione stream possono essere abilitate con una configurazione senza sforzo che include tutta la garanzia del supporto di livello mondiale di Riverbed e degli investimenti in corso.
+- **Riverbed,** lo standard di settore nell'ottimizzazione della rete, estende le soluzioni di accelerazione a Microsoft Teams e Stream.  Ora Microsoft 365 clienti possono accelerare in tutta sicurezza il traffico a 365, tra cui Teams e Stream, insieme a una grande quantità di altri servizi SaaS aziendali leader per aumentare la produttività della forza lavoro ovunque ci si trovi. Teams e l'accelerazione stream possono essere abilitate con una configurazione senza sforzo, fornita con tutta la garanzia del supporto di livello mondiale di Riverbed e degli investimenti in corso.
 
 > [!NOTE]
 > La soluzione SDN o eCDN scelta è soggetta ai **termini di servizio e all'informativa sulla privacy del provider di terze parti scelto**, che disciplineranno l'uso della soluzione del provider. L'uso della soluzione del provider non sarà soggetto alle condizioni dei servizi online o dei contratti multilicenza Microsoft. Se non accettano i **termini del provider di terze parti** la soluzione non verrà abilitata in Teams.
