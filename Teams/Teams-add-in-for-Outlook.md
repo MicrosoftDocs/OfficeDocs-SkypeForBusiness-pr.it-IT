@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 38787b6f3fe11c1dfd8a9883f06bf19206360ec6
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: fc7a387f7dcd6ef8a3ed728b8aa59db64ccefb31
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60840898"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61205526"
 ---
 # <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 
@@ -131,6 +131,9 @@ Altre informazioni su [riunioni e chiamate in Microsoft Teams](https://support.o
 
 Usare i seguenti passaggi per risolvere i problemi con il componente aggiuntivo Riunione di Teams.
 
+> [!NOTE]
+> Questo scenario può essere gestito anche usando la [versione da riga di comando di Assistente supporto e ripristino di Microsoft](/office365/troubleshoot/administration/sara-command-line-version) con SaRAcmd.exe -S TeamsAddinScenario -AcceptEula -CloseOutlook.
+
 ### <a name="teams-meeting-add-in-in-outlook-for-windows-does-not-show"></a>Il componente aggiuntivo Riunione di Teams in Outlook per Windows non viene visualizzato
 
 Se non si riesce a trovare il componente aggiuntivo Riunione di Teams per Outlook per l'installazione, provare a eseguire questa procedura di risoluzione dei problemi.
@@ -141,7 +144,7 @@ In alternativa, eseguire manualmente i seguenti passaggi:
 
 - Gli utenti di Windows 7 sono tenuti a installare l'[aggiornamento per Universal C Runtime in Windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows) affinché funzioni il componente aggiuntivo Riunione di Teams.
 - Controllare che l'utente disponga di un criterio di aggiornamento di Teams che abiliti la programmazione delle riunioni in Teams. Vedere [Aggiornare da Skype for Business a Teams](/microsoftteams/upgrade-to-teams-on-prem-overview#meetings) per ulteriori informazioni.
-- Controllare che l'utente disponga di un criterio di Riunione di Teams che consenta il componente aggiuntivo per Outlook. Per altri dettagli, vedere [Impostazioni dei criteri di riunione - Generale](./meeting-policies-in-teams-general.md#allow-the-outlook-add-in).
+- Controllare che l'utente disponga di un criterio di Riunione di Teams che consenta il componente aggiuntivo per Outlook. Per altri dettagli, vedere [Impostazioni dei criteri di riunione - Generale](./meeting-policies-in-teams-general.md#outlook-add-in).
 - Assicurarsi che l'utente abbia installato il client desktop di Teams. Il componente aggiuntivo per le riunioni non verrà installato se si utilizza solo il client Web di Teams.
 - Assicurarsi che l'utente abbia installato Outlook 2013 o versioni successive.
 - Assicurarsi che l'utente disponga delle autorizzazione per eseguire regsvr32.exe.

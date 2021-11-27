@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a4008aa9f69f525e3fbbeb6fd7596822d7ac9be8
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: 37d7c3999986373e7ad72176cfc0182f09144e3a
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60536897"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61205416"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -79,7 +79,7 @@ In questa sezione viene descritto come configurare e pianificare la registrazion
 
 È possibile usare l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare un criterio per le riunioni di Teams con cui controllare se le riunioni degli utenti possono essere registrate.
 
-Nell'interfaccia di amministrazione di Microsoft Teams attivare o disattivare l'impostazione **Consenti registrazione cloud** nel criterio di riunione. Per altre informazioni, vedere [Impostazioni dei criteri di riunioni per audio e video](meetings-policies-recording-and-transcription.md#allow-cloud-recording).
+Nell'interfaccia di amministrazione di Microsoft Teams, attivare o disattivare l'impostazione **Registrazione cloud** nei criteri della riunione. Per altre informazioni, vedere [Impostazioni dei criteri di riunioni per audio e video](meetings-policies-recording-and-transcription.md#allow-cloud-recording).
 
 Con PowerShell, configurare l'opzione AllowCloudRecording in TeamsMeetingPolicy. Per altre informazioni, vedere [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) and [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy).
 
@@ -431,7 +431,7 @@ Per altre informazioni su eDiscovery, vedere l'articolo [Soluzioni di eDiscovery
 
 ### <a name="retention-policies"></a>Criteri di conservazione
 
-È possibile applicare etichette di conservazione automatica solo ai file video di registrazione delle riunioni di Teams tramite la proprietà ProgID. Per altre informazioni, vedere [Come applicare automaticamente un'etichetta di conservazione per le registrazioni delle riunioni di Teams](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-worldwide#microsoft-teams-meeting-recordings).
+È possibile applicare etichette di conservazione automatica solo ai file video di registrazione delle riunioni di Teams tramite la proprietà ProgID. Per altre informazioni, vedere [Come applicare automaticamente un'etichetta di conservazione per le registrazioni delle riunioni di Teams](/microsoft-365/compliance/apply-retention-labels-automatically#microsoft-teams-meeting-recordings).
 
 ### <a name="data-loss-prevention-dlp-policies"></a>Criteri di prevenzione della perdita dei dati (DLP)
 

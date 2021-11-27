@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: a4a2eea55336639925d8c07c00ded4057456e1ff
-ms.sourcegitcommit: 95c7603b47fcd5fba8f762a4590693ee9f026328
+ms.openlocfilehash: 4ff1118818ac22040e9bf9f8c44288991e24d8b0
+ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61153309"
+ms.lasthandoff: 11/25/2021
+ms.locfileid: "61205306"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -59,7 +59,7 @@ Per apportare tali modifiche, è necessario essere un amministratore di Teams. V
 
 ### <a name="using-powershell-to-configure-per-organizer-policy"></a>Uso di PowerShell per configurare i criteri per organizzatore
 
-Gli amministratori possono ora controllare se utenti o gruppi di utenti specifici possono consentire agli utenti anonimi di partecipare alle riunioni che organizzano. Questo nuovo criterio per organizzatore viene controllato usando il parametro **-AllowAnonymousUsersToJoinMeeting** in [Set-CsTeamsMeetingPolicy.](/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) Viene fornito con Teams PowerShell versione 2.6.0 e successive.
+Gli amministratori possono ora controllare se utenti o gruppi di utenti specifici possono consentire agli utenti anonimi di partecipare alle riunioni che organizzano. Questo nuovo criterio per organizzatore viene controllato usando il parametro **-AllowAnonymousUsersToJoinMeeting** in [Set-CsTeamsMeetingPolicy.](/powershell/module/skype/set-csteamsmeetingpolicy) Viene fornito con Teams PowerShell versione 2.6.0 e successive.
 
 È possibile usare criteri, a livello di organizzazione o per organizzatore, per gestire l'accesso anonimo. È consigliabile implementare i criteri per organizzatore. L'impostazione dei criteri a livello di organizzazione verrà deprecata in futuro e i criteri per organizzatore saranno l'unico modo per controllare l'accesso anonimo.
 
@@ -147,7 +147,7 @@ Se si usa la Qualità del servizio (QoS) per assegnare la priorità al traffico 
 
     ![Screenshot delle impostazioni di rete per le riunioni nell'interfaccia di amministrazione.](media/meeting-settings-network.png "Screenshot delle impostazioni di rete per le riunioni di Teams nell'interfaccia di amministrazione di Microsoft Teams")
 
-    - Per consentire l'uso dei contrassegni DSCP per la Qualità del servizio (QoS), attivare **Inserire gli indicatori della Qualità del servizio (QoS) per il traffico multimediale in tempo reale**. È possibile solo usare o non usare gli indicatori; non è possibile quindi impostare indicatori personalizzati per ciascun tipo di traffico. Per altre informazioni sugli indicatori DSCP, vedere [Selezionare un metodo di implementazione QoS](QoS-in-Teams.md#select-a-qos-implementation-method).
+    - Per consentire l'uso dei contrassegni DSCP per QoS, attivare gli **Indicatori della Qualità del servizio (QoS) per il traffico multimediale in tempo reale**. È possibile solo usare o non usare gli indicatori; non è possibile quindi impostare indicatori personalizzati per ciascun tipo di traffico. Per altre informazioni sugli indicatori DSCP, vedere [Selezionare un metodo di implementazione QoS](QoS-in-Teams.md#select-a-qos-implementation-method).
 
         > [!IMPORTANT]
         > Si noti che l'abilitazione di QoS viene eseguita solo sugli endpoint per contrassegnare i pacchetti che lasciano il client. È comunque consigliabile applicare regole QoS corrispondenti in tutti i dispositivi di rete interna per il traffico in arrivo.
