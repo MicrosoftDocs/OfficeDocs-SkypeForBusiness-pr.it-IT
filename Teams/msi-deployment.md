@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d9c75d531cc2371c8ce5c6baf2eb22924129bbb6
-ms.sourcegitcommit: 32ba2ed0343e19f56e62fb3c507923c95f11b1bd
+ms.openlocfilehash: c7ff835715bd91e66160817410312734c6949f5c
+ms.sourcegitcommit: 949fbc3215f96e48c01b75b13c400bdb47c37e4b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124243"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "61216632"
 ---
 # <a name="install-microsoft-teams-using-microsoft-endpoint-configuration-manager"></a>Installare Microsoft Teams usando Microsoft Endpoint Configuration Manager
 
@@ -64,7 +64,7 @@ MSI di Teams inserirà un programma di installazione nella cartella Programmi. O
 Non utilizzare il pacchetto MSI per distribuire gli aggiornamenti, poiché il client si aggiorna automaticamente se rileva che è disponibile una nuova versione del servizio. Per distribuire nuovamente il programma di installazione più recente, usare il processo di redistribuzione di MSI descritto di seguito. Se si distribuisce una versione meno recente del pacchetto MSI, il client verrà aggiornato automaticamente (ad eccezione degli ambienti VDI) quando è possibile per l'utente. Se viene distribuita una versione precedente obsoleta, MSI provvederà all'aggiornamento dell'app prima che l'utente possa far uso di Teams.
 
 > [!IMPORTANT]
-> Il percorso predefinito è C:\Program Files (x86)\Teams Installer su sistemi operativi a 64 bit e C:\Program Files\Teams Installer su sistemi operativi a 32 bit.
+> Il percorso predefinito è C:\Programmi (x86)\Teams Installer nei sistemi operativi a 32 bit e C:\Programmi\Teams Installer nei sistemi operativi a 64 bit.
 > Non è consigliabile modificare i percorsi di installazione predefiniti, poiché potrebbe interrompersi il flusso degli aggiornamenti. Una versione troppo obsoleta potrebbe impedire agli utenti l'accesso al servizio.
 
 #### <a name="target-computer-requirements"></a>Requisiti del computer di destinazione
