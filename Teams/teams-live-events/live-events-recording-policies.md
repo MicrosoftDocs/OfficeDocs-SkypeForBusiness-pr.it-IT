@@ -17,12 +17,12 @@ description: Informazioni sui criteri di registrazione degli eventi live.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9dbed75a7f9c9655cc52bb798eefb0038cc5fe4a
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 80489f699004ed7dbcb8d7493c32a7bc26e3e25e
+ms.sourcegitcommit: be8b820caf4b5a1a91ad444ba93da1df20bf63ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60844929"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "61257345"
 ---
 # <a name="live-event-recording-policies-in-microsoft-teams"></a>Criteri di registrazione degli eventi live in Microsoft Teams
 
@@ -61,7 +61,7 @@ Nell'ambito dei criteri di trasmissione, è possibile attivare o disattivare la 
 | Registrazione disponibile per i partecipanti | Selezionato     | DVR è disponibile e la risorsa Servizi multimediali di Azure (AMS) viene archiviata per 180 giorni | Il partecipante può accedere e guardare l'evento                     |                              |
 |                                                  | Non selezionato | DVR è disponibile e la risorsa AMS viene archiviata per 180 giorni | Il partecipante non ottiene l'accesso all'evento al termine |                              |
 ||Disabilitato (non selezionato)|DVR è disponibile e la risorsa AMS viene eliminata dopo l'evento|Il partecipante non ottiene l'accesso all'evento al termine||
-| Registrazione disponibile per produttori e relatori | Selezionato     |                                                           |                                                             | Viene creato e archiviato un MP4 |
+| Registrazione disponibile per produttori e relatori | Selezionato     |                                                           |                                                             | Un MP4 viene creato e archiviato per 180 giorni |
 |                                                  | Non selezionato |                                                           |                                                             | Non viene creato alcun file           |
 
 ### <a name="related-topics"></a>Argomenti correlati
