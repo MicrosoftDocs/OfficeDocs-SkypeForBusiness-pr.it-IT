@@ -675,6 +675,12 @@ items:
             href: audio-conferencing-common-questions.md
           - name: Provare o acquistare le audioconferenze in Microsoft 365
             href: try-or-purchase-audio-conferencing-in-office-365-for-teams.md
+          - name: Conferenze con connessione tramite operatore
+            items:
+              - name: Panoramica
+                href: operator-connect-conferencing-plan.md
+              - name: Configurare conferenze con connessione tramite operatore
+                href: operator-connect-conferencing-configure.md
           - name: Minuti di chiamate in uscita estesi per USA e Canada
             href: dial-out-minutes-canada-us.md
           - name: Periodo di accesso gratuito per audioconferenze
