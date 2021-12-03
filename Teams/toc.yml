@@ -1543,6 +1543,8 @@ items:
             href: teams-edu-licensing.md
           - name: Riferimento a Education SKU
             href: sku-reference-edu.md
+          - name: Dispositivi di Teams per l'istruzione
+            href: devices-for-education.md
       - name: Teams per gli operatori sul campo
         items:
           - name: Guida introduttiva per gli operatori sul campo
@@ -1641,8 +1643,6 @@ items:
                 href: /microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365
           - name: Modalità di interazione di SharePoint Online e OneDrive for Business con Teams
             href: sharepoint-onedrive-interact.md
-      - name: Dispositivi di Teams per l'istruzione
-        href: devices-for-education.md
       - name: Dispositivi supportati
         items:
           - name: Gestire i dispositivi in Teams
