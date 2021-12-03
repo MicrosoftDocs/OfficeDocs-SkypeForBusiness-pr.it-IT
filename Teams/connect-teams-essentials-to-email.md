@@ -18,20 +18,20 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6d113446971375ace51335a6654c8599f8d2c35b
-ms.sourcegitcommit: be8b820caf4b5a1a91ad444ba93da1df20bf63ae
+ms.openlocfilehash: 682f7bcd4e90e96534e954cd0e22c6f5952db08b
+ms.sourcegitcommit: 563567ab140d5802756170c846dade3645d0b9e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61257528"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "61284794"
 ---
 # <a name="connect-microsoft-teams-essentials-aad-identity-to-an-existing-email-system-with-calendar"></a>Connessione Microsoft Teams Essentials (AAD Identity) a un sistema di posta elettronica esistente con calendario
 
 Questa guida fornisce i passaggi di configurazione per connettere Microsoft Teams Essentials (AAD Identity) a un sistema di posta elettronica esistente con il calendario.
 
-Microsoft Teams Essentials (AAD Identity) riunisce il meglio Teams riunioni, chat, chiamate e collaborazione. Teams Essentials (AAD Identity) può connettersi al sistema di posta elettronica esistente per offrire un'esperienza integrata, come la presenza di tutte le notifiche di Teams in una posta in arrivo esistente, tutti gli eventi del calendario in Teams e la possibilità di accedere a Teams con l'indirizzo di posta elettronica esistente.
+Microsoft Teams Essentials (AAD Identity) riunisce il meglio Teams riunioni, chat, chiamate e collaborazione. Teams Essentials (AAD Identity) può connettersi al sistema di posta elettronica esistente per offrire un'esperienza integrata, ad esempio la presenza di tutte le notifiche Teams in una posta in arrivo esistente, tutti gli eventi del calendario in Teams e la possibilità di accedere a Teams con l'indirizzo di posta elettronica esistente.
 
-Dopo la connessione, è possibile visualizzare le risposte alle riunioni pianificate e gli inviti a collaborare nella cassetta postale e Microsoft Teams. È anche possibile visualizzare e interagire con le riunioni in arrivo dal calendario usando Teams e software per le riunioni di terze parti come Google Workspace.
+Dopo la connessione, è possibile visualizzare le risposte alle riunioni pianificate e gli inviti a collaborare nella cassetta postale e Microsoft Teams. È anche possibile visualizzare e interagire con le riunioni in arrivo dal calendario usando Teams software per le riunioni di terze parti come Google Workspace.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -40,7 +40,7 @@ I passaggi di configurazione descritti in questo articolo implicano il processo 
 Per abilitare l'inoltro automatico:
 
 1. Passare al portale di Microsoft 365 Defender all'indirizzo<https://security.microsoft.com/>
-2. Nel menu di spostamento sinistro passare a Criteri di collaborazione & di posta elettronica & criteri di protezione dalla posta indesiderata  >    >    >   nella sezione Criteri
+2. Nel menu di spostamento sinistro passare a Criteri di collaborazione & posta elettronica & criteri di minaccia  >    >    >  **Nella** sezione Criteri fare clic su Criteri
 3. Nella pagina **Criteri di protezione** da posta indesiderata selezionare Criterio posta indesiderata in uscita **(impostazione predefinita)** nell'elenco
 4. Nel riquadro a comparsa dei dettagli dei criteri visualizzato selezionare Modifica impostazioni **di protezione** per modificare la regola di protezione automatica.
 5. In **Regole di inoltro** impostare la condizione di inoltro automatico su **Attivato:** l'inoltro è abilitato e salvare le modifiche.
@@ -55,17 +55,17 @@ Per altre informazioni sulla configurazione dei criteri di posta indesiderata in
 
 Per far funzionare l'accesso al calendario per le cassette postali locali, seguire le istruzioni fornite in Configurazione dell'accesso al calendario di Teams per le cassette postali locali di[Exchange - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/configuring-teams-calendar-access-for-exchange-on-premises/ba-p/1484009)
 
-Per distribuire Microsoft Teams Rooms in un ambiente ibrido con Exchange locale, vedere Distribuire Microsoft Teams Rooms con Exchange locale [- Microsoft Teams | Documenti Microsoft](rooms/with-exchange-on-premises.md)
+Per distribuire Microsoft Teams Rooms in un ambiente ibrido con Exchange locale, vedere Distribuire Microsoft Teams Rooms con Exchange [locale - Microsoft Teams | Documenti Microsoft](rooms/with-exchange-on-premises.md)
 
 ## <a name="connect-teams-essentials-to-third-party-email-systems-with-calendar"></a>Connessione Teams Essentials a sistemi di posta elettronica di terze parti con calendario
 
 Se non si prevede di cambiare la cassetta postale dell'organizzazione in Microsoft 365, è possibile connettere Teams Essentials a un sistema di posta elettronica e calendario di terze parti esistente. Questa connessione consente di ricevere Teams notifiche nel sistema di posta elettronica esistente durante la visualizzazione di inviti a riunioni ed eventi del calendario esistenti in Microsoft Teams.
 
-### <a name="connect-teams-essentials-to-third-party-email-using-vanity-domain-google-workspace-example"></a>Connessione Teams essentials alla posta elettronica di terze parti con vanity domain (esempio di Google Workspace)
+### <a name="connect-teams-essentials-to-third-party-email-using-vanity-domain-google-workspace-example"></a>Connessione Teams essentials alla posta elettronica di terze parti tramite vanity domain (esempio di Google Workspace)
 
-La sezione seguente illustra come connettersi Microsoft Teams un sistema di posta elettronica esistente con il calendario, ad esempio Google Workspace. Questa connessione verrà eseguita lasciando intatto il sistema di posta elettronica corrente, inoltrando tutti i messaggi di posta elettronica a Exchange Online, filtrando tutto tranne i messaggi di posta elettronica di tipo calendario. In questo modo, i messaggi di posta elettronica del calendario vengono visualizzati automaticamente nel calendario Teams vengono eliminati come messaggi di posta elettronica provvisori e non di tipo calendario.
+La sezione seguente illustra come connettersi Microsoft Teams un sistema di posta elettronica esistente con il calendario, ad esempio Google Workspace. Questa connessione verrà eseguita lasciando intatto il sistema di posta elettronica corrente, inoltrando tutti i messaggi di posta elettronica a Exchange Online, filtrando tutto tranne i messaggi di posta elettronica di tipo calendario. In questo modo, i messaggi di posta elettronica del calendario vengono visualizzati automaticamente nel calendario Teams accettati come messaggi di posta elettronica provvisori e non di tipo calendario vengono eliminati.
 
-Tutti i messaggi generati in Microsoft 365 vengono inoltrati a Google Workspace in modo che gli utenti Teams promemoria e notifiche. Le identità degli utenti, come la posta elettronica principale dell'utente, possono essere duplicate. Single Sign-On è anche possibile, ma non obbligatorio. Gli utenti devono essere in grado di partecipare Teams riunioni dal calendario di terze parti o dal Teams calendario. Altre Teams funzionalità funzionano come previsto.
+Tutti i messaggi generati in Microsoft 365 vengono inoltrati a Google Workspace in modo che gli utenti Teams promemoria e notifiche. Le identità degli utenti, come la posta elettronica principale dell'utente, possono essere duplicate. Single Sign-On è anche possibile, ma non obbligatorio. Gli utenti devono essere in grado di partecipare Teams riunioni dal calendario di terze parti o Teams calendario. Altre Teams funzionalità funzionano come previsto.
 
 :::image type="content" source="media/essentials-googleworkspace.png" alt-text="Immagine che illustra un diagramma del flusso di posta tra EXO e Gmail":::
 
@@ -85,7 +85,7 @@ Questi esempi si basano Connessione commandlet di [PowerShell](/powershell/modul
 
 6. Aggiornare il record TXT SPF esistente in modo da includere Microsoft 365.
 
-7. Configurare domainKeys Identified Mail (DKIM) per Microsoft 365 seguendo questa procedura per [configurare manualmente DKIM.](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide&preserve-view=true)
+7. Configurare domainKeys Identified Mail (DKIM) per Microsoft 365 seguendo questa procedura per [configurare manualmente DKIM](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide&preserve-view=true).
 
 8. Accedere di nuovo al interfaccia di amministrazione di Microsoft 365 <https://admin.microsoft.com/AdminPortal/> per abilitare DKIM
 
@@ -196,7 +196,7 @@ Per aggiungere più utenti contemporaneamente, seguire la procedura consigliata 
 
 2. Aprire il messaggio e selezionare **Mostra originale**
 
-3. Scegliere un'intestazione di posta elettronica che identifichi in modo univoco i messaggi provenienti Microsoft 365 tenant. (Ad esempio, X-MS-Exchange-CrossTenant-id: 92f60fc7-eab3-403b-9d7d-9d683bf0a4b5)
+3. Scegliere un'intestazione di posta elettronica che identifichi in modo univoco i messaggi provenienti Microsoft 365 tenant. Ad esempio, X-MS-Exchange-CrossTenant-id: 92f60fc7-eab3-403b-9d7d-9d683bf0a4b5)
 
 4. Passare alla **Console di amministrazione di Google** all'indirizzo <https://admin.google.com>
 
@@ -204,7 +204,7 @@ Per aggiungere più utenti contemporaneamente, seguire la procedura consigliata 
 
 6. Passare a **Conformità contenuto** e selezionare **Configura**
 
-7. Assegnare un nome all'impostazione. Ad esempio, Allowlist Microsoft 365 e-mail.
+7. Assegnare un nome all'impostazione. Ad esempio, Allowlist Microsoft 365 posta elettronica.
 
 8. In Messaggi **di posta elettronica per influire sul** controllo in ingresso
 
@@ -220,7 +220,7 @@ Per aggiungere più utenti contemporaneamente, seguire la procedura consigliata 
 
 14. Selezionare **Salva**
 
-15. In Se **le espressioni precedenti corrispondono,** eseguire il campo seguente > **Modifica** messaggio e selezionare Ignora filtro posta indesiderata per questo messaggio **in** **Posta indesiderata**.
+15. Nella casella **Se le espressioni precedenti corrispondono,** eseguire il campo seguente > **Modifica** messaggio e selezionare Ignora filtro posta indesiderata per questo messaggio **in** **Posta indesiderata**.
 
 16. Selezionare **Salva**
 
@@ -272,7 +272,7 @@ Per aggiungere più utenti contemporaneamente, seguire la procedura consigliata 
 
 *Configurare Exchange Online di trasporto diretta al calendario*
 
-1. La configurazione di questa impostazione consente di accettare automaticamente gli inviti al calendario in modo che siano visualizzati nel calendario Teams senza richiedere agli utenti di interagire con l'invito in Outlook Web App.
+1. Se si configura questa impostazione, gli inviti al calendario verranno accettati automaticamente in modo che siano visualizzati nel calendario di Teams senza richiedere agli utenti di interagire con l'invito in Outlook Web App.
 
 2. Lo script seguente può essere usato per creare le regole di trasporto:
 
@@ -285,9 +285,9 @@ Per aggiungere più utenti contemporaneamente, seguire la procedura consigliata 
 
 *Disabilitare Outlook sul web per le cassette postali*
 
-1. Seguire le istruzioni in [Disabilitare Outlook sul web per una](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app&preserve-view=true) cassetta postale in Exchange Online disabilitare Outlook sul web per le cassette postali.
+1. Seguire le istruzioni in [Abilitare o disabilitare Outlook sul web](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app) per una cassetta postale in Exchange Online disabilitare Outlook sul web per le cassette postali.
 
-2. È possibile disabilitare Outlook sul web **l'interfaccia di amministrazione di Exchange** o **PowerShell.** È possibile usare l'esempio di PowerShell seguente per disabilitare Outlook sul web per tutte le cassette postali:
+2. È possibile disabilitare Outlook sul web **l'interfaccia di amministrazione di Exchange o** **PowerShell.** È possibile usare l'esempio di PowerShell seguente per disabilitare Outlook sul web per tutte le cassette postali:
 
     ```powershell
     Connect-ExchangeOnline
@@ -297,7 +297,7 @@ Per aggiungere più utenti contemporaneamente, seguire la procedura consigliata 
     }
     ```
 
-**Passaggio 5: Configurare il Exchange Online per l'inoltro interno**
+**Passaggio 5: Configurare un Exchange Online per l'inoltro interno**
 
 Questo passaggio assicura che la posta elettronica sia inviata a un sistema di terze parti per la risoluzione finale.
 
@@ -329,9 +329,9 @@ Questo passaggio assicura che la posta elettronica sia inviata a un sistema di t
 
 ### <a name="connect-teams-essentials-to-third-party-email-not-using-vanity-domain-gmail-example"></a>Connessione Teams Essentials alla posta elettronica di terze parti che non usa vanity domain (esempio Gmail)
 
-È possibile pianificare e partecipare a una riunione di Teams direttamente da Google Workspace connettendo un account Gmail consumer a Teams Essentials con l'affidamento principale sul componente aggiuntivo [di Teams G Suite.](https://support.microsoft.com/en-us/office/install-the-teams-meeting-add-on-for-google-workspace-bba2dfbe-0b2b-4ee7-be10-261ad80ddb60) In questo modo è possibile pianificare videoconferenze con condivisione dello schermo, chat delle riunioni, lavagne digitali e altro ancora.
+È possibile pianificare e partecipare a una riunione di Teams direttamente da Google Workspace connettendo un account Gmail consumer a Teams Essentials con affidamento principale sul componente aggiuntivo [di Teams G Suite.](https://support.microsoft.com/en-us/office/install-the-teams-meeting-add-on-for-google-workspace-bba2dfbe-0b2b-4ee7-be10-261ad80ddb60) In questo modo è possibile pianificare videoconferenze con condivisione dello schermo, chat delle riunioni, lavagne digitali e altro ancora.
 
-Gmail verrà configurato in modo da estrarre la posta Exchange Online posta elettronica per assicurarsi che la posta generata Microsoft 365 e Teams arrivino correttamente in Gmail. Per eseguire questa connessione, potrebbe essere necessario che le impostazioni predefinite di sicurezza siano disabilitate, quindi è essenziale usare una password univoca complessa. Un dominio personalizzato non è necessario per questo scenario, ma può essere configurato in Microsoft 365 per l'uso in Gmail se si vuole usarlo.
+Gmail verrà configurato in modo da estrarre la posta Exchange Online in modo che la posta generata in Microsoft 365 e Teams arrivino correttamente in Gmail. Per eseguire questa connessione, potrebbe essere necessario che le impostazioni predefinite di sicurezza siano disabilitate, quindi è essenziale usare una password univoca complessa. Un dominio personalizzato non è necessario per questo scenario, ma può essere configurato in Microsoft 365 per l'uso in Gmail se si vuole usarlo.
 
 :::image type="content" source="media/essentials-gmail.png" alt-text="Immagine che impovere il flusso di posta tra Teams Essentials e Gmail":::
 
@@ -355,7 +355,7 @@ Se si ha già un account esistente, è possibile procedere con il passaggio succ
 
 *Aggiungere un dominio al Amministrazione Microsoft 365 Center (facoltativo)*
 
-1. Nella barra di spostamento selezionare Impostazioni > dominio, quindi selezionare Aggiungi dominio
+1. Nella barra di spostamento seleziona Impostazioni > dominio, quindi seleziona Aggiungi dominio
 
 2. Immettere il nome di dominio nel campo appropriato
 
