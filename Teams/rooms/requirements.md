@@ -15,28 +15,27 @@ ms.collection:
 - M365-collaboration
 description: Informazioni sui requisiti per il supporto Microsoft Teams Rooms, tra cui la scelta del dispositivo, dei microfoni, degli altoparlanti, delle fotocamere e degli schermi appropriati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a96fd2ee05b60a8147574678bc2afed89ad5be2d
-ms.sourcegitcommit: 4df3d144296b9b8982109be7edaffd636aabdf29
+ms.openlocfilehash: 8524f1481c98425e726f902a76ce82ce536ed419
+ms.sourcegitcommit: 7eb66cb2955b17e89e1c162b6ca1b9bdb18189b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60959925"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61306131"
 ---
 # <a name="microsoft-teams-rooms-requirements"></a>Requisiti per Microsoft Teams Rooms
 
-Microsoft Teams Rooms scala a diverse dimensioni della stanza. Teams Rooms un'ampia gamma di periferiche audio e video certificate in base alle dimensioni e all'uso della sala. Selezionando il dispositivo e la console di base appropriati, combinati con microfoni, altoparlanti, fotocamere e schermi appropriati per lo spazio, è possibile distribuire Microsoft Teams Rooms in spazi di qualsiasi dimensione, da piccoli spazi di riunione fino a grandi sale riunioni e sale riunioni.  Il set completo delle periferiche audio e video certificate che possono essere utilizzate per configurare la sala, è disponibile in [Presentazione dei dispositivi](https://products.office.com/microsoft-teams/across-devices).
+Microsoft Teams Rooms scala a diverse dimensioni della stanza. Teams Rooms un'ampia varietà di periferiche audio e video certificate in base alle dimensioni e all'uso della sala. Selezionando il dispositivo e la console di base appropriati, combinati con microfoni, altoparlanti, fotocamere e schermi appropriati per lo spazio, è possibile distribuire Microsoft Teams Rooms in spazi di qualsiasi dimensione da piccoli spazi di riunione fino a grandi sale riunioni e sale riunioni.  Il set completo delle periferiche audio e video certificate che possono essere utilizzate per configurare la sala, è disponibile in [Presentazione dei dispositivi](https://products.office.com/microsoft-teams/across-devices).
 
 In questo articolo vengono riepilogati i requisiti di configurazione e distribuzione dei dispositivi per il supporto di Microsoft Teams Rooms.
 
-La distribuzione implica la creazione di account come descritto in [Distribuire Microsoft Teams Room](rooms-deploy.md) e la configurazione di console per riunioni come descritto in [Configurare una console per Microsoft Teams Rooms](console.md).
+La distribuzione implica la creazione di account delle risorse e la configurazione di Teams Rooms come descritto in Distribuire [Microsoft Teams Rooms](rooms-deploy.md).
 
 Fare riferimento a:
 
-- [Licenze per i componenti aggiuntivi di Skype for Business](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)
-- [Opzioni di licenza basate sul tuo piano: Microsoft Teams Rooms](/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-room-systems-v2)
+- [Opzioni di licenza basate sul tuo piano: Microsoft Teams Rooms](rooms-licensing.md)
 
 > [!NOTE]
-> Microsoft Teams Rooms consente di accede a Microsoft Teams, Skype for Business Server 2019, Skype for Business Server 2015 o Skype for Business Online e può partecipare alle riunioni ospitate da tali prodotti.
+> Microsoft Teams Rooms accedere a Microsoft Teams, Skype for Business Server 2019 o Skype for Business Server 2015 e può partecipare alle riunioni ospitate da uno di questi servizi.
 >
 > Le piattaforme precedenti, come Lync Server 2013, non sono supportate da Microsoft Teams Rooms. Microsoft Teams Rooms non è supportato in Microsoft 365 o Office 365 gestiti da ambienti 21Vianet o DoD.
 >
@@ -133,7 +132,7 @@ Questi dispositivi sono disponibili in [Presentazione degli accessori per sistem
 |[Aver VB130 Camera Soundbar](https://www.averusa.com/products/conference-camera/vb130) |0.0.7300.71 |
 |[Barra video Di Bose VB1](https://pro.bose.com/en_us/products/conferencing/videobars/bose-videobar-vb1.html?mc=25_PS_VB_BO_00_BI_&&msclkid=fc99b79880f714727a63e86ea0e5642a&utm_source=bing&utm_medium=cpc&utm_campaign=US%20-%20Brand_Videobar%20VB1_Exact&utm_term=bose%20videobar%20vb1&utm_content=Bose%20Videobar%20VB1&gclid=fc99b79880f714727a63e86ea0e5642a&gclsrc=3p.ds) |19.2|
 |[Biamp Devio SCR-20CX Web-Based Conferencing Hub con microfono a soffitto](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) |2.2.0.9|
-|[Biamp Devio SCR-20TX Web-Based Conferencing Hub con microfono tabletop](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) |2.2.0.9 |
+|[Hub di conferenza biamp Devio SCR-20TX Web-Based conferenza con microfono tabletop](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) |2.2.0.9 |
 |[Crestron Huddly IQ](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Accessories/CCS-CAM-USB-F-400)   | 1.02.09.33901  | 
 |[Huddly Canvas](https://www.huddly.com/blog/say-hello-to-huddly-canvas-our-latest-ai-technology-for-content-capture-and-enhancement/) | 1.3.25 |  &#x2714; |
 |[QI di Huddly](https://www.huddly.com/conference-cameras/iq/) |1.3.22|
@@ -201,11 +200,11 @@ Questi dispositivi sono disponibili in [Presentazione degli accessori per sistem
 
 #### <a name="usb-extenders"></a>Extender USB
 
-- Le porte USB negli alloggiamenti di estensione sono compatibili con USB 3.0. È possibile usare un extender USB 2.x, ma in questo modo si limitano le velocità di USB 2. x all'estremità opposta. Gli extender non sono consigliati per le periferiche USB 3.0.
+- Le porte USB negli alloggiamenti di estensione sono compatibili con USB 3.0. È possibile usare un dispositivo estensore USB 2.x, ma all'estrema estremità sarà limitato alle velocità USB 2.x. Gli extender non sono consigliati per le periferiche USB 3.0.
 - Un extender deve soddisfare le specifiche USB 2.0 o più recenti.
   - Gli alloggiamenti di estensione dei tablet supportano almeno due stadi di estensione dell'hub USB esterno. Se si connettono più di due hub USB in serie, rivolgersi al produttore degli alloggiamenti di estensione per verificare se supportano la connessione in serie.
   - Connessioni GbE cablate nella sala. Cavo Ethernet della lunghezza appropriata.
-  - Fino a 2 schermi 1080-p con connessioni HDMI. Cavi HDMI della lunghezza appropriata.
+  - Fino a due schermi da 1080p con connessioni HDMI. Cavi HDMI della lunghezza appropriata.
 
 > [!NOTE]
 > Un televisore per uso privato usato come schermo per la visualizzazione nella sala deve supportare o abilitare la funzionalità Consumer Electronics Control (CEC) di HDMI in modo che possa passare automaticamente dalla modalità di standby a un'origine video attiva. Questa funzionalità non è supportata da tutti i televisori.
@@ -235,14 +234,6 @@ Nelle tabelle seguenti sono disponibili suggerimenti per le periferiche in base 
  > [!NOTE]
  > La risoluzione dello schermo in posizione anteriore nella sala deve essere impostata su un valore non superiore a 1920x1080p.
 
-## <a name="required-software-downloads"></a>Download del software necessario
-
-Per creare un'immagine di Microsoft Teams Rooms, seguire le istruzioni in Configurare una console per [Microsoft Teams Rooms](console.md). Queste istruzioni illustrano come effettuare il download di tutto il software necessario per l'installazione.
-
-> [!NOTE]
-> I professionisti IT dovranno avere accesso ai file ISO di Windows 10 Enterprise tramite il contratto multilicenza.
-
-[SkypeRoomProvisioningScript.ps1](https://go.microsoft.com/fwlink/?linkid=870105) è un download facoltativo che è possibile usare per eseguire il provisioning degli account di Microsoft Teams Rooms.
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -255,5 +246,3 @@ Per creare un'immagine di Microsoft Teams Rooms, seguire le istruzioni in Config
 [Configurare una console per Microsoft Teams Rooms](console.md)
 
 [Gestire Microsoft Teams Rooms](rooms-manage.md).
-
-[Licenze per i componenti aggiuntivi di Skype for Business](https://support.office.com/article/Skype-for-Business-add-on-licensing-3ed752b1-5983-43f9-bcfd-760619ab40a7)
