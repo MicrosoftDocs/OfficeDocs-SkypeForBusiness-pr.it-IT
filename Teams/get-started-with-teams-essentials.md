@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: efe81626a512c4ffce9cebe9a4cb6d62e4035b5f
-ms.sourcegitcommit: be8b820caf4b5a1a91ad444ba93da1df20bf63ae
+ms.openlocfilehash: b8ec92d734a62b0bfe7416a0aa83f46151ca95ab
+ms.sourcegitcommit: 7eb66cb2955b17e89e1c162b6ca1b9bdb18189b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61257547"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "61306431"
 ---
 # <a name="teams-essentials-quickstart-guide-for-small-businesses"></a>Guida introduttiva di Teams Essentials per le piccole imprese
 
@@ -47,7 +47,7 @@ Se è stato acquistato Teams Essentials tramite un Partner certificato di Micros
 Nella tabella seguente sono elencate le funzionalità principali di Microsoft Teams disponibili per i diversi piani. Si applicano alcune avvertenze. Per ulteriori informazioni, vedere le note a piè di pagina. La tabella è soggetta a modifica senza preavviso. Per un elenco completo e aggiornato delle funzionalità, visitare [Descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description).
 
  
-|Piano di Microsoft Teams | [**Microsoft Teams versione gratuita**](manage-freemium.md) | [**Microsoft Teams Essentials**](#get-microsoft-teams-essentials) | **Microsoft Teams Essentials (Identità AAD)** | [**Microsoft 365 Business Basic**](/microsoft-365/admin/setup/setup-business-basic?)  |
+|Piano di Microsoft Teams | [**Microsoft Teams (gratuito)**](manage-freemium.md) | [**Microsoft Teams Essentials**](#get-microsoft-teams-essentials) | **Microsoft Teams Essentials (Identità AAD)** | [**Microsoft 365 Business Basic**](/microsoft-365/admin/setup/setup-business-basic?)  |
 |---------|---------|---------|---------|---------|
 |***Funzionalità***     |         |         |         |         |
 | **Riunioni e chiamate** | Sì| Sì| Sì |   Sì    |
