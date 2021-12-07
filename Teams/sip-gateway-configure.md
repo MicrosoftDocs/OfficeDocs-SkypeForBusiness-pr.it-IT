@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: db828fba03cfa4c05bef16d9f1b3ec2b50dbc4af
-ms.sourcegitcommit: 2aae13454178dc2e2cbc8cca967cd181c5f9d044
+ms.openlocfilehash: b245a4f4b0c9d8940943ceacc685bcf99e0df64e
+ms.sourcegitcommit: 70bba31b0ca4615a3c6a90f42d3568450ea51b82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61314259"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "61327304"
 ---
 # <a name="configure-sip-gateway"></a>Configurare il gateway SIP
 
@@ -80,7 +80,7 @@ Questo articolo descrive anche come:
 
 ## <a name="verify-that-sip-gateway-is-available-for-your-organization"></a>Verificare che gateway SIP sia disponibile per l'organizzazione
 
-1. Accedere all'interfaccia [Teams di amministrazione .](https://admin-teams.microsoft.net/)
+1. Accedere all'interfaccia [Teams di amministrazione .](https://admin-teams.microsoft.com/)
 
 2. A sinistra, seleziona Teams **dispositivi e** verifica se la scheda **Dispositivi SIP** è visibile. In caso contrario, il servizio Gateway SIP è abilitato per l'organizzazione.
 
@@ -92,7 +92,7 @@ Questo articolo descrive anche come:
 
 Per abilitare il gateway SIP nell'Teams di amministrazione, seguire questa procedura:
 
-1. Passare [all'interfaccia Teams di amministrazione](https://admin.teams.microsoft.net/)
+1. Passare [all'interfaccia Teams di amministrazione](https://admin.teams.microsoft.com/)
 
 2. A sinistra, in **Voce,** selezionare **Criteri di chiamata.**
 
@@ -254,7 +254,7 @@ Per disconnettere un dispositivo nell'Teams di amministrazione:
 
 È possibile visualizzare e monitorare l'inventario dei dispositivi SIP nell'Teams di amministrazione dopo che gli utenti dei dispositivi hanno fatto l'accesso almeno una volta. Ecco come:
 
-1. Accedere [all'interfaccia Teams di amministrazione.](https://admin.teams.microsoft.net/)
+1. Accedere [all'interfaccia Teams di amministrazione.](https://admin.teams.microsoft.com/)
 
 2. Selezionare **Teams dispositivi**  >  **SIP**. Tutti i dispositivi SIP connessi sono elencati a destra.
 
