@@ -3,6 +3,54 @@
 
 
 
+## <a name="week-of-november-29-2021"></a>Settimana del 29 novembre 2021
+
+
+| Pubblicato il |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 11/29/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
+| 11/29/2021 | [Installare Teams usando Microsoft Endpoint Configuration Manager](/MicrosoftTeams/msi-deployment) | modificato |
+| 11/29/2021 | [Aggiornare dalla versione di valutazione gratuita di Teams Exploratory](/MicrosoftTeams/upgrade-from-teams-exploratory) | modificato |
+| 11/30/2021 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | modificato |
+| 11/30/2021 | [Configurazione dell'amministratore per l'app Genitori EDU Microsoft in Teams](/MicrosoftTeams/edu-parents-app) | modificato |
+| 12/1/2021 | [Connessione Microsoft Teams Essentials (AAD Identity) a un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | aggiunto |
+| 12/1/2021 | [Guida introduttiva di Teams Essentials per le piccole imprese](/MicrosoftTeams/get-started-with-teams-essentials) | aggiunto |
+| 12/1/2021 | [Configurare le Connessione con operatore conferenza](/MicrosoftTeams/operator-connect-conferencing-configure) | aggiunto |
+| 12/1/2021 | [Pianificare le conferenze Connessione con operatore conferenza](/MicrosoftTeams/operator-connect-conferencing-plan) | aggiunto |
+| 12/1/2021 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | modificato |
+| 12/1/2021 | [Criteri di registrazione degli eventi live](/MicrosoftTeams/teams-live-events/live-events-recording-policies) | modificato |
+| 12/1/2021 | [Microsoft Teams sulla versione di PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | modificato |
+| 12/1/2021 | [Aggiorna Microsoft Teams gratuito (classico) all'abbonamento](/MicrosoftTeams/upgrade-freemium) | modificato |
+| 12/1/2021 | [Guida introduttiva di Teams Essentials per le piccole imprese](/MicrosoftTeams/get-started-with-teams-essentials) | modificato |
+| 12/1/2021 | [Ecco cosa si ottiene con Teams Telefono](/MicrosoftTeams/here-s-what-you-get-with-phone-system) | modificato |
+| 12/1/2021 | [Configurare le Teams Telefono nell'organizzazione](/MicrosoftTeams/setting-up-your-phone-system) | modificato |
+| 12/1/2021 | [Che cos'è Teams Telefono](/MicrosoftTeams/what-is-phone-system-in-office-365) | modificato |
+| 12/2/2021 | [Pianificare la soluzione vocale in Microsoft Teams](/MicrosoftTeams/cloud-voice-landing-page) | modificato |
+| 12/2/2021 | [Telefoni e dispositivi per Microsoft Teams](/MicrosoftTeams/devices/usb-devices) | modificato |
+| 12/2/2021 | [Dimensioni e misure - Call Quality Dashboard (CQD)](/MicrosoftTeams/dimensions-and-measures-available-in-call-quality-dashboard) | modificato |
+| 12/2/2021 | [Opzioni di connettività PSTN](/MicrosoftTeams/pstn-connectivity) | modificato |
+| 12/2/2021 | [Insights per l'istruzione utente finale](/MicrosoftTeams/insights-end-user-notice) | aggiunto |
+| 12/2/2021 | [Configurare chiamate di emergenza dinamiche](/MicrosoftTeams/configure-dynamic-emergency-calling) | modificato |
+| 12/2/2021 | [Connessione Microsoft Teams Essentials (AAD Identity) a un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | modificato |
+| 12/3/2021 | Assegnare i criteri agli utenti in Microsoft Teams | rimosso |
+| 12/3/2021 | [Cercare gli eventi nel log di controllo Microsoft Teams](/MicrosoftTeams/audit-log-events) | modificato |
+| 12/3/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
+| 12/3/2021 | [Pianificare il bypass multimediale con Instradamento diretto](/MicrosoftTeams/direct-routing-plan-media-bypass) | modificato |
+| 12/3/2021 | [Guida introduttiva di Teams Essentials per le piccole imprese](/MicrosoftTeams/get-started-with-teams-essentials) | modificato |
+| 12/3/2021 | [Configurare una console per Microsoft Teams Rooms](/MicrosoftTeams/rooms/console) | modificato |
+| 12/3/2021 | [Informazioni su come configurare fotocamere contenuto - Microsoft Teams](/MicrosoftTeams/rooms/content-camera) | modificato |
+| 12/3/2021 | [Configurare riunioni coordinate con Microsoft Teams Rooms e Surface Hub](/MicrosoftTeams/rooms/coordinated-meetings) | modificato |
+| 12/3/2021 | [Requisiti per Microsoft Teams Rooms](/MicrosoftTeams/rooms/requirements) | modificato |
+| 12/3/2021 | [Autenticazione in Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-authentication) | modificato |
+| 12/3/2021 | [Configurare gli account per Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-configure-accounts) | modificato |
+| 12/3/2021 | [Distribuire Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-deploy) | modificato |
+| 12/3/2021 | [Microsoft Teams Rooms licenze](/MicrosoftTeams/rooms/rooms-licensing) | modificato |
+| 12/3/2021 | [Microsoft Teams Rooms versione dell'app](/MicrosoftTeams/rooms/rooms-lifecycle-support) | modificato |
+| 12/3/2021 | [Gestire Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-manage). | modificato |
+| 12/3/2021 | [Microsoft Teams Rooms manutenzione e operazioni](/MicrosoftTeams/rooms/rooms-operations) | modificato |
+| 12/3/2021 | [Microsoft Teams Rooms sicurezza](/MicrosoftTeams/rooms/security) | modificato |
+
+
 ## <a name="week-of-november-22-2021"></a>Settimana del 22 novembre 2021
 
 
@@ -20,8 +68,8 @@
 | 11/24/2021 | [Microsoft Teams app line of business (LINEB) nei Teams di lavoro](/MicrosoftTeams/app-support-on-teams-panels) | modificato |
 | 11/24/2021 | [Registrazione delle riunioni di Teams nel cloud](/MicrosoftTeams/cloud-recording) | modificato |
 | 11/24/2021 | [Configurare la condivisione desktop in Microsoft Teams](/MicrosoftTeams/configure-desktop-sharing) | modificato |
-| 11/24/2021 | [Cortana assistenza vocale in Microsoft Teams](/MicrosoftTeams/cortana-in-teams) | modificato |
-| 11/24/2021 | [Teams per l'istruzione guidata criteri per applicare facilmente i criteri per l'apprendimento sicuro](/MicrosoftTeams/easy-policy-setup-edu) | modificato |
+| 11/24/2021 | [Cortana'assistenza vocale in Microsoft Teams](/MicrosoftTeams/cortana-in-teams) | modificato |
+| 11/24/2021 | [Teams per l'istruzione guidata criteri per applicare facilmente criteri per l'apprendimento sicuro](/MicrosoftTeams/easy-policy-setup-edu) | modificato |
 | 11/24/2021 | [Criteri di riunione e scadenza della riunione in Microsoft Teams](/MicrosoftTeams/meeting-expiration) | modificato |
 | 11/24/2021 | [Gestire i criteri delle riunioni per audio e video](/MicrosoftTeams/meeting-policies-audio-and-video) | modificato |
 | 11/24/2021 | [Gestire i criteri delle riunioni per la condivisione di contenuti](/MicrosoftTeams/meeting-policies-content-sharing) | modificato |
@@ -76,65 +124,6 @@
 | 11/19/2021 | [Installare Teams usando Microsoft Endpoint Configuration Manager](/MicrosoftTeams/msi-deployment) | modificato |
 | 11/19/2021 | [Cos'è un ordine di portabilità?](/MicrosoftTeams/phone-number-calling-plans/port-order-overview) | modificato |
 | 11/18/2021 | Risolvere i problemi relativi all'accesso guest in Microsoft Teams | rimosso |
-| 11/19/2021 | [Elenco di controllo per \| l'aggiornamento Skype Business a Teams passaggi \| di base per l'aggiornamento](/MicrosoftTeams/upgrade-basic) | modificato |
+| 11/19/2021 | [Aggiornamento \| dell'elenco di controllo Skype Business a Teams passaggi \| di base per l'aggiornamento](/MicrosoftTeams/upgrade-basic) | modificato |
 | 11/19/2021 | Dichiarazione di conformità sull'accessibilità - Francia | rimosso |
 | 11/19/2021 | [Microsoft Teams: Dichiarazione di conformità sull'accessibilità - Francia](/MicrosoftTeams/accessibility-declaration-of-conformance-in-france-for-teams) | modificato |
-
-
-## <a name="week-of-october-25-2021"></a>Settimana del 25 ottobre 2021
-
-
-| Pubblicato il |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 10/25/2021 | [Crittografia end-to-end per Microsoft Teams](/MicrosoftTeams/teams-end-to-end-encryption) | aggiunto |
-| 10/25/2021 | [Criteri di chiamata in Microsoft Teams: funzionalità di chiamata e inoltro di chiamata](/MicrosoftTeams/teams-calling-policy) | modificato |
-| 10/25/2021 | [Gestione dell'integrità dei Teams dispositivi](/MicrosoftTeams/teams-device-health) | modificato |
-| 10/25/2021 | [Panoramica della guida alla sicurezza di Microsoft Teams](/MicrosoftTeams/teams-security-guide) | modificato |
-| 10/26/2021 | [Disponibilità del paese/area geografica - Audioconferenze, piani per chiamate](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) | modificato |
-| 10/26/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
-| 10/26/2021 | [Microsoft Teams utilizzo delle app](/MicrosoftTeams/teams-analytics-and-reports/app-usage-report) | modificato |
-| 10/26/2021 | [Microsoft Teams sulla versione di PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | modificato |
-| 10/26/2021 | [Gestire i team nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-teams-in-modern-portal) | modificato |
-| 10/27/2021 | [Telefoni e dispositivi per Microsoft Teams](/MicrosoftTeams/devices/usb-devices) | modificato |
-| 10/27/2021 | [Requisiti hardware per Microsoft Teams](/MicrosoftTeams/hardware-requirements-for-the-teams-app) | modificato |
-| 10/27/2021 | [Acquistare app di terze parti per Teams](/MicrosoftTeams/purchase-third-party-apps) | modificato |
-| 10/27/2021 | [Requisiti per Microsoft Teams Rooms](/MicrosoftTeams/rooms/requirements) | modificato |
-| 10/27/2021 | [Introduzione alla registrazione Teams basata su criteri per le chiamate & riunioni](/MicrosoftTeams/teams-recording-policy) | modificato |
-| 10/27/2021 | [Visualizzare le assegnazioni dei criteri nel log attività nell'Microsoft Teams di amministrazione](/MicrosoftTeams/activity-log) | modificato |
-| 10/27/2021 | [Assegnare criteri a grandi set di utenti dell'istituto di istruzione](/MicrosoftTeams/batch-group-policy-assignment-edu) | modificato |
-| 10/27/2021 | [Parcheggio di chiamata e recupero in Microsoft Teams](/MicrosoftTeams/call-park-and-retrieve) | modificato |
-| 10/27/2021 | [Gestire i criteri dell'ID chiamante in Microsoft Teams](/MicrosoftTeams/caller-id-policies) | modificato |
-| 10/27/2021 | [Configurare Microsoft Teams nell'azienda](/MicrosoftTeams/deploy-enterprise-setup) | modificato |
-| 10/27/2021 | [Riunioni e conferenze in Microsoft Teams](/MicrosoftTeams/deploy-meetings-microsoft-teams-landing-page) | modificato |
-| 10/27/2021 | [Teams per l'istruzione guidata criteri per applicare facilmente i criteri per l'apprendimento sicuro](/MicrosoftTeams/easy-policy-setup-edu) | modificato |
-| 10/27/2021 | [Gestire l'app Turni per l'organizzazione](/MicrosoftTeams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams) | modificato |
-| 10/27/2021 | [Provisioning di Microsoft Teams su vasta scala per gli operatori sul campo](/MicrosoftTeams/flw-scripted-deployment) | modificato |
-| 10/27/2021 | [Gestire i criteri di routing vocale di emergenza per il routing diretto](/MicrosoftTeams/manage-emergency-call-routing-policies) | modificato |
-| 10/27/2021 | [Gestire i criteri per le chiamate di emergenza in Microsoft Teams](/MicrosoftTeams/manage-emergency-calling-policies) | modificato |
-| 10/27/2021 | [Gestire i criteri di feedback in Microsoft Teams](/MicrosoftTeams/manage-feedback-policies-in-teams) | modificato |
-| 10/27/2021 | [Gestire e monitorare i Teams](/MicrosoftTeams/manage-teams-overview) | modificato |
-| 10/27/2021 | [Gestire Teams con i criteri](/MicrosoftTeams/manage-teams-with-policies) | modificato |
-| 10/27/2021 | [Gestire i criteri di routing vocale per il routing diretto](/MicrosoftTeams/manage-voice-routing-policies) | modificato |
-| 10/27/2021 | [Criteri di riunione e scadenza della riunione in Microsoft Teams](/MicrosoftTeams/meeting-expiration) | modificato |
-| 10/27/2021 | [Gestire i criteri delle riunioni per la condivisione di contenuti](/MicrosoftTeams/meeting-policies-content-sharing) | modificato |
-| 10/27/2021 | [Teams: gestire i criteri delle riunioni](/MicrosoftTeams/meeting-policies-in-teams) | modificato |
-| 10/27/2021 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | modificato |
-| 10/27/2021 | [Rimuovere dagli utenti il criterio RestrictedAnonymousAccess per le riunioni di Teams](/MicrosoftTeams/meeting-policies-restricted-anonymous-access) | modificato |
-| 10/27/2021 | [Musica blocco](/MicrosoftTeams/music-on-hold) | modificato |
-| 10/27/2021 | [Pianificare la governance in Teams - Microsoft Teams](/MicrosoftTeams/plan-teams-governance) | modificato |
-| 10/27/2021 | [Criteri e pacchetti di criteri di Microsoft Teams per l'istruzione per amministratori](/MicrosoftTeams/policy-packages-edu) | modificato |
-| 10/27/2021 | [Teams di criteri per enti pubblici](/MicrosoftTeams/policy-packages-gov) | modificato |
-| 10/27/2021 | [Pacchetti di criteri di Teams per il settore sanitario](/MicrosoftTeams/policy-packages-healthcare) | modificato |
-| 10/27/2021 | [Introduzione a Microsoft Teams per l'apprendimento a distanza](/MicrosoftTeams/remote-learning-edu) | modificato |
-| 10/27/2021 | [Controllo amministrazione tenant per il riconoscimento vocale (profilo vocale) in Teams Rooms](/MicrosoftTeams/rooms/voice-recognition) | modificato |
-| 10/27/2021 | [Esempio di script di PowerShell: creare gruppi di sicurezza per docenti e studenti dell'istituto di istruzione](/MicrosoftTeams/scripts/powershell-script-security-groups-edu) | modificato |
-| 10/27/2021 | [Esempio di script di PowerShell - Creare & assegnare criteri di messaggistica](/MicrosoftTeams/scripts/powershell-script-teams-messaging-policy-edu) | modificato |
-| 10/27/2021 | [Gestire i criteri di autorizzazione app in Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies) | modificato |
-| 10/27/2021 | [Criteri di chiamata in Microsoft Teams: funzionalità di chiamata e inoltro di chiamata](/MicrosoftTeams/teams-calling-policy) | modificato |
-| 10/27/2021 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | modificato |
-| 10/27/2021 | [Usare Teams con i servizi desktop remoto](/MicrosoftTeams/teams-on-rdp) | modificato |
-| 10/27/2021 | [Gestire i criteri dei canali in Microsoft Teams](/MicrosoftTeams/teams-policies) | modificato |
-| 10/27/2021 | [Microsoft Teams sulla versione di PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | modificato |
-| 10/27/2021 | [Gestire i modelli di team nell'interfaccia di amministrazione](/MicrosoftTeams/templates-policies) | modificato |
-| 10/27/2021 | [Usare OneDrive for Business e SharePoint per le registrazioni delle riunioni](/MicrosoftTeams/tmr-meeting-recording-change) | modificato |
-| 10/28/2021 | [Barriere di informazione in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams) | modificato |
