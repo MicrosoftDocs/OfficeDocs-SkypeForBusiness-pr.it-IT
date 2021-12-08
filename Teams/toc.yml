@@ -979,8 +979,6 @@ items:
             href: what-are-emergency-locations-addresses-and-call-routing.md
           - name: Configurare chiamate di emergenza dinamiche
             href: configure-dynamic-emergency-calling.md
-          - name: Indirizzi di emergenza per le posizioni remote
-            href: emergency-calling-dispatchable-location.md
           - name: Gestire indirizzi di emergenza
             items:
               - name: 'Aggiungere, modificare o rimuovere una posizione di emergenza per l''organizzazione'
