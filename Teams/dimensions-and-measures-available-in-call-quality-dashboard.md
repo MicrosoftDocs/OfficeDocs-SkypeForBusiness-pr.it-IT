@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottenere informazioni dettagliate sulle dimensioni e le misure usate dal Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: bd9df17a832b02ad71591daae0b54df9a1b77f0d
-ms.sourcegitcommit: 6aecab65836feaa8da14aad17a3088a18ece3bdf
+ms.openlocfilehash: 4df31782e7f78818df5f9a849d0c814e07c52adb
+ms.sourcegitcommit: d976e49943aedd511bd6a80b02afeac4a6453406
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61267799"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "61362553"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili in Call Quality Dashboard (CQD)
 
@@ -58,7 +58,63 @@ Ad esempio, qui ogni riga rappresenta una coppia di agenti utente coinvolti in u
 
 ## <a name="dimensions"></a>Dimensioni
 
-Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portale CQD. Molti valori di quota possono essere usati anche come filtri. La tabella seguente elenca le dimensioni attualmente disponibili in CQD, nell'ordine indicato nell'editor di query usato per creare report o modificare report definiti in precedenza.
+Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portale CQD. Molti valori di quota possono essere usati anche come filtri.
+
+### <a name="dimension-data-types-and-units"></a>Tipi di dati e unità di misura delle dimensioni
+
+#### <a name="boolean"></a>Boolean
+
+I valori booleani sono sempre True o False. In alcuni casi, True può anche essere rappresentato come 1 e False come 0.
+
+#### <a name="range"></a>Intervallo
+
+Le dimensioni fornite come intervallo o gruppo di valori sono indicate utilizzando il formato seguente:
+
+ _\<sort order string\> [\<lower bound inclusive\> - \<upper bound exclusive\>_
+
+Ad esempio, la dimensione Durata (Minuti) rappresenta la durata della chiamata in secondi e il valore è riferito come intervallo di valori.
+
+|Duration (Minutes) |Interpretazione |
+|:--- |:--- |
+|062: [0 - 0) |Durata flusso = 0 minuti |
+|064: [1 - 2) |1 minuto < = durata flusso < 2 minuti |
+|065: [2 - 3) |2 minuti < = durata flusso < 3 minuti |
+|066: [3–4) |3 minuti < = durata flusso < 4 minuti |
+|  | |
+
+La stringa \<sort order string> si usa per controllare l'ordinamento quando si presentano i dati e si può utilizzare per filtrare. Ad esempio, un filtro su Durata (Minuti) < "065", mostrerà flussi con una durata inferiore a 2 minuti (lo "0" iniziale è necessario perché il filtro funzioni come previsto). Il valore effettivo della stringa di ordinamento non è significativo.
+
+> [!NOTE]
+> È possibile notare intervalli che sembrano non essere validi per una determinata dimensione. Un esempio potrebbe essere l'intensità del segnale Wifi che mostra le chiamate nell'intervallo 082: [100 - 110) quando 100 è il valore massimo possibile per l'intensità del segnale Wifi. Ciò è dovuto al modo in cui i numeri vengono assegnati agli intervalli nel modello di dati di CQD. Se un valore numerico intero è 99, verrà conteggiato nell'intervallo 081: [90 - 100). Se il valore è 100, verrà conteggiato nell'intervallo 082: [100 - 110). Questo non indica che sono stati riportati valori di potenza del segnale Wifi maggiori del 100%.
+
+#### <a name="enumeration-strings"></a>Stringhe di enumerazione
+
+Le stringhe usate da CQD sono spesso derivate da file di dati e possono essere quasi qualsiasi combinazione di caratteri entro la lunghezza consentita. Alcune dimensioni hanno l'aspetto di stringhe, ma poiché possono essere solo di un breve elenco di valori predefiniti, sono enumerazioni e non stringhe vere. Alcune stringhe di enumerazione vengono usate anche in coppie.
+
+#### <a name="enumeration-pair"></a>Coppia di enumerazione
+
+Le dimensioni fornite come coppia di enumerazione sono indicate utilizzando il formato seguente:
+
+ _\<enumeration value from one end point\> : \<enumeration value from the other endpoint\>_
+
+L'ordinamento dei valori di enumerazione è coerente ma non riflette l'ordinamento del primo e del secondo endpoint.
+
+Ad esempio, la coppia dettagli di connessione di rete mostra i valori dei dettagli di connessione di rete dei due endpoint:
+
+|Network Connection Detail Pair |Interpretazione |
+|:--- |:--- |
+|Cablata : Cablata |Il primo e il secondo endpoint usavano entrambi connessioni ethernet cablate. |
+|Cablata : WiFi |Il primo endpoint usava una connessione ethernet cablata mentre il secondo endpoint usava una connessione WiFi oppure il secondo endpoint usava una connessione ethernet cablata mentre il primo endpoint usava una connessione WiFi. |
+|: WiFi |Il primo endpoint usava una connessione WiFi e la connessione di rete usata dal secondo endpoint era sconosciuta oppure il secondo endpoint usava una connessione WiFi e la connessione di rete usata dal primo endpoint era sconosciuta. |
+| | |
+
+#### <a name="blank-values"></a>Valori vuoti
+
+La tabella seguente elenca i possibili motivi per cui una dimensione può essere vuota. Molte dimensioni e misure saranno vuote se la dimensione Record QoE disponibile è falsa. Questo problema si verifica in genere quando la chiamata non è stata stabilita correttamente o quando il client non è riuscito a inviare la telemetria al servizio.
+
+### <a name="available-dimensions"></a>Dimensioni disponibili 
+
+La tabella seguente elenca le dimensioni attualmente disponibili in CQD, nell'ordine indicato nell'editor di query usato per creare report o modificare report definiti in precedenza.
 
 |Nome|Tipo di dati|Descrizione|Possibili motivi per i valori vuoti|
 |:---|:---|:---|:---|
@@ -71,8 +127,8 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Second CPU Processor Speed  | Velocità CPU in MHz  | Velocità in MHz della CPU utilizzata dal secondo endpoint. <br/> **Valore di esempio:** 1800 | <br/>&bull; Questi dati non sono stati segnalati dall'endpoint     |
 | First Endpoint  | Stringa  | Nome della macchina riportato dal primo endpoint se l'endpoint è un server o un client di servizi cloud. <br/> **Valore di esempio:** MACHINENAME  | <br/>&bull; Questi dati non sono stati segnalati dall'endpoint    |
 | Second Endpoint  | Stringa  | Nome della macchina riportato dal secondo endpoint se l'endpoint è un server o un client di servizi cloud. <br/> **Valore di esempio:** MACHINENAME | <br/>&bull; Questi dati non sono stati segnalati dall'endpoint     |
-| First OS  | Stringa  | Stringa completa di sistema operativo completo e architettura riportata dal primo endpoint. <br/> **Valore di esempio:** Windows 10.0.14996 SP: 0.0 Tipo: 1(Workstation) Suite: 256 Arch: x64 WOW64: True | <br/>&bull; Questi dati non sono stati segnalati dall'endpoint |
-| Second OS  | Stringa  | Stringa completa di sistema operativo completo e architettura riportata dal secondo endpoint. <br/> **Valore di esempio:** Windows 10.0.14996 SP: 0.0 Tipo: 1(Workstation) Suite: 256 Arch: x64 WOW64: True  | <br/>&bull; Questi dati non sono stati segnalati dall'endpoint |
+| First OS  | Stringa  | Stringa completa di sistema operativo completo e architettura riportata dal primo endpoint. <br/> Valore di **esempio:** Windows 10.0.14996 SP: 0.0 Tipo: 1(Workstation) Suite: 256 Arch: x64 WOW64: True | <br/>&bull; Questi dati non sono stati segnalati dall'endpoint |
+| Second OS  | Stringa  | Stringa completa di sistema operativo completo e architettura riportata dal secondo endpoint. <br/> Valore di **esempio:** Windows 10.0.14996 SP: 0.0 Tipo: 1(Workstation) Suite: 256 Arch: x64 WOW64: True  | <br/>&bull; Questi dati non sono stati segnalati dall'endpoint |
 | First OS Filtered  | Stringa  | Nome del sistema operativo e versione principale e secondaria riportati dal primo endpoint. Questa stringa può contenere più del nome e della versione del sistema operativo. <br/> **Valore di esempio:** Windows 10  | <br/>&bull; L'endpoint non ha segnalato queste informazioni <br/>&bull; Il report da questo endpoint non è stato ricevuto.  |
 | Second OS Filtered  | Stringa  | Nome del sistema operativo e versione principale e secondaria riportati dal secondo endpoint. Questa stringa può contenere più del nome e della versione del sistema operativo. <br/> **Valore di esempio:** Windows 10  | <br/>&bull; L'endpoint non ha segnalato queste informazioni <br/>&bull; Il report da questo endpoint non è stato ricevuto |
 | First OS Architecture  | Stringa  | Architettura hardware riportata dal primo endpoint. <br/> **Valore di esempio:** x64  | &bull; L'endpoint non ha segnalato queste informazioni <br/>&bull; Il report da questo endpoint non è stato ricevuto <br/>&bull; Il formato dell'architettura non è stato riconosciuto |
@@ -155,11 +211,11 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Audio and Video Call  | Boolean  | True se la chiamata ha flussi audio e video, False in caso contrario    | &bull; Non sono stati segnalati dati per indicare i tipi di elementi multimediali dello stream. |
 | Duration 5 seconds or less  | Boolean  | True se lo stream ha una durata massima di 5 secondi, False in caso contrario.   ||
 | Duration 60 seconds or more  | Boolean  | True se lo stream ha una durata di 60 secondi maggiore, False in caso contrario.   | |
-| È Teams  | Boolean  | True indica che il primo o il secondo agente utente per lo stream è un endpoint Microsoft Teams endpoint. <br/> False indica che gli agenti utente sono Skype for Business endpoint. |  |
+| È Teams  | Boolean  | True indica che il primo o il secondo agente utente per lo stream è un endpoint Microsoft Teams finale. <br/> False indica che gli agenti utente sono Skype for Business endpoint. |  |
 | Duration (Minutes)  | Intervallo (minuti)  | Durata dello stream in minuti. I valori sono raggruppati per intervalli.<br/> **Valore di esempio:** 065: [3–4) ||
 | Duration (Seconds)  | Intervallo (secondi) | Durata dello stream in secondi. I valori sono raggruppati per intervalli.<br/> **Valore di esempio:** 062: [1 -2)||
 |**Data**||| |
-|Ora di fine|  Stringa| Ora del giorno in cui la chiamata è terminata.|&bull; La configurazione della chiamata non è riuscita o non è stata stabilita (vedere Motivo risposta CDR) |
+|Ora di fine|  Stringa| Ora del giorno in cui la chiamata è terminata. I valori vengono riportati nel fuso orario UTC. |&bull; La configurazione della chiamata non è riuscita o non è stata stabilita (vedere Motivo risposta CDR) |
 | Year  | Numero intero  | Anno della fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 2018 | |
 | Month  | Numero intero  | Mese della fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 2 | |
 | Day  | Numero intero  | Giorno della fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 1 | |
@@ -173,7 +229,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 |Settimana|  Stringa  |Data di inizio della settimana in cui ha avuto luogo la chiamata. <br/> **Valore di esempio:** 2019-09-01 |&bull; La configurazione della chiamata non è riuscita o non è stata stabilita (vedere Motivo risposta CDR) |
 | Month Year  | Stringa  | Mese e anno della fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 2017-02 | |
 | Full Month  | Data e ora  | Mese completo della fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 2017-02-01T00:00:00 | |
-|Ora di inizio|Stringa  |Ora del giorno in cui è iniziata la chiamata.|&bull; La configurazione della chiamata non è riuscita o non è stata stabilita (vedere Motivo risposta CDR) |
+|Ora di inizio|Stringa  |Ora del giorno in cui è iniziata la chiamata. I valori vengono riportati nel fuso orario UTC. |&bull; La configurazione della chiamata non è riuscita o non è stata stabilita (vedere Motivo risposta CDR) |
 |**UserAgent** | | | |
 | First Domain  | Stringa  | Dominio dell'utente del primo endpoint. Se il primo endpoint è un server di conferenze, usa il dominio dell'organizzatore della riunione. Può anche essere il dominio degli account di servizio utilizzati nello scenario.  <br/> **Valore di esempio:** <span></span> contoso.com | |
 | Second Domain  | Stringa  | Dominio dell'utente del secondo endpoint. Se il secondo endpoint è un server di conferenze, usa il dominio dell'organizzatore della riunione. Può anche essere il dominio degli account di servizio utilizzati nello scenario. <br/> **Valore di esempio:** <span></span> contoso.com  | |
@@ -251,7 +307,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 |**WiFi**||||
 | First Wi-Fi Microsoft Driver  | Stringa  | Nome del driver Microsoft WiFi usato riportato dal primo endpoint. Il valore può essere localizzato in base alla lingua utilizzata dall'endpoint.<br/> **Valore di esempio:** Scheda virtuale Microsoft Hosted Network  | <br/>&bull; Il WiFi non è stato usato dall'endpoint <br/>&bull; Le informazioni sul driver non sono stati riportati|
 | Second Wi-Fi Microsoft Driver  | Stringa  | Nome del driver Microsoft WiFi usato riportato dal secondo endpoint. Il valore può essere localizzato in base alla lingua utilizzata dall'endpoint.<br/> **Valore di esempio:** Scheda virtuale Microsoft Hosted Network  | <br/>&bull; Il WiFi non è stato usato dall'endpoint <br/>&bull; Le informazioni sul driver non sono stati riportati|
-| Driver fornitore Wi-Fi first Wi-Fi  | Stringa  | Fornitore e nome del driver WiFi riportati dal primo endpoint. <br/> **Valore di esempio:** Contoso Dual Band Wireless-AC Driver  | <br/>&bull; Il WiFi non è stato usato dall'endpoint <br/>&bull; Le informazioni sul driver non sono stati riportati |
+| Driver Wi-Fi first-Wi-Fi  | Stringa  | Fornitore e nome del driver WiFi riportati dal primo endpoint. <br/> **Valore di esempio:** Contoso Dual Band Wireless-AC Driver  | <br/>&bull; Il WiFi non è stato usato dall'endpoint <br/>&bull; Le informazioni sul driver non sono stati riportati |
 | Second Wi-Fi Vendor Driver  | Stringa  | Fornitore e nome del driver WiFi riportati dal secondo endpoint.  <br/> **Valore di esempio:** Contoso Dual Band Wireless-AC Driver | <br/>&bull; Il WiFi non è stato usato dall'endpoint <br/>&bull; Le informazioni sul driver non sono stati riportati |
 | First Wi-Fi Microsoft Driver Version  | Stringa  | Versione del driver Microsoft WiFi riportata dal primo endpoint. <br/> **Valore di esempio:** Microsoft:10.0.14393.0 | <br/>&bull; Il WiFi non è stato usato dall'endpoint <br/>&bull; Le informazioni sul driver non sono stati riportati  |
 | Second Wi-Fi Microsoft Driver Version  | Stringa  | Versione del driver Microsoft WiFi riportata dal secondo endpoint. <br/> **Valore di esempio:** Microsoft:10.0.14393.0 | <br/>&bull; Il WiFi non è stato usato dall'endpoint <br/>&bull; Le informazioni sul driver non sono stati riportati  |
@@ -266,7 +322,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Prima Wi-Fi banda  | Stringa  | Banda WiFi usata, secondo quanto riportato dal primo endpoint. <br/> **Valore di esempio:** 5,0 Ghz  | <br/>&bull; Il valore non è stato calcolato dall'endpoint <br/>&bull; Il valore non è stato segnalato  |
 | Second Wi-Fi Band  | Stringa  | Banda WiFi usata, secondo quanto riportato dal secondo endpoint. <br/> **Valore di esempio:** 5,0 Ghz  | <br/>&bull; Il valore non è stato calcolato dall'endpoint <br/>&bull; Il valore non è stato segnalato  |
 | Prima Wi-Fi potenza del segnale  | Stringa  | Potenza del segnale WiFi in percentuale [0-100] riportata dal primo endpoint. <br/> **Valore di esempio:** 081: [90 - 100)  | <br/>&bull; Il valore non è stato calcolato dall'endpoint <br/>&bull; Il valore non è stato segnalato  |
-| Second Wi-Fi Signal Strength  | Stringa  | Potenza del segnale WiFi in percentuale [0-100] riportata dal secondo endpoint. <br/> **Valore di esempio:** 081: [90 - 100)  | <br/>&bull; Il valore non è stato calcolato dall'endpoint <br/>&bull; Il valore non è stato segnalato  |
+| Potenza Wi-Fi segnale  | Stringa  | Potenza del segnale WiFi in percentuale [0-100] riportata dal secondo endpoint. <br/> **Valore di esempio:** 081: [90 - 100)  | <br/>&bull; Il valore non è stato calcolato dall'endpoint <br/>&bull; Il valore non è stato segnalato  |
 | Carica Wi-Fi batteria  | Intervallo (percentuale)  | Carica stimata rimasta nella batteria in percentuale [0-99] riportata dal primo endpoint. I valori sono raggruppati per intervalli. 0 indica che il dispositivo era connesso fisicamente.<br/> **Valore di esempio:** 081: [90 - 100) | &bull; Il WiFi non è stato usato <br/>&bull; Il valore dell'addebito non è stato riportato   |
 | Second Wi-Fi Battery Charge  | Intervallo (percentuale)  | Carica stimata rimasta nella batteria in percentuale [0-99] riportata dal secondo endpoint. I valori sono raggruppati per intervalli. 0 indica che il dispositivo era connesso fisicamente.<br/> **Valore di esempio:** 081: [90 - 100) | &bull; Il WiFi non è stato usato <br/>&bull; Il valore dell'addebito non è stato riportato  |
 |**Metriche**||||
@@ -419,7 +475,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Media Relay  | Stringa  | Indirizzo IP dei Media Relay usati per la sessione. Potrebbe segnalare una coppia di relay separati da un segno "+".<br/> **Valore di esempio:** "13.107.8.2 + 13.107.8.2"  | &bull; Questi dati non sono stati segnalati dagli endpoint  |
 | Is Anonymous Join Session  | Boolean  | Vero se la partecipazione dell'utente alla conferenza era anonima, Falso negli altri casi.   | &bull; Nessun dato per determinare se l'utente è stato aggiunto in forma anonima o meno   |
 | Blob di diagnostica multimediale  | Boolean  | Vero se erano presenti dati di diagnostica per il supporto, Falso negli altri casi.   | &bull; Alcuni dati di segnalazione non sono stati raccolti per questo flusso   |
-| Call Setup Failure Reason  | Enumerazione  | Classificazione del motivo per cui non è stato possibile stabilire una connessione con il supporto. <br/>**Valori possibili:** <br/> **Regola di esenzione** del controllo dei pacchetti profonda FW mancante: indica che le apparecchiature di rete lungo il percorso hanno probabilmente impedito la creazione del percorso multimediale a causa delle regole di ispezione profonda dei pacchetti. Il motivo potrebbe essere l'errata configurazione delle regole del proxy o del firewall. <br/> **Regola di esenzione** del blocco IP FW mancante: indica che l'apparecchiatura di rete lungo il percorso ha probabilmente impedito la connessione del percorso multimediale alla Office 365 rete. Il motivo potrebbe essere l'errata configurazione delle regole del proxy o del firewall che consentono l'accesso agli indirizzi IP e alle porte usate per il traffico di Skype for Business. <br/> **Altro:** indica che non è stato possibile stabilire il percorso multimediale per la chiamata, ma non è stato possibile classificare la causa radice. <br/> Not Media Failure : indica che non è stato rilevato alcun problema con la creazione del percorso multimediale.  | &bull; La configurazione della chiamata non è riuscita a causa di un problema di supporto sconosciuto  |
+| Call Setup Failure Reason  | Enumerazione  | Classificazione del motivo per cui non è stato possibile stabilire una connessione con il supporto. <br/>**Valori possibili:** <br/> **Regola di esenzione** del controllo dei pacchetti profonda FW mancante: indica che le apparecchiature di rete lungo il percorso hanno probabilmente impedito la creazione del percorso multimediale a causa delle regole di ispezione profonda dei pacchetti. Il motivo potrebbe essere l'errata configurazione delle regole del proxy o del firewall. <br/> **Regola di esenzione** blocco IP FW mancante: indica che le apparecchiature di rete lungo il percorso hanno probabilmente impedito la connessione del percorso multimediale alla Office 365 rete. Il motivo potrebbe essere l'errata configurazione delle regole del proxy o del firewall che consentono l'accesso agli indirizzi IP e alle porte usate per il traffico di Skype for Business. <br/> **Altro:** indica che non è stato possibile stabilire il percorso multimediale per la chiamata, ma non è stato possibile classificare la causa radice. <br/> Not Media Failure : indica che non è stato rilevato alcun problema con la creazione del percorso multimediale.  | &bull; La configurazione della chiamata non è riuscita a causa di un problema di supporto sconosciuto  |
 | Tipo di sessione  | Enumerazione <br/>**Valori possibili:** <br/> Conf, P2P  | Indica se il tipo di sessione di chiamata è stato uno scenario di riunione (Conf) o di chiamata peer-to-peer (P2P). <br/> **Valore di esempio:** Conf | |
 | Motivo risposta CDR  | Enumerazione <br/>**Valori possibili:** <br/> 0 o 200 = "OK" <br/> 410 = "MediaConnectivityErrors"<br/> 480 = "UserUnavailable"<br/> 487 = "PickupTimedOut" <br/> 603 = "CallDeclined" <br/> Tutti gli altri codici CDR = "Altro" | Fornisce il motivo per cui una sessione di chiamata si conclude, se la chiamata è riuscita o meno e consente la differenziazione tra le chiamate incomplete (nessuna risposta, occupato, rifiutata) e le chiamate non riuscite (creazione di supporti multimediali). <br/> **Valore di esempio:** OK | <br/>&bull; Il valore "Altro" implica che il codice di risposta non è diagnosticamente utile all'esterno dei team di progettazione Microsoft |
 |**DNS**||||
@@ -439,13 +495,13 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Secondo testo di feedback|Stringa| Testo di feedback dettagliato, se presente, fornito dall'utente del secondo endpoint al termine di una chiamata. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.||
 | Nome primo endpoint client|Stringa|Nome computer del primo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.||
 | Second Client Endpoint Name|Stringa|Nome computer del secondo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.||
-| Nome prodotto primo endpoint|Stringa|Il nome del prodotto del primo endpoint (Skype for Business o Microsoft Teams).||
+| Nome prodotto primo endpoint|Stringa|Nome del prodotto del primo endpoint (Skype for Business o Microsoft Teams).||
 | Second Endpoint Product Name|Stringa|Nome del prodotto del secondo endpoint (Skype for Business o Microsoft Teams).||
-| First UserType|Stringa di enumerazione|Tipo di utente nel primo endpoint. <br/> **Valori possibili:** Utente, Server, Anonimo, Applicazione, PSTN, Segreteria telefonica, Sconosciuto <br/> <br/>**Sconosciuto:** valore predefinito se Non è possibile determinare UserType in base alle informazioni ricevute. <br/>**PSTN-** un utente PSTN. <br/>**Anonimo:** un utente Teams o un Skype for Business visitatore. <br/>**Applicazione:** un bot. <br/>**Utente:** un AAD utente, può essere Skype for Business utente o Teams utente. <br/>**Server:** per le conferenze, almeno un lato è un server. <br/>**Segreteria telefonica:** l'endpoint ha ricevuto una risposta dal servizio di segreteria telefonica.||
-| Second UserType|Stringa di enumerazione|Tipo di utente nel secondo endpoint. <br/> **Valori possibili:** Utente, Server, Anonimo, Applicazione, PSTN, Segreteria telefonica, Sconosciuto <br/> <br/>**Sconosciuto:** valore predefinito se Non è possibile determinare UserType in base alle informazioni ricevute. <br/>**PSTN-** un utente PSTN. <br/>**Anonimo:** un utente Teams o un Skype for Business visitatore. <br/>**Applicazione:** un bot. <br/>**Utente:** un AAD utente, può essere Skype for Business utente o Teams utente. <br/>**Server:** per le conferenze, almeno un lato è server. <br/>**Segreteria telefonica:** l'endpoint ha ricevuto una risposta dal servizio di segreteria telefonica.||
-| ObjectId dell'organizzatore|Stringa|ID dell'oggetto Active Directory dell'utente dell'organizzatore della riunione. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.  | &bull; L'utente non ha le autorizzazioni per visualizzare EUII. &bull; Il record è più vecchio di 28 giorni. |
-| UPN dell'organizzatore|Stringa|Nome dell'entità utente (UPN) dell'utente dell'organizzatore della riunione. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.| &bull; L'utente non ha le autorizzazioni per visualizzare EUII. &bull; Il record è più vecchio di 28 giorni. |
-| Uri Sip dell'organizzatore|Stringa|URI SIP (Session Initiation Protocol) dell'utente dell'organizzatore della riunione. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.| &bull;Popolato solo per Skype for Business endpoint. <br/>&bull; L'utente non ha le autorizzazioni per visualizzare EUII. &bull; Il record è più vecchio di 28 giorni.|
+| First UserType|Stringa di enumerazione|Tipo di utente nel primo endpoint. <br/> **Valori possibili:** Utente, Server, Anonimo, Applicazione, PSTN, Segreteria telefonica, Sconosciuto <br/> <br/>**Sconosciuto:** valore predefinito se Non è possibile determinare UserType in base alle informazioni ricevute. <br/>**PSTN-** un utente PSTN. <br/>**Anonimo:** un Teams utente o Skype for Business visitatore. <br/>**Applicazione:** un bot. <br/>**Utente:** un AAD utente può essere Skype for Business utente o Teams utente. <br/>**Server:** per le conferenze, almeno un lato è un server. <br/>**Segreteria telefonica:** l'endpoint ha ricevuto una risposta dal servizio di segreteria telefonica.||
+| Second UserType|Stringa di enumerazione|Tipo di utente nel secondo endpoint. <br/> **Valori possibili:** Utente, Server, Anonimo, Applicazione, PSTN, Segreteria telefonica, Sconosciuto <br/> <br/>**Sconosciuto:** valore predefinito se Non è possibile determinare UserType in base alle informazioni ricevute. <br/>**PSTN-** un utente PSTN. <br/>**Anonimo:** un Teams utente o Skype for Business visitatore. <br/>**Applicazione:** un bot. <br/>**Utente:** un AAD utente può essere Skype for Business utente o Teams utente. <br/>**Server:** per le conferenze, almeno un lato è server. <br/>**Segreteria telefonica:** l'endpoint ha ricevuto una risposta dal servizio di segreteria telefonica.||
+| ObjectId dell'organizzatore|Stringa|ID dell'oggetto Active Directory dell'utente dell'organizzatore della riunione. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.  | &bull; L'utente non ha le autorizzazioni per visualizzare EUII. <br/>&bull; Il record è più vecchio di 28 giorni. |
+| UPN dell'organizzatore|Stringa|Nome dell'entità utente (UPN) dell'utente dell'organizzatore della riunione. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.| &bull; L'utente non ha le autorizzazioni per visualizzare EUII. <br/>&bull; Il record è più vecchio di 28 giorni. |
+| Uri Sip dell'organizzatore|Stringa|URI SIP (Session Initiation Protocol) dell'utente dell'organizzatore della riunione. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.| &bull;Popolato solo per Skype for Business endpoint. <br/>&bull; L'utente non ha le autorizzazioni per visualizzare EUII. <br/>&bull; Il record è più vecchio di 28 giorni.|
 |**Dispositivi**||||
 | First Capture Device Form Factor|Stringa di enumerazione|Fattore di forma del dispositivo di acquisizione audio (microfono) nel primo endpoint. | &bull; Non riportato dall'endpoint. |
 | Second Capture Device Form Factor|Stringa di enumerazione|Fattore di forma del dispositivo di acquisizione audio (microfono) nel primo endpoint. | &bull; Non riportato dall'endpoint. |
@@ -468,17 +524,17 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 |Posizione MP PSTN|Stringa|La posizione processore multimediale mostrerà il percorso multimediale in modalità non bypass.<br/>**Esempio:** USWE||
 |Motivo fine chiamata PSTN|Int|Un codice di risposta intero a tre cifre mostra lo stato finale della chiamata. <br/> Per altre informazioni sulla spiegazione SIP, vedere [l'elenco dei codici di risposta SIP.](https://www.wikipedia.org/wiki/List_of_SIP_response_codes) <br/>**Esempio:** 404||
 |**App vocali (anteprima)**||Per questa categoria, vedere il [Operatore automatico & cronologia della coda di chiamata](aa-cq-cqd-historical-reports.md) per altre informazioni.||
-|Operatore automatico Identity|Stringa|Nome dell'account della risorsa allegato al Operatore automatico.||
+|Operatore automatico Identity|Stringa|Nome dell'account della risorsa allegato al Operatore automatico.|&bull; L'utente non ha le autorizzazioni per visualizzare EUII. <br/>&bull; Il record è più vecchio di 28 giorni.|
 |Operatore automatico Chain Index|Numero intero| Ordine dei Operatore automatico nella chiamata.||
-|Operatore automatico inizio catena|Stringa|Ora Operatore automatico di inizio e data di inizio della chiamata.||
+|Operatore automatico inizio catena|Stringa|La Operatore automatico e la data di inizio della chiamata.||
 |Operatore automatico Durata catena secondi|Numero intero| Durata della chiamata nel Operatore automatico, misurata in secondi.||
 |Operatore automatico numero di azioni chiamanti|Numero intero|Numero di azioni selezionate dal chiamante in un Operatore automatico durante la chiamata.||
-|Operatore automatico chiama Flow|Stringa| Incapsula i diversi stati della chiamata Operatore automatico chiamata.||
+|Operatore automatico chiamata Flow|Stringa| Incapsula i diversi stati della chiamata Operatore automatico chiamata.||
 |Operatore automatico trasferimento|Enumerazione| Tipo di destinazione del trasferimento di chiamata.||
 |Operatore automatico risultato della chiamata|Enumerazione| Risultato della chiamata finale con Operatore automatico. ||
-|Operatore automatico di ricerca nella directory|Enumerazione|Ultimo metodo di ricerca della rubrica usato.||
+|Operatore automatico ricerca nella directory|Enumerazione|Ultimo metodo di ricerca della rubrica usato.||
 |Operatore automatico conteggio|Numero intero| Numero di operatori automatici coinvolti nella chiamata.||
-|Identità coda di chiamata|Stringa|Nome dell'account della risorsa collegato alla coda di chiamata. ||
+|Identità coda di chiamata|Stringa|Nome dell'account della risorsa collegato alla coda di chiamata. |&bull; L'utente non ha le autorizzazioni per visualizzare EUII. <br/>&bull; Il record è più vecchio di 28 giorni.|
 |La coda di chiamata è in modalità conferenza|Boolean|Se True, coda di chiamata è configurata per l'uso della modalità conferenza, altrimenti coda di chiamata è configurata per l'uso della modalità di trasferimento. ||
 |Conteggio agenti coda di chiamata|Numero intero|Numero di agenti configurati nella coda. ||
 |Numero di consenso esplicito dell'agente della coda di chiamata|Numero intero|Numero di agenti configurati che hanno acconsentito esplicitamente a entrare nella coda. ||
@@ -486,6 +542,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 |Risultato della chiamata in coda di chiamata|Enumerazione|Stato finale della chiamata in coda di chiamata. ||
 |Azione stato finale coda di chiamata|Enumerazione|Azione finale Coda di chiamata. ||
 |Tempo di timeout della coda di chiamata|Numero intero|Valore di timeout configurato per la coda di chiamata. ||
+|Trasferito dall'identità della coda di chiamata|Stringa|Nome dell'account della risorsa allegato alla coda di chiamata che ha trasferito la chiamata. |&bull; L'utente non ha le autorizzazioni per visualizzare EUII. <br/>&bull; Il record è più vecchio di 28 giorni.|
 |È Operatore automatico coinvolta|Boolean| Se True, un Operatore automatico è stato coinvolto in una determinata chiamata o flusso.||
 |È coinvolta la coda di chiamata|Boolean|Se True, una coda di chiamata è stata coinvolta in una determinata chiamata o flusso. ||
 |**Riunione**||||
@@ -502,59 +559,6 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 |**Scenario**||||
 | Scenario Pair  | Coppia enumerata  | Coppia che mostra se gli endpoint erano situati all'interno o all'esterno della rete aziendale in base alla mappatura della subnet e ai dettagli di connessione della rete. <br/> **Nota:** Le coppie sono separate da '--'. <br/> **Valore di esempio:** Client-Inside--Client-Inside-wifi  | &bull; Il tipo di connettività di rete era sconosciuto per uno o entrambi gli endpoint.  |
 
-
-
-### <a name="notes-on-dimension-data-typeunits"></a>Note sul tipo/unità di dati delle dimensioni
-
-#### <a name="boolean"></a>Boolean
-
-I valori booleani sono sempre True o False. In alcuni casi, True può anche essere rappresentato come 1 e False come 0.
-
-#### <a name="range"></a>Intervallo
-
-Le dimensioni fornite come intervallo o gruppo di valori sono indicate utilizzando il formato seguente:
-
- _\<sort order string\> [\<lower bound inclusive\> - \<upper bound exclusive\>_
-
-Ad esempio, la dimensione Durata (Minuti) rappresenta la durata della chiamata in secondi e il valore è riferito come intervallo di valori.
-
-|Duration (Minutes) |Interpretazione |
-|:--- |:--- |
-|062: [0 - 0) |Durata flusso = 0 minuti |
-|064: [1 - 2) |1 minuto < = durata flusso < 2 minuti |
-|065: [2 - 3) |2 minuti < = durata flusso < 3 minuti |
-|066: [3–4) |3 minuti < = durata flusso < 4 minuti |
-|  | |
-
-La stringa \<sort order string> si usa per controllare l'ordinamento quando si presentano i dati e si può utilizzare per filtrare. Ad esempio, un filtro su Durata (Minuti) < "065", mostrerà flussi con una durata inferiore a 2 minuti (lo "0" iniziale è necessario perché il filtro funzioni come previsto). Il valore effettivo della stringa di ordinamento non è significativo.
-
-> [!NOTE]
-> È possibile notare intervalli che sembrano non essere validi per una determinata dimensione. Un esempio potrebbe essere l'intensità del segnale Wifi che mostra le chiamate nell'intervallo 082: [100 - 110) quando 100 è il valore massimo possibile per l'intensità del segnale Wifi. Ciò è dovuto al modo in cui i numeri vengono assegnati agli intervalli nel modello di dati di CQD. Se un valore numerico intero è 99, verrà conteggiato nell'intervallo 081: [90 - 100). Se il valore è 100, verrà conteggiato nell'intervallo 082: [100 - 110). Questo non indica che sono stati riportati valori di potenza del segnale Wifi maggiori del 100%.
-
-#### <a name="enumeration-strings"></a>Stringhe di enumerazione
-
-Le stringhe usate da CQD sono spesso derivate da file di dati e possono essere quasi qualsiasi combinazione di caratteri entro la lunghezza consentita. Alcune dimensioni hanno l'aspetto di stringhe, ma poiché possono essere solo di un breve elenco di valori predefiniti, sono enumerazioni e non stringhe vere. Alcune stringhe di enumerazione vengono usate anche in coppie.
-
-#### <a name="enumeration-pair"></a>Coppia di enumerazione
-
-Le dimensioni fornite come coppia di enumerazione sono indicate utilizzando il formato seguente:
-
- _\<enumeration value from one end point\> : \<enumeration value from the other endpoint\>_
-
-L'ordinamento dei valori di enumerazione è coerente ma non riflette l'ordinamento del primo e del secondo endpoint.
-
-Ad esempio, la coppia dettagli di connessione di rete mostra i valori dei dettagli di connessione di rete dei due endpoint:
-
-|Network Connection Detail Pair |Interpretazione |
-|:--- |:--- |
-|Cablata : Cablata |Il primo e il secondo endpoint usavano entrambi connessioni ethernet cablate. |
-|Cablata : WiFi |Il primo endpoint usava una connessione ethernet cablata mentre il secondo endpoint usava una connessione WiFi oppure il secondo endpoint usava una connessione ethernet cablata mentre il primo endpoint usava una connessione WiFi. |
-|: WiFi |Il primo endpoint usava una connessione WiFi e la connessione di rete usata dal secondo endpoint era sconosciuta oppure il secondo endpoint usava una connessione WiFi e la connessione di rete usata dal primo endpoint era sconosciuta. |
-| | |
-
-#### <a name="blank-values"></a>Valori vuoti
-
-Nella tabella sopra riportata sono elencati i motivi possibili per cui una dimensione potrebbe essere vuota. Molte dimensioni e misure saranno vuote se la dimensione Record QoE disponibile è falsa. In genere questa situazione si verifica quando non è stato possibile effettuare la chiamata.
 
 ## <a name="measurements"></a>Misure
 
@@ -596,8 +600,8 @@ Molti valori di Misura possono essere usati anche come filtri. La tabella seguen
 |Audio Poor Due To RoundTrip Count |Numero di flussi |Numero di flussi audio in cui il percorso di andata e ritorno supera le soglie elencate qui: [Classificazione dello stream in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md). |
 |Audio Poor Due To ConcealedRatio Count |Numero di flussi |Numero di flussi audio in cui il rapporto nascosto supera le soglie elencate qui: [Classificazione dello stream in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md). |
 |Audio SLA Good Call Count |Numero di chiamate |Numero di chiamate audio nell'ambito del contratto Skype for Business qualità vocale ( Contratto multilicenza per prodotti Microsoft e[servizi online](https://aka.ms/voicequalitysla)) classificato come soddisfare gli obiettivi di prestazioni di rete. |
-|Audio SLA Poor Call Count |Numero di chiamate |Numero di chiamate audio nell'ambito del contratto Skype for Business voice quality SLA ([Volume Licensing for Microsoft Products and Online Services](https://aka.ms/voicequalitysla)) classificato come non in linea con gli obiettivi di prestazioni di rete. |
-|Audio SLA Call Count |Numero di chiamate |Numero di chiamate audio nell'ambito del contratto di servizio Skype for Business qualità vocale ([Contratto multilicenza per prodotti Microsoft e servizi online).](https://aka.ms/voicequalitysla) |
+|Audio SLA Poor Call Count |Numero di chiamate |Numero di chiamate audio nell'ambito del contratto di servizio per la qualità vocale Skype for Business ( Contratto multilicenza per prodotti Microsoft e[servizi online](https://aka.ms/voicequalitysla)) classificato come non in linea con gli obiettivi di prestazioni di rete. |
+|Audio SLA Call Count |Numero di chiamate |Numero di chiamate audio nell'ambito del contratto Skype for Business qualità vocale ([Contratto multilicenza per prodotti Microsoft e servizi online).](https://aka.ms/voicequalitysla) |
 |Audio SLA Good Call Percentage |Percentuale |Percentuale delle chiamate audio che rientrano nell'ambito del contratto di servizio (SLA) sulla qualità vocale di Skype for Business ([Volume Licensing for Microsoft Products and Online Services](https://aka.ms/voicequalitysla)) la cui classificazione ha soddisfatto i target delle prestazioni di rete. |
 |Audio Good Call Stream Count |Numero di flussi |Numero di flussi audio in cui entrambi i flussi audio nella chiamata (call-leg) non sono classificati di qualità scarsa in base alle metriche di rete elencate di seguito: Classificazione dello stream [in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md). |
 |Audio Poor Call Stream Count |Numero di flussi |Numero di flussi audio in cui almeno un flusso audio nella chiamata (call-leg) è stato classificato di qualità scarsa in base alle metriche di rete elencate di seguito: Classificazione dello stream [in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md). |
@@ -620,12 +624,12 @@ Molti valori di Misura possono essere usati anche come filtri. La tabella seguen
 |Video Poor Due To VideoPostFecplr Count |Numero di flussi |Numero di flussi video in cui il video post fec plr supera le soglie elencate qui: [Classificazione dello stream in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md). |
 |Video Poor Due To VideoLocalFrameLossPercentageAvg Count |Numero di flussi |Numero di flussi video in cui l'avg percentuale di perdita di fotogrammi locali video supera le soglie elencate qui: [Classificazione dello stream in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md). |
 |Video Poor Due To VideoFrameRateAvg Count |Numero di flussi |Numero di flussi video in cui l'avg frequenza fotogrammi video supera le soglie elencate di seguito: [Classificazione flusso in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md). |
-|Video Poor Due to Freeze Count |Numero di flussi | Numero di flussi video principali in cui la metrica Blocca video supera le soglie elencate qui. [Classificazione flusso in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md). Questo campo è specifico per Microsoft Teams |
+|Video Poor Due to Freeze Count |Numero di flussi | Numero di flussi video principali in cui la metrica Blocca video supera le soglie elencate qui. [Classificazione flusso in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md). Questo campo è specifico di Microsoft Teams |
 |Video Poor Stream Count |Numero di flussi |Numero di flussi video classificati di qualità scarsa in base alle metriche di rete elencate nell'elenco [Classificazione dello stream in Call Quality Dashboard.](stream-classification-in-call-quality-dashboard.md) |
 |Video Good Stream Count |Numero di flussi |Numero di flussi video classificati come buoni in base alle metriche di rete elencate di seguito: [Classificazione dello stream in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md). |
 |Video Unclassified Stream Count |Numero di flussi |Numero di flussi video che non hanno dati sufficienti per essere classificati come buoni o di qualità scarsa in base alle metriche di rete elencate di seguito: Classificazione dello stream [in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md). |
 |Video Poor Percentage|Percentuale |Percentuale dei flussi video totali classificati di qualità scarsa in base alle metriche di rete elencate nell'elenco Classificazione dello [stream in Call Quality Dashboard.](stream-classification-in-call-quality-dashboard.md) |
-|Video Poor Percentage Due to Freeze|Percentuale | Percentuale di flussi video principali classificati di qualità scarsa in base alla metrica Video Poor Due to Freeze elencata in Classificazione dello stream [in Call Quality Dashboard.](stream-classification-in-call-quality-dashboard.md) Questo campo è specifico per Microsoft Teams |
+|Video Poor Percentage Due to Freeze|Percentuale | Percentuale di flussi video principali classificati di qualità scarsa in base alla metrica Video Poor Due to Freeze elencata in Classificazione dello stream [in Call Quality Dashboard.](stream-classification-in-call-quality-dashboard.md) Questo campo è specifico di Microsoft Teams |
 |VBSS Stream Count |Numero di flussi |Il numero di flussi di condivisione schermo basata su video. |
 |VBSS Poor Due To VideoPostFecplr Count |Numero di flussi |Numero di flussi di condivisione dello schermo basati su video in cui il video post fec plr supera le soglie elencate di seguito: Classificazione dello stream [in Call Quality Dashboard.](stream-classification-in-call-quality-dashboard.md) |
 |VBSS Poor Due To VideoLocalFrameLossPercentageAvg Count |Numero di flussi |Numero di flussi di condivisione dello schermo basati su video in cui l'avg percentuale di perdita di fotogrammi locali video supera le soglie elencate qui: Classificazione dello stream [in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md). |
@@ -693,7 +697,7 @@ Molti valori di Misura possono essere usati anche come filtri. La tabella seguen
 | Avg Healer FEC Packet Used Ratio|Intervallo (rapporto)|Rapporto medio dei pacchetti FEC usati rispetto al numero totale di pacchetti FEC ricevuti.|
 |Avg Round Trip |Millisecondi |Media del tempo di roundtrip medio di propagazione alla rete calcolato come da specifica RFC3550 in millisecondi relativamente ai flussi. |
 |Avg Round Trip Max |Millisecondi |Media del tempo di roundtrip massimo di propagazione alla rete calcolato come da specifica RFC3550 in millisecondi relativamente ai flussi. |
- Avg Packet Utilization|Numero di pacchetti|Numero medio Real-Time pacchetti RTP (Transport Protocol) inviati al secondo nella sessione.|
+ Avg Packet Utilization|Numero di pacchetti|Numero medio di Real-Time RTP (Transport Protocol) inviati al secondo nella sessione.|
 |Avg Network Jitter |Millisecondi |   Media di instabilità di rete calcolata su 20 secondi di finestre durante la sessione. |
 | Avg Network Jitter Max|Millisecondi |Media del massimo instabilità di rete in millisecondi calcolata su finestre di 20 secondi durante la sessione.  |
 | Avg Network Jitter Min|Millisecondi|Media dei valori minimi di instabilità della rete in millisecondi calcolati su finestre di 20 secondi durante la sessione per i flussi.|

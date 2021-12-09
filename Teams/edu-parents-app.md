@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0d875c6cd753e4c2e97477b3a3a88e0f071b5cbe
-ms.sourcegitcommit: 05e7c8ac9d6d6f712742d08820d43118c8949bbc
+ms.openlocfilehash: 4865372f442160734fec980428c6f6309cc0ad7f
+ms.sourcegitcommit: 1165a74b1d2e79e1a085b01e0e00f7c65483d729
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61322988"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61355745"
 ---
 # <a name="deploying-the-parents-app-in-microsoft-teams"></a>Distribuzione dell'app Genitori in Microsoft Teams
 
@@ -33,7 +33,7 @@ L'app Genitori consente ai docenti di connettersi e interagire in tutta sicurezz
 ### <a name="school-data-sync"></a>School Data Sync
 
 - È necessario School Data Sync (SDS) per popolare le informazioni di contatto correlate al genitore e al **tutore di ogni** studente.
-  - [Distribuire SDS](/schooldatasync/parent-contact-sync)
+  - [Distribuire SDS](/schooldatasync/parents-and-guardians-in-sds)
 
 - Se è necessaria assistenza nella configurazione di SDS e nella compilazione dei contatti correlati a genitori e **tutori** per gli studenti del tenant, contattare il team customer success di EDU per:
   - Completamento del processo RFA in [FastTrack](https://www.microsoft.com/fasttrack?rtc=1).
@@ -103,7 +103,7 @@ L'app Genitori è disabilitata per impostazione predefinita, quindi i proprietar
 
 In qualsiasi momento, l'app può essere disabilitata a livello di tenant usando Consenti e blocca [le app](manage-apps.md#allow-and-block-apps) nell'Teams di amministrazione. Se l'app è disabilitata a livello di tenant, verrà bloccata per tutti gli utenti, anche se sono abilitate le autorizzazioni a livello di utente.
 
-L'app può essere disabilitata anche a livello di utente usando Gestisci criteri di [autorizzazione app in Microsoft Teams.](teams-app-permission-policies.md)
+L'app può essere disabilitata anche a livello di utente usando Gestisci criteri di [autorizzazione app in Microsoft Teams](teams-app-permission-policies.md).
 
 ## <a name="more-information"></a>Altre informazioni
 

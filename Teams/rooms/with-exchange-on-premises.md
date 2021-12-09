@@ -1,5 +1,5 @@
 ---
-title: Distribuire Microsoft Teams Rooms con Exchange locale
+title: Distribuire Microsoft Teams Rooms con Exchange locale (ibrida)
 ms.author: czawideh
 author: cazawideh
 manager: serdars
@@ -17,24 +17,22 @@ ms.assetid: 24860c05-40a4-436b-a44e-f5fcb9129e98
 ms.collection:
 - M365-collaboration
 description: Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms in un ambiente ibrido con Exchange locale.
-ms.openlocfilehash: 96d8a49cd75e3413739d36a3c86a91daa72b22e6
-ms.sourcegitcommit: 115e44f33fc7993f6eb1bc781f83eb02a506e29b
+ms.openlocfilehash: 15936a805e45ce17ec35822bb02980b4d47499b8
+ms.sourcegitcommit: 1165a74b1d2e79e1a085b01e0e00f7c65483d729
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "60909537"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "61355615"
 ---
-# <a name="deploy-microsoft-teams-rooms-with-exchange-on-premises"></a>Distribuire Microsoft Teams Rooms con Exchange locale
+# <a name="deploy-microsoft-teams-rooms-with-exchange-on-premises-hybrid"></a>Distribuire Microsoft Teams Rooms con Exchange locale (ibrida)
 
-Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms in un ambiente ibrido con Exchange locale e Microsoft Teams.
+Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms in un ambiente ibrido con Exchange locali e Microsoft Teams.
   
 Se l'organizzazione ha una combinazione di servizi, con alcuni servizi ospitati in locale e alcuni ospitati online, la configurazione dipenderà da dove è ospitato ogni servizio. Questo argomento riguarda le distribuzioni ibride Microsoft Teams Rooms con Exchange ospitate in locale. Poiché questo tipo di distribuzione offre moltissime varianti diverse, non è possibile fornire istruzioni dettagliate per tutte. Il processo seguente funziona per molte configurazioni. Se il processo non è giusto per la configurazione, è consigliabile usare Windows PowerShell per ottenere lo stesso risultato finale documentato qui e per altre opzioni di distribuzione.
-
-Microsoft fornisce [SkypeRoomProvisioningScript.ps1](https://go.microsoft.com/fwlink/?linkid=870105), uno script che consente di creare nuovi account utente o convalidare gli account delle risorse esistenti in modo da trasformarli in account utente Microsoft Teams Rooms compatibili. Se si preferisce, è possibile seguire la procedura seguente per configurare gli account che verranno Microsoft Teams Rooms dispositivo.
   
 ## <a name="requirements"></a>Requisiti
 
-Prima di distribuire Microsoft Teams Rooms con Exchange locale, assicurarsi di aver soddisfatto i requisiti. Per altre informazioni, vedere Microsoft Teams Rooms [requisiti.](requirements.md)
+Prima di distribuire Microsoft Teams Rooms con Exchange locale, assicurarsi di aver soddisfatto i requisiti. Per altre informazioni, vedere requisiti [Microsoft Teams Rooms.](requirements.md)
   
 Se si distribuiscono Microsoft Teams Rooms con Exchange locale, si usano gli strumenti di amministrazione di Active Directory per aggiungere un indirizzo di posta elettronica per l'account di dominio locale. Questo account verrà sincronizzato con Microsoft 365 o Office 365. Sarà necessario:
   
@@ -53,31 +51,31 @@ Se si distribuiscono Microsoft Teams Rooms con Exchange locale, si usano gli str
 3. Digitare la password per l'account. Sarà necessario digitare di nuovo per la verifica. Verificare che la **casella di controllo Password non scada** mai sia l'unica opzione selezionata.
 
     > [!NOTE]
-    > La **selezione della password non scade mai** è un requisito per Microsoft Teams Rooms. Le regole di dominio potrebbero proibire le password che non scadono. In questo caso, è necessario creare un'eccezione per ogni account Microsoft Teams Rooms dispositivo.
+    > La **selezione della password non scade** mai è un requisito per Microsoft Teams Rooms. Le regole di dominio potrebbero proibire le password che non scadono. In tal caso, sarà necessario creare un'eccezione per ogni account Microsoft Teams Rooms account.
   
-4. Dopo aver creato l'account, eseguire una sincronizzazione della directory. Al termine, passare alla pagina degli utenti del interfaccia di amministrazione di Microsoft 365 e verificare che l'account creato nei passaggi precedenti sia stato unito in online.
+4. Dopo aver creato l'account, eseguire una sincronizzazione della directory. Al termine, passare alla pagina degli utenti del interfaccia di amministrazione di Microsoft 365 e verificare che l'account creato nei passaggi precedenti sia stato sincronizzato con online.
 
 ### <a name="enable-the-remote-mailbox-and-set-properties"></a>Abilitare la cassetta postale remota e impostare le proprietà
 
-1. [Aprire la Exchange Management Shell](/powershell/exchange/exchange-server/open-the-exchange-management-shell) o [connettersi al server di Exchange tramite Una sessione remota di PowerShell.](/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell)
+1. [Aprire la Exchange Management Shell](/powershell/exchange/exchange-server/open-the-exchange-management-shell) o [connettersi al server Exchange remoto di PowerShell.](/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell)
 
 2. In Exchange PowerShell creare una cassetta postale per l'account (abilitare l'account tramite cassetta postale) eseguendo il comando seguente:
 
    ```PowerShell
-   Enable-Mailbox PROJECTRIGEL01@contoso.com -Room
+   Enable-Mailbox ConferenceRoom01@contoso.com -Room
    ```
 
    Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Enable-Mailbox.](/powershell/module/exchange/mailboxes/enable-mailbox)
 
 3. In Exchange PowerShell configurare le impostazioni seguenti nella cassetta postale sala per migliorare l'esperienza della riunione:
 
-   - AutomateProcessing: AutoAccept (gli organizzatori della riunione ricevono la decisione di prenotazione della sala direttamente senza l'intervento dell'utente: free = accept; busy = decline).
+   - AutomateProcessing: AutoAccept (gli organizzatori della riunione ricevono le decisioni di prenotazione della sala direttamente senza l'intervento dell'uomo).
 
-   - AddOrganizerToSubject: $false (l'organizzatore della riunione non viene aggiunto all'oggetto della convocazione di riunione).
+   - AddOrganizerToSubject: $false (l'organizzatore della riunione non viene aggiunto all'oggetto della convocazione riunione).
 
    - DeleteComments: $false (Mantenere il testo nel corpo del messaggio delle convocazioni di riunione in arrivo).
 
-   - DeleteSubject: $false (Mantieni l'oggetto delle convocazioni di riunione in arrivo).
+   - DeleteSubject: $false (Mantieni l'oggetto delle convocazioni riunione in arrivo).
 
    - RemovePrivateProperty: $false (assicura che il contrassegno privato inviato dall'organizzatore della riunione nella convocazione di riunione originale rimanga come specificato).
 
@@ -85,10 +83,10 @@ Se si distribuiscono Microsoft Teams Rooms con Exchange locale, si usano gli str
 
    - AdditionalResponse: "Si tratta di una Microsoft Teams sala riunioni!" Il testo aggiuntivo da aggiungere alla convocazione riunione.
 
-   Questo esempio configura queste impostazioni nella cassetta postale della chat room denominata Project-Rigel-01.
+   Questo esempio configura queste impostazioni nella cassetta postale sala denominata ConferenceRoom01.
 
    ```PowerShell
-   Set-CalendarProcessing -Identity "Project-Rigel-01" -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false -AddAdditionalResponse $true -AdditionalResponse "This is a Microsoft Teams Meeting room!"
+   Set-CalendarProcessing -Identity "ConferenceRoom01" -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false -AddAdditionalResponse $true -AdditionalResponse "This is a Microsoft Teams Meeting room!"
    ```
 
    Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-CalendarProcessing](/powershell/module/exchange/mailboxes/set-calendarprocessing).
@@ -100,7 +98,7 @@ Se si distribuiscono Microsoft Teams Rooms con Exchange locale, si usano gli str
    > [!NOTE]
    > [Azure Active Directory PowerShell 2.0](/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato. 
 
-2. L'account del dispositivo deve avere una licenza Microsoft 365 o Office 365, oppure Exchange e Microsoft Teams non funzionano. Se si ha la licenza, è necessario assegnare una posizione di utilizzo all'account del dispositivo, in modo da determinare quali SKU di licenza sono disponibili per l'account. È possibile usare `Get-MsolAccountSku` <!-- Get-AzureADSubscribedSku --> per recuperare un elenco di SKU disponibili.
+2. È necessario che l'account della risorsa abbia una licenza Microsoft 365 o Office 365 o che Exchange e Microsoft Teams non funzionino. Se si ha la licenza, è necessario assegnare una posizione di utilizzo all'account delle risorse, in modo da determinare quali SKU di licenza sono disponibili per l'account. È possibile usare `Get-MsolAccountSku` <!-- Get-AzureADSubscribedSku --> per recuperare un elenco di SKU disponibili.
 
 <!--   ``` Powershell
    Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
@@ -109,9 +107,9 @@ Se si distribuiscono Microsoft Teams Rooms con Exchange locale, si usano gli str
 3. Successivamente, è possibile aggiungere una licenza usando il pulsante `Set-MsolUserLicense` <!-- Set-AzureADUserLicense --> cmdlet. In questo caso, $strLicense codice SKU visualizzato, ad esempio contoso:STANDARDPACK.
 
   ``` PowerShell
-  Set-MsolUser -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -UsageLocation 'US'
+  Set-MsolUser -UserPrincipalName 'ConferenceRoom01@contoso.com' -UsageLocation 'US'
   Get-MsolAccountSku
-  Set-MsolUserLicense -UserPrincipalName 'PROJECTRIGEL01@contoso.com' -AddLicenses $strLicense
+  Set-MsolUserLicense -UserPrincipalName 'ConferenceRoom01@contoso.com' -AddLicenses $strLicense
   ```
 
 <!--   ``` Powershell
