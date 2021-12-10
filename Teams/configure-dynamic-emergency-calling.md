@@ -18,12 +18,12 @@ description: Scopri come configurare i Piani per chiamate Microsoft e la funzion
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 45e7b49fcde0dba2a37eb4b08daeed324a9155dc
-ms.sourcegitcommit: 12044ab8b2e79a7b23bf9a0918ae070925d21f3d
+ms.openlocfilehash: c762ccb2aba8c8ccad531573c37f258fa4605a9d
+ms.sourcegitcommit: 38a4d2f41270633479afb3412c749365922554e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/10/2021
-ms.locfileid: "61401920"
+ms.locfileid: "61410717"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -85,14 +85,14 @@ Attualmente sono supportati i client seguenti.  Torna spesso per vedere gli aggi
 - Teams Rooms versione 4.4.25.0 e successive
 
 > [!NOTE]
-> Le località basate su subnet e WiFi sono supportate in tutti i client Teams client. <br><br>
+> Le posizioni basate su subnet e WiFi sono supportate in tutti i client Teams client. <br><br>
 > Ethernet/Switch (LLDP) è supportato in:
 > - Windows versioni 8.1 e successive al momento.<br>
 > - Mac OS, che richiede [il software di abilitazione llDP.](https://www.microsoft.com/download/details.aspx?id=103383)<br>
 > - Teams telefono con Teams app 1449/1.0.94.2021110101 e successive.
 
 > [!NOTE]
-> Le chiamate di emergenza dinamiche, inclusa la notifica del security desk, non sono supportate nel client Teams Web. Per impedire agli utenti di usare il client Web Teams per chiamare numeri PSTN, è possibile impostare un criterio di chiamata Teams e disattivare l'impostazione Consenti chiamate **PSTN** Web. Per altre informazioni, vedere Criteri di [chiamata in Teams](teams-calling-policy.md) e [Set-CsTeamsCallingPolicy.](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) 
+> Le chiamate di emergenza dinamiche, inclusa la notifica del security desk, non sono supportate nel client Teams Web. Per impedire agli utenti di usare il client Web Teams per chiamare i numeri PSTN, è possibile impostare un criterio di chiamata Teams e disattivare l'impostazione Consenti chiamate **PSTN** Web. Per altre informazioni, vedere Criteri di [chiamata in Teams](teams-calling-policy.md) e [Set-CsTeamsCallingPolicy.](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) 
 
 > [!NOTE]
 > I telefoni 3PIP non supportano chiamate di emergenza dinamiche. 
@@ -124,7 +124,7 @@ Azure Mappe viene usato per i servizi basati sulla posizione. Quando si immette 
 
 ## <a name="configure-network-settings"></a>Configurare le impostazioni di rete
 
-Le impostazioni di rete vengono usate per determinare la posizione di un client Teams e per ottenere dinamicamente criteri per le chiamate di emergenza e una posizione di emergenza. È possibile configurare le impostazioni di rete in base al modo in cui l'organizzazione vuole che le chiamate di emergenza funzionino.
+Le impostazioni di rete vengono usate per determinare la posizione di un client Teams e per ottenere dinamicamente i criteri per le chiamate di emergenza e una posizione di emergenza. È possibile configurare le impostazioni di rete in base al modo in cui l'organizzazione vuole che le chiamate di emergenza funzionino.
 
 Le impostazioni di rete includono siti che includono una raccolta di subnet e vengono usate esclusivamente per l'assegnazione dinamica dei criteri agli utenti. Ad esempio, un criterio per le chiamate di emergenza e un criterio di routing delle chiamate di emergenza potrebbero essere assegnati al "sito Redmond" in modo che qualsiasi utente che effettua il roaming da casa o da un'altra posizione Microsoft sia configurato con numeri di emergenza, routing e desk di sicurezza specifici di Redmond.  
 
@@ -132,9 +132,9 @@ Gli indirizzi IP attendibili contengono una raccolta di indirizzi IP esterni Int
 
 Per altre informazioni sugli indirizzi IP, le aree di rete, i siti e gli indirizzi subnet, vedere [Impostazioni di rete per le funzionalità vocali cloud.](cloud-voice-network-settings.md)
 
-È possibile configurare le impostazioni di rete nell Microsoft Teams di amministrazione o usando PowerShell. Per altre informazioni, vedere [Gestire la topologia di rete per le funzionalità vocali cloud.](manage-your-network-topology.md)
+È possibile configurare le impostazioni di rete nell'Microsoft Teams di amministrazione o usando PowerShell. Per altre informazioni, vedere [Gestire la topologia di rete per le funzionalità vocali cloud.](manage-your-network-topology.md)
 
-Si noti che la propagazione e la disponibilità di alcune modifiche alle impostazioni di rete , ad esempio un nuovo indirizzo, un identificatore di rete e così via, possono richiedere del tempo (fino a un paio di ore) per propagarsi e essere disponibili per Teams client.  
+Si noti che la propagazione e la disponibilità di alcune modifiche alle impostazioni di rete , ad esempio un nuovo indirizzo, un identificatore di rete e così via, possono richiedere del tempo (fino a un paio di ore) per la propagazione e la disponibilità Teams client.  
 
 > [!Note]
 > Le subnet possono anche essere definite in LIS e possono essere associate a una posizione di emergenza.  Le subnet LIS devono essere definite dall'ID di rete corrispondente all'intervallo IP subnet assegnato ai client. Ad esempio, l'ID di rete per un IP/mask client di 10.10.10.150/25 è 10.10.10.128. Per altre informazioni, vedere [Informazioni di base sull'indirizzamento TCP/IP e la subnetting.](/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting)
@@ -248,7 +248,7 @@ La tabella seguente mostra il supporto per le chiamate di emergenza dinamiche ne
 | :------------|:-------|
 | World Wide Multi Tenant | Disponibile in tutti i Teams client |
 | GCC | Disponibile in tutti i Teams client |
-| GCCH | Disponibile su Teams desktop |
+| GCCH | -Disponibile su Teams desktop <br> -Disponibile nei Teams per dispositivi mobili <br> -Disponibilità in sospeso nei Teams telefoni |
 | DoD | In sospeso |
 
  ## <a name="related-topics"></a>Argomenti correlati
