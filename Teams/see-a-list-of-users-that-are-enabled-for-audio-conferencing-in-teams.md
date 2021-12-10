@@ -21,13 +21,13 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: "Informazioni su come visualizzare un elenco di utenti dell'organizzazione abilitati per le conferenze telefoniche con accesso esterno dall'Microsoft Teams. "
-ms.openlocfilehash: 7b49dec0b73385ce09d906a128a47ddd4c723694
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+description: "Informazioni su come visualizzare un elenco di utenti dell'organizzazione abilitati per i servizi di conferenza telefonica con accesso esterno dall'interno Microsoft Teams. "
+ms.openlocfilehash: ff63ca0b34bcdf86b3c261a018911f42a34dcb5c
+ms.sourcegitcommit: 12044ab8b2e79a7b23bf9a0918ae070925d21f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60045882"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401910"
 ---
 # <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-microsoft-teams"></a>Visualizzare un elenco di utenti abilitati per le audioconferenze in Microsoft Teams
 
@@ -48,8 +48,20 @@ Dopo aver abilitato Microsoft Teams utenti dell'organizzazione per le audioconfe
    
 - Puoi utilizzare il pulsante Cerca per cercare un singolo utente nell'elenco.
     
-    
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
+## <a name="run-a-self-diagnostics-tool"></a>Eseguire uno strumento di auto-diagnostica
+
+Microsoft 365 amministratori hanno accesso alla diagnostica che può essere eseguita all'interno del tenant per verificare che un utente sia in grado di creare una conferenza telefonica PSTN. 
+
+> [!NOTE]
+>Questa funzionalità non è disponibile per Microsoft 365 government, Microsoft 365 gestito da 21Vianet o Microsoft 365 Germania.
+
+Selezionare Esegui test come indicato di seguito. In questo modo la diagnostica verrà popolata nel Amministrazione Microsoft 365 centrale.
+>> [!div class="nextstepaction"]
+>> [Esegui test: Teams Conferenza](https://aka.ms/TeasConfDiag)
+
+La diagnostica esegue un'ampia gamma di verifiche.
+ 
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     

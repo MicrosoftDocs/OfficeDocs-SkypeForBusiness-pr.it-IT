@@ -21,12 +21,12 @@ ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Leggere le domande frequenti (FAQ) e le risposte su Microsoft Teams Call Quality Dashboard (CQD).
-ms.openlocfilehash: 4d0d0bbbc35ac130755e61075408e9de80f1c09c
-ms.sourcegitcommit: d976e49943aedd511bd6a80b02afeac4a6453406
+ms.openlocfilehash: 81c6478147e0959ca97b67ee0f01632478c0eb38
+ms.sourcegitcommit: 12044ab8b2e79a7b23bf9a0918ae070925d21f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61362543"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401900"
 ---
 # <a name="call-quality-dashboard-cqd-frequently-asked-questions-faq"></a>Domande frequenti su Call Quality Dashboard (CQD)
 
@@ -38,13 +38,15 @@ ms.locfileid: "61362543"
 
 [Perché non è possibile visualizzare EUII in CQD?](#why-cant-i-see-euii-in-cqd)
 
+[Sto provando a usare CQD per i report di tipo utilizzo e trovo che alcuni dati sono incompleti, perché?](#im-trying-to-use-cqd-for-usage-type-reports-and-find-that-some-of-the-data-is-incomplete----why-is-that)
+
 [Perché le informazioni Skype for Business vengono visualizzate in CQD quando si filtrano solo Teams dati?](#why-am-i-seeing-skype-for-business-information-in-cqd-when-ive-filtered-for-teams-only)
 
 [Perché i report personalizzati restituiscono un massimo di 10.000 righe quando si sa che dovrebbero essere presenti altre voci?](#why-do-my-custom-reports-only-return-a-maximum-of-10000-rows-when-i-know-there-should-be-more-entries)
 
 [Perché le Wi-Fi VPN vengono mostrate come Cablate anziché Wi-Fi?](#why-do-wi-fi-vpn-connections-show-as-wired-instead-of-wi-fi)
 
-[Ho attivato Registrazione basata su criteri in Teams e ora le chiamate peer-to-peer vengono contrassegnate come Conferenze: cosa è successo?](#i-turned-on-policy-based-recording-in-teams-and-now-peer-to-peer-calls-are-being-marked-as-conferences----what-happened)
+[Ho attivato registrazione basata su criteri in Teams e ora le chiamate peer-to-peer vengono contrassegnate come conferenze: cosa è successo?](#i-turned-on-policy-based-recording-in-teams-and-now-peer-to-peer-calls-are-being-marked-as-conferences----what-happened)
 
 ### <a name="why-does-cqd-mark-a-call-as-good-if-one-or-more-meeting-participants-had-a-poor-experience"></a>Perché CQD contrassegna una chiamata come "Buona" se uno o più partecipanti alla riunione hanno un'esperienza scarsa?
 
@@ -58,8 +60,8 @@ Ecco un esempio di come risolvere questa situazione. Supponiamo di prendere una 
  
 Se le metriche di rete hanno un aspetto positivo nelle medie e nei valori massimi, esaminare altri dati di telemetria: 
 - Controllare il rapporto di eventi CPU insufficienti per verificare se le risorse della CPU rilevate disponibili erano insufficienti e hanno causato una qualità scarsa. 
-- Il dispositivo audio era in modalità Half Duplex per impedire il feedback dovuto ai microfoni che si avvicinano agli altoparlanti? 
-- Controllare il rapporto di eventi AEC Half Duplex del dispositivo. I problemi del dispositivo o del microfono hanno introdotto rumore o stato statico a causa di un'uscita audio USB quando è collegata a un hub o a un'docking station?  
+- Il dispositivo audio era in modalità Half Duplex per impedire il feedback a causa di microfoni troppo vicini agli altoparlanti? 
+- Controllare il rapporto di eventi AEC Half Duplex del dispositivo. Il problema del dispositivo o del glitch del microfono ha introdotto rumore o stato statico a causa di un'uscita audio USB quando è collegata a un hub o a un'docking station?  
 - Controllare le proporzioni degli eventi Glitch del dispositivo e Del microfono. Il dispositivo funzionava correttamente?  
 - Controllare le proporzioni degli eventi di acquisizione e rendering del dispositivo non funzionante.
 
@@ -74,29 +76,29 @@ La telemetria non chiama necessariamente il problema, ma può aiutare a capire m
 
 ### <a name="why-do-i-see-up-to-02-difference-in-call-and-user-count-values-on-measures-and-how-to-get-most-accurate-volumes"></a>Perché viene visualizzata una differenza fino a 0,2% nei valori di chiamata e di conteggio degli utenti per le misure e come ottenere volumi più accurati? 
 
-Per calcolare il conteggio delle chiamate e le misure di conteggio degli utenti, viene eseguita un'operazione countif distinta rispetto alla chiamata o agli identificatori utente nel set di dati. Nei set di dati di grandi dimensioni si verifica un errore fino a 0,2% inerente all'operazione countif distinta. Per ottenere il volume più accurato, è consigliabile affidarsi alle misure di conteggio dei flussi perché non si basano su questa operazione countif distinta. L'applicazione di filtri per ridurre il volume di dati può ridurre l'errore, ma non eliminare questa fonte di errore in chiamate distinte e conteggi degli utenti. Vedere Dimensioni [e misure disponibili in Call Quality Dashboard](dimensions-and-measures-available-in-call-quality-dashboard.md) per le misure in cui sono state influenzate le misure.
+Per calcolare il conteggio delle chiamate e le misure di conteggio degli utenti, viene eseguita un'operazione countif distinta rispetto alla chiamata o agli identificatori utente nel set di dati. Nei set di dati di grandi dimensioni si verifica un errore fino a 0,2% inerente all'operazione countif distinta. Per ottenere il volume più accurato, è consigliabile affidarsi alle misure di conteggio dei flussi perché non si basano su questa operazione countif distinta. L'applicazione di filtri per ridurre il volume di dati può ridurre l'errore, ma non eliminare questa fonte di errore in chiamate distinte e conteggi degli utenti. Vedere Dimensioni [e misure disponibili in Call Quality Dashboard](dimensions-and-measures-available-in-call-quality-dashboard.md) per le misure interessate.
 
   
 ### <a name="why-cant-i-see-euii-in-cqd"></a>Perché non è possibile visualizzare EUII in CQD?
 
 Questi ruoli di amministratore possono accedere a CQD, ma non possono visualizzare EUII (informazioni identificabili dall'utente finale):
 
-- Microsoft 365 di report
+- lettore Microsoft 365 report
 - Teams Communications Support Specialist
 
 Per altre informazioni sui ruoli che possono accedere a CQD, incluso EUII, vedere Assegnare ruoli per l'accesso a [CQD.](turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd)
 
+### <a name="im-trying-to-use-cqd-for-usage-type-reports-and-find-that-some-of-the-data-is-incomplete----why-is-that"></a>Sto provando a usare CQD per i report di tipo utilizzo e trovo che alcuni dati sono incompleti, perché?
+
+Gli strumenti di gestione della qualità delle chiamate come CQD, Call Analytics, CallRecord Graph API e Real-time Analytics si basano sulla telemetria diagnostica. Le informazioni che mostriamo negli Teams di gestione della qualità delle chiamate sono complete solo quanto i dati di telemetria ricevuti dai clienti che partecipano a una chiamata. Esistono diversi motivi per cui microsoft potrebbe non ricevere telemetria completa, ad esempio interruzioni di rete o errori di configurazione del firewall o [del proxy.](/microsoft-365/enterprise/urls-and-ip-address-ranges.md) Stiamo continuando a lavorare per migliorare l'affidabilità e la resilienza con cui i Teams client forniscono telemetria al servizio.
+
+In questo caso, è consigliabile non affidarsi agli strumenti di gestione della qualità delle chiamate per la creazione di report sull'utilizzo. Teams'interfaccia di amministrazione offre [](teams-analytics-and-reports/teams-reporting-reference.md)una serie di report sull'utilizzo e un [report](teams-analytics-and-reports/meeting-attendance-report.md) sulla partecipazione alle riunioni è disponibile direttamente dal client Teams riunione.
+
 ### <a name="why-am-i-seeing-skype-for-business-information-in-cqd-when-ive-filtered-for-teams-only"></a>Perché le informazioni Skype for Business vengono visualizzate in CQD quando si filtrano solo Teams dati?
 
-Quando si filtrano Teams solo nei report CQD (isTeams = 1), si filtrano tutte le chiamate in cui il primo *endpoint* è Teams. Se il *secondo endpoint* è Skype for Business, queste informazioni verranno visualizzate nel report CQD.
+Quando si filtrano Teams solo nei report CQD (isTeams = 1), si filtrano tutte le chiamate in cui il primo *endpoint* è Teams. Se il *secondo endpoint* è Skype for Business, queste informazioni verranno visualizzate nel report CQD. A seconda degli scenari dei clienti, CQD può includere Skype for Business Server 2019 quando [call data connector](/skypeforbusiness/hybrid/plan-call-data-connector.md) è configurato. Può anche includere Skype bot (AA, CVI, VDI), eventi live e chiamate PSTN.
 
-CQDv2 e CQDv3 avranno sempre conteggi totali diversi, perché CQDv3 avrà nuovi scenari che CQDv2 non avrà. Ecco perché il confronto dei numeri totali di riepilogo o aggregati senza filtri avrà queste differenze previste.  
-
-A seconda dello scenario dei clienti, CQDv3 includerà le chiamate locali SFB 2019 (se SFB 2019 viene usato con un connettore dati), le chiamate bot Skype (AA, CVI, VDI), gli eventi live e le chiamate PSTN. Scenari/funzionalità disponibili per i clienti, ma i relativi dati non sono in CQD V2.
-
-Ad esempio, è previsto che i clienti e gli utenti vedano 200.000 flussi audio, con 5.000 errori nel report di riepilogo CQD V2, rispetto a 300.000 flussi audio con 5500 errori (provenienti da chiamate in locale 2019, chiamate CVI, chiamate PSTN e così via) in CQD V3.
-
-Per determinare se sono presenti differenze impreviste, è necessario esaminare varie suddivisioni dei dati complessivi.  Confrontare con intento.  L'affettamento dei dati in base alla coppia di categorie agente utente è uno dei primi elementi consigliati.  *First Product* e *Second Product* sono anche buoni filtri dei dati.  
+È possibile rimuovere le informazioni Skype for Business dalle query filtrando in  base a dimensioni come La categoria Agente primo utente e *Seconda categoria agente utente.* È anche possibile usare *la coppia di* categorie agente utente che combina le dimensioni Primo e Secondo in un unico filtro.
 
 ### <a name="why-do-my-custom-reports-only-return-a-maximum-of-10000-rows-when-i-know-there-should-be-more-entries"></a>Perché i report personalizzati restituiscono un massimo di 10.000 righe quando si sa che dovrebbero essere presenti altre voci?
 
@@ -106,9 +108,9 @@ CQD è progettato per le query di dati riepilogate e non è progettato per l'esp
 
 Si tratta di un comportamento previsto. Il fornitore vpn ha creato un adattatore ethernet virtuale trattato come una connessione cablata. Poiché l'etichetta non è corretta, il sistema operativo non sa che si tratta di una connessione Wi-Fi e la segnala come cablata.
 
-### <a name="i-turned-on-policy-based-recording-in-teams-and-now-peer-to-peer-calls-are-being-marked-as-conferences----what-happened"></a>Ho attivato Registrazione basata su criteri in Teams e ora le chiamate peer-to-peer vengono contrassegnate come Conferenze: cosa è successo?
+### <a name="i-turned-on-policy-based-recording-in-teams-and-now-peer-to-peer-calls-are-being-marked-as-conferences----what-happened"></a>Ho attivato registrazione basata su criteri in Teams e ora le chiamate peer-to-peer vengono contrassegnate come conferenze: cosa è successo?
 
-Questo comportamento è previsto quando la registrazione basata su criteri è abilitata in Microsoft Teams. Registrazione basata su criteri usa un bot Teams registratore distribuito in Microsoft Azure per acquisire il contenuto della riunione ai fini della conformità. Poiché un bot registratore è di per sé parte della chiamata, la chiamata non è più peer-to-peer, ma una chiamata multi-party. Le chiamate multi-party vengono classificate come conferenze Microsoft Teams, quindi verranno indicate come tali quando si visualizzano queste chiamate in CQD e in altri strumenti di qualità delle chiamate.
+Questo comportamento è previsto quando la registrazione basata su criteri è abilitata in Microsoft Teams. Registrazione basata su criteri usa un bot Teams registratore distribuito in Microsoft Azure per acquisire il contenuto della riunione ai fini della conformità. Nella gestione della qualità delle chiamate, "peer-to-peer" è una descrizione del flusso del traffico multimediale, non dell'interazione tra gli utenti. Poiché un bot registratore è di per sé parte della chiamata, la chiamata non è più peer-to-peer, ma una chiamata multi-party. Le chiamate multi-party vengono classificate come conferenze da Microsoft Teams, quindi verranno indicate come tali quando si visualizzano queste chiamate in CQD e in altri strumenti di qualità delle chiamate.
 
 ## <a name="related-articles"></a>Articoli correlati
 

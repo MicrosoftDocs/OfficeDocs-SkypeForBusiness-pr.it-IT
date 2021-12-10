@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8c25299a0f0df6863bcb1fbaa4627b891a6e860a
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: b378ee327f2ba284a348ff7458c617fed71541c6
+ms.sourcegitcommit: 12044ab8b2e79a7b23bf9a0918ae070925d21f3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60536757"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "61401890"
 ---
 # <a name="survivable-branch-appliance-sba-for-direct-routing"></a>SBA (Survivable Branch Appliance) per il routing diretto
 
@@ -58,13 +58,15 @@ La funzionalità SBA è supportata nei client Microsoft Teams seguenti:
 
 - Microsoft Teams Windows desktop 
 
-- Microsoft Teams desktop macOS 
+- Microsoft Teams desktop macOS
+- Teams per dispositivi mobili 
+- Teams telefoni
 
 ## <a name="how-it-works"></a>Come funziona
 
-Durante un'interruzione di Internet, il client Teams deve passare automaticamente all'SBA e le chiamate in corso dovrebbero continuare senza interruzioni. Non è richiesta alcuna azione da parte dell'utente. Non appena il client Teams rileva che Internet è in funzione e le chiamate in uscita vengono completate, il client torna alla normale modalità di funzionamento e si connette ad altri servizi Teams. L'SBA carica i record dei dati delle chiamate raccolti nel cloud e la cronologia delle chiamate viene aggiornata in modo che queste informazioni siano disponibili per la revisione da parte dell'amministratore del tenant. 
+Durante un'interruzione di Internet, il client Teams deve passare automaticamente all'SBA e le chiamate in corso dovrebbero continuare senza interruzioni. Non è richiesta alcuna azione da parte dell'utente. Non appena il client Teams rileva che Internet è in funzione e le chiamate in uscita vengono completate, il client torna alla normale modalità di funzionamento e si connette ad altri Teams servizi. L'SBA carica i record dei dati delle chiamate raccolti nel cloud e la cronologia delle chiamate viene aggiornata in modo che queste informazioni siano disponibili per la revisione da parte dell'amministratore del tenant. 
 
-Quando il client Microsoft Teams è in modalità offline, è disponibile la funzionalità correlata alle chiamate seguente: 
+Quando il client Microsoft Teams è in modalità offline, sono disponibili le funzionalità correlate alle chiamate seguenti: 
 
 - Effettuare chiamate PSTN tramite SBA/SBC locale con elementi multimediali che fluire attraverso la SBC.
 
@@ -77,11 +79,11 @@ Quando il client Microsoft Teams è in modalità offline, è disponibile la funz
 Per il funzionamento della caratteristica SBA, il client di Teams deve sapere quali SBA sono disponibili in ogni sito di succursale e quali SBA sono assegnate agli utenti del sito. I passaggi di configurazione sono i seguenti:
 
 1. Creare le SBA.
-2. Creare i criteri Teams di sopravvivenza della filiale.
+2. Creare i criteri di Teams di succursale.
 3. Assegnare il criterio agli utenti.
 4. Registrare un'applicazione per l'SBA con Azure Active Directory.
 
-Tutta la configurazione viene eseguita usando Skype for Business cmdlet di PowerShell online. L'Teams di amministrazione non supporta ancora la funzionalità SBA Routing diretto. 
+Tutta la configurazione viene eseguita usando i cmdlet di PowerShell Skype for Business Online. L'Teams di amministrazione non supporta ancora la funzionalità SBA Routing diretto. 
 
 Per informazioni sulla configurazione di SBC, con collegamenti alla documentazione del fornitore SBC, vedere Configurazione di Session Border Controller alla fine di questo articolo.
 
@@ -125,7 +127,7 @@ Identity             : Tag:CPH
 BranchApplianceFqdns : {sba1.contoso.com, sba2.contoso.com} 
 ```
 
-È possibile aggiungere o rimuovere IAS da un criterio usando il cmdlet Set-CsTeamsSurvivableBranchAppliancePolicy. Ad esempio: 
+È possibile aggiungere o rimuovere SBA da un criterio usando il cmdlet Set-CsTeamsSurvivableBranchAppliancePolicy. Ad esempio: 
 
 ``` powershell
 Set-CsTeamsSurvivableBranchAppliancePolicy -Identity CPH -BranchApplianceFqdns @{remove="sba1.contoso.com"} 
@@ -177,7 +179,7 @@ Per l'applicazione SBA, tenere presente quanto segue:
 - Tipi di account supportati = Account solo in questa directory dell'organizzazione. 
 - Uri di reindirizzamento Web = https://login.microsoftonline.com/common/oauth2/nativeclient .
 - Token di concessione implicita = token di accesso e token ID. 
-- Autorizzazioni API = Skype e Teams Tenant Admin Access -> autorizzazioni dell'applicazione -> application_access_custom_sba_appliance.
+- Autorizzazioni API = Skype e Teams di amministrazione tenant -> autorizzazioni dell'applicazione -> application_access_custom_sba_appliance.
 - Segreto client: è possibile usare qualsiasi descrizione e scadenza. 
 - Ricordarsi di copiare il segreto client subito dopo la creazione. 
 - L'ID applicazione (client) viene visualizzato nella scheda Panoramica.
