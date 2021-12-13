@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: gestione dei partner per i clienti.
 f1keywords: ''
-ms.openlocfilehash: 84d15f43ff49565dbba915470ea618a69ff74ee8
-ms.sourcegitcommit: c8951fe3504c1776d7aec14b79605aaf5d317e7f
+ms.openlocfilehash: 1379fff905275e9bed94f019dcb556e171683178
+ms.sourcegitcommit: 4095a1d5e507ac5cb23ed17611c1fbd4b744b23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61331235"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61420226"
 ---
 # <a name="partner-management-for-customers"></a>Gestione dei partner per i clienti
 
@@ -124,25 +124,25 @@ Se è già stato inviato un invito a un partner e si vogliono aggiungere altri u
 
 |Funzionalità|Autorizzazione|**Amministratore MMR**|**Cliente potenziale del sito**|**Tech del sito**|**Amministratore del partner**|
 | :- | :- | :- | :- | :- | :- |
-|Sale|Visualizzare|||||
-||Modifica|||||
-||Chiave di reimpostazione|||||
-||Chiave di download|||||
-||Annullare la registrazione|||||
-|Gestione dei gruppi|Create |||||
-||Visualizzare|||||
-||Modifica|||||
-|Aggiornare la gestione degli anelli|Create |||||
-||Visualizzare|||||
-||Modifica|||||
-|Report|Visualizzare|||||
-|Gestione dei biglietti|Creare un evento imprevisto per i clienti|||||
-||Visualizzare|||||
-||Update|||||
-|MmR Impostazioni|Visualizzare|||||
-||Modifica|||||
-|Gestione ruoli|Visualizzare |||||
-||Modifica|||||
+|Sale|Visualizzare| &#10004;|&#10004;|&#10004;|&#10004;|
+||Modifica|&#10004;|&#10004;|&#10004;|&#10004;|
+||Chiave di reimpostazione|&#10004;||||
+||Chiave di download|&#10004;|&#10004;|&#10004;||
+||Annullare la registrazione|&#10004;|&#10004;|&#10004;||
+||Create |&#10004;|&#10004;|||
+|Gestione dei gruppi|Visualizzare|&#10004;|&#10004;||&#10004;|
+||Modifica|&#10004;|&#10004;|||
+||Create |&#10004;|&#10004;|||
+|Aggiornare la gestione degli anelli|Visualizzare|&#10004;|&#10004;||&#10004;|
+||Modifica|&#10004;|&#10004;||&#10004;|
+|Report|Visualizzare|&#10004;|&#10004;||&#10004;|
+||Creare un evento imprevisto per i clienti|&#10004;|&#10004;|&#10004;|&#10004;|
+|Gestione ticket|Visualizzare|&#10004;|&#10004;|&#10004;|&#10004;|
+||Update|&#10004;|&#10004;|&#10004;|&#10004;|
+|MmR Impostazioni|Visualizzare|&#10004;||||
+||Modifica|&#10004;||||
+|Gestione ruoli|Visualizzare |&#10004;|||&#10004;|
+||Modifica|&#10004;|||&#10004;|
 
 
 
@@ -154,7 +154,7 @@ Il cliente finale mantiene il controllo sull'accesso ai dati e può rimuovere co
 
 Con la funzionalità di accesso con delega, un partner non acquisisce altri privilegi all'esterno del portale del servizio TRM. Tuttavia, tutti i dati presenti nel servizio TRM derivati da altri prodotti Microsoft vengono considerati dati nel servizio TRM. Ad esempio, mentre i report sulla qualità delle chiamate derivano Teams dati sulla qualità delle chiamate, tutti i dati nel portale TRM si trova nell'ambito delle autorizzazioni. 
 
-Non vengono concesse autorizzazioni a AAD o all'interfaccia di amministrazione Teams o a qualsiasi altro prodotto Microsoft. Inoltre, i partner non hanno accesso per visualizzare o modificare le chat room non definite nell'ambito dell'invito. 
+Non vengono concesse autorizzazioni per AAD'interfaccia di amministrazione Teams o qualsiasi altro prodotto Microsoft. Inoltre, i partner non hanno accesso per visualizzare o modificare le chat room non definite nell'ambito dell'invito. 
 
 I dati risiedono nel tenant del cliente e non vengono copiati nel tenant del partner. 
 

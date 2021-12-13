@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare il routing delle chiamate con Microsoft Direct Routing.
-ms.openlocfilehash: cb8f33d8e5e2ea3e3e14ac47b57d9b5920f2bb2a
-ms.sourcegitcommit: 197debacdcd1f7902f6e16940ef9bec8b07641af
+ms.openlocfilehash: 919b98d6c8c8ee5a1af08967dc55c30748af37f1
+ms.sourcegitcommit: 4095a1d5e507ac5cb23ed17611c1fbd4b744b23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60635045"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61420156"
 ---
 # <a name="configure-call-routing-for-direct-routing"></a>Configurare il routing delle chiamate per l'instradamento diretto
 
@@ -36,7 +36,7 @@ Per informazioni su tutti i passaggi necessari per configurare il routing dirett
 
 ## <a name="call-routing-overview"></a>Panoramica del routing delle chiamate
 
-Telefono Microsoft Il sistema ha un meccanismo di routing che consente di inviare una chiamata a uno specifico Session Border Controller (SBC) in base a: 
+Telefono Microsoft System ha un meccanismo di routing che consente di inviare una chiamata a uno specifico Session Border Controller (SBC) in base a: 
 
 - Il modello di numero chiamato 
 - Il modello di numero chiamato più l'utente specifico che effettua la chiamata
@@ -51,7 +51,7 @@ L'instradamento delle chiamate è costituito da elementi seguenti:
 
 - **Route vocali:** uno schema di numeri e un set di gateway PSTN online da usare per le chiamate in cui il numero di chiamata corrisponde al modello.
 
-- **Gateway PSTN online:** puntatore a un SBC in cui viene archiviata anche la configurazione applicata quando una chiamata viene inoltrata tramite SBC, ad esempio l'inoltro P-Asserted-Identity (PAI) o i codec preferiti. può essere aggiunto alle route vocali.
+- **Gateway PSTN online:** puntatore a un SBC in cui è archiviata anche la configurazione applicata quando una chiamata viene inoltrata tramite SBC, ad esempio l'inoltro P-Asserted-Identity (PAI) o i codec preferiti. può essere aggiunto alle route vocali.
 
 ## <a name="voice-routing-policy-considerations"></a>Considerazioni sui criteri di routing vocale
 
@@ -64,9 +64,9 @@ Se un utente ha una licenza per il piano di chiamata, le chiamate in uscita dell
 
 Il diagramma seguente mostra due esempi di criteri di routing vocale in un flusso di chiamate.
 
-**Chiama Flow 1 (a sinistra):** Se un utente effettua una chiamata a +1 425 XXX XX XX o +1 206 XXX XX XX, la chiamata viene instradata a SBC sbc1.contoso.biz o sbc2.contoso.biz. Se non sbc1.contoso.biz né sbc2.contoso.biz disponibili, la chiamata viene interrotta. 
+**Chiama Flow 1 (a sinistra):** se un utente effettua una chiamata a +1 425 XXX XX XX o +1 206 XXX XX XX, la chiamata viene instradata a SBC sbc1.contoso.biz o sbc2.contoso.biz. Se non sbc1.contoso.biz né sbc2.contoso.biz disponibili, la chiamata viene interrotta. 
 
-**Chiama Flow 2 (a destra):** Se un utente effettua una chiamata a +1 425 XXX XX XX o +1 206 XXX XX XX, la chiamata viene prima instradata a SBC sbc1.contoso.biz o sbc2.contoso.biz. Se nessuno dei due SBC è disponibile, verrà provato il percorso con priorità inferiore (sbc3.contoso.biz e sbc4.contoso.biz). Se nessuno dei SBC è disponibile, la chiamata viene interrotta. 
+**Chiama Flow 2 (a destra):** se un utente effettua una chiamata a +1 425 XXX XX XX o +1 206 XXX XX XX, la chiamata viene prima instradata a SBC sbc1.contoso.biz o sbc2.contoso.biz. Se nessuno dei due SBC è disponibile, verrà provato il percorso con priorità inferiore (sbc3.contoso.biz e sbc4.contoso.biz). Se nessuno dei SBC è disponibile, la chiamata viene interrotta. 
 
 ![Mostra esempi di criteri di routing vocale.](media/ConfigDirectRouting-VoiceRoutingPolicyExamples.png)
 
@@ -90,7 +90,7 @@ La tabella seguente riepiloga la configurazione usando tre route vocali. In ques
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Stati Uniti e Canada|"Redmond 1"|^\\+1(425 \| 206)(\d {7} )$|1|sbc1.contoso.biz<br/>sbc2.contoso.biz|Percorso attivo per i numeri chiamati +1 425 XXX XX XX o +1 206 XXX XX XX|
 |Stati Uniti e Canada|"Redmond 2"|^\\+1(425 \| 206)(\d {7} )$|2|sbc3.contoso.biz<br/>sbc4.contoso.biz|Percorso di backup per i numeri denominati +1 425 XXX XX XX o +1 206 XXX XX XX|
-|Stati Uniti e Canada|"Altro +1"|^\\+1(\d {10} )$|3|sbc5.contoso.biz<br/>sbc6.contoso.biz|Percorso per i numeri chiamati +1 XXX XX XX (tranne +1 425 XXX XX XX o +1 206 XXX XX XX)|
+|Stati Uniti e Canada|"Altro +1"|^\\+1(\d {10} )$|3|sbc5.contoso.biz<br/>sbc6.contoso.biz|Percorso per i numeri chiamati +1 XXX XXX XX XX (tranne +1 425 XXX XX XX o +1 206 XXX XX XX)|
 |||||||
 
 ## <a name="example-1-configuration-steps"></a>Esempio 1: Passaggi di configurazione
@@ -181,7 +181,7 @@ L'esempio seguente mostra il risultato dell'esecuzione del comando `(Get-CSOnlin
 
 #### <a name="step-2-create-three-voice-routes-redmond-1-redmond-2-and-other-1"></a>Passaggio 2: Creare tre route vocali (Redmond 1, Redmond 2 e Other +1)
 
-Per creare il percorso "Redmond 1", in una sessione di PowerShell in Skype for Business Online, immettere:
+Per creare il percorso "Redmond 1", in una sessione di PowerShell in Skype for Business Online immettere:
 
 ```PowerShell
 New-CsOnlineVoiceRoute -Identity "Redmond 1" -NumberPattern "^\+1(425|206)
@@ -322,7 +322,7 @@ La tabella seguente riepiloga le designazioni di utilizzo e le route vocali dei 
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Stati Uniti e Canada|"Redmond 1"|^\\+1(425 \| 206)(\d {7} )$|1|sbc1.contoso.biz<br/>sbc2.contoso.biz|Percorso attivo per i numeri dei callee +1 425 XXX XX XX o +1 206 XXX XX XX|
 |Stati Uniti e Canada|"Redmond 2"|^\\+1(425 \| 206)(\d {7} )$|2|sbc3.contoso.biz<br/>sbc4.contoso.biz|Percorso di backup per i numeri dei callee +1 425 XXX XX XX o +1 206 XXX XX XX|
-|Stati Uniti e Canada|"Altro +1"|^\\+1(\d {10} )$|3|sbc5.contoso.biz<br/>sbc6.contoso.biz|Percorso per i numeri dei callee +1 XXX XXX XX XX (ad eccezione di +1 425 XXX XX XX o +1 206 XXX XX XX)|
+|Stati Uniti e Canada|"Altro +1"|^\\+1(\d {10} )$|3|sbc5.contoso.biz<br/>sbc6.contoso.biz|Percorso per i numeri dei callee +1 XXX XXX XX XX (tranne +1 425 XXX XX XX o +1 206 XXX XX XX)|
 |Internazionale|Internazionale|\d+|4|sbc2.contoso.biz<br/>sbc5.contoso.biz|Percorso per qualsiasi schema di numeri |
 
   > [!NOTE]
@@ -338,7 +338,7 @@ L'esempio seguente mostra come:
 3. Creare un criterio di routing vocale denominato Nessuna restrizione.
 4. Assegnare il criterio all'utente John Woods.
 
-È possibile usare [l'interfaccia Microsoft Teams di amministrazione](#admincenterexample2) o [PowerShell](#powershellexample2) per eseguire questa procedura.
+È possibile usare [l'interfaccia Microsoft Teams o](#admincenterexample2) [PowerShell](#powershellexample2) per eseguire questa procedura.
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 <a name="admincenterexample2"></a>
@@ -459,7 +459,20 @@ OnlineVoiceRoutingPolicy
 No Restrictions
 ```
 
-Il risultato è che il criterio vocale applicato alle chiamate di John Woods è senza restrizioni e seguirà la logica del routing delle chiamate disponibile per le chiamate negli Stati Uniti, in Canada e in Internazionali.
+Il risultato è che i criteri vocali applicati alle chiamate di John Woods sono senza restrizioni e seguiranno la logica del routing delle chiamate disponibile per le chiamate negli Stati Uniti, in Canada e in Internazionali.
+
+## <a name="run-a-self-diagnostics-tool"></a>Eseguire uno strumento di auto-diagnostica
+
+Microsoft 365 amministratori hanno accesso alla diagnostica che può essere eseguita all'interno del tenant per verificare che un utente sia configurato correttamente per il routing diretto. 
+
+> [!NOTE]
+>Questa funzionalità non è disponibile per Microsoft 365 Government, Microsoft 365 gestito da 21Vianet o Microsoft 365 Germania.
+
+Selezionare Esegui test come indicato di seguito. In questo modo la diagnostica verrà popolata nel Amministrazione Microsoft 365 centrale.
+>> [!div class="nextstepaction"]
+>> [Esegui test: Teams routing diretto](https://aka.ms/TeamsDirectRoutingDiag)
+
+La diagnostica esegue un'ampia gamma di verifiche.
 
 ## <a name="see-also"></a>Vedere anche
 

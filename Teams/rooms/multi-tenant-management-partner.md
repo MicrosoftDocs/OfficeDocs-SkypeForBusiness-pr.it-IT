@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Gestione dei clienti Mult-tenant per i partner.
 f1keywords: ''
-ms.openlocfilehash: edafdf182e0d27ec5c5524e9411b80de866d7f02
-ms.sourcegitcommit: c8951fe3504c1776d7aec14b79605aaf5d317e7f
+ms.openlocfilehash: 5ce4493ef9a5e6c959bf10c600c2b9697129d9df
+ms.sourcegitcommit: 4095a1d5e507ac5cb23ed17611c1fbd4b744b23f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61331240"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61420206"
 ---
 # <a name="multi-tenant-customer-management-for-partners"></a>Gestione dei clienti multi-tenant per i partner
 
@@ -89,7 +89,7 @@ Per rimuovere un cliente dall'elenco Clienti, è necessario rimuoverlo.
 
 I ruoli dei partner consentono di delegare le responsabilità a personale aggiuntivo. Il concetto di questi ruoli è lo stesso descritto [in](microsoft-teams-rooms-premium-rbac.md)Controllo dell'accesso basato sui ruoli, ma nel contesto di ogni cliente. Inoltre, è importante notare che i ruoli dei partner sono distinti dai ruoli del cliente. I ruoli partner possono essere eliminati dal cliente. 
 
-Il **ruolo Amministratori** principali è l'unico ruolo predefinito per ogni cliente integrato e ha quasi tutte le autorizzazioni , nel contesto del cliente, per il servizio TRM (vedere la tabella 1). Le autorizzazioni per il ruolo partner** si estendono solo fino alle chat room designate dal cliente. Ad esempio, se cCustomer è un'organizzazione globale e assegna al partner la gestione di tutte le chat room degli Stati Uniti, l'amministratore principale potrà gestire e delegare le autorizzazioni solo per tali chat room. Il Partner non ha visibilità per altre sale che il Cliente potrebbe avere in altri paesi. 
+Il **ruolo Amministratori** principali è l'unico ruolo predefinito per ogni cliente integrato e ha quasi tutte le autorizzazioni , nel contesto del cliente, per il servizio TRM (vedere la tabella 1). Le autorizzazioni per il ruolo partner** si estendono solo fino alle chat room designate dal cliente. Ad esempio, se il cliente è un'organizzazione globale e assegna al partner la gestione di tutte le chat room degli Stati Uniti, l'amministratore principale potrà gestire e delegare le autorizzazioni solo per tali chat room. Il Partner non ha visibilità per altre sale che il Cliente potrebbe avere in altri paesi. 
 
 > [!Important]
 > Deve essere sempre presente almeno un utente nel **ruolo di amministratore** principale.
@@ -122,25 +122,25 @@ I partner possono creare ruoli personalizzati in base ai requisiti operativi. Ad
 
 |Funzionalità|Autorizzazione|**Amministratore MMR**|**Cliente potenziale del sito**|**Tech del sito**|**Amministratori principali**|
 | :- | :- | :- | :- | :- | :- |
-|Sale|Visualizzare|||||
-||Modifica|||||
-||Chiave di reimpostazione|||||
-||Chiave di download|||||
-||Annullare la registrazione|||||
-|Gestione dei gruppi|Create |||||
-||Visualizzare|||||
-||Modifica|||||
-|Aggiornare la gestione degli anelli|Create |||||
-||Visualizzare|||||
-||Modifica|||||
-|Report|Visualizzare|||||
-|Gestione dei biglietti|Creare un evento imprevisto per i clienti|||||
-||Visualizzare|||||
-||Update|||||
-|MmR Impostazioni|Visualizzare|||||
-||Modifica|||||
-|Gestione ruoli|Visualizzare |||||
-||Modifica|||||
+|Sale|Visualizzare| &#10004;|&#10004;|&#10004;|&#10004;|
+||Modifica|&#10004;|&#10004;|&#10004;|&#10004;|
+||Chiave di reimpostazione|&#10004;||||
+||Chiave di download|&#10004;|&#10004;|&#10004;||
+||Annullare la registrazione|&#10004;|&#10004;|&#10004;||
+||Create |&#10004;|&#10004;|||
+|Gestione dei gruppi|Visualizzare|&#10004;|&#10004;||&#10004;|
+||Modifica|&#10004;|&#10004;|||
+||Create |&#10004;|&#10004;|||
+|Aggiornare la gestione degli anelli|Visualizzare|&#10004;|&#10004;||&#10004;|
+||Modifica|&#10004;|&#10004;||&#10004;|
+|Report|Visualizzare|&#10004;|&#10004;||&#10004;|
+||Creare un evento imprevisto per i clienti|&#10004;|&#10004;|&#10004;|&#10004;|
+|Gestione ticket|Visualizzare|&#10004;|&#10004;|&#10004;|&#10004;|
+||Update|&#10004;|&#10004;|&#10004;|&#10004;|
+|MmR Impostazioni|Visualizzare|&#10004;||||
+||Modifica|&#10004;||||
+|Gestione ruoli|Visualizzare |&#10004;|||&#10004;|
+||Modifica|&#10004;|||&#10004;|
 
 > [!Note]
 > Un utente assegnato come amministratore principale per il cliente A ha le autorizzazioni complete nel servizio TRM solo per quel cliente. Le autorizzazioni dell'utente nel cliente A non hanno alcuna influenza sugli altri clienti.
@@ -151,7 +151,7 @@ I clienti finali mantengono il controllo sull'accesso ai propri dati e possono r
 
 Con la funzionalità di accesso con delega, un partner non acquisisce altri privilegi all'esterno del portale del servizio TRM. Ad esempio, usando questa caratteristica per invitare un partner a gestire le chat room nel servizio TRM, non vengono concesse autorizzazioni a AAD o all'interfaccia di amministrazione di Teams o a qualsiasi altro prodotto Microsoft. Inoltre, i partner non hanno accesso per visualizzare o modificare le chat room non definite nell'ambito dell'invito.
 
-Una volta stabilita la relazione partner-cliente, come descritto nella sezione "Onboarding dei clienti" di questo documento, il partner può visualizzare i dati della sala nel servizio TRM. Sono inclusi tutti i dati presenti nel servizio TRM, ma derivati da altri prodotti Microsoft. Ad esempio, i report sulla qualità delle chiamate nel portale TRM derivano Teams dati sulla qualità delle chiamate.
+Una volta stabilita la relazione partner-cliente, come descritto nella sezione "Onboarding dei clienti" di questo documento, il partner può visualizzare i dati della sala nel servizio TRM. Sono inclusi tutti i dati presenti nel servizio TRM, ma derivati da altri prodotti Microsoft. Ad esempio, i report sulla qualità delle chiamate nel portale TRM derivano dai Teams qualità delle chiamate.
 
 I dati risiedono nel tenant del cliente e non vengono copiati nel tenant del partner. 
 
@@ -166,7 +166,7 @@ Il cliente può estrarre i log di controllo per il servizio TRM, che include l'a
 
 Il portale MTM include due modelli interattivi per spostarsi tra i dati dei clienti:
 
-- Le visualizzazioni aggregate sono dati di tutti i clienti consolidati in un unico elenco e possono essere filtrati.
+- Visualizzazioni aggregate in cui i dati di tutti i clienti vengono consolidati in un unico elenco e possono essere filtrati.
 
   > [!Note]
   > Questa visualizzazione è supportata solo nella **pagina** Eventi imprevisti quando la visualizzazione Abilita tutti i **ticket** è attivata.
