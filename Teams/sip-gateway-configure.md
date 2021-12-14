@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b245a4f4b0c9d8940943ceacc685bcf99e0df64e
-ms.sourcegitcommit: 70bba31b0ca4615a3c6a90f42d3568450ea51b82
+ms.openlocfilehash: a4548ab9abfd96b3945c19c07e08baf1ede05983
+ms.sourcegitcommit: 1e83f2c1ed12bcb611eb4eb0a5f1f58496c63147
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327304"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "61426108"
 ---
 # <a name="configure-sip-gateway"></a>Configurare il gateway SIP
 
@@ -36,7 +36,7 @@ Prima di configurare il gateway SIP, eseguire le operazioni seguenti:
 
 - **Reimpostare i dispositivi SIP alle impostazioni predefinite del produttore.** L'utente o gli utenti dell'organizzazione devono reimpostare le impostazioni predefinite predefinite di ogni dispositivo SIP usato con il gateway SIP. Per informazioni su come farlo, vedere le istruzioni del produttore.
 
-- **Aprire il firewall per Microsoft 365 e Teams.** Aprire il firewall della rete per Microsoft 365 e Teams traffico, come descritto in URL e intervalli di indirizzi IP Office 365 [indirizzi IP.](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+- **Aprire il firewall per Microsoft 365 e Teams.** Aprire il firewall della rete per Microsoft 365 traffico Teams traffico, come descritto in OFFICE 365 URL e [intervalli di indirizzi IP.](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
 - **Assicurarsi che i dispositivi SIP non siano dietro un proxy.** Assicurarsi che il traffico http/s bypassi qualsiasi proxy http/s aziendale.
 
@@ -108,6 +108,9 @@ Per abilitare il gateway SIP nell'Teams di amministrazione, seguire questa proce
 È anche possibile abilitare il gateway SIP usando il cmdlet [Set-CsTeamsCallingPolicy di](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) PowerShell. Per abilitare gli utenti per i dispositivi SIP, selezionare un criterio e impostare `-AllowSIPDevicesCalling` l'attributo su `True` . Il valore predefinito è , quindi gli utenti non potranno usare i dispositivi SIP a `False` meno che non vengano abilitati.
 
 
+> [!NOTE]
+> - La propagazione dei criteri può richiedere fino a 24 ore.
+
 ## <a name="set-the-sip-gateway-provisioning-server-url"></a>Impostare l'URL del server di provisioning del gateway SIP
 
 È possibile impostare l'URL del server di provisioning del gateway SIP nel server DHCP (Dynamic Host Configuration Protocol). Gli utenti che lavorano in remoto devono configurarlo manualmente.
@@ -139,12 +142,12 @@ Gli utenti che lavorano in remoto devono configurare manualmente l'URL del serve
 > - I telefoni IP Cisco devono essere lampeggiati sul firmware multipiattaforma prima di poter essere a bordo. Per informazioni su come fare, vedere [Guida alla conversione del firmware Cisco.](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-7800-series/guide-c07-742786.html)
 > - Per i telefoni Yealink, usare l'opzione 66.
 > - Per i telefoni Cisco, Poly e AudioCode, usare l'opzione 160. 
-> - Per i dispositivi Cisco, aggiungere **/$PSN.xml** all'URL del server di provisioning.
+> - Per i dispositivi Cisco, aggiungere **/$** PSN.xmlall'URL del server di provisioning.
 
 
 ## <a name="configure-conditional-access"></a>Configurare l'accesso condizionale
 
-L'accesso condizionale è una Azure Active Directory (Azure AD) che consente di garantire che i dispositivi che accedono alle risorse Microsoft 365 risorse siano gestiti e protetti correttamente. Gateway SIP autentica i dispositivi SIP con Azure AD, quindi se l'organizzazione usa l'accesso condizionale per i dispositivi nella rete aziendale, dovrebbe escludere gli indirizzi IP seguenti:
+L'accesso condizionale è una Azure Active Directory (Azure AD) che consente di garantire che i dispositivi che accedono alle risorse Microsoft 365 risorse siano gestiti e protetti correttamente. Il gateway SIP autentica i dispositivi SIP con Azure AD, quindi se l'organizzazione usa l'accesso condizionale per i dispositivi della rete aziendale, dovrebbe escludere gli indirizzi IP seguenti:
 
 - America del Nord:
     - Stati Uniti orientali: 52.170.38.140
@@ -185,17 +188,17 @@ Per semplificare le attività, è possibile registrare i dispositivi SIP nell Te
 
      a. In **In attesa dell'attivazione,** a destra, **selezionare** Esporta (icona Microsoft Excel).
      
-     b. Nel riquadro **Provisioning dei dispositivi,** in Upload più indirizzi **MAC,** selezionare **scarica un modello.**
+     b. Nel riquadro **Provisioning dei dispositivi,** in **Upload più indirizzi MAC,** selezionare **scarica un modello.**
      
-     c. Salvare **Template_Provisioning.csv** nel computer e compilare i campi **ID MAC** e **Posizione.**
+     c. Salvare **Template_Provisioning.csv** nel computer e compilare i **campi ID MAC** **e** Posizione.
     
      d. Nel riquadro **Provisioning dispositivi** selezionare Upload più **indirizzi MAC.** 
 
-     e. A destra del riquadro Upload **indirizzi MAC** selezionare Seleziona un **file** e selezionare il **file** Template_Provisioning.csvche contiene i dati.
+     e. A destra del riquadro Upload **indirizzi MAC** selezionare Seleziona **un file** e selezionare il **file** Template_Provisioning.csvche contiene i dati.
 
      f. Nel riquadro **Provisioning dei dispositivi,** **in** In attesa  di attivazione, selezionare un dispositivo e quindi selezionare Genera codice di verifica per generare un codice di verifica una sola volta per ogni dispositivo di cui è stato eseguito il provisioning. Prendere nota del codice di verifica per ogni dispositivo SIP.
 
-4. Nel dispositivo SIP comporre il codice della funzionalità di registrazione seguito dal codice di verifica. Ad esempio, se il codice della funzionalità di registrazione è 55* e il codice di verifica è 123456, comporre \* \* 55 123456 per \* registrare il dispositivo.
+4. Nel dispositivo SIP comporre il codice della funzionalità di registrazione seguito dal codice di verifica. Nel dispositivo SIP comporre il codice della funzionalità di registrazione 55* (usato dal Gateway SIP per la convalida del codice di verifica una sola volta), seguito dal codice di verifica generato nell'interfaccia di amministrazione di Teams per questo \* particolare dispositivo. Ad esempio, se il codice di verifica è 123456, comporre \* 55 123456 \* per registrare il dispositivo.
 
 5.  Nel riquadro **Provisioning dei dispositivi,** in In **attesa di accesso,** selezionare **Disconnesso**.
 
@@ -207,7 +210,7 @@ Per semplificare le attività, è possibile registrare i dispositivi SIP nell Te
 
 9. Nella pagina **Password** immettere la password per l'indirizzo di posta elettronica per il dispositivo SIP e quindi selezionare **Accedi**.
 
-10. Nella pagina **Stai provando ad accedere a Teams gateway di dispositivi SIP,** seleziona **Continua.**
+10. Nella pagina **Stai provando ad accedere a Teams gateway** di dispositivi SIP, seleziona **Continua**.
 
 ## <a name="how-to-sign-in-and-sign-out"></a>Come accedere e disconnettersi
 
@@ -239,7 +242,7 @@ Per disconnettersi, un utente del dispositivo può:
 
 - Premere **Esci nel** dispositivo SIP e seguire la procedura descritta nel dispositivo. 
 
-Per disconnettere un dispositivo nell'Teams di amministrazione:
+Per disconnettere un dispositivo nell'interfaccia Teams di amministrazione:
 
 1. Accedere [**all'interfaccia Teams di amministrazione.**](https://admin.teams.microsoft.com)
 
