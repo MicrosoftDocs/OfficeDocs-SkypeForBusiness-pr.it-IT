@@ -3,6 +3,49 @@
 
 
 
+## <a name="week-of-december-06-2021"></a>Settimana del 06 dicembre 2021
+
+
+| Pubblicato il |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 12/6/2021 | [Configurare il gateway SIP](/MicrosoftTeams/sip-gateway-configure) | aggiunto |
+| 12/6/2021 | [Pianificare il gateway SIP](/MicrosoftTeams/sip-gateway-plan) | aggiunto |
+| 12/6/2021 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant) | modificato |
+| 12/6/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
+| 12/6/2021 | [Indirizzi di emergenza per località remote](/MicrosoftTeams/emergency-calling-dispatchable-location) | aggiunto |
+| 12/7/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
+| 12/7/2021 | [Configurare la conferma di chiamata in uscita della riunione per gli utenti in Microsoft Teams](/MicrosoftTeams/set-up-meeting-dial-out-confirmation) | modificato |
+| 12/7/2021 | [Configurare il gateway SIP](/MicrosoftTeams/sip-gateway-configure) | modificato |
+| 12/7/2021 | [Microsoft Teams Rooms portale](/MicrosoftTeams/rooms/multi-tenant-auditing) | aggiunto |
+| 12/7/2021 | [Gestione dei partner per i clienti](/MicrosoftTeams/rooms/multi-tenant-management-customer) | aggiunto |
+| 12/7/2021 | [Gestione dei clienti multi-tenant per i partner](/MicrosoftTeams/rooms/multi-tenant-management-partner) | aggiunto |
+| 12/7/2021 | [Microsoft Teams Rooms gestito](/MicrosoftTeams/rooms/microsoft-teams-rooms-premium) | modificato |
+| 12/7/2021 | [Requisiti per Microsoft Teams Rooms](/MicrosoftTeams/rooms/requirements) | modificato |
+| 12/8/2021 | [Configurazione dell'amministratore per l'app Genitori EDU Microsoft in Teams](/MicrosoftTeams/edu-parents-app) | modificato |
+| 12/8/2021 | [Pianificare l'instradamento basato sulla posizione per Instradamento diretto](/MicrosoftTeams/location-based-routing-plan) | modificato |
+| 12/8/2021 | [Musica blocco](/MicrosoftTeams/music-on-hold) | modificato |
+| 12/8/2021 | [Distribuire Microsoft Teams Rooms con Exchange locale (ibrida)](/MicrosoftTeams/rooms/with-exchange-on-premises) | modificato |
+| 12/8/2021 | [Distribuire Microsoft Teams Rooms con Exchange Online](/MicrosoftTeams/rooms/with-exchange-online) | modificato |
+| 12/8/2021 | [Distribuire Microsoft Teams Rooms con Microsoft 365 o Office 365](/MicrosoftTeams/rooms/with-office-365) | modificato |
+| 12/8/2021 | [Distribuire Microsoft Teams Rooms con Skype for Business Server](/MicrosoftTeams/rooms/with-skype-for-business-server-2015) | modificato |
+| 12/8/2021 | [Domande frequenti su Call Quality Dashboard (CQD)](/MicrosoftTeams/cqd-frequently-asked-questions) | modificato |
+| 12/8/2021 | [Dimensioni e misure - Call Quality Dashboard (CQD)](/MicrosoftTeams/dimensions-and-measures-available-in-call-quality-dashboard) | modificato |
+| 12/9/2021 | [Configurare chiamate di emergenza dinamiche](/MicrosoftTeams/configure-dynamic-emergency-calling) | modificato |
+| 12/9/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
+| 12/9/2021 | [Routing diretto SBA](/MicrosoftTeams/direct-routing-survivable-branch-appliance) | modificato |
+| 12/9/2021 | [Visualizzare un elenco di utenti abilitati per le audioconferenze](/MicrosoftTeams/see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-teams) | modificato |
+| 12/9/2021 | [Domande frequenti su Call Quality Dashboard (CQD)](/MicrosoftTeams/cqd-frequently-asked-questions) | modificato |
+| 12/9/2021 | [Usare la telemetria in tempo reale per risolvere i problemi di qualità scarsa delle riunioni](/MicrosoftTeams/use-real-time-telemetry-to-troubleshoot-poor-meeting-quality) | modificato |
+| 12/10/2021 | [Configurare chiamate di emergenza dinamiche](/MicrosoftTeams/configure-dynamic-emergency-calling) | modificato |
+| 12/10/2021 | [Informazioni di riferimento sulla composizione e il riconoscimento vocale dell'operatore automatico e della coda di chiamata](/MicrosoftTeams/dial-voice-reference) | modificato |
+| 12/10/2021 | [Usare i file di log nella risoluzione dei Microsoft Teams](/MicrosoftTeams/log-files) | modificato |
+| 12/10/2021 | [Configurare i piani per chiamate](/MicrosoftTeams/set-up-calling-plans) | modificato |
+| 12/10/2021 | [Configurare il routing delle chiamate per l'instradamento diretto](/MicrosoftTeams/direct-routing-voice-routing) | modificato |
+| 12/10/2021 | [Teams per organizzazioni no profit](/MicrosoftTeams/expand-teams-across-your-org/teams-for-nonprofit-landing-page) | modificato |
+| 12/10/2021 | [Gestione dei partner per i clienti](/MicrosoftTeams/rooms/multi-tenant-management-customer) | modificato |
+| 12/10/2021 | [Gestione dei clienti multi-tenant per i partner](/MicrosoftTeams/rooms/multi-tenant-management-partner) | modificato |
+
+
 ## <a name="week-of-november-29-2021"></a>Settimana del 29 novembre 2021
 
 
@@ -13,7 +56,7 @@
 | 11/29/2021 | [Aggiornare dalla versione di valutazione gratuita di Teams Exploratory](/MicrosoftTeams/upgrade-from-teams-exploratory) | modificato |
 | 11/30/2021 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | modificato |
 | 11/30/2021 | [Configurazione dell'amministratore per l'app Genitori EDU Microsoft in Teams](/MicrosoftTeams/edu-parents-app) | modificato |
-| 12/1/2021 | [Connessione Microsoft Teams Essentials (AAD Identity) a un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | aggiunto |
+| 12/1/2021 | [Connessione Microsoft Teams Essentials (AAD Identity) in un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | aggiunto |
 | 12/1/2021 | [Guida introduttiva di Teams Essentials per le piccole imprese](/MicrosoftTeams/get-started-with-teams-essentials) | aggiunto |
 | 12/1/2021 | [Configurare le Connessione con operatore conferenza](/MicrosoftTeams/operator-connect-conferencing-configure) | aggiunto |
 | 12/1/2021 | [Pianificare le conferenze Connessione con operatore conferenza](/MicrosoftTeams/operator-connect-conferencing-plan) | aggiunto |
@@ -29,9 +72,9 @@
 | 12/2/2021 | [Telefoni e dispositivi per Microsoft Teams](/MicrosoftTeams/devices/usb-devices) | modificato |
 | 12/2/2021 | [Dimensioni e misure - Call Quality Dashboard (CQD)](/MicrosoftTeams/dimensions-and-measures-available-in-call-quality-dashboard) | modificato |
 | 12/2/2021 | [Opzioni di connettività PSTN](/MicrosoftTeams/pstn-connectivity) | modificato |
-| 12/2/2021 | [Insights per l'istruzione utente finale](/MicrosoftTeams/insights-end-user-notice) | aggiunto |
+| 12/2/2021 | [Insights per l'istruzione per l'utente finale](/MicrosoftTeams/insights-end-user-notice) | aggiunto |
 | 12/2/2021 | [Configurare chiamate di emergenza dinamiche](/MicrosoftTeams/configure-dynamic-emergency-calling) | modificato |
-| 12/2/2021 | [Connessione Microsoft Teams Essentials (AAD Identity) a un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | modificato |
+| 12/2/2021 | [Connessione Microsoft Teams Essentials (AAD Identity) in un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | modificato |
 | 12/3/2021 | Assegnare i criteri agli utenti in Microsoft Teams | rimosso |
 | 12/3/2021 | [Cercare gli eventi nel log di controllo Microsoft Teams](/MicrosoftTeams/audit-log-events) | modificato |
 | 12/3/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
@@ -69,7 +112,7 @@
 | 11/24/2021 | [Registrazione delle riunioni di Teams nel cloud](/MicrosoftTeams/cloud-recording) | modificato |
 | 11/24/2021 | [Configurare la condivisione desktop in Microsoft Teams](/MicrosoftTeams/configure-desktop-sharing) | modificato |
 | 11/24/2021 | [Cortana'assistenza vocale in Microsoft Teams](/MicrosoftTeams/cortana-in-teams) | modificato |
-| 11/24/2021 | [Teams per l'istruzione guidata criteri per applicare facilmente criteri per l'apprendimento sicuro](/MicrosoftTeams/easy-policy-setup-edu) | modificato |
+| 11/24/2021 | [Teams per l'istruzione guidata criteri per applicare facilmente i criteri per l'apprendimento sicuro](/MicrosoftTeams/easy-policy-setup-edu) | modificato |
 | 11/24/2021 | [Criteri di riunione e scadenza della riunione in Microsoft Teams](/MicrosoftTeams/meeting-expiration) | modificato |
 | 11/24/2021 | [Gestire i criteri delle riunioni per audio e video](/MicrosoftTeams/meeting-policies-audio-and-video) | modificato |
 | 11/24/2021 | [Gestire i criteri delle riunioni per la condivisione di contenuti](/MicrosoftTeams/meeting-policies-content-sharing) | modificato |
@@ -111,8 +154,8 @@
 | 11/17/2021 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | modificato |
 | 11/17/2021 | [Restrizioni per le chiamate in uscita - Servizi di audioconferenza & chiamate PSTN](/MicrosoftTeams/outbound-calling-restriction-policies) | modificato |
 | 11/17/2021 | [Usare la telemetria in tempo reale per risolvere i problemi di qualità scarsa delle riunioni](/MicrosoftTeams/use-real-time-telemetry-to-troubleshoot-poor-meeting-quality) | modificato |
-| 11/18/2021 | [Provisioning remoto e accesso per i Teams Android](/MicrosoftTeams/devices/remote-provision-remote-login) | modificato |
-| 11/18/2021 | [Accesso remoto e disconnessione per i Teams Android](/MicrosoftTeams/devices/remote-sign-in-and-sign-out) | aggiunto |
+| 11/18/2021 | [Provisioning remoto e accesso per Teams dispositivi Android](/MicrosoftTeams/devices/remote-provision-remote-login) | modificato |
+| 11/18/2021 | [Accesso remoto e disconnessione per Teams dispositivi Android](/MicrosoftTeams/devices/remote-sign-in-and-sign-out) | aggiunto |
 | 11/18/2021 | [Microsoft Teams sulla versione di PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | modificato |
 | 11/18/2021 | [Gestire l'app Bookings in Microsoft Teams](/MicrosoftTeams/bookings-app-admin) | modificato |
 | 11/18/2021 | [Teams per organizzazioni no profit](/MicrosoftTeams/expand-teams-across-your-org/teams-for-nonprofit-landing-page) | modificato |
@@ -124,6 +167,6 @@
 | 11/19/2021 | [Installare Teams usando Microsoft Endpoint Configuration Manager](/MicrosoftTeams/msi-deployment) | modificato |
 | 11/19/2021 | [Cos'è un ordine di portabilità?](/MicrosoftTeams/phone-number-calling-plans/port-order-overview) | modificato |
 | 11/18/2021 | Risolvere i problemi relativi all'accesso guest in Microsoft Teams | rimosso |
-| 11/19/2021 | [Aggiornamento \| dell'elenco di controllo Skype Business a Teams passaggi \| di base per l'aggiornamento](/MicrosoftTeams/upgrade-basic) | modificato |
+| 11/19/2021 | [Elenco di controllo per \| l'Skype business per Teams passaggi \| di base per l'aggiornamento](/MicrosoftTeams/upgrade-basic) | modificato |
 | 11/19/2021 | Dichiarazione di conformità sull'accessibilità - Francia | rimosso |
 | 11/19/2021 | [Microsoft Teams: Dichiarazione di conformità sull'accessibilità - Francia](/MicrosoftTeams/accessibility-declaration-of-conformance-in-france-for-teams) | modificato |
