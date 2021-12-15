@@ -759,102 +759,6 @@ items:
                 href: audio-conferencing-zones.md
               - name: 'Video: audioconferenza in Teams'
                 href: ./audio-conferencing-in-office-365.md
-      - name: Microsoft Teams Rooms
-        items:
-          - name: Panoramica
-            href: rooms/index.md
-          - name: Guida per la sala riunioni in Teams
-            href: teams-meeting-room-guidance.md
-          - name: Servizio gestito da Microsoft Teams Rooms
-            items:
-              - name: Panoramica
-                href: rooms/microsoft-teams-rooms-premium.md
-              - name: Ottenere e assegnare una licenza
-                href: rooms/obtaining-assigning-license.md
-              - name: Eseguire la registrazione al servizio gestito MTRP
-                href: rooms/enrolling-mtrp-managed-service.md
-              - name: Controllo dell'accesso basato sui ruoli
-                href: rooms/microsoft-teams-rooms-premium-rbac.md
-              - name: Configurare ServiceNow per Teams Rooms
-                href: rooms/microsoft-teams-rooms-configure-servicenow.md
-              - name: Gestione multi-tenant dei clienti per i partner
-                href: rooms/multi-tenant-management-partner.md
-              - name: Gestione dei partner per i clienti
-                href: rooms/multi-tenant-management-customer.md
-              - name: Log di controllo per le attività dei servizi gestiti di Teams Rooms
-                href: rooms/multi-tenant-auditing.md
-          - name: Pianificare
-            items:
-              - name: Panoramica della pianificazione di Microsoft Teams Rooms
-                href: rooms/rooms-plan.md
-              - name: Confronto delle funzionalità dei dispositivi Teams in Windows e Android
-                href: rooms/teams-devices-feature-comparison.md
-              - name: Supporto versione
-                href: rooms/rooms-lifecycle-support.md
-              - name: Note sulla versione
-                href: rooms/rooms-release-note.md
-              - name: Predisporre l'ambiente
-                href: rooms/rooms-prep.md
-              - name: Requisiti
-                href: rooms/requirements.md
-              - name: Sicurezza
-                href: rooms/security.md
-              - name: Concessione di licenze online
-                href: rooms/rooms-licensing.md
-              - name: Gestione dei piani con Monitoraggio di Azure
-                href: rooms/azure-monitor-plan.md
-          - name: Distribuzione
-            items:
-              - name: Panoramica della distribuzione
-                href: rooms/rooms-deploy.md
-              - name: Configurare gli account
-                href: rooms/rooms-configure-accounts.md
-              - name: Surface Hub
-                items:
-                  - name: Configurare Riunioni coordinate
-                    href: rooms/coordinated-meetings.md
-                  - name: Gestire le impostazioni di Microsoft Teams Rooms.
-                    href: rooms/surface-hub-manage-config.md
-              - name: Con Office 365
-                href: rooms/with-office-365.md
-              - name: Con Skype for Business Server
-                href: rooms/with-skype-for-business-server-2015.md
-              - name: Con Exchange Online (ibrido)
-                href: rooms/with-exchange-online.md
-              - name: Con Exchange locale (ibrido)
-                href: rooms/with-exchange-on-premises.md
-              - name: Configurare una console
-                href: rooms/console.md
-              - name: Aggiornare manualmente un dispositivo
-                href: rooms/manual-update.md
-              - name: Configurare l'autenticazione
-                href: rooms/rooms-authentication.md
-              - name: Partecipare a riunioni di terze parti
-                href: rooms/third-party-join.md
-              - name: Utilizzo di Microsoft Endpoint Configuration Manager
-                href: rooms/rooms-scale.md
-              - name: Gestione con Monitoraggio di Azure
-                href: rooms/azure-monitor-deploy.md
-              - name: Eseguire la migrazione di SRS V1 o LRS
-                href: rooms/lrs-migration.md
-              - name: Videocamere di contenuto
-                href: rooms/content-camera.md
-              - name: Controlli di riconoscimento vocale per altoparlanti intelligenti
-                href: rooms/voice-recognition.md
-          - name: Gestire
-            items:
-              - name: Panoramica della gestione
-                href: rooms/rooms-manage.md
-              - name: Manutenzione e operazioni
-                href: rooms/rooms-operations.md
-              - name: Problemi noti
-                href: rooms/known-issues.md
-              - name: Dispositivi con Monitoraggio di Azure
-                href: rooms/azure-monitor-manage.md
-              - name: Impostazioni con un file XML
-                href: rooms/xml-config-file.md
-              - name: Uso dello strumento di ripristino
-                href: rooms/recovery-tool.md
   - name: Voce - Connettività PSTN e telefono di Teams
     items:
       - name: Pianificare la soluzione vocale di Teams
@@ -1391,14 +1295,14 @@ items:
         items:
           - name: Panoramica
             href: rooms/index.md
-          - name: Guida per la sala riunioni in Teams
-            href: teams-meeting-room-guidance.md
           - name: Pianificare
             items:
               - name: Panoramica della pianificazione di Microsoft Teams Rooms
                 href: rooms/rooms-plan.md
               - name: Confronto delle funzionalità dei dispositivi Teams in Windows e Android
                 href: rooms/teams-devices-feature-comparison.md
+              - name: Guida per la sala riunioni in Teams
+                href: teams-meeting-room-guidance.md
               - name: Supporto versione
                 href: rooms/rooms-lifecycle-support.md
               - name: Note sulla versione
@@ -1644,12 +1548,8 @@ items:
             href: manage-tasks-app.md
           - name: Gestire l'app Approvazioni
             href: approval-admin.md
-          - name: Turni per Teams
-            items:
-              - name: Turni per Teams
-                href: expand-teams-across-your-org/shifts-for-teams-landing-page.md
-              - name: Gestire l'app Turni
-                href: expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md
+          - name: Gestire l'app Turni
+            href: expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md
       - name: Teams per l'istruzione
         href: expand-teams-across-your-org/teams-for-education-landing-page.md
         items:

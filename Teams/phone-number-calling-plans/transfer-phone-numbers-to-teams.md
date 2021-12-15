@@ -19,18 +19,18 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare la procedura guidata di porting per trasferire il numero di telefono dal provider di servizi corrente a Microsoft Teams.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b487249e9a3744c2f83a9bece04a17e7e2948f01
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 39be72edfa013a42fec6dcc60a8555d98be87b57
+ms.sourcegitcommit: 8d728ca42dc917a28b94e2de84ce4f5b2515d485
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861953"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61513477"
 ---
 # <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire i numeri di telefono Microsoft Teams
 
 Usare la procedura guidata di porting nell'Microsoft Teams di amministrazione per trasferire i numeri di telefono dal provider di servizi corrente a Teams. Dopo aver portato i numeri di telefono in Teams, Microsoft diventerà il provider di servizi e ti addebiterà tali numeri di telefono.
 
-Prima di iniziare, è consigliabile esaminare le informazioni in [Che cos'è un ordine di trasferimento?](port-order-overview.md) Se hai numeri di servizio per bridge di conferenza telefonica con accesso esterno, operatori automatici o altri numeri di servizio, numeri a numero verde o hai [](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) più di 999 numeri di telefono per utenti (abbonati) che devi trasferire a Teams, vedi Gestire i numeri di telefono dell'organizzazione per scaricare i moduli corretti e inviarli a Microsoft.
+Prima di iniziare, è consigliabile esaminare le informazioni in [Che cos'è un ordine di trasferimento?](port-order-overview.md) Se hai numeri di servizio per bridge di conferenza telefonica con accesso esterno, operatori automatici o altri numeri di servizio, numeri a numero verde o hai [](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) più di 999 numeri di telefono per utenti (abbonati) che devi trasferire a Teams, vedi Gestire i numeri di telefono per l'organizzazione per scaricare i moduli corretti e inviarli a Microsoft.
 
   > [!NOTE]
   > Microsoft elabora gli ordini di trasferimento per il trasferimento di numeri di telefono solo nei giorni lavorativi degli Stati Uniti e non nei giorni festivi o nei fine settimana.
@@ -40,7 +40,7 @@ Prima di iniziare, è consigliabile esaminare le informazioni in [Che cos'è un 
 > [!NOTE]
 > **Attualmente, è possibile usare questa procedura guidata per ottenere** i numeri di telefono per Regno Unito, Stati Uniti e Canada. Per ottenere numeri di telefono per altri paesi e aree geografiche, è possibile [inviare manualmente un ordine di trasferimento.](manually-submit-port-order.md) Per ottenere il modulo necessario per inviare manualmente un ordine di trasferimento, selezionare il proprio paese o area geografica nell'elenco a discesa in Gestire i numeri di telefono [per l'organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare **a** Numeri  >  **Telefono vocali.** Fare **clic su** Numeri e quindi su **Porta** per avviare la procedura guidata di porting.
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Numeri**  >  **Telefono vocali.** Fare **clic su** Numeri e quindi su **Porta** per avviare la procedura guidata di porting.
 2. Esaminare le informazioni nella **pagina Introduzione** e quindi, quando si è pronti, fare clic su **Avanti.**
 3. Nella pagina **Selezione località e tipo di numero** specificare quanto segue e quindi fare clic su **Avanti:**
 
@@ -90,6 +90,10 @@ Prima di iniziare, è consigliabile esaminare le informazioni in [Che cos'è un 
 Quando riceviamo l'ordine di trasferimento, riceverai un messaggio di posta elettronica che verifica la tua richiesta. La richiesta viene controllata e aggiornata quotidianamente e si verrà informati dello stato e dello stato dell'utente tramite posta elettronica. Se la richiesta di portabilità viene rifiutata dal gestore in perdita, contattare [il service desk TNS.](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)
 
 Per visualizzare lo stato dell'ordine di trasferimento, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare > **Ordini** di trasferimento vocale e quindi fare clic su Cronologia  >   **ordini.** Ogni stato dell'ordine di trasferimento è elencato nella **colonna** Stato. Per altre informazioni, vedere Qual è lo stato [degli ordini di trasferimento?](port-order-status.md)
+
+
+## <a name="reporting-telephone-number-issues"></a>Segnalare problemi relativi ai numeri di telefono?
+Se si verifica un problema con i numeri portati entro le prime 24-48 ore. al termine della porta, contattare [il servizio TNS Service Desk.](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md) Per qualsiasi problema esterno alle 48 ore, contattare il team di supporto TECNICO.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

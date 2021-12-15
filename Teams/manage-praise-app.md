@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: msteams
 ms.localizationpriority: medium
 description: Informazioni sulle impostazioni di amministratore nell'app Complimenti nell'interfaccia Microsoft Teams di amministrazione
-ms.openlocfilehash: 1d460a785a318723bf8e0d0852132863ef7513f8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 044ab5d7fc5aebba1b1245f349e4ed27c61190b6
+ms.sourcegitcommit: 8d728ca42dc917a28b94e2de84ce4f5b2515d485
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858033"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61513457"
 ---
-# <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimenti nell'interfaccia Microsoft Teams di amministrazione
+# <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l Complimenti app nell'interfaccia Microsoft Teams di amministrazione
 
 > [!NOTE]
 > Gli amministratori devono avere una licenza Teams per accedere a questa funzionalità. Se si prova ad accedere a questa funzionalità senza Teams licenza, viene visualizzato un messaggio di errore.
 
-L Complimenti app in Microsoft Teams consente agli utenti di mostrare apprezzamento ai membri dell'organizzazione o della classe. Con una selezione di set di badge tra cui scegliere e l'opzione per creare i propri badge, Complimenti è progettato per aiutare a riconoscere l'impegno che si fa nell'ampia gamma di lavoro che gli utenti Teams fanno, dai docenti ai lavoratori in prima linea. Per altre informazioni, vedere [Inviare Complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
+L Complimenti app in Microsoft Teams consente agli utenti di mostrare apprezzamento ai membri dell'organizzazione o della classe. Con una selezione di set di badge tra cui scegliere e l'opzione per creare i propri badge, Complimenti è progettato per aiutare a riconoscere l'impegno che si fa nell'ampia gamma di lavoro che gli utenti di Teams fanno, dai docenti ai lavoratori in prima linea. Per altre informazioni, vedere [Inviare Complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
 
 Gli amministratori possono controllare quali badge sono disponibili per l'organizzazione dall'Microsoft Teams di amministrazione. Nel riquadro di spostamento sinistro passare a Teams **app > Gestisci app**. Nell'elenco delle app fare clic **su Complimenti** e quindi selezionare **Impostazioni**.  Da qui è possibile scegliere di abilitare i set di badge predefiniti e predefiniti e creare badge personalizzati.
 
@@ -32,7 +32,7 @@ Gli amministratori possono controllare quali badge sono disponibili per l'organi
 
 ## <a name="use-built-in-badge-sets"></a>Usare set di badge predefiniti
 
-I set predefiniti sono raccolte di badge progettati da Microsoft per l'app Complimenti predefinita. Questi set non sono modificabili dagli amministratori. Il set di badge predefinito è già abilitato e disponibile nell'app Complimenti predefinita. Per modificare la disponibilità del set predefinito o di qualsiasi set di badge, impostare l'interruttore corrispondente su Attivato o Disattivato. 
+I set predefiniti sono raccolte di badge progettati da Microsoft per l Complimenti app. Questi set non sono modificabili dagli amministratori. Il set di badge predefinito è già abilitato e disponibile nell Complimenti app. Per modificare la disponibilità del set predefinito o di qualsiasi set di badge, impostare l'interruttore corrispondente su Attivato o Disattivato. 
 
 <a name="default-badges"></br></a>
 
@@ -65,7 +65,7 @@ Selezionare **Crea un badge personalizzato.** Da qui è possibile progettare un 
    > [!TIP]
    > Se non si ha novità per i valori esadecimali, questo articolo include una rapida [introduzione](#hex-colors-intro) per illustrare come usarli.
 
-3. Upload'immagine di un badge. Il tipo di file accettato è .PNG. Il file di immagine deve essere inferiore a 40 KB con dimensioni massime di 216 x 216 pixel.
+3. Upload un'immagine del badge. Il tipo di file accettato è .PNG. Il file di immagine deve essere inferiore a 40 KB con dimensioni massime di 216 x 216 pixel.
 ![Badge con campi di sfondo, testo e immagine etichettati.](media/praise-app-badge-fields.png)
 
 4. Localizzare il nome del badge: in **Nomi badge localizzati** selezionare **Aggiungi.** Selezionare le impostazioni locali desiderate nell'elenco a discesa. Immettere quindi il nome del badge nella lingua designata.
@@ -110,13 +110,13 @@ Di seguito è riportato un elenco di colori di esempio per iniziare:
 
 **Quando si seleziona un'immagine, tenere presente le dimensioni del badge.** Per una qualità ottimale, è consigliabile caricare un file di immagine di 216 x 216 pixel,ovvero le dimensioni massime. Evitare di allungare o distorcere l'immagine per adattarla a queste dimensioni.
 
-**Se l'immagine del badge non è rettangolare, rendere trasparente l'immagine.** È necessario eseguire questa operazione prima di caricare il file di immagine in Complimenti.
+**Se l'immagine del badge non è rettangolare, rendere trasparente l'immagine.** È necessario eseguire questa operazione prima di caricare il file di immagine Complimenti.
 
 ![A sinistra: badge con immagine non trasparente, a destra: badge con immagine trasparente.](media/praise-app-best-practices.png)
 
 ## <a name="badge-set-assets"></a>Risorse del set di badge
 
-I set di badge predefiniti non possono essere modificati, quindi quando è abilitato un set predefinito, tutti i badge del set vengono aggiunti all'app Complimenti. Se si vogliono aggiungere badge specifici da un set predefinito e osare altri utenti, creare di nuovo i badge da usare come badge personalizzati. È possibile scaricare l'immagine del badge e trovare il testo e i colori di sfondo dei badge dai set predefiniti nelle tabelle seguenti.
+I set di badge predefiniti non possono essere modificati, quindi quando è abilitato un set predefinito, tutti i badge del set vengono aggiunti all'app Complimenti predefinita. Se si vogliono aggiungere badge specifici da un set predefinito e osare altri utenti, creare di nuovo i badge da usare come badge personalizzati. È possibile scaricare l'immagine del badge e trovare il testo e i colori di sfondo dei badge dai set predefiniti nelle tabelle seguenti.
 
 ### <a name="default-badges-assets"></a>Risorse badge predefinite
 
@@ -157,3 +157,11 @@ I set di badge predefiniti non possono essere modificati, quindi quando è abili
 |Consapevolezza di sé    |[PNG di autosassazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/self-awareness-badge.png)|#FFFFFF    |#1680E5|
 |Gestione autonoma   |[PNG auto-gestione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/self-management-badge.png)|#FFFFFF    |#4C144D|
 |Premura    |[PNG riflessivo](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/thoughtfulness-badge.png)|#FFFFFF    |#EE4086|
+
+## <a name="upcoming-changes"></a>Modifiche imminenti
+
+A partire da gennaio 2022, le funzionalità attualmente disponibili per i badge cambieranno. I badge di apprendimento sociale ed emotivo per l'istruzione, tra cui la consapevolezza di sé e l'auto-gestione, non saranno più disponibili.
+
+Anche **l'opzione Crea un badge** personalizzato non sarà più disponibile a partire da gennaio   2022.
+
+Inoltre, l'interruttore Stato nell'interfaccia di amministrazione di Teams che consente o blocca Complimenti influisce sia sull'app Complimenti che sulla funzionalità Complimenti nell'app Viva Insights in Teams. 

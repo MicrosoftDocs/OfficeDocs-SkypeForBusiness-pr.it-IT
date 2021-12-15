@@ -1,5 +1,5 @@
 ---
-title: Aggiornamenti assistiti | Skype Aggiornamento di Business Online Teams business
+title: Aggiornamenti assistiti | Skype business online per Teams aggiornamento
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -18,16 +18,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bc890a4a84d86086ace0f85e25aa0c86c99a0e43
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 44ca04f9fce23876c7ee782ef5cc5078da7e67c4
+ms.sourcegitcommit: 8d728ca42dc917a28b94e2de84ce4f5b2515d485
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589466"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61513467"
 ---
 # <a name="assisted-upgrades-from-skype-for-business-online-to-microsoft-teams"></a>Aggiornamenti assistiti da Skype for Business Online a Microsoft Teams
 
-Microsoft offre aggiornamenti assistiti a Teams per aiutare le organizzazioni a eseguire una transizione efficace da Skype for Business Online man mano che il servizio si ritira il 31 luglio 2021. Sia che l'organizzazione eserciti l'aggiornamento da un ambiente Skype for Business *Online* o *Skype for Business Online* con ambienti ibridi (utenti sia in Skype for Business **Online** che in Skype for Business Server), gli aggiornamenti assistiti riducono il numero di attività tecniche da eseguire e consentono di concentrarsi più sulla preparazione dell'organizzazione, sulla consapevolezza degli utenti e sulla formazione Teams.
+Microsoft offre aggiornamenti assistiti a Teams per aiutare le organizzazioni a eseguire una transizione efficace da Skype for Business Online man mano che il servizio si ritira il 31 luglio 2021. Se l'organizzazione esegue l'aggiornamento da *Skype for Business Online* o *Skype for Business Online* con un ambiente ibrido (utenti sia in Skype for Business **Online** che Skype for Business Server ) gli aggiornamenti assistiti riducono il numero di attività tecniche da eseguire e consentono di concentrarsi più sulla preparazione dell'organizzazione, sulla consapevolezza degli utenti e sulla formazione Teams utenti.
 
 È consigliabile consultare le indicazioni per [l'aggiornamento prima](https://aka.ms/SkypeToTeams) dell'aggiornamento. Le indicazioni sull'aggiornamento includono attività consigliate e risorse utili per completare un aggiornamento da Skype for Business Online a Teams. Queste indicazioni si applicano a qualsiasi organizzazione che pianifica un aggiornamento a Teams, indipendentemente dal fatto che gestirà tutti gli aspetti dell'aggiornamento o userà il processo assistito.
 
@@ -38,7 +38,7 @@ Microsoft offre aggiornamenti assistiti a Teams per aiutare le organizzazioni a 
 
 ## <a name="notifications-for-scheduled-customers"></a>Notifiche per i clienti programmati
 
-Skype for Business I clienti online pianificati per gli aggiornamenti assistiti Teams riceveranno una serie di notifiche di aggiornamento. Queste notifiche inizieranno 90 giorni prima della data di aggiornamento pianificata. Queste notifiche verranno recapitate come post Di pianificazione per la modifica nel Centro messaggi di Microsoft 365, notifiche del dashboard di aggiornamento nell'interfaccia di amministrazione di Teams e contrassegni in-app agli utenti finali. 
+Skype for Business clienti online pianificati per gli aggiornamenti assistiti Teams riceveranno una serie di notifiche di aggiornamento. Queste notifiche inizieranno 30 giorni prima della data di aggiornamento pianificata. Queste notifiche verranno recapitate come post Di pianificazione per la modifica nel Centro messaggi di Microsoft 365, notifiche del dashboard di aggiornamento nell'interfaccia di amministrazione di Teams e contrassegni in-app agli utenti finali. 
 
 Le notifiche di aggiornamento includeranno la data pianificata dell'aggiornamento assistito e un collegamento alle risorse di aggiornamento e alla formazione per facilitare l'adozione e l'uso di Teams.
 
@@ -48,14 +48,14 @@ Gli aggiornamenti assistiti inizieranno ad agosto 2021 con date specifiche del t
 
 L'esperienza di aggiornamento assistito varia leggermente a seconda che si abbia un Skype for Business solo online o un Skype for Business Online con ambiente ibrido:
 
-- **Skype for Business solo online** Il processo di aggiornamento assistito applierà `TeamsUpgradeOverridePolicy` i criteri all'organizzazione. Quando viene applicato questo criterio, tutti gli utenti Skype for Business online verranno inseriti in Teams Solo utenti.
-- **Skype for Business Online con ibridi** Gli ambienti ibridi possono includere utenti che rientrano in una delle categorie seguenti:
+- **Skype for Business solo online Il** processo di aggiornamento assistito applica il `TeamsUpgradeOverridePolicy` criterio all'organizzazione. Quando si applica questo criterio, tutti gli utenti Skype for Business online verranno inseriti in Teams solo utenti.
+- **Skype for Business Online con ambienti ibridi** ibridi possono avere utenti che rientrano in una delle categorie seguenti:
 
   - Utenti locali ospitati in Skype for Business Server
-  - Skype for Business Utenti online che si Teams modalità Solo utenti
-  - Skype for Business Utenti online che non **sono** in Teams solo utenti
+  - Skype for Business utenti online in modalità Teams solo utenti
+  - Skype for Business utenti online che non **sono** in Teams modalità Solo utenti
 
-  Se si ha una combinazione di utenti in ognuna delle categorie elencate sopra, il processo di aggiornamento assistito passa solo agli utenti di Skype for Business Online alla modalità Solo Teams se non sono già in quella modalità. Gli utenti locali Skype for Business utenti non saranno influenzati dal processo di aggiornamento assistito.
+  Se si ha una combinazione di utenti in ognuna delle categorie elencate sopra, il processo di aggiornamento assistito passa solo agli utenti di Skype for Business Online alla modalità solo Teams se non sono già in quella modalità. Gli utenti locali Skype for Business utenti non saranno influenzati dal processo di aggiornamento assistito.
 
 > [!NOTE]
 > Non preoccuparti se l'aggiornamento assistito è pianificato per una data successiva al 31 luglio 2021. L'organizzazione sarà in grado di usare Skype for Business Online fino al completamento dell'aggiornamento.
@@ -64,7 +64,7 @@ La durata dell'aggiornamento varia in base al volume di utenti e alle caratteris
 
 ## <a name="the-post-upgrade-experience"></a>Esperienza post-aggiornamento
 
-Al termine dell'aggiornamento assistito, la **modalità di coesistenza** per gli utenti aggiornati è Teams solo. È consigliabile rivedere le considerazioni [Teams solo modalità prima](teams-only-mode-considerations.md) dell'aggiornamento. La tabella seguente fornisce una panoramica generale dell'esperienza utente Teams solo utenti.
+Al termine dell'aggiornamento assistito, la **modalità di coesistenza** per gli utenti aggiornati è impostata su Solo Teams versione. È consigliabile rivedere le considerazioni [Teams modalità Solo prima](teams-only-mode-considerations.md) dell'aggiornamento. La tabella seguente fornisce una panoramica generale dell'esperienza utente Teams solo utenti.
 
 :::row:::
     :::column span="1":::
@@ -74,7 +74,7 @@ Al termine dell'aggiornamento assistito, la **modalità di coesistenza** per gli
         - Tutte le chiamate e le chat vengono avviate e ricevute in Teams
         - Gli utenti possono comunicare (chat/chiamata) con qualsiasi Skype for Business utente
         - Le organizzazioni possono consentire agli Teams utenti di comunicare con gli utenti del servizio Skype consumer gestendo [le autorizzazioni di accesso esterno](manage-external-access.md)
-        - Teams utenti che provano ad accedere a Skype for Business Online vengono reindirizzati a Teams
+        - Teams utenti che tentano di accedere a Skype for Business Online vengono reindirizzati a Teams
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -94,7 +94,7 @@ Al termine dell'aggiornamento assistito, la **modalità di coesistenza** per gli
         - La migrazione dei contatti viene eseguita quando gli utenti a Teams per la prima volta.
             > [!IMPORTANT]
             >La migrazione dei contatti deve essere eseguita entro 90 giorni dal completamento dell'aggiornamento.
-        - Le riunioni Skype for Business online vengono convertite in Teams riunioni
+        - Le riunioni Skype for Business Online vengono convertite in Teams riunioni
             > [!IMPORTANT]
             > I clienti con configurazioni Skype for Business Online devono usare il servizio di migrazione delle riunioni (MMS) per eseguire la migrazione delle riunioni Skype for Business Online esistenti a Teams riunioni. È consigliabile usare MMS prima della data di aggiornamento assistito. Per altre informazioni su MMS, vedere [Uso del servizio di migrazione delle riunioni (MMS).](/skypeforbusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms)
     :::column-end:::
@@ -107,4 +107,4 @@ Se si ha una distribuzione ibrida Skype for Business Server e si esegue l'aggior
 - [Guida introduttiva all'aggiornamento di Microsoft Teams](upgrade-start-here.md)
 - [Ritiro di Skype for Business Online](skype-for-business-online-retirement.md)
 - [Get-CsTeamsUpgradeStatus](/powershell/module/skype/get-csteamsupgradestatus?view=skype-ps&preserve-view=true)
-- [Teams Considerazioni solo sulla modalità](teams-only-mode-considerations.md)
+- [Teams solo modalità](teams-only-mode-considerations.md)

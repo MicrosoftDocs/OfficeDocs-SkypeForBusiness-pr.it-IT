@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6b11c58ced2ab089c181b28abe742ef8191452ea
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: ba5789dac9d54de153c6d4c712a2d68367ad79c0
+ms.sourcegitcommit: 8d728ca42dc917a28b94e2de84ce4f5b2515d485
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60865675"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "61513597"
 ---
 # <a name="sign-out-of-microsoft-teams"></a>Disconnettersi da Microsoft Teams
 
@@ -32,7 +32,7 @@ ms.locfileid: "60865675"
 - Vogliono usare un account diverso
 - Perché condividono l’uso di un dispositivo con un'altra persona
 
-Per questo ed altri motivi, Teams consente di disconnettersi dall'app e terminare la sessione.
+Per questi ed altri motivi, Teams consente di disconnettersi dall'app e terminare la sessione.
 
 ## <a name="account-sharing-between-apps"></a>Condivisione dell'account tra app
 
