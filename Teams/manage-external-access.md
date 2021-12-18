@@ -21,12 +21,12 @@ description: L'amministratore IT o di Teams può configurare l'accesso esterno p
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: e0036218312d04a409b6699998ec6b84cddae79c
-ms.sourcegitcommit: 8d728ca42dc917a28b94e2de84ce4f5b2515d485
+ms.openlocfilehash: 16a30b9e4ce9ed86516cfcf7fb0cbdb22e6c2141
+ms.sourcegitcommit: b0bb7db41856ee377dbe4ca8c9dff56385bf120d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61513487"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61563563"
 ---
 # <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 
@@ -144,7 +144,7 @@ Per testare la configurazione è necessario un utente di Teams che non si trova 
 
 ## <a name="limit-external-access-to-specific-people"></a>Limitare l'accesso esterno a utenti specifici
 
-È possibile limitare l'accesso esterno a utenti specifici attraverso PowerShell.
+Se hai abilitato **Le persone della mia organizzazione possono comunicare con gli utenti di Teams i cui account non sono gestiti da un'organizzazione**, puoi limitare l'accesso esterno a persone specifiche utilizzando PowerShell.
 
 È possibile usare lo script seguente, sostituendo *NomeCriterio* con il nome che si vuole assegnare al criterio e *NomeUtente* per ogni utente a cui si vuole poter usare l'accesso esterno.
 
