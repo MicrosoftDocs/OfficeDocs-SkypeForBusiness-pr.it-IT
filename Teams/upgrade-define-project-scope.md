@@ -20,18 +20,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 49ca0fb50f6e78f8c9ee3cd37aaba21c0929e014
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 39ba6728db7a9146b07104fec82bbd83554ed088
+ms.sourcegitcommit: b0bb7db41856ee377dbe4ca8c9dff56385bf120d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58732785"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61563216"
 ---
 # <a name="define-your-project-scope"></a>Definire l'ambito del progetto
 
-![Diagramma percorso di aggiornamento, evidenziando la Project definizione.](media/upgrade-banner-project-definition.png "Fasi del percorso di aggiornamento, con enfasi sulla fase Project definizione")
+![Diagramma percorso di aggiornamento, evidenziando la fase Project definizione.](media/upgrade-banner-project-definition.png "Fasi del percorso di aggiornamento, con enfasi sulla fase Project definizione")
 
-Questo articolo fa parte della fase di definizione Project del percorso di aggiornamento, un'attività completata dopo la creazione di una coalizione di sponsorizzazione e il team di progetto degli stakeholder identificati sono fondamentali per il successo del progetto. Prima di procedere, verificare di aver completato le attività seguenti:
+Questo articolo fa parte della fase Project Definition del percorso di aggiornamento, un'attività completata dopo aver creato una coalizione di sponsorizzazione e un team di progetto dagli stakeholder identificati sono fondamentali per il successo del progetto. Prima di procedere, verificare di aver completato le attività seguenti:
 
 - [Stakeholder del progetto arruolati](upgrade-enlist-stakeholders.md)
 
@@ -39,8 +39,8 @@ Il tempo necessario per definire la visione, l'ambito, gli obiettivi e la govern
 
 | &nbsp;| &nbsp;|
 |---|---|
-| ![Icona che rappresenta i punti decisionali.](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Cosa si vuole realizzare con questo progetto(in altre parole, perché lo si sta facendo)?</li><li>Che aspetto ha il successo?</li><li>Quali sono i rischi e qual è il piano per attenuare tali rischi?</li></ul> |
-| ![Icona che illustra i passaggi successivi.](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Discutere le sezioni seguenti con il team di progetto e gli sponsor.</li><li>Documentare la visione, l'ambito, gli obiettivi e i rischi per questo progetto.</li><li>Rivisitare il team di progetto per verificare di aver coinvolto il team giusto.</li></ul>|
+| ![Icona che descrive i punti decisionali.](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Cosa si vuole realizzare con questo progetto(in altre parole, perché lo si sta facendo)?</li><li>Che aspetto ha il successo?</li><li>Quali sono i rischi e qual è il piano per attenuare tali rischi?</li></ul> |
+| ![Icona che descrive i passaggi successivi.](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Discutere le sezioni seguenti con il team di progetto e gli sponsor.</li><li>Documentare la visione, l'ambito, gli obiettivi e i rischi per questo progetto.</li><li>Rivisitare il team di progetto per verificare di aver coinvolto il team giusto.</li></ul>|
 
 ## <a name="project-vision"></a>Project visione
 
@@ -72,7 +72,7 @@ La tua visione potrebbe essere realizzata solo nel tempo, attraverso varie fasi.
 
 ## <a name="project-goals"></a>Project obiettivi
 
-Gli obiettivi definiscono il risultato desiderato e consentono di misurare il successo del progetto. Gli obiettivi possono  essere definiti come obiettivi e risultati chiave (OKR) e le misure di successo del progetto possono essere definite come indicatori di successo _chiave_ (KPI). È essenziale ottenere la piena partecipazione degli stakeholder del progetto nella definizione di OKR e INDICATORI KPI, per assicurarsi che senta un senso di proprietà e allineare queste misure di successo alle attività di progetto definite. Gli obiettivi devono includere una combinazione di successo tecnico e mirato all'utente.
+Gli obiettivi definiscono il risultato desiderato e consentono di misurare il successo del progetto. Gli obiettivi possono  essere definiti come obiettivi e risultati chiave (OKR) e le misure del successo del progetto possono essere definite come indicatori di successo _chiave_ (KPI). È essenziale ottenere la piena partecipazione degli stakeholder del progetto nella definizione di OKR e INDICATORI KPI, per assicurarsi che senta un senso di proprietà e allineare queste misure di successo alle attività di progetto definite. Gli obiettivi devono includere una combinazione di successo tecnico e mirato all'utente.
 
 - **Gli OKR** contengono gli obiettivi impostati all'inizio del progetto e i risultati chiave misurati in base a una cadenza definita, ad esempio mensile o trimestrale. Esaminando i risultati principali, è possibile verificare che i risultati finali del progetto siano programmati o identificare e ridurre i problemi per riabilitarlo. Gli OKR sono in genere classificati come "raggiunti" o "non raggiunti".
 - **Gli indicatori KPI misurano** la qualità e il successo dei risultati chiave e integrano la natura binaria degli OKR, con una descrizione dettagliata dei risultati positivi e/o non corretti. Quando si definiscono gli indicatori KPI, è consigliabile usare criteri "specifici, misurabili, assegnabili, realistici, relativi al tempo" (SMART):
@@ -80,14 +80,14 @@ Gli obiettivi definiscono il risultato desiderato e consentono di misurare il su
   - Misurabile: quantificare o almeno suggerire un indicatore di avanzamento
   - Assegnabile: specificare chi lo farà
   - Realistico: specificare quali risultati possono essere realisticamente raggiunti, date le risorse disponibili
-  - Time-related: specificare quando è possibile ottenere i risultati
+  - Tempo: specificare quando è possibile ottenere i risultati
 
 La tabella seguente mostra esempi di okr e indicatori KPI per le fasi iniziali di un progetto di Skype for Business a Teams di aggiornamento.
 
 | Obiettivo | Risultato chiave | Da fare |
 |---|---|---|
 | Pilota Teams insieme Skype for Business, in [modalità solo collaborazione](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md) | FY19Q2: pilota di 500 utenti condotto e completato | <ul><li>Identificare gli utenti pilota</li><li>Creare un piano di test pilota</li><li>Abilitare gli utenti pilota in Teams</li><li>Implementare il progetto pilota</li><li>Eseguire un sondaggio pilota sul feedback</li><li>Misurare il successo pilota</li></ul> |
-| Eseguire correttamente la modalità solo collaborazione per tutti gli utenti dell'organizzazione insieme Skype for Business | <ul><li>Il 60% Skype for Business utenti usano Teams entro 30 giorni dall'implementazione</li><li>La soddisfazione dell'Teams è &#8805;80%</li></ul> | <ul><li>Progettare ed eseguire un ampio piano di comunicazione e formazione</li><li>Abilitare tutti gli utenti per Teams in modalità solo collaborazione</li><li>Tenere traccia dell'utilizzo mensile</li><li>Raccogliere il feedback degli utenti</li><li>Monitorare l'integrità e la qualità della rete</li><li>Attenuare in base alle esigenze</li></ul> |
+| Eseguire correttamente la modalità solo collaborazione per tutti gli utenti dell'organizzazione insieme a Skype for Business | <ul><li>Il 60% Skype for Business utenti usano Teams entro 30 giorni dall'implementazione</li><li>La soddisfazione degli utenti Teams'&#8805;80%</li></ul> | <ul><li>Progettare ed eseguire un ampio piano di comunicazione e formazione</li><li>Abilitare tutti gli utenti per Teams in modalità solo collaborazione</li><li>Tenere traccia dell'utilizzo mensile</li><li>Raccogliere il feedback degli utenti</li><li>Monitorare l'integrità e la qualità della rete</li><li>Attenuare in base alle esigenze</li></ul> |
 
 | Tipo | Indicatore di successo chiave | Modalità di misurazione | Criteri di successo | Misurato |
 |---|---|---|---|---|
@@ -99,7 +99,7 @@ La tabella seguente mostra esempi di okr e indicatori KPI per le fasi iniziali d
 | **Driver aziendale** | Risparmio sui costi | Debiti | \$Spese per X milioni in soluzioni di terze parti | Sei mesi, quindi un anno e cinque anni dopo l'implementazione |
 
 > [!TIP]
-> Per garantire che il progetto rimanga in linea, è consigliabile definire attività cardine più piccole e a breve termine oltre a obiettivi più grandi a lungo termine. Possono includere metriche che verranno acquisite come parte del progetto pilota dell'utente. Quando si considera la sequenza temporale, [usare](https://aka.ms/O365Roadmap) la roadmap Microsoft 365 se si è in attesa di funzionalità non ancora disponibili in Teams.
+> Per garantire che il progetto rimanga in linea, è consigliabile definire attività cardine più piccole e a breve termine oltre a obiettivi più grandi a lungo termine. Possono includere metriche che verranno acquisite come parte del progetto pilota dell'utente. Quando si considera la sequenza temporale, usare Microsoft 365 [roadmap](https://aka.ms/O365Roadmap) se si è in attesa di funzionalità non ancora disponibili in Teams.
 
 ## <a name="risks-and-mitigation"></a>Rischi e attenuazione
 
@@ -113,7 +113,7 @@ La tabella seguente mostra esempi di okr e indicatori KPI per le fasi iniziali d
 
 ## <a name="timeline"></a>Sequenza temporale
 
-Quando si imposta l'ambito del percorso di aggiornamento, assicurarsi di impostare una sequenza temporale per le attività cardine principali, ad esempio l'abilitazione di Teams insieme a Skype for Business per tutti gli utenti, oltre alla data di completamento. Una sequenza temporale definita consente al team di progetto di raggiungere uno stato finale coerente e informa la giusta programmazione del lavoro indietro, assicurando che il progetto rimanga in linea con le proprie scadenze. Si consideri una sequenza temporale non troppo accelerata (in cui le attività potrebbero essere trascurate) o troppo lontane (in cui la quantità di tempo potrebbe essere persa). La sequenza temporale ideale consente di:
+Quando si imposta l'ambito del percorso di aggiornamento, assicurarsi di impostare una sequenza temporale per le attività cardine chiave, ad esempio l'abilitazione di Teams insieme a Skype for Business per tutti gli utenti, oltre alla data di completamento. Una sequenza temporale definita consente al team di progetto di raggiungere uno stato finale coerente e informa la giusta programmazione del lavoro indietro, assicurando che il progetto rimanga in linea con le proprie scadenze. Si consideri una sequenza temporale non troppo accelerata (in cui le attività potrebbero essere trascurate) o troppo lontane (in cui la quantità di tempo potrebbe essere persa). La sequenza temporale ideale consente di:
 
 - **Conformità del prodotto per i requisiti** di [](https://aka.ms/O365Roadmap) conformità e scenario utente: fare riferimento alla roadmap del prodotto per valutare quando Teams sarà pronto per l'organizzazione.
 - **Gruppi di aggiornamento:** determinare se si Teams o aggiornare gli utenti in base ai gruppi di aggiornamento, che potrebbero influire sulla sequenza temporale del percorso di aggiornamento complessivo.
@@ -121,8 +121,8 @@ Quando si imposta l'ambito del percorso di aggiornamento, assicurarsi di imposta
 - **Altre modifiche che si verificano** nello stesso momento o nello stesso momento: è consigliabile creare un raggruppamento delle modifiche o disaccoglierle per facilitare un'esperienza utente positiva e ridurre al minimo l'impatto sulla produttività.
 - **Resourcing:** confermare l'allocazione delle risorse con gli stakeholder del progetto per assicurarsi che il team di progetto riunito abbia larghezza di banda sufficiente per completare tutte le attività necessarie.
 
-Come punto di riferimento, viene fornita una sequenza temporale di esempio per le fasi pre-aggiornamento, aggiornamento e post-aggiornamento del percorso di aggiornamento [Pro ,](./upgrade-start-here.md)che è possibile modificare in base alle esigenze per allinearsi alle esigenze specifiche dell'organizzazione.
+Come punto di riferimento, viene fornita una sequenza temporale di esempio per le fasi pre-aggiornamento, aggiornamento e post-aggiornamento del percorso di aggiornamento [Pro,](./upgrade-start-here.md)che è necessario modificare in base alle esigenze specifiche dell'organizzazione.
 
 Dopo aver completato le attività descritte in precedenza, è consigliabile avere una solida base per il progetto. Continuare con le [attività di preparazione tecnica e](./upgrade-prepare-environment.md) pianificazione della [conformità](./upgrade-prepare-organization.md) dell'organizzazione.
 
-Ricorda: Skype for Business Online verrà ritirato il 31 luglio 2021. Dopo tale periodo, il Skype for Business online non sarà più accessibile o supportato. Per massimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per completare l'aggiornamento, ti consigliamo di iniziare il tuo viaggio verso Microsoft Teams oggi.
+Skype for Business Online è stato ritirato il 31 luglio 2021. Per massimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per completare l'aggiornamento, ti consigliamo di iniziare il tuo viaggio verso Microsoft Teams oggi.

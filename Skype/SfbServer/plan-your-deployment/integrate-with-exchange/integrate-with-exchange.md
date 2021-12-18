@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ea22beb9-c02e-47cb-836d-97a556969052
 description: 'Riepilogo: esaminare questo argomento per informazioni su come integrare Skype for Business Server con Exchange Server 2016 o Exchange Server 2013.'
-ms.openlocfilehash: 8613f080aa878c5111a4c69c38b77f9c16606b26
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 5edfdf44b50d2a58c097bed5ee83855f375ff895
+ms.sourcegitcommit: b0bb7db41856ee377dbe4ca8c9dff56385bf120d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60844129"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61562838"
 ---
 # <a name="plan-to-integrate-skype-for-business-and-exchange"></a>Pianificare l'integrazione di Skype for Business ed Exchange
  
@@ -28,9 +28,9 @@ Prima di poter integrare Skype for Business Server e Exchange Server, è necessa
   
 Per informazioni dettagliate sull'Exchange Server, vedere la documentazione relativa Exchange Server pianificazione e distribuzione per la versione di Exchange. 
    
-Dopo aver eseguito i server, è necessario assegnare certificati di autenticazione da server a server sia a Skype for Business Server che Exchange Server; questi certificati consentono Skype for Business Server e Exchange Server scambiare informazioni e comunicare tra loro. Quando si installa Exchange Server, viene creato automaticamente un certificato autofirmato con il nome Microsoft Exchange Server certificato di autenticazione. Questo certificato, disponibile nell'archivio certificati del computer locale, deve essere utilizzato per l'autenticazione da server a server in Exchange Server. Per informazioni dettagliate sull'assegnazione di certificati in Exchange Server, vedere [Configure Mail Flow and Client Access](/exchange/configure-mail-flow-and-client-access-exchange-2013-help).
+Dopo aver eseguito i server, è necessario assegnare certificati di autenticazione da server a server a Skype for Business Server e Exchange Server; questi certificati consentono l'autenticazione Skype for Business Server e Exchange Server  per scambiare informazioni e comunicare tra loro. Quando si installa Exchange Server, viene creato automaticamente un certificato autofirmato con il nome Microsoft Exchange Server certificato di autenticazione. Questo certificato, disponibile nell'archivio certificati del computer locale, deve essere utilizzato per l'autenticazione da server a server Exchange Server. Per informazioni dettagliate sull'assegnazione di certificati in Exchange Server, vedere [Configure Mail Flow and Client Access](/exchange/configure-mail-flow-and-client-access-exchange-2013-help).
   
-Ad Skype for Business Server è possibile utilizzare un certificato Skype for Business Server esistente come certificato di autenticazione da server a server. ad esempio, il certificato predefinito può essere usato anche come certificato OAuthTokenIssuer. Skype for Business Server consente di utilizzare qualsiasi certificato del server Web come certificato per l'autenticazione da server a server purché:
+Ad Skype for Business Server è possibile utilizzare un certificato di Skype for Business Server esistente come certificato di autenticazione da server a server; ad esempio, il certificato predefinito può essere utilizzato anche come certificato OAuthTokenIssuer. Skype for Business Server consente di utilizzare qualsiasi certificato del server Web come certificato per l'autenticazione da server a server purché:
   
 - Il certificato includa il nome del dominio SIP nel campo Oggetto.
     
@@ -66,7 +66,7 @@ Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri 
 
 Per informazioni dettagliate sul servizio di individuazione automatica, vedere [Autodiscover Service](/Exchange/architecture/client-access/autodiscover).
   
-Dopo aver configurato il servizio di individuazione automatica, è necessario modificare le Skype for Business Server di configurazione OAuth. in questo modo si Skype for Business Server sapere dove trovare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione di OAuth in Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell. Quando si esegue questo comando, assicurarsi di specificare l'URI per il servizio di individuazione automatica in esecuzione sul Exchange Server e di utilizzare **autodiscover.svc** per puntare al percorso del servizio **anziché aautodiscover.xml** (che punta al file XML utilizzato dal servizio):
+Dopo aver configurato il servizio di individuazione automatica, è necessario modificare le impostazioni di configurazione di Skype for Business Server OAuth, in modo che Skype for Business Server sappia dove trovare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione di OAuth in Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell. Quando si esegue questo comando, assicurarsi di specificare l'URI per il servizio di individuazione automatica in esecuzione sul Exchange Server e di utilizzare **autodiscover.svc** per puntare al percorso del servizio **anziché aautodiscover.xml** (che punta al file XML utilizzato dal servizio):
   
 ```PowerShell
 Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc" 
@@ -83,17 +83,17 @@ Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://auto
   
 Oltre a configurare il servizio di individuazione automatica, è inoltre necessario creare un record DNS per il servizio che punta alla propria Exchange Server. Ad esempio, se il servizio di individuazione automatica si trova in autodiscover.litwareinc.com sarà necessario creare un record DNS per autodiscover.litwareinc.com che si risolve nel nome di dominio completo del Exchange Server (ad esempio, atl-exchange-001.litwareinc.com).
   
-Se si sta integrando Skype for Business Server con Exchange Online, i passaggi successivi sono in [Configurare](../../deploy/integrate-with-exchange-server/outlook-web-app.md)l'integrazione tra Skype for Business Server locale e Outlook Web App , altrimenti vedere Integrare Skype for Business Server [con Exchange Server](../../deploy/integrate-with-exchange-server/integrate-with-exchange-server.md).
+Se si sta integrando Skype for Business Server con Exchange Online, i passaggi successivi sono in [Configure integration between on-premises Skype for Business Server and Outlook Web App](../../deploy/integrate-with-exchange-server/outlook-web-app.md), altrimenti vedere [Integrate Skype for Business Server con Exchange Server](../../deploy/integrate-with-exchange-server/integrate-with-exchange-server.md).
   
 ## <a name="feature-support"></a>Supporto delle funzionalità
 <a name="feature_support"> </a>
 
 >[!Important]
-> Skype for Business Online verrà ritirato il 31 luglio 2021 dopo che le integrazioni Exchange elencate di seguito che includono il servizio non saranno più supportate.
+> Skype for Business Online è stato ritirato il 31 luglio 2021. Le Exchange elencate di seguito che includono il servizio non sono più supportate.
 
 Nella tabella seguente vengono fornite informazioni dettagliate sulle funzionalità supportate in varie combinazioni di funzionalità online o locali per Exchange e Skype for Business.
   
-|&nbsp;|Exchange 2016/2013/2010 (locale) + Skype for Business Server (locale)|Exchange Online + Skype for Business Server (locale)**|**Exchange 2010 (locale) + Skype for Business Online|Exchange 2016/2013(locale) + Skype for Business Online**|**Exchange Online + Skype for Business Online|
+|&nbsp;|Exchange 2016/2013/2010 (locale) + Skype for Business Server (locale)|Exchange Online + Skype for Business Server (locale)**|**Exchange 2010 (locale) + Skype for Business Online|Exchange 2016/2013(in locale) + Skype for Business Online**|**Exchange Online + Skype for Business Online|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Presenza in Outlook   |Y   |Y   |Y   |Y   |Y   |
 |Rispondere tramite messaggistica istantanea, chiamata PSTN, Skype chiamata o videochiamata da un Outlook posta elettronica   |Y   |Y   |Y   |Y   |Y   |
@@ -110,7 +110,7 @@ Nella tabella seguente vengono fornite informazioni dettagliate sulle funzionali
 |La cronologia delle conversazioni perse e i registri delle chiamate vengono scritti nella cassetta postale di Exchange dell'utente   |Y   |Y   |Y   |Y   |Y   |
 |Archiviazione del contenuto (messaggistica istantanea e riunione) in Exchange   |Y (necessario Exchange 2016/2013)   |Y   |N   |N   |Y   |
 |Ricerca contenuto archiviato   |Y (necessario Exchange 2016/2013)   |Y   |N   |N   |Y   |
-|Exchange Segreteria telefonica di messaggistica unificata   |Y   |Y   |N   |N   |N   |
+|Exchange segreteria telefonica di messaggistica unificata   |Y   |Y   |N   |N   |N   |
 |Cronologia conversazioni sul lato server   |Y   |Y   |N   |Y   |Y   |
 
 > [!NOTE]

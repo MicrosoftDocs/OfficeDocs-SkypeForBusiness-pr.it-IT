@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: landerl
 audience: admin
-description: Seguire questo piano d'azione in dieci passaggi accelerato per passare da una configurazione Skype for Business di base a Microsoft Teams configurazione.
+description: Seguire questo piano d'azione in dieci passaggi accelerato per passare da una configurazione Skype for Business di base alla configurazione Microsoft Teams configurazione.
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
@@ -23,12 +23,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1a06c4783e9ee4f42473e6b08f0d9bd51c142ddf
-ms.sourcegitcommit: 32ba2ed0343e19f56e62fb3c507923c95f11b1bd
+ms.openlocfilehash: a3d7ef1ae0375b7cdec373450135e5eed148f776
+ms.sourcegitcommit: b0bb7db41856ee377dbe4ca8c9dff56385bf120d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61124253"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61562798"
 ---
 # <a name="upgrade-basic"></a>Aggiornamento di base
 
@@ -39,13 +39,13 @@ Progettato per le organizzazioni di piccole dimensioni o per quelle che usano so
 Questi dieci semplici passaggi offrono tutto il necessario per un aggiornamento efficace. Sono progettati per essere completati in circa 30-45 giorni, ma è consigliabile modificare le date di completamento delle attività in base alla programmazione dell'aggiornamento dell'organizzazione.
 
 > [!IMPORTANT]
-> Skype for Business Online verrà ritirato il 31 luglio 2021. Dopo tale periodo, il Skype for Business online non sarà più accessibile o supportato. Per ottimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, è importante iniziare il viaggio verso Microsoft Teams oggi.
+> Skype for Business Online è stato ritirato il 31 luglio 2021. Per massimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, è importante iniziare il viaggio verso Microsoft Teams oggi.
 
 Cosa succede Skype for Business dopo l'aggiornamento? Dopo l'aggiornamento degli utenti a Teams (modalità **Solo Teams**):
 
 - Il Skype for Business client è disabilitato e tutte le chat e le chiamate vengono Teams. Tenere presente che il client non verrà disinstallato nei desktop.
-- Le Skype for Business pianificate prima dell'aggiornamento funzionano come previsto, ma tutte le nuove riunioni vengono pianificate in Teams. Il Skype for Business plug-in non sarà più disponibile in Outlook. 
-- Se gli utenti provano ad accedere a Skype for Business, ottengono una notifica dal loro client che è stato eseguito l'aggiornamento a Teams.
+- Le Skype for Business pianificate prima dell'aggiornamento funzionano come previsto, ma tutte le nuove riunioni sono pianificate in Teams. Il Skype for Business plug-in non sarà più disponibile in Outlook. 
+- Se gli utenti provano ad accedere a Skype for Business, ottengono una notifica dal proprio client che indica che sono stati aggiornati a Teams.
 - Gli utenti devono disinstallare manualmente il client Skype for Business nei propri dispositivi mobili.
 
 Consulta le nostre [domande](./faq-journey.yml) frequenti per altre domande sull'aggiornamento.
@@ -76,7 +76,7 @@ I dirigenti senior sono responsabili del successo aziendale; assicurarsi di tene
 
 *(Da quattro a sei settimane prima dell'aggiornamento)*
 
-Teams offre funzionalità di Skype for Business compatibili, ad esempio messaggistica istantanea (chat) e riunioni, ma può anche fare molto di più. Un vero hub per il lavoro in team, Teams consente ai gruppi di lavoro di gestire progetti, file, conversazioni e app in un'unica posizione. Per impostazione predefinita, Teams è attivato per tutte le organizzazioni. Decidere in che modo l'organizzazione userà Teams e configurare l'ambiente per il successo. 
+Teams offre funzionalità di Skype for Business compatibili, ad esempio messaggistica istantanea (chat) e riunioni, ma può anche fare molto di più. Come vero hub per il lavoro in team, Teams consente ai gruppi di lavoro di gestire progetti, file, conversazioni e app in un'unica posizione. Per impostazione predefinita, Teams è attivato per tutte le organizzazioni. Decidere in che modo l'organizzazione userà Teams e configurare l'ambiente per il successo. 
 
 > [!Note]
 > L'attuale Skype for Business di rete è probabilmente già configurata per Teams. Per confermarlo, è possibile seguire la guida "Pianificazione tecnica completa" collegata di seguito (facoltativo).
@@ -96,7 +96,7 @@ Teams offre funzionalità di Skype for Business compatibili, ad esempio messaggi
 
 *(Circa quattro settimane prima dell'aggiornamento)*
 
-Gli utenti che sono profondamente adottati in Skype for Business potrebbero avere bisogno di più tempo o assistenza per eseguire la transizione a Teams. È necessario del tempo per esaminare l'utilizzo Skype for Business corrente per identificare i principali utenti che necessitano di ulteriore supporto e per stabilire una linea di base di utilizzo che è possibile tenere traccia dei numeri di post-aggiornamento.
+Gli utenti che sono profondamente adottati in Skype for Business potrebbero avere bisogno di più tempo o assistenza per eseguire la transizione a Teams. È necessario del tempo per esaminare l'utilizzo Skype for Business corrente per identificare i principali utenti che necessitano di ulteriore supporto e per stabilire una linea di base di utilizzo che è possibile tenere traccia rispetto ai numeri di post-aggiornamento.
 
 **Risorse:**
 
@@ -112,7 +112,7 @@ Gli utenti che sono profondamente adottati in Skype for Business potrebbero aver
 
 *(Circa due o tre settimane prima dell'aggiornamento)*
 
-Se si riceve un avviso ampio agli utenti, gli utenti avranno il tempo di acquisire familiarità con Teams senza influire negativamente sulla produttività, con conseguente esperienza utente più positiva. Invia una comunicazione per comunicare loro cosa sta cambiando, perché sta cambiando e come possono prepararsi.
+Se si fornisce un'attenzione elevata agli utenti, gli utenti avranno il tempo di acquisire familiarità con Teams senza influire negativamente sulla produttività, con conseguente esperienza utente più positiva. Invia una comunicazione per comunicare loro cosa sta cambiando, perché sta cambiando e come possono prepararsi.
 
 > [!Note]
 > Se necessario, è possibile abilitare Teams per gli utenti tramite interfaccia di amministrazione di Microsoft 365 in questo momento.
@@ -120,7 +120,7 @@ Se si riceve un avviso ampio agli utenti, gli utenti avranno il tempo di acquisi
 **Risorse:**
 
 - [Gestire le impostazioni di Microsoft Teams per l'organizzazione](enable-features-office-365.md)
-- [Messaggio di posta elettronica di esempio: annuncio agli utenti su Skype for Business](upgrade-emails-surveys.md#step-4-email)
+- [Messaggio di posta elettronica di esempio: annuncio agli utenti Skype for Business](upgrade-emails-surveys.md#step-4-email)
 
 [Torna all'inizio](#about-upgrade-basic)
 
@@ -132,7 +132,7 @@ Se si riceve un avviso ampio agli utenti, gli utenti avranno il tempo di acquisi
 
 *(Circa una settimana prima dell'aggiornamento)*
 
-Mantenere il momento dell'aggiornamento abilitando la notifica di aggiornamento degli utenti tramite il portale di amministrazione, fornendo un avviso visivo nel client di Skype for Business che gli utenti vengono aggiornati da Skype for Business a Teams.
+Mantenere il momento dell'aggiornamento abilitando la notifica di aggiornamento degli utenti tramite il portale di amministrazione, fornendo un avviso visivo nel client di Skype for Business che indica che gli utenti vengono aggiornati da Skype for Business a Teams.
 
 **Risorse:**
 
@@ -148,7 +148,7 @@ Mantenere il momento dell'aggiornamento abilitando la notifica di aggiornamento 
 
 *(Circa cinque giorni prima dell'aggiornamento)*
 
-Gli utenti sono occupati con le loro responsabilità quotidiane. Ricordando loro l'aggiornamento in sospeso, è possibile assicurarsi che si ricordino di eseguire i passaggi necessari per prepararsi per Teams. Questo è il momento ideale per ricordare agli utenti la formazione disponibile e come iniziare a usare Teams.
+Gli utenti sono occupati con le loro responsabilità quotidiane. Ricordando loro l'aggiornamento in sospeso, è possibile assicurarsi che si ricordino di eseguire i passaggi necessari per prepararsi per Teams. Questo è il momento perfetto per ricordare agli utenti la formazione disponibile e come iniziare a usare Teams.
 
 **Risorse:**
 
@@ -164,7 +164,7 @@ Gli utenti sono occupati con le loro responsabilità quotidiane. Ricordando loro
 
 *(Giorno dell'aggiornamento)*
 
-Oggi è il giorno in cui l'organizzazione esegue ufficialmente l'aggiornamento a Teams come soluzione di comunicazione e collaborazione. Nell'Microsoft Teams di amministrazione attivare l'opzione di aggiornamento impostando la modalità di coesistenza su **Solo Teams .** Nell'interfaccia di amministrazione passare a **Teams**  >  **Teams di aggiornamento.** Gli utenti riceveranno una notifica nel Skype for Business client che è stato aggiornato a Teams.
+Oggi è il giorno in cui l'organizzazione esegue ufficialmente l'aggiornamento a Teams come soluzione di comunicazione e collaborazione. Nell'Microsoft Teams di amministrazione attiva l'opzione di aggiornamento impostando la modalità di coesistenza **su solo Teams .** Nell'interfaccia di amministrazione passare a **Teams**  >  **Teams di aggiornamento.** Gli utenti riceveranno una notifica nel client Skype for Business che sono stati aggiornati a Teams.
 
 Dopo l'aggiornamento, è consigliabile inviare un messaggio di posta elettronica di benvenuto a Teams.
 
@@ -215,7 +215,7 @@ La soddisfazione dei dipendenti può influire sulla produttività, sulla conserv
 
 *(In corso)*
 
-Dopo che gli utenti hanno familiarità con la messaggistica istantanea (chat) e le riunioni in Teams, incoraggiarli a estendere il loro caso d'uso usando la collaborazione Teams e l'integrazione delle app, ottimizzando realmente la nuova soluzione e massimizzando il ritorno sull'investimento.
+Dopo che gli utenti hanno familiarità con la messaggistica istantanea (chat) e le riunioni in Teams, incoraggiarli a estendere il loro caso di utilizzo usando la collaborazione Teams e l'integrazione delle app, ottimizzando realmente la nuova soluzione e massimizzando il ritorno sull'investimento.
 
 **Risorse:**
 

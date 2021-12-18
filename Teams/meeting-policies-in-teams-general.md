@@ -18,19 +18,19 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.general
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni generali dei criteri riunione in Teams.
-ms.openlocfilehash: b7c08799ee9e7c2b1e6239b17abaa66b7d1e3d47
-ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
+description: Informazioni su come gestire le impostazioni generali dei criteri delle riunioni in Teams.
+ms.openlocfilehash: db1515b016aec47190c26305656b205a56e13b23
+ms.sourcegitcommit: b0bb7db41856ee377dbe4ca8c9dff56385bf120d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61177937"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61562874"
 ---
 # <a name="meeting-policy-settings---general"></a>Impostazioni dei criteri di riunione - Generale
 
 <a name="bkgeneral"> </a>
 
-Questo articolo descrive le impostazioni dei criteri generali seguenti per le Teams riunioni:
+Questo articolo descrive le impostazioni dei criteri generali seguenti per Teams riunioni:
 
 - [Incontra ora nei canali](#meet-now-in-channels)
 - [Outlook componente aggiuntivo](#outlook-add-in)
@@ -124,19 +124,25 @@ Dopo aver impostato il valore predefinito, gli organizzatori delle riunioni poss
 
 Questo è un criterio per utente. Questa impostazione controlla se gli organizzatori delle riunioni possono scaricare il [Rapporto partecipazione a riunione](teams-analytics-and-reports/meeting-attendance-report.md).
 
-Questo criterio è disattivato per impostazione predefinita e consente agli organizzatori di vedere chi ha registrato e partecipato alle riunioni e ai webinar che hanno configurato. Per attivarlo nell'interfaccia Teams, passare a Criteri riunione riunioni e impostare  >  il criterio su **Abilitato.**
+Questo criterio è disattivato per impostazione predefinita e consente agli organizzatori di vedere chi ha registrato e partecipato alle riunioni e ai webinar che hanno configurato. Per attivare questa opzione nell'interfaccia Teams di amministrazione, passare a Criteri riunione riunioni e impostare l'impostazione Report impegno  >  su **Abilitato.** 
 
-È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
+È anche possibile modificare un criterio Teams riunione usando il cmdlet [Set-CsTeamsMeetingPolicy.](/powershell/module/skype/set-csteamsmeetingpolicy) In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 
 Per consentire a un organizzatore della riunione di scaricare il report sulla partecipazione alla riunione, impostare il **parametro AllowEngagementReport** su **Enabled**. Se abilitata, l'opzione per scaricare il rapporto viene visualizzata nel riquadro **Partecipanti**. Per impostazione predefinita, questa impostazione non è abilitata.
 
 Per evitare che un organizzatore della riunione scarichi il rapporto, impostare il parametro su **Disabilitato**.
 
+> [!NOTE]
+> Gli amministratori non possono visualizzare il report sulle presenze per le riunioni che non si organizzano. Tuttavia, è possibile visualizzare i dettagli dei partecipanti per una determinata riunione entro 24 ore dalla riunione. Nell'Teams di amministrazione passare a **Gestione**  >  **utenti**. Scegliere il nome visualizzato per l'organizzatore della riunione. Selezionare la **scheda Riunioni & chiamate** e quindi scegliere l'ID riunione o l'ID chiamata appropriato. Quindi, selezionare **Dettagli partecipante**.
+
+Per altre informazioni, inclusi i limiti del report di impegno, vedere visualizzazione e download dei report sulla partecipazione alle riunioni [in Teams](https://support.microsoft.com/office/view-and-download-meeting-attendance-reports-in-teams-ae7cf170-530c-47d3-84c1-3aedac74d310).
+
+
 ## <a name="meeting-registration"></a>Registrazione della riunione
 
 Questo è un criterio per utente. Se si attiva questa opzione, gli utenti dell'organizzazione possono configurare webinar. Questo criterio è abilitato per impostazione predefinita.
 
-Per modificare questo criterio nell'interfaccia Teams di amministrazione, passare **a Criteri riunione**  >  **riunioni**. Per disattivare la registrazione alla riunione, impostare il criterio su **Disattivato.**
+Per modificare questo criterio nell'Teams di amministrazione, passare a **Criteri**  >  **riunione riunioni**. Per disattivare la registrazione alla riunione, impostare il criterio su **Disattivato.**
 
 È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 
@@ -144,14 +150,14 @@ Per attivare la registrazione della riunione, impostare il  **parametro MeetingR
 
 Per disattivare la registrazione della riunione e impedire agli utenti di pianificare webinar, impostare il parametro su **False**.
 
-## <a name="who-can-register"></a>Who può registrarsi
+## <a name="who-can-register"></a>Who possibile registrare
 
 Questo criterio controlla quali utenti possono registrarsi e partecipare ai webinar. Questo criterio include due opzioni, disponibili solo se è **attivata** la registrazione alla riunione.
 
-- Impostare **Who** può registrarsi su **Tutti** se si vuole consentire a tutti, inclusi gli utenti anonimi, di registrare e partecipare ai webinar impostati dagli utenti dell'organizzazione.
-- Impostare **Who possibile registrarsi** a **Tutti** nell'organizzazione se si vuole consentire solo agli utenti dell'organizzazione di registrarsi e partecipare ai webinar.
+- Impostare **Who registrarsi** su **Tutti** se si vuole consentire a tutti, inclusi gli utenti anonimi, di registrarsi e partecipare ai webinar impostati dagli utenti dell'organizzazione.
+- Impostare **Who registrarsi** su **Tutti** nell'organizzazione se si vuole consentire solo agli utenti dell'organizzazione di registrarsi e partecipare ai webinar.
 
-Per impostazione predefinita, **Who registrazione** è impostato su **Tutti**. Per modificare questo criterio nell'Teams di amministrazione, passare a **Criteri**  >  **riunione riunioni**.
+Per impostazione predefinita, **Who registrazione è** impostato su **Tutti**. Per modificare questo criterio nell'Teams di amministrazione, passare a **Criteri**  >  **riunione riunioni**.
 
 È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 

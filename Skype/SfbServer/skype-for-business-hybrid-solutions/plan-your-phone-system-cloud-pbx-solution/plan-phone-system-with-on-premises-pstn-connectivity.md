@@ -20,17 +20,17 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 021a4c0b-d5de-4155-a506-650d758624aa
 description: Informazioni sulle considerazioni sulla pianificazione per Sistema telefonico (Cloud PBX) con connettività PSTN locale.
-ms.openlocfilehash: 21ad7efc67b503f790dd307b23aee5f8fd9ce11c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: a3c01ed32cb2654ea10773f53c4148262e3ee6c5
+ms.sourcegitcommit: b0bb7db41856ee377dbe4ca8c9dff56385bf120d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60864533"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61562778"
 ---
 # <a name="plan-phone-system-with-on-premises-pstn-connectivity-in-skype-for-business-server"></a>Pianificare Sistema telefonico con connettività PSTN locale in Skype for Business Server
 
 > [!Important]
-> Skype for Business Online verrà ritirato il 31 luglio 2021 dopo il quale il servizio non sarà più accessibile.  Inoltre, la connettività PSTN tra l'ambiente locale tramite Skype for Business Server o Cloud Connector Edition e Skype for Business Online non sarà più supportata.  Informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto](/MicrosoftTeams/direct-routing-landing-page).
+> Skype for Business Online è stato ritirato il 31 luglio 2021 e la connettività PSTN tra l'ambiente locale, tramite Skype for Business Server o Cloud Connector Edition e Skype for Business Online, non è più supportata.  Informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto](/MicrosoftTeams/direct-routing-landing-page).
 
 Informazioni sulle considerazioni sulla pianificazione per Sistema telefonico (Cloud PBX) con connettività PSTN locale.
 
@@ -56,13 +56,13 @@ Cloud PBX con connettività PSTN locale non offre lo stesso set di funzionalità
 > [!CAUTION]
 > I dispositivi Lync Telefono Edition DEVONO essere aggiornati al firmware minimo necessario nell'ambiente locale PRIMA di passare a Skype for Business Online.
 Se si spostano gli utenti da locale a online prima di aggiornare il firmware, gli utenti non saranno in grado di connettersi utilizzando i telefoni. Per risolvere il problema, gli utenti devono essere spostati di nuovo nell'ambiente locale per aggiornare i telefoni al firmware minimo. NON TENTARE DI ESEGUIRE L'AGGIORNAMENTO AL FIRMWARE MINIMO O DI REIMPOSTARE IL TELEFONO PRIMA DI SPOSTARE DI NUOVO L'UTENTE NELL'AMBIENTE LOCALE.
-Se viene eseguito un hard reset mentre il dispositivo non è il firmware minimo, per impostazione predefinita verrà utilizzato l'autenticazione PIN, che non è supportata in Skype for Business Online. Per ulteriori informazioni, vedere [Getting phones for Skype for Business Online](https://support.office.com/article/Getting-phones-for-Skype-for-Business-Online-91f2d947-45fc-4fab-bd8b-2e313531c477?ui=en-US&amp;rs=en-US&amp;ad=US).
+Se viene eseguito un hard reset mentre il dispositivo non è il firmware minimo, per impostazione predefinita verrà utilizzato l'autenticazione PIN, che non è supportata in Skype for Business Online. Per ulteriori informazioni, vedere [Getting phones for Skype for Business Online.](https://support.office.com/article/Getting-phones-for-Skype-for-Business-Online-91f2d947-45fc-4fab-bd8b-2e313531c477?ui=en-US&amp;rs=en-US&amp;ad=US)
 
-Distribuendo Sistema telefonico con connettività PSTN locale, è possibile spostare gli utenti nel cloud tramite Skype for Business Online con il proprio ritmo, mantenendo la connettività PSTN locale. Se si dispone di un sistema PBX, continuare a utilizzarlo per fornire connettività PSTN per gli utenti che si spostano nel cloud. Una volta spostato un utente in Skype for Business Online e Sistema telefonico, il telefono PBX legacy non funzionerà più, ma il numero di telefono verrà instradato a uno qualsiasi dei client Skype for Business per PC o smart phone e telefoni da tavolo conformi Skype for Business. Dopo la portabilità, gli Sistema telefonico e gli utenti PBX legacy possono chiamarsi normalmente, nonché effettuare/ricevere chiamate PSTN utilizzando il numero di telefono normale.
+Distribuendo Sistema telefonico con connettività PSTN locale, è possibile spostare gli utenti nel cloud tramite Skype for Business Online al proprio ritmo, mantenendo la connettività PSTN locale. Se si dispone di un sistema PBX, continuare a utilizzarlo per fornire connettività PSTN per gli utenti che si spostano nel cloud. Una volta spostato un utente in Skype for Business Online e Sistema telefonico, il telefono PBX legacy non funzionerà più, ma il numero di telefono verrà instradato a uno qualsiasi dei client Skype for Business per PC o smart phone e telefoni da tavolo conformi Skype for Business. Dopo la portabilità, gli Sistema telefonico e gli utenti PBX legacy possono chiamarsi normalmente, nonché effettuare/ricevere chiamate PSTN utilizzando il numero di telefono normale.
 
 Potresti avere una funzionalità personalizzata o un componente aggiuntivo principale per il PBX legacy, ad esempio un call center. Se la funzionalità personalizzata non è attualmente disponibile in Sistema telefonico, è consigliabile lasciare gli utenti che richiedono tale funzionalità personalizzata in locale con il PBX legacy e convertire gli utenti che non devono accedere alla funzionalità personalizzata a Sistema telefonico con connettività PSTN locale.
 
-Per un elenco dei sistemi PBX legacy che interoperabili direttamente con Skype for Business Server 2015, vedere [Infrastructure Qualified for Microsoft Lync.](../../../SfbPartnerCertification/lync-cert/qualified-ip-pbx-gateway.md) Se il SISTEMA PBX non è in questo elenco, è possibile utilizzare un Session Border Controller per connettere il SISTEMA PBX Sistema telefonico in Skype for Business Online.
+Per un elenco dei sistemi PBX legacy che interoperabili direttamente con Skype for Business Server 2015, vedere [Infrastructure Qualified for Microsoft Lync.](../../../SfbPartnerCertification/lync-cert/qualified-ip-pbx-gateway.md) Se il sistema PBX non è in questo elenco, è possibile utilizzare un Session Border Controller per connettere il SISTEMA PBX con Sistema telefonico in Skype for Business Online.
 
 ### <a name="network-considerations-for-quality-and-performance"></a>Considerazioni sulla rete per qualità e prestazioni
 
@@ -79,7 +79,7 @@ Quando si distribuisce un servizio ospitato nel cloud come Sistema telefonico co
 
 ## <a name="prerequisites-for-using-phone-system-with-on-premises-pstn-connectivity"></a>Prerequisiti per l'Sistema telefonico con la connettività PSTN locale
 
-Prima di poter configurare Sistema telefonico con connettività PSTN locale e spostare gli utenti in Skype for Business Online, è necessario verificare di disporre dei prerequisiti seguenti:
+Prima di poter configurare Sistema telefonico con la connettività PSTN locale e spostare gli utenti in Skype for Business Online, è necessario verificare di disporre dei prerequisiti seguenti:
 
  **Versioni server locali.** Le versioni dei server nella distribuzione locale devono essere elencate nella tabella seguente per supportare Sistema telefonico con connettività PSTN locale.
 
@@ -87,7 +87,7 @@ Prima di poter configurare Sistema telefonico con connettività PSTN locale e sp
 | **Ruolo del server**                                       | **Versioni supportate\\**\*                                                                                         |
 |:------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------|
 | Federation Edge\*\*  <br/>                            | Skype for Business Server 2015  <br/>                                                                              |
-| Server pool interno route federazione hop successivo  <br/> | Skype for Business Server 2015, marzo 2016 Aggiornamento cumulativo 6.0.9319.235 o versione successiva (Front End o Director)  <br/> |
+| Server pool interno route federazione hop successivo  <br/> | Skype for Business Server 2015, aggiornamento cumulativo di marzo 2016 6.0.9319.235 o versione successiva (Front End o Director)  <br/> |
 | Front End User Server  <br/>                          | Skype for Business Server 2015  <br/> Lync Server 2013  <br/>                                                      |
 | Edge Server  <br/>                                    | Skype for Business Server 2015  <br/>                                                                              |
 | Mediation Server  <br/>                               | Skype for Business Server 2015  <br/> Lync Server 2013  <br/>                                                      |
@@ -102,16 +102,16 @@ Prima di poter configurare Sistema telefonico con connettività PSTN locale e sp
 
 Inoltre, è necessario verificare quanto segue:
 
-- **La VoIP aziendale locale è configurata e testata per gli utenti locali** Sono inclusi i componenti di connettività PSTN. Per ulteriori informazioni, vedere gli argomenti seguenti se si utilizza Skype for Business Server 2015, vedere [Plan for VoIP aziendale in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice.md) e Deploy VoIP aziendale in Skype for Business Server [2015](../../deploy/deploy-enterprise-voice/deploy-enterprise-voice.md).
+- **I servizi locali VoIP aziendale configurati** e testati per gli utenti locali Sono inclusi i componenti di connettività PSTN. Per ulteriori informazioni, vedere gli argomenti seguenti se si utilizza Skype for Business Server 2015, vedere [Plan for VoIP aziendale in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice.md) e Deploy VoIP aziendale [in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/deploy-enterprise-voice.md).
 
-    Se si utilizza Lync Server 2013, vedere [Planning for VoIP aziendale in Lync Server 2013](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-enterprise-voice) e [Deploying VoIP aziendale in Lync Server 2013](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-enterprise-voice).
+    Se si utilizza Lync Server 2013, vedere [Planning for VoIP aziendale in Lync Server 2013](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-enterprise-voice) e [Deploying VoIP aziendale in Lync Server 2013.](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-enterprise-voice)
 
 - **Sincronizzazione di Active Directory** È necessario configurare la sincronizzazione di Active Directory utilizzando Azure AD Connessione. Per ulteriori informazioni, vedere [Azure AD Connessione](/azure/active-directory/hybrid/how-to-connect-install-custom).
 
     > [!NOTE]
     > La versione di AAD Connessione utilizzata deve essere la versione 1.0.9125.0 o successiva. Se si utilizza una versione precedente di AAD Connessione o DirSync, eseguire l'aggiornamento alla versione supportata. È possibile aggiornare l'installazione corrente e gestire tutte le regole personalizzate definite nell'ambiente. 
 
-- **Configurare la distribuzione ibrida** Sia che tutti gli utenti di Skype for Business siano attualmente ospitati online o locali o se si dispone di una combinazione, è necessario completare la procedura per configurare una distribuzione ibrida di Skype for Business Server o Lync Server 2013, come descritto in [Deploy hybrid connectivity between Skype for Business Server and Office 365](../../../SfbHybrid/hybrid/configure-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json). Per ulteriori informazioni di base sulle distribuzioni ibride, vedere [Plan hybrid connectivity between Skype for Business Server and Office 365](../../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json). 
+- **Configurare la distribuzione ibrida** Sia che tutti gli utenti di Skype for Business siano attualmente ospitati online o locali o se si dispone di una combinazione, è necessario completare la procedura per configurare una distribuzione ibrida di Skype for Business Server o Lync Server 2013, come descritto in [Deploy hybrid connectivity between Skype for Business Server e Office 365](../../../SfbHybrid/hybrid/configure-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json). Per ulteriori informazioni di base sulle distribuzioni ibride, vedere [Plan hybrid connectivity between Skype for Business Server and Office 365](../../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json). 
 
     Se si utilizza Lync Server 2013, vedere [Lync Server 2013 ibrido.](/previous-versions/office/lync-server-2013/lync-server-2013-lync-server-2013-hybrid)
 

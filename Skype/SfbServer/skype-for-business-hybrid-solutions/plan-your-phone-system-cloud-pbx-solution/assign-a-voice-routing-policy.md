@@ -19,23 +19,23 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c7f78f23-b74f-402f-bedb-4cc308718f5b
 description: 'Riepilogo: leggere questo argomento per informazioni su come assegnare un criterio vocale per gli utenti Sistema telefonico con connettività PSTN locale.'
-ms.openlocfilehash: aa31624921aefd1065b0719966af1df9d2b38793
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 158cd8e7bcd996297077adfb2c812febf4dc491b
+ms.sourcegitcommit: b0bb7db41856ee377dbe4ca8c9dff56385bf120d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60013170"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "61563357"
 ---
 # <a name="assign-a-voice-routing-policy"></a>Assegnare un criterio di routing vocale
  
 > [!Important]
-> Skype for Business Online verrà ritirato il 31 luglio 2021 dopo il quale il servizio non sarà più accessibile.  Inoltre, la connettività PSTN tra l'ambiente locale tramite Skype for Business Server o Cloud Connector Edition e Skype for Business Online non sarà più supportata.  Informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto.](/MicrosoftTeams/direct-routing-landing-page)
+> Skype for Business Online è stata ritirata il 31 luglio 2021 e la connettività PSTN tra l'ambiente locale, tramite Skype for Business Server o Cloud Connector Edition e Skype for Business Online, non è più supportata.  Informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto](/MicrosoftTeams/direct-routing-landing-page).
 
 **Riepilogo:** Leggere questo argomento per informazioni su come assegnare un criterio vocale per gli utenti Sistema telefonico con connettività PSTN locale. 
   
 Quando un utente si trova Skype for Business Online e usa Sistema telefonico con connettività PSTN locale, verranno applicati due criteri vocali. Uno è un criterio di routing vocale locale che verrà assegnato in locale. Questo criterio può essere globale o specifico dell'utente e definisce quali record di utilizzo PSTN sono associati all'utente. In questo argomento viene illustrato come assegnare questo criterio.
   
-Gli altri criteri vocali definiscono le funzionalità di chiamata disponibili per l'utente. questo criterio vocale è definito da Microsoft ed è identico per tutte le Sistema telefonico utenti di connettività PSTN locali. Viene assegnato automaticamente agli Sistema telefonico utenti.
+Gli altri criteri vocali definiscono le funzionalità di chiamata disponibili per l'utente. questo criterio vocale è definito da Microsoft ed è identico per tutte le Sistema telefonico con gli utenti di connettività PSTN locali. Viene assegnato automaticamente agli Sistema telefonico utenti.
   
 |&nbsp;|Utente locale|Sistema telefonico con l'utente di connettività PSTN locale|
 |:-----|:-----|:-----|
