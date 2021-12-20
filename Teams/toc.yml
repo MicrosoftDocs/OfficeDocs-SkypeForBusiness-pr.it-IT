@@ -1415,6 +1415,8 @@ items:
             href: devices/collab-bar-deploy.md
           - name: Impostare l'interfaccia utente di Microsoft Teams sui dispositivi Android
             href: devices/Teams-Android-devices-user-interface.md
+          - name: Procedure consigliate per l'autenticazione di dispositivi Android
+            href: devices/authentication-best-practices-for-android-devices.md
           - name: Soluzioni e dispositivi per sala riunioni
             href: /skypeforbusiness/certification/devices-meeting-rooms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
           - name: Dispositivi certificati Teams
