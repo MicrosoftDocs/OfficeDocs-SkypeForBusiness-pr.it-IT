@@ -20,27 +20,27 @@ f1.keywords:
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 173986bdad846d27a7bd3ae5890269b88a58b3a2
-ms.sourcegitcommit: cd4eb94d0b1e9316fca2e2b771b2286eaa866ba4
+ms.openlocfilehash: 8ffa30efd7f122b6d95c4545dd2d2517f3669472
+ms.sourcegitcommit: 73d12d90fc20e3d943301f57ee434379d0b0e91b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "61566289"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "61576166"
 ---
 # <a name="authentication-best-practices-for-teams-android-devices"></a>Procedure consigliate per l'autenticazione Teams dispositivi Android
 
-Questo articolo fornisce indicazioni generali e procedure consigliate per la distribuzione di criteri di autenticazione per Teams telefoni e dispositivi chiamanti.
+Questo articolo fornisce indicazioni generali e procedure consigliate per la distribuzione di criteri di autenticazione per Teams telefoni e dispositivi di chiamata.
 
 >[!NOTE]
 >L'accesso condizionale richiede Azure Active Directory (Azure AD) Premium abbonamento.
 
 >[!NOTE]
->I criteri per i dispositivi mobili Android potrebbero non essere applicabili Teams dispositivi Android. 
+>I criteri per i dispositivi mobili Android potrebbero non essere applicabili Teams dispositivi Android.
 
 
-## <a name="user-based-devices-vs-common-area-devices"></a>Dispositivi basati sull'utente e dispositivi ad area comune
+## <a name="personal-and-shared-devices"></a>Dispositivi personali e condivisi
 
-I dispositivi dei team condivisi, come i dispositivi delle sale riunioni o i telefoni dell'area comune, non possono usare gli stessi requisiti per la registrazione e la conformità che in genere vengono applicati ai dispositivi personali. L'applicazione dei requisiti di autenticazione dei dispositivi personali ai dispositivi condivisi causerà i problemi di accesso seguenti: 
+I Teams condivisi, ad esempio i dispositivi delle sale riunioni o i telefoni dell'area comune, non possono usare gli stessi requisiti per la registrazione e la conformità che in genere vengono applicati ai dispositivi personali. L'applicazione dei requisiti di autenticazione dei dispositivi personali ai dispositivi condivisi causerà i problemi di accesso seguenti:
 
 1.  **I dispositivi vengono disconnessi a causa dei criteri per le password**
 
@@ -68,7 +68,7 @@ Per altre informazioni, vedere [Provisioning remoto e accesso per Teams disposit
 
 ### <a name="conditional-access-policies"></a>**Criteri di accesso condizionale**
 
-Azure AD l'accesso condizionale imposta requisiti aggiuntivi che i dispositivi devono soddisfare per poter accedere. Per Teams, vedere le indicazioni seguenti per determinare se sono stati creati i criteri appropriati. Per una panoramica dell'accesso condizionale, vedere [Che cos'è l'accesso condizionale.](/azure/active-directory/conditional-access/overview)
+Azure AD accesso condizionale imposta requisiti aggiuntivi che i dispositivi devono soddisfare per poter accedere. Per Teams dispositivi, vedere le indicazioni seguenti per determinare se sono stati creati i criteri appropriati. Per una panoramica dell'accesso condizionale, vedere [Che cos'è l'accesso condizionale.](/azure/active-directory/conditional-access/overview)
 
 ### <a name="multi-factor-authentication"></a>Autenticazione a più fattori
 
@@ -100,7 +100,7 @@ In Accesso condizionale è possibile configurare la frequenza di accesso [per](/
 
 ### <a name="filters-for-devices"></a>Filtri per i dispositivi
 
-[Filtri per dispositivi](/azure/active-directory/conditional-access/concept-condition-filters-for-devices) è una funzionalità di Accesso condizionale che consente di configurare criteri più granulari per i dispositivi in base alle proprietà dei dispositivi disponibili in Azure AD. È anche possibile usare valori personalizzati impostando gli attributi di estensione da 1 a 15 nell'oggetto dispositivo e quindi usando questi valori.
+[Filtri per i dispositivi](/azure/active-directory/conditional-access/concept-condition-filters-for-devices) è una funzionalità di Accesso condizionale che consente di configurare criteri più granulari per i dispositivi in base alle proprietà dei dispositivi disponibili in Azure AD. È anche possibile usare valori personalizzati impostando gli attributi di estensione da 1 a 15 nell'oggetto dispositivo e quindi usando questi valori.
 
 Usare i filtri per i dispositivi per identificare i dispositivi ad area comune e abilitare i criteri in due scenari chiave:
 
