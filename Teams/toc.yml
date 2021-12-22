@@ -1393,6 +1393,8 @@ items:
             href: devices/remote-update.md
           - name: Gestire i tag dei dispositivi Teams
             href: devices/manage-device-tags.md
+          - name: Pianifica la distribuzione di telefoni e schermi
+            href: devices/plan-device-deployment.md
           - name: Telefoni per Teams
             href: devices/phones-for-teams.md
           - name: Schermi Teams
