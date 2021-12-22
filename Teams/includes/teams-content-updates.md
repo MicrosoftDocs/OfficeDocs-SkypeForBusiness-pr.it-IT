@@ -3,6 +3,44 @@
 
 
 
+## <a name="week-of-december-13-2021"></a>Settimana del 13 dicembre 2021
+
+
+| Pubblicato il |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 12/13/2021 | [Note sulla versione per Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-release-note) | modificato |
+| 12/13/2021 | [Configurare il gateway SIP](/MicrosoftTeams/sip-gateway-configure) | modificato |
+| 12/13/2021 | [Problemi noti](/MicrosoftTeams/rooms/known-issues) | modificato |
+| 12/13/2021 | [Microsoft Teams sulla versione di PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | modificato |
+| 12/14/2021 | [Gestire l'app Complimenti nell'interfaccia Teams di amministrazione](/MicrosoftTeams/manage-praise-app) | modificato |
+| 12/14/2021 | [Installare Teams usando Microsoft Endpoint Configuration Manager](/MicrosoftTeams/msi-deployment) | modificato |
+| 12/14/2021 | [Disconnettersi da Microsoft Teams](/MicrosoftTeams/sign-out-of-teams) | modificato |
+| 12/14/2021 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | modificato |
+| 12/14/2021 | [Aggiornamenti assistiti Skype \| Business Online per Teams aggiornamento](/MicrosoftTeams/upgrade-assisted) | modificato |
+| 12/14/2021 | [Gestire l'accesso esterno (federazione)](/MicrosoftTeams/manage-external-access) | modificato |
+| 12/14/2021 | [Trasferire i numeri di telefono Microsoft Teams](/MicrosoftTeams/phone-number-calling-plans/transfer-phone-numbers-to-teams) | modificato |
+| 12/15/2021 | [Provisioning di Microsoft Teams su vasta scala per gli operatori sul campo](/MicrosoftTeams/flw-scripted-deployment) | modificato |
+| 12/16/2021 | [Gestire i criteri delle riunioni generali](/MicrosoftTeams/meeting-policies-in-teams-general) | modificato |
+| 12/16/2021 | [Domande frequenti sull'aggiornamento da Skype for Business a Teams](/MicrosoftTeams/faq-journey) | modificato |
+| 12/16/2021 | [Pianificare la soluzione vocale in Microsoft Teams](/MicrosoftTeams/cloud-voice-landing-page) | modificato |
+| 12/16/2021 | [Gestire l'accesso esterno (federazione)](/MicrosoftTeams/manage-external-access) | modificato |
+| 12/16/2021 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | modificato |
+| 12/16/2021 | [Ritiro di Skype for Business Online](/MicrosoftTeams/skype-for-business-online-retirement) | modificato |
+| 12/16/2021 | [Scegli il percorso di aggiornamento da Skype for Business a Microsoft Teams](/MicrosoftTeams/upgrade-and-coexistence-of-skypeforbusiness-and-teams) | modificato |
+| 12/16/2021 | [Aggiornamenti assistiti Skype \| Business Online per Teams aggiornamento](/MicrosoftTeams/upgrade-assisted) | modificato |
+| 12/16/2021 | [Aggiornamento \| dell'elenco di controllo Skype business a Teams passaggi \| di base per l'aggiornamento](/MicrosoftTeams/upgrade-basic) | modificato |
+| 12/16/2021 | [Definire l'ambito del progetto per l'Skype for Business di Microsoft Teams aggiornamento](/MicrosoftTeams/upgrade-define-project-scope) | modificato |
+| 12/16/2021 | [Informazioni sul framework di aggiornamento Skype for Business a Teams](/MicrosoftTeams/upgrade-framework) | modificato |
+| 12/16/2021 | [Aggiornare Skype for Business locale a Microsoft Teams](/MicrosoftTeams/upgrade-to-teams-execute-skypeforbusinesshybridonprem) | modificato |
+| 12/16/2021 | [Eseguire l'aggiornamento da Skype for Business Online a Microsoft Teams](/MicrosoftTeams/upgrade-to-teams-execute-skypeforbusinessonline) | modificato |
+| 12/17/2021 | [Pianificare Instradamento diretto](/MicrosoftTeams/direct-routing-plan) | modificato |
+| 12/17/2021 | [Gestire l'app Turni per l'organizzazione](/MicrosoftTeams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams) | modificato |
+| 12/17/2021 | [Usare l'onboarding guidato Frontline Worker per far entrare in funzione la forza lavoro in prima linea](/MicrosoftTeams/flw-onboarding-wizard) | modificato |
+| 12/17/2021 | [Guida introduttiva di Frontline Worker](/MicrosoftTeams/flw-quickstart) | modificato |
+| 12/17/2021 | [Introduzione alla registrazione Teams basata su criteri per le chiamate & riunioni](/MicrosoftTeams/teams-recording-policy) | modificato |
+| 12/17/2021 | [Procedure consigliate per l'autenticazione per i dispositivi Android](/MicrosoftTeams/devices/authentication-best-practices-for-android-devices) | aggiunto |
+
+
 ## <a name="week-of-december-06-2021"></a>Settimana del 06 dicembre 2021
 
 
@@ -56,14 +94,14 @@
 | 11/29/2021 | [Aggiornare dalla versione di valutazione gratuita di Teams Exploratory](/MicrosoftTeams/upgrade-from-teams-exploratory) | modificato |
 | 11/30/2021 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | modificato |
 | 11/30/2021 | [Configurazione dell'amministratore per l'app Genitori EDU Microsoft in Teams](/MicrosoftTeams/edu-parents-app) | modificato |
-| 12/1/2021 | [Connessione Microsoft Teams Essentials (AAD Identity) in un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | aggiunto |
+| 12/1/2021 | [Connessione Microsoft Teams Essentials (AAD Identity) a un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | aggiunto |
 | 12/1/2021 | [Guida introduttiva di Teams Essentials per le piccole imprese](/MicrosoftTeams/get-started-with-teams-essentials) | aggiunto |
 | 12/1/2021 | [Configurare le Connessione con operatore conferenza](/MicrosoftTeams/operator-connect-conferencing-configure) | aggiunto |
 | 12/1/2021 | [Pianificare le conferenze Connessione con operatore conferenza](/MicrosoftTeams/operator-connect-conferencing-plan) | aggiunto |
 | 12/1/2021 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | modificato |
 | 12/1/2021 | [Criteri di registrazione degli eventi live](/MicrosoftTeams/teams-live-events/live-events-recording-policies) | modificato |
 | 12/1/2021 | [Microsoft Teams sulla versione di PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | modificato |
-| 12/1/2021 | [Aggiorna Microsoft Teams gratuito (classico) all'abbonamento](/MicrosoftTeams/upgrade-freemium) | modificato |
+| 12/1/2021 | [Aggiornamento Microsoft Teams gratuito (classico) all'abbonamento](/MicrosoftTeams/upgrade-freemium) | modificato |
 | 12/1/2021 | [Guida introduttiva di Teams Essentials per le piccole imprese](/MicrosoftTeams/get-started-with-teams-essentials) | modificato |
 | 12/1/2021 | [Ecco cosa si ottiene con Teams Telefono](/MicrosoftTeams/here-s-what-you-get-with-phone-system) | modificato |
 | 12/1/2021 | [Configurare le Teams Telefono nell'organizzazione](/MicrosoftTeams/setting-up-your-phone-system) | modificato |
@@ -74,7 +112,7 @@
 | 12/2/2021 | [Opzioni di connettività PSTN](/MicrosoftTeams/pstn-connectivity) | modificato |
 | 12/2/2021 | [Insights per l'istruzione per l'utente finale](/MicrosoftTeams/insights-end-user-notice) | aggiunto |
 | 12/2/2021 | [Configurare chiamate di emergenza dinamiche](/MicrosoftTeams/configure-dynamic-emergency-calling) | modificato |
-| 12/2/2021 | [Connessione Microsoft Teams Essentials (AAD Identity) in un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | modificato |
+| 12/2/2021 | [Connessione Microsoft Teams Essentials (AAD Identity) a un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | modificato |
 | 12/3/2021 | Assegnare i criteri agli utenti in Microsoft Teams | rimosso |
 | 12/3/2021 | [Cercare gli eventi nel log di controllo Microsoft Teams](/MicrosoftTeams/audit-log-events) | modificato |
 | 12/3/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
@@ -152,9 +190,9 @@
 | 11/17/2021 | [Configurare Credito per la comunicazione per la propria organizzazione](/MicrosoftTeams/set-up-communications-credits-for-your-organization) | modificato |
 | 11/17/2021 | [Microsoft Teams attività utente](/MicrosoftTeams/teams-analytics-and-reports/user-activity-report) | modificato |
 | 11/17/2021 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | modificato |
-| 11/17/2021 | [Restrizioni per le chiamate in uscita - Servizi di audioconferenza & chiamate PSTN](/MicrosoftTeams/outbound-calling-restriction-policies) | modificato |
+| 11/17/2021 | [Restrizioni per le chiamate in uscita - Audioconferenza & chiamate PSTN](/MicrosoftTeams/outbound-calling-restriction-policies) | modificato |
 | 11/17/2021 | [Usare la telemetria in tempo reale per risolvere i problemi di qualità scarsa delle riunioni](/MicrosoftTeams/use-real-time-telemetry-to-troubleshoot-poor-meeting-quality) | modificato |
-| 11/18/2021 | [Provisioning remoto e accesso per Teams dispositivi Android](/MicrosoftTeams/devices/remote-provision-remote-login) | modificato |
+| 11/18/2021 | [Provisioning remoto e accesso per i Teams Android](/MicrosoftTeams/devices/remote-provision-remote-login) | modificato |
 | 11/18/2021 | [Accesso remoto e disconnessione per Teams dispositivi Android](/MicrosoftTeams/devices/remote-sign-in-and-sign-out) | aggiunto |
 | 11/18/2021 | [Microsoft Teams sulla versione di PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | modificato |
 | 11/18/2021 | [Gestire l'app Bookings in Microsoft Teams](/MicrosoftTeams/bookings-app-admin) | modificato |
@@ -167,6 +205,6 @@
 | 11/19/2021 | [Installare Teams usando Microsoft Endpoint Configuration Manager](/MicrosoftTeams/msi-deployment) | modificato |
 | 11/19/2021 | [Cos'è un ordine di portabilità?](/MicrosoftTeams/phone-number-calling-plans/port-order-overview) | modificato |
 | 11/18/2021 | Risolvere i problemi relativi all'accesso guest in Microsoft Teams | rimosso |
-| 11/19/2021 | [Elenco di controllo per \| l'Skype business per Teams passaggi \| di base per l'aggiornamento](/MicrosoftTeams/upgrade-basic) | modificato |
+| 11/19/2021 | [Elenco di controllo per \| l'aggiornamento Skype Business a Teams passaggi \| di base per l'aggiornamento](/MicrosoftTeams/upgrade-basic) | modificato |
 | 11/19/2021 | Dichiarazione di conformità sull'accessibilità - Francia | rimosso |
 | 11/19/2021 | [Microsoft Teams: Dichiarazione di conformità sull'accessibilità - Francia](/MicrosoftTeams/accessibility-declaration-of-conformance-in-france-for-teams) | modificato |
