@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams Rooms portale
+title: Controllo multi-tenant
 author: donnah007
 ms.author: v-donnahill
 manager: serdars
@@ -17,16 +17,16 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Registrazione di controllo per TRM.
 f1keywords: ''
-ms.openlocfilehash: e5e5cd25385f6e8a71484c57aa9c44da5d4c9cd8
-ms.sourcegitcommit: c8951fe3504c1776d7aec14b79605aaf5d317e7f
+ms.openlocfilehash: bb002ad546553e906339b03ff7b36ff2ccce8506
+ms.sourcegitcommit: 848e462c4f0c94548d3f90f28fb1c69a9bce64be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61331243"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61620530"
 ---
 # <a name="audit-logging-in-the-teams-rooms-managed-service"></a>Registrazione di controllo nel servizio Teams Rooms gestito
 
-Il servizio Teams Rooms gestito (TRM) consente di cercare i record di controllo per le attività eseguite nel portale da utenti e amministratori. Questa funzionalità è abilitata per impostazione predefinita. Solo l'amministratore del servizio gestito ha l'autorizzazione per esportare e quindi visualizzare i log.
+Il servizio Teams Rooms Managed (TRM) consente di cercare i record di controllo per le attività eseguite nel portale da utenti e amministratori. Questa funzionalità è abilitata per impostazione predefinita. Solo l'amministratore del servizio gestito ha l'autorizzazione per esportare e quindi visualizzare i log.
 
 > [!NOTE]
 > Le azioni eseguite nel servizio TRM non vengono registrate Microsoft 365 o Office 365 controllo 

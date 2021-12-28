@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 97f45330404f6a42c4293e4205e82dc7188d4b9e
-ms.sourcegitcommit: 563567ab140d5802756170c846dade3645d0b9e4
+ms.openlocfilehash: bbc40787eb3708be64ddd368a0f95d44bde5ef06
+ms.sourcegitcommit: 848e462c4f0c94548d3f90f28fb1c69a9bce64be
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284734"
+ms.lasthandoff: 12/28/2021
+ms.locfileid: "61620480"
 ---
 # <a name="teams-approvals-app-availability"></a>Disponibilità dell'app Approvazioni in Teams
 
@@ -41,11 +41,11 @@ La prima approvazione creata dall'app Approvazioni attiverà il provisioning del
 Questo articolo descrive i ruoli e i requisiti dell'app Approvazioni.
 
 > [!NOTE]
-> Questa funzionalità non è ancora stata rilasciata per gli utenti Government Community Cloud (GCC), Government Community Cloud High (GCCH) e Department of Defense (DOD).
+> Questa funzionalità non è ancora stata rilasciata per gli utenti Government Community Cloud High (GCCH) e Department of Defense (DOD).
 
 ## <a name="required-permissions-and-licenses"></a>Autorizzazioni e licenze richieste
 
-Per distribuire l'app Approvazioni, è necessaria l'autorizzazione per gli elementi seguenti:
+Per distribuire l Approvazioni app, è necessaria l'autorizzazione per gli elementi seguenti:
 
 - Autorizzazioni per la creazione di un database Microsoft CDS.
 
@@ -99,10 +99,10 @@ Autorizzazioni per i modelli di approvazione
 
 - Tutti i proprietari dei team possono creare un modello di approvazione per i team di cui sono proprietari.
 
-- Quando un amministratore crea un modello per l'intera organizzazione per la prima volta, crea automaticamente un nuovo gruppo Azure Active Directory(AAD) per tutti gli amministratori del tenant, inclusi gli amministratori globali e i servizi del team. Questi amministratori verranno aggiunti come proprietari del gruppo, in modo che possano gestire i modelli dell'organizzazione in modalità co-gestione. Gli amministratori che non hanno più accesso all'organizzazione dopo la creazione del team devono essere aggiunti manualmente come proprietari dei gruppi, in modo da avere le stesse autorizzazioni per gestire i modelli a livello di organizzazione.
+- Quando un amministratore crea un modello per l'intera organizzazione per la prima volta, crea automaticamente un nuovo gruppo Azure Active Directory(AAD) per tutti gli amministratori del tenant, inclusi gli amministratori globali e dei servizi del team. Questi amministratori verranno aggiunti come proprietari del gruppo, in modo che possano gestire i modelli dell'organizzazione in modalità co-gestione. Gli amministratori che non hanno più accesso all'organizzazione dopo la creazione del team devono essere aggiunti manualmente come proprietari dei gruppi, in modo da avere le stesse autorizzazioni per gestire i modelli a livello di organizzazione.
 
 > [!Note]
-> Se un amministratore elimina il gruppo, è necessario un mese per ripristinarlo nel portale Azure Active Directory (AAD) per ripristinare tutti i dati correlati. Dopo un mese o se l'amministratore elimina questo gruppo nel Cestino, si perderanno tutti i dati correlati.
+> Se un amministratore elimina il gruppo, è necessario un mese per ripristinarlo all'interno del portale Azure Active Directory (AAD) per ripristinare tutti i dati correlati. Dopo un mese o se l'amministratore elimina questo gruppo nel Cestino, si perderanno tutti i dati correlati.
 
 ## <a name="disable-the-approvals-app"></a>Disabilitare l'app Approvazioni
 
@@ -114,7 +114,7 @@ L'app Approvazioni è disponibile per impostazione predefinita. È possibile dis
 
   3. Cercare l'app Approvazioni.
 
-     ![mostra la struttura di spostamento dell'interfaccia di amministrazione con Teams app > Gestisci app evidenziata.](media/manage-approval-apps.png)
+     ![mostra la struttura di spostamento dell'interfaccia di amministrazione Teams app > Gestisci app evidenziata.](media/manage-approval-apps.png)
 
   4. Selezionare Approvazioni.
 
@@ -203,10 +203,10 @@ Per usare la Approvazioni di firma elettronica dell'app, sono necessari gli elem
 
 - Licenza per lo specifico provider di firme elettroniche che si sta scegliendo di usare. Per ottenere una licenza per l'organizzazione, è necessario accedere al sito del provider.
 
-Per la Approvazioni di firma elettronica di terze parti, i partner della firma di terze parti verranno visualizzati nell'app Teams Approvazioni per impostazione predefinita. È possibile disabilitare specifici provider di firme elettroniche accedendo alle impostazioni delle app nell'interfaccia Teams di amministrazione.
+Per la Approvazioni di firma elettronica di terze parti, i partner della firma di terze parti verranno visualizzati nell'app Teams Approvazioni per impostazione predefinita. È possibile disabilitare specifici provider di firme elettroniche accedendo alle impostazioni dell'app nell'Teams di amministrazione.
 
 1. Nell'Teams di amministrazione, in **Gestisci app,** selezionare l'app Approvazioni e scegliere **Impostazioni**. 
 
-2. Ogni provider di firme elettroniche ha un interruttore accanto al provider che si trova nella posizione attiva (destra) per impostazione predefinita. Scorrere l'interruttore verso sinistra per disabilitare uno specifico provider di firme elettroniche. Se un Teams disabilita un provider, gli utenti finali non potranno vedere il provider durante la creazione di un'approvazione. Gli utenti finali non saranno inoltre in grado di visualizzare le richieste di firma elettronica effettuate con il provider.
+2. Ogni provider di firme elettroniche ha un interruttore accanto al provider che si trova nella posizione attiva (destra) per impostazione predefinita. Scorrere l'interruttore verso sinistra per disabilitare uno specifico provider di firme elettroniche. Se un Teams disabilita un provider, gli utenti finali non potranno visualizzare il provider durante la creazione di un'approvazione. Gli utenti finali non saranno inoltre in grado di visualizzare le richieste di firma elettronica effettuate con il provider.
 
 Le firme Approvazioni create dall'app Approvazioni vengono archiviate nel cloud del provider selezionato. Sarà quindi necessario accedere al sito del provider per esportare i dati relativi alle firme elettroniche. Fare riferimento alla documentazione del provider relativa all'esportazione e alla conservazione di questi contratti.
