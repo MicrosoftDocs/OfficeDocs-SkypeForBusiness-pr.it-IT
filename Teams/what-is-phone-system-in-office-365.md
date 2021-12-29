@@ -20,13 +20,14 @@ f1.keywords:
 ms.custom:
 - Phone System
 - seo-marvel-apr2020
-description: Questo articolo illustra la tecnologia di Teams Sistema telefonico in Microsoft 365.
-ms.openlocfilehash: a0e1679c580ba6b53af7e43e6e8231a90b636e34
-ms.sourcegitcommit: 7cbcfd63161ce88067ce2d2548685c3746cd7f69
+- intro-overview
+description: In questo articolo verranno trattate le informazioni sulla tecnologia Teams Sistema telefonico in Microsoft 365.
+ms.openlocfilehash: 7d873ac9ec3b4d31eea8d5a002ba0b5ba752f7cb
+ms.sourcegitcommit: 3b5ae6ebf4384166c628f66a4f17e6fe4455b708
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "61262130"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "61625807"
 ---
 # <a name="what-is-teams-phone"></a>Che cos'è Teams Telefono
 
@@ -36,11 +37,11 @@ Teams Telefono funziona con Teams client e dispositivi certificati. Teams Telefo
 
 Le chiamate tra utenti dell'organizzazione vengono gestite internamente all'interno Teams Telefono e non passano mai alla rete PSTN (Public Switched Telephone Network). Questo vale per le chiamate tra utenti dell'organizzazione che si trovano in aree geografiche diverse, rimuovendo i costi a lunga distanza per queste chiamate interne. 
 
-Per effettuare chiamate esterne, Teams Telefono opzioni per la connessione alla rete PSTN. Per altre informazioni sulle soluzioni vocali e [](cloud-voice-landing-page.md) sulle opzioni di connettività PSTN, vedere Pianificare la soluzione vocale Teams e Connessione [alla rete PSTN.](#connect-to-the-public-switched-telephone-network-pstn)
+Per effettuare chiamate esterne, Teams Telefono opzioni per la connessione alla rete PSTN. Per altre informazioni sulle soluzioni vocali e [](cloud-voice-landing-page.md) sulle opzioni di connettività PSTN, vedere Pianificare la Teams e Connessione [alla rete PSTN.](#connect-to-the-public-switched-telephone-network-pstn)
 
 ## <a name="teams-phone-features"></a>Teams Telefono caratteristiche
 
-Con Teams Telefono, gli utenti possono usare Teams per effettuare e ricevere chiamate, trasferire chiamate e disattivare l'audio o riattivare l'audio delle chiamate. Teams Telefono gli utenti possono fare clic su un nome nella rubrica e effettuare Teams chiamate a tale persona. Per effettuare e ricevere chiamate, Teams Telefono utenti possono usare i propri dispositivi mobili, un auricolare con un portatile o un PC o uno dei molti telefoni IP che funzionano con Teams. 
+Con Teams Telefono, gli utenti possono usare Teams per effettuare e ricevere chiamate, trasferire chiamate e disattivare l'audio o riattivare l'audio delle chiamate. Teams Telefono gli utenti possono fare clic su un nome nella rubrica e effettuare Teams chiamate a tale persona. Per effettuare e ricevere chiamate, Teams Telefono gli utenti possono usare i propri dispositivi mobili, un auricolare con un portatile o un PC o uno dei molti telefoni IP che funzionano con Teams. 
 
 Teams Telefono amministratori possono gestire le opzioni e le impostazioni delle chiamate dalla stessa console usata per la messaggistica, la collaborazione e così via.
 
@@ -70,12 +71,12 @@ Teams Telefono può essere usato per i servizi e la segreteria telefonica, ad es
 
 - **Segreteria telefonica:** Cloud Voicemail viene automaticamente configurato ed eseguito il provisioning per tutti Teams utenti. Vedere [Configurare Cloud Voicemail](set-up-phone-system-voicemail.md).
 
-Per altre informazioni sulle caratteristiche, vedere Ecco cosa si ottiene con [Teams Telefono.](here-s-what-you-get-with-phone-system.md) Se si è pronti per iniziare, vedere Configurare [Teams Telefono nell'organizzazione.](setting-up-your-phone-system.md)
+Per altre informazioni sulle caratteristiche, vedere Ecco cosa si ottiene con [Teams Telefono.](here-s-what-you-get-with-phone-system.md) Se si è pronti per iniziare, vedere Configurare Teams Telefono [nell'organizzazione.](setting-up-your-phone-system.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Teams Telefono caratteristiche](here-s-what-you-get-with-phone-system.md)
 - [Configurare Teams Telefono](setting-up-your-phone-system.md)
-- [Pianificare la soluzione Teams vocale](cloud-voice-landing-page.md)
+- [Pianificare la Teams vocale](cloud-voice-landing-page.md)
 - [Opzioni di connettività PSTN](pstn-connectivity.md)
 - [Licenze per i componenti aggiuntivi di Microsoft Teams](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)

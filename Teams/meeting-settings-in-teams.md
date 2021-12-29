@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 4ff1118818ac22040e9bf9f8c44288991e24d8b0
-ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
+ms.openlocfilehash: ed042552ea6057c8184b4dad444afa543550b052
+ms.sourcegitcommit: 3b5ae6ebf4384166c628f66a4f17e6fe4455b708
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61205306"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "61625917"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -46,7 +46,7 @@ Con la partecipazione anonima, chiunque può partecipare alla riunione come uten
 
 Per apportare tali modifiche, è necessario essere un amministratore di Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](./using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
-1. Passare all'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.net).
+1. Passare all'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com).
 
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
 
@@ -84,7 +84,7 @@ Gli utenti anonimi ora erediteranno i criteri di autorizzazione predefiniti glob
 
 Per accedere a questa impostazione è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](./using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
-1. Passare all’interfaccia di amministrazione.
+1. Passare all'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com).
 
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
 
@@ -109,7 +109,7 @@ Per accedere a questa impostazione è necessario essere un amministratore del se
 
  **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
-1. Passare all’interfaccia di amministrazione.
+1. Passare all'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com).
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
 3. In **Invito tramite posta elettronica**, eseguire quanto descritto di seguito:
 
@@ -141,7 +141,7 @@ Se si usa la Qualità del servizio (QoS) per assegnare la priorità al traffico 
 > Se si attiva la Qualità del servizio (QoS) o si modificano le impostazioni nell'interfaccia di amministrazione di Microsoft Teams per il servizio di Teams, sarà anche necessario [applicare le impostazioni di corrispondenza a tutti i dispositivi degli utenti](QoS-in-Teams-clients.md) e a tutti i dispositivi di rete interni per implementare completamente le modifiche apportate alla Qualità del servizio (QoS) in Teams.
 
   **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
-1. Passare all’interfaccia di amministrazione.
+1. Passare all'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com).
 2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
 3. In **Rete**, eseguire quanto descritto di seguito:
 
