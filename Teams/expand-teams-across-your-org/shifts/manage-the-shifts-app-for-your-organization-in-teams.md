@@ -22,12 +22,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d474198bc644563007428ac50a85f8f839a9e1dc
-ms.sourcegitcommit: b0bb7db41856ee377dbe4ca8c9dff56385bf120d
+ms.openlocfilehash: c4b1550ca90515714e509017f4fb13b83414fbf0
+ms.sourcegitcommit: 293d1b8a591d2284029632874067471f8d5bb0ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61562929"
+ms.lasthandoff: 12/30/2021
+ms.locfileid: "61639690"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Turni per l'organizzazione in Microsoft Teams
 
@@ -61,14 +61,11 @@ I dati di Turni sono attualmente archiviati in Azure nei data center in America 
 Turni è abilitato per impostazione predefinita per tutti gli utenti di Teams nell’organizzazione. È possibile disattivare o attivare l'app a livello di organizzazione nella pagina [Gestisci app](../../manage-apps.md) nell'interfaccia di amministrazione di Microsoft Teams.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**.
-2. Nell'elenco delle app eseguire una delle operazioni seguenti:
-
-    - Per disattivare Turni per l'organizzazione, cercare l'app Turni, selezionarla e quindi selezionare **Blocca**.
-    - Per attivare Turni per l'organizzazione, cercare l'app Turni, selezionarla e quindi selezionare **Consenti**.
+2. Nell'elenco delle app cercare l'app Turni, selezionarla  e quindi impostare l'interruttore Stato su **Bloccato** o **Consentito.**
 
 ### <a name="enable-or-disable-shifts-for-specific-users-in-your-organization"></a>Abilitare o disabilitare Turni per utenti specifici nell'organizzazione
 
-Per consentire o impedire a utenti specifici dell'organizzazione di usare Turni, verificare che l'opzione Turni sia attivata per l'organizzazione nella [pagina Gestisci app.](../../manage-apps.md) Creare quindi criteri di autorizzazione dell'app personalizzati e assegnarli a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](../../teams-app-permission-policies.md).
+Per consentire o impedire a utenti specifici dell'organizzazione di usare Turni, verificare che l'opzione Turni sia attivata per l'organizzazione nella [pagina Gestisci](../../manage-apps.md) app. Creare quindi criteri di autorizzazione dell'app personalizzati e assegnarli a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](../../teams-app-permission-policies.md).
 
 ### <a name="use-an-app-setup-policy-to-pin-shifts-to-teams"></a>Usare i criteri di configurazione dell'app per aggiungere Turni Teams
 
