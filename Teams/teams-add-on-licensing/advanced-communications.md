@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fd7d03cc4828f84f055c65deb34b530f0ce93be2
-ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
+ms.openlocfilehash: 300d8b5c8233f042672801be662bff61a3332df1
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61205476"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61767119"
 ---
 # <a name="advanced-communications-add-on-for-microsoft-teams"></a>Componente aggiuntivo Advanced Communications per Microsoft Teams
 
@@ -36,15 +36,13 @@ Advanced Communications include la personalizzazione avanzata delle riunioni, gl
 - Creare esperienze di riunione unificanti con scene personalizzate in modalità Insieme progettate in base alle esigenze dell'azienda e della riunione.
 - Esperienze personalizzate con pacchetti di criteri personalizzati tramite l'aggregazione di un set di criteri personalizzato per gli utenti con ruoli simili nell'organizzazione usando l'interfaccia di amministrazione di Teams o PowerShell. Ogni utente richiederà una licenza per ricevere un'assegnazione di pacchetti di criteri personalizzati. 
 
-Advanced Communications è disponibile in tutti Microsoft 365 come componente aggiuntivo per qualsiasi abbonamento Microsoft 365 o Office 365 pagamento. Le funzionalità incluse in Advanced Communications non verranno aggiunte ad altri piani Microsoft 365 o Office 365 e non possono essere acquistate separatamente. Per ottenere le funzionalità, è necessario acquistare il componente aggiuntivo.
+Advanced Communications è disponibile in tutti Microsoft 365 come componente aggiuntivo per qualsiasi abbonamento Microsoft 365 o Office 365 pagamento. Le funzionalità incluse in Advanced Communications non verranno aggiunte ad altri piani Microsoft 365 o Office 365 e non possono essere acquistate separatamente. Queste funzionalità sono temporaneamente disponibili in anteprima pubblica per tutti Microsoft Teams clienti. Per ottenere le funzionalità dopo l'anteprima, gli utenti verranno informati in anticipo su come continuare il servizio tramite la licenza del componente aggiuntivo.
 
 > [!NOTE]
 > Le funzionalità verranno rilasciate non appena saranno disponibili. Visita la roadmap [Microsoft 365 pubblica per](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Teams) gli intervalli di funzionalità più recenti.
 
 > [!NOTE]
 > Advanced Communications non è ancora disponibile per Microsoft 365 GCC High o Department of Defense (DoD).
-
-Queste funzionalità sono ora disponibili in anteprima.
 
 ## <a name="related-articles"></a>Articoli correlati
 

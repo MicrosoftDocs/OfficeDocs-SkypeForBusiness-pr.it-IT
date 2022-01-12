@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come registrare Microsoft Teams Rooms account nel servizio Microsoft Teams Rooms Premium gestito.
 f1keywords: ''
-ms.openlocfilehash: a6aa59a798e06c407c1bbde6734ec9ab3ecedcd1
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 79dee52cc9c814338c6c5dc4c91245155ef2fd41
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58637021"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61766969"
 ---
 # <a name="enroll-a-device-in-the-microsoft-teams-rooms-premium-managed-service"></a>Registrare un dispositivo nel servizio Microsoft Teams Rooms Premium gestito
 
@@ -33,7 +33,7 @@ Per registrare un dispositivo Microsoft Teams Rooms nel servizio gestito Teams R
 Completare la procedura seguente per assegnare gli utenti al ruolo di amministratore del servizio gestito:
 
 1. Accedere al portale [Teams Rooms Premium con](https://portal.rooms.microsoft.com/) gli stessi privilegi di amministratore usati per accedere al interfaccia di amministrazione di Microsoft 365.
-2. Passare a **Ruoli Impostazioni**  >  **Impostazioni** e quindi selezionare  >   Amministratore servizio **gestito.**
+2. Passare a **Ruoli** Impostazioni  >  **Impostazioni** e quindi selezionare  >   Amministratore **servizio gestito.**
 3. In **Amministratore servizio gestito** selezionare la scheda **Attività** e quindi selezionare **Aggiungi**.
 4. Seguire la procedura guidata per assegnare un nome all'attività e selezionare gli utenti da aggiungere. L'attività verrà applicata a tutte le chat room e i gruppi di chat room.
 5. Al termine della procedura guidata per l'assegnazione, selezionare **Aggiungi attività.**
@@ -44,25 +44,26 @@ Dopo aver assegnato gli utenti al ruolo di [](#enroll-a-teams-rooms-device) ammi
 
 ## <a name="enroll-a-teams-rooms-device"></a>Registrare un Teams Rooms dispositivo
 
-Completare la procedura seguente per registrare un dispositivo nel servizio Teams Rooms Premium gestito:
+ Per registrare un dispositivo nel servizio Teams Rooms Premium gestito, vedere Monitoraggio [dell'installazione del software del dispositivo.](monitor-software-installation-guide.md)
 
-1. Accedere al portale [Teams Rooms Premium con](https://portal.rooms.microsoft.com/) un utente a cui è stato assegnato il ruolo di amministratore del servizio gestito.
-2. Selezionare nella scheda **?** nell'angolo in alto a destra del portale per avviare il menu ? Il menu ? include una [guida all'installazione](https://portal.rooms.microsoft.com/docs/MMR%20Monitoring%20Software%20Installation%20Guide%20Feb%202021.pdf) che contiene istruzioni dettagliate per la registrazione:
+<!--2. Select on the **?** icon at the top right-hand corner of the portal to launch the help menu. The help menu includes an [Installation guide](https://portal.rooms.microsoft.com/docs/MMR%20Monitoring%20Software%20Installation%20Guide%20Feb%202021.pdf) containing detailed enrollment instructions:
 
-    1. Esaminare la **sezione Prerequisiti nella** Guida all'installazione. Verificare che gli URL elencati **nell'elenco URL necessari** per la comunicazione siano aggiunti all'elenco di indirizzi consentiti per il traffico del firewall.
-    2. Seguire le istruzioni nella sezione **Abilitazione del Impostazioni TPM** per abilitare la funzionalità TPM (Trusted Platform Module) nel dispositivo.
-    3. Seguire le istruzioni nella sezione **Aggiunta Impostazioni** proxy per configurare il dispositivo per l'uso del gateway proxy, se presente.
-    4. Seguire le istruzioni nella sezione **Processo** per installare il software dell'agente di monitoraggio e configurare la chiave di autoregistrazione nel dispositivo.
+    1. Review the **Pre-requisites** section in the Installation guide. Confirm that the URLs listed in the **URLs Required for Communication** list are added to your firewall's traffic allow list.
+    2. Follow the instructions in the **Enabling TPM Settings** section to enable the Trusted Platform Module (TPM) functionality on your device.
+    3. Follow the instructions in the **Adding Proxy Settings** section to configure your device to use your proxy gateway, if you have one.
+    4. Follow the instructions in the **Process** section to install the monitoring agent software and configure the self enrollment key on your device.
 
-3. Dopo aver configurato l'agente di monitoraggio e la chiave XML univoca nel dispositivo, passare **a** Room > room name > **Status** e quindi selezionare **Enroll**.
+3. After the monitoring agent and unique XML key are configured on your device, navigate to **Rooms** > room name > **Status**, and then select **Enroll**.
 
     > [!NOTE]
-    > Il Teams Rooms del dispositivo rimarrà nello stato **Onboarding** finché un amministratore del servizio gestito non registra il dispositivo usando il portale.
+    > The Teams Rooms device will remain in the **Onboarding** state until a Managed Service Administrator enrolls the device using the portal.
 
-## <a name="link-to-installation-guide"></a>Collegamento alla guida all'installazione
+    See [Monitoring device software installation](monitoring-software-installation-guide.md).
 
-Il menu **?** fornisce un collegamento alla [Guida all'installazione,](https://portal.rooms.microsoft.com/docs/MMR%20Monitoring%20Software%20Installation%20Guide%20Feb%202021.pdf) che a sua volta fornisce le informazioni seguenti:
+<!--## Link to Installation guide
 
-- Istruzioni sugli URL che devono essere consentiti nell'elenco per consentire l'invio della telemetria della chat room al servizio gestito.
-- Istruzioni per l'applicazione dell'Microsoft Teams Rooms Premium di monitoraggio e della chiave XML univoca come parte della registrazione di un dispositivo nel servizio gestito.
-- Istruzioni per la risoluzione dei problemi.
+The **Help** menu provides a link to the [Installation guide](https://portal.rooms.microsoft.com/docs/MMR%20Monitoring%20Software%20Installation%20Guide%20Feb%202021.pdf) which in turn provides the following information:
+
+- Instructions on URLs that need to be allow-listed to serve to enable room telemetry to be sent to the managed service.
+- Instructions for applying the Microsoft Teams Rooms Premium monitoring agent and unique XML key as part of enrolling a device in the managed service.
+- Troubleshooting instructions.-->

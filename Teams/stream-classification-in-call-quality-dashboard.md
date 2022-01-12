@@ -20,20 +20,20 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: Scopri come viene classificata la qualità dello stream nel Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: f4c4fb72d15ce79c60c2400b068898ad463f1b07
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 21de07e2b590bafcb7de65495e6b7d68faa381cc
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598340"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61767199"
 ---
 # <a name="stream-classification-in-call-quality-dashboard-cqd"></a>Classificazione dei flussi in Call Quality Dashboard (CQD)
 
-Il call quality dashboard (CQD) per Microsoft Teams e Skype for Business Online consente di ottenere informazioni approfondite sulla qualità delle chiamate effettuate usando Microsoft Teams e Skype for Business servizi. Questo argomento fornisce informazioni dettagliate sulla classificazione di qualità delle trasmissione multimediali. Per altre informazioni su CQD e su come configurarlo, vedere [Configurare call quality dashboard](turning-on-and-using-call-quality-dashboard.md).
+Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online consente di ottenere informazioni approfondite sulla qualità delle chiamate effettuate usando Microsoft Teams e Skype for Business servizi. Questo argomento fornisce informazioni dettagliate sulla classificazione di qualità delle trasmissione multimediali. Per altre informazioni su CQD e su come configurarlo, vedere [Configurare call quality dashboard](turning-on-and-using-call-quality-dashboard.md).
 
 ## <a name="classifier-definitions"></a>Definizioni di classificatore
 
-Flussi in CQD sono classificate come _Buone,_ Scarse o _Non classificate_ in base ai valori delle metriche di qualità chiave disponibili. Le metriche e le condizioni usate per classificare lo stream vengono visualizzate nelle tabelle seguenti. Le dimensioni "Scarso a causa di" di CQD possono essere usate per comprendere quale metrica è responsabile di una _classificazione Poor._ Per altre informazioni su queste dimensioni, vedere [Dimensioni e misure disponibili in Call Quality Dashboard.](dimensions-and-measures-available-in-call-quality-dashboard.md)
+Flussi in CQD sono classificate come _Buone,_ Scarse o _Non_ classificate in base ai valori delle metriche di qualità chiave disponibili. Le metriche e le condizioni usate per classificare lo stream vengono visualizzate nelle tabelle seguenti. Le dimensioni "Scarso a causa di" di CQD possono essere usate per comprendere quale metrica è responsabile di una _classificazione Poor._ Per altre informazioni su queste dimensioni, vedere [Dimensioni e misure disponibili in Call Quality Dashboard.](dimensions-and-measures-available-in-call-quality-dashboard.md)
 
 ### <a name="audio-classifier"></a>Classificatore audio
 
@@ -48,7 +48,7 @@ Se vengono soddisfatte una o più delle condizioni seguenti, un flusso audio vie
 
 ### <a name="video-classifier-due-to-freeze"></a>Video Classifier due to Freeze
 
-Il flusso video è  contrassegnato _come_ Buono o Scadente in base al valore di un punteggio del classificatore generato per stimare che l'utente finale ha provato Frozen Video. Questo classificatore è disponibile solo per Microsoft Teams prodotto.
+Lo stream video è contrassegnato  _come_ Buono o Scadente _in_ base al valore di un punteggio del classificatore generato per stimare che l'utente finale ha provato Frozen Video. Questo classificatore è disponibile solo per Microsoft Teams prodotto.
 
 |Passaggio #|Metrica|Scenario|Condizione |Classificazione se la condizione è vera |Classificazione se la condizione è falsa |Classificazione se la metrica non è disponibile |Spiegazione |
 |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |
@@ -72,10 +72,10 @@ Un flusso VBSS  viene  contrassegnato come Buono o Scadente in base al valore de
 
 |Passaggio # |Metrica |Condizione |Classificazione se la condizione è vera |Classificazione se la condizione è falsa |Classificazione se la metrica non è disponibile |Spiegazione |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|1|Video Local Frame Loss Percentage Avg|> 50% |_Poor_|_Good_|Andare al passaggio 2|Percentuale media di fotogrammi video persi come visualizzato all'utente. La media include i frame recuperati dalle perdite di rete.|
-|2|Video Frame Rate Avg|< 2|_Poor_|_Good_|Andare al passaggio 3|Media dei fotogrammi al secondo ricevuti per uno stream video, calcolata per tutta la durata della sessione.|
-|3|Video Post FECPLR|> 0,15|_Poor_|_Good_|_Unclassified_|Tasso di perdita dei pacchetti dopo l'applicazione di FEC aggregato in tutti i flussi video e i codec.|
+|1|Video Local Frame Loss Percentage Avg|Il codec NON è H264S</br>E</br>StreamDirection è Inbound</br></br>Se FrameLoss > 50%|_Poor_|_Good_|_Unclassified_|Percentuale media di fotogrammi video persi come visualizzato all'utente. La media include i frame recuperati dalle perdite di rete. FrameLoss viene usato solo per classificare i flussi non H264S in ingresso.|
+|2|Video Frame Rate Avg|< 1|_Poor_|_Good_|_Unclassified_|Media dei fotogrammi al secondo ricevuti per uno stream video, calcolata per tutta la durata della sessione. Si applica a tutti i flussi in uscita e a StreamDirection per H264S.|
 | |  | | | |  ||
+
 
 ### <a name="application-sharing-classifier"></a>Classificatore di condivisione applicazioni
 

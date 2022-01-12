@@ -22,12 +22,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni sui dati e i report disponibili in Microsoft Call Quality Dashboard (CQD).
-ms.openlocfilehash: 04edfbcbdcfc8cc5a51a08bccd7c0dfc6c511e58
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: d3030377a286103e6801855e3540239006fded47
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60833080"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61766209"
 ---
 # <a name="data-and-reports-in-call-quality-dashboard-cqd"></a>Dati e report in Call Quality Dashboard (CQD)
 
@@ -40,10 +40,10 @@ Microsoft Call Quality Dashboard (CQD) usa un feed di dati in tempo quasi reale 
 
 |&nbsp;|&nbsp;|
 |---------|---------|
-|Teams di amministrazione [( https://admin.teams.microsoft.com) ](https://admin.teams.microsoft.com)    | I dati CQD  sono inclusi nella pagina Utenti dell'interfaccia di amministrazione di Teams, che mostra i dati più comuni necessari in un formato di facile lettura. Non è possibile personalizzare i dati CQD trovati in **Utenti**.  |
+|Teams di amministrazione [ https://admin.teams.microsoft.com) (](https://admin.teams.microsoft.com)    | I dati CQD  sono inclusi nella pagina Utenti dell'interfaccia di amministrazione di Teams, che mostra i dati più comuni necessari in un formato di facile lettura. Non è possibile personalizzare i dati CQD trovati in **Utenti**.  |
 |Portale CQD [( https://cqd.teams.microsoft.com) ](https://cqd.teams.microsoft.com)     | Riepilogo efficace e report dettagliati che soddisfano la maggior parte delle esigenze, con il filtro drill-through. È anche possibile personalizzare i report nel portale CQD. <br><br>È possibile [ottenere due modelli di report CQD](#import-the-cqd-report-templates) che consentono di analizzare i dati nel portale CQD.       |
-|Power BI     | Usare query dirette per visualizzare i dati CQD in Power BI usando modelli Power BI [personalizzati.](CQD-Power-BI-query-templates.md) [Scaricare Power BI modelli di query per CQD.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true)<br><br>È anche possibile [usare l'API REST per accedere ai dati CQD](/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power BI. Usare questo metodo se si vogliono scaricare i dati CQD in modo da poterlo usare offline. L'uso di questo metodo è vantaggioso per prestazioni migliori, particolarmente utili per set di dati di grandi dimensioni che Power BI quando si è online.       |
-|API di Microsoft Graph     | Accedere ai dati sulla qualità delle chiamate usando [l'API Graph chiamata](/graph/api/resources/callrecords-api-overview). Si tratta del metodo più complesso, ma offre il maggior controllo e flessibilità nell'analisi dei dati sulla qualità delle chiamate. Ad esempio, se è necessario unirsi ad altri dati per l'organizzazione, è possibile usare l'API Graph per creare un modello di dati e incorporare i dati sulla qualità delle chiamate.        |
+|Power BI     | Usare query dirette per visualizzare i dati CQD in Power BI usando modelli Power BI [personalizzati.](CQD-Power-BI-query-templates.md) [Scaricare Power BI modelli di query per CQD](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true).<br><br>È anche possibile [usare l'API REST per accedere ai dati CQD](/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power BI. Usare questo metodo se si vogliono scaricare i dati CQD in modo da poterlo usare offline. L'uso di questo metodo consente di ottenere prestazioni migliori, particolarmente utili per set di dati di grandi dimensioni che Power BI quando si è online.       |
+|API di Microsoft Graph     | Accedere ai dati sulla qualità delle chiamate usando [l'API Graph.](/graph/api/resources/callrecords-api-overview) Si tratta del metodo più complesso, ma offre il maggior controllo e flessibilità nell'analisi dei dati sulla qualità delle chiamate. Ad esempio, se è necessario unirsi ad altri dati per l'organizzazione, è possibile usare l'API Graph per creare un modello di dati e incorporare i dati sulla qualità delle chiamate.        |
 
 ## <a name="import-the-cqd-report-templates"></a>Importare i modelli di report CQD
 
@@ -76,20 +76,21 @@ Per motivi di conformità, i dati relativi alle informazioni identificabili dell
 - Nome endpoint computer
 - Feedback verbale dell'utente
 - ID oggetto (ID oggetto Active Directory dell'utente dell'endpoint)
+- Telefono numero
 
 ### <a name="admin-roles-with-and-without-euii-access"></a>Ruoli di amministratore con e senza accesso EUII
 
 Questi [ruoli del controllo](/azure/role-based-access-control/overview) degli **accessi in base al ruolo hanno** accesso EUII:
 - Amministratore globale
-- Teams Amministratore del servizio
-- Teams Amministratore delle comunicazioni
+- Teams Service Admin
+- Teams Communications Admin
 - Tecnico supporto comunicazioni Teams
 - Lettore globale
-- Skype for Business Amministratore
+- Skype for Business amministratore
 
 Questi ruoli RBAC **non hanno accesso** EUII:
 - Lettore report
-- Teams Specialista del supporto per le comunicazioni
+- Teams Communications Support Specialist
 
 
 ## <a name="date-controls"></a>Controlli data
@@ -118,7 +119,7 @@ Per impostazione predefinita, il giorno corrente del mese viene usato come ultim
 
 Il riepilogo predefinito e i report CQD dettagliati possono essere tutti necessari per gestire la qualità delle chiamate per l'organizzazione. Se necessario, è possibile [creare report personalizzati.](#create-custom-detailed-reports) 
 
-Se si vuole usare Power BI analizzare i dati CQD, vedere Usare Power BI per analizzare i dati [CQD](CQD-Power-BI-query-templates.md)per Teams .
+Se si vuole usare Power BI per analizzare i dati CQD, vedere Usare Power BI per analizzare i dati [CQD](CQD-Power-BI-query-templates.md)per Teams .
 
 |Funzionalità|Report di riepilogo|Report dettagliati|
 |:--- |:--- |:--- |
@@ -141,7 +142,7 @@ Se si vuole usare Power BI analizzare i dati CQD, vedere Usare Power BI per anal
  
 ### <a name="select-product-data-to-see-in-reports"></a>Selezionare i dati di prodotto da visualizzare nei report
 
-Nei report Riepilogo e Location-Enhanced, è  possibile usare l'elenco a discesa Filtro prodotti per visualizzare tutti i dati di prodotto, solo Microsoft Teams dati o solo Skype for Business online.
+Nei report riepilogo e Location-Enhanced, è possibile  usare l'elenco a discesa Filtro prodotti per visualizzare tutti i dati di prodotto, solo Microsoft Teams dati o solo Skype for Business online.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot: mostra le opzioni del controllo Filtro prodotti.](media/206ad818-0f72-4c8e-b25e-3cc8fcfbef05.png)
@@ -221,13 +222,13 @@ Come indicano i nomi, i criteri di classificazione si basano sul tipo di conness
   
 ## <a name="tenant-data-information"></a>Informazioni sui dati del tenant
 
-Il dashboard Report di riepilogo CQD include una pagina Upload **Tenant Data,** accessibile selezionando **Tenant Data Upload** dal menu delle impostazioni nell'angolo in alto a destra. Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio:
+Il dashboard Report di riepilogo CQD include una pagina Upload Tenant **Data,** accessibile selezionando **Tenant Data Upload** dal menu delle impostazioni nell'angolo in alto a destra. Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio:
 
 - Mappa dell'indirizzo IP e delle informazioni geografiche.
 - Mappa di ogni punto di accesso wireless e del relativo indirizzo MAC.
 - Mappa di Endpoint a Endpoint Make/Model/Type e così via.
   
-È consigliabile caricare i dati del tenant, dell'edificio e della posizione in modo che CQD possa includere queste informazioni nei report. Se questi dati non sono già stati caricati, leggere Upload [tenant e creare dati.](CQD-upload-tenant-building-data.md) 
+È consigliabile caricare i dati del tenant, dell'edificio e della posizione in modo che CQD possa includere queste informazioni nei report. Se questi dati non sono già stati caricati, leggere Upload [tenant e i dati di creazione.](CQD-upload-tenant-building-data.md) 
 
 
 ## <a name="detailed-reports"></a>Report dettagliati
@@ -356,7 +357,7 @@ L'intero URL sarà simile al seguente:
 
 `https://cqd.teams.microsoft.com/spd/#/Dashboard/2624085/2018-9/filter/[AllStreams].[Is%20Teams]|[True]`
 
-Per applicare filtri URL con valori a selezione multipla, separare ogni valore con un carattere barra verticale ( | ). Ad esempio:
+Per applicare filtri URL con valori a selezione multipla, separare ogni valore con un carattere pipe ( | ). Ad esempio:
 
 `filter/[AllStreams].[Media%20Type]|[Video]|[Audio]|[VBSS]`
 

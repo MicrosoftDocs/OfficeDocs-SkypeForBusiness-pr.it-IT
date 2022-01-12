@@ -1,5 +1,5 @@
 ---
-title: Creare utenti di Microsoft 365, aggiungere licenze di Business Voice e assegnare numeri di telefono
+title: Creare Microsoft 365 utenti, aggiungere Teams Telefono licenze del piano per chiamate e assegnare numeri di telefono
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -8,36 +8,35 @@ ms.service: msteams
 audience: admin
 f1.keywords:
 - NOCSH
-ms.localizationpriority: high
+ms.localizationpriority: medium
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
-- Teams_Business_Voice
 search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 33367a75eef98a847edfe6ce985f952719bfcf4c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
-ms.translationtype: HT
+ms.openlocfilehash: 00eb2842b063399f69563571180197de0238588e
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58605965"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61766189"
 ---
-# <a name="create-and-license-business-voice-users-and-assign-them-phone-numbers"></a>Creare utenti e assegnare loro licenze di Business Voice e numeri di telefono
+# <a name="create-and-license-teams-phone-with-calling-plan-users-and-assign-them-phone-numbers"></a>Creare e assegnare licenze Teams Telefono utenti del piano chiamate e assegnare loro numeri di telefono
 
-Per usare :::no-loc text="Microsoft 365 Business Voice":::, è necessario un account :::no-loc text="Microsoft 365"::: che abbia una licenza di :::no-loc text="Microsoft 365 Business Voice":::. Quando si ha un account e una licenza, è possibile assegnarvi un numero di telefono.
+Per usare :::no-loc text="Microsoft 365 Teams Phone with Calling Plan":::, è necessario un account :::no-loc text="Microsoft 365"::: che abbia una licenza di :::no-loc text="Microsoft 365 Teams Phone with Calling Plan":::. Quando si ha un account e una licenza, è possibile assegnarvi un numero di telefono.
 
 ## <a name="create-and-license-users"></a>Creare utenti e assegnare licenze
 
 Seguire i passaggi in [Aggiungere utenti singolarmente o in blocco ](/microsoft-365/admin/add-users/add-users) e [Assegnare licenze agli utenti](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 > [!NOTE]
-> Nel riquadro **Assegna le licenze dei prodotti** selezionare **:::no-loc text="Microsoft 365 Business Voice":::**.
+> Nel riquadro **Assegna le licenze dei prodotti** selezionare **:::no-loc text="Microsoft 365 Teams Phone with Calling Plan":::**.
 
 ## <a name="assign-phone-numbers-to-users"></a>Assegnare numeri di telefono agli utenti
 
-Dopo aver creato gli utenti e aver assegnato loro una licenza di :::no-loc text="Microsoft 365 Business Voice":::, è possibile assegnare loro un numero di telefono. È necessario un numero di telefono non assegnato per ogni utente che deve effettuare o ricevere chiamate da numeri di telefono esterni. Se non si hanno numeri di telefono non assegnati sufficienti, vedere [Ottenere altri numeri di telefono](#get-more-phone-numbers) più avanti in questo articolo.
+Dopo aver creato gli utenti e aver assegnato loro una licenza di :::no-loc text="Microsoft 365 Teams Phone with Calling Plan":::, è possibile assegnare loro un numero di telefono. È necessario un numero di telefono non assegnato per ogni utente che deve effettuare o ricevere chiamate da numeri di telefono esterni. Se non si hanno numeri di telefono non assegnati sufficienti, vedere [Ottenere altri numeri di telefono](#get-more-phone-numbers) più avanti in questo articolo.
 
 1. Passare a https://admin.teams.microsoft.com.
 2. Immettere un nome e una descrizione per la richiesta di un numero di telefono.

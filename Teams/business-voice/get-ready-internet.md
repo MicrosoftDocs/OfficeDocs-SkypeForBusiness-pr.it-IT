@@ -1,5 +1,5 @@
 ---
-title: Controllare la connessione Internet per Business Voice
+title: Controlla la tua connessione Internet per Teams Telefono piano chiamate
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 f1.keywords:
 - NOCSH
-ms.localizationpriority: high
+ms.localizationpriority: medium
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
@@ -17,96 +17,68 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 82e1ba3c58dca1326cb942726efa7d0006aa622f
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
-ms.translationtype: HT
+ms.openlocfilehash: 5f28350c2ae0487ed62d55bbd99d6a731a7bfac0
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58731235"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61766919"
 ---
-# <a name="check-your-internet-connection-for-business-voice"></a>Controllare la connessione Internet per Business Voice
+# <a name="check-your-internet-connection-for-teams-phone"></a>Controllare la connessione Internet per Teams Telefono
 
-VoIP aziendale si trova nel cloud con Microsoft 365. Ogni dispositivo che usa Microsoft Teams e Business Voice richiede una connessione a Internet.
+Teams Telefono è la tecnologia Microsoft per l'abilitazione delle funzionalità telefoniche all'interno Microsoft Teams tramite Microsoft 365 cloud. Ogni dispositivo che usa Microsoft Teams e Teams Telefono richiede una connessione a Internet.
 
-Per un'esperienza ottimale di Business Voice, è necessaria una connessione Internet a banda larga in grado di supportare il numero massimo di chiamate telefoniche che verranno effettuate dall'organizzazione in qualsiasi momento. È anche necessario assicurarsi che i computer della rete possano accedere ai server Microsoft 365.
+Per ottenere la migliore esperienza Teams Telefono, è necessaria una connessione Internet a banda larga in grado di supportare il numero massimo di chiamate telefoniche che l'organizzazione potrebbe effettuare in qualsiasi momento. È anche necessario assicurarsi che i computer della rete possano raggiungere Microsoft 365 servizi.
 
-Per eseguire questa procedura, è necessario avere un tenant con uno degli abbonamenti seguenti:
-
-* Microsoft 365 Business Basic
-* Microsoft 365 Business Standard
-* Office 365 E1
-* Office 365 E3
-* Office 365 F1
-* Microsoft 365 A1
-* Microsoft 365 A3
-* Microsoft 365 E3
-* Microsoft 365 Business
-
-Non è necessaria una licenza VoIP aziendale per eseguire questa procedura.
+Non è necessaria una licenza Teams Telefono per eseguire questa procedura.
 
 ## <a name="check-your-internet-connection-speed"></a>Controllare la velocità della connessione Internet
 
-Questo articolo illustra come determinare se la connessione Internet è abbastanza veloce per il numero di persone che devono effettuare chiamate telefoniche e organizzare videoconferenze. Fornendo alcune informazioni sull'organizzazione è possibile ottenere un report con la quantità di connessione Internet che verrà usata da Teams e da Business Voice.
+Questo articolo consente di determinare se la connessione Internet è abbastanza veloce per il numero di persone che devono effettuare chiamate telefoniche. Si forniranno informazioni sull'organizzazione e si riceverà un report che mostra la quantità di connessione Internet che verrà usata da Teams e Teams Telefono.
 
 ### <a name="gather-information-about-your-internet-connection-and-users"></a>Raccogliere informazioni sulla connessione Internet e sugli utenti
 
 Prima di iniziare, è necessario disporre delle informazioni seguenti:
 
 * La velocità della connessione Internet
-* Quante persone useranno Business Voice principalmente dall'ufficio
-* Quante persone useranno Business Voice principalmente da una posizione remota, come un ufficio a casa
+* Quante persone useranno Teams Telefono principalmente dall'ufficio
+* Quante persone useranno Teams Telefono principalmente da una posizione remota, ad esempio un ufficio di casa
 
 ### <a name="enter-your-information-into-the-network-planner"></a>Immettere le informazioni in Network Planner
 
 Eseguire la procedura seguente:
 
-1. Aprire un browser e passare a https://admin.teams.microsoft.com. Accedere con un account dotato di autorizzazioni di amministratore globale. L'account usato per iscriversi a Microsoft 365 o Office 365 dispone di queste autorizzazioni.
+1. In un browser, accedere a [https://admin.teams.microsoft.com](https://admin.teams.microsoft.com). Accedere con un account dotato di autorizzazioni di amministratore globale. L'account usato per iscriversi a Microsoft 365 o Office 365 dispone di queste autorizzazioni.
 2. Aprire **Pianificazione** e selezionare **Network Planner**.
-3. In **Piani di rete** selezionare **Aggiungi**. Immettere un nome per il piano e quindi selezionare **Applica**. Il piano di rete dovrebbe essere simile a questo:
+3. In **Piani di rete** selezionare **Aggiungi**. Immettere un nome per il piano e quindi selezionare **Applica**.
+4. Selezionare il nome del piano di rete.
+5. Nella pagina successiva selezionare **Aggiungi un sito di rete** nella scheda **Siti di rete**.
+6. Compilare i **campi Nome sito di rete**, Utenti **di** rete e **Capacità collegamento Internet** e quindi selezionare **Salva**. Lasciare vuoti gli altri campi della schermata e non selezionare le opzioni **ExpressRoute** o **Connesso a WAN**.
+7. Nella scheda **Report** selezionare **Avviare un report**.
+8. Immettere un **nome di report** e il numero di utenti di rete (**Office** **e** remoto ), quindi selezionare Genera **report** per creare un report che mostra i requisiti di larghezza di banda per Teams.  Nella sezione successiva verrà spiegato come leggere il report.
 
-    ![Schermata principale di Network Planner.](../media/network-planner-main.png)
-1. Selezionare il nome del piano di rete. Si tratta di **Ufficio principale** nell'immagine precedente.
-2. Nella pagina successiva selezionare **Aggiungi un sito di rete** nella scheda **Siti di rete**.
-3. Compilare solo i campi indicati nella schermata seguente e quindi selezionare **Salva**. Lasciare vuoti gli altri campi della schermata e non selezionare le opzioni **ExpressRoute** o **Connesso a WAN**.
+### <a name="find-your-minimum-internet-connection-speed"></a>Trovare la velocità minima di connessione Internet
 
-    ![Informazioni sul sito di Network Planner.](../media/network-planner-site-info.png)
-1. Nella scheda **Report** selezionare **Avviare un report**.
-1. Immettere le informazioni seguenti e quindi selezionare **Genera rapporto** per creare un report con i requisiti di larghezza di banda per Teams. Mostreremo come leggere il report nella sezione successiva.
+Quando si seleziona **Genera report,** Microsoft 365 o Office 365 crea un report.
 
-    ![Informazioni sul report di Network Planner.](../media/network-planner-report-info.png)
+Nella colonna **Impatto** e nella riga **Office 365,** questo numero mostra la quantità di connessioni Internet Teams e Teams Telefono utilizzeranno. È consigliabile che questo numero non sia superiore al 30% della velocità totale della connessione Internet. Ad esempio, se la connessione Internet è *a 60 Mbps,* Teams e Teams Telefono non devono usare più di *18 Mbps.*
 
-### <a name="find-your-minimum-internet-connection-speed"></a>Trovare la velocità minima della connessione Internet
+Usare questa equazione per determinare la velocità minima della connessione Internet: <*Impact number> / 0,3*.  
 
-Dopo aver selezionato **Genera report**, Microsoft 365 o Office 365 crea un report simile al seguente:
+Supponiamo che il numero impatto sia *4,6875 Mbps.* Il calcolo per trovare la velocità minima di connessione a Internet sarà *di 4,6875 / 0,3 = 15,6*. In questo caso, la velocità della connessione Internet dovrebbe essere di *almeno 15,6 Mbps.*
 
-![Dettagli sul report di Network Planner.](../media/network-planner-report.png)
-
-Il numero evidenziato indica la quantità di connessione Internet che Teams e VoIP aziendale useranno. Si consiglia di non superare il 30% della velocità totale della connessione Internet. Ad esempio, se la connessione Internet è di 60 Mbps, Teams e Business Voice non devono usare più di 18 Mbps.
-
-Usare questa equazione per determinare la velocità della connessione Internet minima: *\<highlighted number> / 0,3*. Con il numero evidenziato nell'immagine precedente, il calcolo è il seguente: *4,6875 / 0,3 = 15,6*. In questo caso, la velocità della connessione Internet deve essere di almeno 15,6 Mbps.
-
-Se Teams e Business Voice usano più del 30% della velocità totale della connessione Internet, il numero evidenziato verrà visualizzato in rosso. In questo caso, potrebbe essere necessario eseguire l'aggiornamento della connessione Internet.
+Se Teams e Teams Telefono utilizzeranno più del 30% della velocità totale  della connessione Internet, il numero Impatto verrà visualizzato in rosso. In questo caso, potrebbe essere necessario aggiornare la connessione Internet.
 
 ![Avviso velocità della connessione.](../media/network-planner-report-speed-warning.png)
 
+>[!NOTE]
+> L'impatto della larghezza di banda fornito da Network Planner è solo una stima. È consigliabile usare [Call Quality Dashboard](../cqd-what-is-call-quality-dashboard.md) per monitorare attivamente l'esperienza utente per le chiamate audio e video Microsoft Teams all'interno dell'organizzazione.
+
 ## <a name="make-sure-the-computers-and-devices-on-your-network-can-reach-microsoft-365"></a>Assicurarsi che i computer e i dispositivi della rete possano raggiungere Microsoft 365
 
-I computer e i dispositivi che usano Business Voice devono essere porte di rete specifiche per comunicare con i server di Microsoft 365. In poche parole, si tratta di porte che consentono ai dispositivi di comunicare tra di loro tramite una rete o Internet. Il firewall deve consentire ai dispositivi della rete di raggiungere Microsoft 365 usando le porte di rete *in uscita* seguenti:
+I computer e i dispositivi che usano Teams Telefono devono usare porte di rete specifiche per comunicare con Microsoft 365 servizi. Queste porte sono essenzialmente porte attraverso cui i dispositivi parlano tra loro tramite una rete o Internet. Il firewall deve consentire ai dispositivi della rete di raggiungere Microsoft 365 usando le porte di rete *in uscita* seguenti:
 
 * **porte TCP** 80 e 443
 * **Porte UDP** 3478, 3479, 3480 e 3481
 
-Il modo più semplice per verificare se il firewall consente la comunicazione tra queste porte di rete è quello di effettuare una chiamata di prova con Teams:
-
-1. Passare a https://aka.ms/getteams in un computer della rete e installare Teams. Assicurarsi che il computer abbia un microfono e degli altoparlanti.
-2. Aprire Teams ed eseguire l'accesso con un account Microsoft 365.
-3. In Teams selezionare l'immagine del profilo, quindi passare a **Impostazioni** > **Dispositivi**.
-4. In **Dispositivi audio**, selezionare **Effettua una chiamata di prova**.
-5. Seguire la procedura visualizzata per inviare un messaggio e riascoltarlo.
-
-   * Se la chiamata si connette e si sente il messaggio, il firewall è configurato correttamente.
-   * Se la chiamata si connette, ma non si sentono le istruzioni o il messaggio, verificare che gli altoparlanti e il microfono siano configurati correttamente e riprovare.
-   * Se la chiamata non si connette o se si connette ma non si sente il messaggio, potrebbe essere necessario aggiornare il firewall per autorizzare le porte di rete richieste. Verificare la documentazione firewall o contattare uno specialista IT per assistenza.
-
- Se si è un professionista IT e si vogliono ottenere altre informazioni su come preparare reti più grandi o complesse per supportare VoIP aziendale, vedere [Valutare l'ambiente](../3-envision-evaluate-my-environment.md). Questo articolo fornisce informazioni sui requisiti di larghezza di banda, proxy e firewall e su come usare lo [Strumento di valutazione della rete](../3-envision-evaluate-my-environment.md#test-the-network) per testare la rete.
-
+Il modo più semplice per verificare se il firewall consente la comunicazione su queste porte di rete è eseguire un test di connettività usando lo strumento di connettività di rete Microsoft 365 dalla posizione [dell'ufficio che](/microsoft-365/enterprise/office-365-network-mac-perf-onboarding-tool) si vuole testare. Dopo aver completato il test, verificare i risultati e i suggerimenti.

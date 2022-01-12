@@ -8,13 +8,13 @@ ms.service: msteams
 audience: admin
 f1.keywords:
 - NOCSH
-ms.localizationpriority: high
+ms.localizationpriority: medium
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 - Teams_Business_Voice
 search.appverid: MET150
-description: Informazioni su come ottenere supporto da un rivenditore o un partner Microsoft per configurare Microsoft 365 Business Voice senza un Piano per chiamate.
+description: Scopri come ottenere supporto da un rivenditore o un partner Microsoft per aiutarti a configurare Microsoft Teams Telefono senza un piano per le chiamate.
 appliesto:
 - Microsoft Teams
 no-loc:
@@ -24,35 +24,32 @@ no-loc:
 - Teams
 - Microsoft Teams
 - Office 365
-ms.openlocfilehash: 830ae9c32ab64d672582cb9620a94b320e15e6b0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
-ms.translationtype: HT
+ms.openlocfilehash: 31424575d50127161a89f629894673d24f77877b
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58618672"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61766989"
 ---
 # <a name="get-help-from-a-microsoft-reseller-or-partner"></a>Ottenere assistenza da parte di un rivenditore o un partner Microsoft
 
-> [!IMPORTANT]
-> Le informazioni contenute in questo articolo sono applicabili solo a Business Voice **senza** Piano di chiamata. Prima di leggere questo articolo, controllare la [disponibilità di Business Voice per paesi e aree geografiche](country-region-availability.md) per verificare se il proprio paese o area geografica supporta Business Voice con Piano di chiamata.
->
-> Se il tenant si trova in un paese o un'area geografica che supporta Business Voice con Piano per chiamate, vedere [Configurare Microsoft 365 Business Voice](set-up-overview.md).
+Per configurare Teams Telefono, è possibile configurarlo manualmente o usare un partner o un rivenditore Microsoft.
 
-Per configurare Business Voice senza Piano di chiamata occorre configurare l'instradamento diretto di Sistema telefonico. La funzionalità di instradamento diretto abilita l'interoperabilità tra l'hardware telefonico locale, Sistema telefonico Microsoft, che è la funzionalità principale di Business Voice, e il provider PSTN (Public Switched Telephone Network) di terze parti. Dal momento che l'instradamento diretto richiede una conoscenza approfondita di Sistema telefonico Microsoft, connettività PSTN, reti e altre competenze tecniche, è consigliabile rivolgersi a un partner o a un rivenditore Microsoft per configurarlo. Inoltre, le licenze di Business Voice senza Piano di chiamata sono disponibili solo presso partner e rivenditori Microsoft.
+È possibile trovare un rivenditore o un partner Microsoft visitando la [Connessione con i](https://appsource.microsoft.com/marketplace/partner-dir) partner.
 
 Un partner o un rivenditore Microsoft può:
 
-- Ottenere le licenze di Business Voice corrette per il tenant e gli utenti di telefonia
-- Offrire informazioni sui requisiti tecnici per la configurazione di Business Voice
-- Coordinarsi con il provider di telefonia per assicurarsi che i numeri di telefono siano configurati correttamente per l'uso con Business Voice
+- Ottenere le licenze di Teams Telefono corrette per il tenant e gli utenti di telefonia
+- Informazioni utili per comprendere i requisiti tecnici per la configurazione Teams Telefono
+- Coordinarsi con il provider di telefonia per assicurarsi che i numeri di telefono siano correttamente impostati per l'uso con Teams Telefono
 - Configurare le comunicazioni tra l'hardware di telefonia locale e Microsoft 365
-- Aiutare a configurare le funzionalità di Business Voice, ad esempio code di chiamate, operatore automatico, segreteria telefonica e altri elementi
+- Informazioni su come configurare Teams Telefono, ad esempio code di chiamata, Operatore automatico, segreteria telefonica e altro ancora
 
-Quando si contatta un partner o un rivenditore Microsoft per la configurazione di Business Voice senza Piano di chiamata, è necessario fornire informazioni come:
+Quando si contatta un partner Microsoft o un rivenditore per la configurazione di un Teams Telefono autonomo (senza piano per le chiamate), è necessario fornire informazioni come:
 
 - Numero di utenti, telefoni e altri dispositivi che dovranno eseguire e ricevere chiamate da e verso numeri di telefono esterni
 - Dettagli sull'attuale sistema telefonico
-- Dettagli sulle connessioni tra il sistema telefonico e il provider PSTN
+- Dettagli sulla connessione tra il Microsoft Teams Telefono e il provider PSTN
 - Connessione Internet
 - Considerazioni sulla progettazione specifiche per l'organizzazione, ad esempio la necessità di supportare call center, menu di chiamata del sistema telefonico (ad esempio, premere 1 per le vendite, premere 2 per il supporto tecnico), sale riunioni, chioschi telefonici e così via.
 - Numero di posizioni supportate dal sistema telefonico esistente e come è configurata la connettività

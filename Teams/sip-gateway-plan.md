@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e59f219d24f6441615d794f23e73274e817f6a3b
-ms.sourcegitcommit: 2aae13454178dc2e2cbc8cca967cd181c5f9d044
+ms.openlocfilehash: 4c5f178c5b8da9bf2ed62b06b9c499d676c076e2
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61314254"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61767719"
 ---
 # <a name="plan-for-sip-gateway"></a>Pianificare il gateway SIP
 
@@ -34,7 +34,7 @@ Gateway SIP consente all'organizzazione di usare qualsiasi dispositivo SIP compa
 
 ## <a name="benefits-of-sip-gateway"></a>Vantaggi del gateway SIP
 
-Gateway SIP connette dispositivi SIP compatibili con Teams per consentire agli utenti di eseguire la migrazione senza problemi alla telefonia Teams telefonia. Usando il gateway SIP, gli utenti possono eseguire tutte le operazioni seguenti:
+Gateway SIP connette i dispositivi SIP compatibili a Teams per consentire agli utenti di eseguire la migrazione senza problemi alla telefonia Teams telefonia. Usando il gateway SIP, gli utenti possono eseguire tutte le operazioni seguenti:
 
 - **Effettuare chiamate:** Gli utenti di dispositivi SIP possono effettuare chiamate alla rete PSTN (Public Switched Telephone Network), ad altri dispositivi SIP e a Teams e Skype for Business utenti. Gli utenti di dispositivi SIP possono chiamare solo gli utenti che hanno numeri di telefono.
 - **Ricevi chiamate:** Gli utenti di dispositivi SIP possono ricevere una chiamata dalla rete PSTN, da utenti Teams o Skype for Business che dispongono di dispositivi SIP e da Teams e Skype for Business client. Il dispositivo SIP funge da endpoint Teams dispositivo. Le chiamate in ingresso verranno inoltre forkate sul dispositivo SIP dell'utente.
@@ -43,23 +43,23 @@ Gateway SIP connette dispositivi SIP compatibili con Teams per consentire agli u
 - **Tieni premuto/riprendi e disattiva/riattiva audio:** Un utente di un dispositivo SIP può tenere premuto e riprendere o disattivare l'audio e riattivare l'audio di una chiamata usando le funzionalità per queste azioni nel dispositivo.
 - **Segreteria telefonica:** Gli utenti di dispositivi SIP possono ascoltare i messaggi vocali archiviati elettronicamente che i chiamanti lasciano per loro.
 - **Indicatore di messaggio in attesa:** Gli utenti di dispositivi SIP possono ricevere notifiche che avvisano gli utenti quando hanno nuovi messaggi della segreteria telefonica.
-- **Accesso e disconnessione:** I dispositivi SIP gli utenti possono accedere e disconnettersi da Teams sul dispositivo.
+- **Accesso e disconnessione:** I dispositivi SIP gli utenti possono accedere e disconnettersi Teams dal dispositivo.
 - **Multifrequenza a due toni:** Gli utenti di dispositivi SIP possono premere i tasti numerici per fornire l'input durante le chiamate di risposta vocale interattive.
-- **Teams riunioni: un** utente di un dispositivo SIP può partecipare a Teams riunione componendo il numero di accesso alla riunione. La chiamata in uscita al numero di telefono di uno stesso utente dell'organizzazione non è attualmente supportata. Tuttavia, gli utenti guest di un'altra organizzazione possono essere aggiunti a una riunione Teams da un partecipante che compone il numero di un utente guest per includere tale guest. **NOTA:** L'aggiunta Teams partecipante alla riunione tramite "richiesta di partecipazione" al momento non avvisa un dispositivo SIP.
+- **Teams riunioni: un** utente di un dispositivo SIP può partecipare a Teams riunione componendo il numero di accesso alla riunione. La chiamata in uscita al numero di telefono di uno stesso utente dell'organizzazione non è attualmente supportata. Tuttavia, gli utenti guest di un'altra organizzazione possono essere aggiunti a una riunione Teams da un partecipante che chiama il numero di un utente guest per includere tale guest. **NOTA:** L'aggiunta Teams partecipante alla riunione tramite "richiesta di partecipazione" attualmente non avvisa un dispositivo SIP.
 - **Trasferimenti di chiamata:** Gli utenti di dispositivi SIP possono trasferire le chiamate. Il gateway SIP supporta sia i trasferimenti non vedenti che consultitivi.
 - **Inoltro di chiamata locale:** Un utente del dispositivo SIP può impostare regole di inoltro (sempre, in timeout e occupato) per il dispositivo. Se il dispositivo è connesso al gateway SIP, la chiamata verrà reindirizzata all'indirizzo di destinazione in base alla regola impostata dall'utente del dispositivo. Per far funzionare l'inoltro di chiamata locale, l'amministratore deve impostare `AllowCallRedirect` l'attributo in `Set-CsTeamsCallingPolicy` su `Enabled` . 
 
 
 ## <a name="requirements-to-use-sip-gateway"></a>Requisiti per l'uso del gateway SIP
 
-Teams gli utenti devono avere un numero di telefono con le chiamate PTSN abilitate per l'uso del gateway SIP.
+Teams gli utenti devono avere un numero di telefono con le chiamate PSTN abilitate per l'uso del gateway SIP.
 
 ### <a name="hardware-software-and-licenses"></a>Hardware, software e licenze
 
 Se si dispone di un dispositivo 3PIP o SIP, è necessario disporre di: 
 - Una licenza per Sistema telefonico (tramite E5 o una licenza autonoma)
-- Abilitazione PTSN (ad esempio un numero di telefono) tramite un piano per chiamate Microsoft Teams, instradamento diretto o Connessione con operatore
-- Una licenza di Telefono area comune per qualsiasi dispositivo area comune
+- Abilitazione PSTN (ad esempio un numero di telefono) tramite un piano per chiamate Microsoft Teams, instradamento diretto o Connessione con operatore
+- Una licenza di area Telefono per tutti i dispositivi dell'area comune
 
 ## <a name="compatible-devices"></a>Dispositivi compatibili
 

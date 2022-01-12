@@ -20,16 +20,16 @@ f1.keywords:
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8ffa30efd7f122b6d95c4545dd2d2517f3669472
-ms.sourcegitcommit: 73d12d90fc20e3d943301f57ee434379d0b0e91b
+ms.openlocfilehash: 0ff320688d7afc583e1e806803349fb3d07ceb0c
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "61576166"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61767209"
 ---
 # <a name="authentication-best-practices-for-teams-android-devices"></a>Procedure consigliate per l'autenticazione Teams dispositivi Android
 
-Questo articolo fornisce indicazioni generali e procedure consigliate per la distribuzione di criteri di autenticazione per Teams telefoni e dispositivi di chiamata.
+Questo articolo fornisce indicazioni generali e procedure consigliate per la distribuzione dei criteri di autenticazione per Teams telefoni e dispositivi di chiamata.
 
 >[!NOTE]
 >L'accesso condizionale richiede Azure Active Directory (Azure AD) Premium abbonamento.
@@ -40,7 +40,7 @@ Questo articolo fornisce indicazioni generali e procedure consigliate per la dis
 
 ## <a name="personal-and-shared-devices"></a>Dispositivi personali e condivisi
 
-I Teams condivisi, ad esempio i dispositivi delle sale riunioni o i telefoni dell'area comune, non possono usare gli stessi requisiti per la registrazione e la conformità che in genere vengono applicati ai dispositivi personali. L'applicazione dei requisiti di autenticazione dei dispositivi personali ai dispositivi condivisi causerà i problemi di accesso seguenti:
+I Teams condivisi, come i dispositivi delle sale riunioni o i telefoni dell'area comune, non possono usare gli stessi requisiti per la registrazione e la conformità che in genere vengono applicati ai dispositivi personali. L'applicazione dei requisiti di autenticazione dei dispositivi personali ai dispositivi condivisi causerà i problemi di accesso seguenti:
 
 1.  **I dispositivi vengono disconnessi a causa dei criteri per le password**
 
@@ -52,7 +52,7 @@ I dispositivi condivisi non sono conformi ai criteri Azure AD di accesso condizi
 
 Ad esempio, se è necessaria l'autenticazione a più fattori per l'accesso Teams, è necessario l'intervento dell'utente per completare l'autenticazione. I dispositivi condivisi non supportano l'autenticazione a più fattori. Allo stesso modo, se l'account è configurato per eseguire di nuovo l'autenticazione ogni X giorni, un dispositivo condiviso non può risolvere il problema senza l'intervento dell'utente.
 
-## <a name="best-practices-for-teams-shared-device-deployments"></a>Procedure consigliate per Teams di dispositivi condivisi
+## <a name="best-practices-for-teams-shared-device-deployments"></a>Procedure consigliate per le Teams di dispositivi condivisi
 
 Microsoft consiglia le impostazioni seguenti quando si distribuiscono Teams dispositivi nell'organizzazione.
 
@@ -62,13 +62,13 @@ Teams dispositivi condivisi devono usare un [account Exchange risorsa.](/exchang
 
 Per evitare interruzioni causate da criteri di scadenza delle password, impostare i criteri di scadenza delle password per i dispositivi condivisi in modo che non scadano mai.
 
-A partire da dispositivi Teams CY21 [Update #1](https://support.microsoft.com/office/what-s-new-in-microsoft-teams-devices-eabf4d81-acdd-4b23-afa1-9ee47bb7c5e2#ID0EBD=Desk_phones) (Teams versione 1449/1.0.94.2021022403 per telefoni Teams) e [CY2021 Aggiornamento #2](https://support.microsoft.com/office/what-s-new-in-microsoft-teams-devices-eabf4d81-acdd-4b23-afa1-9ee47bb7c5e2#ID0EBD=Teams_Rooms_on_Android) (Teams versione 1449/1.0.96.2021051904 per Microsoft Teams Rooms in Android), gli amministratori del tenant possono accedere ai dispositivi Teams in remoto. Non condividere le password con i tecnici per configurare i dispositivi. Un amministratore può usare l'accesso remoto per emettere codici di verifica e quindi accedere a questi dispositivi dall'Teams di amministrazione.
+A partire da Teams dispositivi CY21 [Update #1](https://support.microsoft.com/office/what-s-new-in-microsoft-teams-devices-eabf4d81-acdd-4b23-afa1-9ee47bb7c5e2#ID0EBD=Desk_phones) (Teams versione 1449/1.0.94.2021022403 per telefoni Teams) e [CY2021 Aggiornamento #2](https://support.microsoft.com/office/what-s-new-in-microsoft-teams-devices-eabf4d81-acdd-4b23-afa1-9ee47bb7c5e2#ID0EBD=Teams_Rooms_on_Android) (Teams versione 1449/1.0.96.2021051904 per Microsoft Teams Rooms in Android), gli amministratori del tenant possono accedere ai dispositivi Teams in remoto. Non condividere le password con i tecnici per configurare i dispositivi. Gli amministratori possono usare l'accesso remoto per emettere codici di verifica e quindi accedere a questi dispositivi dall'Teams di amministrazione.
 
 Per altre informazioni, vedere [Provisioning remoto e accesso per Teams dispositivi Android.](/MicrosoftTeams/devices/remote-provision-remote-login) 
 
 ### <a name="conditional-access-policies"></a>**Criteri di accesso condizionale**
 
-Azure AD accesso condizionale imposta requisiti aggiuntivi che i dispositivi devono soddisfare per poter accedere. Per Teams dispositivi, vedere le indicazioni seguenti per determinare se sono stati creati i criteri appropriati. Per una panoramica dell'accesso condizionale, vedere [Che cos'è l'accesso condizionale.](/azure/active-directory/conditional-access/overview)
+Azure AD l'accesso condizionale imposta requisiti aggiuntivi che i dispositivi devono soddisfare per poter accedere. Per Teams, vedere le indicazioni seguenti per determinare se sono stati creati i criteri appropriati. Per una panoramica dell'accesso condizionale, vedere [Che cos'è l'accesso condizionale.](/azure/active-directory/conditional-access/overview)
 
 ### <a name="multi-factor-authentication"></a>Autenticazione a più fattori
 

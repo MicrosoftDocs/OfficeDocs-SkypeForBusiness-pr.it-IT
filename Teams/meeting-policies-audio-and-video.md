@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.audioandvideo
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per audio e video.
-ms.openlocfilehash: 9cd2a82c87106e8060d168766915e4249b9193a5
-ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
+ms.openlocfilehash: 9513650bf9c177154b45d7bd5dcda85354cf390b
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61177997"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61766949"
 ---
 # <a name="meeting-policy-settings-for-audio--video"></a>Impostazioni dei criteri per le riunioni per & video
 
@@ -165,7 +165,7 @@ Per specificare se gli utenti possono personalizzare lo sfondo del video in una 
 
 ### <a name="allow-custom-background-settings"></a>Consenti impostazioni di sfondo personalizzate
 
-È possibile aggiungere immagini di sfondo personalizzate da usare per ogni tenant. Questa funzionalità consente alle aziende di applicare il marchio aziendale Teams riunioni.
+È possibile aggiungere immagini di sfondo personalizzate da usare per ogni tenant. Questa caratteristica consente alle aziende di applicare il marchio aziendale Teams riunioni.
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
@@ -196,6 +196,9 @@ I partecipanti alla riunione visualizzano una selezione di immagini di sfondo ch
 
 > [!NOTE]
 > L'applicazione delle modifiche potrebbe richiedere fino a 24 ore.
+
+> [!NOTE]
+> Questa caratteristica è temporaneamente disponibile in anteprima pubblica per tutti Microsoft Teams clienti. Per ottenere questa funzionalità dopo l'anteprima, ogni utente avrà bisogno della licenza del componente aggiuntivo Advanced Communications. Per ulteriori informazioni, vedere [Componente aggiuntivo per comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

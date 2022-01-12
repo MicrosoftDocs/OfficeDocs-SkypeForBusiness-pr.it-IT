@@ -1,9 +1,9 @@
 ### YamlMime:Hub
-title: Microsoft 365 Business Voice documentazione
-summary: 'Informazioni su come pianificare, configurare e usare Microsoft 365 Business Voice all’interno dell’organizzazione. Business Voice consente alle organizzazioni di piccole e medie dimensioni di impostare un sistema telefonico potente e flessibile senza i costi e le complessità delle soluzioni interne.'
+title: Microsoft 365 Teams Telefono con la documentazione del pacchetto Piano per chiamate
+summary: 'Informazioni su come pianificare, configurare e usare il pacchetto Microsoft 365 Teams Telefono piano per chiamate nell''organizzazione. Il Teams Telefono con il pacchetto Piano per le chiamate consente alle organizzazioni di piccole e medie dimensioni di configurare facilmente un sistema telefonico potente e flessibile senza le spese e la complessità delle soluzioni in-house.'
 metadata:
-  title: Microsoft 365 Business Voice documentazione
-  description: 'Informazioni su come pianificare, distribuire e usare Microsoft 365 Business Voice.'
+  title: Microsoft 365 Teams Telefono con la documentazione del pacchetto Piano per chiamate
+  description: 'Scopri come pianificare, distribuire e usare il pacchetto Microsoft 365 Teams Telefono piano per chiamate.'
   ms.topic: hub-page
   author: dstrome
   ms.author: dstrome
@@ -14,22 +14,22 @@ productDirectory:
       imageSrc: 'https://docs.microsoft.com/office/media/icons/blocks-blue.svg'
       links:
         - url: whats-business-voice.md
-          text: Che cos’è Business Voice
+          text: Teams Telefono indicazioni sul piano per chiamate per le piccole e medie imprese
         - url: 'https://www.microsoft.com/microsoft-365/business-voice'
-          text: Microsoft 365 Business Voice
-        - url: /office365/servicedescriptions/microsoft-365-business-voice-service-description
-          text: Descrizione del servizio
+          text: Microsoft 365 Teams Telefono con il pacchetto Piano per chiamate
+        - url: /office365/servicedescriptions/teams-service-description
+          text: Teams servizio
     - title: Configurazione
       imageSrc: 'https://docs.microsoft.com/office/media/icons/deploy-blue.svg'
       links:
-        - url: ./what-to-buy.md
-          text: Come ottenere Business Voice
+        - url: ./whats-business-voice.md#what-do-i-need-to-buy-to-get-voice-capabilities-for-my-small-or-medium-business
+          text: Come ottenere il pacchetto Teams Telefono piano per chiamate
         - url: get-ready-internet.md
           text: Controllare la connessione Internet
         - url: prepare-users.md
           text: Preparare gli utenti
         - url: set-up-overview.md
-          text: Configurare La voce aziendale
+          text: Configurare le Teams Telefono con piano chiamate
     - title: Personalizzare la configurazione
       imageSrc: 'https://docs.microsoft.com/office/media/icons/migration-blue.svg'
       links:
@@ -57,10 +57,8 @@ productDirectory:
       links:
         - url: /partner-center/
           text: Ottenere Microsoft 365 Business presso il Centro per i partner
-        - url: 'https://www.microsoft.com/microsoft-365/partners/businessvoice'
-          text: Microsoft 365 Business Voice per i partner
-        - url: partner-resources.md
-          text: Risorse di supporto di Microsoft 365 Business Voice per i partner
+        - url: 'https://cloudpartners.transform.microsoft.com/products/m365-business-voice-partner-playbook'
+          text: Microsoft 365 Teams Telefono con Playbook partner del pacchetto Piano per chiamate
     - title: Hai bisogno di assistenza?
       imageSrc: 'https://docs.microsoft.com/office/media/icons/users-people.svg'
       links:

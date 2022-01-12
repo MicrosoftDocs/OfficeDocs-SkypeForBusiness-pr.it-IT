@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come assegnare, modificare o rimuovere un numero di telefono dell'ufficio per gli utenti Teams in modo che le aziende e i clienti esterni possano chiamare.
-ms.openlocfilehash: 5e8041ce0a8cc95549a9dc75c0c8d74cd2438e1c
-ms.sourcegitcommit: b57e19e20900ff02f3196c811bf1dd1acd149c79
+ms.openlocfilehash: 40d8f2d12cb824b57b2c01da4880cc35afb0a663
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60579516"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61766569"
 ---
 # <a name="assign-change-or-remove-a-phone-number-for-a-user"></a>Assegnare, modificare o rimuovere il numero di telefono di un utente
 
@@ -33,14 +33,14 @@ Quando si configuraNo piani per chiamate o Connessione con operatore, si assegna
 
 Questo articolo si applica a Piani per chiamate e Connessione con operatore. Per informazioni sull'assegnazione, la modifica o la rimozione di un numero di telefono da un utente in uno scenario di routing diretto, vedere Abilitare gli utenti per il routing diretto, la voce e la [segreteria telefonica.](./direct-routing-enable-users.md)
 
-Prima di assegnare un numero per un piano per chiamate o un Connessione con operatore utente, è necessario ottenere i numeri per gli utenti. Per altre informazioni, vedere [Ottenere numeri per gli utenti del](getting-phone-numbers-for-your-users.md) piano chiamate o Configurare i numeri per Connessione con operatore [utenti](operator-connect-configure.md#set-up-phone-numbers).
+Prima di assegnare un numero per un piano per chiamate o un Connessione con operatore utente, è necessario ottenere i numeri per gli utenti. Per altre informazioni, vedere [Ottenere numeri per gli utenti del](getting-phone-numbers-for-your-users.md) piano per chiamate o Configurare i numeri per Connessione con operatore [utenti](operator-connect-configure.md#set-up-phone-numbers).
 
   
 > [!NOTE]
-> Un modo per vedere se a un utente è assegnata una licenza è accedere all'Microsoft Teams di amministrazione > **utenti**. Se viene assegnata una licenza, verrà indicata nella pagina.  È anche possibile usare il interfaccia di amministrazione di Microsoft 365.
+> Un modo per verificare se a un utente è assegnata una licenza è accedere all'interfaccia Microsoft Teams di amministrazione > **utenti**. Se viene assegnata una licenza, verrà indicata nella pagina.  È anche possibile usare il interfaccia di amministrazione di Microsoft 365.
 
 > [!NOTE]
-> Questa nota si applica ai clienti che hanno una distribuzione ibrida con active directory locale. Se si vuole assegnare un piano per chiamate o un numero di telefono Connessione con operatore a un account utente o risorsa, è necessario assicurarsi che il numero di telefono in Active Directory locale sia stato rimosso e che la modifica sia stata sincronizzata con Microsoft 365.
+> Questa nota si applica ai clienti che hanno una distribuzione ibrida con Active Directory locale. Se si vuole assegnare un piano per chiamate o un numero di telefono Connessione con operatore a un account utente o risorsa, è necessario assicurarsi che il numero di telefono in Active Directory locale sia stato rimosso e che la modifica sia stata sincronizzata con Microsoft 365.
   
 ## <a name="assign-a-phone-number-to-a-user"></a>Assegnare un numero di telefono a un utente
 
@@ -48,9 +48,9 @@ Quando si assegna un numero di telefono a un utente, verificare che il numero di
 
 Per assegnare un numero usando l'interfaccia Teams di amministrazione:
     
-1. Nel riquadro di spostamento sinistro fare clic su  >  **Numeri Telefono vocali**.
+1. Nel riquadro di spostamento sinistro fare clic su  >  **Numeri Telefono vocali.**
 
-2. Nella pagina **Telefono numeri** selezionare un numero non assegnato nell'elenco e quindi fare clic su **Modifica.**  
+2. Nella pagina **Telefono numeri** selezionare un numero non assegnato nell'elenco e quindi fare clic su **Modifica**.  
 
 3. Nel riquadro **Modifica,** in **Assegnato a,** cercare l'utente in base al nome visualizzato o al nome utente e quindi fare clic su **Assegna.**
 
@@ -66,10 +66,11 @@ Per assegnare un numero usando l'interfaccia Teams di amministrazione:
 Per assegnare numeri tramite PowerShell, usare il cmdlet [Set-CsOnlineVoiceUser](/powershell/module/skype/set-csonlinevoiceuser) nel modo seguente:
 
 
-''PowerShell Set-CsOnlineVoiceUser -Identity <user>   -TelephoneNumber <phone number> 
+```PowerShell
+Set-CsOnlineVoiceUser -Identity <user>  -TelephoneNumber <phone number> 
 ```
 
-For example:
+Ad esempio:
 
 ```PowerShell
 Set-CsOnlineVoiceUser -Identity john@contoso.com -TelephoneNumber +14255550101
@@ -81,11 +82,11 @@ Set-CsOnlineVoiceUser -Identity john@contoso.com -TelephoneNumber +14255550101
   
 ## <a name="change-a-phone-number-for-a-user"></a>Modificare un numero di telefono per un utente
 
-Per modificare un numero di telefono per un utente usando l'interfaccia Teams di amministrazione:
+Per modificare un numero di telefono per un utente usando l'Teams di amministrazione:
     
 1. Nel riquadro di spostamento sinistro fare clic su Utenti **,** individuare e fare doppio clic sull'utente desiderato, fare clic su **Account** e quindi in Informazioni generali prendere nota del numero di telefono assegnato all'utente.
 
-2. Nel riquadro di spostamento sinistro fare clic su  >  **Numeri Telefono vocali**.
+2. Nel riquadro di spostamento sinistro fare clic su  >  **Numeri Telefono vocali.**
 
 3. Nella pagina **Telefono numeri** selezionare il numero identificato nel passaggio 1 e quindi fare clic su **Modifica**.  
 
@@ -93,14 +94,14 @@ Per modificare un numero di telefono per un utente usando l'interfaccia Teams di
 
 5. Fare clic su **Salva**.
 
-6. Nella pagina **Telefono numeri** selezionare un numero non assegnato nell'elenco e quindi fare clic su **Modifica.**  
+6. Nella pagina **Telefono numeri** selezionare un numero non assegnato nell'elenco e quindi fare clic su **Modifica**.  
 
 7. Nel riquadro **Modifica,** in **Assegnato a,** cercare l'utente in base al nome visualizzato o al nome utente e quindi fare clic su **Assegna.**
 
 8. Per assegnare o modificare la posizione di emergenza associata, in **Posizione di** emergenza cercare e selezionare la posizione.
 
       > [!NOTE]
-      > Se si modificano i numeri Connessione con operatore utenti, potrebbe essere possibile assegnare o modificare la posizione di emergenza associata. Questa funzionalità dipende dall'operatore. Per altre informazioni, contattare l'operatore.
+      > Se si modificano i numeri per Connessione con operatore utenti, potrebbe essere possibile assegnare o modificare la posizione di emergenza associata. Questa funzionalità dipende dall'operatore. Per altre informazioni, contattare l'operatore.
 
 9. Fare clic su **Salva**.
 
@@ -108,11 +109,11 @@ Per un esempio di PowerShell, [vedere Set-CsOnlineVoiceUser](/powershell/module/
 
 ## <a name="remove-a-phone-number-from-a-user"></a>Rimozione di un numero di telefono da un utente
 
-Per rimuovere un numero di telefono usando l'Teams di amministrazione:
+Per rimuovere un numero di telefono usando l'interfaccia Teams di amministrazione:
 
 1. Nel riquadro di spostamento sinistro fare clic su Utenti **,** individuare e fare doppio clic sull'utente desiderato, fare clic su **Account** e quindi in Informazioni generali prendere nota del numero di telefono assegnato all'utente.
 
-2. Nel riquadro di spostamento sinistro fare clic su  >  **Numeri Telefono vocali**.
+2. Nel riquadro di spostamento sinistro fare clic su  >  **Numeri Telefono vocali.**
 
 3. Nella pagina **Telefono numeri** selezionare il numero identificato nel passaggio 2 e quindi fare clic su **Modifica**.  
 

@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare Telefono Microsoft routing diretto di sistema.
-ms.openlocfilehash: d6b767ace4f00e581e99ec73585b0b596029b17e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2e94da39c23c10a912f4b3f0433467439b5ecf77
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58619462"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61766369"
 ---
 # <a name="translate-phone-numbers-to-an-alternate-format"></a>Tradurre i numeri di telefono in un formato alternativo
 
@@ -34,7 +34,7 @@ Questo articolo descrive come tradurre i numeri per le chiamate in uscita e in i
 
 Per informazioni su tutti i passaggi necessari per configurare il routing diretto, vedere [Configurare il routing diretto.](direct-routing-configure.md)
 
-A volte gli amministratori del tenant possono voler modificare il numero delle chiamate in uscita e/o in ingresso in base ai modelli creati per garantire l'interoperabilità con i session border controller (SBC). Questo articolo descrive come specificare un criterio Regole di conversione numeri per tradurre i numeri in un formato alternativo. 
+A volte gli amministratori del tenant possono voler cambiare il numero per le chiamate in uscita e/o in ingresso in base ai modelli creati per garantire l'interoperabilità con i session border controller (SBC). Questo articolo descrive come specificare un criterio Regole di conversione numeri per tradurre i numeri in un formato alternativo. 
 
 È possibile usare il criterio Regole di conversione numeri per tradurre i numeri per gli elementi seguenti:
 
@@ -56,7 +56,7 @@ Per assegnare, configurare ed elencare le regole di modifica dei numeri negli SB
 Per questo scenario, il ```New-CsOnlinePSTNGateway``` cmdlet viene eseguito per creare la configurazione SBC seguente:
 
 ```PowerShell
-New-CSOnlinePSTNGateway -Identity sbc1.contoso.com -SipSignalingPort 5061 –InboundTeamsNumberTranslationRules ‘AddPlus1’, ‘AddE164SeattleAreaCode’ -InboundPSTNNumberTranslationRules ‘AddPlus1’ -OutboundPSTNNumberTranslationRules ‘AddSeattleAreaCode’,  -OutboundTeamsNumberTranslationRules ‘StripPlus1’
+New-CSOnlinePSTNGateway -Identity sbc1.contoso.com -SipSignalingPort 5061 –InboundTeamsNumberTranslationRules ‘AddPlus1’, ‘AddE164SeattleAreaCode’ -InboundPSTNNumberTranslationRules ‘AddPlus1’ -OutboundPSTNNumberTranslationRules ‘AddSeattleAreaCode’,‘StripPlus1’  -OutboundTeamsNumberTranslationRules ‘StripPlus1’
 ```
 
 Le regole di traduzione assegnate a SBC sono riepilogate nella tabella seguente:
@@ -85,7 +85,7 @@ SBC usa 2065550100 nelle intestazioni RequestURI e To e 4255550100 nell'intestaz
 ## <a name="example-2-inbound-call-to-a-four-digit-number"></a>Esempio 2: Chiamata in ingresso a un numero a quattro cifre
 
 Luca chiama Alice usando un numero a quattro cifre. Luca chiama 0100 per raggiungere Alice.
-SBC usa 0100 nelle intestazioni RequestURI e To 4255550100 nell'intestazione From.
+SBC usa 0100 nelle intestazioni RequestURI e To e 4255550100 nell'intestazione From.
 
 
 |Intestazione  |Originale |Intestazione tradotta |Parametro e regola applicati  |

@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f5743dda03b7495bc8f7c275fb955f83d7db6be2
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: c310794d439af79e53618d9b6e93e567c652cf47
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58727205"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61766639"
 ---
 # <a name="archive-or-delete-a-team-in-microsoft-teams"></a>Archiviare o eliminare un team in Microsoft Teams
 
@@ -32,7 +32,7 @@ Nel corso del tempo, un team creato in Microsoft Teams potrebbe non essere più 
 
 Quando avviene l'archiviazione di un team, cessano tutte le attività relative a quel team. L'archiviazione di un team comprende anche i canali privati nel team e le raccolte siti associate.  Tuttavia, è comunque possibile aggiungere o rimuovere membri e aggiornare i ruoli, nonché visualizzare tutte le attività del team in canali, chat e file standard e privati.
 
-Con l'eliminazione di un team, vengono eliminate anche le attività del team in canali, chat e file standard e privati (e nelle raccolte siti associate).
+Quando si elimina un team, vengono eliminate anche le attività del team nei canali standard e privati (e nelle raccolte siti associate), i file e le chat.
 
 > [!IMPORTANT]
 > I team archiviati possono essere riattivati, ma non è possibile ripristinare direttamente un team eliminato. Considerare la possibilità di archiviare prima il team e di posticipare l'eliminazione finché non si è certi di non aver più bisogno del team.
@@ -48,7 +48,7 @@ Seguire questi passaggi per archiviare un team. Per apportare queste modifiche, 
     ![Screenshot del messaggio Teams di archiviazione.](media/teams-archive-message.png)
 
 4. Per evitare che gli utenti modifichino i contenuti nel sito di SharePoint e nella scheda Wiki associati al team, selezionare **Rendere il sito di SharePoint di sola lettura per i membri del team**. (I proprietari di Teams potranno ancora modificare questi contenuti.)
-5. Selezionare **Archivia** per archiviare il team. Lo stato del team diventerà **Archiviato**.
+5. Selezionare **Archivia** per archiviare il team. Lo stato del team cambierà in **Archiviato,**  verrà spostato all'interno dei team nascosti nella parte inferiore dell'elenco dei team e accanto verrà aggiunta una piccola icona che rappresenta lo stato archiviato.
 
 ## <a name="make-an-archived-team-active"></a>Attivare un team archiviato
 
@@ -56,7 +56,7 @@ Seguire questi passaggi per attivare nuovamente un team archiviato.
 
 1. Nell'interfaccia di amministrazione, selezionare **Teams**.
 2. Selezionare un team facendo clic sul nome del team.
-3. Selezionare **Annulla archiviazione**. Lo stato del team diventerà **Attivo**.
+3. Selezionare **Ripristina**. Lo stato del team diventerà **Attivo**. Tieni presente che non verrà spostato automaticamente all'interno **dei tuoi** team.
 
 ## <a name="delete-a-team"></a>Eliminare un team
 
@@ -98,16 +98,16 @@ Per impostazione predefinita, un gruppo di Microsoft 365 viene mantenuto per 30 
     Connect-AzureAD
     ```
     Quando viene richiesto, accedere con l'account e la password di amministratore.  
-2. Eseguire questo comando per visualizzare un elenco dei gruppi di Microsoft 365 eliminati temporaneamente che sono ancora compresi nel periodo di conservazione di 30 giorni. Utilizzare il parametro **-All $True** se sono presenti molti gruppi.
+2. Eseguire questo comando per visualizzare un elenco dei gruppi di Microsoft 365 eliminati temporaneamente che sono ancora compresi nel periodo di conservazione di 30 giorni. Usare il **parametro -All $True** se sono disponibili molti gruppi.
     ```PowerShell
     Get-AzureADMSDeletedGroup
     ```
-3. Individuare il gruppo che si vuole ripristinare e quindi prendere nota dell'ID.
-4. Eseguire le operazioni seguenti, in cui [Id] è l'ID del gruppo, per ripristinare il gruppo.
+3. Trovare il gruppo da ripristinare e prendere nota del `Id` file .
+4. Eseguire le operazioni seguenti per ripristinare il gruppo, dove `[Id]` è l'ID del gruppo.
     ```PowerShell
     Restore-AzureADMSDeletedDirectoryObject -Id [Id]
     ```
-5.  Eseguire le operazioni seguenti, in cui [Id] è l'ID del gruppo, per verificare che il gruppo sia stato ripristinato correttamente.
+5.  Eseguire le operazioni seguenti per verificare che il gruppo sia stato ripristinato correttamente, dove `[Id]` è l'ID del gruppo.
     ```PowerShell
     Get-AzureADGroup -ObjectId [Id]
     ```
