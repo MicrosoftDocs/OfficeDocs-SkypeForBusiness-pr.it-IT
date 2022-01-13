@@ -1,7 +1,7 @@
 ---
 title: Ottenere i client per Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+author: dstrome
+ms.author: dstrome
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -12,30 +12,26 @@ ms.collection:
 ms.reviewer: harij, rafarhi
 ms.localizationpriority: high
 search.appverid: MET150
-description: Informazioni su come usare i vari client disponibili per Microsoft Teams, che includono client Web, desktop (per Windows e Mac) e per dispositivi mobili (Android e iOS).
+description: Informazioni su come installare i vari client disponibili per Microsoft Teams su PC, Mac e dispositivi mobili.
 f1.keywords:
 - CSH
-ms.custom:
-- NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c47285a8a759ccdade5fc6e95b90d75ede77bfc3
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 31bafc1c112d8b50990cc6e92c863c7e242aa5fb
+ms.sourcegitcommit: efea3b3b9dceb1a1d82eb7a09a5104dcd6df8abf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60014690"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61993010"
 ---
 # <a name="get-clients-for-microsoft-teams"></a>Ottenere i client per Microsoft Teams
 
-Microsoft Teams dispone di client per PC (Windows, Mac e Linux), Web e dispositivi mobili (Android e iOS). Per questi client è necessaria una connessione Internet attiva e la modalità offline non è supportata.
+> [!TIP]
+> **Installare Teams nel PC, nel Mac o nel dispositivo mobile?** Vedere [Installare il client di Teams](https://www.microsoft.com/microsoft-teams/download-app).
 
-> [!NOTE]
-> Per informazioni dettagliate sulle funzionalità di ogni client su piattaforme diverse, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
->
-> Dal 29 novembre 2018 non è più possibile usare l'app Microsoft Teams per Windows 10 S (anteprima) disponibile in Microsoft Store. In alternativa, sui dispositivi che eseguono la modalità S di Windows 10 si può scaricare e installare il client desktop di Teams. Per scaricare il client desktop, passare alla pagina [https://teams.microsoft.com/downloads](https://go.microsoft.com/fwlink/p/?linkid=855754). Le build MSI del client desktop di Teams non sono ancora disponibili per i dispositivi che eseguono Windows 10 in modalità S.
->
-> Per altre informazioni, vedere [Ti presentiamo Windows 10 in modalità S](https://www.microsoft.com/windows/s-mode).
+Questo articolo fornisce informazioni su come installare Microsoft Teams sui dispositivi aziendali.
+
+Per informazioni dettagliate sulle funzionalità di ogni client su piattaforme diverse, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
 ## <a name="desktop-client"></a>Client desktop
 

@@ -3,6 +3,71 @@
 
 
 
+## <a name="week-of-january-03-2022"></a>Settimana del 3 gennaio 2022
+
+
+| Pubblicato il |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 1/4/2022 | [Trasferire numeri di telefono in Business Voice](/MicrosoftTeams/business-voice/port-phone-numbers) | modificato |
+| 1/4/2022 | [Requisiti per Microsoft Teams Rooms](/MicrosoftTeams/rooms/requirements) | modificato |
+| 1/4/2022 | [Routing delle chiamate a numeri non assegnati](/MicrosoftTeams/routing-calls-to-unassigned-numbers) | modificato |
+| 1/4/2022 | [Pianificare Instradamento diretto](/MicrosoftTeams/direct-routing-plan) | modificato |
+| 1/4/2022 | [Gestire l'accesso esterno (federazione)](/MicrosoftTeams/manage-external-access) | modificato |
+| 1/4/2022 | [Distribuire Microsoft Teams Rooms con Exchange locale (ibrida)](/MicrosoftTeams/rooms/with-exchange-on-premises) | modificato |
+| 1/4/2022 | [Registrazione delle riunioni di Teams nel cloud](/MicrosoftTeams/cloud-recording) | modificato |
+| 1/4/2022 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |
+| 1/4/2022 | [Gestire i criteri delle riunioni per audio e video](/MicrosoftTeams/meeting-policies-audio-and-video) | modificato |
+| 1/4/2022 | [Guida introduttiva: riunioni, webinar ed eventi live](/MicrosoftTeams/quick-start-meetings-live-events) | modificato |
+| 1/4/2022 | [Componente aggiuntivo Advanced Communications per Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/advanced-communications) | modificato |
+| 1/5/2022 | [Microsoft Teams licenze per i componenti aggiuntivi](/MicrosoftTeams/teams-add-on-licensing/microsoft-teams-add-on-licensing) | modificato |
+| 1/5/2022 | [Risorse di formazione per gli amministratori - Microsoft Teams](/MicrosoftTeams/itadmin-readiness) | modificato |
+| 1/5/2022 | [Dashboard qualità delle chiamate](/MicrosoftTeams/business-voice/analytics-dashboard) | modificato |
+| 1/5/2022 | Disponibilità di Business Voice per paesi e aree geografiche | rimosso |
+| 1/5/2022 | [Configurare un operatore automatico per Microsoft Teams - Esercitazione su Small Business](/MicrosoftTeams/business-voice/create-a-phone-system-auto-attendant-smb) | modificato |
+| 1/5/2022 | [Creare una coda di chiamata in Microsoft Teams - Esercitazione su Small Business](/MicrosoftTeams/business-voice/create-a-phone-system-call-queue-smb) | modificato |
+| 1/5/2022 | [Creare Microsoft 365 utenti, aggiungere Teams Telefono licenze del piano per chiamate e assegnare numeri di telefono](/MicrosoftTeams/business-voice/create-users) | modificato |
+| 1/5/2022 | [Personalizzare Microsoft 365 Teams Telefono piano chiamate in Microsoft Teams](/MicrosoftTeams/business-voice/customize-business-voice) | modificato |
+| 1/5/2022 | [Controlla la tua connessione Internet per Teams Telefono piano chiamate](/MicrosoftTeams/business-voice/get-ready-internet) | modificato |
+| 1/5/2022 | [Microsoft 365 Teams Telefono con la documentazione del pacchetto piano per chiamate # < 60 caratteri](/MicrosoftTeams/business-voice/index) | modificato |
+| 1/5/2022 | [Gestire i dispositivi](/MicrosoftTeams/business-voice/manage-devices) | modificato |
+| 1/5/2022 | [Monitorare la qualità delle chiamate](/MicrosoftTeams/business-voice/monitor-quality) | modificato |
+| 1/5/2022 | Microsoft 365 Business Voice e Microsoft Teams partner | rimosso |
+| 1/5/2022 | [Porta i numeri di telefono Teams Telefono con piano chiamate](/MicrosoftTeams/business-voice/port-phone-numbers) | modificato |
+| 1/5/2022 | Come si preparano gli utenti per Microsoft 365 Business Voice? | rimosso |
+| 1/5/2022 | [Ottenere assistenza da parte di un rivenditore o un partner Microsoft](/MicrosoftTeams/business-voice/reseller-partner-support) | modificato |
+| 1/5/2022 | [Assegnare Teams Telefono numeri di telefono del piano per chiamate agli utenti](/MicrosoftTeams/business-voice/set-up-assign-numbers) | modificato |
+| 1/5/2022 | [Configurare un operatore automatico per il numero di telefono principale dell'azienda](/MicrosoftTeams/business-voice/set-up-auto-attendant) | modificato |
+| 1/5/2022 | [Configurare le Microsoft 365 Teams Telefono con le località di emergenza del piano di chiamata](/MicrosoftTeams/business-voice/set-up-emergency-locations) | modificato |
+| 1/5/2022 | [Hai completato Teams Telefono configurazione del piano per le chiamate](/MicrosoftTeams/business-voice/set-up-finish) | modificato |
+| 1/5/2022 | [Assegnare Microsoft 365 Teams Telefono con le licenze del piano per chiamate](/MicrosoftTeams/business-voice/set-up-licenses) | modificato |
+| 1/5/2022 | [Configurare le Microsoft 365 Teams Telefono con piano per chiamate per le piccole e medie imprese](/MicrosoftTeams/business-voice/set-up-overview) | modificato |
+| 1/5/2022 | [Configurare la Microsoft 365 Teams Telefono piano chiamate con numeri di telefono](/MicrosoftTeams/business-voice/set-up-phone-numbers) | modificato |
+| 1/5/2022 | [Configurare i criteri](/MicrosoftTeams/business-voice/set-up-policies) | modificato |
+| 1/5/2022 | [Configurare un piano Microsoft 365 Teams Telefono con l'account della risorsa Piano chiamate](/MicrosoftTeams/business-voice/set-up-resource-account) | modificato |
+| 1/5/2022 | Cosa serve per acquistare e usare Microsoft 365 Business Voice con Piano di chiamata? | rimosso |
+| 1/5/2022 | [Teams Telefono per le piccole e medie imprese](/MicrosoftTeams/business-voice/whats-business-voice) | modificato |
+| 1/5/2022 | [Pianificare la soluzione vocale in Microsoft Teams](/MicrosoftTeams/cloud-voice-landing-page) | modificato |
+| 1/5/2022 | [Configurare Microsoft Teams nella piccole imprese](/MicrosoftTeams/deploy-small-business) | modificato |
+| 1/5/2022 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
+| 1/5/2022 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |
+| 1/5/2022 | [Gestire i canali privati in Microsoft Teams con Graph API](/MicrosoftTeams/private-channels-life-cycle-management) | modificato |
+| 1/6/2022 | [Modificare le modalità di protezione delle informazioni con uno script di PowerShell](/MicrosoftTeams/information-barriers-mode-script) | aggiunto |
+| 1/6/2022 | [Barriere all'informazione in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams) | modificato |
+| 1/7/2022 | [Disponibilità dell'applicazione Approvazioni in Teams](/MicrosoftTeams/approval-admin) | modificato |
+| 1/7/2022 | [Assegnare, modificare o rimuovere il numero di telefono di un utente](/MicrosoftTeams/assign-change-or-remove-a-phone-number-for-a-user) | modificato |
+| 1/7/2022 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant) | modificato |
+| 1/7/2022 | [Microsoft Teams di lavoro](/MicrosoftTeams/devices/teams-panels) | modificato |
+| 1/7/2022 | [Tipi di numeri di telefono usati per Teams](/MicrosoftTeams/different-kinds-of-phone-numbers-used-for-calling-plans) | modificato |
+| 1/7/2022 | [Routing diretto - Connessione di dispositivi analogici](/MicrosoftTeams/direct-routing-analog-devices) | modificato |
+| 1/7/2022 | [Tradurre i numeri di telefono per l'instradamento diretto](/MicrosoftTeams/direct-routing-translate-numbers) | modificato |
+| 1/7/2022 | [Restrizioni per le chiamate in uscita - Servizi di audioconferenza & chiamate PSTN](/MicrosoftTeams/outbound-calling-restriction-policies) | modificato |
+| 1/7/2022 | [Opzioni di connettività PSTN](/MicrosoftTeams/pstn-connectivity) | modificato |
+| 1/7/2022 | [Configurare le festività in Microsoft Teams](/MicrosoftTeams/set-up-holidays-in-teams) | modificato |
+| 1/7/2022 | [Pianificare il gateway SIP](/MicrosoftTeams/sip-gateway-plan) | modificato |
+| 1/7/2022 | [Musica blocco](/MicrosoftTeams/music-on-hold) | modificato |
+| 1/7/2022 | [Trasferire i numeri di telefono Microsoft Teams](/MicrosoftTeams/phone-number-calling-plans/transfer-phone-numbers-to-teams) | modificato |
+
+
 ## <a name="week-of-december-20-2021"></a>Settimana del 20 dicembre 2021
 
 
@@ -39,7 +104,7 @@
 | 12/16/2021 | [Ritiro di Skype for Business Online](/MicrosoftTeams/skype-for-business-online-retirement) | modificato |
 | 12/16/2021 | [Scegli il percorso di aggiornamento da Skype for Business a Microsoft Teams](/MicrosoftTeams/upgrade-and-coexistence-of-skypeforbusiness-and-teams) | modificato |
 | 12/16/2021 | [Aggiornamenti assistiti Skype \| Business Online per Teams aggiornamento](/MicrosoftTeams/upgrade-assisted) | modificato |
-| 12/16/2021 | [Elenco di controllo per \| l'aggiornamento Skype Business a Teams passaggi \| di base per l'aggiornamento](/MicrosoftTeams/upgrade-basic) | modificato |
+| 12/16/2021 | [Elenco di controllo per \| l'Skype business per Teams passaggi \| di base per l'aggiornamento](/MicrosoftTeams/upgrade-basic) | modificato |
 | 12/16/2021 | [Definire l'ambito del progetto per l'Skype for Business di Microsoft Teams aggiornamento](/MicrosoftTeams/upgrade-define-project-scope) | modificato |
 | 12/16/2021 | [Informazioni sul framework di aggiornamento Skype for Business a Teams](/MicrosoftTeams/upgrade-framework) | modificato |
 | 12/16/2021 | [Aggiornare Skype for Business locale a Microsoft Teams](/MicrosoftTeams/upgrade-to-teams-execute-skypeforbusinesshybridonprem) | modificato |
@@ -93,87 +158,3 @@
 | 12/10/2021 | [Teams per organizzazioni no profit](/MicrosoftTeams/expand-teams-across-your-org/teams-for-nonprofit-landing-page) | modificato |
 | 12/10/2021 | [Gestione dei partner per i clienti](/MicrosoftTeams/rooms/multi-tenant-management-customer) | modificato |
 | 12/10/2021 | [Gestione dei clienti multi-tenant per i partner](/MicrosoftTeams/rooms/multi-tenant-management-partner) | modificato |
-
-
-## <a name="week-of-november-29-2021"></a>Settimana del 29 novembre 2021
-
-
-| Pubblicato il |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 11/29/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
-| 11/29/2021 | [Installare Teams usando Microsoft Endpoint Configuration Manager](/MicrosoftTeams/msi-deployment) | modificato |
-| 11/29/2021 | [Aggiornare dalla versione di valutazione gratuita di Teams Exploratory](/MicrosoftTeams/upgrade-from-teams-exploratory) | modificato |
-| 11/30/2021 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | modificato |
-| 11/30/2021 | [Configurazione dell'amministratore per l'app Genitori EDU Microsoft in Teams](/MicrosoftTeams/edu-parents-app) | modificato |
-| 12/1/2021 | [Connessione Microsoft Teams Essentials (AAD Identity) a un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | aggiunto |
-| 12/1/2021 | [Guida introduttiva di Teams Essentials per le piccole imprese](/MicrosoftTeams/get-started-with-teams-essentials) | aggiunto |
-| 12/1/2021 | [Configurare le Connessione con operatore conferenza](/MicrosoftTeams/operator-connect-conferencing-configure) | aggiunto |
-| 12/1/2021 | [Pianificare le conferenze Connessione con operatore conferenza](/MicrosoftTeams/operator-connect-conferencing-plan) | aggiunto |
-| 12/1/2021 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | modificato |
-| 12/1/2021 | [Criteri di registrazione degli eventi live](/MicrosoftTeams/teams-live-events/live-events-recording-policies) | modificato |
-| 12/1/2021 | [Microsoft Teams sulla versione di PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | modificato |
-| 12/1/2021 | [Aggiornamento Microsoft Teams gratuito (classico) all'abbonamento](/MicrosoftTeams/upgrade-freemium) | modificato |
-| 12/1/2021 | [Guida introduttiva di Teams Essentials per le piccole imprese](/MicrosoftTeams/get-started-with-teams-essentials) | modificato |
-| 12/1/2021 | [Ecco cosa si ottiene con Teams Telefono](/MicrosoftTeams/here-s-what-you-get-with-phone-system) | modificato |
-| 12/1/2021 | [Configurare le Teams Telefono nell'organizzazione](/MicrosoftTeams/setting-up-your-phone-system) | modificato |
-| 12/1/2021 | [Che cos'è Teams Telefono](/MicrosoftTeams/what-is-phone-system-in-office-365) | modificato |
-| 12/2/2021 | [Pianificare la soluzione vocale in Microsoft Teams](/MicrosoftTeams/cloud-voice-landing-page) | modificato |
-| 12/2/2021 | [Telefoni e dispositivi per Microsoft Teams](/MicrosoftTeams/devices/usb-devices) | modificato |
-| 12/2/2021 | [Dimensioni e misure - Call Quality Dashboard (CQD)](/MicrosoftTeams/dimensions-and-measures-available-in-call-quality-dashboard) | modificato |
-| 12/2/2021 | [Opzioni di connettività PSTN](/MicrosoftTeams/pstn-connectivity) | modificato |
-| 12/2/2021 | [Insights per l'istruzione per l'utente finale](/MicrosoftTeams/insights-end-user-notice) | aggiunto |
-| 12/2/2021 | [Configurare chiamate di emergenza dinamiche](/MicrosoftTeams/configure-dynamic-emergency-calling) | modificato |
-| 12/2/2021 | [Connessione Microsoft Teams Essentials (AAD Identity) a un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | modificato |
-| 12/3/2021 | Assegnare i criteri agli utenti in Microsoft Teams | rimosso |
-| 12/3/2021 | [Cercare gli eventi nel log di controllo Microsoft Teams](/MicrosoftTeams/audit-log-events) | modificato |
-| 12/3/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
-| 12/3/2021 | [Pianificare il bypass multimediale con Instradamento diretto](/MicrosoftTeams/direct-routing-plan-media-bypass) | modificato |
-| 12/3/2021 | [Guida introduttiva di Teams Essentials per le piccole imprese](/MicrosoftTeams/get-started-with-teams-essentials) | modificato |
-| 12/3/2021 | [Configurare una console per Microsoft Teams Rooms](/MicrosoftTeams/rooms/console) | modificato |
-| 12/3/2021 | [Informazioni su come configurare fotocamere contenuto - Microsoft Teams](/MicrosoftTeams/rooms/content-camera) | modificato |
-| 12/3/2021 | [Configurare riunioni coordinate con Microsoft Teams Rooms e Surface Hub](/MicrosoftTeams/rooms/coordinated-meetings) | modificato |
-| 12/3/2021 | [Requisiti per Microsoft Teams Rooms](/MicrosoftTeams/rooms/requirements) | modificato |
-| 12/3/2021 | [Autenticazione in Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-authentication) | modificato |
-| 12/3/2021 | [Configurare gli account per Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-configure-accounts) | modificato |
-| 12/3/2021 | [Distribuire Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-deploy) | modificato |
-| 12/3/2021 | [Microsoft Teams Rooms licenze](/MicrosoftTeams/rooms/rooms-licensing) | modificato |
-| 12/3/2021 | [Microsoft Teams Rooms versione dell'app](/MicrosoftTeams/rooms/rooms-lifecycle-support) | modificato |
-| 12/3/2021 | [Gestire Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-manage). | modificato |
-| 12/3/2021 | [Microsoft Teams Rooms manutenzione e operazioni](/MicrosoftTeams/rooms/rooms-operations) | modificato |
-| 12/3/2021 | [Microsoft Teams Rooms sicurezza](/MicrosoftTeams/rooms/security) | modificato |
-
-
-## <a name="week-of-november-22-2021"></a>Settimana del 22 novembre 2021
-
-
-| Pubblicato il |Titolo dell'argomento | Modifica |
-|------|------------|--------|
-| 11/22/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
-| 11/22/2021 | [Session Border Controller certificati per l'instradamento diretto](/MicrosoftTeams/direct-routing-border-controllers) | modificato |
-| 11/22/2021 | [Microsoft Teams di utilizzo degli eventi live](/MicrosoftTeams/teams-analytics-and-reports/teams-live-event-usage-report) | modificato |
-| 11/22/2021 | [Pianificare un evento live in Microsoft Teams](/MicrosoftTeams/teams-live-events/plan-for-teams-live-events) | modificato |
-| 11/23/2021 | [Gestire le impostazioni delle riunioni](/MicrosoftTeams/meeting-settings-in-teams) | modificato |
-| 11/23/2021 | [Distribuire Microsoft Teams Rooms con Exchange Online](/MicrosoftTeams/rooms/with-exchange-online) | modificato |
-| 11/23/2021 | [Distribuire Microsoft Teams Rooms con Microsoft 365 o Office 365](/MicrosoftTeams/rooms/with-office-365) | modificato |
-| 11/24/2021 | [Usare il componente aggiuntivo Riunione di Microsoft Teams in Outlook](/MicrosoftTeams/teams-add-in-for-outlook) | modificato |
-| 11/24/2021 | [Interazione tra Exchange e Microsoft Teams](/MicrosoftTeams/exchange-teams-interact) | modificato |
-| 11/24/2021 | [Microsoft Teams app line of business (LINEB) nei Teams di lavoro](/MicrosoftTeams/app-support-on-teams-panels) | modificato |
-| 11/24/2021 | [Registrazione delle riunioni di Teams nel cloud](/MicrosoftTeams/cloud-recording) | modificato |
-| 11/24/2021 | [Configurare la condivisione desktop in Microsoft Teams](/MicrosoftTeams/configure-desktop-sharing) | modificato |
-| 11/24/2021 | [Cortana'assistenza vocale in Microsoft Teams](/MicrosoftTeams/cortana-in-teams) | modificato |
-| 11/24/2021 | [Teams per l'istruzione Guidata criteri per applicare facilmente i criteri per l'apprendimento sicuro](/MicrosoftTeams/easy-policy-setup-edu) | modificato |
-| 11/24/2021 | [Criteri di riunione e scadenza della riunione in Microsoft Teams](/MicrosoftTeams/meeting-expiration) | modificato |
-| 11/24/2021 | [Gestire i criteri delle riunioni per audio e video](/MicrosoftTeams/meeting-policies-audio-and-video) | modificato |
-| 11/24/2021 | [Gestire i criteri delle riunioni per la condivisione di contenuti](/MicrosoftTeams/meeting-policies-content-sharing) | modificato |
-| 11/24/2021 | [Gestire i criteri delle riunioni generali](/MicrosoftTeams/meeting-policies-in-teams-general) | modificato |
-| 11/24/2021 | [Gestire i criteri delle riunioni in Microsoft Teams](/MicrosoftTeams/meeting-policies-overview) | modificato |
-| 11/24/2021 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | modificato |
-| 11/24/2021 | [Gestire le impostazioni delle riunioni](/MicrosoftTeams/meeting-settings-in-teams) | modificato |
-| 11/24/2021 | [Gestire i criteri di messaggistica in Teams](/MicrosoftTeams/messaging-policies-in-teams) | modificato |
-| 11/24/2021 | [Controllo amministrazione tenant per il riconoscimento vocale (profilo vocale) in Teams Rooms](/MicrosoftTeams/rooms/voice-recognition) | modificato |
-| 11/24/2021 | [Configurare webinar in Microsoft Teams](/MicrosoftTeams/set-up-webinars) | modificato |
-| 11/24/2021 | [Componente aggiuntivo Advanced Communications per Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/advanced-communications) | modificato |
-| 11/24/2021 | [Report sulle presenze alle riunioni di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/meeting-attendance-report) | modificato |
-| 11/24/2021 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | modificato |
-| 11/24/2021 | [Configurare le impostazioni degli eventi live in Microsoft Teams](/MicrosoftTeams/teams-live-events/configure-teams-live-events) | modificato |
-| 11/24/2021 | [Configurare gli eventi live in Microsoft Teams](/MicrosoftTeams/teams-live-events/set-up-for-teams-live-events) | modificato |

@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 37d7c3999986373e7ad72176cfc0182f09144e3a
-ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
+ms.openlocfilehash: 1221747b1ad8487c0b5852b6adaf5129b5a5288e
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61205416"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61766769"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -267,6 +267,10 @@ Le dimensioni di una registrazione di 1 ora sono pari a 400 MB. Assicurarsi di a
 >
 >
 
+Altre informazioni sulle modifiche specifiche dell'amministratore sono disponibili [qui](meeting-expiration.md#changes-to-meeting-expiration).
+
+Per altre informazioni su come gli utenti finali possono gestire la scadenza delle riunioni, vedere [qui](https://support.microsoft.com/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24#bkmk_view_change_expiration_date).
+  
 Vedere le domande frequenti per gli amministratori e gli utenti finali per raccogliere informazioni su come funzionerà la scadenza automatica delle registrazioni delle riunioni di Teams, quali azioni è possibile intraprendere ora e quali azioni sarà possibile eseguire dopo il lancio della funzionalità.
   
 ## <a name="frequently-asked-questions"></a>Domande frequenti

@@ -18,28 +18,28 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a7e15a8a327d40ea11412229205fca6e856e9f7b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: bdf55403f807ddb8929da71d082adffcbcb7877d
+ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596320"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "61767149"
 ---
 # <a name="set-up-microsoft-teams-in-your-small-business"></a>Configurare Microsoft Teams nella piccole imprese
 
-È possibile personalizzare Teams in diversi modi. Le sezioni seguenti illustrano come configurare ogni carico di lavoro di Teams: **chat, team e canali**, **riunioni e conferenze** e **cloud voice**. L'ordine in cui si configura ciascun carico di lavoro dipende dall’utente. Anche se è consigliabile configurare prima il carico di lavoro di chat, team e canali, è possibile iniziare con le riunioni e le conferenze o anche con il cloud voice. La scelta sta all'utente.
+È possibile personalizzare Teams in diversi modi. Le sezioni seguenti mostrano come configurare ogni carico di lavoro Teams: **chat, team e canali**; **riunioni e conferenze**; e **soluzioni vocali**. L'ordine in cui si configura ciascun carico di lavoro dipende dall’utente. Anche se è consigliabile configurare prima il carico di lavoro di chat, team e canali, è possibile iniziare con le riunioni e le conferenze o anche con il cloud voice. La scelta sta all'utente.
 
 > [!NOTE]
 > Se tutto ciò è già stato fatto, è consigliabile iniziare la distribuzione di Teams attraverso una distribuzione pilota. Una distribuzione pilota consentirà all’utente e agli early adopter di acquisire familiarità con Teams e le sue funzionalità prima della pianificazione e della distribuzione finale. Per altre informazioni su come avviare la distribuzione pilota, vedere [Introduzione a Microsoft Teams](get-started-with-teams-quick-start.md).
 
-Prima di implementare totalmente Teams, assicurarsi che l'organizzazione sia pronta esaminando gli elementi in [Assicurarsi di essere pronti](get-started-with-teams-quick-start.md#make-sure-youre-ready).
+Prima di implementare Teams su larga scala, assicurarsi che l'organizzazione sia pronta esaminando gli elementi in [Assicurarsi di essere pronti](get-started-with-teams-quick-start.md#make-sure-youre-ready).
 
 Passare alla sezione a cui si è interessati:
 
 - [Carichi di lavoro](#workloads)
   - [Chat, team e canali](#chat-teams-and-channels)
   - [Riunioni e conferenze](#meetings-and-conferencing)
-  - [Business Voice](#business-voice)
+  - [Servizi telefonici con piano per chiamate](#teams-phone-with-calling-plan)
 - [Distribuire i client](#deploy-clients)
 - [Formazione](#training)
 
@@ -49,7 +49,7 @@ Passare alla sezione a cui si è interessati:
 Chat, team e canali sono la base di ogni team. La **chat** consente agli utenti di parlare tra di loro, condividere file e di collegarsi in modo privato con altri. **Teams**, che può essere visibile a tutti gli utenti dell'organizzazione o solo a quelli del team, consente di collaborare con le persone giuste su qualsiasi attività o in qualsiasi occasione, che si tratti di un progetto a lungo termine o di una festa di compleanno. I **canali** nei team consentono di suddividere argomenti, progetti, reparti e altro per il team. Per informazioni dettagliate su chat, team e canali, vedere la [Panoramica su team e canali](teams-channels-overview.md).
 
 > [!TIP]
-> Informazioni su come gestire i ruoli del team, l'accesso e i criteri di messaggistica completando il modulo [Gestire Microsoft Teams](/learn/modules/m365-teams-collab-manage-teams/) in Microsoft Learn.
+> Per informazioni su come gestire i ruoli del team, l'accesso e i criteri di messaggistica, completare il modulo [Gestire Microsoft Teams](/learn/modules/m365-teams-collab-manage-teams/) in Microsoft Learn.
 
 Quando si pianifica l'implementazione di team e canali, è necessario decidere chi può crearli, se gli utenti guest esterni all'organizzazione possono accedervi e così via. L'articolo [Chat, team, canali e app di Microsoft Teams](deploy-chat-teams-channels-microsoft-teams-landing-page.md) contiene molte informazioni sulla pianificazione di chat, team e canali. Tuttavia, ci sono alcuni aspetti chiave in questo articolo su cui è consigliabile soffermarsi. Selezionare una decisione per ottenere altre informazioni.
 
@@ -78,15 +78,11 @@ Le riunioni sono abilitate per impostazione predefinita in Teams. Tuttavia è po
 - [Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams](quick-start-meetings-live-events.md)
 - [Configurare audioconferenze per piccole e medie imprese](audio-conferencing-smb.md)
 
-### <a name="business-voice"></a>Business Voice
+### <a name="teams-phone-with-calling-plan"></a>Servizi telefonici con piano per chiamate
 
-[Microsoft 365 Business Voice](business-voice/whats-business-voice.md) è una soluzione ideale per le aziende con meno di 300 utenti, in grado di offrire tutte le funzionalità di un sistema di telefonia per ufficio. Business Voice include la segreteria telefonica, ID chiamante, menu del sistema telefonico, numeri gratuiti e altro ancora, senza la necessità di gestire un complesso e costoso sistema telefonico locale.
+Servizi telefonici Microsoft 365 Teams con piano per chiamate è un'ottima soluzione per le aziende con meno di 300 utenti e offre tutte le funzionalità di un sistema telefonico per ufficio. Servizi telefonici Teams include la segreteria telefonica, ID chiamante, menu del sistema telefonico, numeri gratuiti e altro ancora, senza la necessità di gestire un complesso e costoso sistema telefonico locale.
 
-Basato sul Sistema telefonico di Microsoft 365, Business Voice semplifica il tutto raggruppando funzionalità e componenti aggiuntivi del Sistema telefonico e fornendo una procedura guidata, facile da seguire, per configurare il sistema telefonico. Se l'organizzazione si trova in un [paese o area geografica che supporta Business Voice](business-voice/country-region-availability.md), è possibile trasferire i numeri di telefono in Microsoft 365 e lasciare a Microsoft la gestione del sistema telefonico.
-
-Con Microsoft 365 come sistema di telefonia, è possibile trasformare qualsiasi dispositivo in un telefono installando il client Teams. Oppure, se si preferisce un telefono tradizionale da tavolo o un telefono da conferenza, sono disponibili molti dispositivi certificati Teams tra cui scegliere. In entrambi i casi, le chiamate vengono sempre indirizzate all’utente e il numero sarà sempre quello del telefono dell'ufficio.
-
-Per maggiori informazioni sul VoIP aziendale, vedere [Cosa è necessario acquistare per usare Microsoft 365 Business Voice?](business-voice/what-to-buy.md).
+Per altre informazioni su Servizi telefonici Teams con piano per chiamate per le piccole e medie imprese, vedere [Servizi telefonici Teams per le piccole e medie imprese](/microsoftteams/business-voice/whats-business-voice).
 
 ## <a name="deploy-clients"></a>Distribuire i client
 
