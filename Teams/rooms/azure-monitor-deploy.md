@@ -1,5 +1,5 @@
 ---
-title: Distribuire Microsoft Teams Rooms gestione dei dati con Monitor di Azure
+title: Distribuire Microsoft Teams Rooms monitoraggio con Monitoraggio di Azure
 ms.author: dstrome
 author: dstrome
 ms.reviewer: Turgayo
@@ -13,20 +13,20 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 ms.assetid: d86ff657-ee92-4b06-aee3-d4c43090bdcb
-description: Questo articolo illustra come distribuire la gestione dei Microsoft Teams Rooms dispositivi in modo integrato e end-to-end con Monitor di Azure.
+description: Questo articolo illustra come distribuire il monitoraggio delle Microsoft Teams Rooms in modo integrato e end-to-end con Monitor di Azure.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6713b8651432766e6858f3376ff9804d638babcc
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 1520e9a4c9eced048634a0fdc457bb2fd0ea0edb
+ms.sourcegitcommit: d2c76fe7705acf6e53f7673861671b1b018813dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726115"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62015216"
 ---
-# <a name="deploy-no-loc-textmicrosoft-teams-rooms-management-with-no-loc-textazure-monitor"></a>Distribuire :::no-loc text="Microsoft Teams Rooms"::: la gestione con :::no-loc text="Azure Monitor":::
+# <a name="deploy-no-loc-textmicrosoft-teams-rooms-monitoring-with-no-loc-textazure-monitor"></a>Distribuire :::no-loc text="Microsoft Teams Rooms"::: il monitoraggio con :::no-loc text="Azure Monitor":::
 
-Questo articolo illustra come configurare e distribuire la gestione integrata e end-to-end dei dispositivi :::no-loc text="Microsoft Teams Rooms"::: tramite :::no-loc text="Azure Monitor"::: .
+Questo articolo illustra come configurare e distribuire il monitoraggio completo e integrato dei dispositivi :::no-loc text="Microsoft Teams Rooms"::: tramite :::no-loc text="Azure Monitor"::: .
 
-È possibile configurare :::no-loc text="Log Analytics"::: :::no-loc text="Azure Monitor"::: all'interno per fornire telemetria di base e avvisi che consentono di gestire i :::no-loc text="Microsoft Teams Rooms"::: dispositivi delle sale riunioni. Con il maturamento della soluzione di gestione, è possibile decidere di distribuire altri dati e funzionalità di gestione per creare una visualizzazione più dettagliata della disponibilità e delle prestazioni dei dispositivi.
+È possibile configurare :::no-loc text="Log Analytics"::: all'interno di per fornire telemetria di base :::no-loc text="Azure Monitor"::: e avvisi che consentono di gestire :::no-loc text="Microsoft Teams Rooms"::: . Con il maturare della soluzione di gestione, è possibile decidere di distribuire altri dati e funzionalità di gestione per creare una visualizzazione più dettagliata della disponibilità e delle prestazioni dei dispositivi.
 
 Seguendo questa guida, è possibile usare un dashboard come l'esempio seguente per ottenere report dettagliati sullo stato per la disponibilità dei dispositivi, l'integrità dell'applicazione e dell'hardware e la distribuzione delle versioni delle applicazioni :::no-loc text="Microsoft Teams Rooms"::: e del sistema operativo.
 
@@ -50,7 +50,7 @@ A un livello elevato, è necessario eseguire le attività seguenti:
 ## <a name="validate-no-loc-textlog-analytics-configuration"></a>Convalidare la :::no-loc text="Log Analytics"::: configurazione
 <a name="validate_LogAnalytics"> </a>
 
-È necessario avere :::no-loc text="Log Analytics"::: un'area di lavoro per iniziare a raccogliere i log dai :::no-loc text="Microsoft Teams Rooms"::: dispositivi. Un'area di lavoro è :::no-loc text="Log Analytics"::: un ambiente univoco con un proprio archivio dati, origini dati e soluzioni. Se si ha già un'area di lavoro esistente, è possibile usarla per monitorare la distribuzione o, in alternativa, creare un'area di lavoro dedicata specifica per :::no-loc text="Log Analytics"::: le proprie esigenze di :::no-loc text="Microsoft Teams Rooms"::: :::no-loc text="Log Analytics"::: :::no-loc text="Microsoft Teams Rooms"::: monitoraggio.
+È necessario avere :::no-loc text="Log Analytics"::: un'area di lavoro per iniziare a raccogliere i log da :::no-loc text="Microsoft Teams Rooms"::: . Un'area di lavoro è :::no-loc text="Log Analytics"::: un ambiente univoco con un proprio archivio dati, origini dati e soluzioni. Se si ha già un'area di lavoro esistente, è possibile usarla per monitorare la distribuzione o, in alternativa, creare un'area di lavoro dedicata specifica per :::no-loc text="Log Analytics"::: le proprie esigenze di :::no-loc text="Microsoft Teams Rooms"::: :::no-loc text="Log Analytics"::: :::no-loc text="Microsoft Teams Rooms"::: monitoraggio.
 
 Se è necessario creare una nuova area :::no-loc text="Log Analytics"::: di lavoro, seguire le istruzioni nell'articolo [Creare :::no-loc text="Log Analytics"::: un'area di lavoro nel :::no-loc text="Azure"::: portale](/azure/azure-monitor/learn/quick-create-workspace)
 
@@ -61,7 +61,7 @@ Se è necessario creare una nuova area :::no-loc text="Log Analytics"::: di lavo
 
 :::no-loc text="Log Analytics"::: raccoglie solo gli eventi dai :::no-loc text="Windows"::: log eventi specificati nelle impostazioni. Per ogni log vengono raccolti solo gli eventi con i gravità selezionati.
 
-È necessario configurare per raccogliere i log necessari per monitorare :::no-loc text="Log Analytics"::: lo stato del dispositivo e :::no-loc text="Microsoft Teams Rooms"::: dell'applicazione. :::no-loc text="Microsoft Teams Rooms"::: i dispositivi usano **:::no-loc text="Skype Room System":::** il log eventi.
+È necessario configurare per raccogliere i log necessari per monitorare :::no-loc text="Log Analytics"::: lo stato del dispositivo e :::no-loc text="Microsoft Teams Rooms"::: dell'applicazione. :::no-loc text="Microsoft Teams Rooms"::: usare il **:::no-loc text="Skype Room System":::** log eventi.
 
 Per configurare :::no-loc text="Log Analytics"::: la raccolta degli :::no-loc text="Microsoft Teams Rooms"::: eventi, vedere origini dati del [ :::no-loc text="Windows"::: log eventi in :::no-loc text="Azure Monitor"::: ](/azure/azure-monitor/platform/data-sources-windows-events)
 
@@ -73,11 +73,11 @@ Per configurare :::no-loc text="Log Analytics"::: la raccolta degli :::no-loc te
 ## <a name="configure-test-devices-for-azure-monitoring"></a>Configurare i dispositivi di test per il monitoraggio di Azure
 <a name="configure_test_devices"> </a>
 
-È necessario prepararsi :::no-loc text="Log Analytics"::: per poter monitorare gli eventi :::no-loc text="Microsoft Teams Rooms"::: correlati. Per iniziare, è necessario distribuire gli agenti in uno o due dispositivi a cui si ha accesso fisico e fare in modo che questi dispositivi di test generino alcuni dati e la inseriscono :::no-loc text="Microsoft Monitoring"::: :::no-loc text="Microsoft Teams Rooms"::: nell'area di :::no-loc text="Log Analytics"::: lavoro.
+È necessario prepararsi :::no-loc text="Log Analytics"::: per poter monitorare gli eventi :::no-loc text="Microsoft Teams Rooms"::: correlati. Per iniziare, è necessario distribuire gli agenti in uno o due dispositivi a cui si ha accesso fisico e ottenere che i dispositivi di test generino alcuni dati e lo spingono :::no-loc text="Microsoft Monitoring"::: :::no-loc text="Microsoft Teams Rooms"::: nell'area di :::no-loc text="Log Analytics"::: lavoro.
 
 ### <a name="install-no-loc-textmicrosoft-monitoring-agents-to-test-devices"></a>Installare :::no-loc text="Microsoft Monitoring"::: agenti per testare i dispositivi
 
-Distribuire l'agente ai dispositivi di test usando le istruzioni fornite :::no-loc text="Microsoft Monitoring"::: Connessione computer al servizio [ :::no-loc text="Windows"::: :::no-loc text="Log Analytics"::: in :::no-loc text="Azure"::: ](/azure/azure-monitor/platform/agent-windows). Questo articolo fornisce informazioni dettagliate sui passaggi per la distribuzione dell'agente per , le istruzioni per ottenere l'ID area di lavoro _ e la chiave primaria * per ottenere i dispositivi connessi alla distribuzione e i passaggi per verificare la connettività dell'agente :::no-loc text="Microsoft Monitoring"::: :::no-loc text="Windows"::: all'istanza. :::no-loc text="Log Analytics":::  * ** :::no-loc text="Microsoft Teams Rooms"::: :::no-loc text="Azure Monitor"::: :::no-loc text="Log Analytics":::
+Distribuire l'agente ai dispositivi di test usando le istruzioni fornite nei computer Connessione :::no-loc text="Microsoft Monitoring"::: [al servizio :::no-loc text="Windows"::: :::no-loc text="Log Analytics"::: in :::no-loc text="Azure"::: ](/azure/azure-monitor/platform/agent-windows). Questo articolo fornisce informazioni dettagliate sui passaggi per la distribuzione dell'agente per , le istruzioni per ottenere l'ID area di lavoro _ e la chiave primaria * per ottenere i dispositivi connessi alla distribuzione e la procedura per verificare la connettività dell'agente :::no-loc text="Microsoft Monitoring"::: :::no-loc text="Windows"::: all'istanza. :::no-loc text="Log Analytics":::  * ** :::no-loc text="Microsoft Teams Rooms"::: :::no-loc text="Azure Monitor"::: :::no-loc text="Log Analytics":::
 
 ### <a name="generate-sample-no-loc-textmicrosoft-teams-rooms-events"></a>Generare eventi di :::no-loc text="Microsoft Teams Rooms"::: esempio
 
@@ -92,15 +92,15 @@ Dopo la :::no-loc text="Microsoft Monitoring"::: distribuzione dell'agente nei d
     1.  Selezionare l'area di lavoro e passare a **Log** e usare una query per recuperare i record heartbeat che avranno i campi personalizzati per :::no-loc text="Microsoft Teams Rooms"::: .
     2.  Query di esempio: `Event | where Source == "SRS-App" and EventID == 2000`
 
-3.  Assicurarsi che la query restituisca i record di log che includono gli eventi generati :::no-loc text="Microsoft Teams Rooms"::: dall'app riunioni.
+3.  Assicurarsi che la query restituisca record di log che includono eventi generati :::no-loc text="Microsoft Teams Rooms"::: dall'app riunioni.
 
 4.  Generare un problema hardware e verificare che gli eventi necessari siano :::no-loc text="Azure Log Analytics"::: connessi.
-    1.  Scollegare uno dei dispositivi periferici nel sistema di :::no-loc text="Microsoft Teams Rooms"::: test. Potrebbe trattarsi della fotocamera, dell'vivavoce, del microfono o dello schermo della sala frontale
+    1.  Scollegare uno dei dispositivi periferici nel sistema di :::no-loc text="Microsoft Teams Rooms"::: test. Potrebbe trattarsi della fotocamera, dell'altoparlante, del microfono o dello schermo della sala frontale
     2.  Attendere 10 minuti prima che il log eventi sia popolato in :::no-loc text="Azure Log Analytics"::: .
     3.  Usare una query per elencare gli eventi di errore hardware: `Event | where Source == "SRS-App" and EventID == 3001`
 
 5.  Generare un problema dell'applicazione e verificare che gli eventi necessari siano registrati.
-    1.  Modificare :::no-loc text="Microsoft Teams Rooms"::: la configurazione dell'applicazione e digitare una coppia indirizzo/password SIP (Session Initiation Protocol) non corretta.
+    1.  Modificare la :::no-loc text="Microsoft Teams Rooms"::: configurazione dell'account e digitare una coppia e-mail/password non corretta.
     2.  Attendere 10 minuti prima che il log eventi sia popolato in :::no-loc text="Azure Log Analytics"::: .
     3.  Usare una query per elencare gli eventi di errore dell'applicazione: `Event | where Source == "SRS-App" and EventID == 2001 and EventLevel == 1`
 
@@ -175,10 +175,10 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 3.  Assegnare un nome al riquadro **:::no-loc text="Microsoft Teams Rooms":::** .
 4.  Definire il **primo riquadro:**<br>
     **Legenda:** Dispositivi che hanno inviato un heartbeat almeno una volta nell'ultimo mese<br>
-    **Query:**```Event | where EventLog == "Skype Room System" and TimeGenerated > ago(30d) | summarize TotalSRSDevices = dcount(Computer)```
+    **Query:** ```Event | where EventLog == "Skype Room System" and TimeGenerated > ago(30d) | summarize TotalSRSDevices = dcount(Computer)```
 5.  Definire il **secondo riquadro:**<br>
     **Legenda:** Dispositivi attivi che hanno inviato un heartbeat nell'ultima ora<br>
-    **Query:**```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" and TimeGenerated > ago(1h) | summarize TotalSRSDevices = dcount(Computer)```
+    **Query:** ```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" and TimeGenerated > ago(1h) | summarize TotalSRSDevices = dcount(Computer)```
 6.  Selezionare **Applica**.
 
 ### <a name="create-a-tile-that-displays-active-devices"></a>Creare un riquadro che visualizza i dispositivi attivi
@@ -190,9 +190,9 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
     **Nuovo gruppo:** Selezionato
 4.  Definire le **proprietà del** riquadro:<br>
     **Legenda:** Dispositivi attivi (heartbeat inviato negli ultimi 20 minuti)<br>
-    **Query riquadro:**```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" and TimeGenerated > ago(20m) | summarize AggregatedValue = count() by Computer | count```
+    **Query riquadro:** ```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" and TimeGenerated > ago(20m) | summarize AggregatedValue = count() by Computer | count```
 5.  Definire le **proprietà dell'elenco:**<br>
-    **Query elenco:**```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" and TimeGenerated > ago(20m) | summarize TimeGenerated = max(TimeGenerated) by Computer | order by TimeGenerated```
+    **Query elenco:** ```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" and TimeGenerated > ago(20m) | summarize TimeGenerated = max(TimeGenerated) by Computer | order by TimeGenerated```
 6.  Definire **i titoli delle colonne**:<br>
     **Nome:** Nome computer<br>
     **Valore:** Ultimo heartbeat
@@ -208,9 +208,9 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
     **Nuovo gruppo:** Non selezionato
 3.  Definire le **proprietà del** riquadro:<br>
     **Legenda:** Dispositivi inattivi (nessun messaggio heartbeat inviato negli ultimi 20 minuti)<br>
-    **Query riquadro:**```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize LastHB = max(TimeGenerated) by Computer | where LastHB < ago(20m) | count```
+    **Query riquadro:** ```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize LastHB = max(TimeGenerated) by Computer | where LastHB < ago(20m) | count```
 4.  Definire le **proprietà dell'elenco:**<br>
-    **Query elenco:**```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize TimeGenerated = max(TimeGenerated) by Computer | where TimeGenerated < ago(20m) | order by TimeGenerated```
+    **Query elenco:** ```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize TimeGenerated = max(TimeGenerated) by Computer | where TimeGenerated < ago(20m) | order by TimeGenerated```
 5.  Definire **i titoli delle colonne**:<br>
     **Nome:** Nome computer<br>
     **Valore:** Ultimo heartbeat
@@ -226,9 +226,9 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
     **Nuovo gruppo:** Selezionato
 3.  Definire le **proprietà del** riquadro:<br>
     **Legenda:** Dispositivi che hanno riscontrato un errore hardware nell'ultima ora<br>
-    **Query riquadro:**```Event | where EventLog == "Skype Room System" and EventLevelName == "Error" and EventID == "3001" and TimeGenerated > ago(1h) | summarize AggregatedValue = count() by Computer | count```
+    **Query riquadro:** ```Event | where EventLog == "Skype Room System" and EventLevelName == "Error" and EventID == "3001" and TimeGenerated > ago(1h) | summarize AggregatedValue = count() by Computer | count```
 4.  Definire le **proprietà dell'elenco:**<br>
-    **Query elenco:**```Event | where EventLog == "Skype Room System" and EventLevelName == "Error" and EventID == "3001" and TimeGenerated > ago(1h) | summarize TimeGenerated = max(TimeGenerated) by Computer | order by TimeGenerated```
+    **Query elenco:** ```Event | where EventLog == "Skype Room System" and EventLevelName == "Error" and EventID == "3001" and TimeGenerated > ago(1h) | summarize TimeGenerated = max(TimeGenerated) by Computer | order by TimeGenerated```
 5.  Definire **i titoli delle colonne**:<br>
     **Nome:** Nome computer<br>
     **Valore:** Ultimo errore
@@ -246,12 +246,12 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
     **Titolo:** Versioni del sistema operativo<br>
     **Sottotitolo:** Dispositivi che eseguono versioni del sistema operativo specifiche
 4.  Definire le **proprietà di Donut:**<br>
-    **Query:**```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize OS_Version = max(SRSOSLongVersion_CF) by Computer | summarize AggregatedValue = count() by OS_Version | sort by OS_Version asc```<br>
+    **Query:** ```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize OS_Version = max(SRSOSLongVersion_CF) by Computer | summarize AggregatedValue = count() by OS_Version | sort by OS_Version asc```<br>
     **Allinea al centro il testo:** Dispositivi<br>
     **Operazione:** Somma
 5.  Definire le **proprietà dell'elenco.**<br>
-    **Query elenco:**```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize SRSOSLongVersion_CF = max(SRSOSLongVersion_CF) by Computer | sort by Computer asc```<br>
-    **Nascondi Graph:** Selezionato<br>
+    **Query elenco:** ```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize SRSOSLongVersion_CF = max(SRSOSLongVersion_CF) by Computer | sort by Computer asc```<br>
+    **Nascondi Graph:** selezionato<br>
     **Abilita grafici sparkline:** Non selezionato
 6.  Definire **i titoli delle colonne**.<br>
     **Nome:** Nome computer<br>
@@ -270,12 +270,12 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
     **Titolo:** Versioni dell'applicazione<br>
     **Sottotitolo:** Dispositivi che eseguono versioni specifiche delle applicazioni
 4.  Definire le **proprietà di Donut:**<br>
-    **Query:**```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize App_Version = max(SRSAppVersion_CF) by Computer | summarize AggregatedValue = count() by App_Version | sort by App_Version asc```<br>
+    **Query:** ```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize App_Version = max(SRSAppVersion_CF) by Computer | summarize AggregatedValue = count() by App_Version | sort by App_Version asc```<br>
     **Allinea al centro il testo:** Dispositivi<br>
     **Operazione:** Somma
 5.  Definire le **proprietà dell'elenco.**<br>
-    **Query elenco:**```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize SRSAppVersion_CF = max(SRSAppVersion_CF) by Computer | sort by Computer asc```<br>
-    **Nascondi Graph:** Selezionato<br>
+    **Query elenco:** ```Event | where EventLog == "Skype Room System" and SRSOperationName_CF == "Heartbeat" | summarize SRSAppVersion_CF = max(SRSAppVersion_CF) by Computer | sort by Computer asc```<br>
+    **Nascondi Graph:** selezionato<br>
     **Abilita grafici sparkline:** Non selezionato
 6.  Definire **i titoli delle colonne**.<br>
     **Nome:** Nome computer<br>
@@ -292,9 +292,9 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
     **Nuovo gruppo:** Non selezionato
 3.  Definire le **proprietà del** riquadro.<br>
     **Legenda:** Dispositivi in cui si è verificato un errore dell'applicazione nell'ultima ora<br>
-    **Query riquadro:**```Event | where EventLog == "Skype Room System" and EventLevelName == "Error" and EventID == "2001" and TimeGenerated > ago(1h) | summarize AggregatedValue = count() by Computer | count```
+    **Query riquadro:** ```Event | where EventLog == "Skype Room System" and EventLevelName == "Error" and EventID == "2001" and TimeGenerated > ago(1h) | summarize AggregatedValue = count() by Computer | count```
 4.  Definire le **proprietà dell'elenco.**<br>
-    **Query elenco:**```Event | where EventLog == "Skype Room System" and EventLevelName == "Error" and EventID == "2001" and TimeGenerated > ago(1h) | summarize TimeGenerated = max(TimeGenerated) by Computer | order by TimeGenerated```
+    **Query elenco:** ```Event | where EventLog == "Skype Room System" and EventLevelName == "Error" and EventID == "2001" and TimeGenerated > ago(1h) | summarize TimeGenerated = max(TimeGenerated) by Computer | order by TimeGenerated```
 5.  Definire **i titoli delle colonne**.<br>
     **Nome:** Nome computer<br>
     **Valore:** Ultimo errore
@@ -310,9 +310,9 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
     **Nuovo gruppo:** Non selezionato
 3.  Definire le **proprietà del** riquadro.<br>
     **Legenda:** Dispositivi in cui l'applicazione è stata riavviata nelle ultime 24 ore e numero di riavvii<br>
-    **Query riquadro:**```Event | where EventLog == "Skype Room System" and EventID == "4000" and TimeGenerated > ago(24h) | summarize AggregatedValue = count() by Computer | count```
+    **Query riquadro:** ```Event | where EventLog == "Skype Room System" and EventID == "4000" and TimeGenerated > ago(24h) | summarize AggregatedValue = count() by Computer | count```
 4.  Definire le **proprietà dell'elenco.**<br>
-    **Query elenco:**```Event | where EventLog == "Skype Room System" and EventID == "4000" and TimeGenerated > ago(24h) | order by TimeGenerated | summarize AggregatedValue = count(EventID) by Computer```
+    **Query elenco:** ```Event | where EventLog == "Skype Room System" and EventID == "4000" and TimeGenerated > ago(24h) | order by TimeGenerated | summarize AggregatedValue = count(EventID) by Computer```
 5.  Definire **i titoli delle colonne**.<br>
     **Nome:** Nome computer<br>
     **Valore:** Numero di riavvii
@@ -360,7 +360,7 @@ Configurare una regola di avviso che controlla la presenza di dispositivi che ha
 
 5.  Configurare le impostazioni della logica di avviso:<br>
     **In base a:** Numero di risultati<br>
-    **Condizione:** Maggiore quindi<br>
+    **Condizione:** Maggiore di<br>
     **Soglia:** 0<br>
 
 6. Configurare le impostazioni di valutazione e selezionare **Fatto:** <br>
@@ -425,7 +425,7 @@ Se i dispositivi sono già stati distribuiti prima dell'implementazione, è poss
 4.  Creare un nuovo oggetto Criteri di gruppo e assegnarlo all'unità organizzativa in cui si trovano :::no-loc text="Microsoft Teams Rooms"::: gli account computer.
 
 5.  Configurare i criteri di esecuzione di PowerShell:
-    1.  Modificare l'oggetto Criteri di gruppo appena creato e passare a Componenti dei modelli amministrativi \\ di Criteri di configurazione \\ \\ :::no-loc text="Windows"::: computer \\:::no-loc text="Windows PowerShell":::
+    1.  Modificare l'oggetto Criteri di gruppo appena creato e passare a Componenti dei modelli amministrativi \\ di Criteri di configurazione \\ \\ :::no-loc text="Windows"::: computer \\ :::no-loc text="Windows PowerShell":::
     2.  Abilitare **l'attivazione dell'esecuzione di script** e impostare **Criteri di esecuzione** su Consenti script **locali**.
 
 6.  Configurare lo script di avvio:
@@ -437,7 +437,7 @@ Se i dispositivi sono già stati distribuiti prima dell'implementazione, è poss
     6.  Selezionare **Aggiungi** e quindi **Sfoglia.**
     7.  Selezionare lo script ps1 appena copiato.
 
-7.  :::no-loc text="Microsoft Teams Rooms"::: i dispositivi devono installare e configurare :::no-loc text="Microsoft Monitoring"::: l'agente con il secondo riavvio.
+7.  :::no-loc text="Microsoft Teams Rooms"::: dovrebbe installare e configurare :::no-loc text="Microsoft Monitoring"::: l'agente con il secondo riavvio.
 
 ```PowerShell
 # Install-MMAgent.ps1
@@ -482,7 +482,7 @@ Stop-Transcript
 ```
 
 > [!NOTE]
-> È possibile fare [ :::no-loc text="Log Analytics"::: ](/azure/azure-monitor/platform/agent-manage) riferimento all'articolo Gestione e gestione dell'agente quando è necessario riconfigurare un agente, spostarlo in un'area di lavoro diversa o modificare le impostazioni del proxy dopo l'installazione iniziale.
+> È possibile fare [ :::no-loc text="Log Analytics"::: ](/azure/azure-monitor/platform/agent-manage) riferimento all'articolo Gestione e manutenzione dell'agente quando è necessario riconfigurare un agente, spostarlo in un'area di lavoro diversa o modificare le impostazioni del proxy dopo l'installazione iniziale.
 
 ## <a name="additional-solutions"></a>Altre soluzioni
 <a name="Solutions"> </a>

@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Scopri come configurare i Piani per chiamate Microsoft e la funzionalità Sistema telefonico chiamate di emergenza dinamiche in Routing diretto.
+description: Informazioni su come configurare i Piani per chiamate Microsoft e la funzionalità Sistema telefonico chiamate di emergenza dinamiche in Routing diretto.
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c762ccb2aba8c8ccad531573c37f258fa4605a9d
-ms.sourcegitcommit: 38a4d2f41270633479afb3412c749365922554e5
+ms.openlocfilehash: a56d0887f061292f729b45a6c53707d1e398e332
+ms.sourcegitcommit: d2c76fe7705acf6e53f7673861671b1b018813dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "61410717"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62015366"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -37,11 +37,11 @@ Per le chiamate di emergenza dinamiche, deve verificarsi quanto segue:
 
 1. L'amministratore di rete configura le impostazioni di rete e liS per creare una mappa della posizione di rete/emergenza.
 
-2. Durante l'avvio e periodicamente in un secondo momento o quando viene modificata una connessione di rete, il client Teams invia una richiesta di posizione che contiene le informazioni sulla connettività di rete alle impostazioni di rete e al LIS.
+2. Durante l'avvio e periodicamente in seguito o quando viene modificata una connessione di rete, il client di Teams invia una richiesta di posizione che contiene le informazioni sulla connettività di rete alle impostazioni di rete e al LIS.
 
-   - Se è presente una corrispondenza del sito delle impostazioni di rete: i criteri per le chiamate di emergenza vengono restituiti al client Teams dal sito. Per altre informazioni sui criteri, vedere [Configurare i criteri di emergenza.](#configure-emergency-policies)
+   - Se è presente una corrispondenza del sito impostazioni di rete: i criteri per le chiamate di emergenza vengono restituiti al client Teams dal sito. Per altre informazioni sui criteri, vedere [Configurare i criteri di emergenza.](#configure-emergency-policies)
 
-   - Se c'è una corrispondenza LIS: una posizione di emergenza dall'elemento di rete a cui il client Teams è connesso viene restituito al client Teams locale. La corrispondenza viene eseguita nell'ordine seguente con il primo risultato corrispondente restituito:
+   - Se c'è una corrispondenza LIS: una posizione di emergenza dall'elemento di rete a cui il client Teams è connesso viene restituito al client Teams servizio. La corrispondenza viene eseguita nell'ordine seguente con il primo risultato corrispondente restituito:
        - WAP
        - Switch/porta Ethernet
        - Switch Ethernet
@@ -49,11 +49,11 @@ Per le chiamate di emergenza dinamiche, deve verificarsi quanto segue:
 
 3. Quando il Teams effettua una chiamata di emergenza, la posizione di emergenza viene comunicata alla rete PSTN.
 
-La possibilità di eseguire il routing automatico al punto di risposta per la sicurezza pubblica (PSAP) appropriato varia a seconda del paese di utilizzo dell'Teams utente.
+La possibilità di eseguire il routing automatico al punto di risposta per la sicurezza pubblica (PSAP) appropriato varia a seconda del paese di utilizzo del Teams utente.
 
-Piani per chiamate Microsoft e Connessione con operatore partner includono servizi di routing dinamico per gli interventi di emergenza per gli utenti negli Stati Uniti e in Canada.
+I piani per chiamate Microsoft e Connessione con operatore partner includono servizi di routing dinamico per gli interventi di emergenza per gli utenti negli Stati Uniti e in Canada.
 
-Per il routing diretto, tuttavia, è necessaria una configurazione aggiuntiva per l'instradamento delle chiamate di emergenza e, eventualmente, per la connettività dei partner. L'amministratore deve configurare la connessione a un provider del servizio di routing di emergenza (ERS) (Stati Uniti e **Canada)** oppure configurare il Session Border Controller (SBC) per un'applicazione Emergency Location Identification Number (ELIN). Per informazioni sui provider ERS, vedere [Session Border Controllers certified for Direct Routing](direct-routing-border-controllers.md).
+Per il routing diretto, tuttavia, è necessaria una configurazione aggiuntiva per l'instradamento delle chiamate di emergenza e, eventualmente, per la connettività dei partner. L'amministratore deve assicurarsi che il gateway PSTN instradamento della chiamata di emergenza sia stato configurato per aggiungere informazioni sulla posizione all'invito in uscita (impostando il parametro PidfloSupported su True nell'oggetto gateway PSTN online. Inoltre, l'amministratore deve configurare la connessione a un provider del  servizio di routing di emergenza (ERS) (Stati Uniti e Canada) oppure configurare il Session Border Controller (SBC) per un'applicazione Emergency Location Identification Number (ELIN). Per informazioni sui provider ERS, vedere [Session Border Controllers certified for Direct Routing](direct-routing-border-controllers.md).
 
 Questo articolo contiene le sezioni seguenti.
 
@@ -80,19 +80,19 @@ Attualmente sono supportati i client seguenti.  Torna spesso per vedere gli aggi
 - Teams client desktop per Microsoft Windows
 - Teams desktop per Apple macOS
 - Teams client per dispositivi mobili Apple iOS versione 1.0.92.2019121004 e App Store versione 1.0.92 e successive
-- Teams client per dispositivi mobili Android e google play store versione 1416/1.0.0.2019121201 e successive
+- Teams client per dispositivi mobili Android e Google Play Store versione 1416/1.0.0.2019121201 e successive
 - Teams telefono 1449/1.0.94.2019110802 e successive
 - Teams Rooms versione 4.4.25.0 e successive
 
 > [!NOTE]
-> Le posizioni basate su subnet e WiFi sono supportate in tutti i client Teams client. <br><br>
+> Le posizioni basate su subnet e WiFi sono supportate in tutti i client Teams supportati. <br><br>
 > Ethernet/Switch (LLDP) è supportato in:
 > - Windows versioni 8.1 e successive al momento.<br>
 > - Mac OS, che richiede [il software di abilitazione llDP.](https://www.microsoft.com/download/details.aspx?id=103383)<br>
-> - Teams telefono con Teams app 1449/1.0.94.2021110101 e successive.
+> - Teams telefono con Teams'app 1449/1.0.94.2021110101 e successive.
 
 > [!NOTE]
-> Le chiamate di emergenza dinamiche, inclusa la notifica del security desk, non sono supportate nel client Teams Web. Per impedire agli utenti di usare il client Web Teams per chiamare i numeri PSTN, è possibile impostare un criterio di chiamata Teams e disattivare l'impostazione Consenti chiamate **PSTN** Web. Per altre informazioni, vedere Criteri di [chiamata in Teams](teams-calling-policy.md) e [Set-CsTeamsCallingPolicy.](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) 
+> Le chiamate di emergenza dinamiche, inclusa la notifica del security desk, non sono supportate nel client Teams Web. Per impedire agli utenti di usare il client Web Teams per chiamare i numeri PSTN, è possibile impostare un criterio di chiamata Teams e disattivare l'impostazione Consenti chiamate **PSTN** Web. Per altre informazioni, vedere [Criteri di chiamata in Teams](teams-calling-policy.md) e [Set-CsTeamsCallingPolicy.](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) 
 
 > [!NOTE]
 > I telefoni 3PIP non supportano chiamate di emergenza dinamiche. 
@@ -165,7 +165,7 @@ Si noti che la propagazione e la disponibilità di alcune modifiche alle imposta
 
 Un Teams di emergenza ottiene gli indirizzi di emergenza dalle posizioni associate a diversi identificatori di rete. 
 
-Per ottenere una posizione da un client, è necessario popolare il LIS con identificatori di rete (subnet, WAP, switch, porte) e posizioni di emergenza. È possibile farlo nell'interfaccia Microsoft Teams di amministrazione o usando PowerShell.
+Per ottenere una posizione da un client, è necessario popolare il LIS con identificatori di rete (subnet, WAP, switch, porte) e posizioni di emergenza. È possibile eseguire questa operazione nell'Microsoft Teams di amministrazione o usando PowerShell.
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 

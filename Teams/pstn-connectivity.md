@@ -24,12 +24,12 @@ search.appverid: MET150
 description: Altre informazioni sulle opzioni Teams chiamate (connettività PSTN) e sulle decisioni da prendere per l'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 994115cdf1dda3b5f938b6816623ead2a4196fdb
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: 49c836687d7652c18b5932bd662d8ee935638d8a
+ms.sourcegitcommit: d2c76fe7705acf6e53f7673861671b1b018813dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61766849"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "62015276"
 ---
 # <a name="pstn-connectivity-options"></a>Opzioni di connettività PSTN
 
@@ -41,7 +41,7 @@ Per connettersi Teams Telefono alla rete PSTN, è possibile scegliere tra le opz
 
 - [**Piano chiamate**](#teams-phone-with-calling-plan). Una soluzione all-in-the-cloud con Microsoft come gestore PSTN.
 
-- [**Connessione con operatore**](#teams-phone-with-operator-connect), attualmente disponibile solo **nell'anteprima pubblica.**  Con Connessione con operatore, se il gestore esistente è un partecipante al programma Microsoft Connessione con operatore, può gestire le chiamate PSTN e i session border controller (SBC). 
+- [**Connessione con operatore**](#teams-phone-with-operator-connect). Con Connessione con operatore, se il gestore esistente è un partecipante al programma Microsoft Connessione con operatore, può gestire le chiamate PSTN e i session border controller (SBC). 
 
 - [**Routing diretto**](#teams-phone-with-direct-routing), che consente di usare il proprio gestore PSTN collegando i controller di bordo della sessione (SBC) a Teams Telefono.
 
@@ -51,7 +51,7 @@ Per connettersi Teams Telefono alla rete PSTN, è possibile scegliere tra le opz
 Tenere presente che l'opzione o le opzioni selezionate influiscono sulla configurazione di Teams Telefono caratteristiche. Per altre informazioni, vedere [Considerazioni sulla configurazione](#configuration-considerations) più avanti in questo articolo.
 
 
-## <a name="teams-phone-with-calling-plan"></a>Teams Telefono piano chiamate 
+## <a name="teams-phone-with-calling-plan"></a>Servizi telefonici con piano per chiamate 
 
 Teams Telefono piano chiamate è la soluzione vocale all-in-the-cloud di Microsoft per Teams utenti. Questa è l'opzione più semplice che Teams Telefono alla rete PSTN. Con questa opzione, Microsoft funge da gestore PSTN, come illustrato nel diagramma seguente:
 
@@ -91,16 +91,16 @@ Connessione con operatore potrebbe essere la soluzione giusta per l'organizzazio
 - Il gestore preferito è un partecipante al programma Microsoft Connessione con operatore microsoft.
 - Si vuole trovare un nuovo gestore per abilitare le chiamate in Teams.
 
-Per informazioni sui vantaggi e i requisiti di Connessione con operatore e per un elenco dei corrieri che partecipano a questo programma, vedere Pianificare Connessione con operatore [.](operator-connect-plan.md) Per informazioni su come configurare Connessione con operatore, vedere [Configurare Connessione con operatore](operator-connect-configure.md).
+Per informazioni sui vantaggi e i requisiti di Connessione con operatore e per un elenco dei corrieri che partecipano a questo programma, vedere Pianificare Connessione con operatore [.](operator-connect-plan.md) Per informazioni su come configurare i Connessione con operatore, vedere [Configurare Connessione con operatore](operator-connect-configure.md).
 
 
-## <a name="teams-phone-with-direct-routing"></a>Teams Telefono con routing diretto
+## <a name="teams-phone-with-direct-routing"></a>Teams Telefono routing diretto
 
-Questa opzione consente di Teams Telefono alla rete di telefonia tramite Routing diretto, come illustrato nel diagramma seguente: 
+Questa opzione consente Teams Telefono alla rete di telefonia tramite Routing diretto, come illustrato nel diagramma seguente: 
 
 ![Il diagramma 5 mostra Sistema telefonico routing diretto.](media/voice-solution-with-direct-routing.png)
 
-Se si risponde sì alle domande seguenti, Teams Telefono routing diretto è la soluzione giusta:
+Se si risponde sì alle domande seguenti, Teams Telefono il routing diretto è la soluzione giusta:
 
 - Si vuole usare le Teams con Teams Telefono.
 - È necessario conservare il gestore PSTN corrente.
@@ -166,7 +166,7 @@ La modalità di acquisizione e gestione dei numeri di telefono varia a seconda d
 
 - Per informazioni sulla gestione dei numeri di telefono per il piano chiamate, vedere [Gestire i numeri di telefono per l'organizzazione.](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
-- Per informazioni sulla gestione dei numeri di telefono con Connessione con operatore, vedere Configurare i numeri di [telefono con Connessione con operatore](operator-connect-configure.md#set-up-phone-numbers).
+- Per informazioni sulla gestione dei numeri di telefono con Connessione con operatore, vedere Configurare i numeri [di telefono con Connessione con operatore](operator-connect-configure.md#set-up-phone-numbers).
 
 - Per informazioni sulla gestione dei numeri di telefono per Il routing diretto, vedere Configurare il numero di telefono [e abilitare la segreteria telefonica e la segreteria telefonica aziendale.](direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice-and-voicemail-online)
 
@@ -184,7 +184,7 @@ La modalità di configurazione del routing delle chiamate varia a seconda dell'o
 
 ### <a name="location-based-routing-for-direct-routing"></a>Location-Based routing diretto
 
-In alcuni paesi e aree geografiche, è illegale ignorare il gestore PSTN per ridurre i costi delle chiamate interurbane. Location-Based routing diretto (LBR) per il routing diretto consente di limitare il bypass a pedaggio per Teams utenti in base alla loro posizione geografica. Per altre informazioni su come pianificare e configurare LBR, vedere gli articoli seguenti:
+In alcuni paesi e aree geografiche, è illegale ignorare il gestore PSTN per ridurre i costi delle chiamate interurbane. Location-Based routing (LBR) per il routing diretto consente di limitare il bypass a pedaggio per Teams utenti in base alla loro posizione geografica. Per altre informazioni su come pianificare e configurare LBR, vedere gli articoli seguenti:
 
 - [Pianificare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-plan.md)
 - [Configurare le impostazioni di rete per l'instradamento basato sulla posizione](location-based-routing-configure-network-settings.md)
