@@ -1,7 +1,7 @@
 ---
 title: Mascherare i numeri di telefono nelle Microsoft Teams riunioni
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: heidip
+ms.author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: moakram
 ms.topic: article
@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come mascherare i numeri di telefono nelle Microsoft Teams riunioni
-ms.openlocfilehash: afdbaa4f2f437728aad14e3731ab3e26ba90f36d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: a40f1a7144298c6106183eb45fe80a8958227b1a
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60828429"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055096"
 ---
 # <a name="mask-phone-numbers-in-microsoft-teams-meetings"></a>Mascherare i numeri di telefono nelle Microsoft Teams riunioni
 
@@ -33,7 +33,7 @@ Per una maggior privacy, i numeri di telefono dei partecipanti che a una riunion
 
 Per casi d'uso specifici del settore, gli amministratori hanno la possibilità di scegliere come vengono visualizzati i numeri di telefono dei partecipanti ai servizi di audioconferenza nelle riunioni organizzate nel tenant. Gli amministratori possono scegliere tra tre opzioni:
 
-- Telefono i numeri vengono mascherati solo da partecipanti esterni. I partecipanti che appartengono al tenant dell'organizzatore della riunione continuano a visualizzare il numero di telefono completo.
+- Telefono numeri sono mascherati solo da partecipanti esterni. I partecipanti che appartengono al tenant dell'organizzatore della riunione continuano a visualizzare il numero di telefono completo.
 - Telefono i numeri sono mascherati da tutti i partecipanti alla riunione, ad eccezione dell'organizzatore.
 - Telefono i numeri vengono smascherati, che li rende visibili a tutti i partecipanti alla riunione.
 

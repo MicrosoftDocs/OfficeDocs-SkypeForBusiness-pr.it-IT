@@ -1,7 +1,7 @@
 ---
 title: Opzioni di posta elettronica quando vengono modificate le impostazioni dei servizi di audioconferenza
-ms.author: tonysmit
-author: tonysmit
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: oscarr
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: "Informazioni su come abilitare o disabilitare Skype l'invio di messaggi di posta elettronica agli utenti quando vengono apportate modifiche a impostazioni come il pin o il numero di conferenza predefinito in Microsoft Teams. "
-ms.openlocfilehash: fa52306afbee534b52e9bfdbd304a22cda395704
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: 568a42badd375314ee5b29529a53b52b1f6267eb
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60537227"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055296"
 ---
 # <a name="enable-or-disable-sending-emails-when-audio-conferencing-settings-change-in-microsoft-teams"></a>Abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di audioconferenza cambiano in Microsoft Teams
 
@@ -41,40 +41,38 @@ Ecco un esempio del messaggio di posta elettronica inviato agli utenti quando so
 ## <a name="when-are-emails-being-sent-to-your-users"></a>I messaggi di posta elettronica quando vengono inviati agli utenti?
 
 - Sono disponibili diversi messaggi di posta elettronica inviati agli utenti dell'organizzazione dopo che sono stati abilitati per le audioconferenze:
-    
-  - Quando una licenza di **Audioconferenza** viene loro assegnata.
-    
-  - Quando si reimposta manualmente il PIN di audioconferenza dell'utente.
-    
-  - Quando reimposti manualmente l'ID conferenza dell'utente.
-    
-  - Quando la licenza di **Audioconferenza** viene loro rimossa.
-    
-  - Quando il provider di servizi di audioconferenza di un utente viene modificato da Microsoft a un altro provider o **Nessuno**.
-    
-  - Quando il provider di servizi di audioconferenza di un utente viene modificato in Microsoft.
 
+  - Quando una licenza di **Audioconferenza** viene loro assegnata.
+
+  - Quando si reimposta manualmente il PIN di audioconferenza dell'utente.
+
+  - Quando reimposti manualmente l'ID conferenza dell'utente.
+
+  - Quando la licenza di **Audioconferenza** viene loro rimossa.
+
+  - Quando il provider di servizi di audioconferenza di un utente viene modificato da Microsoft a un altro provider o **Nessuno**.
+
+  - Quando il provider di servizi di audioconferenza di un utente viene modificato in Microsoft.
 
 ## <a name="enable-or-disable-email-from-being-sent-to-users"></a>Abilitare o disabilitare l'invio di posta elettronica agli utenti
 
 È possibile usare le Microsoft Teams o Windows PowerShell per abilitare o disabilitare la posta elettronica inviata agli utenti.
 
- **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro, passare a **Riunioni** > **Bridge di conferenza**. 
+1. Nel riquadro di spostamento sinistro, passare a **Riunioni** > **Bridge di conferenza**.
 
-2. Nella parte superiore della pagina **Bridge di conferenza** fare clic su Impostazioni **bridge.** 
+2. Nella parte superiore della pagina **Bridge di conferenza** fare clic su Impostazioni **bridge.**
 
 3. Nel riquadro **Impostazioni bridge** abilitare o disabilitare Invia automaticamente messaggi di posta elettronica agli utenti se le impostazioni di accesso **remoto cambiano.**
 
 4. Fare clic su **Salva**.
 
-  
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
 
-**Uso di Windows PowerShell**
-  
+### <a name="using-windows-powershell"></a>Uso di Windows PowerShell
+
 È anche possibile usare il modulo Microsoft Teams PowerShell ed eseguire:
 
 ```PowerShell
@@ -85,18 +83,16 @@ Set-CsOnlineDialInConferencingTenantSettings -AutomaticallySendEmailsToUsers $tr
 
 Per altre [informazioni, Microsoft Teams informazioni di riferimento su PowerShell.](/powershell/module/teams/?view=teams-ps)
 
-    
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 tramite un'unica posizione di amministrazione, semplificando il lavoro quotidiano quando si hanno più attività da completare. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
-    
-  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
-    
-  - [Modi migliori per gestire Office 365 con Windows PowerShell](/previous-versions//dn568025(v=technet.10))
-    
+
+- [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
+
+- [Modi migliori per gestire Office 365 con Windows PowerShell](/previous-versions//dn568025(v=technet.10))
+
 Per altre informazioni su Windows PowerShell, vedere [Riferimenti su PowerShell in Microsoft Teams](/powershell/module/teams/?view=teams-ps).
-    
-  
+
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Messaggi di posta elettronica inviati agli utenti quando cambiano le impostazioni di audioconferenza](emails-sent-to-users-when-their-settings-change-in-teams.md)

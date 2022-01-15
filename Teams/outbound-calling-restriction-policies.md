@@ -1,8 +1,8 @@
 ---
 title: Restrizioni per le chiamate in uscita - Audioconferenza & chiamate PSTN
 ms.reviewer: ''
-ms.author: tonysmit
-author: tonysmit
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.topic: article
 ms.tgt.pltfrm: cloud
@@ -21,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Gli amministratori possono controllare il tipo di audioconferenza e le chiamate PSTN degli utenti finali che possono essere effettuate dagli utenti.
-ms.openlocfilehash: 7f1ec4886c1e1ede22c280091f2ebce9965b6d3b
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: 39a51c1fdf6bbb7597b255fc5879a4d7a77be2db
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61766239"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055176"
 ---
 # <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente
 
@@ -42,25 +42,24 @@ I controlli delle chiamate in uscita possono essere applicati in base all'utente
 Per scoprire quali paesi e aree geografiche sono considerati zona A, vedere Aree geografiche [e aree geografiche per audioconferenza.](audio-conferencing-zones.md)
 
    > [!NOTE]
-   > Una chiamata è considerata nazionale se il numero composto si trova nello stesso paese in cui è stato configurato Microsoft 365 o Office 365 per l'organizzatore della riunione (nel caso delle audioconferenze) o per l'utente finale (nel caso delle chiamate PSTN dell'utente finale).
+   > Una chiamata viene considerata nazionale se il numero composto si trova nello stesso paese in cui è stato configurato Microsoft 365 o Office 365 per l'organizzatore della riunione (nel caso delle audioconferenze) o per l'utente finale (nel caso delle chiamate PSTN dell'utente finale).
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
 
 ## <a name="restrict-audio-conferencing-outbound-calls"></a>Limitare le chiamate in uscita per le audioconferenze
 
-**Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 1. Nel riquadro di spostamento sinistro selezionare **Utenti** e quindi selezionare il nome visualizzato dell'utente nell'elenco degli utenti disponibili.
 
-3. Accanto a **Audioconferenza** selezionare **Modifica.**
+2. Passare quindi a **Audioconferenza** e selezionare **Modifica.**
 
-4. In **Uscita da riunioni** selezionare l'opzione di restrizione della chiamata in uscita desiderata.
+3. In **Uscita da riunioni** selezionare l'opzione di restrizione della chiamata in uscita desiderata.
 
-5. Selezionare **Salva**.
+4. Selezionare **Salva**.
 
-
-**Utilizzo di PowerShell**
+### <a name="using-powershell"></a>Utilizzo di PowerShell
 
 Le restrizioni per le chiamate in uscita sono controllate da un singolo criterio denominato OnlineDialOutPolicy, che ha un attributo di restrizione per ogni criterio. Il criterio non può essere personalizzato, ma esistono istanze dei criteri predefinite per ogni combinazione di impostazioni.
 

@@ -1,7 +1,7 @@
 ---
 title: Chiamata in uscita da una riunione in modo che altre persone possano partecipare
-ms.author: tonysmit
-author: tonysmit
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: oscarr
 ms.topic: article
@@ -22,16 +22,16 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Gli organizzatori della riunione possono imparare a effettuare chiamate in uscita usando l'app Teams per consentire ad altre persone di partecipare alla stessa riunione usando i telefoni.
-ms.openlocfilehash: 690ae9a1597f2d6f1621deb264d9115780d35622
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 13389099e936ee8b3d6a005ae808f46f48abafea
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58725645"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055836"
 ---
 # <a name="dialing-out-from-a-microsoft-teams-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione Microsoft Teams in modo che altre persone possano parteciparvi
 
-L'organizzatore della riunione può effettuare chiamate in uscita usando l'app Teams per consentire ad altre persone di partecipare alla stessa riunione usando i telefoni.
+L'organizzatore della riunione può effettuare chiamate in uscita usando l'app Teams per consentire ad altre persone di partecipare alla stessa riunione usando i loro telefoni.
 
 Quando si chiama un utente, è consigliabile farlo usando i numeri di telefono completi (incluso il codice paese/area geografica - formato E.164).
   
@@ -50,7 +50,7 @@ Ecco come usare la chiamata in uscita:
  **Passaggio 2:** Immetti il numero di telefono completo, incluso il codice paese/area geografica nella casella **Invita qualcuno o componi un numero.**
   
 ![Screenshot della casella Invita qualcuno o componi un numero.](media/invite-someone-box.png)
-    
+
 ## <a name="supported-countries-and-regions"></a>Paesi e aree geografiche supportati
 
 Dial-out is only available to some countries/regions. Per l'elenco completo, vedere [Disponibilità di paesi e aree geografica per audioconferenze e piani per chiamate.](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
@@ -62,5 +62,5 @@ Se si cercano istruzioni su come consentire agli utenti di accedere a una riunio
 ## <a name="want-to-know-more-about-audio-conferencing"></a>Per saperne di più sui servizi di conferenza telefonica con accesso esterno
 
 [Provare o acquistare audioconferenze](try-or-purchase-audio-conferencing-in-office-365-for-teams.md)
-    
+
 [Licenze per i componenti aggiuntivi di Microsoft Teams](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)

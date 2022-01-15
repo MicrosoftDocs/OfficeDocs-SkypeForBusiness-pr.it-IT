@@ -1,7 +1,7 @@
 ---
 title: Disponibilità del paese/area geografica - Audioconferenze, piani per chiamate
-ms.author: czawideh
-author: czawideh
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: mikedav, jastark, oscarr, LolaJacobsen
 ms.topic: reference
@@ -26,12 +26,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Scopri se audioconferenza, Sistema telefonico, Piani per chiamate, Crediti comunicazioni e numeri a pagamento e numeri a pagamento gratuiti sono disponibili in un paese o un'area geografica.
-ms.openlocfilehash: 8480fcbe512ed53bf7a94753b22214b50b8f3f85
-ms.sourcegitcommit: b57e19e20900ff02f3196c811bf1dd1acd149c79
+ms.openlocfilehash: ab534a020e91caaa6f9608857d6de76f5505b899
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60579526"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056076"
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani di chiamata per Paese e area geografica
 
@@ -161,7 +161,7 @@ Se si sta cercando un foglio di calcolo con tutti i paesi e le aree geografiche,
 
 ***
 
-Dopo aver verificato se uno dei servizi Skype for Business o Microsoft Teams è disponibile, è possibile visualizzare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams per acquistare licenze e assegnarle [agli](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md) utenti.
+Dopo aver verificato se uno dei servizi Skype for Business o Microsoft Teams è disponibile, è possibile visualizzare le licenze per i componenti aggiuntivi Skype for Business e [Microsoft Teams per](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md) acquistare licenze e assegnarle agli utenti.
 
 > [!NOTE]
 >
@@ -171,7 +171,7 @@ Dopo aver verificato se uno dei servizi Skype for Business o Microsoft Teams è 
 
 ### <a name="audio-conferencing"></a>Audioconferenza
 
-A volte le persone all’interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Skype for Business e Microsoft Teams include la funzionalità di audioconferenza per questa situazione. È possibile accedere alle riunioni utilizzando un telefono anziché le app Skype for Business e Microsoft Teams su un dispositivo mobile o un PC. Dopo aver deciso di volere audioconferenza per l'organizzazione, acquistare una licenza di **audioconferenza** per ogni persona dell'organizzazione che pianifica o ospiterà una riunione audio.
+A volte le persone all’interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Skype for Business e Microsoft Teams include la funzionalità di audioconferenza solo per questa situazione. È possibile accedere alle riunioni utilizzando un telefono anziché le app Skype for Business e Microsoft Teams su un dispositivo mobile o un PC. Dopo aver deciso di volere audioconferenza per l'organizzazione, acquistare una licenza di **audioconferenza** per ogni persona dell'organizzazione che pianifica o ospiterà una riunione audio.
   
 Con le audioconferenze sono disponibili numeri a numero verde e a numero verde che possono essere usati dagli utenti per accedere alle riunioni. I numeri a tariffa dei seguenti paesi o aree geografiche vengono assegnati automaticamente come numeri condivisi dei servizi di audioconferenza alle organizzazioni in cui è abilitata l’Audioconferenza. I numeri a pedaggio e a numero verde dedicati possono essere assegnati all'organizzazione da altre città.
 
@@ -193,9 +193,9 @@ La chiamata in uscita da una riunione in un altro paese/area geografica del mond
   
 ### <a name="phone-system"></a>Sistema telefonico
 
-Con Sistema telefonico, è possibile creare operatori automatici e code di chiamata (con un numero verde o a pagamento) per rispondere alle chiamate in arrivo per l'organizzazione. Quando aggiungi un Piano chiamate per gli utenti, questi possono usare Skype for Business per occuparsi delle attività di controllo delle chiamate di base, come effettuare e ricevere chiamate, trasferire chiamate e disattivare e riattivare l'audio delle chiamate. **Sistema telefonico** utenti fare clic su un nome nella rubrica e Skype for Business una chiamata a tale persona. Per effettuare e ricevere chiamate, **Sistema telefonico** utenti usano i loro dispositivi mobili, un auricolare con un portatile o un PC o uno dei molti telefoni IP che funzionano con Skype for Business.
+Con Sistema telefonico, è possibile creare operatori automatici e code di chiamata (con un numero verde o a pagamento) per rispondere alle chiamate in arrivo per l'organizzazione. Quando si aggiunge un Piano chiamate per gli utenti, questi possono usare Skype for Business per occuparsi delle attività di base di controllo delle chiamate, ad esempio effettuare e ricevere chiamate, trasferire chiamate e disattivare e riattivare l'audio delle chiamate. **Sistema telefonico** utenti fare clic su un nome nella rubrica e Skype for Business una chiamata a tale persona. Per effettuare e ricevere chiamate, **Sistema telefonico** utenti usano i loro dispositivi mobili, un auricolare con un portatile o un PC o uno dei molti telefoni IP che funzionano con Skype for Business.
 
-La disponibilità di numeri verdi a pagamento per alcune di queste località può variare a seconda dei livelli di inventario. Oltre a ottenere numeri di telefono per singoli utenti, è anche possibile cercare e acquistare numeri a numero verde o a pedaggio per servizi come audioconferenza (per bridge di conferenza), operatori automatici e code di chiamata. Questi vengono detti numeri di servizio. Per ottenere nuovi numeri, consultare [Ottenere numeri di servizio](../getting-service-phone-numbers.md). Ai tuoi utenti, tuttavia, una volta assegnato loro un Piano per le chiamate, puoi assegnare un numero di telefono utente per permettere loro di effettuare e ricevere chiamate. Per trovare questi numeri di telefono, consultare [Recuperare numeri di telefono per gli utenti](../getting-phone-numbers-for-your-users.md). Puoi anche consultare [Assegnare, modificare o rimuovere il numero di telefono di un utente](../assign-change-or-remove-a-phone-number-for-a-user.md).
+La disponibilità di numeri verdi a pagamento per alcune di queste località può variare a seconda dei livelli di inventario. Oltre a ottenere numeri di telefono per singoli utenti, è anche possibile cercare e acquisire numeri a numero verde o a pedaggio per servizi come audioconferenza (per bridge di conferenza), operatori automatici e code di chiamata. Questi vengono chiamati numeri di servizio. Per ottenere nuovi numeri, consultare [Ottenere numeri di servizio](../getting-service-phone-numbers.md). Ai tuoi utenti, tuttavia, una volta assegnato loro un Piano per le chiamate, puoi assegnare un numero di telefono utente per permettere loro di effettuare e ricevere chiamate. Per trovare questi numeri di telefono, consultare [Recuperare numeri di telefono per gli utenti](../getting-phone-numbers-for-your-users.md). Puoi anche consultare [Assegnare, modificare o rimuovere il numero di telefono di un utente](../assign-change-or-remove-a-phone-number-for-a-user.md).
 
 [Tariffe del Sistema telefonico](https://www.microsoft.com/microsoft-teams/voice-calling?#office-StandaloneSKU-pkdogb9)
 
@@ -219,7 +219,7 @@ Oltre a ottenere numeri di telefono per singoli utenti, è anche possibile cerca
   
 Di seguito è riportato un elenco delle capitali e delle principali città da cui è possibile ottenere i numeri di servizio a tariffa da utilizzare con Audioconferenza e Piani per chiamate. È possibile ottenere numeri di servizio a pedaggio da queste posizioni **usando l'Skype for Business di amministrazione.**
   
-Se si vuole ottenere un numero di servizio a numero verde o a pedaggio gratuito, è possibile vedere Ottenere [numeri di telefono del servizio](../getting-service-phone-numbers.md). Se si ha già un numero di servizio a numero verde o a numero verde che si vuole trasferire da un altro provider, vedere Gestire i numeri di telefono [per l'organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+Se si vuole ottenere un numero di servizio a numero verde o a pedaggio gratuito, è possibile vedere Ottenere [numeri di telefono del servizio](../getting-service-phone-numbers.md). Se si ha già un numero a pedaggio o un numero verde che si vuole trasferire da un altro provider, vedere Gestire i numeri di telefono [per l'organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
 Utilizza l'elenco a discesa in alto per cercare un paese o un’area geografica e sapere quali servizi sono disponibili.
 

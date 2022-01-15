@@ -1,7 +1,7 @@
 ---
 title: Servizi di conferenza in rete per audioconferenza
-ms.author: crowe
-author: CarolynRowe
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: oscarr
 ms.topic: conceptual
@@ -19,16 +19,16 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Di seguito sono descritte le funzionalità in rete per le audioconferenze.
-ms.openlocfilehash: 7d477826c79b1a1630616cc51130348bfb953fa7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c6820bade333b6672d00e4f52a361280c10c8771
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58620712"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055666"
 ---
 # <a name="on-network-conferencing-for-audio-conferencing"></a>Servizi di conferenza in rete per audioconferenza
 
-Le conferenze in rete consentono alle organizzazioni di inviare chiamate di audioconferenza in ingresso e in uscita ai numeri di accesso esterno Microsoft tramite Routing diretto. Questa funzionalità non è progettata per estendere il supporto delle audioconferenze ai numeri di accesso esterno di terze parti. Le conferenze in rete non sono supportate se vengono usate per instradare le chiamate in ingresso al servizio di audioconferenza tramite numeri di telefono con accesso esterno di terze parti o chiamate in uscita alla rete PSTN da Microsoft Audio Conferencing Bridge. 
+Le conferenze in rete consentono alle organizzazioni di inviare chiamate di audioconferenza in ingresso e in uscita ai numeri di accesso esterno Microsoft tramite Routing diretto. Questa funzionalità non è progettata per estendere il supporto delle audioconferenze ai numeri di accesso esterno di terze parti. Le conferenze in rete non sono supportate se vengono usate per instradare le chiamate in ingresso al servizio di audioconferenza tramite numeri di telefono con accesso esterno di terze parti o chiamate in uscita alla rete PSTN da Microsoft Audio Conferencing Bridge.
 
 Questo articolo descrive i prerequisiti e i passaggi di configurazione necessari per abilitare le conferenze in rete per l'organizzazione.
 
@@ -37,34 +37,34 @@ Questo articolo descrive i prerequisiti e i passaggi di configurazione necessari
   
 ## <a name="prerequisites"></a>Prerequisiti
 
-Prima di configurare le conferenze in rete, assicurarsi che l'organizzazione soddisfi i prerequisiti seguenti: 
+Prima di configurare le conferenze in rete, assicurarsi che l'organizzazione soddisfi i prerequisiti seguenti:
 
-- Assicurarsi che tutti gli utenti dell'organizzazione abilitati o abilitati per le audioconferenze utilizzino Teams per tutte le riunioni. Il routing delle chiamate di audioconferenza in ingresso e in uscita tramite conferenze in rete è supportato solo per le riunioni Teams riunioni.
+- Assicurarsi che tutti gli utenti dell'organizzazione abilitati o abilitati per le audioconferenze utilizzino Teams per tutte le riunioni. L'instradamento delle chiamate di audioconferenza in ingresso e in uscita tramite conferenze in rete è supportato solo per le Teams riunioni.
 
 - Assegnare licenze di audioconferenza a tutti gli utenti che usano servizi di conferenza in rete.
 
 - Configurare il servizio di audioconferenza. Per altre informazioni, vedere [Configurare audioconferenze per Microsoft Teams](set-up-audio-conferencing-in-teams.md).
 
-- Configurare il session border controller (SBC) per il routing diretto. Per altre informazioni, vedere [Pianificare il routing diretto](direct-routing-plan.md) e Configurare il routing [diretto.](direct-routing-configure.md) 
+- Configurare il session border controller (SBC) per il routing diretto. Per altre informazioni, vedere [Pianificare il routing diretto](direct-routing-plan.md) e Configurare il routing [diretto.](direct-routing-configure.md)
 
-  Se si configura il routing diretto solo ai fini delle audioconferenze, è necessario completare solo "Passaggio 1: Connessione SBC" per le conferenze in rete.
+  Se si configura il routing diretto solo ai fini delle audioconferenze, è necessario completare solo il "Passaggio 1: Connessione SBC" per le conferenze in rete.
   
-## <a name="enable-the-routing-of-dial-in-calls-to-microsoft-audio-conferencing-through-direct-routing"></a>Abilitare il routing delle chiamate con accesso esterno alle audioconferenze Microsoft tramite routing diretto 
+## <a name="enable-the-routing-of-dial-in-calls-to-microsoft-audio-conferencing-through-direct-routing"></a>Abilitare il routing delle chiamate con accesso esterno alle audioconferenze Microsoft tramite routing diretto
 
-Per instradare le chiamate con accesso esterno effettuate dagli utenti locali al servizio di audioconferenza tramite routing diretto, è necessario configurare le regole di routing appropriate per gli SBC e i sistemi PBC (Private Branch Exchange).
+Per instradare le chiamate con accesso esterno effettuate dagli utenti locali al servizio di audioconferenza tramite routing diretto, è necessario configurare le regole di routing appropriate per gli SBC e i sistemi DIS (Private Branch Exchange) (PBC).
 
 È necessario configurare le apparecchiature di telefonia dei siti per instradare le chiamate a qualsiasi numero di servizio del bridge di conferenza dell'organizzazione tramite un trunk di routing diretto.
 
-È possibile trovare i numeri di servizio nell Teams intervalla di amministrazione in Riunioni **-> Conferencing Bridges** o usando il cmdlet di PowerShell di Skype for Business Online Get-CsOnlineDialInConferencingBridge. Per altre informazioni, vedere un elenco di numeri [di audioconferenza in Microsoft Teams](see-a-list-of-audio-conferencing-numbers-in-teams.md).
+È possibile trovare i numeri di servizio nell'interfaccia di amministrazione di Teams in Riunioni **-> Conferencing Bridges** o usando il cmdlet di PowerShell di Skype for Business Online Get-CsOnlineDialInConferencingBridge. Per altre informazioni, vedere un elenco di numeri [di audioconferenza in Microsoft Teams](see-a-list-of-audio-conferencing-numbers-in-teams.md).
 
 > [!NOTE]
 > Questa funzionalità non è disponibile per gli utenti con la licenza di audioconferenza a pagamento al minuto.
 
 ## <a name="enable-the-routing-of-teams-meeting-dial-out-calls-through-direct-routing"></a>Abilitare l'instradamento Teams chiamate in uscita tramite Routing diretto
 
-Teams le chiamate in uscita di una riunione vengono avviate dall'interno di una riunione dell'organizzazione ai numeri PSTN, incluse le chiamate con chiamata al telefono e le chiamate per portare i nuovi partecipanti a una riunione. 
+Teams le chiamate in uscita di una riunione vengono avviate dall'interno di una riunione dell'organizzazione ai numeri PSTN, incluse le chiamate con chiamata al telefono e le chiamate per portare i nuovi partecipanti a una riunione.
 
-Per abilitare Teams routing esterno delle riunioni tramite Routing diretto agli utenti in rete, è necessario creare e assegnare un criterio di routing delle audioconferenze denominato "OnlineAudioConferencingRoutingPolicy". 
+Per abilitare Teams routing esterno delle riunioni tramite Routing diretto agli utenti in rete, è necessario creare e assegnare un criterio di routing delle audioconferenze denominato "OnlineAudioConferencingRoutingPolicy".
 
 Il criterio OnlineAudioConferencingRoutingPolicy equivale al criterio CsOnlineVoiceRoutingPolicy per le chiamate PSTN 1:1 tramite routing diretto. Il criterio OnlineAudioConferencingRoutingPolicy può essere gestito usando i cmdlet seguenti:
 
@@ -76,8 +76,7 @@ Il criterio OnlineAudioConferencingRoutingPolicy equivale al criterio CsOnlineVo
 
 Per altre informazioni sul routing per il routing diretto, vedere [Configurare il routing vocale per il routing diretto.](direct-routing-voice-routing.md)
 
-
-Per abilitare l'instradamento delle chiamate in uscita delle riunioni tramite Routing diretto, è necessario: 
+Per abilitare l'instradamento delle chiamate in uscita delle riunioni tramite Routing diretto, è necessario:
 
 - Configurare i criteri di routing delle audioconferenze
 - Configurare il routing nell'apparecchiatura di telefonia dell'organizzazione
@@ -90,11 +89,11 @@ Le chiamate in uscita provenienti Teams riunioni sono provenienti dal numero di 
 Il criterio di routing delle audioconferenze OnlineAudioConferencingRoutingPolicy determina quali chiamate in uscita della riunione vengono instradati ai trunk di routing diretto. Se si ha familiarità con il criterio CsOnlineVoiceRoutingPolicy, questo criterio funziona in modo molto simile.
 
 Per configurare i criteri di routing delle audioconferenze, sono necessari i passaggi seguenti:
-1.  Creare utilizzi PSTN
-2.  Configurare le route vocali
-3.  Creare criteri di routing vocale per le audioconferenze
-4.  Assegnare un criterio agli utenti
 
+1. Creare utilizzi PSTN
+1. Configurare le route vocali
+1. Creare criteri di routing vocale per le audioconferenze
+1. Assegnare un criterio agli utenti
 
 #### <a name="create-pstn-usages"></a>Creare utilizzi PSTN
 
@@ -138,11 +137,9 @@ Dopo aver definito i criteri di routing delle audioconferenze, è ora possibile 
 Grant-CsOnlineAudioConferencingRoutingPolicy -Identity "<User Identity>" -PolicyName "Policy 1”
 ```
 
-
 ### <a name="configure-routing-on-the-telephony-equipment-of-your-organization"></a>Configurare il routing nelle apparecchiature di telefonia dell'organizzazione
 
 Nelle apparecchiature di telefonia dell'organizzazione è necessario assicurarsi che le chiamate in uscita della riunione instradati tramite Routing diretto siano instradati alla destinazione in rete prevista.
-
 
 ### <a name="optional-configure-a-dial-plan"></a>(Facoltativo) Configurare un piano di chiamata
 
@@ -153,5 +150,3 @@ Per impostazione predefinita, Teams gli utenti possono effettuare chiamate in us
 Se si vuole abilitare la composizione basata sull'interno tramite servizi di conferenza telefonica in rete, è possibile configurare i piani di chiamata in modo che corrispondano allo schema di composizione dell'interno agli intervalli di numeri di telefono del numero di telefono dell'organizzazione. Per configurare i dial plan, vedere [Creare e gestire i dial plan.](create-and-manage-dial-plans.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
-
-

@@ -1,7 +1,7 @@
 ---
 title: Periodo di accesso gratuito
-ms.author: tonysmit
-author: tonysmit
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: mikedav, OscarR
 ms.topic: conceptual
@@ -22,13 +22,13 @@ f1.keywords:
 ms.custom:
 - Legal
 - seo-marvel-mar2020
-description: Informazioni sul periodo di chiamata in uscita gratuito per il piano Microsoft 365 o Office 365 chiamate e Office 365 audioconferenza in Microsoft Teams.
-ms.openlocfilehash: fa571a355f4eb9a546c2c231e9a06f83d4374029
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Informazioni sul periodo di chiamata in uscita gratuito per Microsoft 365 piano per chiamate Office 365 chiamate e Office 365 audioconferenza in Microsoft Teams.
+ms.openlocfilehash: 5cdc9d7c9c19218a29685fc7ff256d27ef81462a
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58619602"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055496"
 ---
 # <a name="audio-conferencing-complimentary-dial-out-period"></a>Periodo di chiamate gratuite di Audioconferenza
 
@@ -38,17 +38,17 @@ I clienti possono usare Microsoft 365 o Office 365 piano chiamate e audioconfere
   
 ### <a name="end-of-complimentary-dial-out-period"></a>Fine del periodo di chiamata in uscita gratuito
 
-La funzionalità di chiamata in uscita gratuita è terminata il 1° dicembre 2019. Per altre informazioni, vedere Chiamata in uscita dell'abbonamento ai servizi di audioconferenza [e chiamami a vantaggio.](audio-conferencing-subscription-dial-out.md) 
+La funzionalità di chiamata in uscita gratuita è terminata il 1° dicembre 2019. Per altre informazioni, vedere Chiamata in uscita dell'abbonamento ai servizi di audioconferenza [e chiamami a vantaggio.](audio-conferencing-subscription-dial-out.md)
 
 Questa modifica non è stata apportata per i paesi in cui è disponibile l'abbonamento ai servizi di audioconferenza, ma attualmente non è abilitata la configurazione dei Crediti comunicazioni. Questi paesi specifici sono Russia, Corea del Sud e Taiwan.
 
 ### <a name="complimentary-dial-out-period-details"></a>Dettagli del periodo di chiamata in uscita gratuito
 
-Per i clienti che adottano il servizio di audioconferenza Microsoft 365 o Office 365, Microsoft offre un ulteriore vantaggio aggiuntivo relativo alla chiamata in uscita dalle riunioni organizzate dagli utenti a cui è assegnata una licenza di abbonamento Microsoft 365 o Office 365 audioconferenza fino a novembre 2019. Durante questo periodo gratuito, Microsoft consente agli organizzatori della riunione o ai partecipanti autorizzati, come definito nelle impostazioni dei criteri di riunione, di effettuare chiamate in uscita dall'interno della riunione a numeri di telefono non premium nei 44 paesi e aree geografiche dell'area [A.](audio-conferencing-zones.md) Questo vantaggio è applicabile alle licenze di abbonamento mensile per audioconferenze e non si estende alle licenze di audioconferenza a pagamento al minuto.
+Per i clienti che adottano il servizio di audioconferenza Microsoft 365 o Office 365, Microsoft offre un ulteriore vantaggio aggiuntivo relativo alla chiamata in uscita dalle riunioni organizzate da utenti a cui è assegnata una licenza di abbonamento Microsoft 365 o Office 365 audioconferenza fino a novembre 2019. Durante questo periodo gratuito, Microsoft consente agli organizzatori della riunione o ai partecipanti autorizzati, come definito nelle impostazioni dei criteri di riunione, di effettuare chiamate in uscita dall'interno della riunione a numeri di telefono non premium nei 44 paesi e aree geografiche dell'area [A.](audio-conferencing-zones.md) Questo vantaggio è applicabile alle licenze di abbonamento mensile per audioconferenze e non si estende alle licenze di audioconferenza a pagamento al minuto.
 
 Inoltre, durante il periodo di chiamata in uscita gratuita è previsto un limite di 900 minuti:
 
-Gli utenti con una posizione di utilizzo delle licenze (la località è il paese dell'utente definito nell'area delle licenze del interfaccia di amministrazione di Microsoft 365) _in_ qualsiasi _ paese possono effettuare chiamate in uscita da una conferenza in uno dei 44 paesi e aree geografiche dell'area [A.](audio-conferencing-zones.md) Ogni utente riceve 900 minuti per  utente al mese in uno dei paesi e nelle aree geografiche dell'area [A,](audio-conferencing-zones.md)che sono in pool a livello di tenant. Ad esempio, un cliente ha acquistato 115 licenze di abbonamento per audioconferenza e ha 10 utenti negli Stati Uniti, 100 utenti nel Regno Unito e 5 utenti in India, tutti con licenze di abbonamento per audioconferenza assegnate agli utenti.
+Gli utenti con una posizione di utilizzo delle licenze (la località è il paese dell'utente definito nell'area delle licenze del interfaccia di amministrazione di Microsoft 365) _in_ qualsiasi paese _ possono effettuare chiamate in uscita da una conferenza a uno dei 44 paesi e aree geografiche dell'area [A.](audio-conferencing-zones.md) Ogni utente riceve 900 minuti per  utente al mese in uno dei paesi e nelle aree geografiche dell'area [A,](audio-conferencing-zones.md)che sono in pool a livello di tenant. Ad esempio, un cliente ha acquistato 115 licenze di abbonamento per audioconferenza e ha 10 utenti negli Stati Uniti, 100 utenti nel Regno Unito e 5 utenti in India, tutti con licenze di abbonamento per audioconferenza assegnate agli utenti.
 
 - Tutti i 115 utenti condividono un pool di (115 utenti X 900 min) = 103.500 minuti di chiamata in uscita per ogni mese di calendario, che può essere usato per effettuare chiamate in uscita verso uno dei paesi e delle aree geografiche [dell'area A.](audio-conferencing-zones.md)
 
@@ -64,7 +64,7 @@ Le notifiche tramite posta elettronica verranno inviate a tutti gli amministrato
 Per le chiamate in uscita fatturate al minuto (chiamate che superano il pool di minuti di uscita del tenant o le chiamate verso destinazioni non presenti nell'elenco paesi e aree geografiche della zona [A),](audio-conferencing-zones.md) le chiamate e le relative tariffe sono basate principalmente sulla destinazione della chiamata e non sul paese o l'area geografica dell'organizzatore o del partecipante che avvia la chiamata in uscita. Ad esempio, una chiamata a un numero di telefono in Francia verrà fatturata con la stessa tariffa se viene avviata da un partecipante alla riunione negli Stati Uniti o uno in Francia.
 
 Per altre informazioni sui Crediti comunicazioni, vedere [Crediti comunicazioni](what-are-communications-credits.md).
-     
+
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)

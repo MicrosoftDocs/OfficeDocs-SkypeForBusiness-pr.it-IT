@@ -1,7 +1,7 @@
 ---
 title: Attivare o disattivare gli annunci di entrata e di uscita per le riunioni di Teams.
-ms.author: tonysmit
-author: tonysmit
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: oscarr
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Informazioni per gli amministratori su come attivare o disattivare gli annunci di entrata e di uscita per le riunioni di Microsoft Teams.
-ms.openlocfilehash: ab69b64352508d15b5f1125629ab90b3ec58f851
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: a9dcaaabcaa31160e162ba2a2685a02d9e2397da
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60537277"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056016"
 ---
 # <a name="turn-on-or-off-entry-and-exit-announcements-for-meetings-in-microsoft-teams"></a>Attivare o disattivare gli annunci di entrata e di uscita per le riunioni di Microsoft Teams.
 
@@ -37,9 +37,7 @@ Il ponte per audioconferenze risponde a una chiamata di un utente che si collega
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
   
-## <a name="setting-meeting-join-options"></a>Impostazione delle opzioni di partecipazione alla riunione
-
- **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+## <a name="setting-meeting-join-options-using-the-microsoft-teams-admin-center"></a>Impostazione delle opzioni di partecipazione alla riunione tramite l'interfaccia Microsoft Teams di amministrazione
 
 Per apportare queste modifiche, è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](./using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 

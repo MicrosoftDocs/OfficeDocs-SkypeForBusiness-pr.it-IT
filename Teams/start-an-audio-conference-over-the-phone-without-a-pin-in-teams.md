@@ -1,7 +1,7 @@
 ---
 title: Avviare l'audioconferenza tramite telefono senza un PIN in Teams
-ms.author: tonysmit
-author: tonysmit
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: oscarr
 ms.topic: article
@@ -22,66 +22,66 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: "Informazioni su come abilitare o disabilitare la partecipazione di chiamanti anonimi a una riunione dall'Teams di amministrazione. "
-ms.openlocfilehash: da31c734275113eab3e96b67230a578d0609c1bb
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: 2937ebc2c8ddec830c6eb130fc5824ed8273a9d3
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60537307"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055706"
 ---
 # <a name="start-an-audio-conference-over-the-phone-without-a-pin-in-microsoft-teams"></a>Avviare un'audioconferenza tramite telefono senza un PIN in Microsoft Teams
 
-Può essere frustrante per gli utenti che a una riunione a una riunione si svolgono nella sala d'attesa della riunione che ascoltano musica perché l'organizzatore della riunione Microsoft Teams non ha avviato la riunione. 
+Può essere frustrante per gli utenti che a una riunione a una riunione possono accedere per ascoltare musica nella sala d'attesa della riunione, perché l'organizzatore della riunione Microsoft Teams non ha avviato la riunione.
   
 Se l'organizzatore della riunione chiama per impostazione predefinita, è necessario un PIN per avviare una riunione. È possibile configurarla in modo che chiunque possa accedere a una riunione e non venga richiesto un PIN per avviare la riunione. È possibile usare l'interfaccia di amministrazione per abilitare o disabilitare questa impostazione per un singolo utente.
   
-Non è necessario un PIN per l'organizzatore della riunione se qualcuno ha avviato la riunione dall'app Microsoft Teams riunione. Il PIN è necessario solo quando l'organizzatore della riunione partecipa alla riunione tramite telefono. Il PIN per le riunioni viene inviato all'utente audio quando gli viene assegnata la licenza **di audioconferenza** e viene abilitato per le audioconferenze. Vedere [Inviare un messaggio di posta](send-an-email-to-a-user-with-their-dial-in-information-in-teams.md) elettronica a un utente con le informazioni relative alle audioconferenze e i messaggi di posta elettronica che vengono inviati automaticamente agli utenti quando cambiano le [impostazioni di audioconferenza.](emails-sent-to-users-when-their-settings-change-in-teams.md)
+Non è necessario un PIN per l'organizzatore della riunione se qualcuno ha avviato la riunione dall'app Microsoft Teams. Il PIN è necessario solo quando l'organizzatore della riunione partecipa alla riunione tramite telefono. Il PIN per le riunioni viene inviato all'utente audio quando gli viene assegnata la licenza **di audioconferenza** e viene abilitato per le audioconferenze. Vedere [Inviare un messaggio di posta](send-an-email-to-a-user-with-their-dial-in-information-in-teams.md) elettronica a un utente con le informazioni relative alle audioconferenze e i messaggi di posta elettronica che vengono inviati automaticamente agli utenti quando cambiano le [impostazioni di audioconferenza.](emails-sent-to-users-when-their-settings-change-in-teams.md)
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
   
 ## <a name="enable-or-disable-anonymous-callers-from-joining-a-meeting"></a>Abilitare o disabilitare la partecipazione dei chiamanti anonimi a una riunione
 
- **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro fare clic su **Utenti.** 
+1. Nel riquadro di spostamento sinistro fare clic su **Utenti.**
 
-2. Selezionare un utente nell'elenco e quindi fare clic **su Modifica** nella parte superiore della pagina. 
+2. Selezionare un utente nell'elenco e quindi fare clic **su Modifica** nella parte superiore della pagina.
 
 3. Accanto a **Audioconferenza** fare clic su **Modifica.**
 
 4. Nel riquadro **Audioconferenza,** abilitare o disabilitare i chiamanti con accesso esterno può essere la prima **persona in una riunione.**
-    
-4. Fare clic **su Applica**. 
 
-**Uso di Windows PowerShell**
-  
+5. Fare clic **su Applica**.
+
+### <a name="using-windows-powershell"></a>Uso di Windows PowerShell
+
 Per altre [informazioni, Microsoft Teams informazioni di riferimento su PowerShell.](/powershell/module/teams/?view=teams-ps)
 
 ## <a name="what-else-should-you-know"></a>Informazioni aggiuntive
 
 - Se si vuole reimpostare il PIN, vedere Reimpostare [il PIN di audioconferenza.](reset-the-audio-conferencing-pin-in-teams.md)
-    
+
 - Se l'accesso anonimo o la richiesta di un PIN per avviare una riunione è disabilitata:
-    
+
   - Se la riunione non è iniziata (non c'è ancora nessuno nella riunione): un chiamante riceverà una richiesta se è l'organizzatore; se dice sì, gli verrà richiesto il PIN e, dopo aver immesso il PIN, la riunione verrà avviata e l'utente si unirà alla riunione.
-    
+
   - Se la riunione è già iniziata (qualcun altro è già nella riunione): al chiamante non verrà chiesto se è l'organizzatore e non gli verrà mai richiesto il PIN; la riunione è già iniziata e il chiamante potrà parteciparvi.
-    
+
 - Se l'accesso anonimo, o non richiede un PIN per avviare una riunione, è abilitato:
-    
+
   - Se la riunione non è iniziata (non c'è ancora nessuno nella riunione): al chiamante non verrà chiesto se è l'organizzatore e non gli verrà mai richiesto il PIN. Poiché l'impostazione dell'organizzatore è disattivata, la riunione verrà avviata e i chiamanti anonimi si uniranno alla riunione.
-    
+
   - Se la riunione è già iniziata (qualcun altro è già in riunione): a un chiamante non verrà chiesto se è l'organizzatore e non gli verrà mai richiesto di immettere il PIN. la riunione è già iniziata e il chiamante vi partecipa.
-    
+
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
-    
-  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
-    
-  - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
-    
+
+- [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
+
+- [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
+
 Per altre informazioni su Windows PowerShell, vedere [Riferimenti su PowerShell in Microsoft Teams](/powershell/module/teams/?view=teams-ps).
   
 ## <a name="related-topics"></a>Argomenti correlati

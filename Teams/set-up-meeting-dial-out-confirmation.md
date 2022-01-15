@@ -1,7 +1,7 @@
 ---
 title: Configurare la conferma di chiamata in uscita della riunione per gli utenti in Microsoft Teams
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: MicrosoftHeidi
+ms.author: heidip
 ms.reviewer: oscarr
 manager: serdars
 ms.topic: article
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: Strat_MT_TeamsAdmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ae670cec7adcca3dada49a3dcda0ae11f3d1b7b7
-ms.sourcegitcommit: 70bba31b0ca4615a3c6a90f42d3568450ea51b82
+ms.openlocfilehash: 9db8d3882ea7d05b1bc3600682c0c803040b4c10
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327254"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055656"
 ---
 # <a name="set-up-meeting-dial-out-confirmation-for-your-users-in-microsoft-teams"></a>Configurare la conferma di chiamata in uscita della riunione per gli utenti in Microsoft Teams
 

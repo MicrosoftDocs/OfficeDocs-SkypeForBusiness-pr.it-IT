@@ -3,8 +3,8 @@ title: Configurare le impostazioni di audioconferenza - Microsoft Teams
 ms.reviewer: ''
 description: Usare queste risorse per la distribuzione per semplificare l'implementazione del servizio di audioconferenza nell'ambito del carico di lavoro delle riunioni in Microsoft Teams.
 ms.topic: article
-author: SerdarSoysal
-ms.author: serdars
+author: MicrosoftHeidi
+ms.author: heidip
 manager: serdars
 audience: admin
 ms.date: 01/28/2019
@@ -21,12 +21,12 @@ ms.localizationpriority: high
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8467132a365fcfdf105859a3404a4a63f4f1a67d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c3ede4a0721bacb9c4feb996d58ab01327c13dfd
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58617472"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055856"
 ---
 # <a name="learn-how-to-deploy-audio-conferencing-in-microsoft-teams"></a>Scopri come distribuire i servizi di audioconferenza in Microsoft Teams
 
@@ -38,8 +38,7 @@ Questo articolo è utile per decidere se modificare una o più impostazioni pred
 
 È necessario soltanto configurare l'audioconferenza solo per gli utenti che intendono programmare o condurre riunioni. Le persone che partecipano alla riunione tramite telefono non hanno bisogno di altre impostazioni o che venga loro assegnata una licenza. Accedere alle riunioni tramite telefono è molto utile per gli utenti che sono in viaggio e non possono partecipare a una riunione usando l'app Skype for Business o Teams sul laptop o dispositivo mobile. 
 
-
-## <a name="audio-conferencing-prerequisites"></a>Prerequisiti per l'audioconferenza 
+## <a name="audio-conferencing-prerequisites"></a>Prerequisiti per l'audioconferenza
 
 Prima di implementare l'audioconferenza per Teams, considerare quanto segue:
 
@@ -50,15 +49,13 @@ Prima di implementare l'audioconferenza per Teams, considerare quanto segue:
 |È necessario acquistare credito per la comunicazione per gli utenti a cui sono state assegnate licenze per Audioconferenza?|Per altre informazioni, vedere [Che cos'è Credito per la comunicazione?](what-are-communications-credits.md) e quindi leggere la sezione [Credito per la comunicazione](#communications-credits) più avanti.|
 |||
 
-
 ## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione
 
 Quando i prerequisiti di Audioconferenza sono soddisfatti, completare le attività seguenti per configurare l'audioconferenza per gli utenti.
 
-
 ### <a name="teams-administrators"></a>Amministratori di Teams
 
-Teams include un set di ruoli di amministratore personalizzati che è possibile usare per gestire Teams per l'organizzazione. I ruoli forniscono varie funzionalità agli amministratori. 
+Teams include un set di ruoli di amministratore personalizzati che è possibile usare per gestire Teams per l'organizzazione. I ruoli forniscono varie funzionalità agli amministratori.
 
 | Chiedersi | Azione |
 |--------------|--------|
@@ -80,7 +77,6 @@ Per altre informazioni, vedere [Audioconferenza](audio-conferencing-in-office-36
 |È necessario trasferire i numeri di telefono per usarli con il servizio di audioconferenza?|Per informazioni sulla portabilità dei numeri di telefono, vedere [Trasferire numeri di telefono in Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).|
 |||
 
-
 ### <a name="default-and-alternate-languages"></a>Lingue predefinite e alternative
 
 Il servizio di audioconferenza di Teams consente di configurare le lingue predefinite e alternative per un bridge di conferenza.
@@ -90,9 +86,9 @@ Il servizio di audioconferenza di Teams consente di configurare le lingue predef
 | Quali lingue scegliere per i messaggi di saluto dell'operatore automatico? | Per scegliere le lingue, vedere [Impostare le lingue degli operatori automatici per le audioconferenze](/SkypeForBusiness/audio-conferencing-in-office-365/set-auto-attendant-languages-for-audio-conferencing?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fMicrosoftTeams%2ftoc.json).|
 |||
 
-### <a name="conferencing-bridge-settings"></a>Impostazioni del bridge di conferenza 
+### <a name="conferencing-bridge-settings"></a>Impostazioni del bridge di conferenza
 
-Dopo aver impostato il bridge di conferenza, incluse le lingue predefinite e alternative, verificare che le impostazioni predefinite, ad esempio le notifiche di ingresso e di uscita e la lunghezza del PIN, siano quelle desiderate. Se non lo sono, è possibile modificarle. 
+Dopo aver impostato il bridge di conferenza, incluse le lingue predefinite e alternative, verificare che le impostazioni predefinite, ad esempio le notifiche di ingresso e di uscita e la lunghezza del PIN, siano quelle desiderate. Se non lo sono, è possibile modificarle.
 
 |Chiedersi|Azione |
 |------------|-------|
@@ -120,13 +116,11 @@ Per fornire numeri verdi per il bridge di conferenza e per supportare le chiamat
 |Si vuole configurare un importo per l'autoricarica?|Per configurare un importo per l'autoricarica, vedere [Configurare Credito per la comunicazione per la propria organizzazione](set-up-communications-credits-for-your-organization.md).|
 |||
 
-
-
 ## <a name="additional-deployment-decisions"></a>Ulteriori decisioni per la distribuzione
 
 Può essere utile modificare queste impostazioni in base alle esigenze e alla configurazione dell'organizzazione.
 
-### <a name="outbound-calling-restriction-policies"></a>Criteri di restrizione delle chiamata in uscita 
+### <a name="outbound-calling-restriction-policies"></a>Criteri di restrizione delle chiamata in uscita
 
 Gli amministratori possono usare i controlli per le chiamate in uscita per limitare il tipo di audioconferenze e di chiamate PSTN che possono essere eseguite dagli utenti nell'organizzazione.
 
@@ -134,7 +128,6 @@ Gli amministratori possono usare i controlli per le chiamate in uscita per limit
 |------------|-------|
 | Si limiterà il tipo di chiamate in uscita consentite? | Per limitare le chiamate in uscita, vedere [Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente](outbound-calling-restriction-policies.md).|
 |||
-
 
 ### <a name="dial-plans"></a>Dial plan
 
@@ -148,17 +141,17 @@ Per altre informazioni sui dial plan, vedere [Che cosa sono i dial plan?](what-a
 |Quali utenti devono avere un dial plan personalizzato e quale dial plan del tenant occorre assegnare a ogni utente?|Per aggiungere utenti a un dial plan personalizzato con PowerShell, vedere [Creare e gestire i dial plan](create-and-manage-dial-plans.md).|
 |||
 
-### <a name="troubleshoot-meeting-and-call-quality"></a>Risoluzione dei problemi di qualità per riunioni e chiamate 
+### <a name="troubleshoot-meeting-and-call-quality"></a>Risoluzione dei problemi di qualità per riunioni e chiamate
 
-Teams offre due modi per monitorare e risolvere i problemi di qualità delle chiamate: Analisi delle chiamate e Dashboard Qualità della chiamata. Analisi delle chiamate mostra informazioni dettagliate sui dispositivi, le reti e la connettività relativamente alle specifiche chiamate e riunioni di ciascun utente. Analisi delle chiamate è progettato per aiutare amministratori e agenti dell'help desk a risolvere i problemi di qualità per specifiche chiamate, mentre Dashboard Qualità della chiamata è progettato per aiutare gli amministratori e i tecnici di rete a ottimizzare una rete. Dashboard Qualità della chiamata non è focalizzato sui singoli utenti, bensì sulle informazioni aggregate di un'intera organizzazione di Teams. 
+Teams offre due modi per monitorare e risolvere i problemi di qualità delle chiamate: Analisi delle chiamate e Dashboard Qualità della chiamata. Analisi delle chiamate mostra informazioni dettagliate sui dispositivi, le reti e la connettività relativamente alle specifiche chiamate e riunioni di ciascun utente. Analisi delle chiamate è progettato per aiutare amministratori e agenti dell'help desk a risolvere i problemi di qualità per specifiche chiamate, mentre Dashboard Qualità della chiamata è progettato per aiutare gli amministratori e i tecnici di rete a ottimizzare una rete. Dashboard Qualità della chiamata non è focalizzato sui singoli utenti, bensì sulle informazioni aggregate di un'intera organizzazione di Teams.
 
 |Chiedersi|Azione |
 |------------|-------|
 | Chi sarà responsabile per il monitoraggio e la risoluzione dei problemi di qualità delle chiamate? | Per informazioni sui livelli di autorizzazione necessari per risolvere i problemi di qualità delle chiamate, vedere [Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md).|
 |||
 
-
 ## <a name="next-steps"></a>Passaggi successivi
+
 - [Favorire l'adozione](adopt-microsoft-teams-landing-page.md) dell'audioconferenza nell'organizzazione.
 - [Implementare Cloud Voice](cloud-voice-landing-page.md)
 - Includere nell'implementazione iniziale di Teams le app in primo piano, ad esempio Planner. Aggiungere ulteriori [app, bot e connettori](deploy-apps-microsoft-teams-landing-page.md) per incentivare l'adozione di Teams.

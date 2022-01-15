@@ -21,19 +21,19 @@ ms.custom:
 - Licensing
 - LIL_Placement
 - seo-marvel-apr2020
-description: Informazioni sulle licenze disponibili per i diversi tipi di funzionalità di chiamata e riunione in Microsoft Teams Rooms.
-ms.openlocfilehash: 7b7bea86d414f24686dce4ffab1a91333476069f
-ms.sourcegitcommit: 7eb66cb2955b17e89e1c162b6ca1b9bdb18189b2
+description: Informazioni sulle licenze disponibili per i diversi tipi di funzionalità per chiamate e riunioni in Microsoft Teams Rooms.
+ms.openlocfilehash: 05e7b0c3f8cb6f31e84ef16ad0ff23039da26b14
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61306151"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056056"
 ---
 # <a name="teams-meeting-room-licensing-update"></a>Teams Sala riunioni gestione licenze
 
 ## <a name="licensing-solutions-for-shared-communication-devices"></a>Soluzioni di licenza per dispositivi di comunicazione condivisa
 
-Microsoft ha due SKU dedicati per le riunioni con licenza e le chiamate per ogni dispositivo per i dispositivi delle sale riunioni (ad esempio Microsoft Teams Rooms, Microsoft Surface Hub e barre di collaborazione per Microsoft Teams).
+Microsoft ha due SKU dedicati per le riunioni e le chiamate per ogni dispositivo per i dispositivi delle sale riunioni (ad esempio Microsoft Teams Rooms, Microsoft Surface Hub e barre di collaborazione per Microsoft Teams).
 
 |&nbsp;|Microsoft Teams Rooms Standard |Microsoft Teams Rooms Premium |
 |:--- |:---: |:---: |
@@ -60,17 +60,21 @@ La tabella seguente elenca le funzionalità disponibili in Microsoft Teams Rooms
 > [!NOTE]
 > È necessario che la sala configurata sia un oggetto utente e abbia le licenze assegnate.
 
-| &nbsp; | Hai già Microsoft Teams. <br/> Ecco cosa devi acquistare:   |È stato Skype for Business Server 2015/2019 (locale). <br/> Ecco cosa devi acquistare:|
+| &nbsp; | Hai Microsoft Teams. <br/> Ecco cosa devi acquistare:   |È stato Skype for Business Server 2015/2019 (locale). <br/> Ecco cosa devi acquistare:|
 |:-----|:-----|:-----|
 |Partecipazione a una riunione programmata  | Microsoft Teams Rooms Standard o Premium  |Skype for Business Licenza CAL per server Standard  |
 |Avviare una riunione ad hoc | Microsoft Teams Rooms Standard o Premium  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Enterprise|
 |Avviare una riunione ad hoc ed effettuare chiamate in uscita da una riunione ai numeri di telefono |  Microsoft Teams Rooms Standard o Premium |Skype for Business Licenza CAL Standard  <br/> Skype for Business Licenza CAL per server Enterprise|
 |Assegnare un numero di telefono alla sala e effettuare o ricevere una chiamata dalla sala o partecipare a un'audioconferenza usando un numero di telefono  | Con routing diretto e/o Connessione con operatore: Microsoft Teams Rooms Standard o Premium<br/>Senza instradamento diretto o Connessione con operatore: piano per chiamate nazionali o internazionali<br/>Microsoft 365 Business Voice  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Plus  |
-|Gestire il dispositivo della chat room con Microsoft Intune |Microsoft Teams Rooms Standard o Premium  |Microsoft Intune abbonamento con [MDM locale](/configmgr/mdm/plan-design/plan-on-premises-mdm) |
+|Gestire il dispositivo della chat room con Microsoft Intune |Microsoft Teams Rooms Standard o Premium  |Microsoft Intune con MDM [locale](/configmgr/mdm/plan-design/plan-on-premises-mdm) |
 |Microsoft Teams Rooms Managed Services | Microsoft Teams Rooms Premium ||
 
 
 > [!NOTE]
-> Se sono state assegnate licenze esistenti per i sistemi delle chat room, queste continueranno a funzionare senza interruzioni. È consigliabile passare all'uso Sala riunioni SKU quando le licenze esistenti scadono.  
+> 
+> Se sono state assegnate licenze utente esistenti per i sistemi delle chat room(ad esempio, E3 o E5), queste continueranno a funzionare senza interruzioni. Tuttavia, per essere conformi alle modifiche future, è necessario passare Sala riunioni licenze quando le licenze utente assegnate scadono.
+> 
 
- Vedere anche [Esperienze eccezionali per le sale riunioni: Incontrare i nuovi Microsoft Teams Rooms Standard e Premium](https://www.microsoft.com/en-us/microsoft-365/blog/2020/07/21/microsoft-teams-meetings-hybrid-workplace-options/).
+ Vedi anche [Esperienze eccezionali per le sale riunioni: Incontra le nuove Microsoft Teams Rooms Standard e Premium](https://www.microsoft.com/en-us/microsoft-365/blog/2020/07/21/microsoft-teams-meetings-hybrid-workplace-options/).
+
+ È possibile leggere [Configurare la licenza per Telefono area](../set-up-common-area-phones.md) comune per Microsoft Teams per informazioni sulla licenza dei telefoni area comune.

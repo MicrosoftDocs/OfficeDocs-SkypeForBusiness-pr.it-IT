@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può ottenere informazioni su un elenco di problemi noti per Microsoft Teams Rooms, tra cui aggiornamento, interfaccia utente, hardware e limitazioni e comportamenti previsti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72d80d930a8c140e6c2c00917a08cf69398fd4b1
-ms.sourcegitcommit: badcd3abeed138c330ee98d739eac5bbc5c0bfae
+ms.openlocfilehash: 2476753f5945217157336a814c8d498242c0eef1
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "61441126"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055106"
 ---
 # <a name="known-issues"></a>Problemi noti 
  
@@ -31,6 +31,7 @@ Questo articolo elenca i problemi noti di Microsoft Teams Rooms per area funzion
 
 | Titolo problema |  Comportamento \/ Sintomo | Soluzione alternativa nota | Articolo della Knowledge Base |
 |  ---        |      ---             |   ---            | --- |
+| Avvio automatico del browser Edge | Il browser Edge precedente alla build 97.0.1072.62 viene avviato automaticamente insieme all'app Microsoft Teams Room all'avvio del dispositivo. | Questo problema dovrebbe risolversi automaticamente, senza l'interazione dell'utente, il lunedì 17 gennaio 2022 o prima di lunedì. Se è necessaria una risoluzione più rapida: quando Edge viene avviato insieme alla sala Microsoft Teams, visita l'URL edge://settings/help e un aggiornamento dovrebbe iniziare automaticamente a scaricare e applicare. Selezionare il pulsante "Riavvia" del browser al termine dell'applicazione dell'aggiornamento. Chiudere Edge, riavviare il sistema e il problema dovrebbe essere risolto. | Nessuno |
 | Video partecipante della raccolta divisa   | Nella modalità di visualizzazione a due fronti della sala, quando non è presente contenuto condiviso in una riunione con più di 9 partecipanti video remoti, un video su uno schermo frontale della sala con l'anteprima automatica potrebbe essere visualizzato come audio a causa di un problema noto. Inoltre, un numero inferiore di partecipanti all'audio rispetto al numero effettivo di partecipanti audio viene visualizzato su due schermi front of Room. | Il problema verrà risolto in un aggiornamento futuro. | Nessuno |
 | L'applicazione non viene avviata |  Dopo l'aggiornamento alla versione 4.4.41.0 dell'applicazione, il sistema viene avviato sullo schermo nero o passa alla schermata di accesso dopo pochi minuti. | Segui la procedura descritta in [applicazione Microsoft Teams Rooms non viene avviata dopo l'aggiornamento alla versione 4.4.41.0](/microsoftteams/troubleshoot/teams-administration/teams-rooms-app-wont-start-after-update) per risolvere questo problema.  | Nessuno |
 |  Volume di riunioni basso dopo la condivisione del contenuto         |   I dispositivi Microsoft Teams Rooms su Windows 10 esperienza 20H2 hanno ridotto il volume di contenuti multimediali e riunioni dopo la condivisione di contenuti tramite HDMI in sala. Questo è causato da un problema audio in Windows 10 20H2. | La correzione per questo problema è disponibile nella versione [dell'applicazione 4.9.12.0.](/microsoftteams/rooms/rooms-release-note#49120-7282021) | Nessuno |
@@ -64,7 +65,7 @@ Microsoft Teams Rooms non supporta l'input HDCP, che è stato osservato per caus
 
 Se desideri che un display frontale passi automaticamente a un’origine video attiva (come una console MTR) quando l’origine si sveglia dalla modalità standby, devono essere soddisfatte alcune condizioni. Questa funzionalità è facoltativa ma supportata dal software Microsoft Teams Rooms, purché l'hardware sottostante supporti la funzionalità. Un televisore utente usato come display frontale della sala deve supportare la funzionalità Consumer Electronics Control (CEC) di HDMI.  A seconda del dock o della console selezionati (che potrebbe non supportare CEC, fare riferimento alla documentazione di supporto del produttore), potrebbe essere necessario un controller come un [HD-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [Extron HD CTL 100](https://www.extron.com/article/hdctl100ad) da Extron per abilitare il comportamento desiderato.
 
-Inoltre, una TV consumer usata come schermo anteriore della sala può causare problemi di stabilità con Microsoft Teams Rooms software. Ciò è dovuto all'implementazione incoerente delle modalità di standby, alla selezione dell'origine video attiva e alla comunicazione di informazioni EDID difettose al Microsoft Teams Rooms dispositivo. I sintomi noti sono uno schermo nero/grigio nella parte anteriore dello schermo della sala o la console di Microsoft Teams Rooms che non risponde dopo il risveglio dalla modalità standby.  Se si verificano problemi durante l'uso di televisori consumer, è consigliabile installare un controller EDID configurabile o un emulatore EDID, ad esempio [l'HD-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) di Crestron o [dr-EDID Emulator](https://fsrinc.com/fsr-products/product/dr-edid-manager-learner/category_pathway-143) da FSR Video Products Group.
+Inoltre, una TV consumer usata come schermo anteriore della sala può causare problemi di stabilità con Microsoft Teams Rooms software. Ciò è dovuto all'implementazione incoerente delle modalità di standby, alla selezione dell'origine video attiva e alla comunicazione di informazioni edID difettose al Microsoft Teams Rooms dispositivo. I sintomi noti sono uno schermo nero/grigio nella parte anteriore dello schermo della sala o la console Microsoft Teams Rooms non risponde dopo il risveglio dalla modalità standby.  In caso di problemi con l'uso di televisori consumer, è consigliabile installare un controller EDID configurabile o un emulatore EDID, ad esempio [hd-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) di Crestron o [DR-EDID Emulator](https://fsrinc.com/fsr-products/product/dr-edid-manager-learner/category_pathway-143) dal gruppo fsr Video Products Group.
 
 ***
 

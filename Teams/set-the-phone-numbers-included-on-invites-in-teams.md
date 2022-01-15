@@ -1,7 +1,7 @@
 ---
 title: Impostare i numeri di telefono inclusi negli inviti
-ms.author: tonysmit
-author: tonysmit
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: oscarr
 ms.topic: article
@@ -22,16 +22,16 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Seguire questa procedura per creare un numero di telefono predefinito per consentire ai chiamanti di partecipare a una Microsoft Teams riunione.
-ms.openlocfilehash: bef8575e1e799c63159bec5cbfb06c80f4af6c83
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: d1bce310424fb30ef8e76dde60003e97973630ec
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60536747"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055446"
 ---
 # <a name="set-the-phone-numbers-included-on-invites-in-microsoft-teams"></a>Impostare i numeri di telefono inclusi negli inviti in Microsoft Teams
 
-Le audioconferenze in Microsoft 365 e Office 365 consentono agli utenti dell'organizzazione di creare riunioni Microsoft Teams e quindi consentire agli utenti di accedere a tali riunioni usando un telefono.
+L'audioconferenza Microsoft 365 e Office 365 consente agli utenti dell'organizzazione di creare riunioni Microsoft Teams e quindi consentire agli utenti di accedere a tali riunioni usando un telefono.
   
 Un ponte per conferenze offre un insieme di numeri di telefono di accesso esterno per l'organizzazione. Tutti questi numeri possono essere utilizzati per accedere alle riunioni create dall'organizzatore, ma è possibile selezionare quelli che verranno inclusi negli inviti alle riunioni.
   
@@ -51,15 +51,13 @@ Dopo aver abilitato l'utente per il servizio di audioconferenza, i numeri di tel
 
 ## <a name="set-or-change-the-default-audio-conferencing-phone-number-for-a-meeting-organizer-or-user"></a>Impostare o modificare il numero di telefono di audioconferenza predefinito per un organizzatore o un utente della riunione
 
- **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
-
 Per apportare queste modifiche, è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](./using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
 1. Accedere all'interfaccia Microsoft Teams di amministrazione.
 
 2. Nel riquadro di spostamento sinistro fare clic su **Utenti.**
 
-    ![Mostra la selezione degli utenti nell'Microsoft Teams di amministrazione.](media/Admin-users.png)
+    ![Mostra la selezione di utenti nell'Microsoft Teams di amministrazione.](media/Admin-users.png)
 
 3. Fare clic sul nome utente nell'elenco degli utenti disponibili.
 
@@ -80,7 +78,7 @@ Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazio
 
 - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
 
-Per impostare o modificare il numero di telefono di audioconferenza predefinito per un organizzatore o un utente che usa [Microsoft Teams PowerShell,](/powershell/module/teams/?view=teams-ps)impostare i parametri o del **`ServiceNumber`** cmdlet **`TollFreeServiceNumber`** [Set-CsOnlineDialInConferencingUser](/powershell/module/skype/set-CsOnlineDialInConferencingUser?view=skype-ps) su uno dei numeri disponibili.
+Per impostare o modificare il numero di telefono di audioconferenza predefinito per un organizzatore o un utente della riunione [usando Microsoft Teams PowerShell,](/powershell/module/teams/?view=teams-ps)impostare i parametri o del **`ServiceNumber`** cmdlet **`TollFreeServiceNumber`** [Set-CsOnlineDialInConferencingUser](/powershell/module/skype/set-CsOnlineDialInConferencingUser?view=skype-ps) su uno dei numeri disponibili.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

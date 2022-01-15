@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Scopri quali dispositivi e periferiche USB (ad esempio cuffie, vivavoci, webcam e monitor) sono certificati per Microsoft Teams.
-ms.openlocfilehash: 97299120992cf6500822c452386a9f402cb6cf55
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: e23ffc5b4369cba27d7a405614df27099f2b2959
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61766699"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055166"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -28,21 +28,21 @@ Il programma di certificazione delle periferiche assicura che le periferiche USB
 
 Per esplorare i dispositivi testati e certificati per Microsoft Teams, visita il [Teams store.](https://products.office.com/microsoft-teams/across-devices/devices)
 
-Per altre informazioni sul supporto del controllo delle chiamate Teams chiamate, vedere Controllare le chiamate con un auricolare [in Teams](https://support.office.com/article/Control-calls-using-a-headset-in-Teams-65d6e104-444d-4013-b8c2-f11317dd69a8).
+Per altre informazioni sul supporto del controllo delle chiamate con Teams, vedere Controllare le chiamate con un auricolare [in Teams](https://support.office.com/article/Control-calls-using-a-headset-in-Teams-65d6e104-444d-4013-b8c2-f11317dd69a8).
 
 > [!TIP]
-> Stai cercando dispositivi certificati per Skype for Business? Vai ai dispositivi [audio e video USB certificati per](/skypeforbusiness/certification/devices-usb-devices)Skype for Business.
+> Stai cercando dispositivi certificati per Skype for Business? Vai ai dispositivi [audio e video USB certificati per](/skypeforbusiness/certification/devices-usb-devices)Skype for Business .
 
 ## <a name="understanding-certification-categories"></a>Informazioni sulle categorie di certificazione
 
 Gli utenti non devono sostituire i dispositivi certificati in precedenza durante l'aggiornamento a Teams da Skype for Business.  Tutti i dispositivi certificati sono supportati per Microsoft Teams e Skype for Business utenti, con solo alcune differenze.  La certificazione fornisce anche un'ulteriore designazione per determinate categorie di dispositivi.
 
-- **Skype for Business certificato con Teams di aggiornamento** I dispositivi certificati a questo livello sono stati inizialmente certificati per Skype for Business. Microsoft ha collaborato con i produttori di dispositivi per offrire la migliore Teams di integrazione senza modifiche all'hardware originale. Il *pulsante hookswitch* funge da pulsante Teams quando non è in una chiamata e può includere più funzioni nel tempo.  I dispositivi di questa categoria possono portare il Teams di certificazione sul materiale di marketing.
+- **Skype for Business certificato con Teams aggiornamento** I dispositivi certificati a questo livello sono stati inizialmente certificati per Skype for Business. Microsoft ha collaborato con i produttori di dispositivi per offrire la migliore Teams di integrazione senza modifiche all'hardware originale. Il *pulsante hookswitch* funge da pulsante Teams quando non è in una chiamata e può includere più funzioni nel tempo.  I dispositivi di questa categoria possono portare il Teams di certificazione sul materiale di marketing.
 - **I dispositivi certificati Microsoft Teams** certificati a questo livello indicano i dispositivi più recenti certificati, per un'esperienza Teams senza compromessi. Questi dispositivi offrono tutti i vantaggi della certificazione precedente e includono anche un pulsante Teams con indicatore LED. Con la maggior parte dei fattori di Teams, il pulsante Teams tattile sarà un pulsante tattile facile da trovare con il logo Teams testo. Microsoft continua a collaborare con i produttori di dispositivi per offrire nuovo valore tramite aggiornamenti del firmware nel tempo.
 
 ### <a name="special-usage-designations"></a>Designazioni d'uso speciali
 
-- **Premium microfono** per Open Office Tutti gli auricolari sono testati per fornire audio chiaro, ma l'apertura di uffici e altri ambienti rumorosi rappresentano una sfida maggiore. Le cuffie con questa designazione prelevano la voce dell'utente dell'auricolare, ma non trasmettono il suono dei vicini.
+- **Premium microfono per Open Office** Tutti gli auricolari sono testati per fornire audio chiaro, ma l'apertura di uffici e altri ambienti rumorosi rappresentano una sfida maggiore. Le cuffie con questa designazione prelevano la voce dell'utente dell'auricolare, ma non trasmettono il suono dei vicini.
 - **Dimensioni della sala riunioni** I dispositivi condivisi, come vivavoci e fotocamere, hanno una distanza di utilizzo supportata. Le distanze consigliate possono essere diverse a seconda del produttore. Per fornire ai clienti indicazioni chiare, tutti i dispositivi condivisi vengono testati alla certificazione in base a dimensioni e ambienti rumorosi ben definiti.
 
 Sfogliare [i dispositivi certificati per Microsoft Teams](https://products.office.com/microsoft-teams/across-devices/devices).
@@ -52,8 +52,8 @@ Sfogliare [i dispositivi certificati per Microsoft Teams](https://products.offic
 ### <a name="new-teams-certification-benefits"></a>Nuovi Teams di certificazione
 
 - Pulsante di Teams e indicatore LED dedicato.
-- Notifica utente di eventi e avvisi dal client Teams (ad esempio, avvio della riunione, segreteria telefonica o chiamata persa).
-- Possibilità di attivare il Teams o rispondere alla notifica con una pressione del pulsante , ad esempio per partecipare a una riunione.
+- Notifica da parte dell'utente di eventi e avvisi dal client Teams (ad esempio, avvio della riunione, segreteria telefonica o chiamata persa).
+- Possibilità di attivare il client Teams o rispondere alla notifica con una pressione del pulsante , ad esempio per partecipare a una riunione.
 - Certificazione progettata per l'estendibilità (nuove funzionalità del dispositivo/client da distribuire tramite aggiornamento firmware).
 
 ### <a name="core-certification-benefits"></a>Vantaggi principali della certificazione
@@ -78,6 +78,7 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 
 | Produttore        | Modello                                                     | Qualificato      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Lenovo               |Cuffia ANC cablata                                       |1/12/2022       |Certificato per Microsoft Teams                           |
 |Lenovo               |Vai vivavoce cablato                                      |1/10/2022       |Certificato per Microsoft Teams                           |
 |EPOS                 |IMPATTO SDW 5066T                                           |12/1/2021       |Certificato per Microsoft Teams                           |
 |EPOS                 |IMPATTO SDW 5063T                                           |12/1/2021       |Certificato per Microsoft Teams                           |

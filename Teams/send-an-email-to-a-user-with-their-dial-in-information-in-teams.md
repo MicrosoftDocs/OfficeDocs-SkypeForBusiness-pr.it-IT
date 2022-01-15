@@ -1,7 +1,7 @@
 ---
 title: Inviare a un utente tramite posta elettronica le informazioni relative ai servizi di audioconferenza
-ms.author: tonysmit
-author: tonysmit
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: oscarr
 ms.topic: article
@@ -22,24 +22,23 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Informazioni su come inviare agli utenti un messaggio di posta elettronica con le informazioni relative ai servizi di audioconferenza in Microsoft Teams.
-ms.openlocfilehash: c268c475e254bcac9a4eb579bc971705d68698aa
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: 6dbd0f0001472e49bd0940cc18440550972a2c5c
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60536677"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056036"
 ---
 # <a name="send-an-email-to-a-user-with-their-audio-conferencing-information-in-microsoft-teams"></a>Inviare un messaggio di posta elettronica a un utente con le informazioni relative ai servizi di audioconferenza in Microsoft Teams
 
 A Microsoft Teams utenti potrebbe essere necessario inviare loro le informazioni di audioconferenza. A questo scopo, fare clic su **Invia info conferenza tramite posta elettronica** sotto le proprietà di un utente. Quando invii questo messaggio di posta elettronica, conterrà tutte le informazioni relative ai servizi di audioconferenza, tra cui:
   
 - Il numero di telefono per le conferenze o per l'accesso esterno dell'utente.
-    
+
 - L'ID conferenza dell'utente.
-    
-   
+
 Ecco un esempio del messaggio di posta elettronica inviato:
-  
+
 ![Esempio di messaggio di posta elettronica per i servizi di conferenza telefonica con accesso esterno.](media/teams-send-email-to-user-with-audio-conferencing-image1.png)
 
 > [!NOTE]
@@ -47,7 +46,7 @@ Ecco un esempio del messaggio di posta elettronica inviato:
   
 ## <a name="send-an-email-with-audio-conferencing-information-to-a-user"></a>Inviare un messaggio di posta elettronica con informazioni di audioconferenza a un utente
 
-###  <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
+### <a name="sending-an-email-using-the-microsoft-teams-admin-center"></a>Invio di un messaggio di posta elettronica con l'interfaccia Microsoft Teams di amministrazione
 
 1. Nel riquadro di spostamento sinistro fare clic **su Utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -58,17 +57,17 @@ Ecco un esempio del messaggio di posta elettronica inviato:
 ## <a name="what-else-should-you-know-about-this-email"></a>Cos'altro occorre sapere su questo messaggio di posta elettronica?
 
 - Sono disponibili diversi messaggi di posta elettronica inviati agli utenti dell'organizzazione dopo che sono stati abilitati per le audioconferenze:
-    
+
   - Quando una licenza di **Audioconferenza** viene loro assegnata.
-    
+
   - Quando si reimposta manualmente il PIN di audioconferenza dell'utente.
-    
+
   - Quando reimposti manualmente l'ID conferenza dell'utente.
-    
+
   - Quando una licenza di **Audioconferenza** è rimossa a loro.
-    
+
   - Quando il provider di servizi di audioconferenza per un utente viene modificato da Microsoft a un altro provider o **Nessuno**.
-    
+
   - Quando il provider di servizi di audioconferenza per un utente viene modificato in Microsoft.
   
 ## <a name="related-topics"></a>Argomenti correlati

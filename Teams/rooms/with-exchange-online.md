@@ -1,7 +1,7 @@
 ---
 title: Distribuire Microsoft Teams Rooms con Exchange Online
-ms.author: dstrome
-author: dstrome
+ms.author: v-lanac
+author: lanachin
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -9,18 +9,18 @@ ms.topic: quickstart
 ms.service: msteams
 f1.keywords:
 - NOCSH
-ms.localizationpriority: medium
+localization_priority: Normal
 ms.collection:
 - M365-collaboration
-ms.custom: seo-marvel-apr2020
+ms.custom: ''
 ms.assetid: f3ba85b8-442c-4133-963f-76f1c8a1fff9
-description: Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms con Exchange Online e Skype for Business Server locali.
-ms.openlocfilehash: 8f8511f4dd05b6d2eb073aaab0a14305c9d67831
-ms.sourcegitcommit: 1165a74b1d2e79e1a085b01e0e00f7c65483d729
+description: Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms con Exchange Online.
+ms.openlocfilehash: e6eb3253d7edb999ba74d28ef9a6d8ae835ac16d
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61355635"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055486"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-online"></a>Distribuire Microsoft Teams Rooms con Exchange Online
 
@@ -32,10 +32,10 @@ Se l'organizzazione ha una combinazione di servizi, con alcuni ospitati in local
 
 Prima di distribuire Microsoft Teams Rooms con Exchange Online, assicurarsi di aver soddisfatto i requisiti. Per altre informazioni, vedere requisiti [Microsoft Teams Rooms.](requirements.md)
   
-Per distribuire Microsoft Teams Rooms con Exchange Online, seguire la procedura seguente. Assicurarsi di avere le autorizzazioni appropriate per eseguire i cmdlet associati. 
+Per distribuire Microsoft Teams Rooms con Exchange Online, seguire la procedura seguente. Assicurarsi di avere le autorizzazioni appropriate per eseguire i cmdlet. 
 
    > [!NOTE]
-   >  Il modulo Azure Active Directory per [i cmdlet](/powershell/azure/active-directory/overview) Windows PowerShell in questa sezione, ad esempio Set-MsolUser, è stato testato nella configurazione degli account per Microsoft Teams Rooms dispositivi. È possibile che altri cmdlet funzionino, ma non sono stati testati in questo scenario specifico.
+   >  I [cmdlet Azure Active Directory module per Windows PowerShell](/powershell/azure/active-directory/overview?view=azureadps-1.0) in questa sezione, ad esempio Set-MsolUser, sono stati testati nella configurazione degli account per Microsoft Teams Rooms. È possibile che altri cmdlet funzionino, ma non sono stati testati in questo scenario specifico.
 
 Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe essere necessario convertire l'account utente in un utente gestito prima di eseguire questa procedura e quindi convertire di nuovo l'utente in un utente federato dopo aver completato questa procedura.
   
@@ -44,7 +44,6 @@ Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe e
 1. Avviare una sessione Windows PowerShell remota in un PC e connettersi a Exchange Online come indicato di seguito:
 
     ``` Powershell
-   Import-Module ExchangeOnlineManagement
    Connect-ExchangeOnline
     ```
 
@@ -59,14 +58,14 @@ Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe e
     Se si sta creando una nuova cassetta postale per le risorse:
 
    ``` Powershell
-   New-Mailbox -MicrosoftOnlineServicesID 'ConferenceRoom01@contoso.com' -Alias ConferenceRoom01 -Name "Conference Room 01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
+   New-Mailbox -MicrosoftOnlineServicesID 'ConferenceRoom01@contoso.com' -Alias ConferenceRoom01 -Name 'ConferenceRoom01' -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
    ```
 
-3. Per migliorare l'esperienza della riunione, è necessario impostare le proprietà Exchange sull'account utente nel modo seguente:
+3. Per migliorare l'esperienza della riunione, è necessario impostare le proprietà Exchange dell'account utente nel modo seguente:
 
    ``` Powershell
    Set-CalendarProcessing -Identity 'ConferenceRoom01@contoso.com' -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -AllowConflicts $false -DeleteComments $false -DeleteSubject $false -RemovePrivateProperty $false
-   Set-CalendarProcessing -Identity 'ConferenceRoom01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Microsoft Teams Meeting room!"
+   Set-CalendarProcessing -Identity 'ConferenceRoom01@contoso.com' -AddAdditionalResponse $true -AdditionalResponse "This is a Microsoft Teams Rooms enabled  room!"
    ```
 
 ### <a name="add-an-email-address-for-your-on-premises-domain-account"></a>Aggiungere un indirizzo di posta elettronica per l'account di dominio locale
@@ -76,41 +75,39 @@ Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe e
 3. Digitare la password per l'account. Sarà necessario digitare di nuovo per la verifica. Verificare che la **casella di controllo Password non scada** mai sia l'unica opzione selezionata.
 
     > [!NOTE]
-    > La **selezione della password non scade** mai è un requisito per Skype for Business Server in Microsoft Teams Rooms. Le regole di dominio potrebbero proibire le password che non scadono. In questo caso, è necessario creare un'eccezione per ogni account Microsoft Teams Rooms utente.
+    > La **selezione della password non scade mai** è un requisito per Microsoft Teams Rooms. Le regole di dominio potrebbero proibire le password che non scadono. In tal caso, sarà necessario creare un'eccezione per ogni account Microsoft Teams Rooms utente.
   
 4. Fare **clic su** Fine per creare l'account.
-5. Dopo aver creato l'account, eseguire una sincronizzazione della directory. Questa operazione può essere eseguita usando [Set-MsolDirSyncConfiguration](/powershell/module/msonline/set-msoldirsyncconfiguration) in PowerShell. Al termine, passare alla pagina degli utenti e verificare che i due account creati nei passaggi precedenti siano stati uniti.
+5. Dopo aver creato l'account, eseguire una sincronizzazione della directory. Questa operazione può essere eseguita usando [Set-MsolDirSyncConfiguration](/powershell/module/msonline/set-msoldirsyncconfiguration?view=azureadps-1.0) in PowerShell. Al termine, passare alla pagina dell'utente e verificare che i due account creati nei passaggi precedenti siano stati uniti.
 
-### <a name="assign-a-microsoft-365-or-office-365-license"></a>Assegnare una Microsoft 365 o Office 365 licenza
+### <a name="assign-an-office-365-license"></a>Assegnare una Office 365 licenza
 
-1. Prima di tutto, connettersi Azure AD per applicare alcune impostazioni dell'account. È possibile eseguire questo cmdlet per connettersi. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](/powershell/azure/active-directory/overview)
+1. Prima di tutto, connettersi Azure AD per applicare alcune impostazioni dell'account. È possibile eseguire questo cmdlet per connettersi. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](/powershell/azure/active-directory/overview?view=azureadps-1.0)
 
    > [!NOTE]
-   > [Azure Active Directory PowerShell 2.0](/powershell/azure/active-directory/overview) non è supportato.
+   > [Azure Active Directory PowerShell 2.0](/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato.
 
     ``` PowerShell
    Connect-MsolService
     ```
-  <!--   ``` Powershell
-     Connect-AzureAD -Credential $cred
-     ``` -->
 
-2. L'account utente deve avere una licenza Microsoft 365 o Office 365 per assicurarsi che Exchange funzioni. Se si ha la licenza, è necessario assegnare una posizione di utilizzo all'account utente, in modo da determinare quali SKU di licenza sono disponibili per l'account. L'attività verrà apportata nel passaggio seguente.
-3. Usare quindi `Get-MsolAccountSku` <!--Get-AzureADSubscribedSku--> per recuperare un elenco di SKU disponibili per l'Microsoft 365 o Office 365 organizzazione.
-4. È possibile aggiungere una licenza usando il pulsante `Set-MsolUserLicense` <!-- Set-AzureADUserLicense--> cmdlet. In questo caso, viene applicata Microsoft Teams Rooms Standard licenza. 
+2. L'account utente deve avere una licenza di Office 365 valida per connettersi a Microsoft Teams. Se si ha la licenza, è necessario assegnare una posizione di utilizzo all'account utente, in modo da determinare quali SKU di licenza sono disponibili per l'account.
+3. Usare 'Get-MsolAccountSku' per recuperare un elenco di SKU disponibili per il tenant Office 365.
+4. Dopo aver elencato gli SKU, è possibile aggiungere una licenza usando l'opzione "Set-MsolUserLicense" <!-- Set-AzureADUserLicense--> cmdlet. 
 
     ```PowerShell
-    Set-MsolUser -UserPrincipalName 'ConferenceRoom01@contoso.com' -UsageLocation 'US'
-    Get-MsolAccountSku
-    Set-MsolUserLicense -UserPrincipalName 'ConferenceRoom01@contoso.com' -AddLicenses "contoso:MEETING_ROOM"
+     Set-MsolUser -UserPrincipalName 'ConferenceRoom01@contoso.com' -UsageLocation 'US'
+     Get-MsolAccountSku
+     Set-MsolUserLicense -UserPrincipalName 'ConferenceRoom01@contoso.com' -AddLicenses 'contoso:MEETING_ROOM
     ```
-  <!--   ``` Powershell
-     Set-AzureADUserLicense -UserPrincipalName 'PROJECT01@contoso.com' -UsageLocation 'US'
-     Get-AzureADSubscribedSku
-     Set-AzureADUserLicense -UserPrincipalName 'PROJECT01@contoso.com' -AddLicenses $strLicense
-     ``` -->
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="validate"></a>Convalida
+
+Per la convalida, dovrebbe essere possibile usare qualsiasi client Microsoft Teams per accedere all'account creato.
+  
+## <a name="see-also"></a>Vedere anche
+
+[Aggiornare le cassette postali della chat room con metadati aggiuntivi per migliorare l'esperienza di ricerca e suggerimenti per le chat room](/powershell/module/exchange/set-place)
 
 [Configurare gli account per Microsoft Teams Rooms](rooms-configure-accounts.md)
 

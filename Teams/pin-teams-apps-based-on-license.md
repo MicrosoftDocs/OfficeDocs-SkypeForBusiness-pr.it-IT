@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c94a84d7d331122145ebec1324ec5a88eabbca82
-ms.sourcegitcommit: c7904086e6956ad8d0e5544530bcc90d608b6e6a
+ms.openlocfilehash: a82dbf888fcd6fd0b05816e3edb390b79c9a9e3f
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62040003"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055316"
 ---
 # <a name="tailor-your-teams-apps-based-on-license"></a>Personalizzare le app Teams in base alla licenza
 
@@ -52,16 +52,16 @@ App aggiunte per gli utenti che hanno una licenza F:
 ## <a name="admin-controls"></a>Controlli di amministrazione
 
 > [!NOTE]
-> L'aggiunta di utenti deve essere attivata nel criterio di configurazione globale dell'app (impostazione predefinita a livello di organizzazione) per l'applicazione di questa funzionalità. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
+> L'aggiunta di utenti deve essere attivata nel criterio di configurazione globale dell'app (impostazione predefinita a livello di [organizzazione)](teams-app-setup-policies.md) per l'applicazione di questa funzionalità.
 
-La funzionalità dell'esperienza per  le app personalizzata è controllata dall'impostazione [](manage-apps.md#manage-org-wide-app-settings) Mostra app personalizzate in base alle licenze dell'app a livello di organizzazione nella pagina Gestisci app dell'Teams di amministrazione. Se la funzionalità è attivata, tutti gli utenti dell'organizzazione che dispongono di una licenza F otterrà l'esperienza personalizzata dell'app.
+La funzionalità dell'esperienza per  le app personalizzata è controllata dall'impostazione [](manage-apps.md#manage-org-wide-app-settings) Mostra app personalizzate in base alle licenze dell'app a livello di organizzazione nella pagina Gestisci app dell'interfaccia Teams di amministrazione. Se la funzionalità è attivata, tutti gli utenti dell'organizzazione che dispongono di una licenza F otterrà l'esperienza personalizzata dell'app.
 
 Tenere presente che tutti i criteri di configurazione delle app personalizzati assegnati agli utenti hanno la precedenza. Questo significa che se a un utente è già assegnato un criterio di configurazione dell'app personalizzato, l'utente ottiene la configurazione definita nei criteri di configurazione delle app personalizzate. Per altre informazioni sul funzionamento della caratteristica con i criteri di configurazione delle app esistenti applicati nell'organizzazione, vedere la sezione [Scenari](#scenarios) di questo articolo.
 
-Questa funzionalità è attivata per impostazione predefinita. Tuttavia, se non si vuole usare l'esperienza dell'app personalizzata fornita da Microsoft, è possibile disattivare l'impostazione. Per disattivare o attivare la funzionalità:
+Questa funzionalità è attivata per impostazione predefinita. Tuttavia, se non si vuole che l'esperienza dell'app personalizzata fornita da Microsoft sia personalizzata, è possibile disattivare la funzionalità. Per disattivare o attivare la funzionalità:
 
-1. Nel riquadro di spostamento sinistro dell Microsoft Teams di amministrazione passare Teams app Gestisci **app** e quindi selezionare Impostazioni  >   **dell'app** a livello di organizzazione.
-2. Impostare **l'interruttore Mostra app personalizzate in base alle** licenze su **Disattivato** o **Attivato.** 
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare Teams **app** Gestisci app e quindi selezionare Impostazioni app a livello  >   **di organizzazione.**
+2. In **App personalizzate** impostare l'interruttore Mostra app **personalizzate** in base alle licenze su **Disattivato** o **Attivato.**
 
     :::image type="content" source="media/pin-teams-apps-based-on-license.png" alt-text="Screenshot della pagina Gestisci app con l'impostazione Mostra app personalizzate in base alle licenze dell'app a livello di organizzazione" lightbox="media/pin-teams-apps-based-on-license.png":::
 

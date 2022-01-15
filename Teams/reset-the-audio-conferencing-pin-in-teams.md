@@ -1,7 +1,7 @@
 ---
 title: Reimpostare il PIN di audioconferenza in Microsoft Teams
-ms.author: tonysmit
-author: tonysmit
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: oscarr
 ms.topic: article
@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Informazioni su come reimpostare il PIN di audioconferenza di un utente in Microsoft Teams informazioni importanti sui PIN.
-ms.openlocfilehash: 8c7525605f0dedaed05ba9b98db689715e468865
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: 841d4f562529f9c1f078a0c5eeaa2b022712ca44
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60537297"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055146"
 ---
 # <a name="reset-the-audio-conferencing-pin-in-microsoft-teams"></a>Reimpostare il PIN di audioconferenza in Microsoft Teams
 
@@ -37,7 +37,7 @@ Le riunioni possono essere avviate quando un utente autenticato partecipa usando
 
 ## <a name="reset-a-users-pin"></a>Reimpostare il PIN dell'utente
 
- **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+Uso dell'Microsoft Teams di amministrazione:
 
 1. Nel riquadro di spostamento sinistro fare clic **su Utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -46,45 +46,43 @@ Le riunioni possono essere avviate quando un utente autenticato partecipa usando
 3. In **Audioconferenza** fare clic **su Reimposta PIN.**
 
 4. Fare clic **su Reimposta**.
- 
+
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
-   
+
 ## <a name="have-a-user-reset-their-own-pin"></a>Fare in modo che un utente resetti il proprio PIN
 
 1. Fare in modo che l'utente vada a [https://dialin.teams.microsoft.com/usp](https://dialin.teams.microsoft.com/usp) .
-2. Fare clic **su Reimposta PIN**. 
+2. Fare clic **su Reimposta PIN**.
 
 > [!NOTE]
-> Per GCCH, vai a: https://dialin.cpc.gov.teams.microsoft.us/usp .
-> Per DoD vai a: https://dialin.cpc.dod.teams.microsoft.us/usp .
+> Per GCCH, vai a: [https://dialin.cpc.gov.teams.microsoft.us/usp](https://dialin.cpc.gov.teams.microsoft.us/usp) .
+> Per DoD vai a: [https://dialin.cpc.dod.teams.microsoft.us/usp](https://dialin.cpc.dod.teams.microsoft.us/usp) .
 
 ## <a name="what-else-should-you-know-about-pins"></a>Quali sono le altre informazioni utili sul PIN?
 
 - Per motivi di sicurezza, il PIN viene visualizzato una sola volta all'amministratore, quando il PIN viene reimpostato. Dopo la reimpostazione del PIN da parte di un amministratore, il PIN verrà elencato come ***********.
-    
+
 - L'invio automatico di messaggi di posta elettronica agli utenti è abilitato per impostazione predefinita e gli utenti riceveranno un messaggio di posta elettronica con il PIN quando sono abilitati per le audioconferenze o quando il PIN viene reimpostato. Se però l'invio automatico dei messaggi di posta elettronica è stato disabilitato, non verrà inviato un messaggio di posta elettronica di reimpostazione del PIN a un utente e sarà necessario inviare manualmente le informazioni sul PIN all'utente.
-    
+
 - All'avvio di una riunione, l'organizzatore deve ammettere tutti gli utenti PSTN nella sala d'attesa per partecipare alla riunione. Ad esempio, se due partecipanti PSTN provano a partecipare a una riunione prima dell'inizio, vengono messi nella sala d'attesa e ascoltano la musica in attesa e quando l'organizzatore della riunione partecipa usando il PIN tramite telefono, la riunione verrà avviata e l'organizzatore potrà usare il comando in riunione (premere *21) per ammettere tutti gli utenti PSTN nella sala d'attesa.
-    
+
 - L'impostazione predefinita è non consentire l'avvio di una riunione da parte di chiamanti anonimi.
-    
-- Quando si abilita un utente per le audioconferenze, per impostazione predefinita vengono inviati messaggi di posta elettronica che includono le informazioni di conferenza e il PIN. L'utente deve avere una cassetta postale di Microsoft 365 o Office 365, perché quando viene reimpostato un PIN, un nuovo PIN verrà inviato all'utente tramite posta elettronica all'indirizzo SMTP principale (alias) impostato per l'utente.
-    
+
+- Quando si abilita un utente per le audioconferenze, per impostazione predefinita vengono inviati messaggi di posta elettronica che includono le informazioni di conferenza e il PIN. L'utente deve avere una cassetta postale di Microsoft 365 o Office 365, perché quando viene reimpostato un PIN, all'utente verrà inviato un nuovo PIN tramite posta elettronica all'indirizzo SMTP principale (alias) impostato per l'utente.
+
 - Quando si imposta una audioconferenza, impostare le cifre necessari per il PIN nella propria organizzazione. I PIN possono essere da 4 a 12 cifre, il valore predefinito è 5. Se si modifica l'impostazione della lunghezza del PIN, l'impostazione viene applicata solo sui PIN generati successivamente e non viene applicata per l'impostazione del PIN degli utenti precedetemente abilitati per le audioconferenze. Vedere [impostare la lunghezza del PIN per le riunioni in audioconferenze](Set-the-PIN-length-for-Audio-Conferencing-meetings-in-teams.md).
-    
+
 - Per impostazione predefinita, il messaggio di posta elettronica verrà impostato Microsoft 365 o Office 365 SMTP principale dell'utente. È possibile inviare un messaggio di posta elettronica a un indirizzo di posta elettronica non Microsoft 365 o non Office 365, ad esempio un indirizzo di posta elettronica Hotmail o MSN. È possibile sostituire l'indirizzo di posta elettronica predefinito tramite Windows PowerShell. Questa opzione è utile se gli utenti non hanno una cassetta postale Exchange in Microsoft 365 o Office 365.
 
-    
-
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
-    
-  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
-    
-  - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
-    
+
+- [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
+
+- [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
+
 Per altre informazioni su Windows PowerShell, vedere [Riferimenti su PowerShell in Microsoft Teams](/powershell/module/teams/?view=teams-ps).
   
 ## <a name="related-topics"></a>Argomenti correlati

@@ -1,7 +1,7 @@
 ---
 title: Provare o acquistare audioconferenze in Microsoft 365 per Teams
-ms.author: tonysmit
-author: tonysmit
+ms.author: heidip
+author: MicrosoftHeidi
 manager: serdars
 ms.reviewer: oscarr
 ms.topic: article
@@ -24,12 +24,12 @@ ms.custom:
 - ms.lync.lac.CpcGettingStarted
 - seo-marvel-mar2020
 description: "Scopri come provare o acquistare licenze di audioconferenza per Microsoft 365 o Office 365 per configurare le conferenze telefoniche a cui gli utenti possono effettuare l'accesso. "
-ms.openlocfilehash: af031e26cceb920811c3b4f349fda44fd7e3a387
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 992d6b71b5ad63cfe082a9b12c0a5add98074a0f
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611535"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62055306"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-microsoft-365-for-microsoft-teams"></a>Provare o acquistare audioconferenze in Microsoft 365 per Microsoft Teams
 
@@ -49,7 +49,7 @@ Per eseguire questa [procedura, è](https://support.office.com/article/da585eea-
 
 2. Ottenere le licenze di **Audioconferenza**. Se vuoi:
 
-   - **Provalo** prima di acquistarlo: puoi iscriverti a una versione di valutazione gratuita Office 365 Enterprise E5 che include audioconferenze. Consulta [Versione di valutazione di Office 365 Enterprise E5](https://portal.office.com/Signup?OfferId=101bde18-5ffb-4d79-a47b-f5b2c62525b3).
+   - **Prova prima** di acquistarlo: puoi iscriverti a una versione di valutazione gratuita Office 365 Enterprise E5 che include audioconferenze. Consulta [Versione di valutazione di Office 365 Enterprise E5](https://portal.office.com/Signup?OfferId=101bde18-5ffb-4d79-a47b-f5b2c62525b3).
 
    - **Acquistalo**: vedi Microsoft Teams [licenze per i componenti aggiuntivi](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
@@ -100,6 +100,6 @@ La procedura seguente è **facoltativa**, ma molti amministratori preferiscono e
 
 [Abilitare Teams nell'organizzazione](office-365-set-up.md)
 
-[Numeri di telefono per Audioconferenza](phone-numbers-for-audio-conferencing-in-teams.md)
+[Numeri di telefono per i servizi di audioconferenza](phone-numbers-for-audio-conferencing-in-teams.md)
 
 [Impostare le opzioni per riunioni online e conferenze telefoniche](https://support.office.com/article/DCD1CA39-0C1F-466C-9573-F04138FEF5E2)
