@@ -15,14 +15,14 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Informazioni su come pianificare il bypass multimediale con Sistema telefonico routing diretto, che consente di abbreviare il percorso del traffico multimediale e migliorare le prestazioni.
+description: Informazioni su come pianificare il bypass multimediale Sistema telefonico routing diretto, che consente di abbreviare il percorso del traffico multimediale e migliorare le prestazioni.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1fb9eff518232f53868752a297775369af13713a
-ms.sourcegitcommit: 7eb66cb2955b17e89e1c162b6ca1b9bdb18189b2
+ms.openlocfilehash: 2d9a38772cd9119a7717608726db45bce6055229
+ms.sourcegitcommit: eddc03f777ce78bd5273708da9b1ab609ee20099
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "61306331"
+ms.lasthandoff: 01/18/2022
+ms.locfileid: "62064882"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -34,7 +34,7 @@ Il bypass multimediale consente di abbreviare il percorso del traffico multimedi
 
 I diagrammi seguenti illustrano la differenza nel flusso delle chiamate con e senza bypass multimediale.
 
-Senza bypass multimediale, quando un client effettua o riceve una chiamata, sia la segnalazione che il flusso multimediale tra SBC, il sistema Telefono Microsoft e il client Teams, come illustrato nel diagramma seguente:
+Senza bypass multimediale, quando un client effettua o riceve una chiamata, sia la segnalazione che il flusso multimediale tra SBC, Telefono Microsoft System e il client Teams, come illustrato nel diagramma seguente:
 
 > [!div class="mx-imgBorder"]
 > ![Mostra la segnalazione e il flusso multimediale senza bypass multimediale.](media/direct-routing-media-bypass-1.png)
@@ -51,7 +51,7 @@ Si supponga però che un utente si trova nello stesso edificio o nella stessa re
   > [!div class="mx-imgBorder"]
   > ![Mostra la segnalazione e il flusso multimediale con bypass multimediale.](media/direct-routing-media-bypass-2.png)
 
-Il bypass multimediale usa protocolli chiamati Interactive Connectivity Establishment (ICE) sul client Teams e ICE lite sul SBC. Questi protocolli consentono al routing diretto di usare il percorso multimediale più diretto per una qualità ottimale. ICE e ICE Lite sono standard WebRTC. Per informazioni dettagliate su questi protocolli, vedere RFC 5245.
+Il bypass multimediale usa protocolli chiamati Interactive Connectivity Establishment (ICE) nel client Teams e ICE lite sul SBC. Questi protocolli consentono al routing diretto di usare il percorso multimediale più diretto per una qualità ottimale. ICE e ICE Lite sono standard WebRTC. Per informazioni dettagliate su questi protocolli, vedere RFC 5245.
 
 
 ## <a name="call-flow-and-firewall-planning"></a>Pianificazione del flusso delle chiamate e del firewall
@@ -84,7 +84,7 @@ Di seguito viene descritto il flusso delle chiamate se l'utente non ha accesso a
 
 Si supponga ad esempio che l'utente sia esterno e che l'amministratore del tenant abbia deciso di non aprire l'indirizzo IP pubblico della SBC a tutti gli utenti di Internet, ma solo a Microsoft Cloud. I componenti interni del traffico possono fluire tramite Teams di trasporto. Tenere in considerazione gli aspetti seguenti:
 
-- Teams vengono usati i relè di trasporto.
+- Teams vengono usati gli inoltri di trasporto.
 
 - Per il bypass multimediale, Microsoft usa una versione di Transport Relays che richiede l'apertura delle porte da 50 000 a 59 999 tra gli inoltri di trasporto di Teams e SBC (in futuro si prevede di passare alla versione che richiede 3478-3481 porte).
 
@@ -121,7 +121,7 @@ In Microsoft Cloud sono disponibili due componenti che possono essere nel percor
 
 - Il Processore multimediale è un componente pubblico che gestisce i supporti multimediali in casi non di bypass e gestisce gli elementi multimediali per le applicazioni vocali.
 
-   I processori multimediali sono sempre nel percorso per le chiamate non bypassate da parte dell'utente finale, ma mai nel percorso per le chiamate ignorate. I processori multimediali sono sempre nel percorso per tutte le applicazioni vocali, ad esempio il parcheggio di chiamata, l'organizzazione Operatore automatico e le code di chiamata.
+   I processori multimediali sono sempre nel percorso per le chiamate non bypassate da parte dell'utente finale, ma mai nel percorso per le chiamate ignorate. I processori multimediali sono sempre nel percorso per tutte le applicazioni vocali, ad esempio Call Park, Organizational Operatore automatico e Call Queues.
 
 - L'inoltro di trasporto viene usato per connettersi al servizio di trasporto più vicino per inviare traffico in tempo reale.
 
@@ -148,7 +148,7 @@ La tabella seguente riepiloga la differenza tra processori multimediali e relay 
 |Percorso multimediale per le chiamate ignorate per gli utenti finali | Mai | Se il client non riesce a raggiungere SBC nell'indirizzo IP pubblico |
 |Percorso multimediale per le applicazioni vocali | Sempre | Mai |
 |Può eseguire la trascodtura (B2BUA)\* | Sì | No, solo l'inoltro audio tra endpoint |
-|Numero di istanze in tutto il mondo e località | 10 in totale: 2 negli Stati Uniti orientali e occidentali; 2 ad Amsterdam e Dublino; 2 a Hong Kong e Singapore; 2 in Giappone ; 2 in Australia Est e Sudest | Multiplo|
+|Numero di istanze in tutto il mondo e località | 15 in totale: 3 negli Stati Uniti orientali, occidentali e centro-meridionali; 4 in Amsterdam, Dublino, Regno Unito Sud e Francia Centrale; 2 a Hong Kong e Singapore; 2 in Giappone; 2 in Australia Est e Sudest; 1 in Brasile Sud; 1 in Sudafrica Nord | Multiplo|
 
 Gli intervalli IP sono:
 - 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
@@ -156,16 +156,16 @@ Gli intervalli IP sono:
 
 \* Spiegazione trascodico: 
 
-- Processore multimediale è B2BUA, che significa che può modificare un codec,ad esempio SILK da client Teams Teams MP e G.711 tra MP e SBC.
+- Processore multimediale è B2BUA, il che significa che può modificare un codec,ad esempio SILK da client Teams a MP e G.711 tra MP e SBC.
 
 - Gli inoltri di trasporto non sono B2BUA, il che significa che il codec non viene mai modificato tra il client e il SBC, anche se il traffico scorre tramite relay.
 
-### <a name="use-of-teams-media-processors-if-trunk-is-configured-for-media-bypass"></a>Uso dei processori Teams multimediali se il trunk è configurato per il bypass multimediale
+### <a name="use-of-teams-media-processors-if-trunk-is-configured-for-media-bypass"></a>Uso di processori Teams multimediali se il trunk è configurato per il bypass multimediale
 
 Teams processori multimediali vengono sempre inseriti nel percorso multimediale negli scenari seguenti:
 
 - La chiamata viene riassegnata dall'1:1 a una chiamata di gruppo
-- La chiamata è in corso a un utente Teams federato
+- Chiamata a un utente Teams federato
 - La chiamata viene inoltrata o trasferita a un Skype for Business utente
 
 Verificare che SBC abbia accesso agli intervalli Media Processors e Transport Relays come descritto di seguito.    
@@ -178,18 +178,18 @@ Per la segnalazione SIP, i requisiti di FQDN e firewall sono gli stessi dei casi
 Il routing diretto è disponibile negli ambienti Microsoft 365 o Office 365 seguenti:
 - Microsoft 365 o Office 365
 - Office 365 GCC
-- Office 365 GCC Alta
-- Office 365 DoD Altre informazioni sugli ambienti [Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government) enti pubblici degli Stati Uniti come GCC, GCC High e DoD.
+- Office 365 GCC alta
+- Office 365 DoD Altre informazioni sugli ambienti [Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government) enti pubblici degli Stati Uniti, ad esempio GCC, GCC High e DoD.
 
 ### <a name="microsoft-365-office-365-and-office-365-gcc-environments"></a>Microsoft 365, Office 365 e Office 365 GCC ambienti
 
 I punti di connessione per il routing diretto sono i tre FQDN seguenti:
 
-- **sip.pstnhub.microsoft.com,** fqdn globale, deve essere provato prima di tutto. Quando il servizio SBC invia una richiesta di risoluzione del nome, i server DNS Microsoft Azure restituiscono un indirizzo IP che punta al data center di Azure primario assegnato a SBC. L'assegnazione si basa sulle metriche delle prestazioni dei data center e sulla vicinanza geografica al SBC. L'indirizzo IP restituito corrisponde all'FQDN primario.
+- **sip.pstnhub.microsoft.com,** fqdn globale, deve essere provato prima di tutto. Quando il servizio SBC invia una richiesta di risoluzione del nome, i server DNS Microsoft Azure restituiscono un indirizzo IP che punta al data center primario di Azure assegnato a SBC. L'assegnazione si basa sulle metriche delle prestazioni dei data center e sulla vicinanza geografica al SBC. L'indirizzo IP restituito corrisponde all'FQDN primario.
 
-- **sip2.pstnhub.microsoft.com** , FQDN secondario, mappato geograficamente alla seconda area di priorità.
+- **sip2.pstnhub.microsoft.com** , FQDN secondario, mappato geograficamente alla seconda area prioritaria.
 
-- **sip3.pstnhub.microsoft.com** , FQDN terziario, viene mappato geograficamente alla terza area prioritaria.
+- **sip3.pstnhub.microsoft.com,** fqdn terziario, è mappato geograficamente alla terza area prioritaria.
 
 È necessario inserire questi tre FQDN per:
 
@@ -198,7 +198,7 @@ I punti di connessione per il routing diretto sono i tre FQDN seguenti:
 - Fornire il failover quando viene stabilita una connessione da un SBC a un data center in cui si verifica un problema temporaneo. Per altre informazioni, vedere Meccanismo di failover più avanti.
 
 
-I nomi FQDN **sip.pstnhub.microsoft.com,** **sip2.pstnhub.microsoft.com** e sip3.pstnhub.microsoft.com verranno  risolti in indirizzi IP dalle subnet seguenti:
+I nomi FQDN **sip.pstnhub.microsoft.com,** **sip2.pstnhub.microsoft.com** e sip3.pstnhub.microsoft.com  verranno risolti in indirizzi IP dalle subnet seguenti:
 - 52.112.0.0/14
 - 52.120.0.0/14
 
@@ -220,9 +220,9 @@ Il nome fqdn sip.pstnhub.dod.teams.microsoft.us verrà risolto in un indirizzo I
 
 Il punto di connessione per il routing diretto è il seguente FQDN:
 
-**sip.pstnhub.gov.teams.microsoft.us:** FQDN globale. Poiché l'GCC high è presente solo nei data center degli Stati Uniti, non sono disponibili fqdn secondari e terziari.
+**sip.pstnhub.gov.teams.microsoft.us** : FQDN globale. Poiché l'GCC High è presente solo nei data center degli Stati Uniti, non sono disponibili fqdn secondari e terziari.
 
-Il nome sip.pstnhub.gov.teams.microsoft.us fqdn verrà risolto in un indirizzo IP dalla subnet seguente:
+Il nome fqdn sip.pstnhub.gov.teams.microsoft.us verrà risolto in un indirizzo IP dalla subnet seguente:
 
 - 52.127.88.0/21
 
@@ -233,7 +233,7 @@ Il nome sip.pstnhub.gov.teams.microsoft.us fqdn verrà risolto in un indirizzo I
 I requisiti di porta sono gli stessi per tutti gli Office 365 in cui è disponibile il routing diretto:
 - Microsoft 365 o Office 365
 - Office 365 GCC
-- Office 365 GCC Alta
+- Office 365 GCC alta
 - Office 365 DoD
 
 È necessario usare le porte seguenti:
@@ -246,7 +246,7 @@ I requisiti di porta sono gli stessi per tutti gli Office 365 in cui è disponib
 
 ## <a name="media-traffic-ip-and-port-ranges"></a>Traffico multimediale: intervalli ip e porte
 
-Il traffico multimediale fluisce tra il client SBC e il client Teams se è disponibile la connettività diretta o tramite gli inoltri di trasporto Teams se il client non riesce a raggiungere SBC usando l'indirizzo IP pubblico.
+Il traffico multimediale fluisce tra il client SBC e il client Teams se è disponibile la connettività diretta o tramite Teams Transport Relays se il client non riesce a raggiungere SBC usando l'indirizzo IP pubblico.
 
 ### <a name="requirements-for-direct-media-traffic-between-the-teams-client-and-the-sbc"></a>Requisiti per il traffico multimediale diretto (tra Teams client e SBC) 
 
@@ -281,7 +281,7 @@ I relè di trasporto sono nello stesso intervallo dei processori multimediali (p
 - 52.127.88.0/21
 
 
-L'intervallo di porte dei Teams di trasporto (applicabile a tutti gli ambienti) è illustrato nella tabella seguente:
+L'intervallo di porte Teams inoltro di trasporto (applicabile a tutti gli ambienti) è illustrato nella tabella seguente:
 
 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
@@ -350,7 +350,7 @@ L'esempio seguente illustra questa logica.
 | Utenti con trunk di bypass non multimediali | 980 | sbc1.contoso.com:5061 | false |
 | Utenti con trunk bypass multimediale | 20 | sbc2.contoso.com:5060 | true | 
 
-Entrambi i trunk possono puntare allo stesso SBC con lo stesso indirizzo IP pubblico. Le porte di segnalazione TLS nel SBC devono essere diverse, come illustrato nel diagramma seguente. Si noti che è necessario assicurarsi che il certificato supporti entrambi i trunk. Nella rete SAN è necessario avere due nomi (**sbc1.contoso.com** e **sbc2.contoso.com**) o avere un certificato con caratteri jolly.
+Entrambi i trunk possono puntare allo stesso SBC con lo stesso indirizzo IP pubblico. Le porte di segnalazione TLS nel SBC devono essere diverse, come illustrato nel diagramma seguente. Si noti che è necessario assicurarsi che il certificato supporti entrambi i trunk. Nella rete SAN è necessario avere due nomi (**sbc1.contoso.com** e **sbc2.contoso.com**) o un certificato con caratteri jolly.
 
 > [!div class="mx-imgBorder"]
 > ![Mostra che entrambi i trunk possono puntare allo stesso SBC con lo stesso ip pubblico.](media/direct-routing-media-bypass-7.png)

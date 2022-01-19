@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire i canali privati nell'organizzazione usando Graph API.
-ms.openlocfilehash: 25065401216a29e28e0d4aa3f1ad02d071215188
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: b0b915529d9d4bc780215afceead61ebf31e5259
+ms.sourcegitcommit: eddc03f777ce78bd5273708da9b1ab609ee20099
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61766379"
+ms.lasthandoff: 01/18/2022
+ms.locfileid: "62064872"
 ---
 # <a name="manage-the-life-cycle-of-private-channels-in-microsoft-teams"></a>Gestire il ciclo di vita dei canali privati in Microsoft Teams
 
@@ -48,13 +48,20 @@ Gli amministratori possono usare l'API Graph per creare un canale privato per co
 
 ```Graph API
 POST /teams/{id}/channels
-{ "membershipType": "Private",
-  "displayName": "<Channel_Name>",
-  "members":[{    
-           "@odata.type":"#microsoft.graph.aadUserConversationMember",
-           "user@odata.bind":"https://graph.microsoft.com/users('<user_id>')",
-           "roles":["owner"]
-            }]
+{
+    "membershipType": "Private",
+    "displayName": "<Channel_Name>",
+    "members": [
+        {
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "user@odata.bind": "https://graph.microsoft.com/v1.0/users('<user_id>')",
+            "roles": [
+                "owner"
+            ]
+        }
+    ]
+}
+            
 ```
 
 ## <a name="get-a-list-of-all-private-channel-messages"></a>Ottenere un elenco di tutti i messaggi del canale privato
@@ -138,7 +145,7 @@ Gli amministratori possono usare i comandi api Graph per eseguire query su quest
 
 È possibile elencare i proprietari e i membri di un canale privato per decidere se sia necessario alzare di livello determinati membri del canale privato e impostarli come proprietari. Questo può verificarsi se sono presenti proprietari di canali privati che hanno lasciato l'organizzazione e il canale privato richiede l'assistenza da parte dell'amministratore per rivendicarne la proprietà.
 
-L'amministratore può usare l'API Graph per eseguire queste azioni.
+Gli amministratori possono usare l'API Graph per eseguire queste azioni.
 
 È possibile provare questi comandi con [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 

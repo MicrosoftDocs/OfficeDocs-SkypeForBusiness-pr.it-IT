@@ -15,18 +15,18 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Onboarding di Teams Rooms dispositivi ai servizi gestiti
+description: Onboarding di Teams Rooms ai servizi gestiti
 f1keywords: ''
-ms.openlocfilehash: 70209bcd60740f1d1e19b45b215b921396a6f0fd
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: a02f47970392d5c428eb2cd76387678c1c2a5ed6
+ms.sourcegitcommit: 268660f101609852f02f3f9d1a8436f2a99dade7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61767560"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "62071054"
 ---
 # <a name="monitor-device-software-installation"></a>Monitorare l'installazione del software del dispositivo
 
-La distribuzione richiede l'onboarding Microsoft Teams Rooms dispositivi nei Microsoft Teams Rooms gestiti. L'agente del servizio di monitoraggio è per l'uso con sistemi Microsoft Teams room (MTR) certificati e periferiche.
+La distribuzione richiede l'onboarding Microsoft Teams Rooms dispositivi nei Microsoft Teams Rooms gestiti. L'agente del servizio di monitoraggio è per l'uso con i sistemi Microsoft Teams Room (MTR) certificati e le periferiche.
 
 ## <a name="performing-operations-as-the-admin-user-of-the-mtr-device"></a>Esecuzione di operazioni come utente amministratore del dispositivo MTR
 
@@ -35,7 +35,7 @@ Alcune procedure di configurazione/installazione richiedono l'accesso al disposi
 Per accedere al dispositivo come amministratore (amministratore locale):
 
 1. Assicurarsi di riagganciare le chiamate in corso e tornare alla schermata iniziale.
-1. Nell'interfaccia utente della chat room Microsoft Teams selezionare Altro **,** quindi selezionare Impostazioni , in cui viene richiesta la password di amministratore locale nel dispositivo (la password predefinita è **_sfb)._** 
+1. Nell'interfaccia utente Microsoft Teams room selezionare Altro **,** quindi selezionare Impostazioni , **in** cui viene richiesta la password di amministratore locale nel dispositivo (la password predefinita è **_sfb)._**
 1. Selezionare **Impostazioni**, quindi **selezionare** Windows Impostazioni per accedere Windows come amministratore locale.  
 
 1. Nell'elenco degli utenti visualizzato nella schermata di Windows di accesso selezionare **Amministratore** (o il rispettivo amministratore locale del dispositivo).
@@ -58,7 +58,7 @@ Seguire queste procedure per configurare l'hardware prima di provare il processo
 ### <a name="adding-proxy-settings-optional"></a>Aggiunta di impostazioni proxy (facoltativo)
 
 1. Accedere come amministratore seguendo [Esecuzione delle operazioni come utente amministratore del dispositivo MTR.](#performing-operations-as-the-admin-user-of-the-mtr-device)
-1. Nel campo Windows ***Cerca** _ (sezione in basso a sinistra dello schermo), immettere _ *cmd** (premere a lungo lo schermo o selezionare a destra e scegliere Esegui **_come amministratore)._**  
+1. Nel campo Windows ***Search** _ (sezione in basso a sinistra dello schermo), immettere _ *cmd** (premere a lungo lo schermo o fare clic con il pulsante destro del mouse e scegliere Esegui **_come amministratore)._**  
 1. Eseguire il comando seguente (le virgolette doppie alla fine del comando sono importanti):
    - Se si usa un ***singolo server proxy***: bitsadmin /Util /SetIEProxy LOCALSYSTEM MANUAL PROXY : \_ <proxyserver> <port> ""
 
@@ -116,7 +116,7 @@ Il processo di registrazione prevede alcuni passaggi:
 1. Installare il programma di installazione dell'agente (scaricato nel passaggio 2) nelle unità MTR, eseguendo il file MSI localmente in un dispositivo MTR o tramite il normale mezzo per pubblicare le applicazioni MSI in massa nei dispositivi all'interno dell'ambiente (Criteri di gruppo e così via).  
 1. La chat room viene visualizzata nel portale entro 5-10 minuti. In caso contrario, contattare managedroomsupport@microsoft.com.  
 
-![Figura 5](../media/software-installation-005.jpg)
+![Screenshot delle impostazioni e delle chiavi di autoregistrazione.](../media/software-installation-005.jpg)
 
 ## <a name="installation"></a>Installazione
 
@@ -136,9 +136,9 @@ A causa dei diversi modi in cui i clienti possono eseguire applicazioni MSI in m
 1. Copiare i file seguenti nel dispositivo MTR:
 
    - Inserire la "chiave di autoregistrazione" (scaricata in precedenza dal portale) nella directory **C:\Rigel** del dispositivo.
-   - Copiare **ilManagedRoomsInstaller.msi** (precedentemente scaricato dal portale o dal AKA.MS) nel dispositivo.
+   - Copiare **ilManagedRoomsInstaller.msi** (scaricato in precedenza dal portale o dal AKA.MS) nel dispositivo.
 
-1. Durante **l'esecuzione delManagedRoomsInstaller.msi** _, verrà visualizzata la schermata Contratto di licenza. Dopo aver letto il contratto, verificare _*_che accetti i termini_*_ del Contratto di licenza e premere il pulsante _ *Installa**.  
+1. Quando si esegue il **ManagedRoomsInstaller.msi** _, viene visualizzata la schermata Contratto di licenza. Dopo aver letto il contratto, verificare _*_che accetti i termini_*_ del Contratto di licenza e premere il pulsante _ *Installa**.  
 
     Viene avviata l'installazione Microsoft Teams Rooms software di monitoraggio dei servizi gestiti. Viene visualizzata una richiesta di elevazione (esegui come amministratore).
  1. Selezionare ***Sì***.
@@ -176,7 +176,7 @@ Per annullare la registrazione del dispositivo, rimuovere l'agente di monitoragg
 
    In questo modo il dispositivo viene reimpostato con gli aggiornamenti MTR standard dell'utente e vengono rimossi l'agente di monitoraggio MTRP e i file.
 
-1. Nel menu a sinistra nel portale Microsoft Teams Rooms - Servizi gestiti selezionare **Sale.**  
+1. Nel menu a sinistra del portale Microsoft Teams Rooms - Servizi gestiti selezionare **Sale.**  
 1. Nell'elenco delle chat room disponibili scegliere la chat  room da annullare la registrazione e selezionare Annulla registrazione per interrompere la visualizzazione di avvisi di eventi imprevisti o ticket di indagine o per segnalare un evento imprevisto per la chat room.
 
 ## <a name="troubleshooting-table"></a>Tabella di risoluzione dei problemi
@@ -194,6 +194,6 @@ C:\Windows\ServiceProfiles\LocalService\AppData\Local\ServicePortalAgent\ app-x.
 |  |  |
 |<p>Viene visualizzato un messaggio di errore che indica   </p><p>***Non è possibile trovare dati TPM***  </p>|Verificare che il TPM (Trusted Platform Module) del dispositivo sia attivato nel BIOS. Questo problema si trova in genere nelle impostazioni di sicurezza del BIOS del dispositivo  |
 |  |  |
-|<p>Viene visualizzato un messaggio di errore  </p><p>` `***ERRORE: account utente locale denominato "Amministratore" o "Skype" non trovato***  </p>|Verificare che gli account utente siano presenti nel dispositivo Microsoft Teams room.  |
+|<p>Viene visualizzato un messaggio di errore  </p><p>` `***ERRORE: account utente locale denominato "Amministratore" o "Skype" non trovato***  </p>|Verificare che gli account utente siano presenti nel dispositivo Microsoft Teams room certificato.  |
 |  |  |
-|Vengono visualizzati messaggi di stato di errore non coperti in precedenza  |Fornisci una copia del log di installazione all'agente Microsoft Teams di sistema. |
+|Vengono visualizzati messaggi di stato di errore non coperti in precedenza  |Fornire una copia del log di installazione all'agente di supporto Microsoft Teams sistema. |

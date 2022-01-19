@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1221747b1ad8487c0b5852b6adaf5129b5a5288e
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: e9f10a35e3be27b446fa7f55b5c9d97e3418fe36
+ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61766769"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "62056086"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -255,17 +255,7 @@ La conservazione della registrazione per questa archiviazione temporanea è inte
 Le dimensioni di una registrazione di 1 ora sono pari a 400 MB. Assicurarsi di aver compreso la capacità necessaria per i file registrati e di avere spazio di archiviazione sufficiente in OneDrive for Business e SharePoint Online.  Leggere [Impostare lo spazio di archiviazione predefinito per OneDrive for Business](/onedrive/set-default-storage-space) e [Gestire i limiti di archiviazione dei siti di SharePoint Online](/sharepoint/manage-site-collection-storage-limits) per comprendere lo spazio di archiviazione di base incluso nella sottoscrizione e come acquistare spazio di archiviazione aggiuntivo.
 
  <a name="auto-expiration"></a>
-### <a name="auto-expiration-of-teams-meeting-recordings"></a>Scadenza automatica delle registrazioni delle riunioni di Teams: 
-
-> [!IMPORTANT]
->
-> La funzionalità di scadenza automatica descritta in questo articolo non è ancora stata lanciata. Per altre informazioni sulla data di rilascio, vedere la [roadmap (ID funzionalità: 84580)](https://www.microsoft.com/microsoft-365/roadmap?searchterms=82057&filters=&searchterms=84580).
-> 
-> Stiamo fornendo informazioni sul funzionamento di questa funzionalità in futuro, così da pianificarne il cambiamento e modificare le impostazioni dei criteri di Teams in anticipo.
->
-> Il comando per modificare preventivamente l'impostazione di scadenza predefinita in Teams è attualmente in fase di distribuzione, ma potrebbe essere possibile visualizzare l'attributo in PowerShell. L'impostazione non è attualmente disponibile nelle interfacce di amministrazione di Teams. Queste impostazioni saranno disponibili e comunicate in un post del centro messaggi almeno 30 giorni prima dell'avvio della funzionalità.
->
->
+### <a name="auto-expiration-of-teams-meeting-recordings"></a>Scadenza automatica delle registrazioni delle riunioni di Teams
 
 Altre informazioni sulle modifiche specifiche dell'amministratore sono disponibili [qui](meeting-expiration.md#changes-to-meeting-expiration).
 
