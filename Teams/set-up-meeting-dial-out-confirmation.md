@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: Strat_MT_TeamsAdmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9db8d3882ea7d05b1bc3600682c0c803040b4c10
-ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
+ms.openlocfilehash: 32cdc63f2b129e7d925fed46a8b89ac90944926e
+ms.sourcegitcommit: bb302109886a4b853a8e493fb0ffafad4bc4f86b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62055656"
+ms.lasthandoff: 01/20/2022
+ms.locfileid: "62085235"
 ---
 # <a name="set-up-meeting-dial-out-confirmation-for-your-users-in-microsoft-teams"></a>Configurare la conferma di chiamata in uscita della riunione per gli utenti in Microsoft Teams
 
@@ -26,7 +26,7 @@ Le chiamate in uscita delle riunioni e le chiamate chiamami sono modi utili per 
 
 Per evitare che i sistemi di segreteria telefonica si connettono alle riunioni quando una chiamata in uscita viene inviata a un numero di telefono e la persona chiamata non è in grado di rispondere alla chiamata, è possibile configurare Teams per richiedere una conferma alla persona chiamata per consentire loro di partecipare alla riunione. Se la persona chiamata non è in grado di rispondere alla chiamata e la chiamata viene risposta da un sistema di segreteria telefonica, il sistema di segreteria telefonica non sarà connesso alla riunione perché non fornirà una conferma per partecipare.
 
-Quando questa funzionalità è abilitata, le persone che ricevono una chiamata in uscita o una chiamata in uscita devono confermare di voler partecipare alla riunione premendo 1 sul telefono tradizionale o cellulare o pronunciando "Ok".
+Quando questa funzionalità è abilitata, le persone che ricevono una chiamata in uscita o una chiamata in uscita devono confermare di voler partecipare alla riunione premendo 1 sul telefono tradizionale o cellulare o pronunciando "Ok". La conferma impedirà al messaggio della segreteria telefonica dell'utente di partecipare alla riunione.
 
 Per abilitare questa funzionalità per tutte le riunioni dell'organizzazione, impostare il parametro del ```EnableDialOutJoinConfirmation``` cmdlet [Set-CsOnlineDialInConferencingTenantSettings](/powershell/module/skype/set-csonlinedialinconferencingtenantsettings?view=skype-ps) su ```true``` . Per impostare questo parametro, eseguire il comando seguente:
 
