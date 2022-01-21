@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a82dbf888fcd6fd0b05816e3edb390b79c9a9e3f
-ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
+ms.openlocfilehash: 659cfd90e2fb5f498c00ea4b48039f9493357309
+ms.sourcegitcommit: 0486ca906fc7f66460e54e400541e5d5cbfc6dde
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62055316"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62161035"
 ---
 # <a name="tailor-your-teams-apps-based-on-license"></a>Personalizzare le app Teams in base alla licenza
 
@@ -47,20 +47,19 @@ App aggiunte per gli utenti che hanno una licenza F:
 - Teams
 - Turni
 - Attività
-- Walkie Talkie
 
 ## <a name="admin-controls"></a>Controlli di amministrazione
 
 > [!NOTE]
 > L'aggiunta di utenti deve essere attivata nel criterio di configurazione globale dell'app (impostazione predefinita a livello di [organizzazione)](teams-app-setup-policies.md) per l'applicazione di questa funzionalità.
 
-La funzionalità dell'esperienza per  le app personalizzata è controllata dall'impostazione [](manage-apps.md#manage-org-wide-app-settings) Mostra app personalizzate in base alle licenze dell'app a livello di organizzazione nella pagina Gestisci app dell'interfaccia Teams di amministrazione. Se la funzionalità è attivata, tutti gli utenti dell'organizzazione che dispongono di una licenza F otterrà l'esperienza personalizzata dell'app.
+La caratteristica esperienza app personalizzata  è controllata dall'impostazione Mostra app personalizzate [](manage-apps.md#manage-org-wide-app-settings) in base alle licenze dell'app a livello di organizzazione nella pagina Gestisci app dell'interfaccia di amministrazione di Teams. Se la funzionalità è attivata, tutti gli utenti dell'organizzazione che dispongono di una licenza F otterrà l'esperienza personalizzata dell'app.
 
 Tenere presente che tutti i criteri di configurazione delle app personalizzati assegnati agli utenti hanno la precedenza. Questo significa che se a un utente è già assegnato un criterio di configurazione dell'app personalizzato, l'utente ottiene la configurazione definita nei criteri di configurazione delle app personalizzate. Per altre informazioni sul funzionamento della caratteristica con i criteri di configurazione delle app esistenti applicati nell'organizzazione, vedere la sezione [Scenari](#scenarios) di questo articolo.
 
 Questa funzionalità è attivata per impostazione predefinita. Tuttavia, se non si vuole che l'esperienza dell'app personalizzata fornita da Microsoft sia personalizzata, è possibile disattivare la funzionalità. Per disattivare o attivare la funzionalità:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare Teams **app** Gestisci app e quindi selezionare Impostazioni app a livello  >   **di organizzazione.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare Teams app Gestisci **app** e quindi selezionare Impostazioni app a livello  >  di **organizzazione.**
 2. In **App personalizzate** impostare l'interruttore Mostra app **personalizzate** in base alle licenze su **Disattivato** o **Attivato.**
 
     :::image type="content" source="media/pin-teams-apps-based-on-license.png" alt-text="Screenshot della pagina Gestisci app con l'impostazione Mostra app personalizzate in base alle licenze dell'app a livello di organizzazione" lightbox="media/pin-teams-apps-based-on-license.png":::
