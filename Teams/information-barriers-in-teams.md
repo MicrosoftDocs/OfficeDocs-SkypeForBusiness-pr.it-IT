@@ -1,6 +1,6 @@
 ---
-title: Barriere all'informazione in Microsoft Teams
-description: Questo articolo spiega quali sono le barriere di informazione in Microsoft Teams e come possono influire sulle Teams.
+title: Barriere alle informazioni in Microsoft Teams
+description: Questo articolo spiega cosa sono le barriere di informazione in Microsoft Teams e come possono influire sulle Teams.
 author: robmazz
 ms.author: robmazz
 manager: laurawi
@@ -16,14 +16,14 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9bf452893172091d1c534d4a28215b661fd5fe6c
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: 247f8e1d735bfe331c914da1ec89863b755cf373
+ms.sourcegitcommit: 11061890a64da88d92db3fa43f1bf320b216c355
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61767339"
+ms.lasthandoff: 01/21/2022
+ms.locfileid: "62163547"
 ---
-# <a name="information-barriers-in-microsoft-teams"></a>Barriere all'informazione in Microsoft Teams
+# <a name="information-barriers-in-microsoft-teams"></a>Barriere alle informazioni in Microsoft Teams
 
 Le barriere alle informazioni sono criteri che un amministratore può configurare per impedire a singoli utenti o gruppi di comunicare tra loro. Gli IBS sono utili se, ad esempio, un reparto gestisce informazioni che non devono essere condivise con altri reparti. Gli IBS sono utili anche quando un gruppo deve essere isolato o impedito di comunicare con altri utenti esterni al gruppo.
 
@@ -110,7 +110,7 @@ I criteri IB vengono attivati quando si verificano Teams eventi seguenti:
 
 - Un utente effettua una chiamata telefonica **in Teams:** ogni volta che un utente avvia una chiamata vocale (tramite VOIP) a un altro utente o gruppo di utenti, la chiamata viene valutata per assicurarsi che non violi i criteri IB di altri membri del team. In caso di violazione, la chiamata vocale viene bloccata.
 
-- **Guest in Teams:** i criteri IB si applicano anche ai guest in Teams. Se i guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere Gestire l'accesso [guest in Microsoft 365 gruppi](/microsoft-365/admin/create-groups/manage-guest-access-in-groups). Quando gli utenti guest sono individuabili, è [possibile definire i criteri IB.](/office365/securitycompliance/information-barriers-policies)
+- **Guest in Teams:** i criteri IB si applicano anche ai guest in Teams. Se i guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere Gestire l'accesso [guest in Microsoft 365 gruppi.](/microsoft-365/admin/create-groups/manage-guest-access-in-groups) Quando gli utenti guest sono individuabili, è [possibile definire i criteri IB.](/office365/securitycompliance/information-barriers-policies)
 
 ## <a name="how-policy-changes-impact-existing-chats"></a>Impatto delle modifiche ai criteri sulle chat esistenti
 
@@ -180,15 +180,15 @@ Attualmente, gli utenti verificano gli scenari seguenti se un criterio IB blocca
 
 ## <a name="teams-policies-and-sharepoint-sites"></a>Teams criteri e SharePoint siti
 
-Quando viene creato un team, viene eseguito il provisioning SharePoint un sito Microsoft Teams per l'esperienza file. Per impostazione predefinita, i criteri di protezione delle informazioni non vengono rispettati in questo SharePoint e nei file. Per abilitare le barriere alle informazioni SharePoint e OneDrive, seguire le istruzioni e i passaggi descritti nell'articolo Usare le barriere di informazioni [con](/sharepoint/information-barriers#enable-sharepoint-and-onedrive-information-barriers-in-your-organization) SharePoint.
+Quando viene creato un team, viene eseguito il provisioning SharePoint un sito di Microsoft Teams per l'esperienza file. Per impostazione predefinita, i criteri di protezione delle informazioni non vengono rispettati in questo SharePoint e nei file. Per abilitare le barriere alle informazioni in SharePoint e OneDrive, seguire le istruzioni e i passaggi descritti nell'articolo Usare le barriere di informazioni [con](/sharepoint/information-barriers#enable-sharepoint-and-onedrive-information-barriers-in-your-organization) SharePoint.
 
 ## <a name="information--barrier-modes-and-teams"></a>Modalità di protezione delle informazioni e Teams
 
-La modalità Barriere informazioni consente di rafforzare gli utenti che possono essere aggiunti o rimossi da un team. Quando si usano barriere alle informazioni con Teams, sono supportate le modalità IB seguenti:
+La modalità Barriere informazioni consente di rafforzare gli utenti che possono essere aggiunti o rimossi da un team. Quando si usano barriere di informazioni con Teams, sono supportate le modalità IB seguenti:
 
 - **Apri:** questa configurazione è la modalità IB predefinita per tutti i gruppi esistenti di cui è stato eseguito il provisioning prima che le barriere di informazioni fossero abilitate. In questa modalità non sono applicabili criteri IB.
 - **Implicito:** questa configurazione è la modalità IB predefinita quando viene eseguito il provisioning di un team dopo l'abilitazione delle barriere alle informazioni. La modalità implicita consente di aggiungere tutti gli utenti compatibili nel gruppo.
-- **Proprietario moderato:** questa modalità è impostata in un team quando si vuole consentire la collaborazione tra utenti di segmenti incompatibili moderati dal proprietario. Il proprietario del team può aggiungere nuovi membri in base ai criteri IB.
+- **Proprietario moderato (anteprima):** questa modalità è impostata in un team quando si vuole consentire la collaborazione tra utenti di segmenti incompatibili moderati dal proprietario. Il proprietario del team può aggiungere nuovi membri in base ai criteri IB.
 
 Teams creati prima di attivare un criterio di protezione delle informazioni nel tenant vengono impostati automaticamente sulla *modalità* di apertura per impostazione predefinita. Dopo aver attivato i criteri IB nel tenant, è necessario aggiornare la modalità dei team esistenti in *Implicito* per assicurarsi che i team esistenti siano conformi a IB.
 
@@ -206,7 +206,7 @@ Se si modifica la configurazione della modalità di apertura nei gruppi connessi
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni necessarie
 
-Per altre informazioni su licenze e autorizzazioni, piani e prezzi, vedere le Microsoft 365 sulle licenze per la sicurezza [& conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Per altre informazioni su licenze e autorizzazioni, piani e prezzi, vedere indicazioni sulle licenze Microsoft 365 per la sicurezza [& conformità.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 ## <a name="known-issues"></a>Problemi noti
 
