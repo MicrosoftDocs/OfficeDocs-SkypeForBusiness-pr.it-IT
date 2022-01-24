@@ -22,13 +22,13 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
-description: Informazioni su come configurare le code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams, che fornisce un messaggio di saluto, tenere musica, reindirizzare le chiamate e altre funzionalità.
-ms.openlocfilehash: e54dbfa678b8bfdaec4dac45e16728a0fcd79de9
-ms.sourcegitcommit: bb302109886a4b853a8e493fb0ffafad4bc4f86b
+description: Informazioni su come configurare le code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams, che fornisce un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
+ms.openlocfilehash: 6323a73c0b400b7b8d44a49e1bad2dad9c7f38c7
+ms.sourcegitcommit: bc686eedb37e565148d0c7a61ffa865aaca37d20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2022
-ms.locfileid: "62085245"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62180919"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -41,13 +41,13 @@ Le code di chiamata forniscono:
 
 - Messaggio di saluto.
 
-- Musica le persone sono in attesa di blocco in una coda.
+- Musica mentre le persone sono in attesa di blocco in una coda.
 
 - Instradamento delle chiamate, in ordine FIFO *(First In, First Out)* agli agenti.
 
 - Opzioni di gestione per l'overflow e il timeout della coda.
 
-Assicurarsi di aver [](plan-auto-attendant-call-queue.md) letto Pianificare gli operatori Teams e le code [](plan-auto-attendant-call-queue.md#getting-started) di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
+Prima di seguire le procedure descritte in questo [articolo,](plan-auto-attendant-call-queue.md) leggere [](plan-auto-attendant-call-queue.md#getting-started) Pianificare gli operatori automatici Teams e le code di chiamata e seguire i passaggi introduttivi.
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -80,7 +80,7 @@ Fare **clic su** Aggiungi , cercare gli account delle risorse a cui si vuole con
 Se non si usa un canale Teams per controllare l'appartenenza all'agente, è consigliabile impostare direttamente l'ID chiamante per i membri della coda di chiamata sul numero di servizio della coda di chiamata o sull'operatore automatico appropriato. Per altre informazioni, vedere [Gestire i criteri id chiamante in Microsoft Teams](caller-id-policies.md).
 
 > [!NOTE]
-> All'account della risorsa usato per gli ID chiamanti deve essere assegnata una licenza Microsoft Teams Sistema telefonico utente virtuale e una delle seguenti:
+> All'account della risorsa usato per l'ID chiamante deve essere assegnata una licenza Microsoft Teams Sistema telefonico utente virtuale e una delle seguenti:
 >
 > - Una licenza per il piano di chiamata e un numero di telefono assegnato
 > - Un Connessione con operatore di telefono assegnato
@@ -99,7 +99,7 @@ Scegliere una [lingua supportata.](create-a-phone-system-call-queue-languages.md
 
 Specificare se si vuole riprodurre un messaggio di saluto ai chiamanti quando arrivano in coda. È necessario caricare un file MP3, WAV o WMA contenente il messaggio di saluto da riprodurre. La registrazione caricata non può essere superiore a 5 MB.
 
-Teams musica predefinita ai chiamanti mentre sono in attesa in una coda. La musica predefinita fornita nelle code Teams chiamate è gratuita di eventuali royalty pagate dall'organizzazione. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
+Teams fornisce musica predefinita ai chiamanti mentre sono in attesa in una coda. La musica predefinita fornita nelle code Teams chiamate è gratuita di eventuali royalty pagate dall'organizzazione. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
 
 > [!NOTE]
 > L'utente è responsabile della cancellazione e della protezione indipendente di tutti i diritti e le autorizzazioni necessari per l'uso di qualsiasi file musicale o audio con il servizio Microsoft Teams, che può includere proprietà intellettuale e altri diritti in qualsiasi musica, effetti audio, audio, marchi, nomi e altri contenuti nel file audio di tutti i titolari dei diritti rilevanti, che possono includere artisti, attori,  esecutori, musicisti, cantautori, compositori, etichette di registrazione, editori musicali, unioni, gilde, società di diritti, organizzazioni di gestione collettiva e qualsiasi altra parte che possiede, controlla o licenza i diritti di copyright, gli effetti sonori, l'audio e altri diritti di proprietà intellettuale.
@@ -112,7 +112,7 @@ Esaminare i [prerequisiti per l'aggiunta di agenti a una coda di chiamata.](plan
 
 ##### <a name="teams-channel"></a>Teams canale
 
-È possibile aggiungere fino a 200 agenti tramite Teams canale. Per aggiungere un canale alla coda, è necessario essere un membro del team o il creatore o un proprietario del canale.
+È possibile aggiungere fino a 200 agenti tramite un Teams canale. Per aggiungere un canale alla coda, è necessario essere un membro del team o il creatore o un proprietario del canale.
 
 Se si vuole usare un canale Teams per gestire la [coda,](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e)selezionare l'opzione **Scegli un team** e fare clic su Aggiungi **canale.** Cercare il team da usare, selezionarlo e fare clic su **Aggiungi.** Selezionare il canale da usare (sono supportati solo i canali standard) e fare clic su **Applica**. 
 
@@ -243,7 +243,7 @@ I client seguenti sono supportati per gli agenti di chiamata in una coda di chia
   - Microsoft Teams'app Android
 
     > [!NOTE]
-    > Le code di chiamata a cui è assegnato un numero di routing diretto non supportano Skype for Business client, client Lync o telefoni IP Skype for Business come agenti. Il Teams client è supportato solo con una [modalità di coesistenza di Teams solo](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
+    > Le code di chiamata a cui è assegnato un numero di instradamento diretto non supportano Skype for Business client, client Lync o telefoni IP Skype for Business telefoni IP come agenti. Il Teams client è supportato solo con una [modalità di coesistenza di Teams solo](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
 
 ## <a name="call-queue-cmdlets"></a>Cmdlet della coda di chiamata
 
@@ -273,19 +273,20 @@ Account delle risorse:
 - [Find-CsOnlineApplicationInstance](/powershell/module/skype/Find-CsOnlineApplicationInstance)
 - [Get-CsOnlineApplicationInstance](/powershell/module/skype/Get-CsOnlineApplicationInstance)
 - [Set-CsOnlineApplicationInstance](/powershell/module/skype/Set-CsOnlineApplicationInstance)
-
 - [New-CsOnlineApplicationInstanceAssociation](/powershell/module/skype/New-CsOnlineApplicationInstanceAssociation)
 - [Get-CsOnlineApplicationInstanceAssociation](/powershell/module/skype/Get-CsOnlineApplicationInstanceAssociation)
-- [Get-CsOnlineApplicationInstanceAssociationStatus](/powershell/module/skype/Get-CsOnlineApplicationInstanceAssociationStatus)
 - [Remove-CsOnlineApplicationInstanceAssociation](/powershell/module/skype/Remove-CsOnlineApplicationInstanceAssociation)
+- [Get-CsOnlineApplicationInstanceAssociationStatus](/powershell/module/skype/Get-CsOnlineApplicationInstanceAssociationStatus)
 
 Licenze Teams Telefono virtuali:
 
+- [Get-MsolAccountSku](/powershell/module/msonline/get-msolaccountsku)
 - [Set-MsolUserLicense](/powershell/module/msonline/set-msoluserlicense)
 
 Telefono assegnazione di numeri:
 
-- [Set-CsOnlineVoiceApplicationInstance](/powershell/module/skype/Set-CsOnlineVoiceApplicationInstance)
+- [Get-CsOnlineTelephoneNumber](/powershell/module/skype/Get-CsOnlineTelephoneNumber)
+- [Set-CsPhoneNumberAssignment](/powershell/module/teams/Set-csphonenumberassignment)
 
 File audio
 
