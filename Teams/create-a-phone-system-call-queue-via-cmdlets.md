@@ -24,25 +24,25 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata tramite cmdlet
-ms.openlocfilehash: 8ffbef5541a230755bb7439507e3002a5cb92462
-ms.sourcegitcommit: 268660f101609852f02f3f9d1a8436f2a99dade7
+ms.openlocfilehash: a8f24f11cb19f448fc897043c7cb046a08c32341
+ms.sourcegitcommit: bc686eedb37e565148d0c7a61ffa865aaca37d20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62071111"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62181109"
 ---
 # <a name="create-a-call-queue-via-cmdlets"></a>Creare una coda di chiamata tramite cmdlet
 
 ## <a name="assumptions"></a>Presupposti
 1)  PowerShell è installato nel computer
-- Configurare il computer [per](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md) Windows PowerShell
+- Configurare il computer per [Windows PowerShell](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 - Modulo MSTeams installato ````  (Install-Module -Name MicrosoftTeams -Force -AllowClobber) ````
 - Modulo MSOnline installato ```` Install-Module -Name MSOnline -Force -AllowClobber ````
 2)  Si hanno diritti di amministrazione tenant
 3)  Hai acquistato Microsoft Teams Telefono
 4)  Gli agenti, le liste di distribuzione e i canali Teams a cui si fa riferimento di seguito sono già stati creati
 
-Nota: il cmdlet Teams Channel usato di seguito fa parte della versione public preview di Teams PowerShell.  Per altre informazioni, vedere Installare Teams anteprima pubblica di [PowerShell](teams-powershell-install.md) e vedere anche Microsoft Teams [note sulla versione di PowerShell.](teams-powershell-release-notes.md)
+Nota: il cmdlet Teams Channel usato di seguito fa parte della versione public preview di Teams PowerShell Module.  Per altre informazioni, vedere Installare Teams anteprima pubblica di [PowerShell](teams-powershell-install.md) e vedere anche Microsoft Teams [note sulla versione di PowerShell.](teams-powershell-release-notes.md)
 
 Gli utenti che hanno già installato il modulo MicrosoftTeams devono verificare che sia installata la versione più ````Update-Module MicrosoftTeams```` aggiornata.
 
@@ -101,10 +101,10 @@ Informazioni sulla coda di chiamata collaborativa delle strutture:
 - Chiamate dirette da PSTN: No (solo chiamate interne)
 -   Lingua: francese FR
 -   Messaggio di saluto: Nessuno
--   Musica blocco: predefinito
+-   Musica blocco: impostazione predefinita
 -   Risposta alle chiamate: Team: Strutture
 -   Call Answering Channel: Help Desk
--   - Proprietario del canale: Fred@contoso.com
+-   - Proprietario canale: Fred@contoso.com
 -   Modalità conferenza: attivata
 -   Metodo di routing: Round Robin
 -   Routing basato sulla presenza: on
@@ -161,6 +161,8 @@ Nota: Telefono numero non richiesto qui perché la coda di chiamata è anteriore
 - - Operatore automatico: ce933385-9390-45d1-9512-c8d228074e07
 - - Coda di chiamata: 11cd3e2e-fccb-42ad-ad00-878b93575e07
 
+Nota: il tipo di licenza mostrato di seguito (PHONESYSTEM_VIRTUALUSER) deve essere elencato dal cmdlet Get-MsolAccountSku precedente.
+
 ````
 New-CsOnlineApplicationInstance -UserPrincipalName Sales-RA@contoso.com -DisplayName "Sales" -ApplicationID "11cd3e2e-fccb-42ad-ad00-878b93575e07"
 
@@ -211,10 +213,13 @@ Get-MsolAccountSku
 ````
 
 ### <a name="create-and-assign-resource-account"></a>Creare e assegnare un account della risorsa
-Nota: Telefono numero non richiesto qui perché la coda di chiamata è front-ended da un Operatore automatico
+Nota: Telefono numero di telefono non richiesto qui perché la coda di chiamata è front-ended da un Operatore automatico
 - APPLICATIONID
 - - Operatore automatico: ce933385-9390-45d1-9512-c8d228074e07
 - - Coda di chiamata: 11cd3e2e-fccb-42ad-ad00-878b93575e07
+
+Nota: il tipo di licenza mostrato di seguito (PHONESYSTEM_VIRTUALUSER) deve essere elencato dal cmdlet Get-MsolAccountSku precedente.
+
 ````
 New-CsOnlineApplicationInstance -UserPrincipalName Support-RA@contoso.com -DisplayName "Support" -ApplicationID "11cd3e2e-fccb-42ad-ad00-878b93575e07"
 
@@ -267,12 +272,15 @@ Get-MsolAccountSku
 ````
 
 ### <a name="create-and-assign-resource-account"></a>Creare e assegnare un account della risorsa
-Nota: Telefono numero non richiesto qui perché la coda di chiamata è front-ended da un Operatore automatico
+Nota: Telefono numero di telefono non richiesto qui perché la coda di chiamata è front-ended da un Operatore automatico
 - APPLICATIONID
 - - Operatore automatico: ce933385-9390-45d1-9512-c8d228074e07
 - - Coda di chiamata: 11cd3e2e-fccb-42ad-ad00-878b93575e07
+
+Nota: il tipo di licenza mostrato di seguito (PHONESYSTEM_VIRTUALUSER) deve essere elencato dal cmdlet Get-MsolAccountSku precedente.
+
 ````
-New-CsOnlineApplicationInstance -UserPrincipalName Support-RA@contoso.com -DisplayName "Facilities" -ApplicationID "11cd3e2e-fccb-42ad-ad00-878b93575e07"
+New-CsOnlineApplicationInstance -UserPrincipalName Facilities-RA@contoso.com -DisplayName "Facilities" -ApplicationID "11cd3e2e-fccb-42ad-ad00-878b93575e07"
 
 Set-MsolUser -UserPrincipalName "Facilities-RA@contoso.com" -UsageLocation US
 

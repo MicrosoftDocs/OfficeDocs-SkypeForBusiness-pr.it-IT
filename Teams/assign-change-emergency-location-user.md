@@ -16,14 +16,14 @@ appliesto:
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: Questo articolo illustra come assegnare o modificare una posizione per gli interventi di emergenza per gli utenti dell'organizzazione.
+description: In questo articolo viene spiegato come assegnare o modificare una posizione per gli interventi di emergenza per gli utenti dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: efe6b81961a4f7ca4eeb39e3f10b0c117cba7d6e
-ms.sourcegitcommit: 197debacdcd1f7902f6e16940ef9bec8b07641af
+ms.openlocfilehash: 004635be112bb8d38b88277e89c24d263b21ec37
+ms.sourcegitcommit: bc686eedb37e565148d0c7a61ffa865aaca37d20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60634905"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62180899"
 ---
 # <a name="assign-or-change-an-emergency-location-for-a-user"></a>Assegnare o modificare una posizione di emergenza per un utente
 
@@ -33,15 +33,15 @@ A seconda dell'opzione di connettività PSTN, tuttavia, la modalità di gestione
 
 Questo articolo descrive come assegnare o modificare una posizione per gli interventi di emergenza per un utente. 
 
-Questo articolo si applica a Piani per chiamate e Connessione con operatore.
+Questo articolo si applica ai Piani per chiamate e Connessione con operatore.
   
-È possibile assegnare o modificare una posizione per gli interventi di emergenza per un utente nell'Microsoft Teams di amministrazione o usando PowerShell.
+È possibile assegnare o modificare una posizione per gli interventi di emergenza per un utente nell'interfaccia di amministrazione Microsoft Teams o usando PowerShell.
 
 ## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic **su** Numeri  >  **Telefono vocali**.
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione fare clic su **Numeri**  >  **Telefono vocali**.
 
-2. Nella pagina **Telefono numeri** fare clic sulla scheda **Numeri,** selezionare un numero utente nell'elenco e quindi fare clic su **Modifica.**
+2. Nella pagina **Telefono numeri** fare clic sulla **scheda Numeri,** selezionare un numero utente nell'elenco e quindi fare clic su **Modifica.**
 
 3. Nel riquadro **Modifica,** in **Posizione emergenza,** eseguire una delle operazioni seguenti:
 
@@ -55,7 +55,7 @@ Questo articolo si applica a Piani per chiamate e Connessione con operatore.
 
 ## <a name="using-powershell"></a>Utilizzo di PowerShell
 
-Vedere [Set-CsOnlineVoiceUser](/powershell/module/skype/set-csonlinevoiceuser). 
+Vedere [Set-CsPhoneNumberAssignment](/powershell/module/teams/set-csphonenumberassignment). 
 
     
 ## <a name="related-topics"></a>Argomenti correlati

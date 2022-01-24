@@ -2,7 +2,7 @@
 title: Gestire l'app Turni per l'organizzazione
 author: LanaChin
 ms.author: v-lanachin
-ms.reviewer: lisawu,gumariam
+ms.reviewer: aaku
 manager: samanro
 ms.topic: article
 audience: admin
@@ -22,17 +22,14 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c4b1550ca90515714e509017f4fb13b83414fbf0
-ms.sourcegitcommit: 293d1b8a591d2284029632874067471f8d5bb0ff
+ms.openlocfilehash: c6e50d92dfb296bcf67402cdbd14a65fba490125
+ms.sourcegitcommit: bc686eedb37e565148d0c7a61ffa865aaca37d20
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/30/2021
-ms.locfileid: "61639690"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "62180929"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Turni per l'organizzazione in Microsoft Teams
-
-> [!IMPORTANT]
-> A partire dal 30 giugno 2020, Microsoft StaffHub è stato ritirato. Stiamo integrando le funzionalità di StaffHub in Microsoft Teams. Al momento, Teams include l’app Turni per la gestione delle pianificazioni. Altre funzionalità verranno implementate nel corso del tempo. StaffHub ha smesso di funzionare per tutti gli utenti il 30 giugno 2020. Chiunque provi ad aprire StaffHub visualizza un messaggio che invita a scaricare Teams. Per altre informazioni, vedere [Microsoft StaffHub è stato ritirato](microsoft-staffhub-to-be-retired.md).  
 
 ## <a name="overview-of-shifts"></a>Panoramica di Turni
 
