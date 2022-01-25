@@ -18,15 +18,15 @@ ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Scopri come formare un team di campioni per promuovere Teams'adozione promuovendo la consapevolezza, l'adozione e l'istruzione nell'organizzazione.
+description: Scopri come formare un team di campioni per promuovere l'adozione Teams promuovere la consapevolezza, l'adozione e l'istruzione nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b4b79cd1d9e00441681cad77a621f382d4238341
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 989525f627a4d8c6ef18f1e17cab9446d85a0a88
+ms.sourcegitcommit: 9ef6e36eeba7db70971f4eb1a45f0ded394b1fe6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60842548"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62190887"
 ---
 # <a name="create-your-champions-program-for-microsoft-teams"></a>Crea il tuo programma campioni per Microsoft Teams
 
@@ -43,7 +43,7 @@ I campioni devono:
 - Avere un rafforzamento coerente e positivo che confermi l'impatto dei loro sforzi
 - Avere un piano chiaro da eseguire
 
-Usa la [nostra Guida al programma Champions](https://go.microsoft.com/fwlink/?linkid=854665) per creare questo programma nella tua organizzazione. Le procedure consigliate per questa community sono:
+Usa la [nostra Guida al programma Champions](https://aka.ms/M365Champions) per creare questo programma nella tua organizzazione. Le procedure consigliate per questa community sono:
 
 - Partecipa al [programma Champions.](https://aka.ms/O365Champions) Assicurarsi che almeno i leader del programma Champions (e potenzialmente tutti i campioni della società) siano membri del programma. Questa chiamata gratuita della community mensile fornirà informazioni preziose per eseguire il proprio programma e ottenere il massimo da Teams e altri servizi Microsoft 365 o Office 365. I materiali del programma possono essere riutilizzati in un programma interno.
 

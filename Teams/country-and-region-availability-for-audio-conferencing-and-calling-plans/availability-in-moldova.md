@@ -26,18 +26,18 @@ ms.custom:
 - Calling Plans for Business and Microsoft Teams available for Moldova."
 - seo-marvel-mar2020
 description: Informazioni sui servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams sono disponibili in Moldova.
-ms.openlocfilehash: f7fe5633f7ca2756b8e6611f1c44fabc4ff8c0c8
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: fad85c4f1e875ffd65f255fb95eac209f74c8f7b
+ms.sourcegitcommit: 9ef6e36eeba7db70971f4eb1a45f0ded394b1fe6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589800"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62191567"
 ---
 # <a name="availability-in-moldova"></a>Disponibilità in Moldova
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Moldova.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Moldavia.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -64,7 +64,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
 
-Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instradamento diretto di Sistema telefonico](../direct-routing-landing-page.md). Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
+Se Piani chiamate non sono disponibili per l'acquisto, vedere Opzioni di connettività [PSTN](../pstn-connectivity.md) per tutte le opzioni disponibili.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 

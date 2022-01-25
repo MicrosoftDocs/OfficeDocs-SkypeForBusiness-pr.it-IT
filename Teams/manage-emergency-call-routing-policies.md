@@ -21,12 +21,12 @@ description: Informazioni su come usare e gestire i criteri di routing delle chi
 ms.custom:
 - seo-marvel-apr2020
 - ms.teamsadmincenter.voice.emergencycallroutingpolicies.overview
-ms.openlocfilehash: 582036d6168a235744b092f7f11bfd34442f5221
-ms.sourcegitcommit: 197debacdcd1f7902f6e16940ef9bec8b07641af
+ms.openlocfilehash: f04204377f4b90f5a96143e579863f4acdbf3989
+ms.sourcegitcommit: 9ef6e36eeba7db70971f4eb1a45f0ded394b1fe6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60634915"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62190897"
 ---
 # <a name="manage-emergency-call-routing-policies-for-direct-routing"></a>Gestire i criteri di routing delle chiamate di emergenza per il routing diretto
 
@@ -35,7 +35,7 @@ Se il routing [](direct-routing-landing-page.md) diretto è stato distribuito ne
 > [!Note]
 > **Si noti che questi criteri di routing delle chiamate si applicano solo al routing diretto, ma non ai piani per chiamate o Connessione con operatore.**
 
-Per gestire i criteri di routing delle chiamate di emergenza, è possibile accedere ai criteri di emergenza vocali nell'interfaccia di amministrazione di Microsoft Teams o usando  >   Windows PowerShell. I criteri possono essere assegnati a utenti e [siti di rete.](cloud-voice-network-settings.md)
+Per gestire i criteri di instradamento delle chiamate di emergenza, è possibile accedere ai criteri di emergenza vocali nell'interfaccia di amministrazione di Microsoft Teams o usando  >   Windows PowerShell. I criteri possono essere assegnati a utenti e [siti di rete.](cloud-voice-network-settings.md)
 
 Per gli utenti, è possibile usare i criteri globali (impostazione predefinita a livello di organizzazione) oppure creare e assegnare criteri personalizzati. Gli utenti riceveranno automaticamente i criteri globali a meno che non si creino e assegnino criteri personalizzati. Tenere presente che è possibile modificare le impostazioni nel criterio globale, ma non è possibile rinominarlo o eliminarlo. Per i siti di rete, è possibile creare e assegnare criteri personalizzati.
 
@@ -48,12 +48,12 @@ Se è stato assegnato un criterio di routing delle chiamate di emergenza a un si
 1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a Criteri di emergenza vocale e quindi fare  >  clic sulla scheda Criteri **routing chiamate.**
 2. Fare clic su **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio.
-4. Per abilitare le chiamate di emergenza dinamiche, attiva **Chiamate di emergenza dinamiche.** Quando le chiamate di emergenza dinamiche sono abilitate, Teams recupera le informazioni sui criteri e sulla posizione dal servizio e include queste informazioni come parte della chiamata di emergenza.
+4. Per abilitare le chiamate di emergenza dinamiche, attiva **Chiamate di emergenza dinamiche.** Quando le chiamate di emergenza dinamiche sono abilitate, Teams le informazioni sui criteri e sulla posizione dal servizio e le include come parte della chiamata di emergenza.
 5. Definire uno o più numeri di emergenza. A questo scopo, in **Numeri di emergenza** fare clic su **Aggiungi** e quindi eseguire le operazioni seguenti:
-    1. **Stringa di chiamata di emergenza:** immettere la stringa di chiamata di emergenza. Questa stringa di chiamata indica che una chiamata è una chiamata di emergenza.
+    1. **Stringa di chiamata di emergenza:** immettere la stringa di chiamata di emergenza. Questa stringa di chiamata indica che una chiamata è una chiamata di emergenza e che il modello di percorso deve corrispondere esattamente a questa stringa di chiamata. 
         > [!NOTE]
         > **Per il routing diretto, Teams i client non inviano più chiamate di emergenza con un "+" davanti alla stringa di chiamata di emergenza. Assicurarsi che il modello di route vocale corrispondente a una stringa di chiamata di emergenza rifletta questa modifica.**
-    2. **Maschera di chiamata di emergenza:** per ogni numero di emergenza, è possibile specificare zero o più maschere di chiamata di emergenza. Una maschera di chiamata è il numero che si vuole tradurre nel valore della stringa di chiamata di emergenza. In questo modo è possibile comporre numeri di emergenza alternativi e consentire comunque alla chiamata di raggiungere i servizi di emergenza. <br>Ad esempio, si aggiunge 112 come maschera di chiamata di emergenza, che è il numero del servizio di emergenza per la maggior parte dell'Europa, e 911 come stringa di chiamata di emergenza. Un utente Teams dall'Europa che sta visitando potrebbe non sapere che 911 è il numero di emergenza negli Stati Uniti e quando compone il 112, la chiamata viene effettuata al 911. Per definire più maschere di chiamata, separare ogni valore con un punto e virgola. Ad esempio, 112;212.
+    2. **Maschera di chiamata di emergenza:** per ogni numero di emergenza, è possibile specificare zero o più maschere di chiamata di emergenza. Una maschera di chiamata è il numero che si vuole tradurre nel valore della stringa di chiamata di emergenza. In questo modo è possibile comporre numeri di emergenza alternativi e consentire comunque alla chiamata di raggiungere i servizi di emergenza. <br>Ad esempio, si aggiunge 112 come maschera di chiamata di emergenza, che è il numero del servizio di emergenza per la maggior parte dell'Europa, e 911 come stringa di chiamata di emergenza. Un Teams dall'Europa che sta visitando potrebbe non sapere che 911 è il numero di emergenza negli Stati Uniti e quando compone il 112, la chiamata viene effettuata al 911. Per definire più maschere di chiamata, separare ogni valore con un punto e virgola. Ad esempio, 112;212.
     3. **Record di utilizzo PSTN:** selezionare il record di utilizzo PSTN (Public Switched Telephone Network). Il record di utilizzo PSTN viene usato per determinare quale percorso viene usato per instradare le chiamate di emergenza da parte di utenti autorizzati a usarle. La route associata a questo utilizzo deve puntare a un trunk SIP (Session Initiation Protocol) dedicato alle chiamate di emergenza o a un gateway ELIN (Emergency Location Identification Number) che instrada le chiamate di emergenza al punto di risposta per la sicurezza pubblica (PSAP) più vicino.
 
     > [!NOTE]

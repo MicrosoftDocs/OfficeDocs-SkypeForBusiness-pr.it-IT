@@ -19,18 +19,18 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.general
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni generali dei criteri delle riunioni in Teams.
-ms.openlocfilehash: db1515b016aec47190c26305656b205a56e13b23
-ms.sourcegitcommit: b0bb7db41856ee377dbe4ca8c9dff56385bf120d
+ms.openlocfilehash: 1bf4958f74a95775d6d34c87ea6d7d65262530e4
+ms.sourcegitcommit: 9ef6e36eeba7db70971f4eb1a45f0ded394b1fe6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61562874"
+ms.lasthandoff: 01/25/2022
+ms.locfileid: "62191477"
 ---
 # <a name="meeting-policy-settings---general"></a>Impostazioni dei criteri di riunione - Generale
 
 <a name="bkgeneral"> </a>
 
-Questo articolo descrive le impostazioni dei criteri generali seguenti per Teams riunioni:
+Questo articolo descrive le impostazioni dei criteri generali seguenti per le Teams riunioni:
 
 - [Incontra ora nei canali](#meet-now-in-channels)
 - [Outlook componente aggiuntivo](#outlook-add-in)
@@ -40,7 +40,7 @@ Questo articolo descrive le impostazioni dei criteri generali seguenti per Teams
 - [Modalità ruolo relatore designato](#designated-presenter-role-mode)
 - [Report impegno](#engagement-report)
 - [Registrazione della riunione](#meeting-registration)
-- [Who può registrarsi](#who-can-register)
+- [Who possibile registrare](#who-can-register)
 - [Provider di riunioni per la modalità Isole](#meeting-provider-for-islands-mode)
 
 ## <a name="meet-now-in-channels"></a>Incontra ora nei canali
@@ -59,7 +59,7 @@ Se si disattiva questa impostazione, gli utenti non potranno pianificare riunion
 
 ## <a name="channel-meeting-scheduling"></a>Pianificazione delle riunioni del canale
 
-Usare il criterio AllowChannelMeetingScheduling esistente per controllare i tipi di eventi che è possibile creare nei calendari del canale di un team. Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di Teams. Per impostazione predefinita, questa impostazione è attivata. 
+Usare il criterio AllowChannelMeetingScheduling esistente per controllare i tipi di eventi che è possibile creare nei calendari del canale di un team. Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di Teams. Per impostazione predefinita, questa impostazione è attivata.
 
 Se questo criterio è disattivato, gli utenti non potranno creare nuove riunioni del canale. Tuttavia, le riunioni di canale esistenti possono essere modificate dall'organizzatore dell'evento.
 
@@ -124,19 +124,18 @@ Dopo aver impostato il valore predefinito, gli organizzatori delle riunioni poss
 
 Questo è un criterio per utente. Questa impostazione controlla se gli organizzatori delle riunioni possono scaricare il [Rapporto partecipazione a riunione](teams-analytics-and-reports/meeting-attendance-report.md).
 
-Questo criterio è disattivato per impostazione predefinita e consente agli organizzatori di vedere chi ha registrato e partecipato alle riunioni e ai webinar che hanno configurato. Per attivare questa opzione nell'interfaccia Teams di amministrazione, passare a Criteri riunione riunioni e impostare l'impostazione Report impegno  >  su **Abilitato.** 
+Questo criterio è impostato per impostazione predefinita e consente agli organizzatori di vedere chi ha registrato e partecipato alle riunioni e ai webinar da loro impostati. Per disattivarla nell'interfaccia di amministrazione Teams riunioni, passare a Criteri riunione riunioni e impostare l'impostazione Report impegno  >  su **Disattivato.** 
 
 È anche possibile modificare un criterio Teams riunione usando il cmdlet [Set-CsTeamsMeetingPolicy.](/powershell/module/skype/set-csteamsmeetingpolicy) In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 
-Per consentire a un organizzatore della riunione di scaricare il report sulla partecipazione alla riunione, impostare il **parametro AllowEngagementReport** su **Enabled**. Se abilitata, l'opzione per scaricare il rapporto viene visualizzata nel riquadro **Partecipanti**. Per impostazione predefinita, questa impostazione non è abilitata.
+Per impostazione predefinita, il **parametro AllowEngagementReport** è impostato su **Abilitato** in PowerShell. Per impedire a un organizzatore della riunione di scaricare il report sulla partecipazione alla riunione, impostare il **parametro AllowEngagementReport** su **Disabled**.
 
-Per evitare che un organizzatore della riunione scarichi il rapporto, impostare il parametro su **Disabilitato**.
+Quando questo criterio è abilitato, nel riquadro Partecipanti viene visualizzata l'opzione per scaricare il report sulla partecipazione **alla** riunione.
 
 > [!NOTE]
 > Gli amministratori non possono visualizzare il report sulle presenze per le riunioni che non si organizzano. Tuttavia, è possibile visualizzare i dettagli dei partecipanti per una determinata riunione entro 24 ore dalla riunione. Nell'Teams di amministrazione passare a **Gestione**  >  **utenti**. Scegliere il nome visualizzato per l'organizzatore della riunione. Selezionare la **scheda Riunioni & chiamate** e quindi scegliere l'ID riunione o l'ID chiamata appropriato. Quindi, selezionare **Dettagli partecipante**.
 
-Per altre informazioni, inclusi i limiti del report di impegno, vedere visualizzazione e download dei report sulla partecipazione alle riunioni [in Teams](https://support.microsoft.com/office/view-and-download-meeting-attendance-reports-in-teams-ae7cf170-530c-47d3-84c1-3aedac74d310).
-
+Per altre informazioni, inclusi i limiti del report di impegno, vedere Visualizzazione e download dei report sulla partecipazione alle riunioni [in Teams](https://support.microsoft.com/office/view-and-download-meeting-attendance-reports-in-teams-ae7cf170-530c-47d3-84c1-3aedac74d310).
 
 ## <a name="meeting-registration"></a>Registrazione della riunione
 
@@ -154,8 +153,8 @@ Per disattivare la registrazione della riunione e impedire agli utenti di pianif
 
 Questo criterio controlla quali utenti possono registrarsi e partecipare ai webinar. Questo criterio include due opzioni, disponibili solo se è **attivata** la registrazione alla riunione.
 
-- Impostare **Who registrarsi** su **Tutti** se si vuole consentire a tutti, inclusi gli utenti anonimi, di registrarsi e partecipare ai webinar impostati dagli utenti dell'organizzazione.
-- Impostare **Who registrarsi** su **Tutti** nell'organizzazione se si vuole consentire solo agli utenti dell'organizzazione di registrarsi e partecipare ai webinar.
+- Impostare **Who** registrarsi su **Tutti** se si vuole consentire a tutti, inclusi gli utenti anonimi, di registrare e partecipare ai webinar impostati dagli utenti dell'organizzazione.
+- Impostare **Who** possibile registrarsi a **Tutti** nell'organizzazione se si vuole consentire solo agli utenti dell'organizzazione di registrarsi e partecipare ai webinar.
 
 Per impostazione predefinita, **Who registrazione è** impostato su **Tutti**. Per modificare questo criterio nell'Teams di amministrazione, passare a **Criteri**  >  **riunione riunioni**.
 
