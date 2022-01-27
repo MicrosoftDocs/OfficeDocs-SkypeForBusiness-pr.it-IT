@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e9f10a35e3be27b446fa7f55b5c9d97e3418fe36
-ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
+ms.openlocfilehash: a067488736a1392ac34259ba77518c299c46d203
+ms.sourcegitcommit: faeb8976299375e7658499ff31d25e8ef6003144
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62056086"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62224013"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -143,8 +143,9 @@ Set-CsTeamsMeetingPolicy -Identity Global -ChannelRecordingDownload Block
 >```
 
 ### <a name="turn-on-or-turn-off-recording-transcription"></a>Attivare o disattivare la trascrizione delle registrazioni
-
-Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. Se si disattiva questa opzione, durante la riproduzione di una registrazione di riunione non saranno disponibili le opzioni **Cerca** e **Cc**. La persona che ha avviato la registrazione ha bisogno che questa impostazione sia attivata perché la registrazione includa anche una trascrizione.
+Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. La persona che ha avviato la registrazione deve attivare questa impostazione per permettere alle funzionalità di operare in fase di registrazione.
+  
+Con l’attivazione di questa impostazione, viene creata una copia della trascrizione archiviata con la registrazione della riunione, che permette di eseguire **ricerche**, **CC** e **trascrizioni** nella registrazione della riunione.
 
 > [!NOTE]
 > La trascrizione per le riunioni registrate è al momento supportata solo per: inglese (Stati Uniti), inglese (Canada), inglese (India), inglese (Regno Unito), inglese (Australia), inglese (Nuova Zelanda), tedesco (Germania), portoghese (Brasile), olandese (Paesi Bassi), olandese (Belgio), francese (Francia), spagnolo (Spagna), giapponese (Giappone), francese (Canada), cinese (cantonese, tradizionale), cinese (mandarino, semplificato), hindi (India), italiano (Italia), coreano (Corea), spagnolo (Messico), svedese (Svezia), polacco (Polonia), arabo (Emirati Arabi Uniti), arabo (Arabia Saudita), danese (Danimarca), finlandese (Finlandia), norvegese (Norvegia) e russo (Russia). Le trascrizioni sono conservate insieme alle registrazioni delle riunioni nello spazio di archiviazione cloud in OneDrive for Business e SharePoint Online.
@@ -259,7 +260,7 @@ Le dimensioni di una registrazione di 1 ora sono pari a 400 MB. Assicurarsi di a
 
 Altre informazioni sulle modifiche specifiche dell'amministratore sono disponibili [qui](meeting-expiration.md#changes-to-meeting-expiration).
 
-Per altre informazioni su come gli utenti finali possono gestire la scadenza delle riunioni, vedere [qui](https://support.microsoft.com/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24#bkmk_view_change_expiration_date).
+Altre informazioni su come gli utenti finali possono gestire la scadenza delle riunioni sono disponibili [qui](https://support.microsoft.com/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24#bkmk_view_change_expiration_date).
   
 Vedere le domande frequenti per gli amministratori e gli utenti finali per raccogliere informazioni su come funzionerà la scadenza automatica delle registrazioni delle riunioni di Teams, quali azioni è possibile intraprendere ora e quali azioni sarà possibile eseguire dopo il lancio della funzionalità.
   
@@ -408,7 +409,7 @@ I sottotitoli consentono di creare contenuto inclusivo per i visualizzatori di t
 
 Oggi i sottotitoli codificati per il file video di registrazione sono collegati alla trascrizione della riunione di Teams. Questo collegamento rimarrà per tutta la durata del file nella maggior parte dei casi, ma può essere interrotto se il file video viene copiato all'interno dello stesso sito di OneDrive for Business o SharePoint Online, con conseguente mancata disponibilità dei sottotitoli nel file video copiato.
 
-Eventuali modifiche future al collegamento tra la trascrizione in Teams e la registrazione verranno chiarite qui e nelle notifiche del Centro messaggi. Se apporteremo modifiche in futuro, ci assicureremo che i file di registrazione che risalgono a meno di 60 giorni contengano la trascrizione della riunione sotto forma di sottotitoli.
+Eventuali modifiche future al collegamento tra la trascrizione in Teams e la registrazione verranno chiarite qui e nelle notifiche del Centro messaggi. In caso di modifiche future, assicurarsi che i file di registrazione con meno di 60 giorni contengano la trascrizione della riunione in forma di sottotitoli.
 
 > [!NOTE]
 > La trascrizione della riunione non è ancora disponibile in Government Community Cloud.
