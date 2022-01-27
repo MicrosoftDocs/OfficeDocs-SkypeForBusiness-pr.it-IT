@@ -22,16 +22,16 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare le Cloud Voicemail per gli utenti.
-ms.openlocfilehash: cf4edb7043c3d9965f2f01710f1ed9e7fa7f96b8
-ms.sourcegitcommit: 9ef6e36eeba7db70971f4eb1a45f0ded394b1fe6
+ms.openlocfilehash: cb0a8b6ad8a82ef44ace21dceb9adbbfc7c04139
+ms.sourcegitcommit: cd9fbda4ea85a83cb22e241a94d0825ff8186cca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62191077"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62228944"
 ---
 # <a name="set-up-cloud-voicemail"></a>Configurare Cloud Voicemail
 
-Questo articolo è per l'amministratore Microsoft 365 o Office 365 come descritto [in](/microsoft-365/admin/add-users/about-admin-roles) Informazioni sui ruoli di amministratore che vogliono configurare la caratteristica Cloud Voicemail per tutti gli utenti dell'azienda. Cloud Voicemail richiede Exchange per gli utenti in cui deposita i messaggi della segreteria telefonica. Non supporta sistemi di posta elettronica di terze parti. Per Exchange Online di licenza, vedere la descrizione [Exchange Online servizio](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description#features-available-to-all-plans)
+Questo articolo è per l'amministratore Microsoft 365 o Office 365 come descritto [in](/microsoft-365/admin/add-users/about-admin-roles) Informazioni sui ruoli di amministratore che vogliono configurare la caratteristica Cloud Voicemail per tutti gli utenti dell'azienda. Cloud Voicemail richiede Exchange per gli utenti in cui deposita i messaggi della segreteria telefonica. Non supporta sistemi di posta elettronica di terze parti. Per Exchange Online di licenza, vedere la [descrizione Exchange Online servizio.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description#features-available-to-all-plans)
 
 ## <a name="cloud-voicemail-for-teams-users"></a>Cloud Voicemail per Teams utenti
 

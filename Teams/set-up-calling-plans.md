@@ -24,51 +24,51 @@ ms.custom:
 - Calling Plans
 - LIL_Placement
 - seo-marvel-mar2020
-description: Scopri come configurare i Piani per le chiamate, tra cui visualizzare i piani disponibili nella tua area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi di emergenza & località.
-ms.openlocfilehash: 996211b3347f078b4d92c5a473b3d8057346231d
-ms.sourcegitcommit: bc686eedb37e565148d0c7a61ffa865aaca37d20
+description: Scopri come configurare i Piani per le chiamate, inclusi i piani di visualizzazione disponibili nella tua area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi di emergenza & località.
+ms.openlocfilehash: 4b459e82aa99194dc62c721d42b162961b61f372
+ms.sourcegitcommit: cd9fbda4ea85a83cb22e241a94d0825ff8186cca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62181089"
+ms.lasthandoff: 01/26/2022
+ms.locfileid: "62228934"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
 
-Le chiamate ad altri utenti Teams sono gratuite, ma se si vuole che gli utenti siano in grado di chiamare telefoni esterni all'azienda, ottenere un piano per chiamate nazionali o un piano per chiamate internazionali in Microsoft 365 o Office 365. È facile configurare Piani per chiamate per la tua azienda.  Per altre informazioni sui Piani per chiamate, vedere [Quale piano di chiamata è più giusto per te?](calling-plan-landing-page.md).
+Le chiamate ad altri utenti Teams sono gratuite, ma se si vuole che gli utenti possano chiamare telefoni al di fuori dell'azienda, ottenere un piano per chiamate nazionali o un piano per chiamate internazionali in Microsoft 365. È facile configurare Piani per chiamate per la tua azienda.  Per altre informazioni sui Piani per chiamate, vedere [Quale piano di chiamata è più giusto per te?](calling-plan-landing-page.md).
 
 ## <a name="step-1-find-out-if-calling-plans-are-available-in-your-countryregion"></a>Passaggio 1: Scopri se i Piani per chiamate sono disponibili nel tuo paese/area geografica
-Passare a Disponibilità paese e area geografica per [Audioconferenza](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) e Piani per le chiamate e selezionare il paese o l'area geografica per ottenere informazioni sulla disponibilità dei Piani per chiamate, oltre a informazioni su Audioconferenza, Sistema telefonico, numeri a pagamento e a pagamento e Crediti comunicazioni.
+Passare [](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) a Disponibilità del Paese e dell'area geografica per i piani per audioconferenze e chiamate e selezionare il paese o l'area geografica in cui si desidera ottenere informazioni sulla disponibilità dei piani per chiamate, nonché informazioni su audioconferenza, Teams Telefono, numeri a pagamento e a pagamento e crediti comunicazioni.
 
-Se i Piani per chiamate non sono disponibili per il paese o l'area geografica, è consigliabile usare Il routing diretto per connettere l'infrastruttura di telefonia locale a Sistema telefonico.  Per altre informazioni, vedere Sistema telefonico [routing diretto](direct-routing-landing-page.md).
+Se Piani per chiamate non sono disponibili per il proprio paese o area geografica, vedere Opzioni di connettività [PSTN](pstn-connectivity.md) per tutte le opzioni disponibili.
   
 ## <a name="step-2-buy-and-assign-licenses"></a>Passaggio 2: Acquistare e assegnare licenze
-1. Se la Sistema telefonico non è inclusa nel piano Microsoft 365 o Office 365, potrebbe essere necessario  acquistare Sistema telefonico licenze per i componenti aggiuntivi. Dopo aver acquistato **Sistema telefonico** licenze, acquistare Piani per chiamate per Microsoft 365 [o Office 365](calling-plans-for-office-365.md). Vedere [Microsoft Teams licenze per i componenti aggiuntivi](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)e acquistare le licenze e il piano. 
+1. Se la Teams Telefono non è inclusa nel piano di Microsoft 365, potrebbe essere necessario acquistare Sistema telefonico **licenze** per i componenti aggiuntivi. Dopo aver acquistato **Sistema telefonico** licenze, acquistare [Piani per chiamate per Microsoft 365](calling-plans-for-office-365.md). Vedere [Microsoft Teams licenze per i componenti](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)aggiuntivi e acquistare le licenze e il piano. 
     
     > [!TIP]
-    > **Sistema telefonico** licenze e piani per chiamate in Microsoft 365 o Office 365 vanno insieme, quindi per vedere l'opzione per l'acquisto di Piani per chiamate, devi prima avere le licenze Sistema telefonico **chiamate.**
+    > **Sistema telefonico** licenze e piani per chiamate in Microsoft 365 insieme, quindi per vedere l'opzione per l'acquisto di Piani per chiamate, devi prima avere le licenze Sistema telefonico **chiamate.**
   
-2. First assign the licenses, and then assign a Calling Plan to the people in your organization. Vedere [Assegnare Microsoft Teams licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+2. First assign the licenses, and then assign a Calling Plan to the people in your organization. Vedere [Assegnare Microsoft Teams licenze per i componenti aggiuntivi.](./teams-add-on-licensing/assign-teams-add-on-licenses.md)
     
 ## <a name="step-3-get-phone-numbers"></a>Passaggio 3: Ottenere i numeri di telefono
 Esistono tre modi per ottenere nuovi numeri utente:
 
 - **Usare l'Teams di amministrazione.** Per alcuni paesi/aree geografiche, è possibile ottenere i numeri per gli utenti usando l'interfaccia di amministrazione di Teams, vedere Ottenere numeri di [telefono per gli utenti.](getting-phone-numbers-for-your-users.md)
     
-- **Importa i tuoi numeri esistenti.** È possibile trasferire o trasferire i numeri esistenti dal provider di servizi o dal gestore telefonico corrente Microsoft 365 o Office 365. Per altre informazioni, vedere [Trasferire i numeri di telefono Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o Gestire i numeri di telefono per [l'organizzazione.](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) 
+- **Importa i tuoi numeri esistenti.** È possibile trasferire o trasferire i numeri esistenti dal provider di servizi corrente o dal gestore telefonico per Microsoft 365. Per altre informazioni, vedere [Trasferire i numeri di telefono Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o Gestire i numeri di telefono per [l'organizzazione.](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) 
   
-- **Utilizzare un modulo di richiesta per nuovi numeri.** A volte (a seconda del paese/area geografica) non è possibile ottenere i nuovi numeri di telefono usando l'interfaccia di amministrazione di Teams oppure sono necessari numeri di telefono o codici di area specifici. In questo caso è necessario scaricare un modulo di richiesta, compilarlo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md). 
+- **Utilizzare un modulo di richiesta per nuovi numeri.** A volte (a seconda del paese/area geografica) non sarà possibile ottenere i nuovi numeri di telefono usando l'interfaccia di amministrazione di Teams oppure saranno necessari numeri di telefono o codici di area specifici. In questo caso è necessario scaricare un modulo di richiesta, compilarlo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md). 
 
 ## <a name="step-4-add-emergency-addresses-and-locations-for-your-organization"></a>Passaggio 4: Aggiungere indirizzi e posizioni per gli interventi di emergenza per l'organizzazione
-<a name="bkmk_add_addresses"></a> Un indirizzo di emergenza deve essere associato a un numero di telefono. Quando questa associazione si verifica può variare a seconda del paese e delle aree geografiche. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito è necessario associare un indirizzo di emergenza al numero di telefono quando si riceve il numero di telefono da Microsoft 365 o Office 365 o quando si trasferiscono numeri di telefono dal provider di servizi corrente. 
+<a name="bkmk_add_addresses"></a> Un indirizzo di emergenza deve essere associato a un numero di telefono. Quando questa associazione si verifica può variare a seconda del paese e delle aree geografiche. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito è necessario associare un indirizzo di emergenza al numero di telefono quando si riceve il numero di telefono da Microsoft 365 o quando si trasferiscono numeri di telefono dal provider di servizi corrente. 
 
 Per informazioni sulle chiamate di emergenza e sulla gestione degli indirizzi di emergenza, [vedere](what-are-emergency-locations-addresses-and-call-routing.md) Gestire le chiamate di emergenza e Aggiungere, modificare o rimuovere una posizione di emergenza [per l'organizzazione.](add-change-remove-emergency-location-organization.md)
     
 ## <a name="step-5-assign-an-emergency-address-and-a-phone-number-to-a-user"></a>Passaggio 5: Assegnare un indirizzo di emergenza e un numero di telefono a un utente
-<a name="bkmk_add_addresses"></a> Quando si configuraNo piani di chiamata in Office 365, è necessario assegnare un numero di telefono e un indirizzo di emergenza a ogni utente. Prima di poter associare a un numero di telefono, è necessario creare l'indirizzo di emergenza.  Per altre informazioni, vedere [Assegnare o modificare un indirizzo per gli interventi di emergenza.](assign-change-emergency-location-user.md)
+<a name="bkmk_add_addresses"></a> Quando si configuraNo piani di chiamata in Microsoft 365, è necessario assegnare un numero di telefono e un indirizzo di emergenza a ogni utente. Prima di poter associare a un numero di telefono, è necessario creare l'indirizzo di emergenza. Per altre informazioni, vedere [Assegnare o modificare un indirizzo per gli interventi di emergenza.](assign-change-emergency-location-user.md)
 
 
 > [!TIP]
-> Se aggiungi altre persone alla tua azienda appena prima di questo passaggio, possono passare **diverse ore** prima che compaiano nella pagina **Utenti vocali**. C'è un periodo di latenza.
+> Se aggiungi altre persone alla tua azienda appena prima di questo passaggio, possono passare **diverse ore** prima che compaiano nella pagina **Utenti vocali**. 
 
 
 
