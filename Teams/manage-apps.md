@@ -13,20 +13,20 @@ ms.reviewer: vaibhava
 search.appverid: MET150
 f1keywords:
 - ms.teamsadmincenter.manageapps.overview
-description: Informazioni su come gestire le app Teams nella pagina Gestisci app dell'interfaccia Microsoft Teams di amministrazione.
+description: Informazioni su come gestire le app Teams nella pagina Gestisci app dell'Microsoft Teams di amministrazione.
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: ec9caa743f9a8cd5bf43d7b6e67f83d15ee2a045
-ms.sourcegitcommit: c7904086e6956ad8d0e5544530bcc90d608b6e6a
+ms.openlocfilehash: cb97ec9ca1e3e9a612038f22dd04d91d8df9a71f
+ms.sourcegitcommit: 9f1f5cd828c24676c20df727b2c67daf56ff884c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62039909"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "62248697"
 ---
 # <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia Microsoft Teams di amministrazione
 
-Gli amministratori possono visualizzare e gestire tutte le app Teams per l'organizzazione. Nella pagina Gestisci app nell'Teams di amministrazione è possibile:
+Gli amministratori possono visualizzare e gestire tutte le app Teams per l'organizzazione. Nella pagina Gestisci app nell'interfaccia Teams di amministrazione è possibile:
 
 - [Consentire o bloccare le app a livello di organizzazione](#allow-and-block-apps)
 - [App bloccate dagli editori](#apps-blocked-by-publishers)
@@ -37,27 +37,26 @@ Gli amministratori possono visualizzare e gestire tutte le app Teams per l'organ
 - [Servizio di acquisto per app di terze parti](#purchase-services-for-third-party-apps)
 - [Visualizzare lo stato a livello di organizzazione e le proprietà delle app](#view-apps)
 - [Gestire le impostazioni dell'app a livello di organizzazione](#manage-org-wide-app-settings)
-- [Visualizzare le informazioni sulla sicurezza e la conformità per Microsoft 365 certificate](#view-security-and-compliance-information-for-microsoft-365-certified-apps)
+- [Visualizzare le informazioni sulla sicurezza e la conformità Microsoft 365 app certificate](#view-security-and-compliance-information-for-microsoft-365-certified-apps)
 
 La pagina Gestisci app offre una visualizzazione in tutte le app disponibili, fornendo le informazioni necessarie per decidere quali app consentire o bloccare all'interno dell'organizzazione. È quindi possibile usare i [criteri di autorizzazione](teams-app-permission-policies.md)delle [app,](teams-app-setup-policies.md)i criteri di configurazione delle app e i criteri e le impostazioni delle [app](teams-custom-app-policies-and-settings.md) personalizzati per configurare l'esperienza dell'app per utenti specifici dell'organizzazione.
 
-Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**. Per accedere alla pagina, è necessario essere un amministratore globale o Teams del servizio.
+Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**. Per accedere alla pagina, è necessario essere un amministratore globale o un Teams servizio.
+
+![Screenshot della pagina App gestite.](media/manage-apps.png)
 
 > [!NOTE]
-> La pagina Gestisci app non è ancora disponibile nelle distribuzioni di Microsoft 365 Government Community Cloud High (GCCH) o DoD (Department of Defense) di Teams.
+> La pagina Gestisci app non è ancora disponibile nelle distribuzioni di Microsoft 365 Government Community Cloud High (GCCH) o Department of Defense (DoD) di Teams.
 
 ## <a name="view-apps"></a>Visualizzare le app
 
 È possibile visualizzare tutte le app, incluse le informazioni seguenti su ogni app.
 
-![Screenshot della pagina App gestite.](media/manage-apps.png)
+![Screenshot della pagina dei dettagli delle app per un'app.](media/app-detail-page.jpg)
 
-- **Nome:** il nome dell'app. Selezionare il nome dell'app per passare alla pagina dei dettagli dell'app per visualizzare altre informazioni sull'app. Include una descrizione dell'app, che sia consentita o bloccata, versione, informativa sulla privacy, condizioni per l'uso, categorie applicabili all'app, stato di certificazione, funzionalità supportate e ID app. Ecco un esempio:
-
-  ![Screenshot della pagina dei dettagli delle app per un'app.](media/manage-apps-app-details.png)
-  
+- **Nome:** il nome dell'app. Selezionare il nome dell'app per passare alla pagina dei dettagli dell'app per visualizzare altre informazioni sull'app. Include una descrizione dell'app, che sia consentita o bloccata, versione, informativa sulla privacy, condizioni per l'uso, categorie applicabili all'app, stato di certificazione, funzionalità supportate e ID app.
 - **Certificazione:** se l'app ha ottenuto la certificazione, verrà visualizzato **Microsoft 365** certificato o Publisher **attestazione.** Selezionare il collegamento per visualizzare i dettagli della certificazione per l'app. Se viene visualizzato " ", non sono disponibili informazioni **--** sulla certificazione per l'app. Per altre informazioni sulle app certificate in Teams, Microsoft 365 [programma di certificazione delle app.](/teams-app-certification/all-apps)  
-- **Publisher**: Nome dell'autore.
+- **Publisher:** nome dell'autore.
 - **Stato pubblicazione:** stato di pubblicazione delle app personalizzate.
 - **Stato:** stato dell'app a livello di organizzazione, che può essere uno dei seguenti:
     - **Consentito:** l'app è disponibile per tutti gli utenti dell'organizzazione.
@@ -66,13 +65,13 @@ Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Micr
     - **Bloccato a livello di organizzazione:** l'app è bloccata nelle impostazioni dell'app a livello di organizzazione.
       È importante sapere che questa colonna rappresenta lo stato consentito e bloccato delle app che in precedenza erano nel **riquadro Impostazioni a livello di** organizzazione. Ora è possibile visualizzare, bloccare e consentire le app a livello di organizzazione nella **pagina Gestisci app.**
 - **Licenze:** indica se un'app offre un abbonamento a Software as a Service (SaaS) per l'acquisto. Questa colonna si applica solo alle app di terze parti. Ogni app di terze parti avrà uno dei valori seguenti:
-- **Acquisto:** l'app offre un abbonamento SaaS ed è disponibile per l'acquisto.  
-- **Acquistato:** l'app offre un abbonamento SaaS e sono state acquistate licenze per l'app.
-- **- :** l'app non offre un abbonamento SaaS.
+    - **Acquisto:** l'app offre un abbonamento SaaS ed è disponibile per l'acquisto.  
+    - **Acquistato:** l'app offre un abbonamento SaaS e sono state acquistate licenze per l'app.
+    - **- :** l'app non offre un abbonamento SaaS.
 - **App personalizzata:** indica se l'app è un'app personalizzata.
 - **Autorizzazioni:** indica se un'app di terze parti o personalizzata registrata in Azure Active Directory (Azure AD) ha autorizzazioni che necessitano del consenso. Verrà visualizzato uno dei valori seguenti:
-- **Visualizza dettagli:** l'app ha autorizzazioni che richiedono il consenso prima che l'app possa accedere ai dati.
-- **- -**: l'app non ha le autorizzazioni che necessitano del consenso.
+    - **Visualizza dettagli:** l'app ha autorizzazioni che richiedono il consenso prima che l'app possa accedere ai dati.
+    - **- -**: l'app non ha le autorizzazioni che necessitano del consenso.
 - **Categorie:** categorie applicabili all'app.
 - **Versione:** versione dell'app.
 - **L'amministratore può installare nelle** riunioni: indica se un'app può essere installata dagli amministratori nelle riunioni del team. [Ulteriori informazioni](teams-app-setup-policies.md#install-apps)
@@ -83,12 +82,12 @@ Per visualizzare le informazioni desiderate nella tabella, selezionare Modifica 
 
 Usare la pagina Gestisci app per pubblicare app create appositamente per l'organizzazione. Dopo aver pubblicato un'app personalizzata, questa sarà disponibile per gli utenti nell'app store dell'organizzazione. Esistono due modi per pubblicare un'app personalizzata nell'app store dell'organizzazione. Il modo in cui si usa dipende da come si ottiene l'app.
 
-- [Approvare un'app personalizzata:](#approve-a-custom-app)usare questo metodo se lo sviluppatore invia l'app direttamente alla pagina Gestisci app usando l'API di invio delle app Teams app. È quindi possibile rivedere e pubblicare (o rifiutare) l'app direttamente dalla pagina dei dettagli dell'app.
-- [Upload un pacchetto dell'app:](#upload-an-app-package)usare questo metodo se lo sviluppatore invia il pacchetto dell'app in .zip formato. Per pubblicare l'app, caricare il pacchetto dell'app.
+- [Approvare un'app personalizzata:](#approve-a-custom-app)usare questo metodo se lo sviluppatore invia l'app direttamente alla pagina Gestisci app usando l'API Teams di invio dell'app. È quindi possibile rivedere e pubblicare (o rifiutare) l'app direttamente dalla pagina dei dettagli dell'app.
+- [Upload pacchetto dell'app:](#upload-an-app-package)usare questo metodo se lo sviluppatore invia il pacchetto dell'app in .zip formato. Per pubblicare l'app, caricare il pacchetto dell'app.
 
 ### <a name="approve-a-custom-app"></a>Approvare un'app personalizzata
 
-Il widget **Approvazioni in** sospeso nella pagina Gestisci app invia una notifica quando uno sviluppatore invia un'app usando l'API di invio delle app Teams app. Un'app appena inviata è elencata con lo stato **Pubblicazione** **inviato** e **lo stato** **Bloccato**. Passare alla pagina dei dettagli dell'app per visualizzare altre informazioni sull'app e quindi, per pubblicarla, impostare **Stato pubblicazione** su **Pubblica**.
+Il widget **Approvazioni in** sospeso nella pagina Gestisci app invia una notifica quando uno sviluppatore invia un'app usando l'API Teams di invio delle app. Un'app appena inviata è elencata con lo stato **Pubblicazione** **inviato** e **lo stato** **Bloccato**. Passare alla pagina dei dettagli dell'app per visualizzare altre informazioni sull'app e quindi, per pubblicarla, impostare **Stato pubblicazione** su **Pubblica**.
 
 Si viene avvisati anche quando uno sviluppatore invia un aggiornamento a un'app personalizzata. È quindi possibile rivedere e pubblicare (o rifiutare) l'aggiornamento nella pagina dei dettagli dell'app. Tutti i criteri di autorizzazione delle app e i criteri di configurazione delle app rimangono applicati per l'app aggiornata.
 
@@ -96,7 +95,7 @@ Per altre informazioni, vedere [Pubblicare un'app personalizzata inviata tramite
 
 ### <a name="upload-an-app-package"></a>Upload pacchetto di un'app
 
-Lo sviluppatore crea un pacchetto Teams'app usando [Teams App Studio](/microsoftteams/platform/get-started/get-started-app-studio)e lo invia all'utente in .zip formato. Quando si ha il pacchetto dell'app, è possibile caricarlo nell'app store dell'organizzazione.
+Lo sviluppatore crea un pacchetto Teams app usando [Teams App Studio](/microsoftteams/platform/get-started/get-started-app-studio)e quindi lo invia in .zip formato. Quando si ha il pacchetto dell'app, è possibile caricarlo nell'app store dell'organizzazione.
 
 Per caricare una nuova app personalizzata, **selezionare** Upload per caricare il pacchetto dell'app. L'app non è evidenziata dopo il caricamento, quindi dovrai cercare nell'elenco delle app nella pagina Gestisci app per trovarla.
 
@@ -108,7 +107,7 @@ Per altre informazioni, vedere [Pubblicare un'app personalizzata caricando un pa
 
 La pagina Gestisci app consente di consentire o bloccare singole app a livello di organizzazione. Mostra tutte le app disponibili e lo stato corrente dell'app a livello di organizzazione. Il blocco e l'autorizzazione delle app a livello di organizzazione sono stati spostati dal riquadro **impostazioni dell'app** a livello di organizzazione a qui.
 
-Per consentire o bloccare un'app, selezionarla e quindi selezionare **Consenti** o **Blocca**. Quando si blocca un'app, tutte le interazioni con tale app vengono disabilitate e l'app non viene visualizzata Teams per gli utenti dell'organizzazione.
+Per consentire o bloccare un'app, selezionarla e quindi selezionare **Consenti** o **Blocca**. Quando si blocca un'app, tutte le interazioni con l'app vengono disabilitate e l'app non viene visualizzata Teams per gli utenti dell'organizzazione.
 
 Quando si blocca o si consente un'app nella pagina Gestisci app, l'app viene bloccata o consentita per tutti gli utenti dell'organizzazione.  Quando si blocca o si consente un'app in un Teams di autorizzazione dell'app, questa viene bloccata o consentita agli utenti a cui è assegnato tale criterio. Per consentire a un utente di installare e interagire con qualsiasi app, è necessario consentire l'app a livello di organizzazione nella pagina Gestisci app e nei criteri di autorizzazione dell'app assegnati all'utente.
 
@@ -178,18 +177,18 @@ Usare le impostazioni dell'app a livello di organizzazione per controllare se gl
 1. In **App personalizzate** disattivare o attivare Consenti interazione con le app **personalizzate.** Questa impostazione controlla se gli utenti possono interagire con le app personalizzate. Per altre informazioni, vedere [Gestisci criteri e impostazioni app personalizzate in Teams](teams-custom-app-policies-and-settings.md).
 1. Selezionare **Salva per** le impostazioni dell'app a livello di organizzazione per avere effetto.
 
-## <a name="view-security-and-compliance-information-for-microsoft-365-certified-apps"></a>Visualizzare le informazioni sulla sicurezza e la conformità per Microsoft 365 certificate
+## <a name="view-security-and-compliance-information-for-microsoft-365-certified-apps"></a>Visualizzare le informazioni sulla sicurezza e la conformità Microsoft 365 app certificate
 
-Quando si valuta un'app per l'organizzazione, gli amministratori possono usare casb (Cloud Access Security Broker) indipendenti, ad esempio Microsoft Cloud App Security (MCAS), per trovare informazioni sulla sicurezza e sui comportamenti di un'app. L'Teams di amministrazione di Teams include informazioni sulla sicurezza e la conformità di MCAS per le app certificate Microsoft 365, in modo da avere altre informazioni sulla conformità o meno dell'app alle proprie esigenze.
+Quando si valuta un'app per l'organizzazione, gli amministratori possono usare casb (Cloud Access Security Broker) indipendenti, ad esempio Microsoft Cloud App Security (MCAS), per trovare informazioni sulla sicurezza e sui comportamenti di un'app. L'Teams di amministrazione di Teams include informazioni sulla sicurezza e la conformità di MCAS per le app certificate di Microsoft 365, in modo da avere altre informazioni sul fatto che l'app soddisfi o meno le proprie esigenze.
 
 > [!NOTE]
 > Questa funzionalità è disponibile per tutti gli amministratori, indipendentemente dal fatto che l'organizzazione abbia o meno una licenza che supporta MCAS.
 
 Per accedere alle informazioni MCAS, seguire questa procedura:
 
-1. Nell'Teams di amministrazione selezionare **Gestisci app** in Teams **app.**
+1. Nell'Teams di amministrazione selezionare **Gestisci app** in **Teams app**.
 1. Selezionare **Certificazione** per ordinare le app e Microsoft 365 tutte le app certificate nella parte superiore della tabella.
-1. Scegliere un'Microsoft 365 certificata.
+1. Scegliere un'app Microsoft 365 certificata.
 1. Selezionare la **scheda Sicurezza e** conformità.
 
 ![Screenshot della scheda Teams sicurezza e conformità dell'interfaccia di amministrazione.](media/mcas.png)
