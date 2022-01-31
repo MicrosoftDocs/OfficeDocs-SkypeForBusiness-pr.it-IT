@@ -1405,6 +1405,8 @@ items:
             href: devices/plan-device-deployment.md
           - name: Telefoni per Teams
             href: devices/phones-for-teams.md
+          - name: Configurare telefoni di aree comuni
+            href: set-up-common-area-phones.md
           - name: Schermi Teams
             href: devices/teams-displays.md
           - name: Pannelli Teams

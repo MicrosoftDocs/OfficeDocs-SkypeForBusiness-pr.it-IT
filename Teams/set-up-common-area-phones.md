@@ -1,9 +1,9 @@
 ---
-title: Configurare la licenza Telefono area comune
-ms.author: serdars
-author: SerdarSoysal
+title: Configurare la licenza Telefono Area comune
+ms.author: czawideh
+author: cazawideh
 manager: serdars
-ms.date: 12/13/2018
+ms.date: 1/28/2022
 ms.reviewer: kponnus
 ms.topic: article
 ms.tgt.pltfrm: cloud
@@ -20,43 +20,21 @@ f1.keywords:
 ms.custom:
 - Phone System
 - seo-marvel-mar2020
-description: "Informazioni su come configurare i telefoni dell'area comune per le lobby, le aree di ricezione e le sale riunioni "
-ms.openlocfilehash: e2d81c047f4bf26d43da4fd8f9fc31c0702c28d8
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+description: "Informazioni su come configurare i telefoni dell'area comune per lobby, aree di ricezione e sale riunioni "
+ms.openlocfilehash: a4e4720fe7baf58d0da6f00800c61b706ec48516
+ms.sourcegitcommit: 909b0a709983d21fa6f2b547a78cc6a1222188df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60045562"
+ms.lasthandoff: 01/30/2022
+ms.locfileid: "62279264"
 ---
-# <a name="set-up-the-common-area-phone-license-for-microsoft-teams"></a>Configurare la licenza dell'area Telefono per Microsoft Teams
-> [!NOTE]
-> I telefoni dell'area comune non supportano la segreteria telefonica.
+# <a name="deploy-common-area-phones-for-microsoft-teams"></a>Distribuire telefoni ad area comune per Microsoft Teams
 
-Un telefono dell'area comune è in genere posizionato in un'area come una sala d'attesa o un'altra area che è disponibile a molte persone per effettuare una chiamata; ad esempio un'area di ricezione, una sala d'attesa o un telefono per conferenze. I telefoni dell'area comune sono connessi con account collegati a una licenza Telefono area comune. Anche il criterio TeamsIPPhone deve essere impostato in modo appropriato perché il telefono abbia un'esperienza utente nell'area comune.
+Un telefono dell'area comune è in genere posizionato in un'area come una sala d'attesa o un'altra area che è disponibile a molte persone per effettuare una chiamata; ad esempio un'area di ricezione, una sala d'attesa o un telefono per conferenze. I telefoni dell'area comune sono connessi con account collegati a una licenza di area Telefono comune.
 
-Nei passaggi seguenti verrà illustrato come configurare un account per Sistema telefonico per distribuire telefoni ad area comune per l'organizzazione. Per un'esperienza più completa nelle sale riunioni, inclusa l'audioconferenza, è consigliabile acquistare la licenza Sala riunioni con un dispositivo della sala riunioni. 
+Questo articolo fornisce una panoramica su come distribuire e configurare i telefoni Teams telefoni come telefoni dell'area comune per gli spazi condivisi. Per un'esperienza più completa nella sala riunioni, inclusa l'audioconferenza, è consigliabile acquistare la licenza Sala riunioni con un dispositivo della sala riunioni.
 
-Prima di tutto, è necessario acquistare una licenza di Common Area Telefono (CAP) e assicurarsi di avere un telefono certificato. Per cercare e altre informazioni sui telefoni certificati, vai a Microsoft Teams [dispositivi.](https://products.office.com/microsoft-teams/across-devices?ms.url=officecomteamsdevices&rtc=1) 
-
-## <a name="step-1---buy-the-licenses"></a>Passaggio 1: acquista le licenze
-
-1. Nell'interfaccia di amministrazione di Microsoft 365, passare a **Servizi**  >  **di acquisto fatturazione** e quindi espandere Altri **piani.**
-
-    ![Screenshot che mostra il riquadro Telefono area comune.](media/set-up-common-area-phone-image1.png)
-
-2. Selezionare **Area comune Telefono** Acquista  >  **ora**.
-
-3. Nella pagina Checkout fare clic su **Acquista ora.**
-
-4. Espandere **Abbonamenti ai componenti aggiuntivi e** quindi fare clic per acquistare un piano per chiamate. Scegli **Piano di chiamata domestico** o **Piano di chiamata nazionale e internazionale**.
-
-> [!NOTE]
-> Se si usa Telefono Microsoft sistema di routing diretto, non è necessaria una licenza per il piano di chiamata.
-
-> [!NOTE]
-> Non è necessario aggiungere una licenza Sistema telefonico licenza. È inclusa con la licenza per il Telefono di area comune.
-
-Per altre informazioni sulle licenze, vedere Microsoft Teams [licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+## <a name="overview"></a>Panoramica
 
 La licenza common area Telefono supporta: 
 
@@ -76,11 +54,35 @@ La licenza common area Telefono supporta:
 
 &sup2; Non disponibile nei cloud sovrani  
 
+>[!NOTE]
+> Non è possibile eseguire la migrazione degli account per i telefoni dell'area comune Skype for Business Server non è possibile eseguire la migrazione a Microsoft Teams. Seguire i passaggi di questo articolo per ricreare gli account per Teams e, se necessario, eseguire la migrazione della connettività PTSN.
 
+## <a name="step-1---buy-the-licenses"></a>Passaggio 1: acquista le licenze
 
-## <a name="step-2---create-a-new-user-account-for-the-phone-and-assign-the-licenses"></a>Passaggio 2: crea un nuovo account utente per il telefono e assegna le licenze
+Prima di tutto, è necessario acquistare una licenza di Common Area Telefono (CAP) e assicurarsi di avere un telefono certificato. Per cercare e altre informazioni sui telefoni certificati, vai a Microsoft Teams [dispositivi](https://products.office.com/microsoft-teams/across-devices?ms.url=officecomteamsdevices&rtc=1).
 
-1. Nella finestra interfaccia di amministrazione di Microsoft 365 passare agli **utenti attivi**  >  **che**  >  **aggiungono un utente.**
+1. Nel interfaccia di amministrazione di Microsoft 365, passare a **BillingPurchase** >  services. 
+
+2. Se la **sezione Visualizza per categoria** non è già visualizzata, passare a Acquista **da Microsoft** e selezionare **Visualizza prodotti**. Quindi selezionare **Collaborazione e comunicazione**.  
+
+3. Nell'elenco dei prodotti trovare **Area Telefono** e selezionare **Dettagli**.
+
+4. Immetti il numero di licenze necessarie e seleziona **Acquista**.
+
+>[!NOTE]
+>Se si usa Intune nell'ambiente e si hanno regole di accesso condizionale che richiedono la conformità dei dispositivi, è necessario assegnare una licenza di Azure Active Directory Premium Piano 1 e Intune all'account del dispositivo per il telefono dell'area comune.
+>
+>I telefoni delle aree comuni possono essere influenzati dalle regole di accesso condizionale e da altre configurazioni di identità, come l'autenticazione a più fattori. Per [altre informazioni, vedere Procedure consigliate Teams di autenticazione per i dispositivi Android](devices/authentication-best-practices-for-android-devices.md).
+
+## <a name="step-2---create-a-new-user-account-and-assign-licenses"></a>Passaggio 2 - Creare un nuovo account utente e assegnare licenze
+
+### <a name="using-the-microsoft-365-admin-center"></a>Uso del interfaccia di amministrazione di Microsoft 365
+
+Se si distribuiscono più telefoni di area comuni contemporaneamente, vedere come creare account e assegnare licenze [con PowerShell](#using-powershell).
+
+Se si sta distribuendo un dispositivo:
+
+1. Nella finestra interfaccia di amministrazione di Microsoft 365 passare a **UtentiAttiviAggiungere** >  >  **un utente**.
 
 2. Immettere un nome utente come "Principale" per il nome e "Ricezione" per il secondo nome.
 
@@ -88,36 +90,83 @@ La licenza common area Telefono supporta:
 
 4. Immettere un nome utente come "MainReception" o "Mainlobby".
 
-5. Per i telefoni dell'area comune, è consigliabile impostare manualmente una password o avere la stessa password per tutti i telefoni dell'area comune. Inoltre, è consigliabile deselezionare la casella di controllo Imposta come utente la **modifica della password** al primo accesso.
+5. Impostare manualmente la password per il telefono dell'area comune per impedirla. A questo scopo, deselezionare **Crea automaticamente una password** e richiedere all'utente di **cambiare la password al primo accesso**.  
 
-6. Assegnare le licenze all'utente. Nella stessa pagina, fai clic per espandere **Licenze di prodotto**. Attiva l'area comune Telefono e scegli un **piano** per chiamate nazionali o un piano per chiamate nazionali **e internazionali.** 
+    >[!Important]
+    > È consigliabile impostare manualmente una password per i telefoni dell'area comune per evitare problemi di accesso per gli utenti finali.
 
-    ![Screenshot che mostra l'assegnazione delle licenze con il piano per le chiamate nazionali e le opzioni del piano nazionale e internazionale evidenziate.](media/set-up-common-area-phone-image2.png)
+6. Selezionare la posizione di utilizzo del dispositivo e assegnare l'area Telefono licenza all'account. Se sono necessarie altre licenze, ad esempio Piani per chiamate, assegnarle.
 
-> [!NOTE]
-> Se si usa Telefono Microsoft sistema di routing diretto, non è necessario assegnare una licenza per il piano di chiamata.
+>[!NOTE]
+> Non è necessario aggiungere una licenza Sistema telefonico licenza. È inclusa con la licenza per il Telefono di area comune.
+>
+>Se non si usa l'Telefono Microsoft System Direct Routing o Connessione con operatore, è possibile aggiungere licenze per i Piani di chiamata. Per altre informazioni sulle licenze, vedere Microsoft Teams [licenze per i componenti aggiuntivi](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
-Per altre informazioni, vedere [Assegnare licenze agli utenti.](/microsoft-365/admin/manage/assign-licenses-to-users)
+### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-## <a name="step-3---assign-a-phone-number-to-the-common-area-phone-user-account"></a>Passaggio 3: assegna un numero di telefono all'account utente del telefono di area comune
+Usare PowerShell quando si vogliono creare e assegnare licenze per più account utente contemporaneamente. Per [altre informazioni, vedere Creare Microsoft 365](/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell?view=o365-worldwide) account utente con PowerShell e Assegnare Microsoft 365 licenze agli account utente [con PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide).
 
-Usare l Teams di amministrazione per assegnare un numero all'utente.
+## <a name="step-3---set-policies-for-common-area-phones"></a>Passaggio 3 - Impostare i criteri per i telefoni dell'area comune
 
-1. Nell'Teams di amministrazione selezionare **Numeri**  >  **Telefono vocali**.
+Usare i criteri per controllare quali funzionalità sono disponibili per gli utenti nei telefoni dell'area comune.
 
-3. Seleziona un numero dall'elenco di numeri di telefono e fai clic su **Assegnare**.
+>[!NOTE]
+>Dopo aver assegnato un criterio, disconnettersi dal telefono e accedere di nuovo. L'applicazione di un'assegnazione dei criteri può richiedere fino a un'ora.
 
-4. Nella **casella** Utente vocale della pagina Assegna digitare il nome dell'utente che usa il telefono e quindi selezionarlo nell'elenco **a** discesa Selezionare un utente vocale.
+### <a name="ip-phone-policies"></a>Criteri per i telefoni IP
 
-5. Successivamente, è necessario aggiungere un indirizzo per gli interventi di emergenza. Scegliere **Cerca per città,** Cerca  per descrizione o Cerca per posizione nell'elenco a discesa e quindi immettere la città, la descrizione o la posizione nella casella di testo.  Dopo aver cercato, cerca in **Seleziona l'indirizzo per gli interventi** di emergenza per scegliere quello giusto per te.
+I telefoni a cui è stato eseguito l'accesso con account a cui è stata assegnata una licenza Telefono area comune visualizzano l'esperienza utente dell'area comune.
 
-6. Clicca su **Salvare** e il tuo utente dovrebbe apparire così:
+Se si vuole ignorare l'interfaccia predefinita di un telefono, è consigliabile creare un criterio [telefono IP](/powershell/module/skype/new-csteamsipphonepolicy?view=skype-ps). Ad esempio, se un telefono di area comune viene usato in un'area pubblica, impostare un criterio telefono IP per limitare la ricerca nella Rubrica globale dell'organizzazione e bloccare l'hot desking. Per [altre informazioni, Teams'interfaccia utente di Set](devices/Teams-Android-devices-user-interface.md) Teams dispositivi Android.
 
-   ![Screenshot che mostra l'assegnazione di licenze utente di esempio.](media/set-up-common-area-phone-image3.png)
+### <a name="calling-policies"></a>Criteri di chiamata
 
-> [!NOTE]
-> Gli utenti verranno visualizzati solo se è applicata una Sistema telefonico licenza. Se lo hai appena fatto, a volte ci vuole un po' perché l'utente venga visualizzato nell'elenco.
+Usare i criteri di chiamata per abilitare le chiamate private, l'inoltro di chiamata o l'squillo simultaneo sui telefoni della zona comune. Vedere [Chiamate e inoltro di chiamata in Teams](teams-calling-policy.md) per altre informazioni.
 
-Per altre informazioni, vedere [Ottenere numeri di telefono per gli utenti.](getting-phone-numbers-for-your-users.md)
+Per impostazione predefinita, il parcheggio di chiamata non è abilitato per i telefoni dell'area comune. È necessario creare un criterio per abilitarlo. Per [altre informazioni, vedere Parcheggio di chiamata e recuperare](call-park-and-retrieve.md) Microsoft Teams chiamate.
 
-Puoi anche prendere il tuo numero di telefono che hai con un altro gestore e "porta" o trasferirlo a Microsoft 365 o Office 365. Vedere [Trasferire numeri di telefono Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
+## <a name="step-4---acquire-and-assign-phone-numbers"></a>Passaggio 4 - Acquisire e assegnare numeri di telefono
+
+Vedere [Gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-landing-page.md) per informazioni su come acquisire e assegnare numeri di telefono in base all'opzione di connettività PSTN.
+
+## <a name="step-5---sign-in"></a>Passaggio 5 - Accedere
+
+Dopo aver creato e configurato un account utente, è possibile accedere a un telefono. A seconda del numero di telefoni che si sta distribuendo, sono disponibili tre opzioni di accesso:
+
+- [Accesso locale](#local-sign-in)
+- [Accedere da un altro dispositivo](#sign-in-from-another-device)
+- [Accedere con l'interfaccia Teams di amministrazione](#sign-in-using-the-teams-admin-center)
+
+### <a name="local-sign-in"></a>Accesso locale
+
+Per accedere localmente con un nome utente e una password: 
+
+1. Attivare il telefono dell'area comune
+
+2. Seleziona **Accedi in questo dispositivo**
+
+3. Seguire le istruzioni di accesso nel dispositivo. Una volta effettuato l'accesso, il telefono visualizza l'esperienza utente del telefono dell'area comune.
+
+### <a name="sign-in-from-another-device"></a>Accedere da un altro dispositivo
+
+È anche possibile accedere a un telefono dell'area comune da un altro dispositivo usando un codice. Quando accedi in questo modo, immetti il nome utente e la password su un altro dispositivo, invece che sul telefono stesso.
+
+1. Prima di tutto, nel telefono dell'area comune cercare il codice visualizzato nella schermata di accesso.
+
+2. In un altro dispositivo passare a https://www.microsoft.com/devicelogin.
+
+3. Immettere il codice e seguire le istruzioni per completare l'accesso.
+
+### <a name="sign-in-using-the-teams-admin-center"></a>Accedere con l'interfaccia Teams di amministrazione
+
+Gli amministratori possono eseguire il provisioning e accedere in remoto ai telefoni dell'area comune dall'Teams di amministrazione. Si tratta del metodo di accesso più efficiente quando si distribuisce un numero elevato di telefoni contemporaneamente. Per [altre informazioni, vedere Provisioning remoto e accesso Teams dispositivi Android](devices/remote-provision-remote-login.md).
+
+## <a name="next-steps"></a>Passaggi successivi
+
+Dopo aver configurato e effettuato l'accesso ai telefoni dell'area comune per l'organizzazione, è possibile gestirli nell'interfaccia di amministrazione Teams rete. Vedi [Microsoft Teams: Gestire i tuoi dispositivi](devices/device-management.md) per saperne di più.
+
+## <a name="related-topics"></a>Argomenti correlati
+
+- [Aggiornare Microsoft Teams dispositivi in remoto](devices/remote-update.md)
+- [Gestire i tag Microsoft Teams dispositivo](devices/manage-device-tags.md)
+- [Microsoft Teams dell'integrità dei dispositivi](alerts/device-health-status.md)

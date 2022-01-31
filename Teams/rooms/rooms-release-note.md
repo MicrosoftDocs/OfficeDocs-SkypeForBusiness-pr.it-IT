@@ -14,16 +14,26 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ec4bfe81d3dfbcee8cbd6d8682360e2a31c17e4
-ms.sourcegitcommit: e0e3c83cea2662057ee2f3f2a429c7831c3d917a
+ms.openlocfilehash: 41b16af59652d3ca7f81dd72a485afec5b1a24db
+ms.sourcegitcommit: 909b0a709983d21fa6f2b547a78cc6a1222188df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62213505"
+ms.lasthandoff: 01/30/2022
+ms.locfileid: "62279274"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
 Questo articolo illustra i miglioramenti cumulativi Microsoft Teams Rooms.
+
+Esistono due tipi di aggiornamenti per Teams Rooms: Teams Rooms dell'app e Teams web-client. 
+
+Teams Rooms gli aggiornamenti dell'app vengono ese Microsoft Store tramite [l'aggiornamento manuale](manual-update.md). In questo modo viene aggiornata l'applicazione UWP (Universal Windows Platform) installata in locale nel dispositivo.
+
+Teams gli aggiornamenti del client Web vengono ese Teams servizi di recapito delle app Web. Si tratta di un servizio basato sul cloud che non richiede un aggiornamento all'applicazione UWP locale installata nel dispositivo.
+
+Per altre informazioni su come Teams aggiornamenti, vedere Teams [processo di aggiornamento](../teams-client-update.md)
+
+Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per [altre informazioni, Teams processo di aggiornamento](../teams-client-update.md#servicing-agreement).
 
 ## <a name="version-history"></a>Cronologia versioni
 
@@ -82,21 +92,24 @@ Questo articolo illustra i miglioramenti cumulativi Microsoft Teams Rooms.
 ### <a name="411120-1242022"></a>4.11.12.0 (1/24/2022)
 
 Introdotto in questo aggiornamento:
-- Layout prima riga (anteprima) per MTR Windows<sup>1</sup> 
+- Layout prima riga (anteprima) per MTR in Windows <sup>1</sup> 
 - Impostazione dell'amministratore per impostare il layout di prima riga come predefinito  
-- Aggiorna subito e chiama l'app solo Teams, Teams modalità client predefinite<sup>1,2</sup>
-- Passare da più videocamere a Teams riunioni<sup>1</sup> 
+- Aggiorna subito e chiama l'app solo Teams, Teams client <sup>predefinite1,2</sup>
+- Passare da una videocamere all'Teams <sup>riunioni1</sup> 
 - Impostazione predefinita della videocamera 
 - Cortana'icona push-to-talk nella console MTR 
 - Azure AD Premium 1 licenza in Room Standard e negli SKU Premium room 
-- AAD criteri di accesso condizionale<sup>supportano 3</sup> 
-- Cortana'attivazione vocale abilitata per impostazione predefinita in Configurazione guidata 
+- AAD criteri di accesso <sup>condizionale3</sup> 
+- Cortana'attivazione vocale abilitata per impostazione predefinita in Configurazione guidata
+- Supporto dei controlli PTZ <sup>remoti4</sup>
 
-> <sup>1</sup> Queste funzionalità sono state Teams client Web e verranno completate nelle prossime due settimane. Altre informazioni sugli [aggiornamenti Teams per](../teams-client-update.md) informazioni dettagliate.
+> <sup>1</sup> Queste funzionalità vengono Teams client Web e verranno completate nelle prossime due settimane. Per informazioni dettagliate[, Teams sugli aggiornamenti](../teams-client-update.md).
 > 
 > <sup>2</sup> Teams in Windows in esecuzione solo in Microsoft Teams o Skype for Business e Microsoft Teams (impostazione predefinita) vengono aggiornate con le nuove esperienze di riunioni e chiamate, ma le altre modalità non sono influenzate da questo aggiornamento.
 > 
 > <sup>3</sup> Vedere i dettagli aggiuntivi sulla configurazione AAD [criteri di accesso condizionale](../rooms/rooms-authentication.md#azure-ad-conditional-access) per Teams Rooms.
+> 
+> <sup>4</sup> Questa funzionalità richiede agli amministratori IT di configurare Teams client desktop Client remoto controlli PTZ.
 > 
 
 ### <a name="teams-rooms-web-client-update-december-2021"></a>Teams Rooms client Web (dicembre 2021)
@@ -124,7 +137,7 @@ Introdotto in questo aggiornamento:
 ### <a name="410100-1012021"></a>4.10.10.0 (10/1/2021)
 
 Introdotto in questo aggiornamento:
-- Room remote consente agli utenti di controllare le funzionalità di base della sala Teams sul proprio cellulare *
+- Il telecomando della sala consente agli utenti di controllare le funzionalità di base della sala usando Teams sul proprio cellulare *
 - Logitech scribe content camera support for BLE button for sharing into meeting
 - Le bolle di chat forniscono notifiche per la chat della riunione per attirare l'attenzione su ciò che viene detto usando la chat della riunione *
 - Il supporto per la raccolta di grandi dimensioni e la modalità Insieme è ora disponibile in GCC alta
@@ -135,10 +148,10 @@ Introdotto in questo aggiornamento:
 > Supporto 19H1 deprecato. Min OS version supported by 4.10 is 19H2.
 
 > [!NOTE]
-> *Queste funzionalità vengono installate con il servizio Teams e funzionano con tutte le versioni delle applicazioni maggiori di 4.9.
+> *Queste funzionalità vengono implementazioni con Teams service e funzionano con tutte le versioni delle applicazioni superiori a 4.9.
 
 > [!NOTE]
-> Per partecipare alla riunione pianificata sia dall'app Teams Mobile che da MTR-W, trovare l'account della sala nell'elenco dell'app Teams Per dispositivi mobili e premere il menu "Controlla questa sala" ed è possibile controllare i controlli chiamata dall'app.
+> Per partecipare alla riunione pianificata sia dall'app Teams Mobile che da MTR-W, trovare l'account della sala nell'elenco dell'app Teams Mobile e premere il menu "Controlla questa sala" ed è possibile controllare i controlli chiamata dall'app.
 
 ### <a name="49120-7282021"></a>4.9.12.0 (7/28/2021)
 
@@ -147,7 +160,7 @@ Introdotto in questo aggiornamento:
 - Correzione dell'audio HDMI che causa un volume di chiamata inferiore. La funzionalità audio HDMI viene abilitata automaticamente per tutti i dispositivi con la build dell'applicazione 4.9.12.0.
 
 > [!NOTE]
-> Con Skype for Business fine del ciclo di vita, è consigliabile eseguire l'aggiornamento alla modalità Teams solo fine vita.
+> Con Skype for Business fine del ciclo di vita, è consigliabile eseguire l'aggiornamento alla Teams solo modalità.
 
 ### <a name="48310-05122021"></a>4.8.31.0 (05/12/2021)
 
@@ -155,12 +168,12 @@ Introdotto in questo aggiornamento:
 - Windows 10 20H2 
 
 > [!NOTE]
-> Crestron UC-Engine (data della versione del BIOS che contiene "KYSKLi") Teams Rooms problemi di compatibilità e i driver aggiornati verranno forniti dagli OEM di sistema nel prossimo futuro. Windows 10 20H2 non verrà offerto a questi dispositivi. Per altre informazioni sul supporto Windows delle versioni, vedere Windows 10 [di rilascio.](./rooms-lifecycle-support.md#windows-10-release-support)
+> Crestron UC-Engine (data della versione del BIOS che contiene "KYSKLi") Teams Rooms problemi di compatibilità e i driver aggiornati verranno forniti dagli OEM di sistema nel prossimo futuro. Windows 10 20H2 non verrà offerto a questi dispositivi. Per altre informazioni sul supporto Windows versione, vedere Windows 10 [di rilascio](./rooms-lifecycle-support.md#windows-10-release-support).
 
 ### <a name="48250-04222021"></a>4.8.25.0 (04/22/2021)
 
 Introdotto in questo aggiornamento:
-- Correzione per un problema per cui le informazioni sulle chat room Teams Rooms console non vengono visualizzate per gli account della chat room nascosti all'elenco indirizzi globale
+- Correzione per un problema per cui le informazioni sulle chat room nelle console Teams Rooms non vengono visualizzate per gli account della chat room nascosti all'elenco indirizzi globale
 
 > [!NOTE]
 > I clienti GCCH possono scaricare il pacchetto di aggiornamento [da Aggiornare manualmente un Microsoft Teams Rooms dispositivo](manual-update.md)
@@ -172,7 +185,7 @@ Introdotto in questo aggiornamento:
 - Partecipare alle riunioni zoom con una migliore qualità video (supporto di 720p) e ricevere la raccolta video dei partecipanti
 - Skype for Business banner di errore di accesso rimosso per Teams modalità predefinita. Questa modifica supporta la rimozione dell'infrastruttura Skype for Business aziendale
 - Teams le riunioni si uniscono all'analisi dei collegamenti ora gestisce i collegamenti Cassaforte Microsoft Defender Advanced Threat Protection per consentire di partecipare a Teams esterni senza problemi
-- Risolvere il problema di ridimensionamento del contenuto condiviso nelle riunioni Skype for Business quando il PC del condivisore ha un valore DPI personalizzato impostato in Windows
+- Risolvere il problema di ridimensionamento del contenuto condiviso nelle riunioni Skype for Business quando nel PC del condivisore è impostato un valore DPI personalizzato Windows
 - Correzioni di qualità e affidabilità
 
 ### <a name="47190-02032021"></a>4.7.19.0 (02/03/2021)
@@ -186,7 +199,7 @@ Introdotto in questo aggiornamento:
 
 - Condividere l'audio HDMI con i partecipanti alla riunione Teams riunione
 - Cortana vocali (anteprima)
-- Impedire l'riattivazione dell'audio in base alle autorizzazioni audio Teams la chat room viene aggiunta come partecipante. Per altre informazioni, vedere Gestire le autorizzazioni audio dei partecipanti [in Teams riunioni.](https://support.microsoft.com/office/manage-attendee-audio-permissions-in-teams-meetings-f9db15e1-f46f-46da-95c6-34f9f39e671a)
+- Impedire l'riattivazione dell'audio in base alle autorizzazioni audio Teams la chat room viene aggiunta come partecipante. Per altre informazioni, vedere [Gestire le autorizzazioni audio dei partecipanti nelle Teams riunioni](https://support.microsoft.com/office/manage-attendee-audio-permissions-in-teams-meetings-f9db15e1-f46f-46da-95c6-34f9f39e671a).
 - Mettere in evidenza il video di qualcuno dalla console Teams Room e usare il video in evidenza sugli schermi delle chat room
 
 > [!NOTE]
@@ -229,7 +242,7 @@ Introdotto in questo aggiornamento:
 - Cercare e chiamare utenti federati (tenant) da Teams Room
 
 > [!IMPORTANT]
-> La versione 4.5 è l'ultima versione Windows 10 supportare la versione 1803; le versioni future non verranno offerte ai sistemi Windows 10 versione 1803. Per altre informazioni sul supporto Windows versione, vedere Windows 10 [di rilascio.](./rooms-lifecycle-support.md#windows-10-release-support)
+> La versione 4.5 è l'ultima versione Windows 10 supportare la versione 1803. Le versioni future non verranno offerte ai sistemi Windows 10 versione 1803. Per altre informazioni sul supporto Windows versione, vedere Windows 10 [di rilascio](./rooms-lifecycle-support.md#windows-10-release-support).
 
 ### <a name="44630-06252020"></a>4.4.63.0 (06/25/2020)
 
@@ -270,7 +283,7 @@ Introdotto in questo aggiornamento:
 
 - Correzione di un problema di ridimensionamento/sfarfallio della finestra visualizzato in determinate configurazioni
 - Elaborazione del calendario per le riunioni di terze parti rimossa
-- Cortana stato di rimozione
+- Cortana stato stato rimosso
 
 ### <a name="43230-12132019"></a>4.3.23.0 (12/13/2019)
 
@@ -280,7 +293,7 @@ Introdotto in questo aggiornamento:
 - L'amministratore Impostazioni'interfaccia utente con l'aggiunta della configurazione del dispositivo nella scheda Informazioni
 - Controllo sala torna alla schermata principale
 - Sala riunioni SKU disponibile in GCC
-- Supporto della fotocamera Surface Pro sistema basato su contenuto (build minima dell'app richiesta: 4.2.4.0)
+- Supporto della fotocamera del contenuto Surface Pro basato su Surface Pro (build minima dell'app richiesta: 4.2.4.0)
 
 ### <a name="4240-10072019"></a>4.2.4.0 (10/07/2019)
 
@@ -303,12 +316,12 @@ Introdotto in questo aggiornamento:
 
 Introdotto in questo aggiornamento:
 
-- Skype'app store room system rebrand in "Microsoft Teams Rooms"
+- Skype'app Room System Store viene ridenobrata in "Microsoft Teams Rooms"
 - Microsoft Teams Rooms'interfaccia utente della console riallineata a Microsoft Teams
 - Aggiornamento del tema: mantenere l'immagine di sfondo personalizzata solo davanti agli schermi della sala, rendendo lo sfondo della console un colore neutro per garantire che i controlli dell'interfaccia utente della console soddisfino il contrasto dei colori, requisiti di accessibilità
-- Barra universale per i controlli delle chiamate in riunione per Teams chiamate/riunioni per offrire un'esperienza coerente con Microsoft Teams pc/Web/client mobili<sup>1</sup>
-- Valutazione del feedback sulla qualità delle chiamate dopo Teams chiamate/riunioni<sup>1</sup>
-- Ricevere/eseguire il rendering Microsoft Whiteboard sul Microsoft Teams Rooms davanti alla chat room quando viene condiviso da PC/ Web/ Mobile Teams client<sup>1</sup> <sup>2</sup>
+- Barra universale per i controlli delle chiamate in riunione per Teams chiamate o riunioni per offrire un'esperienza coerente con Microsoft Teams pc/Web/client <sup>mobili1</sup>
+- Valutazione del feedback sulla qualità delle chiamate dopo Teams chiamate/<sup>riunioni1</sup>
+- Ricevere/eseguire il rendering Microsoft Whiteboard sul Microsoft Teams Rooms davanti alla chat room quando viene condiviso da PC/ Web/ Mobile Teams <sup>client1</sup> <sup>2</sup>
 - È stato rimosso il supporto Windows 10 aggiornamenti della versione 1809 a causa di problemi di compatibilità con Microsoft Teams Rooms client. Windows 10 il supporto per la versione 19H1 verrà aggiunto nelle versioni future
 
 <sup>1</sup> Microsoft Teams di servizio con Teams squilli. Questa funzionalità potrebbe essere disponibile prima o dopo l'aggiornamento del client 4.0.105.0
@@ -326,7 +339,7 @@ Introdotto in questo aggiornamento:
 
 Introdotto in questo aggiornamento:
 
-- Correzione del bug "Blocco all'avvio dell'app" che ha interessato i dispositivi nella build legacy Windows 10 RS2.
+- Correzione del bug "Blocca all'avvio dell'app" che ha interessato i dispositivi nella build legacy Windows 10 RS2.
 
 ### <a name="40760-03042019"></a>4.0.76.0 (03/04/2019)
 
@@ -344,7 +357,7 @@ Introdotto in questo aggiornamento:
 
 - Visualizzare il contenuto su entrambi gli schermi Front of Room (FoR) nei sistemi di sala a doppio schermo
 - Miglioramenti all'interfaccia utente di Theming e Front of Room
-- Supporto lato client TLS 1.2. Per i clienti locali, l'abilitazione delle comunicazioni tramite TLS 1.2 per Microsoft Teams Rooms richiede Skype for Business Server 2015 aggiornamento cumulativo 9 (CU9) o Skype for Business Server 2019 cumulativo aggiornamento 1 (CU1).
+- Supporto lato client TLS 1.2. Per i clienti locali, l'abilitazione delle comunicazioni tramite TLS 1.2 per Microsoft Teams Rooms richiede Skype for Business Server 2015 l'aggiornamento cumulativo 9 (CU9) o Skype for Business Server 2019 aggiornamento cumulativo 1 (CU1).
 
 ### <a name="40510-11172018"></a>4.0.51.0 (11/17/2018)
 
@@ -362,22 +375,22 @@ Introdotto in questo aggiornamento:
 
 Introdotto in questo aggiornamento:
 
-- Modifiche del codice necessarie per preparare l'app Microsoft Teams Rooms per un Windows 10 versione 1803
+- Modifiche del codice necessarie per preparare l'app Microsoft Teams Rooms per l'aggiornamento Windows 10 versione 1803
 - Risolvere il problema di formattazione con gli EULA localizzati (in particolare il norvegese) che impediscono l'avanzamento oltre la finestra di configurazione di Exchange 2010
-- Modifiche del codice necessarie per eseguire Microsoft Teams Rooms'applicazione nei sistemi lync room legacy. Per altre [informazioni, vedere .](./lrs-migration.md)
+- Modifiche al codice necessarie per eseguire Microsoft Teams Rooms'applicazione nei sistemi lync room legacy. Per saperne di [più, vedere qui](./lrs-migration.md).
 
 ### <a name="40190-8312018"></a>4.0.19.0 (8/31/2018)
 
 Introdotto in questo aggiornamento:
 
-- Aggiornamento rapido per l'avvio dell'applicazione Crestron che normalmente sarebbe accessibile quando si preme il pulsante dell'app in un dispositivo Crestron SR. Microsoft Teams Rooms necessario riavviare l'app dopo l'installazione di 4.0.19.0.
+- Aggiornamento rapido per l'avvio dell'applicazione Crestron che normalmente sarebbe accessibile quando si preme il pulsante dell'app in un dispositivo Crestron SR. Microsoft Teams Rooms riavvio dell'app richiesto dopo l'installazione di 4.0.19.0.
 
 ### <a name="40180-08272018"></a>4.0.18.0 (08/27/2018)
 
 Introdotto in questo aggiornamento:
 
-- Miglioramenti della funzionalità "Segnala un problema" in Teams (equivalente a "Invia feedback" in Skype for Business)
-- Abilitare la possibilità di eseguire il fall back dalla Teams alla Skype for Business per le chiamate SIP
+- Miglioramenti alla funzionalità "Segnala un problema" in Teams (equivalente a "Invia feedback" in Skype for Business modalità)
+- Abilitare la possibilità di tornare dalla modalità Teams alla Skype for Business per le chiamate SIP
 - Miglioramenti all'accessibilità (Assistente vocale, Lente di ingrandimento)
 - Riavvia automaticamente l'app quando necessario dopo l'applicazione delle modifiche al provisioning XML
 - Correzioni varie
@@ -386,7 +399,7 @@ Introdotto in questo aggiornamento:
 
 Introdotto in questo aggiornamento:
 
-- Questo aggiornamento abilita il supporto Skype for Business *e* Teams riunioni nei dispositivi Room Systems. Teams è disattivato per impostazione predefinita dopo l'applicazione dell'aggiornamento. Gli amministratori possono abilitare la Teams locale nelle impostazioni del dispositivo o tramite un push xml remoto.
+- Questo aggiornamento abilita sia il supporto Skype for Business *riunioni* Teams riunioni nei dispositivi Room Systems. Teams è disattivata per impostazione predefinita dopo l'applicazione dell'aggiornamento. Gli amministratori possono abilitare la Teams locale nelle impostazioni del dispositivo o tramite un push xml remoto.
 
 ### <a name="311150-06182018"></a>3.1.115.0 (06/18/2018)
 
@@ -500,11 +513,11 @@ Introdotto in questo aggiornamento:
 
  **Trasforma qualsiasi Sala riunioni**
 
-- App dedicata Riunione Skype ottimizzata per il centro del controller del tocco del tavolo e la grande parte anteriore dello schermo della sala
+- App dedicata Riunione Skype ottimizzata per il centro del controller del tocco da tavolo e la grande parte anteriore dello schermo della sala
 - Riutilizzare gli investimenti esistenti davanti al display o ai proiettori della sala
 - Funziona in tutti i tipi di spazi riunioni, dagli spazi più piccoli alle sale riunioni di grandi dimensioni
-- I Skype for Business audio e video certificati sono disponibili per diverse dimensioni della stanza
-- Incorporata cablata integrata per proiettare la condivisione desktop nella chat room e nella Riunione Skype
+- I Skype for Business audio e video certificati sono disponibili per diverse dimensioni della sala
+- Incorporata cablata integrata per proiettare la condivisione desktop nella chat room e nell'Riunione Skype
 
  **Facile da distribuire, semplice da gestire**
 
@@ -512,8 +525,8 @@ Introdotto in questo aggiornamento:
 - Distribuzione e aggiornamento semplici dell'app UWP (Universal Windows Platform) Riunione Skype App
 - Windows AppLocker blocca il dispositivo nell'app Riunione Skype app
 - Monitorato e gestito come dispositivo Windows 10 Enterprise tramite Intune e Configuration Manager (MDM)
-- Enterprise livello di affidabilità
-- Scarso sforzo di formazione degli utenti finali a causa della familiarità con Skype'interfaccia utente
+- Enterprise affidabilità di livello superiore
+- Scarso impegno di formazione degli utenti finali a causa della Skype utente familiare
 - Viene eseguito su Surface Pro 4 tablet
 
 <a name="See"> </a>
