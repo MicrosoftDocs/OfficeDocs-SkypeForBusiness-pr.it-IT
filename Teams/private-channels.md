@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: 1f86ceba18a234d7b3a1f41ebdbfe58c777beedf
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: 8d041d0fa8a182cb3cebf485c9cef92f880a99e5
+ms.sourcegitcommit: d3c48f0c147cf0c47d5eb4ea1128b5bca13be718
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60536557"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62299011"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -97,7 +97,7 @@ Ogni canale privato include una siti di SharePoint. La raccolta siti separata co
 
 Un sito di un canale privato sincronizza la classificazione dei dati ed eredita le autorizzazioni di accesso guest dal sito del team padre. L'appartenenza ai gruppi dei membri e di proprietari al sito viene mantenuta sincronizzata con quella ai canali privati in Teams. Le autorizzazioni del sito per un sito di canale privato non possono essere gestite in modo indipendente tramite SharePoint. 
 
-Teams gestisce il ciclo di vita della raccolta siti del canale privato. Se il sito viene eliminato all'esterno di Teams, un processo in background ripristina il sito entro quattro ore, a condizione che il canale privato sia ancora attivo. Se il sito viene eliminato permanentemente, viene eseguito il provisioning del sito per il canale privato.
+Teams gestisce il ciclo di vita della raccolta siti del canale privato. Se il sito viene eliminato all'esterno di Teams, un processo in background ripristina il sito entro quattro ore, a condizione che il canale privato sia ancora attivo.
 
 Se un canale privato o un team che contiene un canale privato viene ripristinato, i siti vengono ripristinate con esso. Se un sito del canale privato viene ripristinato al di là del periodo di eliminazione temporanea di 30 giorni per il canale privato, il sito funzionerà come un sito autonomo.
 

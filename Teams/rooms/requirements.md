@@ -15,27 +15,27 @@ ms.collection:
 - M365-collaboration
 description: Informazioni sui requisiti per il supporto Microsoft Teams Rooms, tra cui la scelta del dispositivo, dei microfoni, degli altoparlanti, delle fotocamere e degli schermi appropriati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d8ac82776c92b057cef963e03fd42f0ef902980
-ms.sourcegitcommit: 909b0a709983d21fa6f2b547a78cc6a1222188df
+ms.openlocfilehash: 9525c4dba78cc26c3d45ee4ee5831eb3deee93a5
+ms.sourcegitcommit: d3c48f0c147cf0c47d5eb4ea1128b5bca13be718
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2022
-ms.locfileid: "62279284"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62299041"
 ---
 # <a name="microsoft-teams-rooms-requirements"></a>Requisiti per Microsoft Teams Rooms
 
-Microsoft Teams Rooms scala a diverse dimensioni della stanza. Teams Rooms un'ampia varietà di periferiche audio e video certificate in base alle dimensioni e all'uso della sala. Selezionando il dispositivo e la console di base appropriati, combinati con microfoni, altoparlanti, fotocamere e schermi appropriati per lo spazio, è possibile distribuire Microsoft Teams Rooms in spazi di qualsiasi dimensione, da piccoli spazi di riunione fino a grandi sale riunioni e sale riunioni.  Il set completo delle periferiche audio e video certificate che possono essere utilizzate per configurare la sala, è disponibile in [Presentazione dei dispositivi](https://products.office.com/microsoft-teams/across-devices).
+Microsoft Teams Rooms scala a diverse dimensioni della stanza. Teams Rooms un'ampia gamma di periferiche audio e video certificate in base alle dimensioni e all'uso della sala. Selezionando il dispositivo e la console di base appropriati, combinati con microfoni, altoparlanti, fotocamere e schermi appropriati per lo spazio, è possibile distribuire Microsoft Teams Rooms in spazi di qualsiasi dimensione, da piccoli spazi di riunione fino a grandi sale riunioni e sale riunioni.  Il set completo delle periferiche audio e video certificate che possono essere utilizzate per configurare la sala, è disponibile in [Presentazione dei dispositivi](https://products.office.com/microsoft-teams/across-devices).
 
 In questo articolo vengono riepilogati i requisiti di configurazione e distribuzione dei dispositivi per il supporto di Microsoft Teams Rooms.
 
-La distribuzione prevede la creazione di account delle risorse e la configurazione Teams Rooms come descritto in [Distribuire Microsoft Teams Rooms](rooms-deploy.md).
+La distribuzione implica la creazione di account delle risorse e la configurazione Teams Rooms come descritto in Distribuire [Microsoft Teams Rooms](rooms-deploy.md).
 
 Fare riferimento a:
 
 - [Opzioni di licenza basate sul tuo piano: Microsoft Teams Rooms](rooms-licensing.md)
 
 > [!NOTE]
-> Microsoft Teams Rooms accedere a Microsoft Teams, Skype for Business Server 2019 o Skype for Business Server 2015 e possono partecipare alle riunioni ospitate da uno di questi servizi.
+> Microsoft Teams Rooms accedere a Microsoft Teams, Skype for Business Server 2019 o Skype for Business Server 2015 e può partecipare alle riunioni ospitate da uno di questi servizi.
 >
 > Le piattaforme precedenti, come Lync Server 2013, non sono supportate da Microsoft Teams Rooms. Microsoft Teams Rooms non è supportato in Microsoft 365 o Office 365 gestiti da ambienti 21Vianet o DoD.
 >
@@ -96,6 +96,7 @@ Tutti gli attuali dispositivi e pacchetti per Sala riunioni di Microsoft Teams s
   |Yealink MVC660|Core i5|8 GB | 128 GB|
   |Yealink MVC640|Core i5|8 GB | 128 GB|
   |Yealink MVC320|Core i5|8 GB | 128 GB|
+  |Yealink MVC340|Core i5|8 GB | 128 GB|
   
   
 > [!NOTE]
@@ -132,7 +133,7 @@ Questi dispositivi sono disponibili in [Presentazione degli accessori per sistem
 |[Aver VB130 Camera Soundbar](https://www.averusa.com/products/conference-camera/vb130) |0.0.7300.71 |
 |[Barra video Di Bose VB1](https://pro.bose.com/en_us/products/conferencing/videobars/bose-videobar-vb1.html?mc=25_PS_VB_BO_00_BI_&&msclkid=fc99b79880f714727a63e86ea0e5642a&utm_source=bing&utm_medium=cpc&utm_campaign=US%20-%20Brand_Videobar%20VB1_Exact&utm_term=bose%20videobar%20vb1&utm_content=Bose%20Videobar%20VB1&gclid=fc99b79880f714727a63e86ea0e5642a&gclsrc=3p.ds) |19.2|
 |[Biamp Devio SCR-20CX Web-Based Conferencing Hub con microfono a soffitto](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) |2.2.0.9|
-|[Biamp Devio SCR-20TX Web-Based Conferencing Hub con microfono Tabletop](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) |2.2.0.9 |
+|[Hub di conferenza biamp Devio SCR-20TX Web-Based con microfono da tavolo](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) |2.2.0.9 |
 |[Crestron Huddly IQ](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Accessories/CCS-CAM-USB-F-400)   | 1.02.09.33901  | 
 |[Huddly Canvas](https://www.huddly.com/blog/say-hello-to-huddly-canvas-our-latest-ai-technology-for-content-capture-and-enhancement/) | 1.3.25 |  &#x2714; |
 |[QI di Huddly](https://www.huddly.com/conference-cameras/iq/) |1.3.22|
