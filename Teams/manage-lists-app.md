@@ -11,6 +11,7 @@ search.appverid: MET150
 searchScope:
 - Microsoft Teams
 - Microsoft Cloud for Healthcare
+- Microsoft Cloud for Retail
 description: Informazioni su come gestire l'app Elenchi in Teams per gli utenti nell'organizzazione.
 f1.keywords:
 - NOCSH
@@ -18,16 +19,17 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - microsoftcloud-healthcare
+- microsoftcloud-retail
 - m365initiative-lists
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 72235497f2b020aaed1228ecadff781ed76b7341
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: bd70e5fbca82637299e6adef745bccc725525311
+ms.sourcegitcommit: 159399f2325af644c20551925c1fa34bf76aad43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829550"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62288484"
 ---
 # <a name="manage-the-lists-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Elenchi per l'organizzazione in Microsoft Teams
 
@@ -35,7 +37,7 @@ ms.locfileid: "60829550"
 
 L'app Elenchi in Microsoft Teams consente agli utenti dell'organizzazione di tenere traccia delle informazioni, organizzare il lavoro e gestire i flussi di lavoro. Con Elenchi, gli utenti possono tenere traccia di dati come problemi, risorse, routine, contatti, inventario, incidenti, prestiti, pazienti e altro ancora usando visualizzazioni personalizzabili, regole e avvisi per mantenere sincronizzati tutti i membri del team.
 
-In Teams gli utenti accedono a Elenchi come scheda in un canale. Fare su **+** per aprire la raccolta schede e aggiungere una nuova istanza della scheda dell'app Elenchi a un canale per iniziare.
+In Teams gli utenti accedono a Elenchi come scheda in un canale. Selezionare **+** questa opzione per aprire la raccolta schede e aggiungere una nuova istanza della scheda dell'app Elenchi a un canale per iniziare.
 
 ![App Elenchi nella raccolta schede.](media/lists-tab.png)
 
@@ -58,7 +60,7 @@ Un ufficio postale locale è responsabile dello smistamento e della consegna del
 
 Dopo la riunione, i postini prelevano la posta e iniziano il percorso di consegna. Lungo il percorso possono verificarsi degli incidenti, ad esempio un incidente automobilistico, un problema legato ai cani o una protesta con disordini sociali. Quando i postini incontrano un incidente, usano Teams sui propri dispositivi mobili per registrare i dettagli dell'incidente, che vengono monitorati in un elenco nel canale del team. Tutte le persone del team, inclusi i postini sul campo, possono visualizzare queste informazioni ed essere sempre informati.
 
-Prima di passare a Teams, i postini dovevano tornare all'ufficio postale per compilare un modulo cartaceo per segnalare un incidente che veniva inserito in un foglio di calcolo Excel. Teams offre ai postini un'esperienza mobile first, in cui possono usare Elenchi per segnalare gli incidenti sul campo mentre si verificano, condividere i dettagli degli incidenti con i membri del team, avere conversazioni su di essi sul canale e contribuire alla risoluzione degli incidenti.
+Prima di passare a Teams, i corrieri della posta dovevano tornare all'ufficio postale per completare un modulo hard-copy per segnalare un incidente, che è stato quindi immesso in un foglio di calcolo Excel postale. Teams offre ai postini un'esperienza mobile first, in cui possono usare Elenchi per segnalare gli incidenti sul campo mentre si verificano, condividere i dettagli degli incidenti con i membri del team, avere conversazioni su di essi sul canale e contribuire alla risoluzione degli incidenti.
 
 ## <a name="what-you-need-to-know-about-lists"></a>Cosa c'è da sapere su Elenchi
 
@@ -72,7 +74,7 @@ I dati di Elenchi vengono archiviati nel sito del team di SharePoint Online. Per
 
 Le autorizzazioni impostate in SharePoint vengono applicate agli elenchi creati nell'app Elenchi. Per impostazione predefinita, gli elenchi ereditano le autorizzazioni dal sito a cui appartengono. Queste autorizzazioni regolamentano i tipi di azioni che gli utenti possono eseguire, ad esempio se possono creare o modificare gli elenchi. Per altre informazioni, vedere [Livelli di autorizzazione in SharePoint](/sharepoint/understanding-permission-levels) e [Autorizzazioni utente e livelli di autorizzazione in SharePoint Server](/sharepoint/sites/user-permissions-and-permission-levels).
 
-In alcuni scenari è possibile limitare le azioni che gli utenti possono eseguire negli elenchi. Ad esempio, una persona di un team modifica una visualizzazione elenco, che viene modificata per tutti i membri del team, e si vuole consentire solo al proprietario del team o a determinati membri del team di modificare le visualizzazioni elenco. Per altre informazioni, vedere [Personalizzare le autorizzazioni per un elenco o una raccolta di SharePoint](https://support.microsoft.com/office/customize-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782#ID0EAACAAA=Online,_2019,_2016,_2013).
+In alcuni scenari può essere necessario limitare le azioni che gli utenti possono eseguire negli elenchi. Ad esempio, una persona di un team modifica una visualizzazione elenco, che viene modificata per tutti i membri del team, e si vuole consentire solo al proprietario del team o a determinati membri del team di modificare le visualizzazioni elenco. Per altre informazioni, vedere [Personalizzare le autorizzazioni per un elenco o una raccolta di SharePoint](https://support.microsoft.com/office/customize-permissions-for-a-sharepoint-list-or-library-02d770f3-59eb-4910-a608-5f84cc297782#ID0EAACAAA=Online,_2019,_2016,_2013).
 
 > [!NOTE]
 > A questo punto, le autorizzazioni di proprietari e membri di un team non sono collegate in alcun modo alle autorizzazioni nel sito del team che regolano il comportamento degli elenchi o dell'app Elenchi. Tuttavia, in base al feedback e all'utilizzo dei clienti, questo verrà preso in considerazione per un'iterazione futura del prodotto.  
@@ -96,8 +98,8 @@ Elenchi è abilitata per impostazione predefinita per tutti gli utenti di Teams 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**.
 2. Eseguire una delle operazioni seguenti:
 
-    - Per disattivare Elenchi per l'organizzazione, cercare l'app Elenchi, selezionarla e quindi fare clic su **Blocca**.
-    - Per attivare Elenchi per l'organizzazione, cercare l'app Elenchi, selezionarla e quindi fare clic su **Consenti**.
+    - Per disattivare Elenchi per l'organizzazione, cercare l'app Elenchi, selezionarla e quindi selezionare **Blocca**.
+    - Per attivare Elenchi per l'organizzazione, cercare l'app Elenchi, selezionarla e quindi selezionare **Consenti**.
 
 ### <a name="enable-or-disable-lists-for-specific-users-in-your-organization"></a>Abilitare o disabilitare Elenchi per utenti specifici nell'organizzazione
 
@@ -105,7 +107,7 @@ Per consentire o bloccare l'uso di Elenchi a utenti specifici dell'organizzazion
 
 ## <a name="search-the-audit-log-for-list-events"></a>Cercare nel log di audit gli eventi degli elenchi
 
-Gli elenchi sono abilitati con il controllo a livello aziendale, quindi è possibile cercare elenchi ed eventi delle voci di elenco nel log di audit nel Centro sicurezza e conformità. Per altre informazioni, vedere [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+Gli elenchi sono abilitati con il controllo a livello aziendale, quindi è possibile cercare elenchi ed eventi di voci di elenco nel log di controllo nel Centro sicurezza & conformità. Per altre informazioni, vedere [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 Per un elenco di eventi di audit rilevanti per l'app Elenchi in Teams, vedere [Attività dell'elenco di SharePoint](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#sharepoint-list-activities).
 
@@ -117,8 +119,8 @@ Elenchi supporta [Power Automate](/power-automate/flow-types) per i flussi di la
 
 ## <a name="give-feedback-or-report-an-issue"></a>Fornire un feedback o segnalare un problema
   
-Per inviare un feedback o segnalare un problema, fare clic su **Guida** nella parte inferiore del riquadro di spostamento sinistro di Teams e quindi selezionare **Segnala un problema**. Selezionare **Elenchi** e quindi immettere il proprio feedback o i dettagli sul problema che si è verificato.
+Per inviare feedback o segnalare un problema, selezionare Guida  nella parte inferiore del riquadro di spostamento sinistro in Teams e quindi selezionare Segnala **un problema**. Selezionare **Elenchi** e quindi immettere il proprio feedback o i dettagli sul problema che si è verificato.
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-articles"></a>Articoli correlati
 
 - [Documentazione della Guida di Elenchi](https://support.microsoft.com/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b#PickTab=Lists)

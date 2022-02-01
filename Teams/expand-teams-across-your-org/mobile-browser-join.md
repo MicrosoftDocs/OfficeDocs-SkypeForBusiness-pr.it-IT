@@ -10,21 +10,23 @@ search.appverid: ''
 searchScope:
 - Microsoft Teams
 - Microsoft Cloud for Healthcare
+- Microsoft Cloud for Retail
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.collection:
 - microsoftcloud-healthcare
+- microsoftcloud-retail
 - m365solution-healthcare
 - m365solution-scenario
 ms.reviewer: hafarmer
 description: Informazioni sull'esperienza di partecipazione Teams le visite virtuali nei browser per dispositivi mobili.
-ms.openlocfilehash: f8307902d7689cf56f10f3705ca3d5611a0f3d11
-ms.sourcegitcommit: 4df3d144296b9b8982109be7edaffd636aabdf29
+ms.openlocfilehash: 5c4b0f7ac9011d12d12e3076f900880292e72eb1
+ms.sourcegitcommit: 159399f2325af644c20551925c1fa34bf76aad43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960115"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62288564"
 ---
 # <a name="manage-the-join-experience-for-teams-virtual-visits-on-mobile-browsers"></a>Gestire l'esperienza di partecipazione Teams le visite virtuali nei browser per dispositivi mobili
 
@@ -46,17 +48,17 @@ Attualmente, l'aggiunta al browser per dispositivi mobili è disponibile per gli
 
 Gli utilità di pianificazione dell'organizzazione possono attivare questa caratteristica per tipi di appuntamenti specifici e per singoli appuntamenti nell'app Bookings.
 
-Dopo aver attivato questa funzionalità, il messaggio di posta elettronica di conferma o il testo SMS inviato ai partecipanti conterrà un collegamento di partecipazione alla riunione che si apre Teams in un browser per dispositivi mobili. Nei dispositivi mobili Android, Teams si apre in Chrome. Nei dispositivi mobili iOS, Teams si apre in Safari.
+Dopo aver attivato questa funzionalità, il messaggio di posta elettronica di conferma o il testo SMS inviato ai partecipanti conterrà un collegamento di partecipazione alla riunione che viene aperto Teams in un browser per dispositivi mobili. Nei dispositivi mobili Android, Teams si apre in Chrome. Nei dispositivi mobili iOS, Teams si apre in Safari.
 
 #### <a name="turn-on-mobile-browser-join-for-an-appointment-type"></a>Attivare l'accesso al browser per dispositivi mobili per un tipo di appuntamento
 
-In Bookings passare a Impostazioni Appointment types, selezionare un tipo di appuntamento e quindi attivare Consenti ai partecipanti di partecipare  >  da un browser per **dispositivi mobili.** [](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887) In questo modo, il browser per dispositivi mobili può partecipare a tutti gli appuntamenti di questo tipo.
+In Bookings **passare a** >  Impostazioni **artimentazione**, selezionare un tipo di [appuntamento e quindi](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887) attivare Consenti ai partecipanti di partecipare **da un browser per dispositivi mobili**. In questo modo, il browser per dispositivi mobili può partecipare a tutti gli appuntamenti di questo tipo.
 
 :::image type="content" source="../media/mobile-browser-join-bookings-appointment-type.png" alt-text="Screenshot dell'impostazione Consenti ai partecipanti di partecipare da un browser per dispositivi mobili per i tipi di appuntamento nell'app Bookings":::
 
 #### <a name="turn-on-mobile-browser-join-for-an-individual-appointment"></a>Attivare l'accesso al browser per dispositivi mobili per un singolo appuntamento
 
-In Bookings selezionare **Nuova prenotazione** e quindi attivare Consenti ai partecipanti di **partecipare da un browser per dispositivi mobili.**
+In Bookings selezionare **Nuova prenotazione** e quindi attivare Consenti ai **partecipanti di partecipare da un browser per dispositivi mobili**.
 
 :::image type="content" source="../media/mobile-browser-join-bookings-form.png" alt-text="Screenshot dell'impostazione Consenti ai partecipanti di partecipare da un browser per dispositivi mobili nel nuovo modulo di prenotazione nell'app Bookings":::
 
@@ -64,9 +66,9 @@ In Bookings selezionare **Nuova prenotazione** e quindi attivare Consenti ai par
 
 Non è necessaria alcuna configurazione da parte dell'utente o del personale.
 
-**Integrazione con Cerner EHR:** il connettore Teams EHR supporta i pazienti che a partecipare a visite virtuali tramite dispositivi mobili. Al momento dell'appuntamento, i pazienti possono partecipare a una visita virtuale toccando il collegamento nell'SMS. Il paziente sceglie il browser desiderato e quindi Teams si apre in tale browser.
+**Integrazione con Cerner EHR**: il connettore Teams EHR supporta i pazienti che a partecipare a visite virtuali tramite dispositivi mobili. Al momento dell'appuntamento, i pazienti possono partecipare a una visita virtuale toccando il collegamento nell'SMS. Il paziente sceglie il browser desiderato e quindi Teams si apre in tale browser.
 
-**Integrazione con Epic EHR:** il connettore Teams EHR supporta i pazienti che a partecipare a visite virtuali tramite il Web MyChart e i dispositivi mobili. Al momento dell'appuntamento, i pazienti possono avviare una visita virtuale da MyChart usando il **pulsante Inizia visita** virtuale. Il paziente sceglie il browser desiderato e quindi Teams si apre in tale browser.
+**Integrazione con Epic EHR**: il connettore Teams EHR supporta i pazienti che a partecipare a visite virtuali tramite il Web MyChart e i dispositivi mobili. Al momento dell'appuntamento, i pazienti possono avviare una visita virtuale da MyChart usando il **pulsante Inizia visita** virtuale. Il paziente sceglie il browser desiderato e quindi Teams si apre in tale browser.
 
 ## <a name="supported-mobile-browsers"></a>Browser per dispositivi mobili supportati
 
@@ -84,10 +86,10 @@ Ecco i browser per dispositivi mobili attualmente supportati. Microsoft supporta
 
 ## <a name="things-to-consider"></a>Aspetti da considerare
 
-Il membro del personale che conduce la visita virtuale può condividere il proprio schermo dal client Teams desktop, mobile o Web con un partecipante che partecipa da un browser per dispositivi mobili. Tuttavia, i partecipanti non possono condividere lo schermo da un browser per dispositivi mobili.
+Il membro del personale che conduce la visita virtuale può condividere lo schermo dal proprio client desktop, mobile o Web di Teams con un partecipante che partecipa da un browser per dispositivi mobili. Tuttavia, i partecipanti non possono condividere lo schermo da un browser per dispositivi mobili.
 
 > [!NOTE]
-> Stiamo aggiungendo altre funzionalità all'esperienza di partecipazione alla riunione nelle versioni future di Teams, quindi controlla di nuovo le informazioni più aggiornate. Per essere sempre al top delle funzionalità Teams, vedere la roadmap [Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams)
+> Stiamo aggiungendo altre funzionalità all'esperienza di partecipazione alla riunione nelle versioni future di Teams, quindi controlla di nuovo le informazioni più aggiornate. Per essere sempre al top delle funzionalità Teams, consulta la roadmap [Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams)
 
 ## <a name="related-articles"></a>Articoli correlati
 

@@ -11,6 +11,7 @@ search.appverid: MET150
 searchScope:
 - Microsoft Teams
 - Microsoft Cloud for Healthcare
+- Microsoft Cloud for Retail
 description: Informazioni su come gestire i proprietari dei turni per la gestione della pianificazione. È possibile impostare un criterio per elevare l'autorizzazione di un membro del team a un proprietario della pianificazione.
 f1.keywords:
 - NOCSH
@@ -19,21 +20,22 @@ ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_FLW
 - microsoftcloud-healthcare
+- microsoftcloud-retail
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 702ca0fd5b392755b1966d16024d5ecf10cdacab
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 12cf33f193e7f1d1a976e5cde8612df19108cb69
+ms.sourcegitcommit: 159399f2325af644c20551925c1fa34bf76aad43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58627538"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "62288634"
 ---
 # <a name="schedule-owner-for-shift-management"></a>Proprietario pianificazione per la gestione dei turni
 
 ## <a name="overview"></a>Panoramica
 
-Proprietario pianificazione è una caratteristica che consente di elevare le autorizzazioni di un membro del team a un proprietario della pianificazione senza rendere il dipendente proprietario del team. Questo significa che il dipendente è autorizzato a gestire la pianificazione del team senza poter modificare altre proprietà del team, ad esempio l'aggiornamento, la modifica o l'eliminazione dei canali del team.
+La caratteristica Proprietario pianificazione consente di elevare le autorizzazioni di un membro del team in modo che possa gestire le pianificazioni senza rendere il dipendente proprietario del team. Con le autorizzazioni di proprietario pianificazione, un dipendente può gestire la pianificazione del team senza poter modificare altre proprietà del team, ad esempio l'aggiornamento, la modifica o l'eliminazione dei canali del team.
 
 Cosa può fare un utente con autorizzazioni di proprietario della pianificazione?
 
@@ -52,9 +54,9 @@ Ecco un esempio di come l'organizzazione può usare la caratteristica Pianifica 
 
 Si lavora in un'organizzazione di grandi dimensioni in cui i responsabili dei reparti segnalano direttamente al responsabile del negozio. Il responsabile del negozio ha più autorità all'interno dell'azienda ed è il proprietario del team in Turni. I responsabili di reparto, invece, vengono aggiunti ai turni solo come membri del team. Anche se i responsabili dei negozi hanno più anzianità rispetto ai responsabili di reparto, è più logico che i responsabili di reparto gestino la pianificazione quotidiana dei dipendenti del team.
 
-*Senza Proprietario pianificazione,* i responsabili di reparto devono avere gli stessi privilegi del proprietario del team. Di recente, i responsabili di reparto spostano le informazioni e modificano il nome dei canali, causando complicazioni con il lavoro del responsabile del negozio. Il responsabile del negozio vuole che i responsabili del reparto siano in grado di organizzare le pianificazioni, ma non vuole che possano modificare altri elementi del team, all'esterno dei turni.
+*Senza Il proprietario della* pianificazione, i responsabili di reparto devono avere gli stessi privilegi del proprietario del team. Di recente, i responsabili di reparto spostano le informazioni e modificano il nome dei canali, causando complicazioni con il lavoro del responsabile del negozio. Il responsabile del negozio vuole che i responsabili del reparto siano in grado di organizzare le pianificazioni, ma non vuole che possano modificare altri elementi del team, all'esterno dei turni.
 
-*Con Schedule Owner*, i responsabili di reparto possono avere privilegi di pianificazione, senza altri privilegi di proprietario del team.
+*Con Schedule Owner*, ai responsabili del reparto possono essere dati privilegi di pianificazione, senza altri privilegi di proprietario del team.
 
 ## <a name="manage-schedule-ownership"></a>Gestire la proprietà della pianificazione
 
