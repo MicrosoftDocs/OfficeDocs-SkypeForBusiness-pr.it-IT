@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Formazione per gli utenti finali per Microsoft Teams
-summary: "Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti e in tempo reale, creati per consentirti di iniziare subito a usare Teams. \_ Che tu sia il decision maker dell’azienda, un amministratore, un professionista IT o un utente finale, troverai un corso adatto a te. Unisciti a noi per vedere Microsoft Teams in azione, ottenere risposte alle tue domande e interagire con i nostri istruttori in tempo reale. Per visualizzare le lezioni di formazione nel proprio tempo, visita la nostra formazione su richiesta per gli utenti finali. Fai clic su una sessione di seguito per iscriverti."
+summary: "Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti e in tempo reale, creati per consentirti di iniziare subito a usare Teams. \_ Che tu sia il decision maker dell’azienda, un amministratore, un professionista IT o un utente finale, troverai un corso adatto a te. Unisciti a noi per Microsoft Teams in azione, ottenere risposte alle tue domande e interagire con i nostri istruttori in tempo reale. Per visualizzare le lezioni di formazione nel proprio tempo, visita la nostra formazione su richiesta per gli utenti finali. Fai clic su una sessione di seguito per iscriverti."
 brand: teams
 metadata:
   title: Formazione per gli utenti finali per Microsoft Teams
-  description: "Microsoft è entusiasta di fornire corsi di formazione virtuali gratuiti, in tempo reale, progettati per iniziare a utilizzare Teams. \_ Che tu sia il decision maker dell’azienda, un amministratore, un professionista IT o un utente finale, troverai un corso adatto a te. Unisciti a noi per vedere Microsoft Teams in azione, ottenere risposte alle tue domande e interagire con i nostri istruttori in tempo reale. Fai clic su una sessione di seguito per iscriverti e assicurati di consultare altri corsi più avanti."
+  description: "Microsoft è entusiasta di fornire corsi di formazione virtuali gratuiti, in tempo reale, progettati per iniziare a utilizzare Teams. \_ Che tu sia il decision maker dell’azienda, un amministratore, un professionista IT o un utente finale, troverai un corso adatto a te. Unisciti a noi per Microsoft Teams in azione, ottenere risposte alle tue domande e interagire con i nostri istruttori in tempo reale. Fai clic su una sessione di seguito per iscriverti e assicurati di consultare altri corsi più avanti."
   ms.topic: hub-page
   author: SerdarSoysal
   ms.author: serdars
@@ -46,10 +46,10 @@ productDirectory:
       imageSrc: 'https://docs.microsoft.com/office/media/icons/lightbulb-idea-capture-teams.svg'
       summary: 'Scopri come Teams può aiutarti a organizzare i carichi di lavoro giornalieri e a rimanere sempre in contatto con i colleghi. (Gruppo di destinatari: tutti)'
       url: 'https://aka.ms/TeamsProTips'
-    - title: Gestisci al meglio il lavoro da casa con Teams
-      imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-teams.svg'
-      summary: 'Scopri le procedure consigliate per rimanere in contatto con il team e garantire la produttività. (Gruppo di destinatari: tutti)'
-      url: 'https://aka.ms/WFHTeams'
+    - title: Microsoft Teams su YouTube
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/video-play.svg'
+      summary: 'Abbonarsi e essere i primi a conoscere le funzionalità, i suggerimenti e i trucchi più recenti e altro ancora. (Gruppo di destinatari: tutti)'
+      url: 'https://www.youtube.com/MicrosoftTeams'
     - title: Teams per l'istruzione - Webinar
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-teams.svg'
       summary: 'Scopri come usare Teams nell''istruzione superiore. Gruppo di destinatari: personale, studenti, docenti, istituti di ricerca, professionisti IT'

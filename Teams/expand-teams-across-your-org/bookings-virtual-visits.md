@@ -21,24 +21,24 @@ ms.collection:
 - m365solution-scenario
 ms.reviewer: ''
 description: Scopri come usare l'app Bookings in Teams pianificare, gestire e condurre visite virtuali.
-ms.openlocfilehash: 8d4ac6effa95751fa75a77d09b941bc74fa96af2
-ms.sourcegitcommit: 159399f2325af644c20551925c1fa34bf76aad43
+ms.openlocfilehash: ae74a4195bc8aa0deeca81221e70fe28890938ec
+ms.sourcegitcommit: fd4d7557997c537c094e79ada21c569acde65aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62288554"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62312349"
 ---
 # <a name="virtual-visits-with-microsoft-teams-and-the-bookings-app"></a>Visite virtuali con Microsoft Teams e l’app Bookings
 
 ## <a name="overview"></a>Panoramica
 
-[L'app Bookings](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) in Microsoft Teams offre alle organizzazioni un modo semplice per pianificare e gestire appuntamenti virtuali per personale e partecipanti. Usarlo per pianificare appuntamenti virtuali come visite sanitarie, consulenze finanziarie, colloqui, assistenza clienti, accessori virtuali e consulenze, orari di ufficio scolastici e altro ancora.
+[L'app Bookings](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) in Microsoft Teams offre alle organizzazioni un modo semplice per pianificare e gestire appuntamenti virtuali per il personale e i partecipanti. Usarlo per pianificare appuntamenti virtuali come visite sanitarie, consulenze finanziarie, colloqui, assistenza clienti, accessori virtuali e consulenze, orari di ufficio scolastici e altro ancora.
 
 L'app Bookings semplifica la gestione delle esigenze di pianificazione complesse di qualsiasi organizzazione. Le utilità di pianificazione possono gestire più calendari di reparto e del personale, oltre a comunicazioni con partecipanti interni ed esterni, da un'unica esperienza.
 
-Le visite virtuali si svolgono tramite Microsoft Teams riunioni, che offrono funzionalità di videoconferenza efficaci. Ad esempio, un medico può condividere lo schermo e rivedere i risultati dei test con un paziente. In alternativa, un consulente bancario può richiedere firme elettroniche sui documenti, consentendo loro di chiudere le transazioni in remoto.
+Le visite virtuali si svolgono tramite riunioni Microsoft Teams, che offrono funzionalità di videoconferenza efficaci. Ad esempio, un medico può condividere lo schermo e rivedere i risultati dei test con un paziente. In alternativa, un consulente bancario può richiedere firme elettroniche sui documenti, consentendo loro di chiudere le transazioni in remoto.
 
-Ogni appuntamento virtuale include un collegamento Teams riunione che viene inviato ai partecipanti tramite posta elettronica, in cui possono partecipare facilmente da un Web browser o da un Teams su qualsiasi dispositivo. I promemoria automatici per la posta elettronica consentono di ridurre i messaggi non visualizzati e di migliorare il coinvolgimento di clienti e clienti.
+Ogni appuntamento virtuale include un collegamento Teams riunione che viene inviato ai partecipanti tramite posta elettronica, in cui possono partecipare facilmente da un Web browser o da Teams su qualsiasi dispositivo. I promemoria automatici per la posta elettronica consentono di ridurre i messaggi non visualizzati e di migliorare il coinvolgimento di clienti e clienti.
 
 Con Bookings si ottiene un'esperienza personalizzata per il settore. Ecco alcuni esempi di come è possibile usarlo nell'organizzazione:
 
@@ -54,7 +54,7 @@ Questo articolo offre una panoramica su come usare l'app Bookings in Teams piani
 
 Gli amministratori possono vedere Gestire [l'app Bookings in Teams](../bookings-app-admin.md) per informazioni sui prerequisiti per l'uso dell'app Bookings in Teams, su come controllare l'accesso a Bookings nell'organizzazione e sulle impostazioni consigliate per i criteri e gli amministratori.
 
-Tenere presente che solo le utilità di pianificazione dell'organizzazione devono avere l'app Bookings installata in Teams. Il personale che conduce o partecipa a appuntamenti virtuali non ha bisogno dell'app. Si uniscono agli appuntamenti dal calendario Teams o Outlook o usando il collegamento alla riunione nel messaggio di conferma della prenotazione.
+Tenere presente che solo le utilità di pianificazione dell'organizzazione devono avere l'app Bookings installata in Teams. Il personale che conduce o partecipa a appuntamenti virtuali non ha bisogno dell'app. Si uniscono agli appuntamenti dal calendario Teams o Outlook o usando il collegamento alla riunione nel messaggio di posta elettronica di conferma della prenotazione.
 
 ## <a name="set-up-a-new-booking-calendar"></a>Configurare un nuovo calendario delle prenotazioni
 
@@ -72,7 +72,7 @@ Per altre informazioni, vedere [Creare un calendario di Bookings](https://suppor
 
 ### <a name="add-staff"></a>Aggiungere personale
 
-Nel calendario delle prenotazioni passare ad **Altre opzioni** (...) > **Impostazioni** e quindi selezionare **Personale**. Aggiungere membri del personale e assegnare un ruolo a ogni persona aggiunta.
+Nel calendario delle prenotazioni passare ad **Altre opzioni** (...) > **Impostazioni** e quindi selezionare **Personale**. Aggiungere membri del personale e assegnare un ruolo a ogni persona aggiunta. È possibile aggiungere fino a 100 membri del personale a un calendario delle prenotazioni.
 
 L'app Bookings si integra con Outlook. Dopo aver aggiunto il personale, sarà possibile visualizzare la disponibilità del calendario e pianificare le prenotazioni per tale persona. Per altre informazioni, vedere [Aggiungere personale e visualizzare un calendario di Bookings](https://support.microsoft.com/office/add-staff-and-view-a-bookings-calendar-6c579f61-8adb-4514-9458-021de2023fa0).  
 
@@ -80,7 +80,7 @@ L'app Bookings si integra con Outlook. Dopo aver aggiunto il personale, sarà po
 
 Creare tipi di appuntamenti specifici per rappresentare i servizi offerti dall'organizzazione e personalizzare l'esperienza di prenotazione.
 
-Nel calendario delle prenotazioni passare ad **Altre opzioni** (...) > **tipi di** appuntamento e quindi selezionare **Nuovo tipo di appuntamento**. Immettere un nome,&mdash; ad esempio Apertura account, Rinnovo della ricetta, Consulenza prestito,&mdash; Preparazione imposte e altre informazioni e impostazioni desiderate.
+Nel calendario delle prenotazioni passare ad Altre **opzioni** (...) > **tipi di** appuntamento e quindi selezionare **Nuovo tipo di appuntamento**. Immettere un nome,&mdash; ad esempio Apertura account, Rinnovo della ricetta, Consulenza prestito,&mdash; Preparazione imposte e altre informazioni e impostazioni desiderate.
 
 Le informazioni e i collegamenti aggiunti vengono inclusi nella conferma di posta elettronica inviata ai partecipanti ogni volta che viene prenotato questo tipo di appuntamento. È anche possibile impostare promemoria di posta elettronica e altre opzioni, ad esempio se i partecipanti possono partecipare da un [browser](mobile-browser-join.md) per dispositivi mobili senza dover scaricare Teams. Per altre informazioni, vedere [Creare un tipo di appuntamento](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887).
 
@@ -96,16 +96,29 @@ La conferma tramite posta elettronica inviata al partecipante include il collega
 
 Nel calendario Teams o Outlook, passare alla prenotazione e quindi selezionare Partecipa o il collegamento Teams riunione. Controlla le impostazioni audio e video e quindi seleziona **Partecipa ora**. Per altre informazioni, vedere [Condurre un appuntamento di Bookings](https://support.microsoft.com/office/conduct-a-bookings-appointment-a86a4007-e26c-4909-9893-f7036e2747cd).
 
+## <a name="monitor-virtual-visits-and-get-real-time-status-updates"></a>Monitorare le visite virtuali e ottenere aggiornamenti di stato in tempo reale
+
+La [visualizzazione coda](https://support.microsoft.com/office/queue-view-in-bookings-3eea2840-a1e0-4bcd-8e09-d3cf51c184d6) in Bookings fornisce al personale un dashboard per monitorare tutti gli appuntamenti virtuali della giornata, con aggiornamenti in tempo reale. Per visualizzare la coda, passare alla **scheda Coda** in Bookings.
+
+:::image type="content" source="../media/bookings-virtual-visits-queue.png" alt-text="Screenshot della visualizzazione coda nell'app Bookings in Teams" lightbox="../media/bookings-virtual-visits-queue.png":::
+
+Dalla coda, gli utilità di pianificazione possono aggiungere una nuova prenotazione, visualizzare i dettagli degli appuntamenti pertinenti e visualizzare gli stati degli appuntamenti durante la giornata. Quando un paziente entra nella sala d'attesa, lo stato cambia e il tempo di attesa viene visualizzato e monitorato. La visualizzazione viene aggiornata automaticamente con gli aggiornamenti codificati a colori in modo da poter identificare facilmente le modifiche.
+
+Il personale può anche partecipare e gestire gli appuntamenti direttamente dalla coda.
+
+> [!NOTE]
+> Attualmente, l'app Bookings supporta l'aggiunta di fino a 100 personale per ogni calendario di prenotazione. Se sono Graph api per configurare e aggiungere personale a un calendario di prenotazione, questo limite potrebbe non essere applicato. In questo scenario, la **scheda** Coda non sarà in grado di eseguire il rendering del contenuto per i calendari con più di 100 membri del personale. Per un'esperienza ottimale, è consigliabile aggiungere non più di 100 personale a un calendario delle prenotazioni. Stiamo lavorando per risolvere questa limitazione nelle versioni future.
+
 ## <a name="additional-capabilities-with-the-bookings-web-app"></a>Funzionalità aggiuntive con l'app Web Bookings
 
-L'app Web Bookings offre funzionalità aggiuntive. Ad esempio, è possibile pubblicare una pagina di prenotazione online self-service in cui gli utenti possono pianificare appuntamenti con il personale. Per accedere all'app Web Bookings, passare ad **Altre opzioni** (...) > **aprire l'app Web Bookings**.
+L'app Web Bookings offre funzionalità aggiuntive. Ad esempio, è possibile pubblicare una pagina di prenotazione online self-service in cui gli utenti possono pianificare appuntamenti con il personale. Per accedere all'app Web Bookings, passare ad **Altre** opzioni (...) > **app Web Open Bookings**.
 
 Per altre informazioni, vedere [Microsoft Bookings](/microsoft-365/bookings/bookings-overview).
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Gestire l'esperienza di partecipazione Teams le visite virtuali nei browser per dispositivi mobili](mobile-browser-join.md)
+- [Gestire l'esperienza di partecipazione Teams le visite virtuali nei browser per dispositivi mobili](mobile-browser-join.md)
 
-[Introduzione a Teams per le organizzazioni sanitarie](healthcare/teams-in-hc.md)
+- [Introduzione alla Teams per le organizzazioni sanitarie](healthcare/teams-in-hc.md)
 
-[App Bookings nella documentazione Teams guida](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?#PickTab=Bookings)
+- [App Bookings nella documentazione Teams guida](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?#PickTab=Bookings)

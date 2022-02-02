@@ -16,43 +16,43 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come approvare le app personalizzate inviate usando l'API Teams per l'invio di app in Microsoft Teams.
-ms.openlocfilehash: 41a6fe61269159da7af32ac8d0392752ffdf087d
-ms.sourcegitcommit: 9f1f5cd828c24676c20df727b2c67daf56ff884c
+description: Informazioni su come approvare le app personalizzate inviate con l'API Teams per l'invio di app in Microsoft Teams.
+ms.openlocfilehash: 17741733f506aefd6fd85f1b821d144961af6158
+ms.sourcegitcommit: fd4d7557997c537c094e79ada21c569acde65aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62248707"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "62312239"
 ---
 # <a name="publish-a-custom-app-submitted-through-the-teams-app-submission-api"></a>Pubblicare un'app personalizzata inviata tramite l'API Teams per l'invio di app
 
 ## <a name="overview"></a>Panoramica
 
 > [!NOTE]
-> Quando si pubblica un'app Teams, questa è disponibile per gli utenti nell'app store dell'organizzazione. Esistono due modi per pubblicare un'app personalizzata e il modo in cui si usa dipende da come si ottiene l'app. **Questo articolo illustra come approvare** e pubblicare un'app personalizzata che uno sviluppatore invia tramite l'API Teams di invio delle app. L'altro metodo, il caricamento di un'app personalizzata, viene usato quando uno sviluppatore invia un pacchetto dell'app in .zip formato. Per altre informazioni su questo metodo, vedere <a href="/microsoftteams/upload-custom-apps" target="_blank">Pubblicare un'app personalizzata caricando un pacchetto dell'app.</a> Il widget approva app non è disponibile nei tenant GCC app. 
+> Quando si pubblica un'app Teams personalizzata, questa è disponibile per gli utenti nell'app store dell'organizzazione. Esistono due modi per pubblicare un'app personalizzata e il modo in cui si usa dipende da come si ottiene l'app. **Questo articolo illustra come approvare** e pubblicare un'app personalizzata che uno sviluppatore invia tramite l'API Teams di invio delle app. L'altro metodo, il caricamento di un'app personalizzata, viene usato quando uno sviluppatore invia un pacchetto dell'app in .zip formato. Per altre informazioni su questo metodo, vedere [Pubblicare un'app personalizzata caricando un pacchetto dell'app](/microsoftteams/upload-custom-apps). Il widget approva app non è disponibile nei tenant GCC app.
 
 > [!IMPORTANT]
 > Questo metodo non è attualmente disponibile per GCC ambienti. È necessario usare il *metodo di caricamento di un'app* personalizzata.
 
-Questo articolo fornisce indicazioni end-to-end su come portare l'app Teams dallo sviluppo alla distribuzione all'individuazione. Si otterrà una panoramica delle esperienze connesse che Teams nel ciclo di vita delle app per semplificare le procedure di sviluppo, distribuzione e gestione di app personalizzate nell'app store dell'organizzazione.
+Questo articolo fornisce indicazioni end-to-end su come portare l'app Teams dallo sviluppo alla distribuzione all'individuazione. Si otterrà una panoramica delle esperienze connesse Teams nel ciclo di vita dell'app per semplificare le procedure di sviluppo, distribuzione e gestione di app personalizzate nell'app store dell'organizzazione.
 
-Verranno esaminati tutti i passaggi del ciclo di vita, tra cui il modo in cui gli sviluppatori possono usare l'API di invio delle app di Teams per inviare app personalizzate direttamente all'interfaccia di amministrazione di Microsoft Teams per poterle rivedere e approvare, come impostare criteri per gestire le app per gli utenti dell'organizzazione e come vengono individuate dagli utenti in Teams.
+Verranno esaminati tutti i passaggi del ciclo di vita, incluso il modo in cui gli sviluppatori possono usare l'API di invio delle app di Teams per inviare app personalizzate direttamente all'interfaccia di amministrazione di Microsoft Teams per poterle rivedere e approvare, come impostare criteri per gestire le app per gli utenti dell'organizzazione e come vengono individuate dagli utenti in Teams.
 
 ![Panoramica dell'app, dallo sviluppo alla distribuzione.](media/custom-app-lifecycle.png)
 
-Questa guida è incentrata sugli aspetti Teams'app ed è destinata agli amministratori e ai professionisti IT. Per informazioni sullo sviluppo di Teams, vedere la documentazione <a href="/microsoftteams/platform" target="_blank">Teams per sviluppatori.</a>
+Questa guida è incentrata sugli aspetti Teams'app ed è destinata agli amministratori e ai professionisti IT. Per informazioni sullo sviluppo di Teams app, vedere la documentazione [Teams per sviluppatori](/microsoftteams/platform).
 
 ## <a name="develop"></a>Sviluppo
 
 ### <a name="create-the-app"></a>Creare l'app
 
-La Microsoft Teams per sviluppatori consente agli sviluppatori di integrare facilmente le proprie app e i propri servizi per migliorare la produttività, prendere decisioni più velocemente e creare collaborazione su contenuti e flussi di lavoro esistenti. Le app create sulla piattaforma Teams sono ponti tra il client di Teams e i servizi e i flussi di lavoro, portandoli direttamente nel contesto della piattaforma di collaborazione. Per altre informazioni, vedere la documentazione Teams <a href="/microsoftteams/platform" target="_blank">per sviluppatori.</a>
+La Microsoft Teams per sviluppatori consente agli sviluppatori di integrare facilmente le proprie app e i propri servizi per migliorare la produttività, prendere decisioni più velocemente e creare collaborazione su contenuti e flussi di lavoro esistenti. Le app create sulla piattaforma Teams sono ponti tra il client Teams e i servizi e i flussi di lavoro, portandoli direttamente nel contesto della piattaforma di collaborazione. Per altre informazioni, vedere la documentazione Teams [per sviluppatori](/microsoftteams/platform).
 
 ### <a name="submit-the-app"></a>Inviare l'app
 
-Quando l'app è pronta per l'uso nell'ambiente di produzione, lo sviluppatore può inviare l'app usando l'API di invio dell'app Teams, che può essere chiamata [dall'API Graph](/graph/api/teamsapp-publish), da un ambiente di sviluppo integrato (IDE) come Visual Studio Code o da una piattaforma come Power Apps e Power Virtual Agents. In questo modo l'app sarà disponibile nella pagina Gestisci <a href="/microsoftteams/manage-apps" target="_blank">app</a> dell'interfaccia di amministrazione di Microsoft Teams, in cui l'amministratore potrà esaminarla e approvarla.
+Quando l'app è pronta per l'uso in produzione, lo sviluppatore può inviare l'app usando l'API di invio dell'app Teams, che può essere chiamata [dall'API Graph](/graph/api/teamsapp-publish?view=graph-rest-beta&tabs=http#example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog), da un ambiente di sviluppo integrato (IDE) come Visual Studio Code o da una piattaforma come Power Apps e Power Virtual Agents. In questo modo l'app sarà disponibile nella pagina Gestisci [app](/microsoftteams/manage-apps) dell'interfaccia di amministrazione Microsoft Teams, in cui è possibile esaminarla e approvarla.
 
-L'API di invio delle app di Teams, basata su <a href="/graph/api/teamsapp-publish" target="_blank">Microsoft Graph,</a>consente all'organizzazione di svilupparsi sulla piattaforma scelta e automatizza il processo di invio all'approvazione per le app personalizzate in Teams.
+L'API di invio delle app di Teams, basata su [Microsoft Graph](/graph/api/teamsapp-publish?tabs=http&view=graph-rest-beta#example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog), consente all'organizzazione di svilupparsi sulla piattaforma scelta e automatizza il processo di invio all'approvazione per le app personalizzate in Teams.
 
 Ecco un esempio dell'aspetto di questo passaggio di invio dell'app in Visual Studio Code:
 
@@ -60,13 +60,38 @@ Ecco un esempio dell'aspetto di questo passaggio di invio dell'app in Visual Stu
 
 Tenere presente che l'app non viene ancora pubblicata nell'app store dell'organizzazione. Questo passaggio invia l'app all'Microsoft Teams di amministrazione, dove è possibile approvarla per la pubblicazione nell'app store dell'organizzazione.
 
-Per altre informazioni sull'uso dell'API Graph per inviare app, vedere <a href="/graph/api/teamsapp-publish" target="_blank">qui</a>.
+Per altre informazioni sull'uso dell'API Graph per inviare app, vedere [qui](/graph/api/teamsapp-publish?tabs=http&view=graph-rest-beta#example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog).
+
+## <a name="notify"></a>Notifica
+
+È possibile attivare le notifiche in modo da sapere quando gli sviluppatori inviano una nuova applicazione per la revisione e l'approvazione. Si otterrà anche notifiche quando gli sviluppatori inviano gli aggiornamenti delle app. Per abilitare le notifiche di invio delle app nell'interfaccia di amministrazione di Teams, passare [**a Notifiche &** **avvisiInviirulesApp** >  > ](https://admin.teams.microsoft.com/notifications/rules) e attivare la regola impostando lo stato su **Attivo**. Per impostazione predefinita, questa impostazione è disattivata. Per attivare questa impostazione, è necessario essere un amministratore globale o Teams amministratore.
+
+Dopo aver attivata questa impostazione, si otterrà una notifica **nel team Avvisi** e notifiche per amministratori in un nuovo canale denominato **Invii di app**. In alternativa, è possibile scegliere un team e un canale esistenti per ricevere notifiche recapitate a un team e un canale specificati. A tale scopo, eseguire la procedura seguente:
+
+1. Nella regola **Invii app** selezionare la casella **di controllo Avviso canale** in **Azioni**.
+1. Scegliere il **pulsante Seleziona** canale.
+1. Cercare un team da aggiungere.
+1. Cercare un canale da aggiungere.
+1. Selezionare **Applica**.
+
+    ![Casella di controllo di notifica dell'avviso del canale personalizzato.](media/channel-alert.png)
+
+> [!NOTE]
+> Selezionare la **casella di controllo Avviso del canale** predefinito per ricevere **notifiche al team** Avvisi e notifiche per amministratori nel **canale Invii app** .
+
+![Casella di controllo di notifica predefinita per gli avvisi del canale.](media/default-channel-alert.png)
+
+È anche possibile configurare le notifiche per un webhook esterno specificando un URL webhook pubblico dopo aver selezionato la **casella di controllo Webhook** . All'URL webhook verrà inviato un payload di notifica JSON.
+
+![Notifica di invio dell'app.](media/app-submission-notification.png)
+
+Dopo aver configurato la regola di invio delle app, è possibile esaminare le schede di notifica nel canale specificato per visualizzare i dettagli dell'app e selezionare Visualizza dettagli per aprire le app nell'interfaccia di amministrazione di Teams.
 
 ## <a name="validate"></a>Convalida
 
-La <a href="/microsoftteams/manage-apps" target="_blank">pagina</a> Gestisci app nell'interfaccia di amministrazione di Microsoft Teams (nel riquadro di spostamento sinistro passare **Teams app** Gestisci  >  **app),** offre una visualizzazione in tutte le app Teams per l'organizzazione. Il widget **Approvazione** in sospeso nella parte superiore della pagina indica quando un'app personalizzata viene inviata per l'approvazione.
+[La pagina](/microsoftteams/manage-apps) Gestisci app nell'interfaccia di amministrazione di Microsoft Teams (nel riquadro di spostamento sinistro passare [**Teams** **appsManage** >  apps](https://admin.teams.microsoft.com/manage-apps)) offre una visualizzazione in tutte le app Teams per l'organizzazione. Il widget **Approvazione** in sospeso nella parte superiore della pagina indica quando un'app personalizzata viene inviata per l'approvazione.
 
-Nella tabella, un'app appena  inviata mostra automaticamente lo stato Di pubblicazione **inviato** e **lo stato** **Bloccato**. È possibile ordinare la **colonna Stato pubblicazione** in ordine decrescente per trovare rapidamente l'app.
+Nella tabella, un'app appena inviata mostra automaticamente  lo stato Di pubblicazione **inviato** e **lo stato** **Bloccato**. È possibile ordinare la **colonna Stato pubblicazione** in ordine decrescente per trovare rapidamente l'app.
 
 ![stato di pubblicazione.](media/custom-app-lifecycle-validate-app.png)
 
@@ -74,14 +99,14 @@ Fare clic sul nome dell'app per passare alla pagina dei dettagli dell'app. Nella
 
 ![pagina dei dettagli dell'app per un'app inviata.](media/custom-app-lifecycle-app-details.png)
 
-Per altre informazioni sull'uso dell'API Graph per controllare lo **stato di pubblicazione,** vedere <a href="/graph/api/appcatalogs-list-teamsapps" target="_blank">qui</a>.
+Per altre informazioni sull'uso dell'API Graph per controllare lo **stato di pubblicazione**, vedere [qui](/graph/api/appcatalogs-list-teamsapps?tabs=http&view=graph-rest-beta#example-3-find-application-based-on-the-teams-app-manifest-id).
 
 ## <a name="publish"></a>Pubblica
 
 Quando si è pronti per rendere disponibile l'app agli utenti, pubblicare l'app.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**.
-2. Fare clic sul nome dell'app per passare alla pagina dei dettagli dell'app e quindi nella casella **Stato pubblicazione** selezionare **Pubblica.**
+2. Fare clic sul nome dell'app per passare alla pagina dei dettagli dell'app e quindi nella casella **Stato pubblicazione** selezionare **Pubblica**.
 
     ![Pulsante Pubblica nella pagina dei dettagli dell'app.](media/submitted-app-pending-action.png)
 
@@ -105,7 +130,7 @@ Prima di poter eseguire ricerche nel log di audit, è necessario attivare il con
 
 ## <a name="discover-and-adopt"></a>Scopri e adotta
 
-Gli utenti che hanno le autorizzazioni per l'app possono trovarla nell'app store dell'organizzazione. Passare a **Creato per il nome *dell'organizzazione*** nella pagina App per trovare le app personalizzate dell'organizzazione.
+Gli utenti che hanno le autorizzazioni per l'app possono trovarla nell'app store dell'organizzazione. Passare a **Creato per *il nome dell'organizzazione*** nella pagina App per trovare le app personalizzate dell'organizzazione.
 
 ![Pagina Delle app che mostra l'app pubblicata.](media/custom-app-lifecycle-discovery.png)
 
@@ -115,7 +140,7 @@ Se sono stati creati e assegnati criteri di configurazione dell'app, l'app viene
 
 Per aggiornare un'app, gli sviluppatori devono continuare a seguire i passaggi della [sezione](#develop) Sviluppo.
 
-Quando lo sviluppatore invia un aggiornamento a un'app personalizzata pubblicata, si otterrà una notifica nel **widget** Approvazione in sospeso della <a href="/microsoftteams/manage-apps" target="_blank">pagina Gestisci</a> app. Nella tabella lo stato **di pubblicazione dell'app** sarà impostato su **Aggiorna inviato.**
+Quando lo sviluppatore invia un aggiornamento a un'app personalizzata pubblicata, si otterrà una notifica **nel widget Approvazione** in sospeso della [pagina Gestisci](/microsoftteams/manage-apps) app. Nella tabella lo stato **pubblicazione dell'app** sarà impostato su **Aggiorna inviato**. Se hai attivato le notifiche di invio delle app, sarai avvisato anche **nel team avvisi** e notifiche per gli amministratori nel canale di invio delle app. La scheda di notifica avrà un collegamento per accedere direttamente all'app nell'Teams di amministrazione. Per altre informazioni su come attivare le notifiche di invio delle app, vedere [Notifica](#notify).
 
 ![Pagina Gestisci app che mostra le richieste in sospeso e lo stato dell'app.](media/custom-app-lifecycle-update-submitted.png)
 
@@ -125,7 +150,7 @@ Per rivedere e pubblicare un aggiornamento dell'app:
 2. Fare clic sul nome dell'app per passare alla pagina dei dettagli dell'app e quindi selezionare **Aggiorna** disponibile per esaminare i dettagli dell'aggiornamento.
 
     ![pagina dei dettagli dell'app.](media/custom-app-lifecycle-update-app.png)
-3. Al termine, selezionare Pubblica **per** pubblicare l'aggiornamento. In questo modo l'app esistente viene sostituita, il numero di versione viene aggiornato e lo **stato di pubblicazione** viene modificato in **Pubblicato.** Tutti i criteri di autorizzazione delle app e i criteri di configurazione delle app rimangono applicati per l'app aggiornata.
+3. Al termine, selezionare Pubblica **per** pubblicare l'aggiornamento. In questo modo l'app esistente viene sostituita, il numero di versione viene aggiornato e lo **stato di pubblicazione viene modificato** in **Pubblicato**. Tutti i criteri di autorizzazione delle app e i criteri di configurazione delle app rimangono applicati per l'app aggiornata.
 
     Se si rifiuta l'aggiornamento, la versione precedente dell'app rimane pubblicata.
 
@@ -143,4 +168,5 @@ Per altre informazioni sull'uso dell'API Graph per aggiornare le app, vedere <a 
 - [Gestire le impostazioni e i criteri delle app personalizzate in Teams](teams-custom-app-policies-and-settings.md)
 - [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)
 - [Gestire i criteri di configurazione delle app in Teams](teams-app-setup-policies.md)
-- <a href="/graph/api/resources/teamsapp" target="_blank">API di microsoft Graph per Teams app</a>
+- [Teams e avvisi](alerts/teams-admin-alerts.md)
+- <a href="/graph/api/resources/teamsapp?view=graph-rest-beta" target="_blank">API microsoft Graph per Teams app</a>
