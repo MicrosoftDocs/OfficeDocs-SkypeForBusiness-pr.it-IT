@@ -16,12 +16,12 @@ f1.keywords:
 description: 'Teams case study vocale per multinazionali: sistema telefonico'
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b1221ff8fe47e26f04df621f99a0d4cd1a85a3205fcede766b7cc78189251708
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c83cd07cb8943c19b783658a15db99351d11f995
+ms.sourcegitcommit: 8ddafd0901b6b4f4109f3b6e687ae7fae667d61c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54316592"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62353371"
 ---
 # <a name="contoso-case-study-phone-system-for-a-multi-national-corporation"></a>Caso di studio Contoso: Sistema telefonico per una multinazionale
 
@@ -34,7 +34,7 @@ A seconda della posizione geografica e di altri fattori, Contoso aveva uffici ch
 - Tipo di sito C: Combinazione di Skype for Business VoIP aziendale tradizionali e sistemi di telefonia legacy
 
 
-Per implementare una soluzione Telefono Microsoft System per l'intera organizzazione, Contoso ha dovuto determinare per ogni tipo di sito quali delle opzioni seguenti verrebbero usate con Sistema telefonico per connettersi alla rete &mdash; &mdash; PSTN (Public Switched Telephone Network):
+Per implementare una soluzione di sistema Telefono Microsoft per l'intera organizzazione, Contoso&mdash;&mdash; ha dovuto determinare per ogni tipo di sito quali delle opzioni seguenti verrebbero usate con Sistema telefonico per connettersi alla rete PSTN (Public Switched Telephone Network):
 
 - Sistema telefonico piano chiamate 
 
@@ -42,15 +42,15 @@ Per implementare una soluzione Telefono Microsoft System per l'intera organizzaz
 
 - Combinazione di Sistema telefonico piano per chiamate e Sistema telefonico con il proprio gestore PSTN tramite routing diretto
  
-Per determinare la soluzione giusta per l'organizzazione, Contoso ha usato le soluzioni di telefonia [Microsoft](/SkypeForBusiness/hybrid/msft-telephony-solutions) e la sessione Ignite 2019 [Calling in Microsoft Teams](https://myignite.techcommunity.microsoft.com/sessions/83170?source=sessions).  
+Per determinare la soluzione giusta per l'organizzazione, Contoso ha usato Plan [your Teams voice solution](/SkypeForBusiness/cloud-voice-landing-page) and the Ignite 2019 session [Calling in Microsoft Teams](https://myignite.techcommunity.microsoft.com/sessions/83170?source=sessions).  
 
 ## <a name="site-type-a-skype-for-business-enterprise-voice"></a>Tipo di sito A: Skype for Business VoIP aziendale 
 
 Contoso Skype for Business VoIP aziendale è stato configurato come hub e ha parlato. C'era una posizione centrale che ha mantenuto il gateway PSTN nell'area geografica che ha fornito la connessione alla rete PSTN per gli utenti Skype for Business VoIP aziendale nel paese. Spesso questi uffici satellitari non hanno una propria uscita Internet. I numeri di questi utenti risiedevano nel trunk SIP che si connetteva a un SBC esistente. 
 
-Per determinare se la SBC già distribuita è certificata per il routing diretto e il bypass multimediale, Contoso ha controllato l'elenco dei controller di confine di sessione [certificati per il routing diretto.](direct-routing-border-controllers.md)  
+Per determinare se il servizio SBC già distribuito è certificato per il routing diretto e il bypass multimediale, Contoso ha controllato l'elenco dei controller di confine di sessione [certificati per il routing diretto](direct-routing-border-controllers.md).  
 
-Le abitudini di composizione dell'utente erano di comporre un utente nel sistema di telefonia legacy usando un'estensione, anche quando l'utente ha un client Skype for Business disponibile per l'audio peer-to-peer. 
+Le abitudini di composizione dell'utente erano di comporre un utente nel sistema di telefonia legacy usando un'estensione, anche quando l'utente dispone di un client Skype for Business disponibile per l'audio peer-to-peer. 
 
 Contoso ha basato la propria decisione sulle domande seguenti:
 
@@ -70,9 +70,9 @@ In base alle risposte alle loro domande, Contoso ha deciso di:
 
 - Spostare gli utenti che si trovano in un'area geografica in cui i piani per le chiamate PSTN sono disponibili Sistema telefonico piani per chiamate. 
 
-- Spostare gli utenti che non si trovano in un'area geografica in cui sono disponibili piani per le chiamate PSTN, gli utenti che si trovano in un sito in cui il ROI degli SBC deve ancora essere soddisfatto e gli utenti che risiedono in un paese che ha normative di telefonia da Sistema telefonico con routing diretto. 
+- Spostare gli utenti che non si trovano in un'area geografica in cui sono disponibili piani per le chiamate PSTN, gli utenti che si trovano in un sito in cui il ROI degli SBC non è ancora stato soddisfatto e gli utenti che risiedono in un paese con normative di telefonia da Sistema telefonico con routing diretto. 
 
-Il diagramma seguente mostra la distribuzione Skype for Business VoIP aziendale distribuzione iniziale e come è stata eseguita la migrazione di questa distribuzione ai piani per chiamate Microsoft e al routing diretto:
+Il diagramma seguente mostra la distribuzione iniziale Skype for Business VoIP aziendale distribuzione e come è stata eseguita la migrazione di questa distribuzione sia ai piani per le chiamate Microsoft che al routing diretto:
 
 ![Il diagramma mostra gli stati prima e dopo.](media/voice-case-study-1.png)
 
@@ -95,23 +95,23 @@ In base alle risposte alle loro domande, Contoso ha deciso di:
 
 - Spostare gli utenti che si trovano in un'area geografica in cui i piani per le chiamate PSTN sono disponibili Sistema telefonico piani per chiamate. 
 
-- Spostare gli utenti che non si trovano in un'area geografica in cui i piani per le chiamate PSTN sono disponibili Sistema telefonico routing diretto. 
+- Spostare gli utenti che non si trovano in un'area geografica in cui i piani per le chiamate PSTN sono disponibili Sistema telefonico con routing diretto. 
 
 - Mantenere una connessione PSTN a dispositivi analogici aziendali critici.
 
 I diagrammi seguenti mostrano la distribuzione del sistema legacy originale con siti remoti e la migrazione a una distribuzione di Routing diretto con l'ottimizzazione del supporto locale:
 
-**Distribuzione legacy originale**  
- ![ Un diagramma mostra gli stati prima e dopo.](media/voice-case-study-2.png)
+**Distribuzione legacy originale** 
+![ Un diagramma mostra gli stati prima e dopo.](media/voice-case-study-2.png)
 
 
 **Distribuzione con routing diretto**
 
 ![Diagramma che mostra gli stati prima e dopo.](media/voice-case-study-3.png)
  
-## <a name="site-type-c-combination-of-skype-for-business-enterprise-voice-and-traditional-legacy-telephony-systems"></a>Tipo di sito C: Combinazione di Skype for Business VoIP aziendale tradizionali sistemi di telefonia legacy
+## <a name="site-type-c-combination-of-skype-for-business-enterprise-voice-and-traditional-legacy-telephony-systems"></a>Tipo di sito C: combinazione di Skype for Business VoIP aziendale tradizionali sistemi di telefonia legacy
 
-Contoso Skype for Business VoIP aziendale i numeri degli utenti risiedono nel trunk SIP alla SBC dal gestore. I numeri dei sistemi di telefonia tradizionali si trovavano nel trunk TDM al gateway PSTN.   
+Contoso Skype for Business VoIP aziendale i numeri degli utenti risiedono nel trunk SIP fino a SBC dal gestore. I numeri dei sistemi di telefonia tradizionali si trovavano nel trunk TDM al gateway PSTN.   
 
 Contoso ha basato la propria decisione sulle domande seguenti:
 
@@ -128,7 +128,7 @@ Contoso ha basato la propria decisione sulle domande seguenti:
 
 In base alle risposte alle loro domande, Contoso ha deciso quanto segue: 
 
-- Per gli utenti di telefonia legacy che verranno abilitati per il routing diretto, Contoso ha portato i numeri dal trunk TDM al trunk SIP per SBC, perché SBC è certificato per il routing diretto. 
+- Per gli utenti di telefonia legacy che verranno abilitati per il routing diretto, Contoso ha portato i numeri dal trunk TDM al trunk SIP per SBC, poiché SBC è certificato per il routing diretto. 
 
 - Per supportare un sottoinsieme di utenti che si spostano in Sistema telefonico e per consentire il routing continuo attraverso il sistema legacy, il sistema di telefonia legacy è stato configurato come hop successivo al sistema SBC.   
 
@@ -136,16 +136,16 @@ In base alle risposte alle loro domande, Contoso ha deciso quanto segue:
 
 I diagrammi seguenti mostrano la distribuzione originale Skype for Business VoIP aziendale sistema di telefonia legacy e la migrazione a una distribuzione mista con Routing diretto:
 
-**Distribuzione mista originale** 
- ![ Diagramma 1 che mostra lo stato precedente.](media/voice-case-study-4.png)
+**Distribuzione mista originale**
+![ Diagramma 1 che mostra lo stato precedente.](media/voice-case-study-4.png)
 
-**Distribuzione mista con routing diretto** 
- ![ Diagramma 2 che mostra lo stato precedente.](media/voice-case-study-4a.png)
+**Distribuzione mista con routing diretto**
+![ Diagramma 2 che mostra lo stato precedente.](media/voice-case-study-4a.png)
 
 
 ## <a name="calling-plans"></a>Piani di chiamata
 
-Per determinare i requisiti di configurazione per i piani per chiamate, Contoso ha esaminato le decisioni di distribuzione principali del piano [di chiamata.](calling-plan-landing-page.md#core-deployment-decisions) Le decisioni risultanti sono state prese: 
+Per determinare i requisiti di configurazione per i piani per chiamate, Contoso ha esaminato le [decisioni di distribuzione principali del piano di chiamata](calling-plan-landing-page.md#core-deployment-decisions). Le decisioni risultanti sono state prese: 
 
 - Q. Gli utenti hanno bisogno di chiamate internazionali?<br> A. Sì 
 
@@ -167,20 +167,20 @@ Contoso ha partecipato a Ignite per rimanere al corrente delle Office 365, inclu
 
 ### <a name="calling-plans-sites"></a>Siti dei piani di chiamata
 
-Per ottenere licenze e assegnare numeri di telefono agli utenti, Contoso ha seguito la procedura descritta in [Configurare i piani per chiamate.](set-up-calling-plans.md) 
+Per ottenere licenze e assegnare numeri di telefono agli utenti, Contoso ha seguito la procedura descritta in [Configurare i piani per chiamate](set-up-calling-plans.md). 
 
-A causa del numero di utenti a cui era necessario assegnare i numeri di telefono, Contoso ha deciso di usare PowerShell per assegnare i numeri di telefono. Per informazioni su come assegnare numeri usando PowerShell oltre ad altre impostazioni, Contoso ha usato la &mdash; &mdash; Teams panoramica di [PowerShell.](teams-powershell-overview.md)  
+A causa del numero di utenti a cui era necessario assegnare i numeri di telefono, Contoso ha deciso di usare PowerShell per assegnare i numeri di telefono. Per informazioni su come assegnare numeri usando PowerShellin&mdash;&mdash; aggiunta ad altre impostazioniContoso ha usato la [Teams panoramica di PowerShell](teams-powershell-overview.md).  
 
 ### <a name="direct-routing-sites"></a>Siti di routing diretto
 
-Per connettere l'infrastruttura di telefonia locale di Contoso a Microsoft Teams, l'amministratore di Contoso ha seguito i passaggi descritti in [Configurare](direct-routing-configure.md) il routing diretto e ha esaminato il video Routing diretto [in Microsoft Teams](https://www.youtube.com/watch?v=1ASftX_Msb8&index=10&list=PLaSOUojkSiGnKuE30ckcjnDVkMNqDv0Vl) per istruzioni.  Contoso ha anche fatto riferimento alla documentazione relativa alla distribuzione del routing diretto da parte del fornitore SBC certificato. 
+Per connettere l'infrastruttura di telefonia locale di Contoso a Microsoft Teams, l'amministratore di Contoso ha seguito i passaggi descritti in [Configurare](direct-routing-configure.md) il routing diretto e ha esaminato il video [Routing diretto in Microsoft Teams](https://www.youtube.com/watch?v=1ASftX_Msb8&index=10&list=PLaSOUojkSiGnKuE30ckcjnDVkMNqDv0Vl) per istruzioni.  Contoso ha anche fatto riferimento alla documentazione relativa alla distribuzione del routing diretto da parte del fornitore SBC certificato. 
 
-Dopo aver configurato il routing diretto tra il sistema SBC e Telefono Microsoft, è stato necessario che Contoso testare la configurazione. A questo scopo, gli amministratori di Contoso hanno usato il client TESTER SIP discusso nella sessione Aggiornamenti per il routing diretto in [Ignite 2019.](https://myignite.techcommunity.microsoft.com/sessions/83178?source=sessions) Lo script client e la documentazione del tester SIP sono stati scaricati dallo script di PowerShell per testare le connessioni di Direct Routing Session Border Controller.   
+Dopo aver configurato il routing diretto tra il sistema SBC e Telefono Microsoft, è stato necessario che Contoso testare la configurazione. A questo scopo, gli amministratori di Contoso hanno usato il client Tester SIP discusso nella sessione Aggiornamenti per il [routing diretto in Ignite 2019](https://myignite.techcommunity.microsoft.com/sessions/83178?source=sessions). Lo script client SIP Tester e la documentazione sono stati scaricati dallo script di PowerShell per testare le connessioni di Direct Routing Session Border Controller.   
 
 
 ### <a name="local-media-optimization"></a>Ottimizzazione del supporto locale
 
-Contoso ha avuto l'opportunità di sfruttare l'Ottimizzazione multimediale locale nelle diverse aree geografiche del globo. Gli scenari supportati per Contoso sono descritti in [Ottimizzazione multimediale locale per il routing diretto.](direct-routing-media-optimization.md) La configurazione dell'ottimizzazione dei supporti multimediali locali è stata completata seguendo le indicazioni del fornitore SBC e di Microsoft. I passaggi di configurazione per Ottimizzazione file multimediali locali includono: 
+Contoso ha avuto l'opportunità di sfruttare l'Ottimizzazione multimediale locale nelle diverse aree geografiche del globo. Gli scenari supportati per Contoso sono descritti in [Ottimizzazione multimediale locale per il routing diretto](direct-routing-media-optimization.md). La configurazione dell'ottimizzazione dei supporti multimediali locali è stata completata seguendo le indicazioni del fornitore SBC e di Microsoft. I passaggi di configurazione per Ottimizzazione file multimediali locali includono: 
 
 - Configurare l'utente e i siti SBC 
 
@@ -198,5 +198,5 @@ Contoso ha avuto l'opportunità di sfruttare l'Ottimizzazione multimediale local
 
 Contoso aveva un certo numero di utenti che dovevano lavorare in remoto per un lungo periodo di tempo dopo essere stati abilitati per Sistema telefonico. Gli utenti hanno usato vpn per accedere a determinate applicazioni Line of Business. Mentre si è connessi a una rete VPN, Sistema telefonico utenti hanno riscontrato una riduzione della qualità delle chiamate. 
 
-Per risolvere il problema della qualità, Contoso ha implementato il split tunneling VPN, che ha consentito al traffico Office 365 di attraversare Internet mentre la connessione alle app interne rimaneva nella VPN. Per implementare il split tunneling VPN, Contoso ha seguito le indicazioni in Implementazione del [split tunneling VPN per Office 365](/office365/enterprise/office-365-vpn-implement-split-tunnel).  
+Per risolvere il problema della qualità, Contoso ha implementato il split tunneling VPN, che ha consentito al traffico Office 365 di attraversare Internet mentre la connessione alle app interne rimaneva sulla VPN. Per implementare il split tunneling VPN, Contoso ha seguito le indicazioni in [Implementazione del split tunneling VPN per Office 365](/office365/enterprise/office-365-vpn-implement-split-tunnel).  
 

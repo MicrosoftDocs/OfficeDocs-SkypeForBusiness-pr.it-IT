@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fc7a387f7dcd6ef8a3ed728b8aa59db64ccefb31
-ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
+ms.openlocfilehash: 756f9a8092fea24eb6690baa0768f295bd84e2c1
+ms.sourcegitcommit: 8ddafd0901b6b4f4109f3b6e687ae7fae667d61c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61205526"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62353401"
 ---
 # <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 
@@ -143,7 +143,7 @@ Se non si riesce a trovare il componente aggiuntivo Riunione di Teams per Outloo
 In alternativa, eseguire manualmente i seguenti passaggi:
 
 - Gli utenti di Windows 7 sono tenuti a installare l'[aggiornamento per Universal C Runtime in Windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows) affinché funzioni il componente aggiuntivo Riunione di Teams.
-- Controllare che l'utente disponga di un criterio di aggiornamento di Teams che abiliti la programmazione delle riunioni in Teams. Vedere [Aggiornare da Skype for Business a Teams](/microsoftteams/upgrade-to-teams-on-prem-overview#meetings) per ulteriori informazioni.
+- Controllare che l'utente disponga di un criterio di aggiornamento di Teams che abiliti la programmazione delle riunioni in Teams. Vedere [Aggiornare da Skype for Business a Teams](/microsoftteams/meeting-policies-in-teams-general) per ulteriori informazioni.
 - Controllare che l'utente disponga di un criterio di Riunione di Teams che consenta il componente aggiuntivo per Outlook. Per altri dettagli, vedere [Impostazioni dei criteri di riunione - Generale](./meeting-policies-in-teams-general.md#outlook-add-in).
 - Assicurarsi che l'utente abbia installato il client desktop di Teams. Il componente aggiuntivo per le riunioni non verrà installato se si utilizza solo il client Web di Teams.
 - Assicurarsi che l'utente abbia installato Outlook 2013 o versioni successive.

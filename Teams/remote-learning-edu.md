@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3a2772fe0f190bf7280dc4bb11625aedb3d0157b
-ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
+ms.openlocfilehash: bbcafdef989d3154ba99e557f0632e1a6bd6e665
+ms.sourcegitcommit: 8ddafd0901b6b4f4109f3b6e687ae7fae667d61c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "60605842"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62353411"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -67,7 +67,7 @@ Teams sfrutta le funzionalità di Microsoft 365 per autenticare gli utenti e for
 
 [Occorre assegnare le licenze agli utenti](teams-edu-licensing.md) prima che questi possano usare le funzionalità di Teams. Teams si basa su altre funzionalità di Microsoft 365, come [Gruppi di Microsoft 365](Office-365-groups.md), [Exchange](Exchange-Teams-interact.md), [SharePoint e OneDrive](SharePoint-OneDrive-interact.md) per offrire possibilità di collaborazione. Se questi servizi sono abilitati, gli utenti avranno la migliore l'esperienza possibile di Teams. [Teams è supportato per gli utenti che hanno un account di posta elettronica su Google](/microsoft-365/education/deploy/enabling-teams-for-education-for-google-users).
 
-Microsoft Teams è incluso in Office 365 A1, che è gratuito per gli istituti di istruzione. Per informazioni su come distribuire Office 365 e preparare l'intero istituto di istruzione per Teams, vedere [questa pagina](/microsoft-365/education/intune-edu-trial/set-up-office365-edu-tenant). Per ricevere assistenza è possibile creare un ticket [qui](https://signup.microsoft.com/Signup?OfferId=03ee83a5-5cb4-4545-aca9-33ead43f222a,d764709a-7763-45ef-a2a8-db5b8b6ae704&DL=ENTERPRISEPREMIUM_FACULTY&ali=1) e per ricevere formazione su Teams si può visitare il Microsoft Store locale per parlare con un esperto.
+Microsoft Teams è incluso in Office 365 A1, che è gratuito per gli istituti di istruzione. Per informazioni su come distribuire Office 365 e preparare l'intero istituto di istruzione per Teams, vedere [questa pagina](/microsoft-365/education/deploy/create-your-office-365-tenant). Per ricevere assistenza è possibile creare un ticket [qui](https://signup.microsoft.com/Signup?OfferId=03ee83a5-5cb4-4545-aca9-33ead43f222a,d764709a-7763-45ef-a2a8-db5b8b6ae704&DL=ENTERPRISEPREMIUM_FACULTY&ali=1) e per ricevere formazione su Teams si può visitare il Microsoft Store locale per parlare con un esperto.
 
 > [!NOTE]
 > Per le informazioni più aggiornate sulle distribuzioni di EDU, leggere le [Indicazioni aggiornate per la distribuzione di M365 EDU durante l'epidemia di COVID-19](/microsoft-365/education/deploy/guidance-for-m365-edu-deployment-during-covid19).
