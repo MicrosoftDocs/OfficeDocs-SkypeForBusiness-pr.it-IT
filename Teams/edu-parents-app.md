@@ -1,7 +1,7 @@
 ---
 title: Configurazione dell'amministratore per l'app Genitori EDU Microsoft in Teams
-author: MicrosoftHeidi
-ms.author: heidip
+author: DaniEASmith
+ms.author: danismith
 manager: serdars
 ms.topic: reference
 ms.service: msteams
@@ -17,16 +17,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4865372f442160734fec980428c6f6309cc0ad7f
-ms.sourcegitcommit: 1165a74b1d2e79e1a085b01e0e00f7c65483d729
+ms.openlocfilehash: f35d4f3037735f2122d26a2b9b24cf3a38f3bc99
+ms.sourcegitcommit: 1129841e68e927fe7cc31de3ad63a3e9247253cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61355745"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62363232"
 ---
 # <a name="deploying-the-parents-app-in-microsoft-teams"></a>Distribuzione dell'app Genitori in Microsoft Teams
 
-L'app Genitori consente ai docenti di connettersi e interagire in tutta sicurezza con i genitori e i tutori degli studenti nei team di classe usando una chat Teams, che verrà scalata in tutta l'organizzazione dell'educatore. Il provisioning di tutti i dati dei genitori e dei tutori viene eseguito School Data Sync, consentendo al personale IT di configurare le attività senza problemi.
+L'app Genitori aiuta i docenti Teams connettersi e interagire in modo sicuro con i genitori e i tutori degli studenti nei team di classe usando una chat Teams, che verrà scalata in tutta l'organizzazione dei docenti. Il provisioning di tutti i dati dei genitori e dei tutori viene eseguito School Data Sync, consentendo al personale IT di configurare le attività senza problemi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -35,9 +35,9 @@ L'app Genitori consente ai docenti di connettersi e interagire in tutta sicurezz
 - È necessario School Data Sync (SDS) per popolare le informazioni di contatto correlate al genitore e al **tutore di ogni** studente.
   - [Distribuire SDS](/schooldatasync/parents-and-guardians-in-sds)
 
-- Se è necessaria assistenza nella configurazione di SDS e nella compilazione dei contatti correlati a genitori e **tutori** per gli studenti del tenant, contattare il team customer success di EDU per:
+- Se è necessaria assistenza nella configurazione di SDS e nella compilazione dei contatti correlati a genitori **e tutori** per gli studenti del tenant, contattare il team customer success di EDU per:
   - Completamento del processo RFA in [FastTrack](https://www.microsoft.com/fasttrack?rtc=1).
-  - Apertura di un ticket su [Supporto](https://aka.ms/sdssupport).
+  - Apertura di un ticket presso [il supporto](https://aka.ms/sdssupport).
 
 ### <a name="teams-admin-center---policies"></a>Teams di amministrazione - Criteri
 
@@ -47,7 +47,7 @@ L'app Genitori consente ai docenti di connettersi e interagire in tutta sicurezz
 
 ## <a name="enabling-external-access-with-teams-accounts-not-managed-by-an-organization"></a>Abilitazione dell'accesso esterno con Teams account non gestiti da un'organizzazione
 
-1. Installare l'anteprima Microsoft Teams modulo di PowerShell più recente.
+1. Installare l'anteprima del Microsoft Teams di PowerShell più recente.
 
     ```powershell
     Install-Module -Name PowerShellGet -Force -AllowClobber
@@ -61,7 +61,7 @@ L'app Genitori consente ai docenti di connettersi e interagire in tutta sicurezz
     Connect-MicrosoftTeams -Credential $credential
     ```
 
-L'impostazione dei criteri che consente l'accesso esterno con account Teams non gestiti da un'organizzazione a livello di utente ( ) è abilitata per impostazione predefinita per tutti i criteri di accesso `EnableTeamsConsumerAccess` esterno a livello di utente. Sia l'impostazione a livello di tenant che l'impostazione dei criteri a livello di utente devono essere abilitate perché un utente abbia accesso esterno con account Teams non gestiti da un'organizzazione abilitata. Se non si vuole che questo accesso sia abilitato per tutti gli utenti del tenant, è necessario assicurarsi che l'impostazione a livello di tenant sia disabilitata, aggiornare i criteri di accesso esterno a livello di utente assegnati agli utenti e quindi abilitare l'impostazione a livello di tenant.
+L'impostazione dei criteri che abilita l'accesso esterno con account Teams non gestiti da un'organizzazione a livello di utente (`EnableTeamsConsumerAccess`) è abilitata per impostazione predefinita per tutti i criteri di accesso esterno a livello di utente. Sia l'impostazione a livello di tenant che l'impostazione dei criteri a livello di utente devono essere abilitate perché un utente abbia accesso esterno con account Teams non gestiti da un'organizzazione abilitata. Se non si vuole che questo accesso sia abilitato per tutti gli utenti del tenant, è necessario assicurarsi che l'impostazione a livello di tenant sia disabilitata, aggiornare i criteri di accesso esterno a livello di utente assegnati agli utenti e quindi abilitare l'impostazione a livello di tenant.
 
 Per verificare quali criteri di accesso esterno a livello utente esistono e a chi sono assegnati, è possibile usare la procedura seguente:
     
@@ -80,11 +80,11 @@ Per verificare quali criteri di accesso esterno a livello utente esistono e a ch
     Get-CsOnlineUser -Filter {ExternalAccessPolicy -eq "<PolicyName>"} | Select-Object DisplayName,ObjectId,UserPrincipalName
     ```
 
-Poiché tutti i criteri di accesso esterno a livello di utente sono impostati su true per impostazione predefinita, se si vuole modificare l'impostazione per utenti specifici, è possibile creare/modificare i criteri di accesso esterno esistenti con le impostazioni modificate e/o riassegnare gli utenti ai criteri nuovi o esistenti usando i `EnableTeamsConsumerAccess` `EnableTeamsConsumerAccess` cmdlet di PowerShell seguenti:
+`EnableTeamsConsumerAccess` Poiché tutti i criteri di accesso esterno a livello di utente sono impostati su true per impostazione predefinita, `EnableTeamsConsumerAccess` se si vuole modificare l'impostazione per utenti specifici, è possibile creare/modificare i criteri di accesso esterno esistenti con le impostazioni modificate e/o riassegnare gli utenti ai criteri nuovi o esistenti usando i cmdlet di PowerShell seguenti:
 
 - Creare un nuovo criterio di accesso esterno: [New-CsExternalAccessPolicy](/powershell/module/skype/new-csexternalaccesspolicy)
 
-- Personalizzare un criterio di accesso esterno esistente (incluso il criterio ["Globale"): Set-CsExternalAccessPolicy](/powershell/module/skype/set-csexternalaccesspolicy)
+- Personalizzare un criterio di accesso esterno esistente (incluso il criterio "Globale ["): Set-CsExternalAccessPolicy](/powershell/module/skype/set-csexternalaccesspolicy)
 
 > [!NOTE]
 > Non è possibile modificare i criteri predefiniti della sottoscrizione seguenti: 'FederationAndPICDefault', 'FederationOnly', 'NoFederationAndPIC'. Il criterio 'FederationAndPICDefault' è stato assegnato a tutti gli utenti per impostazione predefinita, tuttavia ai nuovi utenti viene assegnato il criterio "Globale" per impostazione predefinita. Se è necessario modificare le impostazioni dei criteri per gli utenti a cui sono assegnati questi criteri predefiniti per l'abbonamento, assegnare a questi utenti criteri diversi con le impostazioni corrette.
@@ -93,7 +93,7 @@ Poiché tutti i criteri di accesso esterno a livello di utente sono impostati su
 
 - Assegnare un criterio a un set di utenti: [New-CsBatchPolicyAssignmentOperation](/powershell/module/skype/new-csbatchpolicyassignmentoperation)
 
-Dopo aver impostato correttamente i criteri di accesso esterno a livello utente per gli utenti del tenant, è possibile abilitare l'impostazione a livello di tenant ( ) per il tenant usando `AllowTeamsConsumer` il cmdlet seguente:
+Dopo aver impostato correttamente i criteri di accesso esterno a livello utente per gli utenti del tenant, è possibile abilitare l'impostazione a livello di tenant (`AllowTeamsConsumer`) per il tenant usando il cmdlet seguente:
 
 - Impostare le impostazioni di configurazione della federazione per il tenant: [Set-CsTenantFederationConfiguration](/powershell/module/skype/set-cstenantfederationconfiguration)
 
@@ -103,7 +103,7 @@ L'app Genitori è disabilitata per impostazione predefinita, quindi i proprietar
 
 In qualsiasi momento, l'app può essere disabilitata a livello di tenant usando Consenti e blocca [le app](manage-apps.md#allow-and-block-apps) nell'Teams di amministrazione. Se l'app è disabilitata a livello di tenant, verrà bloccata per tutti gli utenti, anche se sono abilitate le autorizzazioni a livello di utente.
 
-L'app può essere disabilitata anche a livello di utente usando Gestisci criteri di [autorizzazione app in Microsoft Teams](teams-app-permission-policies.md).
+L'app può essere disabilitata anche a livello di utente usando [Gestisci criteri di autorizzazione dell'app in Microsoft Teams](teams-app-permission-policies.md).
 
 ## <a name="more-information"></a>Altre informazioni
 

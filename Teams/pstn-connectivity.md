@@ -24,18 +24,18 @@ search.appverid: MET150
 description: Altre informazioni sulle opzioni Teams chiamate (connettività PSTN) e sulle decisioni da prendere per l'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 49c836687d7652c18b5932bd662d8ee935638d8a
-ms.sourcegitcommit: d2c76fe7705acf6e53f7673861671b1b018813dd
+ms.openlocfilehash: b82404e23a2443efb06582664a206a6a43cad770
+ms.sourcegitcommit: 1129841e68e927fe7cc31de3ad63a3e9247253cd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62015276"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "62363242"
 ---
 # <a name="pstn-connectivity-options"></a>Opzioni di connettività PSTN
 
-Microsoft offre funzionalità COMPLETE Private Branch Exchange (PBX) per l'organizzazione tramite Teams Telefono. Tuttavia, per consentire agli utenti di effettuare chiamate all'esterno dell'organizzazione, è necessario connettersi Teams Telefono rete PSTN (Public Switched Telephone Network).
+Microsoft offre funzionalità Complete Private Branch Exchange (PBX) per l'organizzazione tramite Teams Telefono. Tuttavia, per consentire agli utenti di effettuare chiamate all'esterno dell'organizzazione, è necessario connettersi Teams Telefono rete PSTN (Public Switched Telephone Network).
 
-Questo articolo è in particolare sulle opzioni di connettività PSTN. Per altre informazioni sulle soluzioni vocali Microsoft, inclusi i dettagli sulle Teams Telefono, vedere Pianificare [la Teams vocale.](cloud-voice-landing-page.md)
+Questo articolo è in particolare sulle opzioni di connettività PSTN. Per altre informazioni sulle soluzioni vocali Microsoft, inclusi i dettagli sulle funzionalità Teams Telefono, vedere Pianificare la soluzione vocale [Teams utente](cloud-voice-landing-page.md).
 
 Per connettersi Teams Telefono alla rete PSTN, è possibile scegliere tra le opzioni seguenti:
 
@@ -43,12 +43,12 @@ Per connettersi Teams Telefono alla rete PSTN, è possibile scegliere tra le opz
 
 - [**Connessione con operatore**](#teams-phone-with-operator-connect). Con Connessione con operatore, se il gestore esistente è un partecipante al programma Microsoft Connessione con operatore, può gestire le chiamate PSTN e i session border controller (SBC). 
 
-- [**Routing diretto**](#teams-phone-with-direct-routing), che consente di usare il proprio gestore PSTN collegando i controller di bordo della sessione (SBC) a Teams Telefono.
+- [**Routing diretto**](#teams-phone-with-direct-routing), che consente di usare il proprio gestore PSTN collegando i controller di bordo sessione (SBC) a Teams Telefono.
 
 
 È anche possibile scegliere una combinazione di opzioni, che consente di progettare una soluzione per un ambiente complesso o di gestire una migrazione in più passaggi.
 
-Tenere presente che l'opzione o le opzioni selezionate influiscono sulla configurazione di Teams Telefono caratteristiche. Per altre informazioni, vedere [Considerazioni sulla configurazione](#configuration-considerations) più avanti in questo articolo.
+Tenere presente che l'opzione o le opzioni selezionate influiscono sulla configurazione di Teams Telefono funzionalità. Per altre informazioni, vedere [Considerazioni sulla configurazione](#configuration-considerations) più avanti in questo articolo.
 
 
 ## <a name="teams-phone-with-calling-plan"></a>Servizi telefonici con piano per chiamate 
@@ -65,13 +65,13 @@ Se si risponde sì a quanto segue, Teams Telefono piano per chiamate è la soluz
 
 Con questa opzione: 
 
-- Puoi ottenere Teams Telefono piani per chiamate nazionali o internazionali aggiunti che consentono di chiamare verso telefoni di tutto il mondo (a seconda del livello di servizio concesso in licenza).
+- Puoi ottenere Teams Telefono piani per chiamate nazionali o internazionali che consentono di chiamare verso telefoni di tutto il mondo (a seconda del livello di servizio concesso in licenza).
 
-- Non è necessario eseguire la distribuzione o la manutenzione di una distribuzione locale perché il piano per chiamate funziona &mdash; Microsoft 365.
+- Non è necessario eseguire la distribuzione o la&mdash; manutenzione di una distribuzione locale, perché il piano per chiamate funziona Microsoft 365.
 
 - Nota: se necessario, è possibile scegliere di connettere un controller SBC (Session Border Controller) supportato tramite Routing diretto per garantire l'interoperabilità con sistemi IPX di terze parti, dispositivi analogici e altre apparecchiature di telefonia di terze parti supportate da SBC.
 
-Questa opzione richiede una connessione ininterrotta a Microsoft 365.
+Questa opzione richiede una connessione ininterrotta Microsoft 365.
 
 Per altre informazioni sul Piano chiamate, vedere gli articoli seguenti:
 
@@ -83,18 +83,18 @@ Per altre informazioni sul Piano chiamate, vedere gli articoli seguenti:
 
 ## <a name="teams-phone-with-operator-connect"></a>Teams Telefono con Connessione con operatore
 
-Con Connessione con operatore, attualmente in anteprima pubblica, se il gestore esistente è un partecipante al programma Microsoft Connessione con operatore, può gestire il servizio per portare le chiamate PSTN in Teams. Il gestore gestisce i servizi di chiamata PSTN e i session border controller (SBC), consentendo di risparmiare sull'acquisto e la gestione dell'hardware.
+Con Connessione con operatore, se il gestore esistente è un partecipante al programma Microsoft Connessione con operatore, può gestire il servizio per portare le chiamate PSTN in Teams. Il gestore gestisce i servizi di chiamata PSTN e i session border controller (SBC), consentendo di risparmiare sull'acquisto e la gestione dell'hardware.
 
 Connessione con operatore potrebbe essere la soluzione giusta per l'organizzazione se:
 
 - Microsoft Calling Plan non è disponibile nella tua posizione geografica.
-- Il gestore preferito è un partecipante al programma Microsoft Connessione con operatore microsoft.
+- Il gestore preferito è un partecipante al programma Microsoft Connessione con operatore.
 - Si vuole trovare un nuovo gestore per abilitare le chiamate in Teams.
 
-Per informazioni sui vantaggi e i requisiti di Connessione con operatore e per un elenco dei corrieri che partecipano a questo programma, vedere Pianificare Connessione con operatore [.](operator-connect-plan.md) Per informazioni su come configurare i Connessione con operatore, vedere [Configurare Connessione con operatore](operator-connect-configure.md).
+Per informazioni sui vantaggi e i requisiti Connessione con operatore e per un elenco dei corrieri che partecipano a questo programma, vedere Pianificare [Connessione con operatore.](operator-connect-plan.md) Per informazioni su come configurare i Connessione con operatore, vedere [Configurare Connessione con operatore](operator-connect-configure.md).
 
 
-## <a name="teams-phone-with-direct-routing"></a>Teams Telefono routing diretto
+## <a name="teams-phone-with-direct-routing"></a>Teams Telefono con routing diretto
 
 Questa opzione consente Teams Telefono alla rete di telefonia tramite Routing diretto, come illustrato nel diagramma seguente: 
 
@@ -115,7 +115,7 @@ Con questa opzione:
 
 - È possibile scegliere di configurare e gestire questa opzione oppure può essere configurata e gestita dal gestore o dal partner (chiedere se il gestore o il partner fornisce questa opzione).
 
-- È possibile configurare l'interoperabilità tra le apparecchiature di telefonia, ad esempio un PBX di terze parti e dispositivi &mdash; analogici &mdash; e Teams Telefono.
+- È possibile configurare l'interoperabilità tra le&mdash; apparecchiature di telefonia come PBX di terze parti e dispositivi analogici&mdash; e Teams Telefono.
 
 Questa opzione richiede quanto segue:
 
@@ -124,7 +124,7 @@ Questa opzione richiede quanto segue:
 - Distribuzione e gestione di un SBC supportato.
 
 - Contratto con un gestore di terze parti.
-  (A meno che non venga distribuita come opzione per fornire la connessione a PBX di terze parti, dispositivi analogici o altre apparecchiature di telefonia per gli utenti che si Teams Telefono piano chiamate.
+  (A meno che non venga distribuita come opzione per fornire la connessione a PBX di terze parti, dispositivi analogici o altre apparecchiature di telefonia per gli utenti che si Teams Telefono con piano chiamate.
 
 Per altre informazioni sul routing diretto, vedere gli articoli seguenti:
 
@@ -138,9 +138,9 @@ Per altre informazioni sul routing diretto, vedere gli articoli seguenti:
 
 ## <a name="configuration-considerations"></a>Considerazioni sulla configurazione
 
-La Teams Telefono caratteristiche sono le stesse indipendentemente dall'opzione di connettività PSTN scelta. Ad esempio, le impostazioni di chiamata senza risposta e inoltro, trasferimento di chiamata, musica personalizzata in attesa, parcheggio di chiamata, linea condivisa e app vocali sono tutte disponibili. Per un elenco completo delle Teams Telefono, vedere Ecco cosa si ottiene con [Teams Telefono.](here-s-what-you-get-with-phone-system.md)
+La Teams Telefono caratteristiche sono le stesse indipendentemente dall'opzione di connettività PSTN scelta. Ad esempio, le impostazioni di chiamata senza risposta e inoltro, trasferimento di chiamata, musica personalizzata in attesa, parcheggio di chiamata, linea condivisa e app vocali sono tutte disponibili. Per un elenco completo delle Teams Telefono, vedere Ecco cosa si [ottiene con Teams Telefono](here-s-what-you-get-with-phone-system.md).
 
-Esistono tuttavia alcune differenze di funzionalità che influiscono sulla modalità di configurazione di alcune Teams Telefono funzionalità. Ad esempio, Il routing diretto richiede altri passaggi per configurare il routing delle chiamate. Come altro esempio, Il routing diretto fornisce il routing in base alla posizione (LBR, Location-Based-Routing), in modo che sia possibile limitare il bypass a pedaggio in determinate posizioni geografiche in cui non è consentito. 
+Esistono tuttavia alcune differenze di funzionalità che influiscono sulla configurazione di alcune Teams Telefono funzionalità. Ad esempio, Il routing diretto richiede altri passaggi per configurare il routing delle chiamate. Come altro esempio, Il routing diretto fornisce il routing in base alla posizione (LBR, Location-Based-Routing), in modo che sia possibile limitare il bypass a pedaggio in determinate posizioni geografiche in cui non è consentito. 
 
 La tabella seguente evidenzia le differenze di configurazione principali. Le sezioni che seguono la tabella forniscono collegamenti ad altre informazioni e dettagli.
 
@@ -148,7 +148,7 @@ La tabella seguente evidenzia le differenze di configurazione principali. Le sez
 | :------------| :-------| :-------| :-------| :-------| 
 | Piani di chiamata | -Microsoft funge da gestore PSTN.<br>-Non è necessario acquistare o gestire SBC.| Ottenuto tramite Microsoft.| -Gestito da Microsoft. <br> -Admin configura i piani di chiamata degli utenti per la traduzione dei numeri. | -Abilitato da Microsoft. <br> -Admin registra gli indirizzi. <br> -Chiamate dinamiche supportate. |
 | Connessione con operatore | -Carrier gestisce la connettività PSTN e gli SBC. <br> -Non è necessario acquistare o gestire SBC. | -Ottenuto tramite corriere. <br> - Numeri associati agli indirizzi di emergenza gestiti dal gestore.  | -Gestito dal gestore. <br>-Admin configura i piani di chiamata degli utenti per la traduzione dei numeri. | -Abilitato dal gestore. <br> -Admin registra gli indirizzi. <br> -Chiamate dinamiche supportate. |
-| Routing diretto | -Richiede SBC certificato acquistato da un fornitore di terze parti.<br>-Connessione SBC per Teams Telefono.<br> -Usare il gestore PSTN esistente. | Ottenuto tramite corriere. | -Richiede una configurazione aggiuntiva da parte dell'amministratore.<br>-Admin configura i dial plan trunk per la traduzione dei numeri. <br>-LBR disponibile per limitare il bypass a pedaggio. | -Richiede una configurazione aggiuntiva da parte dell'amministratore. <br>-Indirizzi registrati non supportati. <br>-Chiamate dinamiche supportate ma richiedono una configurazione aggiuntiva. |
+| Routing diretto | -Richiede SBC certificato acquistato da un fornitore di terze parti.<br>-Connessione il tuo SBC per Teams Telefono.<br> -Usare il gestore PSTN esistente. | Ottenuto tramite corriere. | -Richiede una configurazione aggiuntiva da parte dell'amministratore.<br>-Admin configura i dial plan trunk per la traduzione dei numeri. <br>-LBR disponibile per limitare il bypass a pedaggio. | -Richiede una configurazione aggiuntiva da parte dell'amministratore. <br>-Indirizzi registrati non supportati. <br>-Chiamate dinamiche supportate ma richiedono una configurazione aggiuntiva. |
 |||||
 
 
@@ -164,11 +164,11 @@ Dovrai decidere:
 
 La modalità di acquisizione e gestione dei numeri di telefono varia a seconda dell'opzione di connettività PSTN.
 
-- Per informazioni sulla gestione dei numeri di telefono per il piano chiamate, vedere [Gestire i numeri di telefono per l'organizzazione.](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+- Per informazioni sulla gestione dei numeri di telefono per il piano chiamate, vedere [Gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
-- Per informazioni sulla gestione dei numeri di telefono con Connessione con operatore, vedere Configurare i numeri [di telefono con Connessione con operatore](operator-connect-configure.md#set-up-phone-numbers).
+- Per informazioni sulla gestione dei numeri di telefono con Connessione con operatore, vedere [Configurare i numeri di telefono con](operator-connect-configure.md#set-up-phone-numbers) Connessione con operatore.
 
-- Per informazioni sulla gestione dei numeri di telefono per Il routing diretto, vedere Configurare il numero di telefono [e abilitare la segreteria telefonica e la segreteria telefonica aziendale.](direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice-and-voicemail-online)
+- Per informazioni sulla gestione dei numeri di telefono per Il routing diretto, vedere Configurare il numero di telefono [e abilitare la segreteria telefonica e la segreteria telefonica aziendale](direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice-and-voicemail-online).
 
 
 ### <a name="call-routing-and-dial-plans"></a>Routing delle chiamate e dial plan
@@ -177,9 +177,9 @@ La modalità di configurazione del routing delle chiamate varia a seconda dell'o
 
 - Per i piani per chiamate, la maggior parte del routing delle chiamate è gestita dall'infrastruttura del piano per chiamate Microsoft. È possibile configurare i piani di chiamata degli utenti ai fini della traduzione dei numeri per l'autorizzazione delle chiamate e il routing delle chiamate. Per altre informazioni, vedere [Che cosa sono i dial plan?](what-are-dial-plans.md).
 
-- Ad Connessione con operatore, la maggior parte del routing delle chiamate è gestita dal gestore.  È possibile configurare i piani di chiamata degli utenti ai fini della traduzione dei numeri per l'autorizzazione delle chiamate e il routing delle chiamate. Per altre informazioni, vedere [Che cosa sono i dial plan?](what-are-dial-plans.md).
+- Per Connessione con operatore, la maggior parte del routing delle chiamate è gestita dal gestore.  È possibile configurare i piani di chiamata degli utenti ai fini della traduzione dei numeri per l'autorizzazione delle chiamate e il routing delle chiamate. Per altre informazioni, vedere [Che cosa sono i dial plan?](what-are-dial-plans.md).
 
-- Per il routing diretto, è necessario configurare il routing delle chiamate specificando le route vocali e assegnando criteri di routing vocale agli utenti. È possibile configurare i dial plan per la traduzione dei numeri a livello di trunk per garantire l'interoperabilità con i session border controller (SBC). Per altre informazioni, vedere [Configurare il routing vocale per Il routing diretto,](direct-routing-voice-routing.md)Gestire i criteri di routing [vocale](manage-voice-routing-policies.md) e Tradurre i numeri [di telefono.](direct-routing-translate-numbers.md) 
+- Per il routing diretto, è necessario configurare il routing delle chiamate specificando le route vocali e assegnando criteri di routing vocale agli utenti. È possibile configurare i dial plan per la traduzione dei numeri a livello di trunk per garantire l'interoperabilità con i session border controller (SBC). Per altre informazioni, vedere [Configurare il routing vocale per il routing diretto](direct-routing-voice-routing.md), [Gestire i criteri di routing vocale](manage-voice-routing-policies.md) e [Tradurre i numeri di telefono](direct-routing-translate-numbers.md). 
 
 
 ### <a name="location-based-routing-for-direct-routing"></a>Location-Based routing diretto
@@ -190,7 +190,7 @@ In alcuni paesi e aree geografiche, è illegale ignorare il gestore PSTN per rid
 - [Configurare le impostazioni di rete per l'instradamento basato sulla posizione](location-based-routing-configure-network-settings.md)
 - [Abilitare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-enable.md)
 - [Case study contoso: Location-Based Routing](voice-case-study-location-based-routing.md)<br>
-  Descrive come una multinazionale fittizia, Contoso, ha implementato Location-Based routing per l'organizzazione.
+  Descrive in che modo una multinazionale fittizia, Contoso, ha implementato Location-Based routing per l'organizzazione.
 
 
 ### <a name="emergency-calling"></a>Chiamate di emergenza
