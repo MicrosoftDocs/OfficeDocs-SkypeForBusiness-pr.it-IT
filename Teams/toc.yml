@@ -1429,6 +1429,8 @@ items:
             href: devices/Teams-Android-devices-user-interface.md
           - name: Procedure consigliate per l'autenticazione di dispositivi Android
             href: devices/authentication-best-practices-for-android-devices.md
+          - name: Configurare la risposta automatica per i dispositivi Android di Teams
+            href: set-up-auto-answer-on-teams-android.md
           - name: Soluzioni e dispositivi per sala riunioni
             href: /skypeforbusiness/certification/devices-meeting-rooms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
           - name: Dispositivi certificati Teams
