@@ -1,27 +1,22 @@
 ---
 title: Utenti Visualizza stato PIN
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.UserViewPin
+  - ms.lync.lscp.UserViewPin
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: e4b8cf70-b8c3-499d-b0f9-7019d9b6aae4
-description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: b9a0ff1ac7b4c4b5e9f21204d84a6b9930659c5a
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60852290"
+description: 'Per saperne di più: fare clic sul collegamento all''attività che si desidera eseguire.'
 ---
+
 # <a name="users-view-pin-status"></a>Utenti: visualizzare lo stato del PIN
  
 Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.

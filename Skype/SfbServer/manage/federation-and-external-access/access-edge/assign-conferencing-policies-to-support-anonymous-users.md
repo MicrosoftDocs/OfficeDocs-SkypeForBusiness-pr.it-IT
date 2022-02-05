@@ -1,31 +1,26 @@
 ---
 title: Assegnare criteri di conferenza per supportare gli utenti anonimi
-ms.reviewer: ''
-ms:assetid: 662de022-1111-40f7-bad4-f2b686f30973
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg521007(v=OCS.15)
-ms:contentKeyID: 48184333
+ms.reviewer: null
+'ms:assetid': 662de022-1111-40f7-bad4-f2b686f30973
+'ms:mtpsurl': 'https://technet.microsoft.com/en-us/library/Gg521007(v=OCS.15)'
+'ms:contentKeyID': 48184333
 mtps_version: v=OCS.15
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 description: È possibile decidere chi può invitare utenti anonimi configurando un criterio di conferenza che li supporti e applicando tale criterio a utenti specifici.
-ms.openlocfilehash: 25762861b6086750213553bca9bfd02dab01187d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60848499"
 ---
+
 # <a name="assign-conferencing-policies-to-support-anonymous-users-in-skype-for-business-server"></a>Assegnare criteri di conferenza per supportare gli utenti anonimi in Skype for Business Server 
 
 
-Per impostazione predefinita, a tutti gli utenti è proibito invitare utenti anonimi a partecipare a una riunione. È possibile decidere chi può invitare utenti anonimi configurando un criterio di conferenza che li supporti e applicando tale criterio a utenti specifici. Per informazioni dettagliate su come configurare criteri di conferenza per supportare gli utenti anonimi, vedere [Create conferencing policies in Skype for Business Server](../../conferencing/create-policies.md) e Managing federation and external access to [Skype for Business Server](../managing-federation-and-external-access.md).
+Per impostazione predefinita, a tutti gli utenti è proibito invitare utenti anonimi a partecipare a una riunione. È possibile decidere chi può invitare utenti anonimi configurando un criterio di conferenza che li supporti e applicando tale criterio a utenti specifici. Per informazioni dettagliate su come configurare criteri di conferenza per supportare gli utenti anonimi, vedere [Create conferencing policies in Skype for Business Server](../../conferencing/create-policies.md) e [Managing federation and external access to Skype for Business Server](../managing-federation-and-external-access.md).
 
 Utilizzare la procedura in questa sezione per applicare criteri di conferenza già creati a uno o più utenti o gruppi di utenti.
 
@@ -53,10 +48,10 @@ Utilizzare la procedura in questa sezione per applicare criteri di conferenza gi
 
 7.  Nella tabella dei risultati di ricerca fare clic sull'account utente, fare clic su **Modifica** e quindi fare clic su **Mostra dettagli**.
 
-8.  In **Modifica Skype for Business Server utente** **in** Criteri conferenza selezionare il criterio utente con la configurazione di accesso utente anonimo che si desidera applicare all'utente.  
+8.  In **Modifica Skype for Business Server utente** **in Criteri** conferenza selezionare il criterio utente con la configurazione di accesso utente anonimo che si desidera applicare all'utente.  
 
     > [!NOTE]  
-    > Le <STRONG> &lt; impostazioni &gt; </STRONG> automatiche applicano le impostazioni di installazione predefinite del server e vengono applicate automaticamente dal server.
+    > Le <STRONG>&lt;impostazioni&gt;</STRONG> automatiche applicano le impostazioni di installazione predefinite del server e vengono applicate automaticamente dal server.
 
 
 Per consentire agli utenti di invitare utenti anonimi alle conferenze, è inoltre necessario abilitare il supporto per gli utenti anonimi nell'organizzazione. Per informazioni dettagliate, vedere [Configure policies to control public user access in Skype for Business Server](../external-access-policies/configure-policies-to-control-public-user-access.md).

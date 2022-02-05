@@ -1,30 +1,25 @@
 ---
 title: Preparare la foresta corrente
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.dep.DeployMainForestPrep
+  - ms.lync.dep.DeployMainForestPrep
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 11f5e359-97eb-45f7-a730-9ddbbaa40b83
-description: Per preparare la foresta di Servizi di dominio Active Directory, è necessario estendere correttamente lo schema, come descritto nell'argomento Running Schema Preparation, e verificare che lo schema sia stato replicato.
-ms.openlocfilehash: 24e6d91767f1109bd1049667860b0050678e70f5
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60838908"
+description: 'Per preparare la foresta di Servizi di dominio Active Directory, è necessario estendere correttamente lo schema, come descritto nell''argomento Running Schema Preparation, e verificare che lo schema sia stato replicato.'
 ---
+
 # <a name="prepare-current-forest"></a>Preparare la foresta corrente
 
-Per preparare la foresta di Servizi di dominio Active Directory, è necessario estendere correttamente lo schema, come descritto nell'argomento [Running Schema Preparation](/previous-versions/office/lync-server-2013/lync-server-2013-preparing-the-active-directory-schema)e verificare che lo schema sia stato replicato.
+Per preparare la foresta di Servizi di dominio Active Directory, è necessario estendere correttamente lo schema, come descritto nell'argomento [Running Schema Preparation](/previous-versions/office/lync-server-2013/lync-server-2013-preparing-the-active-directory-schema), e verificare che lo schema sia stato replicato.
 
 Dopo aver completato queste operazioni prerequisite, è possibile iniziare con il **Passaggio 3: Preparazione della foresta corrente**. Per preparare la foresta, eseguire l'accesso a un computer nella radice della foresta come membri del gruppo Domain Admins in tale radice o come membri del gruppo Enterprise Admins per la foresta che si sta preparando.
 
@@ -37,7 +32,7 @@ Dopo aver completato queste operazioni prerequisite, è possibile iniziare con i
 
 3. Nella pagina **Esecuzione comandi in corso** ricercare **Stato attività: Operazione completata** e quindi fare clic su **Visualizza registro**. Verificare che non vi siano errori. Esaminare gli avvisi per stabilire se siano previsti e normali per l'infrastruttura di cui si dispone.
 
-4. Nella colonna **Azione** del registro espandere **Forest Prep,** cercare un risultato di esecuzione alla fine di ogni attività per verificare che la preparazione della foresta sia stata completata correttamente, chiudere il registro e quindi fare clic **\<Success\>** su **Fine.**
+4. Nella colonna **Azione** del registro espandere Preparazione **foresta,****\<Success\>** cercare un risultato di esecuzione alla fine di ogni attività per verificare che la preparazione della foresta sia stata completata correttamente, chiudere il registro e quindi fare clic su **Fine**.
 
 5. Attendere il completamento della replica di Servizi di dominio Active Directory o forzare la replica in tutti i controller di dominio elencati nello snap-in Siti e servizi di **Active Directory** per il controller di dominio radice della foresta, prima di eseguire la preparazione del dominio. Forzare la replica tra i controller di dominio in tutti i siti di Active Directory perché la replica all'interno dei siti venga eseguita entro pochi minuti.
 

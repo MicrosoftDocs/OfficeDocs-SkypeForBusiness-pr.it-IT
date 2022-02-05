@@ -1,36 +1,32 @@
 ---
 title: Crea il tuo programma campioni per Microsoft Teams
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.date: 10/30/2018
 audience: Admin
 ms.topic: conceptual
 ms.service: msteams
 ms.custom:
-- Adopt
-- seo-marvel-apr2020
+  - Adopt
+  - seo-marvel-apr2020
 ms.collection:
-- Teams_ITAdmin_Adopt
-- M365-collaboration
+  - Teams_ITAdmin_Adopt
+  - M365-collaboration
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
-- NOCSH
-description: Scopri come formare un team di campioni per promuovere l'adozione Teams promuovere la consapevolezza, l'adozione e l'istruzione nell'organizzazione.
+  - NOCSH
+description: 'Scopri come formare un team di campioni per promuovere Teams''adozione promuovendo la consapevolezza, l''adozione e l''istruzione nell''organizzazione.'
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 989525f627a4d8c6ef18f1e17cab9446d85a0a88
-ms.sourcegitcommit: 9ef6e36eeba7db70971f4eb1a45f0ded394b1fe6
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62190887"
+  - Microsoft Teams
 ---
+
+
 # <a name="create-your-champions-program-for-microsoft-teams"></a>Crea il tuo programma campioni per Microsoft Teams
 
-I campioni sono essenziali per aumentare la consapevolezza, l'adozione e l'istruzione nell'organizzazione. Un campione è una persona, principalmente motivata dall'aiutare gli altri, che è interessato alle nuove tecnologie (in particolare Teams) e ad aiutare altri dipendenti a usarla in linea con le procedure consigliate. A seconda delle dimensioni dell'organizzazione, questa può essere una parte formale del ruolo della persona, ma spesso i dipendenti si assalino da soli a causa della motivazione principale per aiutare gli altri.
+I campioni sono essenziali per aumentare la consapevolezza, l'adozione e l'istruzione nell'organizzazione. Un campione è una persona, principalmente motivata dall'aiutare gli altri, che è interessato alle nuove tecnologie (in particolare Teams) e aiutare altri dipendenti a usarla in linea con le procedure consigliate. A seconda delle dimensioni dell'organizzazione, questa può essere una parte formale del ruolo della persona, ma spesso i dipendenti si assalino da soli a causa della motivazione principale per aiutare gli altri.
 
 I campioni si adattano alla pianificazione generale del lancio in vari modi, come illustrato di seguito.
 
@@ -45,7 +41,7 @@ I campioni devono:
 
 Usa la [nostra Guida al programma Champions](https://aka.ms/M365Champions) per creare questo programma nella tua organizzazione. Le procedure consigliate per questa community sono:
 
-- Partecipa al [programma Champions.](https://aka.ms/O365Champions) Assicurarsi che almeno i leader del programma Champions (e potenzialmente tutti i campioni della società) siano membri del programma. Questa chiamata gratuita della community mensile fornirà informazioni preziose per eseguire il proprio programma e ottenere il massimo da Teams e altri servizi Microsoft 365 o Office 365. I materiali del programma possono essere riutilizzati in un programma interno.
+- Partecipa al [programma Champions](https://aka.ms/O365Champions). Assicurarsi che almeno i leader del programma Champions (e potenzialmente tutti i campioni della società) siano membri del programma. Questa chiamata gratuita della community mensile fornirà informazioni preziose per eseguire il proprio programma e ottenere il massimo da Teams e altri servizi Microsoft 365 o Office 365. I materiali del programma possono essere riutilizzati in un programma interno.
 
 - Usa il team campione del lavoro in team: i tuoi campioni devono usare il team che hai creato per loro per tutte le comunicazioni del programma, il feedback e per trovare risorse.  In questo modo diventeranno sempre più familiari con il prodotto e i suoi vantaggi.
 

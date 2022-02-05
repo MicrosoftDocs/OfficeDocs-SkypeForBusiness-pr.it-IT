@@ -1,28 +1,23 @@
 ---
 title: User Impostazioni Service for Call Quality Dashboard (CQD)
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: eafeb54a-2574-415b-b991-a0ff0470d8c3
-description: "Riepilogo: informazioni sul servizio di Impostazioni utente, che fa parte dell'API repository per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 81abbc31a82fc696a5bcb45faf4120b71fc26f74
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60856583"
+description: 'Riepilogo: informazioni sul servizio di Impostazioni utente, che fa parte dell''API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
 ---
+
 # <a name="user-settings-service-for-call-quality-dashboard-cqd"></a>User Impostazioni Service for Call Quality Dashboard (CQD)
  
-**Riepilogo:** Informazioni sul servizio di Impostazioni utente, che fa parte dell'API repository per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sul servizio di Impostazioni utente, che fa parte dell'API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
 Il servizio di Impostazioni utente fa parte dell'API repository per il dashboard qualità delle chiamate.
   

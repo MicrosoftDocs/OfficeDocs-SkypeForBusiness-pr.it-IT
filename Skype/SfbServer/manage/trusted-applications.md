@@ -1,26 +1,21 @@
 ---
 title: Gestire le applicazioni attendibili
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 description: Un'applicazione attendibile è un'applicazione basata su Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK considerato attendibile da Skype for Business Server.
-ms.openlocfilehash: d328eab38e44915998d05f3c16c2b1e4e2f1dc33
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60857473"
 ---
+
 # <a name="manage-trusted-applications-in-skype-for-business-server"></a>Gestire le applicazioni attendibili in Skype for Business Server
 
-*Un'applicazione attendibile* è un'applicazione basata su Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK considerato attendibile da Skype for Business Server. Per informazioni dettagliate sulle applicazioni UCMA, vedere "Unified Communications Managed API 3.0 Core SDK Documentation" all'indirizzo https://go.microsoft.com/fwlink/p/?linkId=210320 .
+*Un'applicazione attendibile* è un'applicazione basata su Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK considerato attendibile da Skype for Business Server. Per informazioni dettagliate sulle applicazioni UCMA, vedere "Unified Communications Managed API 3.0 Core SDK Documentation" all'indirizzo https://go.microsoft.com/fwlink/p/?linkId=210320.
 
 Per pubblicare, abilitare o disabilitare correttamente una topologia quando si aggiunge o si rimuove un ruolo del server, è necessario aver eseguito l'accesso come utente membro dei gruppi RTCUniversalServerAdmins e Domain Admins. 
 
@@ -30,13 +25,13 @@ Utilizzare questo articolo per informazioni su come configurare un nuovo server 
 
 1.  Accedere al computer in cui è installato Generatore di topologie come membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins.
 
-2.  Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server** e quindi fare clic Skype for Business Server Generatore **di topologie.**
+2.  Start Topology Builder: click **Start**, click **All Programs**, click **Skype for Business Server**, and then click **Skype for Business Server Topology Builder**.
 
 3.  Selezionare **Scarica topologia dalla distribuzione esistente** e quindi fare clic su **OK**.
 
-4.  Nella finestra **di dialogo Salva topologia** con nome fare clic sul file del Generatore di topologie che si desidera utilizzare e quindi fare clic su **Salva.**
+4.  Nella finestra **di dialogo Salva topologia** con nome fare clic sul file di Generatore di topologie che si desidera utilizzare e quindi fare clic su **Salva**.
 
-5.  Nel riquadro sinistro fare clic con il pulsante destro del mouse su **Server applicazioni attendibili** e quindi scegliere Nuovo pool di applicazioni **attendibili.**
+5.  Nel riquadro sinistro fare clic con il pulsante destro del mouse su **Server applicazioni attendibili** e quindi scegliere **Nuovo pool di applicazioni attendibili**.
 
 6.  Immettere il valore di **FQDN pool** per il pool di applicazioni attendibili, specificare se sarà un pool a server singolo o a più server e quindi fare clic su **Avanti**.
 
@@ -44,7 +39,7 @@ Utilizzare questo articolo per informazioni su come configurare un nuovo server 
 
 8.  Fare clic su **Fine**.
 
-9.  Selezionare il nodo principale **Skype for Business Server** e quindi scegliere Pubblica topologia dal **menu** **Azioni.**
+9.  Selezionare il nodo principale **Skype for Business Server** e quindi scegliere Pubblica topologia **dal menu** **Azioni**.
     
     Il **pool di** applicazioni attendibili dovrebbe essere stato creato correttamente e associato al pool Front End corretto.
 
@@ -70,14 +65,14 @@ Nel Pannello Skype for Business Server di controllo è possibile visualizzare il
 
 2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.
 
-3.  Sulla barra di spostamento sinistra fare clic **su Topologia** e quindi su **Applicazione attendibile.**
+3.  Sulla barra di spostamento sinistra fare clic **su Topologia** e quindi su **Applicazione attendibile**.
 
 4.  Nella pagina **Applicazione attendibile** fare clic sull'intestazione di una colonna per ordinare le applicazioni, se necessario.
 
 
 ## <a name="view-trusted-application-information"></a>Visualizzare informazioni sull'applicazione attendibile
 
-È possibile visualizzare informazioni sulle applicazioni attendibili utilizzando Windows PowerShell e il cmdlet **Get-CsTrustedApplication.** Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+È possibile visualizzare informazioni sulle applicazioni attendibili utilizzando Windows PowerShell e il cmdlet **Get-CsTrustedApplication**. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
 
 
 ### <a name="to-view-trusted-applications"></a>Per visualizzare le applicazioni affidabili

@@ -1,33 +1,28 @@
 ---
 title: Requisiti ambientali dei server perimetrali in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 audience: ITPro
 ms.topic: conceptual
 manager: serdars
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Hybrid
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Hybrid
+ms.custom: null
 ms.assetid: 67435465-b4d0-4e38-8e03-56a60b844a34
 description: 'Riepilogo: informazioni sui requisiti ambientali per il server perimetrale in Skype for Business Server.'
-ms.openlocfilehash: ce545b6d8242db34a716d386fdca9149c0296a8c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60830810"
 ---
+
 # <a name="edge-server-environmental-requirements-in-skype-for-business-server"></a>Requisiti ambientali dei server perimetrali in Skype for Business Server
  
 **Riepilogo:** Informazioni sui requisiti ambientali per il server perimetrale in Skype for Business Server.
   
-È necessario eseguire molte attività di pianificazione e preparazione al di fuori dell'Skype for Business Server server perimetrale stesso. In questo articolo verranno esaminati i preparativi da eseguire nell'ambiente dell'organizzazione, come indicato nell'elenco seguente:
+È necessario eseguire molte attività di pianificazione e preparazione all'esterno dell Skype for Business Server server perimetrale stesso. In questo articolo verranno esaminati i preparativi da eseguire nell'ambiente dell'organizzazione, come indicato nell'elenco seguente:
   
 - [Pianificazione della topologia](edge-environmental-requirements.md#TopoPlan)
     
@@ -40,11 +35,11 @@ ms.locfileid: "60830810"
 ## <a name="topology-planning"></a>Pianificazione della topologia
 <a name="TopoPlan"> </a>
 
-Skype for Business Server Le topologie di server perimetrali sono in grado di utilizzare:
+Skype for Business Server topologie di server perimetrali sono in grado di utilizzare:
   
 - Indirizzi IP pubblici instradabili.
     
-- Indirizzi IP privati non instradabili, se viene utilizzato NAT **(Symmetric** Network Address Translation).
+- Indirizzi IP privati non instradabili, se viene utilizzato NAT ( **Symmetric** Network Address Translation).
     
 > [!TIP]
 > Il server perimetrale può essere configurato per l'utilizzo di un singolo indirizzo IP con porte distinte per ogni servizio oppure può utilizzare indirizzi IP distinti per ogni servizio, ma utilizzare la stessa porta predefinita (che per impostazione predefinita sarà TCP 443). Di seguito sono disponibili ulteriori informazioni nella sezione Requisiti degli indirizzi IP. 
@@ -87,11 +82,11 @@ Per aiutarti a sceglierne una, è riportata la tabella seguente che fornisce un 
 |Topologia perimetrale consolidata con scalabilità verticale con indirizzi IP pubblici (bilanciamento del carico DNS)  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì&sup1;  <br/> |
 |Topologia perimetrale consolidata con scalabilità orizzontale con servizi di bilanciamento del carico hardware  <br/> |Sì  <br/> |No (un record A DNS per IP virtuale)  <br/> |Sì  <br/> |Sì  <br/> |
    
-&sup1; Exchange Il failover degli utenti remoti di messaggistica unificata tramite il bilanciamento del carico DNS richiede Exchange 2013 o versione più recente.
+&sup1; Exchange il failover degli utenti remoti di messaggistica unificata utilizzando il bilanciamento del carico DNS Exchange 2013 o versione più recente.
   
 ### <a name="ip-address-requirements"></a>Requisiti degli indirizzi IP
 
-A livello fondamentale, tre servizi necessitano di indirizzi IP; Servizio Access Edge, servizio Web Conferencing Edge e servizio A/V Edge. È possibile utilizzare tre indirizzi IP, uno per ognuno dei servizi, oppure è possibile utilizzarlo e scegliere di inserire ogni servizio su una porta diversa (per ulteriori informazioni, vedere la sezione Pianificazione di porte e [firewall).](edge-environmental-requirements.md#PortFirewallPlan) Per un singolo ambiente perimetrale consolidato, questo è praticamente tutto.
+A livello fondamentale, tre servizi necessitano di indirizzi IP; Servizio Access Edge, servizio Web Conferencing Edge e servizio A/V Edge. È possibile utilizzare tre indirizzi IP, uno per ognuno dei servizi, oppure è possibile utilizzarlo e scegliere di inserire ogni servizio su una porta diversa (per ulteriori informazioni, vedere la sezione Pianificazione di porte e [firewall](edge-environmental-requirements.md#PortFirewallPlan) ). Per un singolo ambiente perimetrale consolidato, questo è praticamente tutto.
   
 > [!NOTE]
 > Come indicato in precedenza, puoi scegliere di avere un indirizzo IP per tutti e tre i servizi ed eseguirli su porte diverse. Ma per essere chiari, non è consigliabile. Se i clienti non possono accedere alle porte alternative che verranno utilizzate in questo scenario, non potranno accedere alla funzionalità completa dell'ambiente Edge. 
@@ -118,13 +113,13 @@ Può essere un po' più complicato con topologie consolidate con scalabilità im
    
 Diamo un'occhiata ad alcuni aspetti aggiuntivi a cui pensare durante la pianificazione.
   
-- **Disponibilità elevata:** se è necessaria una disponibilità elevata nella distribuzione, è consigliabile distribuire almeno due server perimetrali in un pool. Vale la pena notare che un singolo pool di server perimetrali supporterà fino a 12 server perimetrali (anche se Generatore di topologie consentirà di sommare fino a 20, che non è testato o supportato, quindi si consiglia di non farlo). Se sono necessari più di 12 server perimetrali, è consigliabile creare ulteriori pool di server perimetrali.
+- **Disponibilità elevata**: se è necessaria una disponibilità elevata nella distribuzione, è consigliabile distribuire almeno due server perimetrali in un pool. Vale la pena notare che un singolo pool di server perimetrali supporterà fino a 12 server perimetrali (anche se Generatore di topologie consentirà di sommare fino a 20, che non è testato o supportato, quindi si consiglia di non farlo). Se sono necessari più di 12 server perimetrali, è consigliabile creare ulteriori pool di server perimetrali.
     
-- **Bilanciamento del carico hardware:** è consigliabile il bilanciamento del carico DNS per la maggior parte degli scenari. Naturalmente è supportato anche il bilanciamento del carico hardware, ma in particolare è necessario per un singolo scenario rispetto al bilanciamento del carico DNS:
+- **Bilanciamento del carico hardware**: è consigliabile il bilanciamento del carico DNS per la maggior parte degli scenari. Naturalmente è supportato anche il bilanciamento del carico hardware, ma in particolare è necessario per un singolo scenario rispetto al bilanciamento del carico DNS:
     
   - Accesso esterno alla Exchange 2007 o Exchange 2010 (senza SP) Messaggistica unificata.
     
-- **Bilanciamento del carico DNS:** per la messaggistica unificata, Exchange 2010 SP1 e versioni più nuove possono essere supportate dal bilanciamento del carico DNS. Si noti che se è necessario utilizzare il bilanciamento del carico DNS per una versione precedente di Exchange, funzionerà, ma tutto il traffico per questo verrà eseguito sul primo server del pool e, se non è disponibile, il traffico avrà esito negativo.
+- **Bilanciamento del carico DNS**: per la messaggistica unificata, Exchange 2010 SP1 e versioni più nuove possono essere supportate dal bilanciamento del carico DNS. Si noti che se è necessario utilizzare il bilanciamento del carico DNS per una versione precedente di Exchange, funzionerà, ma tutto il traffico per questa operazione verrà eseguito sul primo server del pool e, se non è disponibile, il traffico avrà esito negativo.
     
     Il bilanciamento del carico DNS è consigliato anche se si sta federatendo con le aziende che usano:
 - Skype for Business Server 2015:
@@ -139,7 +134,7 @@ Diamo un'occhiata ad alcuni aspetti aggiuntivi a cui pensare durante la pianific
 ## <a name="dns-planning"></a>Pianificazione DNS
 <a name="DNSPlan"> </a>
 
-Quando si tratta di Skype for Business Server server perimetrale, è fondamentale prepararsi correttamente per DNS. Con i record a destra, la distribuzione sarà molto più semplice. Si spera di aver scelto una topologia nella sezione precedente, poiché verrà fornita una panoramica e quindi vengono elencate alcune tabelle che delineano i record DNS per tali scenari. Sarà inoltre disponibile una pianificazione avanzata del DNS dei [server](../../plan-your-deployment/network-requirements/advanced-edge-server-dns.md) perimetrali per Skype for Business Server per una lettura più approfondita, se necessario.
+Quando si tratta di Skype for Business Server server perimetrale, è fondamentale prepararsi correttamente per DNS. Con i record a destra, la distribuzione sarà molto più semplice. Si spera di aver scelto una topologia nella sezione precedente, poiché verrà fornita una panoramica e quindi vengono elencate alcune tabelle che delineano i record DNS per tali scenari. Sarà inoltre disponibile una pianificazione [avanzata del DNS dei server](../../plan-your-deployment/network-requirements/advanced-edge-server-dns.md) perimetrali per Skype for Business Server per una lettura più approfondita, se necessario.
   
 ### <a name="dns-records-for-single-consolidated-edge-server-scenarios"></a>Record DNS per scenari di server perimetrali consolidati singoli
 
@@ -175,11 +170,11 @@ Le conferenze Web e gli indirizzi IP pubblici A/V Edge sono indirizzi IP aggiunt
 > [!TIP]
 >Di seguito sono disponibili altre configurazioni possibili:
   
-- È possibile utilizzare un solo indirizzo IP sulla scheda di rete esterna. Questa operazione non è consigliata perché sarà necessario distinguere i servizi di internet usando porte diverse (operazione che è possibile eseguire in Skype for Business Server), ma esistono alcuni firewall che potrebbero bloccare le porte alternative. Per ulteriori [informazioni, vedere](edge-environmental-requirements.md#PortFirewallPlan) la sezione Pianificazione di porte e firewall.
+- È possibile utilizzare un solo indirizzo IP sulla scheda di rete esterna. Non è consigliabile, perché sarà necessario distinguere i servizi di internet usando porte diverse (operazione che è possibile eseguire in Skype for Business Server), ma esistono alcuni firewall che potrebbero bloccare le porte alternative. Per ulteriori [informazioni, vedere](edge-environmental-requirements.md#PortFirewallPlan) la sezione Pianificazione di porte e firewall.
     
 - È possibile disporre di tre schede di rete esterne anziché di una e assegnare uno degli IP del servizio a ciascuna di queste schede. Perché eseguire questa operazione? Se si verifica un problema, i servizi vengono separati e ciò rende più semplice la risoluzione dei problemi e potrebbe consentire agli altri servizi di continuare a funzionare durante la risoluzione di un problema.
     
-|**Posizione**|**Type**|**Porta**|**FQDN o record DNS**|**Indirizzo IP o FQDN**|2^31 (2 miliardi di termini)|
+|**Posizione**|**Type**|**Porta**|**FQDN o record DNS**|**Indirizzo IP o FQDN**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |DNS esterno  <br/> |Record  <br/> |ND  <br/> |sip.contoso.com  <br/> |**public:** 131.107.155.10 <br/> **private:** 10.45.16.10 <br/> |Interfaccia esterna per il servizio Access Edge. Ne sarà necessario uno per ogni dominio SIP con Skype for Business utenti.  <br/> |
 |DNS esterno  <br/> |Record  <br/> |ND  <br/> |webcon.contoso.com  <br/> |**public:** 131.107.155.20 <br/> **private:** 10.45.16.20 <br/> |Interfaccia esterna per il servizio Web Conferencing Edge.  <br/> |
@@ -249,11 +244,11 @@ Questi saranno i record DNS necessari per un server perimetrale che usa IP pubbl
     
 Di seguito sono disponibili altre configurazioni possibili:
   
-- È possibile utilizzare un solo indirizzo IP sulla scheda di rete esterna. Questa operazione non è consigliata perché sarà necessario distinguere i servizi di internet usando porte diverse (operazione che è possibile eseguire in Skype for Business Server), ma esistono alcuni firewall che potrebbero bloccare le porte alternative. Per ulteriori [informazioni, vedere](edge-environmental-requirements.md#PortFirewallPlan) la sezione Pianificazione di porte e firewall.
+- È possibile utilizzare un solo indirizzo IP sulla scheda di rete esterna. Non è consigliabile, perché sarà necessario distinguere i servizi di internet usando porte diverse (operazione che è possibile eseguire in Skype for Business Server), ma esistono alcuni firewall che potrebbero bloccare le porte alternative. Per ulteriori [informazioni, vedere](edge-environmental-requirements.md#PortFirewallPlan) la sezione Pianificazione di porte e firewall.
     
 - È possibile disporre di tre schede di rete esterne anziché di una e assegnare uno degli IP del servizio a ciascuna di queste schede. Perché eseguire questa operazione? Se si verifica un problema, i servizi vengono separati e ciò rende più semplice la risoluzione dei problemi e potrebbe consentire agli altri servizi di continuare a funzionare durante la risoluzione di un problema.
     
-|**Posizione**|**Type**|**Porta**|**FQDN o record DNS**|**Indirizzo IP o FQDN**|2^31 (2 miliardi di termini)|
+|**Posizione**|**Type**|**Porta**|**FQDN o record DNS**|**Indirizzo IP o FQDN**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |DNS esterno  <br/> |Record  <br/> |ND  <br/> |sip.contoso.com  <br/> |**public:** 131.107.155.10 e 131.107.155.11 <br/> **private:** 10.45.16.10 e 10.45.16.11 <br/> |Interfaccia esterna per il servizio Access Edge. Ne sarà necessario uno per ogni dominio SIP con Skype for Business utenti.  <br/> |
 |DNS esterno  <br/> |Record  <br/> |ND  <br/> |webcon.contoso.com  <br/> |**public:** 131.107.155.20 e 131.107.155.21 <br/> **private:** 10.45.16.20 e 10.45.16.21 <br/> |Interfaccia esterna per il servizio Web Conferencing Edge.  <br/> |
@@ -264,24 +259,24 @@ Di seguito sono disponibili altre configurazioni possibili:
    
 ### <a name="dns-record-for-federation-all-scenarios"></a>Record DNS per la federazione (tutti gli scenari)
 
-|**Posizione**|**Type**|**Porta**|**FQDN**|**Record host FQDN**|2^31 (2 miliardi di termini)|
+|**Posizione**|**Type**|**Porta**|**FQDN**|**Record host FQDN**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|DNS esterno  <br/> |SRV  <br/> |5061  <br/> |_sipfederationtls_tcp.contoso.com  <br/> |sip.contoso.com  <br/> |Interfaccia esterna SIP Access Edge necessaria per l'individuazione DNS automatica. Utilizzato dagli altri potenziali partner di federazione. È anche noto come "Consenti domini SIP". È necessario uno di questi per ogni dominio SIP con Skype for Business utenti.  <br/><br/> **Nota:** Sarà necessario questo record SRV per dispositivi mobili e il centro di sgomento delle notifiche push. <br/> |
+|DNS esterno  <br/> |SRV  <br/> |5061  <br/> |_sipfederationtls_tcp.contoso.com  <br/> |sip.contoso.com  <br/> |Interfaccia esterna SIP Access Edge necessaria per l'individuazione DNS automatica. Utilizzato dagli altri potenziali partner di federazione. È anche noto come "Consenti domini SIP". Sarà necessario uno di questi per ogni dominio SIP con Skype for Business utenti.  <br/><br/> **Nota:** Sarà necessario questo record SRV per dispositivi mobili e il centro di sgomento delle notifiche push. <br/> |
    
 ### <a name="dns-records-for-extensible-messaging-and-presence-protocol"></a>Record DNS per protocollo di messaggistica e presenza estensibile
 
-|**Posizione**|**Type**|**Porta**|**FQDN**|**Indirizzo IP o record host FQDN**|2^31 (2 miliardi di termini)|
+|**Posizione**|**Type**|**Porta**|**FQDN**|**Indirizzo IP o record host FQDN**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|DNS esterno  <br/> |SRV  <br/> |5269  <br/> |_xmpp-server._tcp.contoso.com  <br/> |xmpp.contoso.com  <br/> |Interfaccia proxy XMPP nel servizio Access Edge o nel pool di server perimetrali. È necessario ripetere questa procedura in base alle esigenze per tutti i domini SIP interni con Skype for Business Server utenti abilitati, in cui il contatto con i contatti XMPP è consentito tramite:  <br/> • criteri globali  <br/> • criteri sito in cui l'utente è abilitato  <br/> • criteri utente applicati all'Skype for Business Server abilitato  <br/> Un criterio XMPP consentito deve essere configurato anche nel criterio degli utenti federati XMPP.  <br/> |
+|DNS esterno  <br/> |SRV  <br/> |5269  <br/> |_xmpp-server._tcp.contoso.com  <br/> |xmpp.contoso.com  <br/> |Interfaccia proxy XMPP nel servizio Access Edge o nel pool di server perimetrali. È necessario ripetere questa operazione in base alle esigenze per tutti i domini SIP interni con Skype for Business Server utenti abilitati, dove il contatto con i contatti XMPP è consentito tramite:  <br/> • criteri globali  <br/> • criteri sito in cui l'utente è abilitato  <br/> • criteri utente applicati all'Skype for Business Server abilitato  <br/> Un criterio XMPP consentito deve essere configurato anche nel criterio degli utenti federati XMPP.  <br/> |
 |DNS esterno  <br/> |SRV  <br/> |A  <br/> |xmpp.contoso.com  <br/> |Indirizzo IP del servizio Access Edge nel server perimetrale o nel pool di server perimetrali che ospita il servizio proxy XMPP  <br/> |Questo punta al servizio Access Edge nel server perimetrale o nel pool di server perimetrali che ospita il servizio proxy XMPP. In genere il record SRV creato farà riferimento a questo record host (A o AAAA).  <br/> |
    
 > [!NOTE]
-> I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../SfBServer2019/migration/migrating-xmpp-federation.md)
+> I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation](../../../SfBServer2019/migration/migrating-xmpp-federation.md) .
 
 ## <a name="certificate-planning"></a>Pianificazione dei certificati
 <a name="CertPlan"> </a>
 
-Skype for Business Server certificati vengono utilizzati per comunicazioni protette e crittografate sia tra server che da server a client. Come previsto, i certificati dovranno avere record DNS per i server corrispondenti a qualsiasi nome soggetto (SN) e nome soggetto alternativo (SAN) nei certificati. A questo punto, nella fase di pianificazione, sarà necessario verificare di avere i nomi fqdn (FQDN) necessari registrati nel DNS per le voci SN e SAN per i certificati.
+Skype for Business Server vengono utilizzati certificati per comunicazioni protette e crittografate sia tra server che da server a client. Come previsto, i certificati dovranno avere record DNS per i server corrispondenti a qualsiasi nome soggetto (SN) e nome soggetto alternativo (SAN) nei certificati. A questo punto, nella fase di pianificazione, sarà necessario verificare di avere i nomi fqdn (FQDN) necessari registrati nel DNS per le voci SN e SAN per i certificati.
   
 Parleremo separatamente delle esigenze dei certificati esterni e interni e poi vedremo una tabella che fornisce i requisiti per entrambi.
   
@@ -291,7 +286,7 @@ Come minimo, il certificato assegnato alle interfacce dei server perimetrali est
   
 Quando sarà necessario inviare una richiesta a un'autorità di certificazione per questo certificato pubblico e come procedere? Esistono due modi per eseguire questa operazione:
   
-- È possibile eseguire l'installazione di Skype for Business Server e quindi la distribuzione del server perimetrale. La Skype for Business Server guidata di distribuzione avrà un passaggio per generare una richiesta di certificato, che sarà quindi possibile inviare alla CA scelta.
+- È possibile eseguire l'installazione di Skype for Business Server e quindi la distribuzione del server perimetrale. La Skype for Business Server guidata di distribuzione avrà un passaggio per generare una richiesta di certificato, che sarà quindi possibile inviare all'autorità di certificazione scelta.
     
 - Puoi anche usare i Windows PowerShell per generare questa richiesta, se questo è più in linea con le tue esigenze aziendali o la strategia di distribuzione.
     
@@ -316,33 +311,33 @@ Per l'interfaccia del server perimetrale interno, è possibile utilizzare un cer
 
 Abbiamo una tabella qui per aiutarti con le tue richieste. Le voci FQDN qui sono solo per domini di esempio. Dovrai effettuare richieste in base ai tuoi domini privati e pubblici, ma ecco una guida a ciò che abbiamo usato:
   
-- contoso <span></span> .com: FQDN pubblico
+- contoso.com<span></span>: FQDN pubblico
     
-- fabrikam <span></span> .com: secondo FQDN pubblico (aggiunto come dimostrazione di cosa richiedere se si dispone di più domini SIP)
+- fabrikam.com<span></span>: secondo FQDN pubblico (aggiunto come dimostrazione di cosa richiedere se si dispone di più domini SIP)
     
-- Contoso <span></span> .net: dominio interno
+- Contoso.net<span></span>: dominio interno
     
 #### <a name="edge-certificate-table"></a>Tabella Dei certificati perimetrali
 
 Indipendentemente dal fatto che si stia eseguendo un singolo server perimetrale o un pool di server perimetrali, questo è ciò che ti serve per il certificato:
   
-|**Componente**|**Nome soggetto (SN)**|**Nomi alternativi soggetto (SAN)/ordine**|2^31 (2 miliardi di termini)|
+|**Componente**|**Nome soggetto (SN)**|**Nomi alternativi soggetto (SAN)/ordine**|**Note**|
 |:-----|:-----|:-----|:-----|
 |Server perimetrale esterno  <br/> |sip.contoso.com  <br/> |sip.contoso.com  <br/> webcon.contoso.com  <br/> sip.fabrikam.com  <br/> |Si tratta del certificato che è necessario richiedere a un'autorità di certificazione pubblica. Sarà necessario assegnarla alle interfacce perimetrali esterne per gli elementi seguenti:  <br/> • Access Edge  <br/> • Web Conferencing Edge  <br/> • Autenticazione audio/video  <br/> <br/>La buona notizia è che le reti SAN vengono aggiunte automaticamente alla richiesta di certificato e quindi il certificato dopo l'invio della richiesta, in base a quanto definito per questa distribuzione in Generatore di topologie. Sarà necessario aggiungere solo voci SAN per eventuali altri domini SIP o altre voci che è necessario supportare. Perché viene sip.contoso.com replicato in questa istanza? Anche questo avviene automaticamente ed è necessario per il corretto funzionamento delle cose.  <br/><br/> **Nota:** Questo certificato può essere utilizzato anche per la connettività di messaggistica istantanea pubblica. Non è necessario eseguire operazioni diverse, ma nelle versioni precedenti di questa documentazione era elencata come tabella separata e ora non lo è. <br/> |
 |Server perimetrale interno  <br/> |sfbedge.contoso.com  <br/> |ND  <br/> |È possibile ottenere questo certificato da un'autorità di certificazione pubblica o interna. Sarà necessario contenere l'EKU del server (Utilizzo chiavi avanzato) e assegnarlo all'interfaccia perimetrale interna.  <br/> |
    
 Se è necessario un certificato per XMPP (Extensible Messaging and Presence Protocol), l'aspetto sarà identico alle voci precedenti della tabella External Edge, ma avrà le due voci SAN aggiuntive seguenti:
   
-- xmpp. <span></span> contoso <span></span> .com
+- xmpp.<span></span> contoso.com<span></span>
     
-- \*.contoso <span></span> .com
+- \*.contoso.com<span></span>
     
 Ricorda che attualmente XMPP è supportato solo in Skype for Business Server per Google Talk, se vuoi o devi usarlo per qualsiasi altra cosa, devi confermare tale funzionalità con il fornitore di terze parti coinvolto.
   
 ## <a name="port-and-firewall-planning"></a>Pianificazione di porte e firewall
 <a name="PortFirewallPlan"> </a>
 
-Ottenere la pianificazione giusta per le porte e i firewall per le distribuzioni di Skype for Business Server Edge Server può risparmiare giorni o settimane di risoluzione dei problemi e stress. Di conseguenza, verranno elencate un paio di tabelle che indicheranno l'utilizzo del protocollo e le porte necessarie per aprire, in ingresso e in uscita, sia per gli scenari NAT che per gli ip pubblici. Saranno inoltre disponibili tabelle separate per gli scenari con bilanciamento del carico hardware (HLB, Hardware Load Balanced Scenarios) e alcune ulteriori indicazioni su tale scenario. Per altre informazioni, abbiamo anche alcuni scenari [di server](scenarios.md) perimetrali in Skype for Business Server è possibile consultare i problemi di distribuzione specifici.
+Ottenere la pianificazione giusta per porte e firewall per le distribuzioni Skype for Business Server Edge Server può risparmiare giorni o settimane di risoluzione dei problemi e stress. Di conseguenza, verranno elencate un paio di tabelle che indicheranno l'utilizzo del protocollo e le porte necessarie per aprire, in ingresso e in uscita, sia per gli scenari NAT che per gli ip pubblici. Saranno inoltre disponibili tabelle separate per gli scenari con bilanciamento del carico hardware (HLB, Hardware Load Balanced Scenarios) e alcune ulteriori indicazioni su tale scenario. Per altre informazioni, abbiamo anche alcuni scenari [di server](scenarios.md) perimetrali in Skype for Business Server è possibile consultare i problemi di distribuzione specifici.
   
 ### <a name="general-protocol-usage"></a>Utilizzo generale del protocollo
 
@@ -351,13 +346,13 @@ Prima di esaminare le tabelle di riepilogo per i firewall esterni ed interni, pr
 |**Trasporto audio/video**|**Usage**|
 |:-----|:-----|
 |UDP  <br/> |Protocollo del livello di trasporto preferito per audio e video.  <br/> |
-|TCP  <br/> |Protocollo del livello di trasporto di fallback per audio e video.  <br/> Protocollo del livello di trasporto necessario per la condivisione delle applicazioni Skype for Business Server, Lync Server 2013 e Lync Server 2010.  <br/> Protocollo del livello di trasporto necessario per il trasferimento di file Skype for Business Server, Lync Server 2013 e Lync Server 2010.  <br/> |
+|TCP  <br/> |Protocollo del livello di trasporto di fallback per audio e video.  <br/> Protocollo del livello di trasporto necessario per la condivisione delle applicazioni Skype for Business Server, Lync Server 2013 e Lync Server 2010.  <br/> Protocollo del livello di trasporto necessario per il trasferimento di file a Skype for Business Server, Lync Server 2013 e Lync Server 2010.  <br/> |
    
 ### <a name="external-port-firewall-summary-table"></a>Tabella di riepilogo del firewall delle porte esterne
 
-L'indirizzo IP di origine e l'indirizzo IP di destinazione conterranno informazioni per gli utenti che utilizzano indirizzi IP privati con NAT, nonché per gli utenti che utilizzano indirizzi IP pubblici. Verranno trattate tutte le permutazioni negli scenari [di server perimetrali nella Skype for Business Server.](scenarios.md)
+L'indirizzo IP di origine e l'indirizzo IP di destinazione conterranno informazioni per gli utenti che utilizzano indirizzi IP privati con NAT, nonché per gli utenti che utilizzano indirizzi IP pubblici. Verranno trattate tutte le permutazioni negli scenari [del server perimetrale nella Skype for Business Server](scenarios.md).
   
-|**Ruolo o protocollo**|**TCP o UDP**|**Porta di destinazione o intervallo di porte**|**Indirizzo IP di origine**|**Indirizzo IP di destinazione**|2^31 (2 miliardi di termini)|
+|**Ruolo o protocollo**|**TCP o UDP**|**Porta di destinazione o intervallo di porte**|**Indirizzo IP di origine**|**Indirizzo IP di destinazione**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |XMPP  <br/> Non supportato in Skype for Business Server 2019 |TCP  <br/> |5269  <br/> |Qualsiasi  <br/> |Servizio proxy XMPP (condivide un indirizzo IP con il servizio Access Edge  <br/> |Il servizio proxy XMPP accetta il traffico proveniente dai contatti XMPP nelle federazioni XMPP definite.  <br/> |
 |Access/HTTP  <br/> |TCP  <br/> |80  <br/> |**IP privato con NAT:** Servizio Edge Server Edge <br/> **IP pubblico:** Indirizzo IP pubblico del servizio Edge Server Access Edge <br/> |Qualsiasi  <br/> |Revoca del certificato e controllo e recupero CRL.  <br/> |
@@ -376,9 +371,9 @@ L'indirizzo IP di origine e l'indirizzo IP di destinazione conterranno informazi
    
 ### <a name="internal-port-firewall-summary-table"></a>Tabella di riepilogo del firewall delle porte interne
 
-|**Protocollo**|**TCP o UDP**|**Porta**|**Indirizzo IP di origine**|**Indirizzo IP di destinazione**|2^31 (2 miliardi di termini)|
+|**Protocollo**|**TCP o UDP**|**Porta**|**Indirizzo IP di origine**|**Indirizzo IP di destinazione**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|XMPP/MTLS  <br/> |TCP  <br/> |23456  <br/> |Uno degli elementi seguenti che eseguono il servizio Gateway XMPP:  <br/> • Front End Server  <br/> • Pool Front End  <br/> |Interfaccia interna del server perimetrale  <br/> |Traffico XMPP in uscita dal servizio Gateway XMPP in esecuzione nel Front End Server o nel pool Front End.  <br/> **Nota:** I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../SfBServer2019/migration/migrating-xmpp-federation.md)|
+|XMPP/MTLS  <br/> |TCP  <br/> |23456  <br/> |Uno degli elementi seguenti che eseguono il servizio Gateway XMPP:  <br/> • Front End Server  <br/> • Pool Front End  <br/> |Interfaccia interna del server perimetrale  <br/> |Traffico XMPP in uscita dal servizio Gateway XMPP in esecuzione nel Front End Server o nel pool Front End.  <br/> **Nota:** I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation](../../../SfBServer2019/migration/migrating-xmpp-federation.md) .|
 |SIP/MTLS  <br/> |TCP  <br/> |5061  <br/> |Qualsiasi:  <br/> • Director  <br/> • Pool di server Director  <br/> • Front End Server  <br/> • Pool Front End  <br/> |Interfaccia interna del server perimetrale  <br/> |Traffico SIP in uscita dal server Director, dal pool di server Director, dal Front End Server o dal pool Front End all'interfaccia interna del server perimetrale.  <br/> |
 |SIP/MTLS  <br/> |TCP  <br/> |5061  <br/> |Interfaccia interna del server perimetrale  <br/> |Qualsiasi:  <br/> • Director  <br/> • Pool di server Director  <br/> • Front End Server  <br/> • Pool Front End  <br/> |Traffico SIP in ingresso verso il server Director, il pool di server Director, il Front End Server o il pool Front End dall'interfaccia interna del server perimetrale.  <br/> |
 |PSOM/MTLS  <br/> |TCP  <br/> |8057  <br/> |Qualsiasi:  <br/> • Front End Server  <br/> • Ogni Front End Server  <br/>  nel pool Front End <br/> |Interfaccia interna del server perimetrale  <br/> |Traffico di conferenze Web dal Front End Server o da ogni Front End Server (se si dispone di un pool Front End) all'interfaccia interna del server perimetrale.  <br/> |
@@ -386,9 +381,9 @@ L'indirizzo IP di origine e l'indirizzo IP di destinazione conterranno informazi
 |STUN/MSTURN  <br/> |UDP  <br/> |3478  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Percorso preferito per il trasferimento di supporti A/V tra gli utenti interni ed esterni e il Survivable Branch Appliance o il Survivable Branch Server.  <br/> |
 |STUN/MSTURN  <br/> |TCP  <br/> |443  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Percorso di fallback per il trasferimento di supporti A/V tra gli utenti interni ed esterni e il Survivable Branch Appliance o il Survivable Branch Server, se la comunicazione UDP non funziona. TCP viene quindi utilizzato per i trasferimenti di file e la condivisione desktop.  <br/> |
 |HTTPS  <br/> |TCP  <br/> |4443  <br/> |Qualsiasi:  <br/> • Front End Server che contiene l'archivio di gestione centrale  <br/> • Pool Front End che contiene l'archivio di gestione centrale  <br/> |Interfaccia interna del server perimetrale  <br/> |Replica delle modifiche dall'archivio di gestione centrale al server perimetrale.  <br/> |
-|MTLS  <br/> |TCP  <br/> |50001  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Controller del servizio di registrazione centralizzato che utilizza i cmdlet di Skype for Business Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando clsController (ClsController.exe) o i comandi dell'agente (ClsAgent.exe) e la raccolta dei registri.  <br/> |
-|MTLS  <br/> |TCP  <br/> |50002  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Controller del servizio di registrazione centralizzato che utilizza i cmdlet di Skype for Business Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando clsController (ClsController.exe) o i comandi dell'agente (ClsAgent.exe) e la raccolta dei registri.  <br/> |
-|MTLS  <br/> |TCP  <br/> |50003  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Controller del servizio di registrazione centralizzato che utilizza i cmdlet di Skype for Business Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando clsController (ClsController.exe) o i comandi dell'agente (ClsAgent.exe) e la raccolta dei registri.  <br/> |
+|MTLS  <br/> |TCP  <br/> |50001  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Controller del servizio di registrazione centralizzato che utilizza i cmdlet di Skype for Business Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando clsController (ClsController.exe) o i comandi agente (ClsAgent.exe) e la raccolta dei registri.  <br/> |
+|MTLS  <br/> |TCP  <br/> |50002  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Controller del servizio di registrazione centralizzato che utilizza i cmdlet di Skype for Business Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando clsController (ClsController.exe) o i comandi agente (ClsAgent.exe) e la raccolta dei registri.  <br/> |
+|MTLS  <br/> |TCP  <br/> |50003  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Controller del servizio di registrazione centralizzato che utilizza i cmdlet di Skype for Business Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando clsController (ClsController.exe) o i comandi agente (ClsAgent.exe) e la raccolta dei registri.  <br/> |
    
 ### <a name="hardware-load-balancers-for-edge-port-tables"></a>Servizi di bilanciamento del carico hardware per le tabelle delle porte perimetrali
 
@@ -396,9 +391,9 @@ Stiamo offrendo ai dispositivi di bilanciamento del carico hardware (HLB) e alle
   
 #### <a name="external-port-firewall-summary-table"></a>Tabella di riepilogo del firewall delle porte esterne
 
-L'indirizzo IP di origine e l'indirizzo IP di destinazione conterranno informazioni per gli utenti che utilizzano indirizzi IP privati con NAT, nonché per gli utenti che utilizzano indirizzi IP pubblici. Verranno trattate tutte le permutazioni negli scenari [di server perimetrali nella Skype for Business Server.](scenarios.md)
+L'indirizzo IP di origine e l'indirizzo IP di destinazione conterranno informazioni per gli utenti che utilizzano indirizzi IP privati con NAT, nonché per gli utenti che utilizzano indirizzi IP pubblici. Verranno trattate tutte le permutazioni negli scenari [del server perimetrale nella Skype for Business Server](scenarios.md).
   
-|**Ruolo o protocollo**|**TCP o UDP**|**Porta di destinazione o intervallo di porte**|**Indirizzo IP di origine**|**Indirizzo IP di destinazione**|2^31 (2 miliardi di termini)|
+|**Ruolo o protocollo**|**TCP o UDP**|**Porta di destinazione o intervallo di porte**|**Indirizzo IP di origine**|**Indirizzo IP di destinazione**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Access/HTTP  <br/> |TCP  <br/> |80  <br/> |Indirizzo IP pubblico del servizio Edge Server Access Edge  <br/> |Qualsiasi  <br/> |Revoca del certificato e controllo e recupero CRL.  <br/> |
 |Access/DNS  <br/> |TCP  <br/> |53  <br/> |Indirizzo IP pubblico del servizio Edge Server Access Edge  <br/> |Qualsiasi  <br/> |Query DNS su TCP.  <br/> |
@@ -412,20 +407,20 @@ L'indirizzo IP di origine e l'indirizzo IP di destinazione conterranno informazi
    
 #### <a name="internal-port-firewall-summary-table"></a>Tabella di riepilogo del firewall delle porte interne
 
-|**Protocollo**|**TCP o UDP**|**Porta**|**Indirizzo IP di origine**|**Indirizzo IP di destinazione**|2^31 (2 miliardi di termini)|
+|**Protocollo**|**TCP o UDP**|**Porta**|**Indirizzo IP di origine**|**Indirizzo IP di destinazione**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|XMPP/MTLS  <br/> |TCP  <br/> |23456  <br/> |Uno degli elementi seguenti che eseguono il servizio Gateway XMPP:  <br/> • Front End Server  <br/> • Indirizzo VIP del pool Front End che esegue il servizio Gateway XMPP  <br/> |Interfaccia interna del server perimetrale  <br/> |Traffico XMPP in uscita dal servizio Gateway XMPP in esecuzione nel Front End Server o nel pool Front End.  <br/><br/> **Nota:** I gateway xMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../SfBServer2019/migration/migrating-xmpp-federation.md) |
+|XMPP/MTLS  <br/> |TCP  <br/> |23456  <br/> |Uno degli elementi seguenti che eseguono il servizio Gateway XMPP:  <br/> • Front End Server  <br/> • Indirizzo VIP del pool Front End che esegue il servizio Gateway XMPP  <br/> |Interfaccia interna del server perimetrale  <br/> |Traffico XMPP in uscita dal servizio Gateway XMPP in esecuzione nel Front End Server o nel pool Front End.  <br/><br/> **Nota:** I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation](../../../SfBServer2019/migration/migrating-xmpp-federation.md) . |
 |HTTPS  <br/> |TCP  <br/> |4443  <br/> |Qualsiasi:  <br/> • Front End Server che contiene l'archivio di gestione centrale  <br/> • Pool Front End che contiene l'archivio di gestione centrale  <br/> |Interfaccia interna del server perimetrale  <br/> |Replica delle modifiche dall'archivio di gestione centrale al server perimetrale.  <br/> |
 |PSOM/MTLS  <br/> |TCP  <br/> |8057  <br/> |Qualsiasi:  <br/> • Front End Server  <br/> • Ogni Front End Server nel pool Front End  <br/> |Interfaccia interna del server perimetrale  <br/> |Traffico di conferenze Web dal Front End Server o da ogni Front End Server (se si dispone di un pool Front End) all'interfaccia interna del server perimetrale.  <br/> |
 |STUN/MSTURN  <br/> |UDP  <br/> |3478  <br/> |Qualsiasi:  <br/> • Front End Server  <br/> • Ogni Front End Server nel pool Front End  <br/> |Interfaccia interna del server perimetrale  <br/> |Percorso preferito per il trasferimento di supporti A/V tra gli utenti interni ed esterni e il Survivable Branch Appliance o il Survivable Branch Server.  <br/> |
 |STUN/MSTURN  <br/> |TCP  <br/> |443  <br/> |Qualsiasi:  <br/> • Front End Server  <br/> • Ogni Front End Server nel pool  <br/> |Interfaccia interna del server perimetrale  <br/> |Percorso di fallback per il trasferimento di supporti A/V tra gli utenti interni ed esterni e il Survivable Branch Appliance o il Survivable Branch Server, se la comunicazione UDP non funziona. TCP viene quindi utilizzato per i trasferimenti di file e la condivisione desktop.  <br/> |
-|MTLS  <br/> |TCP  <br/> |50001  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Controller del servizio di registrazione centralizzato che utilizza i cmdlet di Skype for Business Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando clsController (ClsController.exe) o i comandi dell'agente (ClsAgent.exe) e la raccolta dei registri.  <br/> |
-|MTLS  <br/> |TCP  <br/> |50002  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Controller del servizio di registrazione centralizzato che utilizza i cmdlet di Skype for Business Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando clsController (ClsController.exe) o i comandi dell'agente (ClsAgent.exe) e la raccolta dei registri.  <br/> |
-|MTLS  <br/> |TCP  <br/> |50003  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Controller del servizio di registrazione centralizzato che utilizza i cmdlet di Skype for Business Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando clsController (ClsController.exe) o i comandi dell'agente (ClsAgent.exe) e la raccolta dei registri.  <br/> |
+|MTLS  <br/> |TCP  <br/> |50001  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Controller del servizio di registrazione centralizzato tramite i cmdlet di Skype for Business Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando (ClsController.exe) o dell'agente (ClsAgent.exe) e la raccolta dei registri.  <br/> |
+|MTLS  <br/> |TCP  <br/> |50002  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Controller del servizio di registrazione centralizzato tramite i cmdlet di Skype for Business Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando (ClsController.exe) o dell'agente (ClsAgent.exe) e la raccolta dei registri.  <br/> |
+|MTLS  <br/> |TCP  <br/> |50003  <br/> |Qualsiasi  <br/> |Interfaccia interna del server perimetrale  <br/> |Controller del servizio di registrazione centralizzato tramite i cmdlet di Skype for Business Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando (ClsController.exe) o dell'agente (ClsAgent.exe) e la raccolta dei registri.  <br/> |
    
 #### <a name="external-interface-virtual-ips"></a>Interfaccia esterna IP virtuali
 
-|**Ruolo o protocollo**|**TCP o UDP**|**Porta di destinazione o intervallo di porte**|**Indirizzo IP di origine**|**Indirizzo IP di destinazione**|2^31 (2 miliardi di termini)|
+|**Ruolo o protocollo**|**TCP o UDP**|**Porta di destinazione o intervallo di porte**|**Indirizzo IP di origine**|**Indirizzo IP di destinazione**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |XMPP  <br/> Non supportato in Skype for Businesss Server 2019 |TCP  <br/> |5269  <br/> |Qualsiasi  <br/> |Servizio proxy XMPP (condivide un indirizzo IP con il servizio Access Edge)  <br/> |Il servizio proxy XMPP accetta il traffico proveniente dai contatti XMPP nelle federazioni XMPP definite.  <br/> |
 |XMPP  <br/>Non supportato in Skype for Businesss Server 2019 |TCP  <br/> |5269  <br/> |Servizio proxy XMPP (condivide un indirizzo IP con il servizio Access Edge)  <br/> |Qualsiasi  <br/> |Il servizio proxy XMPP invia il traffico dai contatti XMPP nelle federazioni XMPP definite.  <br/> |
@@ -440,13 +435,13 @@ L'indirizzo IP di origine e l'indirizzo IP di destinazione conterranno informazi
 
 Le nostre indicazioni qui saranno leggermente diverse. In realtà, in una situazione di bilanciamento del carico di rete, è ora consigliabile eseguire il routing solo attraverso un VIP interno nelle circostanze seguenti:
   
-- Se si utilizza la Exchange 2007 o Exchange 2010 messaggistica unificata.
+- Se si utilizza la Exchange 2007 o Exchange 2010, la messaggistica unificata.
     
 - Se si dispone di client legacy che usano Edge.
     
 Nella tabella seguente vengono fornite indicazioni per questi scenari, ma in caso contrario, si dovrebbe essere in grado di dipendere dall'archivio di gestione centrale (CMS) per instradare il traffico al singolo server perimetrale di cui è a conoscenza (ciò richiede che cms sia sempre aggiornato sulle informazioni del server perimetrale, naturalmente).
   
-|**Protocollo**|**TCP o UDP**|**Porta**|**Indirizzo IP di origine**|**Indirizzo IP di destinazione**|2^31 (2 miliardi di termini)|
+|**Protocollo**|**TCP o UDP**|**Porta**|**Indirizzo IP di origine**|**Indirizzo IP di destinazione**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Access/SIP(MTLS)  <br/> |TCP  <br/> |5061  <br/> |Qualsiasi:  <br/> • Director  <br/> • Indirizzo VIP del pool di server Director  <br/> • Front End Server  <br/> • Indirizzo VIP pool Front End  <br/> |Interfaccia interna del server perimetrale  <br/> |Traffico SIP in uscita dal server Director, dall'indirizzo VIP del pool di server Director, dal Front End Server o dall'indirizzo VIP del pool Front End all'interfaccia interna del server perimetrale.  <br/> |
 |Access/SIP(MTLS)  <br/> |TCP  <br/> |5061  <br/> |Interfaccia VIP interna del server perimetrale  <br/> |Qualsiasi:  <br/> • Director  <br/> • Indirizzo VIP del pool di server Director  <br/> • Front End Server  <br/> • Indirizzo VIP pool Front End  <br/> |Traffico SIP in ingresso verso il director, l'indirizzo VIP del pool di server Director, il Front End Server o l'indirizzo VIP del pool Front End dall'interfaccia interna del server perimetrale.  <br/> |

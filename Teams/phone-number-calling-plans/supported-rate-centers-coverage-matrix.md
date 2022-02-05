@@ -1,34 +1,29 @@
 ---
 title: Centri tariffari e copertura supportati per i piani per chiamate
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
-ms.reviewer: davlick, julienp
+ms.reviewer: 'davlick, julienp'
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 audience: Admin
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.localizationpriority: medium
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- Calling Plans
+  - Calling Plans
 description: Elenca i centri tariffari e la copertura supportati per i piani per chiamate.
-ms.openlocfilehash: 4287a4acbecaca4b2933cc0308393b6612dff4c8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60830790"
 ---
+
 # <a name="supported-rate-centers-and-coverage-for-calling-plans"></a>Centri tariffari e copertura supportati per i piani per chiamate
 
 Questo articolo elenca i centri tariffari e la copertura supportati per i piani per chiamate in Nord America. Un centro tariffe è il termine di settore per un'area geografica che definisce tradizionalmente i limiti per le chiamate locali, le tariffe di fatturazione e l'assegnazione di numeri di telefono per la rete PSTN (Public Switched Telephone Network). In molti casi, con il passaggio del settore a piani o pacchetti di minuti inclusivi, il centro tariffaria è diventato meno importante per la fatturazione, ma è ancora usato da alcuni.
 
-Il [foglio di calcolo Centri tariffa supportati e la matrice](https://www.microsoft.com/download/details.aspx?id=102534) di copertura per il Nord America elenca i centri di tariffa supportati. Quando si stanno ricevendo nuovi numeri di telefono o quando si trasferiscono numeri di telefono dal provider esistente a Teams, scaricare il foglio di calcolo e usarlo per cercare i centri tariffa. Se non si conosce il centro tariffa, è possibile cercarlo su Internet in base ai codici di area (NPA) e ai prefissi (NXX).
+Il [foglio di calcolo Centri tariffa supportati e la matrice di copertura per il Nord America](https://www.microsoft.com/download/details.aspx?id=102534) elenca i centri di tariffa supportati. Quando si stanno ricevendo nuovi numeri di telefono o quando si trasferiscono numeri di telefono dal provider esistente a Teams, scaricare il foglio di calcolo e usarlo per cercare i centri tariffa. Se non si conosce il centro tariffa, è possibile cercarlo su Internet in base ai codici di area (NPA) e ai prefissi (NXX).
 Se si stanno ricevendo nuovi numeri e non sono disponibili i numeri richiesti, si tenterà di offrirti numeri dallo stesso centro tariffa.
 
 Se si stanno ricevendo nuovi numeri e non sono disponibili i numeri richiesti, verranno offerti numeri dallo stesso centro tariffa.

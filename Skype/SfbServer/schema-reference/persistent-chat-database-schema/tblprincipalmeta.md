@@ -1,25 +1,20 @@
 ---
 title: tblPrincipalMeta
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 808490d4-7d6d-47a2-b8af-b5940d47073b
 description: tblPrincipalMeta contiene le entità che devono essere aggiornate da Servizi di dominio Active Directory.
-ms.openlocfilehash: 7922d25d62561f9e9d3236962b1083a670474af2
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60857203"
 ---
+
 # <a name="tblprincipalmeta"></a>tblPrincipalMeta
  
 tblPrincipalMeta contiene le entità che devono essere aggiornate da Servizi di dominio Active Directory.

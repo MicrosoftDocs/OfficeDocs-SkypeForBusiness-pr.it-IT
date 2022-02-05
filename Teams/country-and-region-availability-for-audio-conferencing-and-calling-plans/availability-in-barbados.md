@@ -1,36 +1,31 @@
 ---
 title: Disponibilità in Barbados
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole, fafan
+ms.reviewer: 'mikedav, jastark, oscarr, v-sukade, rcole, fafan'
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
-- M365-collaboration
-- M365-voice
+  - M365-collaboration
+  - M365-voice
 search.appverid: MET150
 audience: Admin
 appliesto:
-- Skype for Business
-- Microsoft Teams
+  - Skype for Business
+  - Microsoft Teams
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.custom:
-- Audio Conferencing
-- Phone System
-- Calling Plans
+  - Audio Conferencing
+  - Phone System
+  - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per Barbados.
-ms.openlocfilehash: c46dc736aa11aea4371050e9357dacec5e571cf2
-ms.sourcegitcommit: 9ef6e36eeba7db70971f4eb1a45f0ded394b1fe6
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62191237"
 ---
+
 # <a name="availability-in-barbados"></a>Disponibilità in Barbados
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
@@ -62,7 +57,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
 
-Se Piani chiamate non sono disponibili per l'acquisto, vedere Opzioni di connettività [PSTN](../pstn-connectivity.md) per tutte le opzioni disponibili.
+Se Piani chiamate non sono disponibili per l'acquisto, vedere [Opzioni di connettività PSTN](../pstn-connectivity.md) per tutte le opzioni disponibili.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri a pedaggio e a numero verde per i servizi
 
@@ -72,7 +67,7 @@ Se Piani chiamate non sono disponibili per l'acquisto, vedere Opzioni di connett
 |Sono disponibili numeri verdi a tariffa?  <br/> |No <br/> |
 |Sono disponibili numeri a numero verde? <br/> |Sì  <br/> |
    
- Per ottenere numeri a numero verde e a pedaggio per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere numeri di telefono di servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
+ Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere numeri di telefono di servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

@@ -1,7 +1,7 @@
 ---
 title: Quanto è pronta l'organizzazione per Microsoft Teams?
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.date: 11/01/2018
 audience: Admin
@@ -10,24 +10,20 @@ ms.service: msteams
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Valutare gli stakeholder, identificare i primi utenti e valutare se l'organizzazione è pronta per la transizione a Teams.
+description: 'Valutare gli stakeholder, identificare i primi utenti e valutare se l''organizzazione è pronta per la transizione a Teams.'
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- Adopt
-- seo-marvel-apr2020
+  - Adopt
+  - seo-marvel-apr2020
 ms.collection:
-- Teams_ITAdmin_Adopt
-- M365-collaboration
+  - Teams_ITAdmin_Adopt
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 105df2024ad67710b1de1e92208deeab6c7b9226
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60865625"
+  - Microsoft Teams
 ---
+
+
 # <a name="how-ready-is-your-organization-for-microsoft-teams"></a>Quanto è pronta l'organizzazione per Microsoft Teams?
 
 Ora che il team di progetto si è riunito e si sta iniziando a vedere cosa può fare Teams per l'organizzazione, è importante valutare la preparazione dell'organizzazione per la transizione Teams lavoro. Per valutare la conformità, è necessario:
@@ -64,7 +60,7 @@ I primi utenti condividono determinati tratti, indipendentemente dalle dimension
 - Disposti a condividere le loro osservazioni e le loro apprendimenti con il gruppo
 - Sono persone a rischio; in altri, sono disposti a provare qualcosa per vedere se funziona
 
-Usare un modulo semplice in Microsoft 365 o Office 365 per consentire a questi utenti di acconsentire esplicitamente al programma di adozione iniziale per Teams. A seconda delle dimensioni e della complessità dell'organizzazione, è possibile scegliere di abilitare alcuni o tutti questi utenti per la fase di sperimentazione. In questo programma accettano di partecipare attivamente alla fase di sperimentazione e di fornire regolarmente feedback al team di progetto. Evitare di avere persone che vogliono semplicemente testare le nuove tecnologie. Fagli sapere che, fornendo questo feedback attivo, contribuisce a creare il risultato del progetto. Si userà questo elenco di persone nella [fase 2 - esperimento.](teams-adoption-phase2-experiment.md)
+Usare una forma semplice in Microsoft 365 o Office 365 per consentire a questi utenti di acconsentire esplicitamente al programma di Teams. A seconda delle dimensioni e della complessità dell'organizzazione, è possibile scegliere di abilitare alcuni o tutti questi utenti per la fase di sperimentazione. In questo programma accettano di partecipare attivamente alla fase di sperimentazione e di fornire regolarmente feedback al team di progetto. Evitare di avere persone che vogliono semplicemente testare le nuove tecnologie. Fagli sapere che, fornendo questo feedback attivo, contribuisce a creare il risultato del progetto. Si userà questo elenco di persone nella [fase 2 - esperimento](teams-adoption-phase2-experiment.md).
 
 La nostra Guida al programma Early Adopter è una risorsa utile per dare il via a questo programma nel tuo ambiente.  
  
@@ -74,12 +70,12 @@ Il cambiamento è un processo umano che non ha nulla a che fare con la tecnologi
 
 ![Graph che illustra la resistenza al cambiamento.](media/teams-adoption-resistance.png)
 
-Ogni approccio dell'organizzazione cambia in modo diverso, a seconda dell'area geografica, dello stile di lavoro, del profilo professionale e di altri elementi dell'organizzazione. Per valutare la conformità dell'organizzazione, vedere Valutare la conformità [alle modifiche dell'organizzazione.](upgrade-org-change-readiness.md) Usare le linee guida per rispondere alle domande seguenti:
+Ogni approccio dell'organizzazione cambia in modo diverso, a seconda dell'area geografica, dello stile di lavoro, del profilo professionale e di altri elementi dell'organizzazione. Per valutare la conformità dell'organizzazione, vedere Valutare [la conformità alle modifiche dell'organizzazione](upgrade-org-change-readiness.md). Usare le linee guida per rispondere alle domande seguenti:
 
-1. Quale percentuale di utenti rientra in ogni contenitore? (*Resistenza alla modifica*)
-    - **Early adopters:** richiedere la soluzione prima che sia disponibile.
-    - **Utenti informati:** usare la soluzione una volta dimostrato il suo valore.
-    - **Dissidenti:** consente di tornare indietro su qualsiasi modifica.
+1. Quale percentuale di utenti rientra in ogni contenitore? (*Modifica resistenza*)
+    - **Early adopters**: richiedere la soluzione prima che sia disponibile.
+    - **Utenti informati**: usare la soluzione una volta dimostrato il suo valore.
+    - **Dissidenti**: tornare indietro su qualsiasi modifica.
     
    > [!TIP]
    > I primi utenti adottano grandi tester pilota e campioni peer. Gli utenti che sono lenti ad adottare nuovi strumenti richiedono ulteriore incentivo e più tempo per adeguarsi. 

@@ -1,29 +1,24 @@
 ---
-title: Skype Licenza software Skype for Business Room System
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: Skype room system Skype for Business licenza software
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
 ms.topic: quickstart
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 78a664ba-fefc-4423-ac8f-b58e6fbc2e55
 description: Leggere questo argomento per informazioni su come verificare se si dispone di un contratto multilicenza Skype for Business software.
-ms.openlocfilehash: 805a9abb6d4d49e653e779edc1d9e1cfb8d2a6ca
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60845969"
 ---
-# <a name="skype-room-system-skype-for-business-software-license"></a>Skype Sistema sala: Skype for Business licenza software
+
+# <a name="skype-room-system-skype-for-business-software-license"></a>Skype Room System: Skype for Business licenza software
  
 Leggere questo argomento per informazioni su come verificare se si dispone di un contratto multilicenza Skype for Business software. 
   
-Skype Room System usa un client Skype for Business, che richiede un contratto multilicenza software. Prima di distribuire il primo Skype Room System, individuare lo stato con contratti multilicenza della distribuzione, utilizzando i server di gestione delle chiavi (Servizio di gestione delle chiavi) o più chiavi di attivazione (MAK).
+Skype Room System usa un client Skype for Business, che richiede un contratto multilicenza software. Prima di distribuire il primo Skype Room System, individuare lo stato dei contratti multilicenza della distribuzione, utilizzando i server di gestione delle chiavi (Servizio di gestione delle chiavi) o più chiavi di attivazione (MAK).
   
 ## <a name="key-management-servers-kms"></a>Server di gestione delle chiavi (Servizio di gestione delle chiavi)
 
@@ -41,7 +36,7 @@ Se il cliente usa qualsiasi altro software con contratti multilicenza, il repart
   
 Un cliente con una VLA deve conoscere le proprie credenziali VLSC, che verranno utilizzate per amministrare il contratto e ottenere il codice ADK. In caso di dubbi, il reparto finanziario del cliente dovrebbe essere in grado di verificare se il cliente ha pagato una VLA.
   
-Per ottenere un codice ADK, accedere al Centro servizi per contratti multilicenza per visualizzare i contratti e scaricare i codici Product Key (MAK). Per ulteriori informazioni, passare al [Centro servizi per contratti multilicenza.](https://www.microsoft.com/Licensing/servicecenter/default.aspx) 
+Per ottenere un codice ADK, accedere al Centro servizi per contratti multilicenza per visualizzare i contratti e scaricare i codici Product Key (MAK). Per altre informazioni, vai al [Centro servizi per contratti multilicenza](https://www.microsoft.com/Licensing/servicecenter/default.aspx). 
   
 ## <a name="mak-for-microsoft-365-or-office-365-without-vlsc-access"></a>Codice ad attivazione Microsoft 365 o Office 365 senza accesso VLSC
 

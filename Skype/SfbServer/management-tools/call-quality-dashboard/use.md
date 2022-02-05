@@ -1,25 +1,20 @@
 ---
 title: Usare il dashboard qualità delle chiamate per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ec62b70f-885e-4272-b9d2-a574ea434b64
 description: 'Riepilogo: informazioni su come usare il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: a1a2f0c6d4cf07563f0aceb6379a9142930e1699
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60843809"
 ---
+
 # <a name="use-call-quality-dashboard-for-skype-for-business-server"></a>Usare il dashboard qualità delle chiamate per Skype for Business Server
 
 **Riepilogo:** Informazioni su come usare il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
@@ -53,7 +48,7 @@ Spostare il mouse sui grafici a barre e sulle linee di tendenza per visualizzare
 
 Quando si accede per la prima volta al portale call quality dashboard, viene creato automaticamente un set predefinito di report. Questi report vengono talvolta definiti report di sistema. È possibile modificare o eliminare liberamente questi report o estenderli creando nuovi report figlio e di pari livello.
 
-Al livello superiore, il report "Tendenza mensile Flussi audio" mostra la tendenza mensile per tutti i flussi audio. Spostare il mouse sulle barre di un grafico a barre per visualizzare una visualizzazione più dettagliata dei dati rappresentati dal grafico a barre. Fai clic sul titolo del report Tendenze mensili Flussi audio per passare al report "Managed vs Unmanaged Audio Flussi", in cui i report vengono suddivisi tra chiamate gestite e non gestite. Le chiamate gestite sono chiamate effettuate dall'interno del firewall aziendale tramite connessioni cablate. Le chiamate non gestite includono le chiamate effettuate dall'esterno del firewall aziendale e tutte le chiamate effettuate tramite Wi-Fi.
+Al livello superiore, il report "Tendenza mensile Flussi audio" mostra la tendenza mensile per tutti i flussi audio. Spostare il mouse sulle barre di un grafico a barre per visualizzare una visualizzazione più dettagliata dei dati rappresentati dal grafico a barre. Fai clic sul titolo del report Tendenze mensili di Audio Flussi per passare al report "Managed vs Unmanaged Audio Flussi", in cui i rapporti vengono suddivisi tra chiamate gestite e non gestite. Le chiamate gestite sono chiamate effettuate dall'interno del firewall aziendale tramite connessioni cablate. Le chiamate non gestite includono le chiamate effettuate dall'esterno del firewall aziendale e tutte le chiamate effettuate tramite Wi-Fi.
 
 L'altro report di primo livello è denominato "Istogramma della qualità delle chiamate segnalato dall'utente". Classificazioni qualità chiamata sono i numeri Skype for Business utenti al termine di una chiamata per indicare la qualità della chiamata. I numeri di valutazione sono da 1 a 5, 1 è il peggiore e 5 è il migliore. L'istogramma mostra il numero di chiamate audio con la valutazione indicata in un mese.
 
@@ -196,7 +191,7 @@ CQD non utilizza i campi Caller/Callee, ma "First" e "Second" perché ci sono pa
 
  **First** Sarà sempre l'endpoint del server (ad esempio, AV MCU o Mediation Server) se un server è coinvolto nel flusso.
 
- **Second** Sarà sempre l'endpoint client, a meno che non sia un Server-Server flusso.
+ **Second** Sarà sempre l'endpoint client, a meno che non sia Server-Server flusso.
 
 **Esempio di classificazione First e Second**
 
@@ -207,7 +202,7 @@ CQD non utilizza i campi Caller/Callee, ma "First" e "Second" perché ci sono pa
 |4 (Skype for Business) |4 (Skype for Business) |Chiamante in MediaLine |Il chiamato in MMediaLine |
 
 
-Se entrambi gli endpoint sono dello stesso tipo, CQD rende la voce Caller first e la callee second. Per ulteriori informazioni sui nomi degli endpoint, vedere [questo blog.](/archive/blogs/jenstr/call-quality-dashboard-tips-and-tricks)
+Se entrambi gli endpoint sono dello stesso tipo, CQD rende la voce Caller first e la callee second. Per altre informazioni sui nomi degli endpoint, vedi [questo blog](/archive/blogs/jenstr/call-quality-dashboard-tips-and-tricks).
 
 ## <a name="accounting-for-vpn"></a>Accounting per VPN
 

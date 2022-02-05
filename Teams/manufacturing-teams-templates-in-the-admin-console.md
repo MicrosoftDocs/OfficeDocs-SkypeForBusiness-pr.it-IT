@@ -1,31 +1,26 @@
 ---
 title: Introduzione ai modelli di team di produzione nell'interfaccia di amministrazione
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.reviewer: phecda louie
 ms.collection:
-- M365-collaboration
+  - M365-collaboration
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come usare i modelli di team per creare strutture del team progettate per le esigenze di produzione, fornendo impostazioni predefinite, canali e app preinstallato tramite l'interfaccia di amministrazione.
+description: 'Informazioni su come usare i modelli di team per creare strutture del team progettate per le esigenze di produzione, fornendo impostazioni predefinite, canali e app preinstallato tramite l''interfaccia di amministrazione.'
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- NewAdminCenter_Update
-- seo-marvel-apr2020
+  - NewAdminCenter_Update
+  - seo-marvel-apr2020
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 8236964530d76818a5510af8b38fcd9bb2a8b8f4
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858713"
+  - Microsoft Teams
 ---
+
 # <a name="use-manufacturing-team-templates-in-the-admin-center"></a>Usare i modelli di team di produzione nell'interfaccia di amministrazione
 
 I modelli di team consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallato.
@@ -36,7 +31,7 @@ In questo articolo vengono presentati tutti i modelli di team e viene consigliat
 
 Questo articolo è utile se si è responsabili della pianificazione, della distribuzione e della gestione di più team all'interno dell'organizzazione di produzione. Il servizio Teams è già stato implementato nell'organizzazione. Se Teams non è ancora stato implementato, per iniziare, leggere [Come implementare Microsoft Teams](./deploy-overview.md).
 
-Per altre informazioni sui modelli di team in generale, vedere Introduzione [ai modelli di team.](get-started-with-teams-templates-in-the-admin-console.md)
+Per altre informazioni sui modelli di team in generale, vedere Introduzione [ai modelli di team](get-started-with-teams-templates-in-the-admin-console.md).
 
 ## <a name="quality-and-safety"></a>Qualità e sicurezza
 

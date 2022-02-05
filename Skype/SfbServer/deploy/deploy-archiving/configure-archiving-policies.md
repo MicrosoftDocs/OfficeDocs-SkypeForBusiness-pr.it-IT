@@ -1,24 +1,19 @@
 ---
 title: Configurare i criteri di archiviazione per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: e8e48087-d4f0-4fe1-9e7e-f2b3e07f815f
 description: 'Riepilogo: leggere questo argomento per informazioni su come configurare i criteri di archiviazione iniziali per Skype for Business Server utenti.'
-ms.openlocfilehash: 96d53ae71a8faa72c5dcdc3816c09c1b6d492e67
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60853790"
 ---
+
 # <a name="configure-archiving-policies-for-skype-for-business-server"></a>Configurare i criteri di archiviazione per Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come configurare i criteri di archiviazione iniziali per Skype for Business Server utenti.
@@ -31,19 +26,19 @@ In Skype for Business Server vengono utilizzati i criteri per abilitare e disabi
     
 - Criteri facoltativi a livello di utente che specificano la modalità di implementazione dell'archiviazione per utenti specifici
     
-I criteri di archiviazione vengono inizialmente impostati quando si distribuisce l'archiviazione, ma è possibile modificare, aggiungere ed eliminare i criteri dopo la distribuzione. Nel Skype for Business Server di controllo è possibile  utilizzare la  pagina Criteri di archiviazione del gruppo Archiviazione e monitoraggio per gestire i criteri a livello globale, di sito e di utente.
+I criteri di archiviazione vengono inizialmente impostati quando si distribuisce l'archiviazione, ma è possibile modificare, aggiungere ed eliminare i criteri dopo la distribuzione. Nel Skype for Business Server di controllo è possibile utilizzare la pagina Criteri di  archiviazione del gruppo Archiviazione e  monitoraggio per gestire i criteri a livello globale, di sito e di utente.
   
 > [!NOTE]
 > Per controllare l'implementazione dell'archiviazione, è necessario specificare opzioni, ad esempio se archiviare la messaggistica istantanea o le conferenze, l'uso della modalità critica e le opzioni di eliminazione. Per impostazione predefinita, nella configurazione di archiviazione globale o in qualsiasi configurazione di archiviazione del sito o del pool non sono abilitate opzioni. È consigliabile specificare tutte le opzioni appropriate prima di abilitare l'archiviazione per le comunicazioni interne o esterne. Per informazioni dettagliate, vedere [Configure archiving options for Skype for Business Server](configure-archiving-options.md). 
   
 > [!NOTE]
-> Se si abilita l'integrazione di Microsoft Exchange per la distribuzione, i criteri di blocco del Exchange In-Place controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e che le cassette postali vengono In-Place conservazione. 
+> Se si abilita l'integrazione di Microsoft Exchange per la distribuzione, i criteri di blocco di Exchange In-Place controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e che le cassette postali vengono In-Place conservazione. 
   
 Per informazioni dettagliate sul funzionamento dei criteri di archiviazione, inclusa la gerarchia dei criteri globali, dei siti e degli utenti, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md). Per informazioni dettagliate su come gestire i criteri dopo la distribuzione, vedere [Manage archiving policies in Skype for Business Server](../../manage/archiving/policies.md).
   
 ## <a name="global-policy"></a>Criterio globale
 
-Quando si distribuiscono i Front End Server, Skype for Business Server un criterio globale per l'archiviazione. Per impostazione predefinita, l'archiviazione è disabilitata nei criteri globali. Il criterio globale controlla se l'archiviazione è abilitata per le comunicazioni interne ed esterne per l'intera distribuzione, a meno che non vengano impostati criteri sito o utente, che sostituiscono i criteri globali o se si utilizza l'integrazione di Microsoft Exchange per alcuni o tutti gli utenti. Se si utilizza l'integrazione di Microsoft Exchange, il criterio globale non si applica agli utenti ospitati in Exchange e le cassette postali vengono In-Place conservazione.
+Quando si distribuiscono i Front End Server, Skype for Business Server un criterio globale per l'archiviazione. Per impostazione predefinita, l'archiviazione è disabilitata nei criteri globali. Il criterio globale controlla se l'archiviazione è abilitata per le comunicazioni interne ed esterne per l'intera distribuzione, a meno che non vengano impostati criteri sito o utente, che sostituiscono i criteri globali o se si utilizza l'integrazione di Microsoft Exchange per alcuni o tutti gli utenti. Se si utilizza l'integrazione di Microsoft Exchange, il criterio globale non si applica agli utenti ospitati in Exchange e le cassette postali vengono In-Place blocco.
   
 ### <a name="configure-the-global-policy-for-archiving-for-skype-for-business-server-archiving-databases"></a>Configurare i criteri globali per l'archiviazione per Skype for Business Server database di archiviazione
 
@@ -59,7 +54,7 @@ Quando si distribuiscono i Front End Server, Skype for Business Server un criter
     
    - In **Nome**, se non si vuole usare il nome predefinito Globale, specificare un nuovo nome per i criteri globali. 
     
-   - In **Descrizione** fornire informazioni sul criterio, ad esempio Criteri globali per *divisionName.*
+   - In **Descrizione** fornire informazioni sul criterio, ad esempio Criteri globali per  *divisionName*  .
     
    - Per controllare l'archiviazione delle comunicazioni interne per tutti i siti e gli utenti non controllati in modo specifico tramite criteri utente o sito, selezionare o deselezionare la casella di controllo **Archivia comunicazioni interne**.
     
@@ -91,7 +86,7 @@ Quando si distribuiscono i Front End Server, Skype for Business Server un criter
     
    - In **Descrizione** fornire informazioni sui criteri del sito, ad esempio criteri sito per Redmond.
     
-   - Per controllare l'archiviazione delle comunicazioni interne per il sito specificato, selezionare o deselezionare la **casella di controllo** Archivia comunicazioni interne.
+   - Per controllare l'archiviazione delle comunicazioni interne per il sito specificato, selezionare o deselezionare la **casella di controllo Archivia comunicazioni** interne.
     
    - Per controllare l'archiviazione delle comunicazioni esterne per il sito specificato, selezionare o deselezionare la **casella di** controllo Archivia comunicazioni esterne.
     
@@ -134,7 +129,7 @@ I criteri utente si applicano solo agli utenti a cui vengono assegnati.
     
 4. Nella tabella dei risultati di ricerca fare clic sull'account utente, fare clic su **Modifica** e quindi fare clic su **Mostra dettagli**.
     
-5. In **Modifica Skype for Business Server utente** in Criteri di **archiviazione** selezionare il criterio utente di archiviazione che si desidera applicare.
+5. In **Modifica Skype for Business Server utente** in **Criteri di archiviazione** selezionare il criterio utente di archiviazione che si desidera applicare.
     
     > [!NOTE]
     > Le **\<Automatic\>** impostazioni applicano le impostazioni di installazione predefinite del server. Queste impostazioni vengono applicate automaticamente dal server.

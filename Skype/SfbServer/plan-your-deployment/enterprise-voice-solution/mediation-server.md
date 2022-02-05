@@ -1,28 +1,23 @@
 ---
 title: Componente Mediation Server in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 5b19edef-4a54-43c9-aa12-5643b8108355
-description: Informazioni sui Mediation Server in Skype for Business Server, incluse le topologie supportate e le relative relazioni con i trunk M:N, il bypass multimediale e il controllo di ammissione di chiamata.
-ms.openlocfilehash: 10d35081e1b6af1d7ee634fa3507a9c6d46f3954
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861173"
+description: 'Informazioni sui Mediation Server in Skype for Business Server, incluse le topologie supportate e le relative relazioni con i trunk M:N, il bypass multimediale e il controllo di ammissione di chiamata.'
 ---
+
 # <a name="mediation-server-component-in-skype-for-business-server"></a>Componente Mediation Server in Skype for Business Server
  
 Informazioni sui Mediation Server in Skype for Business Server, incluse le topologie supportate e le relative relazioni con i trunk M:N, il bypass multimediale e il controllo di ammissione di chiamata.
@@ -45,11 +40,11 @@ Le funzioni principali del Mediation Server sono le seguenti:
     
 - Conversione di SIP su TCP (per i gateway che non supportano TLS) a SIP su TLS reciproco.
     
-- Conversione di flussi multimediali tra Skype for Business Server e il peer gateway del Mediation Server.
+- Traduzione di flussi multimediali tra Skype for Business Server e il peer gateway del Mediation Server.
     
 - Connessione di client esterni alla rete a componenti ICE interni, che consentono l'attraversamento multimediale di NAT e firewall.
     
-- Funge da intermediario per i flussi di chiamata non supportati da un gateway, ad esempio le chiamate provenienti da lavoratori remoti VoIP aziendale clien.t
+- Funge da intermediario per i flussi di chiamata non supportati da un gateway, ad esempio le chiamate provenienti da lavoratori remoti su un VoIP aziendale clien.t
     
 - Nelle distribuzioni che includono il trunking SIP, l'utilizzo del provider di servizi di trunking SIP per fornire il supporto PSTN elimina la necessità di un gateway PSTN.
     
@@ -66,13 +61,13 @@ Nella figura seguente vengono mostrati i protocolli di segnalazione e multimedia
 
 Skype for Business Server supporta la flessibilità nella definizione di un trunk ai fini del routing delle chiamate. Un trunk è un'associazione logica tra un Mediation Server e un numero di porta di attesa, con un gateway e un numero di porta di attesa. Ciò implica diversi aspetti: un Mediation Server può avere più trunk per lo stesso gateway; un Mediation Server può avere più trunk a gateway diversi; al contrario, un gateway può avere più trunk per Mediation Server diversi.
   
-È comunque necessario creare un trunk radice quando si aggiunge un gateway alla topologia Skype for Business utilizzando Generatore di topologie. Il numero di gateway che un determinato Mediation Server può gestire dipende dalla capacità di elaborazione del server durante le ore di punta di attività. Se si distribuisce un Mediation Server su hardware che soddisfa i requisiti hardware minimi per Skype for Business Server, come descritto [in Server requirements for Skype for Business Server 2015,](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md)un Mediation Server autonomo può gestire circa 1000 chiamate. Il Mediation Server esegue la transcodtura, ma instrada comunque le chiamate per più gateway anche se i gateway non supportano il bypass multimediale.
+È comunque necessario creare un trunk radice quando si aggiunge un gateway alla topologia Skype for Business utilizzando Generatore di topologie. Il numero di gateway che un determinato Mediation Server può gestire dipende dalla capacità di elaborazione del server durante le ore di punta di attività. Se si distribuisce un Mediation Server su hardware che soddisfa i requisiti hardware minimi per Skype for Business Server, come descritto [in Server requirements for Skype for Business Server 2015](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md), un Mediation Server autonomo può gestire circa 1000 chiamate. Il Mediation Server esegue la transcodtura, ma instrada comunque le chiamate per più gateway anche se i gateway non supportano il bypass multimediale.
   
 Quando si definisce una route di chiamata, si specificano i trunk associati a tale route, ma non si specifica quali Mediation Server sono associati a tale route. È invece possibile utilizzare Generatore di topologie per associare i trunk ai Mediation Server. In altre parole, il routing determina quale trunk utilizzare per una chiamata e, successivamente, al Mediation Server associato a tale trunk viene inviata la segnalazione per tale chiamata.
   
 Il Mediation Server può essere distribuito come pool. questo pool può essere collocato con un pool Front End oppure può essere distribuito come pool autonomo. Quando un Mediation Server è collocato con un pool Front End, le dimensioni del pool possono essere al massimo 12 (il limite delle dimensioni del pool di registrazione). Nel loro insieme, queste funzionalità aumentano l'affidabilità e la flessibilità di distribuzione per Mediation Server, ma richiedono funzionalità simili nelle seguenti:
   
-- **Gateway PSTN.** Un gateway qualificato Skype for Business Server deve implementare il bilanciamento del carico DNS, che consente a un gateway PSTN (Public Switched Telephone Network) qualificato di fungere da servizio di bilanciamento del carico per un pool di Mediation Server e quindi di bilanciare il carico delle chiamate nel pool.
+- **Gateway PSTN.** Un gateway qualificato di Skype for Business Server deve implementare il bilanciamento del carico DNS, che consente a un gateway PSTN (Public Switched Telephone Network) qualificato di fungere da servizio di bilanciamento del carico per un pool di Mediation Server e quindi di bilanciare il carico delle chiamate nel pool.
     
 - **Session Border Controller.** Per un trunk SIP, l'entità peer è un session border controller (SBC) presso un provider di servizi di telefonia Internet. Nella direzione dal pool Mediation Server al servizio SBC, il controller SBC può ricevere connessioni da qualsiasi Mediation Server nel pool. Nella direzione da SBC al pool, il traffico può essere inviato a qualsiasi Mediation Server nel pool. Un metodo per ottenere questo risultato è tramite il bilanciamento del carico DNS, se supportato dal provider di servizi e da SBC. Un'alternativa consiste nel fornire al provider di servizi gli indirizzi IP di tutti i Mediation Server nel pool e il provider di servizi ne eseguirà il provisioning nel proprio SBC come trunk SIP separato per ogni Mediation Server. Il provider di servizi gestirà quindi il bilanciamento del carico per i propri server. Non tutti i provider di servizi o SBC possono supportare queste funzionalità. Inoltre, il provider di servizi può addebitare costi aggiuntivi per questa funzionalità. In genere, ogni trunk SIP alla SBC comporta una tariffa mensile.
     
@@ -88,7 +83,7 @@ Il servizio Controllo di ammissione di chiamata gestisce la creazione di session
   
 Il bypass multimediale e la prenotazione della larghezza di banda si escludono a vicenda. Se per una chiamata viene utilizzato il bypass multimediale, il controllo di ammissione di chiamata non viene eseguito per tale chiamata. Il concetto alla base di questo comportamento è che non vi sono collegamenti con larghezza di banda limitata interessati dalla chiamata. Se viene utilizzato il controllo di ammissione di chiamata per una determinata chiamata che coinvolge il Mediation Server, tale chiamata non può utilizzare il bypass multimediale.
   
-Per informazioni dettagliate sul bypass multimediale o sul controllo di ammissione di chiamata, vedere [Plan for media bypass in Skype for Business](media-bypass.md) or Plan for call admission control in [Skype for Business Server](call-admission-control.md).
+Per informazioni dettagliate sul bypass multimediale o sul controllo di ammissione di chiamata, vedere [Plan for media bypass in Skype for Business](media-bypass.md) or [Plan for call admission control in Skype for Business Server](call-admission-control.md).
   
 ## <a name="enhanced-9-1-1-e9-1-1-and-mediation-server"></a>Enhanced 9-1-1 (E9-1-1) e Mediation Server
 
@@ -124,7 +119,7 @@ Nella figura seguente viene illustrata una semplice topologia costituita da due 
 
 ![Topologia vocale con gateway WAN Mediation Server.](../../media/Plan_LyncServer_Voice_Topo_MedSvrWanGwy.jpg)
   
-Nella figura seguente viene illustrata una topologia semplice in cui Mediation Server è collocato nel pool Front End nel sito 1 e dispone di una connessione SIP diretta all'IP-PBX nel sito 1. In questa figura, il Mediation Server controlla anche un gateway PSTN nel sito 2. Si supponga Skype for Business utenti esistenti sia nei siti 1 che in quello 2. Presupporre inoltre che l'IP-PBX abbia un processore multimediale associato che deve essere attraversato da tutti i supporti provenienti da endpoint Skype for Business prima di essere inviato agli endpoint multimediali controllati dall'IP-PBX. In questa topologia, il bypass multimediale è abilitato a livello globale per l'utilizzo di informazioni su siti e aree e i trunk per il PBX e il gateway PSTN hanno il bypass multimediale abilitato.
+Nella figura seguente viene illustrata una topologia semplice in cui Mediation Server è collocato nel pool Front End nel sito 1 e dispone di una connessione SIP diretta all'IP-PBX nel sito 1. In questa figura, il Mediation Server controlla anche un gateway PSTN nel sito 2. Si supponga Skype for Business utenti presenti sia nei siti 1 che in quello 2. Presupporre inoltre che all'IP-PBX sia associato un processore multimediale che deve essere attraversato da tutti i supporti provenienti da endpoint Skype for Business prima di essere inviato agli endpoint multimediali controllati dall'IP-PBX. In questa topologia, il bypass multimediale è abilitato a livello globale per l'utilizzo di informazioni su siti e aree e i trunk per il PBX e il gateway PSTN hanno il bypass multimediale abilitato.
   
 **Esempio di siti connessi tramite un collegamento WAN a un server Mediation Server nel sito 1 e a un sistema PBX nel sito 2**
 
@@ -161,13 +156,13 @@ Se sono stati distribuiti gateway PSTN, IP-PBC o SBC (Session Border Controller)
  I server Mediation Server nel sito centrale possono essere utilizzati per instradare le chiamate per IP-PBX o gateway PSTN nei siti derivati. Se tuttavia si distribuiscono trunk SIP, è necessario distribuire un server Mediation Server presso il sito in cui ogni trunk termina. Per fare in modo che un server Mediation Server nel sito centrale instradi le chiamate per un IP-PBX o un gateway PSTN in un sito derivato, non è necessario utilizzare Media Bypass. Tuttavia, se è possibile abilitare il bypass multimediale, in questo modo si riduce la latenza del percorso multimediale e si migliora la qualità del supporto perché il percorso multimediale non è più necessario per seguire il percorso di segnalazione. Il bypass multimediale riduce anche il carico di elaborazione nel pool.
   
 > [!NOTE]
-> Il bypass multimediale non interagisce con ogni gateway PSTN, ogni IP-PBX e ogni SBC. Microsoft ha testato un set di gateway PSTN e SBC con partner certificati ed ha eseguito alcuni test con IP-PBC Cisco. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati in [Unified Communications Open Interoperability Program - Lync Server.](../../../SfbPartnerCertification/lync-cert/qualified-ip-pbx-gateway.md) 
+> Il bypass multimediale non interagisce con ogni gateway PSTN, ogni IP-PBX e ogni SBC. Microsoft ha testato un set di gateway PSTN e SBC con partner certificati ed ha eseguito alcuni test con IP-PBC Cisco. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati in [Unified Communications Open Interoperability Program - Lync Server](../../../SfbPartnerCertification/lync-cert/qualified-ip-pbx-gateway.md). 
   
-Se è necessaria la resilienza del sito derivato, è necessario distribuire nel sito derivato un Survivable Branch Appliance o una combinazione di Front End Server, Mediation Server e gateway. Il presupposto con resilienza del sito di succursale è che la presenza e le conferenze non siano resilienti nel sito. Per indicazioni sulla pianificazione dei siti di succursale per la funzionalità vocale, vedere [Plan for VoIP aziendale resiliency in Skype for Business Server](enterprise-voice-resiliency.md).
+Se è necessaria la resilienza del sito derivato, è necessario distribuire nel sito derivato un Survivable Branch Appliance o una combinazione di Front End Server, Mediation Server e gateway. Il presupposto con resilienza del sito di succursale è che la presenza e le conferenze non siano resilienti nel sito. Per indicazioni sulla pianificazione del sito di succursale per la funzionalità [vocale, vedere Plan for VoIP aziendale resiliency in Skype for Business Server](enterprise-voice-resiliency.md).
   
 Per le interazioni con un IP-PBX, se l'IP-PBX non supporta correttamente le interazioni multimediali iniziali con più finestre di dialogo iniziali e le interazioni RFC 3960, è possibile ritagliare le prime parole del messaggio di saluto per le chiamate in arrivo dall'IP-PBX agli endpoint Skype for Business. Questo problema può essere più grave se un Mediation Server in un sito centrale instrada le chiamate per un IP-PBX in cui la route termina in un sito di succursale, perché è necessario più tempo per il completamento della segnalazione. Se si verifica questo comportamento, la distribuzione di un Mediation Server nel sito di succursale è l'unico modo per ridurre il ritaglio delle prime parole.
   
 Infine, se nel sito centrale è presente un sistema PBX TDM o se il sistema IP-PBX richiede un gateway PSTN, è necessario distribuire un gateway nella route di chiamata che connette il server Mediation Server e il sistema PBX.
   
 > [!NOTE]
-> Per migliorare le prestazioni multimediali del Mediation Server autonomo, è consigliabile abilitare il ridimensionamento sul lato ricezione (RSS) sulle schede di rete in questi server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere "Miglioramenti della scalabilità sul lato [ricezione in Windows Server"](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh997036(v=ws.11)). Per informazioni dettagliate su come abilitare RSS, vedere la documentazione della scheda di rete. 
+> Per migliorare le prestazioni multimediali del Mediation Server autonomo, è consigliabile abilitare il ridimensionamento sul lato ricezione (RSS) sulle schede di rete in questi server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, [vedere "Miglioramenti della scalabilità sul lato ricezione in Windows Server"](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh997036(v=ws.11)). Per informazioni dettagliate su come abilitare RSS, vedere la documentazione della scheda di rete. 

@@ -1,28 +1,23 @@
 ---
 title: Definire trunk aggiuntivi in Generatore di topologie in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: e68b8377-50a2-452a-bf5c-910929e34236
 description: 'Riepilogo: informazioni su come definire un trunk aggiuntivo tra un Mediation Server e un peer gateway in Generatore di topologie in Skype for Business Server.'
-ms.openlocfilehash: 9e9927e4e62590ae9e901ed090ecfd80cc64533b
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60857943"
 ---
+
 # <a name="define-additional-trunks-in-topology-builder-in-skype-for-business-server"></a>Definire trunk aggiuntivi in Generatore di topologie in Skype for Business Server
  
 **Riepilogo:** Informazioni su come definire un trunk aggiuntivo tra un Mediation Server e un peer gateway in Generatore di topologie in Skype for Business Server.
@@ -36,9 +31,9 @@ Un trunk è una connessione logica tra un Mediation Server e un gateway.
   
 ### <a name="to-define-an-additional-trunk-between-a-mediation-server-and-a-gateway-peer"></a>Per definire un trunk aggiuntivo tra un Mediation Server e un peer gateway
 
-1. Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server 2015** e quindi Skype for Business Server Generatore di topologie **2015**.
+1. Start Topology Builder: click **Start**, click **All Programs**, click **Skype for Business Server 2015**, and then click **Skype for Business Server 2015Topology Builder**.
     
-2. In Skype for Business Server nome del sito, **Componenti condivisi,** fare clic con il pulsante destro del mouse sul nodo **Trunk e** quindi scegliere **Nuovo trunk.**
+2. In Skype for Business Server nome del sito, **Componenti condivisi**, fare clic con il pulsante destro del mouse sul nodo **Trunk e** quindi scegliere **Nuovo trunk**.
    1. In **Definisci nuovo trunk**, specificare un nome descrittivo per identificare in modo univoco il trunk. Non è possibile definire due trunk con lo stesso nome.
     
       > [!NOTE]
@@ -57,7 +52,7 @@ Un trunk è una connessione logica tra un Mediation Server e un gateway.
 6. In **Porta Mediation Server associata** digitare la porta di attesa che il Mediation Server riceverà i messaggi SIP dal peer.
     
     > [!NOTE]
-    > Con il supporto di più trunk in Skype for Business Server, non è possibile configurare due trunk con nomi trunk diversi con la stessa porta **Mediation Server** associata e porta di attesa per il **gateway IP/PSTN**
+    > Con il supporto di più trunk in Skype for Business Server, non è possibile configurare due trunk con nomi trunk diversi con la stessa porta **Mediation Server** associata e la stessa porta di attesa per il **gateway IP/PSTN**
   
     > [!NOTE]
     > Con il supporto di più trunk Skype for Business Server, è possibile definire più porte di segnalazione SIP nel Mediation Server per le comunicazioni con più peer. Quando si definisce un trunk, il numero di porta **del Mediation Server** associato deve essere compreso nell'intervallo delle porte di attesa per il rispettivo protocollo consentito dal Mediation Server. Questo intervallo di porte è definito in pool Skype for Business Server e Mediation Server. Fare clic con il pulsante destro del mouse sul pool Mediation Server pertinente e **scegliere Modifica proprietà**. Specificare l'intervallo di porte nel campo **Porte di attesa**.

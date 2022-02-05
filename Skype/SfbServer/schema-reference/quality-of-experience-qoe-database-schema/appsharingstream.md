@@ -1,25 +1,20 @@
 ---
 title: Tabella AppSharingStream
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 391490cb-d7b8-44ca-b4d1-429600da909c
 description: La tabella AppSharingStream include la metrica QoE (Quality of Experience) per i flussi di rete utilizzati per la condivisione di applicazioni. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 6bd74e7e67a5292382a09f6a4cba7fb73fb9c100
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60862003"
 ---
+
 # <a name="appsharingstream-table"></a>Tabella AppSharingStream
  
 La tabella AppSharingStream include la metrica QoE (Quality of Experience) per i flussi di rete utilizzati per la condivisione di applicazioni. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
@@ -28,7 +23,7 @@ La tabella AppSharingStream include la metrica QoE (Quality of Experience) per i
 |:-----|:-----|:-----|:-----|
 |**ConferenceDateTime** <br/> |dateTime  <br/> |Primaria/o, esterna/o  <br/> |Data e ora di avvio della sessione.  <br/> |
 |**SessionSeq** <br/> |int  <br/> |Primaria/o, esterna/o  <br/> |Identificatore sequenziale utilizzato per distinguere tra loro sessioni avviate nella stessa data alla stessa ora.  <br/> |
-|**MediaLineLabel** <br/> |tinyint  <br/> |Primaria, esterna  <br/> | Vedi [MediaLine Table.](./medialine-0.md) <br/> |
+|**MediaLineLabel** <br/> |tinyint  <br/> |Primaria, esterna  <br/> | Vedi [MediaLine Table](./medialine-0.md). <br/> |
 |**StreamID** <br/> |int  <br/> |Principale  <br/> |Identificatore univoco del flusso di condivisione di applicazioni.  <br/> |
 |**JitterInterArrival** <br/> |int  <br/> ||Instabilità media rilevata tra gli arrivi dei pacchetti RTP (Real-Time Transport Protocol). L'instabilità è un indice della qualità di una chiamata. Valori di instabilità elevati sono generalmente dovuti a congestione o overload di un server di contenuti multimediali e comportano distorsione o perdita di audio.  <br/> |
 |**JitterInterArrivalMax** <br/> |int  <br/> ||Instabilità massima rilevata tra gli arrivi dei pacchetti RTP (l'instabilità è un indice della qualità di una chiamata). Valori di instabilità elevati sono generalmente dovuti a congestione o overload di un server di contenuti multimediali e comportano distorsione o perdita di audio.  <br/> |

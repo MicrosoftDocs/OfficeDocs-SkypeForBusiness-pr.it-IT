@@ -1,29 +1,24 @@
 ---
 title: Installare lo strumento di pianificazione in Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 4/5/2016
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: b95b3301-fa1e-4b96-9af4-05b43d39db8d
-description: Prima di iniziare a progettare e pianificare l'infrastruttura Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
-ms.openlocfilehash: 5d9dc6204647daf03adfab6fcf3cf091d7ba5415
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850889"
+description: 'Prima di iniziare a progettare e pianificare l''infrastruttura di Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell''infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull''installazione e sull''utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.'
 ---
+
 # <a name="install-the-planning-tool-in-skype-for-business-server-2015"></a>Installare lo strumento di pianificazione in Skype for Business Server 2015
 
-Prima di iniziare a progettare e pianificare l'infrastruttura Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
+Prima di iniziare a progettare e pianificare l'infrastruttura di Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
 
 > [!IMPORTANT]
 > Lo strumento di pianificazione richiede l'installazione da parte di un utente con diritti e autorizzazioni di amministratore nel computer in cui deve essere installato lo strumento.
@@ -58,9 +53,9 @@ Dopo aver soddisfatto i requisiti di preinstallazione, è possibile installare l
 
 2. Utilizzando Windows Explorer o una finestra di comando, individuare la directory in cui sono stati scaricati i file di installazione dello strumento di pianificazione.
 
-3. Individuare il SkypeForBusinessPlanningTool.msi. In Windows Explorer fare doppio clic sul file. Nella finestra di comando digitare il nome del file e quindi premere **INVIO** per eseguire il file.
+3. Individuare il SkypeForBusinessPlanningTool.msi. In Windows Explorer fai doppio clic sul file. Nella finestra di comando digitare il nome del file e quindi premere **INVIO** per eseguire il file.
 
-4. Nella pagina iniziale dell'installazione guidata **Skype for Business Server 2015, Planning Tool Setup Wizard,** fare clic su **Avanti.**
+4. Nella pagina iniziale **dell'installazione guidata dello Skype for Business Server 2015 fare** clic su **Avanti**.
 
 5. Leggere il **Contratto di Licenza con l'utente finale**, selezionare **Accetto i termini del Contratto di Licenza** se si sceglie di accettare le condizioni per l'utilizzo riportate nel contratto e quindi fare clic su **Avanti**.
 

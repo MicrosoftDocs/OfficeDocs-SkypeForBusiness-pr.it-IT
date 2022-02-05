@@ -1,29 +1,24 @@
 ---
 title: Rapporto elenco chiamate di Response Group in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: a2d3e08b-511b-4507-abba-8ff71aa27c8e
-description: "Riepilogo: informazioni sull'applicazione Response Group in Skype for Business Server."
-ms.openlocfilehash: df1ff0cb6e7eb4fcae8a506cf62bf075734f97eb
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837598"
+description: 'Riepilogo: informazioni sull''applicazione Response Group in Skype for Business Server.'
 ---
+
 # <a name="response-group-call-list-report-in-skype-for-business-server"></a>Rapporto elenco chiamate di Response Group in Skype for Business Server
 
 **Riepilogo:** Informazioni sull'applicazione Response Group in Skype for Business Server.
 
-L'applicazione Response Group consente a Skype for Business Server di rispondere e instradare le chiamate telefoniche in base al numero composto e, facoltativamente, alle risposte del chiamante a una serie di domande. In genere, le chiamate a Response Group non vengono instradate a una singola persona ma piuttosto a un team di persone definito gruppo di agenti. Ad esempio, se qualcuno chiama il numero di telefono dell'help desk, Skype for Business Server instradare automaticamente la chiamata al primo agente dell'help desk disponibile. In alternativa, Skype for Business Server può porre una serie di domande ("Premere 1 se si verificano problemi hardware. Premere 2 in caso di problemi software. Premere 3 se si verificano problemi di rete.") e quindi instradare la chiamata all'agente dell'help desk più appropriato in base alla risposta a tali domande.
+L'applicazione Response Group consente a Skype for Business Server di rispondere e instradare le chiamate telefoniche in base al numero composto e, facoltativamente, alle risposte del chiamante a una serie di domande. In genere, le chiamate a Response Group non vengono instradate a una singola persona ma piuttosto a un team di persone definito gruppo di agenti. Ad esempio, se qualcuno chiama il numero di telefono dell'help desk, Skype for Business Server instradare automaticamente la chiamata al primo agente dell'help desk disponibile. In alternativa, Skype for Business Server potrebbe porre una serie di domande ("Premere 1 se si verificano problemi hardware. Premere 2 in caso di problemi software. Premere 3 se si verificano problemi di rete.") e quindi instradare la chiamata all'agente dell'help desk più appropriato in base alla risposta a tali domande.
 
 Il Rapporto Elenco chiamate Response Group è una raccolta di chiamate di un determinato tipo effettuate per un determinato periodo di tempo. Il Rapporto di utilizzo di Response Group, che deve essere aperto prima di poter aprire il Rapporto Elemento chiamate Response Group, riconosce i tipi di chiamate seguenti:
 
@@ -41,7 +36,7 @@ Il Rapporto Elenco chiamate Response Group è una raccolta di chiamate di un det
 
 ## <a name="accessing-the-response-group-call-list-report"></a>Accesso al Rapporto Elenco chiamate Response Group
 
-È possibile accedere al Rapporto elenco chiamate di Response Group solo facendo clic su una delle seguenti metriche disponibili nel [Rapporto utilizzo Response Group in Skype for Business Server](response-group-usage-report.md):
+È possibile accedere al Rapporto elenco chiamate di Response Group solo facendo clic su una delle metriche seguenti disponibili nel [Rapporto utilizzo Response Group in Skype for Business Server](response-group-usage-report.md):
 
 - Chiamate ricevute
 

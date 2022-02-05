@@ -1,29 +1,24 @@
 ---
 title: Rapporto di diagnostica conferenze Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: e9edc23c-8ce8-4ab8-8786-9d22e1e51e14
 description: 'Riepilogo: informazioni sul Rapporto di diagnostica conferenze utilizzato in Skype for Business Server.'
-ms.openlocfilehash: 4e15819e220459664875e6a868c2644262885060
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837558"
 ---
+
 # <a name="conference-diagnostic-report-in-skype-for-business-server"></a>Rapporto di diagnostica conferenze Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto di diagnostica conferenze usato in Skype for Business Server.
   
-Il Rapporto di diagnostica conferenze fornisce informazioni sull'esito positivo o negativo di tutte le sessioni di conferenza. Tenere presente Skype for Business Server distinguere tra diversi tipi di errore:
+Il Rapporto di diagnostica conferenze fornisce informazioni sull'esito positivo o negativo di tutte le sessioni di conferenza. Tenere presente Skype for Business Server distingue tra diversi tipi di errore:
   
 - **Errore previsto**. Un errore previsto è tipicamente un errore solo in senso strettamente tecnico. Si immagini ad esempio che qualcuno avvii una conferenza, ma poi riagganci prima che qualcuno possa parteciparvi. Tecnicamente parlando, si tratta di un errore: la conferenza è stata avviata, ma non completata. Si tratta tuttavia di un errore previsto: se l'organizzatore annulla la conferenza prima che qualcuno possa parteciparvi, non ci si può aspettare che la conferenza venga completata.
     
@@ -47,7 +42,7 @@ Se si somma 2024 + 469 + 16 si ottiene un totale di 2.509 sessioni, tuttavia, ne
     
 ## <a name="making-the-best-use-of-the-conference-diagnostic-report"></a>Utilizzare al meglio il Rapporto di diagnostica conferenze
 
-Il Rapporto di diagnostica conferenze include una serie di grafici. Ogni colonna del grafico è un collegamento ipertestuale. Se si fa clic su una colonna, si eseguirà il [drill-down](failure-distribution-report.md) fino al Rapporto distribuzione errori Skype for Business Server per quel periodo di tempo e quel tipo di conferenza.
+Il Rapporto di diagnostica conferenze include una serie di grafici. Ogni colonna del grafico è un collegamento ipertestuale. Se si fa clic su una colonna, si eseguirà il [drill-down](failure-distribution-report.md) al Rapporto distribuzione errori in Skype for Business Server periodo di tempo e al tipo di conferenza.
   
 ## <a name="filters"></a>Filtri
 

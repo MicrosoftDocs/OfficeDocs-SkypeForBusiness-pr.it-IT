@@ -1,25 +1,20 @@
 ---
 title: tblComplianceState
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: ea82e56c-3cca-4d89-b4e6-6bcaeb1f2830
 description: tblComplianceState contiene informazioni sullo stato della conformità a livello di pool.
-ms.openlocfilehash: 96b603ac859664163339a9c5628bdec394881657
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60854011"
 ---
+
 # <a name="tblcompliancestate"></a>tblComplianceState
  
 tblComplianceState contiene informazioni sullo stato della conformità a livello di pool.

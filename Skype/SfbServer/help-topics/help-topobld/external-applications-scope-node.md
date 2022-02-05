@@ -1,27 +1,22 @@
 ---
 title: Nodo dell'ambito delle applicazioni esterne
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.ExternalApplicationsScopeNode
+  - ms.lync.tb.ExternalApplicationsScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 73b422d6-1582-4a76-aceb-690004fa02a3
-description: "Nel nodo Server applicazioni attendibili sono elencati i pool di applicazioni attendibili del sito. I pool di applicazioni attendibili contengono server che eseguono applicazioni Microsoft Unified Communications attendibili, ma non eseguono ruoli Skype for Business Server attendibili. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: 92ea2562d14b807fb9fe413c6f2a23c13a7aa7d4
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60860233"
+description: 'Nel nodo Server applicazioni attendibili sono elencati i pool di applicazioni attendibili del sito. I pool di applicazioni attendibili contengono server che eseguono applicazioni Microsoft Unified Communications attendibili, ma non eseguono ruoli Skype for Business Server attendibili. È possibile eseguire l''azione seguente:'
 ---
+
 # <a name="external-applications-scope-node"></a>Nodo dell'ambito delle applicazioni esterne
  
 Nel nodo **Server applicazioni attendibili** sono elencati i pool di applicazioni attendibili del sito. I pool di applicazioni attendibili contengono server che eseguono applicazioni Microsoft Unified Communications attendibili, ma non eseguono ruoli Skype for Business Server attendibili. È possibile eseguire l'operazione seguente:

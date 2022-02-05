@@ -1,25 +1,20 @@
 ---
 title: Esempi di sviluppo in DQC
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 8ca9bf7a-2d6f-48d5-a821-531009726525
-description: "Riepilogo: esaminare un'esercitazione e gli esempi di sviluppo per Call Quality Dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 91e6f15f167000904626dc5a90d3766283396d7c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837508"
+description: 'Riepilogo: esaminare un''esercitazione e gli esempi di sviluppo per Call Quality Dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.'
 ---
+
 # <a name="cqd-development-samples"></a>Esempi di sviluppo in DQC
 
 **Riepilogo:** Esaminare un'esercitazione e gli esempi di sviluppo per Call Quality Dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
@@ -48,7 +43,7 @@ CQD viene creato seguendo la metodologia CQM (Call Quality Methodology), quindi 
 
 ### <a name="how-the-dashboard-consumes-the-data-service"></a>Modalità di utilizzo del servizio dati nel dashboard
 
-Quando si accede alla home page CQD (ad esempio, il set di report e i report corrispondenti per un utente autenticato e autorizzato verranno recuperati http://localhost/cqd) dal servizio repository. Verrà creato un URL completo dall'ID del set di report e dal mese-anno (ID set di report è il numero intero dopo la sezione '/#/' nell'URL e per impostazione predefinita l'anno-mese corrente viene aggiunto alla fine dell'ID del set di report dopo la barra). Le definizioni dei report vengono archiviate in formato JSON e, quando vengono recuperate dal servizio repository, verranno utilizzate come input per il servizio dati. Il servizio dati genera query MDX (Multi-Dimension Expressions) basate sull'input e quindi esegue queste query MDX sul cubo per recuperare i dati per ogni report. 
+Quando si accede alla home page CQD (ad esempio, http://localhost/cqd)il set di report e i report corrispondenti per un utente autenticato e autorizzato verranno recuperati dal servizio repository. Verrà creato un URL completo dall'ID del set di report e dal mese-anno (ID set di report è il numero intero dopo la sezione '/#/' nell'URL e per impostazione predefinita l'anno-mese corrente viene aggiunto alla fine dell'ID del set di report dopo la barra). Le definizioni dei report vengono archiviate in formato JSON e, quando vengono recuperate dal servizio repository, verranno utilizzate come input per il servizio dati. Il servizio dati genera query MDX (Multi-Dimension Expressions) basate sull'input e quindi esegue queste query MDX sul cubo per recuperare i dati per ogni report. 
 
 ### <a name="building-customized-reports"></a>Creazione di report personalizzati
 
@@ -203,7 +198,7 @@ In questo esempio verrà creata una pagina Web simile a quella mostrata nella fi
 
 Per creare lo strumento visualizzatore di definizioni di report, è necessario inviare chiamate al servizio repository per recuperare le rappresentazioni di stringa JSON delle definizioni di ogni set di report desiderato. L'API repository restituirà la definizione del set di report in base a un ID set di report specificato. 
 
-Un esempio rapido è il seguente, il codice contiene un blocco che è un semplice esempio per inviare una query al servizio Repository per ottenere il contenuto di un elemento del repository in base al relativo identificatore. La parte successiva del codice (metodo processReportSetData) invia chiamate AJAX per ottenere la definizione di ogni report all'interno del set di report. Poiché l'ID nel portale Web CQD è l'ID di un set di report, la chiamata AJAX restituirà un elemento del set di report. Per ulteriori dettagli sull'API repository e in particolare su GetItems, vedere [Get Items.](get-items.md) 
+Un esempio rapido è il seguente, il codice contiene un blocco che è un semplice esempio per inviare una query al servizio Repository per ottenere il contenuto di un elemento del repository in base al relativo identificatore. La parte successiva del codice (metodo processReportSetData) invia chiamate AJAX per ottenere la definizione di ogni report all'interno del set di report. Poiché l'ID nel portale Web CQD è l'ID di un set di report, la chiamata AJAX restituirà un elemento del set di report. Per ulteriori dettagli sull'API repository e in particolare su GetItems, vedere [Get Items](get-items.md). 
 
 ```html
 <!DOCTYPE html>
@@ -330,9 +325,9 @@ In questo caso, è necessario aggiornare l'elenco di misurazioni e dimensioni. I
 
 Ecco i passaggi dettagliati per accedere alla pagina della scorecard nella figura dell'esempio fornito nell'esempio 1:
 
-1. Aggiornare le misurazioni nella variabile 'query'  `[Measures].[Audio Good Streams JPDR Count]` da e `[Measures].[Audio Poor Streams JPDR Count]` a `[Measures].[AudioPoorJPDRPercentage]` . 
+1. Aggiornare le misurazioni nella variabile 'query' da  `[Measures].[Audio Good Streams JPDR Count]` e `[Measures].[Audio Poor Streams JPDR Count]` a `[Measures].[AudioPoorJPDRPercentage]`. 
 
-2. Aggiornare i filtri. I dati JSON per i filtri nell'esempio 1 hanno un filtro, impostato sulla dimensione  `[StartDate].[Month]` . Poiché Filters è una matrice JSON, è possibile aggiungere ulteriori dimensioni all'elenco dei filtri. Ad esempio, per ottenere il client-server all'interno delle chiamate cablate per "currentMonth", è necessario disporre dei filtri seguenti:
+2. Aggiornare i filtri. I dati JSON per i filtri nell'esempio 1 hanno un filtro, impostato sulla dimensione  `[StartDate].[Month]`. Poiché Filters è una matrice JSON, è possibile aggiungere ulteriori dimensioni all'elenco dei filtri. Ad esempio, per ottenere il client-server all'interno delle chiamate cablate per "currentMonth", è necessario disporre dei filtri seguenti:
 
    ```javascript
    Filters: [
@@ -349,14 +344,14 @@ Ecco i passaggi dettagliati per accedere alla pagina della scorecard nella figur
    ],
    ```
 
-   In questo caso  `[Scenarios].[ScenarioPair]` la dimensione è impostata su uguale a `[1]&amp;[0]&amp;[1]&amp;[1]&amp;[Wired]&amp;[Wired]` . Si  `[Scenario.][ScenarioPair]` tratta di una dimensione speciale creata per semplificare la creazione di report. Ha sei valori corrispondenti a `[FirstIsServer], [SecondIsServer], [FirstInside], [SecondIsServer], [FirstConnectionType], [SecondConnectionType]` . Invece di usare una combinazione di 6 filtri per definire uno scenario, dobbiamo usare solo 1 filtro. In questo esempio, il valore si traduce nello scenario in cui: primo è server, secondo non è server, il primo è all'interno, il secondo è interno, il primo tipo di connessione è cablato e il secondo tipo di connessione è cablato, che è l'esatta definizione di  `[1]&amp;[0]&amp;[1]&amp;[1]&amp;[Wired]&amp;[Wired]` "Server-Client-Inside Wired".
+   In questo caso la dimensione  `[Scenarios].[ScenarioPair]` è impostata su uguale a `[1]&amp;[0]&amp;[1]&amp;[1]&amp;[Wired]&amp;[Wired]`. Si  `[Scenario.][ScenarioPair]` tratta di una dimensione speciale creata per semplificare la creazione di report. Ha sei valori corrispondenti a `[FirstIsServer], [SecondIsServer], [FirstInside], [SecondIsServer], [FirstConnectionType], [SecondConnectionType]`. Invece di usare una combinazione di 6 filtri per definire uno scenario, dobbiamo usare solo 1 filtro. In questo esempio,  `[1]&amp;[0]&amp;[1]&amp;[1]&amp;[Wired]&amp;[Wired]` il valore si traduce nello scenario in cui: primo è server, secondo non è server, il primo è all'interno, il secondo è interno, il primo tipo di connessione è cablato e il secondo tipo di connessione è cablato, che è l'esatta definizione di "Server-Client-Inside Wired".
 
 3. Creare un set di filtri per scenario. Ogni riga della scorecard, nella figura, rappresenta uno scenario diverso, che sarà un filtro diverso (mentre le dimensioni e le misurazioni rimangono le stesse). 
 
 4. Analizzare i risultati delle chiamate AJAX e posizionarli nella posizione corretta della tabella. Poiché si tratta principalmente di manipolazione HTML e JavaScript, non verranno fornite informazioni dettagliate qui. Il codice viene invece fornito nell'Appendice A.
 
     > [!NOTE]
-    >  Se la condivisione delle risorse tra origini è abilitata, gli utenti potrebbero riscontrare errori come "Nella risorsa richiesta non è presente alcuna intestazione "Access-Control-Allow-Origin". L'origine 'null' non consente pertanto l'accesso". Per risolvere il problema, inserire il file HTML nella cartella in cui è installato il portale (per impostazione predefinita, dovrebbe essere `%SystemDrive%\Program Files\Skype for Business 2015 CQD\CQD)` . Accedere quindi all'html tramite qualsiasi browser con l'URL  `http://<servername>/cqd/<html_file_name>` . (L'URL predefinito per il dashboard CQD locale è  `http://<servername>/cqd.` ) 
+    >  Se la condivisione delle risorse tra origini è abilitata, gli utenti potrebbero riscontrare errori come "Nella risorsa richiesta non è presente alcuna intestazione "Access-Control-Allow-Origin". L'origine 'null' non consente pertanto l'accesso". Per risolvere il problema, inserire il file HTML nella cartella in cui è installato il portale (per impostazione predefinita, dovrebbe essere `%SystemDrive%\Program Files\Skype for Business 2015 CQD\CQD)`. Accedere quindi all'html tramite qualsiasi browser con l'URL  `http://<servername>/cqd/<html_file_name>`. (L'URL predefinito per il dashboard CQD locale è  `http://<servername>/cqd.`) 
 
 ### <a name="appendix-a"></a>Appendice A
 

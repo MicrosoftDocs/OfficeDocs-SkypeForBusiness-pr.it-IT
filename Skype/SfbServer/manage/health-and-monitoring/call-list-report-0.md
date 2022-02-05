@@ -1,24 +1,19 @@
 ---
 title: Rapporto elenco chiamate in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 9739f9f0-7a37-4844-91d5-f089d2011013
 description: 'Riepilogo: informazioni sul Rapporto elenco chiamate utilizzato in Skype for Business Server.'
-ms.openlocfilehash: d56374fa317f6c7b132a9d33dcf9fef966c55625
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60864843"
 ---
+
 # <a name="call-list-report-in-skype-for-business-server"></a>Rapporto elenco chiamate in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto elenco chiamate utilizzato in Skype for Business Server.
@@ -35,7 +30,7 @@ Il rapporto Elenco chiamate offre metriche QoE (Quality of Experience) per le si
     
 - Rapporto di tempo commutazione vocale 
     
-Tuttavia, se si apre il Rapporto elenco chiamate dal Rapporto località [in Skype for Business Server](location-report.md), non verrà visualizzata alcuna di queste metriche. al contrario, vedrai metriche come queste:
+Tuttavia, se apri il Rapporto elenco chiamate dal Rapporto località [in Skype for Business Server](location-report.md), non vedrai nessuna di queste metriche, ma vedrai metriche come queste:
   
 - Roundtrip (ms)
     
@@ -59,7 +54,7 @@ Il rapporto Elenco chiamate è accessibile da qualsiasi dei rapporti seguenti:
     
 - Rapporto [prestazioni server in Skype for Business Server](server-performance.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamate scarsa)
     
-Dall'interno del Rapporto elenco chiamate è possibile accedere al Rapporto dettagli chiamata [in](call-detail-report.md) Skype for Business Server facendo clic sulla metrica Dettagli.
+Dall'interno del Rapporto elenco chiamate è possibile accedere al Rapporto dettagli chiamata [in Skype for Business Server](call-detail-report.md) facendo clic sulla metrica Dettagli.
   
 ## <a name="making-the-best-use-of-the-call-list-report"></a>Uso ottimale del rapporto Elenco chiamate
 

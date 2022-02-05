@@ -1,38 +1,33 @@
 ---
 title: Pianificare il controllo di ammissione di chiamata in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/16/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 6fda0195-4c89-4dea-82e8-624f03e3d062
-description: Informazioni sul controllo di ammissione di chiamata, che può impedire l'accesso alle chiamate se hanno una qualità multimediale scarsa, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 6260321a29ad138fae41eacb9a1bee5d322d1684
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60841078"
+description: 'Informazioni sul controllo di ammissione di chiamata, che può impedire l''accesso alle chiamate se la qualità dei supporti è scarsa, in Skype for Business Server VoIP aziendale.'
 ---
+
 # <a name="plan-for-call-admission-control-in-skype-for-business-server"></a>Pianificare il controllo di ammissione di chiamata in Skype for Business Server
 
-Informazioni sul controllo di ammissione di chiamata, che può impedire l'accesso alle chiamate se hanno una qualità multimediale scarsa, in Skype for Business Server VoIP aziendale.
+Informazioni sul controllo di ammissione di chiamata, che può impedire l'accesso alle chiamate se la qualità dei supporti è scarsa, in Skype for Business Server VoIP aziendale.
 
 Per le applicazioni basate su IP, ad esempio telefonia, video e condivisione di applicazioni, la larghezza di banda disponibile delle reti aziendali non è generalmente considerata un fattore limitante negli ambienti LAN. Nei collegamenti WAN tra i siti tuttavia la larghezza di banda della rete può essere limitata.
 
 Quando il traffico di rete esegue l'oversubscription di un collegamento WAN, vengono utilizzati meccanismi correnti come accodamento, buffering e eliminazione di pacchetti per risolvere la congestione. Il traffico in eccesso in genere viene ritardato finché non si risolve la congestione di rete o, se necessario, finché non viene eliminato il traffico. Per il traffico di dati convenzionali, in questi casi è possibile ripristinare il client di ricezione. Tuttavia, per il traffico in tempo reale, ad esempio le comunicazioni unificate, la congestione di rete non può essere risolta in questo modo, perché il traffico delle comunicazioni unificate è sensibile sia alla latenza che alla perdita di pacchetti. La congestione nella WAN può determinare una qualità percepita dagli utenti (QoE) scadente. Per il traffico in tempo reale in condizioni congestionate, è in realtà meglio negare le chiamate piuttosto che fornire connessioni di qualità scarsa.
 
-Il Servizio Controllo di ammissione di chiamata determina se è disponibile una larghezza di banda di rete sufficiente per stabilire una sessione in tempo reale di qualità accettabile. In Skype for Business Server, il controllo di ammissione di chiamata controlla il traffico in tempo reale solo per audio e video, ma non influisce sul traffico dati. Se il percorso WAN predefinito non dispone della larghezza di banda necessaria, il servizio Controllo di ammissione di chiamata può tentare di instradare la chiamata tramite un percorso Internet o la rete PSTN (Public Switched Telephone Network).
+Il Servizio Controllo di ammissione di chiamata determina se è disponibile una larghezza di banda di rete sufficiente per stabilire una sessione in tempo reale di qualità accettabile. In Skype for Business Server controllo di ammissione di chiamata controlla il traffico in tempo reale solo per audio e video, ma non influisce sul traffico dati. Se il percorso WAN predefinito non dispone della larghezza di banda necessaria, il servizio Controllo di ammissione di chiamata può tentare di instradare la chiamata tramite un percorso Internet o la rete PSTN (Public Switched Telephone Network).
 
 In questa sezione viene descritta la funzionalità di Controllo di ammissione di chiamata e viene illustrata la relativa pianificazione.
 
@@ -86,13 +81,13 @@ Se l'organizzazione supporta contenuto multimediale tramite VPN, verificare che 
 
 ### <a name="call-admission-control-of-outside-users"></a>Controllo di ammissione di chiamata di utenti esterni
 
-Il controllo di ammissione di chiamata non viene applicato oltre i limiti dell Skype for Business Server interno. Il controllo di ammissione di chiamata non può essere applicato al traffico multimediale che attraversa Internet, che non è gestito da Skype for Business Server. I controlli CAC verranno eseguiti nella parte della chiamata che attraversa la rete aziendale se l'endpoint chiamato appartiene all'organizzazione e il server perimetrale è stato aggiunto alla configurazione di rete, come descritto in Distribuzione del controllo di ammissione di [chiamata:](../../deploy/deploy-enterprise-voice/final-checklist.md)elenco di controllo finale per Skype for Business Server . Se l'endpoint chiamato non appartiene all'organizzazione, ad esempio un utente federato o PIC, non viene eseguito alcun controllo dei criteri di larghezza di banda e la chiamata in uscita ignorerà eventuali restrizioni del controllo di ammissione di chiamata.
+Il controllo di ammissione di chiamata non viene applicato oltre i limiti dell Skype for Business Server interno. Il controllo di ammissione di chiamata non può essere applicato al traffico multimediale che attraversa Internet, che non è gestito da Skype for Business Server. I controlli CAC verranno eseguiti nella parte della chiamata che attraversa la rete aziendale se l'endpoint chiamato appartiene all'organizzazione e il server perimetrale è stato aggiunto alla configurazione di rete, come descritto in Distribuzione del controllo di ammissione di chiamata: elenco di controllo finale per [Skype for Business Server](../../deploy/deploy-enterprise-voice/final-checklist.md). Se l'endpoint chiamato non appartiene all'organizzazione, ad esempio un utente federato o PIC, non viene eseguito alcun controllo dei criteri di larghezza di banda e la chiamata in uscita ignorerà eventuali restrizioni del controllo di ammissione di chiamata.
 
 ### <a name="call-admission-control-of-pstn-connections"></a>Controllo di ammissione di chiamata di connessioni PSTN
 
 Il controllo di ammissione di chiamata è applicabile nel Mediation Server indipendentemente dal fatto che sia connesso a un IP/PBX, a un gateway PSTN o a un trunk SIP. Poiché Mediation Server è un agente utente back-to-back (B2BUA), termina i supporti. Ha due lati di connessione: un lato connesso a Skype for Business Server e un lato gateway, connesso a gateway PSTN, IP/PBX o trunk SIP. Per informazioni dettagliate sulle connessioni PSTN, vedere [Plan for PSTN connectivity in Skype for Business Server](pstn-connectivity-0.md).
 
-Il controllo di ammissione di chiamata può essere applicato su entrambi i lati del Mediation Server, a meno che non sia abilitato il bypass multimediale. Se il bypass multimediale è abilitato, il traffico multimediale non attraversa il Mediation Server, ma scorre direttamente tra il client Skype for Business e il gateway. In questo caso, il controllo di ammissione di chiamata non è necessario. Per informazioni dettagliate, vedere [Plan for media bypass in Skype for Business](media-bypass.md).
+Il controllo di ammissione di chiamata può essere applicato su entrambi i lati del Mediation Server, a meno che non sia abilitato il bypass multimediale. Se il bypass multimediale è abilitato, il traffico multimediale non attraversa il Mediation Server, ma passa direttamente tra il client Skype for Business e il gateway. In questo caso, il controllo di ammissione di chiamata non è necessario. Per informazioni dettagliate, vedere [Plan for media bypass in Skype for Business](media-bypass.md).
 
 Nella figura seguente viene illustrata l'applicazione di controllo di ammissione di chiamata in connessioni PSTN con o senza il bypass multimediale abilitato.
 
@@ -138,7 +133,7 @@ La topologia dell'esempio include tre aree di rete, ovvero Nord America, EMEA e 
 
 ### <a name="associating-a-central-site-with-each-network-region"></a>Associazione di un sito centrale a ogni area di rete
 
-Il servizio controllo di ammissione di Skype for Business Server è definito per ogni area di rete. Il sito centrale selezionato deve avere la connettività di rete più efficiente e la larghezza di banda più ampia verso tutti gli altri siti nell'area di rete. La topologia di rete dell'esempio precedente mostra tre aree di rete, ognuna con un sito centrale che gestisce le decisioni relative al servizio Controllo di ammissione di chiamata. Per questo esempio l'associazione appropriata è illustrata nella tabella seguente.
+Il controllo di ammissione di chiamata richiede Skype for Business Server un sito centrale per ogni area di rete. Il sito centrale selezionato deve avere la connettività di rete più efficiente e la larghezza di banda più ampia verso tutti gli altri siti nell'area di rete. La topologia di rete dell'esempio precedente mostra tre aree di rete, ognuna con un sito centrale che gestisce le decisioni relative al servizio Controllo di ammissione di chiamata. Per questo esempio l'associazione appropriata è illustrata nella tabella seguente.
 
 > [!NOTE]
 > I siti centrali non corrispondono necessariamente a siti di rete. Negli esempi in questa documentazione alcuni siti centrali, come Chicago, Londra e Pechino, hanno lo stesso nome di alcuni siti di rete. Tuttavia, anche se un sito centrale e un sito di rete condividono lo stesso nome, il sito centrale è un elemento della topologia di Skype for Business Server, mentre il sito di rete fa parte della rete complessiva in cui risiede la topologia Skype for Business Server.
@@ -185,11 +180,11 @@ I criteri di larghezza di banda per il controllo di ammissione di chiamata posso
 > Tutti i valori della larghezza di banda del controllo di ammissione di chiamata rappresentano  *i limiti di larghezza di banda unidirezionali*  massimi.
 
 > [!NOTE]
-> Le Skype for Business Server dei criteri vocali consentono di ignorare i controlli dei criteri di larghezza di banda per le chiamate in arrivo all'utente (non per le chiamate in uscita effettuate dall'utente). Dopo l'attivazione della sessione, il consumo di larghezza di banda verrà conteggiato accuratamente. Questa impostazione dovrebbe essere usata raramente. Per informazioni dettagliate, vedere [Create or modify a voice policy and configure PSTN usage records in Skype for Business](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md) or Modify a Voice Policy and Configure [PSTN Usage Records](/previous-versions/office/lync-server-2013/lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records) nella documentazione relativa alla distribuzione.
+> Le Skype for Business Server criteri vocali consentono di ignorare i controlli dei criteri di larghezza di banda per le chiamate in arrivo all'utente (non per le chiamate in uscita effettuate dall'utente). Dopo l'attivazione della sessione, il consumo di larghezza di banda verrà conteggiato accuratamente. Questa impostazione dovrebbe essere usata raramente. Per informazioni dettagliate, vedere [Create or modify a voice policy and configure PSTN usage records in Skype for Business](../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md) or [Modify a Voice Policy and Configure PSTN Usage Records](/previous-versions/office/lync-server-2013/lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records) nella documentazione relativa alla distribuzione.
 
 Per ottimizzare l'uso della larghezza di banda su base per utente, tenere conto del tipo dei codec audio e video che verranno usati. In particolare, evitare di allocare una quantità di larghezza di banda insufficiente per un codec con uso previsto frequente. Viceversa, se si desidera impedire l'uso di un codec che richiede maggiore larghezza di banda, è consigliabile impostare la larghezza di banda massima per sessione su un valore sufficientemente basso da scoraggiarne l'uso. Per quando riguarda i contenuti audio, non tutti i codec sono disponibili per qualsiasi scenario. Ad esempio:
 
-- Le chiamate audio peer-to-peer tra endpoint di Skype for Business utilizzeranno RTAudio (8kHz) o RTAudio (16kHz) quando si fattorizza la larghezza di banda e la priorità dei codec.
+- Le chiamate audio peer-to-peer tra endpoint Skype for Business utilizzeranno RTAudio (8kHz) o RTAudio (16kHz) quando si fattorizza la larghezza di banda e la priorità dei codec.
 
 - Le conferenze telefoniche tra Skype for Business endpoint e il servizio A/V Conferencing utilizzeranno G.722 o Siren.
 
@@ -240,7 +235,7 @@ Per ogni sito di rete sarà necessario collaborare con l'amministratore della re
 In questo esempio, al sito New York nell'area Nord America sono assegnate le subnet IP seguenti: 172.29.80.0/23, 157.57.216.0/25, 172.29.91.0/23, 172.29.81.0/24. Si supponga che Bob, che di solito lavora a Detroit, si sposti nell'ufficio di New York per un corso di formazione. Quando accende il suo computer e si connette alla rete, al computer verrà assegnato un indirizzo IP in uno dei quattro intervalli prenotati per New York, ad esempio 172.29.80.103.
 
 > [!CAUTION]
-> Le subnet IP specificate durante la configurazione della rete nel server devono corrispondere al formato specificato dai computer client per poter essere utilizzate correttamente per il bypass multimediale. Un Skype for Business client utilizza l'indirizzo IP locale e maschera l'indirizzo IP con la subnet mask associata. Durante la determinazione dell'ID di bypass associato a ogni client, la funzione di registrazione confronterà l'elenco delle subnet IP associate a ogni sito di rete con la subnet fornita dal client per individuare una corrispondenza esatta. Per questo motivo è importante che le subnet immesse durante la configurazione della rete nel server siano subnet effettive, anziché virtuali. Se si distribuisce il controllo di ammissione di chiamata, ma non il bypass multimediale, il controllo di ammissione di chiamata funzionerà correttamente anche se si configurano subnet virtuali. Ad esempio, se un client accede a un computer con indirizzo IP 172.29.81.57 con una subnet mask IP di 255.255.255.0, Skype for Business richiederà l'ID bypass associato alla subnet 172.29.81.0. Se la subnet è definita come 172.29.0.0/16, anche se il client appartiene alla subnet virtuale, la funzione di registrazione non la considererà una corrispondenza esatta perché cerca nello specifico la subnet 172.29.81.0. Di conseguenza, è importante che l'amministratore immissione di subnet esattamente come fornito dai client Skype for Business (di cui viene eseguito il provisioning con subnet durante la configurazione di rete in modo statico o da DHCP).
+> Le subnet IP specificate durante la configurazione della rete nel server devono corrispondere al formato specificato dai computer client per poter essere utilizzate correttamente per il bypass multimediale. Un Skype for Business client accetta l'indirizzo IP locale e maschera l'indirizzo IP con la subnet mask associata. Durante la determinazione dell'ID di bypass associato a ogni client, la funzione di registrazione confronterà l'elenco delle subnet IP associate a ogni sito di rete con la subnet fornita dal client per individuare una corrispondenza esatta. Per questo motivo è importante che le subnet immesse durante la configurazione della rete nel server siano subnet effettive, anziché virtuali. Se si distribuisce il controllo di ammissione di chiamata, ma non il bypass multimediale, il controllo di ammissione di chiamata funzionerà correttamente anche se si configurano subnet virtuali. Ad esempio, se un client accede a un computer con indirizzo IP 172.29.81.57 con una subnet mask IP di 255.255.255.0, Skype for Business richiederà l'ID bypass associato alla subnet 172.29.81.0. Se la subnet è definita come 172.29.0.0/16, anche se il client appartiene alla subnet virtuale, la funzione di registrazione non la considererà una corrispondenza esatta perché cerca nello specifico la subnet 172.29.81.0. È pertanto importante che l'amministratore immissione di subnet esattamente come fornito dai client Skype for Business (di cui viene eseguito il provisioning con subnet durante la configurazione della rete in modo statico o tramite DHCP).
 
 ## <a name="best-practices-for-call-admission-control"></a>Procedure consigliate per il controllo di ammissione di chiamata
 

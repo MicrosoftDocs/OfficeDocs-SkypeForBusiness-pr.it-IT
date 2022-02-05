@@ -1,27 +1,22 @@
 ---
 title: Elenco di certificati
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.dep.DeployCertList
+  - ms.lync.dep.DeployCertList
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: aaa6b123-b8cd-4b22-846b-8e02beb428b9
-description: Per assegnare un certificato, selezionare un certificato dall'archivio certificati locale. Fare clic su Avanti per continuare.
-ms.openlocfilehash: 3abba1092a4f7a0d7898c3ab1924e69eb2a62a60
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60854660"
+description: 'Per assegnare un certificato, selezionare un certificato dall''archivio certificati locale. Fare clic su Avanti per continuare.'
 ---
+
 # <a name="certificate-list"></a>Elenco di certificati
  
 Per assegnare un certificato, selezionare un certificato dall'archivio certificati locale. Fare clic su **Avanti** per continuare.

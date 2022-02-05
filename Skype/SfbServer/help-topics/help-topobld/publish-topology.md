@@ -1,27 +1,22 @@
 ---
 title: Pubblicare la topologia
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.PublishTopologyStartPage
+  - ms.lync.tb.PublishTopologyStartPage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 2ea9613d-e74f-434b-aa51-eaaab206ff1e
-description: La pagina Pubblica topologia viene visualizzata all'inizio del processo di pubblicazione. Leggere e verificare che le attività elencate siano state completate prima di continuare. Quando si è pronti per procedere, fare clic su Avanti. Se è necessario annullare il processo di pubblicazione, fare clic su Annulla.
-ms.openlocfilehash: 7a3b3590ca896cb98c7df6ab4adbe6db3c0248e7
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60853050"
+description: 'La pagina Pubblica topologia viene visualizzata all''inizio del processo di pubblicazione. Leggere e verificare che le attività elencate siano state completate prima di continuare. Quando si è pronti per procedere, fare clic su Avanti. Se è necessario annullare il processo di pubblicazione, fare clic su Annulla.'
 ---
+
 # <a name="publish-topology"></a>Pubblicare topologia
  
 La pagina **Pubblica topologia** viene visualizzata all'inizio del processo di pubblicazione. Leggere e verificare che le attività elencate siano state completate prima di continuare. Quando si è pronti per procedere, fare clic su **Avanti**. Se è necessario annullare il processo di pubblicazione, fare clic su **Annulla**.

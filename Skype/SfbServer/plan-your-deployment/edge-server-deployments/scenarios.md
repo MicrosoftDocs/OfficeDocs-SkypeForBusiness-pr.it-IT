@@ -1,28 +1,23 @@
 ---
 title: Scenari di server perimetrali in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 audience: ITPro
 ms.topic: conceptual
 manager: serdars
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Hybrid
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Hybrid
+ms.custom: null
 ms.assetid: 7b9c211b-deb0-479d-b184-973f08b96d07
-description: 'Riepilogo: esaminare questi scenari per pianificare la topologia di server perimetrali in Skype for Business Server.'
-ms.openlocfilehash: f70dbf858757469d21ebb8b2e6d1ae5192ed0118
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60838528"
+description: 'Riepilogo: esaminare questi scenari per pianificare la topologia dei server perimetrali in Skype for Business Server.'
 ---
+
 # <a name="edge-server-scenarios-in-skype-for-business-server"></a>Scenari di server perimetrali in Skype for Business Server
  
 **Riepilogo:** Esaminare questi scenari per pianificare la topologia di server perimetrali in Skype for Business Server.
@@ -66,7 +61,7 @@ Con questo scenario, non è disponibile alcuna opzione per la disponibilità ele
   
 ![Perimetro di rete per edge Scenario singolo consolidato perimetrali.](../../media/Plan_LyncServer_Edge_NetPerimeter_SingleConsolidatedEdge.jpg)
   
-## <a name="scaled-consolidated-skype-for-business-server-edge-pool-with-dns-load-balancing-and-private-ip-addresses-and-nat"></a>Pool di server perimetrali Skype for Business Server con scalabilità consolidata, con bilanciamento del carico DNS e indirizzi IP privati e NAT
+## <a name="scaled-consolidated-skype-for-business-server-edge-pool-with-dns-load-balancing-and-private-ip-addresses-and-nat"></a>Pool di server perimetrali Skype for Business Server con scalabilità consolidata, con bilanciamento del carico DNS, indirizzi IP privati e NAT
 
 Con questo scenario, è possibile disporre di disponibilità elevata nella distribuzione edge, che offre i vantaggi del supporto della scalabilità e del failover.
   

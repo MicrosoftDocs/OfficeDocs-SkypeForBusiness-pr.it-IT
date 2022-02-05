@@ -1,28 +1,23 @@
 ---
 title: Pianificare la distribuzione di Advanced Edge Server per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 audience: ITPro
 ms.topic: conceptual
 manager: serdars
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Hybrid
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Hybrid
+ms.custom: null
 ms.assetid: f3a5895f-f64f-44eb-9a5e-8d606ac1fc38
-description: Esaminare gli scenari Skype for Business Server opzioni di distribuzione, sia che si desideri un singolo server che un pool di server con DNS o HLB.
-ms.openlocfilehash: 5fa829bf805529792abb408cd6716e2948dd69ef
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60842769"
+description: 'Esaminare gli scenari Skype for Business Server opzioni di distribuzione, sia che si desideri un singolo server che un pool di server con DNS o HLB.'
 ---
+
 # <a name="plan-advanced-edge-server-deployment-for-skype-for-business-server"></a>Pianificare la distribuzione di Advanced Edge Server per Skype for Business Server
  
 **Riepilogo:** Esaminare gli scenari per Skype for Business Server di distribuzione. Che si desideri un singolo server o si preferisca un pool di server con DNS o HLB, questo argomento dovrebbe essere utile.
@@ -79,9 +74,9 @@ Il servizio di individuazione automatica è sempre preferito perché è il metod
   
 Se si è propensi a farlo, è possibile configurare il dispositivo mobile per l'individuazione manuale dei servizi. Se si desidera eseguire questa operazione, ogni utente deve configurare le impostazioni del dispositivo mobile con gli URI del servizio di individuazione automatica interni ed esterni completi, inclusi il protocollo e il percorso, come indicato di seguito:
   
-- Per l'accesso esterno: https:// \<ExtPoolFQDN\> /Autodiscover/autodiscoverservice.svc/Root
+- Per l'accesso esterno: https://\<ExtPoolFQDN\>/Autodiscover/autodiscoverservice.svc/Root
     
-- Per l'accesso interno: https:// \<IntPoolFQDN\> /AutoDiscover/AutoDiscover.svc/Root
+- Per l'accesso interno: https://\<IntPoolFQDN\>/AutoDiscover/AutoDiscover.svc/Root
     
 È consigliabile utilizzare l'individuazione automatica anziché l'individuazione manuale. Tuttavia, se si stanno eseguendo alcune operazioni di risoluzione dei problemi o test, le impostazioni manuali possono essere molto utili.
   
@@ -106,11 +101,11 @@ I record DNS per le zone interne ed esterne verranno elencati qui, ma è possibi
     
   - Record DNS A e AAAA (se si utilizza l'indirizzamento IPv6) per l'interfaccia interna di Edge per ogni server perimetrale Skype for Business Server nella rete perimetrale.
     
-  - Record DNS A e AAAA (se si utilizza l'indirizzamento IPv6) per l'interfaccia  interna di ogni server proxy inverso nella rete perimetrale (facoltativo per la gestione di un proxy inverso).
+  - Record DNS A e AAAA (se si utilizza l'indirizzamento IPv6) per l'interfaccia interna di ogni server proxy inverso nella rete perimetrale (facoltativo  per la gestione di un proxy inverso).
     
   - Dns A and AAAA (if you're using IPv6 addressing) and SRV records for internal Skype for Business Server client autoconfiguration (which is **optional** ).
     
-  - Record DNS A e AAAA (se si utilizza l'indirizzamento IPv6) o record CNAME per l'individuazione automatica dei servizi Web Skype for Business Server **(facoltativo).**
+  - Record DNS A e AAAA (se si utilizza l'indirizzamento IPv6) o record CNAME per l'individuazione automatica dei servizi Web Skype for Business Server (**facoltativo**).
     
 - Tutte le Skype for Business Server perimetrali interne nella rete perimetrale utilizzano questa zona DNS interna per la risoluzione delle query contoso.com.
     
@@ -151,7 +146,7 @@ Per approfondire l'esempio, non funziona:
     
      *Un utente che accede come tim@litwareinc.com non funziona per la configurazione automatica, perché il suo dominio SIP (litwareinc.com) non corrisponde al dominio nel pool (fabrikam.com).* 
     
-Ora che sappiamo tutto questo, se è necessario un requisito automatico per i client Skype for Business senza DNS split brain, sono disponibili queste opzioni:
+Ora che sappiamo tutto questo, se hai bisogno di requisiti automatici per i client Skype for Business senza DNS split brain, hai queste opzioni:
   
 - **Oggetti Criteri di gruppo (GPO)**
     
@@ -168,7 +163,7 @@ Ora che sappiamo tutto questo, se è necessario un requisito automatico per i cl
     
 - **Area interna pin-point**
     
-    Se la creazione di un'intera zona nel DNS interno non è un'opzione, è possibile creare zone pin-point (dedicate) che corrispondono ai record SRV necessari per la configurazione automatica e popolare tali zone utilizzando dnscmd.exe. Dnscmd.exe è necessario perché l'interfaccia utente DNS non supporta la creazione di zone pin-point.
+    Se la creazione di un'intera zona nel DNS interno non è un'opzione, è possibile creare zone pin-point (dedicate) che corrispondono ai record SRV necessari per la configurazione automatica e popolare tali aree utilizzando dnscmd.exe. Dnscmd.exe è necessario perché l'interfaccia utente DNS non supporta la creazione di zone pin-point.
     
     Ad esempio, se il dominio SIP è contoso.com e si dispone di un pool Front End denominato pool01 contenente due Front End Server, nel DNS interno saranno necessarie le seguenti zone di punti di ancoraggio e record A:
     
@@ -203,22 +198,22 @@ Ora che sappiamo tutto questo, se è necessario un requisito automatico per i cl
 ## <a name="dns-disaster-recovery"></a>Ripristino di emergenza DNS
 <a name="DNSDR"> </a>
 
-Per configurare DNS per reindirizzare Skype for Business Server traffico Web ai siti di ripristino di emergenza e failover, è necessario utilizzare un provider DNS che supporti GeoDNS. È possibile configurare i record DNS per supportare il ripristino di emergenza, in modo che le funzionalità che utilizzano i servizi Web continuino anche se un intero pool Front End non è più in funzione. Questa funzionalità di ripristino di emergenza supporta gli URL semplici di individuazione automatica, meet e accesso remoto.
+Per configurare DNS per reindirizzare Skype for Business Server web ai siti di ripristino di emergenza e failover, è necessario utilizzare un provider DNS che supporti GeoDNS. È possibile configurare i record DNS per supportare il ripristino di emergenza, in modo che le funzionalità che utilizzano i servizi Web continuino anche se un intero pool Front End non è più in funzione. Questa funzionalità di ripristino di emergenza supporta gli URL semplici di individuazione automatica, meet e accesso remoto.
   
-È possibile definire e configurare record A (AAAA) host DNS aggiuntivi se si utilizza IPv6 per la risoluzione interna ed esterna dei servizi Web presso il provider GeoDNS. I dettagli seguenti presuppongono che i pool associati, geograficamente dislocati, e che geoDNS supportato dal **provider** abbia **DNS** round robin o sia configurato per l'utilizzo di Pool1 come primario ed esepari il pool2 in caso di perdita di comunicazioni o interruzione dell'alimentazione.
+È possibile definire e configurare record A (AAAA) host DNS aggiuntivi se si utilizza IPv6 per la risoluzione interna ed esterna dei servizi Web presso il provider GeoDNS. I dettagli seguenti presuppongono che i pool associati, geograficamente dislocati, e che geoDNS supportato **dal provider abbia** **DNS round** robin o sia configurato per l'utilizzo di Pool1 come primario ed esepari il pool2 in caso di perdita di comunicazioni o interruzione dell'alimentazione.
   
 Tutti i record DNS in questa tabella sono esempi.
   
 |**Record GeoDNS**|**Record del pool**|**Record CNAME**|**Impostazioni DNS (selezionare un'opzione)**|
 |:-----|:-----|:-----|:-----|
-|Meet-int.geolb.contoso.com  <br/> |Pool1InternalWebFQDN.contoso.com  <br/> Pool2InternalWebFQDN.contoso.com  <br/> |Meet.contoso.com da Meet-int.geolb.contoso.com  <br/>   <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
-|Meet-ext.geolb.contoso.com  <br/> |Pool1ExternalWebFQDN.contoso.com  <br/> Pool2ExternalWebFQDN.contoso.com  <br/> |Meet.contoso.com a Meet-ext.geolb.contoso.com  <br/>   <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
-|Dialin-int.geolb.contoso.com  <br/> |Pool1InternalWebFQDN.contoso.com  <br/> Pool2InternalWebFQDN.contoso.com  <br/> |Meet.contoso.com da Meet-int.geolb.contoso.com   <br/>  <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
-|Dialin-ext.geolb.contoso.com  <br/> |Pool1ExternalWebFQDN.contoso.com  <br/> Pool2ExternalWebFQDN.contoso.com  <br/> |Meet.contoso.com a Meet-ext.geolb.contoso.com  <br/>  <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
-|Lyncdiscoverint-int.geolb.contoso.com  <br/> |Pool1InternalWebFQDN.contoso.com  <br/> Pool2InternalWebFQDN.contoso.com  <br/> |Meet.contoso.com da Meet-int.geolb.contoso.com   <br/>   <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
-|Lyncdiscover-ext.geolb.contoso.com  <br/> |Pool1ExternalWebFQDN.contoso.com  <br/> Pool2ExternalWebFQDN.contoso.com  <br/> |Meet.contoso.com a Meet-ext.geolb.contoso.com  <br/>  <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
-|Scheduler-int.geolb.contoso.com  <br/> |Pool1InternalWebFQDN.contoso.com  <br/> Pool2InternalWebFQDN.contoso.com  <br/> |Meet.contoso.com da Meet-int.geolb.contoso.com   <br/>  <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
-|Scheduler-ext.geolb.contoso.com  <br/> |Pool1ExternalWebFQDN.contoso.com  <br/> Pool2ExternalWebFQDN.contoso.com  <br/> |Meet.contoso.com a Meet-ext.geolb.contoso.com   <br/>  <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
+|Meet-int.geolb.contoso.com  <br/> |Pool1InternalWebFQDN.contoso.com  <br/> Pool2InternalWebFQDN.contoso.com  <br/> |Meet.contoso.com a Meet-int.geolb.contoso.com  <br/>   <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
+|Meet-ext.geolb.contoso.com  <br/> |Pool1ExternalWebFQDN.contoso.com  <br/> Pool2ExternalWebFQDN.contoso.com  <br/> |Meet.contoso.com da Meet-ext.geolb.contoso.com  <br/>   <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
+|Dialin-int.geolb.contoso.com  <br/> |Pool1InternalWebFQDN.contoso.com  <br/> Pool2InternalWebFQDN.contoso.com  <br/> |Meet.contoso.com a Meet-int.geolb.contoso.com   <br/>  <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
+|Dialin-ext.geolb.contoso.com  <br/> |Pool1ExternalWebFQDN.contoso.com  <br/> Pool2ExternalWebFQDN.contoso.com  <br/> |Meet.contoso.com da Meet-ext.geolb.contoso.com  <br/>  <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
+|Lyncdiscoverint-int.geolb.contoso.com  <br/> |Pool1InternalWebFQDN.contoso.com  <br/> Pool2InternalWebFQDN.contoso.com  <br/> |Meet.contoso.com a Meet-int.geolb.contoso.com   <br/>   <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
+|Lyncdiscover-ext.geolb.contoso.com  <br/> |Pool1ExternalWebFQDN.contoso.com  <br/> Pool2ExternalWebFQDN.contoso.com  <br/> |Meet.contoso.com da Meet-ext.geolb.contoso.com  <br/>  <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
+|Scheduler-int.geolb.contoso.com  <br/> |Pool1InternalWebFQDN.contoso.com  <br/> Pool2InternalWebFQDN.contoso.com  <br/> |Meet.contoso.com a Meet-int.geolb.contoso.com   <br/>  <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
+|Scheduler-ext.geolb.contoso.com  <br/> |Pool1ExternalWebFQDN.contoso.com  <br/> Pool2ExternalWebFQDN.contoso.com  <br/> |Meet.contoso.com da Meet-ext.geolb.contoso.com   <br/>  <br/> |Round robin tra pool  <br/> **OR** <br/> Usa principale, connettiti a secondario in caso di errore  <br/> |
    
 ## <a name="dns-load-balancing"></a>Bilanciamento del carico DNS
 <a name="DNSLB"> </a>
@@ -248,7 +243,7 @@ Il bilanciamento del carico DNS consente di:
   
 - Bilanciamento del carico SIP da server a server nei server perimetrali.
     
-- Bilanciamento del carico Delle applicazioni UCAS (Unified Communication Application Services), ad esempio Operatore automatico Conferencing, Response Group e Parcheggio di chiamata.
+- Bilanciamento del carico Delle applicazioni UCAS (Unified Communication Application Services), ad esempio Operatore automatico Conferenza, Response Group e Parcheggio di chiamata.
     
 - Impedire nuove connessioni alle applicazioni UCAS (noto anche come drenaggio).
     
@@ -258,7 +253,7 @@ Non è possibile utilizzare il bilanciamento del carico DNS per:
   
 - Traffico Web da client a server per i Front End Server o un Director.
     
-Per informazioni più approfondite sulla selezione di un record DNS SRV quando più record DNS vengono restituiti da una query, il servizio Access Edge seleziona sempre il record con la priorità numerica più bassa e, se è necessario un tie-breaker, il peso numerico più alto. Ciò è coerente con la [documentazione relativa all'Internet Engineering Task Force.](https://www.ietf.org/rfc/rfc2782.txt)
+Per informazioni più approfondite sulla selezione di un record DNS SRV quando più record DNS vengono restituiti da una query, il servizio Access Edge seleziona sempre il record con la priorità numerica più bassa e, se è necessario un tie-breaker, il peso numerico più alto. Ciò è coerente con la [documentazione della Internet Engineering Task Force](https://www.ietf.org/rfc/rfc2782.txt).
   
 Ad esempio, se il primo record DNS SRV ha un peso di 20 e una priorità di 40 e il secondo record DNS SRV ha un peso di 10 e una priorità di 50, verrà scelto il primo record perché ha la priorità inferiore di 40. La priorità viene sempre prima di tutto e questo è l'host a cui un client sarà destinatario per primo. Cosa succede se sono presenti due destinazioni con la stessa priorità? 
   

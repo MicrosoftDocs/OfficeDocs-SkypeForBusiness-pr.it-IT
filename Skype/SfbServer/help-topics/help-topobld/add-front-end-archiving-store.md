@@ -1,30 +1,25 @@
 ---
 title: Aggiungere l'archivio per Front End Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddFrontEndArchivingStorePage
+  - ms.lync.tb.AddFrontEndArchivingStorePage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: ce1723eb-7c93-424a-a622-9c888bf6d3bc
-description: L'archiviazione richiede un'edizione a 64 bit supportata del software Microsoft SQL Server database per archiviare i dati di archiviazione. È possibile selezionare un database di SQL Server definito in precedenza da utilizzare per l'archiviazione oppure definire un nuovo database di SQL Server specificando un nome di dominio completo (FQDN) del server in cui si trova il database di SQL Server, oltre all'istanza di SQL Server che si desidera utilizzare per il nuovo database di SQL Server (che può essere l'istanza predefinita o un'istanza denominata specificata).
-ms.openlocfilehash: ecf1aad9b21a3501e8f05dfdecbd5b1472846b58
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837838"
+description: 'L''archiviazione richiede un''edizione a 64 bit supportata del software Microsoft SQL Server database per archiviare i dati di archiviazione. È possibile selezionare un database SQL Server definito in precedenza da utilizzare per l''archiviazione oppure definire un nuovo database SQL Server specificando un nome di dominio completo (FQDN) del server in cui si trova il database di SQL Server, oltre all''istanza di SQL Server che si desidera utilizzare per il nuovo database. SQL Server database (che può essere l''istanza predefinita o un''istanza denominata specificata).'
 ---
+
 # <a name="add-front-end-archiving-store"></a>Aggiungere archivio front-end
 
-L'archiviazione richiede un'edizione a 64 bit supportata del software Microsoft SQL Server database per archiviare i dati di archiviazione. È possibile selezionare un database di SQL Server definito in precedenza da utilizzare per l'archiviazione oppure definire un nuovo database di SQL Server specificando un nome di dominio completo (FQDN) del server in cui si trova il database di SQL Server, oltre all'istanza di SQL Server che si desidera utilizzare per il nuovo database di SQL Server (che può essere l'istanza predefinita o un'istanza denominata specificata).
+L'archiviazione richiede un'edizione a 64 bit supportata del software Microsoft SQL Server database per archiviare i dati di archiviazione. È possibile selezionare un database SQL Server definito in precedenza da utilizzare per l'archiviazione oppure definire un nuovo database SQL Server specificando un nome di dominio completo (FQDN) del server in cui si trova il database di SQL Server, oltre all'istanza di SQL Server che si desidera utilizzare per il nuovo database. SQL Server database (che può essere l'istanza predefinita o un'istanza denominata specificata).
 
 > [!NOTE]
 > Se l'account usato per pubblicare la topologia ha le autorizzazioni e i diritti utente corretti, sarà possibile creare il database di monitoraggio durante la pubblicazione della topologia. È anche possibile creare il database successivamente, anche come parte della procedura di installazione.

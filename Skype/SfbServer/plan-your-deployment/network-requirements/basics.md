@@ -1,42 +1,37 @@
 ---
 title: Informazioni di base sul DNS
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 2618cfa1-2e2c-4f1d-a5e5-70a0286591a7
-description: Windows Server 2016 software incorporato in grado di fornire servizi DNS, è quindi possibile consultare la documentazione disponibile, ad esempio la Guida allo scenario dei criteri DNS. Se si preferisce, è possibile scegliere una soluzione di terze parti.
-ms.openlocfilehash: ca6bb3a7e7676f7eec5e7b8d384757099f012514
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60835004"
+description: 'Windows Server 2016 software incorporato in grado di fornire servizi DNS, è quindi possibile consultare la documentazione disponibile, ad esempio la Guida allo scenario dei criteri DNS. Se si preferisce, è possibile scegliere una soluzione di terze parti.'
 ---
+
 # <a name="dns-basics"></a>Informazioni di base sul DNS
  
-Windows Server 2016 software incorporato in grado di fornire servizi DNS, è quindi possibile consultare la documentazione disponibile, ad esempio la Guida allo scenario dei criteri [DNS.](/windows-server/networking/dns/deploy/dns-policy-scenario-guide) Se si preferisce, è possibile scegliere una soluzione di terze parti.
+Windows Server 2016 software incorporato in grado di fornire servizi DNS, è quindi possibile consultare la documentazione disponibile, ad esempio la [Guida allo scenario](/windows-server/networking/dns/deploy/dns-policy-scenario-guide) dei criteri DNS. Se si preferisce, è possibile scegliere una soluzione di terze parti.
   
 Come procedura consigliata, è consigliabile dedicare un server specifico nell'implementazione per fornire DNS. Si potrebbe potenzialmente configurarlo in uno dei server dedicati a uno dei ruoli del server Skype for Business, ma se il server fosse anche parte di un pool e fosse stato disattivato per errore Skype for Business non funzionarebbe fino a quando i servizi DNS non vengono nuovamente stabiliti.
   
 ## <a name="dns-records"></a>Record DNS
 
-Ogni mapping di un nome a un indirizzo IP (e che potrebbe essere un indirizzo IPv4 o IPv6) viene archiviato in un record DNS sul server DNS. Il nome è descritto nel rapporto DNS in modo specifico come FQDN, ovvero un nome di dominio completo. Anche *contoso.com* è un nome di dominio valido, è abbreviazione di *\* .contoso.com,* quindi è ambiguo e potrebbe fare riferimento a qualsiasi server nel dominio. Un esempio di fqdn che fa riferimento a un singolo server nel dominio potrebbe **essere meeting01.contoso.com**.
+Ogni mapping di un nome a un indirizzo IP (e che potrebbe essere un indirizzo IPv4 o IPv6) viene archiviato in un record DNS sul server DNS. Il nome è descritto nel rapporto DNS in modo specifico come FQDN, ovvero un nome di dominio completo. Anche *contoso.com* è un nome di dominio valido, *\** è abbreviazione di .contoso.com, quindi è ambiguo e potrebbe fare riferimento a qualsiasi server nel dominio. Un esempio di FQDN che fa riferimento a un singolo server nel dominio potrebbe essere **meeting01.contoso.com**.
   
 > [!IMPORTANT]
 > Per impostazione predefinita, il nome computer di un computer che non fa parte di un dominio è un nome host e non un nome di dominio completo (FQDN). In Generatore di topologie vengono utilizzati fqdn e non nomi host. Pertanto, è necessario configurare un suffisso DNS sul nome del computer da distribuire come server perimetrale che non fa parte di un dominio. **Utilizzare solo caratteri standard** (inclusi A-Z, a-z, 0-9 e trattini) quando si assegnano FQDN ai server che eseguono Skype for Business Server. Non utilizzare caratteri Unicode o di sottolineatura. I caratteri non standard in un nome di dominio completo spesso non sono supportati da AUTORITÀ di certificazione pubbliche e DNS esterne, ovvero quando il nome di dominio completo deve essere assegnato al nome di dominio completo nel certificato.
   
-Oltre a un indirizzo IP, il nome di dominio completo può essere mappato a un **VIP,** ovvero un indirizzo IP virtuale. Un VIP è un indirizzo IP che non corrisponde a un'interfaccia di rete fisica effettiva. Un VIP spesso punta a un pool di server che eseguono un ruolo del server o a una coppia di server configurati per la ridondanza e la tolleranza di errore.
+Oltre a un indirizzo IP, il nome di dominio completo può essere mappato a un **VIP** , ovvero un indirizzo IP virtuale. Un VIP è un indirizzo IP che non corrisponde a un'interfaccia di rete fisica effettiva. Un VIP spesso punta a un pool di server che eseguono un ruolo del server o a una coppia di server configurati per la ridondanza e la tolleranza di errore.
   
 Esistono diversi tipi di record DNS, quelli più rilevanti per questa discussione sono: 
   
-- **A:** un record address o un record Host, restituisce un indirizzo IPv4 a 32 bit. Più comunemente usato per mappare i nomi host a un indirizzo IP dell'host.
+- **A** : un record address o un record Host, restituisce un indirizzo IPv4 a 32 bit. Più comunemente usato per mappare i nomi host a un indirizzo IP dell'host.
     
 - **AAAA ,** un record di indirizzi IPv6. Restituisce un indirizzo IPv6 a 128 bit. Più comunemente usato per mappare i nomi host a un indirizzo IP dell'host.
     
@@ -47,11 +42,11 @@ Esistono diversi tipi di record DNS, quelli più rilevanti per questa discussion
 ## <a name="how-to-choose-a-sip-domain-name"></a>Come scegliere un nome di dominio SIP
 <a name="BK_NameSIP"> </a>
 
-Il nome di dominio SIP di un'organizzazione in genere è allineato agli indirizzi di posta elettronica dati agli utenti. Se un utente dell'organizzazione dispone di un indirizzo di posta elettronica come Brown@contoso.com, il preferito per un'organizzazione con il nome di dominio contoso.com è semplicemente \<sip-domain\> contoso.com.
+Il nome di dominio SIP di un'organizzazione in genere è allineato agli indirizzi di posta elettronica dati agli utenti. Se un utente dell'organizzazione dispone di un indirizzo di posta elettronica come Brown@contoso.com, \<sip-domain\> il preferito per un'organizzazione con il nome di dominio contoso.com è semplicemente contoso.com.
   
 ### <a name="multiple-sip-domains"></a>Più domini SIP
 
- L'organizzazione potrebbe in alcuni casi richiedere diversi domini SIP. Ad esempio, se Fabrikam.com è stato acquisito da contoso.com, potrebbe essere necessario creare un nuovo dominio SIP che Skype for Business Server riconosce e accetterà la connessione da. In questo caso, è necessario creare un set aggiuntivo di tutti i record DNS che utilizzano contoso.com, con nuovi FQDN che mostrano dove inviare le richieste per Fabrikam.
+ L'organizzazione potrebbe in alcuni casi richiedere diversi domini SIP. Ad esempio, se Fabrikam.com è stato acquisito da contoso.com, potrebbe essere necessario creare un nuovo dominio SIP che Skype for Business Server riconosca e accetti la connessione da. In questo caso, è necessario creare un set aggiuntivo di tutti i record DNS che utilizzano contoso.com, con nuovi FQDN che mostrano dove inviare le richieste per Fabrikam.
   
 ## <a name="dns-load-balancing"></a>Bilanciamento del carico DNS
 <a name="BK_NameSIP"> </a>

@@ -1,24 +1,19 @@
 ---
 title: Abilitare o disabilitare l'archiviazione in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: d5aed328-e89d-4a7b-b603-15ae5c33c5dd
-description: "Riepilogo: informazioni su come abilitare o disabilitare l'archiviazione in Skype for Business Server."
-ms.openlocfilehash: c2aff3706505e8977080c92259f7d73a5c2b2b17
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60839958"
+description: 'Riepilogo: informazioni su come abilitare o disabilitare l''archiviazione in Skype for Business Server.'
 ---
+
 # <a name="enable-or-disable-archiving-in-skype-for-business-server"></a>Abilitare o disabilitare l'archiviazione in Skype for Business Server
 
 **Riepilogo:** Informazioni su come abilitare o disabilitare l'archiviazione in Skype for Business Server.
@@ -37,13 +32,13 @@ ms.locfileid: "60839958"
     
    - Per abilitare l'archiviazione per le sessioni di messaggistica istantanea e le conferenze, fare clic su **Archivia sessioni di messaggistica istantanea e Web Conferencing**.
     
-   - Per disabilitare l'archiviazione per la configurazione, fare clic **su Disabilita archiviazione.**
+   - Per disabilitare l'archiviazione per la configurazione, fare clic **su Disabilita archiviazione**.
     
 5. Fare clic su **Commit**.
     
 ## <a name="enable-or-disable-archiving-by-using-windows-powershell"></a>Abilitare o disabilitare l'archiviazione tramite Windows PowerShell
 
-È inoltre possibile abilitare o disabilitare l'archiviazione utilizzando il cmdlet **Set-CsArchivingConfiguration.** Ad esempio, il comando seguente modifica tutte le impostazioni di configurazione dell'archiviazione in modo che solo le sessioni di messaggistica istantanea siano archiviate. Il comando chiama il cmdlet **Get-CsArchivingConfiguration** senza alcun parametro per restituire tutte le impostazioni di configurazione dell'archiviazione attualmente in uso nell'organizzazione. La raccolta viene quindi reindirizzata al cmdlet **Where-Object,** che seleziona solo le impostazioni in cui la proprietà EnableArchiving è uguale a (-eq) "ImAndWebConf". La raccolta filtrata viene quindi reindirizzata al cmdlet **Set-CsArchivingConfiguration,** che accetta ogni elemento della raccolta e modifica il valore di EnableArchiving in "ImOnly":
+È inoltre possibile abilitare o disabilitare l'archiviazione utilizzando il cmdlet **Set-CsArchivingConfiguration** . Ad esempio, il comando seguente modifica tutte le impostazioni di configurazione dell'archiviazione in modo che solo le sessioni di messaggistica istantanea siano archiviate. Il comando chiama il cmdlet **Get-CsArchivingConfiguration** senza alcun parametro per restituire tutte le impostazioni di configurazione dell'archiviazione attualmente in uso nell'organizzazione. La raccolta viene quindi reindirizzata al cmdlet **Where-Object** , che seleziona solo le impostazioni in cui la proprietà EnableArchiving è uguale a (-eq) "ImAndWebConf". La raccolta filtrata viene quindi reindirizzata al cmdlet **Set-CsArchivingConfiguration** , che accetta ogni elemento della raccolta e modifica il valore di EnableArchiving in "ImOnly":
   
 ```PowerShell
 Get-CsArchivingConfiguration | Where-Object {$_.EnableArchiving -eq "ImAndWebConf"} | Set-CsArchivingConfiguration -EnableArchiving "ImOnly"

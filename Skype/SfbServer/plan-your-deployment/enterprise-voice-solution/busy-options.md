@@ -1,27 +1,22 @@
 ---
 title: Pianificare le opzioni di disponibilità per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- Strat_SB_Admin
-ms.custom: ''
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 5f85c6bc-a962-4283-971c-4380d83b3a66
 description: Informazioni sulla funzionalità Opzioni occupato in Skype for Business Server.
-ms.openlocfilehash: b233260327688830a338989c14ef0eb24ade781e
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60854230"
 ---
+
 # <a name="plan-for-busy-options-for-skype-for-business-server"></a>Pianificare le opzioni di disponibilità per Skype for Business Server
  
 Informazioni sulla funzionalità Opzioni occupato in Skype for Business Server.
@@ -34,7 +29,7 @@ In questo argomento vengono descritte le funzionalità di Opzioni occupato. Per 
   
 ## <a name="configuration-options"></a>Opzioni di configurazione
 
-Se per l'organizzazione sono abilitate le opzioni occupato, tutti gli utenti dell'organizzazione, sia VoIP aziendale che non VoIP aziendale, possono utilizzare le funzionalità seguenti:
+Se per l'organizzazione è abilitata l'opzione Opzioni occupato, tutti gli utenti dell'organizzazione, sia VoIP aziendale che non VoIP aziendale, possono utilizzare le funzionalità seguenti:
   
 - Occupato su occupato - In cui le nuove chiamate in arrivo verranno rifiutate con un segnale di occupato se l'utente è occupato.
     
@@ -46,7 +41,7 @@ Indipendentemente dalla configurazione delle opzioni di disponibilità, agli ute
   
 Dopo la configurazione, l'impostazione Opzioni occupato è attiva per tutti i dispositivi e i client Skype for Business chiamata dell'utente. In base alle impostazioni di Opzioni occupato dell'utente, la chiamata rifiutata o inviata alla segreteria telefonica non squillerebbe su nessuno dei dispositivi di chiamata dell'utente, inclusi Macintosh, Windows Desktop, client mobili o telefoni IP, a cui l'utente ha eseguito l'accesso. 
   
-Gli utenti visualizzano le notifiche di chiamata senza risposta nei Skype for Business e nei dispositivi e riceveranno una notifica anche tramite posta elettronica. I chiamanti la cui chiamata è stata rifiutata a causa di Occupato su occupato visualizzano una notifica nel client Skype for Business che indica che l'utente che ha tentato di raggiungere è occupato in un'altra chiamata.
+Gli utenti visualizzano le notifiche di chiamata senza risposta nei Skype for Business e nei dispositivi e riceveranno una notifica anche tramite posta elettronica. I chiamanti la cui chiamata è stata rifiutata a causa di Occupato su occupato visualizzano una notifica nel client di Skype for Business che indica che l'utente che ha tentato di raggiungere è occupato in un'altra chiamata.
   
 È possibile configurare la funzionalità Opzioni occupato utilizzando i cmdlet di PowerShell Skype for Business per:
   

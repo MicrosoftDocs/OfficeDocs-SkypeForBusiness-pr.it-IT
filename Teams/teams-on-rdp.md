@@ -1,7 +1,7 @@
 ---
 title: Usare Teams con i servizi desktop remoto
 author: serdars
-ms.author: v-mahoffman
+ms.author: serdars
 ms.reviewer: alivano
 manager: serdars
 ms.topic: article
@@ -11,19 +11,14 @@ search.appverid: MET150
 description: Informazioni su come usare i Microsoft Teams con i servizi desktop remoto.
 ms.localizationpriority: medium
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.collection:
-- M365-collaboration
-- m365initiative-meetings
+  - M365-collaboration
+  - m365initiative-meetings
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 063ded4b2e2963ab30126c5af967017bf4981cef
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60774366"
+  - Microsoft Teams
 ---
+
 # <a name="teams-in-remote-desktop-services"></a>Teams in Servizi Desktop remoto
 
 Questo articolo descrive i requisiti e le limitazioni per l'Microsoft Teams in un ambiente di Servizi Desktop remoto.
@@ -45,16 +40,16 @@ Se l'organizzazione vuole usare solo le funzionalità di chat e collaborazione i
 
 È possibile impostare criteri usando l'interfaccia Microsoft Teams o PowerShell. La propagazione delle modifiche ai criteri potrebbe richiedere del tempo (alcune ore). Se le modifiche per un determinato account non sono immediatamente disponibili, riprovare tra qualche ora.
 
-[**Criteri di chiamata:**](teams-calling-policy.md)Teams include il criterio di chiamata DisallowCalling predefinito, in cui tutte le funzionalità di chiamata sono disattivate. Assegnare il criterio DisallowCalling a tutti gli utenti dell'organizzazione che usano Teams in un ambiente virtualizzato.
+[**Criteri di chiamata**](teams-calling-policy.md): Teams include il criterio di chiamata DisallowCalling predefinito, in cui tutte le funzionalità di chiamata sono disattivate. Assegnare il criterio DisallowCalling a tutti gli utenti dell'organizzazione che usano Teams in un ambiente virtualizzato.
 
-[**Criteri riunione:**](meeting-policies-overview.md)Teams include i criteri predefiniti per le riunioni AllOff, in cui tutte le caratteristiche della riunione sono disattivate. Assegnare il criterio AllOff a tutti gli utenti dell'organizzazione che usano Teams in un ambiente virtualizzato.
+[**Criteri riunione**](meeting-policies-overview.md): Teams include i criteri predefiniti per le riunioni AllOff, in cui tutte le caratteristiche della riunione sono disattivate. Assegnare il criterio AllOff a tutti gli utenti dell'organizzazione che usano Teams in un ambiente virtualizzato.
 
 #### <a name="assign-policies-using-the-microsoft-teams-admin-center"></a>Assegnare criteri usando l'interfaccia Microsoft Teams di amministrazione
 
 Per assegnare i criteri di chiamata DisallowCalling e i criteri della riunione AllOff a un utente:
 
 1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Utenti**.
-2. Selezionare l'utente selezionandolo a sinistra del nome utente e quindi **selezionare Modifica impostazioni.**
+2. Selezionare l'utente selezionandolo a sinistra del nome utente e quindi modifica **impostazioni**.
 3. Eseguire la procedura seguente:
 
     a.  In **Criteri di chiamata** selezionare **DisallowCalling**.
@@ -67,14 +62,14 @@ Per assegnare un criterio a più utenti contemporaneamente:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
 2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, selezionare il &#x2713; (segno di spunta) nella parte superiore della tabella.
-3. Selezionare **Modifica impostazioni,** apportare le modifiche desiderate e quindi scegliere **Applica.**
+3. Selezionare **Modifica impostazioni**, apportare le modifiche desiderate e quindi selezionare **Applica**.
 
 In caso contrario, è anche possibile eseguire la procedura seguente:
 
 1. Nel riquadro di spostamento sinistro dell Microsoft Teams di amministrazione passare al criterio da assegnare. Ad esempio:
 
-    - Passare a **Criteri**  >  **chiamate vocali** e quindi selezionare **DisallowCalling**.
-    - Passare a **Criteri**  >  **riunione riunioni** e quindi selezionare **AllOff.**
+    - Passare ai **criteri VoiceCalling** >  e quindi selezionare **DisallowCalling**.
+    - Passare a **Criteri di** **MeetingsMeeting** >  e quindi selezionare **AllOff**.
 
 2. Scegliere **Gestisci utenti**.
 3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
@@ -88,12 +83,12 @@ L'esempio seguente mostra come usare [Grant-CsTeamsCallingPolicy](/powershell/mo
 Grant-CsTeamsCallingPolicy -PolicyName DisallowCalling -Identity "user email id"
 ```
 
-Per altre informazioni sull'uso di PowerShell per gestire i criteri di chiamata, [vedere Set-CsTeamsCallingPolicy.](/powershell/module/skype/set-csteamscallingpolicy)
+Per altre informazioni sull'uso di PowerShell per gestire i criteri di chiamata, [vedere Set-CsTeamsCallingPolicy](/powershell/module/skype/set-csteamscallingpolicy).
 
-L'esempio seguente mostra come usare [Grant-CsTeamsMeetingPolicy](/powershell/module/skype/grant-csteamsmeetingpolicy) per assegnare i criteri della riunione AllOff a un utente.
+L'esempio seguente mostra come usare [Grant-CsTeamsMeetingPolicy per assegnare](/powershell/module/skype/grant-csteamsmeetingpolicy) i criteri della riunione AllOff a un utente.
 
 ```PowerShell
 Grant-CsTeamsMeetingPolicy -PolicyName AllOff -Identity "user email id"
 ```
 
-Per altre informazioni sull'uso di PowerShell per gestire i criteri delle riunioni, [vedere Set-CsTeamsMeetingPolicy.](/powershell/module/skype/set-csteamsmeetingpolicy)
+Per altre informazioni sull'uso di PowerShell per gestire i criteri delle riunioni, [vedere Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy).

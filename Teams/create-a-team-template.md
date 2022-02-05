@@ -1,7 +1,7 @@
 ---
 title: Creare un modello di team personalizzato in Microsoft Teams
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 ms.reviewer: aaglick
 manager: serdars
 ms.topic: article
@@ -11,18 +11,13 @@ search.appverid: MET150
 description: Informazioni su come creare un modello di team personalizzato in Microsoft Teams.
 ms.localizationpriority: medium
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.collection:
-- M365-collaboration
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: a7bb0805705797587f9475fe7a6ee759165e884b
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60864483"
+  - Microsoft Teams
 ---
+
 # <a name="create-a-custom-team-template-in-microsoft-teams"></a>Creare un modello di team personalizzato in Microsoft Teams
 
 **I modelli personalizzati non sono ancora supportati per i clienti EDU.**
@@ -38,15 +33,15 @@ Per iniziare:
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro **espandere** Teams  >  **Team**.
+2. Nel riquadro di spostamento **sinistro espandere Teams** >  **modelli Diam**.
 
 3. Selezionare **Aggiungi**.
 
     ![Immagine della finestra di dialogo Modelli team con l'opzione Aggiungi evidenziata.](media/team-templates-new.png)
 
-4. Nella sezione **Modelli team** selezionare Crea un **nuovo modello.**
+4. Nella sezione **Modelli del team** selezionare **Crea un nuovo modello**.
 
-5. Nella sezione **Impostazioni modello** compilare i campi seguenti e quindi selezionare **Avanti:**
+5. Nella sezione **Impostazioni modello** completare i campi seguenti e quindi selezionare **Avanti**:
     - Nome modello
     - Descrizione breve e lunga del modello
     - Visibilità delle impostazioni locali  
@@ -66,7 +61,7 @@ Per iniziare:
 
 8. Al **termine, selezionare** Invia.
 
-Il nuovo modello viene visualizzato **nell'elenco Modelli team.** Il modello può essere usato per creare un team in Teams.
+Il nuovo modello viene visualizzato **nell'elenco Modelli team** . Il modello può essere usato per creare un team in Teams.
 
 > [!Note]
 > La modifica di un modello personalizzato nella raccolta può richiedere fino a 24 ore.
@@ -96,17 +91,17 @@ Per iniziare:
 
 ## <a name="known-issues"></a>Problemi noti
 
-**Problema:** se è stato creato un team da un modello personalizzato che conteneva altre schede personalizzate, è possibile che al posto delle app per schede personalizzate venga visualizzata una scheda vuota. Le schede predefinite, ad esempio **Post,** **File** e **Wiki,** verranno visualizzate come previsto.
+**Problema**: se è stato creato un team da un modello personalizzato contenente altre schede personalizzate, al posto delle app per schede personalizzate potrebbero essere visualizzate schede vuote. Le schede predefinite, ad esempio **Post**, **File** e **Wiki**, verranno visualizzate come previsto.
 
-**Soluzione:** per risolvere il problema, rimuovere la scheda personalizzata e aggiungere una nuova scheda con la stessa app. Se non si hanno le autorizzazioni per rimuovere la scheda personalizzata e aggiungere una nuova scheda, contattare il proprietario del team per assistenza.
+**Soluzione**: per risolvere il problema, rimuovere la scheda personalizzata e aggiungere una nuova scheda con la stessa app. Se non si hanno le autorizzazioni per rimuovere la scheda personalizzata e aggiungere una nuova scheda, contattare il proprietario del team per assistenza.
 
 Stiamo lavorando a una correzione per i futuri team creati da modelli personalizzati.
 
-**Problema:** quando si usa Teams nel browser, alcuni siti Web non supportano il rendering all'interno di una Teams pagina.
+**Problema**: quando si usa Teams nel browser, alcuni siti Web non supportano il rendering all'interno di Teams pagina.
 
 ![messaggio di errore del browser.](media/browser-error-message.png)
 
-**Soluzione:** in caso di problemi di visualizzazione del contenuto della scheda del sito Web, si verrà reindirizzati all'apertura della scheda in una pagina Web separata oppure all'apertura di Teams nell'app desktop per visualizzare l'app della scheda del sito Web.
+**Soluzione**: in caso di problemi di visualizzazione del contenuto della scheda del sito Web, si verrà reindirizzati all'apertura della scheda in una pagina Web separata o all'apertura di Teams nell'app desktop per visualizzare l'app della scheda del sito Web.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -1,25 +1,20 @@
 ---
 title: Tabella endpoint
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 500f330d-4d7d-4e88-b1cc-fef9a9de6b5c
 description: La tabella Endpoint è una tabella di supporto in cui sono archiviate le informazioni sugli endpoint che hanno partecipato alle sessioni registrate nel database. Ogni record nella tabella rappresenta un endpoint.
-ms.openlocfilehash: 7e892d0e913f8b06fc78f00fbbb348774b9548d3
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60834002"
 ---
+
 # <a name="endpoint-table"></a>Tabella endpoint
  
 La tabella Endpoint è una tabella di supporto in cui sono archiviate le informazioni sugli endpoint che hanno partecipato alle sessioni registrate nel database. Ogni record nella tabella rappresenta un endpoint.

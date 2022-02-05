@@ -1,7 +1,7 @@
 ---
 title: App store personalizzate
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.reviewer: prem
 ms.topic: article
@@ -9,30 +9,25 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 ms.collection:
-- M365-collaboration
-- Teams_ITAdmin_Help
+  - M365-collaboration
+  - Teams_ITAdmin_Help
 f1.keywords:
-- NOCSH
+  - NOCSH
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni sull'archivio di app personalizzate in Microsoft Teams.
-ms.openlocfilehash: b7fd39dc1d2ced74b6153f43c78fdf7557bbd206
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60843589"
+description: Informazioni sull'app store personalizzato in Microsoft Teams.
 ---
+
 # <a name="custom-apps-store-in-microsoft-teams"></a>App personalizzate archiviate in Microsoft Teams
 
-Ora è possibile personalizzare l'app store dell'organizzazione in Teams con il marchio dell'azienda aggiungendo il logo, gli sfondi personalizzati e i colori del testo personalizzati per renderlo più invitante per gli utenti finali.
+Ora è possibile personalizzare l'app store dell'organizzazione in Teams con il marchio aziendale aggiungendo il logo, gli sfondi personalizzati e i colori del testo personalizzati per renderlo più invitante per gli utenti finali.
 
 > [!Note]
 > Le modifiche alla personalizzazione richiederanno 24 ore per l'applicazione.
 
-È possibile accedere all'archivio di personalizzazione nell'interfaccia di amministrazione **selezionando Teams personalizzazione**  >  **dell'archivio.**
+È possibile accedere all'archivio di personalizzazione nell'interfaccia di amministrazione selezionando Teams **appCustomize** >  **store**.
 
   ![Funzionalità di personalizzazione dello store della Console di amministrazione evidenziata.](media/customize-app-store.png)
 
@@ -44,9 +39,9 @@ Questo articolo descrive le caratteristiche dell'archivio app personalizzate e c
 <a name="orglogo"> </a>
 <!-- Do not remove the bookmark link above. -->
 
-Qui è possibile caricare il logo dell'organizzazione. Il logo selezionato verrà visualizzato nel client Teams **app**  >  **create per la pagina tenant.**
+Qui è possibile caricare il logo dell'organizzazione. Il logo selezionato verrà visualizzato nel client Teams app in **AppsBuilt** >  **per la pagina tenant**.
 
-Quando si seleziona **l'opzione Scegli un'immagine,** è possibile caricare il file desiderato. Il logo deve essere 240x60 oppure verrà ridimensionato in base a tale dimensione. Non deve essere superiore a 5 MB. I formati supportati sono:
+Quando si seleziona **l'opzione Scegli un'immagine** , è possibile caricare il file desiderato. Il logo deve essere 240x60 oppure verrà ridimensionato in base a tale dimensione. Non deve essere superiore a 5 MB. I formati supportati sono:
 
 - svg
 - .png
@@ -62,13 +57,13 @@ Il logo viene visualizzato nell'angolo in alto a destra del catalogo app tenant 
 
 Il logo dell'organizzazione o il logo piccolo è un'immagine o un simbolo che rappresenta il marchio dell'organizzazione e non include il nome della società. Il lovemark aiuta i membri del team a identificare lo Store delle app. Il logo selezionato verrà visualizzato nel client Teams nella pagina App.
 
-Quando si seleziona **l'opzione Scegli un'immagine,** è possibile caricare il file desiderato. Il logomark deve essere di 32x32 pixel oppure verrà ridimensionato in base a tale dimensione. Non deve essere superiore a 5 MB. I formati supportati sono:
+Quando si seleziona **l'opzione Scegli un'immagine** , è possibile caricare il file desiderato. Il logomark deve essere di 32x32 pixel oppure verrà ridimensionato in base a tale dimensione. Non deve essere superiore a 5 MB. I formati supportati sono:
 
 - svg
 - .png
 - .jpg
 
-Il piccolo logo viene visualizzato accanto al titolo della sezione **Built for tenant** nella pagina di destinazione Teams store.
+Il piccolo logo viene visualizzato accanto al **titolo della sezione Built for tenant** nella pagina di destinazione Teams store.
 
 ## <a name="customize-the-background-color"></a>Personalizzare il colore di sfondo
 
@@ -76,7 +71,7 @@ Il piccolo logo viene visualizzato accanto al titolo della sezione **Built for t
 <a name="custombackground"> </a>
 <!-- Do not remove the bookmark link above. -->
 
-Assicurarsi che lo sfondo sia abbastanza in contrasto con il testo in modo che gli utenti possano leggere il testo in modo chiaro. Lo sfondo verrà visualizzato nel client Teams **app**  >  **create per l'intestazione del tenant.**
+Assicurarsi che lo sfondo sia abbastanza in contrasto con il testo in modo che gli utenti possano leggere il testo in modo chiaro. Lo sfondo verrà visualizzato nel client Teams app In **AppsBuilt** >  **per l'intestazione del tenant**.
 
 Le opzioni disponibili sono:
 
@@ -85,9 +80,9 @@ Le opzioni disponibili sono:
   - svg
   - .png
   - .jpg
-- Scegliere uno sfondo personalizzato. Quando si seleziona **Scegli un colore personalizzato,** si apre un selettore colori. Selezionare il colore desiderato regolando la scala del selettore colori.
+- Scegliere uno sfondo personalizzato. Quando si seleziona **Scegli un colore personalizzato**, si apre un selettore colori. Selezionare il colore desiderato regolando la scala del selettore colori.
 
-L'immagine o il colore di sfondo viene usato come sfondo per il banner superiore nel Teams app tenant.
+L'immagine o il colore di sfondo viene usato come sfondo per il banner superiore nel Teams di app tenant.
 
 ## <a name="customize-the-text-color-of-your-name"></a>Personalizzare il colore del testo del nome
 
@@ -95,9 +90,9 @@ L'immagine o il colore di sfondo viene usato come sfondo per il banner superiore
 <a name="textcolor"> </a>
 <!-- Do not remove the bookmark link above. -->
 
-Assicurarsi che il colore del testo sia abbastanza in contrasto con lo sfondo, in modo che gli utenti possano leggere chiaramente il nome dell'organizzazione. Il testo verrà visualizzato nel client Teams **app**  >  **create per l'intestazione del tenant.**
+Assicurarsi che il colore del testo sia abbastanza in contrasto con lo sfondo, in modo che gli utenti possano leggere chiaramente il nome dell'organizzazione. Il testo verrà visualizzato nel client di Teams app In **AppsBuilt** >  **per l'intestazione del tenant**.
 
-Quando si seleziona **Scegli un colore personalizzato,** si apre un selettore colori. Selezionare il colore desiderato regolando la scala del selettore colori.
+Quando si seleziona **Scegli un colore personalizzato**, si apre un selettore colori. Selezionare il colore desiderato regolando la scala del selettore colori.
 
  ![il selettore colori.](media/choose-a-custom-color.png)
 
@@ -109,7 +104,7 @@ Per visualizzare in anteprima le modifiche, selezionare **Anteprima app store** 
 ![anteprima dell'app store personalizzato.](media/PowerAppsInStore650w.png)
 
 > [!Note]
-> La rappresentazione può variare rispetto alla versione finale dell'archivio app personalizzato, perché alcuni colori predefiniti si basano sulla versione di Teams client degli utenti.
+> La rappresentazione può variare rispetto alla versione finale dell'archivio app personalizzato, perché alcuni colori predefiniti si basano sulla versione di Teams client.
 
 ## <a name="related-article"></a>Articolo correlato
 

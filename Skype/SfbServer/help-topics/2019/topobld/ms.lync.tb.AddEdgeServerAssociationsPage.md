@@ -1,27 +1,22 @@
 ---
 title: Aggiungere associazioni di server perimetrali
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddEdgeServerAssociationsPage
+  - ms.lync.tb.AddEdgeServerAssociationsPage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: a58b6ba8-f491-4c37-ad45-aa46206fac51
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 description: Utilizzare questa pagina per selezionare i pool Front End e i server Standard Edition che si avvarranno del pool di server perimetrali per il traffico A/V.
-ms.openlocfilehash: 3f42afc87e71e7efa86d33938ac9699f2a1d86e6
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60852530"
 ---
+
 # <a name="add-edge-server-associations"></a>Aggiungere associazioni Edge Server
  
 Utilizzare questa pagina per selezionare i pool Front End e i server Standard Edition che si avvarranno del pool di server perimetrali per il traffico A/V. 

@@ -1,31 +1,25 @@
 ---
 title: Formazione per amministratori per Microsoft Teams
-ms.reviewer: ''
-description: Ottenere la formazione e il supporto dell'amministratore necessari per gestire Microsoft Teams all'interno dell'organizzazione.
-author: HowlinWolf-92
+ms.reviewer: null
+description: Ottenere la formazione e il supporto dell'amministratore necessari per gestire i Microsoft Teams all'interno dell'organizzazione.
+author: SerdarSoysal
 manager: serdars
 audience: admin
 ms.date: 01/22/2018
 layout: LandingPage
-ms.assetid: ''
+ms.assetid: null
 ms.service: msteams
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.collection:
-- M365-collaboration
+  - M365-collaboration
 ms.custom:
-- seo-marvel-mar2020
+  - seo-marvel-mar2020
 f1.keywords:
-- NOCSH
+  - NOCSH
 search.appverid: MET150
 ms.topic: landing-page
-ms.author: v-mahoffman
-ms.openlocfilehash: 5ba0fb0b417d99731eb5474d0d931c10ed86eab2
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60853820"
+ms.author: serdars
 ---
 # <a name="admin-training-for-microsoft-teams"></a>Formazione per amministratori per Microsoft Teams
 

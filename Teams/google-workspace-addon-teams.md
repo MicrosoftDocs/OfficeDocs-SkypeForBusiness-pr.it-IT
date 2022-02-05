@@ -1,33 +1,28 @@
 ---
 title: Configurare il Microsoft Teams riunione per Google Workspace
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 ms.reviewer: aravin
 manager: serdars
 ms.topic: article
 audience: admin
 ms.service: msteams
 searchScope:
-- Microsoft Teams
+  - Microsoft Teams
 search.appverid: MET150
 description: Scopri come configurare il componente aggiuntivo Microsoft Teams riunione per Google Workspace.
 ms.localizationpriority: medium
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.collection:
-- M365-collaboration
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: c5b3d873dd327be4cbc28d4d979ad06cb6f9c9ea
-ms.sourcegitcommit: 9ed5aecbf671accae93ac5084ad7875e82e3858b
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2021
-ms.locfileid: "61648884"
+  - Microsoft Teams
 ---
+
 # <a name="set-up-microsoft-teams-meeting-add-on-for-google-workspace"></a>Configurare il Microsoft Teams riunione per Google Workspace
 
-L'Microsoft Teams per le riunioni consente agli utenti del calendario di Google di pianificare e partecipare a una riunione Microsoft Teams direttamente da Google Workspace. Gli utenti potranno accedere alle funzionalità Teams riunioni, tra cui videoconferenze e audioconferenze, condivisione dello schermo, chat delle riunioni, lavagne digitali e altro ancora. Rimani connesso e organizzato per lavorare di più insieme in tutto il lavoro, la scuola e la vita.
+L'Microsoft Teams per le riunioni consente agli utenti del calendario di Google di pianificare e partecipare a una riunione Microsoft Teams direttamente da Google Workspace. Gli utenti avranno accesso alle funzionalità Teams riunioni, tra cui video e audioconferenze, condivisione dello schermo, chat delle riunioni, lavagne digitali e altro ancora. Rimani connesso e organizzato per lavorare di più insieme in tutto il lavoro, la scuola e la vita.
 
 Il Microsoft Teams per le riunioni di Google Workspace deve essere abilitato da un amministratore Teams prima che gli utenti del tenant possano accedere all'app.
 
@@ -39,9 +34,9 @@ Il componente aggiuntivo è abilitato per impostazione predefinita.
 
 1. Accedere al portale di Azure.
 
-2. Selezionare **Enterprise tutte le**  >  **applicazioni.**
+2. Selezionare **Enterprise tutte le** >  **applicazioni**.
 
-3. Cercare il **componente aggiuntivo Microsoft Teams riunione per Google Workspace.**
+3. Cercare il **Microsoft Teams per le riunioni per Google Workspace**.
 
    ![Portale di Azure che mostra tutte le applicazioni.](media/aad-add-google-workspace.png)
 
@@ -77,7 +72,7 @@ Per altre informazioni, vedere [Creare un'entità servizio di Azure con Azure Po
 
 ## <a name="delete-the-microsoft-teams-meeting-add-on-for-google-workspace"></a>Eliminare il componente aggiuntivo Microsoft Teams riunione per Google Workspace
 
-Per istruzioni, vedere la documentazione di Google [Eliminare un'app Google Workspace Marketplace.](https://support.google.com/a/answer/6216211?hl=en)
+Per istruzioni, vedere la documentazione [di Google Eliminare un'app Google Workspace Marketplace](https://support.google.com/a/answer/6216211?hl=en) .
 
 ## <a name="create-the-microsoft-teams-meeting-add-on-for-google-workspace-using-powershell"></a>Creare il componente aggiuntivo Microsoft Teams riunione per Google Workspace usando PowerShell
 

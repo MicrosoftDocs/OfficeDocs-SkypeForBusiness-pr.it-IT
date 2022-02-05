@@ -1,27 +1,23 @@
 ---
 title: Abilitare o disabilitare la federazione e la connettività per la messaggistica istantanea pubblica
-ms.reviewer: ''
-ms:assetid: 8ec58f4b-9f6d-47b4-a187-d18a83fe4577
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg182549(v=OCS.15)
-ms:contentKeyID: 48184813
+ms.reviewer: null
+'ms:assetid': 8ec58f4b-9f6d-47b4-a187-d18a83fe4577
+'ms:mtpsurl': 'https://technet.microsoft.com/en-us/library/Gg182549(v=OCS.15)'
+'ms:contentKeyID': 48184813
 mtps_version: v=OCS.15
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
-description: Il supporto della federazione è necessario per consentire agli utenti che dispongono di un account con un'organizzazione cliente o partner attendibile, inclusi i domini partner e gli utenti di provider di messaggistica istantanea pubblica supportati, di collaborare con gli utenti all'interno dell'organizzazione.
-ms.openlocfilehash: 638a5d0274679a9d9745656e1b2d740791185b04
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60854350"
+description: 'Il supporto della federazione è necessario per consentire agli utenti che dispongono di un account con un''organizzazione cliente o partner attendibile, inclusi i domini partner e gli utenti di provider di messaggistica istantanea pubblica supportati, di collaborare con gli utenti all''interno dell''organizzazione.'
 ---
+
+
 # <a name="enable-or-disable-federation-and-public-im-connectivity-in-skype-for-business-server"></a>Abilitare o disabilitare la federazione e la connettività di messaggistica istantanea pubblica in Skype for Business Server
 
 Il supporto della federazione è necessario per consentire agli utenti che dispongono di un account con un'organizzazione cliente o partner attendibile, inclusi i domini partner e gli utenti di provider di messaggistica istantanea pubblica supportati, di collaborare con gli utenti all'interno dell'organizzazione. La federazione è anche necessaria per poter utilizzare un provider di servizi di Exchange ospitato in modo da offrire il servizio di segreteria telefonica agli utenti di VoIP aziendale le cui cassette postali si trovano su un servizio di Exchange ospitato quale Microsoft Exchange Online. Dopo aver stabilito una relazione di trust con questi domini esterni, è possibile autorizzare gli utenti di tali domini ad accedere alla distribuzione e a partecipare alle Skype for Business Server esterne. La relazione di trust è denominata federazione e non è correlata a una relazione di trust di Active Directory né dipende da essa.
@@ -62,7 +58,7 @@ Se successivamente si desidera impedire, in modo temporaneo o permanente, l'acce
 
 7.  Fare clic su  **Commit**.
 
-Per consentire agli utenti federati di collaborare con gli utenti nella distribuzione Skype for Business Server, è inoltre necessario configurare almeno un criterio di accesso esterno per supportare l'accesso degli utenti federati. Per informazioni dettagliate, vedere [Configure policies to control federated user access](../external-access-policies/configure-policies-to-control-federated-user-access.md). Per controllare l'accesso per domini federati specifici, vedere [Configure support for allowed external domains](../sip-domains/manage-sip-federated-domains-for-your-organization.md#configure-support-for-allowed-external-domains-in-skype-for-business-server).
+Per consentire agli utenti federati di collaborare con gli utenti nella distribuzione Skype for Business Server, è inoltre necessario configurare almeno un criterio di accesso esterno per supportare l'accesso degli utenti federati. Per informazioni dettagliate, vedere [Configure policies to control federated user access](../external-access-policies/configure-policies-to-control-federated-user-access.md). Per controllare l'accesso per domini federati specifici, vedere [Configurare il supporto per i domini esterni consentiti](../sip-domains/manage-sip-federated-domains-for-your-organization.md#configure-support-for-allowed-external-domains-in-skype-for-business-server).
 
 
 ## <a name="enabling-or-disabling-federation-and-public-im-connectivity-by-using-windows-powershell-cmdlets"></a>Abilitazione o disabilitazione della federazione e della connettività di messaggistica istantanea pubblica tramite Windows PowerShell cmdlet

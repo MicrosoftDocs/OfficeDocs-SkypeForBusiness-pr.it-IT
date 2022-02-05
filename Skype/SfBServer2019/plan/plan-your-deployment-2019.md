@@ -1,29 +1,24 @@
 ---
 title: Pianificare la distribuzione Skype for Business Server 2019
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/8/2019
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
-ms.assetid: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
+ms.assetid: null
 description: 'Riepilogo: esplorare questi collegamenti per informazioni su come sviluppare progettazioni concettuali, logiche e fisiche per la configurazione di Skype for Business Server 2019, server e topologie.'
-ms.openlocfilehash: fd75f705c0307adc8819b09bb9c738dbdc9c38c3
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60863123"
 ---
+
 # <a name="plan-for-your-skype-for-business-server-2019-deployment"></a>Pianificare la distribuzione Skype for Business Server 2019
  
 **Riepilogo:** Esplorare questi collegamenti per informazioni su come sviluppare progettazioni concettuali, logiche e fisiche per la configurazione di Skype for Business Server 2019, server e topologie.
@@ -37,11 +32,11 @@ Visualizzare le risorse seguenti per informazioni su come pianificare la distrib
   
 |&nbsp;|Contenuto|Descrizione|
 |:--- |:--- |:--- |
-|![Icona per i video.](../media/get_started.png)|<UL><LI>[Skype for Business: introduzione rapida](https://www.youtube.com/watch?v=PRJqMuwW5yc&amp;feature=youtu.be) </li><li>  [Skype for Business: guida dettagliata per i nuovi utenti](https://www.youtube.com/watch?v=7_c4zVJ739M&amp;feature=youtu.be)</li></ul>   |Scopri presentazioni video e formazione per Skype for Business.    |
+|![Icona per i video.](../media/get_started.png)|<UL><LI>[Skype for Business: Introduzione rapida](https://www.youtube.com/watch?v=PRJqMuwW5yc&amp;feature=youtu.be) </li><li>  [Skype for Business: guida dettagliata per i nuovi utenti](https://www.youtube.com/watch?v=7_c4zVJ739M&amp;feature=youtu.be)</li></ul>   |Scopri presentazioni video e formazione per Skype for Business.    |
    
 ## <a name="articles-about-planning-for-skype-for-business-server"></a>Articoli sulla pianificazione di Skype for Business Server
 
-Gli articoli seguenti su come pianificare le Skype for Business Server sono disponibili per la visualizzazione online. 
+Gli articoli seguenti su come pianificare Skype for Business Server sono disponibili per la visualizzazione online. 
   
 |Pianificare le soluzioni|Pianificare l'architettura del server, i client e i dispositivi|
 |:-----|:-----|
@@ -52,7 +47,7 @@ Gli articoli seguenti su come pianificare le Skype for Business Server sono disp
 |**[Pianificare l'integrazione di Skype for Business ed Exchange](../../SfbServer/plan-your-deployment/integrate-with-exchange/integrate-with-exchange.md)** <br/><br/>L'organizzazione distribuisce sia Exchange Server che Skype for Business Server? In tal caso, leggere bout come integrare le funzionalità di entrambi i prodotti. Ad esempio, informazioni sulla presenza e archiviazione dei dati.   |**[Pianificare client e dispositivi](../../SfbServer/plan-your-deployment/clients-and-devices/clients-and-devices.md)** <br/><br/>Skype for Business Server supporta una raccolta di interfacce client che è possibile distribuire agli utenti dell'organizzazione. Una pianificazione attenta garantisce ai dipendenti di ottenere ciò di cui hanno bisogno e Skype for Business che siano disponibili ovunque si trovano.   |
 |**[Pianificare le distribuzioni dei server perimetrali in Skype for Business Server](../../SfbServer/plan-your-deployment/edge-server-deployments/edge-server-deployments.md)** <br/><br/> L'organizzazione comunica con utenti esterni alla rete interna? In tal caso, leggere come distribuire Edge Server per supportare le comunicazioni attraverso il firewall dell'organizzazione.   |**[Pianificare la disponibilità elevata e il ripristino di emergenza in Skype for Business Server](../../SfbServer/plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md)** <br/><br/>Per disponibilità elevata si intende verificare che i Skype for Business Server siano disponibili anche se uno o più server non sono disponibili. Per ripristino di emergenza si intende mantenere i servizi in esecuzione in caso di emergenza naturale o causata dall'uomo e conservare il maggior numero possibile di dati prima della emergenza. Leggere gli argomenti di questa sezione per pianificare la disponibilità elevata e il ripristino di emergenza.   |
 |**[Pianificare le conferenze in Skype for Business Server](../../SfbServer/plan-your-deployment/conferencing/conferencing.md)** <br/><br/> Quali sono i requisiti di conferenza per l'organizzazione? Informazioni sulle funzionalità e sui requisiti delle conferenze Web, delle conferenze audio/video e delle conferenze telefoniche con accesso esterno.   |**[Pianificare la sicurezza in Skype For Business Server](../../SfbServer/plan-your-deployment/security/security.md)** <br/><br/>Risorse sull'autenticazione utente, l'autenticazione da server a server e l'autenticazione delle applicazioni per comprendere e pianificare l'autenticazione in Skype for Business Server.   |
-|**[Pianificare la connettività ibrida](../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?toc=/SkypeForBusiness/sfbhybridtoc/toc.json)**  <br/><br/>Si dispone di utenti ospitati sia in locale che Skype for Business Server Skype for Business Online? In tal caso, leggere come configurare una distribuzione ibrida che sincronizza sia gli utenti locali che gli utenti online in un singolo dominio.   
+|**[Pianificare la connettività ibrida](../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?toc=/SkypeForBusiness/sfbhybridtoc/toc.json)**  <br/><br/>Si dispone di utenti ospitati sia in locale Skype for Business Server che Skype for Business Online? In tal caso, leggere come configurare una distribuzione ibrida che sincronizza sia gli utenti locali che gli utenti online in un singolo dominio.   
    
 ## <a name="additional-resources-about-planning-for-skype-for-business-server"></a>Risorse aggiuntive sulla pianificazione di Skype for Business Server
 
@@ -61,5 +56,5 @@ Le risorse seguenti su come pianificare Skype for Business Server sono disponibi
 |&nbsp;&nbsp;&nbsp;|Contenuto|Descrizione|
 |:--- |:--- |:--- |
 |![Icona per DMC.](../media/paragraph_writing.png)| [Skype for Business Server per professionisti IT](../../Hub/index.yml)   |Visitare docs.microsoft.com e i centri risorse per accedere a video, siti della community, documentazione, download e altro ancora.    |
-|![Icona per il contenuto dello sviluppatore.](../media/developer.png)|[Skype Piattaforma per sviluppatori](/skype-sdk/skypedeveloperplatform)   | Trova le risorse per sviluppatori Skype for Business Server, inclusi esempi di codice, formazione e SDK.    |
-|![Icona per notizie, blog e così via.](../media/blog_site.png) | <UL><LI>   [Blog di Office](https://go.microsoft.com/fwlink/p/?LinkId=528899) </li><li>[Microsoft 365 Blog tecnico](https://go.microsoft.com/fwlink/p/?LinkId=532798.aspx) </li><li>  [Skype blog del team](https://go.microsoft.com/fwlink/p/?LinkId=532818) </li></ul>  |Tenere il passo con le notizie dei team che creano e documenta Skype for Business Server.    |
+|![Icona per il contenuto dello sviluppatore.](../media/developer.png)|[Skype per sviluppatori](/skype-sdk/skypedeveloperplatform)   | Trova le risorse per sviluppatori Skype for Business Server, inclusi esempi di codice, formazione e SDK.    |
+|![Icona per notizie, blog e così via.](../media/blog_site.png) | <UL><LI>   [Blog di Office](https://go.microsoft.com/fwlink/p/?LinkId=528899) </li><li>[Microsoft 365 blog tecnico](https://go.microsoft.com/fwlink/p/?LinkId=532798.aspx) </li><li>  [Skype blog del team](https://go.microsoft.com/fwlink/p/?LinkId=532818) </li></ul>  |Tenere il passo con le notizie dei team che creano e documenta Skype for Business Server.    |

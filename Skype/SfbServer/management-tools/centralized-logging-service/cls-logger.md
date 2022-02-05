@@ -1,26 +1,21 @@
 ---
 title: CLS Logger per Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/25/2017
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 1eaf8cdf-3dcd-4d6e-ae68-b6f6f9431ad8
 description: 'Riepilogo: informazioni su come utilizzare il Logger del servizio di registrazione centralizzata (CLS) in Skype for Business Server 2015.'
-ms.openlocfilehash: dbe8ef417eb702943c76214be492151ee4d1dac7
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60862183"
 ---
+
 # <a name="cls-logger-for-skype-for-business-server-2015"></a>CLS Logger per Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come usare il Logger del servizio di registrazione centralizzata (CLS) in Skype for Business Server 2015.
@@ -89,21 +84,21 @@ Per cercare i log, selezionare la scheda "Cerca log CLS" e fare clic sul pulsant
 > 
 > **Ora fine** Periodo di tempo in cui CLS interromperà l'esecuzione di query nei log. (Obbligatorio)
 > 
-> **Componenti** Consente di selezionare i componenti da aggiungere alla query. (Facoltativo)
+> **Componenti** Consente di selezionare i componenti da aggiungere alla query. (Facoltativa)
 > 
-> **ID chiamata** ID chiamata di tutte le finestre di dialogo SIP in base a cui filtrare. Si noti che questo campo utilizza la corrispondenza esatta. (Facoltativo)
+> **ID chiamata** ID chiamata di tutte le finestre di dialogo SIP in base a cui filtrare. Si noti che questo campo utilizza la corrispondenza esatta. (Facoltativa)
 > 
-> **ID conferenza** ID conferenza di tutte le conferenze in base a cui filtrare. Si noti che questo campo utilizza la corrispondenza esatta. (Facoltativo)
+> **ID conferenza** ID conferenza di tutte le conferenze in base a cui filtrare. Si noti che questo campo utilizza la corrispondenza esatta. (Facoltativa)
 > 
-> **Indirizzo IP** L'indirizzo IP in base a cui filtrare. Si noti che questo campo utilizza la corrispondenza esatta. (Facoltativo)
+> **Indirizzo IP** L'indirizzo IP in base a cui filtrare. Si noti che questo campo utilizza la corrispondenza esatta. (Facoltativa)
 > 
-> **ID correlazione** Istruzioni di traccia collegate logicamente tra loro da questo ID. (Facoltativo)
+> **ID correlazione** Istruzioni di traccia collegate logicamente tra loro da questo ID. (Facoltativa)
 > 
-> **Telefono Number** Filtra per numero di telefono. (Facoltativo)
+> **Telefono Numero filtro** per numero di telefono. (Facoltativa)
 > 
-> **URI SIP** Filtra in base all'URI SIP. (Facoltativo)
+> **URI SIP** Filtra in base all'URI SIP. (Facoltativa)
 > 
-> **Contenuto del messaggio SIP contiene** Filtra in base al contenuto del messaggio SIP, in questo campo verrà ricercata sottostringa. (Facoltativo)
+> **Contenuto del messaggio SIP contiene** Filtra in base al contenuto del messaggio SIP, in questo campo verrà ricercata sottostringa. (Facoltativa)
 > 
 > **Match Any** Esegue la ricerca utilizzando un or logico, se selezionato. Il valore predefinito è Corrispondenza esatta di tutti i parametri.
 > 

@@ -1,28 +1,23 @@
 ---
 title: Trunking SIP del sito di succursale in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: c4d9dfcd-8baa-41ea-9677-48b0e429429d
 description: Informazioni sul trunking SIP nei siti di succursale in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: b8c1c930bb2500ca9330b14cce7fd5b341db60a9
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829900"
 ---
+
 # <a name="branch-site-sip-trunking-in-skype-for-business-server"></a>Trunking SIP del sito di succursale in Skype for Business Server
  
 Informazioni sul trunking SIP nei siti di succursale in Skype for Business Server VoIP aziendale.

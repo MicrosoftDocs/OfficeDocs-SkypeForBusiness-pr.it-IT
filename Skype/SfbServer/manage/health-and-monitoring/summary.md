@@ -1,25 +1,20 @@
 ---
-title: Rapporto riepilogativo qualità multimediale in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: Rapporto riepilogativo qualità multimediale Skype for Business Server
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 8bd59ad6-3087-49c8-b692-5573fe2ffcd8
 description: 'Riepilogo: informazioni sul Rapporto riepilogativo qualità multimediale in Skype for Business Server.'
-ms.openlocfilehash: 7ee64f9654e2f21a45c173c4a51ed5e40131b874
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60838618"
 ---
-# <a name="media-quality-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo qualità multimediale in Skype for Business Server
+
+# <a name="media-quality-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo qualità multimediale Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto riepilogativo qualità multimediale in Skype for Business Server.
   
@@ -39,7 +34,7 @@ Il Rapporto riepilogativo qualità multimediale è probabilmente la risorsa migl
     
 - Altri tipi di chiamata
     
-Quando si apre per la prima volta il rapporto, vengono visualizzate informazioni di riepilogo per ognuna delle categorie. Senza uscire dal report, è possibile espandere ogni categoria per esaminare le sottocategorie, ad esempio le chiamate effettuate da Office Communicator 2007 R2 a Skype for Business. È quindi possibile eseguire il drill-down in queste sottocategorie per visualizzare dettagli su ogni chiamata effettuata.
+Quando si apre per la prima volta il rapporto, vengono visualizzate informazioni di riepilogo per ognuna delle categorie. Senza uscire dal report, è possibile espandere ogni categoria per esaminare sottocategorie, ad esempio le chiamate effettuate da Office Communicator 2007 R2 a Skype for Business. È quindi possibile eseguire il drill-down in queste sottocategorie per visualizzare dettagli su ogni chiamata effettuata.
   
 In Skype for Business Server il Rapporto riepilogativo qualità multimediale suddivide ulteriormente i dati in tre tipi di chiamata: chiamate audio, videochiamate e chiamate di condivisione applicazioni. A ogni tipo di chiamata è associata una sezione del rapporto e un set personalizzato di metriche.
   
@@ -47,7 +42,7 @@ Il Rapporto riepilogativo qualità multimediale consente inoltre di applicare fi
   
 ## <a name="accessing-the-media-quality-summary-report"></a>Accesso al Rapporto riepilogativo qualità multimediale
 
-Il Rapporto riepilogativo qualità multimediale è accessibile dalla home page Rapporti di monitoraggio. È possibile eseguire il drill-down al Rapporto elenco chiamate [in Skype for Business Server](call-list-report-0.md) facendo clic su una delle metriche seguenti:
+Il Rapporto riepilogativo qualità multimediale è accessibile dalla home page Rapporti di monitoraggio. È possibile eseguire il drill-down al [Rapporto elenco chiamate in Skype for Business Server](call-list-report-0.md) facendo clic su una delle metriche seguenti:
   
 - Volume chiamata
     

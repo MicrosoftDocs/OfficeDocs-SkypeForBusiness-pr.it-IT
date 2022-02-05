@@ -1,24 +1,19 @@
 ---
 title: Uso del dashboard di monitoraggio in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: e00e5783-116f-481f-ad17-3af847d6769a
 description: 'Riepilogo: informazioni sul dashboard di monitoraggio in Skype for Business Server.'
-ms.openlocfilehash: ac68ae2174fcd7c4266da77c2d079c2f9a31d8e5
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60862303"
 ---
+
 # <a name="using-the-monitoring-dashboard-in-skype-for-business-server"></a>Uso del dashboard di monitoraggio in Skype for Business Server
  
 **Riepilogo:** Informazioni sul dashboard di monitoraggio in Skype for Business Server.
@@ -85,9 +80,9 @@ Per impostazione predefinita, il dashboard di monitoraggio mostra i dati per le 
     
 - Totale minuti partecipante PSTN
     
-Oltre alle metriche utilizzo sistema, le metriche seguenti visualizzano il totale per il giorno corrente e i sei giorni precedenti (se si seleziona **Visualizzazione** settimanale ) o per la settimana corrente e le ultime sei settimane se si seleziona Visualizzazione mensile **.**
+Oltre alle metriche utilizzo sistema, le metriche seguenti visualizzano il totale per il giorno corrente e i sei giorni precedenti (se si seleziona **Visualizzazione** settimanale) o per la settimana corrente e le ultime sei settimane se si seleziona Visualizzazione mensile **.**
   
-## <a name="per-user-call-diagnostics"></a>Per-User di chiamata
+## <a name="per-user-call-diagnostics"></a>Per-User diagnostica delle chiamate
 
  **Utenti con errori di chiamata**
   
@@ -149,12 +144,12 @@ Top worst servers by poor quality call percentage
   
 ## <a name="working-with-the-monitoring-dashboard"></a>Utilizzo del dashboard di monitoraggio
 
-Come indicato, per impostazione predefinita vengono visualizzati i totali per la settimana corrente e i valori di tendenza vengono visualizzati per le ultime sei settimane. Se si preferisce visualizzare i totali per il mese corrente (nonché i valori delle tendenze degli ultimi sei mesi), fare clic sul collegamento **Visualizzazione** mensile nell'angolo superiore destro del dashboard. Se si decide di visualizzare i totali mensili, il testo del collegamento verrà modificato in **Visualizzazione settimanale.** È possibile tornare alla visualizzazione settimanale facendo clic sul collegamento.
+Come indicato, per impostazione predefinita vengono visualizzati i totali per la settimana corrente e i valori di tendenza vengono visualizzati per le ultime sei settimane. Se si preferisce visualizzare i totali per il mese corrente (nonché i valori delle tendenze degli ultimi sei mesi), fare clic sul collegamento **Visualizzazione** mensile nell'angolo superiore destro del dashboard. Se si decide di visualizzare i totali mensili, il testo del collegamento verrà modificato in **Visualizzazione settimanale**. È possibile tornare alla visualizzazione settimanale facendo clic sul collegamento.
   
 > [!TIP]
 > Il dashboard di monitoraggio consente di visualizzare i totali per la settimana (o il mese) corrente e i valori di tendenza per le ultime sei settimane (o mesi). Non è possibile modificare queste date e ore. Ad esempio, non è possibile utilizzare il dashboard per visualizzare i totali dei report per il periodo di tempo che inizia nove mesi fa. 
   
-I valori visualizzati nelle **colonne This week**, This **month** o **Today** collegano l'utente a informazioni più dettagliate sull'elemento. Tenere presente che il nome della colonna e i valori visualizzati in tale colonna spesso variano a seconda della metrica scelta e a seconda che sia stata selezionata la visualizzazione settimanale o mensile. Ad esempio, se si fa clic  sui totali visualizzati per la metrica Accessi utente univoci, verrà visualizzato il **Rapporto** registrazione utenti per il periodo di tempo specificato. È possibile tornare al dashboard di monitoraggio in qualsiasi momento facendo clic su **Dashboard.**
+I valori visualizzati nelle **colonne This week**, **This month** o **Today** collegano l'utente a informazioni più dettagliate sull'elemento. Tenere presente che il nome della colonna e i valori visualizzati in tale colonna spesso variano a seconda della metrica scelta e a seconda che sia stata selezionata la visualizzazione settimanale o mensile. Ad esempio, se si fa clic sui totali visualizzati per la  metrica Accessi utente univoci, verrà visualizzato il **Rapporto** registrazione utenti per il periodo di tempo specificato. È possibile tornare al dashboard di monitoraggio in qualsiasi momento facendo clic su **Dashboard**.
   
 > [!TIP]
 > È inoltre possibile accedere alla home page dei report di Monitoring Server facendo clic sul **collegamento Report** nell'angolo superiore destro del dashboard.
@@ -179,17 +174,17 @@ Il dashboard di monitoraggio offre diversi modi per esportare la visualizzazione
     
 - Word
     
-Per esportare la visualizzazione dashboard corrente e i relativi valori, fare clic sull'opzione di esportazione desiderata. Skype for Business Server viene generato un report nel formato specificato e quindi è possibile aprirlo o salvarlo. Nota che, per impostazione predefinita, Skype for Business Server il report **Monitoring Dashboard** e lo salva nella cartella Download. Per assegnare al report un nome diverso o archiviarlo in  una cartella diversa, fare clic sulla freccia accanto al pulsante Salva e quindi su **Salva con nome.** Se stai bene con nome **Monitoring Dashboard** e con il report salvato nella cartella Download puoi semplicemente fare clic sul **pulsante** Salva.
+Per esportare la visualizzazione dashboard corrente e i relativi valori, fare clic sull'opzione di esportazione desiderata. Skype for Business Server viene generato un report nel formato specificato e quindi è possibile aprirlo o salvarlo. Tieni presente che, per impostazione predefinita, Skype for Business Server **il dashboard di** monitoraggio del report e lo salva nella cartella Download. Per assegnare al report un nome diverso o archiviarlo in una cartella diversa, fare clic sulla freccia accanto al  pulsante Salva e quindi su **Salva con nome**. Se stai bene con nome **Monitoring Dashboard** e con il report salvato nella cartella Download puoi semplicemente fare clic sul **pulsante** Salva.
   
-È possibile che, quando si tenta di  esportare i dati del dashboard, venga visualizzata una finestra di dialogo Avviso di sicurezza insieme al messaggio "Le impostazioni correnti non consentono il download di questo file". In questo caso, eseguire le operazioni seguenti:
+È possibile che, quando si tenta di esportare i dati del dashboard, venga  visualizzata una finestra di dialogo Avviso di sicurezza insieme al messaggio "Le impostazioni correnti non consentono il download di questo file". In questo caso, eseguire le operazioni seguenti:
   
-- In Internet Explorer seleziona **Opzioni Internet.**
+- In Internet Explorer seleziona **Opzioni Internet**.
     
-- Nella scheda **Protezione della** finestra di dialogo Opzioni Internet **fare** clic su **Siti attendibili** e quindi su **Siti.**
+- Nella scheda **Protezione della** finestra di dialogo Opzioni Internet **fare clic** su **Siti attendibili** e quindi su **Siti**.
     
-- Nella finestra **di dialogo**  Siti attendibili fare clic su Aggiungi per aggiungere il Skype for Business Server che esegue Skype for Business Server report alle raccolte di siti Web attendibili.
+- Nella finestra **di dialogo Siti** attendibili fare clic  su Aggiungi per aggiungere il Skype for Business Server che esegue Skype for Business Server report alle raccolte di siti Web attendibili.
     
-- Fare **clic su** Chiudi e quindi su **OK.**
+- Fare **clic su** Chiudi e quindi su **OK**.
     
 Sarà quindi necessario aggiornare il dashboard di monitoraggio prima che le modifiche avranno effetto. A tale scopo, premere F5 o fare clic **sull'icona** Aggiorna nella barra degli strumenti del dashboard. **L'icona** Aggiorna è un cerchio con una coppia di frecce verdi al suo interno.
   
