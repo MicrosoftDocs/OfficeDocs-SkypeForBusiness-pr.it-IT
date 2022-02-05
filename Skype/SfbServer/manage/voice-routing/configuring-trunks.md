@@ -1,23 +1,18 @@
 ---
 title: Configurazione dei trunk in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
-description: Nell'ambito della distribuzione di VoIP aziendale, è possibile configurare un trunk tra un Mediation Server e uno o più peer per fornire connettività PSTN (Public Switched Telephone Network) per i client e i dispositivi VoIP aziendale nell'organizzazione.
-ms.openlocfilehash: 318b049c8ebaaa1a2df445bf1158184e3b150a84
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60838518"
+description: 'Nell''ambito della distribuzione di VoIP aziendale, è possibile configurare un trunk tra un Mediation Server e uno o più peer per fornire connettività PSTN (Public Switched Telephone Network) per i client e i dispositivi VoIP aziendale nell''organizzazione.'
 ---
+
 # <a name="configuring-trunks-in-skype-for-business-server"></a>Configurazione dei trunk in Skype for Business Server
 
 Nell'ambito della distribuzione di VoIP aziendale, è possibile configurare un trunk tra un Mediation Server e uno o più dei peer seguenti per fornire connettività PSTN (Public Switched Telephone Network) per i client e i dispositivi VoIP aziendale nell'organizzazione:
@@ -26,7 +21,7 @@ Nell'ambito della distribuzione di VoIP aziendale, è possibile configurare un t
 - Gateway PSTN
 - Centralino (PBX)
 
-Per informazioni dettagliate, vedere [Plan for PSTN connectivity in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/pstn-connectivity-0.md).
+Per informazioni dettagliate, [vedere Plan for PSTN connectivity in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/pstn-connectivity-0.md).
 
 > [!IMPORTANT]
 > Prima di iniziare la configurazione del trunk, verificare che la topologia sia stata creata e che il Mediation Server e il relativo peer siano stati configurati e associati l'uno all'altro. Per informazioni dettagliate, [vedere Define a gateway in Topology Builder in Skype for Business Server](../../deploy/deploy-enterprise-voice/define-a-gateway.md).

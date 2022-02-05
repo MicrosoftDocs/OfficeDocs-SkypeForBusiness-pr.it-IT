@@ -1,28 +1,23 @@
 ---
 title: Distribuire VoIP aziendale in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: b5b593a6-ac30-461c-8c8c-0041e2c9ab04
 description: 'Riepilogo: informazioni su come distribuire VoIP aziendale per Skype for Business Server in un sito centrale.'
-ms.openlocfilehash: 4073850d9583e5bd28d573ad73b0acdaaca0943f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60833822"
 ---
+
 # <a name="deploy-enterprise-voice-in-skype-for-business-server"></a>Distribuire VoIP aziendale in Skype for Business Server
 
 **Riepilogo:** Informazioni su come distribuire VoIP aziendale per Skype for Business Server in un sito centrale.

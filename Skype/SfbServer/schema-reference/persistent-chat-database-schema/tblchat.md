@@ -1,25 +1,20 @@
 ---
 title: tblChat
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: b7fcf1b4-7a3f-4585-a6d9-95e7f030c7dc
 description: In tblChat sono inclusi tutti i messaggi di chat.
-ms.openlocfilehash: e8a07c0c8ff8b3b473855ee86f6fc0c276e959f6
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60839818"
 ---
+
 # <a name="tblchat"></a>tblChat
  
 In tblChat sono inclusi tutti i messaggi di chat.

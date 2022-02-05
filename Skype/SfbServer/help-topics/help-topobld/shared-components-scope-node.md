@@ -1,27 +1,22 @@
 ---
 title: Nodo di ambito per componenti condivisi
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.SharedComponentsScopeNode
+  - ms.lync.tb.SharedComponentsScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: dc8238a0-24aa-47a0-b871-4465ada1761e
 description: Fare clic con il pulsante destro del mouse su Componenti condivisi nell'albero della gerarchia di Generatore di topologie per creare nuovi componenti condivisi o per accedere alle opzioni a livello di topologia.
-ms.openlocfilehash: f589615f5a81c7c4de5b15818aae1841c1de5859
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60863603"
 ---
+
 # <a name="shared-components-scope-node"></a>Nodo di ambito per componenti condivisi
  
 Fare clic con il pulsante **destro del mouse** su Componenti condivisi nell'albero della gerarchia di Generatore di topologie per creare nuovi componenti condivisi o per accedere alle opzioni a livello di topologia.

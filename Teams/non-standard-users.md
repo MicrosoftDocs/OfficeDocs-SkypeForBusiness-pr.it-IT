@@ -1,7 +1,7 @@
 ---
-title: Teams comportamento delle app per gli utenti non standard
-author: HowlinWolf-92
-ms.author: v-mahoffman
+title: Teams delle app per gli utenti non standard
+author: SerdarSoysal
+ms.author: serdars
 ms.reviewer: joglocke
 manager: serdars
 ms.topic: article
@@ -11,19 +11,14 @@ search.appverid: MET150
 description: Informazioni sul comportamento delle app Microsoft Teams per gli utenti non standard.
 ms.localizationpriority: medium
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.collection:
-- M365-collaboration
-- m365initiative-meetings
+  - M365-collaboration
+  - m365initiative-meetings
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 957574b112c0fbb8fc7efc4fedf726fa7395f4b5
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60846089"
+  - Microsoft Teams
 ---
+
 # <a name="microsoft-teams-apps-behavior-for-non-standard-users"></a>Microsoft Teams delle app per gli utenti non standard
 
 Questo articolo descrive il comportamento delle app in Teams quando gli utenti guest, esterni (federati) e anonimi sono presenti in un Teams locale.
@@ -33,7 +28,7 @@ Questo articolo descrive il comportamento delle app in Teams quando gli utenti g
 - Un **utente esterno (federato)** appartiene a un altro dominio e non ha accesso ai team o alle risorse del team dell'organizzazione.
 
   > [!Note]
-  > Per un confronto più dettagliato tra utenti guest e utenti esterni, vedere Comunicare [con utenti di altre organizzazioni.](./communicate-with-users-from-other-organizations.md)
+  > Per un confronto più dettagliato tra utenti guest e utenti [esterni, vedere Comunicare con utenti di altre organizzazioni](./communicate-with-users-from-other-organizations.md).
 
 - Un **utente anonimo** è un concetto in Teams riunioni in cui l'utente ha partecipato alla riunione tramite un collegamento. L'utente non ha eseguito l'accesso con l'account Microsoft o dell'organizzazione.
 
@@ -80,7 +75,7 @@ Gli utenti anonimi non possono installare, aggiornare o eliminare app nelle riun
 
 ### <a name="usage-behavior-and-policy-for-anonymous-users"></a>Comportamento di utilizzo e criteri per gli utenti anonimi
 
-Gli utenti anonimi non possono usare direttamente le app nelle riunioni. Gli utenti nativi possono continuare a usare le app riunioni se sono presenti utenti anonimi. Se un'app invia una scheda adattiva nella chat, gli utenti anonimi possono interagire con la scheda. Per altre informazioni, vedere [Consentire agli utenti anonimi di partecipare alle riunioni.](meeting-settings-in-teams.md#allow-anonymous-users-to-join-meetings)
+Gli utenti anonimi non possono usare direttamente le app nelle riunioni. Gli utenti nativi possono continuare a usare le app riunioni se sono presenti utenti anonimi. Se un'app invia una scheda adattiva nella chat, gli utenti anonimi possono interagire con la scheda. Per altre informazioni, vedere [Consentire agli utenti anonimi di partecipare alle riunioni](meeting-settings-in-teams.md#allow-anonymous-users-to-join-meetings).
 
 Gli utenti anonimi erediteranno i criteri di autorizzazione predefiniti globali a livello di utente. Possono interagire con le app nelle riunioni Teams se i criteri di autorizzazione a livello di utente hanno abilitato l'app. Gli utenti anonimi possono interagire solo con app già disponibili in una riunione e che non possono acquisire e/o gestire queste app.
 

@@ -1,29 +1,24 @@
 ---
-title: Valutare la chiamata in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: Valuta la mia chiamata in Skype for Business Server
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: c4e0c905-33a1-49d8-9276-1b338f94d085
 description: 'Riepilogo: informazioni sulla funzionalità Tariffa chiamata in Skype for Business Server.'
-ms.openlocfilehash: f19424edfb4169a27e10a8b5ac1624065e6288dd
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60864833"
 ---
-# <a name="rate-my-call-in-skype-for-business-server"></a>Valutare la chiamata in Skype for Business Server
+
+# <a name="rate-my-call-in-skype-for-business-server"></a>Valuta la mia chiamata in Skype for Business Server
 
 **Riepilogo:** Informazioni sulla funzionalità Tariffa chiamata in Skype for Business Server.
 
-Rate My Call è stata una nuova funzionalità dei client di Skype for Business 2015 e 2016 su Windows che offre alle aziende un modo per ottenere feedback dagli utenti finali.
+Rate My Call è stata una nuova funzionalità dei client Skype for Business 2015 e 2016 su Windows che offre alle aziende un modo per ottenere feedback dagli utenti finali.
 
 La finestra Valuta chiamata offre un sistema di classificazione "a stella" e token predefiniti per le chiamate audio e video. Inoltre, gli amministratori possono abilitare un campo personalizzato per fornire feedback.
 
@@ -39,7 +34,7 @@ Prima che gli utenti della distribuzione Skype for Business Server possano acced
 
 - Gli utenti devono essere ospitati Skype for Business Server pool Front End.
 
-- È necessario disporre di un database Skype for Business Server di monitoraggio dei dati distribuito e associato ai Skype for Business Server pool.
+- È necessario disporre di un database Skype for Business Server di monitoraggio dei dati distribuito e associato ai pool Skype for Business Server server.
 
 - È consigliabile distribuire Call Quality Dashboard (CQD).
 
@@ -110,7 +105,7 @@ Le definizioni dei token sono codificate come segue:
 
  **[QoeMetrics]. [dbo]. [CallQualityFeedback]** Questa tabella contiene i risultati del polling dal voto "Stella" e il feedback dei clienti, se abilitato.
 
-I dati delle tabelle possono essere chiamati utilizzando una query **\* select from [Table.Name]** o utilizzando Microsoft SQL Server Management Studio.
+I dati delle tabelle possono essere chiamati utilizzando una **\* query select from [Table.Name]** o utilizzando Microsoft SQL Server Management Studio.
 
 È possibile SQL query seguenti:
 
@@ -190,7 +185,7 @@ SELECT
 
 ## <a name="updating-token-definitions"></a>Aggiornamento delle definizioni di token
 
-I client Skype for Business più recenti segnalano nuovi ID token di problema ( 100) che potrebbero non essere presenti \> in [QoeMetrics].[ dbo]. Tabella [CallQualityFeedbackTokenDef]. Per aggiornare la tabella di database con le definizioni di token più recenti, è possibile eseguire il comando SQL seguente nel database di monitoraggio usando Microsoft SQL Server Management Studio. Questo comando sostituirà tutte le voci di [QoeMetrics]. [dbo]. Tabella [CallQualityFeedbackTokenDef].
+I client Skype for Business più recenti segnalano nuovi ID token di problema (\> 100) che potrebbero non essere presenti in [QoeMetrics].[ dbo]. Tabella [CallQualityFeedbackTokenDef]. Per aggiornare la tabella di database con le definizioni di token più recenti, è possibile eseguire il comando SQL seguente nel database di monitoraggio usando Microsoft SQL Server Management Studio. Questo comando sostituirà tutte le voci di [QoeMetrics]. [dbo]. Tabella [CallQualityFeedbackTokenDef].
 
 ```SQL
 DELETE FROM [CallQualityFeedbackTokenDef];

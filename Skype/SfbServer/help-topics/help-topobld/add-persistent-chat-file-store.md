@@ -1,33 +1,28 @@
 ---
 title: Aggiungere l'archivio file di Chat persistente
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddPersistentChatFileStorePage
+  - ms.lync.tb.AddPersistentChatFileStorePage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: e1068706-ff61-4a98-8e51-4202111d936a
-description: È necessario specificare una condivisione file da usare come archivio file per il server Standard Edition o il pool Enterprise Edition Front End. È possibile usare una condivisione file esistente per l'archivio file oppure specificarne una nuova indicando il nome di dominio completo (FQDN) del file server in cui deve trovarsi la condivisione file, oltre a un nome di cartella per la nuova condivisione file.
-ms.openlocfilehash: 528c1e2d78f67391af0536296588f6b047ee1c87
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850059"
+description: 'È necessario specificare una condivisione file da usare come archivio file per il server Standard Edition o il pool Enterprise Edition Front End. È possibile usare una condivisione file esistente per l''archivio file oppure specificarne una nuova indicando il nome di dominio completo (FQDN) del file server in cui deve trovarsi la condivisione file, oltre a un nome di cartella per la nuova condivisione file.'
 ---
+
 # <a name="add-persistent-chat-file-store"></a>Aggiungere l'archivio file di Chat persistente
  
 È necessario specificare una condivisione file da usare come archivio file per il server Standard Edition o il pool Enterprise Edition Front End. È possibile usare una condivisione file esistente per l'archivio file oppure specificarne una nuova indicando il nome di dominio completo (FQDN) del file server in cui deve trovarsi la condivisione file, oltre a un nome di cartella per la nuova condivisione file.
   
 > [!IMPORTANT]
-> La condivisione file per Skype for Business Server non può essere posizionata nel Front End Server edizione Enterprise, ma può trovarsi in un server edizione Standard server. 
+> La condivisione file per Skype for Business Server non può essere posizionata nel Front End Server edizione Enterprise, ma può trovarsi in un edizione Standard server. 
   
 > [!IMPORTANT]
 > È possibile definire la condivisione file in Generatore di topologie prima di creare la condivisione file ma è necessario crearla nel percorso definito prima di pubblicare la topologia. 

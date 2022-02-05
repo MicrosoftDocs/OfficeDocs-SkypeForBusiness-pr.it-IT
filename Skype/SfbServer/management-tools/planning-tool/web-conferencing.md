@@ -1,32 +1,27 @@
 ---
 title: Strumento di pianificazione web conferencing
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 4/8/2016
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- ms.lync.plan.WebConferencing
-- ms.lync.plan.WebConferencing
+  - ms.lync.plan.WebConferencing
+  - ms.lync.plan.WebConferencing
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 4e4425c1-4a7b-4706-a4cd-155fd903acd5
-description: Le conferenze Web inSkype for Business Server 2015 includono collaborazione documenti, condivisione di applicazioni e condivisione desktop.
-ms.openlocfilehash: 11dbb6c525da9af013b004da6827933e94c83036
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60845219"
+description: 'Le conferenze Web inSkype for Business Server 2015 includono collaborazione documenti, condivisione di applicazioni e condivisione desktop.'
 ---
+
 # <a name="web-conferencing-planning-tool"></a>Strumento di pianificazione web conferencing
  
 Skype for Business Server Web Conferencing 2015 include la collaborazione di documenti, la condivisione di applicazioni e la condivisione desktop.
   
 > [!NOTE]
-> Skype for Business Server 2015 usa Office Web Apps e Office Web Apps Server per gestire la condivisione e il rendering di PowerPoint presentazioni. Le funzionalità di conferenza Web funzionano esattamente come in Microsoft Lync 2013. Per informazioni dettagliate sull'installazione e la configurazione del Office Web Apps Server, vedere [Configuring integration with Office Web Apps Server and Lync Server 2013.](/previous-versions/office/lync-server-2013/lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013) 
+> Skype for Business Server 2015 usa Office Web Apps e Office Web Apps Server per gestire la condivisione e il rendering di PowerPoint presentazioni. Le funzionalità di conferenza Web funzionano esattamente come in Microsoft Lync 2013. Per informazioni dettagliate sull'installazione e la configurazione del Office Web Apps Server, vedere [Configuring integration with Office Web Apps Server and Lync Server 2013](/previous-versions/office/lync-server-2013/lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013). 
   
 Per informazioni dettagliate sull'abilitazione delle conferenze Web nell'organizzazione, vedere i seguenti argomenti: 
   

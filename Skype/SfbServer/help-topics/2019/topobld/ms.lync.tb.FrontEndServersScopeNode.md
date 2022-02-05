@@ -1,27 +1,22 @@
 ---
 title: Nodo dell'ambito dei server Front End Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.FrontEndServersScopeNode
+  - ms.lync.tb.FrontEndServersScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 99c8c4b6-eb12-4c6b-b32c-3977d17fc8fa
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Nel nodo Pool Front End Enterprise sono elencati i pool Front End del sito, mentre nel nodo Server Front End Standard sono elencati i server Standard del sito. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: 1b2b662ef79f5d9ee12d668d1cf3b81f6e4e0807
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60849119"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Nel nodo Pool Front End Enterprise sono elencati i pool Front End del sito, mentre nel nodo Server Front End Standard sono elencati i server Standard del sito. È possibile eseguire l''azione seguente:'
 ---
+
 # <a name="front-end-servers-scope-node"></a>Nodo dell'ambito dei Front End Server
  
 Nel nodo **Pool Front End Enterprise** sono elencati i pool Front End del sito, mentre nel nodo **Server Front End Standard** sono elencati i server Standard del sito. È possibile eseguire l'azione seguente:

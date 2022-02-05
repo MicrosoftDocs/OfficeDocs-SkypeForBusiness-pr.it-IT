@@ -1,28 +1,23 @@
 ---
 title: Configurare i tipi di indirizzi IP in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 17e756c0-6652-4cd5-b185-4b25929e3a42
 description: 'Riepilogo: esaminare le considerazioni sul tipo di indirizzo IP riportate di seguito prima di implementare Skype for Business Server.'
-ms.openlocfilehash: 936857f79cf71328303e3a0a842b230694cf86c1
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60834994"
 ---
+
 # <a name="configure-ip-address-types-in-skype-for-business"></a>Configurare i tipi di indirizzi IP in Skype for Business
 
 **Riepilogo:** Leggere le considerazioni sul tipo di indirizzo IP riportate di seguito prima di implementare Skype for Business Server.
@@ -37,7 +32,7 @@ Utilizzando Generatore di topologie, eseguire i passaggi della procedura seguent
 
 1. In **Pool Enterprise Edition Front End** fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi scegliere **Modifica proprietà**. In alternativa, selezionare il server e quindi scegliere **Modifica proprietà** dal menu **Azione**.
 
-2. Nella finestra di dialogo **Modifica proprietà** selezionare il tipo di indirizzo IP che si desidera configurare. Per una configurazione dual stack, selezionare **Abilita IPv4** e **Abilita IPv6.**
+2. Nella finestra di dialogo **Modifica proprietà** selezionare il tipo di indirizzo IP che si desidera configurare. Per una configurazione dual stack, selezionare **Abilita IPv4** e **Abilita IPv6**.
 
    **Finestra di dialogo Modifica proprietà per il pool Front End Server**
 
@@ -61,7 +56,7 @@ Utilizzando Generatore di topologie, eseguire i passaggi della procedura seguent
 
 ### <a name="to-deploy-ip-address-types-on-a-mediation-server"></a>Per distribuire i tipi di indirizzi IP in un Mediation Server
 
-- In Generatore di topologie, in **Pool Mediation Server,** fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi **scegliere Modifica proprietà**. In alternativa, selezionare il server e quindi scegliere **Modifica proprietà** dal menu **Azione**.
+- In Generatore di topologie, in **Pool Mediation Server**, fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi **scegliere Modifica proprietà**. In alternativa, selezionare il server e quindi scegliere **Modifica proprietà** dal menu **Azione**.
 
 - Nella finestra di dialogo **Modifica proprietà** selezionare il tipo di indirizzo IP che si desidera configurare. Per una configurazione con dual stack, selezionare **Abilita IPv4** e **Abilita IPv6**, come illustrato nella figura seguente.
 
@@ -92,7 +87,7 @@ Utilizzando Generatore di topologie, eseguire la procedura seguente:
 
 ### <a name="to-deploy-ip-address-types-on-an-edge-server"></a>Per distribuire tipi di indirizzo IP su un server perimetrale
 
-1. In Generatore di topologie, in Pool di server perimetrali, fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi **scegliere Modifica proprietà**.  (Alternativamente, selezionare il server e fare clic su **Modifica proprietà** dal menu **Azione**.)
+1. In Generatore di topologie, in **Pool di server perimetrali**, fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi **scegliere Modifica proprietà**. (Alternativamente, selezionare il server e fare clic su **Modifica proprietà** dal menu **Azione**.)
 
 2. Nella finestra **Modifica proprietà**, selezionare la configurazione dell'indirizzo IP che si desidera supportare.
 

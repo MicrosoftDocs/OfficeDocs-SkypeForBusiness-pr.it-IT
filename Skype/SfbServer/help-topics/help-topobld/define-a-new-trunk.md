@@ -1,27 +1,22 @@
 ---
 title: Definire un nuovo trunk
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddTrunkPage
+  - ms.lync.tb.AddTrunkPage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: e5d97b27-5ae8-41e0-8ee9-0c3f6d5dd123
 description: 'È possibile definire un nuovo trunk SIP (Session Initiation Protocol) fornendo le informazioni seguenti:'
-ms.openlocfilehash: b23b27ca49de3344a9d99e531c17b4fb02b7cc51
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60851380"
 ---
+
 # <a name="define-a-new-trunk"></a>Definire un nuovo trunk
 
 È possibile definire un nuovo trunk SIP (Session Initiation Protocol) fornendo le informazioni seguenti:
@@ -34,7 +29,7 @@ ms.locfileid: "60851380"
 
 - **Protocollo di trasporto SIP**: selezionare nell'elenco TCP o TLS
 
-- **Mediation Server associato:** selezionare nell'elenco un Mediation Server distribuito e configurato nella distribuzione
+- **Mediation Server associato**: selezionare nell'elenco un Mediation Server distribuito e configurato nella distribuzione
 
 - **Porta Mediation Server associata**: impostare il valore della porta uguale al valore della porta TCP o TLS del Mediation Server che verrà utilizzato da questo trunk SIP
 

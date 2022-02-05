@@ -1,27 +1,22 @@
 ---
 title: Elenco di controllo prima esecuzione per il Pannello di controllo di Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/23/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.Home1stRunChkList
+  - ms.lync.lscp.Home1stRunChkList
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 4d0c7306-e87e-464a-82ad-a5537f141500
-description: Benvenuto nel Pannello Skype for Business Server, l'interfaccia utente basata sul Web per l'amministrazione e la gestione di Skype for Business Server. È possibile utilizzare il Pannello di controllo per eseguire i tipi di attività amministrative eseguite tramite Microsoft Management Console nelle versioni precedenti.
-ms.openlocfilehash: 987ec6afc4a6e6ed341452857d24354390235250
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60836638"
+description: 'Benvenuto nel Pannello Skype for Business Server, l''interfaccia utente basata sul Web per l''amministrazione e la gestione di Skype for Business Server. È possibile utilizzare il Pannello di controllo per eseguire i tipi di attività amministrative eseguite tramite Microsoft Management Console nelle versioni precedenti.'
 ---
+
 # <a name="first-run-checklist-for-skype-for-business-server-control-panel"></a>Elenco di controllo prima esecuzione per il Pannello di controllo di Skype for Business Server
 
 Benvenuto nel Pannello Skype for Business Server, l'interfaccia utente basata sul Web per l'amministrazione e la gestione di Skype for Business Server. È possibile utilizzare il Pannello di controllo per eseguire i tipi di attività amministrative eseguite tramite Microsoft Management Console nelle versioni precedenti.
@@ -29,7 +24,7 @@ Benvenuto nel Pannello Skype for Business Server, l'interfaccia utente basata su
 È consigliabile eseguire una serie di attività importanti dopo aver distribuito Skype for Business Server. Alcune di queste attività sono passaggi di configurazione iniziale che potrebbero essere già stati eseguiti durante la distribuzione, mentre altre sono miglioramenti o modifiche di impostazioni configurate durante la distribuzione o impostazioni predefinite. Altre attività descritte in questo argomento consentono di convalidare le configurazioni effettuate durante il processo di distribuzione.
 
 > [!NOTE]
-> Prima di eseguire le attività nella tabella seguente, assicurarsi di accedere utilizzando i diritti utente, le autorizzazioni e il ruolo corretti, come descritto nella sezione "Ruoli e ambito" dell'argomento [Role-Based Access Control.](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-role-based-access-control)
+> Prima di eseguire le attività nella tabella seguente, assicurarsi di accedere utilizzando i diritti utente, le autorizzazioni e il ruolo corretti, come descritto nella sezione "Ruoli e ambito" dell'argomento [Role-Based Access Control](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-role-based-access-control) .
 
 ## <a name="first-run-checklist"></a>Elenco di controllo per la prima esecuzione
 

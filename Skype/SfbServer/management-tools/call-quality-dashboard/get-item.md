@@ -1,25 +1,20 @@
 ---
 title: Get Item
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: e77bf649-d62a-4d94-80de-066ba47730cd
-description: "Riepilogo: informazioni sull'operazione Get Item, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 1818bb0538fdc02d77c731cad7404643dc84fe28
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861233"
+description: 'Riepilogo: informazioni sull''operazione Get Item, che fa parte di Item Service. Item Service fa parte dell''API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.'
 ---
+
 # <a name="get-item"></a>Get Item
  
 **Riepilogo:** Informazioni sull'operazione Get Item, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
@@ -32,7 +27,7 @@ Get Item restituisce un elemento specifico nel repository.
   
 |**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|GET  <br/> |https:// \<portal\> /QoERepositoryService/repository/item/{itemId}  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |\<portal\>https:///QoERepositoryService/repository/item/{itemId}  <br/> |HTTP/1.1  <br/> |
    
  **Parametri URI** - Nessuno.
   
@@ -40,13 +35,13 @@ Get Item restituisce un elemento specifico nel repository.
   
  **Corpo della richiesta** - Nessuno.
   
- **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK). Se non viene trovato un ID elemento specificato, viene restituito il codice di stato 404 (Non trovato).
+ **Codice di stato** : un'operazione riuscita restituisce il codice di stato 200 (OK). Se non viene trovato un ID elemento specificato, viene restituito il codice di stato 404 (Non trovato).
   
  **Intestazioni di risposta** - Nessuna intestazione aggiuntiva.
   
- **Response Body:** di seguito è riportato un payload di risposta di esempio in JSON.
+ **Response Body** : di seguito è riportato un payload di risposta di esempio in JSON.
   
 ```json
 {

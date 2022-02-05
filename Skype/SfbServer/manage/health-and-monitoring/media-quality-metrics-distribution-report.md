@@ -1,24 +1,19 @@
 ---
 title: Rapporto distribuzione metriche qualità multimediale in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: d07996e6-b0a5-4ff8-9512-ab707762b4e2
 description: 'Riepilogo: informazioni sul Rapporto distribuzione metriche qualità multimediale in Skype for Business Server.'
-ms.openlocfilehash: 00899681190e532af971c719c2e81f655facf7ab
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60862313"
 ---
+
 # <a name="the-media-quality-metrics-distribution-report-in-skype-for-business-server"></a>Rapporto distribuzione metriche qualità multimediale in Skype for Business Server 
  
 **Riepilogo:** Informazioni sul Rapporto distribuzione metriche qualità multimediale in Skype for Business Server.

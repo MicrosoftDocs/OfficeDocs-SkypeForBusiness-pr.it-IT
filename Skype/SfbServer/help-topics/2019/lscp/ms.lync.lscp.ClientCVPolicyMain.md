@@ -1,27 +1,22 @@
 ---
 title: Criteri delle versioni client
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.lscp.ClientCVPolicyMain
+  - ms.lync.lscp.ClientCVPolicyMain
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 4f84bc0f-e1df-4acb-b8ef-57f165b0153b
-ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile specificare la versione dei client supportati nell'ambiente. Quando due client che eseguono versioni diverse interagiscono, le caratteristiche disponibili per uno dei due client possono essere limitate dalle funzionalità dell'altro client.
-ms.openlocfilehash: 1a32329574b95ed4b918d5b323bc63f86331f617
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60841848"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'È possibile specificare la versione dei client supportati nell''ambiente. Quando due client che eseguono versioni diverse interagiscono, le caratteristiche disponibili per uno dei due client possono essere limitate dalle funzionalità dell''altro client.'
 ---
+
 # <a name="client-version-policy"></a>Criteri delle versioni client
 
 È possibile specificare la versione dei client supportati nell'ambiente. Quando due client che eseguono versioni diverse interagiscono, le caratteristiche disponibili per uno dei due client possono essere limitate dalle funzionalità dell'altro client. Per utilizzare al massimo le funzionalità incluse in Skype for Business Server e migliorare l'esperienza utente complessiva, è possibile utilizzare il filtro versione client per limitare le versioni client utilizzate nell'ambiente. Grazie a tale filtro è anche possibile ridurre i costi associati al supporto di più versioni client.
@@ -30,7 +25,7 @@ ms.locfileid: "60841848"
 
 Nella pagina Criteri versione **client** è possibile eseguire le attività seguenti:
 
-- Modificare il criterio predefinito ( **Globale**) della versione client.
+- Modificare il **criterio versione client** (globale) predefinito.
 
 - Creare criteri versione client per un sito o un pool specifico.
 

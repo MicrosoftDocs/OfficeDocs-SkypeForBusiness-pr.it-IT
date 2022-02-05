@@ -1,33 +1,28 @@
 ---
 title: Pianificare la chiamata tramite lavoro in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: a33ec637-9ac8-4cb7-b3b2-88d432efc078
-description: Pianificazione di Call Via Work in Skype for Business Server, che consente l'integrazione tra Skype for Business e il sistema telefonico PBX, in modo che gli utenti possano usare Skype for Business per controllare i telefoni PBX.
-ms.openlocfilehash: 0dddb601ecf9928aa1bd1cd63bc8ed3628a1330d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60854220"
+description: 'Pianificazione di Call Via Work in Skype for Business Server, che consente l''integrazione tra Skype for Business e il sistema telefonico PBX, in modo che gli utenti possano usare Skype for Business per controllare i telefoni PBX.'
 ---
+
 # <a name="plan-for-call-via-work-in-skype-for-business-server"></a>Pianificare la chiamata tramite lavoro in Skype for Business Server
  
 Pianificazione di Call Via Work in Skype for Business Server, che consente l'integrazione tra Skype for Business e il sistema telefonico PBX, in modo che gli utenti possano usare Skype for Business per controllare i telefoni PBX.
   
- **Call Via Work** è una nuova funzionalità di Skype for Business Server che consente di integrare la soluzione Skype for Business con i sistemi telefonici PBX esistenti. Un utente abilitato per Chiama tramite lavoro può fare clic Skype for Business per chiamare un altro utente, all'interno della distribuzione o un utente esterno. La chiamata viene completata utilizzando il telefono PBX dell'utente. In questo modo un utente con un telefono PBX può includere l'audio nelle Skype for Business conversazioni. Nelle versioni precedenti del controllo delle chiamate remote di Lync Server era una funzionalità che consente agli utenti di controllare i telefoni PBX con Lync Server. In Skype for Business Server, questa funzionalità è stata sostituita con Chiama tramite lavoro.
+ **Call Via Work** è una nuova funzionalità di Skype for Business Server che consente di integrare la soluzione Skype for Business con i sistemi telefonici PBX esistenti. Un utente abilitato per La chiamata tramite lavoro può fare clic Skype for Business per chiamare un altro utente, all'interno della distribuzione o un utente esterno. La chiamata viene completata utilizzando il telefono PBX dell'utente. In questo modo un utente con un telefono PBX può includere l'audio nelle Skype for Business conversazioni. Nelle versioni precedenti del controllo delle chiamate remote di Lync Server era una funzionalità che consente agli utenti di controllare i telefoni PBX con Lync Server. In Skype for Business Server, questa funzionalità è stata sostituita con Chiama tramite lavoro.
   
 Call Via Work abilita quanto segue per gli utenti di telefoni PBX
   
@@ -45,9 +40,9 @@ Call Via Work utilizza Unified Communications Web API (UCWA) come agente utente 
   
 ### <a name="call-workflow-for-a-call-via-work-call"></a>Flusso di lavoro delle chiamate per una chiamata tramite lavoro
 
-Di seguito viene illustrato come un utente abilitato per La chiamata tramite lavoro può usare il Skype for Business Server per effettuare una chiamata:
+Di seguito viene illustrato in che modo un utente abilitato per La chiamata tramite lavoro può usare il Skype for Business Server per effettuare una chiamata:
   
-![Mostra i passaggi durante una chiamata call via work; prima il chiamante fa clic per chiamare qualcuno nel client Skype for Business; quindi UCWA squilla il telefono del chiamante. Quando il chiamante riprende il telefono, viene chiamato il destinatario.](../../media/050e88ed-e18e-40c0-84d5-b17fe40c305a.jpg)
+![Mostra i passaggi durante una chiamata call via work; prima il chiamante fa clic per chiamare qualcuno nel client Skype for Business, quindi UCWA squilla il telefono del chiamante. Quando il chiamante riprende il telefono, viene chiamato il destinatario.](../../media/050e88ed-e18e-40c0-84d5-b17fe40c305a.jpg)
   
 1. L'utente seleziona un utente nel Skype for Business client e fa clic sull'icona del telefono per chiamarlo. In caso contrario, durante una conversazione di messaggistica istantanea, l'utente fa clic per chiamare l'utente con cui sta avendo la sessione.
     
@@ -59,15 +54,15 @@ Di seguito viene illustrato come un utente abilitato per La chiamata tramite lav
     
 ### <a name="joining-a-conference-with-call-via-work"></a>Partecipare a una conferenza con chiamata tramite lavoro
 
-Un utente chiamata tramite lavoro può partecipare a una riunione pianificata facendo clic sull'URL della riunione. Skype for Business viene quindi visualizzato un messaggio Di **chiamata in** uscita fino a quando il servizio riunione non compone il telefono PBX dell'utente. L'utente Chiama tramite ufficio prende quindi il telefono PBX e partecipa alla riunione.
+Un utente chiamata tramite lavoro può partecipare a una riunione pianificata facendo clic sull'URL della riunione. Skype for Business viene quindi visualizzato un **messaggio Di chiamata in uscita fino** a quando il servizio riunione non compone il telefono PBX dell'utente. L'utente Chiama tramite ufficio prende quindi il telefono PBX e partecipa alla riunione.
   
-Un utente chiamata tramite lavoro  può anche usare l'opzione Riunione Skype for Business per creare riunioni Riunione ora. L'utente visualizza quindi il messaggio Chiamata **in** uscita e il telefono PBX squilla.
+Un utente Di chiamata tramite lavoro può anche **usare l'opzione** Riunione Skype for Business per creare riunioni Riunione ora. L'utente visualizza quindi il **messaggio Chiamata in** uscita e il telefono PBX squilla.
   
-Un utente di Call Via Work può anche effettuare l'accesso a una riunione chiamando il numero del bridge di conferenza dall'Skype for Business. Se è necessario un PIN di conferenza, l'utente deve usare il telefono PBX per immettere il PIN.
+Un utente di Call Via Work può anche effettuare l'accesso a una riunione chiamando il numero del ponte per conferenze dall'Skype for Business. Se è necessario un PIN di conferenza, l'utente deve usare il telefono PBX per immettere il PIN.
   
 ### <a name="incoming-calls"></a>Chiamate in arrivo
 
-Quando un utente abilitato per La chiamata tramite ufficio riceve una chiamata Skype for Business, il telefono PBX e i client Skype for Business dell'utente squillano tutti contemporaneamente (se l'utente ha configurato l'anello simultaneo). L'utente può accettare la chiamata raccogliendo il telefono PBX o facendo clic su Accetta **nella** Skype for Business notifica. Se l'utente accetta la chiamata utilizzando Skype for Business, la finestra Skype for Business per la chiamata rimane aperta. Tuttavia, se l'utente accetta la chiamata raccogliendo il telefono PBX, la finestra di notifica di Skype for Business si chiude e non è disponibile alcuna sessione di Skype for Business, solo la chiamata vocale tramite il telefono PBX.
+Quando un utente abilitato per Call Via Work riceve una chiamata Skype for Business, il telefono PBX e i client Skype for Business dell'utente squillano tutti contemporaneamente (se l'utente ha configurato l'anello simultaneo). L'utente può accettare la chiamata raccogliendo il telefono PBX o facendo clic  su Accetta nella Skype for Business notifica. Se l'utente accetta la chiamata utilizzando Skype for Business, la finestra Skype for Business per la chiamata rimane aperta. Tuttavia, se l'utente accetta la chiamata raccogliendo il telefono PBX, la finestra di notifica di Skype for Business si chiude e non esiste alcuna sessione di Skype for Business, solo la chiamata vocale tramite il telefono PBX.
   
 Quando un utente abilitato per La chiamata tramite ufficio riceve una chiamata PBX, squilla solo il telefono PBX.
   
@@ -81,7 +76,7 @@ Call Via Work è una soluzione vocale che richiede poca configurazione hardware,
     
 - Gli utenti abilitati per La chiamata tramite lavoro non possono utilizzare le funzionalità di delega, chiamata del team o Response Group.
     
-- Gli utenti di Call Via Work non possono utilizzare Skype for Business per registrare una riunione, disattivare o riattivare l'audio della chiamata, tenere o trasferire la chiamata o utilizzare il parcheggio di chiamata.
+- Gli utenti di Call Via Work non possono usare Skype for Business per registrare una riunione, disattivare o riattivare l'audio della chiamata, tenere o trasferire la chiamata o utilizzare il parcheggio di chiamata.
     
 - Gli utenti non possono utilizzare Call Via Work per accedere ai messaggi della segreteria telefonica PBX.
     
@@ -93,11 +88,11 @@ Call Via Work è una soluzione vocale che richiede poca configurazione hardware,
     
 - Se un utente effettua o risponde a una chiamata utilizzando il telefono PBX (e non utilizzando la finestra Skype for Business), non sarà presente alcun registro della chiamata.
     
-- Se il sistema PBX non supporta **IL RIFERIMENTO con le sostituzioni,** si verifica il comportamento seguente. Durante una chiamata di chiamata tramite lavoro, se l'utente trasferisce la chiamata in corso dal Telefono PBX, la finestra della chiamata non scomparirà dalla finestra Skype for Business chiamata. Se l'utente chiude la finestra di chiamata, la chiamata tra l'obiettivo di trasferimento e il destinatario del trasferimento terminerà. 
+- Se il sistema PBX non supporta **IL RIFERIMENTO con** le sostituzioni, si verifica il comportamento seguente. Durante una chiamata call via work, se l'utente trasferisce la chiamata in corso dal sistema PBX Telefono, la finestra della chiamata non scomparirà dalla finestra Skype for Business chiamata. Se l'utente chiude la finestra di chiamata, la chiamata tra l'obiettivo di trasferimento e il destinatario del trasferimento terminerà. 
     
 ## <a name="prerequisites-for-call-via-work"></a>Prerequisiti per la chiamata tramite lavoro
 
-Per abilitare tutti gli utenti per La chiamata tramite lavoro, è necessario disporre di alcuni prerequisiti. Per ulteriori informazioni su questi prerequisiti e per la procedura per abilitare gli utenti per chiamata tramite lavoro, vedere [Deploy Call Via Work in Skype for Business Server 2015.](../../deploy/deploy-call-via-work.md) 
+Per abilitare tutti gli utenti per La chiamata tramite lavoro, è necessario disporre di alcuni prerequisiti. Per ulteriori informazioni su questi prerequisiti e per la procedura per abilitare gli utenti per chiamata tramite lavoro, vedere [Deploy Call Via Work in Skype for Business Server 2015](../../deploy/deploy-call-via-work.md). 
   
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Teams Transizione di messaggi di posta elettronica e sondaggi | Aggiornamento di base
-author: HowlinWolf-92
-ms.author: v-mahoffman
+title: Microsoft Teams transizioni di messaggi di posta elettronica e sondaggi | Aggiornamento di base
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -11,20 +11,15 @@ description: Messaggi di posta elettronica e sondaggi di esempio da usare in con
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
-- CSH
+  - CSH
 ms.custom: Teams-upgrade-guidance
 ms.collection:
-- Teams_ITAdmin_JourneyFromSfB
-- M365-collaboration
+  - Teams_ITAdmin_JourneyFromSfB
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 6b88a8030b2e808f95e8601147acce9cfa31da33
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60841998"
+  - Microsoft Teams
 ---
+
 # <a name="sample-emails-and-surveys-for-upgrade-basic-communications"></a>Messaggi di posta elettronica e sondaggi di esempio per le comunicazioni di base sull'aggiornamento
 
 ## <a name="sample-emails"></a>Messaggi di posta elettronica di esempio
@@ -201,7 +196,7 @@ Should you have questions, contact <<insert alias or contact info>>.
 
 ## <a name="sample-surveys"></a>Sondaggi di esempio
 
-Indicare quanto sei esperto nell'eseguire le attività seguenti in Teams e se ci sono una o più attività di cui vuoi saperne di più.
+Indicare quanto sei esperto nell'eseguire le attività seguenti in Teams e se ci sono una o più attività su cui vuoi saperne di più.
 
 | &nbsp; | Molto abile | Un po' esperto | Non è affatto esperto | Per saperne di più | N/D | Incerto/non familiare |&nbsp; | &nbsp;|&nbsp; |&nbsp; |
 |---|---|---|---|---|---|---|---|---|---|---|

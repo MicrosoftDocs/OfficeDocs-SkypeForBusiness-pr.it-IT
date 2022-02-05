@@ -1,36 +1,31 @@
 ---
 title: Coda dei Response Group
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.lscp.RgsQueueMain
+  - ms.lync.lscp.RgsQueueMain
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 29bde940-6107-494f-9bee-b6ebfa135e41
-ROBOTS: NOINDEX, NOFOLLOW
-description: I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. Le code di Response Group contengono le chiamate a un Response Group fino a quando un agente non risponde alla chiamata.
-ms.openlocfilehash: f33df7df7a0c129bbe522c39d9612377e85774ef
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60831390"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. Le code di Response Group contengono le chiamate a un Response Group fino a quando un agente non risponde alla chiamata.'
 ---
+
 # <a name="response-groups-queue"></a>Coda dei Response Group
 
 I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. Le code di Response Group contengono le chiamate a un Response Group fino a quando un agente non risponde alla chiamata.
 
-Nella **pagina** Coda Response Group viene visualizzato un elenco di tutte le code di Response Group definite per  -   l'organizzazione.
+Nella **pagina Response GroupQueue** -  viene visualizzato un elenco di tutte le code di Response Group definite per l'organizzazione.
 
 ## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
 
-È possibile eseguire le attività seguenti dalla pagina **Coda Response Group:**  -  
+Dalla pagina **Response GroupsQueue** -  è possibile eseguire le attività seguenti:
 
 - Creare una nuova coda
 

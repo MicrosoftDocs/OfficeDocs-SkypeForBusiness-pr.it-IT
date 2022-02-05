@@ -1,27 +1,23 @@
 ---
 title: Gestire i criteri di accesso esterno per l'organizzazione
-ms.reviewer: ''
-ms:assetid: 5571811e-34c8-443a-b94c-1ab5d4275581
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg520995(v=OCS.15)
-ms:contentKeyID: 48184160
+ms.reviewer: null
+'ms:assetid': 5571811e-34c8-443a-b94c-1ab5d4275581
+'ms:mtpsurl': 'https://technet.microsoft.com/en-us/library/Gg520995(v=OCS.15)'
+'ms:contentKeyID': 48184160
 mtps_version: v=OCS.15
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
-description: Dopo avere distribuito uno o più server Edge Server, è necessario abilitare i tipi di accesso esterno da supportare per l'organizzazione.
-ms.openlocfilehash: 19ce17e4b33fee39c6b37df8967e6045ac3840dc
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60835294"
+description: 'Dopo avere distribuito uno o più server Edge Server, è necessario abilitare i tipi di accesso esterno da supportare per l''organizzazione.'
 ---
+
+
 # <a name="manage-external-access-policy-for-your-organization"></a>Gestire i criteri di accesso esterno per l'organizzazione
 
 Dopo avere distribuito uno o più server Edge Server, è necessario abilitare i tipi di accesso esterno da supportare per l'organizzazione.

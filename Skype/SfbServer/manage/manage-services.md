@@ -1,27 +1,22 @@
 ---
 title: Gestire i servizi per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: c99ee134-8294-4481-bb4e-710fe85a39ca
-description: In questo articolo viene descritto come gestire i servizi in esecuzione in una Skype for Business Server topologia.
-ms.openlocfilehash: 3bb4092d2538bc994de3f71467cb03aedf8dc302
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60856673"
+description: In questo articolo viene descritto come gestire i servizi in esecuzione in Skype for Business Server topologia.
 ---
+
 # <a name="manage-services-for-skype-for-business-server"></a>Gestire i servizi per Skype for Business Server
 
-In questo articolo viene descritto come gestire i servizi in esecuzione in una Skype for Business Server topologia.
+In questo articolo viene descritto come gestire i servizi in esecuzione in Skype for Business Server topologia.
   
 ## <a name="view-a-list-of-computers-running-skype-for-business-server"></a>Visualizzare un elenco di computer che eseguono Skype for Business Server
 <a name="view_list"> </a>
@@ -41,7 +36,7 @@ In questo articolo viene descritto come gestire i servizi in esecuzione in una S
 ## <a name="view-the-status-of-services-running-on-a-skype-for-business-server"></a>Visualizzare lo stato dei servizi in esecuzione in un server Skype for Business server
 <a name="view-status"> </a>
 
-È possibile utilizzare Skype for Business Server di controllo per visualizzare tutti i servizi in esecuzione in un computer specifico della topologia di Skype for Business Server e visualizzare lo stato di ogni servizio.
+È possibile utilizzare Skype for Business Server di controllo per visualizzare tutti i servizi in esecuzione in un computer specifico nella topologia di Skype for Business Server e visualizzare lo stato di ogni servizio.
   
 ### <a name="to-view-the-status-of-services-running-on-a-computer"></a>Per visualizzare lo stato dei servizi in esecuzione in un computer
 
@@ -55,7 +50,7 @@ In questo articolo viene descritto come gestire i servizi in esecuzione in una S
     
 ### <a name="viewing-service-status-with-windows-powershell-cmdlets"></a>Visualizzazione dello stato del servizio Windows cmdlet powershell
 
-È inoltre possibile visualizzare lo stato del servizio utilizzando Windows PowerShell e il cmdlet **Get-CsWindowsService.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere Amministrazione remota di PowerShell per [Microsoft Lync.](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/) Il processo è lo stesso in Skype for Business Server.
+È inoltre possibile visualizzare lo stato del servizio utilizzando Windows PowerShell e il cmdlet **Get-CsWindowsService**. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere [Amministrazione remota di PowerShell per Microsoft Lync](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/). Il processo è lo stesso in Skype for Business Server.
   
 ### <a name="to-view-service-status"></a>Per visualizzare lo stato del servizio
 
@@ -93,9 +88,9 @@ Per informazioni dettagliate, [vedere Get-CsWindowsService](/powershell/module/s
 5. Fare clic su **Proprietà**.
 6. Nella finestra **Visualizza dettagli computer** ordinare l'elenco dei servizi, se necessario, e fare clic sul servizio che si desidera visualizzare.
 7. Eseguire una delle operazioni seguenti in base alle esigenze:
-   - Per visualizzare lo stato più recente del servizio specifico, fare clic **su Ottieni stato servizio**.
-   - Per visualizzare i dettagli relativi al servizio specifico, fare clic **su Proprietà** e quindi su **Chiudi.**
-   - Per tornare all'elenco di tutti i computer della topologia, fare clic su **Chiudi.**
+   - Per visualizzare lo stato più recente del servizio specifico, fare clic su **Ottieni stato servizio**.
+   - Per visualizzare i dettagli del servizio specifico, fare clic **su Proprietà** e quindi su **Chiudi**.
+   - Per tornare all'elenco di tutti i computer della topologia, fare clic su **Chiudi**.
     
 ## <a name="start-or-stop-skype-for-business-server-services"></a>Avviare o arrestare Skype for Business Server servizi
 <a name="StartStop"> </a>
@@ -131,7 +126,7 @@ Per informazioni dettagliate, [vedere Get-CsWindowsService](/powershell/module/s
 ## <a name="prevent-sessions-for-services"></a>Impedire le sessioni per i servizi
 <a name="prevent_session"> </a>
 
-È possibile utilizzare il Skype for Business Server di controllo per impedire nuove sessioni per tutti i servizi di Skype for Business Server in esecuzione in un computer specifico o per impedire nuove sessioni per un servizio Skype for Business Server specifico.
+È possibile utilizzare il Skype for Business Server di controllo per impedire nuove sessioni per tutti i servizi Skype for Business Server in esecuzione in un computer specifico o per impedire nuove sessioni per uno specifico servizio di Skype for Business Server.
   
 ### <a name="to-prevent-new-sessions-for-all-skype-for-business-services-on-a-computer"></a>Per impedire nuove sessioni per tutti i Skype for Business in un computer
 

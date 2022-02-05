@@ -1,25 +1,20 @@
 ---
 title: Visualizzazione FileTransfers
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: e52c3ad0-152e-4a18-af1c-1aff0d205151
 description: Nella visualizzazione FileTransfer vengono archiviate informazioni sulle sessioni di trasferimento file peer-to-peer. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: eae94d0220cb3443e90665d420b888e86a37d11a
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850639"
 ---
+
 # <a name="filetransfers-view"></a>Visualizzazione FileTransfers
  
 Nella visualizzazione FileTransfer vengono archiviate informazioni sulle sessioni di trasferimento file peer-to-peer. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.

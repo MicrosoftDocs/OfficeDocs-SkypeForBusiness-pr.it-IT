@@ -1,25 +1,20 @@
 ---
 title: Distribuire il gestore delle statistiche per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 37b2bb9c-c5d4-4fb0-a976-670b7594b82f
 description: 'Riepilogo: leggere questo argomento per informazioni su come distribuire Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: 4cfedb385078cd12413cb9f27059f7b5ed8023a1
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60857433"
 ---
+
 # <a name="deploy-statistics-manager-for-skype-for-business-server"></a>Distribuire il gestore delle statistiche per Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come distribuire Gestione statistiche per Skype for Business Server.
@@ -34,7 +29,7 @@ Prima di tentare di installare Gestione statistiche, assicurarsi di avere famili
 > [!NOTE]
 > Il sito Web Gestione statistiche è stato testato e funziona correttamente in Internet Explorer 11+, Edge 20.10240+ e Chrome 46+ (versione sempreverde corrente). 
   
-È possibile trovare Gestione statistiche scaricabile all'indirizzo [https://aka.ms/StatsManDownload](https://aka.ms/StatsManDownload) . 
+È possibile trovare Gestione statistiche scaricabile all'indirizzo [https://aka.ms/StatsManDownload](https://aka.ms/StatsManDownload). 
   
 In questa sezione sono contenute le seguenti sezioni:
   
@@ -66,11 +61,11 @@ Per distribuire Gestione statistiche, attenersi alla seguente procedura:
 
 Per preparare il computer host, è necessario installare il sistema di memorizzazione nella cache redis in memoria e verificare che nel computer sia presente un certificato valido. Microsoft consiglia di installare la build stabile più recente di Redis 3.0. Statistics Manager versione 2.0 è stato testato con Redis 3.2.100. 
   
-1. Scaricare Redis dal sito seguente: [https://github.com/MSOpenTech/redis](https://github.com/MSOpenTech/redis) . 
+1. Scaricare Redis dal sito seguente: [https://github.com/MSOpenTech/redis](https://github.com/MSOpenTech/redis). 
     
     I programmi di installazione non firmati possono essere scaricati da [https://github.com/MSOpenTech/redis/releases](https://github.com/MSOpenTech/redis/releases)
     
-    Se necessario, i file binari firmati sono disponibili tramite i gestori di pacchetti più diffusi: [Nuget](https://www.nuget.org/packages/Redis-64/) e [Choclatey.](https://chocolatey.org/packages/redis-64)
+    Se necessario, i file binari firmati sono disponibili tramite i gestori di pacchetti più diffusi: [Nuget](https://www.nuget.org/packages/Redis-64/) e [Choclatey](https://chocolatey.org/packages/redis-64).
     
    - Eseguire il file msi fornito e seguire le istruzioni visualizzate.
     
@@ -78,7 +73,7 @@ Per preparare il computer host, è necessario installare il sistema di memorizza
     
 2. Il servizio Listener richiede un certificato. Microsoft consiglia vivamente di disporre di un certificato firmato da un'autorità di certificazione attendibile. 
     
-    Se si desidera utilizzare un certificato autofirmato, ad esempio a scopo di test in un laboratorio, vedere [Creare un certificato autofirmato.](deploy.md#BKMK_SelfCert)
+    Se si desidera utilizzare un certificato autofirmato, ad esempio a scopo di test in un laboratorio, vedere [Creare un certificato autofirmato](deploy.md#BKMK_SelfCert).
     
     Si noti che l'agente usa la verifica dell'identificazione personale del certificato (anziché la verifica della catena). Non verrà eseguita la convalida completa del certificato perché è possibile utilizzare certificati autofirmati.
     
@@ -86,7 +81,7 @@ Per preparare il computer host, è necessario installare il sistema di memorizza
 
 Installare il servizio Listener nel computer host eseguendo il StatsManPerfAgentListener.msi e specificando quanto segue:
   
-1. Rivedere il Contratto di licenza e, se si accetta, selezionare Accetto i termini del contratto di **licenza** e quindi fare clic su **Avanti.** 
+1. Rivedere il Contratto di licenza e, se si accetta, selezionare Accetto i termini del contratto di **licenza** e quindi fare clic su **Avanti**. 
     
 2. Nella pagina successiva specificare le informazioni seguenti:
     
@@ -104,7 +99,7 @@ Installare il servizio Listener nel computer host eseguendo il StatsManPerfAgent
        Get-ChildItem -path cert:\LocalMachine\My
        ```
 
-   - **Installa Dir:** Questa è la directory in cui verranno installati i file binari. È possibile modificarla rispetto all'impostazione predefinita utilizzando il **pulsante Sfoglia.**
+   - **Installa Dir:** Questa è la directory in cui verranno installati i file binari. È possibile modificarla rispetto all'impostazione predefinita utilizzando il **pulsante Sfoglia** .
     
    - **AppData Dir:** Questa è la directory in cui verranno archiviati la cartella Logs e altri dati. È possibile modificarla rispetto all'impostazione predefinita. Non verrà eliminato durante la disinstallazione.
     
@@ -112,7 +107,7 @@ Installare il servizio Listener nel computer host eseguendo il StatsManPerfAgent
     
 Per convalidare l'installazione, eseguire la procedura seguente:
   
-1. Aprire un browser e passare a https://localhost: \<service-port\> /healthcheck/
+1. Aprire un browser e passare a https://localhost:\<service-port\>/healthcheck/
     
     Per impostazione predefinita, la porta del servizio è 8443 (a meno che non sia stata specificata un'altra porta).
     
@@ -126,23 +121,23 @@ Per convalidare l'installazione, eseguire la procedura seguente:
     
 ### <a name="install-the-website"></a>Installare il sito Web
 
-Installare il sito Web nel computer host eseguendo il StatsManWebSite.msi (incluso in [Skype for Business Server, Real-Time Statistics Manager (64 bit)](https://www.microsoft.com/en-in/download/details.aspx?id=57518)e specificando quanto segue:
+Installare il sito Web nel computer host eseguendo il StatsManWebSite.msi (incluso in [Skype for Business Server, Real-Time Statistics Manager (64 bit)](https://www.microsoft.com/en-in/download/details.aspx?id=57518)) e specificando quanto segue:
   
-1. Rivedere il Contratto di licenza e, se si accetta, selezionare Accetto i termini del contratto di **licenza** e quindi fare clic su **Avanti.** 
+1. Rivedere il Contratto di licenza e, se si accetta, selezionare Accetto i termini del contratto di **licenza** e quindi fare clic su **Avanti**. 
     
 2. Nella pagina successiva specificare le informazioni seguenti:
     
    - **Porta servizio:** Questo è il numero di porta su cui il sito Web sarà in ascolto. È possibile modificarlo in un secondo momento utilizzando il binding di Gestione IIS. Durante l'installazione, questa porta verrà consentita attraverso il firewall locale.
     
-   - **Installa Dir:** Questa è la directory in cui verranno installati i file binari. È possibile modificarla rispetto all'impostazione predefinita utilizzando il **pulsante Sfoglia.**
+   - **Installa Dir:** Questa è la directory in cui verranno installati i file binari. È possibile modificarla rispetto all'impostazione predefinita utilizzando il **pulsante Sfoglia** .
     
    - **AppData Dir:** Questa è la directory in cui verranno archiviati la cartella Logs e altri dati. È possibile modificarla rispetto all'impostazione predefinita. Non verrà eliminato durante la disinstallazione.
     
 3. Fare clic su **Installa**.
     
-Per visualizzare il sito Web, aprire un browser e passare a: http://localhost ,webport \> /.
+Per visualizzare il sito Web, aprire un browser e passare a: http://localhost,webport\>/.
   
-Per visualizzare solo le informazioni sull'integrità, aprire un browser e passare a: http://localhost: \<webport\> /healthcheck/.
+Per visualizzare solo le informazioni sull'integrità, aprire un browser e passare a: http://localhost:\<webport\>/healthcheck/.
   
 Per impostazione predefinita, il numero di porta Web è 8080. È possibile modificare il binding di porta del sito Web utilizzando Gestione IIS.
   
@@ -152,7 +147,7 @@ Il programma di installazione Web aggiunge un gruppo di sicurezza locale, denomi
 
 Installare un agente in ogni Skype for Business Server che si desidera monitorare eseguendo il StatsManPerfAgent.msi e specificando quanto segue:
   
-1. Rivedere il Contratto di licenza e, se si accetta, selezionare Accetto i termini del contratto di **licenza** e quindi fare clic su **Avanti.** 
+1. Rivedere il Contratto di licenza e, se si accetta, selezionare Accetto i termini del contratto di **licenza** e quindi fare clic su **Avanti**. 
     
 2. Nella pagina successiva specificare le informazioni seguenti:
     
@@ -160,11 +155,11 @@ Installare un agente in ogni Skype for Business Server che si desidera monitorar
     
    - **URI servizio:** Questo è l'URI in cui risiede il listener. Deve utilizzare il https://name:port formato.
     
-     È possibile utilizzare un nome NETBIOS o un nome di dominio completo. È possibile utilizzare il nome specificato  anche come Subject o **Subject Alternative Names** del certificato nel servizio Listener, ma questo non è un requisito.
+     È possibile utilizzare un nome NETBIOS o un nome di dominio completo. È possibile utilizzare il nome specificato anche come Subject o **Subject Alternative Names** del certificato nel servizio Listener, ma questo non è un requisito.
     
    - **Identificazione personale servizio:** Questa è l'identificazione personale del certificato SSL utilizzato dal listener. L'agente utilizzerà questa identificazione personale per eseguire l'autenticazione nel listener. Non verrà eseguita la convalida completa del certificato perché è possibile utilizzare certificati autofirmati.
     
-   - **Installa Dir:** Questa è la directory in cui verranno installati i file binari. È possibile modificarla rispetto all'impostazione predefinita utilizzando il **pulsante Sfoglia.**
+   - **Installa Dir:** Questa è la directory in cui verranno installati i file binari. È possibile modificarla rispetto all'impostazione predefinita utilizzando il **pulsante Sfoglia** .
     
    - **AppData Dir:** Questa è la directory in cui verranno archiviati la cartella Logs e il file password.txt crittografato. È possibile modificare l'impostazione predefinita. Non verrà eliminato durante la disinstallazione.
     
@@ -179,13 +174,13 @@ msiexec /l install.log /i StatsManPerfAgent.msi SERVICE_THUMBPRINT=<thumbprint> 
 ### <a name="import-the-topology"></a>Importare la topologia
 <a name="BKMK_ImportTopology"> </a>
 
-Dopo l'installazione e l'esecuzione di Gestione statistiche, è necessario importare la topologia di Skype for Business Server in modo che Gestione statistiche conosca il sito, il pool e il ruolo di ogni server. Per importare la topologia di Skype for Business Server, utilizzare il cmdlet [Get-CsPool](/powershell/module/skype/get-cspool?view=skype-ps) per recuperare le informazioni su ogni pool in uso nell'organizzazione e quindi importare tali informazioni in Gestione statistiche.
+Dopo l'installazione e l'esecuzione di Gestione statistiche, è necessario importare la topologia di Skype for Business Server in modo che Gestione statistiche conosca il sito, il pool e il ruolo di ogni server. Per importare la topologia di Skype for Business Server, si utilizzerà il cmdlet [Get-CsPool](/powershell/module/skype/get-cspool?view=skype-ps) per recuperare informazioni su ogni pool in uso nell'organizzazione, quindi importare tali informazioni in Gestione statistiche.
   
 Per importare la Skype for Business Server, attenersi alla seguente procedura:
   
 1. In un host con i cmdlet Skype for Business Server PowerShell:
     
-    a. Eseguire il comando riportato di seguito: 
+    a. Eseguire il comando seguente: 
     
    ```PowerShell
    Get-CsPool | Export-Clixml -Path mypoolinfo.xml
@@ -228,7 +223,7 @@ Se si desidera monitorare i server non presenti nella topologia di Skype for Bus
    cd C:\Program Files\Skype for Business Server StatsMan Listener
    ```
 
-2. Eseguire il comando riportato di seguito:
+2. Eseguire il comando seguente:
     
    ```powershell
     .\Update-StatsManServerInfo.ps1 -HostName <hostname> -SiteName <name of site> -PoolName <poolName> -Roles <role1>[,<role2>,<roleN>]
@@ -243,7 +238,7 @@ Se l'avvio di un agente non riesce, verificare quanto segue:
     
     1. Assicurarsi di aver seguito le istruzioni per l'importazione della topologia. Vedere [Import the topology](deploy.md#BKMK_ImportTopology).
         
-    2. Se l'agente si trova in un server non elencato nella topologia, ad esempio i nodi in un cluster AlwaysOn di SQL, sarà necessario aggiungere manualmente l'agente seguendo le istruzioni in Importare la [topologia.](deploy.md#BKMK_ImportTopology)
+    2. Se l'agente si trova in un server non elencato nella topologia( ad esempio, i nodi in un cluster AlwaysOn di SQL), sarà necessario aggiungere manualmente l'agente seguendo le istruzioni in [Importare](deploy.md#BKMK_ImportTopology) la topologia.
     
 - L'agente può contattare il listener?
     
@@ -280,11 +275,11 @@ Microsoft consiglia vivamente di utilizzare un certificato firmato da un'autorit
    New-SelfSignedCertificate -DnsName StatsManListener -CertStoreLocation Cert:\LocalMachine\My
    ```
 
-2. Digitare  `certlm.msc` . Verrà aperto Gestione certificati per il computer locale.
+2. Digitare  `certlm.msc`. Verrà aperto Gestione certificati per il computer locale.
     
 3. Passare a **Personale** e quindi aprire **Certificati**.
     
-4. Fai clic con il pulsante destro del mouse su **StatsManListener- \> Tutte le attività- \> Gestisci chiavi private...**
+4. Fai clic con il **pulsante destro del mouse su StatsManListener-All\> Tasks-Manage\> Private Keys...**
     
 5. Fare clic su **Aggiungi**.
     
@@ -292,7 +287,7 @@ Microsoft consiglia vivamente di utilizzare un certificato firmato da un'autorit
     
 7. Fare clic su **OK**.
     
-8. In **Controllo completo** deselezionare la casella **di** controllo Consenti. È necessario solo l'accesso in lettura.
+8. In **Controllo completo** deselezionare la **casella di** controllo Consenti. È necessario solo l'accesso in lettura.
     
 9. Fare clic su **OK**.
     

@@ -1,27 +1,22 @@
 ---
 title: Aggiungere Edge Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddEdgeServerPage
+  - ms.lync.tb.AddEdgeServerPage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 9bd9c2b2-8329-4b31-a937-e462f5cc7293
-description: Per incorporare un server perimetrale o un pool di server perimetrali nella progettazione della topologia, è necessario specificare il nome di dominio completo (FQDN) del server in cui si desidera distribuire il server perimetrale o il pool di server perimetrali. Prima di pubblicare una topologia che include il server perimetrale o il pool di server perimetrali e installare Skype for Business Server, è necessario aver completato tutti i prerequisiti per la distribuzione dell'accesso degli utenti esterni. Per informazioni dettagliate su questi prerequisiti, vedere Preparing for Installation of Servers in the Perimeter Network nella documentazione relativa alla distribuzione.
-ms.openlocfilehash: 04ab27281bd382b95ec088a9db995237d6ff7d6d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837868"
+description: 'Per incorporare un server perimetrale o un pool di server perimetrali nella progettazione della topologia, è necessario specificare il nome di dominio completo (FQDN) del server in cui si desidera distribuire il server perimetrale o il pool di server perimetrali. Prima di pubblicare una topologia che include il server perimetrale o il pool di server perimetrali e installare Skype for Business Server, è necessario aver completato tutti i prerequisiti per la distribuzione dell''accesso degli utenti esterni. Per informazioni dettagliate su questi prerequisiti, vedere Preparing for Installation of Servers in the Perimeter Network nella documentazione relativa alla distribuzione.'
 ---
+
 # <a name="add-edge-server"></a>Aggiungere Edge Server
 
 Per incorporare un server perimetrale o un pool di server perimetrali nella progettazione della topologia, è necessario specificare il nome di dominio completo (FQDN) del server in cui si desidera distribuire il server perimetrale o il pool di server perimetrali. Prima di pubblicare una topologia che include il server perimetrale o il pool di server perimetrali e installare Skype for Business Server, è necessario aver completato tutti i prerequisiti per la distribuzione dell'accesso degli utenti esterni. Per informazioni dettagliate su questi prerequisiti, vedere [Preparing for Installation of Servers in the Perimeter Network](/previous-versions/office/lync-server-2013/lync-server-2013-preparing-for-installation-of-servers-in-the-perimeter-network) nella documentazione relativa alla distribuzione.

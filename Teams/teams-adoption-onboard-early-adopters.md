@@ -1,7 +1,7 @@
 ---
 title: Eseguire l'onboarding degli early adopter e raccogliere feedback
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.date: 11/01/2018
 audience: Admin
@@ -10,24 +10,19 @@ ms.service: msteams
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Scegliere i primi utenti per la fase di Teams e quindi raccogliere feedback per il progetto.
+description: Scegliere i primi utenti per la fase di sperimentazione dell'Teams e quindi raccogliere feedback per il progetto.
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- Adopt
-- seo-marvel-mar2020
+  - Adopt
+  - seo-marvel-mar2020
 ms.collection:
-- Teams_ITAdmin_Adopt
-- M365-collaboration
+  - Teams_ITAdmin_Adopt
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: a87a6802a538609e9899f2645833a1e9bdab120f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60840728"
+  - Microsoft Teams
 ---
+
 # <a name="onboard-early-adopters-and-gather-feedback-for-microsoft-teams"></a>Onboard early adopters and gather feedback for Microsoft Teams
 
 Tornare all'elenco dei dipendenti che hanno espresso interesse per il programma di adozione iniziale. Decidere quali di queste persone devono partecipare agli esperimenti iniziali con Teams. Può trattarsi di una parte o di tutte le persone interessate. Anche se non li si seleziona per questi progetti iniziali, continuare a comunicare con loro in modo che rimangano interessati e siano disposti a partecipare al futuro. Fanno parte del processo di onboarding per i progetti selezionati in base alle discussioni con gli stakeholder aziendali, il team tecnico e l'esercizio di assegnazione delle priorità illustrato in precedenza. 

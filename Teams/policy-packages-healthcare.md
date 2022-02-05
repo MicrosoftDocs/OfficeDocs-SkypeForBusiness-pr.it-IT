@@ -1,7 +1,7 @@
 ---
 title: Pacchetti di criteri di Teams per il settore sanitario
 author: serdars
-ms.author: v-mahoffman
+ms.author: serdars
 manager: serdars
 ms.reviewer: aaglick
 ms.topic: article
@@ -9,25 +9,20 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 ms.collection:
-- M365-collaboration
-- microsoftcloud-healthcare
+  - M365-collaboration
+  - microsoftcloud-healthcare
 appliesto:
-- Microsoft Teams
-f1.keywords: ''
-ms.custom: ''
+  - Microsoft Teams
+f1.keywords: null
+ms.custom: null
 ms.localizationpriority: medium
 search.appverid: MET150
 searchScope:
-- Microsoft Teams
-- Microsoft Cloud for Healthcare
+  - Microsoft Teams
+  - Microsoft Cloud for Healthcare
 description: Informazioni su come usare e gestire i pacchetti di criteri di Teams per l'organizzazione nel settore sanitario.
-ms.openlocfilehash: 752effdf7a30fc228dae9bcec00a5e2272199ced
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60741592"
 ---
+
 # <a name="teams-policy-packages-for-healthcare"></a>Pacchetti di criteri di Teams per il settore sanitario
 
 ## <a name="overview"></a>Panoramica

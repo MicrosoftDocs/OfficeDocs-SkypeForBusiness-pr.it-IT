@@ -1,48 +1,43 @@
 ---
 title: Pianificare la VoIP aziendale in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: f9c6fd1d-c379-47d1-8447-19274ace9951
-description: 'Riepilogo: informazioni sulle opzioni disponibili per la pianificazione di una soluzione vocale e di comunicazione unificata in Skype for Business Server.'
-ms.openlocfilehash: 71fc511d6c435ab6b1cd5f553d668acd2fb606a7
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829860"
+description: 'Riepilogo: informazioni sulle opzioni per la pianificazione di una soluzione vocale e di comunicazione unificata in Skype for Business Server.'
 ---
+
 # <a name="plan-your-enterprise-voice-solution-in-skype-for-business-server"></a>Pianificare la VoIP aziendale in Skype for Business Server
  
 **Riepilogo:** Informazioni sulle opzioni per la pianificazione di una soluzione vocale e di comunicazione unificata in Skype for Business Server.
   
-Skype for Business Server offre due opzioni di VoIP aziendale locali, VoIP aziendale e Call Via Work, per integrare il sistema telefonico dell'organizzazione con la distribuzione di Skype for Business Server, rendendo possibile una vera e propria comunicazione unificata soluzione. Entrambe le opzioni consentono agli utenti di usare Skype for Business client per avviare chiamate vocali con altri utenti, sia all'interno che all'esterno dell'organizzazione.
+Skype for Business Server offre due opzioni di VoIP aziendale locali, VoIP aziendale e Call Via Work, per integrare il sistema telefonico dell'organizzazione con la distribuzione di Skype for Business Server, per un vero e proprio sistema unificato soluzione di comunicazione. Entrambe le opzioni consentono agli utenti di usare Skype for Business client per avviare chiamate vocali con altri utenti, sia all'interno che all'esterno dell'organizzazione.
   
 Puoi anche usare sia VoIP aziendale chiamata tramite lavoro insieme.
   
-- VoIP aziendale è l'offerta vocale più completa. Si tratta di una soluzione VoIP (Voice over IP) basata su software, che offre un set di funzionalità molto ricco, inclusa una ricca integrazione con Outlook e Exchange, e molte funzionalità avanzate come Response Group, Parcheggio di chiamata, chiamate di team, Prelievo chiamate di gruppo e supporto avanzato di emergenza E9-1-1. Con VoIP aziendale, gli utenti usano un dispositivo audio, ad esempio un auricolare con il computer o un telefono abilitato voIP, anziché un telefono PSTN o PBX tradizionale.
+- VoIP aziendale è l'offerta vocale più completa. Si tratta di una soluzione VoIP (Voice over IP) basata su software, che offre un set di funzionalità molto ricco, inclusa una ricca integrazione con Outlook e Exchange, e molte funzionalità avanzate come Response Group, Parcheggio di chiamata, chiamate di team, Prelievo chiamata di gruppo e supporto avanzato di emergenza E9-1-1. Con VoIP aziendale, gli utenti usano un dispositivo audio, ad esempio un auricolare con il computer o un telefono abilitato voIP, anziché un telefono PSTN o PBX tradizionale.
     
-- Call Via Work offre un modo per integrare la soluzione Skype for Business con i sistemi telefonici PBX esistenti. Un utente abilitato per La chiamata tramite lavoro può fare clic Skype for Business per chiamare un altro utente, all'interno della distribuzione o un utente esterno. La chiamata viene completata utilizzando il telefono PBX dell'utente. Inoltre, questi utenti possono fare clic Skype for Business per partecipare alle conferenze.
+- Call Via Work offre un modo per integrare la soluzione Skype for Business con i sistemi telefonici PBX esistenti. Un utente abilitato per Chiama tramite lavoro può fare clic Skype for Business per chiamare un altro utente, all'interno della distribuzione o un utente esterno. La chiamata viene completata utilizzando il telefono PBX dell'utente. Inoltre, questi utenti possono fare clic Skype for Business per partecipare alle conferenze.
     
     La distribuzione delle chiamate tramite ufficio è anche un vantaggio per gli utenti che dispongono ancora di telefoni PBX ma che sono in fase di transizione a VoIP aziendale, in quanto consente agli utenti di utilizzare il client Skype for Business per controllare le chiamate telefoniche.
     
      Call Via Work offre un set più limitato di funzionalità vocali rispetto aEnterprise Voice. Ad esempio, non supporta la delega, la chiamata del team, il Response Group o l'E9-1-1 avanzato.
     
-Naturalmente, alcuni utenti possono essere abilitati per l'VoIP aziendale mentre altri utenti utilizzano telefoni PBX. Inoltre, durante la transizione a una soluzione VoIP aziendale completa, è possibile abilitare gli utenti che dispongono ancora di telefoni PBX per VoIP aziendale. Questi utenti possono usare il telefono PBX mentre si è alla scrivania e anche VoIP aziendale per effettuare o ricevere chiamate tramite dispositivi VoIP mentre si sono in altre posizioni. Se questi utenti sono abilitati per La chiamata tramite ufficio, possono usare il client Skype for Business per controllare il telefono PBX mentre sono alla scrivania.
+Naturalmente, alcuni utenti possono essere abilitati per l'VoIP aziendale mentre altri utenti utilizzano telefoni PBX. Inoltre, durante la transizione a una soluzione VoIP aziendale completa, è possibile abilitare gli utenti che dispongono ancora di telefoni PBX per VoIP aziendale. Questi utenti possono usare il telefono PBX mentre si è alla scrivania e anche VoIP aziendale per effettuare o ricevere chiamate utilizzando dispositivi VoIP in altre posizioni. Se questi utenti sono abilitati per La chiamata tramite ufficio, possono usare il client Skype for Business per controllare il telefono PBX mentre sono alla scrivania.
   
 > [!NOTE]
-> Il controllo delle chiamate remote era una funzionalità offerta nelle versioni precedenti di Lync Server, che consente agli utenti di utilizzare il client Skype for Business per effettuare e ricevere chiamate telefoniche sui telefoni PBX. Il controllo delle chiamate remote non è supportato per gli utenti ospitati su server Skype for Business Server, ma è supportato per gli utenti con client Skype for Business ancora ospitati nei server che eseguono Lync Server 2013. 
+> Il controllo delle chiamate remote era una funzionalità offerta nelle versioni precedenti di Lync Server, che consente agli utenti di utilizzare il client Skype for Business per effettuare e ricevere chiamate telefoniche sui telefoni PBX. Il controllo delle chiamate remote non è supportato per gli utenti ospitati su server Skype for Business Server, ma è supportato per gli utenti con client Skype for Business ancora ospitati in server che eseguono Lync Server 2013. 
   
 ## <a name="see-also"></a>Vedere anche
 

@@ -8,95 +8,91 @@ ms.topic: article
 ms.tgt.pltfrm: lync
 ms.service: msteams
 ms.collection:
-- M365-voice
+  - M365-voice
 audience: Admin
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- Skype for Business Certification
-- dn947482
-- seo-marvel-apr2020
+  - Skype for Business Certification
+  - dn947482
+  - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 795b500f2142a082c5d8be82de749a6a0e134a84
-ms.sourcegitcommit: 5e9a8d3cdb72b57adfb842200159c5d753b70ecb
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62329036"
 ---
+
 # <a name="microsoft-teams-certified-devices"></a>Microsoft Teams dispositivi certificati
 
 I Microsoft Teams di certificazione assicurano che i clienti che usano telefoni da tavolo certificati e telefoni da conferenza sperimenteranno un'esperienza di audiochiamate e riunioni di alta qualità.
 
-Microsoft Teams i programmi di certificazione assicurano una barra di qualità superiore con obiettivi di prestazioni superiori e metriche sulla qualità audio. I partner stanno lavorando attivamente per soddisfare questa barra superiore e stanno qualificando i dispositivi in base ai requisiti di certificazione. Alcuni dei nostri partner stanno anche lavorando per fornire supporto per il servizio di Skype for Business sullo stesso hardware dei telefoni Teams telefoni. 
+Microsoft Teams di certificazione assicurano una barra di qualità superiore con obiettivi di prestazioni superiori e metriche sulla qualità audio. I partner stanno lavorando attivamente per soddisfare questa barra superiore e stanno qualificando i dispositivi in base ai requisiti di certificazione. Alcuni dei nostri partner stanno anche lavorando per fornire supporto per il servizio Skype for Business sullo stesso hardware dei telefoni Teams telefoni. 
+
 
 ## <a name="currently-certified-teams-phones"></a>Telefoni Teams certificati
 
 I dispositivi seguenti sono certificati nel programma di certificazione Microsoft Teams telefoni:
 
-|Modello di dispositivo    | Versione firmware    | Data di rilascio
-|:---------------------------------------|:-----------------------------------------|:-----------------------------|
-| Crestron UC-P10-T (con e senza ricevitore)    | `1.0.0.80`       | Maggio 2021             |
-| Crestron UC-P8-T (con e senza ricevitore)     | `1.0.0.56`       | Febbraio 2021 |
-| Crestron UC-P10-C-T (con e senza ricevitore)  | `1.0.0.80`       | Maggio 2021                     |
-| Crestron UC-P8-C-T (con e senza ricevitore)   | `1.0.0.80`       | Maggio 2021                     |
-| Audiocode C470HD                      | `1.8.293   `                                               | Gennaio 2021                 |
-| Yealink MP52                           | `145.15.0.6 `                                              | Aprile 2021                   |
-| AudioCodes C435HD                      | `1.12.33`                                                  | Aprile 2021                   |
-| AudioCodes C455HD                      | `1.14.404`                                                 | Novembre 2021                |
-| Crestron UC-2                          |`1.0.1.46`                                                 | Luglio 2020                    |
-| Visualizzazione ThinkSmart di Lenovo                 | `CD-18781Y.200410.067`                                     | Aprile 2020                   |
-| Poly Trio C60, Trio C60 NR, Trio C60 ND | `5.9.3.6155`                                              | Aprile 2020                   |
-| Poly CCX400                            | `1.0.0.0200`                                               | Gennaio 2020                 |
-| Poly CCX600                            | `5.9.12.1122`                                              | Gennaio 2020                 |
-| Poly CCX500                            | `5.9.12.1122`                                              | Dicembre 2019                |                                                                                                                                                           
-| Yealink EXP50 supportato in MP56, MP58, VP59| Per ogni modello di dispositivo supportato, vedere aggiornamento #7 versione firmware | Gennaio 2021 |
-| Yealink MP58 | `122.15.0.27`| Dicembre 2020 |
-| Yealink MP54 | `122.15.0.27`| Novembre 2020 |
-| Yealink MP56 | `122.15.0.6` | Marzo 2020    |
-| Yealink VP59 | `91.15.0.16` | Giugno 2019     |
+|Modello di dispositivo    | Versione firmware    | Data di fine certificazione | Versione del sistema operativo Android                               |
+|:---------------------------------------|:-----------------------------------------|:-----------------------------|-----------------------------------|
+| Crestron UC-P10-T (con e senza ricevitore)    | `1.0.0.80`       | 5 agosto 2023            | 9 |
+| Crestron UC-P8-T (con e senza ricevitore)     | `1.0.0.56`       | 5 agosto 2023            | 9 |
+| Crestron UC-P10-C-T (con e senza ricevitore)  | `1.0.0.80`       | 5 agosto 2023            | 9 |
+| Crestron UC-P8-C-T (con e senza ricevitore)   | `1.0.0.80`       | 5 agosto 2023            | 9 |
+| Audiocode C470HD                      | `1.8.293   `                                               | 5 agosto 2023               | 9 |
+| Yealink MP52                           | `145.15.0.6 `                                              | 5 agosto 2023               | 9 |
+| AudioCodes C435HD                      | `1.12.33`                                                  | 5 agosto 2023               | 9 |
+| AudioCodes C455HD                      | `1.14.404`                                                 | 5 agosto 2023               | 9 |
+| Crestron UC-2                          |`1.0.1.46`                                                  | 5 agosto 2023               | 9 |
+| Visualizzazione ThinkSmart di Lenovo                 | `CD-18781Y.200410.067`                                     | 5 dicembre 2022             | 8.1 |
+| Poly Trio C60, Trio C60 NR, Trio C60 ND | `5.9.3.6155`                                              | 5 agosto 2023               | 9 |
+| Poly CCX400                            | `1.0.0.0200`                                               | 5 agosto 2023               | 9 |
+| Poly CCX600                            | `5.9.12.1122`                                              | 5 agosto 2023               | 9 |
+| Poly CCX500                            | `5.9.12.1122`                                              | 5 agosto 2023               | 9 |                                                                                                                                                        
+| Yealink EXP50 supportato in MP56, MP58, VP59| Per ogni modello di dispositivo supportato, vedere aggiornamento #7 versione firmware | 5 agosto 2023      | 9 |
+| Yealink MP58 | `122.15.0.27`| 5 agosto 2023  | 9 |
+| Yealink MP54 | `122.15.0.27`| 5 agosto 2023  | 9 |
+| Yealink MP56 | `122.15.0.6` | 5 agosto 2023  | 9 |
+| Yealink VP59 | `91.15.0.16` | 5 agosto 2023  | 9 |
 
 ## <a name="currently-certified-teams-rooms-on-android"></a>Attualmente certificato Teams Rooms su Android
 
 I dispositivi seguenti sono certificati nell'Microsoft Teams Rooms di certificazione android:
 
-| Modello di dispositivo | Versione firmware | Data di rilascio  | Dimensioni della sala                                        |
-|:------------------------|:-----------------|:--------------|:----------------------------------------------------------|
-| EPOS EXPAND 80T | `1.2.2.21182.10` | Ottobre 2021 | In bundle con EPOS Vision 3T |
-| Dispositivo di tocco Logitech     | `1.2.982`     |      Agosto 2021   | Compatibile con Logitech Rally Bar e Rally Bar Mini |
-| Logitech Rally Bar Mini | `1.2.982`     |      Agosto 2021   |    Piccole Sala riunioni (4,5 m x 4,5 m) |
-| Logitech Rally Bar      | `1.2.788`     |       Giugno 2021    |    Sala di medie dimensioni (4,5 m x 6m)       |
-| AudioCodes RXV80 | `1.9.155`        |   Maggio 2021  | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |
-| EPOS EXPAND Vision 3T       | `1.2.0.21102.03`    | Aprile 2021 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |
-| Yealink MeetingBar A30       | `133.15.0.52`    | Marzo 2021 | Sala di medie dimensioni (4,5 m x 6m) |
-| Console touch Yealink CTP18  | `137.15.0.28`    | Marzo 2021 | Compatibile con Yealink MeetingBar A20 e Yealink MeetingBar A30 |
-| Yealink MeetingBar A20  | `133.15.0.19`      | Novembre 2020 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |
-| Poly Studio X30         | `3.1.1.216109`     | Giugno 2020     | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |
-| Poly Studio X50         | `3.1.1.216109`     | Giugno 2020     | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |
-| Poly TC8                | `3.3.2.210441`     | Marzo 2021    | Compatibile con Poly Studio X30 e Poly Studio X50 |
-| Yealink VC210           | `118.15.0.14`      | Febbraio 2020 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |
+| Modello di dispositivo | Versione firmware | Data di fine certificazione  | Dimensioni della sala                                        |  Versione del sistema operativo Android    |
+|:------------------------|:-----------------|:--------------|:----------------------------------------------------------|-----------------------------------|
+| EPOS EXPAND 80T | `1.2.2.21182.10` | 5 agosto 2023 | In bundle con EPOS Vision 3T | 9 |
+| Dispositivo di tocco Logitech     | `1.2.982`     |   3 settembre 2024  | Compatibile con Logitech Rally Bar e Rally Bar Mini | 10 |
+| Logitech Rally Bar Mini | `1.2.982`     |   3 settembre 2024  |    Piccole Sala riunioni (4,5 m x 4,5 m) | 10 |
+| Logitech Rally Bar      | `1.2.788`     |   3 settembre 2024  |    Sala di medie dimensioni (4,5 m x 6m)       | 10 |
+| AudioCodes RXV80 | `1.9.155`        |   5 agosto 2023  | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) | 9 |
+| EPOS EXPAND Vision 3T       | `1.2.0.21102.03`    | 5 agosto 2023 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) | 9 |
+| Yealink MeetingBar A30       | `133.15.0.52`    | 5 agosto 2023   | Sala di medie dimensioni (4,5 m x 6m) | 9 |
+| Console touch Yealink CTP18  | `137.15.0.28`    | 5 agosto 2023   | Compatibile con Yealink MeetingBar A20 e Yealink MeetingBar A30 | 9 |
+| Yealink MeetingBar A20  | `133.15.0.19`      | 5 agosto 2023 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) | 9 |
+| Poly Studio X30         | `3.1.1.216109`     | 5 dicembre 2022  | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) | 8.1 |
+| Poly Studio X50         | `3.1.1.216109`     | 5 dicembre 2022   | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) | 8.1 |
+| Poly TC8                | `3.3.2.210441`     | 5 agosto 2023 | Compatibile con Poly Studio X30 e Poly Studio X50 | 8.1 |  9  |
+| Yealink VC210           | `118.15.0.14`      | 5 agosto 2023 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |  9  |
 
 ## <a name="currently-certified-teams-displays"></a>Display Teams certificati
 
 I dispositivi seguenti sono certificati nell'Microsoft Teams visualizza il programma di certificazione Android:
 
-| Modello di dispositivo | Versione firmware | Data di rilascio  |
-|:------------------------|:-----------------|:--------------|
-|Visualizzazione ThinkSmart di Lenovo|`CD-18781Y.201006.099`|Ottobre 2020 |
+| Modello di dispositivo | Versione firmware | Data di fine certificazione  | Versione del sistema operativo Android |
+|:------------------------|:-----------------|:--------------|----------------------------------|
+|Visualizzazione ThinkSmart di Lenovo|`CD-18781Y.201006.099`| 5 dicembre 2022 |  8.1  |
 
 ## <a name="currently-certified-teams-panels"></a>Pannelli Teams certificati
 I dispositivi seguenti sono certificati nell'Microsoft Teams di certificazione dei Microsoft Teams:
 
-| Modello di dispositivo| Versione firmware | Data di rilascio  |                                         
-|:------------------------|:-----------------|:--------------|
-|Crestron TSS-770 | `1.003.0082` |Febbraio 2021 |
-|Crestron TSS-1070 | `1.003.0082` |Febbraio 2021 |
-|Yealink RoomPanel | `147.15.0.1` |Maggio 2021 |
-|Utilità di pianificazione TAP di Logitech | `1.3.111` | Dicembre 2021 |
+| Modello di dispositivo| Versione firmware | Data di fine certificazione | Versione del sistema operativo Android |                                         
+|:------------------------|:-----------------|:--------------|-----------------------|
+|Crestron TSS-770 | `1.003.0082` |5 dicembre 2022  | 8.1 |
+|Crestron TSS-1070 | `1.003.0082`|5 dicembre 2022 | 8.1 |
+|Yealink RoomPanel | `147.15.0.1`|5 agosto 2023   | 9 |
+|Utilità di pianificazione TAP di Logitech | `1.3.111` |3 settembre 2024 | 10 |
 
 ### <a name="product-release-information-for-teams-phones"></a>Informazioni sulla versione del prodotto per Teams telefoni
 
@@ -107,11 +103,11 @@ Di seguito sono riportate le versioni più recenti Teams dell'app per telefono e
 | Rilascio del prodotto | Data di rilascio  | Microsoft Teams'app | Portale aziendale versione | Versione dell'agente di amministrazione |
 |:----------------|:--------------|:----------------------------|:-----------------------|:--------------------|
 | Aggiornamento #3B 2021 | 6 dicembre 2021   | `1449/1.0.94.2021112302 ` | `5.0.5304.0` | `298` |
-| Aggiornamento #3A 2021 | 22 novembre 2021   | `1449/1.0.94.2021110101 ` | `5.0.5304.0` | `298` |
+| Aggiornamento 2021 #3A | 22 novembre 2021   | `1449/1.0.94.2021110101 ` | `5.0.5304.0` | `298` |
 | Aggiornamento 2021 #3  | 3 novembre 2021   | `1449/1.0.94.2021101205` | `5.0.5304.0` | `298` |
 | Aggiornamento #2A 2021 | 10 giugno 2021  |`1449/1.0.94.2021052803`|  `5.0.5088.0` |  `1.0.0.202103160138.product (256)` |
 | Aggiornamento 2021 #2  | 8 giugno 2021  |`1449/1.0.94.2021051303`|  `5.0.5088.0` |  `1.0.0.202103160138.product (256)` |
-| Aggiornamento #1A 2021 | 5 aprile 2021  |`1449/1.0.94.2021033002`|  `5.0.5045.0` |  `1.0.0.202101280722.product (253)` |
+| Aggiornamento 2021 #1A | 5 aprile 2021  |`1449/1.0.94.2021033002`|  `5.0.5045.0` |  `1.0.0.202101280722.product (253)` |
 | Aggiornamento 2021 #1  | 26 marzo 2021  |`1449/1.0.94.2021022403` |  `5.0.5045.0` |  `1.0.0.202101280722.product (253)` |
 | Aggiornamento 2020 #7  | 8 dicembre 2020  |`1449/1.0.94.2020111101` | `5.0.4927.0`  | `1.0.0.202010121132.product (223) `|
 | Aggiornamento 2020 #6  | 12 ottobre 2020  |`1449/1.0.94.2020091801`     | `5.0.4912.0` | `1.0.0.202006290446.product(216)` |
@@ -169,7 +165,7 @@ Per [informazioni sulle funzionalità supportate](phones-for-teams.md) da questi
 
 Vedere [Microsoft Teams display](teams-displays.md).
 
-### <a name="product-release-information-for-teams-rooms-on-android"></a>Informazioni sulla versione del prodotto per Teams Rooms su Android
+### <a name="product-release-information-for-teams-rooms-on-android"></a>Informazioni sulla versione del prodotto Teams Rooms su Android
 
 Di seguito sono riportate le versioni più Teams Rooms versioni del firmware e dell'app Android.
 
@@ -179,7 +175,7 @@ Di seguito sono riportate le versioni più Teams Rooms versioni del firmware e d
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
 | Aggiornamento #2A 2021 | 15 luglio 2021  |`1449/1.0.96.2021070803`|  `5.0.5088.0` |  `1.0.0.202104280345.product version code: 262` |
 | Aggiornamento 2021 #2 | 28 giugno 2021  |`1449/1.0.96.2021051904`|  `5.0.5088.0` |  `1.0.0.202104280345.product version code: 262` |
-| Aggiornamento #1A 2021  |12 maggio 2021  |`1449/1.0.96.2021042903` |`5.0.4927.0`     |`1.0.0.202010121132.product version code: 223` |
+| Aggiornamento 2021 #1A  |12 maggio 2021  |`1449/1.0.96.2021042903` |`5.0.4927.0`     |`1.0.0.202010121132.product version code: 223` |
 | Aggiornamento 2021 #1  |5 aprile 2021  |`1449/1.0.96.2021032002`  |`5.0.4927.0`     |`1.0.0.202010121132.product version code: 223` |
 | Aggiornamento 2020 #3  |24 novembre 2020  |`1449/1.0.94.2020102101`  |`5.0.4927.0`     |`1.0.0.202006290446.product version code: 216` |
 | Aggiornamento 2020 #2  | 24 agosto 2020| `1449/1.0.94.2020062501`    | `5.0.4771.0`    | `1.0.0.202005060552.product version code: 212`|
@@ -243,13 +239,13 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware | Rilascio del prodotto incluso|
 |:--------------|:-----------------|:-------------------------|
-|Visualizzazione ThinkSmart di Lenovo| `CD-18781Y.211116.114` |Aggiornamento 2021#3  |
+|Visualizzazione ThinkSmart di Lenovo| `CD-18781Y.211116.114` |Aggiornamento 2021 #3  |
 |Visualizzazione ThinkSmart di Lenovo| `CD-18781Y.210507.111` |Aggiornamento 2021 #2 |
 |Visualizzazione ThinkSmart di Lenovo| `CD-18781Y.210228.109` |Aggiornamento 2021 #1 |
 
 ### <a name="product-release-information-for-teams-panels"></a>Informazioni sulla versione del prodotto Teams pannelli
 
-Di seguito sono riportate le versioni più Microsoft Teams dell'app Panels e del firmware.
+Di seguito sono riportate le versioni più recenti Microsoft Teams dell'app Panels e del firmware.
 
 #### <a name="app-versions"></a>Versioni delle app
 
@@ -276,7 +272,7 @@ Per [informazioni sulle funzionalità supportate](phones-for-teams.md) da questi
 
 Vedere [Trovare la versione firmware in un dispositivo mobile](phones-for-teams.md) per determinare la versione del firmware del dispositivo nel dispositivo mobile.
 
-Microsoft Teams licenze possono essere acquistate come parte di Microsoft 365 [o Office 365 abbonamenti](/office365/servicedescriptions/teams-service-description). Per altre informazioni sulle licenze necessarie per l'uso Microsoft Teams telefoni, vedere Licenze [di sistema telefonico disponibili](https://products.office.com/microsoft-teams/voice-calling).
+Microsoft Teams licenze possono essere acquistate come parte di Microsoft 365 [o Office 365 abbonamenti](/office365/servicedescriptions/teams-service-description). Per altre informazioni sulle licenze necessarie per l'uso di Microsoft Teams telefoni, vedere Licenze di sistema [telefonico disponibili](https://products.office.com/microsoft-teams/voice-calling).
 
 Per altre informazioni su come ottenere Teams, vedere [Come si ottiene l'accesso a Microsoft Teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
 

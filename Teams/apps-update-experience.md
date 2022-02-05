@@ -1,7 +1,7 @@
 ---
 title: Esperienza di aggiornamento delle app in Microsoft Teams
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.reviewer: v-tbasra
 ms.topic: article
@@ -9,22 +9,17 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 ms.collection:
-- M365-collaboration
-- Teams_ITAdmin_Help
+  - M365-collaboration
+  - Teams_ITAdmin_Help
 f1.keywords:
-- NOCSH
+  - NOCSH
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Scopri come aggiornare le app in Microsoft Teams.
-ms.openlocfilehash: feb1cdf7c8b528b7d773978375d1d16a20fae631
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850589"
 ---
+
 # <a name="update-apps-in-microsoft-teams"></a>Aggiornare le app in Microsoft Teams
 
 Nella maggior parte dei casi, dopo che gli sviluppatori di app pubblicano un aggiornamento dell'app, la nuova versione viene visualizzata automaticamente per gli utenti. Esistono tuttavia alcuni aggiornamenti del manifesto di Microsoft Teams <a href="/microsoftteams/platform/resources/schema/manifest-schema" target="_blank">che</a> richiedono l'accettazione dell'utente per il completamento:
@@ -46,4 +41,4 @@ Nella maggior parte dei casi, dopo che gli sviluppatori di app pubblicano un agg
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Gestire le app](manage-apps.md)
+[Gestione delle app](manage-apps.md)

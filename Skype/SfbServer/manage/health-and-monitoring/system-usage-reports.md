@@ -1,33 +1,28 @@
 ---
 title: Report sull'utilizzo del sistema in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 187d316d-2456-417e-b636-05527a18ef06
 description: 'Riepilogo: informazioni sui report di utilizzo del sistema in Skype for Business Server.'
-ms.openlocfilehash: cb1fd3fd05d553fa81f7c0646659f7593dad5869
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60843879"
 ---
+
 # <a name="system-usage-reports-in-skype-for-business-server"></a>Report sull'utilizzo del sistema in Skype for Business Server
  
 **Riepilogo:** Informazioni sui report di utilizzo del sistema in Skype for Business Server.
   
-I report sull'utilizzo del sistema forniscono informazioni sull'utilizzo del sistema basate sui dati di registrazione dettagli chiamata raccolti dal Skype for Business Server.
+I report sull'utilizzo del sistema forniscono informazioni sull'utilizzo del sistema in base ai dati di registrazione dettagli chiamata raccolti dal Skype for Business Server.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Rapporto di registrazione utente in Skype for Business Server](user-registration-report.md)
+- [Rapporto registrazione utente in Skype for Business Server](user-registration-report.md)
     
     Fornisce un riepilogo della connettività utente alla distribuzione Skype for Business Server in base agli eventi di registrazione, ad esempio gli accessi degli utenti. Il report consente di visualizzare gli accessi interni ed esterni e di confrontare il numero di utenti che hanno eseguito l'accesso a Skype for Business Server con il numero di utenti che hanno effettivamente utilizzato il servizio mentre erano connessi.
     
@@ -47,11 +42,11 @@ I report sull'utilizzo del sistema forniscono informazioni sull'utilizzo del sis
     
     Fornisce un riepilogo dell'utilizzo di Response Group. L'applicazione Response Group consente di instradare automaticamente le chiamate telefoniche a entità quali un help desk o una linea di assistenza clienti.
     
-- [Report inventario Telefono ip in Skype for Business Server](ip-phone-inventory-report.md)
+- [Report Telefono inventario ip in Skype for Business Server](ip-phone-inventory-report.md)
     
     Fornisce informazioni sui telefoni IP attualmente in uso nell'organizzazione. Il report si basa sulle registrazioni telefoniche e sugli accessi. Non deve essere considerato un inventario completo. Ad esempio, potresti aver rimosso i telefoni ancora elencati nel report perché hanno eseguito l'accesso almeno una volta. Allo stesso modo, potresti anche avere nuovi telefoni che non vengono visualizzati nel report semplicemente perché gli utenti non hanno ancora effettuato l'accesso a Skype for Business Server con i nuovi telefoni.
     
-- [Rapporto controllo di ammissione di chiamata in Skype for Business Server](call-admission-control-report.md)
+- [Rapporto controllo di ammissione di chiamata Skype for Business Server](call-admission-control-report.md)
     
     Fornisce un elenco delle attività peer-to-peer e di conferenza per cui viene utilizzato il controllo di ammissione di chiamata. Tale servizio consente di determinare se consentire sessioni di comunicazione in tempo reale, quali ad esempio chiamate vocali o videochiamate, in base ai vincoli di larghezza di banda.
     

@@ -1,31 +1,26 @@
 ---
 title: Aggiungere l'FQDN del server perimetrale
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddEdgeServerFqdnsPage
+  - ms.lync.tb.AddEdgeServerFqdnsPage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 84a9511d-601d-4819-a30c-7b08d96e4d97
-ROBOTS: NOINDEX, NOFOLLOW
-description: È necessario specificare un nome di dominio completo (FQDN) per il servizio Access Edge. Se non è stata selezionata l'opzione Usa un singolo indirizzo IP FQDN nella pagina Selezione funzionalità, è necessario specificare anche un FQDN per il servizio Web Conferencing Edge e per il servizio &amp; A/V Edge.
-ms.openlocfilehash: 9324cb0fb546eaf1688a2239e8cf887c698f2d77
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60855973"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'È necessario specificare un nome di dominio completo (FQDN) per il servizio Access Edge. Se non è stata selezionata l''opzione Usa un singolo indirizzo IP FQDN &amp; nella pagina Selezione funzionalità, è necessario specificare anche un FQDN per il servizio Web Conferencing Edge e per il servizio A/V Edge.'
 ---
+
 # <a name="add-edge-server-fqdn"></a>Aggiungere Edge Server FQDN
  
-È necessario specificare un nome di dominio completo (FQDN) per il servizio Access Edge. Se non è stata selezionata l'opzione Usa  un singolo indirizzo **&amp; IP FQDN** nella pagina Selezione funzionalità, è necessario specificare anche un FQDN per il servizio Web Conferencing Edge e per il servizio A/V Edge.
+È necessario specificare un nome di dominio completo (FQDN) per il servizio Access Edge. Se non è stata selezionata l'opzione Usa un singolo indirizzo **IP FQDN &amp;** nella  pagina Selezione funzionalità, è necessario specificare anche un FQDN per il servizio Web Conferencing Edge e per il servizio A/V Edge.
   
-Inoltre, se è stata selezionata l'opzione Usa un singolo indirizzo **&amp; IP FQDN,** è necessario specificare un numero di porta diverso per ognuno dei servizi Edge (impostazioni di porta consigliate: 444 per il servizio Access Edge, 8057 per il servizio Web Conferencing Edge e 443 per il servizio A/V Edge). Se l'opzione non è stata selezionata, sarà possibile usare lo stesso numero di porta, ad esempio 443, per tutti e tre i servizi.
+Inoltre, se è stata selezionata l'opzione Usa un singolo indirizzo **IP FQDN&amp;**, è necessario specificare un numero di porta diverso per ognuno dei servizi Edge (impostazioni di porta consigliate: 444 per il servizio Access Edge, 8057 per il servizio Web Conferencing Edge e 443 per il servizio A/V Edge). Se l'opzione non è stata selezionata, sarà possibile usare lo stesso numero di porta, ad esempio 443, per tutti e tre i servizi.
   
 

@@ -1,30 +1,25 @@
 ---
 title: Test delle autorizzazioni di amministratore in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 description: Come testare le autorizzazioni di amministratore in Skype for Business Server
-ms.openlocfilehash: 2c4525d83f3a097abfa168b706885a939e3b0663
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60859983"
 ---
+
 # <a name="testing-admin-permissions-in-skype-for-business-server"></a>Test delle autorizzazioni di amministratore in Skype for Business Server
 
 |&nbsp; |&nbsp; |
 |--|--|
 |Pianificazione della verifica|Dopo la distribuzione Skype for Business Server iniziale. Se necessario, se si verificano problemi relativi alle autorizzazioni.|
 |Strumento di testing|Windows PowerShell|
-|Autorizzazioni necessarie|Quando vengono eseguiti localmente Skype for Business Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.<br><br/>Quando viene eseguito utilizzando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che dispone dell'autorizzazione per eseguire il cmdlet Test-CsOUPermission. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando seguente dal prompt Windows PowerShell:<br/><br/>Get-CsAdminRole Where-Object \| {$_. Cmdlet -match "Test-CsOUPermission"}|
+|Autorizzazioni necessarie|Quando vengono eseguiti localmente Skype for Business Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.<br><br/>Quando viene eseguito utilizzando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che dispone dell'autorizzazione per eseguire il cmdlet Test-CsOUPermission. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando seguente dal prompt Windows PowerShell:<br/><br/>\| Get-CsAdminRole Where-Object {$_. Cmdlet -match "Test-CsOUPermission"}|
 |||
 
 ## <a name="description"></a>Descrizione
@@ -33,12 +28,12 @@ Quando si installa Skype for Business Server, una delle attività eseguite dal p
 
 Il cmdlet Test-CsOUPermission verifica che le autorizzazioni necessarie per gestire utenti, computer e altri oggetti siano impostate su un contenitore di Active Directory. Se tali autorizzazioni non sono impostate, è possibile risolvere il problema eseguendo il [cmdlet Grant-CsOUPermission](/powershell/module/skype/Grant-CsOUPermission). 
 
-Tenere presente Grant-CsOUPermission solo assegnare autorizzazioni ai membri del gruppo RTCUniversalUserAdmins. Non è possibile utilizzare questo cmdlet per concedere autorizzazioni a un utente o a un gruppo arbitrario. Se si desidera che un utente o un gruppo diverso abbia autorizzazioni di gestione degli utenti, è necessario aggiungere tale utente (o gruppo) al gruppo RTCUniversalUserAdmins. 
+Tenere presente Grant-CsOUPermission possono assegnare autorizzazioni solo ai membri del gruppo RTCUniversalUserAdmins. Non è possibile utilizzare questo cmdlet per concedere autorizzazioni a un utente o a un gruppo arbitrario. Se si desidera che un utente o un gruppo diverso abbia autorizzazioni di gestione degli utenti, è necessario aggiungere tale utente (o gruppo) al gruppo RTCUniversalUserAdmins. 
 
 
 ## <a name="running-the-test"></a>Esecuzione del test
 
-Per verificare che le autorizzazioni di gestione siano impostate in un contenitore, eseguire il cmdlet Test-CsOUPermission seguito dal nome distinto del contenitore e dal tipo di autorizzazioni da verificare. Ad esempio, questo comando controlla se le autorizzazioni utente sono impostate nell'unità organizzativa ou=Redmond,dc=litwareinc,dc=com:
+Per verificare che le autorizzazioni di gestione siano impostate in un contenitore, eseguire il cmdlet Test-CsOUPermission seguito dal nome distinto del contenitore e dal tipo di autorizzazioni che si sta verificando. Ad esempio, questo comando controlla se le autorizzazioni utente sono impostate nell'unità organizzativa ou=Redmond,dc=litwareinc,dc=com:
 
 `Test-CsOUPermission -OU "ou=Redmond,dc=litwareinc,dc=com" -ObjectType "user"`
 
@@ -46,7 +41,7 @@ Per verificare più autorizzazioni utilizzando un singolo comando, racchiudere o
 
 `Test-CsOUPermission -OU "ou=Redmond,dc=litwareinc,dc=com" -ObjectType "user", "computer", "contact"`
 
-Per ulteriori informazioni, vedere l'argomento della Guida [relativo al cmdlet Test-CsOUPermission .](/powershell/module/skype/test-csoupermission)
+Per ulteriori informazioni, vedere [l'argomento della Guida relativo al cmdlet Test-CsOUPermission.](/powershell/module/skype/test-csoupermission)
 
 ## <a name="determining-success-or-failure"></a>Determinazione dell'esito positivo o negativo
 
@@ -72,4 +67,4 @@ Se Test-CsOUPermission ha esito negativo, in genere significa che l'autorizzazio
 
 `Grant-CsOUPermission -OU "ou=Redmond,dc=litwareinc,dc=com" -ObjectType "user", "contact", "inetOrgPerson"`
 
-Per ulteriori informazioni, vedere l'argomento della Guida [relativo al cmdlet Test-CsOUPermission .](/powershell/module/skype/test-csoupermission)
+Per ulteriori informazioni, vedere [l'argomento della Guida relativo al cmdlet Test-CsOUPermission.](/powershell/module/skype/test-csoupermission)

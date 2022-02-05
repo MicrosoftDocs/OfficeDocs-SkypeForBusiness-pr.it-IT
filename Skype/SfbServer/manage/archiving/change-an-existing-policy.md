@@ -1,24 +1,19 @@
 ---
 title: Modificare un criterio di archiviazione esistente in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 4cf600be-ba3d-4bce-aa22-e158b9ccf8a9
 description: 'Riepilogo: informazioni su come modificare i criteri di archiviazione degli utenti per Skype for Business Server.'
-ms.openlocfilehash: b6ddc379f2b5652311be051d47d644a8e2923c1c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60854390"
 ---
+
 # <a name="change-an-existing-archiving-policy-in-skype-for-business-server"></a>Modificare un criterio di archiviazione esistente in Skype for Business Server
  
 **Riepilogo:** Informazioni su come modificare i criteri di archiviazione degli utenti per Skype for Business Server.
@@ -54,7 +49,7 @@ Quando si distribuisce per la Skype for Business Server, si impostano i criteri 
   
 ## <a name="change-archiving-policies-by-using-windows-powershell"></a>Modificare i criteri di archiviazione tramite Windows PowerShell
 
-È inoltre possibile modificare i criteri di archiviazione utilizzando Windows PowerShell **cmdlet Set-CsArchivingPolicy.**
+È inoltre possibile modificare i criteri di archiviazione utilizzando Windows PowerShell **cmdlet Set-CsArchivingPolicy**.
   
 ### <a name="enable-archiving-policies"></a>Abilitare i criteri di archiviazione
 

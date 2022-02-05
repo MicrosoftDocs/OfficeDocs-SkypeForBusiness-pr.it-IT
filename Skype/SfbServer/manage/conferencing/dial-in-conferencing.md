@@ -1,29 +1,24 @@
 ---
 title: Gestire le conferenze telefoniche con accesso esterno in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 85644a2d-7694-4573-8301-aa6490b43ff4
 description: 'Riepilogo: informazioni su come gestire le conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: e2b836cf45bf3e9253ea6161c4bd634864337e5f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60830860"
 ---
+
 # <a name="manage-dial-in-conferencing-in-skype-for-business-server"></a>Gestire le conferenze telefoniche con accesso esterno in Skype for Business Server
  
 **Riepilogo:** Informazioni su come gestire le conferenze telefoniche con accesso esterno in Skype for Business Server.
   
-In questo argomento viene descritto come gestire le conferenze telefoniche con accesso esterno. Per ulteriori informazioni su come pianificare e configurare le conferenze telefoniche con accesso esterno durante la distribuzione, vedere [Plan for dial-in conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md) e Configure [dial-in conferencing in Skype for Business Server](../../deploy/deploy-conferencing/dial-in-conferencing.md).
+In questo argomento viene descritto come gestire le conferenze telefoniche con accesso esterno. Per ulteriori informazioni su come pianificare e configurare le conferenze telefoniche con accesso esterno durante la distribuzione, vedere [Plan for dial-in conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md) e [Configure dial-in conferencing in Skype for Business Server](../../deploy/deploy-conferencing/dial-in-conferencing.md).
   
 È possibile eseguire le attività seguenti per gestire le conferenze telefoniche con accesso esterno: abilitare o disabilitare le conferenze telefoniche con accesso esterno, gestire i numeri di accesso, gestire i criteri PIN per le conferenze telefoniche con accesso esterno, gestire l'accesso alla conferenza e lasciare annunci, modificare i mapping dei tasti per i comandi DTMF e accogliere gli utenti nelle conferenze telefoniche con accesso esterno. 
   
@@ -47,7 +42,7 @@ Per gestire le informazioni sui dial plan e sull'utilizzo PSTN:
     
 2.  Aprire Skype for Business Server Pannello di controllo.
     
-3. Sulla barra di spostamento sinistra fare clic su **Routing vocale.**
+3. Sulla barra di spostamento sinistra fare clic su **Routing vocale**.
     
 ## <a name="manage-dial-in-conferencing-by-using-skype-for-business-server-management-shell"></a>Gestire le conferenze telefoniche con accesso esterno tramite Skype for Business Server Management Shell
 
@@ -58,7 +53,7 @@ Per gestire le conferenze telefoniche con accesso esterno tramite Skype for Busi
 |**Cmdlet**|**Descrizione**|
 |:-----|:-----|
 |[Get-CsConferenceDirectory](/powershell/module/skype/get-csconferencedirectory?view=skype-ps) <br/> |Restituisce informazioni sulle directory conferenze configurate per l'utilizzo nell'organizzazione. Le directory conferenze vengono utilizzate per consentire agli utenti di conferenze telefoniche con accesso esterno di individuare le informazioni sulle conferenze.  <br/> |
-|[Get-CsDialInConferencingConfiguration](/powershell/module/skype/get-csdialinconferencingconfiguration?view=skype-ps) <br/> |Recupera informazioni sulla risposta Skype for Business Server quando gli utenti aderiscono a una conferenza telefonica con accesso remoto o abbandonano una conferenza telefonica con accesso remoto.  <br/> |
+|[Get-CsDialInConferencingConfiguration](/powershell/module/skype/get-csdialinconferencingconfiguration?view=skype-ps) <br/> |Recupera informazioni su come Skype for Business Server quando gli utenti aderiscono o abbandonano una conferenza telefonica con accesso remoto.  <br/> |
 |[Get-CsDialInConferencingAccessNumber](/powershell/module/skype/get-csdialinconferencingaccessnumber?view=skype-ps) <br/> |Restituisce informazioni su tutti i numeri di accesso alle conferenze telefoniche con accesso esterno configurati per l'utilizzo nell'organizzazione.  <br/> |
 |[Get-CsDialInConferencingDtmfConfiguration](/powershell/module/skype/get-csdialinconferencingdtmfconfiguration?view=skype-ps) <br/> |Restituisce le impostazioni di segnalazione DTMF (Dual Tone Multi-Frequency) utilizzate per le conferenze telefoniche con accesso esterno. La tecnologia DTMF consente agli utenti che accedono dall'esterno a una conferenza di controllarne le impostazioni, ad esempio disattivare o riattivare il proprio audio oppure bloccare e sbloccare la conferenza, mediante la tastiera del telefono.  <br/> |
 |[Get-CsDialInConferencingLanguageList](/powershell/module/skype/get-csdialinconferencinglanguagelist?view=skype-ps) <br/> |Restituisce un elenco di lingue, incluse le lingue regionali/di minoranza, supportate per l'utilizzo con Skype for Business Server conferenze telefoniche con accesso remoto. Queste lingue vengono utilizzate per trasmettere messaggi e istruzioni audio agli utenti che partecipano a una conferenza tramite telefono.  <br/> |

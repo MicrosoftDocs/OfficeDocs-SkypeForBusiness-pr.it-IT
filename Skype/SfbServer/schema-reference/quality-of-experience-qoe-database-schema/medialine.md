@@ -1,25 +1,20 @@
 ---
 title: Visualizzazione MediaLine
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 132eca13-8913-4218-9eff-4960ced8c3dc
-description: Nella visualizzazione MediaLine vengono archiviate informazioni su ogni linea multimediale nel database. Una sessione audio in genere contiene una linea multimediale audio. Una sessione audio e video (A/V) in genere contiene una linea multimediale audio e una video; la sessione, tuttavia, contiene due linee multimediali video se si utilizza un dispositivo per conferenze o la visualizzazione Raccolta. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: cf360f06fa293dc75c33caa2a10ac761ae156e91
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858123"
+description: 'Nella visualizzazione MediaLine vengono archiviate informazioni su ogni linea multimediale nel database. Una sessione audio in genere contiene una linea multimediale audio. Una sessione audio e video (A/V) in genere contiene una linea multimediale audio e una video; la sessione, tuttavia, contiene due linee multimediali video se si utilizza un dispositivo per conferenze o la visualizzazione Raccolta. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.'
 ---
+
 # <a name="medialine-view"></a>Visualizzazione MediaLine
  
 Nella visualizzazione MediaLine vengono archiviate informazioni su ogni linea multimediale nel database. Una sessione audio in genere contiene una linea multimediale audio. Una sessione audio e video (A/V) in genere contiene una linea multimediale audio e una video; la sessione, tuttavia, contiene due linee multimediali video se si utilizza un dispositivo per conferenze o la visualizzazione Raccolta. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
@@ -37,7 +32,7 @@ Nella visualizzazione MediaLine vengono archiviate informazioni su ogni linea mu
 |CallerPort  <br/> |int  <br/> |Porta utilizzata dal chiamante.  <br/> |
 |CallerInside  <br/> |bit  <br/> |Indica se il chiamante si trova nella rete dell'organizzazione. 1 significa che il chiamante è all'interno della rete dell'organizzazione. 0 significa che il chiamante è all'esterno della rete dell'organizzazione.  <br/> |
 |CallerMacAddress  <br/> |varchar(256)  <br/> |Indirizzo MAC dell'interfaccia di rete utilizzata dal chiamante.  <br/> |
-|CallerRelayIPAddr  <br/> |var(50)  <br/> |Indirizzo IP del servizio A/V Edge utilizzato dal chiamante. Per ulteriori informazioni, vedere la tabella [IPAddress.](ipaddress.md) <br/> |
+|CallerRelayIPAddr  <br/> |var(50)  <br/> |Indirizzo IP del servizio A/V Edge utilizzato dal chiamante. Per ulteriori [informazioni, vedere la tabella IPAddress](ipaddress.md) . <br/> |
 |CalleeRelayPort  <br/> |int  <br/> |Porta utilizzata nel servizio A/V Edge utilizzato dal chiamante.  <br/> |
 |CallerReflexiveIPAddr  <br/> |var(50)  <br/> |Indirizzo IP del chiamante riportato dal servizio A/V Edge. Questo indirizzo può essere diverso rispetto al CallerIPAddr se il client si trova dietro un sistema NAT, ad esempio.  <br/> |
 |CallerCaptureDev  <br/> |varchar(256)  <br/> |Nome del dispositivo di acquisizione del chiamante.  <br/> |
@@ -46,14 +41,14 @@ Nella visualizzazione MediaLine vengono archiviate informazioni su ogni linea mu
 |CallerRenderDevDriver  <br/> |varchar(256)  <br/> |Nome del driver del dispositivo di rendering del chiamante.  <br/> |
 |CallerWifiDriverDeviceDesc  <br/> |varchar(256  <br/> |Descrizione del driver Wifi del chiamante.  <br/> |
 |CallerWifiDriverVersion  <br/> |varchar(256)  <br/> |Versione del driver WiFi del chiamante.  <br/> |
-|CalleeNetworkConnectionDetail  <br/> |varchar(256)  <br/> |Dettagli della connessione di rete del chiamante. Per ulteriori informazioni, vedere la [tabella NetworkConnectionDetail.](networkconnectiondetail.md) <br/> |
+|CalleeNetworkConnectionDetail  <br/> |varchar(256)  <br/> |Dettagli della connessione di rete del chiamante. Per ulteriori [informazioni, vedere la tabella NetworkConnectionDetail](networkconnectiondetail.md) . <br/> |
 |CallerBssid  <br/> |varchar(256)  <br/> |BSSI (Basic Service Set Identifier) utilizzato dalla connessione WiFi del chiamante.  <br/> |
 |CallerVPN  <br/> |bit  <br/> |Indica se il chiamante ha eseguito la connessione su una rete privata virtuale. 1 indica una VPN, 0 indica una rete non VPN.  <br/> |
 |CalleeIPAddr  <br/> |var(50)  <br/> |Indirizzo IP del destinatario della chiamata. Può essere un indirizzo IPv4 o IPv6.  <br/> |
 |CalleePort  <br/> |int  <br/> |Porta utilizzata dal destinatario della chiamata.  <br/> |
 |CalleeInside  <br/> |bit  <br/> |Indica se il destinatario della chiamata si trova all'interno della rete aziendale. 1 indica che il destinatario della chiamata è all'interno della rete aziendale, mentre 0 indica che è all'esterno della rete.  <br/> |
 |CalleeMacAddress  <br/> |varchar(256)  <br/> |Indirizzo MAC dell'interfaccia di rete utilizzata dal destinatario della chiamata.  <br/> |
-|CalleeRelayIPAddr  <br/> |var(50)  <br/> |Indirizzo IP del servizio A/V Edge utilizzato dal destinatario della chiamata. Per ulteriori informazioni, vedere la tabella [IPAddress.](ipaddress.md) <br/> |
+|CalleeRelayIPAddr  <br/> |var(50)  <br/> |Indirizzo IP del servizio A/V Edge utilizzato dal destinatario della chiamata. Per ulteriori [informazioni, vedere la tabella IPAddress](ipaddress.md) . <br/> |
 |CalleeRelayPort  <br/> |int  <br/> |Porta utilizzata nel servizio A/V Edge utilizzato dal destinatario della chiamata.  <br/> |
 |CalleeReflexiveIPAddr  <br/> |var(50)  <br/> |Indirizzo IP del destinatario della chiamata riportato dal servizio A/V Edge. Questo indirizzo può essere diverso rispetto al CalleeIPAddr se il client si trova dietro un sistema NAT, ad esempio.  <br/> |
 |CalleeCaptureDev  <br/> |var(50)  <br/> |Nome del dispositivo di acquisizione del chiamato.  <br/> |
@@ -62,7 +57,7 @@ Nella visualizzazione MediaLine vengono archiviate informazioni su ogni linea mu
 |CalleeRenderDevDriver  <br/> |varchar(256)  <br/> |Nome del driver del dispositivo di rendering del chiamato.  <br/> |
 |CalleeWifiDriverDeviceDesc  <br/> |varchar(256)  <br/> |Descrizione del driver Wifi del chiamato.  <br/> |
 |CalleeWifiDriverVersion  <br/> |varchar(256  <br/> |Versione del driver WiFi del chiamato.  <br/> |
-|CalleeNetworkConnectionDetail  <br/> |varchar(256)  <br/> |Dettagli della connessione di rete del chiamato. Per ulteriori informazioni, vedere la [tabella NetworkConnectionDetail.](networkconnectiondetail.md) <br/> |
+|CalleeNetworkConnectionDetail  <br/> |varchar(256)  <br/> |Dettagli della connessione di rete del chiamato. Per ulteriori [informazioni, vedere la tabella NetworkConnectionDetail](networkconnectiondetail.md) . <br/> |
 |CalleeBssid  <br/> |varchar(256)  <br/> |Identificatore del set di servizi di base utilizzato dalla connessione WiFi del chiamato.  <br/> |
 |CalleeVPN  <br/> |bit  <br/> |Indica se il destinatario della chiamata ha eseguito la connessione su una rete privata virtuale. 1 indica una VPN, 0 indica una rete non VPN.  <br/> |
 |ConversationalMOS  <br/> |decimal(3,2)  <br/> |Conversational MOS a banda stretta delle sessioni audio (basato su entrambi i flussi audio).  <br/> |

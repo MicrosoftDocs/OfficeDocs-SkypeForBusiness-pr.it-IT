@@ -1,30 +1,25 @@
 ---
 title: Installare un archivio di configurazione locale (Configure)
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.dep.DeployReplicaConfig
+  - ms.lync.dep.DeployReplicaConfig
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 92dccbca-7a5b-4064-9f2e-964b8e62433c
-ROBOTS: NOINDEX, NOFOLLOW
-description: Per iniziare l'installazione del database che contenerà la copia locale di sola lettura dell'archivio di gestione centrale, è necessario scegliere tra il recupero della configurazione definita pubblicata utilizzando Generatore di topologie dall'archivio di gestione centrale già installato e configurato oppure la lettura della configurazione definita da altri supporti. Per un computer che si trova nella rete interna dell'organizzazione, selezionare Recupera la configurazione automaticamente dall'archivio di gestione centrale.
-ms.openlocfilehash: 6c60656161998e0a99af33d3ddf9e2c3120d82cf
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60853590"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Per iniziare l''installazione del database che contenerà la copia locale di sola lettura dell''archivio di gestione centrale, è necessario scegliere tra il recupero della configurazione definita pubblicata utilizzando Generatore di topologie dall''archivio di gestione centrale già installato e configurato oppure la lettura della configurazione definita da altri supporti. Per un computer che si trova nella rete interna dell''organizzazione, selezionare Recupera la configurazione automaticamente dall''archivio di gestione centrale.'
 ---
+
 # <a name="install-local-configuration-store-invoke-configure"></a>Installare un archivio di configurazione locale (configurazione)
  
-Per iniziare l'installazione del database che contenerà la copia locale di sola lettura dell'archivio di gestione centrale, è necessario scegliere tra il recupero della configurazione definita pubblicata utilizzando Generatore di topologie dall'archivio di gestione centrale già installato e configurato oppure la lettura della configurazione definita da altri supporti. Per un computer che si trova nella rete interna dell'organizzazione, selezionare Recupera la configurazione **automaticamente dall'archivio di gestione centrale.**
+Per iniziare l'installazione del database che contenerà la copia locale di sola lettura dell'archivio di gestione centrale, è necessario scegliere tra il recupero della configurazione definita pubblicata utilizzando Generatore di topologie dall'archivio di gestione centrale già installato e configurato oppure la lettura della configurazione definita da altri supporti. Per un computer che si trova nella rete interna dell'organizzazione, selezionare Recupera la configurazione **automaticamente dall'archivio di gestione centrale**.
   
 Se si sta installando una replica dell'archivio di gestione centrale in un server perimetrale, scegliere di leggere la copia esportata del documento di configurazione da un supporto di memorizzazione portatile, ad esempio un'unità flash USB, un disco rigido USB, un CD-ROM o un altro supporto. 
   

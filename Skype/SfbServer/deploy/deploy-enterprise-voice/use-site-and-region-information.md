@@ -1,29 +1,24 @@
 ---
-title: Configurare le impostazioni globali di bypass multimediale in Skype for Business Server utilizzare le informazioni sul sito e sull'area geografica
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: Configurare le impostazioni globali di bypass multimediale in Skype for Business Server per usare le informazioni sul sito e sull'area geografica
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 0a21cdf1-f350-49da-b346-70806f256bea
 description: Configurare il bypass multimediale da utilizzare solo per determinati siti e aree geografiche in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 7ec292f768633d64959704599269c0fb9cedd4fd
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829500"
 ---
-# <a name="configure-media-bypass-global-settings-in-skype-for-business-server-to-use-site-and-region-information"></a>Configurare le impostazioni globali di bypass multimediale in Skype for Business Server utilizzare le informazioni sul sito e sull'area geografica
+
+# <a name="configure-media-bypass-global-settings-in-skype-for-business-server-to-use-site-and-region-information"></a>Configurare le impostazioni globali di bypass multimediale in Skype for Business Server per usare le informazioni sul sito e sull'area geografica
  
 Configurare il bypass multimediale da utilizzare solo per determinati siti e aree geografiche in Skype for Business Server VoIP aziendale. 
   
@@ -53,7 +48,7 @@ Per il corretto funzionamento del bypass multimediale, è necessario che sia pre
   
 7. Fare clic su **Commit**.
     
-Successivamente, aggiungere subnet al sito di rete, come descritto in [Associare una subnet a un sito di rete.](deploy-network.md#BKMK_AssociateSubnets) Dopo aver associato tutte le subnet ai siti di rete, la distribuzione del bypass multimediale può considerarsi completata.
+Successivamente, aggiungere subnet al sito di rete, come descritto in [Associare una subnet a un sito di rete](deploy-network.md#BKMK_AssociateSubnets). Dopo aver associato tutte le subnet ai siti di rete, la distribuzione del bypass multimediale può considerarsi completata.
 > [!IMPORTANT]
 > Se non sono stati ancora creati i siti e le aree di rete, è necessario crearli prima di poter proseguire con la distribuzione del bypass multimediale. Per informazioni dettagliate, vedere [Deploy network regions, sites and subnets in Skype for Business](deploy-network.md). 
   

@@ -1,27 +1,22 @@
 ---
 title: SQL Server Reporting Services (Intro)
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.dep.DeploySSRSIntro
+  - ms.lync.dep.DeploySSRSIntro
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: f3cda686-6301-419c-af68-b49cc785e5fc
-ROBOTS: NOINDEX, NOFOLLOW
-description: A ogni pool Front End e a ogni Survivable Branch Appliance può essere associato un solo Monitoring Server. Quando il monitoraggio è abilitato per il sito, il Monitoring Server garantisce la raccolta dei dati relativi alla registrazione dettagli chiamata e alla qualità percepita dagli utenti (QoE), nonché la generazione di rapporti su tali dati.
-ms.openlocfilehash: b7eeca39b79cfdcf2894441f19dfaf614992df83
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60849309"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'A ogni pool Front End e a ogni Survivable Branch Appliance può essere associato un solo Monitoring Server. Quando il monitoraggio è abilitato per il sito, il Monitoring Server garantisce la raccolta dei dati relativi alla registrazione dettagli chiamata e alla qualità percepita dagli utenti (QoE), nonché la generazione di rapporti su tali dati.'
 ---
+
 # <a name="sql-server-reporting-services-intro"></a>SQL Server Reporting Services (Intro)
  
 A ogni pool Front End e a ogni Survivable Branch Appliance può essere associato un solo Monitoring Server. Quando il monitoraggio è abilitato per il sito, il Monitoring Server garantisce la raccolta dei dati relativi alla registrazione dettagli chiamata e alla qualità percepita dagli utenti (QoE), nonché la generazione di rapporti su tali dati.

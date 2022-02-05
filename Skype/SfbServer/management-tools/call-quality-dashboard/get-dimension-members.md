@@ -1,25 +1,20 @@
 ---
 title: Get Dimension Members
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: bd89bbf7-cb98-4cd8-bbfa-0484663d14db
-description: "Riepilogo: informazioni sull'operazione Get Dimension Members. L'operazione Get Dimension Members fa parte dell'API dei dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: e8f3cfcfcc11a7c7e7834cf4043f610bb0606931
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60862203"
+description: 'Riepilogo: informazioni sull''operazione Get Dimension Members. L''operazione Get Dimension Members fa parte dell''API dei dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.'
 ---
+
 # <a name="get-dimension-members"></a>Get Dimension Members
  
 **Riepilogo:** Informazioni sull'operazione Get Dimension Members. L'operazione Get Dimension Members fa parte dell'API dei dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
@@ -33,7 +28,7 @@ L'operazione Get Dimension Members restituisce l'elenco dei membri di una dimens
 
 |**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|POST  <br/> |https:// \<portal\> /QoEDataService/DimensionMembers  <br/> |HTTP/1.1  <br/> |
+|POST  <br/> |\<portal\>https:///QoEDataService/DimensionMembers  <br/> |HTTP/1.1  <br/> |
    
  **Parametri URI** - Nessuno.
   
@@ -52,13 +47,13 @@ L'operazione Get Dimension Members restituisce l'elenco dei membri di una dimens
 }
 ```
 
- **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK).
+ **Codice di stato** : un'operazione riuscita restituisce il codice di stato 200 (OK).
   
  **Intestazioni di risposta** - Nessuna intestazione aggiuntiva.
   
- **Response Body:** di seguito è riportato un payload di risposta di esempio in JSON in risposta a una richiesta di "[StartDate]. Dimensione [Mese]".
+ **Response Body** : di seguito è riportato un payload di risposta di esempio in JSON in risposta a una richiesta di "[StartDate]. Dimensione [Mese]".
   
 > [!NOTE]
 > L'elenco mostra solo una piccola parte dell'elenco. 

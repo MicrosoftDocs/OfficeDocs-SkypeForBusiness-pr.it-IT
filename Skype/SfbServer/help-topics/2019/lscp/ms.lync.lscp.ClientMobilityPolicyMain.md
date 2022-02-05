@@ -1,27 +1,22 @@
 ---
 title: Criteri per dispositivi mobili client
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.lscp.ClientMobilityPolicyMain
+  - ms.lync.lscp.ClientMobilityPolicyMain
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 6ab53530-143d-4f1e-90cd-a92685f98a20
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 description: Nella pagina ClientCriteri dispositivi mobili vengono visualizzati i criteri dispositivi mobili disponibili nella distribuzione.
-ms.openlocfilehash: e4b030ac2665c833f19844d1f792be874d2324bd
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60840488"
 ---
+
 # <a name="clients-mobility-policy"></a>Client: criteri dispositivi mobili
 
 Nella **pagina Criteri** **dispositivi mobili** client vengono visualizzati i criteri per dispositivi mobili disponibili nella distribuzione.

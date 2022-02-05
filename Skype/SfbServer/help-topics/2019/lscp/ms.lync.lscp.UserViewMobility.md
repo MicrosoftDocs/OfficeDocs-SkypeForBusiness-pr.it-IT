@@ -1,27 +1,22 @@
 ---
 title: Utenti Visualizza criteri per dispositivi mobili
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.lscp.UserViewMobility
+  - ms.lync.lscp.UserViewMobility
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: a6df69e2-c374-4a80-8197-5152b7d0b5d2
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 description: Nella finestra di dialogo Visualizza - Criteri dispositivi mobili sono visualizzate le proprietà dei criteri dispositivi mobili selezionati.
-ms.openlocfilehash: eb4ce4d588f11bdb75cc3fc6b15030d08b8d8a82
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861643"
 ---
+
 # <a name="users-view-mobility-policy"></a>Utenti: visualizzare criteri dispositivi mobili
 
 Nella finestra di dialogo **Visualizza - Criteri dispositivi mobili** sono visualizzate le proprietà dei criteri dispositivi mobili selezionati.

@@ -1,26 +1,21 @@
 ---
 title: Strumento di pianificazione della rete perimetrale
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 4/8/2016
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- ms.lync.plan.EdgeNetwork
-- ms.lync.plan.EdgeNetwork
+  - ms.lync.plan.EdgeNetwork
+  - ms.lync.plan.EdgeNetwork
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: d7f85abf-2045-4b08-ba29-c6211a3f6ff6
 description: 'La maggior parte dei componenti perimetrali viene distribuita in una rete perimetrale. I componenti seguenti costituiscono la topologia perimetrale della rete perimetrale. Tranne dove specificato, i componenti fanno parte degli scenari di server perimetrali in Skype for Business Server 2015 e si trova nella rete perimetrale. I componenti perimetrali includono quanto segue:'
-ms.openlocfilehash: 5df387611886e8907b38161bab783a72924c5788
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850969"
 ---
+
 # <a name="edge-network-planning-tool"></a>Strumento di pianificazione della rete perimetrale
  
 La maggior parte dei componenti perimetrali viene distribuita in una rete perimetrale. I componenti elencati costituiscono la topologia perimetrale della rete perimetrale. Tranne dove specificato, i componenti fanno parte degli scenari di server perimetrali [in Skype for Business Server 2015](../../plan-your-deployment/edge-server-deployments/scenarios.md) e si trova nella rete perimetrale. I componenti perimetrali includono quanto segue:

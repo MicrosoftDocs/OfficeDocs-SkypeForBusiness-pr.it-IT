@@ -1,32 +1,27 @@
 ---
 title: Aggiungere archivio di Front End SQL Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddFrontEndSqlStorePage
+  - ms.lync.tb.AddFrontEndSqlStorePage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: dace9561-3eb4-4647-83cb-56c246919ae1
-ROBOTS: NOINDEX, NOFOLLOW
-description: Una distribuzione edizione Standard server installa automaticamente il software di database Microsoft SQL Server Express necessario e il database SQL Server database. Di conseguenza, tutte le opzioni sono prepopolato e non è possibile apportare modifiche alla configurazione predefinita.
-ms.openlocfilehash: eaa6b6f313632fe3b0acfc5d89a0117978cced42
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60835714"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Una distribuzione edizione Standard server installa automaticamente il software di database Microsoft SQL Server Express e il database SQL Server database. Di conseguenza, tutte le opzioni sono prepopolato e non è possibile apportare modifiche alla configurazione predefinita.'
 ---
+
 # <a name="add-front-end-sql-server-store"></a>Aggiungere archivio di Front End SQL Server
 
-Una distribuzione edizione Standard server installa automaticamente il software di database Microsoft SQL Server Express necessario e il database SQL Server database. Di conseguenza, tutte le opzioni sono prepopolato e non è possibile apportare modifiche alla configurazione predefinita.
+Una distribuzione edizione Standard server installa automaticamente il software di database Microsoft SQL Server Express e il database SQL Server database. Di conseguenza, tutte le opzioni sono prepopolato e non è possibile apportare modifiche alla configurazione predefinita.
 
-Il pool Front End di una distribuzione edizione Enterprise server richiede un'edizione a 64 bit supportata del software di database SQL Server per il database back-end. È possibile selezionare un database SQL Server definito in precedenza da utilizzare per il database back-end oppure definire un nuovo database di SQL Server specificando un nome di dominio completo (FQDN) del server in cui si trova il database di SQL Server e l'istanza di SQL Server che si desidera utilizzare per il nuovo database di SQL Server (che può essere l'istanza predefinita o un'istanza denominata specificata). È inoltre possibile scegliere di abilitare il mirroring nell'SQL Server e specificare un controllo del mirroring per il failover automatico.
+Il pool Front End di una distribuzione edizione Enterprise server richiede un'edizione a 64 bit supportata del software di database SQL Server per il database back-end. È possibile selezionare un database di SQL Server definito in precedenza da utilizzare per il database back-end oppure definire un nuovo database SQL Server specificando un nome di dominio completo (FQDN) del server in cui si trova il database di SQL Server e l'istanza di SQL Server che si desidera utilizzare per il nuovo database. SQL Server database (che può essere l'istanza predefinita o un'istanza denominata specificata). È inoltre possibile scegliere di abilitare il mirroring nell'SQL Server e specificare un controllo del mirroring per il failover automatico.
 
 Per informazioni dettagliate SQL Server supporto, vedere [Database Software and Clustering Support](/previous-versions/office/lync-server-2013/lync-server-2013-database-software-support) nella documentazione relativa alla supportabilità. Per informazioni dettagliate sulla SQL Server per il database back-end, vedere [Configure SQL Server](/previous-versions/office/lync-server-2013/lync-server-2013-configure-sql-server-for-lync-server) nella documentazione relativa alla distribuzione.
 

@@ -1,37 +1,32 @@
 ---
 title: Creare record DNS per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/15/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 798a663c-0b63-4f75-b0a3-9c553cef8c5f
-description: "Riepilogo: informazioni su come configurare DNS e creare record DNS per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: 177568623148b64b3dccd885e2e7ff3740149c62
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850369"
+description: 'Riepilogo: informazioni su come configurare DNS e creare record DNS per un''installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all''indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server.'
 ---
+
 # <a name="create-dns-records-for-skype-for-business-server"></a>Creare record DNS per Skype for Business Server
  
-**Riepilogo:** Informazioni su come configurare DNS e creare record DNS per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
+**Riepilogo:** Informazioni su come configurare DNS e creare record DNS per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server).
   
-Per Skype for Business Server correttamente, è necessario che siano presenti diverse impostazioni DNS (Domain Name System). In questo modo i client sanno come accedere ai servizi e che i server conoscono l'uno dell'altro. Queste impostazioni devono essere completate una sola volta per ogni distribuzione perché una volta assegnata una voce DNS, è disponibile in tutto il dominio. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. La creazione di record DNS comprende il passaggio 5 di 8. Per ulteriori informazioni sulla pianificazione del DNS, vedere [Environmental requirements for Skype for Business Server](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or Server requirements for Skype for Business Server [2019](../../../SfBServer2019/plan/system-requirements.md).
+Per Skype for Business Server correttamente, è necessario che siano presenti diverse impostazioni DNS (Domain Name System). In questo modo i client sanno come accedere ai servizi e che i server conoscono l'uno dell'altro. Queste impostazioni devono essere completate una sola volta per ogni distribuzione perché una volta assegnata una voce DNS, è disponibile in tutto il dominio. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. La creazione di record DNS comprende il passaggio 5 di 8. Per ulteriori informazioni sulla pianificazione del DNS, vedere [Environmental requirements for Skype for Business Server](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or [Server requirements for Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md).
   
 > [!IMPORTANT]
-> È importante notare che questo è solo un esempio di come creare record DNS in un ambiente DNS Windows Server. Esistono molte altre voci DNS necessarie per Skype for Business Server e la procedura per la creazione di record DNS dipende dal sistema utilizzato per gestire DNS nell'organizzazione. Per un elenco completo dei requisiti per DNS, vedere [Requisiti DNS per Skype for Business Server](../../plan-your-deployment/network-requirements/dns.md). 
+> È importante notare che questo è solo un esempio di come creare record DNS in un ambiente DNS Windows Server. Esistono molte altre voci DNS necessarie per Skype for Business Server e la procedura per la creazione di record DNS dipende dal sistema utilizzato per gestire DNS nell'organizzazione. Per un elenco completo dei requisiti per DNS, vedere [Dns requirements for Skype for Business Server](../../plan-your-deployment/network-requirements/dns.md). 
   
 ![Diagramma di panoramica.](../../media/d2fc733c-6a80-4d17-a02f-93b8c4bfb999.png)
   
@@ -39,7 +34,7 @@ Per Skype for Business Server correttamente, è necessario che siano presenti di
 
 I record DNS sono necessari perché Skype for Business Server funzionino correttamente e siano accessibili dagli utenti.
   
-In questo esempio viene utilizzato un FQDN con bilanciamento del carico DNS denominato pool.contoso.local. Questo pool è costituito da tre server che eseguono Skype for Business Server edizione Enterprise. Un edizione Standard front-end può contenere un solo server. Utilizzando edizione Standard, è possibile utilizzare solo il nome di dominio completo (FQDN) del singolo server edizione Standard quando si fa riferimento al ruolo front-end anziché creare un pool di server con bilanciamento del carico DNS, come illustrato in questo esempio. In questo semplice esempio che utilizza solo il ruolo front-end sono incluse le voci DNS nella tabella seguente. Per pianificare i requisiti DNS specifici, vedere [Requisiti DNS per Skype for Business Server](../../plan-your-deployment/network-requirements/dns.md). 
+In questo esempio viene utilizzato un FQDN con bilanciamento del carico DNS denominato pool.contoso.local. Questo pool è costituito da tre server che eseguono Skype for Business Server edizione Enterprise. Un edizione Standard front-end può contenere un solo server. Utilizzando edizione Standard, è possibile utilizzare solo il nome di dominio completo (FQDN) del singolo server edizione Standard quando si fa riferimento al ruolo front-end anziché creare un pool di server con bilanciamento del carico DNS, come illustrato in questo esempio. In questo semplice esempio che utilizza solo il ruolo front-end sono incluse le voci DNS nella tabella seguente. Per pianificare i requisiti DNS specifici, vedere [Dns requirements for Skype for Business Server](../../plan-your-deployment/network-requirements/dns.md). 
   
  
 |**Descrizione**|**Tipo di record**|**Nome**|**Viene risolto in**|**Tipo di bilanciamento del carico**|
@@ -51,7 +46,7 @@ In questo esempio viene utilizzato un FQDN con bilanciamento del carico DNS deno
 |SFB02 FQDN  <br/> |A  <br/> |SFB02.contoso.local  <br/> |Indirizzo IP del server SFB02  <br/> |DNS  <br/> |
 |FQDN pool  <br/> |A  <br/> |pool.contoso.local  <br/> |Indirizzo IP del server SFB03  <br/> |DNS  <br/> |
 |SFB03 FQDN  <br/> |A  <br/> |SFB03.contoso.local  <br/> |Indirizzo IP del server SFB03  <br/> |DNS  <br/> |
-|Skype for Business Individuazione automatica  <br/> |A  <br/> |lyncdiscoverinternal.contoso.local  <br/> |VIP per i servizi Web interni  <br/> |Software e hardware supportati  <br/> |
+|Skype for Business individuazione automatica  <br/> |A  <br/> |lyncdiscoverinternal.contoso.local  <br/> |VIP per i servizi Web interni  <br/> |Software e hardware supportati  <br/> |
 |URL semplice riunione  <br/> |A  <br/> |meet.contoso.local  <br/> |VIP per i servizi Web interni  <br/> |Software e hardware supportati  <br/> |
 |URL semplice di accesso esterno  <br/> |A  <br/> |dialin.contoso.local  <br/> |VIP per i servizi Web interni  <br/> |Software e hardware supportati  <br/> |
 |URL semplice utilità di pianificazione Web  <br/> |A  <br/> |scheduler.contoso.local  <br/> |VIP per i servizi Web interni  <br/> |Software e hardware supportati  <br/> |
@@ -62,7 +57,7 @@ In questo esempio viene utilizzato un FQDN con bilanciamento del carico DNS deno
 
 1. Accedere al server DNS e aprire **Server Manager**.
     
-2. Fare clic sul menu **a** discesa Strumenti e quindi su **DNS.**
+2. Fare clic **sul** menu a discesa Strumenti e quindi su **DNS**.
     
 3. Nell'albero della console per il dominio SIP espandere **Zone** di ricerca diretta e quindi espandere il dominio SIP in cui Skype for Business Server verrà installato.
     
@@ -72,7 +67,7 @@ In questo esempio viene utilizzato un FQDN con bilanciamento del carico DNS deno
   
 5. Nella casella **Nome** digitare il nome del record host (il nome di dominio verrà aggiunto automaticamente).
     
-6. Nella casella **Indirizzo IP** digitare l'indirizzo IP del singolo server front-end e quindi selezionare Crea **record puntatore associato (PTR)** o Consenti a qualsiasi utente autenticato di aggiornare i record **DNS** con lo stesso nome proprietario, se applicabile. Si noti che si presuppone che DNS sia utilizzato per bilanciare il carico di tutto il traffico ad eccezione dei servizi Web. In questo esempio sono presenti tre server front-end, come illustrato nella tabella.
+6. Nella casella Indirizzo **IP** digitare l'indirizzo IP del singolo server front-end e quindi selezionare Crea **record puntatore associato (PTR)** o Consenti a qualsiasi utente autenticato di aggiornare i record **DNS** con lo stesso nome proprietario, se applicabile. Si noti che si presuppone che DNS sia utilizzato per bilanciare il carico di tutto il traffico ad eccezione dei servizi Web. In questo esempio sono presenti tre server front-end, come illustrato nella tabella.
     
    |**Nome server**|**Tipo**|**Dati**|
    |:-----|:-----|:-----|
@@ -115,9 +110,9 @@ In questo esempio viene utilizzato un FQDN con bilanciamento del carico DNS deno
 
 1. Accedere a un computer client nel dominio con un account membro del gruppo Authenticated Users o con autorizzazioni equivalenti.
     
-2. Fare **clic sul** pulsante Start e quindi digitare **cmd** e premere INVIO.
+2. Fare **clic sul pulsante Start** e quindi digitare **cmd** e premere INVIO.
     
-3. Digitare **nslookup \<FQDN of the Front End pool\>** o e premere **\<FQDN of the Standard Edition server or single Enterprise Edition server\>** INVIO.
+3. Digitare **nslookup \<FQDN of the Front End pool\>** o **\<FQDN of the Standard Edition server or single Enterprise Edition server\>** e premere INVIO.
     
 4. Continuare a verificare il resto dei record A per la distribuzione.
     
