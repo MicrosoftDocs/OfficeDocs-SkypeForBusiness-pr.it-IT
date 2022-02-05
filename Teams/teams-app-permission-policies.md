@@ -1,7 +1,7 @@
 ---
 title: Gestire i criteri di autorizzazione app in Microsoft Teams
 author: serdars
-ms.author: v-mahoffman
+ms.author: serdars
 manager: serdars
 ms.reviewer: rarang
 ms.topic: article
@@ -9,26 +9,21 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 ms.collection:
-- M365-collaboration
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Ulteriori informazioni sui criteri di autorizzazione app in Microsoft Teams e su come usarli per controllare quali applicazioni sono disponibili per gli utenti dell'organizzazione.
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.teamsadmincenter.apppermspolicies.overview
-- ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
-- ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
-- ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: b407d0c96e5aa9cbf84277285ab717a1950a9f17
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60761694"
+  - ms.teamsadmincenter.apppermspolicies.overview
+  - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
+  - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
+  - ms.teamsadmincenter.appsetuppolicies.overview
 ---
+
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione app in Microsoft Teams
 
 Gli amministratori possono usare i criteri di autorizzazione app per controllare quali app sono disponibili per gli utenti di Microsoft Teams dell'organizzazione. È possibile consentire o bloccare tutte le app o determinate app pubblicate da Microsoft, da terze parti e dall'organizzazione. Quando si blocca un'app, gli utenti a cui è assegnato il criterio non possono a installarla dallo store delle app di Teams. Per gestire questi criteri, è necessario essere un amministratore globale o un amministratore del servizio Teams.
@@ -86,7 +81,7 @@ Se si vuole controllare le app disponibili per diversi gruppi di utenti dell'org
 
 ## <a name="manage-org-wide-app-settings-for-microsoft-365-government"></a>Gestire impostazioni app a livello di organizzazione per Government di Microsoft 365  
 
-In una distribuzione di Microsoft 365 Government - GCCH e DoD di Teams, è importante conoscere le informazioni seguenti sulle impostazioni delle app di terze parti, che sono univoche per GCCH e DoD.
+In una distribuzione Microsoft 365 government - GCCH e DoD di Teams, è importante conoscere le informazioni seguenti sulle impostazioni delle app di terze parti, che sono univoche per GCCH e DoD.
 
 In GCCH e DoD tutte le app di terze parti sono bloccate per impostazione predefinita. Inoltre, verrà visualizzata la seguente nota in merito alla gestione delle app di terze parti nella pagina dei criteri di autorizzazione app nell'interfaccia di amministrazione di Microsoft Teams.
 

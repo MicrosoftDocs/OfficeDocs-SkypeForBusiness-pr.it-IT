@@ -1,29 +1,24 @@
 ---
 title: Modificare i criteri di conferenza in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: b40ba905-e74a-4456-ac94-65471bc2d66d
 description: 'Riepilogo: informazioni su come modificare i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 0c9b2f24fac8303a28f4e7408d23e950f5586785
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60852080"
 ---
+
 # <a name="modify-conferencing-policies-in-skype-for-business-server"></a>Modificare i criteri di conferenza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come modificare i criteri di conferenza in Skype for Business Server.
   
-È possibile modificare i criteri di conferenza Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell.
+È possibile modificare i criteri di conferenza Skype for Business Server Pannello di controllo o tramite Skype for Business Server Management Shell.
   
 ## <a name="modify-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Modificare i criteri di conferenza tramite Skype for Business Server Pannello di controllo
 
@@ -31,7 +26,7 @@ ms.locfileid: "60852080"
     
 2.  Aprire Skype for Business Server Pannello di controllo.
     
-3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza.**
+3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza**.
     
 4. Nell'elenco dei criteri per conferenza fare clic sui criteri che si desidera modificare, fare clic su **Modifica** e quindi su **Mostra dettagli**.
     
@@ -41,7 +36,7 @@ ms.locfileid: "60852080"
     
 ## <a name="modify-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Modificare i criteri di conferenza tramite Skype for Business Server Management Shell
 
-Per modificare i criteri di conferenza, utilizzare il cmdlet **Set-CsConferencingPolicy.**
+Per modificare i criteri di conferenza, utilizzare **il cmdlet Set-CsConferencingPolicy** .
   
 Nell'esempio seguente viene modificato il valore di una proprietà del criterio di conferenza SalesConferencingPolicy. Il comando imposta il valore della proprietà AllowConferenceRecording su False:
   

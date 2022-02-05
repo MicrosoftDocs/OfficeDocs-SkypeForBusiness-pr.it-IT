@@ -1,27 +1,22 @@
 ---
 title: Gestire la configurazione Access Edge per l'organizzazione
-ms.reviewer: ''
-ms:assetid: 0145eb08-984f-4ecd-bf9c-364817619c2a
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ552443(v=OCS.15)
-ms:contentKeyID: 48679555
+ms.reviewer: null
+'ms:assetid': 0145eb08-984f-4ecd-bf9c-364817619c2a
+'ms:mtpsurl': 'https://technet.microsoft.com/en-us/library/JJ552443(v=OCS.15)'
+'ms:contentKeyID': 48679555
 mtps_version: v=OCS.15
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
-description: Dopo aver distribuito uno o più server perimetrali, è necessario abilitare i tipi di accesso al dominio o al provider esterno, l'accesso degli utenti remoti e l'accesso utente anonimo alle conferenze tramite i server perimetrali che saranno supportati per l'organizzazione.
-ms.openlocfilehash: ff152ea25bbea750815e0619ce521ede8d8d7203
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60860093"
+description: 'Dopo aver distribuito uno o più server perimetrali, è necessario abilitare i tipi di accesso al dominio o al provider esterno, l''accesso degli utenti remoti e l''accesso utente anonimo alle conferenze tramite i server perimetrali che saranno supportati per l''organizzazione.'
 ---
+
 # <a name="manage-access-edge-configuration-for-your-organization"></a>Gestire la configurazione Access Edge per l'organizzazione
 
 Dopo aver distribuito uno o più server perimetrali, è necessario abilitare i tipi di accesso al dominio o al provider esterno, l'accesso degli utenti remoti e l'accesso utente anonimo alle conferenze tramite i server perimetrali che saranno supportati per l'organizzazione.
@@ -41,11 +36,11 @@ Queste opzioni includono i tipi seguenti di accesso, che possono essere configur
   - **Consentire agli utenti anonimi di accedere alle conferenze**   Abilitare questa opzione se si desidera che gli utenti interni invitino utenti anonimi esterni alle conferenze che organizzano. L'abilitazione di questa impostazione consente solo agli utenti anonimi di conferenze.
 
 > [!NOTE]  
-> Oltre ad abilitare il supporto per l'accesso utenti esterni, è necessario configurare anche criteri per controllare l'uso dell'accesso remoto utenti nell'organizzazione, prima che qualsiasi tipo di accesso utente esterno venga reso disponibile per gli utenti. Per informazioni dettagliate sulla creazione, la configurazione e l'applicazione di criteri per l'accesso degli utenti esterni, vedere [Manage external access policy for your organization.](../external-access-policies/manage-external-access-policy-for-your-organization.md)
+> Oltre ad abilitare il supporto per l'accesso utenti esterni, è necessario configurare anche criteri per controllare l'uso dell'accesso remoto utenti nell'organizzazione, prima che qualsiasi tipo di accesso utente esterno venga reso disponibile per gli utenti. Per informazioni dettagliate sulla creazione, la configurazione e l'applicazione di criteri per l'accesso degli utenti esterni, vedere [Manage external access policy for your organization](../external-access-policies/manage-external-access-policy-for-your-organization.md).
 
 **Visualizzazione delle informazioni di configurazione di Access Edge tramite Windows PowerShell cmdlet**
 
-  - Le informazioni di configurazione di Access Edge possono essere visualizzate Windows PowerShell e il cmdlet **Get-CsAccessEdgeConfiguration.** Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+  - Le informazioni di configurazione di Access Edge possono essere visualizzate utilizzando Windows PowerShell e il cmdlet **Get-CsAccessEdgeConfiguration**. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
     
     Per visualizzare informazioni su tutte le impostazioni di configurazione di Access Edge, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
     

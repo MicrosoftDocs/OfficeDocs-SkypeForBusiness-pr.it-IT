@@ -1,28 +1,23 @@
 ---
 title: Nozioni di base sulla topologia per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 113e8c3f-71de-435c-bc4a-918ac7b50008
 description: 'Riepilogo: scegliere la topologia per Skype for Business Server. Informazioni sulla collocazione dei server per Skype for Business Server.'
-ms.openlocfilehash: 9f28857d6fa8ddbbd77713e113f73314e8f9d3c8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60856533"
 ---
+
 # <a name="topology-basics-for-skype-for-business-server"></a>Nozioni di base sulla topologia per Skype for Business Server
 
 **Riepilogo:** Scegliere la topologia per Skype for Business Server. Informazioni sulla collocazione dei server per Skype for Business Server.
@@ -41,7 +36,7 @@ La distribuzione avrà almeno un sito centrale (denominato anche datacenter, si 
 
 - edizione Standard server include un database SQL Server Express collocato.
 
-- edizione Enterprise Il pool Front End include:
+- edizione Enterprise pool Front End include:
 
   - Uno o più Front End Server (idealmente almeno tre, per la scalabilità), con un massimo di dodici. Il bilanciamento del carico sarebbe necessario per più di un server.
 
@@ -67,13 +62,13 @@ Per ottenere informazioni più dettagliate, un sito centrale può anche disporre
 
 - Più server Standard Edition.
 
-- Office Web Apps Server, che viene utilizzato con Office Web Apps in Skype for Business Server per la condivisione e il rendering di PowerPoint presentazioni.
+- Office Web Apps Server, utilizzato con Office Web Apps in Skype for Business Server per la condivisione e il rendering di PowerPoint presentazioni.
 
 - Server perimetrale o pool di server perimetrali (in una rete perimetrale). Necessario se si desidera che la distribuzione supporti i partner federati, la connettività di messaggistica istantanea pubblica, il gateway XMPP (Extensible Messaging and Presence Protocol) e l'accesso degli utenti remoti. Ulteriori dettagli sono disponibili nella documentazione relativa alla pianificazione dei server perimetrali.
 
 - Server Chat persistente. Utile se vuoi che gli utenti siano in grado di partecipare a conversazioni basate su argomenti tra più parti che persistono nel tempo. Per ulteriori informazioni, vedere Planning for Persistent Chat Server.
 
-- Monitoraggio. Usato per supportare la raccolta dei dati per audio/video (A/V) Qualità dell'esperienza (QoE) e registrazione dettagli chiamata (CDR) per VoIP aziendale e conferenze audio/video nella distribuzione. Ne parleremo in dettaglio nell'argomento Planning for Monitoring.
+- Monitoraggio. Usato per supportare la raccolta dei dati per audio/video (A/V) Qualità dell'esperienza (QoE) e registrazione dettagli chiamata (CDR) per le conferenze VoIP aziendale e A/V nella distribuzione. Ne parleremo in dettaglio nell'argomento Planning for Monitoring.
 
 - Director o pool di server Director. Non obbligatorio, ma utile se si desidera migliorare la resilienza e abilitare il reindirizzamento delle richieste Skype for Business utenti al pool principale dell'utente. Se si desidera distribuire Director, è supportato un massimo di 10 per pool. Se è necessario, continuare a leggere l'argomento Planning for Directors.
 
@@ -97,18 +92,18 @@ Dove si trova Exchange server Messaggistica unificata in questo elenco? È sicur
 |Mediation Server autonomo o pool Mediation Server   |Server perimetrale o pool di server perimetrali   |
 |Server Chat persistente o pool di server Chat persistente   |Monitoraggio   |
 
-Come nell'ultimo elenco, qui non è incluso il server Messaggistica unificata di Exchange perché non fa parte della distribuzione di Skype for Business Server, ma rientra anche nella stessa categoria.
+Proprio come l'ultimo elenco, qui non è incluso il server messaggistica unificata di Exchange perché non fa parte della distribuzione di Skype for Business Server, ma rientra anche nella stessa categoria.
 
 Ci sono alcuni altri componenti e opzioni che vanno nelle distribuzioni, naturalmente.
 
 |&nbsp;|&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|:-----|
-|Firewall   |Gateway PSTN (se si distribuisce VoIP aziendale   |Exchange Server Messaggistica unificata (se si desidera eseguire l'integrazione con Exchange messaggistica unificata)   |Bilanciamento del carico DNS   |
+|Firewall   |Gateway PSTN (se si distribuisce VoIP aziendale   |Exchange server Messaggistica unificata (se si desidera eseguire l'integrazione con Exchange messaggistica unificata)   |Bilanciamento del carico DNS   |
 |Dispositivi di bilanciamento del carico hardware   |Database di SQL Server   |Condivisioni file   ||
 
 ## <a name="server-roles"></a>Ruoli del server
 
-Ogni server che esegue Skype for Business Server uno o più ruoli del server. Un ruolo del server è un set definito di Skype for Business Server funzionalità fornite da tale server. Non è necessario distribuire tutti i ruoli del server disponibili nella rete. Installare solo i ruoli del server che contengono le funzionalità desiderate.
+Ogni server che Skype for Business Server esegue uno o più ruoli del server. Un ruolo del server è un set definito di Skype for Business Server funzionalità fornite da tale server. Non è necessario distribuire tutti i ruoli del server disponibili nella rete. Installare solo i ruoli del server che contengono le funzionalità desiderate.
 
 Per la maggior parte dei ruoli del server, ai fini di scalabilità e disponibilità elevata è possibile distribuire pool di più server che eseguono tutti lo stesso ruolo del server. Ogni server in un pool deve eseguire uno o più ruoli del server identici. Per la maggior parte dei tipi di pool in Skype for Business Server, è necessario distribuire un servizio di bilanciamento del carico per distribuire il traffico tra i vari server del pool. Skype for Business Server supporta sia il bilanciamento del carico DNS (Domain Name System) che i servizi di bilanciamento del carico hardware.
 
@@ -146,13 +141,13 @@ I Front End Pool rappresentano inoltre il principale percorso di archiviazione p
 
 Inoltre, un Front End Server nella distribuzione esegue anche il server di gestione centrale, che gestisce e distribuisce i dati di configurazione di base in tutti i server che eseguono Skype for Business Server. Il server di gestione centrale fornisce inoltre Lync Server Management Shell e funzionalità di trasferimento file.
 
-I server back-end sono server di database Microsoft SQL Server che forniscono i servizi di database per il pool Front End. I server back-end fungono da archivi di backup per i dati relativi agli utenti e alle conferenze del pool e sono gli archivi principali per altri database, ad esempio il database di Response Group. È possibile disporre di un singolo server back-end, ma la disponibilità elevata del [server back-end Skype for Business Server](../high-availability-and-disaster-recovery/back-end-server.md) è consigliata per il failover. I server back-end non eseguono Skype for Business Server software.
+I server back-end sono server di database Microsoft SQL Server che forniscono i servizi di database per il pool Front End. I server back-end fungono da archivi di backup per i dati relativi agli utenti e alle conferenze del pool e sono gli archivi principali per altri database, ad esempio il database di Response Group. È possibile disporre di un singolo server back-end, ma la disponibilità elevata del [server back-end in](../high-availability-and-disaster-recovery/back-end-server.md) Skype for Business Server è consigliata per il failover. I server back-end non eseguono Skype for Business Server software.
 
 > [!IMPORTANT]
 > Non è consigliabile collocare Skype for Business Server database con altri database. In caso contrario, disponibilità e prestazioni potrebbero risentirne.
 
 > [!NOTE]
-> SQL Il mirroring è disponibile Skype for Business Server 2015, ma non è più supportato in Skype for Business Server 2019. I gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn e i metodi di clustering di failover SQL sono preferiti con Skype for Business Server 2019.
+> SQL mirroring è disponibile in Skype for Business Server 2015, ma non è più supportato in Skype for Business Server 2019. I gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn e i metodi di clustering di failover SQL sono preferiti con Skype for Business Server 2019.
 
 Le informazioni archiviate nei database del server di back-end includono informazioni sulla presenza, elenchi di contatti degli utenti, dati sulle conferenze, ad esempio dati persistenti sullo stato di tutte le conferenze correnti, e dati di pianificazione delle conferenze.
 
@@ -162,43 +157,43 @@ Edge Server consente agli utenti di comunicare e collaborare con utenti esterni 
 
 La distribuzione del server perimetrale attiva inoltre i servizi di mobilità, che supportano le funzionalità di Lync nei dispositivi mobili. Gli utenti possono utilizzare dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza. I dispositivi mobili inoltre supportano alcune funzionalità di VoIP aziendale, tra cui la possibilità di partecipare a una conferenza mediante clic del mouse, la chiamata tramite ufficio, il numero unico, la segreteria telefonica e le chiamate senza risposta. La funzionalità per dispositivi mobili inoltre supporta le notifiche push per i dispositivi mobili che non supportano le applicazioni eseguite in background. Una notifica push è una notifica inviata a un dispositivo mobile relativamente a un evento che si verifica mentre un'applicazione per dispositivi mobili non è attiva.
 
-I server perimetrali includono inoltre un proxy XMPP (Extensible Messaging and Presence Protocol) pienamente integrato, con gateway XMPP incluso sui Front End Server. È possibile configurare questi componenti XMPP per consentire agli utenti Skype for Business Server di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
+I server perimetrali includono inoltre un proxy XMPP (Extensible Messaging and Presence Protocol) pienamente integrato, con gateway XMPP incluso sui Front End Server. È possibile configurare questi componenti XMPP per consentire agli Skype for Business Server di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
 
 > [!NOTE]
-> I gateway xMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../SfBServer2019/migration/migrating-xmpp-federation.md)
+> I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation](../../../SfBServer2019/migration/migrating-xmpp-federation.md) .
 
 ### <a name="mediation-server"></a>Mediation Server
 
-Mediation Server è un componente necessario per l'implementazione di VoIP aziendale, chiamata tramite lavoro e conferenze telefoniche con accesso esterno. Mediation Server converte la segnalazione e, in alcune configurazioni, i supporti tra l'infrastruttura Skype for Business Server interna e un gateway PSTN (Public Switched Telephone Network), un IP-PBX o un trunk SIP (Session Initiation Protocol). È possibile eseguire Mediation Server collocato sullo stesso server del Front End Server, o separato in un pool Mediation Server indipendente.
+Mediation Server è un componente necessario per l'implementazione VoIP aziendale, chiamata tramite lavoro e conferenze telefoniche con accesso esterno. Mediation Server converte la segnalazione e, in alcune configurazioni, i supporti tra l'infrastruttura Skype for Business Server interna e un gateway PSTN (Public Switched Telephone Network), un IP-PBX o un trunk SIP (Session Initiation Protocol). È possibile eseguire Mediation Server collocato sullo stesso server del Front End Server, o separato in un pool Mediation Server indipendente.
 
-Per informazioni dettagliate, vedere [Mediation Server component in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/mediation-server.md).
+Per informazioni dettagliate, [vedere Mediation Server component in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/mediation-server.md).
 
 ### <a name="video-interop-server"></a>Server di interoperabilità video
 
-Video Interop Server è un nuovo ruolo di Skype for Business Server 2015. Consente di integrare la distribuzione Skype for Business Server con alcune soluzioni VTC (Video Teleconferencing System) di terze parti. Un VIS funge da intermediario tra un sistema di teleconferenza di terze parti e una Skype for Business Server distribuzione. Per questa versione, VIS si concentra sull'interoperabilità con i sistemi video Cisco/Tandberg.
+Video Interop Server è un nuovo ruolo di Skype for Business Server 2015. Consente di integrare la distribuzione Skype for Business Server con determinate soluzioni VTC (Video Teleconferencing System) di terze parti. Un VIS funge da intermediario tra un sistema di teleconferenza di terze parti e una Skype for Business Server distribuzione. Per questa versione, VIS si concentra sull'interoperabilità con i sistemi video Cisco/Tandberg.
 
-Per informazioni dettagliate, [vedere Plan for Video Interop Server in Skype for Business Server](../../plan-your-deployment/video-interop-server.md).
+Per informazioni dettagliate, vedere [Plan for Video Interop Server in Skype for Business Server](../../plan-your-deployment/video-interop-server.md).
 
 ### <a name="director"></a>Direttore
 
-I Director possono autenticare Skype for Business Server utente, ma non ospitano account utente né forniscono servizi di presenza o conferenza. I Director sono particolarmente utili per migliorare la sicurezza nelle distribuzioni che consentono l'accesso degli utenti esterni. Il Director può autenticare le richieste prima di inviarle ai server interni. In caso di attacco Denial of Service, l'attacco termina con il Director e non raggiunge i Front End Server.
+I Director possono autenticare Skype for Business Server utenti, ma non ospitano account utente né forniscono servizi di presenza o conferenza. I Director sono particolarmente utili per migliorare la sicurezza nelle distribuzioni che consentono l'accesso degli utenti esterni. Il Director può autenticare le richieste prima di inviarle ai server interni. In caso di attacco Denial of Service, l'attacco termina con il Director e non raggiunge i Front End Server.
 
 ### <a name="persistent-chat-server-roles"></a>Ruoli del server Chat persistente
 
 > [!NOTE]
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.
 
 La Chat persistente consente di partecipare a conversazioni tra più partecipanti basate su argomenti, e permanenti nel tempo. I servizi di chat persistente sono eseguiti dal Front End Server della chat persistente. Il server back-end della chat persistente salva i dati della cronologia delle chat e le informazioni relative a categorie e chat room. Il Compliance server di back-end della chat persistente, facoltativo, può archiviare il contenuto della chat e gli eventi di conformità ai fini della conformità stessa.
 
-I server che Skype for Business Server edizione Standard eseguono chat persistente collocata sullo stesso server. Non è possibile collocare il Front End Server di Persistent Chat con edizione Enterprise Front End Server.
+I server che Skype for Business Server edizione Standard eseguono chat persistente collocata nello stesso server. Non è possibile collocare il Front End Server di Persistent Chat con edizione Enterprise Front End Server.
 
 Per informazioni dettagliate, [vedere Plan for Persistent Chat Server in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md).
 
 ## <a name="high-availability-and-disaster-recovery-support"></a>Disponibilità elevata e supporto per il ripristino di emergenza
 
-Skype for Business Server disponibilità elevata in base alla ridondanza del server tramite pooling. In caso di errore di un server che esegue un determinato ruolo, gli altri server del pool che eseguono lo stesso ruolo sopportano il carico del server in errore. Ciò vale per Front End Server, server perimetrali, Mediation Server e Director.
+Skype for Business Server disponibilità elevata in base alla ridondanza del server tramite il pooling. In caso di errore di un server che esegue un determinato ruolo, gli altri server del pool che eseguono lo stesso ruolo sopportano il carico del server in errore. Ciò vale per Front End Server, server perimetrali, Mediation Server e Director.
 
-Skype for Business Server fornisce anche misure di ripristino di emergenza abilitando l'associazione del pool. Se si distribuisce questa topologia, vengono designate coppie di pool Front End, in cui ogni pool si trova in un data center distinto e in un'area geografica separata. Se uno dei pool o dei siti diventa inattivo, è possibile reindirizzare gli utenti che vi appartengono all'altro pool della coppia, provocando in questo modo un'interruzione minima del servizio.
+Skype for Business Server fornisce anche misure di ripristino di emergenza abilitando l'associazione dei pool. Se si distribuisce questa topologia, vengono designate coppie di pool Front End, in cui ogni pool si trova in un data center distinto e in un'area geografica separata. Se uno dei pool o dei siti diventa inattivo, è possibile reindirizzare gli utenti che vi appartengono all'altro pool della coppia, provocando in questo modo un'interruzione minima del servizio.
 
 Skype for Business Server supporta inoltre diverse opzioni per la disponibilità elevata del server back-end. Tra le caratteristiche vi sono le seguenti:
 
@@ -210,7 +205,7 @@ Skype for Business Server supporta inoltre diverse opzioni per la disponibilità
 
 - SQL clustering di failover
 
-Per informazioni dettagliate sull'associazione dei pool e sulla disponibilità elevata del server [back-end,](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md)vedere Plan for high availability and disaster recovery in Skype for Business Server .
+Per informazioni dettagliate sull'associazione del pool e sulla disponibilità elevata del server back-end, vedere [Plan for high availability and disaster recovery in Skype for Business Server](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md).
 
 ## <a name="server-collocation-in-skype-for-business-server"></a>Collocazione dei server in Skype for Business Server
 
@@ -234,14 +229,14 @@ Questi ruoli del server devono essere distribuiti in un server separato:
 
 ### <a name="databases"></a>Database
 
-Questa è l'area con differenze reali tra le distribuzioni di server edizione Standard e le distribuzioni di pool di server edizione Enterprise, quindi di seguito saranno disponibili due sezioni, seguite da alcune regole aggiuntive per entrambe.
+Questa è l'area con differenze reali tra distribuzioni di server edizione Standard e distribuzioni di pool di server edizione Enterprise, quindi di seguito saranno disponibili due sezioni, seguite da alcune regole aggiuntive per entrambe.
 
 #### <a name="standard"></a>Standard
 
 Poiché SQL Server Express è collocato nel server edizione Standard e non può essere spostato, questo è piuttosto semplice. Inoltre, se si distribuisce il server Chat persistente in un server edizione Standard, è possibile collocare anche Persistent Chat e il database di conformità di Persistent Chat nel server edizione Standard, ma non è necessario.
 
 > [!NOTE]
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.
 
 Questi server non possono essere collocati nel server edizione Standard, ma possono essere collocati in un singolo server di database:
 
@@ -249,9 +244,9 @@ Questi server non possono essere collocati nel server edizione Standard, ma poss
 
 - Database di archiviazione
 
-- Qualsiasi database back-end per un edizione Enterprise Front End
+- Qualsiasi database back-end per un edizione Enterprise pool Front End
 
-#### <a name="enterprise"></a>Enterprise
+#### <a name="enterprise"></a>Grandi aziende
 
 I database seguenti possono essere collocati nello stesso back-end SQL Server:
 
@@ -269,12 +264,12 @@ I database seguenti possono essere collocati nello stesso back-end SQL Server:
 
 A questo punto, esistono alcune regole aggiuntive da seguire quando si collocano database di Skype for Business Server in una singola istanza di SQL o in più istanze di SQL nello stesso database di SQL Server:
 
-- Ogni SQL può contenere solo un singolo database back-end per un pool Front End di edizione Enterprise, un singolo database di monitoraggio, un singolo database di archiviazione, un singolo database di Persistent Chat e un singolo database di conformità di Persistent Chat.
+- Ogni istanza SQL può contenere un solo database back-end per un pool Front End di edizione Enterprise, un singolo database di monitoraggio, un singolo database di archiviazione, un singolo database di Persistent Chat e un singolo database di conformità di Persistent Chat.
 
-- Il server database non può supportare più di un pool Front End edizione Enterprise, un server che esegue l'archiviazione, un server che esegue monitoring, un singolo database di Persistent Chat e un singolo database di conformità di Persistent Chat, ma può supportare uno di essi, indipendentemente dal fatto che i database utilizzino la stessa istanza di SQL Server o istanze separate di SQL Server.
+- Il server database non può supportare più di un pool Front End edizione Enterprise, un server che esegue l'archiviazione, un server che esegue Monitoring, un singolo database di Persistent Chat e un singolo database di conformità di Persistent Chat, ma può supportare uno di essi, indipendentemente dal fatto che i database utilizzino la stessa istanza di SQL Server o istanze separate di SQL Server.
 
     > [!NOTE]
-    > La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
+    > La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.
 
 ### <a name="file-shares"></a>Condivisioni file
 

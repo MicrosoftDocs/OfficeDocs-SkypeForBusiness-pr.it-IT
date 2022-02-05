@@ -1,31 +1,26 @@
 ---
 title: Strumento di pianificazione della panoramica delle funzionalità
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 4/6/2016
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- ms.lync.plan.FeatureOverview
-- ms.lync.plan.FeatureOverview
+  - ms.lync.plan.FeatureOverview
+  - ms.lync.plan.FeatureOverview
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 44783b37-c87f-41f2-9de1-39176f1856ab
 description: Descripbes the Skype for Business Server 2015 planning tool.
-ms.openlocfilehash: 7351ef19480f4153ee98db58ab2ba70b34e3df06
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850939"
 ---
+
 # <a name="feature-overview-planning-tool"></a>Strumento di pianificazione della panoramica delle funzionalità
  
 Skype for Business Server 2015 Planning Tool
   
-È possibile utilizzare la **pagina Siti centrali** dello Strumento di pianificazione per progettare la Skype for Business Server distribuzione. È possibile creare due distribuzioni centralizzate o distribuite. Una distribuzione centralizzata dispone di un solo sito centrale, che include tutti Skype for Business utenti dell'organizzazione. Una distribuzione distribuita include più di un sito centrale. Se si distribuiscono Skype for Business Server in più siti centrali, sarà necessario immettere il numero di utenti in ogni sito centrale nello Strumento di pianificazione.
+È possibile utilizzare la **pagina Siti centrali** dello Strumento di pianificazione per progettare la Skype for Business Server distribuzione. È possibile creare due distribuzioni centralizzate o distribuite. Una distribuzione centralizzata dispone di un solo sito centrale, che include tutti Skype for Business utenti dell'organizzazione. Una distribuzione distribuita include più di un sito centrale. Se si distribuiscono Skype for Business Server in più siti centrali, si immetterà il numero di utenti in ogni sito centrale nello Strumento di pianificazione.
   
 Per completare la definizione del sito centrale, è innanzitutto necessario fornire le informazioni seguenti:
   
@@ -56,7 +51,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Chiamate in conferenza**
     
-    Le conferenze telefoniche con accesso esterno consentono agli utenti di partecipare a un A/V da un telefono sulla rete PSTN. Per le conferenze telefoniche con accesso esterno è necessario distribuire le applicazioni Operatore conferenza e Annuncio conferenza Service.
+    Le conferenze telefoniche con accesso esterno consentono agli utenti di partecipare a un A/V da un telefono sulla rete PSTN. Per le conferenze telefoniche con accesso esterno è necessario distribuire le applicazioni Operatore conferenza e Annuncio conferenza service.
     
 - **Conferenze Web**
     
@@ -83,15 +78,15 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     Skype for Business Server 2015 introduce un proxy XMPP completamente integrato (distribuito nei server perimetrali) e un gateway XMPP distribuito nei Front End Server. È possibile distribuire L'aggiunta e la configurazione del proxy XMPP e del gateway XMPP consentiranno agli utenti di Skype for Business Server 2015 di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
 
 > [!NOTE]
-> I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../SfBServer2019/migration/migrating-xmpp-federation.md)
+> I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation](../../../SfBServer2019/migration/migrating-xmpp-federation.md) .
     
 - **Mobilità**
     
-    Quando distribuisci il servizio per dispositivi mobili di Skype for Business Server 2015, gli utenti possono usare i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
+    Quando distribuisci il servizio per dispositivi mobili Skype for Business Server 2015, gli utenti possono usare dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
     
 - **Cassetta postale Exchange W15**
     
-    Skype for Business Server 2015 consente di archiviare i messaggi della segreteria telefonica Exchange messaggistica unificata; tali messaggi della segreteria telefonica verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
+    Skype for Business Server 2015 consente di archiviare i messaggi della segreteria telefonica nella messaggistica unificata di Exchange; tali messaggi verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
     
 ### <a name="voice"></a>Voce
 
@@ -103,7 +98,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Messaggistica unificata di Exchange**
     
-    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica delle chiamate e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
+    Exchange messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la Exchange messaggistica unificata per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica delle chiamate e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
     
 ### <a name="additional-deployment-options"></a>Opzioni di distribuzione aggiuntive
 
@@ -125,7 +120,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
     L'archiviazione archivia conversazioni e conferenze di messaggistica istantanea.
     
-- **Exchange Integrazione dell'archiviazione**
+- **Exchange di archiviazione**
     
     Se si dispone di utenti ospitati in Exchange 2013 e le relative cassette postali sono state messe In-Place blocco, è possibile selezionare l'opzione per integrare l'archiviazione di Skype for Business Server 2015 con Exchange archiviazione.
     
@@ -163,7 +158,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Annuncio conferenza**
     
-    applicazione Annuncio conferenza produce toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
+    applicazione Annuncio conferenza toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
     
 - **Servizio Controllo di ammissione di chiamata**
     

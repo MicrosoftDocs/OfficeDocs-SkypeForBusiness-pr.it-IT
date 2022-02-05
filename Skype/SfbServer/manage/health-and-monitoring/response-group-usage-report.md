@@ -1,24 +1,19 @@
 ---
 title: Rapporto utilizzo Response Group in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 3248b320-a552-400a-8485-6891af4eb0f3
-description: "Riepilogo: informazioni sull'applicazione Response Group in Skype for Business Server."
-ms.openlocfilehash: e6628e9d1602cc89b04b0970baa502be7e8548a4
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60845449"
+description: 'Riepilogo: informazioni sull''applicazione Response Group in Skype for Business Server.'
 ---
+
 # <a name="response-group-usage-report-in-skype-for-business-server"></a>Rapporto utilizzo Response Group in Skype for Business Server
 
 **Riepilogo:** Informazioni sull'applicazione Response Group in Skype for Business Server.
@@ -64,7 +59,7 @@ L'accesso al Rapporto di utilizzo di Response Group può essere effettuato dalla
 Uno degli usi più interessanti del Rapporto di utilizzo di Response Group potrebbe non essere immediatamente evidente, ovvero la capacità di recuperare informazioni sull'utilizzo per un singolo flusso di lavoro di Response Group.
 
 > [!CAUTION]
-> Un flusso di lavoro di Response Group è fondamentalmente un set di istruzioni che determina le Skype for Business Server quando un utente compone un determinato numero di telefono. A tale scopo, ogni flusso di lavoro è associato in modo univoco a un numero di telefono. Quando un utente chiama tale numero, il flusso di lavoro determina la modalità di gestione della chiamata. Ad esempio, il flusso di lavoro potrebbe causare l'instradamento della chiamata a una serie di domande IVR (Interactive Voice Response) che richiedono al chiamante di immettere informazioni aggiuntive ("Premere 1 per il supporto hardware. Premere 2 per il supporto software."). In alternativa, il flusso di lavoro potrebbe causare l'inserimento della chiamata in una coda e mettere in attesa il chiamante finché un agente non sarà disponibile per rispondere alla chiamata. La disponibilità degli agenti per la risposta alle chiamate dipende anche dal flusso di lavoro: i flussi di lavoro vengono usati per configurare sia l'orario di ufficio (i giorni della settimana e le ore del giorno in cui gli agenti sono disponibili per rispondere alle chiamate) che le festività (i giorni in cui non vi sono agenti disponibili per rispondere alle chiamate). Ogni volta che si compone un numero di telefono appartenente all'applicazione Response Group, si chiama essenzialmente un flusso di lavoro di Response Group. 
+> Un flusso di lavoro di Response Group è fondamentalmente un insieme di istruzioni che determina le Skype for Business Server quando un utente compone un determinato numero di telefono. A tale scopo, ogni flusso di lavoro è associato in modo univoco a un numero di telefono. Quando un utente chiama tale numero, il flusso di lavoro determina la modalità di gestione della chiamata. Ad esempio, il flusso di lavoro potrebbe causare l'instradamento della chiamata a una serie di domande IVR (Interactive Voice Response) che richiedono al chiamante di immettere informazioni aggiuntive ("Premere 1 per il supporto hardware. Premere 2 per il supporto software."). In alternativa, il flusso di lavoro potrebbe causare l'inserimento della chiamata in una coda e mettere in attesa il chiamante finché un agente non sarà disponibile per rispondere alla chiamata. La disponibilità degli agenti per la risposta alle chiamate dipende anche dal flusso di lavoro: i flussi di lavoro vengono usati per configurare sia l'orario di ufficio (i giorni della settimana e le ore del giorno in cui gli agenti sono disponibili per rispondere alle chiamate) che le festività (i giorni in cui non vi sono agenti disponibili per rispondere alle chiamate). Ogni volta che si compone un numero di telefono appartenente all'applicazione Response Group, si chiama essenzialmente un flusso di lavoro di Response Group. 
 
 Sebbene gli URI dei flussi di lavoro non vengano visualizzati nel Rapporto di utilizzo di Response Group, è comunque possibile visualizzare le statistiche di utilizzo per un singolo flusso di lavoro, operazione che è spesso molto utile. Si supponga, ad esempio, di aver lanciato di recente una nuova campagna pubblicitaria e di essere curioso di sapere se gli utenti stanno chiamando per chiedere informazioni sul prodotto in questione. Se un flusso di lavoro di Response Group è stato associato al numero di telefono indicato per la campagna pubblicitaria, è possibile verificare facilmente se e quante persone stanno componendo tale numero.
 

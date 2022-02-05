@@ -1,24 +1,19 @@
 ---
 title: Update Item
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: b1c15c56-cdae-4f3e-838a-52f0940cf729
-description: "Riepilogo: informazioni sull'operazione Update Item, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 4140909786c3144dbc043568a5ca6aa2995a0720
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60845399"
+description: 'Riepilogo: informazioni sull''operazione Update Item, che fa parte di Item Service. Item Service fa parte dell''API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.'
 ---
+
 # <a name="update-item"></a>Update Item
  
 **Riepilogo:** Informazioni sull'operazione Update Item, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
@@ -32,7 +27,7 @@ Update Item aggiorna un elemento specifico nel repository.
 
 |**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|PUT  <br/> |https:// \<portal\> /QoERepositoryService/repository/item/{itemId}  <br/> |HTTP/1.1  <br/> |
+|PUT  <br/> |\<portal\>https:///QoERepositoryService/repository/item/{itemId}  <br/> |HTTP/1.1  <br/> |
    
  **Parametri URI** - Nessuno.
   
@@ -51,9 +46,9 @@ Payload di richiesta di esempio:
 
  *contenuto*  Dati in formato JSON da archiviare come nuovo contenuto di un elemento secondario esistente. Tecnicamente, un repository può archiviare qualsiasi contenuto di qualsiasi schema, ma quando viene utilizzato per call quality dashboard, deve essere un report o una query. *type*  Specifica sempre "application/json" per Call Quality Dashboard.
   
- **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato:** un'operazione riuscita restituisce il codice di stato 204 (Nessun contenuto). Se non viene trovato un ID elemento specificato, viene restituito il codice di stato 404 (Non trovato).
+ **Codice di stato** : un'operazione riuscita restituisce il codice di stato 204 (Nessun contenuto). Se non viene trovato un ID elemento specificato, viene restituito il codice di stato 404 (Non trovato).
   
 > [!IMPORTANT]
 > "Nessun contenuto" non è uno stato di errore. Significa che una risposta non ha restituito nulla nel corpo (al contrario, 200 OK restituisce il contenuto in Body). Indica che l'elemento è stato aggiornato correttamente. 

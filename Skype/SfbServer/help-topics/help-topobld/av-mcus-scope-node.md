@@ -1,27 +1,22 @@
 ---
 title: Nodo dell'ambito delle unità MCU AV
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AvMcusScopeNode
+  - ms.lync.tb.AvMcusScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 76edf3b8-10c6-4c61-bbef-395f56d298ed
-description: "Nel nodo Pool A/V Conferencing vengono elencati i pool A/V Conferencing della propria topologia. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: 8a38a3d980750aeb684a1306acf0e065e5fe24dd
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60863683"
+description: 'Nel nodo Pool A/V Conferencing vengono elencati i pool A/V Conferencing della propria topologia. È possibile eseguire l''azione seguente:'
 ---
+
 # <a name="av-mcus-scope-node"></a>Nodo dell'ambito delle unità MCU AV
  
 Nel nodo **Pool A/V Conferencing** vengono elencati i pool A/V Conferencing della propria topologia. È possibile eseguire l'azione seguente:

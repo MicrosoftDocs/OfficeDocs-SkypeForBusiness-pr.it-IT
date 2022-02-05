@@ -1,24 +1,19 @@
 ---
 title: Gestire gli annunci di partecipazione e di lasciare conferenze in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: cb09f9c2-c6dc-4083-b45a-8b6773341373
 description: 'Riepilogo: informazioni su come gestire gli annunci di partecipazione e di lasciare conferenze Skype for Business Server.'
-ms.openlocfilehash: ee624ee347bb52f4bbdf4fbfae42f5303c8b6a54
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837668"
 ---
+
 # <a name="manage-conference-join-and-leave-announcements-in-skype-for-business-server"></a>Gestire gli annunci di partecipazione e di lasciare conferenze in Skype for Business Server
  
 **Riepilogo:** Informazioni su come gestire gli annunci di partecipazione e di lasciare conferenze in Skype for Business Server.
@@ -38,7 +33,7 @@ Quando gli utenti con accesso remoto aderiscono o escono da una conferenza, il a
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo Cs-ServerAdministrator o CsAdministrator.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 3. Eseguire il comando seguente al prompt:
     

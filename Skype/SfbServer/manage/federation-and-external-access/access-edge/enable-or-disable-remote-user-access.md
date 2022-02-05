@@ -1,27 +1,23 @@
 ---
 title: Abilitare o disabilitare l'accesso utente remoto
-ms.reviewer: ''
-ms:assetid: cd9d3ddc-4839-457a-86d9-b15413e74002
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg182586(v=OCS.15)
-ms:contentKeyID: 48185660
+ms.reviewer: null
+'ms:assetid': cd9d3ddc-4839-457a-86d9-b15413e74002
+'ms:mtpsurl': 'https://technet.microsoft.com/en-us/library/Gg182586(v=OCS.15)'
+'ms:contentKeyID': 48185660
 mtps_version: v=OCS.15
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
-description: Se si abilita l'accesso degli utenti remoti per gli utenti remoti, gli utenti remoti supportati si connettono tramite Internet e non devono connettersi utilizzando una VPN per collaborare con gli utenti interni tramite Skype for Business Server.
-ms.openlocfilehash: 8ff48e9fd10a9b5bad6cf1e7ccebebb87bc7ed69
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60853040"
+description: 'Se si abilita l''accesso degli utenti remoti per gli utenti remoti, gli utenti remoti supportati si connettono tramite Internet e non devono connettersi utilizzando una VPN per collaborare con gli utenti interni tramite Skype for Business Server.'
 ---
+
+
 # <a name="enable-or-disable-remote-user-access-in-skype-for-business-server"></a>Abilitare o disabilitare l'accesso utente remoto in Skype for Business Server
 
 Gli utenti remoti sono utenti dell'organizzazione che dispongono di un'identità Active Directory permanente nell'organizzazione. Gli utenti remoti spesso a Skype for Business Server dall'esterno della rete utilizzando una rete privata virtuale (VPN) quando non sono connessi alla rete dell'organizzazione. Tra gli utenti remoti sono inclusi i dipendenti che lavorano dalla propria abitazione o in viaggio e altri lavoratori remoti, ad esempio fornitori considerati attendibili a cui sono state concesse credenziali aziendali. Se si abilita l'accesso degli utenti remoti per gli utenti remoti, gli utenti remoti supportati si connettono tramite Internet e non devono connettersi utilizzando una VPN per collaborare con gli utenti interni tramite Skype for Business Server.
@@ -30,7 +26,7 @@ Per supportare l'accesso degli utenti remoti, è necessario abilitarlo. Quando s
 
 
 > [!NOTE]  
-> Abilitando l'accesso degli utenti remoti, si specifica soltanto che i server che eseguono il servizio Access Edge supportano le comunicazioni con gli utenti remoti, ma questi ultimi non possono utilizzare la messaggistica istantanea o partecipare a conferenze nell'organizzazione finché non si configura almeno un criterio per la gestione dell'utilizzo dell'accesso degli utenti remoti. Skype for Business Server impostazioni dei criteri applicate a un livello di criteri possono sostituire le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Skype for Business Server è la seguente: i criteri utente (maggiore influenza) sostituiscono i criteri sito e i criteri sito sostituiscono i criteri globali (minore influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto. Per informazioni dettagliate sulla configurazione dei criteri per l'utilizzo dell'accesso utente [remoto,](../external-access-policies/configure-policies-to-control-remote-user-access.md)vedere Configure policies to control remote user access in Skype for Business Server .
+> Abilitando l'accesso degli utenti remoti, si specifica soltanto che i server che eseguono il servizio Access Edge supportano le comunicazioni con gli utenti remoti, ma questi ultimi non possono utilizzare la messaggistica istantanea o partecipare a conferenze nell'organizzazione finché non si configura almeno un criterio per la gestione dell'utilizzo dell'accesso degli utenti remoti. Skype for Business Server impostazioni dei criteri applicate a un livello di criteri possono sostituire le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Skype for Business Server è la seguente: i criteri utente (maggiore influenza) sostituiscono i criteri sito e i criteri sito sostituiscono i criteri globali (minore influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto. Per informazioni dettagliate sulla configurazione dei criteri per l'utilizzo dell'accesso utente remoto, vedere [Configure policies to control remote user access in Skype for Business Server](../external-access-policies/configure-policies-to-control-remote-user-access.md).
 
 
 ## <a name="to-enable-or-disable-remote-user-access-for-your-organization"></a>Per abilitare o disabilitare l'accesso degli utenti remoti per l'organizzazione

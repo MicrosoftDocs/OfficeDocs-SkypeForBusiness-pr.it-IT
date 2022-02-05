@@ -1,27 +1,22 @@
 ---
 title: Abilitare o disabilitare l'accesso utente anonimo
-ms.reviewer: ''
-ms:assetid: f10c19e6-b6f9-4d26-9923-0165f36e4af8
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ619192(v=OCS.15)
-ms:contentKeyID: 49733872
+ms.reviewer: null
+'ms:assetid': f10c19e6-b6f9-4d26-9923-0165f36e4af8
+'ms:mtpsurl': 'https://technet.microsoft.com/en-us/library/JJ619192(v=OCS.15)'
+'ms:contentKeyID': 49733872
 mtps_version: v=OCS.15
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 description: Come abilitare e disabilitare l'accesso utente anonimo in Skype for Business Server.
-ms.openlocfilehash: 8010261ad63810ff4227b3cf38983067f80c6f7c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60848459"
 ---
+
 # <a name="enable-or-disable-anonymous-user-access-in-skype-for-business-server"></a>Abilitare o disabilitare l'accesso utente anonimo in Skype for Business Server
 
 Gli utenti anonimi sono utenti che non dispongono di un account utente in Servizi di dominio Active Directory dell'organizzazione o in un dominio federato supportato, ma possono essere invitati a partecipare in remoto a una conferenza locale. Consentendo la partecipazione anonima alle riunioni, si consente agli utenti anonimi, ovvero agli utenti la cui identità viene verificata solo mediante la chiave riunione o conferenza, di partecipare alle riunioni. A tale scopo, è necessario abilitare la partecipazione anonima per la propria organizzazione.
@@ -52,7 +47,7 @@ Se successivamente si desidera impedire temporaneamente o definitivamente l'acce
 
 ## <a name="enabling-or-disabling-anonymous-user-access-by-using-windows-powershell-cmdlets"></a>Abilitazione o disabilitazione dell'accesso utente anonimo tramite Windows PowerShell cmdlet
 
-È possibile gestire l'accesso utente anonimo utilizzando Windows PowerShell e il cmdlet **Set-CsAccessEdgeConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+È possibile gestire l'accesso utente anonimo utilizzando Windows PowerShell e il cmdlet **Set-CsAccessEdgeConfiguration**. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
 
 ## <a name="to-enable-anonymous-user-access"></a>Per abilitare l'accesso utente anonimo
 

@@ -1,27 +1,22 @@
 ---
 title: Utenti Nuovo utente di Lync Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.UserNew
+  - ms.lync.lscp.UserNew
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 23408002-f83c-4b8a-ac65-6fb0e6bc414e
-description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 86e0fae5eeaab3715a08a3331b9591585bc701e2
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60852310"
+description: 'Per saperne di più: fare clic sul collegamento all''attività che si desidera eseguire.'
 ---
+
 # <a name="users-new-lync-server-user"></a>Utenti: nuovo utente di Lync Server
 
 Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
@@ -52,4 +47,4 @@ Per saperne di più: fare clic sul collegamento all'attività che si desidera es
 
 - [Assegnare criteri di chat persistente per utente](/previous-versions/office/lync-server-2013/lync-server-2013-assign-a-per-user-persistent-chat-policy)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015](../../manage/manage.md).

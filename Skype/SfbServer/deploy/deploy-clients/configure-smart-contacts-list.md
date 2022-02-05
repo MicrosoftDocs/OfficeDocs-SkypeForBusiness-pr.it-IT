@@ -1,29 +1,24 @@
 ---
 title: Configurare l'elenco contatti smart nei Skype for Business client
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 4eecb5f7-3ef7-4582-a6cb-9f4aa068338d
-description: 'Riepilogo: informazioni su come attivare la funzionalità Elenco contatti smart nel client Skype for Business.'
-ms.openlocfilehash: 422972f017a1604312f1e6b75bbe18bb4c5cbc87
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60860903"
+description: 'Riepilogo: informazioni su come attivare la funzionalità Elenco contatti smart nel client Skype for Business smart.'
 ---
+
 # <a name="configure-smart-contacts-list-in-skype-for-business-clients"></a>Configurare l'elenco contatti smart nei Skype for Business client
 
-**Riepilogo:** Informazioni su come attivare la funzionalità Elenco contatti smart nel client Skype for Business.
+**Riepilogo:** Informazioni su come attivare la funzionalità Elenco contatti smart nel client Skype for Business smart.
 
-La funzionalità Elenco contatti smart consente la popolamento automatico degli elenchi di contatti per gli utenti finali. Al primo utilizzo Skype for Business, gli utenti visualizzano automaticamente il manager e altre persone nel team. Questa funzionalità è attivata per impostazione predefinita per gli utenti di Microsoft 365 e Office 365, ma è necessario abilitarla in modo esplicito per gli utenti locali configurando l'impostazione dei criteri client.
+La funzionalità Elenco contatti smart consente la popolamento automatico degli elenchi di contatti per gli utenti finali. Al primo utilizzo Skype for Business, gli utenti visualizzano automaticamente il manager e altre persone nel team. Questa funzionalità è attivata per impostazione predefinita per gli utenti Microsoft 365 e Office 365, ma è necessario abilitare esplicitamente questa funzionalità per gli utenti locali configurando l'impostazione dei criteri client.
 
 Quando si configura questa funzionalità, tenere presente quanto segue:
 
@@ -72,7 +67,7 @@ $x=New-CsClientPolicyEntry -Name TagContactsInClientAutoPopulatedGroup -Value $F
 Set-CsClientPolicy -Identity Global -PolicyEntry @{Add=$x}
 ```
 
-È inoltre necessario impostare il parametro AddressBookAvailability per il criterio corrispondente su WebSearchOnly. Per ulteriori informazioni, vedere [Set-CsClientPolicy.](/powershell/module/skype/set-csclientpolicy?view=skype-ps) 
+È inoltre necessario impostare il parametro AddressBookAvailability per il criterio corrispondente su WebSearchOnly. Per ulteriori informazioni, vedere [Set-CsClientPolicy](/powershell/module/skype/set-csclientpolicy?view=skype-ps). 
 
 ### <a name="troubleshoot"></a>Risoluzione dei problemi
 
@@ -84,6 +79,6 @@ Se l'elenco contatti smart non funziona come previsto, verificare quanto segue:
 
 - Raccogliere Skype for Business log del client su un nuovo utente per un'ulteriore analisi.
 
-- Verificare che l Skype for Business'interfaccia utente del client non visualizza un messaggio che indica che non è in grado di connettersi alla Rubrica. Per verificare la connettività della Rubrica, eseguire una ricerca per un utente nella barra di Skype for Business di ricerca del client.
+- Verificare che l Skype for Business'interfaccia utente del client non visualizza un messaggio che indica che non è in grado di connettersi alla Rubrica. Per verificare la connettività della Rubrica, eseguire una ricerca per un utente nella barra Skype for Business di ricerca del client.
 
 - I problemi di replica di Servizi di dominio Active Directory potrebbero causare i contatti non risolti quando un utente accede per la prima volta a Skype for Business.

@@ -1,7 +1,7 @@
 ---
 title: Teams di criteri per enti pubblici
 author: serdars
-ms.author: v-mahoffman
+ms.author: serdars
 manager: serdars
 ms.reviewer: aaglick
 ms.topic: article
@@ -9,21 +9,16 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 ms.collection:
-- M365-collaboration
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
-f1.keywords: ''
-ms.custom: ''
+  - Microsoft Teams
+f1.keywords: null
+ms.custom: null
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare e gestire i Teams dei criteri per l'organizzazione governativa.
-ms.openlocfilehash: 02680b18d32e62a8a559ac6d2a30708e5aa05497
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60749595"
 ---
+
 # <a name="teams-policy-packages-for-government"></a>Teams di criteri per enti pubblici
 
 > [!NOTE]

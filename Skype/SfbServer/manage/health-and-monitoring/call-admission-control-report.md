@@ -1,24 +1,19 @@
 ---
 title: Rapporto controllo di ammissione di chiamata Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: ea4b0c9f-7f93-4b8a-b901-01e1636c44fb
-description: 'Riepilogo: informazioni sui Rapporti di controllo di ammissione di chiamata utilizzati in Skype for Business Server.'
-ms.openlocfilehash: bb980dfa132778e1507e26359beca3679a94893a
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60849899"
+description: 'Riepilogo: informazioni sui rapporti di controllo di ammissione di chiamata utilizzati Skype for Business Server.'
 ---
+
 # <a name="call-admission-control-report-in-skype-for-business-server"></a>Rapporto controllo di ammissione di chiamata Skype for Business Server
  
 **Riepilogo:** Informazioni sui Rapporti di controllo di ammissione di chiamata utilizzati in Skype for Business Server.

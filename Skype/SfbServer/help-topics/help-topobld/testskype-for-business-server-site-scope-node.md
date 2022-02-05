@@ -1,27 +1,22 @@
 ---
 title: Test - Nodo di ambito del sito di Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.SiteScopeNode
+  - ms.lync.tb.SiteScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 64392c68-998d-4fb7-9286-4b0c0364dab2
 description: 'In questo nodo viene visualizzato uno dei siti definiti nella topologia. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: fcbdaf12cb38cc60cb00d3ee70bb83fdf2a3080f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60830030"
 ---
+
 # <a name="test---skype-for-business-server-site-scope-node"></a>Test - Nodo di ambito del sito di Skype for Business Server
  
 In questo nodo viene visualizzato uno dei siti definiti nella topologia. È possibile eseguire le operazioni seguenti: 

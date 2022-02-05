@@ -1,27 +1,22 @@
 ---
 title: Aggiungere l'FQDN del pool di applicazioni attendibili
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddExternalApplicationPoolPage
+  - ms.lync.tb.AddExternalApplicationPoolPage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 5d065268-a694-49a1-b285-9be80a09995c
 description: 'Per definire un nome di dominio completo (FQDN) per il pool di applicazioni attendibili, specificare quanto segue:'
-ms.openlocfilehash: 9ad9797dd49af2c5a267bb8e0c581b3a5bcb97ec
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60844429"
 ---
+
 # <a name="add-trusted-application-pool-fqdn"></a>Aggiungere nome di dominio completo (FQDN) del pool di applicazioni attendibili
  
 Per definire un nome di dominio completo (FQDN) per il pool di applicazioni attendibili, specificare quanto segue:

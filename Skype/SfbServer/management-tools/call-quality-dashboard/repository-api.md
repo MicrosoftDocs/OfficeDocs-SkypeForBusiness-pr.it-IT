@@ -1,25 +1,20 @@
 ---
 title: API repository per call quality dashboard (CQD) in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d53e990f-1c5f-46d1-9eb1-8396782c2753
-description: "Riepilogo: informazioni sull'API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: e050ecd4367f2d63febf376e42f435c5ec6850f8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60849889"
+description: 'Riepilogo: informazioni sull''API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
 ---
+
 # <a name="repository-api-for-call-quality-dashboard-cqd-in-skype-for-business-server"></a>API repository per call quality dashboard (CQD) in Skype for Business Server
  
 **Riepilogo:** Informazioni sull'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
@@ -32,7 +27,7 @@ L'API repository offre un'interfaccia di accesso ai dati al database repository.
   
 L'API di repository è costituita da tre servizi generali: 
   
-- [Servizio utente per CQD-](user-service.md) per l'accesso agli utenti.
+- [Servizio utente per CQD](user-service.md) - per l'accesso agli utenti.
     
 - [Item Service for Call Quality Dashboard (CQD)](item-service.md) - Per accedere agli elementi e ai contenuti archiviati in Elementi.
     
@@ -50,7 +45,7 @@ Call Quality Dashboard usa l'API repository per gestire le informazioni seguenti
     
   **Supporto cors (Cross-Origin Resource Sharing) per l'API repository**
   
-L'API repository supporta cors (Cross-Origin Resource Sharing). CORS è una funzionalità HTTP che consente a un'applicazione Web in esecuzione in un dominio di accedere alle risorse in un altro dominio. I Web browser implementano [](https://www.w3.org/Security/wiki/Same_Origin_Policy) una restrizione di sicurezza nota come criterio di stessa origine che impedisce a una pagina Web di chiamare API in un dominio diverso. CORS offre un modo sicuro per consentire a un dominio (il dominio di origine) di chiamare le API in un altro dominio. Per informazioni [dettagliate su CORS,](https://www.w3.org/TR/cors/) vedere la specifica CORS.
+L'API repository supporta cors (Cross-Origin Resource Sharing). CORS è una funzionalità HTTP che consente a un'applicazione Web in esecuzione in un dominio di accedere alle risorse in un altro dominio. I Web browser implementano una restrizione di [](https://www.w3.org/Security/wiki/Same_Origin_Policy) sicurezza nota come criterio di stessa origine che impedisce a una pagina Web di chiamare API in un dominio diverso. CORS offre un modo sicuro per consentire a un dominio (il dominio di origine) di chiamare le API in un altro dominio. Per informazioni [dettagliate su CORS](https://www.w3.org/TR/cors/) , vedere la specifica CORS.
   
  **Abilitazione di CORS per l'API repository**
   

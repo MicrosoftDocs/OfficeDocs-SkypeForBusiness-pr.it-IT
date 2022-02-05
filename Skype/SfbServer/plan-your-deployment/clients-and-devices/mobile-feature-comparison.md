@@ -1,7 +1,7 @@
 ---
 title: Confronto delle funzionalità dei client mobili per Skype for Business
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 ms.reviewer: PhillipGarding
 manager: serdars
 ms.date: 2/16/2018
@@ -9,26 +9,21 @@ audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: b2c950c9-76a5-400a-b146-9b1a22790c12
-description: 'Riepilogo: esaminare il supporto delle funzionalità per il client mobile durante la pianificazione di Skype for Business Server.'
-ms.openlocfilehash: f1bbb046827ef762f5def1d532089e9621c32b28
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60834124"
+description: 'Riepilogo: esaminare il supporto delle funzionalità per il client mobile durante la pianificazione Skype for Business Server.'
 ---
+
 # <a name="mobile-client-feature-comparison-for-skype-for-business"></a>Confronto delle funzionalità dei client mobili per Skype for Business
  
-**Riepilogo:** Esaminare il supporto delle funzionalità per il client per dispositivi mobili durante la pianificazione di Skype for Business Server.
+**Riepilogo:** Esaminare il supporto delle funzionalità per il client mobile durante la pianificazione Skype for Business Server.
   
-In questo articolo vengono confrontate le funzionalità Skype for Business client mobili e il client desktop Skype for Business nelle categorie seguenti:
+In questo articolo vengono confrontate le funzionalità tra Skype for Business client mobili e il client desktop Skype for Business nelle categorie seguenti:
   
 - Accesso, notifiche push e funzionalità generali
     
@@ -56,7 +51,7 @@ Nelle tabelle seguenti sono elencate le funzionalità disponibili per Skype for 
 > Per informazioni e risorse online per gli utenti finali, vedere [Discover Skype for Business](https://go.microsoft.com/fwlink/p/?LinkId=528686). 
   
 > [!NOTE]
-> Per confrontare le funzionalità disponibili in altri client Skype for Business desktop, vedere [Desktop client feature comparison for Skype for Business](desktop-feature-comparison.md). 
+> Per confrontare le funzionalità disponibili in altri client Skype for Business, vedere [Desktop client feature comparison for Skype for Business](desktop-feature-comparison.md). 
 
 > [!NOTE]
 > Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
@@ -104,7 +99,7 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
 |Pubblicare lo stato in base alle informazioni sulla disponibilità del calendario  <br/> |&#x2714; &#x2776; ||||
 |Impostare lo stato di presenza manuale (ad esempio Occupato, Non disturbare e così via)  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
    
- &#x2776; Skype for Business i client mobili non aggiornano la presenza di un utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se un utente client per dispositivi mobili è anche connesso al client desktop Skype for Business, il client desktop aggiorna la presenza dell'utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se l'utente ha eseguito l'accesso solo a un client per dispositivi mobili, la presenza dell'utente non viene aggiornato in base alle informazioni del calendario sulla disponibilità.
+ &#x2776; Skype for Business i client mobili non aggiornano la presenza di un utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se un utente del client per dispositivi mobili è anche connesso al client desktop Skype for Business, il client desktop aggiorna la presenza dell'utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se l'utente ha eseguito l'accesso solo a un client per dispositivi mobili, la presenza dell'utente non viene aggiornato in base alle informazioni del calendario sulla disponibilità.
   
 ## <a name="contacts-and-contact-groups-support"></a>Supporto per contatti e gruppi di contatti
 
@@ -185,7 +180,7 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
   
  &#x2777; richiede una connessione WiFi per impostazione predefinita.
  
- &#x2778; la visualizzazione di video incorporati in PowerPoint presentazioni non è supportata.
+ &#x2778; la visualizzazione di video incorporati nelle PowerPoint non è supportata.
   
 ## <a name="telephony-support"></a>Supporto per telefonia
 
@@ -223,7 +218,7 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
 |Condurre chiamate con più utenti esterni.  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Usare Chiama tramite ufficio per raggiungere un contatto federato sul proprio telefono cellulare chiamando il numero di ufficio pubblicato &#x2776;            <br/> ||&#x2714;|&#x2714;|&#x2714;|
    
- &#x2776; Per impostazione predefinita, agli utenti federati viene assegnata la relazione di privacy Contatti esterni. Per poter raggiungere un contatto federato sul proprio cellulare chiamando il numero di ufficio pubblicato, il contatto federato deve assegnare manualmente la relazione di privacy Colleghi.
+ &#x2776; per impostazione predefinita, agli utenti federati viene assegnata la relazione di privacy Contatti esterni. Per poter raggiungere un contatto federato sul proprio cellulare chiamando il numero di ufficio pubblicato, il contatto federato deve assegnare manualmente la relazione di privacy Colleghi.
   
 ## <a name="address-book-integration"></a>Integrazione della rubrica
 
@@ -247,7 +242,7 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
 
 Questa tabella illustra le funzionalità che richiedono il supporto per l'autenticazione moderna.
   
-L'autenticazione moderna richiede anche una topologia descritta in [Skype for Business topologie supportate con l'autenticazione moderna.](../../plan-your-deployment/modern-authentication/topologies-supported.md)
+L'autenticazione moderna richiede anche una topologia descritta in [Skype for Business topologie supportate con l'autenticazione moderna](../../plan-your-deployment/modern-authentication/topologies-supported.md).
   
 
  | Funzionalità/funzionalità  | Skype for Business client desktop  | Windows Phone  | iOS  | Android |

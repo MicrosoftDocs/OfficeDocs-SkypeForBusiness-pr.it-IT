@@ -1,36 +1,31 @@
 ---
 title: Flusso di lavoro Response Group
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.RgsWorkFlowMain
+  - ms.lync.lscp.RgsWorkFlowMain
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: e4ee8abb-e1e5-413c-919d-cd3fb7193840
-description: I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. I flussi di lavoro di Response Group definiscono le azioni che vengono eseguite quando l'applicazione Response Group riceve una chiamata telefonica.
-ms.openlocfilehash: 0683cad93475ff23bca20acd6f90cee6a60139f0
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60838718"
+description: 'I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. I flussi di lavoro di Response Group definiscono le azioni che vengono eseguite quando l''applicazione Response Group riceve una chiamata telefonica.'
 ---
+
 # <a name="response-groups-workflow"></a>Flusso di lavoro Response Group
 
 I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. I flussi di lavoro di Response Group definiscono le azioni che vengono eseguite quando l'applicazione Response Group riceve una chiamata telefonica.
 
-Nella **pagina Flusso di lavoro** di Response Group viene visualizzato un elenco di tutti i flussi di lavoro di Response Group definiti per  -   l'organizzazione.
+Nella **pagina Response** **GroupWorkflow** -  viene visualizzato un elenco di tutti i flussi di lavoro di Response Group definiti per l'organizzazione.
 
 ## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
 
-È possibile eseguire le attività seguenti dalla pagina **Flusso di lavoro di Response Group:**  -  
+È possibile eseguire le attività seguenti dalla **pagina Response** **GroupWorkflow** - :
 
 - Creare o modificare un flusso di lavoro di un gruppo di risposta
 

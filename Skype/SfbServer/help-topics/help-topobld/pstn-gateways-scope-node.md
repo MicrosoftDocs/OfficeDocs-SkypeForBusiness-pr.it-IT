@@ -1,27 +1,22 @@
 ---
 title: Nodo dell'ambito dei gateway PSTN
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.PstnGatewaysScopeNode
+  - ms.lync.tb.PstnGatewaysScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 7a11bae5-9c0e-4eea-9754-2e918e19eeff
-description: "Nel nodo Gateway PSTN sono elencati i gateway PSTN (Public Switched Telephone Network) della topologia. È possibile eseguire l'operazione seguente:"
-ms.openlocfilehash: 2fc89412cdd6e18651c0cf41582697ae0306c84e
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60832180"
+description: 'Nel nodo Gateway PSTN sono elencati i gateway PSTN (Public Switched Telephone Network) della topologia. È possibile eseguire l''operazione seguente:'
 ---
+
 # <a name="pstn-gateways-scope-node"></a>Nodo dell'ambito dei gateway PSTN
  
 Nel nodo **Gateway PSTN** sono elencati i gateway PSTN (Public Switched Telephone Network) della topologia. È possibile eseguire l'operazione seguente:

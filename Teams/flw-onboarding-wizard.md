@@ -1,5 +1,5 @@
 ---
-title: Usare l'onboarding guidato Frontline Worker per far entrare in funzione la forza lavoro in prima linea
+title: Usare l'onboarding guidato di Frontline Worker per rendere operativa la forza lavoro in prima linea
 author: lanachin
 ms.author: v-lanachin
 ms.reviewer: aaglick
@@ -11,42 +11,37 @@ search.appverid: MET150
 description: Informazioni su come usare l'onboarding guidato Frontline Worker per distribuire rapidamente un'esperienza Teams personalizzata per i dipendenti e i responsabili in prima linea nell'organizzazione.
 ms.localizationpriority: medium
 ms.collection:
-- M365-collaboration
-- Teams_ITAdmin_FLW
+  - M365-collaboration
+  - Teams_ITAdmin_FLW
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 97f8994ecc5c7aef610e040f30b43803f03c6844
-ms.sourcegitcommit: efea3b3b9dceb1a1d82eb7a09a5104dcd6df8abf
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993192"
+  - Microsoft Teams
 ---
-# <a name="use-the-frontline-worker-onboarding-wizard-to-get-your-frontline-workforce-up-and-running"></a>Usare l'onboarding guidato Frontline Worker per far entrare in funzione la forza lavoro in prima linea
+
+# <a name="use-the-frontline-worker-onboarding-wizard-to-get-your-frontline-workforce-up-and-running"></a>Usare l'onboarding guidato di Frontline Worker per rendere operativa la forza lavoro in prima linea
 
 ## <a name="overview"></a>Panoramica
 
-L'onboarding guidato Frontline Worker nel interfaccia di amministrazione di Microsoft 365 semplifica l'onboarding dei lavoratori in prima linea all'organizzazione. La procedura guidata consente di distribuire rapidamente un'esperienza in Microsoft Teams personalizzata per la forza lavoro in prima linea. Usando la procedura guidata, è possibile avviare facilmente la distribuzione pilota di Teams per i lavoratori in prima linea nell'organizzazione.
+L'onboarding guidato Frontline Worker nel interfaccia di amministrazione di Microsoft 365 semplifica l'onboarding dei lavoratori in prima linea all'organizzazione. La procedura guidata consente di distribuire rapidamente un'esperienza Microsoft Teams personalizzata per la forza lavoro in prima linea. Usando la procedura guidata, è possibile avviare facilmente la distribuzione pilota di Teams per i lavoratori in prima linea nell'organizzazione.
 
-La procedura guidata configura un team per i dipendenti in prima linea e assegna licenze [e](manage-policy-packages.md) pacchetti di criteri a ogni membro del team. È possibile creare il team da zero o da un modello [di team](get-started-with-teams-templates-in-the-admin-console.md)e quindi aggiungere utenti e assegnare ruoli. Il ruolo determina il pacchetto di criteri assegnato dalla procedura guidata a ogni utente.
+La procedura guidata configura un team per i dipendenti in prima linea e assegna [licenze e pacchetti](manage-policy-packages.md) di criteri a ogni membro del team. È possibile creare il team da zero o da un modello [di team](get-started-with-teams-templates-in-the-admin-console.md) e quindi aggiungere utenti e assegnare ruoli. Il ruolo determina il pacchetto di criteri assegnato dalla procedura guidata a ogni utente.
 
 Attualmente, la procedura guidata supporta l'aggiunta di 100 utenti ogni volta che viene eseguita. Stiamo lavorando per aumentare il numero di utenti per esecuzione a breve. Torna qui per gli aggiornamenti più recenti.
 
-La procedura guidata è disponibile per tutte le organizzazioni con almeno una [licenza F.](https://www.microsoft.com/microsoft-365/enterprise/frontline) È possibile eseguire la procedura guidata tutte le volte che è necessario implementare Teams alla forza lavoro in prima linea in posizioni o siti diversi all'interno dell'organizzazione.
+La procedura guidata è disponibile per tutte le organizzazioni con almeno una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline). È possibile eseguire la procedura guidata tutte le volte che è necessario implementare il Teams alla forza lavoro in prima linea in posizioni o siti diversi all'interno dell'organizzazione.
 
 Guarda questo breve video per una panoramica su come eseguire la procedura guidata per l'onboard della forza lavoro in prima linea.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWN6oh]
 
 > [!NOTE]
-> Questa procedura guidata consente di accedere rapidamente alla forza lavoro in prima linea per Teams l'interfaccia di amministrazione di Microsoft 365. Per informazioni su come distribuire i Teams alla forza lavoro in prima linea usando gli script, vedere Come eseguire il provisioning Teams su larga scala per [Frontline Workers.](flw-scripted-deployment.md)
+> Questa procedura guidata consente di eseguire rapidamente l'onboard della forza lavoro in prima linea per Teams l'interfaccia di amministrazione di Microsoft 365. Per informazioni su come distribuire i Teams alla forza lavoro in prima linea usando gli script, vedere Come eseguire il provisioning Teams su larga scala per [Frontline Workers](flw-scripted-deployment.md).
 
 > [!NOTE]
 > La procedura guidata non supporta ancora [le etichette di](sensitivity-labels.md) riservatezza. Se l'organizzazione richiede etichette di riservatezza per creare un team, la procedura guidata non verrà visualizzata nel interfaccia di amministrazione di Microsoft 365.
 
 ## <a name="run-the-wizard"></a>Eseguire la procedura guidata
 
-1. Nel riquadro di spostamento sinistro del [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/)scegliere **Imposta.** Passare alla sezione **App e posta** elettronica e quindi, in Attiva e attiva la forza lavoro in prima linea, selezionare **Visualizza.**  Qui sono disponibili altre informazioni sulle funzionalità offerte Microsoft 365 per i dipendenti in prima linea.
+1. Nel riquadro di spostamento sinistro del [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) scegliere **Imposta**. Passare alla sezione **App e posta** elettronica e quindi **, in Attiva** e attiva la forza lavoro in prima linea, selezionare **Visualizza**. Qui sono disponibili altre informazioni sulle funzionalità offerte Microsoft 365 per i dipendenti in prima linea.
 
     :::image type="content" source="media/flw-onboarding-wizard-get-started.png" alt-text="Screenshot della pagina dei dettagli per l'esperienza di onboarding di Frontline Worker nel interfaccia di amministrazione di Microsoft 365" lightbox="media/flw-onboarding-wizard-get-started.png":::
 
@@ -68,11 +63,11 @@ Guarda questo breve video per una panoramica su come eseguire la procedura guida
 
     Selezionare quindi una posizione e assegnare una licenza Microsoft 365 F a ogni membro del team. Se non si hanno licenze sufficienti, è possibile selezionare Acquista **altre licenze** per acquistare altre licenze.  
 
-6. Scegliere chi riceve il messaggio di posta elettronica di stato al termine della procedura guidata. Il messaggio di posta elettronica contiene informazioni sulle operazioni eseguite dalla procedura guidata per la creazione del team, l'aggiunta di membri del team e l'assegnazione di una licenza e un pacchetto di criteri &mdash; a ogni membro del team. Usare queste informazioni per risolvere gli eventuali errori che possono verificarsi.
+6. Scegliere chi riceve il messaggio di posta elettronica di stato al termine della procedura guidata. Il messaggio di posta&mdash; elettronica contiene informazioni sulle operazioni eseguite dalla procedura guidata per creare il team, aggiungere membri del team e assegnare una licenza e un pacchetto di criteri a ogni membro del team. Usare queste informazioni per risolvere gli eventuali errori che possono verificarsi.
 
     :::image type="content" source="media/flw-onboarding-wizard-email-recipients.png" alt-text="Screenshot della pagina Aggiungi destinatari di posta elettronica di stato della procedura guidata" lightbox="media/flw-onboarding-wizard-email-recipients.png":::
 
-7. Rivedere le selezioni e quindi selezionare **Conferma.**
+7. Rivedere le selezioni e quindi selezionare **Conferma**.
 
     :::image type="content" source="media/flw-onboarding-wizard-review-team.png" alt-text="Screenshot della pagina Rivedi team della procedura guidata in cui si esaminano le impostazioni del team" lightbox="media/flw-onboarding-wizard-review-team.png":::
 

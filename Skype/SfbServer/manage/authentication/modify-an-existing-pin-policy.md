@@ -1,25 +1,20 @@
 ---
 title: Modificare un criterio PIN esistente in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 517caaee-3349-4fa6-8d86-e4da3258a445
 description: 'Riepilogo: modificare un criterio PIN esistente in Skype for Business Server.'
-ms.openlocfilehash: a03e192b5dd9b11de17e6c920baee6613312fc84
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60848579"
 ---
+
 # <a name="modify-an-existing-pin-policy-in-skype-for-business-server"></a>Modificare un criterio PIN esistente in Skype for Business Server
  
 **Riepilogo:** Modificare un criterio PIN esistente in Skype for Business Server.

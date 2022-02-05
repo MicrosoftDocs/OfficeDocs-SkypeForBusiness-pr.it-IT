@@ -1,26 +1,21 @@
 ---
 title: Espansione delle impostazioni generali di Mediation Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 4/14/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.MediationServerGeneralSettingsExpander
+  - ms.lync.tb.MediationServerGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 0e0ad9f0-27d5-4975-ae88-0b8ff8a4c514
-ms.openlocfilehash: de4d09db10610bee5f498b07cca6a052b6a79a38
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60852100"
 ---
+
 # <a name="mediation-server-general-settings-expander"></a>Espansione delle impostazioni generali di Mediation Server
  
 

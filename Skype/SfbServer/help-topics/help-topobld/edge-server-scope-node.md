@@ -1,27 +1,22 @@
 ---
 title: Nodo dell'ambito del server perimetrale
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.EdgeServerScopeNode
+  - ms.lync.tb.EdgeServerScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 3f597f6f-c55c-4290-a1cf-3efcc0adfb99
 description: 'In questo nodo vengono mostrati il nome di dominio completo (FQDN) del pool e altre impostazioni di base di questo pool di server perimetrali. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: 95c3e14b0e927859f5421a9f01cfe6b3da781b7a
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60827649"
 ---
+
 # <a name="edge-server-scope-node"></a>Nodo dell'ambito del server perimetrale
  
 In questo nodo vengono mostrati il nome di dominio completo (FQDN) del pool e altre impostazioni di base di questo pool di server perimetrali. È possibile eseguire le operazioni seguenti:

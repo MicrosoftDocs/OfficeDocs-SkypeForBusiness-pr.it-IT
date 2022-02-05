@@ -1,27 +1,22 @@
 ---
-title: Registri di acquisizione della ricerca creati dal servizio di registrazione centralizzato in Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: Log di acquisizione della ricerca creati dal servizio di registrazione centralizzato in Skype for Business Server 2015
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 12/20/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 1b75b218-d84f-47a7-8a0a-b7e016b1cc79
 description: 'Riepilogo: informazioni su come cercare e leggere i registri di acquisizione del servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: a65fac6ffc96088cd1e544ed17914128d040e2b6
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60831920"
 ---
-# <a name="search-capture-logs-created-by-the-centralized-logging-service-in-skype-for-business-server-2015"></a>Registri di acquisizione della ricerca creati dal servizio di registrazione centralizzato in Skype for Business Server 2015
+
+# <a name="search-capture-logs-created-by-the-centralized-logging-service-in-skype-for-business-server-2015"></a>Log di acquisizione della ricerca creati dal servizio di registrazione centralizzato in Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come cercare e leggere i registri di acquisizione del servizio di registrazione centralizzata in Skype for Business Server 2015.
   
@@ -39,7 +34,7 @@ Al termine di ogni ricerca viene eseguito il cmdlet **Sync-CsClsLogging**, che s
   
 Per ottenere i vantaggi più vantaggiosi dal servizio di registrazione centralizzata, è necessaria una buona conoscenza di come configurare la ricerca in modo da restituire solo i messaggi di traccia dal computer e dai registri del pool rilevanti per il problema che si sta ricercando. problemi
   
-Per eseguire le funzioni di ricerca del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator basati sul ruolo RBAC oppure di un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati dall'utente), eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt Windows PowerShell:
+Per eseguire le funzioni di ricerca del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator basati sui ruoli o un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet ( inclusi eventuali ruoli RBAC personalizzati creati dall'utente), eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt Windows PowerShell:
   
 ```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Skype for Business Server 2015 cmdlet"}
@@ -55,7 +50,7 @@ Nel resto di questo argomento viene illustrato come definire una ricerca per ott
   
 ### <a name="to-run-a-basic-search-by-using-the-centralized-logging-service"></a>Per eseguire una ricerca di base utilizzando il servizio di registrazione centralizzata
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 2. Verificare che nella distribuzione presso l'ambito globale sia in esecuzione lo scenario AlwaysOn e digitare quanto segue al prompt dei comandi:
     
@@ -64,7 +59,7 @@ Nel resto di questo argomento viene illustrato come definire una ricerca per ott
    ```
 
 > [!NOTE]
-> Per impostazione predefinita, Search-CsClsLogging invia i risultati della ricerca alla console. Se si desidera salvare i risultati della ricerca in un file, utilizzare -OutputFilePath  _\<string fully qualified file path\>_ . Per definire il parametro -OutputFilePath, specificare un percorso e un nome file come parte del parametro in un formato stringa racchiuso tra virgolette (ad esempio, C:\LogFiles\SearchOutput.txt). Nell'esempio fornito è necessario verificare che la directory C:\LogFiles esista e di disporre delle autorizzazioni di lettura e scrittura (autorizzazione NTFS Modifica) dei file nella cartella. L'output viene aggiunto e non sovrascritto. Se sono necessari singoli file, definire un nome di file per ogni ricerca. 
+> Per impostazione predefinita, Search-CsClsLogging invia i risultati della ricerca alla console. Se si desidera salvare i risultati della ricerca in un file, utilizzare -OutputFilePath  _\<string fully qualified file path\>_. Per definire il parametro -OutputFilePath, specificare un percorso e un nome file come parte del parametro in un formato stringa racchiuso tra virgolette (ad esempio, C:\LogFiles\SearchOutput.txt). Nell'esempio fornito è necessario verificare che la directory C:\LogFiles esista e di disporre delle autorizzazioni di lettura e scrittura (autorizzazione NTFS Modifica) dei file nella cartella. L'output viene aggiunto e non sovrascritto. Se sono necessari singoli file, definire un nome di file per ogni ricerca. 
   
 Ad esempio:
     
@@ -110,7 +105,7 @@ Ad esempio:
 
 ### <a name="to-run-a-search-by-using-time-parameters"></a>Per eseguire una ricerca utilizzando parametri temporali
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 2. Per impostazione predefinita, l'ora di inizio per i parametri specifici dell'ora di una ricerca è 25 minuti prima di cinque minuti dopo l'avvio della ricerca. In altre parole, se si cerca alle 16.00.00, l'ora di inizio della ricerca verrà mostrata dalle 15.35.00 alle 16.05.00. Se è necessario cercare 60 minuti o 3 ore prima dell'ora corrente, utilizzare il parametro -StartTime e impostare la stringa di data e ora per indicare l'ora di inizio della ricerca. 
     
@@ -141,7 +136,7 @@ Ad esempio:
 
 ### <a name="to-run-an-advanced-search-by-using-other-criteria-and-matching-options"></a>Per eseguire una ricerca avanzata utilizzando altri criteri e opzioni di corrispondenza
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 2. Per eseguire un comando per raccogliere le tracce di specifici componenti, digitare quanto segue:
     
@@ -163,7 +158,7 @@ Vengono restituite tutte le voci di log con componenti di traccia per SIPStack, 
    Search-CsClsLogging -Components "SIPStack","S4","UserServices" -OutputFilePath "C:\Logfiles\logfile.txt"
    ```
 
-4. La logica di ricerca predefinita per i comandi che dispongono di più parametri consiste nell'utilizzo dell'operatore logico OR con ogni parametro definito. È possibile modificare questo comportamento specificando il **parametro -MatchAll.** A tal fine, digitare quanto segue:
+4. La logica di ricerca predefinita per i comandi che dispongono di più parametri consiste nell'utilizzo dell'operatore logico OR con ogni parametro definito. È possibile modificare questo comportamento specificando il **parametro -MatchAll** . A tal fine, digitare quanto segue:
     
    ```PowerShell
    Search-CsClsLogging -CallId "d0af828e49fa4dcb99f5f80223a634bc" -Components "SIPStack","S4","UserServices" -MatchAll -OutputFilePath "C:\Logfiles\logfile.txt"
@@ -177,10 +172,10 @@ Vengono restituite tutte le voci di log con componenti di traccia per SIPStack, 
 
 ## <a name="read-capture-logs-from-the-centralized-logging-service"></a>Lettura dei registri di acquisizione dal servizio di registrazione centralizzata
 
-Si comprende il reale vantaggio del servizio di registrazione centralizzata dopo l'esecuzione della ricerca e si dispone di un file che è possibile utilizzare per rilevare un problema segnalato. È possibile leggere il file in diversi modi. Il file di output è in un formato di testo standard ed è possibile utilizzare Notepad.exe o qualsiasi altro programma che consenta di aprire e leggere un file di testo. Per file di grandi dimensioni e problemi più complessi, è possibile utilizzare uno strumento come Snooper.exe progettato per leggere e analizzare l'output di registrazione dal servizio di registrazione centralizzato. Snooper è incluso con gli strumenti di debug disponibili come download separato. È possibile scaricare gli strumenti di debug qui: [https://go.microsoft.com/fwlink/?LinkId=285257](https://go.microsoft.com/fwlink/?LinkId=285257) . Quando si installano gli strumenti di debug, non vengono creati brevi tagli e voci di menu. Dopo aver installato gli strumenti di debug, aprire Windows Explorer, una finestra della riga di comando o Skype for Business Server Management Shell e passare alla directory (percorso predefinito) C:\Programmi\Skype for Business Server 2015\Debugging Tools. Fare doppio clic Snooper.exe o digitare Snooper.exe e quindi premere INVIO se si utilizza la riga di comando o Skype for Business Server Management Shell.
+Si comprende il reale vantaggio del servizio di registrazione centralizzata dopo l'esecuzione della ricerca e si dispone di un file che è possibile utilizzare per rilevare un problema segnalato. È possibile leggere il file in diversi modi. Il file di output è in un formato di testo standard ed è possibile utilizzare Notepad.exe o qualsiasi altro programma che consenta di aprire e leggere un file di testo. Per file di grandi dimensioni e problemi più complessi, è possibile utilizzare uno strumento come Snooper.exe progettato per leggere e analizzare l'output di registrazione dal servizio di registrazione centralizzato. Snooper è incluso con gli strumenti di debug disponibili come download separato. È possibile scaricare gli strumenti di debug qui: [https://go.microsoft.com/fwlink/?LinkId=285257](https://go.microsoft.com/fwlink/?LinkId=285257). Quando si installano gli strumenti di debug, non vengono creati brevi tagli e voci di menu. Dopo aver installato gli strumenti di debug, aprire Windows Explorer, una finestra della riga di comando o Skype for Business Server Management Shell e passare alla directory (percorso predefinito) C:\Programmi\Skype for Business Server 2015\Debugging Tools. Fare doppio clic Snooper.exe o digitare Snooper.exe e quindi premere INVIO se si utilizza la riga di comando o Skype for Business Server Management Shell.
   
 > [!IMPORTANT]
-> Lo scopo di questo argomento non è quello di illustrare in dettaglio e discutere le tecniche di risoluzione dei problemi. La risoluzione dei problemi e i processi che lo circondano sono un argomento complesso. Per informazioni dettagliate sulla risoluzione dei problemi di base e sulla risoluzione di carichi di lavoro specifici, vedere il manuale Microsoft Lync Server 2010 Resource Kit all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=211003](https://go.microsoft.com/fwlink/p/?linkId=211003) . I processi e le procedure sono ancora applicabili Skype for Business Server 2015. 
+> Lo scopo di questo argomento non è quello di illustrare in dettaglio e discutere le tecniche di risoluzione dei problemi. La risoluzione dei problemi e i processi che lo circondano sono un argomento complesso. Per informazioni dettagliate sulla risoluzione dei problemi di base e sulla risoluzione di carichi di lavoro specifici, vedere il manuale Microsoft Lync Server 2010 Resource Kit all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=211003](https://go.microsoft.com/fwlink/p/?linkId=211003). I processi e le procedure sono ancora applicabili Skype for Business Server 2015. 
   
 ### <a name="to-open-a-log-file-in-snooper"></a>Per aprire un file di registro in Snooper
 
@@ -188,7 +183,7 @@ Si comprende il reale vantaggio del servizio di registrazione centralizzata dopo
     
 2. Dopo l'installazione degli strumenti di debug (LyncDebugTools.msi), passare alla directory Snooper.exe utilizzando Windows Explorer o dalla riga di comando. Per impostazione predefinita, gli strumenti di debug si trovano in C:\Programmi\Skype for Business Server 2015\Debugging Tools. Fare doppio clic o eseguire Snooper.exe.
     
-3. Dopo aver aperto Snooper, fare clic con il pulsante destro del mouse  su **File**, scegliere **ApriFile**, individuare i file di registro, selezionare un file nella finestra di dialogo Apri e quindi fare clic su **Apri**.
+3. Dopo aver aperto Snooper, fare clic con il pulsante destro del mouse su **File**, scegliere **ApriFile**, trovare i file di  registro, selezionare un file nella finestra di dialogo Apri e quindi fare clic su **Apri**.
     
 4. I messaggi di traccia **del** file di registro vengono visualizzati nella **scheda** Traccia. Fare clic **sulla scheda** Messaggi per visualizzare il contenuto del messaggio delle tracce raccolte.
     
@@ -196,7 +191,7 @@ Si comprende il reale vantaggio del servizio di registrazione centralizzata dopo
 
 1. Per utilizzare Snooper e aprire i file di registro, è necessario disporre dell'accesso in lettura ai file di registro. Per utilizzare Snooper e accedere ai file di registro, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator basato sui ruoli o un ruolo RBAC personalizzato contenente uno di questi due gruppi.
     
-2. Aprire un file di registro e fare clic sulla **scheda Messaggi,** selezionare una conversazione nella visualizzazione messaggi o selezionare un componente di traccia nella **scheda** Traccia.
+2. Aprire un file di registro e fare clic sulla **scheda Messaggi** , selezionare una conversazione nella visualizzazione messaggi o selezionare un componente di traccia nella **scheda** Traccia.
     
 3. Fare **clic su Flow**.
     

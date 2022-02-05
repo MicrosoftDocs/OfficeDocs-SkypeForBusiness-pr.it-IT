@@ -1,27 +1,22 @@
 ---
 title: Pagina per l'aggiunta dell'archivio SQL per Front End Server per Lync Server 2010
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddFrontEndSqlStorePage2010
+  - ms.lync.tb.AddFrontEndSqlStorePage2010
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 84bbd899-4ce1-4b3b-9bdb-a08cefb626d3
 description: Definire le proprietà degli SQL Server per il nuovo pool Front End che si sta configurando.
-ms.openlocfilehash: 83d914831ae65315866ef1fedc787105571a8312
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60864883"
 ---
+
 # <a name="add-front-end-sql-store-page-for-lync-server-2010"></a>Pagina per l'aggiunta dell'archivio SQL per Front End Server per Lync Server 2010
  
 Definire le proprietà degli SQL Server per il nuovo pool Front End che si sta configurando.
@@ -31,7 +26,7 @@ Definire le proprietà degli SQL Server per il nuovo pool Front End che si sta c
   
 Impostazioni che è possibile configurare:
   
-- **Use a previously defined SQL Server store**: Select an existing SQL Server store from the list for the Front End pool store.
+- **Utilizzare un archivio SQL Server** definito in precedenza: selezionare un archivio SQL Server esistente nell'elenco per l'archivio pool Front End.
     
 - Seleziona **Definisci un nuovo SQL Server store** per creare un nuovo SQL Server store.
     

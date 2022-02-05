@@ -1,24 +1,19 @@
 ---
 title: Rapporto dettagli chiamata in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 38862e35-3fec-41b9-a035-0b301942d446
 description: 'Riepilogo: informazioni sul Rapporto dettagli chiamata utilizzato in Skype for Business Server.'
-ms.openlocfilehash: 8f5d9e99a9141e1954aef2636ed5d671003e6ad3
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60834214"
 ---
+
 # <a name="call-detail-report-in-skype-for-business-server"></a>Rapporto dettagli chiamata in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto dettagli chiamata utilizzato in Skype for Business Server.
@@ -55,13 +50,13 @@ Si può accedere al Rapporto dettagli chiamata da uno dei rapporti seguenti:
     
 - [Rapporto riepilogativo qualità multimediale in Skype for Business Server (summary.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamata scarsa)
     
-- Il [Rapporto di confronto qualità multimediale Skype for Business Server](comparison.md) (facendo clic sul Rapporto elenco chiamate in [Skype for Business Server](call-list-report-0.md) e quindi facendo clic sulla metrica Dettagli).
+- Rapporto [di confronto qualità multimediale in Skype for Business Server](comparison.md) (facendo clic sul Rapporto elenco chiamate [in Skype for Business Server](call-list-report-0.md) e quindi facendo clic sulla metrica Dettagli).
     
-- Rapporto [prestazioni server in Skype for Business Server](server-performance.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamata scarsa)
+- Rapporto [prestazioni server in Skype for Business Server](server-performance.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamate scarsa)
     
 - Rapporto [elenco chiamate in Skype for Business Server](call-list-report-0.md) (facendo clic sulla metrica Dettagli)
     
-Dall'interno del Rapporto dettagli chiamata è possibile accedere al Rapporto [dispositivi in Skype for Business Server](device-report.md) facendo clic su una delle metriche seguenti:
+Dall'interno del Rapporto dettagli chiamata è possibile accedere al [Rapporto dispositivi in Skype for Business Server](device-report.md) facendo clic su una delle metriche seguenti:
   
 - Dispositivo di acquisizione
     

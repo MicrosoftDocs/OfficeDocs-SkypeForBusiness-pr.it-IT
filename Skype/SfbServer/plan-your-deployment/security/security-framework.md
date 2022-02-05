@@ -1,28 +1,23 @@
 ---
 title: Framework di sicurezza per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 01131e28-b38e-40d9-8524-06725b9c6608
-description: In questa sezione viene fornita una panoramica degli elementi fondamentali che formano il framework di sicurezza per Skype for Business Server. La comprensione del modo in cui questi elementi funzionano insieme è essenziale per prendere decisioni informate sulla protezione della distribuzione Skype for Business Server distribuzione.
-ms.openlocfilehash: 9b0947e488987df7e0250bef7ba0c59d1980c5a3
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60834042"
+description: In questa sezione viene fornita una panoramica degli elementi fondamentali che formano il framework di sicurezza per Skype for Business Server. La comprensione del modo in cui questi elementi funzionano insieme è essenziale per prendere decisioni informate sulla protezione della distribuzione Skype for Business Server particolare.
 ---
+
 # <a name="security-framework-for-skype-for-business-server"></a>Framework di sicurezza per Skype for Business Server
  
-In questa sezione viene fornita una panoramica degli elementi fondamentali che formano il framework di sicurezza per Skype for Business Server. La comprensione del modo in cui questi elementi funzionano insieme è essenziale per prendere decisioni informate sulla protezione della distribuzione Skype for Business Server distribuzione.
+In questa sezione viene fornita una panoramica degli elementi fondamentali che formano il framework di sicurezza per Skype for Business Server. La comprensione del modo in cui questi elementi funzionano insieme è essenziale per prendere decisioni informate sulla protezione della distribuzione Skype for Business Server particolare.
   
 Gli elementi sono i seguenti:
   

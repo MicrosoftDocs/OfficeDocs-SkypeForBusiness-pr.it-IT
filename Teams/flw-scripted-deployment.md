@@ -11,20 +11,14 @@ description: Indicazioni su come usare gli script per distribuire o eseguire il 
 ms.localizationpriority: high
 search.appverid: MET150
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.collection:
-- M365-collaboration
-- Teams_ITAdmin_RemoteWorkers
-- remotework
-- Teams_ITAdmin_FLW
+  - M365-collaboration
+  - Teams_ITAdmin_RemoteWorkers
+  - remotework
+  - Teams_ITAdmin_FLW
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 4f37e364450104b07adfe6a48c8cc29bab607470
-ms.sourcegitcommit: cd9fbda4ea85a83cb22e241a94d0825ff8186cca
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "61545007"
+  - Microsoft Teams
 ---
 # <a name="how-to-provision-teams-at-scale-for-frontline-workers"></a>Come eseguire il provisioning di Microsoft Teams su vasta scala per gli operatori sul campo
 

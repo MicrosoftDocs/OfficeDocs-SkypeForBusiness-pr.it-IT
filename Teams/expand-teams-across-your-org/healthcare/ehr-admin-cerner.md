@@ -8,41 +8,36 @@ ms.topic: conceptual
 ms.service: msteams
 search.appverid: MET150
 searchScope:
-- Microsoft Teams
-- Microsoft Cloud for Healthcare
+  - Microsoft Teams
+  - Microsoft Cloud for Healthcare
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- M365-collaboration
-- Teams_ITAdmin_Healthcare
-- microsoftcloud-healthcare
-- m365solution-healthcare
-- m365solution-scenario
+  - M365-collaboration
+  - Teams_ITAdmin_Healthcare
+  - microsoftcloud-healthcare
+  - m365solution-healthcare
+  - m365solution-scenario
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.reviewer: ansantam
 description: Informazioni su come integrare il connettore Teams EHR per consentire agli operatori sanitari dell'organizzazione di effettuare visite virtuali con pazienti o altri provider in Teams direttamente dal sistema Cerner EHR.
-ms.openlocfilehash: 40bfd115d966e812804c76ab77ab4ea2ddc70d7d
-ms.sourcegitcommit: 9f1f5cd828c24676c20df727b2c67daf56ff884c
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2022
-ms.locfileid: "62248777"
 ---
+
 # <a name="virtual-visits-with-teams---integration-into-cerner-ehr"></a>Visite virtuali con Teams - Integrazione in Cerner EHR
 
 [!INCLUDE [preview-feature](../../includes/preview-feature.md)]
 
 Il connettore Microsoft Teams Electronic Health Record (EHR) consente ai medici di avviare facilmente una visita virtuale con un paziente o di consultare un altro provider in Microsoft Teams direttamente dal sistema Cerner EHR. Basato sul cloud Microsoft 365, Teams consente una collaborazione e una comunicazione semplici e sicure con strumenti di chat, video, voce e assistenza sanitaria in un unico hub che supporta la conformità con HIPAA, la certificazione HITECH e altro ancora.
 
-La piattaforma di comunicazione e collaborazione di Teams rende più facile per i medici ridurre l'ingombro di sistemi frammentati in modo che possano concentrarsi sulla fornitura delle migliori cure possibili. Con il Teams EHR è possibile:
+La piattaforma di comunicazione e collaborazione di Teams consente ai medici di ridurre facilmente l'ingombro dei sistemi frammentati, in modo che possano concentrarsi sulla fornitura delle migliori cure possibili. Con il Teams EHR è possibile:
 
 - Condurre Teams visite virtuali dal sistema Cerner EHR con un flusso di lavoro clinico integrato.
-- Consentire ai pazienti di partecipare Teams visite virtuali da notifiche tramite posta elettronica o SMS.
+- Consenti ai pazienti di partecipare Teams visite virtuali da notifiche tramite posta elettronica o SMS.
 - Visualizza report sui dati di consumo e informazioni personalizzabili sulla qualità delle chiamate per le visite connesse a EHR.
 
-Questo articolo descrive come configurare e configurare il connettore Teams EHR per l'integrazione con la piattaforma Cerner. Offre anche una panoramica dell'esperienza Teams delle visite virtuali dal sistema Cerner EHR.
+Questo articolo descrive come configurare e configurare il connettore Teams EHR per l'integrazione con la piattaforma Cerner.This article describes how to set up and configure the Teams EHR connector to integrate with the Cerner platform. Offre anche una panoramica dell'esperienza Teams visite virtuali dal sistema Cerner EHR.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -69,25 +64,25 @@ Per la configurazione del connettore è necessario:
 - [Rivedere e completare la configurazione](ehr-admin-cerner.md#review-and-finish-the-configuration)
 
 > [!IMPORTANT]
-> Questi passaggi devono essere completati dall Microsoft 365 amministratore globale dell'organizzazione.  
+> Questi passaggi devono essere completati dall'Microsoft 365 globale dell'organizzazione.  
 
 ### <a name="launch-the-ehr-connector-configuration-portal"></a>Avviare il portale di configurazione del connettore EHR
 
 Per iniziare, l'amministratore Microsoft 365 avvia il portale di configurazione del connettore [EHR](https://ehrconnector.teams.microsoft.com) e accede usando le credenziali Microsoft.
 
-L Microsoft 365 amministratore può configurare un singolo reparto o più reparti per testare l'integrazione. Configurare l'URL di test e produzione nel portale di configurazione. Assicurarsi di testare l'integrazione dall'ambiente di test Cerner prima di passare all'ambiente di produzione.
+L Microsoft 365 amministratore può configurare uno o più reparti per testare l'integrazione. Configurare l'URL di test e produzione nel portale di configurazione. Assicurarsi di testare l'integrazione dall'ambiente di test Cerner prima di passare all'ambiente di produzione.
 
 ### <a name="enter-configuration-information"></a>Immettere le informazioni di configurazione
 
 Quindi, per configurare l'integrazione, l'amministratore Microsoft 365 aggiunge un URL di base FHIR (Fast Health Interoperability Resources) da Cerner e specifica l'ambiente. Configurare il numero di URL di base FHIR necessario, a seconda delle esigenze dell'organizzazione e degli ambienti da testare.
 
-:::image type="content" source="media/ehr-admin-cerner-configuration.png" alt-text="Screenshot della pagina Informazioni di configurazione del portale di configurazione Teams connettore EHR." lightbox="media/ehr-admin-cerner-configuration.png":::
+:::image type="content" source="media/ehr-admin-cerner-configuration.png" alt-text="Screenshot della pagina Delle informazioni di configurazione del portale di configurazione Teams connettore EHR." lightbox="media/ehr-admin-cerner-configuration.png":::
 
 - L'URL di base FHIR è un indirizzo statico che corrisponde all'endpoint API FHIR del server. Un URL di esempio è `https://lamnahealthcare.org/fihr/auth/connect-ocurprd-oauth/api/FHDST`.
 
 - È possibile configurare l'integrazione per gli ambienti di test e produzione. Per la configurazione iniziale, è necessario configurare il connettore da un ambiente di prova prima di passare all'ambiente di produzione.
 
-Dopo aver convalidato l'URL di base FHIR e aver selezionato l'ambiente, scegliere **Fine.** Aggiungere quindi altri URL di base FHIR per altri ambienti, se necessario.
+Dopo aver convalidato l'URL di base FHIR e aver selezionato l'ambiente, scegliere **Fine**. Aggiungere quindi altri URL di base FHIR per altri ambienti, se necessario.
 
 Selezionare **Avanti** per andare al passaggio successivo.
 
@@ -104,15 +99,15 @@ Per abilitare le notifiche TRAMITE SMS, l Microsoft 365 amministratore esegue le
 
     :::image type="content" source="media/ehr-admin-cerner-sms-notifications.png" alt-text="Screenshot della pagina delle notifiche TRAMITE SMS, con le caselle di controllo relative al consenso e l'opzione per generare un numero di telefono." lightbox="media/ehr-admin-cerner-sms-notifications.png":::
 
-1. In **Numeri di telefono** selezionare Genera un nuovo numero di **telefono** per generare un numero di telefono per l'organizzazione. In questo modo viene avviato il processo per richiedere e generare un nuovo numero di telefono. Il completamento di questo processo potrebbe richiedere fino a 2 minuti.
+1. In **Numeri di telefono selezionare** **Genera un nuovo numero di telefono** per generare un numero di telefono per l'organizzazione. In questo modo viene avviato il processo per richiedere e generare un nuovo numero di telefono. Il completamento di questo processo potrebbe richiedere fino a 2 minuti.
 
     Dopo la generazione, il numero di telefono viene visualizzato sullo schermo. Questo numero verrà usato per inviare sms di conferma e promemoria ai pazienti. Il provisioning del numero è stato eseguito ma non è ancora collegato all'URL di base FHIR. Eseguire questa operazione nel passaggio successivo.
 
     :::image type="content" source="media/ehr-admin-cerner-phone-number.png" alt-text="Screenshot che mostra un esempio del numero di telefono generato." lightbox="media/ehr-admin-cerner-phone-number.png":::
 
-    Scegliere **Fine** e quindi **avanti.**
+    Scegliere **Fine** e quindi **avanti**.
 
-1. Per collegare il numero di telefono a un URL di base FHIR, **in Telefono numero nella** sezione configurazione **SMS** selezionare il numero. Eseguire questa operazione per ogni URL di base FHIR per cui si vogliono abilitare le notifiche SMS.
+1. Per collegare il numero di telefono a un URL di base FHIR, **in Telefono nella** sezione configurazione **SMS** selezionare il numero. Eseguire questa operazione per ogni URL di base FHIR per cui si vogliono abilitare le notifiche SMS.
 
     :::image type="content" source="media/ehr-admin-cerner-link-phone-number.png" alt-text="Screenshot che mostra come collegare un numero di telefono a un URL di base FHIR." lightbox="media/ehr-admin-cerner-link-phone-number.png":::
 
@@ -158,7 +153,7 @@ Il connettore supporta i pazienti che a partecipare a visite virtuali tramite un
 
 Caratteristiche chiave dell'esperienza del paziente
 
-- I pazienti possono partecipare a visite virtuali da web browser moderni su desktop e dispositivi [mobili](../mobile-browser-join.md)senza dover installare l Teams app .
+- I pazienti possono partecipare a visite virtuali da web browser moderni su desktop e [dispositivi mobili](../mobile-browser-join.md) senza dover installare l Teams app.
 - I pazienti possono partecipare a visite virtuali con un solo clic e non è necessario alcun altro account o accesso.
 - I pazienti non sono tenuti a creare un account Microsoft o ad accedere con le credenziali per avviare una visita virtuale.
 - I pazienti vengono inseriti in una sala d'attesa finché il provider non partecipa all'appuntamento e li ammette alla visita virtuale.
@@ -175,4 +170,4 @@ L'ID univoco dell'utente CCE viene archiviato in una delle tre aree geografiche 
 ## <a name="related-articles"></a>Articoli correlati
 
 - [Teams di amministrazione del connettore EHR](ehr-admin-reports.md)
-- [Introduzione a Teams per le organizzazioni sanitarie](teams-in-hc.md)
+- [Introduzione alla Teams per le organizzazioni sanitarie](teams-in-hc.md)

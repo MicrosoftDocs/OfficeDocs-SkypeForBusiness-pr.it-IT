@@ -1,25 +1,20 @@
 ---
 title: Configurare il servizio di conformità per il server Chat persistente in Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 1/31/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 24e36ea3-fb8a-45a4-b6b7-38c2e256b218
 description: 'Riepilogo: informazioni su come configurare il servizio Conformità server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 23f28c2071063e2729deb54eea9703a7699e3e07
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858243"
 ---
+
 # <a name="configure-the-compliance-service-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Configurare il servizio di conformità per il server Chat persistente in Skype for Business Server 2015
 
 **Riepilogo:** Informazioni su come configurare il servizio Conformità server Chat persistente in Skype for Business Server 2015.
@@ -41,17 +36,17 @@ La conformità di Persistent Chat consente agli amministratori di gestire un arc
 Queste informazioni possono essere recuperate dal database SQL conformità in base alle esigenze. 
 
 > [!NOTE]
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
 
 ## <a name="configure-the-compliance-service-by-using-windows-powershell"></a>Configurare il servizio di conformità tramite Windows PowerShell
 
-Dopo aver abilitato il servizio di conformità utilizzando Generatore di topologie, è possibile configurare il servizio utilizzando il cmdlet **Set-CsPersistenChatComplianceConfiguration:**
+Dopo aver abilitato il servizio di conformità utilizzando Generatore di topologie, è possibile configurare il servizio utilizzando il cmdlet **Set-CsPersistenChatComplianceConfiguration** :
 
 ```PowerShell
 Set-CsPersistentChatComplianceConfiguration [-Identity <XdsIdentity>] <COMMON PARAMETERS>
 ```
 
-o
+oppure
 
 ```PowerShell
 Set-CsPersistentChatComplianceConfiguration [-Instance <PSObject>] <COMMON PARAMETERS>
@@ -73,9 +68,9 @@ Set-CsPersistentChatComplianceConfiguration [-Instance <PSObject>] <COMMON PARAM
 
 ## <a name="use-a-customized-compliance-adapter"></a>Usare una scheda di conformità personalizzata
 
-È possibile scrivere un adattatore personalizzato anziché utilizzare l'oggetto XmlAdapter installato con il server Chat persistente. A tale scopo, è necessario fornire un assembly .NET Framework contenente una classe pubblica che implementa **l'interfaccia IComplianceAdapter.** È necessario inserire questo assembly nella cartella di installazione del server Chat persistente di ogni server del pool di server Chat persistente. Uno qualsiasi dei server di conformità può fornire dati di conformità alla scheda, ma i server di conformità non forniranno dati di conformità duplicati a più istanze della scheda.
+È possibile scrivere un adattatore personalizzato anziché utilizzare l'oggetto XmlAdapter installato con il server Chat persistente. A tale scopo, è necessario fornire un assembly .NET Framework contenente una classe pubblica che implementa **l'interfaccia IComplianceAdapter**. È necessario inserire questo assembly nella cartella di installazione del server Chat persistente di ogni server del pool di server Chat persistente. Uno qualsiasi dei server di conformità può fornire dati di conformità alla scheda, ma i server di conformità non forniranno dati di conformità duplicati a più istanze della scheda.
 
-L'interfaccia è definita nell'assembly Compliance.dll nello spazio dei nomi  `Microsoft.Rtc.Internal.Chat.Server.Compliance` . L'interfaccia definisce due metodi che devono essere implementati dall'adattatore personalizzato.
+L'interfaccia è definita nell'assembly Compliance.dll nello spazio dei nomi  `Microsoft.Rtc.Internal.Chat.Server.Compliance`. L'interfaccia definisce due metodi che devono essere implementati dall'adattatore personalizzato.
 
 Il server Conformità chat persistente chiamerà il metodo seguente al primo caricamento della scheda. Contiene  `AdapterConfig` la configurazione di conformità di Persistent Chat rilevante per la scheda di conformità:
 
@@ -83,7 +78,7 @@ Il server Conformità chat persistente chiamerà il metodo seguente al primo car
 void SetConfig(AdapterConfig config)
 ```
 
-Il server Di conformità di Persistent Chat chiama il metodo seguente a intervalli periodici, purché siano disponibili nuovi dati da tradurre. Questo intervallo di tempo è uguale a  `RunInterval` quello impostato nella configurazione di conformità di Persistent Chat:
+Il server Di conformità di Persistent Chat chiama il metodo seguente a intervalli periodici, purché siano disponibili nuovi dati da tradurre. Questo intervallo di tempo è uguale a quello  `RunInterval` impostato nella configurazione di conformità di Persistent Chat:
 
 ```cpp
 void Translate(ConversationCollection conversations)
@@ -138,7 +133,7 @@ Nella tabella seguente vengono descritti gli attributi del messaggio Type, Conte
 
 |**Attributo**|**Descrizione**|**Facoltativo/Obbligatorio**|
 |:-----|:-----|:-----|
-|Tipo  <br/> |Specifica il tipo di messaggio. I tipi di messaggio sono descritti nella tabella Tipi di messaggio dell'elemento Messages.  <br/> |Obbligatoria  <br/> |
+|Tipo  <br/> |Specifica il tipo di messaggio. I tipi di messaggio sono descritti nella tabella Tipi di messaggio dell'elemento Messages.  <br/> |Obbligatorio  <br/> |
 |Contenuto  <br/> |Contenuto del messaggio. Questo attributo non è utilizzato per i messaggi con Type Join o Part.  <br/> |Facoltativo  <br/> |
 |ID  <br/> |Specifica l'ID univoco del contenuto. Questo attributo è utilizzato solo con i messaggi con Type Chat.  <br/> |Facoltativo  <br/> |
 
@@ -149,10 +144,10 @@ Ogni elemento Sender contiene cinque attributi, ovvero Username, ID, Email, Inte
 |**Attributo**|**Descrizione**|**Facoltativo/Obbligatorio**|
 |:-----|:-----|:-----|
 |Username  <br/> |Nome del mittente.  <br/> |Facoltativo  <br/> |
-|ID  <br/> |ID univoco del mittente.  <br/> |Obbligatoria  <br/> |
+|ID  <br/> |ID univoco del mittente.  <br/> |Obbligatorio  <br/> |
 |Posta elettronica  <br/> |Indirizzo di posta elettronica del mittente.  <br/> |Facoltativo  <br/> |
 |Interno  <br/> |Determina se l'utente è interno o federato. Se il valore è impostato su true, l'utente è interno.  <br/> |Facoltativo  <br/> |
-|URI  <br/> |URI SIP dell'utente.  <br/> |Obbligatoria  <br/> |
+|URI  <br/> |URI SIP dell'utente.  <br/> |Obbligatorio  <br/> |
 
 Negli esempi seguenti vengono mostrati i tipi di messaggio che l'elemento Messages può contenere. Sono inoltre disponibili esempi di utilizzo per ogni elemento.
 

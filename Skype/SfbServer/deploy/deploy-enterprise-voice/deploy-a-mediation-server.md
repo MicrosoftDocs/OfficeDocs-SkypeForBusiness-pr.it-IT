@@ -1,29 +1,24 @@
 ---
 title: Distribuire un Mediation Server in Generatore di topologie in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/7/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 59d8f5ba-5064-4ea5-b4bf-2b9736e0fedd
 description: 'Riepilogo: informazioni su come definire e distribuire un Mediation Server in Generatore di topologie in Skype for Business Server.'
-ms.openlocfilehash: 7dd3704b47b384d3fab62a7cc051adcf5b380c0e
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60857033"
 ---
+
 # <a name="deploy-a-mediation-server-in-topology-builder-in-skype-for-business-server"></a>Distribuire un Mediation Server in Generatore di topologie in Skype for Business Server
  
 **Riepilogo:** Informazioni su come definire e distribuire un Mediation Server in Generatore di topologie in Skype for Business Server.
@@ -40,15 +35,15 @@ La connessione tra Skype for Business Server (un Mediation Server collocato in u
   
 ### <a name="to-add-a-mediation-server-to-a-front-end-pool"></a>Per aggiungere un Mediation Server a un pool Front End
 
-1. Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server 2015** e quindi Skype for Business Server Generatore di topologie **2015**.
+1. Start Topology Builder: click **Start**, click **All Programs**, click **Skype for Business Server 2015**, and then click **Skype for Business Server 2015Topology Builder**.
     
 2. Nell'albero della console di Generatore di topologie espandere il nome del sito per cui si desidera definire un pool Front End.
     
-3. Nell'albero della console fare clic con il pulsante destro del mouse sul tipo di pool Front End desiderato e quindi scegliere **Nuovo pool Front End.**.
+3. Nell'albero della console fare clic con il pulsante destro del mouse sul tipo di pool Front End desiderato e quindi scegliere **Nuovo pool Front End**.
     
 4. Scorrere i vari passaggi della procedura guidata **Definisci nuovo pool Front End** fino a raggiungere la pagina **Selezionare ruoli server collocati**.
     
-5. In **Seleziona ruoli server collocati** selezionare l'opzione Colloca Mediation **Server**.
+5. In **Selezionare i ruoli del server collocati** selezionare l'opzione **Colloca Mediation Server**.
     
     > [!NOTE]
     > Se il tipo di pool Front End selezionato è il edizione Enterprise, il componente Mediation Server verrà installato in tutti i Front End Server del pool Front End. 
@@ -64,23 +59,23 @@ La connessione tra Skype for Business Server (un Mediation Server collocato in u
 7. Al **termine** dell'associazione di uno o più peer al pool Front End, fare clic su Fine.
     
     > [!NOTE]
-    > Prima di procedere con il passaggio successivo del processo di distribuzione di VoIP aziendale, verificare che il pool Mediation Server (ad esempio, il pool Front End con il componente Mediation Server collocato) utilizzi i nomi fqdn specificati. 
+    > Prima di procedere con il passaggio successivo del processo di distribuzione di VoIP aziendale, verificare che il pool Mediation Server (ad esempio, il pool Front End con il componente Mediation Server collocato) utilizzi i nomi di dominio fqdn specificati. 
   
 8. Fare clic con il pulsante **destro del Skype for Business Server 2015** e quindi scegliere **Pubblica topologia**.
     
 ### <a name="to-add-a-standalone-mediation-server"></a>Per aggiungere un Mediation Server autonomo
 
-1. Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server 2015** e quindi Skype for Business Server Generatore di topologie **2015**.
+1. Start Topology Builder: click **Start**, click **All Programs**, click **Skype for Business Server 2015**, and then click **Skype for Business Server 2015Topology Builder**.
     
 2. Nell'albero della console di Generatore di topologie espandere il nome del sito per cui si desidera definire un Mediation Server.
     
-3. Nell'albero della console fare clic con il pulsante destro del mouse sul nodo **Pool Mediation** Server e quindi scegliere Pool **Mediation Server**.
+3. Nell'albero della console fare clic con il pulsante destro del mouse sul nodo **Pool Mediation** Server e quindi scegliere **Pool Mediation Server**.
     
 4. In **Definisci nuovo pool Mediation Server** digitare il nome di dominio completo (FQDN) del pool Mediation Server.
     
 5. Eseguire quindi una delle operazioni seguenti:
     
-   - Se si desidera distribuire più Mediation Server nel pool per garantire la disponibilità elevata, selezionare **Pool di più computer.**
+   - Se si desidera distribuire più Mediation Server nel pool per garantire la disponibilità elevata, selezionare **Pool di più computer**.
     
      > [!NOTE]
      > È necessario [eseguire la](../../plan-your-deployment/network-requirements/load-balancing.md#BKMK_DNSLoadBalancing) distribuzione per supportare pool Mediation Server con più Mediation Server.
@@ -89,13 +84,13 @@ La connessione tra Skype for Business Server (un Mediation Server collocato in u
     
 6. Se si seleziona **Pool di più computer** nel passaggio precedente , in **Definire i computer nel pool corrente** fare clic su **FQDN computer**, digitare l'FQDN di ogni server nel pool e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per tutti gli altri Mediation Server che si desidera aggiungere al pool. Dopo aver definito tutti i computer nel pool, fare clic su **Avanti**.
     
-7. Nella pagina **Selezionare l'hop** successivo fare clic su Pool **hop** successivo, fare clic sul nome di dominio completo del pool Front End che utilizzerà il pool Mediation Server e quindi fare clic su **Avanti.**
+7. Nella pagina **Selezionare l'hop** successivo fare clic su **Pool hop successivo**, fare clic sul nome di dominio completo del pool Front End che utilizzerà il pool Mediation Server e quindi fare clic su **Avanti**.
     
 8. Nella pagina **Selezionare un server perimetrale** eseguire una delle operazioni seguenti:
     
-   - Se si desidera fornire la connettività PSTN agli utenti esterni abilitati per VoIP aziendale, in Seleziona pool di server perimetrali utilizzato da **questo Mediation Server** fare clic sul nome di dominio completo del pool di server perimetrali che utilizzerà il pool Mediation Server per fornire la connettività PSTN a tali utenti esterni e quindi fare clic su **Avanti.**
+   - Se si desidera fornire la connettività PSTN agli utenti esterni abilitati per VoIP aziendale, in Seleziona pool di server perimetrali utilizzato da **questo Mediation Server** fare clic sul nome di dominio completo del pool di server perimetrali che utilizzerà il pool Mediation Server per fornire la connettività PSTN a tali utenti esterni e quindi fare clic su **Avanti**.
     
-   - Se non si prevede di abilitare gli utenti esterni per VoIP aziendale o se non si desidera fornire la connettività PSTN agli utenti quando si trova all'esterno della rete interna, fare clic su **Avanti.**
+   - Se non si prevede di abilitare gli utenti esterni per VoIP aziendale o se non si desidera fornire la connettività PSTN agli utenti quando si trova all'esterno della rete interna, fare clic su **Avanti**.
     
 9. Fare clic con il pulsante **destro del Skype for Business Server 2015** e quindi scegliere **Pubblica topologia**.
     
@@ -105,11 +100,11 @@ Seguire i passaggi descritti in questo argomento per utilizzare Generatore di to
   
 ### <a name="to-modify-the-mediation-server-listening-ports"></a>Per modificare le porte di attesa di Mediation Server
 
-1. Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server 2015** e quindi Skype for Business Server Generatore di topologie **2015**.
+1. Start Topology Builder: click **Start**, click **All Programs**, click **Skype for Business Server 2015**, and then click **Skype for Business Server 2015Topology Builder**.
     
 2. Nell'albero della console di Generatore di topologie espandere il nodo **Pool Mediation** Server e fare clic con il pulsante destro del mouse sul Mediation Server creato in precedenza.
     
-3. Per impostazione predefinita, le porte di attesa SIP nel Mediation Server sono 5070 per il traffico TLS da Skype for Business Server e 5067 per il traffico TLS da peer (ad esempio gateway, PCx o SBC). La porta TCP è disabilitata per impostazione predefinita. È necessario abilitare la porta TCP in presenza di gateway che non supportano TLS.
+3. Per impostazione predefinita, le porte di attesa SIP nel Mediation Server sono 5070 per il traffico TLS da Skype for Business Server e 5067 per il traffico TLS dai peer (ad esempio gateway, PCX o SBC). La porta TCP è disabilitata per impostazione predefinita. È necessario abilitare la porta TCP in presenza di gateway che non supportano TLS.
     
 4. Specificare l'intervallo di porte di attesa TLS o TCP desiderato che il Mediation Server accetterà le connessioni in ingresso dai gateway PSTN.
     

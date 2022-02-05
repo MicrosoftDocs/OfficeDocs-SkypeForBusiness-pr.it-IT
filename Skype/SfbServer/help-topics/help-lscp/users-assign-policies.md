@@ -1,27 +1,22 @@
 ---
 title: Assegnare criteri agli utenti
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.UserAssignPolicy
+  - ms.lync.lscp.UserAssignPolicy
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: f36a2699-5cf6-4995-9f6d-ec3519ca0903
-description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 81888cf9f689973eb1b63e00b4a544c98b63b5cf
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60842979"
+description: 'Per saperne di più: fare clic sul collegamento all''attività che si desidera eseguire.'
 ---
+
 # <a name="users-assign-policies"></a>Utenti: assegnare criteri
 
 Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.

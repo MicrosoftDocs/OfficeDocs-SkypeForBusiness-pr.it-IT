@@ -1,28 +1,23 @@
 ---
 title: Skype for Business video client
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/16/2018
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- Strat_SB_Admin
-ms.custom: ''
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 8f68f4c2-3194-487c-bd2f-fbe71ba8ad70
-description: 'Riepilogo: esaminare i requisiti video del client durante la pianificazione di Skype for Business Server.'
-ms.openlocfilehash: 717813e9ed667bbd0d3d9d63e45ae3b9c45b4dcf
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60856553"
+description: 'Riepilogo: esaminare i requisiti video del client durante la pianificazione Skype for Business Server.'
 ---
+
 # <a name="skype-for-business-client-video-resolutions"></a>Skype for Business video client
  
 **Riepilogo:** Esaminare i requisiti video del client durante la pianificazione di Skype for Business Server.
@@ -33,15 +28,15 @@ I professionisti IT troveranno queste informazioni utili per valutare l'idoneit�
   
 ## <a name="windows-desktop-mac-and-tablet-video-requirements-and-capabilities"></a>Windows desktop, Mac e tablet e funzionalità video
 
-Skype for Business utilizza l'accelerazione hardware per la codifica e la decodifica video in base alla codifica video standard H.264/MPEG-4 Part 10 Advanced Video Coding. Ciò consente ai computer con velocità di clock della CPU inferiori di codificare e decodificare video a risoluzione superiore. I requisiti hardware video variano a seconda della configurazione del computer e alla risoluzione video desiderata.
+Skype for Business utilizza l'accelerazione hardware per la codifica video e la decodifica in base alla codifica video H.264/MPEG-4 Part 10 Advanced Video Coding standard. Ciò consente ai computer con velocità di clock della CPU inferiori di codificare e decodificare video a risoluzione superiore. I requisiti hardware video variano a seconda della configurazione del computer e alla risoluzione video desiderata.
   
-Vedi anche i Windows hardware per Mac e [Mac.](https://products.office.com/office-system-requirements)
+Vedi anche [i Windows hardware per Mac e Mac](https://products.office.com/office-system-requirements).
   
 ### <a name="video-hardware-requirements"></a>Requisiti hardware video
 
 |**Funzionalità**|**Requisito**|
 |:-----|:-----|
-|Decodifica H.264 con accelerazione hardware mediante DirectX Video Acceleration (DXVA)  <br/> |• La scheda grafica deve supportare DirectX 9.0 e deve esporre la modalità DXVA2_ModeH264_VLD_NoFGT decodifica e l'API DirectX 9.  <br/> • È necessario installare il driver della scheda grafica più recente.  <br/> |
+|Decodifica H.264 con accelerazione hardware mediante DirectX Video Acceleration (DXVA)  <br/> |• La scheda grafica deve supportare DirectX 9.0 e deve esporre la DXVA2_ModeH264_VLD_NoFGT di decodifica e l'API DirectX 9.  <br/> • È necessario installare il driver della scheda grafica più recente.  <br/> |
 |Codifica H.264 con accelerazione hardware: requisiti del chipset  <br/> |Sono supportate le seguenti soluzioni di codifica video con accelerazione hardware Intel:  <br/> • Chipset Intel HD Graphics 2000, 2500, 3000 e 4000 di seconda e terza generazione (o versioni successive) con codificatori video hardware integrati. È necessaria l'installazione del driver di grafica Intel HD 15.28.9.2884 o del driver più recente contenente quanto segue:  <br/> • Driver di visualizzazione 9.17.10.2884 o il driver più recente  <br/> • Hardware Media Foundation Transform (HMFT) versione 3.12.10.31 o HMFT più recente  <br/> Sono supportate le soluzioni di codifica video con accelerazione hardware AMD seguenti:  <br/> • AmD Video Codec Engine, disponibile in diverse schede grafiche discrete e in unità di elaborazione accelerate integrate di processori accelerati AMD serie A. È necessario installare il driver amD Video Codec Engine 9.12.0.0 o versione successiva.  <br/> |
 |Codifica H.264 con accelerazione hardware: requisiti fotocamera  <br/> |Fotocamere video USB con codificatore H.264 integrato conforme alla specifica USB Video Class (UVC) versione 1.5.  <br/> **Nota:** Skype for Business supporta fotocamere UVC 1.5 con Windows 8 o Windows 8.1, che include il supporto per UVC 1.5. Poiché Windows 7 non include il supporto per UVC 1.5, Skype for Business considera le fotocamere UVC 1.5 come fotocamere normali senza supporto della codifica hardware. <br/> |
    

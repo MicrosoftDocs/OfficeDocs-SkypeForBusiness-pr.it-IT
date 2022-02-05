@@ -1,25 +1,20 @@
 ---
 title: Get Cube
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: c8eeb387-dc1e-44e0-bbf9-a566f8bda551
-description: "Riepilogo: informazioni sull'operazione Get Cube, che fa parte dell'API dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 961453404d4abe4f026f240cd03e59a3b4c82993
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60827499"
+description: 'Riepilogo: informazioni sull''operazione Get Cube, che fa parte dell''API dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.'
 ---
+
 # <a name="get-cube"></a>Get Cube
  
 **Riepilogo:** Informazioni sull'operazione Get Cube, che fa parte dell'API dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
@@ -33,7 +28,7 @@ L'operazione Get Cube restituisce l'elenco delle dimensioni e delle misure dispo
 
 |**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|GET  <br/> |https:// \<portal\> /QoEDataService/CubeStructure  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |\<portal\>https:///QoEDataService/CubeStructure  <br/> |HTTP/1.1  <br/> |
    
  **Parametri URI** - Nessuno.
   
@@ -41,13 +36,13 @@ L'operazione Get Cube restituisce l'elenco delle dimensioni e delle misure dispo
   
  **Corpo della richiesta** - Nessuno.
   
- **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK).
+ **Codice di stato** : un'operazione riuscita restituisce il codice di stato 200 (OK).
   
  **Intestazioni di risposta** - Nessuna intestazione aggiuntiva.
   
- **Response Body:** di seguito è riportato un payload di risposta di esempio in JSON.
+ **Response Body** : di seguito è riportato un payload di risposta di esempio in JSON.
   
 > [!NOTE]
 > In questo esempio vengono mostrati solo i primi due elementi di ogni gruppo di elementi Cube. 
@@ -95,8 +90,8 @@ L'operazione Get Cube restituisce l'elenco delle dimensioni e delle misure dispo
 
  *INDICATORI KPI*  - Riservato. La sezione INDICATORI KPI di un payload di richiesta consente all'operazione Esegui query di restituire valori per gli indicatori KPI definiti nel cubo. Nel cubo QoE non sono ancora presenti indicatori KPI.
   
- *Dimensioni:*  elenco di dimensioni che possono essere utilizzate nelle sezioni Filtri e Dimensioni di un payload di richiesta per l'operazione Esegui query. Per utilizzare una dimensione in un'espressione di filtro, è necessario specificare un membro della dimensione, che può essere ottenuto utilizzando l'operazione Get Dimension Members.
+ *Dimensioni*  : elenco di dimensioni che possono essere utilizzate nelle sezioni Filtri e Dimensioni di un payload di richiesta per l'operazione Esegui query. Per utilizzare una dimensione in un'espressione di filtro, è necessario specificare un membro della dimensione, che può essere ottenuto utilizzando l'operazione Get Dimension Members.
   
- *Misurazioni:*  elenco delle misurazioni che possono essere utilizzate nella sezione Misurazioni di un payload di richiesta per l'operazione Esegui query.
+ *Misurazioni*  : elenco delle misurazioni che possono essere utilizzate nella sezione Misurazioni di un payload di richiesta per l'operazione Esegui query.
   
 

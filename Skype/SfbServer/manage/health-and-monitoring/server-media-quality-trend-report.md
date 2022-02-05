@@ -1,24 +1,19 @@
 ---
 title: Rapporto tendenze qualità multimediale server in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 8a51fd13-1487-4632-b5ec-f7ae2abe8ed4
 description: 'Riepilogo: informazioni sul Rapporto tendenze qualità multimediale server in Skype for Business Server.'
-ms.openlocfilehash: 03091deedf502c4a6d9d65dc5e9f14532a9147ab
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60851019"
 ---
+
 # <a name="server-media-quality-trend-report-in-skype-for-business-server"></a>Rapporto tendenze qualità multimediale server in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto tendenze qualità multimediale server in Skype for Business Server.
@@ -35,9 +30,9 @@ Il Rapporto tendenze qualità multimediale server è accessibile da uno o l'altr
     
 ## <a name="making-the-best-use-of-server-media-quality-trend-report"></a>Uso ottimale del Rapporto tendenze qualità multimediale server
 
-Quando si fa clic sulla metrica Tendenza nel Rapporto prestazioni server [in Skype for Business Server](server-performance.md) per un server specifico, verrà aperto il Rapporto tendenze qualità multimediale server. Tuttavia, verrà visualizzata solo un'istanza vuota del rapporto; il server selezionato nel Rapporto prestazioni dei server non verrà visualizzato. Sarà invece necessario selezionare il server dal menu a discesa Server. Tenere presente che l'elenco a discesa Server include anche un'opzione Seleziona tutto. Questa opzione non funziona se sono presenti più di 5 server; il Rapporto tendenze qualità multimediale server è in grado di visualizzare dati per un massimo di 5 server alla volta.
+Quando si fa clic sulla metrica Tendenza nel [Rapporto prestazioni server in Skype for Business Server](server-performance.md) per un server specifico, verrà aperto il Rapporto tendenze qualità multimediale server. Tuttavia, verrà visualizzata solo un'istanza vuota del rapporto; il server selezionato nel Rapporto prestazioni dei server non verrà visualizzato. Sarà invece necessario selezionare il server dal menu a discesa Server. Tenere presente che l'elenco a discesa Server include anche un'opzione Seleziona tutto. Questa opzione non funziona se sono presenti più di 5 server; il Rapporto tendenze qualità multimediale server è in grado di visualizzare dati per un massimo di 5 server alla volta.
   
-Nei grafici visualizzati dal Rapporto tendenze qualità multimediale server, i punti contrassegnati come Volume chiamate e Percentuale chiamate scarsa sono collegamenti a caldo; Se si fa clic su un punto nel grafico, verrà aperta un'istanza del Rapporto elenco chiamate [in Skype for Business Server](call-list-report-0.md) che mostra il numero totale di chiamate (o chiamate di qualità scarsa) per il periodo di tempo specificato.
+Nei grafici visualizzati dal Rapporto tendenze qualità multimediale server, i punti contrassegnati come Volume chiamate e Percentuale chiamate scarsa sono collegamenti a caldo; Se si fa clic su un punto del grafico, verrà aperta un'istanza del Rapporto elenco chiamate [in Skype for Business Server](call-list-report-0.md) che mostra il numero totale di chiamate (o chiamate di qualità scarsa) per il periodo di tempo specificato.
   
 ## <a name="filters"></a>Filtri
 

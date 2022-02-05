@@ -1,7 +1,7 @@
 ---
 title: Criteri di registrazione degli eventi live
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -9,26 +9,21 @@ ms.reviewer: christi.balaki
 audience: admin
 search.appverid: MET150
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.collection:
-- M365-collaboration
+  - M365-collaboration
 description: Informazioni sui criteri di registrazione degli eventi live.
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 80489f699004ed7dbcb8d7493c32a7bc26e3e25e
-ms.sourcegitcommit: be8b820caf4b5a1a91ad444ba93da1df20bf63ae
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2021
-ms.locfileid: "61257345"
 ---
+
 # <a name="live-event-recording-policies-in-microsoft-teams"></a>Criteri di registrazione degli eventi live in Microsoft Teams
 
 Sono disponibili diverse opzioni per registrare un evento Microsoft Teams live. Le opzioni di registrazione vengono impostate usando i criteri di registrazione. Questo articolo descrive le varie impostazioni.
 
-Le opzioni di registrazione vengono impostate usando il comando di PowerShell [Set-CsTeamsMeetingBroadcastPolicy.](/powershell/module/skype/set-csteamsmeetingbroadcastpolicy)
+Le opzioni di registrazione vengono impostate usando il comando di PowerShell [Set-CsTeamsMeetingBroadcastPolicy](/powershell/module/skype/set-csteamsmeetingbroadcastpolicy).
 
 ## <a name="scheduling-and-option-behaviors"></a>Comportamenti di pianificazione e opzioni
 

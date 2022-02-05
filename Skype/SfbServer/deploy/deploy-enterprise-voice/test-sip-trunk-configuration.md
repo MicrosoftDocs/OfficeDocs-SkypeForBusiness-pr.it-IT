@@ -1,28 +1,23 @@
 ---
 title: 'Skype for Business Server: testare le impostazioni di configurazione dei trunk SIP'
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: c8712308-0e2d-4e39-8f90-d1a250487a94
 description: 'Riepilogo: informazioni su come testare le impostazioni di configurazione dei trunk SIP tramite Skype for Business Server Management Shell.'
-ms.openlocfilehash: 59f246abfc4ef27ad75ab45cccaedc6f5236c98e
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829510"
 ---
+
 # <a name="skype-for-business-server-test-sip-trunk-configuration-settings"></a>Skype for Business Server: testare le impostazioni di configurazione dei trunk SIP
  
 **Riepilogo:** Informazioni su come testare le impostazioni di configurazione dei trunk SIP tramite Skype for Business Server Management Shell.

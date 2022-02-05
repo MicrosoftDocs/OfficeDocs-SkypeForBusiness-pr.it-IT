@@ -1,7 +1,7 @@
 ---
 title: Creare i primi team e canali
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.topic: article
 audience: admin
@@ -11,20 +11,15 @@ description: Informazioni su come creare il primo gruppo di team e canali in Mic
 ms.localizationpriority: high
 search.appverid: MET150
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.collection:
-- M365-collaboration
-- m365initiative-deployteams
+  - M365-collaboration
+  - m365initiative-deployteams
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fa8fe0934bbd607289dc370ede57cd5eac539207
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60846119"
 ---
+
 # <a name="create-your-first-teams-and-channels-in-microsoft-teams"></a>Creare i primi team e canali in Microsoft Teams
 
 La configurazione e l'uso del primo set di team e canali consente di acquisire familiarità con Teams e identificare i promotori che possono contribuire all'adozione di Teams in tutta l'organizzazione. Se non è ancora stato installato Teams, vedere [Ottenere i client di Teams](get-clients.md) e [Accedere a Teams con l'autenticazione moderna](sign-in-teams.md).

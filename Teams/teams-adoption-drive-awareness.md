@@ -1,7 +1,7 @@
 ---
 title: Aumentare la consapevolezza e implementare la formazione
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.date: 11/09/2018
 audience: Admin
@@ -10,27 +10,22 @@ ms.service: msteams
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come aumentare la consapevolezza e implementare un programma di formazione per l Microsoft Teams in adozione.
+description: Informazioni su come aumentare la consapevolezza e implementare un programma di formazione per Microsoft Teams adozione.
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- Adopt
-- seo-marvel-apr2020
+  - Adopt
+  - seo-marvel-apr2020
 ms.collection:
-- Teams_ITAdmin_Adopt
-- M365-collaboration
+  - Teams_ITAdmin_Adopt
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: e1832ca945edab2560a5a604fe85c01c0c9f53f0
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60842528"
+  - Microsoft Teams
 ---
+
 # <a name="drive-awareness-and-implement-training-for-microsoft-teams"></a>Aumentare la consapevolezza e implementare la formazione per Microsoft Teams
 
-La consapevolezza e la formazione sono il segmento di marketing e comunicazione della strategia generale di adozione. In questo modo i dipendenti saranno a conoscenza delle nuove funzionalità di Microsoft Teams e dei servizi Microsoft 365 o Office 365 e delle app sottostanti.
+La consapevolezza e la formazione sono il segmento di marketing e comunicazione della strategia generale di adozione. In questo modo i dipendenti saranno a conoscenza delle nuove funzionalità di Microsoft Teams e dei servizi e delle app Microsoft 365 o Office 365 di lavoro.
    
 Sia per i progetti pilota iniziali che per l'eventuale implementazione a livello aziendale, le comunicazioni interne dovrebbero essere prioritarie. Devono includere:
 
@@ -49,12 +44,12 @@ Se l'azienda ha un portale intranet centrale per notizie, informazioni o support
 
 ## <a name="implement-end-user-training"></a>Implementare la formazione per gli utenti finali
 
-Usa le nostre risorse per fornire formazione per gli utenti finali mentre le persone iniziano a usare Microsoft Teams e altri servizi Microsoft 365 o Office 365 utenti. Visita le pagine delle risorse per saperne di più:
+Usa le nostre risorse per fornire formazione per gli utenti finali quando le persone iniziano a usare Microsoft Teams e altri servizi Microsoft 365 o Office 365. Visita le pagine delle risorse per saperne di più:
 
 - [Formazione per utenti finali con istruttore per Teams](instructor-led-training-teams-landing-page.yml)
 - [Formazione per amministratori per Teams](itadmin-readiness.md)
 - [Video di formazione online per gli utenti finali](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)
-- [Formazione su Coffee in the Cloud online per & professionisti IT](https://aka.ms/CoffeeintheCloud) 
+- [Formazione online su Coffee in the Cloud per & professionisti IT](https://aka.ms/CoffeeintheCloud) 
 - [Strumenti di adozione](https://aka.ms/O365AdoptionTools)
 
 ## <a name="measure-and-share-success"></a>Misurare e condividere il successo
@@ -67,8 +62,8 @@ Come per qualsiasi campagna di comunicazione e adozione, è importante identific
 - Visualizzazioni dei video di formazione
 - Partecipazione a eventi di apprendimento
 
-Condividi le informazioni che ricevi dai tuoi canali di feedback con l'hashtag #TeamsStories per un facile recupero. Condividere un #TeamsStory ogni mese nella intranet per evidenziare i dipendenti che stanno abbracciando il cambiamento per aumentare la produttività e la collaborazione nell'ambiente. È anche possibile condividerle con microsoft nel forum Driving Adoption sul sito Web microsoft technical Community. Condividere questi esempi reali dall'interno della propria azienda è estremamente utile per realizzare cambiamenti sostenuti nel tempo con la community degli utenti.
+Condividere le informazioni che si ottengono dai canali di feedback con l'hashtag #TeamsStories per un facile recupero. Condividere un #TeamsStory ogni mese nella intranet per evidenziare i dipendenti che stanno abbracciando il cambiamento per aumentare la produttività e la collaborazione nell'ambiente. È anche possibile condividerle con microsoft nel forum Driving Adoption sul sito Web microsoft technical Community. Condividere questi esempi reali dall'interno della propria azienda è estremamente utile per realizzare cambiamenti sostenuti nel tempo con la community degli utenti.
 
-[Altre informazioni sui report di Microsoft Teams sull'utilizzo dei interfaccia di amministrazione di Microsoft 365.](teams-activity-reports.md)
+[Altre informazioni sui report di Microsoft Teams di utilizzo nella interfaccia di amministrazione di Microsoft 365.](teams-activity-reports.md)
 
 ![Icona che descrive i passaggi successivi.](media/teams-adoption-next-icon.png) Successiva: [Pianificare le revisioni dell'integrità dei servizi](teams-adoption-schedule-service-health-reviews.md)

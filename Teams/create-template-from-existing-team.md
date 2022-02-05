@@ -1,7 +1,7 @@
 ---
 title: Creare un modello da un team esistente in Microsoft Teams
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 ms.reviewer: aaglick
 manager: serdars
 ms.topic: article
@@ -11,18 +11,13 @@ search.appverid: MET150
 description: Informazioni su come usare un team esistente per creare un nuovo modello in Microsoft Teams.
 ms.localizationpriority: medium
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.collection:
-- M365-collaboration
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: a5f22f9acbd3cf39c144ca07cce1c5d690267b6b
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60828479"
+  - Microsoft Teams
 ---
+
 # <a name="create-a-team-template-from-an-existing-team-in-microsoft-teams"></a>Creare un modello di team da un team esistente in Microsoft Teams
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
@@ -33,11 +28,11 @@ Microsoft Teams consente di creare un modello da un team esistente che può esse
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro **espandere** Teams  >  **Team**.
+2. Nel riquadro di spostamento **sinistro espandere Teams** >  **modelli Diam**.
 
 3. Selezionare **Aggiungi**.
 
-4. Selezionare **Usa un team esistente come modello** e quindi **avanti.**
+4. Selezionare **Usa un team esistente come modello** e quindi **avanti**.
 
  ![Immagine della schermata del punto di partenza dei modelli di team con l'opzione Usa un team esistente come modello evidenziata.](media/team-existing-team-as-template.png)
 
@@ -45,7 +40,7 @@ Microsoft Teams consente di creare un modello da un team esistente che può esse
 
 ![Immagine dell'elenco di team con un team evidenziato.](media/team-existing-team-selection.png)
 
-6. Nella sezione **Impostazioni modello** compilare i campi seguenti e quindi selezionare **Avanti:**
+6. Nella sezione **Impostazioni modello** completare i campi seguenti e quindi selezionare **Avanti**:
     - Nome modello
     - Descrizione breve e lunga del modello
     - Visibilità delle impostazioni locali  
@@ -61,7 +56,7 @@ Microsoft Teams consente di creare un modello da un team esistente che può esse
 
 8. Selezionare **Invia** per salvare le modifiche.
 
-Il nuovo modello viene visualizzato **nell'elenco Modelli team.** Il modello può essere usato per creare un team in Teams.
+Il nuovo modello viene visualizzato **nell'elenco Modelli team** . Il modello può essere usato per creare un team in Teams.
 
 > [!Note]
 > La visualizzazione di un modello personalizzato nella raccolta può richiedere fino a 24 ore.

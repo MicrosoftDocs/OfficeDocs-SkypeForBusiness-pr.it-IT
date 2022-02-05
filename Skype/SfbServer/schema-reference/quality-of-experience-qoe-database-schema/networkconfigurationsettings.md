@@ -1,25 +1,20 @@
 ---
 title: Visualizzazione NetworkConfigurationSettings
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 279ea5d1-5d07-44d4-8133-2557446914ca
 description: Nella visualizzazione NetworkConfigurationSettings sono memorizzate informazioni sulla configurazione di rete. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 9280a6e309292dcc42b981dea329f8a90da8d854
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60851780"
 ---
+
 # <a name="networkconfigurationsettings-view"></a>Visualizzazione NetworkConfigurationSettings
  
 Nella visualizzazione NetworkConfigurationSettings sono memorizzate informazioni sulla configurazione di rete. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.

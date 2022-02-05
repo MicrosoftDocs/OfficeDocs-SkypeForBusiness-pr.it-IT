@@ -1,27 +1,22 @@
 ---
 title: Espansione delle impostazioni di Mediation Server per Lync Server 2010
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.MediationServerGeneralSettingsExpander2010
+  - ms.lync.tb.MediationServerGeneralSettingsExpander2010
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 48e434c1-0c3c-4502-9441-c0a3c340f51f
 description: 'In questa finestra di dialogo è possibile modificare le proprietà dei Mediation Server. Sul lato sinistro è presente un insieme di collegamenti rapidi che consentono di accedere alle impostazioni delle sezioni Generale, Hop successivo e Gateway PSTN. In ogni sezione sono disponibili le impostazioni seguenti:'
-ms.openlocfilehash: 3d30ef41a60f9d837e2d80ae3169c299f46af686
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60852110"
 ---
+
 # <a name="mediation-server-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni di Mediation Server per Lync Server 2010
 
 In questa finestra di dialogo è possibile modificare le proprietà dei Mediation Server. Sul lato sinistro è presente un insieme di collegamenti rapidi che consentono di accedere alle impostazioni delle sezioni Generale, Hop successivo e Gateway PSTN. In ogni sezione sono disponibili le impostazioni seguenti:
@@ -30,7 +25,7 @@ In questa finestra di dialogo è possibile modificare le proprietà dei Mediatio
 
 - **FQDN**: modificare il nome di dominio completo del Mediation Server
 
-- **Associazioni**: selezionare la casella di controllo Associa pool di server perimetrali (per i componenti **multimediali)** e selezionare un server perimetrale o un pool di server perimetrali per il Mediation Server da utilizzare come percorso multimediale per l'accesso esterno.
+- **Associazioni**: selezionare la **casella** di controllo Associa pool di server perimetrali (per i componenti multimediali) e selezionare un server perimetrale o un pool di server perimetrali per il Mediation Server da utilizzare come percorso multimediale per l'accesso esterno.
 
   **Hop successivo**:
 
@@ -40,7 +35,7 @@ In questa finestra di dialogo è possibile modificare le proprietà dei Mediatio
 
   **Gateway PSTN Mediation Server**:
 
-- **Porte di attesa:** definire le porte su cui il Mediation Server sarà in ascolto. È possibile definire una porta per **TLS** (Transport Layer Security) o **TCP** (Transport Control Protocol). Per rendere disponibile la voce della porta relativa a TCP, è necessario selezionare la casella di controllo **Abilita porta TCP**.
+- **Porte di attesa**: definire le porte su cui il Mediation Server sarà in ascolto. È possibile definire una porta per **TLS** (Transport Layer Security) o **TCP** (Transport Control Protocol). Per rendere disponibile la voce della porta relativa a TCP, è necessario selezionare la casella di controllo **Abilita porta TCP**.
 
     > [!IMPORTANT]
     > Consultare la documentazione e le impostazioni di configurazione del gateway PSTN (Public Switched Telephone Network) per determinare se è necessario abilitare e definire i valori di porta TLS, TCP o entrambi. TLS è un protocollo più sicuro, che utilizza certificati per crittografare il traffico tra Mediation Server e il gateway PSTN. Non tutti i gateway PSTN supportano TLS.

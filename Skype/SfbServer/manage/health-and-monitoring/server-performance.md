@@ -1,24 +1,19 @@
 ---
 title: Rapporto prestazioni server in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 942bb39a-1790-498e-9d99-8f6ce2d155c3
 description: 'Riepilogo: informazioni sul Rapporto prestazioni server in Skype for Business Server.'
-ms.openlocfilehash: 6e13a12452fbdbf650a7e307340269803a2301b6
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60836338"
 ---
+
 # <a name="server-performance-report-in-skype-for-business-server"></a>Rapporto prestazioni server in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto prestazioni server in Skype for Business Server.
@@ -43,7 +38,7 @@ Il Rapporto prestazioni server fornisce un elenco Skype for Business Server serv
   
 ## <a name="accessing-the-server-performance-report"></a>Accesso al Rapporto prestazioni dei server
 
-Il Rapporto prestazioni dei server è accessibile dalla home page Rapporti di monitoraggio. È possibile eseguire il drill-down al Rapporto elenco chiamate [in Skype for Business Server](call-list-report-0.md) facendo clic su una delle metriche seguenti:
+Il Rapporto prestazioni dei server è accessibile dalla home page Rapporti di monitoraggio. È possibile eseguire il drill-down al [Rapporto elenco chiamate in Skype for Business Server](call-list-report-0.md) facendo clic su una delle metriche seguenti:
   
 - Volume chiamata
     

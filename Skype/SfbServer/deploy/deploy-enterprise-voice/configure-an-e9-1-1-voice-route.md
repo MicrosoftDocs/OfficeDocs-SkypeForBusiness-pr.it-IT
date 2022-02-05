@@ -1,28 +1,23 @@
 ---
 title: Configurare una route vocale E9-1-1 in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 6933b840-0e7b-4509-ae43-bc9065677547
 description: Configurare le route vocali E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 86904c32db6ae43b9fa1b6f184048d3b9f419089
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60833952"
 ---
+
 # <a name="configure-an-e9-1-1-voice-route-in-skype-for-business-server"></a>Configurare una route vocale E9-1-1 in Skype for Business Server
  
 Configurare le route vocali E9-1-1 in Skype for Business Server VoIP aziendale. 
@@ -30,13 +25,13 @@ Configurare le route vocali E9-1-1 in Skype for Business Server VoIP aziendale.
 Per distribuire il servizio E9-1-1, è innanzitutto necessario configurare una route vocale per le chiamate di emergenza. Per informazioni dettagliate sulla creazione di route vocali, vedere [Create or modify a voice route in Skype for Business](create-or-modify-a-voice-route.md). È possibile definire più di una route, ad esempio, se nella distribuzione sono inclusi un trunk SIP primario e un trunk SIP secondario. 
   
 > [!NOTE]
-> Per includere informazioni sulla posizione in un messaggio INVITE E9-1-1, è necessario configurare il trunk SIP per la connessione al provider di servizi E9-1-1 in modo che esegua il routing delle chiamate di emergenza attraverso il gateway. A tale scopo, impostare il flag EnablePIDFLOSupport nel cmdlet **Set-CsTrunkConfiguration** su True. Il valore predefinito per EnablePIDFLOSupport è False. Ad esempio: non è necessario abilitare le posizioni di ricezione per `Set-CsTrunkConfiguration Service:PstnGateway:192.168.0.241 -EnablePIDFLOSupport $true.` i gateway PSTN (Public Switched Telephone Network) di fallback e i gateway ELIN (Emergency Location Identification Number).
+> Per includere informazioni sulla posizione in un messaggio INVITE E9-1-1, è necessario configurare il trunk SIP per la connessione al provider di servizi E9-1-1 in modo che esegua il routing delle chiamate di emergenza attraverso il gateway. A tale scopo, impostare il flag EnablePIDFLOSupport nel cmdlet **Set-CsTrunkConfiguration** su True. Il valore predefinito per EnablePIDFLOSupport è False. Ad esempio: `Set-CsTrunkConfiguration Service:PstnGateway:192.168.0.241 -EnablePIDFLOSupport $true.` non è necessario abilitare le posizioni di ricezione per i gateway PSTN (Public Switched Telephone Network) di fallback e i gateway ELIN (Emergency Location Identification Number).
   
 ### <a name="to-configure-an-e9-1-1-voice-route"></a>Per configurare una route vocale E9-1-1
 
 1. Accedere al computer con un account membro del gruppo RTCUniversalServerAdmins o del ruolo amministrativo CsVoiceAdministrator.
     
-2.  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2.  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 3. Eseguire il cmdlet seguente per creare un nuovo record di utilizzo PSTN. 
     

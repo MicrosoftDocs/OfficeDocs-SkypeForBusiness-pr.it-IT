@@ -1,24 +1,19 @@
 ---
 title: Rapporto distribuzione errori in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 365c7beb-24d4-40f5-92e7-4978b9688916
 description: 'Riepilogo: informazioni sul Rapporto distribuzione errori in Skype for Business Server.'
-ms.openlocfilehash: e8ebf3ccbb14b46c862d03f328fdbb327af51992
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60847239"
 ---
+
 # <a name="failure-distribution-report-in-skype-for-business-server"></a>Rapporto distribuzione errori in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto distribuzione errori in Skype for Business Server.
@@ -49,7 +44,7 @@ Queste categorie possono essere utilizzate per localizzare con precisione il pro
   
 - [Rapporto errori principali in Skype for Business Server](top-failures-report.md)
     
-- [Rapporto di diagnostica conferenze in Skype for Business Server](conference-diagnostic-report.md)
+- [Rapporto di diagnostica conferenze Skype for Business Server](conference-diagnostic-report.md)
     
 - [Rapporto di diagnostica attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md)
     

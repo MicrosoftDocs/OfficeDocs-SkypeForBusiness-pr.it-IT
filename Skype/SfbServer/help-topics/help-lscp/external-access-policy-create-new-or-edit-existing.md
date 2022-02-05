@@ -1,27 +1,22 @@
 ---
 title: Criteri di accesso esterno Crea nuovo o Modifica esistente
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/23/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.ExtPolicyEdit
+  - ms.lync.lscp.ExtPolicyEdit
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 6f8fa258-9a9d-44fe-b7e3-0b02604907e2
-description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 6572ad3ab9bf95a425555af75b6d294de183c9c8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60838008"
+description: 'Per saperne di più: fare clic sul collegamento all''attività che si desidera eseguire.'
 ---
+
 # <a name="external-access-policy-create-new-or-edit-existing"></a>Criteri di accesso esterno: crearne di nuovi o modificare quelli esistenti
 
 Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.

@@ -1,29 +1,24 @@
 ---
 title: Esaminare i report dell'amministratore in Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 4/5/2016
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 22d480ea-cd64-4d09-99fe-96e997570844
-description: Nei rapporti di amministrazione sono incluse informazioni dettagliate per la distribuzione e le operazioni. I report vengono generati in base alle selezioni contrassegnate in Siti di progettazione. Il progettista può dare valore aggiunto ai rapporti modificando i diagrammi di rete e definendo gli indirizzi IP completi e i nomi di dominio completi (FQDN) dei server, dei pool e dei servizi di bilanciamento del carico.
-ms.openlocfilehash: fd48494a603b6e279790a92e38040c3e26b01668
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60845299"
+description: 'Nei rapporti di amministrazione sono incluse informazioni dettagliate per la distribuzione e le operazioni. I report vengono generati in base alle selezioni contrassegnate in Siti di progettazione. Il progettista può dare valore aggiunto ai rapporti modificando i diagrammi di rete e definendo gli indirizzi IP completi e i nomi di dominio completi (FQDN) dei server, dei pool e dei servizi di bilanciamento del carico.'
 ---
+
 # <a name="review-the-administrator-reports-in-skype-for-business-server-2015"></a>Esaminare i report dell'amministratore in Skype for Business Server 2015
 
-Nei rapporti di amministrazione sono incluse informazioni dettagliate per la distribuzione e le operazioni. I report vengono generati in base alle selezioni contrassegnate in **Siti di progettazione.** Il progettista può dare valore aggiunto ai rapporti modificando i diagrammi di rete e definendo gli indirizzi IP completi e i nomi di dominio completi (FQDN) dei server, dei pool e dei servizi di bilanciamento del carico.
+Nei rapporti di amministrazione sono incluse informazioni dettagliate per la distribuzione e le operazioni. I report vengono generati in base alle selezioni contrassegnate in **Siti di progettazione**. Il progettista può dare valore aggiunto ai rapporti modificando i diagrammi di rete e definendo gli indirizzi IP completi e i nomi di dominio completi (FQDN) dei server, dei pool e dei servizi di bilanciamento del carico.
 
 La funzionalità report amministratore consente di:
 
@@ -38,7 +33,7 @@ La funzionalità report amministratore consente di:
 ## <a name="review-the-summary-report"></a>Esaminare il rapporto riepilogativo
 <a name="Summary_report"> </a>
 
-Il Skype for Business amministratore è il primo di quattro report utili che documenta la progettazione in dettaglio. Le informazioni contenute in questo report e gli altri tre report associati sono utili per la propria Teams:
+Il Skype for Business amministratore è il primo di quattro report importanti che documenta la progettazione in dettaglio. Le informazioni contenute in questo report e gli altri tre report associati sono utili per l'information technology Teams:
 
 ![Rapporto di amministrazione riepilogativo generale.](../../media/General_Summary_Report_Admin_Report.png)
 

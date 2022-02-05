@@ -1,7 +1,7 @@
 ---
 title: Eseguire l'onboarding degli early adopter in Microsoft Teams
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.date: 11/06/2018
 ms.topic: article
@@ -12,20 +12,15 @@ description: Informazioni su come eseguire l'onboarding degli early adopter nel 
 ms.localizationpriority: high
 search.appverid: MET150
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.collection:
-- M365-collaboration
-- seo-marvel-apr2020
-- m365initiative-deployteams
+  - M365-collaboration
+  - seo-marvel-apr2020
+  - m365initiative-deployteams
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: db8643d1637f7bda5e65fd3392d40cb4430c359d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858743"
+  - Microsoft Teams
 ---
+
 # <a name="onboard-early-adopters-to-microsoft-teams"></a>Eseguire l'onboarding degli early adopter in Microsoft Teams
 
 ## <a name="invite-users-to-teams"></a>Invitare gli utenti in Teams

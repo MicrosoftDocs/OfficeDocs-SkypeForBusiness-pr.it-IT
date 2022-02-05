@@ -1,27 +1,22 @@
 ---
 title: Sicurezza del servizio Web Impostazioni crearne una nuova o modificarne una esistente
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.SecWebSvcEdit
+  - ms.lync.lscp.SecWebSvcEdit
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: eddda5af-ddee-4ded-9c70-a07af0f8d14d
-description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 8badd865fa4145e401464ace3422cdcc997f92f2
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60840188"
+description: 'Per saperne di più: fare clic sul collegamento all''attività che si desidera eseguire.'
 ---
+
 # <a name="web-service-security-settings-create-new-or-modify-existing"></a>Impostazioni di sicurezza dei servizi Web: crearne di nuove o modificare quelle esistenti
 
 Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
@@ -32,4 +27,4 @@ Per saperne di più: fare clic sul collegamento all'attività che si desidera es
 
 - [Eliminare un servizio Web](/previous-versions/office/lync-server-2013/lync-server-2013-delete-existing-web-service-configuration-settings)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015](../../manage/manage.md).

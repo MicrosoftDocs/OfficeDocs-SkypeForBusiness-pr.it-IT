@@ -1,27 +1,22 @@
 ---
 title: Aggiungere l'archivio SQL
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddSqlStorePage
+  - ms.lync.tb.AddSqlStorePage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 8ec39dfc-c58d-4fdb-b61e-f71dd691cef8
-description: Per definire un nuovo archivio SQL, ovvero specificare un database basato su SQL Server e un'istanza di SQL Server, ovvero un'istanza predefinita o un'istanza denominata, è necessario specificare quanto segue.
-ms.openlocfilehash: 367d0bb57d673bdb062b5a1f99ead7cb426995c6
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60844509"
+description: 'Per definire un nuovo archivio SQL, ovvero specificare un database basato su SQL Server e un''istanza di SQL Server, ovvero un''istanza predefinita o un''istanza denominata, è necessario specificare quanto segue.'
 ---
+
 # <a name="add-sql-store"></a>Aggiungere l'archivio SQL
 
 Per definire un nuovo archivio SQL, ovvero specificare un database basato su SQL Server e un'istanza di SQL Server, ovvero un'istanza predefinita o un'istanza denominata, è necessario specificare quanto segue.

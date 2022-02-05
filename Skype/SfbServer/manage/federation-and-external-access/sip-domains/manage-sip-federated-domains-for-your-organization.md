@@ -1,27 +1,22 @@
 ---
 title: Gestire i domini federati SIP per l'organizzazione
-ms.reviewer: ''
-ms:assetid: abc48829-e5cf-4651-bc38-899192f5c3bc
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ552454(v=OCS.15)
-ms:contentKeyID: 48679565
+ms.reviewer: null
+'ms:assetid': abc48829-e5cf-4651-bc38-899192f5c3bc
+'ms:mtpsurl': 'https://technet.microsoft.com/en-us/library/JJ552454(v=OCS.15)'
+'ms:contentKeyID': 48679565
 mtps_version: v=OCS.15
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
-description: Informazioni su come gestire e configurare i domini SIP con cui è possibile eseguire la federazione,
-ms.openlocfilehash: b50da7b95bab938a3b5026ce859f423f8a2718a9
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60836358"
+description: 'Informazioni su come gestire e configurare i domini SIP con cui è possibile eseguire la federazione,'
 ---
+
 # <a name="manage-sip-federated-domains-for-your-organization-in-skype-for-business-server"></a>Gestire i domini federati SIP per l'organizzazione in Skype for Business Server
 
 
@@ -49,7 +44,7 @@ Se è stato configurato il supporto per i partner federati, è possibile specifi
       - In **Nome di dominio (o FQDN)** digitare il nome del dominio del partner federato.       
 
         > [!NOTE]  
-        > Il nome deve essere univoco e non deve esistere già come dominio consentito per il server che esegue il servizio Access Edge. Il nome può essere costituito da un massimo di 256 caratteri.<BR><br>La ricerca in base al nome di dominio del partner federato si basa sulla corrispondenza del suffisso. Se ad esempio si digita **contoso.com**, la ricerca restituirà anche il dominio **it.contoso.com**.<BR><br>Un dominio di partner federato non può essere contemporaneamente bloccato e consentito. Skype for Business Server impedisce che ciò accada in modo che non sia necessario sincronizzare gli elenchi.
+        > Il nome deve essere univoco e non deve esistere già come dominio consentito per il server che esegue il servizio Access Edge. Il nome può essere costituito da un massimo di 256 caratteri.<BR><br>La ricerca in base al nome di dominio del partner federato si basa sulla corrispondenza del suffisso. Se ad esempio si digita **contoso.com**, la ricerca restituirà anche il dominio **it.contoso.com**.<BR><br>Un dominio di partner federato non può essere contemporaneamente bloccato e consentito. Skype for Business Server che ciò accada in modo che non sia necessario sincronizzare gli elenchi.
     
       - Se si desidera limitare l'accesso per questo dominio federato agli utenti di un server specifico che esegue il servizio Access Edge, in **Servizio Access Edge (FQDN)** digitare l'FQDN del server del dominio federato che esegue il servizio Access Edge.    
       - Se si desidera fornire ulteriori informazioni, in **Commento** digitare le informazioni che si desidera condividere con altri amministratori di sistema sulla configurazione.
@@ -79,7 +74,7 @@ Impedire a uno o più domini esterni di connettersi all'organizzazione. A tale s
       - In **Nome di dominio (o FQDN)** digitare il nome del dominio del partner federato che si desidera bloccare.
 
         > [!NOTE]  
-        > Il nome può essere costituito da un massimo di 256 caratteri.<BR><br>La ricerca in base al nome di dominio del partner federato si basa sulla corrispondenza del suffisso. Se ad esempio si digita **contoso.com**, la ricerca restituirà anche il dominio **it.contoso.com**.<BR><br>Un dominio di partner federato non può essere contemporaneamente bloccato e consentito. Skype for Business Server impedisce che ciò accada in modo che non sia necessario sincronizzare gli elenchi.
+        > Il nome può essere costituito da un massimo di 256 caratteri.<BR><br>La ricerca in base al nome di dominio del partner federato si basa sulla corrispondenza del suffisso. Se ad esempio si digita **contoso.com**, la ricerca restituirà anche il dominio **it.contoso.com**.<BR><br>Un dominio di partner federato non può essere contemporaneamente bloccato e consentito. Skype for Business Server che ciò accada in modo che non sia necessario sincronizzare gli elenchi.
    
       - (Facoltativo) In **Commento** digitare le informazioni che si desidera condividere con gli altri amministratori di sistema su questa configurazione.
 

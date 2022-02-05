@@ -1,7 +1,7 @@
 ---
 title: Creare un team a livello di organizzazione in Microsoft Teams
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 ms.reviewer: phlouie
 manager: serdars
 ms.topic: article
@@ -11,19 +11,14 @@ search.appverid: MET150
 description: Informazioni su come creare e gestire un team a livello di organizzazione in Teams per fornire un modo automatico di collaborazione a tutti gli utenti di un'organizzazione di piccole e medie dimensioni.
 ms.localizationpriority: medium
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.collection:
-- M365-collaboration
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8698625cc219b1d343afd43cc8bf44cd9e71dc52
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861983"
 ---
+
 # <a name="create-an-organization-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
 I team a livello di organizzazione consentono a tutti gli utenti di un'organizzazione di piccole e medie dimensioni di far parte di un unico team collaborativo.
@@ -32,11 +27,11 @@ Con i team a livello di organizzazione, gli amministratori globali possono crear
 - Estrae tutti gli utenti dell'organizzazione 
 - Mantiene aggiornata l'appartenenza ad Active Directory quando gli utenti aderiscono e abbandonano l'organizzazione.
 
-Solo gli amministratori globali possono creare team a livello di organizzazione. Attualmente, un team a livello di organizzazione è limitato alle organizzazioni con non più di 10.000 utenti. Esiste anche un limite di cinque team a livello di organizzazione per ogni tenant. Quando si crea un team, se questi requisiti vengono soddisfatti, gli amministratori globali vedono **a** livello di organizzazione un'opzione quando selezionano **Crea un team da zero.** 
+Solo gli amministratori globali possono creare team a livello di organizzazione. Attualmente, un team a livello di organizzazione è limitato alle organizzazioni con non più di 10.000 utenti. Esiste anche un limite di cinque team a livello di organizzazione per ogni tenant. Quando si crea un team, se questi requisiti vengono soddisfatti, gli amministratori globali vedono **a** livello di organizzazione un'opzione quando selezionano **Crea un team da zero**. 
 
 ![Screenshot dell'opzione a livello di organizzazione per creare un team a livello di organizzazione.](media/create-org-wide-team.png "Schermata dell'opzione a livello di organizzazione per creare un team a livello di organizzazione")
 
-Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali e gli amministratori dei servizi Teams vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a Teams, all'utente viene assegnata una Microsoft Teams Exploratory. Per altre informazioni sulla licenza Esplorativa, vedere Gestire [la licenza esplorativa Microsoft Teams esplorativa](teams-exploratory.md). 
+Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali e gli amministratori dei servizi Teams vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a Teams, all'utente viene assegnata una Microsoft Teams Exploratory. Per altre informazioni sulla licenza Esplorativa, vedere Gestire [la licenza esplorativa Microsoft Teams esplorativo](teams-exploratory.md). 
 
 I tipi di account seguenti non verranno aggiunti al team a livello di organizzazione:
 
@@ -49,7 +44,7 @@ I tipi di account seguenti non verranno aggiunti al team a livello di organizzaz
 Quando la directory dell'organizzazione viene aggiornata per includere nuovi utenti attivi o per disabilitare gli account degli utenti che non lavorano più nell'azienda, le modifiche vengono sincronizzate automaticamente e gli utenti vengono aggiunti o rimossi dal team. I membri del team non possono uscire da un team a livello di organizzazione. Il proprietario del team può aggiungere o rimuovere manualmente utenti, se necessario.
 
 > [!NOTE]
-> - Se l'opzione a  livello di organizzazione non è visualizzata quando si crea un team e si è un amministratore globale, è possibile che sia stato raggiunto il limite di cinque team a livello di organizzazione oppure che l'organizzazione abbia più del limite di dimensioni corrente di 10.000 membri. Contiamo di aumentare il limite in futuro. I team a livello di organizzazione non sono ancora disponibili per Teams per l'istruzione.
+> - Se l'opzione a livello di  organizzazione non è visualizzata quando si crea un team e si è un amministratore globale, è possibile che sia stato raggiunto il limite di cinque team a livello di organizzazione oppure che l'organizzazione abbia più del limite di dimensioni corrente di 10.000 membri. Contiamo di aumentare il limite in futuro. I team a livello di organizzazione non sono ancora disponibili per Teams per l'istruzione.
 > - Le chat room che non fanno parte di un elenco di chat room, apparecchiature e account delle risorse potrebbero essere aggiunte o sincronizzate con il team a livello di organizzazione. I proprietari del team possono rimuovere facilmente questi account dal team.
 > - Tutte le azioni del sistema per aggiungere o rimuovere membri sono pubblicate nel canale Generale. Inoltre, nel client di Teams sarà indicato che il canale ha nuove attività.
 > - Verrà creato automaticamente un team a livello di organizzazione per l'organizzazione se l'organizzazione non ha più di Teams e non ha più di 5.000 utenti. Il nome del team rifletterà il nome del tenant e avrà un canale Generale. Gli amministratori globali possono modificare questo team come qualsiasi altro team.
@@ -62,8 +57,8 @@ Per ottenere il massimo dal team a livello di organizzazione, è consigliabile c
 
 Ridurre gli elementi di distrazione facendo pubblicare nel canale Generale solo i proprietari del team. 
 
-1. Passare al team, individuare il canale Generale e quindi selezionare ̇ ̇ ̇ **Altre opzioni**  >  **Gestisci canale**. 
-2. Nella scheda **Impostazioni canale fare** clic su **Autorizzazioni** e quindi selezionare Solo i proprietari **possono pubblicare messaggi.**
+1. Passare al team, individuare il canale Generale e quindi selezionare ̇ ̇ ̇ **Altre** **opzioniManage** >  channel. 
+2. Nella scheda **Impostazioni canale fare** clic su **Autorizzazioni** e quindi selezionare **Solo i proprietari possono pubblicare messaggi**.
 
 ### <a name="turn-off-team-and-team-name-mentions"></a>Disattivare le menzioni @canale e @[nome canale]
 
@@ -97,7 +92,7 @@ Anche se i membri non possono lasciare un team a livello di organizzazione, in q
 
 Solo gli amministratori globali possono creare un team a livello di organizzazione usando il client Teams globale. Se l'organizzazione impone la creazione di team con PowerShell, la soluzione alternativa consigliata consiste nell'aggiungere gli amministratori globali al gruppo di sicurezza degli utenti che possono creare un team.
 
-Per altre informazioni, vedere [Gestire gli utenti che possono creare gruppi.](/microsoft-365/admin/create-groups/manage-creation-of-groups)
+Per altre informazioni, vedere [Gestire gli utenti che possono creare gruppi](/microsoft-365/admin/create-groups/manage-creation-of-groups).
 
 Se questa soluzione alternativa non è un'opzione, è possibile usare PowerShell per creare un team pubblico e aggiungere un amministratore globale come proprietario del team. Quindi, l'amministratore globale deve fare clic su **Altre opzioni** accanto al nome del team, fare clic su **Modifica team** e modificare la privacy in **A livello di organizzazione: tutti gli utenti dell'organizzazione verranno aggiunti automaticamente**. 
 
@@ -114,4 +109,4 @@ I modelli di team non possono essere usati per creare un team a livello di organ
 
 ## <a name="see-also"></a>Vedere anche
 
-Guardare un video sulla creazione di un team a livello aziendale [in Microsoft Teams.](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3)
+Guardare un video sulla [creazione di un team a livello aziendale in Microsoft Teams](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3).

@@ -1,27 +1,22 @@
 ---
 title: Espansione delle impostazioni generali dell'hop successivo di Persistent Chat
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.PersistentChatNextHopSettingsExpander
+  - ms.lync.tb.PersistentChatNextHopSettingsExpander
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 91423153-746a-4f8a-9c7f-4102d3fdbb8a
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 description: È possibile configurare il pool hop successivo di Persistent Chat selezionando un Front End Server o un pool Front End nell'elenco.
-ms.openlocfilehash: 3cf6d385d891db55478e97bcc69620c8dd2dbc67
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60831140"
 ---
+
 # <a name="persistent-chat-next-hop-settings-expander"></a>Espansione delle impostazioni generali dell'hop successivo di Persistent Chat
 
 > [!NOTE] 
