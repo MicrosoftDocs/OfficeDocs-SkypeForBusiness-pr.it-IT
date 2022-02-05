@@ -1,27 +1,22 @@
 ---
 title: Configurazione versione client
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.lscp.ClientCVSettingMain
+  - ms.lync.lscp.ClientCVSettingMain
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: cb17314e-b89e-4821-8855-12f8fd2edc9b
-ROBOTS: NOINDEX, NOFOLLOW
-description: Oltre a specificare la versione dei client che si desidera supportare nell'ambiente, è possibile specificare un'azione predefinita per i client per i quali non sono già stati definiti criteri delle versioni. In questo modo, è possibile limitare le versioni client usate nell'ambiente e ciò può contribuire a tenere sotto controllo i costi associati al supporto di più versioni client.
-ms.openlocfilehash: fbbe0e6386af8474a621d974faa9936d03d33dbf
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60857913"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Oltre a specificare la versione dei client che si desidera supportare nell''ambiente, è possibile specificare un''azione predefinita per i client per i quali non sono già stati definiti criteri delle versioni. In questo modo, è possibile limitare le versioni client usate nell''ambiente e ciò può contribuire a tenere sotto controllo i costi associati al supporto di più versioni client.'
 ---
+
 # <a name="client-version-configuration"></a>Configurazione versione client
 
 Oltre a specificare la versione dei client che si desidera supportare nell'ambiente, è possibile specificare un'azione predefinita per i client per i quali non sono già stati definiti criteri delle versioni. In questo modo, è possibile limitare le versioni client usate nell'ambiente e ciò può contribuire a tenere sotto controllo i costi associati al supporto di più versioni client.
@@ -30,7 +25,7 @@ Oltre a specificare la versione dei client che si desidera supportare nell'ambie
 
 Nella pagina **Configurazione versione client** è possibile eseguire le attività seguenti:
 
-- Modificare la configurazione predefinita ( **Globale**) della versione client.
+- Modificare la configurazione predefinita ( **globale**) della versione client.
 
 - Creare una configurazione della versione client per un sito specifico.
 

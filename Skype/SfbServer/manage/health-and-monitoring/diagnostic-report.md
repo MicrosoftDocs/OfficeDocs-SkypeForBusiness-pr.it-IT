@@ -1,24 +1,19 @@
 ---
 title: Rapporto di diagnostica in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: b389dbd9-f2e8-4184-93d0-2e504796ac16
 description: 'Riepilogo: informazioni sul Rapporto di diagnostica in Skype for Business Server.'
-ms.openlocfilehash: 6b04dfd74e13568e6d22448ad9160a874dd6f79b
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60855533"
 ---
+
 # <a name="diagnostic-report-in-skype-for-business-server"></a>Rapporto di diagnostica in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto di diagnostica in Skype for Business Server.
@@ -60,4 +55,4 @@ La tabella seguente elenca le informazioni disponibili nel Rapporto di diagnosti
 |**Tempi partecipazione conferenza (ms)** <br/> |No  <br/> |Intervallo di tempo, in millisecondi, che è stato necessario all'utente per partecipare alla conferenza.  <br/> |
 |**Intestazione di diagnostica** <br/> |No  <br/> |Descrizione dell'ID diagnostica.  <br/> |
    
-Un elenco di errori di diagnostica è disponibile nella pagina [Intestazione Ms-Diagnostics.](/openspecs/office_protocols/ms-ocer/f6787b39-0842-43ca-94a2-6afadda5f0a3)
+Un elenco di errori di diagnostica è disponibile nella pagina [Intestazione Ms-Diagnostics](/openspecs/office_protocols/ms-ocer/f6787b39-0842-43ca-94a2-6afadda5f0a3).

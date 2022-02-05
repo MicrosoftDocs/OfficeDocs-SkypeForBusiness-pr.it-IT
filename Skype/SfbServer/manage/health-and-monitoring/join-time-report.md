@@ -1,25 +1,20 @@
 ---
-title: Rapporto tempo di partecipazione alla conferenza in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: Rapporto tempo di partecipazione alla conferenza Skype for Business Server
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: e64dc89a-25e4-4cb8-bcb1-51712e69ba5a
 description: 'Riepilogo: informazioni sul Rapporto riepilogativo tempo di partecipazione alla conferenza in Skype for Business Server.'
-ms.openlocfilehash: 8ff509f1efffed45fe18e7aa2267bc9a92d4c4d8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60862413"
 ---
-# <a name="conference-join-time-report-in-skype-for-business-server"></a>Rapporto tempo di partecipazione alla conferenza in Skype for Business Server
+
+# <a name="conference-join-time-report-in-skype-for-business-server"></a>Rapporto tempo di partecipazione alla conferenza Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto riepilogativo tempo di partecipazione alla conferenza in Skype for Business Server.
   

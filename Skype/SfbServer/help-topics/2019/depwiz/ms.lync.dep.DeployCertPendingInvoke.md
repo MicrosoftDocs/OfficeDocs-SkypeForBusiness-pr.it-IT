@@ -1,27 +1,22 @@
 ---
 title: Certificato in sospeso (Invoke)
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.dep.DeployCertPendingInvoke
+  - ms.lync.dep.DeployCertPendingInvoke
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: adb5e0f3-17a6-40c2-9c95-c9cd2b558b54
-ROBOTS: NOINDEX, NOFOLLOW
-description: Nella pagina Esecuzione comandi in corso viene visualizzato lo stato dei comandi che recuperano il certificato in sospeso. Al termine dell'attività, diventa disponibile il file di registro Recupero certificati in sospeso. Fare clic su Visualizza registro per visualizzare lo stato di elaborazione e di completamento dell'attività. Fare clic su Avanti per continuare.
-ms.openlocfilehash: 91446802c2060e3a91815965b6ff2f8cc20d19bf
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858623"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Nella pagina Esecuzione comandi in corso viene visualizzato lo stato dei comandi che recuperano il certificato in sospeso. Al termine dell''attività, diventa disponibile il file di registro Recupero certificati in sospeso. Fare clic su Visualizza registro per visualizzare lo stato di elaborazione e di completamento dell''attività. Fare clic su Avanti per continuare.'
 ---
+
 # <a name="pending-certificate-invoke"></a>Certificato in sospeso (Invoke)
  
 Nella pagina **Esecuzione comandi in corso** viene visualizzato lo stato dei comandi che recuperano il certificato in sospeso. Al termine dell'attività, diventa disponibile il file di registro **Recupero certificati in sospeso**. Fare clic su **Visualizza registro** per visualizzare lo stato di elaborazione e di completamento dell'attività. Fare clic su **Avanti** per continuare.

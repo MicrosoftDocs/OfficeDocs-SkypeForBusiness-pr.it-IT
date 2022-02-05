@@ -1,28 +1,23 @@
 ---
 title: Pianificare le linee telefoniche private con Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 9cc4f9e1-7b7a-4699-bd05-f16669ef2d21
 description: Pianificazione di linee telefoniche private (secondarie) in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: a9054266cc5092f77e0fecd66b71b7180c89018c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861083"
 ---
+
 # <a name="plan-for-private-telephone-lines-with-skype-for-business"></a>Pianificare le linee telefoniche private con Skype for Business
  
 Pianificazione di linee telefoniche private (secondarie) in Skype for Business Server VoIP aziendale.
@@ -75,7 +70,7 @@ Sebbene il concetto di una seconda linea telefonica privata sia fondamentalmente
     > Quando una chiamata a una linea privata viene instradata a un numero di telefono alternativo, il numero di telefono della linea telefonica privata viene reso disponibile per il numero di telefono alternativo e può essere visualizzato nei registri per tale numero. 
   
     > [!NOTE]
-    > Le chiamate da una conferenza alla linea telefonica privata non avranno un'indicazione di linea  *privata*  nella notifica del sistema in arrivo.
+    > Le chiamate da una conferenza alla linea telefonica privata non avranno un'indicazione di  *linea privata nella*  notifica del sistema in arrivo.
   
 ## <a name="administering-private-telephone-lines"></a>Amministrazione delle linee telefoniche private
 
@@ -88,7 +83,7 @@ Oltre agli aspetti tecnici della creazione e della gestione delle linee telefoni
 
  Gli account per i nuovi utenti che necessitano di linee telefoniche private vengono creati nello stesso modo degli account senza linee telefoniche private, utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
-Utilizzare il cmdlet **Set-CsUser** in Skype for Business Server Management Shell per assegnare un numero di telefono a una linea telefonica privata per un utente, ad esempio **Set-CsUser -Identity "sip:joe@contoso.com" -PrivateLine "Tel:+14255551212".**
+Utilizzare il cmdlet **Set-CsUser** in Skype for Business Server Management Shell per assegnare un numero di telefono a una linea telefonica privata per un utente, ad esempio **Set-CsUser -Identity "sip:joe@contoso.com" -PrivateLine "Tel:+14255551212"**.
   
 I numeri di telefono per le linee telefoniche private possono avere una lunghezza compresa tra 3 e 15 e devono essere preceduti dal prefisso "TEL:". Possono avere qualsiasi codice di area geografica e qualsiasi codice paese/area geografica purché l'organizzazione abbia una composizione diretta verso l'interno per tale codice di area geografica e codice paese/area geografica. 
   

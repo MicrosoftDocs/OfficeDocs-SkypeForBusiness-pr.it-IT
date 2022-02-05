@@ -1,32 +1,27 @@
 ---
 title: Distribuire Skype for Business Server 2019
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 7/9/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
-ms.assetid: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
+ms.assetid: null
 description: 'Riepilogo: esplorare questi collegamenti per informazioni su come installare e configurare Skype for Business Server 2019.'
-ms.openlocfilehash: 47005c5b1b236e9f93dec33bf10ddef80c96a3c8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60842508"
 ---
+
 # <a name="deploy-skype-for-business-server-2019"></a>Distribuire Skype for Business Server 2019
  
-**Riepilogo:** Esplora questi collegamenti per informazioni su come installare e configurare Skype for Business Server 2019 ed eseguire la migrazione da versioni precedenti.
+**Riepilogo:** Esplorare questi collegamenti per informazioni su come installare e configurare Skype for Business Server 2019 ed eseguire la migrazione da versioni precedenti.
   
 Skype for Business Server offre soluzioni di messaggistica istantanea, presenza, conferenze, video e telefonia in grado di supportare i requisiti di collaborazione a livello aziendale. In questo argomento vengono forniti collegamenti a informazioni su come distribuire e configurare Skype for Business Server. 
   
@@ -39,7 +34,7 @@ Gli articoli seguenti su come installare e configurare Skype for Business Server
 |&nbsp;|Contenuto|Descrizione|
 |:-----|:-----|:-----|
 |![Icona per la documentazione.](/office/media/icons/paragraph-writing-blue.svg)|[Requisiti di sistema per Skype for Business Server 2019](../plan/system-requirements.md)   |Informazioni sui requisiti del server e dell'ambiente per Skype for Business Server.   |
-|![Icona per la documentazione.](/office/media/icons/paragraph-writing-blue.svg)|[Nozioni di base sulla topologia per Skype for Business Server](../../SfbServer/plan-your-deployment/topology-basics/topology-basics.md)  |Informazioni sulle opzioni della topologia e sugli scenari di collocazione dei server per Skype for Business Server.   |
+|![Icona per la documentazione.](/office/media/icons/paragraph-writing-blue.svg)|[Nozioni di base sulla topologia per Skype for Business Server](../../SfbServer/plan-your-deployment/topology-basics/topology-basics.md)  |Informazioni sulle opzioni di topologia e sugli scenari di collocazione dei server per Skype for Business Server.   |
 |![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)|[Installare Skype for Business Server](../../SfbServer/deploy/install/install.md) |Informazioni su come installare Skype for Business Server in diverse topologie, sia in ambienti fisici che virtuali.   |
 |![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)| [Migrazione a Skype for Business Server 2019](../migration/migration-to-skype-for-business-server-2019.md)  |Informazioni su come eseguire la migrazione da versioni precedenti di Skype for Business o Lync Server.   |
 |![Icona Modalità numerica.](/office/media/icons/list-123-blue.svg)|[Configurare l'esperienza client con Skype for Business](../../SfbServer/deploy/deploy-clients/configure-the-client-experience.md)  |Scopri come configurare l'esperienza client.   |
@@ -55,6 +50,6 @@ Le risorse seguenti su come pianificare Skype for Business Server sono disponibi
 |&nbsp;|Contenuto|Descrizione|
 |:-----|:-----|:-----|
 |![Icona per Documenti.](/office/media/icons/paragraph-writing-blue.svg)|[Skype for Business Server per professionisti IT](../../Hub/index.yml)  |Visita il centro risorse per accedere a video, siti della community, documentazione, download e altro ancora.|
-|![Icona per il contenuto dello sviluppatore.](/office/media/icons/developer-blue.svg)|[Skype Piattaforma per sviluppatori](/skype-sdk/skypedeveloperplatform)  |Trova le risorse per sviluppatori Skype for Business Server, inclusi esempi di codice, formazione e SDK.   |
+|![Icona per il contenuto dello sviluppatore.](/office/media/icons/developer-blue.svg)|[Skype per sviluppatori](/skype-sdk/skypedeveloperplatform)  |Trova le risorse per sviluppatori Skype for Business Server, inclusi esempi di codice, formazione e SDK.   |
 |![Icona per notizie, blog e così via.](/office/media/icons/blog-site-blue.svg)|[Gestione e adozione delle modifiche](https://go.microsoft.com/fwlink/p/?LinkId=532796) <br/> [Blog di Office](https://go.microsoft.com/fwlink/p/?LinkId=528899) <br/> [Skype blog del team](https://go.microsoft.com/fwlink/p/?LinkId=532818)  |Tenere il passo con le notizie dei team che creano e documenta Skype for Business Server.   |
 

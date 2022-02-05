@@ -1,25 +1,20 @@
 ---
 title: Gestire i criteri di archiviazione in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/28/2016
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 75ce32ba-eb82-4339-9c02-5df5f2c2ebd2
-description: "Riepilogo: informazioni su come gestire i criteri utente per l'archiviazione per Skype for Business Server."
-ms.openlocfilehash: aefb05c4ee1be0af0af4d2ab4ab4d53efbd71912
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60856763"
+description: 'Riepilogo: informazioni su come gestire i criteri utente per l''archiviazione per Skype for Business Server.'
 ---
+
 # <a name="manage-archiving-policies-in-skype-for-business-server"></a>Gestire i criteri di archiviazione in Skype for Business Server
 
 **Riepilogo:** Informazioni su come gestire i criteri utente per l'archiviazione per Skype for Business Server.
@@ -33,7 +28,7 @@ I criteri di archiviazione vengono inizialmente impostati quando si distribuisce
 I criteri di archiviazione possono essere impostati a livello globale, di sito o di utente.
   
 > [!NOTE]
-> Se è stata abilitata l'integrazione di Microsoft Exchange per la distribuzione, i criteri di Exchange controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e che le cassette postali vengono In-Place conservazione. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) e Configure integration with Exchange storage for [Skype for Business Server](../../deploy/deploy-archiving/configure-integration-with-exchange-storage.md). 
+> Se è stata abilitata l'integrazione di Microsoft Exchange per la distribuzione, i criteri di Exchange controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e le cassette postali vengono In-Place archiviazione. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) e [Configure integration with Exchange storage for Skype for Business Server](../../deploy/deploy-archiving/configure-integration-with-exchange-storage.md). 
   
 ## <a name="manage-archiving-policies-by-using-the-control-panel"></a>Gestire i criteri di archiviazione tramite il Pannello di controllo
 

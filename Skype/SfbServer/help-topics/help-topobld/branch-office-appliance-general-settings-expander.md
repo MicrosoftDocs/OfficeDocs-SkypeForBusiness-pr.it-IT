@@ -1,27 +1,22 @@
 ---
 title: Espansione delle impostazioni generali di Survivable Office Appliance
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.BranchOfficeApplianceGeneralSettingsExpander
+  - ms.lync.tb.BranchOfficeApplianceGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 86860416-7c9b-49af-b9d2-658c172852de
 description: 'Per modificare le impostazioni di un Survivable Branch Appliance o Survivable Branch Server esistente, sono disponibili le sezioni seguenti:'
-ms.openlocfilehash: e5e75965698f8dbbb97098ccadb0a76c5a3babe9
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60840098"
 ---
+
 # <a name="branch-office-appliance-general-settings-expander"></a>Espansione delle impostazioni generali di Branch Office Appliance
 
 Per modificare le impostazioni di un Survivable Branch Appliance o Survivable Branch Server esistente, sono disponibili le sezioni seguenti:

@@ -1,27 +1,22 @@
 ---
 title: Definire l'indirizzo IP del gateway IP o PSTN
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddPstnGatewayIPPage
+  - ms.lync.tb.AddPstnGatewayIPPage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 319fdc9f-7ed6-4ed3-8f3f-b78758a0eb42
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 description: È possibile definire gli indirizzi IPv4 o IPv6 per il gateway IP o PSTN (Public Switched Telephone Network) selezionando Abilita IPv4 o Abilita IPv6 e quindi selezionando Usa tutti gli indirizzi IP configurati o Limita utilizzo servizio a indirizzi IP selezionati.
-ms.openlocfilehash: f6cceeba24106f4dea82e6f5c42832313ea6c533
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837038"
 ---
+
 # <a name="define-the-ip-address-of-the-ip-or-pstn-gateway"></a>Definire l'indirizzo IP del gateway PSTN o IP
 
 È possibile definire gli indirizzi IPv4 o IPv6 per il gateway IP o PSTN (Public Switched Telephone Network) selezionando **Abilita IPv4** o **Abilita IPv6** e quindi selezionando **Usa tutti gli indirizzi IP configurati** o **Limita utilizzo servizio a indirizzi IP selezionati**.

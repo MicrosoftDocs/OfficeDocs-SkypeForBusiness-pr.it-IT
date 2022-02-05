@@ -1,30 +1,25 @@
 ---
 title: Nodo dell'ambito di monitoraggio
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.MonitoringServerScopeNode
+  - ms.lync.tb.MonitoringServerScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 05867db5-ad62-41e3-b1ac-f21f43d1e90b
-ROBOTS: NOINDEX, NOFOLLOW
-description: "In Generatore di topologie è possibile eseguire attività correlate a un singolo server che esegue Il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue Monitoraggio nell'albero della console, scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e quindi scegliendo una delle opzioni seguenti per il server che esegue Monitoraggio:"
-ms.openlocfilehash: 4adca3702b6200632afae51fb237e6682c560d5c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60865133"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'In Generatore di topologie è possibile eseguire attività correlate a un singolo server che esegue Il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue Monitoraggio nell''albero della console, scegliendo Azione sulla barra degli strumenti oppure facendo clic su un''attività nel riquadro Azioni e quindi scegliendo una delle opzioni seguenti per il server che esegue Monitoraggio:'
 ---
+
 # <a name="monitoring-scope-node"></a>Nodo dell'ambito di monitoraggio
  
-In Generatore di topologie è possibile eseguire attività correlate a un singolo server che esegue Il  monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue Monitoraggio nell'albero della console, scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e quindi scegliendo una delle opzioni seguenti per il server che esegue Monitoraggio:
+In Generatore di topologie è possibile eseguire attività correlate a un singolo server che esegue Il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue Monitoraggio nell'albero della console, scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e quindi scegliendo una delle opzioni seguenti per il server che esegue Monitoraggio:
   
 - **Modifica proprietà**. Apre la **pagina Modifica** proprietà per il server che esegue Monitoring, in cui è possibile modificare il nome di dominio completo (FQDN) del server che esegue Monitoring o il database SQL Server monitoraggio.
     

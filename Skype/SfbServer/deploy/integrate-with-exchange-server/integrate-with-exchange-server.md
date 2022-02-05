@@ -1,33 +1,28 @@
 ---
 title: Integrare Skype for Business Server con Exchange Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 12/20/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 795dc1c6-524f-4012-8b66-103b55198044
 description: 'Riepilogo: esaminare i passaggi di integrazione Exchange Server 2016 o Exchange Server 2013 e Skype for Business Server.'
-ms.openlocfilehash: d93c56278948c01ae47a19128896031de027d95a
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60838298"
 ---
+
 # <a name="integrate-skype-for-business-server-with-exchange-server"></a>Integrare Skype for Business Server con Exchange Server
 
 **Riepilogo:** Esaminare i passaggi di integrazione Exchange Server 2013 o versioni successive e Skype for Business Server.
 
-Exchange Server 2013 o versioni successive e Skype for Business Server sono compatibili e si integrano bene. Ad esempio, Skype for Business informazioni sulla presenza degli utenti possono essere segnalate in Microsoft Outlook; allo stesso modo, Skype for Business può accedere al calendario Outlook di un utente, notare che l'utente ha una riunione pianificata e mostrare la presenza dell'utente come Occupato durante la riunione. Anche se non è necessario eseguire Exchange Server per eseguire Skype for Business Server (o viceversa) i due prodotti insieme migliorano l'esperienza utente reciproca.
+Exchange Server 2013 o versioni successive e Skype for Business Server sono compatibili e si integrano bene. Ad esempio, Skype for Business le informazioni sulla presenza degli utenti possono essere segnalate in Microsoft Outlook; analogamente, Skype for Business può accedere al calendario di Outlook di un utente, notare che l'utente ha una riunione pianificata e mostrare la presenza dell'utente come Occupato durante la riunione. Anche se non è necessario eseguire Exchange Server per eseguire Skype for Business Server (o viceversa) i due prodotti insieme migliorano l'esperienza utente reciproca.
 
-Questa documentazione fornisce informazioni sull'integrazione di Skype for Business Server e Exchange Server 2016 o Exchange Server 2013, ma presuppone che l'installazione e la configurazione iniziali di questi due prodotti siano già state completate. Per informazioni dettagliate sulla Skype for Business Server, vedere il [Skype for Business Server Tech Center.](../../../Hub/index.yml) Per informazioni dettagliate sulla Exchange Server, vedere la documentazione relativa alla distribuzione per la versione di Exchange.
+Questa documentazione fornisce informazioni sull'integrazione di Skype for Business Server e Exchange Server 2016 o Exchange Server 2013, ma presuppone che l'installazione e la configurazione iniziali di questi due prodotti siano già state completate. Per informazioni dettagliate sulla Skype for Business Server, [vedere il Skype for Business Server Tech Center](../../../Hub/index.yml). Per informazioni dettagliate sulla Exchange Server, vedere la documentazione relativa alla distribuzione per la versione di Exchange.
 
 Se si sta integrando un'installazione locale di Skype for Business Server con Microsoft Exchange Online, vedere [Configure integration between on-premises Skype for Business Server and Outlook Web App](outlook-web-app.md).
 
@@ -45,7 +40,7 @@ Se si sta integrando Skype for Business Online con Exchange Server locale, veder
 
 [Configurare l'uso di foto ad alta risoluzione in Skype for Business Server](high-resolution-photos.md)
 
-[Configurare Exchange Server messaggistica unificata per la Skype for Business Server vocale](exchangeunified-messaging-for-voice-mail.md)
+[Configurare Exchange Server messaggistica unificata per Skype for Business Server segreteria telefonica](exchangeunified-messaging-for-voice-mail.md)
 
 [Integrazione di Skype for Business Server e Microsoft Outlook Web App 2013](/previous-versions/office/communications/jj688055(v=ocs.16))
 

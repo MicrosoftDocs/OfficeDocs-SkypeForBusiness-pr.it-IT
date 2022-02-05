@@ -1,28 +1,23 @@
 ---
 title: Creare o modificare un intervallo di orbit del parcheggio di chiamata in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 549ec118-eee5-4333-9416-80929ec057e0
 description: Creare o modificare una tabella dell'intervallo di orbit del parcheggio di chiamata in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: ffe4a47a099099d31fdd55d23a95065549233f92
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60839698"
 ---
+
 # <a name="create-or-modify-a-call-park-orbit-range-in-skype-for-business"></a>Creare o modificare un intervallo di orbit del parcheggio di chiamata in Skype for Business
 
 Creare o modificare una tabella dell'intervallo di orbit del parcheggio di chiamata in Skype for Business Server VoIP aziendale.
@@ -39,7 +34,7 @@ Utilizzare blocchi di estensioni virtuali, ovvero a cui non sono assegnati utent
 
 Per creare o modificare un intervallo orbit del parcheggio di chiamata, usare una delle procedure seguenti.
 
-### <a name="to-use-skype-for-business-server-control-panel-to-create-or-modify-a-range-of-numbers-for-parking-calls"></a>Per utilizzare Skype for Business Server pannello di controllo per creare o modificare un intervallo di numeri per le chiamate di parcheggio
+### <a name="to-use-skype-for-business-server-control-panel-to-create-or-modify-a-range-of-numbers-for-parking-calls"></a>Per utilizzare il Skype for Business Server di controllo per creare o modificare un intervallo di numeri per le chiamate di parcheggio
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **Delegate Setup Permissions**.
 
@@ -66,7 +61,7 @@ Per creare o modificare un intervallo orbit del parcheggio di chiamata, usare un
 
    - Se l'intervallo orbit inizia con il carattere \* o #, l'intervallo deve essere maggiore di 100.
 
-   - Valori validi: deve corrispondere alla stringa dell'espressione regolare ([ \\ *|#]?[ 1-9]\d {0,7} )| ([1-9]\d {0,8} ). Questo significa che il valore deve essere una stringa che inizia con il carattere o # o un numero da 1 a 9 (il primo carattere \* non può essere uno zero). Se il primo carattere è o #, il carattere seguente deve essere un \* numero da 1 a 9 (non può essere uno zero). I caratteri successivi possono essere da qualsiasi numero da 0 a 9 fino a sette caratteri aggiuntivi (ad esempio, "#6000", " \* 92000", " \* 95551212" e "915551212"). Se il primo carattere non è o #, il primo carattere deve essere un numero da 1 a 9 (non può essere zero), seguito da un massimo di otto caratteri, ognuno da \* 0 a 9 (ad esempio, "915551212", "41212", "300").
+   - Valori validi: deve corrispondere alla stringa dell'espressione regolare ([\\*|#]?[ 1-9]\d{0,7})| ([1-9]\d{0,8}). Questo significa che il valore deve essere \* una stringa che inizia con il carattere o # o un numero da 1 a 9 (il primo carattere non può essere uno zero). Se il primo carattere è \* o #, il carattere seguente deve essere un numero da 1 a 9 (non può essere uno zero). I caratteri successivi possono essere da qualsiasi numero da 0 a 9 fino a sette caratteri aggiuntivi (ad esempio, "#6000", "\*92000", "\*95551212" e "915551212"). \* Se il primo carattere non è o #, il primo carattere deve essere un numero da 1 a 9 (non può essere zero), seguito da un massimo di otto caratteri, ognuno da 0 a 9 (ad esempio, "915551212", "41212", "300").
 
    - In totale non vi possono essere più di 50.000 codici orbit per ogni pool. Ogni intervallo di codici orbit in genere comprende al massimo 100 codici orbit, ma può essere anche molto più esteso, purché non superi i 10.000 codici orbit. Ad esempio, anziché specificare "7000000" come numero iniziale e "8000000" come numero finale, considerare la possibilità di specificare "7000000" e "7000100" rispettivamente come numero iniziale e numero finale.
 
@@ -76,9 +71,9 @@ Per creare o modificare un intervallo orbit del parcheggio di chiamata, usare un
 
 ### <a name="to-use-skype-for-business-server-management-shell-to-create-or-modify-a-range-of-numbers-for-parking-calls"></a>Per utilizzare Skype for Business Server Management Shell per creare o modificare un intervallo di numeri per le chiamate di parcheggio
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions**.
+1. Accedere al computer in cui Skype for Business Server Management Shell è installato come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions**.
 
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
 
 3. Usare **New-CsCallParkOrbit** per creare un nuovo intervallo di numeri orbit. Usare **Set-CsCallParkOrbit** per modificare un intervallo di numeri orbit esistente.
 

@@ -1,27 +1,22 @@
 ---
 title: Criteri conferenza
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.lscp.ConfMeetingPolicyMain
+  - ms.lync.lscp.ConfMeetingPolicyMain
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 90eaa64e-369e-448d-bac4-2574c7c598b8
-ROBOTS: NOINDEX, NOFOLLOW
-description: Il criterio di conferenza definisce le caratteristiche e le funzionalità disponibili agli utenti durante una conferenza, detta anche riunione.
-ms.openlocfilehash: d79a6450e94e970ea0c034563d38bbf66a2861b8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60831540"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Il criterio di conferenza definisce le caratteristiche e le funzionalità disponibili agli utenti durante una conferenza, detta anche riunione.'
 ---
+
 # <a name="conferencing-policy"></a>Criteri conferenza
 
 Il criterio di conferenza definisce le caratteristiche e le funzionalità disponibili agli utenti durante una conferenza, detta anche riunione.

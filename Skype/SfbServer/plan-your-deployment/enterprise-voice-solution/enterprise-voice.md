@@ -1,28 +1,23 @@
 ---
 title: Pianificare la VoIP aziendale in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: fd8d5867-0ac9-47f8-94f0-1c3ee5e25575
-description: VoIP aziendale di base sulla pianificazione Skype for Business Server, inclusi siti, aree geografiche, collegamenti di rete tra siti e stima del traffico di utilizzo vocale.
-ms.openlocfilehash: 51c197979c5faaf587f63320b4a2dc6c5dc6a06f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829840"
+description: 'VoIP aziendale di base sulla pianificazione Skype for Business Server, inclusi siti, aree geografiche, collegamenti di rete tra siti e stima del traffico di utilizzo vocale.'
 ---
+
 # <a name="plan-for-enterprise-voice-in-skype-for-business-server"></a>Pianificare la VoIP aziendale in Skype for Business Server
  
 VoIP aziendale di base sulla pianificazione Skype for Business Server, inclusi siti, aree geografiche, collegamenti di rete tra siti e stima del traffico di utilizzo vocale.
@@ -37,7 +32,7 @@ Identificare innanzitutto i siti della topologia in cui verranno distribuiti VoI
   
 ## <a name="network-links-between-sites"></a>Collegamenti di rete tra siti
 
-È inoltre necessario considerare l'utilizzo della larghezza di banda previsto nei collegamenti di rete tra il sito centrale e i relativi siti di succursale. Se si dispone o si prevede di distribuire collegamenti WAN resilienti tra i siti, è consigliabile distribuire un gateway in ogni sito di succursale per fornire la terminazione DID (Direct Inward Dial) locale per gli utenti di tali siti. Se si dispone di collegamenti WAN resilienti, ma è probabile che la larghezza di banda di un collegamento WAN sia vincolata, configurare il servizio Controllo di ammissione di chiamata per il collegamento. Se non si dispone di collegamenti WAN resilienti, ospitare meno di 1000 utenti nel sito di succursale e non sono disponibili amministratori di Skype for Business Server con formazione locale, è consigliabile distribuire un Survivable Branch Appliance nel sito di succursale. Se si ospitano da 1000 a 5000 utenti nel sito di succursale, non si dispone di una connessione WAN resiliente e sono disponibili amministratori di Skype for Business Server formati, è consigliabile distribuire un Survivable Branch Server con un piccolo gateway nel sito di succursale. Prendere inoltre in considerazione l'eventualità di abilitare il bypass multimediale nei collegamenti vincolati se si dispone di un peer gateway che supporta il bypass multimediale.
+È inoltre necessario considerare l'utilizzo della larghezza di banda previsto nei collegamenti di rete tra il sito centrale e i relativi siti di succursale. Se si dispone o si prevede di distribuire collegamenti WAN resilienti tra i siti, è consigliabile distribuire un gateway in ogni sito di succursale per fornire la terminazione DID (Direct Inward Dial) locale per gli utenti di tali siti. Se si dispone di collegamenti WAN resilienti, ma è probabile che la larghezza di banda di un collegamento WAN sia vincolata, configurare il servizio Controllo di ammissione di chiamata per il collegamento. Se non si dispone di collegamenti WAN resilienti, ospitare meno di 1000 utenti nel sito di succursale e non sono disponibili amministratori di Skype for Business Server con formazione locale, è consigliabile distribuire un Survivable Branch Appliance nel sito di succursale. Se si ospitano da 1000 a 5000 utenti nel sito di succursale, non si dispone di una connessione WAN resiliente e sono disponibili amministratori di Skype for Business Server formati, è consigliabile distribuire un Survivable Branch Server con un gateway di piccole dimensioni nel sito di succursale. Prendere inoltre in considerazione l'eventualità di abilitare il bypass multimediale nei collegamenti vincolati se si dispone di un peer gateway che supporta il bypass multimediale.
   
 ## <a name="estimating-voice-usage-and-traffic"></a>Stima dell'utilizzo e del traffico vocali
 
@@ -55,7 +50,7 @@ Un'organizzazione con 10.000 utenti e traffico medio, ad esempio, necessiterebbe
   
 ## <a name="components-features-and-options-of-enterprise-voice"></a>Componenti, funzionalità e opzioni di VoIP aziendale
 
-Vedere le sezioni seguenti per ulteriori informazioni sulla pianificazione della distribuzione VoIP aziendale distribuzione.
+Vedere le sezioni seguenti per ulteriori informazioni sulla pianificazione della VoIP aziendale distribuzione.
   
 - [Componenti necessari per VoIP aziendale in Skype for Business Server](components-required-for-enterprise-voice.md)
     

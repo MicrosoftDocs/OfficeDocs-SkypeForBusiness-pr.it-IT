@@ -1,26 +1,21 @@
 ---
 title: Configurare l'integrazione tra Skype for Business Server locali e Outlook Web App
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/7/2016
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 95a20117-2064-43c4-94fe-cac892cadb6f
 description: 'Riepilogo: integrare Skype for Business Server e Outlook Web App.'
-ms.openlocfilehash: cebb8fed6b87dac6ec2c981730d303994c952741
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60853680"
 ---
+
 # <a name="configure-integration-between-on-premises-skype-for-business-server-and-outlook-web-app"></a>Configurare l'integrazione tra Skype for Business Server locali e Outlook Web App
 
 **Riepilogo:** Integrare Skype for Business Server e Outlook Web App.
@@ -35,9 +30,9 @@ I clienti che usano distribuzioni Skype for Business Server locali possono confi
 
 ## <a name="configure-a-shared-sip-address-space"></a>Configurare uno spazio di indirizzi SIP condiviso
 
-Per integrare gli indirizzi locali Skype for Business Server con Exchange Online, è necessario configurare uno spazio di indirizzi SIP condiviso. Lo stesso spazio di indirizzi di dominio SIP è supportato sia dal Skype for Business Server che dal Exchange Online servizio.
+Per integrare gli indirizzi locali Skype for Business Server con Exchange Online, è necessario configurare uno spazio di indirizzi SIP condiviso. Lo stesso spazio di indirizzi del dominio SIP è supportato sia dal Skype for Business Server che dal Exchange Online servizio.
 
-Utilizzando Skype for Business Server Management Shell, configurare il server perimetrale per la federazione eseguendo il cmdlet **Set-CSAccessEdgeConfiguration,** utilizzando i parametri visualizzati nell'esempio seguente:
+Utilizzando Skype for Business Server Management Shell, configurare il server perimetrale per la federazione eseguendo il cmdlet **Set-CSAccessEdgeConfiguration**, utilizzando i parametri visualizzati nell'esempio seguente:
 
 ```powershell
 Set-CsAccessEdgeConfiguration -AllowFederatedUsers $True
@@ -49,7 +44,7 @@ Per informazioni dettagliate sull'utilizzo di Skype for Business Server Manageme
 
 ## <a name="configure-a-hosting-provider-on-the-edge-server"></a>Configurare un provider di hosting nel server perimetrale
 
-Utilizzando Skype for Business Server Management Shell, configurare un provider di hosting nel server perimetrale eseguendo il cmdlet **New-CsHostingProvider,** utilizzando i parametri nell'esempio seguente:
+Utilizzando Skype for Business Server Management Shell, configurare un provider di hosting nel server perimetrale eseguendo il cmdlet **New-CsHostingProvider**, utilizzando i parametri nell'esempio seguente:
 
 ```powershell
 New-CsHostingProvider -Identity "Exchange Online" -Enabled $True -EnabledSharedAddressSpace $True -HostsOCSUsers $False -ProxyFqdn "exap.um.outlook.com" -IsLocal $False -VerificationLevel UseSourceVerification
@@ -92,6 +87,6 @@ Verificare se le informazioni visualizzate corrispondono alle modifiche apportat
 
 ## <a name="see-also"></a>Vedere anche
 
-[Fornire Skype for Business Server agli utenti della segreteria telefonica nella messaggistica unificata Exchange ospitata](/previous-versions/office/lync-server-2013/lync-server-2013-providing-lync-server-users-voice-mail-on-hosted-exchange-um)
+[Fornire Skype for Business Server di segreteria telefonica agli utenti nella messaggistica unificata Exchange ospitata](/previous-versions/office/lync-server-2013/lync-server-2013-providing-lync-server-users-voice-mail-on-hosted-exchange-um)
 
 [Integrazione della Exchange messaggistica unificata ospitata in Skype for Business Server](/previous-versions/office/lync-server-2013/lync-server-2013-hosted-exchange-unified-messaging-integration)

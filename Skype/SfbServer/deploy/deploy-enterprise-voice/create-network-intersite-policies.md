@@ -1,28 +1,23 @@
 ---
 title: Creare criteri tra siti di rete in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: b0714aae-55dc-4587-b718-34a03f596b22
-description: Creare criteri tra siti di rete, che vengono utilizzati VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server.
-ms.openlocfilehash: 3510a80935bd19fc6ac36904003f744fd7e65cf5
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60841888"
+description: 'Creare criteri tra siti di rete, che vengono utilizzati VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server.'
 ---
+
 # <a name="create-network-intersite-policies-in-skype-for-business-server"></a>Creare criteri tra siti di rete in Skype for Business Server
  
 Creare criteri tra siti di rete, che vengono utilizzati VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server. 
@@ -36,7 +31,7 @@ Nell'area Nord America della topologia di esempio esiste un collegamento diretto
   
 ### <a name="to-create-a-network-inter-site-policy"></a>Per creare un criterio tra siti di rete
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 2. Eseguire il cmdlet New-CsNetworkInterSitePolicy per creare criteri tra siti di rete e applicare un profilo di criteri di larghezza di banda appropriato per due siti con un collegamento incrociato diretto. Ad esempio, eseguire:
     

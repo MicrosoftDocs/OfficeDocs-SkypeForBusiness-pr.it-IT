@@ -1,27 +1,22 @@
 ---
 title: Abilitare o disabilitare l'invio di una dichiarazione di non responsabilità relativa all'archiviazione ai partner federati
-ms.reviewer: ''
-ms:assetid: c8e9a2fa-9dc1-4e4d-919f-56ece8004864
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg182584(v=OCS.15)
-ms:contentKeyID: 48185391
+ms.reviewer: null
+'ms:assetid': c8e9a2fa-9dc1-4e4d-919f-56ece8004864
+'ms:mtpsurl': 'https://technet.microsoft.com/en-us/library/Gg182584(v=OCS.15)'
+'ms:contentKeyID': 48185391
 mtps_version: v=OCS.15
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 description: Attivare o disattivare l'invio di una dichiarazione di non responsabilità di archiviazione ai partner federati in Skype for Business Server.
-ms.openlocfilehash: cbdfe6a53df73c5af3ef8d4b07b1bd2a4fc27a0a
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861353"
 ---
+
 # <a name="enable-or-disable-sending-an-archiving-disclaimer-to-federated-partners-in-skype-for-business-server"></a>Abilitare o disabilitare l'invio di una dichiarazione di non responsabilità di archiviazione ai partner federati in Skype for Business Server
 
 Al momento della distribuzione dei server perimetrali e dell'abilitazione della federazione per l'organizzazione, dovrebbe essere stato specificato se inviare automaticamente la dichiarazione di non responsabilità relativa all'archiviazione ai partner federati. Se si archiviano le comunicazioni esterne, è consigliabile abilitare l'invio di una dichiarazione di non responsabilità relativa all'archiviazione. Utilizzare la procedura descritta in questo argomento per modificare tale configurazione.
@@ -34,7 +29,7 @@ Al momento della distribuzione dei server perimetrali e dell'abilitazione della 
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Accesso utente esterno** e su **Configurazione Access Edge**.
 

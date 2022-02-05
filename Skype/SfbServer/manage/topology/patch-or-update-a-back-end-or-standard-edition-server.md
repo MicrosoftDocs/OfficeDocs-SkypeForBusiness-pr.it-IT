@@ -1,24 +1,19 @@
 ---
 title: Applicare patch o aggiornare un server back-end o edizione Standard server in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: f95f8d3a-e039-484e-97bd-d727db21a12b
 description: 'Riepilogo: informazioni su come installare un aggiornamento o una patch in un server back-end in Skype for Business Server.'
-ms.openlocfilehash: 55d81e97712abe51544a854bf175348526e9f29c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858213"
 ---
+
 # <a name="patch-or-update-a-back-end-server-or-standard-edition-server-in-skype-for-business-server"></a>Applicare patch o aggiornare un server back-end o edizione Standard server in Skype for Business Server
  
 **Riepilogo:** Informazioni su come installare un aggiornamento o una patch in un server back-end in Skype for Business Server.
@@ -33,7 +28,7 @@ Se un server back-end non è disponibile per almeno 30 minuti durante l'aggiorna
     
 2. Scaricare l'aggiornamento ed estrarlo nel disco rigido locale.
     
-3. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi fare clic su Skype for Business Server **Management Shell**..
+3. Avviare la Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business e quindi** fare clic su **Skype for Business Server Management Shell**..
     
 4. Arrestare Skype for Business Server servizi. Nella riga di comando digitare il comando seguente:
     
@@ -47,11 +42,11 @@ Se un server back-end non è disponibile per almeno 30 minuti durante l'aggiorna
     net stop w3svc
    ```
 
-6. Chiudere tutte Skype for Business Server Management Shell.
+6. Chiudere tutte le Skype for Business Server Management Shell.
     
 7. Installare l'aggiornamento.
     
-8. Avviare la Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi fare clic su Skype for Business Server **Management Shell**.
+8. Avviare la Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business e quindi** fare clic su **Skype for Business Server Management Shell**.
     
 9. Arrestare Skype for Business Server servizi per intercettare gli assembly -d della Global Assembly Cache (GAC). Nella riga di comando digitare:
     
@@ -73,13 +68,13 @@ Se un server back-end non è disponibile per almeno 30 minuti durante l'aggiorna
     Install-CsDatabase -Update -ConfiguredDatabases -SqlServerFqdn <SQL Server FQDN>
     ```
 
-    - Se si tratta di edizione Enterprise server back-end e sono presenti database collocati nel server, digitare quanto segue in una riga di comando:
+    - Se si tratta di edizione Enterprise server back-end e sono presenti database collocati nel server, digitare quanto segue nella riga di comando:
     
     ```PowerShell
     Install-CsDatabase -Update -ConfiguredDatabases -SqlServerFqdn <SQL Server FQDN>  -ExcludeCollocatedStores
     ```
 
-    - Se si tratta di un server edizione Standard, digitare quanto segue in una riga di comando:
+    - Se si tratta di un server edizione Standard, digitare quanto segue nella riga di comando:
     
     ```PowerShell
     Install-CsDatabase -Update -LocalDatabases
