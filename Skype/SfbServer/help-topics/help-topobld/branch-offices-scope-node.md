@@ -1,27 +1,22 @@
 ---
 title: Nodo dell'ambito delle succursali
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.BranchOfficesScopeNode
+  - ms.lync.tb.BranchOfficesScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 116d317c-8df0-45a0-83d4-eb10cf525d70
-description: "Nel nodo Siti di succursale sono elencati i siti derivati associati al sito centrale. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: d8ff2d5cfbe1b2167145f6066d7e5caf4d7dd527
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60840068"
+description: 'Nel nodo Siti di succursale sono elencati i siti derivati associati al sito centrale. È possibile eseguire l''azione seguente:'
 ---
+
 # <a name="branch-offices-scope-node"></a>Nodo di ambito di Branch Offices
  
 Nel nodo **Siti di succursale** sono elencati i siti derivati associati al sito centrale. È possibile eseguire l'azione seguente:

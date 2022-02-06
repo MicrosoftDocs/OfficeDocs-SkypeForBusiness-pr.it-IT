@@ -1,33 +1,28 @@
 ---
 title: Pianificare i requisiti di rete per Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 35c7bb3f-8e0f-48b7-8a2c-857d4b42a4c4
 description: 'Riepilogo: esaminare le considerazioni sui componenti di rete riportate di seguito prima di implementare Skype for Business Server.'
-ms.openlocfilehash: 3e5912cb00bb704afdfc5d568b66711a1ddf472f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60864703"
 ---
+
 # <a name="plan-network-requirements-for-skype-for-business"></a>Pianificare i requisiti di rete per Skype for Business
 
 **Riepilogo:** Prima di implementare Skype for Business Server, esaminare le considerazioni relative ai componenti di rete riportate di seguito.
 
-Le informazioni contenute in questi argomenti sono inoltre descritte nel white paper [Pianificazione,](https://www.microsoft.com/download/details.aspx?id=39084) monitoraggio e risoluzione dei problemi di rete con Lync Server con ulteriori dettagli e approfondimenti. Anche se il contenuto fa riferimento in modo esplicito a Lync 2010 e Lync 2013, le considerazioni per Skype for Business Server sono invariate.
+Le informazioni contenute in questi argomenti sono inoltre descritte nel white paper Pianificazione, monitoraggio e risoluzione dei problemi di rete con [Lync Server](https://www.microsoft.com/download/details.aspx?id=39084) con ulteriori dettagli e approfondimenti. Anche se il contenuto fa riferimento in modo esplicito a Lync 2010 e Lync 2013, le considerazioni per Skype for Business Server sono invariate.
 
 Allo stesso modo, se la rete include wi-fi e accesso cablato, il white paper [Delivering Lync 2013 Real-Time Communications over Wi-Fi](https://www.microsoft.com/download/details.aspx?id=36494) è un buon riferimento ed è ugualmente applicabile a Skype for Business Server.
 
@@ -37,7 +32,7 @@ Network performance and needs are directly linked to the traffic load placed on 
 ## <a name="server-hardware"></a>Hardware dei server
 <a name="S_hard"> </a>
 
-La scheda di rete di ogni server nella topologia Skype for Business Server deve supportare almeno 1 gigabit al secondo (Gbps). In generale, è consigliabile connettere tutti i ruoli del server all'interno della topologia Skype for Business Server utilizzando una latenza bassa e una rete LAN (Local Area Network) a larghezza di banda elevata. Le dimensioni della rete LAN dipendono dalle dimensioni della topologia:
+La scheda di rete di ogni server della Skype for Business Server deve supportare almeno 1 gigabit al secondo (Gbps). In generale, è consigliabile connettere tutti i ruoli del server all'interno della topologia Skype for Business Server utilizzando una latenza bassa e una rete LAN (Local Area Network) a larghezza di banda elevata. Le dimensioni della rete LAN dipendono dalle dimensioni della topologia:
 
 - Nelle edizione Standard, i server devono essere in una rete che supporta Ethernet da 1 Gbps o equivalente.
 
@@ -48,16 +43,16 @@ La scheda di rete di ogni server nella topologia Skype for Business Server deve 
 ## <a name="audiovideo-network-requirements"></a>Requisiti di rete audio/video
 <a name="AV_req"> </a>
 
-I requisiti di rete per audio/video (A/V) in una Skype for Business Server distribuzione includono:
+I requisiti di rete per audio/video (A/V) in una Skype for Business Server distribuzione includono quanto segue:
 
-- Se si distribuisce un singolo server perimetrale o un pool di server perimetrali utilizzando il bilanciamento del carico DNS, è possibile configurare il  _firewall_ esterno per eseguire nat (Network Address Translation). Non è possibile configurare il firewall interno _per_ eseguire NAT. Per informazioni dettagliate, vedere [Pianificazione di porte e firewall.](../edge-server-deployments/edge-environmental-requirements.md#port-and-firewall-planning)
+- Se si distribuisce un singolo server perimetrale o un pool di server perimetrali utilizzando il bilanciamento del carico DNS, è possibile configurare  _il firewall esterno_ per eseguire nat (Network Address Translation). Non è possibile configurare il firewall interno _per_ eseguire NAT. Per informazioni dettagliate, vedere [Pianificazione di porte e firewall](../edge-server-deployments/edge-environmental-requirements.md#port-and-firewall-planning).
 
     > [!IMPORTANT]
     > Se si dispone di un pool di server perimetrali e si utilizza un servizio di bilanciamento del carico hardware, è necessario utilizzare gli indirizzi IP pubblici nei server perimetrali e non è possibile utilizzare NAT per i server o il pool nel dispositivo con nat,ad esempio un dispositivo firewall o un commutatore LAN. Per informazioni dettagliate, vedere [Edge Server scenarios in Skype for Business Server](../edge-server-deployments/scenarios.md).
 
 - Se nell'organizzazione è prevista un'infrastruttura di qualità del servizio (QoS), il sottosistema multimediale è progettato per essere utilizzato nell'infrastruttura esistente.
 
-- Se si utilizza IPSec (Internet Protocol security), è consigliabile disabilitarlo per gli intervalli di porte usati per il traffico A/V. Per informazioni dettagliate, vedere [Eccezioni IPsec.](#ipsec-exceptions)
+- Se si utilizza IPSec (Internet Protocol security), è consigliabile disabilitarlo per gli intervalli di porte usati per il traffico A/V. Per informazioni dettagliate, vedere [Eccezioni IPsec](#ipsec-exceptions).
 
 Per garantire una qualità multimediale ottimale, eseguire le operazioni seguenti:
 
@@ -154,13 +149,13 @@ La versione stereo del codec G.722 viene utilizzata dai sistemi basati su Lync R
 |H.264  <br/> |1280x192 (20:3)  <br/> |1000  <br/> |250  <br/> |
 |H.264  <br/> |1920x288 (20:3)  <br/> |2000  <br/> |500  <br/> |
 
-Il codec predefinito per il video è lo standard H.264/MPEG-4 Part 10 Advanced Video Coding, insieme alle estensioni di codifica video scalabili per la scalabilità temporale. Per mantenere l'interoperabilità con i client legacy, il codec RTVideo viene ancora utilizzato per le chiamate peer-to-peer tra Skype for Business Server client legacy. Nelle sessioni di conferenza con client Skype for Business Server e legacy l'endpoint Skype for Business Server può codificare il video utilizzando entrambi i codec video e inviare il flusso di bit H.264 ai client Skype for Business Server e il flusso di bit RTVideo ai client legacy.
+Il codec predefinito per il video è lo standard H.264/MPEG-4 Part 10 Advanced Video Coding, insieme alle estensioni di codifica video scalabili per la scalabilità temporale. Per mantenere l'interoperabilità con i client legacy, il codec RTVideo viene ancora utilizzato per le chiamate peer-to-peer tra Skype for Business Server client legacy. Nelle sessioni di conferenza con client Skype for Business Server e legacy, l'endpoint Skype for Business Server può codificare il video utilizzando entrambi i codec video e inviare il flusso di bit H.264 ai client Skype for Business Server e il flusso di bit RTVideo ai client legacy.
 
 La larghezza di banda necessaria dipende dalla risoluzione, dalla qualità, dalla frequenza dei fotogrammi e dalla quantità di movimento o modifica dell'immagine. Per ogni risoluzione, esistono due velocità in bit pertinenti:
 
 - **Velocità in bit payload massima** Questa è la velocità in bit che verrà utilizzata da un endpoint per la risoluzione alla frequenza fotogrammi massima. Questo è il valore che consente la massima qualità audio e video.
 
-- **Velocità in bit payload minima** Questa è la velocità in bit al di sotto della quale un endpoint Skype for Business Server passaggio alla successiva risoluzione inferiore. Per garantire una determinata risoluzione, la velocità in bit del payload video disponibile non deve scendere al di sotto di questa velocità in bit minima per tale risoluzione. Questo valore consente di comprendere il valore più basso possibile se la velocità in bit massima non è disponibile o pratica. Per alcuni utenti, un video a velocità in bit così bassa potrebbe offrire un'esperienza video inaccettabile, quindi usa cautela con queste velocità in bit minime del payload video. Nota che per le scene video statiche e immutate, la velocità in bit effettiva potrebbe scendere temporaneamente al di sotto della velocità in bit minima.
+- **Velocità in bit payload minima** Questa è la velocità in bit al di sotto della quale un endpoint Skype for Business Server passaggio alla risoluzione inferiore successiva. Per garantire una determinata risoluzione, la velocità in bit del payload video disponibile non deve scendere al di sotto di questa velocità in bit minima per tale risoluzione. Questo valore consente di comprendere il valore più basso possibile se la velocità in bit massima non è disponibile o pratica. Per alcuni utenti, un video a velocità in bit così bassa potrebbe offrire un'esperienza video inaccettabile, quindi usa cautela con queste velocità in bit minime del payload video. Nota che per le scene video statiche e immutate, la velocità in bit effettiva potrebbe scendere temporaneamente al di sotto della velocità in bit minima.
 
 Skype for Business Server supporta molte risoluzioni. In questo modo Skype for Business Server di adattarsi alla larghezza di banda di rete e alle funzionalità client di ricezione diverse. Le proporzioni predefinite per Skype for Business Server sono 16:9. Le proporzioni 4:3 legacy sono ancora supportate per le webcam che non consentono l'acquisizione nelle proporzioni 16:9.
 
@@ -202,7 +197,7 @@ Per la pianificazione della capacità, sono di interesse le due statistiche segu
 
 - **Larghezza di banda massima con FEC** Larghezza di banda massima utilizzata da un flusso. Ciò include l'attività tipica del flusso e il codec tipico utilizzato nello scenario con FEC. Si tratta della larghezza di banda utilizzata quando l'attività del flusso corrisponde al 100% e si verifica una perdita di pacchetti che attiva l'utilizzo di FEC per migliorare la qualità. Ciò è utile per calcolare la quantità di larghezza di banda da allocare per consentire l'utilizzo del codec in un determinato scenario e consentire l'utilizzo di FEC per mantenere la qualità in condizioni di perdita di pacchetti.
 
-Le tabelle seguenti elencano anche un valore aggiuntivo per la larghezza di banda, **Larghezza di banda tipica.** Si tratta della larghezza di banda media utilizzata da un flusso. Ciò include l'attività tipica del flusso e il codec tipico utilizzato nello scenario. Questa larghezza di banda può essere utilizzata per approssimare la quantità di larghezza di banda utilizzata dal traffico multimediale in un momento specifico, ma non deve essere utilizzata per la pianificazione della capacità, perché le singole chiamate supereranno questo valore quando il livello di attività è superiore alla media. La larghezza di banda tipica del flusso video nelle tabelle seguenti si basa su una combinazione di diverse risoluzioni video osservate nei dati misurati dei clienti e le installazioni più piccole probabilmente hanno numeri effettivi diversi dai dati della tabella. Ad esempio, nelle sessioni peer-to-peer la maggior parte degli utenti usa la finestra di rendering video predefinita, mentre una percentuale di utenti aumenta o ingrandisce l'applicazione Skype for Business Server per consentire risoluzioni video migliori.
+Le tabelle seguenti elencano anche un valore di larghezza di banda aggiuntivo, **Larghezza di banda tipica**. Si tratta della larghezza di banda media utilizzata da un flusso. Ciò include l'attività tipica del flusso e il codec tipico utilizzato nello scenario. Questa larghezza di banda può essere utilizzata per approssimare la quantità di larghezza di banda utilizzata dal traffico multimediale in un momento specifico, ma non deve essere utilizzata per la pianificazione della capacità, perché le singole chiamate supereranno questo valore quando il livello di attività è superiore alla media. La larghezza di banda tipica del flusso video nelle tabelle seguenti si basa su una combinazione di diverse risoluzioni video osservate nei dati misurati dei clienti e le installazioni più piccole probabilmente hanno numeri effettivi diversi dai dati della tabella. Ad esempio, nelle sessioni peer-to-peer la maggior parte degli utenti usa la finestra di rendering video predefinita, mentre una percentuale di utenti aumenta o ingrandisce l'applicazione Skype for Business Server per consentire risoluzioni video migliori.
 
 Nelle tabelle seguenti sono riportati i valori per i diversi scenari.
 
@@ -266,17 +261,17 @@ Skype for Business Server non richiede QoS, ma è consigliabile. Se si verifican
 
 Skype for Business Server offre il supporto completo per QoS: ciò significa che le organizzazioni che usano già QoS possono facilmente integrare Skype for Business Server nell'infrastruttura di rete esistente. A tale scopo, è necessario eseguire la procedura seguente:
 
-- [Abilitazione di QoS in Skype for Business Server per i dispositivi](../../manage/network-management/qos/enabling-qos-for-devices-that-are-not-based-on-windows.md)non basati su Windows . Per impostazione predefinita, QoS è disabilitato per computer e altri dispositivi (ad esempio iPhone) che eseguono altri sistemi operativi. Anche se puoi usare Skype for Business Server per abilitare e disabilitare qualità del servizio per i dispositivi, in genere non puoi usare il prodotto per modificare i codici DSCP usati da questi dispositivi.
+- [Abilitazione di QoS in Skype for Business Server per i dispositivi non basati su Windows](../../manage/network-management/qos/enabling-qos-for-devices-that-are-not-based-on-windows.md). Per impostazione predefinita, QoS è disabilitato per computer e altri dispositivi (ad esempio iPhone) che eseguono altri sistemi operativi. Anche se puoi usare Skype for Business Server per abilitare e disabilitare qualità del servizio per i dispositivi, in genere non puoi usare il prodotto per modificare i codici DSCP usati da questi dispositivi.
 
-- [Configurazione degli intervalli di porte e dei criteri qualità del servizio per i server per conferenze, applicazioni e Mediation Server.](../../manage/network-management/qos/configuring-port-ranges-for-your-conferencing-application-and-mediation-servers.md) È necessario riservare un set univoco di porte per tipi di pacchetti diversi, ad esempio audio e video. Utilizzando il Skype for Business Server non si abilita o disabilita QoS impostando il valore di una proprietà su True o su False. È invece possibile abilitare QoS configurando gli intervalli di porte e quindi creando e applicando Criteri di gruppo. Se in seguito si decide di non utilizzare QoS, è possibile "disabilitare" QoS rimuovendo gli oggetti Criteri di gruppo appropriati.
+- [Configurazione degli intervalli di porte e dei criteri qualità del servizio per i server per conferenze, applicazioni e Mediation Server](../../manage/network-management/qos/configuring-port-ranges-for-your-conferencing-application-and-mediation-servers.md). È necessario riservare un set univoco di porte per tipi di pacchetti diversi, ad esempio audio e video. Utilizzando il Skype for Business Server non si abilita o disabilita QoS impostando un valore di proprietà su True o su False. È invece possibile abilitare QoS configurando gli intervalli di porte e quindi creando e applicando Criteri di gruppo. Se in seguito si decide di non utilizzare QoS, è possibile "disabilitare" QoS rimuovendo gli oggetti Criteri di gruppo appropriati.
 
 - [Configurazione degli intervalli di porte e dei criteri di qualità del servizio per i server perimetrali](../../manage/network-management/qos/configuring-port-ranges-for-your-edge-servers.md). Anche se non è necessario, è possibile configurare i server Perimetrali in modo che utilizzino gli stessi intervalli di porte degli altri server. La configurazione di un criterio QoS deve essere eseguita solo per il lato interno dei server perimetrali. Questo perché QoS è progettato per l'utilizzo nella rete interna e non su Internet.
 
-- [Configurazione degli intervalli di porte e dei criteri di](../../manage/network-management/qos/configuring-port-ranges-for-your-skype-clients.md)qualità del servizio per i client in Skype for Business Server . Questi intervalli di porte si applicano solo ai computer client e in genere sono diversi dagli intervalli di porte configurati nei server. Tenere presente Skype for Business Server non supporta QoS per Windows sistemi operativi diversi da Windows 10.
+- [Configurazione degli intervalli di porte e dei criteri di qualità del servizio per i client in Skype for Business Server](../../manage/network-management/qos/configuring-port-ranges-for-your-skype-clients.md). Questi intervalli di porte si applicano solo ai computer client e in genere sono diversi dagli intervalli di porte configurati nei server. Tenere presente Skype for Business Server non supporta QoS per Windows sistemi operativi diversi da Windows 10.
 
 
 > [!NOTE]
-> Se si utilizza Windows Server 2012 o Windows Server 2012 R2, potrebbe essere interessato al nuovo set di cmdlet di Windows PowerShell disponibili per la gestione di QoS in tale piattaforma. Per ulteriori informazioni, vedere [Windows PowerShell cmdlet per la rete](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj717268(v=ws.11)).
+> Se si utilizza Windows Server 2012 o Windows Server 2012 R2, potrebbe essere interessato al nuovo set di cmdlet Windows PowerShell disponibili per la gestione di QoS in tale piattaforma. Per ulteriori informazioni, vedere [Windows PowerShell cmdlet per la rete](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj717268(v=ws.11)).
 
 QoS è inoltre descritto nel white paper [Pianificazione della rete,](https://www.microsoft.com/download/details.aspx?id=39084) monitoraggio e risoluzione dei problemi con Lync Server con ulteriori dettagli e profondità. Anche se il contenuto fa riferimento in modo esplicito a Lync 2010 e Lync 2013, le considerazioni per Skype for Business Server sono invariate.
 

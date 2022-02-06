@@ -1,28 +1,23 @@
 ---
 title: Pianificare il bypass multimediale in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 9ea090b3-f607-46f7-97dd-2510052524e5
 description: Decisioni necessarie per la pianificazione del bypass multimediale in Skype for Business Server VoIP aziendale. Include l'interoperabilità con il servizio Controllo di ammissione di chiamata( CAC).
-ms.openlocfilehash: 37bd24ba10ae506749a305f3fd5dfa55ca067fdc
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60827479"
 ---
+
 # <a name="plan-for-media-bypass-in-skype-for-business"></a>Pianificare il bypass multimediale in Skype for Business
 
 Decisioni necessarie per la pianificazione del bypass multimediale in Skype for Business Server VoIP aziendale. Include l'interoperabilità con il servizio Controllo di ammissione di chiamata( CAC).
@@ -100,7 +95,7 @@ Il bypass multimediale (o Media Bypass, ovvero la possibilità di ignorare il Me
 
 - Il controllo di ammissione di chiamata non è abilitato e il bypass multimediale è impostato su **Utilizza configurazione siti e aree**.
 
-    Se **l'opzione Usa informazioni** sito e area geografica è abilitata, la determinazione del bypass funziona essenzialmente allo stesso modo, indipendentemente dal fatto che il controllo di ammissione di chiamata sia abilitato o meno. In altre informazioni, per qualsiasi chiamata PSTN specifica, la subnet del client viene mappata a un sito specifico e viene estratto l'ID bypass per tale subnet. Analogamente, la subnet del gateway viene mappata a un sito specifico e viene estratto l'ID bypass per tale subnet. Solo se i due ID bypass sono identici verrà ignorato per la chiamata. Se non sono identici, il bypass multimediale non verrà eseguito.
+    Se **l'opzione Usa informazioni sito e** area geografica è abilitata, la determinazione del bypass funziona essenzialmente allo stesso modo, indipendentemente dal fatto che il controllo di ammissione di chiamata sia abilitato o meno. In altre informazioni, per qualsiasi chiamata PSTN specifica, la subnet del client viene mappata a un sito specifico e viene estratto l'ID bypass per tale subnet. Analogamente, la subnet del gateway viene mappata a un sito specifico e viene estratto l'ID bypass per tale subnet. Solo se i due ID bypass sono identici verrà ignorato per la chiamata. Se non sono identici, il bypass multimediale non verrà eseguito.
 
     Anche se il controllo di ammissione di chiamata è disabilitato a livello globale, è necessario definire criteri di larghezza di banda per ogni sito e collegamento se si desidera utilizzare la configurazione dei siti e delle aree per controllare la decisione di applicare o meno il bypass. Il valore effettivo del vincolo di larghezza di banda o la relativa modalità non è importante. Lo scopo finale è avere il sistema che calcola automaticamente ID bypass diversi da associare a impostazioni locali diverse non connesse perfettamente. Se si stabilisce un vincolo di larghezza di banda, significa per definizione che un collegamento non è ben connesso.
 

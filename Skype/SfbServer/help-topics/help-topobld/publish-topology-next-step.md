@@ -1,27 +1,22 @@
 ---
 title: Passaggio successivo della pubblicazione della topologia
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.PublishTopologyNextStepPage
+  - ms.lync.tb.PublishTopologyNextStepPage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 29e4a215-80f9-4ac8-8069-b220f3ac251d
-description: Al termine della pubblicazione della topologia, viene visualizzata la pagina Pubblicazione guidata completata.
-ms.openlocfilehash: 600219c813ff78a7e25622855a4da636130ba407
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60853110"
+description: 'Al termine della pubblicazione della topologia, viene visualizzata la pagina Pubblicazione guidata completata.'
 ---
+
 # <a name="publish-topology-next-step"></a>Passaggio successivo della pubblicazione della topologia
 
 Al termine della pubblicazione della topologia, viene visualizzata la pagina **Pubblicazione guidata completata**.

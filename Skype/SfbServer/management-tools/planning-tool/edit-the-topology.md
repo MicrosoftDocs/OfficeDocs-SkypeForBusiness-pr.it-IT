@@ -1,26 +1,21 @@
 ---
 title: Modificare la topologia in Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 4/5/2016
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 47425ab1-5645-4d6f-b202-64bcce43e3ef
-description: Dopo aver completato le domande iniziali, è possibile modificare il nome di dominio completo (FQDN) e gli indirizzi IP per il sito. A tale scopo, nella pagina Topologia globale fare doppio clic sul sito che si desidera modificare.
-ms.openlocfilehash: 698f7e5e94666a67dd01c55a877a037452fd58e2
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861193"
+description: 'Dopo aver completato le domande iniziali, è possibile modificare il nome di dominio completo (FQDN) e gli indirizzi IP per il sito. A tale scopo, nella pagina Topologia globale fare doppio clic sul sito che si desidera modificare.'
 ---
+
 # <a name="edit-the-topology-in-skype-for-business-server-2015"></a>Modificare la topologia in Skype for Business Server 2015
 
 Dopo aver completato le domande iniziali, è possibile modificare il nome di dominio completo (FQDN) e gli indirizzi IP per il sito. A tale scopo, nella **pagina Topologia globale** fare doppio clic sul sito che si desidera modificare.
@@ -45,7 +40,7 @@ Lo Strumento di pianificazione visualizza la topologia del sito per il sito sele
 
   - Rapporto DNS - Il rapporto DNS elenca le informazioni rilevanti per le voci DNS che è necessario creare. Sono inclusi il tipo di record, l'FQDN, l'indirizzo IP e i commenti necessari per l'operazione corretta.
 
-- Riepilogo sito - Il riepilogo del sito presenta una panoramica delle selezioni effettuate rispondendo alle domande iniziali del colloquio o compilando i valori in **Siti di progettazione.** Vengono presentate anche le informazioni sulla capacità.
+- Riepilogo sito- Il riepilogo del sito presenta una panoramica delle selezioni effettuate rispondendo alle domande iniziali del colloquio o compilando i valori in **Siti di progettazione**. Vengono presentate anche le informazioni sulla capacità.
 
     > [!NOTE]
     > Le informazioni nella pagina Riepilogo sito sono personalizzate per ogni progettazione e potrebbero non contenere tutte le sezioni o le informazioni descritte qui.
@@ -73,13 +68,13 @@ Nello Strumento di pianificazione è disponibile una funzionalità utile che con
 
 2. Ad esempio, il valore iniziale per il primo server è fe0101.contoso.com e un indirizzo IP di 192.168.21.122.
 
-3. Digitare fe0.contoso.com in **FQDN Front End Server,** digitare 192.168.21.131 in **Indirizzo IP Front End Server** e quindi fare clic su **OK**.
+3. Digitare fe0.contoso.com in **FQDN Front End Server**, digitare 192.168.21.131 nell'indirizzo **IP del Front End Server** e quindi fare clic su **OK**.
 
 4. La funzionalità di incremento automatico aggiorna tutti i server del pool da fe01 a fe06 e tutti gli indirizzi IP da 192.168.21.131 a 136.
 
 Dopo aver completato tutte le modifiche, salvare la topologia completando la procedura seguente:
 
-Per salvare la struttura dello strumento di pianificazione, fare clic **su File** e quindi su **Salva** topologia o Salva topologia **con nome.** Se viene visualizzata una finestra di dialogo **Salva file dello Strumento di pianificazione con nome**, digitare un nome per il file in **Nome file** e quindi fare clic su **Salva**.
+Per salvare la struttura dello strumento di pianificazione, fare clic **su File** e quindi su **Salva** topologia o **Salva topologia con nome**. Se viene visualizzata una finestra di dialogo **Salva file dello Strumento di pianificazione con nome**, digitare un nome per il file in **Nome file** e quindi fare clic su **Salva**.
 
 ## <a name="see-also"></a>Vedere anche
 <a name="Edit_Network_diagram"> </a>

@@ -1,27 +1,22 @@
 ---
 title: URL semplice visualizzazione topologia
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.TopoSimpleUrlMain
+  - ms.lync.lscp.TopoSimpleUrlMain
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: c17f13f2-2e45-44d6-b56d-74ec8989eef1
-description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: a23e0c510209e1e3bbb1be7a0d4f0a149a289978
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60830340"
+description: 'Per saperne di più: fare clic sul collegamento all''attività che si desidera eseguire.'
 ---
+
 # <a name="topology-view-simple-url"></a>Topologia: visualizzare URL semplice
 
 Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
@@ -30,4 +25,4 @@ Per saperne di più: fare clic sul collegamento all'attività che si desidera es
 
 - [Gestione di URL semplici](/previous-versions/office/lync-server-2013/lync-server-2013-managing-simple-urls)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015](../../manage/manage.md).

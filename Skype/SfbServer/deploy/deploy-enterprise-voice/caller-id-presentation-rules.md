@@ -1,31 +1,26 @@
 ---
 title: Creare o modificare una regola di conversione per la presentazione dell'ID chiamante in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 6a643961-a0a1-41d1-96ba-6c428a89d82e
-description: "Riepilogo: informazioni su come configurare l'ID chiamante utilizzando il Skype for Business Server di controllo."
-ms.openlocfilehash: 13ca5073956e6cf67264e706a82e63ec72efbac4
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60865333"
+description: 'Riepilogo: informazioni su come configurare l''ID chiamante utilizzando il Skype for Business Server pannello di controllo.'
 ---
+
 # <a name="create-or-modify-a-translation-rule-for-caller-id-presentation-in-skype-for-business-server"></a>Creare o modificare una regola di conversione per la presentazione dell'ID chiamante in Skype for Business Server
 
-**Riepilogo:** Informazioni su come configurare l'ID chiamante utilizzando il Skype for Business Server di controllo.
+**Riepilogo:** Informazioni su come configurare l'ID chiamante utilizzando il Skype for Business Server pannello di controllo.
 
 Con Skype for Business Server, il numero di telefono della parte chiamata (ovvero il numero di telefono chiamato) può essere convertito dal formato E.164 al formato di composizione locale richiesto dal _trunk peer_ ,ovvero dal gateway associato, dal PBX (Private Branch Exchange) o dal trunk SIP. A tale scopo, è necessario definire una o più regole per la conversione dell'URI di richiesta prima del routing al peer trunk.
 

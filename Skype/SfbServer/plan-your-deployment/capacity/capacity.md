@@ -1,31 +1,26 @@
 ---
 title: Pianificazione della capacità per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: e557ed2c-9cb2-4c90-8fd1-96a814c47c19
-description: Gli argomenti di questa sezione consentono di comprendere come pianificare e distribuire Skype for Business Server in modo da poter pianificare in modo adeguato il numero di utenti nell'organizzazione e pianificare il carico del server generato dalle relative attività.
-ms.openlocfilehash: e683eb2605c2a66a836321028595e2f034baf183
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60856563"
+description: Gli argomenti di questa sezione consentono di comprendere come pianificare e distribuire Skype for Business Server in modo da poter pianificare in modo adeguato il numero di utenti nell'organizzazione e pianificare il carico del server generato dalle attività.
 ---
+
 # <a name="capacity-planning-for-skype-for-business-server"></a>Pianificazione della capacità per Skype for Business Server
  
-Gli argomenti di questa sezione consentono di comprendere come pianificare e distribuire Skype for Business Server in modo da poter pianificare in modo adeguato il numero di utenti nell'organizzazione e pianificare il carico del server generato dalle relative attività. 
+Gli argomenti di questa sezione consentono di comprendere come pianificare e distribuire Skype for Business Server in modo da poter pianificare in modo adeguato il numero di utenti nell'organizzazione e pianificare il carico del server generato dalle attività. 
   
 > [!NOTE]
-> Tutti i suggerimenti di questa sezione presuppongono che sia stato installato l'aggiornamento cumulativo, Skype for Business novembre 2015 o versione successiva, nei server. 
+> Tutti i suggerimenti in questa sezione presuppongono che sia stato installato l Skype for Business interno cumulativo, novembre 2015 o versione successiva, nei server. 
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 

@@ -1,29 +1,24 @@
 ---
 title: Creare le impostazioni di configurazione delle riunioni in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 6d8f9ff8-2a04-4175-9bf0-1ec5d78fd015
 description: 'Riepilogo: informazioni su come creare le impostazioni di configurazione delle riunioni in Skype for Business Server.'
-ms.openlocfilehash: 1b0ba956e467f5b03036d8ef1d1629b4fc4dc517
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850029"
 ---
+
 # <a name="create-meeting-configuration-settings-in-skype-for-business-server"></a>Creare le impostazioni di configurazione delle riunioni in Skype for Business Server
  
 **Riepilogo:** Informazioni su come creare le impostazioni di configurazione delle riunioni in Skype for Business Server.
   
-È possibile creare le impostazioni di configurazione delle riunioni Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell.
+È possibile creare le impostazioni di configurazione delle riunioni Skype for Business Server Pannello di controllo o tramite Skype for Business Server Management Shell.
   
 ## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Creare le impostazioni di configurazione delle riunioni tramite Skype for Business Server pannello di controllo
 
@@ -31,7 +26,7 @@ ms.locfileid: "60850029"
     
 2.  Aprire Skype for Business Server Pannello di controllo.
     
-3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Configurazione riunione.**
+3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Configurazione riunione**.
     
 4. Nella pagina **Configurazione riunione** fare clic su **Nuovo** e quindi eseguire una delle operazioni seguenti:
     
@@ -67,7 +62,7 @@ ms.locfileid: "60850029"
     
 ## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-management-shell"></a>Creare le impostazioni di configurazione delle riunioni tramite Skype for Business Server Management Shell
 
-Per creare le impostazioni di configurazione delle riunioni, utilizzare il cmdlet **New-CsMeetingConfiguration.**
+Per creare le impostazioni di configurazione delle riunioni, **utilizzare il cmdlet New-CsMeetingConfiguration** .
   
 Il comando seguente crea un nuovo set di impostazioni di configurazione delle riunioni per il sito Redmond:
   
@@ -89,4 +84,4 @@ New-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Every
 New-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Everyone" -PSTNUCallersBypassLobby $True
 ```
 
-Per ulteriori informazioni, incluso un elenco completo di parametri, vedere [New-CsMeetingConfiguration.](/powershell/module/skype/new-csmeetingconfiguration?view=skype-ps)
+Per ulteriori informazioni, incluso un elenco completo di parametri, vedere [New-CsMeetingConfiguration](/powershell/module/skype/new-csmeetingconfiguration?view=skype-ps).

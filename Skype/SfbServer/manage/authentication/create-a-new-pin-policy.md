@@ -1,30 +1,25 @@
 ---
 title: Creare un nuovo criterio PIN in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 8bdf0478-fe9f-4371-93ff-db39381a25db
 description: 'Riepilogo: creare un nuovo criterio PIN in Skype for Business Server.'
-ms.openlocfilehash: cf9a35c634c9b53b557601009fa131c3c24e7db2
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60844209"
 ---
+
 # <a name="create-a-new-pin-policy-in-skype-for-business-server"></a>Creare un nuovo criterio PIN in Skype for Business Server
  
 **Riepilogo:** Creare un nuovo criterio PIN in Skype for Business Server.
   
-È possibile utilizzare la pagina **Criteri PIN** per fornire l'autenticazione pin (Personal Identification Number) agli utenti che si connettono a Skype for Business telefoni IP. Per utilizzare l'autenticazione tramite PIN, verificare che sia selezionata l'opzione **Abilita autenticazione PIN** nelle impostazioni relative ai servizi Web.
+È possibile utilizzare la pagina **Criteri PIN** per fornire l'autenticazione PIN (Personal Identification Number) agli utenti che si connettono a Skype for Business telefoni IP. Per utilizzare l'autenticazione tramite PIN, verificare che sia selezionata l'opzione **Abilita autenticazione PIN** nelle impostazioni relative ai servizi Web.
   
 Per creare criteri PIN a livello di utente o di sito, eseguire la procedura seguente. 
   

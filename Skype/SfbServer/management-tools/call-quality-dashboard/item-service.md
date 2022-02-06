@@ -1,25 +1,20 @@
 ---
 title: Item Service for Call Quality Dashboard (CQD)
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: b6d7b02a-a34e-4fef-986c-ca442e18fa0c
-description: "Riepilogo: informazioni su Item Service, che fa parte dell'API repository per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 58d141930d98704eac101feb5d0fe8994284b587
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60848439"
+description: 'Riepilogo: informazioni su Item Service, che fa parte dell''API repository per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
 ---
+
 # <a name="item-service-for-call-quality-dashboard-cqd"></a>Item Service for Call Quality Dashboard (CQD)
  
 **Riepilogo:** Informazioni su Item Service, che fa parte dell'API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
@@ -54,7 +49,7 @@ Le operazioni REST sono incluse nella tabella seguente.
 |:-----|:-----|
 |[Ottenere elementi](get-items.md) <br/> |Get Items restituisce tutti gli elementi nel repository.  <br/> |
 |[Ottieni elemento](get-item.md) <br/> |Get Item restituisce un oggetto Item specifico.  <br/> |
-|[Ottieni elementi secondari](get-sub-items.md) <br/> |Ottenere Sub-Items restituisce gli elementi secondari di un elemento specifico.  <br/> |
+|[Ottieni elementi secondari](get-sub-items.md) <br/> |Get Sub-Items restituisce gli elementi secondari di un elemento specifico.  <br/> |
 |[Ottieni predecessori elemento](get-item-ancestors.md) <br/> |Get Item Ancestors restituisce i predecessori di un elemento specifico.  <br/> |
 |[Aggiorna elemento](update-item.md) <br/> |Aggiornare un elemento specifico nel repository.  <br/> |
    

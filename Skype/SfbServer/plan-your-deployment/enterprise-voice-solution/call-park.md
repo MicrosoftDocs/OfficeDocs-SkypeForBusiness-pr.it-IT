@@ -1,28 +1,23 @@
 ---
 title: Pianificare il parcheggio di chiamata in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 985dc326-0aef-4308-b98b-c1d0069311e7
-description: Pianificazione del parcheggio di chiamata in Skype for Business Server VoIP aziendale, che consente di mettere le chiamate in attesa e trasferire le chiamate ai reparti. Include la pianificazione della capacità, le chiamate supportate e i client supportati.
-ms.openlocfilehash: 29ca14f85aeccaa8394ede4420c66af77e5c66c8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60839838"
+description: 'Pianificazione del parcheggio di chiamata in Skype for Business Server VoIP aziendale, che consente di mettere le chiamate in attesa e trasferire le chiamate ai reparti. Include la pianificazione della capacità, le chiamate supportate e i client supportati.'
 ---
+
 # <a name="plan-for-call-park-in-skype-for-business"></a>Pianificare il parcheggio di chiamata in Skype for Business
  
 Pianificazione del parcheggio di chiamata in Skype for Business Server VoIP aziendale, che consente di mettere le chiamate in attesa e trasferire le chiamate ai reparti. Include la pianificazione della capacità, le chiamate supportate e i client supportati.
@@ -56,7 +51,7 @@ L'applicazione Parcheggio di chiamata viene installata automaticamente quando si
   
 ### <a name="software-requirements"></a>Requisiti software
 
-Per tutti i Front End Server e i server edizione Standard in cui è distribuito Il parcheggio di chiamata deve essere installato il Runtime formato multimediale di Windows per i server che eseguono Windows Server 2008 R2 o Microsoft Media Foundation per i server che eseguono Windows Server 2012 o Windows Server 2012 R2. Per Windows Server 2008 R2, Windows Media Format Runtime viene installato come parte di Windows Desktop Experience. Windows Runtime formato multimediale o Microsoft Media Foundation è necessario per Windows file audio multimediali (wma) riprodotti da Parcheggio di chiamata per la musica in attesa.
+Per tutti i Front End Server e i server edizione Standard in cui è distribuito Il parcheggio di chiamata deve essere installato Runtime formato multimediale di Windows per i server che eseguono Windows Server 2008 R2 o Microsoft Media Foundation per i server che eseguono Windows Server 2012 o Windows Server 2012 R2. Per Windows Server 2008 R2, Windows Media Format Runtime viene installato come parte di Windows Desktop Experience. Windows Runtime formato multimediale o Microsoft Media Foundation è necessario per i file Windows Media Audio (wma) riprodotti da Parcheggio di chiamata per la musica in attesa.
   
 ### <a name="port-requirements"></a>Requisiti delle porte
 
@@ -67,7 +62,7 @@ L'applicazione Parcheggio di chiamata **utilizza la porta 5075 per**  le richies
   
 ### <a name="audio-file-requirements"></a>Requisiti dei file audio
 
-L'applicazione Parcheggio di chiamata supporta solo Windows file Audio multimediale (wma) per la musica in attesa. Per personalizzare i file per la musica di attesa, è possibile usare Microsoft Expression Encoder 4. Per scaricare Expression Encoder 4, vedere ["Expression Encoder 4".](https://go.microsoft.com/fwlink/p/?linkId=202843) Utilizzare lo strumento per convertire il file in un formato wma. Il formato consigliato per i file di musica di attesa del parcheggio di chiamata è Media Audio 9, 44 kHz, 16 bit, Mono, CBR, 32 kbps.
+L'applicazione Parcheggio di chiamata supporta solo Windows file Audio multimediale (wma) per la musica in attesa. Per personalizzare i file per la musica di attesa, è possibile usare Microsoft Expression Encoder 4. Per scaricare Expression Encoder 4, vedere   ["Expression Encoder 4"](https://go.microsoft.com/fwlink/p/?linkId=202843). Utilizzare lo strumento per convertire il file in un formato wma. Il formato consigliato per i file di musica di attesa del parcheggio di chiamata è Media Audio 9, 44 kHz, 16 bit, Mono, CBR, 32 kbps.
   
 > [!NOTE]
 > Il file convertito viene riprodotto nel telefono solo a 16 kHz, anche se è stato registrato a 44 kHz. 
@@ -129,7 +124,7 @@ Nella tabella seguente viene descritto il modello utente parcheggio di chiamata 
   
 **Modello utente del parcheggio di chiamata**
 
-|**Metrica**|**Per pool Front End  <br/>  (con 8 Front End Server)**|**Per server Standard Edition**|
+|**Metrica**|**Per pool  <br/>  Front End (con 8 Front End Server)**|**Per server Standard Edition**|
 |:-----|:-----|:-----|
 |Frequenza di parcheggio  <br/> |8 al minuto  <br/> |1 al minuto  <br/> |
 |Frequenza di recupero delle chiamate parcheggiate  <br/> |8 al minuto  <br/> |1 al minuto  <br/> |

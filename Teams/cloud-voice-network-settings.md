@@ -1,35 +1,30 @@
 ---
 title: Impostazioni di rete per le funzionalità vocali del cloud
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.topic: conceptual
 ms.reviewer: roykuntz
 ms.service: msteams
 audience: admin
 search.appverid: MET150
-description: Informazioni sulle impostazioni di rete che è necessario configurare per il routing Location-Based routing diretto e i servizi di emergenza migliorati.
+description: Informazioni sulle impostazioni di rete che è necessario configurare per il routing Location-Based routing diretto e sui servizi di emergenza migliorati.
 ms.localizationpriority: medium
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.collection:
-- M365-voice
-- m365initiative-voice
+  - M365-voice
+  - m365initiative-voice
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 862d696024baa75feefbbae7e4458caad22b5566
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60833982"
 ---
+
 # <a name="network-settings-for-cloud-voice-features-in-microsoft-teams"></a>Impostazioni di rete per le funzionalità vocali cloud in Microsoft Teams
 
-Informazioni sulle aree di rete, i siti di rete, le subnet di rete e gli indirizzi IP attendibili. Questi termini e concetti vengono usati nella documentazione vocale del cloud per [il routing in base](location-based-routing-plan.md) alla posizione per il routing diretto e per le chiamate di emergenza [dinamiche.](configure-dynamic-emergency-calling.md) Se si distribuiscono queste funzionalità cloud nell'organizzazione, è necessario configurare le impostazioni di rete per l'uso con queste funzionalità in Microsoft Teams.
+Informazioni sulle aree di rete, i siti di rete, le subnet di rete e gli indirizzi IP attendibili. Questi termini e concetti vengono usati nella documentazione vocale cloud per il [routing in base alla posizione per il routing diretto](location-based-routing-plan.md) e [per le chiamate di emergenza dinamiche](configure-dynamic-emergency-calling.md). Se si distribuiscono queste funzionalità cloud nell'organizzazione, è necessario configurare le impostazioni di rete per l'uso con queste funzionalità in Microsoft Teams.
 
-Questo articolo offre una panoramica delle impostazioni di rete comuni al routing Location-Based chiamate di emergenza dinamiche. A seconda della funzionalità vocale cloud e della funzionalità che si sta distribuendo, è possibile configurare alcune o tutte queste impostazioni. Per la procedura di configurazione di queste impostazioni, vedere Gestire la topologia di rete per le [funzionalità cloud in Teams](manage-your-network-topology.md).
+Questo articolo offre una panoramica delle impostazioni di rete comuni al routing Location-Based chiamate di emergenza dinamiche. A seconda della funzionalità vocale cloud e della funzionalità che si sta distribuendo, è possibile configurare alcune o tutte queste impostazioni. Per la procedura di configurazione di queste impostazioni, vedere [Gestire la topologia di rete per le caratteristiche cloud in Teams](manage-your-network-topology.md).
 
 > [!NOTE]
 > Gli eventuali requisiti specifici delle caratteristiche per le impostazioni di rete sono documentati negli argomenti di configurazione per tale caratteristica.

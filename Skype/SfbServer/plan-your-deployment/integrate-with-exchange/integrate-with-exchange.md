@@ -1,25 +1,20 @@
 ---
 title: Pianificare l'integrazione di Skype for Business ed Exchange
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ea22beb9-c02e-47cb-836d-97a556969052
 description: 'Riepilogo: esaminare questo argomento per informazioni su come integrare Skype for Business Server con Exchange Server 2016 o Exchange Server 2013.'
-ms.openlocfilehash: 5edfdf44b50d2a58c097bed5ee83855f375ff895
-ms.sourcegitcommit: b0bb7db41856ee377dbe4ca8c9dff56385bf120d
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61562838"
 ---
+
 # <a name="plan-to-integrate-skype-for-business-and-exchange"></a>Pianificare l'integrazione di Skype for Business ed Exchange
  
 **Riepilogo:** Leggere questo argomento per informazioni su come integrare Skype for Business Server con Exchange Server 2016 o Exchange Server 2013.
@@ -28,9 +23,9 @@ Prima di poter integrare Skype for Business Server e Exchange Server, è necessa
   
 Per informazioni dettagliate sull'Exchange Server, vedere la documentazione relativa Exchange Server pianificazione e distribuzione per la versione di Exchange. 
    
-Dopo aver eseguito i server, è necessario assegnare certificati di autenticazione da server a server a Skype for Business Server e Exchange Server; questi certificati consentono l'autenticazione Skype for Business Server e Exchange Server  per scambiare informazioni e comunicare tra loro. Quando si installa Exchange Server, viene creato automaticamente un certificato autofirmato con il nome Microsoft Exchange Server certificato di autenticazione. Questo certificato, disponibile nell'archivio certificati del computer locale, deve essere utilizzato per l'autenticazione da server a server Exchange Server. Per informazioni dettagliate sull'assegnazione di certificati in Exchange Server, vedere [Configure Mail Flow and Client Access](/exchange/configure-mail-flow-and-client-access-exchange-2013-help).
+Una volta che i server sono in esecuzione, è necessario assegnare certificati di autenticazione da server a server sia a Skype for Business Server che a Exchange Server; questi certificati consentono Skype for Business Server e Exchange Server  per scambiare informazioni e comunicare tra loro. Quando si installa Exchange Server, viene creato automaticamente un certificato autofirmato con il nome Microsoft Exchange Server certificato di autenticazione. Questo certificato, disponibile nell'archivio certificati del computer locale, deve essere utilizzato per l'autenticazione da server a server Exchange Server. Per informazioni dettagliate sull'assegnazione di certificati in Exchange Server, vedere [Configure Mail Flow and Client Access](/exchange/configure-mail-flow-and-client-access-exchange-2013-help).
   
-Ad Skype for Business Server è possibile utilizzare un certificato di Skype for Business Server esistente come certificato di autenticazione da server a server; ad esempio, il certificato predefinito può essere utilizzato anche come certificato OAuthTokenIssuer. Skype for Business Server consente di utilizzare qualsiasi certificato del server Web come certificato per l'autenticazione da server a server purché:
+Ad Skype for Business Server è possibile utilizzare un certificato Skype for Business Server esistente come certificato di autenticazione da server a server; ad esempio, il certificato predefinito può essere utilizzato anche come certificato OAuthTokenIssuer. Skype for Business Server consente di utilizzare qualsiasi certificato del server Web come certificato per l'autenticazione da server a server purché:
   
 - Il certificato includa il nome del dominio SIP nel campo Oggetto.
     
@@ -42,7 +37,7 @@ Per informazioni dettagliate sui certificati di autenticazione da server a serve
   
 Dopo aver assegnato i certificati, è necessario configurare il servizio di individuazione automatica in Exchange Server. In Exchange Server, il servizio di individuazione automatica configura i profili utente e fornisce l'accesso Exchange servizi quando gli utenti accedono al sistema. Gli utenti presentano il servizio di individuazione automatica con l'indirizzo di posta elettronica e la password; a sua volta, i servizi forniscono all'utente informazioni quali:
   
-- Informazioni di connessione sia per la connettività interna che per la connettività Exchange Server.
+- Informazioni di connessione per la connettività interna ed esterna a Exchange Server.
     
 - Posizione del server Cassette postali dell'utente.
     
@@ -66,7 +61,7 @@ Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri 
 
 Per informazioni dettagliate sul servizio di individuazione automatica, vedere [Autodiscover Service](/Exchange/architecture/client-access/autodiscover).
   
-Dopo aver configurato il servizio di individuazione automatica, è necessario modificare le impostazioni di configurazione di Skype for Business Server OAuth, in modo che Skype for Business Server sappia dove trovare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione di OAuth in Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell. Quando si esegue questo comando, assicurarsi di specificare l'URI per il servizio di individuazione automatica in esecuzione sul Exchange Server e di utilizzare **autodiscover.svc** per puntare al percorso del servizio **anziché aautodiscover.xml** (che punta al file XML utilizzato dal servizio):
+Dopo aver configurato il servizio di individuazione automatica, è necessario modificare le impostazioni di configurazione di Skype for Business Server OAuth, in modo che Skype for Business Server sappia dove trovare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione di OAuth in Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell. Quando si esegue questo comando, assicurarsi di specificare l'URI del servizio di individuazione automatica in esecuzione sul Exchange Server e di utilizzare **autodiscover.svc** per puntare al percorso del servizio anziché **aautodiscover.xml** (che punta al file XML utilizzato dal servizio):
   
 ```PowerShell
 Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc" 
@@ -76,12 +71,12 @@ Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://auto
 > Il parametro Identity nel comando precedente è facoltativo. questo perché Skype for Business Server solo di avere una singola raccolta globale di impostazioni di configurazione OAuth. Tra le altre cose, questo significa che è possibile configurare l'URL di individuazione automatica utilizzando questo comando leggermente più semplice: 
 > 
 > [!NOTE]
-> Set-CsOAuthConfiguration-ExchangeAutodiscoverUrl " <https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc> " " 
+> Set-CsOAuthConfiguration-ExchangeAutodiscoverUrl "<https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc>" 
 > 
 > [!NOTE]
 > Per chi non avesse familiarità con la tecnologia, OAuth è un protocollo di autorizzazione standard utilizzato da numerosi siti Web di rilievo. Con OAuth, le credenziali e le password degli utenti non vengono passate da un computer all'altro. L'autenticazione e l'autorizzazione sono invece basate sullo scambio di token di sicurezza. Tali token consentono l'accesso a uno specifico set di risorse per un tempo specifico. 
   
-Oltre a configurare il servizio di individuazione automatica, è inoltre necessario creare un record DNS per il servizio che punta alla propria Exchange Server. Ad esempio, se il servizio di individuazione automatica si trova in autodiscover.litwareinc.com sarà necessario creare un record DNS per autodiscover.litwareinc.com che si risolve nel nome di dominio completo del Exchange Server (ad esempio, atl-exchange-001.litwareinc.com).
+Oltre a configurare il servizio di individuazione automatica, è inoltre necessario creare un record DNS per il servizio che punta al Exchange Server. Ad esempio, se il servizio di individuazione automatica si trova in autodiscover.litwareinc.com sarà necessario creare un record DNS per autodiscover.litwareinc.com che si risolve nel nome di dominio completo del Exchange Server (ad esempio, atl-exchange-001.litwareinc.com).
   
 Se si sta integrando Skype for Business Server con Exchange Online, i passaggi successivi sono in [Configure integration between on-premises Skype for Business Server and Outlook Web App](../../deploy/integrate-with-exchange-server/outlook-web-app.md), altrimenti vedere [Integrate Skype for Business Server con Exchange Server](../../deploy/integrate-with-exchange-server/integrate-with-exchange-server.md).
   
@@ -114,13 +109,13 @@ Nella tabella seguente vengono fornite informazioni dettagliate sulle funzionali
 |Cronologia conversazioni sul lato server   |Y   |Y   |N   |Y   |Y   |
 
 > [!NOTE]
-> È disponibile un servizio di Cloud Voicemail supportato per Skype for Business Online, Skype for Business Server 2019, Skype for Business Server 2015 e Lync Server 2013.
+> Esiste un servizio Cloud Voicemail supportato per Skype for Business Online, Skype for Business Server 2019, Skype for Business Server 2015 e Lync Server 2013.
 > 
 
 ## <a name="see-also"></a>Vedere anche
 <a name="feature_support"> </a>
 
-[Configurare l'integrazione tra Skype for Business Server locali e Outlook Web App](../../deploy/integrate-with-exchange-server/outlook-web-app.md)
+[Configurare l'integrazione tra i Skype for Business Server locali e Outlook Web App](../../deploy/integrate-with-exchange-server/outlook-web-app.md)
   
 [Configurare OAuth tra Skype for Business Online e Exchange locale](../../deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises.md)
 

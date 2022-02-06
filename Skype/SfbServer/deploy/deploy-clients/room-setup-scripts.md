@@ -1,25 +1,20 @@
 ---
-title: Skype Script di configurazione delle chat room del sistema sala
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: Skype di configurazione delle chat room room
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: a66067d2-22b0-48f1-a5d0-e0cd0ece2e5a
 description: Leggere questo argomento per trovare script di esempio per il provisioning Skype di sistema room.
-ms.openlocfilehash: ef70cc0c36cf4a1434b0ca1e120a8d81799d7640
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60859633"
 ---
-# <a name="skype-room-system-room-setup-scripts"></a>Skype Script di configurazione delle chat room del sistema sala
+
+# <a name="skype-room-system-room-setup-scripts"></a>Skype di configurazione delle chat room room
  
 Leggere questo argomento per trovare script di esempio per il provisioning Skype di sistema room.
   
@@ -47,7 +42,7 @@ Prima di eseguire lo script, verificare di aver esaminato i prerequisiti seguent
     
 - Windows Azure Active Directory module for Windows PowerShell (versione a 64 bit) o (versione a 32 bit)
     
-- Teams Modulo PowerShell
+- Teams PowerShell
     
 - Riavvia se necessario
     

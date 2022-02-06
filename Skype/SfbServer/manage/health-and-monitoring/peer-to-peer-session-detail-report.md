@@ -1,24 +1,19 @@
 ---
 title: Rapporto dettagli sessione peer-to-peer in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 6be1d676-68f7-4a53-a72a-de73296c5571
 description: 'Riepilogo: informazioni sul Rapporto dettagli sessione peer-to-peer in Skype for Business Server.'
-ms.openlocfilehash: fe49c455391583a02f873769a75d86da62fe2a25
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829970"
 ---
+
 # <a name="peer-to-peer-session-detail-report-in-skype-for-business-server"></a>Rapporto dettagli sessione peer-to-peer in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto dettagli sessione peer-to-peer in Skype for Business Server.
@@ -37,7 +32,7 @@ Nel rapporto Dettagli sessione peer-to-peer vengono fornite informazioni dettagl
     
 - Rapporto Elenco errori 
     
-Dall'interno del Rapporto dettagli sessione peer-to-peer è possibile accedere al Rapporto di diagnostica [in Skype for Business Server](diagnostic-report.md) facendo clic sulla metrica Rapporto di diagnostica (dettagli). Facendo clic su una delle seguenti due metriche, è inoltre possibile accedere al Rapporto errori principali:
+Dal Rapporto dettagli sessione peer-to-peer è possibile accedere al Rapporto di diagnostica [in Skype for Business Server](diagnostic-report.md) facendo clic sulla metrica Rapporto di diagnostica (dettagli). Facendo clic su una delle seguenti due metriche, è inoltre possibile accedere al Rapporto errori principali:
   
 - Risposta
     

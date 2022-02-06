@@ -1,34 +1,29 @@
 ---
-title: Microsoft Teams riunioni su browser non supportati
-author: HowlinWolf-92
-ms.author: v-mahoffman
+title: Microsoft Teams riunioni in browser non supportati
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
 MS.collection:
-- M365-collaboration
+  - M365-collaboration
 ms.reviewer: nakulm
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Scopri come Teams audio e video nei browser non supportati.
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 51ba0ede8df0548288b2519d76220f50f28e4abe
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837448"
+  - Microsoft Teams
 ---
-# <a name="microsoft-teams-meetings-on-unsupported-browsers"></a>Microsoft Teams riunioni su browser non supportati
 
-Alcuni browser, ad esempio Internet Explorer 11, Safari e Firefox, supportano l'app Web Microsoft Teams, ma non supportano alcune delle funzionalità Teams chiamate e riunioni. Per risolvere questa limitazione, l'app Web Teams consente agli utenti di ricevere l'audio tramite una connessione PSTN e di visualizzare il contenuto presentato (condivisione dello schermo) a una velocità di visualizzazione ridotta.
+# <a name="microsoft-teams-meetings-on-unsupported-browsers"></a>Microsoft Teams riunioni in browser non supportati
+
+Alcuni browser, ad esempio Internet Explorer 11, Safari e Firefox, supportano l'app Web Microsoft Teams, ma non supportano alcune delle funzionalità Teams chiamate e riunioni. Per aggirare questa limitazione, l'app Web Teams consente agli utenti di ricevere l'audio tramite una connessione PSTN e di visualizzare il contenuto presentato (condivisione dello schermo) a una velocità di visualizzazione ridotta.
 
 > [!Note]
-> Microsoft 365 app e servizi non supporteranno Internet Explorer 11 a partire dal 17 agosto 2021 (Microsoft Teams non supporterà Internet Explorer 11 in precedenza, a partire dal 30 novembre 2020). [Altre informazioni](https://aka.ms/AA97tsw). Si noti che Internet Explorer 11 rimarrà un browser supportato. Internet Explorer 11 è un componente del [](/lifecycle/faq/internet-explorer-microsoft-edge) sistema operativo Windows e segue i criteri relativi al ciclo di vita del prodotto in cui è installato.
+> Microsoft 365 le app e i servizi non supporteranno Internet Explorer 11 a partire dal 17 agosto 2021 (Microsoft Teams non supporterà Internet Explorer 11 in precedenza, a partire dal 30 novembre 2020). [Altre informazioni](https://aka.ms/AA97tsw). Si noti che Internet Explorer 11 rimarrà un browser supportato. Internet Explorer 11 è un componente del sistema operativo Windows e segue i criteri relativi al [](/lifecycle/faq/internet-explorer-microsoft-edge) ciclo di vita per il prodotto in cui è installato.
 
 Quando Teams rileva un browser non supportato, viene visualizzato automaticamente un messaggio che spiega il problema e le limitazioni della sessione. Il messaggio fornisce altre istruzioni per accedere all'audio della riunione, ad esempio per consigliare all'utente di lasciare un numero di chiamata in modo che Teams possa chiamare l'utente o indicare all'utente di chiamare il numero della conferenza incluso nell'invito alla riunione. Il messaggio incoraggia anche l'utente a scaricare e usare il [client desktop](https://teams.microsoft.com/downloads) Teams per l'esperienza Teams completa.
 
@@ -46,7 +41,7 @@ Le persone che usano Teams web app nei browser non supportati avranno le limitaz
 - Se la chiamata viene interrotta, la riunione non si riconnette automaticamente.
 - Gli utenti non possono avviare riunioni.
 
-Per altre informazioni sul supporto del browser in Teams, vedere Limiti e specifiche [per Teams](./limits-specifications-teams.md#browsers).
+Per altre informazioni sul supporto del browser in Teams, vedere [Limiti e specifiche per Teams](./limits-specifications-teams.md#browsers).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

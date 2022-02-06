@@ -1,28 +1,23 @@
 ---
 title: Regole di conversione in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 6e067bd4-4931-4385-81ac-2acae45a16d8
 description: Informazioni sulle regole di conversione e sulla normalizzazione delle stringhe di composizione in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 1ad2434a0f57e57f6d86b8bda0c9c2e7af6c3de9
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60841008"
 ---
+
 # <a name="translation-rules-in-skype-for-business-server"></a>Regole di conversione in Skype for Business Server
 
 Informazioni sulle regole di conversione e sulla normalizzazione delle stringhe di composizione in Skype for Business Server VoIP aziendale.
@@ -42,5 +37,5 @@ Per informazioni dettagliate su come implementare le regole di conversione, vede
 
 |**Descrizione**|**Cifre iniziali**|**Lunghezza**|**Cifre da rimuovere**|**Cifre da aggiungere**|**Formato corrispondente**|**Conversione**|**Esempio**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Composizione convenzionale di interurbane negli Stati Uniti  <br/> (rimuovere il '+')  <br/> |+1  <br/> |Esattamente 12  <br/> |1  <br/> |0  <br/> |^\+(1\d {10} ) $  <br/> |$1  <br/> |+14255551010 diventa 14255551010  <br/> |
-|Composizione di interurbane internazionali negli Stati Uniti  <br/> (rimuovere '+' e aggiungere 011)  <br/> |+  <br/> |Almeno 11  <br/> |1  <br/> |011  <br/> |^\+(\d {9} \d+)$  <br/> |011$1  <br/> |+441235551010 diventa 011441235551010  <br/> |
+|Composizione convenzionale di interurbane negli Stati Uniti  <br/> (rimuovere il '+')  <br/> |+1  <br/> |Esattamente 12  <br/> |1  <br/> |0  <br/> |^\+(1\d{10}) $  <br/> |$1  <br/> |+14255551010 diventa 14255551010  <br/> |
+|Composizione di interurbane internazionali negli Stati Uniti  <br/> (rimuovere '+' e aggiungere 011)  <br/> |+  <br/> |Almeno 11  <br/> |1  <br/> |011  <br/> |^\+(\d{9}\d+)$  <br/> |011$1  <br/> |+441235551010 diventa 011441235551010  <br/> |

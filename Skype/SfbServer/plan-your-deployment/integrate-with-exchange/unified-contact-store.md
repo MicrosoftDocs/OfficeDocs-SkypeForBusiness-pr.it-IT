@@ -1,29 +1,24 @@
 ---
 title: Pianificare l'archivio contatti unificato in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 6/8/2017
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d56e11be-43dd-45d4-8ac6-3adfb03f5d1a
-description: "Riepilogo: esaminare questo argomento durante la pianificazione dell'integrazione Skype for Business Server con Exchange 2013."
-ms.openlocfilehash: 9334d8cdacfcc4ab2bf6cc733ce26faa7ff05280
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60855230"
+description: 'Riepilogo: leggere questo argomento durante la pianificazione dell''integrazione Skype for Business Server con Exchange 2013.'
 ---
+
 # <a name="plan-for-unified-contact-store-in-skype-for-business-server-2015"></a>Pianificare l'archivio contatti unificato Skype for Business Server 2015
  
-**Riepilogo:** Leggere questo argomento durante la pianificazione dell'integrazione Skype for Business Server con Exchange 2013 o 2016.Review this topic while planning to integrate Skype for Business Server with Exchange 2013 or 2016.
+**Riepilogo:** Leggere questo argomento durante la pianificazione dell'integrazione Skype for Business Server con Exchange 2013 o 2016.
   
 L'archivio contatti unificato offre un'esperienza di contatto coerente tra i prodotti Microsoft Office e consente agli utenti di archiviare tutte le informazioni di contatto in Exchange 2013, ma consente di essere disponibili a livello globale in Skype for Business, Exchange, Outlook e Outlook Web Access.
   
@@ -44,4 +39,4 @@ Per implementare l'archivio contatti unificato in Skype for Business Server:
   
 ## <a name="see-also"></a>Vedere anche
 
-[Distribuire l'archivio contatti unificato in Skype for Business Server](../../deploy/deploy-unified-contact-store.md)
+[Distribuire un archivio contatti unificato in Skype for Business Server](../../deploy/deploy-unified-contact-store.md)

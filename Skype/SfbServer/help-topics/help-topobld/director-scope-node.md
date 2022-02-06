@@ -1,27 +1,22 @@
 ---
 title: Nodo dell'ambito del Director
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.DirectorScopeNode
+  - ms.lync.tb.DirectorScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 790396f1-9821-45cd-906d-80c1f170f5ef
-description: "In questo nodo vengono visualizzati il nome di dominio completo (FQDN), le porte e l'archivio file associato per questo pool di server Director. È possibile eseguire le operazioni seguenti:"
-ms.openlocfilehash: de50c3152578bb38bb260c65f3a1ef41fbe08866
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60851160"
+description: 'In questo nodo vengono visualizzati il nome di dominio completo (FQDN), le porte e l''archivio file associato per questo pool di server Director. È possibile eseguire le operazioni seguenti:'
 ---
+
 # <a name="director-scope-node"></a>Nodo dell'ambito di Director
  
 In questo nodo vengono visualizzati il nome di dominio completo (FQDN), le porte e l'archivio file associato per questo pool di server Director. È possibile eseguire le operazioni seguenti:

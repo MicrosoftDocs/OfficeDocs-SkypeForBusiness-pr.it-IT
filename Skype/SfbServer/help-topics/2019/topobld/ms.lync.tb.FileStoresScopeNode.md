@@ -1,27 +1,22 @@
 ---
 title: Nodo di ambito degli archivi file
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.FileStoresScopeNode
+  - ms.lync.tb.FileStoresScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 9d88f69d-8641-4405-a26d-99414af679a5
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Nel nodo Archivi file vengono elencati gli archivi file della topologia. È possibile eseguire l'operazione seguente:"
-ms.openlocfilehash: fd227ca4aa8afa2c977e46058aef89f4dba849fe
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60841688"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Nel nodo Archivi file vengono elencati gli archivi file della topologia. È possibile eseguire l''operazione seguente:'
 ---
+
 # <a name="file-stores-scope-node"></a>Nodo di ambito degli archivi file
  
 Nel nodo **Archivi file** vengono elencati gli archivi file della topologia. È possibile eseguire l'operazione seguente:

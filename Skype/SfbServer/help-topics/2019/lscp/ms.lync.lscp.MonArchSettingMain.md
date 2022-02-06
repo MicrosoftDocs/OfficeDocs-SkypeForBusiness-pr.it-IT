@@ -1,27 +1,22 @@
 ---
 title: Configurazione archiviazione
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.lscp.MonArchSettingMain
+  - ms.lync.lscp.MonArchSettingMain
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 9c2fd164-a9b8-40e6-a1c4-423a7fe34aba
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Le configurazioni di archiviazione consentono di controllare le opzioni di archiviazione per la distribuzione Skype for Business Server, inclusa l'abilitazione e la disabilitazione delle opzioni seguenti:"
-ms.openlocfilehash: 8eba27c2fc132e97b6b9857a72f029b567890947
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60828229"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Le configurazioni di archiviazione consentono di controllare le opzioni di archiviazione per la distribuzione Skype for Business Server, inclusa l''abilitazione e la disabilitazione delle opzioni seguenti:'
 ---
+
 # <a name="archiving-configuration"></a>Configurazione archiviazione
  
 Le configurazioni di archiviazione consentono di controllare le opzioni di archiviazione per la distribuzione Skype for Business Server, inclusa l'abilitazione e la disabilitazione delle opzioni seguenti:
@@ -68,5 +63,5 @@ Nella **pagina Configurazione archiviazione** sono elencati i criteri di archivi
     
 - **Aggiorna** È possibile aggiornare la pagina **Configurazione archiviazione** per verificare lo stato delle opzioni di tutte le configurazioni di archiviazione.
     
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità di archiviazione, inclusa l'integrazione di Exchange, vedere [Plan for archiving in Skype for Business Server,](../../../plan-your-deployment/archiving/archiving.md)Deploy archiving for [Skype for Business Server](../../../deploy/deploy-archiving/deploy-archiving.md)e Manage archiving [in Skype for Business Server](../../../manage/archiving/archiving.md).
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità di archiviazione, inclusa l'integrazione di Exchange, vedere [Plan for archiving in Skype for Business Server](../../../plan-your-deployment/archiving/archiving.md), [Deploy archiving for Skype for Business Server e](../../../deploy/deploy-archiving/deploy-archiving.md) [Manage archiving in Skype for Business Server ](../../../manage/archiving/archiving.md).
 

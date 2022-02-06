@@ -1,36 +1,31 @@
 ---
 title: Creare un database
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.PublishTopologyCreateDatabasePage
+  - ms.lync.tb.PublishTopologyCreateDatabasePage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 4d391619-1cab-4265-ae8a-2519993705bc
-description: Generatore di topologie consente di installare database in un SQL Server archivio. Quando si installano database utilizzando Generatore di topologie, l'applicazione legge le informazioni dalla topologia e quindi installa i database necessari nel computer SQL Server o nel cluster SQL Server specificato. Questo è l'unico tipo di installazione di database disponibile tramite il Generatore di topologie. Se è necessario installare un database specifico in un computer specifico o se è necessario installare un database collocato, è necessario utilizzare invece l'interfaccia della riga di comando Windows PowerShell e il cmdlet Install-CsDatabase.
-ms.openlocfilehash: c6923f81de97fb6210861366ad71f3f87cdd83f8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60830190"
+description: 'Generatore di topologie consente di installare database in un SQL Server archivio. Quando si installano database utilizzando Generatore di topologie, l''applicazione legge le informazioni dalla topologia e quindi installa i database necessari nel computer SQL Server o nel cluster SQL Server specificato. Questo è l''unico tipo di installazione di database disponibile tramite il Generatore di topologie. Se è necessario installare un database specifico in un computer specifico o se è necessario installare un database collocato, è necessario utilizzare l''interfaccia della riga di comando Windows PowerShell e il cmdlet Install-CsDatabase.'
 ---
+
 # <a name="create-database"></a>Creazione database
  
-Generatore di topologie consente di installare database in un SQL Server archivio. Quando si installano database utilizzando Generatore di topologie, l'applicazione legge le informazioni dalla topologia e quindi installa i database necessari nel computer SQL Server o nel cluster SQL Server specificato. Questo è l'unico tipo di installazione di database disponibile tramite il Generatore di topologie. Se è necessario installare un database specifico in un computer specifico o se è necessario installare un database collocato, è necessario utilizzare Windows PowerShell interfaccia della riga di comando e il cmdlet [Install-CsDatabase.](/powershell/module/skype/install-csdatabase?view=skype-ps)
+Generatore di topologie consente di installare database in un SQL Server archivio. Quando si installano database utilizzando Generatore di topologie, l'applicazione legge le informazioni dalla topologia e quindi installa i database necessari nel computer SQL Server o nel cluster SQL Server specificato. Questo è l'unico tipo di installazione di database disponibile tramite il Generatore di topologie. Se è necessario installare un database specifico in un computer specifico o se è necessario installare un database collocato, è necessario utilizzare invece l'interfaccia della riga di comando Windows PowerShell e il cmdlet [Install-CsDatabase](/powershell/module/skype/install-csdatabase?view=skype-ps).
   
 ### <a name="creating-a-database"></a>Creazione di un database
 
-1. Fare clic sul Skype for Business Server 2015 e quindi su **Installa database.**
+1. Fare clic sul Skype for Business Server 2015 e quindi su **Installa database**.
     
-2. Nella **pagina** Crea database della  finestra di dialogo Installa database selezionare il nome di dominio completo (FQDN) dell'archivio SQL Server in cui devono essere creati i nuovi database.
+2. Nella **pagina Crea** database della finestra di dialogo Installa  database selezionare il nome di dominio completo (FQDN) dell'archivio SQL Server in cui devono essere creati i nuovi database.
     
 3. Fare clic su **Avanzate**. Nella finestra di dialogo **Seleziona percorso file di database** selezionare una delle opzioni seguenti:
     

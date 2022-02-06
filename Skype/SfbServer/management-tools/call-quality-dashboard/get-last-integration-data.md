@@ -1,25 +1,20 @@
 ---
 title: Get Last Integration Data
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: e7967dd9-0d6a-4a80-8b59-b8fc2e5615f8
-description: "Riepilogo: informazioni sull'operazione Get Last Integration Data, che fa parte dell'API dei dati per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 7bc9323c4a2d3933706be0a39a2ff4b86b11eb42
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60851970"
+description: 'Riepilogo: informazioni sull''operazione Get Last Integration Data, che fa parte dell''API dei dati per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
 ---
+
 # <a name="get-last-integration-data"></a>Get Last Integration Data
  
 **Riepilogo:** Informazioni sull'operazione Get Last Integration Data, che fa parte dell'API dei dati per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
@@ -35,7 +30,7 @@ Questa funzionalità è disabilitata per impostazione predefinita e deve essere 
 
 |**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|GET  <br/> |https:// \<portal\> /QoEDataService/IntegrationLog/Status  <br/> |HTTP/1.1  <br/> |
+|GET  <br/> |\<portal\>https:///QoEDataService/IntegrationLog/Status  <br/> |HTTP/1.1  <br/> |
    
  **Parametri URI** - Nessuno.
   
@@ -43,13 +38,13 @@ Questa funzionalità è disabilitata per impostazione predefinita e deve essere 
   
  **Corpo della richiesta** - Nessuno.
   
- **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
- **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK).
+ **Codice di stato** : un'operazione riuscita restituisce il codice di stato 200 (OK).
   
  **Intestazioni di risposta** - Nessuna intestazione aggiuntiva.
   
- **Corpo della risposta:** di seguito è riportato uno stato del log di esempio.
+ **Corpo della risposta** : di seguito è riportato uno stato del log di esempio.
   
 ```json
 {

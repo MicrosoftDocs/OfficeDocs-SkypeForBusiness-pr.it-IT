@@ -1,25 +1,20 @@
 ---
 title: Visualizzazione elementi multimediali
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 1a7b2e59-082e-4188-98ae-48ae9bd3494a
-description: Nella visualizzazione Media vengono archiviate le informazioni sul tipo di supporto utilizzato in una sessione peer-to-peer. Qualora si utilizzino più supporti, nella tabella saranno presenti più record per una sessione. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 2ed8d66bf55594e3524a43b35df3bfa6d859055a
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60828559"
+description: 'Nella visualizzazione Media vengono archiviate le informazioni sul tipo di supporto utilizzato in una sessione peer-to-peer. Qualora si utilizzino più supporti, nella tabella saranno presenti più record per una sessione. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.'
 ---
+
 # <a name="media-view"></a>Visualizzazione elementi multimediali
  
 Nella visualizzazione Media vengono archiviate le informazioni sul tipo di supporto utilizzato in una sessione peer-to-peer. Qualora si utilizzino più supporti, nella tabella saranno presenti più record per una sessione. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
@@ -31,7 +26,7 @@ La visualizzazione Media contiene tutte le colonne nella [visualizzazione Sessio
   
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
-|**Contenuti multimediali** <br/> |nvarchar(256)  <br/> |Tipo di supporto. Per ulteriori informazioni, vedi la [tabella MediaList.](medialist.md) <br/> |
+|**Contenuti multimediali** <br/> |nvarchar(256)  <br/> |Tipo di supporto. Per ulteriori [informazioni, vedi la tabella MediaList](medialist.md) . <br/> |
 |**MediaStartTime** <br/> |datetime  <br/> |Ora di invio di una richiesta di supporto.  <br/> |
 |**MediaEndTime** <br/> |datetime  <br/> |Ora di fine della sessione.  <br/> |
    

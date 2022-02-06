@@ -1,25 +1,20 @@
 ---
 title: (Facoltativo) Verificare la distribuzione del parcheggio di chiamata in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: fcfe0962-1a9c-4cbd-847c-fed40e3b1480
 description: Verifica della distribuzione del parcheggio di chiamata in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 9258a38936ffe22eb209c4b4bd9d1e5692341003
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60838338"
 ---
+
 # <a name="optional-verify-call-park-deployment-in-skype-for-business"></a>(Facoltativo) Verificare la distribuzione del parcheggio di chiamata in Skype for Business
  
 Verifica della distribuzione del parcheggio di chiamata in Skype for Business Server VoIP aziendale. 

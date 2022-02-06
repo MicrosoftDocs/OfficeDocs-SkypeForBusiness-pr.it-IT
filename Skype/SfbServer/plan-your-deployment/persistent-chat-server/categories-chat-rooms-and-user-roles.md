@@ -1,26 +1,21 @@
 ---
-title: Categorie di chat persistente, chat room e ruoli utente in Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: 'Categorie di chat persistenti, chat room e ruoli utente in Skype for Business Server 2015'
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 8/17/2015
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 343a0563-9ca5-4ad0-b4f3-a72f1d7f1a81
 description: 'Riepilogo: leggere questo argomento per informazioni su categorie, chat room e ruoli utente e amministratore per il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 212e731da29bc327487e0e6512db413546d20670
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60857253"
 ---
-# <a name="persistent-chat-categories-chat-rooms-and-user-roles-in-skype-for-business-server-2015"></a>Categorie di chat persistente, chat room e ruoli utente in Skype for Business Server 2015
+
+# <a name="persistent-chat-categories-chat-rooms-and-user-roles-in-skype-for-business-server-2015"></a>Categorie di chat persistenti, chat room e ruoli utente in Skype for Business Server 2015
  
 **Riepilogo:** Leggere questo argomento per informazioni su categorie, chat room e ruoli utente e amministratore per il server Chat persistente in Skype for Business Server 2015.
   
@@ -33,7 +28,7 @@ ms.locfileid: "60857253"
 - Ruoli di amministratore
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
     
 ## <a name="categories-for-organizing-chat-rooms"></a>Categorie per l'organizzazione delle chat room
 
@@ -42,13 +37,13 @@ Le categorie consentono di organizzare chat room e controllare quali utenti e gr
 La logica principale per il concetto di membri consentiti e negati è la parete etica. Ad esempio è frequente negli istituti bancari e finanziari la presenza di vincoli etici che impediscono ai commercianti e agli analisti di condividere le comunicazioni quando implementano criteri e convenzioni. Per ovviare a questo problema, un amministratore può creare le categorie in modo che una categoria consenta la creazione e l'uso delle chat ai commercianti e un'altra agli analisti. Gli utenti non possono essere aggiunti come membri di una chat room se la categoria padre la impedisce.
   
 > [!IMPORTANT]
-> I membri consentiti e negati in una categoria non sono uguali **a** un ruolo Membro, che si applica a una chat room di Persistent Chat.> Le ricerche visualizzano tutte le chat room aperte e chiuse per le quali l'utente che esegue la ricerca si trova nell'elenco dei membri Consentiti e Negati. Le chat segrete non vengono visualizzate, a meno che l'utente che esegue la ricerca non ne sia membro. L'utente può eseguire la ricerca solo delle chat di cui è già membro o di quelle per le quali può richiedere l'appartenenza. 
+> I membri consentiti e negati di una categoria non sono gli stessi  di un ruolo Membro, che si applica a una chat room di Persistent Chat.> Le ricerche visualizzano tutte le chat room aperte e chiuse per le quali l'utente che esegue la ricerca si trova nell'elenco Dei membri consentiti e negati. Le chat segrete non vengono visualizzate, a meno che l'utente che esegue la ricerca non ne sia membro. L'utente può eseguire la ricerca solo delle chat di cui è già membro o di quelle per le quali può richiedere l'appartenenza. 
   
 ## <a name="chat-rooms-and-user-roles"></a>Chat room e ruoli utente
 
 Oltre ai membri consentiti e negati per le categorie, è anche possibile controllare l'accesso alle chat room specificando i ruoli utente seguenti: Creator, Manager, Member e Presenter.
   
-- **Creator**: utenti che dispongono dell'autorizzazione per creare chat room. Tali utenti sono inclusi nell'elenco Creatori di determinate categorie: possono creare chat room in tali categorie, assegnare l'appartenenza in base alla categoria e affidare la gestione delle chat room a responsabili. L'utente che crea una chat room viene aggiunto automaticamente all'elenco dei responsabili della chat.
+- **Creatore**: utenti che dispongono dell'autorizzazione per creare chat room. Tali utenti sono inclusi nell'elenco Creatori di determinate categorie: possono creare chat room in tali categorie, assegnare l'appartenenza in base alla categoria e affidare la gestione delle chat room a responsabili. L'utente che crea una chat room viene aggiunto automaticamente all'elenco dei responsabili della chat.
     
     > [!NOTE]
     > Agli utenti con ruolo di Creatore vengono semplicemente concessi i diritti per la creazione di chat room. La promozione automatica al ruolo di Responsabile consente al Creatore di assegnare appartenenze, specificare responsabili ed eseguire altre operazioni per i servizi chat creati. 
@@ -68,11 +63,11 @@ Oltre ai membri consentiti e negati per le categorie, è anche possibile control
 
 Di seguito sono riportati i ruoli di amministratore per il server Chat persistente:
   
-- **Amministratore chat persistente**: il ruolo amministratore di Persistent Chat può gestire le chat room (modificare tutte le proprietà, tra cui appartenenza, responsabili, categorie, contrassegnare le chat room come disabilitate), nonché creare e gestire categorie di chat room che definiscono chi può creare e accedere alle chat room. Gli amministratori possono inoltre contrassegnare le chat room come disabilitate e cancellare le chat room che non sono più attive. Gli amministratori non sono soggetti alle limitazioni previste per i ruoli Creatore o Membri consentiti. Possono infatti creare qualsiasi tipo di chat room e aggiungere se stessi come membro di qualsiasi chat room. Gli amministratori possono inoltre modificare e gestire la configurazione di Persistent Chat (proprietà del pool, impostazioni globali e configurazione di conformità) e possono anche pianificare e implementare la migrazione da una distribuzione precedente di Group Chat Server a Skype for Business Server 2015 Persistent Chat Server.
+- **Amministratore chat persistente**: il ruolo amministratore di Chat persistente può gestire le chat room (modificare tutte le proprietà, tra cui appartenenza, responsabili, categorie, contrassegnare le chat room come disabilitate), nonché creare e gestire categorie di chat room che definiscono chi può creare e accedere alle chat room. Gli amministratori possono inoltre contrassegnare le chat room come disabilitate e cancellare le chat room che non sono più attive. Gli amministratori non sono soggetti alle limitazioni previste per i ruoli Creatore o Membri consentiti. Possono infatti creare qualsiasi tipo di chat room e aggiungere se stessi come membro di qualsiasi chat room. Gli amministratori possono inoltre modificare e gestire la configurazione di Persistent Chat (proprietà del pool, impostazioni globali e configurazione di conformità) e possono anche pianificare e implementare la migrazione da una distribuzione precedente di Group Chat Server a Skype for Business Server 2015 Persistent Chat Server.
     
-    Gli amministratori di Chat persistente sono in grado di amministrare il server Chat persistente utilizzando i cmdlet di Windows PowerShell in remoto, ovvero da un computer diverso dal server Chat persistente. Il server Chat persistente verifica che l'amministratore di Persistent Chat sia membro del gruppo locale RTC Local Administrator nel Front End Server del server Chat persistente.
+    Gli amministratori di Chat persistente sono in grado di amministrare il server Chat persistente utilizzando i cmdlet Windows PowerShell remoto, ovvero da un computer diverso dal server Chat persistente. Il server Chat persistente verifica che l'amministratore di Persistent Chat sia membro del gruppo locale RTC Local Administrator nel Front End Server del server Chat persistente.
     
-- **Skype for Business Server 2015 Administrator**: Amministratore globale dell'organizzazione per Skype for Business Server 2015 responsabile della distribuzione.
+- **Skype for Business Server amministratore 2015**: amministratore globale dell'organizzazione per Skype for Business Server 2015 responsabile della distribuzione.
     
 - **Operations Manager**: utente responsabile della gestione delle operazioni quotidiane.
     
@@ -86,6 +81,6 @@ Per ulteriori informazioni sulla configurazione e sulla gestione delle chat room
     
 - [Gestire le categorie nel server Chat persistente in Skype for Business Server 2015](../../manage/persistent-chat/categories.md)
     
-- [Gestire chat room nel server Chat persistente in Skype for Business Server 2015](../../manage/persistent-chat/chat-rooms.md)
+- [Gestire chat room nel server Chat persistente Skype for Business Server 2015](../../manage/persistent-chat/chat-rooms.md)
     
 

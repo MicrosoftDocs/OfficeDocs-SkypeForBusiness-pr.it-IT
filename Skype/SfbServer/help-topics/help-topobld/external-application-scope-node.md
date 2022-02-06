@@ -1,27 +1,22 @@
 ---
 title: Nodo dell'ambito dell'applicazione esterna
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.ExternalApplicationScopeNode
+  - ms.lync.tb.ExternalApplicationScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: dfd21945-331a-4058-97b6-d17690353702
-description: "In questo nodo vengono visualizzati il nome di dominio completo (FQDN) del pool, l'impostazione di replica e il pool di hop successivi per questo pool di applicazioni attendibili. È possibile eseguire queste azioni:"
-ms.openlocfilehash: cfa374b21d1e60fc658cd7fa6777d4890d6bbfec
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60860243"
+description: 'In questo nodo vengono visualizzati il nome di dominio completo (FQDN) del pool, l''impostazione di replica e il pool di hop successivi per questo pool di applicazioni attendibili. È possibile eseguire queste azioni:'
 ---
+
 # <a name="external-application-scope-node"></a>Nodo dell'ambito dell'applicazione esterna
  
 In questo nodo vengono visualizzati il nome di dominio completo (FQDN) del pool, l'impostazione di replica e il pool di hop successivi per questo pool di applicazioni attendibili. È possibile eseguire queste azioni:

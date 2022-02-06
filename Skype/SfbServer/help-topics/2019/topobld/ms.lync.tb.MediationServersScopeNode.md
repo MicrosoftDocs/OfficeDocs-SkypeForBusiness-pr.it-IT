@@ -1,27 +1,22 @@
 ---
 title: Nodo dell'ambito dei server Mediation Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.MediationServersScopeNode
+  - ms.lync.tb.MediationServersScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: e6da97ad-1546-4af8-b8e8-5a0053a1abea
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Nel nodo Pool Mediation Server vengono elencati i pool Mediation Server della topologia. È possibile eseguire l'operazione seguente:"
-ms.openlocfilehash: 13b69e749d12501c12f4babb9f81255af5c1955f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60844689"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Nel nodo Pool Mediation Server vengono elencati i pool Mediation Server della topologia. È possibile eseguire l''operazione seguente:'
 ---
+
 # <a name="mediation-servers-scope-node"></a>Nodo dell'ambito dei server Mediation Server
  
 Nel nodo **Pool Mediation Server** vengono elencati i pool Mediation Server della topologia. È possibile eseguire l'operazione seguente:

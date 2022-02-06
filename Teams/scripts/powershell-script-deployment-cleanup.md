@@ -1,7 +1,7 @@
 ---
 title: Esempio di script di PowerShell - pulizia Teams distribuzione
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.topic: article
 ms.reviewer: amitsri
@@ -9,21 +9,16 @@ ms.service: msteams
 audience: admin
 description: Usare questo script di PowerShell per disinstallare Teams e rimuovere la Teams per gli utenti.
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 search.appverid: MET150
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 ms.collection:
-- M365-collaboration
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: af5e5fe4c52030add0e60be0cedb5edc54b9c833
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837498"
+  - Microsoft Teams
 ---
+
 # <a name="powershell-script-sample---teams-deployment-clean-up"></a>Esempio di script di PowerShell : Teams pulizia della distribuzione
 
 Usare questo script per rimuovere Teams. Questo script disinstalla Teams e rimuove la Teams per un utente. Eseguire questo script per ogni profilo utente in cui Teams è stato installato in un computer.

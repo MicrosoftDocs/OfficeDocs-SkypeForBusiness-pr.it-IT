@@ -1,30 +1,25 @@
 ---
 title: Ripristino di emergenza del pool Front End in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 142caf34-0f20-47f3-9d32-ce25ab622fad
-description: Per il ripristino di emergenza, Skype for Business Server l'associazione del pool con il failover nel caso in cui un pool si insedi.
-ms.openlocfilehash: fa63aa9d549f64508f32c32ede24f34592a88719
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60833322"
+description: 'Per il ripristino di emergenza, Skype for Business Server l''associazione del pool con il failover nel caso in cui un pool si insedi.'
 ---
+
 # <a name="front-end-pool-disaster-recovery-in-skype-for-business-server"></a>Ripristino di emergenza del pool Front End in Skype for Business Server
  
 Per il ripristino di emergenza, Skype for Business Server l'associazione del pool con il failover nel caso in cui un pool si insedi.
   
-Per le opzioni di ripristino di emergenza più affidabili in Skype for Business Server, distribuire coppie di pool Front End in due siti geograficamente dislocati. Ogni sito dispone di un pool Front End associato a un pool Front End corrispondente nell'altro sito. Entrambi i siti sono attivi e il servizio di backup fornisce la replica dei dati in tempo reale per mantenere sincronizzati i pool. Vedere [Deploy paired Front End pools for disaster recovery in Skype for Business Server](../../deploy/deploy-high-availability-and-disaster-recovery/front-end-pools-for-disaster-recovery.md) if you want to implement Front End pool pairing.
+Per le opzioni di ripristino di emergenza più affidabili in Skype for Business Server, distribuire coppie di pool Front End in due siti geograficamente dislocati. Ogni sito dispone di un pool Front End associato a un pool Front End corrispondente nell'altro sito. Entrambi i siti sono attivi e il servizio di backup fornisce la replica dei dati in tempo reale per mantenere sincronizzati i pool. Vedere [Deploy paired Front End pools for disaster recovery in Skype for Business Server](../../deploy/deploy-high-availability-and-disaster-recovery/front-end-pools-for-disaster-recovery.md) se si desidera implementare l'associazione di pool Front End.
   
 ![Mostra i pool Front End in due siti diversi, abbinati tra loro.](../../media/f74533c0-a10e-4f18-85a8-b9a008497573.jpg)
   
@@ -62,7 +57,7 @@ Tutti i numeri degli obiettivi relativi al tempo e al punto di ripristino riport
   
 ## <a name="central-management-store-failover"></a>Failover dell'archivio di gestione centrale
 
-L'archivio di gestione centrale contiene i dati di configurazione relativi ai server e ai servizi nella distribuzione. Ogni Skype for Business Server include un archivio di gestione centrale, ospitato dal server back-end di un pool Front End.
+L'archivio di gestione centrale contiene i dati di configurazione relativi ai server e ai servizi nella distribuzione. Ogni Skype for Business Server distribuzione include un archivio di gestione centrale, ospitato dal server back-end di un pool Front End.
   
 Se si associa il pool che ospita l'archivio di gestione centrale, nel pool di backup viene impostato un database dell'archivio di gestione centrale di backup. In qualsiasi momento, uno dei due database dell'archivio di gestione centrale è attivo e l'altro è di standby. Il contenuto viene replicato dal servizio di backup dal database attivo alla modalità standby.
   
@@ -76,17 +71,17 @@ Gli obiettivi di progettazione per il failover dell'archivio di gestione central
   
 ## <a name="front-end-pool-pairing-data-security"></a>Sicurezza dei dati di associazione del pool Front End
 
-Il servizio di backup trasferisce continuamente i dati utente e il contenuto delle conferenze tra due pool Front End abbinati. I dati utente contengono GLI URI SIP dell'utente, nonché pianificazioni di conferenze, elenchi di contatti e impostazioni. Il contenuto delle conferenze include i caricamenti PowerPoint Microsoft e le lavagne usate nelle conferenze.
+Il servizio di backup trasferisce continuamente i dati utente e il contenuto delle conferenze tra due pool Front End abbinati. I dati utente contengono GLI URI SIP dell'utente, nonché pianificazioni di conferenze, elenchi di contatti e impostazioni. Il contenuto delle conferenze include i caricamenti di microsoft PowerPoint e le lavagne usate nelle conferenze.
   
 Dal pool di origine, questi dati vengono esportati dall'archiviazione locale, compressi e quindi trasferiti nel pool di destinazione, dove vengono decompressi e importati nell'archiviazione locale. Il Servizio di backup presume che i collegamenti di comunicazione tra i due data center si trovino all'interno di una rete aziendale protetta da Internet. Non crittografa i dati trasferiti tra i due data center, né i dati incapsulati in modo nativo all'interno di un protocollo sicuro, ad esempio HTTPS. Pertanto, è possibile un attacco man-in-the-middle da parte del personale interno all'interno della rete aziendale.
   
-Tutte le aziende che distribuiscono Skype for Business Server tra più data center e utilizzano la funzionalità di ripristino di emergenza devono garantire che il traffico tra i data center sia protetto dalla rete Intranet aziendale. Le aziende che si preoccupano della protezione da attacchi interni devono proteggere i collegamenti di comunicazione tra i data center. Si tratta di un requisito standard che aiuta anche protech molti altri tipi di dati sensibili aziendali trasferiti tra data center.
+Qualsiasi azienda che distribuisce Skype for Business Server più data center e utilizza la funzionalità di ripristino di emergenza deve garantire che il traffico tra i data center sia protetto dalla rete Intranet aziendale. Le aziende che si preoccupano della protezione da attacchi interni devono proteggere i collegamenti di comunicazione tra i data center. Si tratta di un requisito standard che aiuta anche protech molti altri tipi di dati sensibili aziendali trasferiti tra data center.
   
 Sebbene in un'azienda esista il pericolo di attacchi man-in-the-middle, è relativamente contenuto se paragonato al rischio di esporre il traffico in Internet. In particolare, i dati utente esposti dal servizio di backup (ad esempio gli URI SIP) sono generalmente disponibili per tutti i dipendenti dell'azienda tramite altri mezzi, ad esempio la Rubrica globale o altro software di directory. Pertanto, l'attenzione deve essere concentrata sulla protezione della rete WAN tra i due data center quando viene utilizzato il servizio di backup per copiare i dati tra i due pool associati.
   
 ### <a name="mitigating-security-risks"></a>Riduzione dei rischi per la sicurezza
 
-Sono disponibili molti modi per migliorare la protezione del traffico del servizio di backup. Ciò va dalla limitazione dell'accesso ai data center alla protezione del trasporto WAN tra i due data center. Nella maggior parte dei casi, le aziende che distribuiscono Skype for Business Server potrebbero già disporre dell'infrastruttura di sicurezza necessaria. Per le aziende che cercano indicazioni, Microsoft fornisce una soluzione come esempio di come creare un'infrastruttura IT sicura. Per informazioni dettagliate, vedere [https://go.microsoft.com/fwlink/p/?LinkId=268544](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725770(v=ws.10)) . 
+Sono disponibili molti modi per migliorare la protezione del traffico del servizio di backup. Ciò va dalla limitazione dell'accesso ai data center alla protezione del trasporto WAN tra i due data center. Nella maggior parte dei casi, le aziende che distribuiscono Skype for Business Server potrebbero già disporre dell'infrastruttura di sicurezza necessaria. Per le aziende che cercano indicazioni, Microsoft fornisce una soluzione come esempio di come creare un'infrastruttura IT sicura. Per informazioni dettagliate, vedere [https://go.microsoft.com/fwlink/p/?LinkId=268544](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725770(v=ws.10)). 
   
 Non implica che sia l'unica soluzione, né che sia la soluzione preferita per Skype for Business Server. È consigliabile che i clienti aziendali scelsino la soluzione in base alle proprie esigenze specifiche, in base all'infrastruttura e ai requisiti di sicurezza IT. La soluzione Microsoft di esempio utilizza IPSec e Criteri di gruppo per l'isolamento del server e del dominio.
   
