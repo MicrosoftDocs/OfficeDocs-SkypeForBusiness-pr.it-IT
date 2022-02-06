@@ -1,38 +1,33 @@
 ---
 title: Creare criteri percorso in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: f1878194-c756-4794-8fa1-15dd2118b4b3
 description: Leggere questo argomento per informazioni su come configurare i criteri percorso del servizio di emergenza avanzato (E9-1-1) in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 5d8ead66a66a0cf92c39acfe9cb1d547422362d0
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850449"
 ---
+
 # <a name="create-location-policies-in-skype-for-business-server"></a>Creare criteri percorso in Skype for Business Server
 
 Leggere questo argomento per informazioni su come configurare i criteri percorso del servizio di emergenza avanzato (E9-1-1) in Skype for Business Server VoIP aziendale. 
 
 Skype for Business Server utilizza un criterio percorso per abilitare Skype for Business client per E9-1-1 durante la registrazione del client. I criteri percorso contengono le impostazioni che definiscono la modalità di implementazione di E9-1-1. Per ulteriori informazioni, vedere [Plan location policies for Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/location-policies.md).
 
-È possibile definire i criteri percorso utilizzando Skype for Business pannello di controllo o il cmdlet [New-CsLocationPolicy.](/powershell/module/skype/new-cslocationpolicy?view=skype-ps)
+I criteri percorso vengono definiti utilizzando il Skype for Business pannello di controllo o il cmdlet [New-CsLocationPolicy](/powershell/module/skype/new-cslocationpolicy?view=skype-ps).
 
 > [!NOTE]
-> Skype for Business Server ora supporta la configurazione di più numeri di emergenza per un client. Se si desidera configurare più numeri di emergenza, è necessario seguire le informazioni in Pianificare più numeri di emergenza [in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/multiple-emergency-numbers.md) e Configurare più numeri di emergenza [in Skype for Business](configure-multiple-emergency-numbers.md). 
+> Skype for Business Server ora supporta la configurazione di più numeri di emergenza per un client. Se si desidera configurare più numeri di emergenza, è necessario seguire le informazioni in [Plan for multiple emergency numbers in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/multiple-emergency-numbers.md) e [Configure multiple emergency numbers in Skype for Business](configure-multiple-emergency-numbers.md). 
 
 È possibile modificare i criteri percorso globali e creare nuovi criteri percorso contrassegnati. Un client ottiene criteri globali quando non si trova in una subnet con criteri percorso associati oppure quando non è stato assegnato direttamente a criteri percorso. I criteri contrassegnati vengono assegnati a subnet o a utenti. 
 
@@ -57,7 +52,7 @@ Per ulteriori informazioni, vedere [Plan location policies for Skype for Busines
 
 ### <a name="to-create-location-policies"></a>Per creare criteri percorso
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
 
     > [!NOTE]
     > CsLocationPolicy non verrà eseguito correttamente se l'impostazione di **PstnUsage** non è già stata inserita nell'elenco Global di PstnUsages.

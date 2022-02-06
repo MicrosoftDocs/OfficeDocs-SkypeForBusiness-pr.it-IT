@@ -1,36 +1,31 @@
 ---
 title: Disponibilità nelle Bahamas
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole, fafan
+ms.reviewer: 'mikedav, jastark, oscarr, v-sukade, rcole, fafan'
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
-- M365-collaboration
-- M365-voice
+  - M365-collaboration
+  - M365-voice
 search.appverid: MET150
 audience: Admin
 appliesto:
-- Skype for Business
-- Microsoft Teams
+  - Skype for Business
+  - Microsoft Teams
 ms.localizationpriority: medium
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.custom:
-- Audio Conferencing
-- Phone System
-- Calling Plans
+  - Audio Conferencing
+  - Phone System
+  - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per le Bahamas.
-ms.openlocfilehash: d1a5a54b15da9b2adaf6d138c2c168bbde1375d8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60827379"
 ---
+
 # <a name="availability-in-the-bahamas"></a>Disponibilità nelle Bahamas
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
@@ -62,7 +57,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
 
-Se i Piani per chiamate non sono disponibili per l'acquisto, è consigliabile usare [Il routing diretto.](../direct-routing-landing-page.md) Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
+Se i Piani per chiamate non sono disponibili per l'acquisto, è consigliabile usare [l'instradamento diretto](../direct-routing-landing-page.md). Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri a pedaggio e a numero verde per i servizi
 
@@ -72,7 +67,7 @@ Se i Piani per chiamate non sono disponibili per l'acquisto, è consigliabile us
 |Sono disponibili numeri verdi a tariffa?  <br/> |No <br/> |
 |Sono disponibili numeri a numero verde? <br/> | Sì  <br/> |
    
- Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere i numeri di telefono del servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
+ Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere numeri di telefono di servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

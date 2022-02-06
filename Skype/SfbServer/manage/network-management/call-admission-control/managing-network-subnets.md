@@ -1,26 +1,21 @@
 ---
 title: Gestione delle subnet di rete
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
-description: Nella maggior parte delle distribuzioni di Skype for Business Server in cui è implementato il servizio Controllo di ammissione di chiamata, in genere è presente un numero elevato di subnet. Per questo, spesso è meglio configurare le subnet da Skype for Business Server Management Shell.
-ms.openlocfilehash: 73a0f99fa35cd1b92194ce5b09d85a30d30b72e2
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60843859"
+description: 'Nella maggior parte delle distribuzioni di Skype for Business Server in cui è implementato il servizio Controllo di ammissione di chiamata, in genere è presente un numero elevato di subnet. Per questo, spesso è meglio configurare le subnet da Skype for Business Server Management Shell.'
 ---
+
 # <a name="managing-network-subnets-in-skype-for-business-server"></a>Gestione delle subnet di rete in Skype for Business Server
 
-È possibile utilizzare il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell per gestire le subnet di rete. Nella maggior parte delle distribuzioni di Skype for Business Server in cui è implementato il servizio Controllo di ammissione di chiamata, in genere è presente un numero elevato di subnet. Per questo, spesso è meglio configurare le subnet da Skype for Business Server Management Shell.
+È possibile utilizzare il Pannello di Skype for Business Server o Skype for Business Server Management Shell per gestire le subnet di rete. Nella maggior parte delle distribuzioni di Skype for Business Server in cui è implementato il servizio Controllo di ammissione di chiamata, in genere è presente un numero elevato di subnet. Per questo, spesso è meglio configurare le subnet da Skype for Business Server Management Shell.
 
 Utilizzare le sezioni di questo articolo per visualizzare le informazioni sulle subnet di rete oppure per creare, modificare o eliminare subnet di rete. 
 
@@ -34,7 +29,7 @@ Per visualizzare una subnet di rete è possibile attenersi alla procedura seguen
 
 2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Subnet.**
+3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di** rete e quindi su **Subnet**.
 
 4.  Nella pagina **Subnet** fare clic sulla subnet che si desidera visualizzare.
  
@@ -69,7 +64,7 @@ Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [G
 
 Una subnet di rete deve essere associata a un sito di rete per la determinazione della posizione geografica dell'host appartenente alla subnet. È possibile utilizzare il Pannello Skype for Business Server per configurare le subnet. Dal Pannello Skype for Business Server di controllo è possibile creare, modificare o eliminare una subnet di rete. 
 
-Nella maggior parte delle distribuzioni di Skype for Business Server in cui è implementato il servizio Controllo di ammissione di chiamata, in genere è presente un numero elevato di subnet. Per questo, spesso è meglio configurare le subnet da Skype for Business Server Management Shell. Da qui è possibile chiamare **New-CsNetworkSubnet** in combinazione con il cmdlet **Windows PowerShell Import-CSV**. Utilizzando questi cmdlet insieme, è possibile leggere le impostazioni delle subnet da un file con valori delimitati da virgole (.csv) e creare più subnet contemporaneamente. Per esempi su come creare subnet da un file .csv, vedere [New-CsNetworkSubnet.](/powershell/module/skype/New-CsNetworkSubnet)
+Nella maggior parte delle distribuzioni di Skype for Business Server in cui è implementato il servizio Controllo di ammissione di chiamata, in genere è presente un numero elevato di subnet. Per questo, spesso è meglio configurare le subnet da Skype for Business Server Management Shell. Da qui è possibile chiamare **New-CsNetworkSubnet** in combinazione con il cmdlet **Windows PowerShell Import-CSV**. Utilizzando questi cmdlet insieme, è possibile leggere le impostazioni della subnet da un file con valori delimitati da virgole (.csv) e creare più subnet contemporaneamente. Per esempi su come creare subnet da un file .csv, vedere [New-CsNetworkSubnet](/powershell/module/skype/New-CsNetworkSubnet).
 
 
 ### <a name="to-create-a-network-subnet"></a>Per creare una subnet di rete
@@ -78,7 +73,7 @@ Nella maggior parte delle distribuzioni di Skype for Business Server in cui è i
 
 2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Subnet.**
+3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di** rete e quindi su **Subnet**.
 
 4.  Nella pagina **Subnet** fare clic su **Nuovo**.
 
@@ -102,7 +97,7 @@ Nella maggior parte delle distribuzioni di Skype for Business Server in cui è i
 
 2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Subnet.**
+3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di** rete e quindi su **Subnet**.
 
 4.  Nella pagina **Subnet** fare clic sulla subnet che si desidera modificare.
 
@@ -116,7 +111,7 @@ Nella maggior parte delle distribuzioni di Skype for Business Server in cui è i
 
 È possibile utilizzare la procedura seguente per eliminare una subnet. Dal Pannello Skype for Business Server di controllo è possibile creare, modificare o eliminare una subnet di rete. 
 
-Nella maggior parte delle distribuzioni di Skype for Business Server in cui è implementato il servizio Controllo di ammissione di chiamata, in genere è presente un numero elevato di subnet. Per questo, spesso è meglio configurare le subnet da Skype for Business Server Management Shell. Da qui è possibile chiamare **New-CsNetworkSubnet** in combinazione con il cmdlet **Windows PowerShell Import-CSV**. Utilizzando questi cmdlet insieme, è possibile leggere le impostazioni delle subnet da un file con valori delimitati da virgole (.csv) e creare più subnet contemporaneamente. Per esempi su come creare subnet da un file .csv, vedere [New-CsNetworkSubnet.](/powershell/module/skype/New-CsNetworkSubnet)
+Nella maggior parte delle distribuzioni di Skype for Business Server in cui è implementato il servizio Controllo di ammissione di chiamata, in genere è presente un numero elevato di subnet. Per questo, spesso è meglio configurare le subnet da Skype for Business Server Management Shell. Da qui è possibile chiamare **New-CsNetworkSubnet** in combinazione con il cmdlet **Windows PowerShell Import-CSV**. Utilizzando questi cmdlet insieme, è possibile leggere le impostazioni della subnet da un file con valori delimitati da virgole (.csv) e creare più subnet contemporaneamente. Per esempi su come creare subnet da un file .csv, vedere [New-CsNetworkSubnet](/powershell/module/skype/New-CsNetworkSubnet).
 
 
 ### <a name="to-delete-a-network-subnet"></a>Per eliminare una subnet di rete
@@ -125,7 +120,7 @@ Nella maggior parte delle distribuzioni di Skype for Business Server in cui è i
 
 2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Subnet.**
+3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di** rete e quindi su **Subnet**.
 
 4.  Nella pagina **Subnet** fare clic sulla subnet che si desidera eliminare.
  

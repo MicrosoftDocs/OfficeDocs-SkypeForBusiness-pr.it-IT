@@ -1,37 +1,32 @@
 ---
 title: Creare criteri di conferenza in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 8c685326-8356-4075-bf95-32324b16ef81
 description: 'Riepilogo: informazioni su come creare criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 56404f98389dbe2fca6a6022e7d6f175bcca030c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60828829"
 ---
+
 # <a name="create-conferencing-policies-in-skype-for-business-server"></a>Creare criteri di conferenza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come creare criteri di conferenza in Skype for Business Server.
   
-È possibile creare criteri di conferenza Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell.
+È possibile creare criteri di conferenza utilizzando Skype for Business Server Pannello di controllo o Skype for Business Server Management Shell.
   
-## <a name="create-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Creare criteri di conferenza tramite il Skype for Business Server Pannello di controllo
+## <a name="create-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Creare criteri di conferenza tramite il Skype for Business Server pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
 2. Aprire Skype for Business Server Pannello di controllo.
     
-3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza.**
+3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza**.
     
 4. Fare clic su **Nuovo** e quindi eseguire una delle operazioni seguenti:
     
@@ -70,7 +65,7 @@ ms.locfileid: "60828829"
     
     - Se si consente agli utenti di accedere alle riunioni tramite telefono e si desidera consentire agli utenti non autenticati (anonimi) di accedere utilizzando chiamate in uscita, selezionare la casella di controllo **Consenti chiamate in uscita ai partecipanti anonimi**. Con le chiamate in uscita il server per conferenze telefona all'utente, il quale accederà alla riunione rispondendo al telefono. Per impostazione predefinita, gli utenti anonimi non possono accedere alle riunioni utilizzando chiamate in uscita.
     
-12. Se si è scelto di consentire l'uso di video in **Audio/video,** selezionare **Consenti più flussi video.**
+12. Se si è scelto di consentire l'uso di video in **Audio/video**, selezionare **Consenti più flussi video**.
     
 13. In **Collaborazione dati** eseguire una delle operazioni seguenti:
     
@@ -84,7 +79,7 @@ ms.locfileid: "60828829"
     
     - Per impedire i trasferimenti di file, deselezionare la casella di controllo **Consenti ai partecipanti di trasferire file**. Per impostazione predefinita, gli utenti possono trasferire file.
     
-    - Per impedire l'utilizzo delle annotazioni, deselezionare la casella di controllo **Consenti annotazioni**. Per utilizzare le annotazioni in presentazioni PowerPoint condivise, deselezionare la casella di controllo Abilita PowerPoint **annotazioni.** Per impostazione predefinita, le annotazioni sono consentite.
+    - Per impedire l'utilizzo delle annotazioni, deselezionare la casella di controllo **Consenti annotazioni**. Per utilizzare le annotazioni nelle presentazioni PowerPoint condivise, deselezionare la casella di **controllo Abilita PowerPoint note.** Per impostazione predefinita, le annotazioni sono consentite.
     
     - Per impedire l'utilizzo dei sondaggi, deselezionare la casella di controllo **Consenti sondaggi**. Per impostazione predefinita, i sondaggi sono consentiti.
     
@@ -116,9 +111,9 @@ ms.locfileid: "60828829"
     
 21. Fare clic su **Commit**.
     
-## <a name="create-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Creare criteri di conferenza tramite Skype for Business Server Management Shell
+## <a name="create-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Creare criteri conferenza tramite Skype for Business Server Management Shell
 
-Per creare criteri di conferenza, utilizzare il cmdlet **New-CsConferencingPolicy.**
+Per creare criteri di conferenza, utilizzare il cmdlet **New-CsConferencingPolicy** .
   
 Nell'esempio seguente viene creato un nuovo criterio di conferenza con Identity SalesConferencingPolicy. Questo criterio utilizzerà tutti i valori predefiniti per un criterio di conferenza ad eccezione di uno: MaxMeetingSize. In questo esempio la dimensione massima di una riunione verrà impostata su 50 anziché sul valore predefinito di 250:
   

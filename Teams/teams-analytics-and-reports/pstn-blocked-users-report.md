@@ -1,36 +1,30 @@
 ---
-title: Microsoft Teams Report utenti bloccati PSTN
-author: HowlinWolf-92
-ms.author: v-mahoffman
+title: Microsoft Teams di utenti bloccati PSTN
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.reviewer: v-rifer
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 search.appverid: MET150
 MS.collection:
-- M365-voice
+  - M365-voice
 description: Usare il report Utenti bloccati PSTN nell'interfaccia di amministrazione di Microsoft Teams per ottenere una panoramica degli utenti Teams dell'organizzazione a cui è impedito di effettuare chiamate PSTN.
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a89e7ead560e3782d7120884a047110118d2ecd0
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60840688"
 ---
-# <a name="microsoft-teams-pstn-blocked-users-report"></a>Microsoft Teams Report utenti bloccati PSTN
+# <a name="microsoft-teams-pstn-blocked-users-report"></a>Microsoft Teams di utenti bloccati PSTN
 
 Il report Utenti bloccati PSTN nell'interfaccia di amministrazione di Microsoft Teams mostra gli utenti dell'organizzazione a cui è impedito di effettuare chiamate PSTN in Teams. È possibile visualizzare altre informazioni su ogni utente bloccato, incluso il numero di telefono assegnato e il motivo per cui è stato impedito di effettuare chiamate.
 
 ## <a name="view-the-pstn-blocked-users-report"></a>Visualizzare il report degli utenti bloccati PSTN
 
-Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su Analisi & **report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare **Utenti bloccati PSTN** e quindi fare clic su **Esegui report.**
+Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Analisi** & **reportUsage** > . Nella scheda **Visualizza report** , in **Report**, selezionare **Utenti bloccati PSTN** e quindi fare clic su **Esegui report**.
 
 ![Screenshot del report degli utenti bloccati PSTN nell'interfaccia di amministrazione.](../media/teams-reports-pstn-blocked-users-with-callouts.png "Screenshot del report degli utenti bloccati PSTN nell'interfaccia di amministrazione Microsoft Teams con callout numerati")
 

@@ -1,29 +1,24 @@
 ---
 title: Bloccare le chiamate in Microsoft Teams
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
-- M365-voice
+  - M365-voice
 audience: Admin
 ms.reviewer: roykuntz
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.localizationpriority: medium
 ms.custom: Learn how to use PowerShell to manage inbound call blocking.
-ms.openlocfilehash: d1b5b19189ea301eab5d2c06dfa85be7d4ddb6eb
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60827389"
 ---
+
 # <a name="block-inbound-calls"></a>Bloccare le chiamate in ingresso
 
-Piani per chiamate Microsoft, routing diretto e Connessione con operatore supportano il blocco delle chiamate in ingresso dalla rete PSTN (Public Switched Telephone Network). Questa caratteristica consente a un amministratore di definire un elenco di schemi numerici a livello globale del tenant in modo che l'ID chiamante di ogni chiamata PSTN in arrivo al tenant possa essere verificato in base all'elenco per trovare una corrispondenza. Se viene effettuata una corrispondenza, una chiamata in arrivo viene rifiutata.
+I piani per chiamate Microsoft, il routing diretto e Connessione con operatore supportano il blocco delle chiamate in ingresso dalla rete PSTN (Public Switched Telephone Network). Questa caratteristica consente a un amministratore di definire un elenco di schemi numerici a livello globale del tenant in modo che l'ID chiamante di ogni chiamata PSTN in arrivo al tenant possa essere verificato in base all'elenco per trovare una corrispondenza. Se viene effettuata una corrispondenza, una chiamata in arrivo viene rifiutata.
 
 Questa funzionalità di blocco delle chiamate in ingresso funziona solo per le chiamate in ingresso che provengono dalla rete PSTN e funzionano solo a livello globale del tenant. I singoli Teams utenti non possono modificare l'elenco. Il client Teams consente ai singoli utenti di bloccare le chiamate PSTN. Per informazioni su come gli utenti finali possono implementare il blocco delle chiamate, vedere [Gestire le impostazioni delle chiamate in Teams](https://support.microsoft.com/office/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f).
 
@@ -36,14 +31,14 @@ I controlli di amministrazione per i numeri di blocco vengono forniti solo trami
 
 ## <a name="call-blocking-powershell-commands"></a>Comandi di PowerShell per il blocco delle chiamate
 
-Per gestire i modelli numerici, usare i cmdlet **New-**, **Get-**, **Set-** e **Remove-CsInboundBlockedNumberPattern.** È possibile gestire un determinato criterio usando questi cmdlet, inclusa la possibilità di attivare o disattivare un determinato criterio.
+Per gestire i modelli numerici, usare i cmdlet **New-**, **Get-**, **Set-e** **Remove-CsInboundBlockedNumberPattern** . È possibile gestire un determinato criterio usando questi cmdlet, inclusa la possibilità di attivare o disattivare un determinato criterio.
 
 - [Get-CsInboundBlockedNumberPattern](/powershell/module/skype/get-csinboundblockednumberpattern) restituisce un elenco di tutti i modelli di numero bloccati aggiunti all'elenco tenant, tra cui Name, Description, Enabled (True/False) e Pattern per ognuno.
 - [New-CsInboundBlockedNumberPattern](/powershell/module/skype/new-csinboundblockednumberpattern) aggiunge uno schema di numeri bloccati all'elenco tenant.
 - [Remove-CsInboundBlockedNumberPattern](/powershell/module/skype/remove-csinboundblockednumberpattern) rimuove uno schema di numeri bloccati dall'elenco tenant.
 - [Set-CsInboundBlockedNumberPattern](/powershell/module/skype/set-csinboundblockednumberpattern) modifica uno o più parametri di uno schema di numeri bloccati nell'elenco tenant.
 
-La visualizzazione e l'attivazione dell'intera funzionalità di blocco delle chiamate vengono gestite tramite i cmdlet **Get-** e **Set-CsTenantBlockingCallingNumbers.**
+La visualizzazione e l'attivazione dell'intera funzionalità di blocco delle chiamate vengono gestite tramite i cmdlet **Get-** e **Set-CsTenantBlockingCallingNumbers** .
 
 - [Get-CsTenantBlockedCallingNumbers](/powershell/module/skype/get-cstenantblockedcallingnumbers) restituisce i modelli di numero di blocco in ingresso e i parametri dei modelli di numeri esenti in ingresso per l'elenco globale dei numeri bloccati. Questo cmdlet restituisce anche se il blocco è stato abilitato (True o False). Esiste un singolo criterio tenant globale che non può essere modificato manualmente se non per attivare o disattivare la caratteristica.
 - [Set-CsTenantBlockedCallingNumbers](/powershell/module/skype/set-cstenantblockedcallingnumbers) consente di modificare le chiamate bloccate del tenant globale per essere attivate e disattivate a livello di tenant.
@@ -68,7 +63,7 @@ La creazione di un nuovo criterio aggiunge il motivo come abilitato per impostaz
 
 È consigliabile specificare un nome significativo per comprendere facilmente il motivo per cui è stato aggiunto il criterio. Nel caso di bloccare semplicemente i numeri di posta indesiderata, è consigliabile assegnare alla regola lo stesso modello di numero corrispondente e aggiungere altre informazioni nella descrizione in base alle esigenze.
 
-I criteri vengono abbinati usando espressioni regolari (Regex). Per altre informazioni, vedere [Uso di Regex.](#using-regex)
+I criteri vengono abbinati usando espressioni regolari (Regex). Per altre informazioni, vedere [Uso di Regex](#using-regex).
 
 Concedere tempo per la replica prima di testare e convalidare. 
 
@@ -96,7 +91,7 @@ Usare le funzionalità di filtro incorporate di PowerShell per analizzare i valo
 
 ## <a name="add-number-exceptions"></a>Aggiungere eccezioni numeri
 
-È possibile aggiungere eccezioni ai modelli di numero bloccati usando i cmdlet **New-**, **Get-**, **Set-** e **Remove-CsInboundExemptNumberPattern.**
+È possibile aggiungere eccezioni ai modelli di numero bloccati usando i cmdlet **New-**, **Get-**, **Set-e** **Remove-CsInboundExemptNumberPattern** .
 
 - [New-CsInboundExemptNumberPattern](/powershell/module/skype/New-CsInboundExemptNumberPattern) aggiunge un modello di eccezione numerica all'elenco tenant. 
 - [Get-CsInboundExemptNumberPattern](/powershell/module/skype/Get-CsInboundExemptNumberPattern) restituisce un elenco di tutti i modelli di eccezione numerica aggiunti all'elenco tenant.

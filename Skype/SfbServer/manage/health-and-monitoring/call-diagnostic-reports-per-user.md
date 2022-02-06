@@ -1,39 +1,34 @@
 ---
 title: Rapporti di diagnostica delle chiamate (per utente) in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 9da13470-001e-415f-b8c5-29b1f3b531ba
 description: 'Riepilogo: informazioni sui rapporti di diagnostica delle chiamate per utente usati in Skype for Business Server.'
-ms.openlocfilehash: 03b3afba9a9177bc1628c100ca5083f1be96b48e
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60864853"
 ---
+
 # <a name="call-diagnostic-reports-per-user-in-skype-for-business-server"></a>Rapporti di diagnostica delle chiamate (per utente) in Skype for Business Server
   
-I rapporti di diagnostica delle chiamate forniscono informazioni per utente sulle sessioni peer-to-peer e di conferenza non riuscite. Al momento esiste un solo report, il **Rapporto attività utente.**
+I rapporti di diagnostica delle chiamate forniscono informazioni per utente sulle sessioni peer-to-peer e di conferenza non riuscite. Al momento esiste un solo report, il **Rapporto attività utente**.
 
 Nel Rapporto attività utente viene fornito un elenco dettagliato delle sessioni peer-to-peer e di conferenza per ogni utente in riferimento a un periodo di tempo specifico. Diversamente da molti rapporti di monitoraggio, il Rapporto attività utente associa ogni chiamata al singolo utente. Ad esempio le sessioni peer-to-peer specificano gli URI SIP della persona che ha effettuato la chiamata (Da utente) e della persona che ha ricevuto la chiamata (A utente). Se si espandono le informazioni relative a una conferenza, è possibile visualizzare un elenco di tutti i partecipanti con l'indicazione del ruolo che hanno svolto nella conferenza.
 
 Spesso si fa riferimento al Rapporto attività utente come al rapporto "help desk", in quanto il rapporto viene spesso utilizzato dal personale dell'help desk per recuperare informazioni sulla sessione per un utente specifico. È possibile applicare un filtro in base alle chiamate effettuate o ricevute da un singolo utente semplicemente digitando l'URI SIP dell'utente nella casella Prefisso URI utente.
 
-In questo caso, il Rapporto attività utente restituirà informazioni per qualsiasi utente il cui URI SIP inizia con la stringa specificata. Ad esempio, se si digita **ken** nella casella URI, il Rapporto attività utente individua **Ken.** Myer@litwareinc.com. Tuttavia, individua anche questi utenti:
+In questo caso, il Rapporto attività utente restituirà informazioni per qualsiasi utente il cui URI SIP inizia con la stringa specificata. Ad esempio, se si digita **ken** nella casella URI, il Rapporto attività utente individua **Ken.Myer@litwareinc.com**. Tuttavia, individua anche questi utenti:
 
 - **ken** azi@litwareinc.com
 
 - **ken** burg@litwareinc.com
 
-- **Ken**. Sanchez@litwareinc.com
+- **Ken.Sanchez@litwareinc.com**
 
 - **Ken** nedy@litwareinc.com
 

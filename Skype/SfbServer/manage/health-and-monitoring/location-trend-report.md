@@ -1,24 +1,19 @@
 ---
 title: Rapporto tendenze posizione in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 61e2db3c-9f10-4411-8e7e-c6950faf8533
 description: 'Riepilogo: informazioni sul Rapporto tendenze percorso in Skype for Business Server.'
-ms.openlocfilehash: 0e4b8d600d3dcbc2eb8561c1d09ae82a5bb93e04
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60862333"
 ---
+
 # <a name="location-trend-report-in-skype-for-business-server"></a>Rapporto tendenze posizione in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto tendenze percorso in Skype for Business Server.

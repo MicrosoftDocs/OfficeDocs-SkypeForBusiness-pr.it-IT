@@ -1,25 +1,20 @@
 ---
 title: Run Query
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 45a77f7e-b137-462b-9146-3a0f43d8e0c7
-description: "Riepilogo: informazioni sull'operazione Esegui query, che fa parte dell'API dati per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 00060baabff5bdcc4e930f56f7885de273060597
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60849809"
+description: 'Riepilogo: informazioni sull''operazione Esegui query, che fa parte dell''API dati per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
 ---
+
 # <a name="run-query"></a>Run Query
 
 **Riepilogo:** Informazioni sull'operazione Esegui query, che fa parte dell'API dati per il dashboard qualità chiamata. Call Quality Dashboard è uno strumento per Skype for Business Server.
@@ -33,13 +28,13 @@ L'operazione Esegui query consente di eseguire una query sul cubo in base a dime
 
 |**Metodo**|**URI richiesta**|**Versione HTTP**|
 |:-----|:-----|:-----|
-|POST  <br/> |https:// \<portal\> /QoEDataService/RunQuery  <br/> |HTTP/1.1  <br/> |
+|POST  <br/> |\<portal\>https:///QoEDataService/RunQuery  <br/> |HTTP/1.1  <br/> |
 
  **Parametri URI** - Nessuno.
 
  **Intestazioni richiesta** - Nessuna intestazione aggiuntiva.
 
- **Corpo della richiesta:** ecco un payload di richiesta di esempio in JSON. Contiene dimensioni, filtri e misurazioni necessarie per una query.
+ **Corpo della richiesta** : ecco un payload di richiesta di esempio in JSON. Contiene dimensioni, filtri e misurazioni necessarie per una query.
 
 ```json
 {
@@ -76,19 +71,19 @@ L'operazione Esegui query consente di eseguire una query sul cubo in base a dime
 
  *Filtri*  - Elenco di espressioni di filtro da applicare in modo che il set di dati risultante rifletta solo il sottoinsieme di dati di interesse.
 
- *Dimensioni:*  elenco di dimensioni che verranno utilizzate per l'aggregazione dei dati. È necessaria almeno una dimensione, ma è possibile specificarne più per ottenere un livello aggiuntivo di aggregazioni secondarie.
+ *Dimensioni*  : elenco di dimensioni che verranno utilizzate per l'aggregazione dei dati. È necessaria almeno una dimensione, ma è possibile specificarne più per ottenere un livello aggiuntivo di aggregazioni secondarie.
 
  *Misurazioni*  - Elenco di misurazioni, note anche come fatti, che sono le metriche desiderate da aggregare in base alle dimensioni specificate.
 
- *Tendenza:*  istruzioni di controllo aggiuntive per personalizzare i dati dei risultati.
+ *Tendenza*  : istruzioni di controllo aggiuntive per personalizzare i dati dei risultati.
 
- **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
+ **Risposta** : la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
 
- **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK).
+ **Codice di stato** : un'operazione riuscita restituisce il codice di stato 200 (OK).
 
  **Intestazioni di risposta** - Nessuna intestazione aggiuntiva.
 
- **Response Body:** di seguito è riportato un payload di risposta di esempio in JSON. Contiene una tabella di dati che contiene i dati, inoltre conterrà un meta dati, che mostra il tempo di esecuzione delle query e se i dati vengono o meno dalla cache.
+ **Response Body** : di seguito è riportato un payload di risposta di esempio in JSON. Contiene una tabella di dati che contiene i dati, inoltre conterrà un meta dati, che mostra il tempo di esecuzione delle query e se i dati vengono o meno dalla cache.
 
 ```json
 {
