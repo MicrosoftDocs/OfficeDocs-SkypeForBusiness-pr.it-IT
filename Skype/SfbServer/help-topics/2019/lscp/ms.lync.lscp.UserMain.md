@@ -1,34 +1,29 @@
 ---
 title: Pannello di controllo - Ricerca utente aggiornata
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.lscp.UserMain
+  - ms.lync.lscp.UserMain
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 50feb75f-92a1-4916-b92e-c039e1290c52
-ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile utilizzare i risultati di una query di ricerca per configurare gli utenti per Skype for Business Server. È possibile ricercare utenti in base al nome visualizzato, al nome, al cognome, al nome dell'account SAM (Security Accounts Manager), all'indirizzo SIP o all'URI (Uniform Resource Identifier) della linea. È inoltre possibile cercare utenti utilizzando il Pannello di controllo di Lync Server o lo snap-in Utenti e computer di Active Directory.
-ms.openlocfilehash: 3c5bdc9de490adbc022f00342d291d012da78d4b
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60854930"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'È possibile utilizzare i risultati di una query di ricerca per configurare gli utenti per Skype for Business Server. È possibile ricercare utenti in base al nome visualizzato, al nome, al cognome, al nome dell''account SAM (Security Accounts Manager), all''indirizzo SIP o all''URI (Uniform Resource Identifier) della linea. È inoltre possibile cercare utenti utilizzando il Pannello di controllo di Lync Server o lo snap-in Utenti e computer di Active Directory.'
 ---
+
 # <a name="control-panel---updated-user-search"></a>Pannello di controllo (aggiornato): ricerca utenti
 
 È possibile utilizzare i risultati di una query di ricerca per configurare gli utenti per Skype for Business Server. È possibile ricercare utenti in base al nome visualizzato, al nome, al cognome, al nome dell'account SAM (Security Accounts Manager), all'indirizzo SIP o all'URI (Uniform Resource Identifier) della linea. È inoltre possibile cercare utenti utilizzando il Pannello di controllo di Lync Server o lo snap-in Utenti e computer di Active Directory.
 
 ## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
 
-Nella pagina Pannello di controllo ricerca utente è possibile **eseguire** le attività seguenti:
+Nella pagina Pannello di controllo ricerca utente è **possibile eseguire le** attività seguenti:
 
 - [Cercare utenti](/previous-versions/office/lync-server-2013/lync-server-2013-search-for-lync-server-users)
 
@@ -76,11 +71,11 @@ Aggiungere ulteriore testo descrittivo in base alle necessità.
 
 ### <a name="search-results-menus"></a>Menu dei risultati della ricerca
 
-- **Abilitare gli utenti** Fare clic per aprire [la finestra di dialogo Utenti: Nuovo](ms.lync.lscp.UserNew.md) utente di Lync Server, in cui è possibile aggiungere un nuovo utente Skype for Business Server.
+- **Abilitare gli utenti** Fare clic per aprire [la finestra di dialogo Utenti: Nuovo utente di Lync Server](ms.lync.lscp.UserNew.md), in cui è possibile aggiungere un nuovo utente Skype for Business Server.
 
     Per aggiungere un nuovo contatto, fare clic sulla freccia verso il basso e selezionare **Abilita contatti** per aprire la finestra di dialogo [Users: New Contact Objects](ms.lync.lscp.UserNewContact.md).
 
-- **Modifica** Fare **clic su** Modifica e quindi su Mostra dettagli  per visualizzare i dettagli dell'utente selezionato oppure fare clic su Seleziona tutti i risultati della ricerca per selezionare tutti gli utenti visualizzati nella tabella dei risultati. 
+- **Modifica** Fare **clic su** Modifica e  quindi su Mostra dettagli per visualizzare i dettagli dell'utente selezionato oppure  fare clic su Seleziona tutti i risultati della ricerca per selezionare tutti gli utenti visualizzati nella tabella dei risultati.
 
 - **Azione** Fare **clic su** Azione e quindi selezionare l'azione che si desidera eseguire per gli utenti selezionati nei risultati della ricerca. Sono disponibili le azioni seguenti:
 
@@ -90,9 +85,9 @@ Aggiungere ulteriore testo descrittivo in base alle necessità.
 
   - **Assegnare criteri** Apre la [finestra di dialogo Utenti:](ms.lync.lscp.UserAssignPolicy.md) Assegna criteri, in cui è possibile configurare i criteri assegnati all'utente.
 
-  - **Visualizzare lo stato del PIN** Apre la [finestra di dialogo Utenti: Visualizza stato PIN,](ms.lync.lscp.UserViewPin.md) che visualizza i dati del PIN per l'utente selezionato.
+  - **Visualizzare lo stato del PIN** Apre la [finestra di dialogo Utenti: Visualizza stato PIN](ms.lync.lscp.UserViewPin.md) , che visualizza i dati del PIN per l'utente selezionato.
 
-  - **Imposta PIN** Apre la finestra di dialogo Imposta [PIN,](ms.lync.lscp.UserSetPin.md) in cui è possibile impostare il PIN per l'utente selezionato.
+  - **Imposta PIN** Apre la [finestra di dialogo Imposta PIN](ms.lync.lscp.UserSetPin.md) , in cui è possibile impostare il PIN per l'utente selezionato.
 
   - **Blocca PIN** Blocca il PIN per l'utente.
 

@@ -1,30 +1,25 @@
 ---
 title: Distribuire il portale Web amministrativo di SRS v1 in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 81822efa-2100-4017-a470-8a5b98c49522
 ms.collection: M365-voice
-description: Il portale Web amministrativo Skype for Business Server Skype Room Systems v1 (SRS v1, in precedenza noto come Lync Room System) è un portale Web che le organizzazioni possono utilizzare per gestire le proprie sale riunioni Skype Room Systems. Gli amministratori possono utilizzare il portale Web di amministrazione di SRS v1 per monitorare l'integrità dei dispositivi, ad esempio monitorando i dispositivi audio/video. Con questo portale, gli amministratori possono raccogliere in remoto informazioni di diagnostica per monitorare l'integrità delle sale riunioni.
-ms.openlocfilehash: c25671717db51af880bd4b7e2700bb9e795f2790
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60843969"
+description: 'Il portale Web amministrativo Skype for Business Server Skype Room Systems v1 (SRS v1, in precedenza noto come Lync Room System) è un portale Web che le organizzazioni possono utilizzare per gestire le proprie sale riunioni Skype Room Systems. Gli amministratori possono utilizzare il portale Web di amministrazione di SRS v1 per monitorare l''integrità dei dispositivi, ad esempio monitorando i dispositivi audio/video. Con questo portale, gli amministratori possono raccogliere in remoto informazioni di diagnostica per monitorare l''integrità delle sale riunioni.'
 ---
+
 # <a name="deploy-srs-v1-administrative-web-portal-in-skype-for-business-server"></a>Distribuire il portale Web amministrativo di SRS v1 in Skype for Business Server
 
 Il portale Web amministrativo Skype for Business Server Skype Room Systems v1 (SRS v1, in precedenza noto come Lync Room System) è un portale Web che le organizzazioni possono utilizzare per gestire le proprie sale riunioni Skype Room Systems. Gli amministratori possono utilizzare il portale Web di amministrazione di SRS v1 per monitorare l'integrità dei dispositivi, ad esempio monitorando i dispositivi audio/video. Con questo portale, gli amministratori possono raccogliere in remoto informazioni di diagnostica per monitorare l'integrità delle sale riunioni.
 
-Per utilizzare questa funzionalità, il portale Web amministrativo di SRS v1 deve essere distribuito in ogni Skype for Business Server Front End Server. In questa guida vengono fornite istruzioni per gli amministratori su come installare e configurare il portale Web amministrativo SRS. È destinato agli amministratori che hanno una conoscenza dell'amministrazione Skype for Business Server e che dispongono dei diritti di amministratore per modificare la topologia Skype for Business Server utenti.
+Per utilizzare questa funzionalità, il portale Web amministrativo di SRS v1 deve essere distribuito in ogni Skype for Business Server Front End Server. In questa guida vengono fornite istruzioni per gli amministratori su come installare e configurare il portale Web amministrativo SRS. È destinato agli amministratori che hanno una conoscenza dell'amministrazione Skype for Business Server e che dispongono dei diritti utente di amministratore per modificare la topologia Skype for Business Server utenti.
 
 Dopo la distribuzione del portale Web amministrativo SRS v1 nel server, gli amministratori possono controllare lo stato dei dispositivi SRS v1 accedendo al sito dai propri computer o laptop.
 
@@ -61,13 +56,13 @@ Per utilizzare il portale Web amministrativo di SRS v1, è necessario installare
 
 4. Creare un gruppo di sicurezza di Active Directory con nome LRSFullAccessAdminGroup.
 
-    Creare il gruppo con Ambito gruppo come Globale e Tipo di gruppo come Security.SIP gli utenti che vengono aggiunti a questo gruppo sono autorizzati a utilizzare tutte le funzionalità del portale di amministrazione in una singola Skype room. Per includere il supporto per la gestione in blocco delle Skype, fare riferimento al passaggio 5.
+    Creare il gruppo con Ambito gruppo come Globale e Tipo di gruppo come Security.SIP gli utenti che vengono aggiunti a questo gruppo sono autorizzati a utilizzare tutte le funzionalità del portale di amministrazione in una singola Skype room. Per includere il supporto per la gestione in blocco Skype chat room, vedere il passaggio 5.
 
      ![Elenco di gruppi di amministratori con ruolo di gruppo di sicurezza.](../../media/LRS_LRSFullAccessAdminGroup.png)
 
 5. Creare un gruppo di sicurezza di Active Directory con nome LRSPowerUserAdminsGroup.
 
-    Creare il gruppo con Ambito gruppo come Globale e Tipo di gruppo come Sicurezza. Gli utenti abilitati per SIP aggiunti a questo gruppo sono autorizzati a utilizzare tutte le funzionalità del portale di amministrazione, inclusa la gestione in blocco Skype for Business chat room.
+    Creare il gruppo con Ambito gruppo come Globale e Tipo di gruppo come Sicurezza. Gli utenti abilitati per SIP che vengono aggiunti a questo gruppo sono autorizzati a utilizzare tutte le funzionalità del portale di amministrazione, inclusa la gestione in blocco Skype for Business chat room.
 
 6. Aggiungere LRSFullAccessAdminGroup come membro di LRSSupportAdminGroup.
 
@@ -77,7 +72,7 @@ Per utilizzare il portale Web amministrativo di SRS v1, è necessario installare
 
      ![Pagina Membri proprietà LRSSupportAdminGroup.](../../media/LRS_Add_LRS_SIP_SupportUser.png)
 
-8. Installare [ASP.NET MVC 4 per Visual Studio 2010 SP1 e Visual Web Developer 2010 SP1.](https://go.microsoft.com/fwlink/p/?LinkId=323967)
+8. Installare [ASP.NET MVC 4 per Visual Studio 2010 SP1 e Visual Web Developer 2010 SP1](https://go.microsoft.com/fwlink/p/?LinkId=323967).
 
 ## <a name="install-the-srs-v1-administrative-web-portal"></a>Installare il portale Web amministrativo di SRS v1
 <a name="Install_SRS"> </a>
@@ -92,13 +87,13 @@ Per installare il portale Web amministrativo di SRS v1, eseguire la procedura se
    Set-CsWebServer -Identity POOLFQDN -MeetingRoomAdminPortalInternalListeningPort 4456 -MeetingRoomAdminPortalExternalListeningPort 4457
    ```
 
-2. Per installare il portale Sala riunioni, scaricare **MeetingRoomPortalInstaller.msi** ed eseguirlo come amministratore.
+2. Per installare il Sala riunioni portal, scaricare **MeetingRoomPortalInstaller.msi** ed eseguirlo come amministratore.
 
 3. Aprire il Web.config file dal percorso seguente:
 
     %Programmi%\Skype for Business Server 2015\Componenti Web\Sala riunioni Portal\Int\Handler\
 
-4. Nel file Web.Config modificare PortalUserName con il nome utente creato nel passaggio 2 nella sezione "[Configure your environment for the SRS v1 Administrative Web Portal](room-system-v1-administrative-web-portal.md#Config_Env)" (il nome consigliato nel passaggio è LRSApp):
+4. Nel file Web.Config modificare PortalUserName con il nome utente creato nel passaggio 2 nella sezione "Configurare l'ambiente per il portale Web amministrativo [di SRS v1](room-system-v1-administrative-web-portal.md#Config_Env)" (il nome consigliato nel passaggio è LRSApp):
 
     ```xml
     <add key="PortalUserName" value="sip:LRSApp@domain.com" />
@@ -122,7 +117,7 @@ Per verificare l'installazione del portale Web amministrativo di SRS v1, eseguir
 
 1. In un Front End Server passare all'URL seguente:
 
-    https:// \<fe-server\> /lrs
+    \<fe-server\>https:///lrs
 
     Non dovrebbe essere visualizzato alcun errore, come illustrato nell'immagine seguente:
 
@@ -130,9 +125,9 @@ Per verificare l'installazione del portale Web amministrativo di SRS v1, eseguir
 
 2. Se non vengono visualizzati errori, provare ad accedere all'URL seguente da qualsiasi altro computer della topologia:
 
-    https:// \<fe-server\> /lrs
+    \<fe-server\>https:///lrs
 
-    Per accedere alla pagina, è necessario aggiungere i record DNS come descritto in "[Record DNS necessari per l'accesso](/previous-versions/office/communications-server/bb663700(v=office.12))automatico del client ".
+    Per accedere alla pagina, è necessario aggiungere i record DNS come descritto in "[Record DNS necessari per l'accesso automatico al client](/previous-versions/office/communications-server/bb663700(v=office.12))".
 
 ## <a name="use-the-srs-administrative-web-portal"></a>Usare il portale Web amministrativo SRS
 <a name="Use_Portal"> </a>
@@ -143,7 +138,7 @@ Dopo aver distribuito SRS nel server, è possibile controllare lo stato di tutte
 
 1. Passare all'URL seguente:
 
-    https:// \<fe-server\> /lrs
+    \<fe-server\>https:///lrs
 
 2. Immettere le credenziali per l'account LRSSupport o un account aggiunto al gruppo di sicurezza LRSSupportAdminGroup.
 
@@ -155,7 +150,7 @@ La pagina di riepilogo fornisce le informazioni seguenti per tutte le sale SRS d
 
 - **Tag** Nome personalizzato che l'amministratore assegna alla sala. Il tag può essere impostato nel portale facendo clic sul nome della sala.
 
-- **Integrità** Lo stato di integrità della sala, derivato dallo stato Di integrità aggregata della sala, visualizzato nella sezione Integrità della pagina Impostazioni chat room.
+- **Integrità** Lo stato di integrità della sala, derivato dallo stato aggregato integrità della sala, visualizzato nella sezione Integrità della pagina Impostazioni chat room.
 
 - **Riunione successiva** Data e ora di pianificazione della riunione successiva.
 
@@ -203,7 +198,7 @@ La sezione Integrità fornisce un'indicazione visiva dell'integrità della conne
 
 La gestione in blocco delle sale SRS è una funzionalità progettata per gli amministratori IT avanzati, per semplificare il flusso di lavoro e abilitarle con uno strumento conveniente per risparmiare tempo per gestire in remoto più sale in blocco.
 
-Per visualizzare questa funzionalità, è necessario eseguire il provisioning dell'utente come membro del gruppo di sicurezza speciale **LRSPowerUserAdminsGroup.**
+Per visualizzare questa funzionalità, è necessario eseguire il provisioning dell'utente come membro del gruppo di sicurezza speciale **LRSPowerUserAdminsGroup**.
 
 Non esiste alcun limite al numero di sale SRS che è possibile selezionare per la gestione in blocco. Tuttavia, è possibile eseguire una sola operazione di gestione in blocco alla volta.
 
@@ -213,7 +208,7 @@ Per eseguire un'operazione di gestione in blocco, selezionare le sale che si des
 
 #### <a name="why-cant-i-sign-in-to-the-administrative-web-portal"></a>Perché non è possibile accedere al portale Web di amministrazione?
 
-Quando si apre , sarà possibile visualizzare la pagina di accesso, ma quando si digitano le credenziali, non è https://localhost/lrs possibile accedere. In questo caso, è necessario aprire https://FQDNofFEserver/SRS per accedere al portale Web amministrativo.
+Quando si apre https://localhost/lrs, sarà possibile visualizzare la pagina di accesso, ma quando si digitano le credenziali, non è possibile accedere. In questo caso, è necessario aprire https://FQDNofFEserver/SRS per accedere al portale Web amministrativo.
 
 #### <a name="why-cant-i-see-srs-v1-in-the-administrative-web-portal"></a>Perché non è possibile visualizzare SRS v1 nel portale Web di amministrazione?
 
@@ -240,7 +235,7 @@ Quando si apre , sarà possibile visualizzare la pagina di accesso, ma quando si
 
 - Verificare che l'account utente LRSApp sia abilitato per SIP.
 
-- Se si verificano ancora problemi, raccogliere il file **Trace.log** nel sistema SRS da D:\Tracing\LRSAdminLogs e inviarlo al contatto di supporto \, SRS.
+- Se si verificano ancora problemi, raccogliere il file **Trace.log** nel sistema SRS da D:\Tracing\LRSAdminLogs\, e inviarlo al contatto di supporto SRS.
 
 #### <a name="why-cant-i-see-the-bulk-management-menus-for-srs-in-the-administrative-web-portal"></a>Perché non è possibile visualizzare i menu di gestione in blocco per SRS nel portale Web amministrativo?
 

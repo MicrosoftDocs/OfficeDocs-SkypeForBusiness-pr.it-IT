@@ -1,33 +1,28 @@
 ---
 title: Distribuire lo strumento SEFAUtil in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: fb556e50-88dd-4404-a3d5-be36f5ba41e6
 description: Distribuzione dello strumento SEFAUtil in Skype for Business Server.
-ms.openlocfilehash: d4d25a69476aa678f600178b9426db89670289d2
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837328"
 ---
+
 # <a name="deploy-the-sefautil-tool-in-skype-for-business"></a>Distribuire lo strumento SEFAUtil in Skype for Business
  
 Distribuzione dello strumento SEFAUtil in Skype for Business Server.
   
-Per distribuire e gestire la risposta alle chiamate di gruppo, è necessario utilizzare la Skype for Business Server dello strumento SEFAUtil. 
+Per distribuire e gestire la risposta alle chiamate di gruppo, devi usare la Skype for Business Server dello strumento SEFAUtil. 
   
 > [!IMPORTANT]
 > Microsoft Unified Communications Managed API (UCMA) 5 Runtime deve essere installato in qualsiasi computer in cui si prevede di eseguire lo strumento SEFAUtil. Scaricalo qui: [Unified Communications Managed API 5.0 Runtime](https://www.microsoft.com/download/details.aspx?id=47344). Puoi anche scaricare UCMA 5 SDK, che include il runtime, qui: [UCMA 5.0 SDK](https://www.microsoft.com/download/details.aspx?id=47345).
@@ -35,13 +30,13 @@ Per distribuire e gestire la risposta alle chiamate di gruppo, è necessario uti
 È possibile eseguire lo strumento SEFAUtil in qualsiasi pool Front End nella distribuzione. Per eseguire lo strumento SEFAUtil, è necessario eseguire i passaggi 1, 2 e 3 dalla Distribuzione guidata di Skype for Business nel computer dell'applicazione attendibile. SEFAUtil richiede che sia presente l'archivio di configurazione locale, nonché un certificato.
   
 > [!NOTE]
-> Per ulteriori informazioni sull'esecuzione di SEFAUtil, vedere l'articolo del blog "[How to get SEFAutil running?](/archive/blogs/jenstr/how-to-get-sefautil-running)". 
+> Per ulteriori informazioni sull'esecuzione di SEFAUtil, vedere l'articolo del blog "[Come eseguire SEFAutil?"](/archive/blogs/jenstr/how-to-get-sefautil-running). 
   
 ### <a name="to-deploy-sefautil"></a>Per distribuire SEFAUtil
 
 1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions**.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 3. Lo strumento SEFAUtil può essere eseguito solo in un computer che fa parte di un pool di applicazioni attendibili. Se necessario, definire un pool di applicazioni attendibili per il pool Front End in cui si prevede di eseguire SEFAUtil. Nella riga di comando digitare il comando seguente:
     
@@ -68,11 +63,11 @@ Per distribuire e gestire la risposta alle chiamate di gruppo, è necessario uti
    Enable-CsTopology
    ```
 
-6. Se non l'hai già fatto, scarica la versione Skype for Business Server [](https://www.microsoft.com/download/details.aspx?id=52631)dello strumento SEFAUtil da questo percorso e installala nel pool di applicazioni attendibili creato nel passaggio 3.
+6. Se non l'hai già fatto, scarica la versione Skype for Business Server dello strumento SEFAUtil da questo percorso e [](https://www.microsoft.com/download/details.aspx?id=52631)installala nel pool di applicazioni attendibili creato nel passaggio 3.
     
 7. Verificare che lo strumento SEFAUtil sia in esecuzione correttamente, come indicato di seguito: 
     
-    a. Eseguire lo strumento dal prompt Windows comandi con privilegi di amministratore per visualizzare le impostazioni di inoltro di chiamata di un utente nella distribuzione.
+    a. Eseguire lo strumento dal prompt dei Windows con privilegi di amministratore per visualizzare le impostazioni di inoltro di chiamata di un utente nella distribuzione.
     
     b. Visualizzare le impostazioni di inoltro di chiamata di un utente. Nella riga di comando digitare il comando seguente:
     
