@@ -1,7 +1,7 @@
 ---
 title: Creare i primi team in Microsoft Teams
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.date: 11/01/2018
 audience: Admin
@@ -10,24 +10,19 @@ ms.service: msteams
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come guidare Teams'adozione gestendo la distribuzione di Microsoft 365 o Office 365 con Teams, incluso come aggiungere le risorse chiave come schede nei canali appropriati.
+description: 'Informazioni su come guidare Teams''adozione gestendo la distribuzione di Microsoft 365 o Office 365 con Teams, incluso come aggiungere le risorse chiave come schede nei canali appropriati.'
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- Adopt
-- seo-marvel-apr2020
+  - Adopt
+  - seo-marvel-apr2020
 ms.collection:
-- Teams_ITAdmin_Adopt
-- M365-collaboration
+  - Teams_ITAdmin_Adopt
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 332c106ca8f3ea881bbef95805c1228a6687cc65
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60832980"
+  - Microsoft Teams
 ---
+
 # <a name="create-your-first-teams-in-microsoft-teams"></a>Creare i primi team in Microsoft Teams
 
 Il modo migliore per guidare l'adozione di Teams è usare il prodotto. È consigliabile gestire la distribuzione Microsoft 365 o Office 365 con Teams. È anche consigliabile creare una community di dipendenti incentrata sul lavoro in team e sulla produttività. Questi team iniziali possono cambiare nel tempo. Alcuni team suggeriti sono:
@@ -35,10 +30,10 @@ Il modo migliore per guidare l'adozione di Teams è usare il prodotto. È consig
 | Nome del team | Nomi dei canali proposti |
 | --------- | ---------------------- |
 | Informazioni su Teams | Generale</br> Presentazioni</br> Come si fa?</br>Feedback </br> Idee per i team futuri </br> Supporto |
-| Microsoft Teams Implementazione | Generale <br/> Consapevolezza e adozione <br/> Coinvolgimento aziendale <br/> Programma Early Adopter <br/> Feedback e Insights <br/> Sicurezza e conformità <br/> Strategia e pianificazione <br/> Integrità dei servizi e incidenti <br/> Formazione <br/> Watercooler Chat |
+| Microsoft Teams implementazione | Generale <br/> Consapevolezza e adozione <br/> Coinvolgimento aziendale <br/> Programma Early Adopter <br/> Feedback e Insights <br/> Sicurezza e conformità <br/> Strategia e pianificazione <br/> Integrità dei servizi e incidenti <br/> Formazione <br/> Watercooler Chat |
 | Campioni del lavoro in team | Generale <br/> Procedure consigliate, formazione e procedure <br/> Angolo dei campioni <br/> Feedback e supporto <br/> Clienti potenziali del programma <br/> Social Hub |
 
-All'Microsoft Teams, la [](/microsoftteams/platform/concepts/tabs/tabs-overview) raccolta schede consente di accedere a tutte le app Microsoft 365 o Office 365 e di terze parti attivate dall'amministratore. Per ottenere il massimo valore dal prodotto, è consigliabile aggiungere le risorse chiave come schede in ognuno dei canali appropriati. Vedere l'esempio seguente.
+All'Microsoft Teams, la raccolta schede [](/microsoftteams/platform/concepts/tabs/tabs-overview) consente di accedere a tutte le app Microsoft 365 o Office 365 e di terze parti attivate dall'amministratore. Per ottenere il massimo valore dal prodotto, è consigliabile aggiungere le risorse chiave come schede in ognuno dei canali appropriati. Vedere l'esempio seguente.
 
 ![Schermata che mostra le schede predefinite e personalizzate.](media/teams-adoption-tab-example.png)
 
@@ -46,9 +41,9 @@ Nei team iniziali è consigliabile aggiungere gli elementi seguenti per fare rif
 
 |Nome team/canale | Scheda Aggiunta |
 |----------------- | ---------- |
-| **Microsoft Teams Distribuzione** ||
-| Generale | Scheda Web: Teams [documentazione](./index.yml) |
-| Consapevolezza e adozione | [Teams Adoption Hub](https://aka.ms/DriveTeamsAdoption)<br/>[Microsoft Teams Customer Success Kit](https://aka.ms/TeamsCustomerSuccess)|
+| **Microsoft Teams distribuzione** ||
+| Generale | Scheda Web: [Teams documentazione](./index.yml) |
+| Consapevolezza e adozione | [Teams Adoption Hub](https://aka.ms/DriveTeamsAdoption)<br/>[Microsoft Teams customer success kit](https://aka.ms/TeamsCustomerSuccess)|
 | Coinvolgimento aziendale | Wiki - Indicazioni per l'impegno<br/>Modulo - Richiesta di Teams consulenza<br/>Elenco - Richieste di impegno |
 |Early adopters | Community di feedback aggiunta <br/> OneNote domande frequenti e temi comuni |
 | Feedback e segnalazione | Report sull'utilizzo Microsoft 365 o Office 365 bloccati (solo per Microsoft 365 o Office 365 amministratori) |

@@ -1,25 +1,20 @@
 ---
 title: Gestire le impostazioni di configurazione del servizio Web in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: f3f04d81-8a1f-427f-bd0f-fb659024e096
 description: 'Riepilogo: gestire le impostazioni di configurazione del servizio Web in Skype for Business Server.'
-ms.openlocfilehash: 006b2b80514c3902c7ce27e212fd451aea9921b4
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60847389"
 ---
+
 # <a name="manage-web-service-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione del servizio Web in Skype for Business Server
  
 **Riepilogo:** Gestire le impostazioni di configurazione del servizio Web in Skype for Business Server.
@@ -32,17 +27,17 @@ Seguire questa procedura per creare un nuovo criterio servizio Web.
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo.  
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Sicurezza** e quindi su **Servizio Web**.
     
 4. Nella pagina **Servizio Web** fare clic su **Nuovo** e quindi eseguire una delle operazioni seguenti:
     
-   - Per configurare il servizio Web per un sito, fare clic su **Configurazione sito.** In **Selezionare un sito** fare clic sul sito a cui verrà applicato il criterio Servizio Web e quindi fare clic su **OK.**
+   - Per configurare il servizio Web per un sito, fare clic su **Configurazione sito**. In **Selezionare un sito** fare clic sul sito a cui verrà applicato il criterio Servizio Web a un sito e fare clic su **OK**.
     
-   - Per configurare il servizio Web per un pool, fare clic su **Configurazione pool.** In **Selezionare un servizio** fare clic sul servizio a cui verrà applicato il criterio servizio Web e fare clic su **OK.** 
+   - Per configurare il servizio Web per un pool, fare clic su **Configurazione pool**. In **Selezionare un servizio** fare clic sul servizio a cui verrà applicato il criterio servizio Web e fare clic su **OK**. 
     
-5. In **Nuova impostazione servizio Web,** in Autenticazione **Windows** integrata, selezionare **Negozia,** Autenticazione **Windows** integrata o **Nessuna.**
+5. In **Nuova impostazione servizio Web**, in **Autenticazione Windows** integrata, selezionare **Negozia,** Autenticazione **Windows** integrata o **Nessuna**.
     
 6. Selezionare una o più delle opzioni seguenti in base alle capacità dei client e al supporto nell'ambiente:
     
@@ -64,7 +59,7 @@ Eseguire la procedura seguente per modificare i criteri per un servizio Web esis
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo.  
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Sicurezza** e quindi su **Servizio Web**.
     
@@ -90,7 +85,7 @@ Seguire questa procedura per eliminare le impostazioni di configurazione del ser
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo.  
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Sicurezza** e quindi su **Servizio Web**.
     
@@ -102,7 +97,7 @@ Seguire questa procedura per eliminare le impostazioni di configurazione del ser
     
 ## <a name="deleting-web-service-configuration-settings-by-using-windows-powershell-cmdlets"></a>Eliminazione di Impostazioni di configurazione del servizio Web tramite Windows PowerShell cmdlet
 
-È possibile eliminare le impostazioni di configurazione del servizio Web utilizzando Windows PowerShell e il cmdlet **Remove-CsWebServiceConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere Amministrazione remota di PowerShell per [Microsoft Lync.](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/) Il processo è lo stesso in Skype for Business Server.
+È possibile eliminare le impostazioni di configurazione del servizio Web utilizzando Windows PowerShell e il cmdlet **Remove-CsWebServiceConfiguration**. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere Amministrazione remota [di PowerShell per Microsoft Lync](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/). Il processo è lo stesso in Skype for Business Server.
   
 ### <a name="to-delete-a-specific-collection-of-web-service-configuration-settings"></a>Per eliminare una raccolta specifica di impostazioni di configurazione di servizi Web
 
@@ -128,4 +123,4 @@ Con il comando seguente vengono rimosse tutte le impostazioni di sicurezza di se
   Get-CsWebServiceConfiguration | Where-Object {$_.UseCertificateAuth -eq $True} | Remove-CsWebServiceConfiguration
   ```
 
-Per informazioni dettagliate, [vedere Remove-CsWebServiceConfiguration.](/powershell/module/skype/remove-cswebserviceconfiguration?view=skype-ps)
+Per informazioni dettagliate, [vedere Remove-CsWebServiceConfiguration](/powershell/module/skype/remove-cswebserviceconfiguration?view=skype-ps).

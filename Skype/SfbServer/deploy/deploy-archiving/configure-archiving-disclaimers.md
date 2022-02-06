@@ -1,31 +1,26 @@
 ---
 title: Configurare le dichiarazioni di non responsabilità di archiviazione per gli utenti esterni in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 394ac291-05cd-4fa1-acb3-714af538b47f
 description: 'Riepilogo: leggere questo argomento per informazioni su come configurare una dichiarazione di non responsabilità di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: 05eaec40556b383525331405463ee6d0a10e0a13
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60834714"
 ---
+
 # <a name="configure-archiving-disclaimers-for-external-users-in-skype-for-business-server"></a>Configurare le dichiarazioni di non responsabilità di archiviazione per gli utenti esterni in Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come configurare una dichiarazione di non responsabilità di archiviazione per Skype for Business Server.
   
 Se l'organizzazione comunica con partner esterni, è necessario comunicargli che si stanno archiviando le comunicazioni con essi. Quando si distribuisce un server perimetrale e si abilita la federazione per l'organizzazione, viene chiesto se si desidera inviare automaticamente una dichiarazione di non responsabilità di archiviazione ai partner esterni. 
   
-Se è necessario modificare questa configurazione, è possibile utilizzare il Pannello di controllo di Skype for Business Server o il cmdlet **Set-CsAccessEdgeConfiguration** Windows PowerShell. I cmdlet possono essere eseguiti da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell.
+Se è necessario modificare questa configurazione, è possibile utilizzare il Skype for Business Server di controllo o il cmdlet **Set-CsAccessEdgeConfiguration** Windows PowerShell. I cmdlet possono essere eseguiti da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell.
   
 Per consentire agli utenti esterni di collaborare con gli utenti nella distribuzione Skype for Business Server, è inoltre necessario configurare almeno un criterio di accesso esterno per supportare l'accesso degli utenti esterni. Per informazioni dettagliate, vedere Manage XMPP Federated Partners for Your Organization. Per informazioni dettagliate sul controllo dell'accesso per domini federati specifici, vedere Control Access by Individual Federated Domains.
   
@@ -39,7 +34,7 @@ Per consentire agli utenti esterni di collaborare con gli utenti nella distribuz
     
 4. Nella scheda **Configurazione Access Edge** fare clic su **Globale**, quindi su **Modifica** e infine su **Mostra dettagli**.
     
-5. In **Modifica configurazione Access Edge,** in Abilita federazione e connettività di messaggistica istantanea pubblica selezionare o deselezionare la casella di controllo Invia dichiarazione di non responsabilità di archiviazione ai partner **federati** per abilitare o disabilitare l'invio automatico della dichiarazione di non responsabilità di archiviazione. 
+5. In **Modifica configurazione Access Edge**, in Abilita federazione e connettività di messaggistica istantanea **pubblica selezionare o** deselezionare la casella di controllo Invia dichiarazione di non responsabilità di archiviazione ai **partner federati** per abilitare o disabilitare l'invio automatico della dichiarazione di non responsabilità di archiviazione.
     
 6. Fare clic su **Commit**.
     

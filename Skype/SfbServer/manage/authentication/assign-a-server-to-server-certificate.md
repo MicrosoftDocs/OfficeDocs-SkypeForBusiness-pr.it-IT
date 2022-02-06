@@ -1,26 +1,21 @@
 ---
-title: Assegnare un certificato di autenticazione da server a server a Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: Assegnare un certificato di autenticazione da server a server Skype for Business Server
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: c7413954-2504-47f4-a073-44548aff1c0c
 description: 'Riepilogo: assegnare un certificato di autenticazione da server a server per Skype for Business Server.'
-ms.openlocfilehash: 30d62351d92a53c107e858ce1e0f88239f615208
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60839948"
 ---
-# <a name="assign-a-server-to-server-authentication-certificate-to-skype-for-business-server"></a>Assegnare un certificato di autenticazione da server a server a Skype for Business Server
+
+# <a name="assign-a-server-to-server-authentication-certificate-to-skype-for-business-server"></a>Assegnare un certificato di autenticazione da server a server Skype for Business Server
 **Riepilogo:** Assegnare un certificato di autenticazione da server a server per Skype for Business Server.
   
 Per determinare se un certificato di autenticazione da server a server è già stato assegnato a Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell:
@@ -29,7 +24,7 @@ Per determinare se un certificato di autenticazione da server a server è già s
 Get-CsCertificate -Type OAuthTokenIssuer
 ```
 
-Se non vengono restituite informazioni sul certificato, è necessario assegnare un certificato dell'autorità emittente di token prima di poter utilizzare l'autenticazione da server a server. Come regola generale, qualsiasi Skype for Business Server può essere usato come certificato OAuthTokenIssuer; ad esempio, il Skype for Business Server predefinito può essere usato anche come certificato OAuthTokenIssuer. Il certificato OAUthTokenIssuer può anche essere qualsiasi certificato server Web che includa il nome del dominio SIP nel campo Subject. I due requisiti principali per il certificato utilizzato per l'autenticazione da server a server sono i seguenti: 1)lo stesso certificato deve essere configurato come certificato OAuthTokenIssuer in tutti i Front End Server; e 2) il certificato deve essere di almeno 2048 bit.
+Se non vengono restituite informazioni sul certificato, è necessario assegnare un certificato dell'autorità emittente di token prima di poter utilizzare l'autenticazione da server a server. Come regola generale, qualsiasi certificato Skype for Business Server può essere usato come certificato OAuthTokenIssuer; ad esempio, il certificato predefinito di Skype for Business Server può essere utilizzato anche come certificato OAuthTokenIssuer. Il certificato OAUthTokenIssuer può anche essere qualsiasi certificato server Web che includa il nome del dominio SIP nel campo Subject. I due requisiti principali per il certificato utilizzato per l'autenticazione da server a server sono i seguenti: 1)lo stesso certificato deve essere configurato come certificato OAuthTokenIssuer in tutti i Front End Server; e 2) il certificato deve essere di almeno 2048 bit.
   
 Se non si dispone di un certificato da utilizzare per l'autenticazione da server a server, è possibile ottenere un nuovo certificato, importarlo e quindi utilizzarlo per l'autenticazione da server a server. Dopo aver richiesto e ottenuto il nuovo certificato, è possibile accedere a uno dei Front End Server e utilizzare un comando di Windows PowerShell simile al seguente per importare e assegnare il certificato:
   
@@ -66,7 +61,7 @@ Se non si desidera utilizzare Windows PowerShell, è possibile utilizzare la con
   
 Dopo l'importazione del certificato in tutti i Front End Server, è possibile assegnare tale certificato utilizzando la Distribuzione guidata di Skype for Business Server anziché Windows PowerShell. Per assegnare un certificato utilizzando la Distribuzione guidata, eseguire le operazioni seguenti in un computer in cui è stata installata la Distribuzione guidata:
   
-1. Fare clic sul pulsante Start, scegliere Tutti i programmi, **Skype for Business Server** e quindi fare clic Skype for Business Server **distribuzione guidata.**
+1. Fare clic sul pulsante Start, scegliere Tutti **i** programmi, Skype for Business Server e quindi fare clic Skype for Business Server **distribuzione guidata**.
     
 2. Nella Distribuzione guidata fare clic **su Installa o aggiorna Skype for Business Server sistema**.
     

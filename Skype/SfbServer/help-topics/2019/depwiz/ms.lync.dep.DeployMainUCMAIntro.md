@@ -1,27 +1,22 @@
 ---
 title: API per comunicazioni unificate della Distribuzione guidata
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.dep.DeployMainUCMAIntro
+  - ms.lync.dep.DeployMainUCMAIntro
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 0eb47fc9-17fe-4ccf-b7c9-1a2cf95f943c
-ROBOTS: NOINDEX, NOFOLLOW
-description: Per informazioni dettagliate sull'utilizzo della Distribuzione guidata per installare Skype for Business Server, vedere Install Skype for Business Server.
-ms.openlocfilehash: 18e4981e47895e93d28af52f8b3a0f9ea657e7f1
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60843459"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Per informazioni dettagliate sull''utilizzo della Distribuzione guidata Skype for Business Server, vedere Install Skype for Business Server.'
 ---
+
 # <a name="deployment-wizard-unified-communications-api"></a>Distribuzione guidata: API per le comunicazioni unificate
  
 Per informazioni dettagliate sull'utilizzo della Distribuzione guidata per installare Skype for Business Server, vedere [Install Skype for Business Server](../../../deploy/install/install.md).

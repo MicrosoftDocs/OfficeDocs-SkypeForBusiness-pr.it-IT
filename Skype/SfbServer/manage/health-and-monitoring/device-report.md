@@ -1,29 +1,24 @@
 ---
 title: Device Report in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: f42e4d60-699b-4870-8bb5-13b51bb6eb2b
 description: 'Riepilogo: informazioni sul Rapporto dispositivi in Skype for Business Server.'
-ms.openlocfilehash: 29ea62f7578b491a940a47663668d0bc83ec5402
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60835264"
 ---
+
 # <a name="device-report-in-skype-for-business-server"></a>Device Report in Skype for Business Server
  
-**Riepilogo:** Informazioni su Report dispositivi in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto dispositivi in Skype for Business Server.
   
-Il Rapporto dispositivi potrebbe anche essere intitolato Rapporto altoparlanti e microfono perché il Rapporto dispositivi recupera le metriche relative alle chiamate (ad esempio, la percentuale di chiamate con qualità insufficiente, l'eco e il tempo commutazione vocale) raggruppate in base ai microfoni e agli altoparlanti utilizzati nella chiamata. Se sei interessato ai telefoni IP (anche comunemente denominati "dispositivi"), usa invece il Rapporto inventario ip Telefono [in Skype for Business Server.](ip-phone-inventory-report.md)
+Il Rapporto dispositivi potrebbe anche essere intitolato Rapporto altoparlanti e microfono perché il Rapporto dispositivi recupera le metriche relative alle chiamate (ad esempio, la percentuale di chiamate con qualità insufficiente, l'eco e il tempo commutazione vocale) raggruppate in base ai microfoni e agli altoparlanti utilizzati nella chiamata. Se sei interessato ai telefoni IP (anche comunemente denominati "dispositivi"), usa invece il Rapporto inventario ip Telefono [in Skype for Business Server](ip-phone-inventory-report.md).
   
 Il Rapporto dispositivi è estremamente utile agli amministratori per stabilire se un tipo specifico di dispositivo riporta volumi elevati di chiamate con qualità insufficiente rispetto ad altri. Questo può influire sulle decisioni da prendere in merito all'acquisto di nuovi dispositivi o alla sostituzione dei dispositivi esistenti.
   

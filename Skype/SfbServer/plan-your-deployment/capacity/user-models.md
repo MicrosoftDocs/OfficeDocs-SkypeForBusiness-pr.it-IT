@@ -1,30 +1,25 @@
 ---
 title: Modelli utente in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: c551371c-d740-4372-bada-f0d713ec0d33
 description: I modelli utente descritti qui forniscono la base per le misurazioni e i consigli di pianificazione della capacità descritti in Capacity planning user model usage for Skype for Business Server.
-ms.openlocfilehash: 22f5d45c5b8c5f75979e061814c03a5b9ffc3e8d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60846349"
 ---
+
 # <a name="user-models-in-skype-for-business-server"></a>Modelli utente in Skype for Business Server
  
 I modelli utente descritti qui forniscono la base per le misurazioni e i consigli di pianificazione della capacità descritti in [Capacity planning user model usage for Skype for Business Server](user-model.md).
   
-## <a name="skype-for-business-server-user-models"></a>Skype for Business Server Modelli utente
+## <a name="skype-for-business-server-user-models"></a>Skype for Business Server utente
 
 Nella tabella seguente viene descritto il modello utente per la registrazione, i contatti, la messaggistica istantanea e la presenza per Skype for Business Server.
   
@@ -34,7 +29,7 @@ Nella tabella seguente viene descritto il modello utente per la registrazione, i
 |:-----|:-----|
 |Dimensione e distribuzione  <br/> |Viene creato un modello di distribuzione estesa con tre siti centrali e un pool Front End per sito.  <br/> |
 |Percentuale di utenti di Active Directory  <br/> |Si presuppone che il 70% di tutti gli utenti di Active Directory nell'organizzazione siano abilitati per Skype for Business Server. L'80% di tali utenti abilitati è connesso a Skype for Business Server ogni giorno (80% di concorrenza). Gli utenti simultanei rappresentano la base per i valori indicati nel resto di questa sezione.  <br/> |
-|Cambiamenti in Active Directory  <br/> |Si presuppone che lo 0,5% degli utenti totali sia stato creato e abilitato per Skype for Business in Active Directory ogni settimana e che lo 0,5% degli utenti totali sia disabilitato da Active Directory e da Skype for Business ogni settimana. Per il 5% degli utenti viene modificato almeno un attributo di Active Directory ogni settimana.  <br/> |
+|Cambiamenti in Active Directory  <br/> |Si presuppone che lo 0,5% degli utenti totali sia creato e abilitato per Skype for Business in Active Directory ogni settimana e che lo 0,5% degli utenti totali sia disabilitato da Active Directory e da Skype for Business ogni settimana. Per il 5% degli utenti viene modificato almeno un attributo di Active Directory ogni settimana.  <br/> |
 |Gruppi di distribuzione di Active Directory  <br/> |Si parte dal presupposto che il numero di gruppi di distribuzione di Active Directory nell'organizzazione sia pari a tre volte il numero di tutti gli utenti in Active Directory. Le dimensioni dei gruppi di distribuzione sono le seguenti:  <br/> • Il 64% ha 2-30 utenti  <br/> • Il 13% ha 31-50 utenti  <br/> • Il 10% ha 51-100 utenti  <br/> • Il 13% ha 101-500 utenti  <br/> |
 |Utenti di VoIP (Voice over IP)  <br/> |Il 60% Skype for Business Server utenti sono abilitati per le comunicazioni unificate (UC), ovvero i loro numeri di telefono sono di proprietà di Skype for Business Server.  <br/> |
 |Distribuzione dei client registrati  <br/> |Il 65% dei client esegue Skype for Business software, tra cui Skype for Business Lync Telefono Edition.  <br/> 30% dei client che eseguono software client da una versione precedente di Lync.  <br/> 5% dei client che usano Skype for Business Web App.  <br/> Se la mobilità è abilitata, presupporremo che il 40% degli utenti utilizzi la mobilità contemporaneamente alle altre opzioni client registrate citate in precedenza. In questo caso, il rapporto MPOP (Multiple Point of Presence) del client è 1:1,9. Se l'utilizzo dei dispositivi mobili è disabilitato, il rapporto MPOP invece è pari a 1:1,5.  <br/> |
@@ -46,7 +41,7 @@ Nella tabella seguente viene descritto il modello utente per la registrazione, i
 
 |**Categoria**|**Descrizione**|
 |:-----|:-----|
-|Sessioni di messaggistica istantanea peer-to-peer  <br/> |Ogni utente esegue in media sei sessioni di messaggistica istantanea peer-to-peer al giorno.  <br/> 10 messaggi istantanei per sessione.  <br/> A ogni messaggio corrispondono due messaggi SIP INFO e 2 messaggi SIP 200 OK (per gli indicatori di stato, ad esempio " \<Name\> sta digitando")  <br/> |
+|Sessioni di messaggistica istantanea peer-to-peer  <br/> |Ogni utente esegue in media sei sessioni di messaggistica istantanea peer-to-peer al giorno.  <br/> 10 messaggi istantanei per sessione.  <br/> A ogni messaggio corrispondono due messaggi SIP INFO e 2 messaggi SIP 200 OK (per gli indicatori di stato, ad esempio "\<Name\> sta digitando")  <br/> |
 |Sessioni di messaggistica istantanea di gruppo  <br/> |Il numero medio di messaggi inviati in una sessione di sola messaggistica istantanea di gruppo è 5 per utente.  <br/> Il numero medio di messaggi inviati nella parte di messaggistica istantanea di una conferenza AV è 2 per utente.  <br/> |
 |Polling della presenza  <br/> |In generale, si presuppongono 60 polling di presenza per utente all'ora. Per ogni utente si presuppone una media di:  <br/> • Un sondaggio al giorno della presenza di utenti nella scheda dell'organizzazione dell'utente (ma non nell'elenco Contatti). Il numero medio di non contatti nella scheda dell'organizzazione dell'utente è 15 utenti. Due operazioni di visualizzazione di schede contatto al giorno.  <br/> • Un polling della presenza ogni volta che l'utente fa clic su un altro utente per avviare una conversazione, stimata in una volta all'ora.  <br/> • Sei ricerche utente all'ora. Ogni volta che viene eseguita una ricerca, viene inviato un polling in batch per tutti gli utenti nell'elenco dei risultati della ricerca. Si presuppone che la dimensione media dei risultati della ricerca sia 20. Se i risultati della ricerca rimangono sullo schermo, il polling del batch viene aggiornato ogni 5 minuti. presuppongiamo che siano presenti due aggiornamenti di questo tipo all'ora.  <br/> • Quando l'utente apre o visualizza in anteprima un messaggio di posta elettronica in Outlook, viene eseguito un polling della presenza di utenti nei campi A: e CC: del messaggio di posta elettronica, stimato in cinque messaggi di posta elettronica all'ora e quattro utenti per posta elettronica.  <br/> |
 |Sottoscrizioni della presenza  <br/> |Quando un utente ne aggiunge un altro come contatto, il primo utente sottoscrive cinque categorie di informazioni sul secondo utente. Gli aggiornamenti di queste categorie di informazioni vengono inviati automaticamente al primo utente. <br/> Per ogni client, viene inviata una singola richiesta di sottoscrizione batch per ottenere lo stato di presenza di una media di 40 contatti, con ulteriori 40 finestre di dialogo per ottenere la presenza dei contatti federati.  <br/> Le informazioni sulla presenza per i membri di un gruppo di distribuzione espanso vengono trovate mediante sottoscrizioni della presenza persistenti e non mediante il polling. Il modello prevede un'espansione per utente ogni due ore.  <br/> Le sottoscrizioni brevi si verificano quando un utente esegue l'accesso, esiste una sottoscrizione batch per tutti i contatti dell'utente e quindi l'utente si disconnette presto. Si presuppongono sei sottoscrizioni brevi per utente all'ora, ognuna della durata di 10 minuti. <br/> |

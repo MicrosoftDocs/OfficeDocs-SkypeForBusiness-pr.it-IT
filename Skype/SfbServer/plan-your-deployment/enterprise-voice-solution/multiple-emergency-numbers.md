@@ -1,28 +1,23 @@
 ---
 title: Pianificare più numeri di emergenza in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 5ed45a22-ddf0-419f-84da-895a73df855f
 description: Leggere questo argomento per informazioni su come pianificare più numeri di emergenza in Skype for Business Server.
-ms.openlocfilehash: fbff70b3772b9d941d615f3d1aaf2ad668177e30
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861133"
 ---
+
 # <a name="plan-for-multiple-emergency-numbers-in-skype-for-business-server"></a>Pianificare più numeri di emergenza in Skype for Business Server
  
 Leggere questo argomento per informazioni su come pianificare più numeri di emergenza in Skype for Business Server.
@@ -35,7 +30,7 @@ Questa funzionalità è utile anche per i provider di servizi sanitari negli Sta
 
 È possibile configurare le chiamate di emergenza creando criteri percorso che definiscono la modalità di implementazione delle chiamate di emergenza. Il criterio percorso viene utilizzato per definire il numero che costituisce una chiamata di emergenza, ad esempio 911 negli Stati Uniti. 999 e 112 nel Regno Unito. Il criterio percorso determina se un utente è abilitato per le chiamate di emergenza e, in tal caso, qual è il comportamento di una chiamata di emergenza. È inoltre possibile definire se la sicurezza aziendale deve essere notificata automaticamente e come instradare la chiamata.
   
-Per ulteriori informazioni sulla definizione e la modifica di un criterio [percorso,](../../deploy/deploy-enterprise-voice/create-location-policies.md)vedere Plan location policies for [Skype for Business Server](location-policies.md) e Create location policies in Skype for Business Server . Questi argomenti descrivono i concetti relativi ai criteri percorso. Tuttavia, è necessario seguire le istruzioni in [Configurare più numeri](../../deploy/deploy-enterprise-voice/configure-multiple-emergency-numbers.md) di emergenza in Skype for Business per configurare più numeri di emergenza.
+Per ulteriori informazioni sulla definizione e la modifica di un criterio percorso, vedere [Plan location policies for Skype for Business Server](location-policies.md) e [Create location policies in Skype for Business Server](../../deploy/deploy-enterprise-voice/create-location-policies.md). Questi argomenti descrivono i concetti relativi ai criteri percorso. Tuttavia, è necessario seguire le istruzioni in [Configurare più numeri](../../deploy/deploy-enterprise-voice/configure-multiple-emergency-numbers.md) di emergenza in Skype for Business per configurare più numeri di emergenza.
   
 Quando si pianificano più numeri di emergenza, tenere presente quanto segue:
   
@@ -59,11 +54,11 @@ Quando si pianificano più numeri di emergenza, tenere presente quanto segue:
   
 Prima di configurare più numeri di emergenza, tenere presente quanto segue:
   
-- Per configurare più numeri di emergenza, è necessario utilizzare il cmdlet New-CsEmergencyNumber ed è necessario definire criteri percorso che supportano più numeri di emergenza specificando il parametro EmergencyNumbers con i cmdlet [New-CsLocationPolicy](/powershell/module/skype/new-cslocationpolicy?view=skype-ps) e [Set-CsLocationPolicy.](/powershell/module/skype/set-cslocationpolicy?view=skype-ps)
+- Per configurare più numeri di emergenza, è necessario utilizzare il cmdlet New-CsEmergencyNumber ed è necessario definire criteri percorso che supportano più numeri di emergenza specificando il parametro EmergencyNumbers con i cmdlet [New-CsLocationPolicy](/powershell/module/skype/new-cslocationpolicy?view=skype-ps) e [Set-CsLocationPolicy](/powershell/module/skype/set-cslocationpolicy?view=skype-ps) .
     
 - Se sono stati definiti numeri esistenti utilizzando il cmdlet Set-CsLocationPolicy o New-CsLocationPolicy con i parametri EmergencyDialString e EmergencyDialMask, i valori specificati con il parametro EmergencyNumbers avranno la precedenza sui valori precedenti. In altri parole, i valori per i parametri EmergencyDialString e EmergencyDialMask verranno ignorati.
     
-- Se sono stati definiti numeri esistenti utilizzando il cmdlet Set-CsLocationPolicy o New-CsLocationPolicy con i parametri EmergencyDialString e EmergencyDialMask e non si configurano nuovi numeri di  *emergenza,*  i numeri esistenti continueranno a essere utilizzati.
+- Se sono stati definiti numeri esistenti utilizzando il cmdlet Set-CsLocationPolicy o New-CsLocationPolicy con i parametri EmergencyDialString e EmergencyDialMask e non si configurano nuovi numeri di  *emergenza, i*  numeri esistenti continueranno a essere utilizzati.
     
 - Per il funzionamento della funzionalità con più numeri di emergenza, le versioni client in esecuzione devono essere in grado di supportare la nuova funzionalità. I client meno recenti continueranno a utilizzare i valori precedenti specificati dai cmdlet Set-CsLocationPolicy o New-CsLocationPolicy con i parametri EmergencyDialString e EmergencyDialMask. 
     
@@ -87,7 +82,7 @@ Nella tabella seguente vengono illustrati criteri percorso di esempio (ai fini d
   
  **Londra** : per i client che non supportano ancora più numeri di emergenza, è possibile utilizzare le vecchie configurazioni della stringa di composizione di emergenza e della maschera di chiamata. Per i client che supportano più numeri di emergenza, è possibile definire un numero di emergenza sia per "999" che per "112" con maschere per ognuno di essi.
   
- **India:** tutti i client distribuiti supportano più numeri di emergenza. In India, è necessario configurare solo più numeri di emergenza.
+ **India** : tutti i client distribuiti supportano più numeri di emergenza. In India, è necessario configurare solo più numeri di emergenza.
   
 ## <a name="client-support"></a>Supporto client
 <a name="BKMK_Clients"> </a>
@@ -101,9 +96,9 @@ La tabella seguente mostra il supporto client per più numeri di emergenza. Micr
 ||DC (Deferred Channel) rilasciato l'11 ottobre 2016 - Versione 1605 (Build 6965.2092)  <br/> |
 |**MSI** <br/> |Aggiornamento del 7 giugno - [https://support.microsoft.com/kb/3115087](https://support.microsoft.com/kb/3115087) <br/> |
 |**Mac e iOS** <br/> |**Versione** <br/> |
-||Skype for Business Client Mac versione 16.9  <br/> Skype for Business client iOS versione 6.16  <br/> |
+||Skype for Business client Mac versione 16.9  <br/> Skype for Business client iOS versione 6.16  <br/> |
 |**Android** <br/> |**Versione** <br/> |
-||Skype for Business Versione client Android 6.17  <br/> |
+||Skype for Business client Android versione 6.17  <br/> |
 |**Lync Phone Edition** <br/> |**Versione** <br/> |
 || Telefoni Aastra 6721ip e Aastra 6725ip - Aggiornamento cumulativo di settembre 2016 (Build 7577.4512) -[https://support.microsoft.com/kb/3194831](https://support.microsoft.com/kb/3194831) <br/> |
 || Telefoni HP 4110 e HP 4120 - Aggiornamento cumulativo di settembre 2016 (Build 7577.4512) -[https://support.microsoft.com/kb/3194832](https://support.microsoft.com/kb/3194832) <br/> |

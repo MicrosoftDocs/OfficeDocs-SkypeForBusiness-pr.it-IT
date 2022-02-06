@@ -1,25 +1,20 @@
 ---
 title: 'Supporto della virtualizzazione per Skype for Business Server 2019 '
 ms.reviewer: corbinm
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 06/04/2020
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: 'Riepilogo: informazioni sul supporto della virtualizzazione per Skype for Business Server 2019.'
-ms.openlocfilehash: 73e9121e2b530e44395aefda50082682fb910e7d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60853780"
 ---
+
 # <a name="virtualization-support-for-skype-for-business-server-2019"></a>Supporto della virtualizzazione per Skype for Business Server 2019
 
 Skype for Business Server 2019 è supportato nella virtualizzazione.
@@ -51,4 +46,4 @@ Lo Skype for Business Server 2019 Stress and Performance Tool include strumenti 
 - Fornire conoscenze e procedure consigliate per l'ottimizzazione delle prestazioni
 - Misurare le prestazioni delle distribuzioni Skype for Business Server 2019
  
-È possibile scaricare lo strumento da [qui](https://www.microsoft.com/download/details.aspx?id=101447).
+Puoi scaricare lo strumento da [qui](https://www.microsoft.com/download/details.aspx?id=101447).

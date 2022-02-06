@@ -1,24 +1,19 @@
 ---
 title: Cosa è deprecato da Skype for Business Server 2019
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: overview
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: 'Riepilogo: queste funzionalità sono state rimosse Skype for Business Server 2019.'
-ms.openlocfilehash: 7f956aed60a65d074776756e0c6254e2aa3d9629
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60846979"
 ---
+
 # <a name="whats-deprecated-from-skype-for-business-server-2019"></a>Cosa è deprecato da Skype for Business Server 2019
 
 Informazioni sulle funzionalità deprecate in Skype for Business Server 2019. Per informazioni sulle nuove funzionalità di Skype for Business Server 2019, vedere [What's in Skype for Business Server 2019](whats-new.md).
@@ -37,11 +32,11 @@ Skype for Business Server 2015 e i relativi predecessori hanno consentito di con
 
 Il server Chat persistente è un ruolo facoltativo che consente a più utenti dell'organizzazione di partecipare a conversazioni di chat room persistenti nel tempo. Non è possibile distribuire chat persistente con Skype for Business Server 2019. Questo ruolo del server viene rimosso da Generatore di topologie e dal codice. 
 
-La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here).
+La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento](/microsoftteams/upgrade-start-here).
 
-### <a name="sql-mirroring-for-skype-for-business-server"></a>SQL Mirroring per Skype for Business Server
+### <a name="sql-mirroring-for-skype-for-business-server"></a>SQL mirroring per Skype for Business Server
 
-SQL Il mirroring non può essere distribuito con Skype for Business Server 2019. Altre opzioni per la disponibilità elevata e il ripristino di emergenza sono ancora supportate ed è consigliabile scegliere tra queste opzioni. Vedere [Plan for high availability and disaster recovery in Skype for Business Server](../SfbServer/plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md) per esaminare le opzioni.
+SQL mirroring non può essere distribuito con Skype for Business Server 2019. Altre opzioni per la disponibilità elevata e il ripristino di emergenza sono ancora supportate ed è consigliabile scegliere tra queste opzioni. Vedere [Plan for high availability and disaster recovery in Skype for Business Server](../SfbServer/plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md) per esaminare le opzioni.
 
 ### <a name="in-place-upgrades"></a>Aggiornamenti sul posto 
 
@@ -51,15 +46,15 @@ Gli aggiornamenti sul posto erano disponibili Skype for Business Server 2015, ma
 
 Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano Mcx dovranno eseguire l'aggiornamento a un client corrente.
 
-Per ulteriori informazioni, vedere [Plan for Mobility for Skype for Business Server](../SfbServer/plan-your-deployment/mobility.md) and Mobile client feature comparison for [Skype for Business](../SfbServer/plan-your-deployment/clients-and-devices/mobile-feature-comparison.md).
+Per ulteriori informazioni, vedere [Plan for Mobility for Skype for Business Server](../SfbServer/plan-your-deployment/mobility.md) and [Mobile client feature comparison for Skype for Business](../SfbServer/plan-your-deployment/clients-and-devices/mobile-feature-comparison.md).
 
 ## <a name="tools"></a>Strumenti
 
 Gli strumenti seguenti non saranno disponibili per l'uso nella versione iniziale di Skype for Business Server 2019:
 
 - Calcolatore di pianificazione della capacità di Skype for Business Server
-- Skype for Business Server Strumenti di debug
-- Skype for Business Server Strumenti del Resource Kit (alcuni strumenti verranno rimossi)
+- Skype for Business Server di debug
+- Skype for Business Server Resource Kit (alcuni strumenti verranno rimossi)
     - Parcheggio di chiamata
     - Console utente di ricerca
     - Migrazione annuncio numero non assegnato

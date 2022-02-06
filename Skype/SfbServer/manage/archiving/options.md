@@ -1,24 +1,19 @@
 ---
 title: Gestire le opzioni di archiviazione in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 50399f26-58a3-4ce2-8229-32a8cafc7733
 description: 'Riepilogo: informazioni su come configurare le opzioni di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: d382cd829a9db8472df286580f6bd5d4b3baf036
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60856773"
 ---
+
 # <a name="manage-archiving-options-in-skype-for-business-server"></a>Gestire le opzioni di archiviazione in Skype for Business Server
 
 **Riepilogo:** Informazioni su come configurare le opzioni di archiviazione per Skype for Business Server.
@@ -55,11 +50,11 @@ L'archiviazione viene inizialmente configurata durante la distribuzione, ma è p
     
 2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
     
-3. Sulla barra di spostamento sinistra fare clic su **Configurazione archiviazione.**
+3. Sulla barra di spostamento sinistra fare clic su **Configurazione archiviazione**.
     
 ## <a name="configure-archiving-options-by-using-windows-powershell"></a>Configurare le opzioni di archiviazione tramite Windows PowerShell
 
-È inoltre possibile configurare le opzioni di archiviazione utilizzando i cmdlet Windows PowerShell elencati nella tabella seguente. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, [vedere Skype for Business Server Management Shell.](../management-shell.md)
+È inoltre possibile configurare le opzioni di archiviazione utilizzando i cmdlet Windows PowerShell elencati nella tabella seguente. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, [vedere Skype for Business Server Management Shell](../management-shell.md).
   
 
 |**Cmdlet**|**Descrizione**|

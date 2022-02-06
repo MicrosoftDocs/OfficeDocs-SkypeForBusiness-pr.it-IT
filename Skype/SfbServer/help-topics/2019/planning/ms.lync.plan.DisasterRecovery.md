@@ -1,28 +1,23 @@
 ---
 title: Ripristino di emergenza (strumento di pianificazione)
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.plan.DisasterRecovery
-- ms.lync.plan.DisasterRecovery
+  - ms.lync.plan.DisasterRecovery
+  - ms.lync.plan.DisasterRecovery
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 88ad1820-d4ef-4eb6-831b-a8574c085bd0
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 description: Skype for Business Server include misure di ripristino di emergenza consentendo di associare pool Front End situati in due data center.
-ms.openlocfilehash: 3efebe7e0070b7655563add15704a366ff7a9527
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60842258"
 ---
+
 # <a name="disaster-recovery-planning-tool"></a>Ripristino di emergenza (strumento di pianificazione)
  
 Skype for Business Server include misure di ripristino di emergenza consentendo di associare pool Front End situati in due data center.

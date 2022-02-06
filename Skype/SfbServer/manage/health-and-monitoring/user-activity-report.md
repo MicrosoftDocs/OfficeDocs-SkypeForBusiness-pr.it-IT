@@ -1,24 +1,19 @@
 ---
 title: Rapporto attività utente in Skype for Business Server 25
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 3aa6fef2-ea02-4f0f-93e8-fa2e0a953d79
 description: 'Riepilogo: informazioni sul Rapporto attività utente in Skype for Business Server.'
-ms.openlocfilehash: c78718e55740afdd42ceff11e1ab62d6198c15ec
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60828739"
 ---
+
 # <a name="user-activity-report-in-skype-for-business-server"></a>Rapporto attività utente in Skype for Business Server
 
 **Riepilogo:** Informazioni sul Rapporto attività utente in Skype for Business Server.
@@ -27,13 +22,13 @@ Nel Rapporto attività utente viene fornito un elenco dettagliato delle sessioni
 
 Spesso si fa riferimento al Rapporto attività utente come al rapporto "help desk", in quanto il rapporto viene spesso utilizzato dal personale dell'help desk per recuperare informazioni sulla sessione per un utente specifico. È possibile applicare un filtro in base alle chiamate effettuate o ricevute da un singolo utente semplicemente digitando l'URI SIP dell'utente nella casella Prefisso URI utente.
 
-In questo caso, il Rapporto attività utente restituirà informazioni per qualsiasi utente il cui URI SIP inizia con la stringa specificata. Ad esempio, se si digita **ken** nella casella URI, il Rapporto attività utente individua **Ken.** Myer@litwareinc.com. Tuttavia, individua anche questi utenti:
+In questo caso, il Rapporto attività utente restituirà informazioni per qualsiasi utente il cui URI SIP inizia con la stringa specificata. Ad esempio, se si digita **ken** nella casella URI, il Rapporto attività utente individua **Ken.Myer@litwareinc.com**. Tuttavia, individua anche questi utenti:
 
 - **ken** azi@litwareinc.com
 
 - **ken** burg@litwareinc.com
 
-- **Ken**. Sanchez@litwareinc.com
+- **Ken.Sanchez@litwareinc.com**
 
 - **Ken** nedy@litwareinc.com
 
@@ -43,7 +38,7 @@ Ken.my
 
 ## <a name="to-access-the-user-activity-report"></a>Per accedere al Rapporto attività utente
 
-È possibile accedere al Report attività utente dalla home page dei report di monitoraggio. Puoi anche raggiungere il Rapporto attività utente facendo clic sulla metrica URI utente nel Report inventario Telefono [ip in Skype for Business Server](ip-phone-inventory-report.md). Dall'interno del Rapporto attività utente, facendo clic sull'URI conferenza (per una conferenza) si visualizza il Rapporto dettagli conferenza. Analogamente, facendo clic sulla metrica Dettagli per una chiamata peer-to-peer si visualizza il Rapporto dettagli sessione [peer-to-peer in Skype for Business Server](peer-to-peer-session-detail-report.md).
+È possibile accedere al Report attività utente dalla home page dei report di monitoraggio. Puoi anche raggiungere il Rapporto attività utente facendo clic sulla metrica URI utente nel Report inventario Telefono [IP in Skype for Business Server](ip-phone-inventory-report.md). Dall'interno del Rapporto attività utente, facendo clic sull'URI conferenza (per una conferenza) si visualizza il Rapporto dettagli conferenza. Analogamente, facendo clic sulla metrica Dettagli per una chiamata peer-to-peer si visualizza il Rapporto dettagli sessione [peer-to-peer in Skype for Business Server](peer-to-peer-session-detail-report.md).
 
 ## <a name="making-the-best-use-of-the-user-activity-report"></a>Utilizzo ottimale del report attività utente
 

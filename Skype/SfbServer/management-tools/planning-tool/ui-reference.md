@@ -1,24 +1,19 @@
 ---
 title: Guida di riferimento all'interfaccia utente dello strumento di pianificazione
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 ms.date: 12/20/2018
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 52d44a51-f79b-4d27-9541-21737b798027
-ms.openlocfilehash: 516ecfc5433455af8813ecc1c66917e77f4c6677
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60845269"
 ---
+
 # <a name="planning-tool-ui-reference"></a>Guida di riferimento all'interfaccia utente dello strumento di pianificazione
  
 ## <a name="in-this-section"></a>Contenuto della sezione
@@ -33,7 +28,7 @@ In questi argomenti viene documentato l'interfaccia per lo strumento di pianific
     
 - [VoIP aziendale (Strumento di pianificazione)](../../help-topics/help-planning/enterprise-voice.md)
     
-- [Exchange Messaggistica unificata Impostazioni (strumento di pianificazione)](../../help-topics/help-planning/exchange-unified-messaging-settings.md)
+- [Exchange messaggistica unificata Impostazioni (strumento di pianificazione)](../../help-topics/help-planning/exchange-unified-messaging-settings.md)
     
 - [Controllo di ammissione di chiamata (Strumento di pianificazione)](../../help-topics/help-planning/call-admission-control.md)
     
@@ -53,7 +48,7 @@ In questi argomenti viene documentato l'interfaccia per lo strumento di pianific
     
 - [Panoramica delle funzionalità (Strumento di pianificazione)](../../help-topics/help-planning/feature-overview.md)
     
-- [Exchange Messaggistica unificata (strumento di pianificazione)](../../help-topics/help-planning/exchange-unified-messaging.md)
+- [Exchange messaggistica unificata (strumento di pianificazione)](../../help-topics/help-planning/exchange-unified-messaging.md)
     
 - [Bilanciamento del carico (strumento di pianificazione)](../../help-topics/help-planning/load-balancer.md)
     

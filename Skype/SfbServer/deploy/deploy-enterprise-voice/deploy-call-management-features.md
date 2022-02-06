@@ -1,37 +1,32 @@
 ---
 title: Distribuire le funzionalità di gestione delle chiamate in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 1667cfe4-76fa-4e10-91bb-b3efbedbf759
 description: Distribuzione delle funzionalità di gestione delle chiamate in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: f68a1e3030692c3c69ba2183e90f8a5f54be47fd
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60859593"
 ---
+
 # <a name="deploy-call-management-features-in-skype-for-business"></a>Distribuire le funzionalità di gestione delle chiamate in Skype for Business
  
 Distribuzione delle funzionalità di gestione delle chiamate in Skype for Business Server VoIP aziendale.
   
 Le funzionalità di gestione delle chiamate di VoIP aziendale controllano la modalità di routing e di risposta per le chiamate in arrivo. Skype for Business Server offre le seguenti funzionalità di gestione delle chiamate: 
   
-- **Parcheggio di chiamata:** consente agli utenti vocali di parcheggiare temporaneamente una chiamata e quindi di riprenderla dallo stesso telefono o da un altro telefono.
+- **Parcheggio di chiamata**: consente agli utenti vocali di parcheggiare temporaneamente una chiamata e quindi di riprenderla dallo stesso telefono o da un altro telefono.
     
-- **Prelievo chiamata di** gruppo : Consente agli utenti di rispondere alle chiamate effettuate a un altro utente assegnato a un gruppo di prelievo componendo il numero del gruppo di prelievo della chiamata.
+- **Prelievo chiamata di** gruppo: consente agli utenti di rispondere alle chiamate effettuate a un altro utente assegnato a un gruppo di prelievo componendo il numero del gruppo di prelievo.
     
 - **Response Group**: instrada le chiamate in arrivo a gruppi di agenti utilizzando gruppi di risposta o domande e risposte IVR (Interactive Voice Response).
     

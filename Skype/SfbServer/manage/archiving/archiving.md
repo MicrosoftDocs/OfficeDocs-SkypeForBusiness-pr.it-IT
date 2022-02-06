@@ -1,34 +1,29 @@
 ---
 title: Gestire l'archiviazione in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 63fd56cf-6d40-4db5-96fc-32d813930bcf
-description: "Riepilogo: informazioni su come gestire l'archiviazione per Skype for Business Server."
-ms.openlocfilehash: bdb373bf723e586cbc7222cd2559b87f4c72381e
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60856793"
+description: 'Riepilogo: informazioni su come gestire l''archiviazione per Skype for Business Server.'
 ---
+
 # <a name="manage-archiving-in-skype-for-business-server"></a>Gestire l'archiviazione in Skype for Business Server
 
 **Riepilogo:** Informazioni su come gestire l'archiviazione per Skype for Business Server.
   
 Quando si distribuisce l'archiviazione per l'organizzazione, si specifica la configurazione iniziale durante la distribuzione. In alcuni casi, tuttavia, potrebbe essere necessario modificare la modalità di implementazione del supporto di archiviazione per la gestione quotidiana o soddisfare nuovi requisiti per l'organizzazione. Ad esempio, potrebbe essere necessario configurare il supporto dell'archiviazione in modo diverso per un sito specifico, un pool specifico o utenti specifici all'interno dell'organizzazione. Per gli utenti ospitati in Skype for Business Server, è possibile creare e personalizzare le opzioni di configurazione dell'archiviazione e i criteri utente. 
   
-Prima di leggere questo argomento, assicurarsi di avere familiarità con le informazioni in Pianificare l'archiviazione [in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) e Distribuire l'archiviazione [per Skype for Business Server](../../deploy/deploy-archiving/deploy-archiving.md).
+Prima di leggere questo argomento, assicurarsi di avere familiarità con le informazioni contenute in [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) [and Deploy archiving for Skype for Business Server](../../deploy/deploy-archiving/deploy-archiving.md).
   
 > [!NOTE]
-> Se si abilita l'integrazione di Microsoft Exchange per la distribuzione, i criteri di Exchange controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e che le cassette postali vengono In-Place archiviazione. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) and Configure integration with Exchange storage for [Skype for Business Server](../../deploy/deploy-archiving/configure-integration-with-exchange-storage.md). 
+> Se si abilita l'integrazione di Microsoft Exchange per la distribuzione, i criteri di Exchange controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e che le cassette postali vengono abilitate In-Place archiviazione. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) e [Configure integration with Exchange storage for Skype for Business Server](../../deploy/deploy-archiving/configure-integration-with-exchange-storage.md). 
   
 ## <a name="archiving-configuration-options"></a>Opzioni di configurazione dell'archiviazione
 
@@ -60,7 +55,7 @@ Questi criteri possono essere impostati a livello globale, di sito o di utente. 
   
 ## <a name="manage-archiving-by-using-the-control-panel-or-by-using-windows-powershell"></a>Gestire l'archiviazione tramite il Pannello di controllo o tramite Windows PowerShell
 
-È possibile gestire l'archiviazione utilizzando il Pannello di controllo o Windows PowerShell. Nella tabella seguente sono riepilogati i cmdlet disponibili per la gestione dell'archiviazione. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, [vedere Skype for Business Server Management Shell.](../management-shell.md) 
+È possibile gestire l'archiviazione utilizzando il Pannello di controllo o Windows PowerShell. Nella tabella seguente sono riepilogati i cmdlet disponibili per la gestione dell'archiviazione. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, [vedere Skype for Business Server Management Shell](../management-shell.md). 
 
 
 |**Cmdlet**|**Descrizione**|

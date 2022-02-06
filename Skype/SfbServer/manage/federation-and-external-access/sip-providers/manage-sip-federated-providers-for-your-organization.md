@@ -1,27 +1,22 @@
 ---
 title: Gestire i provider federati SIP per l'organizzazione
-ms.reviewer: ''
-ms:assetid: c78d7e9b-c496-40c6-9249-06ced9cb87f3
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ552455(v=OCS.15)
-ms:contentKeyID: 48679566
+ms.reviewer: null
+'ms:assetid': c78d7e9b-c496-40c6-9249-06ced9cb87f3
+'ms:mtpsurl': 'https://technet.microsoft.com/en-us/library/JJ552455(v=OCS.15)'
+'ms:contentKeyID': 48679566
 mtps_version: v=OCS.15
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 description: Informazioni su come configurare il supporto per gli utenti di provider federati SIP.
-ms.openlocfilehash: a5812eafc92e466306d7047d2adb48338bef783d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837578"
 ---
+
 # <a name="manage-sip-federated-providers-for-your-organization-in-skype-for-business-server"></a>Gestire i provider federati SIP per l'organizzazione in Skype for Business Server
 
 Per configurare il supporto per gli utenti di provider federati SIP, è necessario eseguire le operazioni seguenti:
@@ -36,7 +31,7 @@ Per configurare il supporto per gli utenti di provider federati SIP, è necessar
 
 La connettività di messaggistica istantanea pubblica consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider pubblici.
 
-Skype for Business Server sono disponibili configurazioni del provider pubblico per la messaggistica istantanea. Ogni provider pubblico è configurato con il nome di dominio completo del server perimetrale del provider e il livello di verifica predefinito Consenti agli utenti di comunicare solo con gli utenti del proprio elenco contatti che utilizzano **questo provider.**
+Skype for Business Server ha configurazioni del provider pubblico per la messaggistica istantanea. Ogni provider pubblico è configurato con il nome di dominio completo del server perimetrale del provider e il livello di verifica predefinito Consenti agli utenti di comunicare solo con gli utenti del proprio elenco contatti che utilizzano **questo provider**.
 
 Come impostazione predefinita, nessuno dei provider pubblici è abilitato. Prima di abilitare i provider pubblici, è consigliabile completare il contratto di licenza e il provisioning. Puoi abilitare il provider prima di completare le attività di licenza e provisioning. Gli utenti non saranno in grado di comunicare con i contatti di tali provider fino al completamento del lavoro necessario. Per informazioni dettagliate sulle licenze e sul provisioning dei provider pubblici, vedere [Configure policies to control public user acces](../external-access-policies/configure-policies-to-control-public-user-access.md).
 

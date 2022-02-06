@@ -1,24 +1,19 @@
 ---
 title: Rapporto dettagli conferenza in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 1d61cd81-dcfe-40b4-9a41-a73b038bc216
 description: 'Riepilogo: informazioni sul Rapporto dettagli conferenza utilizzato in Skype for Business Server.'
-ms.openlocfilehash: a86124c05e0d35caef3f92c4ec43b561eb54938c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829990"
 ---
+
 # <a name="conference-detail-report-in-skype-for-business-server"></a>Rapporto dettagli conferenza in Skype for Business Server
 
 **Riepilogo:** Informazioni sul Rapporto dettagli conferenza utilizzato in Skype for Business Server.

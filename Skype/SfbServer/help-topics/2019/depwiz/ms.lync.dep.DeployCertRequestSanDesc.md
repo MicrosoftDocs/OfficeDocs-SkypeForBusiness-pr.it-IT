@@ -1,27 +1,22 @@
 ---
 title: Richiesta di certificato (Subject Alternate Names)
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.dep.DeployCertRequestSanDesc
+  - ms.lync.dep.DeployCertRequestSanDesc
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 3485f663-e114-43d7-8fe3-fcc4e5ae71ce
-ROBOTS: NOINDEX, NOFOLLOW
-description: Nella pagina Nome soggetto/Nomi alternativi soggetto viene presentato un riepilogo del nome soggetto e di tutti i nomi alternativi soggetto che verranno inseriti nel certificato. I nomi presentati per il nome soggetto e i nomi alternativi soggetto vengono raccolti dal documento di definizione, così come è stato creato quando è stata definita la distribuzione in Generatore di topologie.
-ms.openlocfilehash: c547a9d5228b80b9179daa27d4ad1b0e9165de76
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60842358"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Nella pagina Nome soggetto/Nomi alternativi soggetto viene presentato un riepilogo del nome soggetto e di tutti i nomi alternativi soggetto che verranno inseriti nel certificato. I nomi presentati per il nome soggetto e i nomi alternativi soggetto vengono raccolti dal documento di definizione, così come è stato creato quando è stata definita la distribuzione in Generatore di topologie.'
 ---
+
 # <a name="certificate-request-subject-alternate-names"></a>Richiesta di certificato (nomi soggetto alternativi)
  
 Nella pagina **Nome soggetto/Nomi alternativi soggetto** viene presentato un riepilogo del nome soggetto e di tutti i nomi alternativi soggetto che verranno inseriti nel certificato. I nomi presentati per il nome soggetto e i nomi alternativi soggetto vengono raccolti dal documento di definizione, così come è stato creato quando è stata definita la distribuzione in Generatore di topologie.

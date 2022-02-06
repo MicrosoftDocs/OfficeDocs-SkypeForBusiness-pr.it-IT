@@ -1,29 +1,24 @@
 ---
 title: Rapporto riepilogativo attività peer-to-peer in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: e829a21e-9dfa-46ba-9b5b-077c175d6586
 description: 'Riepilogo: informazioni sul Rapporto riepilogativo attività peer-to-peer in Skype for Business Server.'
-ms.openlocfilehash: 876d12b74fa34d745a7e94d31ecc19997f337e40
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60831990"
 ---
+
 # <a name="peer-to-peer-activity-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo attività peer-to-peer in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto riepilogativo attività peer-to-peer in Skype for Business Server.
   
-Il Rapporto riepilogativo attività peer-to-peer offre informazioni generali sulle sessioni di comunicazione peer-to-peer. Una sessione peer-to-peer in genere coinvolge solo due utenti e non richiede l'utilizzo dei servizi di Skype for Business Server conferencing. In genere, una conferenza coinvolge più di due utenti e richiede l'utilizzo di servizi di Skype for Business Server conferenza. Le attività relative alle conferenze sono riepilogate nel Rapporto riepilogativo conferenze.
+Il Rapporto riepilogativo attività peer-to-peer offre informazioni generali sulle sessioni di comunicazione peer-to-peer. Una sessione peer-to-peer in genere coinvolge solo due utenti e non richiede l'utilizzo dei servizi di Skype for Business Server conferencing. Al contrario, una conferenza coinvolge in genere più di due utenti e richiede l'utilizzo di Skype for Business Server servizi di conferenza. Le attività relative alle conferenze sono riepilogate nel Rapporto riepilogativo conferenze.
   
 Nel Rapporto riepilogativo attività peer-to-peer è possibile trovare risposte a domande come le seguenti:
   

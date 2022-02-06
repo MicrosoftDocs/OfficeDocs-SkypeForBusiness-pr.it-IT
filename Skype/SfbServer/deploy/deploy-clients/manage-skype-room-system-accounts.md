@@ -1,35 +1,30 @@
 ---
 title: Gestire gli account Skype Room System
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 7b389efc-9685-42e9-9504-be437d20ff57
 ms.collection: M365-voice
 description: Leggere questo argomento per informazioni su come gestire Skype di sistema room.
-ms.openlocfilehash: 2ae91a977a837e2b1b54db8d127551b5f53bb1a8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60864453"
 ---
+
 # <a name="manage-skype-room-system-accounts"></a>Gestire gli account Skype Room System
  
 Leggere questo argomento per informazioni su come gestire Skype di sistema room. 
 
 > [!NOTE]
-> Microsoft Teams Rooms è un prodotto diverso con dipendenze e procedure di distribuzione diverse. Per informazioni su Microsoft Teams Rooms, vedere panoramica Microsoft Teams Rooms [gestione dei dati.](/microsoftteams/rooms/rooms-manage)
+> Microsoft Teams Rooms è un prodotto diverso con dipendenze e procedure di distribuzione diverse. Per informazioni sulle Microsoft Teams Rooms, vedere panoramica Microsoft Teams Rooms [gestione dei dati](/microsoftteams/rooms/rooms-manage).
   
 ## <a name="move-the-skype-room-system-account-between-pools"></a>Spostare l'account Skype room tra pool
 
-Se è necessario spostare l'account di Skype Room System da un pool di Skype for Business Server a un altro (ad esempio, durante gli aggiornamenti), utilizzare il comando seguente per spostare il pool di account di Skype Room System: 
+Se è necessario spostare l'account di Skype Room System da un pool di Skype for Business Server Skype for Business Server a un altro , ad esempio durante gli aggiornamenti, utilizzare il comando seguente per spostare il pool di account di Skype Room System: 
   
 ```powershell
 Move-CsMeetingRoom -Identity LRS01 -Target "LYNCPool15-2.contoso.com"

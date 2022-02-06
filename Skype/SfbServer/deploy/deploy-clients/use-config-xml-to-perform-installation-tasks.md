@@ -1,24 +1,19 @@
 ---
 title: Utilizzare Config.xml per eseguire attività di installazione in Skype for Business client
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.reviewer: PhillipGarding
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 0813184a-ab40-417c-b3a3-c2090766b831
 description: 'Riepilogo: come usare il file Config.xml per specificare istruzioni di installazione aggiuntive.'
-ms.openlocfilehash: e0dcc16a09540965346ea014a8c39be0470e4f09
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858673"
 ---
+
 # <a name="use-configxml-to-perform-installation-tasks-in-skype-for-business-clients"></a>Utilizzare Config.xml per eseguire attività di installazione in Skype for Business client
 
 **Riepilogo:** Come usare il file Config.xml per specificare istruzioni di installazione aggiuntive.
@@ -50,14 +45,14 @@ Gli Config.xml più comunemente utilizzati per l Skype for Business installazion
 
 | **Elemento**              | **Descrizione**                                                                                                                                                                                                                                                                                         |
 |:-------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configurazione  <br/>     | Elemento di primo livello (obbligatorio). Contiene l'attributo Product, ad esempio: Product=Lync (Funziona per Skype for Business client)  <br/>                                                                                                                                                          |
+| Configurazione  <br/>     | Elemento di primo livello (obbligatorio). Contiene l'attributo Product, ad esempio: Product=Lync (funziona per Skype for Business client)  <br/>                                                                                                                                                          |
 | OptionState  <br/>       | Specifica come vengono gestite caratteristiche specifiche del prodotto durante l'installazione. Utilizzare gli attributi seguenti per impedire l'installazione di Servizi di integrazione applicativa, che include componenti condivisi che interferiscono con Outlook: <br/>  Id="LOBiMain" <br/>  State="Absent" <br/>  Children="Force" <br/> |
 | Visualizza  <br/>           | Livello di interfaccia utente visualizzato all'utente dal programma di installazione. Di seguito sono riportati gli attributi tipici: <br/>  CompletionNotice="Yes"                                                                                                                                                                                |
 | Registrazione  <br/>           | Opzioni per il tipo di registrazione eseguita dal programma di installazione. Di seguito sono riportati gli attributi tipici: <br/>  Type ="Off"                                                                                                                                                                                       |
-| Impostazione  <br/>           | Specifica i valori per le Windows installer. Di seguito sono riportati gli attributi tipici: <br/>  Setting Id=" *name*" (il nome della Windows Installer)  <br/>  Value=" *value*" (valore da assegnare alla proprietà)  <br/>                                                             |
+| Impostazione  <br/>           | Specifica i valori per le Windows installer. Di seguito sono riportati gli attributi tipici: <br/>  Setting Id=" *name*" (il nome della proprietà Windows Installer)  <br/>  Value=" *value*" (valore da assegnare alla proprietà)  <br/>                                                             |
 | DistributionPoint  <br/> | Percorso completo del punto di installazione di rete da cui deve essere eseguita l'installazione Include l'attributo Location: <br/>  Location=" *path*"  <br/>                                                                                                                                     |
 
-Nell'esempio seguente viene illustrato un file Config.xml per un'installazione invisibile all'utente tipica del client Skype for Business client. 
+L'esempio seguente mostra un file Config.xml per un'installazione invisibile all'utente tipica del client Skype for Business client. 
 
 ```xml
 <Configuration Product="Lync"> 
@@ -69,7 +64,7 @@ Nell'esempio seguente viene illustrato un file Config.xml per un'installazione i
 </Configuration>
 ```
 
-Informazioni dettagliate sull'utilizzo del file Config.xml per eseguire Office attività di installazione e manutenzione sono disponibili all'indirizzo [https://go.microsoft.com/fwlink/p/?linkid=267514](/previous-versions/office/office-2013-resource-kit/cc179195(v=office.15)) .
+Informazioni dettagliate sull'utilizzo del file Config.xml per eseguire Office attività di installazione e manutenzione sono disponibili all'indirizzo [https://go.microsoft.com/fwlink/p/?linkid=267514](/previous-versions/office/office-2013-resource-kit/cc179195(v=office.15)).
 
 ## <a name="to-customize-the-configxml-file"></a>Per personalizzare il file Config.xml
 
@@ -77,7 +72,7 @@ Informazioni dettagliate sull'utilizzo del file Config.xml per eseguire Office a
 
 2. Individuare le righe che contengono gli elementi che si desidera modificare.
 
-3. Modificare la voce di elemento con le opzioni invisibile all'utente che si desidera utilizzare. Assicurarsi di rimuovere i delimitatori di commento " \<!--" and "--\> ". Utilizzare ad esempio la sintassi seguente:
+3. Modificare la voce di elemento con le opzioni invisibile all'utente che si desidera utilizzare. Assicurarsi di rimuovere i delimitatori di commento, "\<!--" and "--\>". Utilizzare ad esempio la sintassi seguente:
 
    <pre>
    < DistributionPoint Location="\\server\share\Skype15" />

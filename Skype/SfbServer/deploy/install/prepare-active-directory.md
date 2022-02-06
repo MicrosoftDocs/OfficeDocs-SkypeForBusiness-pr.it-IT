@@ -1,34 +1,29 @@
 ---
 title: 'Skype for Business Server: Preparare Active Directory'
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/7/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 985077a4-c8e1-4d5a-9fcf-fef41cf6d61d
-description: "Riepilogo: informazioni su come preparare il dominio di Active Directory per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: fbc5769c38436cdc7199aadf4338fa59a47edf3d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60845859"
+description: 'Riepilogo: informazioni su come preparare il dominio di Active Directory per un''installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all''indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server.'
 ---
+
 # <a name="skype-for-business-server-prepare-active-directory"></a>Skype for Business Server: Preparare Active Directory
  
-**Riepilogo:** Informazioni su come preparare il dominio di Active Directory per un'installazione di Skype for Business Server. Scarica una versione di valutazione gratuita di Skype for Business Server dal [Microsoft Evaluation Center.](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server)
+**Riepilogo:** Informazioni su come preparare il dominio di Active Directory per un'installazione di Skype for Business Server. Scarica una versione di valutazione gratuita di Skype for Business Server dal [Microsoft Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server).
   
-Skype for Business Server funziona a stretto contatto con Active Directory. È necessario preparare il dominio di Active Directory per l'utilizzo con Skype for Business Server. Questo processo viene eseguito nella Distribuzione guidata e viene eseguito una sola volta per il dominio. Questo perché il processo crea gruppi e modifica il dominio ed è necessario farlo una sola volta. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. La preparazione di Active Directory è il passaggio 4 di 8. Per ulteriori informazioni sulla pianificazione di Active Directory, vedere [Environmental requirements for Skype for Business Server](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or Server requirements for Skype for Business Server [2019](../../../SfBServer2019/plan/system-requirements.md).
+Skype for Business Server funziona a stretto contatto con Active Directory. È necessario preparare il dominio di Active Directory per l'utilizzo con Skype for Business Server. Questo processo viene eseguito nella Distribuzione guidata e viene eseguito una sola volta per il dominio. Questo perché il processo crea gruppi e modifica il dominio ed è necessario farlo una sola volta. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. La preparazione di Active Directory è il passaggio 4 di 8. Per ulteriori informazioni sulla pianificazione di Active Directory, vedere [Environmental requirements for Skype for Business Server](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or [Server requirements for Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md).
   
 ![diagramma di panoramica.](../../media/2c52d307-7859-4009-9489-024b2e130bb3.png)
   
@@ -42,7 +37,7 @@ Skype for Business Server è strettamente integrato con Servizi di dominio Activ
 > [!IMPORTANT]
 > La procedura Prepara Active Directory deve essere eseguita una sola volta per ogni dominio della distribuzione. 
   
-Guarda la procedura video per **Preparare Active Directory:**
+Guarda la procedura video per **Preparare Active Directory**:
   
 > [!video https://www.microsoft.com/videoplayer/embed/RE1Ybuk]
   
@@ -53,9 +48,9 @@ Guarda la procedura video per **Preparare Active Directory:**
 2. Aprire Skype for Business Server distribuzione guidata.
     
     > [!TIP]
-    > Se si desidera esaminare i file di registro creati dalla Distribuzione guidata di Skype for Business Server, è possibile trovarli nel computer in cui è stata eseguita la Distribuzione guidata nella directory Utenti dell'utente di Servizi di dominio Active Directory che ha eseguito il passaggio. Ad esempio, se l'utente ha eseguito l'accesso come amministratore di dominio nel dominio, contoso.local, i file di registro si trovano in: C:\Users\Administrator.Contoso\AppData\Local\Temp. 
+    > Se si desidera esaminare i file di registro creati dalla Distribuzione guidata di Skype for Business Server, è possibile trovarli nel computer in cui è stata eseguita la Distribuzione guidata, nella directory Utenti dell'utente di Servizi di dominio Active Directory che ha eseguito il passaggio. Ad esempio, se l'utente ha eseguito l'accesso come amministratore di dominio nel dominio, contoso.local, i file di registro si trovano in: C:\Users\Administrator.Contoso\AppData\Local\Temp. 
   
-3. Fare clic **sul collegamento Prepara Active Directory.**
+3. Fare clic **sul collegamento Prepara Active Directory** .
     
 4. **Passaggio 1: Preparare lo schema**
     
@@ -63,9 +58,9 @@ Guarda la procedura video per **Preparare Active Directory:**
     
     b. Fare **clic su** Esegui nel passaggio 1 per avviare la procedura guidata Prepara schema.
     
-    c. Tenere presente che la procedura deve essere eseguita una sola volta per ogni distribuzione e quindi fare clic su **Avanti.**
+    c. Tenere presente che la procedura deve essere eseguita una sola volta per ogni distribuzione e quindi fare clic su **Avanti**.
     
-    d. Dopo aver preparato lo schema, è possibile visualizzare il registro facendo clic **su Visualizza registro.** 
+    d. Dopo aver preparato lo schema, è possibile visualizzare il registro facendo clic **su Visualizza registro**. 
     
     e. Fare **clic su** Fine per chiudere la procedura guidata Prepara schema e tornare alla procedura Prepara Active Directory.
     
@@ -73,7 +68,7 @@ Guarda la procedura video per **Preparare Active Directory:**
     
     a. Accedere al controller di dominio per il dominio.
     
-    b. Aprire **ADSI Edit** dal menu a discesa **Strumenti** in **Server Manager.**
+    b. Aprire **ADSI Edit** dal menu **a discesa Strumenti** in **Server Manager**.
     
     c. Scegliere **Connetti a** dal menu **Azione**.
     
@@ -87,17 +82,17 @@ Guarda la procedura video per **Preparare Active Directory:**
     
     b. Fare **clic su** Esegui nel passaggio 3 per avviare la procedura guidata Prepara foresta corrente.
     
-    c. Tenere presente che la procedura deve essere eseguita una sola volta per ogni distribuzione e quindi fare clic su **Avanti.**
+    c. Tenere presente che la procedura deve essere eseguita una sola volta per ogni distribuzione e quindi fare clic su **Avanti**.
     
-    d. Specificare il dominio in cui verranno creati i gruppi universali. Se il server fa parte del dominio, è possibile scegliere **Dominio locale** e fare clic su **Avanti.**
+    d. Specificare il dominio in cui verranno creati i gruppi universali. Se il server fa parte del dominio, è possibile scegliere **Dominio locale** e fare clic su **Avanti**.
     
-    e. Dopo aver preparato la foresta, è possibile visualizzare il registro facendo clic **su Visualizza registro.** 
+    e. Dopo aver preparato la foresta, è possibile visualizzare il registro facendo clic **su Visualizza registro**. 
     
     f. Fare **clic su** Fine per chiudere la procedura guidata Prepara foresta corrente e tornare alla procedura Prepara Active Directory.
     
-    g. Fare **Skype for Business Server Management Shell** dalla pagina **App** per avviare PowerShell.
+    g. Fare **Skype for Business Server Management Shell** dalla **pagina App** per avviare PowerShell.
     
-    h. Digitare il comando Get-CsAdForest e premere **INVIO.**
+    h. Digitare il comando Get-CsAdForest e premere **INVIO**.
     
     i. Se il risultato è **LC_FORESTSETTINGS_STATE_READY**, la foresta è stata preparata correttamente, come illustrato nella figura.
     
@@ -119,9 +114,9 @@ Guarda la procedura video per **Preparare Active Directory:**
     
     b. Fare **clic su** Esegui nel passaggio 5 per avviare la procedura guidata Prepara dominio corrente.
     
-    c. Tenere presente che la procedura deve essere eseguita una sola volta per ogni dominio della distribuzione e quindi fare clic su **Avanti.**
+    c. Tenere presente che la procedura deve essere eseguita una sola volta per ogni dominio della distribuzione e quindi fare clic su **Avanti**.
     
-    d. Dopo aver preparato il dominio, è possibile visualizzare il registro facendo clic **su Visualizza registro.** 
+    d. Dopo aver preparato il dominio, è possibile visualizzare il registro facendo clic **su Visualizza registro**. 
     
     e. Fare **clic su** Fine per chiudere la procedura guidata Prepara dominio corrente e tornare alla procedura Prepara Active Directory.
     
@@ -129,7 +124,7 @@ Guarda la procedura video per **Preparare Active Directory:**
     
 9. **Passaggio 6: Verificare la replica nel dominio**
     
-    a. Fare clic **Skype for Business Server Management Shell** nella pagina **App** per avviare PowerShell.
+    a. Fare clic **Skype for Business Server Management Shell** dalla **pagina App** per avviare PowerShell.
     
     b. Utilizzare il comando Get-CsAdDomain per verificare la replica all'interno del dominio.
     
@@ -155,7 +150,7 @@ Guarda la procedura video per **Preparare Active Directory:**
     
     a. Eseguire l'accesso come membri del gruppo Domain Admins o del gruppo RTCUniversalServerAdmins.
     
-    b. Aprire Utenti e **computer di Active Directory,** espandere il dominio, fare clic sul contenitore **Utenti,** fare clic con il pulsante destro del mouse su CSAdministrator e scegliere **Proprietà**.
+    b. Aprire **Utenti e computer di Active Directory**, espandere il dominio, fare clic sul contenitore **Utenti** , fare clic con il pulsante destro del mouse su CSAdministrator e scegliere **Proprietà**.
     
     c. Nelle **** proprietà di CSAdministrators fare clic sulla scheda **Membri**.
     
@@ -164,10 +159,10 @@ Guarda la procedura video per **Preparare Active Directory:**
     e. Nella **scheda Membri** verificare che gli utenti o i gruppi selezionati siano presenti. Fare clic su **OK**.
     
     > [!CAUTION]
-    > Il Skype for Business Server pannello di controllo è uno strumento di controllo di accesso basato sui ruoli. L'appartenenza al gruppo CsAdministrator consente a un utente che utilizza il Pannello di controllo di Skype for Business Server controllo completo per tutte le funzioni di configurazione disponibili. Vi sono inoltre altri ruoli per funzioni specifiche. Per informazioni dettagliate sui ruoli disponibili, vedere [Environmental requirements for Skype for Business Server](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or Server requirements for Skype for Business Server [2019](../../../SfBServer2019/plan/system-requirements.md). Si noti che non è necessario che gli utenti siano abilitati Skype for Business Server per essere resi membri dei gruppi di gestione. 
+    > Il Skype for Business Server pannello di controllo è uno strumento di controllo di accesso basato sui ruoli. L'appartenenza al gruppo CsAdministrator consente a un utente che utilizza il Pannello di controllo di Skype for Business Server controllo completo per tutte le funzioni di configurazione disponibili. Vi sono inoltre altri ruoli per funzioni specifiche. Per informazioni dettagliate sui ruoli disponibili, vedere [Environmental requirements for Skype for Business Server](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or [Server requirements for Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md). Si noti che non è necessario che gli utenti siano abilitati Skype for Business Server per essere membri dei gruppi di gestione. 
   
     > [!CAUTION]
-    > Per mantenere l'integrità del controllo di accesso basato sui ruoli e della sicurezza, aggiungere utenti ai gruppi che definiscono il ruolo che l'utente svolge nella gestione della distribuzione Skype for Business Server ruoli. 
+    > Per mantenere l'integrità del controllo di accesso basato sui ruoli e della sicurezza, aggiungere utenti ai gruppi che definiscono il ruolo che l'utente svolge nella gestione della Skype for Business Server distribuzione. 
   
 11. Disconnettersi e quindi accedere di nuovo a Windows in modo che il token di sicurezza sia aggiornato con il nuovo gruppo di sicurezza Skype for Business Server e quindi riaprire la Distribuzione guidata.
     

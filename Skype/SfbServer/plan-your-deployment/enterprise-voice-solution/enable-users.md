@@ -1,28 +1,23 @@
 ---
 title: Abilitare gli utenti per E9-1-1 in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 3cc64f5b-492e-4c47-9713-3c376f2aad02
-description: Decisioni necessarie per i criteri percorso per una distribuzione di E9-1-1 in Skype for Business Server VoIP aziendale, inclusi gli utenti da abilitare e come supportare gli utenti mobili.
-ms.openlocfilehash: 631c74f8ee4d91f1a70f1d2edbfa129602913a6f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60844139"
+description: 'Decisioni necessarie per i criteri percorso per una distribuzione di E9-1-1 in Skype for Business Server VoIP aziendale, inclusi gli utenti da abilitare e come supportare gli utenti mobili.'
 ---
+
 # <a name="enable-users-for-e9-1-1-in-skype-for-business-server"></a>Abilitare gli utenti per E9-1-1 in Skype for Business Server
  
 Decisioni necessarie per i criteri percorso per una distribuzione di E9-1-1 in Skype for Business Server VoIP aziendale, inclusi gli utenti da abilitare e come supportare gli utenti mobili.
@@ -41,6 +36,6 @@ Skype for Business Server può assegnare un criterio percorso ai client in base 
     
  **Valutare se abilitare per E9-1-1 i client che effettuano il roaming all'esterno della rete o si connettono da una subnet non definita**
   
-> Se agli utenti viene assegnato un criterio percorso globale, sito o per utente, può essere necessario immettere manualmente una posizione nel client se il client non si trova all'interno di una subnet definita o se il servizio informazioni percorso non ha trovato alcuna posizione. Per informazioni dettagliate, [vedere Define the user experience for manually acquiring a location in Skype for Business Server](manually-acquiring-a-location.md).
+> Se agli utenti viene assegnato un criterio percorso globale, sito o per utente, può essere necessario immettere manualmente una posizione nel client se il client non si trova all'interno di una subnet definita o se il servizio informazioni percorso non ha trovato alcuna posizione. Per informazioni dettagliate, vedere [Define the user experience for manually acquiring a location in Skype for Business Server](manually-acquiring-a-location.md).
     
 

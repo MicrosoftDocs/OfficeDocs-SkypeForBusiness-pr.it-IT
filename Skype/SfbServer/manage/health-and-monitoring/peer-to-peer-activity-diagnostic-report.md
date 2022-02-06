@@ -1,29 +1,24 @@
 ---
 title: Rapporto di diagnostica attività peer-to-peer in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 025e8ab4-2e64-4a6b-8f52-caf756a5cac3
 description: 'Riepilogo: informazioni sul Rapporto di diagnostica attività peer-to-peer in Skype for Business Server.'
-ms.openlocfilehash: c0c568a75cddb8ea9f8165a196ee8cef1e03eaab
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858233"
 ---
+
 # <a name="peer-to-peer-activity-diagnostic-report-in-skype-for-business-server"></a>Rapporto di diagnostica attività peer-to-peer in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto di diagnostica attività peer-to-peer in Skype for Business Server.
   
-Il Rapporto di diagnostica attività peer-to-peer fornisce informazioni sull'esito positivo o negativo delle sessioni di comunicazione peer-to-peer. Si noti Skype for Business Server distingue tra diversi tipi di errore:
+Il Rapporto di diagnostica attività peer-to-peer fornisce informazioni sull'esito positivo o negativo delle sessioni di comunicazione peer-to-peer. Tenere presente Skype for Business Server distingue tra diversi tipi di errore:
   
 - **Errore previsto**. Un errore previsto è in genere un errore solo nel senso più tecnico del termine. Si supponga ad esempio di chiamare un utente, che però non è in ufficio e dunque non può rispondere al telefono. Poiché la chiamata non ha ricevuto risposta, tecnicamente viene considerata un errore. D'altra parte, si è verificato un errore previsto: Skype for Business Server non prevede che tu risponda al telefono se non sei disponibile a rispondere al telefono. Analogamente, si verificherà un errore previsto se si tenta di inviare un messaggio istantaneo a un utente offline, oppure connesso a un telefono che non supporta la messaggistica istantanea.
     

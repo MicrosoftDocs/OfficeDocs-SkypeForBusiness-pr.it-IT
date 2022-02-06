@@ -1,34 +1,29 @@
 ---
 title: Tabella PurgeSettings
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 9ff2c8fc-4ae8-4f22-96a8-1f4d5eecbf2d
-description: "La tabella PurgeSettings contiene informazioni che specificano se e quando i record dettagli chiamata non aggiornati verranno eliminati automaticamente dal database di registrazione dettagli chiamata. Si noti che le informazioni relative all'eliminazione possono essere ottenute anche dall'Skype for Business Server 2015 eseguendo il comando seguente:"
-ms.openlocfilehash: 119c357ed9b0f3da456d34899c8fb9bd7007a375
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60859823"
+description: 'La tabella PurgeSettings contiene informazioni che specificano se e quando i record dettagli chiamata non aggiornati verranno eliminati automaticamente dal database di registrazione dettagli chiamata. Tenere presente che le informazioni relative all''eliminazione possono essere ottenute anche dall''Skype for Business Server 2015 eseguendo il comando seguente:'
 ---
+
 # <a name="purgesettings-table"></a>Tabella PurgeSettings
  
-La tabella PurgeSettings contiene informazioni che specificano se e quando i record dettagli chiamata non aggiornati verranno eliminati automaticamente dal database di registrazione dettagli chiamata. Si noti che le informazioni relative all'eliminazione possono essere ottenute anche dall'Skype for Business Server 2015 eseguendo il comando seguente:
+La tabella PurgeSettings contiene informazioni che specificano se e quando i record dettagli chiamata non aggiornati verranno eliminati automaticamente dal database di registrazione dettagli chiamata. Tenere presente che le informazioni relative all'eliminazione possono essere ottenute anche dall'Skype for Business Server 2015 eseguendo il comando seguente:
   
 ```PowerShell
 Get-CsCdrConfiguration
 ```
 
-Gli amministratori devono considerare la tabella PurgeSettings di sola lettura: le modifiche alle impostazioni di eliminazione dei dettagli delle chiamate devono essere apportate solo utilizzando i cmdlet [New-CsCdrConfiguration](/powershell/module/skype/new-cscdrconfiguration?view=skype-ps) o [Set-CsCdrConfiguration.](/powershell/module/skype/set-cscdrconfiguration?view=skype-ps)
+Gli amministratori devono considerare la tabella PurgeSettings di sola lettura: le modifiche alle impostazioni di eliminazione dei dettagli delle chiamate devono essere apportate solo utilizzando i cmdlet [New-CsCdrConfiguration](/powershell/module/skype/new-cscdrconfiguration?view=skype-ps) o [Set-CsCdrConfiguration](/powershell/module/skype/set-cscdrconfiguration?view=skype-ps) .
   
 Questa tabella è stata introdotta in Microsoft Lync Server 2013.
   
