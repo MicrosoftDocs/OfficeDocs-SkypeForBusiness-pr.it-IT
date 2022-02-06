@@ -1,28 +1,23 @@
 ---
 title: Prerequisiti di sicurezza e configurazione per VoIP aziendale in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 15354abe-733e-466b-bcd4-a6cfbf58caf8
 description: 'Riepilogo: informazioni sui prerequisiti di sicurezza e configurazione per VoIP aziendale in Skype for Business Server.'
-ms.openlocfilehash: 01f7be3bfe3e43d53d574632f228681be5af4ba4
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60839078"
 ---
+
 # <a name="security-and-configuration-prerequisites-for-enterprise-voice-in-skype-for-business-server"></a>Prerequisiti di sicurezza e configurazione per VoIP aziendale in Skype for Business Server
  
 **Riepilogo:** Informazioni sui prerequisiti di sicurezza e configurazione per VoIP aziendale in Skype for Business Server.
@@ -46,22 +41,22 @@ Prima della distribuzione, verificare quanto segue:
 - La distribuzione e la configurazione dell'infrastruttura MKI (Managed Key Infrastructure) vengono eseguite utilizzando un'infrastruttura di autorità di certificazione (CA) Microsoft o di terze parti.
     
     > [!NOTE]
-    > Per informazioni dettagliate sui requisiti dei certificati in Skype for Business Server, vedere [Environmental requirements for Skype for Business Server 2015](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or Server requirements for Skype for Business Server [2019](../../../SfBServer2019/plan/system-requirements.md). 
+    > Per informazioni dettagliate sui requisiti dei certificati in Skype for Business Server, vedere [Environmental requirements for Skype for Business Server 2015](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or [Server requirements for Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md). 
   
 ## <a name="user-configuration"></a>Configurazione utente
 
-Se il Mediation Server è stato collocato con ogni pool Front End o server edizione Standard durante la distribuzione front-end, le impostazioni utente necessarie per VoIP aziendale sono state configurate automaticamente durante l'installazione dei file per tali ruoli del server.
+Se il Mediation Server è stato collocato con ogni pool Front End o edizione Standard server durante la distribuzione front-end, le impostazioni utente necessarie per VoIP aziendale sono state configurate automaticamente durante l'installazione dei file per tali ruoli del server.
   
 Se si sta procedendo ora alla distribuzione del carico di lavoro di VoIP aziendale, prima di iniziare il processo di distribuzione designare un numero di telefono primario per ogni utente che si intende abilitare per VoIP aziendale. In qualità di amministratori, è necessario verificare che questo numero sia univoco. Prima dell'implementazione, tutti i numeri di telefono principali devono essere normalizzati (formattati correttamente) e copiati nella proprietà **URI** linea di ogni utente usando Skype for Business Server Pannello di controllo.
   
 > [!NOTE]
-> Per esempi di numeri di telefono principali necessari per VoIP aziendale distribuzione, vedere [Regole di normalizzazione di esempio.](../../plan-your-deployment/enterprise-voice-solution/outbound-voice-routing.md#BKMK_SampleNormalizationRules) 
+> Per esempi di numeri di telefono principali necessari per VoIP aziendale distribuzione, vedere [Regole di normalizzazione di esempio](../../plan-your-deployment/enterprise-voice-solution/outbound-voice-routing.md#BKMK_SampleNormalizationRules). 
   
 ## <a name="next-steps-install-files-or-configure-pstn-connectivity"></a>Passaggi successivi: Installare file o configurare la connettività PSTN
 
 Dopo aver verificato i prerequisiti software e ambientali per VoIP aziendale è possibile:
   
-- Installare il Mediation Server, come descritto in Deploy [a Mediation Server in Topology Builder in Skype for Business Server](deploy-a-mediation-server.md), ma solo se si desidera distribuire un Mediation Server autonomo o un pool perché i Mediation Server vengono installati come parte del processo di distribuzione del pool Front End o del server edizione Standard quando collocati.
+- Installare il Mediation Server, come descritto in Deploy [a Mediation Server in Topology Builder in Skype for Business Server](deploy-a-mediation-server.md), ma solo se si desidera distribuire un Mediation Server autonomo o un pool perché i Mediation Server vengono installati come parte del processo di distribuzione del server edizione Standard o del pool Front End quando sono collocati.
     
 - In caso contrario, iniziare a configurare le impostazioni per instradare le chiamate VoIP aziendale utenti, come descritto [in Configure trunks in Skype for Business Server](configure-trunks.md).
     

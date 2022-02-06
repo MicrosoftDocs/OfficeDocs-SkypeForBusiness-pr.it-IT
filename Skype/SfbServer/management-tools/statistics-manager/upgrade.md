@@ -1,32 +1,27 @@
 ---
 title: Aggiornare il gestore delle statistiche per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 71f5d0a0-ca81-4ac1-b590-8f854504f21f
 description: 'Riepilogo: leggere questo argomento per informazioni su come aggiornare Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: 297da8efc1259c1128fd0d60584e1db761465217
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60857333"
 ---
+
 # <a name="upgrade-statistics-manager-for-skype-for-business-server"></a>Aggiornare il gestore delle statistiche per Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come aggiornare Gestione statistiche per Skype for Business Server.
   
-In questo argomento viene descritto come aggiornare un'installazione esistente di Gestione statistiche per Skype for Business Server, un potente strumento che consente di visualizzare Skype for Business Server dati sull'integrità e sulle prestazioni in tempo reale. È possibile eseguire il polling dei dati sulle prestazioni in centinaia di server ogni pochi secondi e visualizzare immediatamente i risultati nel sito Web Gestione statistiche. 
+In questo argomento viene descritto come aggiornare un'installazione esistente di Gestione statistiche per Skype for Business Server, uno strumento potente che consente di visualizzare Skype for Business Server dati sull'integrità e sulle prestazioni in tempo reale. È possibile eseguire il polling dei dati sulle prestazioni in centinaia di server ogni pochi secondi e visualizzare immediatamente i risultati nel sito Web Gestione statistiche. 
   
-Per ulteriori informazioni su Gestione statistiche e sulle nuove funzionalità della versione 2.0, vedere [Plan for Statistics Manager for Skype for Business Server](plan.md) e Deploy Statistics Manager for [Skype for Business Server](deploy.md).
+Per ulteriori informazioni su Gestione statistiche e sulle nuove funzionalità della versione 2.0, vedere [Plan for Statistics Manager for Skype for Business Server](plan.md) e [Deploy Statistics Manager for Skype for Business Server](deploy.md).
   
 Esistono due metodi per l'aggiornamento:
   
@@ -48,7 +43,7 @@ Prima di eseguire l'aggiornamento, assicurarsi di disporre delle informazioni se
 
 Lo script raccoglierà le informazioni sul certificato corrente e la password del listener, disinstalla la versione precedente del prodotto e quindi installerà la nuova versione del prodotto. L'istanza di Redis installata nel server non verrà toccata, quindi tutti i dati archiviati nella cache verranno conservati tramite il processo di aggiornamento.
   
-1. Inserire i file MSI per la nuova versione dell'agente, del listener e del sito Web insieme allo script Update-StatsMan.ps1 in una singola cartella nel computer listener.
+1. Inserire i file MSI per la nuova versione dell'agente, del listener e del sito Web insieme allo script di Update-StatsMan.ps1 in una singola cartella nel computer listener.
     
 2. Aprire una finestra di PowerShell amministrativa. Aggiornare il componente Listener:
     

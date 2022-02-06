@@ -1,31 +1,26 @@
 ---
 title: Abilitazione di QoS per dispositivi non basati su Windows
-ms.reviewer: ''
-ms:assetid: 26f793df-aef8-4028-9e3b-6c2c37ea61b9
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/JJ204750(v=OCS.15)
-ms:contentKeyID: 48183661
+ms.reviewer: null
+'ms:assetid': 26f793df-aef8-4028-9e3b-6c2c37ea61b9
+'ms:mtpsurl': 'https://technet.microsoft.com/en-us/library/JJ204750(v=OCS.15)'
+'ms:contentKeyID': 48183661
 mtps_version: v=OCS.15
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 description: Informazioni su come abilitare QoS per i dispositivi usati nell'organizzazione che usano un sistema operativo diverso da Windows.
-ms.openlocfilehash: 613f7abfa3e88fb831729498baa8f7f698aa9d0e
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60832000"
 ---
-# <a name="enabling-qos-in-skype-for-business-server-for-devices-that-are-not-based-on-windows"></a>Abilitazione di QoS in Skype for Business Server per i dispositivi non basati su Windows
+
+# <a name="enabling-qos-in-skype-for-business-server-for-devices-that-are-not-based-on-windows"></a>Abilitazione di QoS Skype for Business Server per i dispositivi non basati su Windows
 
 
-Quando si installa Skype for Business Server, qualità del servizio (QoS) non verrà abilitata per i dispositivi utilizzati nell'organizzazione che utilizzano un sistema operativo diverso da Windows. È possibile verificarlo eseguendo il comando seguente dall'Skype for Business ServerManagement Shell:
+Quando si installa Skype for Business Server, la qualità del servizio (QoS) non verrà abilitata per i dispositivi utilizzati nell'organizzazione che utilizzano un sistema operativo diverso da Windows. È possibile verificarlo eseguendo il comando seguente dall'Skype for Business ServerManagement Shell:
 
 **Get-CsMediaConfiguration**
 
@@ -68,4 +63,4 @@ Questo consente di implementare QoS su alcune parti della rete, ad esempio nel s
 QoS può essere abilitato e disabilitato solo tramite Windows PowerShell. Queste opzioni non sono disponibili nel Skype for Business Server pannello di controllo.
 
 > [!NOTE]
-> Skype for Business client per iOS versione 6.17 e successive ora supportano QoS.  Questa funzionalità QoS è applicabile solo ai client Skype for Business e ai dispositivi telefonici IP registrati direttamente in un server Skype for Business o lync pool interno su reti gestite. QoS non è applicabile per il traffico instradato su Internet.
+> Skype for Business client per iOS versione 6.17 e successive ora supportano QoS.  Questa funzionalità QoS è applicabile solo ai client Skype for Business e ai dispositivi telefonici IP registrati direttamente in un server Skype for Business o lync pool server interno su reti gestite. QoS non è applicabile per il traffico instradato su Internet.

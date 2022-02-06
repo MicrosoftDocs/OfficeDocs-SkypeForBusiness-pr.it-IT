@@ -1,28 +1,23 @@
 ---
 title: Esempio Raccolta di requisiti per il controllo di ammissione di chiamata in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 3363ac53-b7c4-4a59-aea1-b2f3ee016ae1
-description: Viene fornito un esempio dettagliato di pianificazione del controllo di ammissione di chiamata in Skype for Business Server VoIP aziendale, inclusa la raccolta di informazioni sui siti, le aree geografiche e la larghezza di banda della rete.
-ms.openlocfilehash: 0af3072cfd0e248d2811c0aee78f7351b9513249
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850749"
+description: 'Viene fornito un esempio dettagliato di pianificazione del controllo di ammissione di chiamata in Skype for Business Server VoIP aziendale, inclusa la raccolta di informazioni sui siti, le aree geografiche e la larghezza di banda della rete.'
 ---
+
 # <a name="example-gathering-requirements-for-call-admission-control-in-skype-for-business-server"></a>Esempio: Raccolta dei requisiti per il controllo di ammissione di chiamata in Skype for Business Server
 
 Viene fornito un esempio dettagliato di pianificazione del controllo di ammissione di chiamata in Skype for Business Server VoIP aziendale, inclusa la raccolta di informazioni sui siti, le aree geografiche e la larghezza di banda della rete.
@@ -35,11 +30,11 @@ In questo esempio viene illustrato come pianificare e implementare il servizio C
 
 3. Identificare e definire i siti di rete connessi a ogni area di rete.
 
-4. Per ogni sito di rete la cui connessione alla rete WAN è vincolata dalla larghezza di banda, descrivere la capacità della larghezza di banda della connessione WAN e i limiti di larghezza di banda impostati dall'amministratore di rete per il traffico multimediale Skype for Business Server, se applicabile. Non è necessario includere siti con connessione alla WAN non soggetta a vincoli di larghezza di banda.
+4. Per ogni sito di rete la cui connessione alla rete WAN è vincolata alla larghezza di banda, descrivere la capacità della larghezza di banda della connessione WAN e i limiti di larghezza di banda impostati dall'amministratore di rete per il traffico multimediale Skype for Business Server, se applicabile. Non è necessario includere siti con connessione alla WAN non soggetta a vincoli di larghezza di banda.
 
 5. Associare ogni subnet della rete a un sito di rete.
 
-6. Eseguire il mapping dei collegamenti tra le aree di rete. Per ogni collegamento, descrivere la capacità della larghezza di banda e gli eventuali limiti che l'amministratore di rete ha Skype for Business Server traffico multimediale.
+6. Eseguire il mapping dei collegamenti tra le aree di rete. Per ogni collegamento, descrivere la capacità della larghezza di banda e gli eventuali limiti che l'amministratore di rete ha posto Skype for Business Server traffico multimediale.
 
 7. Definire una route tra ogni coppia di aree di rete.
 
@@ -64,7 +59,7 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
 
     Nella topologia di rete di esempio precedente sono presenti tre aree di rete, ognuna con Skype for Business Server sito centrale che gestisce il controllo di ammissione di chiamata. Il sito centrale appropriato per un'area di rete viene scelto in base alla vicinanza geografica. Poiché il traffico multimediale sarà più intenso all'interno delle aree di rete, la proprietà per vicinanza geografica rende il traffico autonomo e ne garantisce il funzionamento anche in caso di non disponibilità degli altri siti centrali. 
 
-    In questo esempio, una distribuzione Skype for Business denominata Chicago è il sito centrale per l'area Nord America.
+    In questo esempio, una distribuzione Skype for Business denominata Chicago è il sito centrale per l'area nordamericana.
 
     Tutti Skype for Business utenti del Nord America sono ospitati in server nella distribuzione di Chicago. Nella tabella seguente sono elencati i siti centrali per tutte e tre le aree di rete.
 
@@ -150,7 +145,7 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
 
     **Livello**: 2
 
-    **Descrizione:** le subnet per i seguenti indirizzi IP: non sono configurate o le subnet non sono \<List of IP Addresses\> associate a un sito di rete. 
+    **Descrizione:** le subnet per i seguenti indirizzi IP: \<List of IP Addresses\> non sono configurate o le subnet non sono associate a un sito di rete. 
 
     **Causa**: le subnet per gli indirizzi IP corrispondenti non sono presenti nelle impostazioni della configurazione di rete oppure non sono associate a un sito di rete. 
 
@@ -175,7 +170,7 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
    | Detroit  <br/>     | Nord America  <br/> | (nessun limite)  <br/> | (nessun limite)  <br/> | (nessun limite)  <br/>       | (nessun limite)  <br/> | (nessun limite)  <br/>       | 172.29.78.0/24 10.71.109.0/24, 157.57.209.0/23  <br/>                  |
 
 
-7. In Skype for Business Server controllo di ammissione di chiamata, le connessioni tra aree di rete sono denominate collegamenti di area. Come per i siti di rete, determinare per ogni collegamento area gli aspetti seguenti:
+7. In Skype for Business Server di ammissione di chiamata, le connessioni tra aree di rete sono denominate collegamenti di area. Come per i siti di rete, determinare per ogni collegamento area gli aspetti seguenti:
 
    - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio causerà il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
 
@@ -238,4 +233,4 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
 Dopo aver raccolto le informazioni necessarie, è possibile eseguire la distribuzione del controllo di ammissione di chiamata utilizzando Skype for Business Server Management Shell o Skype for Business Server Pannello di controllo.
 
 > [!NOTE]
-> Sebbene sia possibile eseguire la maggior parte delle attività di configurazione di rete utilizzando il Pannello di controllo di Skype for Business Server, per creare subnet e collegamenti tra siti, è necessario utilizzare Skype for Business Server Management Shell. Per informazioni dettagliate, [vedere New-CsNetworkSubnet](/powershell/module/skype/new-csnetworksubnet?view=skype-ps) e [New-CsNetworkInterSitePolicy.](/powershell/module/skype/new-csnetworkintersitepolicy?view=skype-ps)
+> Sebbene sia possibile eseguire la maggior parte delle attività di configurazione di rete utilizzando il Pannello di controllo di Skype for Business Server, per creare subnet e collegamenti tra siti, è necessario utilizzare Skype for Business Server Management Shell. Per informazioni dettagliate, [vedere New-CsNetworkSubnet](/powershell/module/skype/new-csnetworksubnet?view=skype-ps) e [New-CsNetworkInterSitePolicy](/powershell/module/skype/new-csnetworkintersitepolicy?view=skype-ps).

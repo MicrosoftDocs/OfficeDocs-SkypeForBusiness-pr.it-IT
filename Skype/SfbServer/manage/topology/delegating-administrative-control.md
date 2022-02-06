@@ -1,26 +1,21 @@
 ---
 title: Delegare il controllo amministrativo Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 description: ''
-ms.openlocfilehash: 54348e05a53f5c8fcc7241dbc7ed86b1be4e27a3
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861283"
 ---
+
 # <a name="delegate-administrative-control-of-skype-for-business-server"></a>Delegare il controllo amministrativo Skype for Business Server 
 
-In Skype for Business Server, le attività amministrative vengono delegate agli utenti tramite la funzionalità RBAC (Role-Based Access Control). Quando si installa Skype for Business Server, vengono creati automaticamente diversi ruoli RBAC. Questi ruoli corrispondono ai gruppi di sicurezza universali in Servizi di dominio Active Directory. Ad esempio, il ruolo RBAC CsHelpDesk corrisponde al gruppo CsHelpDesk presente nel contenitore Utenti in Servizi di dominio Active Directory. Inoltre, ogni ruolo RBAC è associato a un set di Skype for Business ServerWindows PowerShell cmdlet.   Questi cmdlet rappresentano le attività che possono essere eseguite dagli utenti a cui è stato assegnato il ruolo RBAC specificato. Ad esempio, al ruolo CsHelpDesk sono stati assegnati i cmdlet Lock-CsClientPin e UnlockCsClientPin. Ciò significa che gli utenti a cui è stato assegnato il ruolo CsHelpDesk possono bloccare e sbloccare i numeri PIN degli utenti. Tuttavia, al ruolo CsHelpDesk non è stato assegnato il cmdlet New-CsVoicePolicy. Ciò significa che gli utenti a cui è stato assegnato il ruolo CsHelpDesk non possono creare nuovi criteri vocali.
+In Skype for Business Server, le attività amministrative vengono delegate agli utenti tramite la funzionalità RBAC (Role-Based Access Control). Quando si installa Skype for Business Server, vengono creati automaticamente diversi ruoli RBAC. Questi ruoli corrispondono ai gruppi di sicurezza universali in Servizi di dominio Active Directory. Ad esempio, il ruolo RBAC CsHelpDesk corrisponde al gruppo CsHelpDesk presente nel contenitore Utenti in Servizi di dominio Active Directory. Inoltre, ogni ruolo RBAC è associato a un set di Skype for Business ServerWindows PowerShell cmdlet.   Questi cmdlet rappresentano le attività che possono essere eseguite dagli utenti a cui è stato assegnato il ruolo RBAC specificato. Ad esempio, al ruolo CsHelpDesk sono stati assegnati i cmdlet Lock-CsClientPin e UnlockCsClientPin. Ciò significa che gli utenti a cui è stato assegnato il ruolo CsHelpDesk possono bloccare e sbloccare i numeri PIN degli utenti. Tuttavia, al ruolo CsHelpDesk non è stato assegnato New-CsVoicePolicy cmdlet. Ciò significa che gli utenti a cui è stato assegnato il ruolo CsHelpDesk non possono creare nuovi criteri vocali.
 
 ## <a name="viewing-information-about-rbac-roles"></a>Visualizzazione delle informazioni sui ruoli RBAC
 
@@ -43,7 +38,7 @@ Per assegnare un ruolo RBAC a un utente, è necessario aggiungerlo al gruppo di 
 3. In Utenti e computer di Active Directory espandere il nome del dominio e fare clic sul contenitore degli **** utenti.
 4. Fare clic con il pulsante destro del mouse sul gruppo di sicurezza **CsLocationAdministrator** e scegliere **Proprietà**.
 5. Nella finestra di dialogo **Proprietà** fare clic su **Aggiungi** nella scheda **Membri**.
-6. Nella finestra di dialogo Seleziona **utenti, computer,** contatti o gruppi digitare il nome utente o il nome visualizzato dell'utente da aggiungere al gruppo, ad esempio Davide Garghente, nella casella Immettere i nomi degli oggetti da selezionare e quindi fare clic su  **OK.**
+6. Nella finestra di dialogo Seleziona utenti **, computer,** contatti o gruppi digitare il nome utente o il nome visualizzato dell'utente da aggiungere al gruppo, ad esempio Davide Garghente, nella casella Immettere i  nomi degli oggetti da selezionare e quindi fare clic su **OK**.
 7. Nella finestra di dialogo **Proprietà** fare clic su **OK**.
 
 Per verificare che il ruolo RBAC sia stato assegnato, utilizzare il cmdlet Get-CsAdminRoleAssignment passandogli il nome di account SAM (SamAccountName), ovvero il nome di accesso di Active Directory, dell'utente. Ad esempio, eseguire questo comando da Skype for Business Server Management Shell:

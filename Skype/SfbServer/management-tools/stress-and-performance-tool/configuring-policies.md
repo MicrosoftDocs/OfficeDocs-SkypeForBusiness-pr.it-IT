@@ -1,26 +1,21 @@
 ---
 title: Configurazione dei criteri per lo Skype for Business Server 2015 Stress and Performance Tool
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 ms.date: 11/11/2015
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 7e1435e2-d073-4265-8067-ebcb5bf28835
 description: Configurazione dei criteri per Skype for Business Server 2015 Stress and Performance Tool.
-ms.openlocfilehash: 3bf593402340386e21a2cc339b6eb971c7bbd39f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60857323"
 ---
+
 # <a name="configuring-policies-for-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Configurazione dei criteri per lo Skype for Business Server 2015 Stress and Performance Tool
  
 Configurazione dei criteri per Skype for Business Server 2015 Stress and Performance Tool.
@@ -50,12 +45,12 @@ Esistono diversi criteri e altre aree che è possibile configurare in Skype for 
 ## <a name="archiving-policy"></a>Criteri di archiviazione
 <a name="ArchivingPolicy"> </a>
 
-Se si dispone di un server di archiviazione distribuito nella topologia Skype for Business Server, è possibile esaminare lo script ArchivingPolicy.ps1. Per ulteriore assistenza, consultare i cmdlet di archiviazione e Web Conferencing.
+Se nella topologia di Skype for Business Server è distribuito un server di archiviazione, è possibile esaminare lo script ArchivingPolicy.ps1 server. Per ulteriore assistenza, consultare i cmdlet di archiviazione e Web Conferencing.
   
 ## <a name="conferencing-policy"></a>Criteri conferenza
 <a name="ConferencingPolicy"> </a>
 
-Per le conferenze, abbiamo lo script MeetingPolicy.ps1 conferenza. Se è necessaria ulteriore assistenza, consultare i cmdlet web conferencing.
+Per le conferenze, abbiamo lo script MeetingPolicy.ps1. Se è necessaria ulteriore assistenza, consultare i cmdlet web conferencing.
   
 ## <a name="contacts-policy"></a>Criteri contatti
 <a name="ContactsPolicy"> </a>
@@ -65,7 +60,7 @@ ContactsPolicy.ps1 script sarà l'esempio da esaminare. I cmdlet di messaggistic
 ## <a name="federation-policy"></a>Criteri di federazione
 <a name="FederationPolicy"> </a>
 
-Lo script di esempio per la federazione è FederationPolicy.ps1. I cmdlet da esaminare, se sono necessarie ulteriori informazioni, saranno Server perimetrale, federazione e accesso esterno.
+Lo script di esempio per la federazione FederationPolicy.ps1. I cmdlet da esaminare, se sono necessarie ulteriori informazioni, saranno Server perimetrale, federazione e accesso esterno.
   
 ## <a name="call-admission-control-policy"></a>Criteri controllo di ammissione di chiamata
 <a name="CACPolicy"> </a>
@@ -111,9 +106,9 @@ Per configurare i test di stress e prestazioni per le chiamate di emergenza, è 
     
      ![Strumento di provisioning degli utenti che mostra il numero di indirizzi, subnet, commutatori e porte.](../../media/ebe85a0c-750f-4301-97d4-d158a40ea98a.png)
   
-3. Dopo aver immesso tutto nello UserProvisioningTool, fare clic sul **pulsante Genera file di configurazione LIS.**
+3. Dopo aver immesso tutto nello UserProvisioningTool, fare clic sul **pulsante Genera file di configurazione LIS** .
     
-4. Ora verranno generati file CSV per porte, subnet, commutatori e punti di accesso wireless (WAP), nonché un file XML per lo strumento Stress and Performance. È possibile utilizzare i file CSV per gli input quando si configura il servizio lis (LIS) con lo script LisConfiguration.ps1 percorso. A tale scopo, dovrai spostare il file Locations0.xml nella stessa cartella del file eseguibile dello strumento stress e prestazioni (LyncPerfTool.exe). In questo modo è possibile eseguire scenari di profilo località (dial plan).
+4. Ora verranno generati file CSV per porte, subnet, commutatori e punti di accesso wireless (WAP), nonché un file XML per lo strumento Stress and Performance. È possibile utilizzare i file CSV per gli input quando si configura il servizio informazioni percorso (LIS) con lo script LisConfiguration.ps1 percorso. A tale scopo, dovrai spostare il file Locations0.xml nella stessa cartella del file eseguibile dello strumento stress e prestazioni (LyncPerfTool.exe). In questo modo è possibile eseguire scenari di profilo località (dial plan).
     
 ## <a name="configuring-response-group-application"></a>Configurazione dell'applicazione Response Group
 <a name="ConfigResponseGroupApp"> </a>

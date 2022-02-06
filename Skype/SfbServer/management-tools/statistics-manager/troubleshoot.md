@@ -1,25 +1,20 @@
 ---
 title: Risoluzione dei problemi del gestore delle statistiche per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 946189fa-521f-455c-9762-904e7e41b791
-description: 'Riepilogo: leggere questo argomento per risolvere i problemi relativi alla distribuzione di Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: 6e6edefe8d6070a917f817b3b6d79bf35ff36599
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60857343"
+description: 'Riepilogo: leggere questo argomento per risolvere i problemi di distribuzione di Gestione statistiche per Skype for Business Server.'
 ---
+
 # <a name="troubleshoot-statistics-manager-for-skype-for-business-server"></a>Risoluzione dei problemi del gestore delle statistiche per Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per risolvere i problemi relativi alla distribuzione di Gestione statistiche per Skype for Business Server.
@@ -52,11 +47,11 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
   ```
 
     > [!NOTE]
-    > Se questa modifica viene apportata, l'agente in genere continuerà a utilizzare 100 MB di memoria, ma non sarà forzatamente limitata a 300 MB come è \< l'impostazione predefinita. Se questa modifica viene apportata, è consigliabile monitorare attentamente l'utilizzo della memoria per assicurarsi che l'agente non utilizzi una grande quantità di memoria nel computer host. 
+    > Se questa modifica viene apportata, \< l'agente in genere continuerà a utilizzare 100 MB di memoria, ma non sarà forzatamente limitata a 300 MB come è l'impostazione predefinita. Se questa modifica viene apportata, è consigliabile monitorare attentamente l'utilizzo della memoria per assicurarsi che l'agente non utilizzi una grande quantità di memoria nel computer host. 
   
 - **2000** - Errore di inizializzazione del client
     
-- **2001-** Non è stato possibile stabilire alcuna connessione al servizio in un IP di origine
+- **2001**- Non è stato possibile stabilire alcuna connessione al servizio in un IP di origine
     
     Se l'agente non è in grado di connettersi al computer listener, verificare quanto segue:
     
@@ -76,7 +71,7 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
   - Assicurarsi di aver seguito le istruzioni per l'importazione della topologia. Vedere [Import the topology](deploy.md#BKMK_ImportTopology). 
     
-  - Se l'agente si trova in un server non elencato nella topologia( ad esempio, i nodi in un cluster AlwaysOn di SQL), sarà necessario aggiungere manualmente l'agente seguendo le istruzioni in [Importare](deploy.md#BKMK_ImportTopology)la topologia .
+  - Se l'agente si trova in un server non elencato nella topologia( ad esempio, i nodi in un cluster AlwaysOn di SQL), sarà necessario aggiungere manualmente l'agente seguendo le istruzioni in [Importare](deploy.md#BKMK_ImportTopology) la topologia.
     
   - **4002** - Password listener non valida
     
@@ -109,13 +104,13 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
   - **10002** - Errore di inizializzazione del listener HTTP
     
-    Questo evento viene in genere registrato quando l'elenco di controllo di accesso url non è stato impostato correttamente durante l'installazione o il certificato SSL non è valido. Verificare che il certificato nella configurazione sia valido. In caso contrario, reinstallare il listener in base alle istruzioni riportate in [Deploy Statistics Manager.](deploy.md#BKMK_Deploy)
+    Questo evento viene in genere registrato quando l'elenco di controllo di accesso url non è stato impostato correttamente durante l'installazione o il certificato SSL non è valido. Verificare che il certificato nella configurazione sia valido. In caso contrario, reinstallare il listener in base alle istruzioni in [Deploy Statistics Manager](deploy.md#BKMK_Deploy).
     
   - **10003** - Errore redis
     
-  - **10004** - Errore Caching'infrastruttura
+  - **10004** : errore Caching'infrastruttura
     
-  - **10007** — Impostazioni (archiviato in redis)
+  - **10007** - Impostazioni (archiviato in redis)
     
     Il listener non è stato in grado di contattare Redis o recuperare dati ben formati dalla cache e non è stato possibile avviarsi. Verificare che il servizio Redis sia avviato e configurato correttamente nel server.
     
@@ -143,7 +138,7 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
     Registrato ogni volta che il listener viene avviato.
     
-- **22000-** Inizializzazione dell'agente di gestione delle statistiche completata.
+- **22000** - Inizializzazione dell'agente di gestione delle statistiche completata.
     
 - **23000** - Inizializzazione di EventLogQueryManager riuscita (prima volta o dopo un errore)
     

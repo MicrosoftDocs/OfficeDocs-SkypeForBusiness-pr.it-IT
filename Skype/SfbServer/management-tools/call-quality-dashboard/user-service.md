@@ -1,25 +1,20 @@
 ---
 title: Servizio utente per CQD
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: abd5c828-42dd-4f48-bf87-29993193cb3a
-description: "Riepilogo: informazioni sul servizio utente, che fa parte dell'API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: e8be18304cad02e1ed39cf84327a58f84d134c6d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60851009"
+description: 'Riepilogo: informazioni sul servizio utente, che fa parte dell''API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
 ---
+
 # <a name="user-service-for-cqd"></a>Servizio utente per CQD
  
 **Riepilogo:** Informazioni sul servizio utente, che fa parte dell'API repository per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
@@ -37,13 +32,13 @@ Call Quality Dashboard crea inoltre automaticamente elementi dedicati all'utente
   
  **ID utente speciali**
   
-L'API di repository include URI DELL'API REST che prevedono un valore intero per specificare un utente specifico. Esempio:  `https://<portal>/QoERepositoryService/repository/user/{userId}` . In questo caso, {userId} deve essere sostituito da un valore intero, ad esempio 0, 1 e così via.
+L'API di repository include URI DELL'API REST che prevedono un valore intero per specificare un utente specifico. Esempio:  `https://<portal>/QoERepositoryService/repository/user/{userId}`. In questo caso, {userId} deve essere sostituito da un valore intero, ad esempio 0, 1 e così via.
   
 Inoltre, l'API repository accetterà due ID utente speciali in {userId} negli URI.
   
--  *default*  - rappresenta l'utente che sta attualmente interagendo con l'API. In questo modo le applicazioni possono accedere al contenuto dell'utente corrente senza tenere traccia del valore effettivo dell'ID utente. Esempio: `https://<portal>/QoERepositoryService/repository/user/default` .
+-  *default*  - rappresenta l'utente che sta attualmente interagendo con l'API. In questo modo le applicazioni possono accedere al contenuto dell'utente corrente senza tenere traccia del valore effettivo dell'ID utente. Esempio: `https://<portal>/QoERepositoryService/repository/user/default`.
     
--  *system*  - rappresenta l'utente del sistema. In questo modo le applicazioni possono accedere al contenuto dell'utente di sistema senza conoscere il valore effettivo dell'ID utente. Esempio: `https://<portal>/QoERepositoryService/repository/user/system` .
+-  *system*  - rappresenta l'utente del sistema. In questo modo le applicazioni possono accedere al contenuto dell'utente di sistema senza conoscere il valore effettivo dell'ID utente. Esempio: `https://<portal>/QoERepositoryService/repository/user/system`.
     
 Se non specificato diversamente, gli ID utente speciali possono essere usati in {userId} negli URI. 
   

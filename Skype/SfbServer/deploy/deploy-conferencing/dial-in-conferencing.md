@@ -1,29 +1,24 @@
 ---
 title: Configurare le conferenze telefoniche con accesso esterno in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 38d9f168-80b8-46f2-a1c0-becd84e58e73
 description: 'Riepilogo: leggere questo argomento per informazioni su come configurare le conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 3e7a91b200eb6211a26b379d866608ff31658488
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60845929"
 ---
+
 # <a name="configure-dial-in-conferencing-in-skype-for-business-server"></a>Configurare le conferenze telefoniche con accesso esterno in Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come configurare le conferenze telefoniche con accesso esterno in Skype for Business Server.
   
-Dopo aver creato una topologia che include il carico di lavoro per le conferenze telefoniche e le conferenze telefoniche con accesso esterno selezionate, è necessario eseguire passaggi aggiuntivi per configurare le conferenze telefoniche con accesso esterno. Prima di leggere questo argomento, leggere Pianificare le conferenze telefoniche con accesso esterno [in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md), Requisiti hardware e software per le conferenze [in Skype for Business Server](../../plan-your-deployment/conferencing/hardware-and-software-requirements.md)e Diagramma di flusso di distribuzione ed elenco di controllo per le conferenze telefoniche con accesso esterno [.](deploy-conferencing.md#deployment-flowchart-and-checklist-for-dial-in-conferencing) 
+Dopo aver creato una topologia che include il carico di lavoro per le conferenze telefoniche e le conferenze telefoniche con accesso esterno selezionate, è necessario eseguire passaggi aggiuntivi per configurare le conferenze telefoniche con accesso esterno. Prima di leggere questo argomento, leggere Plan [for dial-in conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md), [Hardware and software requirements for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/hardware-and-software-requirements.md) e [il diagramma](deploy-conferencing.md#deployment-flowchart-and-checklist-for-dial-in-conferencing) di flusso e l'elenco di controllo per le conferenze telefoniche con accesso esterno. 
   
 Per configurare le conferenze telefoniche con accesso esterno, è necessario eseguire le attività seguenti:
   
@@ -75,13 +70,13 @@ Quando si imposta un dial plan, si specifica l'area per conferenze telefoniche c
   
 Poiché è importante specificare un'area per tutti i dial plan, è consigliabile verificare che tutti i dial plan dispongono di aree di conferenza. 
   
-Per verificare se l'area geografica è impostata per tutti i dial plan di conferenza telefonica con accesso esterno, utilizzare il cmdlet **Get-CsDialPlan.** Se l'area non è inclusa nei dial plan, è possibile utilizzare il cmdlet **Set-CsDialPlan** per impostarla. È inoltre possibile utilizzare il Skype for Business Server di controllo per aggiornare l'area geografica nei dial plan esistenti. Per informazioni dettagliate sull'Skype for Business Server di controllo, vedere [Create or modify a dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md).
+Per verificare se l'area geografica è impostata per tutti i dial plan di conferenza telefonica con accesso esterno, utilizzare il cmdlet **Get-CsDialPlan** . Se l'area non è inclusa nei dial plan, è possibile utilizzare il cmdlet **Set-CsDialPlan** per impostarla. È inoltre possibile utilizzare il Skype for Business Server di controllo per aggiornare l'area geografica nei dial plan esistenti. Per informazioni dettagliate sull'Skype for Business Server di controllo, vedere [Create or modify a dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md).
   
 ### <a name="to-verify-whether-dial-plans-have-the-region-property-set"></a>Per verificare se nei dial plan è impostata la proprietà relativa all'area
 
 1. Eseguire l'accesso al computer come membro del gruppo RTCUniversalServerAdmins oppure del ruolo **Cs-VoiceAdministrator**, **Cs-ServerAdministrator** o **CsAdministrator**.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 3. Al prompt dei comandi eseguire il comando seguente:
     
@@ -99,13 +94,13 @@ Per verificare se l'area geografica è impostata per tutti i dial plan di confer
     
 4. Esaminare i dial plan restituiti per identificare eventualmente quelli che non includono l'area di conferenza telefonica con accesso esterno. 
     
-Per ulteriori informazioni, vedere [Get-CsDialPlan.](/powershell/module/skype/get-csdialplan?view=skype-ps)
+Per ulteriori informazioni, vedere [Get-CsDialPlan](/powershell/module/skype/get-csdialplan?view=skype-ps).
   
 ### <a name="to-set-the-region-property-for-a-dial-plan"></a>Per impostare la proprietà relativa all'area per un dial plan
 
 1. Eseguire l'accesso al computer come membro del gruppo RTCUniversalServerAdmins oppure del ruolo **Cs-VoiceAdministrator**, **Cs-ServerAdministrator** o **CsAdministrator**.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 3. Per gli eventuali dial plan che non includono l'area di conferenza telefonica con accesso esterno, eseguire:
     
@@ -121,20 +116,20 @@ Per ulteriori informazioni, vedere [Get-CsDialPlan.](/powershell/module/skype/ge
 
    In questo esempio il dial plan con Identity Redmond viene modificato per impostare la proprietà DialinConferencingRegion su "US West Coast". 
     
-Per ulteriori informazioni, vedere [Set-CsDialPlan.](/powershell/module/skype/set-csdialplan?view=skype-ps)
+Per ulteriori informazioni, vedere [Set-CsDialPlan](/powershell/module/skype/set-csdialplan?view=skype-ps).
   
 ## <a name="configure-dial-in-access-numbers"></a>Configurare i numeri di accesso esterno
 <a name="BKMK_ConfigureDialInAccessNumbers"> </a>
 
 Quando si distribuiscono conferenze telefoniche con accesso esterno, è necessario configurare i numeri di telefono che gli utenti possono comporre dalla rete PSTN (Public Switched Telephone Network) per partecipare alla parte audio delle conferenze. Questi numeri di accesso esterno vengono visualizzati negli inviti alle riunioni e nella pagina Web Impostazioni conferenza telefonica con accesso esterno.
   
-Prima di creare numeri di accesso esterno, è necessario pianificare le aree di conferenza telefonica con accesso esterno e quindi configurare i dial plan con le aree geografiche. Per informazioni dettagliate sulle aree geografiche, vedere [Plan for dial-in conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md). Per informazioni dettagliate sulla configurazione dei dial plan per le conferenze telefoniche con accesso [esterno,](../../deploy/deploy-enterprise-voice/dial-plans.md)vedere Create or modify a dial plan in Skype for Business Server .
+Prima di creare numeri di accesso esterno, è necessario pianificare le aree di conferenza telefonica con accesso esterno e quindi configurare i dial plan con le aree geografiche. Per informazioni dettagliate sulle aree geografiche, vedere [Plan for dial-in conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md). Per informazioni dettagliate sulla configurazione dei dial plan per le conferenze telefoniche con accesso esterno, vedere [Create or modify a dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md).
   
 > [!NOTE]
 > Non è possibile utilizzare un nuovo numero di accesso esterno finché non viene completata la replica di Servizi di dominio Active Directory . Il completamento della replica può richiedere diverse ore. 
   
 > [!NOTE]
-> Dopo aver creato i numeri di accesso esterno, è possibile modificare il nome visualizzato per gli oggetti contatto di Active Directory in modo che gli utenti possano identificare più facilmente il numero di accesso corretto. Per modificare il nome visualizzato, utilizzare il cmdlet [Set-CsDialInConferencingAccessNumber.](/powershell/module/skype/set-csdialinconferencingaccessnumber?view=skype-ps) Non modificare manualmente gli oggetti Active Directory.
+> Dopo aver creato i numeri di accesso esterno, è possibile modificare il nome visualizzato per gli oggetti contatto di Active Directory in modo che gli utenti possano identificare più facilmente il numero di accesso corretto. Per modificare il nome visualizzato, utilizzare il cmdlet [Set-CsDialInConferencingAccessNumber](/powershell/module/skype/set-csdialinconferencingaccessnumber?view=skype-ps) . Non modificare manualmente gli oggetti Active Directory.
   
 ### <a name="to-create-a-dial-in-access-number"></a>Per creare un numero di accesso remoto
 
@@ -169,7 +164,7 @@ Prima di creare numeri di accesso esterno, è necessario pianificare le aree di 
      > [!NOTE]
      > Non è possibile riutilizzare lo stesso URI SIP per un altro numero di accesso per conferenze con accesso esterno. L'URI SIP non può essere modificato dopo che il numero di accesso è stato creato. L'unico modo per modificare l'URI SIP è quello di eliminare e ricreare il numero di accesso. 
   
-   - Nella casella di riepilogo a discesa fare clic sul dominio del applicazione Operatore conferenza che supporta questo numero di accesso esterno.
+   - Nella casella di riepilogo a discesa fare clic sul dominio della applicazione Operatore conferenza che supporta questo numero di accesso esterno.
     
 9. In **Pool** fare clic sul pool che esegue l'istanza di Operatore Conferenza che supporta il numero di accesso esterno.
     
@@ -184,7 +179,7 @@ Prima di creare numeri di accesso esterno, è necessario pianificare le aree di 
     
     È possibile selezionare fino a quattro lingue secondarie per ogni numero di accesso esterno. Gli utenti possono selezionare una lingua secondaria prima di immettere l'ID conferenza quando chiamano per partecipare a una conferenza.
     
-12. Per aggiungere un'area per il numero di accesso remoto, in Aree associate **fare** clic su **Aggiungi,** fare clic su una o più aree associate ai dial plan per il numero di accesso remoto e quindi fare clic su **OK.**
+12. Per aggiungere un'area per il numero di accesso remoto, in Aree associate fare clic su **Aggiungi, fare** clic su una o più aree associate ai dial plan per il numero di accesso remoto e quindi fare clic su **OK**.
     
 13. Per eliminare un'area dal numero di accesso esterno, in **Aree associate** fare clic sull'area desiderata e quindi su **Rimuovi**.
     
@@ -202,7 +197,7 @@ Per ulteriori informazioni sulla configurazione dei criteri di conferenza, veder
 
 Gli utenti connessi tramite chiamata in ingresso immettono il proprio numero di telefono o interno e un PIN per partecipare alle conferenze come utenti autenticati. **L'URI linea di** telefonia specificato Skype for Business Server account utente è necessario per l'autenticazione.
   
-Nella procedura illustrata in questo argomento viene descritto come assegnare un **URI linea** per un singolo account utente. Se è necessario assegnare un **URI linea** per più account utente, è possibile creare uno script che utilizzi il cmdlet **Set-CsUser**. Per informazioni dettagliate sull'utilizzo di uno script di esempio per assegnare **l'URI** linea a più account utente, vedere [Assign Line URIs to Multiple Users.](https://go.microsoft.com/fwlink/p/?linkId=196945)
+Nella procedura illustrata in questo argomento viene descritto come assegnare un **URI linea** per un singolo account utente. Se è necessario assegnare un **URI linea** per più account utente, è possibile creare uno script che utilizzi il cmdlet **Set-CsUser**. Per informazioni dettagliate sull'uso di uno script di esempio per assegnare **l'URI** linea a più account utente, vedi [Assegnare URI riga a più utenti](https://go.microsoft.com/fwlink/p/?linkId=196945).
   
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo **Cs-UserAdministrator** o **CsAdministrator**.
     
@@ -212,11 +207,11 @@ Nella procedura illustrata in questo argomento viene descritto come assegnare un
     
 4. Nel campo di ricerca digitare il nome dell'utente che si desidera configurare per le conferenze telefoniche con accesso esterno oppure fare clic su **Aggiungi filtro** per specificare i campi di ricerca e quindi fare clic su **Trova**.
     
-5. Fare doppio clic sul nome utente per aprire la finestra di dialogo Modifica Skype for Business Server **utente.**
+5. Fare doppio clic sul nome utente per aprire la **finestra di dialogo Skype for Business Server utente**.
     
 6. In **Telefonia**, nel campo **URI linea** digitare un numero di telefono normalizzato univoco, ad esempio tel:+14255550200).
     
     > [!NOTE]
-    > È possibile specificare **l'URI** di linea solo se **Telefonia** è impostata su Solo da PC a **PC,** **VoIP aziendale** **,** Controllo chiamate remote o Controllo chiamate remote **solo**. 
+    > Puoi specificare **l'URI** di linea solo se **Telefonia** è impostata su Solo **da PC a PC**, **VoIP aziendale****, Controllo** chiamate remote o **Controllo chiamate remote.** 
   
 7. Fare clic su **Commit**.

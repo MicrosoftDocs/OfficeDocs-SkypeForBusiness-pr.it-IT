@@ -1,24 +1,19 @@
 ---
 title: Rapporto elenco errori in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: b6f3a605-e0c6-461e-b17a-41d8039ace9d
 description: 'Riepilogo: informazioni sul Rapporto elenco errori in Skype for Business Server.'
-ms.openlocfilehash: 37442d95c3a79bffbd79ebd74a793f5d3e1f3fb4
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858293"
 ---
+
 # <a name="failure-list-report-in-skype-for-business-server"></a>Rapporto elenco errori in Skype for Business Server 
  
 **Riepilogo:** Informazioni sul Rapporto elenco errori in Skype for Business Server.
@@ -27,7 +22,7 @@ Nel Rapporto Elenco errori vengono fornite informazioni sui singoli partecipanti
   
 ## <a name="accessing-the-failure-list-report"></a>Accesso al Rapporto Elenco errori
 
-Per accedere al Rapporto elenco errori, fare clic su una delle metriche seguenti nel Rapporto distribuzione [errori in Skype for Business Server](failure-distribution-report.md):
+Per accedere al Rapporto elenco errori, fare clic su una delle metriche seguenti nel Rapporto distribuzione errori [in Skype for Business Server](failure-distribution-report.md):
   
 - Motivi diagnostica principali (sessioni)
     

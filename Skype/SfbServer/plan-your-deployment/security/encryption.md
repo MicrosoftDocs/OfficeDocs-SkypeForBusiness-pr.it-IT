@@ -1,32 +1,27 @@
 ---
 title: Crittografia per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d18c74a6-385b-407b-98eb-0d525fa38fea
-description: Skype for Business Server utilizza TLS e MTLS per crittografare i messaggi istantanei. Tutto il traffico da server a server richiede MTLS, indipendentemente dal fatto che il traffico sia limitato alla rete interna o attraversi il perimetro della rete interna. Quando si Skype for Business Server a sistemi IPPBX di terze parti o a trunk SIP TLS è facoltativo ma fortemente consigliato tra Mediation Server e gateway multimediale. Se TLS è configurato su questo collegamento, MTLS è obbligatorio. Di conseguenza, il gateway deve essere configurato con un certificato di un'autorità di certificazione considerato attendibile dal Mediation Server.
-ms.openlocfilehash: 3ee649f62e2855f959b2ee9fdc25bdb2d77fa6e9
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60849719"
+description: 'Skype for Business Server utilizza TLS e MTLS per crittografare i messaggi istantanei. Tutto il traffico da server a server richiede MTLS, indipendentemente dal fatto che il traffico sia limitato alla rete interna o attraversi il perimetro della rete interna. Quando si Skype for Business Server a sistemi IPPBX di terze parti o a trunk SIP TLS è facoltativo, ma fortemente consigliato tra Mediation Server e gateway multimediale. Se TLS è configurato su questo collegamento, MTLS è obbligatorio. Di conseguenza, il gateway deve essere configurato con un certificato di un''autorità di certificazione considerato attendibile dal Mediation Server.'
 ---
+
 # <a name="encryption-for-skype-for-business-server"></a>Crittografia per Skype for Business Server
  
 Skype for Business Server utilizza TLS e MTLS per crittografare i messaggi istantanei. Tutto il traffico da server a server richiede MTLS, indipendentemente dal fatto che il traffico sia limitato alla rete interna o attraversi il perimetro della rete interna. Quando ci si Skype for Business Server a sistemi IPPBX di terze parti o a trunk SIP TLS è facoltativo ma fortemente consigliato tra Mediation Server e gateway multimediale. Se TLS è configurato su questo collegamento, MTLS è obbligatorio. Di conseguenza, il gateway deve essere configurato con un certificato di un'autorità di certificazione considerato attendibile dal Mediation Server.
   
 > [!NOTE]
 > Un avviso di sicurezza relativo a SSL 3.0 è stato pubblicato nel 2014. La disabilitazione di SSL 3.0 in Skype for Business Server 2015 è un'opzione supportata. Per ulteriori informazioni sull'avviso di sicurezza, vedere [Disabling SSL 3.0 in Lync Server 2013 and Skype for Business Server 2015](/archive/blogs/uclobby/disabling-ssl-3-0-in-lync-server-2013).<br/>
-**Nota sulla sicurezza:** Per garantire l'utilizzo del protocollo di crittografia più forte, Skype for Business Server 2015 offrirà i protocolli di crittografia TLS nel seguente ordine ai client: **TLS 1.2, TLS 1.1, TLS 1.0.** TLS è un aspetto critico di Skype for Business Server 2015 e pertanto è necessario per mantenere un ambiente supportato.<br/>
+**Nota sulla sicurezza:** Per garantire l'utilizzo del protocollo di crittografia più forte, Skype for Business Server 2015 offrirà i protocolli di crittografia TLS nel seguente ordine ai client: **TLS 1.2, TLS 1.1, TLS 1.0**. TLS è un aspetto critico di Skype for Business Server 2015 e pertanto è necessario per mantenere un ambiente supportato.<br/>
 **Nota sulla sicurezza:** Per garantire l'utilizzo del protocollo di crittografia più forte, Skype for Business Server 2019 offrirà i protocolli di crittografia TLS nell'ordine seguente ai client: **TLS 1.3, TLS 1.2**. TLS è un aspetto critico di Skype for Business Server 2019 e pertanto è necessario per mantenere un ambiente supportato. 
   
 Nella tabella seguente vengono riepilogati i requisiti relativi ai protocolli per ogni tipo di traffico. 

@@ -1,27 +1,22 @@
 ---
 title: Nodo dell'ambito dell'istanza SQL
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.SqlInstanceScopeNode
+  - ms.lync.tb.SqlInstanceScopeNode
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: bd270488-ceb9-4920-bef3-ed9fe8eff36c
-description: "Questo nodo mostra il nome di dominio completo (FQDN) di questo Microsoft SQL Server e l'istanza di SQL Server in tale server e i pool o i server che utilizzano questo SQL Server. È possibile eseguire le operazioni seguenti:"
-ms.openlocfilehash: b046b70396af5fdd4249456fc1dea6203580a673
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861423"
+description: 'Questo nodo mostra il nome di dominio completo (FQDN) di questo Microsoft SQL Server e l''istanza di SQL Server in tale server e i pool o i server che utilizzano questo SQL Server. È possibile eseguire le operazioni seguenti:'
 ---
+
 # <a name="sql-instance-scope-node"></a>Nodo dell'ambito dell'istanza SQL
  
 Questo nodo mostra il nome di dominio completo (FQDN) di questo Microsoft SQL Server e l'istanza di SQL Server in tale server e i pool o i server che utilizzano questo SQL Server. È possibile eseguire le operazioni seguenti:

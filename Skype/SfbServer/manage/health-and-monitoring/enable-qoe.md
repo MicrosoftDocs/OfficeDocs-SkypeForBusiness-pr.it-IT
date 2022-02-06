@@ -1,24 +1,19 @@
 ---
 title: Abilitare la qualità dell'esperienza in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: c8bb3c67-b324-4d94-8158-00c792c7ac42
-description: "Riepilogo: informazioni su come abilitare la qualità dell'esperienza (QoE) in Skype for Business Server."
-ms.openlocfilehash: 89c6a41a356355ea5ac717a10e2848aa16d94249
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60863573"
+description: 'Riepilogo: informazioni su come abilitare la qualità dell''esperienza (QoE) in Skype for Business Server.'
 ---
+
 # <a name="enable-quality-of-experience-in-skype-for-business-server"></a>Abilitare la qualità dell'esperienza in Skype for Business Server
 
 **Riepilogo:** informazioni su come abilitare la qualità dell'esperienza (QoE) in Skype for Business Server.
@@ -34,7 +29,7 @@ Utilizzare la procedura che segue per abilitare QoE per l'intera organizzazione 
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
 
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo.
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.
 
 3. Sulla barra di spostamento sinistra fare clic su **Monitoraggio e archiviazione** e quindi su **Dati QoE**.
 
@@ -42,7 +37,7 @@ Utilizzare la procedura che segue per abilitare QoE per l'intera organizzazione 
 
 ## <a name="enabling-qoe-by-using-windows-powershell-cmdlets"></a>Abilitazione di QoE tramite Windows PowerShell cmdlet
 
-È possibile abilitare QoE utilizzando Windows PowerShell e il cmdlet **Set-CsQoEConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere Amministrazione remota di PowerShell per [Microsoft Lync.](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/) Il processo è lo stesso in Skype for Business Server.
+È possibile abilitare QoE utilizzando Windows PowerShell e il cmdlet **Set-CsQoEConfiguration**. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remota per connettersi a Skype for Business Server, vedere Amministrazione remota [di PowerShell per Microsoft Lync](https://blog.insideo365.com/2011/08/remote-lync-powershell-administration/). Il processo è lo stesso in Skype for Business Server.
 
 ### <a name="to-enable-qoe-for-a-single-location"></a>Per abilitare QoE per una singola posizione
 

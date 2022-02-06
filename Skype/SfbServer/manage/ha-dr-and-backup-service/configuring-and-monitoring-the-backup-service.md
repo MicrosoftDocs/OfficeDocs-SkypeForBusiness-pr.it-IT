@@ -1,26 +1,21 @@
 ---
 title: Configurazione e monitoraggio del servizio di backup
-ms.reviewer: ''
-author: HowlinWolf-92
-ms.author: v-mahoffman
+ms.reviewer: null
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
-description: È possibile utilizzare Skype for Business Server Management Shell per configurare e monitorare il servizio di backup.
-ms.openlocfilehash: 0881d40ca639edf825b0af104981ceddcab6e87a
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60832020"
+description: È possibile utilizzare i Skype for Business Server Management Shell per configurare e monitorare il servizio di backup.
 ---
+
 # <a name="configuring-and-monitoring-the-backup-service-in-skype-for-business-server"></a>Configurazione e monitoraggio del servizio di backup in Skype for Business Server
 
-È possibile utilizzare i seguenti comandi Skype for Business Server Management Shell per configurare e monitorare il servizio di backup. Per ripristinare le informazioni sulla conferenza archiviate nell'archivio file di un pool Front End, vedere Ripristinare il contenuto delle conferenze [utilizzando il servizio di backup](#restore-conference-contents-using-the-backup-service)di seguito.
+È possibile utilizzare i seguenti comandi Skype for Business Server Management Shell per configurare e monitorare il servizio di backup. Per ripristinare le informazioni sulla conferenza archiviate nell'archivio file di un pool Front End, vedere Ripristinare il contenuto delle conferenze [utilizzando il servizio di backup](#restore-conference-contents-using-the-backup-service), di seguito.
 
 > [!NOTE]  
 > RTCUniversalServerAdmins è l'unico gruppo che dispone delle autorizzazioni per eseguire **Get-CsBackupServiceStatus** per impostazione predefinita. Per utilizzare questo cmdlet, eseguire l'accesso come membro di questo gruppo. In alternativa, è possibile concedere l'accesso a questo comando ad altri gruppi, ad esempio CSAdministrator, utilizzando il cmdlet **Set-CsBackupServiceConfiguration**.

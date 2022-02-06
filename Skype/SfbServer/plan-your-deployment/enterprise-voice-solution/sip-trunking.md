@@ -1,28 +1,23 @@
 ---
 title: Trunking SIP in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 7c586401-d0e5-4017-b3e1-fe5e7f8fc6db
 description: Informazioni sul trunking SIP in Skype for Business Server VoIP aziendale
-ms.openlocfilehash: 6278526a83e5af4b0020c9dbb822eabad7053426
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60841018"
 ---
+
 # <a name="sip-trunking-in-skype-for-business-server"></a>Trunking SIP in Skype for Business Server
 
 Informazioni sul trunking SIP in Skype for Business Server VoIP aziendale
@@ -62,9 +57,9 @@ Le funzionalità vocali sono spesso la motivazione principale per la distribuzio
 
 ### <a name="sip-trunks-vs-direct-sip-connections"></a>Confronto tra trunk SIP e connessioni SIP dirette
 
-Il termine trunk deriva dalla tecnologia a commutazione di circuito. Si riferisce a una linea fisica dedicata che collega le apparecchiature di commutazione telefonica. Analogamente ai trunk TDM (Time Division Multiplexing) predecessore, i trunk SIP sono connessioni tra due reti SIP separate, ovvero Skype for Business Server enterprise e ITSP. A differenza dei trunk a commutazione di circuito, i trunk SIP sono connessioni virtuali che possono essere stabilite su uno qualsiasi dei tipi di connessione di trunking SIP supportati.
+Il termine trunk deriva dalla tecnologia a commutazione di circuito. Si riferisce a una linea fisica dedicata che collega le apparecchiature di commutazione telefonica. Come il predecessore, i trunk TDM (Time Division Multiplexing), i trunk SIP sono connessioni tra due reti SIP separate, ovvero Skype for Business Server enterprise e ITSP. A differenza dei trunk a commutazione di circuito, i trunk SIP sono connessioni virtuali che possono essere stabilite su uno qualsiasi dei tipi di connessione di trunking SIP supportati.
 
-Le connessioni SIP dirette sono invece connessioni SIP che non oltrepassano il confine di rete locale, ovvero si connettono a un gateway PSTN o un PBX nella rete interna. Per informazioni dettagliate su come utilizzare connessioni SIP dirette con Skype for Business Server, vedere [Connessioni SIP dirette in Skype for Business Server](direct-sip.md).
+Le connessioni SIP dirette sono invece connessioni SIP che non oltrepassano il confine di rete locale, ovvero si connettono a un gateway PSTN o un PBX nella rete interna. Per informazioni dettagliate su come utilizzare le connessioni SIP dirette con Skype for Business Server, vedere [Direct SIP connections in Skype for Business Server](direct-sip.md).
 
 ## <a name="how-do-i-implement-sip-trunking"></a>Come si implementa il trunking SIP?
 
@@ -101,7 +96,7 @@ Per scegliere se distribuire il trunking SIP centralizzato o distribuito, è nec
 
 ### <a name="supported-sip-trunking-connection-types"></a>Tipi di connessione supportati per il trunking SIP
 
-Skype for Business Server supporta i seguenti tipi di connessione per il trunking SIP:
+Skype for Business Server supporta i tipi di connessione seguenti per il trunking SIP:
 
 - MPLS (Multiprotocol Label Switching) è una rete privata che indirizza e trasferisce i dati da un nodo di rete al successivo. La larghezza di banda in una rete MPLS viene condivisa con altri sottoscrittori e a ogni pacchetto di dati viene assegnata un'etichetta per distinguere i dati di un sottoscrittore da quello di un altro. Questo tipo di connessione non richiede una rete privata virtuale (VPN). Un potenziale svantaggio è che il traffico IP eccessivo può interferire con l'operazione VoIP a meno che non abbai priorità.
 
@@ -138,7 +133,7 @@ Skype for Business Server supporta solo i codec seguenti:
 
 ### <a name="internet-telephony-service-provider"></a>Provider di servizi di telefonia Internet
 
-La modalità di implementazione del lato provider di servizi di una connessione trunk SIP varia da un ITSP all'altro. Per informazioni sulla distribuzione, contattare il provider di servizi. Per un elenco dei provider di servizi di trunking SIP certificati, vedere [Sito Web Microsoft Unified Communications Open Interoperability Program](../../../SfbPartnerCertification/lync-cert/qualified-ip-pbx-gateway.md).
+La modalità di implementazione del lato provider di servizi di una connessione trunk SIP varia da un ITSP all'altro. Per informazioni sulla distribuzione, contattare il provider di servizi. Per un elenco dei provider di servizi di trunking SIP certificati, vedere sito [Web Microsoft Unified Communications Open Interoperability Program](../../../SfbPartnerCertification/lync-cert/qualified-ip-pbx-gateway.md).
 
 Per informazioni dettagliate sui provider di trunking SIP certificati Microsoft, contattare il rappresentante Microsoft.
 

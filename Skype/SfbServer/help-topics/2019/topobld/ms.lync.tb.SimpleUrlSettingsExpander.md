@@ -1,27 +1,22 @@
 ---
 title: Espansione delle impostazioni dell'URL semplice
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.SimpleUrlSettingsExpander
+  - ms.lync.tb.SimpleUrlSettingsExpander
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 9fd2087a-3c3a-4863-aa7f-e532a18e77af
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 description: 'Per specificare nuovi URL semplici, rimuovere quelli esistenti o cambiare gli URL semplici attivi, eseguire queste operazioni:'
-ms.openlocfilehash: f64dc15f859309556b90d6012f6cd482e8b22ff5
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60847859"
 ---
+
 # <a name="simple-url-settings-expander"></a>Espansione delle impostazioni dell'URL semplice
 
 Per specificare nuovi URL semplici, rimuovere quelli esistenti o cambiare gli URL semplici attivi, eseguire queste operazioni:

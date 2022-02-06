@@ -1,27 +1,22 @@
 ---
 title: Configurazione di archiviazione Crea nuovo o Modifica esistente
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.lscp.MonArchSettingEdit
+  - ms.lync.lscp.MonArchSettingEdit
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 49096960-c442-4846-be8f-03c167acea41
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 description: 'Le configurazioni di archiviazione vengono utilizzate per controllare le opzioni di archiviazione per la distribuzione. Le configurazioni di archiviazione includono la configurazione globale e, facoltativamente, una o più configurazioni di siti e pool:'
-ms.openlocfilehash: 145d86cce250204a219bd9e983a07765259b9144
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60831520"
 ---
+
 # <a name="archiving-configuration-create-new-or-edit-existing"></a>Configurazione archiviazione: crearne una nuova o modificarne una esistente
  
 Le configurazioni di archiviazione vengono utilizzate per controllare le opzioni di archiviazione per la distribuzione. Le configurazioni di archiviazione includono la configurazione globale e, facoltativamente, una o più configurazioni di siti e pool:
@@ -62,7 +57,7 @@ Per definire le impostazioni di una configurazione di archiviazione nuova o esis
     
     Sia la funzionalità di messaggistica immediata che il servizio di conferenza vengono ripristinati automaticamente subito dopo la correzione degli errori.
     
-- **Integrazione Exchange Microsoft** Selezionare questa opzione se sono presenti utenti ospitati in Exchange. Con questa opzione, Exchange per archiviare i dati per tali utenti, se le loro cassette postali sono state In-Place blocco. Se tutti gli utenti sono ospitati in Exchange, non è necessario configurare database SQL Server separati per l'archiviazione dei dati di archiviazione.
+- **Integrazione Exchange Microsoft** Selezionare questa opzione se si dispone di utenti ospitati in Exchange. Con questa opzione, Exchange per archiviare i dati per tali utenti, se le loro cassette postali sono state In-Place blocco. Se tutti gli utenti sono ospitati in Exchange, non è necessario configurare database SQL Server separati per l'archiviazione dei dati di archiviazione.
     
 - **Abilitare l'eliminazione dei dati di archiviazione** Selezionare questa opzione per abilitare l'eliminazione e specificare le opzioni di eliminazione, tra cui:
     
@@ -73,5 +68,5 @@ Per definire le impostazioni di una configurazione di archiviazione nuova o esis
     > [!NOTE]
     > Se si abilita l'integrazione di Microsoft Exchange, l'eliminazione per gli utenti ospitati in Exchange e con le cassette postali poste In-Place blocco è controllata da Exchange. L'unica eccezione è per i file di conferenza, archiviati nella condivisione file di Lync Server. Questi file vengono eliminati dalla condivisione file solo dopo l'esportazione (il caricamento in Exchange), se si seleziona l'opzione per l'eliminazione dei dati dopo l'esportazione dei dati di archiviazione, o dopo il numero massimo di giorni specificato, se si specifica un numero massimo di giorni di conservazione. 
   
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità di archiviazione, inclusa l'integrazione di Exchange, vedere [Plan for archiving in Skype for Business Server,](../../../plan-your-deployment/archiving/archiving.md)Deploy archiving for [Skype for Business Server](../../../deploy/deploy-archiving/deploy-archiving.md)e Manage archiving [in Skype for Business Server](../../../manage/archiving/archiving.md).
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità di archiviazione, inclusa l'integrazione di Exchange, vedere [Plan for archiving in Skype for Business Server](../../../plan-your-deployment/archiving/archiving.md), [Deploy archiving for Skype for Business Server e](../../../deploy/deploy-archiving/deploy-archiving.md) [Manage archiving in Skype for Business Server ](../../../manage/archiving/archiving.md).
 

@@ -1,27 +1,22 @@
 ---
 title: Definire i computer nel pool Persistent Chat
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddPersistentChatMachinePage
+  - ms.lync.tb.AddPersistentChatMachinePage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: f87c3abb-d8b4-4e51-af84-9b579e3807c5
 description: È possibile definire i computer che saranno parte di un pool di server Chat persistente digitando il nome di dominio completo (FQDN) in FQDN computer. Questo nome deve essere quello del computer così com'è definito nei record host DNS (A o AAAA).
-ms.openlocfilehash: a0eb8b18818446b661c7168c41bd1884f3c92fa0
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60851330"
 ---
+
 # <a name="define-computers-in-persistent-chat-pool"></a>Definire computer nel pool di Chat persistente
  
 È possibile definire i computer che saranno parte di un pool di server Chat persistente digitando il nome di dominio completo (FQDN) in **FQDN computer**. Questo nome deve essere quello del computer così com'è definito nei record host DNS (A o AAAA).

@@ -1,27 +1,22 @@
 ---
 title: Dial plan Crea nuovo o Modifica esistente
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.VoiceDialPlanEdit
+  - ms.lync.lscp.VoiceDialPlanEdit
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 98e6372e-90e3-4939-b681-640f00d98ff1
-description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 1d9cfc84b31a98352524a01a933d76019650d321
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60847835"
+description: 'Per saperne di più: fare clic sul collegamento all''attività che si desidera eseguire.'
 ---
+
 # <a name="dial-plan-create-new-or-edit-existing"></a>Dial plan: crearne uno nuovo o modificarne uno esistente
 
 Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
@@ -34,4 +29,4 @@ Per saperne di più: fare clic sul collegamento all'attività che si desidera es
 
 - [Creare o modificare manualmente una regola di normalizzazione](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-normalization-rule-manually)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015](../../manage/manage.md).

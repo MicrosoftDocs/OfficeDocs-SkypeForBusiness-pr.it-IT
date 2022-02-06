@@ -1,25 +1,20 @@
 ---
 title: (Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d62551b2-1847-4e1b-abe8-683b72aa94d5
-description: Creare o modificare l'orario di ufficio di Response Group, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 0a7e22d02a4540973f2f3e3f2ea39fabe848f17c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850409"
+description: 'Creare o modificare l''orario di ufficio di Response Group, in Skype for Business Server VoIP aziendale.'
 ---
+
 # <a name="optional-define-response-group-business-hours-in-skype-for-business"></a>(Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business 
  
 Creare o modificare l'orario di ufficio di Response Group, in Skype for Business Server VoIP aziendale.
@@ -41,7 +36,7 @@ Le impostazioni dell'orario di ufficio definiscono quando il flusso di lavoro è
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 3. Per ogni intervallo univoco di ore che si desidera definire, eseguire:
     

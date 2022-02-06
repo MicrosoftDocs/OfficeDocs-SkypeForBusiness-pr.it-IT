@@ -1,25 +1,20 @@
 ---
 title: Visualizzazione ClientVersions
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: caf7678f-83a0-46c8-83cc-fee4c3991f52
 description: Nella visualizzazione ClientVersions vengono archiviate informazioni sui vari tipi di client e versioni che hanno partecipato a sessioni registrate nel database. Ogni record nella visualizzazione rappresenta una versione client. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 7e44806e817c6010bb9d14ff2f29c118ac9a290b
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60854190"
 ---
+
 # <a name="clientversions-view"></a>Visualizzazione ClientVersions
  
 Nella visualizzazione ClientVersions vengono archiviate informazioni sui vari tipi di client e versioni che hanno partecipato a sessioni registrate nel database. Ogni record nella visualizzazione rappresenta una versione client. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.

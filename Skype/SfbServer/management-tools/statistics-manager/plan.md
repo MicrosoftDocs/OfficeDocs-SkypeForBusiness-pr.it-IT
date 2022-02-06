@@ -1,25 +1,20 @@
 ---
 title: Pianificare il gestore delle statistiche per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: f0ec68e1-de01-4a92-b67d-703149b05caf
 description: 'Riepilogo: leggere questo argomento per informazioni su Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: 166390fe0f034c907e21a3d3147b516d9f502954
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60857403"
 ---
+
 # <a name="plan-for-statistics-manager-for-skype-for-business-server"></a>Pianificare il gestore delle statistiche per Skype for Business Server
 
 **Riepilogo:** Leggere questo argomento per informazioni su Gestione statistiche per Skype for Business Server.
@@ -28,7 +23,7 @@ ms.locfileid: "60857403"
 
 È possibile utilizzare Gestione statistiche per identificare i problemi di prestazioni in corso, visualizzare i risultati di una modifica pianificata all'ambiente, tenere traccia della risoluzione delle interruzioni e molto altro ancora. Gestione statistiche è configurato con soglie KHI (Key Health Indicator) e può essere personalizzato in base alle esigenze specifiche della distribuzione.
 
-È possibile distribuire Gestione statistiche in una distribuzione locale in cui un singolo server ospita tutti i componenti di Gestione statistiche sul lato server. Per ulteriori informazioni sulla distribuzione di Gestione statistiche, vedere [Deploy Statistics Manager for Skype for Business Server](deploy.md). Se si dispone già di una distribuzione esistente di Gestione statistiche, ma non si è ancora eseguito l'aggiornamento alla versione 2.0, vedere [Novità della versione 2.0](plan.md#BKMK_WhatsNew) e Gestione statistiche di aggiornamento per [Skype for Business Server](upgrade.md).
+È possibile distribuire Gestione statistiche in una distribuzione locale in cui un singolo server ospita tutti i componenti di Gestione statistiche sul lato server. Per ulteriori informazioni sulla distribuzione di Gestione statistiche, vedere [Deploy Statistics Manager for Skype for Business Server](deploy.md). Se si dispone già di una distribuzione esistente di Gestione statistiche, ma non è stato ancora eseguito l'aggiornamento alla versione 2.0, vedere [Novità della versione 2.0](plan.md#BKMK_WhatsNew) e Gestione statistiche di aggiornamento per [Skype for Business Server](upgrade.md).
 
 In questa sezione sono contenute le seguenti sezioni:
 
@@ -113,7 +108,7 @@ Gestione statistiche è costituito dai componenti seguenti:
 
 - **Sito Web.** Interfaccia utente che riunisce tutte le funzionalità disponibili nel sistema.
 
-Gestione statistiche richiede inoltre **Redis**, un server di struttura dei dati open sourced per la memorizzazione nella cache in memoria. Per ulteriori informazioni sul download di Redis, vedere [Deploy Statistics Manager.](deploy.md#BKMK_Deploy)
+Gestione statistiche richiede inoltre **Redis**, un server di struttura dei dati open source per la memorizzazione nella cache in memoria. Per ulteriori informazioni sul download di Redis, vedere [Deploy Statistics Manager](deploy.md#BKMK_Deploy) .
 
 ## <a name="on-premises-deployment"></a>Distribuzione in locale
 <a name="BKMK_DeploymentOptions"> </a>
@@ -159,7 +154,7 @@ Durante l'installazione, le porte del firewall per listener e sito Web vengono c
 
 In una distribuzione locale, in cui un singolo server ospita tutti i componenti di Gestione statistiche sul lato server, un server con 16 GB di RAM e 4 CPU dovrebbe essere in grado di supportare in media circa 150 campioni al secondo. Per determinare il numero di contatori/agenti che è possibile supportare, utilizzare il calcolo seguente:
 
-100 server \* 80 contatori 1 campione al minuto da \* ogni agente / 60 secondi = ~ 133 campioni al secondo.
+100 server \*80 contatori \* 1 campione al minuto da ogni agente / 60 secondi = ~ 133 campioni al secondo.
 
 ## <a name="security-considerations"></a>Considerazioni sulla sicurezza
 <a name="BKMK_Security"> </a>

@@ -1,24 +1,19 @@
 ---
 title: Eliminare una configurazione di archiviazione in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: fed12cb5-2c80-476a-af3b-d55b450c5fbc
 description: 'Riepilogo: informazioni su come eliminare una configurazione di archiviazione in Skype for Business Server.'
-ms.openlocfilehash: defd9377453234e400dbf75a7d0261c52904adda
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60851029"
 ---
+
 # <a name="delete-an-archiving-configuration-in-skype-for-business-server"></a>Eliminare una configurazione di archiviazione in Skype for Business Server
 
 **Riepilogo:** Informazioni su come eliminare una configurazione di archiviazione in Skype for Business Server.
@@ -31,7 +26,7 @@ Per eliminare una configurazione di archiviazione tramite il Pannello di control
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello Skype for Business Server controllo. 
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Configurazione archiviazione**.
     
@@ -44,7 +39,7 @@ Per eliminare una configurazione di archiviazione tramite il Pannello di control
     
 ## <a name="delete-an-archiving-configuration-by-using-windows-powershell"></a>Eliminare una configurazione di archiviazione tramite Windows PowerShell
 
-È inoltre possibile eliminare una configurazione di archiviazione utilizzando il cmdlet **Remove-CsArchivingConfiguration.**
+È inoltre possibile eliminare una configurazione di archiviazione utilizzando il cmdlet **Remove-CsArchivingConfiguration** .
   
 Ad esempio, il comando seguente rimuove le impostazioni di configurazione di archiviazione applicate al sito Redmond. Quando viene eliminato un criterio configurato nell'ambito del sito, gli utenti gestiti in precedenza dal criterio del sito verranno invece regolati automaticamente dal criterio di archiviazione globale:
   
@@ -58,7 +53,7 @@ Il comando seguente rimuove tutte le impostazioni di configurazione dell'archivi
 Get-CsArchivingConfiguration -Filter "site:*" | Remove-CsArchivingConfiguration
 ```
 
-Il comando successivo consente di rimuovere tutte le impostazioni di configurazione dell'archiviazione in cui Exchange'archiviazione è stata disabilitata:
+Il comando successivo rimuove tutte le impostazioni di configurazione dell'archiviazione in cui Exchange'archiviazione è stata disabilitata:
   
 ```PowerShell
 Get-CsArchivingConfiguration | Where-Object {$_.EnableExchangeArchiving -eq $False} | Remove-CsArchivingConfiguration
@@ -70,4 +65,4 @@ Get-CsArchivingConfiguration | Where-Object {$_.EnableExchangeArchiving -eq $Fal
 Remove-CsArchivingConfiguration -Identity global
 ```
 
-Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsArchivingConfiguration.](/powershell/module/skype/remove-csarchivingconfiguration?view=skype-ps)
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsArchivingConfiguration](/powershell/module/skype/remove-csarchivingconfiguration?view=skype-ps) .

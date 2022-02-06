@@ -1,27 +1,22 @@
 ---
 title: Regola versione client
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.lscp.ClientCVPolicyRuleEdit
+  - ms.lync.lscp.ClientCVPolicyRuleEdit
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 6e7e94c2-1475-4334-b8da-716b24a4c255
-ROBOTS: NOINDEX, NOFOLLOW
-description: I criteri versione client sono composti da una serie di regole versione client, che definiscono le azioni che dovrebbero essere eseguite quando gli utenti tentano di eseguire l'accesso con specifici client o versioni client.
-ms.openlocfilehash: 41e3e80e4cd836214f62fa40deab0a32077dfac1
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60835804"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'I criteri versione client sono composti da una serie di regole versione client, che definiscono le azioni che dovrebbero essere eseguite quando gli utenti tentano di eseguire l''accesso con specifici client o versioni client.'
 ---
+
 # <a name="client-version-rule"></a>Regola versione client
 
 I criteri versione client sono composti da una serie di regole versione client, che definiscono le azioni che dovrebbero essere eseguite quando gli utenti tentano di eseguire l'accesso con specifici client o versioni client.
@@ -96,7 +91,7 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 
   - **Blocco** Impedisce al client di accedere.
 
-  - **Blocco e aggiornamento** Impedisce al client di eseguire l'accesso e consente al client di ricevere gli aggiornamenti da Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
+  - **Blocco e aggiornamento** Impedisce al client di eseguire l'accesso e consente al client di ricevere gli aggiornamenti Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
 
   - **Blocca con URL** Impedisce al client di eseguire l'accesso e visualizza un messaggio sulla posizione da cui scaricare un'altra versione client. L'URL viene specificato nel campo **URL**.
 

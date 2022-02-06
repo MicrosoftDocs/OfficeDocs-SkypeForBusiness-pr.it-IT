@@ -1,31 +1,26 @@
 ---
 title: Creare o modificare una coda in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: b9d6366a-839f-4651-a01d-9254546cadeb
-description: Creare o modificare una coda di Response Group, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 6a4eb09e144bd7381ababdf37a0905c4ea9bac06
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60842428"
+description: Creare o modificare una coda di Response Group in Skype for Business Server VoIP aziendale.
 ---
+
 # <a name="create-or-modify-a-queue-in-skype-for-business"></a>Creare o modificare una coda in Skype for Business
  
-Creare o modificare una coda di Response Group, in Skype for Business Server VoIP aziendale.
+Creare o modificare una coda di Response Group in Skype for Business Server VoIP aziendale.
   
 Le code contengono i chiamanti fino a quando un agente non risponde alla chiamata. Quando l'applicazione Response Group cerca un agente disponibile, cerca i gruppi di agenti nell'ordine in cui sono elencati. È possibile selezionare i gruppi di agenti assegnati alla coda e specificare il comportamento di quest'ultima, ad esempio limitando il numero di chiamate che possono essere contenute nella coda e per quanto tempo una chiamata può restare in attesa che un agente risponda.
   
@@ -71,11 +66,11 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     
    - Per disconnettere la chiamata dopo il timeout, fare clic su **Disconnetti**.
     
-   - Per inoltrare la chiamata alla segreteria telefonica, fare clic su Inoltra alla segreteria telefonica e quindi nel campo Indirizzo **SIP** digitare un indirizzo della segreteria telefonica nel formato sip: *\<username\>* @  *\<domainname\>* (ad esempio, sip:bob@contoso.com).
+   - Per inoltrare la chiamata alla segreteria telefonica, fare clic su Inoltra alla segreteria **telefonica e quindi** nel campo Indirizzo **SIP** digitare un indirizzo della segreteria telefonica nel formato sip: *\<username\>*@ *\<domainname\>* (ad esempio, sip:bob@contoso.com).
     
-   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su Inoltra a numero di telefono **e** quindi nel campo Indirizzo **SIP** digitare il numero di telefono nel formato sip: *\<number\>* @  *\<domainname\>* (ad esempio, sip:+14255550121@contoso.com).
+   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su Inoltra a numero di telefono e quindi nel campo Indirizzo **SIP** digitare il numero di telefono nel formato sip: *\<number\>*@ *\<domainname\>* (ad esempio, sip:+14255550121@contoso.com).
     
-   - Per inoltrare la chiamata a un altro utente, fare clic su Inoltra all'indirizzo **SIP** e quindi nel campo Indirizzo **SIP** digitare l'URI dell'utente nel formato sip: _\<username\>_ @  _\<domainname\>_ .
+   - Per inoltrare la chiamata a un altro utente, fare clic su Inoltra a indirizzo **SIP** e quindi nel campo Indirizzo **SIP** digitare l'URI dell'utente nel formato sip: _\<username\>_@ _\<domainname\>_.
     
    - Per inoltrare la chiamata a un'altra coda, fare clic su **Inoltra a un'altra coda** e quindi selezionare la coda che si desidera utilizzare.
     
@@ -89,11 +84,11 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     
    - Per disconnettere la chiamata dopo il timeout, fare clic su **Disconnetti**.
     
-   - Per inoltrare la chiamata alla segreteria telefonica, fare clic su Inoltra alla segreteria telefonica e quindi nel campo Indirizzo **SIP** digitare un indirizzo della segreteria telefonica nel formato sip: *\<username\>* @  *\<domainname\>* (ad esempio, sip:bob@contoso.com).
+   - Per inoltrare la chiamata alla segreteria telefonica, fare clic su Inoltra alla segreteria **telefonica e quindi** nel campo Indirizzo **SIP** digitare un indirizzo della segreteria telefonica nel formato sip: *\<username\>*@ *\<domainname\>* (ad esempio, sip:bob@contoso.com).
     
-   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su Inoltra a numero di telefono **e** quindi nel campo Indirizzo **SIP** digitare il numero di telefono nel formato sip: *\<number\>* @  *\<domainname\>* (ad esempio, sip:+14255550121@contoso.com).
+   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su Inoltra a numero di telefono e quindi nel campo Indirizzo **SIP** digitare il numero di telefono nel formato sip: *\<number\>*@ *\<domainname\>* (ad esempio, sip:+14255550121@contoso.com).
     
-   - Per inoltrare la chiamata a un altro utente, fare clic su Inoltra all'indirizzo **SIP** e quindi nel campo Indirizzo **SIP** digitare l'URI dell'utente nel formato sip: _\<username\>_ @  _\<domainname\>_ .
+   - Per inoltrare la chiamata a un altro utente, fare clic su Inoltra a indirizzo **SIP** e quindi nel campo Indirizzo **SIP** digitare l'URI dell'utente nel formato sip: _\<username\>_@ _\<domainname\>_.
     
    - Per inoltrare la chiamata a un'altra coda, fare clic su **Inoltra a un'altra coda** e quindi selezionare la coda che si desidera utilizzare.
     
@@ -106,7 +101,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     > [!NOTE]
     > Se si è uno dei responsabili di Response Group delegati per un flusso di lavoro gestito, è possibile creare gruppi di agenti e code, nonché assegnare i gruppi di agenti alle code. 
   
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 3. Creare la richiesta da riprodurre quando viene raggiunta la soglia di timeout della coda e salvarla in una variabile. Nella riga di comando eseguire il comando seguente:
     
@@ -130,7 +125,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
    ```
 
    > [!NOTE]
-   > Per informazioni dettagliate sulle possibili azioni e sulla relativa sintassi, [vedere New-CsRgsCallAction.](/powershell/module/skype/new-csrgscallaction?view=skype-ps) 
+   > Per informazioni dettagliate sulle possibili azioni e sulla relativa sintassi, [vedere New-CsRgsCallAction](/powershell/module/skype/new-csrgscallaction?view=skype-ps). 
   
     Ad esempio:
     
@@ -160,7 +155,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
    ```
 
     > [!NOTE]
-    > Per informazioni dettagliate sulle possibili azioni e sulla relativa sintassi, [vedere New-CsRgsCallAction.](/powershell/module/skype/new-csrgscallaction?view=skype-ps) 
+    > Per informazioni dettagliate sulle possibili azioni e sulla relativa sintassi, [vedere New-CsRgsCallAction](/powershell/module/skype/new-csrgscallaction?view=skype-ps). 
   
     Ad esempio:
     
