@@ -1,28 +1,23 @@
 ---
 title: Federazione (strumento di pianificazione)
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.plan.Federation
-- ms.lync.plan.Federation
+  - ms.lync.plan.Federation
+  - ms.lync.plan.Federation
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 63ea8a5e-a040-4892-9440-0fdbeef66fc0
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 description: I server perimetrali possono essere configurati per consentire agli utenti interni ed esterni di accedere ai contatti nelle organizzazioni partner o nei servizi.
-ms.openlocfilehash: 768d67d236e5da2fc53ee63eb3ba1765c1248bcc
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60840408"
 ---
+
 # <a name="federation-planning-tool"></a>Federazione (strumento di pianificazione)
  
 I server perimetrali possono essere configurati per consentire agli utenti interni ed esterni di accedere ai contatti nelle organizzazioni partner o nei servizi.

@@ -1,34 +1,29 @@
 ---
 title: Configurare la distribuzione locale per Riunione Skype Broadcast
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- Ent_O365_Hybrid
-- Ent_O365_Hybrid_Top
-- IT_Skype16
-- IT_Skype4B_Hybrid
+  - Ent_O365_Hybrid
+  - Ent_O365_Hybrid_Top
+  - IT_Skype16
+  - IT_Skype4B_Hybrid
 ms.assetid: 2979802e-fc6b-4555-bc43-7cd48f6a1d88
 description: 'Riepilogo: informazioni sui passaggi da eseguire per configurare Riunione Skype Broadcast per la distribuzione ibrida Skype for Business Server locale.'
-ms.openlocfilehash: a9dd4e90248548863237445f9a4b9876979321f2
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60843979"
 ---
+
 # <a name="configure-your-on-premises-deployment-for-skype-meeting-broadcast"></a>Configurare la distribuzione locale per Riunione Skype Broadcast
  
 **Riepilogo:** Informazioni sui passaggi da eseguire per configurare Riunione Skype Broadcast per la distribuzione ibrida Skype for Business Server locale.
   
-Riunione Skype Broadcast è un servizio online che fa parte di Office 365. Se si esegue Skype for Business Server locale e si desidera usare Riunione Skype Broadcast nell'ambiente, è necessario seguire i passaggi di configurazione descritti in questo argomento. Prima di iniziare, l'ambiente deve essere configurato per la distribuzione ibrida con Skype for Business Online. Per ulteriori informazioni, vedere [Plan hybrid connectivity between Skype for Business Server and Skype for Business Online](../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) e Deploy hybrid connectivity between Skype for Business Server and Skype for Business [Online.](../../SfbHybrid/hybrid/configure-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)
+Riunione Skype Broadcast è un servizio online che fa parte di Office 365. Se si esegue Skype for Business Server locale e si desidera usare Riunione Skype Broadcast nell'ambiente, è necessario seguire i passaggi di configurazione descritti in questo argomento. Prima di iniziare, l'ambiente deve essere configurato per la distribuzione ibrida con Skype for Business Online. Per ulteriori informazioni, vedere [Plan hybrid connectivity between Skype for Business Server and Skype for Business Online](../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) e [Deploy hybrid connectivity between Skype for Business Server and Skype for Business Online](../../SfbHybrid/hybrid/configure-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json).
   
 ## <a name="configure-your-hybrid-environment-for-skype-meeting-broadcast"></a>Configurare l'ambiente ibrido per Riunione Skype Broadcast
 
@@ -44,7 +39,7 @@ Per abilitare la federazione con Skype for Business online, è necessario config
   
 1. Avviare il Skype for Business Server di controllo e selezionare **Accesso esterno** a sinistra.
     
-2. Selezionare **Provider federati SIP e** fare clic su **Nuovo.**
+2. Selezionare **Provider federati SIP e** fare clic su **Nuovo**.
     
 3. Configurare il nuovo provider con le impostazioni seguenti:
     
@@ -65,9 +60,9 @@ Successivamente, è necessario aggiungere domini federati SIP all'elenco dei dom
   
 1. Avviare il Skype for Business Server di controllo e selezionare **Accesso esterno** a sinistra.
     
-2. Selezionare **Domini federati SIP e** fare clic su **Nuovo.**
+2. Selezionare **Domini federati SIP e** fare clic su **Nuovo**.
     
-3. Per **nome di dominio (o FQDN):** immettere il dominio, ripetendo questa procedura per ognuno dei domini seguenti:
+3. Per **nome di dominio (o FQDN):**, immettere il dominio, ripetendo questa procedura per ognuno dei domini seguenti:
     
    - noammeetings.lync.com
     
@@ -86,4 +81,4 @@ New-CsAllowedDomain -Identity "apacmeetings.lync.com"
 New-CsAllowedDomain -Identity "resources.lync.com"
 ```
 
-Dopo aver completato questi passaggi di configurazione, puoi iniziare a usare Riunione Skype Broadcast nella distribuzione. Per ulteriori informazioni su Riunione Skype Broadcast, vedere [What is a Riunione Skype Broadcast?](https://go.microsoft.com/fwlink/?LinkId=617071) e Riunione Skype Broadcast Admin [Guide](../../SfbOnline/set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast.md).
+Dopo aver completato questi passaggi di configurazione, puoi iniziare a usare Riunione Skype Broadcast nella distribuzione. Per ulteriori informazioni su Riunione Skype Broadcast, vedere [What is a Riunione Skype Broadcast?](https://go.microsoft.com/fwlink/?LinkId=617071) e [Riunione Skype Broadcast Admin Guide](../../SfbOnline/set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast.md).

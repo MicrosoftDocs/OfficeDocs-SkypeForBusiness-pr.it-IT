@@ -1,27 +1,22 @@
 ---
 title: Installare e configurare opzioni di disponibilità per Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- Strat_SB_Admin
-ms.custom: ''
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: fb0faac8-ca1c-4abb-9959-d19def294c64
 description: Informazioni su come installare e configurare le opzioni occupato in Skype for Business Server.
-ms.openlocfilehash: 5e0dde157fc39ab7c24ddd297e858ce5a06e888f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60835914"
 ---
+
 # <a name="install-and-configure-busy-options-for-skype-for-business-server"></a>Installare e configurare opzioni di disponibilità per Skype for Business Server
 
 Informazioni su come installare e configurare le opzioni occupato in Skype for Business Server.
@@ -44,7 +39,7 @@ Assicurarsi di avere installato la versione più recente di Skype for Business S
 
 1. Eseguire il Stop-CsWindowsService comando.
 
-2. Eseguire il SkypeServerUpdateInstaller.exe in ogni Front End Server di un pool.
+2. Eseguire il SkypeServerUpdateInstaller.exe di installazione in ogni Front End Server di un pool.
 
 3. Eseguire il SkypeServerUpdateInstaller.exe su ogni Survivable Branch Server (SBS), se si desidera garantire il supporto per il failover in SBS.
 
@@ -91,7 +86,7 @@ Il programma di installazione distribuirà la versione più recente dell'applica
    Update-CsAdminRole
    ```
 
-5. Infine, avviare i Skype for Business Server Windows in tutti i Front End Server in tutti i pool in cui è stato installato e abilitato Opzioni occupato eseguendo il [comando Start-CsWindowsService:](/powershell/module/skype/start-cswindowsservice?view=skype-ps)
+5. Infine, avviare i Skype for Business Server Windows in tutti i Front End Server in tutti i pool in cui è stato installato e abilitato Opzioni occupato eseguendo il [comando Start-CsWindowsService](/powershell/module/skype/start-cswindowsservice?view=skype-ps):
 
    ```powershell
    Start-CsWindowsService
@@ -99,7 +94,7 @@ Il programma di installazione distribuirà la versione più recente dell'applica
 
 ## <a name="configure"></a>Configurazione
 
-Per configurare le opzioni occupato, utilizzare il cmdlet [Set-CsBusyOptions.](https://technet.microsoft.com/library/8ffbb832-3e55-4d6c-9a7c-5ce2df22de2e.aspx)
+Per configurare le opzioni occupato, utilizzare il cmdlet [Set-CsBusyOptions](https://technet.microsoft.com/library/8ffbb832-3e55-4d6c-9a7c-5ce2df22de2e.aspx) .
 
 Ad esempio, il comando seguente configura le opzioni di occupato per l'utente "Davide Garghentini". In questa configurazione, qualsiasi chiamata a "Ken Myer" restituirà un segnale di occupato quando è già in una chiamata:
 
@@ -113,19 +108,19 @@ Nell'esempio successivo, il comando configura le opzioni di occupato per l'utent
 Set-CsBusyOptions -Identity "Chrystal Velasquez" -ActionType VoicemailOnBusy
 ```
 
-È possibile recuperare informazioni di configurazione sulle opzioni di disponibilità utilizzando il cmdlet [Get-CsBusyOptions.](https://technet.microsoft.com/library/ff0e3b1c-c41d-41e4-9468-0cb057aef9fb.aspx) Nell'esempio seguente viene restituita l'impostazione Opzioni occupato per "KenMyer@Contoso.com":
+È possibile recuperare informazioni di configurazione sulle opzioni di disponibilità utilizzando il cmdlet [Get-CsBusyOptions](https://technet.microsoft.com/library/ff0e3b1c-c41d-41e4-9468-0cb057aef9fb.aspx) . Nell'esempio seguente viene restituita l'impostazione Opzioni occupato per "KenMyer@Contoso.com":
 
 ```powershell
 Get-CsBusyOptions -Identity sip:KenMyer@Contoso.com
 ```
 
-È possibile rimuovere opzioni occupato utilizzando il cmdlet [Remove-CsBusyOptions.](https://technet.microsoft.com/library/159e5931-10f1-4226-bcc4-38548f88f0d4.aspx) Il comando seguente consente di rimuovere le opzioni di occupato per "Ken Myer":
+È possibile rimuovere opzioni occupato utilizzando il cmdlet [Remove-CsBusyOptions](https://technet.microsoft.com/library/159e5931-10f1-4226-bcc4-38548f88f0d4.aspx) . Il comando seguente consente di rimuovere le opzioni di occupato per "Ken Myer":
 
 ```powershell
 Remove-CsBusyOptions -Identity "Ken Myer"
 ```
 
-Per informazioni dettagliate sui cmdlet utilizzati per configurare le opzioni occupato, vedere il contenuto di riferimento tecnico per [Set-CsBusyOptions,](https://technet.microsoft.com/library/8ffbb832-3e55-4d6c-9a7c-5ce2df22de2e.aspx) [Get-CsBusyOptions](https://technet.microsoft.com/library/ff0e3b1c-c41d-41e4-9468-0cb057aef9fb.aspx)e [Remove-CsBusyOptions.](https://technet.microsoft.com/library/159e5931-10f1-4226-bcc4-38548f88f0d4.aspx)
+Per informazioni dettagliate sui cmdlet utilizzati per configurare le opzioni occupato, vedere il contenuto di riferimento tecnico per [Set-CsBusyOptions](https://technet.microsoft.com/library/8ffbb832-3e55-4d6c-9a7c-5ce2df22de2e.aspx), [Get-CsBusyOptions](https://technet.microsoft.com/library/ff0e3b1c-c41d-41e4-9468-0cb057aef9fb.aspx) e [Remove-CsBusyOptions](https://technet.microsoft.com/library/159e5931-10f1-4226-bcc4-38548f88f0d4.aspx).
 
 ## <a name="enable-logging"></a>Abilitare la registrazione
 
@@ -154,4 +149,4 @@ ScriptName :
 Script     :
 </pre>
 
-È inoltre possibile utilizzare Windows visualizzatore eventi per verificare che l'installazione delle opzioni occupato sia stata eseguita correttamente e che Skype for Business Server le opzioni occupato siano state caricate correttamente. Per verificare le opzioni di occupato, aprire Visualizzatore eventi - Registri applicazioni e servizi **\> - Skype \> (o Lync) Server** e cercare ID evento = 30253.
+È inoltre possibile utilizzare Windows visualizzatore eventi per verificare che l'installazione di Opzioni occupato sia stata eseguita correttamente e che Skype for Business Server le opzioni occupato siano state caricate correttamente. Per verificare le opzioni occupato, aprire Visualizzatore eventi **-\> Registri applicazioni e servizi -\> Skype (o Lync) Server** e cercare ID evento = 30253.

@@ -1,27 +1,22 @@
 ---
 title: Espansione delle impostazioni del trunk
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.TrunkSettingsExpander
+  - ms.lync.tb.TrunkSettingsExpander
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 3d00e8f4-e599-4094-a4a1-34fd6e8a5580
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 description: 'Per modificare le impostazioni di un trunk SIP, eseguire le operazioni seguenti:'
-ms.openlocfilehash: 922e401ea74b554681dadbc94b7c7f4178a618e8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829230"
 ---
+
 # <a name="trunk-settings-expander"></a>Espansione delle impostazioni del trunk
 
 Per modificare le impostazioni di un trunk SIP, eseguire le operazioni seguenti:
@@ -34,12 +29,12 @@ Per modificare le impostazioni di un trunk SIP, eseguire le operazioni seguenti:
 
  **Protocollo di trasporto SIP**: il protocollo usato è TCP o TLS. TLS corrisponde all'impostazione predefinita. Per determinare il protocollo supportato dal gateway in uso, vedere la documentazione del fornitore del gateway. L'impostazione predefinita TLS deve essere considerata la scelta più sicura, se il gateway supporta tale protocollo.
 
- **Mediation Server associato:** selezionare un Mediation Server esistente dalla distribuzione da associare al trunk SIP.
+ **Mediation Server associato**: selezionare un Mediation Server esistente dalla distribuzione da associare al trunk SIP.
 
 > [!NOTE]
 > Solo il trunk radice può essere associato a un Mediation Server.
 
- **Porta Mediation Server associata:** valore obbligatorio, impostato sul valore su cui il Mediation Server è configurato per l'ascolto.
+ **Porta Mediation Server associata**: un valore obbligatorio, impostato sul valore su cui il Mediation Server è configurato per l'ascolto.
 
 ![Espansione Impostazioni trunk.](../../../media/Trunk_Settings_Expander.jpg)
 

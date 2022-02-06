@@ -1,25 +1,20 @@
 ---
 title: (Facoltativo) Verificare la distribuzione di Response Group in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 202ca4ab-8e6d-44a4-b7c8-071133074feb
 description: Verificare l'esito positivo della distribuzione di Response Group in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 7dd76dad69995d6e54fa4743792248cd046eb041
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861843"
 ---
+
 # <a name="optional-verify-response-group-deployment-in-skype-for-business"></a>(Facoltativo) Verificare la distribuzione di Response Group in Skype for Business
  
 Verificare l'esito positivo della distribuzione di Response Group in Skype for Business Server VoIP aziendale.

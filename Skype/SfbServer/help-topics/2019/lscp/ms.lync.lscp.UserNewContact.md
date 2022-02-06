@@ -1,27 +1,22 @@
 ---
 title: Utenti Nuovi oggetti Contatto
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.lscp.UserNewContact
+  - ms.lync.lscp.UserNewContact
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 05e0d949-0cc6-4d3c-b935-a09a6ad52adc
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 3e119d6a20a573caaa4b6b851ea02d7e30ea7e71
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60841798"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Per saperne di più: fare clic sul collegamento all''attività che si desidera eseguire.'
 ---
+
 # <a name="users-new-contact-objects"></a>Utenti: nuovi oggetti contatto
 
 Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.

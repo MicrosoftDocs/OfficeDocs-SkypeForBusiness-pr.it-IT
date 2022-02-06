@@ -1,27 +1,22 @@
 ---
 title: Modifica configurazione Access Edge
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/23/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.ExtEdgeEdit
+  - ms.lync.lscp.ExtEdgeEdit
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: ece2603a-dce5-46ef-b476-7da136465efc
-description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: bb420bf0ee4105efaccfaf1bf9e4beb63f951eb3
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60832340"
+description: 'Per saperne di più: fare clic sul collegamento all''attività che si desidera eseguire.'
 ---
+
 # <a name="access-edge-configuration-edit"></a>Configurazione Access Edge: modifica
 
 Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.

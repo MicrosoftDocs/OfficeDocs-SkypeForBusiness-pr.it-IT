@@ -1,33 +1,28 @@
 ---
 title: Gestire l'app Tasks per l'organizzazione in Microsoft Teams
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: andfried
 search.appverid: MET150
 searchScope:
-- Microsoft Teams
-- Microsoft Cloud for Healthcare
-- Microsoft Cloud for Retail
+  - Microsoft Teams
+  - Microsoft Cloud for Healthcare
+  - Microsoft Cloud for Retail
 audience: admin
 description: Informazioni su come gestire l'app Tasks per gli utenti nell'organizzazione.
 ms.localizationpriority: medium
 MS.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
-- microsoftcloud-healthcare
-- microsoftcloud-retail
+  - Teams_ITAdmin_Help
+  - M365-collaboration
+  - microsoftcloud-healthcare
+  - microsoftcloud-retail
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 6412da5bdce345c1d187fd150b3877a63602b40b
-ms.sourcegitcommit: 159399f2325af644c20551925c1fa34bf76aad43
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62288354"
+  - Microsoft Teams
 ---
+
 # <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Tasks per l'organizzazione in Microsoft Teams
 
 ## <a name="overview-of-tasks"></a>Panoramica di Tasks
@@ -43,7 +38,7 @@ Per le organizzazioni che vogliono semplificare la gestione delle attività per 
 
 ## <a name="what-you-need-to-know-about-tasks"></a>Informazioni necessarie riguardo Tasks
 
-Tasks è disponibile sia come app che come scheda in un canale. L'app mostra sia le singole attività To Do di Planner che le attività del team. La scheda mostra solo le attività del team.
+Tasks è disponibile sia come app che come scheda in un canale. L'app mostra sia le singole attività To Do attività del team da Planner. La scheda mostra solo le attività del team.
 
 Con Tasks, gli utenti ottengono un'esperienza desktop, Web e per dispositivi mobili. Se Tasks è installato nel client desktop di Teams, gli utenti lo vedranno anche nei client Web e per dispositivo mobile di Teams. L'eccezione è guest. È importante sapere che i gli utenti guest possono accedere solo all’app Tasks dal client per dispositivi mobili Teams. Gli utenti guest visualizzeranno le schede Tasks nei client desktop e Web di Teams.
 
@@ -77,13 +72,13 @@ Per consentire o bloccare l'uso di Tasks a utenti specifici dell'organizzazione,
 
 ### <a name="use-an-app-setup-policy-to-pin-tasks-to-teams"></a>Usare un criterio di configurazione dell'app per aggiungere Tasks a Teams
 
-I criteri di configurazione delle app consentono di personalizzare Teams per evidenziare le app più importanti per gli utenti dell'organizzazione. Le app impostate in un criterio vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore dei client mobili di Teams, in cui gli utenti possono accedervi in modo rapido e semplice.
+I criteri di configurazione delle app consentono di personalizzare Teams per evidenziare le app più importanti per gli utenti dell'organizzazione. Le app impostate in un criterio vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore dei client mobili di Teams, in cui gli utenti possono accedervi in modo semplice e rapido.
 
 Per aggiungere l'app Tasks agli utenti, è possibile modificare i criteri globali (impostazione predefinita a livello di organizzazione) oppure creare e assegnare criteri di configurazione dell'app personalizzati. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
 
 ### <a name="a-users-my-tasks-is-visible-if-the-user-is-licensed-for-exchange-online"></a>Le Mie attività di un utente sono visibili se l’utente ha una licenza Exchange Online
 
-Se non si vuole consentire a un utente di visualizzare le **Mie attività**, è possibile nasconderl0. Per nascondere **Le mie attività**, [rimuovere la licenza Exchange Online'utente](/microsoft-365/admin/manage/remove-licenses-from-users). È importante sapere che, dopo aver rimosso una licenza di Exchange Online, l'utente non ha più accesso alla propria cassetta postale.  I dati della cassetta postale vengono mantenuti per 30 giorni, dopo i quali i dati verranno rimossi e non potranno essere recuperati a meno che la cassetta postale non venga impostata su [Blocco sul posto o Blocco per controversia legale](/exchange/security-and-compliance/in-place-and-litigation-holds).
+Se non si vuole consentire a un utente di visualizzare le **Mie attività**, è possibile nasconderl0. Per nascondere **Le mie attività**, [rimuovere la licenza Exchange Online utente](/microsoft-365/admin/manage/remove-licenses-from-users). È importante sapere che, dopo aver rimosso una licenza di Exchange Online, l'utente non ha più accesso alla propria cassetta postale.  I dati della cassetta postale vengono mantenuti per 30 giorni, dopo i quali i dati verranno rimossi e non potranno essere recuperati a meno che la cassetta postale non venga impostata su [Blocco sul posto o Blocco per controversia legale](/exchange/security-and-compliance/in-place-and-litigation-holds).
 
 Non è consigliabile rimuovere una licenza di Exchange Online per information worker, ma potrebbero esserci alcuni **scenari in cui** è possibile nascondere le attività personali in questo modo, ad esempio per i frontline worker che non dipendono dalla posta elettronica.
 

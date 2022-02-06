@@ -1,34 +1,29 @@
 ---
 title: Stato topologia
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 5/21/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.TopoStatusMain
+  - ms.lync.lscp.TopoStatusMain
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: d5f858f5-df8e-43a9-80aa-6ba1ddb27459
 description: 'Nella pagina Topologia: Stato viene visualizzato lo stato dei server nella Skype for Business topologia.'
-ms.openlocfilehash: c64a2d5c4f5884ffcaf7e9480c75e447111a60db
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60848889"
 ---
+
 # <a name="topology-status"></a>Topologia: stato
 
 Nella **pagina Topologia**: **Stato** viene visualizzato lo stato dei server nella Skype for Business topologia.
 
 ## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
 
-Nella pagina Topologia : Stato è possibile eseguire le **attività** seguenti:
+È possibile eseguire le attività seguenti nella **pagina Topologia****: Stato**:
 
 - [Visualizzare un elenco di computer che eseguono Lync Server 2010](/previous-versions/office/lync-server-2013/lync-server-2013-view-a-list-of-computers-running-lync-server-2013)
 
@@ -38,4 +33,4 @@ Nella pagina Topologia : Stato è possibile eseguire le **attività** seguenti:
 
 - [Impedisci nuove connessioni ai servizi](/previous-versions/office/lync-server-2013/lync-server-2013-prevent-sessions-for-services)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015](../../manage/manage.md).

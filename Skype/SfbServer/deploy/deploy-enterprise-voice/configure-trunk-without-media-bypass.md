@@ -1,33 +1,28 @@
 ---
-title: 'Skype for Business Server: configurare un trunk senza bypass multimediale'
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: 'Skype for Business Server: Configurare un trunk senza bypass multimediale'
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 3422e93e-7bd2-4470-968c-dc38345b18ca
 description: 'Riepilogo: configurare un trunk senza bypass multimediale abilitato per Skype for Business Server.'
-ms.openlocfilehash: bccc88e442532ebf9a2c503fa851965447eb1e85
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60839118"
 ---
-# <a name="skype-for-business-server-configure-a-trunk-without-media-bypass"></a>Skype for Business Server: configurare un trunk senza bypass multimediale
+
+# <a name="skype-for-business-server-configure-a-trunk-without-media-bypass"></a>Skype for Business Server: Configurare un trunk senza bypass multimediale
 
 **Riepilogo:** Configurare un trunk senza bypass multimediale abilitato per Skype for Business Server.
 
-Per configurare un trunk con il bypass multimediale disabilitato, attenersi alla procedura che segue. Se si desidera configurare un trunk con il bypass multimediale abilitato, vedere [Configure a trunk with media bypass in Skype for Business Server](configure-trunk-with-media-bypass.md).
+Per configurare un trunk con il bypass multimediale disabilitato, attenersi alla procedura che segue. Se si desidera configurare un trunk con bypass multimediale abilitato, vedere [Configure a trunk with media bypass in Skype for Business Server](configure-trunk-with-media-bypass.md).
 
 Una configurazione trunk, come quella descritta di seguito, raggruppa un set di parametri che vengono applicati ai trunk assegnati a questa configurazione trunk. Per una determinata configurazione trunk è possibile specificare un ambito globale (corrispondente a tutti i trunk che non presentano una configurazione di sito o di pool più specifica) o un ambito di sito o di pool. La configurazione trunk a livello di pool viene usata per definire un singolo trunk come ambito di una determinata configurazione trunk.
 
@@ -43,16 +38,16 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 
    - Fare clic su **Nuovo** e quindi selezionare un ambito per la nuova configurazione trunk:
 
-   - **Trunk sito**: scegliere il sito per la configurazione trunk in **Selezionare un sito** e quindi fare clic su **OK.** Si noti che se è già stata creata una configurazione trunk per un sito, tale sito non verrà visualizzato in **Seleziona un sito**. La configurazione trunk verrà applicata a tutti i trunk presenti nel sito.
+   - **Trunk sito**: scegliere il sito per la configurazione trunk in **Selezionare un sito** e quindi fare clic su **OK**. Si noti che se è già stata creata una configurazione trunk per un sito, tale sito non verrà visualizzato in **Seleziona un sito**. La configurazione trunk verrà applicata a tutti i trunk presenti nel sito.
 
    - **Trunk pool**: scegliere il nome del trunk al quale si applica questa configurazione trunk in **Seleziona un servizio** e fare clic su **OK**. Questo trunk può essere il trunk radice o qualsiasi altro trunk definito in Generatore di topologie. Si noti che se è già stata creata una configurazione trunk per un trunk specifico, tale trunk non verrà visualizzato in **Seleziona un servizio**.
 
      > [!NOTE]
-     > Dopo aver selezionato l'ambito della configurazione trunk, non è possibile modificarlo. > il **campo Nome** è precompilato con il nome del sito o del servizio associato alla configurazione trunk e non può essere modificato.
+     > Dopo aver selezionato l'ambito della configurazione trunk, non è possibile modificarlo. > Il **campo Nome** è precompilato con il nome del sito o del servizio associato alla configurazione trunk e non può essere modificato.
 
 4. Selezionare una delle opzioni di **Livello di supporto crittografia** seguenti:
 
-   - **Obbligatorio:** è necessario utilizzare la crittografia SRTP (Secure Realtime Transport Protocol) per proteggere il traffico tra Mediation Server e il gateway o PBX (Private Branch eXchange).
+   - **Obbligatorio**: è necessario utilizzare la crittografia SRTP (Secure Realtime Transport Protocol) per proteggere il traffico tra Mediation Server e il gateway o PBX (Private Branch eXchange).
 
    - **Facoltativo**: la crittografia SRTP verrà utilizzata se supportata dal provider di servizi o dal produttore dell'apparecchiatura.
 
@@ -60,11 +55,11 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 
 5. Verificare che la casella di controllo **Abilita bypass multimediale** sia deselezionata.
 
-6. Selezionare  la casella di controllo Elaborazione multimediale centralizzata se è presente un punto di terminazione multimediale noto, ad esempio un gateway PSTN (Public Switched Telephone Network) in cui la terminazione multimediale ha lo stesso IP della terminazione della segnalazione. Deselezionare questa casella di controllo se il trunk non dispone di un media termination point noto.
+6. Selezionare la  casella di controllo Elaborazione multimediale centralizzata se è presente un punto di terminazione multimediale noto, ad esempio un gateway PSTN (Public Switched Telephone Network) in cui la terminazione multimediale ha lo stesso IP della terminazione della segnalazione. Deselezionare questa casella di controllo se il trunk non dispone di un media termination point noto.
 
-7. Se il trunk peer supporta la ricezione di richieste SIP REFER dal Mediation Server, selezionare la casella di controllo Abilita invio **riferimento al gateway.**
+7. Se il trunk peer supporta la ricezione di richieste SIP REFER dal Mediation Server, selezionare la casella di controllo Abilita invio **riferimento al gateway** .
 
-8. (Facoltativo) Per abilitare il routing tra trunk, associare e configurare i record utilizzo PSTN a questa configurazione trunk. Gli utilizzi PSTN associati a questa configurazione trunk verranno applicati per tutte le chiamate in arrivo tramite il trunk che non proviene da un endpoint Skype for Business Server remoto. Per gestire i record utilizzo PSTN associati a una configurazione trunk, usare uno di questi metodi:
+8. (Facoltativo) Per abilitare il routing tra trunk, associare e configurare i record utilizzo PSTN a questa configurazione trunk. Gli utilizzi PSTN associati a questa configurazione trunk verranno applicati a tutte le chiamate in arrivo tramite il trunk che non proviene da un endpoint Skype for Business Server remoto. Per gestire i record utilizzo PSTN associati a una configurazione trunk, usare uno di questi metodi:
 
    - Per selezionare uno o più record da un elenco di tutti i record di utilizzo PSTN disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. Evidenziare i record da associare a questa configurazione trunk e quindi fare clic su **OK**.
 
@@ -113,19 +108,19 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 9. Organizzare i record utilizzo PSTN in modo da ottenere prestazioni ottimali. Per modificare la posizione di un record nell'elenco, selezionare il record di utilizzo PSTN e fare clic sulle frecce su o giù.
 
     > [!IMPORTANT]
-    > L'ordine in cui i record utilizzo PSTN sono elencati nella configurazione trunk è significativo. Skype for Business Server attraversa l'elenco dall'alto verso il basso.
+    > L'ordine in cui i record utilizzo PSTN sono elencati nella configurazione trunk è significativo. Skype for Business Server l'elenco dall'alto verso il basso.
 
 10. Per abilitare il bypass multimediale per i client protetti da NAT o firewall, selezionare **Abilita latch RTP** e un SBC che supporti il latch.
 
 11. **Per abilitare l'invio** delle informazioni sulla cronologia delle chiamate al peer gateway del Mediation Server, è necessario selezionare Abilita cronologia chiamate di inoltro.
 
-12. Abilitare l'inoltro dei dati **P-Asserted-Identity** per consentire l'inoltro delle informazioni sull'autore delle chiamate PAI tra il lato Mediation Server e il lato gateway (e viceversa), se presenti.
+12. **Abilitare l'inoltro dei dati P-Asserted-Identity** per consentire l'inoltro delle informazioni sull'autore delle chiamate PAI tra il lato Mediation Server e il lato gateway (e viceversa), se presenti.
 
 13. Per abilitare il failover rapido, selezionare **Abilita timer di failover del routing in uscita**. Il gateway associato a questo trunk può inviare una notifica entro 10 secondi dall'inizio dell'elaborazione di una chiamata in uscita. Se questa notifica non viene ricevuta dal Mediation Server, si verificherà il reindirizzamento a un altro trunk. Nelle reti in cui la latenza potrebbe ritardare il tempo di risposta o il gateway impiega più di 10 secondi per rispondere, è consigliabile disabilitare il failover rapido.
 
 14. (Facoltativo) Associare e configurare le **Regole di conversione per il numero del chiamante** per il trunk. Tali regole sono applicabili al numero del chiamante per le chiamate in uscita.
 
-    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona.** In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
+    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
 
     - Per definire una nuova regola di conversione e associarla al trunk, fare clic su **Nuovo**. Per informazioni dettagliate sulle regole di conversione, vedere [Translation rules in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/translation-rules.md).
 
@@ -140,7 +135,7 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 
 15. (Facoltativo) Associare e configurare le **Regole di conversione per il numero chiamato** per il trunk. Tali regole sono applicabili al numero chiamato in una chiamata in uscita.
 
-    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona.** In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
+    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
 
     - Per definire una nuova regola di conversione e associarla al trunk, fare clic su **Nuovo**. Per informazioni dettagliate sulle regole di conversione, vedere [Translation rules in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/translation-rules.md).
 
@@ -156,14 +151,14 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 16. Assicurarsi che le regole di conversione del trunk siano disposte nell'ordine corretto. Per modificare la posizione di una regola nell'elenco, evidenziare il nome della regola e quindi fare clic sulla freccia su o giù.
 
     > [!IMPORTANT]
-    > Skype for Business Server l'elenco delle regole di conversione dall'alto verso il basso e utilizza la prima regola che corrisponde al numero composto. Se si configura un trunk in modo che un numero che viene composto possa soddisfare più regole di conversione, verificare che le regole più restrittive siano elencate al di sopra di quelle meno restrittive. Ad esempio, se è stata inclusa una regola di conversione che corrisponde a qualsiasi numero a 11 cifre e una regola di conversione che corrisponde solo a  numeri a 11 cifre che iniziano con +1425, assicurarsi che la regola corrispondente a qualsiasi numero a 11 cifre sia ordinata sotto la regola più restrittiva.
+    > Skype for Business Server l'elenco delle regole di conversione dall'alto verso il basso e utilizza la prima regola che corrisponde al numero composto. Se si configura un trunk in modo che un numero che viene composto possa soddisfare più regole di conversione, verificare che le regole più restrittive siano elencate al di sopra di quelle meno restrittive. Ad esempio, se è stata inclusa una regola di conversione che corrisponde a qualsiasi numero a 11 cifre e una regola di conversione che corrisponde solo a numeri a 11 cifre che iniziano con +1425, assicurarsi che la regola corrispondente a qualsiasi numero a 11 cifre  sia ordinata sotto la regola più restrittiva.
 
 17. Dopo aver terminato la configurazione del trunk, fare clic su **OK**.
 
 18. Nella pagina **Configurazione trunk** fare clic su **Commit** e quindi su **Salva tutto**.
 
     > [!NOTE]
-    > Ogni volta che si crea o si modifica una configurazione trunk, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, [vedere Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
+    > Ogni volta che si crea o si modifica una configurazione trunk, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica apportata alla configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
 
 ## <a name="see-also"></a>Vedere anche
 
