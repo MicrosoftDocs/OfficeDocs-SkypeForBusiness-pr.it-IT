@@ -1,27 +1,22 @@
 ---
 title: Definire il trunk radice per un nuovo gateway IP o PSTN
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.AddPstnGatewayTrunkPage
+  - ms.lync.tb.AddPstnGatewayTrunkPage
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 22203d9a-4612-45c7-9375-69ae9964ce1e
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 description: 'Per definire il trunk radice per IP o per PSTN (Public Switched Telephone Network), configurare le opzioni seguenti:'
-ms.openlocfilehash: 1a255c6b4dbe9b2e880c564abae90b2557a965cb
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60832590"
 ---
+
 # <a name="define-the-root-trunk-for-a-new-ip-or-pstn-gateway"></a>Definire il trunk radice per un nuovo gateway PSTN o IP
 
 Per definire il trunk radice per IP o per PSTN (Public Switched Telephone Network), configurare le opzioni seguenti:

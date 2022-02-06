@@ -1,25 +1,20 @@
 ---
 title: Elenco delle tabelle cdR in Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 031843fd-c7ff-4534-9b02-8847aad70807
 description: Lo schema del database di registrazione dettagli chiamata (CDR) è costituito dalle tabelle riportate di seguito.
-ms.openlocfilehash: a8b89664482d05c60e00b10f64f7e2e853280d94
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60847079"
 ---
+
 # <a name="list-of-cdr-tables-in-skype-for-business-server-2015"></a>Elenco delle tabelle cdR in Skype for Business Server 2015
  
 Lo schema del database di registrazione dettagli chiamata (CDR) è costituito dalle tabelle riportate di seguito. 
@@ -28,7 +23,7 @@ Lo schema del database di registrazione dettagli chiamata (CDR) è costituito da
 
 |**Tavolo**|**Descrizione**|
 |:-----|:-----|
-|[Tabella CallPriorities in Skype for Business Server 2015](callpriorities.md) <br/> |In questa tabella è archiviato l'elenco delle possibili priorità delle chiamate, ad esempio "emergency" (di emergenza), "urgent" (urgente), "normal" (normale), "non-urgent" (non urgente) e così via.  <br/> |
+|[Tabella CallPriorities Skype for Business Server 2015](callpriorities.md) <br/> |In questa tabella è archiviato l'elenco delle possibili priorità delle chiamate, ad esempio "emergency" (di emergenza), "urgent" (urgente), "normal" (normale), "non-urgent" (non urgente) e così via.  <br/> |
 |[Tabella ConferenceJoinTimeThresholds Skype for Business Server 2015](conferencejointimethresholds.md) <br/> |In questa tabella sono archiviati i limiti di classificazione utilizzati dal rapporto riepilogativo Tempo di partecipazione alla conferenza.  <br/> |
 |[Tabella DeRegisterType in Skype for Business Server 2015](deregistertype.md) <br/> |In questa tabella è archiviato l'elenco dei possibili motivi di annullamento della registrazione utente, ad esempio "client initiated" (avviato dall'utente), "registration expired" (registrazione scaduta), "client crash" (arresto anomalo del client) e così via.  <br/> |
 |[Tabella MediaList](medialist.md) <br/> |,  <br/> |
@@ -55,7 +50,7 @@ Lo schema del database di registrazione dettagli chiamata (CDR) è costituito da
 |[Tabella Pools](pools.md) <br/> |In questa tabella sono archiviati i nomi del pool in cui vengono acquisiti i messaggi istantanei.  <br/> |
 |[Tabella Server](servers.md) <br/> |In questa tabella è archiviato il nome dei server coinvolti nelle chiamate.  <br/> |
 |[Tabella Tenant](tenants.md) <br/> |In questa tabella sono archiviati i tenant supportati dalla distribuzione corrente. Vi sono alcuni tenant predefiniti per l'utente Enterprise, l'utente federato, l'utente di connettività di messaggistica istantanea pubblica e gli utenti anonimi.  <br/> |
-|[Tabella UserAgentDef](useragentdef.md) <br/> |Mappe degli agenti utente ai nomi descrittivi dell'agente.  <br/> |
+|[Tabella UserAgentDef](useragentdef.md) <br/> |Mappe identificatori agente utente ai nomi descrittivi dell'agente.  <br/> |
 |[Tabella Utenti](users.md) <br/> |In questa tabella sono archiviati gli URI degli utenti che hanno partecipato alle sessioni registrate o archiviate nel database.  <br/> |
 |[Tabella UserStatistics](userstatistics.md) <br/> |Archivia le informazioni sull'utilizzo del sistema da parte di un singolo utente.  <br/> |
    
@@ -80,7 +75,7 @@ Lo schema del database di registrazione dettagli chiamata (CDR) è costituito da
 |**Tavolo**|**Descrizione**|
 |:-----|:-----|
 |[Tabella SessionDetails](sessiondetails.md) <br/> |In questa tabella sono archiviate le informazioni relative a tutte le sessioni peer-to-peer, inclusi la data/ora di inizio e fine, l'ID utente, il codice di risposta e il numero dei messaggi per ogni utente.  <br/> |
-|[Tabella FileTransfers Skype for Business Server 2015](filetransfers-0.md) <br/> |In questa tabella sono archiviate le informazioni relative alle sessioni di trasferimento file, inclusi il nome di file e il risultato (accettazione, rifiuto o annullamento).  <br/> |
+|[Tabella FileTransfers in Skype for Business Server 2015](filetransfers-0.md) <br/> |In questa tabella sono archiviate le informazioni relative alle sessioni di trasferimento file, inclusi il nome di file e il risultato (accettazione, rifiuto o annullamento).  <br/> |
 |[Media table](media.md) <br/> |In questa tabella sono archiviate le informazioni relative ai diversi tipi di contenuto multimediale coinvolti nelle sessioni peer-to-peer.  <br/> |
    
 ## <a name="table-for-voip-call-details"></a>Tabella per i dettagli delle chiamate VoIP
@@ -90,7 +85,7 @@ Lo schema del database di registrazione dettagli chiamata (CDR) è costituito da
 |[Tabella VoipDetails](voipdetails-0.md) <br/> |In questa tabella sono archiviate, per ogni chiamata VoIP/PSTN tra due parti, le informazioni relative alla chiamata, ad esempio l'ID del telefono VoIP, il gateway utilizzato e la parte che si è disconnessa. Fa riferimento alla [tabella SessionDetails per l'ora](sessiondetails.md) di inizio/fine delle chiamate e il codice di risposta. <br/> |
    
 > [!NOTE]
-> Se una parte coinvolta in una chiamata è un utente VoIP o se nella chiamata è coinvolto un Mediation Server, verrà creato un record in questa tabella. Le informazioni sulle chiamate VoIP/VoIP che non coinvolgono un telefono PSTN (Public Switched Telephone Network) vengono acquisite nella [tabella SessionDetails.](sessiondetails.md) 
+> Se una parte coinvolta in una chiamata è un utente VoIP o se nella chiamata è coinvolto un Mediation Server, verrà creato un record in questa tabella. Le informazioni sulle chiamate VoIP/VoIP che non coinvolgono un telefono PSTN (Public Switched Telephone Network) vengono acquisite nella [tabella SessionDetails](sessiondetails.md). 
   
 ## <a name="table-for-e9-1-1-call-auditing"></a>Tabella per il controllo delle chiamate di emergenza
 
@@ -106,7 +101,7 @@ Lo schema del database di registrazione dettagli chiamata (CDR) è costituito da
 |**Tavolo**|**Descrizione**|
 |:-----|:-----|
 |[Tabella delle applicazioni in Skype for Business Server 2015](application.md) <br/> |Archivia le informazioni sui vari processi Skype for Business Server 2015 coinvolti nel routing e nelle connessioni.  <br/> |
-|[Tabella CallType Skype for Business Server 2015](calltype.md) <br/> |Archivia informazioni sui tipi di chiamata, ad esempio "audio", "messaggistica istantanea", "audio e video" e "condivisione applicazioni".  <br/> |
+|[Tabella CallType in Skype for Business Server 2015](calltype.md) <br/> |Archivia informazioni sui tipi di chiamata, ad esempio "audio", "messaggistica istantanea", "audio e video" e "condivisione applicazioni".  <br/> |
 |[Tabella ErrorCategory in Skype for Business Server 2015](errorcategory.md) <br/> |Archivia il nome descrittivo per ogni Skype for Business Server diagnostica 2015.  <br/> |
 |[Tabella ErrorDef in Skype for Business Server 2015](errordef.md) <br/> |In questa tabella sono archiviate le informazioni relative ai tipi di errori con le relative definizioni.  <br/> |
 |[Tabella ErrorReport in Skype for Business Server 2015](errorreport.md) <br/> |In questa tabella sono archiviate le informazioni relative agli errori che si sono verificati.  <br/> |

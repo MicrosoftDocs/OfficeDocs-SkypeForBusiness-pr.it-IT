@@ -1,28 +1,23 @@
 ---
 title: Pianificare la risposta alle chiamate di gruppo in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 3dc0eca8-c773-463c-96bb-9cd6afa2a840
-description: Pianificazione della risposta alle chiamate di gruppo in Skype for Business Server VoIP aziendale, che consente agli utenti di rispondere alle chiamate originariamente destinate ad altri utenti.
-ms.openlocfilehash: 94868d78790d9cfaafaf35915c9c3cd1c7a9793f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850699"
+description: 'Pianificazione della risposta alle chiamate di gruppo in Skype for Business Server VoIP aziendale, che consente agli utenti di rispondere alle chiamate originariamente destinate ad altri utenti.'
 ---
+
 # <a name="plan-for-group-call-pickup-in-skype-for-business"></a>Pianificare la risposta alle chiamate di gruppo in Skype for Business
  
 Pianificazione della risposta alle chiamate di gruppo in Skype for Business Server VoIP aziendale, che consente agli utenti di rispondere alle chiamate originariamente destinate ad altri utenti.
@@ -31,7 +26,7 @@ La risposta alle chiamate di gruppo consente agli utenti di rispondere alle chia
   
 La funzionalità di prelievo delle chiamate di gruppo è progettata in particolare per le unità aziendali in ambienti open office. Le chiamate in arrivo non sono dirompenti perché squillano solo alla destinazione prevista. Altri utenti che ascoltano l'anello, tuttavia, possono comunque riprendere la chiamata semplicemente componendo il numero di gruppo. 
   
-In ambienti in cui gli utenti non si trovano in un layout di ufficio aperto o in cui gli utenti che condividono una responsabilità comune sono distribuiti geograficamente, la chiamata al team presenta la soluzione più adatta. La differenza principale tra la risposta alle chiamate di gruppo e quella del team consiste nel fatto che, con la risposta alle chiamate di gruppo, una chiamata in arrivo squilla solo alla destinazione prevista, ma chiunque può comunque scegliere di rispondere componendo un numero di gruppo. Con la chiamata del team, la chiamata squilla a tutti i telefoni dei membri del team e qualsiasi utente del team può prendere il telefono per rispondere alla chiamata. Un'ulteriore differenza tra la risposta alle chiamate di gruppo e la chiamata al team consiste nel fatto che la risposta alle chiamate di gruppo è gestita da un amministratore, tramite Skype for Business Server. Con la chiamata del team, gli utenti finali gestiscono la funzionalità utilizzando il client Skype for Business client. Con la risposta alle chiamate di gruppo, pertanto, questo aspetto della gestione delle chiamate può essere centralizzato.
+In ambienti in cui gli utenti non si trovano in un layout di ufficio aperto o in cui gli utenti che condividono una responsabilità comune sono distribuiti geograficamente, la chiamata al team presenta la soluzione più adatta. La differenza principale tra la risposta alle chiamate di gruppo e quella del team consiste nel fatto che, con la risposta alle chiamate di gruppo, una chiamata in arrivo squilla solo alla destinazione prevista, ma chiunque può comunque scegliere di rispondere componendo un numero di gruppo. Con la chiamata del team, la chiamata squilla a tutti i telefoni dei membri del team e qualsiasi utente del team può prendere il telefono per rispondere alla chiamata. Un'ulteriore differenza tra la risposta alle chiamate di gruppo e la chiamata al team è che la risposta alle chiamate di gruppo è gestita da un amministratore, tramite Skype for Business Server. Con la chiamata del team, gli utenti finali gestiscono la funzionalità utilizzando il client Skype for Business client. Con la risposta alle chiamate di gruppo, pertanto, questo aspetto della gestione delle chiamate può essere centralizzato.
   
 La risposta alle chiamate di gruppo si basa sull'applicazione Parcheggio di chiamata. Quando si distribuisce la risposta alle chiamate di gruppo, si configura la tabella orbit del parcheggio di chiamata con intervalli separati di numeri di interno designati come numeri di gruppo di prelievo chiamata. Come i numeri orbit del parcheggio di chiamata, i numeri di gruppo di prelievo delle chiamate devono essere interni virtuali a cui non è assegnato alcun utente o telefono. Ogni pool Front End in cui si distribuisce la risposta alle chiamate di gruppo può avere uno o più intervalli di numeri di gruppo di prelievo chiamata. Gli intervalli di numeri di gruppo devono essere univoci a livello globale nella Skype for Business Server distribuzione. 
   
@@ -57,7 +52,7 @@ La risposta alle chiamate di gruppo non può essere utilizzata per rispondere ai
 - Chiamate da un contatto a cui è stata assegnata la relazione di privacy amici e familiari
     
     > [!TIP]
-    > Un utente membro di un gruppo di prelievo delle chiamate può impedire il recupero di determinate chiamate tramite la risposta alle chiamate di gruppo contrassegnando il contatto come contatto personale nel client Skype for Business gruppo. Per contrassegnare un contatto come contatto personale, impostare la relazione di privacy per il contatto su Amici e familiari. Qualsiasi chiamata in arrivo dai contatti con la relazione di privacy impostata su Amici e famiglia non può essere recuperata utilizzando La risposta alle chiamate di gruppo. 
+    > Un utente membro di un gruppo di prelievo delle chiamate può impedire il recupero di determinate chiamate tramite la risposta alle chiamate di gruppo contrassegnando il contatto come contatto personale nel client Skype for Business chiamata. Per contrassegnare un contatto come contatto personale, impostare la relazione di privacy per il contatto su Amici e familiari. Qualsiasi chiamata in arrivo dai contatti con la relazione di privacy impostata su Amici e famiglia non può essere recuperata utilizzando La risposta alle chiamate di gruppo. 
   
 - Parte video delle chiamate audio/video 
     
@@ -118,7 +113,7 @@ Nella tabella seguente viene descritto il modello utente Di prelievo chiamata di
   
 **Modello utente di prelievo chiamata di gruppo**
 
-|**Metrica**|**Per pool Front End  <br/>  (con 8 Front End Server)**|**Per server Standard Edition**|
+|**Metrica**|**Per pool  <br/>  Front End (con 8 Front End Server)**|**Per server Standard Edition**|
 |:-----|:-----|:-----|
 |Numero consigliato di utenti per gruppo  <br/> |50  <br/> |50  <br/> |
 |Numero consigliato di gruppi  <br/> |500  <br/> |60  <br/> |
