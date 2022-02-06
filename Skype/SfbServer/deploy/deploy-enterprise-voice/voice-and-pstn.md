@@ -1,28 +1,23 @@
 ---
-title: Configurare criteri vocali, record di utilizzo PSTN e route vocali in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: 'Configurare criteri vocali, record di utilizzo PSTN e route vocali in Skype for Business'
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 1e5a15f9-6f42-4dc6-baaa-24daf54afc4d
 description: 'Riepilogo: informazioni su come configurare criteri vocali, record di utilizzo PSTN e route vocali in Skype for Business Server.'
-ms.openlocfilehash: ac2256436e89a383df551fd7610189df56c8a0b0
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60833812"
 ---
+
 # <a name="configure-voice-policies-pstn-usage-records-and-voice-routes-in-skype-for-business"></a>Configurare criteri vocali, record di utilizzo PSTN e route vocali in Skype for Business
  
 **Riepilogo:** Informazioni su come configurare criteri vocali, record di utilizzo PSTN e route vocali in Skype for Business Server.

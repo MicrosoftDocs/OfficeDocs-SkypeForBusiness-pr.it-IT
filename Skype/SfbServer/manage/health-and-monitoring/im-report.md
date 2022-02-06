@@ -1,24 +1,19 @@
 ---
 title: Rapporto di messaggistica istantanea peer-to-peer in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 19ec0145-2398-437b-8989-f780c179b798
 description: 'Riepilogo: informazioni sul rapporto di messaggistica istantanea peer-to-peer in Skype for Business Server.'
-ms.openlocfilehash: f72200547ca8af3fa2ebde0e44c4707c82a1596b
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60834204"
 ---
+
 # <a name="peer-to-peer-im-report-in-skype-for-business-server"></a>Rapporto di messaggistica istantanea peer-to-peer in Skype for Business Server
  
 **Riepilogo:** Informazioni sul rapporto di messaggistica istantanea peer-to-peer in Skype for Business Server.
@@ -27,7 +22,7 @@ Nel rapporto di messaggistica istantanea peer-to-peer vengono fornite informazio
   
 ## <a name="accessing-the-peer-to-peer-im-report"></a>Accesso al rapporto di messaggistica istantanea peer-to-peer
 
-È possibile accedere al rapporto di messaggistica istantanea peer-to-peer solo aprendo il Rapporto riepilogativo attività [peer-to-peer in Skype for Business Server](peer-to-peer-activity-summary-report.md) e quindi facendo clic su una delle metriche seguenti:
+È possibile accedere al rapporto di messaggistica istantanea peer-to-peer solo aprendo il Rapporto [riepilogativo attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-summary-report.md) e quindi facendo clic su una delle metriche seguenti:
   
 - Totale sessioni di messaggistica istantanea peer-to-peer
     
@@ -70,7 +65,7 @@ Nella tabella seguente vengono riportate le informazioni fornite nel rapporto di
 
 |**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Tipo di autenticazione** <br/> |No  <br/> | Tipo di autenticazione utilizzato dai partecipanti alla sessione. I valori validi in genere sono i seguenti: <br/>  Enterprise <br/>  Federato <br/>  PIC <br/> |
+|**Tipo di autenticazione** <br/> |No  <br/> | Tipo di autenticazione utilizzato dai partecipanti alla sessione. I valori validi in genere sono i seguenti: <br/>  Grandi aziende <br/>  Federato <br/>  PIC <br/> |
 |**Data/ora** <br/> |No  <br/> |Data e ora in cui hanno avuto luogo le sessioni.  <br/> |
 |**Totale** <br/> |No  <br/> |Numero totale di sessioni o di messaggi.  <br/> |
    

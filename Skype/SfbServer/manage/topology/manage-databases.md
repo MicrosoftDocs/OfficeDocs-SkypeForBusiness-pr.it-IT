@@ -1,27 +1,22 @@
 ---
 title: Gestire i database con un gruppo di disponibilità AlwaysOn in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 026c4469-f471-4e4f-a77d-a7d22a925e5a
 description: 'Riepilogo: informazioni su come aggiungere altri database di Skype for Business Server a un gruppo di disponibilità AlwaysOn esistente e sui passaggi aggiuntivi necessari dopo aver patchato o aggiornato un server back-end che fa parte di un gruppo di disponibilità AlwaysOn in Skype for Business Server.'
-ms.openlocfilehash: fe74cd804aff746a3d6c52163ed96d6b270703ce
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60827509"
 ---
+
 # <a name="manage-databases-with-an-alwayson-availability-group-in-skype-for-business-server"></a>Gestire i database con un gruppo di disponibilità AlwaysOn in Skype for Business Server
 
-Utilizzare la procedura descritta in questo articolo per aggiungere altri database di Skype for Business Server a un gruppo di disponibilità AlwaysOn esistente in Skype for Business Server e per informazioni sui passaggi aggiuntivi necessari dopo aver patchato o aggiornato un server back-end che fa parte di un gruppo di disponibilità AlwaysOn in Skype for Business Server.
+Utilizzare la procedura descritta in questo articolo per aggiungere altri database di Skype for Business Server a un gruppo di disponibilità AlwaysOn esistente in Skype for Business Server e informazioni sui passaggi aggiuntivi necessari dopo aver patchato o aggiornato un server back-end che fa parte di un gruppo di disponibilità AlwaysOn in Skype for Business Server.
 
 ## <a name="add-databases-to-an-alwayson-availability-group"></a>Aggiungere database a un gruppo di disponibilità AlwaysOn 
 
@@ -29,13 +24,13 @@ Utilizzare la procedura descritta in questo articolo per aggiungere altri databa
     
 2. In Generatore di topologie impostare l SQL Server FQDN del gruppo di disponibilità AlwaysOn sul nome di dominio completo del nodo primario del gruppo.
     
-   - Aprire Generatore di topologie, selezionare **Scarica topologia dalla distribuzione esistente** e fare clic su **OK.**
+   - Aprire Generatore di topologie, selezionare **Scarica topologia dalla distribuzione esistente** e fare clic su **OK**.
     
-   - Espandere Skype for Business Server, espandere la topologia ed espandere SQL Server **archivi**. Fare clic con il pulsante destro del SQL del nuovo gruppo di disponibilità AlwaysOn e scegliere **Modifica proprietà**.
+   - Espandere Skype for Business Server, espandere la topologia ed espandere SQL Server **archivi**. Fare clic con il pulsante destro del SQL archivio del nuovo gruppo di disponibilità AlwaysOn e scegliere **Modifica proprietà**.
     
-   - Nella parte inferiore della pagina, nella casella **SQL Server FQDN,** digitare il nome di dominio completo del nodo primario del gruppo di disponibilità AlwaysOn.
+   - Nella parte inferiore della pagina, nella casella SQL Server FQDN, digitare il nome di dominio completo del nodo primario del gruppo di disponibilità AlwaysOn.At the bottom of the page, in the **SQL Server FQDN** box, type in the FQDN of the primary node of the AlwaysOn Availability Group.
     
-3. Pubblicare la topologia. Scegliere **Topologia** dal menu Azione **e** quindi **Pubblica**. Nella pagina di conferma fare clic su **Avanti.**
+3. Pubblicare la topologia. Scegliere **Topologia** dal **menu Azione e** quindi **Pubblica**. Nella pagina di conferma fare clic su **Avanti**.
     
 4. Utilizzare SQL Server Management Studio per aggiungere il nuovo database al gruppo di disponibilità AlwaysOn.
     

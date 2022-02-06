@@ -1,26 +1,21 @@
 ---
-title: Tabella FrontEnd in Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: Tabella FrontEnd Skype for Business Server 2015
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 8207af80-41fa-4bec-9523-b0332e8231d9
 description: La tabella FrontEnd è solo per uso interno. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 63c4317ee2062be967d3771635cbd3dd6e6e747d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60847159"
 ---
-# <a name="frontend-table-in-skype-for-business-server-2015"></a>Tabella FrontEnd in Skype for Business Server 2015
+
+# <a name="frontend-table-in-skype-for-business-server-2015"></a>Tabella FrontEnd Skype for Business Server 2015
  
 La tabella FrontEnd è solo per uso interno. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
   

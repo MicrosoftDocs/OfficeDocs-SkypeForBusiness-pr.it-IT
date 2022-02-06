@@ -1,28 +1,23 @@
 ---
 title: Pianificare IPv6 in Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 01f77196-38f4-4292-9480-2e2fbd57eabe
 description: 'Riepilogo: implementare IPv6 prima di installare Skype for Business Server.'
-ms.openlocfilehash: 21fa37d187f32c9b679a49a3b8181b1a5e2732d1
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60849749"
 ---
+
 # <a name="plan-for-ipv6-in-skype-for-business"></a>Pianificare IPv6 in Skype for Business
  
 **Riepilogo:** Implementare IPv6 prima di installare Skype for Business Server.
@@ -41,14 +36,14 @@ In questo argomento sono incluse le sezioni seguenti:
     
 - [Considerazioni sulla migrazione e la coesistenza per IPv6](ipv6.md#migration)
     
-Se si determina che verranno utilizzati indirizzi IPv6, vedere l'articolo Configurare i tipi di indirizzi [IP in Skype for Business.](ip-address-types.md)
+Se si stabilisce che verranno utilizzati indirizzi IPv6, vedere l'articolo Configurare i tipi [di indirizzi IP in Skype for Business](ip-address-types.md).
   
 ## <a name="overview-of-ip-address-types"></a>Panoramica dei tipi di indirizzi IP
 <a name="over"> </a>
 
 Sono disponibili tre opzioni per la configurazione degli indirizzi IP in Skype for Business Server. È possibile configurare Skype for Business Server per supportare solo IP versione 4 (IPv4), solo IP versione 6 (IPv6) o una combinazione di entrambi (noto come dual stack). Per ogni tipo di configurazione è necessario considerare diversi problemi:
   
-- **Solo IPv4** IPv6 è stato creato perché gli indirizzi IPv4 non sono più disponibili. In futuro IPv6 sarà completamente supportato in tutto il mondo, ma al momento molte aziende e molti dispositivi con cui potrebbe essere necessario comunicare non lo supportano ancora. Una configurazione solo IPv4 consente di garantire che l'implementazione Skype for Business Server possa comunicare con la maggior parte dei dispositivi esistenti.
+- **Solo IPv4** IPv6 è stato creato perché l'intero mondo sta evadendo gli indirizzi IPv4. In futuro IPv6 sarà completamente supportato in tutto il mondo, ma al momento molte aziende e molti dispositivi con cui potrebbe essere necessario comunicare non lo supportano ancora. Una configurazione solo IPv4 consente di garantire che l'implementazione Skype for Business Server possa comunicare con la maggior parte dei dispositivi esistenti.
     
 - **Solo IPv6** Al contrario, un'implementazione IPv6 completa escluderà la comunicazione con molti dispositivi esistenti.
     
@@ -195,11 +190,11 @@ Se si prevede di configurare Skype for Business Server per IPv6, tenere presenti
 ## <a name="migration-and-coexistence-considerations-for-ipv6"></a>Considerazioni sulla migrazione e la coesistenza per IPv6
 <a name="migration"> </a>
 
-IP versione 6 (IPv6) non è supportato in Lync Server 2010 o Office Communications Server. A scopo pilota, è possibile testare Lync Server 2010 e Skype for Business Server coesistenza a doppio stack. È consigliabile aggiornare tutti i pool per un determinato sito centrale a Skype for Business Server prima di abilitare IPv6 (rete dual stack) per uno qualsiasi dei pool. Se è necessario configurare un pool solo per IPv6, è consigliabile configurare un pool solo IPv6 nell'ambiente di prova a fini di test.
+IP versione 6 (IPv6) non è supportato in Lync Server 2010 o Office Communications Server. A scopo pilota, è possibile testare Lync Server 2010 e Skype for Business Server coesistenza dual stack. È consigliabile aggiornare tutti i pool per un determinato sito centrale a Skype for Business Server prima di abilitare IPv6 (rete dual stack) per uno qualsiasi dei pool. Se è necessario configurare un pool solo per IPv6, è consigliabile configurare un pool solo IPv6 nell'ambiente di prova a fini di test.
   
 Durante la migrazione e in caso di coesistenza sono supportati gli scenari seguenti:
   
-- Skype for Business Server, Lync Server 2013 e Lync Server 2010 in modalità IPv4, coesistono con Skype for Business Server in modalità dual stack.
+- Skype for Business Server pool di Skype for Business Server, Lync Server 2013 e Lync Server 2010 in modalità IPv4, coesistenti con Skype for Business Server in modalità dual stack.
     
 - Skype for Business Server pool in modalità solo IPv6, se il pool solo IPv6 è in silo.
     

@@ -1,25 +1,20 @@
 ---
 title: Tabella IMReportSummary Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 27ff9453-53f2-4fae-b637-70a086c9df96
 description: La tabella IMReportSummaryTable offre un rapporto complessivo sulle sessioni di messaggistica istantanea eseguite in un'organizzazione. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 438b6f7e7093cba3e7f2c1d0b9a82a592128b86c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60845019"
 ---
+
 # <a name="imreportsummary-table-in-skype-for-business-server-2015"></a>Tabella IMReportSummary Skype for Business Server 2015
  
 La tabella IMReportSummaryTable offre un rapporto complessivo sulle sessioni di messaggistica istantanea eseguite in un'organizzazione. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
@@ -29,7 +24,7 @@ La tabella IMReportSummaryTable offre un rapporto complessivo sulle sessioni di 
 |**StartTime** <br/> |datetime  <br/> |Principale  <br/> |Data e ora di inizio della sessione di messaggistica istantanea.  <br/> |
 |**TimePeriod** <br/> |char(1)  <br/> |Principale  <br/> ||
 |**PoolFQDN** <br/> |nvarchar(257)  <br/> |Principale  <br/> |Nome di dominio completo del pool che ospita la sessione.  <br/> |
-|**AuthType** <br/> |int  <br/> |Principale  <br/> |Priorità della chiamata, ad esempio urgente o non urgente. Le informazioni sulla priorità vengono archiviate nella [tabella CallPriorities Skype for Business Server 2015.](callpriorities.md)  <br/> |
+|**AuthType** <br/> |int  <br/> |Principale  <br/> |Priorità della chiamata, ad esempio urgente o non urgente. Le informazioni sulla priorità vengono archiviate nella [tabella CallPriorities Skype for Business Server 2015](callpriorities.md).  <br/> |
 |**SessionCount** <br/> |bigint  <br/> |||
 |**MsgCount** <br/> |bigint  <br/> ||Numero totale di messaggi istantanei scambiati durante la sessione.  <br/> |
    

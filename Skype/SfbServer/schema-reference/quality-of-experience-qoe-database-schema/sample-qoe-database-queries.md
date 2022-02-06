@@ -1,25 +1,20 @@
 ---
 title: Query di database QoE di esempio
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 04e6bdd3-bbd1-47ca-8114-94a3db6beeeb
 description: In questa sezione sono incluse query di esempio per il database della qualità percepita dagli utenti (QoE).
-ms.openlocfilehash: 0e7a654c4f091a1b156ebcc5dcd5e99233c29f00
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60834934"
 ---
+
 # <a name="sample-qoe-database-queries"></a>Query di database QoE di esempio
  
 In questa sezione sono incluse query di esempio per il database della qualità percepita dagli utenti (QoE). 

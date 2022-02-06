@@ -1,28 +1,23 @@
 ---
 title: Attributi dello schema per classe in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 72726b43-f1ea-458c-9304-a26e8a12128c
-description: In questa sezione sono elencati gli attributi dello schema che possono essere contenuti in ogni classe Skype for Business Server e le classi che possono essere contenute in altre classi. Per un elenco di tutte le classi e le relative descrizioni, vedere Classi e descrizioni dello schema in Skype for Business Server. Per un elenco di tutti gli attributi e le relative descrizioni, vedere Attributi e descrizioni dello schema in Skype for Business Server.
-ms.openlocfilehash: b3e4e584896da8dd6345d3f284c30463094b4b6e
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829810"
+description: 'In questa sezione sono elencati gli attributi dello schema che possono essere contenuti in ogni classe Skype for Business Server e le classi che possono essere contenute in altre classi. Per un elenco di tutte le classi e le relative descrizioni, vedere Classi e descrizioni dello schema in Skype for Business Server. Per un elenco di tutti gli attributi e le relative descrizioni, vedere Attributi e descrizioni dello schema in Skype for Business Server.'
 ---
+
 # <a name="schema-attributes-by-class-in-skype-for-business-server"></a>Attributi dello schema per classe in Skype for Business Server
  
-In questa sezione sono elencati gli attributi dello schema che possono essere contenuti in ogni classe Skype for Business Server e le classi che possono essere contenute in altre classi. Per un elenco di tutte le classi e le relative descrizioni, vedere Classi e [descrizioni](schema-classes-and-descriptions.md)dello schema in Skype for Business Server . Per un elenco di tutti gli attributi e le relative descrizioni, vedere Attributi e descrizioni dello [schema in Skype for Business Server](schema-attributes-and-descriptions.md).
+In questa sezione sono elencati gli attributi dello schema che possono essere contenuti in ogni classe Skype for Business Server e le classi che possono essere contenute in altre classi. Per un elenco di tutte le classi e le relative descrizioni, vedere Classi e descrizioni dello [schema in Skype for Business Server](schema-classes-and-descriptions.md). Per un elenco di tutti gli attributi e le relative descrizioni, vedere Attributi e descrizioni dello [schema in Skype for Business Server](schema-attributes-and-descriptions.md).
   
 ## <a name="attributes-by-class"></a>Attributi per classe
 
@@ -57,7 +52,7 @@ In questa sezione sono elencati gli attributi dello schema che possono essere co
 |msRTCSIP-TrustedWebComponentsServer  <br/> |msRTCSIP-TrustedWebComponentsServerData  <br/> msRTCSIP-TrustedWebComponentsServerFQDN  <br/> msRTCSIP-TrustedServerVersion  <br/> |
 |msRTCSIP-WebComponentsService  <br/> |msRTCSIP-WebComponentsServers  <br/> |
 |msRTCSIP-WebComponentSettings  <br/> |msRTCSIP-WebComponentsData  <br/> msRTCSIP-WebComponentsPoolAddress  <br/> msRTCSIP-ServerVersion  <br/> |
-|User  <br/> |msRTCSIP-AcpInfo  <br/> msRTCSIP-ApplicationOptions  <br/> msRTCSIP-ArchivingEnabled  <br/> msRTCSIP-DeploymentLocator  <br/> msRTCSIP-FederationEnabled  <br/> msRTCSIP-GroupingID  <br/> msRTCSIP-InternetAccessEnabled  <br/> msRTCSIP-Line  <br/> msRTCSIP-LineServer  <br/> msRTCSIP-OptionFlags  <br/> msRTCSIP-OriginatorSid  <br/> msRTCSIP-OwnerUrn  <br/> msRTCSIP-PrimaryHomeServer  <br/> msRTCSIP-PrimaryUserAddress  <br/> msRTCSIP-PrivateLine  <br/> msRTCSIP-TargetHomeServer  <br/> msRTCSIP-TargetUserPolicies  <br/> msRTCSIP-TenantId  <br/> msRTCSIP-UserEnabled  <br/> msRTCSIP-UserExtension  <br/> msRTCSIP-UserLocationProfile  <br/> msRTCSIP-UserPolicies  <br/> msRTCSIP-UserPolicy  <br/> msRTCSIP-UserRoutingGroupId  <br/> ProxyAddresses  <br/> |
+|Utente  <br/> |msRTCSIP-AcpInfo  <br/> msRTCSIP-ApplicationOptions  <br/> msRTCSIP-ArchivingEnabled  <br/> msRTCSIP-DeploymentLocator  <br/> msRTCSIP-FederationEnabled  <br/> msRTCSIP-GroupingID  <br/> msRTCSIP-InternetAccessEnabled  <br/> msRTCSIP-Line  <br/> msRTCSIP-LineServer  <br/> msRTCSIP-OptionFlags  <br/> msRTCSIP-OriginatorSid  <br/> msRTCSIP-OwnerUrn  <br/> msRTCSIP-PrimaryHomeServer  <br/> msRTCSIP-PrimaryUserAddress  <br/> msRTCSIP-PrivateLine  <br/> msRTCSIP-TargetHomeServer  <br/> msRTCSIP-TargetUserPolicies  <br/> msRTCSIP-TenantId  <br/> msRTCSIP-UserEnabled  <br/> msRTCSIP-UserExtension  <br/> msRTCSIP-UserLocationProfile  <br/> msRTCSIP-UserPolicies  <br/> msRTCSIP-UserPolicy  <br/> msRTCSIP-UserRoutingGroupId  <br/> ProxyAddresses  <br/> |
    
 ### <a name="classes-contained-in-other-classes"></a>Classi contenute in altre classi
 

@@ -1,25 +1,20 @@
 ---
 title: Classi e descrizioni dello schema in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 7d43b920-ac37-40cc-adfe-be289bda6e9e
 description: In questa sezione vengono descritte tutte le classi dello schema utilizzate da Skype for Business Server .
-ms.openlocfilehash: fbd3e3293cef72ba6592b86932639bd499464858
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829770"
 ---
+
 # <a name="schema-classes-and-descriptions-in-skype-for-business-server"></a>Classi e descrizioni dello schema in Skype for Business Server
  
 In questa sezione vengono descritte tutte le classi dello schema utilizzate da Skype for Business Server . 
@@ -28,7 +23,7 @@ In questa sezione vengono descritte tutte le classi dello schema utilizzate da S
 
 |**Classe**|**Descrizione**|**Comments**|
 |:-----|:-----|:-----|
-|Mail-Recipient  <br/> |Exchange Destinatario di posta elettronica di messaggistica unificata.  <br/> |Questa classe ausiliaria è condivisa con la Exchange messaggistica unificata.  <br/> |
+|Mail-Recipient  <br/> |Exchange destinatario di posta elettronica di messaggistica unificata.  <br/> |Questa classe ausiliaria è condivisa con la Exchange messaggistica unificata.  <br/> |
 |msRTCSIP-ApplicationContacts  <br/> |Questa classe è un contenitore per più contatti applicazione e non include alcun attributo.  <br/> |Novità di Microsoft Office Communications Server 2007 R2.  <br/> |
 |msRTCSIP-ApplicationServer  <br/> |Questa classe contiene la voce relativa al punto di controllo del servizio per un'istanza dei servizi per applicazioni per comunicazioni unificate  <br/> |Novità di Office Communications Server 2007 R2.  <br/> |
 |msRTCSIP-ApplicationServerService  <br/> |Questa classe fornisce un'associazione da un pool specifico al relativo servizio applicazione.  <br/> |Novità di Communications Server 2007 R2.  <br/> |
@@ -46,7 +41,7 @@ In questa sezione vengono descritte tutte le classi dello schema utilizzate da S
 |msRTCSIP-EnterpriseServerSettings  <br/> |Questa classe ausiliaria di msRTCSIP-Server contiene gli attributi che rappresentano le impostazioni per i server SIP.  <br/> |-  <br/> |
 |msRTCSIP-Federation  <br/> |Questa classe ausiliaria di msRTCSIP-GlobalContainer contiene tutte le impostazioni relative alla federazione.  <br/> |-  <br/> |
 |msRTCSIP-GlobalContainer  <br/> |Questa classe contiene tutte le impostazioni che si applicano in una Skype for Business Server distribuzione.  <br/> |-  <br/> |
-|msRTCSIP-GlobalUserPolicy (obsoleta)  <br/> |Questa classe rappresenta un singolo criterio Office riunione di Communications Server.  <br/> |Obsoleto in Lync Server 2010.  <br/> |
+|msRTCSIP-GlobalUserPolicy (obsoleta)  <br/> |Questa classe rappresenta un singolo Office di riunione di Communications Server.  <br/> |Obsoleto in Lync Server 2010.  <br/> |
 |msRTCSIP-GlobalTopologySetting  <br/> |Oggetto impostazione della topologia globale locale.  <br/> |Novità di Lync Server 2010.  <br/> |
 |msRTCSIP-GlobalTopologySettings  <br/> |Contenitore di oggetti impostazione della topologia globale.  <br/> |Novità di Lync Server 2010.  <br/> |
 |msRTCSIP-LocalNormalization  <br/> |Questa classe è un contenitore che rappresenta un'istanza di una regola di normalizzazione della località.  <br/> |-  <br/> |

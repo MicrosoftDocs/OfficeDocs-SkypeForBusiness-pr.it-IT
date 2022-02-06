@@ -1,37 +1,32 @@
 ---
 title: Schema del database Chat persistente
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 10/20/2015
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 58d7d94f-42f5-4c3e-8fe5-901fbe92152e
 description: In questo modo viene documentato lo schema del database di Persistent Chat in Skype for Business Server.
-ms.openlocfilehash: 862adace22d04e93b226545247a5d2bd8a89d9cc
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858153"
 ---
+
 # <a name="persistent-chat-database-schema"></a>Schema del database Chat persistente
  
 In questo modo viene documentato lo schema del database di Persistent Chat in Skype for Business Server.
   
-Il database di Persistent Chat fa riferimento al database corrispondente ai ruoli del server back-end Skype for Business Server **PersistentChatStore** (corrispondente al database mgc) e **PersistentChatComplianceStore** (corrispondente al database mgccomp). L'obiettivo della pubblicazione di questo schema è di consentire la creazione di query per comprendere meglio come generare rapporti efficaci relativi all'uso della chat, alle chat attive, agli autori di post più attivi e così via.
+Il database di Persistent Chat fa riferimento al database corrispondente ai ruoli del server back-end di Skype for Business Server **PersistentChatStore** (corrispondente al database mgc) e **PersistentChatComplianceStore** (corrispondente al database mgccomp). L'obiettivo della pubblicazione di questo schema è di consentire la creazione di query per comprendere meglio come generare rapporti efficaci relativi all'uso della chat, alle chat attive, agli autori di post più attivi e così via.
   
 > [!IMPORTANT]
 > Ci riserviamo il diritto di modificare questo schema. Microsoft non garantisce di poter mantenere la completa compatibilità di questo schema pubblicato con le versioni precedenti. 
   
 Tenere presenti queste procedure consigliate:
   
-- Non è supportata \* l'opzione SELECT // perché l'elenco di colonne può aumentare.
+- Non è supportata\* l'opzione SELECT // perché l'elenco di colonne può aumentare.
     
 - Non sono supportate modifiche allo schema generate dall'utente.
     
