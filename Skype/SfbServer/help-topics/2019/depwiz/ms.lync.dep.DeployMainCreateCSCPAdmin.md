@@ -1,27 +1,22 @@
 ---
 title: Creare amministratori del pannello di controllo di Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.dep.DeployMainCreateCSCPAdmin
+  - ms.lync.dep.DeployMainCreateCSCPAdmin
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 3312926a-4671-4030-bb92-90ac24c778dd
-ROBOTS: NOINDEX, NOFOLLOW
-description: "Per concedere l'accesso al Skype for Business Server, eseguire le operazioni seguenti:"
-ms.openlocfilehash: 42163cf1df7ae13b918f592b512d3f5fd89169de
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60839018"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Per concedere l''accesso al Skype for Business Server, eseguire le operazioni seguenti:'
 ---
+
 # <a name="create-skype-for-business-server-control-panel-administrators"></a>Creare amministratori del pannello di controllo di Skype for Business Server
  
 Per concedere l'accesso al Skype for Business Server, eseguire le operazioni seguenti:

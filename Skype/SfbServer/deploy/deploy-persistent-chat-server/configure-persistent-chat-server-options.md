@@ -1,25 +1,20 @@
 ---
 title: Configurare le opzioni del server Chat persistente in Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/28/2016
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 19ced8de-8867-4152-b38a-891f3bc2a5ea
 description: 'Riepilogo: informazioni su come configurare le opzioni del server Chat persistente a livello globale, di sito o di pool Skype for Business Server 2015.'
-ms.openlocfilehash: 99dab0b4a5e7bb542dee00803e5c401c63544ada
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60835844"
 ---
+
 # <a name="configure-persistent-chat-server-options-in-skype-for-business-server-2015"></a>Configurare le opzioni del server Chat persistente in Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come configurare le opzioni del server Chat persistente a livello globale, di sito o di pool Skype for Business Server 2015.
@@ -35,7 +30,7 @@ ms.locfileid: "60835844"
 - URL di gestione delle chat room. URL utilizzato per la gestione personalizzata delle chat room. L'impostazione consente l'utilizzo di una soluzione di gestione delle chat room personalizzata. 
    
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
  
 ## <a name="configure-persistent-chat-server-global-options"></a>Configurare le opzioni globali del server Chat persistente
 
@@ -43,11 +38,11 @@ Per configurare le opzioni globali del server Chat persistente:
   
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL amministratore.
+2. Dal menu **Start** seleziona il pannello Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
     
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Configurazione Persistent Chat**.
     
-4. Nella pagina **Configurazione Persistent Chat** fare clic su Nuovo **e** quindi su **Configurazione sito.**
+4. Nella pagina **Configurazione Persistent Chat** fare clic su **Nuovo e** quindi su **Configurazione sito**.
     
     > [!IMPORTANT]
     > Scegliere questa opzione se si desidera applicare la configurazione a tutti i pool di server Chat persistente distribuiti nel sito. Fare **clic su Configurazione** pool se si desidera applicare la configurazione a uno specifico pool di server Chat persistente.
@@ -79,7 +74,7 @@ Per configurare le opzioni per uno specifico pool di server Chat persistente.
   
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
+2. Dal menu **Start** seleziona il pannello Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
     
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Configurazione Persistent Chat**.
     

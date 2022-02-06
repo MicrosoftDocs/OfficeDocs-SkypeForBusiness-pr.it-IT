@@ -1,31 +1,26 @@
 ---
 title: Creare route interregionali di rete in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 5555262a-a502-4b01-9593-836dd30064f5
-description: Creare o modificare route interregionali di rete, utilizzate VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server.
-ms.openlocfilehash: 4aa831c33049e2e77a298f96de80d9bad2d296e4
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60833872"
+description: 'Creare o modificare route interregionali di rete, utilizzate dal VoIP aziendale di ammissione di chiamata in Skype for Business Server.'
 ---
+
 # <a name="create-network-interregional-routes-in-skype-for-business-server"></a>Creare route interregionali di rete in Skype for Business Server
  
-Creare o modificare route interregionali di rete, utilizzate VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server. 
+Creare o modificare route interregionali di rete, utilizzate dal VoIP aziendale di ammissione di chiamata in Skype for Business Server. 
   
 Una route interregionale di rete definisce la route tra una coppia di aree di rete. Ogni coppia di aree di rete nella distribuzione del controllo di ammissione di chiamata richiede una route interregionale di rete. In tal modo ogni area di rete della distribuzione può accedere a tutte le altre aree.
   
@@ -35,7 +30,7 @@ Nella topologia di esempio è necessario definire route interregionali di rete p
   
 ### <a name="to-create-network-interregional-routes-by-using-skype-for-business-server-management-shell"></a>Per creare route interregionali di rete tramite Skype for Business Server Management Shell
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 2. Eseguire il cmdlet **New-CsNetworkInterRegionRoute** per definire le route richieste. Ad esempio, eseguire:
     
@@ -70,7 +65,7 @@ Nella topologia di esempio è necessario definire route interregionali di rete p
     
 7. Fare clic su **Area di rete 2** e quindi fare clic su un'area di rete nell'elenco per il routing all'area di rete 1.
     
-8. Fare **clic su** Aggiungi accanto al **campo** Collegamenti area di rete e quindi aggiungere un collegamento di area di rete che verrà utilizzato nella route interregionale di rete.
+8. Fare **clic su** Aggiungi accanto **al campo** Collegamenti area di rete e quindi aggiungere un collegamento di area di rete che verrà utilizzato nella route interregionale di rete.
     
     > [!NOTE]
     > Se si crea una route per due aree di rete tra le quali non esiste un collegamento diretto, è necessario aggiungere tutti i collegamenti necessari per completare la route. Ad esempio, la route interregionale di rete Nord America/APAC richiede due collegamenti di area di rete perché non esiste un collegamento diretto tra le aree di rete. 

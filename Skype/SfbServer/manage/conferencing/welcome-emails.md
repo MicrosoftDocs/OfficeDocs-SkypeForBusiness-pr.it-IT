@@ -1,24 +1,19 @@
 ---
 title: Inviare messaggi di benvenuto agli utenti con accesso in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 5507827b-6f8d-4ea4-94e6-1cf72c1d38eb
 description: 'Riepilogo: informazioni su come accogliere gli utenti alle conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 672e386c223e2b5b9f872334634ac315c9e900e1
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60848539"
 ---
+
 # <a name="send-welcome-email-to-dial-in-users-in-skype-for-business-server"></a>Inviare messaggi di benvenuto agli utenti con accesso in Skype for Business Server
  
 **Riepilogo:** Informazioni su come accogliere gli utenti alle conferenze telefoniche con accesso esterno in Skype for Business Server.
@@ -37,7 +32,7 @@ Lo script **Set-CsPinSendCAWelcomeMail** consente di impostare il PIN e inviare 
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 3. Eseguire il comando seguente al prompt:
     

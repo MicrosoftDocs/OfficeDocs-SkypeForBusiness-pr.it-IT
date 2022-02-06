@@ -1,24 +1,19 @@
 ---
 title: Rapporto attività conferenza in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 22ddb509-af16-4fc8-9b98-6f58caa6f37e
 description: 'Riepilogo: informazioni sul Rapporto attività conferenza utilizzato in Skype for Business Server.'
-ms.openlocfilehash: c136bfaeb40a9b84c2861332636916353856855f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60849929"
 ---
+
 # <a name="conference-activity-report-in-skype-for-business-server"></a>Rapporto attività conferenza in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto attività conferenza usato in Skype for Business Server.
@@ -29,7 +24,7 @@ Se la lentezza della rete crea problemi, è possibile chiedere agli utenti di ri
   
 ## <a name="accessing-the-conference-activity-report"></a>Accesso al Rapporto attività conferenza
 
-Il Rapporto attività conferenza è accessibile dal [Rapporto riepilogativo](conference-summary-report.md) conferenze in Skype for Business Server facendo clic su una delle metriche seguenti:
+Il Rapporto attività conferenza è accessibile dal [Rapporto riepilogativo conferenze in Skype for Business Server](conference-summary-report.md) facendo clic su una delle metriche seguenti:
   
 - Totale conferenze
     

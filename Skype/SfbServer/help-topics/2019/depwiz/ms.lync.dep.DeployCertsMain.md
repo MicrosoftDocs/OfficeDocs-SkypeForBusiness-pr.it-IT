@@ -1,27 +1,22 @@
 ---
 title: Configurazione guidata certificati
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.custom:
-- ms.lync.dep.DeployCertsMain
+  - ms.lync.dep.DeployCertsMain
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- CSH
+  - CSH
 ms.localizationpriority: medium
 ms.assetid: 6ab661d7-5741-4cad-bbe4-62cf862ded85
-ROBOTS: NOINDEX, NOFOLLOW
-description: Per richiedere, assegnare, rimuovere o visualizzare i certificati, è possibile utilizzare la Configurazione guidata certificati. A tale scopo, è necessario essere connessi come membri del gruppo RTCUniversalServerAdmins. Per richiedere un certificato a un'Autorità di certificazione (CA) pubblica, non è necessario appartenere ad altri gruppi. Per richiedere un certificato dall'infrastruttura a chiave pubblica (PKI) dell'organizzazione, è necessario confermare le eventuali appartenenze ai gruppi aggiuntive necessarie. Durante l'attività Richiesta, è possibile immettere credenziali alternative che verranno utilizzate per richiedere il certificato all'autorità di certificazione emittente dell'infrastruttura a chiave pubblica.
-ms.openlocfilehash: dda1d93544ac1d7ef5599b9b2f5bf9c860a3b303
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60849339"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: "Per\_richiedere,\_assegnare,\_rimuovere o\_visualizzare i certificati, è possibile utilizzare la Configurazione guidata certificati. A tale scopo, è necessario essere connessi come membri del gruppo RTCUniversalServerAdmins. Per richiedere un certificato a un'Autorità di certificazione (CA) pubblica, non è necessario appartenere ad altri gruppi. Per richiedere un certificato dall'infrastruttura a chiave pubblica (PKI) dell'organizzazione, è necessario confermare le eventuali appartenenze ai gruppi aggiuntive necessarie. Durante l'attività Richiesta, è possibile immettere credenziali alternative che verranno utilizzate per richiedere il certificato all'autorità di certificazione emittente dell'infrastruttura a chiave pubblica."
 ---
+
 # <a name="certificate-wizard"></a>Configurazione guidata certificati
  
 Per **** richiedere,**** assegnare,**** rimuovere o **** visualizzare i certificati, è possibile utilizzare la Configurazione guidata certificati. A tale scopo, è necessario essere connessi come membri del gruppo RTCUniversalServerAdmins. Per richiedere un certificato a un'Autorità di certificazione (CA) pubblica, non è necessario appartenere ad altri gruppi. Per richiedere un certificato dall'infrastruttura a chiave pubblica (PKI) dell'organizzazione, è necessario confermare le eventuali appartenenze ai gruppi aggiuntive necessarie. Durante l'attività Richiesta, è possibile immettere credenziali alternative che verranno utilizzate per richiedere il certificato all'autorità di certificazione emittente dell'infrastruttura a chiave pubblica.

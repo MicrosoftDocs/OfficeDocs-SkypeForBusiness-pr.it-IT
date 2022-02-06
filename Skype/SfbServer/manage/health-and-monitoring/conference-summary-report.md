@@ -1,29 +1,24 @@
 ---
 title: Rapporto riepilogativo conferenze in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 62f54812-5700-45a3-8526-8f58b0f77fbc
 description: 'Riepilogo: informazioni sul Rapporto riepilogativo conferenze in Skype for Business Server.'
-ms.openlocfilehash: 029dac40c7bc52602f0403bdfd52559db662b0ca
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60846409"
 ---
+
 # <a name="conference-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo conferenze in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto riepilogativo conferenze in Skype for Business Server.
   
-Il Rapporto riepilogativo conferenze offre una visuale generale delle sessioni di conferenza online. Una conferenza coinvolge in genere più di 2 utenti e richiede l'utilizzo dei servizi di conferenza. Al contrario, una sessione peer-to-peer in genere coinvolge solo 2 utenti e non richiede l'uso di servizi di Skype for Business Server conferencing. Le attività peer-to-peer sono riportate nel Rapporto riepilogativo attività [peer-to-peer in Skype for Business Server](peer-to-peer-activity-summary-report.md).
+Il Rapporto riepilogativo conferenze offre una visuale generale delle sessioni di conferenza online. Una conferenza coinvolge in genere più di 2 utenti e richiede l'utilizzo dei servizi di conferenza. Al contrario, una sessione peer-to-peer in genere coinvolge solo 2 utenti e non richiede l'utilizzo di servizi di Skype for Business Server conferencing. Le attività peer-to-peer sono riportate nel Rapporto [riepilogativo attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-summary-report.md).
   
 Il Rapporto riepilogativo conferenze non solo indica il numero di conferenze tenute in un determinato periodo di tempo (ogni ora, ogni giorno, settimanalmente, mensilmente), ma indica anche il numero totale di persone che hanno partecipato a tali conferenze e il numero totale di organizzatori di conferenze univoci.
   

@@ -1,49 +1,44 @@
 ---
 title: Installare i report di monitoraggio in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 6f417569-b100-442c-ad48-fdd794626cf7
 description: 'Riepilogo: informazioni su come installare un servizio che genererà report di monitoraggio in Skype for Business Server.'
-ms.openlocfilehash: 703bb209c68558ba8f98c8e3a3efcde94e4ce5eb
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861823"
 ---
+
 # <a name="install-monitoring-reports-in-skype-for-business-server"></a>Installare i report di monitoraggio in Skype for Business Server
  
 **Riepilogo:** Informazioni su come installare un servizio che genererà report di monitoraggio in Skype for Business Server.
   
-Skype for Business Server I report di monitoraggio forniscono numerose informazioni sulla qualità e sulla quantità delle sessioni di comunicazione che si svolgono nell'organizzazione. 
+Skype for Business Server di monitoraggio forniscono numerose informazioni sulla qualità e sulla quantità delle sessioni di comunicazione che si svolgono nell'organizzazione. 
   
 ## <a name="install-monitoring-reports"></a>Installare report di monitoraggio
 
-I report di monitoraggio non vengono installati automaticamente quando si installa Skype for Business Server; È invece necessario installare i rapporti di monitoraggio separatamente e solo dopo Skype for Business Server nel computer.
+I rapporti di monitoraggio non vengono installati automaticamente quando si installa Skype for Business Server; è invece necessario installare i report di monitoraggio separatamente e solo dopo l'installazione di Skype for Business Server nel computer.
   
 > [!NOTE]
 > È consigliabile installare i rapporti di monitoraggio sullo stesso computer sul quale è installato il database di monitoraggio, al fine di semplificare il processo di assegnazione delle autorizzazioni di accesso ai rapporti. Se si installano i rapporti di monitoraggio sul computer che ospita l'archivio di monitoraggio, non si avrà bisogno di configurare le autorizzazioni che permettono a un database sul computer di interagire con i servizi di reporting eseguiti su un secondo computer. 
   
-Skype for Business Server I report di monitoraggio includono oltre 30 report progettati per fornire informazioni dettagliate su conferenze, sessioni di messaggistica istantanea peer-to-peer, registrazioni utente, applicazione Response Group e molto altro ancora. Per la versione 2013, i Skype for Business Server monitoraggio includono una serie di miglioramenti:
+Skype for Business Server i report di monitoraggio includono oltre 30 report progettati per fornire informazioni dettagliate su conferenze, sessioni di messaggistica istantanea peer-to-peer, registrazioni utente, applicazione Response Group e molto altro ancora. Per la versione 2013, i Skype for Business Server monitoraggio includono una serie di miglioramenti:
   
-- **Nuovo rapporti di qualità delle chiamate**. Questi nuovi report includono il Rapporto di confronto qualità multimediale [in Skype for Business Server](../../manage/health-and-monitoring/comparison.md), che confronta la qualità tra diversi tipi di chiamate (ad esempio, tra chiamate cablate e chiamate wireless); e [il Rapporto tempo di](../../manage/health-and-monitoring/join-time-report.md)partecipazione alla conferenza in Skype for Business Server , che fornisce informazioni sulla quantità di tempo necessaria agli utenti per partecipare a una conferenza. 
+- **Nuovo rapporti di qualità delle chiamate**. Questi nuovi report includono il Rapporto di confronto qualità multimediale [in Skype for Business Server](../../manage/health-and-monitoring/comparison.md), che confronta la qualità tra diversi tipi di chiamate (ad esempio, tra chiamate cablate e chiamate wireless) e il Rapporto tempo di partecipazione alla [conferenza in Skype for Business Server](../../manage/health-and-monitoring/join-time-report.md) , che fornisce informazioni sulla quantità di tempo necessaria agli utenti per partecipare a una conferenza. 
     
-- **Rapporti migliorati per l'analisi e la risoluzione dei problemi delle sessioni video e di condivisione applicazioni.** Il Rapporto riepilogativo qualità multimediale [in Skype for Business Server](../../manage/health-and-monitoring/summary.md) consente di analizzare le chiamate di condivisione di applicazioni e video, mentre il Rapporto prestazioni server in [Skype for Business Server](../../manage/health-and-monitoring/server-performance.md) illustra in dettaglio le prestazioni dei server che generano queste chiamate. Le metriche di condivisione di applicazioni e video sono ora riportate anche dal Rapporto dettagli sessione [peer-to-peer in Skype for Business Server](../../manage/health-and-monitoring/peer-to-peer-session-detail-report.md) e dal Rapporto dettagli conferenza [in Skype for Business Server](../../manage/health-and-monitoring/detail-report.md).
+- **Rapporti migliorati per l'analisi e la risoluzione dei problemi delle sessioni video e di condivisione applicazioni.** Il Rapporto riepilogativo qualità multimediale [in Skype for Business Server](../../manage/health-and-monitoring/summary.md) consente di analizzare le chiamate di condivisione di applicazioni e video, mentre il Rapporto prestazioni server [in Skype for Business Server](../../manage/health-and-monitoring/server-performance.md) illustra in dettaglio le prestazioni dei server che generano queste chiamate. Le metriche di condivisione di applicazioni e video sono ora riportate anche dal Rapporto dettagli sessione [peer-to-peer in Skype for Business Server](../../manage/health-and-monitoring/peer-to-peer-session-detail-report.md) e dal Rapporto dettagli conferenza [in Skype for Business Server](../../manage/health-and-monitoring/detail-report.md).
     
 - **Prestazioni dei rapporti migliorate**. Il miglioramento include tempi di risposta e recupero dei dati più veloci, nonché uno spostamento più semplice e veloce all'interno dei rapporti.
     
 Nella documentazione relativa ai rapporti di monitoraggio è possibile trovare maggiori informazioni sui singoli rapporti.
   
 > [!NOTE]
-> È incluso un altro report, sottoreport dettagli chiamata QoE, in Skype for Business Server. Questo rapporto è inteso per un uso interno, e non per un accesso diretto. 
+> È incluso un altro report, sottoreport Dettagli chiamata QoE, in Skype for Business Server. Questo rapporto è inteso per un uso interno, e non per un accesso diretto. 
   
 Esistono due modi per installare i report di monitoraggio di Skype for Business Server: è possibile utilizzare la Distribuzione guidata di Skype for Business Server oppure uno script di Windows PowerShell incluso con il Skype for Business Server file di installazione. Indipendentemente dal metodo di installazione selezionato, è necessario assicurarsi di:
   
@@ -53,7 +48,7 @@ Esistono due modi per installare i report di monitoraggio di Skype for Business 
     
 Per installare i rapporti di monitoraggio attraverso la Distribuzione guidata, eseguire le operazioni seguenti:
   
-1. Fare **clic sul pulsante Start,** **scegliere** Tutti i programmi, **Skype for Business Server** e quindi fare clic Skype for Business Server **distribuzione guidata.**
+1. Fare **clic sul pulsante Start**, **scegliere** Tutti **i** programmi, Skype for Business Server e quindi fare clic Skype for Business Server **distribuzione guidata**.
     
 2. Nella Distribuzione guidata fare clic su **Distribuisci rapporti di monitoraggio** per avviare la Distribuzione guidata dei rapporti di monitoraggio.
     
@@ -67,7 +62,7 @@ Per installare i rapporti di monitoraggio attraverso la Distribuzione guidata, e
     
 6. Nella pagina **Esecuzione comandi in corso** fare clic su **Fine**.
     
-I report di monitoraggio possono essere installati anche da Skype for Business Server Management Shell eseguendo lo script DeployReports.ps1; questo Windows PowerShell script è disponibile nella cartella \<install location\> \Skype for Business Server 2015\Deployment\Setup. Per installare i rapporti di monitoraggio utilizzando DeployReports.ps1, digitare un comando simile al seguente nel prompt di Management Shell:
+I report di monitoraggio possono essere installati anche da Skype for Business Server Management Shell eseguendo lo script DeployReports.ps1. Questo script \<install location\>Windows PowerShell è disponibile nella cartella \Skype for Business Server 2015\Deployment\Setup. Per installare i rapporti di monitoraggio utilizzando DeployReports.ps1, digitare un comando simile al seguente nel prompt di Management Shell:
   
 ```powershell
 C:\Program Files\Skype for Business Server 2015\Deployment\Setup\DeployReports.ps1 -storedUserName "litwareinc\kenmyer" -storedPassword "p@ssw0rd" -readOnlyGroupName "RTCUniversalReadOnlyAdmins" -reportServerSqlInstance "atl-sql-001.litwareinc.com" -monitoringDatabaseId "MonitoringDatabase:atl-sql-001.litwareinc.com"
@@ -97,6 +92,6 @@ Nel comando precedente, la proprietà ReportingUrl deve essere impostata sull'UR
     
 3. In Gestione configurazione Reporting Services, fare clic su URL Report Manager. Nel riquadro dovrebbero comparire uno o più URL, che possono essere utilizzati come URL di Reporting URL, sebbene è consigliabile ancora una volta di utilizzare il protocollo HTTPS per la proprietà ReportingUrl.
     
-Se è stato configurato un database mirror per il database di monitoraggio, è inoltre necessario associare i rapporti di monitoraggio al database mirror. Per informazioni [dettagliate,](monitoring-reports-with-a-mirror-database.md) vedere l'articolo Associate Monitoring Reports with a mirror database in Skype for Business Server.
+Se è stato configurato un database mirror per il database di monitoraggio, è inoltre necessario associare i rapporti di monitoraggio al database mirror. Per informazioni dettagliate, vedere l'articolo Associate [Monitoring Reports with a mirror database in Skype for Business Server](monitoring-reports-with-a-mirror-database.md).
   
 

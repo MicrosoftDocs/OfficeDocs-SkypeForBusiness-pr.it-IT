@@ -1,25 +1,20 @@
 ---
-title: Eliminare manualmente i database di registrazione dettagli chiamata e Qualità dell'esperienza in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: Eliminare manualmente i database di registrazione dettagli chiamata e qualità dell'esperienza in Skype for Business Server
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 3a3a965b-b861-41a4-b9a8-27184d622c17
-description: 'Riepilogo: informazioni su come eliminare manualmente i record dalla registrazione dati e dai database QoE utilizzati da Skype for Business Server.'
-ms.openlocfilehash: edaeb5d34fefe1ea8f50da4d7bb4bb31c94c62b5
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60851600"
+description: 'Riepilogo: informazioni su come eliminare manualmente i record dalla registrazione master e dai database QoE utilizzati da Skype for Business Server.'
 ---
-# <a name="manually-purge-the-call-detail-recording-and-quality-of-experience-databases-in-skype-for-business-server"></a>Eliminare manualmente i database di registrazione dettagli chiamata e Qualità dell'esperienza in Skype for Business Server
+
+# <a name="manually-purge-the-call-detail-recording-and-quality-of-experience-databases-in-skype-for-business-server"></a>Eliminare manualmente i database di registrazione dettagli chiamata e qualità dell'esperienza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come eliminare manualmente i record dalla registrazione master e dai database QoE utilizzati da Skype for Business Server.
   
@@ -29,7 +24,7 @@ I database CDR e QoE possono essere eliminati manualmente o automaticamente dei 
 
 Gli amministratori possono configurare la registrazione dettagli chiamata (CDR) e/o i database QoE (Quality of Experience) per eliminare automaticamente i record precedenti dal database. ciò si verifica se l'eliminazione è stata abilitata per il database specificato (CDR o QoE) e se sono presenti record presenti nel database più a lungo del periodo di tempo specificato. Ad esempio, ogni giorno alle 13.00 gli amministratori possono configurare il sistema in modo che i record QoE di più di 60 giorni siano eliminati dal database QoE.
   
-Oltre a tale eliminazione automatica, sono stati aggiunti due nuovi cmdlet &#x2014; Invoke-CsCdrDatabasePurge e Invoke-CsQoEDatbasePurge &#x2014; a Skype for Business Server; questi cmdlet consentono agli amministratori di eliminare manualmente i record dalla registrazione dei dati cdr e dai database QoE in qualsiasi momento. Ad esempio, per eliminare manualmente tutti i record di più di 10 giorni dal database cdR, è possibile utilizzare un comando simile al seguente:
+Oltre a tale eliminazione automatica, a Skype for Business Server sono stati aggiunti due nuovi cmdlet &#x2014; Invoke-CsCdrDatabasePurge e Invoke-CsQoEDatbasePurge &#x2014;. Questi cmdlet consentono agli amministratori di eliminare manualmente i record dalla registrazione dei record e dai database QoE in qualsiasi momento. Ad esempio, per eliminare manualmente tutti i record di più di 10 giorni dal database cdR, è possibile utilizzare un comando simile al seguente:
   
 ```powershell
 Invoke-CsCdrDatabasePurge -Identity service:MonitoringDatabase:atl-sql-001.litwareinc.com -PurgeCallDetailDataOlderThanDays 10 -PurgeDiagnosticDataOlderThanDays 10
