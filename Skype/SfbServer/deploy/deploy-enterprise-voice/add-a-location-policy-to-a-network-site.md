@@ -1,33 +1,28 @@
 ---
 title: Aggiungere un criterio percorso a un sito di rete in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 43bfab8a-3d6b-4ca4-8425-879fd910502e
 description: Assegnare criteri percorso E9-1-1 ai siti di rete in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: ae35958d9ff95e32f129d3992d52145e3bef51b5
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60848049"
 ---
+
 # <a name="add-a-location-policy-to-a-network-site-in-skype-for-business-server"></a>Aggiungere un criterio percorso a un sito di rete in Skype for Business Server
  
 Assegnare criteri percorso E9-1-1 ai siti di rete in Skype for Business Server VoIP aziendale. 
   
-Negli esempi seguenti viene illustrato come aggiungere il criterio percorso **di Redmond** definito in Creare criteri percorso [in Skype for Business Server a](create-location-policies.md) un sito di rete esistente e come creare un nuovo sito di rete che utilizza il criterio percorso **redmond.**
+Negli esempi seguenti viene illustrato come aggiungere il criterio percorso **di Redmond** definito [in Creare criteri percorso in Skype for Business Server a](create-location-policies.md) un sito di rete esistente e come creare un nuovo sito di rete che utilizza il criterio percorso **redmond**.
   
 Per informazioni dettagliate sull'utilizzo dei siti di rete, vedere la documentazione di Lync Server Management Shell per i cmdlet seguenti:
   
@@ -41,11 +36,11 @@ Per informazioni dettagliate sull'utilizzo dei siti di rete, vedere la documenta
     
 ### <a name="to-assign-a-location-policy-to-an-existing-network-site"></a>Per assegnare un criterio percorso a un sito di rete esistente
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 2. Eseguire i cmdlet seguenti per modificare un sito di rete esistente.
     
-    Assegnare il criterio Percorso con tag **Redmond** a un sito di rete esistente denominato **Redmond.**
+    Assegnare **il criterio Percorso con tag Redmond** a un sito di rete esistente denominato **Redmond**.
     
    ```powershell
    Set-CsNetworkSite -Identity "Redmond" -NetworkRegionID "NorthAmerica" -LocationPolicy "Redmond"
@@ -53,7 +48,7 @@ Per informazioni dettagliate sull'utilizzo dei siti di rete, vedere la documenta
 
 ### <a name="to-assign-a-location-policy-to-a-new-network-site"></a>Per assegnare un criterio percorso a un nuovo sito di rete
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 2. Eseguire il cmdlet seguente per creare un nuovo sito di rete.
     

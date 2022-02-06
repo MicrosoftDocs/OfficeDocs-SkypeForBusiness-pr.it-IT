@@ -1,27 +1,22 @@
 ---
 title: Configurare la gerarchia di destinazione del team
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
-ms.reviewer: andfried, acolonna
+ms.reviewer: 'andfried, acolonna'
 search.appverid: MET150
 description: Informazioni su come configurare una gerarchia di team nell'organizzazione per pubblicare contenuto in un set di team di grandi dimensioni.
 audience: admin
 ms.localizationpriority: medium
 MS.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
+  - Teams_ITAdmin_Help
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: f65ffa8fa6dc661451669ded8f407bb519468112
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850549"
+  - Microsoft Teams
 ---
+
 # <a name="set-up-your-team-targeting-hierarchy"></a>Configurare la gerarchia di destinazione del team
 
 La configurazione di una gerarchia di targeting del team consentirà all'organizzazione di pubblicare contenuto in un set di team di grandi dimensioni. La gerarchia di destinazione del team definisce in che modo tutti i team della gerarchia sono correlati tra loro, quali utenti possono pubblicare attività e in quali team gli utenti hanno le autorizzazioni per la pubblicazione. Le caratteristiche di pubblicazione sono disabilitate per tutti gli utenti, a meno che non sia stata impostata una gerarchia di destinazione del team per l'organizzazione. Per configurare una gerarchia di destinazione del team, è necessario creare un file che definisce la gerarchia e quindi caricarlo in Teams per applicarla all'organizzazione. Dopo il caricamento dello schema, le app all'interno Teams possono usarlo.
@@ -35,12 +30,12 @@ Ecco un esempio di come viene rappresentata la gerarchia nell'app Attività in T
 
 ## <a name="terminology"></a>Terminologia
 
-I termini seguenti saranno importanti durante l'esplorazione delle gerarchie. Teams verrà definito **nodi**.
+I termini seguenti saranno importanti durante l'esplorazione delle gerarchie. Teams verranno definiti **nodi**.
 
 * **I nodi radice** sono i nodi più in alto nella gerarchia. Nell'esempio, Retail Communications è un nodo radice.
 * **I nodi padre** **e i nodi figlio** sono termini che rappresentano una relazione tra due nodi connessi. Nell'esempio, Distretto 01 è un nodo figlio dell'area 1.
-* Più livelli di elementi figlio sono definiti **discendenti.** Distretto 01, Store 01, Store 03, Store 07, Distretto 02 e Distretto 03 sono tutti discendenti dell'Area 1.
-* Un nodo senza elementi figlio è denominato **nodo foglia.** Si tratta della parte inferiore di una gerarchia.
+* Più livelli di elementi figlio sono definiti **discendenti**. Distretto 01, Store 01, Store 03, Store 07, Distretto 02 e Distretto 03 sono tutti discendenti dell'Area 1.
+* Un nodo senza elementi figlio è denominato **nodo foglia**. Si tratta della parte inferiore di una gerarchia.
 * **I team dei** destinatari sono team selezionati per ricevere un set specifico di contenuti da pubblicare. Devono essere nodi foglia.
 
 ## <a name="plan-your-hierarchy"></a>Pianificare la gerarchia
@@ -78,7 +73,7 @@ Ad esempio, nella gerarchia seguente, richiamo, comunicazioni e risorse umane po
 
 Lo schema che definisce la gerarchia si basa su un file csv (comma-separated values). Il file deve essere in formato UTF-8. Ogni riga del file CSV corrisponde a un nodo all'interno della gerarchia dei team. Ogni riga contiene informazioni che nominano il nodo all'interno della gerarchia, facoltativamente lo collegano a un team e includono attributi che possono essere usati per filtrare i team nelle app che lo supportano.
 
-È anche possibile definire **contenitori,** ovvero categorie che il team di pubblicazione può usare per organizzare il contenuto inviato ai team dei destinatari per semplificare la visualizzazione, l'ordinamento e l'attenzione sul contenuto pertinente.
+È anche possibile definire **contenitori**, ovvero categorie che il team di pubblicazione può usare per organizzare il contenuto inviato ai team dei destinatari per semplificare la visualizzazione, l'ordinamento e l'attenzione sul contenuto pertinente.
 
 ### <a name="add-required-columns"></a>Aggiungere colonne obbligatorie
 
@@ -88,7 +83,7 @@ Il file CSV deve contenere le tre colonne seguenti, nell'ordine seguente, a part
 ----------------|----------|---------------|
 | DisplayName    | Sì      | Questo campo è il nome del nodo. Il nome può contenere fino a 100 caratteri e contenere solo i caratteri A-Z, a-z e 0-9. I nomi dei nodi devono essere univoci. |
 | ParentName    | Sì       | Questo è il nome del nodo padre. Il valore specificato qui deve corrispondere esattamente al valore nel **campo DisplayName** del nodo padre. Se si vogliono aggiungere più nodi padre, separare ogni nome di nodo padre con un punto e virgola (;). È possibile aggiungere fino a 25 nodi padre e ogni nome di nodo padre può contenere fino a 2500 caratteri. Un nodo può avere più nodi padre solo se i nodi padre sono nodi radice.   <br><br>**IMPORTANTE** Prestare attenzione a non creare un ciclo in cui un elemento padre più in alto nella gerarchia fa riferimento a un nodo figlio più in basso nella gerarchia. Questa opzione non è supportata. |
-| TeamId        | Sì, se il team pubblica attività o riceve attività da un nodo padre       | Contiene l'ID del team a cui si vuole collegare un nodo. Ogni nodo deve fare riferimento a un team univoco, quindi ogni valore di TeamId può essere visualizzato una sola volta nel file di gerarchia. Per ottenere l'ID di un team a cui si vuole collegare un nodo, eseguire il comando di PowerShell seguente: `Get-Team | Export-Csv TeamList.csv` . Questo comando elenca i team dell'organizzazione e include il nome e l'ID di ogni team. Trovare il nome del team a cui si vuole creare un collegamento e quindi copiare l'ID in questo campo.|
+| TeamId        | Sì, se il team pubblica attività o riceve attività da un nodo padre       | Contiene l'ID del team a cui si vuole collegare un nodo. Ogni nodo deve fare riferimento a un team univoco, quindi ogni valore di TeamId può essere visualizzato una sola volta nel file di gerarchia. Per ottenere l'ID di un team a cui si vuole collegare un nodo, eseguire il comando di PowerShell seguente: `Get-Team | Export-Csv TeamList.csv`. Questo comando elenca i team dell'organizzazione e include il nome e l'ID di ogni team. Trovare il nome del team a cui si vuole creare un collegamento e quindi copiare l'ID in questo campo.|
 
 > [!NOTE]
 > Se un nodo non è un nodo radice o un nodo foglia e non è necessaria l'appartenenza al team per concedere le autorizzazioni corrispondenti per la pubblicazione e la creazione di report, è possibile lasciare vuoto l'ID team. Questo metodo può essere usato per aggiungere maggiore granularità quando si scelgono i team dei destinatari o per visualizzare i report di completamento senza avere un team corrispondente.
@@ -125,11 +120,11 @@ Quando si aggiunge una colonna bucket, tenere presente quanto segue:
 
 Ecco un esempio di file CSV dello schema che verrebbe creato per supportare la gerarchia illustrata nell'immagine precedente. Questo schema contiene quanto segue:
 
-* Tre colonne obbligatorie denominate `TargetName` `ParentName` , e `TeamId`
-* Tre colonne di attributi denominate `Store layout` `Departments:Clothing` , , e `Departments:Foods`
-* Tre colonne bucket denominate `Fresh Foods` , `Frozen Foods` e `Women's Wear`
+* Tre colonne obbligatorie denominate `TargetName`, `ParentName`e `TeamId`
+* Tre colonne di attributi denominate `Store layout`, `Departments:Clothing`, e `Departments:Foods`
+* Tre colonne bucket denominate `Fresh Foods`, `Frozen Foods`e `Women's Wear`
 
-`Store layout`L'attributo contiene valori che includono , , e `Compact` `Standard` `Large` . Le `Departments` colonne degli attributi possono essere impostate su un valore pari a `0` (zero) o `1` . Il `Store` layout e gli attributi non vengono visualizzati `Departments` nell'immagine precedente. Vengono aggiunti qui per mostrare in che modo è possibile aggiungere attributi alle voci del nodo. Lo stesso vale per le tre colonne del contenitore.
+L'attributo `Store layout` contiene valori che includono `Compact`, `Standard`, e `Large`. Le `Departments` colonne degli attributi possono essere impostate su un valore `0` pari a (zero) o `1`. Il `Store` layout e gli `Departments` attributi non vengono visualizzati nell'immagine precedente. Vengono aggiunti qui per mostrare in che modo è possibile aggiungere attributi alle voci del nodo. Lo stesso vale per le tre colonne del contenitore.
 
 ```CSV
 TargetName,ParentName,TeamId,Store layout,Departments:Clothing,Departments:Foods,#Fresh Foods,#Frozen Foods,#Women's Wear
@@ -154,7 +149,7 @@ Los Angeles Store,West Regional Zone,204a1287-2efb-4a8a-88e0-56fbaf5a2389,Large,
 > Per eseguire questo passaggio, è necessario installare e usare il Teams di anteprima pubblica di PowerShell dalla raccolta di PowerShell. Per la procedura di installazione del modulo, vedere Installare Teams PowerShell.
 
 > [!NOTE]
-> Government Community Cloud (GCC) i clienti devono usare l'anteprima del [cmdlet versione 2.4.0 o](https://www.powershellgallery.com/packages/MicrosoftTeams/2.4.0-preview) successiva per assicurarsi che i dati siano instradati all'ambiente GCC, invece che all'ambiente cloud pubblico.
+> i clienti di Government Community Cloud (GCC) devono usare l'anteprima del [cmdlet versione 2.4.0 o](https://www.powershellgallery.com/packages/MicrosoftTeams/2.4.0-preview) successiva per assicurarsi che i dati siano instradati all'ambiente GCC, invece che all'ambiente cloud pubblico.
 
 Dopo aver definito la gerarchia nel file CSV dello schema, è possibile caricarla in Teams. A questo scopo, eseguire il comando seguente. Per eseguire questo passaggio, è necessario essere un amministratore globale o Teams del servizio.
 
@@ -202,11 +197,11 @@ Quando si conferma l'eliminazione, il messaggio di stato continuerà a visualizz
 ### <a name="install-the-teams-powershell-module"></a>Installare il modulo Teams PowerShell
 
 > [!IMPORTANT]
-> Per eseguire questo passaggio, è necessario installare e usare il modulo Teams di anteprima pubblica di PowerShell dalla [raccolta di PowerShell.](https://www.powershellgallery.com/packages/MicrosoftTeams/) Per la procedura di installazione del modulo, vedere Installare [Teams PowerShell.](teams-powershell-install.md)
+> Per eseguire questo passaggio, è necessario installare e usare il Teams di anteprima pubblica di PowerShell dalla [raccolta di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/). Per la procedura di installazione del modulo, vedere Installare [Teams PowerShell](teams-powershell-install.md).
 
 ### <a name="sample-script"></a>Script di esempio
 
-Lo script seguente può essere usato per creare i team e caricare un file .csv nel tenant Microsoft Teams. Se si ha una gerarchia esistente, questo script la sostituirà.
+Lo script seguente può essere usato per creare i team e caricare un file .csv nel tenant Microsoft Teams team. Se si ha una gerarchia esistente, questo script la sostituirà.
 
 #### <a name="create-teams-for-a-simple-hierarchy"></a>Creare team per una gerarchia semplice
 
@@ -272,8 +267,8 @@ Description: TeamID in row # doesn't match a valid Group ID. Please view our doc
 
 Verificare di usare l'ID team corretto per il team nel file CSV dello schema. L'ID Team deve essere uguale all'ID gruppo del gruppo Microsoft 365 che lo contiene. È possibile cercare l'ID gruppo del team nell'Microsoft Teams di amministrazione.
 
-1. Nel riquadro di spostamento sinistro [dell'Microsoft Teams di amministrazione](https://admin.teams.microsoft.com/)passare a Teams Gestisci   >  **team**.
-2. Se la **colonna ID** gruppo non è visualizzata nella tabella, selezionare Modifica colonne nell'angolo **in** alto a destra della tabella e quindi attivare **ID gruppo.**
+1. Nel riquadro di spostamento sinistro [dell'interfaccia Microsoft Teams di amministrazione](https://admin.teams.microsoft.com/) **passare a** >  Teams **Gestione team**.
+2. Se la **colonna ID** gruppo non è visualizzata nella tabella, selezionare Modifica colonne nell'angolo **in alto** a destra della tabella e quindi attivare **ID gruppo**.
 3. Trovare il team nell'elenco e quindi individuare l'ID gruppo.
 
 Verificare che l'ID team nel file CSV dello schema corrisponda all'ID gruppo visualizzato nell'interfaccia di amministrazione Microsoft Teams di amministrazione.

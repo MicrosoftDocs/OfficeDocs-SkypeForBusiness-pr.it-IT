@@ -1,24 +1,19 @@
 ---
 title: Distribuire pool Front End associati per il ripristino di emergenza in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 2f12467c-8b90-43e6-831b-a0b096427f17
-description: È possibile decidere di utilizzare pool Front End abbinati per fornire protezione da ripristino di emergenza, ma non è un requisito.
-ms.openlocfilehash: 27909f44f0d86cac3100437f7df094b5f72ba1be
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60855100"
+description: 'È possibile decidere di utilizzare pool Front End abbinati per fornire protezione da ripristino di emergenza, ma non è un requisito.'
 ---
+
 # <a name="deploy-paired-front-end-pools-for-disaster-recovery-in-skype-for-business-server"></a>Distribuire pool Front End associati per il ripristino di emergenza in Skype for Business Server
  
 È possibile decidere di utilizzare pool Front End abbinati per fornire protezione da ripristino di emergenza, ma non è un requisito.
@@ -82,7 +77,7 @@ ms.locfileid: "60855100"
     ```
 
 > [!NOTE]
-> L'opzione Failover e **failback** automatici per Voice e gli intervalli di tempo associati in Generatore di topologie si applicano solo alle funzionalità di resilienza vocali introdotte in Lync Server. La selezione di questa opzione non implica che il failover del pool descritto in questo documento sia automatico. Il failover e il failback del pool richiedono sempre che un amministratore richiami manualmente i cmdlet di failover e di failback, rispettivamente.
+> **L'opzione Failover e failback** automatici per Voice e gli intervalli di tempo associati in Generatore di topologie si applicano solo alle funzionalità di resilienza vocali introdotte in Lync Server. La selezione di questa opzione non implica che il failover del pool descritto in questo documento sia automatico. Il failover e il failback del pool richiedono sempre che un amministratore richiami manualmente i cmdlet di failover e di failback, rispettivamente.
   
 ## <a name="see-also"></a>Vedere anche
 

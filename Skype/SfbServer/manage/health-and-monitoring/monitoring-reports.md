@@ -1,24 +1,19 @@
 ---
 title: Utilizzo dei report di monitoraggio in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 733577d0-c70f-4c70-ab7b-59b89fb495a8
 description: 'Riepilogo: informazioni sul monitoraggio dei report in Skype for Business Server.'
-ms.openlocfilehash: 0088bb5a83de7f1f22e14461bb841a6011810444
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60862283"
 ---
+
 # <a name="using-monitoring-reports-in-skype-for-business-server"></a>Utilizzo dei report di monitoraggio in Skype for Business Server 
  
 **Riepilogo:** Informazioni sul monitoraggio dei report in Skype for Business Server.
@@ -29,15 +24,15 @@ Per utilizzare questi report, è necessario installare i report di monitoraggio 
   
 ## <a name="in-this-section"></a>Argomenti della sezione
 
-- [Uso del dashboard di monitoraggio in Skype for Business Server](monitoring-dashboard.md) Fornisce agli amministratori una breve panoramica dell'integrità del sistema e dell'utilizzo del sistema.
+- [L'uso del dashboard di monitoraggio in Skype for Business Server](monitoring-dashboard.md) fornisce agli amministratori una rapida panoramica dell'integrità del sistema e dell'utilizzo del sistema.
     
-- [Report sull'utilizzo del sistema in Skype for Business Server](system-usage-reports.md) Fornisce informazioni sull'utilizzo del sistema basate sui dati di registrazione dei dati raccolti da Skype for Business Server.
+- [Report sull'utilizzo del sistema in Skype for Business Server](system-usage-reports.md) Fornisce informazioni sull'utilizzo del sistema in base ai dati cdR raccolti da Skype for Business Server.
     
 - [Rapporti di diagnostica delle chiamate (per utente) in Skype for Business Server](call-diagnostic-reports-per-user.md) Fornisce informazioni per utente sulle sessioni peer-to-peer e di conferenza non riuscite.
     
-- [Rapporti di diagnostica delle chiamate in Skype for Business Server](call-diagnostic-reports.md) Fornisce informazioni di riepilogo e dati di diagnostica per le sessioni peer-to-peer e di conferenza non riuscite.
+- [Call Diagnostic Reports in Skype for Business Server](call-diagnostic-reports.md) Fornisce informazioni di riepilogo e dati di diagnostica per le sessioni peer-to-peer e di conferenza non riuscite.
     
-- [Rapporti di diagnostica della qualità multimediale in Skype for Business Server](media-quality-diagnostic-reports.md) Fornisce informazioni sulla qualità delle chiamate, nonché informazioni di diagnostica e risoluzione dei problemi per le chiamate non riuscite.
+- [Media Quality Diagnostic Reports in Skype for Business Server](media-quality-diagnostic-reports.md) Fornisce informazioni sulla qualità delle chiamate, nonché informazioni di diagnostica e risoluzione dei problemi per le chiamate non riuscite.
     
 ## <a name="locating-records"></a>Individuazione dei record
 

@@ -1,35 +1,30 @@
 ---
 title: Pianificare il routing vocale in uscita in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: fde45195-6eb4-403c-9094-57df7fc0bd2a
-description: Informazioni sul routing vocale in uscita in Skype for Business Server VoIP aziendale, incluse le impostazioni di routing delle chiamate, i dial plan, le regole di normalizzazione, i criteri vocali, i record di utilizzo PSTN e le route vocali.
-ms.openlocfilehash: 1c8331f1959b03166ecd02b65e6fa1080bb43993
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861073"
+description: 'Informazioni sul routing vocale in uscita in Skype for Business Server VoIP aziendale, incluse le impostazioni di routing delle chiamate, i dial plan, le regole di normalizzazione, i criteri vocali, i record di utilizzo PSTN e le route vocali.'
 ---
+
 # <a name="plan-for-outbound-voice-routing-in-skype-for-business-server"></a>Pianificare il routing vocale in uscita in Skype for Business Server
  
 Informazioni sul routing vocale in uscita in Skype for Business Server VoIP aziendale, incluse le impostazioni di routing delle chiamate, i dial plan, le regole di normalizzazione, i criteri vocali, i record di utilizzo PSTN e le route vocali.
   
-Il routing delle chiamate in uscita si applica alle chiamate VoIP aziendale destinate a un gateway PSTN (Public Switched Telephone Network), a un trunk o a un PBX (Private Branch Exchange). Quando un Skype for Business esegue una chiamata, il server normalizza il numero di telefono nel formato E.164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a trovare una corrispondenza, applica la logica di routing delle chiamate in uscita in base alla stringa di composizione fornita. È possibile definire tale logica configurando le impostazioni del server descritte nella tabella seguente.
+Il routing delle chiamate in uscita si applica VoIP aziendale chiamate in uscita destinate a un gateway PSTN (Public Switched Telephone Network), un trunk o un PBX (Private Branch Exchange). Quando un Skype for Business esegue una chiamata, il server normalizza il numero di telefono nel formato E.164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a trovare una corrispondenza, applica la logica di routing delle chiamate in uscita in base alla stringa di composizione fornita. È possibile definire tale logica configurando le impostazioni del server descritte nella tabella seguente.
   
-**Skype for Business Server Routing delle chiamate in uscita Impostazioni**
+**Skype for Business Server routing delle chiamate in uscita Impostazioni**
 
 |**Oggetto**|**Descrizione**|
 |:-----|:-----|
@@ -49,7 +44,7 @@ Le regole di normalizzazione definiscono il modo in cui i numeri di telefono esp
 
 L'ambito di un dial plan determina il livello gerarchico a cui è possibile applicare il dial plan. In Skype for Business Server, a un utente può essere assegnato un dial plan specifico per utente. Se non viene assegnato un dial plan utente, viene applicato il dial plan del pool Front End. Se non esiste alcun dial plan del pool Front End, viene applicato il dial plan del sito. Infine, se non è presente alcun altro dial plan applicabile all'utente, viene applicato il dial plan globale.
   
-I client ottengono livelli di ambito del dial plan tramite le impostazioni di provisioning in banda fornite quando gli utenti a questo Skype for Business. L'amministratore può gestire e assegnare livelli di ambito del dial plan utilizzando il Skype for Business Server di controllo.
+I client ottengono i livelli di ambito del dial plan tramite le impostazioni di provisioning in banda fornite quando gli utenti a questo Skype for Business. L'amministratore può gestire e assegnare livelli di ambito del dial plan utilizzando Skype for Business Server di controllo.
   
 > [!NOTE]
 > Il dial plan del gateway PSTN (Public Switched Telephone Network) a livello di servizio viene applicato alle chiamate in arrivo da un determinato gateway. 
@@ -62,7 +57,7 @@ I livelli di ambito del dial plan sono definiti come segue:
     
 - **Dial plan del sito**: può essere creato per un intero sito, ad eccezione di tutti gli utenti, i gruppi o gli oggetti contatto a cui è assegnato un dial plan del pool o un dial plan utente. Per definire un dial plan sito, è necessario specificare il sito a cui applicare il dial plan.
     
-- **Dial plan globale**: Dial plan predefinito installato con il prodotto. È possibile modificare il dial plan globale, ma non eliminarlo. Questo dial plan si applica a tutti VoIP aziendale utenti, gruppi e oggetti contatto nella distribuzione, a meno che non venga configurato e assegnato un dial plan con un ambito più specifico.
+- **Dial plan globale**: dial plan predefinito installato con il prodotto. È possibile modificare il dial plan globale, ma non eliminarlo. Questo dial plan si applica a tutti VoIP aziendale utenti, gruppi e oggetti contatto nella distribuzione, a meno che non si configura e si assegna un dial plan con un ambito più specifico.
     
 ### <a name="planning-for-dial-plans"></a>Pianificazione di dial plan
 
@@ -106,7 +101,7 @@ Se si distribuisce la funzionalità di conferenza telefonica con accesso esterno
   
 #### <a name="external-access-prefix"></a>Prefisso accesso esterno
 
-È possibile specificare un prefisso di accesso esterno di un massimo di quattro caratteri (#, e 0-9) se gli utenti devono comporre una o più cifre iniziali \* aggiuntive (ad esempio, 9) per ottenere una linea esterna.
+È possibile specificare un prefisso di accesso esterno di un massimo di quattro caratteri (#, \*e 0-9) se gli utenti devono comporre una o più cifre iniziali aggiuntive (ad esempio, 9) per ottenere una linea esterna.
   
 > [!NOTE]
 > Se si specifica un prefisso di accesso esterno, non è necessario creare una regola di normalizzazione aggiuntiva per regolare il prefisso. 
@@ -137,7 +132,7 @@ Di seguito sono riportati alcuni campi numerici che può essere necessario inclu
 
 Le regole di normalizzazione utilizzano le espressioni regolari di .NET Framework per specificare formati di corrispondenza numerica che il server utilizza per convertire le stringhe di composizione nel formato E.164 allo scopo di eseguire la ricerca inversa dei numeri. È possibile creare regole di normalizzazione nel Pannello di controllo di Skype for Business Server immettendo manualmente le espressioni oppure immettendo le cifre iniziale e la lunghezza delle stringhe di composizione da associare e consentendo al Pannello di controllo di Skype for Business Server di generare automaticamente l'espressione regolare corrispondente. In ogni caso, al termine è possibile immettere un numero di test per verificare che la regola di normalizzazione funzioni come previsto.
   
-Per informazioni dettagliate sull'.NET Framework espressioni regolari, vedere [".NET Framework regolari".](/dotnet/standard/base-types/regular-expressions)
+Per informazioni dettagliate sull'.NET Framework espressioni regolari, vedere [".NET Framework regolari"](/dotnet/standard/base-types/regular-expressions).
   
 #### <a name="sample-normalization-rules"></a>Regole di normalizzazione di esempio
 <a name="BKMK_SampleNormalizationRules"> </a>
@@ -149,16 +144,16 @@ Nella tabella seguente sono illustrati alcuni esempi di regole di normalizzazion
 |**Nome regola**|**Descrizione**|**Formato numero**|**Conversione**|**Esempio**|
 |:-----|:-----|:-----|:-----|:-----|
 |4digitExtension  <br/> |Converte i numeri di interno a 4 cifre  <br/> |^(\d{4})$  <br/> |+1425555$1  <br/> |0100 viene convertito in +14255550100  <br/> |
-|5digitExtension  <br/> |Converte i numeri di interno a 5 cifre  <br/> |^5(\d {4} )$  <br/> |+1425555$1  <br/> |50100 viene convertito in +14255550100  <br/> |
+|5digitExtension  <br/> |Converte i numeri di interno a 5 cifre  <br/> |^5(\d{4})$  <br/> |+1425555$1  <br/> |50100 viene convertito in +14255550100  <br/> |
 |7digitcallingRedmond  <br/> |Converte i numeri a 7 cifre in numeri locali di Redmond  <br/> |^(\d{7})$  <br/> |+1425$1  <br/> |5550100 viene convertito in +14255550100  <br/> |
 |7digitcallingDallas  <br/> |Converte i numeri a 7 cifre in numeri locali di Dallas  <br/> |^(\d{7})$  <br/> |+1972$1  <br/> |5550100 viene convertito in +19725550100  <br/> |
 |10digitcallingUS  <br/> |Converte i numeri a 10 cifre in numeri degli Stati Uniti  <br/> |^(\d{10})$  <br/> |+1$1  <br/> |2065550100 viene convertito in +12065550100  <br/> |
-|LDCallingUS  <br/> |Converte i numeri con prefissi interurbani in numeri degli Stati Uniti  <br/> |^1(\d {10} )$  <br/> |+$1  <br/> |12145550100 viene convertito in +2145550100  <br/> |
-|IntlCallingUS  <br/> |Converte i numeri con prefissi internazionali in numeri degli Stati Uniti  <br/> |^011(\d \* )$  <br/> |+$1  <br/> |01191445550100 viene convertito in +91445550100  <br/> |
+|LDCallingUS  <br/> |Converte i numeri con prefissi interurbani in numeri degli Stati Uniti  <br/> |^1(\d{10})$  <br/> |+$1  <br/> |12145550100 viene convertito in +2145550100  <br/> |
+|IntlCallingUS  <br/> |Converte i numeri con prefissi internazionali in numeri degli Stati Uniti  <br/> |^011(\d\*)$  <br/> |+$1  <br/> |01191445550100 viene convertito in +91445550100  <br/> |
 |RedmondOperator  <br/> |Converte il numero 0 nel numero dell'operatore di Redmond  <br/> |^0$  <br/> |+14255550100  <br/> |0 viene convertito in +14255550100  <br/> |
-|RedmondSitePrefix  <br/> |Converte i numeri con prefisso on-net (6) e il codice sito di Redmond (222)  <br/> |^6222(\d {4} )$  <br/> |+1425555$1  <br/> |62220100 viene convertito in +14255550100  <br/> |
-|NYSitePrefix  <br/> |Converte i numeri con prefisso on-net (6) e il codice sito di NY (333)  <br/> |^6333(\d {4} )$  <br/> |+1202555$1  <br/> |63330100 viene convertito in +12025550100  <br/> |
-|DallasSitePrefix  <br/> |Converte i numeri con prefisso on-net (6) e il codice sito di Dallas (444)  <br/> |^6444(\d {4} )$  <br/> |+1972555$1  <br/> |64440100 viene convertito in +19725550100  <br/> |
+|RedmondSitePrefix  <br/> |Converte i numeri con prefisso on-net (6) e il codice sito di Redmond (222)  <br/> |^6222(\d{4})$  <br/> |+1425555$1  <br/> |62220100 viene convertito in +14255550100  <br/> |
+|NYSitePrefix  <br/> |Converte i numeri con prefisso on-net (6) e il codice sito di NY (333)  <br/> |^6333(\d{4})$  <br/> |+1202555$1  <br/> |63330100 viene convertito in +12025550100  <br/> |
+|DallasSitePrefix  <br/> |Converte i numeri con prefisso on-net (6) e il codice sito di Dallas (444)  <br/> |^6444(\d{4})$  <br/> |+1972555$1  <br/> |64440100 viene convertito in +19725550100  <br/> |
    
 Nella tabella seguente viene illustrato un esempio di dial plan per Redmond, Washington, Stati Uniti, in base alle regole di normalizzazione riportate nella tabella precedente.
   
@@ -200,7 +195,7 @@ I passaggi seguenti consentono di pianificare i criteri vocali necessari per la 
     
 ### <a name="voice-policy-scope"></a>Ambito dei criteri vocali
 
-L'ambito dei criteri vocali determina il livello gerarchico a cui è possibile applicare il criterio. In Skype for Business Server, è possibile configurare i criteri vocali con i livelli di ambito seguenti (elencati dai più specifici ai più generici).
+L'ambito dei criteri vocali determina il livello gerarchico a cui è possibile applicare il criterio. In Skype for Business Server, è possibile configurare i criteri vocali con i livelli di ambito seguenti (elencati dal più specifico al più generale).
   
 - Il **criterio vocale utente** può essere assegnato a singoli utenti, gruppi o oggetti contatto. Questo è il criterio di livello più basso. È possibile distribuire criteri vocali utente per abilitare le funzionalità per determinati utenti o gruppi in un sito, ma non per altri nello stesso sito. Si potrebbe decidere ad esempio di disabilitare le chiamate interurbane per alcuni dipendenti. Ai fini dell'assegnazione di un criterio vocale, un oggetto contatto viene considerato un singolo utente.
     
@@ -231,7 +226,7 @@ L'ambito dei criteri vocali determina il livello gerarchico a cui è possibile a
     
 - L'**override dei criteri di larghezza di banda** consente agli amministratori di ignorare le decisioni per i criteri di controllo di ammissione di chiamata per un particolare utente. Funzionalità disabilitata per impostazione predefinita.
     
-- **L'analisi delle chiamate** dannose consente agli utenti di segnalare chiamate dannose utilizzando il client Skype for Business e quindi contrassegna tali chiamate nei record dettagli chiamata. Questa funzionalità è disabilitata per impostazione predefinita.
+- **L'analisi delle chiamate** dannose consente agli utenti di segnalare chiamate dannose utilizzando il client Skype for Business e quindi contrassegna tali chiamate nei record dei dettagli delle chiamate. Questa funzionalità è disabilitata per impostazione predefinita.
     
 - **L'escape** della segreteria telefonica impedisce che le chiamate vengano instradati immediatamente al sistema di segreteria telefonica del telefono cellulare dell'utente quando è configurato lo squillo simultaneo e il telefono è spento, fuori batteria o fuori intervallo e si basa su un valore timer. Questa impostazione abilita e disabilita il timer e imposta il valore del timer. Può essere configurato solo utilizzando Skype for Business Server Management Shell. Questa funzionalità è disabilitata per impostazione predefinita.
     
@@ -308,7 +303,7 @@ Per un esempio dell'utilizzo del routing meno costose, tenere presente quanto se
   
 ### <a name="translating-outbound-dial-strings"></a>Conversione delle stringhe di composizione in uscita
 
-Skype for Business Server tutte le stringhe di composizione devono essere normalizzate nel formato E.164 allo scopo di eseguire la ricerca di numeri inversa (RNL). Per i trunk con gateway o IP (Private Branch Exchange) che richiedono numeri convertiti in formati di composizione locali, Skype for Business Server consente di creare una o più regole che consentono di modificare il numero chiamato (ad esempio URI di richiesta) prima di instradarlo al trunk. È ad esempio possibile scrivere una regola per rimuovere il prefisso +44 all'inizio di una stringa di composizione e sostituirlo con 0144.
+Skype for Business Server tutte le stringhe di composizione devono essere normalizzate nel formato E.164 allo scopo di eseguire la ricerca di numeri inversa (RNL). Per i trunk con gateway o IX (Private Branch Exchange) che richiedono numeri convertiti in formati di composizione locali, Skype for Business Server consente di creare una o più regole che consentono di modificare il numero chiamato (ad esempio URI di richiesta) prima di instradarlo al trunk. È ad esempio possibile scrivere una regola per rimuovere il prefisso +44 all'inizio di una stringa di composizione e sostituirlo con 0144.
   
 Con Skype for Business Server, è possibile creare una o più regole che assistono nella modifica del numero chiamante prima di instradarlo al trunk.
   

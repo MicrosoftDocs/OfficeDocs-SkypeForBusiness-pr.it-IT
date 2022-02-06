@@ -1,26 +1,21 @@
 ---
 title: Creare la progettazione della topologia iniziale per Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 4/5/2016
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: f3131153-de14-41be-b1e6-7d4bb0191af1
-description: Dopo aver completato l'installazione dello strumento di pianificazione di Skype for Business Server, è possibile avviare lo strumento di pianificazione e iniziare a progettare l'infrastruttura Skype for Business Server 2015 proposta.
-ms.openlocfilehash: 85bbab87696f01e00ccbd9b5e413329a52a7cd22
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60863483"
+description: 'Dopo aver completato l''installazione dello strumento di pianificazione di Skype for Business Server, è possibile avviare lo strumento di pianificazione e iniziare a progettare l''infrastruttura Skype for Business Server 2015 proposta.'
 ---
+
 # <a name="create-the-initial-topology-design-for-skype-for-business-server-2015"></a>Creare la progettazione della topologia iniziale per Skype for Business Server 2015
 
 Dopo aver completato l'installazione dello strumento di pianificazione di Skype for Business Server, è possibile avviare lo strumento di pianificazione e iniziare a progettare l'infrastruttura Skype for Business Server 2015 proposta.
@@ -30,22 +25,22 @@ Dopo aver completato l'installazione dello strumento di pianificazione di Skype 
 
 ### <a name="to-get-started-using-the-planning-tool-and-create-the-initial-design"></a>Per iniziare a utilizzare lo strumento di pianificazione e creare un progetto iniziale
 
-1. Avviare lo strumento Skype for Business Server 2015: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** Skype for Business Server **2015** e quindi Strumento **di pianificazione.**
+1. Avviare lo strumento Skype for Business Server 2015: fare clic sul pulsante **Start**, scegliere Tutti i **programmi, Skype for Business Server** **2015** e quindi Strumento **di pianificazione**.
 
-2. Dopo l'avvio dello strumento di pianificazione, viene visualizzata la pagina Iniziale dello strumento di pianificazione per Skype for Business Server **2015.** Scegliere una delle opzioni seguenti per iniziare la progettazione:
+2. Dopo l'avvio dello strumento di pianificazione, viene visualizzata la pagina Iniziale dello strumento di pianificazione **per Skype for Business Server 2015**. Scegliere una delle opzioni seguenti per iniziare la progettazione:
 
-   - **Opzione 1: Informazioni di base** Facendo **Informazioni di base** viene fornita una serie specifica di domande di intervista con selezioni pertinenti per definire i criteri. Dopo aver completato la sezione iniziale del questionario di **Per iniziare**, passare alla sezione **Progetta siti** per definire l'architettura dei siti. Per completare questa opzione, procedere al passaggio 3.
+   - **Opzione 1: Informazioni di base** clic **Informazioni di base** una serie specifica di domande di colloquio con selezioni pertinenti per definire i criteri. Dopo aver completato la sezione iniziale del questionario di **Per iniziare**, passare alla sezione **Progetta siti** per definire l'architettura dei siti. Per completare questa opzione, procedere al passaggio 3.
 
-   - **Opzione 2: Progettare siti** Se **si fa** clic su Progetta siti nella pagina di benvenuto, le domande del colloquio presentate nella Informazioni di base sezione.  Le informazioni che sarebbero state raccolte rispondendo alle domande del colloquio **nella** Informazioni di base sono impostate sui valori predefiniti con questa opzione. Facendo clic **su Siti di** progettazione, il progettista esperto può ignorare il colloquio iniziale e modificare i valori predefiniti, in base alle esigenze, nella pagina iniziale **siti** centrali. Per completare questa opzione, ignorare i passaggi da 3 a 5 e iniziare dal passaggio 6.
+   - **Opzione 2: Progettare siti** Se **si fa** clic su Progetta siti nella pagina di benvenuto, le domande relative al colloquio presentate nella **Informazioni di base** sezione. Le informazioni che sarebbero state raccolte rispondendo alle domande del colloquio **nella Informazioni di base** sono impostate sui valori predefiniti con questa opzione. Facendo clic **su Siti** di progettazione, il progettista esperto può ignorare il colloquio iniziale e modificare i valori predefiniti, in base alle esigenze, nella **pagina iniziale Siti** centrali. Per completare questa opzione, ignorare i passaggi da 3 a 5 e iniziare dal passaggio 6.
 
-   - **Opzione 3: visualizzare la topologia salvata** Se è già stata completata e salvata una topologia tramite l'utilizzo precedente dello strumento di pianificazione, è possibile ignorare la maggior parte di questi passaggi e iniziare aprendo e visualizzando la topologia. È inoltre possibile apportare modifiche e aggiornamenti alla topologia, salvarla di nuovo e quindi esportarla Microsoft Excel o Microsoft Visio. Per completare questa opzione, ignorare i passaggi da 3 a 12 e iniziare dal passaggio 13.
+   - **Opzione 3: visualizzare la topologia salvata** Se è già stata completata e salvata una topologia tramite l'utilizzo precedente dello strumento di pianificazione, è possibile ignorare la maggior parte di questi passaggi e iniziare aprendo e visualizzando la topologia. È inoltre possibile apportare modifiche e aggiornamenti alla topologia, salvarla di nuovo e quindi esportarla in Microsoft Excel o Microsoft Visio. Per completare questa opzione, ignorare i passaggi da 3 a 12 e iniziare dal passaggio 13.
 
 3. Fare **clic Informazioni di base** per iniziare a progettare la Skype for Business Server 2015.
 
 4. Rispondere alle domande di ogni sezione selezionando i criteri appropriati per il progetto e quindi fare clic su **Avanti** per passare alla pagina successiva della procedura guidata. Fare **clic su** Indietro per apportare modifiche nelle pagine precedenti.
 
     > [!TIP]
-    > Ogni pagina contiene una descrizione dei criteri di selezione e alcuni consigli in base alle procedure preferite e alla pianificazione della capacità. Se sono necessari ulteriori  dettagli, fare clic su Ulteriori informazioni per leggere informazioni dettagliate dalla documentazione Skype for Business Server 2015 Planning nel sito Web Microsoft. Per accedere al sito Web Microsoft, è necessario disporre della connettività Internet.
+    > Ogni pagina contiene una descrizione dei criteri di selezione e alcuni consigli in base alle procedure preferite e alla pianificazione della capacità. Se sono necessari ulteriori dettagli, fare  clic su Ulteriori informazioni per leggere informazioni dettagliate nella documentazione Skype for Business Server 2015 Planning nel sito Web Microsoft. Per accedere al sito Web Microsoft, è necessario disporre della connettività Internet.
 
 5. Selezionare le opzioni appropriate per la progettazione. Dopo la definizione dei criteri iniziali, verrà visualizzata la conferma del completamento della panoramica iniziale.
 
@@ -63,13 +58,13 @@ Dopo aver completato l'installazione dello strumento di pianificazione di Skype 
 10. Modificare le selezioni per Collaborazione online, Utenti, Voce, Opzioni di distribuzione aggiuntive o Applicazioni server, in base alle esigenze.
 
     > [!IMPORTANT]
-    > A questo punto della progettazione, è possibile selezionare o deselezionare solo le opzioni per la distribuzione. Tuttavia, è possibile configurare altre opzioni in una fase successiva dello strumento di pianificazione. Alcune opzioni non sono disponibili e non possono essere deselezionate. Inoltre, può essere necessario deselezionare un'opzione per deselezionarne un'altra. Ad esempio, se si deseleziona l'opzione **VoIP aziendale** in Voce, vengono  deselezionate anche le opzioni **Response Group**, **Annuncio** e Parcheggio di chiamata in Applicazioni server (tutte funzionalità di VoIP aziendale).
+    > A questo punto della progettazione, è possibile selezionare o deselezionare solo le opzioni per la distribuzione. Tuttavia, è possibile configurare altre opzioni in una fase successiva dello strumento di pianificazione. Alcune opzioni non sono disponibili e non possono essere deselezionate. Inoltre, può essere necessario deselezionare un'opzione per deselezionarne un'altra. Ad esempio, se si deseleziona l'opzione **VoIP aziendale** in Voce, vengono deselezionate anche le opzioni **Response Group**, **Annuncio** e **Parcheggio** di chiamata in Applicazioni server (tutte funzionalità di VoIP aziendale).
 
 11. Dopo aver definito il nome del sito e il numero di utenti, fare clic su **Avanti**.
 
 12. Nelle pagine seguenti vengono richieste informazioni sui domini SIP, sulle impostazioni delle conferenze, sulle impostazioni vocali e sull'infrastruttura, sulla messaggistica unificata di Exchange, sull'accesso degli utenti esterni, sulle impostazioni di Persistent Chat, sulle impostazioni client, sulle opzioni di collocazione e sui siti di succursale. Rispondere a queste domande nel modo appropriato.
 
-13. La domanda finale chiede se si desidera creare un altro sito centrale. Se si seleziona **Sì,** lo Strumento di pianificazione torna alla pagina Siti centrali. Se si seleziona **No,** fare **clic su Avanti** e quindi su Disegno per visualizzare la visualizzazione topologia globale di alto livello. 
+13. La domanda finale chiede se si desidera creare un altro sito centrale. Se si seleziona **Sì**, lo strumento di pianificazione torna alla pagina Siti centrali. Se si seleziona **No**, fare **clic su Avanti** e **quindi su Disegno** per visualizzare la visualizzazione topologia globale di alto livello.
 
 14. Per visualizzare una topologia esistente, fare clic su **Visualizza**.
 

@@ -1,27 +1,22 @@
 ---
 title: Installare un archivio di configurazione locale (Invoke)
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.dep.DeployReplicaInvoke
+  - ms.lync.dep.DeployReplicaInvoke
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 6a3cb2e6-e253-4a3d-b1d7-2b93b3cfc36a
-description: "Nel riquadro Comandi di esecuzione viene visualizzato lo stato delle attività per l'installazione della replica di sola lettura locale dell'archivio di gestione centrale. Durante l'esecuzione delle attività, il riquadro attività viene aggiornato mentre vengono eseguiti i comandi. È consigliabile controllare lo stato delle attività e prendere nota degli eventuali errori o avvisi che vengono visualizzati. Al termine delle attività, viene visualizzato il messaggio Stato attività: Completato e nell'elenco a discesa dei file di registro vengono visualizzati i nomi dei file di registro. Per visualizzare i file di registro creati, selezionare quello desiderato e fare clic su Visualizza registro. Esaminare tutti i file di registro per ricercare messaggi di operazione riuscita, di errore e di avviso."
-ms.openlocfilehash: 027b8f06bc200e1b18a5e965b474982a080009d8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60833612"
+description: 'Nel riquadro Comandi di esecuzione viene visualizzato lo stato delle attività per l''installazione della replica di sola lettura locale dell''archivio di gestione centrale. Durante l''esecuzione delle attività, il riquadro attività viene aggiornato mentre vengono eseguiti i comandi. È consigliabile controllare lo stato delle attività e prendere nota degli eventuali errori o avvisi che vengono visualizzati. Al termine delle attività, viene visualizzato il messaggio Stato attività: Completato e nell''elenco a discesa dei file di registro vengono visualizzati i nomi dei file di registro. Per visualizzare i file di registro creati, selezionare quello desiderato e fare clic su Visualizza registro. Esaminare tutti i file di registro per ricercare messaggi di operazione riuscita, di errore e di avviso.'
 ---
+
 # <a name="install-local-configuration-store-invoke"></a>Installare un archivio di configurazione locale (Invoke)
  
 Nel riquadro **Comandi di esecuzione** viene visualizzato lo stato delle attività per l'installazione della replica di sola lettura locale dell'archivio di gestione centrale. Durante l'esecuzione delle attività, il riquadro attività viene aggiornato mentre vengono eseguiti i comandi. È consigliabile controllare lo stato delle attività e prendere nota degli eventuali errori o avvisi che vengono visualizzati. Al termine delle attività, viene visualizzato il messaggio **Stato attività: Completato** e nell'elenco a discesa dei file di registro vengono visualizzati i nomi dei file di registro. Per visualizzare i file di registro creati, selezionare quello desiderato e fare clic su **Visualizza registro**. Esaminare tutti i file di registro per ricercare messaggi di operazione riuscita, di errore e di avviso.

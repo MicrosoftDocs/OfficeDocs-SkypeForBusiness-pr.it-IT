@@ -1,27 +1,22 @@
 ---
 title: Espansione delle impostazioni dei nomi di dominio completi (FQDN) per il server perimetrale
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.EdgeFqdnsSettingsExpander
+  - ms.lync.tb.EdgeFqdnsSettingsExpander
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 9e4e9445-0147-4dd6-84f0-b41de142b332
-ROBOTS: NOINDEX, NOFOLLOW
-description: Per modificare o specificare il Impostazioni esterno per i server perimetrali, è innanzitutto necessario determinare se si utilizzeranno indirizzi IP separati per l'accesso SIP (Session Initiation Protocol), il servizio Web Conferencing Edge e il servizio Audio/Video Edge.
-ms.openlocfilehash: 79e60b5785f24ecdcd774b661f406e8d83b31747
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858473"
+ROBOTS: 'NOINDEX, NOFOLLOW'
+description: 'Per modificare o specificare il Impostazioni esterno per i server perimetrali, è innanzitutto necessario determinare se si utilizzeranno indirizzi IP separati per l''accesso SIP (Session Initiation Protocol), il servizio Web Conferencing Edge e il servizio Audio/Video Edge.'
 ---
+
 # <a name="edge-server-fqdns-settings-expander"></a>Espansione delle impostazioni dei nomi di dominio completi (FQDN) per il server perimetrale
 
 Per modificare o specificare il **Impostazioni** esterno per i server perimetrali, è innanzitutto necessario determinare se si utilizzeranno indirizzi IP separati per l'accesso SIP (Session Initiation Protocol), il servizio Web Conferencing Edge e il servizio Audio/Video Edge.
