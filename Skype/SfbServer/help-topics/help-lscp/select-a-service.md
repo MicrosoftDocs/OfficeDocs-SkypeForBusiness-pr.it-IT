@@ -1,27 +1,22 @@
 ---
 title: Selezionare un servizio
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.SelectPool
+  - ms.lync.lscp.SelectPool
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: b6086162-8a41-4e75-afa3-7d1889ffdc90
-description: Utilizzare la finestra di dialogo Seleziona un servizio per trovare i servizi disponibili nell'ambiente. Per usare un servizio esistente, fare clic su di esso nell'elenco e quindi fare clic su OK.
-ms.openlocfilehash: 62a61c0f370f09815176540128b42961033014cc
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60840238"
+description: 'Utilizzare la finestra di dialogo Seleziona un servizio per trovare i servizi disponibili nell''ambiente. Per usare un servizio esistente, fare clic su di esso nell''elenco e quindi fare clic su OK.'
 ---
+
 # <a name="select-a-service"></a>Selezionare un servizio
 
 Utilizzare la **finestra di dialogo Seleziona** un servizio per trovare i servizi disponibili nell'ambiente. Per usare un servizio esistente, fare clic su di esso nell'elenco e quindi fare clic su **OK**.

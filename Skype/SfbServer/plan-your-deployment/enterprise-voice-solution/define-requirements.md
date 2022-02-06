@@ -1,28 +1,23 @@
 ---
 title: Definire i requisiti per le chiamate di emergenza in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: d891a212-8ad9-4bfa-9ca7-04921c46fb45
-description: Riepiloga i passaggi necessari per abilitare E9-1-1 in Skype for Business Server VoIP aziendale, a seconda che si abbia un provider di servizi E9-1-1 trunk SIP o un gateway ELIN.
-ms.openlocfilehash: 5bb4d4ba27d48118ed28c4a687105dbf5c685013
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60857283"
+description: 'Riepiloga i passaggi necessari per abilitare E9-1-1 in Skype for Business Server VoIP aziendale, a seconda che si abbia un provider di servizi E9-1-1 trunk SIP o un gateway ELIN.'
 ---
+
 # <a name="define-your-requirements-for-emergency-calls-in-skype-for-business-server"></a>Definire i requisiti per le chiamate di emergenza in Skype for Business Server
  
 Riepiloga i passaggi necessari per abilitare E9-1-1 in Skype for Business Server VoIP aziendale, a seconda che si abbia un provider di servizi E9-1-1 trunk SIP o un gateway ELIN.

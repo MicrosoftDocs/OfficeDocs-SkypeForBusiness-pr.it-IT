@@ -1,31 +1,26 @@
 ---
-title: Personalizzare l'esperienza client Mac in Skype for Business
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: Personalizzare l'esperienza del client Mac in Skype for Business
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.reviewer: PhillipGarding
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: d1d9cfec-e923-4d02-a306-ee40a9114cb8
 description: Questo articolo descrive le preferenze client e le impostazioni predefinite disponibili per il Skype for Business sul client Mac e come modificarle dall'esterno dell'app.
-ms.openlocfilehash: 909756b25f9ad3ee17536f24a4143b5b72180918
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60838348"
 ---
-# <a name="customize-the-mac-client-experience-in-skype-for-business"></a>Personalizzare l'esperienza client Mac in Skype for Business
+
+# <a name="customize-the-mac-client-experience-in-skype-for-business"></a>Personalizzare l'esperienza del client Mac in Skype for Business
  
 Questo articolo descrive le preferenze client e le impostazioni predefinite disponibili per il Skype for Business sul client Mac e come modificarle dall'esterno dell'app.
   
 ## <a name="skype-for-business-on-mac-client-preference-settings"></a>Skype for Business delle preferenze del client Mac
 
-Alcune funzionalità e comportamenti disponibili per l'Skype for Business nei client Mac sono determinati dalle impostazioni di preferenza nel client. Le Skype for Business preferenze del Mac si trovano in un file che si trova nei Mac in cui è installato il client Skype for Business che si trova nel percorso seguente: 
+Alcune funzionalità e comportamenti disponibili per l Skype for Business nei client Mac sono determinati dalle impostazioni di preferenza nel client. Le Skype for Business preferenze del Mac si trovano in un file che si trova nei Mac in cui è installato il client Skype for Business che si trova nel percorso seguente: 
   
  **~/Library/Containers/com.microsoft.SkypeForBusiness/Data/Library/Preferences/com.microsoft.SkypeForBusiness.plist**
   
@@ -43,7 +38,7 @@ Per impostare queste preferenze, accedere a un prompt del terminale sul Mac del 
 |httpProxyUserName    |Stringa    ||Nome utente proxy HTTP    |
 |httpProxyPassword    |Stringa    ||HTTP Proxy Password    |
 |trustedDomainList    |Array    ||Elenco dei domini attendibili per i reindirizzamenti HTTP.    |
-|autoAcceptTimeout    |Numero     |300 (impostazione predefinita)    |Timeout di accettazione automatica per gli utenti senza cronologia conversazioni sul lato server.    |
+|autoAcceptTimeout    |Numero    |300 (impostazione predefinita)    |Timeout di accettazione automatica per gli utenti senza cronologia conversazioni sul lato server.    |
 |warnWhenUnknownLocationForE911    |Bool    |0 = Disabilitato  <br/> 1 = Abilitato    |Avvisa l'utente quando compone un numero di emergenza da una posizione sconosciuta.    |
 |sipAddress    |Stringa    ||L'indirizzo SIP (Email) utilizzato per accedere a Skype for Business.    |
 |userName    |Stringa    ||UPN (UserName) utilizzato per accedere a Skype for Business.    |

@@ -1,29 +1,24 @@
 ---
 title: Distribuire Skype for Business Server 2015
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 12/20/2018
 audience: ITPro
 ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 0cf43c54-e544-40c5-8659-a876f614a3b3
-description: "Riepilogo: esplorare questi collegamenti per informazioni su come installare e configurare Skype for Business Server 2015 e l'aggiornamento da versioni precedenti di Lync Server."
-ms.openlocfilehash: 67643b7f28ea3155c9867dd7a4107e4630ddab15
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60863083"
+description: 'Riepilogo: esplorare questi collegamenti per informazioni su come installare e configurare Skype for Business Server 2015 e l''aggiornamento da versioni precedenti di Lync Server.'
 ---
+
 # <a name="deploy-skype-for-business-server-2015"></a>Distribuire Skype for Business Server 2015
  
 **Riepilogo:** Esplorare questi collegamenti per informazioni su come installare e configurare Skype for Business Server 2015 e l'aggiornamento da versioni precedenti di Lync Server.
@@ -47,9 +42,9 @@ Gli articoli seguenti su come installare e configurare Skype for Business Server
 |&nbsp;|Contenuto|Descrizione|
 |:-----|:-----|:-----|
 |![Icona per la documentazione.](../media/e4c786ef-1fff-4512-87c5-748543c60222.png)|[Requisiti per l'Skype for Business locale](../plan-your-deployment/requirements-for-your-environment/requirements-for-your-environment.md)  |Informazioni sui requisiti del server e dell'ambiente per Skype for Business Server.   |
-|![Icona per la documentazione.](../media/e4c786ef-1fff-4512-87c5-748543c60222.png)|[Nozioni di base sulla topologia Skype for Business Server 2015](../plan-your-deployment/topology-basics/topology-basics.md)  |Informazioni sulle opzioni della topologia e sugli scenari di collocazione dei server per Skype for Business Server.   |
-|![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Installare Skype for Business Server 2015](install/install.md)  |Informazioni su come installare Skype for Business Server in diverse topologie, sia in ambienti fisici che virtuali.   |
-|![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Eseguire l'Skype for Business Server 2015](upgrade-to-skype-for-business-server.md)  |Informazioni su come eseguire l'aggiornamento dalle versioni precedenti di Lync Server.   |
+|![Icona per la documentazione.](../media/e4c786ef-1fff-4512-87c5-748543c60222.png)|[Nozioni di base sulla topologia Skype for Business Server 2015](../plan-your-deployment/topology-basics/topology-basics.md)  |Informazioni sulle opzioni di topologia e sugli scenari di collocazione dei server per Skype for Business Server.   |
+|![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Installare Skype for Business Server 2015](install/install.md)  |Informazioni su come installare Skype for Business Server in varie topologie, sia in ambienti fisici che virtuali.   |
+|![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Aggiornamento a Skype for Business Server 2015](upgrade-to-skype-for-business-server.md)  |Informazioni su come eseguire l'aggiornamento dalle versioni precedenti di Lync Server.   |
 |![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Configurare l'esperienza client con Skype for Business](deploy-clients/configure-the-client-experience.md)  |Scopri come configurare l'esperienza client.   |
 |![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Distribuire la connettività ibrida tra Skype for Business Server e Skype for Business Online](../../SfbHybrid/hybrid/configure-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)  |Informazioni su come configurare i prerequisiti per una distribuzione ibrida e quindi configurare la distribuzione per gestire gli utenti tra Skype for Business Server locale e Skype for Business Online.   |
 |![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Distribuire il server perimetrale in Skype for Business Server 2015](deploy-edge-server/deploy-edge-server.md)  |Se gli utenti dell'organizzazione comunicano con utenti esterni che non sono connessi alla rete interna, è necessario distribuire Edge Server.   |
@@ -64,6 +59,6 @@ Le risorse seguenti su come pianificare Skype for Business Server sono disponibi
 |&nbsp;|Contenuto|Descrizione|
 |:-----|:-----|:-----|
 |![Icona per Documenti.](../media/4eff581b-890b-46cb-8224-a4122137d27e.png)|[Skype for Business Server per professionisti IT](../../Hub/index.yml)  |Visita il centro risorse per accedere a video, siti della community, documentazione, download e altro ancora.   |
-|![Icona per il contenuto dello sviluppatore.](../media/3626138a-2778-407e-911f-a0dcbdc36684.png)|[Skype Piattaforma per sviluppatori](/skype-sdk/skypedeveloperplatform)  |Trova le risorse per sviluppatori Skype for Business Server, inclusi esempi di codice, formazione e SDK.   |
+|![Icona per il contenuto dello sviluppatore.](../media/3626138a-2778-407e-911f-a0dcbdc36684.png)|[Skype per sviluppatori](/skype-sdk/skypedeveloperplatform)  |Trova le risorse per sviluppatori Skype for Business Server, inclusi esempi di codice, formazione e SDK.   |
 |![Icona per notizie, blog e così via.](../media/ac692cb8-7db8-4810-b53f-1bc88b1e4cac.png) | [Gestione e adozione delle modifiche](https://go.microsoft.com/fwlink/p/?LinkId=532796) <br/> [Blog di Office](https://go.microsoft.com/fwlink/p/?LinkId=528899)   <br/> [Skype blog del team](https://go.microsoft.com/fwlink/p/?LinkId=532818)  |Tenere il passo con le notizie dei team che creano e documenta Skype for Business Server.   |
 

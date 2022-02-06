@@ -1,38 +1,33 @@
 ---
 title: Altre informazioni sulla portabilità
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
-ms.reviewer: tonysmit,jastark
+ms.reviewer: 'tonysmit,jastark'
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 ms.collection:
-- M365-voice
+  - M365-voice
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: 'NOINDEX, NOFOLLOW'
 f1.keywords:
-- CSH
+  - CSH
 ms.custom: ms.teamsadmincenter.voice.phonenumbers.porting.moreinfo
 description: Ottieni le indicazioni necessarie per convertire i numeri di telefono in Microsoft Teams.
-ms.openlocfilehash: 362f7865f820e91e911791685293b7ca9c1786cd
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60848179"
 ---
+
 # <a name="more-information-about-porting"></a>Altre informazioni sulla portabilità
 
 Qui troverai altre informazioni sul porting dei numeri di telefono in Microsoft Teams.
 
-Per istruzioni dettagliate, vedere Trasferire i numeri di telefono Teams [.](transfer-phone-numbers-to-teams.md)
+Per istruzioni dettagliate, vedere Trasferire i numeri di telefono [Teams.](transfer-phone-numbers-to-teams.md)
 
-Se serve assistenza o se è necessario ottenere altri numeri di telefono, contattare la Guida [di TNS Service Desk.](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)
+Se serve assistenza o se è necessario ottenere altri numeri di telefono, contattare l'assistenza [di TNS Service Desk](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md).
 
 ## <a name="port-order-account-information"></a>Informazioni sull'account dell'ordine di trasferimento
 

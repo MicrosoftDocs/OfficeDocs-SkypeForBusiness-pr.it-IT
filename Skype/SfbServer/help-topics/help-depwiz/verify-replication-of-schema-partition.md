@@ -1,27 +1,22 @@
 ---
 title: Verificare la replica della partizione dello schema
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.dep.DeployMainVerifySchemaPrep
+  - ms.lync.dep.DeployMainVerifySchemaPrep
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 0357f230-6d0c-41f1-942c-e14f76e55d31
-description: "Per verificare che l'estensione dello schema sia stata replicata correttamente nella foresta di Servizi di dominio Active Directory, eseguire le operazioni seguenti:"
-ms.openlocfilehash: 7d05509046c65c0f91f0344296716c21073886bb
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60832370"
+description: 'Per verificare che l''estensione dello schema sia stata replicata correttamente nella foresta di Servizi di dominio Active Directory, eseguire le operazioni seguenti:'
 ---
+
 # <a name="verify-replication-of-schema-partition"></a>Verificare la replica della partizione dello schema
  
 Per verificare che l'estensione dello schema sia stata replicata correttamente nella foresta di Servizi di dominio Active Directory, eseguire le operazioni seguenti:

@@ -1,36 +1,31 @@
 ---
 title: Response Groups Group
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.RgsGroupMain
+  - ms.lync.lscp.RgsGroupMain
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: b8bd4c3f-3d32-42b2-9712-2d0f159577d8
-description: I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. Un gruppo di agenti è un gruppo di persone designate a rispondere alle chiamate di Response Group.
-ms.openlocfilehash: 2a4f0e68db6701b3eb75cfb1b502e4b837756d9f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60827819"
+description: 'I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. Un gruppo di agenti è un gruppo di persone designate a rispondere alle chiamate di Response Group.'
 ---
+
 # <a name="response-groups-group"></a>Response Group: gruppo
 
 I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. Un gruppo di agenti è un gruppo di persone designate a rispondere alle chiamate di Response Group.
 
-Nella **pagina Response Group** Group viene visualizzato un elenco di tutti i gruppi di agenti definiti per  -   l'organizzazione.
+Nella **pagina Response GroupGroup** -  viene visualizzato un elenco di tutti i gruppi di agenti definiti per l'organizzazione.
 
 ## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
 
-Nella pagina **Response Group** Group è possibile eseguire le attività  -   seguenti:
+È possibile eseguire le attività seguenti dalla **pagina Response GroupGroup** - :
 
 - Creare un nuovo gruppo di agenti
 

@@ -1,28 +1,23 @@
 ---
 title: Requisiti di bilanciamento del carico per Skype for Business
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection:
-- IT_Skype16
-- Strat_SB_Admin
-ms.custom: ''
+  - IT_Skype16
+  - Strat_SB_Admin
+ms.custom: null
 ms.assetid: 84489328-64a4-486c-9384-a3e5c8ed9c8b
 description: 'Riepilogo: esaminare le considerazioni sul bilanciamento del carico prima di implementare Skype for Business Server.'
-ms.openlocfilehash: 4bdfc9d9958154df8ce485c945dbe8accd630ed8
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60840998"
 ---
+
 # <a name="load-balancing-requirements-for-skype-for-business"></a>Requisiti di bilanciamento del carico per Skype for Business
  
 **Riepilogo:** Esaminare le considerazioni sul bilanciamento del carico prima di implementare Skype for Business Server.
@@ -49,7 +44,7 @@ La Skype for Business Server topologia perimetrale consolidata con scalabilità 
   
 - Federazione con organizzazioni che utilizzano Office Communications Server 2007 R2 o Office Communications Server 2007
     
-- Exchange Messaggistica unificata per gli utenti remoti che Exchange messaggistica unificata prima di Exchange 2010 con SP1
+- Exchange messaggistica unificata per gli utenti remoti che Exchange messaggistica unificata prima di Exchange 2010 con SP1
     
 - Connettività con utenti di messaggistica istantanea pubblica
     
@@ -82,7 +77,7 @@ Di seguito sono riportati i requisiti di bilanciamento del carico hardware per i
     
 ### <a name="other-hardware-load-balancer-requirements"></a>Altri requisiti del servizio di bilanciamento del carico hardware
 
-I requisiti di affinità basati su cookie sono notevolmente Skype for Business Server per i servizi Web. Se si distribuisce Skype for Business Server e non si conserva alcun Front End Server di Lync Server 2010 o pool Front End, non è necessaria la persistenza basata su cookie. Tuttavia, se si manterranno temporaneamente o definitivamente i Front End Server di Lync Server 2010 o i pool Front End, si continuerà a utilizzare la persistenza basata su cookie quando viene distribuita e configurata per Lync Server 2010. 
+I requisiti di affinità basati su cookie sono notevolmente Skype for Business Server per i servizi Web. Se si distribuisce Skype for Business Server e non vengono mantenuti i Front End Server o i pool Front End di Lync Server 2010, non è necessaria la persistenza basata su cookie. Tuttavia, se si manterranno temporaneamente o definitivamente i Front End Server di Lync Server 2010 o i pool Front End, si continuerà a utilizzare la persistenza basata su cookie quando viene distribuita e configurata per Lync Server 2010. 
   
 > [!NOTE]
 > **La decisione di usare l'affinità basata sui cookie anche se la distribuzione non la richiede** non determina un impatto negativo. 
@@ -136,17 +131,17 @@ Il monitoraggio delle porte viene definito nei servizi di bilanciamento del cari
   
 **Pool di utenti front-end server - Interfaccia interna HLB**
 
-|**IP virtuale/Porta**|**Porta nodo**|**Computer/Monitor nodo**|**Profilo persistenza**|2^31 (2 miliardi di termini)|
+|**IP virtuale/Porta**|**Porta nodo**|**Computer/Monitor nodo**|**Profilo persistenza**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|
 |\<pool\>web-int_mco_443_vs  <br/> 443  <br/> |443  <br/> |Front End  <br/> 5061  <br/> |Origine  <br/> |HTTPS  <br/> |
 |\<pool\>web-int_mco_80_vs  <br/> 80  <br/> |80  <br/> |Front End  <br/> 5061  <br/> |Origine  <br/> |HTTP  <br/> |
    
 **Pool di utenti front-end server - Interfaccia esterna HLB**
 
-|**IP virtuale/Porta**|**Porta nodo**|**Computer/Monitor nodo**|**Profilo persistenza**|2^31 (2 miliardi di termini)|
+|**IP virtuale/Porta**|**Porta nodo**|**Computer/Monitor nodo**|**Profilo persistenza**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|
-|\<pool\>web_mco_443_vs  <br/> 443  <br/> |4443  <br/> |Front End  <br/> 5061  <br/> |Nessuno  <br/> |HTTPS  <br/> |
-|\<pool\>web_mco_80_vs  <br/> 80  <br/> |8080  <br/> |Front End  <br/> 5061  <br/> |Nessuno  <br/> |HTTP  <br/> |
+|\<pool\>web_mco_443_vs  <br/> 443  <br/> |4443  <br/> |Front End  <br/> 5061  <br/> |Nessuna  <br/> |HTTPS  <br/> |
+|\<pool\>web_mco_80_vs  <br/> 80  <br/> |8080  <br/> |Front End  <br/> 5061  <br/> |Nessuna  <br/> |HTTP  <br/> |
    
 ## <a name="dns-load-balancing"></a>Bilanciamento del carico DNS
 <a name="BKMK_DNSLoadBalancing"> </a>
@@ -161,11 +156,11 @@ Il diagramma seguente mostra un esempio che include il bilanciamento del carico 
 
 ![esempio di diagramma di rete DNS.](../../media/2cc9546e-5560-4d95-8fe4-65a792a0e9c3.png)
   
-Se si utilizza il bilanciamento del carico DNS, è anche possibile acquistare servizi di bilanciamento del carico hardware a un costo più conveniente rispetto a quello da sostenere se si utilizzano servizi di bilanciamento del carico hardware per tutti i tipi di traffico. È consigliabile usare servizi di bilanciamento del carico che hanno superato i test di qualificazione dell'interoperabilità con Skype for Business Server. Per informazioni dettagliate sui test di interoperabilità del servizio di bilanciamento del carico, vedere [Lync Server 2010 Load Balancer Partners.](../../../SfbPartnerCertification/lync-cert/qualified-ip-pbx-gateway.md) Il contenuto si applica a Skype for Business Server.
+Se si utilizza il bilanciamento del carico DNS, è anche possibile acquistare servizi di bilanciamento del carico hardware a un costo più conveniente rispetto a quello da sostenere se si utilizzano servizi di bilanciamento del carico hardware per tutti i tipi di traffico. È consigliabile usare servizi di bilanciamento del carico che hanno superato i test di qualificazione dell'interoperabilità con Skype for Business Server. Per informazioni dettagliate sui test di interoperabilità del servizio di bilanciamento del carico, vedere [Lync Server 2010 Load Balancer Partners](../../../SfbPartnerCertification/lync-cert/qualified-ip-pbx-gateway.md). Il contenuto si applica a Skype for Business Server.
   
 Il bilanciamento del carico DNS è supportato per i pool Front End, i pool di server perimetrali, i pool di server Director e i pool di Mediation Server autonomi.
   
-Il bilanciamento del carico DNS viene in genere implementato a livello di applicazione. L'applicazione, ad esempio un client che esegue Skype for Business, tenta di connettersi a un server di un pool connettendosi a uno degli indirizzi IP restituiti dalla query di record DNS A e AAAA (se viene utilizzato l'indirizzamento IPv6) per il nome di dominio completo (FQDN) del pool. 
+Il bilanciamento del carico DNS viene in genere implementato a livello di applicazione. L'applicazione, ad esempio un client che esegue Skype for Business, tenta di connettersi a un server di un pool connettendosi a uno degli indirizzi IP restituiti dalla query di record DNS A e AAAA (se si usa l'indirizzamento IPv6) per il nome di dominio completo (FQDN) del pool. 
   
 Ad esempio, se in un pool denominato pool01.contoso.com sono presenti tre server front-end, si verifica quanto segue:
   
@@ -190,7 +185,7 @@ Il bilanciamento del carico DNS viene utilizzato per gli elementi seguenti:
   
 - Bilanciamento del carico SIP da server a server nei server perimetrali
     
-- Bilanciamento del carico Delle applicazioni UCAS (Unified Communications Application Services), ad esempio Operatore automatico conferenza, Response Group e Parcheggio di chiamata
+- Bilanciamento del carico Applicazioni UCAS (Unified Communications Application Services), ad esempio servizi di Operatore automatico conferenza, Response Group e Parcheggio di chiamata
     
 - Impedire nuove connessioni alle applicazioni UCAS (noto anche come "drenaggio")
     
@@ -235,12 +230,12 @@ Per la distribuzione del bilanciamento del carico DNS in pool Front End e pool d
   
 - Un pool che utilizza il bilanciamento del carico DNS deve avere due FQDN: l'FQDN del pool normale utilizzato dal bilanciamento del carico DNS (ad esempio pool01.contoso.com) e viene risolto negli INDIRIZZI IP fisici dei server del pool e un altro FQDN per i servizi Web del pool (ad esempio web01.contoso.com), che si risolve in indirizzo IP virtuale del pool. 
     
-    In Generatore di topologie, se si desidera distribuire il bilanciamento del carico DNS per un pool, per creare questo FQDN aggiuntivo per i servizi Web del pool è necessario selezionare la casella di controllo Ignora FQDN pool di servizi **Web** interni e digitare il nome di dominio completo nella pagina Specificare gli URL dei servizi Web per il **pool.**
+    In Generatore di topologie, se si desidera distribuire il bilanciamento del carico DNS per un pool, per creare questo FQDN aggiuntivo per i servizi Web del pool è necessario selezionare la casella di controllo Ignora FQDN pool di servizi **Web** interni e digitare il nome di dominio completo nella pagina Specificare gli URL **dei servizi Web** per il pool.
     
 - Per supportare il nome di dominio completo utilizzato dal bilanciamento del carico DNS, è necessario effettuare il provisioning di DNS per risolvere il nome di dominio completo del pool (ad esempio pool01.contoso.com) negli indirizzi IP di tutti i server del pool (ad esempio 192.168.1.1, 192.168.1.2 e così via). Includere solo gli indirizzi IP dei server attualmente distribuiti.
     
     > [!CAUTION]
-    > Se si dispone di più pool Front End o Front End Server, il nome di dominio completo dei servizi Web esterni deve essere univoco. Se ad esempio si definisce l'FQDN dei servizi Web esterni di un  Front End Server **come pool01.contoso.com**, non è possibile utilizzare pool01.contoso.com per un altro pool Front End o Front End Server. Se si distribuiscono anche Director, il nome di dominio completo dei servizi Web esterni definito per qualsiasi server Director o pool di server Director deve essere univoco da qualsiasi altro server Director o pool di server Director, nonché da qualsiasi pool Front End o Front End Server. Se si decide di sostituire i servizi Web interni con un fqdn autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
+    > Se si dispone di più pool Front End o Front End Server, il nome di dominio completo dei servizi Web esterni deve essere univoco. Ad esempio, se si definisce il nome di dominio completo dei servizi Web esterni di un Front End Server **come pool01.contoso.com**, non è possibile utilizzare **pool01.contoso.com per un** altro pool Front End o Front End Server. Se si distribuiscono anche Director, il nome di dominio completo dei servizi Web esterni definito per qualsiasi server Director o pool di server Director deve essere univoco da qualsiasi altro server Director o pool di server Director, nonché da qualsiasi pool Front End o Front End Server. Se si decide di sostituire i servizi Web interni con un fqdn autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
   
 ### <a name="dns-load-balancing-on-edge-server-pools"></a>Bilanciamento del carico DNS in pool di server perimetrali
 <a name="BK_Edge"> </a>
@@ -255,7 +250,7 @@ L'utilizzo del bilanciamento del carico DNS nei server perimetrali comporta una 
     
 Questi scenari funzionano a condizione che tutti i server perimetrali nel pool siano in esecuzione, ma se un server perimetrale non è disponibile, tutte le richieste per questi scenari inviate a tale server avranno esito negativo, anziché essere instradate a un altro server perimetrale.
   
- Se si utilizza la messaggistica unificata Exchange, è necessario utilizzare almeno Exchange 2013 per ottenere il supporto per il bilanciamento del carico DNS Skype for Business Server server perimetrale. Se si utilizza una versione precedente di Exchange, gli utenti remoti non avranno funzionalità di failover per questi Exchange di messaggistica unificata:
+ Se si utilizza la Exchange di messaggistica unificata, è necessario utilizzare almeno Exchange 2013 per ottenere il supporto per il bilanciamento del carico DNS Skype for Business Server server perimetrale. Se si utilizza una versione precedente di Exchange, gli utenti remoti non avranno funzionalità di failover per questi Exchange di messaggistica unificata:
   
 - Riproduzione della Enterprise vocale sul telefono
     

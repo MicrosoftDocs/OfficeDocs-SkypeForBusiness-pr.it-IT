@@ -1,7 +1,7 @@
 ---
 title: Disconnettersi da Microsoft Teams
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -12,18 +12,13 @@ description: Informazioni su come disconnettersi da Microsoft Teams.
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: high
 ms.collection:
-- M365-collaboration
+  - M365-collaboration
 f1.keywords:
-- NOCSH
+  - NOCSH
 appliesto:
-- Microsoft Teams
-ms.openlocfilehash: ba5789dac9d54de153c6d4c712a2d68367ad79c0
-ms.sourcegitcommit: 8d728ca42dc917a28b94e2de84ce4f5b2515d485
-ms.translationtype: HT
-ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61513597"
+  - Microsoft Teams
 ---
+
 # <a name="sign-out-of-microsoft-teams"></a>Disconnettersi da Microsoft Teams
 
 È consigliabile che gli utenti rimangano connessi all'app Microsoft Teams per continuare a ricevere chat, chiamate in arrivo e altre attività. A volte, gli utenti potrebbero voler disconnettersi dall'applicazione Teams per diversi motivi:
