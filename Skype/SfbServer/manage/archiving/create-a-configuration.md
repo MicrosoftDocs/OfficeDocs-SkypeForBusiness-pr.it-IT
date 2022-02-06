@@ -1,24 +1,19 @@
 ---
 title: Creare una configurazione di archiviazione in Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.assetid: dc574afa-0b7d-404f-99b3-c812430b7c70
 description: 'Riepilogo: informazioni su come creare una configurazione di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: 76fd2785f172cc9dd4b76df97d3c29a78e831e46
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850039"
 ---
+
 # <a name="create-an-archiving-configuration-in-skype-for-business-server"></a>Creare una configurazione di archiviazione in Skype for Business Server
 
 **Riepilogo:** Informazioni su come creare una configurazione di archiviazione per Skype for Business Server.
@@ -37,7 +32,7 @@ Per configurare le opzioni di archiviazione per un sito o un pool specifico:
     
    - Per creare una configurazione di archiviazione siti, fare clic su **Configurazione** sito e quindi in **Selezionare** un sito selezionare il sito da configurare per l'archiviazione.
     
-   - Per creare una configurazione di archiviazione del pool, fare clic su **Configurazione** pool e quindi in Selezionare un **pool** selezionare il pool da configurare per l'archiviazione.
+   - Per creare una configurazione di archiviazione del pool, fare clic su **Configurazione** pool e quindi in **Selezionare un pool** selezionare il pool da configurare per l'archiviazione.
     
 5. Nell'elenco a discesa **Impostazione di archiviazione** in **Nuova impostazione di archiviazione** eseguire una delle operazioni seguenti:
     
@@ -45,13 +40,13 @@ Per configurare le opzioni di archiviazione per un sito o un pool specifico:
     
    - Per abilitare l'archiviazione per le sessioni di messaggistica istantanea e le conferenze Web, fare clic su **Archivia sessioni di messaggistica istantanea e Web Conferencing**.
     
-   - Per disabilitare l'archiviazione per questa configurazione, fare clic **su Disabilita archiviazione.**
+   - Per disabilitare l'archiviazione per questa configurazione, fare clic **su Disabilita archiviazione**.
     
 6. Sempre in **Nuova impostazione di archiviazione** eseguire le operazioni seguenti:
     
    - Per bloccare l'attività quando l'archiviazione non è disponibile, selezionare la casella di controllo **Blocca sessioni di messaggistica istantanea o Web Conferencing se l'archiviazione non riesce**.
     
-   - Per utilizzare i Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
+   - Per utilizzare Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange** microsoft.
     
    - Per abilitare l'eliminazione dei dati, selezionare la casella di controllo **Abilita eliminazione dei dati di archiviazione** e quindi eseguire una delle operazioni seguenti:
     
@@ -63,7 +58,7 @@ Per configurare le opzioni di archiviazione per un sito o un pool specifico:
     
 ## <a name="configure-archiving-options-by-using-windows-powershell"></a>Configurare le opzioni di archiviazione tramite Windows PowerShell
 
-È inoltre possibile configurare le opzioni di archiviazione per un sito o un pool specifico utilizzando il cmdlet **New-CsArchivingConfiguration.**
+È inoltre possibile configurare le opzioni di archiviazione per un sito o un pool specifico utilizzando il cmdlet **New-CsArchivingConfiguration** .
   
 Con il comando seguente viene creata una nuova raccolta di impostazioni di configurazione di archiviazione per il sito Redmond:
   
@@ -85,4 +80,4 @@ New-CsArchivingConfiguration -Identity "site:Redmond" -EnableArchiving "ImOnly"
 New-CsArchivingConfiguration -Identity "site:Redmond" -EnableArchiving "ImOnly" -BlockOnArchiveFailure $True
 ```
 
-Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsArchivingConfiguration.](/powershell/module/skype/new-csarchivingconfiguration?view=skype-ps)
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsArchivingConfiguration](/powershell/module/skype/new-csarchivingconfiguration?view=skype-ps) .

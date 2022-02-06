@@ -1,27 +1,22 @@
 ---
 title: Espansione delle impostazioni del computer perimetrale
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.EdgeMachineSettingsExpander
+  - ms.lync.tb.EdgeMachineSettingsExpander
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 747456dd-d237-44e6-9e64-63b0e7212a08
 description: 'Per modificare le proprietà di un server di un pool di server perimetrali, eseguire le operazioni seguenti:'
-ms.openlocfilehash: b04c269102bc11f15e336310323de756d9daa917
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829010"
 ---
+
 # <a name="edge-machine-settings-expander"></a>Espansione delle impostazioni del computer perimetrale
  
 Per modificare le proprietà di un server di un pool di server perimetrali, eseguire le operazioni seguenti:

@@ -1,36 +1,31 @@
 ---
 title: Espansione delle impostazioni del computer perimetrale per Lync Server 2010
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.EdgeMachineSettingsExpander2010
+  - ms.lync.tb.EdgeMachineSettingsExpander2010
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: fb72a5b5-70f4-44af-8dfd-c5d32e563882
-description: "Per modificare le proprietà per i computer server perimetrali come singolo server perimetrale o come computer membri in un pool di server perimetrali, configurare le impostazioni di configurazione del nome del server e dell'indirizzo IP:"
-ms.openlocfilehash: 667d0736e3a964d95842f5d7b8551c7fd0be5e07
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829040"
+description: 'Per modificare le proprietà per i computer server perimetrali come singolo server perimetrale o come computer membri in un pool di server perimetrali, configurare le impostazioni di configurazione del nome del server e dell''indirizzo IP:'
 ---
+
 # <a name="edge-machine-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni del computer perimetrale per Lync Server 2010
  
-Per modificare le proprietà per i computer server perimetrali come singolo server perimetrale o come computer membri in un pool di server perimetrali, configurare le impostazioni di configurazione del nome del server e **dell'indirizzo IP:**
+Per modificare le proprietà per i computer server perimetrali come singolo server perimetrale o come computer membri in un pool di server perimetrali, configurare le impostazioni di configurazione del nome del **server e dell'indirizzo IP** :
   
-- **Nome interno o FQDN:** digitare il nome del computer a cui si fa riferimento nel DNS (Domain Name System). 
+- **Nome interno o FQDN**: digitare il nome del computer a cui viene fatto riferimento nel DNS (Domain Name System). 
     
-- **Indirizzo IPv4 interno:** digitare l'indirizzo IPv4 della scheda di interfaccia di rete interna (NIC) per il computer.
+- **Indirizzo IPv4 interno**: digitare l'indirizzo IPv4 della scheda nic (Network Interface Card) interna per il computer.
     
-- Configurare l'indirizzo **IPv4** esterno del servizio **Access Edge** associato al computer
+- Configurare l'indirizzo **IPv4 esterno del** servizio **Access Edge** associato al computer
     
     > [!IMPORTANT]
     > Se si è scelto di utilizzare un singolo indirizzo IP per la configurazione del server perimetrale, sarà possibile modificare solo l'indirizzo IPv4 esterno per il servizio Access Edge. Gli altri servizi Edge condivideranno lo stesso indirizzo IPv4 del servizio Access Edge. 
