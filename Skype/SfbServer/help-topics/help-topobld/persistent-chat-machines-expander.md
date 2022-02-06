@@ -1,30 +1,25 @@
 ---
 title: Espansione dei computer Persistent Chat
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.tb.PersistentChatMachinesExpander
+  - ms.lync.tb.PersistentChatMachinesExpander
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 15bc1c8f-71bd-4d66-bba1-cac0f2fe90bf
 description: È possibile attivare o disattivare un server Chat persistente distribuito o un pool di server Chat persistente utilizzando i server o i pool elencati nelle impostazioni dello stato del computer. Selezionare un server o pool dall'elenco e fare clic sul pulsante Rendi attivo per impostare un server o pool come attivo.
-ms.openlocfilehash: 8615ec5f0996e7d06db91f3cd5850cc147e75e0b
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60853120"
 ---
+
 # <a name="persistent-chat-machines-expander"></a>Espansione dei computer Persistent Chat
  
-È possibile attivare o disattivare un server Chat persistente distribuito o un pool di server Chat persistente utilizzando i server o i pool elencati in **Impostazioni stato computer**. Selezionare un server o pool dall'elenco e fare clic sul pulsante **Rendi attivo** per impostare un server o pool come attivo.
+È possibile attivare o disattivare un server Chat persistente distribuito o un pool di server Chat persistente utilizzando i server o i pool elencati nelle impostazioni **dello stato del computer**. Selezionare un server o pool dall'elenco e fare clic sul pulsante **Rendi attivo** per impostare un server o pool come attivo.
   
 Per impostare un server Chat persistente distribuito o un pool di server Chat persistente su inattivo, selezionare il server o il pool nell'elenco e fare clic su **Rendi inattivo**. Almeno un server deve essere impostato su attivo.
   

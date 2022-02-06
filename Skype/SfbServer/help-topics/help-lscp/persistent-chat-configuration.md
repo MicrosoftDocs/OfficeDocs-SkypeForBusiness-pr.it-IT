@@ -1,35 +1,30 @@
 ---
 title: Configurazione Persistent Chat
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.PersistentChatConfig
+  - ms.lync.lscp.PersistentChatConfig
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 3f2891e6-bad3-4a23-a345-b7de4cae3bd9
-description: La distribuzione del server Chat persistente può ospitare molte chat room persistenti simultanee. Le chat room possono essere organizzate in una serie di categorie sul server. Ogni chat room appartiene a una categoria, da cui eredita alcune impostazioni. In questo modo viene creata una struttura che consente di identificare le conversazioni in base alle esigenze aziendali e di facilitare l'amministrazione delegata e la gestione semplificata.
-ms.openlocfilehash: cfb047bf30e8f7ad1f9157cfd7927b262a061210
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829180"
+description: 'La distribuzione del server Chat persistente può ospitare molte chat room persistenti simultanee. Le chat room possono essere organizzate in una serie di categorie sul server. Ogni chat room appartiene a una categoria, da cui eredita alcune impostazioni. In questo modo viene creata una struttura che consente di identificare le conversazioni in base alle esigenze aziendali e di facilitare l''amministrazione delegata e la gestione semplificata.'
 ---
+
 # <a name="persistent-chat-configuration"></a>Configurazione di Chat persistente
  
 La distribuzione del server Chat persistente può ospitare molte chat room persistenti simultanee. Le chat room possono essere organizzate in una serie di categorie sul server. Ogni chat room appartiene a una categoria, da cui eredita alcune impostazioni. In questo modo viene creata una struttura che consente di identificare le conversazioni in base alle esigenze aziendali e di facilitare l'amministrazione delegata e la gestione semplificata.
   
 > [!NOTE]
-> Sebbene molte delle funzionalità di gestione delle chat room siano disponibili nei computer che eseguono Persistent Chat per l'utente, gli amministratori di Persistent Chat (nel ruolo **cspersistentchatadministrator)** devono utilizzare il Pannello di controllo o i cmdlet della shell di gestione per creare o gestire le categorie.
+> Sebbene molte delle funzionalità di gestione delle chat room siano disponibili nei computer che eseguono Persistent Chat per l'utente, gli amministratori di Persistent Chat (nel ruolo **cspersistentchatadministrator** ) devono utilizzare il Pannello di controllo o i cmdlet della shell di gestione per creare o gestire le categorie.
   
-Gli amministratori di Persistent Chat utilizzano Skype for Business Server pannello di controllo o Windows PowerShell per creare e gestire categorie e per progettare l'accesso alle chat room per gli utenti dell'organizzazione.
+Gli amministratori di Chat persistente utilizzano Skype for Business Server pannello di controllo o Windows PowerShell per creare e gestire categorie e per progettare l'accesso alle chat room per gli utenti dell'organizzazione.
   
 I responsabili delle chat persistenti, che hanno la possibilità di gestire una o più chat room, possono utilizzare il client per avviare un'applicazione Web di gestione delle chat room per creare e gestire le chat (oppure i clienti possono creare soluzioni e flussi di lavoro personalizzati da richiamare). Chat persistente
   
@@ -57,17 +52,17 @@ I responsabili delle chat room possono apportare modifiche a tutte le proprietà
     
 ## <a name="tasks-that-you-can-perform"></a>Attività eseguibili
 
-Nella pagina Configurazione chat **persistente** è possibile eseguire le attività seguenti: configurare le opzioni del server Chat persistente a livello globale o per un pool specifico.
+Nella pagina Configurazione **chat persistente** è possibile eseguire le attività seguenti: configurare le opzioni del server Chat persistente a livello globale o per un pool specifico.
   
 ## <a name="to-configure-persistent-chat-options-globally"></a>Per configurare le opzioni di Persistent Chat a livello globale
 
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL amministratore.
+2. Dal menu **Start** seleziona il pannello Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
     
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Configurazione Persistent Chat**.
     
-4. Nella pagina **Configurazione Persistent Chat** fare clic su Nuovo **e** quindi su **Configurazione sito.**
+4. Nella pagina **Configurazione Persistent Chat** fare clic su **Nuovo e** quindi su **Configurazione sito**.
     
     > [!IMPORTANT]
     > Scegliere questa opzione se si desidera applicare la configurazione a tutti i pool di server Chat persistente distribuiti nel sito. Fare **clic su Configurazione** pool se si desidera applicare la configurazione a uno specifico pool di server Chat persistente.
@@ -97,7 +92,7 @@ Nella pagina Configurazione chat **persistente** è possibile eseguire le attivi
 
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
+2. Dal menu **Start** seleziona il pannello Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
     
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Configurazione Persistent Chat**.
     
@@ -126,6 +121,6 @@ Nella pagina Configurazione chat **persistente** è possibile eseguire le attivi
     
 ## <a name="see-also"></a>Vedere anche
 
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere [Plan for Persistent Chat Server in Skype for Business Server 2015,](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)Deploy Persistent Chat Server in Skype for Business Server [2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md)e [Manage Persistent Chat Server in Skype for Business Server 2015](../../manage/persistent-chat/persistent-chat.md).
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere [Plan for Persistent Chat Server in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md), [Deploy Persistent Chat Server in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md) e [Manage Persistent Chat Server in Skype for Business Server 2015](../../manage/persistent-chat/persistent-chat.md).
   
 

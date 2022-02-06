@@ -1,30 +1,25 @@
 ---
 title: Criteri Persistent Chat
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.PersistentChatPolicy
+  - ms.lync.lscp.PersistentChatPolicy
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: eb9e95b9-f69d-4545-970f-9dfdd93b0eff
-description: È possibile utilizzare la pagina Criteri di Persistent Chat del gruppo di Persistent Chat per gestire i criteri a livello globale, pool, sito o utente, inclusa la configurazione del criterio globale predefinito e la creazione di uno o più criteri utente e sito aggiuntivi per la distribuzione. Se il server Chat persistente è abilitato per un utente in base ai criteri, l'ambiente del server Chat persistente verrà visualizzato nel client.
-ms.openlocfilehash: 26df9230dc24faf41a6f8ed6bf1f8047fe98007d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60862783"
+description: 'È possibile utilizzare la pagina Criteri di Persistent Chat del gruppo di Persistent Chat per gestire i criteri a livello globale, pool, sito o utente, inclusa la configurazione del criterio globale predefinito e la creazione di uno o più criteri utente e sito aggiuntivi per la distribuzione. Se il server Chat persistente è abilitato per un utente in base ai criteri, l''ambiente del server Chat persistente verrà visualizzato nel client.'
 ---
+
 # <a name="persistent-chat-policy"></a>Criteri Chat persistente
  
-È possibile utilizzare la pagina Criteri **di Persistent Chat** del gruppo di Persistent **Chat** per gestire i criteri a livello globale, pool, sito o utente, inclusa la configurazione del criterio globale predefinito e la creazione di uno o più criteri utente e sito aggiuntivi per la distribuzione. Se il server Chat persistente è abilitato per un utente in base ai criteri, l'ambiente del server Chat persistente verrà visualizzato nel client.
+È possibile utilizzare la pagina Criteri **di Persistent Chat** del gruppo **di Persistent Chat** per gestire i criteri a livello globale, pool, sito o utente, inclusa la configurazione del criterio globale predefinito e la creazione di uno o più criteri utente e sito aggiuntivi per la distribuzione. Se il server Chat persistente è abilitato per un utente in base ai criteri, l'ambiente del server Chat persistente verrà visualizzato nel client.
   
 Il criterio globale viene creato automaticamente quando si distribuisce il server Chat persistente e può essere configurato, ma non eliminato. Poiché il criterio globale si applica a tutti gli utenti, non è necessario impostarlo per utente.
   
@@ -35,7 +30,7 @@ Il criterio globale viene creato automaticamente quando si distribuisce il serve
   
 ## <a name="tasks-that-you-can-perform"></a>Attività eseguibili
 
-Nella pagina Criteri chat **persistente** è possibile eseguire le attività seguenti: abilitare i criteri del server Chat persistente. gestire i criteri del server Chat persistente.
+Nella pagina Criteri **chat persistente** è possibile eseguire le attività seguenti: abilitare i criteri del server Chat persistente. gestire i criteri del server Chat persistente.
   
 ## <a name="to-configure-the-global-policy-for-persistent-chat"></a>Per configurare i criteri globali per Persistent Chat
 
@@ -43,7 +38,7 @@ Nella pagina Criteri chat **persistente** è possibile eseguire le attività seg
     
 2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
     
-3. Nel Skype for Business Server di controllo fare clic su **Persistent Chat** e quindi su Criteri **chat persistente.**
+3. Nel Skype for Business Server di controllo fare clic su **Persistent Chat** e quindi su **Criteri chat persistente**.
     
 4. Fare clic su **Globale** nell'elenco di criteri, fare clic su **Modifica** e quindi su **Mostra dettagli**.
     
@@ -51,9 +46,9 @@ Nella pagina Criteri chat **persistente** è possibile eseguire le attività seg
     
    - In **Nome** specificare un nuovo nome per i criteri globali, se non si desidera usare il nome predefinito Globale.
     
-   - In **Descrizione** fornire informazioni dettagliate sui criteri utente, ad esempio Criteri globali per _centralSiteName._
+   - In **Descrizione** fornire informazioni dettagliate sul criterio utente, ad esempio Criteri globali per  _centralSiteName_.
     
-   - Per controllare Persistent Chat per tutti i siti e gli utenti non controllati in modo specifico tramite un criterio sito o un criterio utente, selezionare o deselezionare la casella di controllo **Abilita Persistent Chat.**
+   - Per controllare Persistent Chat per tutti i siti e gli utenti non controllati in modo specifico tramite un criterio sito o un criterio utente, selezionare o deselezionare la casella **di controllo Abilita Persistent Chat** .
     
 6. Fare clic su **Commit**.
     
@@ -101,9 +96,9 @@ I criteri utente hanno la precedenza sui criteri globali e di sito, ma solo per 
     
    - In **Nome** specificare un nome per il nuovo criterio utente.
     
-   - In **Descrizione** fornire informazioni dettagliate sul criterio utente, ad esempio criteri di Persistent Chat per un utente specifico.
+   - In **Descrizione** fornire informazioni dettagliate sui criteri utente, ad esempio criteri di Persistent Chat per un utente specifico.
     
-   - Per controllare Persistent Chat per tutti gli utenti non controllati in modo specifico tramite un criterio utente, selezionare o deselezionare la casella di controllo **Abilita Persistent Chat.**
+   - Per controllare Persistent Chat per tutti gli utenti non controllati in modo specifico tramite un criterio utente, selezionare o deselezionare la **casella di controllo Abilita Persistent Chat** .
     
 6. Fare clic su **Commit**.
     
@@ -121,7 +116,7 @@ Utilizzare la procedura descritta in questo argomento per applicare un criterio 
     
 4. Nella tabella in cui sono elencati i risultati di ricerca, fare clic sull'account utente, scegliere **Modifica** e quindi **Mostra dettagli**.
     
-5. In **Modifica utente Lync Server** in Criteri chat **persistente** selezionare il criterio utente di Persistent Chat che si desidera applicare.
+5. In **Modifica utente Lync Server** in **Criteri chat persistente** selezionare il criterio utente di Persistent Chat che si desidera applicare.
     
     > [!NOTE]
     > Le **\<Automatic\>** impostazioni applicano il criterio effettivo predefinito. Queste impostazioni vengono applicate automaticamente dal server.

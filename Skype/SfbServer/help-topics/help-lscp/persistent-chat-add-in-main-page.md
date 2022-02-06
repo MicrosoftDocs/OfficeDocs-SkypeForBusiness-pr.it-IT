@@ -1,34 +1,29 @@
 ---
 title: Pagina principale del componente aggiuntivo Persistent Chat
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-- CSH
+  - CSH
 ms.custom:
-- ms.lync.lscp.PersistentChatAddinMain
+  - ms.lync.lscp.PersistentChatAddinMain
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 0c0ecf64-258d-4b43-8fac-fa5ffa4e7646
 description: È possibile utilizzare la sezione Componente aggiuntivo della pagina Persistent Chat per associare GLI URL alle chat room di Persistent Chat. Questi URL vengono visualizzati nel client nella chat room nel riquadro di estendibilità della conversazione. Un amministratore deve aggiungere componenti aggiuntivi all'elenco dei componenti aggiuntivi registrati e i responsabili/creatori di chat devono associare le chat room a uno dei componenti aggiuntivi registrati prima che gli utenti possano visualizzare questo aggiornamento nel client.
-ms.openlocfilehash: fd24de819167bc766009fb6e56a06c377bba076b
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60841498"
 ---
+
 # <a name="persistent-chat-add-in-main-page"></a>Pagina principale del componente aggiuntivo di Chat persistente
 
-È possibile utilizzare la **sezione Componente aggiuntivo** della pagina Persistent **Chat** per associare GLI URL alle chat room di Persistent Chat. Questi URL vengono visualizzati nel client nella chat room nel riquadro di estendibilità della conversazione. Un amministratore deve aggiungere componenti aggiuntivi all'elenco dei componenti aggiuntivi registrati e i responsabili/creatori di chat devono associare le chat room a uno dei componenti aggiuntivi registrati prima che gli utenti possano visualizzare questo aggiornamento nel client.
+È possibile utilizzare la **sezione Componente aggiuntivo** della pagina **Persistent Chat** per associare GLI URL alle chat room di Persistent Chat. Questi URL vengono visualizzati nel client nella chat room nel riquadro di estendibilità della conversazione. Un amministratore deve aggiungere componenti aggiuntivi all'elenco dei componenti aggiuntivi registrati e i responsabili/creatori di chat devono associare le chat room a uno dei componenti aggiuntivi registrati prima che gli utenti possano visualizzare questo aggiornamento nel client.
 
 I componenti aggiuntivi vengono utilizzati per estendere l'esperienza in chat. Un componente aggiuntivo tipico può includere un URL che punta a un'applicazione Silverlight che intercetta quando un ticker di azioni viene pubblicato in una chat room e mostra la cronologia delle azioni nel riquadro di estendibilità. Tra gli altri esempi c'è l'integrazione di un URL OneNote 2013 nella chat room in forma di componente aggiuntivo, per includere un contesto condiviso, ad esempio "Di facile riconoscibilità" o "Argomento del giorno".
 
-Per creare componenti aggiuntivi per chat room persistenti, vedere [Configure add-ins for Persistent Chat rooms in Skype for Business Server 2015.](../../manage/persistent-chat/configure-add-ins.md) Gli amministratori di Persistent Chat possono creare componenti aggiuntivi utilizzando il Pannello di controllo o Windows PowerShell cmdlet.
+Per creare componenti aggiuntivi per le chat room di Persistent Chat, vedere [Configure add-ins for Persistent Chat rooms in Skype for Business Server 2015](../../manage/persistent-chat/configure-add-ins.md). Gli amministratori di Persistent Chat possono creare componenti aggiuntivi utilizzando il Pannello di controllo o Windows PowerShell cmdlet.
 
 ## <a name="tasks-you-can-perform"></a>Attività eseguibili
 
@@ -62,4 +57,4 @@ Nei seguenti elenchi vengono descritti i menu, i comandi, i campi e le propriet�
 
 ## <a name="see-also"></a>Vedere anche
 
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere [Plan for Persistent Chat Server in Skype for Business Server 2015,](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)Deploy Persistent Chat Server in Skype for Business Server [2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md)e [Manage Persistent Chat Server in Skype for Business Server 2015](../../manage/persistent-chat/persistent-chat.md).
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere [Plan for Persistent Chat Server in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md), [Deploy Persistent Chat Server in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md) e [Manage Persistent Chat Server in Skype for Business Server 2015](../../manage/persistent-chat/persistent-chat.md).

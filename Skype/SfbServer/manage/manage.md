@@ -1,25 +1,20 @@
 ---
 title: Gestire Skype for Business Server
-ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.reviewer: null
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-- NOCSH
+  - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 603ccdfd-9985-41d8-a526-8570ba9b1b76
-description: 'Riepilogo: esplorare questi collegamenti per informazioni su come gestire e gestire Skype for Business Server.'
-ms.openlocfilehash: 899d0b3b36c3ce7950f2a87bf7e3bc8027a35a08
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60841188"
+description: 'Riepilogo: esplorare questi collegamenti per informazioni su come gestire e gestire le Skype for Business Server.'
 ---
+
 # <a name="manage-skype-for-business-server"></a>Gestire Skype for Business Server 
 
 **Riepilogo:** Esplora questi collegamenti per informazioni su come gestire e gestire le Skype for Business Server.
@@ -39,14 +34,14 @@ Visualizzare le risorse seguenti per informazioni su come gestire i Skype for Bu
    
 ##  <a name="articles-about-managing-skype-for-business-server"></a>Articoli sulla gestione dei Skype for Business Server
 
-Gli articoli seguenti su come configurare, monitorare e gestire le Skype for Business Server sono disponibili per la visualizzazione online. 
+Gli articoli seguenti su come configurare, monitorare e gestire Skype for Business Server sono disponibili per la visualizzazione online. 
   
 |&nbsp;|Contenuto|Descrizione|
 |:-----|:-----|:-----|
 |![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Gestire la topologia in Skype for Business Server](topology/topology.md)  |Negli argomenti di questa sezione vengono fornite procedure dettagliate per l'aggiornamento, l'aggiornamento, l'aggiunta e la rimozione di server tramite il Pannello di controllo di Skype for Business Server e Skype for Business Server Management Shell.   |
 |![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Gestire l'integrità e il monitoraggio in Skype for Business Server](health-and-monitoring/health-and-monitoring.md)  |Negli argomenti di questa sezione vengono fornite procedure dettagliate per le attività di monitoraggio e configurazione dell'integrità che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server e Skype for Business Server Management Shell.   |
 |![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Gestire l'archiviazione in Skype for Business Server](archiving/archiving.md)  |Negli argomenti di questa sezione vengono fornite procedure dettagliate per configurare le opzioni di archiviazione e i criteri utente per Skype for Business Server utilizzando il Pannello di controllo di Skype for Business Server e Skype for Business Server Management Shell.   |
-|![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Gestire il server Chat persistente in Skype for Business Server 2015](persistent-chat/persistent-chat.md)  |Negli argomenti di questa sezione vengono fornite procedure dettagliate per la gestione del server Chat persistente tramite il Pannello di controllo di Skype for Business Server e Skype for Business Server Management Shell.  <br/> **Nota:** È disponibile solo per Skype for Business 2015.|
+|![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Gestire il server Chat persistente Skype for Business Server 2015](persistent-chat/persistent-chat.md)  |Negli argomenti di questa sezione vengono fornite procedure dettagliate per la gestione del server Chat persistente tramite il Pannello di controllo di Skype for Business Server e Skype for Business Server Management Shell.  <br/> **Nota:** È disponibile solo per Skype for Business 2015.|
 |![Icona Modalità numerica.](../media/d73b5029-a6ba-4abd-9197-d8151dabf56e.png)|[Skype for Business Server Management Shell](management-shell.md) <br/> |Negli argomenti di questa sezione viene descritto come gestire Skype for Business Server tramite Skype for Business Server Management Shell.  <br/> |
    
 ## <a name="additional-resources-about-planning-for-skype-for-business-server"></a>Risorse aggiuntive sulla pianificazione di Skype for Business Server
