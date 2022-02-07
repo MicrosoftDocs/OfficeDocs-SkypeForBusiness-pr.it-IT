@@ -249,6 +249,18 @@ items:
                 href: /SkypeForBusiness/hybrid/cloud-consolidation-aad-connect
           - name: Integrazione con Exchange e SharePoint
             href: /SkypeForBusiness/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint
+  - name: Aggiornare da Kaizala
+    items:
+      - name: Per iniziare
+        href: get-started-kaizala-teams.md
+      - name: Effettuare i preparativi per l'aggiornamento
+        href: prepare-for-teams-kaizala.md
+      - name: Pianificare il percorso verso l'aggiornamento
+        href: plan-your-move-kaizala.md
+      - name: Esplora Microsoft Teams
+        href: navigate-teams.md
+      - name: Acquisire familiarità con Microsoft Teams
+        href: drive-adoption-optimize-kaizala.md
   - name: 'Sicurezza, conformità e privacy'
     items:
       - name: Panoramica

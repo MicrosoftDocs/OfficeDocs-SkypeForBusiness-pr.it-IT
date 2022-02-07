@@ -10,27 +10,22 @@ audience: admin
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
-- M365-collaboration
+  - M365-collaboration
 appliesto:
-- Microsoft Teams
+  - Microsoft Teams
 f1.keywords:
-- CSH
-ms.custom: ''
-description: Informazioni su come configurare la funzionalità di risposta automatica per Teams dispositivi Android con PowerShell.
-ms.openlocfilehash: e25b0694b54d1047c64ecaba026380ac9c4a9949
-ms.sourcegitcommit: 5e9a8d3cdb72b57adfb842200159c5d753b70ecb
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62329101"
+  - CSH
+ms.custom: null
+description: Informazioni su come configurare la funzionalità di risposta automatica per Microsoft Teams Rooms dispositivi Android e Teams video con PowerShell.
 ---
-# <a name="set-up-auto-answer-for-teams-android-devices"></a>Configurare la risposta automatica per i Teams Android
 
-Questo articolo ti aiuterà a configurare la funzionalità di risposta automatica nei Teams Android. La risposta automatica consente agli utenti dell'organizzazione con privilegi amministrativi di modificare le impostazioni del dispositivo in modo da accettare automaticamente gli inviti alle riunioni in arrivo e accettare automaticamente le chiamate con video.
+# <a name="set-up-auto-answer-for-microsoft-teams-rooms-on-android-and-teams-video-phone-devices"></a>Configurare la risposta automatica per Microsoft Teams Rooms nei dispositivi android e Teams video
+
+Questo articolo ti aiuterà a configurare la funzionalità di risposta automatica Microsoft Teams Rooms nei dispositivi android e Teams video. La risposta automatica consente agli utenti dell'organizzazione con privilegi amministrativi di modificare le impostazioni del dispositivo in modo da accettare automaticamente gli inviti alle riunioni in arrivo e accettare automaticamente le chiamate con video.
 
 ## <a name="enable-auto-answer-with-powershell"></a>Abilitare la risposta automatica con PowerShell
 
-Usare gli attributi seguenti per abilitare la risposta automatica nei Teams Android:
+Usare gli attributi seguenti per abilitare la risposta automatica nei dispositivi Microsoft Teams Rooms android e Teams video:
 
 - **Set-CsTeamsCallingPolicy -AutoAnswerEnabledType**
 - **Set-CsTeamsIPPhonePolicy -SignInMode**
