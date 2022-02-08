@@ -1,8 +1,8 @@
 ---
 title: Filtro URL Crea nuovo o Modifica esistente
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 1406c7c5-eb55-4b6a-8d74-d625ea9e9922
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: e3e1bb47cb83387373280533afaa1564351ad638
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 3ebabe4049af1a6cc2e04cb3250734ac39ca9be0
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850329"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62393268"
 ---
 # <a name="url-filter-create-new-or-edit-existing"></a>Filtro URL: crearne uno nuovo o modificarne uno esistente
 

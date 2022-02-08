@@ -1,8 +1,8 @@
 ---
-title: Skype for Business Server Strumento di pianificazione della panoramica delle funzionalità
+title: Skype for Business Server strumento di pianificazione della panoramica delle funzionalità
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 4/6/2016
 audience: ITPro
@@ -15,15 +15,15 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 44783b37-c87f-41f2-9de1-39176f1856ab
-description: Informazioni sullo strumento di Skype for Business Server panoramica delle funzionalità.
-ms.openlocfilehash: ac759dab4000ebdbe969b2d7436cbb46c408dc38
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+description: Informazioni sullo strumento di pianificazione Skype for Business Server panoramica delle funzionalità.
+ms.openlocfilehash: 1942cc3ffab2494d64cd4512c178bd39b2262f79
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60848879"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62393888"
 ---
-# <a name="skype-for-business-server-feature-overview-planning-tool"></a>Skype for Business Server Strumento di pianificazione della panoramica delle funzionalità
+# <a name="skype-for-business-server-feature-overview-planning-tool"></a>Skype for Business Server strumento di pianificazione della panoramica delle funzionalità
  
 Skype for Business Server 2015 Planning Tool
   
@@ -83,11 +83,11 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Mobilità**
     
-    Quando distribuisci il servizio per dispositivi mobili Skype for Business Server 2015, gli utenti possono usare dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
+    Quando distribuisci il servizio per dispositivi mobili di Skype for Business Server 2015, gli utenti possono usare dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
     
 - **Cassetta postale Exchange W15**
     
-    Skype for Business Server 2015 consente di archiviare i messaggi della segreteria telefonica Exchange messaggistica unificata; tali messaggi della segreteria telefonica verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
+    Skype for Business Server 2015 consente di archiviare i messaggi della segreteria telefonica nella messaggistica unificata di Exchange; tali messaggi verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
     
 ### <a name="voice"></a>Voce
 
@@ -99,7 +99,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Messaggistica unificata di Exchange**
     
-    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la messaggistica unificata Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica di chiamata e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
+    Exchange messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la Exchange messaggistica unificata per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica delle chiamate e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
     
 ### <a name="additional-deployment-options"></a>Opzioni di distribuzione aggiuntive
 
@@ -121,7 +121,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
     L'archiviazione archivia conversazioni e conferenze di messaggistica istantanea.
     
-- **Exchange Integrazione dell'archiviazione**
+- **Exchange di archiviazione**
     
     Se si dispone di utenti ospitati in Exchange 2013 e le relative cassette postali sono state messe In-Place blocco, è possibile selezionare l'opzione per integrare l'archiviazione di Skype for Business Server 2015 con Exchange archiviazione.
     
@@ -151,7 +151,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Parcheggio di chiamata**
     
-    L'applicazione Parcheggio di chiamata consente a un utente di VoIP aziendale di mettere in attesa una chiamata da un telefono e quindi di ricevere la chiamata da un altro telefono senza che le risorse del telefono che ha ricevuto la chiamata. L'applicazione Parcheggio di chiamata è utile quando un utente deve trasferire una chiamata, ma il destinatario specifico è sconosciuto. 
+    L'applicazione Parcheggio di chiamata consente a un utente VoIP aziendale di mettere in attesa una chiamata da un telefono e quindi di ricevere la chiamata da un altro telefono senza creare un collegamento tra le risorse del telefono che ha ricevuto la chiamata. L'applicazione Parcheggio di chiamata è utile quando un utente deve trasferire una chiamata, ma il destinatario specifico è sconosciuto. 
     
 - **Operatore conferenza**
     

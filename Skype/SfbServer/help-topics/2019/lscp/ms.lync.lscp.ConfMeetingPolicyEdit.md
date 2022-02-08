@@ -1,8 +1,8 @@
 ---
 title: Criteri conferenza Crea nuovo o Modifica esistente
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: ebd2f120-b57a-4c94-9509-20e098f4b0f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: Un criterio di conferenza definisce le funzionalità e le funzionalità che gli utenti hanno a disposizione durante una conferenza (nota anche come riunione).
-ms.openlocfilehash: a7e5e32d474a915c8c91bfe13fa13feffe98d064
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 55e5d01bb576da71c6a232cf525f624ca2bf3228
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837278"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62393288"
 ---
 # <a name="conferencing-policy-create-new-or-edit-existing"></a>Criteri conferenza: crearne di nuovi o modificare quelli esistenti
 
@@ -59,13 +59,13 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - **Abilita audio/video IP** Selezionare questa opzione per consentire sia l'audio che il video.
 
-- **Abilitare le conferenze telefoniche con accesso esterno PSTN** Se l'audio è stato abilitato in **Audio/video,** selezionare questa casella di controllo per consentire agli utenti di accedere alle conferenze utilizzando la rete PSTN (Public Switched Telephone Network).
+- **Abilitare le conferenze telefoniche con accesso esterno PSTN** Se l'audio è stato abilitato in **Audio/video**, selezionare questa casella di controllo per consentire agli utenti di accedere alle conferenze utilizzando la rete PSTN (Public Switched Telephone Network).
 
 - **Consentire ai partecipanti anonimi di effettuare chiamate in uscita** Selezionare questa casella di controllo se si consente agli utenti di accedere alle conferenze e si desidera consentire agli utenti non autenticati (anonimi) di partecipare a una conferenza tramite chiamate in uscita. Con le chiamate in uscita, il server per conferenze chiama l'utente, il quale accede alla conferenza rispondendo al telefono.
 
-- **Consenti ai partecipanti non abilitati per VoIP aziendale chiamate in uscita** Se è stato abilitato l'audio in **Audio/video,** selezionare questa casella di controllo per consentire agli utenti non abilitati per VoIP aziendale di partecipare a una conferenza tramite chiamate in uscita. Con le chiamate in uscita, il server per conferenze chiama l'utente, il quale accede alla conferenza rispondendo al telefono.
+- **Consenti** chiamate in uscita ai partecipanti non abilitati per VoIP aziendale Se è stato abilitato l'audio in **Audio/video**, selezionare questa casella di controllo per consentire agli utenti non abilitati per VoIP aziendale di partecipare a una conferenza tramite chiamate in uscita. Con le chiamate in uscita, il server per conferenze chiama l'utente, il quale accede alla conferenza rispondendo al telefono.
 
-- **Consentire più flussi video** Se è stato abilitato il video in **Audio/video,** selezionare questa casella di controllo per consentire agli utenti di organizzare conferenze con video visualizzazione Raccolta. Quando questa casella di controllo è selezionata, questa impostazione consente agli utenti di organizzare conferenze che inviano più flussi video. Quando questa casella di controllo non è selezionata, gli utenti possono organizzare solo conferenze che inviano un singolo flusso video.
+- **Consentire più flussi video** Se è stato abilitato il video in **Audio/video**, selezionare questa casella di controllo per consentire agli utenti di organizzare conferenze con video visualizzazione Raccolta. Quando questa casella di controllo è selezionata, questa impostazione consente agli utenti di organizzare conferenze che inviano più flussi video. Quando questa casella di controllo non è selezionata, gli utenti possono organizzare solo conferenze che inviano un singolo flusso video.
 
     > [!NOTE]
     > Questa opzione determina il tipo di flusso video supportato dalla conferenza, ma non determina il fatto che i partecipanti possano o meno ricevere più flussi video. Questo aspetto è definito dall'opzione **Consenti ai partecipanti di unirsi con più flussi video**.
@@ -80,7 +80,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - **Abilitare le annotazioni** Se si consente la collaborazione dati, selezionare questa casella di controllo per consentire ai partecipanti di creare annotazioni su schermo sul contenuto condiviso durante la conferenza.
 
-  - **Abilitare PowerPoint annotazioni** Se si consente l'annotazione, selezionare questa casella di controllo per consentire ai partecipanti di creare annotazioni nelle diapositive PowerPoint condivise durante la conferenza.
+  - **Abilita PowerPoint annotazioni** Se si consente l'annotazione, selezionare questa casella di controllo per consentire ai partecipanti di creare annotazioni nelle diapositive PowerPoint condivise durante la conferenza.
 
   - **Abilitare i polling** Se si consente la collaborazione dati, selezionare questa casella di controllo per consentire ai partecipanti di tenere un sondaggio durante una conferenza.
 
@@ -98,7 +98,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - Selezionare **Abilita condivisione applicazioni e desktop** per consentire agli utenti di condividere le applicazioni o il desktop mentre partecipano a una conferenza o a una sessione tra due parti. Selezionare **Disabilita condivisione applicazioni e desktop** per impedire agli utenti di condividere le applicazioni o il desktop mentre partecipano a una conferenza o a una sessione tra due parti.
 
-- Abilitare il trasferimento di **file peer-to-peer** Selezionare questa casella di controllo per consentire trasferimenti di file da persona a persona, ovvero trasferimenti di file che non coinvolgono tutti i partecipanti, durante una conferenza o una sessione tra due parti.
+- **Abilitare il trasferimento di file peer-to-peer** Selezionare questa casella di controllo per consentire trasferimenti di file da persona a persona, ovvero trasferimenti di file che non coinvolgono tutti i partecipanti, durante una conferenza o una sessione tra due parti.
 
 - **Abilitare la registrazione peer-to-peer** Selezionare questa casella di controllo per consentire agli utenti di registrare sessioni tra due parti.
 

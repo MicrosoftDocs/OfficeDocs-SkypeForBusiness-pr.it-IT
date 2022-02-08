@@ -1,8 +1,8 @@
 ---
 title: Visualizzazione VideoStreamDetail
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/9/2015
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: ec8c45e1-307d-40ec-a75e-6083306105f2
 description: Nella visualizzazione VideoStreamDetail vengono archiviate informazioni su ogni flusso video nel database. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 38f97d5cd97d6a92961a377129cb533fd96ccd6d
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 0e34791bd3081497c4c8501dbd01d2e9d39503f1
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60863233"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62393538"
 ---
 # <a name="videostreamdetail-view"></a>Visualizzazione VideoStreamDetail
  
@@ -38,11 +38,11 @@ Nella visualizzazione VideoStreamDetail vengono archiviate informazioni su ogni 
 |Chiamante  <br/> |nvarchar(450)  <br/> |URI del chiamante.  <br/> |
 |Chiamato  <br/> |nvarchar(450)  <br/> |URI del chiamato.  <br/> |
 |CallerUserAgent  <br/> |nvarchar(256)  <br/> |Stringa agente utente del chiamante.  <br/> |
-|CallerUserAgentType  <br/> |smallint  <br/> |Tipo di agente utente del chiamante. Per informazioni [dettagliate, vedere](useragent.md) la tabella UserAgent. <br/> |
-|CallerUserAgentCategory  <br/> |nvarchar(64)  <br/> |Categoria dell'agente utente del chiamante. Per informazioni [dettagliate, vedere la tabella UserAgentDef (QoE).](useragentdef-qoe.md) <br/> |
+|CallerUserAgentType  <br/> |smallint  <br/> |Tipo di agente utente del chiamante. Per informazioni [dettagliate, vedere la tabella UserAgent](useragent.md) . <br/> |
+|CallerUserAgentCategory  <br/> |nvarchar(64)  <br/> |Categoria dell'agente utente del chiamante. Per informazioni [dettagliate, vedere la tabella UserAgentDef (QoE](useragentdef-qoe.md) ). <br/> |
 |CalleeUserAgent  <br/> |nvarchar(256)  <br/> |Stringa agente utente del chiamato.  <br/> |
-|CalleeUserAgentType  <br/> |smallint  <br/> |Tipo di agente utente del chiamato. Per [informazioni, vedere la tabella UserAgent.](useragent.md) <br/> |
-|CalleeUserAgentCategory  <br/> |nvarchar(64)  <br/> |Categoria dell'agente utente del chiamato. Per [informazioni, vedere la tabella UserAgentDef (QoE).](useragentdef-qoe.md) <br/> |
+|CalleeUserAgentType  <br/> |smallint  <br/> |Tipo di agente utente del chiamato. Per informazioni [, vedere la tabella UserAgent](useragent.md) . <br/> |
+|CalleeUserAgentCategory  <br/> |nvarchar(64)  <br/> |Categoria dell'agente utente del chiamato. Per informazioni [, vedere la tabella UserAgentDef (QoE](useragentdef-qoe.md) ). <br/> |
 |CallerEndpoint  <br/> |nvarchar(256)  <br/> |Nome dell'endpoint del chiamante.  <br/> |
 |CalleeEndpoint  <br/> |nvarchar(256)  <br/> |Nome dell'endpoint del chiamato.  <br/> |
 |CallerOS  <br/> |nvarchar(128)  <br/> |Sistema operativo dell'endpoint del chiamante.  <br/> |
@@ -55,7 +55,7 @@ Nella visualizzazione VideoStreamDetail vengono archiviate informazioni su ogni 
 |CalleeCPUProcessorSpeed  <br/> |int  <br/> |Velocità del processore della CPU dell'endpoint del chiamato.  <br/> |
 |CallerVirtualizationFlag  <br/> |tinyint  <br/> |Indica se il sistema del chiamante è in esecuzione in un ambiente virtualizzato. Per ulteriori [informazioni, vedere](endpoint.md) la tabella Endpoint. <br/> |
 |CalleeVirtualizationFlag  <br/> |tinyint  <br/> |Indica se il sistema del chiamato è in esecuzione in un ambiente virtualizzato. Per ulteriori [informazioni, vedere](endpoint.md) la tabella Endpoint. <br/> |
-|ConnectivityIce  <br/> |tinyint  <br/> |Informazioni sul percorso multimediale, ad esempio diretto o inoltrato. Per ulteriori informazioni, vedi la tabella [MediaLine.](medialine-0.md) <br/> |
+|ConnectivityIce  <br/> |tinyint  <br/> |Informazioni sul percorso multimediale, ad esempio diretto o inoltrato. Per ulteriori [informazioni, vedi la tabella MediaLine](medialine-0.md) . <br/> |
 |CallerIceWarningFlags  <br/> |int  <br/> |Informazioni sul processo ICE (Interactive Connectivity Establishment) descritto nei flag di bit per il chiamante. Per informazioni dettagliate, vedere la specifica del protocollo del Monitoring Server per QoE.  <br/> |
 |CalleeIceWarningFlags  <br/> |int  <br/> |Informazioni sul processo ICE (Interactive Connectivity Establishment) descritto nei flag di bit per il destinatario della chiamata. Per informazioni dettagliate, vedere la specifica del protocollo del Monitoring Server per QoE.  <br/> |
 |Trasporto  <br/> |int  <br/> |Tipo di trasporto: 0 per UDP, 1 per TCP.  <br/> |
@@ -69,9 +69,9 @@ Nella visualizzazione VideoStreamDetail vengono archiviate informazioni su ogni 
 |CallerRegion  <br/> |nvarchar(128)  <br/> |Nome del paese/area geografica del sito del chiamante.  <br/> |
 |CalleeUserSite  <br/> |nvarchar(128)  <br/> |Nome del sito del chiamato.  <br/> |
 |CalleeRegion  <br/> |nvarchar(128)  <br/> |Nome del paese/area geografica del sito del chiamato.  <br/> |
-|CallerRelayIPAddr  <br/> |var(50)  <br/> |Indirizzo IP del servizio A/V Edge utilizzato dal chiamante. Per ulteriori informazioni, vedere la tabella [IPAddress.](ipaddress.md) <br/> |
+|CallerRelayIPAddr  <br/> |var(50)  <br/> |Indirizzo IP del servizio A/V Edge utilizzato dal chiamante. Per ulteriori [informazioni, vedere la tabella IPAddress](ipaddress.md) . <br/> |
 |CallerRelayPort  <br/> |int  <br/> |Porta del servizio A/V Edge utilizzata dal chiamante.  <br/> |
-|CalleeRelayIPAddr  <br/> |var(50)  <br/> |Codice indirizzo IP del servizio A/V Edge utilizzato dal destinatario della chiamata. Per ulteriori informazioni, vedere la tabella [IPAddress.](ipaddress.md) <br/> |
+|CalleeRelayIPAddr  <br/> |var(50)  <br/> |Codice indirizzo IP del servizio A/V Edge utilizzato dal destinatario della chiamata. Per ulteriori [informazioni, vedere la tabella IPAddress](ipaddress.md) . <br/> |
 |CalleeRelayPort  <br/> |int  <br/> |Porta del servizio A/V Edge utilizzato dal destinatario chiamata.  <br/> |
 |CallerCaptureDev  <br/> |varchar(256)  <br/> |Nome del dispositivo di acquisizione del chiamante.  <br/> |
 |CallerRenderDev  <br/> |varchar(256)  <br/> |Nome del dispositivo di rendering del chiamante.  <br/> |
@@ -97,7 +97,7 @@ Nella visualizzazione VideoStreamDetail vengono archiviate informazioni su ogni 
 |PacketLossRateMax  <br/> |decimal(5,4)  <br/> |Perdita di pacchetti massima rilevata durante la chiamata.  <br/> |
 |PacketUtilization  <br/> |int  <br/> |Numero di pacchetti per il flusso video (Real Time Transport Protocol, RTP).  <br/> |
 |BandwidthEst  <br/> |int  <br/> |Stime di larghezza di banda per il flusso audio.  <br/> |
-|PayloadDescription  <br/> |int  <br/> |Codec audio utilizzato per la chiamata, a cui viene fatto riferimento dalla [tabella PayloadDescription.](payloaddescription.md)  <br/> |
+|PayloadDescription  <br/> |int  <br/> |Codec audio usato per la chiamata, a cui viene fatto riferimento dalla [tabella PayloadDescription](payloaddescription.md).  <br/> |
 |VideoResolution  <br/> |char(9)  <br/> |Risoluzione del video in larghezza pixel moltiplicata per altezza pixel. Riportata come stringa.  <br/> |
 |VideoBitRateAvg  <br/> |int  <br/> |Velocità in bit media del flusso video.  <br/> |
 |InboundVideoFrameRateAvg  <br/> |decimal(9,4)  <br/> |Frequenza dei fotogrammi del video ricevuto.  <br/> |
