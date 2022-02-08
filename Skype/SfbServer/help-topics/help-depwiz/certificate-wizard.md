@@ -1,8 +1,8 @@
 ---
 title: Configurazione guidata certificati
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 6ab661d7-5741-4cad-bbe4-62cf862ded85
 description: Per richiedere, assegnare, rimuovere o visualizzare i certificati, è possibile utilizzare la Configurazione guidata certificati. A tale scopo, è necessario essere connessi come membri del gruppo RTCUniversalServerAdmins. Per richiedere un certificato a un'Autorità di certificazione (CA) pubblica, non è necessario appartenere ad altri gruppi. Per richiedere un certificato dall'infrastruttura a chiave pubblica (PKI) dell'organizzazione, è necessario confermare le eventuali appartenenze ai gruppi aggiuntive necessarie. Durante l'attività Richiesta, è possibile immettere credenziali alternative che verranno utilizzate per richiedere il certificato all'autorità di certificazione emittente dell'infrastruttura a chiave pubblica.
-ms.openlocfilehash: 973c5de857540680fac19033a350be48475c7b9f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: b79d04b3fa4d5579b586b4c37cd49d48740523c5
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60862923"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62393028"
 ---
 # <a name="certificate-wizard"></a>Configurazione guidata certificati
  

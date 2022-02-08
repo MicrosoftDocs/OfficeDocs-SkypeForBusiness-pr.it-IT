@@ -1,8 +1,8 @@
 ---
 title: Configurazione dispositivo Crea nuovo o Modifica esistente
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/23/2015
 audience: ITPro
@@ -15,16 +15,16 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: aac152bf-80e9-408a-9dbb-60d0843484ab
 description: Nella pagina Nuova configurazione dispositivo o Modifica configurazione dispositivo puoi creare o modificare una raccolta di impostazioni usate per gestire Skype for Business Telefono Edition. Tali impostazioni consentono di configurare aspetti quali la modalità di sicurezza richiesta, il livello di registrazione del dispositivo, le impostazioni Qualità vocale servizio (QoS) e se bloccare automaticamente o meno i telefoni dopo uno specifico periodo di inattività.
-ms.openlocfilehash: 849406c7c2a22f3ce96e50a8a49b14f27a1a5103
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: e1d71dba069720342f27527b4c6fd8302cae4aa9
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60860463"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62392898"
 ---
 # <a name="device-configuration-create-new-or-edit-existing"></a>Configurazione dispositivo: crearne una nuova o modificarne una esistente
  
-Nella pagina **Nuova configurazione dispositivo** o Modifica configurazione dispositivo puoi creare o modificare una raccolta di impostazioni usate per gestire Skype for Business Telefono Edition.  Tali impostazioni consentono di configurare aspetti quali la modalità di sicurezza richiesta, il livello di registrazione del dispositivo, le impostazioni Qualità vocale servizio (QoS) e se bloccare automaticamente o meno i telefoni dopo uno specifico periodo di inattività.
+Nella pagina **Nuova configurazione dispositivo o** Modifica configurazione dispositivo puoi creare o modificare una raccolta di impostazioni usate per gestire Skype for Business Telefono Edition. Tali impostazioni consentono di configurare aspetti quali la modalità di sicurezza richiesta, il livello di registrazione del dispositivo, le impostazioni Qualità vocale servizio (QoS) e se bloccare automaticamente o meno i telefoni dopo uno specifico periodo di inattività.
   
 ## <a name="tasks-you-can-perform"></a>Attività eseguibili
 
@@ -60,7 +60,7 @@ Negli elenchi seguenti sono descritti i menu, i comandi, i campi e le proprietà
     
   - **Lunghezza minima PIN** È possibile specificare la lunghezza minima per il PIN (Personal Identification Number) utilizzato per sbloccare il telefono. L'intervallo di valori per la lunghezza del PIN è compreso tra quattro e 15 numeri. La lunghezza predefinita è di sei numeri.
     
-  - **Telefono timeout del blocco** Puoi specificare il periodo di tempo minimo prima che il telefono si blocchi. L'intervallo per il timeout è compreso tra 0 e 60 minuti. il valore predefinito è 10 minuti. Immettere il valore nel formato HH:MM:SS.
+  - **Telefono timeout del blocco** È possibile specificare il periodo di tempo minimo prima che il telefono si blocchi. L'intervallo per il timeout è compreso tra 0 e 60 minuti. il valore predefinito è 10 minuti. Immettere il valore nel formato HH:MM:SS.
     
 ## <a name="see-also"></a>Vedere anche
 

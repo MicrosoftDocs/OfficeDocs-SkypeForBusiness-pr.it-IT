@@ -1,8 +1,8 @@
 ---
 title: Configurare un VTC per l'interoperabilità con Skype for Business Server
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 1016aed6-99fe-452e-8b20-81c814808c3d
 description: "Riepilogo: configurare i dispositivi VTC per l'utilizzo con Skype for Business Server."
-ms.openlocfilehash: f3804c0d7f86710fbefa9477d6cf1790b0f16af9
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 8044e2038ebb8e9c1b68b5b91473e9e57dd1fb7a
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861803"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62389658"
 ---
 # <a name="configure-a-vtc-for-interoperation-with-skype-for-business-server"></a>Configurare un VTC per l'interoperabilità con Skype for Business Server
  
@@ -30,7 +30,7 @@ Le impostazioni descritte qui sono solo esempi di come cucm può essere configur
   
 ### <a name="configure-a-vtc-registered-with-cucm"></a>Configurare un VTC registrato con CUCM
 
-1. Accedi al dispositivo Cisco VTC e passa a Configurazione- \> Configurazione di sistema- \> Provisioning.
+1. Accedi al dispositivo VTC Cisco e passa a Configuration-System\> Configuration-Provisioning\>.
     
 2. Verificare le impostazioni seguenti, correggendo in base alle esigenze: 
     
@@ -40,7 +40,7 @@ Le impostazioni descritte qui sono solo esempi di come cucm può essere configur
    |ExternalManager Address  <br/> | FQDN di CUCM <br/> |
    | ExternalManager Domain <br/> |Dominio di CUCM  <br/> |
    
-3. Passare a Configurazione- \> Configurazione di sistema- \> Rete.
+3. Passare a Configurazione-Sistema-Rete\>\>.
     
 4. Verificare le impostazioni seguenti, correggendo in base alle esigenze: 
     
@@ -49,7 +49,7 @@ Le impostazioni descritte qui sono solo esempi di come cucm può essere configur
    |Nome di dominio DNS  <br/> | Nome di dominio di CUCM <br/> |
    |Indirizzo server DNS 1  <br/> | l'indirizzo del server DNS desiderato <br/> |
    
-5. Passare a Configurazione- \> Configurazione di sistema- \> Servizi di rete. Verificare che la modalità H.323 sia disattivata e che la modalità SIP sia attivata. 
+5. Passare a Configurazione-Sistema-Servizi\>\> di rete. Verificare che la modalità H.323 sia disattivata e che la modalità SIP sia attivata. 
     
 6. Queste opzioni vengono impostate automaticamente quando l'endpoint viene registrato con CUCM. Verificare le impostazioni seguenti, correggendo in base alle esigenze: 
     
@@ -62,7 +62,7 @@ Le impostazioni descritte qui sono solo esempi di come cucm può essere configur
    |WelcomeText  <br/> | Attivato <br/> |
    |Modalità XMLAPI  <br/> | Attivato <br/> |
    
-7. Passare a Configurazione- \> Configurazione di sistema- \> SIP.
+7. Passare a Configuration-System\> Configuration-SIP\>.
     
 8. Verificare le impostazioni seguenti, correggendo in base alle esigenze: 
     
@@ -78,13 +78,13 @@ Le impostazioni descritte qui sono solo esempi di come cucm può essere configur
 Il VTC è ora configurato per l'interoperabilità. Prima che il servizio possa iniziare, è necessario eseguire i passaggi finali sul lato CUCM.
 ### <a name="configure-vtc-devices-on-cucm"></a>Configurare i dispositivi VTC in CUCM
 
-1. Accedere a CUCM e passare a Cisco Unified CM Administration- \> Device- \> Telefono- \> Find. 
+1. Accedi a CUCM e passa a Cisco Unified CM Administration-Device-Telefono-Find\>\>\>. 
     
-2. Selezionare il dispositivo VTC da configurare. Verificare le impostazioni seguenti nella schermata Telefono configurazione, correggendo in base alle esigenze. Dopo aver modificato o verificato queste impostazioni, fare clic su **Salva.**
+2. Selezionare il dispositivo VTC da configurare. Verificare le impostazioni seguenti nella schermata Telefono configurazione, correggendo in base alle esigenze. Dopo aver modificato o verificato queste impostazioni, fare clic su **Salva**.
     
    |**Parametro**|**Impostazione consigliata**|
    |:-----|:-----|
-   |Informazioni dispositivo - modello Telefono pulsante  <br/> | Standard Cisco Telepresence Codec C40 <br/> |
+   |Informazioni sul dispositivo - modello Telefono pulsante  <br/> | Standard Cisco Telepresence Codec C40 <br/> |
    |Informazioni sul dispositivo - Profilo Telefono comune  <br/> | Standard Common Telefono Profile <br/> |
    |Informazioni sul dispositivo - Spazio di ricerca chiamante  <br/> | CSS_SfBVideoInterop <br/> |
    |Informazioni dispositivo - Spazio di ricerca chiamate AAR  <br/> | CSS_SfBVideoInterop <br/> |
@@ -108,7 +108,7 @@ Il VTC è ora configurato per l'interoperabilità. Prima che il servizio possa i
    |Riga 1 nel dispositivo - Display (ID chiamante)  <br/> | Come desiderato <br/> |
    |Riga 1 nel dispositivo - Visualizzazione ASCII (ID chiamante)  <br/> | Come desiderato <br/> |
    
-5. Al termine, scorrere fino alla parte superiore dello schermo e premere **Salva.** 
+5. Al termine, scorrere fino alla parte superiore dello schermo e premere **Salva**. 
     
 La configurazione è stata completata per questo dispositivo VTC. Dovrai ripetere questo processo per altri dispositivi VTC nella tua azienda.
 

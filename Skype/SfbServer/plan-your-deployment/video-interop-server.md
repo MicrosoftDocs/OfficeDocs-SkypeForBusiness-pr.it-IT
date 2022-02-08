@@ -1,8 +1,8 @@
 ---
 title: Pianificare Video Interop Server in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -12,16 +12,16 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 4a8daf23-77ba-428b-bcbc-161f6af52c11
 description: "Riepilogo: leggere questo argomento durante la pianificazione dell'integrazione Skype for Business Server con dispositivi di teleconferenza di terze parti."
-ms.openlocfilehash: b928e432b464e6bf1a5ccb8748ebf75ef8cc596b
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 38e5baebc55cbcb209260f003ea107af590f94e8
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60862063"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62389938"
 ---
 # <a name="plan-for-video-interop-server-in-skype-for-business-server"></a>Pianificare Video Interop Server in Skype for Business Server
  
-**Riepilogo:** Esaminare questo argomento durante la pianificazione dell'integrazione Skype for Business Server con dispositivi di teleconferenza di terze parti.
+**Riepilogo:** Leggere questo argomento durante la pianificazione dell'integrazione Skype for Business Server con dispositivi di teleconferenza di terze parti.
   
 Skype for Business Server ora ti consente di integrarti con determinate soluzioni VTC (Video Teleconferencing System) di terze parti. Il nuovo ruolo del server che abilita l'interoperabilità delle videoconferenze è Video Interop Server (VIS), attualmente implementato come ruolo del server autonomo disponibile solo per le installazioni locali. Un VIS funge da intermediario tra un sistema di teleconferenza di terze parti e una Skype for Business Server distribuzione. Per questa versione, VIS si concentra sull'interoperabilità con i sistemi video Cisco/Tandberg. Leggere questo articolo per determinare se utilizzare questa funzionalità nell'Skype for Business Server installazione.
   
@@ -50,11 +50,11 @@ I VTC attualmente supportati sono:
 - Cisco SX20
     
 > [!NOTE]
->  La versione software Cisco TC7.0.0 o successiva è necessaria in questi sistemi per l'integrazione con Skype for Business Server per funzionare come previsto.
+>  La versione software Cisco TC7.0.0 o successiva è necessaria in questi sistemi per l'integrazione con Skype for Business Server funzionare come previsto.
   
 ## <a name="sip-trunks"></a>Trunk SIP
 
-Video Interop Server funziona in modalità trunk SIP, dove i VTC continuano a registrarsi nell'infrastruttura Cisco esistente, ad esempio Cisco Call Manager (CUCM). Un trunk SIP video viene definito tra CUCM e VIS in modo che le chiamate possano essere instradati tra i due sistemi. Sono supportate solo le chiamate tramite il trunk SIP da VTC a VIS. Di conseguenza, i VTC possono accedere a una conferenza Skype for Business (componendo il numero di telefono associato all'Operatore automatico di chiamata), ma non possono essere trascinati e rilasciati nella conferenza.
+Video Interop Server funziona in modalità trunk SIP, dove i VTC continuano a registrarsi nell'infrastruttura Cisco esistente, ad esempio Cisco Call Manager (CUCM). Un trunk SIP video viene definito tra CUCM e VIS in modo che le chiamate possano essere instradati tra i due sistemi. Sono supportate solo le chiamate tramite il trunk SIP da VTC a VIS. Pertanto, i VTC possono accedere a una conferenza Skype for Business (componendo il numero di telefono associato all'Operatore automatico di chiamata), ma non possono essere trascinati e rilasciati nella conferenza.
   
 ![Diagramma di VIS in SfB.](../media/87753af5-b1d9-4107-9216-fde45a1af197.png)
   
@@ -64,9 +64,9 @@ Questo ruolo del server fornisce:
   
 - Conversione tra i formati H.264 utilizzati dai sistemi video di terze parti e la Skype for Business Server distribuzione.
     
-- Conversione di un singolo flusso video a una determinata risoluzione da un VTC in più flussi simulcast di risoluzioni diverse da usare nella distribuzione Skype for Business Server video. Questi flussi possono essere inviati all'AVMCU e quindi a Skype for Business Server endpoint e altri sistemi video che hanno richiesto risoluzioni diverse. Questa conversione viene usata anche quando il sistema video di terze parti è coinvolto in una Skype for Business conferenza telefonica audio/video. Una volta raggiunto il limite di transcoding in un server VIS specifico, tutte le richieste seguenti per risoluzioni diverse riceveranno solo un flusso con la risoluzione più bassa. 
+- Conversione di un singolo flusso video a una determinata risoluzione da un VTC in più flussi simulcast di risoluzioni diverse da usare nella distribuzione Skype for Business Server distribuzione. Questi flussi possono essere inviati all'AVMCU e quindi a Skype for Business Server endpoint e altri sistemi video che hanno richiesto risoluzioni diverse. Questa conversione viene usata anche quando il sistema video di terze parti è coinvolto in una Skype for Business conferenza telefonica audio/video. Una volta raggiunto il limite di transcoding in un server VIS specifico, tutte le richieste seguenti per risoluzioni diverse riceveranno solo un flusso con la risoluzione più bassa. 
     
-- Supporto per un trunk SIP video tra il gateway CUCM e un Skype for Business Server Video Interop Server; I VTC continuano a registrarsi con il gateway Cisco e avviano le chiamate alla distribuzione Skype for Business tramite il gateway. Le chiamate vengono instradati dal gateway al Skype for Business Video Interop Server tramite il trunk SIP video.
+- Supporto per un trunk SIP video tra il gateway CUCM e un Skype for Business Server Video Interop Server; I VTC continuano a registrarsi con il gateway Cisco e ad avviare le chiamate al Skype for Business distribuzione tramite il gateway. Le chiamate vengono instradati dal gateway al Skype for Business Video Interop Server tramite il trunk SIP video.
     
 - Supporto per un utente in una sala riunioni con un sistema video supportato per comporre da tale sistema per partecipare a una conferenza aperta o chiusa. Questa chiamata attraverserà il trunk SIP video.
     
@@ -163,7 +163,7 @@ FeC può essere attivato per facilitare il recupero dalla perdita di pacchetti. 
 ## <a name="vis-sizing-and-transcoding-costs"></a>VIS Sizing and Transcoding Costs
 <a name="resiliency"> </a>
 
-La transcodtura dei flussi video singoli dal VTC Cisco a più flussi simulcast utilizza la capacità della CPU. Circa 16 VTC possono avere il video transcodificato (presupponendo che un flusso video di 720p da ogni VTC sia transcodificato in 3 flussi simulcast separati a 720p, 360p e 180p) in un singolo VIS in esecuzione sull'equivalente della piattaforma FE consigliata per Lync 2013. Se la transcodtura è disattivata, questa operazione verrà risparmiata sulla CPU VIS. Tuttavia, l'immagine video richiesta da VIS dal VTC sarà la risoluzione comune più bassa per soddisfare tutti i ricevitori Skype for Business lato. Anche con la transcodtura disattivata, la transcoding può essere attivata quando i client Skype for Business richiedono determinate risoluzioni a bassa risoluzione che non possono essere inviate dai VTC.
+La transcodtura dei flussi video singoli dal VTC Cisco a più flussi simulcast utilizza la capacità della CPU. Circa 16 VTC possono avere il video transcodificato (presupponendo che un flusso video di 720p da ogni VTC sia transcodificato in 3 flussi simulcast separati a 720p, 360p e 180p) in un singolo VIS in esecuzione sull'equivalente della piattaforma FE consigliata per Lync 2013. Se la transcodtura è disattivata, questa operazione verrà risparmiata sulla CPU VIS. Tuttavia, l'immagine video richiesta da VIS dal VTC sarà la risoluzione comune più bassa per soddisfare tutti i ricevitori sul Skype for Business lato. Tieni presente che, anche con la transcoding disattivata, la transcoding può essere attivata quando i client Skype for Business richiedono determinate risoluzioni a bassa risoluzione che non possono essere inviate dai VTC.
   
 ## <a name="call-distribution-from-the-video-gateway-to-vis"></a>Distribuzione delle chiamate dal gateway video a VIS
 <a name="resiliency"> </a>
