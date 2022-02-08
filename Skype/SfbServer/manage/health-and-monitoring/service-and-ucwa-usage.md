@@ -1,8 +1,8 @@
 ---
 title: Monitorare l'utilizzo del servizio per dispositivi mobili e UCWA in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,17 +11,17 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 8389b37a-ca3e-4047-8b51-85bc07da87e8
-description: "Riepilogo: gestire il servizio per dispositivi mobili (Mcx) e l'API Web per comunicazioni unificate (UCWA) in Skype for Business Server."
-ms.openlocfilehash: 6139ab53e964bd7c880a83a7af252fe2da71a152
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+description: "Riepilogo: gestire il servizio per dispositivi mobili (Mcx) e l'API Unified Communications Web (UCWA) in Skype for Business Server."
+ms.openlocfilehash: d7596bfaf4e90f0eef25dbc625719f8739255858
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60835254"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62393768"
 ---
 # <a name="monitor-mobility-service-and-ucwa-usage-in-skype-for-business-server"></a>Monitorare l'utilizzo del servizio per dispositivi mobili e UCWA in Skype for Business Server
  
-**Riepilogo:** Gestire il servizio per dispositivi mobili (Mcx) e l'API Unified Communications Web (UCWA) in Skype for Business Server.
+**Riepilogo:** Gestire il servizio per dispositivi mobili (Mcx) e l'API Web per comunicazioni unificate (UCWA) in Skype for Business Server.
 
 > [!NOTE]
 > Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
@@ -38,7 +38,7 @@ Per la maggior parte delle distribuzioni, l'utilizzo della CPU UCWA deve essere 
   
 Oltre ai contatori di utilizzo della CPU e della memoria, è possibile utilizzare i contatori delle prestazioni seguenti per determinare quando un server è sovraccarico di richieste:
   
-- **LS:WEB - Limitazione e autenticazione\WEB - Totale** richieste in elaborazione, che indica il numero di richieste Web in sospeso nel server. Quando questo contatore raggiunge 10.000, le richieste successive avranno esito negativo, con il messaggio di errore "503 - Servizio non disponibile".
+- **LS:WEB - Limitazione e autenticazione\WEB - Totale richieste in** elaborazione, che indica il numero di richieste Web in sospeso nel server. Quando questo contatore raggiunge 10.000, le richieste successive avranno esito negativo, con il messaggio di errore "503 - Servizio non disponibile".
     
 - **ASP.NET\Requests Queued** (deve essere sempre zero).
     
@@ -47,7 +47,7 @@ Oltre ai contatori di utilizzo della CPU e della memoria, è possibile utilizzar
   
  **Per il servizio per dispositivi mobili (Mcx):**
   
-- I processi di lavoro **CSIntMcxAppPool** e **CSExtMcxAppPool** in Gestione Internet Information Services (IIS). Nel riquadro **Processi di lavoro** analizzare le colonne **% CPU** e **Byte privati (KB)** (memoria).
+- I **processi di lavoro CSIntMcxAppPool** e **CSExtMcxAppPool** in Gestione Internet Information Services (IIS). Nel riquadro **Processi di lavoro** analizzare le colonne **% CPU** e **Byte privati (KB)** (memoria).
     
 - Contatori delle prestazioni relativi a **CPU** e **Processore**.
     

@@ -1,8 +1,8 @@
 ---
 title: Gestire l'autenticazione in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -12,17 +12,17 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d7b17445-1b01-4b7a-9b7f-f86ad59f1a2b
-description: "Riepilogo: utilizzare le procedure seguenti per gestire la Skype for Business Server e l'autenticazione."
-ms.openlocfilehash: b66dfe414b8ce4be7ca699c21d672cae785012fa
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+description: 'Riepilogo: utilizzare le procedure seguenti per gestire Skype for Business Server sicurezza e autenticazione.'
+ms.openlocfilehash: 5152a080f52f0998c307d3ea0911641444bb16e3
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60830940"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62393798"
 ---
 # <a name="manage-authentication-in-skype-for-business-server"></a>Gestire l'autenticazione in Skype for Business Server
  
-**Riepilogo:** Utilizzare le procedure seguenti per gestire la sicurezza Skype for Business Server e l'autenticazione.
+**Riepilogo:** Utilizzare le procedure seguenti per gestire la Skype for Business Server e l'autenticazione.
   
 Utilizzare le procedure seguenti per gestire la sicurezza Skype for Business Server e l'autenticazione.
   
@@ -32,7 +32,7 @@ Utilizzare le procedure seguenti per gestire la sicurezza Skype for Business Ser
     
 - [Passaggio dei certificati AV e OAuth in Skype for Business Server tramite -Roll in Set-CsCertificate](stage-av-and-oauth-certificates.md)
     
-- [Assegnare un certificato di autenticazione da server a server a Skype for Business Server](assign-a-server-to-server-certificate.md)
+- [Assegnare un certificato di autenticazione da server a server Skype for Business Server](assign-a-server-to-server-certificate.md)
 
 - [Configurare l'autenticazione da server a server per un Skype for Business Server ibrido.](configure-a-hybrid-environment.md)
 

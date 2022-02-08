@@ -1,8 +1,8 @@
 ---
 title: Tabella VideoStream
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/1/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 4275ede7-5467-4a97-b8c8-a4b00917bf32
 description: Ogni record rappresenta un flusso video. Una linea multimediale video contiene in genere due flussi video.
-ms.openlocfilehash: 5e1b566db7ee3f79219835055d6e617beeea6da6
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: b6a67f6bc6c968e997882fb6406e7dc43d1ba7c4
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60863253"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62393568"
 ---
 # <a name="videostream-table"></a>Tabella VideoStream
  
@@ -27,10 +27,10 @@ Ogni record rappresenta un flusso video. Una linea multimediale video contiene i
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**ConferenceDateTime** <br/> |datetime  <br/> |Principale  <br/> |Riferimento dalla [tabella MediaLine](medialine-0.md).  <br/> |
-|**SessionSeq** <br/> |int  <br/> |Principale  <br/> |R A cui viene fatto riferimento [dalla tabella MediaLine.](medialine-0.md)  <br/> |
+|**SessionSeq** <br/> |int  <br/> |Principale  <br/> |R A cui viene fatto riferimento [dalla tabella MediaLine](medialine-0.md).  <br/> |
 |**MediaLineLabel** <br/> |tinyint  <br/> |Principale  <br/> |Riferimento dalla [tabella MediaLine](medialine-0.md).  <br/> |
 |**StreamID** <br/> |int  <br/> |Principale  <br/> |ID univoco in una linea multimediale.  <br/> |
-|**VideoPayloadDescription** <br/> |smallint  <br/> |Foreign, Primary  <br/> |Descrizione del payload. Per altre informazioni, vedi la [tabella PayloadDescription.](payloaddescription.md) <br/> |
+|**VideoPayloadDescription** <br/> |smallint  <br/> |Foreign, Primary  <br/> |Descrizione del payload. Per altre [informazioni, vedi la tabella PayloadDescription](payloaddescription.md) . <br/> |
 |**JitterInterArrival** <br/> |int  <br/> | <br/> |Instabilità di rete media dalle statistiche RTCP (Real Time Control Protocol).  <br/> |
 |**JitterInterArrivalMax** <br/> |int  <br/> | <br/> |Massimo instabilità di rete durante la sessione video.  <br/> |
 |**RoundTrip** <br/> |int  <br/> | <br/> |Tempo di round trip dalle statistiche RTCP.  <br/> |
@@ -77,14 +77,14 @@ Ogni record rappresenta un flusso video. Una linea multimediale video contiene i
 |**RelativeOneWayGapDuration** <br/> |float  <br/> ||Durata del gap unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**VideoPacketLossRate** <br/> |decimal(9,4)  <br/> ||Frequenza di perdita dei pacchetti video.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**VideoAllocateBWAvg** <br/> |int  <br/> ||Quantità media di larghezza di banda allocata per il video.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**SendCodecTypes** <br/> |smallint  <br/> |Foreign  <br/> |Tipo di codec video utilizzati dal mittente. Per ulteriori informazioni, vedere la tabella [CodecDescription.](codecdescription.md) <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**SendCodecTypes** <br/> |smallint  <br/> |Foreign  <br/> |Tipo di codec video utilizzati dal mittente. Per ulteriori [informazioni, vedere la tabella CodecDescription](codecdescription.md) . <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**SendResolutionWidth** <br/> |int  <br/> ||Larghezza della risoluzione utilizzata dal mittente.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**SendResolutionHeight** <br/> |int  <br/> ||Altezza della risoluzione utilizzata dal mittente.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**SendFrameRateAverage** <br/> |float  <br/> ||Trasmissione media dei fotogrammi video utilizzata dal mittente.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**SendBitRateMaximum** <br/> |int  <br/> ||Velocità in bit massima per il mittente.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**SendBitRateAverage** <br/> |int  <br/> ||Velocità in bit media per il mittente.  <br/> |
 |**SendVideoStreamsMax** <br/> |int  <br/> ||Numero massimo di flussi video utilizzati dal mittente.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**RecvCodecTypes** <br/> |smallint  <br/> |Foreign  <br/> |Codici video utilizzati dal destinatario. Per ulteriori informazioni, vedere la tabella [CodecDescription.](codecdescription.md) <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**RecvCodecTypes** <br/> |smallint  <br/> |Foreign  <br/> |Codici video utilizzati dal destinatario. Per ulteriori [informazioni, vedere la tabella CodecDescription](codecdescription.md) . <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**RecvResolutionWidth** <br/> |int  <br/> ||Larghezza della risoluzione utilizzata dal destinatario.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**RecvResolutionHeight** <br/> |int  <br/> ||Altezza della risoluzione utilizzata dal ricevitore.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**RecvFrameRateAverage** <br/> |float  <br/> ||Frequenza media dei fotogrammi video utilizzata dal destinatario.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |

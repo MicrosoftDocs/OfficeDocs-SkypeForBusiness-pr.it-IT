@@ -1,8 +1,8 @@
 ---
 title: Panoramica delle funzionalità (Strumento di pianificazione)
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,17 +15,17 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 44783b37-c87f-41f2-9de1-39176f1856ab
 ROBOTS: NOINDEX, NOFOLLOW
-description: Skype for Business Server Strumento di pianificazione
-ms.openlocfilehash: ee6578aeb51aa0cf9f6a4066c78d6038a057763b
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+description: Skype for Business Server pianificazione
+ms.openlocfilehash: 173a5a5ba0b8fd65e9a412d0b6507005f3cf8547
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60832690"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62393208"
 ---
 # <a name="feature-overview-planning-tool"></a>Panoramica delle funzionalità (Strumento di pianificazione)
  
-Skype for Business Server Strumento di pianificazione
+Skype for Business Server pianificazione
   
 È possibile utilizzare la **pagina Siti centrali** dello Strumento di pianificazione per progettare la Skype for Business Server distribuzione. È possibile creare due distribuzioni centralizzate o distribuite. Una distribuzione centralizzata dispone di un solo sito centrale, che include tutti Skype for Business utenti dell'organizzazione. Una distribuzione distribuita include più di un sito centrale. Se si distribuiscono Skype for Business Server in più siti centrali, sarà necessario immettere il numero di utenti in ogni sito centrale nello Strumento di pianificazione.
   
@@ -86,14 +86,14 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Mobilità**
     
-    Quando distribuisci il servizio per dispositivi mobili Skype for Business Server, gli utenti possono usare i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
+    Quando distribuisci il servizio per dispositivi mobili Skype for Business Server, gli utenti possono usare dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
     
 - **Cassetta postale Exchange W15**
     
-    Skype for Business Server consente di archiviare i messaggi di segreteria telefonica Exchange messaggistica unificata; tali messaggi della segreteria telefonica verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
+    Skype for Business Server consente di archiviare i messaggi della segreteria telefonica nella messaggistica unificata di Exchange; tali messaggi verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
 
     > [!NOTE]
-    > Exchange La messaggistica unificata come nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+    > Exchange la messaggistica unificata nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi di segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md).
     
 ### <a name="voice"></a>Voce
 
@@ -105,10 +105,10 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Messaggistica unificata di Exchange**
     
-    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica delle chiamate e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
+    Exchange messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la messaggistica unificata Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica di chiamata e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
 
     > [!NOTE]
-    > Exchange La messaggistica unificata come nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+    > Exchange la messaggistica unificata nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi di segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md).
     
 ### <a name="additional-deployment-options"></a>Opzioni di distribuzione aggiuntive
 
@@ -130,7 +130,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
     L'archiviazione archivia conversazioni e conferenze di messaggistica istantanea.
     
-- **Exchange Integrazione dell'archiviazione**
+- **Exchange di archiviazione**
     
     Se si dispone di utenti ospitati in Exchange e le relative cassette postali sono state messe In-Place archiviazione, è possibile selezionare l'opzione per integrare l'archiviazione Skype for Business Server con Exchange archiviazione.
     
@@ -168,7 +168,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Annuncio conferenza**
     
-    applicazione Annuncio conferenza produce toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
+    applicazione Annuncio conferenza toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
     
 - **Servizio Controllo di ammissione di chiamata**
     

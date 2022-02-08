@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni generali dell'applicazione esterna
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: aa7268ac-b9e3-4d25-bff4-e59d305120f2
 description: Per modificare le proprietà per un server applicazioni attendibili che è già stato definito, seguire queste istruzioni.
-ms.openlocfilehash: d003a14506ef34f8e37778ec8dd262e269ed93a9
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: bdfeaddd9cf986a13f88271b01714e4af7604cb3
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60860333"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62393828"
 ---
 # <a name="external-application-general-settings-expander"></a>Espansione delle impostazioni generali dell'applicazione esterna
  
@@ -40,7 +40,7 @@ Selezionare **Abilita la replica dei dati di configurazione nel pool** se è nec
   
 ## <a name="next-hop-settings"></a>Impostazioni dell'hop successivo
 
-È possibile specificare il server hop successivo del pool di server applicazioni attendibili selezionando nell'elenco a discesa il pool edizione Enterprise Front End o edizione Standard Front End Server definito. Un Director o un pool di server Director non costituisce una selezione valida per l'hop successivo di un server applicazioni attendibili e non risulterà visualizzato nell'elenco.
+È possibile specificare il server hop successivo del pool di server applicazioni attendibili selezionando il pool Front End edizione Enterprise definito o edizione Standard Front End Server nell'elenco a discesa. Un Director o un pool di server Director non costituisce una selezione valida per l'hop successivo di un server applicazioni attendibili e non risulterà visualizzato nell'elenco.
   
 
 
