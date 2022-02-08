@@ -1,8 +1,8 @@
 ---
 title: Scenari di prestazioni per lo Skype for Business Server 2015 Stress and Performance Tool
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 ms.date: 12/17/2015
 manager: serdars
 audience: ITPro
@@ -14,18 +14,18 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d972382f-971e-4fa7-b7ee-8ab9d3a5c11d
 description: Attività da eseguire per configurare Skype for Business Server 2015 per eseguire test di carico e prestazioni, utilizzando lo strumento Stress and Performance.
-ms.openlocfilehash: 0a04d94bc0c43b9de2043b9ee601a294b7945a45
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 3f8818018120a7230bcdaaa9b6cd04009e761640
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60841108"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62390058"
 ---
 # <a name="performance-scenarios-for-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Scenari di prestazioni per lo Skype for Business Server 2015 Stress and Performance Tool
  
 Attività da eseguire per configurare Skype for Business Server 2015 per eseguire test di carico e prestazioni, utilizzando lo strumento Stress and Performance.
   
-Per eseguire lo strumento Skype for Business Server 2015 Stress and Performance Tool (LyncPerfTool), la topologia di Skype for Business Server 2015 deve prima essere configurata per gli scenari rilevanti per l'utente. Se Skype for Business Server 2015 non è configurato o non è configurato correttamente, è molto probabile che la simulazione del carico non riesca. Con lo Skype for Business Server 2015 Stress and Performance Tool, stiamo fornendo script di esempio Skype for Business Server Management Shell e file di risorse di base come parte del download dello [strumento.](https://www.microsoft.com/download/details.aspx?id=50367) Possono essere utilizzati come punto di partenza per la configurazione della distribuzione Skype for Business Server distribuzione. In questo articolo vengono descritti Windows PowerShell esempi forniti.
+Per eseguire lo strumento Skype for Business Server 2015 Stress and Performance Tool (LyncPerfTool), la topologia di Skype for Business Server 2015 deve prima essere configurata per gli scenari pertinenti. Se Skype for Business Server 2015 non è configurato o non è configurato correttamente, è molto probabile che la simulazione del carico non riesca. Con lo Skype for Business Server 2015 Stress and Performance Tool, stiamo fornendo script di Skype for Business Server Management Shell e file di risorse di base come parte del [download dello strumento](https://www.microsoft.com/download/details.aspx?id=50367). Questi possono essere usati come punto di partenza per la configurazione della distribuzione Skype for Business Server distribuzione. In questo articolo vengono descritti Windows PowerShell esempi forniti.
   
 > [!NOTE]
 > In questo argomento non viene descritto come configurare Skype for Business Server 2015 in generale, sono disponibili altri argomenti relativi alla pianificazione e alla distribuzione. Per informazioni dettagliate sull'Windows PowerShell in Skype for Business Server 2015, vedere la documentazione di Skype for Business Server Management Shell all'indirizzo Insert introduction HERE. 
@@ -41,7 +41,7 @@ Microsoft fornisce script di PowerShell di esempio che è possibile usare per pr
 
 Potrebbe essere necessario configurare il criterio Controllo versione client se in precedenza sono state modificate le impostazioni rispetto ai valori predefiniti. In caso di dubbi, consultare la documentazione relativa al controllo [della versione client](/previous-versions/office/lync-server-2013/lync-server-2013-view-client-version-policy-rules).
   
-Lo strumento Stress and Performance usa per impostazione predefinita le seguenti versioni dell'agente utente quando comunica con Skype for Business Server 2015:
+Lo strumento Stress and Performance usa per impostazione predefinita le seguenti versioni di User Agent per comunicare con Skype for Business Server 2015:
   
 - LSPT/15.0.0.0 (Skype for Business Server 2015 Stress and Performance Tool)
     

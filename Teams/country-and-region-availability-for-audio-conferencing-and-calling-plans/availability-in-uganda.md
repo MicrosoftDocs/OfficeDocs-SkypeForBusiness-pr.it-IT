@@ -1,7 +1,7 @@
 ---
 title: Disponibilità in Uganda
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.reviewer: fafan
 ms.topic: reference
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Uganda.
-ms.openlocfilehash: 1b0318bbe2236b1b29da55ea428b915417cbaf3e
-ms.sourcegitcommit: 9ef6e36eeba7db70971f4eb1a45f0ded394b1fe6
+ms.openlocfilehash: b7c9dc0f5d785fc5e301682926784b88d0daeb09
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62190877"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62389710"
 ---
 # <a name="availability-in-uganda"></a>Disponibilità in Uganda
 
@@ -62,7 +62,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
 
-Se Piani chiamate non sono disponibili per l'acquisto, vedere Opzioni di connettività [PSTN](../pstn-connectivity.md) per tutte le opzioni disponibili.
+Se Piani chiamate non sono disponibili per l'acquisto, vedere [Opzioni di connettività PSTN](../pstn-connectivity.md) per tutte le opzioni disponibili.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri a pedaggio e a numero verde per i servizi
 
@@ -72,7 +72,7 @@ Se Piani chiamate non sono disponibili per l'acquisto, vedere Opzioni di connett
 |Sono disponibili numeri verdi a tariffa?  <br/> |Non geografiche ([su richiesta](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)) <br/> |
 |Sono disponibili numeri a numero verde?  <br/> |No  <br/> |
    
- Per ottenere numeri a numero verde e a pedaggio per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere numeri di telefono di servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
+ Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere numeri di telefono di servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

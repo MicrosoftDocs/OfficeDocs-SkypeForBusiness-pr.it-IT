@@ -1,8 +1,8 @@
 ---
 title: Requisiti DNS per gli URL semplici in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -11,13 +11,13 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 3a3c9b22-892f-45a7-b05c-539d358a1a86
-description: "Riepilogo: leggere le considerazioni relative all'URL semplice in questo argomento prima di implementare i record DNS per Skype for Business Server."
-ms.openlocfilehash: 1dd3b4b06b704e7d840dd6f430a9ba9782913a3b
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+description: "Riepilogo: esaminare le considerazioni relative all'URL semplice in questo argomento prima di implementare i record DNS per Skype for Business Server."
+ms.openlocfilehash: 92cf8c91956eab9648869c5a05ccc57682ecc5fd
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60864673"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62389988"
 ---
 # <a name="dns-requirements-for-simple-urls-in-skype-for-business-server"></a>Requisiti DNS per gli URL semplici in Skype for Business Server
 
@@ -42,14 +42,14 @@ La definizione di un URL semplice richiederà anche l'impostazione di un record 
 
 Generatore di topologie e i cmdlet Skype for Business Server Management Shell applicano diverse regole di convalida per gli URL semplici. È obbligatorio impostare URL semplici riunione e per accesso esterno, mentre l'impostazione dell'URL semplice di amministrazione è facoltativa. Ogni dominio SIP deve disporre di un URL semplice riunione separato, ma sono sufficienti un URL semplice per accesso esterno e un URL semplice di amministrazione per l'intera organizzazione.
 
-Ogni URL semplice dell'organizzazione deve avere un nome univoco e non può essere un prefisso di un altro URL semplice( ad esempio, non è possibile impostarlo come URL semplice Meet e come URL semplice `SfB2015.contoso.com/Meet` `SfB2015.contoso.com/Meet/Dialin` dialin). I nomi di URL semplici non possono contenere il nome di dominio completo di alcun pool o qualsiasi informazione sulla porta (ad esempio, https://FQDN:88/meet non è consentita). Tutti gli URL semplici devono iniziare con il prefisso https:// semplice. 
+Ogni URL semplice dell'organizzazione deve avere un nome univoco e non può essere un prefisso di un altro URL semplice( ad esempio, `SfB2015.contoso.com/Meet` non è possibile impostarlo come URL `SfB2015.contoso.com/Meet/Dialin` semplice Meet e come URL semplice dialin). I nomi di URL semplici non possono contenere il nome di dominio completo di alcun pool o qualsiasi informazione sulla porta (ad esempio, https://FQDN:88/meet non è consentita). Tutti gli URL semplici devono iniziare con il prefisso https:// semplice. 
 
 Gli URL semplici possono includere solo caratteri alfanumerici, ovvero a-z, A-Z, 0-9 e il punto (.). Se si utilizzano altri caratteri, gli URL semplici potrebbero non funzionare come previsto.
 
 ## <a name="changing-simple-urls-after-deployment"></a>Modifica degli URL semplici dopo la distribuzione
 <a name="BK_Valid"> </a>
 
-Se si modifica un URL semplice dopo la distribuzione iniziale, è necessario tenere presente l'impatto della modifica sui record DNS e sui certificati per gli URL semplici. Se la base di un URL semplice cambia, è necessario modificare anche i record DNS e i certificati. Ad esempio, se si cambia l'URL di base da a , è necessario modificare i record DNS e i certificati in modo che `https://SfB2015.contoso.com/Meet` `https://meet.contoso.com` `SfB2015.contoso.com` `meet.contoso.com` facciano riferimento a `meet.contoso.com` . Se è stato modificato l'URL semplice da a , l'URL di base di rimane lo stesso, quindi non sono necessarie modifiche al `https://SfB2015.contoso.com/Meet` `https://SfB2015.contoso.com/Meetings` DNS o al `SfB2015.contoso.com` certificato.
+Se si modifica un URL semplice dopo la distribuzione iniziale, è necessario tenere presente l'impatto della modifica sui record DNS e sui certificati per gli URL semplici. Se la base di un URL semplice cambia, è necessario modificare anche i record DNS e i certificati. Ad esempio, se si cambia l'URL `https://SfB2015.contoso.com/Meet` `meet.contoso.com``https://meet.contoso.com` `SfB2015.contoso.com` di base da a , è necessario modificare i record DNS e i certificati in modo che facciano riferimento a .`meet.contoso.com` Se è stato modificato l'URL semplice da `https://SfB2015.contoso.com/Meet` a `https://SfB2015.contoso.com/Meetings`, l'URL `SfB2015.contoso.com` di base di rimane lo stesso, quindi non sono necessarie modifiche al DNS o al certificato.
 
 Ogni volta che si modifica un nome URL semplice, tuttavia, è necessario eseguire **Enable-CsComputer** in ogni Server Director e Front End Server per registrare la modifica.
 
@@ -69,18 +69,18 @@ Se si utilizza questa opzione, è necessario un record A DNS separato per ogni U
 
 | **URL semplice** <br/> | **Esempio** <br/>                                                                                                    |
 |:---------------------|:---------------------------------------------------------------------------------------------------------------------|
-| Meet  <br/>          | `https://meet.contoso.com`, `https://meet.fabrikam.com` e così via (uno per ogni dominio SIP dell'organizzazione)  <br/> |
+| Meet  <br/>          | `https://meet.contoso.com`, `https://meet.fabrikam.com`e così via (uno per ogni dominio SIP dell'organizzazione)  <br/> |
 | Accesso remoto  <br/>       | `<https://dialin.contoso.com>`  <br/>                                                                                  |
 | Amministratore  <br/>         | `<https://admin.contoso.com>`  <br/>                                                                                   |
 
-Con l'opzione 2, gli URL semplici si basano sul nome di dominio `SfB2015.contoso.com` . È necessario pertanto un solo record A DNS che consenta tutti e tre i tipi di URL semplici. Questo record DNS A fa riferimento `SfB2015.contoso.com` a . Sono sempre necessari però record A DNS separati per altri domini SIP dell'organizzazione. 
+Con l'opzione 2, gli URL semplici si basano sul nome di dominio `SfB2015.contoso.com`. È necessario pertanto un solo record A DNS che consenta tutti e tre i tipi di URL semplici. Questo record DNS A fa riferimento `SfB2015.contoso.com`a . Sono sempre necessari però record A DNS separati per altri domini SIP dell'organizzazione. 
 
 **Opzione 2 di denominazione degli URL semplici**
 
 
 | **URL semplice** <br/> | **Esempio** <br/>                                                                                                                    |
 |:---------------------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| Meet  <br/>          | `https://SfB2015.contoso.com/Meet`, `https://SfB2015.fabrikam.com/Meet` e così via (uno per ogni dominio SIP dell'organizzazione)  <br/> |
+| Meet  <br/>          | `https://SfB2015.contoso.com/Meet`, `https://SfB2015.fabrikam.com/Meet`e così via (uno per ogni dominio SIP dell'organizzazione)  <br/> |
 | Accesso remoto  <br/>       | `<https://SfB2015.contoso.com/Dialin>`  <br/>                                                                                          |
 | Amministratore  <br/>         | `<https://SfB2015.contoso.com/Admin>`  <br/>                                                                                           |
 
@@ -114,7 +114,7 @@ Meet-ext.geolb.contoso.com
      Pool2ExternalWebFQDN.contoso.com
 ```
 
-Crea quindi record CNAME che risolvono l'URL semplice Meet (ad esempio `meet.contoso.com` ) nei due indirizzi GeoDNS.
+Crea quindi record CNAME che risolvono l'URL semplice Meet (ad `meet.contoso.com`esempio ) nei due indirizzi GeoDNS.
 
 > [!NOTE]
 > Se la rete usa l'hairpin (ovvero il routing di tutto il traffico degli URL semplici attraverso il collegamento esterno, incluso il traffico proveniente dall'organizzazione), è sufficiente configurare l'indirizzo GeoDNS esterno e risolvere l'URL semplice riunione solo nell'indirizzo esterno specifico.
