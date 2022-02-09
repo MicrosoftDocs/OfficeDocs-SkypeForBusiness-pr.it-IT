@@ -1,8 +1,8 @@
 ---
 title: Elenco di tabelle QoE
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/13/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 176194d7-d184-4e23-94bb-cb62b4db47f5
 description: Lo schema del database è costituito dalle tabelle seguenti.
-ms.openlocfilehash: 7b97746b3f8a490da7fb06d903ca6f7676f2d6b5
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: ac00cc41ede9e9a78e6b9a4d811496f4bc17faed
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60849589"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62420849"
 ---
 # <a name="list-of-qoe-tables"></a>Elenco di tabelle QoE
  
@@ -30,11 +30,11 @@ Lo schema del database è costituito dalle tabelle seguenti.
 |:-----|:-----|
 |[Tabella AppSharingMetricsThreshold](appsharingmetricsthreshold.md) <br/> |Archivia valori ottimali e accettabili per le metriche di qualità dell'esperienza usate con la condivisione delle applicazioni.  <br/> |
 |[Tabella CodecDescription](codecdescription.md) <br/> |Mappe identificatori codec univoci al codec corrispondente.  <br/> |
-|[Tabella IPAddress](ipaddress.md) <br/> |Mappe Indirizzi IP agli identificatori di indirizzi IP univoci utilizzati altrove nel database qualità dell'esperienza.  <br/> |
+|[Tabella IPAddress](ipaddress.md) <br/> |Mappe indirizzi IP agli identificatori di indirizzi IP univoci utilizzati altrove nel database qualità dell'esperienza.  <br/> |
 |[Tabella NetworkConnectionDetail](networkconnectiondetail.md) <br/> |Mappe tipi di connessione di rete agli identificatori di connessione di rete utilizzati altrove nel database qualità dell'esperienza.  <br/> |
 |[Tabella PurgeSettings (QoE)](purgesettings-qoe.md) <br/> |Archivia le informazioni che specificano se e quando i record di qualità dell'esperienza non aggiornati verranno eliminati automaticamente dal database QoE.  <br/> |
 |[Tabella TraceRoute](traceroute.md) <br/> |Archivia le informazioni di routing per le chiamate.  <br/> |
-|[Tabella UserAgentDef (QoE)](useragentdef-qoe.md) <br/> |Mappe degli agenti utente ai nomi descrittivi dell'agente.  <br/> |
+|[Tabella UserAgentDef (QoE)](useragentdef-qoe.md) <br/> |Mappe identificatori agente utente ai nomi descrittivi dell'agente.  <br/> |
 |[Tabella VideoMetricsThreshold](videometricsthreshold.md) <br/> |Archivia valori ottimali e accettabili per le metriche di qualità dell'esperienza usate con le videochiamate.  <br/> |
 |[Tabella UserAgent](useragent.md) <br/> |Archivia le stringhe dell'agente utente SIP (Session Initiation Protocol) e i tipi UA utilizzati nelle sessioni audio e video.  <br/> |
 |[Tabella utente](user-0.md) <br/> |Archivia gli URI di utenti, conferenze e telefonici utilizzati nelle sessioni audio e video.  <br/> |

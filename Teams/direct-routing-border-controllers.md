@@ -10,16 +10,21 @@ ms.service: msteams
 ms.localizationpriority: high
 search.appverid: MET150
 ms.collection:
-  - M365-voice
+- M365-voice
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 hideEdit: true
 f1.keywords:
-  - NOCSH
+- NOCSH
 description: Scopri quali Session Border Controller (SBC) sono stati certificati per l'instradamento diretto.
 ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 71ba2fc6856b57a2619122b1c7341404651d4e8f
+ms.sourcegitcommit: b1d1a2b27c9dbc73a306bd69696fceda77688b26
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "62432855"
 ---
-
 # <a name="session-border-controllers-certified-for-direct-routing"></a>Session Border Controller certificati per l'instradamento diretto
 
 Microsoft collabora con fornitori selezionati di Session Border Controller (SBC) per certificare che i SBC funzionano con l'instradamento diretto.
@@ -52,14 +57,14 @@ Per eventuali domande sul programma di certificazione di SBC per l'instradamento
 
 |                                                       Fornitore                                                        |       Prodotto       | Bypass non multimediale | Bypass multimediale | Versione software | Con supporto del provider di servizi 911* | Con supporto di ELIN |  
 |---------------------------------------------------------------------------------------------------------------------|---------------------|------------------|--------------|------------------|-----------------|------------------|  
-| [AudioCodes](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-microsoft-teams) |   Mediant 500 SBC   |     &#10004;     |   &#10004;    |  Supportato 7.20A.258 (consigliato 7.40A.100)   | &#10004;   |  &#10004;  |  
+| [AudioCodes](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-microsoft-teams) |   Mediant 500 SBC   |     &#10004;     |   &#10004;    |  Supportato 7.20A.258 (consigliato 7.40A.250)   | &#10004;   |  &#10004;  |  
 |                                                                                                                     |   Mediant 800 SBC   |     &#10004;     |   &#10004;     |  Supportato 7.20A.258 (consigliato 7.40A.250)   | &#10004;   |  &#10004;  |  
 |                                                                                                                     |  Mediant 2600 SBC   |     &#10004;     |   &#10004;    |  Supportato 7.20A.258 (consigliato 7.40A.250)   |   &#10004;   |  &#10004;  |
 |                                                                                                                     |  Mediant 4000 SBC   |     &#10004;     |   &#10004;     |  Supportato 7.20A.258 (consigliato 7.40A.250)   |  &#10004;   |  &#10004;  |
-|                                                                                                                     | Mediant 1000B SBC  |     &#10004;     |   &#10004;     |  Supportato 7.20A.250 (consigliato 7.20A.258)  |  &#10004;   |  &#10004;  |
+|                                                                                                                     | Mediant 1000B SBC  |     &#10004;     |   &#10004;     |  Supportato 7.20A.250 (consigliato 7.40A.250)  |  &#10004;   |  &#10004;  |
 |                                                                                                                     | Mediant 9000  SBC  |     &#10004;     |   &#10004;     |  Supportato 7.20A.258 (consigliato 7.40A.250)   | &#10004;     |  &#10004;  |
 |                                                                                                                     | Virtual Edition SBC |     &#10004;     |   &#10004;     |  Supportato 7.20A.258 (consigliato 7.40A.250) |  &#10004;    |  &#10004;  |   
-|                                                                                                                     | Mediant Cloud Edition SBC  |     &#10004;     |   &#10004;     |  Supportato 7.20A.258 (consigliato 7.40A.100) |  &#10004;    |  &#10004;  |
+|                                                                                                                     | Mediant Cloud Edition SBC  |     &#10004;     |   &#10004;     |  Supportato 7.20A.258 (consigliato 7.40A.250) |  &#10004;    |  &#10004;  |
 |  [Ribbon Communications](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-skype-business)  |      SBC 5100/5110       |     &#10004;     |   &#10004;    |       Supportata 9.2, 8.2 e 7.2 (scelta consigliata 10.1)       | &#10004;   |     |
 |                                                                                                                     |      SBC 5200/5210       |     &#10004;     |  &#10004;    |       Supportata 9.2, 8.2 e 7.2 (scelta consigliata 10.1)       |   &#10004; |    |
 |                                                                                                                     |      SBC 5400       |     &#10004;     |   &#10004;   |       Supportata 9.2, 8.2 e 7.2 (scelta consigliata 10.1)       |   &#10004;  | |
