@@ -1,7 +1,7 @@
 ---
-title: Skype Distribuzioni ibride del sistema sala
-ms.author: v-mahoffman
-author: HowlinWolf-92
+title: Skype distribuzioni ibride del sistema room
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -11,21 +11,21 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: eba70d88-13b3-4598-95d5-8a343c9e7d26
-description: Leggere questo argomento per informazioni su come distribuire Skype room in un ambiente ibrido.
-ms.openlocfilehash: caebf77f0ef5abb2b56c64446ad04a052d8f98f9
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+description: Leggere questo argomento per informazioni su come distribuire Skype Room System in un ambiente ibrido.
+ms.openlocfilehash: 0592d2cb22eb0a8f34e93dc812f011d13b31a53f
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60841948"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62400762"
 ---
-# <a name="skype-room-system-hybrid-deployments"></a>Skype Distribuzioni ibride del sistema sala
+# <a name="skype-room-system-hybrid-deployments"></a>Skype distribuzioni ibride del sistema room
 
-Leggere questo argomento per informazioni su come distribuire Skype room in un ambiente ibrido.
+Leggere questo argomento per informazioni su come distribuire Skype Room System in un ambiente ibrido.
   
 ## <a name="hybrid-deployments"></a>Distribuzioni ibride
 
-Eseguire questa procedura se la topologia dispone di Skype for Business Server e Exchange Online e si desidera ospitare la cassetta postale della risorsa Skype Room System Exchange Online. In questa sezione viene inoltre illustrato uno scenario ibrido in cui sono stati distribuiti Exchange Online e Exchange Server distribuzione.
+Seguire questa procedura se la topologia dispone di Skype for Business Server e Exchange Online e si desidera ospitare la cassetta postale della risorsa Skype Room System Exchange Online. In questa sezione viene inoltre illustrato uno scenario ibrido in cui sono stati distribuiti Exchange Online e Exchange Server distribuzione.
   
 A scopo illustrativo, usiamo LyncSample.com per il dominio locale e LyncSample.ccstp.net per il dominio online.
   
@@ -41,11 +41,11 @@ A scopo illustrativo, usiamo LyncSample.com per il dominio locale e LyncSample.c
     
 3. Creare un account utente di Active Directory locale lrstest5@LyncSample.com, impostare l'indirizzo di posta elettronica su lrstest5@LyncSample.com e impostare l'indirizzo di destinazione su lrstest5@LyncSample.com.
     
-4. Attivare la sincronizzazione della directory e, al termine della sincronizzazione, verificare che gli utenti si uniscono in AAD e che non sia possibile modificare le proprietà nelle risorse del destinatario nell'interfaccia di amministrazione di Microsoft 365 o Office 365 Exchange.
+4. Attivare la sincronizzazione della directory e, al termine della sincronizzazione, verificare che gli utenti si uniscono a AAD e che non sia possibile modificare le proprietà nelle risorse del destinatario nell'interfaccia di amministrazione di Microsoft 365 o Office 365 Exchange.
     
 5. Verificare OWA connettività tramite lrstest5@LyncSample.com. In precedenza, è stata verificata OWA connettività tramite il dominio online.
     
-    Dopo aver creato la cassetta postale, è possibile utilizzare Set-CalendarProcessing in Exchange Online Management Shell per configurare la cassetta postale. Per ulteriori dettagli, vedere i passaggi da 3 a 6 in Single Forest On-prem Deployments.
+    Dopo aver creato la cassetta postale, è possibile Set-CalendarProcessing in Exchange Online Management Shell per configurare la cassetta postale. Per ulteriori dettagli, vedere i passaggi da 3 a 6 in Single Forest On-prem Deployments.
     
    > [!NOTE]
    > Se si dispone di un ambiente ibrido con Exchange Server e Exchange Online, passare a Exchange Management Shell e Enable-RemoteMailbox lrstest5@LyncSample.com -RemoteRoutingAddress lrstest5@LyncSample.mail.ccsctp.net -Room. Attivare quindi la sincronizzazione della directory. 
@@ -60,6 +60,6 @@ A scopo illustrativo, usiamo LyncSample.com per il dominio locale e LyncSample.c
    ```
 
 > [!NOTE]
-> Se è stato Skype for Business Online anziché Skype for Business Server nello scenario precedente, dopo aver eseguito il provisioning della cassetta postale della risorsa Exchange, effettuare il provisioning di un account Skype for Business come descritto in Skype for Business Provisioning online. 
+> Se è stato Skype for Business Online anziché Skype for Business Server nello scenario precedente, dopo aver eseguito il provisioning della cassetta postale della risorsa Exchange, effettuare il provisioning di un account Skype for Business come descritto in Skype for Business  Provisioning online. 
   
 

@@ -1,7 +1,7 @@
 ---
 title: Informazioni su team e canali in Microsoft Teams
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.date: 10/29/2018
 audience: Admin
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d3d71e8c542b5f39ab979ae876e0c82868ca380a
-ms.sourcegitcommit: 4df3d144296b9b8982109be7edaffd636aabdf29
+ms.openlocfilehash: 09aba3d8f6bcdb06d75bf0563a437a87197cb254
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60959815"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62400840"
 ---
 # <a name="understand-teams-and-channels-in-microsoft-teams"></a>Informazioni su team e canali in Microsoft Teams
 
@@ -36,7 +36,7 @@ I concetti di team e canali sono fondamentali per un'implementazione sana e prod
 
 - I canali sono gli spazi di collaborazione all'interno di un team in cui viene eseguito il lavoro effettivo. 
 
-Per altre informazioni su team e canali, vedere Panoramica di team e canali [in Microsoft Teams](teams-channels-overview.md). Per indicazioni complete Teams sull'adozione dei Teams [sull'adozione.](https://aka.ms/teamstoolkit) Per altre informazioni sui gruppi Teams e Microsoft 365, vedere Microsoft 365 [Gruppi](office-365-groups.md) e Microsoft Teams e Altre informazioni [su Microsoft 365 gruppi.](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+Per altre informazioni su team e canali, vedere Panoramica [di team e canali in Microsoft Teams](teams-channels-overview.md). Per indicazioni complete Teams sull'adozione dei Teams [adozioni.](https://aka.ms/teamstoolkit) Per altre informazioni sui gruppi Teams e Microsoft 365, vedere Gruppi di Microsoft 365 e Microsoft Teams [](office-365-groups.md) e Altre informazioni su [Microsoft 365 gruppi](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 
 | &nbsp; |&nbsp;  |

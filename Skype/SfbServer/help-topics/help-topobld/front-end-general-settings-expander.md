@@ -1,8 +1,8 @@
 ---
 title: Espansione delle impostazioni generali di Front End Server
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/25/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 8a5f21d0-f6c8-4907-9958-5ca36f702542
 description: 'Per modificare le impostazioni per un pool Front End o un server Standard Edition esistente, sono disponibili le sezioni seguenti:'
-ms.openlocfilehash: 60e6099cb28ec564abde9506afb1a0ef70274684
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: d005587106fec6819bf1f18c1b07b9de7d8fc216
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60861453"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62403060"
 ---
 # <a name="front-end-general-settings-expander"></a>Espansione delle impostazioni generali di Front End
 
@@ -103,7 +103,7 @@ Per modificare o specificare ulteriori impostazioni per i servizi Web nel pool F
 In **Servizi Web interni** specificare quanto segue:
 
 > [!CAUTION]
-> Se si dispone di più pool Front End o Front End Server, il nome di dominio completo dei servizi Web esterni deve essere univoco. Se ad esempio si definisce l'FQDN dei servizi Web esterni di un Front End Server **come pool01.contoso.com**, non è possibile utilizzare pool01.contoso.com **per** un altro pool Front End o Front End Server. Se si distribuiscono anche Director, il nome di dominio completo dei servizi Web esterni definito per qualsiasi server Director o pool di server Director deve essere univoco da qualsiasi altro server Director o pool di server Director, nonché da qualsiasi pool Front End o Front End Server. Se si decide di sostituire i servizi Web interni con un FQDN autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
+> Se si dispone di più pool Front End o Front End Server, il nome di dominio completo dei servizi Web esterni deve essere univoco. Ad esempio, se si definisce il nome di dominio completo dei servizi Web esterni di un Front End Server **come pool01.contoso.com**, non è possibile utilizzare **pool01.contoso.com per un** altro pool Front End o Front End Server. Se si distribuiscono anche Director, il nome di dominio completo dei servizi Web esterni definito per qualsiasi server Director o pool di server Director deve essere univoco da qualsiasi altro server Director o pool di server Director, nonché da qualsiasi pool Front End o Front End Server. Se si decide di sostituire i servizi Web interni con un FQDN autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
 
 - Se si seleziona **Sostituisci FQDN**, sarà possibile specificare un FQDN diverso per l'identità dei **Servizi Web interni** nel pool. Per impostazione predefinita, l'impostazione corrisponde al nome corrente definito per il pool Front End.
 

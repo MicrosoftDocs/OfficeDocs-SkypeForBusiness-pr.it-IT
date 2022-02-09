@@ -1,7 +1,7 @@
 ---
 title: Gestire i modelli di team nell'interfaccia di amministrazione
 author: serdars
-ms.author: v-mahoffman
+ms.author: serdars
 manager: serdars
 ms.reviewer: yinchang
 ms.topic: article
@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire i modelli di team nell'interfaccia di amministrazione
-ms.openlocfilehash: 0ab167cc66a897c0f89679cd2a403a385b2b1b01
-ms.sourcegitcommit: 65a10f80e5dfd67b2778e09f5f92c21ef09ce36a
+ms.openlocfilehash: 470194c8a31236e5bed000fa2837c9b1fa05003e
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60766064"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62401180"
 ---
 # <a name="manage-team-templates-in-the-admin-center"></a>Gestire i modelli di team nell'interfaccia di amministrazione
 
@@ -38,7 +38,7 @@ Questo breve video illustra come gestire i criteri dei modelli.
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Espandere criteri **Teams**  >  **modelli.**
+2. Espandere **criteri Teams** >  **Templates**.
 
 3. Selezionare **Aggiungi**.
 
@@ -50,19 +50,19 @@ Questo breve video illustra come gestire i criteri dei modelli.
 
     - Breve descrizione dei criteri dei modelli
 
-2. Nella tabella **Modelli visualizzabili** selezionare i modelli da nascondere e scegliere **Nascondi.**
+2. Nella tabella **Modelli visualizzabili** selezionare i modelli da nascondere e scegliere **Nascondi**.
 
     ![I modelli selezionati con nascondi evidenziato.](media/template-policies-2.png)
 
     È possibile visualizzare i modelli selezionati per nasconderli nella **tabella Modelli** nascosti.
 
-1. Per scoprire alcuni modelli, scorrere fino alla **tabella Modelli nascosti.**
+1. Per scoprire alcuni modelli, scorrere fino alla **tabella Modelli nascosti** .
 
-2. Selezionare i modelli da scoprire e quindi selezionare **Mostra.**
+2. Selezionare i modelli da scoprire e quindi selezionare **Mostra**.
 
    ![I modelli selezionati che non sono nascosti.](media/template-policies-3.png)
 
-   I modelli selezionati verranno visualizzati nella **tabella Modelli visualizzabili.**
+   I modelli selezionati verranno visualizzati nella **tabella Modelli visualizzabili** .
 3. Selezionare **Salva**.
 
    I nuovi criteri di modello vengono visualizzati **nell'elenco Criteri** modelli.
@@ -71,7 +71,7 @@ Questo breve video illustra come gestire i criteri dei modelli.
 
 Gli utenti assegnati a un criterio potranno visualizzare solo i modelli visualizzabili all'interno di tale criterio.
 
-1. In **Criteri modelli** selezionare un criterio e quindi selezionare Gestisci **utenti.**
+1. In **Criteri modelli** selezionare un criterio e quindi **selezionare Gestisci utenti**.
 
 2. Digitare gli utenti da assegnare a questo criterio.
 

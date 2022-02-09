@@ -1,8 +1,8 @@
 ---
 title: Aggiungere database di archiviazione a una distribuzione esistente in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 f1.keywords:
@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 3b67df85-181d-45ca-ba48-bb74a439f242
 description: 'Riepilogo: leggere questo argomento per informazioni su come aggiungere database di archiviazione alla Skype for Business Server distribuzione.'
-ms.openlocfilehash: d9434ffaf2141ea176b99825571ad2a17d0d5601
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 3bc4e14998e45803518436bb180906e9c79e14f4
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60864473"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62401580"
 ---
 # <a name="add-archiving-databases-to-an-existing-deployment-in-skype-for-business-server"></a>Aggiungere database di archiviazione a una distribuzione esistente in Skype for Business Server
  
@@ -30,7 +30,7 @@ ms.locfileid: "60864473"
 - Pubblicare la topologia aggiornata per aggiungere il database di archiviazione alla Skype for Business Server distribuzione.
     
 > [!NOTE]
-> Se si desidera utilizzare l'integrazione di Microsoft Exchange per archiviare i dati e i file di archiviazione nei server Exchange per tutti gli utenti della distribuzione, non specificare Archivio **SQL Server** archiviazione o Usa informazioni di mirroring di **SQL Server Store.**
+> Se si desidera utilizzare l'integrazione di Microsoft Exchange per archiviare i dati e i file di archiviazione nei server Exchange per tutti gli utenti della distribuzione, non specificare Archivio **SQL Server** archiviazione o Usa informazioni di **mirroring di SQL Server Store**.
   
 ### <a name="add-an-archiving-database-to-your-topology"></a>Aggiungere un database di archiviazione alla topologia
 
@@ -48,9 +48,9 @@ ms.locfileid: "60864473"
     
 7. Selezionare la **casella di controllo** Archiviazione.
     
-8. In **Archivio SQL Server archiviazione eseguire** una delle operazioni seguenti:
+8. In **Archiviazione SQL Server archivio,** eseguire una delle operazioni seguenti:
     
-   - Per usare un archivio SQL Server esistente, nella casella di riepilogo a discesa fare clic sul nome dell'archivio SQL Server che si vuole usare. Se tutti gli utenti sono ospitati Microsoft Exchange Server 2013 o versioni successive, è possibile archiviare Skype for Business comunicazioni per tutti gli utenti in Exchange. In questo caso, non è necessario configurare SQL Server archivio.
+   - Per usare un archivio SQL Server esistente, nella casella di riepilogo a discesa fare clic sul nome dell'archivio SQL Server che si vuole usare. Se tutti gli utenti sono ospitati Microsoft Exchange Server 2013 o versioni successive, è possibile archiviare Skype for Business comunicazioni per tutti gli utenti in Exchange. In questo caso, non è necessario configurare l'SQL Server di archiviazione.
     
    - Per specificare un nuovo SQL Server store, fare clic su **Nuovo** e quindi nella finestra di dialogo Definisci nuovo **SQL Server Store** eseguire le operazioni seguenti:
     
@@ -58,11 +58,11 @@ ms.locfileid: "60864473"
     
    - Fare clic su **Istanza predefinita** per usare l'istanza predefinita oppure su **Istanza denominata** per specificare un'istanza diversa, quindi specificare l'istanza che si vuole usare.
     
-   - Se l'istanza SQL Server specificata si trova in una relazione di mirroring, selezionare la casella di controllo Questa istanza di **SQL è in** relazione di mirroring e quindi, in **Numero** porta mirror, specificare il numero di porta.
+   - Se l'istanza SQL Server specificata si trova in una relazione di mirroring, selezionare la casella di controllo Questa istanza di **SQL è in relazione di mirroring** e quindi, in **Numero** porta mirror, specificare il numero di porta.
     
-9. Se si desidera utilizzare il mirroring dell SQL Server store, selezionare **Abilita mirroring** SQL Server Store e quindi eseguire le operazioni seguenti:
+9. Se si desidera utilizzare il mirroring dell SQL Server store, selezionare **Abilita mirroring SQL Server Store** e quindi eseguire le operazioni seguenti:
     
-   - Per utilizzare un archivio SQL Server esistente per il mirroring, nella casella di riepilogo a discesa Mirror archivio **SQL Server** archiviazione fare clic sul nome dell'archivio SQL Server che si desidera utilizzare per il mirroring.
+   - Per utilizzare un archivio SQL Server esistente per il mirroring, nella casella di riepilogo **a** discesa Mirror archivio SQL Server archiviazione fare clic sul nome dell'archivio SQL Server che si desidera utilizzare per il mirroring.
     
    - Per specificare un nuovo archivio SQL Server per il mirroring, fare clic su **Nuovo** e quindi nella finestra di dialogo Definisci nuovo **SQL Server Store** eseguire una delle operazioni seguenti:
     
@@ -70,15 +70,15 @@ ms.locfileid: "60864473"
     
      b. Fare clic su **Istanza predefinita** per usare l'istanza predefinita oppure su **Istanza denominata** per specificare un'istanza diversa, quindi specificare l'istanza che si vuole usare.
     
-     c. Se l'istanza SQL Server specificata si trova in una relazione di mirroring, selezionare la casella di controllo Questa istanza di **SQL è in** relazione di mirroring e quindi, in **Numero** porta mirror, specificare il numero di porta.
+     c. Se l'istanza SQL Server specificata si trova in una relazione di mirroring, selezionare la casella di controllo Questa istanza di **SQL è in relazione di mirroring** e quindi, in **Numero** porta mirror, specificare il numero di porta.
     
-   - Se si abilita il mirroring SQL Server e si desidera includere un controllo del mirroring di SQL Server (una terza istanza di SQL Server separata in grado di rilevare l'integrità delle istanze SQL Server e mirror primarie), selezionare la casella di controllo Usa **controllo del mirroring** di SQL Server per abilitare il failover automatico e quindi eseguire una delle seguenti attività: e:
+   - Se si abilita il mirroring di SQL Server e si desidera includere un controllo del mirroring di SQL Server (una terza istanza di SQL Server separata in grado di rilevare l'integrità delle istanze SQL Server e mirror primarie), selezionare la casella di controllo Usa mirroring di SQL Server per abilitare il **failover automatico**  e quindi eseguire una delle operazioni seguenti:
     
      a. In **SQL Server FQDN** specificare il nome di dominio completo del server in cui si desidera creare il nuovo SQL Server di mirroring.
     
      b. Fare clic su **Istanza predefinita** per usare l'istanza predefinita oppure su **Istanza denominata** per specificare un'istanza diversa, quindi specificare l'istanza che si vuole usare per il controllo di mirroring.
     
-     c. Se l'istanza SQL Server specificata si trova in una relazione di mirroring, selezionare la casella di controllo Questa istanza di **SQL è in** relazione di mirroring e quindi, in **Numero** porta mirror, specificare il numero di porta.
+     c. Se l'istanza SQL Server specificata si trova in una relazione di mirroring, selezionare la casella di controllo Questa istanza di **SQL è in relazione di mirroring** e quindi, in **Numero** porta mirror, specificare il numero di porta.
     
 10. Per salvare la configurazione, fare clic su **OK**.
     
@@ -103,6 +103,6 @@ ms.locfileid: "60864473"
 6. Nella pagina **Pubblicazione guidata completata** verificare che la topologia sia stata pubblicata correttamente e quindi fare clic su **Fine**.
     
     > [!IMPORTANT]
-    > Dopo aver pubblicato la topologia, è necessario configurare le opzioni e i criteri per l'archiviazione, prima che sia possibile archiviare qualsiasi contenuto. Per informazioni dettagliate, vedere [Configure archiving options for Skype for Business Server](configure-archiving-options.md) e Configure archiving policies for [Skype for Business Server](configure-archiving-policies.md). 
+    > Dopo aver pubblicato la topologia, è necessario configurare le opzioni e i criteri per l'archiviazione, prima che sia possibile archiviare qualsiasi contenuto. Per informazioni dettagliate, vedere [Configure archiving options for Skype for Business Server](configure-archiving-options.md) e [Configure archiving policies for Skype for Business Server](configure-archiving-policies.md). 
   
 

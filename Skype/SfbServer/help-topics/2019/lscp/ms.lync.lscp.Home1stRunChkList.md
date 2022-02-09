@@ -1,8 +1,8 @@
 ---
 title: Elenco di controllo prima esecuzione per il Pannello di controllo di Skype for Business Server
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 4d0c7306-e87e-464a-82ad-a5537f141500
 ROBOTS: NOINDEX, NOFOLLOW
 description: Benvenuto nel Pannello Skype for Business Server, l'interfaccia utente basata sul Web per l'amministrazione e la gestione di Skype for Business Server. È possibile utilizzare il Pannello di controllo per eseguire i tipi di attività amministrative eseguite tramite Microsoft Management Console nelle versioni precedenti.
-ms.openlocfilehash: 370a16e901ca36de2143b1727ef84d9c68457e65
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 79a22646c3df3dd0e71fab28e76e0fa4b9701e2e
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837258"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62400630"
 ---
 # <a name="first-run-checklist-for-skype-for-business-server-control-panel"></a>Elenco di controllo prima esecuzione per il Pannello di controllo di Skype for Business Server
 
@@ -29,7 +29,7 @@ Benvenuto nel Pannello Skype for Business Server, l'interfaccia utente basata su
 È consigliabile eseguire una serie di attività importanti dopo aver distribuito Skype for Business Server. Alcune di queste attività sono passaggi di configurazione iniziale che potrebbero essere già stati eseguiti durante la distribuzione, mentre altre sono miglioramenti o modifiche di impostazioni configurate durante la distribuzione o impostazioni predefinite. Altre attività descritte in questo argomento consentono di convalidare le configurazioni effettuate durante il processo di distribuzione.
 
 > [!NOTE]
-> Prima di eseguire le attività nella tabella seguente, assicurarsi di accedere utilizzando i diritti utente, le autorizzazioni e il ruolo corretti, come descritto nella sezione "Ruoli e ambito" dell'argomento [Role-Based Access Control.](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-role-based-access-control)
+> Prima di eseguire le attività nella tabella seguente, assicurarsi di accedere utilizzando i diritti utente, le autorizzazioni e il ruolo corretti, come descritto nella sezione "Ruoli e ambito" dell'argomento [Role-Based Access Control](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-role-based-access-control) .
 
 ## <a name="first-run-checklist"></a>Elenco di controllo per la prima esecuzione
 

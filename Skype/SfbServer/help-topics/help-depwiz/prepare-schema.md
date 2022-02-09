@@ -1,8 +1,8 @@
 ---
 title: Preparare lo schema
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 2/8/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 337aa234-c5f3-4468-a047-2023848e942c
 description: Per preparare lo schema per Servizi di dominio Active Directory, eseguire il passaggio Preparare lo schema nella Skype for Business Server guidata. Fare clic su Esegui per avviare la preparazione dello schema. Il passaggio Prepare Schema consente di leggere i file di definizione dello schema forniti nella directory /Program Files/Microsoft Lync Server 2013/Deployment/Setup nel sistema in cui è in esecuzione la Distribuzione guidata. Questi file sono disponibili anche nel supporto di installazione nella directory Support/Schema. Nel corso del passaggio di preparazione dello schema, quest'ultimo verrà esteso e verrà segnalato lo stato del processo. Verrà inoltre notificato il completamento del processo. La schermata di riepilogo consentirà di visualizzare i registri del processo. Esaminare tali registri per accertarsi che la preparazione sia stata completata correttamente.
-ms.openlocfilehash: c4e1faa8a26fa74579d9c9177d2efbfda29fa40f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 162937b56a4acc91c3fef70712feb713547cd2e2
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60849049"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62402260"
 ---
 # <a name="prepare-schema"></a>Preparare lo schema
  
@@ -29,7 +29,7 @@ Per preparare lo schema per Servizi di dominio Active Directory, eseguire il pas
 > [!IMPORTANT]
 > Per estendere lo schema, è necessario essere connessi al dominio come membri del gruppo Schema Admins e del gruppo Enterprise Admins. 
   
-Vengono aggiunte classi e attributi per estendere lo schema di Servizi di dominio Active Directory per supportare Skype for Business Server server, servizio e oggetti utente della versione 2015. Prima di estendere lo schema, è consigliabile effettuare un backup dello stato del sistema per il controller di dominio con il ruolo master schema. Per informazioni dettagliate sul processo di backup per Windows Server 2008 R2 con SP1, vedere [https://go.microsoft.com/fwlink/p/?linkId=207198](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee849849(v=ws.10)) . Per Windows Server 2003 e Windows Server 2003 R2, vedere [https://go.microsoft.com/fwlink/p/?linkId=207199](/previous-versions/windows/it-pro/windows-server-2003/cc787254(v=ws.10)) .
+Vengono aggiunte classi e attributi per estendere lo schema di Servizi di dominio Active Directory per supportare Skype for Business Server oggetti server, servizio e utente di Active Directory 2015. Prima di estendere lo schema, è consigliabile effettuare un backup dello stato del sistema per il controller di dominio con il ruolo master schema. Per informazioni dettagliate sul processo di backup per Windows Server 2008 R2 con SP1, vedere [https://go.microsoft.com/fwlink/p/?linkId=207198](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee849849(v=ws.10)). Per Windows Server 2003 e Windows Server 2003 R2, vedere [https://go.microsoft.com/fwlink/p/?linkId=207199](/previous-versions/windows/it-pro/windows-server-2003/cc787254(v=ws.10)).
   
 > [!CAUTION]
 > L'estensione dello schema non è un'operazione reversibile. È consigliabile fare tutti gli sforzi possibili per limitare il potenziale impatto di un'estensione dello schema non riuscita e per garantire che l'estensione dello schema avrà esito positivo. Ciò è particolarmente importante in caso di perdita di comunicazione o di qualsiasi altro errore nel server. È consigliabile eseguire un backup del controller di dominio master schema e un backup completo di Active Directory. 

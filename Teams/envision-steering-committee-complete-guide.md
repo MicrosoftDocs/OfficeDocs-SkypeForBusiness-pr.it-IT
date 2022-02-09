@@ -1,7 +1,7 @@
 ---
 title: Comitato direttivo per la distribuzione vocale nel cloud
-author: HowlinWolf-92
-ms.author: v-mahoffman
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.date: 03/13/2018
 ms.topic: article
@@ -16,18 +16,18 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cd588928f71926981c42f7c909e00c544243279e
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: fb615c326b5d9cbf0fc293b96541f768e48947d8
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60858873"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62401660"
 ---
 # <a name="steering-committee"></a>Comitato direttivo
 
 ## <a name="steering-committee-overview"></a>Panoramica del comitato direttivo
 
-Un comitato direttivo è un gruppo direttivo di stakeholder e project leader chiave che sono stati riuniti per guidare un progetto o un programma verso i risultati aziendali definiti. Il comitato direttivo non è  direttamente responsabile del modo  in cui viene consegnato il progetto, ma piuttosto di ciò che il progetto fornisce all'azienda.
+Un comitato direttivo è un gruppo direttivo di stakeholder e project leader chiave che sono stati riuniti per guidare un progetto o un programma verso i risultati aziendali definiti. Il comitato direttivo non è direttamente responsabile del modo  in cui viene consegnato il progetto, ma piuttosto  di ciò che il progetto fornisce all'azienda.
 
 Ogni progetto richiede una visione e una carta concordate. Per ottenere i risultati desiderati, la visione deve essere definita in modo chiaro, deve essere monitorata e mantenuta. Questo diventa responsabilità del comitato direttivo: guidare le decisioni, consigliare, fornire supervisione strategica, fungere da sostenitori dell'organizzazione per le iniziative del progetto e, se necessario, rimuovere i blocchi.
 
@@ -128,7 +128,7 @@ Le risorse seguenti devono essere completate e incluse nella presentazione per l
 
         -   Identificare i passaggi successivi e l'assistenza che potrebbe essere richiesta ai membri del comitato.
 
--   Panoramica sulla qualità: usare le indicazioni [di Preparare la rete per Teams.](prepare-network.md)
+-   Panoramica sulla qualità: usare le indicazioni di [Preparare la rete per Teams](prepare-network.md).
 
     -   Prepararsi a spiegare i risultati di questi report qualitativi in modo approfondito e includere suggerimenti per correggere eventuali problemi noti.
 

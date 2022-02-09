@@ -1,8 +1,8 @@
 ---
 title: Selezionare le estensioni di file
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 3638cdc8-71dd-4a22-8613-83859af97387
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare la finestra di dialogo Seleziona estensioni tipo di file per specificare le estensioni dei tipi di file che si desidera bloccare o consentire rispettivamente selezionando o deselezionando le caselle di controllo accanto alle singole estensioni in Estensioni tipo di file. Fare clic sulla freccia per espandere una categoria e visualizzare tutte le relative estensioni. Per selezionare tutte le estensioni di una categoria, selezionare il nome della categoria.
-ms.openlocfilehash: 7b3ffb082890b9bf45e70d5f7bbf0ffd57396ed2
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 43f0c242fda0630577921fa2c6dfbf83ad56dc83
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60852640"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62400580"
 ---
 # <a name="select-file-type-extensions"></a>Selezionare estensioni del tipo di file
  

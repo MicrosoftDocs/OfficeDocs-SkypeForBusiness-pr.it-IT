@@ -1,8 +1,8 @@
 ---
 title: Aggiungere le funzionalità di Director
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,15 +15,15 @@ ms.localizationpriority: medium
 ms.assetid: 9c8b1c8e-5a3e-499b-9035-7d2f8e07b389
 ROBOTS: NOINDEX, NOFOLLOW
 description: Se si desidera che il pool di server Director includa Monitoring Server, selezionare Monitoraggio (cdR e metriche QoE).
-ms.openlocfilehash: f6f6cc6ea1add6d66c4d717f34970b6f4666744c
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: bfa152e06ea08a3127816289079bfdf49d5cca9f
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60829330"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62400941"
 ---
 # <a name="add-director-features"></a>Aggiungere le funzionalità di Director
 
-Se si desidera che il pool di server Director includa Monitoring Server, selezionare **Monitoraggio (cdR e metriche QoE).**
+Se si desidera che il pool di server Director includa Monitoring Server, selezionare **Monitoraggio (cdR e metriche QoE)**.
 
-Per ulteriori informazioni sull'aggiunta di un pool di server Director, vedere [Scenarios for the Director](/previous-versions/office/lync-server-2013/lync-server-2013-scenarios-for-the-director) e Setting Up the [Director](/previous-versions/office/lync-server-2013/lync-server-2013-setting-up-the-director).
+Per ulteriori informazioni sull'aggiunta di un pool di server Director, vedere [Scenarios for the Director](/previous-versions/office/lync-server-2013/lync-server-2013-scenarios-for-the-director) e [Setting Up the Director](/previous-versions/office/lync-server-2013/lync-server-2013-setting-up-the-director).

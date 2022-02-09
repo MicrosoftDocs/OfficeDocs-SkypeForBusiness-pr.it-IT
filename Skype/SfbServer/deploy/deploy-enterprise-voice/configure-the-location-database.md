@@ -1,8 +1,8 @@
 ---
 title: Configurare il database delle località in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fb84f5b6-c991-4893-bdbf-f195b4b7d28e
 description: Configurare, popolare e pubblicare il database delle località di E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 8cd4f10a383d279421af6f9152a31f637ee47474
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 5ebace7eabe0db04f06611bc9c11263021733367
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60851610"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62400720"
 ---
 # <a name="configure-the-location-database-in-skype-for-business-server"></a>Configurare il database delle località in Skype for Business Server
  
@@ -33,7 +33,7 @@ Per configurare il database delle località, eseguire le attività seguenti:
   
 - Popolare il database con il mapping degli elementi di rete ai percorsi. Se si utilizza un gateway ELIN (Emergency Location Identification Number), è necessario includere l'ELIN nel \<CompanyName\> campo.
     
-    Se non si popola il database  delle località e la posizione richiesta nei criteri percorso è impostata su **Sì** o Dichiarazione di non **responsabilità,** il client chiederà all'utente di immettere manualmente una posizione.
+    Se non si popola il database delle località e la posizione necessaria  nei criteri percorso è impostata su **Sì** o Dichiarazione di non **responsabilità, il** client chiederà all'utente di immettere manualmente una posizione.
     
 - Convalidare gli indirizzi in base allo stradario generale gestito dal provider di servizi di emergenza.
     
@@ -94,7 +94,7 @@ Se si utilizza un gateway ELIN (Emergency Location Identification Number), inclu
    Set-CsLisSwitch -ChassisID 0B-23-CD-16-AA-BB -Description "Switch1" -Location Location1 -CompanyName "Litware" -HouseNumber 1234 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Redmond -State WA -PostalCode 99123 -Country US
    ```
 
-   In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "switches.csv" per aggiornare in blocco le posizioni dei commutatore.
+   In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "switches.csv" per aggiornare in blocco i percorsi dei commutatore.
     
    ```powershell
    $g = Import-Csv switches.csv
@@ -120,7 +120,7 @@ Se si utilizza un gateway ELIN (Emergency Location Identification Number), inclu
 
 ### <a name="to-validate-addresses-located-in-the-location-database"></a>Per convalidare gli indirizzi presenti nel database delle posizioni
 
-1.  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1.  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 2. Eseguire i seguenti cmdlet per configurare la connessione del provider dei servizi di emergenza.
     
@@ -145,7 +145,7 @@ Se si utilizzano gateway ELIN (Emergency Location Identification Number), è nec
   
 ### <a name="to-publish-the-location-database"></a>Per pubblicare il database delle posizioni
 
--  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+-  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start****, scegliere** Tutti i programmi, **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell**.
     
 - Per pubblicare il database delle posizioni, eseguire il cmdlet seguente.
     

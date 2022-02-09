@@ -1,8 +1,8 @@
 ---
 title: Installare o rimuovere componenti di Skype for Business Server (Invoke)
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 1925db10-223e-4213-84cc-1de933878b28
 description: Nella pagina Comandi di esecuzione viene visualizzato un riepilogo delle attività eseguite per distribuire il ruolo del server. Al termine delle attività, viene visualizzato un riepilogo della distribuzione e dell'attivazione oppure la disattivazione e la disinstallazione. Nell'elenco a discesa inoltre è possibile selezionare uno qualsiasi dei file di registro creati durante l'esecuzione dei comandi. Utilizzare tale elenco a discesa per selezionare il file di registro che si desidera visualizzare e fare clic su Visualizza registro.
-ms.openlocfilehash: 6181f684b64cbb4d87d6be0e980f8a6fa1120ea4
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: fd8f92ab75a827f4c2a1d1a3bffc4096f2e7a23a
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60864983"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62401380"
 ---
 # <a name="setup-or-remove-skype-for-business-server-components-invoke"></a>Installare o rimuovere componenti di Skype for Business Server (Invoke)
  

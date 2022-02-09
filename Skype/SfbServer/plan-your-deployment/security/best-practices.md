@@ -1,8 +1,8 @@
 ---
 title: Procedure consigliate per l'infrastruttura di base in Skype for Business Server
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: conceptual
@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 44aff88d-536c-4613-a81e-5398c9c6a648
 description: È probabile che siano già state intraprese azioni per progettare la tolleranza di errore nel sistema, ad esempio garantendo la ridondanza hardware, prendendo precauzioni in caso di interruzioni dell'alimentazione, installando con regolarità gli aggiornamenti antivirus e della sicurezza e monitorando l'attività dei server. Queste procedure sono vantaggiose non solo dell'Skype for Business Server aziendale, ma anche dell'intera rete. Se queste procedure non sono state implementate, è consigliabile farlo prima di distribuire Skype for Business Server.
-ms.openlocfilehash: 352541cf2dfa91eef24f09c4aebd2788c589a10f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 3cd9afbba6014536d146454144456edc91fbf9c0
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60860943"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62400237"
 ---
 # <a name="best-practices-for-your-core-infrastructure-in-skype-for-business-server"></a>Procedure consigliate per l'infrastruttura di base in Skype for Business Server
  
@@ -25,7 +25,7 @@ ms.locfileid: "60860943"
   
 Per proteggere i server della distribuzione Skype for Business Server da danni accidentali o intenzionali che potrebbero causare tempi di inattività, adottare le precauzioni seguenti:
   
-- Installare con regolarità gli aggiornamenti della sicurezza nei server. Sottoscrivendo il servizio Microsoft Security Notification Service, è possibile ricevere una notifica immediata ogni volta che vengono pubblicati bollettini sulla sicurezza per i prodotti Microsoft. Per sottoscrivere, accedere al sito [Web Microsoft Technical Security Notifications](https://go.microsoft.com/fwlink/p/?LinkId=145202).
+- Installare con regolarità gli aggiornamenti della sicurezza nei server. Sottoscrivendo il servizio Microsoft Security Notification Service, è possibile ricevere una notifica immediata ogni volta che vengono pubblicati bollettini sulla sicurezza per i prodotti Microsoft. Per sottoscrivere, accedere al sito [Web Notifiche di sicurezza tecnica Microsoft](https://go.microsoft.com/fwlink/p/?LinkId=145202).
     
 - Verificare che i diritti di accesso siano configurati correttamente.
     

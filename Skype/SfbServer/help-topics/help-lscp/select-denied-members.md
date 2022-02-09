@@ -1,8 +1,8 @@
 ---
 title: Selezionare membri non consentiti
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/24/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: c626b6b4-15f3-4a59-bb1d-55dc8c60f5cb
 description: Un amministratore di Persistent Chat può creare e gestire categorie di chat room. Come parte della creazione e della gestione delle categorie di chat room, un amministratore di Persistent Chat può configurare entità (gruppi/contenitori/utenti di Servizi di dominio Active Directory) che hanno accesso per essere membri/creatori di chat room di una determinata categoria. Un amministratore di Persistent Chat può anche aggiungere DeniedMembers a una categoria e questi diventano esclusioni esplicite all'elenco di elementi consentiti. DeniedMembers esegue l'override di ciò che è in AllowedMembers.
-ms.openlocfilehash: 283c358d6b0eab79f667ec7ca17dc9eca3977586
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: a03c0291bf69f1ffc099233218bc8e5c418b8c00
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60837958"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62400390"
 ---
 # <a name="select-denied-members"></a>Selezionare membri non consentiti
 
@@ -34,11 +34,11 @@ Nella pagina **Seleziona membri non consentiti** è possibile eseguire le attivi
 
 - [Nuove caratteristiche del server chat persistente](/previous-versions/office/lync-server-2013/lync-server-2013-new-persistent-chat-server-features)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015](../../manage/manage.md).
 
 ## <a name="to-configure-categories-for-chat-rooms"></a>Per configurare le categorie delle chat room
 
-In **Appartenenza**, nella **sezione Membri** negati aggiungere o rimuovere utenti e altre entità di Active Directory associate ai membri negati dalla chat room.
+In **Appartenenza**, nella **sezione Membri** negati, aggiungere o rimuovere utenti e altre entità di Active Directory associate ai membri negati dalla chat room.
 
 
 Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere [Overview of Persistent Chat Server](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-persistent-chat-server) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo delle configurazioni del server Chat persistente, vedere [Configuring Persistent Chat Server](/previous-versions/office/lync-server-2013/lync-server-2013-configuring-persistent-chat-server) nella documentazione relativa alla distribuzione e [Managing Lync Server 2013, Persistent Chat Server](/previous-versions/office/lync-server-2013/managing-lync-server-2013-persistent-chat-server) nella documentazione relativa alle operazioni.

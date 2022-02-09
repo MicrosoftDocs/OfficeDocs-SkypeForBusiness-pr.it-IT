@@ -1,8 +1,8 @@
 ---
 title: Configurazione versione client
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 11/17/2018
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: cb17314e-b89e-4821-8855-12f8fd2edc9b
 description: Oltre a specificare la versione dei client che si desidera supportare nell'ambiente, è possibile specificare un'azione predefinita per i client per i quali non sono già stati definiti criteri delle versioni. In questo modo, è possibile limitare le versioni client usate nell'ambiente e ciò può contribuire a tenere sotto controllo i costi associati al supporto di più versioni client.
-ms.openlocfilehash: 8a4d9b4212e2e8aeac7a9bfacb4b13dc413146d9
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 018b138c54dcc5d9d9fde68342f71e40b06494d7
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60842108"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62401370"
 ---
 # <a name="client-version-configuration"></a>Configurazione versione client
 
@@ -30,7 +30,7 @@ Oltre a specificare la versione dei client che si desidera supportare nell'ambie
 
 Nella pagina **Configurazione versione client** è possibile eseguire le attività seguenti:
 
-- Modificare la configurazione predefinita ( **Globale**) della versione client.
+- Modificare la configurazione predefinita ( **globale**) della versione client.
 
 - Creare una configurazione della versione client per un sito specifico.
 

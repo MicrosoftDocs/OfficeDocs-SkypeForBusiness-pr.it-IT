@@ -1,7 +1,7 @@
 ---
 title: Restrizioni di composizione a numero verde in Svizzera
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.reviewer: davlick, krkilaru
 ms.topic: reference
@@ -22,16 +22,16 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come comporre numeri a numero verde in ogni paese/area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli specifici, restrizioni e limiti per la disponibilità di servizi gratuiti in cui è disponibile il servizio a pagamento. Il formato o i formati di composizione mostrano i codici di accesso necessari in ogni paese o area geografica per comporre il numero verde.
-ms.openlocfilehash: acde0d4fbee924755792c70243412a878a7b3917
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 1de9d614a214727319d11a0540b44977ab9951c7
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60840668"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62400800"
 ---
 # <a name="toll-free-dialing-restrictions-in-switzerland"></a>Restrizioni di composizione a numero verde in Svizzera
 
-[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o altre informazioni sulle limitazioni e le restrizioni di composizione a numero verde.
+[Trova un altro paese o area geografica](../toll-free-dialing-limitations-and-restrictions.md) o scopri di più sulle limitazioni e le restrizioni di composizione a numero verde.
 
 
 |**Dettagli**|**Descrizione**|

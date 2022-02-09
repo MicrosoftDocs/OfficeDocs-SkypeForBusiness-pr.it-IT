@@ -1,8 +1,8 @@
 ---
 title: Richiedere, installare o assegnare certificati
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.date: 3/26/2015
 audience: ITPro
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 332ec40f-78be-440a-8c1d-ada6114897db
 description: "In Passaggio 3: richiedere, installare o assegnare certificati è possibile avviare la Configurazione guidata certificati facendo clic su Esegui. I certificati configurati tramite la procedura guidata si basano sulla definizione della topologia di Skype for Business Server 2015 configurata e pubblicata da Generatore di topologie nell'archivio di gestione centrale. Per eseguire correttamente la Configurazione guidata certificati per un'Autorità di certificazione (CA) online nell'organizzazione, è necessario essere connessi al computer come utenti membri del gruppo Administrators locale del computer stesso. È inoltre necessario essere utenti autenticati nel dominio in cui si trovano il computer e la CA. La procedura guidata per il certificato consente di specificare credenziali alternative per l'accesso all'autorità di certificazione dell'organizzazione."
-ms.openlocfilehash: b9a4f5fb5fbb4fe816f9bf141d70ab8d5cfc820f
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: b535f1070ce240b63d69c2cceb54f15a9b92a9e8
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60850129"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62401390"
 ---
 # <a name="request-install-or-assign-certificates"></a>Richiedere, installare o assegnare certificati
  

@@ -1,8 +1,8 @@
 ---
 title: Response Groups Group
 ms.reviewer: ''
-ms.author: v-mahoffman
-author: HowlinWolf-92
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -15,22 +15,22 @@ ms.localizationpriority: medium
 ms.assetid: b8bd4c3f-3d32-42b2-9712-2d0f159577d8
 ROBOTS: NOINDEX, NOFOLLOW
 description: I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. Un gruppo di agenti è un gruppo di persone designate a rispondere alle chiamate di Response Group.
-ms.openlocfilehash: 276bdd91edc34e20b47429ae9364c5068ddb8ce5
-ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+ms.openlocfilehash: 52184e7a3c9d95d8aa7d2121ebe5741047d81374
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/08/2021
-ms.locfileid: "60840438"
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62401070"
 ---
 # <a name="response-groups-group"></a>Response Group: gruppo
 
 I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. Un gruppo di agenti è un gruppo di persone designate a rispondere alle chiamate di Response Group.
 
-Nella **pagina Response Group** Group viene visualizzato un elenco di tutti i gruppi di agenti definiti per  -   l'organizzazione.
+Nella **pagina Response GroupGroup** -  viene visualizzato un elenco di tutti i gruppi di agenti definiti per l'organizzazione.
 
 ## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
 
-Nella pagina **Response Group** Group è possibile eseguire le attività  -   seguenti:
+È possibile eseguire le attività seguenti dalla **pagina Response GroupGroup** - :
 
 - Creare un nuovo gruppo di agenti
 
