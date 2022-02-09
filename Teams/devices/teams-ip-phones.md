@@ -8,26 +8,31 @@ ms.topic: article
 ms.tgt.pltfrm: lync
 ms.service: msteams
 ms.collection:
-  - M365-voice
+- M365-voice
 audience: Admin
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - Skype for Business Certification
-  - dn947482
-  - seo-marvel-apr2020
+- Skype for Business Certification
+- dn947482
+- seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
+ms.openlocfilehash: 83acdef043e972a23a7166b33bd0772d94d62773
+ms.sourcegitcommit: 79dfda39db208cf943d0f7b4906883bb9d034281
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62457246"
 ---
-
 # <a name="microsoft-teams-certified-devices"></a>Microsoft Teams dispositivi certificati
 
-I Microsoft Teams di certificazione assicurano che i clienti che usano telefoni da tavolo certificati e telefoni da conferenza sperimenteranno un'esperienza di audiochiamate e riunioni di alta qualità.
+I Microsoft Teams di certificazione garantiscono che i clienti che usano telefoni da tavolo certificati e telefoni da conferenza sperimentino un'esperienza di audiochiamate e riunioni di alta qualità.
 
-Microsoft Teams di certificazione assicurano una barra di qualità superiore con obiettivi di prestazioni superiori e metriche sulla qualità audio. I partner stanno lavorando attivamente per soddisfare questa barra superiore e stanno qualificando i dispositivi in base ai requisiti di certificazione. Alcuni dei nostri partner stanno anche lavorando per fornire supporto per il servizio Skype for Business sullo stesso hardware dei telefoni Teams telefoni. 
+Microsoft Teams di certificazione assicurano una barra di qualità superiore con obiettivi di prestazioni superiori e metriche sulla qualità audio. I partner stanno lavorando attivamente per soddisfare questa barra superiore e stanno qualificando i dispositivi in base ai requisiti di certificazione. Alcuni dei nostri partner stanno anche lavorando per fornire supporto per il servizio di Skype for Business sullo stesso hardware dei telefoni Teams telefoni. 
 
 
 ## <a name="currently-certified-teams-phones"></a>Telefoni Teams certificati
@@ -76,7 +81,7 @@ I dispositivi seguenti sono certificati nell'Microsoft Teams Rooms di certificaz
 | Poly TC8                | `3.3.2.210441`     | 5 agosto 2023 | Compatibile con Poly Studio X30 e Poly Studio X50 | 8.1 |  9  |
 | Yealink VC210           | `118.15.0.14`      | 5 agosto 2023 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |  9  |
 
-## <a name="currently-certified-teams-displays"></a>Display Teams certificati
+## <a name="currently-certified-teams-displays"></a>Schermi Teams certificati
 
 I dispositivi seguenti sono certificati nell'Microsoft Teams visualizza il programma di certificazione Android:
 
@@ -85,7 +90,7 @@ I dispositivi seguenti sono certificati nell'Microsoft Teams visualizza il progr
 |Visualizzazione ThinkSmart di Lenovo|`CD-18781Y.201006.099`| 5 dicembre 2022 |  8.1  |
 
 ## <a name="currently-certified-teams-panels"></a>Pannelli Teams certificati
-I dispositivi seguenti sono certificati nell'Microsoft Teams di certificazione dei Microsoft Teams:
+I dispositivi seguenti sono certificati nel Microsoft Teams del programma di certificazione:
 
 | Modello di dispositivo| Versione firmware | Data di fine certificazione | Versione del sistema operativo Android |                                         
 |:------------------------|:-----------------|:--------------|-----------------------|
@@ -100,14 +105,16 @@ Di seguito sono riportate le versioni più recenti Teams dell'app per telefono e
 
 #### <a name="app-versions"></a>Versioni delle app
 
-| Rilascio del prodotto | Data di rilascio  | Microsoft Teams'app | Portale aziendale versione | Versione dell'agente di amministrazione |
+| Rilascio del prodotto | Data di rilascio  | Microsoft Teams dell'app | Portale aziendale versione | Versione dell'agente di amministrazione |
 |:----------------|:--------------|:----------------------------|:-----------------------|:--------------------|
+| Aggiornamento 2022 #1   | 7 febbraio 2022   |  1449/1.0.94.2022011305 |5.0.5304.0 | 322 |
+| Aggiornamento #1B 2022  | 7 febbraio 2022   |  1449/1.0.94.2022020202 |5.0.5304.0 | 322 |
 | Aggiornamento #3B 2021 | 6 dicembre 2021   | `1449/1.0.94.2021112302 ` | `5.0.5304.0` | `298` |
-| Aggiornamento 2021 #3A | 22 novembre 2021   | `1449/1.0.94.2021110101 ` | `5.0.5304.0` | `298` |
+| Aggiornamento #3A 2021 | 22 novembre 2021   | `1449/1.0.94.2021110101 ` | `5.0.5304.0` | `298` |
 | Aggiornamento 2021 #3  | 3 novembre 2021   | `1449/1.0.94.2021101205` | `5.0.5304.0` | `298` |
-| Aggiornamento #2A 2021 | 10 giugno 2021  |`1449/1.0.94.2021052803`|  `5.0.5088.0` |  `1.0.0.202103160138.product (256)` |
+| Aggiornamento 2021 #2A | 10 giugno 2021  |`1449/1.0.94.2021052803`|  `5.0.5088.0` |  `1.0.0.202103160138.product (256)` |
 | Aggiornamento 2021 #2  | 8 giugno 2021  |`1449/1.0.94.2021051303`|  `5.0.5088.0` |  `1.0.0.202103160138.product (256)` |
-| Aggiornamento 2021 #1A | 5 aprile 2021  |`1449/1.0.94.2021033002`|  `5.0.5045.0` |  `1.0.0.202101280722.product (253)` |
+| Aggiornamento #1A 2021 | 5 aprile 2021  |`1449/1.0.94.2021033002`|  `5.0.5045.0` |  `1.0.0.202101280722.product (253)` |
 | Aggiornamento 2021 #1  | 26 marzo 2021  |`1449/1.0.94.2021022403` |  `5.0.5045.0` |  `1.0.0.202101280722.product (253)` |
 | Aggiornamento 2020 #7  | 8 dicembre 2020  |`1449/1.0.94.2020111101` | `5.0.4927.0`  | `1.0.0.202010121132.product (223) `|
 | Aggiornamento 2020 #6  | 12 ottobre 2020  |`1449/1.0.94.2020091801`     | `5.0.4912.0` | `1.0.0.202006290446.product(216)` |
@@ -119,10 +126,24 @@ Di seguito sono riportate le versioni più recenti Teams dell'app per telefono e
 
 Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni installate corrispondenti dell'app Microsoft Teams, del Portale aziendale e dell'agente di amministrazione. Trovare la versione del prodotto nella **colonna Rilascio** prodotto incluso e quindi cercare il rilascio del prodotto nella tabella delle versioni **delle app** precedente.
 
-| Modello di dispositivo        | Versione firmware     | Rilascio del prodotto incluso  |
-|:--------------------|:---------------------|:-------------------------|
-| Poly Trio C60   | `7.1.4.0201`  | Aggiornamento #3B 2021                        |
-| Poly CCX400/CCX500/CCX600   | `7.1.4.0200`  | Aggiornamento #3B 2021                 |
+| Modello di dispositivo  | Versione firmware  | Rilascio del prodotto incluso  |
+|:----------------|:--------------|:----------------------------|
+|Poly Trio C60   | `7.2.1.1712`  | Aggiornamento 2022 #1   |
+|Poly CCX400/CCX500/CCX600   | `7.2.1.1707`  | Aggiornamento 2022 #1  |
+|Audiocode C448HD  | `1.14.500` | Aggiornamento 2022 #1 |
+|Audiocodice C450HD  | `1.14.500` | Aggiornamento 2022 #1  |
+|Audiocode C470HD  | `1.14.500` | Aggiornamento 2022 #1   |
+|Audiocode C435HD  | `1.14.500` | Aggiornamento 2022 #1  |
+|Yealink T55/T56/T58   | `58.15.0.153`  | Aggiornamento 2022 #1 |
+|Yealink MP54/MP56/MP58   | `122.15.0.77`     | Aggiornamento 2022 #1  |
+| Yealink VP59   | `91.15.0.87`  | Aggiornamento 2022 #1     |
+| Yealink CP960  | `73.15.0.150`  | Aggiornamento 2022 #1         |
+| Yealink MP52 | `145.15.0.25`  | Aggiornamento 2022 #1         |
+| Poly Trio C60   | `7.1.4.0201`  | Aggiornamento 2021 #3B                        |
+| Poly CCX400/CCX500/CCX600   | `7.1.4.0200`  | Aggiornamento 2021 #3B                 |
+|Audiocode C448HD  | `1.14.449` | Aggiornamento 2021 #3  |
+|Audiocodice C450HD  | `1.14.449` | Aggiornamento 2021 #3  |
+|Audiocode C470HD  | `1.14.449` | Aggiornamento 2021 #3  |
 |Audiocode C448HD  | `C448HD_TEAMS_1.14.449` | Aggiornamento 2021 #3  |
 |Audiocodice C450HD  | `C450HD_TEAMS_1.14.449` | Aggiornamento 2021 #3  |
 |Audiocode C470HD  | `C470HD_TEAMS_1.14.449` | Aggiornamento 2021 #3  |
@@ -133,26 +154,26 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 |Yealink MP54/MP56/MP58   | `122.15.0.60`     | Aggiornamento 2021 #3  |
 |Yealink VP59             | `91.15.0.77`      | Aggiornamento 2021 #3  |
 |Yealink CP960            | `73.15.0.139`     | Aggiornamento 2021 #3  |
-| Poly Trio C60   | `7.0.3.0517`  | Aggiornamento 2021 #2                        |
+| Poly Trio C60           | `7.0.3.0517`      | Aggiornamento 2021 #2      |
 | Poly CCX400/CCX500/CCX600   | `7.0.3.0515` | Aggiornamento 2021 #2                     |
 | Codici audio C448HD/C450HD/C470HD   | `1.10.143`  | Aggiornamento 2021 #2           |
 | Yealink T55/T56/T58   | `58.15.0.131`  | Aggiornamento 2021 #2                       |
 | Yealink VP59   | `91.15.0.63`  | Aggiornamento 2021 #2                               |
-| Yealink CP960  |`73.15.0.126`  | Aggiornamento 2021 #2                               |
-| Yealink MP56/MP54/MP58  |`122.15.0.44` | Aggiornamento 2021 #2                       |
-| Crestron UC-2  |`1.0.3.66` | Aggiornamento 2021 #2 |
+| Yealink CP960  | `73.15.0.126`  | Aggiornamento 2021 #2                               |
+| Yealink MP56/MP54/MP58  | `122.15.0.44` | Aggiornamento 2021 #2                       |
+| Crestron UC-2  | `1.0.3.66` | Aggiornamento 2021 #2 |
 | Poly Trio C60   | `7.0.2.1071`  | Aggiornamento 2021 #1                        |
 | Poly CCX400/CCX500/CCX600   | `7.0.2.1072`  | Aggiornamento 2021 #1                 |
 | Codici audio C448HD/C450HD/C470HD   | `1.10.120`  | Aggiornamento 2021 #1       |
 | Yealink T55/T56/T58   | `58.15.0.124`  | Aggiornamento 2021 #1                      |
 | Yealink VP59   | `91.15.0.58`  | Aggiornamento 2021 #1                              |
-| Yealink CP960  |`73.15.0.117`  | Aggiornamento 2021 #1                              |
-| Yealink MP56/MP54/MP58  |`122.15.0.36`  | Aggiornamento 2021 #1                     |
-| Crestron UC-2  |`1.0.3.52` | Aggiornamento 2021 #1 |
+| Yealink CP960  | `73.15.0.117`  | Aggiornamento 2021 #1                              |
+| Yealink MP56/MP54/MP58  | `122.15.0.36`  | Aggiornamento 2021 #1                     |
+| Crestron UC-2  | `1.0.3.52` | Aggiornamento 2021 #1 |
 | AudioCodes C448HD   | `C450HD_TEAMS_1.8.288`  | Aggiornamento 2020 #7           |
 | AudioCodes C450HD   | `C450HD_TEAMS_1.8.288`  | Aggiornamento 2020 #7           |
 | Crestron UC-2       | `1.0.2.53`              | Aggiornamento 2020 #7            |
-| Visualizzazione ThinkSmart di Lenovo|`CD-18781Y.200922.098` | Aggiornamento 2020 #6           |
+| Visualizzazione ThinkSmart di Lenovo| `CD-18781Y.200922.098` | Aggiornamento 2020 #6           |
 | Poly CCX400         | `6.2.23.0202`       | Aggiornamento 2020 #7           |
 | Poly CCX500/CCX600  | `6.2.23.0202`         | Aggiornamento 2020 #7          |
 | Poly Trio C60       | `6.2.23.0202`          | Aggiornamento 2020 #7          |
@@ -161,7 +182,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 | Yealink VP59        | `91.15.0.54`         | Aggiornamento 2020 #7           |
 | Yealink CP960       | `73.15.0.115`      | Aggiornamento 2020 #7           |
 
-Per [informazioni sulle funzionalità supportate](phones-for-teams.md) da questi dispositivi, vedere Microsoft Teams set di funzionalità dei telefoni.
+Per [informazioni sulle funzionalità supportate da questi dispositivi, vedere Microsoft Teams set](phones-for-teams.md) di funzionalità dei telefoni cellulari.
 
 Vedere [Microsoft Teams display](teams-displays.md).
 
@@ -175,7 +196,7 @@ Di seguito sono riportate le versioni più Teams Rooms versioni del firmware e d
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
 | Aggiornamento #2A 2021 | 15 luglio 2021  |`1449/1.0.96.2021070803`|  `5.0.5088.0` |  `1.0.0.202104280345.product version code: 262` |
 | Aggiornamento 2021 #2 | 28 giugno 2021  |`1449/1.0.96.2021051904`|  `5.0.5088.0` |  `1.0.0.202104280345.product version code: 262` |
-| Aggiornamento 2021 #1A  |12 maggio 2021  |`1449/1.0.96.2021042903` |`5.0.4927.0`     |`1.0.0.202010121132.product version code: 223` |
+| Aggiornamento #1A 2021  |12 maggio 2021  |`1449/1.0.96.2021042903` |`5.0.4927.0`     |`1.0.0.202010121132.product version code: 223` |
 | Aggiornamento 2021 #1  |5 aprile 2021  |`1449/1.0.96.2021032002`  |`5.0.4927.0`     |`1.0.0.202010121132.product version code: 223` |
 | Aggiornamento 2020 #3  |24 novembre 2020  |`1449/1.0.94.2020102101`  |`5.0.4927.0`     |`1.0.0.202006290446.product version code: 216` |
 | Aggiornamento 2020 #2  | 24 agosto 2020| `1449/1.0.94.2020062501`    | `5.0.4771.0`    | `1.0.0.202005060552.product version code: 212`|
@@ -183,12 +204,12 @@ Di seguito sono riportate le versioni più Teams Rooms versioni del firmware e d
 
 #### <a name="firmware-versions"></a>Versioni firmware
 
-Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni corrispondenti dell'app Microsoft Teams, del Portale aziendale e dell'agente di amministrazione, installate trovando la versione del prodotto nella colonna Rilascio prodotto **incluso.** Cercare quindi la versione del prodotto nella **tabella versioni delle app** riportata sopra.
+Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni corrispondenti dell'app Microsoft Teams, del Portale aziendale e dell'agente di amministrazione installate individuando la versione del prodotto nella colonna Rilascio prodotto **incluso.** Cercare quindi la versione del prodotto nella **tabella versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Rilascio del prodotto incluso |
 |:--------------|:-----------------|:-------------------------|
-| Poly Studio X30 | `3.9.0`          | Aggiornamento #2F 2021   |
-| Poly Studio X50 | `3.9.0`          | Aggiornamento #2F 2021   |
+| Poly Studio X30 | `3.9.0` | Aggiornamento #2F 2021   |
+| Poly Studio X50 | `3.9.0` | Aggiornamento #2F 2021   |
 | Poly TC8        | `3.9.0`          | Aggiornamento #2F 2021   |
 | Poly Studio X30 | `3.8.0`          | Aggiornamento 2021 #2    |
 | Poly Studio X50 | `3.8.0`          | Aggiornamento 2021 #2    |
@@ -196,9 +217,9 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 | Poly Studio X30 | `3.7.0`          | Aggiornamento #2A 2021    |
 | Poly Studio X50 | `3.7.0`          | Aggiornamento #2A 2021    |
 | Poly TC8        | `3.7.0`          | Aggiornamento #2A 2021    |
-| Poly Studio X30 | `3.6.0.350035`          | Aggiornamento #2A 2021    |
-| Poly Studio X50 | `3.6.0.350035`        | Aggiornamento #2A 2021    |
-| Poly TC8 | `3.6.0.210534`              | Aggiornamento #2A 2021    |
+| Poly Studio X30 | `3.6.0.350035`  | Aggiornamento #2A 2021    |
+| Poly Studio X50 | `3.6.0.350035`  | Aggiornamento #2A 2021    |
+| Poly TC8 | `3.6.0.210534`  | Aggiornamento #2A 2021    |
 | EPOS EXPAND Vision 3T |`1.2.2.21182.10`   | Aggiornamento 2021 #2 |
 | AudioCodes RXV80 |`1.13.361`   | Aggiornamento 2021 #2 |
 | Yealink VC210 |`118.15.0.54`   | Aggiornamento 2021 #2    |
@@ -225,7 +246,7 @@ Di seguito sono riportate le versioni più recenti Microsoft Teams versioni dell
 
 #### <a name="app-versions"></a>Versioni delle app
 
-|Rilascio del prodotto| Data di rilascio | Microsoft Teams'app | Portale aziendale versione | Versione dell'agente di amministrazione |
+|Rilascio del prodotto| Data di rilascio | Microsoft Teams dell'app | Portale aziendale versione | Versione dell'agente di amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
 |Aggiornamento 2021 #4  |5 gennaio 2022 |`1449/1.0.95.2021736401`    |`5.0.5304.0`            |  `1.0.0.202110130735.product (298)`
 |Aggiornamento 2021 #3  |8 dicembre 2021 |`1449/1.0.95.2021111203`    |`5.0.5304.0`            |  `1.0.0.202110130735.product (298)`|
@@ -235,7 +256,7 @@ Di seguito sono riportate le versioni più recenti Microsoft Teams versioni dell
 
 #### <a name="firmware-versions"></a>Versioni firmware
 
-Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni corrispondenti dell'app Microsoft Teams, del Portale aziendale e dell'agente di amministrazione, installate trovando la versione del prodotto nella colonna Rilascio prodotto **incluso.** Cercare quindi la versione del prodotto nella **tabella versioni delle app** riportata sopra.
+Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni corrispondenti dell'app Microsoft Teams, del Portale aziendale e dell'agente di amministrazione installate individuando la versione del prodotto nella colonna Rilascio prodotto **incluso.** Cercare quindi la versione del prodotto nella **tabella versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Rilascio del prodotto incluso|
 |:--------------|:-----------------|:-------------------------|
@@ -249,13 +270,13 @@ Di seguito sono riportate le versioni più recenti Microsoft Teams dell'app Pane
 
 #### <a name="app-versions"></a>Versioni delle app
 
-|Rilascio del prodotto| Data di rilascio | Microsoft Teams'app | Portale aziendale versione | Versione dell'agente di amministrazione |
+|Rilascio del prodotto| Data di rilascio | Microsoft Teams dell'app | Portale aziendale versione | Versione dell'agente di amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
 |Aggiornamento 2021 #1  |12 agosto 2021 |`1449/1.0.97.2021070601`|`5.0.5211.0`            |  `268`|
 
 #### <a name="firmware-versions"></a>Versioni firmware
 
-Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni corrispondenti dell'app Microsoft Teams, del Portale aziendale e dell'agente di amministrazione, installate trovando la versione del prodotto nella colonna Rilascio prodotto **incluso.** Cercare quindi la versione del prodotto nella **tabella versioni delle app** riportata sopra.
+Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni corrispondenti dell'app Microsoft Teams, del Portale aziendale e dell'agente di amministrazione installate individuando la versione del prodotto nella colonna Rilascio prodotto **incluso.** Cercare quindi la versione del prodotto nella **tabella versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Rilascio del prodotto incluso|
 |:--------------|:-----------------|:-------------------------|
@@ -268,11 +289,11 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 ## <a name="more-resources"></a>Altre risorse
 
-Per [informazioni sulle funzionalità supportate](phones-for-teams.md) da questi dispositivi, vedere Microsoft Teams set di funzionalità dei telefoni.
+Per [informazioni sulle funzionalità supportate da](phones-for-teams.md) questi dispositivi, vedere Microsoft Teams set di funzionalità dei telefoni.
 
 Vedere [Trovare la versione firmware in un dispositivo mobile](phones-for-teams.md) per determinare la versione del firmware del dispositivo nel dispositivo mobile.
 
-Microsoft Teams licenze possono essere acquistate come parte di Microsoft 365 [o Office 365 abbonamenti](/office365/servicedescriptions/teams-service-description). Per altre informazioni sulle licenze necessarie per l'uso di Microsoft Teams telefoni, vedere Licenze di sistema [telefonico disponibili](https://products.office.com/microsoft-teams/voice-calling).
+Microsoft Teams licenze possono essere acquistate come parte di Microsoft 365 [o Office 365 abbonamenti](/office365/servicedescriptions/teams-service-description). Per altre informazioni sulle licenze necessarie per l'uso Microsoft Teams telefoni, vedere Licenze [di sistema telefonico disponibili](https://products.office.com/microsoft-teams/voice-calling).
 
 Per altre informazioni su come ottenere Teams, vedere [Come si ottiene l'accesso a Microsoft Teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
 

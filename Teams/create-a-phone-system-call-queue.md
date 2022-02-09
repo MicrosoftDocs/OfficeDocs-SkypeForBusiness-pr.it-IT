@@ -23,19 +23,19 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams, che fornisce un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
-ms.openlocfilehash: 6323a73c0b400b7b8d44a49e1bad2dad9c7f38c7
-ms.sourcegitcommit: bc686eedb37e565148d0c7a61ffa865aaca37d20
+ms.openlocfilehash: f6ca42b4e954cad8429d545ed8fe1d587127c7d9
+ms.sourcegitcommit: 79dfda39db208cf943d0f7b4906883bb9d034281
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62180919"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62457326"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
-Le code di chiamata forniscono un metodo per instradare i chiamanti alle persone dell'organizzazione che possono aiutare a risolvere un particolare problema o domanda. Le chiamate vengono distribuite una alla volta alle persone in coda (note come *agenti).* 
+Le code di chiamata forniscono un metodo per instradare i chiamanti alle persone dell'organizzazione che possono aiutare a risolvere un particolare problema o domanda. Le chiamate vengono distribuite una alla volta alle persone in coda (note come *agenti*). 
 
 > [!TIP]
-> Questo articolo è per le organizzazioni di grandi dimensioni. Se l'organizzazione è una piccola azienda, vedere Creare una coda [di chiamata - esercitazione sulle piccole](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb) imprese.
+> Questo articolo è per le organizzazioni di grandi dimensioni. Se l'organizzazione è una piccola azienda, vedere [Creare una coda di chiamata - esercitazione sulle piccole](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb) imprese.
 
 Le code di chiamata forniscono:
 
@@ -43,11 +43,11 @@ Le code di chiamata forniscono:
 
 - Musica mentre le persone sono in attesa di blocco in una coda.
 
-- Instradamento delle chiamate, in ordine FIFO *(First In, First Out)* agli agenti.
+- Instradamento delle chiamate, in ordine FIFO ( *First In, First Out* ) agli agenti.
 
 - Opzioni di gestione per l'overflow e il timeout della coda.
 
-Prima di seguire le procedure descritte in questo [articolo,](plan-auto-attendant-call-queue.md) leggere [](plan-auto-attendant-call-queue.md#getting-started) Pianificare gli operatori automatici Teams e le code di chiamata e seguire i passaggi introduttivi.
+Assicurarsi di aver letto Pianificare [](plan-auto-attendant-call-queue.md) gli operatori Teams e le code di chiamata e di aver seguito i passaggi introduttivi [](plan-auto-attendant-call-queue.md#getting-started) prima di seguire le procedure descritte in questo articolo.
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -57,7 +57,7 @@ Questo video mostra un esempio di base di come creare una coda di chiamata in Te
 
 ## <a name="create-the-call-queue"></a>Creare la coda di chiamata
 
-Per configurare una coda di chiamata, nell'interfaccia Teams di amministrazione espandere **Voce,** fare clic su Code di chiamata **e** quindi su **Aggiungi.**
+Per configurare una coda di chiamata, nell'interfaccia Teams di amministrazione espandere **Voce, fare** clic su Code **di chiamata e** quindi su **Aggiungi**.
 
 Digitare un nome per la coda di chiamata.
 
@@ -65,9 +65,9 @@ Digitare un nome per la coda di chiamata.
 
 ![Screenshot delle impostazioni dell'account della risorsa.](media/call-queue-name-language.png)
 
-Fare **clic su Aggiungi account,** cercare l'account della risorsa che si vuole usare con questa coda di chiamata, fare clic su Aggiungi e quindi su **Aggiungi.**  Gli agenti visualizzano il nome dell'account della risorsa quando ricevono una chiamata in arrivo.
+Fare **clic su Aggiungi account**, cercare l'account della risorsa da usare con questa coda di chiamata, fare **clic su Aggiungi** e quindi su **Aggiungi**. Gli agenti visualizzano il nome dell'account della risorsa quando ricevono una chiamata in arrivo.
 
-Per altre informazioni, vedere [Gestire Teams account delle risorse.](manage-resource-accounts.md)
+Per altre informazioni, vedere [Gestire Teams account delle risorse](manage-resource-accounts.md).
 
 ### <a name="assign-calling-id"></a>Assegnare l'ID chiamata
 
@@ -75,12 +75,12 @@ Per altre informazioni, vedere [Gestire Teams account delle risorse.](manage-res
 
 Se si prevede di usare un canale Teams per gli agenti di chiamata, è possibile assegnare un numero di ID chiamante in uscita per gli agenti specificando uno o più account delle risorse con un numero di telefono.
 
-Fare **clic su** Aggiungi , cercare gli account delle risorse a cui si vuole consentire agli agenti di effettuare chiamate con ID durante le chiamate in uscita, fare clic su **Aggiungi** e quindi su **Aggiungi.**
+Fare **clic su** Aggiungi, cercare gli account delle risorse a cui consentire agli agenti di effettuare chiamate con ID durante le chiamate in uscita, fare clic su **Aggiungi e quindi** su **Aggiungi**.
 
 Se non si usa un canale Teams per controllare l'appartenenza all'agente, è consigliabile impostare direttamente l'ID chiamante per i membri della coda di chiamata sul numero di servizio della coda di chiamata o sull'operatore automatico appropriato. Per altre informazioni, vedere [Gestire i criteri id chiamante in Microsoft Teams](caller-id-policies.md).
 
 > [!NOTE]
-> All'account della risorsa usato per l'ID chiamante deve essere assegnata una licenza Microsoft Teams Sistema telefonico utente virtuale e una delle seguenti:
+> All'account della risorsa usato per gli ID chiamanti deve essere assegnata una licenza Microsoft Teams Sistema telefonico utente virtuale e una delle seguenti:
 >
 > - Una licenza per il piano di chiamata e un numero di telefono assegnato
 > - Un Connessione con operatore di telefono assegnato
@@ -91,7 +91,7 @@ Se non si usa un canale Teams per controllare l'appartenenza all'agente, è cons
 
 ![Screenshot delle impostazioni della lingua.](media/call-queue-language.png)
 
-Scegliere una [lingua supportata.](create-a-phone-system-call-queue-languages.md) Questa lingua verrà usata per le istruzioni vocali generate dal sistema e per la trascrizione della segreteria telefonica (se abilitate).
+Scegliere una [lingua supportata](create-a-phone-system-call-queue-languages.md). Questa lingua verrà usata per le istruzioni vocali generate dal sistema e per la trascrizione della segreteria telefonica (se abilitate).
 
 ## <a name="greetings-and-music-on-hold-in-queue"></a>Messaggi di saluto e musica in attesa in coda
 
@@ -99,14 +99,14 @@ Scegliere una [lingua supportata.](create-a-phone-system-call-queue-languages.md
 
 Specificare se si vuole riprodurre un messaggio di saluto ai chiamanti quando arrivano in coda. È necessario caricare un file MP3, WAV o WMA contenente il messaggio di saluto da riprodurre. La registrazione caricata non può essere superiore a 5 MB.
 
-Teams fornisce musica predefinita ai chiamanti mentre sono in attesa in una coda. La musica predefinita fornita nelle code Teams chiamate è gratuita di eventuali royalty pagate dall'organizzazione. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
+Teams musica predefinita ai chiamanti mentre sono in attesa in una coda. La musica predefinita fornita nelle code Teams chiamate è gratuita di eventuali royalty pagate dall'organizzazione. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
 
 > [!NOTE]
 > L'utente è responsabile della cancellazione e della protezione indipendente di tutti i diritti e le autorizzazioni necessari per l'uso di qualsiasi file musicale o audio con il servizio Microsoft Teams, che può includere proprietà intellettuale e altri diritti in qualsiasi musica, effetti audio, audio, marchi, nomi e altri contenuti nel file audio di tutti i titolari dei diritti rilevanti, che possono includere artisti, attori,  esecutori, musicisti, cantautori, compositori, etichette di registrazione, editori musicali, unioni, gilde, società di diritti, organizzazioni di gestione collettiva e qualsiasi altra parte che possiede, controlla o licenza i diritti di copyright, gli effetti sonori, l'audio e altri diritti di proprietà intellettuale.
 
 ## <a name="call-agents"></a>Agenti di chiamata
 
-Esaminare i [prerequisiti per l'aggiunta di agenti a una coda di chiamata.](plan-auto-attendant-call-queue.md#prerequisites)
+Esaminare i [prerequisiti per l'aggiunta di agenti a una coda di chiamata](plan-auto-attendant-call-queue.md#prerequisites).
 
 ![Screenshot delle impostazioni di utenti e gruppi per le code di chiamata.](media/call-queue-users-groups.png)
 
@@ -114,7 +114,7 @@ Esaminare i [prerequisiti per l'aggiunta di agenti a una coda di chiamata.](plan
 
 È possibile aggiungere fino a 200 agenti tramite un Teams canale. Per aggiungere un canale alla coda, è necessario essere un membro del team o il creatore o un proprietario del canale.
 
-Se si vuole usare un canale Teams per gestire la [coda,](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e)selezionare l'opzione **Scegli un team** e fare clic su Aggiungi **canale.** Cercare il team da usare, selezionarlo e fare clic su **Aggiungi.** Selezionare il canale da usare (sono supportati solo i canali standard) e fare clic su **Applica**. 
+Se si vuole usare [un canale Teams](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e) per gestire la coda, selezionare l'opzione **Scegli un team** e fare clic **su Aggiungi canale**. Cercare il team da usare, selezionarlo e fare clic su **Aggiungi**. Selezionare il canale da usare (sono supportati solo i canali standard) e fare clic su **Applica**. 
 
 I client seguenti sono supportati quando si usa un canale Teams per le code di chiamata: 
 
@@ -132,7 +132,7 @@ Per aggiungere singoli utenti o gruppi alla coda, selezionare **l'opzione Scegli
 
 Per aggiungere un utente alla coda, fare clic **su Aggiungi utenti**, cercare l'utente, fare clic su **Aggiungi** e quindi su **Aggiungi**.
 
-Per aggiungere un gruppo alla coda, fare clic **su Aggiungi gruppi,** cercare il gruppo, fare clic su **Aggiungi** e quindi su **Aggiungi.** È possibile usare liste di distribuzione, gruppi di sicurezza e gruppi Microsoft 365 o Microsoft Teams team.
+Per aggiungere un gruppo alla coda, fare clic **su Aggiungi gruppi**, cercare il gruppo, fare clic su **Aggiungi** e quindi su **Aggiungi**. È possibile usare liste di distribuzione, gruppi di sicurezza e gruppi Microsoft 365 o Microsoft Teams team.
 
 > [!NOTE]
 > I nuovi utenti aggiunti a un gruppo possono richiedere fino a otto ore prima dell'arrivo della prima chiamata.
@@ -156,44 +156,46 @@ Gli account Teams agenti devono essere impostati sulla Teams solo utenti. Gli ag
 
 **Il metodo di** routing determina l'ordine in cui gli agenti ricevono le chiamate dalla coda. Scegliere una delle opzioni seguenti:
 
-- **Il routing** dell'operatore chiama tutti gli agenti nella coda contemporaneamente. Il primo agente di chiamata a ritirare la chiamata riceve la chiamata.
+- **Il routing dell'operatore** chiama tutti gli agenti nella coda contemporaneamente. Il primo agente di chiamata a ritirare la chiamata riceve la chiamata.
 
-- **Il routing seriale** chiama tutti gli agenti di chiamata uno alla volta nell'ordine specificato nell'elenco **Agenti di** chiamata. Se un agente licenzia o non riceve una chiamata, la chiamata squillerà all'agente successivo e proverà tutti gli agenti fino a quando non viene ritirata o non si verifica il timeout.
+- **Il routing seriale** chiama tutti gli agenti di chiamata uno alla volta nell'ordine specificato **nell'elenco Agenti di** chiamata. Se un agente licenzia o non riceve una chiamata, la chiamata squillerà all'agente successivo e proverà tutti gli agenti fino a quando non viene ritirata o non si verifica il timeout.
 
 - **Round robin** bilancia il routing delle chiamate in arrivo in modo che ogni agente di chiamata oscinda lo stesso numero di chiamate dalla coda. Questo può essere utile in un ambiente di vendita in ingresso per garantire la stessa opportunità tra tutti gli agenti di chiamata.
 
 - **L'inattività** più lunga instrada ogni chiamata all'agente che è rimasto inattivo più a lungo. Un agente viene considerato inattivo se lo stato presenza è Disponibile. Gli agenti il cui stato presenza non è Disponibile non saranno idonei per ricevere chiamate finché non cambiano la loro presenza in Disponibile. 
 
 > [!TIP]
-> **L'impostazione consigliata è** Round **robin** o **Inattività** più lunga.
+> **L'impostazione consigliata è** **Round robin** o **Inattività** più lunga.
 
 > [!NOTE]
-> Se [la registrazione della](teams-recording-policy.md) conformità è abilitata per gli agenti, la combinazione di modalità **conferenza** e **routing operatore** non è supportata. Se è necessario usare la **modalità conferenza,** selezionare Instradamento **seriale,** **Round robin** o **Inattività** più lunga come **metodo di routing.** Se è necessario usare il **routing del supervisore,** impostare **la modalità conferenza** su **Disattivato.**
+> Se [la registrazione della](teams-recording-policy.md) conformità è abilitata per gli agenti, la combinazione di modalità **conferenza** e **routing operatore** non è supportata. Se è necessario usare la **modalità conferenza**, selezionare **Instradamento seriale**, **Round robin** o **Inattività** più **lunga come metodo di routing**. Se è necessario usare il **routing del supervisore**, impostare **la modalità conferenza** su **Disattivato**.
 > 
-> Quando  si usa Il tempo di inattività più lungo, possono verificarsi momenti in cui un agente riceve una chiamata dalla coda poco dopo essere diventato non disponibile o se si verifica un breve ritardo nella ricezione di una chiamata dalla coda dopo essere diventato disponibile.
+> Quando si **usa Il** più lungo inattività e quando ci sono meno chiamate in coda rispetto agli agenti disponibili, solo i primi due agenti inattivi più lunghi verranno presentati con le chiamate dalla coda.
+> 
+> Quando si  usa Il tempo di inattività più lungo, possono verificarsi momenti in cui un agente riceve una chiamata dalla coda poco dopo essere diventato non disponibile o se si verifica un breve ritardo nella ricezione di una chiamata dalla coda dopo essere diventato disponibile.
 
 ![Screenshot delle impostazioni relative a routing, rifiuto esplicito e tempo di avviso.](media/call-queue-presence-agents-time.png)
 
-**Il routing basato sulla presenza** usa lo stato di disponibilità degli agenti di chiamata per determinare se un agente deve essere incluso nell'elenco di routing delle chiamate per il metodo di routing selezionato. Gli agenti di chiamata il cui stato di disponibilità è impostato su **Disponibile** sono inclusi nell'elenco di routing delle chiamate e possono ricevere chiamate. Gli agenti il cui stato di disponibilità è impostato su qualsiasi altro stato vengono esclusi dall'elenco di routing delle chiamate e non riceveranno chiamate finché lo stato di disponibilità non torna su **Disponibile**. 
+**Il routing basato sulla presenza** usa lo stato di disponibilità degli agenti di chiamata per determinare se un agente deve essere incluso nell'elenco di routing delle chiamate per il metodo di routing selezionato. Gli agenti di chiamata il cui stato di disponibilità è **impostato su Disponibile** sono inclusi nell'elenco di routing delle chiamate e possono ricevere chiamate. Gli agenti il cui stato di disponibilità è impostato su qualsiasi altro stato vengono esclusi dall'elenco di routing delle chiamate e non riceveranno chiamate finché lo stato di disponibilità non torna su **Disponibile**. 
 
 È possibile abilitare il routing delle chiamate basate sulla presenza con uno qualsiasi dei metodi di routing.
 
 Se un agente rifiuta esplicitamente di ricevere chiamate, non verrà incluso nell'elenco di routing delle chiamate indipendentemente da quello su cui è impostato lo stato di disponibilità. 
 
 > [!NOTE]
-> Quando **l'opzione** Inattività più lunga è selezionata come metodo di routing, il routing  basato sulla presenza è obbligatorio e abilitato automaticamente anche se l'interruttore routing basato sulla presenza sarà disattivato e disattivato.
+> Quando **l'opzione** Inattività più lunga è selezionata come metodo di routing, il routing basato sulla presenza è obbligatorio e abilitato automaticamente anche se  l'interruttore routing basato sulla presenza sarà disattivato e disattivato.
 >
 > Se il routing basato sulla presenza non è abilitato e la coda contiene più chiamate, il sistema presenterà queste chiamate contemporaneamente agli agenti indipendentemente dal loro stato di presenza. In questo modo si riceveranno più notifiche di chiamata agli agenti, in particolare se alcuni agenti non rispondono alla chiamata iniziale presentata.
 > 
 > Gli agenti che usano il client Skype for Business non sono inclusi nell'elenco di routing delle chiamate quando è abilitato il routing basato sulla presenza. Se si hanno agenti che usano Skype for Business, non abilitare il routing delle chiamate basato sulla presenza.
 
 > [!TIP]
-> L'impostazione consigliata  è il routing **basato** sulla presenza su Attivata.
+> **L'impostazione consigliata è il routing basato** sulla presenza su Attivata.
 
 **Il tempo di avviso** dell'agente specifica per quanto tempo il telefono di un agente squillerà prima che la coda reindirizza la chiamata all'agente successivo.
 
 > [!TIP]
-> **L'impostazione del tempo di avviso** dell'agente su **20 secondi** è l'impostazione consigliata.
+> **L'impostazione del tempo di avviso** dell'agente **su 20 secondi** è l'impostazione consigliata.
 
 ## <a name="call-overflow-handling"></a>Gestione dell'overflow delle chiamate
 
@@ -201,7 +203,7 @@ Se un agente rifiuta esplicitamente di ricevere chiamate, non verrà incluso nel
 
 **Numero massimo di chiamate in** coda specifica il numero massimo di chiamate che possono essere in attesa in coda in qualsiasi momento. Il valore predefinito è 50, ma può essere compreso tra 0 e 200. Quando viene raggiunto questo limite, la chiamata viene gestita come specificato dall'impostazione Quando viene raggiunto il numero massimo **di** chiamate.
 
-È possibile scegliere di disconnettere la chiamata o reindirizzarla a una delle destinazioni di routing delle chiamate. Ad esempio, è possibile che il chiamante lasci una segreteria telefonica per gli agenti in coda. Per i trasferimenti esterni, vedere [Prerequisiti e](plan-auto-attendant-call-queue.md#prerequisites) trasferimenti di numeri di telefono esterni - [dettagli tecnici](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details) per la formattazione dei numeri.
+È possibile scegliere di disconnettere la chiamata o reindirizzarla a una delle destinazioni di routing delle chiamate. Ad esempio, è possibile che il chiamante lasci una segreteria telefonica per gli agenti in coda. Per i trasferimenti esterni, vedere [Prerequisiti e](plan-auto-attendant-call-queue.md#prerequisites) trasferimenti di numeri di telefono [esterni - dettagli tecnici](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details) per la formattazione dei numeri.
 
 > [!NOTE]
 > Se il numero massimo di chiamate è impostato su 0, il messaggio di saluto non verrà riprodotto.
@@ -212,16 +214,16 @@ Se un agente rifiuta esplicitamente di ricevere chiamate, non verrà incluso nel
 
 **Timeout chiamata: il tempo di attesa** massimo specifica il tempo massimo di attesa di una chiamata in coda prima che venga reindirizzata o disconnessa. È possibile specificare un valore compreso tra 0 secondi e 45 minuti.
 
-È possibile scegliere di disconnettere la chiamata o reindirizzarla a una delle destinazioni di routing delle chiamate. Ad esempio, è possibile che il chiamante lasci una segreteria telefonica per gli agenti in coda. Per i trasferimenti esterni, vedere Prerequisiti e trasferimenti di numeri di telefono esterni [- dettagli tecnici](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details) per la formattazione dei numeri. [](plan-auto-attendant-call-queue.md#prerequisites)
+È possibile scegliere di disconnettere la chiamata o reindirizzarla a una delle destinazioni di routing delle chiamate. Ad esempio, è possibile che il chiamante lasci una segreteria telefonica per gli agenti in coda. Per i trasferimenti esterni, vedere Prerequisiti [](plan-auto-attendant-call-queue.md#prerequisites) e trasferimenti di numeri di telefono esterni [- dettagli tecnici](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details) per la formattazione dei numeri.
 
-Dopo aver selezionato le opzioni di timeout della chiamata, fare clic su **Salva.**
+Dopo aver selezionato le opzioni di timeout della chiamata, fare clic su **Salva**.
 
 ## <a name="summary-of-recommended-call-queue-settings"></a>Riepilogo delle impostazioni consigliate per la coda di chiamata
 
 Sono consigliate le impostazioni seguenti:
 
-- **Modalità conferenza** **attivata**
-- **Metodo di instradamento** **a Round robin** o Più lungo **inattivo**
+- **Modalità conferenza attivata** 
+- **Metodo di instradamento** **a Round robin** o **Più lungo inattivo**
 - **Routing basato sulla presenza su** **On**
 - **Tempo di avviso dell'agente:** **a 20 secondi**
 
@@ -243,7 +245,7 @@ I client seguenti sono supportati per gli agenti di chiamata in una coda di chia
   - Microsoft Teams'app Android
 
     > [!NOTE]
-    > Le code di chiamata a cui è assegnato un numero di instradamento diretto non supportano Skype for Business client, client Lync o telefoni IP Skype for Business telefoni IP come agenti. Il Teams client è supportato solo con una [modalità di coesistenza di Teams solo](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
+    > Le code di chiamata a cui è assegnato un numero di instradamento diretto non supportano Skype for Business client, client Lync o telefoni IP Skype for Business come agenti. Il Teams client è supportato solo con una [modalità di coesistenza di Teams solo](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
 
 ## <a name="call-queue-cmdlets"></a>Cmdlet della coda di chiamata
 
@@ -256,7 +258,7 @@ I cmdlet seguenti consentono di gestire una coda di chiamata:
 - [Set-CsCallQueue](/powershell/module/skype/Set-CsCallQueue)
 - [Remove-CsCallQueue](/powershell/module/skype/Remove-CsCallQueue)
 
-I cmdlet aggiuntivi seguenti sono necessari anche per gestire gli utenti, gli account delle risorse, le licenze Microsoft Teams Telefono, i numeri di telefono, i file audio e la lingua supportata che verranno usati con le code di chiamata:
+Per gestire gli utenti, gli account delle risorse, le licenze Microsoft Teams Telefono, i numeri di telefono, i file audio e la lingua supportata che verranno usati con le code di chiamata, sono necessari anche i cmdlet aggiuntivi seguenti:
 
 Utenti/Teams
 
@@ -310,7 +312,7 @@ Gli amministratori possono usare lo strumento di diagnostica seguente per verifi
    > [!div class="nextstepaction"]
    > [Esegui test: coda Teams chiamata](https://aka.ms/TeamsCallQueueDiag)
 
-2. Nel riquadro Esegui diagnostica immettere l'Account risorsa nel campo Nome utente o Posta elettronica e quindi selezionare **Esegui test.** 
+2. Nel riquadro Esegui diagnostica immettere l'Account risorsa nel campo Nome  utente o Posta elettronica e quindi selezionare **Esegui test**.
 
 3. I test restituiranno i passaggi successivi migliori per risolvere eventuali configurazioni di tenant, criteri e account delle risorse per verificare che la coda di chiamata sia in grado di ricevere chiamate.
 

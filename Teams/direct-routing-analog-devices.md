@@ -4,7 +4,7 @@ ms.author: crowe
 author: CarolynRowe
 manager: serdars
 audience: ITPro
-ms.reviewer: NMuravlyannikov
+ms.reviewer: filippse
 ms.topic: conceptual
 ms.service: msteams
 ms.localizationpriority: medium
@@ -15,26 +15,26 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Leggere questo articolo per informazioni su come usare i dispositivi analogici con Telefono Microsoft System Direct Routing.
-ms.openlocfilehash: 86875f7c4cf3206f673c652487e896adf91b1ce5
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+description: Leggere questo articolo per informazioni su come usare i dispositivi analogici con Microsoft Teams Sistema telefonico routing diretto.
+ms.openlocfilehash: e3de63de032d2caf06993ac0a08b624feb5a5b42
+ms.sourcegitcommit: 79dfda39db208cf943d0f7b4906883bb9d034281
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61766409"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62457386"
 ---
-# <a name="how-to-use-analog-devices-with-phone-system-direct-routing"></a>Come usare i dispositivi analogici con Sistema telefonico Direct Routing
+# <a name="how-to-use-analog-devices-with-direct-routing"></a>Come usare i dispositivi analogici con Routing diretto
 
-Questo articolo descrive come usare i dispositivi analogici con Sistema telefonico routing diretto. Per connettere dispositivi analogici a Routing diretto, è necessario usare un adattatore di telefonia analogica (ATA) e questo adattatore deve essere supportato dal fornitore SBC (Session Border Controller) certificato. 
+Questo articolo descrive come usare i dispositivi analogici con Routing diretto. Per connettere dispositivi analogici a Routing diretto, è necessario usare un adattatore di telefonia analogica (ATA) e questo adattatore deve essere supportato dal fornitore SBC (Session Border Controller) certificato. 
 
-Quando un utente effettua una chiamata da un dispositivo analogico, la segnalazione e il flusso multimediale attraverso l'adattatore di telefonia analogica (ATA) passano alla SBC.  L'SBC invia la chiamata a un endpoint Microsoft Teams o alla rete PSTN (Public Switched Telephone Network) in base alla tabella di routing interna.  Quando un dispositivo effettua una chiamata, il percorso necessario dipende dai criteri di routing creati per il dispositivo.
+Quando un utente effettua una chiamata da un dispositivo analogico, la segnalazione e il flusso multimediale attraverso l'adattatore di telefonia analogica (ATA) passano alla SBC.  Il servizio SBC invia la chiamata a un endpoint Microsoft Teams o alla rete PSTN (Public Switched Telephone Network) in base alla tabella di routing interna.  Quando un dispositivo effettua una chiamata, il percorso necessario dipende dai criteri di routing creati per il dispositivo.
 
 Nel diagramma seguente il routing diretto è configurato in modo che tutte le chiamate Teams da e verso i numeri compresi tra +1425 4XX XX XX e +1425 5XX XX XX prendano il percorso rosso (linea punteggiata) e qualsiasi chiamata PSTN da e verso numeri compresi tra +1425 4XX XX XX e qualsiasi altro numero tranne l'intervallo di numeri +1425 5XX XX XX deve assumere la linea blu (linea continua). 
 
 > [!div class="mx-imgBorder"]
 > ![Diagramma che mostra la configurazione del routing diretto.](media/direct-routing-analog-device.png)
 
-## <a name="example--how-to-configure-the-use-of-analog-devices-with-direct-routing"></a>Esempio: Come configurare l'uso di dispositivi analogici con Routing diretto
+## <a name="example-how-to-configure-the-use-of-analog-devices-with-direct-routing"></a>Esempio: Come configurare l'uso di dispositivi analogici con Routing diretto
 
 Per configurare l'uso di dispositivi analogici con Routing diretto, è necessario connettere l'adattatore di telefonia analogica all'SBC e configurare SBC in modo che funzioni con il routing diretto. 
 
@@ -55,7 +55,7 @@ Per informazioni su come connettere un ATA a un SBC e configurare SBC, vedere la
 - [Documentazione sulla configurazione della barra multifunzione](https://support.sonus.net/display/UXDOC81/Connect+SBC+Edge+to+Microsoft+Teams+Direct+Routing+to+Support+Analog+Devices)
 - [Documentazione sulla configurazione di Oracle](https://www.oracle.com/technical-resources/documentation/acme-packet.html#Link-MicrosoftTeams)
 
-## <a name="step-1--connect-the-sbc-to-direct-routing"></a>Passaggio 1.  Connessione da SBC a Routing diretto
+## <a name="step-1-connect-the-sbc-to-direct-routing"></a>Passaggio 1. Connessione da SBC a Routing diretto
 
 Il comando seguente configura la connessione SBC nel modo seguente:
 
@@ -69,7 +69,7 @@ Il comando seguente configura la connessione SBC nel modo seguente:
 PS C:\> New-CsOnlinePSTNGateway -FQDN sbc.contoso.com -SIPSignalingPort 5068 -ForwardCallHistory $true -ForwardPAI $true -MediaBypass $true -Enabled $true 
 ```
 
-## <a name="step-2--create-the-pstn-usage"></a>Passaggio 2: Creare l'utilizzo PSTN 
+## <a name="step-2-create-the-pstn-usage"></a>Passaggio 2: Creare l'utilizzo PSTN 
 
 Il comando successivo crea un utilizzo PSTN vuoto. Gli utilizzi PSTN online sono valori stringa usati per l'autorizzazione delle chiamate. Un utilizzo PSTN online collega un criterio vocale online a una route. Questo esempio aggiunge la stringa "Interop" all'elenco corrente degli utilizzi PSTN disponibili. 
 
@@ -77,7 +77,7 @@ Il comando successivo crea un utilizzo PSTN vuoto. Gli utilizzi PSTN online sono
 PS C:\> Set-CsOnlinePstnUsage -Identity global -Usage @{add="Interop"} 
 ```
 
-## <a name="step-3--create-a-voice-route-and-associate-it-with-the-pstn-usage"></a>Passaggio 3: Creare una route vocale e associarla all'utilizzo PSTN:
+## <a name="step-3-create-a-voice-route-and-associate-it-with-the-pstn-usage"></a>Passaggio 3: Creare una route vocale e associarla all'utilizzo PSTN
 
 Questo comando crea una nuova route vocale online con l'identità "analog-interop" per l'intervallo di numeri +1425 XXX XX XX.  La route vocale è applicabile a un elenco di gateway online sbc.contoso.com e associa la route all'uso pstn online "Interoperabilità". Una route vocale include un'espressione regolare che identifica quali numeri di telefono verranno instradati attraverso una determinata route vocale:
 
@@ -95,7 +95,7 @@ PS C:\> New-CsOnlineVoiceRoutingPolicy -Identity "AnalogInteropPolicy" -OnlinePs
 
 ## <a name="step-5-enable-the-online-user"></a>Passaggio 5: Abilitare l'utente online
 
-Questo comando modifica l'account utente con l'exampleuser@contoso.com. In questo caso, l'account viene modificato per abilitare VoIP aziendale, l'implementazione Microsoft di VoIP, con la segreteria telefonica abilitata e assegna il numero +14255000000 a questo utente.  Questo comando deve essere eseguito per ogni Teams utente (esclusi gli utenti di dispositivi ATA) nel tenant aziendale.
+Questo comando modifica l'account utente con il exampleuser@contoso.com. In questo caso, l'account viene modificato per abilitare VoIP aziendale, l'implementazione Microsoft di VoIP, con la segreteria telefonica abilitata e assegna il numero +14255000000 a questo utente.  Questo comando deve essere eseguito per ogni Teams utente (esclusi gli utenti di dispositivi ATA) nel tenant dell'azienda.
 
 ```powershell
 PS C:\> Set-CsUser -Identity "exampleuser@contoso.com" -EnterpriseVoiceEnabled $True -HostedVoiceMail $True -OnPremLineUri "tel:+14255000000"
@@ -103,13 +103,13 @@ PS C:\> Set-CsUser -Identity "exampleuser@contoso.com" -EnterpriseVoiceEnabled $
 
 ## <a name="step-6-assign-the-voice-route-policy-to-a-user"></a>Passaggio 6: Assegnare i criteri della route vocale a un utente
 
-Questo comando assegna il criterio di routing vocale online per utente AnalogInteropPolicy all'utente con l'identità exampleuser@contoso.com.  Questo comando deve essere eseguito per ogni Teams utente (esclusi gli utenti di dispositivi ATA) nel tenant aziendale.
+Questo comando assegna il criterio di routing vocale online per utente AnalogInteropPolicy all'utente con l'identità exampleuser@contoso.com. Questo comando deve essere eseguito per ogni Teams utente (esclusi gli utenti di dispositivi ATA) nel tenant dell'azienda.
 
 ```powershell
 PS C:\> Grant-CsOnlineVoiceRoutingPolicy -Identity "exampleuser@contoso.com" -PolicyName "AnalogInteropPolicy" 
 ```
 
-## <a name="step-7--create-a-voice-route-for-an-analog-device"></a>Passaggio 7: Creare un percorso vocale per un dispositivo analogico
+## <a name="step-7-create-a-voice-route-for-an-analog-device"></a>Passaggio 7: Creare un percorso vocale per un dispositivo analogico
 
 Questo comando crea una route vocale online con identità "analog-interop" per l'intervallo di numeri +1425 4XX XX XX applicabile a un elenco di gateway online sbc.contoso.com e la associa all'utilizzo pstn online "Interoperabilità".  Questo comando deve essere eseguito per ogni dispositivo analogico con un modello di numero di telefono appropriato. In alternativa, è possibile usare un modello di numero appropriato per i dispositivi analogici durante la configurazione della route vocale online durante uno dei passaggi precedenti.
 

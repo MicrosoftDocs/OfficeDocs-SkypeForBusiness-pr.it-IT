@@ -24,27 +24,27 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata tramite cmdlet
-ms.openlocfilehash: a8f24f11cb19f448fc897043c7cb046a08c32341
-ms.sourcegitcommit: bc686eedb37e565148d0c7a61ffa865aaca37d20
+ms.openlocfilehash: aa3330af2a47c87fc71f63396b84f8ad017e19b5
+ms.sourcegitcommit: 79dfda39db208cf943d0f7b4906883bb9d034281
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62181109"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62457446"
 ---
 # <a name="create-a-call-queue-via-cmdlets"></a>Creare una coda di chiamata tramite cmdlet
 
 ## <a name="assumptions"></a>Presupposti
 1)  PowerShell è installato nel computer
-- Configurare il computer per [Windows PowerShell](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
+- Configurare il computer [per Windows PowerShell](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 - Modulo MSTeams installato ````  (Install-Module -Name MicrosoftTeams -Force -AllowClobber) ````
 - Modulo MSOnline installato ```` Install-Module -Name MSOnline -Force -AllowClobber ````
 2)  Si hanno diritti di amministrazione tenant
 3)  Hai acquistato Microsoft Teams Telefono
 4)  Gli agenti, le liste di distribuzione e i canali Teams a cui si fa riferimento di seguito sono già stati creati
 
-Nota: il cmdlet Teams Channel usato di seguito fa parte della versione public preview di Teams PowerShell Module.  Per altre informazioni, vedere Installare Teams anteprima pubblica di [PowerShell](teams-powershell-install.md) e vedere anche Microsoft Teams [note sulla versione di PowerShell.](teams-powershell-release-notes.md)
+Nota: il cmdlet Teams Channel usato di seguito fa parte della versione di anteprima pubblica di Teams modulo di PowerShell.  Per altre informazioni, vedere [Installare Teams anteprima pubblica di PowerShell](teams-powershell-install.md) e vedere anche Microsoft Teams [note sulla versione di PowerShell](teams-powershell-release-notes.md).
 
-Gli utenti che hanno già installato il modulo MicrosoftTeams devono verificare che sia installata la versione più ````Update-Module MicrosoftTeams```` aggiornata.
+Gli utenti che hanno già installato il modulo MicrosoftTeams ````Update-Module MicrosoftTeams```` devono verificare che sia installata la versione più aggiornata.
 
 
 ## <a name="scenario"></a>Scenario
@@ -104,7 +104,7 @@ Informazioni sulla coda di chiamata collaborativa delle strutture:
 -   Musica blocco: impostazione predefinita
 -   Risposta alle chiamate: Team: Strutture
 -   Call Answering Channel: Help Desk
--   - Proprietario canale: Fred@contoso.com
+-   - Proprietario del canale: Fred@contoso.com
 -   Modalità conferenza: attivata
 -   Metodo di routing: Round Robin
 -   Routing basato sulla presenza: on
@@ -126,7 +126,7 @@ Connect-MsolService -Credential $credential
 
 ## <a name="sales-queue"></a>Coda di vendita
 ### <a name="create-audio-files"></a>Creare file audio
-Sostituire "d: " con il percorso in cui sono archiviati i \\ file wav nel computer.
+Sostituire "d:\\" con il percorso in cui sono archiviati i file wav nel computer.
 
 ````
 $content = Get-Content “d:\sales-hold-in-queue-music.wav” -Encoding byte -ReadCount 0
@@ -156,7 +156,7 @@ Get-MsolAccountSku
 ````
 
 ### <a name="create-and-assign-resource-account"></a>Creare e assegnare un account della risorsa
-Nota: Telefono numero non richiesto qui perché la coda di chiamata è anteriore con un Operatore automatico
+Nota: Telefono numero di telefono non richiesto qui perché la coda di chiamata è anteriore con un Operatore automatico
 - APPLICATIONID
 - - Operatore automatico: ce933385-9390-45d1-9512-c8d228074e07
 - - Coda di chiamata: 11cd3e2e-fccb-42ad-ad00-878b93575e07
@@ -179,7 +179,7 @@ New-CsOnlineApplicationInstanceAssociation -Identities @($applicationInstanceID)
 
 ## <a name="support-queue"></a>Coda di supporto
 ### <a name="create-audio-files"></a>Creare file audio
-Sostituire "d: " con il percorso in cui sono archiviati i \\ file wav nel computer.
+Sostituire "d:\\" con il percorso in cui sono archiviati i file wav nel computer.
 
 ````
 $content = Get-Content “d:\support-greeting.wav” -Encoding byte -ReadCount 0
@@ -213,7 +213,7 @@ Get-MsolAccountSku
 ````
 
 ### <a name="create-and-assign-resource-account"></a>Creare e assegnare un account della risorsa
-Nota: Telefono numero di telefono non richiesto qui perché la coda di chiamata è front-ended da un Operatore automatico
+Nota: Telefono numero non richiesto qui perché la coda di chiamata è front-ended da un Operatore automatico
 - APPLICATIONID
 - - Operatore automatico: ce933385-9390-45d1-9512-c8d228074e07
 - - Coda di chiamata: 11cd3e2e-fccb-42ad-ad00-878b93575e07
@@ -246,7 +246,7 @@ Get-TeamChannel -GroupId $teamFacilitiesGroupID
 $teamFacilitiesHelpDeskChannelID = "{assign ID from output of above command}"
 ````
 
-### <a name="get-facilities-help-desk-channel-ower-user-id"></a>Ottenere l'ID utente del canale Help Desk di Facilities
+### <a name="get-facilities-help-desk-channel-owner-user-id"></a>Ottenere l'ID utente del proprietario del canale Help Desk di Facilities
 ````
 $teamFacilitiesHelpDeskChannelUserID = (Get-TeamChannelUser -GroupId $teamFacilitiesGroupID -DisplayName "Help Desk" -Role Owner).UserId
 ````
@@ -272,7 +272,7 @@ Get-MsolAccountSku
 ````
 
 ### <a name="create-and-assign-resource-account"></a>Creare e assegnare un account della risorsa
-Nota: Telefono numero di telefono non richiesto qui perché la coda di chiamata è front-ended da un Operatore automatico
+Nota: Telefono numero non richiesto qui perché la coda di chiamata è front-ended da un Operatore automatico
 - APPLICATIONID
 - - Operatore automatico: ce933385-9390-45d1-9512-c8d228074e07
 - - Coda di chiamata: 11cd3e2e-fccb-42ad-ad00-878b93575e07

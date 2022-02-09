@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per partecipanti e guest.
-ms.openlocfilehash: bd8146ce27f76bd03d7ef991f51dbe1dda3c08ab
-ms.sourcegitcommit: b0bb7db41856ee377dbe4ca8c9dff56385bf120d
+ms.openlocfilehash: ac77ab8b032fa792b0b137c84679912768e3b1b6
+ms.sourcegitcommit: 79dfda39db208cf943d0f7b4906883bb9d034281
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61563122"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62457376"
 ---
 # <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione - Partecipanti e ospiti
 
@@ -66,7 +66,7 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 |**Utenti dell’organizzazione e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, aderiscono direttamente alla riunione senza aspettare nella sala d'attesa. Gli utenti di organizzazioni attendibili e gli utenti anonimi aspettano nella sala d'attesa. Questa è l'impostazione predefinita.    |
 |**Utenti dell'organizzazione, organizzazioni attendibili e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti di organizzazioni attendibili, accedono direttamente alla riunione senza passare dalla sala di attesa.  Gli utenti anonimi attendono nella sala di attesa.   |
 |**Utenti dell’organizzazione**    |Gli utenti autenticati dall'interno dell'organizzazione aderiscono alla riunione direttamente senza aspettare nella sala d'attesa.  Gli utenti di organizzazioni attendibili, utenti guest e utenti anonimi aspettano nella sala d'attesa.          |
-|**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala d'attesa. Nella pagina Teams opzioni per le riunioni del cliente, viene visualizzato come "Solo io".          |
+|**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala d'attesa. Nella pagina Teams opzioni per le riunioni del cliente viene visualizzato come "Solo io".          |
 |**Solo utenti invitati**    |Solo gli utenti invitati e gli organizzatori della riunione possono partecipare alla riunione direttamente senza aspettare nella sala d'attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala d'attesa. Nella pagina Teams opzioni per le riunioni del cliente viene visualizzato come "Persone invitate". Gli utenti aggiunti come parte di un gruppo di distribuzione doranno passare attraverso la sala d'attesa.      |
 
  > [!NOTE]
@@ -96,11 +96,17 @@ Questa impostazione è un criterio per utente e si applica durante una riunione.
 
 Questa impostazione è un'impostazione per partecipante. Questa impostazione determina se la chat della riunione è consentita nella riunione dell'utente.
 
+|Valore dell'impostazione |Comportamento  |
+|---------|---------|
+|**Attivala per tutti**     | Tutti i partecipanti possono scrivere e visualizzare messaggi di chat. |
+|**Disattivarla per tutti gli utenti**     | La chat della riunione è disattivata per tutti i partecipanti.  |
+|**Attivarla per tutti gli utenti anonimi**| Gli utenti anonimi non possono chattare durante le riunioni, ma possono leggere i messaggi. |
+
 <a name="bkparticipantsandguests"> </a>
 
 ## <a name="enable-meeting-policy-settings"></a>Abilitare le impostazioni dei criteri riunione
 
-Per abilitare le impostazioni dei criteri riunione, è possibile usare l'interfaccia di amministrazione di [Teams](https://admin.teams.microsoft.com/policies/meetings) **(** Criteri riunione Modificare un criterio Partecipanti & guest ) o il cmdlet  >    >   [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) in Teams PowerShell. 
+Per abilitare le impostazioni dei criteri riunione, è possibile usare l'interfaccia di amministrazione di [Teams](https://admin.teams.microsoft.com/policies/meetings) **(** > Criteri riunioneModificare un **criterioParticipants** >  & guest) o il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) in Teams PowerShell. 
 
 In questo esempio viene utilizzato PowerShell per modificare i criteri di riunione globali per consentire a chiunque di avviare o partecipare a una riunione.
 
