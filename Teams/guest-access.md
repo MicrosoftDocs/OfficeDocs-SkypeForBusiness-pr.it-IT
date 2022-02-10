@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: L'accesso guest in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali.
-ms.openlocfilehash: 80c1fcb9012efbc1809b1d1d4252c9801d148ba9
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: 8ea0ae05823a1f7402d6a41f51794d0a169faf43
+ms.sourcegitcommit: 79dfda39db208cf943d0f7b4906883bb9d034281
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60537087"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62457256"
 ---
 # <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 
@@ -33,11 +33,11 @@ Tramite l’accesso guest, è possibile consentire l'accesso a team, documenti n
 > [!NOTE]
 > Se si vuole semplicemente trovare, chiamare, chattare e configurare riunioni con persone di altre organizzazioni, usare l’[accesso esterno](manage-external-access.md).
 
-Un guest è una persona che non è né un dipendente, né uno studente, né un membro dell'organizzazione e che non ha un account aziendale o dell'istituto di istruzione presso l'organizzazione. Ad esempio, gli utenti guest possono includere partner, fornitori o consulenti. Chiunque non faccia parte dell'organizzazione può essere aggiunto come guest in Teams. Questo significa che chiunque abbia un account aziendale, ossia un account Azure Active Directory, o un account di posta elettronica personale, con Outlook.com, Gmail.com o altri, può partecipare come guest in Teams, con accesso ai team e ai canali.
+Un guest è una persona che non ha un account aziendale o dell'istituto di istruzione con l'organizzazione. Ad esempio, gli utenti guest possono includere partner, fornitori o consulenti. Chiunque non faccia parte dell'organizzazione può essere aggiunto come guest in Teams. Questo significa che chiunque abbia un account aziendale, ossia un account Azure Active Directory, o un account di posta elettronica personale, con Outlook.com, Gmail.com o altri, può partecipare come guest in Teams, con accesso ai team e ai canali.
 
 Gli utenti guest in Teams sono coperti dalla stessa protezione di conformità e controllo del resto di Microsoft 365 e possono essere gestiti all'interno di Azure AD. L'accesso guest è soggetto ai limiti di servizio di Azure AD e Microsoft 365 o Office 365.
 
-L'esperienza guest presenta limitazioni di progettazione. Per un elenco completo delle operazioni che un utente guest può eseguire o meno in Teams, vedere [confronto tra le funzionalità dei membri del team e degli utenti guest](guest-experience.md#comparison-of-team-member-and-guest-capabilities).
+L'esperienza degli utenti guest presenta limitazioni nel design. Per un elenco completo delle attività che un guest può o non può eseguire in Teams, vedi [Accesso guest in Microsoft Teams](guest-experience.md).
 
 > [!IMPORTANT]
 > Gli utenti guest sono inclusi nelle impostazioni a livello di organizzazione di Teams per la modalità di aggiornamento della coesistenza. Questa impostazione non può essere modificata.
@@ -62,12 +62,12 @@ L'accesso guest in Teams richiede la configurazione di altre impostazioni in Mic
 
 Se si disattiva l'accesso guest in Teams, gli utenti guest esistenti perdono l'accesso al proprio team. Tuttavia, non vengono rimossi dal team. Sono ancora visibili ai membri del team e possono essere @menzionati. Se si riattiva l'accesso guest di Teams, l'accesso verrà recuperato.
 
-Se si ha intenzione di lasciare disattivato l'accesso guest, si consiglia di informare i proprietari dei team di rimuovere manualmente gli account guest dai team. Sebbene questi ospiti non avranno accesso, avere i loro account visibili nel team potrebbe creare confusione agli altri membri del team.
+Se si ha intenzione di lasciare disattivato l'accesso guest, si consiglia di informare i proprietari dei team di rimuovere manualmente gli account guest dai team. Anche se questi guest non hanno accesso, avere i loro account visibili nel team potrebbe creare confusione per altre persone del team.
 
-## <a name="how-a-guest-becomes-a-member-of-a-team"></a>Come diventare un membro di un team da utente guest
+## <a name="how-a-guest-gets-added-to-a-team"></a>Come viene aggiunto un guest a un team
 
 1. Il proprietario di un team o un amministratore di Microsoft 365 [aggiunge un utente guest al team](https://support.office.com/article/add-guests-to-a-team-fccb4fa6-f864-4508-bdde-256e7384a14f).
-2. Il guest riceve un'e-mail di benvenuto dal proprietario del team, contenente informazioni sul team e sulle funzionalità disponibili in quanto nuovo membro.
+2. Il guest riceve un messaggio di posta elettronica di benvenuto dal proprietario del team, con informazioni sul team e su cosa aspettarsi dopo l'aggiunta.
 3. Il guest accetta l'invito.
   Gli utenti guest che hanno un account aziendale o dell'Istituto di istruzione per Azure Active Directory possono accettare l'invito e autenticarsi direttamente. Agli altri utenti viene inviato un passcode monouso per convalidare la propria identità (obbligatoria l’[autenticazione con passcode monouso](/azure/active-directory/external-identities/one-time-passcode))
 4. Dopo aver accettato l'invito, il guest può [partecipare a team e canali](https://support.office.com/article/df38ae23-8f85-46d3-b071-cb11b9de5499), ricevere e rispondere ai messaggi del canale, [accedere ai file nei canali](https://support.office.com/article/access-files-in-channels-c593c78a-27c4-4661-a598-682baa30ca7e), partecipare alle chat, partecipare alle riunioni, collaborare ai documenti e altro ancora. 
@@ -83,11 +83,14 @@ I guest possono abbandonare il team in qualsiasi momento tramite Teams. Per i de
 
 L'accesso guest può essere usato in tutti gli abbonamenti di Microsoft 365 Business Standard, Microsoft 365 Enterprise e Microsoft 365 Education. Non sono necessarie altre licenze di Microsoft 365. Il [modello di fatturazione per Azure AD per identità esterne](/azure/active-directory/b2b/licensing-guidance) si applica agli utenti guest in Microsoft 365. Solo le persone esterne all'organizzazione possono essere invitate come utenti guest.
 
+> [!NOTE]
+> La conversione di un account guest in un account Azure AD o la conversione di un account membro Azure AD in un account guest non è supportata da Teams.
+
 ## <a name="guest-access-reviews"></a>Verifiche di accesso per gli utenti guest
 
-È possibile usare Azure AD per creare una verifica di accesso per i membri del gruppo o gli utenti assegnati a un'applicazione. La creazione di verifiche di accesso ricorrenti consente di risparmiare tempo. Se è necessario verificare abitualmente gli utenti che hanno accesso a un'applicazione, un team o sono membri di un gruppo, è possibile definire la frequenza di tali verifiche. 
+È possibile usare Azure AD per creare una verifica di accesso per gli utenti che sono in gruppi o sono stati assegnati a un'applicazione. La creazione di verifiche di accesso ricorrenti consente di risparmiare tempo. Se è necessario verificare regolarmente gli utenti che hanno accesso a un'applicazione, a un team o a un gruppo, è possibile definire la frequenza di tali revisioni. 
 
-È possibile eseguire la verifica dell'accesso guest, chiedere agli utenti guest di verificare l'appartenenza o rivolgersi al proprietario di un’applicazione o a un decisore aziendale per eseguire la verifica di accesso. Usare il portale di Azure per eseguire le verifiche di accesso degli utenti guest. Per altre informazioni, vedere [Gestire l'accesso guest con le verifiche di accesso di Azure AD](/azure/active-directory/governance/manage-guest-access-with-access-reviews).
+È possibile eseguire la verifica dell'accesso guest, chiedere ai guest di verificare il proprio accesso o chiedere a un proprietario dell'applicazione o a un responsabile delle decisioni aziendali di eseguire la verifica di accesso. Usare il portale di Azure per eseguire le verifiche di accesso degli utenti guest. Per altre informazioni, vedere [Gestire l'accesso guest con le verifiche di accesso di Azure AD](/azure/active-directory/governance/manage-guest-access-with-access-reviews).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -19,12 +19,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bdc626510a180185cae699106c1420880ea55e73
-ms.sourcegitcommit: b57e19e20900ff02f3196c811bf1dd1acd149c79
+ms.openlocfilehash: cdce0e30c1aaa3b40f362acda47c1a9ffa35161f
+ms.sourcegitcommit: 5e9b50cd1b513f06734be6c024ac06d293b27089
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60579700"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518938"
 ---
 # <a name="use-end-to-end-encryption-for-one-to-one-microsoft-teams-calls-public-preview"></a>Usare la crittografia end-to-end per le chiamate uno-a-uno di Microsoft Teams (anteprima pubblica)
 
@@ -77,7 +77,7 @@ Completare queste attività in modo che gli utenti possano effettuare chiamate c
 
 Il criterio predefinito globale a livello di organizzazione specifica che la crittografia end-to-end è disabilitata. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato. Per abilitare la crittografia end-to-end, creare un nuovo criterio di crittografia o modificare il criterio predefinito globale. Per abilitare la crittografia end-to-end tramite l'interfaccia di amministrazione di Teams, completare questi passaggi.
 
-1. Usando un account aziendale o dell'istituto di istruzione a cui è stato assegnato il ruolo di amministratore di Teams o globale, accedere all'interfaccia di amministrazione di [Teams](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+1. Usando un account aziendale o dell'istituto di istruzione a cui è stato assegnato il ruolo di amministratore di Teams o globale, accedere all'interfaccia di amministrazione di [Teams](https://admin.teams.microsoft.com/).
 
 2. Passare a **Altre impostazioni** > **Citeri di crittografia avanzata**.
 

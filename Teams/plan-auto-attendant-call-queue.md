@@ -1,5 +1,5 @@
 ---
-title: Pianificare l'Teams operatori automatici e le code di chiamata
+title: Pianificare Teams operatori automatici e code di chiamata
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -24,14 +24,14 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sugli operatori automatici e sulle code di chiamata e su come usarli per aiutare i chiamanti a spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 89c799f5d42adc3367f027a1dec258ba16d97aa6
-ms.sourcegitcommit: c7904086e6956ad8d0e5544530bcc90d608b6e6a
+ms.openlocfilehash: 700c1b6c2d9e433bbb82001db9ba6b12592280c2
+ms.sourcegitcommit: 5e9b50cd1b513f06734be6c024ac06d293b27089
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2022
-ms.locfileid: "62039889"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518888"
 ---
-# <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare l'Teams operatori automatici e le code di chiamata
+# <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare Teams operatori automatici e code di chiamata
 
 Gli operatori automatici consentono di configurare le opzioni di menu per instradare le chiamate in base all'input del chiamante. Opzioni di menu, ad esempio "Per le vendite, premere 1.  Per i servizi premere 2", per un operatore automatico consentire a un'organizzazione di fornire una serie di scelte che guidano i chiamanti verso la destinazione rapidamente, senza affidarsi a un operatore umano per gestire le chiamate in arrivo.
 
@@ -49,7 +49,7 @@ Ogni operatore automatico ha una lingua e un fuso orario specifici. Se si fanno 
 
 Per ogni operatore automatico, è possibile configurare un operatore. Anche se è possibile configurare le chiamate dell'operatore per passare a varie destinazioni, la funzionalità dell'operatore è progettata per consentire ai chiamanti di parlare con una persona specifica dell'organizzazione che può aiutarla.
 
-Gli operatori automatici possono essere configurati per consentire ai chiamanti di eseguire ricerche nella directory dell'organizzazione, in base al nome o al numero di interno. All'interno di un operatore automatico è possibile specificare chi è disponibile per la ricerca nella directory scegliendo gruppi di utenti da includere o escludere. Questo ambito è noto come *ambito di chiamata.*
+Gli operatori automatici possono essere configurati per consentire ai chiamanti di eseguire ricerche nella directory dell'organizzazione, in base al nome o al numero di interno. All'interno di un operatore automatico è possibile specificare chi è disponibile per la ricerca nella directory scegliendo gruppi di utenti da includere o escludere. Questo ambito è noto come *ambito di chiamata*.
 
 I chiamanti possono raggiungere un operatore automatico tramite un numero di telefono diretto, se configurato, oppure essere reindirizzati da un altro operatore automatico o da una coda di chiamata.
 
@@ -70,8 +70,8 @@ Per ogni coda di chiamata, è possibile specificare se gli agenti in coda posson
 Per configurare operatori automatici e code di chiamata, sono necessarie le risorse seguenti:
 
 - Un account della risorsa per ogni operatore automatico e ogni coda di chiamata
-- Una licenza Microsoft Teams Telefono - Utente virtuale per ogni account delle risorse
-- Almeno un numero [di servizio Microsoft,](getting-service-phone-numbers.md)Connessione con operatore, un numero di instradamento diretto o un numero ibrido per ogni account della risorsa che si vuole chiamare direttamente
+- Una licenza Telefono Microsoft System - Virtual User gratuita per ogni account delle risorse
+- Almeno un numero [di servizio Microsoft](getting-service-phone-numbers.md), Connessione con operatore, un numero di instradamento diretto o un numero ibrido per ogni account della risorsa che si vuole chiamare direttamente
  - Il numero di servizio può essere a numero verde o a numero verde
 
 > [!NOTE]
@@ -84,20 +84,20 @@ Gli agenti che ricevono chiamate dalle code di chiamata devono essere abilitati 
 
 Se gli agenti usano l'app Microsoft Teams per le chiamate in coda di chiamata, devono essere in modalità TeamsOnly.
 
-Quando si usa un account della risorsa per chiamare l'ID linea nelle code di chiamata o quando un operatore automatico o una coda di chiamata trasferisce le chiamate a un numero di telefono esterno, l'account della risorsa deve avere una licenza utente virtuale Teams Telefono e una delle seguenti:
+Quando si usa un account della risorsa per chiamare l'ID linea nelle code di chiamata o quando un operatore automatico o una coda di chiamata trasferisce le chiamate a un numero di telefono esterno, l'account della risorsa deve avere una licenza utente virtuale Sistema telefonico e una delle seguenti:
 
 - Una [licenza per il piano](calling-plans-for-office-365.md) di chiamata e un numero di telefono assegnato
 - Un [Connessione con operatore](operator-connect-plan.md) di telefono assegnato
 - Criteri [di routing vocale online](manage-voice-routing-policies.md) (l'assegnazione del numero di telefono è facoltativa quando si usa Il routing diretto)
 
 > [!NOTE]
-> Se il piano chiamate assegnato all'account della risorsa viene disabilitato o [rimosso,](what-are-communications-credits.md)verranno utilizzati i Crediti comunicazioni, se disponibili nel tenant (senza essere assegnati all'account della risorsa). Se non sono presenti piani per chiamate o crediti comunicazioni, la chiamata avrà esito negativo.
+> Se il piano chiamate assegnato all'account della risorsa viene disabilitato o [rimosso, i](what-are-communications-credits.md) Crediti comunicazioni, se disponibili nel tenant (senza essere assegnati all'account della risorsa), verranno utilizzati. Se non sono presenti piani per chiamate o crediti comunicazioni, la chiamata avrà esito negativo.
 >
-> I numeri di servizio Instradamento diretto per l'operatore automatico e le code di chiamata sono supportati solo Microsoft Teams utenti e agenti di chiamata.
+> I numeri di servizio Instradamento diretto per l'operatore automatico e le code di chiamata sono supportati solo per Microsoft Teams utenti e agenti di chiamata.
 > 
 > I trasferimenti tra i trunk Connessione con operatore piano di chiamata e instradamento diretto non sono supportati.
 > 
-> In uno scenario ibrido, l'account della risorsa deve essere creato in locale. Per altre informazioni, vedere [Pianificare le code di chiamata cloud.](/skypeforbusiness/hybrid/plan-call-queue)
+> In uno scenario ibrido, l'account della risorsa deve essere creato in locale. Per altre informazioni, vedere [Pianificare le code di chiamata cloud](/skypeforbusiness/hybrid/plan-call-queue).
 
 ## <a name="business-decisions"></a>Decisioni aziendali
 
@@ -128,12 +128,12 @@ Se necessario, è possibile usare una combinazione di queste opzioni per ogni co
 
 È consigliabile scegliere una strategia per l'aggiunta di agenti di chiamata alle code prima di iniziare la configurazione.
 
-Se si ha un operatore automatico e un'infrastruttura della coda di chiamata esistente e si esegue la migrazione a Teams, è necessario un piano per trasferire i numeri di telefono esistenti ai nuovi operatori automatici e alle code di chiamata. Potrebbe essere necessario creare un ordine [di trasferimento per](phone-number-calling-plans/port-order-overview.md) spostare i numeri da un altro provider. È consigliabile acquisire temporaneamente uno o più nuovi numeri di telefono e testare i flussi dell'operatore automatico e della coda di chiamata prima di cambiarli rispetto ai numeri attualmente in servizio.
+Se si ha un operatore automatico e un'infrastruttura della coda di chiamata esistente e si esegue la migrazione a Teams, è necessario un piano per trasferire i numeri di telefono esistenti ai nuovi operatori automatici e alle nuove code di chiamata. Potrebbe essere necessario creare un ordine [di trasferimento per](phone-number-calling-plans/port-order-overview.md) spostare i numeri da un altro provider. È consigliabile acquisire temporaneamente uno o più nuovi numeri di telefono e testare i flussi dell'operatore automatico e della coda di chiamata prima di cambiarli rispetto ai numeri attualmente in servizio.
 
-*La modalità* conferenza è un'opzione nelle code di chiamata che riduce significativamente il tempo necessario per connettere le chiamate VOIP e PSTN Teams a un agente. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono usare uno dei client seguenti:
+*La modalità* conferenza è un'opzione nelle code di chiamata che riduce significativamente il tempo necessario per connettere le chiamate VOIP e PSTN Teams un agente. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono usare uno dei client seguenti:
 
 - La versione più recente del client desktop Microsoft Teams, dell'app Android o dell'app iOS
-- Microsoft Teams Telefono versione 1449/1.0.94.2020051601 o successiva
+- Telefono Microsoft versione 1449/1.0.94.2020051601 o successiva
   
 Impostare gli account Teams agenti sulla Teams solo utenti. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate.
 
@@ -150,17 +150,17 @@ Gli operatori automatici instradare tutte le chiamate in uno dei modi seguenti:
 - **Reindirizza** immediatamente: le chiamate possono essere reindirizzate a una delle destinazioni di routing delle chiamate (elencate di seguito) immediatamente dopo aver risposto o dopo un messaggio di saluto iniziale.
 - **Reindirizzamento in base alle opzioni** di chiamata: i chiamanti possono scegliere tra le opzioni assegnate ai numeri sul tastierino del telefono, 0-9. A ogni tasto di chiamata può essere assegnata una destinazione di routing delle chiamate.
 - **Comporre persone per** nome o interno: i chiamanti possono essere indirizzati a comporre il numero di interno della persona che stanno cercando di raggiungere nell'elenco dell'organizzazione o digitando il nome della persona.
-- **Disconnetti:** un operatore automatico può riagganciare la chiamata.
+- **Disconnetti** : un operatore automatico può riagganciare la chiamata.
 
 > [!NOTE]
 > Un singolo operatore automatico può supportare un solo metodo di chiamata.  Per consentire ai chiamanti di effettuare chiamate in base al nome e al numero, è necessario creare un operatore automatico che abbia un'opzione per comporre per nome e l'altro per comporre per interno.  Ognuna di queste opzioni verrà instradato a operatori automatici separati configurati per questi scenari di chiamata.
 
 Quando le chiamate vengono reindirizzate da un operatore automatico o da una coda di chiamata, è possibile scegliere tra le destinazioni di routing delle chiamate seguenti:
 
-- **Persona dell'organizzazione:** una persona dell'organizzazione che è in grado di ricevere chiamate vocali. Può trattarsi di un utente online o di un utente ospitato in locale usando Skype for Business Server.
-- **App vocale:** un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato alla destinazione.
-- **Numero di telefono esterno:** qualsiasi numero di telefono. (Vedere [dettagli tecnici sul trasferimento esterno).](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details)
-- **Segreteria telefonica:** la cassetta postale vocale associata a un gruppo Microsoft 365 specificato dall'utente. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lasciare un messaggio dopo il tono". richiesta di sistema.
+- **Persona dell'organizzazione** : una persona dell'organizzazione che è in grado di ricevere chiamate vocali. Può trattarsi di un utente online o di un utente ospitato in locale usando Skype for Business Server.
+- **App vocale** : un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato alla destinazione.
+- **Numero di telefono esterno** : qualsiasi numero di telefono. (Vedere [dettagli tecnici sul trasferimento esterno](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details)).
+- **Segreteria telefonica**: la cassetta postale vocale associata a Microsoft 365 gruppo specificato dall'utente. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lasciare un messaggio dopo il tono". richiesta di sistema.
 - **Operatore** (solo operatore automatico): l'operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. Un operatore può essere una qualsiasi delle altre destinazioni dell'elenco.
 
 Gli operatori automatici offrono opzioni di routing delle chiamate separate per le chiamate ricevute al di fuori dell'orario di ufficio e nei giorni festivi. L'instradamento delle chiamate dopo le ore consente tutte le opzioni elencate sopra, mentre l'instradamento delle chiamate natalizie consente solo il reindirizzamento o la disconnessione di una chiamata, ma non le opzioni dei tasti di chiamata.
@@ -168,7 +168,7 @@ Gli operatori automatici offrono opzioni di routing delle chiamate separate per 
 Le code di chiamata tengono il chiamante in attesa finché un agente assegnato alla coda non è disponibile per la chiamata. Esistono due situazioni in cui un chiamante potrebbe essere indirizzato fuori dalla coda:There are two situations where a caller might be directed out of the queue:
 
 - **Overflow delle** chiamate: se il numero di chiamate nella coda supera il limite impostato, i nuovi chiamanti vengono reindirizzati fuori dalla coda.
-- **Timeout chiamata:** se un chiamante è stato in coda più a lungo dell'impostazione di timeout configurata, viene reindirizzato fuori dalla coda.
+- **Timeout chiamata** : se un chiamante è stato in coda più a lungo dell'impostazione di timeout configurata, viene reindirizzato fuori dalla coda.
 
 Le chiamate reindirizzate da una coda possono essere inviate a una delle destinazioni di routing delle chiamate elencate sopra, ad eccezione di un operatore. Le code di chiamata non hanno operatori, ma è possibile reindirizzare i chiamanti alla stessa destinazione di un operatore configurato per un operatore automatico.
 
@@ -178,7 +178,7 @@ L'esempio seguente mostra un esempio di routing delle chiamate con operatori aut
 
 Nell'esempio precedente:
 
-- Il tasto zero (0) reindirizza i chiamanti a un operatore. L'operatore per l'operatore automatico è stato configurato come **Persona nell'organizzazione.**
+- Il tasto zero (0) reindirizza i chiamanti a un operatore. L'operatore per l'operatore automatico è stato configurato come **persona dell'organizzazione**.
 - Il tasto uno (1) reindirizza i chiamanti alla coda di chiamata di vendita. Questa coda di chiamata è connessa a un team che contiene il team di vendita assegnato alla coda.
 - Il tasto due (2) reindirizza i chiamanti alla coda di chiamata di supporto. Questa coda di chiamata è connessa a un team che contiene il team di supporto assegnato al team.
 - La coda di chiamata di supporto ha un numero di telefono diretto tramite un operatore automatico interviene. Avere un operatore automatico che risponda alla linea di supporto consente orari di ferie separati e instradamento delle chiamate per le festività.
@@ -205,15 +205,15 @@ Ecco alcune procedure consigliate per il routing delle chiamate:
 
 Dopo aver completato le attività di pianificazione descritte in questo articolo, seguire questa procedura per configurare gli operatori automatici e le code di chiamata:
 
-1. Ottenere i numeri di servizio necessari per gli operatori automatici e le code di chiamata a cui si vuole essere accessibili componendo direttamente dall'esterno dell'organizzazione. Questo può includere [il trasferimento di numeri da un altro provider o](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) la richiesta di nuovi numeri di [servizio.](getting-service-phone-numbers.md)
+1. Ottenere i numeri di servizio necessari per gli operatori automatici e le code di chiamata a cui si vuole essere accessibili componendo direttamente dall'esterno dell'organizzazione. Questo può includere [il trasferimento di numeri da un altro provider o](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) [la richiesta di nuovi numeri di servizio](getting-service-phone-numbers.md).
 
-2. Ottenere una [Teams Telefono - Licenza utente virtuale](teams-add-on-licensing/virtual-user.md) per ogni account delle risorse che si prevede di creare. Queste licenze sono gratuite, quindi ti consigliamo di ottenere un po' di più nel caso in cui decidi di apportare modifiche agli account delle risorse in futuro.
+2. Ottenere una [Sistema telefonico - Licenza utente virtuale](teams-add-on-licensing/virtual-user.md) per ogni account delle risorse che si prevede di creare. Queste licenze sono gratuite, quindi ti consigliamo di ottenere un po' di più nel caso in cui decidi di apportare modifiche agli account delle risorse in futuro.
 
-3. [Creare un account della risorsa](manage-resource-accounts.md) per ogni operatore automatico e coda di chiamata che si vuole creare. Assegnare a ogni account Teams Telefono - Licenza utente virtuale e, facoltativamente, un numero di servizio.
+3. [Creare un account della risorsa](manage-resource-accounts.md) per ogni operatore automatico e coda di chiamata che si vuole creare. Assegnare a ogni account Sistema telefonico - Licenza utente virtuale e, facoltativamente, un numero di servizio.
 
 4. [Creare le festività](set-up-holidays-in-teams.md) per cui si vuole disporre di un instradamento delle chiamate separato negli operatori automatici.
 
-5. Facoltativamente, [configurare il parcheggio e il](call-park-and-retrieve.md) recupero delle chiamate se si vuole usare questa funzionalità per facilitare i trasferimenti di chiamata.
+5. Facoltativamente, [configurare il parcheggio e il recupero delle](call-park-and-retrieve.md) chiamate se si vuole usare questa funzionalità per facilitare i trasferimenti di chiamata.
 
 6. Creare i gruppi da usare per contenere gli agenti di chiamata per le code di chiamata.
 
@@ -226,7 +226,7 @@ Per informazioni su come creare operatori automatici e code di chiamata, vedere 
 - [Configurare un operatore automatico](create-a-phone-system-auto-attendant.md)
 - [Creare una coda di chiamata](create-a-phone-system-call-queue.md)
 
-Se sono necessarie funzionalità più estese, ad esempio l'integrazione con flussi di lavoro, bot e SMS, prendere in considerazione [Servizi di comunicazione di Azure.](/azure/communication-services/overview)
+Se sono necessarie funzionalità più estese, ad esempio l'integrazione con flussi di lavoro, bot e SMS, considerare [Azure Communication Services](/azure/communication-services/overview).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

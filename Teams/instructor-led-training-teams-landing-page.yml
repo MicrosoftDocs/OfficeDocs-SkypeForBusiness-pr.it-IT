@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Formazione per gli utenti finali per Microsoft Teams
-summary: "Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti e in tempo reale, creati per consentirti di iniziare subito a usare Teams. \_ Che tu sia il decision maker dell’azienda, un amministratore, un professionista IT o un utente finale, troverai un corso adatto a te. Unisciti a noi per Microsoft Teams in azione, ottenere risposte alle tue domande e interagire con i nostri istruttori in tempo reale. Per visualizzare le lezioni di formazione nel proprio tempo, visita la nostra formazione su richiesta per gli utenti finali. Fai clic su una sessione di seguito per iscriverti."
+summary: "Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti e in tempo reale, creati per consentirti di iniziare subito a usare Teams. \_ Che tu sia il decision maker dell’azienda, un amministratore, un professionista IT o un utente finale, troverai un corso adatto a te. Unisciti a noi per vedere Microsoft Teams in azione, ottenere risposte alle tue domande e interagire con i nostri istruttori in tempo reale. Per visualizzare le lezioni di formazione nel proprio tempo, visita la nostra formazione su richiesta per gli utenti finali. Fai clic su una sessione di seguito per iscriverti."
 brand: teams
 metadata:
   title: Formazione per gli utenti finali per Microsoft Teams
-  description: "Microsoft è entusiasta di fornire corsi di formazione virtuali gratuiti, in tempo reale, progettati per iniziare a utilizzare Teams. \_ Che tu sia il decision maker dell’azienda, un amministratore, un professionista IT o un utente finale, troverai un corso adatto a te. Unisciti a noi per Microsoft Teams in azione, ottenere risposte alle tue domande e interagire con i nostri istruttori in tempo reale. Fai clic su una sessione di seguito per iscriverti e assicurati di consultare altri corsi più avanti."
+  description: "Microsoft è entusiasta di fornire corsi di formazione virtuali gratuiti, in tempo reale, progettati per iniziare a utilizzare Teams. \_ Che tu sia il decision maker dell’azienda, un amministratore, un professionista IT o un utente finale, troverai un corso adatto a te. Unisciti a noi per vedere Microsoft Teams in azione, ottenere risposte alle tue domande e interagire con i nostri istruttori in tempo reale. Fai clic su una sessione di seguito per iscriverti e assicurati di consultare altri corsi più avanti."
   ms.topic: hub-page
   author: SerdarSoysal
   ms.author: serdars
@@ -62,9 +62,9 @@ additionalContent:
   sections:
     - title: Corsi
       items:
-        - title: Certificazione di Teamwork Specialist
-          summary: La collaborazione è un'abilità fondamentale per la forza lavoro di oggi. Scopri in che modo le funzionalità robuste Microsoft Teams consentono di rimanere connessi e lavorare in modo più efficiente con il team
+        - title: Percorso Learning teamwork specialist
+          summary: La collaborazione è un'abilità fondamentale per la forza lavoro di oggi. Scopri in che modo le funzionalità robuste Microsoft Teams consentono di rimanere connessi e lavorare in modo più efficiente con il team.
           url: /learn/paths/teamwork-specialist
-        - title: Certificazione Service Adoption Specialist
-          summary: Il corso di certificazione Microsoft Service Adoption Specialist Teams. Scopri come guidare l'adozione di servizi Microsoft nell'organizzazione
+        - title: Service Adoption Specialist Learning Path
+          summary: Microsoft Service Adoption Specialist Learning Path Teams e altri Microsoft 365 servizi. Informazioni su come guidare l'adozione di servizi Microsoft nell'organizzazione.
           url: /learn/paths/m365-service-adoption
