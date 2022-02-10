@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Scopri quali Session Border Controller (SBC) sono stati certificati per l'instradamento diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 71ba2fc6856b57a2619122b1c7341404651d4e8f
-ms.sourcegitcommit: b1d1a2b27c9dbc73a306bd69696fceda77688b26
+ms.openlocfilehash: 69add2b195da03dee69b2a33583b5dbed8f614e8
+ms.sourcegitcommit: 5e9b50cd1b513f06734be6c024ac06d293b27089
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "62432855"
+ms.lasthandoff: 02/10/2022
+ms.locfileid: "62518928"
 ---
 # <a name="session-border-controllers-certified-for-direct-routing"></a>Session Border Controller certificati per l'instradamento diretto
 
@@ -37,14 +37,14 @@ Microsoft collabora con ogni fornitore per:
 - Stabilire un processo di supporto congiunto con i fornitori di SBC.
 
   > [!NOTE]
-  > Microsoft supporta Sistema telefonico solo se uno o più dispositivi certificati sono connessi tramite instradamento diretto. In caso di problemi, il cliente deve prima contattare l'assistenza clienti dei fornitori SBC. Se necessario, il fornitore SBC invierà il problema a Microsoft tramite canali interni. Microsoft si riserva il diritto di rifiutare i casi di supporto in cui un dispositivo non certificato è connesso a Sistema telefonico tramite instradamento diretto. Se Microsoft determina che il problema di instradamento diretto di un cliente riguarda un dispositivo SBC di un fornitore, il cliente dovrà contattare nuovamente il fornitore SBC per ricevere supporto.
+  > Microsoft supporta solo un sistema telefonico con instradamento diretto se usato con dispositivi certificati. In caso di problemi, è necessario contattare prima l'assistenza clienti del fornitore SBC. Se necessario, il fornitore SBC invierà il problema a Microsoft tramite canali interni. Microsoft si riserva il diritto di rifiutare i casi di supporto in cui un dispositivo non certificato è connesso al sistema telefonico tramite instradamento diretto. Se Microsoft determina che il problema di instradamento diretto di un cliente riguarda un dispositivo SBC di un fornitore, il cliente dovrà contattare nuovamente il fornitore SBC per ricevere supporto.
   >
   > La certificazione viene concessa a specifiche versioni del firmware SBC. Qualsiasi versione del firmware SBC documentata di seguito è certificata e supportata. Le versioni del firmware superiori a quelle documentate sono supportate purché la versione principale.secondaria sia la stessa.
   >
   > Esempio:
   >
-  > - Supportata 6.10.258: in questo caso, sono supportate anche le versioni del firmware 6.10. (258 o versioni successive).
-  > - Consigliato 6.20.100: in questo caso è consigliabile anche la versione firmware 6.20. (100 o versione successiva).
+  > - Supportata 6.10.258 - In questo caso, Microsoft supporta la versione firmware 6.10. (258 o versioni successive).
+  > - Consigliato 6.20.100 - In questo caso, Microsoft consiglia la versione firmware 6.20. (100 o versione successiva).
   > - Per domande sul supporto di una versione specifica, contattare il fornitore del SBC.
 
 Le tabelle di seguito elencano i dispositivi certificati per l'instradamento diretto. Per informazioni sui fornitori di SBC che supportano l'ottimizzazione degli elementi multimediali locali, vedere [Configurare l'ottimizzazione degli elementi multimediali locali per l'instradamento diretto](direct-routing-media-optimization-configure.md).
@@ -95,7 +95,7 @@ Per eventuali domande sul programma di certificazione di SBC per l'instradamento
 |                     [Ericsson](https://www.ericsson.com/en/portfolio/digital-services/cloud-communication/enterprise-communication/business-communication-services-and-enablers/sip-trunking)|    vSBC 2.16     |     &#10004;     |           |              |     |    |
 |                     [Cataleya](https://cataleya.com/orchidplatforms/)|    Orchid Link    |     &#10004;     |           |      3.1        |     |    |
 |                     [ULTATEL](https://www.ultatel.com/services/direct-routing-teams-sbc)|    Teams SBC    |     &#10004;     |     &#10004;      |      1.6        |     |    |
-|                     [Atos](https://unify.com/en/solutions/voice-platforms/session-border-controller)|    Atos Unify OpenScape Session Border Controller   |     &#10004;     |   &#10004;        |     Supportata senza Media Bypass V10R1.2 (scelta consigliata per Media Bypass V10R2.2.0)     |     |    |
+|                     [Atos](https://unify.com/en/solutions/voice-platforms/session-border-controller)|    Atos Unify OpenScape Session Border Controller   |     &#10004;     |   &#10004;        |     V10R2.2.0     |     |    |
 |                     [Sansay Inc.](https://www.sansay.com/solutions/microsoft-teams/)|    vmVSXi   |     &#10004;     |     &#10004;     |      10.5.1.354-vm-S-x64      |     |    |
 |                     [Enghouse Networks](https://www.enghousenetworks.com/portfolio/network-infrastructure/cloud-native-session-border-controller-sbc/)|    Dialogic BorderNet SBC   |     &#10004;     |     &#10004;     |      3.9.0-786      |     |    |
 |                     [Patton Electronics Co.](https://www.patton.com/microsoft/)|    Patton SmartNode eSBC   |     &#10004;     |         |      3.19.x      |     |    |
@@ -173,7 +173,7 @@ Nella tabella seguente sono elencati i dispositivi verificati per l'interoperabi
 | [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 6000. Versione software: 16.1.1](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances)   |     &#10004;     |
 | [TE-SYSTEMS](https://www.anynode.de/anynode-and-microsoft-teams/) |  anynode con Grandstream GXW42xx (V1.0.7.10) |     &#10004;     |
   
-Vedere [UserVoice](https://microsoftteams.uservoice.com) per inviare feedback di prodotto su Teams, ad esempio idee per nuove funzionalità.
+Vedere [UserVoice](https://microsoftteams.uservoice.com) per inviare feedback su Teams, ad esempio idee per nuove funzionalità.
 
 
 [!INCLUDE [uservoice-disclaimer-note](includes/uservoice-disclaimer-note.md)]
