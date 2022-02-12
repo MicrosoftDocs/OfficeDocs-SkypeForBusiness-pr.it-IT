@@ -20,12 +20,12 @@ ms.localizationpriority: high
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0146c77fc5727a1dc57a7062eeb62cebaba46034
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: 07d050782dfef1ce89f54891302457c2f1616fa5
+ms.sourcegitcommit: 2e8daa3511cd198b3e0d43b153dd37a59cb21692
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61766219"
+ms.lasthandoff: 02/11/2022
+ms.locfileid: "62763649"
 ---
 # <a name="quick-start---meetings-webinars-and-live-events"></a>Guida introduttiva: riunioni, webinar ed eventi live 
 
@@ -86,7 +86,8 @@ La tabella seguente evidenzia gli articoli principali da esaminare:
 | [Criteri riunione](meeting-policies-overview.md)  | Descrive come creare e gestire i criteri che determinano quali funzionalità sono disponibili per i partecipanti alla riunione. | 
 | [Gestire la registrazione delle riunioni di Teams nel cloud](cloud-recording.md) | Descrive come gestire le registrazioni delle riunioni. |
 | [Gestire i dispositivi dell'organizzazione](device-management.md)| Descrive come gestire i dispositivi dell'organizzazione, ad esempio telefoni e Teams Rooms. |
-||
+| [Usare i dati di telemetria in tempo reale per risolvere problemi di scarsa qualità delle riunioni](use-real-time-telemetry-to-troubleshoot-poor-meeting-quality.md) | Descrive come usare Real-Time Analytics (RTA) per risolvere i problemi di qualità scarsa Microsoft Teams riunione per singoli utenti. 
+|||
 
 #### <a name="key-training-for-end-users"></a>Formazione chiave per gli utenti finali
 

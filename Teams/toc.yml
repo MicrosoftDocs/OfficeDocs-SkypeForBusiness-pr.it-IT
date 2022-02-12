@@ -249,18 +249,6 @@ items:
                 href: /SkypeForBusiness/hybrid/cloud-consolidation-aad-connect
           - name: Integrazione con Exchange e SharePoint
             href: /SkypeForBusiness/skype-for-business-hybrid-solutions/integration-with-exchange-and-sharepoint
-  - name: Aggiornare da Kaizala
-    items:
-      - name: Per iniziare
-        href: get-started-kaizala-teams.md
-      - name: Effettuare i preparativi per l'aggiornamento
-        href: prepare-for-teams-kaizala.md
-      - name: Pianificare il percorso verso l'aggiornamento
-        href: plan-your-move-kaizala.md
-      - name: Esplora Microsoft Teams
-        href: navigate-teams.md
-      - name: Acquisire familiarità con Microsoft Teams
-        href: drive-adoption-optimize-kaizala.md
   - name: 'Sicurezza, conformità e privacy'
     items:
       - name: Panoramica
@@ -909,10 +897,6 @@ items:
                     href: direct-routing-media-optimization.md
                   - name: Configurare l'ottimizzazione degli elementi multimediali locali
                     href: direct-routing-media-optimization-configure.md
-              - name: Account utente in un ambiente ibrido con connettività PSTN
-                href: direct-routing-user-accounts-in-a-hybrid-environment.md
-              - name: Eseguire la migrazione a Instradamento diretto
-                href: direct-routing-migrating.md
               - name: Monitorare e risolvere i problemi di Instradamento diretto
                 items:
                   - name: Panoramica
@@ -972,7 +956,7 @@ items:
           - name: Gestire i numeri di telefono di Connessione con operatore
             href: operator-connect-configure.md#set-up-phone-numbers
           - name: Gestire i numeri di telefono per l'instradamento diretto
-            href: direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice-and-voicemail-online
+            href: direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice
       - name: Routing vocale
         items:
           - name: Che cosa sono i piani di chiamata?
@@ -1753,6 +1737,18 @@ items:
             href: get-started-with-teams-essentials.md
           - name: Connettere Teams Essentials (identità AAD) alla posta elettronica
             href: connect-teams-essentials-to-email.md
+      - name: Aggiornare da Kaizala
+        items:
+          - name: Per iniziare
+            href: get-started-kaizala-teams.md
+          - name: Effettuare i preparativi per l'aggiornamento
+            href: prepare-for-teams-kaizala.md
+          - name: Pianificare il percorso verso l'aggiornamento
+            href: plan-your-move-kaizala.md
+          - name: Esplora Microsoft Teams
+            href: navigate-teams.md
+          - name: Acquisire familiarità con Microsoft Teams
+            href: drive-adoption-optimize-kaizala.md
       - name: Interoperabilità con Microsoft 365 e Office 365
         items:
           - name: Gruppi di Microsoft 365 e Teams
@@ -1762,8 +1758,9 @@ items:
           - name: Migliorare i gruppi di Microsoft 365 con Teams
             href: enhance-office-365-groups.md
           - name: Modalità di interazione tra Exchange e Teams
-            href: exchange-teams-interact.md
             items:
+              - name: Modalità di interazione tra Exchange e Teams
+                href: exchange-teams-interact.md
               - name: Configurare un'organizzazione ibrida di Exchange da usare con Teams
                 href: exchange-hybrid-organization.md
               - name: Usare le regole del flusso di posta con Exchange
