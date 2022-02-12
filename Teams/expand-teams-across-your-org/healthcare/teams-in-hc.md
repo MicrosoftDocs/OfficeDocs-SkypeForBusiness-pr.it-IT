@@ -26,18 +26,18 @@ description: Scopri le funzionalità di assistenza sanitaria come la telemedicin
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 665cb047bf19a14c88d0c84c3276aaec305bb2d6
-ms.sourcegitcommit: 4df3d144296b9b8982109be7edaffd636aabdf29
+ms.openlocfilehash: f257dbf999a333cb9b40d391cf15758631a4ffa6
+ms.sourcegitcommit: 2e8daa3511cd198b3e0d43b153dd37a59cb21692
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "60960015"
+ms.lasthandoff: 02/11/2022
+ms.locfileid: "62763351"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Guida introduttiva a Teams per le organizzazioni del settore sanitario
 
 Microsoft Teams offre una serie di funzionalità di telemedicina utili per ospedali e altre organizzazioni sanitarie. Le funzionalità di Teams sono in fase di sviluppo per aiutare gli ospedali con:
 
-- Integrazione di visite virtuali e cartelle cliniche elettroniche (CCE)
+- Integrazione di Visite virtuali e Electronic Healthcare Record (EHR)
 - Pacchetti di criteri per Teams
 - Messaggistica protetta
 - Modelli di Teams
@@ -45,7 +45,7 @@ Microsoft Teams offre una serie di funzionalità di telemedicina utili per osped
 
 Questa funzionalità fa parte di Microsoft Cloud per il settore sanitario. Ulteriori informazioni sull'utilizzo di questa soluzione, che riunisce le funzionalità di Azure, Dynamics 365 e Microsoft 365 su[Microsoft Cloud per il Settore Sanitario](/industry/healthcare).
 
-Guardare il video seguente per altre informazioni sull'uso della raccolta di assistenza sanitaria per migliorare la collaborazione del team sanitario in Teams.
+Guardare il video seguente per altre informazioni sull'uso della raccolta di servizi sanitari per migliorare la collaborazione del team sanitario in Teams.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hqan]
 
@@ -56,8 +56,8 @@ I seguenti scenari sono disponibili per le organizzazioni sanitarie:
 
 | Scenario | Descrizione | Requisiti |
 | -------- | -------- | -------- |
-| [Integrazione di visite virtuali e cartelle cliniche elettroniche (CCE)](#virtual-visits-and-electronic-healthcare-record-ehr-integration) | Pianifica, gestisci e conduci visite virtuali con i pazienti. Questo scenario connette Teams e la piattaforma Cerner o Epic per supportare le visite virtuali. | Abbonamento attivo a Microsoft Cloud per il settore sanitario o abbonamento a un'offerta autonoma Microsoft Teams connettore EHR. <br> Gli utenti devono avere una licenza Microsoft 365 o Office 365 che includa Teams riunioni*. <br> Le organizzazioni devono avere la versione Cerner di novembre 2018 o successiva o la versione Epic di novembre 2018 o successiva. <br>Dettagli per [i requisiti Cerner EHR](ehr-admin-cerner.md#before-you-begin) ed [Epic EHR](ehr-admin.md#before-you-begin) |
-| [Visite virtuali con Microsoft Bookings e l’app Bookings](#virtual-visits-and-electronic-healthcare-record-ehr-integration) | Pianifica, gestisci e conduci visite virtuali con i pazienti. Questo scenario si basa su Microsoft Bookings per supportare le visite virtuali. | Microsoft Bookings deve essere attivato per l'organizzazione. <br> Tutti gli utenti dell'app Bookings e tutto il personale che partecipa alle riunioni devono disporre di una licenza che supporti la pianificazione delle riunioni di Teams *. <br>[Dettagli per i requisiti di Bookings](../../bookings-app-admin.md#prerequisites-for-using-the-bookings-app-in-teams)|
+| [Visite virtuali con integrazione EHR (Electronic Healthcare Record)](#virtual-visits-and-electronic-healthcare-record-ehr-integration) | Pianificare, gestire e condurre appuntamenti virtuali con i pazienti. Questo scenario connette Teams e la piattaforma Cerner o Epic per supportare le visite virtuali. | Abbonamento attivo a Microsoft Cloud per il settore sanitario o abbonamento a un'offerta autonoma Microsoft Teams connettore EHR. <br> Gli utenti devono avere una licenza Microsoft 365 o Office 365 che includa Teams riunioni*. <br> Le organizzazioni devono avere la versione Cerner di novembre 2018 o successiva o la versione Epic di novembre 2018 o successiva. <br>Dettagli per [i requisiti Cerner EHR](ehr-admin-cerner.md#before-you-begin) ed [Epic EHR](ehr-admin.md#before-you-begin) |
+| [Visite virtuali con Microsoft Bookings e l'app Bookings](#virtual-visits-and-electronic-healthcare-record-ehr-integration) | Pianificare, gestire e condurre appuntamenti virtuali con i pazienti. Questo scenario si basa su Microsoft Bookings per supportare le visite virtuali. | Microsoft Bookings deve essere attivato per l'organizzazione. <br> Tutti gli utenti dell'app Bookings e tutto il personale che partecipa alle riunioni devono disporre di una licenza che supporti la pianificazione delle riunioni di Teams *. <br>[Dettagli per i requisiti di Bookings](../../bookings-app-admin.md#prerequisites-for-using-the-bookings-app-in-teams)|
 | [Pacchetti di criteri di Teams](#teams-policy-packages)| Garantire che gli operatori clinici, gli operatori dell'informazione e i dispositivi delle stanze dei pazienti abbiano l'accesso appropriato alla funzionalità di Teams.| L'utente deve disporre di una licenza appropriata*. |
 | [Messaggistica protetta](#secure-messaging) | Attenzione più rapida ai messaggi urgenti e sicurezza che il messaggio sia stato ricevuto e letto. | L'utente deve disporre di una licenza appropriata*.  |
 | [Modelli di Teams](#teams-templates-for-healthcare-organizations) | Crea team che includano un modello predefinito di impostazioni, canali e app preinstallate per la comunicazione e la collaborazione all'interno di un reparto o tra più reparti in un ospedale. | L'utente deve disporre di una licenza appropriata*.  |
@@ -65,12 +65,12 @@ I seguenti scenari sono disponibili per le organizzazioni sanitarie:
 
 *Office 365 A3, A5, E3, E5, F1, F3, Microsoft 365 A3, A5, E3 ed E5, Business Standard sono supportati. Per altre informazioni sull'assegnazione di una licenza generale di Teams, vedere [Gestire l'accesso degli utenti a Teams](../../user-access.md).
 
-## <a name="virtual-visits-and-electronic-healthcare-record-ehr-integration"></a>Integrazione di visite virtuali e cartelle cliniche elettroniche (CCE)
+## <a name="virtual-visits-and-electronic-healthcare-record-ehr-integration"></a>Integrazione di Visite virtuali e Electronic Healthcare Record (EHR)
 
-Usare la piattaforma completa di riunioni in Teams programmare, gestire e condurre visite virtuali con i pazienti.
+Usare la piattaforma completa di riunioni in Teams pianificare, gestire e condurre appuntamenti virtuali con i pazienti.
 
-- Se l'organizzazione usa già Electronic Health Records o EHR, è possibile integrare Teams per un'esperienza più fluida. Teams connettore Electronic Health Record (EHR) consente ai medici di avviare facilmente una visita virtuale del paziente o una consultazione con un altro provider in Teams direttamente dal sistema EHR. Per altre informazioni, vedere Visite virtuali con Teams - Integrazione in [Cerner EHR](ehr-admin-cerner.md) e Visite virtuali con Teams - Integrazione [in Epic EHR.](ehr-admin.md)
-- Se non usi una cartella clinica elettronica supportata, puoi usare Microsoft Bookings e l'app Bookings in Teams. Per altre informazioni, vedere [Visite virtuali con Teams e l'app Bookings.](../bookings-virtual-visits.md)
+- Se l'organizzazione usa già Electronic Health Records o EHR, è possibile integrare Teams per un'esperienza più fluida. Teams connettore Electronic Health Record (EHR) consente ai medici di avviare facilmente una visita virtuale del paziente o una consultazione con un altro provider Teams direttamente dal sistema EHR. Per altre informazioni, vedere Visite virtuali con Teams - Integrazione in [Cerner EHR](ehr-admin-cerner.md) e Visite virtuali con Teams [- Integrazione in Epic EHR](ehr-admin.md).
+- Se non usi una cartella clinica elettronica supportata, puoi usare Microsoft Bookings e l'app Bookings in Teams. Per altre informazioni, vedere [Visite virtuali con Teams e l'app Bookings](../bookings-virtual-visits.md).
 
 ![Visite virtuali con Microsoft Teams.](../../media/virtual-visits-teams.png)
 
@@ -107,7 +107,7 @@ Riunire il team sanitario per coordinare le cure e collaborare con Teams.
 
 ![Assistenza sanitaria: collaborare con il team sanitario in Teams.](../../media/teams-healthcare-collaborate-in-teams.png)
 
-Teams consente a medici, medici, infermieri e altro personale di collaborare in modo efficiente con funzionalità di collaborazione incluse in Teams, ad esempio:
+Teams consente a medici, medici, infermieri e altri membri del personale di collaborare in modo efficiente con funzionalità di collaborazione incluse in Teams, ad esempio:
 
 - Crea team e canali per i team sanitari e gli operatori dell'informazione. Usa i canali con le schede come metodo per strutturare il loro lavoro, con ulteriore aiuto dalle schede in cui potranno bloccare fonti di informazioni.
 - Chatta, pubblica messaggi e comunica. Il tuo team può avere conversazioni permanenti su diversi pazienti bisognosi di attenzioni.
@@ -152,7 +152,7 @@ Puoi consentire l'app Approvazioni per la tua organizzazione e aggiungerla ai te
 
 ### <a name="create-manage-and-share-schedules-with-the-shifts-app-and-frontline-worker-integration"></a>Crea, gestisci e condividi pianificazioni con l'app Turni e l’integrazione personale sul campo
 
-Teams si integra con l'app Turni e Frontline Worker, che possono essere usati per coordinare le caratteristiche del personale a turni e altro ancora. Ad esempio, in Turni, i caposala possono impostare e coordinare i programmi per il proprio personale e gli infermieri possono controllare i programmi e scambiare i turni. Teams include un criterio predefinito di configurazione dell’app per operatori sul campo che è possibile assegnare agli operatori sul campo dell’organizzazione. Per impostazione predefinita, il criterio include le app Attività, Turni, Chat e Chiamate. Questo criterio controlla il comportamento di queste app, ad esempio, aggiungendo l'app Turni alla barra delle app in modo che il team possa accedervi rapidamente.
+Teams si integra con l'app Turni e l’operatore in prima linea che possono essere usati per coordinare le caratteristiche del personale a turni e altro ancora. Ad esempio, in Turni, i caposala possono impostare e coordinare i programmi per il proprio personale e gli infermieri possono controllare i programmi e scambiare i turni. Teams include un criterio predefinito di configurazione dell’app per operatori sul campo che è possibile assegnare agli operatori sul campo dell’organizzazione. Per impostazione predefinita, il criterio include le app Attività, Turni, Chat e Chiamate. Questo criterio controlla il comportamento di queste app, ad esempio, aggiungendo l'app Turni alla barra delle app in modo che il team possa accedervi rapidamente.
 
 Per ulteriori informazioni vedere [Gestire l'app Turni per l'organizzazione in Microsoft Teams](../shifts/manage-the-shifts-app-for-your-organization-in-teams.md).
 
@@ -162,4 +162,4 @@ Sono disponibili molte risorse per aiutare tutti gli utenti dell'organizzazione 
 
 - Visita il [centro adozione Teams](https://adoption.microsoft.com/microsoft-teams/) per consigli sull'implementazione di Teams se stai iniziando a usare Teams con la tua organizzazione o stai espandendo Teams in più aree della tua organizzazione.
 - Considera l'idea di impostare [percorsi di apprendimento personalizzati](https://adoption.microsoft.com/microsoft-365-learning-pathways/)per gli utenti per coprire solo le attività che devono svolgere.
-- Ottenere assistenza e formazione per gli utenti su come eseguire attività di base in Teams nel sito di supporto [Teams](https://support.microsoft.com/teams), inclusi [video di formazione rapidi.](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7) Questo sito offre anche assistenza e formazione per le app Teams, tra cui [Elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db), [Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070), [Approvazioni](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3), [Bookings](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b), e [Turni](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821).
+- Ottenere assistenza e formazione per gli utenti su come eseguire attività di base in Teams nel sito di supporto [Teams, inclusi](https://support.microsoft.com/teams) [video di formazione rapidi](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7). Questo sito offre anche assistenza e formazione per le app Teams, tra cui [Elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db), [Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070), [Approvazioni](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3), [Bookings](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b), e [Turni](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821).

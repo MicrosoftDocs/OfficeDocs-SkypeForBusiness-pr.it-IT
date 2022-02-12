@@ -21,27 +21,29 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 8364ec0440fafb786966541cc73915e40e031a08
-ms.sourcegitcommit: 5e9b50cd1b513f06734be6c024ac06d293b27089
+ms.openlocfilehash: 192d56972c0d26484be773cf40fe0d1c59b69136
+ms.sourcegitcommit: 2e8daa3511cd198b3e0d43b153dd37a59cb21692
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518858"
+ms.lasthandoff: 02/11/2022
+ms.locfileid: "62763669"
 ---
 # <a name="microsoft-teams-certified-devices"></a>Microsoft Teams dispositivi certificati
 
-Il programma Microsoft Teams dispositivi certificati assicura che i dispositivi certificati soddisfino uno standard elevato, con obiettivi di prestazioni più elevati e metriche di qualità nell'intera esperienza Teams (audio, video, interfaccia utente). I partner Microsoft e OEM collaborano attivamente per garantire che i dispositivi soddisfino tutti i requisiti di certificazione, tra cui sicurezza, qualità audio e video, esperienza Teams e accessibilità.
+Il programma Microsoft Teams di certificazione dei dispositivi Microsoft Teams garantisce che i dispositivi certificati soddisfino uno standard elevato, con obiettivi di prestazioni più elevati e metriche di qualità nell'intera esperienza Teams (audio, video, interfaccia utente). I partner Microsoft e OEM collaborano attivamente per garantire che i dispositivi soddisfino tutti i requisiti di certificazione, tra cui sicurezza, qualità audio e video, esperienza Teams e accessibilità.
 
-I programmi di certificazione sono progettati per garantire che tutti i dispositivi certificati esercitino una versione Android con il set di funzionalità necessario per Teams e Teams di amministrazione. La validità della certificazione si basa sulla versione del sistema operativo Android in esecuzione nel dispositivo quando entra nel programma di certificazione. I nostri partner OEM stanno lavorando per prolungare la durata della certificazione aggiornando la versione del sistema operativo Android e ricertificando o rilasciando nuovi modelli all'avanguardia. Le date di validità della certificazione verranno aggiornate regolarmente in base ai piani dei partner OEM per l'aggiornamento a una versione più recente del sistema operativo Android.
+I programmi di certificazione sono progettati per garantire che tutti i dispositivi certificati esercitino una versione Android con il set di funzionalità necessario per Teams e Teams di amministrazione. Le date di fine della certificazione si basano sulla versione del sistema operativo Android in esecuzione nel dispositivo quando entra nel programma di certificazione. I nostri partner OEM stanno lavorando per prolungare la durata della certificazione aggiornando la versione del sistema operativo Android e ricertificando o rilasciando nuovi modelli all'avanguardia.
 
 Oltre il periodo di certificazione, Microsoft si impegna a supportare la versione più recente del client Teams su tali dispositivi per due anni dopo la fine del periodo di certificazione.
 
+>[!NOTE]
+>Le date di fine della certificazione verranno aggiornate regolarmente in base ai piani dei partner OEM per l'aggiornamento a una versione più recente del sistema operativo Android.
 
-## <a name="currently-certified-teams-phones"></a>Telefoni Teams certificati
+## <a name="certified-teams-phones"></a>Telefoni Teams certificati
 
-I dispositivi seguenti sono certificati nel programma di certificazione Microsoft Teams telefoni cellulari:
+I dispositivi seguenti sono certificati nel programma di certificazione Microsoft Teams telefoni:
 
-|Modello di dispositivo    | Versione firmware    | Data di fine certificazione | Versione del sistema operativo Android                               |
+|Modello di dispositivo    | Versione firmware    | Data di fine certificazione corrente | Versione del sistema operativo Android                               |
 |:---------------------------------------|:-----------------------------------------|:-----------------------------|-----------------------------------|
 | Crestron UC-P10-T (con e senza ricevitore)    | `1.0.0.80`       | 5 agosto 2023            | 9 |
 | Crestron UC-P8-T (con e senza ricevitore)     | `1.0.0.56`       | 5 agosto 2023            | 9 |
@@ -63,11 +65,11 @@ I dispositivi seguenti sono certificati nel programma di certificazione Microsof
 | Yealink MP56 | `122.15.0.6` | 5 agosto 2023  | 9 |
 | Yealink VP59 | `91.15.0.16` | 5 agosto 2023  | 9 |
 
-## <a name="currently-certified-teams-rooms-on-android"></a>Attualmente certificato Teams Rooms su Android
+## <a name="certified-teams-rooms-on-android"></a>Certificati Teams Rooms su Android
 
 I dispositivi seguenti sono certificati nell'Microsoft Teams Rooms di certificazione android:
 
-| Modello di dispositivo | Versione firmware | Data di fine certificazione  | Dimensioni della sala                                        |  Versione del sistema operativo Android    |
+| Modello di dispositivo | Versione firmware | Data di fine certificazione corrente | Dimensioni della sala                                        |  Versione del sistema operativo Android    |
 |:------------------------|:-----------------|:--------------|:----------------------------------------------------------|-----------------------------------|
 | EPOS EXPAND 80T | `1.2.2.21182.10` | 5 agosto 2023 | In bundle con EPOS Vision 3T | 9 |
 | Dispositivo di tocco Logitech     | `1.2.982`     |   3 settembre 2024  | Compatibile con Logitech Rally Bar e Rally Bar Mini | 10 |
@@ -83,18 +85,18 @@ I dispositivi seguenti sono certificati nell'Microsoft Teams Rooms di certificaz
 | Poly TC8                | `3.3.2.210441`     | 5 agosto 2023 | Compatibile con Poly Studio X30 e Poly Studio X50  |  9  |
 | Yealink VC210           | `118.15.0.14`      | 5 agosto 2023 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |  9  |
 
-## <a name="currently-certified-teams-displays"></a>Display Teams certificati
+## <a name="certified-teams-displays"></a>Schermi Teams certificati
 
 I dispositivi seguenti sono certificati nell'Microsoft Teams visualizza il programma di certificazione Android:
 
-| Modello di dispositivo | Versione firmware | Data di fine certificazione  | Versione del sistema operativo Android |
+| Modello di dispositivo | Versione firmware | Data di fine certificazione corrente  | Versione del sistema operativo Android |
 |:------------------------|:-----------------|:--------------|----------------------------------|
 |Visualizzazione ThinkSmart di Lenovo|`CD-18781Y.201006.099`| 5 dicembre 2022 |  8.1  |
 
-## <a name="currently-certified-teams-panels"></a>Pannelli Teams certificati
-I dispositivi seguenti sono certificati nel Microsoft Teams del programma di certificazione:
+## <a name="certified-teams-panels"></a>Pannelli Teams certificati
+I dispositivi seguenti sono certificati nell'Microsoft Teams di certificazione dei pannelli di controllo:
 
-| Modello di dispositivo| Versione firmware | Data di fine certificazione | Versione del sistema operativo Android |                                         
+| Modello di dispositivo| Versione firmware | Data di fine certificazione corrente | Versione del sistema operativo Android |                                         
 |:------------------------|:-----------------|:--------------|-----------------------|
 |Crestron TSS-770 | `1.003.0082` |5 dicembre 2022  | 8.1 |
 |Crestron TSS-1070 | `1.003.0082`|5 dicembre 2022 | 8.1 |
@@ -103,20 +105,20 @@ I dispositivi seguenti sono certificati nel Microsoft Teams del programma di cer
 
 ### <a name="product-release-information-for-teams-phones"></a>Informazioni sulla versione del prodotto per Teams telefoni
 
-Di seguito sono riportate le versioni più Teams dell'app per telefono e del firmware.
+Di seguito sono riportate le versioni più recenti Teams dell'app per telefono e del firmware.
 
 #### <a name="app-versions"></a>Versioni delle app
 
 | Rilascio del prodotto | Data di rilascio  | Microsoft Teams'app | Portale aziendale versione | Versione dell'agente di amministrazione |
 |:----------------|:--------------|:----------------------------|:-----------------------|:--------------------|
-| Aggiornamento 2022 #1   | 7 febbraio 2022   |  1449/1.0.94.2022011305 |5.0.5304.0 | 322 |
-| Aggiornamento #1B 2022  | 7 febbraio 2022   |  1449/1.0.94.2022020202 |5.0.5304.0 | 322 |
+| Aggiornamento 2022 #1   | 7 febbraio 2022   | `1449/1.0.94.2022011305` |`5.0.5304.0` | `322` |
+| Aggiornamento #1B 2022  | 7 febbraio 2022   | `1449/1.0.94.2022020202` |`5.0.5304.0` | `322` |
 | Aggiornamento #3B 2021 | 6 dicembre 2021   | `1449/1.0.94.2021112302 ` | `5.0.5304.0` | `298` |
 | Aggiornamento #3A 2021 | 22 novembre 2021   | `1449/1.0.94.2021110101 ` | `5.0.5304.0` | `298` |
 | Aggiornamento 2021 #3  | 3 novembre 2021   | `1449/1.0.94.2021101205` | `5.0.5304.0` | `298` |
-| Aggiornamento 2021 #2A | 10 giugno 2021  |`1449/1.0.94.2021052803`|  `5.0.5088.0` |  `1.0.0.202103160138.product (256)` |
+| Aggiornamento #2A 2021 | 10 giugno 2021  |`1449/1.0.94.2021052803`|  `5.0.5088.0` |  `1.0.0.202103160138.product (256)` |
 | Aggiornamento 2021 #2  | 8 giugno 2021  |`1449/1.0.94.2021051303`|  `5.0.5088.0` |  `1.0.0.202103160138.product (256)` |
-| Aggiornamento #1A 2021 | 5 aprile 2021  |`1449/1.0.94.2021033002`|  `5.0.5045.0` |  `1.0.0.202101280722.product (253)` |
+| Aggiornamento 2021 #1A | 5 aprile 2021  |`1449/1.0.94.2021033002`|  `5.0.5045.0` |  `1.0.0.202101280722.product (253)` |
 | Aggiornamento 2021 #1  | 26 marzo 2021  |`1449/1.0.94.2021022403` |  `5.0.5045.0` |  `1.0.0.202101280722.product (253)` |
 | Aggiornamento 2020 #7  | 8 dicembre 2020  |`1449/1.0.94.2020111101` | `5.0.4927.0`  | `1.0.0.202010121132.product (223) `|
 | Aggiornamento 2020 #6  | 12 ottobre 2020  |`1449/1.0.94.2020091801`     | `5.0.4912.0` | `1.0.0.202006290446.product(216)` |
@@ -130,7 +132,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware  | Rilascio del prodotto incluso  |
 |:----------------|:--------------|:----------------------------|
-|Audiocode C455HD | 1.15.271    | Aggiornamento 2022 #1
+|Audiocode C455HD | `1.15.271`    | Aggiornamento 2022 #1
 |Poly Trio C60   | `7.2.1.1712`  | Aggiornamento 2022 #1   |
 |Poly CCX400/CCX500/CCX600   | `7.2.1.1707`  | Aggiornamento 2022 #1  |
 |Audiocode C448HD  | `1.14.500` | Aggiornamento 2022 #1 |
@@ -142,8 +144,8 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 | Yealink VP59   | `91.15.0.87`  | Aggiornamento 2022 #1     |
 | Yealink CP960  | `73.15.0.150`  | Aggiornamento 2022 #1         |
 | Yealink MP52 | `145.15.0.25`  | Aggiornamento 2022 #1         |
-| Poly Trio C60   | `7.1.4.0201`  | Aggiornamento 2021 #3B                        |
-| Poly CCX400/CCX500/CCX600   | `7.1.4.0200`  | Aggiornamento 2021 #3B                 |
+| Poly Trio C60   | `7.1.4.0201`  | Aggiornamento #3B 2021                        |
+| Poly CCX400/CCX500/CCX600   | `7.1.4.0200`  | Aggiornamento #3B 2021                 |
 |Audiocode C448HD  | `1.14.449` | Aggiornamento 2021 #3  |
 |Audiocodice C450HD  | `1.14.449` | Aggiornamento 2021 #3  |
 |Audiocode C470HD  | `1.14.449` | Aggiornamento 2021 #3  |
@@ -189,15 +191,15 @@ Per [informazioni sulle funzionalità supportate](phones-for-teams.md) da questi
 
 Vedere [Microsoft Teams display](teams-displays.md).
 
-### <a name="product-release-information-for-teams-rooms-on-android"></a>Informazioni sulla versione del prodotto Teams Rooms su Android
+### <a name="product-release-information-for-teams-rooms-on-android"></a>Informazioni sulla versione del prodotto per Teams Rooms su Android
 
-Di seguito sono riportate le versioni più Teams Rooms versioni del firmware e dell'app Android.
+Di seguito sono riportate le versioni più Teams Rooms versioni dell'app e del firmware Android.
 
 #### <a name="app-versions"></a>Versioni delle app
 
 | Rilascio del prodotto| Data di rilascio | Microsoft Teams'app | Portale aziendale versione | Versione dell'agente di amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
-| Aggiornamento 2021 #2A | 15 luglio 2021  |`1449/1.0.96.2021070803`|  `5.0.5088.0` |  `1.0.0.202104280345.product version code: 262` |
+| Aggiornamento #2A 2021 | 15 luglio 2021  |`1449/1.0.96.2021070803`|  `5.0.5088.0` |  `1.0.0.202104280345.product version code: 262` |
 | Aggiornamento 2021 #2 | 28 giugno 2021  |`1449/1.0.96.2021051904`|  `5.0.5088.0` |  `1.0.0.202104280345.product version code: 262` |
 | Aggiornamento 2021 #1A  |12 maggio 2021  |`1449/1.0.96.2021042903` |`5.0.4927.0`     |`1.0.0.202010121132.product version code: 223` |
 | Aggiornamento 2021 #1  |5 aprile 2021  |`1449/1.0.96.2021032002`  |`5.0.4927.0`     |`1.0.0.202010121132.product version code: 223` |
@@ -217,12 +219,12 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 | Poly Studio X30 | `3.8.0`          | Aggiornamento 2021 #2    |
 | Poly Studio X50 | `3.8.0`          | Aggiornamento 2021 #2    |
 | Poly TC8        | `3.8.0`          | Aggiornamento 2021 #2    |
-| Poly Studio X30 | `3.7.0`          | Aggiornamento 2021 #2A    |
-| Poly Studio X50 | `3.7.0`          | Aggiornamento 2021 #2A    |
-| Poly TC8        | `3.7.0`          | Aggiornamento 2021 #2A    |
-| Poly Studio X30 | `3.6.0.350035`  | Aggiornamento 2021 #2A    |
-| Poly Studio X50 | `3.6.0.350035`  | Aggiornamento 2021 #2A    |
-| Poly TC8 | `3.6.0.210534`  | Aggiornamento 2021 #2A    |
+| Poly Studio X30 | `3.7.0`          | Aggiornamento #2A 2021    |
+| Poly Studio X50 | `3.7.0`          | Aggiornamento #2A 2021    |
+| Poly TC8        | `3.7.0`          | Aggiornamento #2A 2021    |
+| Poly Studio X30 | `3.6.0.350035`  | Aggiornamento #2A 2021    |
+| Poly Studio X50 | `3.6.0.350035`  | Aggiornamento #2A 2021    |
+| Poly TC8 | `3.6.0.210534`  | Aggiornamento #2A 2021    |
 | EPOS EXPAND Vision 3T |`1.2.2.21182.10`   | Aggiornamento 2021 #2 |
 | AudioCodes RXV80 |`1.13.361`   | Aggiornamento 2021 #2 |
 | Yealink VC210 |`118.15.0.54`   | Aggiornamento 2021 #2    |
@@ -269,7 +271,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 ### <a name="product-release-information-for-teams-panels"></a>Informazioni sulla versione del prodotto Teams pannelli
 
-Di seguito sono riportate le versioni più recenti Microsoft Teams dell'app Panels e del firmware.
+Di seguito sono riportate le versioni più Microsoft Teams dell'app Panels e del firmware.
 
 #### <a name="app-versions"></a>Versioni delle app
 
@@ -292,7 +294,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 ## <a name="more-resources"></a>Altre risorse
 
-Per [informazioni sulle funzionalità supportate](phones-for-teams.md) da questi dispositivi, vedere Microsoft Teams set di funzionalità dei telefoni.
+Per [informazioni sulle funzionalità supportate da](phones-for-teams.md) questi dispositivi, vedere Microsoft Teams set di funzionalità dei telefoni.
 
 Vedere [Trovare la versione firmware in un dispositivo mobile](phones-for-teams.md) per determinare la versione del firmware del dispositivo nel dispositivo mobile.
 

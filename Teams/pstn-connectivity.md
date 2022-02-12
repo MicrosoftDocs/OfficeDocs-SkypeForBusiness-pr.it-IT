@@ -24,18 +24,18 @@ search.appverid: MET150
 description: Altre informazioni sulle opzioni Teams chiamate (connettività PSTN) e sulle decisioni da prendere per l'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 409f5a1f8872b8e3bd3b1999a0024fa28583024d
-ms.sourcegitcommit: 5e9b50cd1b513f06734be6c024ac06d293b27089
+ms.openlocfilehash: 28cb740146fc23f3dfdda35c35f280cba8a950c4
+ms.sourcegitcommit: 2e8daa3511cd198b3e0d43b153dd37a59cb21692
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518828"
+ms.lasthandoff: 02/11/2022
+ms.locfileid: "62763750"
 ---
 # <a name="pstn-connectivity-options"></a>Opzioni di connettività PSTN
 
 Microsoft offre funzionalità Complete Private Branch Exchange (PBX) per l'organizzazione tramite Sistema telefonico. Tuttavia, per consentire agli utenti di effettuare chiamate all'esterno dell'organizzazione, è necessario connettersi Sistema telefonico rete PSTN (Public Switched Telephone Network).
 
-Questo articolo è in particolare sulle opzioni di connettività PSTN. Per altre informazioni sulle soluzioni vocali Microsoft, inclusi i dettagli sulle funzionalità Sistema telefonico, vedere Pianificare la Teams [vocale](cloud-voice-landing-page.md).
+Questo articolo è in particolare sulle opzioni di connettività PSTN. Per altre informazioni sulle soluzioni vocali Microsoft, inclusi i dettagli sulle funzionalità Sistema telefonico, vedere Pianificare [la Teams vocale](cloud-voice-landing-page.md).
 
 Per connettersi Sistema telefonico alla rete PSTN, è possibile scegliere tra le opzioni seguenti:
 
@@ -65,13 +65,13 @@ Se si risponde sì a quanto segue, Sistema telefonico piano per chiamate è la s
 
 Con questa opzione: 
 
-- Puoi ottenere Sistema telefonico piani per chiamate nazionali o internazionali che consentono di chiamare verso telefoni di tutto il mondo (a seconda del livello di servizio concesso in licenza).
+- Puoi ottenere Sistema telefonico piani per chiamate nazionali o internazionali aggiunti che consentono di chiamare verso telefoni di tutto il mondo (a seconda del livello di servizio concesso in licenza).
 
 - Non è necessaria la distribuzione o la&mdash; manutenzione di una distribuzione locale perché il piano per chiamate funziona al di fuori Microsoft 365.
 
 - Nota: è possibile connettere un session border controller (SBC) supportato tramite Il routing diretto per garantire l'interoperabilità con sistemi IPX di terze parti, dispositivi analogici e altre apparecchiature di telefonia supportate da SBC.
 
-Questa opzione richiede una connessione ininterrotta a Microsoft 365.
+Questa opzione richiede una connessione ininterrotta Microsoft 365.
 
 Per altre informazioni sul Piano chiamate, vedere gli articoli seguenti:
 
@@ -88,19 +88,19 @@ Con Connessione con operatore, se il gestore esistente partecipa al programma Mi
 Connessione con operatore potrebbe essere la soluzione giusta per l'organizzazione se:
 
 - Microsoft Calling Plan non è disponibile nella tua posizione geografica.
-- Il gestore preferito è un partecipante al programma Microsoft Connessione con operatore.
+- Il gestore preferito è un partecipante al programma Microsoft Connessione con operatore microsoft.
 - Si vuole trovare un nuovo gestore per abilitare le chiamate in Teams.
 
 Per informazioni sui vantaggi e i requisiti di Connessione con operatore e per un elenco dei corrieri che partecipano a questo programma, vedere Pianificare [Connessione con operatore.](operator-connect-plan.md) Per informazioni su come configurare i Connessione con operatore, vedere [Configurare Connessione con operatore](operator-connect-configure.md).
 
 
-## <a name="phone-system-with-direct-routing"></a>Sistema telefonico routing diretto
+## <a name="phone-system-with-direct-routing"></a>Sistema telefonico con routing diretto
 
-Questa opzione consente di Sistema telefonico alla rete di telefonia tramite Routing diretto, come illustrato nel diagramma seguente: 
+Questa opzione consente Sistema telefonico alla rete di telefonia tramite Routing diretto, come illustrato nel diagramma seguente: 
 
 ![Il diagramma 5 mostra Sistema telefonico routing diretto.](media/voice-solution-with-direct-routing.png)
 
-Se si risponde sì alle domande seguenti, Sistema telefonico routing diretto è la soluzione giusta:
+Se si risponde sì alle domande seguenti, Sistema telefonico il routing diretto è la soluzione giusta:
 
 - Si vuole usare le Teams con Sistema telefonico.
 - È necessario conservare il gestore PSTN corrente.
@@ -124,7 +124,7 @@ Questa opzione richiede quanto segue:
 - Distribuzione e gestione di un SBC supportato.
 
 - Contratto con un gestore di terze parti.
-  (A meno che non venga distribuita come opzione per fornire la connessione a PBX di terze parti, dispositivi analogici o altre apparecchiature di telefonia per gli utenti che si Sistema telefonico piano per chiamate.
+  (A meno che non venga distribuita come opzione per fornire la connessione a PBX di terze parti, dispositivi analogici o altre apparecchiature di telefonia per gli utenti che Sistema telefonico piano per chiamate.
 
 Per altre informazioni sul routing diretto, vedere gli articoli seguenti:
 
@@ -138,7 +138,7 @@ Per altre informazioni sul routing diretto, vedere gli articoli seguenti:
 
 ## <a name="configuration-considerations"></a>Considerazioni sulla configurazione
 
-La Sistema telefonico caratteristiche sono le stesse indipendentemente dall'opzione di connettività PSTN scelta. Ad esempio, le impostazioni di chiamata senza risposta e inoltro, trasferimento di chiamata, musica personalizzata in attesa, parcheggio di chiamata, linea condivisa e app vocali sono tutte disponibili. Per un elenco completo delle Sistema telefonico, vedere Ecco cosa si [ottiene con Sistema telefonico](here-s-what-you-get-with-phone-system.md).
+La Sistema telefonico caratteristiche sono le stesse indipendentemente dall'opzione di connettività PSTN scelta. Ad esempio, le impostazioni di chiamata senza risposta e inoltro, trasferimento di chiamata, musica personalizzata in attesa, parcheggio di chiamata, linea condivisa e app vocali sono tutte disponibili. Per un elenco completo delle Sistema telefonico, vedere Ecco cosa si ottiene con [Sistema telefonico](here-s-what-you-get-with-phone-system.md).
 
 Esistono tuttavia alcune differenze di funzionalità che influiscono sulla configurazione di alcune Sistema telefonico funzionalità. Ad esempio, Il routing diretto richiede altri passaggi per configurare il routing delle chiamate. Come altro esempio, il routing diretto fornisce il routing in base alla posizione (LBR). LBR consente di limitare il bypass a pedaggio in determinate posizioni geografiche in cui non è consentito. 
 
@@ -148,7 +148,7 @@ La tabella seguente evidenzia le differenze di configurazione principali. Le sez
 | :------------| :-------| :-------| :-------| :-------| 
 | Piani di chiamata | -Microsoft funge da gestore PSTN.<br>-Non è necessario acquistare o gestire SBC.| Ottenuto tramite Microsoft.| -Gestito da Microsoft. <br> -Admin configura i piani di chiamata degli utenti per la traduzione dei numeri. | -Abilitato da Microsoft. <br> -Admin registra gli indirizzi. <br> -Chiamate dinamiche supportate. |
 | Connessione con operatore | -Carrier gestisce la connettività PSTN e gli SBC. <br> -Non è necessario acquistare o gestire SBC. | -Ottenuto tramite corriere. <br> - Numeri associati agli indirizzi di emergenza gestiti dal gestore.   | -Gestito dal gestore. <br>-Admin configura i piani di chiamata degli utenti per la traduzione dei numeri. | -Abilitato dal gestore. <br> -Admin registra gli indirizzi. <br> -Chiamate dinamiche supportate. |
-| Routing diretto | -Richiede SBC certificato acquistato da un fornitore di terze parti.<br>-Connessione il tuo SBC per Sistema telefonico.<br> -Usare il gestore PSTN esistente. | Ottenuto tramite corriere. | -Richiede una configurazione aggiuntiva da parte dell'amministratore.<br>-Admin configura i dial plan trunk per la traduzione dei numeri. <br>-LBR disponibile per limitare il bypass a pedaggio. | -Richiede una configurazione aggiuntiva da parte dell'amministratore. <br>-Indirizzi registrati non supportati. <br>-Chiamate dinamiche supportate ma richiedono una configurazione aggiuntiva. |
+| Routing diretto | -Richiede SBC certificato acquistato da un fornitore di terze parti.<br>-Connessione SBC per Sistema telefonico.<br> -Usare il gestore PSTN esistente. | Ottenuto tramite corriere. | -Richiede una configurazione aggiuntiva da parte dell'amministratore.<br>-Admin configura i dial plan trunk per la traduzione dei numeri. <br>-LBR disponibile per limitare il bypass a pedaggio. | -Richiede una configurazione aggiuntiva da parte dell'amministratore. <br>-Indirizzi registrati non supportati. <br>-Chiamate dinamiche supportate ma richiedono una configurazione aggiuntiva. |
 |||||
 
 
@@ -168,7 +168,7 @@ La modalità di acquisizione e gestione dei numeri di telefono varia a seconda d
 
 - Per informazioni sulla gestione dei numeri di telefono con Connessione con operatore, vedere [Configurare i numeri di telefono con Connessione con operatore](operator-connect-configure.md#set-up-phone-numbers).
 
-- Per informazioni sulla gestione dei numeri di telefono per Il routing diretto, vedere Configurare il numero di telefono [e abilitare la segreteria telefonica e la segreteria telefonica aziendale](direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice-and-voicemail-online).
+- Per informazioni sulla gestione dei numeri di telefono per Il routing diretto, vedere [Configurare il numero di telefono e abilitare la voce aziendale](direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice).
 
 
 ### <a name="call-routing-and-dial-plans"></a>Routing delle chiamate e dial plan
@@ -184,7 +184,7 @@ La modalità di configurazione del routing delle chiamate varia a seconda dell'o
 
 ### <a name="location-based-routing-for-direct-routing"></a>Location-Based routing diretto
 
-In alcuni paesi e aree geografiche, è illegale ignorare il gestore PSTN per ridurre i costi delle chiamate interurbane. Location-Based Routing diretto consente di limitare il bypass a pedaggio per Teams utenti in base alla loro posizione geografica. Per altre informazioni su come pianificare e configurare LBR, vedere gli articoli seguenti:
+In alcuni paesi e aree geografiche, è illegale ignorare il gestore PSTN per ridurre i costi delle chiamate interurbane. Location-Based routing diretto (LBR) per il routing diretto consente di limitare il bypass a pedaggio per Teams utenti in base alla loro posizione geografica. Per altre informazioni su come pianificare e configurare LBR, vedere gli articoli seguenti:
 
 - [Pianificare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-plan.md)
 - [Configurare le impostazioni di rete per l'instradamento basato sulla posizione](location-based-routing-configure-network-settings.md)
@@ -201,7 +201,7 @@ La modalità di configurazione delle chiamate di emergenza varia a seconda dell'
 
 - Per Connessione con operatore, ogni utente viene abilitato automaticamente per le chiamate di emergenza. L'utente deve avere un indirizzo di emergenza registrato associato al numero di telefono assegnato, ma l'indirizzo può essere impostato solo dal partner gestore. Le chiamate di emergenza dinamiche (in base alla posizione Teams client) sono supportate.
 
-- Per il routing diretto, è necessario definire i criteri per le chiamate di emergenza per gli utenti usando un criterio di routing Teams di emergenza (TeamsEmergencyCallRoutingPolicy). Il criterio definirà i numeri di emergenza e la destinazione di routing associata. Le posizioni di emergenza registrate non sono supportate per gli utenti di Routing diretto. Per le chiamate di emergenza dinamiche, è necessaria una configurazione aggiuntiva per l'instradamento delle chiamate di emergenza e, eventualmente, per la connettività dei partner.
+- Per il routing diretto, è necessario definire criteri per le chiamate di emergenza per gli utenti usando un criterio Teams routing delle chiamate di emergenza (TeamsEmergencyCallRoutingPolicy). Il criterio definirà i numeri di emergenza e la destinazione di routing associata. Le posizioni di emergenza registrate non sono supportate per gli utenti di Routing diretto. Per le chiamate di emergenza dinamiche, è necessaria una configurazione aggiuntiva per l'instradamento delle chiamate di emergenza e, eventualmente, per la connettività dei partner.
 
 Per altre informazioni sui concetti e la terminologia delle chiamate di emergenza e su come configurare le chiamate di emergenza e le chiamate di emergenza dinamiche, vedere gli articoli seguenti:
 

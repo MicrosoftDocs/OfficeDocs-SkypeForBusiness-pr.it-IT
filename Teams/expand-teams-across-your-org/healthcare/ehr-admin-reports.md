@@ -1,5 +1,5 @@
 ---
-title: Teams per le visite virtuali - Report di amministrazione del connettore EHR
+title: Visite virtuali in Teams - Report di amministrazione del connettore EHR
 author: SerdarSoysal
 ms.author: serdars
 manager: serdars
@@ -8,32 +8,37 @@ ms.topic: conceptual
 ms.service: msteams
 search.appverid: MET150
 searchScope:
-  - Microsoft Teams
-  - Microsoft Cloud for Healthcare
+- Microsoft Teams
+- Microsoft Cloud for Healthcare
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
 ms.collection:
-  - M365-collaboration
-  - Teams_ITAdmin_Healthcare
-  - microsoftcloud-healthcare
-  - m365solution-healthcare
-  - m365solution-scenario
+- M365-collaboration
+- Teams_ITAdmin_Healthcare
+- microsoftcloud-healthcare
+- m365solution-healthcare
+- m365solution-scenario
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 ms.reviewer: ansantam
 description: Visualizzare i report di amministrazione per Teams visite ai connettori EHR
+ms.openlocfilehash: 3f85d48493822db3a26851d281f7a5fddf813960
+ms.sourcegitcommit: 2e8daa3511cd198b3e0d43b153dd37a59cb21692
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/11/2022
+ms.locfileid: "62763301"
 ---
-
 # <a name="microsoft-teams-ehr-connector-admin-reports"></a>Microsoft Teams di amministrazione del connettore EHR
 
-La Microsoft Teams di amministrazione del connettore Electronic Health Record (EHR) offre una visualizzazione rapida e facile da leggere dei dati di utilizzo.
+La Microsoft Teams di amministrazione del connettore EHR (Electronic Health Record) offre una visualizzazione rapida e facile da leggere dei dati di utilizzo.
 
-È possibile visualizzare il report di Teams di amministrazione del connettore EHR facendo clic sul dashboard dell'interfaccia di amministrazione di Microsoft Teams e visualizzando la finestra di dialogo.
+È possibile visualizzare il report di Teams di amministrazione del connettore EHR nel dashboard dell'interfaccia di amministrazione di Microsoft Teams e visualizzare la finestra di dialogo.
 
 Accedere al report dal dashboard dell'Microsoft Teams di amministrazione.
 
- ![finestra di dialogo delle allocazioni e dei limiti delle visite virtuali.](../../media/admin-connector-report.png)
+ ![finestra di dialogo delle allocazioni e dei limiti di Visite virtuali.](../../media/admin-connector-report.png)
 
 La finestra di dialogo fornisce i dati seguenti:
 

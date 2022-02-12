@@ -27,20 +27,20 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Informazioni su come ottenere e gestire i numeri di telefono degli utenti (abbonati) e dei servizi (a numero verde e a numero verde) per Microsoft Teams per l'organizzazione.
-ms.openlocfilehash: d29781e16c881c9b0e00e39c6e57314c6696d8bb
-ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
+ms.openlocfilehash: c4ea749e98097765d302c334f5d8bd75e8dc0d21
+ms.sourcegitcommit: 2e8daa3511cd198b3e0d43b153dd37a59cb21692
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "59432797"
+ms.lasthandoff: 02/11/2022
+ms.locfileid: "62763810"
 ---
 # <a name="manage-telephone-numbers-for-your-organization"></a>Gestire i numeri di telefono per l'organizzazione
 
 Attualmente, Microsoft supporta due tipi di numeri di telefono: 
 
-- [**Numeri utente,**](#user-telephone-numbers)detti anche numeri di abbonato, che possono essere assegnati agli utenti dell'organizzazione.
+- [**Numeri utente**](#user-telephone-numbers), detti anche numeri di abbonato, che possono essere assegnati agli utenti dell'organizzazione.
 
-- [**Numeri di**](#service-telephone-numbers)servizio, assegnati a servizi come audioconferenza, operatori [automatici](plan-auto-attendant-call-queue.md)o [code di chiamata.](plan-auto-attendant-call-queue.md) [](deploy-audio-conferencing-teams-landing-page.md)
+- [**Numeri di**](#service-telephone-numbers) servizio assegnati a servizi come audioconferenza [,](deploy-audio-conferencing-teams-landing-page.md) [operatori automatici](plan-auto-attendant-call-queue.md) o [code di chiamata](plan-auto-attendant-call-queue.md).
 
 Microsoft sta lavorando per semplificare i tipi di numero, ma per il momento è necessario decidere:
 
@@ -50,13 +50,13 @@ Microsoft sta lavorando per semplificare i tipi di numero, ma per il momento è 
 
 La modalità di acquisizione e gestione dei numeri di telefono varia a seconda dell'opzione di connettività PSTN.
 
-- Per informazioni sulla gestione dei numeri di telefono per Microsoft Calling Plan, vedere [Gestire i numeri di telefono per i piani per chiamate.](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+- Per informazioni sulla gestione dei numeri di telefono per microsoft Calling Plan, vedere [Gestire i numeri di telefono per i piani per chiamate](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
-- Per informazioni sulla gestione dei numeri di telefono Connessione con operatore, vedere Configurare i numeri di [telefono con](operator-connect-configure.md#set-up-phone-numbers)Connessione con operatore .
+- Per informazioni sulla gestione dei numeri di telefono Connessione con operatore, vedere [Configurare i numeri di telefono con Connessione con operatore](operator-connect-configure.md#set-up-phone-numbers).
 
-- Per informazioni sulla gestione dei numeri di telefono per Il routing diretto, vedere Configurare il numero di telefono [e abilitare la segreteria telefonica e la segreteria telefonica aziendale.](direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice-and-voicemail-online)
+- Per informazioni sulla gestione dei numeri di telefono per Il routing diretto, vedere [Configurare il numero di telefono e abilitare la voce aziendale](direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice).
 
-Se sono necessari tipi di numeri aggiuntivi o di altro tipo diversi da quelli presenti nell'interfaccia di amministrazione di Microsoft Teams, è possibile inviare una richiesta di numero di telefono al Centro servizi numeri [di](https://pstnsd.powerappsportals.com/)Telefono.
+Se sono necessari tipi di numeri aggiuntivi o di altro tipo diversi da quelli presenti nell'interfaccia di amministrazione di Microsoft Teams, è possibile inviare una richiesta di numero di telefono al Telefono [Number Service Center](https://pstnsd.powerappsportals.com/).
 
 ## <a name="user-telephone-numbers"></a>Numeri di telefono degli utenti
 
@@ -79,7 +79,7 @@ Esistono due tipi di numeri di telefono di servizio forniti da Microsoft, a nume
         
    - **Numeri non geografici** I numeri non geografici sono numeri nazionali che non hanno una relazione con un'area geografica all'interno di un paese/area geografica. Ad esempio, i numeri non geografici spesso hanno lo stesso costo quando si chiama il numero da qualsiasi punto del paese/area geografica.
    
-- **Numeri di servizio gratuiti:** questi numeri di servizio in genere non comportano un costo a pedaggio per il chiamante. Teams numeri verde nazionali in oltre 60 paesi/aree geografiche.
+- **Numeri di servizio gratuiti** : questi numeri di servizio in genere non comportano un costo a pedaggio per il chiamante. Teams numeri verde nazionali in oltre 60 paesi/aree geografiche.
     
     > [!CAUTION]
     > Alcuni paesi/aree geografiche e i tipi di numeri di origine, ad esempio le chiamate provenienti da telefoni cellulari, possono in alcuni casi sostenere un costo a pedaggio per il chiamante. 
@@ -88,4 +88,4 @@ Esistono due tipi di numeri di telefono di servizio forniti da Microsoft, a nume
     
   
 > [!NOTE]
-> Se è necessario ottenere un numero di telefono maggiore di questo, contattare il [Telefono Servizio](https://pstnsd.powerappsportals.com/)clienti.
+> Se è necessario ottenere più numeri di telefono, contattare il [Telefono servizio clienti](https://pstnsd.powerappsportals.com/).
