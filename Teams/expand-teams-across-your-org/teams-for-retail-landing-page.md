@@ -20,12 +20,12 @@ searchScope:
 - Microsoft Cloud for Retail
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 74b3f81456b8d0acdff0c41678c04713b5cf967a
-ms.sourcegitcommit: 159399f2325af644c20551925c1fa34bf76aad43
+ms.openlocfilehash: cb32190c05dcbe165e203d9e4f097622d60943b8
+ms.sourcegitcommit: 2e8daa3511cd198b3e0d43b153dd37a59cb21692
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62288414"
+ms.lasthandoff: 02/11/2022
+ms.locfileid: "62763401"
 ---
 # <a name="get-started-with-teams-for-retail"></a>Introduzione a Teams per la vendita al dettaglio
 
@@ -194,8 +194,8 @@ Ora che conosci gli scenari da implementare e cosa è necessario per supportarli
 
 | Immagine | Ruolo | Responsabilità | Reparto |
 | ---- | ---- | ----- | ----- |
-| ![Simbolo dell'amministratore.](https://docs.microsoft.com/office/media/icons/administrator.png) | Amministratore IT | Collaborare con il personale di gestione delle operazioni e della vendita al dettaglio per definire gli scenari e il relativo impatto per l'organizzazione. <br><br>Configurare le impostazioni nell'interfaccia di amministrazione di Teams, ad esempio criteri e modelli, e abilitare le app. <br><br>Configurare le impostazioni dell'app, ad esempio le impostazioni globali di Turni, per l'organizzazione. <br><br>Aggiungere e concedere la licenza agli utenti.  | Reparto IT |
-| ![Simbolo monitor utente.](https://docs.microsoft.com/office/media/icons/user-monitor.png) | Personale operazioni | Collaborare con gli amministratori per definire scenari e determinare quali impostazioni, criteri, modelli e app sono necessari per Teams. <br><br>Creare team locali o di reparto dai modelli. <br><br>Configurare attività, elenchi e flussi di approvazione per il coordinamento tra gli store all'interno di un'area geografica o tra i negozi e la sede centrale. <br><br>Configurare il framework di apprendimento per il personale. | Operazioni centrali |
-| ![Simbolo del relatore.](https://docs.microsoft.com/office/media/icons/presenter-teams.png) | Responsabile dello Store | Collaborare con gli amministratori e il personale operativo per definire gli scenari. <br><br>Creare team per lo store da modelli. <br><br>Configurare canali e app per i team, in base alle esigenze. Ad esempio: un canale per gli handover relativi ai turni. <br><br>Configurare le pianificazioni degli store in Turni. <br><br>Configurare attività, elenchi e flussi di approvazione specifici per lo store. <br><br>Configurare le attività di apprendimento per il personale. | Gestione dello Store |
+|<img src="/office/media/icons/administrator.png" alt="Administrator symbol."> | Amministratore IT | Collaborare con il personale di gestione delle operazioni e della vendita al dettaglio per definire gli scenari e il relativo impatto per l'organizzazione. <br><br>Configurare le impostazioni nell'interfaccia di amministrazione di Teams, ad esempio criteri e modelli, e abilitare le app. <br><br>Configurare le impostazioni dell'app, ad esempio le impostazioni globali di Turni, per l'organizzazione. <br><br>Aggiungere e concedere la licenza agli utenti.  | Reparto IT |
+|<img src="/office/media/icons/user-monitor.png" alt="User monitor symbol.">| Personale operazioni | Collaborare con gli amministratori per definire scenari e determinare quali impostazioni, criteri, modelli e app sono necessari per Teams. <br><br>Creare team locali o di reparto dai modelli. <br><br>Configurare attività, elenchi e flussi di approvazione per il coordinamento tra gli store all'interno di un'area geografica o tra i negozi e la sede centrale. <br><br>Configurare il framework di apprendimento per il personale. | Operazioni centrali |
+|<img src="/office/media/icons/presenter-teams.png" alt="Presenter symbol."> | Responsabile dello Store | Collaborare con gli amministratori e il personale operativo per definire gli scenari. <br><br>Creare team per lo store da modelli. <br><br>Configurare canali e app per i team, in base alle esigenze. Ad esempio: un canale per gli handover relativi ai turni. <br><br>Configurare le pianificazioni degli store in Turni. <br><br>Configurare attività, elenchi e flussi di approvazione specifici per lo store. <br><br>Configurare le attività di apprendimento per il personale. | Gestione dello Store |
 
 Per altre informazioni sull'implementazione e l'adozione di Teams, vedere [Adottare Microsoft Teams](../adopt-microsoft-teams-landing-page.md).
