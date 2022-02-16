@@ -12,13 +12,13 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
-description: Script helper per configurare l'autenticazione del Pannello di controllo sfB 2019 con Microsoft 365 o Office 365 tramite il protocollo OAuth.
-ms.openlocfilehash: 8d4bf598799d23ebc150561333794aa0e04a1179
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Script helper per configurare l'autenticazione del Pannello di controllo sfB 2019 Microsoft 365 o Office 365 tramite il protocollo OAuth.
+ms.openlocfilehash: b7753d0174543cf935383513fc1851b828b4caf7
+ms.sourcegitcommit: f0eaaf67b4fdce87d5c01b456c506c1435714ced
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58579540"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62852489"
 ---
 # <a name="skype-for-business-server-2019-control-panel-authentication-script"></a>Skype for Business Server di autenticazione del Pannello di controllo 2019
 
@@ -26,12 +26,12 @@ Di seguito sono riportati gli script helper correlati all'autenticazione per mac
 
 ## <a name="configure-macp-authentication-with-microsoft-365-or-office-365"></a>Configurare l'autenticazione MACP con Microsoft 365 o Office 365
 
-Questo script deve essere eseguito dopo l'Skype for Business Server 2019 Cumulativo 1 o versione successiva, come parte della configurazione del nuovo Pannello di controllo. 
+Questo script deve essere eseguito dopo l'Skype for Business Server 2019 Cumulativo 1 o versione successiva, come parte della configurazione per il nuovo Pannello di controllo. 
 
 ```powershell
 <#
  .SYNOPSIS
-Helper script to configure SFB 2019 control panel authentication with Office 365 via OAuth protocol. This script will create an Azure AD Application on Azure. This will help in signing into Microsoft 365 or Office 365 using OAuth in the new Control Panel.
+ Helper script to configure SFB 2019 control panel authentication with Office 365 via OAuth protocol. This script will create an Azure AD Application on Azure. This will help in signing into Microsoft 365 or Office 365 using OAuth in the new Control Panel.
 
  .DESCRIPTION
  Copyright (c) Microsoft Corporation. All rights reserved.
@@ -44,12 +44,12 @@ Helper script to configure SFB 2019 control panel authentication with Office 365
 #>
 
 Write-Host "Getting external FQDN of SFB pools"
-$externalFqdns=(Get-CsService -WebServer).ExternalFqdn
+$externalFqdns = (Get-CsService -WebServer).ExternalFqdn
 
 Write-Host "Getting internal FQDN of SFB pools"
-$internalFqdns=(Get-csService -WebServer).poolfqdn
+$internalFqdns = (Get-csService -WebServer).poolfqdn
 
-$replyUrls=New-Object System.Collections.Generic.List[string]
+$replyUrls = New-Object System.Collections.Generic.List[string]
 
 Write-Host "Generating Redirect URIs for modern admin control panel"
 #Generating replyUrls using external fqdns
@@ -103,19 +103,21 @@ Import-module AzureAD
 Write-Host "Connect to Azure AD using your azure tenant admin credentials"
 Connect-azureAd
 
+# Resource: https://api.interfaces.records.teams.microsoft.com/user_impersonation
 $requiredResourceAccess1 = New-Object -TypeName "Microsoft.Open.AzureAD.Model.RequiredResourceAccess"
-$requiredResourceAccess1.ResourceAccess = New-Object -TypeName "Microsoft.Open.AzureAD.Model.ResourceAccess" -ArgumentList "921df259-ef26-44e6-b99e-69e13226d635","Scope"
-$requiredResourceAccess1.ResourceAppId = "39624784-6cbe-4a60-afbe-9f46d10fdb27"
+$requiredResourceAccess1.ResourceAccess = New-Object -TypeName "Microsoft.Open.AzureAD.Model.ResourceAccess" -ArgumentList "e60370c1-e451-437e-aa6e-d76df38e5f15","Scope"
+$requiredResourceAccess1.ResourceAppId = "48ac35b8-9aa8-4d74-927d-1f4a14a0b239"
 
+# Resource: https://graph.microsoft.com/User.Read
 $requiredResourceAccess2 = New-Object -TypeName "Microsoft.Open.AzureAD.Model.RequiredResourceAccess"
-$requiredResourceAccess2.ResourceAccess = New-Object -TypeName "Microsoft.Open.AzureAD.Model.ResourceAccess" -ArgumentList "311a71cc-e848-46a1-bdf8-97ff7156d8e6","Scope"
-$requiredResourceAccess2.ResourceAppId = "00000002-0000-0000-c000-000000000000"
+$requiredResourceAccess2.ResourceAccess = New-Object -TypeName "Microsoft.Open.AzureAD.Model.ResourceAccess" -ArgumentList "e1fe6dd8-ba31-4d61-89e7-88639da4683d","Scope"
+$requiredResourceAccess2.ResourceAppId = "00000003-0000-0000-c000-000000000000"
 
 $requiredResourceAccess = New-Object System.Collections.Generic.List[Microsoft.Open.AzureAD.Model.RequiredResourceAccess]
 $requiredResourceAccess.Add($requiredResourceAccess1)
 $requiredResourceAccess.Add($requiredResourceAccess2)
 
-$azureADApplication=Get-AzureADApplication -Filter "DisplayName eq 'MACP'"
+$azureADApplication = Get-AzureADApplication -Filter "DisplayName eq 'MACP'"
 
 if ($azureADApplication -eq $null) {
   Write-Host "Creating Azure AD application for modern admin control panel (MACP)"
@@ -124,16 +126,17 @@ if ($azureADApplication -eq $null) {
 else {
   Write-Host "Azure ad application for modern admin control panel (MACP) already exists with displayName: " $azureADApplication.DisplayName ". Updating the properties"
   Write-Host $uniqueReplyUrls
-  Set-AzureADApplication -ObjectId $azureADApplication.ObjectId -PublicClient $true -Oauth2AllowImplicitFlow $true -ReplyUrls $uniqueReplyUrls
+  Set-AzureADApplication -ObjectId $azureADApplication.ObjectId -PublicClient $true -Oauth2AllowImplicitFlow $true -ReplyUrls $uniqueReplyUrls -RequiredResourceAccess $requiredResourceAccess
 }
 
 Write-Host "Updating the AzureAD application Id in CMS"
 Set-CsHybridConfiguration -ClientId $azureADApplication.AppId
 
+
 ```
 ## <a name="configure-macp-application-in-adfs-farm"></a>Configurare l'applicazione MACP nella farm ADFS
 
-Questo script deve essere eseguito dopo l Skype for Business Server'aggiornamento cumulativo più recente del 2019, come parte della configurazione del nuovo Pannello di controllo.
+Questo script deve essere eseguito dopo l Skype for Business Server'aggiornamento cumulativo più recente 2019, come parte della configurazione per il nuovo Pannello di controllo.
 
 ```powershell
 <#
@@ -311,7 +314,7 @@ Get-AdfsNativeClientApplication -Identifier $clientIdentifier
 ```
 ## <a name="configure-oauth-for-macp"></a>Configurare OAuth per MACP
 
-Questo script deve essere eseguito dopo l Skype for Business Server'aggiornamento cumulativo più recente del 2019, come parte della configurazione del nuovo Pannello di controllo.
+Questo script deve essere eseguito dopo l Skype for Business Server'aggiornamento cumulativo più recente 2019, come parte della configurazione per il nuovo Pannello di controllo.
 
 ```powershell
 <#
