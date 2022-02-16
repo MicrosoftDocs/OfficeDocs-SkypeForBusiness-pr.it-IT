@@ -8,15 +8,20 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
-description: Informazioni su come usare l'onboarding guidato Frontline Worker per distribuire rapidamente un'esperienza Teams personalizzata per i dipendenti e i responsabili in prima linea nell'organizzazione.
+description: Informazioni su come usare l'onboarding guidato Frontline Worker per distribuire rapidamente un'esperienza in Teams personalizzata per i dipendenti e i responsabili in prima linea nell'organizzazione.
 ms.localizationpriority: medium
 ms.collection:
-  - M365-collaboration
-  - Teams_ITAdmin_FLW
+- M365-collaboration
+- Teams_ITAdmin_FLW
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: 97f8994ecc5c7aef610e040f30b43803f03c6844
+ms.sourcegitcommit: 5880de47e986854fca873ae75f76a7ecad194dff
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "61993192"
 ---
-
 # <a name="use-the-frontline-worker-onboarding-wizard-to-get-your-frontline-workforce-up-and-running"></a>Usare l'onboarding guidato di Frontline Worker per rendere operativa la forza lavoro in prima linea
 
 ## <a name="overview"></a>Panoramica
@@ -34,16 +39,16 @@ Guarda questo breve video per una panoramica su come eseguire la procedura guida
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWN6oh]
 
 > [!NOTE]
-> Questa procedura guidata consente di eseguire rapidamente l'onboard della forza lavoro in prima linea per Teams l'interfaccia di amministrazione di Microsoft 365. Per informazioni su come distribuire i Teams alla forza lavoro in prima linea usando gli script, vedere Come eseguire il provisioning Teams su larga scala per [Frontline Workers](flw-scripted-deployment.md).
+> Questa procedura guidata consente di accedere rapidamente alla forza lavoro in prima linea per Teams l'interfaccia di amministrazione di Microsoft 365. Per informazioni su come distribuire i Teams alla forza lavoro in prima linea usando gli script, vedere Come eseguire il provisioning Teams su larga scala per [Frontline Workers](flw-scripted-deployment.md).
 
 > [!NOTE]
-> La procedura guidata non supporta ancora [le etichette di](sensitivity-labels.md) riservatezza. Se l'organizzazione richiede etichette di riservatezza per creare un team, la procedura guidata non verrà visualizzata nel interfaccia di amministrazione di Microsoft 365.
+> La procedura guidata non supporta ancora [le etichette di](sensitivity-labels.md) riservatezza. Se l'organizzazione richiede etichette di riservatezza per creare un team, la procedura guidata non verrà visualizzata nell'interfaccia di amministrazione di Microsoft 365.
 
 ## <a name="run-the-wizard"></a>Eseguire la procedura guidata
 
 1. Nel riquadro di spostamento sinistro del [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) scegliere **Imposta**. Passare alla sezione **App e posta** elettronica e quindi **, in Attiva** e attiva la forza lavoro in prima linea, selezionare **Visualizza**. Qui sono disponibili altre informazioni sulle funzionalità offerte Microsoft 365 per i dipendenti in prima linea.
 
-    :::image type="content" source="media/flw-onboarding-wizard-get-started.png" alt-text="Screenshot della pagina dei dettagli per l'esperienza di onboarding di Frontline Worker nel interfaccia di amministrazione di Microsoft 365" lightbox="media/flw-onboarding-wizard-get-started.png":::
+    :::image type="content" source="media/flw-onboarding-wizard-get-started.png" alt-text="Screenshot della pagina dei dettagli per l'esperienza di onboarding frontline Worker nel interfaccia di amministrazione di Microsoft 365" lightbox="media/flw-onboarding-wizard-get-started.png":::
 
 2. Al termine, selezionare Inizia **per** eseguire la procedura guidata.
 

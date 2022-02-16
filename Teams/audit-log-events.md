@@ -1,5 +1,5 @@
 ---
-title: Cercare gli eventi nel log di controllo in Microsoft Teams
+title: Cercare gli eventi nel log di controllo Microsoft Teams
 author: markjjo
 ms.author: markjjo
 manager: laurawi
@@ -7,17 +7,22 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 ms.collection:
-  - M365-collaboration
+- M365-collaboration
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.reviewer: anwara
 search.appverid: MET150
 description: Informazioni su come recuperare Microsoft Teams dati dal log di controllo nel Centro conformità Microsoft 365.
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: 7eec47d0ed2d2a299c930edee2e849c8eb20b8db
+ms.sourcegitcommit: 5880de47e986854fca873ae75f76a7ecad194dff
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "61620490"
 ---
-
-# <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Cercare gli eventi nel log di controllo in Microsoft Teams
+# <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Cercare gli eventi nel log di controllo Microsoft Teams
 
 > [!IMPORTANT]
 > [!INCLUDE [new-teams-sfb-admin-center-notice](includes/new-teams-sfb-admin-center-notice.md)]
@@ -30,7 +35,7 @@ Il log di controllo consente di analizzare attività specifiche in Microsoft 365
 - Canale eliminato
 - Impostazione del canale modificata
 
-Per un elenco completo delle Teams di lavoro che vengono verificate, vedere Teams attività [](#teams-activities) e turni [nelle Teams attività](#shifts-in-teams-activities).
+Per un elenco completo delle Teams di lavoro che vengono verificate, vedere Teams e [](#teams-activities) [Turni nelle Teams attività](#shifts-in-teams-activities).
 
 > [!NOTE]
 > Anche gli eventi di controllo dei canali privati vengono registrati così come sono per i team e i canali standard.
@@ -55,7 +60,7 @@ Per istruzioni dettagliate, vedere Eseguire una ricerca [nel log di controllo ne
 > [!IMPORTANT]
 > I dati di controllo sono visibili nel log di controllo solo se il controllo è attivato.
 
-La durata della conservazione e della ricerca di un record di controllo nel log di controllo dipende dall'abbonamento a Microsoft 365 o Office 365 e in particolare dal tipo di licenza assegnato agli utenti. Per altre informazioni, vedere la descrizione [del servizio Centro sicurezza & conformità](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+Il periodo di tempo in cui un record di controllo viene mantenuto ed è possibile eseguire ricerche nel log di controllo dipende dall'abbonamento a Microsoft 365 o Office 365 e in particolare dal tipo di licenza assegnato agli utenti. Per altre informazioni, vedere la descrizione [del servizio Centro sicurezza & conformità](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
 ## <a name="tips-for-searching-the-audit-log"></a>Suggerimenti ricerca nel log di controllo
 
@@ -89,10 +94,10 @@ Ecco un elenco di tutti gli eventi registrati per le attività di utente e ammin
 |Membri aggiunti    |MemberAdded         |Il proprietario del team aggiunge membri a un team, un canale o una chat di gruppo.         |
 |Scheda Aggiunta    |TabAdded         |Un utente aggiunge una scheda a un canale.        |
 |Impostazione del canale modificata    |ChannelSettingChanged         |L'operazione ChannelSettingChanged viene registrata quando un membro del team esegue le attività seguenti. Per ognuna di queste attività, viene visualizzata una descrizione dell'impostazione modificata (visualizzata tra parentesi nella colonna **Elemento** nei risultati della ricerca nel log di controllo. <ul><li>Modifica il nome di un canale del team (**nome del canale**)</li><li>Modifica la descrizione di un canale del team (**descrizione del canale**)</li> </ul>      |
-|Impostazione dell'organizzazione modificata   |TeamsTenantSettingChanged         |L'operazione TeamsTenantSettingChanged viene registrata quando le attività seguenti vengono eseguite da un amministratore globale nella interfaccia di amministrazione di Microsoft 365. Queste attività influiscono sulle impostazioni Teams a livello di organizzazione. Per altre informazioni, vedere [Gestire le Teams per l'organizzazione](enable-features-office-365.md). <br>Per ognuna di queste attività, viene visualizzata una descrizione dell'impostazione modificata (visualizzata tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo.<ul><li>Abilita o disabilita la Teams per l'organizzazione (**Microsoft Teams**).</li><li>Abilita o disabilita l'interoperabilità tra Microsoft Teams e Skype for Business per l'organizzazione (**Skype for Business interoperabilità**).</li><li>Abilita o disabilita la visualizzazione organigramma nei Microsoft Teams client (**visualizzazione Organigramma**).</li><li>Abilita o disabilita la possibilità per i membri del team di pianificare riunioni private (**pianificazione di riunioni private**).</li><li>Abilita o disabilita la possibilità per i membri del team di pianificare le riunioni del canale (**pianificazione delle riunioni del canale**).</li><li>Abilita o disabilita le videochiamate Teams riunioni (**Video per Skype riunioni**).</li><li>Abilita o disabilita la condivisione dello schermo Microsoft Teams riunioni per l'organizzazione (**condivisione dello schermo** per Skype riunioni).</li><li>Abilita o disabilita la possibilità di aggiungere immagini animate (denominate Giphys) Teams conversazioni (**immagini animate**).</li><li>Modifica l'impostazione della classificazione del contenuto per l'organizzazione (**Classificazione contenuto**). La classificazione del contenuto limita il tipo di immagine animata che può essere visualizzata nelle conversazioni.</li><li>Abilita o disabilita la possibilità per i membri del team di aggiungere immagini personalizzabili (denominate meme personalizzati) da Internet alle conversazioni del team (immagini personalizzabili **da Internet**).</li><li>Abilita o disabilita la possibilità per i membri del team di aggiungere immagini modificabili (detti adesivi) alle conversazioni del team (**immagini modificabili**).</li><li>Abilita o disabilita la possibilità per i membri del team di usare bot in chat e canali Microsoft Teams (bot a livello **di organizzazione)**</li><li>Abilita bot specifici per Microsoft Teams. Questo non include il T-Bot, che Teams bot della Guida disponibile quando i bot sono abilitati per l'organizzazione (**singoli bot**).</li><li>Abilita o disabilita la possibilità per i membri del team di aggiungere estensioni o schede (**estensioni o schede**).</li><li>Abilita o disabilita il side-loading dei bot proprietari per Microsoft Teams (**caricamento laterale dei bot**).</li><li>Abilita o disabilita la possibilità per gli utenti di inviare messaggi di posta elettronica a un Microsoft Teams canale (**posta elettronica del canale**).</li></ul>|
+|Impostazione dell'organizzazione modificata   |TeamsTenantSettingChanged         |L'operazione TeamsTenantSettingChanged viene registrata quando le attività seguenti vengono eseguite da un amministratore globale nella interfaccia di amministrazione di Microsoft 365. Queste attività influiscono sulle impostazioni Teams a livello di organizzazione. Per altre informazioni, vedere [Gestire le Teams per l'organizzazione](enable-features-office-365.md). <br>Per ognuna di queste attività, viene visualizzata una descrizione dell'impostazione modificata (visualizzata tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo.<ul><li>Abilita o disabilita la Teams per l'organizzazione (**Microsoft Teams**).</li><li>Abilita o disabilita l'interoperabilità tra Microsoft Teams e Skype for Business per l'organizzazione (**Skype for Business interoperabilità**).</li><li>Abilita o disabilita la visualizzazione organigramma in Microsoft Teams client (**visualizzazione Organigramma**).</li><li>Abilita o disabilita la possibilità per i membri del team di pianificare riunioni private (**pianificazione di riunioni private**).</li><li>Abilita o disabilita la possibilità per i membri del team di pianificare le riunioni del canale (**pianificazione delle riunioni del canale**).</li><li>Abilita o disabilita le videochiamate Teams riunioni (**Video per Skype riunioni**).</li><li>Abilita o disabilita la condivisione dello schermo Microsoft Teams riunioni per l'organizzazione (**condivisione dello schermo** per Skype riunioni).</li><li>Abilita o disabilita la possibilità di aggiungere immagini animate (denominate Giphys) alle conversazioni Teams (**immagini animate**).</li><li>Modifica l'impostazione della classificazione del contenuto per l'organizzazione (**Classificazione contenuto**). La classificazione del contenuto limita il tipo di immagine animata che può essere visualizzata nelle conversazioni.</li><li>Abilita o disabilita la possibilità per i membri del team di aggiungere immagini personalizzabili (denominate meme personalizzati) da Internet alle conversazioni del team (immagini personalizzabili **da Internet**).</li><li>Abilita o disabilita la possibilità per i membri del team di aggiungere immagini modificabili (detti adesivi) alle conversazioni del team (**immagini modificabili**).</li><li>Abilita o disabilita la possibilità per i membri del team di usare bot in chat e canali Microsoft Teams (**bot a livello di organizzazione)**.</li><li>Abilita bot specifici per Microsoft Teams. Questo non include il T-Bot, che è Teams bot della Guida disponibile quando i bot sono abilitati per l'organizzazione (**singoli bot**).</li><li>Abilita o disabilita la possibilità per i membri del team di aggiungere estensioni o schede (**estensioni o schede**).</li><li>Abilita o disabilita il side-loading dei bot proprietari per Microsoft Teams (**caricamento laterale dei bot**).</li><li>Abilita o disabilita la possibilità per gli utenti di inviare messaggi di posta elettronica a un Microsoft Teams canale (**posta elettronica del canale**).</li></ul>|
 |Ruolo modificato dei membri nel team    |MemberRoleChanged         |Il proprietario di un team cambia il ruolo dei membri in un team. I valori seguenti indicano il tipo di ruolo assegnato all'utente. <br><br>**1** - Indica il ruolo membro.<br>**2** - Indica il ruolo di proprietario.<br>**3** - Indica il ruolo Guest.<br><br>La proprietà Members include anche il nome dell'organizzazione e l'indirizzo di posta elettronica del membro.        |
 |Impostazione del team modificata    |TeamSettingChanged        |L'operazione TeamSettingChanged viene registrata quando il proprietario del team esegue le attività seguenti. Per ognuna di queste attività, viene visualizzata una descrizione dell'impostazione modificata (visualizzata tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo.<ul><li>Modifica il tipo di accesso per un team. Teams può essere impostato come privato o pubblico (**tipo di accesso team**). Quando un team è privato (impostazione predefinita), gli utenti possono accedere al team solo su invito. Quando un team è pubblico, è individuabile da chiunque.</li><li>Modifica la classificazione delle informazioni di un team (**classificazione del team**). Ad esempio, i dati del team possono essere classificati come ad alto impatto aziendale, a medio impatto aziendale o a basso impatto aziendale.</li><li>Modifica il nome di un team (**nome del team**).</li><li>Modifica la descrizione del team (**Descrizione del team**).</li><li>Modifiche apportate alle impostazioni del team. Per accedere a queste impostazioni, il proprietario del team può fare clic con il pulsante destro del mouse su un team, scegliere **Gestisci** **team** e quindi fare clic sulla Impostazioni gruppo. Per queste attività, il nome dell'impostazione modificata viene visualizzato nella colonna **Elemento** nei risultati della ricerca nel log di controllo.</li></ul>         |
-|È stata creata una chat <sup>1, </sup> <sup>2</sup>|    ChatCreated|    È stata Teams una chat.|
+|È stata creata una chat <sup>1, </sup> <sup>2</sup>|    ChatCreated|    È Teams stata creata una chat.|
 |Team creato    |TeamCreated         |Un utente crea un team.         |
 |È stato eliminato un messaggio  |MessageDeleted |Un messaggio in una chat o in un canale è stato eliminato.|
 |Tutte le app dell'organizzazione sono state eliminate|DeletedAllOrganizationApps           |Tutte le app dell'organizzazione sono state eliminate dal catalogo.     |
@@ -101,7 +106,7 @@ Ecco un elenco di tutti gli eventi registrati per le attività di utente e ammin
 |Team eliminato  |TeamDeleted            |Il proprietario del team elimina un team.      |
 |È stato modificato un messaggio con un collegamento URL in Teams     |MessageEditedHasLink         |Un utente modifica un messaggio e aggiunge un collegamento URL in Teams.         |
 |Messaggi esportati <sup>1, </sup> <sup>2</sup> |    MessagesExported |I messaggi della chat o del canale sono stati esportati.|
-|Chat recuperata <sup>1, </sup> <sup>2</sup>   |ChatRetrieved  |È stata Microsoft Teams una chat.|
+|Chat recuperata <sup>1, </sup> <sup>2</sup>   |ChatRetrieved  |È Microsoft Teams stata recuperata una chat.|
 |È stato recuperato tutto il contenuto ospitato di un <sup>messaggio1, </sup> <sup>2</sup> |MessageHostedContentsListed    |Tutto il contenuto ospitato in un messaggio, ad esempio immagini o frammenti di codice, è stato recuperato.|
 |App installata |AppInstalled         |È stata installata un'app.   |
 |Azione eseguita sulla scheda|PerformedCardAction|Un utente ha fatto un'azione su una scheda adattiva all'interno di una chat. Le schede adattive vengono in genere usate dai bot per consentire la visualizzazione di informazioni e interazioni nelle chat. <br/><br/>**Nota:** Solo le azioni di input in linea in una scheda adattiva all'interno di una chat saranno disponibili nel log di controllo. Ad esempio, quando un utente invia una risposta al sondaggio in una conversazione di canale su una scheda adattiva generata da un bot Sondaggio. Le azioni utente, ad esempio "Visualizza risultato", che apriranno una finestra di dialogo o le azioni degli utenti all'interno delle finestre di dialogo non saranno disponibili nel log di controllo.|
@@ -130,7 +135,7 @@ Ecco un elenco di tutti gli eventi registrati per le attività di utente e ammin
 
 
 > [!NOTE]
-> <sup>1</sup> Un record di controllo per questo evento viene registrato solo quando l'operazione viene eseguita chiamando un'API Graph Microsoft. Se l'operazione viene eseguita nel client Teams, non verrà registrato un record di controllo<br/><br/><sup>2</sup> Questo evento è disponibile solo in Controllo avanzato. Questo significa che agli utenti deve essere assegnata la licenza appropriata prima che questi eventi siano registrati nel log di controllo. Per altre informazioni sulle attività disponibili solo in Controllo avanzato, vedere [Controllo avanzato in Microsoft 365](/microsoft-365/compliance/advanced-audit#advanced-audit-events). Per i requisiti di licenza di controllo avanzati, vedere Soluzioni di controllo [in Microsoft 365](/microsoft-365/compliance/auditing-solutions-overview#licensing-requirements).
+> <sup>1</sup> Un record di controllo per questo evento viene registrato solo quando l'operazione viene eseguita chiamando un'API Graph Microsoft. Se l'operazione viene eseguita nel client Teams, non verrà registrato un record di controllo<br/><br/><sup>2</sup> Questo evento è disponibile solo in Controllo avanzato. Questo significa che agli utenti deve essere assegnata la licenza appropriata prima che questi eventi siano registrati nel log di controllo. Per altre informazioni sulle attività disponibili solo in Controllo avanzato, vedere [Controllo avanzato in Microsoft 365](/microsoft-365/compliance/advanced-audit#advanced-audit-events). Per i requisiti di licenza di controllo avanzati, vedere [Soluzioni di controllo in Microsoft 365](/microsoft-365/compliance/auditing-solutions-overview#licensing-requirements).
 
 ## <a name="shifts-in-teams-activities"></a>Turni nelle Teams lavoro
 
@@ -168,13 +173,13 @@ Se l'organizzazione usa l'app Turni in Teams, è possibile cercare nel log di co
 |Aggiunta dell'integrazione della forza lavoro      |WorkforceIntegrationAdded                  | L'app Turni è integrata con un sistema di terze parti.         |
 |Messaggio di turno disattivato accettato         |OffShiftDialogAccepted          |Un utente riconosce il messaggio fuori turno per accedere Teams dopo l'orario di lavoro.           |
 
-## <a name="office-365-management-activity-api"></a>api Office 365 Gestione attività
+## <a name="office-365-management-activity-api"></a>Office 365 API attività di gestione
 
 È possibile usare l'API Office 365 di gestione per recuperare informazioni sugli Teams eventi. Per altre informazioni sullo schema dell'API attività di gestione per Teams, vedere Teams [schema](/office/office-365-management-api/office-365-management-activity-api-schema#microsoft-teams-schema).
 
 ## <a name="attribution-in-teams-audit-logs"></a>Attribuzione nei log Teams di controllo
 
-Le modifiche all'appartenenza Teams (ad esempio gli utenti aggiunti o eliminati) apportate tramite Azure Active Directory (Azure AD), il portale di amministrazione di Microsoft 365 o l'API Graph gruppi di Microsoft 365 verranno visualizzate in Teams  controllare i messaggi e nel canale Generale con un'attribuzione a un proprietario esistente del team e non all'iniziatore effettivo dell'azione. In questi scenari, consultare Azure AD o [Microsoft 365 di](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) controllo del gruppo per visualizzare le informazioni pertinenti.
+Le modifiche all'appartenenza Teams ,ad esempio gli utenti aggiunti o eliminati, apportate tramite Azure Active Directory (Azure AD), il portale di amministrazione di Microsoft 365 o l'API Graph gruppi di Microsoft 365 verranno visualizzate in Teams  controllare i messaggi e nel canale Generale con un'attribuzione a un proprietario esistente del team e non all'iniziatore effettivo dell'azione. In questi scenari, consultare Azure AD o [Microsoft 365 di](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) controllo del gruppo per visualizzare le informazioni pertinenti.
 
 ## <a name="use-defender-for-cloud-apps-to-set-activity-policies"></a>Usare Defender per le app cloud per impostare i criteri di attività
 
@@ -188,7 +193,7 @@ Uno scenario da tenere sotto controllo, dal punto di vista aziendale, è l'aggiu
 
 :::image type="content" alt-text="Criteri per monitorare l'aggiunta di utenti esterni." source="media/TeamsExternalUserAddPolicy.png" lightbox="media/TeamsExternalUserAddPolicy.png":::
 
-Lo screenshot di questo criterio per monitorare l'aggiunta di utenti esterni consente di assegnare un nome al criterio, impostare la gravità in base alle esigenze aziendali, impostarlo come (in questo caso) una singola attività e quindi stabilire i parametri che monitoreranno specificamente solo l'aggiunta di utenti non interni e limitare questa attività a Teams.
+Lo screenshot di questo criterio per monitorare l'aggiunta di utenti esterni consente di assegnare un nome al criterio, impostare la gravità in base alle esigenze aziendali, impostarla come (in questo caso) una singola attività e quindi stabilire i parametri che monitoreranno specificamente solo l'aggiunta di utenti non interni e limitare questa attività a Teams.
 
 I risultati di questo criterio possono essere visualizzati nel log attività:
 
@@ -218,7 +223,7 @@ Dopo aver stabilito un criterio che funziona per l'azienda, è possibile esamina
 
 ## <a name="use-defender-for-cloud-apps-to-set-anomaly-detection-policies"></a>Usare Defender per le app cloud per impostare criteri di rilevamento anomalie
 
-I criteri di rilevamento delle anomalie [in Defender](/cloud-app-security/anomaly-detection-policy) per le app cloud forniscono analisi del comportamento delle entità e degli utenti predefinite (UEBA) e machine learning (ML) in modo da poter eseguire immediatamente il rilevamento avanzato delle minacce nell'ambiente cloud. Poiché sono abilitati automaticamente, i nuovi criteri di rilevamento delle anomalie forniscono risultati immediati fornendo rilevamenti immediati, mirando a numerose anomalie comportamentali tra gli utenti e i computer e i dispositivi connessi alla rete. Inoltre, i nuovi criteri espongono più dati dal motore di rilevamento defender per le app cloud, per velocizzare il processo di indagine e contenere le minacce in corso.
+I criteri di rilevamento anomalie [in Defender](/cloud-app-security/anomaly-detection-policy) for Cloud Apps forniscono analisi del comportamento delle entità e degli utenti predefinite (UEBA) e machine learning (ML) in modo da poter eseguire immediatamente il rilevamento avanzato delle minacce nell'ambiente cloud. Poiché sono abilitati automaticamente, i nuovi criteri di rilevamento delle anomalie forniscono risultati immediati fornendo rilevamenti immediati, mirando a numerose anomalie comportamentali tra gli utenti e i computer e i dispositivi connessi alla rete. Inoltre, i nuovi criteri espongono più dati dal motore di rilevamento defender per le app cloud, per velocizzare il processo di indagine e contenere le minacce in corso.
 
 Stiamo lavorando per integrare gli eventi Teams nei criteri di rilevamento anomalie. Per il momento, è possibile configurare criteri di rilevamento anomalie per altri prodotti Office ed eseguire azioni sugli utenti che soddisfano tali criteri.
 

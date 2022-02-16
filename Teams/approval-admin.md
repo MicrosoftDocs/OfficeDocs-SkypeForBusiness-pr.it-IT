@@ -8,18 +8,23 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 searchScope:
-  - Microsoft Teams
+- Microsoft Teams
 search.appverid: MET150
 description: Informazioni sulla disponibilità dell'applicazione Approvazioni in Microsoft Teams.
 ms.localizationpriority: medium
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.collection:
-  - M365-collaboration
+- M365-collaboration
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: ea3da24dc0fa3a64d90b38a67b13be0fa4d041ce
+ms.sourcegitcommit: 5880de47e986854fca873ae75f76a7ecad194dff
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62421549"
 ---
-
 # <a name="teams-approvals-app-availability"></a>Disponibilità dell'app Approvazioni in Teams
 
 L'app Approvazioni è disponibile come app personale per tutti gli utenti di Microsoft Teams.
@@ -94,10 +99,10 @@ Autorizzazioni per i modelli di approvazione
 
 - Tutti i proprietari dei team possono creare un modello di approvazione per i team di cui sono proprietari.
 
-- Quando un amministratore crea un modello per l'intera organizzazione per la prima volta, crea automaticamente un nuovo gruppo Azure Active Directory (AAD) per tutti gli amministratori del tenant, inclusi gli amministratori dei servizi globali e Teams. Questi amministratori verranno aggiunti come proprietari del gruppo, in modo che possano gestire i modelli dell'organizzazione in modalità co-gestione. Gli amministratori che non hanno più accesso all'organizzazione dopo la creazione del team devono essere aggiunti manualmente come proprietari dei gruppi, in modo da avere le stesse autorizzazioni per gestire i modelli a livello di organizzazione.
+- Quando un amministratore crea un modello per l'intera organizzazione per la prima volta, crea automaticamente un nuovo gruppo Azure Active Directory (AAD) per tutti gli amministratori del tenant, inclusi gli amministratori dei servizi Teams globale e di Teams. Questi amministratori verranno aggiunti come proprietari del gruppo, in modo che possano gestire i modelli dell'organizzazione in modalità co-gestione. Gli amministratori che non hanno più accesso all'organizzazione dopo la creazione del team devono essere aggiunti manualmente come proprietari dei gruppi, in modo da avere le stesse autorizzazioni per gestire i modelli a livello di organizzazione.
 
 > [!Note]
-> Se un amministratore elimina il gruppo, è necessario un mese per ripristinarlo nel portale Azure Active Directory (AAD) per ripristinare tutti i dati correlati. Dopo un mese o se l'amministratore elimina questo gruppo nel Cestino, si perderanno tutti i dati correlati.
+> Se un amministratore elimina il gruppo, è necessario un mese per ripristinarlo all'interno del portale Azure Active Directory (AAD) per ripristinare tutti i dati correlati. Dopo un mese o se l'amministratore elimina questo gruppo nel Cestino, si perderanno tutti i dati correlati.
 
 ## <a name="disable-the-approvals-app"></a>Disabilitare l'app Approvazioni
 
@@ -197,7 +202,7 @@ Per usare la Approvazioni di firma elettronica dell'app, è necessaria una licen
 
 È possibile usare l'Teams di amministrazione per controllare quali provider di firme elettroniche di terze parti sono disponibili per gli utenti nell'app Approvazioni. Per impostazione predefinita, i provider di firme elettroniche sono abilitati nell Approvazioni app. Quando si disabilita un provider di firme elettroniche, gli utenti non potranno accedere a tale provider quando creano le approvazioni. Gli utenti non saranno inoltre in grado di visualizzare le richieste di firma elettronica create con tale provider.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare a Teams **app** >  **Gestione app**.
+1. Nel riquadro di spostamento sinistro dell'Teams di amministrazione passare a Teams **app** >  **Di gestione delle app**.
 2. Cercare l'app Approvazioni e quindi selezionarla.
 3. Passare alla scheda **Impostazioni** e quindi eseguire una o più delle operazioni seguenti:
 

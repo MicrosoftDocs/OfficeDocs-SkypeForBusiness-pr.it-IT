@@ -22,19 +22,19 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ansantam
-description: Informazioni su come integrare il connettore Teams EHR per consentire agli operatori sanitari dell'organizzazione di condurre visite virtuali con pazienti o altri provider in Teams direttamente dal sistema Epic EHR.
+description: Informazioni su come integrare il connettore Teams EHR per consentire ai provider sanitari dell'organizzazione di condurre visite virtuali con pazienti o altri provider in Teams direttamente dal sistema Epic EHR.
 ms.openlocfilehash: 3274ed2c566008dd7474accf159540c96c82b865
-ms.sourcegitcommit: 2e8daa3511cd198b3e0d43b153dd37a59cb21692
+ms.sourcegitcommit: 5880de47e986854fca873ae75f76a7ecad194dff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2022
+ms.lasthandoff: 02/15/2022
 ms.locfileid: "62763321"
 ---
 # <a name="virtual-visits-with-teams---integration-into-epic-ehr"></a>Visite virtuali con Teams - Integrazione in Epic EHR
 
 Il connettore Microsoft Teams Electronic Health Record (EHR) consente ai medici di avviare facilmente una visita virtuale del paziente o una consultazione con un altro provider in Microsoft Teams direttamente dal sistema Epic EHR. Basato sul cloud Microsoft 365, Teams consente una collaborazione e una comunicazione semplici e sicure con strumenti di chat, video, voce e assistenza sanitaria in un unico hub che supporta la conformità con HIPAA, la certificazione HITECH e altro ancora.
 
-La piattaforma di comunicazione e collaborazione di Teams consente ai medici di ridurre facilmente l'ingombro dei sistemi frammentati in modo che possano concentrarsi sulla fornitura delle migliori cure possibili. Con il Teams EHR è possibile:
+La piattaforma di comunicazione e collaborazione di Teams consente ai medici di ridurre facilmente l'ingombro dei sistemi frammentati, in modo che possano concentrarsi sulla fornitura delle migliori cure possibili. Con il Teams EHR è possibile:
 
 - Avvia Teams virtual visits dal sistema Epic EHR con un flusso di lavoro clinico integrato.
 - Consenti ai pazienti di partecipare Teams visite virtuali dal portale dei pazienti o tramite SMS.
@@ -60,7 +60,7 @@ Esaminare le informazioni seguenti per comprendere il processo di integrazione g
 
 ||||||
 |---------|---------|---------|---------|---------|
-|**Azione**: richiedi [l'accesso all'app Teams app](#request-access-to-the-teams-app). <br> **Risultato**: autorizziamo l'organizzazione per i test.|**Azione**: creiamo un certificato di chiave pubblica e privata e li carichiamo in Epic. <br> **Risultato**: Epic sincronizza il certificato della chiave pubblica.|**Azione**: completare i passaggi di configurazione nel portale di configurazione del connettore EHR. <br> **Risultato**: si ricevono i record FDI per la configurazione Epic.| **Azione**: si lavora con lo specialista tecnico Epic per configurare i record FDI in Epic.<br> **Risultato**: configurazione completata. Pronto per il test.|**Azione**: È possibile completare i test nell'ambiente di test.<br> **Risultato**: convalida completa dei flussi e decisione di passare alla produzione.|
+|**Azione**: si [richiede l'accesso all'app Teams app](#request-access-to-the-teams-app). <br> **Risultato**: autorizziamo l'organizzazione per i test.|**Azione**: creiamo un certificato di chiave pubblica e privata e li carichiamo in Epic. <br> **Risultato**: Epic sincronizza il certificato della chiave pubblica.|**Azione**: completare i passaggi di configurazione nel portale di configurazione del connettore EHR. <br> **Risultato**: si ricevono i record FDI per la configurazione Epic.| **Azione**: si lavora con lo specialista tecnico Epic per configurare i record FDI in Epic.<br> **Risultato**: configurazione completata. Pronto per il test.|**Azione**: È possibile completare i test nell'ambiente di test.<br> **Risultato**: convalida completa dei flussi e decisione di passare alla produzione.|
 
 ### <a name="request-access-to-the-teams-app"></a>Richiedere l'accesso all Teams app
 
@@ -76,7 +76,7 @@ Rivedere la [Guida all'integrazione della telemedicina di Epic-Microsoft Teams](
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- Un abbonamento attivo a Microsoft Cloud per il settore sanitario o un abbonamento all'offerta autonoma Microsoft Teams connettore EHR (applicata solo durante i test in un ambiente EHR di produzione).
+- Un abbonamento attivo a un Microsoft Cloud per il settore sanitario o un abbonamento all'offerta autonoma Microsoft Teams connettore EHR (applicata solo quando si esegue il test in un ambiente EHR di produzione).
 - Versione epica di novembre 2018 o successiva.
 - Gli utenti hanno una licenza Microsoft 365 o Office 365 che include Teams riunioni.
 - Teams viene adottato e usato nell'organizzazione sanitaria.
@@ -128,7 +128,7 @@ Quindi, per configurare l'integrazione, l'Microsoft 365 amministratore esegue le
 ### <a name="enable-sms-notifications-optional"></a>Abilitare le notifiche SMS (facoltativo)
 
 > [!NOTE]
-> Le notifiche TRAMITE SMS sono attualmente disponibili solo negli Stati Uniti. Stiamo lavorando per rendere questa funzionalità disponibile in altre aree geografiche nelle versioni future Teams e questo articolo verrà aggiornato quando disponibile.
+> Le notifiche TRAMITE SMS sono attualmente disponibili solo negli Stati Uniti. Stiamo lavorando per rendere questa funzionalità disponibile in altre aree geografiche nelle versioni future Teams e aggiorneremo questo articolo quando disponibile.
 
 Completare questo passaggio se l'organizzazione vuole che Microsoft gesti le notifiche SMS per i pazienti. Quando si abilitano le notifiche TRAMITE SMS, i pazienti riceveranno messaggi di conferma e promemoria per le visite pianificate.
 
@@ -173,7 +173,7 @@ Per abilitare le notifiche TRAMITE SMS, l Microsoft 365 amministratore esegue le
     Scegliere **Avanti**.
 
 > [!NOTE]
-> In qualsiasi momento, l Microsoft 365 amministratore può aggiornare qualsiasi impostazione di SMS. Tenere presente che la modifica delle impostazioni potrebbe comportare l'interruzione del servizio SMS. Per altre informazioni su come visualizzare i report SMS, vedere Teams [di amministrazione del connettore EHR](ehr-admin-reports.md).
+> In qualsiasi momento, l'Microsoft 365 amministratore può aggiornare qualsiasi impostazione di SMS. Tenere presente che la modifica delle impostazioni potrebbe comportare l'interruzione del servizio SMS. Per altre informazioni su come visualizzare i report SMS, vedere Teams di amministrazione [del connettore EHR](ehr-admin-reports.md).
 
 ### <a name="approve-or-view-the-configuration"></a>Approvare o visualizzare la configurazione
 
@@ -219,13 +219,13 @@ Dopo aver completato i passaggi del connettore EHR e la configurazione epica, l'
 
 ### <a name="provider-experience"></a>Esperienza del provider
 
-I provider di servizi sanitari dell'organizzazione possono partecipare alle visite usando Teams dalle loro app per provider Epic (Hyperspace, Haiku, Canto). Il pulsante **Begin virtual visit** (Avvia visita virtuale) è incorporato nel flusso del provider.
+I provider di servizi sanitari dell'organizzazione possono partecipare alle visite usando Teams dalle loro app di provider Epic (Hyperspace, Haiku, Canto). Il pulsante **Begin virtual visit** (Avvia visita virtuale) è incorporato nel flusso del provider.
 
 Caratteristiche principali dell'esperienza del provider:
 
 - I provider possono partecipare alle visite usando i browser supportati o l Teams app.
 
-- Quando si partecipa a una visita per la prima volta, i provider devono eseguire l'accesso una sola volta con l'account Microsoft 365 personale.
+- I provider devono eseguire l'accesso una sola volta con l'account Microsoft 365 quando si partecipa a una visita per la prima volta.
 
 - Dopo l'accesso una sola volta, il provider viene portato direttamente all'appuntamento virtuale in Teams. Il provider deve essere connesso a Teams).
 
@@ -242,7 +242,7 @@ Il connettore supporta i pazienti che a uniscono le visite tramite il Web MyChar
 
 Caratteristiche principali dell'esperienza del paziente:
 
-- I pazienti possono partecipare a visite da web browser moderni su desktop e [dispositivi mobili](../mobile-browser-join.md) senza dover installare l Teams app.
+- I pazienti possono partecipare a visite da web browser moderni su desktop e dispositivi mobili senza dover installare l Teams [app](../mobile-browser-join.md).
 
 - I pazienti possono partecipare alle visite con un solo clic e non è necessario alcun altro account o accesso.
 
@@ -268,4 +268,4 @@ L'ID univoco dell'utente CCE viene archiviato in una delle tre aree geografiche 
 ## <a name="related-articles"></a>Articoli correlati
 
 - [Teams di amministrazione del connettore EHR](ehr-admin-reports.md)
-- [Introduzione a Teams per le organizzazioni sanitarie](teams-in-hc.md)
+- [Introduzione alla Teams per le organizzazioni sanitarie](teams-in-hc.md)

@@ -11,12 +11,17 @@ search.appverid: MET150
 description: Informazioni su come aggiungere Teams per gli utenti dell'organizzazione in base alla licenza.
 ms.localizationpriority: medium
 ms.collection:
-  - M365-collaboration
-  - Teams_ITAdmin_FLW
+- M365-collaboration
+- Teams_ITAdmin_FLW
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: 659cfd90e2fb5f498c00ea4b48039f9493357309
+ms.sourcegitcommit: 5880de47e986854fca873ae75f76a7ecad194dff
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/15/2022
+ms.locfileid: "62161035"
 ---
-
 # <a name="tailor-your-teams-apps-based-on-license"></a>Personalizzare le app Teams in base alla licenza
 
 > [!NOTE]
@@ -29,7 +34,7 @@ appliesto:
 
 Teams consente di aggiungere app in base alla licenza. Quando un utente accede a Teams con l'esperienza dell'app personalizzata abilitata, l'utente ottiene un'esperienza dell'app personalizzata in base alla licenza.
 
-Questa funzionalità offre agli utenti le app più pertinenti in Teams senza alcuna azione da parte dell'amministratore.
+Questa caratteristica offre agli utenti le app più pertinenti in Teams senza alcuna azione da parte dell'amministratore.
 
 ## <a name="tailored-app-experience"></a>Esperienza dell'app personalizzata
 
@@ -48,13 +53,13 @@ App aggiunte per gli utenti che hanno una licenza F:
 > [!NOTE]
 > L'aggiunta di utenti deve essere attivata nel criterio di configurazione globale [dell'app](teams-app-setup-policies.md) (impostazione predefinita a livello di organizzazione) per l'applicazione di questa funzionalità.
 
-La caratteristica esperienza app personalizzata è controllata dall'impostazione  Mostra app personalizzate in base alle licenze dell'app a livello di organizzazione [](manage-apps.md#manage-org-wide-app-settings) nella pagina Gestisci app dell'interfaccia di amministrazione di Teams. Se la funzionalità è attivata, tutti gli utenti dell'organizzazione che dispongono di una licenza F otterrà l'esperienza personalizzata dell'app.
+La funzionalità dell'esperienza app personalizzata è controllata dall'impostazione Mostra app personalizzate in base alle licenze dell'app a livello [](manage-apps.md#manage-org-wide-app-settings) di organizzazione nella pagina Gestisci app dell'interfaccia di amministrazione di Teams. Se la funzionalità è attivata, tutti gli utenti dell'organizzazione che dispongono di una licenza F otterrà l'esperienza personalizzata dell'app.
 
 Tenere presente che tutti i criteri di configurazione delle app personalizzati assegnati agli utenti hanno la precedenza. Questo significa che se a un utente è già assegnato un criterio di configurazione dell'app personalizzato, l'utente ottiene la configurazione definita nei criteri di configurazione delle app personalizzate. Per altre informazioni sul funzionamento della caratteristica con i criteri di configurazione delle app esistenti applicati nell'organizzazione, vedere la [sezione Scenari di](#scenarios) questo articolo.
 
 Questa funzionalità è attivata per impostazione predefinita. Tuttavia, se non si vuole che l'esperienza dell'app personalizzata fornita da Microsoft sia personalizzata, è possibile disattivare la funzionalità. Per disattivare o attivare la funzionalità:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare a Teams **app** >  di gestione delle **app e quindi** selezionare Impostazioni app a livello **di organizzazione**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare a Teams **app** >  di gestione delle **app e quindi** selezionare Impostazioni **app a livello di organizzazione**.
 2. In **App personalizzate impostare** l'interruttore Mostra **app personalizzate** in base alle licenze su **Disattivato** o **Attivato**.
 
     :::image type="content" source="media/pin-teams-apps-based-on-license.png" alt-text="Screenshot della pagina Gestisci app con l'impostazione Mostra app personalizzate in base alle licenze dell'app a livello di organizzazione" lightbox="media/pin-teams-apps-based-on-license.png":::
