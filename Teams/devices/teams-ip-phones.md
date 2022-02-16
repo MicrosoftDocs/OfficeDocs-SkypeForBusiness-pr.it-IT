@@ -21,16 +21,16 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 192d56972c0d26484be773cf40fe0d1c59b69136
-ms.sourcegitcommit: 2e8daa3511cd198b3e0d43b153dd37a59cb21692
+ms.openlocfilehash: 809f69383f73346f7964926e689739016b155705
+ms.sourcegitcommit: 5aae5eace62e491dac655882d24974824ce1aa07
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2022
-ms.locfileid: "62763669"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62856684"
 ---
-# <a name="microsoft-teams-certified-devices"></a>Microsoft Teams dispositivi certificati
+# <a name="microsoft-teams-certified-android-devices"></a>Microsoft Teams dispositivi Android certificati
 
-Il programma Microsoft Teams di certificazione dei dispositivi Microsoft Teams garantisce che i dispositivi certificati soddisfino uno standard elevato, con obiettivi di prestazioni più elevati e metriche di qualità nell'intera esperienza Teams (audio, video, interfaccia utente). I partner Microsoft e OEM collaborano attivamente per garantire che i dispositivi soddisfino tutti i requisiti di certificazione, tra cui sicurezza, qualità audio e video, esperienza Teams e accessibilità.
+Il programma Microsoft Teams dispositivi certificati assicura che i dispositivi certificati soddisfino uno standard elevato, con obiettivi di prestazioni più elevati e metriche di qualità nell'intera esperienza Teams (audio, video, interfaccia utente). I partner Microsoft e OEM collaborano attivamente per garantire che i dispositivi soddisfino tutti i requisiti di certificazione, tra cui sicurezza, qualità audio e video, esperienza Teams e accessibilità.
 
 I programmi di certificazione sono progettati per garantire che tutti i dispositivi certificati esercitino una versione Android con il set di funzionalità necessario per Teams e Teams di amministrazione. Le date di fine della certificazione si basano sulla versione del sistema operativo Android in esecuzione nel dispositivo quando entra nel programma di certificazione. I nostri partner OEM stanno lavorando per prolungare la durata della certificazione aggiornando la versione del sistema operativo Android e ricertificando o rilasciando nuovi modelli all'avanguardia.
 
@@ -67,23 +67,23 @@ I dispositivi seguenti sono certificati nel programma di certificazione Microsof
 
 ## <a name="certified-teams-rooms-on-android"></a>Certificati Teams Rooms su Android
 
-I dispositivi seguenti sono certificati nell'Microsoft Teams Rooms di certificazione android:
+I dispositivi seguenti sono certificati nell'Microsoft Teams Rooms di certificazione per Android:
 
 | Modello di dispositivo | Versione firmware | Data di fine certificazione corrente | Dimensioni della sala                                        |  Versione del sistema operativo Android    |
 |:------------------------|:-----------------|:--------------|:----------------------------------------------------------|-----------------------------------|
 | EPOS EXPAND 80T | `1.2.2.21182.10` | 5 agosto 2023 | In bundle con EPOS Vision 3T | 9 |
 | Dispositivo di tocco Logitech     | `1.2.982`     |   3 settembre 2024  | Compatibile con Logitech Rally Bar e Rally Bar Mini | 10 |
 | Logitech Rally Bar Mini | `1.2.982`     |   3 settembre 2024  |    Piccole Sala riunioni (4,5 m x 4,5 m) | 10 |
-| Logitech Rally Bar      | `1.2.788`     |   3 settembre 2024  |    Sala di medie dimensioni (4,5 m x 6m)       | 10 |
-| AudioCodes RXV80 | `1.9.155`        |   5 agosto 2023  | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) | 9 |
-| EPOS EXPAND Vision 3T       | `1.2.0.21102.03`    | 5 agosto 2023 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) | 9 |
-| Yealink MeetingBar A30       | `133.15.0.52`    | 5 agosto 2023   | Sala di medie dimensioni (4,5 m x 6m) | 9 |
+| Logitech Rally Bar      | `1.2.788`     |   3 settembre 2024  |    Sala di medie dimensioni (4,5 m x 6 m)       | 10 |
+| AudioCodes RXV80 | `1.9.155`        |   5 agosto 2023  | Focus room(3m x 3m) </br> Sala riunioni piccola(4,5 m x 4,5 m) | 9 |
+| EPOS EXPAND Vision 3T       | `1.2.0.21102.03`    | 5 agosto 2023 | Focus room(3m x 3m) </br> Sala riunioni piccola(4,5 m x 4,5 m) | 9 |
+| Yealink MeetingBar A30       | `133.15.0.52`    | 5 agosto 2023   | Sala di medie dimensioni (4,5 m x 6 m) | 9 |
 | Console touch Yealink CTP18  | `137.15.0.28`    | 5 agosto 2023   | Compatibile con Yealink MeetingBar A20 e Yealink MeetingBar A30 | 9 |
-| Yealink MeetingBar A20  | `133.15.0.19`      | 5 agosto 2023 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) | 9 |
-| Poly Studio X30         | `3.1.1.216109`     | 5 dicembre 2022  | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) | 8.1 |
-| Poly Studio X50         | `3.1.1.216109`     | 5 dicembre 2022   | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) | 8.1 |
+| Yealink MeetingBar A20  | `133.15.0.19`      | 5 agosto 2023 | Focus room(3 m x 3 m) </br> Sala riunioni piccola(4,5 m x 4,5 m) | 9 |
+| Poly Studio X30         | `3.1.1.216109`     | 5 dicembre 2022  | Focus room(3 m x 3 m) </br> Sala riunioni piccola(4,5 m x 4,5 m) | 8.1 |
+| Poly Studio X50         | `3.1.1.216109`     | 5 dicembre 2022   | Focus room(3 m x 3 m) </br> Sala riunioni piccola(4,5 m x 4,5 m) | 8.1 |
 | Poly TC8                | `3.3.2.210441`     | 5 agosto 2023 | Compatibile con Poly Studio X30 e Poly Studio X50  |  9  |
-| Yealink VC210           | `118.15.0.14`      | 5 agosto 2023 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |  9  |
+| Yealink VC210           | `118.15.0.14`      | 5 agosto 2023 | Focus room(3 m x 3 m) </br> Sala riunioni piccola(4,5 m x 4,5 m) |  9  |
 
 ## <a name="certified-teams-displays"></a>Schermi Teams certificati
 
@@ -94,7 +94,7 @@ I dispositivi seguenti sono certificati nell'Microsoft Teams visualizza il progr
 |Visualizzazione ThinkSmart di Lenovo|`CD-18781Y.201006.099`| 5 dicembre 2022 |  8.1  |
 
 ## <a name="certified-teams-panels"></a>Pannelli Teams certificati
-I dispositivi seguenti sono certificati nell'Microsoft Teams di certificazione dei pannelli di controllo:
+I dispositivi seguenti sono certificati nel Microsoft Teams del programma di certificazione:
 
 | Modello di dispositivo| Versione firmware | Data di fine certificazione corrente | Versione del sistema operativo Android |                                         
 |:------------------------|:-----------------|:--------------|-----------------------|
@@ -116,7 +116,7 @@ Di seguito sono riportate le versioni più recenti Teams dell'app per telefono e
 | Aggiornamento #3B 2021 | 6 dicembre 2021   | `1449/1.0.94.2021112302 ` | `5.0.5304.0` | `298` |
 | Aggiornamento #3A 2021 | 22 novembre 2021   | `1449/1.0.94.2021110101 ` | `5.0.5304.0` | `298` |
 | Aggiornamento 2021 #3  | 3 novembre 2021   | `1449/1.0.94.2021101205` | `5.0.5304.0` | `298` |
-| Aggiornamento #2A 2021 | 10 giugno 2021  |`1449/1.0.94.2021052803`|  `5.0.5088.0` |  `1.0.0.202103160138.product (256)` |
+| Aggiornamento 2021 #2A | 10 giugno 2021  |`1449/1.0.94.2021052803`|  `5.0.5088.0` |  `1.0.0.202103160138.product (256)` |
 | Aggiornamento 2021 #2  | 8 giugno 2021  |`1449/1.0.94.2021051303`|  `5.0.5088.0` |  `1.0.0.202103160138.product (256)` |
 | Aggiornamento 2021 #1A | 5 aprile 2021  |`1449/1.0.94.2021033002`|  `5.0.5045.0` |  `1.0.0.202101280722.product (253)` |
 | Aggiornamento 2021 #1  | 26 marzo 2021  |`1449/1.0.94.2021022403` |  `5.0.5045.0` |  `1.0.0.202101280722.product (253)` |
@@ -219,6 +219,10 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 | Poly Studio X30 | `3.8.0`          | Aggiornamento 2021 #2    |
 | Poly Studio X50 | `3.8.0`          | Aggiornamento 2021 #2    |
 | Poly TC8        | `3.8.0`          | Aggiornamento 2021 #2    |
+| Logi Rallybar    | 1.3.538         | Aggiornamento #2B 2021    |
+| Logi Rallybar Mini | 1.3.538       | Aggiornamento #2B 2021    |
+| Logi Rallybar    | 1.4.228         | Aggiornamento #2B 2021    |
+| Logi Rallybar Mini | 1.4.228       | Aggiornamento #2B 2021    |
 | Poly Studio X30 | `3.7.0`          | Aggiornamento #2A 2021    |
 | Poly Studio X50 | `3.7.0`          | Aggiornamento #2A 2021    |
 | Poly TC8        | `3.7.0`          | Aggiornamento #2A 2021    |
@@ -269,7 +273,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 |Visualizzazione ThinkSmart di Lenovo| `CD-18781Y.210507.111` |Aggiornamento 2021 #2 |
 |Visualizzazione ThinkSmart di Lenovo| `CD-18781Y.210228.109` |Aggiornamento 2021 #1 |
 
-### <a name="product-release-information-for-teams-panels"></a>Informazioni sulla versione del prodotto Teams pannelli
+### <a name="product-release-information-for-teams-panels"></a>Informazioni sulla versione del prodotto per Teams pannelli
 
 Di seguito sono riportate le versioni più Microsoft Teams dell'app Panels e del firmware.
 
@@ -294,7 +298,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 ## <a name="more-resources"></a>Altre risorse
 
-Per [informazioni sulle funzionalità supportate da](phones-for-teams.md) questi dispositivi, vedere Microsoft Teams set di funzionalità dei telefoni.
+Per [informazioni sulle funzionalità supportate da](phones-for-teams.md) questi dispositivi, vedere Microsoft Teams set di funzionalità per i telefoni.
 
 Vedere [Trovare la versione firmware in un dispositivo mobile](phones-for-teams.md) per determinare la versione del firmware del dispositivo nel dispositivo mobile.
 

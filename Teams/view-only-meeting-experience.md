@@ -18,7 +18,7 @@ appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 104540c047f499f8b82139e0c76c93e4b4625f62
 ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/05/2022
 ms.locfileid: "62401140"
@@ -128,7 +128,7 @@ I partecipanti nella sala di sola visualizzazione non potranno usare le seguenti
 - I partecipanti nella sala di sola visualizzazione non vengono inclusi nel report sui partecipanti.
 - I partecipanti nella sala di sola visualizzazione hanno un'esperienza video singola. Possono accedere l'altoparlante attivo o i contenuti che vengono condivisi, ma non entrambi.
 - Al momento non supportiamo i layout **Galleria**, **Galleria estesa**, o **Modalità Insieme** per gli utenti nella sala di sola visualizzazione.
-- I partecipanti di sola visualizzazione sono supportati solo dai criteri di lobby seguenti: "Persone nell'organizzazione", "Persone dell'organizzazione e guest", "Persone dell'organizzazione, organizzazioni attendibili e guest" e "Tutti". Se si usano criteri di sala di attesa che non supportano i partecipanti di sola visualizzazione, ai partecipanti di sola visualizzazione saranno espulsi dalla riunione. 
+- I partecipanti in sola visualizzazione sono supportati esclusivamente dai criteri seguenti di sala di attesa: "Persone nella mia organizzazione e utenti guest", "Persone nella mia organizzazione, organizzazioni attendibili e utenti guest" e "Tutti". Se si usano criteri di sala di attesa che non supportano i partecipanti di sola visualizzazione, ai partecipanti di sola visualizzazione saranno espulsi dalla riunione. 
 - I partecipanti nella sala di sola visualizzazione non avranno la stessa latenza dei partecipanti normali. <sup>1</sup>
 
   <sup>1</sup> I partecipanti nella sala di sola visualizzazione avrannno un ritardo audio e video di 30 secondi durante la riunione.  

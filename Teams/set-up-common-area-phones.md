@@ -1,5 +1,5 @@
 ---
-title: Configurare la licenza Telefono Area comune
+title: Configurare la licenza Telefono area comune
 ms.author: czawideh
 author: cazawideh
 manager: serdars
@@ -21,12 +21,12 @@ ms.custom:
 - Phone System
 - seo-marvel-mar2020
 description: "Informazioni su come configurare i telefoni dell'area comune per lobby, aree di ricezione e sale riunioni "
-ms.openlocfilehash: a4e4720fe7baf58d0da6f00800c61b706ec48516
-ms.sourcegitcommit: 909b0a709983d21fa6f2b547a78cc6a1222188df
+ms.openlocfilehash: 144e32e1bf56bc3e2d64d0c6a1a137fd501442b7
+ms.sourcegitcommit: 5aae5eace62e491dac655882d24974824ce1aa07
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2022
-ms.locfileid: "62279264"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "62856664"
 ---
 # <a name="deploy-common-area-phones-for-microsoft-teams"></a>Distribuire telefoni ad area comune per Microsoft Teams
 
@@ -55,11 +55,11 @@ La licenza common area Telefono supporta:
 &sup2; Non disponibile nei cloud sovrani  
 
 >[!NOTE]
-> Non è possibile eseguire la migrazione degli account per i telefoni dell'area comune Skype for Business Server non è possibile eseguire la migrazione a Microsoft Teams. Seguire i passaggi di questo articolo per ricreare gli account per Teams e, se necessario, eseguire la migrazione della connettività PTSN.
+> Gli account per i telefoni dell'area comune creati in Skype for Business Server non possono essere migrati a Microsoft Teams. Seguire i passaggi di questo articolo per ricreare gli account per Teams e, se necessario, eseguire la migrazione della connettività PTSN.
 
 ## <a name="step-1---buy-the-licenses"></a>Passaggio 1: acquista le licenze
 
-Prima di tutto, è necessario acquistare una licenza di Common Area Telefono (CAP) e assicurarsi di avere un telefono certificato. Per cercare e altre informazioni sui telefoni certificati, vai a Microsoft Teams [dispositivi](https://products.office.com/microsoft-teams/across-devices?ms.url=officecomteamsdevices&rtc=1).
+Prima di tutto, è necessario acquistare una licenza common area Telefono (CAP) e assicurarsi di avere un telefono certificato. Per cercare e altre informazioni sui telefoni certificati, vai a Microsoft Teams [dispositivi](https://products.office.com/microsoft-teams/across-devices?ms.url=officecomteamsdevices&rtc=1).
 
 1. Nel interfaccia di amministrazione di Microsoft 365, passare a **BillingPurchase** >  services. 
 
@@ -72,7 +72,7 @@ Prima di tutto, è necessario acquistare una licenza di Common Area Telefono (CA
 >[!NOTE]
 >Se si usa Intune nell'ambiente e si hanno regole di accesso condizionale che richiedono la conformità dei dispositivi, è necessario assegnare una licenza di Azure Active Directory Premium Piano 1 e Intune all'account del dispositivo per il telefono dell'area comune.
 >
->I telefoni delle aree comuni possono essere influenzati dalle regole di accesso condizionale e da altre configurazioni di identità, come l'autenticazione a più fattori. Per [altre informazioni, vedere Procedure consigliate Teams di autenticazione per i dispositivi Android](devices/authentication-best-practices-for-android-devices.md).
+>I telefoni delle aree comuni possono essere influenzati dalle regole di accesso condizionale e da altre configurazioni di identità, come l'autenticazione a più fattori. Per [altre informazioni, vedere Procedure consigliate di autenticazione Teams dispositivi Android](devices/authentication-best-practices-for-android-devices.md).
 
 ## <a name="step-2---create-a-new-user-account-and-assign-licenses"></a>Passaggio 2 - Creare un nuovo account utente e assegnare licenze
 
@@ -82,7 +82,7 @@ Se si distribuiscono più telefoni di area comuni contemporaneamente, vedere com
 
 Se si sta distribuendo un dispositivo:
 
-1. Nella finestra interfaccia di amministrazione di Microsoft 365 passare a **UtentiAttiviAggiungere** >  >  **un utente**.
+1. Nella finestra interfaccia di amministrazione di Microsoft 365 passare a **UtentiAttivatiAggiungere** >  >  **un utente**.
 
 2. Immettere un nome utente come "Principale" per il nome e "Ricezione" per il secondo nome.
 
@@ -104,7 +104,7 @@ Se si sta distribuendo un dispositivo:
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-Usare PowerShell quando si vogliono creare e assegnare licenze per più account utente contemporaneamente. Per [altre informazioni, vedere Creare Microsoft 365](/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell?view=o365-worldwide) account utente con PowerShell e Assegnare Microsoft 365 licenze agli account utente [con PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide).
+Usare PowerShell quando si vogliono creare e assegnare licenze per più account utente contemporaneamente. Per altre informazioni, vedere Creare Microsoft 365 account utente con PowerShell e Assegnare Microsoft 365 licenze agli account utente con PowerShell.See [Create Microsoft 365 user accounts with PowerShell](/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell?view=o365-worldwide) and [Assign Microsoft 365 licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide) for more information.
 
 ## <a name="step-3---set-policies-for-common-area-phones"></a>Passaggio 3 - Impostare i criteri per i telefoni dell'area comune
 
@@ -117,13 +117,13 @@ Usare i criteri per controllare quali funzionalità sono disponibili per gli ute
 
 I telefoni a cui è stato eseguito l'accesso con account a cui è stata assegnata una licenza Telefono area comune visualizzano l'esperienza utente dell'area comune.
 
-Se si vuole ignorare l'interfaccia predefinita di un telefono, è consigliabile creare un criterio [telefono IP](/powershell/module/skype/new-csteamsipphonepolicy?view=skype-ps). Ad esempio, se un telefono di area comune viene usato in un'area pubblica, impostare un criterio telefono IP per limitare la ricerca nella Rubrica globale dell'organizzazione e bloccare l'hot desking. Per [altre informazioni, Teams'interfaccia utente di Set](devices/Teams-Android-devices-user-interface.md) Teams dispositivi Android.
+Se si vuole ignorare l'interfaccia predefinita di un telefono, è consigliabile creare un criterio [telefono IP](/powershell/module/skype/new-csteamsipphonepolicy?view=skype-ps). Ad esempio, se un telefono di area comune viene usato in un'area pubblica, impostare un criterio telefono IP per limitare la ricerca nella Rubrica globale dell'organizzazione e bloccare l'hot desking. Per [altre informazioni, Teams'interfaccia utente di Set Teams dispositivi Android](devices/Teams-Android-devices-user-interface.md).
 
 ### <a name="calling-policies"></a>Criteri di chiamata
 
 Usare i criteri di chiamata per abilitare le chiamate private, l'inoltro di chiamata o l'squillo simultaneo sui telefoni della zona comune. Vedere [Chiamate e inoltro di chiamata in Teams](teams-calling-policy.md) per altre informazioni.
 
-Per impostazione predefinita, il parcheggio di chiamata non è abilitato per i telefoni dell'area comune. È necessario creare un criterio per abilitarlo. Per [altre informazioni, vedere Parcheggio di chiamata e recuperare](call-park-and-retrieve.md) Microsoft Teams chiamate.
+Per impostazione predefinita, il parcheggio di chiamata non è abilitato per i telefoni dell'area comune. È necessario creare un criterio per abilitarlo. Per [altre informazioni, vedere Parcheggio di chiamata Microsoft Teams](call-park-and-retrieve.md) per altre informazioni.
 
 ## <a name="step-4---acquire-and-assign-phone-numbers"></a>Passaggio 4 - Acquisire e assegnare numeri di telefono
 
