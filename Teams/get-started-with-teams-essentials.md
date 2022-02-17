@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a779d094e7a1f266a19aaecf6bbb86732f75f66b
-ms.sourcegitcommit: 909b0a709983d21fa6f2b547a78cc6a1222188df
+ms.openlocfilehash: 3c80b93ef457048d006fb7a7eb6085b3ed5d8eb4
+ms.sourcegitcommit: 1190cd73656dbc9131d46e0a827e28bcd960dfc5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2022
-ms.locfileid: "62279374"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62864029"
 ---
 # <a name="microsoft-teams-essentials-quickstart-guide-for-small-businesses"></a>Guida introduttiva a Microsoft Teams Essentials per le piccole imprese
 
@@ -100,14 +100,6 @@ Nella tabella seguente sono elencate le funzionalità principali di Microsoft Te
 > Per ottenere un'amministrazione avanzata e un intero set completo di funzionalità di Teams, è necessario eseguire l'aggiornamento alla versione completa di Teams acquistando un [piano di abbonamento Microsoft 365 o Office 365](https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-options) appropriato per gli utenti. È consigliabile usare questa opzione per ottenere una maggiore flessibilità nel gestire il modo in cui l'organizzazione collabora.
 
 ## <a name="administration-limits-and-specifications-for-microsoft-teams-essentials"></a>Limiti e specifiche di amministrazione per Microsoft Teams Essentials
-
-Alcuni limiti e specifiche importanti di Teams Essentials da considerare come amministratore:
-
-  - **Amministrazione:** Un abbonamento di Teams Essentials **non fornisce** l'accesso all'interfaccia di amministrazione di Teams. Gli utenti di Team Essentials possono usufruire di una visualizzazione semplificata dell’interfaccia di amministrazione di Microsoft 365 per svolgere attività importanti, come la gestione degli abbonamenti e la configurazione di nuovi utenti.
-
-  - **Microsoft Teams PowerShell:** **non è possibile** gestire Teams Essentials direttamente tramite la riga di comando di PowerShell perché non è disponibile alcun supporto di PowerShell.
-
-  - **Archiviazione:** Teams Essentials usa l’archiviazione nel cloud personale di OneDrive per l'archiviazione di file.
 
 Andare qui: [Limiti e specifiche di Microsoft Teams](/microsoftteams/limits-specifications-teams) per saperne di più sui limiti, le specifiche ed altri requisiti che si applicano a Teams.
 

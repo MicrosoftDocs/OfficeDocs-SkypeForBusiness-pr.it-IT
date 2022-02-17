@@ -11,16 +11,21 @@ search.appverid: MET150
 description: Informazioni sul controllo amministrazione tenant per il riconoscimento vocale (profilo vocale) nelle Teams riunioni.
 ms.localizationpriority: medium
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.collection:
-  - M365-collaboration
+- M365-collaboration
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: 9c970fb3d8584c9a68512187158c7dad11562c4a
+ms.sourcegitcommit: 1190cd73656dbc9131d46e0a827e28bcd960dfc5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62863899"
 ---
-
 # <a name="manage-voice-recognition-technology-controls-for-an-intelligent-speaker"></a>Gestire i controlli della tecnologia di riconoscimento vocale per un altoparlante intelligente
 
-Un altoparlante intelligente usa le informazioni del profilo vocale per riconoscere chi ha detto cosa nella trascrizione in tempo reale. Quando una Microsoft Teams Rooms per Windows sala riunioni è dotata di un altoparlante intelligente, è possibile usare la trascrizione in tempo reale durante la riunione. Questo articolo spiega come l'amministratore del tenant controlla la profilatura vocale usata per il riconoscimento vocale per generare la trascrizione in tempo reale. È possibile controllare in che misura l'organizzazione usa il riconoscimento vocale e le caratteristiche seguenti:
+Un altoparlante intelligente usa le informazioni del profilo vocale per riconoscere chi ha detto cosa nella trascrizione in tempo reale. Quando un Microsoft Teams Rooms per Windows sala riunioni è dotato di altoparlante intelligente, durante la riunione è possibile usare la trascrizione in tempo reale. Questo articolo spiega come l'amministratore del tenant controlla la profilatura vocale usata per il riconoscimento vocale per generare la trascrizione in tempo reale. È possibile controllare in che misura l'organizzazione usa il riconoscimento vocale e le caratteristiche seguenti:
 
 - Modificare il nome del relatore nelle trascrizioni.
 - Modificare l'altoparlante di una singola espressione nella trascrizione o cambiare l'altoparlante in tutte le espressioni nella trascrizione (ma non nelle trascrizioni future).
@@ -41,7 +46,7 @@ Gli elementi seguenti sono i requisiti dell'altoparlante intelligente:
 
 ## <a name="set-up-an-intelligent-speaker"></a>Configurare un altoparlante intelligente
 
-Un altoparlante intelligente si connette direttamente tramite USB alla console Teams Rooms telefono. Per risultati ottimali, un altoparlante intelligente a marchio Yealink deve essere usato con una console a marchio Yealink.
+Un altoparlante intelligente si connette direttamente tramite USB alla Teams Rooms console. Per risultati ottimali, un altoparlante intelligente a marchio Yealink deve essere usato con una console a marchio Yealink.
 
 > [!NOTE]
 > Un altoparlante intelligente Yealink **deve** essere usato con una console Yealink.
@@ -52,7 +57,7 @@ Un altoparlante intelligente si connette direttamente tramite USB alla console T
 Un altoparlante intelligente deve essere posizionato ad almeno 20 cm di distanza dai muri e dagli oggetti di grandi dimensioni, come i portatili. Se il cavo USB dell'altoparlante intelligente non è abbastanza lungo per la configurazione, usare gli estensori dei cavi.
 
 1. Accedere alla console come amministratore.
-2. Impostare le impostazioni Teams dispositivo in modo che corrispondano al microfono e all'altoparlante dell'altoparlante dell'altoparlante intelligente.
+2. Impostare le impostazioni Teams dispositivo in modo che corrispondano al microfono e all'altoparlante dell'altoparlante intelligenti.
    È anche possibile farlo tramite il portale TAC invece che nella console della sala.
 
    Il diagramma mostra come l'altoparlante intelligente è connesso al dispositivo se il dispositivo include una casella dati.
@@ -68,7 +73,7 @@ Un altoparlante intelligente deve essere posizionato ad almeno 20 cm di distanza
 
 ## <a name="enable-an-intelligent-speaker-user-recognition"></a>Abilitare il riconoscimento dell'utente di un altoparlante intelligente
 
-I dati del profilo vocale possono essere usati in qualsiasi riunione con un altoparlante intelligente. Per [informazioni sulle Teams delle riunioni](../meetings-policies-recording-and-transcription.md#allow-transcription), vedere i criteri per le riunioni di PowerShell e i cmdlet per le riunioni di [PowerShell](/powershell/module/skype/set-csteamsmeetingpolicy).
+I dati del profilo vocale possono essere usati in qualsiasi riunione con un altoparlante intelligente. Per [informazioni sulle Teams delle riunioni](../meetings-policies-recording-and-transcription.md#allow-transcription), vedere i criteri per le riunioni e i cmdlet per le riunioni di [PowerShell](/powershell/module/skype/set-csteamsmeetingpolicy).
 
 I dati del profilo vocale dell'utente vengono creati quando il criterio è impostato per distinguere o un invitato non invitato alla riunione entra durante la riunione. I dati del profilo vocale vengono ignorati alla fine della riunione.
 
@@ -76,28 +81,31 @@ Di seguito sono riportati i criteri necessari per impostare un altoparlante inte
 
 |Criterio|Descrizione|Valori e comportamento|
 |-|-|-|
-|enrollUserOverride|Consente di impostare l'acquisizione o la registrazione del profilo vocale nelle Teams per un tenant. |**Disattiva**<br><ul><li> Gli utenti che non si sono mai registrati non possono visualizzare, registrare o registrare di nuovo.<li>Il punto di ingresso al flusso di registrazione verrà nascosto.<li>Se gli utenti selezionano un collegamento alla pagina di registrazione, verrà visualizzato un messaggio che indica che questa caratteristica non è abilitata per l'organizzazione.  <li>Gli utenti che si sono registrati possono visualizzare e rimuovere il proprio profilo vocale nelle impostazioni Teams utente. Dopo aver rimosso il profilo vocale, non potranno visualizzare, accedere o completare il flusso di registrazione.</li></ul><br>**Abilitato**<br><ul><li> Gli utenti possono visualizzare, accedere e completare il flusso di registrazione.<li>Il punto di ingresso verrà visualizzato nella Teams impostazioni della **scheda Riconoscimento.**</li></ul>|
+|enrollUserOverride|Consente di impostare l'acquisizione o la registrazione del profilo vocale nelle Teams per un tenant. |**Disattiva**<br><ul><li> Gli utenti che non si sono mai registrati non possono visualizzare, registrare o registrare di nuovo.<li>Il punto di ingresso al flusso di registrazione verrà nascosto.<li>Se gli utenti selezionano un collegamento alla pagina di registrazione, verrà visualizzato un messaggio che indica che questa caratteristica non è abilitata per l'organizzazione.  <li>Gli utenti registrati possono visualizzare e rimuovere il profilo vocale nelle impostazioni Teams utente. Dopo aver rimosso il profilo vocale, non potranno visualizzare, accedere o completare il flusso di registrazione.</li></ul><br>**Abilitato**<br><ul><li> Gli utenti possono visualizzare, accedere e completare il flusso di registrazione.<li>Il punto di ingresso verrà visualizzato nella Teams impostazioni della **scheda Riconoscimento.**</li></ul>|
 |roomAttributeUserOverride|Controllare l'identificazione utente basata sulla voce nelle sale riunioni. Questa impostazione è obbligatoria per gli Teams Rooms account.| **Disattivato**<br><ul><li>Il Teams Rooms non invierà larghezza di banda per il risparmio di flussi audio dalla sala. <li>Gli utenti delle sale riunioni non verranno attribuiti o distinti e le firme vocali non verranno recuperate o usate.<li>Gli utenti delle sale riunioni sono sconosciuti.</li></ul> <br>**Attributo**<br><ul><li>Gli utenti delle chat room verranno attribuiti in base allo stato di registrazione.<li>Gli utenti registrati vengono visualizzati con il nome nella trascrizione.  <li>Gli utenti che non sono registrati vengono visualizzati come relatore \<n>.<li>Il Teams Rooms invia sette flussi audio dalla sala.</ul> <br>**Distinguere**<br> <ul><li>Gli utenti delle chat room verranno distinti e separati come altoparlante 1, altoparlante 2, .... altoparlante \<n> nella trascrizione.</li><li>Indipendentemente dal suo stato di registrazione, il suo nome non verrà visualizzato nella trascrizione.</li><li>Il Teams Rooms invia sette flussi audio dalla sala.</li></ul>
-|AllowTranscription|Obbligatorio per gli account utente Teams chat room.|**Vero** e **Falso**|
+|AllowTranscription|Obbligatorio per gli account Teams chat room.|**Vero** e **Falso**|
 ||||
 
 Nell'Teams di amministrazione impostare i criteri **trascrizione**. Impostazioni sono **disattivati per** impostazione predefinita.
 
 ![nell'interfaccia di amministrazione con i criteri riunione evidenziati e l'opzione Consenti trascrizione selezionata.](../media/allow-transcription1.png)
+  
+> [!NOTE]
+> Dopo l'assegnazione di un criterio, l'applicazione di un criterio può richiedere fino a 48 ore. Per ottenere l'applicazione più rapida dei criteri, è necessario che gli account siano disconnessi e connessi di nuovo.
 
 ## <a name="frequently-asked-questions-faq"></a>Domande frequenti (FAQ)
 
 **Dove sono archiviati i dati del profilo vocale?**
 
-I dati del profilo vocale vengono archiviati nel cloud Office 365 con il contenuto degli utenti.
+I dati del profilo vocale vengono archiviati nel cloud Office 365 con il contenuto dell'utente.
 
 **Che cos'è la sequenza temporale e i criteri di conservazione?**
 
-I criteri di conservazione generali sono indicati nella [panoramica sulla conservazione dei dati](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview). Inoltre, i dati del profilo vocale di un utente verranno eliminati dopo 3 anni se l'utente non viene invitato a riunioni con un altoparlante intelligente entro tale periodo di 3 anni. I dati non vengono usati nelle riunioni per i dipendenti esistenti. Se un dipendente ha lasciato l'azienda, i dati del profilo vocale vengono considerati contenuti degli utenti e vengono trattati come tali per Office 365 criteri di conservazione dei dati descritti nella panoramica [sulla conservazione dei dati](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
+I criteri di conservazione generali sono indicati nella [panoramica sulla conservazione dei dati](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview). Inoltre, i dati del profilo vocale di un utente verranno eliminati dopo 1 anno se l'utente non viene invitato a riunioni con un altoparlante intelligente entro tale periodo di 1 anno. I dati non vengono usati nelle riunioni per i dipendenti esistenti. Se un dipendente ha lasciato l'azienda, i dati del profilo vocale vengono considerati contenuti degli utenti e vengono trattati come tali in base Office 365 criteri di conservazione dei dati descritti nella panoramica [sulla conservazione dei dati](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
 
-**I dati del profilo vocale vengono usati servizi Microsoft?**
+**I dati del profilo vocale vengono usati in servizi Microsoft?**
 
-No, i dati del profilo vocale vengono usati solo per lo scopo per cui l'utente ha fornito il consenso. Microsoft non userà i dati del profilo vocale se non in Teams di riconoscimento vocale.
+No, i dati del profilo vocale vengono usati solo per lo scopo per cui l'utente ha fornito il consenso. Microsoft non userà i dati del profilo vocale se non nei Teams di riconoscimento vocale.
 
 Ad esempio, Microsoft non userà i dati nelle situazioni seguenti:
 
