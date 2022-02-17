@@ -3,7 +3,7 @@ title: Pianificare e gestire le chiamate di emergenza
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
-ms.reviewer: roykuntz, jastark
+ms.reviewer: roykuntz
 ms.topic: article
 ms.assetid: 589bf5f5-490a-4215-8588-99bab7d33e31
 ms.tgt.pltfrm: cloud
@@ -25,39 +25,39 @@ ms.custom:
 - Direct Routing
 - seo-marvel-mar2020
 description: Informazioni sulle chiamate di emergenza, incluse le informazioni sugli indirizzi di emergenza, il routing delle chiamate di emergenza e le chiamate di emergenza dinamiche.
-ms.openlocfilehash: f6c1dd766ae14d855b9f2ffcf21c41ed8a5a1550
-ms.sourcegitcommit: 197debacdcd1f7902f6e16940ef9bec8b07641af
+ms.openlocfilehash: db78ff3b8384cc923daa24f119852240fc1744d6
+ms.sourcegitcommit: 2ddbaecb0bb7776dc5ab88727b1335e7e46d3704
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60634865"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62881521"
 ---
 # <a name="manage-emergency-calling"></a>Gestire le chiamate di emergenza
 
-Questo articolo descrive i concetti che è necessario conoscere per gestire le chiamate di emergenza, tra cui informazioni sugli indirizzi di emergenza, gli indirizzi di emergenza dinamici e il &mdash; routing delle chiamate di emergenza. Questo articolo usa la terminologia seguente:
+Questo articolo descrive i concetti&mdash; che è necessario conoscere per gestire le chiamate di emergenza, incluse informazioni sugli indirizzi di emergenza, gli indirizzi di emergenza dinamici e il routing delle chiamate di emergenza. Questo articolo usa la terminologia seguente:
 
-- **Indirizzo di emergenza:** indirizzo civico &mdash; dell'indirizzo fisico o stradale di un luogo di lavoro per l'organizzazione.
+- **Indirizzo di emergenza** : indirizzo civicol'indirizzo&mdash; fisico o stradale di un luogo di lavoro per l'organizzazione.
 
-  Ad esempio, l'indirizzo *12345 North Main Street, Redmond, WA 98052* viene usato per instradare le chiamate di emergenza alle autorità di spedizione appropriate e per aiutare a individuare il chiamante di emergenza.
+  Ad esempio, l'indirizzo *12345 North Main Street, Redmond, WA 98052* viene usato per instradare le chiamate di emergenza alle autorità di spedizione appropriate e per facilitare l'individuazione del chiamante di emergenza.
 
-- **Luogo:** in genere un piano, un edificio, un'ala o un numero di ufficio. Luogo è associato a un indirizzo di emergenza per fornire una posizione più esatta all'interno di un edificio. È possibile avere un numero illimitato di posizioni associate a un indirizzo per gli interventi di emergenza. Ad esempio, se l'organizzazione ha più edifici, è consigliabile includere informazioni sul luogo per ogni edificio e per ogni piano all'interno di ogni edificio.  
+- **Luogo** : in genere un piano, un edificio, un'ala o un numero di ufficio. Luogo è associato a un indirizzo di emergenza per fornire una posizione più esatta all'interno di un edificio. È possibile avere un numero illimitato di posizioni associate a un indirizzo per gli interventi di emergenza. Ad esempio, se l'organizzazione ha più edifici, è consigliabile includere informazioni sul luogo per ogni edificio e per ogni piano all'interno di ogni edificio.  
 
-- **Luogo per gli interventi** di emergenza: una posizione è un indirizzo &mdash; civico con un luogo facoltativo. Se l'azienda ha più di una posizione fisica, è probabile che siano necessarie più località di emergenza. 
+- **Luogo per gli interventi** di emergenza: una località è un indirizzo civico&mdash; con un luogo facoltativo. Se l'azienda ha più di una posizione fisica, è probabile che siano necessarie più località di emergenza. 
 
-  Quando si crea un indirizzo per gli interventi di emergenza, per questo indirizzo viene creato automaticamente un ID località univoco. Se ad esempio si aggiunge un luogo a un indirizzo per gli interventi di emergenza, se si aggiunge un piano a un indirizzo dell'edificio viene creato un ID posizione per la combinazione dell'indirizzo e del luogo &mdash; per gli interventi di &mdash; emergenza.  In questo esempio saranno disponibili due ID località: uno per l'indirizzo civico; uno per l'indirizzo civico unito e il luogo associato.
+  Quando si crea un indirizzo per gli interventi di emergenza, per questo indirizzo viene creato automaticamente un ID località univoco. Se ad esempio si aggiunge un luogo a&mdash; un indirizzo per gli interventi di emergenza, se si aggiunge un piano a&mdash; un indirizzo dell'edificio, viene creato un ID posizione per la combinazione dell'indirizzo e del luogo per gli interventi di emergenza.  In questo esempio saranno disponibili due ID località: uno per l'indirizzo civico; uno per l'indirizzo civico unito e il luogo associato.
 
   Quando si assegna una posizione per gli interventi di emergenza a un utente o a un sito, si tratta di questo ID posizione univoco associato all'utente o al sito.
 
-- **Indirizzo registrato:** indirizzo di emergenza assegnato a ogni utente. Un indirizzo registrato viene talvolta definito indirizzo di emergenza statico o indirizzo del record. Attualmente gli indirizzi registrati non sono supportati per il routing diretto. Torna presto alla ricerca di aggiornamenti.
+- **Indirizzo registrato** : indirizzo di emergenza assegnato a ogni utente. Un indirizzo registrato viene talvolta definito indirizzo di emergenza statico o indirizzo del record. Attualmente gli indirizzi registrati non sono supportati per il routing diretto. Torna presto alla ricerca di aggiornamenti.
 
 >[!Note]
->Esistono alcune differenze nel modo in cui si gestiscono le chiamate di emergenza a seconda che si utilizzi Microsoft Calling Plans, Connessione con operatore o Direct Routing per la [connettività PSTN.](pstn-connectivity.md) Queste considerazioni sono descritte in questo articolo.
+>Esistono alcune differenze nel modo in cui si gestiscono le chiamate di emergenza a seconda che si utilizziNo piani per chiamate Microsoft, Connessione con operatore o Routing diretto per la [connettività PSTN](pstn-connectivity.md). Queste considerazioni sono descritte in questo articolo.
 
 ## <a name="emergency-address-validation"></a>Convalida dell'indirizzo di emergenza
 
 Per assegnare un indirizzo di emergenza a un utente o a un identificatore di rete, è necessario assicurarsi che l'indirizzo di emergenza sia contrassegnato come "convalidato". La convalida dell'indirizzo assicura che l'indirizzo sia legittimo e che non possa essere modificato dopo l'assegnazione. 
 
-Se si definisce un indirizzo per gli interventi di emergenza usando la funzionalità di ricerca della mappa degli indirizzi nell'interfaccia di amministrazione di Teams, l'indirizzo viene automaticamente contrassegnato come convalidato. Poiché non è possibile modificare un indirizzo di emergenza convalidato se il formato o la rappresentazione dell'indirizzo cambia, è necessario creare un nuovo indirizzo &mdash; con il formato aggiornato.
+Se si definisce un indirizzo per gli interventi di emergenza usando la funzionalità di ricerca della mappa degli indirizzi nell'interfaccia di amministrazione di Teams, l'indirizzo viene automaticamente contrassegnato come convalidato. Poiché non è possibile modificare un indirizzo di&mdash; emergenza convalidato se il formato o la rappresentazione dell'indirizzo cambia, è necessario creare un nuovo indirizzo con il formato aggiornato.
 
 
 ## <a name="emergency-address-geo-codes"></a>Codici geografici degli indirizzi di emergenza
@@ -74,7 +74,7 @@ Microsoft consiglia di creare indirizzi di emergenza usando la funzionalità di 
 
 ## <a name="considerations-for-calling-plans"></a>Considerazioni per i piani per chiamate
 
-Le sezioni seguenti descrivono come gestire le chiamate di emergenza per gli utenti del Piano chiamate Microsoft. Per scoprire se i piani per chiamate Microsoft sono la soluzione giusta per l'azienda, vedere [Opzioni di connettività PSTN.](pstn-connectivity.md)
+Le sezioni seguenti descrivono come gestire le chiamate di emergenza per gli utenti del Piano chiamate Microsoft. Per scoprire se i piani per chiamate Microsoft sono la soluzione giusta per l'azienda, vedere [Opzioni di connettività PSTN](pstn-connectivity.md).
 
 
 ### <a name="emergency-call-enablement-for-calling-plans"></a>Abilitazione delle chiamate di emergenza per i piani per chiamate
@@ -85,28 +85,28 @@ Quando la località è associata al numero di telefono dipende dal paese/area ge
 
 - Negli Stati Uniti e in Canada, ad esempio, è necessario un luogo per gli interventi di emergenza quando a un utente viene assegnato un numero.
 
-- Per altri paesi, ad esempio in Europa, Medio Oriente e Africa (EMEA), è necessaria una posizione di emergenza quando si ottiene il numero di telefono da Microsoft 365 o quando viene trasferito da un altro provider di servizi o &mdash; &mdash; gestore.
+- &mdash;Per altri paesi, come in Europa, Medio Oriente e Africa (EMEA),&mdash; è necessaria una posizione di emergenza quando si ottiene il numero di telefono da Microsoft 365 o quando viene trasferito da un altro provider di servizi o gestore.
 
 
 ### <a name="dynamic-emergency-calling-for-calling-plans"></a>Chiamate di emergenza dinamiche per i piani di chiamata
 
-Le chiamate di emergenza dinamiche per i piani di chiamata forniscono la possibilità di configurare e instradare le chiamate di emergenza in base alla posizione corrente del client Teams chiamata. La possibilità di eseguire il routing automatico al punto di risposta per la sicurezza pubblica appropriato (PSAP) o di inviare notifiche al personale del desk di sicurezza varia a seconda del paese di utilizzo dell'Teams utente.  
+Le chiamate di emergenza dinamiche per i piani di chiamata forniscono la possibilità di configurare e instradare le chiamate di emergenza in base alla posizione corrente del client Teams chiamata. La possibilità di eseguire il routing automatico al punto di risposta per la sicurezza pubblica appropriato (PSAP) o di inviare notifiche al personale dell'ufficio di sicurezza varia a seconda del paese di utilizzo dell'Teams utente.  
 
 La posizione dinamica per l'instradamento delle chiamate di emergenza è supportata negli Stati Uniti nel modo seguente. 
 
-- Se un client Teams per un utente del piano per le chiamate degli Stati Uniti acquisisce dinamicamente un indirizzo di emergenza negli Stati Uniti, tale indirizzo viene usato per il routing di emergenza invece dell'indirizzo registrato e la chiamata verrà automaticamente instradata al PSAP nell'area di servizio dell'indirizzo.
+- Se un client Teams per un piano per chiamate degli Stati Uniti acquisisce dinamicamente un indirizzo di emergenza negli Stati Uniti, tale indirizzo viene usato per il routing di emergenza invece dell'indirizzo registrato e la chiamata verrà automaticamente instradata al PSAP nell'area di servizio dell'indirizzo.
 
-- Se un client Teams per un utente del piano per le chiamate degli Stati Uniti non acquisisce dinamicamente un indirizzo per gli interventi di emergenza negli Stati Uniti, l'indirizzo di emergenza registrato viene usato per aiutare a determinare e instradare la chiamata. Tuttavia, la chiamata verrà visualizzata per determinare se è necessario un indirizzo aggiornato prima di connettere il chiamante al PSAP appropriato.
+- Se un client Teams per un utente del piano per le chiamate degli Stati Uniti non acquisisce dinamicamente un indirizzo di emergenza negli Stati Uniti, l'indirizzo di emergenza registrato viene usato per aiutare a determinare e instradare la chiamata. Tuttavia, la chiamata verrà visualizzata per determinare se è necessario un indirizzo aggiornato prima di connettere il chiamante al PSAP appropriato.
 
 La posizione dinamica per l'instradamento delle chiamate di emergenza è supportata in Canada come negli Stati Uniti con la seguente eccezione: tutte le chiamate di emergenza verranno visualizzate a livello nazionale prima di essere trasferite al PSAP.
 
-Per altre informazioni, vedere [Pianificare e configurare chiamate di emergenza dinamiche.](configure-dynamic-emergency-calling.md)
+Per altre informazioni, vedere [Pianificare e configurare chiamate di emergenza dinamiche](configure-dynamic-emergency-calling.md).
 
 ### <a name="emergency-call-routing-for-calling-plans"></a>Routing delle chiamate di emergenza per i piani per chiamate
 
 Quando un Teams chiama un numero di emergenza, il modo in cui la chiamata viene instradata al PSAP dipende da quanto segue:
 
-- Se l'indirizzo di emergenza è determinato dinamicamente dal client Teams emergenza.
+- Se l'indirizzo per gli interventi di emergenza è determinato dinamicamente dal Teams client.
 
 - Se l'indirizzo di emergenza è l'indirizzo registrato associato al numero di telefono dell'utente.
 
@@ -116,21 +116,21 @@ Ad esempio:
 
 **Negli Stati Uniti:**
 
-- Se un client Teams si trova in una posizione di emergenza dinamica definita dal tenant, le chiamate di emergenza da quel client vengono automaticamente instradati al PSAP che serve tale posizione geografica.
+- Se un client Teams si trova in una posizione di emergenza dinamica definita dal tenant, le chiamate di emergenza da quel client vengono automaticamente instradati al psap che serve tale posizione geografica.
 
 - Se un client Teams non si trova in una posizione di emergenza dinamica definita dal tenant, le chiamate di emergenza provenienti da tale client vengono schermate da un call center nazionale per determinare la posizione del chiamante prima di trasferire la chiamata al PSAP che serve tale posizione geografica.
 
 - Se un chiamante di emergenza non riesce ad aggiornare la posizione di emergenza al centro di screening, la chiamata verrà trasferita al PSAP che serve l'indirizzo registrato del chiamante.
 
-**In Canada, Irlanda e** Regno Unito, le chiamate di emergenza vengono prima schermate per determinare la posizione corrente dell'utente prima di connettere la chiamata al centro di spedizione appropriato.
+**In Canada, Irlanda e** Regno Unito le chiamate di emergenza vengono prima schermate per determinare la posizione corrente dell'utente prima di connettere la chiamata al centro di spedizione appropriato.
 
-**In Francia, Germania e Spagna,** le chiamate di emergenza vengono instradati direttamente al PSAP che serve l'indirizzo di emergenza associato al numero, indipendentemente dalla posizione del chiamante.
+**In Francia, Germania e Spagna** le chiamate di emergenza vengono instradati direttamente al PSAP che serve l'indirizzo di emergenza associato al numero, indipendentemente dalla posizione del chiamante.
 
-**Nei Paesi Bassi,** le chiamate di emergenza vengono instradati direttamente al PSAP per il codice di area locale del numero, indipendentemente dalla posizione del chiamante.
+**Nei Paesi Bassi** le chiamate di emergenza vengono instradati direttamente al PSAP per il codice di area locale del numero, indipendentemente dalla posizione del chiamante.
 
-**In Australia,** gli indirizzi di emergenza sono configurati e instradati dal partner gestore.
+**In Australia**, gli indirizzi di emergenza sono configurati e instradati dal partner gestore.
 
-**In Giappone,** le chiamate di emergenza non sono supportate.
+**In Giappone** le chiamate di emergenza non sono supportate.
 
 
 Per ulteriori informazioni, vedere:
@@ -142,33 +142,33 @@ Per ulteriori informazioni, vedere:
 
 ## <a name="considerations-for-operator-connect"></a>Considerazioni per Connessione con operatore
 
-Le sezioni seguenti descrivono come gestire le chiamate di emergenza per Connessione con operatore utenti. Per sapere se Connessione con operatore è la soluzione giusta per l'azienda, vedere Opzioni [di connettività PSTN.](pstn-connectivity.md)
+Le sezioni seguenti descrivono come gestire le chiamate di emergenza per Connessione con operatore utenti. Per sapere se Connessione con operatore è la soluzione giusta per l'azienda, vedere Opzioni di connettività [PSTN](pstn-connectivity.md).
 
 ### <a name="emergency-call-enablement-for-operator-connect"></a>Abilitazione delle chiamate di emergenza per Connessione con operatore
 
 Ogni Connessione con operatore utente viene abilitato automaticamente per le chiamate di emergenza. Le chiamate di emergenza vengono instradati automaticamente al gestore Connessione con operatore per un determinato numero.
 
-La possibilità per un amministratore tenant di impostare l'indirizzo registrato per un utente Connessione con operatore dipenderà dalle funzionalità assegnate al numero quando il gestore lo carica in un inventario dei clienti. In base a questa impostazione, l'amministratore del tenant può essere o meno richiesto o in grado di impostare, modificare o eliminare la posizione di emergenza &mdash; &mdash; di un utente. 
+La possibilità per un amministratore tenant di impostare l'indirizzo registrato per un utente Connessione con operatore dipenderà dalle funzionalità assegnate al numero quando il gestore lo carica in un inventario dei clienti. In base a questa impostazione, l'amministratore del tenant&mdash;&mdash; può o meno essere necessario per impostare, modificare o eliminare la posizione di emergenza di un utente. 
 
 ### <a name="dynamic-emergency-calling-for-operator-connect"></a>Chiamate di emergenza dinamiche per Connessione con operatore
 
-Le chiamate di emergenza dinamiche per Connessione con operatore forniscono la possibilità di configurare e instradare le chiamate di emergenza in base alla posizione corrente del client Teams servizio. La possibilità di eseguire il routing automatico al punto di risposta per la sicurezza pubblica appropriato (PSAP) o di inviare notifiche al personale del desk di sicurezza varia a seconda del paese di utilizzo dell'Teams utente. 
+Le chiamate di emergenza dinamiche per Connessione con operatore forniscono la possibilità di configurare e instradare le chiamate di emergenza in base alla posizione corrente del Teams client. La possibilità di eseguire il routing automatico al punto di risposta per la sicurezza pubblica appropriato (PSAP) o di inviare notifiche al personale dell'ufficio di sicurezza varia a seconda del paese di utilizzo dell'Teams utente. 
 
 La posizione dinamica per l'instradamento delle chiamate di emergenza è supportata negli Stati Uniti nel modo seguente. 
 
 - Se un client Teams per un utente degli Stati Uniti acquisisce dinamicamente un indirizzo di emergenza negli Stati Uniti, tale indirizzo viene usato per il routing di emergenza invece dell'indirizzo registrato e la chiamata verrà automaticamente instradata al PSAP nell'area di servizio dell'indirizzo.
 
-- Se un client Teams per un utente degli Stati Uniti non acquisisce dinamicamente un indirizzo di emergenza all'interno degli Stati Uniti, l'indirizzo di emergenza registrato viene usato per visualizzare e instradare la chiamata. Tuttavia, la chiamata verrà visualizzata per determinare se è necessario un indirizzo aggiornato prima di connettere il chiamante al PSAP appropriato.
+- Se un client Teams per un utente degli Stati Uniti non acquisisce dinamicamente un indirizzo di emergenza negli Stati Uniti, l'indirizzo di emergenza registrato viene usato per visualizzare e instradare la chiamata. Tuttavia, la chiamata verrà visualizzata per determinare se è necessario un indirizzo aggiornato prima di connettere il chiamante al PSAP appropriato.
 
 La posizione dinamica per l'instradamento delle chiamate di emergenza è supportata in Canada come negli Stati Uniti con le eccezioni seguenti: tutte le chiamate di emergenza verranno visualizzate a livello nazionale prima di essere trasferite al PSAP.
 
-Per altre informazioni, vedere [Pianificare e configurare chiamate di emergenza dinamiche.](configure-dynamic-emergency-calling.md)
+Per altre informazioni, vedere [Pianificare e configurare chiamate di emergenza dinamiche](configure-dynamic-emergency-calling.md).
 
 ### <a name="emergency-call-routing-for-operator-connect"></a>Routing delle chiamate di emergenza per Connessione con operatore
 
 Quando un Teams Connessione con operatore chiama un numero di emergenza, il modo in cui la chiamata viene instradata al PSAP dipende da quanto segue:
 
-- Se l'indirizzo di emergenza è determinato dinamicamente dal client Teams emergenza.
+- Se l'indirizzo per gli interventi di emergenza è determinato dinamicamente dal Teams client.
 
 - Se l'indirizzo di emergenza è l'indirizzo registrato associato al numero di telefono dell'utente.
 
@@ -176,9 +176,10 @@ Quando un Teams Connessione con operatore chiama un numero di emergenza, il modo
 
 - Negli Stati Uniti e in Canada, il routing dinamico fa parte del servizio del gestore. Non è necessario acquistare questo servizio da un altro provider di servizi.
 
-Negli Stati Uniti e in Canada:
+- Se un Teams si trova in una posizione di emergenza dinamica definita dal tenant:
 
-- Se un client Teams si trova in una posizione di emergenza dinamica definita dal tenant, le chiamate di emergenza da quel client vengono automaticamente instradati al PSAP che serve tale posizione geografica.
+   - Negli Stati Uniti, le chiamate di emergenza da quel client vengono automaticamente instradati al PSAP che serve quella posizione geografica.
+   - In Canada, tutte le chiamate di emergenza verranno schermate da un call center nazionale prima di trasferire la chiamata al PSAP che serve quella posizione geografica.
 
 - Se un client Teams non si trova in una posizione di emergenza dinamica definita dal tenant, le chiamate di emergenza provenienti da tale client vengono schermate da un call center nazionale per determinare la posizione del chiamante prima di trasferire la chiamata al PSAP che serve tale posizione geografica.
 
@@ -187,7 +188,7 @@ Negli Stati Uniti e in Canada:
 
 ## <a name="considerations-for-direct-routing"></a>Considerazioni sul routing diretto
 
-Le sezioni seguenti descrivono come gestire le chiamate di emergenza per gli utenti di Routing diretto. Per sapere se Il routing diretto è la soluzione giusta per l'azienda, vedere [Opzioni di connettività PSTN.](pstn-connectivity.md)
+Le sezioni seguenti descrivono come gestire le chiamate di emergenza per gli utenti di Routing diretto. Per scoprire se Il routing diretto è la soluzione giusta per l'azienda, vedere Opzioni [di connettività PSTN](pstn-connectivity.md).
 
 ### <a name="emergency-call-enablement-for-direct-routing"></a>Abilitazione delle chiamate di emergenza per il routing diretto
 
@@ -204,7 +205,7 @@ Per il routing diretto, è necessario definire i criteri per le chiamate di emer
 
 ### <a name="dynamic-emergency-calling-for-direct-routing"></a>Chiamate di emergenza dinamiche per il routing diretto
 
-Le chiamate di emergenza dinamiche per il routing diretto forniscono la possibilità di configurare e instradare le chiamate di emergenza in base alla posizione corrente Teams client. La possibilità di eseguire il routing automatico al punto di risposta per la sicurezza pubblica appropriato (PSAP) o di inviare notifiche al personale dell'ufficio di sicurezza varia a seconda del paese di utilizzo dell'Teams utente.
+Le chiamate di emergenza dinamiche per il routing diretto forniscono la possibilità di configurare e instradare le chiamate di emergenza in base alla posizione corrente Teams client. La possibilità di eseguire il routing automatico al punto di risposta per la sicurezza pubblica appropriato (PSAP) o di inviare notifiche al personale del desk di sicurezza varia a seconda del paese di utilizzo dell'Teams utente.
 
 Per gli utenti di Routing diretto, la posizione dinamica per l'instradamento delle chiamate di emergenza è supportata solo negli Stati Uniti nel modo seguente:
 
@@ -214,14 +215,14 @@ Per gli utenti di Routing diretto, la posizione dinamica per l'instradamento del
 
 La posizione dinamica per l'instradamento delle chiamate di emergenza è supportata in Canada come negli Stati Uniti con la seguente eccezione: tutte le chiamate di emergenza verranno visualizzate a livello nazionale prima di essere trasferite al PSAP.
 
-Per altre informazioni, vedere [Configurare chiamate di emergenza dinamiche.](configure-dynamic-emergency-calling.md)
+Per altre informazioni, vedere [Configurare chiamate di emergenza dinamiche](configure-dynamic-emergency-calling.md).
 
 ### <a name="emergency-call-routing-for-direct-routing"></a>Routing delle chiamate di emergenza per l'instradamento diretto
 
-Il criterio di routing delle chiamate di emergenza per il routing diretto fa riferimento a un utilizzo PSTN online, che deve avere la configurazione di Routing diretto appropriata per instradare correttamente le chiamate di emergenza ai gateway PSTN appropriati. In particolare, è necessario assicurarsi che sia presente un OnlineVoiceRoute per la stringa di chiamata di emergenza. Per altre informazioni, vedere [Configurare il routing diretto.](direct-routing-configure.md) 
+Il criterio di routing delle chiamate di emergenza per il routing diretto fa riferimento a un utilizzo PSTN online, che deve avere la configurazione di Routing diretto appropriata per instradare correttamente le chiamate di emergenza ai gateway PSTN appropriati. In particolare, è necessario assicurarsi che sia presente un OnlineVoiceRoute per la stringa di chiamata di emergenza. Per altre informazioni, vedere [Configurare il routing diretto](direct-routing-configure.md). 
 
 > [!NOTE]
-> Teams client non antepone più il segno "+" davanti ai numeri di emergenza; cio, +911. Di conseguenza, Teams le chiamate di emergenza non invieranno più un "+" che precede il numero 911. Assicurarsi che i criteri del percorso vocale riflettano questa modifica.
+> Teams client non antepone più il segno "+" davanti ai numeri di emergenza, ad esempio +911. Di conseguenza, Teams le chiamate di emergenza non invieranno più un "+" che precede il numero 911. Assicurarsi che i criteri del percorso vocale riflettano questa modifica.
 
 La possibilità di instradare dinamicamente le chiamate di emergenza per gli utenti di Routing diretto varia a seconda della rete di chiamate di emergenza all'interno di un determinato paese. Sono disponibili due soluzioni:
 
@@ -232,7 +233,7 @@ La possibilità di instradare dinamicamente le chiamate di emergenza per gli ute
 
 Negli Stati Uniti sono disponibili numerosi provider di servizi di routing di emergenza (ESP) certificati che possono instradare automaticamente le chiamate di emergenza in base alla posizione del chiamante.
 
-- Se un provider di servizi di routing di emergenza è integrato in una distribuzione di routing diretto, le chiamate di emergenza con una posizione acquisita dinamicamente verranno automaticamente instradati al Punto di risposta per la sicurezza pubblica (PSAP) che serve tale posizione.
+- Se un provider di servizi di routing di emergenza è integrato in una distribuzione di Routing diretto, le chiamate di emergenza con una posizione acquisita dinamicamente verranno automaticamente instradati al Punto di risposta per la sicurezza pubblica (PSAP) che serve tale posizione.
 
 -  Le chiamate di emergenza senza una posizione acquisita dinamicamente vengono prima schermate per determinare la posizione corrente dell'utente prima di connettere la chiamata al centro di distribuzione appropriato in base alla posizione aggiornata.
 
@@ -248,7 +249,7 @@ Quando una chiamata di emergenza con una posizione acquisita dinamicamente viene
 - Analizza la posizione di emergenza del chiamante.
 - Corrisponde alla posizione a un record ELIN.
 - Sostituisce il numero del chiamante di emergenza con il numero di telefono ELIN.
-- Instrada la chiamata al PSAP che serve tale posizione e quindi i dispatcher ottengono la posizione dal record ELIN caricato.
+- Instrada la chiamata al psap che serve tale posizione e quindi i dispatcher ottengono la posizione dal record ELIN caricato.
 
 Una volta richiamato il numero di emergenza, l'applicazione ELIN farà l'operazione inversa denominata sostituzione dei numeri con quella del chiamante di emergenza originale. 
 
@@ -269,7 +270,7 @@ I criteri per le chiamate di emergenza possono essere concessi a un account Team
 
 - Se il client Teams non riesce a ottenere un criterio per le chiamate di emergenza, l'utente non è abilitato per la notifica del security desk.
 
-Durante una chiamata di emergenza, un desk di sicurezza viene connesso alla chiamata e l'esperienza dell'utente del desk di sicurezza è controllata in base ai criteri Teams per le chiamate di emergenza. Viene avviata una chat di gruppo con ogni membro del desk di sicurezza e la posizione del chiamante di emergenza viene condivisa tramite una notifica di messaggio importante.  Se un'opzione di conferenza è configurata come parte del criterio, ogni utente del security desk viene chiamato anche come parte della conferenza.
+Durante una chiamata di emergenza, un desk di sicurezza viene connesso alla chiamata e l'esperienza dell'utente del security desk è controllata in base ai criteri Teams per le chiamate di emergenza. Viene avviata una chat di gruppo con ogni membro del desk di sicurezza e la posizione del chiamante di emergenza viene condivisa tramite una notifica di messaggio importante.  Se un'opzione di conferenza è configurata come parte del criterio, ogni utente del security desk viene chiamato anche come parte della conferenza.
 
     
 ## <a name="related-topics"></a>Argomenti correlati
