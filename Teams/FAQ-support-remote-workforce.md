@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare il personale remoto a essere produttivo quando lavora da casa in risposta all'epidemia di COVID-19 (coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 06be01aad7a8bea73c608cd4709149042daec9e2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 631fdd7668e8dd0bc8781509671dc11a1c631816
+ms.sourcegitcommit: a9a056b93b4add3a4d978bb341ea4b66a042b4d0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610523"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62893535"
 ---
 # <a name="faq-support-your-remote-workforce"></a>Domande frequenti: Supporto del personale remoto
 
@@ -83,7 +83,7 @@ Teams è disponibile gratuitamente con due diversi programmi:
 
 ### <a name="i-have-microsoft-365-already-but-i-dont-use-teams-are-you-providing-trial-licenses"></a>Ho già Microsoft 365, ma non uso Teams. Sono disponibili licenze di valutazione?
 
-Microsoft 365 include già Teams. [Attivarlo](Office-365-set-up.md) per tutti gli utenti. Dopo l'attivazione, gli utenti possono eseguire Teams installando i client [desktop](get-clients.md#desktop-client) e [per dispositivi mobili](get-clients.md#mobile-clients) oppure [dal browser](get-clients.md#mobile-clients) all'indirizzo [https://teams.microsoft.com](https://teams.microsoft.com). 
+Microsoft 365 include già Teams. [Attivarlo](Office-365-set-up.md) per tutti gli utenti. Dopo l'attivazione, gli utenti possono eseguire Teams installando i client [desktop](get-clients.md#desktop-clients) e [per dispositivi mobili](get-clients.md#mobile-clients) oppure [dal browser](get-clients.md#mobile-clients) all'indirizzo [https://teams.microsoft.com](https://teams.microsoft.com). 
 
 ### <a name="how-do-i-get-help-to-get-started-with-teams-and-make-sure-the-deployment-is-successful"></a>Come si può ottenere assistenza per iniziare a usare Teams e garantire la riuscita della distribuzione?
 

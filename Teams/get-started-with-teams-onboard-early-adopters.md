@@ -12,15 +12,20 @@ description: Informazioni su come eseguire l'onboarding degli early adopter nel 
 ms.localizationpriority: high
 search.appverid: MET150
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.collection:
-  - M365-collaboration
-  - seo-marvel-apr2020
-  - m365initiative-deployteams
+- M365-collaboration
+- seo-marvel-apr2020
+- m365initiative-deployteams
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: 3ac3a069aa54e9e8d871c7daccbf068c510b0fc0
+ms.sourcegitcommit: a9a056b93b4add3a4d978bb341ea4b66a042b4d0
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62893585"
 ---
-
 # <a name="onboard-early-adopters-to-microsoft-teams"></a>Eseguire l'onboarding degli early adopter in Microsoft Teams
 
 ## <a name="invite-users-to-teams"></a>Invitare gli utenti in Teams
@@ -50,7 +55,7 @@ Passare a: [Teams per Windows](#teams-for-windows) | [Teams per Mac](#teams-for-
 
 ### <a name="desktop-client"></a>Client desktop
 
-Il client desktop di Teams offre agli utenti Windows e Mac la migliore esperienza complessiva. Per altre informazioni, vedere [Ottenere client per Teams (Client desktop)](./get-clients.md#desktop-client) e [Requisiti hardware per l'app Microsoft Teams](./hardware-requirements-for-the-teams-app.md).
+Il client desktop di Teams offre agli utenti Windows e Mac la migliore esperienza complessiva. Per altre informazioni, vedere [Ottenere client per Teams (Client desktop)](./get-clients.md#desktop-clients) e [Requisiti hardware per l'app Microsoft Teams](./hardware-requirements-for-the-teams-app.md).
 
 > [!NOTE]
 > Gli amministratori possono scegliere il metodo di distribuzione dei file di installazione nei computer dell'organizzazione, ad esempio Microsoft Endpoint Configuration Manager (Windows) o Jamf Pro (macOS).
