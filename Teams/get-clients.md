@@ -17,47 +17,53 @@ f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 31bafc1c112d8b50990cc6e92c863c7e242aa5fb
-ms.sourcegitcommit: efea3b3b9dceb1a1d82eb7a09a5104dcd6df8abf
+ms.openlocfilehash: 0e02013ddc158e1e64386bc22652404ec387aee1
+ms.sourcegitcommit: a9a056b93b4add3a4d978bb341ea4b66a042b4d0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61993010"
+ms.lasthandoff: 02/18/2022
+ms.locfileid: "62893555"
 ---
 # <a name="get-clients-for-microsoft-teams"></a>Ottenere i client per Microsoft Teams
 
 > [!TIP]
-> **Installare Teams nel PC, nel Mac o nel dispositivo mobile?** Vedere [Installare il client di Teams](https://www.microsoft.com/microsoft-teams/download-app).
+> **Installare Teams nel PC, nel Mac o nel dispositivo mobile?** Vedere [Installare il client di Teams](https://go.microsoft.com/fwlink/?linkid=855754).
 
-Questo articolo fornisce informazioni su come installare Microsoft Teams sui dispositivi aziendali.
+Microsoft Teams può essere installato su PC, Mac e dispositivi mobili e può anche essere accessibile tramite un Web browser. La maggior parte degli utenti finali può iniziare a usare Teams [installando il client](https://go.microsoft.com/fwlink/?linkid=855754) stesso. Dopo aver installato il client Teams, è sufficiente accedere con il nome utente e la password.
+
+Se sei un professionista IT Pro e vuoi saperne di più sull'esperienza di installazione di Teams e sui relativi requisiti, seleziona un sistema operativo client in questo articolo per altre informazioni.
 
 Per informazioni dettagliate sulle funzionalità di ogni client su piattaforme diverse, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
-## <a name="desktop-client"></a>Client desktop
+## <a name="desktop-clients"></a>Client desktop
+
+Il client desktop di Teams è disponibile come applicazione autonoma e come parte di [Microsoft 365 Apps for enterprise](/deployoffice/teams-install) per i sistemi operativi seguenti:
+
+- Versioni a 32 bit e a 64 bit di Windows (8.1 o successive)
+- ARM64 per Windows 10 in ARM
+- Windows Server (2012 R2 o versione successiva)
+- macOS
+- Linux (in formati `.deb` e `.rpm`)
+- Chrome OS (per altre informazioni, vedere [Come usare Microsoft Office su un Chromebook](https://support.office.com/article/how-to-install-and-run-microsoft-office-on-a-chromebook-32f14a23-2c1a-4579-b973-d4b1d78561ad))
+
+I client desktop possono essere scaricati e installati dagli utenti finali direttamente da [https://teams.microsoft.com/downloads](https://go.microsoft.com/fwlink/?linkid=855754) se dispongono delle autorizzazioni locali appropriate. Le autorizzazioni di amministratore non sono necessarie per installare il client Teams sui PC Windows, ma sono necessarie sui Mac.
+
+Gli amministratori IT Pros possono usare il proprio metodo preferito per distribuire i file di installazione nei computer dell'organizzazione. Alcuni esempi sono Microsoft Endpoint Configuration Manager in Windows o Jamf Pro in macOS. Per altre informazioni sulla distribuzione di Teams, vedere quanto segue.
+
+- **Windows** [installare Teams usando Gestione configurazione endpoint](msi-deployment.md)
+- **MacOS** [Jamf Pro](https://www.jamf.com/products/jamf-pro/)
+
+> [!NOTE]
+> La distribuzione del client tramite questi meccanismi è solo per l'installazione iniziale dei client Teams e non per aggiornamenti futuri. Per informazioni sul processo di aggiornamento di Teams, vedere [Processo di aggiornamento di Teams](teams-client-update.md).
+
+### <a name="windows"></a>[Windows](#tab/Windows)
 
 > [!TIP]
 > Guardare la sessione seguente per informazioni sui vantaggi offerti dal client desktop per Windows e su come pianificare ed eseguire la distribuzione: [Teams Windows Desktop Client](https://aka.ms/teams-clients) (client desktop di Teams per Windows).
 
-Il client desktop di Microsoft Teams è un'applicazione autonoma ed è anche [disponibile in Microsoft 365 Apps for enterprise](/deployoffice/teams-install). Teams è disponibile per le versioni a 32 e 64 bit di Windows (8.1 o successiva), ARM64 per Windows 10 su ARM e per Windows Server (2012 R2 o versione successiva) e anche per macOS e Linux (nei formati `.deb` e `.rpm`). In Windows, Teams richiede .NET Framework 4.5 o versione successiva. Se non è disponibile, il programma di installazione di Teams offrirà la possibilità di installarlo. In Linux, i gestori di pacchetti come `apt` e `yum` cercheranno di installare automaticamente tutti i requisiti. Se questo non avviene, prima di installare Team su Linux sarà necessario installare i requisiti segnalati.
+Teams in Windows offre programmi di installazione MSI scaricabili in architetture a [32-bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true), [64-bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true) e [ARM64](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=arm64&managedInstaller=true&download=true). L'architettura x86 (a 32 bit e a 64 bit) di Teams è agnostica rispetto all'architettura di Windows e Office installata. È consigliabile usare la versione a 64 bit di Teams nei sistemi a 64 bit.
 
-I client desktop supportano le comunicazioni in tempo reale (audio, video e condivisione del contenuto) per riunioni del team, chiamate di gruppo e chiamate private tra due persone.
-
-I client desktop possono essere scaricati e installati direttamente dagli utenti finali dalla pagina [https://teams.microsoft.com/downloads](https://go.microsoft.com/fwlink/?linkid=855754), se hanno le autorizzazioni locali appropriate. I diritti di amministratore non sono necessari per installare il client di Teams in un PC, ma lo sono per installarlo in un Mac.
-
-> [!NOTE]
-> Per ulteriori dettagli sull’installazione di Teams in un Chromebook, vedere [Come installare ed eseguire Microsoft Office in un Chromebook](https://support.office.com/article/how-to-install-and-run-microsoft-office-on-a-chromebook-32f14a23-2c1a-4579-b973-d4b1d78561ad).
-
-Gli amministratori IT possono usare il proprio metodo preferito per distribuire i file di installazione nei computer dell'organizzazione. Alcuni esempi sono Microsoft Endpoint Configuration Manager in Windows o Jamf Pro in macOS. Per ottenere il pacchetto MSI per la distribuzione in Windows, vedere [Installare Microsoft Teams con MSI](msi-deployment.md).
-
-> [!NOTE]
-> La distribuzione del client tramite questi meccanismi è solo per l'installazione iniziale dei client Microsoft Teams e non per aggiornamenti futuri.
-
-### <a name="windows"></a>Windows
-
-L'installazione di Microsoft Teams per Windows include programmi di installazione scaricabili con architettura a 32 bit e a 64 bit.
-
-> [!NOTE]
-> L'architettura (a 32 bit o a 64 bit) di Microsoft Teams è indipendente dall'architettura di Windows e di Office installata. È consigliabile usare la versione a 64 bit di Microsoft Teams nei sistemi a 64 bit.
+Teams richiede .NET Framework 4.5 o versione successiva. Se .NET Framework o versione successiva non è installato, il programma di installazione di Teams offrirà l'installazione per l'utente.
 
 Il client Windows viene distribuito nella cartella AppData, all'interno del profilo dell'utente. La distribuzione nel profilo locale dell'utente consente di installare il client senza bisogno di diritti elevati. Il client Windows utilizza le posizioni seguenti:
 
@@ -69,20 +75,18 @@ Il client Windows viene distribuito nella cartella AppData, all'interno del prof
 
 - %LocalAppData%\\SquirrelTemp
 
-Quando gli utenti avviano per la prima volta una chiamata usando il client di Microsoft Teams, potrebbe comparire un avviso relativo alle impostazioni di Windows Firewall in cui si chiede di consentire la comunicazione. Si potrebbe anche indicare agli utenti di ignorare il messaggio, perché la chiamata funzionerà anche se l'avviso viene ignorato.
+Quando gli utenti avviano per la prima volta una chiamata usando il client di Teams, potrebbe comparire un avviso relativo alle impostazioni di Windows Firewall in cui si chiede di consentire la comunicazione. Si potrebbe anche indicare agli utenti di ignorare il messaggio, perché la chiamata funzionerà anche se l'avviso viene ignorato.
 
 ![Screenshot di una finestra di dialogo Avviso di sicurezza di Windows.](media/Get_clients_for_Microsoft_Teams_image3.png)
 
 > [!NOTE]
 > La configurazione di Windows Firewall verrà modificata anche se il messaggio viene ignorato selezionando "Annulla". Verranno create due regole in entrata per teams.exe, con l'azione Consenti per i protocolli TCP e UDP.
 
-Se vuoi evitare che Teams chieda agli utenti di creare regole di firewall quando gli utenti effettuano la prima chiamata da Teams, usare [Sample PowerShell script - inbound firewall rule](#sample-powershell-script---inbound-firewall-rule) qui sotto.
+Se vuoi evitare che Teams chieda agli utenti di creare regole del firewall quando gli utenti effettuano la prima chiamata da Teams, usa lo script di PowerShell in [script di esempio - Script PowerShell del firewall di Microsoft Teams](client-firewall-script.md).
 
-### <a name="mac"></a>Mac
+### <a name="mac"></a>[Mac](#tab/Mac)
 
 Gli utenti Mac possono installare Teams con un file di installazione PKG per i computer che eseguono macOS. Per installare il client Mac è necessario l'accesso amministrativo. Il client macOS viene installato nella cartella /Applicazioni.
-
-#### <a name="install-teams-by-using-the-pkg-file"></a>Installare Teams usando il file PKG
 
 1. Nella pagina di download di [Teams](https://teams.microsoft.com/downloads), in **Mac** fare clic su **Scarica**.
 2. Fare doppio clic sul file PKG.
@@ -98,23 +102,18 @@ Se un utente ha un'installazione DMG di Teams e vuole sostituirla con l'installa
 2. Disinstallare l'app Teams.
 3. Installare il file PKG.
 
-Gli amministratori IT possono usare la distribuzione gestita di Teams per distribuire i file di installazione in tutti i Mac dell'organizzazione, ad esempio Jamf Pro.
+Gli amministratori IT Pros possono usare una soluzione di distribuzione gestita, ad esempio Jamf Pro, per distribuire i file di installazione di Teams a tutti i Mac dell'organizzazione.
 
-> [!NOTE]
-> Se si verificano problemi durante l'installazione del file PKG, inviare una segnalazione a Microsoft. Nella sezione **Feedback** alla fine di questo articolo fare clic su **Feedback sul prodotto**.
+### <a name="linux"></a>[Linux](#tab/Linux)
 
-### <a name="linux"></a>Linux
+In Linux, i gestori di pacchetti come `apt` e `yum` cercheranno di installare automaticamente tutti i requisiti. Se questo non avviene, prima di installare Team su Linux sarà necessario installare i requisiti segnalati.
 
 Gli utenti potranno installare pacchetti Linux nativi nei formati `.deb` e `.rpm`. Installando il pacchetto DEB o RPM verrà installato automaticamente il repository del pacchetto.
 
 - DEB `https://packages.microsoft.com/repos/ms-teams stable main`
 - RPM `https://packages.microsoft.com/yumrepos/ms-teams`
 
-La chiave di firma per abilitare l'aggiornamento automatico usando il gestore pacchetti del sistema viene installata automaticamente. Tuttavia, è disponibile anche in: <https://packages.microsoft.com/keys/microsoft.asc>. Microsoft Teams viene aggiornato mensilmente. Se il repository è stato installato correttamente, il gestore pacchetti del sistema dovrebbe gestire l'aggiornamento automatico esattamente come per gli altri pacchetti presenti nel sistema.
-
-> [!NOTE] 
-> Se si trova un bug, inviarlo usando `Report a Problem` all'interno del client. Per problemi noti, vedere [Supportare Teams nell'organizzazione](/MicrosoftTeams/troubleshoot/teams-welcome).
-> Per il supporto di Teams per Linux è possibile usare il [canale di supporto del forum per Linux su Microsoft Q&A](/answers/topics/teams.html). Assicurarsi di usare il tag `teams-linux` quando si pubblicano le domande. 
+La chiave di firma per abilitare l'aggiornamento automatico usando il gestore pacchetti del sistema viene installata automaticamente. Tuttavia, è disponibile anche in: <https://packages.microsoft.com/keys/microsoft.asc>. Teams viene aggiornato mensilmente. Se il repository è stato installato correttamente, il gestore pacchetti del sistema dovrebbe gestire l'aggiornamento automatico esattamente come per gli altri pacchetti presenti nel sistema.
 
 #### <a name="install-teams-using-deb-package"></a>Installare Teams usando il pacchetto DEB
 
@@ -176,21 +175,13 @@ sudo zypper refresh
 sudo zypper install teams
 ```
 
-## <a name="web-client"></a>Client Web
-
-Il client Web ([https://teams.microsoft.com](https://go.microsoft.com/fwlink/?linkid=855753)) è un client completo di tutte le funzionalità che è possibile usare da più browser. Il client Web supporta le chiamate e le riunioni tramite webRTC, quindi non sono necessari plug-in o download per eseguire Teams in un Web browser. Il browser deve essere configurato in modo da consentire i cookie di terze parti.
-
-[!INCLUDE [browser-support](includes/browser-support.md)]
-
-Il client Web rileva la versione del browser al momento della connessione a [https://teams.microsoft.com](https://go.microsoft.com/fwlink/?linkid=855753). Se viene rilevata una versione del browser non supportata, blocca l'accesso all'interfaccia Web e invita l'utente a scaricare il client desktop o l'app per dispositivi mobili.
+---
 
 ## <a name="mobile-clients"></a>Client per dispositivi mobili
 
-Le app Microsoft Teams per dispositivi mobili sono disponibili per Android e iOS. Sono pensate per gli utenti che partecipano a conversazioni basate su chat mentre sono in movimento e consentono l'esecuzione di chiamate audio peer-to-peer. Per le app per dispositivi mobili, visitare Google Play Store e l'App Store di Apple. L'app per Windows Phone è stata ritirata il 20 luglio 2018 e potrebbe non funzionare più.
+Le app teams per dispositivi mobili sono disponibili per Android e iOS e sono destinate agli utenti in viaggio che partecipano a conversazioni basate su chat e consentono chiamate audio peer-to-peer. Per le app per dispositivi mobili, visitare Google Play Store e l'App Store di Apple.
 
-Ecco come [ottenere Teams per Android](get-teams-android-in-china.md) in Cina.
-
-Le piattaforme supportate dalle app Microsoft Teams per dispositivi mobili sono le seguenti:
+Le piattaforme per dispositivi mobili supportate per le app per dispositivi mobili di Teams sono le seguenti:
 
 - **Android**: il supporto è limitato alle ultime quattro versioni principali di Android. Quando viene rilasciata una nuova versione principale di Android, sono ufficialmente supportate la nuova versione e le tre versioni precedenti.
 
@@ -201,55 +192,17 @@ Le piattaforme supportate dalle app Microsoft Teams per dispositivi mobili sono 
 
 Le app per dispositivi mobili vengono distribuite e aggiornate solo tramite l'app store della piattaforma corrispondente. La distribuzione delle app per dispositivi mobili tramite MDM o sideload non è supportata da Microsoft. Dopo l'installazione in una piattaforma mobile supportata, l'app Teams per dispositivi mobili sarà supportata purché la versione rientri entro tre mesi dalla versione corrente.
 
-|&nbsp; |&nbsp; |&nbsp; |
-|---|---|---|
-|![Icona che descrive un punto decisionale.](media/Get_clients_for_Microsoft_Teams_image4.png)|Punto decisionale|Ci sono limitazioni che impediscono agli utenti di installare il client di Microsoft Teams appropriato nei dispositivi?|
-|![Icona che descrive i passaggi successivi.](media/Get_clients_for_Microsoft_Teams_image5.png)|Passaggi successivi|Se l'organizzazione limita l'installazione di software, accertarsi che la procedura sia compatibile con Microsoft Teams. Nota: i diritti di amministratore non sono necessari per l'installazione del client in un PC ma sono necessari per l'installazione in un Mac.|
+Se ti trovi in Cina, è possibile installare Teams dai seguenti app store:
 
+- **Xiaomi** <https://aka.ms/TeamsXiaomi>
+- **Huawei** <https://aka.ms/TeamsHuawei>
+- **Oppo** Cercare per "Teams" nell’Oppo store
+- **Baidu** <https://aka.ms/teams_baidu_direct_dl>
 
-## <a name="client-update-management"></a>Gestione degli aggiornamenti del client
+## <a name="browser-client"></a>Client del browser
 
-I client vengono aggiornati automaticamente dal servizio Microsoft Teams e non è necessario alcun intervento da parte dell'amministratore IT. Se è disponibile un aggiornamento, il client lo scarica automaticamente e, quando l'app resta inattiva per un certo periodo di tempo, avvia il processo di aggiornamento.
+Il client browser ([https://teams.microsoft.com](https://go.microsoft.com/fwlink/?linkid=855753)) è un client completo di tutte le funzionalità che è possibile usare da più browser. Il client browser supporta le chiamate e le riunioni tramite webRTC, quindi non sono necessari plug-in o download per eseguire Teams in un browser. Il browser deve essere configurato in modo da consentire i cookie di terze parti.
 
-## <a name="client-side-configurations"></a>Configurazioni lato client
+[!INCLUDE [browser-support](includes/browser-support.md)]
 
-Attualmente non sono disponibili opzioni supportate per configurare il client tramite amministrazione del tenant, PowerShell, oggetti Criteri di gruppo o il Registro di sistema.
-
-## <a name="notification-settings"></a>Impostazioni di notifica
-
-Per gli amministratori IT non sono attualmente disponibili opzioni per configurare le impostazioni di notifica sul lato client. Tutte le opzioni di notifica sono impostate dall'utente. La figura seguente illustra le impostazioni predefinite del client.
-
-![Screenshot delle impostazioni di notifica.](media/Get_clients_for_Microsoft_Teams_image6.png)
-
-## <a name="sample-powershell-script---inbound-firewall-rule"></a>Script di PowerShell di esempio - regola di firewall in ingresso
-
-Questo script di esempio, che deve essere eseguito nei computer client nel contesto di un account amministratore con privilegi elevati, creerà una nuova regola del firewall in entrata per ogni cartella utente trovata in c:\Users. Questa regola impedisce all'applicazione di chiedere agli utenti di creare regole del firewall quando effettuano la loro prima chiamata da Teams.
-
-```powershell
-<#
-.SYNOPSIS
-   Creates firewall rules for Teams.
-.DESCRIPTION
-   (c) Microsoft Corporation 2018. All rights reserved. Script provided as-is without any warranty of any kind. Use it freely at your own risks.
-   Must be run with elevated permissions. Can be run as a GPO Computer Startup script, or as a Scheduled Task with elevated permissions.
-   The script will create a new inbound firewall rule for each user folder found in c:\users.
-   Requires PowerShell 3.0.
-#>
-
-#Requires -Version 3
-
-$users = Get-ChildItem (Join-Path -Path $env:SystemDrive -ChildPath 'Users') -Exclude 'Public', 'ADMINI~*'
-if ($null -ne $users) {
-    foreach ($user in $users) {
-        $progPath = Join-Path -Path $user.FullName -ChildPath "AppData\Local\Microsoft\Teams\Current\Teams.exe"
-        if (Test-Path $progPath) {
-            if (-not (Get-NetFirewallApplicationFilter -Program $progPath -ErrorAction SilentlyContinue)) {
-                $ruleName = "Teams.exe for user $($user.Name)"
-                "UDP", "TCP" | ForEach-Object { New-NetFirewallRule -DisplayName $ruleName -Direction Inbound -Profile Domain -Program $progPath -Action Allow -Protocol $_ }
-                Clear-Variable ruleName
-            }
-        }
-        Clear-Variable progPath
-    }
-}
-```
+Il client browser rileva la versione del browser al momento della connessione a [https://teams.microsoft.com](https://go.microsoft.com/fwlink/?linkid=855753). Se viene rilevata una versione del browser non supportata, blocca l'accesso all'interfaccia browser e invita l'utente a scaricare il client desktop o l'app per dispositivi mobili.
