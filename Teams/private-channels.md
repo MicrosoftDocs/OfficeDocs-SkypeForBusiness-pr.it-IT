@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: 8d041d0fa8a182cb3cebf485c9cef92f880a99e5
-ms.sourcegitcommit: d3c48f0c147cf0c47d5eb4ea1128b5bca13be718
+ms.openlocfilehash: edf3fc2933bf51f3c5966fa8e021fe0ff50de39b
+ms.sourcegitcommit: 2ddbaecb0bb7776dc5ab88727b1335e7e46d3704
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62299011"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "62881551"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -56,7 +56,7 @@ I membri del team possono vedere solo i canali privati a cui sono stati aggiunti
 
 Il proprietario di un canale privato non può essere rimosso tramite il client di Teams, se si tratta dell'ultimo proprietario di uno o più canali privati.
 
-Se il proprietario di un canale privato lascia l'organizzazione o viene rimosso dal gruppo di Microsoft 365 associato al team, un membro del canale privato viene automaticamente promosso come proprietario del canale privato.
+Se il proprietario di un canale privato lascia l'organizzazione o viene rimosso dal gruppo di Microsoft 365 associato al team, un membro del canale privato viene automaticamente innalzato di livello per ricoprire il ruolo di proprietario del canale privato.
 
 Se un membro del team lascia o viene rimosso da un team, tale utente lascerà o verrà rimosso anche da tutti i canali privati del team. Se l'utente viene aggiunto di nuovo al team, sarà necessario aggiungerlo di nuovo ai canali privati del team.
 
@@ -82,10 +82,6 @@ Nella tabella seguente sono illustrate le azioni che i proprietari, i membri e g
 |Aggiungere membri|No|N/D|N/D|Sì|No|No|
 |Modificare le impostazioni|No|N/D|N/D|Sì|No|No|
 |Gestire schede e app|No|N/D|N/D|Sì, le app devono essere installate per il team|Controllato dal proprietario del canale|No|
-
-## <a name="manage-the-lifecycle-of-private-channels"></a>Gestire il ciclo di vita dei canali privati
-
-Per informazioni su come gestire il ciclo di vita dei canali privati nell'organizzazione, vedere [Gestire il ciclo di vita dei canali privati in Teams](private-channels-life-cycle-management.md). Sono incluse informazioni su come controllare se gli utenti dell'organizzazione possono creare canali privati, come creare un canale privato per conto del proprietario del team, come ottenere un elenco di tutti i messaggi del canale privato a scopo di archiviazione e controllo e altre attività di gestione.  
 
 ## <a name="private-channel-sharepoint-sites"></a>Siti di SharePoint del canale privato
 
@@ -139,3 +135,5 @@ Non è possibile pianificare le riunioni del canale.
 [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
 
 [Usare l'API Microsoft Graph per lavorare con Teams](/graph/api/resources/teams-api-overview)
+
+[Tipo di risorsa canale](/graph/api/resources/channel)
