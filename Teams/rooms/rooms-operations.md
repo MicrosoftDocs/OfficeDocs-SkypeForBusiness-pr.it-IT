@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams Rooms manutenzione e operazioni
-ms.author: dstrome
-author: dstrome
+ms.author: czawideh
+author: cazawideh
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -12,19 +12,18 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: Leggere questo argomento per informazioni sulla gestione delle Microsoft Teams Rooms.
-ms.openlocfilehash: be5f183e593ca1723383b6834c9ff5cad387b42f
-ms.sourcegitcommit: d3c48f0c147cf0c47d5eb4ea1128b5bca13be718
+description: Informazioni sulla gestione dei Microsoft Teams Rooms.
+ms.openlocfilehash: 864438890bbaef87842f6cb4b77328906036ea56
+ms.sourcegitcommit: 060ba9910b8d74cbf7097cd3b8e2834afdb3db95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62298991"
+ms.lasthandoff: 02/19/2022
+ms.locfileid: "62909018"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Microsoft Teams Rooms manutenzione e operazioni
  
-Leggere questo argomento per informazioni sulla gestione delle Microsoft Teams Rooms.
-  
-Microsoft Teams Rooms è la soluzione di conferenza di Microsoft progettata per trasformare la sala riunioni in un'esperienza di collaborazione completa. Gli utenti potranno usufruire della sua interfaccia Microsoft Teams o Skype for Business e gli amministratori IT apprezzeranno un'app Windows 10 Teams Rooms facilmente distribuita e gestita. Microsoft Teams Rooms è progettato per sfruttare le apparecchiature esistenti per semplificare l'installazione per Microsoft Teams o Skype for Business nella sala riunioni.
+ 
+Microsoft Teams Rooms è la soluzione di conferenza di Microsoft progettata per trasformare la sala riunioni in un'esperienza di collaborazione completa. Gli utenti potranno usufruire della sua interfaccia Microsoft Teams o Skype for Business e gli amministratori IT apprezzeranno un'app di Windows 10 Teams Rooms facilmente distribuita e gestita. Microsoft Teams Rooms è progettato per sfruttare le apparecchiature esistenti per facilitare l'installazione per Microsoft Teams o Skype for Business nella sala riunioni.
     
 ## <a name="collecting-logs-on-microsoft-teams-rooms"></a>Raccolta di log in Microsoft Teams Rooms
 <a name="Logs"> </a>
@@ -39,7 +38,7 @@ powershell -ExecutionPolicy unrestricted c:\rigel\x64\scripts\provisioning\Scrip
 
 I log verranno restituiti come file ZIP in c:\rigel.
   
-## <a name="front-of-room-display-settings"></a>Fronte del display della sala Impostazioni
+## <a name="front-of-room-display-settings"></a>Parte anteriore dello schermo della sala Impostazioni
 <a name="Display"> </a>
 
 Configurare le impostazioni degli display front-of-room per supportare Consumer Electronics Control (CEC) o abilitare la modalità PC.
@@ -69,10 +68,10 @@ Se le dimensioni del carattere sullo schermo frontale della sala sono troppo gra
 ## <a name="microsoft-teams-rooms-reset-factory-restore"></a>Microsoft Teams Rooms ripristino (ripristino in fabbrica)
 <a name="Reset"> </a>
 
-Se Microsoft Teams Rooms non è in esecuzione, l'esecuzione di un ripristino di fabbrica potrebbe risultare utile. A questo scopo, usare lo strumento [di Microsoft Teams di](recovery-tool.md) ripristino della sala e seguire le istruzioni per il ripristino in fabbrica.
+Se Microsoft Teams Rooms non è in esecuzione, l'esecuzione di un ripristino di fabbrica potrebbe risultare utile. A questo scopo, usare lo strumento [di Microsoft Teams ripristino della sala e](recovery-tool.md) seguire le istruzioni per il ripristino in fabbrica.
 
 > [!NOTE]
-> Esiste un problema noto per cui il Microsoft Teams Rooms può diventare inutilizzabile se l'opzione Mantieni i miei file - Rimuove app e impostazioni **,** ma mantiene i file personali è selezionata durante il processo di Windows reimpostazione. Non *usare* questa opzione.
+> Esiste un problema noto per cui il Microsoft Teams Rooms può diventare inutilizzabile se l'opzione Mantieni i file **personali -** Rimuove app e impostazioni, ma mantiene i file personali è selezionata durante il processo di Windows reimpostazione. Non *usare* questa opzione.
   
 ## <a name="supported-remote-options"></a>Opzioni remote supportate
 <a name="RemoteOptions"> </a>
@@ -123,10 +122,10 @@ Quando si Microsoft Teams Rooms a un dominio, assicurarsi che i criteri di grupp
 |:-----|:-----|
 |HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon AutoAdminLogon = (REG_SZ) 1  <br/> |Consente Microsoft Teams Rooms l'avvio  <br/> |
 |Power Management -\> In AC, disattivare lo schermo dopo 10 minuti  <br/> Gestione risparmio energia -\> In modalità di sospensione, non mettere mai in sospensione il sistema  <br/> |Consente Microsoft Teams Rooms disattivare gli schermi collegati e riattivarsi automaticamente  <br/> |
-|net accounts /maxpwage:unlimited  <br/> Oppure mezzi equivalenti per disabilitare la scadenza delle password nell'account locale. Se non si riesce a eseguire questa operazione, l'account Skype non riesce ad accedere lamentando una password scaduta. Si noti che questa operazione influisce su tutti gli account locali del computer e quindi la mancata impostazione di questa impostazione causerà anche la scadenza dell'account amministrativo nella casella.  <br/> |Consente Skype'account di accedere sempre  <br/> |
+|net accounts /maxpwage:unlimited  <br/> Oppure mezzi equivalenti per disabilitare la scadenza delle password nell'account locale. Se non si riesce a eseguire questa operazione, l'account Skype non riesce ad accedere lamentando una password scaduta. Si noti che questa operazione influisce su tutti gli account locali del computer e quindi la mancata impostazione di questa impostazione causerà anche la scadenza dell'account amministrativo nella casella.  <br/> |Consente Skype'account di accesso  <br/> |
 
 > [!NOTE]
-> Quando Microsoft Teams Rooms è compatibile con la versione successiva di Windows 10 OS, Teams Rooms automaticamente alla versione successiva tramite Windows Update. Microsoft Teams Rooms non deve essere aggiornato alla versione successiva di Windows 10 manualmente o tramite l'abilitazione dei criteri di gruppo di Windows Update for Business (WUFB) "Selezionare il livello di conformità di Windows per gli aggiornamenti da ricevere" e "Selezionare quando vengono ricevute build di anteprima e aggiornamenti delle funzionalità" tramite l'oggetto Criteri di gruppo. Teams Rooms con questi criteri di gruppo abilitati si verificano problemi con gli Windows 10 del sistema operativo.
+> Se Microsoft Teams Rooms è compatibile con la versione successiva di Windows 10 OS, Teams Rooms automaticamente alla versione successiva tramite Windows Update. Microsoft Teams Rooms non deve essere aggiornato alla versione successiva di Windows 10 manualmente o tramite l'abilitazione dei criteri di gruppo di Windows Update for Business (WUFB) "Selezionare il livello di conformità di Windows per gli aggiornamenti da ricevere" e "Selezionare quando vengono ricevute le build di anteprima e gli aggiornamenti delle funzionalità" tramite l'oggetto Criteri di gruppo. Teams Rooms con questi criteri di gruppo abilitati si verificano problemi con gli Windows 10 del sistema operativo.
 
 ## <a name="remote-management-using-powershell"></a>Gestione remota con PowerShell
 <a name="RemotePS"> </a>
@@ -138,7 +137,7 @@ Quando si Microsoft Teams Rooms a un dominio, assicurarsi che i criteri di grupp
 - Ottieni informazioni di sistema
 - Riavvia il sistema
 - Recuperare i log
-- Trasferimento di file (richiede un dominio aggiunto a Microsoft Teams Rooms)
+- Trasferimento di file (richiede un account aggiunto al Microsoft Teams Rooms)
     
 > [!NOTE]
 > Questa funzionalità è disattivata per impostazione predefinita. È necessario abilitare PowerShell remoto per l'ambiente nel sistema Microsoft Teams Rooms per eseguire le operazioni seguenti. Per informazioni su come abilitare PowerShell remoto, vedere la documentazione in **[Enable-PSRemoting](/powershell/module/microsoft.powershell.core/enable-psremoting)** .
@@ -148,11 +147,11 @@ Ad esempio, è possibile abilitare Remote PowerShell nel modo seguente:
 1. Accedere come amministratore in un Microsoft Teams Rooms dispositivo.
 2. Aprire un prompt dei comandi di PowerShell con privilegi elevati.
 3. Immettere il comando seguente: `Enable-PSRemoting -SkipNetworkProfileCheck -Force`
-4. Aprire Criteri di sicurezza locali e aggiungere  >  il  gruppo di sicurezza Amministratori a Criteri Impostazioni **Criteri** >  >  localiUtenti Assegnazione **dirittiAccesso al computer dalla rete**.
+4. Aprire Criteri di sicurezza locali e aggiungere il  gruppo di sicurezza Administrators a **Criteri** >  Impostazioni **Criteri** >  >  localiUtenti Assegnazione **dirittiAccessire il computer dalla rete**.
 
 Per eseguire un'operazione di gestione:
   
-1. Accedere a un PC con le credenziali dell'account che hanno l'autorizzazione per eseguire i comandi di PowerShell in un dispositivo Microsoft Teams Rooms dispositivo.
+1. Accedere a un PC con le credenziali dell'account che hanno l'autorizzazione per eseguire i comandi di PowerShell in un Microsoft Teams Rooms dispositivo.
 2. Aprire un normale prompt dei comandi di PowerShell nel PC.
 3. Copiare il testo del comando dalla tabella seguente e incollarlo al prompt dei comandi.
 4. Sostituire i  `<Device fqdn>` campi con valori FQDN appropriati per l'ambiente.
@@ -207,30 +206,21 @@ Copy-Item $movefile $targetDevice
 ## <a name="software-updates"></a>Aggiornamenti software
 <a name="SWupdate"> </a>
 
-Per impostazione predefinita, Microsoft Teams Rooms tenta di connettersi al Windows Store per ottenere l'ultima versione del software Microsoft Teams Rooms. Di conseguenza, Teams Rooms richiede un normale accesso a Internet. Prima di contattare Microsoft per problemi di supporto, assicurati che Microsoft Teams Rooms sia caricato con la versione più recente dell'app.
+Per impostazione predefinita, Microsoft Teams Rooms tenta di connettersi al Windows Store per ottenere la versione più recente del software Microsoft Teams Rooms. Di conseguenza, Teams Rooms richiede un normale accesso a Internet. Prima di contattare Microsoft per problemi di supporto, assicurati che Microsoft Teams Rooms sia caricato con la versione più recente dell'app.
   
-Microsoft Teams Rooms si connette a Windows aggiornamento per recuperare gli aggiornamenti del firmware del sistema operativo e delle periferiche. Teams room è configurata per l'installazione a partire dalle 2:00 ora locale.
-  
-Se è necessario gestire manualmente gli aggiornamenti a causa di limitazioni nell'accesso a Windows Store e quindi non è possibile seguire la normale procedura per [Microsoft Store per le aziende](https://businessstore.microsoft.com/store) per distribuire le app [offline](/microsoft-store/distribute-offline-apps), è possibile acquisire il file APPX appropriato e le dipendenze dal [kit](https://go.microsoft.com/fwlink/?linkid=851168) di distribuzione (dalle istruzioni per configurare un [ Microsoft Teams Rooms console](console.md)) che può essere usato con Configuration Manager. Il rilascio del kit di distribuzione è in ritardo rispetto al rilascio dello store, quindi potrebbe non corrispondere sempre all'ultima build disponibile.
-  
-### <a name="to-update-using-powershell"></a>Per eseguire l'aggiornamento con PowerShell
+Microsoft Teams Rooms si connette a Windows aggiornamento per recuperare gli aggiornamenti del firmware del sistema operativo e delle periferiche. Si connette anche al Microsoft Store per recuperare gli aggiornamenti dell'applicazione.
 
-1. Estrarre il pacchetto dal file [MSI](https://go.microsoft.com/fwlink/?linkid=851168) di installazione in una condivisione a cui il dispositivo può accedere.
-2. Eseguire lo script seguente per i dispositivi Microsoft Teams Rooms, modificando \<share\> la condivisione del dispositivo in base alle esigenze:
-    
-    ```PowerShell
-    Add-AppxPackage -Update -ForceApplicationShutdown -Path '\\<share>\$oem$\$1\Rigel\x64\Ship\AppPackages\*\*.appx' -DependencyPath (Get-ChildItem '\\<share>\$oem$\$1\Rigel\x64\Ship\AppPackages\*\Dependencies\x64\*.appx' | Foreach-Object {$_.FullName})
-    ```
+Se è necessario gestire manualmente gli aggiornamenti delle applicazioni, ma non è possibile seguire la normale procedura per [Microsoft Store per le aziende](https://businessstore.microsoft.com/store) per distribuire le app [offline](/microsoft-store/distribute-offline-apps), è possibile acquisire pacchetti di aggiornamento Teams Rooms per eseguire gli aggiornamenti delle app nei sistemi operativi supportati. Il rilascio dell'aggiornamento potrebbe essere in ritardo rispetto al rilascio dello store e potrebbe non corrispondere sempre all'ultima build disponibile. Per [altre informazioni, vedere Aggiornare manualmente Microsoft Teams Rooms dispositivo](manual-update.md).
 
 ## <a name="admin-mode-and-device-management"></a>Modalità di amministrazione e gestione dei dispositivi
 <a name="AdminMode"> </a>
 
 Alcune funzioni di gestione, ad esempio l'installazione manuale di un certificato CA privato, richiedono l'Teams Rooms in modalità amministratore. 
   
-### <a name="switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-is-running"></a>Passaggio alla modalità di amministrazione e ritorno quando l Microsoft Teams Rooms app è in esecuzione
+### <a name="switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-is-running"></a>Passaggio alla modalità di amministrazione e ritorno quando l'app Microsoft Teams Rooms è in esecuzione
 
 1. Blocca le chiamate in corso e torna alla schermata iniziale.
-2. Seleziona l'icona a forma di ingranaggio e visualizza il menu (le opzioni sono **Impostazioni**, **Accessibilità** e **Riavvia dispositivo**).
+2. Seleziona l'icona a forma di ingranaggio e visualizza il menu (le **opzioni sono Impostazioni**, **Accessibilità** e **Riavvia dispositivo**).
 3. Selezionare **Impostazioni**.
 4. Immettere la password di amministratore. Verrà visualizzata la schermata Configurazione.  Se il dispositivo non fa parte di un dominio, per impostazione predefinita verrà usato l'account amministrativo locale (nome utente "Amministratore"). La password predefinita per questo account è 'sfb'. Modificare la password il prima possibile. Se il computer fa parte di un dominio, è possibile accedere con un account di dominio con privilegi appropriati.
 5. Selezionare **Windows Impostazioni** nella colonna sinistra.
@@ -242,13 +232,13 @@ La console è tornata nella modalità di funzionamento normale. La procedura seg
   
 ### <a name="switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-crashes"></a>Passaggio alla modalità di amministrazione e ritorno quando l'app Microsoft Teams Rooms si arresta in modo anomalo
 
-1. Premere il tasto Windows cinque volte in rapida successione. Verrà visualizzata la schermata di Windows di accesso. 
+1. Premere il Windows cinque volte in rapida successione. Verrà visualizzata la schermata di Windows di accesso. 
 2. Accedere al desktop con le credenziali amministrative.
 3. Eseguire le attività amministrative necessarie.
 4. Al termine, riavviare il computer.
 
     > [!NOTE]
-    > Questo metodo non disconnette l'utente di Skype o termina normalmente l'app, ma la userebbe se l'app non rispondeva e l'altro metodo non era disponibile. 
+    > Questo metodo non disconnette l'utente di Skype o termina normalmente l'app, ma lo userebbe se l'app non rispondeva e l'altro metodo non era disponibile. 
 
    La console viene riavviata nella modalità di funzionamento normale, eseguendo l Microsoft Teams Rooms app. È possibile rimuovere la tastiera, se è stata allegata una per completare questa procedura.
    ## <a name="troubleshooting-tips"></a>Suggerimenti per la risoluzione dei problemi
