@@ -22,12 +22,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 4c3ed73b3238be2795c30fa7d162ed201cd77afd
-ms.sourcegitcommit: 159399f2325af644c20551925c1fa34bf76aad43
+ms.openlocfilehash: b92cca01512d31fe193a718eede74fd04f44ae2e
+ms.sourcegitcommit: 10bee789272e648ea1e93d7d7c27ec645d0a8bdd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62288504"
+ms.lasthandoff: 02/22/2022
+ms.locfileid: "62918869"
 ---
 # <a name="shifts-for-teams"></a>Turni per Teams
 
@@ -43,12 +43,13 @@ Usare le risorse seguenti per configurare e gestire i turni nell'organizzazione.
 
 |&nbsp;  |&nbsp; |
 |---------|---------|
-|<img src="/office/media/icons/calendar-teams.png" alt="Calendar symbol.">|**[Gestire turni nell'organizzazione](shifts/manage-the-shifts-app-for-your-organization-in-teams.md)** Informazioni su come gestire i turni per l'organizzazione. |
-|<img src="/office/media/icons/users-people.png" alt="Users/people symbol.">|**[Gestire i proprietari della pianificazione per la gestione dei turni](shifts/schedule-owner-for-shift-management.md)** Questa caratteristica consente di elevare le autorizzazioni di un membro del team a un proprietario della pianificazione senza rendere il dipendente proprietario del team. |
+|<img src="/office/media/icons/calendar-teams.png" alt="Calendar symbol.">   |**[Gestire i turni](shifts/manage-the-shifts-app-for-your-organization-in-teams.md)** Informazioni su come gestire i turni per l'organizzazione.         |
+|<img src="/office/media/icons/users-people.png" alt="Users/people symbol.">   |**[Gestire i proprietari della pianificazione per la gestione dei turni](shifts/schedule-owner-for-shift-management.md)** Questa caratteristica consente di elevare le autorizzazioni di un membro del team a un proprietario della pianificazione senza rendere il dipendente proprietario del team.         |
+|<img src="/office/media/icons/help.png" alt="Help symbol.">     | **[Domande frequenti sui dati relativi ai turni](shifts/shifts-data-faq.md)** Informazioni sulla posizione in cui vengono archiviati i dati di Shifts e su altri argomenti relativi ai dati di Shifts, tra cui conservazione, recupero e crittografia.        |
 
 ## <a name="shifts-connectors"></a>Turni connettori
 
-Se si usa un sistema WFM (Workforce Management) di terze parti per la pianificazione, è possibile eseguire l'integrazione direttamente con Turni tramite connettori turni gestiti e tramite API e SDK di Turni Graph con connettori Turni open source. Dopo aver configurato una connessione, i dipendenti in prima linea possono visualizzare e gestire facilmente le pianificazioni nel sistema WFM dall'interno dei turni.
+Se si usa un sistema WFM (Workforce Management) di terze parti per la pianificazione, è possibile eseguire l'integrazione direttamente con Turni tramite connettori turni gestiti e tramite API e SDK di Turni Graph con connettori Shifts open-source. Dopo aver configurato una connessione, i dipendenti in prima linea possono visualizzare e gestire facilmente le pianificazioni nel sistema WFM dall'interno dei turni.
 
 |&nbsp;  |&nbsp;  |
 |---------|---------|
@@ -60,7 +61,7 @@ Se si usa un sistema WFM (Workforce Management) di terze parti per la pianificaz
 
 |&nbsp;|&nbsp;|
 | ------------- | ------------- |
-| <img src="/office/media/icons/api.png" alt="Three gears - API."> | **[LE GRAPH TURNI Turni](/graph/api/resources/shift)** Graph API consentono di integrare i dati di Turni con sistemi WFM (External Workforce Management). Si ha la flessibilità necessaria per creare esperienze turni personalizzate nel back-end, offrendo agli utenti un'esperienza di front-end Teams.             |
+| <img src="/office/media/icons/api.png" alt="Three gears - API."> | **[LE GRAPH TURNI Turni](/graph/api/resources/shift)** Graph API consentono di integrare i dati di Turni con sistemi WFM (External Workforce Management). Si ha la flessibilità necessaria per creare esperienze di turni personalizzate nel back-end, offrendo agli utenti un'esperienza di front-end Teams.             |
 |<img src="/office/media/icons/process-flow-teams.png" alt="Process/flow chart symbol."> | **[Turni + Power Automate](https://github.com/OfficeDev/Microsoft-Teams-Shifts-Power-Automate-Templates)** turni + Power Automate consente di prendere informazioni da Turni e creare flussi di lavoro personalizzati con altre app ed eseguire operazioni su larga scala. Automatizzare i processi chiave con poco o nessun codice. I trigger e i modelli supportano vari scenari, ad esempio l'abilitazione dell'approvazione automatica per le richieste di turno quando non è necessaria l'approvazione di un responsabile. |
 
 ## <a name="featured-training"></a>Formazione in primo piano

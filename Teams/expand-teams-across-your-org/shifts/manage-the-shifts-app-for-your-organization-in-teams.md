@@ -24,12 +24,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fa274c8aa068d7b17ce35d17525b58152677de07
-ms.sourcegitcommit: 159399f2325af644c20551925c1fa34bf76aad43
+ms.openlocfilehash: dd40888ec8f1f7c5c05c3f5a2bf5a867ece93a65
+ms.sourcegitcommit: 10bee789272e648ea1e93d7d7c27ec645d0a8bdd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62288374"
+ms.lasthandoff: 02/22/2022
+ms.locfileid: "62918879"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Turni per l'organizzazione in Microsoft Teams
 
@@ -52,6 +52,10 @@ Turni è disponibile in tutte le SKU Enterprise dove Teams è disponibile.
 ## <a name="location-of-shifts-data"></a>Posizione dei dati di Turni
 
 I dati di Turni sono attualmente archiviati in Azure nei data center in America del Nord, Europa occidentale e Asia Pacifico. Per altre informazioni sulla posizione di archiviazione dei dati, vedere [Dove sono i dati?](http://o365datacentermap.azurewebsites.net/)
+
+## <a name="shifts-data"></a>Sposta i dati
+
+Per altre informazioni sulla posizione in cui vengono archiviati i dati di Shifts e sulla conservazione, il recupero e la crittografia dei dati di Shifts, vedere Domande frequenti sui [dati relativi ai turni](shifts-data-faq.md).
 
 ## <a name="set-up-shifts"></a>Configurare Turni
 
@@ -86,6 +90,7 @@ Prima di poter eseguire ricerche nel log di controllo, è necessario attivare il
 
 ## <a name="related-topics"></a>Argomenti correlati
 
+- [Turni per Teams](../shifts-for-teams-landing-page.md)
 - [Guida di Turni per i lavoratori in prima linea](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b)
-- [Assegnare i criteri agli utenti in Teams](../../policy-assignment-overview.md)
 - [Turni connettori](shifts-connectors.md)
+- [Assegnare i criteri agli utenti in Teams](../../policy-assignment-overview.md)

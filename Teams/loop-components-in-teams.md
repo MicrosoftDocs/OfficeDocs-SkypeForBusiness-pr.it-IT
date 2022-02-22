@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7264d7f08342121a862943dd8b063fe904c87072
-ms.sourcegitcommit: a9a056b93b4add3a4d978bb341ea4b66a042b4d0
+ms.openlocfilehash: 660ecd7542eadd56b284642895e5da15a1cdd434
+ms.sourcegitcommit: 10bee789272e648ea1e93d7d7c27ec645d0a8bdd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62893729"
+ms.lasthandoff: 02/22/2022
+ms.locfileid: "62918940"
 ---
 # <a name="overview-of-loop-components-in-teams"></a>Panoramica dei componenti loop in Teams
 
@@ -37,6 +37,8 @@ I componenti a ciclo continuo Teams chat offrono un nuovo modo per ideare, crear
 **Condividere componenti.** In questa versione è possibile condividere i componenti Loop in chat Teams chat. I destinatari possono modificare da qualsiasi posizione e visualizzare immediatamente gli aggiornamenti, indipendentemente da dove sono state apportate le modifiche.
 
 **Inizia in chat, crea da lì.** Ogni componente creato da Teams chat viene salvato automaticamente in un file in OneDrive. Quindi, potresti iniziare a collaborare in chat e poi passare al file, dove hai uno spazio visivo più ampio per la modifica e puoi aggiungere tutti i componenti che vuoi.
+
+Per informazioni sulle impostazioni di amministrazione per i componenti Loop in Teams, vedere [Gestire i componenti loop in SharePoint](/sharepoint/manage-loop-components).
 
 ## <a name="clients-and-platforms"></a>Client e piattaforme
 
@@ -81,7 +83,3 @@ I file con estensione fluid possono essere aperti solo come collegamenti nel bro
 - Gli utenti guest B2B non potranno collaborare a un componente live condiviso con loro tramite Collegamento di condivisione aziendale. Impostare le autorizzazioni su **Persone attualmente in questa chat per** condividere componenti con guest B2B.
 - I componenti a ciclo continuo non sono supportati Teams canali.
 - I componenti a ciclo continuo nella chat non vengono caricati solo se il file è stato spostato in una raccolta diversa. Se il file viene spostato in un'altra cartella, continuerà a essere caricato in chat.
-
-## <a name="related-topics"></a>Argomenti correlati
-
-[Gestire i componenti loop in SharePoint](/sharepoint/manage-loop-components)
