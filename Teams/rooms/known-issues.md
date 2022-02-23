@@ -12,14 +12,14 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
-description: Informazioni sui problemi noti per Microsoft Teams Rooms, tra cui l'aggiornamento, l'interfaccia utente, l'hardware e le limitazioni e i comportamenti previsti.
+description: Informazioni sui problemi noti per Microsoft Teams Rooms, inclusi l'aggiornamento, l'interfaccia utente, l'hardware e le limitazioni e i comportamenti previsti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c9d73ddf276fac1474c51156cbc59a3b3bbb47b
-ms.sourcegitcommit: d3c48f0c147cf0c47d5eb4ea1128b5bca13be718
+ms.openlocfilehash: 5322020d37e3251aa54a20afecba353dd6335f55
+ms.sourcegitcommit: e9b0a274fdfee3d5bc8211cb099155546b281fe0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62299091"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "62926319"
 ---
 # <a name="known-issues"></a>Problemi noti 
  
@@ -31,6 +31,7 @@ Questo articolo elenca i problemi noti di Microsoft Teams Rooms per area funzion
 
 | Titolo problema |  Comportamento \/ Sintomo | Soluzione alternativa nota | Articolo della Knowledge Base |
 |  ---        |      ---             |   ---            | --- |
+| Whiteboard/Content Camera non migliora il contenuto quando i bordi non vengono rilevati | Dopo l'aggiornamento alla versione 4.11.12.0, quando non ci sono bordi della lavagna in vista della fotocamera del contenuto, la fotocamera non migliora/sovrappone tutto il contenuto in vista della fotocamera.| Correzione da includere in una versione futura per migliorare tutto il contenuto nella visualizzazione fotocamera. Come soluzione alternativa, è possibile usare un nastro da copia applicato in una casella alla lavagna per fornire temporaneamente i bordi che la fotocamera del contenuto può usare per mettere a fuoco e migliorare il contenuto. | Nessuno |
 | Avvio automatico del browser Edge | Il browser Edge prima della build 97.0.1072.62 viene avviato automaticamente insieme all'app Microsoft Teams Room all'avvio del dispositivo. | Questo problema dovrebbe risolversi automaticamente, senza l'interazione dell'utente, il lunedì 17 gennaio 2022 o prima di lunedì. Se è necessaria una risoluzione più rapida: quando Edge viene avviato insieme alla sala Microsoft Teams, visita l'URL edge://settings/help e un aggiornamento dovrebbe scaricare e applicare automaticamente. Nel browser selezionare "Riavvia" al termine dell'applicazione dell'aggiornamento. Chiudere Azure IoT Edge, riavviare il sistema e il problema dovrebbe essere risolto. | Nessuno |
 | Video partecipante della raccolta divisa   |  Quando nelle riunioni con più di 9 partecipanti remoti non è presente contenuto condiviso e la riunione è in modalità di visualizzazione doppia davanti alla sala, è possibile che venga visualizzato come audio 1 video su uno schermo frontale della sala con l'anteprima automatica. Inoltre, un numero inferiore di partecipanti all'audio rispetto al numero effettivo di partecipanti audio viene visualizzato su due schermi front of Room. | Il problema verrà risolto in un aggiornamento futuro. | Nessuno |
 | L'applicazione non viene avviata |  Dopo l'aggiornamento alla versione 4.4.41.0 dell'applicazione, il sistema viene avviato sullo schermo nero o passa alla schermata di accesso dopo pochi minuti. | Segui la procedura descritta in [applicazione Microsoft Teams Rooms non viene avviata dopo l'aggiornamento alla versione 4.4.41.0](/microsoftteams/troubleshoot/teams-administration/teams-rooms-app-wont-start-after-update) per risolvere questo problema.  | Nessuno |
@@ -73,7 +74,7 @@ Microsoft Teams Rooms non supporta l'input HDCP, che è stato osservato per caus
 
 Se si vuole che una visualizzazione anteriore della sala si snobbi automaticamente a un'origine video attiva, ad esempio una console MTR, quando l'origine si riattiva dalla modalità standby, è necessario che siano soddisfatte determinate condizioni. Questa funzionalità è facoltativa ma supportata dal software Microsoft Teams Rooms, purché l'hardware sottostante supporti la funzionalità. Un televisore utente usato come display frontale della sala deve supportare la funzionalità Consumer Electronics Control (CEC) di HDMI.  A seconda del dock o della console selezionata, potrebbe essere necessario un controller come [hd-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [Extron HD CTL 100](https://www.extron.com/article/hdctl100ad) da Extron per abilitare il comportamento desiderato. Fare riferimento alla documentazione di supporto del produttore per verificare che il dock o la console supporti CEC.
 
-Inoltre, una TV consumer usata come schermo anteriore della sala può causare problemi di stabilità con Microsoft Teams Rooms software. Ciò è dovuto all'implementazione incoerente delle modalità di standby, alla selezione dell'origine video attiva e alla comunicazione di informazioni edID difettose al Microsoft Teams Rooms dispositivo. I sintomi noti sono uno schermo nero/grigio nella parte anteriore dello schermo della sala o la console Microsoft Teams Rooms non risponde dopo il risveglio dalla modalità standby.  Se si verificano problemi durante l'uso di televisori consumer, è consigliabile installare un controller EDID configurabile o un emulatore EDID, ad esempio [hd-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [dr-EDID Emulator](https://fsrinc.com/fsr-products/product/dr-edid-manager-learner/category_pathway-143) dal gruppo fsr Video Products Group.
+Inoltre, una TV consumer usata come schermo anteriore della sala può causare problemi di stabilità con Microsoft Teams Rooms software. Ciò è dovuto all'implementazione incoerente delle modalità di standby, alla selezione dell'origine video attiva e alla comunicazione di informazioni EDID difettose al Microsoft Teams Rooms dispositivo. I sintomi noti sono uno schermo nero/grigio nella parte anteriore dello schermo della sala o la console Microsoft Teams Rooms non risponde dopo essersi svegliati dalla modalità standby.  Se si verificano problemi durante l'uso di televisori consumer, è consigliabile installare un controller EDID configurabile o un emulatore EDID, ad esempio [hd-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [dr-EDID Emulator](https://fsrinc.com/fsr-products/product/dr-edid-manager-learner/category_pathway-143) da FSR Video Products Group.
 
 ***
 
