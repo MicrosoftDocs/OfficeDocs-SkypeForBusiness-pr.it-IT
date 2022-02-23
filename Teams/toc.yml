@@ -1539,6 +1539,8 @@ items:
                 items:
                   - name: Panoramica
                     href: expand-teams-across-your-org/shifts/shifts-connectors.md
+              - name: Domande frequenti sui turni dati
+                href: expand-teams-across-your-org/shifts/shifts-data-faq.md
       - name: Teams per l'istruzione
         href: expand-teams-across-your-org/teams-for-education-landing-page.md
         items:
