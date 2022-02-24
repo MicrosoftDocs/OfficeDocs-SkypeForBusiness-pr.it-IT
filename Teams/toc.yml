@@ -457,6 +457,8 @@ items:
                 href: teams-analytics-and-reports/teams-live-event-usage-report.md
               - name: Report sulla licenza di Teams Information Protection
                 href: teams-analytics-and-reports/information-protection-license-report.md
+              - name: Report sull'utilizzo delle visite virtuali di Teams
+                href: teams-analytics-and-reports/virtual-visits-usage-report.md
       - name: 'File di log, integrità dei servizi e supporto'
         items:
           - name: Usare i file di log per monitorare e risolvere i problemi di Teams
@@ -1527,6 +1529,10 @@ items:
                 href: expand-teams-across-your-org/bookings-virtual-visits.md
               - name: Gestire l'app Bookings
                 href: bookings-app-admin.md
+              - name: Gestire l'esperienza di partecipazione nei browser per dispositivi mobili
+                href: expand-teams-across-your-org/mobile-browser-join.md
+              - name: Report sull'utilizzo delle visite virtuali
+                href: teams-analytics-and-reports/virtual-visits-usage-report.md
           - name: Turni per Teams
             items:
               - name: Introduzione a Turni
@@ -1645,6 +1651,8 @@ items:
                 href: expand-teams-across-your-org/healthcare/ehr-admin-reports.md
               - name: Visite virtuali con Teams e Bookings
                 href: expand-teams-across-your-org/bookings-virtual-visits.md
+              - name: Report sull'utilizzo delle visite virtuali
+                href: teams-analytics-and-reports/virtual-visits-usage-report.md
               - name: Gestire l'esperienza di partecipazione nei browser per dispositivi mobili
                 href: expand-teams-across-your-org/mobile-browser-join.md
           - name: Visualizzare e assegnare pacchetti di criteri
