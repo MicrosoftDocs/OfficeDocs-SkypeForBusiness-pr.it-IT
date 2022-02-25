@@ -9,21 +9,26 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 ms.localizationpriority: high
 search.appverid: MET150
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - ms.teamsadmincenter.meetingsettings.invitationurls
-  - ms.teamsadmincenter.meetingsettings.network.ports
-  - ms.teamsadmincenter.meetingsettings.overview
+- ms.teamsadmincenter.meetingsettings.invitationurls
+- ms.teamsadmincenter.meetingsettings.network.ports
+- ms.teamsadmincenter.meetingsettings.overview
 ms.collection:
-  - M365-collaboration
-  - m365initiative-meetings
+- M365-collaboration
+- m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
+ms.openlocfilehash: 294bbac570d1f1741449c7c81cb9389b20cdcdc6
+ms.sourcegitcommit: eb5fadedacbf4651ed5b05f1b0d6abf57e9eda2d
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "62960028"
 ---
-
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
 L’amministratore usa le impostazioni delle riunioni di Teams per controllare se gli utenti anonimi possono partecipare alle riunioni di Teams, personalizzare gli inviti alle riunioni e, se si vuole attivare la Qualità del servizio (QoS), impostare gli intervalli di porte per il traffico in tempo reale. Queste impostazioni si applicano a tutte le riunioni di Teams che gli utenti pianificano nell'organizzazione. È possibile gestire le impostazioni da **Riunioni** > **Impostazioni riunione** nell'interfaccia di amministrazione di Microsoft Teams.
@@ -67,6 +72,14 @@ Qualsiasi altra combinazione di valori impedirà agli utenti anonimi di partecip
 > [!NOTE]
 > Per usare i criteri per organizzatore per le organizzazioni con l'aggiunta anonima disattivata per ogni organizzazione, gli amministratori devono creare un criterio e quindi assegnarlo agli utenti. Per informazioni su come farlo, vedere [Gestire i criteri riunione in Microsoft Teams](/microsoftteams/meeting-policies-overview).
 
+### <a name="blocking-anonymous-join-for-specific-client-types"></a>Blocco partecipazione anonima per tipi di clienti specifici
+
+Quando gli utenti anonimi sono autorizzati a partecipare alle riunioni, possono utilizzare Teams client o un client personalizzato creato utilizzando [servizi di comunicazione di Azure](/azure/communication-services/). Gli amministratori possono bloccare i tipi di client selezionati usando il **parametro -BlockedAnonymousJoinClientTypes** in [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy).
+
+I valori possibili sono i seguenti:
+- Null (impostazione predefinita). Sono consentiti tutti i tipi di client.
+- Acs. Blocca i client personalizzati compilati utilizzando [Servizi di comunicazione di Azure](/azure/communication-services/).
+- Teams. Blocca il client di Teams.
 
 ## <a name="allow-anonymous-users-to-interact-with-apps-in-meetings"></a>Consentire agli utenti anonimi di interagire con le app nelle riunioni
 
