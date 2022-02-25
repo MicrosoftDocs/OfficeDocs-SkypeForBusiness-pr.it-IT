@@ -23,10 +23,10 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 description: Informazioni su come usare il report Dashboard qualità Power BI chiamata per visualizzare i Operatore automatico e la cronologia della coda di chiamata.
 ms.openlocfilehash: bb83a31b083387bc945f7f4b4388ee6643c00f10
-ms.sourcegitcommit: d8dba15c520de3894d1781e17acb2c75fb38ed49
+ms.sourcegitcommit: eb5fadedacbf4651ed5b05f1b0d6abf57e9eda2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2022
+ms.lasthandoff: 02/25/2022
 ms.locfileid: "62921874"
 ---
 # <a name="auto-attendant--call-queue-historical-report"></a>Operatore automatico & cronologia della coda di chiamata
@@ -208,7 +208,7 @@ Eseguire la procedura seguente:
 |Origine chiamata in <sup>arrivo1</sup>    |fCallQueueAnalytics -> Numero chiamate<br>fCallQueueAnalytics -> Call Type    |Chiamate esterne: il tipo di chiamata è Esterno<br>Chiamate interne: il tipo di chiamata è interno |
 |Tempo di attesa medio                    |fCallQueueFinalStateAction -> durata media delle chiamate (secondi) |Prima del trasferimento: il risultato della chiamata in coda agent_joined_conference o transferred_to_agent<br>Prima del blocco: il risultato della chiamata in coda di chiamata non agent_joined_conference o transferred_to_agent |
 |Risultato chiamata                         |fCallQueueAnalytics -> Numero chiamate<br>fCallQueueAnalytics -> call queue call result | Nessuno |
-|Azione totale chiamate timeout/overflow |fCallQueueFinalStateAction -> Call Count<br>fCallQueueFinalStateAction -> Call Queue Final State Action |L'azione sullo stato finale della coda di chiamata non è inoltrata |
+|Azione totale chiamate timeout/overflow |fCallQueueFinalStateAction -> Numero chiamate<br>fCallQueueFinalStateAction -> Call Queue Final State Action |L'azione sullo stato finale della coda di chiamata non è inoltrata |
 |Totali destinazione trasferimento/ford       |fCallQueueAnalytics -> Numero chiamate<br>fCallQueueAnalytics -> di destinazione della coda di chiamata |Nessuno |
 |Volumi di chiamata                        |fCallQueueAnalytics -> Numero chiamate<br>fCallQueueAnalytics -> Call Queue Identify<br>fCallQueueAnalytics -> Date |Nessuno |
 |Chiamate abbandonate                     |fCallQueueAnalytics -> %Abandoned Calls<br>fCallQueueAnalytics -> Numero chiamate<br>fCallQueueAnalytics -> Date<br>fCallQueueAnalytics -> IsAbandoned |IsAbandoned è True |
@@ -250,7 +250,7 @@ Eseguire la procedura seguente:
 |Conteggio chiamate                              |Numero intero             |Riepiloga: Somma<br>Numero di chiamate                  |
 |Risultato della chiamata in coda di chiamata                  |Testo                     |Stato finale chiamata in coda di chiamata -- valori possibili:<br><br>§ agent_joined_conference<br>§ rifiutato<br>§ disconnesso<br>§ errore<br>§ non riuscito<br>§ non valido<br>§ overflow<br>§ timed_out<br>§ transferred_to_agent |
 |Azione stato finale coda di chiamata           |Testo                     |Azione finale coda di chiamata -- valori possibili:<br><br>§ disconnetti (timed_out chiamate)<br>§ disconnect_with_busy (chiamate in overflow)<br>§ failed_to_accept_call<br>§ avanti<br>§ shared_voicemail<br>§ other<br>§ segreteria telefonica |
-|Identità coda di chiamata                     |Testo                     |Nome dell'account della risorsa allegato alla coda di chiamata<br><br>Se il nome completo dell'account della **risorsa cq_test@microsoft.com** , questo valore sarà: **cq_test** |
+|Identità coda di chiamata                     |Testo                     |Nome dell'account della risorsa allegato alla coda di chiamata<br><br>Se il nome completo dell'account risorsa **cq_test@microsoft.com** , questo valore sarà: **cq_test** |
 |Data                                    |Data/ora                |Data e ora di inizio della chiamata in coda di chiamata (ora) (UTC)   |
 |IsAbandoned                             |Vero/falso               |True se la chiamata non viene risolta da un agente           |
 
@@ -288,7 +288,7 @@ Eseguire la procedura seguente:
 
 |Nome                                    |Tipo di dati                |Descrizione                                         |
 |:---------------------------------------|:------------------------|:---------------------------------------------------|
-|Nome agente                              |Testo                     |UPN utente<br>Se il nome utente **completo user@microsoft.com** il valore sarà: **utente** |
+|Nome agente                              |Testo                     |UPN utente<br>Se il nome utente **completo user@microsoft.com** , questo valore sarà: **utente** |
 |Durata media chiamata (secondo)          |Numero decimale           |Riepiloga: Somma<br>Durata media delle chiamate in coda di chiamata in secondi |
 |Conteggio chiamate                              |Numero intero             |Riepiloga: Somma<br>Numero di chiamate gestite dall'agente                    |
 |Durata chiamata (minuti)                  |Numero intero             |Riepiloga: Somma<br>Durata totale delle chiamate in coda di chiamata in minuti  |
@@ -306,6 +306,6 @@ Eseguire la procedura seguente:
 
 - Nel dashboard sono disponibili solo 28 giorni di cronologia, in quanto i dati relativi alla coda di chiamata o all'operatore automatico sono considerati dati personali ed è soggetto ai criteri di conservazione della privacy dei dati.
 
-- In alcuni scenari, il numero di chiamate risposte dell'agente nel report Sequenza temporale dell'agente della coda di chiamata cloud può essere diverso dal numero di chiamate visualizzato nella cronologia delle chiamate Teams client. La Teams della chiamata del cliente è corretta. Il supporto sta analizzando, ma non c'è tempo stimato per la riparazione disponibile al momento.
+- In alcuni scenari, il numero di chiamate risposte dell'agente nel report Sequenza temporale dell'agente della coda di chiamata cloud può essere diverso dal numero di chiamate visualizzato nella Teams delle chiamate del client. La Teams della chiamata del cliente è corretta. Il supporto sta analizzando, ma non c'è tempo stimato per la riparazione disponibile al momento.
 
 - <sup>1</sup> **L'origine della chiamata** in arrivo nei grafici dell'operatore automatico e della coda di chiamata mostra l'origine della coda di chiamata finale anziché l'origine iniziale della coda di chiamata. Ad esempio, se un operatore automatico riceve una chiamata esterna e la trasferisce a un altro operatore automatico o coda di  chiamata, l'origine della chiamata in arrivo verrà segnalata come Interna.

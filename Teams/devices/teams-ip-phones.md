@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 1b5b32edeecd7c20840e3644583843a1c7e465b4
-ms.sourcegitcommit: 5ca04ee10e3f254e1b24506de116591fdfd51d18
+ms.openlocfilehash: d379505751a25cf0880538efb1745765d7061044
+ms.sourcegitcommit: eb5fadedacbf4651ed5b05f1b0d6abf57e9eda2d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "62929171"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "62960018"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>Microsoft Teams dispositivi Android certificati
 
@@ -41,7 +41,7 @@ Oltre il periodo di certificazione, Microsoft si impegna a supportare la version
 
 ## <a name="certified-teams-phones"></a>Telefoni Teams certificati
 
-I dispositivi seguenti sono certificati nel programma di certificazione Microsoft Teams telefoni cellulari:
+I dispositivi seguenti sono certificati nell'Microsoft Teams di certificazione dei telefoni:
 
 |Modello di dispositivo    | Versione firmware    | Data di fine certificazione corrente | Versione del sistema operativo Android                               |
 |:---------------------------------------|:-----------------------------------------|:-----------------------------|-----------------------------------|
@@ -143,10 +143,10 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 | Yealink VP59   | `91.15.0.87`  | Aggiornamento 2022 #1     |
 | Yealink CP960  | `73.15.0.150`  | Aggiornamento 2022 #1         |
 | Yealink MP52 | `145.15.0.25`  | Aggiornamento 2022 #1         |
-| Poly Trio C60  | `7.1.4.0250 ` | Aggiornamento #3C 2021  |
-| Poly CCX600    | `7.1.4.0253  `| Aggiornamento #3C 2021  |
-| Poly CCX500    | `7.1.4.0253  `| Aggiornamento #3C 2021  |
-| Poly CCX400    | `7.1.4.0253  `| Aggiornamento #3C 2021  |
+| Poly Trio C60  | `7.1.4.0250 ` | Aggiornamento 2021 #3C  |
+| Poly CCX600    | `7.1.4.0253  `| Aggiornamento 2021 #3C  |
+| Poly CCX500    | `7.1.4.0253  `| Aggiornamento 2021 #3C  |
+| Poly CCX400    | `7.1.4.0253  `| Aggiornamento 2021 #3C  |
 | Poly Trio C60   | `7.1.4.0201`  | Aggiornamento #3B 2021                        |
 | Poly CCX400/CCX500/CCX600   | `7.1.4.0200`  | Aggiornamento #3B 2021                 |
 |Audiocode C448HD  | `1.14.449` | Aggiornamento 2021 #3  |
@@ -194,9 +194,9 @@ Per [informazioni sulle funzionalità supportate da](phones-for-teams.md) questi
 
 Vedere [Microsoft Teams display](teams-displays.md).
 
-### <a name="product-release-information-for-teams-rooms-on-android"></a>Informazioni sulla versione del prodotto per Teams Rooms su Android
+### <a name="product-release-information-for-teams-rooms-on-android"></a>Informazioni sulla versione del prodotto Teams Rooms su Android
 
-Di seguito sono riportate le versioni più Teams Rooms versioni del firmware e dell'app Android.
+Di seguito sono riportate le versioni più Teams Rooms versioni dell'app e del firmware per Android.
 
 #### <a name="app-versions"></a>Versioni delle app
 
@@ -212,13 +212,13 @@ Di seguito sono riportate le versioni più Teams Rooms versioni del firmware e d
 
 #### <a name="firmware-versions"></a>Versioni firmware
 
-Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni corrispondenti dell'app Microsoft Teams, del Portale aziendale e dell'agente di amministrazione installate trovando la versione del prodotto nella colonna Rilascio prodotto **incluso.** Cercare quindi la versione del prodotto nella **tabella versioni delle app** riportata sopra.
+Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni corrispondenti dell'app Microsoft Teams, del Portale aziendale e dell'agente di amministrazione installate individuando il rilascio del prodotto nella colonna Rilascio prodotto **incluso.** Cercare quindi la versione del prodotto nella **tabella versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Rilascio del prodotto incluso |
 |:--------------|:-----------------|:-------------------------|
-| Poly Studio X30 | `3.9.0` | Aggiornamento #2F 2021   |
-| Poly Studio X50 | `3.9.0` | Aggiornamento #2F 2021   |
-| Poly TC8        | `3.9.0`          | Aggiornamento #2F 2021   |
+| Poly Studio X30 | `3.9.0` | Aggiornamento 2021 #2F   |
+| Poly Studio X50 | `3.9.0` | Aggiornamento 2021 #2F   |
+| Poly TC8        | `3.9.0`          | Aggiornamento 2021 #2F   |
 | Poly Studio X30 | `3.8.0`          | Aggiornamento 2021 #2    |
 | Poly Studio X50 | `3.8.0`          | Aggiornamento 2021 #2    |
 | Poly TC8        | `3.8.0`          | Aggiornamento 2021 #2    |
@@ -284,7 +284,8 @@ Di seguito sono riportate le versioni più Microsoft Teams dell'app Panels e del
 
 |Rilascio del prodotto| Data di rilascio | Microsoft Teams'app | Portale aziendale versione | Versione dell'agente di amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
-|Aggiornamento 2021 #1  |12 agosto 2021 |`1449/1.0.97.2021070601`|`5.0.5211.0`            |  `268`|
+|Aggiornamento 2022 #1  | Febuary 22, 2022 |`1449/1.0.96.2021726501` | `5.0.5304.0 `  | `322` |
+|Aggiornamento 2021 #1  | 12 agosto 2021 |`1449/1.0.97.2021070601`   | `5.0.5211.0`   |  `268`|
 
 #### <a name="firmware-versions"></a>Versioni firmware
 
@@ -292,8 +293,9 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware | Rilascio del prodotto incluso|
 |:--------------|:-----------------|:-------------------------|
-|Crestron -TSS770| `1.004.0115` |Aggiornamento 2021 #1 |
-|Crestron-TSS1070 | `1.004.0115` |Aggiornamento 2021 #1 |
+|Yealink RoomPanel | ` 147.15.0.29 ` | Aggiornamento 2022 #1 |
+|Crestron -TSS770  | `1.004.0115` |Aggiornamento 2021 #1 |
+|Crestron-TSS1070  | `1.004.0115` |Aggiornamento 2021 #1 |
 |Yealink RoomPanel | `147.15.0.17` |Aggiornamento 2021 #1 |
 |Utilità di pianificazione di Logitech Tap | `1.5.209` |Aggiornamento 2021 #1 |
 
