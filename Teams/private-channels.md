@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: edf3fc2933bf51f3c5966fa8e021fe0ff50de39b
-ms.sourcegitcommit: 2ddbaecb0bb7776dc5ab88727b1335e7e46d3704
+ms.openlocfilehash: 2ff886835258d9508e2cbe7c977ab5437d87129e
+ms.sourcegitcommit: e9b0a274fdfee3d5bc8211cb099155546b281fe0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62881551"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "62926309"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -102,9 +102,9 @@ Se un canale privato o un team che contiene un canale privato viene ripristinato
 >
 > Altre informazioni sulla gestione dei [siti dei team connessi a Microsoft Teams](/SharePoint/teams-connected-sites).
 
-## <a name="private-channel-message-compliance-records"></a>Record di conformità dei messaggi del canale privato
+## <a name="compliance-copies-of-private-channel-messages"></a>Copie di conformità dei messaggi del canale privato
 
-I record per i messaggi inviati in un canale privato vengono recapitati nella cassetta postale di tutti i membri del canale privato, anziché in una cassetta postale di gruppo. I titoli dei record vengono formattati in modo da indicare da quale canale privato sono stati inviati.
+Le copie di conformità dei messaggi inviati in un canale privato vengono recapitate nella cassetta postale di tutti i membri del canale privato, invece che in una cassetta postale del gruppo. I titoli delle copie di conformità sono formattati per indicare il canale privato da cui sono state inviate.
 
 Per altre informazioni su come eseguire una ricerca di eDiscovery per i messaggi del canale privato, vedere [eDiscovery di canali privati](ediscovery-investigation.md#ediscovery-of-private-channels).
 
