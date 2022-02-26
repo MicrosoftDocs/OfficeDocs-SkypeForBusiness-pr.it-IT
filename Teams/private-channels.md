@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: 2ff886835258d9508e2cbe7c977ab5437d87129e
-ms.sourcegitcommit: e9b0a274fdfee3d5bc8211cb099155546b281fe0
+ms.openlocfilehash: 2127ada4a289a04176a2ae743299c3176df4a661
+ms.sourcegitcommit: 766199440a152d97c95c2c45b7c4654815e64d9a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "62926309"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "62963397"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -88,8 +88,7 @@ Nella tabella seguente sono illustrate le azioni che i proprietari, i membri e g
 Ogni canale privato include una siti di SharePoint. La raccolta siti separata consente di garantire l'accesso ai file del canale privato solo ai membri del canale privato. Questi siti vengono creati con una raccolta documenti per impostazione predefinita e possono essere facilmente migliorate per ottenere siti completi tramite l'[interfaccia di gestione dei siti](https://support.office.com/article/A2F2A5C2-093D-4897-8B7F-37F86D83DF04). Ogni sito viene creato nella stessa area geografica del sito del team padre. Questi siti semplificati hanno un ID modello personalizzato, "TEAMCHANNEL#0", per semplificare la gestione con PowerShell e API Graph. 
 
 > [!NOTE]
-> Solo gli utenti con autorizzazioni di proprietario o membro concesse in Microsoft Teams avranno accesso al contenuto nel sito del canale privato.
-> I siti di SharePoint del canale privato creati dopo il 28 giugno 2021 avranno l'ID modello personalizzato TEAMCHANNEL#1.
+> Solo le persone con autorizzazioni di proprietario o membro nel canale avranno accesso al contenuto nel sito del canale condiviso. Solo le persone con i permessi di proprietario o membro nel canale avranno accesso al contenuto nel sito del canale condiviso.
 
 Un sito di un canale privato sincronizza la classificazione dei dati ed eredita le autorizzazioni di accesso guest dal sito del team padre. L'appartenenza ai gruppi dei membri e di proprietari al sito viene mantenuta sincronizzata con quella ai canali privati in Teams. Le autorizzazioni del sito per un sito di canale privato non possono essere gestite in modo indipendente tramite SharePoint. 
 
