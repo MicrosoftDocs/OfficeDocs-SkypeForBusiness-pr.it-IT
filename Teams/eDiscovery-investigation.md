@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b78ec3ad6741d2c7f83d7732400d5f1154747d5e
-ms.sourcegitcommit: 5ca04ee10e3f254e1b24506de116591fdfd51d18
+ms.openlocfilehash: 5a35afa53a8f94a5d0106e67d2f9f87eacfaca63
+ms.sourcegitcommit: edf68b7ac4f1861259a0990157ee6ae84f68ca42
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "62929161"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "62974463"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Condurre un'indagine di eDiscovery sul contenuto in Microsoft Teams
 
@@ -47,7 +47,7 @@ Non tutto Teams contenuto è eDiscoverable. La tabella seguente mostra i tipi di
 |Emoji, GIF e adesivi | Sì | |
 |Notifiche del feed | No | |
 |Immagini incorporate | Sì | |
-|Componenti a ciclo continuo| No|I messaggi di chat che contengono un componente loop sono ricercabili. Tuttavia, il contenuto dei componenti del ciclo non viene indicizzato per la ricerca e non viene restituito nei risultati della ricerca. Se i risultati della ricerca contengono un messaggio con un componente a ciclo continuo, è possibile visualizzare il contenuto del componente a ciclo continuo.  |
+|Componenti a ciclo continuo| Sì|Il contenuto di un componente a ciclo continuo viene salvato in un file fluido archiviato nell'account OneDrive for Business dell'utente che invia il componente loop. Questo significa che è necessario includere OneDrive come origine dati durante la ricerca di contenuto nei componenti a ciclo continuo. |
 |Conversazioni istantanee delle riunioni | Sì | |
 |Metadati <sup>riunione1</sup> | Sì |  |
 |Nome del canale | Sì | |
@@ -109,7 +109,7 @@ Prima di eseguire questa procedura, installare [SharePoint Online Management She
     Get-SPOSite
     ```
 
-2. Eseguire lo script di PowerShell seguente per ottenere un elenco di tutti gli URL della raccolta siti SharePoint associati ai canali privati del team e all'ID del gruppo di team padre.
+2. Eseguire lo script di PowerShell seguente per ottenere un elenco di tutti gli URL SharePoint raccolta siti associati ai canali privati del team e all'ID del gruppo di team padre.
 
     ```PowerShell
     $sites = get-sposite -template "teamchannel#0"
@@ -124,11 +124,11 @@ Prima di eseguire questa procedura, installare [SharePoint Online Management She
     foreach ($site in $sites) {$x= Get-SpoSite -Identity $site.url -Detail; if ($x.RelatedGroupId -eq $groupID) {$x.RelatedGroupId;$x.url}}
     ```
 > [!NOTE]
-> SharePoint per i canali privati creati dopo il 28 giugno 2021 usare il valore `teamchannel#1` per l'ID modello personalizzato. Quindi, per i canali privati creati dopo questa data, usare il valore `teamchannel#1` quando si eseguono i due script precedenti.
+> SharePoint per i canali privati creati dopo il 28 giugno 2021 usare il valore per `teamchannel#1` l'ID modello personalizzato. Quindi, per i canali privati creati dopo questa data, usare il valore `teamchannel#1` quando si eseguono i due script precedenti.
 
 ### <a name="include-private-channel-messages-in-an-ediscovery-search"></a>Includere messaggi di canale privato in una ricerca eDiscovery
 
-Prima di eseguire questa procedura, verificare di avere installato l'ultima versione [del modulo di PowerShell Teams versione](teams-powershell-overview.md) più recente.
+Prima di eseguire questa procedura, assicurarsi di avere installato l'ultima versione del modulo [di PowerShell Teams powershell](teams-powershell-overview.md).
 
 1. Eseguire il comando seguente per ottenere l'ID gruppo del team che contiene i canali privati in cui eseguire la ricerca.
 
@@ -155,13 +155,13 @@ Prima di eseguire questa procedura, verificare di avere installato l'ultima vers
 
 ## <a name="search-for-content-for-guest-users"></a>Cercare contenuto per gli utenti guest
 
-È possibile usare gli strumenti di eDiscovery per cercare Teams contenuti correlati agli utenti guest dell'organizzazione. Teams contenuto della chat associato a un utente guest viene mantenuto in una posizione di archiviazione basata sul cloud e può essere cercato con eDiscovery. Ciò include la ricerca di contenuto in conversazioni chat 1:1 e 1:N in cui un utente guest è un partecipante con altri utenti dell'organizzazione. È anche possibile cercare messaggi di canale privato in cui un utente guest è un partecipante e cercare contenuti nelle *conversazioni di chat guest:guest* in cui gli unici partecipanti sono utenti guest.
+È possibile usare gli strumenti di eDiscovery per cercare Teams contenuti correlati agli utenti guest dell'organizzazione. Teams contenuto della chat associato a un utente guest viene mantenuto in una posizione di archiviazione basata sul cloud e può essere cercato usando eDiscovery. Ciò include la ricerca di contenuto in conversazioni chat 1:1 e 1:N in cui un utente guest è un partecipante con altri utenti dell'organizzazione. È anche possibile cercare messaggi di canale privato in cui un utente guest è un partecipante e cercare contenuti nelle *conversazioni di chat guest:guest* in cui gli unici partecipanti sono utenti guest.
 
 Per cercare contenuto per gli utenti guest:
 
-1. Connessione a Azure AD PowerShell. Per istruzioni, vedere la sezione "Connessione con la Azure Active Directory PowerShell" in Connessione [per Microsoft 365 con PowerShell](/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module). Assicurarsi di completare i passaggi 1 e 2 nell'argomento precedente.
+1. Connessione per Azure AD PowerShell. Per istruzioni, vedere la sezione "Connessione con la Azure Active Directory PowerShell" in Connessione [per Microsoft 365 con PowerShell](/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module). Assicurarsi di completare i passaggi 1 e 2 nell'argomento precedente.
 
-2. Dopo aver eseguito correttamente la connessione Azure AD PowerShell, eseguire il comando seguente per visualizzare il nome dell'entità utente (UPN) per tutti gli utenti guest dell'organizzazione. È necessario usare l'UPN dell'utente guest quando si crea la ricerca nel passaggio 4.
+2. Dopo aver eseguito la connessione a Azure AD PowerShell, eseguire il comando seguente per visualizzare il nome dell'entità utente (UPN) per tutti gli utenti guest dell'organizzazione. È necessario usare l'UPN dell'utente guest quando si crea la ricerca nel passaggio 4.
 
    ```powershell
    Get-AzureADUser -Filter "userType eq 'Guest'" -All $true | FL UserPrincipalName
@@ -170,7 +170,7 @@ Per cercare contenuto per gli utenti guest:
    > [!TIP]
    > Invece di visualizzare un elenco di nomi delle entità utente sullo schermo del computer, è possibile reindirizzare l'output del comando a un file di testo. A questo scopo, aggiungere al `> filename.txt` comando precedente. Il file di testo con i nomi delle entità utente verrà salvato nella cartella corrente.
 
-3. In un'altra Windows PowerShell, connettersi a PowerShell & Centro sicurezza e conformità. Per istruzioni, vedere Connessione [powershell del Centro sicurezza & conformità](/powershell/exchange/connect-to-scc-powershell). È possibile connettersi con o senza usare l'autenticazione a più fattori.
+3. In un'altra Windows PowerShell, connettersi a PowerShell & Centro sicurezza e conformità. Per istruzioni, vedere accedere [Connessione powershell del Centro sicurezza & conformità](/powershell/exchange/connect-to-scc-powershell). È possibile connettersi con o senza usare l'autenticazione a più fattori.
 
 4. Creare una ricerca di contenuto che cerca tutto il contenuto, ad esempio i messaggi di chat e i messaggi di posta elettronica, in cui l'utente guest specificato era un partecipante eseguendo il comando seguente.
 
@@ -223,7 +223,7 @@ Quando si visualizza il contenuto della scheda nei risultati della ricerca conte
 ![Stesso contenuto della scheda nei risultati di una ricerca contenuto.](media/CardContentEdiscoverySearchResults.png)
 
 > [!NOTE]
-> Per visualizzare immagini dal contenuto della scheda nei risultati della ricerca in questo momento , ad esempio i segni di spunta nello screenshot precedente, è necessario accedere a Teams (https://teams.microsoft.com)in un'altra scheda nella stessa sessione del browser che si usa per visualizzare i risultati della ricerca. In caso contrario, vengono visualizzati i segnaposto immagine.
+> Per visualizzare immagini dal contenuto della scheda nei risultati della ricerca in questo momento, ad esempio i segni di spunta nello screenshot precedente, è necessario accedere a Teams (https://teams.microsoft.com)in un'altra scheda nella stessa sessione del browser che si usa per visualizzare i risultati della ricerca. In caso contrario, vengono visualizzati i segnaposto immagine.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
