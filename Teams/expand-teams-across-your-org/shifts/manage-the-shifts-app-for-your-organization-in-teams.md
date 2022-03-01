@@ -12,7 +12,7 @@ searchScope:
 - Microsoft Teams
 - Microsoft Cloud for Healthcare
 - Microsoft Cloud for Retail
-description: Informazioni su come configurare e gestire l'app Turni in Teams per i lavoratori in prima linea nell'organizzazione.
+description: Informazioni su come configurare e gestire l'app Turni in Teams per i dipendenti in prima linea nell'organizzazione.
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
@@ -24,12 +24,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dd40888ec8f1f7c5c05c3f5a2bf5a867ece93a65
-ms.sourcegitcommit: 10bee789272e648ea1e93d7d7c27ec645d0a8bdd
+ms.openlocfilehash: d38af9f55f1620a1f38ad5860c71366201bb9444
+ms.sourcegitcommit: 2044fdcb0c5db10dbc77c5d66e382c1b927ccdc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "62918879"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "63039904"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Turni per l'organizzazione in Microsoft Teams
 
@@ -49,13 +49,14 @@ L'app Turni in Microsoft Teams mantiene i dipendenti in prima linea connessi e s
 
 Turni è disponibile in tutte le SKU Enterprise dove Teams è disponibile.
 
+> [!NOTE]
+> I turni sono disponibili in Government Community Cloud (GCC), ma non in GCC High o DoD.
+
 ## <a name="location-of-shifts-data"></a>Posizione dei dati di Turni
 
-I dati di Turni sono attualmente archiviati in Azure nei data center in America del Nord, Europa occidentale e Asia Pacifico. Per altre informazioni sulla posizione di archiviazione dei dati, vedere [Dove sono i dati?](http://o365datacentermap.azurewebsites.net/)
+I dati dei turni sono attualmente archiviati in Azure in data center in Asia Pacifico (APAC), Unione Europea (UE) e Nord America. Per altre informazioni sulla posizione di archiviazione dei dati, vedere [Dove sono i dati?](http://o365datacentermap.azurewebsites.net/)
 
-## <a name="shifts-data"></a>Sposta i dati
-
-Per altre informazioni sulla posizione in cui vengono archiviati i dati di Shifts e sulla conservazione, il recupero e la crittografia dei dati di Shifts, vedere Domande frequenti sui [dati relativi ai turni](shifts-data-faq.md).
+Per altre informazioni sui dati di Shifts, inclusi l'archiviazione, la conservazione, il recupero e la crittografia dei dati di Shifts, vedere Domande frequenti sui [dati relativi ai turni](shifts-data-faq.md).
 
 ## <a name="set-up-shifts"></a>Configurare Turni
 
@@ -88,9 +89,10 @@ Un [pacchetto di](../../manage-policy-packages.md) criteri in Teams è una racco
 
 Prima di poter eseguire ricerche nel log di controllo, è necessario attivare il controllo nel [Centro sicurezza e conformità](https://protection.office.com). Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014). Tenere presente che i dati di controllo sono disponibili solo dal momento in cui è stato attivato il controllo.
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-articles"></a>Articoli correlati
 
 - [Turni per Teams](../shifts-for-teams-landing-page.md)
-- [Guida di Turni per i lavoratori in prima linea](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b)
+- [Domande frequenti sui dati relativi ai turni](shifts-data-faq.md)
 - [Turni connettori](shifts-connectors.md)
+- [Guida di Turni per i lavoratori in prima linea](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b)
 - [Assegnare i criteri agli utenti in Teams](../../policy-assignment-overview.md)

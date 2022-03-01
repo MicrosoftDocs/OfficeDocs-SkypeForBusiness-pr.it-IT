@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Scopri quali Session Border Controller (SBC) sono stati certificati per l'instradamento diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 69add2b195da03dee69b2a33583b5dbed8f614e8
-ms.sourcegitcommit: 5e9b50cd1b513f06734be6c024ac06d293b27089
+ms.openlocfilehash: 3805a87171a770298e41337dfdd569c1b7d76985
+ms.sourcegitcommit: 2044fdcb0c5db10dbc77c5d66e382c1b927ccdc4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518928"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "63039994"
 ---
 # <a name="session-border-controllers-certified-for-direct-routing"></a>Session Border Controller certificati per l'instradamento diretto
 
@@ -173,9 +173,9 @@ Nella tabella seguente sono elencati i dispositivi verificati per l'interoperabi
 | [Ribbon](https://ribboncommunications.com/solutions/enterprise-solutions/microsoft-solutions) |   [EdgeMarc 6000. Versione software: 16.1.1](https://ribboncommunications.com/products/service-provider-products/cloud-and-edge/session-border-controllers/session-border-controllers-edge-appliances)   |     &#10004;     |
 | [TE-SYSTEMS](https://www.anynode.de/anynode-and-microsoft-teams/) |  anynode con Grandstream GXW42xx (V1.0.7.10) |     &#10004;     |
   
-Vedere [UserVoice](https://microsoftteams.uservoice.com) per inviare feedback su Teams, ad esempio idee per nuove funzionalità.
-
-
-[!INCLUDE [uservoice-disclaimer-note](includes/uservoice-disclaimer-note.md)]
 
 La certificazione è concessa a una versione principale. Ciò significa che è supportato il firmware con qualsiasi numero nel firmware SBC che segue la versione principale.
+
+Per inviare feedback su Teams, ad esempio idee su nuove funzionalità, vedere il [portale sui feedback Microsoft](https://feedbackportal.microsoft.com/).
+
+

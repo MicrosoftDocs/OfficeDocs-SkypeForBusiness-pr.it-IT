@@ -22,12 +22,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2df5c465c9115dce47ee9e80ea649768606c338f
-ms.sourcegitcommit: 10bee789272e648ea1e93d7d7c27ec645d0a8bdd
+ms.openlocfilehash: 3f26413aa746b37474e7035e313fc8ffff2fb93c
+ms.sourcegitcommit: 2044fdcb0c5db10dbc77c5d66e382c1b927ccdc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "62918954"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "63039954"
 ---
 # <a name="shifts-data-faq"></a>Domande frequenti sui dati relativi ai turni
 
@@ -41,7 +41,7 @@ Attualmente, Shifts offre la residenza dei dati in Australia, Canada, Francia, G
 
 ## <a name="can-i-choose-where-shifts-data-is-stored"></a>È possibile scegliere dove archiviare i dati di Shifts?
 
-La prima volta che si configura Teams, si sceglie un paese o un'area geografica, che è impostato a livello di abbonamento. Turni rispetta questa selezione e usa le impostazioni locali e l'area geografica impostate in Teams se l'area geografica è supportare. Se non ci si trova ancora in quell'area geografica, i dati vengono archiviati in un'area geografica vicina che viene supportato. In futuro si prevede di eseguire la migrazione dei dati esistenti, se archiviati in un'area geografica vicina, all'area geografica di cui è stato eseguito il provisioning in Teams.
+Quando si configura il Teams, si sceglie un paese o un'area geografica, che viene impostato a livello di abbonamento. I turni rispettano questa selezione e usa le impostazioni locali e l'area geografica impostate in Teams se l'area geografica è in uso. Se non ci si trova ancora in quell'area geografica, i dati vengono archiviati in un'area geografica vicina che viene supportato. In futuro si prevede di eseguire la migrazione dei dati esistenti, se archiviati in un'area geografica vicina, all'area di cui è stato eseguito il provisioning in Teams.
 
 ## <a name="can-i-access-and-export-or-delete-a-users-personal-data-in-shifts"></a>È possibile accedere ed esportare o eliminare i dati personali di un utente in Turni?
 
@@ -61,7 +61,7 @@ Non è disponibile alcuna opzione per eliminare solo i dati di Shifts. Se si eli
 
 ## <a name="can-i-recover-a-shifts-schedule-that-was-deleted"></a>È possibile recuperare una pianificazione di Turni eliminata?
 
-È possibile recuperare una pianificazione eliminata se viene ripristinato Microsoft 365 gruppo di lavoro che la Teams(o il team in Teams).
+È possibile recuperare una pianificazione eliminata se viene ripristinato Microsoft 365 gruppo di lavoro che la Teams di backup.
 
 Per impostazione predefinita, un gruppo di Microsoft 365 viene mantenuto per 30 giorni. Questo periodo di 30 giorni è denominato "eliminazione soffice" perché è comunque possibile ripristinare il gruppo. Per altre informazioni, vedere [Ripristinare un gruppo Microsoft 365 eliminato](/microsoft-365/admin/create-groups/restore-deleted-group?view=o365-worldwide&tabs=admin-center).
 
@@ -69,19 +69,15 @@ Per impostazione predefinita, un gruppo di Microsoft 365 viene mantenuto per 30 
 
 Attualmente, Shifts non supporta criteri di conservazione personalizzati.
 
-Per altre informazioni sui criteri di conservazione in Teams, vedere Informazioni [](/microsoft-365/compliance/retention-policies-teams) sulla conservazione per Teams e Gestire i criteri di [conservazione per](../../retention-policies.md) Teams.
+Per altre informazioni sui criteri di conservazione in Teams, vedere Informazioni sulla [](/microsoft-365/compliance/retention-policies-teams) conservazione per Teams e Gestire i criteri di conservazione [per](../../retention-policies.md) Teams.
 
 ## <a name="can-i-retrieve-shifts-data-for-a-user-whose-license-was-revoked"></a>È possibile recuperare i dati di Turni per un utente la cui licenza è stata revocata?
 
 Oggi non è possibile recuperare dati per un utente la cui licenza è stata revocata. Questa funzionalità è un elemento su cui stiamo lavorando.
 
-## <a name="is-shifts-supported-in-government-cloud-community-gcc-environments"></a>I turni sono supportati negli ambienti Government Cloud Community (GCC) ?
-
-I turni sono disponibili in GCC, ma non in GCC High o DoD.
-
 ## <a name="what-type-of-encryption-does-shifts-use-for-data-at-rest-and-in-transit"></a>Che tipo di crittografia usa Shifts per i dati in pausa e in transito?
 
-I dati dei turni vengono crittografati a riposo da Azure Cosmos DB e azure Archiviazione. Per altre informazioni, vedere [Crittografia dei dati di Azure in](/azure/security/fundamentals/encryption-atrest) pausa e Crittografia [dei dati in Azure Cosmos DB](/azure/cosmos-db/database-encryption-at-rest).
+I dati dei turni vengono crittografati a riposo da Azure Cosmos DB e Azure Archiviazione. Per altre informazioni, vedere [Crittografia dei dati di Azure in](/azure/security/fundamentals/encryption-atrest) pausa e Crittografia [dei dati in Azure Cosmos DB](/azure/cosmos-db/database-encryption-at-rest).
 
 Turni segue le Microsoft 365 per la crittografia dei dati in transito. Per altre informazioni, vedere [Crittografia per i dati in transito](/compliance/assurance/assurance-encryption-in-transit).
 
@@ -99,7 +95,7 @@ Per vedere quali campi sono stati modificati, è possibile cercare nel log di co
 
 ## <a name="my-organization-uses-a-workforce-management-system-for-scheduling-can-we-integrate-with-and-access-shifts-data"></a>L'organizzazione usa un sistema di gestione della forza lavoro per la pianificazione. È possibile eseguire l'integrazione con i dati di Shifts e accedervi?
 
-I turni Graph API consentono di integrare i dati di Turni con sistemi WFM (External Workforce Management). Per altre informazioni, vedere [Graph API](/graph/api/resources/shift).
+Le API Graph turni consentono di integrare i dati di Turni con sistemi WFM (External Workforce Management). Per altre informazioni, vedere [Graph API](/graph/api/resources/shift).
 
 Sono inoltre disponibili connettori shift gestiti e connettori Shifts open-source. Con questi connettori è possibile integrare il sistema WFM direttamente con Turni. Per altre informazioni sui connettori Shifts e sui sistemi WFM supportati, vedere [Turni connettori](shifts-connectors.md).
 

@@ -18,18 +18,18 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 08b3b0ddfa3d53bebb9c3e628347e99d1016a133
-ms.sourcegitcommit: eb5fadedacbf4651ed5b05f1b0d6abf57e9eda2d
+ms.openlocfilehash: dfe4a64799599b690573f6faae9842ce10d0c470
+ms.sourcegitcommit: 2044fdcb0c5db10dbc77c5d66e382c1b927ccdc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "62960038"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "63039964"
 ---
 # <a name="microsoft-staffhub-has-been-retired"></a>Microsoft StaffHub è stato ritirato
 
-A partire dal 30 giugno 2020, Microsoft StaffHub è stato ritirato. Stiamo integrando le funzionalità di StaffHub in Microsoft Teams. Al momento, Teams include l’app Turni per la gestione delle pianificazioni. Altre funzionalità verranno implementate nel corso del tempo.
+A partire dal 30 giugno 2020, Microsoft StaffHub è stato ritirato. Stiamo integrando le funzionalità di StaffHub in Microsoft Teams. Oggi, Teams'app Turni per la gestione della pianificazione e altre funzionalità verranno implementazioni nel tempo.
 
-Queste modifiche fanno parte dei nostri continui sforzi per dare a ogni dipendente la possibilità di Microsoft 365. Grazie alle funzionalità di Frontline Workers ora disponibili in Teams, ogni dipendente dell'organizzazione potrà usare Teams per semplificare la propria giornata lavorativa, collaborare con i colleghi e accedere a informazioni e competenze per aiutarli a lavorare al meglio.
+Questi cambiamenti fanno parte dei nostri continui sforzi per dare a ogni dipendente la possibilità di Microsoft 365. Grazie alle funzionalità di Frontline Workers ora disponibili in Teams, ogni dipendente dell'organizzazione potrà usare Teams per semplificare la propria giornata lavorativa, collaborare con i colleghi e accedere a informazioni e competenze per aiutarli a lavorare al meglio.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -57,7 +57,7 @@ Per accedere a un team di StaffHub da Turni in Teams, è necessario spostare il 
 
 Teams creati con StaffHub e non spostati in Teams non possono più essere visualizzati o spostati a partire dal 30 giugno 2020 quando StaffHub è stato ritirato. Tuttavia, è possibile iniziare a usare Teams in qualsiasi momento e creare una pianificazione dei turni nell'app Turni.
 
-Se a un gruppo di Office 365 era associato un team di StaffHub che non è stato spostato in Teams e ora si vuole creare una pianificazione turni di Teams associata a tale gruppo di Office 365, contattare il supporto.
+Se a un gruppo di Office 365 era associato un team di StaffHub che non è stato spostato in Teams e ora si vuole creare una pianificazione turni di Teams associata a quel gruppo di Office 365, contattare il supporto.
 
 ### <a name="about-shifts"></a>Informazioni sui turni
 
@@ -69,14 +69,17 @@ L'app Turni in Teams è uno strumento di gestione della pianificazione che manti
 
 Turni è disponibile in tutte le SKU Enterprise dove Teams è disponibile.
 
-#### <a name="how-do-i-get-shifts"></a>Come si ottengono i turni? 
+> [!NOTE]
+> I turni sono disponibili in Government Community Cloud (GCC), ma non in GCC High o DoD.
 
-Se si è già in un piano che include Turni, è possibile iniziare a usare i turni oggi come parte di Teams. Vedere [Introduzione a Turni](https://support.office.com/article/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6).
+#### <a name="how-do-i-get-shifts"></a>Come si ottengono i turni?
+
+Se si è già in un piano che include turni, è possibile iniziare a usare i turni oggi come parte di Teams. Vedere [Introduzione a Turni](https://support.office.com/article/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6).
 
 #### <a name="which-devices-or-platforms-is-shifts-available-on"></a>In quali dispositivi o piattaforme è disponibile Shifts?
 
 Turni è disponibile nel client Web Teams, Teams desktop e nei client Teams mobili (iOS e Android).
- 
+
 #### <a name="are-there-differences-between-the-shifts-desktop-and-web-apps-and-the-mobile-ios-and-android-apps"></a>Esistono differenze tra le app desktop e Web Shifts e le app per dispositivi mobili (iOS e Android)?
 
 Per i responsabili, le app desktop e Web sono ottimizzate per creare team, aggiungere membri, creare e pubblicare pianificazioni e condividere contenuti con il team. I responsabili usano in genere l'app per dispositivi mobili per approvare le richieste, inviare messaggi rapidi al team, chiamare un membro del team e collaborare in viaggio. 
@@ -92,7 +95,7 @@ La funzionalità di base è la stessa tra le app Shifts per iOS e Android. Esist
 Turni funziona su tutti i browser supportati Teams che includono le versioni più recenti di Microsoft Edge, Internet Explorer, Google Chrome e Mozilla Firefox. Per altre informazioni, vedere [Ottenere client per Teams](../../get-clients.md).
 
 > [!Note]
-> Microsoft 365 le app e i servizi di Microsoft 365 non supportano Internet Explorer 11 a partire dal 17 agosto 2021 (Microsoft Teams non supporterà Internet Explorer 11 in precedenza, a partire dal 30 novembre 2020). [Altre informazioni](https://aka.ms/AA97tsw). Si noti che Internet Explorer 11 rimarrà un browser supportato. Internet Explorer 11 è un componente del sistema operativo Windows e segue i criteri relativi al [](/lifecycle/faq/internet-explorer-microsoft-edge) ciclo di vita per il prodotto in cui è installato. 
+> Microsoft 365 le app e i servizi non supportano Internet Explorer 11 a partire dal 17 agosto 2021 (Microsoft Teams non supporterà Internet Explorer 11 in precedenza, a partire dal 30 novembre 2020). [Altre informazioni](https://aka.ms/AA97tsw). Si noti che Internet Explorer 11 rimarrà un browser supportato. Internet Explorer 11 è un componente del sistema operativo Windows e segue i criteri relativi al [](/lifecycle/faq/internet-explorer-microsoft-edge) ciclo di vita per il prodotto in cui è installato. 
 
 #### <a name="what-languages-does-shifts-support"></a>Quali lingue supporta Turni?
 
@@ -100,15 +103,15 @@ Turni è disponibile nelle lingue seguenti: cinese semplificato, inglese (Stati 
 
 #### <a name="where-is-shifts-data-stored"></a>Dove vengono archiviati i dati di Shifts?
 
-I dati dei turni vengono archiviati in Azure in data center in Nord America ed Europa occidentale. SharePoint contenuto sfrutta Microsoft 365 gruppi e usa lo stesso spazio di archiviazione e supporto.
+I dati dei turni sono attualmente archiviati in Azure in data center in Asia Pacifico (APAC), Unione Europea (UE) e Nord America. Per altre informazioni sulla posizione di archiviazione dei dati, vedere [Dove sono i dati?](http://o365datacentermap.azurewebsites.net/)
 
-Per altre informazioni, vedere [Posizione dei dati turni](manage-the-shifts-app-for-your-organization-in-teams.md#location-of-shifts-data).
+Per altre informazioni sui dati di Shifts, inclusi l'archiviazione, la conservazione, il recupero e la crittografia dei dati di Shifts, vedere Domande frequenti sui [dati relativi ai turni](shifts-data-faq.md).
 
 #### <a name="where-can-i-learn-more-about-shifts"></a>Dove si possono trovare altre informazioni su Turni?
 
 Per informazioni sul prodotto, vedere [https://products.office.com/microsoft-teams/staff-scheduling-software](https://products.office.com/microsoft-teams/staff-scheduling-software).
 
-Per istruzioni per l'amministratore, vedere [Gestire l'app Turni per l'organizzazione in Teams](manage-the-shifts-app-for-your-organization-in-teams.md)
+Per istruzioni sull'amministratore, vedere [Gestire l'app Turni per l'organizzazione in Teams](manage-the-shifts-app-for-your-organization-in-teams.md)
 
 Per assistenza per l'utente finale, vedere la [Guida di Turni per i lavoratori in prima linea](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b).
 
@@ -118,9 +121,9 @@ Ogni utente deve avere una licenza Microsoft 365 o Office 365 da un piano idoneo
 
 #### <a name="how-do-i-enable-teams-in-my-organization"></a>Come si abilitano le Teams nell'organizzazione?
 
-Per impostazione predefinita, Teams è abilitato per tutte le organizzazioni. È possibile assegnare Teams licenze agli utenti per controllare l'accesso individuale Teams. Per altre informazioni, vedere [Abilitare le Teams nell'organizzazione](../../Office-365-set-up.md) e [Gestire l'accesso degli utenti Teams](../../user-access.md).
+Per impostazione predefinita, Teams è abilitato per tutte le organizzazioni. È possibile assegnare Teams licenze agli utenti per controllare l'accesso individuale Teams. Per altre informazioni, vedere [Abilitare i Teams nell'organizzazione](../../Office-365-set-up.md) e [Gestire l'accesso degli utenti Teams](../../user-access.md).
 
-#### <a name="what-if-i-currently-have-skype-for-business-enabled-in-my-organization-but-not-teams"></a>Cosa succede se attualmente sono Skype for Business all'interno dell'organizzazione, ma non Teams?
+#### <a name="what-if-i-currently-have-skype-for-business-enabled-in-my-organization-but-not-teams"></a>Cosa succede se attualmente sono Skype for Business abilitati all'interno dell'organizzazione, ma non Teams?
 
 Teams supporta la coesistenza con Skype for Business. Per altre informazioni, vedere Informazioni sulla [coesistenza e l'interoperabilità di Teams e Skype for Business](../../teams-and-skypeforbusiness-coexistence-and-interoperability.md) e indicazioni sulla migrazione e l'interoperabilità per le organizzazioni che usano Teams insieme a [Skype for Business](../../migration-interop-guidance-for-teams-with-skype.md).
 
@@ -138,9 +141,9 @@ L'eliminazione di una pianificazione è collegata all'eliminazione di un team. S
 
 #### <a name="what-powers-the-file-sharing-capability-in-teams-where-are-files-stored"></a>Quali sono le funzionalità di condivisione dei file in Teams? Dove sono archiviati i file?
 
-La funzionalità di condivisione dei file, che consente a un manager di distribuire file ai membri del team, è basata sul back-end SharePoint Online. Quando viene creato un team, viene eseguito automaticamente il provisioning Microsoft 365 gruppo di lavoro per il team in background.
+La funzionalità di condivisione dei file, che consente a un responsabile di distribuire file ai membri del team, è basata sul back-end SharePoint Online. Quando viene creato un team, Microsoft 365 viene eseguito automaticamente il provisioning di un gruppo di lavoro per il team in background.
 
-Per altre informazioni, vedere [Come SharePoint Online e OneDrive for Business con Teams](../../SharePoint-OneDrive-interact.md).
+Per altre informazioni, vedere [Come SharePoint online e OneDrive for Business con Teams](../../SharePoint-OneDrive-interact.md).
  
 #### <a name="is-there-integration-between-shifts-and-the-outlook-calendar-can-i-export-a-schedule-to-a-calendar"></a>Esiste un'integrazione tra Turni e il Outlook calendario? È possibile esportare una pianificazione in un calendario?
  
@@ -156,13 +159,13 @@ Per altre informazioni, vedere [Gestire l'app Turni per l'organizzazione in Team
 
 È possibile gestire Teams tramite il modulo Microsoft Teams PowerShell e il modulo Skype for Business PowerShell. Per altre informazioni, vedere panoramica [Teams PowerShell](../../teams-powershell-overview.md). Al momento non sono disponibili cmdlet di PowerShell specifici per la gestione dei turni.  
 
-Se ti interessa, inviaci una richiesta tramite il portale Teams [feedback](https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472).
+Se si è interessati, inviare una richiesta tramite il portale Teams [feedback](https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472).
 
 [!INCLUDE [uservoice-disclaimer-note](../../includes/uservoice-disclaimer-note.md)]
 
 #### <a name="is-reporting-available-to-view-shifts-usage-across-my-organization"></a>I report sono disponibili per visualizzare l'utilizzo dei turni nell'intera organizzazione?
 
-Poiché Turni è un'app in Teams, è possibile visualizzare l'utilizzo tramite Teams report. Per altre informazioni, vedere la creazione [di Teams report nell'interfaccia](../../teams-analytics-and-reports/teams-reporting-reference.md) di amministrazione di Microsoft Teams e Teams report attività nel [interfaccia di amministrazione di Microsoft 365](../../teams-activity-reports.md).
+Poiché Turni è un'app in Teams, è possibile visualizzare l'utilizzo tramite Teams report. Per altre informazioni, vedere La creazione Teams [report nell'interfaccia](../../teams-analytics-and-reports/teams-reporting-reference.md) di amministrazione di Microsoft Teams e Teams report attività nel [interfaccia di amministrazione di Microsoft 365](../../teams-activity-reports.md).
 
 #### <a name="where-can-i-provide-feedback"></a>Dove è possibile inviare commenti e suggerimenti?
   
