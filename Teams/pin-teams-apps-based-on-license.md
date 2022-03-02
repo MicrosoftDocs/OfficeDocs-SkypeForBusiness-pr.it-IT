@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 774688012d4e70a20897cd45aa78883ba7985e68
-ms.sourcegitcommit: 1190cd73656dbc9131d46e0a827e28bcd960dfc5
+ms.openlocfilehash: 2d9c316c042230237089d57c23156cf6ac5284c6
+ms.sourcegitcommit: 5b1d8d6f811fab0b350a09e5187d982f952d0edb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "62864039"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "63047196"
 ---
 # <a name="tailor-your-teams-apps-based-on-license"></a>Personalizzare le app Teams in base alla licenza
 
@@ -42,18 +42,21 @@ Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client
 
 App aggiunte per gli utenti che hanno una licenza F:
 
+- Viva Connections
 - Attività
 - Chat
 - Teams
-- Turni
+- Walkie-talkie
 - Attività
+- Turni
+- Approvazioni
 
 ## <a name="admin-controls"></a>Controlli di amministrazione
 
 > [!NOTE]
 > L'aggiunta di utenti deve essere attivata nel criterio di configurazione globale [dell'app](teams-app-setup-policies.md) (impostazione predefinita a livello di organizzazione) per l'applicazione di questa funzionalità.
 
-La funzionalità dell'esperienza per le app personalizzata è  controllata dall'impostazione Mostra app personalizzate in base alle licenze dell'app [](manage-apps.md#manage-org-wide-app-settings) a livello di organizzazione nella pagina Gestisci app dell'interfaccia di amministrazione di Teams. Se la funzionalità è attivata, tutti gli utenti dell'organizzazione che dispongono di una licenza F otterrà l'esperienza personalizzata dell'app.
+La funzionalità esperienza app personalizzata è controllata dall'impostazione  Mostra app personalizzate in base alle licenze dell'app a livello di organizzazione [](manage-apps.md#manage-org-wide-app-settings) nella pagina Gestisci app dell'interfaccia di amministrazione di Teams. Se la funzionalità è attivata, tutti gli utenti dell'organizzazione che dispongono di una licenza F otterrà l'esperienza personalizzata dell'app.
 
 Tenere presente che tutti i criteri di configurazione delle app personalizzati assegnati agli utenti hanno la precedenza. Questo significa che se a un utente è già assegnato un criterio di configurazione dell'app personalizzato, l'utente ottiene la configurazione definita nei criteri di configurazione delle app personalizzate. Per altre informazioni sul funzionamento della caratteristica con i criteri di configurazione delle app esistenti applicati nell'organizzazione, vedere la [sezione Scenari di](#scenarios) questo articolo.
 
@@ -68,7 +71,7 @@ Usare le informazioni in questa tabella per informazioni sul funzionamento della
 
 |Se...  |Quindi... |
 |---------|---------|
-|Un utente ha il criterio di configurazione dell'app globale e la funzionalità è attivata.     | L'utente ottiene l'esperienza dell'app personalizzata.        |
+|Un utente ha il criterio di configurazione dell'app globale e la funzionalità è attivata.     | L'utente ottiene l'esperienza dell'app personalizzata. Le app definite nei criteri di configurazione delle app globali sono ancora aggiunte e vengono visualizzate più in basso nell'elenco delle app aggiunte.      |
 |Un utente ha un criterio di configurazione dell'app personalizzato e la caratteristica è attivata.    |L'utente ottiene la configurazione definita nei criteri di configurazione dell'app personalizzati.          |
 |La caratteristica è attivata e si aggiornano i criteri di configurazione delle app globali.     |L'utente ottiene l'esperienza dell'app personalizzata in base alla licenza. Le app definite nei criteri di configurazione delle app globali sono ancora aggiunte e vengono visualizzate più in basso nell'elenco delle app aggiunte.          |
 |La caratteristica è disattivata.   | L'utente ottiene l'esperienza definita nei criteri di configurazione delle app globali o nei criteri di configurazione delle app personalizzati assegnati.          |

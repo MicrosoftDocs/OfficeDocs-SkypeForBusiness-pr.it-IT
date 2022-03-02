@@ -8,20 +8,25 @@ ms.service: msteams
 audience: admin
 ms.reviewer: sonua
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: high
 ms.collection:
-  - M365-collaboration
-  - m365initiative-meetings
-  - m365initiative-meetings-enabler
-  - enabler-strategic
+- M365-collaboration
+- m365initiative-meetings
+- m365initiative-meetings-enabler
+- enabler-strategic
 search.appverid: MET150
 description: Questo articolo offre informazioni sui fattori da prendere in considerazione prima di configurare eventi live in Microsoft Teams.
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: f7ce782db18c15e3b08367e0956003f7af2dde75
+ms.sourcegitcommit: 5b1d8d6f811fab0b350a09e5187d982f952d0edb
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "63047146"
 ---
-
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
 Quando si pianificano eventi live di Teams per organizzare riunioni con numerosi partecipanti nell'organizzazione, è necessario considerare diversi fattori prima di procedere alla configurazione.
@@ -181,7 +186,10 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 **Esclusioni e considerazioni**
 
 - **Posizione dei dati:** le posizioni dei dati di Teams, ad eccezione di quelle elencate sopra, non sono supportate al momento.
-- **Cina:** i partecipanti e i membri del team dell'evento non potranno usare gli eventi live di Teams perché la rete CDN di Azure non è accessibile in Cina. In alternativa, è possibile usare una connessione VPN aziendale che ottiene il client connesso alla rete CDN tramite la rete aziendale del cliente.
+
+>[!Note]
+> Gli eventi live si basano sui servizi CDN di Azure, che potrebbero non essere disponibili in alcuni paesi. L'amministratore potrebbe dover configurare una VPN in conformità a tutte le leggi e le normative applicabili per connettersi alla rete aziendale in modo che queste app funzionino senza problemi. Al termine, gli utenti dell'organizzazione possono pianificare e partecipare a eventi live.
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 
