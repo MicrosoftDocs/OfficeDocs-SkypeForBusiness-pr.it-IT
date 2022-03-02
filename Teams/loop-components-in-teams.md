@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 660ecd7542eadd56b284642895e5da15a1cdd434
-ms.sourcegitcommit: 10bee789272e648ea1e93d7d7c27ec645d0a8bdd
+ms.openlocfilehash: 3f9ca97a0088c703dc482d69406a9e9c2c8b2a22
+ms.sourcegitcommit: 71edff2670367082312de59c4e21775682871418
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "62918940"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "63043374"
 ---
 # <a name="overview-of-loop-components-in-teams"></a>Panoramica dei componenti loop in Teams
 
@@ -44,33 +44,33 @@ Per informazioni sulle impostazioni di amministrazione per i componenti Loop in 
 
 Disponibile nelle app Teams su Windows, Mac, Linux, iOS e Android.
 
-## <a name="loop-components-and-fluid-files"></a>Componenti a ciclo continuo e file fluidi
+## <a name="loop-components-and-loop-files"></a>Componenti a ciclo continuo e file con estensione loop
 
-I componenti a ciclo continuo creati in Teams sono supportati da un file fluido archiviato nella cartella OneDrive. Essere un file in OneDrive significa che gli utenti possono creare, individuare e gestire i componenti Loop (file con estensione fluido) con la Office documento. I file fluidi funzionano con le caratteristiche di governance dei dati come eDiscovery, controllo, creazione di report e blocco legale.
+I componenti a ciclo continuo creati in Teams sono supportati da un file con estensione loop archiviato nella cartella OneDrive. Essere un file in OneDrive significa che gli utenti possono creare, individuare e gestire i componenti Loop (file con estensione loop) con la Office documento. I file con estensione loop funzionano con le caratteristiche di governance dei dati come eDiscovery, controllo, creazione di report e blocco legale.
 
-## <a name="how-are-fluid--files-stored"></a>Come vengono archiviati i file CON ESTENSIONE FLUID?
+## <a name="how-are-loop--files-stored"></a>Come vengono archiviati i file con estensione loop?
 
-I file fluidi vengono visualizzati in Office.com e OneDrive, ad esempio nelle aree Recenti e Consigliate. Gli utenti possono cercare contenuti nei file con estensione fluid da Office.com e OneDrive. I file con estensione fluid possono essere ripristinati alle versioni precedenti OneDrive. Per creare componenti Loop, i partecipanti alla chat devono avere un account OneDrive utente. Senza un account OneDrive valido, i partecipanti alla chat potrebbero comunque essere in grado di collaborare a un componente creato da altri utenti che hanno un account OneDrive valido, ma non possono crearne uno personalizzato. 
+I file con estensione loop vengono visualizzati in Office.com e OneDrive, ad esempio nelle aree Recenti e Consigliate. Gli utenti possono cercare contenuti nei file con estensione loop da Office.com e OneDrive. I file con estensione loop possono essere ripristinati alle versioni precedenti OneDrive. Per creare componenti Loop, i partecipanti alla chat devono avere un account OneDrive utente. Senza un account OneDrive valido, i partecipanti alla chat potrebbero comunque essere in grado di collaborare a un componente creato da altri utenti che hanno un account OneDrive valido, ma non possono crearne uno personalizzato. 
 
-Se si sposta un file fluido da OneDrive a un sito SharePoint, il caricamento del componente in tempo reale non viene Teams chat.
+Se si sposta un file con estensione loop da OneDrive a un sito SharePoint, il componente in tempo reale non viene caricato Teams chat.
 
 ## <a name="what-happens-if-the-owner-of-the-file-leaves-the-company"></a>Cosa succede se il proprietario del file lascia la società?
 
-OneDrive criteri di conservazione applicati ai file FLUID come per altri contenuti creati dall'utente.
+OneDrive criteri di conservazione applicati ai file con estensione loop come ad altri contenuti creati dall'utente.
 
-## <a name="how-are-fluid-files-shared"></a>Come vengono condivisi i file FLUID?
+## <a name="how-are-loop-files-shared"></a>Come vengono condivisi i file con estensione loop?
 
 I componenti a ciclo continuo possono essere inseriti Teams chat o copiati da una chat a un'altra. I componenti a ciclo continuo non sono ancora supportati nei canali. Per impostazione predefinita, vengono assegnate alle autorizzazioni esistenti dell'organizzazione, ma gli utenti possono modificare le autorizzazioni prima dell'invio per assicurarsi che tutti gli utenti possano accedervi.
 
-L'apertura di componenti Teams chat in Office.com offre funzionalità di condivisione nella parte superiore della finestra, in modo analogo alle opzioni di condivisione offerte per altri Office documenti.
+L'apertura di componenti da Teams chat in Office.com offre funzionalità di condivisione nella parte superiore della finestra, in modo simile alle opzioni di condivisione offerte per altri Office documenti.
 
-## <a name="what-if-a-fluid-file-becomes-corrupted-or-damaged"></a>Cosa succede se un file fluido viene danneggiato o danneggiato?
+## <a name="what-if-a-loop-file-becomes-corrupted-or-damaged"></a>Cosa succede se un file con estensione loop viene danneggiato o danneggiato?
 
 Cronologia versioni consente di rivedere e copiare da versioni precedenti del file.
 
-## <a name="what-apps-can-open-and-edit-fluid-files"></a>Quali app possono aprire e modificare i file CON ESTENSIONE FLUID?
+## <a name="what-apps-can-open-and-edit-loop-files"></a>Quali app possono aprire e modificare i file con estensione loop?
 
-I file con estensione fluid possono essere aperti solo come collegamenti nel browser, ad esempio Office.com e come componenti Loop in Teams chat. Se scaricati, non possono essere riaperti senza prima caricarli di nuovo in OneDrive o SharePoint.
+I file con estensione loop possono essere aperti solo come collegamenti nel browser, ad esempio Office.com, e come componenti Loop in Teams chat. Se scaricati, non possono essere riaperti senza prima caricarli di nuovo in OneDrive o SharePoint.
 
 ## <a name="known-issues"></a>Problemi noti
 

@@ -24,12 +24,12 @@ ms.custom:
 - seo-marvel-apr2020
 - intro-get-started
 description: Guida dettagliata che illustra come configurare Teams Sistema telefonico per l'organizzazione in Microsoft 365.
-ms.openlocfilehash: 1a8f7ed554a360b94e568058be29697c0f2b1767
-ms.sourcegitcommit: 2044fdcb0c5db10dbc77c5d66e382c1b927ccdc4
+ms.openlocfilehash: 3a5c275c7d7d881ff770e6e84a3d4fa935d2827f
+ms.sourcegitcommit: 71edff2670367082312de59c4e21775682871418
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/01/2022
-ms.locfileid: "63039984"
+ms.locfileid: "63043344"
 ---
 # <a name="set-up-phone-system-in-your-organization"></a>Configurare Sistema telefonico nell'organizzazione
 
@@ -50,7 +50,7 @@ Questo articolo descrive i passaggi seguenti:
 
 ## <a name="step-1-buy-and-assign-a-phone-system-license"></a>Passaggio 1: Acquistare e assegnare una Sistema telefonico licenza
 
-Per assegnare una Sistema telefonico a un singolo utente, i passaggi sono gli stessi dell'assegnazione di una Microsoft 365 licenza. È anche possibile assegnare licenze a più utenti in blocco. Per altre informazioni sulle licenze Sistema telefonico disponibili e su come acquisire e assegnare licenze, vedere Teams licenze [](/teams-add-on-licensing/microsoft-teams-add-on-licensing.md) per i componenti aggiuntivi e Assegnare Microsoft Teams [licenze per i componenti aggiuntivi](/teams-add-on-licensing/assign-teams-add-on-licenses.md).
+Per assegnare una Sistema telefonico a un singolo utente, i passaggi sono gli stessi dell'assegnazione di una Microsoft 365 licenza. È anche possibile assegnare licenze a più utenti in blocco. Per altre informazioni sulle licenze Sistema telefonico disponibili e su come acquisire e assegnare licenze, vedere  [Teams](/microsoftteams//teams-add-on-licensing/microsoft-teams-add-on-licensing) Licenze per componenti aggiuntivi e Assegnare licenze per Teams di [componenti aggiuntivi Microsot](/microsoftteams/teams-add-on-licensing/assign-teams-add-on-licenses).
 
 ## <a name="step-2-choose-a-pstn-connectivity-option"></a>Passaggio 2. Scegliere un'opzione di connettività PSTN 
  
