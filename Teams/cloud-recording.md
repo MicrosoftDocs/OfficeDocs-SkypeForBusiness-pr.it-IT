@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a067488736a1392ac34259ba77518c299c46d203
-ms.sourcegitcommit: faeb8976299375e7658499ff31d25e8ef6003144
+ms.openlocfilehash: 7136ea224b23e29e7b4e669fbe3d364b787193fd
+ms.sourcegitcommit: 71edff2670367082312de59c4e21775682871418
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224013"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "63043354"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -181,7 +181,23 @@ Set-CsTeamsMeetingPolicy -Identity Global -AllowTranscription $false
 |Voglio disabilitare la trascrizione per la maggior parte degli utenti, ma abilitare in modo selettivo la trascrizione per utenti specifici. |<ol><li>Verificare che il criterio CsTeamsMeetingPolicy globale abbia AllowCloudRecording = False. <li>Alla maggior parte degli utenti è stato assegnato il criterio CsTeamsMeetingPolicy globale OPPURE uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = False. <li>A tutti gli altri utenti è stato assegnato uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = True. </ol>|
 
 ### <a name="terms-of-use-acceptance"></a>Accettazione delle condizioni per l'utilizzo
-Se l'organizzazione dispone di un criterio di registrazione delle riunioni che si desidera che gli utenti accettino prima di registrare una riunione, utilizzare la funzionalità [Condizioni per l'utilizzo di Azure Active Directory](/azure/active-directory/conditional-access/terms-of-use). Questa funzionalità consente agli utenti di accettare i termini dei criteri utente dell'organizzazione prima di accedere a Microsoft Teams. Questa funzionalità non è specifica per fare clic sul pulsante di registrazione, ma è correlata all'uso di Teams o di altre app Microsoft 365 in generale. Si consiglia di aggiungere le informazioni sulla registrazione della riunione alle condizioni per l'utilizzo generali per l'uso di Teams o Microsoft 365. 
+Se l'organizzazione dispone di un criterio di registrazione delle riunioni che si desidera che gli utenti accettino prima di registrare una riunione, utilizzare la funzionalità [Condizioni per l'utilizzo di Azure Active Directory](/azure/active-directory/conditional-access/terms-of-use). Questa funzionalità consente agli utenti di accettare i termini dei criteri utente dell'organizzazione prima di accedere a Microsoft Teams. Questa funzionalità non è specifica per fare clic sul pulsante di registrazione, ma è correlata all'uso di Teams o di altre app Microsoft 365 in generale. Si consiglia di aggiungere le informazioni sulla registrazione della riunione alle condizioni per l'utilizzo generali per l'uso di Teams o Microsoft 365.
+
+### <a name="set-a-custom-privacy-policy-url"></a>Impostare un URL dell'informativa sulla privacy personalizzato
+
+Gli amministratori possono aggiornare l'URL dei criteri di privacy per registrazione e trascrizione di Teams con un collegamento personalizzato per l'organizzazione. È possibile eseguire questa operazione [nell'Azure AD di amministrazione ](https://aad.portal.azure.com)usando la procedura seguente:
+
+1. Accedere all'interfaccia di amministrazione di Azure AD.
+1. Passare a Proprietà di **Azure Active Directory** > ****.
+1. Aggiornare il campo **URL dell'informativa sulla privacy** con il collegamento all'informativa sulla privacy.
+
+> [!NOTE]
+> Se il campo è già stato aggiornato per l'organizzazione, non è necessario apportare modifiche.
+
+Dopo aver aggiunto l'URL dell'informativa sulla privacy, l'informativa sulla privacy predefinita per la registrazione e la trascrizione delle riunioni di Teams verrà sostituita con il nuovo URL fornito dall'organizzazione.
+
+> [!NOTE]
+> Gli utenti anonimi, guest e federati che partecipano alle riunioni di Teams ospitate dall'organizzazione avranno ancora l'informativa sulla privacy predefinita per la registrazione e la trascrizione delle riunioni di Teams.
 
 ## <a name="permissions-and-storage"></a>Autorizzazioni e archiviazione
 
