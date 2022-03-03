@@ -17,15 +17,52 @@ metadata:
   - M365-voice
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: 1570c7e7a92a2a3914d01733fed3691d61282e16
-  ms.sourcegitcommit: 67324fe43f50c8414bb65c52f5b561ac30b52748
+  ms.openlocfilehash: 976b0303dfe17ad9f51f37e574e141beea59741f
+  ms.sourcegitcommit: f8b935e009895138eddfc1ae360b7b2ace747d3c
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 11/08/2021
-  ms.locfileid: "60834804"
+  ms.lasthandoff: 03/02/2022
+  ms.locfileid: "63050882"
 items:
 - durationInMinutes: 1
-  content: "In questo corso, introdurremo le possibilità di chiamata su Teams che sono alimentate dalla funzionalità Phone System in Office 365. Spiegheremo la progettazione tecnica richiesta per implementare Phone System, come configurarlo e come monitorare l’utilizzo e la qualità delle chiamate nell’implementazione.\n\nQuesta formazione è rivolta ai:\n\n- Professionisti IT.\n\n- Responsabili della progettazione, distribuzione o gestione di Teams.\n\n- Programmare l’introduzione della possibilità di effettuare chiamate nella distribuzione del tuo Teams.\n\nImparerai:\n\n- Che cos’è chiamare su Teams?\n\n- Come pianificare per chiamare su Teams.\n\n- Come configurare le chiamate su Teams.\n\n[!INCLUDE [tutorial-disclaimer-note](includes/tutorial-disclaimer-roadmap.md)]\n\nPer qualsiasi domanda o feedback su questo corso si prega di:\n\n- Pubblicare eventuali post nella sezione commenti in fondo alla pagina \"Passaggi successivi\" di questo tutorial</a>\n\nVisitare la pagina [UserVoice](https://microsoftteams.uservoice.com/forums/555103-public) per inviare feedback di prodotto su Teams, ad esempio idee per nuove funzionalità. \n"
+  content: >
+    In questo corso, introdurremo le possibilità di chiamata su Teams che sono alimentate dalla funzionalità Phone System in Office 365. Spiegheremo la progettazione tecnica richiesta per implementare Phone System, come configurarlo e come monitorare l’utilizzo e la qualità delle chiamate nell’implementazione.
+
+
+    Questa formazione è rivolta ai:
+
+
+    - Professionisti IT.
+
+
+    - Responsabili della progettazione, distribuzione o gestione di Teams.
+
+
+    - Programmare l’introduzione della possibilità di effettuare chiamate nella distribuzione del tuo Teams.
+
+
+    Imparerai:
+
+
+    - Che cos’è chiamare su Teams?
+
+
+    - Come pianificare per chiamare su Teams.
+
+
+    - Come configurare le chiamate su Teams.
+
+
+    [!INCLUDE [tutorial-disclaimer-note](includes/tutorial-disclaimer-roadmap.md)]
+
+
+    Per qualsiasi domanda o feedback su questo corso si prega di:
+
+
+    - Pubblicare eventuali post nella sezione commenti in fondo alla pagina "Passaggi successivi" di questo tutorial</a>
+
+
+    Per inviare feedback sui prodotti Teams, ad esempio idee per le nuove funzionalità, visitare il portale Teams [Feedback](https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472).
 - title: Che cos’è chiamare su Teams?
   durationInMinutes: 15
   content: >
@@ -115,4 +152,4 @@ items:
   content: "\nAdesso che Phone System è stato programmato ed implementato correttamente nel tuo ambiente, è necessario che tu sia sicuro che sia usato e che fornisca una fantastica esperienza utente. Sebbene i dettagli completi potrebbero andare oltre lo scopo di questo corso; vorremmo le aree più importanti di coinvolgimento:\n\n-   Adozione e cambio di gestione Gli utenti potrebbero semplicemente iniziare ad usare il servizio appena viene messo loro a disposizione. Oppure no. Pertanto, è importante eseguire un’appropriata gestione di adozione e modifica.\n\n-   Uso del monitoraggio e del driving Raccomandiamo che uno dei KSI sia il numero di un utente attivo, per aiutarti a misurare come Teams sia accettato come client telefonico.\n\n-   Qualità del monitoraggio e del driving\n\nLa soddisfazione dei tuoi utenti è strettamente correlata alla qualità delle loro chiamate; di conseguenza è importante per te monitorare la qualità delle chiamate e migliorarla se necessario. Per capire come relazionarsi con la qualità delle chiamate, visita il corso Call Quality Dashboard. Nonostante questi video siano stati fatti per Skype per le Aziende, si attagliano comunque a Teams: <https://aka.ms/sof-cqd>. \n"
 - title: Passaggi successivi
   durationInMinutes: 1
-  content: "\nIn questa formazione sono stati illustrati i seguenti elementi chiave:\n-   Che cos’è chiamare su Teams?\n\n-   Come programmare le chiamare su Teams.\n\n-   Come configurare le chiamate su Teams\n\nPer altre informazioni, vedere:\n\n-   [Phone System e Piani di Chiamata](calling-plan-landing-page.md)\n\n-   [Guida introduttiva: Configurazione dei piani di chiamata su Microsoft Teams](./configuring-teams-calling-quickstartguide.md)\n\nPassaggi successivi\n\n1.  Avvia la distribuzione del tuo Phone System per Teams\n2.  Inviare un feedback:\n    - pubblicare nella sezione commenti di questa esercitazione nella parte inferiore di questa pagina\n    - Per inviarci feedback di prodotto su Teams o condividere le tue idee per delle nuove funzionalità, visita la pagina [UserVoice](https://microsoftteams.uservoice.com/forums/555103-public).\n3.  Rimanere aggiornati:\n    - seguire il [blog di Teams](https://aka.ms/teamsblog)\n    - leggere la [roadmap di Teams](https://aka.ms/O365Roadmap)\n    - Scopri di più sulle funzionalità più recenti rilasciate in [Note sulla versione](https://support.office.com/article/what-s-new-in-microsoft-teams-d7092a6d-c896-424c-b362-a472d5f105de).\n4.  Esplorare [più formazioni ed esercitazioni](/OfficeDocs-SkypeForBusiness-pr/blob/master/Teams/ITAdmin-readiness#technical-training)."
+  content: "\nIn questa formazione sono stati illustrati i seguenti elementi chiave:\n-   Che cos’è chiamare su Teams?\n\n-   Come programmare le chiamare su Teams.\n\n-   Come configurare le chiamate su Teams\n\nPer altre informazioni, vedere:\n\n-   [Phone System e Piani di Chiamata](calling-plan-landing-page.md)\n\n-   [Guida introduttiva: Configurazione dei piani di chiamata su Microsoft Teams](./configuring-teams-calling-quickstartguide.md)\n\nPassaggi successivi\n\n1.  Avvia la distribuzione del tuo Phone System per Teams\n2.  Inviare un feedback:\n    - pubblicare nella sezione commenti di questa esercitazione nella parte inferiore di questa pagina\n    - Per inviare commenti e suggerimenti su Teams o condividere le proprie idee per le nuove funzionalità, visitare il portale Teams [Feedback](https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472).\n3.  Rimanere aggiornati:\n    - seguire il [blog di Teams](https://aka.ms/teamsblog)\n    - leggere la [roadmap di Teams](https://aka.ms/O365Roadmap)\n    - Scopri di più sulle funzionalità più recenti rilasciate in [Note sulla versione](https://support.office.com/article/what-s-new-in-microsoft-teams-d7092a6d-c896-424c-b362-a472d5f105de).\n4.  Esplorare [più formazioni ed esercitazioni](/OfficeDocs-SkypeForBusiness-pr/blob/master/Teams/ITAdmin-readiness#technical-training)."
