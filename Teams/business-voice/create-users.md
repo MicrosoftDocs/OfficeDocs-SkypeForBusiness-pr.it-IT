@@ -1,5 +1,5 @@
 ---
-title: Creare Microsoft 365 utenti, aggiungere Teams Telefono licenze del piano per chiamate e assegnare numeri di telefono
+title: Creare Microsoft 365 utenti, aggiungere Teams Telefono con le licenze del pacchetto Piano per chiamate e assegnare numeri di telefono
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -13,32 +13,32 @@ MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 search.appverid: MET150
-description: ''
+description: Informazioni su come creare e assegnare licenze Teams Sistema telefonico utenti del pacchetto Piano per chiamate e assegnare loro numeri di telefono.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 00eb2842b063399f69563571180197de0238588e
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: eb60d60a12949cbb2a0b9ac60e727cfab393de12
+ms.sourcegitcommit: e86e3824c300c24e022d5cb1848338278a5a96a8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61766189"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "63053275"
 ---
-# <a name="create-and-license-teams-phone-with-calling-plan-users-and-assign-them-phone-numbers"></a>Creare e assegnare licenze Teams Telefono utenti del piano chiamate e assegnare loro numeri di telefono
+# <a name="create-and-license-teams-phone-system-with-calling-plan-bundle-users-and-assign-them-phone-numbers"></a>Creare e assegnare licenze Teams Sistema telefonico utenti del pacchetto Piano per chiamate e assegnare loro i numeri di telefono
 
-Per usare :::no-loc text="Microsoft 365 Teams Phone with Calling Plan":::, è necessario un account :::no-loc text="Microsoft 365"::: che abbia una licenza di :::no-loc text="Microsoft 365 Teams Phone with Calling Plan":::. Quando si ha un account e una licenza, è possibile assegnarvi un numero di telefono.
+Per usare il pacchetto Teams Sistema telefonico piano per chiamate, è necessario un account Microsoft 365 con Teams Telefono con licenze del pacchetto Piano per chiamate. Se si ha un account e le licenze, è possibile iniziare ad assegnare numeri di telefono.
 
 ## <a name="create-and-license-users"></a>Creare utenti e assegnare licenze
 
 Seguire i passaggi in [Aggiungere utenti singolarmente o in blocco ](/microsoft-365/admin/add-users/add-users) e [Assegnare licenze agli utenti](/microsoft-365/admin/manage/assign-licenses-to-users).
 
 > [!NOTE]
-> Nel riquadro **Assegna le licenze dei prodotti** selezionare **:::no-loc text="Microsoft 365 Teams Phone with Calling Plan":::**.
+> Nel riquadro **Assegna licenze di** prodotto selezionare Teams Telefono **piano per chiamate**.
 
 ## <a name="assign-phone-numbers-to-users"></a>Assegnare numeri di telefono agli utenti
 
-Dopo aver creato gli utenti e aver assegnato loro una licenza di :::no-loc text="Microsoft 365 Teams Phone with Calling Plan":::, è possibile assegnare loro un numero di telefono. È necessario un numero di telefono non assegnato per ogni utente che deve effettuare o ricevere chiamate da numeri di telefono esterni. Se non si hanno numeri di telefono non assegnati sufficienti, vedere [Ottenere altri numeri di telefono](#get-more-phone-numbers) più avanti in questo articolo.
+Dopo aver creato gli utenti e averle Teams Telefono con la licenza del bundle Piano per chiamate, è possibile assegnare loro i numeri di telefono. È necessario un numero di telefono non assegnato per ogni utente che deve effettuare o ricevere chiamate da numeri di telefono esterni. Se non si hanno numeri di telefono non assegnati sufficienti, vedere [Ottenere altri numeri di telefono](#get-more-phone-numbers) più avanti in questo articolo.
 
-1. Passare a https://admin.teams.microsoft.com.
+1. Passare all'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com).
 2. Immettere un nome e una descrizione per la richiesta di un numero di telefono.
 3. Selezionare **Vocale** > **Numeri telefonici**.
 4. Selezionare un numero di telefono che si vuole assegnare a un utente e quindi **Modifica**.
@@ -49,7 +49,7 @@ Dopo aver creato gli utenti e aver assegnato loro una licenza di :::no-loc text=
 
 Se non si hanno abbastanza numeri di telefono da assegnare ai nuovi utenti, è possibile ottenerne altri. Potrebbe essere necessario attendere fino a 24 ore prima che i numeri siano resi disponibili.
 
-1. Passare a https://admin.teams.microsoft.com.
+1. Passare all'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com).
 2. Immettere un nome e una descrizione per la richiesta di un numero di telefono.
 3. Selezionare **Vocale** > **Numeri di telefono** > **Aggiungi**.
 4. Selezionare il Paese o l'area geografica per il numero di telefono.
