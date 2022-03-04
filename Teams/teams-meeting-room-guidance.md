@@ -1,9 +1,9 @@
 ---
-title: Guida alle sale riunioni per Teams
+title: Indicazioni per le sale riunioni per Teams
 author: amandafrechinjackson
 ms.author: v-amandaf
 manager: jsarrasin
-ms.date: 9/8/2021
+ms.date: 2/2/2022
 ms.topic: conceptual
 audience: ITPro
 ms.service: msteams
@@ -20,20 +20,20 @@ f1.keywords:
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 310f9bd75147daf617b21b77e86bfb00d5490307
-ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
+ms.openlocfilehash: cb74dcb92328890b71317818b3230571151fd0a6
+ms.sourcegitcommit: e97c981489ff1f02674df57426da3b22cc6d68c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973239"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "63062717"
 ---
-# <a name="meeting-room-guidance-for-teams"></a>Guida alle sale riunioni per Teams
+# <a name="meeting-room-guidance-for-teams"></a>Indicazioni per le sale riunioni per Teams
 
 Questo articolo è destinato a guidare gli utenti su come ottimizzare gli spazi delle riunioni con Microsoft Teams Rooms e dispositivi. Include informazioni sugli usi Teams Rooms dispositivi e soluzioni, i layout e le specifiche.
 
-La [sezione Spazi](#example-spaces) di esempio di questo articolo include specifiche e layout di sala renderizzati ed è un ottimo modo per visualizzare e pianificare una distribuzione di Teams dispositivo e/o Teams Rooms soluzione.
+# <a name="meeting-room-uses-and-layouts"></a>[Usi e layout delle sale riunioni](#tab/uses)
 
-## <a name="meeting-room-uses-and-layouts"></a>Usi e layout delle sale riunioni
+## <a name="overview"></a>Panoramica
 
 Microsoft Teams Rooms soluzioni offrono flessibilità di scopo e persino flessibilità di movimento in uno spazio che le sale riunioni tradizionali non offrono. Ad esempio, con i dispositivi Teams Rooms, gli utenti possono migliorare la collaborazione con una lavagna digitale e le fotocamere intelligenti per il monitoraggio delle persone assicurano che ogni partecipante locale possa essere visto indipendentemente da dove si trova nella sala. Qualsiasi tipo di spazio e qualsiasi tipo di riunione può essere ottimizzato con Teams Rooms dispositivi o Teams Rooms soluzioni.
 
@@ -49,7 +49,7 @@ Gli spazi per le presentazioni e le discussioni sono prioritari, quindi il layou
 
 Le riunioni in riunione e creazione in modalità co-creazione sono in genere meno formali, con priorità sulla creazione in modalità co-creazione, l'input penna e la lavagna. L'accesso ai file personali è anche uno stato attivo per questo contenitore. Il dispositivo può essere mobile, incoraggiando gli utenti a alzarsi in piedi, raccogliere e interagire con il dispositivo.
 
-Lo spazio giusto consente di creare un ponte tra gli utenti e la tecnologia senza problemi ed elimina l'attrito anche per gli utenti più principianti. Teams dispositivi sono progettati per essere sufficientemente user-friendly per consentire ai giovani studenti o ai nuovi utenti di spostarsi in modo abile e che i docenti o gli amministratori possono controllare e personalizzare dal primo utilizzo.
+Lo spazio giusto consente di creare un ponte tra gli utenti e la tecnologia senza problemi ed elimina l'attrito anche per gli utenti più principianti. Teams dispositivi sono progettati per essere sufficientemente user-friendly per i giovani studenti o i nuovi utenti per spostarsi con abile e per i docenti o gli amministratori di controllare e personalizzare dal primo utilizzo.
 
 **Creare e creare layout di spazi:** Le tabelle e le apparecchiature di co-creazione possono avere posizioni flessibili e devono ospitare gruppi di persone che lavorano ai tavoli o alle apparecchiature.
 
@@ -64,29 +64,29 @@ Una grande esperienza di riunione è il risultato dell'uso della migliore tecnol
 
 ### <a name="native-teams-rooms-experiences-versus-other-devices"></a>Esperienze Teams Rooms native rispetto ad altri dispositivi
 
-Teams Rooms andare oltre ciò che è possibile fare con Teams su dispositivi personali, fornendo funzionalità uniche in sala, come l'aggiunta di un solo tocco, videocamere contenuto per condividere lavagne fisiche nella riunione in modo intelligente e caratteristiche di prossimità come il trasferimento senza soluzione di continuità di una riunione di Teams dal dispositivo personale alla sala.
+Teams Rooms andare oltre ciò che può essere fatto con Teams su dispositivi personali, fornendo funzionalità uniche in sala, come l'aggiunta di un solo tocco, videocamere contenuto per condividere lavagne fisiche nella riunione in modo intelligente e caratteristiche di prossimità come il trasferimento senza soluzione di continuità di una riunione di Teams dal dispositivo personale alla sala.
 
-I sistemi non nativi e auto-costruiti che si basano su servizi esterni o su una connessione bring-your-own-device non corrisponderanno mai alla facilità d'uso o alla qualità immersiva di un ambiente Teams Room nativo.
+I sistemi non nativi e auto-costruiti che si basano su servizi esterni o su una connessione bring-your-own-device non corrisponderanno mai alla facilità d'uso o alla qualità immersiva di una Teams Room nativa.
 
 Nel corso di una distribuzione, potrebbe essere necessario eseguire passaggi intermedi, ad esempio la distribuzione rapida di sale riunioni bring-your-own-device, implementate nel percorso di un'esperienza Teams completamente nativa negli spazi riunioni.
 
 ### <a name="using-teams-to-create-the-best-possible-meeting-experience"></a>Uso Teams per creare la migliore esperienza possibile per le riunioni
 
-Avendo entrambi Teams su tutti i tuoi dispositivi personali e distribuito correttamente Microsoft Teams Rooms in tutti i tuoi spazi, potrai facilitare la migliore esperienza possibile per le riunioni per ogni utente. Quando si prevede di ottenere la migliore esperienza possibile, è necessario affrontare tutti gli spazi in termini di distribuzione tecnologica e guida e formazione per gli utenti finali.
+Avendo entrambi i Teams su tutti i tuoi dispositivi personali e distribuiti correttamente Microsoft Teams Rooms in tutti i tuoi spazi, potrai facilitare la migliore esperienza possibile per le riunioni per ogni utente. Quando si prevede di ottenere la migliore esperienza possibile, è necessario affrontare tutti gli spazi in termini di distribuzione tecnologica e guida e formazione per gli utenti finali.
 
-Quando si pianifica un'implementazione su larga scala a livello aziendale, è normale che venga eseguito in fasi con alcune sale in cui la tecnologia viene aggiunta in momenti diversi o anche alcuni componenti installati in precedenza rispetto ad altri , ad esempio la distribuzione di pannelli Teams per la pianificazione in ogni stanza di un determinato edificio durante l'installazione di soluzioni Teams Rooms un piano o persino una stanza alla volta).
+Quando si pianifica un'implementazione su larga scala a livello aziendale, è normale che avvenga in fasi con alcune sale che vedono la tecnologia aggiunta in momenti diversi o persino alcuni componenti installati in precedenza rispetto ad altri ,ad esempio la distribuzione di pannelli Teams per la pianificazione in ogni stanza di un determinato edificio durante l'installazione di soluzioni Teams Rooms un piano o persino una stanza alla volta).
 
-Preparare gli utenti a eseguire questa operazione in più fasi per ottimizzare Teams'esperienza di riunione in ogni punto lungo il percorso.
+Preparare gli utenti a eseguire questa operazione in fasi per ottimizzare l'esperienza Teams riunione in ogni punto lungo il percorso.
 
 #### <a name="good-experience--personal-devices-alone-in-a-meeting-space"></a>Buona esperienza: dispositivi personali da soli in un'area riunioni
 
-È possibile iniziare con questo piano indirizzando tutti gli spazi riunioni non av o non dotati di collaborazione. È comunque possibile sfruttare Teams nelle sale riunioni, anche se tali sale riunioni non hanno ancora Teams dispositivi.
+È possibile iniziare con questo piano indirizzando tutti gli spazi riunioni non av o non dotati di collaborazione. È comunque possibile sfruttare i Teams nelle sale riunioni, anche se le sale riunioni non hanno ancora Teams dispositivi.
 
-*Audio:* Un ottimo ponte per una sala Teams completa consiste nel pianificare la tecnologia delle riunioni fornendo ai singoli utenti dispositivi audio certificati Teams per sale e gruppi più piccoli oppure distribuendoli in sale prima di una soluzione Teams Rooms completa per spazi più grandi destinati a gruppi più grandi in cui un piccolo dispositivo non lo taglia.
+*Audio:* Un ottimo ponte per una sala Teams completa consiste nel pianificare la tecnologia delle riunioni fornendo ai singoli utenti dispositivi audio certificati Teams per sale e gruppi più piccoli oppure distribuendoli in sale prima di una soluzione Teams Rooms completa per spazi più grandi pensati per gruppi più grandi in cui un piccolo dispositivo non lo taglia.
 
 *Video:* Quando vengono usate queste chat room, i singoli utenti possono portare i propri dispositivi da condividere nel contenuto della riunione Teams e acquisire le espressioni con le singole fotocamere. Gli utenti possono quindi designare qualcuno come singola fonte di audio per il gruppo locale, collegando il dispositivo personale al dispositivo audio certificato, in modo che tutti (sia locali che remoti) possano avere un'esperienza positiva con l'audio della riunione.
 
-*Impegno:* L'abilitazione delle sale riunioni per una migliore esperienza Teams riunioni, anche quando richiede l'uso di dispositivi personali e periferiche, consentirà comunque agli utenti di espandere le attività che possono eseguire con le Teams. Quando gli utenti si trovano in uffici privati e in singole workstation, Teams le discussioni di persona oltre a coinvolgere i partecipanti in remoto.
+*Impegno:* L'abilitazione delle sale riunioni per una migliore esperienza Teams riunione, anche quando richiede l'uso di dispositivi personali e periferiche, consentirà comunque agli utenti di espandere le attività che possono eseguire con le Teams. Quando gli utenti si trovano in uffici privati e in singole workstation, Teams le discussioni di persona oltre a coinvolgere i partecipanti in remoto.
 
 #### <a name="better-experience--teams-rooms-solutions-and-no-personal-devices"></a>Esperienza migliore: Teams Rooms soluzioni e nessun dispositivo personale
 
@@ -96,7 +96,7 @@ Se si installano soluzioni Teams Rooms o se si hanno già sale che sono già sta
 
 *Video:* I video in questi spazi verranno gestiti dalla soluzione Teams Rooms e dalle relative fotocamere certificate Microsoft.
 
-*Impegno:* Gli utenti finali potranno sfruttare l'esperienza Teams Rooms completa per le riunioni, assicurando che tutti possano partecipare facilmente alle riunioni e avere un'ottima esperienza audio e video.
+*Impegno:* Gli utenti finali saranno in grado di sfruttare l'esperienza Teams Rooms completa per le riunioni, assicurando che tutti possano partecipare facilmente alle riunioni e avere un'ottima esperienza audio e video.
 
 #### <a name="best-experience--teams-rooms-solutions-used-in-conjunction-with-personal-devices"></a>Esperienza ottimale: Teams Rooms soluzioni usate in combinazione con i dispositivi personali
 
@@ -126,331 +126,446 @@ L'associazione del microfono e degli altoparlanti corretti per ogni spazio darà
 
 -   Negli spazi condivisi le opzioni si espandono, ma rimangono gli stessi principi: i partecipanti alla riunione devono essere ascoltati e ascoltare gli altri in modo chiaro.
 
-    -   I dispositivi audio all-in-one sono opzioni di facile  distribuzione e di alta qualità per spazi più piccoli con un numero limitato di partecipanti seduti relativamente vicino al dispositivo audio.
+    -   I dispositivi audio all-in-one sono opzioni di facile distribuzione e di alta qualità per spazi  più piccoli con un numero limitato di partecipanti seduti relativamente vicino al dispositivo audio.
 
-    -   In **spazi più grandi,** i microfoni e gli altoparlanti si separano per garantire la massima copertura a tutti i partecipanti nello spazio. Molte soluzioni per sale di medie e grandi dimensioni sono disponibili come parte di un kit che non richiede alcuna configurazione, ma solo l'installazione fisica di microfoni e altoparlanti.
+    -   In **spazi più grandi**, i microfoni e gli altoparlanti si separano per garantire la massima copertura a tutti i partecipanti nello spazio. Molte soluzioni per sale di medie e grandi dimensioni sono disponibili come parte di un kit che non richiede alcuna configurazione, ma solo l'installazione fisica di microfoni e altoparlanti.
 
     -   Negli spazi più grandi e complessi sono disponibili soluzioni che consentono di usare insieme un'ampia gamma di tipi di microfono e altoparlante, ad esempio acquisire un docente e la voce del pubblico da una sala di grandi dimensioni e portare contemporaneamente la chiamata a tutti. Queste soluzioni sono le migliori quando vengono distribuite con un partner Microsoft che ha competenze nella progettazione e distribuzione di soluzioni più tecnicamente coinvolte.
 
 ### <a name="video"></a>Video
 
-Il video è altrettanto importante dell'audio. L'acquisizione di comunicazioni fisiche e non verbali come espressioni facciali o gesti è importante quanto il contenuto della classe o della riunione per garantire il massimo coinvolgimento e comprensione. Le sale devono essere dotate delle dimensioni appropriate dello schermo in modo che tutti possano sperimentare correttamente la riunione, sia in sala che in remoto. Questo è il motivo per cui le sale devono avere anche la copertura della fotocamera e il campo di vista (FOV) giusto per acquisire in modo efficace tutti i partecipanti alla riunione in sala per chi partecipa in remoto.
+Il video è altrettanto importante dell'audio. L'acquisizione di comunicazioni fisiche e non verbali come espressioni facciali o gesti è importante quanto il contenuto della classe o della riunione per garantire il massimo coinvolgimento e comprensione. Le sale devono essere dotate delle dimensioni appropriate dello schermo in modo che tutti possano sperimentare correttamente la riunione, sia in sala che in remoto. Questo è il motivo per cui le sale devono avere anche la copertura della fotocamera e il campo di vista (FOV) giusto per acquisire in modo efficace tutti i partecipanti alla riunione in sala per i partecipanti in remoto.
 
 *Le fotocamere giuste per ogni spazio*
 
-Importante quanto l'audio, il video di alta qualità è una necessità per la collaborazione Teams moderna. La tecnologia per le fotocamere è avanzata in modo significativo con le fotocamere di alta qualità ora disponibili per tutti gli spazi.
+Per quanto importante sia l'audio, il video di alta qualità è una necessità per la collaborazione Teams moderna. La tecnologia per le fotocamere è avanzata in modo significativo con le fotocamere di alta qualità ora disponibili per tutti gli spazi.
 
--   Le fotocamere incluse in dispositivi come laptop e tablet devono essere usate in tutte le riunioni per garantire che tutti siano visti e ascoltati. Per gli utenti che cercano di  portare un'esperienza video più ricca in uno spazio **personale,** le fotocamere esterne rappresentano un passo avanti rispetto ai dispositivi incorporati e possono essere usate in un numero maggiore di scenari e configurazioni, assicurando che i partecipanti alla chiamata condidivano la migliore visualizzazione di se stessi. Questi dispositivi si installano facilmente con una semplice connessione USB disponibile in ogni PC.
+-   Le fotocamere incluse in dispositivi come laptop e tablet devono essere usate in tutte le riunioni per garantire che tutti siano visti e ascoltati. Per gli utenti che cercano di portare un'esperienza video  più ricca in uno spazio **personale, le** fotocamere esterne rappresentano un passo avanti rispetto ai dispositivi incorporati e possono essere usate in un numero maggiore di scenari e configurazioni, assicurando che i partecipanti alla chiamata condidivano la migliore visualizzazione di se stessi. Questi dispositivi si installano facilmente con una semplice connessione USB disponibile in ogni PC.
 
 -   Negli spazi condivisi le opzioni e le caratteristiche si espandono. **Le sale più** piccole possono essere coperte da fotocamere incluse in dispositivi audio all-in-one, come le barre audio. Queste fotocamere in genere presentano un ampio campo di visualizzazione, assicurando che catturino ogni partecipante nello spazio in un unico scatto. Molte di queste fotocamere presentano anche elementi come l'inquadratura intelligente dell'immagine, in modo che la fotocamera mostra solo le persone della riunione e non le sedie vuote o le persone che contano, per tenere traccia e comprendere l'utilizzo dello spazio.
 
--   Nelle **sale più grandi,** le fotocamere presentano la tecnologia necessaria per acquisire i partecipanti in una varietà di posizioni a distanze diverse. Queste fotocamere possono acquisire gruppi o concentrarsi su singoli utenti, mantenendo una grande chiarezza visiva. I dispositivi che possono tenere traccia e includere solo gli altoparlanti attivi vengono regolarmente usati in spazi più grandi, in modo che molti partecipanti possano essere presenti singolarmente durante una riunione mentre contribuiscono ai loro pensieri.
+-   Nelle **sale più grandi**, le fotocamere presentano la tecnologia necessaria per acquisire i partecipanti in una varietà di posizioni a distanze diverse. Queste fotocamere possono acquisire gruppi o concentrarsi su singoli utenti, mantenendo una grande chiarezza visiva. I dispositivi che possono tenere traccia e includere solo gli altoparlanti attivi vengono regolarmente usati in spazi più grandi, in modo che molti partecipanti possano essere presenti singolarmente durante una riunione mentre contribuiscono ai loro pensieri.
 
-## <a name="example-spaces"></a>Spazi di esempio
+# <a name="enhanced-microsoft-teams-room"></a>[Sala Microsoft Teams avanzata](#tab/emtr)
 
-Questa sezione illustra alcuni esempi di come affrontare i vari spazi presenti nella maggior parte delle organizzazioni. Esistono molti modi per ottenere un'esperienza di riunione ottimale e questi spazi di esempio possono fungere da guide efficaci quando si esegue la creazione per la propria organizzazione.
+## <a name="enhanced-microsoft-teams-room"></a>Sala Microsoft Teams avanzata
 
-## <a name="smaller-meeting-spaces"></a>Spazi riunioni più piccoli
+![Rendering di una sala riunioni migliorata.](media/emr1.png)
 
-### <a name="private-office-with-meeting-space"></a>Ufficio privato con spazio per le riunioni
+Questa sezione illustra in che modo Microsoft sta trasformando le sale riunioni standard in Microsoft Teams Rooms ottimizzate che migliorano la nuova esperienza Teams prima fila. Usare questo articolo per indicazioni sulla progettazione e la tecnologia delle chat room, sui prodotti consigliati e sulle specifiche di riferimento di Microsoft Corporate Facilities.
 
-| Utilizzo | Layout | Audio | Video |
-|------------------|----------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------------|
-| Incontra e presenta | Capacità tipica: 3-4 persone                       | Audio consigliato: singolo dispositivo front-of-room o tabletop | Fotocamera consigliata: distanza breve con campo di visualizzazione ultra-ampio |
-|                  | Dimensioni tipiche: 10 ft x 10 ft                  |                                                            | Dimensioni minime dello schermo: 46in                                       |
-|                  | Visualizzazione principale singola o doppia consigliata: Singola |                                                            |                                                                  |
+## <a name="microsofts-vision-for-the-future-of-meeting-rooms"></a>La visione di Microsoft per il futuro delle sale riunioni
 
-Gli uffici privati sono spesso progettati con spazi di riunione separati dall'area di lavoro, in modo che possano essere tenute piccole riunioni con una combinazione di partecipanti locali e remoti.
+Il futuro del lavoro sarà fluido, dinamico e basato sul cloud. Microsoft consente esperienze di riunione che consentono alle persone di essere presenti ovunque e in qualsiasi momento. Queste riunioni sono ibride, il che significa che è possibile parteciparvi senza problemi. Le riunioni migliorate con i dispositivi Microsoft sono inclusive; ogni voce viene ascoltata e tutti sono chiaramente rappresentati.
 
-![Rendering dello spazio di lavoro privato con riunioni e aree di lavoro separate.](media/look1.png) 
+Microsoft vede un futuro in cui le riunioni sono coinvolgenti e gli spazi sono progettati intorno alle persone. Le visualizzazioni delle riunioni dinamiche tengono tutti connessi al contenuto e l'uno all'altro: le presentazioni formali sono abbinate a chat di collaborazione. Le aree di disegno digitali liberano la creatività di gruppo. Tutti possono connettersi faccia a faccia ovunque si trovano.
 
-*La soluzione mostrata è:*
+La visione per il futuro delle riunioni è basata su una semplice credenza: le riunioni dovrebbero offrire molto più di una semplice transazione unica. Le riunioni saranno progettate per tutti, sia nella sala che in tutto il mondo.
 
-Un'area huddle o focus room all'interno di uno spazio di lavoro privato più grande.
+## <a name="what-is-an-enhanced-microsoft-teams-room"></a>Che cos'è una Microsoft Teams room avanzata?
 
-*Perché questo layout e tipo di dispositivo?*
+Nell'ambiente di lavoro ibrido di Microsoft, la nuova generazione di standard per le chat room è informata dalle esigenze dei partecipanti sia in remoto che in sala. Una sala avanzata è una sala Microsoft Teams progettata per offrire un'esperienza  di riunione ibrida elevata, che favorisce connessioni più naturali e coinvolgenti, consentendo a tutti i partecipanti alla riunione di sentirsi inclusi, rappresentati e produttivi. La sala segue una serie di principi resi reali grazie a una combinazione Teams Rooms funzionalità software e hardware e indicazioni per la configurazione delle chat room.
 
-Il layout dello spazio è progettato per facilitare le riunioni con partecipanti locali e remoti.
+Il concetto di ambiente Microsoft Teams room è progettato in base a due obiettivi chiave supportati da un set di principi di esperienza.
 
-La tabella delle riunioni è fisicamente separata dallo spazio di lavoro privato e dalla tecnologia della sala riunioni per facilitare sia le riunioni con i partecipanti locali che con i partecipanti remoti.
+**Obiettivo 1: tutti i partecipanti alla riunione si sentono inclusi, rappresentati e produttivi.**
 
-La sala dispone di un unico display di dimensioni, in modo che tutti i partecipanti possano vedere chiaramente tutti i contenuti presentati e i partecipanti a video in remoto. È inoltre dotato di una soluzione Room basata su soundbar con una fotocamera intelligente integrata. Questa soluzione è facile da installare e gestire e offre un'ottima copertura audio e video per le riunioni in questo tipo di spazio.
+Principi di progettazione:
 
-*Immagine qui:*
+-   I partecipanti remoti possono stabilire una presenza autentica nella chat room
 
--   Visualizzazione singola
+-   I partecipanti nella sala possono conservare la propria identità individuale nella riunione
 
--   Soluzione di Teams Rooms soundbar all-in-one
+-   Tutti i partecipanti alla riunione possono collaborare senza limiti.
 
-### <a name="open-spaces"></a>Spazi aperti
+**Obiettivo 2: Le connessioni si sentono naturali e coinvolgenti.**
 
-| Utilizzo | Layout | Audio | Video |
-|--------------------|------------------------------------------|-----------------------------------------|--------------------------------------------|
-| Incontrarsi e creare in collaborazione | Capacità tipica: 3-13 persone            | Audio consigliato: dipende dallo spazio | Fotocamera consigliata: dipende dallo spazio   |
-|                    | Dimensioni tipiche: dipende dallo spazio |                                         | Dimensioni minime dello schermo: dipende dallo spazio |
-|                    |                                          |                                         |                                            |
+Principi di progettazione:
 
-Gli spazi aperti, come le sale e le aree comuni, spesso presentano la tecnologia di collaborazione per le riunioni non tradizionali.
+-   Le esperienze vengono ridimensionate per la connessione umana, consentendo interazioni che si sentono come se tutti si trovano nella stessa stanza.
 
-![Rendering di uno spazio aperto con la tecnologia delle riunioni.](media/look2.png) 
+Un'esperienza di sala migliorata è quella di tutti i componenti e le idee messi insieme, senza un'unica caratteristica che definirà l'esperienza. Le singole funzionalità e i concetti disponibili nelle Microsoft Teams Rooms possono essere distribuite in modo personalizzato.
 
-*La soluzione mostrata è:*
+Esempi di distribuzione di funzionalità specifiche:
 
-Due aree con Surface Hub posizionate per la collaborazione interattiva e le opzioni di creazione in un ampio spazio aperto.
+-   Sfrutta la nostra nuova esperienza di visualizzazione in prima fila in prima fila in tutti i tipi di spazi riunioni in cui è disponibile una soluzione Microsoft Teams room che la supporta.
 
-*Perché questo layout e tipo di dispositivo?*
+-   Implementare tabelle curve e layout frontali con le esperienze Microsoft Teams room per promuovere una migliore connessione umana nella sala, mantenendo al contempo la continuità dell'esperienza in tutti gli spazi delle riunioni.
 
-La tabella contro-altezza è posizionata con un dispositivo Surface Hub grande per l'uso di uno schermo per la creazione di contenuti e una soluzione Teams Rooms per le riunioni di piccole dimensioni. Un Surface Hub dispositivo è configurato su un carrello per essere spostato in aree casuali per la creazione di contenuti. I mobili sono disposti in modo da essere utilizzati in modo misto sia per le conversazioni informali in ufficio che per il co-working es improvvisato, offrendo opzioni per tutti i tipi di spazio.
+## <a name="when-should-you-deploy-this-room-type"></a>Quando distribuire questo tipo di chat room?
 
-*Immagine qui:*
+Le funzionalità Microsoft Teams Rooms non sono destinate a sostituire tutti gli altri spazi riunioni all'interno dell'organizzazione, ma a fungere da supplemento agli spazi riunioni esistenti che utilizzano Microsoft Teams. Devono essere distribuite strategicamente all'interno dell'organizzazione negli spazi e nelle posizioni in cui saranno più importanti le interazioni faccia a faccia con i partecipanti alla riunione remota.
 
--   Grandi pareti montate su Surface Hub
+Microsoft Teams Rooms continuerà a offrire esperienze di riunione ibride incentrate sulle persone rese disponibili tramite gli aggiornamenti software. Esistono tuttavia tecnologie hardware e indicazioni per la configurazione delle chat room che svolgono un ruolo chiave nell'ottimizzazione di alcune delle esperienze migliorate. È la combinazione di questi componenti che costituiscono un ambiente Microsoft Teams room. Quando si valuta il numero di Microsoft Teams Rooms da trasformare in una Microsoft Teams room avanzata, tenere presente quanto segue:
 
--   Dispositivi mobili montati sul carrello Surface Hub
+-   Quali aggiornamenti hardware e/o investimenti dovranno essere effettuati.
 
-### <a name="focushuddle-room"></a>Messa a fuoco/sala riunioni
+-   La maggior parte delle sale riunioni è progettata per massimizzare i filmati quadrati con una stretta relazione tra la dimensione della sala e la capacità della sala. Una sala Microsoft Teams è Microsoft Teams priorità per l'esperienza della riunione, oltre a massimizzare il metraggio quadrato. Non tutte le organizzazioni possono assegnare priorità in questo modo a ogni area della riunione, perché potrebbe ridurre il numero di sale riunioni che possono avere.
 
-| Utilizzo | Layout | Audio | Video |
-|------------------|----------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------------|
-| Incontra e presenta | Capacità tipica: 3-5 persone                       | Audio consigliato: singolo dispositivo front-of-room o tabletop | Fotocamera consigliata: distanza breve con campo di visualizzazione ultra-ampio |
-|                  | Dimensioni tipiche: 10 ft x 10 ft                  |                                                            | Dimensioni minime dello schermo: 46in                                       |
-|                  | Visualizzazione principale singola o doppia consigliata: Singola |                                                            |                                                                  |
+### <a name="understanding-this-space"></a>Informazioni su questo spazio 
 
-Questi spazi sono ideali per la collaborazione e la discussione di piccoli gruppi.
+*Bilanciare la flessibilità ibrida con l'inclusione*
 
-![Rendering dello stato attivo o della sala riunioni ottimizzata per Teams riunioni.](media/look3.png) 
+In Microsoft, le nostre linee guida per il lavoro flessibile assegnano priorità alla scelta e alla flessibilità dei dipendenti su dove lavorare e quando. Questo cambiamento fondamentale nella politica ci ha fatto rivoluzioni all'evoluzione dei nostri spazi di riunione e della tecnologia.
 
-*La soluzione mostrata è:*
+La nostra ricerca ha dimostrato che le riunioni remote durante la pandemia hanno avuto molti vantaggi, in particolare per quanto riguarda l'aumento della sensazione di equità e inclusione. Mentre pensiamo di tornare in un ambiente ibrido, con la collaborazione remota e di persona che avviene contemporaneamente, abbiamo cercato di creare spazi per le riunioni che supportano meglio le nostre politiche di lavoro flessibili mantenendo un campo di gioco di livello per tutti i partecipanti attraverso la progettazione e la tecnologia delle sale.
 
-Una sala riunioni o focus room con la soluzione Microsoft Teams Rooms per la collaborazione di piccoli gruppi.
+### <a name="what-is-this-space-used-for"></a>A cosa si usa questo spazio?
 
-*Perché questo layout e tipo di dispositivo?*
+Questo spazio è dedicato all'esperienza di riunione Teams immersiva per un piccolo gruppo di persone nella sala fisica.
 
-La tabella è collegata al muro, che massimizza la flessibilità dello spazio per i vari layout. Assicura che la Teams Rooms soluzione sia lo stato attivo dello spazio. Un display montato in dimensioni per la sala assicura che tutti i partecipanti possano vedere i partecipanti alla riunione remota e/o un documento collaborativo. Una fotocamera della sala acquisisce la sala per i partecipanti remoti. Poiché la sala è uno spazio dedicato per le riunioni, un dispositivo audio da tavolo assicura che tutte le parti siano ascoltate.
+Proprio come una tipica sala Microsoft Teams, i partecipanti alla riunione possono incontrarsi in remoto e in locale per collaborare facilmente durante la presentazione e la creazione di contenuti.
 
-*Immagine qui:*
+### <a name="how-is-this-space-laid-out"></a>Come viene disposto questo spazio?
 
--   Una Teams Rooms per sale di piccole dimensioni, facilmente installata
+Il layout della sala è progettato per la massima visibilità e coinvolgimento con i partecipanti e i contenuti remoti.
 
--   Singolo display davanti alla sala per i partecipanti remoti e il contenuto da condividere
+Il layout è dotato di un tavolo curvo per il contatto visivo di persona e l'orientamento per i partecipanti remoti con tutte le sedie di fronte al display in modo che i partecipanti possano seguire.
 
-### <a name="small-traditional-meeting-rooms"></a>Piccole sale riunioni tradizionali
+### <a name="how-does-the-audio-work"></a>Come funziona l'audio? 
 
-| Utilizzo | Layout | Audio | Video |
-|------------------|----------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------------|
-| Incontra e presenta | Capacità tipica: 5-7 persone                       | Audio consigliato: singolo dispositivo front-of-room o tabletop | Fotocamera consigliata: distanza breve con campo di visualizzazione ultra-ampio |
-|                  | Dimensioni tipiche: 10 piedi x 15 piedi                  |                                                            | Dimensioni minime dello schermo: 50in                                       |
-|                  | Visualizzazione principale singola o doppia consigliata: Singola |                                                            |                                                                  |
+Usando soluzioni audio certificate per Microsoft Teams Rooms, le persone possono ascoltare e essere ascoltate in modo chiaro.
 
-Questi spazi sono ideali per la collaborazione e la discussione di piccoli gruppi.
+In futuro, Teams Rooms sistemi audio che utilizzano un concetto denominato audio spaziale. Con l'audio spaziale, il suono emana dalla direzione della persona che parla. Ad esempio, se una persona sul lato destro della raccolta riunioni parla, l'audio verrà esemplato dal relatore più vicino a quella posizione. Questo tipo di esperienza audio immersiva aiuta le riunioni a somigliare più da vicino a una conversazione di persona.
 
-![Rendering di piccole sale riunioni tradizionali ottimizzate per Teams riunioni.](media/look4.png) 
+### <a name="how-does-the-camera-work"></a>Come funziona la fotocamera?
 
-*La soluzione mostrata è:*
+Una fotocamera ad angolo ultrawide è posizionata nella parte anteriore della stanza sotto gli schermi per catturare tutti gli utenti nello spazio.
 
-Una piccola sala riunioni, tradizionalmente strutturata, con la Microsoft Teams Rooms soluzione.
+La fotocamera ultrawide-angel offre un monitoraggio intelligente dei partecipanti alla riunione in modo che possano essere rappresentati singolarmente in una vista di grandi dimensioni invece che come volti all'interno di un'immagine di grandi dimensioni dell'intera sala.
 
-*Perché questo layout e tipo di dispositivo?*
+![Rendering di una sala riunioni migliorata da una visualizzazione dall'alto.](media/emr5.png)
 
-Un layout più tradizionale per le sale riunioni può essere progettato sia per le riunioni di persona che per le riunioni con partecipanti remoti e per i contenuti. La tabella è separata dalla parete di visualizzazione e dalla Teams Rooms soluzione. Un display montato in dimensioni per la sala assicura che tutti i partecipanti possano vedere i partecipanti alla riunione remota e/o un documento collaborativo. Una fotocamera della sala acquisisce la sala per i partecipanti remoti. Poiché la sala è uno spazio dedicato per le riunioni, un dispositivo audio da tavolo assicura che tutte le parti siano ascoltate.
+### <a name="how-do-the-front-of-room-displays-work"></a>Come funzionano gli schermi davanti alla sala? 
 
-*Immagine qui:*
+Questa sala è ottimizzata per il layout Microsoft Teams Rooms chiamato prima fila e viene visualizzata tramite un proiettore ad alta risoluzione a lancio corto specializzato, creando un'esperienza immersiva davanti alla sala progettata specificamente per le riunioni Teams riunioni. 
 
--   Una Teams Rooms per sale di piccole dimensioni, facilmente installata
+### <a name="what-is-front-row"></a>Che cos'è la prima riga?
 
--   Singolo display davanti alla sala per i partecipanti remoti e il contenuto da condividere
+Per offrire alle persone nella sala un maggiore senso di connessione ai partecipanti remoti e supportare la collaborazione prima, durante e dopo le riunioni, Microsoft ha introdotto un nuovo layout di contenuto per Microsoft Teams Rooms in prima fila. Visivamente, questo nuovo layout sposta la raccolta video nella parte inferiore dello schermo ed è fisso a un rapporto specifico per mantenere i volti realistici nelle dimensioni. Con questo layout, i partecipanti all'interno della sala possono vedere i colleghi remoti faccia a faccia su un piano orizzontale, in modo simile a se si trovavano nella stessa stanza.
 
-## <a name="larger-meeting-spaces"></a>Spazi riunioni più ampi
+Il contenuto della riunione è circondato da componenti fluidi contestuali come l'agenda, le attività e le note, che possono essere aggiornati in tempo reale, consentendo ai partecipanti di rimanere coinvolti e produttivi. Inoltre, la chat della riunione viene visualizzata chiaramente in modo che quando si partecipa a una riunione Teams da una sala Teams, è possibile visualizzare e partecipare facilmente alla conversazione in tempo reale. In una sala Microsoft Teams, questo contenuto viene visualizzato su uno schermo con proporzioni ampie per massimizzare le dimensioni del contenuto della riunione e il numero di partecipanti che è possibile visualizzare contemporaneamente.
 
-### <a name="medium-traditional-meeting-rooms"></a>Sale riunioni tradizionali medie
+Questo layout sarà supportato sia nelle configurazioni a schermo singolo che in quello dual-display e sarà reso disponibile tramite un Teams Rooms software. Anche se il layout della prima riga è particolarmente di grande impatto in una sala migliorata, la prima riga può essere usata in qualsiasi sala Teams in esecuzione su Windows, indipendentemente dalla configurazione dei mobili e dell'hardware.
 
-| Utilizzo | Layout | Audio | Video |
-|------------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Incontra e presenta + crea in co-creazione | Capacità tipica: 10-12 persone                             | Audio consigliato: audio installato con microfoni da tavolo o soffitto discreti e altoparlanti a parete o a soffitto | Fotocamera consigliata: fotocamera a medio-lunga distanza con funzione Pan Tilt Zoom e/o funzionalità intelligenti per il monitoraggio delle persone |
-|                              | Dimensioni tipiche: 15 piedi x 20 piedi                          |                                                                                                                               | Dimensioni minime dello schermo: 55in per la doppia, più grande per singola                                                                      |
-|                              | Visualizzazione principale singola o doppia consigliata: Singola o doppia |                                                                                                                               |                                                                                                                             |
+### <a name="how-do-you-co-create-content"></a>Come si crea il contenuto in modalità co-creata?
 
-Questa sala media è ideale per conferenze e collaborazione di gruppo, soprattutto negli spazi esistenti che già presentano un layout classico per le sale riunioni.
+In Microsoft Teams Rooms, gli utenti possono sfruttare la lavagna analogica tradizionale usando la funzionalità di acquisizione intelligente. Per un'esperienza modernizzata in cui tutti i partecipanti possono disegnare e usare l'input penna insieme, è possibile accedere a Microsoft Whiteboard usando uno schermo touchscreen davanti alla sala, dispositivi complementari come un PC, un telefono o un tablet e tramite Microsoft Surface Hub.
 
-![Rendering di una sala riunioni o di collaborazione di medie dimensioni ottimizzata per Teams riunioni.](media/look5.png) 
+## <a name="enhanced-microsoft-teams-room-design-guidance"></a>Guida alla progettazione Microsoft Teams room
 
-*La soluzione mostrata è:*
+Questa sezione è destinata a coprire la creazione di una stanza da zero. 
 
-Una sala riunioni di medie dimensioni con due schermi front-of-room per vari layout di persone e contenuti con annotazioni e collaborazione per il Surface Hub 2.
+### <a name="room-layout"></a>Layout sala 
 
-*Perché questo layout e tipo di dispositivo?*
+#### <a name="room-size"></a>Dimensioni della sala
 
-Un layout più tradizionale per le sale riunioni può essere progettato sia per le riunioni di persona che per le riunioni con partecipanti remoti e per i contenuti. La tabella è separata dalla parete di visualizzazione e dalla Teams Rooms soluzione. Più schermi assicurano che i partecipanti remoti hanno uno spazio prominente nella sala fisica e che tutti i documenti di collaborazione siano visibili. Gli altoparlanti montati offrono ai partecipanti remoti una voce "in sala". Una fotocamera montata assicura che tutti i partecipanti fisici alla riunione siano acquisiti.
+![Progetto di un design avanzato per le sale riunioni.](media/emr10.png)
 
-*Immagine qui:*
+25 ft x 14 ft
 
--   Microsoft Teams Rooms soluzione con due schermi front-of-room per un'alta visibilità dei partecipanti remoti e del contenuto condiviso
+#### <a name="room-capacity"></a>Capacità della sala 
 
--   Un'opzione Surface Hub 2 per l'annotazione e la lavagna
+Questa sala Microsoft Teams è ottimizzata per un numero di persone compreso tra 6 e 8 persone. 
 
--   Una soluzione audio e fotocamera più grande e separata installata per la massima copertura dei partecipanti nello spazio più grande. I microfoni da tavolo e gli altoparlanti a parete assicurano che tutti siano ascoltati Teams chiamate
+#### <a name="room-furniture"></a>Mobili da camera
 
-### <a name="large-traditional-meeting-rooms"></a>Sale riunioni tradizionali di grandi dimensioni
+Questa sala dispone di un tavolo curvo con i partecipanti seduti su un lato, consentendo ai partecipanti in sala di mantenere la visibilità reciproca e di essere posizionati faccia a faccia con i partecipanti remoti.
 
-| Utilizzo | Layout | Audio | Video |
-|------------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Incontra e presenta + crea in co-creazione | Capacità tipica: 12-20 persone                             | Audio consigliato: audio installato con microfoni da tavolo o soffitto discreti e altoparlanti a parete o a soffitto | Fotocamera consigliata: fotocamera a medio-lunga distanza con funzione Pan Tilt Zoom e/o funzionalità intelligenti per il monitoraggio delle persone |
-|                              | Dimensioni tipiche: 15 ft x 30 ft                          |                                                                                                                               | Dimensioni minime dello schermo: 65in per la doppia, più grande per singola                                                                      |
-|                              | Visualizzazione principale singola o doppia consigliata: Singola o doppia |                                                                                                                               |                                                                                                                             |
+Questa sala dispone di un tavolo standard della sala riunioni con un'altezza di 30 o 76 cm.
 
-Una sala di grandi dimensioni è ideale per conferenze e collaborazione di gruppo, soprattutto negli spazi esistenti che già presentano un layout classico per le sale riunioni.
+#### <a name="equipment-mounting"></a>Montaggio dell'attrezzatura
 
-![Rendering di una sala riunioni o di collaborazione di grandi dimensioni ottimizzata per Teams riunioni.](media/look6.png) 
+La selezione di una posizione per l'hardware è in genere basata sulla selezione Teams hardware certificato per la sala usato all'interno di un determinato spazio riunioni.
 
-*La soluzione mostrata è:*
+Per le distribuzioni iniziali di sale migliorate all'interno delle nostre strutture Microsoft, abbiamo scelto di montare la console di elaborazione e tocco di Microsoft Teams Rooms al tavolo, con una fotocamera integrata e un dispositivo soundbar (con audio discreto a sinistra e a destra per l'audio spaziale) montato su mobili specializzati, situati sotto l'immagine visualizzata, oltre che tra la proiezione anteriore della stanza e il tavolo. È importante tenere la console alla portata dei partecipanti senza impedirne l'uso per dispositivi personali e/o documenti. Per lo schermo viene usato un proiettore ad alta risoluzione a lancio breve.
 
-Una sala riunioni di grandi dimensioni con due schermi front-of-room per vari layout di persone e contenuti con annotazioni e collaborazione per il Surface Hub 2.
+La maggior parte dei partecipanti sceglierà di condividere contenuti all'interno di questo tipo di sala riunioni partecipando alla Teams riunione tramite un dispositivo personale. Tuttavia, la presentazione video locale in sala dovrebbe essere resa disponibile anche al tavolo in modo facilmente accessibile per gli utenti che non sono in grado di partecipare alla chiamata alla riunione.
 
-*Perché questo layout e tipo di dispositivo?*
+#### <a name="touch-console-placement"></a>Posizionamento della console tocco
 
-Un layout più tradizionale per le sale riunioni può essere progettato sia per le riunioni di persona che per le riunioni con partecipanti remoti e per i contenuti. La tabella è separata dalla parete di visualizzazione e dalla Teams Rooms soluzione. Più schermi assicurano che i partecipanti remoti hanno uno spazio prominente nella sala fisica e che tutti i documenti di collaborazione siano visibili. Gli altoparlanti montati offrono ai partecipanti remoti una voce "in sala". Una fotocamera montata assicura che tutti i partecipanti fisici alla riunione siano acquisiti.
+La Microsoft Teams Rooms touch console deve essere montata al centro del tavolo a portata di mano dei partecipanti alla riunione senza bloccare l'uso della tabella per i dispositivi personali o i documenti.
 
-*Immagine qui:*
+#### <a name="local-video-presentation"></a>Presentazione video locale
 
--   Microsoft Teams Rooms soluzione con due schermi front-of-room per un'alta visibilità dei partecipanti remoti e del contenuto condiviso
+Anche se molti partecipanti possono scegliere di condividere contenuti all'interno di questo tipo di sala riunioni partecipando alla riunione di Teams tramite un dispositivo personale alla chiamata Teams, anche la presentazione video locale nella sala dovrebbe essere resa disponibile al tavolo in modo facilmente accessibile.
 
--   Facoltativo Surface Hub 2 per l'annotazione e la lavagna
+## <a name="infrastructure"></a>Infrastruttura 
 
--   Una soluzione audio e fotocamera più grande e separata installata per ottenere la massima copertura dei partecipanti nello spazio più grande. I microfoni da tavolo e gli altoparlanti a parete assicurano che tutti siano ascoltati Teams chiamate
+### <a name="infrastructure-power"></a>Potenza dell'infrastruttura
 
-### <a name="extra-large-traditional-meeting-roomsboardrooms"></a>Sale riunioni/sale riunioni tradizionali extra-grandi
+Come minimo, le connessioni elettriche devono essere fornite sia al tavolo (per gli utenti finali) che alla posizione di montaggio dell'attrezzatura. Se nello spazio vengono usati dispositivi di co-creazione, potrebbero essere necessari anche collegamenti di alimentazione elettrica nella loro posizione o nelle rispettive località.
 
-| Utilizzo | Layout | Audio | Video |
-|------------------------------|------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Incontra e presenta + crea in co-creazione | Capacità tipica: 25-40 persone                             | Audio consigliato: microfoni a soffitto o tavolo installati e altoparlanti con un processore di segnale digitale (DSP) | Fotocamera consigliata: fotocamera a lunga distanza con funzione Pan Tilt Zoom e/o funzionalità intelligenti per il monitoraggio delle persone |
-|                              | Dimensioni tipiche: 28 ft x 33 ft                          |                                                                                                              | Dimensioni minime dello schermo: 75in per la doppia, più grande per singola                                                               |
-|                              | Visualizzazione principale singola o doppia consigliata: Singola o doppia |                                                                                                              |                                                                                                                      |
+### <a name="infrastructure-data"></a>Dati dell'infrastruttura
 
-Questo tipo di spazio include in genere un layout di dimensioni extra-grandi con un tavolo della sala riunioni, oltre a un'area per i posti a sedere per il pubblico con due schermi front-of-room.
+Le connessioni di rete devono essere fornite sia nella tabella (per gli utenti finali) che nella posizione di montaggio delle apparecchiature (per la rete principale per la Teams Rooms soluzione). Se nello spazio vengono usati dispositivi co-creati, saranno necessarie anche connessioni di rete che si connettono alla rete principale per la Teams Rooms soluzione.
 
-![Rendering di una sala riunioni di grandi dimensioni ottimizzata per Teams riunioni.](media/look7.png) 
+### <a name="acoustic-wall-treatments"></a>Trattamenti a parete acustica
 
-*La soluzione mostrata è:*
+Almeno due pareti in una stanza di questo tipo devono essere trattate acusticamente per evitare problemi di eco e rumore ambientale durante le riunioni.
 
-Una sala riunioni di dimensioni extra-grandi con due schermi front-of-room per vari layout di persone e contenuti con annotazioni e collaborazione per il Surface Hub 2.
+### <a name="window-treatments"></a>Trattamenti per finestre
 
-*Perché questo layout e tipo di dispositivo?*
+La luce delle finestre in una stanza di questo tipo può influire negativamente sull'illuminazione e introdurre riflessi e ombreggiature sia per l'immagine della fotocamera che per il display anteriore della stanza. Qualsiasi spazio con finestre dovrebbe anche contenere trattamenti per finestre che consentano di bloccare la luce esterna durante le riunioni.
 
-Questo spazio è dotato di un tavolo principale per la sala riunioni per molti partecipanti alla riunione, nonché di un'area per i posti a sedere per il pubblico per una capacità aggiuntiva per i partecipanti alla riunione locale. Un doppio display di grandi dimensioni offre ai partecipanti remoti una presenza fisica all'interno della sala. L'audio installato nel soffitto significa copertura audio per tutti i partecipanti in ogni parte della sala, anche quelli seduti lontano dal tavolo principale della riunione. Una schermata a lavagna collaborativa è dedicata ai contenuti che i partecipanti in sala e in remoto possono far parte di qualsiasi idea creativa.
+### <a name="floor-treatments"></a>Trattamenti per pavimento
 
-*Immagine qui:*
+Il pavimento in una stanza di questo tipo deve essere moquette o comunque trattato acusticamente per evitare problemi di eco e rumori ambientali durante le riunioni.
 
--   Microsoft Teams Rooms soluzione con due schermi separati
+### <a name="lighting"></a>Illuminazione 
 
--   Facoltativo Surface Hub 2 per l'annotazione e la lavagna
+Per illuminare lo spazio in modo uniforme, è consigliabile che le luci in alto siano illuminate in modo uniforme, con i partecipanti alle sale riunioni che non appaiono sbiadati o seduti in uno spazio scuro. Per evitare l'introduzione di riflessi, è necessario fare in modo che l'illuminazione diretta sia ridotta al minimo su schermi anteriori, dispositivi di creazione congiunta o altre superfici riflettenti all'interno dello spazio.
 
--   Componenti audio-visivi installati con dispositivi audio a soffitto e una soluzione fotocamera installata per ottenere la massima copertura dei partecipanti in tutto lo spazio
+## <a name="technology-guidance"></a>Indicazioni tecnologiche 
 
-### <a name="panoramic-meeting-rooms"></a>Sale riunioni panoramiche
+### <a name="microsoft-teams-rooms-solution"></a>Microsoft Teams Rooms soluzione
 
-| Utilizzo | Layout | Audio | Video |
-|------------------------------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Incontra e presenta + crea in co-creazione | Capacità tipica: 6-12 persone                                                                          | Audio consigliato: microfoni a soffitto o tavolo installati e altoparlanti in grado di supportare l'audio direzionale | Fotocamera consigliata: fotocamera a lunga distanza con campo di visualizzazione ultra-ampio e monitoraggio intelligente delle persone |
-|                              | Dimensioni tipiche: dipende dallo spazio                                                               |                                                                                                           | Dimensioni minime dello schermo: dipende dallo spazio                                                             |
-|                              | Visualizzazione principale singola o doppia consigliata: dual traditional display o proiettori misti a doppio bordo |                                                                                                           |                                                                                                        |
+Le sale avanzate per Microsoft Teams richiedono l'uso di Microsoft Teams Rooms in Microsoft Windows.
 
-Questo spazio è dedicato all'esperienza di riunione Teams coinvolgente.
-![Rendering di una sala riunioni panoramica ottimizzata per Teams riunioni.](media/look8.jpg) 
+### <a name="cameras"></a>Fotocamere
 
-*La soluzione mostrata è:*
+#### <a name="camera-options"></a>Opzioni fotocamera
 
-Una sala riunioni, orientata con il tavolo rivolto verso un panorama di schermi misti, assicurando a tutti gli utenti di ottenere la migliore visualizzazione possibile dei partecipanti alla riunione e del contenuto.
+Una stanza di questo tipo richiede l'uso di una fotocamera anteriore intelligente ad angolo ultrawide che è valutata in modo appropriato per la larghezza e la profondità dello spazio.
 
-*Perché questo layout e tipo di dispositivo?*
+#### <a name="camera-placement"></a>Posizionamento della fotocamera
 
-Un layout di tabella panoramico è progettato per la massima visibilità e coinvolgimento con i partecipanti remoti e i contenuti. I display di grandi dimensioni e misti consentono di avere un'esperienza immersiva, con tutte le sedie che si trovano di fronte ai display e che possono seguire. L'audio spaziale significa che i partecipanti remoti sono nella sala con i partecipanti locali in base alla loro posizione sullo schermo anteriore della sala.
+La fotocamera deve essere posizionata nella parte anteriore della sala sotto la proiezione anteriore della sala, ma sopra la parte superiore del tavolo per acquisire tutti i partecipanti alla sala riunioni il più vicino possibile al livello visivo.
 
-*Immagine qui:*
+### <a name="microphones"></a>Microfoni
 
--   Microsoft Teams Rooms soluzione con due schermi proiettati con bordi sfumati, creando un'esperienza immersiva davanti alla sala progettata specificamente per Teams riunioni
+#### <a name="microphone-options"></a>Opzioni microfono
 
--   Surface Hub 2 per annotazioni e lavagna
+Gli array di microfoni anteriori e i microfoni da tavolo e dall'alto funzionano per questo tipo di spazio.
 
--   Componenti audio-visivi installati con dispositivi audio a soffitto e davanti alla sala per la massima copertura dei partecipanti in tutto lo spazio, con considerazione per l'audio spaziale
+#### <a name="microphone-placement"></a>Posizionamento del microfono
 
--   Una fotocamera anteriore intelligente e dall'angolo ultra-grandangolare per catturare ogni partecipante nello spazio
+Gli array di microfoni devono essere posizionati per fornire copertura a tutti i partecipanti alle sale riunioni entro la gamma certificata del dispositivo.
 
-## <a name="non-traditional-meeting-spaces"></a>Spazi riunioni non tradizionali
+### <a name="speakers"></a>Altoparlanti
 
-### <a name="multi-purpose-spaces"></a>Spazi multivalore
+#### <a name="speaker-options"></a>Opzioni altoparlante
 
-| Utilizzo | Layout | Audio | Video |
-|------------------------------|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Incontra e presenta + crea in co-creazione | Capacità tipica: Personalizzata                           | Audio consigliato: microfoni a soffitto o tavolo installati e altoparlanti in grado di supportare l'audio direzionale | Fotocamera consigliata: fotocamera a lunga distanza con campo di visualizzazione ultra-ampio e monitoraggio intelligente delle persone |
-|                              | Dimensioni tipiche: Personalizzate                         |                                                                                                           | Dimensioni minime dello schermo: Personalizzato                                                                           |
-|                              | Visualizzazione principale singola o doppia consigliata: Personalizzato |                                                                                                           |                                                                                                        |
+Gli altoparlanti anteriori e gli altoparlanti in testa funzionano per questo tipo di spazio.
 
-Teams possono essere implementati in quasi tutti gli spazi didattici o multi-scopo a cui si può pensare. Le raccolte, gli spazi di presentazione e collaborazione a uso misto, i bar e gli spazi all'aperto possono essere tutti dotati di una soluzione Teams o di Teams dispositivi.
+Nota: l'audio spaziale non è ancora disponibile e potrebbe richiedere dispositivi audio specifici.
 
-![Rendering di una sala di grandi dimensioni ottimizzata per Teams riunioni con un display basato su proiettori e console touchscreen.](media/look9.png) 
+#### <a name="speaker-placement"></a>Posizionamento dell'altoparlante
 
-*Un esempio di spazio multi-scopo è:*
+Gli altoparlanti devono essere posizionati per fornire copertura a tutti i partecipanti alla sala riunioni entro la gamma certificata del dispositivo o dei dispositivi usati.
 
-Una Teams Rooms con un display front-of-room di grandi dimensioni basato su proiettori, più console touch per il funzionamento e più Surface Hub 2 dispositivi per un'ampia gamma di usi.
+### <a name="front-of-room-display"></a>Display davanti alla sala
 
-*I dispositivi includono:*
+#### <a name="display-type"></a>Tipo di visualizzazione
 
--   Microsoft Teams Rooms soluzione con più console touch, con un unico proiettore frontale e uno schermo di grandi dimensioni per una visibilità elevata dei partecipanti remoti e dei contenuti condivisi
+Una stanza di questo tipo richiede l'uso di proporzioni ultrawide, display front-of-room ad alta risoluzione che vengono adattati alla larghezza e alla profondità dello spazio per garantire la massima visibilità e chiarezza.
 
--   Facoltativo Surface Hub 2 per le annotazioni e la lavagna
+I tipi di visualizzazione di esempio includono:
 
--   Componenti audio-visivi installati con dispositivi audio a soffitto e una soluzione fotocamera installata per la massima copertura dei partecipanti in tutto lo spazio
+-   Proiettori laser
 
-### <a name="classrooms"></a>Aule
+-   Pareti video LED
 
-| Utilizzo | Layout | Audio | Video |
-|------------------------------|----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| Incontra e presenta + crea in co-creazione | Capacità tipica: Personalizzata                           | Audio consigliato: audio installato con microfoni da tavolo o soffitto discreti e altoparlanti a parete o a soffitto | Fotocamera consigliata: fotocamera a medio-lunga distanza con funzione Pan Tilt Zoom e/o funzionalità intelligenti per il monitoraggio delle persone |
-|                              | Dimensioni tipiche: Personalizzate                         |                                                                                                                               | Dimensioni minime dello schermo: Personalizzato                                                                                                |
-|                              | Visualizzazione principale singola o doppia consigliata: Personalizzato |                                                                                                                               |                                                                                                                             |
+-   Display LCD o pannello piatto OLED specializzati
 
-Le aule, incluse quelle tradizionali e invertete, richiedono un impegno attivo da parte di tutti i presenti. L'istruzione, la discussione e la collaborazione efficaci tra molte parti sono fondamentali.
+#### <a name="display-functions"></a>Funzioni di visualizzazione
 
-![Rendering di una classe ottimizzata per le Teams delle riunioni.](media/look10.png) 
+Le funzionalità Microsoft Teams Rooms avanzate, come per tutte le altre soluzioni Microsoft Teams Rooms, richiedono l'uso di schermi in grado di supportare le caratteristiche seguenti per il corretto funzionamento:
 
-*La soluzione mostrata è:*
+-   Sospensione e riattivazione rapida dalla sospensione in base alla sincronizzazione HDMI.
 
-Classe progettata sia per i partecipanti di persona che per gli studenti remoti con un layout che supporta un singolo docente che si indirizza a entrambi i gruppi contemporaneamente.
+    -   Per i proiettori, i periodi di riscaldamento e di recupero automatici devono essere supportati senza l'intervento dell'utente.
 
-*Perché questo layout e tipo di dispositivo?*
+-   Gli schermi devono supportare l'EDID appropriato e le risoluzioni richieste dalla progettazione Microsoft Teams Rooms grafica.
 
-Un grande schermo offre ai partecipanti remoti una presenza fisica all'interno della sala, insieme agli altoparlanti davanti alla sala che consentono di sentire le loro voci da tutti, anche da quelli che si trovano ai banchi più lontano dalla fonte. I microfoni si trovano nella parte anteriore della sala e in tutto lo spazio, in modo che insegnanti e studenti possano spostarsi nella stanza e essere ancora ascoltati. Una schermata della presentazione è dedicata al contenuto sia per i partecipanti in sala che per i partecipanti remoti.
+#### <a name="display-placement"></a>Posizionamento dello schermo
 
-*Immagine qui:*
+Una sala avanzata richiede che lo schermo sia posizionato davanti a tutti i partecipanti alla riunione, direttamente di fronte al tavolo.
 
--   Microsoft Teams Rooms soluzione con due schermi separati, un singolo carrello o uno schermo stand-based che mostra i partecipanti remoti che il docente può vedere in modo chiaro e una schermata di presentazione separata per il contenuto didattico condiviso sia per gli studenti locali che per gli studenti remoti da osservare
+La linea centrale orizzontale dello schermo deve essere centrata sulla stessa linea centrale della tabella.
 
--   Kit con altoparlanti e fotocamera nella parte anteriore della sala, microfoni nella parte anteriore e distribuiti in tutta la classe
+La linea centrale verticale dello schermo non deve essere superiore a +/- 15 gradi di offset rispetto alla linea dell'occhio di un tipico partecipante alla riunione in sala seduto al tavolo.
 
-### <a name="lecture-halls-and-auditoriums"></a>Sale conferenze e auditorium
+#### <a name="display-count"></a>Numero di visualizzazione
 
-| Utilizzo | Layout | Audio | Video |
-|------------------------------|----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Incontra e presenta + crea in co-creazione | Capacità tipica: Personalizzata                           | Audio consigliato: audio installato con microfoni da tavolo o soffitto discreti e altoparlanti a parete o a soffitto | Fotocamera consigliata: fotocamera a medio-lunga distanza con funzione Pan Tilt Zoom e/o abilità intelligenti di monitoraggio delle persone |
-|                              | Dimensioni tipiche: Personalizzate                         |                                                                                                                               | Dimensioni minime dello schermo: Personalizzato                                                                                             |
-|                              | Visualizzazione principale singola o doppia consigliata: Personalizzato |                                                                                                                               |                                                                                                                          |
+Una sala avanzata richiede che lo schermo sia un unico display con proporzioni ampie o una combinazione combinata di schermi che possono ottenere l'effetto di essere un unico schermo quando viene visualizzato dai partecipanti alla riunione in sala.
 
-Analogamente alle aule, le aule contengono numerosi studenti che devono concentrarsi su un docente e su tutte le informazioni che stanno presentando. Tuttavia, le sale conferenze in genere non richiedono la stessa quantità di interazione tra gli studenti. Lo stato attivo è sulle informazioni, non sulla collaborazione.
+### <a name="co-create-options"></a>Opzioni di creazione in co-creazione
 
-![Rendering di una sala conferenze ottimizzata per un'esperienza Teams riunione.](media/look11.png) 
+#### <a name="microsoft-whiteboard"></a>Microsoft Whiteboard
 
-*La soluzione mostrata è:*
+Tutte le Teams Rooms sono in grado di sfruttare Microsoft Whiteboard tramite un dispositivo di collaborazione interattivo, ad esempio un Microsoft Surface Hub, uno schermo touchscreen davanti alla sala e tramite dispositivi complementari come un PC, un telefono o un tablet.
 
-Una sala conferenze progettata sia per i partecipanti di persona che per gli studenti remoti con un layout che supporta un singolo docente che si indirizza a entrambi i gruppi contemporaneamente, oltre a creare e aggiungere annotazioni al contenuto da una superficie di tocco.
+#### <a name="traditional-whiteboard"></a>Lavagna tradizionale 
 
-*Perché questo layout e tipo di dispositivo?*
+Tutte Teams Rooms su Windows possono usare le lavagne tradizionali in una riunione Teams usando la funzionalità di acquisizione intelligente e una fotocamera del contenuto secondaria.
 
-I partecipanti remoti possono vedere lo stesso campo di visualizzazione che i partecipanti di persona hanno tramite la fotocamera montata. Il docente può vedere gli studenti remoti tramite le loro videocamere su uno schermo. Uno schermo di presentazione dedicato e uno schermo touch-surface per la lavagna visualizzano il materiale didattico del docente per tutti. Un microfono a soffitto e un altoparlante potente assicurano che il docente e le domande degli studenti siano ascoltati in modo chiaro.
+## <a name="recommended-products-for-this-space"></a>Prodotti consigliati per questo spazio
 
-*Immagine qui:*
+### <a name="microsoft-teams-room-console-and-compute"></a>Microsoft Teams console room e calcolo
 
--   Microsoft Teams Rooms soluzione con due schermi separati, un singolo carrello o un display stand-based che mostra i partecipanti remoti che il docente può vedere in modo chiaro e una schermata di presentazione separata per il contenuto didattico condiviso nella chiamata che gli studenti locali e remoti possono osservare
+-   Una Windows basata su Microsoft Teams Rooms soluzione.
 
--   Facoltativo Surface Hub 2 per le annotazioni e la lavagna
+Come illustrato:
 
--   Componenti audio-visivi installati con dispositivi audio a soffitto e una soluzione fotocamera installata per la massima copertura dei partecipanti in tutto lo spazio
+[Logitech TAP per la console touch abbinata a un dispositivo Lenovo Compute.](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/logitech-tap-room-systems-with-thinksmart-edition-tiny/523)
+
+Altre opzioni:
+
+-   [Lenovo ThinkSmart Core + Controller](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/lenovo-thinksmart-core-controller/948)
+
+-   [Sistema di conferenza personalizzabile Crestron Flex](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/crestron-flex-customizable-conference-system/849)
+
+-   [Sistema di conferenza personalizzabile Crestron Flex Advanced](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/crestron-flex-customizable-conference-system/849)
+
+-   [Poly G10-T](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/poly-g10-t/564)
+
+### <a name="camera"></a>Fotocamera
+
+-   Una fotocamera ultrawide con inquadratura intelligente.
+
+Come illustrato:
+
+[Jabra Panacast 50](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/jabra-panacast-50-series/922)
+
+Altre opzioni:
+
+-   [Jabra PanaCast](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/jabra-panacast/353)
+
+-   [Yealink UVC30](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/yealink-uvc30-room/409)
+
+-   [Yealink UVC40](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/yealink-uvc40/648)
+
+-   [Bose Videobar VB1](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/bose-videobar-vb1/809)
+
+-   [Poly Studio](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/poly-studio/206)
+
+-   Poly Studio E70
+
+### <a name="microphone"></a>Microfono
+
+-   Una soluzione microfono certificata che catturerà chiaramente tutti i partecipanti alla riunione in sala.
+
+Come illustrato:
+
+[Jabra Panacast 50](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/jabra-panacast-50-series/922)
+
+Altre opzioni:
+
+-   [Yealink UVC40](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/yealink-uvc40/648)
+
+-   [Bose Videobar VB1](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/bose-videobar-vb1/809)
+
+-   [Poly Studio](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/poly-studio/206)
+
+-   [Lenovo ThinkSmart Bar](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/lenovo-thinksmart-bar/949)
+
+-   [Lenovo ThinkSmart Bar XL](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/lenovo-thinksmart-bar/949)
+
+-   [Hub della sala riunioni Biamp Devio con microfono Parle Ceiling](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/biamp-devio-conference-room-hubs/920)
+
+-   [Hub della sala riunioni Biamp Devio con microfono da tavolo Parle](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/biamp-devio-conference-room-hubs/920)
+
+-   [Sistema audio shure MXA710-4FT a parete](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/shure-mxa710-audio-systems/967)
+
+-   [Sistema di audioconferenza Nureva HDL300](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/nureva-hdl300-audio-conferencing-system/739)
+
+-   [Audio della sala riunioni QSC: altoparlanti a soffitto](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/qsc-meeting-room-audio-in-ceiling-speakers/700)
+
+-   [Audio direzionale QSC - audio a soffitto](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/qsc-directional-audio/704)
+
+-   [Audio della sala riunioni QSC: altoparlanti a ciondolo](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/qsc-meeting-room-audio-pendant-speakers/711)
+
+-   [Biamp audio con microfono parlé soffitto](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/biamp-complete-room-audio-with-parle-ceiling-mic/613)
+
+-   [Biamp audio con microfoni Parlé tabletop](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/biamp-complete-room-audio-with-parle-ceiling-mic/613)
+
+-   [Soluzione audio a soffitto Bose DS4](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/bose-ds4-ceiling-audio-solution/694)
+
+-   [Soluzione audio a soffitto Bose ES1](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/bose-es1-ceiling-audio-solution/506)
+
+-   [Shure Microflex Advance MXA910 + IntelliMix P300](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/shure-microflex-advance-mxa910-intellimix-p300/429)
+
+-   [Biamp Tesira DSP & Sennheiser TeamConnect Ceiling 2](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/biamp-tesira-dsp-sennheiser-teamconnect-ceiling-2/359)
+
+### <a name="speakers"></a>Altoparlanti
+
+-   Una soluzione certificata per gli altoparlanti che fornirà audio chiaro e comprensibile a tutti i partecipanti alla riunione in sala.
+
+Come illustrato:
+
+[Jabra Panacast 50](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/jabra-panacast-50-series/922)
+
+Altre opzioni:
+
+-   [Yealink UVC40](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/yealink-uvc40/648)
+
+-   [Bose Videobar VB1](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/bose-videobar-vb1/809)
+
+-   [Poly Studio](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/poly-studio/206)
+
+-   [Lenovo ThinkSmart Bar](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/lenovo-thinksmart-bar/949)
+
+-   [Lenovo ThinkSmart Bar XL](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/lenovo-thinksmart-bar/949)
+
+-   [Hub della sala riunioni Biamp Devio con microfono Parle Ceiling](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/biamp-devio-conference-room-hubs/920)
+
+-   [Hub della sala riunioni Biamp Devio con microfono da tavolo Parle](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/biamp-devio-conference-room-hubs/920)
+
+-   [Sistema audio shure MXA710-4FT a parete](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/shure-mxa710-audio-systems/967)
+
+-   [Sistema di audioconferenza Nureva HDL300](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/nureva-hdl300-audio-conferencing-system/739)
+
+-   [Audio della sala riunioni QSC: altoparlanti a soffitto](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/qsc-meeting-room-audio-in-ceiling-speakers/700)
+
+-   [Audio direzionale QSC - audio a soffitto](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/qsc-directional-audio/704)
+
+-   [Audio della sala riunioni QSC: altoparlanti a ciondolo](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/qsc-meeting-room-audio-pendant-speakers/711)
+
+-   [Biamp audio con microfono parlé soffitto](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/biamp-complete-room-audio-with-parle-ceiling-mic/613)
+
+-   [Biamp audio con microfoni Parlé tabletop](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/biamp-complete-room-audio-with-parle-ceiling-mic/613)
+
+-   [Soluzione audio a soffitto Bose DS4](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/bose-ds4-ceiling-audio-solution/694)
+
+-   [Soluzione audio a soffitto Bose ES1](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/bose-es1-ceiling-audio-solution/506)
+
+-   [Shure Microflex Advance MXA910 + IntelliMix P300](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/shure-microflex-advance-mxa910-intellimix-p300/429)
+
+-   [Biamp Tesira DSP & Sennheiser TeamConnect Ceiling 2](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/biamp-tesira-dsp-sennheiser-teamconnect-ceiling-2/359)
+
+### <a name="displays"></a>Visualizza
+
+-   Proiettore laser ad alta risoluzione a lancio breve con riattivazione automatica durante la sincronizzazione e il tempo di recupero durante la funzione di sospensione.
+
+Come illustrato:
+
+Epson EpiqVision™ Ultra LS500
+
+Altre opzioni:
+
+Per lo scenario ideale, altre opzioni di visualizzazione (proiettori alternativi, pareti a LED e schermi a pannello piatto) dovrebbero essere in grado di creare un'immagine con spanning di tabella, supportare un'immagine 4K e proporzioni 21:9.
+
+### <a name="co-create-options"></a>Opzioni di creazione in co-creazione
+
+-   Una lavagna analogica con una fotocamera del contenuto O
+
+-   Uno schermo touch interattivo compatibile.
+
+Come illustrato:
+
+[Logitech Scribe](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/logitech-scribe/966)
+
+Altre opzioni:
+
+Fotocamere di contenuto:
+
+-   [Fotocamera del contenuto Yealink UVC30](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/yealink-uvc30-content-camera/647)
+
+-   [Huddly Canvas](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/huddly-canvas/568)
+
+-   [Kit fotocamera contenuto Logitech BRIO](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/logitech-brio-content-camera-kit/349)
+
+Dispositivi touch interattivi:
+
+[Microsoft Surface Hub 2S](https://www.microsoft.com/en-us/microsoft-teams/across-devices/devices/product/microsoft-surface-hub-2s/822?)

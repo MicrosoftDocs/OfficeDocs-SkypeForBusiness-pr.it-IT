@@ -17,18 +17,22 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: af6433cb3e5ca0e1849322bdd128915e826e219b
-ms.sourcegitcommit: 2044fdcb0c5db10dbc77c5d66e382c1b927ccdc4
+ms.openlocfilehash: 8d1b84fc78558fcbb1945cbc56b311b5e06234a5
+ms.sourcegitcommit: e97c981489ff1f02674df57426da3b22cc6d68c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "63040064"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "63062530"
 ---
 # <a name="set-up-parent-connection-in-microsoft-teams-for-education"></a>Configurare la connessione padre in Microsoft Teams per l'istruzione
 
 Parent Connection in Teams per l'istruzione aiuta i docenti a connettersi e interagire in modo sicuro con i genitori e i tutori degli studenti nei team di classe usando una chat Teams, che verrà scalata in tutta l'organizzazione dell'educatore. Il provisioning di tutti i dati dei genitori e dei tutori viene eseguito School Data Sync, consentendo al personale IT di configurare le attività senza problemi.
 
-Dopo aver configurato genitori e tutori, possono chattare con i docenti dei loro studenti usando Teams chat. Per indicazioni su come collegare genitori e tutori agli educatori, vedere Connessione [con i docenti in Teams](https://support.microsoft.com/topic/connect-with-educators-in-teams-ec2430c3-952a-4ba4-9891-1d1cab577960).
+Dopo aver configurato docenti e tutori, possono chattare tra loro usando Teams chat. 
+
+Per indicazioni su come collegare genitori e tutori agli educatori, vedere Connessione [con i docenti in Teams](https://support.microsoft.com/topic/connect-with-educators-in-teams-ec2430c3-952a-4ba4-9891-1d1cab577960).
+
+Per indicazioni su come impostare i docenti per comunicare con genitori e tutori, vedere Comunicare con [i tutori in Microsoft Teams](https://support.microsoft.com/topic/communicate-with-guardians-in-microsoft-teams-01471ecd-eb5d-4eda-9c5d-0064d672960e?ui=en-us&rs=en-us&ad=us).
 
 I genitori collaborano anche con la chat supervisionata. Genitori e tutori non hanno le autorizzazioni Teams, il che significa che non possono avviare conversazioni con gli studenti o rimuovere utenti con autorizzazioni complete (ad esempio docenti) dalle chat. Per altre informazioni sulla chat supervisionata, vedere [Usare chat supervisionate in Microsoft Teams](supervise-chats-edu.md).
 
@@ -61,7 +65,7 @@ I genitori collaborano anche con la chat supervisionata. Genitori e tutori non h
 > [!NOTE]
 >I genitori e i tutori sono classificati come utenti esterni nella caratteristica Genitori, il che significa che non hanno diritti di tenant completi. Hanno accesso solo alla chat o alle chat a cui vengono aggiunti, oltre a file, immagini e altri contenuti condivisi nella chat.
 >
->Inoltre, gli utenti esterni possono vedere la presenza (offline, disponibile, occupato e così via) degli utenti dell'organizzazione, ma questa opzione può essere disattivata usando PowerShell per proteggere la privacy degli utenti. In PowerShell usare [Set-CsPrivacyConfiguration](/powershell/module/skype/set-csprivacyconfiguration?view=skype-ps) e impostare ``EnablePrivacyMode=true``.
+>Inoltre, gli utenti esterni possono vedere la presenza (offline, disponibile, occupato e così via) degli utenti dell'organizzazione, ma questa opzione può essere disattivata usando PowerShell per proteggere la privacy degli utenti. In PowerShell usare [Set-CsPrivacyConfiguration](/powershell/module/skype/set-csprivacyconfiguration) e impostare ``EnablePrivacyMode=true``.
 >
 >Anche se genitori e tutori sono utenti esterni, i loro contributi alle chat sono individuabili. Per informazioni su come condurre un'Teams eDiscovery, vedere Condurre [un'indagine di eDiscovery sui contenuti in Microsoft Teams](ediscovery-investigation.md).
 

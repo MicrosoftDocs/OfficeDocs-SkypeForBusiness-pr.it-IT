@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Questo articolo fornisce indicazioni su come usare i Teams dei pannelli.
-ms.openlocfilehash: bd1a7a865d6e07cec47838a518d19523afef5134
-ms.sourcegitcommit: f8b935e009895138eddfc1ae360b7b2ace747d3c
+ms.openlocfilehash: e39b54d290ac3c8d4809f9da011c2e28451c2ae7
+ms.sourcegitcommit: e97c981489ff1f02674df57426da3b22cc6d68c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "63050902"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "63062540"
 ---
 # <a name="how-to-use-microsoft-teams-panels"></a>Come usare i Microsoft Teams di lavoro
 
@@ -204,7 +204,7 @@ Nel pannello Teams, accedere con le credenziali di amministratore.
 
 Le impostazioni di check-in e rilascio sala consentono agli utenti di accedere a una riunione nei Teams nella sala che hanno prenotato all'inizio della riunione. Se un utente non archivia entro un periodo di tempo impostato dopo l'ora di inizio della riunione, la sala viene rilasciata e diventa disponibile per la prenotazione da parte di altri utenti.
 
-Quando un pannello Teams è associato a una sala Microsoft Teams su Android, le notifiche di archiviazione possono essere abilitate per essere visualizzate sullo schermo front0of-room quando le riunioni sono in ritardo.
+Quando Teams pannelli sono associati a una sala Microsoft Teams su Android, le notifiche di archiviazione possono essere abilitate per essere visualizzate sullo schermo davanti alla sala quando le riunioni sono in ritardo.
 
 Per abilitare il check-in e il rilascio delle chat room, vedere [Check-in](check-in-and-room-release.md) e rilascio sala Microsoft Teams pannelli.
 
