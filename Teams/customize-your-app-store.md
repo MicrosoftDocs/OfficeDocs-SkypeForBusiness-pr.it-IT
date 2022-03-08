@@ -1,25 +1,30 @@
 ---
 title: App store personalizzate
-author: SerdarSoysal
-ms.author: serdars
-manager: serdars
+author: guptaashish
+ms.author: guptaashish
+manager: prkosh
 ms.reviewer: prem
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 ms.collection:
-  - M365-collaboration
-  - Teams_ITAdmin_Help
+- M365-collaboration
+- Teams_ITAdmin_Help
 f1.keywords:
-  - NOCSH
+- NOCSH
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sull'app store personalizzato in Microsoft Teams.
+ms.openlocfilehash: f98b91c8a700bfc8ebb560930862e66b38a35a0e
+ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "63070385"
 ---
-
 # <a name="custom-apps-store-in-microsoft-teams"></a>App personalizzate archiviate in Microsoft Teams
 
 Ora è possibile personalizzare l'app store dell'organizzazione in Teams con il marchio aziendale aggiungendo il logo, gli sfondi personalizzati e i colori del testo personalizzati per renderlo più invitante per gli utenti finali.
@@ -27,7 +32,7 @@ Ora è possibile personalizzare l'app store dell'organizzazione in Teams con il 
 > [!Note]
 > Le modifiche alla personalizzazione richiederanno 24 ore per l'applicazione.
 
-È possibile accedere all'archivio di personalizzazione nell'interfaccia di amministrazione selezionando Teams **appCustomize** >  **store**.
+È possibile accedere all'archivio di personalizzazione nell'interfaccia di amministrazione selezionando Teams **appCustomize** >  store.
 
   ![Funzionalità di personalizzazione dello store della Console di amministrazione evidenziata.](media/customize-app-store.png)
 
@@ -47,7 +52,7 @@ Quando si seleziona **l'opzione Scegli un'immagine** , è possibile caricare il 
 - .png
 - .jpg
 
-Il logo viene visualizzato nell'angolo in alto a destra del catalogo app tenant nell'Teams store.
+Il logo viene visualizzato nell'angolo in alto a destra del catalogo app tenant nell'Teams Store.
 
 ## <a name="customize-your-small-logo"></a>Personalizzare il logo di piccole dimensioni
 
@@ -82,7 +87,7 @@ Le opzioni disponibili sono:
   - .jpg
 - Scegliere uno sfondo personalizzato. Quando si seleziona **Scegli un colore personalizzato**, si apre un selettore colori. Selezionare il colore desiderato regolando la scala del selettore colori.
 
-L'immagine o il colore di sfondo viene usato come sfondo per il banner superiore nel Teams di app tenant.
+L'immagine o il colore di sfondo viene usato come sfondo per il banner superiore nel Teams app tenant.
 
 ## <a name="customize-the-text-color-of-your-name"></a>Personalizzare il colore del testo del nome
 
@@ -104,7 +109,7 @@ Per visualizzare in anteprima le modifiche, selezionare **Anteprima app store** 
 ![anteprima dell'app store personalizzato.](media/PowerAppsInStore650w.png)
 
 > [!Note]
-> La rappresentazione può variare rispetto alla versione finale dell'archivio app personalizzato, perché alcuni colori predefiniti si basano sulla versione di Teams client.
+> La rappresentazione può variare rispetto alla versione finale dell'archivio app personalizzato, perché alcuni colori predefiniti si basano sulla versione di Teams client degli utenti.
 
 ## <a name="related-article"></a>Articolo correlato
 

@@ -1,9 +1,9 @@
 ---
 title: Consenso specifico delle risorse in Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+author: guptaashish
+ms.author: guptaashish
 ms.reviewer: nkramer
-manager: serdars
+manager: prkosh
 ms.topic: article
 audience: admin
 ms.service: msteams
@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9e2c77e33165bedbb5302a1202f85906a64cea9a
-ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.openlocfilehash: 9e6e2f0e7827dab36645fec7105a9cbe0c439472
+ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2022
-ms.locfileid: "62400830"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "63070655"
 ---
 # <a name="resource-specific-consent-in-microsoft-teams"></a>Consenso specifico delle risorse in Microsoft Teams
 
@@ -43,8 +43,8 @@ Le due impostazioni seguenti determinano se i proprietari del team possono forni
 
 Questa impostazione controlla se gli utenti dell'organizzazione possono acconsentire alle app per loro conto. Per consentire ai proprietari del team di fornire il consenso, questa impostazione deve essere impostata su **Sì**. Per gestire questa impostazione, eseguire le operazioni seguenti:
 
-1. Nel portale di Azure passare a impostazioni utente Enterprise **applicazioni** > .
-2. In **Enterprise,** impostare Gli utenti possono acconsentire alle **app** che accedono ai dati aziendali per loro conto su **No** o **Sì**.
+1. Nel portale di Azure passare a Enterprise **appalti utente** > .
+2. In **Enterprise,** impostare Gli utenti possono acconsentire alle app che accedono ai dati aziendali per loro **conto** su **No** o **Sì**.
 
 È anche possibile gestire questa impostazione usando PowerShell. Per altre informazioni, vedere [Configurare il contenuto degli utenti per le applicazioni](/azure/active-directory/manage-apps/configure-user-consent#configure-user-consent-to-applications).
 
@@ -63,7 +63,7 @@ Oltre alle impostazioni in Azure AD[](manage-apps.md#allow-and-block-apps), le i
 
 Questa impostazione dell'app a livello di organizzazione controlla se gli utenti dell'organizzazione possono usare app di terze parti. Questa impostazione deve essere attivata per consentire ai proprietari del team di fornire il consenso. Per gestire questa impostazione, eseguire le operazioni seguenti:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare a Teams **app** >  di gestione delle **app e quindi** fare clic su Impostazioni app a livello **di organizzazione**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare a Teams **app** >  di gestione **delle** app e quindi fare clic su Impostazioni app a livello **di organizzazione**.
 2. In **App di terze parti** disattivare o attivare Consenti **app di terze parti**.
 
     ![Screenshot dell'impostazione "Consenti app di terze parti in Teams"](media/resource-specific-consent-org-wide-setting.png)

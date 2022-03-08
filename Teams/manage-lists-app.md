@@ -1,31 +1,36 @@
 ---
 title: Gestire l'app Elenchi per l'organizzazione
-author: SerdarSoysal
-ms.author: serdars
-ms.reviewer: 'anach,v-jasuk'
-manager: serdars
+author: guptaashish
+ms.author: guptaashish
+ms.reviewer: anach,v-jasuk
+manager: prkosh
 ms.topic: article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
 searchScope:
-  - Microsoft Teams
-  - Microsoft Cloud for Healthcare
-  - Microsoft Cloud for Retail
+- Microsoft Teams
+- Microsoft Cloud for Healthcare
+- Microsoft Cloud for Retail
 description: Informazioni su come gestire l'app Elenchi in Teams per gli utenti nell'organizzazione.
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
 ms.collection:
-  - M365-collaboration
-  - microsoftcloud-healthcare
-  - microsoftcloud-retail
-  - m365initiative-lists
+- M365-collaboration
+- microsoftcloud-healthcare
+- microsoftcloud-retail
+- m365initiative-lists
 appliesto:
-  - Microsoft Teams
-ms.custom: null
+- Microsoft Teams
+ms.custom: ''
+ms.openlocfilehash: 1028a1e5826a2519de83d8dc73b7d2f55282ca4b
+ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "63070612"
 ---
-
 # <a name="manage-the-lists-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Elenchi per l'organizzazione in Microsoft Teams
 
 ## <a name="overview-of-lists"></a>Panoramica di Elenchi
@@ -55,7 +60,7 @@ Un ufficio postale locale è responsabile dello smistamento e della consegna del
 
 Dopo la riunione, i postini prelevano la posta e iniziano il percorso di consegna. Lungo il percorso possono verificarsi degli incidenti, ad esempio un incidente automobilistico, un problema legato ai cani o una protesta con disordini sociali. Quando i postini incontrano un incidente, usano Teams sui propri dispositivi mobili per registrare i dettagli dell'incidente, che vengono monitorati in un elenco nel canale del team. Tutte le persone del team, inclusi i postini sul campo, possono visualizzare queste informazioni ed essere sempre informati.
 
-Prima di passare a Teams, i corrieri di posta hanno dovuto tornare all'ufficio postale per completare un modulo in copia per segnalare un incidente, che è stato quindi immesso in un foglio di calcolo Excel postale. Teams offre ai postini un'esperienza mobile first, in cui possono usare Elenchi per segnalare gli incidenti sul campo mentre si verificano, condividere i dettagli degli incidenti con i membri del team, avere conversazioni su di essi sul canale e contribuire alla risoluzione degli incidenti.
+Prima di passare a Teams, i corrieri di posta hanno dovuto tornare all'ufficio postale per completare un modulo di copia per segnalare un incidente, che è stato quindi immesso in un foglio di calcolo Excel postale. Teams offre ai postini un'esperienza mobile first, in cui possono usare Elenchi per segnalare gli incidenti sul campo mentre si verificano, condividere i dettagli degli incidenti con i membri del team, avere conversazioni su di essi sul canale e contribuire alla risoluzione degli incidenti.
 
 ## <a name="what-you-need-to-know-about-lists"></a>Cosa c'è da sapere su Elenchi
 
@@ -114,7 +119,7 @@ Elenchi supporta [Power Automate](/power-automate/flow-types) per i flussi di la
 
 ## <a name="give-feedback-or-report-an-issue"></a>Fornire un feedback o segnalare un problema
   
-Per inviare feedback o segnalare un problema, selezionare Guida  nella parte inferiore del riquadro di spostamento sinistro in Teams e quindi selezionare Segnala **un problema**. Selezionare **Elenchi** e quindi immettere il proprio feedback o i dettagli sul problema che si è verificato.
+Per inviare feedback o segnalare un problema, selezionare Guida  nella parte inferiore della barra di spostamento sinistra in Teams e quindi selezionare Segnala **un problema**. Selezionare **Elenchi** e quindi immettere il proprio feedback o i dettagli sul problema che si è verificato.
 
 ## <a name="related-articles"></a>Articoli correlati
 

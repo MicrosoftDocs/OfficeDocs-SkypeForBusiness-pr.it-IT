@@ -1,7 +1,7 @@
 ---
 title: Teams delle app per gli utenti non standard
-author: SerdarSoysal
-ms.author: serdars
+author: guptaashish
+ms.author: guptaashish
 ms.reviewer: joglocke
 manager: serdars
 ms.topic: article
@@ -11,14 +11,19 @@ search.appverid: MET150
 description: Informazioni sul comportamento delle app Microsoft Teams per gli utenti non standard.
 ms.localizationpriority: medium
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.collection:
-  - M365-collaboration
-  - m365initiative-meetings
+- M365-collaboration
+- m365initiative-meetings
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: 4dd2a96b7df3ebcb3ae8659222744ed0f3273fa3
+ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "63070215"
 ---
-
 # <a name="microsoft-teams-apps-behavior-for-non-standard-users"></a>Microsoft Teams delle app per gli utenti non standard
 
 Questo articolo descrive il comportamento delle app in Teams quando gli utenti guest, esterni (federati) e anonimi sono presenti in un Teams locale.

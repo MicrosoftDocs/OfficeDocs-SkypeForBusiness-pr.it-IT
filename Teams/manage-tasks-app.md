@@ -1,28 +1,33 @@
 ---
 title: Gestire l'app Tasks per l'organizzazione in Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
-manager: serdars
+author: guptaashish
+ms.author: guptaashish
+manager: prkosh
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: andfried
 search.appverid: MET150
 searchScope:
-  - Microsoft Teams
-  - Microsoft Cloud for Healthcare
-  - Microsoft Cloud for Retail
+- Microsoft Teams
+- Microsoft Cloud for Healthcare
+- Microsoft Cloud for Retail
 audience: admin
 description: Informazioni su come gestire l'app Tasks per gli utenti nell'organizzazione.
 ms.localizationpriority: medium
 MS.collection:
-  - Teams_ITAdmin_Help
-  - M365-collaboration
-  - microsoftcloud-healthcare
-  - microsoftcloud-retail
+- Teams_ITAdmin_Help
+- M365-collaboration
+- microsoftcloud-healthcare
+- microsoftcloud-retail
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: 2ad0324509849700ea74afe582d4ce7a4934dc3e
+ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "63070595"
 ---
-
 # <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Tasks per l'organizzazione in Microsoft Teams
 
 ## <a name="overview-of-tasks"></a>Panoramica di Tasks
@@ -38,11 +43,11 @@ Per le organizzazioni che vogliono semplificare la gestione delle attività per 
 
 ## <a name="what-you-need-to-know-about-tasks"></a>Informazioni necessarie riguardo Tasks
 
-Tasks è disponibile sia come app che come scheda in un canale. L'app mostra sia le singole attività To Do attività del team da Planner. La scheda mostra solo le attività del team.
+Tasks è disponibile sia come app che come scheda in un canale. L'app mostra sia le singole attività To Do di Planner che le attività del team. La scheda mostra solo le attività del team.
 
 Con Tasks, gli utenti ottengono un'esperienza desktop, Web e per dispositivi mobili. Se Tasks è installato nel client desktop di Teams, gli utenti lo vedranno anche nei client Web e per dispositivo mobile di Teams. L'eccezione è guest. È importante sapere che i gli utenti guest possono accedere solo all’app Tasks dal client per dispositivi mobili Teams. Gli utenti guest visualizzeranno le schede Tasks nei client desktop e Web di Teams.
 
-**Mie attività** mostra le singole attività di un utente. **Piani condivisi** mostra le attività su cui sta lavorando l'intero team e include gli elenchi attività aggiunti come scheda Tasks a un canale. Si notino le relazioni seguenti tra le attività in Attività, To Do e Planner:
+**Mie attività** mostra le singole attività di un utente. **Piani condivisi** mostra le attività su cui sta lavorando l'intero team e include gli elenchi attività aggiunti come scheda Tasks a un canale. Tenere presente le relazioni seguenti tra le attività in Attività, To Do e Planner:
 
 - Gli elenchi attività che un utente crea nell’app Tasks verranno visualizzati nei client To Do per quell’utente. Analogamente, gli elenchi attività che un utente crea in To Do verranno visualizzati nelle **Mie attività** in Tasks per quell’utente. Lo stesso vale per le singole attività.
 
@@ -80,7 +85,7 @@ Per aggiungere l'app Tasks agli utenti, è possibile modificare i criteri global
 
 Se non si vuole consentire a un utente di visualizzare le **Mie attività**, è possibile nasconderl0. Per nascondere **Le mie attività**, [rimuovere la licenza Exchange Online utente](/microsoft-365/admin/manage/remove-licenses-from-users). È importante sapere che, dopo aver rimosso una licenza di Exchange Online, l'utente non ha più accesso alla propria cassetta postale.  I dati della cassetta postale vengono mantenuti per 30 giorni, dopo i quali i dati verranno rimossi e non potranno essere recuperati a meno che la cassetta postale non venga impostata su [Blocco sul posto o Blocco per controversia legale](/exchange/security-and-compliance/in-place-and-litigation-holds).
 
-Non è consigliabile rimuovere una licenza di Exchange Online per information worker, ma potrebbero esserci alcuni **scenari in cui** è possibile nascondere le attività personali in questo modo, ad esempio per i frontline worker che non dipendono dalla posta elettronica.
+Non è consigliabile rimuovere una licenza Exchange Online per information worker, ma potrebbero esserci alcuni **scenari in cui** è possibile nascondere le attività personali in questo modo, ad esempio per i frontline worker che non dipendono dalla posta elettronica.
 
 ## <a name="task-publishing"></a>Pubblicazione di attività
 

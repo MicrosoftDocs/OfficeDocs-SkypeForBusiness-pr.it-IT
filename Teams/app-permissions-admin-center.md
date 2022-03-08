@@ -1,9 +1,9 @@
 ---
 title: Visualizzare le autorizzazioni per l'app e concedere il consenso dell'amministratore nell'Microsoft Teams di amministrazione
-author: SerdarSoysal
-ms.author: serdars
+author: guptaashish
+ms.author: guptaashish
 ms.reviewer: vaibhava
-manager: serdars
+manager: prkosh
 ms.topic: article
 audience: admin
 ms.service: msteams
@@ -12,9 +12,14 @@ description: Informazioni su come visualizzare le autorizzazioni richieste dalle
 ms.localizationpriority: medium
 ms.collection: M365-collaboration
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: 30425631f0f3058d0fe39542b929e01bf0344367
+ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "63070365"
 ---
-
 # <a name="view-app-permissions-and-grant-admin-consent-in-the-microsoft-teams-admin-center"></a>Visualizzare le autorizzazioni per l'app e concedere il consenso dell'amministratore nell'Microsoft Teams di amministrazione
 
 La [pagina Gestisci app](manage-apps.md) nell'Microsoft Teams di amministrazione consente di visualizzare e gestire tutte le app Teams per l'organizzazione. Ad esempio, è possibile visualizzare lo stato e le proprietà a livello di organizzazione delle app, approvare o caricare nuove app personalizzate nell'App Store dell'organizzazione, bloccare o consentire le app a livello di organizzazione e gestire le impostazioni delle app a livello di organizzazione.
@@ -56,16 +61,16 @@ Dopo aver accettato le autorizzazioni, verrà visualizzato un **messaggio in Aut
 
 :::image type="content" source="media/app-perm-admin-center-org-wide-accepted-new.png" alt-text="Screenshot del messaggio visualizzato quando viene concesso il consenso.":::
 
-Se gli utenti dell'organizzazione sono autorizzati a concedere il consenso e se uno o più utenti hanno concesso il consenso a una determinata app, verrà visualizzato anche lo stesso messaggio per insoddirne il consenso e il collegamento Azure Active Directory alla pagina dell'app nel portale di Azure AD.
+Se gli utenti dell'organizzazione sono autorizzati a concedere il consenso e se uno o più utenti hanno concesso il consenso a una determinata app, verrà visualizzato lo stesso messaggio per insoddirne il consenso e il collegamento Azure Active Directory alla pagina dell'app nel portale di Azure AD.
 
 > [!NOTE]
-> Anche se l'opzione Rivedi autorizzazioni e consenso non è disponibile per gli amministratori del servizio Teams e non può concedere il consenso dell'amministratore a livello di organizzazione alle app, gli amministratori del servizio Teams possono visualizzare il contenuto nella scheda  Autorizzazioni per un'app. Ad esempio, un amministratore del Teams può fare clic sul collegamento Azure Active Directory  per visualizzare i dettagli delle autorizzazioni per le app nel portale Azure AD app. 
+> Anche se l'opzione Rivedi autorizzazioni e consenso non è disponibile per gli amministratori del servizio Teams e non può concedere il consenso dell'amministratore a livello di organizzazione alle app, gli amministratori del servizio Teams possono visualizzare il contenuto nella scheda Autorizzazioni  per un'app. Ad esempio, un amministratore Teams servizio può fare clic sul collegamento Azure Active Directory  per visualizzare i dettagli delle autorizzazioni per le app nel portale Azure AD app. 
 
 ## <a name="view-resource-specific-consent-permissions-of-an-app"></a>Visualizzare le autorizzazioni di consenso specifiche delle risorse di un'app
 
 Le autorizzazioni RSC consentono ai proprietari del team di concedere il consenso per un'app per accedere e modificare i dati di un team. Le autorizzazioni RSC sono autorizzazioni Teams specifiche che definiscono le attività che un'app può eseguire in un team specifico. Esempi di autorizzazioni RSC includono la possibilità di creare ed eliminare canali, ottenere le impostazioni per un team e creare e rimuovere schede dei canali. 
 
-Le autorizzazioni RSC sono definite nel manifesto dell'app e non Azure AD. L'utente concede il consenso alle autorizzazioni RSC quando si aggiunge l'app a un team. Per altre informazioni, vedere [Consenso specifico delle risorse (RSC).](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+Le autorizzazioni RSC sono definite nel manifesto dell'app e non in Azure AD. L'utente concede il consenso alle autorizzazioni RSC quando si aggiunge l'app a un team. Per altre informazioni, vedere [Consenso specifico delle risorse (RSC).](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 
 Gli amministratori globali e gli Teams possono visualizzare le autorizzazioni RSC per un'app nella **scheda** Autorizzazioni della pagina dei dettagli dell'app. 
 
@@ -86,7 +91,7 @@ Attualmente, la possibilità di rivedere le autorizzazioni e concedere il consen
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Gestire le app nell'interfaccia Microsoft Teams di amministrazione](manage-apps.md)
-- [Autorizzazioni e consenso nell'endpoint Microsoft Identity Platform utente](/azure/active-directory/develop/v2-permissions-and-consent)
+- [Autorizzazioni e consenso nell'endpoint Microsoft Identity Platform](/azure/active-directory/develop/v2-permissions-and-consent)
 - [Consenso specifico delle risorse in Teams](resource-specific-consent.md)
 - [Consenso specifico delle risorse (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 - [Spostamento nel ciclo di Teams dell'app](https://aka.ms/PR132) (sessione Ignite 2020)

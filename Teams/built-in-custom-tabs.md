@@ -1,8 +1,8 @@
 ---
 title: Usare schede predefinite e personalizzate in Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
-manager: serdars
+author: guptaashish
+ms.author: guptaashish
+manager: prkosh
 ms.date: 06/20/2019
 ms.topic: article
 ms.service: msteams
@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni su come usare le schede predefinite e personalizzate per includere funzionalità come conversazioni, file, mappe e altro ancora.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cf48eef40ec71d1ca661b98ce6f6c842fe636942
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: fe954d5f6ec08e13db666e94c3dd7cc3d9121e61
+ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58727175"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "63070245"
 ---
 # <a name="use-built-in-and-custom-tabs-in-microsoft-teams"></a>Usare schede predefinite e personalizzate in Microsoft Teams
 
@@ -43,15 +43,15 @@ I proprietari e i membri del team possono aggiungere schede a un canale, una cha
 
     ![Screenshot delle schede in una chat.](media/Use_built-in_and_custom_tabs_add_tabs_to_a_chat.png)
 
-- I proprietari e i membri del team possono aggiungere altre schede a un canale o a una chat facendo clic su **Aggiungi** una scheda Screenshot del pulsante Aggiungi scheda, con ![ un segno +.](media/Use_built-in_and_custom_tabs_add_a_tab_button.png) nella parte superiore del canale o della chat.
+- I proprietari e i membri del team possono aggiungere altre schede a un canale o a una chat facendo clic su **Aggiungi** ![una scheda Screenshot del pulsante Aggiungi scheda, con un segno +.](media/Use_built-in_and_custom_tabs_add_a_tab_button.png) nella parte superiore del canale o della chat.
 
-- Excel, PowerPoint, Word e i file PDF devono essere caricati  nella scheda File prima di poter essere convertiti in schede. Qualsiasi file caricato esistente può essere convertito in una scheda con un solo clic, come illustrato di seguito.
+- Excel, PowerPoint, Word e i file PDF devono essere caricati nella scheda File prima di poter essere convertiti in  schede. Qualsiasi file caricato esistente può essere convertito in una scheda con un solo clic, come illustrato di seguito.
 
     ![Screenshot della scheda File con un PowerPoint file selezionato.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image2.png)
 
 - Per aggiungere un sito Web, l'URL deve iniziare con un prefisso **https** in modo che le informazioni scambiate rimangano sicure.
 
-- Le istruzioni dettagliate vengono fornite quando un membro del team prova ad aggiungere una scheda personalizzata al canale o alla chat. Quando una scheda personalizzata viene aggiunta  a un canale, viene creata una conversazione a schede che consente ai membri del team di avere discussioni mirate sul contenuto.
+- Le istruzioni dettagliate vengono fornite quando un membro del team prova ad aggiungere una scheda personalizzata al canale o alla chat. Quando una scheda personalizzata viene aggiunta a un canale, viene  creata una conversazione a schede che consente ai membri del team di avere discussioni mirate sul contenuto.
 
     ![Screenshot di una scheda personalizzata con una conversazione a schede a destra.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image3.png)
 

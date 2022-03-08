@@ -1,8 +1,8 @@
 ---
 title: Gestire le app nell'interfaccia Microsoft Teams di amministrazione
-author: KarliStites
-ms.author: kastites
-manager: serdars
+author: guptaashish
+ms.author: guptaashish
+manager: prkosh
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -17,12 +17,12 @@ description: Informazioni su come gestire le app Teams nella pagina Gestisci app
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 8e0c475eaf2186c13174d27687a5bd10c2fa1057
-ms.sourcegitcommit: e97c981489ff1f02674df57426da3b22cc6d68c1
+ms.openlocfilehash: ad1dd28f4de0bc6db0ab7b2870a1cf7b2dae007a
+ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "63062550"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "63070225"
 ---
 # <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia Microsoft Teams di amministrazione
 
@@ -55,7 +55,7 @@ Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Micr
 ![Screenshot della pagina dei dettagli delle app per un'app.](media/app-detail-page.jpg)
 
 - **Nome**: il nome dell'app. Selezionare il nome dell'app per passare alla pagina dei dettagli dell'app per visualizzare altre informazioni sull'app. Include una descrizione dell'app, che sia consentita o bloccata, versione, informativa sulla privacy, condizioni per l'uso, categorie applicabili all'app, stato di certificazione, funzionalità supportate e ID app.
-- **Certificazione**: se l'app ha ottenuto la certificazione, verrà visualizzato Microsoft 365 **attestazione** Publisher **certificato**. Selezionare il collegamento per visualizzare i dettagli della certificazione per l'app. Se viene visualizzato "**--**", non sono disponibili informazioni sulla certificazione per l'app. Per altre informazioni sulle app certificate in Teams, Microsoft 365 [programma di certificazione delle app](/microsoft-365-app-certification/overview).
+- **Certificazione**: se l'app ha ottenuto la certificazione, verrà visualizzato Microsoft 365 **attestazione** Publisher **certificato**. Selezionare il collegamento per visualizzare i dettagli della certificazione per l'app. Se viene visualizzato `--`, non sono disponibili informazioni sulla certificazione per l'app. Per altre informazioni sulle app certificate in Teams, Microsoft 365 [programma di certificazione delle app](/microsoft-365-app-certification/overview).
 - **Publisher**: nome dell'autore.
 - **Stato pubblicazione**: stato di pubblicazione delle app personalizzate.
 - **Stato**: stato dell'app a livello di organizzazione, che può essere uno dei seguenti:

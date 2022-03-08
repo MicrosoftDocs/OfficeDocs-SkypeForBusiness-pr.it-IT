@@ -1,36 +1,41 @@
 ---
 title: Gestire i criteri e le impostazioni delle app personalizzate
-author: SerdarSoysal
-ms.author: serdars
-manager: serdars
+author: guptaashish
+ms.author: guptaashish
+manager: prkosh
 ms.reviewer: akino
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 ms.collection:
-  - M365-collaboration
+- M365-collaboration
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire i criteri e le impostazioni delle app personalizzate per controllare chi nell'organizzazione può caricare app personalizzate in Microsoft Teams.
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
-  - ms.teamsadmincenter.appsetuppolicies.allowsideloading
-  - ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
-  - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
-  - seo-marvel-mar2020
+- ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
+- ms.teamsadmincenter.appsetuppolicies.allowsideloading
+- ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
+- ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
+- seo-marvel-mar2020
+ms.openlocfilehash: 391c852edc1eef06c41277a43661fc1cf15b7cd6
+ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "63070355"
 ---
-
 # <a name="manage-custom-app-policies-and-settings-in-microsoft-teams"></a>Gestire le impostazioni e i criteri delle app personalizzati in Microsoft Teams
 
 > [!NOTE]
-> Per usare App Studio, vedere Introduzione alla piattaforma [Microsoft Teams con C#/.NET e App Studio](/microsoftteams/platform/get-started/get-started-dotnet-app-studio) L'ultimo passaggio non funziona ancora, quindi è necessario scaricare il file ZIP e installarlo nel modo precedente [in Upload un pacchetto dell'app in Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-upload).
+> Per usare App Studio, vedere Introduzione alla piattaforma [Microsoft Teams con C#/.NET e App Studio](/microsoftteams/platform/get-started/get-started-dotnet-app-studio) L'ultimo passaggio non funziona ancora, quindi è necessario scaricare il file ZIP e installarlo nel vecchio modo [in Upload un pacchetto dell'app Microsoft Teams](/microsoftteams/platform/concepts/apps/apps-upload).
 
-Gli amministratori possono usare criteri e impostazioni delle app personalizzati per controllare chi nell'organizzazione può caricare app personalizzate in Microsoft Teams. Gli amministratori decidono quali utenti possono caricare app personalizzate e gli amministratori e i proprietari dei team possono determinare se specifici team dell'organizzazione consentono l'aggiunta di app personalizzate.  Dopo aver modificato i criteri dell'app personalizzati, l'applicazione delle modifiche può richiedere alcune ore. Per gestire questi criteri, è necessario essere un amministratore globale o un amministratore del servizio Teams.
+Gli amministratori possono usare criteri e impostazioni delle app personalizzati per controllare chi nell'organizzazione può caricare app personalizzate Microsoft Teams. Gli amministratori decidono quali utenti possono caricare app personalizzate e gli amministratori e i proprietari dei team possono determinare se specifici team dell'organizzazione consentono l'aggiunta di app personalizzate.  Dopo aver modificato i criteri dell'app personalizzati, l'applicazione delle modifiche può richiedere alcune ore. Per gestire questi criteri, è necessario essere un amministratore globale o un amministratore del servizio Teams.
 
 ## <a name="overview-of-custom-apps"></a>Panoramica delle app personalizzate
 
@@ -63,7 +68,7 @@ Se questa impostazione è attivata:
 - L'utente può caricare app personalizzate nel contesto personale. 
 - L'utente può interagire con le app personalizzate, a seconda dell'impostazione dell'app personalizzata a livello di organizzazione.
 
-È possibile modificare le impostazioni nei criteri di configurazione delle app globali per includere le app desiderate. Se si vogliono personalizzare i criteri Teams gruppi di utenti dell'organizzazione, creare e assegnare uno o più criteri di configurazione delle app personalizzati.
+È possibile modificare le impostazioni nei criteri di configurazione delle app globali per includere le app desiderate. Se si vogliono personalizzare le impostazioni Teams per diversi gruppi di utenti dell'organizzazione, creare e assegnare uno o più criteri di configurazione delle app personalizzati.
 
 #### <a name="set-a-user-custom-app-policy"></a>Impostare criteri dell'app personalizzati per l'utente
 
@@ -90,7 +95,7 @@ Se questa impostazione è attivata:
 #### <a name="configure-the-team-custom-app-setting"></a>Configurare l'impostazione dell'app personalizzata del team
 
 1. In Teams passare al team e fare clic su **Altre opzioni ̇ ̇ ̇** >  **Assaggio del team**.
-2. Fare **clic Impostazioni** e quindi espandere **Autorizzazioni per i membri**.
+2. Fare **clic Impostazioni** e quindi espandere **Autorizzazioni membri**.
 3. Selezionare o deselezionare la **casella di controllo Consenti ai membri di caricare app** personalizzate.
 
     ![Screenshot che mostra l'impostazione dell'app personalizzata del team.](media/teams-custom-app-policy-and-settings-team.png)
@@ -109,13 +114,13 @@ Se questa impostazione è attivata:
 
 ## <a name="how-custom-app-policies-and-settings-work-together"></a>Modalità di collaborazione tra criteri e impostazioni delle app personalizzate
 
-Questa tabella riepiloga i criteri e le impostazioni delle app personalizzate, il modo in cui funzionano insieme e l'effetto combinato sul controllo degli utenti dell'organizzazione che possono caricare app personalizzate in Teams.
+Questa tabella riepiloga i criteri e le impostazioni delle app personalizzate, il modo in cui lavorano insieme e l'effetto combinato sul controllo degli utenti dell'organizzazione che possono caricare app personalizzate in Teams.
 
 Si supponga, ad esempio, di voler consentire solo ai proprietari dei team di caricare app personalizzate in team specifici. È necessario impostare quanto segue:
 
-- Attivare **l'impostazione Consenti interazione con le app personalizzate** nell'Microsoft Teams di amministrazione.
+- Attivare **l'impostazione Consenti interazione con app personalizzate** nell'Microsoft Teams di amministrazione.
 - Disattivare **l'opzione Consenti ai membri di caricare app personalizzate** per ogni team a cui si vuole limitare l'accesso.
-- Creare e assegnare criteri di configurazione delle app personalizzati nell'interfaccia di amministrazione di Microsoft Teams con  l'impostazione delle app personalizzate Upload attivata e assegnarla ai proprietari del team.
+- Creare e assegnare criteri di configurazione delle app personalizzati nell'interfaccia di amministrazione di Microsoft Teams con  l'impostazione Upload app personalizzate attivata e assegnarla ai proprietari del team.
 
 |Impostazione dell'app personalizzata a livello di organizzazione |Impostazione dell'app personalizzata del team |Criteri per le app personalizzate dell'utente |Effetto  |
 |---------|---------|---------|---------|

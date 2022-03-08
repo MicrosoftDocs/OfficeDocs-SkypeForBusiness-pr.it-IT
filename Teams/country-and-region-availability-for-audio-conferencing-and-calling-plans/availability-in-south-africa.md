@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Sudafrica.
-ms.openlocfilehash: cccc1b801b2627ecb93eafd38b0ab944baac91aa
-ms.sourcegitcommit: 9ef6e36eeba7db70971f4eb1a45f0ded394b1fe6
+ms.openlocfilehash: 7c56d5bb6fd8ee3449b110b21b00000eda9dac55
+ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62190817"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "63070575"
 ---
 # <a name="availability-in-south-africa"></a>Disponibilità in Sudafrica
 
@@ -59,11 +59,12 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |No  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
-|Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
+|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
+|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti per chiamate nazionali O 600 minuti per chiamate internazionali (a seconda di quale venga prima nel mese di calendario)</li></li></ul>|
+|È possibile effettuare chiamate in uscita verso numeri premium?  <br/> | Al momento non supportato. <br/> |
+|Chiamate in uscita possibili verso...?  <br/> | A 196 paesi o aree geografiche, incluse [queste](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
 
-Se Piani chiamate non sono disponibili per l'acquisto, vedere Opzioni di connettività [PSTN](../pstn-connectivity.md) per tutte le opzioni disponibili.
+Se Piani chiamate non sono disponibili per l'acquisto, vedere [Opzioni di connettività PSTN](../pstn-connectivity.md) per tutte le opzioni disponibili.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
