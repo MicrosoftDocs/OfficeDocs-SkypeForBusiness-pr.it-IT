@@ -3,9 +3,9 @@ title: App, bot e connettori in Microsoft Teams
 ms.reviewer: ''
 description: Informazioni sulle app, i bot e i connettori e su come decidere quale distribuire in Microsoft Teams in base al profilo e ai requisiti di business dell'organizzazione.
 ms.topic: article
-author: SerdarSoysal
-ms.author: serdars
-manager: serdars
+author: guptaashish
+ms.author: guptaashish
+manager: prkosh
 audience: admin
 ms.date: 02/10/2021
 ms.service: msteams
@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a2789e522e666894ca58c8b22e9d571b35a4fb26
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 05d683bbefa9b3cc564e4f97e52f0fad441f2763
+ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58618512"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "63070395"
 ---
 # <a name="apps-bots--connectors-in-microsoft-teams"></a>App, bot e connettori in Microsoft Teams
 
@@ -37,7 +37,7 @@ Teams include un set di app predefinite, tra cui Elenchi, Tasks, Complimento, Ap
 
 ## <a name="use-third-party-apps"></a>Usare app di terze parti
 
-Oltre alle app fornite da Microsoft, è possibile usare app di terze parti certificate Microsoft. Microsoft collabora con i partner sviluppatori di Microsoft 365 per fornire le informazioni necessarie al fine di accelerare le decisioni sull'uso di app e componenti aggiuntivi di Teams. Per altre informazioni, vedere [Sicurezza e conformità delle app di Microsoft Teams](/microsoft-365-app-certification/teams/teams-apps).
+Oltre alle app fornite da Microsoft, è possibile usare app di terze parti certificate da Microsoft. Microsoft collabora con i partner sviluppatori di Microsoft 365 per fornire le informazioni necessarie al fine di velocizzare le decisioni sull'uso di app e componenti aggiuntivi di Teams. Per altre informazioni, vedere [Sicurezza e conformità delle app di Microsoft Teams](/microsoft-365-app-certification/teams/teams-apps).
 
 ## <a name="use-teams-templates"></a>Usare i modelli di Teams
 
@@ -69,7 +69,7 @@ Per impostazione predefinita, tutte le app fornite da Microsoft, da terze parti 
 
 ### <a name="app-permissions-and-other-considerations"></a>Autorizzazioni delle app e altre considerazioni
 
-Le app sono autorizzate dagli utenti e gestite dall'amministratore o dal professionista IT tramite criteri. Nella maggior parte dei casi, tuttavia, le autorizzazioni e il profilo di rischio di un'app sono definiti nell'app stessa. 
+Le app sono autorizzate dagli utenti e gestite dall'amministratore o dal professionista IT tramite criteri. Tuttavia, le autorizzazioni e il profilo di rischio di un’app sono definiti nell'app stessa.
 
 | Chiedersi | Azione |
 |--------------|--------|

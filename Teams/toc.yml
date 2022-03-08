@@ -1127,6 +1127,8 @@ items:
                 href: manage-phone-numbers-for-your-organization/phone-number-management-for-slovakia.md
               - name: Gestione dei numeri di telefono per la Slovenia
                 href: manage-phone-numbers-for-your-organization/phone-number-management-for-slovenia.md
+              - name: Gestione dei numeri di telefono per il Sudafrica
+                href: manage-phone-numbers-for-your-organization/phone-number-management-for-south-africa.md
               - name: Gestione dei numeri di telefono per la Spagna
                 href: manage-phone-numbers-for-your-organization/phone-number-management-for-spain.md
               - name: Gestione dei numeri di telefono per i Paesi Bassi
@@ -1373,8 +1375,8 @@ items:
             href: rooms/obtaining-assigning-license.md
           - name: Eseguire la registrazione al servizio gestito MTRP
             href: rooms/enrolling-mtrp-managed-service.md
-          - name: Installazione
-            href: rooms/monitor-software-installation-guide.md
+          - name: Eseguire la registrazione di un dispositivo nel servizio gestito
+            href: rooms/enroll-a-device.md
           - name: Controllo dell'accesso basato sui ruoli
             href: rooms/microsoft-teams-rooms-premium-rbac.md
           - name: Monitoraggio e gestione delle sale
