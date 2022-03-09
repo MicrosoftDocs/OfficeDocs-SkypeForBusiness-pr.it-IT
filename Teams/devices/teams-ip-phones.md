@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 5f6c7701a3bf2979ef2c3541ec51f0f55d5e0a51
-ms.sourcegitcommit: e97c981489ff1f02674df57426da3b22cc6d68c1
+ms.openlocfilehash: 7a4e84d7f58d8239a5493afffea71878123f47b1
+ms.sourcegitcommit: fe71ecbe35b8adfb9166188923ed1111b3b8e2a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "63062580"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63388078"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>Microsoft Teams dispositivi Android certificati
 
@@ -48,7 +48,7 @@ I dispositivi seguenti sono certificati nel programma di certificazione Microsof
 | Crestron UC-P10-T (con e senza ricevitore)    | `1.0.0.80`       | 5 agosto 2023            | 9 |
 | Crestron UC-P8-T (con e senza ricevitore)     | `1.0.0.56`       | 5 agosto 2023            | 9 |
 | Crestron UC-P10-C-T (con e senza ricevitore)  | `1.0.0.80`       | 5 agosto 2023            | 9 |
-| Crestron UC-P8-C-T (con e senza ricevitore)   | `1.0.0.80`       | 5 agosto 2023            | 9 |
+| Crestron UC-P8-C-T (con e senza ricevitore)   | `1.0.0.56`       | 5 agosto 2023            | 9 |
 | Audiocode C470HD                      | `1.8.293   `                                               | 5 agosto 2023               | 9 |
 | Yealink MP52                           | `145.15.0.6 `                                              | 5 agosto 2023               | 9 |
 | AudioCodes C435HD                      | `1.12.33`                                                  | 5 agosto 2023               | 9 |
@@ -221,6 +221,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware | Rilascio del prodotto incluso |
 |:--------------|:-----------------|:-------------------------|
+| EPOS EXPAND Vision 3T |`1.2.4.22042.05`   | Aggiornamento 2022 #1 |
 | AudioCodes RXV80 | `1.16.164 `   | Aggiornamento 2022 #1 |
 | Yealink VC210 | `118.15.0.65`   | Aggiornamento 2022 #1    |
 | Yealink MeetingBar A20 | `133.15.0.80 `   | Aggiornamento 2022 #1   |
