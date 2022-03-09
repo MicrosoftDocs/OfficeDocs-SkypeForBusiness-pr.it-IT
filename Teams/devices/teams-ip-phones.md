@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 7a4e84d7f58d8239a5493afffea71878123f47b1
-ms.sourcegitcommit: fe71ecbe35b8adfb9166188923ed1111b3b8e2a1
+ms.openlocfilehash: d91fb5f4c95fd63fda1d953c73ba26d105f05083
+ms.sourcegitcommit: c5f281342c5f2af65492692ab1249789c637e457
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/09/2022
-ms.locfileid: "63388078"
+ms.locfileid: "63392888"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>Microsoft Teams dispositivi Android certificati
 
@@ -45,6 +45,8 @@ I dispositivi seguenti sono certificati nel programma di certificazione Microsof
 
 |Modello di dispositivo    | Versione firmware    | Data di fine certificazione corrente | Versione del sistema operativo Android                               |
 |:---------------------------------------|:-----------------------------------------|:-----------------------------|-----------------------------------|
+| AudioCodes C450HD                      | `C450HD_TEAMS_0.225`                                                  | 22 aprile 2022               | 7,1x |
+| AudioCodes C448HD(Solo modalità Cap)       | `C450HD_TEAMS_0.225`                                                  | 22 aprile 2022               | 7,1x |
 | Crestron UC-P10-T (con e senza ricevitore)    | `1.0.0.80`       | 5 agosto 2023            | 9 |
 | Crestron UC-P8-T (con e senza ricevitore)     | `1.0.0.56`       | 5 agosto 2023            | 9 |
 | Crestron UC-P10-C-T (con e senza ricevitore)  | `1.0.0.80`       | 5 agosto 2023            | 9 |
@@ -296,7 +298,7 @@ Di seguito sono riportate le versioni più recenti Microsoft Teams dell'app Pane
 |Rilascio del prodotto| Data di rilascio | Microsoft Teams dell'app | Portale aziendale versione | Versione dell'agente di amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
 |Aggiornamento #1A 2022 | 25 febbraio 2022 | `1449/1.0.97.2022730007` | `5.0.5304.0`  | `322` |
-|Aggiornamento 2022 #1  | 22 febbraio 2022 |`1449/1.0.96.2021726501` | `5.0.5304.0 `  | `322` |
+|Aggiornamento 2022 #1  | 22 febbraio 2022 |`1449/1.0.97.2021726501` | `5.0.5304.0 `  | `322` |
 |Aggiornamento 2021 #1  | 12 agosto 2021 |`1449/1.0.97.2021070601`   | `5.0.5211.0`   |  `268`|
 
 #### <a name="firmware-versions"></a>Versioni firmware
