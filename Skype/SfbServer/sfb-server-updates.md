@@ -12,13 +12,13 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 4b32dfba-1af6-4077-9a92-7cec8f220f20
-description: Trovare e gestire gli aggiornamenti Skype for Business Server 2019 e 2015 e Lync Server 2013 e 2010 in un'unica posizione. Utilizzare i collegamenti riportati in questa pagina per visualizzare ulteriori informazioni sugli aggiornamenti e per scaricarli.
-ms.openlocfilehash: 68b34b75cf0e671f5927c4e006e5567052be6e4e
-ms.sourcegitcommit: d8dba15c520de3894d1781e17acb2c75fb38ed49
+description: Trovare e gestire gli aggiornamenti per Skype for Business Server 2019 e 2015 e Lync Server 2013 e 2010 in un'unica posizione. Utilizzare i collegamenti riportati in questa pagina per visualizzare ulteriori informazioni sugli aggiornamenti e per scaricarli.
+ms.openlocfilehash: c9a30c0671302f8cc8c3f27927e3a058dc3cfcd7
+ms.sourcegitcommit: 109be23768ae183e07a0833fa9a9e5cb0369cb43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "62921864"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "63368401"
 ---
 # <a name="skype-for-business-server-updates"></a>Aggiornamenti di Skype for Business Server
 
@@ -32,12 +32,12 @@ Per gli aggiornamenti Skype for Business Online e Microsoft 365, vedere la roadm
 
 |Nome del pacchetto|Numero KB|Data di rilascio|
 |:--- |:--- |:--- |
-|Skype for Business Server 2019 aggiornamento cumulativo 6 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Dicembre 2021 |
+|Skype for Business Server 2019 Aggiornamento cumulativo 6 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Dicembre 2021 |
 |Skype for Business Server 2019 cumulativo 5 |[KB 4470124 (MACP3)](https://support.microsoft.com/kb/4470124)| Marzo 2021 |
-|Skype for Business Server 2019 aggiornamento cumulativo 4 hotfix 1 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Novembre 2020 |
+|Skype for Business Server 2019 Aggiornamento cumulativo 4 Hotfix 1 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Novembre 2020 |
 |Skype for Business Server 2019 cumulativo 4 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Settembre 2020 |
 |Skype for Business Server 2019 Aggiornamento cumulativo 3 Hotfix 1 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Luglio 2020 |
-|Skype for Business Server 2019 aggiornamento cumulativo 3 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Marzo 2020 |
+|Skype for Business Server 2019 cumulativo 3 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Marzo 2020 |
 |Skype for Business Server 2019 aggiornamento cumulativo 2 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Dicembre 2019 |
 |Skype for Business Server 2019 Aggiornamento cumulativo 1 Hotfix 1 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Settembre 2019 |
 |Skype for Business Server 2019 cumulativo 1|[KB 4470124](https://support.microsoft.com/kb/4470124)| Luglio 2019 |
@@ -63,11 +63,11 @@ Per gli aggiornamenti Skype for Business Online e Microsoft 365, vedere la roadm
 |Skype for Business Server 2015 aggiornamento cumulativo 12|[KB 3061064](https://support.microsoft.com/kb/3061064)|Agosto 2021 |
 |Skype for Business Server 2015 Aggiornamento cumulativo 11 Hotfix 2|[KB 3061064](https://support.microsoft.com/kb/3061064)|Novembre 2020 |
 |Skype for Business Server 2015 Aggiornamento cumulativo 11 Hotfix 1|[KB 3061064](https://support.microsoft.com/kb/3061064)|Luglio 2020 |
-|Skype for Business Server 2015 aggiornamento cumulativo 11|[KB 3061064](https://support.microsoft.com/kb/3061064)|13 maggio 2020 |
+|Skype for Business Server 2015 Aggiornamento cumulativo 11|[KB 3061064](https://support.microsoft.com/kb/3061064)|13 maggio 2020 |
 |Skype for Business Server 2015 aggiornamento cumulativo 10 hotfix 1|[KB 3061064](https://support.microsoft.com/kb/3061064)|Agosto 2019 |
 |Skype for Business Server 2015 aggiornamento cumulativo 10 |[KB 3061064](https://support.microsoft.com/kb/3061064)|Luglio 2019 |
-|Aggiornamento cumulativo 9 per Skype for Business Server 2015, Server componenti Web|[KB 4487981](https://support.microsoft.com/kb/4487981)|Maggio 2019 |
-|Aggiornamento cumulativo 8 per Skype for Business Server 2015, Front End Server e server perimetrale|[KB 4464355](https://support.microsoft.com/kb/4464355)|Gennaio 2019|
+|Aggiornamento cumulativo 9 per Skype for Business Server 2015, Web Components Server|[KB 4487981](https://support.microsoft.com/kb/4487981)|Maggio 2019 |
+|Aggiornamento cumulativo 8 per Skype for Business Server 2015, Front End Server ed Edge Server|[KB 4464355](https://support.microsoft.com/kb/4464355)|Gennaio 2019|
 |Aggiornamento cumulativo 7 per Skype for Business Server 2015, Front End Server e server perimetrale |[KB 4340904](https://support.microsoft.com/kb/4340904) |Luglio 2018 |
 |Aggiornamento cumulativo 6 Hotfix 2 per Skype for Business Server 2015, Front End Server e server perimetrale |[KB 4086059](https://support.microsoft.com/kb/4086059) |Marzo 2018 |
 |Aggiornamento cumulativo 6 Hotfix 1 per Skype for Business Server 2015, Front End Server e server perimetrale |[KB 4074701](https://support.microsoft.com/kb/4074701)|Gennaio 2018 |
@@ -78,7 +78,7 @@ Per gli aggiornamenti Skype for Business Online e Microsoft 365, vedere la roadm
 |Aggiornamento cumulativo 3 per Skype for Business Server 2015, Front End Server e server perimetrale |[KB 3149227](https://support.microsoft.com/kb/3149227) |Giugno 2016 |
 |Aggiornamento cumulativo 2 per Skype for Business Server 2015, Front End Server e server perimetrale |[KB 3134260](https://support.microsoft.com/kb/3134260) |Marzo 2016 |
 |Aggiornamento cumulativo 1 per Skype for Business Server 2015, Front End Server e server perimetrale |[KB 3097645](https://support.microsoft.com/kb/3097645) |Novembre 2015 |
-|Aggiornamento cumulativo per Skype for Business Server 2015, componenti di base |[KB 3098601](https://support.microsoft.com/kb/3098601) |Settembre 2015 |
+|Aggiornamento cumulativo per Skype for Business Server 2015, Componenti di base |[KB 3098601](https://support.microsoft.com/kb/3098601) |Settembre 2015 |
 |Aggiornamento cumulativo per Skype for Business Server 2015, Front End Server e server perimetrale|[KB 3061059](https://support.microsoft.com/kb/3061059) |Giugno 2015 |
 ||||
 
@@ -97,10 +97,11 @@ Per gli aggiornamenti Skype for Business Online e Microsoft 365, vedere la roadm
 
 |Nome del pacchetto|Numero KB|Data di rilascio|
 |:--- |:--- |:--- |
-|Lync Server 2013 Aggiornamento cumulativo 10 Hotfix 6 |[KB 5003602](https://support.microsoft.com/kb/5003602)|Maggio 2021|
-|Aggiornamento cumulativo 10 hotfix 5 per Lync Server 2013 |[KB 2809243](https://support.microsoft.com/kb/2809243)|Febbraio 2021|
-|Lync Server 2013 Aggiornamento cumulativo 10 Hotfix 4 |[KB 4515509](https://support.microsoft.com/kb/4515509)|Luglio 2020|
-|Lync Server 2013 Aggiornamento cumulativo 10 Hotfix 3 |[KB 4515509](https://support.microsoft.com/kb/4515509)|Settembre 2019|
+|Lync Server 2013 Aggiornamento cumulativo 10 Hotfix 7 |[KB 5010850](https://support.microsoft.com/kb/5010850)|Febbraio 2022|
+|Lync Server 2013 Aggiornamento cumulativo 10 Hotfix 6 |[KB 5003729](https://support.microsoft.com/kb/5003729)|11 maggio 2021|
+|Aggiornamento cumulativo 10 hotfix 5 per Lync Server 2013 |[KB 5000675](https://support.microsoft.com/kb/5000675), [KB 5000688](https://support.microsoft.com/kb/5000688)|9 febbraio 2021|
+|Lync Server 2013 Aggiornamento cumulativo 10 Hotfix 4 |[KB 4564312](https://support.microsoft.com/kb/4564312)|Luglio 2020|
+|Lync Server 2013 Aggiornamento cumulativo 10 Hotfix 3 |[KB 4518345](https://support.microsoft.com/kb/4518345)|Settembre 2019|
 |Aggiornamento cumulativo 10 hotfix 2 per Lync Server 2013 |[KB 4501392](https://support.microsoft.com/kb/4501392)|Giugno 2019|
 |Aggiornamento cumulativo 10 hotfix 1 per Lync Server 2013 |[KB 4458772](https://support.microsoft.com/kb/4458772)|Gennaio 2019|
 |Aggiornamento cumulativo 10 di Lync Server 2013 |[KB 4295703](https://support.microsoft.com/kb/4295703)|Luglio 2018 |
@@ -278,5 +279,5 @@ Gli aggiornamenti software includono qualsiasi aggiornamento, aggiornamento cumu
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Installare Skype for Business Server 2015](./deploy/install/install.md)
-- [Eseguire l'aggiornamento Skype for Business Server 2015](./deploy/upgrade-to-skype-for-business-server.md)
-- [Aggiornamenti più recenti per le versioni Skype for Business che utilizzano Windows Installer (MSI)](sfb-client-updates.md)
+- [Aggiornamento a Skype for Business Server 2015](./deploy/upgrade-to-skype-for-business-server.md)
+- [Aggiornamenti più recenti per le versioni di Skype for Business che utilizzano Windows Installer (MSI)](sfb-client-updates.md)
