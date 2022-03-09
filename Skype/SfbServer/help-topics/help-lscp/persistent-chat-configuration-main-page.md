@@ -1,6 +1,6 @@
 ---
 title: Pagina principale Configurazione Persistent Chat
-ms.reviewer: null
+ms.reviewer: ''
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -8,15 +8,20 @@ ms.date: 3/27/2015
 audience: ITPro
 ms.topic: article
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - ms.lync.lscp.PersistentChatConfigMain
+- ms.lync.lscp.PersistentChatConfigMain
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 1e75d352-12cf-4548-9301-5d4c0e1c8f46
-description: 'La distribuzione del server Chat persistente può ospitare molte chat room persistenti simultanee. Le chat room possono essere organizzate in una serie di categorie sul server. Ogni chat room appartiene a una categoria, da cui eredita alcune impostazioni. In questo modo viene creata una struttura che consente di identificare le conversazioni in base alle esigenze aziendali e di facilitare l''amministrazione delegata e la gestione semplificata.'
+description: La distribuzione del server Chat persistente può ospitare molte chat room persistenti simultanee. Le chat room possono essere organizzate in una serie di categorie sul server. Ogni chat room appartiene a una categoria, da cui eredita alcune impostazioni. In questo modo viene creata una struttura che consente di identificare le conversazioni in base alle esigenze aziendali e di facilitare l'amministrazione delegata e la gestione semplificata.
+ms.openlocfilehash: 68021d7c443e85dc8e9c8986076acfa5b9307cc8
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62392848"
 ---
-
 # <a name="persistent-chat-configuration-main-page"></a>Pagina principale della configurazione di Chat persistente
  
 La distribuzione del server Chat persistente può ospitare molte chat room persistenti simultanee. Le chat room possono essere organizzate in una serie di categorie sul server. Ogni chat room appartiene a una categoria, da cui eredita alcune impostazioni. In questo modo viene creata una struttura che consente di identificare le conversazioni in base alle esigenze aziendali e di facilitare l'amministrazione delegata e la gestione semplificata.

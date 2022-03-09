@@ -1,6 +1,6 @@
 ---
 title: Gestire l'archiviazione in Skype for Business Server
-ms.reviewer: null
+ms.reviewer: ''
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -8,22 +8,27 @@ audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
 ms.assetid: 63fd56cf-6d40-4db5-96fc-32d813930bcf
-description: 'Riepilogo: informazioni su come gestire l''archiviazione per Skype for Business Server.'
+description: "Riepilogo: informazioni su come gestire l'archiviazione per Skype for Business Server."
+ms.openlocfilehash: 0849a9fbc3db95579a1711e2934b0bafdc7b6e23
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62392658"
 ---
-
 # <a name="manage-archiving-in-skype-for-business-server"></a>Gestire l'archiviazione in Skype for Business Server
 
 **Riepilogo:** Informazioni su come gestire l'archiviazione per Skype for Business Server.
   
 Quando si distribuisce l'archiviazione per l'organizzazione, si specifica la configurazione iniziale durante la distribuzione. In alcuni casi, tuttavia, potrebbe essere necessario modificare la modalità di implementazione del supporto di archiviazione per la gestione quotidiana o soddisfare nuovi requisiti per l'organizzazione. Ad esempio, potrebbe essere necessario configurare il supporto dell'archiviazione in modo diverso per un sito specifico, un pool specifico o utenti specifici all'interno dell'organizzazione. Per gli utenti ospitati in Skype for Business Server, è possibile creare e personalizzare le opzioni di configurazione dell'archiviazione e i criteri utente. 
   
-Prima di leggere questo argomento, assicurarsi di avere familiarità con le informazioni contenute in [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) [and Deploy archiving for Skype for Business Server](../../deploy/deploy-archiving/deploy-archiving.md).
+Prima di leggere questo argomento, assicurarsi di avere familiarità con le informazioni contenute in [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) e [Deploy archiving for Skype for Business Server](../../deploy/deploy-archiving/deploy-archiving.md).
   
 > [!NOTE]
-> Se si abilita l'integrazione di Microsoft Exchange per la distribuzione, i criteri di Exchange controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e che le cassette postali vengono abilitate In-Place archiviazione. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) e [Configure integration with Exchange storage for Skype for Business Server](../../deploy/deploy-archiving/configure-integration-with-exchange-storage.md). 
+> Se si abilita l'integrazione di Microsoft Exchange per la distribuzione, i criteri di Exchange controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e le cassette postali vengono In-Place archiviazione. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) and [Configure integration with Exchange storage for Skype for Business Server](../../deploy/deploy-archiving/configure-integration-with-exchange-storage.md). 
   
 ## <a name="archiving-configuration-options"></a>Opzioni di configurazione dell'archiviazione
 

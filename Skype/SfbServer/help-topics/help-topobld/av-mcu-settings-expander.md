@@ -1,6 +1,6 @@
 ---
 title: Espansione delle impostazioni di MCU AV
-ms.reviewer: null
+ms.reviewer: ''
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -8,15 +8,20 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - ms.lync.tb.AvMcuSettingsExpander
+- ms.lync.tb.AvMcuSettingsExpander
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: b0633d75-e0bb-4b4e-9abe-1f1c647a6c7d
 description: 'Ecco come fare per modificare le proprietà di un pool A/V Conferencing Server già definito:'
+ms.openlocfilehash: 1c010751dc9ec76a4808e3201284ea0d731425f2
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62392688"
 ---
-
 # <a name="av-mcu-settings-expander"></a>Espansione delle impostazioni di MCU AV
  
 Ecco come fare per modificare le proprietà di un pool A/V Conferencing Server già definito:

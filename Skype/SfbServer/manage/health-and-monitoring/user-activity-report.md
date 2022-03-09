@@ -1,6 +1,6 @@
 ---
 title: Rapporto attività utente in Skype for Business Server 25
-ms.reviewer: null
+ms.reviewer: ''
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -8,12 +8,17 @@ audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
 ms.assetid: 3aa6fef2-ea02-4f0f-93e8-fa2e0a953d79
 description: 'Riepilogo: informazioni sul Rapporto attività utente in Skype for Business Server.'
+ms.openlocfilehash: 673c212ae398c2e7a292c7c46cd5ae24cf274d6b
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62392498"
 ---
-
 # <a name="user-activity-report-in-skype-for-business-server"></a>Rapporto attività utente in Skype for Business Server
 
 **Riepilogo:** Informazioni sul Rapporto attività utente in Skype for Business Server.

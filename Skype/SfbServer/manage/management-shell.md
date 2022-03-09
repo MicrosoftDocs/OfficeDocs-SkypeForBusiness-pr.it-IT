@@ -1,6 +1,6 @@
 ---
 title: Skype for Business Server Management Shell
-ms.reviewer: null
+ms.reviewer: ''
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -8,21 +8,26 @@ audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 674b523b-c0b7-4ed6-9e67-afa6e8ac7e12
-description: La Skype for Business Server Management Shell fornisce l'interfaccia della riga di comando per l'amministrazione e la gestione del server. È basato su Windows PowerShell e include un set completo di cmdlet di gestione e amministrazione specifici per i Skype e i prodotti server Lync legacy.
+description: La Skype for Business Server Management Shell fornisce l'interfaccia della riga di comando per l'amministrazione e la gestione del server. È basato su Windows PowerShell e include un set completo di cmdlet di gestione e amministrazione specifici per i Skype e i prodotti lync server legacy.
+ms.openlocfilehash: 1867789d18e5b0c28cb0772cb46d70c1918789de
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62392488"
 ---
-
 # <a name="skype-for-business-server-management-shell"></a>Skype for Business Server Management Shell
  
-La Skype for Business Server Management Shell fornisce l'interfaccia della riga di comando per l'amministrazione e la gestione del server. È basato su Windows PowerShell e include un set completo di cmdlet di gestione e amministrazione specifici per i Skype e i prodotti server Lync legacy.
+La Skype for Business Server Management Shell fornisce l'interfaccia della riga di comando per l'amministrazione e la gestione del server. È basato su Windows PowerShell e include un set completo di cmdlet di gestione e amministrazione specifici per i Skype e i prodotti lync server legacy.
   
 Windows PowerShell consente di gestire le applicazioni Microsoft dalla riga di comando. Include un ambiente da riga di comando, comandi specifici del prodotto e un linguaggio di script completo. Windows PowerShell è stata introdotta come versione scaricabile per il sistema operativo Windows alla fine del 2006 ed è stata incorporata come interfaccia della riga di comando per la gestibilità di Microsoft Exchange Server 2007. È stato incorporato nella maggior parte dei prodotti Microsoft Server, inclusi i server Lync e Skype a partire da Lync Server 2010. In Skype for Business Server Management Shell sono disponibili oltre 700 cmdlet lync e Skype specifici.
   
 > [!NOTE]
-> Skype for Business riferimento al cmdlet è stato spostato in docs.microsoft.com. Se si fa clic sui collegamenti seguenti, verrà visualizzata la nuova docs.microsoft.com pagina. Il contenuto è ora open source e disponibile per i contributi della community tramite GitHub. Sei interessato a contribuire? Consultare il file README nel repo qui: [https://github.com/MicrosoftDocs/office-docs-powershell](https://github.com/MicrosoftDocs/office-docs-powershell)
+> Skype for Business riferimento al cmdlet è stato spostato in docs.microsoft.com. Facendo clic sui collegamenti riportati di seguito verrà visualizzata la nuova docs.microsoft.com pagina. Il contenuto è ora open source e disponibile per i contributi della community tramite GitHub. Sei interessato a contribuire? Consultare il file README nel repo qui: [https://github.com/MicrosoftDocs/office-docs-powershell](https://github.com/MicrosoftDocs/office-docs-powershell)
   
 Skype for Business Server viene fornito con più di 700 cmdlet che consentono agli amministratori di gestire Skype for Business Server tramite Skype for Business Server Management Shell. È possibile recuperare la Guida per un cmdlet direttamente dalla riga di comando digitando un comando simile al seguente:
   
@@ -45,9 +50,9 @@ Informazioni sulle Windows PowerShell in Skype for Business Server:
 - Per eseguire i cmdlet Skype for Business Server, aprire Skype for Business Server Management Shell.
     
     > [!CAUTION]
-    > Se si apre una finestra Windows PowerShell anziché Skype for Business Server Management Shell, per impostazione predefinita potrebbe non essere possibile eseguire i cmdlet Skype. Per eseguire Skype for Business Server cmdlet dall'Windows PowerShell, digitare innanzitutto quanto segue al prompt dei comandi di Windows PowerShell: >`Import-Module SkypeforBusiness`
+    > Se si apre una finestra Windows PowerShell anziché Skype for Business Server Management Shell, per impostazione predefinita potrebbe non essere possibile eseguire i cmdlet Skype. Per eseguire Skype for Business Server cmdlet dall'Windows PowerShell, al prompt dei comandi Windows PowerShell digitare quanto segue: >`Import-Module SkypeforBusiness`
   
-- Skype for Business Server Management Shell viene installato automaticamente in Skype for Business Server edizione Enterprise Front End Server o edizione Standard server.
+- Skype for Business Server Management Shell viene installato automaticamente in ogni Skype for Business Server edizione Enterprise Front End Server o edizione Standard server.
     
 - È possibile aggiornare il contenuto della Guida Skype for Business Server Management Shell eseguendo il cmdlet [Update-Help](/powershell/module/microsoft.powershell.core/update-help). Il cmdlet Update-Help scarica e installa i file della Guida più recenti disponibili per tutti i moduli installati nel computer, inclusi gli aggiornamenti Skype for Business cmdlet.
     

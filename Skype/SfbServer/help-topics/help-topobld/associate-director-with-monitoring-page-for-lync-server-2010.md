@@ -1,6 +1,6 @@
 ---
 title: Pagina per l'associazione del Director a Monitoring Server per Lync Server 2010
-ms.reviewer: null
+ms.reviewer: ''
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -8,15 +8,20 @@ ms.date: 11/17/2018
 audience: ITPro
 ms.topic: article
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - ms.lync.tb.AssociateDirectorWithMonitoringPage2010
+- ms.lync.tb.AssociateDirectorWithMonitoringPage2010
 ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 4ad77291-832d-41ee-9ffc-61132691363b
 description: 'Per configurare un Monitoring Server e associarlo al server Director o al pool di server Director:'
+ms.openlocfilehash: ea5a5da88c04cc21e4f31c3262f223f410b91a8c
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62392698"
 ---
-
 # <a name="associate-director-with-monitoring-page-for-lync-server-2010"></a>Pagina per l'associazione del Director a Monitoring Server per Lync Server 2010
  
 Per configurare un Monitoring Server e associarlo al server Director o al pool di server Director:

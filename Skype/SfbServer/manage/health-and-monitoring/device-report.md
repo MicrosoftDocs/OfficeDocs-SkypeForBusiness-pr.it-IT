@@ -1,6 +1,6 @@
 ---
 title: Device Report in Skype for Business Server
-ms.reviewer: null
+ms.reviewer: ''
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -8,15 +8,20 @@ audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
 ms.assetid: f42e4d60-699b-4870-8bb5-13b51bb6eb2b
 description: 'Riepilogo: informazioni sul Rapporto dispositivi in Skype for Business Server.'
+ms.openlocfilehash: 211dc69423f8f5b2edb9d5508a78c48297d3917c
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62392528"
 ---
-
 # <a name="device-report-in-skype-for-business-server"></a>Device Report in Skype for Business Server
  
-**Riepilogo:** Informazioni sul Rapporto dispositivi in Skype for Business Server.
+**Riepilogo:** Informazioni su Report dispositivi in Skype for Business Server.
   
 Il Rapporto dispositivi potrebbe anche essere intitolato Rapporto altoparlanti e microfono perché il Rapporto dispositivi recupera le metriche relative alle chiamate (ad esempio, la percentuale di chiamate con qualità insufficiente, l'eco e il tempo commutazione vocale) raggruppate in base ai microfoni e agli altoparlanti utilizzati nella chiamata. Se sei interessato ai telefoni IP (anche comunemente denominati "dispositivi"), usa invece il Rapporto inventario ip Telefono [in Skype for Business Server](ip-phone-inventory-report.md).
   
@@ -102,7 +107,7 @@ Il Rapporto dispositivi è molto dettagliato in merito ai nomi dei dispositivi. 
 - Microfono Aastra 6725ip (dispositivo audio USB)-V0
     
 > [!NOTE]
-> Tieni presente che i nomi dei dispositivi di acquisizione potrebbero non essere uguali se stai eseguendo versioni localizzate di Skype for Business Server. Un dispositivo denominato Aastra 6725ip Microphone (Aastra 6725ip)-V0 in inglese (Stati Uniti) potrebbe avere un nome diverso in francese o spagnolo. 
+> Tieni presente che i nomi dei dispositivi di acquisizione potrebbero non essere gli stessi se stai eseguendo versioni localizzate di Skype for Business Server. Un dispositivo denominato Aastra 6725ip Microphone (Aastra 6725ip)-V0 in inglese (Stati Uniti) potrebbe avere un nome diverso in francese o spagnolo. 
   
 Anche se spesso è utile questo livello di dettaglio, a volte si potrebbe essere interessati solo al numero di chiamate che utilizzano qualsiasi microfono Aastra, indipendentemente dal numero del modello. Un modo per ottenere questo tipo di informazioni è esportare i dati del Rapporto dispositivi in Microsoft Excel e salvare i dati in un file di valori delimitati da virgole (ad esempio, C:\Data\Devices_Report.csv). È possibile utilizzare un insieme di comandi simili a questi per importare il file CSV in Windows PowerShell e restituire il numero totale di chiamate eseguite utilizzando un dispositivo di acquisizione Aastra:
   

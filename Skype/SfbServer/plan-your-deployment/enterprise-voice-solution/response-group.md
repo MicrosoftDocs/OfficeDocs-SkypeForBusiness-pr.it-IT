@@ -1,6 +1,6 @@
 ---
 title: Pianificare l'applicazione Response Group in Skype for Business Server
-ms.reviewer: null
+ms.reviewer: ''
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -8,16 +8,21 @@ audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
 ms.collection:
-  - IT_Skype16
-  - Strat_SB_Admin
-ms.custom: null
+- IT_Skype16
+- Strat_SB_Admin
+ms.custom: ''
 ms.assetid: 6cc333e7-4029-4372-86b2-016040c415fb
-description: 'Pianificazione dei Response Group in Skype for Business Server VoIP aziendale, che consente di configurare il routing delle chiamate a gruppi di utenti. Include i requisiti per i file audio.'
+description: Pianificazione dei Response Group in Skype for Business Server VoIP aziendale, che consente di configurare il routing delle chiamate a gruppi di utenti. Include i requisiti per i file audio.
+ms.openlocfilehash: c7a34b63cfd01e8958c85f459415e3830d0eb235
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62392408"
 ---
-
 # <a name="plan-for-the-response-group-application-in-skype-for-business-server"></a>Pianificare l'applicazione Response Group in Skype for Business Server
 
 Pianificazione dei Response Group in Skype for Business Server VoIP aziendale, che consente di configurare il routing delle chiamate a gruppi di utenti. Include i requisiti per i file audio.
@@ -43,7 +48,7 @@ Un flusso di lavoro definisce il comportamento di una chiamata dal momento in cu
 
 ## <a name="management-of-response-groups"></a>Gestione dei Response Group
 
-In Skype for Business Server sono disponibili due ruoli di gestione per la gestione dei Response Group: Response Group Manager e Response Group Administrator. Gli amministratori di Response Group possono gestire qualsiasi aspetto di qualsiasi Response Group. I responsabili di Response Group possono gestire solo determinati aspetti e solo per i Response Group di cui sono proprietari. Il ruolo Manager consente di ridurre i costi di amministrazione, perché è possibile delegare responsabilità limitate per response group specifici a qualsiasi utente abilitato per VoIP aziendale. Si noti che un utente può essere sia un responsabile di Response Group che un amministratore di Response Group.
+In Skype for Business Server sono disponibili due ruoli di gestione per la gestione dei Response Group: Response Group Manager e Response Group Administrator. Gli amministratori di Response Group possono gestire qualsiasi aspetto di qualsiasi Response Group. I responsabili di Response Group possono gestire solo determinati aspetti e solo per i Response Group di cui sono proprietari. Il ruolo Manager consente di ridurre i costi di amministrazione, poiché è possibile delegare responsabilità limitate per gruppi di risposta specifici a qualsiasi utente abilitato per VoIP aziendale. Si noti che un utente può essere sia un responsabile di Response Group che un amministratore di Response Group.
 
 Per supportare il ruolo Manager, l'applicazione Response Group utilizza un tipo **di flusso di lavoro** gestito o non gestito. Nella tabella riportata di seguito vengono descritti i Response Group gestiti e non gestiti.
 
@@ -51,7 +56,7 @@ Per supportare il ruolo Manager, l'applicazione Response Group utilizza un tipo 
 
 |**Tipo di Response Group**|**Descrizione**|
 |:-----|:-----|
-|Non gestito  <br/> | Ai Response Group non gestiti non è assegnato alcun Gestore. Solo l'amministratore di Response Group può configurare questi Response Group. <br/>  Response group multipli non gestiti possono condividere una coda o gruppo di agenti. <br/>  Quando si esegue la migrazione di Response Group da una versione precedente a Skype for Business Server, il tipo viene impostato su Non gestito. <br/> |
+|Non gestito  <br/> | Ai Response Group non gestiti non è assegnato alcun Gestore. Solo l'amministratore di Response Group può configurare questi Response Group. <br/>  Response group multipli non gestiti possono condividere una coda o gruppo di agenti. <br/>  Quando si esegue la migrazione di Response Group da una versione precedente a Skype for Business Server, il tipo è impostato su Non gestito. <br/> |
 |Gestione  <br/> | Gli amministratori di Response Group possono configurare qualsiasi aspetto dei Response Group gestiti. <br/>  I responsabili di Response Group non possono visualizzare o modificare i Response Group non assegnati in modo esplicito. <br/>  I responsabili di Response Group possono configurare solo alcune impostazioni per i Response Group assegnati in modo esplicito. <br/>  I Response group gestiti non possono condividere code o gruppi di agenti con altri Response group gestiti o non gestiti. <br/> |
 
 Nella tabella seguente vengono descritte le azioni che i responsabili di Response Group possono eseguire e non possono eseguire per i Response Group a loro assegnati.
@@ -73,7 +78,7 @@ I responsabili di Response Group possono utilizzare gli strumenti seguenti per g
 
 - Skype for Business Server Management Shell
 
-Response Group si adatta bene agli ambienti di reparto o di gruppo di lavoro (per informazioni dettagliate, vedere [Capacity Planning for Response Group](/previous-versions/office/lync-server-2013/lync-server-2013-capacity-planning-for-response-group)) e può essere distribuito in installazioni di telefonia completamente nuove. Supporta le chiamate in arrivo dalla distribuzione VoIP aziendale e dalla rete del gestore locale. Gli agenti possono utilizzare Skype for Business, Lync 2013, Lync 2010, Lync 2010 Attendant o Lync Telefono Edition per effettuare le chiamate instradati a loro.
+Response Group si adatta bene agli ambienti di reparto o di gruppo di lavoro (per informazioni dettagliate, vedere [Capacity Planning for Response Group](/previous-versions/office/lync-server-2013/lync-server-2013-capacity-planning-for-response-group)) e può essere distribuito in installazioni di telefonia completamente nuove. Supporta le chiamate in arrivo dalla distribuzione VoIP aziendale e dalla rete del gestore locale. Gli agenti possono utilizzare Skype for Business, Lync 2013, Lync 2010, Lync 2010 Attendant o Lync Telefono Edition per effettuare le chiamate instradati.
 
 ## <a name="deployment-and-requirements"></a>Distribuzione e requisiti
 

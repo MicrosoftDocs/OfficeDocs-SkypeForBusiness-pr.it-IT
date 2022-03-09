@@ -1,6 +1,6 @@
 ---
 title: Abilitare gli utenti per E9-1-1 in Skype for Business Server
-ms.reviewer: null
+ms.reviewer: ''
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -8,23 +8,28 @@ audience: ITPro
 ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
 ms.collection:
-  - IT_Skype16
-  - Strat_SB_Admin
-ms.custom: null
+- IT_Skype16
+- Strat_SB_Admin
+ms.custom: ''
 ms.assetid: 3cc64f5b-492e-4c47-9713-3c376f2aad02
-description: 'Decisioni necessarie per i criteri percorso per una distribuzione di E9-1-1 in Skype for Business Server VoIP aziendale, inclusi gli utenti da abilitare e come supportare gli utenti mobili.'
+description: Decisioni necessarie per i criteri percorso per una distribuzione di E9-1-1 in Skype for Business Server VoIP aziendale, inclusi gli utenti da abilitare e come supportare gli utenti mobili.
+ms.openlocfilehash: 877e813df4d1ace9084586702836db96dbb149a5
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62392428"
 ---
-
 # <a name="enable-users-for-e9-1-1-in-skype-for-business-server"></a>Abilitare gli utenti per E9-1-1 in Skype for Business Server
  
 Decisioni necessarie per i criteri percorso per una distribuzione di E9-1-1 in Skype for Business Server VoIP aziendale, inclusi gli utenti da abilitare e come supportare gli utenti mobili.
   
 Durante la registrazione del client, Skype for Business Server criteri percorso per configurare le proprietà E9-1-1 per VoIP aziendale utenti abilitati. In un criterio percorso sono contenute tutte le impostazioni che definiscono come verrà implementata la funzionalità E9-1-1. Ad esempio, il criterio percorso contiene informazioni come la stringa di composizione di emergenza e indica se un utente deve immettere manualmente una posizione se il servizio informazioni sulla posizione non ne fornisce automaticamente una. Per una definizione completa di un criterio percorso, vedere [Plan location policies for Skype for Business Server](location-policies.md).
   
-Skype for Business Server può assegnare un criterio percorso ai client in base alla subnet o agli utenti in base a un criterio globale, per sito o per utente. Per decidere come abilitare gli utenti, è consigliabile innanzitutto tenere conto degli aspetti seguenti.
+Skype for Business Server può assegnare un criterio percorso ai client in base alla subnet o agli utenti in base a criteri globali, per sito o per utente. Per decidere come abilitare gli utenti, è consigliabile innanzitutto tenere conto degli aspetti seguenti.
   
  **Valutare se si prevede di abilitare tutti gli utenti o di limitare il supporto a specifiche aree geografiche dell'organizzazione**
   

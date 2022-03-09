@@ -1,6 +1,6 @@
 ---
-title: Assegnare un certificato di autenticazione da server a server Skype for Business Server
-ms.reviewer: null
+title: Assegnare un certificato di autenticazione da server a server a Skype for Business Server
+ms.reviewer: ''
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -8,14 +8,19 @@ audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: c7413954-2504-47f4-a073-44548aff1c0c
 description: 'Riepilogo: assegnare un certificato di autenticazione da server a server per Skype for Business Server.'
+ms.openlocfilehash: fdbfcf7e5708b1992c4e7bb10108a35085607477
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62392618"
 ---
-
-# <a name="assign-a-server-to-server-authentication-certificate-to-skype-for-business-server"></a>Assegnare un certificato di autenticazione da server a server Skype for Business Server
+# <a name="assign-a-server-to-server-authentication-certificate-to-skype-for-business-server"></a>Assegnare un certificato di autenticazione da server a server a Skype for Business Server
 **Riepilogo:** Assegnare un certificato di autenticazione da server a server per Skype for Business Server.
   
 Per determinare se un certificato di autenticazione da server a server è già stato assegnato a Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell:
@@ -43,7 +48,7 @@ Set-CsCertificate -Identity global -Type OAuthTokenIssuer -Thumbprint $x
 
 Nel comando precedente, il certificato recuperato è configurato per funzionare come certificato di autenticazione da server a server globale. ciò significa che il certificato verrà replicato e utilizzato da tutti i Front End Server. Anche in questo caso, questo comando deve essere eseguito una sola volta e solo in uno dei Front End Server. Anche se tutti i Front End Server devono utilizzare lo stesso certificato, non è consigliabile configurare il certificato OAuthTokenIssuer in ogni Front End Server. Configurare invece il certificato una sola volta, quindi lasciare che il server Skype for Business Server di replica si occupi della copia del certificato in ogni server.
   
-Il cmdlet Set-CsCertificate utilizza il certificato in questione e configura immediatamente il certificato in modo che agirà come certificato OAuthTokenIssuer corrente. (Skype for Business Server conserva due copie di un tipo di certificato: il certificato corrente e il certificato precedente. Se è necessario che il nuovo certificato inizi immediatamente a fungere da certificato OAuthTokenIssuer, è necessario utilizzare il cmdlet Set-CsCertificate.
+Il cmdlet Set-CsCertificate accetta il certificato in questione e configura immediatamente il certificato in modo che agirà come certificato OAuthTokenIssuer corrente. (Skype for Business Server conserva due copie di un tipo di certificato: il certificato corrente e il certificato precedente. Se è necessario che il nuovo certificato inizi immediatamente a fungere da certificato OAuthTokenIssuer, è necessario utilizzare il cmdlet Set-CsCertificate.
   
 È inoltre possibile utilizzare il cmdlet Set-CsCertificate per "rollare" un nuovo certificato. "Rolling" un certificato significa semplicemente configurare un nuovo certificato in modo che diventi il certificato OAuthTokenIssuer corrente in un momento specificato. Ad esempio, questo comando recupera il certificato predefinito e quindi configura il certificato in modo che prenda il controllo come certificato OAuthTokenIssuer corrente a partire dal 1° luglio 2015:
   

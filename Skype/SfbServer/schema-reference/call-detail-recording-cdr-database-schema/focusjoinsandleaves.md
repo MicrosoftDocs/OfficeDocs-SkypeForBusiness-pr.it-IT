@@ -1,6 +1,6 @@
 ---
 title: Tabella FocusJoinsAndLeaves Skype for Business Server 2015
-ms.reviewer: null
+ms.reviewer: ''
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -9,20 +9,25 @@ audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
 ms.assetid: e6f0212c-67e9-4061-8720-d0296e855991
 description: Ogni record in questa tabella contiene le informazioni di registrazione dettagli chiamata relative all'accesso di un utente e lasciare le informazioni per una conferenza. Ogni conferenza è rappresentata in questa tabella da un record per ogni volta che un utente partecipa e lascia la conferenza.
+ms.openlocfilehash: 607101a4bbcc5909ab8c9271a878a0b59164552d
+ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/05/2022
+ms.locfileid: "62392288"
 ---
-
 # <a name="focusjoinsandleaves-table-in-skype-for-business-server-2015"></a>Tabella FocusJoinsAndLeaves Skype for Business Server 2015
  
 Ogni record in questa tabella contiene le informazioni di registrazione dettagli chiamata relative all'accesso di un utente e lasciare le informazioni per una conferenza. Ogni conferenza è rappresentata in questa tabella da un record per ogni volta che un utente partecipa e lascia la conferenza.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**SessionIdTime** <br/> |datetime  <br/> |Primaria, esterna  <br/> |Data e ora dell'istanza di conferenza. Utilizzato insieme a **SessionIdSeq** per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella Conferenze [Skype for Business Server 2015](conferences.md). <br/> |
-|**SessionIdSeq** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero ID per identificare l'istanza di conferenza. Utilizzato insieme a **SessionIdTime** per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella Conferenze [Skype for Business Server 2015](conferences.md). <br/> |
+|**SessionIdTime** <br/> |datetime  <br/> |Primaria, esterna  <br/> |Data e ora dell'istanza di conferenza. Utilizzato insieme a **SessionIdSeq** per identificare in modo univoco un'istanza di conferenza. Per ulteriori [informazioni, vedere la tabella Conferenze Skype for Business Server 2015](conferences.md). <br/> |
+|**SessionIdSeq** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero ID per identificare l'istanza di conferenza. Utilizzato insieme a **SessionIdTime** per identificare in modo univoco un'istanza di conferenza. Per ulteriori [informazioni, vedere la tabella Conferenze Skype for Business Server 2015](conferences.md). <br/> |
 |**DialogSessionIdTime** <br/> |datetime  <br/> |Primaria, esterna  <br/> |Data e ora della richiesta di sessione. Valore utilizzato insieme a **SessionIdSeq** per identificare in modo univoco una sessione. Per ulteriori [informazioni, vedere la tabella Dialogs Skype for Business Server 2015](dialogs.md). <br/> |
 |**DialogSessionIdSeq** <br/> |int  <br/> |Primaria, esterna  <br/> |Numero ID per identificare la sessione. Valore utilizzato insieme a **SessionIdTime** per identificare in modo univoco una sessione. per [ulteriori informazioni, vedere la tabella Dialogs Skype for Business Server 2015](dialogs.md). <br/> |
 |**UserId** <br/> |int  <br/> |Foreign  <br/> |Numero univoco che identifica l'utente, a cui viene fatto riferimento dalla [tabella Utenti](users.md).  <br/> |
