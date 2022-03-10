@@ -3,7 +3,7 @@ title: Crittografia end-to-end per Microsoft Teams
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 10/23/2021
+ms.date: 03/08/2022
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
@@ -19,21 +19,21 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cdce0e30c1aaa3b40f362acda47c1a9ffa35161f
-ms.sourcegitcommit: 5e9b50cd1b513f06734be6c024ac06d293b27089
+ms.openlocfilehash: 202aee527896b331a6c8e64e1fc8736fa4942ecb
+ms.sourcegitcommit: fe71ecbe35b8adfb9166188923ed1111b3b8e2a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518938"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63388190"
 ---
-# <a name="use-end-to-end-encryption-for-one-to-one-microsoft-teams-calls-public-preview"></a>Usare la crittografia end-to-end per le chiamate uno-a-uno di Microsoft Teams (anteprima pubblica)
+# <a name="use-end-to-end-encryption-for-one-to-one-microsoft-teams-calls"></a>Usare la crittografia end-to-end per le chiamate uno-a-uno di Microsoft Teams
 
 > [!IMPORTANT]
 > Il modello di servizioTteams e il relativo supporto per la crittografia sono soggetti a modifiche per migliorare le esperienze dei clienti. Ad esempio, il servizio deprecazione periodica delle suite di crittografia che non sono più considerate sicure. Le modifiche apportate verranno applicate con l'obiettivo di garantire la protezione e l’affidabilità da progettazione di Teams. Inoltre, tutto il contenuto dei clienti nei data center Microsoft è crittografato. Per informazioni sui livelli di crittografia in Microsoft 365, vedere crittografia [in Microsoft 365](/microsoft-365/compliance/encryption).
 
 La crittografia end-to-end, o E2EE, si verifica quando il contenuto viene crittografato prima che venga inviato e decrittografato solo dal destinatario previsto. Con la crittografia end-to-end, solo i due sistemi endpoint sono coinvolti nella crittografia e decrittografia dei dati della chiamata. Nessun'altra parte, inclusa Microsoft, ha accesso alla conversazione decrittografata.
 
-Con questa versione di anteprima pubblica è in corso l'implementazione di E2EE per le chiamate uno-a-uno non pianificate. Solo il flusso multimediale in tempo reale, ovvero i dati video e vocali, per le chiamate di Teams uno-a-uno vengono crittografati end-to-end. Entrambe le parti devono attivare questa impostazione per abilitare la crittografia end-to-end. [La crittografia in Microsoft 365](/microsoft-365/compliance/encryption) protegge la chat, la condivisione di file, la presenza e altri contenuti nella chiamata.
+Con E2EE per le chiamate uno-a-uno non pianificate, solo per il flusso multimediale in tempo reale, ossia i dati video e voce, per le chiamate uno-a-uno di Teams viene usata la crittografia end-to-end. Entrambe le parti devono attivare questa impostazione per abilitare la crittografia end-to-end. [La crittografia in Microsoft 365](/microsoft-365/compliance/encryption) protegge la chat, la condivisione di file, la presenza e altri contenuti nella chiamata.
 
 Se non si abilita la crittografia end-to-end, Teams una chiamata o una riunione usando la crittografia in base agli standard di settore. I dati scambiati durante le chiamate sono sempre sicuri mentre sono in transito e inattivi. Per altre informazioni, vedere [Crittografia multimediale per Teams](teams-security-guide.md#media-encryption).
 
@@ -109,7 +109,7 @@ Per configurare la crittografia end-to-end, l'account aziendale o dell'istituto 
 
 #### <a name="to-enable-end-to-end-encryption-for-your-entire-tenant-using-the-global-policy"></a>Per abilitare la crittografia end-to-end per l'intero tenant usando i criteri globali
 
-Per impostazione predefinita, la crittografia end-to-end è disabilitata. Per abilitare la crittografia end-to-end per l'intero tenant impostando il criterio globale predefinito, eseguire il cmdlet [Set-CsTeamsEnhancedEncryptionPolicy](/powershell/module/teams/Set-CsTeamsEnhancedEncryptionPolicy) come indicato di seguito.
+Per impostazione predefinita, la crittografia end-to-end è disabilitata. Per abilitarla per l'intero tenant impostando il criterio globale predefinito, eseguire il cmdlet [Set-CsTeamsEnhancedEncryptionPolicy](/powershell/module/teams/Set-CsTeamsEnhancedEncryptionPolicy) come indicato di seguito.
 
 ```powershell
 Set-CsTeamsEnhancedEncryptionPolicy -Identity Global -CallingEndtoEndEncryptionEnabledType DisabledUserOverride
@@ -149,7 +149,7 @@ Dove:
 
 - *`policyname`* è il nome da usare per il criterio. I nomi dei criteri non possono contenere spazi, ad esempio ContosoE2EEUserPolicy.
 
-Gli utenti devono comunque attivare le chiamate crittografate end-to-end nelle impostazioni di Teams prima di poter effettuare una chiamata crittografata end-to-end. Per istruzioni, vedere [Usare la crittografia end-to-end](https://support.microsoft.com/office/1274b4d2-b5c5-4b24-a376-606fa6728a90)per Teams chiamate.
+Gli utenti devono comunque attivare le chiamate crittografate end-to-end nelle impostazioni di Teams prima di poter effettuare una chiamata crittografata end-to-end. Per istruzioni, vedere [Usare la crittografia end-to-end per le chiamate di Teams](https://support.microsoft.com/office/1274b4d2-b5c5-4b24-a376-606fa6728a90).
 
 Ad esempio:
 

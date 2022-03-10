@@ -21,12 +21,12 @@ description: L'amministratore IT o di Teams può configurare l'accesso esterno p
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: ae0eb1b15c44dc85a82a87dfd92786c16c65cfc4
-ms.sourcegitcommit: 109be23768ae183e07a0833fa9a9e5cb0369cb43
+ms.openlocfilehash: 86a1b83ab0eb2d15810f94d61d0f7faccc226aa4
+ms.sourcegitcommit: fe71ecbe35b8adfb9166188923ed1111b3b8e2a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368391"
+ms.lasthandoff: 03/09/2022
+ms.locfileid: "63388098"
 ---
 # <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 
@@ -49,7 +49,7 @@ I criteri di accesso esterno includono i controlli per ogni tipo di federazione 
 L'interfaccia di amministrazione di Teams controlla l'accesso esterno a livello di organizzazione. Se si vuole controllare l'accesso esterno alla leva dell'utente, è necessario usare PowerShell. Per altre informazioni, vedi [Utilizzo di PowerShell](#using-powershell) di seguito.
 
 > [!NOTE]
-> Se si disattiva l'accesso esterno nell'organizzazione, gli utenti esterni possono comunque partecipare alle riunioni mediante la partecipazione anonima. Per altre informazioni, vedere [Gestire le impostazioni di riunione in Teams](meeting-settings-in-teams.md).
+> Se si disattiva l'accesso esterno nell'organizzazione, gli utenti esterni possono comunque partecipare alle riunioni mediante la partecipazione anonima. Per altre informazioni, vedere [Gestire le impostazioni delle riunioni in Teams](meeting-settings-in-teams.md).
 
 > [!NOTE]
 > Gli utenti Teams possono aggiungere app quando tengono riunioni o chat con persone di altre organizzazioni. Possono inoltre usare app condivise da componenti di altre organizzazioni quando prendono parte a riunioni o chat tenute da quelle organizzazioni. Si applicano i criteri sui dati dell’organizzazione dell’utente ospitante, così come le pratiche di condivisione dei dati di tutte le app di terze parti condivise da quell’organizzazione.
@@ -143,7 +143,7 @@ Per altre informazioni sui modi in cui gli utenti di Teams e gli utenti di Skype
 
 Le impostazioni a livello di organizzazione possono essere configurate usando [Set-CSTenantFederationConfiguration](/powershell/module/skype/set-cstenantfederationconfiguration) e le impostazioni a livello utente possono essere configurate con [Set-CsExternalAccessPolicy](/powershell/module/skype/set-csexternalaccesspolicy).
 
-La tabella seguente mostra i parametri del cmdlet utilizzati per configurare la federazione.
+La tabella seguente mostra i parametri del cmdlet utilizzati per configurare la federazione. Si noti che la configurazione della federazione con domini specifici può essere eseguita solo a livello di organizzazione e non a livello di utente.
 
 |Configurazione|Livello di organizzazione (Set-CSTenantFederationConfiguration)|Livello utente (Set-CsExternalAccessPolicy)|
 |:-------|:--------|:------------------|
