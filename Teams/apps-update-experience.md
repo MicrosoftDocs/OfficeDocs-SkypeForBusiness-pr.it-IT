@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Scopri come aggiornare le app in Microsoft Teams.
-ms.openlocfilehash: aaba298f928e88ad38b862e533cd98bb5aae690f
-ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.openlocfilehash: fac8f10808300280f52a62501ebb5cb8d69b4bb8
+ms.sourcegitcommit: ff975c21725e1812e6db8fc9fe37de1362f168c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "63070235"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63435710"
 ---
 # <a name="update-apps-in-microsoft-teams"></a>Aggiornare le app in Microsoft Teams
 
@@ -35,7 +35,7 @@ Nella maggior parte dei casi, dopo che gli sviluppatori di app pubblicano un agg
 * È stata aggiunta la funzionalità SupportsCalling, SupportsVideo e SupportsFiles di un bot
 * È stata aggiunta un'estensione di messaggistica
 * È stato aggiunto un nuovo connettore
-* Proprietà all'interno di "webApplicationInfo" modificate
+* Le autorizzazioni all'interno di "Autorizzazione" sono state aggiunte o modificate
 
 ![nuova versione disponibile.](media/manage-your-custom-apps-update1.png)
 

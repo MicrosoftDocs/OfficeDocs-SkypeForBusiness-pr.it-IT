@@ -21,12 +21,12 @@ description: L'amministratore IT o di Teams può configurare l'accesso esterno p
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 86a1b83ab0eb2d15810f94d61d0f7faccc226aa4
-ms.sourcegitcommit: fe71ecbe35b8adfb9166188923ed1111b3b8e2a1
+ms.openlocfilehash: ec2ee80d2475742380944b2e834b5c7b7cf24275
+ms.sourcegitcommit: c5f281342c5f2af65492692ab1249789c637e457
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/09/2022
-ms.locfileid: "63388098"
+ms.locfileid: "63392918"
 ---
 # <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 
@@ -46,7 +46,7 @@ Usare l'accesso esterno quando:
 
 I criteri di accesso esterno includono i controlli per ogni tipo di federazione a livello di organizzazione e di utente. La disattivazione di un criterio a livello di organizzazione lo disattiva per tutti gli utenti, indipendentemente dall'impostazione a livello di utente. Tutte le impostazioni di accesso esterno sono abilitate per impostazione predefinita.
 
-L'interfaccia di amministrazione di Teams controlla l'accesso esterno a livello di organizzazione. Se si vuole controllare l'accesso esterno alla leva dell'utente, è necessario usare PowerShell. Per altre informazioni, vedi [Utilizzo di PowerShell](#using-powershell) di seguito.
+L'interfaccia di amministrazione di Teams controlla l'accesso esterno a livello di organizzazione. La maggior parte delle opzioni, ad eccezione delle restrizioni di dominio, è disponibile a livello di utente tramite PowerShell. Per altre informazioni, vedi [Utilizzo di PowerShell](#using-powershell) di seguito.
 
 > [!NOTE]
 > Se si disattiva l'accesso esterno nell'organizzazione, gli utenti esterni possono comunque partecipare alle riunioni mediante la partecipazione anonima. Per altre informazioni, vedere [Gestire le impostazioni delle riunioni in Teams](meeting-settings-in-teams.md).
@@ -143,13 +143,13 @@ Per altre informazioni sui modi in cui gli utenti di Teams e gli utenti di Skype
 
 Le impostazioni a livello di organizzazione possono essere configurate usando [Set-CSTenantFederationConfiguration](/powershell/module/skype/set-cstenantfederationconfiguration) e le impostazioni a livello utente possono essere configurate con [Set-CsExternalAccessPolicy](/powershell/module/skype/set-csexternalaccesspolicy).
 
-La tabella seguente mostra i parametri del cmdlet utilizzati per configurare la federazione. Si noti che la configurazione della federazione con domini specifici può essere eseguita solo a livello di organizzazione e non a livello di utente.
+La tabella seguente mostra i parametri del cmdlet utilizzati per configurare la federazione.
 
 |Configurazione|Livello di organizzazione (Set-CSTenantFederationConfiguration)|Livello utente (Set-CsExternalAccessPolicy)|
 |:-------|:--------|:------------------|
 |Abilitare/disabilitare la federazione con altre organizzazioni di Teams e Skype for Business|`-AllowFederatedUsers`|`-EnableFederationAccess`|
-|Abilitare la federazione con domini specifici|`-AllowedDomains`|N/D|
-|Disabilitare la federazione con domini specifici|`-Blocked Domains`|N/D|
+|Abilitare la federazione con domini specifici|`-AllowedDomains`|Non disponibile|
+|Disabilitare la federazione con domini specifici|`-Blocked Domains`|Non disponibile|
 |Abilitare/disabilitare la federazione con gli utenti di Teams non gestiti da un'organizzazione|`-AllowTeamsConsumer`|`-EnableTeamsConsumerAccess`|
 |Abilitare/disabilitare gli utenti di Teams non gestiti da un'organizzazione dall'avvio di conversazioni|`-AllowTeamsConsumerInbound`|`-EnableTeamsConsumerInbound`|
 |Abilitare/disabilitare la federazione con Skype|`-AllowPublicUsers`|`-EnablePublicCloudAccess`|
@@ -161,7 +161,7 @@ Set-CsTenantFederationConfiguration -AllowFederatedUsers $false
 Set-CsExternalAccessPolicy -EnableFederationAccess $true
 ```
 
-In questo esempio, anche se i criteri a livello di utente sono abilitati, gli utenti non saranno in grado di comunicare con gli utenti gestiti di Teams o con gli utenti di Skype for Business perché questo tipo di federazione è stato disattivato a livello di organizzazione. Pertanto, se si desidera abilitare questi controlli per un sottoinsieme di utenti, è necessario attivare il controllo a livello di organizzazione e creare due criteri di gruppo– uno che si applica agli utenti che devono avere il controllo disattivato e uno che si applica agli utenti a cui deve essere attivato il controllo.
+In questo esempio, anche se i criteri a livello di utente sono abilitati, gli utenti non saranno in grado di comunicare con gli utenti gestiti di Teams o con gli utenti di Skype for Business perché questo tipo di federazione è stato disattivato a livello di organizzazione. Pertanto, se si desidera abilitare questi controlli per un sottoinsieme di utenti, è necessario attivare il controllo a livello di organizzazione e creare due criteri – di gruppo uno che si applica agli utenti che devono avere il controllo disattivato e uno che si applica agli utenti a cui deve essere attivato il controllo.
 
 ## <a name="limit-external-access-to-specific-people"></a>Limitare l'accesso esterno a utenti specifici
 

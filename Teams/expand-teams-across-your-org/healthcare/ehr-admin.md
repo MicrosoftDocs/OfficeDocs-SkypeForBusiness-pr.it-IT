@@ -23,12 +23,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: ansantam
 description: Informazioni su come integrare il connettore Teams EHR per consentire ai provider sanitari dell'organizzazione di condurre visite virtuali con pazienti o altri provider in Teams direttamente dal sistema Epic EHR.
-ms.openlocfilehash: 47dde0f4314a5506ddede7543f1a294523e84598
-ms.sourcegitcommit: 5ca04ee10e3f254e1b24506de116591fdfd51d18
+ms.openlocfilehash: 86d6061f41c94d95098dbecdad2d92edb9f85a3b
+ms.sourcegitcommit: ff975c21725e1812e6db8fc9fe37de1362f168c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "62929151"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63435720"
 ---
 # <a name="virtual-visits-with-teams---integration-into-epic-ehr"></a>Visite virtuali con Teams - Integrazione in Epic EHR
 
@@ -36,8 +36,8 @@ Il connettore Microsoft Teams Electronic Health Record (EHR) consente ai medici 
 
 La piattaforma di comunicazione e collaborazione di Teams consente ai medici di ridurre facilmente l'ingombro dei sistemi frammentati, in modo che possano concentrarsi sulla fornitura delle migliori cure possibili. Con il Teams EHR è possibile:
 
-- Avvia Teams virtual visits dal tuo sistema Epic EHR con un flusso di lavoro clinico integrato.
-- Consenti ai pazienti di partecipare Teams visite virtuali dal portale dei pazienti o tramite SMS.
+- Avvia Teams visite virtuali dal sistema Epic EHR con un flusso di lavoro clinico integrato.
+- Consentire ai pazienti di partecipare Teams visite virtuali dall'interno del portale dei pazienti o tramite SMS.
 - Supportare altri scenari, tra cui più partecipanti, visite di gruppo e servizi di interprete.
 - Scrivere di nuovo i metadati nel sistema EHR Teams le visite virtuali da registrare quando i partecipanti si connettono, si disconnettino e abilitano il controllo automatico e la conservazione dei record.
 - Visualizza report sui dati di consumo e informazioni personalizzabili sulla qualità delle chiamate per le visite connesse a EHR.
@@ -46,7 +46,7 @@ Guarda questo video per una panoramica su come gestire le visite virtuali dal po
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HAtn]
 
-Questo articolo descrive come configurare il connettore Teams EHR per l'integrazione con la piattaforma Epic nell'organizzazione sanitaria. Offre anche una panoramica dell'esperienza Teams visite virtuali dal sistema Epic EHR.
+Questo articolo descrive come configurare e configurare il connettore Teams EHR per l'integrazione con la piattaforma Epic nell'organizzazione sanitaria. Offre anche una panoramica dell'esperienza Teams visite virtuali dal sistema Epic EHR.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -67,16 +67,16 @@ Esaminare le informazioni seguenti per comprendere il processo di integrazione g
 Dovrai richiedere l'accesso all'app Teams app.
 
 1. Richiedi di scaricare l'app Teams app nel [marketplace Epic App Orchard](https://apporchard.epic.com/Gallery?id=6153). In questo modo viene attivata una richiesta da Epic al team di connettori Microsoft EHR.
-1. Dopo aver inviato la richiesta, inviare un messaggio di posta elettronica [TeamsForHealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) con il nome dell'organizzazione, l'ID tenant e l'indirizzo di posta elettronica del contatto tecnico Epic.
+1. Dopo aver inviato la richiesta, inviare un messaggio di posta elettronica [a TeamsForHealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) con il nome dell'organizzazione, l'ID tenant e l'indirizzo di posta elettronica del contatto tecnico Epic.
 1. Il team del connettore Microsoft EHR risponderà al messaggio di posta elettronica con la conferma dell'abilitazione.
 
-### <a name="review-the-epic-microsoft-teams-telehealth-integration-guide"></a>Leggere la guida Epic-Microsoft Teams'integrazione telehealth
+### <a name="review-the-epic-microsoft-teams-telehealth-integration-guide"></a>Leggere la guida Epic-Microsoft Teams'integrazione di Telehealth
 
 Rivedere la [Guida all'integrazione della telemedicina di Epic-Microsoft Teams](https://galaxy.epic.com/Search/GetFile?Url=1!68!100!100100357) con uno specialista tecnico Epic. Assicurarsi che tutti i prerequisiti siano soddisfatti.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-- Un abbonamento attivo a Microsoft Cloud per il settore sanitario o un abbonamento a un'offerta autonoma del connettore EHR Microsoft Teams (applicata solo durante i test in un ambiente EHR di produzione).
+- Un abbonamento attivo a Microsoft Cloud per il settore sanitario o un abbonamento all'offerta autonoma del connettore EHR Microsoft Teams (applicato solo quando si esegue il test in un ambiente EHR di produzione).
 - Versione epica di novembre 2018 o successiva.
 - Gli utenti hanno una licenza Microsoft 365 o Office 365 che include Teams riunioni.
 - Teams viene adottato e usato nell'organizzazione sanitaria.
@@ -132,7 +132,7 @@ Quindi, per configurare l'integrazione, l'Microsoft 365 amministratore esegue le
 
 Completare questo passaggio se l'organizzazione vuole che Microsoft gesti le notifiche SMS per i pazienti. Quando si abilitano le notifiche TRAMITE SMS, i pazienti riceveranno messaggi di conferma e promemoria per le visite pianificate.
 
-Per abilitare le notifiche SMS, l Microsoft 365 amministratore esegue le operazioni seguenti:
+Per abilitare le notifiche TRAMITE SMS, l Microsoft 365 amministratore esegue le operazioni seguenti:
 
 1. Nella pagina Notifiche SMS selezionare entrambe le caselle di controllo di consenso per:
 
@@ -149,7 +149,7 @@ Per abilitare le notifiche SMS, l Microsoft 365 amministratore esegue le operazi
 
     Scegliere **Fine** e quindi **avanti**.
 
-1. Per collegare il numero di telefono a un URL di base FHIR, **in Telefono numero nella** sezione configurazione **SMS** selezionare il numero. Eseguire questa operazione per ogni URL di base FHIR per cui si vogliono abilitare le notifiche SMS.
+1. Per collegare il numero di telefono a un URL di base FHIR, **in Telefono nella** sezione configurazione **SMS** selezionare il numero. Eseguire questa operazione per ogni URL di base FHIR per cui si vogliono abilitare le notifiche SMS.
 
     :::image type="content" source="media/ehr-connector-epic-link-phone-number.png" alt-text="Screenshot che mostra come collegare un numero di telefono a un URL di base FHIR." lightbox="media/ehr-connector-epic-link-phone-number.png":::
 
@@ -173,7 +173,7 @@ Per abilitare le notifiche SMS, l Microsoft 365 amministratore esegue le operazi
     Scegliere **Avanti**.
 
 > [!NOTE]
-> In qualsiasi momento, l Microsoft 365 amministratore può aggiornare qualsiasi impostazione di SMS. Tenere presente che la modifica delle impostazioni potrebbe comportare l'interruzione del servizio SMS. Per altre informazioni su come visualizzare i report SMS, vedere Teams di amministrazione del [connettore EHR](ehr-admin-reports.md).
+> In qualsiasi momento, l Microsoft 365 amministratore può aggiornare qualsiasi impostazione sms. Tenere presente che la modifica delle impostazioni potrebbe comportare l'interruzione del servizio SMS. Per altre informazioni su come visualizzare i report SMS, vedere Teams [di amministrazione del connettore EHR](ehr-admin-reports.md).
 
 ### <a name="approve-or-view-the-configuration"></a>Approvare o visualizzare la configurazione
 
@@ -200,12 +200,12 @@ Quando l’amministratore di Epic avrà approvato le informazioni di configurazi
 L'analista del cliente Epic deve fornire questi record a Epic per completare la configurazione delle visite virtuali in Epic. Per altre informazioni, vedere la [Guida all'integrazione di Microsoft Teams Telehealth.](https://galaxy.epic.com/Search/GetFile?Url=1!68!100!100100357)
 
 > [!Note]  
-> In qualsiasi momento il Microsoft 365 o l'analista del cliente Epic possono accedere al portale di configurazione per visualizzare i record di integrazione e modificare la configurazione dell'organizzazione, in base alle esigenze.
+> In qualsiasi momento il Microsoft 365 o l'analista cliente Epic può accedere al portale di configurazione per visualizzare i record di integrazione e modificare la configurazione dell'organizzazione, in base alle esigenze.
 
 :::image type="content" source="media/ehr-connector-epic-finish.png" alt-text="Screenshot della pagina Revisione e fine, con le informazioni sull'integrazione." lightbox="media/ehr-connector-epic-finish.png":::
 
 > [!Note]
-> L'analista del cliente Epic deve completare il processo di approvazione per ogni URL di base FHIR configurato dall'Microsoft 365 aziendale.
+> L'analista del cliente Epic deve completare il processo di approvazione per ogni URL di base FHIR configurato dall'Microsoft 365 amministratore.
 
 ## <a name="launch-teams-virtual-visits"></a>Avviare Teams visite virtuali
 
@@ -219,7 +219,7 @@ Dopo aver completato i passaggi del connettore EHR e la configurazione epica, l'
 
 ### <a name="provider-experience"></a>Esperienza del provider
 
-I provider di servizi sanitari dell'organizzazione possono partecipare alle visite usando Teams dalle loro app di provider Epic (Hyperspace, Haiku, Canto). Il pulsante **Begin virtual visit** (Avvia visita virtuale) è incorporato nel flusso del provider.
+I provider di servizi sanitari dell'organizzazione possono partecipare alle visite Teams dalle loro app per provider Epic (Hyperspace, Haiku, Canto). Il pulsante **Begin virtual visit** (Avvia visita virtuale) è incorporato nel flusso del provider.
 
 Caratteristiche principali dell'esperienza del provider:
 
@@ -242,7 +242,7 @@ Il connettore supporta i pazienti che a uniscono le visite tramite il Web MyChar
 
 Caratteristiche principali dell'esperienza del paziente:
 
-- I pazienti possono partecipare a visite da web browser moderni su desktop e [dispositivi mobili](../mobile-browser-join.md) senza dover installare l Teams app.
+- I pazienti possono partecipare a visite da web browser moderni su desktop e [dispositivi mobili senza dover](../mobile-browser-join.md) installare l Teams app.
 
 - I pazienti possono partecipare alle visite con un solo clic e non è necessario alcun altro account o accesso.
 
@@ -257,6 +257,12 @@ Caratteristiche principali dell'esperienza del paziente:
 > [!Note]
 > Epic, MyChart, Haiku e Canto sono marchi registrati di Epic Systems Corporation.
 
+## <a name="get-insight-into-virtual-visits-usage"></a>Informazioni dettagliate sull'utilizzo di Visite virtuali
+
+Il [report sull'utilizzo delle visite virtuali](../../teams-analytics-and-reports/virtual-visits-usage-report.md) nell'interfaccia Microsoft Teams di amministrazione offre agli amministratori una panoramica Teams attività Visite virtuali nell'organizzazione. Il report mostra analisi dettagliate per gli appuntamenti virtuali, Teams riunioni integrate con EHR condotte dal sistema EHR.
+
+È possibile visualizzare metriche chiave come il tempo di attesa della sala d'attesa e la durata della visita. Usare queste informazioni per ottenere informazioni approfondite sulle tendenze di utilizzo per ottimizzare le visite virtuali per ottenere risultati aziendali migliori.
+
 ### <a name="privacy-and-location-of-data"></a>Privacy e posizione dei dati
 
 Teams'integrazione nei sistemi EHR ottimizza la quantità di dati usati e archiviati durante l'integrazione e i flussi delle visite virtuali. La soluzione segue i principi generali della privacy e della gestione dei dati di Teams e le linee guida descritte nell’informativa sulla privacy di Teams.
@@ -267,6 +273,6 @@ L'ID univoco dell'utente CCE viene archiviato in una delle tre aree geografiche 
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Teams utilizzo di Visite virtuali](../../teams-analytics-and-reports/virtual-visits-usage-report.md)
+- [Teams utilizzo delle visite virtuali](../../teams-analytics-and-reports/virtual-visits-usage-report.md)
 - [Teams di amministrazione del connettore EHR](ehr-admin-reports.md)
 - [Introduzione a Teams per le organizzazioni sanitarie](teams-in-hc.md)
