@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Scopri quali dispositivi e periferiche USB (ad esempio cuffie, vivavoci, webcam e monitor) sono certificati per Microsoft Teams.
-ms.openlocfilehash: d47e4723efae7ba339b54f5aa62064775d882e38
-ms.sourcegitcommit: 1129841e68e927fe7cc31de3ad63a3e9247253cd
+ms.openlocfilehash: 1b9b8116ad06d58f6e77e33394ad5dd3db107c88
+ms.sourcegitcommit: 2b858f5e7281705b383522615b6ade6eba347df5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62363192"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "63448799"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -28,7 +28,7 @@ Il programma di certificazione delle periferiche assicura che le periferiche USB
 
 Per esplorare i dispositivi testati e certificati per Microsoft Teams, visita il [Teams store](https://products.office.com/microsoft-teams/across-devices/devices).
 
-Per altre informazioni sul supporto del controllo delle chiamate Teams chiamate, vedere controllare le chiamate con un auricolare [in Teams](https://support.office.com/article/Control-calls-using-a-headset-in-Teams-65d6e104-444d-4013-b8c2-f11317dd69a8).
+Per altre informazioni sul supporto del controllo delle chiamate Teams chiamate, vedere Controllare le chiamate con un auricolare [in Teams](https://support.office.com/article/Control-calls-using-a-headset-in-Teams-65d6e104-444d-4013-b8c2-f11317dd69a8).
 
 > [!TIP]
 > Stai cercando dispositivi certificati per Skype for Business? Vai ai dispositivi [audio e video USB certificati per](/skypeforbusiness/certification/devices-usb-devices) Skype for Business.
@@ -37,8 +37,8 @@ Per altre informazioni sul supporto del controllo delle chiamate Teams chiamate,
 
 Gli utenti non devono sostituire i dispositivi certificati in precedenza durante l'aggiornamento a Teams da Skype for Business.  Tutti i dispositivi certificati sono supportati per Microsoft Teams e Skype for Business utenti, con solo alcune differenze.  La certificazione fornisce anche un'ulteriore designazione per determinate categorie di dispositivi.
 
-- **Skype for Business certificato con Teams aggiornamento** I dispositivi certificati a questo livello sono stati inizialmente certificati per Skype for Business. Microsoft ha collaborato con i produttori di dispositivi per offrire la migliore Teams di integrazione senza modifiche all'hardware originale. Il *pulsante hookswitch* funge da pulsante Teams quando non è in una chiamata e può includere più funzioni nel tempo.  I dispositivi di questa categoria possono portare il Teams di certificazione sul materiale di marketing.
-- **I dispositivi certificati Microsoft Teams** certificati a questo livello indicano i dispositivi più recenti certificati, per un'esperienza Teams senza compromessi. Questi dispositivi offrono tutti i vantaggi della certificazione precedente e includono anche un pulsante Teams con indicatore LED. Con la maggior parte dei fattori di Teams, il pulsante Teams sarà un pulsante tattile facile da trovare con il logo Teams testo. Microsoft continua a collaborare con i produttori di dispositivi per offrire nuovo valore tramite aggiornamenti del firmware nel tempo.
+- **Skype for Business certificato con Teams di aggiornamento** I dispositivi certificati a questo livello sono stati inizialmente certificati per Skype for Business. Microsoft ha collaborato con i produttori di dispositivi per offrire la migliore Teams di integrazione senza modifiche all'hardware originale. Il *pulsante hookswitch* funge da pulsante Teams quando non è in una chiamata e può includere più funzioni nel tempo.  I dispositivi di questa categoria possono portare il Teams di certificazione sul materiale di marketing.
+- **I dispositivi certificati Microsoft Teams** certificati a questo livello indicano i dispositivi più recenti certificati, per un'esperienza Teams senza compromessi. Questi dispositivi offrono tutti i vantaggi della certificazione precedente e includono anche un pulsante Teams con indicatore LED. Con la maggior parte dei fattori di Teams, il pulsante Teams tattile sarà un pulsante tattile facile da trovare con il logo Teams testo. Microsoft continua a collaborare con i produttori di dispositivi per offrire nuovo valore tramite aggiornamenti del firmware nel tempo.
 
 ### <a name="special-usage-designations"></a>Designazioni d'uso speciali
 
@@ -51,9 +51,9 @@ Gli utenti non devono sostituire i dispositivi certificati in precedenza durante
 
 ### <a name="new-teams-certification-benefits"></a>Nuovi Teams di certificazione
 
-- Pulsante di Teams e indicatore LED dedicato.
-- Notifica utente di eventi e avvisi dal client Teams (ad esempio, avvio della riunione, segreteria telefonica o chiamata persa).
-- Possibilità di attivare il client Teams o rispondere alla notifica con una pressione del pulsante , ad esempio per partecipare a una riunione.
+- Pulsante Teams e indicatore LED dedicato.
+- Notifica da parte dell'utente di eventi e avvisi dal client di Teams (ad esempio, avvio della riunione, segreteria telefonica o chiamata persa).
+- Possibilità di attivare il Teams o rispondere alla notifica con una pressione del pulsante , ad esempio per partecipare a una riunione.
 - Certificazione progettata per l'estendibilità (nuove funzionalità del dispositivo/client da distribuire tramite aggiornamento firmware).
 
 ### <a name="core-certification-benefits"></a>Vantaggi principali della certificazione
@@ -74,10 +74,11 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 
 ## <a name="certified-devices"></a>Dispositivi certificati
 
-*Tabella aggiornata a febbraio 2022*
+*Tabella aggiornata a marzo 2022*
 
 | Produttore        | Modello                                                     | Qualificato      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Dell                 |Vivavoce SP3022                                        |2/7/2022        |Certificato per Microsoft Teams                           |
 |Dell                 |Slim Conferencing Soundbar SB522A                          |1/25/2022       |Certificato per Microsoft Teams                           | 
 |Lenovo               |Cuffia ANC cablata                                       |1/12/2022       |Certificato per Microsoft Teams                           |
 |Lenovo               |Vai vivavoce cablato                                      |1/10/2022       |Certificato per Microsoft Teams                           |
