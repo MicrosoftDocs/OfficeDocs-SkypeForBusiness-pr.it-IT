@@ -21,12 +21,12 @@ MS.collection:
 - microsoftcloud-retail
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2ad0324509849700ea74afe582d4ce7a4934dc3e
-ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.openlocfilehash: 90bdf2661432a5d68b8f6a727a272855f1a52173
+ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "63070595"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63442452"
 ---
 # <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Tasks per l'organizzazione in Microsoft Teams
 
@@ -91,12 +91,12 @@ Non è consigliabile rimuovere una licenza Exchange Online per information worke
 
 Grazie alla pubblicazione di attività, l’organizzazione può pubblicare elenchi di attività mirati a posizioni specifiche (team) all'interno dell'organizzazione per definire e condividere un piano di lavoro da completare in tali posizioni.
 
-- Le persone che fanno parte del team di pubblicazione, come la leadership aziendale o regionale, possono creare elenchi di attività e pubblicarli in team specifici.<br>
+- Le persone che fanno parte del team di pubblicazione, come la leadership aziendale o regionale, possono creare elenchi di attività e pubblicarli in team specifici.
     ![Screenshot della pubblicazione delle attività.](media/manage-tasks-app-publish.png)
-- I manager dei team destinatari possono esaminare gli elenchi di attività pubblicati e assegnare singole attività ai membri del team.<br>
+- I manager dei team destinatari possono esaminare gli elenchi di attività pubblicati e assegnare singole attività ai membri del team.
     ![Screenshot dell'assegnazione di un'attività.](media/manage-tasks-app-assign.png)
 - Per i dipendenti in prima linea la visualizzazione delle attività su dispositivo mobile è molto semplice. Possono allegare foto per mostrare il loro lavoro e contrassegnare le loro attività come completate.
-- Gli editori e i manager possono visualizzare i report per vedere lo stato di assegnazione e completamento delle attività a ogni livello, anche per posizione (team), elenco attività e attività individuale.<br>
+- Gli editori e i manager possono visualizzare i report per vedere lo stato di assegnazione e completamento delle attività a ogni livello, anche per posizione (team), elenco attività e attività individuale.
     ![Screenshot delle attività assegnate in un dispositivo mobile.](media/manage-tasks-app-reporting.png)
 
 Gli utenti creano, gestiscono e pubblicano elenchi attività nella scheda **Elenchi pubblicati** nell'app Tasks. Questa scheda viene visualizzata solo per un utente se l’organizzazione ha [impostato una gerarchia di destinazione per team](#set-up-your-team-targeting-hierarchy) e l'utente fa parte di un team incluso nella gerarchia. La gerarchia determina se l'utente può pubblicare o ricevere elenchi attività e visualizzare i report per gli elenchi ricevuti.

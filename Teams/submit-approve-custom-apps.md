@@ -17,12 +17,12 @@ f1.keywords:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come approvare le app personalizzate inviate usando l'API Teams per l'invio di app in Microsoft Teams.
-ms.openlocfilehash: a1b6778c79fd389ebfd4b3ce172daa186e92b76e
-ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.openlocfilehash: 3a4dfc0b14f20f367cd3580c5366adc26233dde9
+ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "63070405"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63442332"
 ---
 # <a name="publish-a-custom-app-submitted-through-the-teams-app-submission-api"></a>Pubblicare un'app personalizzata inviata tramite l'API Teams per l'invio di app
 
@@ -116,17 +116,17 @@ Dopo la pubblicazione dell'app, lo stato **della** pubblicazione viene modificat
 
 ### <a name="control-access-to-the-app"></a>Controllare l'accesso all'app
 
-Per impostazione predefinita, tutti gli utenti dell'organizzazione possono accedere all'app nell'app store dell'organizzazione. Per limitare e controllare gli utenti autorizzati a usare l'app, è possibile creare e assegnare criteri di autorizzazione per l'app. Per altre informazioni, vedere <a href="/microsoftteams/teams-app-permission-policies" target="_blank">Gestire i criteri di autorizzazione delle app in teams</a>.
+Per impostazione predefinita, tutti gli utenti dell'organizzazione possono accedere all'app nell'app store dell'organizzazione. Per limitare e controllare gli utenti autorizzati a usare l'app, è possibile creare e assegnare criteri di autorizzazione per l'app. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
 
 ### <a name="pin-and-install-the-app-for-users-to-discover"></a>Aggiungere e installare l'app per consentire agli utenti di individuare
 
-Per impostazione predefinita, gli utenti possono trovare l'app che devono accedere all'app store dell'organizzazione e cercarla o cercarla. Per consentire agli utenti di accedere facilmente all'app, è possibile aggiungere l'app alla barra dell'app in Teams. A questo scopo, creare un criterio di configurazione dell'app e assegnarlo agli utenti. Per altre informazioni, vedere <a href="/microsoftteams/teams-app-setup-policies" target="_blank">Gestire i criteri di configurazione delle app in teams</a>.
+Per impostazione predefinita, gli utenti possono trovare l'app che devono accedere all'app store dell'organizzazione e cercarla o cercarla. Per consentire agli utenti di accedere facilmente all'app, è possibile aggiungere l'app alla barra dell'app in Teams. A questo scopo, creare un criterio di configurazione dell'app e assegnarlo agli utenti. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
 
 ### <a name="search-the-audit-log-for-teams-app-events"></a>Cercare nel log di controllo gli Teams dell'app
 
-È possibile eseguire ricerche nel log di controllo per visualizzare Teams attività delle app nell'organizzazione. Per altre informazioni su come eseguire ricerche nel log di controllo e visualizzare un elenco delle attività di Teams registrate nel log di controllo, vedere Cercare eventi nel log di controllo <a href="/microsoftteams/audit-log-events" target="_blank">in</a> Teams.
+È possibile eseguire ricerche nel log di controllo per visualizzare Teams attività delle app nell'organizzazione. Per altre informazioni su come eseguire ricerche nel log di controllo e visualizzare un elenco delle attività di Teams registrate nel log di controllo, vedere Cercare eventi nel log di controllo [in](audit-log-events.md) Teams.
 
-Prima di poter eseguire ricerche nel log di audit, è necessario attivare il controllo nel <a href="https://protection.office.com" target="_blank">Centro sicurezza e conformità</a>. Per altre informazioni, vedere <a href="https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014" target="_blank">Attivare o disattivare la ricerca nel log di controllo</a>. Tenere presente che i dati di controllo sono disponibili solo dal momento in cui è stato attivato il controllo.
+Prima di poter eseguire ricerche nel log di audit, è necessario attivare il controllo nel [Centro sicurezza e conformità](https://sip.protection.office.com/). Per altre informazioni, vedere [Attivare o disattivare la ricerca nel log di controllo](/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide). Tenere presente che i dati di controllo sono disponibili solo dal momento in cui è stato attivato il controllo.
 
 ## <a name="discover-and-adopt"></a>Scopri e adotta
 
@@ -159,7 +159,7 @@ Tenere presente quanto segue:
 - Quando un'app viene approvata, qualsiasi utente può inviare un aggiornamento all'app. Questo significa che altri sviluppatori, incluso lo sviluppatore che ha originariamente inviato l'app, possono inviare un aggiornamento all'app.
 - Quando uno sviluppatore invia un'app e la richiesta è in sospeso, solo lo stesso sviluppatore può inviare un aggiornamento all'app. Gli altri sviluppatori possono inviare un aggiornamento solo dopo l'approvazione dell'app.
 
-Per altre informazioni sull'uso dell'API Graph per aggiornare le app, vedere <a href="/graph/api/teamsapp-update">qui</a>.
+Per altre informazioni sull'uso dell'API Graph per aggiornare le app, vedere [qui](/graph/api/teamsapp-update?view=graph-rest-1.0&tabs=http).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -169,4 +169,4 @@ Per altre informazioni sull'uso dell'API Graph per aggiornare le app, vedere <a 
 - [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)
 - [Gestire i criteri di configurazione delle app in Teams](teams-app-setup-policies.md)
 - [Teams e avvisi](alerts/teams-admin-alerts.md)
-- <a href="/graph/api/resources/teamsapp?view=graph-rest-beta" target="_blank">API di microsoft Graph per Teams app</a>
+- [API di microsoft Graph per Teams app](alerts/teams-admin-alerts.md)

@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - seo-marvel-mar2020
-ms.openlocfilehash: 391c852edc1eef06c41277a43661fc1cf15b7cd6
-ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.openlocfilehash: b2225429eee73ecd5c6b33b62d4d1be24da306b9
+ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "63070355"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63442542"
 ---
 # <a name="manage-custom-app-policies-and-settings-in-microsoft-teams"></a>Gestire le impostazioni e i criteri delle app personalizzati in Microsoft Teams
 
@@ -56,7 +56,7 @@ Queste impostazioni non influiscono sulla possibilità di bloccare le app di ter
 ### <a name="user-custom-app-policy"></a>Criteri per le app personalizzate dell'utente
 
 Nell'ambito dei criteri di configurazione delle [app](teams-app-setup-policies.md), gli amministratori possono usare un'impostazione dei criteri, Upload **app** personalizzate, per controllare se un utente può caricare app personalizzate in Teams.
- 
+
 Se questa impostazione è disattivata:
 
 - L'utente non può caricare un'app personalizzata in un team dell'organizzazione o nel contesto personale.
@@ -65,7 +65,7 @@ Se questa impostazione è disattivata:
 Se questa impostazione è attivata:
 
 - L'utente può caricare app personalizzate nei team che lo consentono e nei team di cui sono proprietari, a seconda dell'impostazione dell'app personalizzata a livello di organizzazione.
-- L'utente può caricare app personalizzate nel contesto personale. 
+- L'utente può caricare app personalizzate nel contesto personale.
 - L'utente può interagire con le app personalizzate, a seconda dell'impostazione dell'app personalizzata a livello di organizzazione.
 
 È possibile modificare le impostazioni nei criteri di configurazione delle app globali per includere le app desiderate. Se si vogliono personalizzare le impostazioni Teams per diversi gruppi di utenti dell'organizzazione, creare e assegnare uno o più criteri di configurazione delle app personalizzati.
@@ -81,7 +81,7 @@ Se questa impostazione è attivata:
 ### <a name="team-custom-app-setting"></a>Impostazione dell'app personalizzata del team
 
 Gli amministratori e i proprietari del team possono controllare se un team consente l'aggiunta di app personalizzate. Questa impostazione, **Consenti ai membri di caricare app** personalizzate, insieme ai criteri delle app personalizzate di un utente, determina chi può aggiungere app personalizzate a un determinato team.
- 
+
 Se questa impostazione è disattivata:
 
 - I proprietari del team possono aggiungere app personalizzate, se i criteri delle app personalizzate lo consentono.

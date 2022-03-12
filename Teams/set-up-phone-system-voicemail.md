@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare le Cloud Voicemail per gli utenti.
-ms.openlocfilehash: d2bb29130bad312dbd420c0adb8b16558232c258
-ms.sourcegitcommit: c5f281342c5f2af65492692ab1249789c637e457
+ms.openlocfilehash: d78942c5cbfc6af8e921c26c806378b45f480835
+ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63392868"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63442322"
 ---
 # <a name="set-up-cloud-voicemail"></a>Configurare Cloud Voicemail
 
@@ -107,7 +107,7 @@ Per crittografare il messaggio della segreteria telefonica, è possibile creare 
 
 Quando si abilita la segreteria telefonica protetta, gli utenti possono ascoltare i messaggi della segreteria telefonica protetti chiamando nella propria cassetta postale della segreteria telefonica o aprendo il messaggio in Outlook, Outlook sul web o Outlook per Android o iOS. I messaggi della segreteria telefonica protetta non possono essere aperti in Microsoft Teams o Skype per Busimess.
 
-Per creare un'etichetta di riservatezza per la segreteria telefonica, vedere [Usare le etichette di riservatezza](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions). Selezionare **In Outlook, applicare una delle restrizioni seguenti** e quindi selezionare **l'opzione Non** inoltrare.
+Per creare un'etichetta di riservatezza per la segreteria telefonica, vedere [Usare le etichette di riservatezza](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions). Nella sezione **Crittografia** scegliere Consenti agli utenti di **assegnare le autorizzazioni quando applicano l'etichetta**. Selezionare **In Outlook, applicare una delle restrizioni seguenti** e quindi selezionare **l'opzione Non** inoltrare.
 
 Per creare i criteri di etichettatura automatica per applicare un'etichetta di riservatezza alla segreteria telefonica, vedere [Come](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) configurare i criteri di etichettatura automatica e specificare le impostazioni specifiche seguenti:
 

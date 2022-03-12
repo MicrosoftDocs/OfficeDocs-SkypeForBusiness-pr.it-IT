@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: bdc2124da8fb404c289a8e4e5eda962cd66cc9b4
-ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.openlocfilehash: 2b8eaa4cfc9743ad297c7309769a3195e84cb539
+ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "63070375"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63442462"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione app in Microsoft Teams
 
@@ -52,7 +52,7 @@ Se si volesse bloccare tutte le app di terze parti e consentire app specifiche d
 Se si vuole controllare le app disponibili per diversi gruppi di utenti dell'organizzazione, è possibile creare e assegnare uno o più criteri di autorizzazione app personalizzati. È possibile creare e assegnare criteri personalizzati in base a chi pubblica le app: Microsoft, terze parti o l'organizzazione. È importante sapere che, dopo aver creato un criterio personalizzato, non sarà possibile cambiarlo se le app di terze parti sono disabilitate nelle impostazioni app a livello di organizzazione.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Criteri di autorizzazione**.
-2. Fare clic su **Aggiungi**.<br>
+2. Fare clic su **Aggiungi**.
     ![Screenshot dei nuovi criteri di autorizzazione per le app.](media/app-permission-policies-new-policy.png)
 3. Immettere un nome e una descrizione per il criterio.
 4. In **App Microsoft**, **App di terze parti** e **App personalizzate**, selezionare una delle seguenti opzioni:
@@ -66,7 +66,7 @@ Se si vuole controllare le app disponibili per diversi gruppi di utenti dell'org
 
     1. Selezionare **Consenti app**.
     1. Cercare le app che si desidera consentire e fare clic su **Aggiungi**. I risultati della ricerca vengono filtrati in base al server di pubblicazione dell'app (**app Microsoft**, **app di terze parti** o **app personalizzate**).
-    1. Una volta scelto l'elenco delle app, fare clic su **Consenti**. 
+    1. Una volta scelto l'elenco delle app, fare clic su **Consenti**.
 
 6. Analogamente, se si seleziona **Blocca app specifiche e consenti tutte le altre**, cercare e aggiungere le app che si desidera bloccare, quindi fare clic su **Blocca**.
 7. Fare clic su **Salva**.
@@ -97,7 +97,7 @@ Usare le impostazioni app a livello di organizzazione per controllare se gli ute
 1. Nella pagina **Criteri di autorizzazione**, selezionare **Impostazioni app a livello di organizzazione**. È possibile quindi configurare le impostazioni desiderate nel pannello.
 
     ![Screenshot delle impostazioni dell'app a livello di organizzazione.](media/app-permission-policies-gcc-org-wide.png)
-    
+
 2. In **App di terze parti**, disattivare o attivare queste impostazioni per controllare l'accesso alle app di terze parti:
 
     - **Consenti app di terze parti**: questa impostazione controlla se gli utenti possono usare app di terze parti. Se si disattiva questa impostazione, gli utenti non potranno installare o usare qualsiasi app di terze parti. In una Microsoft 365 government - GCCH e DoD di Teams, questa impostazione è disattivata per impostazione predefinita.
@@ -113,9 +113,11 @@ Come indicato in precedenza, per consentire app di terze parti è possibile modi
 ### <a name="working-with-app-permission-policies"></a>Lavorare con i criteri di autorizzazione app
 
 #### <a name="what-app-interactions-do-permission-policies-affect"></a>Su quali interazioni delle app influiscono i criteri di autorizzazione?
+
 I criteri di autorizzazione disciplinano l'utilizzo dell'app controllando installazione, individuazione e interazione per gli utenti finali. Gli amministratori possono ancora gestire le app nell'interfaccia di amministrazione di Microsoft Teams a prescindere dai criteri di autorizzazione assegnati.
 
 #### <a name="can-i-control-line-of-business-lob-apps"></a>Posso controllare le app line of business (LOB)?
+
 Sì, è possibile usare i criteri di autorizzazione app per controllare l'implementazione e la distribuzione di app LOB personalizzate. È possibile creare un criterio personalizzato o modificare il criterio globale per consentire o bloccare le app personalizzate in base alle esigenze aziendali.
 
 #### <a name="how-do-app-permission-policies-relate-to-pinned-apps-and-app-setup-policies"></a>In che modo i criteri di autorizzazione app riguardano le app aggiunte e i criteri di configurazione?

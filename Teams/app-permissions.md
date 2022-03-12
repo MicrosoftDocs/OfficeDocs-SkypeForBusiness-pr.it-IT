@@ -19,12 +19,12 @@ ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59d8303943b8912f7ed0578bd911b633b618f113
-ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.openlocfilehash: 96755d4396e47ea1a6a3c4266a157cce63008372
+ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "63070555"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63442702"
 ---
 # <a name="microsoft-teams-apps-permissions-and-considerations"></a>Microsoft Teams e considerazioni sulle app
 
@@ -38,7 +38,6 @@ Microsoft Teams sono un modo per aggregare una o più funzionalità in un _pacch
 Le app sono autorizzate dagli utenti e gestite dall'IT dal punto di vista dei criteri. Tuttavia, per la maggior parte, le autorizzazioni e il profilo di rischio di un'app sono definiti dalle autorizzazioni e dai profili di rischio delle funzionalità contenute nell'app. Di conseguenza, questo articolo si concentra sulle autorizzazioni e sulle considerazioni a livello di funzionalità.
 
 Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_MESSAGE e REPLYTO_MESSAGE, non vengono visualizzate nella documentazione per sviluppatori [di Microsoft Teams](/microsoftteams/platform/overview) o nelle autorizzazioni per [Microsoft Graph](/graph/permissions-reference). Si tratta semplicemente di una abbreviazione descrittiva ai fini di questo articolo.
-
 
 | Titolo   | Descrizione    |
 |-----------|------------|
@@ -71,7 +70,7 @@ Nessuno
 
 - RECEIVE_MESSAGE, REPLYTO_MESSAGE. Il bot può ricevere messaggi dagli utenti e rispondere. <sup>1</sup>
 
-- POST_MESSAGE_USER. Dopo che un utente ha inviato un messaggio a un bot, il bot può inviare messaggi diretti all'utente , detti anche *messaggi proattivi* in qualsiasi momento.
+- POST_MESSAGE_USER. Dopo che un utente ha inviato un messaggio a un bot, il bot può inviare messaggi diretti all'utente , detti anche _messaggi proattivi_ in qualsiasi momento.
 
 - GET_CHANNEL_LIST. I bot aggiunti ai team possono ottenere un elenco di nomi e ID dei canali in un team.
 
@@ -82,10 +81,10 @@ Nessuno
 - POST_MESSAGE_TEAM. Consente ai bot di un'app di inviare messaggi diretti (proattivi) a qualsiasi membro del team in qualsiasi momento, anche se l'utente non ha mai parlato con il bot prima.
 
 - Le autorizzazioni seguenti non sono esplicite, ma sono implicite da RECEIVE_MESSAGE e REPLYTO_MESSAGE e dagli ambiti in cui è possibile usare i bot, dichiarati nel manifesto:
- 
-    - RECEIVE_MESSAGE_PERSONAL, REPLYTO_MESSAGE_PERSONAL
-    - RECEIVE_MESSAGE_GROUPCHAT, REPLYTO_MESSAGE_GROUPCHAT
-    - RECEIVE_MESSAGE_TEAM, REPLYTO_MESSAGE_TEAM
+
+  - RECEIVE_MESSAGE_PERSONAL, REPLYTO_MESSAGE_PERSONAL
+  - RECEIVE_MESSAGE_GROUPCHAT, REPLYTO_MESSAGE_GROUPCHAT
+  - RECEIVE_MESSAGE_TEAM, REPLYTO_MESSAGE_TEAM    
 
 - SEND_FILES, RECEIVE_FILES. <sup>2</sup> Controlla se un bot può inviare e ricevere file nella chat personale (non ancora supportata per la chat di gruppo o i canali).
 
@@ -105,9 +104,9 @@ Nessuno
 
 - I bot possono recuperare (e archiviare) l'elenco dei canali in un team; questi dati lasciano la rete aziendale.
 
-- Quando un file viene inviato a un bot, il file lascia la rete aziendale. L'invio e la ricezione di file richiede l'approvazione dell'utente per ogni file. 
+- Quando un file viene inviato a un bot, il file lascia la rete aziendale. L'invio e la ricezione di file richiede l'approvazione dell'utente per ogni file.
 
-- Per impostazione predefinita, i bot non hanno la possibilità di agire per conto dell'utente, ma i bot possono chiedere agli utenti di accedere. Non appena l'utente accede, il bot avrà un token di accesso con cui può eseguire altre operazioni. Esattamente quali sono questi elementi aggiuntivi dipendono dal bot e dalla posizione in cui l'utente accede: un bot è un'app https://apps.dev.microsoft.com/ Azure AD registrata in e può avere un proprio set di autorizzazioni.
+- Per impostazione predefinita, i bot non hanno la possibilità di agire per conto dell'utente, ma i bot possono chiedere agli utenti di accedere. Non appena l'utente accede, il bot avrà un token di accesso con cui può eseguire altre operazioni. Esattamente quali sono questi elementi aggiuntivi dipendono dal bot e da dove l'utente accede: un bot è un'app Azure AD registrata nel portale [](https://apps.dev.microsoft.com/?referrer=https:%2f%2fdocs.microsoft.com%2f#/appList) di registrazione applicazioni e può avere un proprio set di autorizzazioni.
 
 - I bot vengono informati ogni volta che gli utenti vengono aggiunti o eliminati da un team.
 
@@ -140,7 +139,7 @@ Nessuno (attualmente)
 
 ### <a name="considerations"></a>Considerazioni
 
-- Il profilo di rischio per una scheda è quasi identico allo stesso sito Web in esecuzione in una scheda del browser. 
+- Il profilo di rischio per una scheda è quasi identico allo stesso sito Web in esecuzione in una scheda del browser.
 
 - Una scheda ottiene anche il contesto in cui è in esecuzione, inclusi il nome di accesso e l'UPN dell'utente corrente, l'ID oggetto Azure AD per l'utente corrente, l'ID del gruppo Microsoft 365 in cui si trova (se si tratta di un team), l'ID tenant e le impostazioni locali correnti dell'utente. Tuttavia, per mappare questi ID alle informazioni di un utente, la scheda deve fare in modo che l'utente aseni l'accesso a Azure AD.
 
@@ -177,7 +176,7 @@ REPLYTO_CONNECTOR_MESSAGE. Alcuni connettori supportano messaggi utilizzabili, c
 
 ## <a name="outgoing-webhooks"></a>Webhook in uscita
 
-*I webhook in uscita* vengono creati al volo dai proprietari del team o dai membri del team. Non sono funzionalità delle app Teams, ma queste informazioni sono incluse per la completezza.
+_I webhook in uscita_ vengono creati al volo dai proprietari del team o dai membri del team. Non sono funzionalità delle app Teams, ma queste informazioni sono incluse per la completezza.
 
 ### <a name="required-permissions"></a>Autorizzazioni obbligatorie
 

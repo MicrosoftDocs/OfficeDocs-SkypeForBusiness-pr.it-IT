@@ -17,12 +17,12 @@ f1.keywords:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire l'accesso alle app personalizzate integrate in Microsoft Power Platform nell'Microsoft Teams di amministrazione.
-ms.openlocfilehash: d2ccb100a0d6354b1fca62911b17afdd3479887b
-ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.openlocfilehash: c093d432faa8d4977f4d931ac948a35dc6fe6509
+ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "63070535"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63442672"
 ---
 # <a name="manage-microsoft-power-platform-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app Microsoft Power Platform nell'Microsoft Teams di amministrazione
 
@@ -76,7 +76,7 @@ Per impostazione predefinita, **le app Power Apps** **e le app di Power Virtual 
 
 ### <a name="allow-or-block-microsoft-power-platform-apps-for-specific-users"></a>Consentire o bloccare le app Microsoft Power Platform per utenti specifici
 
-Per consentire o impedire a utenti specifici dell'organizzazione di accedere alle app create in Power Apps o Power Virtual Agents, creare e assegnare uno o più criteri di autorizzazione [delle app personalizzati](teams-app-permission-policies.md). 
+Per consentire o impedire a utenti specifici dell'organizzazione di accedere alle app create in Power Apps o Power Virtual Agents, creare e assegnare uno o più criteri di autorizzazione [delle app personalizzati](teams-app-permission-policies.md).
 
 Ad esempio, per impedire a utenti specifici di accedere ad app create in Power Apps, creare un criterio di autorizzazione per l'app personalizzato per bloccare **l'Power Apps** condiviso e quindi assegnare il criterio a tali utenti.
 
@@ -84,7 +84,7 @@ Ad esempio, per impedire a utenti specifici di accedere ad app create in Power A
 
 ### <a name="use-audit-logs-to-investigate-microsoft-power-platform-installation-activity"></a>Usare i log di controllo per esaminare l'attività di installazione di Microsoft Power Platform
 
-È possibile usare i log di controllo Teams per analizzare gli eventi in cui gli utenti hanno installato le app microsoft power platform dalla **sezione Built by your colleagues** della pagina Apps in Teams. A questo scopo, [cercare](./audit-log-events.md) un utente o un set  di utenti nel log di controllo per l'evento Teams app installato (nell'operazione **AppInstalled**). Per trovare le app installate da **Built by your colleagues**, cercare il valore **TemplatedInstance** nella **proprietà AppDistributionMode** nei dettagli di un determinato record. 
+È possibile usare i log di controllo Teams per analizzare gli eventi in cui gli utenti hanno installato le app microsoft power platform dalla **sezione Built by your colleagues** della pagina Apps in Teams. A questo scopo, [cercare](./audit-log-events.md) un utente o un set  di utenti nel log di controllo per l'evento Teams app installato (nell'operazione **AppInstalled**). Per trovare le app installate da **Built by your colleagues**, cercare il valore **TemplatedInstance** nella **proprietà AppDistributionMode** nei dettagli di un determinato record.
 
 :::image type="content" source="media/manage-power-platform-apps-audit.png" alt-text="Screenshot del valore TemplatedInstance nella proprietà AppDistributionMode.":::
 

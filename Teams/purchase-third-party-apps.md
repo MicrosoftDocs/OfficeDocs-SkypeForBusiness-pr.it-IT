@@ -16,12 +16,12 @@ description: Informazioni su come acquistare app di terze parti per Teams nell'M
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 0ce9458bbec59eb80d399a78e5d3bce1611ca381
-ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.openlocfilehash: 77a54fc6c6cf45492143d0548e488324514b500a
+ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "63070205"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63442652"
 ---
 # <a name="purchase-third-party-apps-for-teams"></a>Acquistare app di terze parti per Teams
 
@@ -39,25 +39,26 @@ Qui è anche possibile acquistare licenze per i servizi offerti da app di terze 
 > Se si vuole impedire agli utenti di acquistare un'app tramite Teams app store, è necessario bloccare l'app. Per altre informazioni su come bloccare un'app, vedere [Gestire](app-policies.md) i criteri dell'app o come bloccare [un'app a livello di organizzazione](manage-apps.md#allow-and-block-apps).
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**. Per accedere alla pagina, è necessario essere un amministratore globale o un Teams servizio.
-2. Cercare l'app desiderata. Per identificare le app con un abbonamento SaaS a pagamento, cercare nella **colonna Licenze** . Ogni app avrà uno dei valori seguenti:
+1. Cercare l'app desiderata. Per identificare le app con un abbonamento SaaS a pagamento, cercare nella **colonna Licenze** . Ogni app avrà uno dei valori seguenti:
     - **Acquisto**: l'app offre un abbonamento SaaS ed è disponibile per l'acquisto.  
     - **Acquistato**: l'app offre un abbonamento SaaS e sono state acquistate licenze per l'app.
     - **- -**: l'app non offre un abbonamento SaaS.
-3. Dopo aver trovato l'app, fare clic **su Acquista** per passare alla scheda **Piani e prezzi** della pagina dei dettagli dell'app. Esaminare i piani e le informazioni sui prezzi per l'offerta SaaS per l'app. Se servono altre informazioni, selezionare **Altre** informazioni per passare alla pagina dell'app in [AppSource](https://appsource.microsoft.com/).
+1. Dopo aver trovato l'app, fare clic **su Acquista** per passare alla scheda **Piani e prezzi** della pagina dei dettagli dell'app. Esaminare i piani e le informazioni sui prezzi per l'offerta SaaS per l'app. Se servono altre informazioni, selezionare **Altre** informazioni per passare alla pagina dell'app in [AppSource](https://appsource.microsoft.com/).
 
-> [!NOTE]
-> I piani privati possono anche essere elencati per l'acquisto, che includono prezzi speciali che l'organizzazione ha precedentemente negoziato con un ISV. Questi piani avranno l'etichetta **Piano privato** sotto il nome del piano.
+   > [!NOTE]
+   > I piani privati possono anche essere elencati per l'acquisto, che includono prezzi speciali che l'organizzazione ha precedentemente negoziato con un ISV. Questi piani avranno l'etichetta **Piano privato** sotto il nome del piano.
 
-4. Per abbonarsi a un'app, scegliere il piano desiderato e selezionare **Acquista**. Il flusso di cassa si aprirà direttamente nell'Teams di amministrazione.
-5. Selezionare il numero di licenze utente da acquistare.
-6. Verificare che l'account di fatturazione e l'indirizzo di vendita siano corretti. Se non ne hai già uno, aggiungirne uno nuovo selezionando **Aggiungi**. Per altre informazioni sugli account di fatturazione, vedere [Informazioni sugli account di fatturazione](/microsoft-365/commerce/manage-billing-accounts).
+1. Per abbonarsi a un'app, scegliere il piano desiderato e selezionare **Acquista**. Il flusso di cassa si aprirà direttamente nell'Teams di amministrazione.
 
-> [!NOTE]
-> Per aggiungere un nuovo account di fatturazione, è necessario essere un amministratore globale.
+1. Selezionare il numero di licenze utente da acquistare.
+1. Verificare che l'account di fatturazione e l'indirizzo di vendita siano corretti. Se non ne hai già uno, aggiungirne uno nuovo selezionando **Aggiungi**. Per altre informazioni sugli account di fatturazione, vedere [Informazioni sugli account di fatturazione](/microsoft-365/commerce/manage-billing-accounts).
 
-7. Verificare che sia selezionato il profilo di fatturazione corretto. Se non ne hai già uno, aggiungirne uno nuovo selezionando **Aggiungi nuovo**. È possibile pagare con carta di credito, carta di debito [o fattura.](#invoice-billing) Il profilo di fatturazione consente anche di aggiungere un numero di ordine di acquisto per identificare l'ordine in un secondo momento. Per altre informazioni sui profili di fatturazione, vedere [Informazioni sui profili di fatturazione](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles).
-8. Selezionare **Eseguire l'ordine**.
-9. Selezionare **Configura per** attivare l'abbonamento nel sito Web dell'autore. Se non si configura l'abbonamento dopo l'acquisto, è possibile farlo in un secondo momento selezionando **Gestisci licenze**.
+   > [!NOTE]
+   > Per aggiungere un nuovo account di fatturazione, è necessario essere un amministratore globale.
+
+1. Verificare che sia selezionato il profilo di fatturazione corretto. Se non ne hai già uno, aggiungirne uno nuovo selezionando **Aggiungi nuovo**. È possibile pagare con carta di credito, carta di debito [o fattura.](#invoice-billing) Il profilo di fatturazione consente anche di aggiungere un numero di ordine di acquisto per identificare l'ordine in un secondo momento. Per altre informazioni sui profili di fatturazione, vedere [Informazioni sui profili di fatturazione](/microsoft-365/commerce/billing-and-payments/manage-billing-profiles).
+1. Selezionare **Eseguire l'ordine**.
+1. Selezionare **Configura per** attivare l'abbonamento nel sito Web dell'autore. Se non si configura l'abbonamento dopo l'acquisto, è possibile farlo in un secondo momento selezionando **Gestisci licenze**.
 
 Dopo aver acquistato l'offerta SaaS associata all'app Teams, è possibile visualizzare i dettagli dell'acquisto seguenti nella scheda Piani  e prezzi della pagina dei dettagli dell'app.
 

@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Scopri come personalizzare le app in Microsoft Teams.
-ms.openlocfilehash: 7fb940ed512c96bd4aa4519bcdabbf9adcbe86a8
-ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.openlocfilehash: 1f32b7f7d00b6737d959a1687574ce4560bd4725
+ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "63070425"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63442642"
 ---
 # <a name="customize-apps-in-microsoft-teams"></a>Personalizzare le app in Microsoft Teams
 
@@ -85,19 +85,19 @@ Per iniziare a personalizzare un'app, completare la procedura seguente:
 > [!Note]
 > Saranno visibili solo i campi assegnati dallo sviluppatore dell'app come personalizzabili.
 
-5. Espandere la **sezione** Icona.
+1. Espandere la **sezione** Icona.
 
-   1. Upload un'icona. Usare un'icona a colori (192x192) pixel in formato PNG.
+1. Upload un'icona. Usare un'icona a colori (192x192) pixel in formato PNG.
 
-   1. Scegliere un colore per il contorno di un'icona. Usare un contorno trasparente (32x32) pixel in formato PNG.
+1. Scegliere un colore per il contorno di un'icona. Usare un contorno trasparente (32x32) pixel in formato PNG.
 
-   1. Selezionare un colore principale dell'app corrispondente all'icona.
+1. Selezionare un colore principale dell'app corrispondente all'icona.
 
-    ![Personalizzare le opzioni di colore del riquadro delle icone.](media/customize-app-colors.png)
+   ![Personalizzare le opzioni di colore del riquadro delle icone.](media/customize-app-colors.png)
 
-6. Dopo aver personalizzato l'app, seleziona **Applica**.
+1. Dopo aver personalizzato l'app, seleziona **Applica**.
 
-7. Selezionare **Pubblica** per pubblicare l'app personalizzata.
+1. Selezionare **Pubblica** per pubblicare l'app personalizzata.
 
    L'app personalizzata è ora elencata nella **pagina Gestisci app** . Sarà disponibile una sola versione dell'app, perché la personalizzazione delle caratteristiche dell'app non crea una copia dell'app.
 
@@ -110,6 +110,7 @@ Ora gli Teams gli utenti finali possono aprire il Teams client per visualizzare 
 La nota seguente include dettagli importanti sulla personalizzazione di un'app.
 
 > [!Note]
+>
 > - Quando si personalizzano le app e qualsiasi descrizione relativa a un'app, assicurarsi di seguire le eventuali linee guida per la personalizzazione fornite dall'autore dell'app nella documentazione o nelle condizioni per l'uso. L'utente è anche responsabile del rispetto dei diritti di altri utenti per quanto riguarda le immagini di terze parti che potrebbero essere usate.
 > - I dati di personalizzazione forniti dall'amministratore vengono archiviati nell'area geografica più vicina.
 > - L'utente è responsabile della validità dei collegamenti alle condizioni d'uso o all'informativa sulla privacy.

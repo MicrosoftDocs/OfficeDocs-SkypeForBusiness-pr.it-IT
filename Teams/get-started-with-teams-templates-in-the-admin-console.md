@@ -18,19 +18,21 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dd07e375a35ea212bccd988395b5c1adbd721011
-ms.sourcegitcommit: d3c48f0c147cf0c47d5eb4ea1128b5bca13be718
+ms.openlocfilehash: e65f7a0eef62197e90f77876129af95f32f4d6bc
+ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62299051"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63442482"
 ---
 # <a name="get-started-with-team-templates-in-the-teams-admin-center"></a>Introduzione ai modelli di team nell'interfaccia Teams di amministrazione
 
 **La possibilità di creare modelli personalizzati non è ancora supportata per i clienti EDU.**
 
 > [!NOTE]
-> I canali privati e le etichette di riservatezza non sono attualmente supportati nei modelli di team. La creazione di canali privati non è inclusa nelle definizioni dei modelli. L'opzione etichetta di riservatezza in **Crea team dal flusso del** modello non verrà applicata al team.
+> - I canali privati non sono attualmente supportati nei modelli di team. La creazione di canali privati non è inclusa nelle definizioni dei modelli.
+>
+> - Le etichette di riservatezza non sono supportate nei modelli di team in GCC ambienti. L'opzione etichetta di riservatezza nel flusso Crea team da modello non verrà applicata al team.
 
 ## <a name="overview"></a>Panoramica
 
@@ -41,7 +43,7 @@ Un modello di team in Microsoft Teams è una definizione della struttura di un t
 Questo articolo offre una panoramica dell'uso dei modelli di team nell'Teams di amministrazione. Verranno fornite informazioni sulle proprietà supportate nei modelli, sui modelli predefiniti forniti, sui limiti delle dimensioni dei modelli, su come creare e gestire i modelli e altro ancora.
 
 > [!NOTE]
-> Gli utenti possono [creare team da modelli di team](https://support.microsoft.com/office/create-a-team-from-a-template-a90c30f3-9940-4897-ab5b-988e69e4cd9c) predefiniti o personalizzati nell'app Teams team. Gli sviluppatori possono anche creare team a livello di programmazione da modelli di team predefiniti usando Microsoft Graph. Per altre informazioni, vedere [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md).
+> Gli utenti possono [creare team da modelli di team predefiniti](https://support.microsoft.com/office/create-a-team-from-a-template-a90c30f3-9940-4897-ab5b-988e69e4cd9c) o personalizzati nell'app Teams team. Gli sviluppatori possono anche creare team a livello di programmazione da modelli di team predefiniti usando Microsoft Graph. Per altre informazioni, vedere [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md).
 
 ## <a name="team-template-capabilities"></a>Funzionalità dei modelli di team
 
@@ -63,7 +65,7 @@ La maggior parte delle proprietà di un team sono incluse e supportate dai model
 
 ## <a name="pre-built-team-templates-in-the-teams-admin-center"></a>Modelli di team predefiniti nell'interfaccia Teams di amministrazione
 
-Ecco i modelli di team predefiniti disponibili nell'Teams di amministrazione. I modelli predefiniti sono modelli creati per settori specifici. Per visualizzare questi modelli, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione **passare a** >  Teams **Modelliteam**.
+Ecco i modelli di team predefiniti disponibili nell'Teams di amministrazione. I modelli predefiniti sono modelli creati per settori specifici. Per visualizzare questi modelli, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare a modelli **Teams** >  **Team**.
 
 È possibile duplicare i modelli predefiniti, ma non modificarli. Se si vogliono modificare le proprietà in un modello predefinito, è possibile creare un nuovo modello da un modello esistente e quindi aggiungere o rimuovere le proprietà desiderate. Tenere presente che alcune proprietà in alcuni modelli non possono essere modificate.
 

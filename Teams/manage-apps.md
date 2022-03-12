@@ -17,12 +17,12 @@ description: Informazioni su come gestire le app Teams nella pagina Gestisci app
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: ad1dd28f4de0bc6db0ab7b2870a1cf7b2dae007a
-ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.openlocfilehash: 96acf3151c2b805fead94979010669520b7a000f
+ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "63070225"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63442292"
 ---
 # <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia Microsoft Teams di amministrazione
 
@@ -165,7 +165,7 @@ Usare le impostazioni dell'app a livello di organizzazione per controllare se gl
     - **Consenti app di terze parti**: questa impostazione controlla se gli utenti possono usare app di terze parti. Se si disattiva questa impostazione, gli utenti non **saranno in grado** di installare o usare app di terze parti e lo stato dell'app di queste app verrà visualizzato come Bloccato a livello di organizzazione nella tabella.
 
         > [!NOTE]
-        > Quando  l'opzione Consenti app di terze parti è disattivata, i [webhook](/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors) in uscita sono ancora abilitati per tutti gli utenti, ma è possibile controllarli a livello di utente consentendo o bloccando l'app Webhook in uscita tramite i criteri di autorizzazione delle [app](teams-app-permission-policies.md). <br><br>Si noti che se sono disponibili criteri di autorizzazione per le [app](teams-app-permission-policies.md) **Microsoft** che usano  l'impostazione Consenti app specifiche e bloccano tutti gli altri utenti e si vogliono abilitare i webhook in uscita per gli utenti, aggiungere l'app Webhook in uscita all'elenco.
+        > Quando  l'opzione Consenti app di terze parti è disattivata, i [webhook](/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors) in uscita sono ancora abilitati per tutti gli utenti, ma è possibile controllarli a livello di utente consentendo o bloccando l'app Webhook in uscita tramite i criteri di autorizzazione delle [app](teams-app-permission-policies.md). Si noti che se sono disponibili criteri di autorizzazione per le [app](teams-app-permission-policies.md) **Microsoft** che usano  l'impostazione Consenti app specifiche e bloccano tutti gli altri utenti e si vogliono abilitare i webhook in uscita per gli utenti, aggiungere l'app Webhook in uscita all'elenco.
 
         > [!NOTE]
         > Gli utenti Teams possono aggiungere app quando tengono riunioni o chat con persone di altre organizzazioni. Possono inoltre usare app condivise da componenti di altre organizzazioni quando prendono parte a riunioni o chat tenute da quelle organizzazioni. Si applicano i criteri sui dati dell’organizzazione dell’utente ospitante, così come le pratiche di condivisione dei dati di tutte le app di terze parti condivise da quell’organizzazione.
