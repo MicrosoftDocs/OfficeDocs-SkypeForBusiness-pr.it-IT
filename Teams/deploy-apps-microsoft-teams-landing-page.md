@@ -18,16 +18,16 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 05d683bbefa9b3cc564e4f97e52f0fad441f2763
-ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.openlocfilehash: 3a9566ceb6d99bb7d665efea975ecee048607dc9
+ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "63070395"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "63442502"
 ---
 # <a name="apps-bots--connectors-in-microsoft-teams"></a>App, bot e connettori in Microsoft Teams
 
-Le app aiutano a trovarei  contenuti dai servizi preferiti e a condividerli in Teams. Consentono di eseguire operazioni come aggiungere servizi nella parte superiore di un canale, chattare con bot o condividere e assegnare attività. Per altre informazioni, vedere [Panoramica delle app in Teams](https://support.office.com/article/overview-of-apps-in-teams-747492ee-7cdd-4115-a993-8c7e7f98a3d0). 
+Le app aiutano a trovarei  contenuti dai servizi preferiti e a condividerli in Teams. Consentono di eseguire operazioni come aggiungere servizi nella parte superiore di un canale, chattare con bot o condividere e assegnare attività. Per altre informazioni, vedere [Panoramica delle app in Teams](https://support.office.com/article/overview-of-apps-in-teams-747492ee-7cdd-4115-a993-8c7e7f98a3d0).
 
 È possibile aggiungere app alla distribuzione di Teams usando le app fornite con Microsoft Teams, app e modelli di terze parti certificati e creando app personalizzate.
 
@@ -47,7 +47,6 @@ Oltre alle app fornite da Microsoft, è possibile usare app di terze parti certi
 
 È possibile creare rapidamente soluzioni personalizzat con basso impiego di codice usando l'integrazione di Teams con [Microsoft Power Platform](teams-power-platfom-integration.md). È anche possibile creare un'app personalizzata in base alle esigenze dell'organizzazione. Per altre informazioni, vedere [Creare app per Microsoft Teams](/microsoftteams/platform/overview).  
 
-
 ## <a name="apps-deployment-decisions"></a>Decisioni per la distribuzione delle app
 
 Teams offre un'esperienza di collaborazione predefinita che la maggior parte delle organizzazioni trova perfetta per le proprie esigenze. Questo articolo è utile per decidere se modificare una o più impostazioni predefinite in base al profilo o ai requisiti dell'organizzazione e illustra la procedura per ogni modifica. Le impostazioni sono state suddivise in due gruppi, a partire dal set di base di [modifiche più probabili](#core-deployment-decisions). Il secondo gruppo include le [impostazioni aggiuntive](#additional-deployment-decisions)che si vuole configurare in base alle esigenze dell’organizzazione.
@@ -56,9 +55,10 @@ Teams offre un'esperienza di collaborazione predefinita che la maggior parte del
 
 Di seguito sono illustrate le impostazioni delle app che la maggior parte delle organizzazioni vorrà modificare se le impostazioni predefinite di Teams non sono adeguate.
 
-### <a name="app-availability-settings"></a>Impostazioni di disponibilità app 
+### <a name="app-availability-settings"></a>Impostazioni di disponibilità app
 
-Teams offre diverse app pubblicate da Microsoft e di terze parti per coinvolgere gli utenti, supportare la produttività e integrare i servizi commerciali di uso comune in Teams. Si possono scaricare le app dallo Store di Teams. Per impostazione predefinita tutte le app, incluse le app personalizzate inviate tramite il [processo di approvazione dello store di Teams](/microsoftteams/platform/publishing/apps-publish#microsoft-teams-app-approval-process), sono attivate per tutti gli utenti. Ad esempio, gli utenti possono usare l'app Planner per creare e gestire le attività del team in Teams.
+Teams offre diverse app pubblicate da Microsoft e di terze parti per coinvolgere gli utenti, supportare la produttività e integrare i servizi commerciali di uso comune in Teams.
+Si possono scaricare le app dallo Store di Teams. Per impostazione predefinita tutte le app, incluse le app personalizzate inviate tramite il [processo di approvazione dello store di Teams](/microsoftteams/platform/publishing/apps-publish#microsoft-teams-app-approval-process), sono attivate per tutti gli utenti. Ad esempio, gli utenti possono usare l'app Planner per creare e gestire le attività del team in Teams.
 
 Per impostazione predefinita, tutte le app fornite da Microsoft, da terze parti e personalizzate sono disponibili ed è possibile attivare o disattivare le singole app. Sono disponibili impostazioni a livello di organizzazione che consente di attivare o disattivare tutte le app di terze parti e/o personalizzate per l'intera organizzazione.
 
@@ -68,6 +68,8 @@ Per impostazione predefinita, tutte le app fornite da Microsoft, da terze parti 
 |||
 
 ### <a name="app-permissions-and-other-considerations"></a>Autorizzazioni delle app e altre considerazioni
+
+Le app sono autorizzate dagli utenti e gestite dall'amministratore o dal professionista IT tramite criteri. In genere, tuttavia, le autorizzazioni e il profilo di rischio di un'app sono definiti nell'app stessa.
 
 Le app sono autorizzate dagli utenti e gestite dall'amministratore o dal professionista IT tramite criteri. Tuttavia, le autorizzazioni e il profilo di rischio di un’app sono definiti nell'app stessa.
 
@@ -118,7 +120,9 @@ Può essere utile modificare queste impostazioni in base alle esigenze e alla co
 
 ### <a name="app-templates"></a>Modelli di app
 
-I modelli di app sono app pronte per la produzione per Microsoft Teams, gestite dalla community, open source e disponibili su GitHub. Ognuno contiene istruzioni dettagliate per la distribuzione e l'installazione dell'app per l'organizzazione, fornendo un'app pronta all'uso che è possibile installare e iniziare a usare immediatamente. È disponibile anche il codice sorgente completo, quindi è possibile esaminarlo in dettaglio oppure creare una copia tramite fork del codice e modificarlo per soddisfare esigenze specifiche.
+I modelli di app sono app pronte per la produzione per Microsoft Teams, gestite dalla community, open source e disponibili su GitHub. Ognuno contiene istruzioni dettagliate per la distribuzione e l'installazione dell'app per l'organizzazione, fornendo un'app pronta all'uso che è possibile installare e iniziare a usare immediatamente.
+
+È disponibile anche il codice sorgente completo, quindi è possibile esaminarlo in dettaglio oppure creare una copia tramite fork del codice e modificarlo per soddisfare esigenze specifiche.
 
 | Chiedersi | Azione |
 |--------------|--------|
