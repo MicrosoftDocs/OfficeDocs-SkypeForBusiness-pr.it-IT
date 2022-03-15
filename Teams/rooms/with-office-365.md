@@ -1,7 +1,7 @@
 ---
 title: Distribuire Microsoft Teams Rooms con Office 365
-ms.author: v-lanac
-author: lanachin
+ms.author: czawideh
+author: cazawideh
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms con Office 365.
-ms.openlocfilehash: d4c66fb863c5c41a717808ddca43002752510fb5
-ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
+ms.openlocfilehash: f54e7f7e201127b0a61c99f09fee2084378dbbd9
+ms.sourcegitcommit: a894e9397050e09bfaab02e700e943a3bbeb1302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62056026"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63503713"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-office-365"></a>Distribuire Microsoft Teams Rooms con Office 365
 
@@ -28,11 +28,11 @@ Leggere questo argomento per informazioni su come distribuire Microsoft Teams Ro
 
 ## <a name="requirements"></a>Requisiti
 
-Prima di distribuire Microsoft Teams Rooms con Office 365, assicurarsi di aver soddisfatto i requisiti. Per altre informazioni, vedere requisiti [Microsoft Teams Rooms.](requirements.md)
+Prima di distribuire Microsoft Teams Rooms con Office 365, assicurarsi di aver soddisfatto i requisiti. Per altre informazioni, vedere Microsoft Teams Rooms [requisiti.](requirements.md)
 
 ### <a name="add-a-resource-account"></a>Aggiungere un account della risorsa
 
-1. Connessione a Exchange Online PowerShell. Per istruzioni, vedere [Connessione per Exchange Online PowerShell.](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. Connessione a Exchange Online PowerShell. Per istruzioni, vedere Connessione [a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
 
 2. In Exchange Online PowerShell creare una nuova cassetta postale della chat room o modificare una cassetta postale della chat room esistente. Per impostazione predefinita, alle cassette postali della chat room non sono associati account. È necessario aggiungere un account quando si crea o si modifica una cassetta postale della chat room che consente l'autenticazione.
 
@@ -95,7 +95,7 @@ Prima di distribuire Microsoft Teams Rooms con Office 365, assicurarsi di aver s
 
    Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-CalendarProcessing](/powershell/module/exchange/mailboxes/set-calendarprocessing).
    
-4. Connessione su PowerShell di MS Online impostare i valori di Active Directory eseguendo il cmdlet di powershell 'Connessione-MsolService -Credential $cred'. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](/powershell/azure/active-directory/overview?view=azureadps-1.0) 
+4. Connessione su PowerShell di MS Online impostare i valori di Active Directory eseguendo il cmdlet di powershell 'Connessione-MsolService -Credential $cred'. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0](/powershell/azure/active-directory/overview?view=azureadps-1.0). 
 
    > [!NOTE]
    > [Azure Active Directory PowerShell 2.0](/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato. 
@@ -107,7 +107,7 @@ Prima di distribuire Microsoft Teams Rooms con Office 365, assicurarsi di aver s
     ```
 
 
-1. L'account della risorsa deve avere una licenza Office 365 per connettersi a Microsoft Teams. È anche necessario assegnare una posizione di utilizzo all'account del dispositivo, in modo da determinare quali SKU di licenza sono disponibili per l'account. È possibile usare `Get-MsolAccountSku` per recuperare un elenco di SKU disponibili per il tenant Office 365 tenant. È possibile aggiungere una licenza usando il `Set-MsolUserLicense` cmdlet.
+1. L'account della risorsa deve avere una licenza Office 365 per connettersi a Microsoft Teams. È anche necessario assegnare una posizione di utilizzo all'account del dispositivo, in modo da determinare quali SKU di licenza sono disponibili per l'account. È possibile usare per `Get-MsolAccountSku` recuperare un elenco di SKU disponibili per il tenant Office 365 tenant. È possibile aggiungere una licenza usando il `Set-MsolUserLicense` cmdlet.
 
    Questo esempio assegna la licenza Sala riunioni a un utente con sede negli Stati Uniti.
 
@@ -118,7 +118,7 @@ Prima di distribuire Microsoft Teams Rooms con Office 365, assicurarsi di aver s
   ``` 
 
 
-   Per istruzioni dettagliate, vedere [Assegnare licenze agli account utente con Office 365 PowerShell.](/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell#use-the-microsoft-azure-active-directory-module-for-windows-powershell)
+   Per istruzioni dettagliate, vedere [Assegnare licenze agli account utente con Office 365 PowerShell](/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell#use-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 
 ## <a name="validate"></a>Convalida

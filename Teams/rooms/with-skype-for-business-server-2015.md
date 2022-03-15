@@ -1,7 +1,7 @@
 ---
 title: Distribuire Microsoft Teams Rooms con Skype for Business Server
-ms.author: dstrome
-author: dstrome
+ms.author: czawideh
+author: cazawideh
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -15,12 +15,12 @@ ms.collection:
 ms.assetid: a038e34d-8bc8-4a59-8ed2-3fc00ec33dd7
 description: Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms con Skype for Business Server.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 702eb2128dd37980fd3fc76548638102d45d7af9
-ms.sourcegitcommit: 1165a74b1d2e79e1a085b01e0e00f7c65483d729
+ms.openlocfilehash: 358fa9295ec150f9c57a18252c76d309078b8e29
+ms.sourcegitcommit: a894e9397050e09bfaab02e700e943a3bbeb1302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61355621"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63503483"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-skype-for-business-server"></a>Distribuire Microsoft Teams Rooms con Skype for Business Server
   
@@ -42,7 +42,7 @@ Prima di iniziare a distribuire Microsoft Teams Rooms, assicurarsi di avere le a
    Import-PSSession $sessLync
    ```
 
-   Si noti che $strExchangeServer è il nome di dominio completo (FQDN) del server Exchange e $strLyncFQDN è il nome di dominio completo della distribuzione Skype for Business Server.
+   Si noti che $strExchangeServer è il nome di dominio completo (FQDN) del server di Exchange e $strLyncFQDN è l'FQDN della distribuzione Skype for Business Server.
 
 2. Dopo aver stabilito una sessione, si creerà una nuova cassetta postale e la si abiliterà come RoomMailboxAccount oppure si modificheranno le impostazioni per una cassetta postale della chat room esistente. In questo modo l'account verrà autenticato per Microsoft Teams Rooms.
 
@@ -60,7 +60,7 @@ Prima di iniziare a distribuire Microsoft Teams Rooms, assicurarsi di avere le a
    -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
    ```
 
-3. È possibile impostare varie proprietà Exchange nell'account Teams Rooms risorsa per migliorare l'esperienza della riunione per gli utenti. È possibile vedere quali proprietà devono essere impostate nella Exchange delle proprietà.
+3. È possibile impostare varie proprietà Exchange di riunione nell'account Teams Rooms risorsa per migliorare l'esperienza della riunione per gli utenti. È possibile vedere quali proprietà devono essere impostate nella sezione Exchange proprietà.
 
    ``` Powershell
    Set-CalendarProcessing -Identity ConferenceRoom01 -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -AllowConflicts $false -DeleteComments
@@ -80,16 +80,16 @@ Prima di iniziare a distribuire Microsoft Teams Rooms, assicurarsi di avere le a
    Set-AdUser ConferenceRoom01@contoso.com -Enabled $true
    ```
 
-6. Abilitare l'account della risorsa con Skype for Business Server abilitando l'account Microsoft Teams Rooms Active Directory in un pool Skype for Business Server:
+6. Abilitare l'account delle risorse con Skype for Business Server abilitando l'account di Active Directory Microsoft Teams Rooms in un pool Skype for Business Server:
 
    ``` Powershell
    Enable-CsMeetingRoom -Identity ConferenceRoom01 -SipAddress sip:ConferenceRoom01@contoso.com -DomainController DC-ND-001.contoso.com
    -RegistrarPool LYNCPool15.contoso.com 
    ```
 
-    Modificare gli `-DomainController` attributi e in valori appropriati per `-RegistrarPool` l'ambiente.
+    Modificare gli `-DomainController` attributi e `-RegistrarPool` in valori appropriati per l'ambiente.
 
-7. **Facoltativo.** È anche possibile consentire Microsoft Teams Rooms di effettuare e ricevere chiamate PSTN (Public Switched Telephone Network) abilitando VoIP aziendale per l'account. VoIP aziendale non è un requisito per Microsoft Teams Rooms, ma se si vuole la funzionalità di composizione PSTN per Microsoft Teams Rooms, ecco come abilitarla:
+7. **Facoltativo.** È anche possibile Microsoft Teams Rooms effettuare e ricevere chiamate PSTN (Public Switched Telephone Network) abilitando VoIP aziendale per l'account. VoIP aziendale non è un requisito per Microsoft Teams Rooms, ma se si vuole la funzionalità di composizione PSTN per Microsoft Teams Rooms, ecco come abilitarla:
 
    ``` Powershell
    Set-CsMeetingRoom -Identity ConferenceRoom01 -DomainController DC-ND-001.contoso.com -LineURI "tel:+14255550555;ext=50555"
@@ -100,7 +100,7 @@ Prima di iniziare a distribuire Microsoft Teams Rooms, assicurarsi di avere le a
 
    Anche in questo caso, è necessario sostituire il controller di dominio e gli esempi di numeri di telefono forniti con le proprie informazioni. Il valore del $true rimane lo stesso. Sarà anche necessario sostituire i nomi dei criteri vocali e dei criteri del piano di chiamata.
 
-## <a name="sample-room-account-setup-in-exchange-and-skype-for-business-server-on-premises"></a>Esempio: configurazione dell'account room in Exchange e Skype for Business Server locale
+## <a name="sample-room-account-setup-in-exchange-and-skype-for-business-server-on-premises"></a>Esempio: configurazione dell'account della sala in Exchange e Skype for Business Server locale
 
 ``` Powershell
 New-Mailbox -Alias ConferenceRoom01 -Name "Conference Room 01" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String "" -AsPlainText -Force) -UserPrincipalName ConferenceRoom01@contoso.com

@@ -1,7 +1,7 @@
 ---
 title: Creazione Microsoft Teams account delle risorse per le barre di collaborazione Microsoft Teams usando PowerShell
-ms.author: mitressl
-author: flinchbot
+ms.author: czawideh
+author: cazawideh
 manager: ericwe
 audience: ITPro
 ms.reviewer: payurevi
@@ -16,18 +16,18 @@ ms.custom: ''
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Leggere questo argomento per informazioni su come distribuire barre di collaborazione per Microsoft Teams.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3388e2eb1e086cd347769a50bb9603f4a0832402
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 0bbafdfbfc9fb7e9b637216aeb9e5a0d6b470533
+ms.sourcegitcommit: a894e9397050e09bfaab02e700e943a3bbeb1302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58605815"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63503913"
 ---
-# <a name="create-a-microsoft-365-resource-account-using-the-powershell"></a>Creare un Microsoft 365 di risorse usando PowerShell
+# <a name="create-a-microsoft-365-resource-account-using-the-powershell"></a>Creare un account Microsoft 365 di risorse usando PowerShell
 
-Leggere questo argomento per informazioni su come creare account delle risorse per le barre di collaborazione Microsoft Teams powershell.
+Leggere questo argomento per informazioni su come creare account delle risorse per le barre di collaborazione Microsoft Teams usando PowerShell.
 
-Il modo più semplice per creare un account delle risorse è usare il interfaccia di amministrazione di Microsoft 365. [Vedere questo articolo su come eseguire questa operazione.](resource-account-ui.md)
+Il modo più semplice per creare un account delle risorse è usare il interfaccia di amministrazione di Microsoft 365. [Vedere questo articolo su come eseguire questa operazione](resource-account-ui.md).
 
 [!INCLUDE [m365-teams-resource-account-difference](../includes/m365-teams-resource-account-difference.md)]
 
@@ -42,9 +42,9 @@ Prima di distribuire Microsoft Teams Rooms con Office 365, assicurarsi di aver s
 
 ### <a name="add-a-resource-account"></a>Aggiungere un account della risorsa
 
-1. Connessione per Exchange Online PowerShell. Per istruzioni, vedere [Connessione per Exchange Online PowerShell.](/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module)
+1. Connessione a Exchange Online PowerShell. Per istruzioni, vedere Connessione [a Exchange Online PowerShell](/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module).
 
-2. In Exchange Online PowerShell creare una nuova cassetta postale sala o modificare una cassetta postale della chat room esistente.
+2. In Exchange Online PowerShell creare una nuova cassetta postale della chat room o modificare una cassetta postale della chat room esistente.
 
    - Per creare una nuova cassetta postale della chat room, usare la sintassi seguente:
 
@@ -105,7 +105,7 @@ Prima di distribuire Microsoft Teams Rooms con Office 365, assicurarsi di aver s
 
    Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-CalendarProcessing](/powershell/module/exchange/mailboxes/set-calendarprocessing).
 
-4. Connessione a PowerShell di MS Online per impostare Active Directory eseguendo il `Connect-MsolService -Credential $cred` cmdlet di powershell.   Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](/powershell/azure/active-directory/overview?view=azureadps-1.0) 
+4. Connessione a PowerShell di MS Online per impostare Active Directory eseguendo il `Connect-MsolService -Credential $cred` cmdlet powershell.   Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0](/powershell/azure/active-directory/overview?view=azureadps-1.0). 
 
    > [!NOTE]
    > [Azure Active Directory PowerShell 2.0](/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato. 
@@ -116,7 +116,7 @@ Prima di distribuire Microsoft Teams Rooms con Office 365, assicurarsi di aver s
       Set-MsolUser -UserPrincipalName huddleroom01@contoso.onmicrosoft.com -PasswordNeverExpires $true
       ```
     
-6. L'account della risorsa deve avere una licenza Office 365, preferibilmente lo SKU Sala riunioni risorsa. È anche necessario assegnare una posizione di utilizzo all'account del dispositivo, in modo da determinare quali SKU di licenza sono disponibili per l'account. È possibile usare `Get-MsolAccountSku` per recuperare un elenco di SKU disponibili per il tenant Office 365 tenant.
+6. L'account della risorsa deve avere una licenza Office 365, preferibilmente lo SKU Sala riunioni risorsa. È anche necessario assegnare una posizione di utilizzo all'account del dispositivo, in modo da determinare quali SKU di licenza sono disponibili per l'account. È possibile usare per `Get-MsolAccountSku` recuperare un elenco di SKU disponibili per il tenant Office 365 tenant.
 
       ``` Powershell
       Get-MsolAccountSku
@@ -128,7 +128,7 @@ Prima di distribuire Microsoft Teams Rooms con Office 365, assicurarsi di aver s
       Set-MsolUser -UserPrincipalName huddleroom01@contoso.onmicrosoft.com -UsageLocation "US"
       Set-MsolUserLicense -UserPrincipalName huddleroom01@contoso.onmicrosoft.com -AddLicenses contoso:meeting_room
       ```
-   Per istruzioni dettagliate, vedere [Assegnare licenze agli account utente con Office 365 PowerShell.](/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell#use-the-microsoft-azure-active-directory-module-for-windows-powershell)
+   Per istruzioni dettagliate, vedere [Assegnare licenze agli account utente con Office 365 PowerShell](/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell#use-the-microsoft-azure-active-directory-module-for-windows-powershell).
 
 
 

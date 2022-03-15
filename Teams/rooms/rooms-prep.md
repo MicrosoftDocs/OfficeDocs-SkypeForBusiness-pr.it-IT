@@ -1,7 +1,7 @@
 ---
 title: Preparare l'ambiente
-ms.author: dstrome
-author: dstrome
+ms.author: czawideh
+author: cazawideh
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -15,18 +15,18 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come preparare l'infrastruttura per la distribuzione di Microsoft Teams Rooms in modo da poter sfruttare tutte le funzionalità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b92325fe9c7c43497fd9647306cfb6b218f5fde0
-ms.sourcegitcommit: d2c76fe7705acf6e53f7673861671b1b018813dd
+ms.openlocfilehash: 5203972feee8276d9d63c19f65965f62386ee7a0
+ms.sourcegitcommit: a894e9397050e09bfaab02e700e943a3bbeb1302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62015036"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63503953"
 ---
 # <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
 Questa sezione contiene una panoramica dei passaggi necessari per preparare l'ambiente in modo da poter usare tutte le funzionalità di Microsoft Teams Rooms.
   
-1. Preparare un account delle risorse per ogni Microsoft Teams Rooms console. Per [informazioni dettagliate, vedere Microsoft Teams Rooms](rooms-deploy.md) distribuzione.
+1. Preparare un account della risorsa per ogni Microsoft Teams Rooms console. Vedere [Distribuire Microsoft Teams Rooms](rooms-deploy.md) per informazioni dettagliate.
     
 2. Verificare che sia disponibile una connessione di rete/Internet funzionante per il dispositivo da usare.
   
@@ -37,7 +37,7 @@ Questa sezione contiene una panoramica dei passaggi necessari per preparare l'am
     
 ### <a name="create-and-test-a-resource-account"></a>Creare e testare un account della risorsa
 
-Un *account delle risorse* è un account che il client Microsoft Teams Rooms usa per accedere alle funzionalità da Exchange, ad esempio il calendario, e per connettersi a Microsoft Teams. Per [informazioni dettagliate, vedere Microsoft Teams Rooms](rooms-deploy.md) distribuzione.
+Un *account delle risorse* è un account che il client Microsoft Teams Rooms usa per accedere alle funzionalità da Exchange, ad esempio il calendario, e per connettersi a Microsoft Teams. Vedere [Distribuire Microsoft Teams Rooms](rooms-deploy.md) per informazioni dettagliate.
   
 ### <a name="check-network-availability"></a>Verificare la disponibilità della rete
 
@@ -49,12 +49,12 @@ Per funzionare correttamente, Microsoft Teams Rooms deve avere accesso a una ret
 
 - Accesso alle porte HTTP 80 e 443.
 
-- Le porte TCP e UDP configurate come descritto [in](/skypeforbusiness/plan-your-deployment/network-requirements/ports-and-protocols) Requisiti di porta e protocollo per i server per le implementazioni di Skype for Business Server locali o URL di Microsoft 365 e Office 365 e intervalli di indirizzi [IP](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US) per Microsoft Teams.
+- Le porte TCP e UDP configurate come [descritto in Requisiti](/skypeforbusiness/plan-your-deployment/network-requirements/ports-and-protocols) di porta e protocollo per i server per le implementazioni di Skype for Business Server locali o URL di [Microsoft 365 e Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US) e intervalli di indirizzi IP per Microsoft Teams.
 
 Se la rete viene eseguita tramite un proxy, sono necessarie anche le informazioni sull'indirizzo proxy o sullo script.
     
 > [!IMPORTANT]
-> Microsoft Teams Rooms non supporta l'autenticazione proxy perché può interferire con le normali operazioni della chat room. Assicurarsi che Microsoft Teams Rooms siano stati esenti dall'autenticazione proxy prima di entrare in produzione.
+> Microsoft Teams Rooms non supporta l'autenticazione proxy perché può interferire con le normali operazioni della chat room. Assicurarsi che Microsoft Teams Rooms siano state esentate dall'autenticazione proxy prima di entrare in produzione.
 
 > [!IMPORTANT]
 > Assicurarsi di usare una connessione di rete cablata da 1 Gbps per assicurarsi di avere la larghezza di banda necessaria.
@@ -66,19 +66,19 @@ Se la rete viene eseguita tramite un proxy, sono necessarie anche le informazion
 
 Il dispositivo Microsoft Teams Rooms usa certificati per Exchange web services, Microsoft Teams o Skype for Business, l'utilizzo della rete e l'autenticazione. Se i server correlati usano certificati pubblici, come nel caso di distribuzioni online e locali, non dovrebbero essere necessarie altre azioni da parte dell'amministratore per installare i certificati. Se invece l'autorità di certificazione è una CA privata, il dispositivo deve considerare attendibile tale CA. Questo significa che nel dispositivo sono installati i certificati della catena CA +CA. L'aggiunta del dispositivo al dominio può eseguire questa attività automaticamente.
   
-I certificati verranno installati come per qualsiasi altro client Windows client. 
+I certificati verranno installati nello stesso modo per qualsiasi altro client Windows client. 
   
 > [!NOTE]
 > I certificati possono essere necessari per Microsoft Teams Rooms usare Skype for Business Server.
   
 ### <a name="proxy"></a>Proxy
 
-Microsoft Teams Rooms è progettato per ereditare le impostazioni proxy dal Windows sistema operativo. Accedere al Windows sistema operativo nel modo seguente:
+Microsoft Teams Rooms è progettato per ereditare le impostazioni proxy dal sistema Windows sistema operativo. Accedere al Windows sistema operativo nel modo seguente:
   
-1. Nell'interfaccia Microsoft Teams Rooms, fare clic sull'icona Impostazioni a forma di ingranaggio in cui verrà richiesta la password di amministratore locale nel dispositivo (la password predefinita è **sfb).**
-2. Toccare **Impostazioni** seguito dal pulsante Vai **a Windows** e quindi toccare il  pulsante Accedi amministratore e quindi  fare clic sul pulsante Amministratore (se il computer fa parte del dominio scegliere **Altro utente,** quindi usare .\admin come nome utente).
-3. Nella casella **Cerca Windows** in basso a sinistra in regedit (premere a lungo lo schermo o fare clic con il pulsante destro del mouse e scegliere Esegui **come amministratore).**
-4. Fare clic sulla cartella HKEY_USERS (verrà visualizzato un elenco di SID degli utenti del computer) verificare che la cartella radice HKEY_USERS selezionata.
+1. Nell'interfaccia Microsoft Teams Rooms fare clic sull'icona Impostazioni a forma di ingranaggio nel punto in cui verrà richiesta la password di amministratore locale nel dispositivo (la password predefinita è **sfb**).
+2. Toccare **Impostazioni** seguito da toccare il pulsante Vai **a Windows** e quindi toccare il pulsante Accedi amministratore e quindi fare clic sul  pulsante Amministratore (se il computer fa parte del dominio  scegliere **Altro utente,** quindi usare .\admin come nome utente).
+3. Nella casella **Cerca Windows** in basso a sinistra digitare regedit (premere a lungo lo schermo o fare clic con il pulsante destro del mouse e scegliere **Esegui come amministratore**).
+4. Fare clic sulla cartella HKEY_USERS (verrà visualizzato un elenco di SID degli utenti del computer) assicurarsi che la cartella radice HKEY_USERS selezionata.
        
 5. Fare clic su File e quindi **scegliere Carica hive.**
 6. Passare alla **cartella C:\Users\Skype** e digitare nella casella Nome file NTUSER.dat e premere il pulsante Apri
@@ -105,11 +105,11 @@ Microsoft Teams Rooms è progettato per ereditare le impostazioni proxy dal Wind
     "AutoConfigURL"=http://contosoproxy.corp.net/proxy.pac
     ```
     
-9. Dopo aver apportato le modifiche, evidenziare la chiave utente Skype (cartella radice per Skype) e scegliere scarica Hive dal menu File del Registro di sistema (verrà chiesto di confermare - selezionare **Sì**).
+9. Dopo aver apportato le modifiche, evidenziare la chiave utente Skype (cartella radice per Skype) e scegliere Scarica Hive dal menu File del Registro di sistema (verrà chiesto di confermare - selezionare **Sì**).
     
 10. È ora possibile chiudere l'editor del Registro di sistema e digitare la disconnessione nella Windows di ricerca.
     
-11. Tornare alla schermata di accesso, scegliere l'Skype **utente.** Se tutti i passaggi precedenti hanno avuto esito positivo, Microsoft Teams Rooms il dispositivo di accesso verrà eseguito correttamente.
+11. Tornare alla schermata di accesso, scegliere l'Skype **utente.** Se tutti i passaggi precedenti hanno avuto esito positivo, Microsoft Teams Rooms l'accesso verrà eseguito correttamente.
     
 Vedere [l'articolo Sicurezza](./security.md#network-security) di rete per informazioni dettagliate su FQDN, porte e intervalli di indirizzi IP necessari per Microsoft Teams Rooms.
   
@@ -124,7 +124,7 @@ Se si sceglie di partecipare a un dominio (Azure Active Directory o Active Direc
 
 ### <a name="microsoft-teams-rooms-local-user-account"></a>Microsoft Teams Rooms account utente locale
 
-Teams Rooms include un account locale senza password denominato "Skype". Questo account viene usato per accedere a Windows per avviare l Teams Rooms app. Non è supportato l'applicazione di una password a questo account. Per [altre informazioni, Microsoft Teams Rooms sicurezza.](security.md)
+Teams Rooms include un account locale senza password denominato "Skype". Questo account viene usato per accedere a Windows per avviare l'app Teams Rooms app. Non è supportato l'applicazione di una password a questo account. Per [altre informazioni, Microsoft Teams Rooms sicurezza](security.md).
   
 ### <a name="admin---local-administrator-account"></a>"Amministratore" - Account di amministratore locale
 
@@ -135,11 +135,11 @@ Microsoft Teams Rooms password predefinita è impostata su "sfb". La password pu
   
 La password di amministratore locale non è inclusa come scelta durante l'installazione.
 
-Per altre informazioni sull'account amministratore, vedere [l'articolo Microsoft Teams Rooms Sicurezza.](security.md)
+Per altre informazioni sull'account amministratore, vedere [l'articolo Microsoft Teams Rooms Sicurezza](security.md).
   
 ### <a name="machine-account"></a>Account computer
 
-Come qualsiasi dispositivo Windows, il nome del computer può essere rinominato facendo clic con il pulsante destro del mouse **Impostazioni** \> **su** \> **Rinomina PC.**
+Come qualsiasi dispositivo Windows, il nome del computer può essere rinominato facendo clic con il pulsante destro del **mouse Impostazioni** \> **informazioni su** \> **Rinomina PC**.
   
 Se si vuole rinominare il computer dopo l'aggiunta a un dominio, usare [Rename-Computer](/powershell/module/microsoft.powershell.management/rename-computer?view=powershell-7.2), un comando di PowerShell seguito dal nuovo nome del computer.
   

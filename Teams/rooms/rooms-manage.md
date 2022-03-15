@@ -1,7 +1,7 @@
 ---
 title: Gestire Microsoft Teams Rooms.
-ms.author: dstrome
-author: dstrome
+ms.author: czawideh
+author: cazawideh
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 ms.assetid: 39d7dc65-22c3-400f-91f1-87ed2fd792b6
 ms.collection:
 - M365-collaboration
-description: Informazioni su come sviluppare ed eseguire la manutenzione e le operazioni in corso per assicurarsi che i Microsoft Teams Rooms siano disponibili per gli utenti.
+description: Informazioni su come sviluppare ed eseguire operazioni e manutenzione continuativa per assicurarsi che i Microsoft Teams Rooms siano disponibili per gli utenti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72e6a89e23ddb8874c6fe9e262759d2aab4522e7
-ms.sourcegitcommit: fd4d7557997c537c094e79ada21c569acde65aa6
+ms.openlocfilehash: 82725093e67b0f7619ea97837b53fd841b965146
+ms.sourcegitcommit: a894e9397050e09bfaab02e700e943a3bbeb1302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62312249"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504103"
 ---
 # <a name="manage-microsoft-teams-rooms"></a>Gestire Microsoft Teams Rooms.
 
-Se si dispone di Microsoft Teams Rooms nell'organizzazione, sono disponibili opzioni di gestione flessibili.  È possibile gestire i dispositivi manualmente nella stessa posizione centrale in cui si gestiscono tutte le soluzioni Teams, Microsoft Teams di amministrazione. In alternativa, è possibile trasferire la responsabilità di gestione a esperti dedicati [usando Microsoft Teams Rooms Managed Services](https://portal.rooms.microsoft.com).  È anche possibile delegare l'accesso di gestione a un partner di propria scelta per una delle opzioni.
+Se l'organizzazione Microsoft Teams Rooms, sono disponibili opzioni di gestione flessibili.  È possibile gestire i dispositivi manualmente nella stessa posizione centrale in cui si gestiscono tutte le soluzioni Teams, Microsoft Teams di amministrazione. In alternativa, è possibile trasferire la responsabilità di gestione a esperti dedicati usando Microsoft Teams Rooms [Managed Services](https://portal.rooms.microsoft.com).  È anche possibile delegare l'accesso di gestione a un partner di propria scelta per una delle opzioni.
 
 Con Microsoft Teams di amministrazione, è possibile:
 
@@ -40,7 +40,7 @@ Per gestire Teams Rooms dispositivi, aprire [l'Microsoft Teams di amministrazion
 
 
 > [!IMPORTANT]
-> Per gestire i dispositivi usando Teams di amministrazione, è necessario avere i ruoli amministratore globale, amministratore Teams o amministratore Teams dispositivi.
+> Per gestire i dispositivi usando l Teams di amministrazione, è necessario avere i ruoli amministratore globale, amministratore Teams o amministratore Teams dispositivi.
 
 ## <a name="make-changes-to-teams-rooms-devices"></a>Apportare modifiche ai Teams Rooms mobili
 
@@ -48,7 +48,7 @@ Se hai più di un Teams Rooms, puoi eseguire la maggior parte delle azioni su pi
 
 ### <a name="device-settings"></a>Impostazioni del dispositivo
 
-È possibile modificare le impostazioni in uno o più Teams Rooms nell'organizzazione. Per modificare le impostazioni, selezionare il dispositivo o i dispositivi da gestire e quindi selezionare **Modifica Impostazioni**. Si aprirà un nuovo riquadro con tutte le impostazioni che è possibile modificare. La tabella seguente elenca le impostazioni che è possibile modificare usando l'Teams di amministrazione. Alcune impostazioni sono disponibili solo quando si seleziona un singolo Teams Rooms.
+È possibile modificare le impostazioni in uno o più Teams Rooms nell'organizzazione. Per modificare le impostazioni, selezionare il dispositivo o i dispositivi da gestire e quindi selezionare **Modifica Impostazioni**. Si aprirà un nuovo riquadro con tutte le impostazioni che è possibile modificare. La tabella seguente elenca le impostazioni che è possibile modificare usando l'interfaccia Teams di amministrazione. Alcune impostazioni sono disponibili solo quando si seleziona un singolo Teams Rooms.
 
 Se si selezionano più opzioni, le impostazioni che supportano la modifica in blocco mostrano le due opzioni seguenti.
 
@@ -107,27 +107,27 @@ Se si selezionano più opzioni, le impostazioni che supportano la modifica in bl
 
 ### <a name="cortana-settings"></a>Cortana impostazioni
 
-È possibile abilitare l Cortana per l'attivazione _vocale_ o _il push_ per parlare usando PowerShell per tutti i dispositivi dell'organizzazione o separatamente per ogni dispositivo.
+È possibile abilitare Cortana per l'attivazione _vocale_ o _push_ per parlare usando PowerShell per tutti i dispositivi dell'organizzazione o separatamente per ogni dispositivo.
 
 Vedere [Microsoft Teams Rooms su Windows](../cortana-in-teams.md) nell'articolo "Cortana assistenza vocale in Teams".
 
 ### <a name="front-row-layout-settings"></a>Impostazioni del layout in prima riga
 
-La prima riga è l'opzione del layout della visualizzazione riunione Teams Rooms su Windows.
+La prima riga è l'opzione del layout della visualizzazione riunione Teams Rooms in Windows.
 
 | Teams dispositivo | Versione dell'app | Davanti al display della sala |
 |--------------|-------------|-----------------------|
-|Microsoft Teams Rooms in Windows | 4.11.12.0 o versione successiva (è consigliata la versione più recente) | Supporta schermi singoli e doppi; Dimensioni minime: 46 pollici; Proporzioni 16:9 con risoluzione 1920*1080 o 21:9 con risoluzione 2560x1080; Tutti gli schermi devono essere impostati su una scala del 100% nelle Windows di visualizzazione |
+|Microsoft Teams Rooms in Windows | 4.11.12.0 o versione successiva (è consigliata la versione più recente) | Supporta schermi singoli e doppi; Dimensioni minime: 46 pollici; Proporzioni 16:9 con risoluzione 1920*1080 o 21:9 con risoluzione 2560x1080; Tutti gli schermi devono essere impostati in scala 100% nelle Windows di visualizzazione |
 
 Vedere [Microsoft Teams Rooms manutenzione e operazioni](rooms-operations.md#change-scale-and-resolution), per modificare le impostazioni dello schermo in base ai requisiti di Front Row.
 
-Per informazioni su come impostare Front Row come layout predefinito per una chat room o su come disattivarla, vedere Gestire le impostazioni della [console di Microsoft Teams Rooms in](xml-config-file.md#set-front-row-as-the-default-layout) remoto con un file di configurazione XML.
+Per informazioni su come impostare Front Row come layout predefinito per una chat room o su come disattivarla, vedere Gestire le impostazioni di [una console](xml-config-file.md#set-front-row-as-the-default-layout) di Microsoft Teams Rooms in remoto con un file di configurazione XML.
 
 Per [altre informazioni sulla gestione della](known-issues.md#Limits) prima riga, vedere Problemi noti.
 
 ## <a name="device-restart-options"></a>Opzioni di riavvio del dispositivo
 
-Le modifiche alle impostazioni del dispositivo saranno effettive solo dopo Teams Rooms riavvio. Quando si apportano modifiche che necessitano di un riavvio, è possibile scegliere se riavviare immediatamente o pianificare un riavvio. Ecco le opzioni di riavvio disponibili:
+Le modifiche alle impostazioni del dispositivo avranno effetto solo dopo Teams Rooms riavvio. Quando si apportano modifiche che necessitano di un riavvio, è possibile scegliere se riavviare immediatamente o pianificare un riavvio. Ecco le opzioni di riavvio disponibili:
 
 - **Riavvio immediato** Se si sceglie questa opzione, tutti i dispositivi a cui si stanno apportando modifiche verranno riavviati non appena si seleziona questa opzione.
 - **Riavvio pianificato** Se si sceglie questa opzione, è possibile riavviare i dispositivi a cui si stanno apportando modifiche in un momento meno dannoso per l'organizzazione.
@@ -141,7 +141,7 @@ Le modifiche alle impostazioni del dispositivo saranno effettive solo dopo Teams
 
 Quando si rimuove un dispositivo, il dispositivo viene rimosso dall'organizzazione e non viene più visualizzato nell'elenco di Teams Rooms in Windows nell'Teams di amministrazione.
 
-Se rimuovi un dispositivo ed è ancora configurato con un nome utente e una password validi, verrà automaticamente aggiunto di nuovo all'elenco di Teams Rooms se si connette di nuovo a Microsoft 365.
+Se si rimuove un dispositivo ed è ancora configurato con un nome utente e una password validi, verrà automaticamente aggiunto di nuovo all'elenco di Teams Rooms se si connette di nuovo a Microsoft 365.
 
 Per rimuovere uno o più dispositivi, eseguire le operazioni seguenti:
 
@@ -160,7 +160,7 @@ Per scaricare i log da Teams Rooms dispositivo nel computer, eseguire le operazi
 
 ## <a name="view-device-information"></a>Visualizzare le informazioni sul dispositivo
 
-Dall'Teams di amministrazione è possibile visualizzare lo stato generale di tutti i dispositivi dell'organizzazione e visualizzare i dettagli di ogni dispositivo singolarmente.
+Nell'Teams di amministrazione è possibile visualizzare lo stato generale di tutti i dispositivi dell'organizzazione e visualizzare i dettagli di ogni dispositivo singolarmente.
 
 ### <a name="teams-rooms-system-dashboard"></a>Teams Rooms di sistema
 
@@ -177,11 +177,11 @@ Per visualizzare informazioni dettagliate su un dispositivo, selezionarne il nom
 - **Integrità** Mostra informazioni dettagliate sulle periferiche connesse al dispositivo Teams room, sulla connettività di rete, sullo stato di accesso ai servizi necessari e sulle informazioni sulla versione del software.
 - **Dettagli** Mostra le informazioni sul produttore, l'indirizzo IP di rete e Teams seriale/MAC del dispositivo room.
 - **Attività** Mostra i dettagli della riunione precedenti, tra cui la data e l'ora della riunione, il numero di partecipanti, la durata e la qualità audio. Per altre informazioni sui dettagli della riunione, vedere la sezione Dettagli [attività riunione](#meeting-activity-details) più avanti in questo articolo.
-- **Cronologia** Mostra una cronologia delle attività di gestione nel dispositivo Teams Room, inclusi gli aggiornamenti di configurazione, i riavvii dei dispositivi e i collegamenti per il download del log dei dispositivi.
+- **Cronologia** Mostra una cronologia delle attività di gestione nel dispositivo Teams room, inclusi gli aggiornamenti di configurazione, il riavvio del dispositivo e i collegamenti per il download del log dei dispositivi.
 
 #### <a name="meeting-activity-details"></a>Dettagli attività riunione
 
-La **scheda Attività** in Teams dettagli del dispositivo room mostra informazioni generali e dettagliate su tutte le riunioni a cui il dispositivo ha partecipato nel corso del tempo. Nella scheda **Attività** è possibile vedere quando è stata tenuta una riunione, quanti partecipanti hanno partecipato alla riunione e la qualità dell'audio durante la riunione.
+La **scheda Attività** in Teams dettagli del dispositivo room mostra informazioni di alto livello e dettagliate su tutte le riunioni a cui il dispositivo ha partecipato nel corso del tempo. Nella scheda **Attività** è possibile vedere quando è stata tenuta una riunione, quanti partecipanti hanno partecipato alla riunione e la qualità dell'audio durante la riunione.
 
 :::image type="content" source="../media/teams-rooms-meeting-activity-summary.png" alt-text="Teams riepilogo attività del dispositivo room.":::
 
@@ -195,6 +195,6 @@ La pagina di riepilogo dei partecipanti mostra tutti i partecipanti che hanno pa
 
 ##### <a name="participant-details"></a>Dettagli del partecipante
 
-La pagina dei dettagli del partecipante mostra informazioni di diagnostica end-to-end per la sessione del partecipante. Come illustrato nell'immagine seguente, **le** informazioni su **dispositivo, sistema** e connettività vengono fornite per il partecipante e per il Teams Rooms dispositivo. **Vengono fornite** anche le informazioni di diagnostica di rete tra il partecipante e Teams Rooms dispositivo. Selezionare l'icona relativa al contesto su cui si vogliono ottenere altre informazioni. Per altre informazioni di diagnostica, selezionare la **scheda** Avanzate.
+La pagina dei dettagli del partecipante mostra informazioni di diagnostica end-to-end per la sessione del partecipante. Come illustrato nell'immagine seguente, **le** informazioni su **dispositivo, sistema** e connettività vengono fornite per il partecipante e per il Teams Rooms dispositivo. **Vengono fornite** anche informazioni di diagnostica di rete tra il partecipante Teams Rooms dispositivo. Selezionare l'icona relativa al contesto su cui si vogliono ottenere altre informazioni. Per altre informazioni di diagnostica, selezionare la **scheda** Avanzate.
 
 :::image type="content" source="../media/teams-rooms-meeting-activity-participant-details.png" alt-text="Teams di chiamata del dispositivo room.":::

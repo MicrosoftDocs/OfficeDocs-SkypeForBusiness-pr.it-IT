@@ -1,7 +1,7 @@
 ---
 title: Impostare l Microsoft Teams'interfaccia utente dei dispositivi Android
-ms.author: mitressl
-author: flinchbot
+ms.author: czawideh
+author: cazawideh
 manager: serdars
 audience: ITPro
 appliesto:
@@ -13,18 +13,18 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 description: Scopri come impostare l'interfaccia utente nei Teams Android.
-ms.openlocfilehash: 32f5129330bf46657f126fc00f7eddc2fc30f090
-ms.sourcegitcommit: 909b0a709983d21fa6f2b547a78cc6a1222188df
+ms.openlocfilehash: c1872fffef3f21c3fec6a9c693b02e218d5d8337
+ms.sourcegitcommit: a894e9397050e09bfaab02e700e943a3bbeb1302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2022
-ms.locfileid: "62279384"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63503773"
 ---
 # <a name="set-microsoft-teams-android-devices-user-interface"></a>Impostare l Microsoft Teams'interfaccia utente dei dispositivi Android
 
 Microsoft Teams dispositivi Android possono visualizzare un'interfaccia utente specifica in base al tipo di licenza assegnata all'account di accesso. È possibile eseguire l'override di questo comportamento e controllare l'interfaccia visualizzata. Questo articolo descrive in dettaglio come viene scelta l'interfaccia utente predefinita e come è possibile modificare l'interfaccia usando un criterio di PowerShell.
 
-Esistono tre tipi di interfacce utente nei Teams Android:
+Sono disponibili tre tipi di interfacce utente nei Teams Android:
 
 1. Utente
 2. Area comune
@@ -48,7 +48,7 @@ In questa immagine all'account utente è stata assegnata una [licenza area Telef
 
 ## <a name="meeting-interface"></a>Interfaccia riunione
 
-Questa immagine mostra un account utente con una [licenza Microsoft Teams Rooms Standard assegnata](/MicrosoftTeams/rooms/rooms-licensing). Teams Rooms licenze sono destinate a essere usate nelle sale riunioni o negli spazi condivisi, quindi l'interfaccia utente cambia per semplificare la partecipazione a una riunione mostrando la visualizzazione calendario:
+Questa immagine mostra un account utente a cui è [assegnata Microsoft Teams Rooms Standard licenza](/MicrosoftTeams/rooms/rooms-licensing). Teams Rooms licenze sono destinate a essere usate nelle sale riunioni o negli spazi condivisi, quindi l'interfaccia utente cambia per semplificare la partecipazione a una riunione mostrando la visualizzazione calendario:
 
 :::image type="content" source="../media/teams-android-devices-meeting.jpg" alt-text="Interfaccia riunione.":::
 

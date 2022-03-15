@@ -1,8 +1,8 @@
 ---
 title: Microsoft Teams Rooms
 ms.reviewer: ''
-ms.author: dstrome
-author: dstrome
+ms.author: czawideh
+author: cazawideh
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -14,20 +14,20 @@ ms.localizationpriority: medium
 ms.collection:
 - m365initiative-meetings
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
-description: Informazioni su come configurare le Microsoft Teams Rooms, incluse la pianificazione, la distribuzione e la gestione del sistema per creare la sala riunioni virtuale ideale.
+description: Informazioni su come configurare Microsoft Teams Rooms, inclusi la pianificazione, la distribuzione e la gestione del sistema per creare la sala riunioni virtuale ideale.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 92c738d9fc036a7757655b0d57a366a0849ca9ea
-ms.sourcegitcommit: d2c76fe7705acf6e53f7673861671b1b018813dd
+ms.openlocfilehash: 0458513bc75bf352aed1b611895ef918fc621dcc
+ms.sourcegitcommit: a894e9397050e09bfaab02e700e943a3bbeb1302
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62015286"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "63504113"
 ---
 # <a name="microsoft-teams-rooms"></a>Microsoft Teams Rooms
 
 :::row:::
     :::column span="2":::
-       È possibile trasformare gli spazi delle riunioni, dalle piccole aree di riunione alle grandi sale riunioni, con un'esperienza Teams di collaborazione, semplice da usare, distribuire e gestire.
+       È possibile trasformare gli spazi delle riunioni, dalle piccole aree di riunione alle grandi sale riunioni, con un'esperienza Teams collaborativa e semplice da usare, distribuire e gestire.
 
        Avviare le riunioni in tempo con un solo tocco, quindi proiettare istantaneamente sullo schermo nella sala e condividerle con partecipanti remoti.
 
@@ -54,7 +54,7 @@ ms.locfileid: "62015286"
 >
 > Le piattaforme precedenti come Lync Server 2013 non sono supportate con Microsoft Teams Rooms.
 
-Questi articoli sono destinati alle persone con attività di pianificazione, distribuzione e gestione di questi Microsoft Teams Rooms. Gli utenti finali saranno più interessati alla guida Microsoft Teams Rooms [online.](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
+Questi articoli sono destinati alle persone con attività di pianificazione, distribuzione e gestione di questi Microsoft Teams Rooms. Gli utenti finali saranno più interessati alla guida Microsoft Teams Rooms [online](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).
 
 > [!NOTE]
 > [Skype Room System](../rooms/lrs-migration.md) (in precedenza Lync Room System) e Microsoft Teams Rooms sono prodotti diversi con dipendenze e procedure di distribuzione diverse.
