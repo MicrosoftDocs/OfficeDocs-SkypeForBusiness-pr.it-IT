@@ -21,20 +21,20 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4c5f178c5b8da9bf2ed62b06b9c499d676c076e2
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: 817f3dc7ce7f0b6f407607417c0cadb92b65e943
+ms.sourcegitcommit: dafe48cea1643e1bd79390482da9b002d7e9e0bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61767719"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63514751"
 ---
 # <a name="plan-for-sip-gateway"></a>Pianificare il gateway SIP
 
-Gateway SIP consente all'organizzazione di usare qualsiasi dispositivo SIP compatibile con Microsoft Teams per mantenere gli investimenti nei dispositivi SIP. Ora è possibile accedere a Teams con le credenziali aziendali e effettuare e ricevere chiamate con un dispositivo SIP compatibile. I dispositivi compatibili possono essere Skype for Business telefoni IP con firmware SIP standard, telefoni IP Cisco con firmware SIP multipiattaforma o dispositivi SIP di fornitori come Poly, Yealink e AudioCodes. Per informazioni su come configurare i dispositivi SIP per il gateway SIP, vedere [Configurare il gateway SIP.](sip-gateway-configure.md)
+Gateway SIP consente all'organizzazione di usare qualsiasi dispositivo SIP compatibile con Microsoft Teams per mantenere gli investimenti nei dispositivi SIP. Ora è possibile accedere a Teams con le credenziali aziendali e effettuare e ricevere chiamate con un dispositivo SIP compatibile. I dispositivi compatibili possono essere Skype for Business telefoni IP con firmware SIP standard, telefoni IP Cisco con firmware SIP multipiattaforma o dispositivi SIP di fornitori come Poly, Yealink e AudioCodes. Per informazioni su come configurare i dispositivi SIP per il gateway SIP, vedere [Configurare il gateway SIP](sip-gateway-configure.md).
 
 ## <a name="benefits-of-sip-gateway"></a>Vantaggi del gateway SIP
 
-Gateway SIP connette i dispositivi SIP compatibili a Teams per consentire agli utenti di eseguire la migrazione senza problemi alla telefonia Teams telefonia. Usando il gateway SIP, gli utenti possono eseguire tutte le operazioni seguenti:
+Gateway SIP connette dispositivi SIP compatibili con Teams per consentire agli utenti di eseguire la migrazione senza problemi alla telefonia Teams telefonia. Usando il gateway SIP, gli utenti possono eseguire tutte le operazioni seguenti:
 
 - **Effettuare chiamate:** Gli utenti di dispositivi SIP possono effettuare chiamate alla rete PSTN (Public Switched Telephone Network), ad altri dispositivi SIP e a Teams e Skype for Business utenti. Gli utenti di dispositivi SIP possono chiamare solo gli utenti che hanno numeri di telefono.
 - **Ricevi chiamate:** Gli utenti di dispositivi SIP possono ricevere una chiamata dalla rete PSTN, da utenti Teams o Skype for Business che dispongono di dispositivi SIP e da Teams e Skype for Business client. Il dispositivo SIP funge da endpoint Teams dispositivo. Le chiamate in ingresso verranno inoltre forkate sul dispositivo SIP dell'utente.
@@ -43,11 +43,11 @@ Gateway SIP connette i dispositivi SIP compatibili a Teams per consentire agli u
 - **Tieni premuto/riprendi e disattiva/riattiva audio:** Un utente di un dispositivo SIP può tenere premuto e riprendere o disattivare l'audio e riattivare l'audio di una chiamata usando le funzionalità per queste azioni nel dispositivo.
 - **Segreteria telefonica:** Gli utenti di dispositivi SIP possono ascoltare i messaggi vocali archiviati elettronicamente che i chiamanti lasciano per loro.
 - **Indicatore di messaggio in attesa:** Gli utenti di dispositivi SIP possono ricevere notifiche che avvisano gli utenti quando hanno nuovi messaggi della segreteria telefonica.
-- **Accesso e disconnessione:** I dispositivi SIP gli utenti possono accedere e disconnettersi Teams dal dispositivo.
+- **Accesso e disconnessione:** I dispositivi SIP gli utenti possono accedere e disconnettersi Teams nel dispositivo.
 - **Multifrequenza a due toni:** Gli utenti di dispositivi SIP possono premere i tasti numerici per fornire l'input durante le chiamate di risposta vocale interattive.
-- **Teams riunioni: un** utente di un dispositivo SIP può partecipare a Teams riunione componendo il numero di accesso alla riunione. La chiamata in uscita al numero di telefono di uno stesso utente dell'organizzazione non è attualmente supportata. Tuttavia, gli utenti guest di un'altra organizzazione possono essere aggiunti a una riunione Teams da un partecipante che chiama il numero di un utente guest per includere tale guest. **NOTA:** L'aggiunta Teams partecipante alla riunione tramite "richiesta di partecipazione" attualmente non avvisa un dispositivo SIP.
+- **Teams riunioni: un** utente di un dispositivo SIP può partecipare a Teams riunione componendo il numero di accesso alla riunione. I partecipanti alla riunione possono aggiungere un utente di un dispositivo SIP alla riunione componendo il numero di telefono dell'utente o semplicemente aggiungendo un partecipante facendo clic su "Richiedi di partecipare" avvisa anche il dispositivo SIP dell'utente. Gli utenti guest di un'altra organizzazione possono essere aggiunti a una riunione Teams da un partecipante che chiama il numero di un utente guest per includere tale guest.
 - **Trasferimenti di chiamata:** Gli utenti di dispositivi SIP possono trasferire le chiamate. Il gateway SIP supporta sia i trasferimenti non vedenti che consultitivi.
-- **Inoltro di chiamata locale:** Un utente del dispositivo SIP può impostare regole di inoltro (sempre, in timeout e occupato) per il dispositivo. Se il dispositivo è connesso al gateway SIP, la chiamata verrà reindirizzata all'indirizzo di destinazione in base alla regola impostata dall'utente del dispositivo. Per far funzionare l'inoltro di chiamata locale, l'amministratore deve impostare `AllowCallRedirect` l'attributo in `Set-CsTeamsCallingPolicy` su `Enabled` . 
+- **Inoltro di chiamata locale:** Un utente del dispositivo SIP può impostare regole di inoltro (sempre, in timeout e occupato) per il dispositivo. Se il dispositivo è connesso al gateway SIP, la chiamata verrà reindirizzata all'indirizzo di destinazione in base alla regola impostata dall'utente del dispositivo. Per far funzionare l'inoltro di chiamata locale, l'amministratore deve impostare l'attributo `AllowCallRedirect` in su `Set-CsTeamsCallingPolicy` `Enabled`. 
 
 
 ## <a name="requirements-to-use-sip-gateway"></a>Requisiti per l'uso del gateway SIP
@@ -58,14 +58,15 @@ Teams gli utenti devono avere un numero di telefono con le chiamate PSTN abilita
 
 Se si dispone di un dispositivo 3PIP o SIP, è necessario disporre di: 
 - Una licenza per Sistema telefonico (tramite E5 o una licenza autonoma)
-- Abilitazione PSTN (ad esempio un numero di telefono) tramite un piano per chiamate Microsoft Teams, instradamento diretto o Connessione con operatore
-- Una licenza di area Telefono per tutti i dispositivi dell'area comune
+- Abilitazione PSTN (ad esempio un numero di telefono) tramite un piano Microsoft Teams chiamate, routing diretto o Connessione con operatore
+- Una licenza di area Telefono per tutti i dispositivi ad area comune
 
 ## <a name="compatible-devices"></a>Dispositivi compatibili
 
 |Fornitore    |Modello      |Versione minima del firmware|Versione firmware approvata|Note|Collegamenti|
 |----------|-----------|------------|-----------|------------|------------|
 |**Cisco** |           |            |           |I dispositivi che eseguono firmware aziendale devono essere convertiti in firmware multipiattaforma. Per informazioni su come, leggere la guida a destra.|[Guida alla conversione del firmware Cisco](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-7800-series/guide-c07-742786.html)|
+|          |8832       |11.3.5MPP   |11.3.5MPP  |   |   |
 |          |6821       |11.1.1MPP   |11-3-3MPP  |   |   |
 |          |7811       |11.1.1MPP   |11-3-3MPP  |   |   |
 |          |7821       |11.1.1MPP   |11-3-3MPP  |   |   |
@@ -78,6 +79,8 @@ Se si dispone di un dispositivo 3PIP o SIP, è necessario disporre di:
 |          |8861       |11.1.1MPP   |11-3-3MPP  |   |   |
 |          |8865       |11.1.1MPP   |11-3-3MPP  |   |   |
 |**Poly**  |           |            |           |Il dispositivo verrà riavviato automaticamente e installerà il firmware selezionato.|   |
+|          |Trio 8500  |5.9.5.3182  |7.1.1.0997 |   |   |
+|          |Trio 8800  |5.9.5.3182  |7.1.1.0997 |   |   |
 |          |VVX150     |5.9.5       |6.3.1.8427 |   |   |
 |          |VVX201     |5.9.5       |6.3.1.8427 |   |   |
 |          |VVX250     |5.9.5       |6.3.1.8427 |   |   |
@@ -124,12 +127,16 @@ Se si dispone di un dispositivo 3PIP o SIP, è necessario disporre di:
 |          |T40G       |83          |76.84.0.125|   |   |
 |          |T41P       |83          |36.83.0.120|   |   |
 |          |T46G       |83          |28.83.0.130|   |   |
-|**AudioCodes**|       |            |           |Alcuni dispositivi SIP AudioCodes necessitano di un'impostazione dell'URL di provisioning. Scaricare e installare i file di aggiornamento per i dispositivi AudioCodes interessati a destra. |[File scaricabili per i dispositivi interessati in AudioCodes](https://audiocodes.sharefile.com/share/view/sc9cdf17f9ec45d09/fo19ecda-cf14-4a53-842b-5eab33a0b9b0)|
-|          |405         |2.2.8      |2.2.16.525 |   |   |
-|          |405HD       |3.2.1      |2.2.16.525 |   |   |
-|          |420HD       |3.2.1      |2.2.16.525 |   |   |
-|          |430HD       |3.2.1      |2.2.16.525 |   |   |
-|          |440HD       |3.2.1      |2.2.16.525 |   |   |
-|          |450HD       |3.2.1      |3.4.6.558  |   |   |
-|          |C450HD      |3.2.1      |3.4.6.558  |   |   |
-|          |445HD       |3.2.1      |3.4.6.558  |   |   |
+|**AudioCodes**|       |            |           |Alcuni dispositivi SIP AudioCodes necessitano di un'impostazione dell'URL di provisioning. Scaricare e installare i file di aggiornamento per i dispositivi AudioCodes interessati a destra. |[File scaricabili per i dispositivi interessati in AudioCodes](https://audiocodes.sharefile.com/share/view/sc9cdf17f9ec45d09/fo7914a2-4f3a-4000-8957-47bd6f35a3a5)|
+|          |405         |2.2.8      |2.2.16.570 |   |   |
+|          |405HD       |3.2.1      |2.2.16.570 |   |   |
+|          |420HD       |3.2.1      |2.2.16.570 |   |   |
+|          |430HD       |3.2.1      |2.2.16.570 |   |   |
+|          |440HD       |3.2.1      |2.2.16.570 |   |   |
+|          |450HD       |3.2.1      |3.4.6.687  |   |   |
+|          |C450HD      |3.2.1      |3.4.6.687  |   |   |
+|          |445HD       |3.2.1      |3.4.6.687  |   |   |
+|          |RX50        |3.2.1      |3.4.6.687  |   |   |
+
+> [!NOTE]
+> Per alcuni dispositivi, la versione minima del firmware è maggiore della versione del firmware approvata. Questo perché la versione 3.X è la Skype for Business versione. Aggiorniamo la versione SIP che è 2.X.

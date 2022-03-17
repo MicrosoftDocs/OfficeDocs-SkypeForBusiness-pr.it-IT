@@ -15,12 +15,12 @@ appliesto:
 ms.localizationpriority: medium
 ms.custom: ''
 description: Informazioni su come gestire la funzionalità Musica blocco in Sistema telefonico.
-ms.openlocfilehash: d3fa7188e3d2320ba4eeb17ca95d28d1f57c18c4
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: a1e2662c04cfa9300d034aaaf8d7975e44e63f69
+ms.sourcegitcommit: dafe48cea1643e1bd79390482da9b002d7e9e0bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61767409"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63514783"
 ---
 # <a name="music-on-hold"></a>Musica blocco
 
@@ -36,11 +36,11 @@ Si noti che i chiamanti PSTN possono ascoltare Musica in attesa anche in altri s
 
 Per configurare Musica blocco:
 
-1.  Nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione, passare a Criteri **> chiamate vocali**.
+1.  Nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione, passare a Criteri > **chiamate vocali**.
 
 2.  Nella scheda **Gestisci criteri** selezionare uno dei criteri esistenti o crearne uno nuovo.
 
-3.  Nel campo Musica blocco per **i chiamanti PSTN** selezionare **Abilitato** nel menu a discesa.
+3.  Nel campo **Musica blocco per i chiamanti PSTN** selezionare **Abilitato** nel menu a discesa.
 
 È anche possibile configurare Musica blocco usando il modulo Teams PowerShell. In TeamsCallingPolicy modificare il parametro MusicOnHoldEnabledType su Enabled e quindi concedere l'istanza del criterio a uno o più utenti.
 
@@ -59,15 +59,15 @@ Per configurare il blocco Musica personalizzato, usare i cmdlet di PowerShell Ne
 Per i formati audio supportati e le dimensioni massime del file, vedere [Import-CsOnlineAudioFile](/powershell/module/skype/import-csonlineaudiofile)
 
 
-1. Assicurarsi che l'Teams utente abbia Musica blocco per i chiamanti PSTN impostato su Abilitato nel criterio Teams chiamate. 
+1. Assicurarsi che l Teams'utente abbia Musica blocco per i chiamanti PSTN impostato su Abilitato nel criterio Teams chiamate. 
 
 2. Upload file audio personalizzato.
 
-3. Creare un Teams di blocco chiamata che fa riferimento al file audio personalizzato e assegnarlo all'Teams utente.
+3. Creare un Teams di blocco chiamata che faccia riferimento al file audio personalizzato e assegnarlo all'Teams utente.
 
 ### <a name="upload-the-custom-audio-file"></a>Upload file audio personalizzato
 
-La configurazione dei file Musica blocco inizia con il caricamento del file audio. A questo scopo si usa il cmdlet di PowerShell [Import-CsOnlineAudioFile.](/powershell/module/skype/import-csonlineaudiofile)
+La configurazione dei file Musica blocco inizia con il caricamento del file audio. A questo scopo si usa il cmdlet di PowerShell [Import-CsOnlineAudioFile](/powershell/module/skype/import-csonlineaudiofile) .
 
 Di seguito è riportato un esempio di caricamento di un file audio MP3 con l'interfaccia di PowerShell:
 
@@ -80,7 +80,7 @@ FileName      : customMoH1.mp3
 ApplicationId : TenantGlobal
 ```
 
-### <a name="reference-the-audio-file-in-a-teams-call-hold-policy"></a>Fare riferimento al file audio in un criterio di Teams chiamata
+### <a name="reference-the-audio-file-in-a-teams-call-hold-policy"></a>Fare riferimento al file audio in un criterio Teams di blocco chiamata
 
 Dopo aver caricato il file audio, è necessario fare riferimento al file in un criterio di blocco delle chiamate di Teams usando l'ID del file quando si crea o si imposta un criterio di blocco chiamata Teams chiamata. Ad esempio:
 
@@ -102,7 +102,7 @@ Per esportare un file audio caricato, usare il cmdlet Export-CsOnlineAudioFile.
 
 ## <a name="feature-availability"></a>Disponibilità delle funzionalità
 
-La tabella seguente indica le caratteristiche in cui i client e i dispositivi supportano Musica blocco e Musica blocco. Microsoft continua ad aggiungere il supporto per le funzionalità, quindi controlla spesso la disponibilità aggiuntiva.
+La tabella seguente indica le funzionalità in cui i client e i dispositivi supportano Musica blocco e Musica blocco. Microsoft continua ad aggiungere il supporto per le funzionalità, quindi controlla spesso la disponibilità aggiuntiva.
 
 
 | Funzionalità | Desktop <br> Windows/Mac OS | Browser | Dispositivi mobili <br> iOS | Dispositivi mobili <br> Android | Teams Telefono |
@@ -112,15 +112,15 @@ La tabella seguente indica le caratteristiche in cui i client e i dispositivi su
 
 ## <a name="restrictions"></a>Restrizioni
 
-- Musica blocco è disponibile solo nel cloud commerciale.
+- Musica blocco è disponibile solo nelle istanze commerciali e GCC cloud.
 
 - Musica blocco è disponibile solo quando l'utente è in modalità TeamsOnly.
 
 - Se l'utente Teams è abilitato per Location-Based routing, Musica non può essere riprodotto al chiamante.
 
-- Le Musica blocco non sono disponibili per gli utenti configurati per l'aspetto della linea condivisa (delega) e quando viene usato Il parcheggio di chiamata. Verrà riprodotta Musica blocco standard.
+- Le Musica di blocco non sono disponibili per gli utenti configurati per l'aspetto della linea condivisa (delega) e quando viene usato Il parcheggio di chiamata. Verrà riprodotta Musica blocco standard.
 
-- In alcuni scenari, una chiamata media bypass direct routing verrà convertita in bypass non multimediale per la riproduzione Musica in attesa e la chiamata rimarrà come bypass non multimediale finché la chiamata non viene terminata.
+- In alcuni scenari, una chiamata di bypass multimediale direct routing verrà convertita in bypass non multimediale per la riproduzione di Musica in attesa e la chiamata rimarrà come bypass non multimediale finché la chiamata non viene terminata.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

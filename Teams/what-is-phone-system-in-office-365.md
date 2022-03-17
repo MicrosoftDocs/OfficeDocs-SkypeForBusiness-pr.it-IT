@@ -21,13 +21,13 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 - intro-overview
-description: In questo articolo verranno trattate le informazioni sulla tecnologia Sistema telefonico in Microsoft 365.
-ms.openlocfilehash: 739745c288e24b1cdb7ddc4cf65644a9fd98cb9e
-ms.sourcegitcommit: 5e9b50cd1b513f06734be6c024ac06d293b27089
+description: Questo articolo illustra la tecnologia di Sistema telefonico in Microsoft 365.
+ms.openlocfilehash: a838561b25a737025838095e643bd78a2c69af92
+ms.sourcegitcommit: dafe48cea1643e1bd79390482da9b002d7e9e0bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62518598"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63514557"
 ---
 # <a name="what-is-phone-system"></a>Che cos'è Sistema telefonico
 
@@ -37,7 +37,9 @@ Sistema telefonico funziona con Teams client e dispositivi certificati. Sistema 
 
 Le chiamate tra utenti dell'organizzazione vengono gestite internamente all'interno di Sistema telefonico e non passano mai alla rete PSTN (Public Switched Telephone Network), eliminando così i costi a lunga distanza per le chiamate interne. 
 
-Per effettuare chiamate esterne, Sistema telefonico disponibili opzioni per la connessione alla rete PSTN. Per altre informazioni sulle soluzioni vocali e sulle opzioni di connettività PSTN, vedere Pianificare la Teams e la Connessione [alla rete PSTN](#connect-to-the-public-switched-telephone-network-pstn).[](cloud-voice-landing-page.md)
+Per effettuare chiamate esterne, Sistema telefonico opzioni di componenti aggiuntivi per la connessione alla rete PSTN. Per altre informazioni sulle soluzioni vocali e sulle opzioni di connettività PSTN, vedere Pianificare la Teams e Connessione [alla rete PSTN](#connect-to-the-public-switched-telephone-network-pstn).[](cloud-voice-landing-page.md)
+
+Sistema telefonico è disponibile in tutto il mondo ad eccezione di Macao. 
 
 ## <a name="phone-system-features"></a>Sistema telefonico caratteristiche
 
@@ -45,7 +47,7 @@ Con Sistema telefonico, gli utenti possono usare Teams per effettuare e ricevere
 
 Sistema telefonico amministratori possono gestire le opzioni e le impostazioni delle chiamate dalla stessa console usata per la messaggistica, la collaborazione e così via.
 
-Per altre informazioni sulle Sistema telefonico, vedere Ecco cosa [si ottiene con Sistema telefonico](here-s-what-you-get-with-phone-system.md).
+Per altre informazioni sulle Sistema telefonico, vedere Ecco cosa si ottiene con [Sistema telefonico](here-s-what-you-get-with-phone-system.md).
   
 
 ## <a name="connect-to-the-public-switched-telephone-network-pstn"></a>Connessione alla rete PSTN (Public Switched Telephone Network)
@@ -69,9 +71,9 @@ Sistema telefonico può essere usato per i servizi e la segreteria telefonica, a
 
 - **Code di chiamata** : i messaggi di saluto della coda di chiamata possono essere usati quando qualcuno chiama a un numero di telefono dell'organizzazione. Questi messaggi di saluto includono la possibilità di mettere automaticamente in attesa le chiamate e di cercare il successivo agente di chiamata disponibile per gestire la chiamata. Le persone in attesa possono anche ascoltare musica mentre sono in attesa. È possibile creare una o più code di chiamata per l'organizzazione. Vedere [Creare una coda di chiamata cloud](create-a-phone-system-call-queue.md).
 
-- **Segreteria telefonica**: Cloud Voicemail viene configurato ed eseguito automaticamente il provisioning per tutti Teams utenti. Vedere [Configurare Cloud Voicemail](set-up-phone-system-voicemail.md).
+- **Segreteria telefonica**: Cloud Voicemail viene automaticamente configurato ed eseguito il provisioning per tutti Teams utenti. Vedere [Configurare Cloud Voicemail](set-up-phone-system-voicemail.md).
 
-Per altre informazioni sulle caratteristiche, vedere [Ecco cosa si ottiene con Sistema telefonico](here-s-what-you-get-with-phone-system.md). Se si è pronti per iniziare, vedere Configurare [Sistema telefonico nell'organizzazione](setting-up-your-phone-system.md).
+Per altre informazioni sulle caratteristiche, vedere [Ecco](here-s-what-you-get-with-phone-system.md) cosa si ottiene con Sistema telefonico. Se si è pronti per iniziare, vedere Configurare Sistema telefonico [nell'organizzazione](setting-up-your-phone-system.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: dae1bfb6-7262-4030-bf53-dc3b3fe971ea
 description: Questo articolo descrive come configurare la console di Microsoft Teams Rooms e le relative periferiche.
-ms.openlocfilehash: 42f10ffe4ed2b577e91ed13b57ea8efcae67a1a4
-ms.sourcegitcommit: a894e9397050e09bfaab02e700e943a3bbeb1302
+ms.openlocfilehash: c13a247f2ce9d7fee7571f7f3a202310b2ce8b41
+ms.sourcegitcommit: dafe48cea1643e1bd79390482da9b002d7e9e0bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504013"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63514721"
 ---
 # <a name="build-a-microsoft-teams-rooms-image"></a>Creare un'Microsoft Teams Rooms immagine
 
@@ -117,30 +117,36 @@ In Creator's Update, è necessario usare lo script ApplyCurrentRegionAndLanguage
     
 4. Selezionare **Lingua &amp; ora**.
     
-5. Selezionare **Lingua &amp; area geografica**.
+5. Selezionare **la lingua**.
     
 6. Selezionare **Aggiungi una lingua**.
     
 7. Selezionare la lingua da aggiungere.
     
-8. Selezionare la lingua appena aggiunta all'elenco "Lingue".
+8. Installare le caratteristiche della lingua.
     
-9. Selezionare **Imposta come predefinito**.
+9. Non selezionare Imposta come lingua di Windows lingua di visualizzazione.
     
-10. Per le lingue da rimuovere:
+10. Selezionare **Installa**.
+    
+11. Selezionare la lingua appena aggiunta all'elenco "Lingue".
+    
+12. Imposta come predefinito- Freccia su per impostare l'impostazione predefinita
+
+13. Per le lingue da rimuovere:
     
     a. Selezionare la lingua da rimuovere.
     
-    b. Selezionare **Rimuovi**.
-    
-11. Avviare un prompt dei comandi con privilegi elevati.
-    
-12. Eseguire il comando seguente: 
+    b. Selezionare Rimuovi.
+
+14. Avviare un prompt dei comandi con privilegi elevati.
+
+15. Eseguire il comando seguente: 
     ```PowerShell
     powershell -executionpolicy unrestricted c:\Rigel\x64\scripts\provisioning\scriptlaunch.ps1 ApplyCurrentRegionAndLanguage.ps1
     ```
     
-13. Riavviare il sistema.
+16. Riavviare il sistema.
     
 La lingua desiderata viene ora applicata alla Microsoft Teams Rooms console.
 ## <a name="initial-set-up-of-the-console"></a>Configurazione iniziale della console
@@ -154,12 +160,12 @@ Dopo Windows, l'app Microsoft Teams Rooms verrà installata nel processo di inst
    
 3. Selezionare la modalità riunione supportata: solo Microsoft Teams, Skype for Business solo o una delle due opzioni in modalità mista. Se necessario, abilitare l'autenticazione moderna.
 
-4. Fare clic su **Avanti**.
+4. Selezionare **Avanti**.
     
 5. Se si usa Skype for Business e se il dominio SIP Skype for Business è diverso dal dominio Exchange dell'utente, impostare il nome di dominio completo per il Skype for Business Server nella sezione Avanzate. Se non si usa un Skype for Business o il dominio SIP corrisponde al dominio Exchange, lasciare vuota questa sezione.
-6. Fare clic su **Avanti**.
+6. Selezionare **Avanti**.
     
-7. Fare clic **su Fine**.
+7. Selezionare **Fine**.
     
 L'app Microsoft Teams Rooms deve accedere a Microsoft Teams o Skype for Business Server con le credenziali immesse in precedenza e deve anche iniziare a sincronizzare il calendario con Exchange usando le stesse credenziali. Per informazioni dettagliate sull'Teams Rooms, vedere Microsoft Teams Rooms [guida](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).
   
@@ -195,7 +201,7 @@ Microsoft Teams Rooms deve considerare attendibili i certificati usati dai serve
 ### <a name="join-an-active-directory-domain-optional"></a>Aggiunta a un dominio di Active Directory (facoltativo)
 <a name="Certs"> </a>
 
-È possibile aggiungere Microsoft Teams Rooms al dominio. Microsoft Teams Rooms devono essere inseriti in un'unità organizzativa separata dalle workstation del PC perché molti criteri workstation non sono compatibili con Microsoft Teams Rooms. Un esempio comune sono i criteri di applicazione delle password che impediscono Microsoft Teams Rooms l'avvio automatico. Per informazioni sulla gestione delle impostazioni dell'oggetto Criteri di gruppo, vedere [Gestire Microsoft Teams Rooms](rooms-operations.md).
+È possibile aggiungere Microsoft Teams Rooms al dominio. Microsoft Teams Rooms devono essere inseriti in un'unità organizzativa separata dalle workstation del PC perché molti criteri workstation non sono compatibili con Microsoft Teams Rooms. Un esempio comune è un criterio di applicazione delle password che impedisce Microsoft Teams Rooms l'avvio automatico. Per informazioni sulla gestione delle impostazioni dell'oggetto Criteri di gruppo, vedere [Gestire Microsoft Teams Rooms](rooms-operations.md).
   
 ### <a name="to-join-microsoft-teams-rooms-to-a-domain"></a>Per aggiungere Microsoft Teams Rooms a un dominio
 

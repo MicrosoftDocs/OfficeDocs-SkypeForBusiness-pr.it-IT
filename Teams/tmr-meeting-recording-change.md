@@ -11,31 +11,36 @@ search.appverid: MET150
 description: Informazioni su come passare da Stream a OneDrive for Business e allo spazio di archiviazione per la registrazione delle riunioni di SharePoint in Microsoft Teams.
 ms.localizationpriority: medium
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.collection:
-  - M365-collaboration
-  - m365initiative-meetings
+- M365-collaboration
+- m365initiative-meetings
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: bf1f393c8f6caf27a53ec45af0f04401f93b6793
+ms.sourcegitcommit: dafe48cea1643e1bd79390482da9b002d7e9e0bb
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63514537"
 ---
-
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
 > [!NOTE]
-> La modifica dell'archiviazione Teams registrazioni delle riunioni da Classic Stream a OneDrive and SharePoint (ODSP) è stata completata a partire dal 30 agosto 2021. Tutte le registrazioni sono ora archiviate in ODSP. Questa modifica sostituisce il criterio RecordingStorageMode e la modifica dell'impostazione in PowerShell non ha più alcun impatto.
+> La modifica dell'archiviazione Teams registrazioni delle riunioni da Classic Stream a OneDrive e SharePoint (ODSP) è stata completata a partire dal 30 agosto 2021. Tutte le registrazioni sono ora archiviate in ODSP. Questa modifica sostituisce il criterio RecordingStorageMode e la modifica dell'impostazione in PowerShell non ha più alcun impatto.
 
 |Data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Evento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                                                                                                                                                                                                                                                                             |
 |:-----------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |5 ottobre 2020<br> *(Completata)* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Si abilita il criterio Teams riunione per salvare le registrazioni delle riunioni OneDrive for Business e SharePoint invece di Microsoft Stream (versione classica)|
 |Implementazione a partire dal giorno 7 gennaio 2021<br> *(Completata)* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Tutte le nuove registrazioni delle riunioni Teams verranno salvate in OneDrive for Business e SharePoint a meno che non si ritagli questa modifica modificando i criteri riunione Teams dell'organizzazione e impostandoli esplicitamente su **Flusso.** La visualizzazione dei report dei criteri come Stream non è sufficiente. È necessario impostare in modo esplicito il valore dei criteri su **Stream**.|
-|Implementazione a partire dal giorno 11 gennaio 2021<br> *(Completata)* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC**<br> Anche se i clienti GCC possono rifiutare esplicitamente tale opzione, a partire dal 5 ottobre, non è possibile acconsentire esplicitamente. Questa funzionalità verrà distribuita a tutti i clienti GCC a partire dall'11 gennaio 2021, a meno che non sia stata rifiutata esplicitamente.<br>  <br>A partire dall'11 gennaio 2021, tutte le nuove registrazioni delle riunioni di Teams per i clienti di GCC verranno salvate in OneDrive for Business e SharePoint a meno che non si ritardi questa modifica modificando i criteri riunione Teams dell'organizzazione e impostandoli esplicitamente su **Stream**. <br><br>Se tale funzionalità è stata rifiutata esplicitamente, ma si vuole attivarla, è possibile impostare i criteri delle riunioni di Teams in modo esplicito su **OneDrive for Business**. |
-|Implementazione a partire dal giorno 1 marzo 2021<br> *(Completata)*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC-High e DoD**<br> I clienti ora possono abilitare le registrazioni delle riunioni cloud in Microsoft Teams per la prima volta. Queste registrazioni verranno archiviate e riprodotte in OneDrive e SharePoint per impostazione predefinita. |
-|Implementazione incrementale a partire dal giorno 16 agosto 2021 <br> *(Completata)* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Tutti i clienti (Enterprise, Education e GCC)**<br>Non è possibile salvare le nuove registrazioni delle riunioni in Microsoft Stream (versione classica); tutti i clienti avranno automaticamente le registrazioni delle riunioni salvate in OneDrive for Business e SharePoint anche se i criteri delle riunioni Teams sono stati modificati in Flusso.<br><br> È consigliabile che i clienti, in modo da controllare meglio il cambiamento nell'organizzazione, acconsentano esplicitamente ogni volta che si ha familiarità con la modifica anziché attendere che venga eseguita. |
+|Implementazione a partire dal giorno 11 gennaio 2021<br> *(Completata)* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC**<br> Anche se i clienti GCC possono rifiutare esplicitamente tale opzione, a partire dal 5 ottobre, non è possibile acconsentire esplicitamente. Questa funzionalità verrà distribuita a tutti i clienti GCC a partire dall'11 gennaio 2021, a meno che non sia stata rifiutata esplicitamente.<br>  <br>A partire dall'11 gennaio 2021, tutte le nuove registrazioni delle riunioni Teams per i clienti di GCC verranno salvate in OneDrive for Business e SharePoint a meno che non si ritagli questa modifica modificando i criteri riunione Teams dell'organizzazione e impostandoli esplicitamente su **Stream.** <br><br>Se tale funzionalità è stata rifiutata esplicitamente, ma si vuole attivarla, è possibile impostare i criteri delle riunioni di Teams in modo esplicito su **OneDrive for Business**. |
+|Implementazione a partire dal giorno 1 marzo 2021<br> *(Completata)*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC-High e DoD**<br> I clienti ora possono abilitare le registrazioni delle riunioni cloud in Microsoft Teams per la prima volta. Queste registrazioni verranno archiviate e riprodotte OneDrive e SharePoint per impostazione predefinita. |
+|Implementazione incrementale a partire dal giorno 16 agosto 2021 <br> *(Completata)* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Tutti i clienti (Enterprise, Education e GCC)**<br>Non è possibile salvare le nuove registrazioni delle riunioni in Microsoft Stream (versione classica), ma tutti i clienti avranno automaticamente le registrazioni delle riunioni salvate in OneDrive for Business e SharePoint, anche se i criteri di riunione Teams sono stati modificati in Flusso.<br><br> È consigliabile che i clienti, in modo da controllare meglio il cambiamento nell'organizzazione, acconsentano esplicitamente ogni volta che si ha familiarità con la modifica anziché attendere che venga eseguita. |
 
-Microsoft Teams offre un nuovo metodo per salvare le registrazioni delle riunioni. Come prima fase di una transizione dal classico Microsoft Stream al nuovo [stream, questo](/stream/streamnew/new-stream) metodo archivia le registrazioni in Microsoft OneDrive for Business e SharePoint in Microsoft 365 e offre molti vantaggi.
+Microsoft Teams offre un nuovo metodo per salvare le registrazioni delle riunioni. Come prima fase di una transizione dal classico Microsoft Stream al nuovo [stream](/stream/streamnew/new-stream), questo metodo archivia le registrazioni in Microsoft OneDrive for Business e SharePoint in Microsoft 365 e offre molti vantaggi.
 
 > [!NOTE]
-> Se la registrazione di una riunione di Teams non viene caricata correttamente in OneDrive/SharePoint, verrà visualizzato un messaggio di errore "La registrazione è terminata in modo imprevisto" e la registrazione verrà salvata temporaneamente in Servizi multimediali di Azure (AMS). Dopo l'archiviazione in AMS, non vengono effettuati tentativi per caricare automaticamente la registrazione in OneDrive/SharePoint o Stream.
+> Se la registrazione di una riunione di Teams non viene caricata correttamente in OneDrive/SharePoint, verrà visualizzato un messaggio di errore "La registrazione è terminata in modo imprevisto" e la registrazione verrà salvata temporaneamente in Servizi multimediali di Azure (AMS). Dopo l'archiviazione in AMS, non vengono effettuati tentativi di caricamento automatico della registrazione in OneDrive/SharePoint o stream.
 
 Le registrazioni delle riunioni archiviate in AMS sono disponibili per 21 giorni prima che vengano eliminate automaticamente. Gli utenti possono scaricare il video da AMS se devono conservarne una copia.
 
@@ -65,7 +70,7 @@ L'opzione di registrazione della riunione è un'impostazione a livello di criter
 > [!Note]
 > La propagazione delle modifiche ai criteri delle riunioni di Teams richiede qualche tempo. È necessario ricontrollare dopo alcune ore dall'impostazione, quindi disconnettersi e accedere di nuovo all'applicazione desktop di Teams o riavviare semplicemente il computer.
 
-1. Installare PowerShell per Teams.
+1. Installare Teams PowerShell.
 
    > [!NOTE]
    > Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente. Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online. Vedere [Gestire Skype for Business Online con PowerShell](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell?preserve-view=true&view=o365-worldwide).
@@ -93,18 +98,11 @@ L'opzione di registrazione della riunione è un'impostazione a livello di criter
 > [!Note]
 > Se ad alcuni utenti è stato assegnato un criterio per organizzatore o per utente, è necessario impostare questa impostazione su questo criterio se si vuole che archivino anche le registrazioni delle riunioni in OneDrive for Business e SharePoint. Per altre informazioni, vedere [Gestire i criteri di riunione in Teams](meeting-policies-overview.md).
 
-## <a name="opt-out-of-onedrive-for-business-and-sharepoint-to-continue-using-stream"></a>Rifiutare esplicitamente di OneDrive for Business e SharePoint continuare a usare Stream
-
-Anche se un criterio indica che è impostato su **Stream**, potrebbe non essere impostato. In genere, se il criterio non è impostato, l'impostazione predefinita è **Flusso**. Tuttavia, con questa nuova modifica, se si vuole rifiutare esplicitamente di usare SharePoint o OneDrive for Business, è necessario reimpostare i criteri su Stream per assicurarsi che **Stream** sia l'impostazione predefinita.
-
-```PowerShell
-Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
-```
 
 ## <a name="permissions-or-role-based-access"></a>Autorizzazioni o accesso basato sui ruoli
 
 > [!Note]
-> È consigliabile che il destinatario sia un utente connesso durante la condivisione Teams registrazioni riunioni. Selezionare **l'opzione Persone in (organizzazione)** quando si condivide il file come documentato in Condividi SharePoint [file o cartelle](https://support.microsoft.com/office/share-sharepoint-files-or-folders-1fe37332-0f9a-4719-970e-d2578da4941c?redirectSourcePath=%25252fen-US%25252farticle%25252fShare-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232&ui=en-US&rs=en-US&ad=US). La condivisione esterna non è progettata per la distribuzione di file di grandi dimensioni o di un numero elevato di file. Per evitare frodi e abusi, potrebbero verificarsi problemi quando si condivide una grande quantità di dati con utenti esterni.
+> È consigliabile che il destinatario sia un utente connesso durante la condivisione Teams registrazioni riunioni. Selezionare **l'opzione Persone in (organizzazione)** quando si condivide il file come documentato in [Condividi SharePoint file o cartelle](https://support.microsoft.com/office/share-sharepoint-files-or-folders-1fe37332-0f9a-4719-970e-d2578da4941c?redirectSourcePath=%25252fen-US%25252farticle%25252fShare-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232&ui=en-US&rs=en-US&ad=US). La condivisione esterna non è progettata per la distribuzione di file di grandi dimensioni o di un numero elevato di file. Per evitare frodi e abusi, potrebbero verificarsi problemi quando si condivide una grande quantità di dati con utenti esterni.
 
 |Tipo di riunione                               | Chi ha fatto clic su Registra?| Dove viene salvata la registrazione?                               |Chi può accedere? R/W, R o condivisione                                                                                                                                                                                                                                                     |
 |-------------------------------------------|-----------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -117,7 +115,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 |Riunione ad hoc/pianificata                    |Altro membro della riunione   |Membro della riunione che ha fatto clic su Registra                                  |Il membro che ha fatto clic su Registra ha diritti completi sulla registrazione. <br /><br />L'organizzatore ha diritti di modifica e può condividere.<br /><br /> Tutti gli altri membri della riunione hanno accesso in lettura.|
 |Riunione ad hoc/pianificata con utenti esterni|Organizzatore              |Account di OneDrive for Business dell’organizzatore                     |L'organizzatore ha i diritti completi per la registrazione.<br /> <br /> Tutti gli altri membri della riunione dallo stesso tenant dell'organizzatore hanno accesso in lettura. <br /><br /> Tutti gli altri membri esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
 |Riunione ad hoc/pianificata con utenti esterni|Altro membro della riunione   |Membro che ha fatto clic su Registra                                  |Il membro che ha fatto clic su Registra ha diritti completi sulla registrazione. L'organizzatore ha diritti di modifica e può condividere. <br /><br /> Tutti gli altri membri della riunione dallo stesso tenant dell'organizzatore hanno accesso in lettura. <br /><br />Tutti gli altri membri esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
-|Riunione di canale                            |Membro del canale         |Teams SharePoint posizione del canale. **Nota**: il caricamento della registrazione delle riunioni del canale SharePoint non è supportato per le restrizioni basate su IP. È consigliabile usare [l'accesso condizionale di Azure](/azure/active-directory/conditional-access/overview). |Il membro che ha fatto clic su Record ha i diritti di modifica per la registrazione. <br /> <br />Le autorizzazioni di ogni altro membro si basano sulle autorizzazioni SharePoint canale.|
+|Riunione di canale                            |Membro del canale         |Teams SharePoint posizione del canale. **Nota**: il caricamento della registrazione della riunione del canale SharePoint non è supportato per le restrizioni basate su IP. È consigliabile usare [l'accesso condizionale di Azure](/azure/active-directory/conditional-access/overview). |Il membro che ha fatto clic su Record ha i diritti di modifica per la registrazione. <br /> <br />Le autorizzazioni di ogni altro membro si basano sulle autorizzazioni SharePoint canale.|
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -133,11 +131,11 @@ Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 
 **Quando i file di flusso (ad esempio le registrazioni) vengono archiviati in SharePoint/OneDrive, come si decide dove vanno? L'amministratore ha la possibilità di cambiare la posizione in cui si trova?**
 
-Per impostazione predefinita, tutti i file di registrazione verranno OneDrive'account dell'utente che ha selezionato **Registra**. Per le riunioni del canale, la registrazione verrà sempre SharePoint sito del canale. L'amministratore non può modificare la posizione in cui è archiviata la registrazione.
+Per impostazione predefinita, tutti i file di registrazione verranno OneDrive account dell'utente che ha selezionato **Record**. Per le riunioni del canale, la registrazione verrà sempre SharePoint sito del canale. L'amministratore non può modificare la posizione in cui è archiviata la registrazione.
 
 **Come si gestiscono le registrazioni di ex dipendenti?**
 
-Poiché i video sono esattamente come qualsiasi altro file in OneDrive for Business e SharePoint, la gestione della proprietà e della conservazione dopo l'uscita di un dipendente seguirà il normale processo di OneDrive for Business e [SharePoint](/onedrive/retention-and-deletion) lavoro.
+Poiché i video sono come qualsiasi altro file in OneDrive for Business e SharePoint, la gestione della proprietà e della conservazione dopo l'uscita di un dipendente seguirà il normale processo di OneDrive for Business e [SharePoint lavoro](/onedrive/retention-and-deletion).
 
 **Who le autorizzazioni per visualizzare la registrazione della riunione?**
 

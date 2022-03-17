@@ -17,16 +17,16 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Informazioni su come usare le impostazioni dei criteri riunione per controllare la scadenza della riunione Microsoft Teams.
-ms.openlocfilehash: d12c0ca4a0b838f66cfac142102b6e4b8efc3e03
-ms.sourcegitcommit: 159399f2325af644c20551925c1fa34bf76aad43
+ms.openlocfilehash: d4752251f65dac0afb41ba357ad03063b3f6dfb0
+ms.sourcegitcommit: dafe48cea1643e1bd79390482da9b002d7e9e0bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62288334"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63514689"
 ---
 # <a name="meeting-policies-and-meeting-expiration-in-microsoft-teams"></a>Criteri di riunione e scadenza della riunione in Microsoft Teams
 
-[I criteri](meeting-policies-overview.md) riunione in Microsoft Teams consentono di controllare se gli utenti dell'organizzazione possono avviare e pianificare le riunioni e le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. È possibile gestire i criteri delle riunioni nell'interfaccia di amministrazione di Microsoft Teams o usando i cmdlet di PowerShell [Get](/powershell/module/skype/get-csteamsmeetingpolicy), [New](/powershell/module/skype/new-csteamsmeetingpolicy), [Set](/powershell/module/skype/set-csteamsmeetingpolicy), [Remove](/powershell/module/skype/remove-csteamsmeetingpolicy), [Grant](/powershell/module/skype/grant-csteamsmeetingpolicy) -CsTeamsMeetingPolicy.
+[I criteri](meeting-policies-overview.md) riunione in Microsoft Teams vengono usati per controllare se gli utenti dell'organizzazione possono avviare e pianificare le riunioni e le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. È possibile gestire i criteri riunione nell'interfaccia di amministrazione di Microsoft Teams o usando i cmdlet di PowerShell [Get](/powershell/module/skype/get-csteamsmeetingpolicy), [New](/powershell/module/skype/new-csteamsmeetingpolicy), [Set](/powershell/module/skype/set-csteamsmeetingpolicy), [Remove](/powershell/module/skype/remove-csteamsmeetingpolicy), [Grant](/powershell/module/skype/grant-csteamsmeetingpolicy) -CsTeamsMeetingPolicy.
 
 Le impostazioni dei criteri di riunione che controllano se gli utenti possono avviare e pianificare riunioni e controllano anche la scadenza delle riunioni pianificate dagli utenti. Quando un collegamento di partecipazione alla riunione e l'ID conferenza per una riunione scadono, nessuno può partecipare alla riunione. Le impostazioni dei criteri di riunione seguenti determinano se gli utenti possono avviare e pianificare riunioni in Teams. Questo articolo illustra le impostazioni della riunione.
 
@@ -80,23 +80,26 @@ Se si vuole che gli utenti accertano le riunioni pianificate o avviate in preced
 > [!IMPORTANT]
 > Se si vuole abilitare la scadenza Teams riunione nel tenant in anticipo, applicare al programma Microsoft Teams per l'adozione anticipata della [riunione](https://forms.office.com/pages/responsepage.aspx?id=v4j5cvGGr0GRqy180BHbR8YMDA0A9INMv_DZ8yW5uG1URDc3U1VVMklPTzVMS0RLR0pUQTlWU1BEVC4u).
 
-Tutte le registrazioni Teams riunione appena create avranno una scadenza predefinita di 120 giorni. Questa opzione è disponibile per impostazione predefinita per tutti i tenant. Questo significa che, per impostazione predefinita, tutti i TMR creati dopo l'accosto di questa caratteristica verranno eliminati 120 giorni dopo la data di creazione. Gli amministratori possono anche impostare le riunioni in modo che **non scadano mai automaticamente**. Il OneDrive e SharePoint monitorerà la data di scadenza impostata in tutti i TMR e sposterà automaticamente i TMR nel Cestino alla data di scadenza.
+Tutte le registrazioni Teams riunione appena create avranno una scadenza predefinita di 120 giorni. Questa opzione è disponibile per impostazione predefinita per tutti i tenant. Questo significa che, per impostazione predefinita, tutti i TMR creati dopo l'accosto di questa caratteristica verranno eliminati 120 giorni dopo la data di creazione. Gli amministratori possono anche impostare le riunioni in modo che **non scadano mai automaticamente**. Il sistema OneDrive e SharePoint monitorerà la data di scadenza impostata in tutti i TMR e sposterà automaticamente i TMR nel Cestino alla data di scadenza.
+
+> [!NOTE]
+> Una copia della trascrizione della riunione viene salvata in OneDrive SharePoint e una seconda copia viene salvata in Exchange nello spazio di archiviazione temporaneo. La copia OSDP scade alla scadenza automatica di TMR.
 
 La scadenza automatica delle riunioni è un meccanismo di pulizia leggero per ridurre i disordini di archiviazione creati da TMR meno recenti. In media, in tutti i clienti, il 96% dei TMR non viene osservato dopo 60 giorni e il 99% non viene osservato dopo 110 giorni. Riteniamo che quasi tutti i clienti trarranno vantaggio dal carico di archiviazione ridotto nel tenant rimuovendo le registrazioni che probabilmente non verranno più visualizzate dopo 60 giorni. Il nostro obiettivo è offrire un'esperienza il più pulita possibile a tutti i clienti per impostazione predefinita.
 
-Usare la scadenza della riunione per limitare OneDrive o SharePoint per il consumo di spazio di archiviazione nel cloud basato sui record Teams riunione. Una tipica registrazione della riunione consuma circa 400 MB all'ora di registrazione.
+Usare la scadenza della riunione per limitare OneDrive o SharePoint consumo di spazio di archiviazione nel cloud basato sui record Teams riunione. Una tipica registrazione della riunione consuma circa 400 MB all'ora di registrazione.
 
 > [!NOTE]
 > La data di scadenza predefinita massima per gli utenti di A1 è 30 giorni.
 
 ### <a name="expiration-date"></a>Data di scadenza
 
-- La data di scadenza viene calcolata come giorno di creazione più il numero predefinito di giorni impostato nel criterio di Teams **dall'amministratore**.
+- La data di scadenza viene calcolata come il giorno in cui viene creata più il numero predefinito di giorni impostato nel criterio di Teams **dall'amministratore**.
 - La riproduzione non influisce sulla data di scadenza.
 
 ### <a name="change-the-default-expiration-date"></a>Modificare la data di scadenza predefinita
 
-Gli amministratori possono modificare l'impostazione di scadenza predefinita in PowerShell o nell Teams di amministrazione. Tutte le modifiche avranno effetto solo *sui TMR* appena creati da quel punto in poi. Non influisce sulle registrazioni create prima di tale data. Gli amministratori non possono modificare la data di scadenza nei TMR esistenti. Questa operazione viene eseguita per proteggere la decisione dell'utente proprietario del TMR. Sia le riunioni che le chiamate possono essere controllate da questa impostazione.
+Gli amministratori possono modificare l'impostazione di scadenza predefinita in PowerShell o nell'Teams di amministrazione. Tutte le modifiche avranno effetto solo *sui TMR* appena creati da quel punto in poi. Non influisce sulle registrazioni create prima di tale data. Gli amministratori non possono modificare la data di scadenza nei TMR esistenti. Questa operazione viene eseguita per proteggere la decisione dell'utente proprietario del TMR. Sia le riunioni che le chiamate possono essere controllate da questa impostazione.
 
 Il valore della data di scadenza può essere impostato nel modo seguente:
 
@@ -120,14 +123,14 @@ Set-CsTeamsMeetingPolicy -Identity Global -NewMeetingRecordingExpirationDays 50
 
 No, non è consigliabile affidarsi a questa opzione per la protezione legale, perché gli utenti finali possono modificare la data di scadenza di tutte le registrazioni che controllano.
 
-#### <a name="will-a-retention-andor-deletion-policy-ive-set-in-the-security--compliance-center-override-the-teams-meeting-recording-expiration-setting"></a>I criteri di conservazione e/o eliminazione impostati nel Centro sicurezza & conformità sovrascriveranno l'impostazione di scadenza Teams registrazione della riunione?
+#### <a name="will-a-retention-andor-deletion-policy-ive-set-in-the-security--compliance-center-override-the-teams-meeting-recording-expiration-setting"></a>I criteri di conservazione e/o eliminazione impostati nel Centro sicurezza & conformità sovrascriveranno l'impostazione di scadenza della registrazione Teams riunione?
 
 Sì, tutti i criteri impostati nel Centro conformità avranno la precedenza completa.
 
 Ad esempio:
 
 - Se si dispone di un criterio che indica che tutti i file di un sito devono essere conservati per 100 giorni e che l'impostazione di scadenza per la registrazione di una riunione di Teams è di 30 giorni, la registrazione verrà mantenuta per tutti i 100 giorni.
-- Se si dispone di un criterio di eliminazione che indica che tutte le registrazioni delle riunioni Teams verranno eliminate dopo cinque giorni e si ha un'impostazione di scadenza per una registrazione di una riunione di Teams di 30 giorni, la registrazione verrà eliminata dopo cinque giorni.
+- Se si dispone di un criterio di eliminazione che indica che tutte le registrazioni delle riunioni di Teams verranno eliminate dopo cinque giorni e si ha un'impostazione di scadenza per una registrazione di una riunione Teams di 30 giorni, la registrazione verrà eliminata dopo cinque giorni.
 
 ### <a name="will-this-feature-enforce-file-retention"></a>Questa funzionalità implicherà la conservazione dei file?
 
@@ -150,7 +153,20 @@ No, le registrazioni migrate non avranno una scadenza. Al contrario, si consigli
 
 ### <a name="how-is-this-feature-different-from-the-expiration-message-i-see-when-a-tmr-upload-to-onedrive-and-sharepoint-fails"></a>In che modo questa funzionalità è diversa dal messaggio di scadenza visualizzato quando un caricamento TMR in OneDrive e SharePoint non riesce?
 
-Quando una registrazione non viene caricata in OneDrive o SharePoint, l'applicazione Teams visualizza un messaggio nella chat in cui gli utenti hanno fino a 21 giorni per scaricare il TMR prima che venga eliminata definitivamente dal server Teams. Questa esperienza di scadenza esistente a causa di caricamenti TMR non riusciti non è correlata alla funzionalità di OneDrive e SharePoint di scadenza automatica discussa nel documento della Guida.
+Quando una registrazione non viene caricata in OneDrive o SharePoint, l'applicazione Teams visualizza nella chat un messaggio che indica che gli utenti hanno fino a 21 giorni per scaricare il TMR prima di essere eliminati definitivamente dal server Teams. Questa esperienza di scadenza esistente a causa di caricamenti TMR non riusciti non è correlata alla funzionalità di OneDrive e SharePoint di scadenza automatica discussa nel documento della Guida.
+
+### <a name="how-do-i-know-the-distribution-of-tmr-playbacks-so-i-know-what-the-optimal-auto-expiration-default-should-be-for-my-tenant"></a>Come si conosce la distribuzione delle riproduzioni TMR in modo da sapere quale dovrebbe essere la scadenza automatica ottimale predefinita per il tenant?
+
+1. Trovare il video nella raccolta.
+1. Selezionare **...** >  **Dettagli**
+1. Selezionare il numero di visualizzazioni nella parte superiore del riquadro dei dettagli.
+
+Verranno visualizzate le statistiche sui file che mostrano:
+
+- Il numero di visualizzatori univoci
+- Numero di visualizzazioni totali
+- La tendenza degli spettatori e delle visualizzazioni giorno per giorno per gli ultimi 90 giorni
+- Conservazione della visualizzazione (quale parte del video è stata visualizzata o non è stata visualizzata)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
