@@ -4,7 +4,7 @@ ms.author: serdars
 author: SerdarSoysal
 manager: serdars
 audience: ITPro
-ms.topic: hub-page
+ms.topic: landing-page
 ms.service: msteams
 ms.localizationpriority: high
 ms.collection:
@@ -16,12 +16,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: "Riepilogo: informazioni sull'architettura logica dei servizi di produttività in Microsoft 365, con Microsoft Teams. Sono disponibili inoltre informazioni sulle soluzioni voce per Teams."
-ms.openlocfilehash: 1bc157d2b6caad42be1b1cf2e9bfd03fd28d8423
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: ec608f192c08a33b9505008eacb6f6549780e7bd
+ms.sourcegitcommit: abe942c294ed5fca70efdf039d38d611b9c21fe9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58730825"
+ms.lasthandoff: 03/18/2022
+ms.locfileid: "63564748"
 ---
 # <a name="microsoft-teams-it-architecture-and-voice-solutions-posters"></a>Poster di soluzioni voce e architettura IT di Microsoft Teams
 

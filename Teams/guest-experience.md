@@ -19,16 +19,19 @@ appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
 description: Questo articolo descrive la funzionalità Microsoft Teams disponibile per gli utenti guest.
-ms.openlocfilehash: 5d8bb9ab670da0a4002f69cf5ddec9f245cd9c13
-ms.sourcegitcommit: 9ef6e36eeba7db70971f4eb1a45f0ded394b1fe6
+ms.openlocfilehash: c7052eb22a68b146c3ee998b57ba877da82e11b4
+ms.sourcegitcommit: 640f55fe6144ff867b41b57e52f45b8a64cf779e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62190693"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63556632"
 ---
 # <a name="guest-experience-in-teams"></a>Esperienza guest in Teams
 
 Quando un utente guest è invitato a unirsi a un team, riceve un messaggio di posta elettronica di benvenuto. Questo messaggio include alcune informazioni sul team e su cosa aspettarsi ora che si è membri. L'utente guest deve accettare l'invito selezionando **Apri Microsoft Teams** nel messaggio di posta elettronica prima di poter accedere al team e ai relativi canali.
+
+> [!NOTE]
+> Dopo l'aggiunta di un guest a un team, l'accesso potrebbe richiedere alcune ore.
     
 ![Screenshot che mostra un esempio di messaggio di posta elettronica di benvenuto.](media/guest-experience-image1.png)
     

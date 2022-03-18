@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 716a18efda2c2c7f55adf68314dae4b1e07e387b
-ms.sourcegitcommit: 75adb0cc163974772617c5e78a1678d9dbd9d76f
+ms.openlocfilehash: a00561f10e78a18acc146df4ed8a76b103c937c9
+ms.sourcegitcommit: dafe48cea1643e1bd79390482da9b002d7e9e0bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "60537057"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63514567"
 ---
 # <a name="sign-in-to-microsoft-teams"></a>Accedere a Microsoft Teams
 
@@ -92,7 +92,7 @@ Teams per iOS e Teams per Android offrono agli amministratori IT la possibilità
 
 Per gli utenti registrati in Microsoft Intune, è possibile distribuire le impostazioni di configurazione degli account usando Intune nel portale di Azure.
 
-Dopo la configurazione dell'account nel provider MDM e dopo che l'utente ha eseguito la registrazione del dispositivo, Teams per iOS e Teams per Android mostreranno solo gli account autorizzati nella pagina di accesso di Teams. L'utente può toccare uno qualsiasi degli account autorizzati in tale pagina per eseguire l'accesso.
+Una volta configurata l'impostazione dell'account nel provider MDM, e che l'utente ha registrato il dispositivo, nella pagina di accesso di Teams per iOS e Android, verranno visualizzati solo gli account autorizzati nella pagina di accesso di Teams. L'utente può toccare uno qualsiasi degli account autorizzati in questa pagina per accedere.
 
 Impostare i parametri di configurazione seguenti nel portale di Azure Intune per i dispositivi gestiti.
 
@@ -139,7 +139,7 @@ Esempio: SOFTWARE\Policies\Microsoft\Office\16.0\Teams\RestrictTeamsSignInToAcco
 
 ### <a name="global-sign-in"></a>Accesso globale
 
-L'app Teams per Android ora supporta l'accesso globale, in modo da fornire un'esperienza di accesso senza problemi per gli operatori sul campo. I dipendenti possono selezionare un dispositivo dal pool di dispositivi condivisi ed eseguire un singolo accesso per "renderlo loro" per tutta la durata del turno. Al termine del turno, potranno eseguire la disconnessione globale da tutti gli account nel dispositivo. Per maggiori informazioni, consultare la sezione [Disconnettersi da Teams](sign-out-of-teams.md). Questa operazione consente di rimuovere tutte le informazioni personali e aziendali dal dispositivo, in modo che possa essere ripristinato nel pool di dispositivi. Per ottenere questa funzionalità, è necessario che il dispositivo sia in modalità condivisa. Per informazioni su come configurare un dispositivo condiviso, vedere [Come usare la modalità dispositivo condiviso in Android](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode).
+L'app Teams per Android ora supporta l'accesso globale, in modo da fornire un'esperienza di accesso senza problemi per gli operatori sul campo. I dipendenti possono selezionare un dispositivo dal pool di dispositivi condivisi ed eseguire un singolo accesso per "renderlo loro" per tutta la durata del turno. Al termine del turno, potranno eseguire la disconnessione globale da tutti gli account nel dispositivo. Per maggiori informazioni, consultare la sezione [Disconnettersi da Teams](sign-out-of-teams.md). Questa operazione consente di rimuovere tutte le informazioni personali e aziendali dal dispositivo, in modo che possa essere ripristinato nel pool di dispositivi. Per ottenere questa funzionalità, è necessario che il dispositivo sia in modalità condivisa. Accertarsi di terminare qualsiasi riunione o chiamata attiva sul dispositivo prima di disconnettersi. Per informazioni su come configurare un dispositivo condiviso, vedere [Come usare la modalità dispositivo condiviso in Android](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode).
 
 L'esperienza di accesso sarà simile a quella standard di Teams.
 

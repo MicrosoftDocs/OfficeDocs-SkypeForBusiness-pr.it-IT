@@ -12,13 +12,18 @@ description: Informazioni su come disconnettersi da Microsoft Teams.
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: high
 ms.collection:
-  - M365-collaboration
+- M365-collaboration
 f1.keywords:
-  - NOCSH
+- NOCSH
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: b453295c02ef371c06c3adea4c2c8489c0a58468
+ms.sourcegitcommit: dafe48cea1643e1bd79390482da9b002d7e9e0bb
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "63514711"
 ---
-
 # <a name="sign-out-of-microsoft-teams"></a>Disconnettersi da Microsoft Teams
 
 È consigliabile che gli utenti rimangano connessi all'app Microsoft Teams per continuare a ricevere chat, chiamate in arrivo e altre attività. A volte, gli utenti potrebbero voler disconnettersi dall'applicazione Teams per diversi motivi:
@@ -49,7 +54,7 @@ Nei dispositivi mobili, è possibile disconnettersi da Teams passando al menu, s
 
 ### <a name="global-sign-in-and-sign-out-for-frontline-workers"></a>Accesso e disconnessione globali per gli operatori sul campo
 
-L'app Teams per Android ora supporta l'accesso e la disconnessione globali, in modo da fornire un'esperienza di accesso e disconnessione senza problemi per gli operatori sul campo. I dipendenti possono selezionare un dispositivo dal pool di dispositivi condivisi ed eseguire un singolo accesso per "renderlo loro" per tutta la durata del turno. Al termine del turno, potranno eseguire la disconnessione globale da tutti gli account nel dispositivo. Questa operazione consente di rimuovere tutte le informazioni personali e aziendali dal dispositivo, in modo che possa essere ripristinato nel pool di dispositivi. Per ottenere questa funzionalità, è necessario che il dispositivo sia in modalità condivisa. Per informazioni su come configurare un dispositivo condiviso, vedere [Come usare la modalità dispositivo condiviso in Android](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode).
+L'app Teams per Android ora supporta l'accesso e la disconnessione globali, in modo da fornire un'esperienza di accesso e disconnessione senza problemi per gli operatori sul campo. I dipendenti possono selezionare un dispositivo dal pool di dispositivi condivisi ed eseguire un singolo accesso per "renderlo loro" per tutta la durata del turno. Al termine del turno, potranno eseguire la disconnessione globale da tutti gli account nel dispositivo. Questa operazione consente di rimuovere tutte le informazioni personali e aziendali dal dispositivo, in modo che possa essere ripristinato nel pool di dispositivi. Per ottenere questa funzionalità, è necessario che il dispositivo sia in modalità condivisa.  Accertarsi di terminare qualsiasi riunione o chiamata attiva sul dispositivo prima di disconnettersi. Per informazioni su come configurare un dispositivo condiviso, vedere [Come usare la modalità dispositivo condiviso in Android](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode).
 
 ## <a name="manual-cleanup"></a>Pulizia manuale
 

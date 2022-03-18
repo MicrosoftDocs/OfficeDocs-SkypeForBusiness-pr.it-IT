@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come sviluppare ed eseguire operazioni e manutenzione continuativa per assicurarsi che i Microsoft Teams Rooms siano disponibili per gli utenti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 82725093e67b0f7619ea97837b53fd841b965146
-ms.sourcegitcommit: a894e9397050e09bfaab02e700e943a3bbeb1302
+ms.openlocfilehash: 12738e544e8bf0f2e46979df0a1d64ea762bfa1f
+ms.sourcegitcommit: 640f55fe6144ff867b41b57e52f45b8a64cf779e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63504103"
+ms.lasthandoff: 03/17/2022
+ms.locfileid: "63556642"
 ---
 # <a name="manage-microsoft-teams-rooms"></a>Gestire Microsoft Teams Rooms.
 
@@ -117,7 +117,7 @@ La prima riga è l'opzione del layout della visualizzazione riunione Teams Rooms
 
 | Teams dispositivo | Versione dell'app | Davanti al display della sala |
 |--------------|-------------|-----------------------|
-|Microsoft Teams Rooms in Windows | 4.11.12.0 o versione successiva (è consigliata la versione più recente) | Supporta schermi singoli e doppi; Dimensioni minime: 46 pollici; Proporzioni 16:9 con risoluzione 1920*1080 o 21:9 con risoluzione 2560x1080; Tutti gli schermi devono essere impostati in scala 100% nelle Windows di visualizzazione |
+|Microsoft Teams Rooms in Windows | 4.11.12.0 o versione successiva (è consigliata la versione più recente) | Supporta schermi singoli e doppi; Dimensioni minime: 46 pollici; Proporzioni 16:9 con risoluzione 1920x1080 o 21:9 con risoluzione 2560x1080; Tutti gli schermi devono essere impostati in scala 100% nelle Windows di visualizzazione |
 
 Vedere [Microsoft Teams Rooms manutenzione e operazioni](rooms-operations.md#change-scale-and-resolution), per modificare le impostazioni dello schermo in base ai requisiti di Front Row.
 
