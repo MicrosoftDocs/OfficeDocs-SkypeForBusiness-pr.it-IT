@@ -629,8 +629,6 @@ items:
                 href: cloud-recording.md
               - name: Usare OneDrive for Business e SharePoint o Stream per registrare le riunioni
                 href: tmr-meeting-recording-change.md
-              - name: Integrazioni del Centro contatti
-                href: teams-contact-center.md
               - name: Usare il componente aggiuntivo Riunione di Teams in Outlook
                 href: teams-add-in-for-outlook.md
               - name: Configurare l'app Riunioni Skype per Teams
@@ -1287,6 +1285,8 @@ items:
                 href: add-funds-and-manage-communications-credits.md
           - name: Flussi di chiamata in Microsoft Teams
             href: microsoft-teams-online-call-flows.md
+          - name: Integrazioni del Centro contatti
+            href: teams-contact-center.md
   - name: Gestione di dispositivi e sale
     items:
       - name: Microsoft Teams Rooms
@@ -1539,7 +1539,7 @@ items:
             href: non-standard-users.md
           - name: Aggiornare l'esperienza per le app
             href: apps-update-experience.md
-          - name: Gestire gli accessi alle app di Teams di terze parti in Microsoft 365
+          - name: Gestire gli accessi alle app di Teams in Microsoft 365
             href: manage-third-party-teams-apps.md
   - name: Istruzioni per industrie ed enti pubblici
     items:
