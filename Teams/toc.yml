@@ -973,6 +973,8 @@ items:
             href: cloud-voice-network-settings.md
           - name: Gestire la topologia di rete per le funzionalità vocali del cloud
             href: manage-your-network-topology.md
+          - name: Gestire le impostazioni video e multimediali
+            href: network-roaming-policy.md
       - name: Chiamate di emergenza
         items:
           - name: Panoramica
@@ -1364,7 +1366,7 @@ items:
               - name: Manutenzione e operazioni
                 href: rooms/rooms-operations.md
               - name: Problemi noti
-                href: rooms/known-issues.md
+                href: /microsoftteams/troubleshoot/teams-devices-and-rooms/rooms-known-issues
               - name: Dispositivi con Monitoraggio di Azure
                 href: rooms/azure-monitor-manage.md
               - name: Impostazioni con un file XML

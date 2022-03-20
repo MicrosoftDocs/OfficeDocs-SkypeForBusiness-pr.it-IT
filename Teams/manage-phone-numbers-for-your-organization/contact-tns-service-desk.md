@@ -23,12 +23,12 @@ ms.custom:
 - Calling Plans
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quando si ottengono numeri di telefono o numeri di porta (trasferimento) per l'organizzazione, potrebbe essere necessario ottenere assistenza e supporto presso il service desk TNS.
-ms.openlocfilehash: c32a6ed98cc54d04783025eacd03cb178e7f9120
-ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
+ms.openlocfilehash: b7ac8edd3c3c740f3b87feedc44535a193280a77
+ms.sourcegitcommit: 4af3638637456f21bc97f510ed9d2f7ff2da07e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60733870"
+ms.lasthandoff: 03/19/2022
+ms.locfileid: "63660691"
 ---
 # <a name="telephone-number-services-tns---service-desk"></a>Telephone Number Services (TNS) - Service Desk 
 
@@ -39,11 +39,13 @@ Esiste un nuovo processo per interagire con il service desk TNS (Telephone Numbe
 
 Per contattare il supporto tecnico:
 
-1. Accedere all'interfaccia di amministrazione di Teams - admin.teams.microsoft.com.
+1. Accedere all'interfaccia [Teams di amministrazione](https://admin.teams.microsoft.com).
 
-2. Nel riquadro sinistro selezionare **Numeri di telefono**.
+2. Nel riquadro sinistro selezionare **Voce e quindi** Telefono **numeri**.
 
-3. Nella parte superiore della pagina selezionare **Ottenere il supporto per il numero di telefono**. Verrà visualizzato il Centro assistenza numeri di telefono.  
+3. Selezionare **Aggiungi** o **Porta**.
+
+4. Nella parte superiore della pagina selezionare **Ottenere il supporto per il numero di telefono**. Verrà visualizzato il Centro assistenza numeri di telefono.  
 
 > [!NOTE]
 > Solo un utente dello stesso tenant potrà creare un caso. Ovvero, un utente di @fabrikam.com non può creare un caso per conto di @contoso.com. 
@@ -192,7 +194,7 @@ Caricare eventuali documenti aggiuntivi per il caso.
 
 - **Filtrare i casi** selezionando **Casi aperti**,  **Tutti i casi** o **Casi chiusi**.
 
-- **Comunicare con il service desk TNS** per quanto riguarda il caso aprendo un caso esistente, scorrendo verso il basso e selezionando **Aggiungi commento.** Verrà visualizzata una nuova finestra. Immettere il messaggio nella casella del commento. Allegare tutti i documenti di supporto (se disponibili) che potrebbero essere utili per la richiesta e selezionare **Invia**.  
+- **Comunicare con il service desk TNS** per quanto riguarda il caso aprendo un caso esistente, scorrendo verso il basso e selezionando **Aggiungi commento**. Verrà visualizzata una nuova finestra. Immettere il messaggio nella casella del commento. Allegare tutti i documenti di supporto (se disponibili) che potrebbero essere utili per la richiesta e selezionare **Invia**.  
 
   Le risposte del **service desk TNS** verranno visualizzate sotto la stessa sequenza temporale. Quando viene eseguito un aggiornamento del caso, si riceverà una notifica automatica tramite posta elettronica dell'aggiornamento. 
 

@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 1f91af4b299223a2ac0e815f5f84b70cbc04b953
-ms.sourcegitcommit: a894e9397050e09bfaab02e700e943a3bbeb1302
+ms.openlocfilehash: f8d2d1bcd427908c7f21a0eba20096fb12ab4e0c
+ms.sourcegitcommit: 4af3638637456f21bc97f510ed9d2f7ff2da07e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63503563"
+ms.lasthandoff: 03/19/2022
+ms.locfileid: "63660611"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>Microsoft Teams dispositivi Android certificati
 
@@ -71,6 +71,9 @@ I dispositivi seguenti sono certificati nell'Microsoft Teams Rooms di certificaz
 
 | Modello di dispositivo | Versione firmware | Data di fine certificazione corrente | Dimensioni della sala                                        |  Versione del sistema operativo Android    |
 |:------------------------|:-----------------|:--------------|:----------------------------------------------------------|-----------------------------------|
+| Barra ordinata | `NFB1.20220211.1158`     |   17 marzo 2024 |    Piccole Sala riunioni (4,5 m x 4,5 m) | 10 |
+| Tastiera ordinata | `NFA1.20220211.1158 `    | 17 marzo 2024  |    Piccole Sala riunioni (4,5 m x 4,5 m) | 9 |
+| Scheda ordinata | `NFC1.20220211.1158 `  |  17 marzo 2024 |    Piccole Sala riunioni (4,5 m x 4,5 m) | 10 |
 | Compagno di stanza logitech | `1.4.71` | 3 settembre 2024  | Sala riunioni di grandi dimensioni (4,5 m x 8,5 m)  |   10  |
 | EPOS EXPAND 80T | `1.2.2.21182.10` | 5 agosto 2023 | In bundle con EPOS Vision 3T | 9 |
 | Dispositivo di tocco Logitech     | `1.2.982`  |   3 settembre 2024  | Compatibile con Logitech Rally Bar e Rally Bar Mini | 10 |

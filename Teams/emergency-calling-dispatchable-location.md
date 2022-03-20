@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Scopri come Microsoft supporta le informazioni sulla posizione inviabili per supportare le chiamate di emergenza.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7d241cee858d3ac19747be56b5a53e157b563f64
-ms.sourcegitcommit: 05e7c8ac9d6d6f712742d08820d43118c8949bbc
+ms.openlocfilehash: d80854fc36e6914ba48e8993d298c75b136bd06f
+ms.sourcegitcommit: 4af3638637456f21bc97f510ed9d2f7ff2da07e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61323001"
+ms.lasthandoff: 03/19/2022
+ms.locfileid: "63660711"
 ---
 # <a name="emergency-addresses-for-remote-locations"></a>Indirizzi di emergenza per località remote
 
@@ -91,11 +91,11 @@ New-CsTeamsEmergencyCallingPolicy -Identity E911WFH -ExternalLocationLookupMode 
 Grant-CsTeamsEmergencyCallingPolicy -PolicyName E911WFH -Identity user@contoso.com
 ```
 
-Dopo aver abilitato questa funzionalità per gli utenti finali, nella scheda Chiamate l'utente può aggiungere, modificare o confermare un indirizzo di emergenza e visualizzare l'indirizzo dopo l'impostazione. 
+Dopo aver abilitato questa funzionalità per gli utenti finali, nella scheda Chiamate l'utente può aggiungere, modificare o confermare un indirizzo di emergenza e visualizzare l'indirizzo dopo l'impostazione. Per altre informazioni su come gli utenti finali possono impostare i servizi di posizione, vedere Lavorare da [Home Emergency 911: abilitare i servizi di posizione](https://support.microsoft.com/office/work-from-home-emergency-911-enable-location-services-583dd649-87fc-4b23-aed6-f4e2279297f9?storagetype=live).
 
-In Windows, è possibile gestire il servizio di posizione di Windows e se le applicazioni hanno accesso alla posizione, usando Criteri di gruppo o gestione di dispositivi mobili [(MDM).](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesslocation)
+In Windows, è possibile gestire il servizio di posizione Windows e se le applicazioni hanno accesso alla posizione, usando Criteri di gruppo o gestione di dispositivi mobili [(MDM).](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesslocation)
 
-Per altre informazioni sul servizio Windows posizione, vedere Windows [e privacy.](https://support.microsoft.com/windows/windows-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088)
+Per altre informazioni sul servizio Windows posizione, vedere Windows servizio di [posizione e privacy](https://support.microsoft.com/windows/windows-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088).
 
 
 
@@ -114,5 +114,7 @@ Tenere presente quanto segue:
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md)
+- [Gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md)
+
+- [Lavorare da Home Emergency 911: abilitare i servizi di posizione](https://support.microsoft.com/office/work-from-home-emergency-911-enable-location-services-583dd649-87fc-4b23-aed6-f4e2279297f9?storagetype=live)
 
