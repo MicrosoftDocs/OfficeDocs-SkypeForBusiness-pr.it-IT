@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 539597393f34f2f02734c57df57097281a4d7839
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 2c69737e6677a48d4fa7788e50fd97a876a67040
+ms.sourcegitcommit: 4af3638637456f21bc97f510ed9d2f7ff2da07e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60012820"
+ms.lasthandoff: 03/19/2022
+ms.locfileid: "63660601"
 ---
 # <a name="plan-for-lifecycle-management-in-teams"></a>Pianificare la gestione del ciclo di vita in Teams
 
@@ -153,7 +153,7 @@ Poiché i team sono organismi viventi, a volte devono essere controllati e accud
 
 Quando il lavoro di un team è concluso, è importante riconoscerlo formalmente. Questo dà ai membri del team un senso di completamento ed evita che qualcuno acceda a informazioni obsolete. È possibile usare il team stesso per eseguire le attività rituali di chiusura, come la stesura di relazioni finali e riepiloghi esecutivi.
 
-È possibile eliminare i team di cui si è certi di non avere più bisogno, ad esempio un team creato esclusivamente a scopo di test o un team che contiene dati sensibili. I team vengono effettivamente eliminati con un'"eliminazione temporanea" che l'IT può invertire per un massimo di 30 giorni. L'eliminazione dei team non influisce sulle chat o sui contenuti conservati in ottemperanza ai criteri di conformità. Anche per i canali esiste l'eliminazione temporanea e possono essere ripristinati entro un massimo di 21 giorni. Se si elimina un canale, la cartella o il relativo contenuto non verrà eliminato dalla raccolta documenti di SharePoint.
+È possibile eliminare i team di cui si è certi di non avere più bisogno, ad esempio un team creato esclusivamente a scopo di test o un team che contiene dati sensibili. I team vengono effettivamente eliminati con un'"eliminazione temporanea" che l'IT può invertire per un massimo di 30 giorni. L'eliminazione dei team non influisce sulle chat o sui contenuti conservati in ottemperanza ai criteri di conformità. Anche per i canali esiste l'eliminazione temporanea e possono essere ripristinati entro un massimo di 30 giorni. Se si elimina un canale, la cartella o il relativo contenuto non verrà eliminato dalla raccolta documenti di SharePoint.
 
 È anche possibile usare i criteri di scadenza e conservazione oltre alle funzionalità di archiviazione per ridurre l'esposizione associata ai team non più attivi o i cui proprietari hanno lasciato l'organizzazione.
 
