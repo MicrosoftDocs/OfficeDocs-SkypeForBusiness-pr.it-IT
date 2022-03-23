@@ -18,12 +18,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c18871756c8081b7013666d98d1599cfec4117f
-ms.sourcegitcommit: b635f3765498ae23f535a33fa9ffea5068eecb14
+ms.openlocfilehash: f70378e2be1dd47126ee3d83009759c63643ae2f
+ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2022
-ms.locfileid: "63463739"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63711760"
 ---
 # <a name="skype-for-business-online-retirement"></a>Ritiro di Skype for Business Online
 
@@ -31,9 +31,7 @@ Il 31 luglio 2021 Microsoft ha ritirato Skype for Business Online. Questo ritiro
 
 ## <a name="why-is-skype-for-business-online-retiring"></a>Perché Skype for Business online si ritira?
 
-Dalla sua introduzione, Skype for Business Online è stato uno strumento prezioso per milioni di persone in tutto il mondo. Combinando messaggistica istantanea, chiamate e video, Skype for Business Online ha stabilito nuove possibilità per le comunicazioni aziendali. Teams è il prossimo capitolo di questa visione. 
-
-Le funzionalità di Microsoft Teams vanno oltre quelle di Skype for Business Online. L'innovazione e lo sviluppo della piattaforma Teams gli utenti beneficiano di prestazioni, funzionalità, flessibilità e sicurezza più avanzate. Combinando le funzionalità seguenti in un'unica esperienza, Teams nuovi modi di lavorare:
+Dalla sua introduzione, Skype for Business Online è stato uno strumento prezioso per milioni di persone in tutto il mondo. Combinando messaggistica istantanea, chiamate e video, Skype for Business Online ha stabilito nuove possibilità per le comunicazioni aziendali. Teams è il prossimo capitolo di questa visione.  Le funzionalità di Microsoft Teams vanno oltre quelle di Skype for Business Online. L'innovazione e lo sviluppo della piattaforma Teams gli utenti beneficiano di prestazioni, funzionalità, flessibilità e sicurezza più avanzate. Combinando le funzionalità seguenti in un'unica esperienza, Teams nuovi modi di lavorare:
 
 - Chat
 - Video
@@ -43,15 +41,13 @@ Le funzionalità di Microsoft Teams vanno oltre quelle di Skype for Business Onl
 
 Teams è più di un aggiornamento per Skype for Business Online. Si tratta di un potente strumento che consente a scuole e organizzazioni di diventare più agile e di migliorare l'efficienza dei flussi di lavoro chiave. Per altre informazioni sui vantaggi di Teams, vedere il white paper forrester [The Total Economic Impact™ of Microsoft Teams](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf?rtc=1).
 
-Per altre informazioni sul ritiro Skype for Business online, vedere Domande frequenti sull'aggiornamento da Skype for Business [a Microsoft Teams](FAQ-journey.yml).
-
 ## <a name="organizations-with-skype-for-business-online"></a>Organizzazioni con Skype for Business Online
 
 Microsoft fornisce un processo di aggiornamento assistito per aiutare le organizzazioni a spostare gli utenti rimanenti Skype for Business Online Teams solo. Teams è disponibile nella maggior parte dei piani Microsoft 365 Business e Enterprise e gli investimenti in licenze esistenti vengono Teams. Le capacità che oggi sono carichi di lavoro Premium in Skype for Business Online continueranno a essere carichi di lavoro Premium in Teams. Ad esempio, se sono state acquistate audioconferenze autonome o come parte di E5 con Skype for Business, le audioconferenze verranno abilitate in Teams.
 
 ## <a name="organizations-with-on-premises-deployments-of-skype-for-business-server"></a>Organizzazioni con distribuzioni locali di Skype for Business Server
 
-Il ritiro di Skype for Business Online non influisce sul supporto per le distribuzioni locali di Skype for Business Server e Lync Server 2013. Tuttavia, i clienti ibridi con una combinazione di utenti ospitati online e locali devono aggiornare qualsiasi *utente online* . A questi utenti online deve essere assegnata Teams modalità Solo con TeamsUpgradePolicy. Microsoft fornisce aggiornamenti assistiti per automatizzare l'aggiornamento degli utenti rimanenti Skype for Business online alla Teams solo utenti. Le organizzazioni ibride non devono spostare *gli utenti locali* Skype for Business utenti nel cloud come risultato di questa ritirata. Microsoft supporta completamente le organizzazioni ibride con una combinazione di Teams solo gli utenti e gli utenti locali Skype for Business locali. I clienti con distribuzioni ibride di Skype for Business Server o Lync Server 2013 devono esaminare le implicazioni del prossimo ritiro di [Skype for Business Online](/skypeforbusiness/hybrid/plan-hybrid-connectivity#implications-of-the-upcoming-retirement-of-skype-for-business-online).
+Il ritiro di Skype for Business Online non influisce sul supporto per le distribuzioni locali di Skype for Business Server e Lync Server 2013. Tuttavia, i clienti ibridi con una combinazione di utenti ospitati online e locali devono aggiornare qualsiasi *utente online* . A questi utenti online deve essere assegnata Teams modalità Solo con TeamsUpgradePolicy. Microsoft fornisce aggiornamenti assistiti per automatizzare l'aggiornamento degli utenti rimanenti Skype for Business online alla Teams solo utenti. Le organizzazioni ibride non devono spostare *gli utenti locali* Skype for Business utenti nel cloud come risultato di questa ritirata. Microsoft supporta completamente le organizzazioni ibride con una combinazione di Teams solo gli utenti e gli utenti locali Skype for Business locali. I clienti con distribuzioni ibride di Skype for Business Server o Lync Server 2013 devono esaminare le implicazioni del ritiro Skype for Business [Online](/skypeforbusiness/hybrid/plan-hybrid-connectivity#implications-of-the-upcoming-retirement-of-skype-for-business-online).
 
 ## <a name="what-to-expect-post-retirement"></a>Cosa aspettarsi dopo il ritiro
 
@@ -87,7 +83,8 @@ Sfruttare le risorse disponibili per pianificare la distribuzione Teams e l'aggi
 
 - [Microsoft Teams blog](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/bg-p/MicrosoftTeamsBlog): Teams nuove funzionalità, risorse di adozione e utilizzo, Teams dispositivi mobili e integrazione con altre applicazioni aziendali.
 
-Se si è un cliente Skype for Business Online, iniziare a pianificare l'aggiornamento a Teams oggi. Siamo entusiasti che l'utente sperimenti le sue potenti funzionalità di comunicazione e collaborazione e ci impegniamo a collaborare lungo il percorso.
+Se si è un cliente Skype for Business Online, iniziare a pianificare l'aggiornamento a Teams oggi. Siamo entusiasti che l'utente sperimenti le sue potenti funzionalità di comunicazione e collaborazione e ci impegniamo a collaborare lungo il percorso.  Per altre informazioni sul ritiro Skype for Business online, vedere Domande frequenti sull'aggiornamento da Skype for Business [a Microsoft Teams](FAQ-journey.yml).
+
 
 
 

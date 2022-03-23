@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Creare e curare standard basati su consigli intelligenti dell'ambiente.
 f1keywords: ''
-ms.openlocfilehash: 2eb0681999664cd3fd29876fbfa3550eee9fb507
-ms.sourcegitcommit: e97c981489ff1f02674df57426da3b22cc6d68c1
+ms.openlocfilehash: 978975bdd4ed02f248cf0a36d88109d2e281b8d4
+ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "63062837"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63711535"
 ---
 # <a name="standards-and-room-planner"></a>Standard e pianificazione delle chat room
 
@@ -45,15 +45,15 @@ Usare il **flusso di lavoro Crea standard** per creare uno standard.
 
 1. Selezionare **Crea uno standard MTR**, quindi specificare dettagli generali come il nome e la descrizione per lo standard.
 
-   ![Screenshot di Selezione standard Sala riunioni](../media/standards-and-room-planner-002.png)
+   ![Screenshot del tipo di Sala riunioni standard](../media/standards-and-room-planner-002.png)
 
 1. Selezionare il tipo di sala riunioni per questo standard.
 
    ![Screenshot dei dispositivi consigliati di Selezione standard](../media/standards-and-room-planner-003.png)
 
-1. Selezionare il dispositivo della sala riunioni scelto tra i dispositivi certificati Teams consigliati nell'inventario dell'hardware.
+1. Selezionare uno dei modelli di Teams di chat room certificati nell'inventario dell'hardware. L'elenco varia a seconda del tipo di chat room selezionato nel passaggio precedente.
 
-   ![Screenshot dei dettagli generali degli standard](../media/standards-and-room-planner-004.png)
+   ![Screenshot di Select the Standard MTRs](../media/standards-and-room-planner-004.png)
 
 
 1. Esaminare le informazioni sullo standard MTR.
@@ -64,14 +64,13 @@ Usare il **flusso di lavoro Crea standard** per creare uno standard.
 
    ![Screenshot delle posizioni in cui pubblicare gli standard.](../media/standards-and-room-planner-006.png)
 
-Dopo aver completato il flusso di lavoro, lo standard viene creato correttamente e pubblicato nel sito, nell'area geografica, nell'edificio o nella sala riunioni. Ora questi standard devono essere usati a scopo di pianificazione.
+Dopo la pubblicazione, gli standard vengono usati a scopo di pianificazione.
 
 ![Screenshot dello standard pubblicato correttamente'](../media/standards-and-room-planner-008.png)
 ### <a name="discovered-devices"></a>Dispositivi individuati
 
 In Standard selezionare **Dispositivi individuati** per visualizzare tutti i dispositivi individuati non standard all'interno dell'organizzazione.
 
-![Screenshot dei dispositivi individuati di una chat room](../media/standards-and-room-planner-008.png)
 
 È possibile intervenire per esaminare e creare standard da questi dispositivi individuati nell'inventario.
 

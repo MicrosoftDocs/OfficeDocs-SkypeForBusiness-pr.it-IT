@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1fbcadfefffe40bbd7c2919f269185b8116b7237
-ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
+ms.openlocfilehash: c1ade306ab1a9dc3c3f716b36d931bcf7a6d0b41
+ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61205276"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63711500"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -50,7 +50,7 @@ La tabella seguente costituisce un riferimento utile e rapido sulla disponibilit
 | **Exchange Online**                                                | Sì <sup>1</sup>   | Sì <sup>1</sup>   | Sì              | Sì                   | Sì                               | Sì<sup>7</sup>             | Sì          | Sì             | Sì <sup>6</sup>        | Sì              | Sì                          | Sì                    | Sì                    |
 | **Exchange Online Dedicated vNext**                                | Sì <sup>1</sup>   | Sì <sup>1</sup>   | Sì              | Sì                   | Sì                               | Sì<sup>7</sup>             | Sì          | Sì             | Sì <sup>6</sup>        | Sì              | Sì                          | Sì                    | Sì                    |
 | **Exchange Online Dedicated – legacy** (sincronizzazione con Azure AD obbligatoria) | Sì <sup>1</sup>   | Sì <sup>1,2</sup> | Sì <sup>3</sup> | Sì                   | No                                | No                          | Sì          | Sì             | No                      | Sì <sup>4</sup> | Sì <sup>5</sup>             | Sì                    | Sì                    |
-| **Exchange locale** (sincronizzazione con Azure AD)                        | Sì <sup>1,9</sup> | Sì <sup>1</sup>   | Sì <sup>3</sup> | Sì                   | Sì <sup>8</sup>                  | Sì<sup>10</sup>            | Sì          | Sì             | No                      | Sì <sup>4</sup> | Sì <sup>5</sup>             | Sì                    | Sì                    |
+| **Exchange locale** (sincronizzazione con Azure AD)                        | Sì <sup>1,9</sup> | Sì <sup>1</sup>   | Sì <sup>3</sup> | Sì                   | Sì <sup>8</sup>                  | <sup>Sì10</sup>            | Sì          | Sì             | No                      | Sì <sup>4</sup> | Sì <sup>5</sup>             | Sì                    | Sì                    |
 
 <sup>1</sup> eDiscovery e Blocco a fini giudiziari per la conformità nei messaggi di canale sono supportati per tutte le opzioni di hosting.
 
@@ -68,10 +68,11 @@ La tabella seguente costituisce un riferimento utile e rapido sulla disponibilit
 
 <sup>8</sup> È necessario soddisfare i requisiti elencati nella sezione [Requisiti per creare e visualizzare riunioni per le cassette postali ospitate in locale](#requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises).
 
-<sup>9</sup> È necessario almeno una licenza Exchange Online piano 1. Per altre informazioni, vedere [Cercare Teams dati della chat per gli utenti locali.](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users)
+<sup>9</sup> È necessario almeno una licenza Exchange Online piano 1. Per altre informazioni, vedere [Cercare Teams di chat per gli utenti locali](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users).
 
-<sup>10</sup> Gli utenti locali possono usare Teams per aggiornare l'immagine del profilo anche se il Outlook sul criterio cassetta postale `SetPhotoEnabled` Web è impostato su `false` .
-
+<sup>10</sup> Gli utenti `SetPhotoEnabled` locali possono usare Teams per aggiornare l'immagine del profilo anche se il Outlook sul criterio cassetta postale Web è impostato su `false`.
+ > [!NOTE]
+ > L'impostazione di Out of Office (OOF) tramite il client Teams non è attualmente supportata per gli utenti le cui cassette postali sono ospitate in locale. Questi utenti devono eseguire questa azione tramite il client Outlook.
 ## <a name="requirements-to-get-the-most-out-of-microsoft-teams"></a>Requisiti per sfruttare al meglio Microsoft Teams
 
 Microsoft Teams è compatibile con diversi servizi Microsoft 365 e Office 365 per offrire agli utenti un’esperienza completa. Per supportare l’esperienza, è necessario abilitare determinate funzionalità o servizi e assegnare le licenze.
@@ -104,13 +105,13 @@ Se le cassette postali sono ospitate in locale, per creare e visualizzare riunio
   > [!NOTE]
   > Exchange ritiene attendibile il token OAuth del servizio di Teams, denominato EvoSTS. Il passaggio 1 dovrebbe essere sufficiente, ma solo per EvoSTS. Per la ricerca della disponibilità nel calendario viene usato il servizio di controllo di accesso.
 
-- La casella di controllo relativa alla funzionalità di distribuzione ibrida di Exchange in Azure AD Connect è selezionata. Per altre informazioni, vedere Exchange [writeback ibrido.](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized#exchange-hybrid-writeback)
+- La casella di controllo relativa alla funzionalità di distribuzione ibrida di Exchange in Azure AD Connect è selezionata. Per altre informazioni, vedere Exchange [writeback ibrido](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized#exchange-hybrid-writeback).
 
 - Per il supporto dell’app calendario e il componente aggiuntivo per Outlook di Teams per Mac, gli URL dei servizi Web di Exchange devono essere configurati come nomi SPN nel tenant Azure AD per l’entità servizio di Exchange. Questo passaggio viene eseguito con la procedura guidata di configurazione ibrida o seguendo i [passaggi manuali per l’autenticazione moderna ibrida](/microsoft-365/enterprise/configure-exchange-server-for-hybrid-modern-authentication#add-on-premises-web-service-urls-as-spns-in-azure-ad).
 
 Per abilitare la delega del calendario per questi utenti:
 
-- È anche necessario completare i passaggi come descritto in Configurare l'integrazione e OAuth tra Skype for Business Online e [Exchange Server;](/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises)questi passaggi forniranno all'applicazione di pianificazione di Teams le autorizzazioni necessarie per confermare le autorizzazioni dei delegati.
+- È anche necessario completare i passaggi come descritto in Configurare l'integrazione e [OAuth tra Skype for Business Online e Exchange Server](/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises). Questi passaggi forniranno all'applicazione di pianificazione di Teams le autorizzazioni necessarie per confermare le autorizzazioni dei delegati.
  
   > [!NOTE]
   > Il passaggio 2 include l'assegnazione del ruolo ArchiveApplication, che non è obbligatorio per la delega.
@@ -125,7 +126,7 @@ Di seguito sono riportate alcune considerazioni aggiuntive su come implementare 
 
 - Controllare e proteggere la configurazione dei criteri di conformità in Teams ed Exchange con l’accesso condizionale. Per ulteriori informazioni, vedere [Come funzionano i criteri di accesso condizionale per Teams?](security-compliance-overview.md#how-conditional-access-policies-work-for-teams)
 
-- Se l’organizzazione possiede dei requisiti di conformità per garantire che tutte le discussioni delle riunioni siano individuabili, è consigliabile disabilitare le riunioni private se l’organizzatore dispone di una cassetta postale di Exchange locale. Per altre informazioni, vedere [Pianificazione privata delle riunioni.](./meeting-policies-in-teams-general.md#private-meeting-scheduling)
+- Se l’organizzazione possiede dei requisiti di conformità per garantire che tutte le discussioni delle riunioni siano individuabili, è consigliabile disabilitare le riunioni private se l’organizzatore dispone di una cassetta postale di Exchange locale. Per altre informazioni, vedere [Pianificazione privata delle riunioni](./meeting-policies-in-teams-general.md#private-meeting-scheduling).
 
 - In una distribuzione ibrida di Exchange, il contenuto dei messaggi di chat è disponibile per la ricerca, indipendentemente dal fatto che i partecipanti alla chat abbiano una cassetta postale basata sul cloud o una cassetta postale locale. Per ulteriori informazioni, consultare [Ricerca in cassette postali basate sul cloud per gli utenti locali](/office365/securitycompliance/search-cloud-based-mailboxes-for-on-premises-users). Per informazioni sulla ricerca di contenuto in Teams, consultare [Ricerca contenuto nel Centro conformità di Microsoft 365](/Office365/SecurityCompliance/content-search#searching-microsoft-teams-and-office-365-groups).
 

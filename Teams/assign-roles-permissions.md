@@ -16,16 +16,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 666a623f955cd10fd4ad3e0983ccff83c9725a6b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: a9ca46e3fa967019e674651ea27299b6552144a7
+ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58586732"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63711960"
 ---
 # <a name="assign-team-owners-and-members-in-microsoft-teams"></a>Assegnare proprietari e membri dei team in Microsoft Teams
 
-All'interno di Microsoft Teams sono disponibili due ruoli utente: **proprietario** e **membro**. Per impostazione predefinita, a un utente che crea un nuovo team viene concesso lo stato di proprietario. Inoltre, i proprietari e i membri del team possono assumere funzioni di moderatore per un canale, purché la funzionalità di moderazione sia stata configurata. Se si crea un team da un gruppo esistente di Microsoft 365, le autorizzazioni vengono ereditate da quel gruppo.
+All'interno di Microsoft Teams sono disponibili due ruoli utente: **proprietario** e **membro**. Per impostazione predefinita, a un utente che crea un nuovo team viene concesso lo stato di proprietario. Inoltre, i proprietari e i membri del team possono assumere funzioni di moderatore per un canale, purché la funzionalità di moderazione sia stata configurata. Se un team viene creato da un gruppo di Microsoft 365 esistente, le autorizzazioni vengono ereditate.
 
 La tabella seguente mostra le differenze tra l'autorizzazione di un proprietario e quella di un membro
 
@@ -42,6 +42,9 @@ La tabella seguente mostra le differenze tra l'autorizzazione di un proprietario
 |          ***Aggiunge un canale privato**          |    Sì     |    Sì<sup>2</sup>|
 | ***Modifica il nome e la descrizione del canale privato** |    No     |    N/D|
 |        ***Elimina canale privato**         |    Sì     |    No|
+|          **Aggiungere un canale condiviso**          |    Sì     |    No|
+| **Modificare il nome/la descrizione del canale condiviso** |    No     |    <sup>No6</sup>|
+|        **Eliminare un canale condiviso**         |    Sì     |    <sup>No6</sup>|
 |          **Aggiunge membri**          |  Sì<sup>3</sup>   |     No<sup>4</sup>    |
 |          **Richiedere l'aggiunta di membri**          |  N/D   |     Sì<sup>5</sup>     |
 |           **Aggiunge app**            |    Sì     |    Sì<sup>2</sup>|
@@ -50,7 +53,8 @@ La tabella seguente mostra le differenze tra l'autorizzazione di un proprietario
 <sup>2</sup> Un proprietario può disattivare questi elementi a livello di team, nel qual caso i membri non avessero accesso ad essi.<br>
 <sup>3</sup> Dopo aver aggiunto un membro a un team, un proprietario può anche alzare di livello un membro e passarlo a proprietario. È anche possibile che il proprietario abbassi il proprio stato a membro.<br>
 <sup>4</sup> I membri del team possono aggiungere altri membri a un team pubblico.<br>
-<sup>5</sup> Sebbene un membro del team non possa aggiungere direttamente membri a un team privato, può richiedere che qualcuno venga aggiunto a un team di cui è già membro. Quando un membro richiede che qualcuno venga aggiunto a un team, i proprietari del team ricevono un avviso che indica che hanno una richiesta in sospeso che possono accettare o rifiutare.
+<sup>5</sup> Sebbene un membro del team non possa aggiungere direttamente membri a un team privato, può richiedere che qualcuno venga aggiunto a un team di cui è già membro. Quando un membro richiede che qualcuno venga aggiunto a un team, i proprietari del team ricevono un avviso che indica che hanno una richiesta in sospeso che possono accettare o rifiutare.<br>
+<sup>6</sup> Se il membro del team è proprietario di un canale condiviso, può eseguire questa azione.
 
 * Per altre informazioni sulle autorizzazioni per i canali privati, vedere [Canali privati in Teams](private-channels.md).
 
@@ -67,7 +71,7 @@ Per altre informazioni sulle le funzioni di moderatore, vedere [Configurare e ge
 
 ## <a name="assign-a-user-role"></a>Assegnare un ruolo utente
 
-Per assegnare un ruolo utente, in Teams selezionare il nome del team e quindi fare clic su **Altre opzioni** > **Gestisci team**. Nella scheda **Membri** è possibile aggiungere membri e scegliere proprietari e moderatori se si hanno autorizzazioni sufficienti. Per altre informazioni, vedere [Modificare le impostazioni del team in Microsoft Teams](https://support.office.com/article/ce053b04-1b8e-4796-baa8-90dc427b3acc).
+Per assegnare un ruolo utente, in Teams selezionare il nome del team e quindi fare clic su **Altre opzioni** > **Gestisci team**. Nella scheda **Membri** è possibile aggiungere membri e scegliere proprietari e moderatori se si hanno autorizzazioni sufficienti. Per altre informazioni, vedere [Modificare le impostazioni del team in Teams](https://support.office.com/article/ce053b04-1b8e-4796-baa8-90dc427b3acc).
 
 ## <a name="permissions-to-create-teams"></a>Autorizzazioni per la creazione di team
 

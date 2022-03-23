@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per organizzazioni di grandi dimensioni in Microsoft Teams.
-ms.openlocfilehash: 1b212edfc750210aa7ab66bb0184dfa07541280e
-ms.sourcegitcommit: 4af3638637456f21bc97f510ed9d2f7ff2da07e2
+ms.openlocfilehash: 3a501ee9cdea0cf04466be1cbbd9c8f4407a9842
+ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2022
-ms.locfileid: "63660591"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63711920"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -149,6 +149,8 @@ Il formato necessario per immettere l'interno nel campo del numero di telefono d
 
 > [!NOTE]
 > Se si vogliono usare sia le funzionalità  Chiama per nome che  Chiama per interno, è possibile assegnare un tasto di chiamata all'operatore automatico principale per raggiungere un operatore automatico abilitato per Chiama per **nome**. All'interno di tale operatore automatico, è possibile assegnare il tasto 1 (a cui non sono associate lettere) per raggiungere l'operatore automatico Chiama **per** interno.
+
+Per altre informazioni [, vedere Informazioni di riferimento sulla chiamata e](dial-voice-reference.md) la voce.
 
 Dopo aver selezionato **un'opzione di ricerca nella directory** , selezionare **Avanti**.
 

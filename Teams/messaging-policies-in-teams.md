@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni sui criteri di messaggistica e su come possono essere usati per controllare la messaggistica chat in Teams.
-ms.openlocfilehash: 968e79952381b04f5165f285807cfe3a07237307
-ms.sourcegitcommit: abe942c294ed5fca70efdf039d38d611b9c21fe9
+ms.openlocfilehash: 9716fe3ba9a2162a3c6c85cfa61ef5541f34fb38
+ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2022
-ms.locfileid: "63564768"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63711720"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in Teams
 
@@ -109,7 +109,7 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 - **Ruolo di autorizzazione chat** Usare questa impostazione per definire il ruolo di chat supervisionato dell'utente.  Altre informazioni sulla [chat supervisionata](supervise-chats-edu.md).
 
 > [!NOTE]
-> Alcune di queste impostazioni, ad esempio giphys, possono anche essere configurate a livello di team dai proprietari del team e a livello di canale privato dai proprietari di canali privati.
+> Alcune di queste impostazioni, ad esempio giphys, possono essere configurate anche a livello di team dai proprietari del team e a livello di canale privato o condiviso dai proprietari dei canali.
 
 ### <a name="related-topics"></a>Argomenti correlati
 

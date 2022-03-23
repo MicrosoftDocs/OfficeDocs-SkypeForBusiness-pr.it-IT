@@ -18,12 +18,12 @@ ms.localizationpriority: high
 f1.keywords:
 - NOCSH
 description: Indicazioni complete per effettuare la migrazione da Slack a Microsoft Teams.
-ms.openlocfilehash: 9342c7e251cc7466df0d70e8cb699d7e514455b4
-ms.sourcegitcommit: cf2f96dbd485ac4cc822c5a591ccce6b47f12cc7
+ms.openlocfilehash: 7879e839c8f5597761827fe42ea75b1f0c8dddf9
+ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59456356"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63711890"
 ---
 # <a name="migrate-from-slack-to-microsoft-teams"></a>Effettuare la migrazione da Slack a Microsoft Teams
 
@@ -55,7 +55,7 @@ Al termine di questa sezione, il lettore sarà in grado di comprendere i seguent
 ### <a name="assess-your-slack-workspaces"></a>Valutare le aree di lavoro di Slack
 Per poter pianificare il piano di migrazione dell'organizzazione, è necessario raccogliere alcune informazioni sulle aree di lavoro di Slack. Comprendere come vengono utilizzate le aree di lavoro di Slack consente di determinare l'ambito della migrazione. Ad esempio, quante aree di lavoro verranno spostate? Le aree di lavoro vengono utilizzate da un reparto specifico, da molti reparti o da un'intera organizzazione?
 
-Se si è membri delle aree di lavoro di Slack che si desidera migrare, è possibile analizzarne l'uso andando su *\<your Slack workspace\>.slack.com/stats*. Esaminare le schede Canali e Membri per cercare i modelli di utilizzo. Stabilire quali aree di lavoro si desidera migrare e quali si desidera lasciare. 
+Se si è membri delle aree di lavoro Slack di cui si desidera eseguire la migrazione, è possibile analizzarne manualmente l'uso da *\<your Slack workspace\>.slack.com/stats*. Esaminare le schede Canali e Membri per cercare i modelli di utilizzo. Determinare le aree di lavoro di cui eseguire la migrazione (e quelle da abbandonare). 
 
 > [!NOTE]
 > Solo gli amministratori o i proprietari dispongono dell'accesso alla pagina stats. 

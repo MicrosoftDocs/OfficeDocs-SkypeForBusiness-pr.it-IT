@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 727425a1dfcd1ea4ebeec27cc79982d996db42fa
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 523d35fd1e7981a52e5972232f0c00c276435f7f
+ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596380"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63711880"
 ---
 # <a name="best-practices-for-organizing-teams-in-microsoft-teams"></a>Procedure consigliate per l'organizzazione dei team in Microsoft Teams
 
@@ -47,7 +47,7 @@ Con questi suggerimenti rapidi per utenti finali è possibile scoprire di più s
 
 Procedura consigliata: creare team con un maggior numero di membri e canali. Ridurre al minimo il numero di team che richiedono la partecipazione di una sola persona. I canali all'interno di un team dovrebbero essere considerati come argomenti o sequenze di lavoro per aiutare il team a organizzare le proprie attività per realizzare gli obiettivi in comune. Non c'è un numero specifico di canali da creare consigliato. Ogni team deve creare i canali in base al proprio lavoro, alle priorità e allo stile.
 
-Usare i canali standard per le conversazioni a cui possono partecipare tutti i membri del team. Sfruttare i [canali privati di Teams](private-channels.md) se, invece, è necessario un spazio di collaborazione dedicato a un determinato gruppo di membri.
+Usare i canali standard per le conversazioni a cui possono partecipare tutti i membri del team. Sfruttare i [canali privati quando](private-channels.md) è necessario uno spazio di collaborazione mirato con un gruppo selezionato di membri del team. Usare [canali condivisi](shared-channels.md) quando è necessario collaborare con persone esterne al team.
 
 Le organizzazioni di grandi dimensioni potrebbero voler creare team come "modelli" per standardizzare le informazioni acquisite su specifici tipi di lavoro. Questa opzione è utile per gestire in modo strategico clienti, classi, scenari di assistenza sanitaria, reclami, eventi imprevisti e altri scenari adeguati a un settore specifico. Per altre informazioni, vedere [Introduzione ai modelli di Teams](get-started-with-teams-templates.md) e [Modelli di Teams per piccole e medie imprese](smb-templates.md).
 

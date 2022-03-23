@@ -21,12 +21,12 @@ appliesto:
 - Microsoft Teams
 - seo-marvel-apr2020
 - seo-marvel-may2020
-ms.openlocfilehash: 6b1e2fdc31e5f9ece9b1c52f1f0cf5881e29229b
-ms.sourcegitcommit: 47b14f57bc64544d63aec67b023ead13c71342b4
+ms.openlocfilehash: 84c0ef026b16ec19337ef8840b2285a1a98e5193
+ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2022
-ms.locfileid: "63418838"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63711730"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -53,7 +53,6 @@ Prima di implementare Teams nell'organizzazione, è necessario verificare che l'
 |Chiedersi|Azione |
 |------------|-------|
 |L'organizzazione è pronta per la distribuzione di Teams?|Per rispondere a questa domanda, vedere: <ul><li>[Preparare la rete dell'organizzazione per Teams](prepare-network.md)</li><li>[URL e intervalli di indirizzi IP](office-365-urls-ip-address-ranges.md)</li><li>[Pianificare i gruppi di Microsoft 365 durante la creazione di team](plan-office-365-groups.md)</li></ul>|
-|||
 
 ## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione
 
@@ -68,7 +67,6 @@ Teams include un set di ruoli di amministratore personalizzati che è possibile 
 |A chi sarà assegnato il ruolo di amministratore delle comunicazioni di Teams?|Per altre informazioni sui ruoli di amministratore di Teams, vedere [Usare i ruoli di amministratore di Microsoft Teams per gestire Teams](using-admin-roles.md).|
 |A chi sarà assegnato il ruolo di tecnico del supporto delle comunicazioni di Teams?|Per assegnare i ruoli amministrativi, vedere [Assegnazione di ruoli di amministratore e senza privilegi di amministratore agli utenti con Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).|
 |A chi sarà assegnato il ruolo di specialista del supporto delle comunicazioni di Teams?||
-|||
 
 ### <a name="teams-owners-and-members"></a>Proprietari e membri di Teams
 
@@ -88,17 +86,15 @@ I criteri di messaggistica controllano le funzionalità di messaggistica disponi
 |------------|-------|
 |Il criterio di messaggistica globale verrà personalizzato?|Per informazioni sull'uso dell'interfaccia di amministrazione di Microsoft Teams per modificare il criterio di messaggistica globale o per aggiungere nuovi criteri, vedere [Gestire i criteri di messaggistica in Teams](messaging-policies-in-teams.md).|
 |Sono necessari più criteri di messaggistica?|Per creare e assegnare un criterio di messaggistica in PowerShell, vedere [Esempio di script di PowerShell - Creare e assegnare un criterio di messaggistica](scripts/powershell-script-teams-messaging-policy-edu.md).|
-|Come si determina a quali gruppi di utenti sono assegnati i vari criteri di messaggistica?|Per informazioni sui cmdlet CsTeamsMessagingPolicy, vedere [Set-CsTeamsMessagingPolicy](/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps).|
-||| 
+|Come si determina a quali gruppi di utenti sono assegnati i vari criteri di messaggistica?|Per informazioni sui cmdlet CsTeamsMessagingPolicy, vedere [Set-CsTeamsMessagingPolicy](/powershell/module/skype/set-csteamsmessagingpolicy).|
 
 ### <a name="external-access"></a>Accesso esterno
 
-L'accesso esterno (in precedenza noto come federazione) consente agli utenti di Teams e Skype for Business di comunicare con utenti esterni all'organizzazione. Attivando questa opzione e aggiungendo domini all'elenco di quelli consentiti, gli utenti potranno comunicare con utenti di altri domini e organizzazioni. L'accesso esterno è diverso dall'accesso guest per il fatto che le autorizzazioni di accesso vengono assegnate a un intero dominio, non a un singolo utente. L'accesso esterno è attivato per impostazione predefinita.
+L'accesso esterno (federazione) consente agli utenti di comunicare con le persone esterne all'organizzazione tramite chat. Attivando questa opzione e aggiungendo domini all'elenco di quelli consentiti, gli utenti possono comunicare con gli utenti di altri domini e organizzazioni. L'accesso esterno è attivato per impostazione predefinita.
 
 |Chiedersi|Azione |
 |------------|-------|
-|<ul><li>L'accesso esterno per l'organizzazione verrà attivato?</li><li>In caso affermativo, verranno poste restrizioni rispetto ai domini con cui l'organizzazione può comunicare?</li></ul> |<br>Per attivare l'accesso esterno, vedere [Pianificare l'accesso esterno](manage-external-access.md#plan-for-external-access).|
-|||
+|<ul><li>Disattivare l’accesso esterno all'organizzazione?</li><li>In caso affermativo, verranno poste restrizioni rispetto ai domini con cui l'organizzazione può comunicare?</li></ul> |<br>Per attivare o disattivare l'accesso esterno, vedere [Pianificare l'accesso esterno](manage-external-access.md#plan-for-external-access).|
 
 ### <a name="guest-access"></a>Accesso guest
 
@@ -110,9 +106,25 @@ L'accesso guest in Teams consente a utenti esterni all'organizzazione di acceder
 
 |Chiedersi|Azione |
 |------------|-------|
-|L'accesso guest per l'organizzazione verrà attivato?|Per attivare l'accesso guest, vedere [Attivare o disattivare l'accesso guest in Teams](set-up-guests.md).|
+|Disattivare l'accesso guest per l'organizzazione?|Per attivare o disattivare l'accesso guest, vedere [Attivare o disattivare l'accesso guest in Teams](set-up-guests.md).|
 |In caso affermativo, le funzionalità disponibili per gli utenti guest nell'organizzazione verranno personalizzate?|Per personalizzare la disponibilità delle funzionalità di accesso guest, vedere [Autorizzare l'accesso guest in Teams](teams-dependencies.md).|
-|||
+
+### <a name="private-channels"></a>Canali privati
+
+I canali privati consentono a un sottoinsieme di membri del team di collaborare in uno spazio privato non visibile o accessibile agli altri membri del team. Tutti gli utenti, inclusi gli utenti guest, possono essere aggiunti come membri a un canale privato, purché siano già membri del team.
+
+|Chiedersi|Azione |
+|------------|-------|
+|Consentire ai proprietari e ai membri del team di creare canali privati?|Per impostare i criteri dei canali privati per l'organizzazione, vedere [Gestire i criteri dei canali in Microsoft Teams](teams-policies.md)|
+
+### <a name="shared-channels"></a>Canali condivisi
+
+I canali condivisi consentono di aggiungere a un canale, le persone che non sono membri di un team. Sono incluse le persone esterne all'organizzazione. I canali condivisi offrono vantaggi rispetto all'accesso guest in quanto le persone esterne all'organizzazione non necessitano di un account guest nella directory.
+
+|Chiedersi|Azione |
+|------------|-------|
+|Quando si usano i canali condivisi rispetto all'accesso guest?|Vedere [Canali condivisi in Microsoft Teams](shared-channels.md).|
+|<ul><li>Consentire ai proprietari del team di creare canali condivisi?</li><li>Consentire ai proprietari del team di condividere canali con persone esterne all'organizzazione?</li><li>Consentirò agli utenti di partecipare a canali condivisi esterni all'organizzazione?</li></ul> |<br>Per impostare i criteri dei canali condivisi per l'organizzazione, vedere [Gestire i criteri dei canali in Microsoft Teams](teams-policies.md).|
 
 ### <a name="teams-settings"></a>Impostazioni di Teams
 
@@ -121,7 +133,6 @@ Le impostazioni di Teams consentono di configurare i team per funzionalità come
 |Chiedersi|Azione |
 |------------|-------|
 |Le impostazioni di Teams dell'organizzazione verranno personalizzate? | Per informazioni sulle impostazioni di Teams e su come personalizzarle, vedere [Impostazioni di Teams](enable-features-office-365.md#teams-settings).|
-|||
 
 ### <a name="teams-clients"></a>Client di Teams
 
@@ -131,7 +142,6 @@ Teams supporta numerosi client Web, desktop e per dispositivi mobili e la config
 |------------|-------|
 |La disponibilità di client di Teams per l'organizzazione verrà personalizzata?|Vedere [Requisiti hardware per l'app Teams](hardware-requirements-for-the-teams-app.md). |
 |Le impostazioni dei client di Teams per l'organizzazione verranno personalizzate?|Vedere [Installare Teams con MSI](msi-deployment.md).|
-|||
 
 ### <a name="teams-usage-reporting"></a>Report sull'utilizzo di Teams
 
@@ -139,8 +149,7 @@ I ruoli Amministratore globale, Amministratore del servizio Teams e Lettore di r
 
 |Chiedersi|Azione |
 |------------|-------|
-|<br> Chi ha bisogno di vedere i report sull'utilizzo di Teams? L'utente dispone del ruolo corretto per farlo? |<ul><li>Se l'utente non è un amministratore, [assegnare il ruolo Lettore di report](teams-activity-reports.md#reports-reader-role).</li><li>Per informazioni su come assegnare ruoli di amministratore in Azure Active Directory, vedere [Ruoli e autorizzazioni](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) e [Visualizzare e assegnare i ruoli](/azure/active-directory/users-groups-roles/directory-manage-roles-portal). |
-|||
+|<br> Chi ha bisogno di vedere i report sull'utilizzo di Teams? L'utente dispone del ruolo corretto per farlo? |<ul><li>Se l'utente non è un amministratore, [assegnare il ruolo Lettore di report](teams-activity-reports.md#reports-reader-role).</li><li>Per informazioni su come assegnare ruoli di amministratore in Azure Active Directory, vedere [Ruoli e autorizzazioni](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) e [Visualizzare e assegnare i ruoli](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).|
 
 ### <a name="teams-default-apps"></a>App predefinite di Teams 
 
@@ -154,21 +163,19 @@ Può essere utile modificare queste impostazioni in base alle esigenze e alla co
 
 ### <a name="teams-licensing"></a>Licenze di Teams
 
-Teams è incluso in molte licenze di Microsoft 365 o Office 365. Per altre informazioni sulle licenze di Teams, vedere [Descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description).
+Teams è incluso in molte licenze di Microsoft 365.
 
 |Chiedersi|Azione |
 |------------|-------|
 |Gli utenti hanno le licenze necessarie per usare tutte le funzionalità di Teams che si intende implementare? | Per altre informazioni sui requisiti di licenza, vedere [Descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description).|
-|||
 
 ### <a name="exchange-and-sharepoint-interoperability"></a>Interoperabilità con Exchange e SharePoint
 
-Per usufruire dell'esperienza completa di Teams, è necessario che ogni utente sia abilitato per la creazione di gruppi di Microsoft 365, Exchange Online e SharePoint Online. Gli articoli seguenti contengono informazioni sulle cassette postali di Exchange ospitate in vari ambienti, sull'interazione tra Exchange e Teams e considerazioni analoghe per SharePoint e OneDrive for Business.
+Per usufruire dell'esperienza completa di Teams, ogni utente deve essere abilitato alla creazione di gruppi di Exchange, SharePoint e Microsoft 365. Gli articoli seguenti contengono informazioni sulle cassette postali di Exchange ospitate in diversi ambienti, sull'interazione tra Exchange e Teams e considerazioni analoghe per SharePoint e OneDrive.
 
 |Chiedersi|Azione |
 |------------|-------|
-| Sarà possibile distribuire le funzionalità di Teams necessarie con le distribuzioni correnti di Exchange e SharePoint? |Per altre informazioni su Exchange e SharePoint in Teams, vedere:<ul><li> [Modalità di interazione tra Exchange e Teams](exchange-teams-interact.md)</li><li>[Modalità di interazione di SharePoint Online e OneDrive for Business con Teams](sharepoint-onedrive-interact.md)|
-|||
+| Sarà possibile distribuire le funzionalità di Teams necessarie con le distribuzioni correnti di Exchange e SharePoint? |Per altre informazioni su Exchange e SharePoint in Teams, vedere:<ul><li> [Modalità di interazione tra Exchange e Teams](exchange-teams-interact.md)</li><li>[In che modo SharePoint Online e OneDrive interagiscono con Teams](sharepoint-onedrive-interact.md)|
 
 ### <a name="teams-limits-and-specifications"></a>Limiti e specifiche per Teams 
 
@@ -177,16 +184,14 @@ Quando si pianifica una distribuzione aziendale di Teams, è necessario tenere c
 |Chiedersi|Azione |
 |------------|-------|
 | Quali limiti sono probabili limiti di cui si dovrà tenere conto nell'implementazione di Teams? | Per altre informazioni, vedere [Limiti e specifiche per Teams](limits-specifications-teams.md). |
-|||
 
 ### <a name="urls-and-ports"></a>URL e porte
 
-Le organizzazioni che mantengono un controllo granulare sul traffico Internet devono leggere [URL e intervalli di indirizzi IP](/office365/enterprise/urls-and-ip-address-ranges) per un elenco aggiornato degli URL, degli indirizzi IP, delle porte e dei protocolli che occorre configurare correttamente per Teams. Microsoft migliora costantemente i servizi di Office 365 e Microsoft 365 e aggiunge continuamente nuove funzionalità, pertanto le porte, gli URL e gli indirizzi IP necessari potrebbero cambiare nel corso del tempo. È consigliabile sottoscrivere la pagina tramite RSS per ricevere notifiche quando queste informazioni vengono aggiornate o modificate. Assicurarsi almeno di aver aperto le porte elencate in precedenza in [Prerequisiti per la distribuzione della chat](#chat-deployment-prerequisites).
+Le organizzazioni che mantengono un controllo granulare sul traffico Internet dovrebbero leggere [ URL e intervalli di indirizzi IP ](/office365/enterprise/urls-and-ip-address-ranges) per avere un elenco aggiornato degli URL, degli indirizzi IP, delle porte e protocolli che occorre configurare correttamente per Teams. Microsoft migliora continuamente i servizi di Microsoft 365 e aggiunge sempre nuove funzionalità, pertanto le porte, gli URL e gli indirizzi IP necessari potrebbero cambiare nel tempo. È consigliabile effettuare la sottoscrizione tramite RSS per ricevere notifiche riguardo l’aggiornamento o la modifica di queste informazioni. Assicurarsi almeno di aver aperto le porte elencate in precedenza in [ Prerequisiti per la distribuzione della chat](#chat-deployment-prerequisites).
 
 |Chiedersi|Azione |
 |------------|-------|
 | È necessario usare regole di accesso a Internet per consentire agli utenti di usare Teams o è sufficiente aprire le porte obbligatorie minime? | Per altre informazioni, vedere [URL e intervalli di indirizzi IP](office-365-urls-ip-address-ranges.md).|
-|||
 
 ### <a name="governance-naming-conventions-who-can-create-teams"></a>Governance (convenzioni di denominazione, utenti autorizzati a creare team)
 
@@ -197,7 +202,6 @@ L'organizzazione potrebbe richiedere l'implementazione di controlli sulle modali
 |--------------|--------|
 |Sarà necessario implementare controlli su chi può creare team?| Vedere [Pianificare la governance in Teams](plan-teams-governance.md).|
 |Sarà necessario implementare controlli sulla denominazione dei team?|Vedere [Applicare criteri di denominazione per i gruppi di Microsoft 365 in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-naming-policy).|
-|||
 
 ### <a name="teams-application-policy-side-rail-control"></a>Criteri per le applicazioni di Teams (controllo della barra laterale)
 
@@ -207,7 +211,6 @@ Un'app ancorata compare nella barra laterale di Teams. Creando criteri per le ap
 |--------------|--------|
 |È opportuno creare set preconfigurati di applicazioni di Team aggiunte? | Vedere [Impostazioni di amministrazione per le app in Teams](admin-settings.md).|
 |Come si decide a quali gruppi assegnare questi set di app?|Vedere [Autorizzazioni e considerazioni sulle app](app-permissions.md).|
-|||
 
 ### <a name="archiving-and-compliance"></a>Archiviazione e conformità 
 
@@ -218,17 +221,14 @@ L'organizzazione potrebbe richiedere l'implementazione di controlli sul modo in 
 |Sarà necessario configurare la conservazione dei team?|Per configurare i criteri di conservazione, vedere [Criteri di conservazione in Teams](retention-policies.md).|
 |Sarà necessario configurare l'archiviazione dei team?|Per archiviare o ripristinare un team, vedere [Archiviare o ripristinare un team](https://support.office.com/article/archive-or-restore-a-team-dc161cfd-b328-440f-974b-5da5bd98b5a7).|
 |Sarà necessario configurare ulteriori impostazioni di conformità?|Per altre informazioni in proposito, vedere [Panoramica sulla sicurezza e conformità in Teams](security-compliance-overview.md).|
-|||
 
 ### <a name="conditional-access"></a>Accesso condizionale 
 
-Teams si basa principalmente su Exchange Online, SharePoint Online e Skype for Business Online per gli scenari di produttività di base, tra cui riunioni, calendari, chat di interoperabilità e condivisione di file. I criteri di accesso condizionale impostati per queste app cloud si applicano a Teams quando un utente esegue direttamente l'accesso a Teams in qualsiasi client. I criteri di accesso condizionale impostati per l'app Teams cloud controllano aspetti come ad esempio se gli utenti possono accedere ai servizi di Teams da determinate reti.
+Teams si basa principalmente su Exchange e SharePoint per gli scenari di produttività di base, tra cui riunioni, calendari, chat di interoperabilità e condivisione di file. I criteri di accesso condizionale impostati per queste app cloud si applicano a Teams quando un utente accede direttamente a Teams in qualsiasi client. I criteri di accesso condizionale impostati per l'app Teams cloud controllano aspetti come ad esempio, se gli utenti possano accedere ai servizi di Teams da determinate reti.
 
 | Chiedersi | Azione |
 |--------------|--------|
 |<br>Sarà necessario configurare l'accesso condizionale per Teams?|<ul><li>Per informazioni sul funzionamento dei criteri di accesso, vedere [Come funzionano i criteri di accesso condizionale per Teams?](security-compliance-overview.md#how-conditional-access-policies-work-for-teams)</li><li>Per configurare l'autenticazione a più fattori (MFA) per Teams, vedere:<ul><li>[Guida introduttiva: Richiedere MFA per app specifiche con l'accesso condizionale di Azure Active Directory](/azure/active-directory/conditional-access/app-based-mfa)</li><li>[Informazioni di riferimento sulle impostazioni di accesso condizionale di Azure Active Directory](/azure/active-directory/conditional-access/technical-reference)</li></ul></ul>|
-|||
-
 
 ### <a name="education-edu"></a>Education (EDU) 
 
@@ -239,7 +239,6 @@ I professionisti IT che lavorano nel settore dell'istruzione possono usufruire d
 |Si useranno modelli di Teams specifici per il settore istruzione? |Per altre informazioni su Teams for Education, vedere [Domande frequenti sulla governance di Microsoft Education per amministratori](plan-teams-governance-edu.md).|
 |Verrà distribuita la ricerca per ambito?|Per configurare Teams for Education, vedere [Guida introduttiva - Amministratori di Teams for Education](teams-quick-start-edu.yml).|
 |Teams verrà integrato con il servizio School Data Sync per eseguire il provisioning degli account utente?|[Risorse di Teams per l'istruzione per amministratori](resources-teams-edu.md)|
-|||
 
 ### <a name="government---gcc-considerations"></a>Considerazioni su Government - GCC
 
@@ -248,7 +247,6 @@ L'uso di Office 365 for Government - GCC (Government Community Cloud) è appropr
 | Chiedersi | Azione |
 |--------------|--------|
 | Sarà necessario distribuire Teams in un ambiente Office 365 Government - GCC? | Per considerazioni sulla distribuzione, vedere [Pianificare le distribuzioni di Office 365 Government - GCC](plan-for-government-gcc.md).|
-|||
 
 ## <a name="next-steps"></a>Passaggi successivi
 - [Favorire l'adozione](adopt-microsoft-teams-landing-page.md) di chat, team, canali e app.

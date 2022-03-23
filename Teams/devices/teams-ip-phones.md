@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: f8d2d1bcd427908c7f21a0eba20096fb12ab4e0c
-ms.sourcegitcommit: 4af3638637456f21bc97f510ed9d2f7ff2da07e2
+ms.openlocfilehash: 745252b624f6b64800c91b91a9d1a6ee60f21614
+ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2022
-ms.locfileid: "63660611"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "63711950"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>Microsoft Teams dispositivi Android certificati
 
@@ -71,9 +71,9 @@ I dispositivi seguenti sono certificati nell'Microsoft Teams Rooms di certificaz
 
 | Modello di dispositivo | Versione firmware | Data di fine certificazione corrente | Dimensioni della sala                                        |  Versione del sistema operativo Android    |
 |:------------------------|:-----------------|:--------------|:----------------------------------------------------------|-----------------------------------|
-| Barra ordinata | `NFB1.20220211.1158`     |   17 marzo 2024 |    Piccole Sala riunioni (4,5 m x 4,5 m) | 10 |
-| Tastiera ordinata | `NFA1.20220211.1158 `    | 17 marzo 2024  |    Piccole Sala riunioni (4,5 m x 4,5 m) | 9 |
-| Scheda ordinata | `NFC1.20220211.1158 `  |  17 marzo 2024 |    Piccole Sala riunioni (4,5 m x 4,5 m) | 10 |
+| Barra ordinata | `NFB1.20220211.1158`     |3 settembre 2024|    Piccole Sala riunioni (4,5 m x 4,5 m) | 10 |
+| Tastiera ordinata | `NFA1.20220211.1158 `    | 5 agosto 2023 |    Piccole Sala riunioni (4,5 m x 4,5 m) | 9 |
+| Scheda ordinata | `NFC1.20220211.1158 `  | 3 settembre 2024 |    Piccole Sala riunioni (4,5 m x 4,5 m) | 10 |
 | Compagno di stanza logitech | `1.4.71` | 3 settembre 2024  | Sala riunioni di grandi dimensioni (4,5 m x 8,5 m)  |   10  |
 | EPOS EXPAND 80T | `1.2.2.21182.10` | 5 agosto 2023 | In bundle con EPOS Vision 3T | 9 |
 | Dispositivo di tocco Logitech     | `1.2.982`  |   3 settembre 2024  | Compatibile con Logitech Rally Bar e Rally Bar Mini | 10 |
@@ -115,9 +115,10 @@ Di seguito sono riportate le versioni più recenti Teams dell'app per telefono e
 
 | Rilascio del prodotto | Data di rilascio  | Microsoft Teams dell'app | Portale aziendale versione | Versione dell'agente di amministrazione |
 |:----------------|:--------------|:----------------------------|:-----------------------|:--------------------|
+| Aggiornamento 2022 #2   | 21 marzo 2022   | `1449/1.0.94.2022030501` |`5.0.5304.0` | `322` |
 | Aggiornamento #1C 2022  | 3 marzo 2022  | `1449/1.0.94.2022022305` |`5.0.5304.0` | `322` |
-| Aggiornamento 2022 #1   | 7 febbraio 2022   | `1449/1.0.94.2022011305` |`5.0.5304.0` | `322` |
 | Aggiornamento 2022 #1B  | 7 febbraio 2022   | `1449/1.0.94.2022020202` |`5.0.5304.0` | `322` |
+| Aggiornamento 2022 #1   | 7 febbraio 2022   | `1449/1.0.94.2022011305` |`5.0.5304.0` | `322` |
 | Aggiornamento 2021 #3B | 6 dicembre 2021   | `1449/1.0.94.2021112302 ` | `5.0.5304.0` | `298` |
 | Aggiornamento 2021 #3A | 22 novembre 2021   | `1449/1.0.94.2021110101 ` | `5.0.5304.0` | `298` |
 | Aggiornamento 2021 #3  | 3 novembre 2021   | `1449/1.0.94.2021101205` | `5.0.5304.0` | `298` |
@@ -137,8 +138,15 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware  | Rilascio del prodotto incluso  |
 |:----------------|:--------------|:----------------------------|
-|Crestron UC-P8/I/C/CI     | `1.0.4.82`    | Aggiornamento 2022 #1 |
-|Crestron UC-P10/I/C/CI    | `1.0.4.82`    | Aggiornamento 2022 #1 |
+|Audiocode C455HD | `1.15.289`    | Aggiornamento #1C 2022    |
+|Audiocode C448HD  | `1.14.524` | Aggiornamento #1C 2022 |
+|Audiocodice C450HD  | `1.14.524` | Aggiornamento #1C 2022 |
+|Audiocode C470HD  | `1.14.524` | Aggiornamento #1C 2022   |
+|Audiocode C435HD  | `1.14.524` | Aggiornamento #1C 2022  |
+| Poly Trio C60   | `7.2.1.1975`  | Aggiornamento #1C 2022                        |
+| Poly CCX400/CCX500/CCX600   | `7.2.1.1971`  | Aggiornamento #1C 2022            |
+| Crestron UC-P8/I/C/CI     | `1.0.4.82`    | Aggiornamento 2022 #1 |
+| Crestron UC-P10/I/C/CI    | `1.0.4.82`    | Aggiornamento 2022 #1 |
 | Poly Trio C60   | `7.2.1.1831`  | Aggiornamento 2022 #1                        |
 | Poly CCX400/CCX500/CCX600   | `7.2.1.1826`  | Aggiornamento 2022 #1                 |
 |Crestron UC-2     | `1.0.4.75`    | Aggiornamento 2022 #1 |
@@ -147,11 +155,11 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 |Audiocodice C450HD  | `1.14.500` | Aggiornamento 2022 #1  |
 |Audiocode C470HD  | `1.14.500` | Aggiornamento 2022 #1   |
 |Audiocode C435HD  | `1.14.500` | Aggiornamento 2022 #1  |
-|Yealink T55/T56/T58   | `58.15.0.153`  | Aggiornamento 2022 #1 |
-|Yealink MP54/MP56/MP58   | `122.15.0.77`     | Aggiornamento 2022 #1  |
-| Yealink VP59   | `91.15.0.87`  | Aggiornamento 2022 #1     |
-| Yealink CP960  | `73.15.0.150`  | Aggiornamento 2022 #1         |
-| Yealink MP52 | `145.15.0.25`  | Aggiornamento 2022 #1         |
+|Yealink T55/T56/T58   | `58.15.0.153`  | Aggiornamento 2022 #1B |
+|Yealink MP54/MP56/MP58   | `122.15.0.77`     | Aggiornamento 2022 #1B  |
+| Yealink VP59   | `91.15.0.87`  | Aggiornamento 2022 #1B     |
+| Yealink CP960  | `73.15.0.150`  | Aggiornamento 2022 #1B      |
+| Yealink MP52 | `145.15.0.25`  | Aggiornamento 2022 #1B         |
 | Poly Trio C60  | `7.1.4.0250 ` | Aggiornamento #3C 2021  |
 | Poly CCX600    | `7.1.4.0253  `| Aggiornamento #3C 2021  |
 | Poly CCX500    | `7.1.4.0253  `| Aggiornamento #3C 2021  |
