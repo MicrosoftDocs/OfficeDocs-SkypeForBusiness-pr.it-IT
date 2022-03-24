@@ -17,12 +17,12 @@ description: Informazioni su come gestire le app Teams nella pagina Gestisci app
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 96acf3151c2b805fead94979010669520b7a000f
-ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
+ms.openlocfilehash: f8130d8f6d9d8609ce37d5f43f18dd083a5106e0
+ms.sourcegitcommit: b91d83739a078b175770c797c17d602eb5c83a4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "63442292"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63774075"
 ---
 # <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia Microsoft Teams di amministrazione
 
@@ -150,14 +150,16 @@ Le autorizzazioni di consenso specifiche delle risorse consentono ai proprietari
 
 ## <a name="manage-org-wide-app-settings"></a>Gestire le impostazioni dell'app a livello di organizzazione
 
-Usare le impostazioni dell'app a livello di organizzazione per controllare se gli utenti ottengono un'esperienza di app personalizzata in base alla licenza (disponibile a breve), se gli utenti possono installare app di terze parti e se gli utenti possono caricare o interagire con app personalizzate nell'organizzazione. Le impostazioni app a livello di organizzazione disciplinano il comportamento di tutti gli utenti e sostituiscono qualsiasi criterio di autorizzazione app assegnato agli utenti. È possibile usarle per controllare eventuali app dannose o problematiche.
+Usare le impostazioni dell'app a livello di organizzazione per controllare se gli utenti con una licenza [F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt) ottengono l'esperienza personalizzata dell'app in prima linea (disponibile a breve), se gli utenti possono installare app di terze parti e se gli utenti possono caricare o interagire con app personalizzate nell'organizzazione. Le impostazioni app a livello di organizzazione disciplinano il comportamento di tutti gli utenti e sostituiscono qualsiasi criterio di autorizzazione app assegnato agli utenti. È possibile usarle per controllare eventuali app dannose o problematiche.
 
 > [!NOTE]
 > Per informazioni su come usare le impostazioni delle app a livello di organizzazione nelle distribuzioni di Microsoft 365 Government - Government Community Cloud High GCCH e Department of Defense (DoD) di Teams, vedere Gestire i criteri di autorizzazione delle [app in Teams](teams-app-permission-policies.md).
 
-1. Nella pagina Gestisci app selezionare Impostazioni app **a livello di organizzazione**. È possibile quindi configurare le impostazioni desiderate nel pannello.
+1. Nella pagina Gestisci app selezionare Impostazioni app **a livello di organizzazione**. È quindi possibile configurare le impostazioni desiderate nel riquadro.
 
-1. (Prossimamente) In **App personalizzate disattivare** o attivare Mostra **app personalizzate in base alle licenze**. Quando questa impostazione è attivata, gli utenti ottengono un'esperienza in cui le app vengono aggiunte in base alla licenza. Per altre informazioni, vedere [Personalizzare le app Teams in base alla licenza](pin-teams-apps-based-on-license.md).
+    :::image type="content" source="media/manage-apps-org-wide-app-settings.png" alt-text="Screenshot del riquadro Impostazioni app a livello di organizzazione nella pagina Gestisci app":::
+
+1. (Prossimamente) In **App personalizzate** disattivare o attivare **Mostra app personalizzate**. Quando questa impostazione è attivata, gli utenti con una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt) ottengono l'esperienza personalizzata dell'app in prima linea. Questa esperienza aggiunge le app più pertinenti in Teams per i lavoratori in prima linea. Per altre informazioni, vedere [Personalizzare le Teams per i dipendenti in prima linea](pin-teams-apps-based-on-license.md).
 
     Questa funzionalità è disponibile per le licenze F. Altri tipi di licenza saranno supportati in futuro.
 1. In **App di terze parti**, disattivare o attivare queste impostazioni per controllare l'accesso alle app di terze parti:

@@ -1529,7 +1529,7 @@ items:
                 href: teams-app-setup-policies.md
               - name: Gestire le impostazioni e i criteri delle app personalizzate in Teams
                 href: teams-custom-app-policies-and-settings.md
-          - name: Personalizzare le app di Teams in base alla licenza
+          - name: Personalizzare le app di Teams per gli operatori sul campo
             href: pin-teams-apps-based-on-license.md
           - name: Esaminare le autorizzazioni Azure AD e concedere il consenso dell'amministratore
             href: app-permissions-admin-center.md

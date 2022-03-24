@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: b5100bd09b371d90d5bede76b440f423eb527b9c
-ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
+ms.openlocfilehash: 677ee2b0d57477ee79a9af7510d0ccf2dfbcae28
+ms.sourcegitcommit: b91d83739a078b175770c797c17d602eb5c83a4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "63442342"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63774015"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
@@ -35,6 +35,9 @@ Gli amministratori possono usare i criteri di configurazione delle app per insta
 - **Upload app personalizzate: i** criteri di configurazione delle app consentono agli utenti di caricare app personalizzate in Teams. Per altre informazioni, vedere Upload [app personalizzate](#upload-custom-apps).
 
 ## <a name="pin-apps"></a>Aggiungere app
+
+> [!NOTE]
+> Per i lavoratori in prima linea dell'organizzazione, è consigliabile usare l'esperienza dell'app in prima linea personalizzata. Questa funzionalità aggiunge le app più pertinenti in Teams per gli utenti che hanno una [licenza F](https://www.microsoft.com/en-us/microsoft-365/enterprise/frontline?rtc=1#office-SKUChooser-0dbn8nt). Per altre informazioni, vedere [Personalizzare le Teams per i dipendenti in prima linea](pin-teams-apps-based-on-license.md).
 
 L'aggiunta di app consente di mostrare le app necessarie agli utenti dell'organizzazione, incluse le app create da terze parti o dagli sviluppatori dell'organizzazione.
 

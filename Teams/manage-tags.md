@@ -16,12 +16,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire l'uso dei tag nell'organizzazione in Microsoft Teams.
-ms.openlocfilehash: 2e099c611cbbfd22cc2cc32c189edc8243ea362d
-ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
+ms.openlocfilehash: af9855f1ca771cb9f5d4739194e26cba746859ff
+ms.sourcegitcommit: caaed4b48b8f2b05d035c1bdea00a61301bc9f05
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/22/2022
-ms.locfileid: "63711580"
+ms.locfileid: "63740203"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 
@@ -35,7 +35,7 @@ Come accennato in precedenza, sono disponibili due tipi di tag Teams.
 - **Assegnazione di tag per** turno: con questa caratteristica, alle persone vengono assegnati automaticamente tag che corrispondono al nome del gruppo di turni e di pianificazione [nell'app](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6#bkmk_openshiftsappdesktop) Turni in Teams. Ad esempio, il tag "EngineerOnCall" raggiunge tutti i tecnici programmati in Turni per lavorare nel momento in cui il tag viene usato in una chat o in un post del canale. Con l'aggiunta di tag per turno, Teams le congetture non consentono di conoscere il nome del personale a turno quando gli utenti devono inoltrare rapidamente le informazioni. L'assegnazione di tag per turno può essere supportata anche dai principali sistemi di gestione della forza lavoro, come JDA, Kronos e AMiON, integrandoli con Turni in Teams. Per altre informazioni su come configurare questa funzionalità, vedere [Configurare l'assegnazione di tag per turno](#set-up-tagging-by-shift).
 
 > [!NOTE]
-> I tag non sono supportati nei canali privati o condivisi. I tag non sono disponibili nelle organizzazioni del Department of Defense (DoD). 
+> I tag non sono supportati nei canali privati o condivisi.  
 
 ## <a name="how-tags-work"></a>Come funzionano i tag
 

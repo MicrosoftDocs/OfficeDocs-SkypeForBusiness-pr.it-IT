@@ -12,16 +12,16 @@ ms.collection:
 description: Informazioni sulle versioni supportate dal modulo Teams PowerShell, usato per l'amministrazione di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9254afde824f072f6015531b90f4cacfb38acafe
-ms.sourcegitcommit: a894e9397050e09bfaab02e700e943a3bbeb1302
+ms.openlocfilehash: ea8a755c75c5f91c5dbf3a4cd4dd749ac576557c
+ms.sourcegitcommit: b878c57b8e822913b7aac8c105f476bc4ebfcd7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63689129"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "63762010"
 ---
 # <a name="teams-powershell-module---supported-versions"></a>Teams PowerShell - Versioni supportate
 
-Microsoft Teams le versioni del modulo di PowerShell (TPM) della serie 4.x.x saranno le uniche supportate in futuro. Tutte le versioni precedenti sono nel percorso di ritiro.
+Microsoft Teams modulo di PowerShell (TPM) versione 4.0.0 o successive saranno le uniche versioni supportate in futuro. Tutte le versioni precedenti sono nel percorso di ritiro.
 
 
 
@@ -39,8 +39,7 @@ Le organizzazioni che non hanno usato il TPM negli ultimi tre mesi (dal 22 genna
 
 ## <a name="current-organizations-tpm-active"></a>Organizzazioni correnti (TPM attivo)
 
-Le organizzazioni che hanno utilizzato il TPM negli ultimi tre mesi (22 gennaio - 22 marzo) avranno più tempo per eseguire l'aggiornamento a TPM 4.x.x. Ulteriori dettagli da seguire a breve.
-
+Le organizzazioni che hanno utilizzato il TPM negli ultimi tre mesi (dal 22 gennaio al 22 marzo) potranno usare TPM 4.0.0 o versioni successive solo a partire dal 15 giugno 2022. È consigliabile aggiornare il modulo Teams PowerShell alla versione più recente.
 
 
 ## <a name="important-notes"></a>Note importanti
