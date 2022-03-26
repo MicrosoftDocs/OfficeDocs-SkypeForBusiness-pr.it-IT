@@ -18,13 +18,13 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.contentsharing
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per la condivisione del contenuto.
-ms.openlocfilehash: 6c713800aa0f95c7adfd6655455e6ff332f91595
-ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
+description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per la condivisione di contenuti.
+ms.openlocfilehash: dccf36a257cde5731c140f2000e3d0733d3366c3
+ms.sourcegitcommit: 42c355d3f4bbe52c063b8f2119baefc0b88f9563
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61205316"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64403987"
 ---
 # <a name="meeting-policy-settings---content-sharing"></a>Impostazioni dei criteri di riunione - Condivisione di contenuti
 
@@ -35,7 +35,7 @@ Questo articolo descrive le impostazioni dei criteri di riunione seguenti relati
 - [Modalità condivisione schermo](#screen-sharing-mode)
 - [Consenti a un partecipante di fornire o richiedere il controllo](#allow-a-participant-to-give-or-request-control)
 - [Consenti a un partecipante esterno di fornire o richiedere il controllo](#allow-an-external-participant-to-give-or-request-control)
-- [PowerPoint condivisione](#powerpoint-sharing)
+- [PowerPoint Live](#powerpoint-live)
 - [Whiteboard](#whiteboard)
 - [Note condivise](#shared-notes)
 
@@ -99,13 +99,13 @@ La possibilità per gli utenti federati di concedere il controllo a utenti ester
 
 Per usare PowerShell per controllare i partecipanti esterni autorizzati a concedere il controllo o accettare richieste di controllo, usare il cmdlet AllowExternalParticipantGiveRequestControl.
 
-### <a name="powerpoint-sharing"></a>PowerPoint condivisione
+### <a name="powerpoint-live"></a>PowerPoint Live
 
 Questo è un criterio per utente. Questa impostazione controlla se l'utente può condividere le presentazioni di PowerPoint in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, guest e federati, ereditano i criteri dell'organizzatore della riunione.
 
 Osserviamo l'esempio seguente.
 
-|Utente |Criterio di riunione  |PowerPoint condivisione |
+|Utente |Criterio di riunione  |PowerPoint Live |
 |---------|---------|---------|
 |Daniela   | Globale   | Attivato       |
 |Amanda   | CriterioRiunionePosizione1        | Disattivato   |

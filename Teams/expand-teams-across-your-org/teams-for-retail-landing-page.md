@@ -20,21 +20,20 @@ searchScope:
 - Microsoft Cloud for Retail
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cb32190c05dcbe165e203d9e4f097622d60943b8
-ms.sourcegitcommit: 2e8daa3511cd198b3e0d43b153dd37a59cb21692
+ms.openlocfilehash: f611afe731bc178759427efff2fe35d925ca0def
+ms.sourcegitcommit: 42c355d3f4bbe52c063b8f2119baefc0b88f9563
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2022
-ms.locfileid: "62763401"
+ms.lasthandoff: 03/24/2022
+ms.locfileid: "64403967"
 ---
 # <a name="get-started-with-teams-for-retail"></a>Introduzione a Teams per la vendita al dettaglio
 
-Gli ambienti di vendita al dettaglio, con le loro pianificazioni a rotazione e il personale sempre in movimento, hanno esigenze molto diverse rispetto ad altre organizzazioni. Per ottenere il massimo vantaggio per l'organizzazione di vendita al dettaglio, è prima di tutto necessario scegliere gli scenari con cui Teams può essere utile nelle operazioni aziendali quotidiane e quindi assicurarsi di preparare l'ambiente di Teams con i principi fondamentali, i team e le app giuste per supportare tali scenari.
+Gli ambienti di vendita al dettaglio, caratterizzati dalla rotazione dei turni e del personale, hanno esigenze molto diverse rispetto ad altre organizzazioni. Per ottenere il massimo vantaggio per l’organizzazione di vendita al dettaglio, bisogna prima di tutto scegliere gli scenari in cui Teams può essere d’aiuto nelle operazioni aziendali quotidiane, quindi assicurarsi di preparare l’ambiente Teams con le giuste basi, i team e le app per supportare tali scenari.
 
 1. [Scegli gli scenari](#choose-your-scenarios) da implementare per l'azienda.
 :::image type="content" source="../media/retail-teams-scenarios.png" alt-text="Diagramma che mostra gli scenari Teams per la vendita al dettaglio." lightbox="../media/retail-teams-scenarios.png":::
-1. [Definizione degli elementi di base](#set-up-the-fundamentals): supporta la forza lavoro con gli elementi fondamentali: la gestione di account e dispositivi e la verifica dell'applicazione dei criteri Teams appropriati.
-:::image type="content" source="../media/retail-teams-fundamentals.png" alt-text="Diagramma che illustra gli elementi fondamentali, inclusi Teams, account e dispositivi." lightbox="../media/retail-teams-fundamentals.png":::
+1. [Configura gli elementi fondamentali](#set-up-the-fundamentals): supporta il personale con gli elementi di base: la gestione degli account e dei dispositivi e la verifica dell'applicazione dei criteri di Teams appropriati. :::image type="content" source="../media/retail-teams-fundamentals.png" alt-text="Diagramma che mostra gli elementi fondamentali, inclusi i criteri, gli account e i dispositivi di Teams." lightbox="../media/retail-teams-fundamentals.png":::
 1. [Configura team e app](#set-up-teams-and-apps): usa i modelli di team per configurare rapidamente i team necessari, inclusi i canali e le app necessari per l'azienda. Aggiungi altre app da Microsoft in base alle esigenze per supportare gli scenari.
 :::image type="content" source="../media/retail-teams-apps.png" alt-text="Diagramma che mostra team, modelli di team e app che è possibile includere." lightbox="../media/retail-teams-apps.png":::
 
@@ -42,7 +41,7 @@ Gli ambienti di vendita al dettaglio, con le loro pianificazioni a rotazione e i
 
 ## <a name="choose-your-scenarios"></a>Scegli gli scenari
 
-Microsoft 365 e Microsoft Teams offrono diverse funzionalità che possono aiutare le organizzazioni di vendita al dettaglio a eseguire le operazioni quotidiane e la trasformazione digitale. È consigliabile usare gli scenari seguenti per le organizzazioni di vendita al dettaglio:
+Microsoft 365 e Microsoft Teams offrono diverse funzionalità che possono aiutare le organizzazioni di vendita al dettaglio nello svolgimento delle operazioni quotidiane e nella trasformazione digitale. Per le organizzazioni di vendita al dettaglio sono consigliati gli scenari seguenti:
 
 [![Comunicazione e collaborazione in negozio.](../media/retail-scenarios-in-store.png)](#in-store-communication-and-collaboration) [![Comunicazione e collaborazione tra negozi.](../media/retail-scenarios-cross-store.png)](#cross-store-communication-and-collaboration) [![Accessori virtuali e consulenze.](../media/retail-scenarios-virtual-visits.png)](#virtual-fittings-and-consultations) [![Semplificare i processi aziendali.](../media/retail-scenarios-business-processes.png)](#simplify-business-processes) [![Comunicazioni aziendali.](../media/retail-scenarios-corp-comms.png)](#corporate-communications) [![Onboarding di nuovi dipendenti.](../media/retail-scenarios-onboarding.png)](#onboarding-new-employees)
 
@@ -79,7 +78,7 @@ Altre informazioni: [visite virtuali con Microsoft Teams e l'app Bookings](booki
 
 ### <a name="simplify-business-processes"></a>Semplifica i processi aziendali
 
-È possibile usare le app Teams, Power Apps e Power BI per semplificare i processi aziendali. Ad esempio, è possibile:
+Puoi usare le app di Teams, Power Apps e Power BI per semplificare i processi aziendali. Ad esempio, è possibile:
 
 - Impostare e gestire le pianificazioni per i dipendenti con Turni.
 - Condurre le passeggiate e gli inventari dei negozi con Power Apps.
@@ -156,7 +155,7 @@ Per gli ambienti di vendita al dettaglio, le app e i servizi seguenti consentono
 
 | App e servizi di Teams | Descrizione | Gestione | Guida |
 | ----- | ----- | ----- | ----- |
-| Approvazioni | Le approvazioni possono essere integrate nella chat per semplificare l'approvazione. | [Gestione delle approvazioni](../approval-admin.md) | [Uso delle approvazioni](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
+| Approvazioni | Le approvazioni possono essere integrate nella chat per semplificarne il processo. | [Gestione delle approvazioni](../approval-admin.md) | [Uso delle approvazioni](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3) |
 | Chat | Abilita conversazioni rapide e controlli tra il personale con strumenti di comunicazione sicuri di livello aziendale, invece di app o SMS di livello consumer. | [Chat, team, canali & app in Microsoft Teams](../deploy-chat-teams-channels-microsoft-teams-landing-page.md) | [Chattare in Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams) |
 | Documenti | Condividere procedure operative standard, criteri di archiviazione, piani e altro ancora. | [Come SharePoint e OneDrive interagiscono con Microsoft Teams](../sharepoint-onedrive-interact.md) | [Condividere file](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 | Complimento | Riconosci l’ottimo lavoro svolto in team dai colleghi con l’app Complimento. | [Gestire l'app Complimento](../manage-praise-app.md) | [Inviare complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e) |
@@ -168,7 +167,7 @@ Per gli ambienti di vendita al dettaglio, le app e i servizi seguenti consentono
 | Altre app e servizi da Microsoft | Descrizione | Gestione | Guida |
 | ----- | ----- | ----- | ----- |
 | Bookings | Abilita le consulenze e gli accessori virtuali. | [Visite virtuali con Microsoft Teams e l’app Bookings](bookings-virtual-visits.md) | [Usare Bookings](https://support.microsoft.com/en-us/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5) |
-| Power Apps e Power Platform | Integra i processi aziendali e abilita aggiornamenti rapidi dei dati, ad esempio l'inventario del negozio, i numeri di vendita, i report degli incidenti e altro ancora. | [Integrazione di Teams con Microsoft Power Platform](../teams-power-platfom-integration.md) e [gestione delle app Microsoft Power Platform nell'interfaccia di amministrazione di Microsoft Teams](../manage-power-platform-apps.md) | -  |
+| Power Apps e Power Platform | Integra i processi aziendali e abilita aggiornamenti rapidi dei dati, ad esempio l'inventario del negozio, i numeri di vendita, i report degli incidenti e altro ancora. | [Integrazione di Teams con Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions) e [gestione delle app Microsoft Power Platform nell'interfaccia di amministrazione di Microsoft Teams](../manage-power-platform-apps.md) | -  |
 | SharePoint | Quando si crea un nuovo team, viene creato un nuovo sito SharePoint e viene connesso al team. Molti degli scenari precedenti si basano su funzionalità SharePoint già incorporate in Teams, ad esempio la condivisione di documenti per la collaborazione in team. | [Integrazione di Teams e SharePoint](/sharepoint/teams-connected-sites) | [Aggiungi una pagina SharePoint, un elenco o una raccolta documenti come scheda in Teams](https://support.microsoft.com/office/add-a-sharepoint-page-list-or-document-library-as-a-tab-in-teams-131edef1-455f-4c67-a8ce-efa2ebf25f0b)|
 | Viva Connections | Viva Connections crea un hub in Teams in cui i tuoi collaboratori possono visualizzare un newsfeed personalizzato dell'organizzazione e un dashboard personalizzato con le risorse di cui hanno bisogno. | [Panoramica di Viva Connections](/sharepoint/viva-connections-overview) | [Viva Connections in Microsoft Teams](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b) |
 | Viva Learning | Fornisci formazione quando necessario, direttamente nel flusso del loro lavoro. | [Gestire Viva Learning](/microsoft-365/learning/) | [Usare Viva Learning (anteprima)](https://support.microsoft.com/office/viva-learning-preview-01bfed12-c327-41e0-a68f-7fa527dcc98a) |
@@ -190,7 +189,7 @@ Oltre ai modelli di team, è inoltre possibile configurare altri siti e servizi 
 
 ## <a name="get-ready-to-roll-out-your-scenarios---identify-roles-and-responsibilities-for-scenarios"></a>Preparati a implementare gli scenari: identificare ruoli e responsabilità per gli scenari
 
-Ora che conosci gli scenari da implementare e cosa è necessario per supportarli, è possibile riunire il team in modo da poter pianificare, implementare e monitorare la relativa attuazione nell'organizzazione. Ad esempio, potrebbero essere necessari i ruoli seguenti per implementare questi scenari nell'organizzazione:
+Ora che conosci gli scenari da implementare e ciò di cui hai bisogno per supportarli, puoi riunire il tuo team e iniziare a pianificare, implementare e monitorarne il funzionamento nell'organizzazione. Ad esempio, i ruoli seguenti potrebbero essere necessari per implementare tali scenari nell’organizzazione:
 
 | Immagine | Ruolo | Responsabilità | Reparto |
 | ---- | ---- | ----- | ----- |
