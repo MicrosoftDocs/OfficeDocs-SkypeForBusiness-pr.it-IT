@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 3418abb7196e855ab86fff72bc7c1e10eb37bfc0
-ms.sourcegitcommit: d3d3d5a70a69359fc71f072ad6c651556f4eda00
+ms.openlocfilehash: eef9fc099a3509e946fd7d776dd878423df1cdea
+ms.sourcegitcommit: 867e8b4120e81c93c029c0c1b9cb69c161fc87a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63783915"
+ms.lasthandoff: 03/26/2022
+ms.locfileid: "64480678"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>Microsoft Teams dispositivi Android certificati
 
@@ -71,9 +71,9 @@ I dispositivi seguenti sono certificati nell'Microsoft Teams Rooms di certificaz
 
 | Modello di dispositivo | Versione firmware | Data di fine certificazione corrente | Dimensioni della sala                                        |  Versione del sistema operativo Android    |
 |:------------------------|:-----------------|:--------------|:----------------------------------------------------------|-----------------------------------|
-| Barra ordinata | `NFB1.20220211.1158`     |3 settembre 2024|    Piccole Sala riunioni (4,5 m x 4,5 m) | 10 |
-| Tastiera ordinata | `NFA1.20220211.1158 `    | 5 agosto 2023 |    Piccole Sala riunioni (4,5 m x 4,5 m) | 9 |
-| Scheda ordinata | `NFC1.20220211.1158 `  | 3 settembre 2024 |    Piccole Sala riunioni (4,5 m x 4,5 m) | 10 |
+| Barra ordinata | `NFB1.20220211.1400` |3 settembre 2024|    Piccole Sala riunioni (4,5 m x 4,5 m) | 10 |
+| Console touch pad ordinata | `NFA1.20220211.1400`  | 5 agosto 2023 |  Compatibile solo con Neat Bar | 9 |
+| Scheda ordinata | `NFC1.20220211.1400 ` | 3 settembre 2024 |    Piccole Sala riunioni (4,5 m x 4,5 m) | 10 |
 | Compagno di stanza logitech | `1.4.71` | 3 settembre 2024  | Sala riunioni di grandi dimensioni (4,5 m x 8,5 m)  |   10  |
 | EPOS EXPAND 80T | `1.2.2.21182.10` | 5 agosto 2023 | In bundle con EPOS Vision 3T | 9 |
 | Dispositivo di tocco Logitech     | `1.2.982`  |   3 settembre 2024  | Compatibile con Logitech Rally Bar e Rally Bar Mini | 10 |
@@ -102,7 +102,7 @@ I dispositivi seguenti sono certificati nel programma Microsoft Teams di certifi
 
 | Modello di dispositivo| Versione firmware | Data di fine certificazione corrente | Versione del sistema operativo Android |                                         
 |:------------------------|:-----------------|:--------------|-----------------------|
-|Barra ordinata         | `NFB1.20220211.1158` | 5 agosto 2023 | 9 |
+|Pannello del pad ordinato    | `NFA1.20220211.1400` | 5 agosto 2023 | 9 |
 |Crestron TSS-770 | `1.003.0082` |5 dicembre 2022  | 8.1 |
 |Crestron TSS-1070 | `1.003.0082`|5 dicembre 2022 | 8.1 |
 |Yealink RoomPanel | `147.15.0.1`|5 agosto 2023   | 9 |

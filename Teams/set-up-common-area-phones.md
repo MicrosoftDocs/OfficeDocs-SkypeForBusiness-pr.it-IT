@@ -21,18 +21,18 @@ ms.custom:
 - Phone System
 - seo-marvel-mar2020
 description: "Informazioni su come configurare i telefoni dell'area comune per lobby, aree di ricezione e sale riunioni "
-ms.openlocfilehash: 144e32e1bf56bc3e2d64d0c6a1a137fd501442b7
-ms.sourcegitcommit: 5aae5eace62e491dac655882d24974824ce1aa07
+ms.openlocfilehash: 313a17d1829c8f3584ec5fb7f37e5f1ec49231d0
+ms.sourcegitcommit: 39378888464ade3cb45879a449143f40f202f3e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "62856664"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64456939"
 ---
 # <a name="deploy-common-area-phones-for-microsoft-teams"></a>Distribuire telefoni ad area comune per Microsoft Teams
 
 Un telefono dell'area comune è in genere posizionato in un'area come una sala d'attesa o un'altra area che è disponibile a molte persone per effettuare una chiamata; ad esempio un'area di ricezione, una sala d'attesa o un telefono per conferenze. I telefoni dell'area comune sono connessi con account collegati a una licenza di area Telefono comune.
 
-Questo articolo fornisce una panoramica su come distribuire e configurare i telefoni Teams telefoni come telefoni dell'area comune per gli spazi condivisi. Per un'esperienza più completa nella sala riunioni, inclusa l'audioconferenza, è consigliabile acquistare la licenza Sala riunioni con un dispositivo della sala riunioni.
+Questo articolo fornisce una panoramica su come distribuire e configurare i telefoni Teams telefoni come telefoni di area comune per gli spazi condivisi. Per un'esperienza più completa nelle sale riunioni, inclusa l'audioconferenza, è consigliabile acquistare la licenza Sala riunioni con un dispositivo della sala riunioni.
 
 ## <a name="overview"></a>Panoramica
 
@@ -55,17 +55,17 @@ La licenza common area Telefono supporta:
 &sup2; Non disponibile nei cloud sovrani  
 
 >[!NOTE]
-> Gli account per i telefoni dell'area comune creati in Skype for Business Server non possono essere migrati a Microsoft Teams. Seguire i passaggi di questo articolo per ricreare gli account per Teams e, se necessario, eseguire la migrazione della connettività PTSN.
+> Gli account per i telefoni di area comune creati in Skype for Business Server non possono essere migrati a Microsoft Teams. Seguire i passaggi di questo articolo per ricreare gli account per Teams e, se necessario, eseguire la migrazione della connettività PTSN.
 
 ## <a name="step-1---buy-the-licenses"></a>Passaggio 1: acquista le licenze
 
-Prima di tutto, è necessario acquistare una licenza common area Telefono (CAP) e assicurarsi di avere un telefono certificato. Per cercare e altre informazioni sui telefoni certificati, vai a Microsoft Teams [dispositivi](https://products.office.com/microsoft-teams/across-devices?ms.url=officecomteamsdevices&rtc=1).
+Prima di tutto, è necessario acquistare una licenza di Common Area Telefono (CAP) e assicurarsi di avere un telefono certificato. Per cercare e altre informazioni sui telefoni certificati, vai a Microsoft Teams [dispositivi](https://products.office.com/microsoft-teams/across-devices?ms.url=officecomteamsdevices&rtc=1).
 
 1. Nel interfaccia di amministrazione di Microsoft 365, passare a **BillingPurchase** >  services. 
 
 2. Se la **sezione Visualizza per categoria** non è già visualizzata, passare a Acquista **da Microsoft** e selezionare **Visualizza prodotti**. Quindi selezionare **Collaborazione e comunicazione**.  
 
-3. Nell'elenco dei prodotti trovare **Area Telefono** e selezionare **Dettagli**.
+3. Nell'elenco dei prodotti trovare **Area comune** Telefono e selezionare **Dettagli**.
 
 4. Immetti il numero di licenze necessarie e seleziona **Acquista**.
 
@@ -82,7 +82,7 @@ Se si distribuiscono più telefoni di area comuni contemporaneamente, vedere com
 
 Se si sta distribuendo un dispositivo:
 
-1. Nella finestra interfaccia di amministrazione di Microsoft 365 passare a **UtentiAttivatiAggiungere** >  >  **un utente**.
+1. Nella finestra interfaccia di amministrazione di Microsoft 365 passare a **UtentiAttiviAggiungere** >  >  **un utente**.
 
 2. Immettere un nome utente come "Principale" per il nome e "Ricezione" per il secondo nome.
 
@@ -104,7 +104,7 @@ Se si sta distribuendo un dispositivo:
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-Usare PowerShell quando si vogliono creare e assegnare licenze per più account utente contemporaneamente. Per altre informazioni, vedere Creare Microsoft 365 account utente con PowerShell e Assegnare Microsoft 365 licenze agli account utente con PowerShell.See [Create Microsoft 365 user accounts with PowerShell](/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell?view=o365-worldwide) and [Assign Microsoft 365 licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide) for more information.
+Usare PowerShell quando si vogliono creare e assegnare licenze per più account utente contemporaneamente. Per [altre informazioni, vedere Creare Microsoft 365](/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell?view=o365-worldwide) account utente con PowerShell e [Assegnare Microsoft 365 licenze agli account utente con PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide).
 
 ## <a name="step-3---set-policies-for-common-area-phones"></a>Passaggio 3 - Impostare i criteri per i telefoni dell'area comune
 
@@ -115,9 +115,9 @@ Usare i criteri per controllare quali funzionalità sono disponibili per gli ute
 
 ### <a name="ip-phone-policies"></a>Criteri per i telefoni IP
 
-I telefoni a cui è stato eseguito l'accesso con account a cui è stata assegnata una licenza Telefono area comune visualizzano l'esperienza utente dell'area comune.
+I telefoni connessi con account a cui è stata assegnata una licenza Telefono area comune visualizzano l'esperienza utente dell'area comune.
 
-Se si vuole ignorare l'interfaccia predefinita di un telefono, è consigliabile creare un criterio [telefono IP](/powershell/module/skype/new-csteamsipphonepolicy?view=skype-ps). Ad esempio, se un telefono di area comune viene usato in un'area pubblica, impostare un criterio telefono IP per limitare la ricerca nella Rubrica globale dell'organizzazione e bloccare l'hot desking. Per [altre informazioni, Teams'interfaccia utente di Set Teams dispositivi Android](devices/Teams-Android-devices-user-interface.md).
+Se si vuole ignorare l'interfaccia predefinita di un telefono, è consigliabile creare un criterio [telefono IP](/powershell/module/skype/new-csteamsipphonepolicy?view=skype-ps). Ad esempio, se un telefono di area comune viene usato in un'area pubblica, impostare un criterio telefono IP per limitare la ricerca nella Rubrica globale dell'organizzazione e bloccare l'hot desking. Per [altre informazioni, vedere Teams'interfaccia utente dei dispositivi Android](devices/Teams-Android-devices-user-interface.md).
 
 ### <a name="calling-policies"></a>Criteri di chiamata
 
@@ -147,6 +147,9 @@ Per accedere localmente con un nome utente e una password:
 
 3. Seguire le istruzioni di accesso nel dispositivo. Una volta effettuato l'accesso, il telefono visualizza l'esperienza utente del telefono dell'area comune.
 
+> [!NOTE]
+> Se si usa un criterio di configurazione personalizzato che sblocca l'app per le chiamate, la tastiera del telefono non viene visualizzata nell'area Telefono. Per altre informazioni sui criteri Teams di configurazione delle app, vedere [Gestire i criteri di configurazione delle app in Microsoft Teams](/microsoftteams/teams-app-setup-policies).
+
 ### <a name="sign-in-from-another-device"></a>Accedere da un altro dispositivo
 
 È anche possibile accedere a un telefono dell'area comune da un altro dispositivo usando un codice. Quando accedi in questo modo, immetti il nome utente e la password su un altro dispositivo, invece che sul telefono stesso.
@@ -168,5 +171,5 @@ Dopo aver configurato e effettuato l'accesso ai telefoni dell'area comune per l'
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Aggiornare Microsoft Teams dispositivi in remoto](devices/remote-update.md)
-- [Gestire i tag Microsoft Teams dispositivo](devices/manage-device-tags.md)
+- [Gestire i Microsoft Teams dei dispositivi](devices/manage-device-tags.md)
 - [Microsoft Teams dell'integrità dei dispositivi](alerts/device-health-status.md)

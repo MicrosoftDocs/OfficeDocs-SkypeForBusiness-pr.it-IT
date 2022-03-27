@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5ff97fae1fb2483dcddf301715018b6a94f908a7
-ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
+ms.openlocfilehash: d0f2364471b3800042e7536d1013b82d76209a02
+ms.sourcegitcommit: 39378888464ade3cb45879a449143f40f202f3e9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63711440"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64457069"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -487,6 +487,10 @@ if($cleanup){
 - Teams deve essere distribuito per utente o per computer. La distribuzione di Teams per utente simultaneo e per computer non è supportata. Per eseguire la migrazione da un computer o un utente a una di queste modalità, seguire la procedura di disinstallazione e ridistribuire in entrambe le modalità.
 - Azure Virtual Desktop non supporta al momento i client basati su macOS e Linux.
 - L'opzione tenant veloce può causare problemi relativi alle chiamate in VDI, ad esempio la condivisione dello schermo non disponibile. Il riavvio del client ridurrà questi problemi.
+
+### <a name="notifications"></a>Notifiche
+
+- La notifica e la presenza del conteggio dei messaggi Windows sulla barra delle applicazioni non sono supportate in un host Windows Server 2016 messaggi.
 
 ### <a name="calling-and-meetings"></a>Chiamate e riunioni
 
