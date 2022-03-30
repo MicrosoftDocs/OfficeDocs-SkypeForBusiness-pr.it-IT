@@ -1331,12 +1331,6 @@ items:
                 href: rooms/rooms-deploy.md
               - name: Configurare gli account
                 href: rooms/rooms-configure-accounts.md
-              - name: Surface Hub
-                items:
-                  - name: Configurare Riunioni coordinate
-                    href: rooms/coordinated-meetings.md
-                  - name: Gestire le impostazioni di Microsoft Teams Rooms.
-                    href: rooms/surface-hub-manage-config.md
               - name: Creare account di risorsa
                 href: rooms/with-office-365.md
               - name: Con Skype for Business Server

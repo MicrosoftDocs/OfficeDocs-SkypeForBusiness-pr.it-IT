@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b84957e7451b75b804d2c279e160a260dabfbea8
-ms.sourcegitcommit: b57e19e20900ff02f3196c811bf1dd1acd149c79
+ms.openlocfilehash: d00cc5cd41d0b48f55564894a78f066406288151
+ms.sourcegitcommit: 39378888464ade3cb45879a449143f40f202f3e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60579536"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64456949"
 ---
 # <a name="manage-teams-in-the-microsoft-teams-admin-center"></a>Gestire i team nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -32,18 +32,19 @@ ms.locfileid: "60579536"
 
 Questo articolo offre una panoramica degli strumenti di gestione per Teams nell'Interfaccia di amministrazione di Microsoft Teams.
 
-L'amministratore potrebbe dover visualizzare o aggiornare i team che l'organizzazione ha impostato per la collaborazione oppure potrebbe dover eseguire azioni correttive come l'assegnazione di proprietari per i team senza proprietario. È possibile gestire i team usati nell'organizzazione tramite il modulo di PowerShell di Microsoft Teams e l'Interfaccia di amministrazione di Microsoft Teams. È possibile accedere all'Interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Per le funzionalità di amministrazione complete con questi due set di strumenti, è necessario assicurarsi di avere uno dei seguenti ruoli:
+L'amministratore potrebbe dover visualizzare o aggiornare i team che l'organizzazione ha impostato per la collaborazione oppure potrebbe dover eseguire azioni correttive come l'assegnazione di proprietari per i team senza proprietario. È possibile gestire i team usati nell'organizzazione tramite il modulo di PowerShell di Microsoft Teams e l'Interfaccia di amministrazione di Microsoft Teams. È possibile accedere all'Interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Per le funzionalità di amministrazione complete che usano questi due set di strumenti, è necessario assicurarsi di avere uno dei ruoli seguenti:
 
 - Amministratore globale
 - Amministratore di Teams
 
 È possibile ottenere altre informazioni sui ruoli di amministratore in Teams in [Usare i ruoli di amministratore di Microsoft Teams per gestire Teams](using-admin-roles.md)e altre informazioni su come usare i cmdlet di PowerShell per la gestione dei team in [Microsoft Teams cmdlet reference](/powershell/teams/).
 
-
+> [!NOTE]
+> Gli amministratori di Skype for Business Online possono gestire **Teams** e i criteri delle app di **Skype for Business Online** tramite PowerShell.
 
 ## <a name="teams-overview-grid"></a>Griglia panoramica di Teams
 
-Gli strumenti di gestione per i team si trovano nel nodo **Teams** nell'Interfaccia di amministrazione di Microsoft Teams. Nell'Interfaccia di amministrazione selezionare **Teams** > **Gestisci i team**. Ogni team è supportato da un gruppo di Microsoft 365 e questo nodo offre una visualizzazione dei gruppi abilitati per Microsoft Teams nell'organizzazione.
+Gli strumenti di gestione per i team si trovano nel nodo di **Teams** nell'interfaccia di amministrazione di Microsoft Teams. Nell'interfaccia di amministrazione selezionare **Teams** > **Gestire i team**. Ogni team è supportato da un gruppo di Microsoft 365 e questo nodo offre una visualizzazione dei gruppi abilitati per Microsoft Teams nell'organizzazione.
 
 ![Screenshot della griglia panoramica di Teams.](media/manage-teams-in-modern-portal-grid.png)  
 
@@ -65,7 +66,7 @@ Nella griglia vengono mostrate le seguenti proprietà:
 
 ### <a name="add"></a>Aggiungere
 
-Per aggiungere un nuovo team, fare clic su **Aggiungi**. Nel riquadro **Aggiungi un nuovo team** assegnare al team un nome e una descrizione, impostare se si vuole renderlo privato o pubblico, e infine la classificazione.
+Per aggiungere un nuovo team, fare clic su **Aggiungi**. Nel riquadro **Aggiungi un nuovo team** assegnare al team un nome e una descrizione, impostare se si vuole renderlo un team privato o pubblico e impostare la classificazione.
 
 > [!NOTE]
 > I team appena creati possono essere gestiti immediatamente nell'Interfaccia di amministrazione di Teams, a differenza dell'esperienza in altri client, ad esempio in Outlook.

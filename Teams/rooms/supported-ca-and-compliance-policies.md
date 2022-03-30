@@ -12,12 +12,12 @@ f1.keywords:
 ms.collection:
 - M365-collaboration
 description: Informazioni sui criteri di accesso condizionale e conformità dei dispositivi intune supportati e consigliati per Microsoft Teams Rooms.
-ms.openlocfilehash: f3b115430779324a260232ce45ba125859abdde8
-ms.sourcegitcommit: dafe48cea1643e1bd79390482da9b002d7e9e0bb
+ms.openlocfilehash: ea27f71a7d4f64bc1d9e8c8a3cd3d7b2a52151f3
+ms.sourcegitcommit: ecc67b7b9378cc72f85517f30c32680045056fda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63689135"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64504196"
 ---
 # <a name="supported-conditional-access-and-intune-device-compliance-policies-for-microsoft-teams-rooms"></a>Criteri di conformità dei dispositivi di Intune e accesso condizionale supportati per Microsoft Teams Rooms
 
@@ -28,7 +28,7 @@ Questo articolo fornisce i criteri di conformità dei dispositivi di Intune e ac
 
 ## <a name="supported-conditional-access-policies"></a>Criteri di accesso condizionale supportati  
 
-L'elenco seguente include i criteri di accesso condizionale supportati per Teams Rooms in Windows e in Android:
+L'elenco seguente include i criteri di accesso condizionale supportati per Teams Rooms in Windows e android. I criteri di Android supportati si applicano a tutti i dispositivi, i telefoni e i pannelli Android.
 
 | Assegnazione | Windows | Android |
 |------------|---------|---------|

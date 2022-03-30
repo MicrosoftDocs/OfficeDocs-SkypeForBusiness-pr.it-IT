@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 677ee2b0d57477ee79a9af7510d0ccf2dfbcae28
-ms.sourcegitcommit: b91d83739a078b175770c797c17d602eb5c83a4f
+ms.openlocfilehash: 1ed41c595a386607942c81dda8f151435a1d1ac7
+ms.sourcegitcommit: ecc67b7b9378cc72f85517f30c32680045056fda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63774015"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64504146"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
@@ -61,28 +61,30 @@ Le app sono aggiunte a:
 
 Per creare un criterio di configurazione dell'app per aggiungere le app, eseguire la procedura seguente:
 
-1. Nel riquadro di spostamento sinistro [dell'interfaccia Teams di amministrazione](https://www.admin.teams.microsoft.com) passare a Teams **app di** >  **installazione**.
+1. Accedere [all'Microsoft Teams di amministrazione](https://admin.teams.microsoft.com).
 
-2. Selezionare **Aggiungi**.
+1. Nel riquadro sinistro passare a Teams **app di** >  **installazione**.
 
-3. Immettere un nome e una descrizione per il criterio.
+1. Selezionare **Aggiungi**.
 
-4. Attivare **l'aggiunta di utenti**.
+1. Immettere un nome e una descrizione per il criterio.
+
+1. Attivare **l'aggiunta di utenti**.
 
    > [!NOTE]
    > **L'impostazione** Aggiunta utenti è disponibile nell'interfaccia di amministrazione di Teams in ambienti Microsoft 365 Government Community Cloud (GCC) (GCC, GCC High e DoD), ma attualmente non ha alcun effetto.
 
-5. In **App aggiunte** selezionare **Aggiungi app**.
+1. In **App aggiunte** selezionare **Aggiungi app**.
 
-6. Nel riquadro **Aggiungi app aggiunte** cercare le app da aggiungere e quindi selezionare **Aggiungi**. È anche possibile filtrare le app in base ai criteri di autorizzazione delle app.
+1. Nel riquadro **Aggiungi app aggiunte** cercare le app da aggiungere e quindi selezionare **Aggiungi**. È anche possibile filtrare le app in base ai criteri di autorizzazione delle app.
 
-7. Selezionare **Aggiungi**.
+1. Selezionare **Aggiungi**.
 
-8. Sotto la **barra delle app** o le **estensioni** di messaggistica disporre le app nell'ordine in cui si vuole che vengano visualizzate Teams.
+1. Sotto la **barra delle app** o le **estensioni** di messaggistica disporre le app nell'ordine in cui si vuole che vengano visualizzate Teams.
 
    ![nella sezione App aggiunte.](media/pin-messaging-extensions.png)
 
-9. Selezionare **Salva**.
+1. Selezionare **Salva**.
 
 ## <a name="install-apps"></a>Installare le app
 

@@ -18,16 +18,16 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Scopri come personalizzare le app in Microsoft Teams.
-ms.openlocfilehash: a8862e5c8b8d7d63f88274ed47cf647572b54401
-ms.sourcegitcommit: 39378888464ade3cb45879a449143f40f202f3e9
+ms.openlocfilehash: 2696768bbd7ed930652d8671600f9721f15960b7
+ms.sourcegitcommit: ecc67b7b9378cc72f85517f30c32680045056fda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64456899"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64504126"
 ---
 # <a name="customize-apps-in-microsoft-teams"></a>Personalizzare le app in Microsoft Teams
 
- Microsoft Teams personalizzazioni delle app per migliorare l'esperienza Teams utente. Alcuni sviluppatori di app consentono di personalizzare un'app dall'Teams amministratore. L'amministratore può personalizzare o ridenobrare le proprietà dell'app in base alle esigenze dell'organizzazione usando la Teams **di amministrazione di** Gestione app. I dettagli che è possibile personalizzare sono:
+ Microsoft Teams personalizzazioni delle app per migliorare l'esperienza Teams utente. Alcuni sviluppatori di app consentono di personalizzare un'app dall'Teams amministratore. L'amministratore può personalizzare o ridenobrare le proprietà dell'app in base alle esigenze dell'organizzazione usando la Microsoft Teams **di amministrazione di** Gestione app. I dettagli che è possibile personalizzare sono:
 
 - Nome breve
 - Breve descrizione
@@ -49,7 +49,7 @@ Vedere lo [schema Teams manifesto](/microsoftteams/platform/resources/schema/man
 
 Per iniziare a personalizzare un'app, completare la procedura seguente:
 
-1. Passare all'interfaccia di amministrazione di Teams.
+1. Accedere all'interfaccia [Teams di amministrazione](https://admin.teams.microsoft.com/dashboard).
 
 2. Espandere **Teams app e** selezionare **Gestisci app**.
 
@@ -63,7 +63,7 @@ Per iniziare a personalizzare un'app, completare la procedura seguente:
 
      ![Opzione di personalizzazione della selezione 1.](media/select-app-to-customize1.png)
 
-   - Selezionare il nome dell'app e quindi **Personalizzabile**.
+   - Selezionare il nome dell'app e quindi selezionare l'icona di modifica in **Personalizzabile**.
 
      ![Opzione di personalizzazione della selezione 2.](media/app-details-customizable.png)
 

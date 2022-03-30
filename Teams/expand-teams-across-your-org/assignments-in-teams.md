@@ -21,12 +21,12 @@ description: Informazioni su come gestire le attività nell'Microsoft Teams di a
 ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 88414131b5ba8fee750efef8d0b6f6f5313e13fd
-ms.sourcegitcommit: 1129841e68e927fe7cc31de3ad63a3e9247253cd
+ms.openlocfilehash: 529240db27824ce8bf872d23636b904198ef7db1
+ms.sourcegitcommit: ecc67b7b9378cc72f85517f30c32680045056fda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62363142"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "64504136"
 ---
 # <a name="assignments-in-teams-for-education"></a>Assegnare attività in Teams per l'istruzione
 
@@ -35,9 +35,9 @@ Le funzionalità Attività e voti in Teams per l'istruzione i docenti possono as
 [Altre informazioni su Attività e voti in Teams per l'istruzione](https://support.office.com/article/microsoft-teams-5aa4431a-8a3c-4aa5-87a6-b6401abea114?ui=en-US&rs=en-IE&ad=IE#ID0EAABAAA=Assignments).
 
 > [!Note]
-> Per informazioni dettagliate Teams attività in piattaforme diverse, vedere Teams [funzionalità per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
+> Per informazioni dettagliate Teams attività su piattaforme diverse, vedere Teams [funzionalità per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
-## <a name="assignments-integrations-in-the-microsoft-teams-admin-center"></a>Integrazioni di assegnazioni nell'interfaccia Microsoft Teams di amministrazione
+## <a name="assignments-integrations-in-the-microsoft-teams-admin-center"></a>Integrazioni di attività nell'interfaccia Microsoft Teams di amministrazione
 
 Usando le impostazioni di amministrazione nell'Microsoft Teams di amministrazione, è possibile attivare o disattivare le funzionalità per i docenti all'interno dell'organizzazione e per i loro studenti. Di seguito sono riportate le impostazioni relative alle attività:
 
@@ -45,7 +45,7 @@ Usando le impostazioni di amministrazione nell'Microsoft Teams di amministrazion
 
 ### <a name="weekly-guardian-email-digest"></a>Digest della posta elettronica del tutore settimanale
 
-I messaggi di posta elettronica dei tutori vengono inviati ogni fine settimana a genitori o tutori. Il messaggio di posta elettronica contiene informazioni sulle attività della settimana precedente e della settimana successiva. La sincronizzazione padre e tutore può essere impostata [usando School Data Sync](/schooldatasync/parent-contact-sync).
+I messaggi di posta elettronica dei tutori vengono inviati ogni fine settimana a genitori o tutori. Il messaggio di posta elettronica contiene informazioni sulle attività della settimana precedente e della settimana successiva. La sincronizzazione padre e tutore può essere impostata usando [School Data Sync](/schooldatasync/parent-contact-sync).
 
 1. Importare le informazioni sul contatto padre tramite Parent e Guardian Sync in SDS. Per istruzioni su come abilitare la sincronizzazione padre e tutore, vedere Abilitazione [della sincronizzazione padre e tutore](/schooldatasync/parent-contact-sync#enabling-parent-and-guardian-sync).
 
@@ -74,7 +74,7 @@ MakeCode è un prodotto Microsoft soggetto alle condizioni per l'uso [e alle](ht
 
 L'impostazione predefinita per questa funzionalità è - **Disattivato**.
 
-Per abilitare le assegnazioni MakeCode in Teams, passare all'interfaccia di amministrazione di **Teams**, passare alla sezione Attività e  attivare l'opzione MakeCode **.** Fare clic su **Salva**. Consentire l'applicazione di queste impostazioni per alcune ore.
+Per abilitare le assegnazioni MakeCode in Teams, passare all'interfaccia di amministrazione di **Teams**, passare alla sezione Attività e attivare  l'interruttore MakeCode **.** Selezionare **Salva**. Consentire l'applicazione di queste impostazioni per alcune ore.
 
 Per altre informazioni sul funzionamento di questa funzionalità, guardare questa [dimostrazione video](https://makecode.com/blog/teams/teams-assignments).
 
@@ -113,22 +113,22 @@ Dopo aver fatto **clic sul pulsante** Salva nell'interfaccia di amministrazione 
 
 ## <a name="assignments-data"></a>Dati delle assegnazioni
 
-Le attività archiviano le informazioni generate sia da docenti che da studenti. Tutti i dati vengono condivisi in modo condiviso tra l'insegnante e lo studente specifico per cui le informazioni sono destinate in classe. Ci sono due negozi di questo tipo, SharePoint e all'esterno di SharePoint.
+Le attività archiviano le informazioni generate sia da docenti che da studenti. Tutti i dati vengono condivisi in modo condiviso tra l'insegnante e lo studente specifico per cui le informazioni sono destinate in classe. Ci sono due archivi di questi dati, SharePoint e all'esterno di SharePoint.
 
 >[!NOTE]
 >Le stesse regole si applicano anche alle integrazioni di terze parti, ad esempio l'avanzamento della lettura.
 
 ### <a name="assignments-data-in-sharepoint-document-libraries"></a>Dati delle assegnazioni nelle SharePoint documenti
 
-I file degli studenti associati a un invio per l'attività vengono archiviati in una raccolta documenti denominata Lavoro *degli studenti*. I file associati alle attività create da docenti e accessibili dagli studenti vengono archiviati in un'altra raccolta documenti ,*denominata File di* classe, nel sito di SharePoint team di classe corrispondente. Le integrazioni di prima parte possono anche archiviare i dati delle attività nello stesso sito di SharePoint team di classe corrispondente (denominato: *Titolo attività + timestamp*).
+I file degli studenti associati a un invio per l'attività vengono archiviati in una raccolta documenti denominata Lavoro *degli studenti*. I file associati alle attività create da docenti e accessibili dagli studenti vengono archiviati in un'altra raccolta documenti ,*denominata File di* classe, nel sito del team SharePoint classe corrispondente. Le integrazioni di prima parte possono anche archiviare i dati delle attività nello stesso sito di SharePoint team di classe corrispondente (denominato: *Titolo attività + timestamp*).
 
 #### <a name="files-associated-with-the-student"></a>File associati allo studente
 
-Gli amministratori IT possono usare lo strumento Ricerca contenuto per cercare file degli *studenti (Lavoro* degli *studenti, File* di classe o altri file di integrazione di 1° parte) correlati agli invii di attività e ai file correlati alle attività. Ad esempio, un amministratore può cercare in tutti i siti di SharePoint dell'organizzazione e usare il nome dello studente e il nome della classe o dell'attività nella query di ricerca per trovare i dati rilevanti per una richiesta DSR (Data Subject Request).
+Gli amministratori IT possono usare lo strumento Ricerca contenuto per cercare file degli *studenti (Lavoro* degli *studenti, File* di classe o altri file di integrazione di 1° parte) correlati agli invii di attività e ai file correlati alle attività. Ad esempio, un amministratore può cercare in tutti i siti SharePoint dell'organizzazione e usare il nome dello studente e il nome della classe o dell'attività nella query di ricerca per trovare i dati rilevanti per una richiesta DSR (Data Subject Request).
 
 #### <a name="files-associated-with-the-teacher"></a>File associati al docente
 
-Gli amministratori IT possono usare lo strumento Ricerca contenuto per cercare i file degli *insegnanti (Lavoro* degli *studenti, File* di classe o altri file di integrazione di 1° parte) correlati alle attività, nonché i file distribuiti agli studenti dai docenti all'interno di una classe per le attività. Ad esempio, un amministratore può cercare in tutti i siti SharePoint dell'organizzazione e usare il nome del docente e il nome della classe o dell'attività nella query di ricerca per trovare i dati rilevanti per un DSR.
+Gli amministratori IT possono usare lo strumento Ricerca contenuto per cercare i file degli *insegnanti (Lavoro* degli *studenti, File* di classe o altri file di integrazione di 1° parte) correlati alle attività e ai file distribuiti agli studenti dai docenti all'interno di una classe per le attività. Ad esempio, un amministratore può cercare in tutti i siti SharePoint dell'organizzazione e usare il nome del docente e il nome della classe o dell'attività nella query di ricerca per trovare i dati rilevanti per un DSR.
 
 ### <a name="assignments-data-outside-of-sharepoint-document-libraries"></a>Dati delle assegnazioni all'esterno SharePoint raccolte documenti
 
@@ -174,6 +174,39 @@ Per altre informazioni,  [vedereConfigurare le assegnazioni per Teams](/micros
 
 È anche possibile usare i Teams per rimuovere assegnazioni e voti per un utente specifico o per l'intero tenant.
 
-Per rimuovere assegnazioni e voti per un singolo utente, passare **all'interfaccia** di amministrazione di Teams e passare Teams **app >** Criteri di autorizzazione per creare una nuova definizione dei criteri di autorizzazione per le app.  Quando si crea la nuova definizione dei criteri, impostare i criteri delle  **app Microsoft** su Blocca app specifiche e consentire a tutti gli altri utenti e aggiungere Attività **all'elenco** delle applicazioni bloccate. Dopo aver salvato la nuova definizione dei criteri, assegnarla agli utenti appropriati.
+Per rimuovere assegnazioni e voti per un singolo utente, passare **all'interfaccia** di amministrazione di Teams e passare alle app Teams **>** Criteri di autorizzazione per creare una nuova definizione dei criteri di autorizzazione delle app.  Quando si crea la nuova definizione dei criteri, impostare i criteri delle  **app Microsoft** su Blocca app specifiche e consentire a tutti gli altri utenti e aggiungere Attività **all'elenco** delle applicazioni bloccate. Dopo aver salvato la nuova definizione dei criteri, assegnarla agli utenti appropriati.
 
-Per rimuovere attività e voti per l'intero tenant, passare **all'interfaccia** di amministrazione di Teams, passare Teams **app > Gestisci app** e cercare e selezionare Attività nell'elenco delle applicazioni. Modificare l'impostazione dello stato nella pagina Impostazioni applicazione assegnazione su _Bloccato_.
+Per rimuovere attività e voti per l'intero tenant, passare **all'interfaccia** di amministrazione di Teams, passare alle app **Teams > Gestisci app** e cercare e selezionare Attività nell'elenco delle applicazioni. Modificare l'impostazione dello stato nella pagina Impostazioni applicazione assegnazione su _Bloccato_.
+
+## <a name="assignments-diagnostic-tool-for-users"></a>Strumento di diagnostica Assegnazioni per gli utenti
+
+Il supporto Tecnico Microsoft ha creato uno strumento per raccogliere dati di diagnostica per il team di progettazione Microsoft per analizzare i problemi relativi alla funzionalità Attività.
+
+È possibile accedere a questo strumento all'interno di Attività in qualsiasi schermata in cui si verifica un problema.
+
+Per estrarre lo strumento di diagnostica in Teams, gli utenti possono:
+
+- **Sul desktop e sul Web:**
+  - Selezionare CTRL+/
+- **Nei dispositivi mobili:**
+  - Toccare lo schermo con due dita e ruotare le dita di 45 gradi oppure
+  - Toccare lo schermo con tre dita per 15 secondi
+
+Una volta visualizzato lo strumento di diagnostica, gli utenti visualizzano un elenco di dati che potrebbero essere necessari al supporto tecnico Microsoft.
+
+I dati estratti possono includere:
+
+- ID gruppo
+- ID tenant
+- ID sessione
+- ID attività
+- ID invio
+- ID utente
+
+Questi dati non vengono inviati automaticamente a Microsoft. Gli utenti devono copiare e incollare i dati a un agente del supporto tecnico Microsoft per quanto riguarda un ticket di supporto.
+
+Se un utente estrae lo strumento di diagnostica e lo chiude, non vengono inviati dati.
+
+Quando i dati vengono inviati a un agente di supporto Microsoft, vengono gestiti come dati di supporto ai sensi dei contratti di servizio Microsoft 365'organizzazione.
+
+Per istruzioni sull'uso di questo strumento di diagnostica che è possibile condividere con docenti e studenti, vedere Ottenere dati [di diagnostica per risolvere i problemi relativi alle attività](https://support.microsoft.com/topic/b40793f5-dbae-4c8a-841a-6baa7f232e2e).

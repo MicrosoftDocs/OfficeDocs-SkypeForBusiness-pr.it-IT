@@ -19,12 +19,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: f9e11a089c75f1060e509dc9895e97176fc30345
-ms.sourcegitcommit: cf2f96dbd485ac4cc822c5a591ccce6b47f12cc7
+ms.openlocfilehash: 748380aec60c578ff6c2b7687cd51a8a07a8024c
+ms.sourcegitcommit: 39378888464ade3cb45879a449143f40f202f3e9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59456346"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "64457059"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
@@ -91,7 +91,7 @@ Per informazioni dettagliate sull’ottimizzazione della rete, incluse indicazio
 </tr>
 <tr class="even">
 <td>Assistente per Teams</td>
-<td><a href="/microsoftteams/use-advisor-teams-roll-out">Advisor per Teams</a> fa parte dell’<a href="https://admin.teams.microsoft.com">interfaccia di amministrazione di Microsoft Teams</a>. Valuta l'ambiente di Microsoft 365 o Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams.</td>
+<td><a href="/microsoftteams/use-advisor-teams-roll-out">Advisor per Teams</a> fa parte dell'<a href="https://admin.teams.microsoft.com">interfaccia di amministrazione di Teams</a>. Valuta l'ambiente Microsoft 365 o Office 365 e identifica le configurazioni più comuni che potrebbe essere necessario aggiornare o modificare prima di poter implementare correttamente Teams.</td>
 </tr>
 <tr class="odd">
 <td>Risoluzione del nome esterno</td>
@@ -106,7 +106,7 @@ Per informazioni dettagliate sull’ottimizzazione della rete, incluse indicazio
 </tr>
 <tr class="even">
 <td>Routing ai data center Microsoft</td>
-<td><a href="/office365/enterprise/client-connectivity">Implementare il routing ottimizzato ai data center Microsoft</a>. Identificare le posizioni che possono utilizzare i punti di uscita locali per connettersi alla rete Microsoft nel modo più efficiente possibile.</td>
+<td><a href="/office365/enterprise/client-connectivity">Implementare il routing più efficiente ai data center Microsoft</a>. Identificare le località che possono usare i punti di uscita locali o locali per connettersi alla rete Microsoft nel modo più efficiente possibile.</td>
 </tr>
 <tr class="odd">
 <td>Indicazioni per il rilevamento e la prevenzione delle intrusioni</td>
@@ -153,7 +153,7 @@ Questa tabella descrive le modalità di utilizzo della larghezza di banda da par
       **Modalità**
    :::column-end:::
    :::column span="3":::
-      **Requisiti di larghezza di banda (bitrate Kb/s su/giù)**
+      **Requisiti di larghezza di banda (bitrate Kb/s su/giù)**    
    :::column-end:::
 :::row-end:::
 :::row:::
