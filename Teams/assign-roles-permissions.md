@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a9ca46e3fa967019e674651ea27299b6552144a7
-ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
+ms.openlocfilehash: b2f14993f47cdea5690413a32c9d286587db7324
+ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63711960"
+ms.lasthandoff: 03/30/2022
+ms.locfileid: "64556347"
 ---
 # <a name="assign-team-owners-and-members-in-microsoft-teams"></a>Assegnare proprietari e membri dei team in Microsoft Teams
 
@@ -44,7 +44,7 @@ La tabella seguente mostra le differenze tra l'autorizzazione di un proprietario
 |        ***Elimina canale privato**         |    Sì     |    No|
 |          **Aggiungere un canale condiviso**          |    Sì     |    No|
 | **Modificare il nome/la descrizione del canale condiviso** |    No     |    <sup>No6</sup>|
-|        **Eliminare un canale condiviso**         |    Sì     |    <sup>No6</sup>|
+|        **Elimina canale condiviso**         |    Sì     |    <sup>No6</sup>|
 |          **Aggiunge membri**          |  Sì<sup>3</sup>   |     No<sup>4</sup>    |
 |          **Richiedere l'aggiunta di membri**          |  N/D   |     Sì<sup>5</sup>     |
 |           **Aggiunge app**            |    Sì     |    Sì<sup>2</sup>|
@@ -63,7 +63,7 @@ La tabella seguente mostra le differenze tra l'autorizzazione di un proprietario
 
 ## <a name="moderator-capabilities"></a>Funzionalità moderatore
 
-Inoltre, se viene attivata la moderazione per un team, i proprietari e i membri del team possono assumere le funzioni di moderatore per un canale. I moderatori possono avviare nuovi post nel canale e controllare se i membri del team possono rispondere ai messaggi esistenti nel canale. Possono anche controllare se i bot e i connettori possono inviare messaggi di canale.
+Inoltre, se viene attivata la moderazione per un team, i proprietari e i membri del team possono assumere le funzioni di moderatore per un canale. I moderatori possono avviare nuovi post nel canale e controllare se i membri del team possono rispondere ai messaggi esistenti nel canale. I moderatori possono anche controllare se le app con funzionalità di bot e connettori possono inviare messaggi di canale.
 
 Le funzionalità di moderatore sono assegnate a livello di canale. Per impostazione predefinita, i proprietari del team hanno funzionalità di moderatore. Per impostazione predefinita, le funzionalità di moderatore dei membri del team sono disattivate. Tuttavia, il proprietario del team può assegnare a un membro del team le funzionalità di moderatore del canale. I moderatori all'interno di un canale possono aggiungere e rimuovere altri moderatori all'interno del canale.
 

@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni sulle licenze per i componenti aggiuntivi per Microsoft Teams e sulle funzionalità disponibili con ogni licenza.
-ms.openlocfilehash: 47481383c2ea4941eb29675216209e5b98a97e71
-ms.sourcegitcommit: ff975c21725e1812e6db8fc9fe37de1362f168c3
+ms.openlocfilehash: b5282cfe166a04cd58dbe5042cc2fc3e25e7405f
+ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "63435700"
+ms.lasthandoff: 03/30/2022
+ms.locfileid: "64556307"
 ---
 # <a name="microsoft-teams-add-on-licenses"></a>Microsoft Teams licenze per i componenti aggiuntivi
 
@@ -44,7 +44,7 @@ Ecco un elenco di licenze Teams componenti aggiuntivi e le relative funzionalit�
 |**Teams Telefono Standard** <br/> |[Teams Sistema telefonico](../what-is-phone-system-in-office-365.md) è un servizio telefonico ospitato che consente di controllare le chiamate e le funzionalità PBX (Private Branch Exchange). Teams Telefono licenze Standard ti offrono tutte le funzionalità Teams Sistema telefonico come la segreteria telefonica cloud, l'ID chiamante, il parcheggio di chiamata, l'inoltro di chiamata, gli operatori automatici, le code di chiamata, il trasferimento di chiamata e l'ID chiamante. <br/> <br/>Per altre informazioni su Sistema telefonico, vedere Ecco cosa si [ottiene con Teams Sistema telefonico](../here-s-what-you-get-with-phone-system.md). <br/> |
 |**Piani per chiamate di Microsoft Teams** <br/> |Se si vuole consentire agli utenti di chiamare numeri di telefono [all'esterno](../calling-plans-for-office-365.md) dell'organizzazione, è possibile acquistare Piani per chiamate di Microsoft Teams per connettersi ai numeri di telefono PSTN con Microsoft come provider PSTN. Sono disponibili piani per chiamate nazionali e piani per chiamate nazionali e internazionali. <br/> <br/> Per scoprire se i piani Teams chiamate sono disponibili nel proprio paese o area geografica, vedere Disponibilità di paese e area geografica per i piani per audioconferenze [e chiamate](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). |
 |**Crediti comunicazioni** | I Crediti comunicazioni forniscono un pool mensile di minuti che può essere usato anche per le chiamate PSTN, se tutti i minuti del piano chiamate vengono usati prima dell'inizio del mese successivo. Se si vogliono numeri gratuiti per audioconferenze, operatori automatici o code di chiamata, è necessario configurare [i Crediti comunicazioni](../set-up-communications-credits-for-your-organization.md). <br/> |
-|**Audioconferenza** <br/> |A volte gli utenti dell'organizzazione dovranno usare un telefono per accedere a una riunione Teams al posto del computer. [Configurare le audioconferenze](../set-up-audio-conferencing-in-teams.md) per gli utenti che pianificano o conducono riunioni con i partecipanti che devono chiamare tramite telefono. <br/> <br/>Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762).  <br/> <br/>Le organizzazioni possono ora usare un operatore di terze parti per i numeri di audioconferenza. Per altre informazioni, vedere [Pianificare le conferenze Connessione con operatore conferenza](../operator-connect-conferencing-plan.md). <br/>|
+|**Audioconferenza** <br/> |A volte gli utenti dell'organizzazione dovranno usare un telefono per accedere a una riunione Teams al posto del computer. [Configurare le audioconferenze](../set-up-audio-conferencing-in-teams.md) per gli utenti che pianificano o conducono riunioni con i partecipanti che devono chiamare tramite telefono. <br/> <br/>Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762).  <br/> <br/>Le organizzazioni possono ora usare un operatore di terze parti per i numeri di audioconferenza. Per altre informazioni, vedere [Pianificare Conferenze con connessione tramite operatore](../operator-connect-conferencing-plan.md). <br/>|
 |**Microsoft Teams Rooms** <br/> | Microsoft Teams Room è un prodotto aggiuntivo Microsoft Teams video, audio e condivisione di contenuti nelle sale riunioni. Le organizzazioni possono acquistare Microsoft Teams Rooms licenze autonome per queste funzionalità. Per altre informazioni, vedere Teams Sala riunioni [Licenze](../rooms/rooms-licensing.md). <br/>|
 
 ## <a name="which-microsoft-capabilities-are-available-with-my-plan"></a>Quali funzionalità Microsoft sono disponibili con il piano?
@@ -97,6 +97,12 @@ Ecco un riepilogo delle licenze vocali e chiamate Microsoft da acquistare, in ba
 </tr>
 </tbody>
 </table>
+
+## <a name="unassign-licenses-from-users"></a>Annullare l'assegnazione di licenze da parte degli utenti
+
+È possibile rimuovere l'accesso degli utenti a determinati prodotti in due modi: annullare l'assegnazione di licenze di prodotto da utenti specifici o annullare l'assegnazione di licenze utente da un prodotto specifico.
+
+Per istruzioni su come annullare l'assegnazione delle licenze, vedere [Annullare l'assegnazione di licenze da parte degli utenti](/microsoft-365/admin/manage/remove-licenses-from-users).
 
 ## <a name="more-guidance-on-microsoft-plans"></a>Altre indicazioni sui piani Microsoft
 

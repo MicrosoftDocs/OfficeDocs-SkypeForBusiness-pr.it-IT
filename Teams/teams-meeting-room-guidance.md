@@ -20,12 +20,12 @@ f1.keywords:
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b02e3f441ad7a4a338c86e89b2740561d3d552d7
-ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
+ms.openlocfilehash: ac7ac28eca8a139d9a7d1ff5a8100af1de772955
+ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63711570"
+ms.lasthandoff: 03/30/2022
+ms.locfileid: "64556277"
 ---
 # <a name="meeting-room-guidance-for-teams"></a>Indicazioni per le sale riunioni per Teams
 
@@ -232,7 +232,7 @@ In futuro, Teams Rooms sistemi audio che utilizzano un concetto denominato audio
 
 Una fotocamera ad angolo ultrawide è posizionata nella parte anteriore della stanza sotto gli schermi per catturare tutti gli utenti nello spazio.
 
-La fotocamera ultrawide-angel offre un monitoraggio intelligente dei partecipanti alla riunione in modo che possano essere rappresentati singolarmente in una vista di grandi dimensioni invece che come volti all'interno di un'immagine di grandi dimensioni dell'intera sala.
+La fotocamera ad angolo ultrawide offre un monitoraggio intelligente dei partecipanti alla riunione, in modo che possano essere rappresentati singolarmente in una vista di grandi dimensioni invece che come volti all'interno di un'immagine di grandi dimensioni dell'intera sala.
 
 ![Rendering di una sala riunioni migliorata da una visualizzazione dall'alto.](media/emr5.png)
 
@@ -246,7 +246,7 @@ Per offrire alle persone nella sala un maggiore senso di connessione ai partecip
 
 Il contenuto della riunione è circondato da componenti fluidi contestuali come l'agenda, le attività e le note, che possono essere aggiornati in tempo reale, consentendo ai partecipanti di rimanere coinvolti e produttivi. Inoltre, la chat della riunione viene visualizzata chiaramente in modo che quando si partecipa a una riunione Teams da una sala Teams, è possibile visualizzare e partecipare facilmente alla conversazione in tempo reale. In una sala Microsoft Teams, questo contenuto viene visualizzato su uno schermo con proporzioni ampie per massimizzare le dimensioni del contenuto della riunione e il numero di partecipanti che è possibile visualizzare contemporaneamente.
 
-Questo layout sarà supportato sia nelle configurazioni a schermo singolo che in quello dual-display e sarà reso disponibile tramite un Teams Rooms software. Anche se il layout della prima riga è particolarmente di grande impatto in una sala migliorata, la prima riga può essere usata in qualsiasi sala Teams in esecuzione su Windows, indipendentemente dalla configurazione dei mobili e dell'hardware.
+Questo layout è supportato sia nelle configurazioni a schermo singolo che in quello a doppio schermo. Anche se il layout della prima riga è particolarmente di grande impatto in una sala migliorata, la prima riga può essere usata in qualsiasi sala Teams in esecuzione su Windows, indipendentemente dalla configurazione dei mobili e dell'hardware.
 
 ### <a name="how-do-you-co-create-content"></a>Come si crea il contenuto in modalità co-creata?
 

@@ -23,12 +23,12 @@ ms.custom:
 - Licensing
 - seo-marvel-apr2020
 description: 'Learn how to set up communication credits (PSTN Consumption) billing licenses for your users and organization. '
-ms.openlocfilehash: 39ee93d35bbcb5055a6c5565df4f92374a18ed2e
-ms.sourcegitcommit: c5f281342c5f2af65492692ab1249789c637e457
+ms.openlocfilehash: f13580dcfa6d40802b414999e5fe047f3371b87e
+ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63392908"
+ms.lasthandoff: 03/30/2022
+ms.locfileid: "64556467"
 ---
 # <a name="set-up-communications-credits-for-your-organization"></a>Configurare i Crediti comunicazioni per la propria organizzazione
 
@@ -60,11 +60,13 @@ Per altre informazioni, vedere Microsoft Teams [licenze per i componenti aggiunt
 
 1. Accedere al interfaccia di amministrazione di Microsoft 365 con [l'account](https://portal.office.com/Adminportal) aziendale o dell'istituto di istruzione.
     
-2. Nel riquadro di spostamento sinistro del interfaccia di amministrazione di Microsoft 365 passare a **BillingPurchase** >  Services. Scorrere verso il basso e **selezionare Componenti aggiuntivi**.
+2. Nel riquadro di spostamento sinistro del interfaccia di amministrazione di Microsoft 365 passare a **BillingPurchase** >  Services.
 
-3. Selezionare **Crediti comunicazioni**.
+3. Cercare **Crediti comunicazioni nella** categoria componenti aggiuntivi  oppure cercare "Crediti comunicazioni" nella casella di ricerca Cerca in tutte le categorie  di prodotti e selezionare **Dettagli**.
     
-4. Nella pagina **Di sottoscrizione crediti comunicazioni** immettere le informazioni e quindi fare clic su **Avanti**:
+4. Esaminare le informazioni sul servizio e selezionare **Acquista**. Nota: in ogni ordine viene selezionato automaticamente un numero fisso di licenze per i Crediti comunicazioni.
+
+5. Nella pagina Cassa immettere le informazioni di pagamento e immettere le informazioni necessarie:
     
    - **Aggiungi fondi** Immettere l'importo da aggiungere al proprio account. Se l'opzione di ricarica automatica non è attiva, una volta esauriti i fondi, i Crediti comunicazioni saranno disabilitati (come il servizio per i numeri verdi in entrata). Per evitare di dover ricaricare fondi per i Crediti comunicazioni ogni volta che i fondi disponibili si esauriscono, si consiglia di attivare la funzionalità di autoricarica.
     
@@ -81,7 +83,7 @@ Per altre informazioni, vedere Microsoft Teams [licenze per i componenti aggiunt
      > 
      > Quando si usa la funzione di ricarica automatica, la fatturazione per i crediti di comunicazione viene generata quando viene raggiunto l'importo del trigger e viene elaborata una transazione di ricarica. Gli importi del credito di comunicazione vengono usati per primi in modo non corretto. Per informazioni su come controllare l'utilizzo mensile, Microsoft Teams [report sull'utilizzo PSTN](/microsoftteams/teams-analytics-and-reports/pstn-usage-report).
     
-5. Immettere le informazioni di pagamento e scegliere **Esecuzione dell'ordine**.
+6. Selezionare **Eseguire l'ordine**.
     >[!IMPORTANT]
     >Se si è un cliente di licenze volume, è possibile scegliere il numero di contratto enterprise agreement per il pagamento. Se si dispone di più numeri di enterprise agreement, sarà possibile selezionare il contratto enterprise agreement che si desidera utilizzare per il pagamento. Sarà inoltre possibile specificare un numero d'ordine di acquisto per associare il numero di contratto enterprise agreement (se applicabile).
     

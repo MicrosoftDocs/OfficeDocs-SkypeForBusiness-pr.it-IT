@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 765c0b97d5e277bd086ac4b25ee11ac80cb6fc11
-ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
+ms.openlocfilehash: fe3ad067844de3c7a5dda0a042dee837a9638eae
+ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63711480"
+ms.lasthandoff: 03/30/2022
+ms.locfileid: "64556287"
 ---
 # <a name="microsoft-teams-apps-behavior-based-on-types-of-users"></a>Microsoft Teams comportamento delle app in base ai tipi di utenti
 
@@ -49,7 +49,7 @@ Gli utenti guest possono usare un'app se l'app è stata installata da un utente 
 
 #### <a name="bots-installed-to-a-channel"></a>Bot installati in un canale
 
-I bot possono inviare messaggi proattivi agli utenti guest, ma gli utenti guest non possono interagire con il bot. Gli utenti guest non possono inviare messaggi uno a uno al bot, menzionare il bot o interagire con schede adattive che comunicano con il bot.
+Gli utenti guest possono menzionare il bot e interagire con le schede adattive.
 
 #### <a name="personal-bots-installed-with-policies"></a>Bot personali installati con i criteri
 

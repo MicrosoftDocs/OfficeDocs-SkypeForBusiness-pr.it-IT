@@ -855,6 +855,8 @@ items:
                 href: operator-connect-configure.md
           - name: Instradamento diretto
             items:
+              - name: Novità
+                href: direct-routing-whats-new.md
               - name: Panoramica
                 href: direct-routing-landing-page.md
               - name: Pianificare Instradamento diretto

@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 18e7b02a52a0ddc7c380ed3fb4c5879b45fe18dc
-ms.sourcegitcommit: b878c57b8e822913b7aac8c105f476bc4ebfcd7d
+ms.openlocfilehash: 554c2e893272ca8dfca1fde6c746e72f1b462f1e
+ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63761930"
+ms.lasthandoff: 03/30/2022
+ms.locfileid: "64556557"
 ---
 # <a name="introduction-to-teams-policy-based-recording-for-callings--meetings"></a>Introduzione alla registrazione Teams basata su criteri per le chiamate & riunioni
 
@@ -138,7 +138,7 @@ I requisiti delle macchine virtuali di Azure e Windows si applicano solo al comp
 
 ## <a name="compliance-recording-policy-assignment-and-provisioning"></a>Assegnazione e provisioning dei criteri di registrazione della conformità
 
-Gli amministratori IT possono determinare quali utenti devono essere registrati e quale registratore verrà usato per ogni utente, creando e assegnando criteri di registrazione di conformità. I registratori vengono invitati automaticamente a partecipare alle conversazioni in base alla configurazione di questi criteri quando si verifica un'interazione di comunicazione. I criteri di registrazione della conformità vengono gestiti [con Microsoft PowerShell](./teams-powershell-overview.md) e possono essere applicati a livello di tenant, per utente e di gruppo di sicurezza per ogni organizzazione. Per altre informazioni, vedere Microsoft Docs for [Meeting policies](./meeting-policies-overview.md), [calling policies](./teams-calling-policy.md) e  [group policies](./assign-policies-users-and-groups.md#assign-a-policy-to-a-group).
+Gli amministratori IT possono determinare quali utenti devono essere registrati e quale registratore verrà usato per ogni utente, creando e assegnando criteri di registrazione di conformità. I registratori vengono invitati automaticamente a partecipare alle conversazioni in base alla configurazione di questi criteri quando si verifica un'interazione di comunicazione. I criteri di registrazione della conformità vengono gestiti [con Microsoft PowerShell](./teams-powershell-overview.md) e possono essere applicati a livello di tenant, per utente e di gruppo di sicurezza per ogni organizzazione. Sono disponibili altre informazioni sui criteri [Microsoft Docs per le](./meeting-policies-overview.md) riunioni, i criteri [di chiamata](./teams-calling-policy.md) e [i criteri di gruppo](./assign-policies-users-and-groups.md#assign-a-policy-to-a-group).
 
 1. Creare un'istanza dell'applicazione nel tenant.
 
@@ -226,7 +226,8 @@ I partner seguenti hanno certificato la propria soluzione per Microsoft Teams.<b
 |CallCabinet |[https://www.callcabinet.com/compliance-microsoft-teams-call-recording](https://www.callcabinet.com/compliance-microsoft-teams-call-recording ) |
 |Dubber |[https://www.dubber.net/call-recording/](https://www.dubber.net/call-recording/) |
 |Tecnologia di approfondimento |[https://insightfultechnology.com/teams/](https://insightfultechnology.com/teams/) |
-|NIZZA |[https://www.niceactimize.com/compliance/ms-teams-recording.html](https://www.niceactimize.com/compliance/ms-teams-recording.html) |
+|NICE Engage |[https://www.nice.com/products/workforce-engagement/call-recording/air-and-engage](https://www.nice.com/products/workforce-engagement/call-recording/air-and-engage) |
+|NICE NTR |[https://www.niceactimize.com/compliance/ms-teams-recording.html](https://www.niceactimize.com/compliance/ms-teams-recording.html) |
 |Numonix |[https://numonix.cloud](https://numonix.cloud)    |
 |Innovazione quercia |[https://www.oakinnovate.com/clarify](https://www.oakinnovate.com/clarify) |
 |Casella rossa |[https://www.redboxvoice.com/compliance-recording-for-microsoft-teams](https://www.redboxvoice.com/compliance-recording-for-microsoft-teams)  |

@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni sui criteri di messaggistica e su come possono essere usati per controllare la messaggistica chat in Teams.
-ms.openlocfilehash: 0f4001fc2a646b83f005d9cc48948fbbb314f042
-ms.sourcegitcommit: 867e8b4120e81c93c029c0c1b9cb69c161fc87a4
+ms.openlocfilehash: 74b9474eda7fd3c6bfe7224f62fbf58f61689743
+ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2022
-ms.locfileid: "64480668"
+ms.lasthandoff: 03/30/2022
+ms.locfileid: "64556247"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in Teams
 
@@ -80,6 +80,7 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 
 - **I proprietari possono eliminare i messaggi inviati**  Usare questa impostazione per consentire ai proprietari di eliminare i messaggi del canale o i post inviati dagli utenti.
 - **Eliminare i messaggi inviati** Usare questa impostazione per consentire agli utenti di eliminare i messaggi inviati in chat.
+- **Eliminare la chat** Usare questa impostazione per consentire agli utenti di eliminare i messaggi inviati in chat.
 - **Modificare i messaggi inviati** Usare questa impostazione per consentire agli utenti di modificare i messaggi inviati in chat.
 - **Conferme di lettura** Le conferme di lettura consentono al mittente di un messaggio di chat di ricevere una notifica quando il messaggio è stato letto dal destinatario in 1:1 e le chat di gruppo 20 persone o meno. Le conferme di lettura dei messaggi eliminano incertezze sulla lettura di un messaggio e migliorano la comunicazione del team. Le conferme di lettura non vengono acquisite nei report di eDiscovery.  
     - **Controllato dall'utente** Questo significa che gli utenti possono decidere se vogliono che le conferme di lettura siano ON o OFF. L'impostazione predefinita all'interno dell'app è ATTIVAta. Gli utenti possono quindi disattivarla.

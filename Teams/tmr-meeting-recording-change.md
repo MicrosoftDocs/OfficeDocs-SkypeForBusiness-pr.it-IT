@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bf1f393c8f6caf27a53ec45af0f04401f93b6793
-ms.sourcegitcommit: dafe48cea1643e1bd79390482da9b002d7e9e0bb
+ms.openlocfilehash: 8d2863517ae4a147f9ded902dffff40ef315642e
+ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63514537"
+ms.lasthandoff: 03/30/2022
+ms.locfileid: "64556337"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -37,7 +37,7 @@ ms.locfileid: "63514537"
 |Implementazione a partire dal giorno 1 marzo 2021<br> *(Completata)*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC-High e DoD**<br> I clienti ora possono abilitare le registrazioni delle riunioni cloud in Microsoft Teams per la prima volta. Queste registrazioni verranno archiviate e riprodotte OneDrive e SharePoint per impostazione predefinita. |
 |Implementazione incrementale a partire dal giorno 16 agosto 2021 <br> *(Completata)* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Tutti i clienti (Enterprise, Education e GCC)**<br>Non è possibile salvare le nuove registrazioni delle riunioni in Microsoft Stream (versione classica), ma tutti i clienti avranno automaticamente le registrazioni delle riunioni salvate in OneDrive for Business e SharePoint, anche se i criteri di riunione Teams sono stati modificati in Flusso.<br><br> È consigliabile che i clienti, in modo da controllare meglio il cambiamento nell'organizzazione, acconsentano esplicitamente ogni volta che si ha familiarità con la modifica anziché attendere che venga eseguita. |
 
-Microsoft Teams offre un nuovo metodo per salvare le registrazioni delle riunioni. Come prima fase di una transizione dal classico Microsoft Stream al nuovo [stream](/stream/streamnew/new-stream), questo metodo archivia le registrazioni in Microsoft OneDrive for Business e SharePoint in Microsoft 365 e offre molti vantaggi.
+Microsoft Teams offre un nuovo metodo per salvare le registrazioni delle riunioni. Come prima fase di una transizione dalla versione classica Microsoft Stream al nuovo [stream, questo](/stream/streamnew/new-stream) metodo archivia le registrazioni in Microsoft OneDrive for Business e SharePoint in Microsoft 365 e offre molti vantaggi.
 
 > [!NOTE]
 > Se la registrazione di una riunione di Teams non viene caricata correttamente in OneDrive/SharePoint, verrà visualizzato un messaggio di errore "La registrazione è terminata in modo imprevisto" e la registrazione verrà salvata temporaneamente in Servizi multimediali di Azure (AMS). Dopo l'archiviazione in AMS, non vengono effettuati tentativi di caricamento automatico della registrazione in OneDrive/SharePoint o stream.
@@ -133,7 +133,7 @@ L'opzione di registrazione della riunione è un'impostazione a livello di criter
 
 Per impostazione predefinita, tutti i file di registrazione verranno OneDrive account dell'utente che ha selezionato **Record**. Per le riunioni del canale, la registrazione verrà sempre SharePoint sito del canale. L'amministratore non può modificare la posizione in cui è archiviata la registrazione.
 
-**Come si gestiscono le registrazioni di ex dipendenti?**
+**Ricerca per categorie gestire le registrazioni di ex dipendenti?**
 
 Poiché i video sono come qualsiasi altro file in OneDrive for Business e SharePoint, la gestione della proprietà e della conservazione dopo l'uscita di un dipendente seguirà il normale processo di OneDrive for Business e [SharePoint lavoro](/onedrive/retention-and-deletion).
 
@@ -171,13 +171,13 @@ Il video verrà riprodotto nel lettore video di OneDrive for Business o SharePoi
 
 **Se si prevede di deprecazione dell'aggiunta a Stream, i video esistenti rimarranno così com'è e per quanto tempo?**
 
-Lo stream come piattaforma non sarà deprecato nel prossimo futuro. I video attualmente in diretta in Stream rimarranno lì fino a quando non inizieremo a eseguire la migrazione. Al momento della migrazione, questi video verranno migrati anche a OneDrive for Business o SharePoint. Per altre [informazioni, vedere Migrazione classica di Stream](/stream/streamnew/classic-migration) .
+Lo stream come piattaforma non sarà deprecato nel prossimo futuro. I video attualmente in diretta in Stream rimarranno lì fino a quando non inizieremo a eseguire la migrazione. Al momento della migrazione, questi video verranno migrati anche a OneDrive for Business o SharePoint. Per [altre informazioni, vedere](/stream/streamnew/migration-details) Dettagli della migrazione.
 
-**Come si applica un'etichetta di conservazione alle registrazioni Microsoft Teams riunione?**
+**Ricerca per categorie un'etichetta di conservazione alle registrazioni Microsoft Teams riunione?**
 
 Vedere [Come applicare automaticamente un'etichetta di conservazione](/microsoft-365/compliance/apply-retention-labels-automatically).
 
-**Come si assegnano i criteri agli utenti in Microsoft Teams e quali criteri hanno la precedenza?**
+**Ricerca per categorie assegnare criteri agli utenti in Microsoft Teams e quali criteri hanno la precedenza?**
 
 Vedere [Quali criteri hanno la precedenza?](./policy-assignment-overview.md#which-policy-takes-precedence).
 
