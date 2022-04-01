@@ -21,12 +21,12 @@ ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Leggere le domande frequenti (FAQ) e le risposte su Microsoft Teams Call Quality Dashboard (CQD).
-ms.openlocfilehash: bd36fe70d46a190289749a96fbaadb8f6c176251
-ms.sourcegitcommit: 79dfda39db208cf943d0f7b4906883bb9d034281
+ms.openlocfilehash: 3d795393f99765ab445a5495b626ebd9b8722131
+ms.sourcegitcommit: 2388838163812eeabcbd5331aaf680b79da3ccba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62457176"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64592931"
 ---
 # <a name="call-quality-dashboard-cqd-frequently-asked-questions-faq"></a>Domande frequenti su Call Quality Dashboard (CQD)
 
@@ -56,7 +56,7 @@ Per i flussi audio, uno dei cinque classificatori (calcolati per la media in bas
 
 Per determinare se si è verificato un problema di rete, esaminare il delta tra i valori medi per la sessione e i valori massimi. I valori massimi sono i valori massimi rilevati e riportati durante la sessione.
  
-Ecco un esempio di come risolvere questa situazione. Supponiamo di prendere una traccia di rete durante una chiamata e che nei primi 20 minuti non ci siano pacchetti persi, ma poi si ha una distanza di 1,5 secondi di pacchetti e quindi buona per il resto della chiamata. La media sarà pari <10% (0,1) Perdita di pacchetti anche in un'analisi RTP di Wireshark Trace. Qual è stata la perdita massima di pacchetti? 1,5 secondi in un periodo di 5 secondi sarebbe il 30% (0,3). Si è verificata entro il periodo di campionamento di 5 secondi (forse o potrebbe essere suddiviso nel periodo di campionamento)?
+Ecco un esempio di come risolvere questa situazione. Supponiamo di prendere una traccia di rete durante una chiamata e che nei primi 20 minuti non ci siano pacchetti persi, ma poi si ha una distanza di 1,5 secondi di pacchetti e quindi buona per il resto della chiamata. La media sarà <10% (0,1) Perdita di pacchetti anche in un'analisi RTP di Wireshark Trace. Qual è stata la perdita massima di pacchetti? 1,5 secondi in un periodo di 5 secondi sarebbe il 30% (0,3). Si è verificata entro il periodo di campionamento di 5 secondi (forse o potrebbe essere suddiviso nel periodo di campionamento)?
  
 Se le metriche di rete hanno un aspetto positivo nelle medie e nei valori massimi, esaminare altri dati di telemetria: 
 - Controllare il rapporto di eventi CPU insufficienti per verificare se le risorse della CPU rilevate disponibili erano insufficienti e hanno causato una qualità scarsa. 
@@ -90,7 +90,7 @@ Per altre informazioni sui ruoli che possono accedere a CQD, incluso EUII, veder
 
 ### <a name="im-trying-to-use-cqd-for-usage-type-reports-and-find-that-some-of-the-data-is-incomplete----why-is-that"></a>Sto provando a usare CQD per i report di tipo utilizzo e trovo che alcuni dati sono incompleti, perché?
 
-Gli strumenti di gestione della qualità delle chiamate come CQD, Call Analytics, CallRecord Graph API e Real-time Analytics si basano sulla telemetria diagnostica. Le informazioni mostrate negli Teams di gestione della qualità delle chiamate sono complete solo quanto i dati di telemetria ricevuti dai clienti che partecipano a una chiamata. Esistono diversi motivi per cui microsoft potrebbe non ricevere telemetria completa, ad esempio interruzioni di rete o errori di configurazione [del firewall o del proxy](/microsoft-365/enterprise/urls-and-ip-address-ranges.md). Stiamo continuando a lavorare per migliorare l'affidabilità e la resilienza con cui i Teams forniscono telemetria al servizio.
+Gli strumenti di gestione della qualità delle chiamate come CQD, Call Analytics, CallRecord API Graph e Real-time Analytics si basano sulla telemetria diagnostica. Le informazioni che mostriamo negli Teams di gestione della qualità delle chiamate sono complete solo quanto i dati di telemetria ricevuti dai clienti che partecipano a una chiamata. Esistono diversi motivi per cui microsoft potrebbe non ricevere telemetria completa, ad esempio interruzioni di rete o errori di configurazione [del firewall o del proxy](/microsoft-365/enterprise/urls-and-ip-address-ranges). Stiamo continuando a lavorare per migliorare l'affidabilità e la resilienza con cui i Teams forniscono telemetria al servizio.
 
 In questo caso, microsoft non supporta l'uso di strumenti di gestione della qualità delle chiamate per la creazione di report sull'utilizzo. Non sono progettati per supportare questi tipi di scenari di creazione di report e molte statistiche di utilizzo non sono e non saranno disponibili all'interno di questi strumenti. Teams'interfaccia di amministrazione offre una serie di report [sull'utilizzo e](teams-analytics-and-reports/teams-reporting-reference.md) un [report](teams-analytics-and-reports/meeting-attendance-report.md) sulla partecipazione alle riunioni è disponibile direttamente dal client Teams riunione.
 
@@ -110,7 +110,7 @@ Si tratta di un comportamento previsto. Il fornitore vpn ha creato un adattatore
 
 ### <a name="i-turned-on-policy-based-recording-in-teams-and-now-peer-to-peer-calls-are-being-marked-as-conferences----what-happened"></a>Ho attivato registrazione basata su criteri in Teams e ora le chiamate peer-to-peer vengono contrassegnate come conferenze. Cosa è successo?
 
-Questo comportamento è previsto quando la registrazione basata su criteri è abilitata in Microsoft Teams. Registrazione basata su criteri usa un bot Teams registratore distribuito in Microsoft Azure per acquisire il contenuto della riunione ai fini della conformità. Nella gestione della qualità delle chiamate, "peer-to-peer" è una descrizione del flusso del traffico multimediale, non dell'interazione tra gli utenti. Poiché un bot registratore è di per sé parte della chiamata, la chiamata non è più peer-to-peer, ma una chiamata multi-party. Le chiamate multi-party sono classificate come conferenze Microsoft Teams, quindi verranno indicate come tali quando si visualizzano queste chiamate in CQD e in altri strumenti di qualità delle chiamate.
+Questo comportamento è previsto quando la registrazione basata su criteri è abilitata in Microsoft Teams. Registrazione basata su criteri usa un bot Teams registratore distribuito in Microsoft Azure per acquisire il contenuto della riunione ai fini della conformità. Nella gestione della qualità delle chiamate, "peer-to-peer" è una descrizione del flusso del traffico multimediale, non dell'interazione tra gli utenti. Poiché un bot registratore è di per sé parte della chiamata, la chiamata non è più peer-to-peer, ma una chiamata multi-party. Le chiamate multi-party sono classificate come conferenze per Microsoft Teams, quindi verranno indicate come tali quando si visualizzano queste chiamate in CQD e in altri strumenti di qualità delle chiamate.
 
 ## <a name="related-articles"></a>Articoli correlati
 
@@ -120,7 +120,7 @@ Questo comportamento è previsto quando la registrazione basata su criteri è ab
 
 [Configurare call quality dashboard (CQD)](turning-on-and-using-call-quality-dashboard.md)
 
-[Upload tenant e dei dati dell'edificio](CQD-upload-tenant-building-data.md)
+[Upload tenant e edificio](CQD-upload-tenant-building-data.md)
 
 [Dati e report CQD](CQD-data-and-reports.md)
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 104540c047f499f8b82139e0c76c93e4b4625f62
-ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
-ms.translationtype: HT
+ms.openlocfilehash: 032036c6f08dac76cae9ed124ffe7bc8439e4c32
+ms.sourcegitcommit: 9e868a155bcd20dd5dafdedcff091ff77ca7398b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2022
-ms.locfileid: "62401140"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64584261"
 ---
 # <a name="teams-view-only-meeting-experience"></a>Esperienza di sola visualizzazione nelle riunioni di Teams
 
@@ -119,6 +119,7 @@ I partecipanti nella sala di sola visualizzazione non potranno usare le seguenti
 - Alzare la mano durante la riunione.
 - Inviare o vedere reazioni.
 - Interagire con qualsiasi app 3P integrata nella riunione di Teams, inclusi i sondaggi.
+- Accesso alla registrazione della riunione.
 
 ## <a name="view-only-feature-limitations"></a>Limitazioni della funzionalità di sola visualizzazione
 

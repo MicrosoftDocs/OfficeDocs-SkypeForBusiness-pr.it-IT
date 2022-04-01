@@ -11,13 +11,18 @@ search.appverid: MET150
 description: Informazioni su come usare le unità amministrative in Microsoft Teams
 ms.localizationpriority: medium
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.collection:
-  - M365-collaboration
+- M365-collaboration
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: 63579e7e9b6b2f7a7456349c489d4f544eb67cc1
+ms.sourcegitcommit: 9e868a155bcd20dd5dafdedcff091ff77ca7398b
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64584311"
 ---
-
 # <a name="manage-devices-in-the-teams-admin-center-with-administrative-units"></a>Gestire i dispositivi nell'Teams di amministrazione con unità amministrative
 
 Le unità amministrative nell'Teams di amministrazione forniscono un accesso dettagliato e basato sui ruoli per la gestione Teams dispositivi. Le unità amministrative concedono Teams'accesso a risorse specifiche, ma limitano l'accesso di tale amministratore ad altre risorse. Questa opzione è particolarmente utile se si hanno amministratori locali Teams in diversi paesi o aree geografiche.
@@ -33,11 +38,11 @@ Per aggiungere unità amministrative, è necessario essere un amministratore glo
 
 ## <a name="assign-admins-to-administrative-units"></a>Assegnare amministratori alle unità amministrative
 
-È anche necessario essere amministratori globali per assegnare unità amministrative. È possibile assegnare unità amministrative usando il portale di Azure, PowerShell o l'API Graph Microsoft. Per altre informazioni, vedere [Assegnare ruoli Azure AD con ambito di unità amministrative](/azure/active-directory/roles/admin-units-assign-roles).
+È anche necessario essere amministratori globali per assegnare unità amministrative. È possibile assegnare unità amministrative usando portale di Azure, PowerShell o Microsoft API Graph. Per altre informazioni, vedere [Assegnare ruoli Azure AD con ambito di unità amministrative](/azure/active-directory/roles/admin-units-assign-roles).
 
 ## <a name="select-administrative-units"></a>Selezionare le unità amministrative
 
-Gli amministratori dei dispositivi Teams, dopo che un amministratore globale ti ha assegnato a un'unità amministrativa, puoi accedere all'interfaccia di amministrazione di Teams per gestire i dispositivi. Se si è assegnati a una sola unità amministrativa, verranno visualizzati solo i dispositivi assegnati a tale unità amministrativa. Se si è assegnati a più unità amministrative, è possibile passare da un'unità amministrativa all'altro senza uscire dall'Teams di amministrazione. 
+Gli amministratori dei dispositivi Teams, dopo che un amministratore globale ti ha assegnato a un'unità amministrativa, puoi accedere all'interfaccia di amministrazione di Teams per gestire i dispositivi. Se si è assegnati a una sola unità amministrativa, verranno visualizzati solo i dispositivi assegnati a tale unità amministrativa. Se si è assegnati a più unità amministrative, è possibile passare da una unità amministrativa all'altro senza uscire dall'Teams di amministrazione. 
 
 1. Accedere all'interfaccia [Teams di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
@@ -62,3 +67,7 @@ Se si è un amministratore Teams dispositivi mobili, è possibile passare da un'
     - Selezionare **Tutti i dispositivi** se si ha l'autorizzazione per gestire tutti i dispositivi per l'organizzazione.
 
 5. Selezionare **Salva**.
+
+## <a name="related-topics"></a>Argomenti correlati
+
+- [Aggiungere utenti o gruppi a un'unità amministrativa](/azure/active-directory/roles/admin-units-members-add)

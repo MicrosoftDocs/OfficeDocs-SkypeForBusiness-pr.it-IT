@@ -17,12 +17,12 @@ f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0e02013ddc158e1e64386bc22652404ec387aee1
-ms.sourcegitcommit: a9a056b93b4add3a4d978bb341ea4b66a042b4d0
+ms.openlocfilehash: 4b922607955d8b825006217bd2fe333eaadbc1ce
+ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62893555"
+ms.lasthandoff: 03/30/2022
+ms.locfileid: "64556567"
 ---
 # <a name="get-clients-for-microsoft-teams"></a>Ottenere i client per Microsoft Teams
 
@@ -46,7 +46,7 @@ Il client desktop di Teams è disponibile come applicazione autonoma e come part
 - Linux (in formati `.deb` e `.rpm`)
 - Chrome OS (per altre informazioni, vedere [Come usare Microsoft Office su un Chromebook](https://support.office.com/article/how-to-install-and-run-microsoft-office-on-a-chromebook-32f14a23-2c1a-4579-b973-d4b1d78561ad))
 
-I client desktop possono essere scaricati e installati dagli utenti finali direttamente da [https://teams.microsoft.com/downloads](https://go.microsoft.com/fwlink/?linkid=855754) se dispongono delle autorizzazioni locali appropriate. Le autorizzazioni di amministratore non sono necessarie per installare il client Teams sui PC Windows, ma sono necessarie sui Mac.
+I client desktop possono essere scaricati e installati dagli utenti finali direttamente da [https://teams.microsoft.com/downloads](https://go.microsoft.com/fwlink/?linkid=855754), se dispongono delle autorizzazioni locali appropriate. I diritti di amministratore non sono necessari per installare il client di Teams in PC Windows, ma lo sono per installarlo sui Mac.
 
 Gli amministratori IT Pros possono usare il proprio metodo preferito per distribuire i file di installazione nei computer dell'organizzazione. Alcuni esempi sono Microsoft Endpoint Configuration Manager in Windows o Jamf Pro in macOS. Per altre informazioni sulla distribuzione di Teams, vedere quanto segue.
 
@@ -63,7 +63,7 @@ Gli amministratori IT Pros possono usare il proprio metodo preferito per distrib
 
 Teams in Windows offre programmi di installazione MSI scaricabili in architetture a [32-bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true), [64-bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true) e [ARM64](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=arm64&managedInstaller=true&download=true). L'architettura x86 (a 32 bit e a 64 bit) di Teams è agnostica rispetto all'architettura di Windows e Office installata. È consigliabile usare la versione a 64 bit di Teams nei sistemi a 64 bit.
 
-Teams richiede .NET Framework 4.5 o versione successiva. Se .NET Framework o versione successiva non è installato, il programma di installazione di Teams offrirà l'installazione per l'utente.
+Teams richiede .NET Framework 4.5 o versione successiva. Se .NET Framework o versione successiva non è installato, il programma di installazione di Teams darà la possibilità di installarlo all’utente.
 
 Il client Windows viene distribuito nella cartella AppData, all'interno del profilo dell'utente. La distribuzione nel profilo locale dell'utente consente di installare il client senza bisogno di diritti elevati. Il client Windows utilizza le posizioni seguenti:
 
@@ -205,4 +205,4 @@ Il client browser ([https://teams.microsoft.com](https://go.microsoft.com/fwlink
 
 [!INCLUDE [browser-support](includes/browser-support.md)]
 
-Il client browser rileva la versione del browser al momento della connessione a [https://teams.microsoft.com](https://go.microsoft.com/fwlink/?linkid=855753). Se viene rilevata una versione del browser non supportata, blocca l'accesso all'interfaccia browser e invita l'utente a scaricare il client desktop o l'app per dispositivi mobili.
+Il client del browser esegue il rilevamento della versione del browser al momento della connessione a [https://teams.microsoft.com](https://go.microsoft.com/fwlink/?linkid=855753). Se viene rilevata una versione del browser non supportata, l'accesso all'interfaccia browser verrà bloccato e l'utente verrà invitato a scaricare il client desktop o l'app per dispositivi mobili.

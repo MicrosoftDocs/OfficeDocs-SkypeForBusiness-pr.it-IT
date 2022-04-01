@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare le Cloud Voicemail per gli utenti.
-ms.openlocfilehash: d78942c5cbfc6af8e921c26c806378b45f480835
-ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
+ms.openlocfilehash: dd98275ac768990337a47f1f4ba6dacbdb385087
+ms.sourcegitcommit: 2388838163812eeabcbd5331aaf680b79da3ccba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "63442322"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64592721"
 ---
 # <a name="set-up-cloud-voicemail"></a>Configurare Cloud Voicemail
 
@@ -37,11 +37,11 @@ Cloud Voicemail deposita i messaggi della segreteria telefonica nella cassetta p
 
 ## <a name="cloud-voicemail-provisioning"></a>Cloud Voicemail provisioning
 
-Per Teams utenti, Cloud Voicemail viene configurato ed eseguito automaticamente il provisioning. *Per Microsoft Teams Telefono non è necessaria una licenza Cloud Voicemail.*
+Per Teams utenti, Cloud Voicemail viene configurato ed eseguito automaticamente il provisioning. *Per Telefono di Microsoft Teams non è necessaria una licenza Cloud Voicemail.*
 
 Il provisioning per Teams utenti non è lo stesso per gli utenti Skype for Business online. Per Skype for Business utenti di Skype for Business Online, Cloud Voicemail è stato configurato ed eseguito automaticamente il provisioning quando agli utenti è stata assegnata una licenza Sistema telefonico e sono VoIP aziendale abilitati dal sistema di provisioning.
 
-Per Skype for Business Server utenti locali, Cloud Voicemail viene automaticamente configurato ed eseguito il provisioning. Tuttavia, è necessario configurare l'ambiente Skype for Business Server per instradare le chiamate a Cloud Voicemail. Per altre informazioni, vedere [Pianificare Cloud Voicemail per gli utenti locali](/skypeforbusiness/hybrid/plan-cloud-voicemail.md).
+Per Skype for Business Server utenti locali, Cloud Voicemail viene automaticamente configurato ed eseguito il provisioning. Tuttavia, è necessario configurare l'ambiente Skype for Business Server per instradare le chiamate a Cloud Voicemail. Per altre informazioni, vedere [Pianificare Cloud Voicemail per gli utenti locali](/skypeforbusiness/hybrid/plan-cloud-voicemail).
 
 ## <a name="cloud-voicemail-storage"></a>Cloud Voicemail archiviazione
 
@@ -55,7 +55,7 @@ La Exchange di un utente archivia tutti i messaggi di saluto registrati personal
 
 La registrazione e la trascrizione Cloud Voicemail iniziano Microsoft 365 all'origine della chiamata instradata a Cloud Voicemail. Il messaggio viene quindi recapitato alla cassetta postale Exchange'utente.
 
-Ad esempio, se una chiamata viene effettuata a un utente di Routing diretto non disponibile tramite un session border controller (SBC) in Europa, la registrazione e la trascrizione della segreteria telefonica vengono eseguite in Europa. Il messaggio viene quindi recapitato alla cassetta postale Exchange'utente. Per un altro esempio, si supponga che Teams un utente nordamericano chiami un utente Teams non disponibile in Europa. In questo caso, la chiamata inizia in Nord America, l'elaborazione viene eseguita in Nord America e quindi la segreteria telefonica viene recapitata alla cassetta postale Exchange'utente in Europa.
+Ad esempio, se una chiamata viene effettuata a un utente di Routing diretto non disponibile tramite un session border controller (SBC) in Europa, la registrazione e la trascrizione della segreteria telefonica vengono eseguite in Europa. Il messaggio viene quindi recapitato alla cassetta postale Exchange'utente. Per un altro esempio, si supponga che un Teams in America del Nord chiami un utente Teams non disponibile in Europa. In questo caso, la chiamata inizia nel America del Nord, l'elaborazione viene eseguita in America del Nord e quindi la segreteria telefonica viene recapitata alla cassetta postale Exchange'utente in Europa.
 
 Il recapito di una segreteria telefonica a una Exchange cassetta postale viene eseguito usando smtp (Simple Mail Transport Protocol) come qualsiasi altro messaggio di posta elettronica.
 
@@ -75,7 +75,7 @@ Gli utenti finali possono anche configurare queste impostazioni nel client  ->  
 
 L'impostazione predefinita per tutti gli utenti di cui è stato eseguito il provisioning per Cloud Voicemail è consentire l'instradamento delle chiamate a Cloud Voicemail e consentire agli utenti di inoltrare le chiamate a Cloud Voicemail.
 
-È possibile controllare se il routing delle chiamate a Cloud Voicemail è consentito agli utenti Teams utenti usando il cmdlet Set-CsTeamsCallingPolicy con il parametro AllowVoicemail. Per altre informazioni, vedere  [Set-CsTeamsCallingPolicy](/powershell/module/skype/set-csteamscallingpolicy.md).
+È possibile controllare se il routing delle chiamate a Cloud Voicemail è consentito agli utenti Teams utenti usando il cmdlet Set-CsTeamsCallingPolicy con il parametro AllowVoicemail. Per altre informazioni, vedere  [Set-CsTeamsCallingPolicy](/powershell/module/skype/set-csteamscallingpolicy).
 
 - Se si imposta AllowVoicemail su AlwaysDisabled, le chiamate non vengono mai instradate alla segreteria telefonica, indipendentemente dalle impostazioni di inoltro di chiamata o senza risposta per un utente. La segreteria telefonica non è disponibile come inoltro di chiamata o come impostazione senza risposta in Teams.
 
@@ -105,11 +105,11 @@ Usando Microsoft Information Protection, è possibile crittografare i messaggi d
 
 Per crittografare il messaggio della segreteria telefonica, è possibile creare un'etichetta di riservatezza. Con la funzionalità di etichettatura automatica, è possibile assicurarsi che l'etichetta sia applicata automaticamente ai messaggi della segreteria telefonica in arrivo. 
 
-Quando si abilita la segreteria telefonica protetta, gli utenti possono ascoltare i messaggi della segreteria telefonica protetti chiamando nella propria cassetta postale della segreteria telefonica o aprendo il messaggio in Outlook, Outlook sul web o Outlook per Android o iOS. I messaggi della segreteria telefonica protetta non possono essere aperti in Microsoft Teams o Skype per Busimess.
+Quando si abilita la segreteria telefonica protetta, gli utenti possono ascoltare i messaggi della segreteria telefonica protetti chiamando nella propria cassetta postale della segreteria telefonica o aprendo il messaggio in Outlook, Outlook sul web o Outlook per Android o iOS. I messaggi della segreteria telefonica protetta non possono essere aperti in Microsoft Teams o Skype for Business.
 
 Per creare un'etichetta di riservatezza per la segreteria telefonica, vedere [Usare le etichette di riservatezza](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions). Nella sezione **Crittografia** scegliere Consenti agli utenti di **assegnare le autorizzazioni quando applicano l'etichetta**. Selezionare **In Outlook, applicare una delle restrizioni seguenti** e quindi selezionare **l'opzione Non** inoltrare.
 
-Per creare i criteri di etichettatura automatica per applicare un'etichetta di riservatezza alla segreteria telefonica, vedere [Come](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) configurare i criteri di etichettatura automatica e specificare le impostazioni specifiche seguenti:
+Per creare i criteri di etichettatura automatica per applicare un'etichetta di riservatezza alla segreteria telefonica, [](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)vedere Come configurare i criteri di etichetta automatica e specificare le impostazioni specifiche seguenti:
 
 -   In **Scegli informazioni a cui applicare l'etichetta** selezionare **Criterio personalizzato**.
 

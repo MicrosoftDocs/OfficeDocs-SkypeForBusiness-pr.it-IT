@@ -15,12 +15,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b6f2ec21ec3e7f4278443d6bcab4b4220db3619f
-ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
+ms.openlocfilehash: 53a1c2730ebf6db06fb92ac2fc4e0873563c98ce
+ms.sourcegitcommit: 9e868a155bcd20dd5dafdedcff091ff77ca7398b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2022
-ms.locfileid: "64556740"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64584330"
 ---
 # <a name="whats-new-for-direct-routing"></a>Novità del routing diretto
 
@@ -62,7 +62,7 @@ A partire da aprile 2022, il routing diretto rifiuta le richieste SIP con intest
 
 Controllare le configurazioni SBC e assicurarsi di non usare le intestazioni Replaces nelle richieste SIP.
 
-## <a name="tls10-and-10"></a>TLS1.0 e 1.0
+## <a name="tls10-and-11"></a>TLS1.0 e 1.1
 
 Per fornire la crittografia più avanzata ai clienti, Microsoft prevede di deprecazione delle versioni 1.0 e 1.1 di Transport Layer Security (TLS). Il 3 aprile 2022 Microsoft forza l'utilizzo di TLS1.2 per l'interfaccia SIP di routing diretto.
 

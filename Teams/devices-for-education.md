@@ -20,12 +20,12 @@ f1.keywords:
 ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f237f057d6c8f2975b054f16c293bf87eaf00f0f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 71af93e7d8fa5368480753a50c790dfe77f40693
+ms.sourcegitcommit: 2388838163812eeabcbd5331aaf680b79da3ccba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58637092"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64593021"
 ---
 # <a name="teams-devices-for-education"></a>Teams dispositivi per l'istruzione
 
@@ -37,7 +37,7 @@ Learning futuro sarà ibrido e misto. Docenti e studenti richiedono entrambi un'
 
 La moderna classe ibrida sarà senza confini. Gli studenti e i docenti saranno responsabili dell'apprendimento sincrono e asincrono, nonché dell'impegno interattivo e multimodale progettato per soddisfare le esigenze di ogni studente in ogni circostanza. Teams dispositivi sono stati progettati per supportare un'ampia gamma di spazi, in modo da non sentire la voce. 
 
-### <a name="student-and-educators-alike-excel-with-microsoft-teams-rooms"></a>Gli studenti e i docenti eccelleno con Microsoft Teams Rooms
+### <a name="student-and-educators-alike-excel-with-microsoft-teams-rooms"></a>Studenti e docenti eccelle con i Microsoft Teams Rooms
 
 -   Microsoft Teams Rooms l'apprendimento sicuro, sicuro e mirato agli studenti, dall'integrazione in classe alle sale di lavoro per una collaborazione più mirata e persino uno-a-uno per rispondere a specifiche esigenze e domande degli studenti.
 
@@ -47,20 +47,20 @@ La moderna classe ibrida sarà senza confini. Gli studenti e i docenti saranno r
 
 ### <a name="bring-digital-flexibility-to-physical-spaces"></a>Aumentare la flessibilità digitale negli spazi fisici
 
-Per fare in modo che studenti e docenti che lavorano in remoto possano partecipare pienamente alla collaborazione e alle riunioni di gruppo, le aree di lavoro per l'istruzione dovranno usare la tecnologia per colmare la divisione tra i vecchi modelli di persona e i nuovi spazi ibridi e remoti.
+Per fare in modo che studenti e docenti che lavorano in remoto possano partecipare pienamente alla collaborazione e alle riunioni di gruppo, le aree di lavoro didattiche dovranno avere la tecnologia necessaria per colmare la divisione tra i vecchi modelli di persona e i nuovi spazi ibridi e remoti.
 
-![Rendering tecnologico futuro che mostra i partecipanti remoti visualizzati in una sala fisica. ](media/devices1.png)
+![Rendering tecnologico futuro che mostra i partecipanti remoti visualizzati in una sala fisica.](media/devices1.png)
  *Questa immagine rappresenta la tecnologia futura.*
 
 ## <a name="why-choose-a-native-teams-experience"></a>Perché scegliere un'esperienza Teams nativa?
 
 Microsoft Teams le periferiche e le sale certificate sono soluzioni native per chiamate e riunioni appositamente create che forniscono un'esperienza di riunione Teams completa, con audio e video ad alta definizione, su hardware di prima e terza parte certificato Teams.
 
-Quando si pronuncia "appositamente progettato e nativo", si intende che l'esperienza è progettata in modo specifico e mirato da Microsoft per l'Teams utente.
+Quando si dice "appositamente progettato e nativo", si intende che l'esperienza è progettata specificamente e con pensiero da Microsoft per l'Teams utente.
 
-Teams Rooms andare oltre ciò che è possibile fare con Teams su dispositivi personali, fornendo funzionalità uniche in sala, come l'aggiunta a un solo tocco, videocamere contenuto per condividere lavagne fisiche nella riunione in modo intelligente e caratteristiche di prossimità come il trasferimento senza soluzione di continuità di una riunione di Teams dal dispositivo personale alla sala.
+Teams Rooms andare oltre ciò che può essere fatto con Teams su dispositivi personali, fornendo funzionalità uniche in sala, come l'aggiunta di un solo tocco, videocamere contenuto per condividere lavagne fisiche nella riunione in modo intelligente e caratteristiche di prossimità come il trasferimento senza soluzione di continuità di una riunione di Teams dal dispositivo personale alla sala.
 
-I sistemi non nativi e auto-costruiti che si basano su servizi esterni o su una connessione bring-your-own-device non corrisponderanno mai alla facilità d'uso o alla qualità immersiva di un ambiente Teams Room nativo.
+I sistemi non nativi e auto-costruiti che si basano su servizi esterni o su una connessione bring-your-own-device non corrisponderanno mai alla facilità d'uso o alla qualità immersiva di una Teams Room nativa.
 
 **Appositamente progettato per Teams** 
 
@@ -88,21 +88,21 @@ I mobili consentono di definire il modo in cui verrà usato uno spazio. Mobili e
 
 Per gli spazi esistenti, la tecnologia deve essere allineata al layout esistente della sala. Ad esempio, se i tavoli e le sedie sono impostati per le presentazioni e le istruzioni di persona, la tecnologia dovrebbe seguire. I microfoni e le videocamere devono essere posizionati in modo ottimale nella stanza, non semplicemente aggiunti in qualsiasi posizione, senza tenere conto del modo in cui viene usata la stanza. I partecipanti remoti devono vedere il materiale della presentazione in modo chiaro come i partecipanti di persona.
 
-Per i nuovi spazi, l'uso previsto della sala dovrebbe guidare sia gli arredi che le considerazioni tecnologiche. Ad esempio, quando si progetta una sala destinata a facilitare più scopi , ad esempio il lavoro individuale e l'interazione di gruppo, lo spazio deve essere suddiviso in due aree separate per ottenere la massima efficienza.
+Per i nuovi spazi, l'uso previsto della sala dovrebbe guidare sia gli arredi che le considerazioni tecnologiche. Ad esempio, quando si progetta una sala destinata a facilitare più scopi , ad esempio il lavoro individuale e l'interazione di gruppo, lo spazio deve essere separato in due aree separate per ottenere la massima efficienza.
 
 La coppia di immagini seguente illustra le configurazioni Teams in uno spazio di classe esistente (in alto) e in un nuovo spazio multi-scopo (in basso):
 
-![Rendering che mostra Teams dispositivi in una classe esistente.](media/devices2.png) ![Rendering che mostra una configurazione Teams in uno spazio appositamente progettato.](media/devices3.png)
+![Rendering che mostra Teams dispositivi in una classe esistente.](media/devices2.png) ![Rendering che mostra una configurazione Teams in uno spazio progettato appositamente.](media/devices3.png)
 
 ### <a name="what-is-the-function-of-the-space"></a>Qual è la funzione dello spazio?
 
 *Le attività nello spazio saranno incentrate sulla co-creazione collaborativa?*
 
-La creatività richiede un layout e una distribuzione tecnologica progettata in base alla collaborazione degli utenti. Lo spazio giusto facilita il lavoro tra gli utenti e la tecnologia senza problemi ed elimina l'attrito anche per gli utenti più principianti. Teams dispositivi sono progettati per essere sufficientemente user-friendly per consentire ai giovani studenti di spostarsi con abile e per consentire ai docenti di controllare e personalizzare dal primo utilizzo. 
+La creatività richiede un layout e una distribuzione tecnologica progettata in base alla collaborazione degli utenti. Lo spazio giusto facilita il lavoro tra gli utenti e la tecnologia senza problemi ed elimina l'attrito anche per gli utenti più principianti. Teams dispositivi sono progettati in modo da essere sufficientemente user-friendly per consentire ai giovani studenti di spostarsi in modo abile e per consentire ai docenti di controllare e personalizzare dal primo utilizzo. 
 
 *Per quanto riguarda gli spazi in cui la priorità è la condivisione di contenuti sia con i partecipanti di persona che con i partecipanti remoti?*
 
-La condivisione di contenuti e la collaborazione remota richiedono un layout fisico e un'esperienza tecnologica diversi. Lo spazio giusto facilita la discussione e consente a tutti di vedere e rivedere facilmente i contenuti condivisi. Indipendentemente dallo spazio che si sta dotando, da uno spazio flessibile del dormitorio a una sala conferenze, deve essere Teams abilitato.
+La condivisione di contenuti e la collaborazione remota richiedono un layout fisico e un'esperienza tecnologica diversi. Lo spazio giusto facilita la discussione e consente a tutti di vedere e rivedere facilmente i contenuti condivisi. Indipendentemente dallo spazio che si sta dotando, da uno spazio flessibile del dormitorio a un'aula, deve essere Teams abilitato.
 
 ## <a name="technology-considerations"></a>Considerazioni sulla tecnologia
 
@@ -136,7 +136,7 @@ Il video è importante quanto l'audio. L'acquisizione di comunicazioni fisiche e
 
 I video di alta qualità sono una necessità per la collaborazione Teams moderna. La tecnologia per le fotocamere è avanzata in modo significativo con le fotocamere di alta qualità ora disponibili per tutti gli spazi.
 
--   Le videocamere incluse in dispositivi come laptop e tablet sono un ottimo punto di partenza per l'uso da parte di utenti che partecipano a videochiamate. Per gli utenti che cercano di portare un'esperienza video più ricca in uno spazio personale, le fotocamere esterne rappresentano un passo avanti rispetto ai dispositivi incorporati e possono essere usate in un numero maggiore di scenari e configurazioni, assicurando che i partecipanti alla chiamata condidivano la migliore visualizzazione di se stessi. Questi dispositivi si installano facilmente con semplici connessioni USB disponibili in ogni PC.
+-   Le fotocamere incluse in dispositivi come laptop e tablet sono un ottimo punto di partenza per l'uso da parte di utenti che partecipano a videochiamate. Per gli utenti che cercano di portare un'esperienza video più ricca in uno spazio personale, le fotocamere esterne rappresentano un passo avanti rispetto ai dispositivi incorporati e possono essere usate in un numero maggiore di scenari e configurazioni, assicurando che i partecipanti alla chiamata condidivano la migliore visualizzazione di se stessi. Questi dispositivi si installano facilmente con semplici connessioni USB disponibili in ogni PC.
 
 -   Negli spazi condivisi le opzioni e le caratteristiche si espandono. Le sale più piccole possono essere coperte da fotocamere incluse in dispositivi audio all-in-one, come le barre audio. Queste fotocamere in genere presentano un ampio campo di visualizzazione, assicurando che catturino ogni partecipante nello spazio in un unico scatto. Molte di queste fotocamere presentano anche elementi come l'inquadratura intelligente dell'immagine (in modo che la fotocamera mostra solo le persone della riunione e non le sedie vuote) per tenere traccia e comprendere l'utilizzo dello spazio.
 
@@ -144,7 +144,7 @@ I video di alta qualità sono una necessità per la collaborazione Teams moderna
 
 ### <a name="how-do-you-interact-virtually-beyond-video-streams"></a>Come si interagisce praticamente oltre i flussi video?
 
-Teams riunioni vanno oltre le chiamate audio e video per i partecipanti. Esistono diversi modi per condividere e interagire dinamicamente con il contenuto.
+Teams le riunioni vanno oltre le chiamate audio e video per i partecipanti. Esistono diversi modi per condividere e interagire dinamicamente con il contenuto.
 
 Uno scenario comune è la condivisione di contenuti direttamente dal dispositivo di un partecipante. I singoli utenti possono condividere l'esperienza audio e visiva completa delle singole applicazioni o l'intero contenuto dello schermo direttamente alla riunione per consentire a tutti di visualizzarli. Questo si estende a tutti gli spazi condivisi con i dispositivi installati. Microsoft Teams Rooms anche l'opzione di usare una connessione monitor cablata per consentire ai partecipanti di condividerli anche se non hanno la possibilità di partecipare alla riunione singolarmente.
 
@@ -182,7 +182,7 @@ Un portatile che esegue Teams assicura che l'utente non sia limitato a un'area d
 
 *L'installazione o la configurazione di questa soluzione è:*
 
-Molto facile. Questo è qualcosa che può essere gestito interamente dagli utenti finali semplicemente pettinando il PC con un auricolare certificato per le chiamate audio e video. 
+Molto facile. Si tratta di una funzionalità che può essere gestita interamente dagli utenti finali semplicemente pettinando il PC con un auricolare certificato per le chiamate audio e video. 
 
 ### <a name="personal-space"></a>Spazio personale
 
@@ -190,7 +190,7 @@ Uno spazio personale può essere qualsiasi cosa, dalla camera da letto di uno st
 
 *Esempio A:*
 
-![Rendering della configurazione di un PC personale con altoparlante personale e Teams in esecuzione sul desktop.](media/devices5.png)
+![Rendering della configurazione di un PC personale con un altoparlante personale e Teams in esecuzione sul desktop.](media/devices5.png)
 
 *La soluzione mostrata è:*
 
@@ -202,7 +202,7 @@ Uno spazio personale più piccolo, più silenzioso e mirato significa che l'uten
 
 *Dispositivi visualizzati:*
 
--   Pc personale con Windows 10 e schermo esterno
+-   Personal PC con Windows 10 e schermo esterno
 
 -   [Yealink USB Webcam – UVC20](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/yealink-uvc20/854)
 
@@ -222,7 +222,7 @@ Allo stesso scopo dell'esempio A, questa soluzione riguarda uno spazio personale
 
 *Dispositivi visualizzati:*
 
--   Pc personale con Windows 10 e schermo esterno
+-   Personal PC con Windows 10 e schermo esterno
 
 -   [Poly Soundbar – Studio P15](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/poly-studio-p15/821)
 
@@ -248,9 +248,9 @@ Un grande display offre ai partecipanti remoti una presenza fisica all'interno d
 
 -   Sistema sala - [Microsoft Surface Hub 2S](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/microsoft-surface-hub-2s/822)
 
-    -   Si noti che la Surface Hub soluzione rappresenta un'esperienza premium per la collaborazione e l'uso interattivo. Una [Microsoft Teams room associata](https://www.microsoft.com/microsoft-teams/across-devices/devices/category/teams-rooms/20?page=1&filterIds=) a uno schermo di grandi dimensioni può essere usata in alternativa in questo stesso scenario.
+    -   Si noti che la soluzione Surface Hub rappresenta un'esperienza premium per la collaborazione e l'uso interattivo. Una [Microsoft Teams room associata](https://www.microsoft.com/microsoft-teams/across-devices/devices/category/teams-rooms/20?page=1&filterIds=) a uno schermo di grandi dimensioni può essere usata in alternativa in questo stesso scenario.
 
--   Acquisizione di lavagne analogiche - Kit fotocamera [contenuto Logitech Brio](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/logitech-brio-content-camera-kit/349)
+-   Acquisizione di lavagne analogiche - [Kit fotocamera contenuto Logitech Brio](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/logitech-brio-content-camera-kit/349)
 
 -   Fotocamera e audio - [Kit Logitech Rally Plus](https://www.logitech.com/products/video-conferencing/room-solutions/rally-ultra-hd-conferencecam.html)
 
@@ -290,13 +290,13 @@ Altamente complesso. Questa sala offre un'installazione fisica che richiederà u
 
 ### <a name="multi-purpose-spaces"></a>Spazi multivalore
 
-Teams possono essere implementati in quasi tutti gli spazi didattici o multi-scopo a cui si può pensare. Le raccolte, gli spazi di presentazione e collaborazione a uso misto, i bar e gli spazi all'aperto possono essere tutti dotati di un sistema Teams o di Teams dispositivi.
+Teams può essere implementato in quasi tutti gli spazi didattici o multi-scopo a cui si può pensare. Le raccolte, gli spazi di presentazione e collaborazione a uso misto, i bar e gli spazi all'aperto possono essere tutti dotati di un sistema Teams o di Teams esterni.
 
 ![Immagine di uno spazio multi-scopo con Teams dispositivi.](media/devices11.png)
 
 *Questa soluzione mostrata è:*
 
-Sistema di sala con un grande display front-of-room basato su proiettori, più console touch per il funzionamento e più Surface Hub 2 dispositivi per un'ampia gamma di usi.
+Un sistema di sala con un grande display front-of-room basato su proiettori, più console touch per il funzionamento e più Surface Hub 2 dispositivi per un'ampia gamma di usi.
 
 *Dispositivi visualizzati:*
 
@@ -320,10 +320,10 @@ Altamente complesso. Uno spazio multi-scopo come descritto richiede un esperto p
 
 Visualizzare le pagine seguenti per altre informazioni su Teams e partner:
 
-[Microsoft Teams per l'istruzione:](https://www.microsoft.com/education/products/teams) un'ottima fonte di informazioni per l'uso di Microsoft Teams nel settore dell'istruzione
+[Microsoft Teams per l'istruzione](https://www.microsoft.com/education/products/teams): un'ottima fonte di informazioni per l'uso di Microsoft Teams nel settore dell'istruzione
 
 [Dispositivi certificati per Microsoft Teams](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/poly-sync-20/825) : elenco completo dei dispositivi certificati per Microsoft Teams
 
-[Altre informazioni sulle Microsoft Teams Rooms:](/rooms/) guida per Microsoft Teams Rooms pianificazione, distribuzione e utilizzo
+[Altre informazioni sulle Microsoft Teams Rooms](/microsoftteams/rooms) - Guida per Microsoft Teams Rooms pianificazione, distribuzione e utilizzo
 
-[Teams Sala riunioni Partner Program](https://cloudpartners.transform.microsoft.com/teams-mrpp) : elenco di partner in tutto il mondo disponibili per la pianificazione e la distribuzione di Teams room
+[Teams Sala riunioni Partner Program](https://cloudpartners.transform.microsoft.com/teams-mrpp): elenco di partner in tutto il mondo disponibili per la pianificazione e la distribuzione di Teams room

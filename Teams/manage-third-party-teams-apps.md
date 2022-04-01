@@ -18,18 +18,25 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Gestire l'accesso Teams app in Microsoft 365.
-ms.openlocfilehash: 3fe95852fe88f64539ffa562d64619c1300b083b
-ms.sourcegitcommit: abe942c294ed5fca70efdf039d38d611b9c21fe9
+ms.openlocfilehash: a9a0eb67323874e725510342e1e6810dcc5c0b0d
+ms.sourcegitcommit: 2388838163812eeabcbd5331aaf680b79da3ccba
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2022
-ms.locfileid: "63689153"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64593001"
 ---
 # <a name="manage-access-to-teams-apps-across-microsoft-365"></a>Gestire l'accesso Teams app in più Microsoft 365
 
-Gli sviluppatori di app possono aggiornare le app Microsoft Teams per lavorare in Outlook e in Office.com, oltre all'app che lavora in Teams. Gli utenti finali possono usare le app aggiornate in Teams, in Microsoft Outlook e Microsoft Office.com dopo l'aggiornamento. Attualmente, solo gli utenti finali in Targeted Release possono visualizzare e usare queste app specifiche in Teams, Outlook e Office.com. L'esperienza Teams di amministrazione si applica per regolamentare l'accesso a queste app. Una notifica su questa modifica è disponibile nel [centro messaggi](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC334280). Gli amministratori di Teams possono consentire a specifici utenti finali di usare le app aggiornate o gestire l'accesso alle app aggiornate in Teams, Outlook e Office.com. Teams amministratori usano l'interfaccia Teams di amministrazione per gestire l'accesso alle app.
+Gli sviluppatori di app possono migliorare le Microsoft Teams per lavorare in Outlook e su Office.com, oltre all'app che lavora in Teams. Gli utenti finali possono usare le app migliorate in Teams, in Microsoft Outlook e Microsoft Office.com dopo il miglioramento. Attualmente, solo gli utenti finali in Targeted Release possono visualizzare e usare queste app specifiche in Teams, Outlook e Office.com. L'esperienza Teams di amministrazione si applica per regolamentare l'accesso a queste app. Una notifica su questa modifica è disponibile nel [centro messaggi](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC334280). Gli amministratori di Teams possono consentire a specifici utenti finali di usare le app migliorate o di gestire l'accesso alle app avanzate in Teams, in Outlook e in Office.com. Teams amministratori usano l'interfaccia Teams di amministrazione per gestire l'accesso alle app.
 
-Per l'uso in Outlook e Office.com, un'app aggiornata continua a usare le autorizzazioni esistenti concesse in Teams. Le autorizzazioni [dell'app aggiornata non vengono modificate](https://devblogs.microsoft.com/microsoft365dev/ignite-2021-building-apps-for-collaboration-in-a-hybrid-world/#personal-tabs).
+Per l'uso in Outlook e Office.com, un'app avanzata continua a usare le autorizzazioni esistenti concesse in Teams. Le autorizzazioni [dell'app](https://devblogs.microsoft.com/microsoft365dev/ignite-2021-building-apps-for-collaboration-in-a-hybrid-world/#personal-tabs) avanzata non vengono modificate.
+
+Di seguito è riportato un elenco delle app migliorate:
+
+* [Affresco](https://teams.microsoft.com/l/app/c738b607-88dd-4f16-aefe-6a824c65d25d?source=app-details-dialog)
+* [Power BI](https://teams.microsoft.com/l/app/1c4340de-2a85-40e5-8eb0-4f295368978b?source=app-details-dialog)
+* [SurveyMonkey](https://teams.microsoft.com/l/app/0fd925a0-357f-4d25-8456-b3022aaa41a9?source=app-details-dialog)
+* [Zoho Projects](https://teams.microsoft.com/l/app/4a39aea9-8537-4c2f-b66d-ca364eb3b80d?source=app-details-dialog)
 
 È possibile controllare l'accesso degli utenti finali alle app Teams usando i metodi seguenti. Se si è un amministratore di Office app, contattare l'amministratore globale o l'amministratore Teams per gestire l'accesso alle app.
 
@@ -47,6 +54,7 @@ Per l'uso in Outlook e Office.com, un'app aggiornata continua a usare le autoriz
 
 ## <a name="see-also"></a>Vedere anche
 
+* [Microsoft Teams app progettate per Microsoft 365 in anteprima per Outlook e Office.com](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-teams-apps-designed-for-microsoft-365-coming-in/ba-p/3269538)
 * [Comprendere i ruoli di amministratore in Microsoft 365](/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true)  
 * [Informazioni Outlook componenti aggiuntivi](/office/dev/add-ins/outlook/outlook-add-ins-overview)
 * [Come gli sviluppatori estendono Teams le app in modo che funzionino in Microsoft 365](/microsoftteams/platform/m365-apps/overview)
