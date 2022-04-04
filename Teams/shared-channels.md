@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali condivisi in Microsoft Teams (anteprima).
-ms.openlocfilehash: 3a5b7f1005af95580f56b87188bc8a67325d440d
-ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
+ms.openlocfilehash: 0c66d308ef5182c6ace69a7bdcd004c865109bec
+ms.sourcegitcommit: 3e7c491d2bb13c86ac8e73b1c6c9735660c673e3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712123"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64590384"
 ---
 # <a name="shared-channels-in-microsoft-teams-preview"></a>Canali condivisi in Microsoft Teams (anteprima)
 
@@ -73,7 +73,7 @@ Quando un team viene archiviato, la condivisione individuale rimane intatta, ma 
 
 Il proprietario di un canale condiviso non può essere rimosso tramite il client di Teams se è l'ultimo proprietario di uno o più canali condivisi.
 
-Se l'ultimo proprietario del canale condiviso lascia l'organizzazione o viene rimosso dal gruppo di Microsoft 365 associato al team, uno dei membri del canale condiviso viene automaticamente promosso come proprietario del canale condiviso. È consigliabile aggiungere più proprietari per evitare questa situazione.
+Se l'ultimo proprietario del canale condiviso lascia l'organizzazione o viene rimosso dal gruppo di Microsoft 365 associato al team, un membro del canale condiviso verrà automaticamente promosso come proprietario del canale condiviso. È consigliabile aggiungere più proprietari per evitare tale situazione.
 
 ## <a name="channel-owner-settings"></a>Impostazioni del proprietario del canale
 
@@ -122,6 +122,22 @@ I file, le cartelle e i blocchi appunti di OneNote in un canale condiviso posson
 Se a un utente viene concesso l'accesso a un file, una cartella o un blocco appunti in un canale condiviso tramite SharePoint, la rimozione dell'utente dal team o dal canale condiviso non rimuoverà l'accesso dell'utente al file, alla cartella o al blocco appunti.
 
 Se un blocco appunti esistente viene aggiunto come scheda a un canale condiviso, l'accesso al canale condiviso non verrà modificato e il blocco appunti manterrà le autorizzazioni esistenti.
+
+## <a name="resources-for-your-users"></a>Risorse per gli utenti
+
+Gli articoli seguenti possono essere utili nel caso di utilizzo dei canali condivisi da parte degli utenti dell'organizzazione.
+
+[Creare un canale condiviso in Teams](https://support.microsoft.com/office/80712457-579e-42b2-b54f-112329578aaa)
+
+[Condividere un canale con altre persone in Teams](https://support.microsoft.com/office/5f60de2d-0080-4e55-b26f-33a9dafa120e)
+
+[Condividere un canale con un team](https://support.microsoft.com/office/b2e89992-2708-4583-b11e-bbb6edb4f1c3)
+
+[Perché usare un canale condiviso rispetto ad altri tipi di canale in Teams?](https://support.microsoft.com/office/e6ad61d0-6b3f-4e1b-baac-63e2978bd92e)
+
+[Guest e canali condivisi in Teams](https://support.microsoft.com/office/612de4ce-e7a3-4579-b086-bb8ff9f2d11e)
+
+[Ruoli di proprietario e membro del canale condiviso in Teams](https://support.microsoft.com/office/75b379f4-8e9c-4202-acf1-6ffc3878a2d7)
 
 ## <a name="limits-for-shared-channels-preview"></a>Limiti per i canali condivisi (anteprima)
 

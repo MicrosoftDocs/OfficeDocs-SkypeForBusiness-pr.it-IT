@@ -20,19 +20,19 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9fadf6685ada5f0625f7347efe3c1e4d8840af96
-ms.sourcegitcommit: b57e19e20900ff02f3196c811bf1dd1acd149c79
+ms.openlocfilehash: 3e69fad1ab4aeeefba6d357fffd3d10a28139359
+ms.sourcegitcommit: 2388838163812eeabcbd5331aaf680b79da3ccba
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "60579636"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "64592731"
 ---
 # <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
 
 > [!IMPORTANT]
 > Il modello di servizio di Teams è soggetto a modifiche per migliorare le esperienze degli utenti. Ad esempio, le scadenze del token di accesso o di aggiornamento predefinito potrebbero essere soggette a modifica per migliorare le prestazioni e la resilienza di autenticazione per gli utenti che usano Teams. Le modifiche apportate verranno applicate con l'obiettivo di garantire la protezione e l’affidabilità da progettazione di Teams.
 
-Microsoft Teams, come parte dei servizi Microsoft 365 e Office 365, segue tutte le migliori pratiche e procedure di sicurezza, come la protezione a livello di servizio attraverso misure di difesa avanzate, controlli utente nell'ambito del servizio, potenziamento delle misure di sicurezza e Procedure operative consigliate. Per i dettagli completi, consultare il [Centro protezione Microsoft](https://microsoft.com/trustcenter).
+Microsoft Teams, come parte dei servizi Microsoft 365 e Office 365, segue tutte le migliori pratiche e procedure di sicurezza, come la protezione a livello di servizio attraverso misure di difesa avanzate, controlli utente nell'ambito del servizio, potenziamento delle misure di sicurezza e best practice operative. Per maggiori dettagli, consulta il [Centro protezione Microsoft](https://microsoft.com/trustcenter).
 
 ## <a name="trustworthy-by-design"></a>Progettato per l'affidabilità
 
@@ -40,7 +40,7 @@ Teams è progettato e sviluppato in conformità con Microsoft Trustworthy Comput
 
 ## <a name="trustworthy-by-default"></a>Affidabilità per impostazione predefinita
 
-In Teams le comunicazioni di rete sono crittografate per impostazione predefinita. Con l’utilizzo dei certificati in tutti i server, OAuth, TLS (Transport Layer Security),e SRTP (Secure Real-Time Transport Protocol), tutti i dati di Teams sono protetti sulla rete.
+Le comunicazioni di rete in Teams sono crittografate per impostazione predefinita. Con l'utilizzo dei certificati in tutti i server, OAUTH, Transport Layer Security (TLS) e Secure Real-Time Transport Protocol (SRTP), tutti i dati di Teams sono protetti sulla rete.
 
 ## <a name="how-teams-handles-common-security-threats"></a>In che modo Teams tratta le minacce alla sicurezza comuni
 
@@ -48,11 +48,11 @@ Questa sezione identifica le più comuni minacce alla sicurezza del servizio Tea
 
 ### <a name="compromised-key-attack"></a>Attacco basato su chiave compromessa
 
-Teams utilizza le funzionalità PKI nel sistema operativo del Server Windows per proteggere i dati della chiave utilizzati per la crittografia nelle connessioni TLS. Le chiavi utilizzate per la crittografia dei file multimediali vengono scambiate tramite le connessioni TLS.
+Teams utilizza le funzionalità PKI nel sistema operativo del Server Windows per proteggere i dati della chiave utilizzati per la crittografia nelle connessioni TLS. Le chiavi utilizzate per la crittografia degli elementi multimediali vengono scambiate tramite connessioni TLS.
 
 ### <a name="network-denial-of-service-attack"></a>Attacco Denial-of-Service di rete
 
-Un attacco Distributed Denial of Service (DDOS) si verifica quando l'utente malintenzionato impedisce il normale utilizzo e funzionamento della rete da parte degli utenti legittimi. Utilizzando un attacco Denial-of-Service, l'utente malintenzionato può:
+Un attacco Distributed Denial of Service (DDOS) si verifica quando l'utente malintenzionato impedisce il normale utilizzo e funzionamento della rete da parte degli utenti legittimi. Usando un attacco denial-of-service, l'attaccante può:
 
 - Inviare dati non validi alle applicazioni e ai servizi in esecuzione nella rete attaccata per interromperne la normale funzione.
 - Inviare una grande quantità di traffico, sovraccaricando il sistema fino a quando non smette di rispondere o risponde lentamente alle richieste legittime.
@@ -134,7 +134,7 @@ Esistono più livelli di crittografia in Microsoft 365. La crittografia in Teams
 
 #### <a name="traffic-encryption"></a>Crittografia del traffico
 
-Tutto il traffico da server a server richiede lo standard MTLS, indipendentemente dal fatto che il traffico sia confinato alla rete interna o che attraversi il perimetro della rete interna. In questa tabella sono riepilogati i protocolli usati da Teams.
+Tutto il traffico da server a server richiede lo standard MTLS, indipendentemente dal fatto che il traffico sia confinato alla rete interna o che attraversi il perimetro della rete interna. Questa tabella riassume i protocolli utilizzati da Teams.
 
 |**Tipo di traffico**|**Crittografato da**|
 |:-----|:-----|
@@ -150,7 +150,7 @@ Teams utilizza TLS e MTLS per crittografare i messaggi istantanei.
 
 #### <a name="media-encryption"></a>Crittografia file multimediali
 
-I flussi delle chiamate Teams basati sul [modello di offerta e risposta SDP (Session Description Protocol) RFC 4566](https://tools.ietf.org/html/rfc4566) su HTTPS. Una volta che il chiamato accetta una chiamata in arrivo, il chiamante e il chiamato concordano sui parametri di sessione.
+I flussi delle chiamate Teams basati sul [modello di offerta e risposta SDP (Session Description Protocol) RFC 8866](https://datatracker.ietf.org/doc/html/rfc8866) su HTTPS. Una volta che il chiamato accetta una chiamata in arrivo, il chiamante e il chiamato concordano sui parametri di sessione.
 
 Il traffico di file multimediali viene crittografato dal chiamante e passa dal chiamante al chiamato tramite Secure RTP (SRTP), un profilo di Real-Time Transport Protocol (RTP) che offre riservatezza, autenticazione e protezione dagli attacchi di riproduzione al traffico RTP. SRTP utilizza una chiave della sessione generata da un generatore di numeri casuali sicuro e scambiata utilizzando il canale di segnalazione TLS. Nella maggior pare dei casi il traffico dei contenuti multimediali tra client viene negoziato attraverso una connessione tra client e server, ed è crittografato con SRTP quando passa direttamente da client a client.
 
@@ -189,7 +189,7 @@ In Teams, gli amministratori IT possono gestire il proprio servizio tramite l'in
 
 ### <a name="configuring-access-to-teams-at-your-internet-boundary"></a>Configurazione dell'accesso a Teams entro il limite Internet
 
-Affinché Teams funzioni correttamente, per esempio, affinché gli utenti riescano a partecipare alle riunioni, i clienti devono configurare il proprio accesso Internet in modo tale che il traffico UDP e TCP in uscita verso i servizi nel cloud Teams sia consentito. Per ulteriori informazioni, vedere [URL e intervalli di indirizzi IP per Office 365](/office365/enterprise/urls-and-ip-address-ranges).
+Affinché Teams funzioni correttamente, per esempio, affinché gli utenti riescano a partecipare alle riunioni, i clienti devono configurare il proprio accesso Internet in modo tale che il traffico UDP e TCP in uscita verso i servizi nel cloud Teams sia consentito. Per ulteriori informazioni, consulta [gli URL e gli intervalli di indirizzi IP di Office 365](/office365/enterprise/urls-and-ip-address-ranges).
 
 ### <a name="udp-3478-3481-and-tcp-443"></a>UDP 3478-3481 e TCP 443
 
@@ -262,13 +262,13 @@ Un relatore può anche promuovere un partecipante al ruolo di relatore durante l
 
 I partecipanti alla riunione sono inoltre classificati per posizione e credenziali. È possibile utilizzare entrambe queste caratteristiche per decidere quali utenti possono accedere a riunioni specifiche. Gli utenti possono essere divisi in modo esteso nelle categorie seguenti:
 
-- **Utenti che appartengono al tenant**. Questi utenti hanno una credenziale in Azure Active Directory per il tenant.
+- **Utenti che appartengono al tenant**: questi utenti dispongono di credenziali in Azure Active Directory per il tenant.
 
     *Persone dell'organizzazione*: questi utenti dispongono di credenziali in Azure Active Directory per il tenant. *Persone dell'organizzazione* include gli account guest invitati.
 
     *Utenti remoti*: questi utenti partecipano dall'esterno della rete aziendale. Possono comprendere i dipendenti che lavorano da casa o in viaggio e altri, come dipendenti di fornitori affidabili, a cui sono state concesse credenziali aziendali per le rispettive condizioni d'uso. Gli utenti remoti possono creare e partecipare alle riunioni, anche come relatori.
 
-- **Utenti che non appartengono al tenant**. Questi utenti non hanno credenziali in Azure AD per il tenant.
+- **Utenti che non appartengono al tenant**: questi utenti non dispongono di credenziali in Azure Active Directory per il tenant.
 
     *Utenti federati*: gli utenti federati dispongono di credenziali valide con partner federati e vengono pertanto trattati come autenticati da Teams, ma rimangono comunque esterni per il tenant della riunione o dell'organizzatore. Gli utenti federati possono partecipare alle riunioni ed essere promossi a relatori dopo che hanno partecipato alla riunione, ma non possono creare riunioni in aziende con cui sono federati.
 
@@ -290,7 +290,7 @@ Gli organizzatori della riunione controllano se i partecipanti possono partecipa
 Le impostazioni predefinite sono:
 
 - *Persone dell'organizzazione*: chiunque esterno all'organizzazione attenderà nella sala di attesa finché non verrà ammesso.
-- *Persone dell'organizzazione e di organizzazioni attendibili*: gli utenti esterni e autenticati dei domini di Teams e Skype for Business, presenti nell'elenco degli utenti esterni consentiti, possono evitare la sala di attesa. Tutti gli altri utenti aspetteranno nella sala di attesa finché non saranno ammessi.
+- *Persone dell'organizzazione e di organizzazioni attendibili*: gli utenti esterni e autenticati dei domini di Teams e Skype for Business, presenti nell'elenco degli utenti esterni consentiti, possono evitare la sala di attesa. Tutti gli altri utenti attenderanno nella sala di attesa fino all'ammissione.
 - *Tutti*: tutti i partecipanti alla riunione evitano la sala di attesa dopo che un utente autenticato ha partecipato alla riunione.
 
 ### <a name="presenter-capabilities"></a>Funzioni del relatore

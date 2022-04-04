@@ -20,12 +20,12 @@ metadata:
   - Teams_ITAdmin_RemoteWorkers
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: 1737461b1eface3038957a862ab2bcb743ca4615
-  ms.sourcegitcommit: eb5fadedacbf4651ed5b05f1b0d6abf57e9eda2d
+  ms.openlocfilehash: 0a8f7affd933fbe8661609e90fa934a8597e4d3a
+  ms.sourcegitcommit: a77116a0b0fd7e3cf14de694c559338bea198851
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 02/25/2022
-  ms.locfileid: "62960058"
+  ms.lasthandoff: 04/03/2022
+  ms.locfileid: "64628340"
 items:
 - durationInMinutes: 1
   content: >
@@ -113,4 +113,4 @@ items:
         - seguire il [blog di Teams](https://aka.ms/teamsblog)
         - leggere la [roadmap di Teams](https://aka.ms/O365Roadmap)
         - informazioni sulle funzionalità più recenti rilasciate in [Note sulla versione](https://support.office.com/article/what-s-new-in-microsoft-teams-d7092a6d-c896-424c-b362-a472d5f105de)
-    4.  Esplorare [più formazioni ed esercitazioni](/OfficeDocs-SkypeForBusiness-pr/blob/master/Teams/ITAdmin-readiness#technical-training).
+    4.  Esplorare [più formazioni ed esercitazioni](/microsoftteams/ITAdmin-readiness#technical-training).
