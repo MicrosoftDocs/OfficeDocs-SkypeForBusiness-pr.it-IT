@@ -969,6 +969,8 @@ items:
             href: direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice
       - name: Dial plan e instradamento
         items:
+          - name: Panoramica
+            href: dial-plans-routing-overview.md
           - name: Che cosa sono i piani di chiamata?
             href: what-are-dial-plans.md
           - name: Creare e impostare piani di chiamata

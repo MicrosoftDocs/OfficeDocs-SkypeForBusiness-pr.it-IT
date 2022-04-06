@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9accce27ded20f8ce78d4d5b80f6aff474213675
-ms.sourcegitcommit: c2a77ef9c1c9e6f00b3a4589bf02b100c37f5801
+ms.openlocfilehash: 384a57abb724ee29feb5f93fa171d0bc5ec96f3d
+ms.sourcegitcommit: 4847f24e8c644336d2b2f48aa09e2cf91360e4dd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64649025"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "64686493"
 ---
 # <a name="checks-and-validation-performed-by-microsoft-on-teams-apps"></a>Controlli e convalida eseguiti da Microsoft sulle app Teams
 
@@ -31,15 +31,10 @@ Microsoft richiede a tutte le app di superare una convalida obbligatoria prima d
 
 Tutte le app sono obbligatoriamente necessarie per aderire ai criteri di certificazione delle app Microsoft. Il team Teams Store esegue oltre 400 test per garantire che le app siano utilizzabili e rispettino standard elevati di privacy e sicurezza.
 
-Per conoscere le linee guida dettagliate sulla convalida a cui aderiscono gli sviluppatori di app, vedi [Linee guida per la convalida per gli sviluppatori](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines).
+Per conoscere le linee guida dettagliate sulla convalida a cui aderiscono gli sviluppatori di app, vedi [Linee guida per la convalida per gli sviluppatori](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines). Le linee guida si basano sui [criteri di certificazione per le app Teams](/legal/marketplace/certification-policies#1140-teams).
 
 > [!NOTE]
 > La convalida e i controlli di Microsoft non sono disponibili per un'app personalizzata in quanto sviluppata all'interno dell'organizzazione ed è disponibile solo per i membri dell'organizzazione.
-
-<!--- TBD: Add the link later. 
-To review the certification policies of any app, see [App certification policies]().
-Is the link /microsoft-365-app-certification/teams/teams-apps
---->
 
 ## <a name="app-validation-and-testing"></a>Convalida e test delle app
 
