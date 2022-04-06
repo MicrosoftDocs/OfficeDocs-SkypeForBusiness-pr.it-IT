@@ -7,7 +7,7 @@ author: guptaashish
 ms.author: guptaashish
 manager: prkosh
 audience: admin
-ms.date: 02/10/2021
+ms.date: 04/05/2022
 ms.service: msteams
 ms.collection:
 - M365-collaboration
@@ -18,61 +18,128 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b6fd5ef344550cf85420faef1748c34f6e87e88b
-ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
-ms.translationtype: HT
+ms.openlocfilehash: f8579d7c2c49749058c174aa71430803dce63286
+ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2022
-ms.locfileid: "64556527"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64643020"
 ---
 # <a name="about-apps-in-microsoft-teams"></a>Informazioni sulle app in Microsoft Teams
 
-Le app consentono agli utenti di ottenere contenuti dai servizi preferiti e di condividerli in Teams. Consentono di eseguire attività come aggiungere servizi nella parte superiore di un canale, automatizzare le notifiche usando i bot o condividere e assegnare le attività. Per altre informazioni sull'uso delle app, vedere [Panoramica delle app per gli utenti finali](https://support.office.com/article/overview-of-apps-in-teams-747492ee-7cdd-4115-a993-8c7e7f98a3d0).
+Le app sono un ottimo modo per riunire gli strumenti e i servizi del luogo di lavoro e collaborare con altri utenti. Le app aiutano gli utenti finali a essere più produttivi, collaborativi ed efficaci nelle loro attività quotidiane. Le organizzazioni usano le app per connettersi con i clienti, fornire servizi e condividere informazioni. Le app consentono agli utenti di essere più efficaci Teams chat, riunioni e canali. Esempi sono gli utenti finali che usano un calendario aggiunto in Teams per collaborare rapidamente con altri utenti, un'app con funzionalità di bot che informano gli utenti di QoS di un servizio Web in un canale Teams e un'app per condividere e assegnare attività a vari utenti finali in un canale.
 
-I diversi tipi di app che gli utenti finali possono usare in Teams sono app create da Microsoft, app di terze parti certificate e app personalizzate create dalla propria organizzazione.
+La nostra vasta selezione di app convalidate e sicure nello Store offre agli utenti finali l'accesso agli strumenti e ai servizi di cui l'organizzazione ha bisogno ogni giorno. Microsoft Teams sono app SaaS basate sul Web che non devono essere distribuite. Gli utenti finali possono usare le app in Teams solo in base alle autorizzazioni fornite dall'utente. L'amministratore approva o blocca l'uso di qualsiasi app per gli utenti dell'organizzazione. Puoi controllare la disponibilità di app per tutti gli utenti in riunioni, chat e canali.
 
-## <a name="use-microsoft-provided-apps"></a>Usare le app fornite da Microsoft
+Per fornire agli utenti finali le app necessarie, continua a leggere per comprendere i tipi di app e la posizione in cui gli utenti accedono a tali app. Per altre informazioni sull'uso delle app, vedere [Panoramica delle app per gli utenti finali](https://support.office.com/article/overview-of-apps-in-teams-747492ee-7cdd-4115-a993-8c7e7f98a3d0)
 
-Teams include un set di app predefinite, tra cui Elenchi, Tasks, Complimento, Approvazioni e altro ancora. È consigliabile includere le app in primo piano di Teams, come ad esempio Planner, nell'implementazione iniziale di Teams. Aggiungere altre app man mano che si adotta Teams. Alcune funzionalità predefinite come il flusso di attività, la chat, il calendario e le chiamate sono disponibili per impostazione predefinita e aggiunte per facilitare l'accesso agli utenti finali.
+<!--- Commenting the previous content as part of this article revamp.
 
-## <a name="use-third-party-apps"></a>Usare app di terze parti
+Apps let users find content from their favorite services and share it in Teams. They let you do tasks such as pin services at the top of a channel, automate notifications using bots, or share and assign tasks.
 
-Oltre alle app fornite da Microsoft, è possibile usare app di terze parti convalidate da Microsoft. Microsoft collabora con Microsoft 365 partner per sviluppatori per fornire le informazioni necessarie per accelerare le decisioni relative all'uso delle app di Teams. Per altre informazioni, vedere [sicurezza e conformità delle app di Microsoft Teams](/microsoft-365-app-certification/teams/teams-apps).
+--->
 
-## <a name="use-open-source-sample-apps-provided-by-microsoft"></a>Usare le app di esempio open source fornite da Microsoft
+I diversi tipi di app che gli utenti finali possono usare in Teams sono:
 
-È anche possibile usare i [modelli di Teams](/microsoftteams/platform/samples/app-templates?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fMicrosoftTeams%2ftoc.json), app pronte per la produzione per Microsoft Teams che sono guidate dalla community, open source e disponibili su GitHub.
+* [App di base che fanno parte di Teams](#core-apps).
+* Altre [app create da Microsoft](#microsoft-provided-apps).
+* [App di terze parti](#third-party-apps-validated-by-microsoft) da partner (convalidate da Microsoft).
+* [App personalizzate](#custom-apps) create dalla propria organizzazione.
 
-## <a name="create-custom-apps"></a>Creare app personalizzate
+## <a name="core-apps"></a>App di base
 
-È possibile creare rapidamente soluzioni personalizzat con basso impiego di codice usando l'integrazione di Teams con [Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions). È anche possibile creare un'app personalizzata in base alle esigenze dell'organizzazione. Per altre informazioni, vedere [Creare app per Microsoft Teams](/microsoftteams/platform/overview).  
+Alcune funzionalità predefinite, ad esempio feed attività, canali di Teams, chat, calendario e chiamate, sono disponibili e aggiunte per impostazione predefinita per facilitare l'accesso per gli utenti finali. Gli amministratori possono modificare il comportamento predefinito usando i criteri [di configurazione](/microsoftteams/teams-app-setup-policies).
 
-## <a name="apps-deployment-decisions"></a>Decisioni per la distribuzione delle app
+:::image type="content" source="media/core-apps-pinned1.png" alt-text="Le app di base sono le app aggiunte in Teams per impostazione predefinita." lightbox="media/core-apps-pinned2.png":::
 
-Teams offre un'esperienza di collaborazione predefinita che la maggior parte delle organizzazioni trova perfetta per le proprie esigenze. Questo articolo è utile per decidere se modificare una o più impostazioni predefinite in base al profilo o ai requisiti dell'organizzazione e illustra la procedura per ogni modifica. Le impostazioni sono state suddivise in due gruppi, a partire dal set di base di [modifiche più probabili](#core-deployment-decisions). Il secondo gruppo include le [impostazioni aggiuntive](#additional-deployment-decisions)che si vuole configurare in base alle esigenze dell’organizzazione.
+## <a name="microsoft-provided-apps"></a>App fornite da Microsoft
 
-## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione
+Microsoft fornisce molte app per migliorare la produttività e la collaborazione. L'utente e gli utenti finali possono trovare queste app cercando Microsoft elencato come Publisher nell'interfaccia di amministrazione o elencato come provider nel Team Store.
 
-Di seguito sono illustrate le impostazioni delle app che la maggior parte delle organizzazioni vorrà modificare se le impostazioni predefinite di Teams non sono adeguate.
+Teams include un set di app predefinite, tra cui Elenchi, Tasks, Complimento, Approvazioni e altro ancora. È consigliabile includere le app in primo piano di Teams, come ad esempio Planner, nell'implementazione iniziale di Teams.
 
-### <a name="app-availability-settings"></a>Impostazioni di disponibilità app
+:::image type="content" source="media/microsoft-apps-in-tac1.png" alt-text="App Microsoft nell'Teams di amministrazione" lightbox="media/microsoft-apps-in-tac2.png":::
 
-Teams offre diverse app pubblicate da Microsoft e di terze parti per coinvolgere gli utenti, supportare la produttività e integrare i servizi commerciali di uso comune in Teams.
-Si possono scaricare le app dallo Store di Teams. Per impostazione predefinita tutte le app, incluse le app personalizzate inviate tramite il [processo di approvazione dello store di Teams](/microsoftteams/platform/publishing/apps-publish#microsoft-teams-app-approval-process), sono attivate per tutti gli utenti. Ad esempio, gli utenti possono usare l'app Planner per creare e gestire le attività del team in Teams.
+## <a name="third-party-apps-validated-by-microsoft"></a>App di terze parti convalidate da Microsoft
 
-Per impostazione predefinita, tutte le app fornite da Microsoft, da terze parti e personalizzate sono disponibili ed è possibile attivare o disattivare le singole app. Sono disponibili impostazioni a livello di organizzazione che consente di attivare o disattivare tutte le app di terze parti e/o personalizzate per l'intera organizzazione.
+Oltre alle app fornite da Microsoft, è possibile usare app di terze parti convalidate da Microsoft. Microsoft convalida le funzionalità e la sicurezza di queste app prima di renderle disponibili in Teams Store.
 
-| Chiedersi | Azione |
+<!--- TBD: Link to the new article later when it is created.
+To understand the benefits of app validation, see [validation of third-party apps]().
+
+--->
+
+:::image type="content" source="media/3p-apps-in-teams.png" alt-text="Esempio di app di terze parti in Teams Store":::
+
+<!--- TBD: Check the relevance of this link here.
+For more information, see [Microsoft Teams App Security and Compliance](/microsoft-365-app-certification/teams/teams-apps).
+--->
+
+## <a name="custom-apps"></a>App personalizzate
+
+Le app create dagli sviluppatori nell'organizzazione sono denominate app personalizzate. Lo sviluppo di un'app di questo tipo è commissionato per requisiti specifici dell'organizzazione e sono disponibili controlli per consentire o disattivare tali app. Gli sviluppatori dell'organizzazione possono creare rapidamente soluzioni personalizzate a basso codice usando l'Teams con [Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions).
+
+Quando un amministratore consente l'uso di app personalizzate, gli utenti finali trovano queste app facendo  clic su Creato per l'organizzazione nella barra di spostamento sinistra di Teams Store.
+
+:::image type="content" source="media/built-for-your-org1.png" alt-text="App personalizzate in Teams store in Teams desktop" lightbox="media/built-for-your-org2.png":::
+
+### <a name="understand-sideloading-of-custom-apps"></a>Informazioni sul sideload delle app personalizzate
+
+Quando si sviluppano app personalizzate e prima di distribuirla agli utenti finali, gli sviluppatori testano le app aggiungendola allo store per testarla da sola o testando con un team in cui l'app viene affiancata. Questo metodo è denominato sideload delle app e si applica solo alle app personalizzate.
+
+Gli sviluppatori possono sideload di un'app per renderla disponibile ai membri di un team specifico, in genere per testare un'app in fase di sviluppo. Questa operazione non richiede l'approvazione dell'amministratore se è consentito il sideload. Gli amministratori possono non consentire il sideload per qualsiasi sviluppatore.
+
+Se si non consente il sideload, gli sviluppatori possono comunque testare le loro app in un [tenant di test](/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant). Una volta completato lo sviluppo di app personalizzate, gli sviluppatori richiedono agli amministratori di distribuire l'app personalizzata agli utenti finali. Per informazioni dettagliate, [vedere come pubblicare un'app personalizzata](/microsoftteams/upload-custom-apps). Gli amministratori possono consentire o non consentire l'uso di un'app personalizzata per utenti specifici.
+
+### <a name="about-app-templates"></a>Informazioni sui modelli di app
+
+I modelli di app per Teams sono app di esempio funzionali e pronte per la produzione create da Microsoft per illustrare i casi d'uso più diffusi, presentare le procedure consigliate per lo sviluppo di app e fornire app open source che gli sviluppatori possono estendere per creare app personalizzate. Gli sviluppatori dell'organizzazione personalizzano i modelli di app in base alle esigenze dell'organizzazione con semplici modifiche al codice disponibile in GitHub. L'amministratore fornisce queste app come app personalizzate per gli utenti finali.
+
+Per altre informazioni, vedere Modelli [Microsoft Teams app](https://adoption.microsoft.com/microsoft-teams/app-templates/).
+
+## <a name="understand-app-capabilities"></a>Informazioni sulle funzionalità dell'app
+
+Le app di messaggistica includono il contenuto di un'app in un canale o in una chat. Le app di estendibilità delle riunioni integrano le app di uno sviluppatore all'interno delle riunioni e offrono un'esperienza reattiva durante le riunioni. Per fornire varie funzionalità, gli sviluppatori di app sfruttano le funzionalità dell'app seguenti.
+
+I bot forniscono risposte, aggiornamenti e assistenza. Puoi chattare con questi utenti uno-a-uno o all'interno di un canale. Possono essere utili per la gestione delle attività, la programmazione e altro ancora. Ad esempio, è possibile usare l'app Polly per creare sondaggi rapidi, ottenere feedback ed eseguire un controllo a polso.
+
+Le schede aggiunte nella parte superiore di un canale consentono di interagire con contenuti e servizi con un'esperienza simile al Web.
+I connettori forniscono contenuti e aggiornamenti dai servizi usati di frequente (ad esempio Jira Cloud e Bitbucket) direttamente in una conversazione di canale.
+
+Le estensioni di messaggistica sono scelte rapide da tastiera per inserire contenuto dell'app o per agire su un messaggio senza che gli utenti finali siano in grado di allontanarsi dalla conversazione. Le estensioni di messaggistica possono contenere comandi di ricerca per gli utenti finali per trovare rapidamente contenuto esterno e inserirlo in un messaggio o in comandi di azione.
+
+Per visualizzare i casi di utilizzo comuni mappati alle funzionalità Teams, vedere Eseguire il mapping dei casi di utilizzo alle Teams [delle app](/microsoftteams/platform/concepts/design/map-use-cases).
+
+<!--- TBD: Admins do many considerations and decisions around app adoption and app governance. These are to be covered in a separate article. Commenting the below content for now as part of this article revamp.
+
+## Apps deployment decisions
+
+Teams provides a great out-of-the-box collaboration experience for your organization, and most organizations find that the default settings work for them. This article helps you decide whether to change any of the default settings, based on your organization's profile and business requirements, then it walks you through each change. We've split the settings into two groups, starting with the core set of [changes you're more likely to make](#core-deployment-decisions). The second group includes the [additional settings](#additional-deployment-decisions) you may want to configure, based on your organization's needs.
+
+## Core deployment decisions
+
+These are the apps settings that most organizations want to change (if the Teams default settings don't work for them).
+
+### App availability settings
+
+Teams provides many apps published by Microsoft and by third parties to engage users, support productivity, and integrate commonly used business services into Teams.
+Get apps from the Teams Store. By default, all apps, including custom apps that you've submitted via the [Teams Store approval process](/microsoftteams/platform/publishing/apps-publish#microsoft-teams-app-approval-process), are turned on for all users. For example, users can use the Planner app to build and manage team tasks in Teams.
+
+By default, all Microsoft-provided, third-party, and custom apps are available, and you can turn individual apps on or off. There are org-wide settings that let you turn all third-party and/or custom apps on or off for your entire organization.
+
+| Ask yourself | Action |
 |--------------|--------|
-|Le impostazioni delle app di Team predefinite verranno modificate? | Per altre informazioni sui criteri e le impostazioni che è possibile usare per gestire le app nell'organizzazione, vedere [Impostazioni di amministrazione per le app in Microsoft Teams](admin-settings.md).|
+|Will you change the default Teams apps settings? | For more information about policies and settings that you can use to manage apps in your organization, see [Admin settings for apps in Microsoft Teams](admin-settings.md).|
 
-### <a name="app-permissions-and-other-considerations"></a>Autorizzazioni delle app e altre considerazioni
+### App permissions and other considerations
 
-Le app sono autorizzate dagli utenti e gestite dall'amministratore o dal professionista IT tramite criteri. Tuttavia, le autorizzazioni e il profilo di rischio di un’app sono definiti nell'app stessa.
+Apps are consented to by users and managed by the admin or IT pro through policies. However, app permissions and risk profile are defined in the app itself.
 
-| Chiedersi | Azione |
+| Ask yourself | Action |
 |--------------|--------|
-|<br>A quali app si vuole consentire l'accesso? A quali non si vuole consentire l'accesso?  | <ul><li>Per un elenco degli elementi che è necessario prendere in considerazione quando si consente l'accesso a un'app, un bot, una scheda o un connettore, vedere [Autorizzazioni e considerazioni sulle app di Microsoft Teams](app-permissions.md).</li><li>Per informazioni su come rendere disponibile un'app agli utenti dell'organizzazione, vedere [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md).</li></ul>|
+|<br>Which apps do I want to allow access to? Which ones do I not want to allow access to?  | <ul><li>See [Microsoft Teams apps permissions and considerations](app-permissions.md) for a list of things you should consider when allowing access to an app, bot, tab, or connector.</li><li>See [Manage your apps in the Microsoft Teams admin center](manage-apps.md) for information about making an app available to users in your organization.</li></ul>|
+
+--->
 
 <!--- TBD: Rewrite this to talk about bots and tabs as a capability of apps. Admins do not govern bots, tabs, etc. Admins only govern apps that contain capabilities such as connectors, bots, etc. This writeup gives an impression that admins manage apps + bots + tabs + connectors, etc.
 
@@ -90,7 +157,7 @@ Owners and team members can add tabs to a channel, private chat, and group chat 
 
 | Ask yourself | Action |
 |--------------|--------|
-|Do I want to allow custom tabs in my organization?|For more information, see [Use built-in and custom tabs in Teams](built-in-custom-tabs.md).|
+|Do I want to allow custom tabs in my organization?|For more information, see [Use built-in and custom tabs in Teams](/microsoftteams/platform/tabs/what-are-tabs).|
 
 ### Custom connectors
 
@@ -102,24 +169,14 @@ Connectors keep your team current by delivering content and updates from service
 
 --->
 
-## <a name="additional-deployment-decisions"></a>Ulteriori decisioni per la distribuzione
+<!--- TBD: Activity reports is not part of app overview. Commenting for now. To be reused in a different article later.
 
-È possibile modificare queste impostazioni in base alle esigenze e alla configurazione dell'organizzazione.
+### Activity reports
 
-### <a name="activity-reports"></a>Report attività
+You can use activity reports to see how users in your organization are using Teams. For example, if some don't use Teams yet, they might not know how to get started or understand how they can use Teams to be more productive and collaborative. Your organization can use the activity reports to decide where to prioritize training and communication efforts. To view activity reports, you must be a global admin in Microsoft 365 or Office 365, Teams service admin, or Skype for Business admin.
 
-È possibile usare i report attività per scoprire in che modo gli utenti dell'organizzazione usano Teams. Ad esempio, se alcuni utenti non usano ancora Teams, potrebbero non sapere come iniziare oppure come usare Teams per essere più produttivi e collaborativi. L'organizzazione può usare i report attività per stabilire come assegnare la priorità alle attività di formazione e comunicazione. Per visualizzare i report attività è necessario essere un amministratore globale in Office 365 o Microsoft 365, un amministratore del servizio Teams o un amministratore di Skype for Business.
-
-| Chiedersi | Azione |
+| Ask yourself | Action |
 |--------------|--------|
-| <br>Chi ha bisogno di vedere i report attività? L'utente dispone dell'autorizzazione necessaria per farlo? |<ul><li>Se non si vuole assegnare un ruolo di amministratore a un utente, è possibile [assegnare il ruolo Lettore di report](teams-activity-reports.md#reports-reader-role).</li><li>Per informazioni su come assegnare ruoli di amministratore in Azure Active Directory, vedere [Ruoli e autorizzazioni](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) e [Visualizzare e assegnare i ruoli](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).</li></ul> |
+| <br>Who needs to see the activity reports, and do they have the correct permissions to view them? |<ul><li>If you don't want to assign an admin role to a user, you can [assign the Reports reader role](teams-activity-reports.md#reports-reader-role).</li><li>See [Roles and permissions](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) and [View and assign roles](/azure/active-directory/users-groups-roles/directory-manage-roles-portal) for information about assigning admin roles in Azure Active Directory.</li></ul> |
 
-### <a name="app-templates"></a>Modelli di app
-
-I modelli di app sono applicazioni pronte per la produzione per Microsoft, gestite dalla community, open-source e disponibili su GitHub. Ogni app contiene le istruzioni dettagliate per la sua distribuzione e installazione nell’organizzazione, ed è un’applicazione pronta all'uso, da installare e usare fin da subito.
-
-È disponibile anche il codice sorgente completo, quindi è possibile esaminarlo in dettaglio oppure creare una copia tramite fork del codice e modificarlo per soddisfare esigenze specifiche.
-
-| Chiedersi | Azione |
-|--------------|--------|
-| Si vogliono installare modelli di app di Teams, ad esempio Icebreaker? |Per altre informazioni, vedere [Modelli di app per Teams](/microsoftteams/platform/samples/app-templates?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=MicrosoftTeams%2ftoc.json).|
+--->

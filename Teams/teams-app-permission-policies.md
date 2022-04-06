@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 35246d03fb7611971bd846370413ca0580397647
-ms.sourcegitcommit: 39378888464ade3cb45879a449143f40f202f3e9
+ms.openlocfilehash: e4a09c92fad10f91abad697a92764429deed3bf8
+ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64457049"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64643080"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione app in Microsoft Teams
 
@@ -89,9 +89,12 @@ Se si vuole controllare le app disponibili per diversi gruppi di utenti dell'org
 
 In una distribuzione Microsoft 365 Government - GCCH e DoD di Teams, è importante conoscere le informazioni seguenti sulle impostazioni delle app di terze parti, che sono univoche per GCCH e DoD.
 
-In GCCH e DoD tutte le app di terze parti sono bloccate per impostazione predefinita. Inoltre, verrà visualizzata la seguente nota in merito alla gestione delle app di terze parti nella pagina dei criteri di autorizzazione app nell'interfaccia di amministrazione di Microsoft Teams.
+In GCC, tutte le app di terze parti vengono bloccate per impostazione predefinita. Inoltre, verrà visualizzata la seguente nota in merito alla gestione delle app di terze parti nella pagina dei criteri di autorizzazione app nell'interfaccia di amministrazione di Microsoft Teams.
 
-![Screenshot dei criteri di autorizzazione delle app in GCCH e DoD.](media/app-permission-policies-gcc.png)
+:::image type="content" source="media/app-permission-policies-gcc-trimmed.png" alt-text="Screenshot dei criteri di autorizzazione delle app in GCCH e DoD." lightbox="media/app-permission-policies-gcc.png":::
+
+> [!NOTE]
+> Nei cloud GCCH e DOD, le app di terze parti non sono disponibili.
 
 Usare le impostazioni app a livello di organizzazione per controllare se gli utenti possono installare le app di terze parti. Le impostazioni app a livello di organizzazione disciplinano il comportamento di tutti gli utenti e sostituiscono qualsiasi criterio di autorizzazione app assegnato agli utenti. È possibile usarle per controllare eventuali app dannose o problematiche.
 

@@ -16,12 +16,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire l'uso dei tag nell'organizzazione in Microsoft Teams.
-ms.openlocfilehash: af9855f1ca771cb9f5d4739194e26cba746859ff
-ms.sourcegitcommit: caaed4b48b8f2b05d035c1bdea00a61301bc9f05
+ms.openlocfilehash: 67bbc53b5619c47117ae227396ad8352aa1a382a
+ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63740203"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64642910"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 
@@ -61,7 +61,7 @@ Un team può avere fino a 100 tag, fino a 100 membri del team possono essere ass
 
 Per impostazione predefinita, i proprietari del team possono aggiungere tag personalizzati. È possibile modificare questa impostazione per consentire ai proprietari del team e ai membri del team di creare, modificare, eliminare e gestire i tag oppure disattivare i tag per l'organizzazione.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Impostazioni a** >  **livello di organizzazione Teams impostazioni**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare **clic Teams** >  **Teams impostazioni**.
 2. In **Tagging** selezionare una delle opzioni seguenti accanto a **Tag** gestiti da:
 
     - **Proprietari e membri del team**: consente ai proprietari e ai membri del team di gestire i tag.
@@ -72,7 +72,7 @@ Per impostazione predefinita, i proprietari del team possono aggiungere tag pers
 
 È possibile configurare le impostazioni dei tag seguenti per controllare il modo in cui i tag personalizzati vengono usati nell'organizzazione.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Impostazioni a** >  **livello di organizzazione Teams impostazioni**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare **clic Teams** >  **Teams impostazioni**.
 2. In **Tagging** impostare quanto segue, a seconda delle esigenze dell'organizzazione.
 
     - **Consentire** ai proprietari del team di ignorare chi può gestire i tag: quando si attiva questa impostazione, i proprietari del team possono specificare se i membri del team possono creare e gestire i tag  all'interno di un team e il valore dell'impostazione Tag viene gestito dall'impostazione è il valore predefinito per ogni team. Se si disattiva questa impostazione **, l'impostazione** Contrassegni gestiti da non può essere modificata per ogni team.

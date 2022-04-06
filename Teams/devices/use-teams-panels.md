@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Questo articolo fornisce indicazioni su come usare i Teams dei pannelli.
-ms.openlocfilehash: e39b54d290ac3c8d4809f9da011c2e28451c2ae7
-ms.sourcegitcommit: e97c981489ff1f02674df57426da3b22cc6d68c1
+ms.openlocfilehash: 2928bb64881cad5fb5c6615d26767e963f725dcd
+ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "63062540"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64643040"
 ---
 # <a name="how-to-use-microsoft-teams-panels"></a>Come usare i Microsoft Teams di lavoro
 
@@ -33,7 +33,7 @@ Questo articolo fornisce indicazioni, sia per gli utenti finali che per gli ammi
 
 Per una panoramica dei dispositivi dei pannelli e per indicazioni su come pianificarli, gestirli e gestirli nell'organizzazione, vedere Distribuire Microsoft Teams [pannelli](teams-panels.md).
 
-Per una guida introduttiva, vedere [Introduzione ai Teams di lavoro](https://support.microsoft.com/office/get-started-with-teams-panels-fa5e85d1-7ff3-4f11-b0b0-277e2302c8be).
+Per una guida introduttiva, vedere Attività iniziali [con Teams pannelli.](https://support.microsoft.com/office/get-started-with-teams-panels-fa5e85d1-7ff3-4f11-b0b0-277e2302c8be)
 
 ## <a name="teams-panels-end-user-experience"></a>Teams per l'utente finale dei pannelli
 
@@ -158,7 +158,7 @@ Per visualizzare o aggiornare un'impostazione del dispositivo:
 
 ## <a name="teams-panels-admin-experience"></a>Teams di amministrazione dei pannelli di lavoro
 
-Se sei l'amministratore [dell'account](teams-panels.md\#resource-account-provisioning) delle risorse Teams pannello, sei anche l'amministratore **dell'app Panels** nel dispositivo. **L'amministratore dell'app Panels** può eseguire tutte le funzioni menzionate nella sezione dell'esperienza utente finale, oltre a gestire le impostazioni [](#teams-panels-end-user-experience) **dell'app Panels** nel dispositivo.
+Se sei l'amministratore [dell'account](teams-panels.md\#resource-account-provisioning) delle risorse di Pannello di Teams, sei anche l'amministratore **dell'app Panels** nel dispositivo. **L'amministratore dell'app Panels** può eseguire tutte le funzioni menzionate nella sezione dell'esperienza utente finale, oltre a gestire le impostazioni [](#teams-panels-end-user-experience) **dell'app Panels** nel dispositivo.
 
 I dispositivi dei pannelli forniscono due tipi di impostazioni di amministratore. Per accedere alle impostazioni di amministrazione disponibili, è necessario essere un amministratore del dispositivo. Gli utenti finali non possono accedere a queste impostazioni.
 
@@ -192,9 +192,11 @@ Per accedere **all'opzione Impostazioni** pannello:
     - [Sfondo](#update-the-wallpaper)
     - [Indicatore LED](#change-the-busy-state-led-color)
 
-#### <a name="pair-a-teams-panel-with-a-microsoft-teams-room-on-android"></a>Associare un pannello Teams con una Microsoft Teams room in Android
+#### <a name="pair-a-teams-panel-with-a-microsoft-teams-room-on-android"></a>Associare un Pannello di Teams a una Microsoft Teams room in Android
 
-Nel pannello Teams, accedere con le credenziali di amministratore.  
+Per associare una Pannello di Teams e una Teams room in Android, entrambi i dispositivi devono essere connessi allo stesso account delle risorse.
+
+Nella scheda Pannello di Teams accedere usando le credenziali di amministratore.
 
 1. Passare a **Impostazioni > dispositivo Impostazioni >'app Impostazioni > pannello Impostazioni > Riunioni > dispositivo di associazione.**
 
@@ -208,6 +210,24 @@ Quando Teams pannelli sono associati a una sala Microsoft Teams su Android, le n
 
 Per abilitare il check-in e il rilascio delle chat room, vedere [Check-in](check-in-and-room-release.md) e rilascio sala Microsoft Teams pannelli.
 
+#### <a name="room-capacity-warning"></a>Avviso relativo alla capacità della sala
+
+Teams pannelli che sono abbinati a una sala Teams su Android può visualizzare un messaggio di avviso quando una sala riunioni ha una capacità superiore o superiore. Per usare questa funzionalità, la Teams room deve avere una fotocamera che supporta il conteggio delle persone. Teams Rooms avvisi sulla capacità della sala di supporto android senza Pannello di Teams.
+
+Gli avvisi relativi alla capacità della sala sono disattivati per impostazione predefinita. Per attivare l'impostazione dal Pannello di Teams, associare prima un Pannello di Teams a una Microsoft Teams [room in Android](#pair-a-teams-panel-with-a-microsoft-teams-room-on-android). Il pannello e la Teams room devono essere connessi allo stesso account delle risorse.
+
+ Quindi, passare a Impostazioni **Impostazioni > dispositivo > impostazioni di amministrazione > impostazioni dell'app Pannello**. Quindi, in **Riunioni**, attivare la **notifica numero max di occupanze delle chat room**.
+
+#### <a name="view-room-equipment"></a>Visualizzare l'attrezzatura della sala
+
+Quando questa funzionalità è attivata, gli utenti finali possono visualizzare le apparecchiature disponibili in uno spazio in un Pannello di Teams.
+
+Questa funzionalità è disattivata per impostazione predefinita e può essere abilitata per ogni dispositivo. Per attivarla, usare [Set-Place](/powershell/module/exchange/set-place?view=exchange-ps) in PowerShell per configurare i nomi visualizzati per `AudioDeviceName`, `DisplayDeviceName``VideoDeviceName`, , `Tags`e `IsWheelChairAccessible`.
+
+In caso contrario, è possibile abilitare questa funzionalità nell'Exchange di amministrazione. Per [altre informazioni, vedere Modificare](/exchange/recipients-in-exchange-online/manage-resource-mailboxes#edit-a-resource) una risorsa.
+
+
+
 #### <a name="update-the-wallpaper"></a>Aggiornare lo sfondo
 
 Modificare l'immagine dello sfondo della schermata Home.
@@ -216,7 +236,7 @@ Modificare l'immagine dello sfondo della schermata Home.
 2. Toccare **Sfondi**.
 3. In **Scegli l'immagine** selezionare un'immagine da impostare come immagine di sfondo della schermata Home. Visualizzare in anteprima l'immagine **selezionata in Sfondo**.
 :::image type="content" source="../media/panels-wallpapers-setting.png" alt-text="Questa schermata mostra la schermata delle impostazioni dello sfondo.":::
-4. Tornare alla schermata Home e verificare che lo sfondo sia aggiornato.
+4. Indietro nella schermata Home e verificare che lo sfondo sia aggiornato.
 
 #### <a name="change-the-busy-state-led-color"></a>Cambiare il colore del LED dello stato occupato
 
@@ -226,7 +246,7 @@ Gli amministratori possono scegliere rosso o viola come colore LED per indicare 
 2. Toccare **Led Impostazioni**.
 3. In **Scegliere il colore del LED** selezionare il colore desiderato.
 :::image type="content" source="../media/panels-led-settings.png" alt-text="Questo screenshot mostra le impostazioni dello stato occupato del colore LED.":::
-4. Tornare alla schermata Home e verificare che il colore del LED per lo stato occupato sia aggiornato. Se l'area della riunione è attualmente disponibile, provare a pianificare una riunione di prova per verificare la modifica del colore a LED per lo stato occupato.
+4. Indietro alla schermata Home e verificare che il colore DEL LED per lo stato occupato sia aggiornato. Se l'area della riunione è attualmente disponibile, provare a pianificare una riunione di prova per verificare la modifica del colore a LED per lo stato occupato.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

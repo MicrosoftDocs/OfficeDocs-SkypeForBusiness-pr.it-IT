@@ -21,12 +21,12 @@ description: L'amministratore IT o di Teams può configurare l'accesso esterno p
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 8505a57ff0ab9bb2e79607ffe13768058bab26d6
-ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
-ms.translationtype: HT
+ms.openlocfilehash: 06243ca47e26f66dd4194a9ec9e50cc5a6bfbde7
+ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2022
-ms.locfileid: "64556317"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64642850"
 ---
 # <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 
@@ -106,6 +106,9 @@ Bloccare domini specifici
 Per comunicare con un altro tenant, è necessario abilitare **Consenti tutti i domini esterni** o aggiungere il tenant al proprio elenco di domini consentiti seguendo la stessa procedura precedente.  
 
 ## <a name="manage-contact-with-external-teams-users-not-managed-by-an-organization"></a>Gestire i contatti con utenti Teams esterni non gestiti da un'organizzazione
+
+> [!NOTE]
+> Le Teams e Skype di interoperabilità descritte in questo articolo non sono disponibili nelle distribuzioni GCC, GCC High o DOD o in ambienti cloud privati.
 
 Gli amministratori possono scegliere di abilitare o disabilitare le comunicazioni con utenti esterni Teams utenti non gestiti da un'organizzazione ("non gestito"). Se abilitata, può anche controllare ulteriormente se le persone con account Teams non gestiti possono avviare un contatto (vedere l'immagine seguente). Se **Utenti esterni con account Teams non gestiti da un'organizzazione possono contattare gli utenti dell'organizzazione** è disattivato, gli utenti di Teams non gestiti non potranno cercare l'indirizzo di posta elettronica completo per trovare i contatti dell'organizzazione e tutte le comunicazioni con gli utenti di Teams non gestiti devono essere avviate dagli utenti dell'organizzazione.
 

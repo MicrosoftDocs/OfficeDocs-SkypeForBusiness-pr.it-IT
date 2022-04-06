@@ -19,12 +19,12 @@ searchScope:
 - Microsoft Cloud for Retail
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dfe825f1ab21aab3dad2617236d61859ab6b90d8
-ms.sourcegitcommit: 159399f2325af644c20551925c1fa34bf76aad43
-ms.translationtype: HT
+ms.openlocfilehash: 6f8f831b3e24018dfc3f5ba3cbf2a7767b66398b
+ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62288865"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64643090"
 ---
 # <a name="simplify-business-processes-in-retail-environments"></a>Semplifica i processi aziendali negli ambienti di vendita al dettaglio
 
@@ -52,7 +52,7 @@ Altre informazioni: [Power Apps](../manage-power-platform-apps.md) e [Power Apps
 
 ## <a name="track-key-performance-indicators-kpis-with-power-bi-reports"></a>Tenere traccia degli indicatori di prestazioni chiave (KPI) con i report Power BI
 
-Condividi e collabora a contenuti interattivi Power BI nei canali e nelle chat Microsoft Teams. È possibile aggiungere una [scheda Power BI](../built-in-custom-tabs.md) a Teams per incorporare report interattivi e chattare in Teams sui report e ricevere una notifica quando si verificano cose importanti in Power BI direttamente nel feed attività Teams.
+Condividi e collabora a contenuti interattivi Power BI nei canali e nelle chat Microsoft Teams. È possibile aggiungere una [scheda Power BI](/microsoftteams/platform/tabs/what-are-tabs) a Teams per incorporare report interattivi e chattare in Teams sui report e ricevere una notifica quando si verificano cose importanti in Power BI direttamente nel feed attività Teams.
 
 Altre informazioni: [collabora in Microsoft Teams con Power BI](/power-bi/collaborate-share/service-collaborate-microsoft-teams).
 

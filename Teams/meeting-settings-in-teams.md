@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 294bbac570d1f1741449c7c81cb9389b20cdcdc6
-ms.sourcegitcommit: eb5fadedacbf4651ed5b05f1b0d6abf57e9eda2d
-ms.translationtype: HT
+ms.openlocfilehash: 10afbcc30404122e9e4d497570bf0b69e4ef6fa7
+ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "62960028"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64642920"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -70,7 +70,7 @@ Poiché i criteri a livello di organizzazione e per organizzatore controllano l'
 
 Qualsiasi altra combinazione di valori impedirà agli utenti anonimi di partecipare alle riunioni.
 > [!NOTE]
-> Per usare i criteri per organizzatore per le organizzazioni con l'aggiunta anonima disattivata per ogni organizzazione, gli amministratori devono creare un criterio e quindi assegnarlo agli utenti. Per informazioni su come farlo, vedere [Gestire i criteri riunione in Microsoft Teams](/microsoftteams/meeting-policies-overview).
+> Per altre informazioni sulla gestione dei criteri riunione, vedere [Gestire i criteri riunione in Microsoft Teams](/microsoftteams/meeting-policies-overview).
 
 ### <a name="blocking-anonymous-join-for-specific-client-types"></a>Blocco partecipazione anonima per tipi di clienti specifici
 
