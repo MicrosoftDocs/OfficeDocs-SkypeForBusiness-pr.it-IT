@@ -1,9 +1,8 @@
 ---
-title: Usare la ricerca nella directory con ambito di Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+title: Limitare gli utenti che possono visualizzare durante la ricerca nella directory in Teams
+author: MikePlumleyMSFT
+ms.author: mikeplum
 manager: serdars
-ms.date: 06/21/2019
 audience: Admin
 ms.topic: article
 ms.service: msteams
@@ -12,52 +11,42 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare Microsoft Teams ricerca di directory con ambito per fornire visualizzazioni personalizzate della directory.
+description: Informazioni su come limitare gli utenti che possono vedere quando cercano nella directory in Teams.
 f1.keywords:
 - CSH
 ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 108a5895bf568207246ec6b1d7711e13e6c87069
-ms.sourcegitcommit: 5c88a07f07f9faad294d614d507e43173efc5f46
+ms.openlocfilehash: 8b073cdd67d89de7d934990abc33cb0586d0fc76
+ms.sourcegitcommit: 5fe5516f6118ce3fa0449ab194a6fe87bf48c664
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61111986"
+ms.lasthandoff: 04/08/2022
+ms.locfileid: "64732224"
 ---
-# <a name="use-microsoft-teams-scoped-directory-search"></a>Usare la ricerca nella directory con ambito di Microsoft Teams
+# <a name="limit-who-users-can-see-when-searching-the-directory-in-teams"></a>Limitare gli utenti che possono visualizzare durante la ricerca nella directory in Teams
 
-Microsoft Teams con ambito di ricerca nella directory consente alle organizzazioni di creare limiti virtuali che controllano il modo in cui gli utenti possono trovare e comunicare con altri utenti dell'organizzazione. 
+Microsoft Teams consente alle organizzazioni di fornire visualizzazioni personalizzate della directory agli utenti. Queste visualizzazioni possono essere utili se:
 
-Microsoft Teams consente alle organizzazioni di fornire visualizzazioni personalizzate della directory agli utenti. Microsoft Teams criteri [Disassamento informazioni](/microsoft-365/compliance/information-barriers) per supportare queste visualizzazioni personalizzate. Una volta abilitati i criteri, l'ambito dei risultati restituiti dalle ricerche di altri utenti, ad esempio per avviare una chat o per aggiungere membri a un team, sarà in base ai criteri configurati. Gli utenti non saranno in grado di cercare o individuare alcun team quando è attiva la ricerca con ambito, ma i membri esistenti in questi team possono aggiungere utenti, come consentito dai criteri di Protezione delle informazioni attivi.
+- L'organizzazione ha più società all'interno del tenant che si vogliono mantenere separate.
+- Per i criteri aziendali è necessario impedire a determinati gruppi all'interno dell'organizzazione di comunicare tra loro.
+- L'istituto di istruzione vuole limitare le chat tra docenti e studenti.
 
-> [!NOTE]
-> In Exchange ibridi questa caratteristica funziona solo con le cassette postali Exchange Online e non con le cassette postali locali.
+Sono disponibili due opzioni per limitare gli utenti che possono vedere quando eseguono ricerche nella directory in Teams:
 
-Vedere anche [Criteri della Rubrica in Exchange Online](/exchange/address-books/address-book-policies/address-book-policies).
+- [Ostacoli all'informazione in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Criteri rubrica in Exchange Online](/exchange/address-books/address-book-policies/address-book-policies)
 
-## <a name="when-should-you-use-scoped-directory-searches"></a>Quando usare le ricerche nella directory con ambito?
+Se si usa una delle due opzioni, è necessario attivare la ricerca per nome nell'interfaccia di amministrazione di Teams.
 
-Gli scenari che traggono vantaggio dalle ricerche nella directory con ambito sono simili a quelli dei criteri della rubrica. Ad esempio, è possibile usare la ricerca nella directory con ambito nelle situazioni seguenti:
+È consigliabile usare le barriere alle informazioni se l'organizzazione soddisfa [le licenze e le autorizzazioni richieste](/microsoft-365/compliance/information-barriers#required-licenses-and-permissions).
 
-- L'organizzazione ha più società all'interno del tenant che si vogliono mantenere separate. 
-- L'istituto di istruzione vuole limitare le chat tra docenti e studenti. 
- 
-Per informazioni su come usare i criteri della rubrica, vedere Criteri di Protezione delle informazioni [in Exchange Online.](/microsoft-365/compliance/information-barriers)
+Per attivare la ricerca per nome
 
-> [!IMPORTANT]
-> I criteri della rubrica offrono solo una separazione virtuale degli utenti dal punto di vista della directory. È anche importante tenere presente che tutti i dati utente già memorizzati nella cache, prima dell'applicazione dei criteri della rubrica nuovi o aggiornati, rimarranno disponibili per gli utenti fino a 30 giorni.
+1. Nell'interfaccia di amministrazione Microsoft Teams selezionare **impostazioni Teams** >  **Teams**.
 
-## <a name="turn-on-scoped-directory-search"></a>Attivare la ricerca nella directory con ambito
+1. In **Cerca per nome**, accanto a **Ambito ricerca directory con un criterio rubrica di Exchange**, attivare l'interruttore.
 
-1. Usare i criteri Information Barrier per configurare l'organizzazione in sottogruppi virtuali. Per altre informazioni, vedere [Definire i criteri di protezione delle informazioni.](/microsoft-365/compliance/information-barriers-policies)
-
-2. Nell'Microsoft Teams di amministrazione selezionare **Teams**  >  **Teams impostazioni**.
-
-3. In **Cerca per nome**, accanto a Ambito ricerca directory in Teams **usando** un criterio Exchange rubrica , attivare l'interruttore **.**
-
-    ![Ricerca nella directory con ambito nell Microsoft Teams di amministrazione.](media/teams-scoped-directory-search-image1.png)
-
-> [!IMPORTANT]
-> La replica di questa modifica può richiedere alcune ore.
+> [!Note]
+> L'applicazione di questa modifica potrebbe richiedere alcune ore.

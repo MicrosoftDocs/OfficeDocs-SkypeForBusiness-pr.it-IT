@@ -1563,8 +1563,8 @@ items:
                 href: expand-teams-across-your-org/bookings-virtual-visits.md
               - name: Gestire l'app Bookings
                 href: bookings-app-admin.md
-              - name: Gestire l'esperienza di partecipazione nei browser per dispositivi mobili
-                href: expand-teams-across-your-org/mobile-browser-join.md
+              - name: Gestire l'esperienza di partecipazione nei browser
+                href: expand-teams-across-your-org/browser-join.md
               - name: Report sull'utilizzo delle visite virtuali
                 href: teams-analytics-and-reports/virtual-visits-usage-report.md
           - name: Turni per Teams
@@ -1693,8 +1693,8 @@ items:
                 href: expand-teams-across-your-org/bookings-virtual-visits.md
               - name: Report sull'utilizzo delle visite virtuali
                 href: teams-analytics-and-reports/virtual-visits-usage-report.md
-              - name: Gestire l'esperienza di partecipazione nei browser per dispositivi mobili
-                href: expand-teams-across-your-org/mobile-browser-join.md
+              - name: Gestire l'esperienza di partecipazione nei browser
+                href: expand-teams-across-your-org/browser-join.md
           - name: Visualizzare e assegnare pacchetti di criteri
             href: policy-packages-healthcare.md
           - name: Messaggistica protetta
