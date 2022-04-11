@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni sulle licenze per i componenti aggiuntivi per Microsoft Teams e sulle funzionalità disponibili con ogni licenza.
-ms.openlocfilehash: 785ae1495e3a210883f489528ac401ad9442b526
-ms.sourcegitcommit: 4847f24e8c644336d2b2f48aa09e2cf91360e4dd
+ms.openlocfilehash: 000678a0b41e660371de295ae40d2c6359774efe
+ms.sourcegitcommit: b70f01d7eae2e3e6f7495c685518a2037aaece31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64686383"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64756952"
 ---
 # <a name="microsoft-teams-add-on-licenses"></a>licenze per i componenti aggiuntivi Microsoft Teams
 
@@ -39,35 +39,29 @@ Ecco un elenco di licenze per Teams componenti aggiuntivi e delle relative funzi
 
 |Licenza|Descrizione|
 |-------|-----------|
-|**Microsoft 365 Business Voice** <br/> |Business Voice era il bundle di funzionalità vocali di Microsoft per le piccole e medie imprese, ma non sarà più disponibile per l'acquisto a partire dal 1° marzo 2022. Gli attuali abbonati a Business Voice possono rinnovare le licenze Business Voice fino al 30 giugno 2022. <br/> <br/> Se sei una piccola o media impresa, ti consigliamo di acquistare il [Teams Telefono con licenza Piano per chiamate](../business-voice/whats-business-voice.md), se disponibile nella tua area geografica. <br/> <br/> In alternativa, è possibile acquistare una licenza Teams Telefono Standard che consenta di connettersi al provider PSTN di terze parti preferito. |
-|**Teams Telefono con bundle piano per chiamate** <br/> |Il Teams Telefono con bundle di licenze per piano per chiamate Teams Sistema telefonico le funzionalità PBX e un piano per chiamate nazionali per la connettività PSTN. <br/> |
-|**Teams Telefono Standard** <br/> |[Teams Sistema telefonico](../what-is-phone-system-in-office-365.md) è un servizio telefonico ospitato che offre il controllo delle chiamate e le funzionalità PBX (Private Branch Exchange). Teams Telefono licenze Standard offrono tutte le funzionalità di Teams Sistema telefonico come la segreteria telefonica cloud, l'ID chiamante, il parcheggio di chiamata, l'inoltro di chiamata, gli operatori automatici, le code di chiamata, il trasferimento di chiamata e l'ID chiamante. <br/> <br/>Per altre informazioni su Sistema telefonico, vedi [Ecco cosa ottieni con Teams Sistema telefonico](../here-s-what-you-get-with-phone-system.md). <br/> |
-|**Piani per chiamate di Microsoft Teams** <br/> |Se si vuole consentire agli utenti di chiamare numeri di telefono esterni all'organizzazione, è possibile acquistare [Piani per chiamate di Microsoft Teams](../calling-plans-for-office-365.md) per connettersi ai numeri di telefono PSTN con Microsoft come provider PSTN. Sono disponibili piani per chiamate nazionali, piani per chiamate internazionali e piani per chiamate nazionali e internazionali. <br/> <br/> Per scoprire se i piani per chiamate Teams sono disponibili nel tuo paese o nella tua area geografica, vedi [Disponibilità del paese e dell'area geografica per i piani per audioconferenze e chiamate](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). |
+|**Microsoft 365 Business Voice** <br/> |Business Voice era il bundle di funzionalità vocali di Microsoft per le piccole e medie imprese, ma non sarà più disponibile per l'acquisto a partire dal 1° marzo 2022. Gli attuali abbonati a Business Voice possono rinnovare le licenze Business Voice fino al 30 giugno 2022. <br/> <br/> Se sei una piccola o media impresa, ti consigliamo di acquistare la [licenza Teams Telefono con piano per chiamate](../business-voice/whats-business-voice.md), se disponibile nella tua area geografica. <br/> <br/> In alternativa, è possibile acquistare una licenza Teams Phone Standard che consente di connettersi al provider PSTN di terze parti preferito. |
+|**Bundle di Teams telefono con piano per chiamate** <br/> |Il Teams Phone con licenza Piano per chiamate include Teams funzionalità PBX del sistema telefonico e un piano per chiamate nazionali per la connettività PSTN. <br/> |
+|**Teams Phone Standard** <br/> |[Teams Phone System](../what-is-phone-system-in-office-365.md) è un servizio telefonico ospitato che offre il controllo delle chiamate e le funzionalità PBX (Private Branch Exchange). Teams le licenze Standard del telefono offrono tutte le funzionalità di sistema telefonico Teams come la segreteria telefonica cloud, l'ID chiamante, il parcheggio di chiamata, l'inoltro di chiamata, gli operatori automatici, le code di chiamata, il trasferimento delle chiamate e l'ID chiamante. <br/> <br/>Per altre informazioni sul Sistema telefonico, vedi [Ecco cosa ottieni con Teams Sistema telefonico](../here-s-what-you-get-with-phone-system.md). <br/> |
+|**piani per chiamate Microsoft Teams** <br/> |Se si vuole consentire agli utenti di chiamare numeri di telefono esterni all'organizzazione, è possibile acquistare [Microsoft Teams Piani per chiamate](../calling-plans-for-office-365.md) per connettersi ai numeri di telefono PSTN con Microsoft come provider PSTN. Sono disponibili piani per chiamate nazionali, piani per chiamate internazionali e piani per chiamate nazionali e internazionali. <br/> <br/> Per scoprire se i piani per chiamate Teams sono disponibili nel tuo paese o nella tua area geografica, vedi [Disponibilità del paese e dell'area geografica per i piani per audioconferenze e chiamate](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). |
 |**Crediti comunicazioni** | I Crediti comunicazioni offrono un pool mensile di minuti che possono essere utilizzati anche per le telefonate PSTN, se tutti i minuti del piano per chiamate vengono utilizzati prima dell'inizio del mese successivo. Se desideri numeri verdi per audioconferenze, operatori automatici o code di chiamata, dovrai [impostare i Crediti comunicazioni](../set-up-communications-credits-for-your-organization.md). <br/> |
-|**Audioconferenza** <br/> |A volte le persone dell'organizzazione dovranno usare un telefono per accedere a una riunione Teams invece del computer. [Configurare le audioconferenze](../set-up-audio-conferencing-in-teams.md) per gli utenti che pianificano o conducono riunioni con i partecipanti che devono accedere tramite telefono. <br/> <br/>Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762).  <br/> <br/>Le organizzazioni possono ora usare un operatore di terze parti per i propri numeri di audioconferenza. Per altre informazioni, vedere [Pianificare Conferenze con connessione tramite operatore](../operator-connect-conferencing-plan.md). <br/>|
-|**Microsoft Teams Rooms** <br/> | Microsoft Teams Room è un prodotto Microsoft Teams aggiuntivo che porta video, audio e condivisione di contenuti nelle sale riunioni. Le organizzazioni possono acquistare Microsoft Teams Rooms licenze autonome per queste funzionalità. Per altre informazioni, vedere [Teams Sala riunioni Licensing](../rooms/rooms-licensing.md). <br/>|
+|**Audioconferenza** <br/> |A volte le persone dell'organizzazione dovranno usare un telefono per accedere a una riunione Teams invece del computer. [Configurare le audioconferenze](../set-up-audio-conferencing-in-teams.md) per gli utenti che pianificano o conducono riunioni con i partecipanti che devono accedere tramite telefono. <br/> <br/>Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762).  <br/> <br/>Le organizzazioni possono ora usare un operatore di terze parti per i propri numeri di audioconferenza. Per ulteriori informazioni, vedi [Pianificare le conferenze operator Connect](../operator-connect-conferencing-plan.md). <br/>|
+|**Microsoft Teams Rooms** <br/> | Microsoft Teams Room è un prodotto Microsoft Teams aggiuntivo che porta video, audio e condivisione di contenuti nelle sale riunioni. Le organizzazioni possono acquistare licenze autonome di Microsoft Teams Rooms per queste funzionalità. Per altre informazioni, vedere [licenze per Teams sala riunioni](../rooms/rooms-licensing.md). <br/>|
 
 ## <a name="which-microsoft-capabilities-are-available-with-my-plan"></a>Quali funzionalità Microsoft sono disponibili con il mio piano?
 
 Tutti i piani Microsoft 365 consentono agli utenti Teams di effettuare chiamate peer-to-peer all'interno dell'organizzazione usando la tecnologia VoIP. Tuttavia, è consigliabile aggiungere licenze diverse per funzionalità come effettuare chiamate a numeri PSTN o configurare un PBX.
 
-### <a name="audio-conferencing"></a>Audioconferenza
-
-Puoi aggiungere gratuitamente licenze per i **servizi di audioconferenza** a tutti gli abbonamenti Microsoft 365.
-
-i piani Microsoft 365 E5/A5/G5 includono licenze per i servizi di audioconferenza, quindi non dovrai acquistare licenze aggiuntive per i servizi di audioconferenza con questi piani.
-
 ### <a name="voice-and-pstn-connectivity"></a>Connettività pstn e voce
 
 Che tu sia una piccola impresa, un'organizzazione aziendale, un istituto didattico, un ente pubblico o un'organizzazione no profit, puoi ottenere Teams Sistema telefonico e connettività PSTN in tre modi:
 
-- Acquistare un piano Microsoft 365 Business, E1/E3, A1/A3 o G1/G3 e aggiungere Teams Telefono con le licenze per il bundle **del piano per** chiamate.
-  - Questo modello offre Teams Sistema telefonico funzionalità PBX e un piano per le chiamate nazionali Microsoft.
+- Acquista un piano Microsoft 365 Business, E1/E3, A1/A3 o G1/G3 e aggiungi Teams Telefono con le licenze per il bundle **del piano per** chiamate.
+  - Questo modello offre Teams funzionalità PBX Sistema telefonico e un piano per chiamate nazionali Microsoft.
   - Scegliere questa configurazione se si vuole che tutta la gestione dei numeri di telefono e la fatturazione siano gestite da Microsoft.
-  - Verifica se il [Teams Telefono con licenza bundle Piano per chiamate è disponibile nella tua area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
+  - Verifica se nella [tua area geografica è disponibile la licenza del bundle Teams Telefono con piano per chiamate](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
 
-- Acquistare un piano E1/E3, A1/A3 o G1/G3, aggiungere **licenze Teams Telefono Standard** e scegliere un piano per chiamate autonomo Microsoft o un gestore PSTN di terze parti.
-  - Questo modello offre Teams Sistema telefonico, ma è comunque necessario connettersi alla rete PSTN.
+- Acquistare un piano E1/E3, A1/A3 o G1/G3, aggiungere **licenze Teams Phone Standard** e scegliere un piano per chiamate autonomo Microsoft o un gestore PSTN di terze parti.
+  - Questo modello ti darà Teams Sistema telefonico, ma dovrai comunque connetterti a PSTN.
   - Per visualizzare tutte le opzioni di connettività PSTN, vedere [Opzioni di connettività PSTN](../pstn-connectivity.md).
   - Per informazioni su tutte le soluzioni vocali, vedi [Pianificare la soluzione Teams voce](../cloud-voice-landing-page.md).
 
@@ -87,8 +81,8 @@ Ecco un riepilogo delle licenze per chiamate e voce Microsoft da acquistare, in 
 <tbody>
 <tr>
 <td>Teams Essentials (identità AAD) <br/> <br/>Qualsiasi piano Microsoft 365 che include Teams <br/> </td>
-<td>Teams Telefono con licenze per il bundle del piano per chiamate <br/> <br/>oppure <br/> <br/>licenze Teams Telefono Standard <br/> Plus <br/>Licenze per piano per chiamate nazionali, piani per chiamate internazionali o piani per chiamate nazionali e internazionali <br/> </td>
-<td>licenze Teams Telefono Standard <br/> </td>
+<td>Teams Phone with Calling Plan bundle licenses <br/> <br/>oppure <br/> <br/>licenze Teams Phone Standard <br/> Plus <br/>Licenze per piano per chiamate nazionali, piani per chiamate internazionali o piani per chiamate nazionali e internazionali <br/> </td>
+<td>licenze Teams Phone Standard <br/> </td>
 </tr>
 <tr>
 <td>piani Microsoft 365 E5/A5/G5</td>
