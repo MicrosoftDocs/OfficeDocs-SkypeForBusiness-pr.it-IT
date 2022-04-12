@@ -1401,8 +1401,12 @@ items:
             href: rooms/multi-tenant-management-customer.md
           - name: Log di controllo per le attività di Rooms
             href: rooms/multi-tenant-auditing.md
+          - name: Report sull'integrità e sull'utilizzo
+            href: rooms/health-and-usage-reports.md
           - name: Standard e Rooms Planner
             href: rooms/standards-and-room-planner.md
+          - name: Incidenti segnalati dai clienti
+            href: rooms/customer-reported-incidents.md
       - name: Dispositivi
         items:
           - name: Archivio dispositivi di Teams
@@ -1499,8 +1503,8 @@ items:
             href: overview-third-party-apps.md
           - name: Comprendere la convalida della app di Microsoft
             href: overview-of-app-validation.md
-          - name: 'Sicurezza, conformità, privacy e gestione dei dati per app di terze parti'
-            href: /microsoft-365-app-certification/overview
+          - name: 'Sicurezza, conformità e privacy per le app'
+            href: overview-of-app-certification.md
           - name: Usare i connettori personalizzati e di Microsoft 365 o Office 365
             href: Office-365-custom-connectors.md
           - name: Acquistare app di terza parte per Teams
