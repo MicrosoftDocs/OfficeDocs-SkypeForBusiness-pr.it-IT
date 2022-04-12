@@ -18,13 +18,13 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams per partecipanti e guest.
-ms.openlocfilehash: 8b4015c209f9cb30a773abefa3af4e4300a0dcec
-ms.sourcegitcommit: 2deb76ad222b77a19d43beffc87714204961aa09
+description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per partecipanti e guest.
+ms.openlocfilehash: 05408ade76aa96b64f07899881beb68fa52c74b4
+ms.sourcegitcommit: a31c02892e35babbbcf5e7c303c7f14d7ba5cb52
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "63494352"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64784700"
 ---
 # <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione - Partecipanti e ospiti
 
@@ -35,7 +35,7 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 - [Consenti alle persone anonime di avviare una riunione](#let-anonymous-people-start-a-meeting)
 - [Ammetti automaticamente le persone](#automatically-admit-people)
 - [Consenti agli utenti che chiamano di ignorare la sala di attesa](#allow-dial-in-users-to-bypass-the-lobby)
-- [Didascalie in tempo reale](#live-captions)
+- [Sottotitoli in tempo reale](#live-captions)
 - [Chattare nelle riunioni](#chat-in-meetings)
 
 > [!NOTE]
@@ -44,7 +44,7 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 
 ## <a name="let-anonymous-people-start-a-meeting"></a>Consenti alle persone anonime di avviare una riunione
 
-Questa impostazione è un criterio per organizzatore che consente riunioni di conferenza telefonica con accesso esterno senza leader. Questa impostazione controlla se gli utenti con accesso esterno possono partecipare alla riunione in assenza di un utente autenticato dell'organizzazione. Per impostazione predefinita, questa impostazione è disattivata, il che significa che gli utenti con accesso remoto attenderanno nella sala d'attesa finché un utente autenticato dell'organizzazione non partecipa alla riunione.
+Questa impostazione è un criterio per organizzatore che consente le riunioni di conferenza telefonica con accesso esterno senza leader. Questa impostazione controlla se gli utenti con accesso esterno possono partecipare alla riunione in assenza di un utente autenticato dell'organizzazione. Per impostazione predefinita, questa impostazione è disattivata, il che significa che gli utenti con accesso esterno aspetteranno nella sala di attesa finché un utente autenticato dell'organizzazione non accede alla riunione.
 
 > [!NOTE]
 > Se questa impostazione è disattivata e un utente con accesso esterno accede alla riunione e viene inserito nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un cliente di Teams per consentire l'accesso all'utente dalla sala di attesa. Non sono disponibili controlli di sala di attesa per gli utenti che hanno effettuato l'accesso.
@@ -63,23 +63,23 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 |Valore dell'impostazione  |Comportamento di partecipazione |
 |---------|---------|
 |**Tutti**   |Tutti i partecipanti accedono direttamente alla riunione senza passare dalla sala di attesa. Sono inclusi utenti autenticati, utenti esterni di organizzazioni attendibili (federati), guest e utenti anonimi.     |
-|**Utenti dell’organizzazione e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, aderiscono direttamente alla riunione senza aspettare nella sala d'attesa. Gli utenti di organizzazioni attendibili e gli utenti anonimi aspettano nella sala d'attesa. Questa è l'impostazione predefinita.    |
+|**Utenti dell’organizzazione e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, partecipano alla riunione direttamente senza attendere nella sala d'attesa. Gli utenti di organizzazioni attendibili e gli utenti anonimi aspettano nella sala di attesa. Questa è l'impostazione predefinita.    |
 |**Utenti dell'organizzazione, organizzazioni attendibili e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti di organizzazioni attendibili, accedono direttamente alla riunione senza passare dalla sala di attesa.  Gli utenti anonimi attendono nella sala di attesa.   |
-|**Utenti dell’organizzazione**    |Gli utenti autenticati dall'interno dell'organizzazione aderiscono alla riunione direttamente senza aspettare nella sala d'attesa.  Gli utenti di organizzazioni attendibili, utenti guest e utenti anonimi aspettano nella sala d'attesa.          |
-|**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala d'attesa. Nella pagina Teams opzioni per le riunioni del cliente viene visualizzato come "Solo io".          |
-|**Solo utenti invitati**    |Solo gli utenti invitati e gli organizzatori della riunione possono partecipare alla riunione direttamente senza aspettare nella sala d'attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala d'attesa. Nella pagina Teams opzioni per le riunioni del cliente viene visualizzato come "Persone invitate". Gli utenti aggiunti come parte di un gruppo di distribuzione doranno passare attraverso la sala d'attesa.      |
+|**Utenti dell’organizzazione**    |Gli utenti autenticati all'interno dell'organizzazione accedono alla riunione direttamente senza attendere nella sala d'attesa.  Gli utenti di organizzazioni attendibili, utenti guest e utenti anonimi aspettano nella sala di attesa.          |
+|**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa. Nella pagina Teams opzioni riunione client viene visualizzato "Solo io".          |
+|**Solo utenti invitati**    |Solo gli utenti invitati e gli organizzatori della riunione possono partecipare alla riunione direttamente senza attendere nella sala d'attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa. Nella pagina Teams opzioni riunione client viene visualizzato "Persone invitate". Gli utenti aggiunti come parte di un gruppo di distribuzione dovranno passare attraverso la sala di attesa.      |
 
  > [!NOTE]
-> Le organizzazioni attendibili sono domini con cui è consentita la comunicazione federata Teams. Se si abilita **Consenti l'accesso** esterno Teams tutti i domini esterni nell'interfaccia di amministrazione di Teams, qualsiasi utente autenticato all'interno di qualsiasi Teams dell'organizzazione verrà considerato attendibile. Se si sceglie di specificare domini esterni consentiti e bloccare tutti gli altri, i domini consentiti diventano organizzazioni attendibili. Qualsiasi dominio bloccato viene considerato non un'organizzazione attendibile.
+> Le organizzazioni attendibili sono domini con cui si consentono comunicazioni federate in Teams. Se si abilita **Consenti tutti i domini esterni** per l'accesso esterno nell'interfaccia di amministrazione di Teams, qualsiasi utente autenticato all'interno di qualsiasi organizzazione Teams verrà considerato attendibile. Se si sceglie di specificare domini esterni consentiti e bloccarne tutti gli altri, i domini consentiti diventano organizzazioni attendibili. Qualsiasi dominio bloccato è considerato non un'organizzazione attendibile.
 
 ## <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
 
-Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Per impostazione predefinita, questa impostazione è disattivata. Se questa impostazione è disattivata, gli utenti con accesso esterno attenderanno nella sala di attesa finché un utente dell'organizzazione non accede alla riunione con un client di Teams e consente loro di accedere. Quando questa impostazione è attivata, gli utenti con accesso remoto aderiscono automaticamente alla riunione quando un utente dell'organizzazione partecipa alla riunione con un Teams client.
+Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Per impostazione predefinita, questa impostazione è disattivata. Se questa impostazione è disattivata, gli utenti con accesso esterno attenderanno nella sala di attesa finché un utente dell'organizzazione non accede alla riunione con un client di Teams e consente loro di accedere. Quando questa impostazione è attivata, gli utenti connessi con accesso radiale parteciperanno automaticamente alla riunione quando un utente dell'organizzazione partecipa alla riunione con un client Teams.
 
 > [!NOTE]
 > Se un utente con accesso esterno partecipa a una riunione prima che un utente dell'organizzazione acceda alla riunione, verrà inserito nella sala di attesa finché un utente dell'organizzazione non accede alla riunione usando un client di Teams e gli consente di accedere. Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
 
-## <a name="live-captions"></a>Didascalie in tempo reale
+## <a name="live-captions"></a>Sottotitoli in tempo reale
 
 Questa impostazione è un criterio per utente e si applica durante una riunione. Questa impostazione controlla se, l'opzione **Abilita i sottotitoli in tempo reale** è disponibile nelle riunioni a cui l'utente partecipa, per l'attivazione e la disattivazione dei sottotitoli in tempo reale.  
 
@@ -88,7 +88,7 @@ Questa impostazione è un criterio per utente e si applica durante una riunione.
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
 |**Disabilitato, ma l'organizzatore può eseguire l'override**     | I sottotitoli in tempo reale non sono attivati automaticamente per l'utente durante una riunione. L'utente vede l'opzione **Abilita i sottotitoli in tempo reale** nel menu di riversamento (**...**). Questa è l'impostazione predefinita. |
-|**Disattiva**     | I sottotitoli in tempo reale sono disabilitati per l'utente durante le riunioni. L'utente non ha a disposizione l'opzione per attivarli.          |
+|**Non abilitato**     | I sottotitoli in tempo reale sono disabilitati per l'utente durante le riunioni. L'utente non ha a disposizione l'opzione per attivarli.          |
 
 <a name="bkcontentsharing"> </a>
 
@@ -105,15 +105,15 @@ Questa impostazione è un'impostazione per partecipante. Questa impostazione det
 
 ## <a name="enable-meeting-policy-settings"></a>Abilitare le impostazioni dei criteri riunione
 
-Per abilitare le impostazioni dei criteri riunione, è possibile usare l'interfaccia di amministrazione di [Teams](https://admin.teams.microsoft.com/policies/meetings) **(** >  > Criteri riunioneModificare un **criterioParticipants & guest**) o il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) in Teams PowerShell. 
+Per abilitare le impostazioni dei criteri di riunione, è possibile utilizzare [l'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com/policies/meetings) (**Criteri** >  **riunioneModifica di un** **criterioPartcipants** >  & guest) o il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) in Teams PowerShell. 
 
-In questo esempio viene utilizzato PowerShell per modificare i criteri di riunione globali per consentire a chiunque di avviare o partecipare a una riunione.
+In questo esempio viene usato PowerShell per modificare i criteri globali per le riunioni e consentire a chiunque di avviare o partecipare a una riunione.
 
 ```powershell
 Set-CsTeamsMeetingPolicy -Identity Global -AutoAdmittedUsers "Everyone" -AllowAnonymousUsersToStartMeeting $True -AllowPSTNUsersToBypassLobby $True
 ```
 
-Dopo aver configurato un criterio, è necessario applicarlo agli utenti. Se è stato modificato il criterio Globale (impostazione predefinita a livello di organizzazione), verrà applicato automaticamente agli utenti. È necessario attendere almeno 4 ore per l'applicazione delle modifiche ai criteri, ma possono essere necessarie fino a 24 ore.
+Dopo aver configurato un criterio, è necessario applicarlo agli utenti. Se è stato modificato il criterio globale (impostazione predefinita a livello di organizzazione), verrà applicato automaticamente agli utenti. Per applicare le modifiche ai criteri è necessario attendere almeno 4 ore, ma possono essere necessarie fino a 24 ore.
 
 
 ## <a name="related-topics"></a>Argomenti correlati
