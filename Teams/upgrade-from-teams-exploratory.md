@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d4816f3f05c37fe1a690ffea7f48789c41fd2603
-ms.sourcegitcommit: 949fbc3215f96e48c01b75b13c400bdb47c37e4b
+ms.openlocfilehash: 95dd3f01d07a2e393414013ab40ca97ec1a63bb6
+ms.sourcegitcommit: b70f01d7eae2e3e6f7495c685518a2037aaece31
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "61216672"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "64756972"
 ---
 # <a name="upgrade-users-from-the-teams-exploratory-trial"></a>Aggiornare gli utenti dalla versione di valutazione gratuita di Teams Exploratory
 
@@ -37,7 +37,7 @@ Questo articolo offre una panoramica su come aggiornare gli utenti da una versio
 
 ## <a name="step-1-when-to-upgrade"></a>Passaggio 1: quando eseguire l'aggiornamento  
 
-Per verificare quando scade la versione di valutazione gratuita di Teams Exploratory dell'organizzazione e di quanti utenti attivi dispone, accadere a **Fatturazione >** <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"><b>I tuoi prodotti</b></a> nell'interfaccia di amministrazione di Microsoft 365. Si riceverà anche una notifica prima della scadenza della versione di valutazione gratuita di Teams Exploratory.
+Per verificare quando scade la versione di valutazione gratuita di Teams Exploratory dell'organizzazione e di quanti utenti attivi dispone, accadere a **Fatturazione >** <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank"><b>I tuoi prodotti</b></a> nell'interfaccia di amministrazione di Microsoft 365. Riceverai anche una notifica prima della scadenza della versione di valutazione di Teams Exploratory.
 
 > [!IMPORTANT]
 > È consigliabile pianificare l'aggiornamento degli utenti alle licenze a pagamento prima della data di scadenza, in modo che gli utenti non perdano l'accesso a Teams.
@@ -45,6 +45,9 @@ Per verificare quando scade la versione di valutazione gratuita di Teams Explora
 > Gli utenti perderanno l'accesso a Teams 30 giorni dopo la data di scadenza della versione di valutazione gratuita. Se agli utenti viene assegnata una licenza a pagamento entro 60 giorni dalla data di scadenza, possono ottenere nuovamente l'accesso a Teams e a tutti i contenuti ancora esistenti. Tuttavia, dopo 60 giorni, i dati degli utenti vengono eliminati. Dopo aver assegnato una nuova licenza agli utenti per abilitare le funzionalità di Teams, tutti i contenuti saranno ancora disponibili se gli utenti vengono aggiunti entro il periodo di tolleranza. Per altre informazioni, vedere <a href="/microsoft-365/commerce/subscriptions/what-if-my-subscription-expires?view=o365-worldwide" target="_blank">Che cosa succede all'accesso e ai dati personali al termine dell'abbonamento?</a>
 
 ## <a name="step-2-choose-an-upgrade-path"></a>Passaggio 2: scegliere un percorso di aggiornamento
+
+> [!TIP]
+> È consigliabile usare Teams Essentials come opzione principale per i clienti che desiderano aggiornare le versioni di valutazione di Teams Exploratory in scadenza. Per altre informazioni, vedere [Confrontare Microsoft Teams Essentials con altri piani](get-started-with-teams-essentials.md#how-does-microsoft-teams-essentials-compare-to-other-microsoft-teams-plans).
 
 A seconda degli abbonamenti attualmente disponibili nell'organizzazione, esistono tre modi per eseguire l'aggiornamento da una versione di valutazione gratuita di Microsoft Teams Exploratory a una licenza a pagamento:
 
@@ -67,7 +70,7 @@ Dopo aver assegnato le nuove licenze, annullare l'assegnazione delle licenze di 
 
 ### <a name="auto-claim-policies"></a>Criteri di richiesta automatica
 
-Al prossimo aggiornamento, usare i criteri di richiesta automatica per creare criteri per l'organizzazione per assegnare automaticamente licenze da abbonamenti a pagamento a nuovi utenti che non hanno acquisito una licenza di Teams. Per altre informazioni, vedere <a href="/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide" target="_blank">Gestire i criteri di richiesta automatica</a>.
+Al successivo aggiornamento, usare i criteri di attestazione automatica per creare criteri per l'organizzazione per assegnare automaticamente licenze da sottoscrizioni a pagamento a nuovi utenti che non hanno’ acquisito una licenza di Teams. Per altre informazioni, vedere <a href="/microsoft-365/commerce/licenses/manage-auto-claim-policies?view=o365-worldwide" target="_blank">Gestire i criteri di attestazione automatica</a>.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
