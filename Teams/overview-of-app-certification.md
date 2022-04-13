@@ -1,7 +1,7 @@
 ---
 title: Panoramica della certificazione delle app da parte di Microsoft
 ms.reviewer: ''
-description: Comprendere i programmi di attestazione e certificazione delle app per le app di Teams.
+description: Informazioni sui programmi di attestazione e certificazione delle app per le app di Teams.
 ms.topic: article
 author: guptaashish
 ms.author: guptaashish
@@ -18,21 +18,21 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59caf72dbc29c6cc97789a7dc85f8bd7b035274e
-ms.sourcegitcommit: b70f01d7eae2e3e6f7495c685518a2037aaece31
+ms.openlocfilehash: abb025b43e63ae68b82f49bec06a3fc7533e6f0c
+ms.sourcegitcommit: a31c02892e35babbbcf5e7c303c7f14d7ba5cb52
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64757126"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "64784760"
 ---
-# <a name="microsoft-365-app-compliance-program"></a>Programma di conformità delle app di Microsoft 365
+# <a name="microsoft-365-app-compliance-program-for-security-compliance-and-privacy-of-third-party-apps"></a>Programma di conformità delle app Microsoft 365 per la sicurezza, la conformità e la privacy delle app di terze parti
 
 Il programma di conformità Microsoft dimostra che un'app viene controllata rispetto ai controlli derivati da framework standard leader di settore e che vi sono state implementate procedure di sicurezza e conformità complesse per proteggere i dati dei clienti. Il programma ha due fasi:
 
 * Attestazione dell'autore.
 * Certificazione Microsoft 365.
 
-## <a name="publisher-attestation"></a>Attestazione dell'editore
+## <a name="publisher-attestation"></a>Attestazione del publisher
 
 L'attestazione dell'autore è il livello successivo del programma di conformità delle app. Le app con attestazione dell’autore offrono agli amministratori maggiore sicurezza sulle misure di conformità e sicurezza di un'app e riducono il tempo necessario per rivederle in un'app. L'attestazione rifletterà le procedure di sicurezza, gestione dei dati e conformità di un'app rispetto a più di 80 fattori di rischio identificati da [Microsoft Cloud App Security](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/cloud-app-security).
 
