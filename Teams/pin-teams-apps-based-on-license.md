@@ -1,5 +1,5 @@
 ---
-title: Personalizzare Teams per i dipendenti in prima linea
+title: Personalizzare le app Teams per i dipendenti in prima linea
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: aaglick
@@ -8,7 +8,7 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
-description: Informazioni sull'esperienza dell'app personalizzata per i dipendenti in prima linea in Teams.
+description: Informazioni sull'esperienza app personalizzata per gli operatori in prima linea in Teams.
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -16,26 +16,26 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: b526733558570e4903d9dce43094c7ffa0f7de17
-ms.sourcegitcommit: b91d83739a078b175770c797c17d602eb5c83a4f
+ms.sourcegitcommit: 480046a53dfb6e6cf867e1920f8fb43dda9d3774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2022
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "63774185"
 ---
-# <a name="tailor-teams-apps-for-your-frontline-workers"></a>Personalizzare Teams per i dipendenti in prima linea
+# <a name="tailor-teams-apps-for-your-frontline-workers"></a>Personalizzare le app Teams per i dipendenti in prima linea
 
 > [!NOTE]
 > [!INCLUDE [new-feature-coming-soon-section](includes/new-feature-coming-soon-section.md)]
 
 ## <a name="overview"></a>Panoramica
 
-Teams offre un modo semplice per aggiungere app per i lavoratori in prima linea. Questa caratteristica consente di aggiungere app basate sulla licenza per offrire ai tuoi dipendenti in prima linea un'esperienza di prima classe in Teams personalizzata in base alle loro esigenze.
+Teams offre un modo semplice per aggiungere app per gli operatori in prima linea. Questa funzionalità consente di aggiungere app in base alla licenza per offrire ai dipendenti in prima linea un'esperienza personalizzata in Teams su misura per le loro esigenze.
 
-Con l'esperienza dell'app in prima linea personalizzata, i dipendenti in prima linea ottengono le app più pertinenti in Teams senza alcuna azione da parte dell'amministratore.
+Con l'esperienza personalizzata delle app in prima linea, i dipendenti in prima linea ottengono le app più pertinenti in Teams senza che sia necessario alcun intervento da parte dell'amministratore.
 
-## <a name="tailored-frontline-app-experience"></a>Esperienza dell'app in prima linea personalizzata
+## <a name="tailored-frontline-app-experience"></a>Esperienza app in prima linea personalizzate
 
-Le app vengono aggiunte alla barra dell'app, ovvero la barra nella parte inferiore dei client mobili Teams (iOS e Android) e sul lato del client desktop Teams. Le app seguenti sono aggiunte per gli utenti che hanno una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt):
+Le app vengono aggiunte alla barra dell'app, ovvero la barra nella parte inferiore della Teams client mobili (iOS e Android) e sul lato del client desktop Teams. Le app seguenti vengono aggiunte per gli utenti che hanno una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt):
 
 - [Attività](https://support.microsoft.com/office/explore-the-activity-feed-in-teams-91c635a1-644a-4c60-9c98-233db3e13a56)
 - [Chat](https://support.microsoft.com/office/get-started-with-chat-0b506ce2-eb6d-4fca-9668-e56980ba755e)
@@ -45,63 +45,63 @@ Le app vengono aggiunte alla barra dell'app, ovvero la barra nella parte inferio
 - [Turni](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821)
 - [Approvazioni](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3)
 
-**Teams mobile**
+**Teams dispositivo mobile**
 
-:::image type="content" source="media/tailored-teams-apps-mobile.png" alt-text="L'esperienza dell'app in prima linea su misura Teams mobile" lightbox="media/tailored-teams-apps-mobile.png"::: 
+:::image type="content" source="media/tailored-teams-apps-mobile.png" alt-text="L'esperienza dell'app in prima linea personalizzata su Teams dispositivo mobile" lightbox="media/tailored-teams-apps-mobile.png"::: 
 
 **Teams desktop**
 
-:::image type="content" source="media/tailored-teams-apps-desktop.png" alt-text="L'esperienza dell'app in prima linea personalizzata Teams desktop" lightbox="media/tailored-teams-apps-desktop.png"::: 
+:::image type="content" source="media/tailored-teams-apps-desktop.png" alt-text="L'esperienza dell'app in prima linea personalizzata su Teams desktop" lightbox="media/tailored-teams-apps-desktop.png"::: 
 
 ## <a name="admin-controls"></a>Controlli di amministrazione
 
 > [!NOTE]
-> **L'impostazione Aggiunta utenti** deve essere attivata nel criterio di configurazione globale [dell'app](teams-app-setup-policies.md) (impostazione predefinita a livello di organizzazione) per l'applicazione di questa caratteristica.
+> **Per rendere** effettiva questa funzionalità, l'impostazione per [l'aggiunta dell'utente](teams-app-setup-policies.md) deve essere attivata nei criteri di configurazione delle app globali (impostazione predefinita a livello di organizzazione).
 
-L'esperienza dell'app in prima linea personalizzata è  controllata dall'impostazione Mostra app personalizzate a livello di organizzazione [](manage-apps.md#manage-org-wide-app-settings) nella pagina Gestisci app dell'interfaccia Teams di amministrazione. Se la funzionalità è attivata, tutti gli utenti dell'organizzazione che dispongono di una licenza F otterrà l'esperienza personalizzata dell'app.
+L'esperienza delle app in prima linea personalizzata è controllata dall'impostazione **Mostra app personalizzate** a livello di organizzazione nella pagina [Gestisci app](manage-apps.md#manage-org-wide-app-settings) dell'interfaccia di amministrazione di Teams. Se la funzionalità è attivata, tutti gli utenti dell'organizzazione che hanno una licenza F riceveranno l'esperienza dell'app personalizzata.
 
-Tenere presente che tutti i criteri di [configurazione delle app](teams-app-setup-policies.md) personalizzati assegnati agli utenti hanno la precedenza. Questo significa che se a un utente è già assegnato un criterio di configurazione dell'app personalizzato, l'utente ottiene la configurazione definita nei criteri di configurazione delle app personalizzate. Per altre informazioni sul funzionamento della caratteristica con i Teams delle app, inclusi i criteri di configurazione delle app globali, vedere la sezione [](#scenarios) Scenari più avanti in questo articolo.
+Tenere presente che tutti i [criteri di configurazione delle app](teams-app-setup-policies.md) personalizzati assegnati agli utenti hanno la precedenza. Questo significa che se a un utente è già assegnato un criterio di configurazione dell'app personalizzato, l'utente ottiene la configurazione definita nel criterio di configurazione dell'app personalizzato. Per altre informazioni sul funzionamento della funzionalità con Teams criteri delle app, inclusi i criteri di configurazione globale delle app, vedere la sezione [Scenari](#scenarios) più avanti in questo articolo.
 
-Questa funzionalità è attivata per impostazione predefinita. Tuttavia, se non si vuole usare l'esperienza dell'app in prima linea personalizzata fornita da Microsoft, è possibile disattivare la funzionalità. Per disattivare o attivare la funzionalità:
+Questa funzionalità è attivata per impostazione predefinita. Tuttavia, se non desideri l'esperienza dell'app frontline personalizzata fornita da Microsoft, puoi disattivare la funzionalità. Per attivare o disattivare la funzionalità:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare a Teams **app** >  di gestione delle **app e quindi** selezionare Impostazioni **dell'app a livello di organizzazione**.
-2. In **App personalizzate impostare** l'interruttore Mostra **app personalizzate** su **Disattivato** o **Attivato**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Teams** **appGesti** >  app e quindi selezionare **Impostazioni app a livello di organizzazione**.
+2. In **App personalizzate** imposta **l'interruttore Mostra app personalizzate** su **Disattivato** o **Attivato**.
 
-    :::image type="content" source="media/tailored-teams-apps-admin-center.png" alt-text="Screenshot dell'impostazione Mostra app personalizzate nella pagina Gestisci app dell'interfaccia Teams di amministrazione" lightbox="media/tailored-teams-apps-admin-center.png":::
+    :::image type="content" source="media/tailored-teams-apps-admin-center.png" alt-text="Screenshot dell'impostazione Mostra app personalizzate nella pagina Gestisci app dell'interfaccia di amministrazione di Teams" lightbox="media/tailored-teams-apps-admin-center.png":::
 
 ## <a name="scenarios"></a>Scenari
 
-### <a name="how-does-the-tailored-frontline-app-experience-affect-my-global-app-setup-policy"></a>In che modo l'esperienza dell'app in prima linea personalizzata influisce sui criteri di configurazione delle app globali?
+### <a name="how-does-the-tailored-frontline-app-experience-affect-my-global-app-setup-policy"></a>In che modo l'esperienza delle app frontline personalizzate influisce sui criteri di configurazione delle app globali?
 
-Scopri come funziona l'esperienza dell'app in prima linea personalizzata insieme ai criteri di configurazione delle app globali. Gli scenari in questa tabella si applicano ai lavoratori in prima linea che hanno una licenza F e ai criteri di configurazione globali dell'app, con l'opzione **Aggiunta utenti** attivata.
+Scopri come funziona l'esperienza delle app in prima linea personalizzata insieme ai criteri di configurazione delle app globali. Gli scenari di questa tabella si applicano agli operatori in prima linea che hanno una licenza F e ai criteri di configurazione globale dell'app, con **l'aggiunta dell'utente** attivata.
 
-|Se... |Quindi... |
+|Se... |Poi... |
 |---------|---------|
-|Un worker in prima linea ha il criterio di configurazione dell'app globale e la funzionalità è disattivata. |Il worker in prima linea ottiene le app definite nei criteri di configurazione delle app globali.|
-|Un worker in prima linea ha il criterio di configurazione dell'app globale e la funzionalità è attivata.     | Il worker in prima linea ottiene l'esperienza dell'app in prima linea personalizzata. Le app definite nei criteri di configurazione delle app globali vengono aggiunte sotto le app personalizzate.      |
-|Il criterio di configurazione dell'app globale viene aggiornato e la caratteristica è attivata.     |Il worker in prima linea ottiene l'esperienza dell'app in prima linea personalizzata e le app definite nei criteri di configurazione delle app globali vengono aggiunte sotto le app personalizzate.         |
-|Un worker in prima linea ha i criteri di configurazione dell'app globale e **l'aggiunta degli utenti** è disattivata. |Il worker in prima linea ottiene le app definite nei criteri di configurazione delle app globali.|
-|Un worker in prima linea ha i criteri di configurazione delle app globali e i criteri di configurazione delle app globali vengono modificati in modo da includere un'app line-of-business (LOB) nella seconda posizione nell'elenco delle app. |L'app LOB viene aggiunta sotto le app personalizzate. Il worker in prima linea può modificare l'ordine dell'app se **l'aggiunta dell'utente** è impostata su .         |
-|Un worker in prima linea ha il criterio di configurazione globale e il criterio di configurazione dell'app globale viene modificato in modo da includere i turni nella prima posizione.  |I turni vengono aggiunti alla sesta posizione, come definito dall'esperienza dell'app in prima linea personalizzata. Il worker in prima linea può modificare l'ordine dell'app se **l'aggiunta dell'utente** è impostata su .          |
+|Un frontline worker ha i criteri di configurazione globale dell'app e la funzionalità è disattivata. |Il frontline worker ottiene le app definite nel criterio di configurazione globale delle app.|
+|Un frontline worker ha i criteri globali di configurazione dell'app e la funzionalità è attivata.     | Il frontline worker ottiene l'esperienza dell'app in prima linea personalizzata. Le app definite nei criteri di configurazione globale delle app vengono aggiunte sotto le app personalizzate.      |
+|Aggiornare i criteri di configurazione globale delle app e la funzionalità è attivata.     |Il frontline worker ottiene l'esperienza dell'app frontline personalizzata e le app definite nei criteri di configurazione globale delle app vengono aggiunte sotto le app personalizzate.         |
+|Un frontline worker ha i criteri di configurazione dell'app globali e **l'aggiunta dell'utente** è disattivata. |Il frontline worker ottiene le app definite nel criterio di configurazione globale delle app.|
+|Un frontline worker ha i criteri di configurazione globale dell'app e il criterio di configurazione globale delle app viene modificato per includere un'app line-of-business (LOB) nella seconda posizione nell'elenco delle app. |L'app line-of-business viene aggiunta sotto le app personalizzate. Il frontline worker può modificare l'ordine dell'app se **l'aggiunta dell'utente** è attivata.         |
+|Un frontline worker ha i criteri di configurazione globale e il criterio di configurazione globale delle app viene modificato per includere Turni nella prima posizione.  |Turni viene aggiunto alla sesta posizione, come definito dall'esperienza dell'app in prima linea personalizzata. Il frontline worker può modificare l'ordine dell'app se **l'aggiunta dell'utente** è attivata.          |
 
-### <a name="how-does-the-tailored-frontline-app-experience-work-with-other-teams-app-policies"></a>Come funziona l'esperienza dell'app in prima linea personalizzata con altri criteri Teams app?
+### <a name="how-does-the-tailored-frontline-app-experience-work-with-other-teams-app-policies"></a>Come funziona l'esperienza delle app frontline personalizzate con altri criteri delle app Teams?
 
-Scopri come funziona l'esperienza dell'app in prima linea personalizzata con altri criteri Teams'app.
+Scopri come funziona l'esperienza delle app frontline personalizzate con altri criteri delle app Teams.
 
-|Se...  |Quindi... |
+|Se...  |Poi... |
 |---------|---------|
-La funzionalità è disattivata.   | Il worker in prima linea ottiene le app definite nei criteri di configurazione delle app globali o nei criteri di configurazione delle app personalizzati assegnati.          |
-|Un worker in prima linea ha un criterio di configurazione dell'app personalizzato e la funzionalità è attivata.    |Il worker in prima linea ottiene le app definite nei criteri di configurazione delle app personalizzate.          |
-|Un'app nell'esperienza dell'app in prima linea personalizzata viene bloccata per un utente o per l'organizzazione.      |L'esperienza dell'app in prima linea personalizzata rispetta i criteri [di autorizzazione dell'app](teams-app-permission-policies.md). Se un'app è bloccata, il worker in prima linea non vede l'app bloccata.           |
-|Un'app nell'esperienza dell'app in prima linea personalizzata è già definita in un criterio di configurazione dell'app e la caratteristica è attivata. |L'app viene aggiunta in base all'ordine definito dall'elenco delle app personalizzate.        |
-|Un utente ha una licenza E, A o G e la funzionalità è attivata.   | L'utente non ottiene l'esperienza dell'app in prima linea personalizzata. Attualmente, l'esperienza si applica solo agli utenti che hanno una licenza F.        |
+La funzionalità è disattivata.   | Il frontline worker ottiene le app definite nel criterio di configurazione globale delle app o nei criteri di configurazione delle app personalizzati assegnati.          |
+|Un frontline worker ha un criterio di configurazione delle app personalizzato e la funzionalità è attivata.    |Il frontline worker ottiene le app definite nei criteri di configurazione delle app personalizzate.          |
+|Un'app nell'esperienza dell'app frontline personalizzata viene bloccata per un utente o per l'organizzazione.      |L'esperienza dell'app in prima linea personalizzata rispetta i [criteri di autorizzazione dell'app](teams-app-permission-policies.md). Se un'app è bloccata, il frontline worker non vedrà l'app bloccata.           |
+|Un'app nell'esperienza dell'app frontline personalizzata è già definita in un criterio di configurazione dell'app e la funzionalità è attivata. |L'app viene aggiunta in base all'ordine definito dall'elenco di app personalizzate.        |
+|Un utente ha una licenza E, A o G e la funzionalità è attivata.   | L'utente non ottiene l'esperienza dell'app frontline personalizzata. Attualmente, l'esperienza si applica solo agli utenti che hanno una licenza F.        |
 
 > [!NOTE]
-> Non è possibile modificare le app o l'ordine delle app nell'esperienza dell'app in prima linea personalizzata. Per il momento, se si vogliono apportare modifiche, è possibile configurare un'esperienza personalizzata. A questo scopo, disattivare prima la caratteristica. Quindi, [creare un criterio di configurazione dell'app personalizzato](teams-app-setup-policies.md) e [assegnarlo a utenti o gruppi](assign-policies-users-and-groups.md).
+> Non puoi modificare le app o l'ordine delle app nell'esperienza delle app frontline personalizzate. Per il momento, se si vogliono apportare modifiche, è possibile configurare un'esperienza personalizzata. A questo scopo, disattivare prima di tutto la funzionalità. Creare quindi [criteri di configurazione delle app personalizzati](teams-app-setup-policies.md) e [assegnarli a utenti o gruppi](assign-policies-users-and-groups.md).
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Gestire l'app Walkie Talkie in Teams](walkie-talkie.md)
+- [Gestire l'app Walkie-talkie in Teams](walkie-talkie.md)
 - [Gestire l'app Attività in Teams](manage-tasks-app.md)
 - [Gestire l'app Turni in Teams](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md)
 - [Gestire l'app Approvazioni in Teams](approval-admin.md)

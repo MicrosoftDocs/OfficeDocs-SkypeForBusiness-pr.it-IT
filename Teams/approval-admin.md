@@ -19,10 +19,10 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 37c899c1507a28f51bb881a9e7e66de6d7af0d58
-ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
+ms.sourcegitcommit: 480046a53dfb6e6cf867e1920f8fb43dda9d3774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2022
+ms.lasthandoff: 04/14/2022
 ms.locfileid: "64643070"
 ---
 # <a name="teams-approvals-app-availability"></a>Disponibilità dell'app Approvazioni in Teams
@@ -34,14 +34,14 @@ Offre un modo semplice per ottenere controlli, conformità, rendicontazione e fl
 
 Gli utenti possono aggiungere l'app Approvazioni e salvarla nella barra dei menu.
 
- ![mostra l'app approvazioni con l'opzione pin.](media/approvalApp-pin.png)
+ ![mostra l'app approvazioni con l'opzione aggiungi.](media/approvalApp-pin.png)
 
-La prima approvazione creata dall'app Approvazioni attiva il provisioning della soluzione di approvazione nell'ambiente Microsoft Dataverse predefinito. Approvazioni creata dall'app Approvazioni verrà archiviata nell'ambiente Microsoft Dataverse predefinito.
+La prima approvazione creata dall'app Approvazioni attiverà il provisioning della soluzione approvazione nell'ambiente predefinito Microsoft Dataverse. Approvazioni creati dall'app Approvazioni verranno archiviati nell'ambiente Microsoft Dataverse predefinito.
 
 Questo articolo descrive i ruoli e i requisiti dell'app Approvazioni.
 
 > [!NOTE]
-> Questa funzionalità non è ancora stata rilasciata per gli utenti Government Community Cloud High (GCCH) e Department of Defense (DOD).
+> Questa funzionalità non è ancora stata rilasciata per Government Community Cloud utenti high (GCCH) e del Dipartimento della difesa (DOD).
 
 ## <a name="required-permissions-and-licenses"></a>Autorizzazioni e licenze richieste
 
@@ -55,22 +55,22 @@ Per distribuire l'app Approvazioni, è necessaria l'autorizzazione per gli eleme
 
 - Licenza per [Power Automate](/power-automate/get-started-approvals), Office 365 o Dynamics 365.
 
-- La licenza per Microsoft Forms è necessaria per consentire agli utenti di configurare nuovi modelli di approvazione.
+- Agli utenti è necessaria una licenza per Microsoft Forms per configurare nuovi modelli di approvazione.
 
-Per usare l'app Approvazioni, è necessaria una licenza per Power Automate e l'account verrà aggiunto automaticamente al ruolo utente di Approvazioni nell'ambiente di destinazione alla prima assegnazione di approvazione.
+Per usare l'app Approvazioni, è necessaria una licenza per Power Automate e l'account verrà aggiunto automaticamente al ruolo utente Approvazioni nell'ambiente di destinazione alla prima assegnazione di approvazione.
 
 ## <a name="storage-with-microsoft-dataverse"></a>Archiviazione con Microsoft Dataverse
 
-Il modello CDM (Common Data Model) è il linguaggio dei dati condiviso usato dalle applicazioni aziendali e analitiche in Microsoft Dataverse. È costituito da un set di schemi di dati standardizzati ed estendibili pubblicati da Microsoft e dai nostri partner che consentono la coerenza dei dati e il relativo significato tra le applicazioni e i processi aziendali. Per altre informazioni, vedere [Common Data Model di Microsoft Power Platform](/power-automate/get-started-approvals).
+Il common data model (CDM) è il linguaggio dei dati condiviso usato dalle applicazioni aziendali e analitiche in Microsoft Dataverse. È costituito da un set di schemi di dati estendibili standardizzati pubblicati da Microsoft e dai nostri partner che consentono la coerenza dei dati e il relativo significato tra le applicazioni e i processi aziendali. Per altre informazioni, vedere [Common Data Model di Microsoft Power Platform](/power-automate/get-started-approvals).
 
 Altre informazioni sui [flussi di lavoro di Approvazioni](/power-automate/modern-approvals).
 
-Approvazioni creati da un modello archiviano comunque i dati in Microsoft Dataverse, ad esempio il titolo, i dettagli, l'ID del modello e altro ancora. Le risposte inviate nella richiesta di approvazione vengono archiviate in Moduli. Altre informazioni  [sull'archiviazione dei dati per Microsoft Forms](https://support.microsoft.com/office/data-storage-for-microsoft-forms-97a34e2e-98e1-4dc2-b6b4-7a8444cb1dc3#:~:text=Where%20data%20is%20stored%20for%20Microsoft%20Forms.%20Microsoft,European-based%20tenants%20is%20stored%20on%20servers%20in%20Europe).
+Approvazioni create da un modello archiviano comunque i dati in Microsoft Dataverse, ad esempio il titolo, i dettagli, l'ID modello e altro ancora. Le risposte inviate nella richiesta di approvazione vengono archiviate in Forms. Altre informazioni  [sull'archiviazione dei dati per Microsoft Forms](https://support.microsoft.com/office/data-storage-for-microsoft-forms-97a34e2e-98e1-4dc2-b6b4-7a8444cb1dc3#:~:text=Where%20data%20is%20stored%20for%20Microsoft%20Forms.%20Microsoft,European-based%20tenants%20is%20stored%20on%20servers%20in%20Europe).
 
 >[!Note]
->Se si elimina il modello di modulo nel sito Microsoft Forms, il modello approvazione verrà eliminato e gli utenti non saranno in grado di avviare la richiesta. Gli utenti riceveranno un messaggio di errore "Tabella CDBNonFound" quando si prova ad aprire un modello approvazione eliminato in Microsoft Forms.
+>Se si elimina il modello di modulo nel sito Microsoft Forms, verrà interrotto il modello di approvazione e gli utenti non potranno avviare la richiesta. Gli utenti riceveranno un errore "CDB TableNotFound" quando tentano di aprire un modello Approvazione eliminato in Microsoft Forms.
 
-I modelli con ambito organizzazione condividono la stessa durata del tenant e i modelli con ambito di team condividono la stessa durata del team. Pertanto, l'eliminazione definitiva del team elimina i modelli correlati.
+I modelli con ambito organizzazione condividono la stessa durata del tenant e i modelli con ambito team condividono la stessa durata del team. Di conseguenza, l'eliminazione definitiva del team comporta l'eliminazione dei modelli correlati.
 
 ## <a name="approvals-teams-app-permissions"></a>Autorizzazioni dell'app Approvazioni di Teams
 
@@ -97,12 +97,12 @@ L'app Approvazioni di Teams consente di accedere alle funzionalità seguenti:
 
 Autorizzazioni per i modelli di approvazione
 
-- Tutti i proprietari dei team possono creare un modello di approvazione per i team di cui sono proprietari.
+- Tutti i proprietari del team possono creare un modello di approvazione per i team di cui sono proprietari.
 
-- Quando un amministratore crea un modello per l'intera organizzazione per la prima volta, crea automaticamente un nuovo gruppo Azure Active Directory (AAD) per tutti gli amministratori del tenant, inclusi gli amministratori dei servizi globali e Teams. Questi amministratori verranno aggiunti come proprietari del gruppo, in modo che possano gestire i modelli dell'organizzazione in modalità co-gestione. Gli amministratori che non hanno più accesso all'organizzazione dopo la creazione del team devono essere aggiunti manualmente come proprietari dei gruppi, in modo da avere le stesse autorizzazioni per gestire i modelli a livello di organizzazione.
+- Quando un amministratore crea un modello per l'intera organizzazione per la prima volta, crea automaticamente un nuovo gruppo di Azure Active Directory (AAD) per tutti gli amministratori del tenant, inclusi gli amministratori globali e Teams del servizio. Questi amministratori verranno aggiunti come proprietari del gruppo, in modo che possano co-gestire i modelli dell'organizzazione. Gli amministratori che non hanno più accesso all'organizzazione dopo la creazione del team devono essere aggiunti manualmente come proprietari del gruppo in modo che abbiano le stesse autorizzazioni per gestire i modelli a livello di organizzazione.
 
 > [!Note]
-> Se un amministratore elimina il gruppo, è necessario un mese per ripristinarlo all'interno del portale Azure Active Directory (AAD) per ripristinare tutti i dati correlati. Dopo un mese o se l'amministratore elimina questo gruppo nel Cestino, si perderanno tutti i dati correlati.
+> Se un amministratore elimina il gruppo, è necessario un mese per ripristinarlo nel portale di Azure Active Directory (AAD) per ripristinare tutti i dati correlati. Dopo un mese o se l'amministratore elimina questo gruppo nel Cestino, si perderanno tutti i dati correlati.
 
 ## <a name="disable-the-approvals-app"></a>Disabilitare l'app Approvazioni
 
@@ -114,21 +114,21 @@ L'app Approvazioni è disponibile per impostazione predefinita. È possibile dis
 
   3. Cercare l'app Approvazioni.
 
-     ![mostra la struttura di spostamento dell'interfaccia di amministrazione con Teams app > Gestisci app evidenziata.](media/manage-approval-apps.png)
+     ![mostra la struttura di spostamento dell'interfaccia di amministrazione con Teams App > Gestisci app evidenziato.](media/manage-approval-apps.png)
 
   4. Selezionare **Approvazioni**.
 
   5. Selezionare l'interruttore per disabilitare l'app per l'organizzazione.
 
-     :::image type="content" alt-text="mostra i dettagli per l Approvazioni app." source="media/approvals-details-new.png" lightbox="media/approvals-details-new.png":::
+     :::image type="content" alt-text="mostra i dettagli per l'app Approvazioni." source="media/approvals-details-new.png" lightbox="media/approvals-details-new.png":::
 
-## <a name="app-policies"></a>Criteri delle app
+## <a name="app-policies"></a>Criteri per le app
 
 ### <a name="retention-policy"></a>Criteri di conservazione
 
-Approvazioni creati dall'app Approvazioni vengono archiviati nell'ambiente Microsoft Dataverse predefinito, che al momento non supporta i backup. Altre informazioni su come eseguire il [Backup e il ripristino di ambienti - Power Platform \|Microsoft Docs](/power-platform/admin/backup-restore-environments).
+Approvazioni creati dall'app Approvazioni vengono archiviati nell'ambiente predefinito Microsoft Dataverse, che al momento non supporta i backup. Altre informazioni su come eseguire il [Backup e il ripristino di ambienti - Power Platform \|Microsoft Docs](/power-platform/admin/backup-restore-environments).
 
-I dati archiviati in Moduli non verranno eliminati finché i proprietari del team non lo puliranno dalla scheda Moduli eliminati nell'app Web Microsoft Forms.
+I dati archiviati in Forms non verranno eliminati finché i proprietari del team non lo puliranno dalla scheda **moduli eliminati** nell'app Web Microsoft Forms.
 
 ### <a name="conditional-access-policies"></a>Criteri di accesso condizionale
 
@@ -136,7 +136,7 @@ Attualmente, l'app Approvazioni in Teams non supporta i criteri di accesso condi
 
 ## <a name="data-limitations"></a>Limitazioni dei dati
 
-Ogni team può contenere al massimo 400 modelli di approvazione e ogni modello può raccogliere un massimo di 50.000 richieste in base alla funzionalità corrente in Microsoft Forms.
+Ogni team può contenere al massimo 400 modelli di approvazione e ogni modello può raccogliere un massimo di 50.000 richieste in base alla funzionalità corrente di Microsoft Forms.
 
 ## <a name="auditing"></a>Controllo
 
@@ -182,7 +182,7 @@ L'app Approvazioni registra gli eventi di controllo all'interno del Centro sicur
 
 - Modello visualizzato
 
-Per accedere ad altre approvazioni di controllo all'interno di Power Automate, abilitare e configurare il controllo nell'ambiente predefinito per le entità di approvazione principali Approvazione, Richiesta di approvazione e Risposta approvazione. Le operazioni di creazione, aggiornamento ed eliminazione sono eventi controllabili per i record di approvazione. Per altre informazioni, vedere [Dati di controllo e attività degli utenti per la sicurezza e la conformità - Power Platform \| Microsoft Docs](/power-platform/admin/audit-data-user-activity).
+Per accedere ad altre approvazioni di controllo all'interno di Power Automate, abilitare e configurare il controllo nell'ambiente predefinito per le entità di approvazione primarie Approvazione, Richiesta di approvazione e Risposta approvazione. Le operazioni di creazione, aggiornamento ed eliminazione sono eventi controllabili per i record di approvazione. Per altre informazioni, vedere [Dati di controllo e attività degli utenti per la sicurezza e la conformità - Power Platform \| Microsoft Docs](/power-platform/admin/audit-data-user-activity).
 
 Il controllo può essere personalizzato ulteriormente nel [Centro sicurezza e conformità di Microsoft 365](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US).
 
@@ -201,20 +201,20 @@ Tramite l'app Approvazioni di Teams, gli utenti hanno accesso alla creazione di 
 > [!Note]
 > L'utente riceve il ruolo di visualizzatore della richiesta se fa parte della chat o del canale in cui è stata creata l'approvazione. Non è possibile intervenire sulla richiesta se al momento della creazione dell'approvazione non è stato assegnato il ruolo specifico.
 
-## <a name="approvals-e-signature-integration"></a>Approvazioni di firma elettronica
+## <a name="approvals-e-signature-integration"></a>integrazione della firma elettronica Approvazioni
 
-Per usare la Approvazioni di firma elettronica dell'app, è necessaria una licenza per lo specifico provider di firme elettroniche che si vuole usare. Per ottenere una licenza per l'organizzazione, è necessario accedere al sito del provider.
+Per usare la funzionalità Approvazioni firma elettronica dell'app, è necessaria una licenza per il provider di firma elettronica specifico che si vuole usare. Per ottenere una licenza per l'organizzazione, è necessario accedere al sito del provider.
 
-### <a name="enable-or-disable-e-signature-providers"></a>Abilitare o disabilitare i provider di firme elettroniche
+### <a name="enable-or-disable-e-signature-providers"></a>Abilitare o disabilitare i provider di firme elettronica
 
-È possibile usare l'Teams di amministrazione per controllare quali provider di firme elettroniche di terze parti sono disponibili per gli utenti nell'app Approvazioni. Per impostazione predefinita, i provider di firme elettroniche sono abilitati nell Approvazioni app. Quando si disabilita un provider di firme elettroniche, gli utenti non potranno accedere a tale provider quando creano le approvazioni. Gli utenti non saranno inoltre in grado di visualizzare le richieste di firma elettronica create con tale provider.
+È possibile usare l'interfaccia di amministrazione di Teams per controllare quali provider di firme elettronica di terze parti sono disponibili per gli utenti nell'app Approvazioni. Per impostazione predefinita, i provider di firma elettronica sono abilitati nell'app Approvazioni. Quando si disabilita un provider di firme elettronica, gli utenti non avranno accesso a tale provider quando creano approvazioni. Inoltre, gli utenti non potranno visualizzare le richieste di firma elettronica create con tale provider.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare a Teams **app** >  **Gestione app**.
-2. Cercare l'app Approvazioni e quindi selezionarla.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams passare a **app Teams** >  **Gesti app**.
+2. Cerca l'app Approvazioni e quindi selezionala.
 3. Passare alla scheda **Impostazioni** e quindi eseguire una o più delle operazioni seguenti:
 
-    - Per abilitare o disabilitare Adobe Sign, impostare l'interruttore su **Attivato** o **Disattivato**.
-    - Per abilitare o disabilitare DocuSign, impostare l'interruttore su **Attivato** o **Disattivato**.
-4. Selezionare **Invia**.
+    - Per abilitare o disabilitare Adobe Sign, impostare l'interruttore **su Attivato** o **Disattivato**.
+    - Per abilitare o disabilitare DocuSign, impostare l'interruttore **su Attivato** o **Disattivato**.
+4. Seleziona **Invia**.
 
-Le approvazioni delle firme elettroniche create dall'app Approvazioni vengono archiviate nell'ambiente cloud del provider selezionato. Per esportare i dati sulle firme elettroniche, è necessario accedere al sito del provider. Per altre informazioni sull'archiviazione, l'esportazione e la conservazione dei contratti di firma elettronica, vedere la documentazione del provider.
+Le approvazioni delle firme elettronica create dall'app Approvazioni vengono archiviate nell'ambiente cloud del provider selezionato. Per esportare i dati sulle firme elettronica, è necessario passare al sito del provider. Per altre informazioni sull'archiviazione, l'esportazione e la conservazione dei contratti di firma elettronica, vedere la documentazione del provider.

@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e5e554672156f70556ebc18625115cd9a1ce8c58
-ms.sourcegitcommit: e97c981489ff1f02674df57426da3b22cc6d68c1
+ms.openlocfilehash: 234121449025512f8a5ffe37814804cc775b7b37
+ms.sourcegitcommit: 0d61ca384e7d76612743de41c8fea4729072fb5e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "63062690"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64837459"
 ---
 # <a name="it-admin-guide-to-education-insights-in-microsoft-teams"></a>Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams
 
@@ -94,7 +94,7 @@ Ad esempio, un preside vede solo le classi del proprio istituto di istruzione o 
 **Per aggiungere l'app Insights in Teams:**
 * Fare clic su “**…**” nella barra delle app.
 * Cercare **Insights** e selezionarlo.
-* Si aprirà una schermata con una descrizione. Fare clic su **Aggiungi**.
+* Verrà aperta una schermata di descrizione. Fare clic su **Aggiungi**.
 
 :::image type="content" source="media/insights-add-personal-app.png" alt-text="Aggiungere Insights a Teams.":::
 
@@ -106,7 +106,7 @@ Ad esempio, un preside vede solo le classi del proprio istituto di istruzione o 
 > È anche possibile individuare l'app Insights tramite questo collegamento: [https://aka.ms/addInsights](https://aka.ms/addInsights)
 
 ## <a name="when-is-insights-used"></a>Quando viene usato Insights? 
-Insights supporta le community di apprendimento durante tutto **il ciclo di apprendimento**. Con metriche in tempo reale su più dimensioni, Insights supporta un ciclo continuo di identificazione, riflessione, discussione e intervento da parte dei membri della community dell'istituto di istruzione.
+Insights supporta le community di apprendimento in tutto **il ciclo di apprendimento**. Con metriche in tempo reale su più dimensioni, Insights supporta un ciclo continuo di identificazione, riflessione, discussione e azione tra i membri della community dell'istituto di istruzione.
 *   **Identificare** come e quando gli studenti interagiscono con i docenti, i materiali del corso e i compagni e come eseguono le attività. 
 *   **Riflettere** sul modo in cui gli input supportano gli studenti per ottenere successo, determinare le aree di crescita e dove è necessaria assistenza.
 *   **Discutere** i risultati con gli studenti e la community dell'istituto di istruzione per rafforzare le relazioni, la definizione degli obiettivi, l'autovalutazione, ottimizzare la collaborazione e migliorare i risultati.
@@ -144,12 +144,14 @@ Al momento, i dati vengono raccolti dalle aree seguenti nei team di classe:
 > I dati raccolti in Insights per l'istruzione vengono mantenuti finché l'amministratore IT non disattiva l'interruttore [Education Analytics](#turn-sds-for-insights-on-or-off) o la sottoscrizione Office per il tenant termina. La disattivazione di funzionalità specifiche in Teams non elimina i dati cronologici.
 
 ### <a name="privacy-and-security"></a>Privacy e sicurezza
-Le informazioni raccolte e visualizzate tramite Insights soddisfano [oltre 90 standard normativi e di settore](/compliance/regulatory/offering-home), tra cui [GDPR](/compliance/regulatory/gdpr) e [FERPA (Family Education Rights and Privacy Act)](/compliance/regulatory/offering-ferpa) per la sicurezza degli studenti e dei bambini e altre normative simili orientate alla privacy.
+Education Insights, come parte di Microsoft 365, rispetta le normative nazionali, regionali e specifiche del settore per la raccolta e l'uso dei dati, tra cui [GDPR](/compliance/regulatory/gdpr) e il [Family Educational Rights and Privacy Act (FERPA)](/compliance/regulatory/offering-ferpa) che protegge la privacy dei record di istruzione degli studenti.
 
 I dati appartengono all'istituto e Microsoft si limita solo a raccoglierli e ad archiviarli. Il personale Microsoft non può accedere ai dati o visualizzarli, se non per quanto consentito dalla conformità in modo controllato per gestire il servizio, ad esempio per il recupero dei dati.
 
-> [!NOTE]
-> Visitare il [Centro protezione Microsoft](https://www.microsoft.com/trust-center) per altre informazioni su come Microsoft protegge i dati dell’utente.
+> [!TIP]
+> * Visitare il [Centro protezione Microsoft](https://www.microsoft.com/trust-center) per altre informazioni su come Microsoft protegge i dati dell’utente.
+> * Visita [offerte di conformità Microsoft](/compliance/regulatory/offering-home) per scoprire in che modo Microsoft 365 aiuta l'istituto a soddisfare gli standard di conformità alle normative.
+
 
 ### <a name="performance-and-reliability"></a>Prestazioni e affidabilità
 Insights è studiato per gestire un volume elevato di dati raccolti da Teams con prestazioni e affidabilità ottimali. Microsoft non può garantire la disponibilità al 100%, ma si impegna a essere disponibile quanto più possibile per raggiungere tale obiettivo.
@@ -191,7 +193,7 @@ La visualizzazione di Insights a livello di classe come docente *non* richiede c
 Per altre informazioni, vedere [**Sincronizzare i dati del sistema informativo degli studenti (SIS) con Insights per l'istruzione**](education-insights-sis-data-sync.md).
 
 ## <a name="manage-permissions"></a>Gestione autorizzazioni
-Gli amministratori IT possono fornire le autorizzazioni per i responsabili dell'istruzione, i dirigenti distrettuali, i presidi scolastici, i dirigenti scolastici, i consulenti, i responsabili delle aree di apprendimento, i direttori dei programmi, gli assistenti sociali e gli psicologi. Ai docenti viene *automaticamente* concessa l'autorizzazione quando sono proprietari di un team di classe.
+Gli amministratori IT possono fornire autorizzazioni a responsabili dell'istruzione, dirigenti di distretto, entità scolastici, insegnanti, consulenti, responsabili delle aree di apprendimento, responsabili del programma, assistenti sociali e assistenti sociali. I docenti ricevono *automaticamente* l'autorizzazione quando sono proprietari di un team di classe.
 
 Per altre informazioni, leggere [**Gestione dell'accesso utenti a Education Insights**](education-insights-manage-access.md).
 
@@ -273,7 +275,7 @@ Se è disattivato, riattivarlo. Insights inizierà a raccogliere dati, ma per ve
 
 
 ### <a name="why-do-i-see-data-for-some-students-or-classes-not-all"></a>Perché vengono visualizzati solo i dati di alcuni studenti o classi e non tutti?
-I dati vengono raccolti solo per gli studenti *con licenza*, quindi il motivo più probabile è che si abbiano studenti guest che partecipano alle lezioni e i loro dati non vengono raccolti. È possibile che ne venga visualizzato il nome, ma senza dati.
+Raccogliamo dati solo per *studenti con licenza* , quindi il motivo più probabile è che gli studenti guest che partecipano alle lezioni e i loro dati non vengono raccolti. È possibile che venga visualizzato il nome, ma senza dati.
 
 Controllare lo stato degli studenti per assicurarsi che tutti dispongano di licenze per studenti. 
 

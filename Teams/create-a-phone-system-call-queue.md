@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
 description: Informazioni su come configurare code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams, che fornisce un messaggio di saluto, tenere musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: 4c23b03e75c9433bcf5af6d4a5aa57e81447a74d
-ms.sourcegitcommit: 823ad7fe5f7a27f681c95b2d369ce2cbe71cfdfe
+ms.openlocfilehash: 4e194a315abecdf779a2df48c7fbb7b6412693cc
+ms.sourcegitcommit: 480046a53dfb6e6cf867e1920f8fb43dda9d3774
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64691461"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64846545"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -178,7 +178,7 @@ Gli account Teams agenti devono essere impostati sulla modalità di sola Teams. 
 > 
 > Quando si utilizza **Long idle** e quando ci sono meno chiamate in coda rispetto agli agenti disponibili, solo i primi due agenti inattivi più lunghi verranno presentati con chiamate dalla coda.
 > 
-> Quando si usa **l'inattività Più lunga** , a volte un agente riceve una chiamata dalla coda poco dopo essere diventato non disponibile o se si verifica un breve ritardo nella ricezione di una chiamata dalla coda dopo essere diventato disponibile.
+> Quando si utilizza **l'inattività Più lunga** , a volte un agente riceve una chiamata dalla coda poco dopo essere diventato non disponibile o un breve ritardo nella ricezione di una chiamata dalla coda dopo essere diventato disponibile.
 > 
 > La presentazione delle chiamate in coda di chiamata agli agenti potrebbe essere in conflitto con le restrizioni di routing basato sulla posizione. In questo caso, l'agente riceverà un avviso popup di chiamata, ma non sarà in grado di rispondere alla chiamata. Questa condizione continuerà fino a quando un altro agente non sarà disponibile a rispondere alla chiamata, il chiamante si disconnette o si verifica la condizione di timeout della coda di chiamata.  
 
@@ -195,6 +195,8 @@ Se un agente rifiuta esplicitamente di ricevere chiamate, non verrà incluso nel
 > Quando l'opzione **Inattività più lunga** è selezionata come metodo di routing, il routing basato sulla presenza è obbligatorio e abilitato automaticamente anche se l'interruttore routing basato sulla presenza sarà **disattivato** e disattivato.
 >
 > Se il routing basato sulla presenza non è abilitato e ci sono più chiamate in coda, il sistema presenterà contemporaneamente queste chiamate agli agenti indipendentemente dal loro stato presenza. Ciò comporta più notifiche di chiamata agli agenti, in particolare se alcuni agenti non rispondono alla chiamata iniziale presentata loro.
+>
+> Quando si usa il **routing basato sulla presenza** , a volte un agente riceve una chiamata dalla coda poco dopo la non disponibilità o un breve ritardo nella ricezione di una chiamata dalla coda dopo essere diventato disponibile.
 > 
 > Gli agenti che usano il client Skype for Business non sono inclusi nell'elenco di routing delle chiamate quando è abilitato il routing basato sulla presenza. Se ci sono agenti che usano Skype for Business, non abilitare il routing delle chiamate basato sulla presenza.
 
