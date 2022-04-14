@@ -21,16 +21,16 @@ ms.collection:
 - m365solution-scenario
 ms.reviewer: ''
 description: Informazioni su come gestire l'app Bookings in Teams per gli utenti dell'organizzazione.
-ms.openlocfilehash: 98834770d48e0fd35f146b155e4970df7ddaaba3
-ms.sourcegitcommit: 1e8cff687b12348d4ecc538084ab57bbba23b523
+ms.openlocfilehash: aab7ce7a4813d851574f9a5796f5ce21d44774ff
+ms.sourcegitcommit: 68162a8c9dee9a27af596353baabeda9b8fa64f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64703612"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64853067"
 ---
 # <a name="manage-the-bookings-app-in-microsoft-teams"></a>Gestire l'app Bookings in Microsoft Teams
 
-L'app Bookings in Microsoft Teams offre un modo semplice per pianificare appuntamenti di persona e virtuali. Ad esempio, visite mediche, consulenze finanziarie, interviste, supporto tecnico e orari di ufficio per l'istruzione. Per altre informazioni, vedi [Visite virtuali con Teams e l'app Bookings](expand-teams-across-your-org/bookings-virtual-visits.md).
+L'app Bookings in Microsoft Teams offre un modo semplice per pianificare appuntamenti di persona e virtuali. Ad esempio, visite mediche, consulenze finanziarie, interviste, supporto tecnico e orari di ufficio per l'istruzione. Per altre informazioni, vedi [Appuntamenti virtuali con Teams e l'app Bookings](expand-teams-across-your-org/bookings-virtual-visits.md).
 
 Gli scheduler possono gestire più calendari e comunicazioni di reparto e del personale con partecipanti interni ed esterni, da un'unica esperienza. Gli appuntamenti virtuali si svolgono tramite riunioni Microsoft Teams che offrono solide funzionalità di videoconferenza.
 
@@ -98,7 +98,7 @@ Per inviare feedback, seleziona l'opzione **?** nella parte inferiore della barr
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Gestire l'esperienza di partecipazione per Teams visite virtuali nei browser](expand-teams-across-your-org/browser-join.md)
+[Gestire l'esperienza di partecipazione per Teams appuntamenti virtuali nei browser](expand-teams-across-your-org/browser-join.md)
 
 
   [Documentazione di Bookings per gli utenti finali](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?ui=en-US&rs=en-US&ad=US#PickTab=Bookings)

@@ -1,5 +1,5 @@
 ---
-title: Visite virtuali in Teams - Report di amministrazione del connettore EHR
+title: Appuntamenti virtuali in Teams - Report di amministrazione del connettore EHR
 author: SerdarSoysal
 ms.author: serdars
 manager: serdars
@@ -22,33 +22,33 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ansantam
-description: Visualizzare i report di amministrazione per Teams visite ai connettori EHR
-ms.openlocfilehash: 3f85d48493822db3a26851d281f7a5fddf813960
-ms.sourcegitcommit: 2e8daa3511cd198b3e0d43b153dd37a59cb21692
+description: Visualizzare i report di amministrazione per Teams appuntamenti del connettore EHR.
+ms.openlocfilehash: 021c80aef6b1581ae7266e5caeff3782cbbb8f26
+ms.sourcegitcommit: 68162a8c9dee9a27af596353baabeda9b8fa64f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2022
-ms.locfileid: "62763301"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64853197"
 ---
-# <a name="microsoft-teams-ehr-connector-admin-reports"></a>Microsoft Teams di amministrazione del connettore EHR
+# <a name="microsoft-teams-ehr-connector-admin-reports"></a>report di amministrazione del connettore Microsoft Teams EHR
 
-La Microsoft Teams di amministrazione del connettore EHR (Electronic Health Record) offre una visualizzazione rapida e facile da leggere dei dati di utilizzo.
+La finestra di dialogo del report di amministrazione del connettore EHR (Electronic Health Record) di Microsoft Teams offre una visualizzazione rapida e facile da leggere dei dati di utilizzo.
 
-È possibile visualizzare il report di Teams di amministrazione del connettore EHR nel dashboard dell'interfaccia di amministrazione di Microsoft Teams e visualizzare la finestra di dialogo.
+Per visualizzare il report di amministrazione del connettore Teams EHR, passare al dashboard dell'interfaccia di amministrazione di Microsoft Teams e visualizzare la finestra di dialogo.
 
-Accedere al report dal dashboard dell'Microsoft Teams di amministrazione.
+Accedere al report dal dashboard dell'interfaccia di amministrazione di Microsoft Teams.
 
- ![finestra di dialogo delle allocazioni e dei limiti di Visite virtuali.](../../media/admin-connector-report.png)
+ ![una finestra di dialogo di assegnazioni e limiti di appuntamenti virtuali.](../../media/admin-connector-report.png)
 
 La finestra di dialogo fornisce i dati seguenti:
 
 - Limite superato
 - Allocazione rimanente
-- Visite completate
+- Appuntamenti completati
 
-È possibile usare la finestra di dialogo report per acquistare altre visite virtuali.
+È possibile usare la finestra di dialogo del report per acquistare altri appuntamenti virtuali.
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Visite virtuali con Teams - Integrazione in Cerner EHR](ehr-admin-cerner.md)
-- [Visite virtuali con Teams - Integrazione in Epic EHR](ehr-admin.md)
+- [Appuntamenti virtuali con Teams - Integrazione in Cerner EHR](ehr-admin-cerner.md)
+- [Appuntamenti virtuali con Teams - Integrazione in Epic EHR](ehr-admin.md)

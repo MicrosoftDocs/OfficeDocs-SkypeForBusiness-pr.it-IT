@@ -1,5 +1,5 @@
 ---
-title: Visite virtuali con Microsoft Teams e l'app Bookings
+title: Appuntamenti virtuali con Microsoft Teams e l'app Bookings
 author: lanachin
 ms.author: v-lanachin
 manager: samanro
@@ -20,15 +20,15 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 ms.reviewer: ''
-description: Informazioni su come pianificare, gestire e condurre visite virtuali usando l'app Bookings in Teams.
-ms.openlocfilehash: 45062831826ae0dee558f9c3541390308fb348f9
-ms.sourcegitcommit: 1e8cff687b12348d4ecc538084ab57bbba23b523
+description: Informazioni su come pianificare, gestire e condurre appuntamenti virtuali con l'app Bookings in Teams.
+ms.openlocfilehash: 3a69140bd0a02adb879cc0914d7e5c4703623907
+ms.sourcegitcommit: 68162a8c9dee9a27af596353baabeda9b8fa64f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64703702"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64853207"
 ---
-# <a name="virtual-visits-with-microsoft-teams-and-the-bookings-app"></a>Visite virtuali con Microsoft Teams e l’app Bookings
+# <a name="virtual-appointments-with-microsoft-teams-and-the-bookings-app"></a>Appuntamenti virtuali con Microsoft Teams e l'app Bookings
 
 ## <a name="overview"></a>Panoramica
 
@@ -40,15 +40,17 @@ Gli appuntamenti virtuali si svolgono attraverso riunioni Microsoft Teams, che o
 
 Ogni appuntamento virtuale include un collegamento Teams riunione che viene inviato ai partecipanti tramite posta elettronica, dove possono partecipare facilmente da un Web browser o in Teams su qualsiasi dispositivo. I promemoria automatici tramite posta elettronica consentono di ridurre la non-mostra e di migliorare il coinvolgimento dei clienti e dei clienti.
 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
+
 Con Bookings, ottieni un'esperienza su misura per il tuo settore. Ecco alcuni esempi di come usarlo nell'organizzazione:
 
 |Industria | Esempi |
 |---------|---------|
-|Servizi finanziari    |  Visite virtuali per vendite e servizi remoti<br/>Pianificare e gestire appuntamenti per responsabili delle relazioni bancarie, consulenti finanziari e rettificatori di crediti, solo per citarne alcuni, per servire i clienti con maggiore efficienza e praticità.  |
+|Servizi finanziari    |  Appuntamenti virtuali per vendite e servizi remoti<br/>Pianificare e gestire appuntamenti per responsabili delle relazioni bancarie, consulenti finanziari e rettificatori di crediti, solo per citarne alcuni, per servire i clienti con maggiore efficienza e praticità.  |
 |Commercio al dettaglio   | Accessori virtuali e consulenze <br/>Pianifica e gestisci appuntamenti per i tuoi addetti alle vendite, gli esperti di prodotti e i consulenti di progettazione per condurre raccordi virtuali e consulenze con i clienti.   |
-|Sanità   |  Visite virtuali per l'assistenza ai pazienti <br/>Pianificare e gestire appuntamenti per i membri del team di assistenza per incontrare pazienti o altri operatori sanitari per discutere dell'assistenza medica.   |
+|Sanità   |  Appuntamenti virtuali per la cura dei pazienti <br/>Pianificare e gestire appuntamenti per i membri del team di assistenza per incontrare pazienti o altri operatori sanitari per discutere dell'assistenza medica.   |
 
-Questo articolo offre una panoramica su come pianificare, gestire e condurre visite virtuali usando l'app Bookings in Teams.
+Questo articolo offre una panoramica su come pianificare, gestire e condurre appuntamenti virtuali usando l'app Bookings in Teams.
 
 ## <a name="before-you-get-started"></a>Nozioni preliminari
 
@@ -78,38 +80,38 @@ L'app Bookings si integra con Outlook. Dopo aver aggiunto personale, sarà possi
 
 ### <a name="create-appointment-types"></a>Creare tipi di appuntamento
 
-Creare tipi di appuntamento specifici per rappresentare i servizi offerti dall'organizzazione e personalizzare l'esperienza di prenotazione. Gli scheduler possono quindi usare il tipo di appuntamento per pianificare una visita.
+Creare tipi di appuntamento specifici per rappresentare i servizi offerti dall'organizzazione e personalizzare l'esperienza di prenotazione. Gli utilità di pianificazione possono quindi usare il tipo di appuntamento per pianificare un appuntamento.
 
 Nel calendario delle prenotazioni passare ad **Altre opzioni** (...) > **Impostazioni**, selezionare **Tipi di appuntamento** e quindi Selezionare **Aggiungi tipo di appuntamento**. Immettere un nome&mdash;, ad esempio apertura conto, rinnovo della prescrizione, consulenza per il prestito, preparazione&mdash; fiscalee altre informazioni e impostazioni desiderate.
 
 Le informazioni aggiunte vengono incluse nel messaggio di conferma inviato ai partecipanti ogni volta che viene prenotato questo tipo di appuntamento. È possibile impostare promemoria tramite posta elettronica e altre opzioni, ad esempio se i partecipanti possono [partecipare da un browser desktop o per dispositivi mobili](browser-join.md) senza dover scaricare Teams.
 
-Gli amministratori Bookings possono collegare fino a quattro moduli che i partecipanti possono compilare ogni volta che viene prenotato questo tipo di appuntamento. Ad esempio, è possibile richiedere ai partecipanti di completare un modulo di registrazione prima che partecipino a una visita. Per collegare un modulo, scegliere **Collega un modulo**. Immettere l'URL del modulo e quindi scegliere **Collegamento**. Se è la prima volta che si collega una maschera, viene chiesto di creare un gruppo di Microsoft 365 per archiviare le maschere. Scegliere **Crea gruppo** per creare il gruppo. Questa operazione deve essere eseguita una sola volta per il calendario delle prenotazioni.
+Gli amministratori Bookings possono collegare fino a quattro moduli che i partecipanti possono compilare ogni volta che viene prenotato questo tipo di appuntamento. Ad esempio, è possibile richiedere ai partecipanti di completare un modulo di registrazione prima che partecipino a un appuntamento. Per collegare un modulo, scegliere **Collega un modulo**. Immettere l'URL del modulo e quindi scegliere **Collegamento**. Se è la prima volta che si collega una maschera, viene chiesto di creare un gruppo di Microsoft 365 per archiviare le maschere. Scegliere **Crea gruppo** per creare il gruppo. Questa operazione deve essere eseguita una sola volta per il calendario delle prenotazioni.
 
 Quando si usano i moduli, tenere presente che:
 
 - Per apportare modifiche a un modulo già collegato a un tipo di appuntamento, selezionare il modulo nel tipo di appuntamento o nel gruppo di Microsoft 365 in [https://forms.office.com](https://forms.office.com).
 - Il caricamento di file in moduli che contengono una [domanda di caricamento di file](https://support.microsoft.com/office/add-questions-that-allow-for-file-uploads-6a75a658-c02b-450e-b119-d068f3cba4cf) è supportato quando tutti i partecipanti provengono dalla stessa organizzazione.
 
-Quando un'utilità di pianificazione usa il tipo di appuntamento per pianificare una visita, può quindi scegliere di includere il modulo, rimuoverlo o aggiungere altri moduli collegati al tipo di appuntamento. I partecipanti devono compilare il modulo prima di partecipare alla visita.
+Quando un'utilità di pianificazione usa il tipo di appuntamento per pianificare un appuntamento, può quindi scegliere di includere il modulo, rimuoverlo o aggiungere altri moduli collegati al tipo di appuntamento. I partecipanti devono compilare il modulo prima di partecipare all'appuntamento.
 
 Per altre informazioni, vedere [Creare un tipo di appuntamento](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887).
 
-## <a name="schedule-a-visit"></a>Pianifica una visita
+## <a name="schedule-an-appointment"></a>Pianificare un appuntamento 
 
 Nel calendario delle prenotazioni selezionare **Nuova prenotazione**. Selezionare un tipo di appuntamento e quindi inserire le informazioni pertinenti.
 
 Sono incluse le informazioni di contatto dei partecipanti, il membro del personale che fornirà il servizio, le note interne che possono essere visualizzate solo dal personale, i promemoria tramite posta elettronica e se il partecipante può partecipare da un browser per dispositivi mobili. Se un modulo è collegato al tipo di appuntamento, è possibile scegliere di includerlo, rimuoverlo o aggiungere altri moduli collegati.
 
-La conferma inviata al partecipante include il collegamento alla riunione e un allegato in modo che possa aggiungere l'appuntamento virtuale al proprio calendario. Il personale riceve anche un messaggio e-mail di conferma e un invito alla riunione. Se nell'appuntamento è stato incluso un modulo, Bookings amministratori e utilità di pianificazione possono verificare se il modulo è stato completato dal partecipante prima della visita e possono visualizzare la risposta del partecipante.
+La conferma inviata al partecipante include il collegamento alla riunione e un allegato in modo che possa aggiungere l'appuntamento virtuale al proprio calendario. Il personale riceve anche un messaggio e-mail di conferma e un invito alla riunione. Se nell'appuntamento è stato incluso un modulo, Bookings amministratori e programmatori possono verificare se il modulo è stato completato dal partecipante prima dell'appuntamento e possono visualizzare la risposta del partecipante.
 
 Per altre informazioni, vedere [Pianificare una prenotazione nell'app Teams Bookings](https://support.microsoft.com/office/schedule-a-booking-in-the-teams-bookings-app-e275049d-0d0f-4161-8526-461a9f29439f).
 
-## <a name="conduct-a-visit"></a>Conduci una visita
+## <a name="conduct-an-appointment"></a>Condurre un appuntamento
 
 Nel calendario Teams o Outlook passare alla prenotazione e quindi selezionare **Partecipa** o il collegamento Teams riunione. Controlla le impostazioni audio e video e quindi seleziona **Partecipa ora**. Per altre informazioni, vedere [Condurre un appuntamento Bookings](https://support.microsoft.com/office/conduct-a-bookings-appointment-a86a4007-e26c-4909-9893-f7036e2747cd).
 
-## <a name="monitor-visits-and-get-real-time-status-updates"></a>Monitorare le visite e ottenere aggiornamenti di stato in tempo reale
+## <a name="monitor-appointments-and-get-real-time-status-updates"></a>Monitorare gli appuntamenti e ottenere aggiornamenti di stato in tempo reale
 
 La [visualizzazione coda](https://support.microsoft.com/office/queue-view-in-bookings-3eea2840-a1e0-4bcd-8e09-d3cf51c184d6) in Bookings offre al personale una dashboard per monitorare tutti gli appuntamenti virtuali della giornata, con aggiornamenti in tempo reale. Per visualizzare la coda, vai alla scheda **Coda** in Bookings.
 
@@ -128,15 +130,15 @@ L'app Web Bookings offre funzionalità aggiuntive. Ad esempio, è possibile pubb
 
 Per altre informazioni, vedi [Microsoft Bookings](/microsoft-365/bookings/bookings-overview).
 
-## <a name="get-insight-into-virtual-visits-usage"></a>Ottenere informazioni dettagliate sull'utilizzo delle visite virtuali
+## <a name="get-insight-into-virtual-appointments-usage"></a>Ottenere informazioni dettagliate sull'utilizzo degli appuntamenti virtuali
 
-Il [report Utilizzo delle visite virtuali](../teams-analytics-and-reports/virtual-visits-usage-report.md) nell'interfaccia di amministrazione di Microsoft Teams offre agli amministratori una panoramica di Teams'attività Visite virtuali nell'organizzazione. Il report mostra analisi dettagliate per gli appuntamenti virtuali, incluse le visite Bookings.
+Il [report Sull'utilizzo delle visite virtuali](../teams-analytics-and-reports/virtual-visits-usage-report.md) nell'interfaccia di amministrazione di Microsoft Teams offre agli amministratori una panoramica di Teams attività degli appuntamenti virtuali nell'organizzazione. Il report mostra analisi dettagliate per gli appuntamenti virtuali, inclusi Bookings appuntamenti.
 
-È possibile visualizzare le metriche principali, ad esempio il tempo di attesa della sala di attesa e la durata della visita. Usare queste informazioni per ottenere informazioni approfondite sulle tendenze di utilizzo e ottimizzare le visite virtuali per ottenere risultati aziendali migliori.
+È possibile visualizzare metriche chiave come il tempo di attesa della sala di attesa e la durata dell'appuntamento. Usare queste informazioni per ottenere informazioni approfondite sulle tendenze di utilizzo e ottimizzare gli appuntamenti virtuali per ottenere risultati aziendali migliori.
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Gestire l'esperienza di partecipazione per Teams visite virtuali nei browser](browser-join.md)
+- [Gestire l'esperienza di partecipazione per Teams appuntamenti virtuali nei browser per dispositivi mobili](browser-join.md)
 
 - [report sull'utilizzo delle visite virtuali Teams](../teams-analytics-and-reports/virtual-visits-usage-report.md)
 
