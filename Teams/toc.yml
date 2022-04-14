@@ -369,10 +369,6 @@ items:
                 href: guest-experience.md
               - name: Attivare o disattivare l'accesso guest
                 href: set-up-guests.md
-              - name: Visualizzare gli utenti guest in un team
-                href: view-guests.md
-              - name: Modificare le informazioni relative agli utenti guest
-                href: edit-guests-information.md
       - name: Monitorare e gestire la qualità delle chiamate
         items:
           - name: Monitorare e migliorare la qualità delle chiamate
@@ -1483,7 +1479,7 @@ items:
     items:
       - name: Panoramica
         href: deploy-apps-microsoft-teams-landing-page.md
-      - name: Gestire le app di esempio fornite da Microsoft
+      - name: Gestire le app fornite da Microsoft
         items:
           - name: Gestire l'app Bookings
             href: bookings-app-admin.md
