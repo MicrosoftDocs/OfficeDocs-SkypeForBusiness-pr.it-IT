@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 27a3ed1d46626cb5f46aa3279246953b1dbe9a23
-ms.sourcegitcommit: 1129841e68e927fe7cc31de3ad63a3e9247253cd
+ms.openlocfilehash: d17409a09cbadc535e3b7971d6224b4e2fcb678b
+ms.sourcegitcommit: 9bee7cb9433bfc687387647a102f814dc52c8591
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62363122"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64839037"
 ---
 # <a name="it-admin-guide-to-reflect-in-microsoft-teams"></a>Guida per gli amministratori a Reflect in Microsoft Teams
 
@@ -31,14 +31,20 @@ Questa app utilizza emoji e granularità emotiva basata sulla ricerca per suppor
 
 
 ## <a name="privacy-and-security"></a>Privacy e sicurezza
-Reflect applica gli stessi standard di sicurezza e riservatezza di Education Insights per proteggere i dati sensibili degli studenti.
+Reflect applica gli stessi standard di sicurezza e riservatezza di [Insights per l'istruzione](class-insights.md) per proteggere i dati sensibili degli studenti.
 
-Le informazioni raccolte e visualizzate tramite Reflect soddisfano [oltre 90 standard normativi e di settore](/compliance/regulatory/offering-home), tra cui [GDPR](/compliance/regulatory/gdpr) e [FERPA (Family Education Rights and Privacy Act)](/compliance/regulatory/offering-ferpa) per la sicurezza degli studenti e dei bambini e altre normative simili orientate alla privacy.
+Riflettere, come parte di Microsoft 365, rispetta le normative nazionali, regionali e specifiche del settore per la raccolta e l'uso dei dati, tra cui [GDPR](/compliance/regulatory/gdpr) e il [Family Educational Rights and Privacy Act (FERPA)](/compliance/regulatory/offering-ferpa) che protegge la privacy dei record di istruzione degli studenti.
+
+I dati appartengono all'istituto e Microsoft si limita solo a raccoglierli e ad archiviarli. Il personale Microsoft non può accedere ai dati o visualizzarli, se non per quanto consentito dalla conformità in modo controllato per gestire il servizio, ad esempio per il recupero dei dati.
 
 Gli studenti *non vedono mai* i nomi degli altri studenti, ma solo il modo in cui rispondono.  Anche se possono vedere la distribuzione delle risposte, *non possono* vedere i nomi associati a ogni riflessione. 
 
 > [!NOTE]
 > Se rispondono meno di cinque studenti, nessun dato viene mostrato agli studenti. In questo modo viene minimizzata la capacità degli studenti di identificare le risposte dei compagni.
+
+> [!TIP]
+> * Visitare il [Centro protezione Microsoft](https://www.microsoft.com/trust-center) per altre informazioni su come Microsoft protegge i dati dell’utente.
+> * Visita [offerte di conformità Microsoft](/compliance/regulatory/offering-home) per scoprire in che modo Microsoft 365 aiuta l'istituto a soddisfare gli standard di conformità alle normative.
 
 ## <a name="data-collection-and-storage"></a>Raccolta e archiviazione dei dati
 I dati appartengono all'istituto di istruzione, e Microsoft si limita solo a raccoglierli e ad archiviarli. Il personale Microsoft non può accedere ai dati o visualizzarli, se non per quanto consentito dalla conformità in modo controllato per gestire il servizio, ad esempio per il recupero dei dati.
@@ -75,4 +81,4 @@ Dopo aver abilitato Reflect, i docenti entrano nella classe e selezionano **Nuov
 > È anche possibile individuare l'app Insights tramite questo collegamento: [https://aka.ms/getReflect](https://aka.ms/getReflect)
 
 > [!TIP]
-> Per altri dettagli, visita la [pagina dell'assistenza di Reflect](https://support.microsoft.com/topic/e9198f62-7860-4532-821f-53ef14afa79a). Questa pagina fornisce istruzioni sia per i docenti che per gli studenti, e descrive come creare il primo check-in di Reflect.
+> Per altri dettagli, visitare [pagina del supporto tecnico Reflect](https://support.microsoft.com/topic/e9198f62-7860-4532-821f-53ef14afa79a). Questa pagina fornisce istruzioni sia per i docenti che per gli studenti, e descrive come creare il primo check-in di Reflect.

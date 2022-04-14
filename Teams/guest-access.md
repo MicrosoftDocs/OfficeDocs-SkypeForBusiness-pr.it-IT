@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: L'accesso guest in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali.
-ms.openlocfilehash: 99a17d521f0d244083c527803916bf8946730789
-ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
+ms.openlocfilehash: d7f850855ab131267b20bae07b015127777a21f4
+ms.sourcegitcommit: 9bee7cb9433bfc687387647a102f814dc52c8591
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63711450"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "64839067"
 ---
 # <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 
@@ -44,7 +44,7 @@ L'esperienza guest presenta limitazioni per impostazione predefinita. Per un ele
 
 Per confrontare l'accesso esterno (federazione) con l'accesso guest e decidere quale usare, leggere [Comunicare con utenti di altre organizzazioni in Teams](communicate-with-users-from-other-organizations.md).
 
-I canali condivisi offrono un'alternativa all'accesso guest, consentendo di invitare persone esterne all'organizzazione senza la necessità di un account guest in Azure AD. Per confrontare l'accesso guest con i canali condivisi, vedere [Pianificare la collaborazione esterna](/microsoft-365/solutions/plan-external-collaboration).
+I canali condivisi offrono un'alternativa all'accesso guest, consentendo di invitare persone esterne all'organizzazione senza richiedere un account guest in Azure AD. Per confrontare l'accesso guest con i canali condivisi, vedere [Pianificare la collaborazione esterna](/microsoft-365/solutions/plan-external-collaboration).
 
 Per configurare l'accesso guest, vedere [Collaborare con gli utenti guest in un team](/microsoft-365/solutions/collaborate-as-team). 
 
@@ -59,12 +59,6 @@ L'accesso guest in Teams richiede la configurazione di altre impostazioni in Mic
 > Se come amministratori si sperimentano problemi con l'accesso guest in Microsoft Teams, si può selezionare **Esegui test** in basso, per popolare la diagnostica di Accesso guest nell'interfaccia di Amministrazione Microsoft 365. Questi test verificheranno la configurazione e consiglieranno rapidamente i passaggi da intraprendere per abilitare l'accesso guest per il tenant.
 >> [!div class="nextstepaction"]
 >> [Esegui Test: accesso guest](https://aka.ms/TeamsGuestAccessDiagDMC)
-
-### <a name="turning-guest-access-off"></a>Disattivazione dell’accesso guest
-
-Se si disattiva l'accesso guest in Teams, gli utenti guest esistenti perdono l'accesso al proprio team. Tuttavia, non vengono rimossi dal team. Sono ancora visibili ai membri del team e possono essere @menzionati. Se si riattiva l'accesso guest di Teams, l'accesso verrà recuperato.
-
-Se si ha intenzione di lasciare disattivato l'accesso guest, si consiglia di informare i proprietari dei team di rimuovere manualmente gli account guest dai team. Anche se questi guest non hanno accesso, avere i loro account visibili nel team potrebbe creare confusione per altre persone del team.
 
 ## <a name="how-a-guest-gets-added-to-a-team"></a>Come viene aggiunto un guest a un team
 
