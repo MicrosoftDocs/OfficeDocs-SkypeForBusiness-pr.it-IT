@@ -1,5 +1,5 @@
 ---
-title: Gestire l'esperienza di partecipazione per Teams visite virtuali nei browser
+title: Gestire l'esperienza di partecipazione per Teams appuntamenti virtuali nei browser
 author: lanachin
 ms.author: v-lanachin
 manager: samanro
@@ -20,15 +20,15 @@ ms.collection:
 - m365solution-healthcare
 - m365solution-scenario
 ms.reviewer: hafarmer
-description: Informazioni sull'esperienza di partecipazione per Teams visite virtuali nei browser.
-ms.openlocfilehash: 276e33b16972f0543566014adf264fd12e45c4ae
-ms.sourcegitcommit: 1e8cff687b12348d4ecc538084ab57bbba23b523
+description: Informazioni sull'esperienza di partecipazione per Teams appuntamenti virtuali nei browser.
+ms.openlocfilehash: 418186734befa66f145ca56f883605715d83aa30
+ms.sourcegitcommit: 68162a8c9dee9a27af596353baabeda9b8fa64f3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64703745"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64853307"
 ---
-# <a name="manage-the-join-experience-for-teams-virtual-visits-on-browsers"></a>Gestire l'esperienza di partecipazione per Teams visite virtuali nei browser
+# <a name="manage-the-join-experience-for-teams-virtual-appointments-on-browsers"></a>Gestire l'esperienza di partecipazione per Teams appuntamenti virtuali nei browser
 
 Microsoft Teams consente agli utenti di partecipare facilmente agli appuntamenti virtuali senza dover scaricare Teams. Per un'esperienza più fluida, i partecipanti possono partecipare a appuntamenti come visite mediche e consulenze finanziarie da un browser desktop o per dispositivi mobili. I partecipanti non devono installare l'app Teams nel proprio dispositivo.
 
@@ -68,7 +68,7 @@ Non è necessaria alcuna configurazione da parte dell'utente o del personale.
 
 **Integrazione con Cerner EHR**: il connettore Teams EHR supporta i pazienti che partecipano a appuntamenti virtuali tramite un collegamento nel messaggio di testo SMS. Al momento dell'appuntamento, i pazienti possono partecipare toccando il collegamento nell'SMS e Teams si apre in un browser.
 
-**Integrazione con Epic EHR**: il connettore Teams EHR supporta i pazienti che partecipano a appuntamenti virtuali tramite il Web di MyChart e i dispositivi mobili. Al momento dell'appuntamento, i pazienti possono avviare la visita da MyChart usando il pulsante **Inizia visita virtuale** e Teams si apre in un browser.
+**Integrazione con Epic EHR**: il connettore Teams EHR supporta i pazienti che partecipano a appuntamenti virtuali tramite il Web di MyChart e i dispositivi mobili. Al momento dell'appuntamento, i pazienti possono iniziare l'appuntamento da Grafico personale usando il pulsante **Inizia visita virtuale** e Teams si apre in un browser.
 
 ## <a name="supported-browsers"></a>Browser supportati
 
@@ -88,12 +88,12 @@ Ecco i browser attualmente supportati. Se non diversamente indicato, è supporta
 
 ## <a name="things-to-consider"></a>Aspetti da considerare
 
-Il membro del personale che conduce la visita può condividere lo schermo dal proprio desktop, dispositivo mobile o client Web Teams con un partecipante che partecipa da un browser desktop o per dispositivi mobili. Tuttavia, i partecipanti non possono condividere lo schermo da un browser desktop o per dispositivi mobili.
+Il membro del personale che svolge l'appuntamento può condividere lo schermo dal proprio desktop, dispositivo mobile o client Web Teams con un partecipante che partecipa da un browser desktop o per dispositivi mobili. Tuttavia, i partecipanti non possono condividere lo schermo da un browser desktop o per dispositivi mobili.
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Visite virtuali con Teams e l'app Bookings](bookings-virtual-visits.md)
+- [Appuntamenti virtuali con Teams e l'app Bookings](bookings-virtual-visits.md)
 - [Creare un tipo di appuntamento Bookings](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887)
 - [Partecipare a un appuntamento di Bookings come partecipante](https://support.microsoft.com/office/join-a-bookings-appointment-as-an-attendee-95cea12d-2220-421f-a663-6efb20913c7f)
-- [Visite virtuali con Teams - Integrazione in Cerner EHR](healthcare/ehr-admin-cerner.md)
-- [Visite virtuali con Teams - Integrazione in Epic EHR](healthcare/ehr-admin.md)
+- [Appuntamenti virtuali con Teams - Integrazione in Cerner EHR](healthcare/ehr-admin-cerner.md)
+- [Appuntamenti virtuali con Teams - Integrazione in Epic EHR](healthcare/ehr-admin.md)
