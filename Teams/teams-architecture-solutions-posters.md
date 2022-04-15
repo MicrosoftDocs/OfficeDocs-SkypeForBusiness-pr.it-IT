@@ -16,12 +16,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: "Riepilogo: informazioni sull'architettura logica dei servizi di produttività in Microsoft 365, con Microsoft Teams. Sono disponibili inoltre informazioni sulle soluzioni voce per Teams."
-ms.openlocfilehash: ec608f192c08a33b9505008eacb6f6549780e7bd
-ms.sourcegitcommit: abe942c294ed5fca70efdf039d38d611b9c21fe9
+ms.openlocfilehash: 6ac6f7f88ec838b445d382dbc6ba8d5ee4ec1bcf
+ms.sourcegitcommit: 204e4654f2c3977db260670f3ee1784d1ad6ed17
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2022
-ms.locfileid: "63564748"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "64866191"
 ---
 # <a name="microsoft-teams-it-architecture-and-voice-solutions-posters"></a>Poster di soluzioni voce e architettura IT di Microsoft Teams
 
@@ -37,7 +37,7 @@ Questa serie di immagini offre una visualizzazione dell'architettura logica di s
 
 Ecco cosa devono sapere gli architetti IT sui gruppi di Microsoft 365. Queste immagini mostrano dettagliatamente i diversi gruppi, come vengono creati e gestiti, e alcuni consigli di governance.
 
-[![Immagine di scorrimento per infografica dei gruppi.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.pdf)  <br/> [PDF](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx)
+[![Immagine di scorrimento per infografica dei gruppi.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups-architecture-thumb.png)](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf)  <br/> [PDF](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.pdf) | [Visio](https://download.microsoft.com/download/6/3/0/6309218f-a169-4f2d-af4c-2fe49e30ba17/msft-m365-groups.vsdx)
 
 ## <a name="microsoft-voice-solutions"></a>Soluzioni voce Microsoft
 
