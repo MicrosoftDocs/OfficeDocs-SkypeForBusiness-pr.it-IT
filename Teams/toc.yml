@@ -1683,11 +1683,11 @@ items:
         items:
           - name: Guida introduttiva a Teams per le organizzazioni del settore sanitario
             href: expand-teams-across-your-org/healthcare/teams-in-hc.md
-          - name: Visite virtuali
+          - name: Appuntamenti virtuali
             items:
-              - name: Visite virtuali con Teams - Integrazione in Cerner EHR
+              - name: Appuntamenti virtuali con Teams - Integrazione in Cerner EHR
                 href: expand-teams-across-your-org/healthcare/ehr-admin-cerner.md
-              - name: Visite virtuali con Teams - Integrazione in Epic EHR
+              - name: Appuntamenti virtuali con Teams - Integrazione in Epic EHR
                 href: expand-teams-across-your-org/healthcare/ehr-admin.md
               - name: Sincronizzare report di amministrazione EHR
                 href: expand-teams-across-your-org/healthcare/ehr-admin-reports.md

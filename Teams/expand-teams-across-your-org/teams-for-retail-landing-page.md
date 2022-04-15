@@ -20,12 +20,12 @@ searchScope:
 - Microsoft Cloud for Retail
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f611afe731bc178759427efff2fe35d925ca0def
-ms.sourcegitcommit: 42c355d3f4bbe52c063b8f2119baefc0b88f9563
+ms.openlocfilehash: 2c20137aab3299f4151b6ef3ee7906ec39cf4baf
+ms.sourcegitcommit: 68162a8c9dee9a27af596353baabeda9b8fa64f3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403967"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64853187"
 ---
 # <a name="get-started-with-teams-for-retail"></a>Introduzione a Teams per la vendita al dettaglio
 
@@ -74,7 +74,7 @@ L'app Bookings in Microsoft Teams offre alle organizzazioni un modo semplice per
 
 **Caratteristiche e app principali:** riunioni, Bookings
 
-Altre informazioni: [visite virtuali con Microsoft Teams e l'app Bookings](bookings-virtual-visits.md)
+Altre informazioni: [appuntamenti virtuali con Microsoft Teams e l'app Bookings](bookings-virtual-visits.md)
 
 ### <a name="simplify-business-processes"></a>Semplifica i processi aziendali
 
