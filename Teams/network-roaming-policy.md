@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per i criteri di roaming di rete di Teams.
-ms.openlocfilehash: 684bb9f30abb6a474582d83614d0e259ed44b21a
-ms.sourcegitcommit: 4af3638637456f21bc97f510ed9d2f7ff2da07e2
+ms.openlocfilehash: c26cdec0fc41e40a9c3eac7d0324050740cf05ef
+ms.sourcegitcommit: 68162a8c9dee9a27af596353baabeda9b8fa64f3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2022
-ms.locfileid: "63660724"
+ms.lasthandoff: 04/14/2022
+ms.locfileid: "64853237"
 ---
 # <a name="manage-video-and-media-settings-with-the-network-roaming-policy"></a>Gestire le impostazioni video e multimediali con i criteri di roaming di rete
 
@@ -51,13 +51,13 @@ TeamsNetworkRoamingPolicy contiene i parametri seguenti:
 Dopo aver configurato il criterio, assegnarlo a uno o più siti di rete usando il cmdlet [Set-CsTenantNetworkSite](/powershell/module/skype/set-cstenantnetworksite) nel modo seguente:
 
 ```PowerShell
- Set-CsTenantNetworkSite -NetworkRoamingPolicy
+ Set-CsTenantNetworkSite -Identity Burlington -NetworkRoamingPolicy LowBandwidthSite
  ``` 
  
  Per rimuovere un criterio da un sito di rete, usare il cmdlet seguente:
  
  ```PowerShell
- Set-CsTenantNetworkSite -NetworkRoamingPolicy $null
+ Set-CsTenantNetworkSite -Identity Burlington -NetworkRoamingPolicy $null
  ```
 
 Per abilitare i criteri di roaming di rete per gli utenti che non sono abilitati per VoIP aziendale, è necessario abilitare anche l'impostazione AllowNetworkConfigurationSettingsLookup in TeamsMeetingPolicy. Questa opzione è disattivata per impostazione predefinita.
