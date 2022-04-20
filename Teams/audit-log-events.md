@@ -12,15 +12,15 @@ f1.keywords:
 - NOCSH
 ms.reviewer: anwara
 search.appverid: MET150
-description: Informazioni su come recuperare Microsoft Teams dati dal log di controllo nel Centro conformità Microsoft 365.
+description: Informazioni su come recuperare Microsoft Teams dati dal log di controllo nel portale di conformità di Microsoft Purview.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cdca912b77969e4157af641076dc683c3d17921c
-ms.sourcegitcommit: 480046a53dfb6e6cf867e1920f8fb43dda9d3774
+ms.openlocfilehash: 744a18f2a8f7f2ed406853ef7efbc9842d0096f5
+ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "63711330"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64922637"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Cercare gli eventi nel log di controllo in Microsoft Teams
 
@@ -42,7 +42,7 @@ Per un elenco completo delle attività Teams controllate, vedere [Teams attivit�
 
 ## <a name="turn-on-auditing-in-teams"></a>Attivare il controllo in Teams
 
-Prima di poter esaminare i dati di controllo, è necessario attivare il controllo nel Centro conformità Microsoft 365. Per altre informazioni, vedere [Attivare o disattivare il controllo](/microsoft-365/compliance/turn-audit-log-search-on-or-off).
+Prima di poter esaminare i dati di controllo, è necessario attivare il controllo nel portale di conformità di Microsoft Purview. Per altre informazioni, vedere [Attivare o disattivare il controllo](/microsoft-365/compliance/turn-audit-log-search-on-or-off).
 
 > [!IMPORTANT]
 > I dati di controllo sono disponibili solo dal punto in cui è stato attivato il controllo.
@@ -235,4 +235,4 @@ Stiamo lavorando per integrare Teams eventi nei criteri di rilevamento anomalie.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Eseguire ricerche nel log di controllo nel Centro conformità Microsoft 365](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [Eseguire ricerche nel log di controllo nel portale di conformità di Microsoft Purview](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)

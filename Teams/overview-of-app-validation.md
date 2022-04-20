@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fa6a03c5408afcd7cce1d3e48b78b3b1ddb3675a
-ms.sourcegitcommit: b70f01d7eae2e3e6f7495c685518a2037aaece31
+ms.openlocfilehash: a916d6bdd57c2956c076461d7f36df64d5c503d9
+ms.sourcegitcommit: 745d707ec63685ce7f973785e7056628472b9c45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64756992"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64910902"
 ---
 # <a name="validation-performed-by-microsoft-for-all-teams-apps"></a>Convalida eseguita da Microsoft per tutte le app di Teams
 
@@ -53,14 +53,6 @@ Eseguiamo più di 400 test case per ogni app prima che venga resa disponibile in
 * I dettagli di contatto dell'ISV sono disponibili nella presentazione dello Store e nelle rispettive [pagine di attestazione dell'Editore](/microsoft-365-app-certification/teams/teams-apps).
 
 Inoltre, Microsoft incoraggia gli sviluppatori di app a partecipare al programma di conformità che è un approccio rigoroso a due livelli per garantire la qualità, la sicurezza e la conformità delle app. Teams Store include centinaia di app che vanno oltre il rispetto delle linee guida di convalida già dettagliate e la conformità a questi programmi.
-
-## <a name="publisher-verification"></a>Verifica autore
-
-Prima che uno sviluppatore di app possa inviare la propria app a Microsoft, lo sviluppatore deve sottoporsi a una verifica. Un autore verifica la propria identità usando l'account Microsoft Partner Network (MPN) e associa questo account MPN alla registrazione dell'app. La verifica dell'autore consente agli amministratori e agli utenti finali di comprendere l'autenticità degli sviluppatori di applicazioni che si integrano con Microsoft Identity Platform. La verifica dell'autore offre i vantaggi seguenti:
-
-* Maggiore trasparenza e riduzione dei rischi per i clienti: questa funzionalità consente ai clienti di comprendere quali app usate nelle organizzazioni vengono pubblicate dagli sviluppatori di cui si fidano.
-* Personalizzazione migliorata: viene visualizzato un `verified` badge nella richiesta di consenso di Azure Active Directory, nella pagina App aziendali e in altre interfacce utente usate da utenti finali e amministratori.
-* Adozione aziendale più fluida: gli amministratori possono configurare i criteri di consenso degli utenti, con lo stato di verifica degli editori come criterio primario dei criteri.
 
 ## <a name="see-also"></a>Vedere anche
 

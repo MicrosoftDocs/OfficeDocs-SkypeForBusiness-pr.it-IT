@@ -39,8 +39,6 @@ items:
                 href: tutorial-network-planner-example.yml
               - name: Server proxy per Teams o Skype for Business Online
                 href: proxy-servers-for-skype-for-business-online.md
-              - name: Pianificare i Gruppi di Microsoft 365 durante la creazione dei team in Teams
-                href: plan-office-365-groups.md
               - name: Pianificare la gestione del ciclo di vita in Teams
                 href: plan-teams-lifecycle.md
               - name: Pianificare la governance in Teams

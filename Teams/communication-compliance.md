@@ -16,16 +16,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b4ab8adcbe4a717e62e0dff66ecf00fb1650e31b
-ms.sourcegitcommit: 823ad7fe5f7a27f681c95b2d369ce2cbe71cfdfe
+ms.openlocfilehash: 091fe5eba9d17cefc442978cb3090aaca87844d8
+ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64691451"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64922647"
 ---
 # <a name="communication-compliance-with-microsoft-teams"></a>Conformità delle comunicazioni con Microsoft Teams
 
-La conformità alle comunicazioni è una soluzione per i rischi insider in Microsoft 365 che consente di ridurre al minimo i rischi di comunicazione, consentendo di rilevare, acquisire e agire sui messaggi inappropriati nell'organizzazione.
+Microsoft Purview Communication Compliance è una soluzione per il rischio Insider in Microsoft 365 che consente di ridurre al minimo i rischi di comunicazione, consentendo di rilevare, acquisire e agire sui messaggi inappropriati nell'organizzazione.
 
 Per Microsoft Teams, la conformità alle comunicazioni consente di identificare i [tipi](/microsoft-365/compliance/communication-compliance-feature-reference) di contenuto non appropriati seguenti nei canali Teams, nei canali Teams privati o nelle chat 1:1 e di gruppo:
 
@@ -33,7 +33,7 @@ Per Microsoft Teams, la conformità alle comunicazioni consente di identificare 
 - Immagini adulte, ghiacciate e gory
 - Condivisione di informazioni riservate
 
-Per altre informazioni sulla conformità alle comunicazioni e su come configurare i criteri per l'organizzazione, vedere [Conformità delle comunicazioni in Microsoft 365](/microsoft-365/compliance/communication-compliance). Per informazioni su Microsoft 365 abbonamenti che includono la conformità alle comunicazioni, vedere [Soluzioni per il rischio Insider](/microsoft-365/compliance/insider-risk-solution-overview#communication-compliance).
+Per altre informazioni sulla conformità alle comunicazioni e su come configurare i criteri per l'organizzazione, vedere [Informazioni sulla conformità alle comunicazioni](/microsoft-365/compliance/communication-compliance).
 
 ## <a name="how-to-use-communication-compliance-in-microsoft-teams"></a>Come usare la conformità alle comunicazioni in Microsoft Teams
 

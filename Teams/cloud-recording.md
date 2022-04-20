@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c91e964d9cc0bfc3047ed8413dff15e5aafb0cb8
-ms.sourcegitcommit: 4c608bf06f43e88c844492c262a26dcf3eacb4c3
+ms.openlocfilehash: aab8f71ec8c9eb5ad1e984a68985a8a425e21f16
+ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63523805"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "64922667"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -313,7 +313,7 @@ Per altre informazioni su eDiscovery, vedere l'articolo [Soluzioni di eDiscovery
 
 È possibile applicare etichette di conservazione automatica solo ai file video di registrazione delle riunioni di Teams tramite la proprietà ProgID. Per altre informazioni, vedere [Come applicare automaticamente un'etichetta di conservazione per le registrazioni delle riunioni di Teams](/microsoft-365/compliance/apply-retention-labels-automatically#microsoft-teams-meeting-recordings).
 
-### <a name="data-loss-prevention-dlp-policies"></a>Criteri di prevenzione della perdita dei dati (DLP)
+### <a name="microsoft-purview-data-loss-prevention-dlp-policies"></a>Criteri di Prevenzione della perdita dei dati Microsoft Purview(DLP)
 
 È possibile applicare i criteri di prevenzione della perdita dei dati ai file di registrazione delle riunioni anche tramite la proprietà ProgID. Nella regola DLP per i file in SharePoint Online e OneDrive for Business impostare le condizioni seguenti:
 

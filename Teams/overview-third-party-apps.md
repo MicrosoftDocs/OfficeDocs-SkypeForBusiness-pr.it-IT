@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 85171e8125fc4e6cecbfde4a0f6832b48ca7ca84
-ms.sourcegitcommit: b70f01d7eae2e3e6f7495c685518a2037aaece31
+ms.openlocfilehash: 90395ab4bd9563a6bd9ad12ae6d9c1d164ddc89b
+ms.sourcegitcommit: 745d707ec63685ce7f973785e7056628472b9c45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64756962"
+ms.lasthandoff: 04/18/2022
+ms.locfileid: "64910872"
 ---
 # <a name="overview-of-third-party-apps-in-microsoft-teams"></a>Panoramica delle app di terze parti in Microsoft Teams
 
@@ -34,8 +34,9 @@ Le app di terze parti in Microsoft Teams non sono controllate o di proprietà di
 Oltre a garantire che gli amministratori abbiano il controllo sulle app di terze parti, Microsoft garantisce anche che nello Store siano disponibili solo app di alta qualità. Microsoft richiede a tutte le app di eseguire una convalida obbligatoria che verifica la funzionalità dell'app, l'identificazione dell'editore, le autorizzazioni richieste dall'app e la conformità, la privacy e la sicurezza dei dati raccolti dall'app. Invitiamo le app a far parte di un programma di conformità facoltativo per dimostrare una maggiore attenzione alla sicurezza e alla conformità agli standard di settore. Per informazioni su questi programmi, vedere gli articoli seguenti:
 
 1. [Convalida app](overview-of-app-validation.md#app-validation-and-testing)
-1. [Verifica dell'autore](overview-of-app-validation.md#publisher-verification)
+
 1. Programma di conformità delle app Microsoft:
 
+   * [Verifica dell'autore](overview-of-app-certification.md#publisher-verification)
    * [Attestazione dell'autore](overview-of-app-certification.md#publisher-attestation)
    * [Certificazione Microsoft 365](overview-of-app-certification.md#microsoft-365-certification)
