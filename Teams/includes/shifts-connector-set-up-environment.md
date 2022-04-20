@@ -5,17 +5,17 @@ ms.date: 03/31/2022
 ms.topic: include
 audience: admin
 ms.service: msteams
-ms.openlocfilehash: c612f8d8e0f48249d9eabe19c5ae7513b0ae9d75
-ms.sourcegitcommit: 2388838163812eeabcbd5331aaf680b79da3ccba
+ms.openlocfilehash: 3d4ec38f0007460fa119e69eadc79cd9c51887ee
+ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64593670"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "64976019"
 ---
-1. Installare PowerShell versione 7 o successiva. Per istruzioni dettagliate, vedere Installazione [di PowerShell in](/powershell/scripting/install/installing-powershell-on-windows) Windows.
+1. Installare PowerShell versione 7 o successiva. Per indicazioni dettagliate, vedere [Installazione di PowerShell in Windows](/powershell/scripting/install/installing-powershell-on-windows).
 
 1. Eseguire PowerShell in modalità amministratore.
-1. Installare il modulo di Microsoft Graph PowerShell.
+1. Installare il modulo Microsoft Graph PowerShell.
 
     ```powershell
     Install-Module Microsoft.Graph
@@ -35,20 +35,13 @@ ms.locfileid: "64593670"
     Import-Module MicrosoftTeams 
     ```
 
-    Verificare che sia almeno la versione 4.1.0 e che contenga i cmdlet del connettore Shifts.
+    Verificare che sia almeno la versione 4.1.0 e che contenga i cmdlet del connettore Turni.
 
     ```powershell
     Get-Command -Module MicrosoftTeams -Name *teamsshiftsconnection* 
     ```
- 
-1. Installare il modulo msal powershell.
 
-    ```powershell
-    Install-Module -Name MSAL.PS
-    Import-Module MSAL.PS
-    ```
-
-1. Impostare PowerShell per uscire se si verifica un errore durante l'esecuzione dello script.
+1. Impostare PowerShell in modo che esci se si verifica un errore durante l'esecuzione dello script.
 
     ```powershell
     $ErrorActionPreference = "Stop" 
