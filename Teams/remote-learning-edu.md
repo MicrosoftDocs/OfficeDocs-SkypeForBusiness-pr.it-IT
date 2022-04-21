@@ -19,10 +19,10 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: d061fa0cda1620980e7da68a345fc13acb6fc12a
-ms.sourcegitcommit: 1129841e68e927fe7cc31de3ad63a3e9247253cd
+ms.sourcegitcommit: bf0071417188b33fc23e2a420187da5024d4bd40
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2022
+ms.lasthandoff: 04/20/2022
 ms.locfileid: "62362982"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
@@ -42,7 +42,7 @@ Questo articolo illustra i passaggi da eseguire per preparare l'istituto di istr
 > - È possibile rendere subito operativa l'intero istituto di istruzione o l'università con Teams, consultare [**Guida introduttiva rapida**](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/teams-for-education-getting-started-1-pager.pdf?raw=true).
 > - Scaricare [**Introduzione a Teams**](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/Teams-for-Education-ITAdmin-get-started-guide.pptx?raw=true): una guida per professionisti IT che offre procedure utili per la gestione della sicurezza e delle modifiche.
 > - Una raccolta di articoli scritti per i docenti, con indicazioni pratiche sui [**primi passi per l'insegnamento in Teams**](https://support.office.com/article/microsoft-teams-5aa4431a-8a3c-4aa5-87a6-b6401abea114).
-> - Un corso online di 1 ora in Microsoft Educator Center illustra il modo in cui i docenti usano Teams nelle loro vite professionali. [**Trasformare l'apprendimento con Microsoft Teams**](https://education.microsoft.com/course/9c9f5c11/overview).
+> - Un corso online di 1 ora nell’Educator Center Microsoft mostra come i docenti usano Teams nella loro vita professionale. [**Trasformare l'attività di apprendimento con Microsoft Teams**](https://education.microsoft.com/course/9c9f5c11/overview).
 > - Un corso online di 1 ora in Microsoft Educator Center guida i docenti all'insegnamento nei team di classe. [**Creare un ambiente di apprendimento collaborativo con i team di classe.**](https://education.microsoft.com/course/b1e15cfc/overview)
 > - Docenti, studenti, genitori o tutori possono trovare altre indicazioni su [**insegnamento e apprendimento remoto con Office 365**](https://aka.ms/RemoteLearningHelp).
 > - Genitori e tutori possono accedere anche alla [**Pagina del supporto per i genitori**](https://support.office.com/article/remote-learning-with-office-365-guidance-for-parents-and-guardians-89d514f9-bf5e-4374-a731-a75d38ddd588) per assistenza sull'apprendimento remoto.
@@ -232,7 +232,7 @@ Gli studenti e gli insegnanti otterranno il massimo da Teams quando potranno usa
 
 - Implementazione immediata consigliata! Si consiglia effettuare prontamente la distribuzione per garantire che tutto funzioni correttamente e sia pronto per il primo giorno di scuola.
 - Se si hanno più di 500.000 team, è consigliabile usare il [metodo di creazione dei team con docente](#educator-led-team-creation-from-office-365-class-groups). Riduce i team inutilizzati e gli ingombri creando solo team di classe rilevanti e necessari.  
-- Se si verificano problemi con la creazione automatica di team con SDS (ad esempio, corsi mancanti) e ai docenti servono subito, è possibile usare il [metodo di creazione dei team con docente](#educator-led-team-creation-from-office-365-class-groups). La [Creazione manuale del team](#manual-team-creation) è un'altra soluzione, ma non tiene aggiornata l'iscrizione del proprio team.  
+- In caso di problemi (ad esempio, le classi mancano) in relazione alla creazione automatica del team SDS e i docenti ne hanno bisogno immediatamente, possono usare il [metodo di creazione del team guidato dal docente](#educator-led-team-creation-from-office-365-class-groups) per riprovare. La [Creazione manuale del team](#manual-team-creation) è un'altra soluzione, tuttavia, non mantiene aggiornata l'iscrizione al team.  
 - Il tenant prevede un limite di 500.000 team. Di conseguenza, gli amministratori devono cercare in modo proattivo di ridurre il numero di team inutilizzati per evitare di superare questi limiti ed estendere il tempo di configurazione. Per altre informazioni sui limiti, vedere [Limiti e specifiche di Microsoft Teams](limits-specifications-teams.md).  
 
 #### <a name="early-access-to-class-teams"></a>Accesso anticipato ai team di classe

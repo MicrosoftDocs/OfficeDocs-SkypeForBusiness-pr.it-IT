@@ -17,10 +17,10 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 3c80b93ef457048d006fb7a7eb6085b3ed5d8eb4
-ms.sourcegitcommit: 1190cd73656dbc9131d46e0a827e28bcd960dfc5
+ms.sourcegitcommit: 8cda22925ccddb612f91351a7593b521eee10f0e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2022
+ms.lasthandoff: 04/21/2022
 ms.locfileid: "62864029"
 ---
 # <a name="microsoft-teams-essentials-quickstart-guide-for-small-businesses"></a>Guida introduttiva a Microsoft Teams Essentials per le piccole imprese
@@ -97,7 +97,7 @@ Nella tabella seguente sono elencate le funzionalità principali di Microsoft Te
 
 
 > [!IMPORTANT] 
-> Per ottenere un'amministrazione avanzata e un intero set completo di funzionalità di Teams, è necessario eseguire l'aggiornamento alla versione completa di Teams acquistando un [piano di abbonamento Microsoft 365 o Office 365](https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-options) appropriato per gli utenti. È consigliabile usare questa opzione per ottenere una maggiore flessibilità nel gestire il modo in cui l'organizzazione collabora.
+> Per ottenere l'amministrazione avanzata e l'intero set completo di funzionalità di Teams, è necessario eseguire l'aggiornamento alla versione completa di Teams acquistando un [piano di abbonamento Microsoft 365 o Office 365 appropriato](https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-options) per gli utenti. Si consiglia di farlo perché si avrà maggiore flessibilità per gestire il modo in cui l'organizzazione collabora.
 
 ## <a name="administration-limits-and-specifications-for-microsoft-teams-essentials"></a>Limiti e specifiche di amministrazione per Microsoft Teams Essentials
 
@@ -109,9 +109,9 @@ La tua azienda non ha esperienza con Microsoft Teams? Grazie per aver scelto Mic
 
 Per iniziare a usare Teams Essentials, seguire questa procedura:
 
-1. **Acquistare l'abbonamento.** Passare a [Microsoft Teams Essentials per le piccole imprese](https://www.microsoft.com/microsoft-teams/compare-microsoft-teams-options) e selezionare **Acquista ora** in Microsoft Teams Essentials.
+1. **Acquistare l’abbonamento.** Andare a [Microsoft Teams Essentials per le piccole aziende](https://www.microsoft.com/microsoft-teams/compare-microsoft-teams-options) e selezionare **Acquista ora** in Microsoft Teams Essentials.
 2. **Iscriversi con l'indirizzo di posta elettronica esistente.** Usare un indirizzo di posta elettronica esistente e seguire le istruzioni per acquistare licenze utente.
-3. **Rivedere la descrizione del servizio di Teams.** Visitare [Descrizione del servizio di Microsoft Teams](/office365/servicedescriptions/teams-service-description) per altre informazioni su Microsoft Teams.
+3. **Rivedere la descrizione del servizio Teams.** Visitare la [descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description) per altre informazioni su Microsoft Teams.
 
 Dopo aver completato queste attività, è possibile pianificare, distribuire e usare l'app Teams.
 
@@ -166,7 +166,7 @@ No. Teams Essentials con identità AAD è disponibile solo tramite Partner selez
 
 ### <a name="can-i-use-an-existing-email-system-with-microsoft-teams-essentials"></a>È possibile usare un sistema di posta elettronica esistente con Microsoft Teams Essentials?  
 
-Sì. È possibile mantenere il sistema di posta elettronica esistente e sfruttare Teams Essentials per incontrarsi, chattare e collaborare.  
+Sì. È possibile mantenere il sistema di posta elettronica esistente e sfruttare Teams Essentials per riunioni, chat e per collaborare.  
 
 ### <a name="can-i-connect-my-existing-calendar-solution-with-teams-essentials"></a>È possibile connettere la soluzione di calendario esistente a Teams Essentials?
 Sì. È possibile sincronizzare i calendari esistenti da Outlook.com e Google con Teams Essentials.

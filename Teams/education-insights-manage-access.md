@@ -17,17 +17,17 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: f97b2aea15fe626c7780f022e2d024729ad02589
-ms.sourcegitcommit: 1129841e68e927fe7cc31de3ad63a3e9247253cd
+ms.sourcegitcommit: 8cda22925ccddb612f91351a7593b521eee10f0e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2022
+ms.lasthandoff: 04/21/2022
 ms.locfileid: "62363182"
 ---
 # <a name="manage-user-access-to-education-insights"></a>Gestire l'accesso degli utenti a Dati analitici per l'istruzione
 
 Questo documento illustra la procedura necessaria per gestire l'accesso degli utenti a [Dati analitici per l'istruzione in Microsoft Teams](class-insights.md).
 
-È necessario fornire le autorizzazioni per i responsabili dell'istruzione, i dirigenti distrettuali, i presidi scolastici, i dirigenti scolastici, i consulenti, i responsabili delle aree di apprendimento, i direttori dei programmi, gli assistenti sociali e gli psicologi. Ai docenti viene *automaticamente* concessa l'autorizzazione quando sono proprietari di un team di classe.
+È necessario fornire le autorizzazioni per i responsabili dell'istruzione, i dirigenti di distretto, i responsabili scolastici, i docenti responsabili, i consulenti, i responsabili delle aree di apprendimento, i responsabili del programma, gli assistenti sociali e gli psicologi. I docenti vengono autorizzati *automaticamente* quando sono titolari di un team di classe.
 
 Per fornire Dati analitici a livello di organizzazione, è necessario [importare i dati dal sistema informativo degli studenti (SIS)](education-insights-sis-data-sync.md) in modo che la struttura gerarchica del sistema didattico di Dati analitici sia mappata correttamente.
 
@@ -92,14 +92,14 @@ Utilizzare le autorizzazioni individuali per modificare l'autorizzazione per un 
 * Fare clic su **Concedi autorizzazione individuale** nella parte superiore sinistra dello schermo.
 * Immettere il nome utente o l'indirizzo di posta elettronica di ogni utente.
 * Selezionare il livello di autorizzazione:
-  * **Tutti** indica che l'utente può visualizzare tutte le unità organizzative a tutti i livelli. Questo livello viene usato molto raramente.
+  * **Tutti** indica che l'utente può visualizzare tutte le unità organizzative a tutti i livelli. Viene usato molto raramente.
   * **Organizzazione specifica** indica che l'utente vede l'unità organizzativa selezionata e tutte le unità organizzative sottostanti. Iniziare a digitare e selezionare l'unità organizzativa nell'elenco.
 * Fare clic su **Concedi autorizzazione** per salvare.
 
 ### <a name="change-the-individual-permission-of-a-user"></a>Modificare l'autorizzazione individuale di un utente
 * Per l'utente pertinente, fare clic sull'icona a forma di matita per selezionare il livello di autorizzazione individuale.
 * Selezionare il livello di autorizzazione:
-  * **Tutti** indica che l'utente può visualizzare tutte le unità organizzative a tutti i livelli. Questo livello viene usato molto raramente.
+  * **Tutti** indica che l'utente può visualizzare tutte le unità organizzative a tutti i livelli. Viene usato molto raramente.
   * **Organizzazione specifica** indica che l'utente vede l'unità organizzativa selezionata e tutte le unità organizzative sottostanti. Iniziare a digitare e selezionare l'unità organizzativa nell'elenco.
   * **Nessuno** indica che l'utente vede solo le unità organizzative assegnate automaticamente dal proprio ruolo (se presenti).
   

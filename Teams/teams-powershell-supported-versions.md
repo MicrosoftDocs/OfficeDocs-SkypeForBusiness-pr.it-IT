@@ -12,12 +12,12 @@ ms.collection:
 description: Informazioni sulle versioni supportate dal modulo Teams PowerShell, usato per l'amministrazione di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 242c7c43b2af31b11e4183fdf3b9ed1b00f4bb1b
-ms.sourcegitcommit: 204e4654f2c3977db260670f3ee1784d1ad6ed17
+ms.openlocfilehash: ac948022050babeff0c5ea3c0dbde853e0fabc54
+ms.sourcegitcommit: 8cda22925ccddb612f91351a7593b521eee10f0e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64866241"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65019328"
 ---
 # <a name="teams-powershell-module---supported-versions"></a>Modulo di PowerShell Teams - Versioni supportate
 
@@ -69,6 +69,7 @@ Le organizzazioni che usano Teams modulo di PowerShell negli ultimi tre mesi (22
 ## <a name="deprecated-cmdlets"></a>Cmdlet deprecati
 
 - Alcuni dei cmdlet deprecati di recente sono elencati di seguito. I dettagli dello stesso sono disponibili nelle rispettive documentazione pubbliche. 
+  * [Get-CsOnlineTelephoneNumber](/powershell/module/skype/get-csonlinetelephonenumber)
   * [Get-CsOnlineDialInConferencingUserInfo](/powershell/module/skype/get-csonlinedialinconferencinguserinfo), [Get-CsOnlineDialInConferencingUserState](/powershell/module/skype/get-csonlinedialinconferencinguserstate), [Enable-CsOnlineDialInConferencingUser](/powershell/module/skype/enable-csonlinedialinconferencinguser), [Disable-CsOnlineDialInConferencingUser](/powershell/module/skype/disable-csonlinedialinconferencinguser)
   * [Get-CsOnlineDirectoryTenant](/powershell/module/skype/get-csonlinedirectorytenant)
   * [New-CsOnlineAudioFile](/powershell/module/skype/new-csonlineaudiofile)
