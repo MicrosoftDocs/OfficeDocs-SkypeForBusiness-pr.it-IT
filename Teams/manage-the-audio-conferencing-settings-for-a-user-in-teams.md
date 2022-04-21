@@ -1,5 +1,5 @@
 ---
-title: Gestire le impostazioni di audioconferenza per gli utenti
+title: Gestire le impostazioni dei servizi di audioconferenza per gli utenti
 ms.author: heidip
 author: MicrosoftHeidi
 manager: serdars
@@ -22,38 +22,38 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: Un Microsoft 365 o un Office 365 può modificare le impostazioni di audioconferenza Teams, tra cui provider, numero verde o numero verde predefinito, ID conferenza o PIN per un utente.
-ms.openlocfilehash: 78b4f17962c69a87c15e9c0cba198a6301cac579
-ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
+description: Un amministratore Microsoft 365 o Office 365 può modificare le impostazioni di audioconferenza di Teams, inclusi il provider, il numero a pagamento o numero verde predefinito, l'ID conferenza o il PIN per un utente.
+ms.openlocfilehash: 16cdc8f58ff29aff751b95e9859fdb0a04245229
+ms.sourcegitcommit: 296fbefe0481c0b8b94aee925118474375cdf138
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62055127"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65016598"
 ---
-# <a name="manage-the-audio-conferencing-settings-for-a-user-in-microsoft-teams"></a>Gestire le impostazioni di audioconferenza per un utente in Microsoft Teams
+# <a name="manage-the-audio-conferencing-settings-for-a-user-in-microsoft-teams"></a>Gestire le impostazioni dei servizi di audioconferenza per un utente in Microsoft Teams
 
-Gli amministratori di Microsoft 365 o Office 365 possono modificare le impostazioni di audioconferenza, ad esempio il provider, il numero verde o il numero verde predefinito, l'ID conferenza o il PIN, per un singolo utente dell'organizzazione. Per modificare le impostazioni per l'organizzazione, vedere [Gestire le impostazioni di audioconferenza per l'organizzazione.](manage-the-audio-conferencing-settings-for-my-organization-in-teams.md)
+Gli amministratori di Microsoft 365 o Office 365 possono modificare le impostazioni per i servizi di audioconferenza, ad esempio il provider, il numero a pagamento o numero verde predefinito, l'ID conferenza o il PIN, per un singolo utente dell'organizzazione. Se vuoi modificare le impostazioni per la tua organizzazione, vedi [Gestire le impostazioni dei servizi di audioconferenza per l'organizzazione](manage-the-audio-conferencing-settings-for-my-organization-in-teams.md).
 
 ## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro fare clic **su Utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
+1. Nel riquadro di spostamento sinistro fare clic su **Utenti** e quindi selezionare l'utente dall'elenco di utenti disponibili.
 
-2. Fare clic **su Modifica**.
+2. Fare clic su **Modifica**.
 
-3. In **Audioconferenza** modificare una delle opzioni seguenti:
+3. In **Audioconferenza**, modifica una delle opzioni seguenti:
 
 |**Impostazione**|**Descrizione**|
 |:-----|:-----|
-|**Audioconferenza**|Per attivare o disattivare le audioconferenze per l'utente, fare clic su Modifica accanto a **Audioconferenza** e quindi, nel riquadro **Audioconferenza,** attivare o disattivare le  **audioconferenze.**|
+|**Audioconferenza**|Per attivare o disattivare i servizi di audioconferenza per l'utente, fai clic su **Modifica** accanto a **Audioconferenza** e quindi, nel riquadro **Audioconferenza** , attiva o disattiva **Audioconferenza** .|
 |**Inviare informazioni sulla conferenza tramite posta elettronica**  |Fai clic su questo collegamento solo se desideri inviare immediatamente un messaggio di posta elettronica all'utente con il suo ID conferenza e numero di telefono. (Questo messaggio di posta elettronica non include il PIN). Consulta [Inviare un messaggio di posta elettronica a un utente con le informazioni di Audioconferenza](send-an-email-to-a-user-with-their-dial-in-information-in-teams.md).  |
-|**ID conferenza**  |Fare **clic su Reimposta ID conferenza** se è necessario reimpostare l'ID conferenza per l'utente. Per ulteriori informazioni, consulta [Reimpostare un ID conferenza per un utente](reset-a-conference-id-for-a-user-in-teams.md).  |
-|**PIN** |Fare **clic su Reimposta PIN** se è necessario reimpostare il PIN per l'utente. Per ulteriori informazioni, consulta [Reimpostare il PIN per Audioconferenza](reset-the-audio-conferencing-pin-in-teams.md). |
-|**Numero di telefono a numero verde predefinito** per i servizi di conferenza (obbligatorio) |Si tratta di numeri impostati nel bridge di audioconferenza. Formattare i numeri come si vuole che vengano visualizzati nelle convocazioni di riunione Skype for Business e Microsoft Teams riunione. Per cambiare il numero a  pedaggio predefinito, fare clic su Modifica accanto a **Audioconferenza** e nel riquadro **Audioconferenza** selezionare un numero in **Numero a pedaggio**. |
-|**Gli inviti di questo utente possono includere il numero verde**|Per modificare questa  impostazione, fare clic su Modifica accanto  a **Audioconferenza** e, nel riquadro **Audioconferenza,** attivare o disattivare Includi numeri verde nelle convocazioni di riunione di questo utente. |
-|**Gli utenti non autenticati possono essere la prima persona della riunione**|Per modificare questa impostazione, **attivare** o disattivare l'opzione Gli utenti non autenticati possono essere la prima persona della riunione.
-|**Autorizzazioni per la chiamata in uscita**|Per modificare questa  impostazione, fare clic su Modifica accanto a **Audioconferenza** e nel riquadro **Audioconferenza** scegliere un'opzione in Uscita **da riunioni.**|
+|**ID conferenza**  |Se devi reimpostare l'ID conferenza per l'utente, fai clic su **Reimposta ID conferenza** . Per ulteriori informazioni, consulta [Reimpostare un ID conferenza per un utente](reset-a-conference-id-for-a-user-in-teams.md).  |
+|**PIN** |Se è necessario reimpostare il PIN per l'utente, fare clic su **Reimposta PIN** . Per ulteriori informazioni, consulta [Reimpostare il PIN per Audioconferenza](reset-the-audio-conferencing-pin-in-teams.md). |
+|**Numero di telefono a pagamento predefinito per le conferenze** (obbligatorio) |Si tratta di numeri impostati nel bridge di audioconferenza. Formattare i numeri in modo che vengano visualizzati in Skype for Business e Microsoft Teams convocazioni di riunione. Per modificare il numero a pagamento predefinito, fai clic su **Modifica** accanto a **Audioconferenza** e seleziona un numero in Numero a **pagamento** nel riquadro **Audioconferenza**. È anche possibile impostare i numeri di telefono aggiungendoli al TeamsAudioConferencingPolicy e assegnando i criteri agli utenti. Telefono numeri aggiunti al criterio hanno la precedenza sui numeri di telefono impostati con numero di **telefono a pagamento per le conferenze predefinite**. Se non vengono aggiunti numeri di telefono a TeamsAudioConferencingPolicy, il numero di telefono impostato utilizzando il **numero di telefono** predefinito per le conferenze a pagamento verrà visualizzato nelle convocazioni di riunione Microsoft Teams. |
+|**Gli inviti di questo utente possono includere il numero verde**|Questa impostazione può essere modificata solo usando TeamsAudioconferecningPolicy. |
+|**Gli utenti non autenticati possono essere la prima persona nella riunione**|Per modificare questa impostazione, attivare o disattivare **gli utenti non autenticati** .
+|**Autorizzazioni di accesso in uscita**|Per modificare questa impostazione, fai clic su **Modifica** accanto a **Audioconferenza** e nel riquadro **Audioconferenza** scegli un'opzione in **Chiamata in uscita dalle riunioni**.|
 
-![Mostra le impostazioni di audioconferenza per un utente.](media/teams-manage-audio-conferencing-settings-for-a-user-image1.png)
+![Mostra le impostazioni delle audioconferenze per un utente.](media/teams-manage-audio-conferencing-settings-for-a-user-image1.png)
 
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
