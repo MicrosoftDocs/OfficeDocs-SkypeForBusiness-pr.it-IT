@@ -1,7 +1,7 @@
 ---
 title: Condurre un'indagine di eDiscovery sul contenuto
-author: markjjo
-ms.author: markjjo
+author: v-tophillips
+ms.author: v-tophillips
 manager: laurawi
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d0906e24cc4bb749779bf432fe27c9c2af6ac0e3
-ms.sourcegitcommit: 204e4654f2c3977db260670f3ee1784d1ad6ed17
+ms.openlocfilehash: 207164f3e16768b7643d2bba2177d52d6b3940f3
+ms.sourcegitcommit: 7d5266ae7e4a440ee45ab1873a30f4056bdcca1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64866201"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "65031921"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Condurre un'indagine di eDiscovery sul contenuto in Microsoft Teams
 
@@ -82,7 +82,7 @@ Ecco un esempio dei metadati della riunione.
   > [!div class="mx-imgBorder"]
   > ![Metadati della riunione dalla copia di conformità.](media/conversationOption3.png)
 
-Per altre informazioni su come condurre un'indagine di eDiscovery, vedere [Attività iniziali con Core eDiscovery](/microsoft-365/compliance/get-started-core-ediscovery).
+Per altre informazioni su come condurre un'indagine di eDiscovery, vedere [Attività iniziali con eDiscovery (standard).](/microsoft-365/compliance/get-started-core-ediscovery)For more information about conducting an eDiscovery investigation, see Attività iniziali with eDiscovery (Standard).
 
 Microsoft Teams dati verranno visualizzati come messaggistica istantanea o Conversazioni nell'output di esportazione di Excel eDiscovery. È possibile aprire il `.pst` file in Outlook per visualizzare i messaggi dopo averli esportati.
 
@@ -131,7 +131,7 @@ Prima di eseguire questa procedura, verificare che sia installata la [versione p
     Get-TeamChannelUser -GroupId <parent team GroupId> -DisplayName "Partner Shared Channel"
    ```
 
-4. Includere le cassette postali dei proprietari e dei membri di un canale privato come parte della [query di ricerca di eDiscovery in Core eDiscovery](/microsoft-365/compliance/search-for-content-in-core-ediscovery) o quando [si identificano e raccolgono contenuti responsabili in Advanced eDiscovery](/microsoft-365/compliance/add-custodians-to-case).
+4. Includere le cassette postali dei proprietari e dei membri di un canale privato come parte della [query di ricerca di eDiscovery in eDiscovery (Standard)](/microsoft-365/compliance/search-for-content-in-core-ediscovery) o durante [l'identificazione e la raccolta di contenuti responsabili in eDiscovery (Premium).](/microsoft-365/compliance/add-custodians-to-case)Include the mailboxes of owners and members of a private channel as part of your eDiscovery search query in eDiscovery (Standard) or when identifying and collectn content in eDiscovery (Premium).
 
 ### <a name="identifying-the-sharepoint-site-for-private-and-shared-channels"></a>Identificazione del sito SharePoint per i canali privati e condivisi
 
@@ -166,7 +166,7 @@ Prima di eseguire questa procedura, [installare SharePoint Online Management She
     foreach ($site in $sites) {$x= Get-SpoSite -Identity $site.url -Detail; if ($x.RelatedGroupId -eq $groupID) {$x.RelatedGroupId;$x.url}}
     ```
 
-4. Includere il sito associato a un canale privato o condiviso come parte della [query di ricerca di eDiscovery in Core eDiscovery](/microsoft-365/compliance/search-for-content-in-core-ediscovery) o quando [si identificano e raccolgono contenuti di custode in Advanced eDiscovery](/microsoft-365/compliance/add-custodians-to-case).
+4. Includere il sito associato a un canale privato o condiviso come parte della [query di ricerca di eDiscovery in eDiscovery (Standard)](/microsoft-365/compliance/search-for-content-in-core-ediscovery) o durante [l'identificazione e la raccolta di contenuti responsabili in eDiscovery (Premium)](/microsoft-365/compliance/add-custodians-to-case).
 
 ## <a name="search-for-content-for-guest-users"></a>Cercare contenuto per gli utenti guest
 
@@ -251,6 +251,6 @@ Gli amministratori possono usare eDiscovery per cercare contenuto nei messaggi d
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [soluzioni di eDiscovery Microsoft 365](/microsoft-365/compliance/ediscovery)
-- [Attività iniziali con Core eDiscovery](/microsoft-365/compliance/get-started-core-ediscovery)
-- [flusso di lavoro Teams in Advanced eDiscovery](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery)
+- [Attività iniziali con eDiscovery (standard)](/microsoft-365/compliance/get-started-core-ediscovery)
+- [flusso di lavoro Teams in eDiscovery (Premium)](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery)
 - [Panoramica di Teams PowerShell](teams-powershell-overview.md)

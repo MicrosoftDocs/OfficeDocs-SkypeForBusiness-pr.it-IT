@@ -3,7 +3,7 @@ title: Conservare file di grandi dimensioni allegati a una riunione Skype for Bu
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
-ms.reviewer: brendonb, markjjo
+ms.reviewer: brendonb, v-tophillips
 ms.topic: article
 ms.assetid: 12203a1a-4a9f-4838-88c5-3740ea16ed8d
 ms.tgt.pltfrm: cloud
@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: È possibile allegare file a una Skype for Business riunione, che i partecipanti possono quindi aprire e scaricare. I file allegati a riunioni Skype for Business vengono conservati nelle cassette postali di qualsiasi partecipante la cui cassetta postale è applicata a un blocco per controversia legale, a cui è applicato un criterio di conservazione Microsoft 365 o Office 365 o a un blocco associato a un caso di eDiscovery nel portale di conformità Microsoft Purview. Questo contenuto viene salvato nelle cartelle Elementi ripristinabili dei partecipanti nelle loro cassette postali.
-ms.openlocfilehash: 35792e3415d3def0b8ac45ab39e9dec65f2f7725
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: b799c1a471ac3884aa1b22cc1a681e53ee8284e9
+ms.sourcegitcommit: 7d5266ae7e4a440ee45ab1873a30f4056bdcca1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922437"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "65031871"
 ---
 # <a name="retaining-large-files-attached-to-a-skype-for-business-meeting"></a>Conservare file di grandi dimensioni allegati a una riunione Skype for Business
 

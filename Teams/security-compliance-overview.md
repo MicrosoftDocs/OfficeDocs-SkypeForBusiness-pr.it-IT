@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e2e0238439bb79a7ca7833ef082f4f499c082aa9
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: 1c41ac53e95c179fc62b5e2e469bb614cbdcd516
+ms.sourcegitcommit: 7d5266ae7e4a440ee45ab1873a30f4056bdcca1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922617"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "65031901"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
@@ -149,9 +149,9 @@ Per altre informazioni su come usare gli strumenti di eDiscovery nel portale di 
 
 È disponibile un articolo specifico di Teams per altre informazioni in [Condurre un'indagine eDiscovery sul contenuto in Microsoft Teams](eDiscovery-investigation.md).
 
-I clienti possono sfruttare eDiscovery o [Advanced eDiscovery](/microsoft-365/compliance/office-365-advanced-ediscovery) in base alle loro esigenze. La tabella seguente illustra le differenze tra i due:
+I clienti possono sfruttare eDiscovery o [eDiscovery (Premium)](/microsoft-365/compliance/office-365-advanced-ediscovery) in base alle loro esigenze. La tabella seguente illustra le differenze tra i due:
 
-|&nbsp; |eDiscovery  |Advanced eDiscovery  |
+|&nbsp; |eDiscovery  |eDiscovery (Premium)  |
 |---------|---------|---------|
 |Gestione dei casi     |X        |X         |
 |Controllo di accesso  |X         |X         |
@@ -216,7 +216,7 @@ Quando si tratta di funzionalità di protezione delle informazioni, Microsoft 36
 Per informazioni su come determinare la necessità delle licenze di implementare funzionalità per la sicurezza e la conformità, consultare [i requisiti di licenza](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) per le caratteristiche di sicurezza e conformità.
 
 > [!NOTE]
-> Per funzionare, non è necessario abilitare Ricerca contenuto, Core eDiscovery e Advanced eDiscovery nel portale di conformità Microsoft Purview. Per altre informazioni, vedere [soluzioni di Microsoft 365 eDiscovery](/microsoft-365/compliance/ediscovery).
+> Non è necessario abilitare ricerca contenuto, eDiscovery (standard) e eDiscovery (Premium) nel portale di conformità Microsoft Purview. Per altre informazioni, vedere [soluzioni di Microsoft 365 eDiscovery](/microsoft-365/compliance/ediscovery).
 
 ## <a name="location-of-data-in-teams"></a>Posizione dei dati in Teams
 

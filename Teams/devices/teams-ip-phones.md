@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e da conferenza sono certificati per Microsoft Teams per produrre risultati ottimali.
-ms.openlocfilehash: 353b96f1270ac1f7e52d454f76821b321c60a3e9
-ms.sourcegitcommit: 5bfd2e210617e4388241500eeda7b50d5f2a0ba3
+ms.openlocfilehash: 29cc086cd88ccf801eb1b19e56833f36e6ef86b6
+ms.sourcegitcommit: 06d1c50c9b55b062d61844a856676d9837fd5abe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "64885014"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "65030892"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>Microsoft Teams dispositivi Android certificati
 
@@ -237,6 +237,8 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware | Versione del prodotto inclusa |
 |:--------------|:-----------------|:-------------------------|
+| Logi Roommate |   `1.5.705`   | 2022 Aggiornamento n. 1    |
+| Logi Rallybar Mini   |   `1.5.705`   | 2022 Aggiornamento n. 1    |
 | Logi Rallybar    |   `1.5.705`   | 2022 Aggiornamento n. 1    |
 | EPOS ESPANDI Vision 3T |`1.2.4.22042.05`   | 2022 Aggiornamento n. 1 |
 | AudioCodes RXV80 | `1.16.164 `   | 2022 Aggiornamento n. 1 |

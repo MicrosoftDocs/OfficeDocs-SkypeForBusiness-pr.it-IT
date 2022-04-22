@@ -1,7 +1,7 @@
 ---
 title: Bloccare a fini giudiziari un utente o un team Microsoft Teams
-author: markjjo
-ms.author: markjjo
+author: v-tophillips
+ms.author: v-tophillips
 manager: laurawi
 ms.topic: article
 ms.service: msteams
@@ -15,12 +15,12 @@ f1.keywords:
 description: Informazioni su come mettere un utente o un team di Microsoft Teams in stato di blocco legale usando il portale di conformità Microsoft Purview e scoprire cosa richiede un blocco legale in base ai requisiti dei dati.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5d56bece07fe7342c4156abdae73508a1a149864
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: 1f0ea852b564ac339ac390994384258cc5d68ea1
+ms.sourcegitcommit: 7d5266ae7e4a440ee45ab1873a30f4056bdcca1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922457"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "65031911"
 ---
 # <a name="place-a-microsoft-teams-user-or-team-on-legal-hold"></a>Bloccare a fini giudiziari un utente o un team Microsoft Teams
 
@@ -35,7 +35,7 @@ All'interno di Microsoft Teams, un intero team o utenti selezionati possono esse
 > L'applicazione di un blocco a un utente non applica automaticamente un blocco a un gruppo o viceversa.
 > Le notifiche inviate nei feed attività non possono essere bloccate.
 
-Per applicare un blocco legale a un utente o a un team in un caso di Core eDiscovery:
+Per applicare un blocco a un utente o a un team in un caso di eDiscovery (standard):
 
 1. Vai al [portale di conformità Microsoft Purview](https://compliance.microsoft.com). Quando si crea un nuovo caso, viene visualizzata l'opzione per bloccare cassette postali o siti.
 
@@ -44,7 +44,7 @@ Per applicare un blocco legale a un utente o a un team in un caso di Core eDisco
    ![Microsoft Teams scheda eDiscovery è selezionata con il pulsante Crea caso.](media/LegalHold1.png)
 
    > [!NOTE]
-   > È anche possibile applicare un blocco a un utente associato a un caso di Advanced eDiscovery. Per altre informazioni, vedere [Gestire i blocchi in Advanced eDiscovery](/microsoft-365/compliance/managing-holds).
+   > È anche possibile applicare un blocco a un utente associato a un caso di eDiscovery (Premium). Per altre informazioni, vedere [Gestire i blocchi in eDiscovery (Premium).For more information, see Manage holds in eDiscovery (Premium)](/microsoft-365/compliance/managing-holds).
 
 3. Passare alla scheda **Blocchi** nel menu superiore e fare clic su **Crea** per creare un blocco. L'applicazione di un blocco a un utente o a un team mantiene tutti i messaggi scambiati da tali utenti. Quando si crea un nuovo caso, viene visualizzata l'opzione per bloccare cassette postali o siti.
 

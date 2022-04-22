@@ -1,7 +1,7 @@
 ---
 title: Usare Ricerca contenuto in Microsoft Teams
-author: markjjo
-ms.author: markjjo
+author: v-tophillips
+ms.author: v-tophillips
 manager: laurawi
 ms.topic: article
 audience: admin
@@ -17,12 +17,12 @@ ms.custom: seo-marvel-mar2020
 description: Informazioni sull'uso di Ricerca contenuto nel portale di conformità di Microsoft Purview per cercare contenuti Microsoft Teams archiviati in Exchange Online, SharePoint Online, OneDrive for Business e OneNote.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 00de0bb3ecdcaf6dc674f08438b896abaaa49448
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: 88f44bffaa3bf2dc125dad5f2d7595d08f49bffd
+ms.sourcegitcommit: 7d5266ae7e4a440ee45ab1873a30f4056bdcca1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922477"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "65031861"
 ---
 # <a name="use-content-search-in-microsoft-teams"></a>Usare Ricerca contenuto in Microsoft Teams
 

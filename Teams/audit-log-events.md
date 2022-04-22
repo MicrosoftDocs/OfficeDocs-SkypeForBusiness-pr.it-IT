@@ -1,7 +1,7 @@
 ---
 title: Cercare gli eventi nel log di controllo in Microsoft Teams
-author: markjjo
-ms.author: markjjo
+author: v-tophillips
+ms.author: v-tophillips
 manager: laurawi
 ms.topic: article
 audience: admin
@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Informazioni su come recuperare Microsoft Teams dati dal log di controllo nel portale di conformità di Microsoft Purview.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 744a18f2a8f7f2ed406853ef7efbc9842d0096f5
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: 82da7932fb87101ee04759ede3d96b68cbb64aa2
+ms.sourcegitcommit: 7d5266ae7e4a440ee45ab1873a30f4056bdcca1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922637"
+ms.lasthandoff: 04/22/2022
+ms.locfileid: "65031891"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Cercare gli eventi nel log di controllo in Microsoft Teams
 
@@ -141,7 +141,7 @@ Ecco un elenco di tutti gli eventi registrati per le attività di utenti e ammin
 ||||
 
 > [!NOTE]
-> <sup>1</sup> Un record di controllo per questo evento viene registrato solo quando l'operazione viene eseguita chiamando un API Graph Microsoft. Se l'operazione viene eseguita nel client Teams, non verrà registrato un record di controllo<br/><sup>2</sup> Questo evento è disponibile solo in Controllo avanzato. Questo significa che agli utenti deve essere assegnata la licenza appropriata prima che questi eventi vengano registrati nel log di controllo. Per altre informazioni sulle attività disponibili solo in Controllo avanzato, vedere [Controllo avanzato in Microsoft 365](/microsoft-365/compliance/advanced-audit#advanced-audit-events). Per i requisiti di licenza di Controllo avanzato, vedere [Soluzioni di controllo in Microsoft 365](/microsoft-365/compliance/auditing-solutions-overview#licensing-requirements). <br/> <sup>3</sup> Questo evento è in anteprima pubblica.
+> <sup>1</sup> Un record di controllo per questo evento viene registrato solo quando l'operazione viene eseguita chiamando un API Graph Microsoft. Se l'operazione viene eseguita nel client Teams, non verrà registrato un record di controllo<br/><sup>2</sup> Questo evento è disponibile solo in Audit (Premium). Questo significa che agli utenti deve essere assegnata la licenza appropriata prima che questi eventi vengano registrati nel log di controllo. Per altre informazioni sulle attività disponibili solo in Controllo (Premium), vedere [Controllo (Premium) in Microsoft Purview](/microsoft-365/compliance/advanced-audit#advanced-audit-events). Per i requisiti di licenza di controllo (Premium), vedere [Soluzioni di controllo in Microsoft 365](/microsoft-365/compliance/auditing-solutions-overview#licensing-requirements). <br/> <sup>3</sup> Questo evento è in anteprima pubblica.
 
 ## <a name="shifts-in-teams-activities"></a>Turni nelle attività Teams
 
