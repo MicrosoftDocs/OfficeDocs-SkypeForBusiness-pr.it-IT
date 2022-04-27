@@ -295,7 +295,7 @@ items:
             href: legal-hold.md
           - name: Ricerca contenuto
             href: content-search.md
-          - name: Flusso di lavoro di Teams in Advanced eDiscovery
+          - name: Flusso di lavoro di Teams in eDiscovery (Premium)
             href: /microsoft-365/compliance/teams-workflow-in-advanced-ediscovery
           - name: Controllo
             href: audit-log-events.md
@@ -709,7 +709,7 @@ items:
                     href: set-up-meeting-dial-out-confirmation.md
               - name: Gestire le impostazioni di audioconferenza per l'organizzazione
                 href: manage-the-audio-conferencing-settings-for-my-organization-in-teams.md
-              - name: Gestire le impostazioni di audioconferenza per gli utenti
+              - name: Gestire le impostazioni di Audioconferenza per gli utenti
                 items:
                   - name: Panoramica
                     href: manage-the-audio-conferencing-settings-for-a-user-in-teams.md
@@ -725,7 +725,7 @@ items:
                     href: emails-sent-to-users-when-their-settings-change-in-teams.md
                   - name: Abilitare o disabilitare l'invio di messaggi di posta elettronica in caso di modifica delle impostazioni di audioconferenza
                     href: enable-or-disable-sending-emails-when-their-settings-change-in-teams.md
-                  - name: Impostazioni dei criteri per i numeri verdi
+                  - name: Impostazioni dei criteri per i numeri verdi e a pagamento
                     href: audio-conferencing-toll-free-numbers-policy.md
                   - name: Disattivazione dei numeri verdi per utenti specifici
                     href: disabling-toll-free-numbers-for-specific-teams-users.md

@@ -23,7 +23,7 @@ appliesto:
 ms.localizationpriority: high
 ms.openlocfilehash: 06243ca47e26f66dd4194a9ec9e50cc5a6bfbde7
 ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/05/2022
 ms.locfileid: "64642850"
@@ -108,7 +108,7 @@ Per comunicare con un altro tenant, è necessario abilitare **Consenti tutti i d
 ## <a name="manage-contact-with-external-teams-users-not-managed-by-an-organization"></a>Gestire i contatti con utenti Teams esterni non gestiti da un'organizzazione
 
 > [!NOTE]
-> Le Teams e Skype di interoperabilità descritte in questo articolo non sono disponibili nelle distribuzioni GCC, GCC High o DOD o in ambienti cloud privati.
+> Le funzionalità di interoperabilità Teams e Skype illustrate in questo articolo non sono disponibili nelle distribuzioni di GCC, GCC High o DOD o in ambienti cloud privati.
 
 Gli amministratori possono scegliere di abilitare o disabilitare le comunicazioni con utenti esterni Teams utenti non gestiti da un'organizzazione ("non gestito"). Se abilitata, può anche controllare ulteriormente se le persone con account Teams non gestiti possono avviare un contatto (vedere l'immagine seguente). Se **Utenti esterni con account Teams non gestiti da un'organizzazione possono contattare gli utenti dell'organizzazione** è disattivato, gli utenti di Teams non gestiti non potranno cercare l'indirizzo di posta elettronica completo per trovare i contatti dell'organizzazione e tutte le comunicazioni con gli utenti di Teams non gestiti devono essere avviate dagli utenti dell'organizzazione.
 
