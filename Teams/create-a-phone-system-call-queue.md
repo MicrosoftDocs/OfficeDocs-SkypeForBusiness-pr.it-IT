@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
 description: Informazioni su come configurare code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams, che fornisce un messaggio di saluto, tenere musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: 4e194a315abecdf779a2df48c7fbb7b6412693cc
-ms.sourcegitcommit: 480046a53dfb6e6cf867e1920f8fb43dda9d3774
+ms.openlocfilehash: 0a62abc27eed0008a337b900f563f8e7e2a75097
+ms.sourcegitcommit: bd05783dfb33a63e0eb083a2135f97d110dc81a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64846545"
+ms.lasthandoff: 04/26/2022
+ms.locfileid: "65059087"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -207,6 +207,9 @@ Se un agente rifiuta esplicitamente di ricevere chiamate, non verrà incluso nel
 
 > [!TIP]
 > L'impostazione consigliata è impostare **l'ora di avviso dell'agente** su **20 secondi** .
+
+> [!NOTE]
+> L'impostazione [gestione timeout di chiamata](#call-timeout-handling) ha la priorità rispetto al tempo di avviso dell'agente. Se è stato raggiunto il tempo massimo in coda configurato per la gestione del timeout di chiamata, la chiamata verrà recuperata dagli agenti anche se non è stato raggiunto il limite di tempo di avviso dell'agente.
 
 ## <a name="call-overflow-handling"></a>Gestione dell'overflow delle chiamate
 

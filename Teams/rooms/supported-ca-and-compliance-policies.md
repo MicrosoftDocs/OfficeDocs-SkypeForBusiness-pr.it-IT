@@ -12,12 +12,12 @@ f1.keywords:
 ms.collection:
 - M365-collaboration
 description: Informazioni sui criteri di accesso condizionale supportati e consigliati e Intune conformità dei dispositivi per Microsoft Teams Rooms.
-ms.openlocfilehash: befe8faae5db204f5e15e307cadcc24f6867a487
-ms.sourcegitcommit: 5fe5516f6118ce3fa0449ab194a6fe87bf48c664
+ms.openlocfilehash: 19e4593a6135c79eb156a1b34847ab518d6e8ea4
+ms.sourcegitcommit: bd05783dfb33a63e0eb083a2135f97d110dc81a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64732294"
+ms.lasthandoff: 04/26/2022
+ms.locfileid: "65059237"
 ---
 # <a name="supported-conditional-access-and-intune-device-compliance-policies-for-microsoft-teams-rooms"></a>Criteri di conformità di accesso condizionale e Intune dispositivi supportati per Microsoft Teams Rooms
 
@@ -28,7 +28,10 @@ Questo articolo fornisce criteri di accesso condizionale supportati e Intune con
 
 ## <a name="supported-conditional-access-policies"></a>Criteri di accesso condizionale supportati  
 
-L'elenco seguente include i criteri di accesso condizionale supportati per Teams Rooms su Windows e Android. I criteri android supportati si applicano a tutti i dispositivi Android in spazi condivisi, inclusi i pannelli e i telefoni ad area comune.
+L'elenco seguente include i criteri di accesso condizionale supportati per Teams Rooms su Windows e Android. 
+
+> [!NOTE]
+> I criteri android supportati si applicano a tutti i dispositivi Android in spazi condivisi, tra cui Teams Rooms su Andourd, telefoni ad area comune e pannelli.
 
 | Assegnazione | Windows | Android |
 |------------|---------|---------|
@@ -75,7 +78,7 @@ Di seguito è riportata una tabella delle impostazioni di conformità dei dispos
 |Richiedi l'abilitazione di Avvio protetto nel dispositivo |Supportati |L'avvio protetto è un requisito per Teams Rooms. |
 |Richiedere l'integrità del codice |Supportati  | L'integrità del codice è già un requisito per Teams Rooms. |
 | [**Proprietà dispositivo**](/mem/intune/protect/compliance-policy-create-windows%22%20/l%20%22device-properties) | -- | -- |
-|Versione del sistema operativo (minimo, massimo) |Non supportato | Teams Rooms aggiornamenti automatici alle versioni più recenti di Windows e l'impostazione dei valori potrebbe impedire l'accesso dopo un aggiornamento del sistema operativo.|
+|Versione del sistema operativo (minimo, massimo) |Non supportato | Teams Rooms aggiornamenti automatici alle versioni più recenti di Windows e l'impostazione dei valori potrebbe impedire il corretto accesso dopo un aggiornamento del sistema operativo.|
 |Versione del sistema operativo per dispositivi mobili (minimo, massimo) | Non supportato. | N/D |
 | Build del sistema operativo valide | Non supportato | N/D |
 | [**Conformità Configuration Manager**](/mem/intune/protect/compliance-policy-create-windows%22%20/l%20%22device-properties) | -- | -- |

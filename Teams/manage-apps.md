@@ -17,12 +17,12 @@ description: Informazioni su come gestire le app di Teams nella pagina Gestisci 
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: a6e6adbfbed5e1b371655ca74aa6ca6c717490c9
-ms.sourcegitcommit: 06d1c50c9b55b062d61844a856676d9837fd5abe
+ms.openlocfilehash: 2a4062bbf71c3ad112a52a10ad9c1b3ff71f3dad
+ms.sourcegitcommit: bd05783dfb33a63e0eb083a2135f97d110dc81a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65030942"
+ms.lasthandoff: 04/26/2022
+ms.locfileid: "65059077"
 ---
 # <a name="manage-teams-apps-in-the-microsoft-teams-admin-center"></a>Gestire Teams app nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -30,9 +30,9 @@ Le app per l'organizzazione possono essere gestite in **Teams app** nell'interfa
 
 ![Screenshot della pagina Gestisci app.](media/manage-apps.png)
 
-Per gestire le app, usare i criteri seguenti per controllare le autorizzazioni per gli utenti, l'installazione delle app e il caricamento di app personalizzate create all'interno dell'organizzazione. Per informazioni sui criteri, vedere [Panoramica dei criteri delle app](app-policies.md).
+Per usare Teams'interfaccia di amministrazione, è necessario essere un amministratore globale o un amministratore del servizio Teams. Per informazioni dettagliate, vedere [Teams ruoli di amministratore](./using-admin-roles.md).
 
-Per informazioni su come ottenere i ruoli di amministratore e le autorizzazioni, vedere [Teams ruoli di amministratore](./using-admin-roles.md).
+Per gestire le app, usare i criteri per controllare le autorizzazioni per gli utenti, l'installazione delle app e il caricamento di app personalizzate create all'interno dell'organizzazione. Per informazioni sui criteri, vedere [Panoramica dei criteri delle app](app-policies.md).
 
 > [!NOTE]
 > [!INCLUDE [new-teams-sfb-admin-center-notice](includes/new-teams-sfb-admin-center-notice.md)]
