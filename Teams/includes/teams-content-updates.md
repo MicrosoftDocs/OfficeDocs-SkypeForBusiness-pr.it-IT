@@ -3,6 +3,31 @@
 
 
 
+## <a name="week-of-april-18-2022"></a>Settimana del 18 aprile 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 4/18/2022 | [Panoramica della certificazione delle app da parte di Microsoft](/MicrosoftTeams/overview-of-app-certification) | Volta |
+| 4/18/2022 | Pianificare i gruppi di Microsoft 365 durante la creazione di team | Rimosso |
+| 4/18/2022 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | Volta |
+| 4/19/2022 | [Musica in attesa](/MicrosoftTeams/music-on-hold) | Volta |
+| 4/19/2022 | [Teams il comportamento delle app in base ai tipi di utenti](/MicrosoftTeams/non-standard-users) | Volta |
+| 4/19/2022 | [Panoramica di sicurezza e conformità](/MicrosoftTeams/security-compliance-overview) | Volta |
+| 4/20/2022 | [Criteri per i numeri verdi per i servizi di audioconferenza](/MicrosoftTeams/audio-conferencing-toll-free-numbers-policy) | Aggiunto |
+| 4/20/2022 | [Modificare i numeri di telefono nel bridge di audioconferenza](/MicrosoftTeams/change-the-phone-numbers-on-your-audio-conferencing-bridge) | Volta |
+| 4/20/2022 | [Disabilitazione dei numeri verdi per specifici utenti Teams](/MicrosoftTeams/disabling-toll-free-numbers-for-specific-teams-users) | Volta |
+| 4/20/2022 | [Gestire le impostazioni dei servizi di audioconferenza](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-my-organization-in-teams) | Volta |
+| 4/20/2022 | [Impostare i numeri di telefono inclusi negli inviti](/MicrosoftTeams/set-the-phone-numbers-included-on-invites-in-teams) | Volta |
+| 4/20/2022 | [Configurare Audioconferenza per Microsoft Teams](/MicrosoftTeams/set-up-audio-conferencing-in-teams) | Volta |
+| 4/21/2022 | Microsoft StaffHub è stato ritirato | Rimosso |
+| 4/21/2022 | Impostazioni di amministrazione per le app in Microsoft Teams | Rimosso |
+| 4/21/2022 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | Volta |
+| 4/21/2022 | [Condurre un'indagine di eDiscovery sul contenuto](/MicrosoftTeams/ediscovery-investigation) | Volta |
+| 4/22/2022 | [Kaizala e Microsoft Teams](/MicrosoftTeams/get-started-kaizala-teams) | Volta |
+| 4/22/2022 | [Spostarsi tra Microsoft Teams](/MicrosoftTeams/navigate-teams) | Volta |
+
+
 ## <a name="week-of-april-04-2022"></a>Settimana del 4 aprile 2022
 
 
@@ -133,186 +158,3 @@
 | 3/25/2022 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | Volta |
 | 3/25/2022 | [Aggiornamenti assistiti \| Skype Business Online all'aggiornamento Teams](/MicrosoftTeams/upgrade-assisted) | Volta |
 | 3/25/2022 | [Usare i ruoli di amministratore di Microsoft Teams per gestire Teams](/MicrosoftTeams/using-admin-roles). | Volta |
-
-
-## <a name="week-of-march-14-2022"></a>Settimana del 14 marzo 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 3/14/2022 | [Canali privati in Microsoft Teams](/MicrosoftTeams/private-channels) | Volta |
-| 3/14/2022 | [Ritiro di Skype for Business Online](/MicrosoftTeams/skype-for-business-online-retirement) | Volta |
-| 3/14/2022 | [Session Border Controller certificati per l'instradamento diretto](/MicrosoftTeams/direct-routing-border-controllers) | Volta |
-| 3/14/2022 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | Volta |
-| 3/15/2022 | [Impostare Microsoft Teams interfaccia utente dei dispositivi Android](/MicrosoftTeams/devices/teams-android-devices-user-interface) | Volta |
-| 3/15/2022 | [Distribuire Microsoft Teams Rooms in Android](/MicrosoftTeams/devices/collab-bar-deploy) | Volta |
-| 3/15/2022 | [Gestire i dispositivi in Microsoft Teams](/MicrosoftTeams/devices/device-management) | Volta |
-| 3/15/2022 | [Gestire e filtrare Microsoft Teams tag dei dispositivi](/MicrosoftTeams/devices/manage-device-tags) | Volta |
-| 3/15/2022 | [Telefoni per Microsoft Teams](/MicrosoftTeams/devices/phones-for-teams) | Volta |
-| 3/15/2022 | [Aggiornare Microsoft Teams dispositivi in remoto](/MicrosoftTeams/devices/remote-update) | Volta |
-| 3/15/2022 | [Creazione di Microsoft Teams account di risorse per le barre di collaborazione per Microsoft Teams tramite PowerShell](/MicrosoftTeams/devices/resource-account-ps) | Volta |
-| 3/15/2022 | [Creare un account della risorsa usando la interfaccia di amministrazione di Microsoft 365](/MicrosoftTeams/devices/resource-account-ui) | Volta |
-| 3/15/2022 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | Volta |
-| 3/15/2022 | [Telefoni e dispositivi per Microsoft Teams](/MicrosoftTeams/devices/usb-devices) | Volta |
-| 3/15/2022 | [Distribuire il monitoraggio Microsoft Teams Rooms con Monitoraggio di Azure](/MicrosoftTeams/rooms/azure-monitor-deploy) | Volta |
-| 3/15/2022 | [Monitorare Microsoft Teams Rooms dispositivi con Monitoraggio di Azure](/MicrosoftTeams/rooms/azure-monitor-manage) | Volta |
-| 3/15/2022 | [Pianificare il monitoraggio Microsoft Teams Rooms con Monitoraggio di Azure](/MicrosoftTeams/rooms/azure-monitor-plan) | Volta |
-| 3/15/2022 | [Creare un'immagine Microsoft Teams Rooms](/MicrosoftTeams/rooms/console) | Volta |
-| 3/15/2022 | [Configurare riunioni coordinate con Microsoft Teams Rooms e Surface Hub](/MicrosoftTeams/rooms/coordinated-meetings) | Volta |
-| 3/15/2022 | [Considerazioni sull'aggiunta di domini Skype Room System](/MicrosoftTeams/rooms/domain-joining-considerations) | Volta |
-| 3/15/2022 | [Microsoft Teams Rooms](/MicrosoftTeams/rooms/index) | Volta |
-| 3/15/2022 | [Eseguire la migrazione dei dispositivi Lync Room System a Microsoft Teams Rooms](/MicrosoftTeams/rooms/lrs-migration) | Volta |
-| 3/15/2022 | [Aggiornare manualmente un dispositivo Microsoft Teams Rooms](/MicrosoftTeams/rooms/manual-update) | Volta |
-| 3/15/2022 | [Utilizza lo strumento di ripristino di Microsoft Teams Rooms](/MicrosoftTeams/rooms/recovery-tool) | Volta |
-| 3/15/2022 | [Requisiti per Microsoft Teams Rooms](/MicrosoftTeams/rooms/requirements) | Volta |
-| 3/15/2022 | [Autenticazione in Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-authentication) | Volta |
-| 3/15/2022 | [Configurare gli account per Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-configure-accounts) | Volta |
-| 3/15/2022 | [Distribuire Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-deploy) | Volta |
-| 3/15/2022 | [licenze Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-licensing) | Volta |
-| 3/15/2022 | [Supporto della versione dell'app Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-lifecycle-support) | Volta |
-| 3/15/2022 | [Gestire Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-manage). | Volta |
-| 3/15/2022 | [Piano per Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-plan) | Volta |
-| 3/15/2022 | [Preparare l'ambiente](/MicrosoftTeams/rooms/rooms-prep) | Volta |
-| 3/15/2022 | [Note sulla versione per Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-release-note) | Volta |
-| 3/15/2022 | [Gestire la configurazione Microsoft Teams in Surface Hub](/MicrosoftTeams/rooms/surface-hub-manage-config) | Volta |
-| 3/15/2022 | [Abilitare Teams Rooms dispositivi per partecipare a riunioni di terze parti](/MicrosoftTeams/rooms/third-party-join) | Volta |
-| 3/15/2022 | [Gestire gli aggiornamenti di Windows per Microsoft Teams Rooms](/MicrosoftTeams/rooms/updates) | Volta |
-| 3/15/2022 | [Distribuire Microsoft Teams Rooms con Exchange Online](/MicrosoftTeams/rooms/with-exchange-online) | Volta |
-| 3/15/2022 | [Distribuire Microsoft Teams Rooms con Office 365](/MicrosoftTeams/rooms/with-office-365) | Volta |
-| 3/15/2022 | [Distribuire Microsoft Teams Rooms con Skype for Business Server](/MicrosoftTeams/rooms/with-skype-for-business-server-2015) | Volta |
-| 3/15/2022 | [Gestire in remoto le impostazioni del dispositivo di Microsoft Teams Rooms](/MicrosoftTeams/rooms/xml-config-file) | Volta |
-| 3/15/2022 | [Modulo di PowerShell Teams - Versioni supportate](/MicrosoftTeams/teams-powershell-supported-versions) | Volta |
-| 3/15/2022 | Creazione di Microsoft Teams account di risorse per le barre di collaborazione per Microsoft Teams tramite PowerShell | Rimosso |
-| 3/15/2022 | Creare un account della risorsa usando la interfaccia di amministrazione di Microsoft 365 | Rimosso |
-| 3/15/2022 | [Microsoft Teams schermi](/MicrosoftTeams/devices/teams-displays) | Volta |
-| 3/15/2022 | [Microsoft Teams pannelli](/MicrosoftTeams/devices/teams-panels) | Volta |
-| 3/15/2022 | [Criteri per le riunioni e scadenza delle riunioni in Microsoft Teams](/MicrosoftTeams/meeting-expiration) | Volta |
-| 3/15/2022 | [Musica in attesa](/MicrosoftTeams/music-on-hold) | Volta |
-| 3/15/2022 | [Procedure consigliate per l'accesso condizionale e la conformità per Microsoft Teams Rooms](/MicrosoftTeams/rooms/conditional-access-and-compliance-for-devices) | Volta |
-| 3/15/2022 | [servizio gestito da Microsoft Teams Rooms Premium](/MicrosoftTeams/rooms/obtaining-assigning-license) | Volta |
-| 3/15/2022 | [Criteri di conformità di accesso condizionale e Intune dispositivi supportati per Microsoft Teams Rooms](/MicrosoftTeams/rooms/supported-ca-and-compliance-policies) | Volta |
-| 3/15/2022 | Distribuire Microsoft Teams Rooms con Exchange locale (ibrido) | Rimosso |
-| 3/15/2022 | Distribuire Microsoft Teams Rooms con Exchange Online | Rimosso |
-| 3/15/2022 | [Creare account delle risorse per sale e dispositivi di Teams condivisi](/MicrosoftTeams/rooms/with-office-365) | Volta |
-| 3/15/2022 | [Accedere a Microsoft Teams](/MicrosoftTeams/sign-in-teams) | Volta |
-| 3/15/2022 | [Disconnettersi da Microsoft Teams](/MicrosoftTeams/sign-out-of-teams) | Volta |
-| 3/15/2022 | [Pianificare gateway SIP](/MicrosoftTeams/sip-gateway-plan) | Volta |
-| 3/16/2022 | [Configurare chiamate di emergenza dinamiche](/MicrosoftTeams/configure-dynamic-emergency-calling) | Volta |
-| 3/16/2022 | [Creare account delle risorse per sale e dispositivi di Teams condivisi](/MicrosoftTeams/rooms/with-office-365) | Volta |
-| 3/16/2022 | [Usare OneDrive for Business e SharePoint per le registrazioni delle riunioni](/MicrosoftTeams/tmr-meeting-recording-change) | Volta |
-| 3/16/2022 | [Che cos'è Sistema telefonico](/MicrosoftTeams/what-is-phone-system-in-office-365) | Volta |
-| 3/16/2022 | [Registrazione delle riunioni di Teams nel cloud](/MicrosoftTeams/cloud-recording) | Volta |
-| 3/16/2022 | [Registrare un dispositivo Teams Room in Servizi gestiti](/MicrosoftTeams/rooms/enroll-a-device) | Volta |
-| 3/17/2022 | [Esperienza Guest in Microsoft Teams](/MicrosoftTeams/guest-experience) | Volta |
-| 3/17/2022 | [Gestire Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-manage). | Volta |
-| 3/17/2022 | [Microsoft Teams report utilizzo PSTN](/MicrosoftTeams/teams-analytics-and-reports/pstn-usage-report) | Volta |
-| 3/17/2022 | [Gestire l'accesso alle app Teams in Microsoft 365](/MicrosoftTeams/manage-third-party-teams-apps) | Volta |
-| 3/17/2022 | [Gestire i criteri di messaggistica in Teams](/MicrosoftTeams/messaging-policies-in-teams) | Volta |
-| 3/17/2022 | [Riunioni, webinar ed eventi live](/MicrosoftTeams/quick-start-meetings-live-events) | Volta |
-| 3/17/2022 | [Registrare un dispositivo Teams Room in Servizi gestiti](/MicrosoftTeams/rooms/enroll-a-device) | Volta |
-| 3/17/2022 | [confronto delle funzionalità dei dispositivi Teams per Spazi condivisi tra Windows e Android](/MicrosoftTeams/rooms/teams-devices-feature-comparison) | Volta |
-| 3/17/2022 | [Poster di soluzioni voce e architettura IT di Microsoft Teams](/MicrosoftTeams/teams-architecture-solutions-posters) | Volta |
-| 3/18/2022 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant) | Volta |
-| 3/18/2022 | [Indirizzi di emergenza per posizioni remote](/MicrosoftTeams/emergency-calling-dispatchable-location) | Volta |
-| 3/18/2022 | [Contattare il team di Telephone Number Services](/MicrosoftTeams/manage-phone-numbers-for-your-organization/contact-tns-service-desk) | Volta |
-| 3/18/2022 | [Pianificare la gestione del ciclo di vita](/MicrosoftTeams/plan-teams-lifecycle) | Volta |
-| 3/18/2022 | Problemi noti | Rimosso |
-| 3/18/2022 | [Introduzione alla registrazione basata sui criteri di Teams per le chiamate & riunioni](/MicrosoftTeams/teams-recording-policy) | Volta |
-
-
-## <a name="week-of-march-07-2022"></a>Settimana del 7 marzo 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 3/7/2022 | [Usare connettori Microsoft 365 e personalizzati](/MicrosoftTeams/office-365-custom-connectors) | Volta |
-| 3/7/2022 | [Impostazioni di amministrazione per le app in Microsoft Teams](/MicrosoftTeams/admin-settings) | Volta |
-| 3/7/2022 | [Visualizzare le autorizzazioni per le app e concedere il consenso di amministratore nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/app-permissions-admin-center) | Volta |
-| 3/7/2022 | [Microsoft Teams le autorizzazioni e le considerazioni relative alle app](/MicrosoftTeams/app-permissions) | Volta |
-| 3/7/2022 | [Gestire i criteri delle app in Teams](/MicrosoftTeams/app-policies) | Volta |
-| 3/7/2022 | [Disponibilità dell'applicazione Approvazioni in Teams](/MicrosoftTeams/approval-admin) | Volta |
-| 3/7/2022 | [Esperienza di aggiornamento delle app in Microsoft Teams](/MicrosoftTeams/apps-update-experience) | Volta |
-| 3/7/2022 | [Gestire l'app Bookings in Microsoft Teams](/MicrosoftTeams/bookings-app-admin) | Volta |
-| 3/7/2022 | [Usare schede predefinite e personalizzate in Microsoft Teams](/MicrosoftTeams/built-in-custom-tabs) | Volta |
-| 3/7/2022 | [Disponibilità in Sudafrica](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-south-africa) | Volta |
-| 3/7/2022 | [Personalizzare le app in Microsoft Teams](/MicrosoftTeams/customize-apps) | Volta |
-| 3/7/2022 | [Store di app personalizzate](/MicrosoftTeams/customize-your-app-store) | Volta |
-| 3/7/2022 | [App, bot & connettori in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | Volta |
-| 3/7/2022 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | Volta |
-| 3/7/2022 | [Gestire l'app Elenchi per l'organizzazione](/MicrosoftTeams/manage-lists-app) | Volta |
-| 3/7/2022 | [gestione dei numeri di Telefono per il Sudafrica](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-south-africa) | Aggiunto |
-| 3/7/2022 | [Gestire le app Microsoft Power Platform nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-power-platform-apps) | Volta |
-| 3/7/2022 | [Gestire l'app Complimenti nell'interfaccia di amministrazione di Teams](/MicrosoftTeams/manage-praise-app) | Volta |
-| 3/7/2022 | [Gestire l'app Tasks per l'organizzazione in Microsoft Teams](/MicrosoftTeams/manage-tasks-app) | Volta |
-| 3/7/2022 | [comportamento delle app Teams per utenti non standard](/MicrosoftTeams/non-standard-users) | Volta |
-| 3/7/2022 | [Personalizzare le app Teams in base alla licenza](/MicrosoftTeams/pin-teams-apps-based-on-license) | Volta |
-| 3/7/2022 | [Acquistare app di terze parti per Teams](/MicrosoftTeams/purchase-third-party-apps) | Volta |
-| 3/7/2022 | [Consenso specifico delle risorse in Microsoft Teams](/MicrosoftTeams/resource-specific-consent) | Volta |
-| 3/7/2022 | [Registrare un dispositivo Teams Room in Servizi gestiti](/MicrosoftTeams/rooms/enroll-a-device) | Rinominato |
-| 3/7/2022 | [Registrare un dispositivo Teams Rooms nel servizio gestito Microsoft Teams Rooms Premium](/MicrosoftTeams/rooms/enrolling-mtrp-managed-service) | Volta |
-| 3/7/2022 | [Usa l'API di invio di app Teams per inviare e approvare le app personalizzate](/MicrosoftTeams/submit-approve-custom-apps) | Volta |
-| 3/7/2022 | [Gestire i criteri di autorizzazione app in Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies) | Volta |
-| 3/7/2022 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | Volta |
-| 3/7/2022 | [Gestire le impostazioni e i criteri delle app personalizzati](/MicrosoftTeams/teams-custom-app-policies-and-settings) | Volta |
-| 3/7/2022 | [integrazione Teams con Microsoft Power Platform](/MicrosoftTeams/teams-power-platfom-integration) | Volta |
-| 3/7/2022 | [Upload le app personalizzate nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/upload-custom-apps) | Volta |
-| 3/7/2022 | [Session Border Controller certificati per l'instradamento diretto](/MicrosoftTeams/direct-routing-border-controllers) | Volta |
-| 3/7/2022 | [Centro contatti di Teams](/MicrosoftTeams/teams-contact-center) | Volta |
-| 3/8/2022 | [Gestire l'accesso esterno (federazione)](/MicrosoftTeams/manage-external-access) | Volta |
-| 3/8/2022 | [sicurezza Microsoft Teams Rooms](/MicrosoftTeams/rooms/security) | Volta |
-| 3/8/2022 | [Note sulla versione di Microsoft Teams PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | Volta |
-| 3/8/2022 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | Volta |
-| 3/8/2022 | [Introduzione a Teams per gli operatori sul campo](/MicrosoftTeams/flw-landing-page) | Volta |
-| 3/8/2022 | [Formazione per l'utente finale per Microsoft Teams # < 60 caratteri](/MicrosoftTeams/instructor-led-training-teams-landing-page) | Volta |
-| 3/8/2022 | [Registrare un dispositivo Teams Room in Servizi gestiti](/MicrosoftTeams/rooms/enroll-a-device) | Volta |
-| 3/8/2022 | [Microsoft Teams report utilizzo PSTN](/MicrosoftTeams/teams-analytics-and-reports/pstn-usage-report) | Volta |
-| 3/8/2022 | [Crittografia end-to-end per Microsoft Teams](/MicrosoftTeams/teams-end-to-end-encryption) | Volta |
-| 3/9/2022 | [Usare il componente aggiuntivo Riunione di Microsoft Teams in Outlook](/MicrosoftTeams/teams-add-in-for-outlook) | Volta |
-| 3/9/2022 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | Volta |
-| 3/9/2022 | [Gestire l'accesso esterno (federazione)](/MicrosoftTeams/manage-external-access) | Volta |
-| 3/9/2022 | [Configurare Credito per la comunicazione per la propria organizzazione](/MicrosoftTeams/set-up-communications-credits-for-your-organization) | Volta |
-| 3/9/2022 | [Configurare Cloud Voicemail](/MicrosoftTeams/set-up-phone-system-voicemail) | Volta |
-| 3/9/2022 | [Teams in 30](/MicrosoftTeams/teams-in-30-workshops) | Volta |
-| 3/9/2022 | [Chat, team, canali e app in Microsoft Teams](/MicrosoftTeams/deploy-chat-teams-channels-microsoft-teams-landing-page) | Volta |
-| 3/9/2022 | [servizio gestito da Microsoft Teams Rooms Premium](/MicrosoftTeams/rooms/obtaining-assigning-license) | Volta |
-| 3/10/2022 | [Gestire l'accesso alle app Teams di terze parti in Microsoft 365](/MicrosoftTeams/manage-third-party-teams-apps) | Aggiunto |
-| 3/10/2022 | [Note sulla versione di Microsoft Teams PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | Volta |
-| 3/10/2022 | [Configurare le impostazioni delle chiamate per gli utenti](/MicrosoftTeams/user-call-settings) | Aggiunto |
-| 3/10/2022 | [Visite virtuali con Microsoft Teams e l’app Bookings](/MicrosoftTeams/expand-teams-across-your-org/bookings-virtual-visits) | Volta |
-| 3/10/2022 | [Visite virtuali con Teams - Integrazione in Cerner EHR](/MicrosoftTeams/expand-teams-across-your-org/healthcare/ehr-admin-cerner) | Volta |
-| 3/10/2022 | [Visite virtuali con Teams - Integrazione in Epic EHR](/MicrosoftTeams/expand-teams-across-your-org/healthcare/ehr-admin) | Volta |
-| 3/10/2022 | [Assegnare licenze per Teams componenti aggiuntivi agli utenti](/MicrosoftTeams/teams-add-on-licensing/assign-teams-add-on-licenses) | Volta |
-| 3/10/2022 | [licenze per i componenti aggiuntivi Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/microsoft-teams-add-on-licensing) | Volta |
-| 3/10/2022 | [licenze di Telefono di Microsoft Teams Standard - Virtual User](/MicrosoftTeams/teams-add-on-licensing/virtual-user) | Volta |
-| 3/10/2022 | [Microsoft Teams report sulla licenza per la protezione delle informazioni](/MicrosoftTeams/teams-analytics-and-reports/information-protection-license-report) | Volta |
-| 3/10/2022 | [report sull'utilizzo delle visite virtuali Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/virtual-visits-usage-report) | Volta |
-| 3/10/2022 | [Upload le app personalizzate nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/upload-custom-apps) | Volta |
-| 3/11/2022 | [Modulo di PowerShell Teams - Versioni supportate](/MicrosoftTeams/teams-powershell-supported-versions) | Aggiunto |
-| 3/11/2022 | [Usare connettori Microsoft 365 e personalizzati](/MicrosoftTeams/office-365-custom-connectors) | Volta |
-| 3/11/2022 | [Impostazioni di amministrazione per le app in Microsoft Teams](/MicrosoftTeams/admin-settings) | Volta |
-| 3/11/2022 | [Visualizzare le autorizzazioni per le app e concedere il consenso di amministratore nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/app-permissions-admin-center) | Volta |
-| 3/11/2022 | [Microsoft Teams le autorizzazioni e le considerazioni relative alle app](/MicrosoftTeams/app-permissions) | Volta |
-| 3/11/2022 | [Disponibilità dell'applicazione Approvazioni in Teams](/MicrosoftTeams/approval-admin) | Volta |
-| 3/11/2022 | [Esperienza di aggiornamento delle app in Microsoft Teams](/MicrosoftTeams/apps-update-experience) | Volta |
-| 3/11/2022 | [Personalizzare le app in Microsoft Teams](/MicrosoftTeams/customize-apps) | Volta |
-| 3/11/2022 | [App, bot & connettori in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | Volta |
-| 3/11/2022 | [Introduzione ai modelli di team nell'interfaccia Teams di amministrazione](/MicrosoftTeams/get-started-with-teams-templates-in-the-admin-console) | Volta |
-| 3/11/2022 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | Volta |
-| 3/11/2022 | [Gestire l'app Elenchi per l'organizzazione](/MicrosoftTeams/manage-lists-app) | Volta |
-| 3/11/2022 | [Gestire le app Microsoft Power Platform nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-power-platform-apps) | Volta |
-| 3/11/2022 | [Gestire l'app Complimenti nell'interfaccia di amministrazione di Teams](/MicrosoftTeams/manage-praise-app) | Volta |
-| 3/11/2022 | [Gestire l'app Tasks per l'organizzazione in Microsoft Teams](/MicrosoftTeams/manage-tasks-app) | Volta |
-| 3/11/2022 | [Gestire l'accesso alle app Teams di terze parti in Microsoft 365](/MicrosoftTeams/manage-third-party-teams-apps) | Volta |
-| 3/11/2022 | [Acquistare app di terze parti per Teams](/MicrosoftTeams/purchase-third-party-apps) | Volta |
-| 3/11/2022 | [Consenso specifico delle risorse in Microsoft Teams](/MicrosoftTeams/resource-specific-consent) | Volta |
-| 3/11/2022 | [Routing delle chiamate a numeri non assegnati](/MicrosoftTeams/routing-calls-to-unassigned-numbers) | Volta |
-| 3/11/2022 | [Etichette di riservatezza per Microsoft Teams](/MicrosoftTeams/sensitivity-labels) | Volta |
-| 3/11/2022 | [Configurare Cloud Voicemail](/MicrosoftTeams/set-up-phone-system-voicemail) | Volta |
-| 3/11/2022 | [Usa l'API di invio di app Teams per inviare e approvare le app personalizzate](/MicrosoftTeams/submit-approve-custom-apps) | Volta |
-| 3/11/2022 | [Gestire i criteri di autorizzazione app in Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies) | Volta |
-| 3/11/2022 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | Volta |
-| 3/11/2022 | [Gestire le impostazioni e i criteri delle app personalizzati](/MicrosoftTeams/teams-custom-app-policies-and-settings) | Volta |
-| 3/11/2022 | [integrazione Teams con Microsoft Power Platform](/MicrosoftTeams/teams-power-platfom-integration) | Volta |
-| 3/11/2022 | [Upload le app personalizzate nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/upload-custom-apps) | Volta |
-| 3/11/2022 | [Telefoni e dispositivi per Microsoft Teams](/MicrosoftTeams/devices/usb-devices) | Volta |
-| 3/11/2022 | [Gestire i criteri delle riunioni per audio e video](/MicrosoftTeams/meeting-policies-audio-and-video) | Volta |
