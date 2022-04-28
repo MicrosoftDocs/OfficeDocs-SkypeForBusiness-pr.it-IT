@@ -7,19 +7,24 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 ms.collection:
-  - Teams_ITAdmin_GuestAccess
-  - M365-collaboration
-  - m365initiative-deployteams
+- Teams_ITAdmin_GuestAccess
+- M365-collaboration
+- m365initiative-deployteams
 ms.reviewer: dansteve
 search.appverid: MET150
 f1.keywords:
-  - NOCSH
+- NOCSH
 description: Informazioni sull'anteprima pubblica in Microsoft Teams. Provare le nuove funzionalità e fornire commenti e suggerimenti.
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 ms.localizationpriority: high
+ms.openlocfilehash: e3fdf0901d150df63fded6dc49822ad81f81f7d5
+ms.sourcegitcommit: bd05783dfb33a63e0eb083a2135f97d110dc81a3
+ms.translationtype: HT
+ms.contentlocale: it-IT
+ms.lasthandoff: 04/26/2022
+ms.locfileid: "65059187"
 ---
-
 # <a name="microsoft-teams-public-preview"></a>Anteprima pubblica in Microsoft Teams
 
 > [!NOTE] 
@@ -41,20 +46,22 @@ L'anteprima pubblica è abilitata per singolo utente e l'opzione per attivarla �
 
 2. Assegnare un nome al criterio di aggiornamento, aggiungere una descrizione e attivare **Mostra funzionalità di anteprima**.
 
-   -   **Segui Office Preview** (impostazione predefinita): questa nuova opzione predefinita abiliterà automaticamente le funzionalità dell'anteprima pubblica di Teams per qualsiasi utente registrato nel Canale corrente di Office (Anteprima). Non sono necessarie altre azioni da parte dell'utente finale.
-   -   **Abilitato**: questa opzione abilita l'anteprima pubblica di Teams indipendentemente dal fatto che un utente sia o meno registrato nel Canale corrente di Office (Anteprima). L'utente finale deve anche acconsentire esplicitamente all'anteprima pubblica di Teams nella sua app Teams.
+   -   **Segui anteprima Office** (impostazione predefinita)
+       - Questa nuova opzione predefinita abiliterà automaticamente le funzionalità dell'anteprima pubblica di Teams per qualsiasi utente registrato nel Canale corrente di Office (anteprima). 
+       - Non sono necessarie altre azioni da parte dell'utente finale.
+   -   **Abilitato**
+       - Abilitato: questa opzione abilita l'anteprima pubblica di Teams indipendentemente dal fatto che un utente sia o meno registrato nel Canale corrente di Office (Anteprima). 
+       - L'utente finale deve anche acconsentire esplicitamente all'anteprima pubblica di Teams nella sua app Teams.
 
    > [!NOTE]  
    > Per gli utenti esistenti nell'anteprima pubblica di Teams che NON si trovano nel **Canale corrente (Anteprima)**, gli amministratori IT devono passare dall'impostazione predefinita **Segui Office Preview** ad **Abilitata**.
  
-   - **Non abilitato**: le funzionalità dell'anteprima pubblica di Teams non saranno disponibili per gli utenti finali.
+   - **Non abilitato** 
+     - Le funzionalità di anteprima pubblica di Teams non saranno disponibili per gli utenti finali.
 
     ![mostra la finestra di dialogo delle impostazioni di anteprima.](media/public-preview-policy.png)  
 
 È anche possibile impostare il criterio tramite PowerShell usando il cmdlet `Set-CsTeamsUpdateManagementPolicy` con il parametro `-AllowPublicPreview`.
-
-> [!NOTE]   
-> Il parametro AllowPreview verrà presto deprecato.
 
 ## <a name="enable-public-preview"></a>Abilitare l'anteprima pubblica
 
@@ -69,7 +76,7 @@ Per abilitare l'anteprima pubblica su un client desktop o Web, è necessario com
 
 ## <a name="teams-now-follows-office-preview-users"></a>Ora Teams segue gli utenti di Office Preview
 
-Il nuovo criterio globale predefinito **Segui Office Preview** consentirà agli utenti di essere automaticamente nel canale Anteprima pubblica di Teams se si trovano nel Canale corrente (Anteprima) per il client Office 365 in Windows.
+Il nuovo criterio globale predefinito di **Segui Anteprima Office** consentirà agli utenti di essere automaticamente nel canale anteprima pubblica di Teams se si trovano nel Canale corrente (Anteprima) per il client di Office 365 in Windows e Mac.
 
 Microsoft Office continuerà a ricevere gli aggiornamenti dal Canale corrente (Anteprima) e il client di Teams riceverà gli aggiornamenti tramite il canale Anteprima pubblica. Questo criterio NON cambierà i canali di Office in base ai canali di Teams. 
 
@@ -80,10 +87,6 @@ Per gli utenti esistenti ai quali è stato permesso di acconsentire esplicitamen
 **Come rifiutare esplicitamente questa impostazione?**
 
 È possibile disabilitare l'impostazione dall'interfaccia di amministrazione di Teams in **Segui Office Preview** selezionando **Non abilitato** (vedere [Impostar i criteri di aggiornamento](#set-the-update-policy))
-
-## <a name="known-issues"></a>Problemi noti
-
-Gli utenti del Canale corrente di Office (Anteprima) possono uscire dall'anteprima pubblica di Teams tramite il menu Informazioni del client di Teams anche se il criterio di aggiornamento è impostato su **Segui Office Preview**. Questa funzionalità non è prevista e verrà rimossa in futuro. Il client di Teams può reimpostarsi automaticamente sull'anteprima pubblica quando il dispositivo è inattivo se l'utente si trova nel Canale corrente (Anteprima) per Office.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

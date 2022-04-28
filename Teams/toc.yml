@@ -495,7 +495,7 @@ items:
         href: turn-off-teams-native-file-upload-policy.md
       - name: Configurare la moderazione dei canali in Teams
         href: manage-channel-moderation-in-teams.md
-      - name: Gestire i componenti Loop
+      - name: Gestire i componenti del ciclo
         href: loop-components-in-teams.md
       - name: Integrazione della posta elettronica di Outlook e Teams
         href: teams-outlook-email-integration.md
