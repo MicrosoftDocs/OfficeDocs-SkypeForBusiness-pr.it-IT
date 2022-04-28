@@ -495,7 +495,7 @@ items:
         href: turn-off-teams-native-file-upload-policy.md
       - name: Configurare la moderazione dei canali in Teams
         href: manage-channel-moderation-in-teams.md
-      - name: Gestire i componenti del ciclo
+      - name: Gestire i componenti Loop
         href: loop-components-in-teams.md
       - name: Integrazione della posta elettronica di Outlook e Teams
         href: teams-outlook-email-integration.md
@@ -1327,34 +1327,28 @@ items:
                 href: rooms/security.md
               - name: Concessione di licenze online
                 href: rooms/rooms-licensing.md
-              - name: Procedure consigliate per l'accesso condizionale e la conformità di Intune
-                href: rooms/conditional-access-and-compliance-for-devices.md
-              - name: Criteri di conformità supportati per l'accesso condizionale e Intune
-                href: rooms/supported-ca-and-compliance-policies.md
               - name: Gestione dei piani con Monitoraggio di Azure
                 href: rooms/azure-monitor-plan.md
           - name: Distribuzione
             items:
               - name: Panoramica della distribuzione
                 href: rooms/rooms-deploy.md
-              - name: Configurare gli account
-                href: rooms/rooms-configure-accounts.md
               - name: Creare account di risorsa
                 href: rooms/with-office-365.md
-              - name: Con Skype for Business Server
-                href: rooms/with-skype-for-business-server-2015.md
               - name: Configurare una console
                 href: rooms/console.md
+              - name: Autenticazione
+                items:
+                  - name: Configurare l'autenticazione
+                    href: rooms/rooms-authentication.md
+                  - name: Procedure consigliate per l'accesso condizionale e la conformità di Intune
+                    href: rooms/conditional-access-and-compliance-for-devices.md
+                  - name: Criteri di conformità supportati per l'accesso condizionale e Intune
+                    href: rooms/supported-ca-and-compliance-policies.md
               - name: Aggiornare manualmente un dispositivo
                 href: rooms/manual-update.md
-              - name: Configurare l'autenticazione
-                href: rooms/rooms-authentication.md
-              - name: Partecipare a riunioni di terze parti
-                href: rooms/third-party-join.md
               - name: Gestione con Monitoraggio di Azure
                 href: rooms/azure-monitor-deploy.md
-              - name: Eseguire la migrazione di SRS V1 o LRS
-                href: rooms/lrs-migration.md
               - name: Videocamere di contenuto
                 href: rooms/content-camera.md
               - name: Controlli di riconoscimento vocale per altoparlanti intelligenti
@@ -1371,11 +1365,13 @@ items:
                 href: rooms/rooms-manage.md
               - name: Manutenzione e operazioni
                 href: rooms/rooms-operations.md
+              - name: Partecipare a riunioni di terze parti
+                href: rooms/third-party-join.md
               - name: Problemi noti
                 href: /microsoftteams/troubleshoot/teams-devices-and-rooms/rooms-known-issues
-              - name: Dispositivi con Monitoraggio di Azure
+              - name: Gestisci dispositivi con Monitoraggio di Azure
                 href: rooms/azure-monitor-manage.md
-              - name: Impostazioni con un file XML
+              - name: Gestisci impostazioni con un file XML
                 href: rooms/xml-config-file.md
               - name: Uso dello strumento di ripristino
                 href: rooms/recovery-tool.md
@@ -1481,6 +1477,8 @@ items:
             href: /skypeforbusiness/certification/devices-meeting-rooms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
           - name: Pianifica la distribuzione di telefoni e schermi
             href: devices/plan-device-deployment.md
+          - name: Riutilizza account di Skype for Business Server
+            href: rooms/with-skype-for-business-server-2015.md
   - name: Gestire app
     items:
       - name: Panoramica
