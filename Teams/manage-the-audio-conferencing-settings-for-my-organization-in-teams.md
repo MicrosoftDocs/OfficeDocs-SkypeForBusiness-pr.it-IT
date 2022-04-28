@@ -22,13 +22,13 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: 'Vedi Microsoft Teams procedura per assegnare una licenza per i servizi di conferenza telefonica con accesso esterno e un ID conferenza a un utente e a molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno. '
-ms.openlocfilehash: e9a464df1d4c3eb01815a652b2e55c6c269b837d
-ms.sourcegitcommit: 296fbefe0481c0b8b94aee925118474375cdf138
+description: Vedi Microsoft Teams procedura per assegnare una licenza per i servizi di conferenza telefonica con accesso esterno e un ID conferenza a un utente e a molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno.
+ms.openlocfilehash: 6d8270d21c90d363ebb74089ce0b37e6c558ecb1
+ms.sourcegitcommit: 0967f725aad0a7b9c430b2e30a37ea333007558a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016618"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "65106331"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-your-organization-in-microsoft-teams"></a>Gestire le impostazioni di audioconferenza per l'organizzazione in Microsoft Teams
 
