@@ -17,12 +17,12 @@ description: I connettori mantengono il team aggiornato, fornendo contenuto e ag
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 100db95adf900a48898515b9bb9a3a753b47de4f
-ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
+ms.openlocfilehash: 2dea5ee50d75ff8913bc88f2f3947d9f665cb4dd
+ms.sourcegitcommit: 836926a4914eb33fc3e0d8d6c84cee886cb1a5a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125441"
+ms.locfileid: "65137017"
 ---
 # <a name="manage-microsoft-365-and-custom-connectors"></a>Gestire Microsoft 365 e connettori personalizzati
 
@@ -30,7 +30,7 @@ Per mantenere aggiornato il team, i connettori forniscono aggiornamenti dei cont
 
 Microsoft 365 connettori vengono usati sia con Microsoft Teams che con i gruppi di Microsoft 365, consentendo a tutti i membri di rimanere sincronizzati e ricevere rapidamente le informazioni pertinenti. Sia Microsoft Teams che Exchange utilizzano lo stesso modello di connettore, che consente di utilizzare gli stessi connettori all'interno di entrambe le piattaforme. Tuttavia, se si disabilitano i connettori configurati per un gruppo di Microsoft 365, viene disabilitata anche la possibilità per il gruppo Microsoft 365 di creare connettori.
 
-Qualsiasi membro di un team può connettere il proprio team ai servizi cloud più diffusi con i connettori se le autorizzazioni del team lo consentono e tutti i membri del team ricevono una notifica delle attività di quel servizio. I connettori continuano a funzionare dopo che il membro che ha inizialmente configurato il connettore è rimasto. Qualsiasi membro del team con le autorizzazioni per l'aggiunta o la rimozione può modificare la configurazione dei connettori da parte di altri membri.
+Qualsiasi membro di un team può connettere il proprio team ai servizi cloud più diffusi con i connettori se le autorizzazioni del team lo consentono e tutti i membri del team ricevono una notifica delle attività di quel servizio. I connettori continuano a funzionare dopo che il membro che ha impostato inizialmente il connettore lascia il connettore. Qualsiasi membro del team con le autorizzazioni per l'aggiunta o la rimozione può modificare la configurazione dei connettori da parte di altri membri.
 
 ## <a name="enable-or-disable-connectors-in-teams"></a>Abilitare o disabilitare i connettori in Teams
 
@@ -38,9 +38,7 @@ Il modulo Exchange Online PowerShell V2 usa l'autenticazione moderna e funziona 
 
 L'impostazione tenant sostituisce l'impostazione del gruppo. Ad esempio, se un amministratore abilita i connettori per il gruppo e li disabilita nel tenant, i connettori per il gruppo vengono disabilitati. Per abilitare un connettore in Teams, [connettersi a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-using-modern-authentication-with-or-without-mfa&preserve-view=true) usando l'autenticazione moderna con o senza MFA.
 
-### <a name="commands-to-enable-or-disable-connectors"></a>Comandi per abilitare o disabilitare i connettori
-
-Eseguire i comandi seguenti in Exchange Online PowerShell:
+Per abilitare o disabilitare un connettore, eseguire i comandi seguenti in Exchange Online PowerShell:
 
 * Per disabilitare i connettori per il tenant: `Set-OrganizationConfig -ConnectorsEnabled:$false`.
 * Per disabilitare i messaggi interattivi per il tenant: `Set-OrganizationConfig -ConnectorsActionableMessagesEnabled:$false`.
@@ -51,23 +49,48 @@ Eseguire i comandi seguenti in Exchange Online PowerShell:
 
 Per altre informazioni sullo scambio di moduli di PowerShell, vedere [Set-OrganizationConfig](/powershell/module/exchange/Set-OrganizationConfig?view=exchange-ps&preserve-view=true). Per abilitare o disabilitare i connettori Outlook, [connettere le app ai gruppi in Outlook](https://support.microsoft.com/topic/connect-apps-to-your-groups-in-outlook-ed0ce547-038f-4902-b9b3-9e518ae6fbab).
 
-<!---TBD: Delete this section after customer migration to new Webhook URL is complete --->
+<!--- TBD: Find out how can we get to know about completion of customer migration.
+Delete this section after customer migration to new Webhook URL is complete.
+--->
 
-#### <a name="connector-url-update-notification"></a>Notifica di aggiornamento dell'URL del connettore
+## <a name="publish-connectors-for-your-organization"></a>Pubblicare connettori per l'organizzazione
+
+Se si vuole che un connettore personalizzato sia disponibile solo per gli utenti dell'organizzazione, è possibile caricare un'app connettore personalizzata nel catalogo app dell'organizzazione. Dopo aver caricato il pacchetto dell'app, gli utenti finali possono installare il connettore dal catalogo app dell'organizzazione e configurare e usare il connettore in un team.
+
+<!---TBD: Check if these instructions are for admins or end-users. I cannot find these options either in Teams or in TAC.
+
+To set up a connector:
+
+1. Select **Apps** from the left navigation bar.
+1. In the **Apps** section, select **Connectors**.
+1. Select the connector that you want to add.
+1. From the pop-up menu, select **Add to a team**.
+1. In the search box, type a team or channel name.
+1. Select **Set up a Connector** from the pop-up menu in the bottom right corner of the dialog window.
+--->
+
+> [!IMPORTANT]
+> I connettori personalizzati non sono disponibili in Government Community Cloud (GCC), GCC-High e in Department of Defense (DOD).
+
+Per usare i connettori in un team o in un canale, aprire il menu Altre opzioni nell'angolo in alto a destra di un canale. Nel menu selezionare **Connettori** e quindi individuare o cercare l'app connettore richiesta. Configurare il connettore selezionato, se necessario.
+
+:::image type="content" source="media/connectors-selection-ui.png" alt-text="Aggiungere connettori al canale in Teams da Altre opzioni nell'angolo in alto a destra del canale.":::
+
+## <a name="update-url-of-a-connector"></a>Aggiornare l'URL di un connettore
 
 I connettori Teams stanno passando a un nuovo URL per migliorare la sicurezza. Durante la transizione, si riceverà una notifica per aggiornare il connettore configurato. Aggiornare il connettore al più presto per evitare interruzioni dei servizi di connettore. Per aggiornare il connettore:
 
 1. Nella pagina di configurazione dei connettori selezionare il messaggio **Attenzione richiesta** accanto al connettore configurato.
 
-   ![Screenshot del messaggio Attenzione richiesta.](media/Teams_Attention_Required_message.png)
+   :::image type="content" source="media/Teams_Attention_Required_message.png" alt-text="Screenshot del messaggio Attenzione richiesta.":::
 
 1. Per ricreare la connessione per i connettori webhook in ingresso, selezionare **Aggiorna URL** e usare l'URL webhook generato.
 
-   ![Screenshot del pulsante Aggiorna URL.](media/Teams_update_URL_button.png)
+   :::image type="content" source="media/Teams_update_URL_button.png" alt-text="Screenshot del pulsante Aggiorna URL.":::
 
 1. Per altri tipi di connettore, rimuovere il connettore e ricreare la configurazione del connettore. Viene visualizzato un **URL aggiornato** .
 
-   ![Lo screenshot dell'URL è un messaggio aggiornato.](media/Teams_URL_up_to_date.png)
+   :::image type="content" source="media/Teams_URL_up_to_date.png" alt-text="Lo screenshot dell'URL è un messaggio aggiornato.":::
 
 ## <a name="see-also"></a>Vedere anche
 

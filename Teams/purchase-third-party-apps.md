@@ -16,12 +16,12 @@ description: Informazioni su come acquistare app di terze parti per Teams nell'i
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 84a527fbd8ec59817b4f0d3ee64a970c44d9abd4
-ms.sourcegitcommit: 708b489a7dca7fd9e5e9b1ec88c9aba79ecafe5f
+ms.openlocfilehash: 52cab02898a2fd187c60d2348a42c3ce97de2a3b
+ms.sourcegitcommit: 836926a4914eb33fc3e0d8d6c84cee886cb1a5a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64712930"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65137087"
 ---
 # <a name="purchase-third-party-apps-for-teams"></a>Acquistare app di terze parti per Teams
 
@@ -38,17 +38,17 @@ Qui è anche possibile acquistare licenze per i servizi offerti da app di terze 
 > [!IMPORTANT]
 > Quando abiliti l'acquisto di app, viene attivato anche l'acquisto in-app. Gli utenti possono vedere offerte di acquisto in-app controllate dall'ISV per la loro app. Se vuoi impedire ai tuoi utenti di acquistare un'app, devi bloccare l'app. Per altre informazioni su come bloccare un'app, vedere [Gestire i criteri delle app](app-policies.md) o [informazioni su come bloccare un'app a livello di organizzazione](manage-apps.md#allow-and-block-apps).
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**. Per accedere alla pagina è necessario essere un amministratore globale o Teams del servizio.
+1. Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Teams** **appGesti** >  app. Per accedere alla pagina è necessario essere un amministratore globale o Teams del servizio.
 1. Cercare l'app desiderata. Per identificare le app con un abbonamento SaaS a pagamento, cercare nella colonna **Licenze** . Ogni app avrà uno dei valori seguenti:
     - **Acquisto**: l'app offre un abbonamento SaaS ed è disponibile per l'acquisto.  
     - **Acquistato**: l'app offre un abbonamento SaaS per cui sono state acquistate licenze.
     - **- -**: l'app non offre un abbonamento SaaS.
-1. Dopo aver trovato l'app, fare clic su **Acquista** per passare alla scheda **Piani e prezzi** della pagina dei dettagli dell'app. Esamina i piani e le informazioni sui prezzi per l'offerta SaaS per l'app. Se hai bisogno di altre informazioni, seleziona **Altre informazioni** per passare alla pagina dell'app in [AppSource](https://appsource.microsoft.com/).
+1. Quando trovi l'app, seleziona **Acquista** per passare alla scheda **Piani e prezzi** della pagina dei dettagli dell'app. Esamina i piani e le informazioni sui prezzi per l'offerta SaaS per l'app. Se hai bisogno di altre informazioni, seleziona **Altre informazioni** per passare alla pagina dell'app in [AppSource](https://appsource.microsoft.com/).
 
    > [!NOTE]
    > I piani privati possono anche essere elencati per l'acquisto, che includono prezzi speciali che l'organizzazione ha negoziato in precedenza con un ISV. Questi piani avranno l'etichetta **Piano privato** sotto il nome del piano.
 
-1. Per abbonarsi a un'app, scegliere il piano desiderato e selezionare **Acquista**. Il flusso di cassa verrà aperto direttamente nell'interfaccia di amministrazione di Teams.
+1. Per abbonarsi a un'app, scegliere il piano desiderato e selezionare **Acquista**. Il flusso di cassa si apre direttamente nell'interfaccia di amministrazione di Teams.
 
 1. Selezionare il numero di licenze utente da acquistare.
 1. Verifica che l'account di fatturazione e l'indirizzo venduto siano corretti. Se non ne hai già uno, aggiungirne uno nuovo selezionando **Aggiungi**. Per altre informazioni sugli account di fatturazione, vedere [Informazioni sugli account di fatturazione](/microsoft-365/commerce/manage-billing-accounts).

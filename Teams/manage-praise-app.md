@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: msteams
 ms.localizationpriority: medium
 description: Informazioni su come gestire l'app Complimenti nell'interfaccia di amministrazione di Microsoft Teams.
-ms.openlocfilehash: 364fb60b6a729062e358685426acd98704c7ac02
-ms.sourcegitcommit: bf0071417188b33fc23e2a420187da5024d4bd40
+ms.openlocfilehash: 16f59a8fbe0958a63f824762cfede020dbf54b8e
+ms.sourcegitcommit: 836926a4914eb33fc3e0d8d6c84cee886cb1a5a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "63442682"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65136977"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimenti nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -31,7 +31,7 @@ Complimenti è abilitata per impostazione predefinita per tutti gli utenti Teams
 
 :::image type="content" source="media/manage-praise-app-admin-center.png" alt-text="Screenshot della pagina dei dettagli dell'app Complimenti nell'interfaccia di amministrazione di Teams con l'interruttore Stato.":::
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**.
+1. Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Teams** **appGesti** >  app.
 2. Nell'elenco delle app cerca l'app Complimenti, selezionala e quindi imposta **Stato** su **Bloccato** o **Consentito**.
 
 Tieni presente che questa impostazione influisce sia sull'app Complimenti che sulla funzionalità Complimenti nell'app Viva Insights in Teams.
