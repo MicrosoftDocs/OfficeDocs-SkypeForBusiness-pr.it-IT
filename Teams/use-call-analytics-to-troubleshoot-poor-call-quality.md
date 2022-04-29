@@ -21,87 +21,87 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.callanalytics
 - ms.teamsadmincenter.users.activity.audioqualitycolumn
 - Reporting
-description: Usare i dettagli di Call Analytics per utente su dispositivi, reti e connettività per risolvere i problemi degli utenti Microsoft Teams chiamate e riunioni.
-ms.openlocfilehash: 9f61796d83977c9d0782957fe3bafe787f60403b
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: Usa i dettagli di Call Analytics per utente su dispositivi, reti e connettività per risolvere i problemi degli utenti relativi a chiamate e riunioni Microsoft Teams.
+ms.openlocfilehash: 47b60eb979c36508ed1911a70f531695c03533e5
+ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58731935"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125651"
 ---
 # <a name="use-call-analytics-to-troubleshoot-poor-call-quality"></a>Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate
 
-Questo articolo spiega come usare Call Analytics per risolvere i problemi di qualità scarsa delle chiamate Microsoft Teams o delle riunioni per i singoli utenti se si ha il ruolo di amministratore di Teams, specialista del supporto per le comunicazioni Teams o tecnico del supporto per le comunicazioni Teams.
+Questo articolo spiega come usare Call Analytics per risolvere problemi di scarsa qualità delle chiamate o delle riunioni Microsoft Teams per i singoli utenti, se si ha il ruolo di ingegnere del supporto per le comunicazioni di Teams, specialista del supporto Teams per le comunicazioni o Teams ruolo di ingegnere del supporto tecnico per le comunicazioni.
 
 ## <a name="call-analytics-permissions"></a>Autorizzazioni di Call Analytics
 
-Questo articolo presuppone che sia già stata impostata l'analisi delle chiamate. In caso contrario, vedere Configurare [l'analisi](set-up-call-analytics.md)delle chiamate per Teams .
+Questo articolo presuppone che Call Analytics sia già stato configurato. In caso contrario, vedere [Configurare l'analisi delle chiamate per Teams](set-up-call-analytics.md).
 
-## <a name="introduction-to-call-analytics"></a>Introduzione all'analisi delle chiamate
+## <a name="introduction-to-call-analytics"></a>Introduzione a Call Analytics
 
-Call Analytics mostra informazioni dettagliate sulle Teams e le riunioni per ogni utente nel tuo account Office 365 personale. Include informazioni su dispositivi, reti, connettività e qualità delle chiamate (uno di questi fattori può essere un fattore di scarsa qualità per le chiamate o le riunioni). Se si caricano informazioni sull'edificio, il sito e il tenant, queste informazioni verranno visualizzate anche per ogni chiamata e riunione. Usare Call Analytics per capire perché un utente ha avuto una scarsa esperienza di chiamata o riunione.
+Call Analytics mostra informazioni dettagliate su Teams chiamate e riunioni per ogni utente dell'account Office 365. Include informazioni su dispositivi, reti, connettività e qualità delle chiamate (uno di questi può essere un fattore di scarsa qualità delle chiamate o delle riunioni). Se si caricano informazioni su edifici, siti e tenant, queste informazioni verranno visualizzate anche per ogni chiamata e riunione. Usare Call Analytics per capire perché un utente ha avuto un'esperienza di chiamata o riunione scadente.
 
-Call Analytics mostra ogni fase di una chiamata o di una riunione, ad esempio da un partecipante a un secondo partecipante. Analizzando questi dettagli, un amministratore Teams può isolare le aree di problemi e identificare la causa radice della scarsa qualità.
+Call Analytics mostra ogni parte di una chiamata o riunione, ad esempio da un partecipante a un secondo partecipante. Analizzando questi dettagli, un amministratore Teams può isolare le aree problematiche e identificare la causa principale della scarsa qualità.
 
-Come amministratore Teams, si ottiene l'accesso completo a tutti i dati di Call Analytics per ogni utente. È anche possibile assegnare ruoli Azure Active Directory al personale di supporto. Per altre informazioni su questi ruoli, vedere [Concedere l'autorizzazione al supporto e al personale dell'helpdesk.](set-up-call-analytics.md#give-permission-to-support-and-helpdesk-staff) Da non perdere Cosa fa [ogni Teams di supporto tecnico?](#what-does-each-teams-support-role-do) di seguito.
+L'amministratore Teams ottiene l'accesso completo a tutti i dati di Call Analytics per ogni utente. Inoltre, è possibile assegnare Azure Active Directory ruoli per il supporto del personale. Per altre informazioni su questi ruoli, vedere [Concedere l'autorizzazione al supporto e al personale helpdesk](set-up-call-analytics.md#give-permission-to-support-and-helpdesk-staff). Non perderti [cosa fa ogni ruolo di supporto Teams?](#what-does-each-teams-support-role-do) di seguito.
 
 ## <a name="where-to-find-per-user-call-analytics"></a>Dove trovare Call Analytics per utente
 
-Per visualizzare tutte le informazioni sulle chiamate e i dati per un utente, passare [all'interfaccia Teams di amministrazione.](https://admin.teams.microsoft.com) In **Utenti** selezionare un utente e quindi aprire la scheda Riunioni **& chiamate** nella pagina del profilo dell'utente. Qui troverai tutte le chiamate e le riunioni per quell'utente negli ultimi 30 giorni.
+Per visualizzare tutte le informazioni e i dati delle chiamate per un utente, accedere [all'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com). In **Utenti** selezionare un utente e quindi aprire la scheda **Riunioni & Chiamate** nella pagina del profilo dell'utente. Qui troverai tutte le chiamate e le riunioni per quell'utente negli ultimi 30 giorni.
 
 ![Screenshot di tutti i dati utente di analisi.](media/teams-difference-between-call-analytics-and-call-quality-dashboard-image1.png)
 
-Per ottenere altre informazioni su una determinata sessione, inclusi elementi multimediali dettagliati e statistiche di rete, fare clic su una sessione per visualizzare i dettagli.
+Per ottenere informazioni aggiuntive su una determinata sessione, incluse statistiche dettagliate su elementi multimediali e di rete, fare clic su una sessione per visualizzare i dettagli.
 
 ![Screenshot dei dati della sessione utente di analisi delle chiamate.](media/teams-difference-between-call-analytics-and-call-quality-dashboard-image2.png)
 
-## <a name="what-does-each-teams-support-role-do"></a>Cosa fa ogni Teams supporto tecnico?
+## <a name="what-does-each-teams-support-role-do"></a>Cosa fa ogni ruolo di supporto Teams?
 
-Lo **Teams di supporto per le comunicazioni** di livello 1 gestisce i problemi di qualità delle chiamate di base. Non esaminano i problemi relativi alle riunioni. Al contrario, raccolgono informazioni correlate e quindi vengono inoltrate a un Teams tecnico del supporto per le comunicazioni.
+Lo **specialista del supporto per le comunicazioni Teams** (supporto di Livello 1) gestisce i problemi di base relativi alla qualità delle chiamate. Non esaminano i problemi relativi alle riunioni. Vengono invece raccolte informazioni correlate e quindi inoltrate a un tecnico del supporto per le comunicazioni Teams.
 
-Il **Teams** di supporto per le comunicazioni di livello 2 visualizza informazioni nei log delle chiamate dettagliati nascosti allo specialista Teams supporto per le comunicazioni. La tabella seguente elenca le informazioni disponibili per ogni ruolo di supporto Teams comunicazione.
+Il **tecnico del supporto per le comunicazioni di Teams** (supporto di Livello 2) visualizza le informazioni nei registri delle chiamate dettagliati nascosti allo specialista del supporto tecnico per le comunicazioni Teams. La tabella seguente elenca le informazioni disponibili per ogni Teams ruolo di supporto per le comunicazioni.
 
 La tabella seguente indica quali informazioni per utente sono disponibili per ogni ruolo di supporto per le comunicazioni.
 
-|Attività|Informazioni|Quali sono le comunicazioni<br>lo *specialista del supporto* vede|Quali sono le comunicazioni<br>il *tecnico del supporto* vede|
+|Attività|Informazioni|Quali sono le comunicazioni<br>addetto al supporto *tecnico* vede|Quali sono le comunicazioni<br>*il tecnico* del supporto vede|
 |---|---|---|---|
-|**Chiamate**|Nome chiamante|Solo il nome dell'utente per cui l'agente ha cercato.|Nome utente.|
-||Nome destinatario|Viene visualizzato come utente interno o utente esterno.|Nome del destinatario.|
-||Numero di telefono del chiamante|L'intero numero di telefono, ad eccezione delle ultime tre cifre, viene offuscato con simboli asterisco. Ad esempio, 15552823 \* \* \* .|L'intero numero di telefono, ad eccezione delle ultime tre cifre, viene offuscato con simboli asterisco. Ad esempio, 15552823 \* \* \* .|
-||Numero di telefono del destinatario|L'intero numero di telefono, ad eccezione delle ultime tre cifre, viene offuscato con simboli asterisco. Ad esempio, 15552823 \* \* \* .|L'intero numero di telefono, ad eccezione delle ultime tre cifre, viene offuscato con simboli asterisco. Ad esempio, 15552823 \* \* \* .|
-||**Dettagli chiamata** \> **Scheda** Avanzate|Informazioni non visualizzate.|Tutti i dettagli visualizzati, ad esempio i nomi dei dispositivi, l'indirizzo IP, la mappatura della subnet e altro ancora.|
-||**Dettagli chiamata** \> **Avanzate** \> **Scheda** Debug|Informazioni non visualizzate.|Tutti i dettagli visualizzati, ad esempio suffisso DNS e SSID.|
-|**Riunioni**|Nomi dei partecipanti|Solo il nome dell'utente per cui l'agente ha cercato. Altri partecipanti identificati come Utente interno o Utente esterno.|Tutti i nomi visualizzati.|
-||Numero di partecipanti|Numero di partecipanti.|Numero di partecipanti.|
-||Dettagli della sessione|Dettagli della sessione visualizzati con eccezioni. Viene visualizzato solo il nome dell'utente per cui l'agente ha cercato. Altri partecipanti identificati come Utente interno o Utente esterno. Ultime tre cifre del numero di telefono offuscate con simboli asterisco.|Dettagli della sessione visualizzati. Nomi utente e dettagli della sessione visualizzati. Ultime tre cifre del numero di telefono offuscate con simboli asterisco.|
+|**Chiamate**|Nome chiamante|Solo il nome dell'utente cercato dall'agente.|Nome utente.|
+||Nome del destinatario|Mostra come Utente interno o Utente esterno.|Nome del destinatario.|
+||Numero di telefono del chiamante|Numero di telefono intero ad eccezione delle ultime tre cifre, mascherate con asterischi. Ad esempio, 15552823\*\*\*.|Numero di telefono intero ad eccezione delle ultime tre cifre, mascherate con asterischi. Ad esempio, 15552823\*\*\*.|
+||Numero di telefono del destinatario|Numero di telefono intero ad eccezione delle ultime tre cifre, mascherate con asterischi. Ad esempio, 15552823\*\*\*.|Numero di telefono intero ad eccezione delle ultime tre cifre, mascherate con asterischi. Ad esempio, 15552823\*\*\*.|
+||**Dettagli** \> chiamata **Scheda Avanzate**|Informazioni non visualizzate.|Vengono mostrati tutti i dettagli, ad esempio i nomi dei dispositivi, l'indirizzo IP, la mappatura subnet e altro ancora.|
+||**Dettagli** \> chiamata **Avanzate** \> **Scheda Debug**|Informazioni non visualizzate.|Vengono mostrati tutti i dettagli, ad esempio suffisso DNS e SSID.|
+|**Riunioni**|Nomi dei partecipanti|Solo il nome dell'utente cercato dall'agente. Altri partecipanti identificati come Utente interno o Utente esterno.|Vengono visualizzati tutti i nomi.|
+||Numero partecipanti|Numero di partecipanti.|Numero di partecipanti.|
+||Dettagli sessione|Dettagli della sessione mostrati con eccezioni. Viene visualizzato solo il nome dell'utente cercato dall'agente. Altri partecipanti identificati come Utente interno o Utente esterno. Le ultime tre cifre del numero di telefono sono mascherate con asterischi.|Vengono mostrati i dettagli della sessione. Vengono visualizzati i nomi utente e i dettagli della sessione. Le ultime tre cifre del numero di telefono sono mascherate con asterischi.|
 ||||
 
 > [!NOTE]
-> Le informazioni contenute nella scheda Debug contengono dati di telemetria e di diagnostica del servizio destinati a supportare i tecnici del supporto Tecnico Microsoft. Senza il contesto dei dati aggiuntivi disponibili per i tecnici di supporto, potrebbero sembrare ridondanti, imprecisi o confusi. Anche se lo rendiamo disponibile per gli utenti esperti che cercano un altro livello di dettaglio nella risoluzione dei problemi relativi alle chiamate, non è consigliabile esprimere giudizi sulla base di questi dati senza il supporto Microsoft.
+> Le informazioni contenute nella sezione "Altro" della scheda Avanzate e nella scheda Debug contengono dati di telemetria e di diagnostica del servizio destinati ad assistere i tecnici del supporto tecnico Microsoft. Senza il contesto dei dati aggiuntivi disponibili per supportare i tecnici, potrebbe risultare ridondante, impreciso o confuso. Anche se lo rendono disponibile per gli utenti esperti che stanno cercando un altro livello di dettaglio per la risoluzione dei problemi di chiamata, non è consigliabile esprimere valutazioni in base a questi dati senza il supporto tecnico Microsoft.
 
 ## <a name="troubleshoot-user-call-quality-problems"></a>Risolvere i problemi di qualità delle chiamate degli utenti
 
-1. Aprire l'Teams di amministrazione ( ) e accedere con il supporto Teams comunicazioni o Teams <https://admin.teams.microsoft.com> credenziali di amministratore.
+1. Aprire l'interfaccia di amministrazione di Teams (<https://admin.teams.microsoft.com>) e accedere con il supporto per le comunicazioni Teams o con le credenziali di amministratore Teams.
 
-2. Nel **dashboard,** in **Ricerca utente,** iniziare a digitare il nome o l'indirizzo  SIP dell'utente di cui si vuole risolvere i problemi di chiamata oppure selezionare Visualizza utenti per visualizzare un elenco di utenti.
+2. Nel **dashboard**, in **Ricerca utente**, iniziare a digitare il nome o l'indirizzo SIP dell'utente di cui si vogliono risolvere i problemi di chiamata oppure selezionare **Visualizza utenti** per visualizzare un elenco di utenti.
 
-3. Selezionare l'utente nell'elenco.
+3. Selezionare l'utente dall'elenco.
 
-4. Selezionare **Cronologia chiamate** e quindi selezionare la chiamata o la riunione da risolvere.
+4. Seleziona **Cronologia chiamate** e quindi seleziona la chiamata o la riunione di cui vuoi risolvere i problemi.
 
-5. Selezionare la **scheda Avanzate** e quindi cercare gli elementi giallo e rosso che indicano problemi di qualità della chiamata o di connessione di qualità scarsa.
+5. Seleziona la scheda **Avanzate** e quindi cerca gli elementi gialli e rossi che indicano una bassa qualità della chiamata o problemi di connessione.
 
-   Nei dettagli della sessione per ogni chiamata o riunione, i problemi secondari vengono visualizzati in giallo. Se qualcosa è giallo, non rientra nell'intervallo normale e potrebbe contribuire al problema, ma è improbabile che sia la causa principale del problema. Se qualcosa è rosso, si tratta di un problema significativo ed è probabile che sia la causa principale della scarsa qualità delle chiamate per questa sessione.
+   Nei dettagli della sessione per ogni chiamata o riunione, i problemi secondari vengono visualizzati in giallo. Se qualcosa è giallo, è al di fuori dell'intervallo normale e potrebbe contribuire al problema, ma è improbabile che sia la causa principale del problema. Se qualcosa è rosso, si tratta di un problema significativo ed è probabilmente la causa principale della scarsa qualità delle chiamate per questa sessione.
 
-In rari casi, i dati sulla qualità dell'esperienza non vengono ricevuti per le sessioni audio. Spesso questo problema è causato da una chiamata interrotta o dalla fine della connessione con il client. In questo caso, la valutazione della sessione non è **disponibile.**
+In rari casi, i dati relativi alla qualità dell'esperienza non sono ricevuti per le sessioni audio. Spesso ciò è causato da una chiamata interrotta o quando la connessione con il client termina. In questo caso, la valutazione della sessione **non è disponibile**.
 
-Per le sessioni audio con dati QoE (Quality of Experience), la tabella seguente descrive i problemi principali che qualificano una sessione come **scarsa.**
+Per le sessioni audio con dati QoE (Quality of Experience), la tabella seguente descrive i problemi principali che qualificano una sessione come **scadente**.
 
-|Problema|Area|Descrizione|
+|Problema|Zona|Descrizione|
 |---|---|---|
-|Configurazione della chiamata|Sessione|Il codice di errore Ms-diag 20-29 indica che la configurazione della chiamata non è riuscita. L'utente non è riuscito a partecipare alla chiamata o alla riunione.|
-|Chiamata di qualità scarsa classificata per la rete audio|Sessione|Si sono verificati problemi di qualità della rete, ad esempio perdita di pacchetti, instabilità, degradazione di NMOS, RTT o proporzioni nascoste.|
-|Dispositivo non funzionante|Dispositivo|Un dispositivo non funziona correttamente. I rapporti di dispositivo non funzionanti sono: <p> DeviceRenderNotFunctioningEventRatio >= 0,005 <br>  DeviceCaptureNotFunctioningEventRatio >= 0,005|
+|Configurazione delle chiamate|Sessione|Il codice di errore Ms-diag 20-29 indica che la configurazione della chiamata non è riuscita. L'utente non ha potuto partecipare alla chiamata o alla riunione.|
+|Chiamata di rete audio classificata di qualità scarsa|Sessione|Sono stati rilevati problemi di qualità della rete (ad esempio perdita di pacchetti, instabilità, degradazione NMOS, RTT o rapporto nascosto).|
+|Dispositivo non funzionante|Dispositivo|Un dispositivo non funziona correttamente. I rapporti del dispositivo non funzionante sono: <p> DeviceRenderNotFunctioningEventRatio >= 0,005 <br>  DeviceCaptureNotFunctioningEventRatio >= 0,005|
 ||||
 
 ## <a name="related-topics"></a>Argomenti correlati

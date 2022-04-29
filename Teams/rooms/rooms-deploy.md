@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni su come distribuire Microsoft Teams Rooms, incluse le fasi di distribuzione.
-ms.openlocfilehash: 61fce84f9f3737f771e0417443de566444cc2ca2
-ms.sourcegitcommit: 9bee7cb9433bfc687387647a102f814dc52c8591
+ms.openlocfilehash: 18a5d72fb9c11b34bb994734b8d064c3aaa2cdae
+ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64839077"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125771"
 ---
 # <a name="deployment-overview"></a>Panoramica della distribuzione
 
@@ -53,12 +53,12 @@ Per altre informazioni su queste dipendenze, vedere i collegamenti alle linee gu
 Per prepararsi alla distribuzione Microsoft Teams Rooms, eseguire le attività principali principali seguenti:
 
 -   Definire Microsoft Teams Rooms account delle risorse.
--   Se si partecipa a Teams room per Azure Active Directory, preparare un gruppo di Azure AD con appartenenza dinamica in modo da contenere tutti gli account delle risorse Teams Rooms. In questo modo si semplifica la gestione futura, ad esempio l'applicazione dei criteri di accesso condizionale. Per sfruttare più facilmente Azure AD gruppi dinamici, determinare una convenzione di denominazione che identificherà in modo univoco gli account delle risorse Teams Rooms.
--   Se si unisce Teams Room ad Active Directory, preparare un'unità organizzativa e un gruppo di Active Directory in modo che possano contenere gli account di computer e risorse Microsoft Teams Rooms e, facoltativamente, preparare Criteri di gruppo oggetti (GPO) per abilitare la comunicazione remota di PowerShell.
+-   Se si partecipa Teams Rooms a Azure Active Directory, preparare un gruppo di Azure AD con appartenenza dinamica in modo da contenere tutti gli account delle risorse Teams Rooms. In questo modo si semplifica la gestione futura, ad esempio l'applicazione dei criteri di accesso condizionale. Per sfruttare più facilmente Azure AD gruppi dinamici, determinare una convenzione di denominazione che identificherà in modo univoco gli account delle risorse Teams Rooms.
+-   Se si unisce Teams Rooms ad Active Directory, preparare un'unità organizzativa e un gruppo di Active Directory per tenere gli account di computer e risorse Microsoft Teams Rooms e, facoltativamente, preparare Criteri di gruppo oggetti (GPO) per abilitare la comunicazione remota di PowerShell.
 
 ### <a name="define-microsoft-teams-rooms-resource-account-features"></a>Definire Microsoft Teams Rooms caratteristiche dell'account delle risorse 
 
-A seconda degli scenari di collaborazione che si è deciso di abilitare con la distribuzione Microsoft Teams Rooms, è necessario determinare le caratteristiche e le funzionalità assegnate a ogni Microsoft Teams Room abilitata.
+A seconda degli scenari di collaborazione che si è deciso di abilitare con la distribuzione Microsoft Teams Rooms, è necessario determinare le caratteristiche e le funzionalità assegnate a ogni Microsoft Teams Rooms abilitata.
 
 | **Scenario** | **Descrizione** | **Microsoft Teams Rooms funzionalità dell'account del servizio** |
 |---------- |------------- | --- |

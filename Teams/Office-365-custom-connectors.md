@@ -1,5 +1,5 @@
 ---
-title: Usare Microsoft 365 connettori personalizzati
+title: Gestire Microsoft 365 e connettori personalizzati
 author: guptaashish
 ms.author: guptaashish
 manager: prkosh
@@ -17,63 +17,59 @@ description: I connettori mantengono il team aggiornato, fornendo contenuto e ag
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7fef0b28d9663cdb472f4daf79076c2d4eefcd66
-ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
+ms.openlocfilehash: 100db95adf900a48898515b9bb9a3a753b47de4f
+ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64642980"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125441"
 ---
-# <a name="use-microsoft-365-and-custom-connectors-in-microsoft-teams"></a>Usare Microsoft 365 e connettori personalizzati in Microsoft Teams
+# <a name="manage-microsoft-365-and-custom-connectors"></a>Gestire Microsoft 365 e connettori personalizzati
 
-Per mantenere aggiornato il team, i connettori forniscono gli aggiornamenti dei servizi e dei contenuti usati di frequente direttamente in un Teams di lavoro. Con i connettori, gli Teams utenti possono ricevere aggiornamenti da servizi popolari come Trello, Wunderlist, GitHub e Azure DevOps Services. Gli aggiornamenti vengono pubblicati direttamente nello stream della chat del team.
+Per mantenere aggiornato il team, i connettori forniscono aggiornamenti dei contenuti e dei servizi usati di frequente direttamente in un canale Teams. Con i connettori, gli utenti Teams possono ricevere aggiornamenti dai servizi più diffusi come Trello, Wunderlist, GitHub e Azure DevOps Services. Gli aggiornamenti vengono pubblicati direttamente nel flusso di chat nel team.
 
-Microsoft 365 connettori vengono usati con gruppi di Microsoft Teams e Microsoft 365, semplificando la sincronizzazione di tutti i membri e la ricezione rapida di informazioni pertinenti. Sia Microsoft Teams che Exchange lo stesso modello di connettore, che consente di usare gli stessi connettori all'interno di entrambe le piattaforme. È tuttavia opportuno notare che la disabilitazione dei connettori per il gruppo di Microsoft 365 da cui dipende un team disabilita anche la possibilità di creare connettori per il team.
+Microsoft 365 connettori vengono usati sia con Microsoft Teams che con i gruppi di Microsoft 365, consentendo a tutti i membri di rimanere sincronizzati e ricevere rapidamente le informazioni pertinenti. Sia Microsoft Teams che Exchange utilizzano lo stesso modello di connettore, che consente di utilizzare gli stessi connettori all'interno di entrambe le piattaforme. Tuttavia, se si disabilitano i connettori configurati per un gruppo di Microsoft 365, viene disabilitata anche la possibilità per il gruppo Microsoft 365 di creare connettori.
 
-Qualsiasi membro di un team può connettere il team ai servizi cloud più diffusi con i connettori, se le autorizzazioni del team lo consentono e tutti i membri del team vengono informati delle attività da quel servizio. I connettori continuano a funzionare dopo che il membro che ha inizialmente configurazione il connettore è rimasto. Qualsiasi membro del team con le autorizzazioni per aggiungere o rimuovere può modificare la configurazione dei connettori da parte di altri membri.
+Qualsiasi membro di un team può connettere il proprio team ai servizi cloud più diffusi con i connettori se le autorizzazioni del team lo consentono e tutti i membri del team ricevono una notifica delle attività di quel servizio. I connettori continuano a funzionare dopo che il membro che ha inizialmente configurato il connettore è rimasto. Qualsiasi membro del team con le autorizzazioni per l'aggiunta o la rimozione può modificare la configurazione dei connettori da parte di altri membri.
 
-> [!NOTE]
-> I connettori sono disabilitati per impostazione predefinita negli ambienti Government Cloud Community (GCC). Per abilitarla, impostare i `ConnectorsEnabled` parametri o `ConnectorsEnabledForTeams` su `$true` con il `SetOrganizationConfig` cmdlet. Connessione alla Exchange Online [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps).
+## <a name="enable-or-disable-connectors-in-teams"></a>Abilitare o disabilitare i connettori in Teams
 
-## <a name="add-a-connector-to-a-channel"></a>Aggiungere un connettore a un canale
+Il modulo Exchange Online PowerShell V2 usa l'autenticazione moderna e funziona con l'autenticazione a più fattori, denominata MFA, per la connessione a tutti gli ambienti PowerShell correlati Exchange in Microsoft 365. Gli amministratori possono usare Exchange Online PowerShell per disabilitare i connettori per un intero tenant o una cassetta postale di un gruppo specifico, interessando tutti gli utenti di tale tenant o cassetta postale. Non è possibile disabilitare per pochi utenti specifici. Inoltre, i connettori sono disabilitati per impostazione predefinita per Government Community Cloud, denominati tenant GCC.
 
-Attualmente, è possibile aggiungere connettori usando Microsoft Teams desktop e client Web. Tuttavia, le informazioni pubblicate da questi connettori possono essere visualizzate in **tutti i client,** inclusi i dispositivi mobili.
+L'impostazione tenant sostituisce l'impostazione del gruppo. Ad esempio, se un amministratore abilita i connettori per il gruppo e li disabilita nel tenant, i connettori per il gruppo vengono disabilitati. Per abilitare un connettore in Teams, [connettersi a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-using-modern-authentication-with-or-without-mfa&preserve-view=true) usando l'autenticazione moderna con o senza MFA.
 
-1. Per aggiungere un connettore a un canale, fare clic sui puntini di sospensione **(...),** a destra del nome di un canale, quindi fare clic su **Connettori**.
+### <a name="commands-to-enable-or-disable-connectors"></a>Comandi per abilitare o disabilitare i connettori
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot dell'interfaccia Teams con l'opzione Connettori selezionata.](media/Use_Office_365_and_custom_connectors_in_Microsoft_Teams_image1.png)
+Eseguire i comandi seguenti in Exchange Online PowerShell:
 
-2. È possibile selezionare una varietà di connettori disponibili e quindi fare clic su **Aggiungi**.
+* Per disabilitare i connettori per il tenant: `Set-OrganizationConfig -ConnectorsEnabled:$false`.
+* Per disabilitare i messaggi interattivi per il tenant: `Set-OrganizationConfig -ConnectorsActionableMessagesEnabled:$false`.
+* Per abilitare i connettori per Teams, eseguire i comandi seguenti:
+  * `Set-OrganizationConfig -ConnectorsEnabled:$true`
+  * `Set-OrganizationConfig -ConnectorsEnabledForTeams:$true`
+  * `Set-OrganizationConfig -ConnectorsActionableMessagesEnabled:$true`
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot della finestra di dialogo Connettori che mostra i connettori disponibili.](media/Use_Office_365_and_custom_connectors_in_Microsoft_Teams_image2.png)
+Per altre informazioni sullo scambio di moduli di PowerShell, vedere [Set-OrganizationConfig](/powershell/module/exchange/Set-OrganizationConfig?view=exchange-ps&preserve-view=true). Per abilitare o disabilitare i connettori Outlook, [connettere le app ai gruppi in Outlook](https://support.microsoft.com/topic/connect-apps-to-your-groups-in-outlook-ed0ce547-038f-4902-b9b3-9e518ae6fbab).
 
-3. Immettere le informazioni necessarie del connettore selezionato e fare clic su **Salva**. Ogni connettore richiede un set di informazioni diverse per il corretto funzionamento e alcuni potrebbero richiedere l'accesso al servizio usando i collegamenti disponibili nella pagina di configurazione del connettore.
+<!---TBD: Delete this section after customer migration to new Webhook URL is complete --->
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot della pagina di configurazione per il connettore RSS.](media/Use_Office_365_and_custom_connectors_in_Microsoft_Teams_image3.png)
+#### <a name="connector-url-update-notification"></a>Notifica di aggiornamento dell'URL del connettore
 
-4. I dati forniti dal connettore vengono inseriti automaticamente nel canale.
+I connettori Teams stanno passando a un nuovo URL per migliorare la sicurezza. Durante la transizione, si riceverà una notifica per aggiornare il connettore configurato. Aggiornare il connettore al più presto per evitare interruzioni dei servizi di connettore. Per aggiornare il connettore:
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot dell'interfaccia Teams che mostra una conversazione in un canale.](media/Use_Office_365_and_custom_connectors_in_Microsoft_Teams_image4.png)
+1. Nella pagina di configurazione dei connettori selezionare il messaggio **Attenzione richiesta** accanto al connettore configurato.
 
-<!---Delete this section after customer migration to new Webhook URL is complete --->
+   ![Screenshot del messaggio Attenzione richiesta.](media/Teams_Attention_Required_message.png)
 
-> [!IMPORTANT]
-> **Notifica di aggiornamento dell'URL del connettore**
->
-> I Teams di rete stanno per passare a un nuovo URL per migliorare la sicurezza. Durante il corso di questa transizione, si riceveranno alcune notifiche per aggiornare il connettore configurato in modo da usare il nuovo URL. È consigliabile aggiornare immediatamente il connettore per evitare interruzioni dei servizi del connettore. Per aggiornare l'URL, è necessario seguire i passaggi seguenti:
->
-> 1. Nella pagina di configurazione dei connettori verrà visualizzato un messaggio "Attenzione richiesta" sotto il pulsante "Gestisci" per le connessioni da aggiornare.
-> ![Screenshot del messaggio "Attenzione richiesta".](media/Teams_Attention_Required_message.png)
-> 2. Per i connettori Webhook in arrivo, gli utenti possono ricreare la connessione semplicemente selezionando **Aggiorna URL** e usando l'URL del webhook appena generato.
-> ![Screenshot del pulsante "Aggiorna URL".](media/Teams_update_URL_button.png)
-> 3. Per altri tipi di connettori, l'utente dovrà rimuovere il connettore e ricreare la configurazione del connettore.
-> 4. Dopo l'aggiornamento dell'URL verrà visualizzato il messaggio "L'URL è aggiornato".
-> ![Screenshot del messaggio "L'URL è aggiornato".](media/Teams_URL_up_to_date.png)
+1. Per ricreare la connessione per i connettori webhook in ingresso, selezionare **Aggiorna URL** e usare l'URL webhook generato.
+
+   ![Screenshot del pulsante Aggiorna URL.](media/Teams_update_URL_button.png)
+
+1. Per altri tipi di connettore, rimuovere il connettore e ricreare la configurazione del connettore. Viene visualizzato un **URL aggiornato** .
+
+   ![Lo screenshot dell'URL è un messaggio aggiornato.](media/Teams_URL_up_to_date.png)
 
 ## <a name="see-also"></a>Vedere anche
 
-* [Creare connettori e webhook personalizzati](/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors)
+* [Panoramica su connettori e webhook personalizzati](/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors)
+* [Creare connettori Office 365](/microsoftteams/platform/webhooks-and-connectors/how-to/connectors-creating)

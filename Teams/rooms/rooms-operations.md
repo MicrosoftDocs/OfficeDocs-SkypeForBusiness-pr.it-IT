@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Informazioni sulla gestione di Microsoft Teams Rooms.
-ms.openlocfilehash: e214d0b438ea7dd9b710a7aba8597de6c5b76bdf
-ms.sourcegitcommit: 0967f725aad0a7b9c430b2e30a37ea333007558a
+ms.openlocfilehash: d57f84aa07c90b6a75693f0cbf739402a6e90a4c
+ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65106261"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125471"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Microsoft Teams Rooms la manutenzione e le operazioni
  
@@ -37,6 +37,15 @@ powershell -ExecutionPolicy unrestricted c:\rigel\x64\scripts\provisioning\Scrip
 ```
 
 I log verranno generati come file ZIP in c:\rigel.
+
+### <a name="managing-disk-space"></a>Gestione dello spazio su disco
+<a name="Space"> </a>
+
+I log scaricati nel dispositivo possono occupare spazio su disco. Se i registri non vengono regolarmente puliti, possono interferire con la normale funzionalità della stanza. Teams Rooms elimina i log scaricati dopo 30 giorni. Gli amministratori IT possono ignorare la pulizia del log usando l'impostazione del Registro di sistema del dispositivo.
+
+|Impostazione|Permette|
+|:-----|:-----|
+|HKLM\SOFTWARE\Microsoft\PPI\SkypeSettings\LogCleanupAgeThreshold  <br/> |Pulisce i log dopo 30 giorni.  <br/> |
   
 ## <a name="front-of-room-display-settings"></a>Impostazioni dello schermo della sala davanti alla stanza
 <a name="Display"> </a>

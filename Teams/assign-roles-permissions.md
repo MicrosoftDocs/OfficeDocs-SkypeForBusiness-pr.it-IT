@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b2f14993f47cdea5690413a32c9d286587db7324
-ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
+ms.openlocfilehash: 76ca4a5dfd6d120b71e23d899ec9c7749db99827
+ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2022
-ms.locfileid: "64556347"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125491"
 ---
 # <a name="assign-team-owners-and-members-in-microsoft-teams"></a>Assegnare proprietari e membri dei team in Microsoft Teams
 
@@ -41,7 +41,7 @@ La tabella seguente mostra le differenze tra l'autorizzazione di un proprietario
 |        **Elimina un canale standard**         |    Sì     |    Sì<sup>2</sup>|
 |          ***Aggiunge un canale privato**          |    Sì     |    Sì<sup>2</sup>|
 | ***Modifica il nome e la descrizione del canale privato** |    No     |    N/D|
-|        ***Elimina canale privato**         |    Sì     |    No|
+|        ***Eliminare un canale privato**         |    Sì     |    No|
 |          **Aggiungere un canale condiviso**          |    Sì     |    No|
 | **Modificare il nome/la descrizione del canale condiviso** |    No     |    <sup>No6</sup>|
 |        **Elimina canale condiviso**         |    Sì     |    <sup>No6</sup>|
@@ -63,7 +63,7 @@ La tabella seguente mostra le differenze tra l'autorizzazione di un proprietario
 
 ## <a name="moderator-capabilities"></a>Funzionalità moderatore
 
-Inoltre, se viene attivata la moderazione per un team, i proprietari e i membri del team possono assumere le funzioni di moderatore per un canale. I moderatori possono avviare nuovi post nel canale e controllare se i membri del team possono rispondere ai messaggi esistenti nel canale. I moderatori possono anche controllare se le app con funzionalità di bot e connettori possono inviare messaggi di canale.
+Inoltre, se viene attivata la moderazione per un team, i proprietari e i membri del team possono assumere le funzioni di moderatore per un canale. I moderatori possono avviare nuovi post nel canale e controllare se i membri del team possono rispondere ai messaggi esistenti nel canale. I moderatori possono anche controllare se le app con bot e connettori possono inviare messaggi di canale.
 
 Le funzionalità di moderatore sono assegnate a livello di canale. Per impostazione predefinita, i proprietari del team hanno funzionalità di moderatore. Per impostazione predefinita, le funzionalità di moderatore dei membri del team sono disattivate. Tuttavia, il proprietario del team può assegnare a un membro del team le funzionalità di moderatore del canale. I moderatori all'interno di un canale possono aggiungere e rimuovere altri moderatori all'interno del canale.
 
@@ -71,7 +71,10 @@ Per altre informazioni sulle le funzioni di moderatore, vedere [Configurare e ge
 
 ## <a name="assign-a-user-role"></a>Assegnare un ruolo utente
 
-Per assegnare un ruolo utente, in Teams selezionare il nome del team e quindi fare clic su **Altre opzioni** > **Gestisci team**. Nella scheda **Membri** è possibile aggiungere membri e scegliere proprietari e moderatori se si hanno autorizzazioni sufficienti. Per altre informazioni, vedere [Modificare le impostazioni del team in Teams](https://support.office.com/article/ce053b04-1b8e-4796-baa8-90dc427b3acc).
+Per assegnare un ruolo utente, in Teams selezionare il nome del team e quindi selezionare **Altre opzioni** (**...**) > **Gestisci team**. Nella scheda **Membri** è possibile aggiungere membri e scegliere proprietari e moderatori se si hanno autorizzazioni sufficienti. Per altre informazioni, vedere [Modificare le impostazioni del team in Teams](https://support.office.com/article/ce053b04-1b8e-4796-baa8-90dc427b3acc).
+
+> [!NOTE]
+> L'opzione **Gestisci team** non verrà visualizzata per i canali aggiunti. Selezionare il nome del team in *I tuoi team* più avanti e quindi selezionare **Altre opzioni** (**...**) a destra del nome.
 
 ## <a name="permissions-to-create-teams"></a>Autorizzazioni per la creazione di team
 

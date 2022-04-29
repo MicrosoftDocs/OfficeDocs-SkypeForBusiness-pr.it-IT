@@ -20,12 +20,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7ce782db18c15e3b08367e0956003f7af2dde75
-ms.sourcegitcommit: 5b1d8d6f811fab0b350a09e5187d982f952d0edb
+ms.openlocfilehash: 8c48c322c913b71eb47e1c093e40200d926d26f3
+ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "63047146"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125671"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -178,18 +178,9 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 - Emirati Arabi Uniti
 - Regno Unito
 
-**Questi paesi/aree geografiche e cloud non sono supportati**
-
-- Government Community Cloud (GCC)-H
-- Department of Defense (DOD)
-
 **Esclusioni e considerazioni**
 
 - **Posizione dei dati:** le posizioni dei dati di Teams, ad eccezione di quelle elencate sopra, non sono supportate al momento.
-
->[!Note]
-> Gli eventi live si basano sui servizi CDN di Azure, che potrebbero non essere disponibili in alcuni paesi. L'amministratore potrebbe dover configurare una VPN in conformità a tutte le leggi e le normative applicabili per connettersi alla rete aziendale in modo che queste app funzionino senza problemi. Al termine, gli utenti dell'organizzazione possono pianificare e partecipare a eventi live.
-
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.users.activity.audioqualitycolumn
 - Reporting
 description: Usare la telemetria in tempo reale con dettagli su dispositivi, reti e connettività per risolvere i problemi degli utenti con Microsoft Teams riunioni pianificate.
-ms.openlocfilehash: 09c31b7734a849740cf1b0ff5749e4d82c667faf
-ms.sourcegitcommit: bf0071417188b33fc23e2a420187da5024d4bd40
+ms.openlocfilehash: 4f56e50ddc8ac861e109bbc4d4a2a74533043d24
+ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "62518728"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125801"
 ---
 # <a name="use-real-time-telemetry-to-troubleshoot-poor-meeting-quality"></a>Usare i dati di telemetria in tempo reale per risolvere problemi di scarsa qualità delle riunioni
 
@@ -57,11 +57,11 @@ Per visualizzare tutte le informazioni e i dati relativi a una riunione per un u
 
 Per ottenere informazioni aggiuntive sui partecipanti a una riunione in corso, incluse le statistiche sul dispositivo, sulla rete e sull'audio, trovare la riunione in **Riunioni recenti** e selezionare il collegamento sotto la colonna **Partecipanti** .
 
-:::image type="content" alt-text="Screenshot della tabella dei dettagli dei partecipanti." source="media/participant-details.png" lightbox="media/participant-details.png":::
+:::image type="content" alt-text="Screenshot della tabella dei dettagli dei partecipanti." source="media/participant-details-edit.png" lightbox="media/participant-details-edit.png":::
 
 Per esaminare la telemetria di un determinato utente per una riunione in corso, incluse informazioni sui dettagli relativi a dispositivo, rete, audio, video e condivisione di contenuti, selezionare **l'ID riunione**.
 
-:::image type="content" alt-text="Screenshot dei dati della sessione utente di analisi delle chiamate." source="media/real-time-telemetry.png" lightbox="media/real-time-telemetry.png":::
+:::image type="content" alt-text="Screenshot dei dati della sessione utente di analisi delle chiamate." source="media/real-time-telemetry-edit.png" lightbox="media/real-time-telemetry-edit.png":::
 
 ## <a name="measures-available-in-real-time-analytics"></a>Misure disponibili in Real-Time Analytics
 
