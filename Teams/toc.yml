@@ -451,6 +451,8 @@ items:
                 href: teams-analytics-and-reports/pstn-minute-pools-report.md
               - name: Report di utilizzo PSTN
                 href: teams-analytics-and-reports/pstn-usage-report.md
+              - name: Rapporto sull'utilizzo delle chiamate in uscita per audioconferenza
+                href: audio-conferencing-dial-out-usage-report.md
               - name: Report sull'uso degli eventi live di Teams
                 href: teams-analytics-and-reports/teams-live-event-usage-report.md
               - name: Report sulla licenza di Teams Information Protection
@@ -543,9 +545,9 @@ items:
         items:
           - name: Comunicare con utenti di altre organizzazioni
             href: communicate-with-users-from-other-organizations.md
-          - name: Accesso esterno (federazione)
+          - name: Riunioni esterne e chat
             items:
-              - name: Gestire l'accesso esterno
+              - name: Gestire riunioni esterne e chat
                 href: manage-external-access.md
               - name: Chat native di Teams
                 href: native-chat-for-external-users.md
