@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 234121449025512f8a5ffe37814804cc775b7b37
-ms.sourcegitcommit: 0d61ca384e7d76612743de41c8fea4729072fb5e
+ms.openlocfilehash: 3ce84036102407c31076ea2ec12fb5dc96e6b082
+ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64837459"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125621"
 ---
 # <a name="it-admin-guide-to-education-insights-in-microsoft-teams"></a>Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams
 
@@ -231,6 +231,17 @@ Per impostazione predefinita, Insights è attivato, consentendo di raccogliere d
 
 > [!NOTE]
 > Se Insights è stato disattivato, i dati raccolti vengono eliminati. I dati eliminati in seguito al rifiuto esplicito non possono essere ripristinati in un secondo momento, anche se Insights viene riabilitato.
+
+
+### <a name="turn-machine-learning-in-insights-on-or-off"></a>Attivare o disattivare l’apprendimento automatico in Insights
+
+Per impostazione predefinita, le esperienze basate sull’apprendimento automatico della macchina in Insights sono disattivate. Per consentire queste informazioni dettagliate, devi **consentire Insights basato sull’apprendimento automatico**. Attivando questo pulsante, non verranno raccolti altri dati oltre ai dati già raccolti da Insights per l'istruzione.
+
+* Per modificare questa impostazione, apri [l'interfaccia di amministrazione di SDS](https://sds.microsoft.com/) e passa a **Impostazioni** > **Gestisci Insights per l'istruzione**. 
+* Modificare l’attivazione o la disattivazione di **Consenti Insights basato sull’apprendimento automatico**.
+
+> [!NOTE]
+> Questa commutazione dipende da **Raccogli dati attività per Insights**. La disattivazione di **Raccogli dati attività per Insights** disabiliterà anche il pulsante **Consenti Insights basato sull’apprendimento automatico**.
 
 ### <a name="turn-sds-for-insights-on-or-off"></a>Disattivare o attivare SDS
 
