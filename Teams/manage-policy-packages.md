@@ -20,12 +20,12 @@ ms.custom:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare e gestire pacchetti di criteri in Microsoft Teams per semplificare, semplificare e garantire la coerenza durante la gestione dei criteri per gruppi di utenti.
-ms.openlocfilehash: 173d5d1488196ea048a64ce12916f8115362c572
-ms.sourcegitcommit: 480046a53dfb6e6cf867e1920f8fb43dda9d3774
+ms.openlocfilehash: d38384889e48e7d666036675b1a52ae194ea9582
+ms.sourcegitcommit: 836926a4914eb33fc3e0d8d6c84cee886cb1a5a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "63055306"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65144985"
 ---
 # <a name="manage-policy-packages-for-microsoft-teams"></a>Gestire pacchetti di criteri per Microsoft Teams
 
@@ -87,7 +87,7 @@ I pacchetti di criteri personalizzati consentono di raggruppare un set di criter
 
 Per creare un nuovo pacchetto di criteri personalizzato:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams selezionare **Pacchetti di criteri** e quindi fare clic su **Aggiungi**.
+1. Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft Teams selezionare **Pacchetti di** criteri e quindi fare clic su **Aggiungi**.
 
     :::image type="content" source="media/policy-packages-add.png" alt-text="Screenshot del pulsante Aggiungi nella pagina Pacchetti di criteri nell'interfaccia di amministrazione.":::
 
@@ -97,7 +97,7 @@ Per creare un nuovo pacchetto di criteri personalizzato:
 
 3. Selezionare i tipi di criteri e i nomi dei criteri da includere nel pacchetto.
 
-4. Fare clic su **Salva**.
+4. Selezionare **Salva**.
 
 ## <a name="how-to-use-policy-packages"></a>Come usare i pacchetti di criteri
 
@@ -120,17 +120,17 @@ Ecco i passaggi per visualizzare, assegnare e personalizzare pacchetti di criter
 
 ### <a name="view-the-settings-of-a-policy-in-a-policy-package"></a>Visualizzare le impostazioni di un criterio in un pacchetto di criteri
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams selezionare **Pacchetti** di criteri e quindi selezionare un pacchetto di criteri facendo clic a sinistra del nome del pacchetto.
+1. Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft Teams selezionare **Pacchetti** di criteri e quindi selezionare un pacchetto di criteri facendo clic a sinistra del nome del pacchetto.
 
-2. Fare clic sul criterio da visualizzare.
+2. Selezionare il criterio da visualizzare.
 
 ### <a name="customize-policies-in-a-policy-package"></a>Personalizzare i criteri in un pacchetto di criteri
 
 È possibile modificare le impostazioni di un criterio tramite la pagina **Pacchetti** di criteri o direttamente nella pagina dei criteri nell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams eseguire una delle operazioni seguenti:
-    - Fare clic su **Pacchetti di criteri** e quindi selezionare il pacchetto di criteri facendo clic a sinistra del nome del pacchetto.
-    - Fare clic sul tipo di criterio.  Ad esempio, fare clic su **Criteri di messaggistica**.
+1. Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft Teams eseguire una delle operazioni seguenti:
+    - Selezionare **Pacchetti di criteri** e quindi selezionare il pacchetto di criteri facendo clic a sinistra del nome del pacchetto.
+    - Selezionare il tipo di criterio.  Ad esempio, fare clic su **Criteri di messaggistica**.
 
 2. Selezionare il criterio da modificare. I criteri collegati a un pacchetto di criteri hanno lo stesso nome del pacchetto di criteri.
 

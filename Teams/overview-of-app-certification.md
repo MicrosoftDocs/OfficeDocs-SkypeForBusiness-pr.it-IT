@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a8edd0afc2adde7a6867242dd0bdc0b406ca682
-ms.sourcegitcommit: 745d707ec63685ce7f973785e7056628472b9c45
+ms.openlocfilehash: 85277e9948dac1e083eb587f9bfc3787be3644a6
+ms.sourcegitcommit: 836926a4914eb33fc3e0d8d6c84cee886cb1a5a7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64910912"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65137157"
 ---
 # <a name="microsoft-365-app-compliance-program-for-security-compliance-and-privacy-of-third-party-apps"></a>Il programma di conformità dell’app Microsoft 365 per la sicurezza, la conformità e la privacy delle app di terze parti
 
@@ -80,7 +80,7 @@ Gli amministratori possono verificare rapidamente la presenza delle app certific
 
 * Quando si raccolgono altre informazioni su un'app sul Web, vedere l'icona scudo nella documentazione di Microsoft specifica dell'app.
 
-  :::image type="content" source="media/attested-app-doc-details.png" alt-text="Visualizzare le informazioni sulla certificazione di Microsoft 365 nell'articolo di guida dettagliato sulla sicurezza e la conformità di un'app.":::
+  :::image type="content" source="media/attested-app-doc-details.png" alt-text="Visualizzare le informazioni sulla certificazione di Microsoft 365 nell'articolo dettagliato della guida sulla sicurezza e la conformità di un'app.":::
 
 * Quando si controlla un'applicazione nell'interfaccia di amministrazione di Teams, ordinare l'elenco delle app usando la colonna Certificazione. Visualizzare l'icona e, facoltativamente, selezionare il collegamento per accedere alla pagina specifica dell'app menzionata in precedenza.
 
@@ -94,11 +94,33 @@ Gli amministratori possono verificare rapidamente la presenza delle app certific
 
    :::image type="content" source="media/attested-app-tac2.png" alt-text="Nell'interfaccia di amministrazione di Teams, nella finestra di dialogo per concedere le autorizzazioni, gli amministratori possono controllare il segno di spunta blu per essere certi che l'app sia certificata Microsoft 365.":::
 
-## <a name="view-security-compliance-and-privacy-information-in-microsoft-documentation"></a>Visualizzare le informazioni su sicurezza, conformità e privacy nella documentazione Microsoft
+## <a name="view-security-compliance-and-privacy-information"></a>Visualizzare le informazioni su sicurezza, conformità e privacy
 
-Per un'app attestata o certificata, i dettagli su sicurezza, privacy, conformità e altro ancora per ogni app sono elencati negli articoli della guida specifici dell'app collegati relativi alla [sicurezza e conformità delle app di Microsoft Teams](/microsoft-365-app-certification/teams/teams-apps).
+Le informazioni sulla sicurezza, la privacy, la conformità e i comportamenti per un'app autenticata o certificata sono disponibili nella documentazione di Microsoft e nell'interfaccia di amministrazione di Teams.
+
+### <a name="microsoft-documentation"></a>Documentazione Microsoft
+
+Sono elencati i dettagli su sicurezza, privacy, conformità e altro ancora di ogni app negli articoli della guida specifici dell'app collegati relativi alla [sicurezza e conformità delle app di Microsoft Teams](/microsoft-365-app-certification/teams/teams-apps).
 
 :::image type="content" source="media/attested-app-doc-details.png" alt-text="Argomenti su cui vengono fornite informazioni dettagliate per le app sottoposte al programma di conformità Microsoft.":::
+
+### <a name="teams-admin-center"></a>Interfaccia di amministrazione di Teams
+
+Quando si valuta un'app per l'organizzazione, è possibile usare CASB (Cloud Access Security Brokers) indipendenti, ad esempio Microsoft Cloud App Security (MCAS), per trovare informazioni sulla sicurezza e sui comportamenti di un'app. L'interfaccia di amministrazione di Teams include informazioni di sicurezza e conformità provenienti da MCAS per le app certificate Microsoft 365 per verificare se un'app soddisfa le proprie esigenze.
+
+> [!NOTE]
+> Questa funzionalità è disponibile per tutti gli amministratori, indipendentemente dal fatto che l'organizzazione disponga o meno di una licenza che supporta MCAS.
+
+Per accedere alle informazioni MCAS per un'app:
+
+1. Nell'interfaccia di amministrazione di Teams, selezionare **Gestisci app** in **app Teams**.
+1. Selezionare **Certificazione** per ordinare le app ed eseguire il push di tutte le app certificate Microsoft 365 all'inizio della tabella.
+1. Scegliere un'app certificata per Microsoft 365.
+1. Selezionare la scheda **Sicurezza e conformità**.
+
+   :::image type="content" source="media/mcas.png" alt-text="Screenshot della scheda Sicurezza e conformità dell'interfaccia di amministrazione di Teams":::
+
+   Per altri dettagli sulle funzionalità supportate per l'app, selezionare l'elenco a discesa per ogni categoria.
 
 <!--- TBD: Move to the permissions article 
 
@@ -119,7 +141,7 @@ After admins grant the org-wide permissions to an app, they can review the Graph
 
 Nell’interfaccia di amministrazione di Teams, ogni pagina dell'app contiene un collegamento all'informativa sulla privacy e alle condizioni per l'utilizzo dell'app.
 
-:::image type="content" source="media/tac-app-tou-privacy-info1.png" alt-text="Dall’interfaccia di amministrazione di Teams, gli amministratori possono accedere al collegamento all'informativa sulla privacy e alle condizioni per l'utilizzo per ogni app." lightbox="media/tac-app-tou-privacy-info2.png":::
+:::image type="content" source="media/tac-app-tou-privacy-info1.png" alt-text="Dall’interfaccia di amministrazione di Teams, gli amministratori possono accedere al collegamento all'informativa sulla privacy e alle condizioni per l'utilizzo per ogni app" lightbox="media/tac-app-tou-privacy-info2.png":::
 
 <!--- TBD: Parking some content for later review. Check if this content needs to be published.
 
