@@ -1,5 +1,5 @@
 ---
-title: Gestire l'accesso esterno (federazione)
+title: Gestire riunioni esterne e chat
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -17,20 +17,20 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.externalaccess.overview
 - seo-marvel-mar2020
-description: L'amministratore IT o di Teams può configurare l'accesso esterno per altri domini (federazione), per consentire agli utenti di tali domini di trovare, chiamare, chattare e configurare riunioni con gli utenti della propria organizzazione.
+description: L'amministratore IT o di Teams può configurare riunioni esterne e chat per altri domini, per consentire agli utenti di tali domini di trovare, chiamare, chattare e configurare riunioni con gli utenti della propria organizzazione.
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 06243ca47e26f66dd4194a9ec9e50cc5a6bfbde7
-ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
+ms.openlocfilehash: b3b1fb8a51993f0c1510a000e835bbae3098e11b
+ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64642850"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125721"
 ---
-# <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
+# <a name="manage-external-meetings-and-chat-in-microsoft-teams"></a>Gestire riunioni esterne e chattare in Microsoft Teams
 
-L'accesso esterno consente agli utenti di Teams esterni all'organizzazione di trovare, chiamare, chattare e configurare riunioni con la propria organizzazione in Teams. Puoi anche usare l'accesso esterno per comunicare con persone di altre organizzazioni che usano ancora Skype for Business (online e locale) e Skype.
+È possibile configurare riunioni esterne e chat in Teams usando la funzionalità *di accesso esterno*. L'accesso esterno consente agli utenti di Teams esterni all'organizzazione di trovare, chiamare, chattare e configurare riunioni con la propria organizzazione in Teams. Puoi anche usare l'accesso esterno per comunicare con persone di altre organizzazioni che usano ancora Skype for Business (online e locale) e Skype.
 
 Per consentire agli utenti di altre organizzazioni di accedere ai team e ai canali dell’organizzazione, è possibile usare l'accesso guest. Per altre informazioni sulle differenze tra accesso esterno e accesso guest, vedere [Confrontare l'accesso esterno e guest](communicate-with-users-from-other-organizations.md#compare-external-and-guest-access). 
 
@@ -42,9 +42,9 @@ Usare l'accesso esterno quando:
 
 - Si vuole poter essere trovati e contattati da qualsiasi altro utente di Teams al mondo tramite il proprio indirizzo di posta elettronica. 
 
-## <a name="plan-for-external-access"></a>Pianificare l'accesso esterno
+## <a name="plan-for-external-meetings-and-chat"></a>Pianificare riunioni esterne e chat
 
-I criteri di accesso esterno includono i controlli per ogni tipo di federazione a livello di organizzazione e di utente. La disattivazione di un criterio a livello di organizzazione lo disattiva per tutti gli utenti, indipendentemente dall'impostazione a livello di utente. Tutte le impostazioni di accesso esterno sono abilitate per impostazione predefinita.
+I criteri di accesso esterno includono i controlli per i livelli sia di organizzazione sia di utente. La disattivazione di un criterio a livello di organizzazione lo disattiva per tutti gli utenti, indipendentemente dall'impostazione a livello di utente. Tutte le impostazioni di accesso esterno sono abilitate per impostazione predefinita.
 
 L'interfaccia di amministrazione di Teams controlla l'accesso esterno a livello di organizzazione. La maggior parte delle opzioni, ad eccezione delle restrizioni di dominio, è disponibile a livello di utente tramite PowerShell. Per altre informazioni, vedi [Utilizzo di PowerShell](#using-powershell) di seguito.
 

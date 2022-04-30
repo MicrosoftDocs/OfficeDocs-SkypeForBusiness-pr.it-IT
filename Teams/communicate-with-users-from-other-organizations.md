@@ -17,24 +17,24 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-description: Informazioni su come telefonare, chattare, trovare e aggiungere utenti esterni all'organizzazione in Microsoft Teams usando l'accesso esterno (federazione) e l'accesso guest.
-ms.openlocfilehash: db5d29a9d7afd121c3cecc47aa3ce717bb815f54
-ms.sourcegitcommit: 2388838163812eeabcbd5331aaf680b79da3ccba
+description: Informazioni su come telefonare, chattare, trovare e aggiungere utenti esterni all'organizzazione in Microsoft Teams usando l'accesso esterno e l'accesso guest.
+ms.openlocfilehash: c2cf4a3820cceacf1f84401161d130995ecbc98f
+ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64592741"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125481"
 ---
 # <a name="use-guest-access-and-external-access-to-collaborate-with-people-outside-your-organization"></a>Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione
 
-Se è necessario comunicare e collaborare con persone esterne all'organizzazione, è possibile scegliere tra le due opzioni disponibili in Microsoft Teams:
+Questo articolo descrive due delle opzioni per collaborare con persone esterne all'organizzazione:
 
 - **Accesso esterno**: tipo di federazione che consente agli utenti di trovare, chiamare e chattare con persone di altre organizzazioni. Queste persone non possono essere aggiunte ai team a meno che non vengano invitate come guest.
 - **Accesso guest**: consente di invitare persone esterne all'organizzazione a partecipare a un team. Le persone invitate ottengono un account guest in Azure Active Directory.
 
-Tenere presente che Teams consente di invitare alle riunioni anche persone esterne all'organizzazione. Per questa operazione non è necessario configurare l'accesso esterno o guest.
+Per una panoramica completa della collaborazione esterna in Microsoft 365, vedere [Panoramica delle opzioni di collaborazione esterna in Microsoft 365](/microsoft-365/enterprise/external-guest-access).
 
-## <a name="external-access-federation"></a>Accesso esterno (federazione)
+## <a name="external-access-external-chat-and-meetings"></a>Accesso esterno (chat e riunioni esterne)
 
 Configurare l'accesso esterno se è necessario trovare, chiamare, chattare e configurare riunioni con persone esterne all'organizzazione che usano Teams, Skype for Business (online o in locale) o Skype. 
 

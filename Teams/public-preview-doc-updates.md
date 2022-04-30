@@ -18,12 +18,12 @@ description: Informazioni sull'anteprima pubblica in Microsoft Teams. Provare le
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: e3fdf0901d150df63fded6dc49822ad81f81f7d5
-ms.sourcegitcommit: bd05783dfb33a63e0eb083a2135f97d110dc81a3
+ms.openlocfilehash: f814483cee8941d3fd29d2442d653c444915d1a5
+ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2022
-ms.locfileid: "65059187"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "65125781"
 ---
 # <a name="microsoft-teams-public-preview"></a>Anteprima pubblica in Microsoft Teams
 
@@ -73,6 +73,14 @@ Per abilitare l'anteprima pubblica su un client desktop o Web, è necessario com
 
 > [!NOTE]  
 > Questa opzione è disponibile solo quando **Mostra funzionalità di anteprima** è impostato su **Abilitato**.
+
+### <a name="public-preview-for-microsoft-teams-rooms-on-windows"></a>Anteprima pubblica per Microsoft Teams Rooms in Windows
+
+L'anteprima pubblica è disattivata per impostazione predefinita. Quando l'anteprima pubblica è attivata, gli utenti finali hanno accesso alle funzionalità in anteprima pubblica in Teams Rooms abilitate. Per attivare l'anteprima pubblica, aggiungere ```<EnablePublicPreview>True</EnablePublicPreview>``` al file di configurazione XML.
+
+È consigliabile registrare 5-10 dispositivi nell'anteprima pubblica. 
+
+Tutte le funzionalità di anteprima pubblica vengono annunciate in [Anteprima pubblica di Microsoft Teams - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-teams-public-preview/bd-p/MicrosoftTeamsPublicPreview)
 
 ## <a name="teams-now-follows-office-preview-users"></a>Ora Teams segue gli utenti di Office Preview
 
