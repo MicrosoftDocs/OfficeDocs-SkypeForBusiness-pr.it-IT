@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff29da1f78c39163dbb8262e1a94687dad6c4aac
-ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
+ms.openlocfilehash: f91c286f08046d1a521d3758f1fc297bf2aa0d59
+ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125711"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187022"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
@@ -230,7 +230,7 @@ Introdotto in questo aggiornamento:
 
 - Condividere l'audio HDMI con i partecipanti alla riunione in Teams riunione
 - Cortana le competenze vocali (anteprima)
-- Impedire l'audio in base alle autorizzazioni audio quando Teams room si aggiunge come partecipante. Per altre informazioni, vedere [Gestire le autorizzazioni audio dei partecipanti in riunioni Teams](https://support.microsoft.com/office/manage-attendee-audio-permissions-in-teams-meetings-f9db15e1-f46f-46da-95c6-34f9f39e671a).
+- Impedire l'audio in base alle autorizzazioni audio quando Teams Rooms partecipa come partecipante. Per altre informazioni, vedere [Gestire le autorizzazioni audio dei partecipanti in riunioni Teams](https://support.microsoft.com/office/manage-attendee-audio-permissions-in-teams-meetings-f9db15e1-f46f-46da-95c6-34f9f39e671a).
 - Mettere in evidenza il video di un utente dalla console Teams Room e utilizzare il video in evidenza sugli schermi della sala
 
 > [!NOTE]

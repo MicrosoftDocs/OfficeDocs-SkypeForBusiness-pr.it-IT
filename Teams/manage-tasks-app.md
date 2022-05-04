@@ -21,12 +21,12 @@ MS.collection:
 - microsoftcloud-retail
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e4d410d643dcf0c3753e87fa03e4040812dd9a5a
-ms.sourcegitcommit: 836926a4914eb33fc3e0d8d6c84cee886cb1a5a7
+ms.openlocfilehash: 051ea9a68cda344cf10bc297c84b3cbda6e61437
+ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65137037"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65186992"
 ---
 # <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Tasks per l'organizzazione in Microsoft Teams
 
@@ -37,7 +37,7 @@ L'app Tasks offre un'esperienza di gestione delle attività coesiva in Microsoft
 > [!NOTE]
 > Man mano che Tasks viene implementata nei client desktop di Teams, inizialmente il nome dell'app sarà **Planner**. Il nome cambierà temporaneamente in **Tasks di Planner e To Do** e in seguito sarà chiamata **Tasks**. Sui client Teams per dispositivo mobile il nome dell’app sarà sempre **Tasks**. Potrebbe esserci un leggero ritardo nella disponibilità della versione per dispositivo mobile dopo che la versione desktop diventa disponibile.
 
-   ![Screenshot della visualizzazione elenco delle attività in Teams elenco.](media/manage-tasks-app-tasks.png)
+:::image type="content" source="media/manage-tasks-app-tasks.png" alt-text="Screenshot della visualizzazione elenco delle attività." lightbox="media/manage-tasks-app-tasks.png":::
 
 Per le organizzazioni che vogliono semplificare la gestione delle attività per i dipendenti in prima linea, Tasks include anche funzionalità che consentono di indirizzare, pubblicare e tenere traccia delle attività su larga scala di tutto il personale in prima linea. Ad esempio, la leadership aziendale e regionale può creare e pubblicare elenchi di attività destinati per specifiche luoghi, come negozi al dettaglio, e monitorare i progressi attraverso rapporti in tempo reale. I manager possono assegnare attività al proprio personale e dirigere le attività all'interno delle loro sedi. In questo modo i dipendenti in prima linea avranno una lista delle priorità delle attività assegnate su dispositivo mobile o desktop. Per abilitare [la pubblicazione delle attività](#task-publishing), configurare prima di tutto una gerarchia di assegnazione team per l'organizzazione, che definisce il modo in cui tutti i team della gerarchia sono correlati tra loro.
 
@@ -75,9 +75,19 @@ Tasks è abilitato per impostazione predefinita per tutti gli utenti di Teams ne
 
 Per consentire o bloccare l'uso di Tasks a utenti specifici dell'organizzazione, verificare che sia stato attivato per l'organizzazione nella pagina [Gestisci app](manage-apps.md) e quindi creare criteri di autorizzazione per le app personalizzati da assegnare a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
 
-### <a name="use-an-app-setup-policy-to-pin-tasks-to-teams"></a>Usare un criterio di configurazione dell'app per aggiungere Tasks a Teams
+### <a name="pin-tasks-to-teams"></a>Aggiungere attività a Teams
 
-I criteri di configurazione delle app consentono di personalizzare Teams per evidenziare le app più importanti per gli utenti dell'organizzazione. Le app impostate in un criterio vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop Teams e nella parte inferiore del Teams client per dispositivi mobili, in cui gli utenti possono accedervi rapidamente e facilmente.
+#### <a name="use-the-tailored-frontline-app-experience-to-pin-tasks-and-other-apps-to-teams"></a>Usa l'esperienza app in prima linea personalizzata per aggiungere Attività e altre app a Teams
+
+L'esperienza delle app in prima linea personalizzate in Teams aggiunge le app più rilevanti in Teams per gli utenti che hanno una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt). Le app aggiunte includono Attività, Walkie-talkie, turni e Approvazioni. Per impostazione predefinita, questa funzionalità è attivata e offre ai dipendenti in prima linea un'esperienza personalizzata in base alle loro esigenze.
+
+Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore del Teams client per dispositivi mobili, in cui gli utenti possono accedervi in modo semplice e rapido.
+
+Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri delle app impostati, vedere [Personalizzare le app Teams per i dipendenti in prima linea](pin-teams-apps-based-on-license.md).
+
+#### <a name="use-an-app-setup-policy-to-pin-tasks-to-teams"></a>Usare un criterio di configurazione dell'app per aggiungere Tasks a Teams
+
+I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere app più importanti per gli utenti.
 
 Per aggiungere l'app Tasks agli utenti, è possibile modificare i criteri globali (impostazione predefinita a livello di organizzazione) oppure creare e assegnare criteri di configurazione dell'app personalizzati. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
 
@@ -92,12 +102,13 @@ Non è consigliabile rimuovere una licenza di Exchange Online per gli informatio
 Grazie alla pubblicazione di attività, l’organizzazione può pubblicare elenchi di attività mirati a posizioni specifiche (team) all'interno dell'organizzazione per definire e condividere un piano di lavoro da completare in tali posizioni.
 
 - Le persone che fanno parte del team di pubblicazione, come la leadership aziendale o regionale, possono creare elenchi di attività e pubblicarli in team specifici.
-    ![Screenshot della pubblicazione delle attività.](media/manage-tasks-app-publish.png)
+
+    :::image type="content" source="media/manage-tasks-app-publish.png" alt-text="Screenshot della pubblicazione delle attività." lightbox="media/manage-tasks-app-publish.png":::
 - I manager dei team destinatari possono esaminare gli elenchi di attività pubblicati e assegnare singole attività ai membri del team.
-    ![Screenshot dell'assegnazione di un'attività.](media/manage-tasks-app-assign.png)
+    :::image type="content" source="media/manage-tasks-app-assign.png" alt-text="Screenshot dell'assegnazione di un'attività." lightbox="media/manage-tasks-app-assign.png":::
 - Per i dipendenti in prima linea la visualizzazione delle attività su dispositivo mobile è molto semplice. Possono allegare foto per mostrare il loro lavoro e contrassegnare le loro attività come completate.
 - Gli editori e i manager possono visualizzare i report per vedere lo stato di assegnazione e completamento delle attività a ogni livello, anche per posizione (team), elenco attività e attività individuale.
-    ![Screenshot delle attività assegnate in un dispositivo mobile.](media/manage-tasks-app-reporting.png)
+    :::image type="content" source="media/manage-tasks-app-reporting.png" alt-text="Screenshot delle attività pubblicate." lightbox="media/manage-tasks-app-reporting.png":::
 
 Gli utenti creano, gestiscono e pubblicano elenchi attività nella scheda **Elenchi pubblicati** nell'app Tasks. Questa scheda viene visualizzata solo per un utente se l’organizzazione ha [impostato una gerarchia di destinazione per team](#set-up-your-team-targeting-hierarchy) e l'utente fa parte di un team incluso nella gerarchia. La gerarchia determina se l'utente può pubblicare o ricevere elenchi attività e visualizzare i report per gli elenchi ricevuti.
 

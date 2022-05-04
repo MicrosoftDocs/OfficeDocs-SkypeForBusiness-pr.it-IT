@@ -18,12 +18,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c19894106dfd06c13ec9936657837aa42fcdade0
-ms.sourcegitcommit: 480046a53dfb6e6cf867e1920f8fb43dda9d3774
+ms.openlocfilehash: 776f0f31d54788fbffd86bbcbedd44e30ada28a3
+ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "62015016"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65186972"
 ---
 # <a name="walkie-talkie-app-in-microsoft-teams"></a>App Walkie-talkie in Microsoft Teams
 
@@ -35,23 +35,25 @@ Con Walkie-talkie in Teams, i dipendenti in prima linea possono ora comunicare i
 
 ### <a name="deploying-walkie-talkie"></a>Distribuzione di Walkie-talkie
 
-Walkie-talkie è supportato nei dispositivi Android con dispositivi Google Servizi mobili (GMS) e iOS. 
+Walkie-talkie è supportato nei dispositivi Android con dispositivi Google Servizi mobili (GMS) e iOS.
 
-Attualmente, Walkie-talkie non è preinstallate. Per abilitare questa caratteristica per gli utenti dell'organizzazione, è necessario aggiungere Walkie-talkie ai criteri di  [installazione](teams-app-setup-policies.md)  dell'appassegnati agli utenti dall'interfaccia di amministrazione [di Teams](https://admin.teams.microsoft.com/). Dopo l'abilitazione, Walkie-talkie diventerà disponibile nell'app entro 48 ore.
+### <a name="pin-walkie-talkie-to-teams"></a>Aggiungi Walkie-talkie a Teams
 
-### <a name="adding-walkie-talkie-to-your-app-list"></a>Aggiunta di Walkie-talkie all'elenco delle app
+#### <a name="use-the-tailored-frontline-app-experience-to-pin-walkie-talkie-and-other-apps-to-teams"></a>Usa l'esperienza app in prima linea personalizzata per aggiungere Walkie-talkie e altre app a Teams
 
-Nell'interfaccia di amministrazione di Microsoft Teams, in Teams i **criteri di installazione** **dell'app** > , **l'opzione Consenti aggiunta utente** dovrebbe essere impostata su **Attivato**. Quindi, nella sezione App aggiunte fare clic su **+Aggiungi app**.
+L'esperienza delle app in prima linea personalizzate in Teams aggiunge le app più rilevanti in Teams per gli utenti che hanno una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt). Le app aggiunte includono Walkie-talkie, turni, attività e Approvazioni. Per impostazione predefinita, questa funzionalità è attivata e offre ai dipendenti in prima linea un'esperienza personalizzata in base alle loro esigenze.
 
-:::image type="content" source="media/deploy-walkie-talkie-1.png" alt-text="Mostra la sezione App aggiunte e il pulsante Aggiungi app da selezionare.":::
+Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore del Teams client per dispositivi mobili, in cui gli utenti possono accedervi in modo semplice e rapido.
 
-Nel **riquadro Aggiungi app aggiunte** visualizzato a destra, usa la casella di testo **Cerca** per cercare Walkie-talkie. Quando viene visualizzato come risultato della ricerca, selezionare il pulsante **Aggiungi** a destra del nome per aggiungerlo all'elenco.
+Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri delle app impostati, vedere [Personalizzare le app Teams per i dipendenti in prima linea](pin-teams-apps-based-on-license.md).
 
-:::image type="content" source="media/deploy-walkie-talkie-2.png" alt-text="Mostra la barra laterale Aggiungi app aggiunte con Walkie immesso nel riquadro di ricerca e l'app Walkie-talkie nei risultati della ricerca, con il pulsante Aggiungi accanto.":::
+#### <a name="use-an-app-setup-policy-to-pin-walkie-talkie-to-teams"></a>Usare un criterio di configurazione dell'app per aggiungere Walkie-talkie a Teams
 
-L'app Walkie-talkie dovrebbe ora essere visualizzata nell'elenco App aggiunte ed essere disponibile per l'uso dopo aver fatto clic sul pulsante **Salva** .
+I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere app più importanti per gli utenti.
 
-:::image type="content" source="media/deploy-walkie-talkie-3.png" alt-text="Mostra l'elenco App aggiunte con l'app Walkie-talkie aggiunta e il pulsante Salva sotto l'elenco.":::
+Per aggiungere l'app Walkie-talkie per gli utenti, è possibile modificare il criterio globale (impostazione predefinita a livello di organizzazione) o creare e assegnare criteri di configurazione delle app personalizzati. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
+
+:::image type="content" source="media/deploy-walkie-talkie-2.png" alt-text="Screenshot che mostra l'aggiunta di Walkie-talkie all'elenco di app aggiunte nel riquadro Aggiungi app aggiunte." lightbox="media/deploy-walkie-talkie-2.png":::
 
 ### <a name="network-documentation"></a>Documentazione di rete
 

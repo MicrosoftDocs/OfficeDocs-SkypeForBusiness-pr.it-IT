@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5c3112740ab2b25b0f0107823d41c5b5e2d68f0f
-ms.sourcegitcommit: bd05783dfb33a63e0eb083a2135f97d110dc81a3
+ms.openlocfilehash: 4f717672c4cb297d7f3d2e95ceaa038eeceaa2ee
+ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2022
-ms.locfileid: "65059307"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187122"
 ---
 # <a name="tailor-teams-apps-for-your-frontline-workers"></a>Personalizzare le app Teams per i dipendenti in prima linea
 
@@ -29,7 +29,7 @@ ms.locfileid: "65059307"
 
 ## <a name="overview"></a>Panoramica
 
-Teams offre un modo semplice per aggiungere app per gli operatori in prima linea. Questa funzionalità consente di aggiungere app in base alla licenza per offrire ai dipendenti in prima linea un'esperienza personalizzata in Teams su misura per le loro esigenze.
+Teams aggiunge app in base alla licenza per offrire ai dipendenti in prima linea un'esperienza personalizzata in Teams su misura per le loro esigenze. 
 
 Con l'esperienza personalizzata delle app in prima linea, i dipendenti in prima linea ottengono le app più pertinenti in Teams senza che sia necessario alcun intervento da parte dell'amministratore.
 

@@ -24,12 +24,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2dcc945795da34ed3045ffadbc55445303b48281
-ms.sourcegitcommit: 836926a4914eb33fc3e0d8d6c84cee886cb1a5a7
+ms.openlocfilehash: 2cd0032291054e5a4c7ee8d9204d6173cdcdebdf
+ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65137007"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187002"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Turni per l'organizzazione in Microsoft Teams
 
@@ -71,9 +71,19 @@ Turni è abilitato per impostazione predefinita per tutti gli utenti di Teams ne
 
 Per consentire o bloccare l'uso di Turni da parte di utenti specifici dell'organizzazione, verificare che Turni sia attivato per l'organizzazione nella pagina [Gestisci app](../../manage-apps.md) . Creare quindi un criterio di autorizzazione per le app personalizzato e assegnarlo a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](../../teams-app-permission-policies.md).
 
-### <a name="use-an-app-setup-policy-to-pin-shifts-to-teams"></a>Usare i criteri di configurazione delle app per aggiungere Turni a Teams
+### <a name="pin-shifts-to-teams"></a>Aggiungi turni a Teams
 
-I criteri di configurazione delle app consentono di personalizzare Teams per evidenziare le app più importanti per gli utenti dell'organizzazione. Le app impostate in un criterio vengono aggiunte alla barra delle app&mdash;la barra sul lato del client desktop di Teams e nella parte inferiore dei client mobile di Teams&mdash;dove gli utenti possono accedervi rapidamente e facilmente.
+#### <a name="use-the-tailored-frontline-app-experience-to-pin-shifts-and-other-apps-to-teams"></a>Usa l'esperienza app in prima linea personalizzata per aggiungere Turni e altre app a Teams
+
+L'esperienza delle app in prima linea personalizzate in Teams aggiunge le app più rilevanti in Teams per gli utenti che hanno una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt). Le app aggiunte includono Turni, Walkie-talkie, attività e Approvazioni. Per impostazione predefinita, questa funzionalità è attivata e offre ai dipendenti in prima linea un'esperienza personalizzata in base alle loro esigenze.
+
+Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore del Teams client per dispositivi mobili, in cui gli utenti possono accedervi in modo semplice e rapido.
+
+Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri delle app impostati, vedere [Personalizzare le app Teams per i dipendenti in prima linea](../../pin-teams-apps-based-on-license.md).  
+
+#### <a name="use-an-app-setup-policy-to-pin-shifts-to-teams"></a>Usare i criteri di configurazione delle app per aggiungere Turni a Teams
+
+I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere le app più importanti per gli utenti.
 
 È possibile creare criteri di [configurazione delle app personalizzati](../../teams-app-setup-policies.md) aggiungendo l'app Turni e quindi [assegnandoli](../../assign-policies-users-and-groups.md) agli utenti. In alternativa, è possibile usare i criteri di configurazione dell'app che fanno parte dei pacchetti dei criteri Frontline Worker e Frontline Manager.
 

@@ -1,5 +1,5 @@
 ---
-title: Audioconferenza chiamata in uscita/Chiamata in minuti
+title: Chiamata in uscita/Chiamata in uscita per i servizi di audioconferenza Al minuto
 ms.author: heidip
 author: MicrosoftHeidi
 manager: serdars
@@ -21,82 +21,82 @@ f1.keywords:
 ms.custom:
 - Licensing
 - seo-marvel-mar2020
-description: Vantaggi per Chiamate in uscita e Chiamami a minuti. A partire dal 1° dicembre 2019 ogni abbonamento ai servizi di audioconferenza fornisce 60 minuti per utente al mese ai paesi dell'area A.
-ms.openlocfilehash: 2aa692b915953f3409de4c9cb9cb7d9146586ef5
-ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
+description: I vantaggi di Chiamata in uscita e Chiamami al minuto. A partire dal 1° dicembre 2019, ogni abbonamento ai servizi di audioconferenza fornisce 60 minuti per utente al mese nei paesi della Zona A.
+ms.openlocfilehash: 18300c44c806689b601c8b14d8c871ecb0ff6ba4
+ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62055866"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65187012"
 ---
-# <a name="audio-conferencing-subscription-dial-outcall-me-at-minutes-benefit"></a>Abbonamento ai servizi di audioconferenza "Chiamata in uscita"/"Chiamami al" minuti di vantaggio
+# <a name="audio-conferencing-subscription-dial-outcall-me-at-minutes-benefit"></a>Vantaggi minuti abbonamento audioconferenza "Chiamata in uscita"/"Chiama"
 
-## <a name="microsoft-teams-and-skype-for-business-pstn-audio-conferencing"></a>Microsoft Teams e Skype for Business audioconferenze PSTN
+## <a name="microsoft-teams-and-skype-for-business-pstn-audio-conferencing"></a>Audioconferenza PSTN Microsoft Teams e Skype for Business
 
-Ogni abbonamento ai servizi di audioconferenza offre 60 minuti per utente al mese che possono essere usati per effettuare chiamate in uscita a numeri non premium in qualsiasi paese dell'area A, come descritto in questo documento. Le dimensioni del pool di minuti di chiamata in uscita del tenant si basano *sulle licenze acquistate.* Questo vantaggio è applicabile alle licenze di abbonamento *mensile* per audioconferenze e non si estende alle licenze di audioconferenza a pagamento al minuto.
-
-> [!NOTE]
-> A partire dal 22 ottobre 2020, le dimensioni del pool di  minuti di chiamata in uscita del tenant si basano sul numero di licenze di abbonamento per audioconferenza acquistate. In precedenza, le dimensioni del pool di minuti di chiamata in uscita erano basate sul numero di licenze *assegnate* agli utenti.
+Ogni abbonamento standard per i servizi di audioconferenza fornisce 60 minuti al mese per l'utente, che possono essere utilizzati per effettuare chiamate in uscita con numeri non premium in qualsiasi paese della Zona A, come descritto in questo documento. Questo vantaggio si applica alle licenze *mensili di audioconferenza* e non si estende alle licenze con audioconferenza con tariffa al minuto.
 
 > [!NOTE]
-> La fine [](complimentary-dial-out-period.md) del periodo di chiamata in uscita gratuito non si è verificata il 30 novembre 2019 per i paesi in cui è disponibile l'abbonamento ai servizi di audioconferenza, ma attualmente non è disponibile la possibilità di configurare crediti comunicazioni. Questi paesi specifici sono Russia, Corea del Sud e Taiwan.
+> Le dimensioni del pool dei minuti di accesso esterno in uscita per le audioconferenze per gli abbonamenti usa e Canadesi si basano sul numero di licenze *assegnate* agli utenti. Ad esempio, se un cliente ha 100 licenze e 20 sono assegnate agli utenti, il pool di minuti di chiamata in uscita per i servizi di audioconferenza per l'abbonamento usa o Canada sarà di 1200 minuti (60 minuti di chiamata in uscita per le licenze di abbonamento x 20 assegnate agli utenti).
 
-## <a name="audio-conferencing-dial-out-from-a-meeting--call-me-at-details"></a>Audioconferenza "Chiamata in uscita da una riunione" & dettagli "Chiama a"
+> [!NOTE]
+> La fine del periodo di chiamata [in uscita gratuito](complimentary-dial-out-period.md) non è avvenuta il 30 novembre 2019 per i paesi in cui è disponibile l'abbonamento per i servizi di audioconferenza, ma attualmente non è possibile impostare i Crediti comunicazioni. Questi paesi specifici sono la Russia, la Corea del Sud e Taiwan.
 
-Per i clienti che adottano il servizio di audioconferenza, Microsoft offre la possibilità di effettuare chiamate in uscita dalle riunioni organizzate dagli utenti a cui è stata assegnata una licenza di abbonamento per audioconferenza. Le chiamate in uscita verso paesi non inclusi nell'elenco paesi e aree geografiche dell'area [A](audio-conferencing-zones.md) vengono addebitate al minuto usando i Crediti comunicazioni. Per le chiamate in uscita fatturate al minuto (chiamate che superano il pool di minuti di uscita del tenant o le chiamate verso destinazioni non presenti nell'elenco paesi e aree geografiche della zona [A),](audio-conferencing-zones.md) le chiamate e le relative tariffe sono basate sulla destinazione della chiamata e non sul paese di residenza dell'organizzatore o sul partecipante alla riunione che avvia la chiamata in uscita. Ad esempio, una chiamata in uscita audioconferenza a un numero di telefono in Francia, che è un paese dell'area A, verrà fatturata alla stessa tariffa al minuto se è stata avviata da un partecipante alla riunione negli Stati Uniti, in Francia o nello Zimbabwe.
+## <a name="audio-conferencing-dial-out-from-a-meeting--call-me-at-details"></a>Audioconferenza "Chiamata in uscita da una riunione" & dettagli "Chiama"
 
-|Posizione di utilizzo delle licenze dell'organizzatore della riunione |Destinazione chiamata |È possibile usare i minuti di biliardo per la chiamata in uscita?|Sono necessari crediti comunicazioni?|
+Per i clienti che adottano il nostro servizio di audioconferenza, Microsoft offre la possibilità di effettuare chiamate in uscita dalle riunioni organizzate dagli utenti a cui è assegnata una licenza di abbonamento per i servizi di audioconferenza. Le chiamate in uscita verso paesi non inclusi nell'elenco [dei paesi e delle aree geografiche della Zona A](audio-conferencing-zones.md) vengono addebitate al minuto tramite i Crediti comunicazioni. Per le chiamate in uscita fatturate al minuto (chiamate che superano il pool di minuti di chiamata in uscita tenant o verso destinazioni non presenti nell'elenco [paesi e aree geografiche della zona A](audio-conferencing-zones.md) ), le chiamate e le tariffe associate sono basate sulla destinazione della chiamata e non sul paese di residenza dell'organizzatore o sul partecipante alla riunione che avvia la chiamata in uscita. Ad esempio, una chiamata in uscita per audioconferenza a un numero di telefono in Francia, che è un paese della zona A, verrà addebitata alla stessa tariffa al minuto se è stata avviata da un partecipante alla riunione nel Stati Uniti, in Francia o nello Zimbabwe.
+
+|Posizione di utilizzo della licenza dell'organizzatore della riunione |Destinazione chiamata |Posso usare i minuti di piscina minuti di chiamata in uscita?|Ho bisogno di Crediti comunicazioni?|
 |---------|---------|---------|---------|
-|Stati Uniti |Stati Uniti |Sì (Area A) |Sì *dopo aver* consumato il pool di minuti del tenant         |
-|Stati Uniti |Regno Unito|Sì (Area A) |  Sì *dopo aver* consumato il pool di minuti del tenant       |
-|Stati Uniti     |Zimbabwe|    No     |     Sì in *TUTTE le* chiamate    |
-|Regno Unito     |Regno Unito|Sì (Area A) |  Sì *dopo aver* consumato il pool di minuti del tenant       |
-|Regno Unito     |Stati Uniti |Sì (Area A) |  Sì *dopo aver* consumato il pool di minuti del tenant       |
-|Regno Unito     |Zimbabwe|    No     |   Sì in *TUTTE le* chiamate      |
-|Zimbabwe     |Zimbabwe|    No     |    Sì in *TUTTE le* chiamate     |
-|Zimbabwe     |Stati Uniti | Sì (Area A) | Sì *dopo aver* consumato il pool di minuti del tenant        |
-|Zimbabwe     |Regno Unito | Sì (Area A) | Sì *dopo aver* consumato il pool di minuti del tenant        |
-|Isole Cook     |Isole Cook |   No      |    Sì in *TUTTE le* chiamate     |
-|Isole Cook     |Stati Uniti  | Sì (Area A) |  Sì *dopo aver* consumato il pool di minuti del tenant       |
-|Isole Cook     |Regno Unito | Sì (Area A) | Sì *dopo aver* consumato il pool di minuti del tenant        |
+|Stati Uniti |Stati Uniti |Sì (Zona A paese) |Sì *dopo* aver consumato il pool di minuti tenant         |
+|Stati Uniti |Regno Unito|Sì (Zona A paese) |  Sì *dopo* aver consumato il pool di minuti tenant       |
+|Stati Uniti     |Zimbabwe|    No     |     Sì su *TUTTE le* chiamate    |
+|Regno Unito     |Regno Unito|Sì (Zona A paese) |  Sì *dopo* aver consumato il pool di minuti tenant       |
+|Regno Unito     |Stati Uniti |Sì (Zona A paese) |  Sì *dopo* aver consumato il pool di minuti tenant       |
+|Regno Unito     |Zimbabwe|    No     |   Sì su *TUTTE le* chiamate      |
+|Zimbabwe     |Zimbabwe|    No     |    Sì su *TUTTE le* chiamate     |
+|Zimbabwe     |Stati Uniti | Sì (Zona A paese) | Sì *dopo* aver consumato il pool di minuti tenant        |
+|Zimbabwe     |Regno Unito | Sì (Zona A paese) | Sì *dopo* aver consumato il pool di minuti tenant        |
+|Isole Cook     |Isole Cook |   No      |    Sì su *TUTTE le* chiamate     |
+|Isole Cook     |Stati Uniti  | Sì (Zona A paese) |  Sì *dopo* aver consumato il pool di minuti tenant       |
+|Isole Cook     |Regno Unito | Sì (Zona A paese) | Sì *dopo* aver consumato il pool di minuti tenant        |
 |    |         |         |         |
 
 ## <a name="how-are-minute-pools-calculated"></a>Come vengono calcolati i pool di minuti?
 
-Si consideri l'esempio seguente. Un cliente ha acquistato 115 licenze di abbonamento per audioconferenza e ha 10 utenti negli Stati Uniti, 100 utenti nel Regno Unito e 5 utenti nello Zimbabwe, tutti con licenze di abbonamento per audioconferenze assegnate. Tutti i 115 utenti condividono un pool di (115 utenti x 60 min = 6.900 minuti di chiamata in uscita per  ogni mese di calendario) per effettuare chiamate in uscita a numeri non premium in uno dei paesi e nelle aree geografiche dell'area [A,](audio-conferencing-zones.md)indipendentemente dal luogo in cui l'organizzatore della riunione ha una licenza o una posizione fisica. Ad esempio, l'organizzatore di una riunione dello Zimbabwe sarà in grado di effettuare chiamate in uscita in uno dei paesi e nelle aree geografiche dell'area [A](audio-conferencing-zones.md) fino al limite di minuti.
+Si consideri l'esempio seguente. Un cliente ha acquistato 115 licenze di abbonamento per i servizi di audioconferenza e ha 10 utenti nel Stati Uniti, 100 utenti nel Regno Unito e 5 utenti in Zimbabwe, tutti con licenze di abbonamento per audioconferenza assegnate. Tutti e 115 utenti condividono un pool di (115 utenti x 60 min = 6.900 minuti di chiamate in uscita per ogni mese di calendario) per effettuare chiamate in uscita a numeri non premium in uno qualsiasi dei [paesi e delle aree geografiche della Zona A](audio-conferencing-zones.md), *indipendentemente da* dove l'organizzatore della riunione ha una licenza o si trova fisicamente. Ad esempio, un organizzatore di una riunione nello Zimbabwe sarà in grado di effettuare chiamate in uscita in uno qualsiasi dei [paesi e delle aree geografiche della Zona A](audio-conferencing-zones.md) fino al limite del pool di minuti.
 
-- Tutte le chiamate in uscita che superano i 6.900 minuti al mese di calendario vengono fatturate al minuto usando i Crediti comunicazioni alle tariffe pubblicate per tale destinazione.
+- Tutte le chiamate in uscita che superano i 6.900 minuti al mese solare vengono fatturate al minuto utilizzando i Crediti comunicazioni alle nostre tariffe pubblicate a tale destinazione.
 
    > [!NOTE]
-   > Il cliente deve configurare i Crediti [comunicazioni e](what-are-communications-credits.md) assegnare la licenza Crediti comunicazioni all'organizzatore della riunione.
+   > Il cliente deve impostare [i Crediti comunicazioni](what-are-communications-credits.md) e assegnare la licenza Crediti comunicazioni all'organizzatore della riunione.
 
-- Tutte le chiamate in uscita verso destinazioni non presenti nell'elenco dei paesi e delle aree geografiche dell'area [A](audio-conferencing-zones.md) vengono fatturate al minuto usando i Crediti comunicazioni alle tariffe pubblicate per tale destinazione (a condizione che il cliente abbia configurato crediti comunicazioni e assegnato la licenza Crediti comunicazioni all'organizzatore della riunione).
+- Tutte le chiamate in uscita verso destinazioni non incluse nell'elenco [dei paesi e delle aree geografiche della Zona A](audio-conferencing-zones.md) vengono fatturate al minuto utilizzando i Crediti comunicazioni alle nostre tariffe pubblicate a tale destinazione (a condizione che il cliente abbia configurato Crediti comunicazioni e assegnato la licenza Crediti comunicazioni all'organizzatore della riunione).
 
-## <a name="how-can-i-monitor-minute-my-pool-usage"></a>Come è possibile monitorare i minuti di utilizzo del pool?
+## <a name="how-can-i-monitor-minute-my-pool-usage"></a>Come posso monitorare i minuti di utilizzo del pool?
 
-- È possibile monitorare l'utilizzo rispetto al pool di minuti di chiamata in uscita nell'Microsoft Teams di amministrazione. Nel riquadro di spostamento sinistro passare a Report di **utilizzo &** analisi e quindi selezionare Pool di minuti  >   **PSTN.** Zona Un pool di minuti di chiamata in uscita verrà etichettato nel report come "Chiamate in uscita verso i paesi dell'area A".
-- Le notifiche tramite posta elettronica verranno inviate agli amministratori seguenti quando l'utilizzo del pool di minuti di chiamata in uscita dell'organizzazione ha raggiunto l'80% e il 100%:
+- È possibile monitorare l'utilizzo del pool di minuti di chiamata in uscita nell'interfaccia di amministrazione di Microsoft Teams. Nel riquadro di spostamento sinistro passare a **Analytics &** **reportUsare** >  report e quindi selezionare **Pool di minuti PSTN**. Il pool di minuti di chiamata in uscita Zona A verrà contrassegnato nel rapporto come "Chiamate in uscita verso i paesi della zona A".
+- Le notifiche tramite posta elettronica verranno inviate agli amministratori seguenti quando l'utilizzo del pool di minuti di chiamata in uscita dell'organizzazione raggiungerà l'80% e il 100%:
 
   - Amministratore fatturazione
-  - Skype for Business amministratore
+  - amministratore Skype for Business
   - Amministratore globale
   - Amministratore utente
   - Amministratore helpdesk
   - Amministratore del supporto tecnico
   - Azure AD amministratore locale del dispositivo aggiunto
-  - Amministratore dell'applicazione
-  - Amministratore della licenza
-  - Amministratore di dispositivi cloud
+  - Amministratore applicazione
+  - Amministratore licenze
+  - Amministratore del dispositivo cloud
   - Amministratore dell'autenticazione
   - Amministratore dell'autenticazione con privilegi
   - Amministratore comunicazioni Teams
   - Tecnico supporto comunicazioni Teams
-  - Teams Communications Support Specialist
+  - Specialista del supporto tecnico per le comunicazioni di Teams
   - Amministratore di Teams
 
-Per altre informazioni sui Crediti comunicazioni, vedere [Crediti comunicazioni](what-are-communications-credits.md).
+Per ulteriori informazioni sui Crediti comunicazioni, vedi [Crediti comunicazioni](what-are-communications-credits.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
-- [Aree del paese e dell'area geografica per le audioconferenze](audio-conferencing-zones.md)
+- [Paesi e aree geografiche per i servizi di audioconferenza](audio-conferencing-zones.md)

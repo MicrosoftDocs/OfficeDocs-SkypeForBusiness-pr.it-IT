@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 45f663f2c75d12a21fe38c4bbc71e2b3d93d8247
-ms.sourcegitcommit: 836926a4914eb33fc3e0d8d6c84cee886cb1a5a7
+ms.openlocfilehash: 205f0869e699384c9a37590db50e690b5b8bd804
+ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65137127"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "65186982"
 ---
 # <a name="teams-approvals-app-availability"></a>Disponibilità dell'app Approvazioni in Teams
 
@@ -122,15 +122,29 @@ L'app Approvazioni è disponibile per impostazione predefinita. È possibile dis
 
      :::image type="content" alt-text="mostra i dettagli per l'app Approvazioni." source="media/approvals-details-new.png" lightbox="media/approvals-details-new.png":::
 
-## <a name="app-policies"></a>Criteri per le app
+## <a name="pin-approvals-to-teams"></a>Aggiungere Approvazioni a Teams
 
-### <a name="retention-policy"></a>Criteri di conservazione
+### <a name="use-the-tailored-frontline-app-experience-to-pin-approvals-and-other-apps-to-teams"></a>Usa l'esperienza app in prima linea personalizzata per aggiungere Approvazioni e altre app a Teams
+
+L'esperienza delle app in prima linea personalizzate in Teams aggiunge le app più rilevanti in Teams per gli utenti che hanno una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt). Le app aggiunte includono Approvazioni, Walkie-talkie, attività e turni. Per impostazione predefinita, questa funzionalità è attivata e offre ai dipendenti in prima linea un'esperienza personalizzata in base alle loro esigenze.
+
+Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore del Teams client per dispositivi mobili, in cui gli utenti possono accedervi in modo semplice e rapido.
+
+Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri delle app impostati, vedere [Personalizzare le app Teams per i dipendenti in prima linea](pin-teams-apps-based-on-license.md).
+
+### <a name="use-an-app-setup-policy-to-pin-approvals-to-teams"></a>Usare i criteri di configurazione delle app per aggiungere Approvazioni a Teams
+
+I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere app più importanti per gli utenti.
+
+Per aggiungere l'app Approvazioni per gli utenti, è possibile modificare il criterio globale (impostazione predefinita a livello di organizzazione) o creare e assegnare criteri di configurazione delle app personalizzati. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
+
+## <a name="retention-policy"></a>Criteri di conservazione
 
 Approvazioni creati dall'app Approvazioni vengono archiviati nell'ambiente predefinito Microsoft Dataverse, che al momento non supporta i backup. Altre informazioni su come eseguire il [Backup e il ripristino di ambienti - Power Platform \|Microsoft Docs](/power-platform/admin/backup-restore-environments).
 
 I dati archiviati in Forms non verranno eliminati finché i proprietari del team non lo puliranno dalla scheda **moduli eliminati** nell'app Web Microsoft Forms.
 
-### <a name="conditional-access-policies"></a>Criteri di accesso condizionale
+## <a name="conditional-access-policies"></a>Criteri di accesso condizionale
 
 Attualmente, l'app Approvazioni in Teams non supporta i criteri di accesso condizionale impostati per Microsoft Teams.
 
