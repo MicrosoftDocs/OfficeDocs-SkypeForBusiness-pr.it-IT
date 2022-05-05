@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-scenario
 ms.reviewer: ''
 description: Informazioni su come gestire l'app Bookings in Teams per gli utenti dell'organizzazione.
-ms.openlocfilehash: aab7ce7a4813d851574f9a5796f5ce21d44774ff
-ms.sourcegitcommit: 68162a8c9dee9a27af596353baabeda9b8fa64f3
+ms.openlocfilehash: 5740da885fb271af212ba755d7db0228a996b429
+ms.sourcegitcommit: e102d72e67ab1c440c29ae6a048fc2cf8545fe01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64853067"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "65217930"
 ---
 # <a name="manage-the-bookings-app-in-microsoft-teams"></a>Gestire l'app Bookings in Microsoft Teams
 
@@ -41,7 +41,7 @@ Gli scheduler possono gestire più calendari e comunicazioni di reparto e del pe
 
 * La cassetta postale Exchange si trova in Exchange Online. Le cassette postali Exchange Server locali non sono supportate.
 * Microsoft Bookings è disponibile per l'organizzazione.
-* Gli utenti hanno una licenza appropriata. sono supportati Office 365 A3, A5, E3, E5, F1, F3, Microsoft 365 A3, A5, E3, E5, F1, F3 e Business Standard.
+* Gli utenti hanno una licenza appropriata. sono supportati Office 365 A3, A5, E1, E3, E5, F1, F3, Microsoft 365 A3, A5, E3, E5, F1, F3 e Business Standard.
 * Tutti gli utenti dell'app Bookings e tutto il personale che partecipa alle riunioni hanno una licenza che supporta Teams pianificazione delle riunioni.
 * [Prerequisiti del software e del browser](hardware-requirements-for-the-teams-app.md).
 
