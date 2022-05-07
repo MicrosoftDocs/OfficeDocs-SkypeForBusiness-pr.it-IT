@@ -349,11 +349,11 @@ items:
         items:
           - name: Proteggere la condivisione di file e la collaborazione con Teams
             href: /microsoft-365/solutions/setup-secure-collaboration-with-teams?wt.mc_id=TeamsTOCSecureCollab001
-          - name: Comunicare con utenti di altre organizzazioni
+          - name: Collaborare con persone esterne all'organizzazione
             href: communicate-with-users-from-other-organizations.md
-          - name: Accesso esterno (federazione)
+          - name: Riunioni esterne e chat
             items:
-              - name: Gestire l'accesso esterno
+              - name: Gestire riunioni esterne e chat
                 href: manage-external-access.md
               - name: Chat native di Teams
                 href: native-chat-for-external-users.md
