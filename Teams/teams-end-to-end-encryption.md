@@ -19,12 +19,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 202aee527896b331a6c8e64e1fc8736fa4942ecb
-ms.sourcegitcommit: fe71ecbe35b8adfb9166188923ed1111b3b8e2a1
+ms.openlocfilehash: d5865494b94c280295d13e0f99303bc76d1fc274
+ms.sourcegitcommit: 140c34f20f9cd48d7180ff03fddd60f5d1d3459f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63388190"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65249008"
 ---
 # <a name="use-end-to-end-encryption-for-one-to-one-microsoft-teams-calls"></a>Usare la crittografia end-to-end per le chiamate uno-a-uno di Microsoft Teams
 
@@ -79,13 +79,13 @@ Il criterio predefinito globale a livello di organizzazione specifica che la cri
 
 1. Usando un account aziendale o dell'istituto di istruzione a cui è stato assegnato il ruolo di amministratore di Teams o globale, accedere all'interfaccia di amministrazione di [Teams](https://admin.teams.microsoft.com/).
 
-2. Passare a **Altre impostazioni** > **Citeri di crittografia avanzata**.
+2. Vai a **Criteri di crittografia avanzati**.
 
 3. Scegliere il criterio predefinito oppure scegliere **Aggiungi** per aggiungere un nuovo criterio e quindi assegnare un nome al nuovo criterio.
 
 4. Per abilitare la crittografia end-to-end per gli utenti, per la **crittografia delle chiamate end-to-end**, scegliere **gli utenti possono attivarla**, quindi scegliere **Salva**.
 
-   Per disabilitare la crittografia end-to-end, scegliere **Disattiva per tutti.**
+   Per disabilitare la crittografia end-to-end, scegliere **Disabilitato**.
 
 Dopo aver completato la configurazione del criterio, assegnare il criterio a utenti, gruppi o all'intero tenant nello stesso modo in cui si gestiscono gli altri criteri di Teams. Per informazioni sull'uso dei criteri in Teams, vedere [Gestire Teams con i criteri](manage-teams-with-policies.md).
 

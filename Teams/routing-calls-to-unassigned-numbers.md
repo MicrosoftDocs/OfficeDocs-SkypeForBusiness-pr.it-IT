@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come instradare le chiamate a numeri non assegnati nell'organizzazione.
-ms.openlocfilehash: f53e83b3d4f26123feed70bdecad32cb45bc5588
-ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
+ms.openlocfilehash: cc464419375b6391d0d95d6e99441777a40da9cb
+ms.sourcegitcommit: bc73017b4a3fe6271830bc8c5044bfd43eec80c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "63442794"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "65266924"
 ---
 # <a name="routing-calls-to-unassigned-numbers"></a>Routing delle chiamate a numeri non assegnati
 
@@ -34,15 +34,15 @@ L'amministratore può instradare le chiamate a numeri non assegnati nell'organiz
 
 - Instradare tutte le chiamate a un determinato numero non assegnato a un annuncio personalizzato.
 
-- Instradare tutte le chiamate a un determinato numero non assegnato al switchboard principale.
+- Instrada tutte le chiamate a un determinato numero non assegnato al pannello comandi principale.
 
-È possibile instradare le chiamate a numeri non assegnati a un utente, a un account della risorsa associato a un Operatore automatico o a una coda di chiamata o a un servizio di annuncio che riproduce un file audio personalizzato al chiamante.
+È possibile instradare le chiamate a numeri non assegnati a un utente, a un account di risorse associato a un operatore automatico o a una coda di chiamata oppure a un servizio di annuncio che riprodurrà un file audio personalizzato al chiamante.
 
 ## <a name="configuration"></a>Configurazione
 
-Per instradare le chiamate a un numero non assegnato, usare il cmdlet New/Get/Set/Remove-CsTeamsUnassignedNumberTreatment disponibile nel modulo di PowerShell 2.5.1 o versione successiva di Teams.
+Per instradare le chiamate a un numero non assegnato, usare il cmdlet New/Get/Set/Remove-CsTeamsUnassignedNumberTreatment disponibile in Teams modulo di PowerShell 2.5.1 o versione successiva.
 
-È necessario specificare il numero o l'intervallo di numeri chiamati e il routing associato per le chiamate a questi numeri. Ad esempio, il comando seguente specifica che tutte le chiamate al numero +1 (555) 222-3333 verranno instradati all'account della risorsa aa@contoso.com:
+È necessario specificare il numero o l'intervallo di numeri chiamati e il routing associato per le chiamate a questi numeri. Ad esempio, il comando seguente specifica che tutte le chiamate al numero +1 (555) 222-3333 verranno instradate all'account della risorsa aa@contoso.com:
 
 ``` PowerShell
 $RAObjectId = (Get-CsOnlineApplicationInstance -Identity aa@contoso.com).ObjectId
@@ -51,7 +51,7 @@ $RAObjectId = (Get-CsOnlineApplicationInstance -Identity aa@contoso.com).ObjectI
 New-CsTeamsUnassignedNumberTreatment -Identity MainAA -Pattern "^\+15552223333$" -TargetType ResourceAccount -Target $RAObjectId -TreatmentPriority 1
 ```
 
-L'esempio successivo specifica che tutte le chiamate all'intervallo di numeri +1 (555) da 333-0000 a +1 (555) 333-9999 verranno instradate al servizio di annuncio, che riproduce il file audio MainAnnouncement.wav al chiamante.
+L'esempio successivo specifica che tutte le chiamate all'intervallo di numeri +1 (555) da 333-0000 a +1 (555) 333-9999 verranno instradate al servizio di annuncio, che riprodurrà il file audio MainAnnouncement.wav al chiamante.
 
 ```PowerShell
 $Content = Get-Content "C:\Media\MainAnnoucement.wav" -Encoding byte -ReadCount 0
@@ -65,13 +65,17 @@ New-CsTeamsUnassignedNumberTreatment -Identity TR1 -Pattern "^\+1555333\d{4}$" -
 
 ## <a name="notes"></a>Note
 
-- Se si instrada a un annuncio, il file audio verrà riprodotto una volta al chiamante.
+- Se il routing a un annuncio, il file audio verrà riprodotto una volta al chiamante.
 
-- Per instradare le chiamate a numeri di abbonato al Piano chiamate Microsoft non assegnato, il tenant deve avere crediti [comunicazioni disponibili](what-are-communications-credits.md).
+- Per instradare le chiamate a numeri di abbonati al Piano per chiamate Microsoft non assegnati, il tenant deve avere [crediti comunicazioni](what-are-communications-credits.md) disponibili.
 
-- Per instradare le chiamate a numeri di servizio del piano per chiamate Microsoft non assegnate, il tenant deve avere almeno una licenza Sistema telefonico - Utente virtuale.
+- Per instradare le chiamate a numeri di servizio del piano per chiamate Microsoft non assegnati, il tenant deve avere almeno un Sistema telefonico – Licenza utente virtuale.
 
-- I formati supportati per i file audio personalizzati sono WAV (PCM non compresso e lineare con profondità a 8/16/32 bit in mono o stereo), WMA (solo mono) e MP3. Il contenuto del file audio non può essere superiore a 5 MB.
+- I formati supportati per i file audio personalizzati sono WAV (non compresso, PCM lineare con profondità di 16/8/32 bit in mono o stereo), WMA (solo mono) e MP3. Il contenuto del file audio non può essere superiore a 5 MB.
+
+- Per entrambe le chiamate in ingresso a chiamate Microsoft Teams e in uscita da Microsoft Teams il numero chiamato verrà confrontato con l'intervallo di numeri non assegnati.
+
+- Se un modello/intervallo specificato contiene numeri di telefono assegnati a un account utente o di risorse nel tenant, le chiamate a questi numeri di telefono verranno indirizzate alla destinazione appropriata e non verranno indirizzate al trattamento dei numeri non assegnati specificati. Non ci sono altri controlli dei numeri nell'intervallo. Se l'intervallo contiene un numero di telefono esterno valido, le chiamate in uscita da Microsoft Teams a quel numero di telefono verranno instradate in base al trattamento.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
