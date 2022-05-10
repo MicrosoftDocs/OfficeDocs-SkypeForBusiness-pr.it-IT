@@ -3,6 +3,28 @@
 
 
 
+## <a name="week-of-may-02-2022"></a>Settimana del 2 maggio 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 5/2/2022 | [Microsoft Teams report utilizzo PSTN](/MicrosoftTeams/teams-analytics-and-reports/pstn-usage-report) | Volta |
+| 5/3/2022 | [Disponibilità dell'applicazione Approvazioni in Teams](/MicrosoftTeams/approval-admin) | Volta |
+| 5/3/2022 | [Configurazione dell'amministratore dei genitori in Teams per l'istruzione](/MicrosoftTeams/edu-parents-app) | Volta |
+| 5/3/2022 | [Gestire l'app Turni per l'organizzazione](/MicrosoftTeams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams) | Volta |
+| 5/3/2022 | [Gestire l'app Tasks per l'organizzazione in Microsoft Teams](/MicrosoftTeams/manage-tasks-app) | Volta |
+| 5/3/2022 | [Applicazione Walkie-talkie in Microsoft Teams](/MicrosoftTeams/walkie-talkie) | Volta |
+| 5/4/2022 | Gestire le impostazioni per l'organizzazione | Rimosso |
+| 5/4/2022 | [Microsoft Teams report sull'utilizzo delle app](/MicrosoftTeams/teams-analytics-and-reports/app-usage-report) | Volta |
+| 5/4/2022 | [Check-in e rilascio sala su pannelli Microsoft Teams](/MicrosoftTeams/devices/check-in-and-room-release) | Volta |
+| 5/4/2022 | [Gestire i dispositivi in Microsoft Teams](/MicrosoftTeams/devices/device-management) | Volta |
+| 5/5/2022 | [Creare una coda di chiamata tramite cmdlet](/MicrosoftTeams/create-a-phone-system-call-queue-via-cmdlets) | Volta |
+| 5/5/2022 | Usare i rapporti attività per Microsoft Teams | Rimosso |
+| 5/6/2022 | [Teams configurazione della tastiera del telefono](/MicrosoftTeams/dial-pad-configuration) | Volta |
+| 5/6/2022 | [Gestire i modelli di team nell'interfaccia di amministrazione](/MicrosoftTeams/templates-policies) | Volta |
+| 5/6/2022 | [Criteri di conformità di accesso condizionale e Intune dispositivi supportati per Microsoft Teams Rooms](/MicrosoftTeams/rooms/supported-ca-and-compliance-policies) | Volta |
+
+
 ## <a name="week-of-april-25-2022"></a>Settimana del 25 aprile 2022
 
 
@@ -71,55 +93,3 @@
 | 4/21/2022 | [Condurre un'indagine di eDiscovery sul contenuto](/MicrosoftTeams/ediscovery-investigation) | Volta |
 | 4/22/2022 | [Kaizala e Microsoft Teams](/MicrosoftTeams/get-started-kaizala-teams) | Volta |
 | 4/22/2022 | [Spostarsi tra Microsoft Teams](/MicrosoftTeams/navigate-teams) | Volta |
-
-
-## <a name="week-of-april-04-2022"></a>Settimana del 4 aprile 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 4/4/2022 | [Usare connettori Microsoft 365 e personalizzati](/MicrosoftTeams/office-365-custom-connectors) | Volta |
-| 4/4/2022 | [Disponibilità dell'applicazione Approvazioni in Teams](/MicrosoftTeams/approval-admin) | Volta |
-| 4/1/2022 | Usare schede predefinite e personalizzate in Microsoft Teams | Rimosso |
-| 4/4/2022 | [Informazioni sulle app in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | Volta |
-| 4/4/2022 | [Come usare Microsoft Teams dispositivi con pannelli](/MicrosoftTeams/devices/use-teams-panels) | Volta |
-| 4/4/2022 | [Semplifica i processi aziendali negli ambienti di vendita al dettaglio](/MicrosoftTeams/expand-teams-across-your-org/retail-business-processes) | Volta |
-| 4/4/2022 | [Usare PowerShell per connettere Turni alla gestione della forza lavoro Blue Yonder](/MicrosoftTeams/expand-teams-across-your-org/shifts/shifts-connector-blue-yonder-powershell-setup) | Volta |
-| 4/4/2022 | [Usare PowerShell per gestire la connessione di Turni alla gestione della forza lavoro Blue Yonder](/MicrosoftTeams/expand-teams-across-your-org/shifts/shifts-connector-powershell-manage) | Volta |
-| 4/4/2022 | [Gestire l'accesso esterno (federazione)](/MicrosoftTeams/manage-external-access) | Volta |
-| 4/4/2022 | [Gestire i criteri di autorizzazione app in Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies) | Volta |
-| 4/4/2022 | [monitoraggio e avvisi di Microsoft Teams](/MicrosoftTeams/alerts/teams-admin-alerts) | Volta |
-| 4/4/2022 | [Gestire i tag in Microsoft Teams](/MicrosoftTeams/manage-tags) | Volta |
-| 4/4/2022 | [Gestire le impostazioni delle riunioni](/MicrosoftTeams/meeting-settings-in-teams) | Volta |
-| 4/4/2022 | [Aspetto della linea condivisa in Microsoft Teams](/MicrosoftTeams/shared-line-appearance) | Volta |
-| 4/4/2022 | [Microsoft Teams report sull'utilizzo](/MicrosoftTeams/teams-analytics-and-reports/teams-usage-report) | Volta |
-| 4/4/2022 | [Microsoft Teams report attività utente](/MicrosoftTeams/teams-analytics-and-reports/user-activity-report) | Volta |
-| 4/5/2022 | [Configurare Microsoft Teams nell'azienda](/MicrosoftTeams/deploy-enterprise-setup) | Volta |
-| 4/5/2022 | [Gestire l'accesso alle app Teams in Microsoft 365](/MicrosoftTeams/manage-third-party-teams-apps) | Volta |
-| 4/5/2022 | [Panoramica della convalida delle app e dei test delle app da parte di Microsoft](/MicrosoftTeams/overview-of-app-validation) | Aggiunto |
-| 4/5/2022 | [Informazioni sulle app di terze parti in Microsoft Teams](/MicrosoftTeams/overview-third-party-apps) | Aggiunto |
-| 4/6/2022 | [Piani per chiamate in Microsoft Teams](/MicrosoftTeams/calling-plan-landing-page) | Volta |
-| 4/6/2022 | [Disponibilità paese/area geografica - Audioconferenza, Piani per chiamate](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) | Volta |
-| 4/6/2022 | [Informazioni sulle app in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | Volta |
-| 4/6/2022 | [Piani di chiamata e routing](/MicrosoftTeams/dial-plans-routing-overview) | Aggiunto |
-| 4/6/2022 | [Recuperare numeri di telefono per gli utenti](/MicrosoftTeams/getting-phone-numbers-for-your-users) | Volta |
-| 4/6/2022 | [Quanti numeri di telefono puoi ottenere?](/MicrosoftTeams/how-many-phone-numbers-can-you-get) | Volta |
-| 4/6/2022 | [Gestire i criteri delle riunioni generali](/MicrosoftTeams/meeting-policies-in-teams-general) | Volta |
-| 4/6/2022 | [Panoramica della convalida delle app e dei test delle app da parte di Microsoft](/MicrosoftTeams/overview-of-app-validation) | Volta |
-| 4/6/2022 | [Cercare numeri di telefono per gli utenti](/MicrosoftTeams/search-for-phone-numbers-for-users) | Volta |
-| 4/6/2022 | [licenze per i componenti aggiuntivi Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/microsoft-teams-add-on-licensing) | Volta |
-| 4/6/2022 | [Conformità delle comunicazioni con Microsoft Teams](/MicrosoftTeams/communication-compliance) | Volta |
-| 4/6/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
-| 4/7/2022 | [Gestire l'app Bookings in Microsoft Teams](/MicrosoftTeams/bookings-app-admin) | Volta |
-| 4/7/2022 | [Visite virtuali con Microsoft Teams e l’app Bookings](/MicrosoftTeams/expand-teams-across-your-org/bookings-virtual-visits) | Volta |
-| 4/7/2022 | [Gestire l'esperienza di partecipazione per Teams visite virtuali nei browser](/MicrosoftTeams/expand-teams-across-your-org/browser-join) | Aggiunto |
-| 4/7/2022 | [Visite virtuali con Teams - Integrazione in Cerner EHR](/MicrosoftTeams/expand-teams-across-your-org/healthcare/ehr-admin-cerner) | Volta |
-| 4/7/2022 | [Visite virtuali con Teams - Integrazione in Epic EHR](/MicrosoftTeams/expand-teams-across-your-org/healthcare/ehr-admin) | Volta |
-| 4/6/2022 | Gestire l'esperienza di partecipazione per Teams visite virtuali nei browser per dispositivi mobili | Rimosso |
-| 4/7/2022 | [Usare l'onboarding guidato di Frontline Worker per rendere operativa la forza lavoro in prima linea](/MicrosoftTeams/flw-onboarding-wizard) | Volta |
-| 4/7/2022 | [Acquistare app di terze parti per Teams](/MicrosoftTeams/purchase-third-party-apps) | Volta |
-| 4/7/2022 | [Modulo di PowerShell Teams - Versioni supportate](/MicrosoftTeams/teams-powershell-supported-versions) | Volta |
-| 4/8/2022 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | Volta |
-| 4/8/2022 | [Criteri di conformità di accesso condizionale e Intune dispositivi supportati per Microsoft Teams Rooms](/MicrosoftTeams/rooms/supported-ca-and-compliance-policies) | Volta |
-| 4/8/2022 | [Modulo di PowerShell Teams - Versioni supportate](/MicrosoftTeams/teams-powershell-supported-versions) | Volta |
-| 4/8/2022 | [Limitare gli utenti che possono visualizzare durante la ricerca nella directory in Teams](/MicrosoftTeams/teams-scoped-directory-search) | Volta |
