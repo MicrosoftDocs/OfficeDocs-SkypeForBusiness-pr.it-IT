@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
 description: Informazioni su come utilizzare call quality dashboard Power BI report per visualizzare i dati cronologici di Operatore automatico e Coda di chiamata.
-ms.openlocfilehash: 57552af3a1df108dbbf86172793bb9ea86ed1b10
-ms.sourcegitcommit: f3c380f745af4c3aaa2720234860b45696a0c333
+ms.openlocfilehash: 66394094f51d58344f151b8ebb7059c2e390c089
+ms.sourcegitcommit: 56d529cdbd8d8733350625316082f339ae8d66c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "63711490"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294097"
 ---
 # <a name="auto-attendant--call-queue-historical-report"></a>Report cronologico della coda di chiamata & operatore automatico
 
@@ -157,7 +157,7 @@ Eseguire le operazioni seguenti:
 
 |Nome                                    |Tipo di dati                |Descrizione                            |
 |:---------------------------------------|:------------------------|:--------------------------------------|
-|Nome AA                                 |Testo                     |Nome dell'account della risorsa associato a Operatore automatico<br><br>Se il nome completo account risorsa è **aa_test@microsoft.com** questo valore sarà: **aa_test** |
+|Nome AA                                 |Testo                     |Nome dell'account della risorsa associato a Operatore automatico<br><br>Se il nome completo Account risorsa è **aa_test@microsoft.com**, il valore sarà: **aa_test** |
 |AACallerActionCount                     |Numero intero             |Riepiloga: Somma<br>Numero di azioni selezionate dal chiamante in Operatore automatico durante la chiamata  |
 |AACallFlow                              |Testo                     |Incapsula i diversi stati della chiamata operatore automatico: valori possibili:<br><br>§ abs_search<br>§ annuncio<br>§ automatic_menu<br>§ call_termination<br>§ call_transfer<br>§ first_level_menu<br>§ main_menu<br>§ speech_input_confirmation<br>§ user_selection |
 |AACallResult                            |Testo                     |Risultato finale della chiamata: valori possibili:<br><br>§ failed_to_establish_media<br>§ failover_to_operator<br>§ oaa_chain_too_long<br>§ oaa_session_too_long<br>§ service_declined<br>§ service_terminated<br>§ terminated_automatic_selection<br>§ terminated_no_operator<br>§ terminated_transfer_failed<br>***§ transferred_to_operator***<br>§ transferred_to_receptionist<br>§ transferred_to_self<br>§ transferred_to_shared_voicemail<br>§ transferred_to_user<br>§ sconosciuto<br>§ user_terminated |
@@ -218,7 +218,7 @@ Eseguire le operazioni seguenti:
 
 |Nome                                    |Tipo di dati                |Descrizione                            |
 |:---------------------------------------|:------------------------|:--------------------------------------|
-|Identità coda di chiamata                     |Testo                     |Nome dell'account della risorsa collegato alla coda di chiamata<br><br>Se il nome completo account risorsa è **cq_test@microsoft.com** questo valore sarà: **cq_test** |
+|Identità coda di chiamata                     |Testo                     |Nome dell'account della risorsa collegato alla coda di chiamata<br><br>Se il nome completo Account risorsa è **cq_test@microsoft.com**, il valore sarà: **cq_test** |
 
 #### <a name="fcallqueueanalytics-cqd-fields-description"></a>Descrizione dei campi CQD di fCallQueueAnalytics
 
@@ -226,7 +226,7 @@ Eseguire le operazioni seguenti:
 |:---------------------------------------|:------------------------|:--------------------------------------------------------------------------|
 |Numero chiamate                              |Numero intero             |Riepiloga: Somma<br>Numero di chiamate                                          |
 |Risultato chiamata in coda di chiamata                  |Testo                     |Stato finale chiamata in coda di chiamata: valori possibili:<br><br>§ agent_joined_conference<br>§ rifiutata<br>§ disconnesso<br>§ errore<br>§ non riuscito<br>§ non valido<br>§ overflown<br>§ timed_out<br>§ transferred_to_agent |
-|Identità coda di chiamata                     |Testo                     |Nome dell'account della risorsa collegato alla coda di chiamata<br><br>Se il nome completo account risorsa è **cq_test@microsoft.com** questo valore sarà: **cq_test** |
+|Identità coda di chiamata                     |Testo                     |Nome dell'account della risorsa collegato alla coda di chiamata<br><br>Se il nome completo Account risorsa è **cq_test@microsoft.com**, il valore sarà: **cq_test** |
 |Tipo di destinazione coda di chiamata                  |Testo                     |***Tipo di destinazione del reindirizzamento delle chiamate: valori possibili:***<br><br>§ ApplicationEndpoint<br>§ Cassetta postale<br>§ Altro<br>§ Utente |
 |Tipo di <sup>chiamata1</sup>                   |Testo                     |Tipo di chiamata: valori possibili:<br><br>§ Esterno<br>§ Interno           |
 |Data                                    |Data/ora                |Data e ora di inizio delle chiamate in coda di chiamata (ora) (UTC)                           | 
@@ -250,7 +250,7 @@ Eseguire le operazioni seguenti:
 |Numero chiamate                              |Numero intero             |Riepiloga: Somma<br>Numero di chiamate                  |
 |Risultato chiamata in coda di chiamata                  |Testo                     |Stato finale chiamata in coda di chiamata: valori possibili:<br><br>§ agent_joined_conference<br>§ rifiutata<br>§ disconnesso<br>§ errore<br>§ non riuscito<br>§ non valido<br>§ overflown<br>§ timed_out<br>§ transferred_to_agent |
 |Azione di stato finale sulla coda di chiamata           |Testo                     |Azione finale coda di chiamata: valori possibili:<br><br>§ disconnetti (chiamate timed_out)<br>§ disconnect_with_busy (chiamate in eccesso)<br>§ failed_to_accept_call<br>§ avanti<br>§ shared_voicemail<br>§ altro<br>§ segreteria telefonica |
-|Identità coda di chiamata                     |Testo                     |Nome dell'account della risorsa collegato alla coda di chiamata<br><br>Se il nome completo account risorsa è **cq_test@microsoft.com** questo valore sarà: **cq_test** |
+|Identità coda di chiamata                     |Testo                     |Nome dell'account della risorsa collegato alla coda di chiamata<br><br>Se il nome completo Account risorsa è **cq_test@microsoft.com**, il valore sarà: **cq_test** |
 |Data                                    |Data/ora                |Data e ora di inizio delle chiamate in coda di chiamata (ora) (UTC)   |
 |IsAbandoned                             |Vero/falso               |True se la chiamata non riceve risposta da un agente           |
 
@@ -288,11 +288,11 @@ Eseguire le operazioni seguenti:
 
 |Nome                                    |Tipo di dati                |Descrizione                                         |
 |:---------------------------------------|:------------------------|:---------------------------------------------------|
-|Nome agente                              |Testo                     |UPN utente<br>Se il nome utente completo è **user@microsoft.com** questo valore sarà: **utente** |
+|Nome agente                              |Testo                     |UPN utente<br>Se il nome utente completo è **user@microsoft.com**, il valore sarà: **utente** |
 |Durata media chiamata (secondo)          |Numero decimale           |Riepiloga: Somma<br>Durata media delle chiamate in coda di chiamata in secondi |
-|Numero chiamate                              |Numero intero             |Riepiloga: Somma<br>Numero di chiamate presentate e a cui l'agente ha risposto     |
+|Numero chiamate                              |Numero intero             |Riepiloga: Somma<br>Numero di chiamate presentate all'agente     |
 |Durata chiamata (Minuti)                  |Numero intero             |Riepiloga: Somma<br>Durata totale delle chiamate in coda di chiamata in minuti (arrotondata per eccesso al minuto più vicino)  |
-|Nome coda di chiamata                         |Testo                     |Nome dell'account della risorsa collegato alla coda di chiamata<br><br>Se il nome completo account risorsa è **cq_test@microsoft.com** questo valore sarà: **cq_test** |
+|Nome coda di chiamata                         |Testo                     |Nome dell'account della risorsa collegato alla coda di chiamata<br><br>Se il nome completo Account risorsa è **cq_test@microsoft.com**, il valore sarà: **cq_test** |
 |Data                                    |Data                     |                                                    |
 
 
