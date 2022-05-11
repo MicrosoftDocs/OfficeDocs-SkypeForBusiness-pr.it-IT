@@ -16,12 +16,12 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b6361e9454f6df301c0fbf1c91e39158115f2300
-ms.sourcegitcommit: 3beef904411a9d5787a73678464003a868630649
+ms.openlocfilehash: 4f156b287969303edbf195c0054b3bb1eb631db2
+ms.sourcegitcommit: d847256fca80e4e8954f767863c880dc8472ca04
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64817797"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65303998"
 ---
 # <a name="plan-location-based-routing-for-direct-routing"></a>Pianificare l'instradamento basato sulla posizione per Instradamento diretto
 
@@ -169,11 +169,11 @@ Quando un utente è abilitato per il routing Location-Based, si applica quanto s
 
   - Se il trasferimento sarà consentito è basato su quanto segue:
   
-    - Il Location-Based Impostazioni routing dell'utente che riceve la chiamata trasferita.
+    - Le impostazioni di routing Location-Based dell'utente trasferito a PSTN.
     - Percorso del sito di rete dell'endpoint.
     - Se la posizione è abilitata per Location-Based Routing.
 
-    Il trasferimento sarà consentito se l'utente che riceve la chiamata trasferita è in grado di effettuare tale chiamata PSTN nella posizione corrente usando lo stesso gateway PSTN.
+    Il trasferimento sarà consentito se l'utente trasferito è in grado di effettuare la chiamata PSTN nella posizione corrente usando lo stesso gateway PSTN.
 
 - **Per una chiamata PSTN in arrivo o in uscita e il trasferimento a un altro utente Teams**, il trasferimento dipende dal seguente:
 
@@ -299,15 +299,15 @@ La tabella seguente mostra se l'inoltro di chiamata e i trasferimenti di chiamat
 
     - Se il chiamante è abilitato per Location-Based Routing, può essere trasferito solo a un gateway abilitato per il routing Location-Based situato nello stesso sito di rete.
  
-La tabella seguente mostra in che modo Location-Based routing influisce sul routing di una chiamata VOIP da User1 at Site1 a utenti in posizioni diverse che trasferiscono o inoltrano la chiamata a un endpoint PSTN.  
+La tabella seguente mostra come Location-Based Routing influisca sul routing di una chiamata VOIP da Location-Based Routing abilitato User1 in Site1 a utenti in posizioni diverse che trasferiscono o inoltrano la chiamata a un endpoint PSTN.  
 
-|L'utente avvia il trasferimento o l'inoltro di chiamata  |Trasferimento a PSTN  |Inoltrare a PSTN  |
-|---------|---------|---------|
-|Stesso sito di rete, sito abilitato per Location-Based Routing (Utente2)   |Il trasferimento di chiamata può essere instradato solo tramite Location-Based Routing abilitato Gateway1 nel sito1, in base ai criteri di routing vocale dell'utente2         |Il trasferimento chiamate può essere instradato solo tramite Location-Based Routing abilitato Gateway1 in Sito1, in base ai criteri di routing vocale di User2         |
-|Sito di rete diverso, sito abilitato per Location-Based Routing (Utente3)    |Il trasferimento delle chiamate può essere instradato solo tramite Location-Based Routing abilitato Gateway1 in Sito1, in base ai criteri di routing vocale dell'Utente3         |L'inoltro di chiamata può essere instradato solo tramite Location-Based Routing abilitato Gateway1 nel sito1, in base ai criteri di routing vocale di User3         |
-|Sito di rete diverso, sito non abilitato per Location-Based Routing (Utente4)    |Il trasferimento di chiamata può essere instradato solo tramite Location-Based Routing abilitato Gateway1 nel sito1, in base ai criteri di routing vocale dell'utente4         |L'inoltro di chiamata può essere instradato solo tramite Location-Based Routing abilitato Gateway1 su Site1, in base ai criteri di routing vocale dell'utente4         |
-|Rete interna sconosciuta (Utente5)     |Il trasferimento di chiamata può essere instradato solo tramite Location-Based Routing abilitato Gateway1 nel sito1, in base ai criteri di routing vocale dell'utente5         |L'inoltro di chiamata può essere instradato solo tramite Location-Based Routing abilitato Gateway1 nel sito1, in base ai criteri di routing vocale dell'utente5         |
-|Rete esterna sconosciuta (Utente6)   |Il trasferimento di chiamata può essere instradato solo tramite Location-Based Routing abilitato Gateway1 nel sito1, in base ai criteri di routing vocale di User6        |L'inoltro di chiamata può essere instradato solo tramite Location-Based Routing abilitato Gateway1 nel sito1, in base ai criteri di routing vocale dell'utente6         |
+|L'utente avvia il trasferimento o l'inoltro di chiamata  |Trasferire o inoltrare a PSTN  |
+|---------|---------|
+|Stesso sito di rete, sito abilitato per Location-Based Routing (Utente2)   |La chiamata PSTN risultante sarà consentita solo se il percorso calcolato basato sui criteri di routing vocale di User2 genera un percorso attraverso Location-Based Gateway abilitato per il routing1 in Sito1         |
+|Sito di rete diverso, sito abilitato per Location-Based Routing (Utente3)    |La chiamata PSTN risultante sarà consentita solo se il percorso calcolato basato sui criteri di routing vocale dell'Utente3 genera un percorso attraverso Location-Based Gateway abilitato per il routing1 in Sito1 |
+|Sito di rete diverso, sito non abilitato per Location-Based Routing (Utente4)    |La chiamata PSTN risultante sarà consentita solo se il percorso calcolato basato sui criteri di routing vocale dell'Utente4 genera un percorso attraverso Location-Based Gateway abilitato per il routing1 in Sito1          |
+|Rete interna sconosciuta (Utente5)     |La chiamata PSTN risultante sarà consentita solo se il percorso calcolato basato sui criteri di routing vocale dell'Utente5 genera un percorso attraverso Location-Based Gateway abilitato per il routing1 in Sito1          |
+|Rete esterna sconosciuta (Utente6)   |La chiamata PSTN risultante sarà consentita solo se il percorso calcolato basato sui criteri di routing vocale dell'Utente6 genera un percorso attraverso Location-Based Gateway abilitato per il routing1 in Sito1          |
 
 ### <a name="simultaneous-ringing"></a>Squillo simultaneo
 
@@ -328,15 +328,15 @@ La tabella seguente mostra se Location-Based Routing consente lo squillo simulta
 
 #### <a name="simultaneous-ringing-to-a-pstn-endpoint"></a>Squillo simultaneo a un endpoint PSTN
 
-La tabella seguente mostra Location-Based comportamento di routing per una chiamata VoIP in ingresso da User1 che si trova in Site1 a utenti in posizioni diverse con lo squillo simultaneo impostato su un numero PSTN. 
+La tabella seguente mostra Location-Based Comportamento di routing per una chiamata VoIP in ingresso da Location-Based Utente abilitato per il routing1 situato in Site1 a utenti in posizioni diverse, con lo squillo simultaneo impostato su un numero PSTN. 
 
 |Posizione dell'endpoint utente chiamata  |La destinazione dell'anello simultaneo è l'endpoint PSTN |
 |---------|---------|
-|Stesso sito di rete, sito abilitato per Location-Based Routing (Utente2)    |La chiamata può essere instradata solo tramite Location-Based Routing Gateway1 nel sito1, in base ai criteri di routing vocale dell'utente2       |
-|Sito di rete diverso abilitato per Location-Based Routing (Utente3)    |La chiamata può essere instradata solo tramite Location-Based Routing Gateway1 nel sito1, in base ai criteri di routing vocale dell'Utente3        |
-|Sito di rete diverso non abilitato per Location-Based Routing (Utente4)    |La chiamata può essere instradata solo attraverso Location-Based Routing Gateway1 in Site1, in base ai criteri di routing vocale dell'utente4         |
-|Rete interna sconosciuta (Utente5)    |La chiamata può essere instradata solo tramite Location-Based Routing Gateway1 in Sito1, in base ai criteri di routing vocale dell'utente5         |
-|Rete esterna sconosciuta (Utente6)   |La chiamata può essere instradata solo tramite Location-Based Routing Gateway1 in Sito1, in base ai criteri di routing vocale dell'Utente6         |
+|Stesso sito di rete, sito abilitato per Location-Based Routing (Utente2)    |La chiamata PSTN risultante sarà consentita solo se il percorso calcolato basato sui criteri di routing vocale di User2 genera un percorso attraverso Location-Based Gateway abilitato per il routing1 in Sito1        |
+|Sito di rete diverso abilitato per Location-Based Routing (Utente3)    |La chiamata PSTN risultante sarà consentita solo se il percorso calcolato basato sui criteri di routing vocale dell'Utente3 genera un percorso attraverso Location-Based Gateway abilitato per il routing1 in Sito1         |
+|Sito di rete diverso non abilitato per Location-Based Routing (Utente4)    |La chiamata PSTN risultante sarà consentita solo se il percorso calcolato basato sui criteri di routing vocale dell'Utente4 genera un percorso attraverso Location-Based Gateway abilitato per il routing1 in Sito1          |
+|Rete interna sconosciuta (Utente5)    |La chiamata PSTN risultante sarà consentita solo se il percorso calcolato basato sui criteri di routing vocale dell'Utente5 genera un percorso attraverso Location-Based Gateway abilitato per il routing1 in Sito1          |
+|Rete esterna sconosciuta (Utente6)   |La chiamata PSTN risultante sarà consentita solo se il percorso calcolato basato sui criteri di routing vocale dell'Utente6 genera un percorso attraverso Location-Based Gateway abilitato per il routing1 in Sito1          |
 
 #### <a name="inbound-calls-through-voice-apps-auto-attendant-or-call-queue"></a>Chiamate in ingresso attraverso le app vocali (Operatore automatico o Coda di chiamata)
 
@@ -372,7 +372,7 @@ Le subnet IPv4 e IPv6 sono supportate, tuttavia, IPv6 ha la precedenza durante i
 
 Sono supportati i client Teams seguenti:
 - Teams client desktop (Windows e Mac)
-- Teams client mobili (iOS e Android)
+- client per dispositivi mobili Teams (iOS e Android)
 - Teams telefoni IP
 
 Il client Web Teams e i client Skype for Business non sono supportati.
@@ -395,7 +395,7 @@ In una conferenza telefonica avviata da un utente senza licenza per i servizi di
 
 Se l'utente abilitato per il routing Location-Based partecipa alla conferenza telefonica da un sito interno non abilitato per Location-Based Routing, le restrizioni nel paragrafo precedente non vengono applicate. 
 
-I servizi di conferenza on-network per i servizi di audioconferenza NON devono essere distribuiti con apparecchiature di telefonia in India.
+I servizi di conferenza on-network per Audioconferenza NON devono essere distribuiti con apparecchiature di telefonia in India.
 
 
 ### <a name="media-bypass-requirement-for-location-based-routing"></a>Requisito per il bypass multimediale per il routing Location-Based
