@@ -22,16 +22,16 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come gli amministratori di Office 365 possono attivare o disattivare la funzionalità di accesso guest in Microsoft Teams.
-ms.openlocfilehash: 1658ef97dd172209a965088caa2842a71e09e4e7
-ms.sourcegitcommit: 9bee7cb9433bfc687387647a102f814dc52c8591
+ms.openlocfilehash: 935fac44863ef2c3da4a9fc4f07fcd7e34265024
+ms.sourcegitcommit: cd9a1f7afaaf053741c81022e7052bf6f8008fcc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64839197"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65370809"
 ---
 # <a name="turn-guest-access-in-microsoft-teams-on-or-off"></a>Attivare o disattivare l'accesso guest in Microsoft Teams
 
-Questo articolo descrive come configurare le impostazioni di accesso guest, incluse chiamate, riunioni e chat, in Teams. L'accesso guest in Teams richiede anche la configurazione di altre impostazioni in Microsoft 365, incluse quelle in Azure AD, Gruppi di Microsoft 365 e SharePoint. Quando si è pronti a invitare utenti guest a Teams, leggere una delle opzioni seguenti:
+Questo articolo descrive come configurare le impostazioni di accesso guest, incluse chiamate, riunioni e chat, in Teams. L'accesso guest in Teams richiede anche la configurazione di altre impostazioni in Microsoft 365, incluse le impostazioni in Azure AD, Gruppi di Microsoft 365 e SharePoint. Quando si è pronti a invitare utenti guest a Teams, leggere una delle opzioni seguenti:
 
 - Per configurare l'accesso degli utenti guest per l’uso generale di Teams, vedere [Collaborare con gli utenti guest in un team](/microsoft-365/solutions/collaborate-as-team).
 - Per collaborare con un'organizzazione partner che usa Azure Active Directory e consentire agli utenti guest di iscriversi autonomamente per l'accesso a Teams, vedere [Creare una Extranet B2B con utenti guest gestiti](/microsoft-365/solutions/b2b-extranet).
@@ -60,6 +60,7 @@ Questo articolo descrive come configurare le impostazioni di accesso guest, incl
       - **Riunione immediata**: attivare **questa impostazione per** consentire agli utenti guest di usare la funzionalità Riunione immediata in Microsoft Teams.
       - **Modifica messaggi inviati**: passare questa impostazione su **Attivato** per consentire agli utenti guest di modificare i messaggi inviati in precedenza.
       - **Elimina i messaggi inviati** : attiva **questa impostazione per** consentire agli utenti guest di eliminare i messaggi che hanno inviato in precedenza.
+      - **Elimina chat** - Attiva **questa impostazione per** consentire agli utenti guest di eliminare un'intera conversazione di chat.
       - **Chat**: passare questa impostazione su **Attivato** per dare agli utenti guest la possibilità di usare la chat in Teams.
       - **Giphy nelle conversazioni** - Attiva **questa impostazione per** consentire agli ospiti di usare Giphy nelle conversazioni. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una classificazione dei contenuti.
       - **Classificazione contenuti Giphy**: selezionare una classificazione dall’elenco a discesa:

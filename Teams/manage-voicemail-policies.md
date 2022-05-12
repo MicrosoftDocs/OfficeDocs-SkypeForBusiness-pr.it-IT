@@ -22,158 +22,97 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Gestire i criteri della segreteria telefonica per gli utenti.
-ms.openlocfilehash: 275c67cef3a318d15f030f26aa50a74a15748c03
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 3f4c64194fc9e2b24c59dc7bc06ed972e801a6a8
+ms.sourcegitcommit: cd9a1f7afaaf053741c81022e7052bf6f8008fcc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58604425"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65370829"
 ---
 # <a name="setting-voicemail-policies-in-your-organization"></a>Impostazione dei criteri di segreteria telefonica dell'organizzazione
 
 > [!WARNING]
-> Per Skype for Business clienti, la disabilitazione della segreteria telefonica tramite un criterio Microsoft Teams chiamate potrebbe anche disabilitare il servizio di segreteria telefonica per gli utenti Skype for Business utenti.
+> Per Skype for Business clienti, la disabilitazione della segreteria telefonica tramite un criterio di chiamata Microsoft Teams potrebbe disabilitare anche il servizio di segreteria telefonica per gli utenti Skype for Business.
 
-## <a name="voicemail-organization-defaults-for-all-users"></a>Impostazioni predefinite dell'organizzazione della segreteria telefonica per tutti gli utenti
+È possibile usare i criteri della segreteria telefonica per controllare le diverse funzionalità correlate a Cloud Voicemail.
+
+## <a name="voicemail-organization-defaults-for-all-users"></a>Impostazioni predefinite dell'organizzazione segreteria telefonica per tutti gli utenti
 - La trascrizione della segreteria telefonica è abilitata.
-- Il mascheramento volgare della trascrizione della segreteria telefonica è disabilitato.
+- La traduzione della trascrizione della segreteria telefonica è abilitata.
+- Mascheramento profano trascrizione segreteria telefonica è disabilitato.
 - La durata massima della registrazione è impostata su cinque minuti.
+- La modifica delle regole di risposta alle chiamate è abilitata.
+- Le lingue di prompt del sistema primario e secondario sono impostate su Null e viene utilizzata l'impostazione della lingua della segreteria telefonica dell'utente.
 
-È possibile controllare queste impostazioni predefinite usando i cmdlet [Set-CsOnlineVoicemailPolicy](/powershell/module/skype/Set-CsOnlineVoicemailPolicy) e [Grant-CsOnlineVoicemailPolicy.](/powershell/module/skype/Get-CsOnlineVoicemailPolicy)
+È possibile usare il criterio globale (predefinito a livello di organizzazione) creato automaticamente o creare e assegnare criteri personalizzati.
 
-I messaggi della segreteria telefonica ricevuti dagli utenti dell'organizzazione vengono trascritti nell'area geografica in cui è ospitata Microsoft 365 o Office 365'organizzazione. L'area geografica in cui è ospitato il tenant potrebbe non essere la stessa area geografica in cui si trova l'utente che riceve il messaggio della segreteria telefonica. Per visualizzare l'area in cui è ospitato il tenant, passare alla pagina [Profilo](https://go.microsoft.com/fwlink/p/?linkid=2067339) organizzazione e quindi fare clic **su** Visualizza dettagli accanto a Posizione **dati.**
+## <a name="create-a-custom-voicemail-policy"></a>Creare criteri per la segreteria telefonica personalizzati
+
+Seguire questa procedura per creare criteri di segreteria telefonica personalizzati.
+
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams **passare a** >  **Criteri segreteria telefonica**.
+2. Selezionare **Aggiungi**.
+3. Attivare o disattivare le funzionalità che si desidera utilizzare nei criteri della segreteria telefonica.
+4. Selezionare **Salva**.
+
+## <a name="edit-a-voicemail-policy"></a>Modificare i criteri della segreteria telefonica
+
+Seguire questa procedura per modificare un criterio della segreteria telefonica esistente.
+
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams selezionare **Criteri** >  segreteria **telefonica**.
+2. Fare clic accanto al criterio da modificare e quindi selezionare **Modifica**.
+3. Apportare le modifiche desiderate e quindi fare clic su **Salva**.
 
 > [!IMPORTANT]
-> Non è possibile creare una nuova istanza dei criteri per il mascheramento volgare della trascrizione e della trascrizione usando il cmdlet **New-CsOnlineVoiceMailPolicy** e non è possibile rimuovere un'istanza dei criteri esistente usando il cmdlet **Remove-CsOnlineVoiceMailPolicy.**
-
-È possibile gestire le impostazioni di trascrizione per gli utenti che utilizzano i criteri segreteria telefonica. Per visualizzare tutte le istanze dei criteri della segreteria telefonica disponibili, è possibile usare il cmdlet [Get-CsOnlineVoicemailPolicy.](/powershell/module/skype/Get-CsOnlineVoicemailPolicy)
-
-```PowerShell
-PS C:\> Get-CsOnlineVoicemailPolicy
+> Non è possibile modificare o rimuovere le istanze dei criteri pre-configurate denominate TranscriptionDisabled e TranscriptionProfanityMaskingEnabled.
 
 
-Identity                            : Global
-EnableTranscription                 : True
-ShareData                           : Defer
-EnableTranscriptionProfanityMasking : False
-EnableEditingCallAnswerRulesSetting : True
-MaximumRecordingLength              : 00:05:00
-EnableTranscriptionTranslation      : True
+## <a name="assign-a-custom-voicemail-policy-to-users"></a>Assegnare criteri di segreteria telefonica personalizzati agli utenti
 
-Identity                            : Tag:Default
-EnableTranscription                 : True
-ShareData                           : Defer
-EnableTranscriptionProfanityMasking : False
-EnableEditingCallAnswerRulesSetting : True
-MaximumRecordingLength              : 00:05:00
-EnableTranscriptionTranslation      : True
+[!INCLUDE [assign-policy](includes/assign-policy.md)]
 
-Identity                            : Tag:TranscriptionProfanityMaskingEnabled
-EnableTranscription                 : True
-ShareData                           : Defer
-EnableTranscriptionProfanityMasking : True
-EnableEditingCallAnswerRulesSetting : True
-MaximumRecordingLength              : 00:05:00
-EnableTranscriptionTranslation      : True
-
-Identity                            : Tag:TranscriptionDisabled
-EnableTranscription                 : False
-ShareData                           : Defer
-EnableTranscriptionProfanityMasking : False
-EnableEditingCallAnswerRulesSetting : True
-MaximumRecordingLength              : 00:05:00
-EnableTranscriptionTranslation      : True
-```
+## <a name="voicemail-policy-settings"></a>Impostazioni dei criteri segreteria telefonica
   
-## <a name="turning-off-transcription-for-your-organization"></a>Disattivare la trascrizione per la propria organizzazione
+### <a name="enable-transcription"></a>Abilitare la trascrizione
 
-Dato che l'impostazione predefinita per la trascrizione è attiva per la propria organizzazione, si consiglia di disabilitarla utilizzando il cmdlet [set-CsOnlineVoicemailPolicy](/powershell/module/skype/Set-CsOnlineVoicemailPolicy). Per farlo, eseguire quanto segue:
+Questa impostazione controlla se il servizio Cloud Voicemail genererà una transcipazione del testo della segreteria telefonica registrata e la includerà nel messaggio della segreteria telefonica. La trascrizione verrà eseguita in base alla lingua rilevata nella segreteria telefonica registrata.
 
-```PowerShell
-Set-CsOnlineVoicemailPolicy -EnableTranscription $false
-```
+### <a name="transcription-translation"></a>Traduzione trascrizione
 
-## <a name="turning-on-transcription-profanity-masking-for-your-organization"></a>Attivazione del mascheramento di volgarità sulla trascrizione per la propria organizzazione
+Questa impostazione controlla se il servizio Cloud Voicemail tradurrà la trascrizione della segreteria telefonica registrata. La traduzione verrà tentata nella lingua preferita del ricevitore della segreteria telefonica.
 
-Il mascheramento di volgarità sulla trascrizione è disabilitato per impostazione predefinita per l'organizzazione. Se non vi è un requisito aziendale per abilitarlo, è possibile abilitare il mascheramento di volgarità sulla trascrizione tramite [Set-CsOnlineVoicemailPolicy](/powershell/module/skype/Set-CsOnlineVoicemailPolicy). Per farlo, eseguire quanto segue:
+### <a name="transcription-profanity-masking"></a>Transcription profanity masking
 
-```PowerShell
-Set-CsOnlineVoicemailPolicy -EnableTranscriptionProfanityMasking $true
-```
+Questa impostazione controlla se il servizio Cloud Voicemail maschera le parolacce trovate nella trascrizione della segreteria telefonica.
 
-## <a name="changing-the-recording-duration-for-your-organization"></a>Modifica della durata della registrazione per l'organizzazione
+### <a name="maximum-recording-duration"></a>Durata massima di registrazione
 
-La durata massima della registrazione è impostata su cinque minuti per impostazione predefinita per l'organizzazione. Se esiste un requisito aziendale per aumentare o ridurre la lunghezza massima della registrazione, questa operazione può essere eseguita usando [Set-CsOnlineVoicemailPolicy](/powershell/module/skype/Set-CsOnlineVoicemailPolicy). Ad esempio, per impostare il tempo massimo di registrazione su 60 secondi, eseguire:
+La lunghezza massima di registrazione controlla il tempo massimo di registrazione di un messaggio vocale. L'impostazione predefinita è 5 minuti.
 
-```PowerShell
-Set-CsOnlineVoicemailPolicy -MaximumRecordingLength ([TimeSpan]::FromSeconds(60))
-```
+### <a name="call-answering-rules"></a>Regole di risposta alle chiamate
 
-## <a name="dual-language-system-prompts-for-your-organization"></a>Richieste di sistema in doppia lingua per l'organizzazione
+Questa impostazione controlla se l'utente è autorizzato a configurare le regole di risposta alle chiamate della segreteria telefonica in Microsoft Teams.
 
-Per impostazione predefinita, le richieste di sistema della segreteria telefonica vengono presentate ai chiamanti nella lingua selezionata dall'utente durante la configurazione della segreteria telefonica. Se è necessario che le richieste del sistema di segreteria telefonica siano presentate in due lingue, è possibile farlo usando [Set-CsOnlineVoicemailPolicy.](/powershell/module/skype/Set-CsOnlineVoicemailPolicy) È necessario impostare una lingua principale e una secondaria e non essere la stessa. Per farlo, eseguire quanto segue:
+### <a name="dual-language-system-prompts"></a>Prompt del sistema dual language
 
-```PowerShell
-Set-CsOnlineVoicemailPolicy -PrimarySystemPromptLanguage en-US -SecondarySystemPromptLanguage es-ES
-```
+Per impostazione predefinita, le richieste di sistema della segreteria telefonica vengono presentate ai chiamanti nella lingua selezionata dall'utente durante la configurazione della segreteria telefonica. Se è necessario che i messaggi del sistema segreteria telefonica siano presentati in due lingue, è possibile impostare una lingua principale e una lingua secondaria e non essere identici.
 
-## <a name="turning-off-transcription-for-a-user"></a>Disattivare la trascrizione per un utente
+### <a name="share-data-for-service-improvements"></a>Condividere i dati per i miglioramenti del servizio
 
-I criteri utente vengono valutati prima delle impostazioni predefinite dell'organizzazione. Ad esempio, se la trascrizione della segreteria telefonica è abilitata per tutti gli utenti, è possibile assegnare un criterio per disabilitare la trascrizione per un utente specifico usando il cmdlet [Grant-CsOnlineVoicemailPolicy.](/powershell/module/skype/Grant-CsOnlineVoicemailPolicy)
-
-Per disabilitare la trascrizione per un singolo utente, eseguire:
-
-```PowerShell
-Grant-CsOnlineVoicemailPolicy -PolicyName TranscriptionDisabled -Identity sip:amosmar@contoso.com
-```
-
-## <a name="turning-on-transcription-profanity-masking-for-a-user"></a>Attivazione del mascheramento di volgarità sulla trascrizione per un utente
-
-Per abilitare il mascheramento di volgarità sulla trascrizione per un utente specifico, è possibile assegnare un criterio per abilitare il mascheramento di volgarità sulla trascrizione per un utente specifico utilizzando il cmdlet [Grant-CsOnlineVoicemailPolicy](/powershell/module/skype/Grant-CsOnlineVoicemailPolicy).
-
-Per abilitare il mascheramento di volgarità sulla trascrizione per un singolo utente, eseguire:
-
-```PowerShell
-Grant-CsOnlineVoicemailPolicy -PolicyName TranscriptionProfanityMaskingEnabled -Identity sip:amosmar@contoso.com
-```
-
-## <a name="changing-the-recording-duration-for-a-user"></a>Modifica della durata della registrazione per un utente
-
-È prima di tutto necessario creare criteri di segreteria telefonica personalizzati usando il cmdlet [New-CsOnlineVoicemailPolicy.](/powershell/module/skype/New-CsOnlineVoicemailPolicy) Il comando illustrato di seguito crea un criterio della segreteria telefonica online per utente OneMinuteVoicemailPolicy con MaximumRecordingLength impostato su 60 secondi e altri campi impostati sul valore globale a livello di tenant.
-
-```PowerShell
-New-CsOnlineVoicemailPolicy -Identity "OneMinuteVoicemailPolicy" -MaximumRecordingLength ([TimeSpan]::FromSeconds(60))
-```
-
-Per assegnare questo criterio personalizzato a un utente, eseguire: 
-
-```PowerShell
-Grant-CsOnlineVoicemailPolicy -PolicyName OneMinuteVoicemailPolicy -Identity sip:amosmar@contoso.com
-```
-
-## <a name="dual-language-system-prompts-for-a-user"></a>Richiesta di sistema in doppia lingua per un utente
-
-È prima di tutto necessario creare criteri di segreteria telefonica personalizzati usando il cmdlet [New-CsOnlineVoicemailPolicy.](/powershell/module/skype/New-CsOnlineVoicemailPolicy) Il comando illustrato di seguito crea un criterio della segreteria telefonica online per utente enUS-esSP-VoicemailPolicy con PrimarySystemPromptLanguage impostato su en-US (Inglese - Stati Uniti) e SecondarySystemPromptLanguage impostato su es-SP (spagnolo - Spagna).
-
-```PowerShell
-New-CsOnlineVoicemailPolicy -Identity "enUS-esES-VoicemailPolicy" -PrimarySystemPromptLanguage en-US -SecondarySystemPromptLanguage es-ES
-```
-
-Per assegnare questo criterio personalizzato a un utente, eseguire: 
-
-```PowerShell
-Grant-CsOnlineVoicemailPolicy -PolicyName "enUS-esES-VoicemailPolicy" -Identity sip:amosmar@contoso.com
-```
-
-> [!NOTE]
-> Il cmdlet Get-CsOnlineVoicemailPolicy non restituisce attualmente i valori per PrimarySystemPromptLanguage e SecondarySystemPromptLanguage. Per visualizzare questi valori, modificare il comando nel modo seguente:
->
-> >```PowerShell
-> > (Get-CsOnlineVoicemailPolicy -Identity PolicyName).PrimarySystemPromptLanguage or
-> > (Get-CsOnlineVoicemailPolicy -Identity PolicyName).SecondarySystemPromptLanguage 
->
-> Sostituire **PolicyName** con il nome del criterio.
+Specifica se i dati della segreteria telefonica e della trascrizione vengono condivisi con il servizio per la formazione e per migliorare l'accuratezza. Se impostato su false, i dati della segreteria telefonica non verranno condivisi, indipendentemente dalla scelta dell'utente.
 
 
 > [!IMPORTANT]
-> Il servizio di segreteria telefonica in Microsoft 365 e Office 365 i criteri della segreteria telefonica e aggiorna la cache ogni 6 ore. Pertanto, le modifiche ai criteri apportate possono richiedere fino a 6 ore.
+> Il servizio di segreteria telefonica in Microsoft 365 e Office 365 memorizza nella cache i criteri della segreteria telefonica e aggiorna la cache ogni 6 ore. Di conseguenza, le modifiche apportate ai criteri possono richiedere fino a 6 ore per essere applicate.
+
+## <a name="related-articles"></a>Articoli correlati
+
+[New-CsOnlineVoicemailPolicy](/powershell/module/skype/new-csonlinevoicemailpolicy)
+
+[Set-CsOnlineVoicemailPolicy](/powershell/module/skype/set-csonlinevoicemailpolicy)
+
+[Get-CsOnlineVoicemailPolicy](/powershell/module/skype/get-csonlinevoicemailpolicy)
+
+[Grant-CsOnlineVoicemailPolicy](/powershell/module/skype/grant-csonlinevoicemailpolicy)
+
+[Remove-CsOnlineVoicemailPolicy](/powershell/module/skype/remove-csonlinevoicemailpolicy)
