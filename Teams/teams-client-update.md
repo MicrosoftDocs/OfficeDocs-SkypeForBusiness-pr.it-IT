@@ -18,18 +18,18 @@ ms.localizationpriority: high
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 00b8079a360dbec05b14f1487755e96bfc98b76f
-ms.sourcegitcommit: cbdc80c302e97d18a923ef57bb5d4b6cf7676d00
+ms.openlocfilehash: a7d296e296b2f5a20b5d7d10da6e598a989f0d71
+ms.sourcegitcommit: cd4464fe9bf0f38ed4c3ca058a51bcd29578eef9
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2022
-ms.locfileid: "64556517"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316502"
 ---
 # <a name="teams-update-process"></a>Processo di aggiornamento di Teams
 
-L'app Web di Teams viene aggiornata ogni settimana.
+Gli aggiornamenti delle app Web di Teams vengono in genere rilasciati il quarto lunedì di ogni mese.
 
-Gli aggiornamenti del client desktop di Teams vengono rilasciati ogni due settimane dopo un rigoroso controllo interno e la convalida tramite il Programma di adozione della tecnologia (Technology Adoption Program, TAP). L'aggiornamento viene in genere eseguito il martedì. Se è necessario un aggiornamento critico, Teams ignorerà la pianificazione e rilascerà l'aggiornamento non appena disponibile.
+Gli aggiornamenti dei client desktop di Teams vengono rilasciati ogni mese dopo rigorosi test interni e convalide tramite il nostro Technology Adoption Program (TAP). Gli aggiornamenti del client desktop in genere iniziano il quarto lunedì del mese e vengono distribuiti gradualmente ai clienti nel resto della settimana. Se è necessario un aggiornamento critico, Teams ignorerà la pianificazione e rilascerà l'aggiornamento non appena disponibile.
 
 Il client desktop si aggiorna automaticamente. Teams verifica la disponibilità di aggiornamenti in background, li scarica e quindi attende il periodo di inattività sul computer prima di installare automaticamente l'aggiornamento.
 
