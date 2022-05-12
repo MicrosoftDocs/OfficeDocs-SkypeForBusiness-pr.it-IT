@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: msteams
 ms.localizationpriority: medium
 description: Informazioni su come gestire l'app Complimenti nell'interfaccia di amministrazione di Microsoft Teams.
-ms.openlocfilehash: 495000af61c2b5d48dfdc30fe3b013a4ca8b8811
-ms.sourcegitcommit: d847256fca80e4e8954f767863c880dc8472ca04
+ms.openlocfilehash: ff9985025146136ae78d8e822dd5b61903443605
+ms.sourcegitcommit: 73df40ce6fbd1d305fd381140f293a2feb0d27bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65303988"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65359776"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimenti nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -36,7 +36,7 @@ Complimenti è abilitata per impostazione predefinita per tutti gli utenti Teams
 
 Tieni presente che questa impostazione influisce sia sull'app Complimenti che sulla funzionalità Complimenti nell'app Viva Insights in Teams.
 
-Se si imposta Lo stato è impostato su Bloccato, l'app Complimenti viene bloccata entro pochi minuti. Tuttavia, un complimento in Viva Insights può richiedere da 7 a 9 giorni per essere bloccato.
+Se imposti Lo stato su Bloccato, l'app Complimenti viene bloccata entro pochi minuti per Teams. Tuttavia, un complimento in Viva Insights può richiedere da 7 a 9 giorni per essere bloccato.
 
 ## <a name="enable-or-disable-praise-for-specific-users-in-your-organization"></a>Abilitare o disabilitare Complimenti per utenti specifici dell'organizzazione
 
