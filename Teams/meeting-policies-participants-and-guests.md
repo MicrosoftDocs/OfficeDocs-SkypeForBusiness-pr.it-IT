@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per partecipanti e guest.
-ms.openlocfilehash: 05408ade76aa96b64f07899881beb68fa52c74b4
-ms.sourcegitcommit: a31c02892e35babbbcf5e7c303c7f14d7ba5cb52
+ms.openlocfilehash: 6a3c2dda51c40c57cd100eda9c8c959583dfb60b
+ms.sourcegitcommit: 0c7d199b2f7580dbfa8ce755eda97ec70bc86978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64784700"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393750"
 ---
 # <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione - Partecipanti e ospiti
 
@@ -32,6 +32,7 @@ ms.locfileid: "64784700"
 
 Queste impostazioni controllano i partecipanti che devono aspettare nella sala di attesa prima di essere ammessi alla riunione e il livello di partecipazione consentito in una riunione.
 
+- [Consentire a persone anonime di partecipare a una riunione](#let-anonymous-people-join-a-meeting)
 - [Consenti alle persone anonime di avviare una riunione](#let-anonymous-people-start-a-meeting)
 - [Ammetti automaticamente le persone](#automatically-admit-people)
 - [Consenti agli utenti che chiamano di ignorare la sala di attesa](#allow-dial-in-users-to-bypass-the-lobby)
@@ -41,6 +42,9 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 > [!NOTE]
 >Le opzioni per partecipare a una riunione variano in base alle impostazioni di ogni gruppo di Teams e al metodo di connessione. Se il gruppo ha le funzionalità di audioconferenza e le usa per la connessione, vedere [Audioconferenza](/microsoftteams/audio-conferencing-in-office-365). Se il gruppo di Teams non ha le funzionalità di audioconferenza, vedere [Partecipare a una riunione in Teams](https://support.office.com/article/join-a-meeting-in-teams-1613bb53-f3fa-431e-85a9-d6a91e3468c9).
 
+## <a name="let-anonymous-people-join-a-meeting"></a>Consentire a persone anonime di partecipare a una riunione
+
+Questa impostazione per organizzatore consente a chiunque di partecipare alle riunioni come utente anonimo selezionando il collegamento nell'invito alla riunione. Per altre informazioni, vedere [Partecipare a una riunione senza un account di Teams](https://support.office.com/article/join-a-meeting-without-a-teams-account-c6efc38f-4e03-4e79-b28f-e65a4c039508). La possibilità per gli utenti anonimi di partecipare alle riunioni è controllata anche a livello di organizzazione, l'impostazione più restrittiva sarà efficace. Per altre informazioni, vedere [Uso dell'interfaccia di amministrazione di Microsoft Teams per configurare i criteri a livello di organizzazione](meeting-settings-in-teams.md#allow-anonymous-users-to-join-meetings).
 
 ## <a name="let-anonymous-people-start-a-meeting"></a>Consenti alle persone anonime di avviare una riunione
 

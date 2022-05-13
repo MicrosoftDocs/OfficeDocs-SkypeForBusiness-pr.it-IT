@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d80006e46598d03dd8defffe7baf4ada17415fe2
-ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
+ms.openlocfilehash: 1f08ddd68d036d18e4ea18073dd0711e32e0c91e
+ms.sourcegitcommit: 0c7d199b2f7580dbfa8ce755eda97ec70bc86978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187112"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393870"
 ---
 # <a name="set-up-parent-connection-in-microsoft-teams-for-education"></a>Configurare la connessione padre in Microsoft Teams per l'istruzione
 
@@ -41,7 +41,7 @@ Ecco alcune risorse che gli amministratori IT possono condividere con tutori e d
 
 La connessione genitori consente a docenti e tutori di chattare, inviare e-mail e chiamare usando Teams.
 
-- Teams dati di contatto del tutore rimangono aggiornati con SIS usando School Data Sync (SDS).
+- Teams i dati di contatto dei tutori rimangono aggiornati con SIS usando School Data Sync (SDS).
 - Funziona con la chat supervisionata. Per altre informazioni, vedere [Usare le chat supervisionate in Microsoft Teams](supervise-chats-edu.md).
   - Per impostazione predefinita, i tutori hanno autorizzazioni limitate, quindi non possono chattare con gli studenti o rimuovere utenti dalle chat.
   - Questa impostazione può essere modificata dall'amministratore del tenant.
@@ -71,31 +71,41 @@ La connessione genitori consente a docenti e tutori di chattare, inviare e-mail 
 - È necessario School Data Sync (SDS) per popolare le informazioni di **contatto relative a** genitori e tutori di ogni studente.
   - [Distribuire SDS](/schooldatasync/parents-and-guardians-in-sds)
 
-- Se hai bisogno di assistenza per configurare SDS e popolare **contatti correlati a** genitori e tutori per gli studenti nel tenant, contatta il team Customer Success di EDU:
+- Se hai bisogno di assistenza per configurare SDS e popolare **i contatti correlati a** genitori e tutori per gli studenti nel tuo tenant, contatta il team Customer Success di EDU:
   - Completamento del processo RFA in [FastTrack](https://www.microsoft.com/fasttrack?rtc=1).
   - Apertura di un ticket al [supporto](https://aka.ms/sdssupport) tecnico.
 
-- Attualmente, SDS supporta solo l'inserimento di dati basati su CSV per i contatti padre; tuttavia, è possibile usare [Sincronizzazione API PowerSchool](/schooldatasync/how-to-deploy-school-data-sync-by-using-powerschool-sync) o [Sincronizzazione API OneRoster](/schooldatasync/how-to-deploy-school-data-sync-by-using-oneroster-sync) per tutti i dati dell'elenco e aggiungere semplicemente i contatti padre con CSV.
+- Attualmente, SDS supporta solo l'inserimento di dati basati su CSV per i contatti padre. Tuttavia, è possibile usare [Sincronizzazione API PowerSchool](/schooldatasync/how-to-deploy-school-data-sync-by-using-powerschool-sync) o [Sincronizzazione API OneRoster](/schooldatasync/how-to-deploy-school-data-sync-by-using-oneroster-sync) per tutti i dati dell'elenco e aggiungere semplicemente contatti padre con CSV.
   - Creare un secondo profilo di sincronizzazione usando il [formato di sincronizzazione CSV SDS v1](/schooldatasync/school-data-sync-format-csv-files-for-sds).
   - Trascinare i due [file padre](/schooldatasync/parent-contact-sync-file-format) popolati con il resto dei file v1 vuoti (solo le intestazioni).
     - User.csv
     - Guardianrelationship.csv
   - Per visualizzare un set di esempio dei file CSV v1, vedere Attributi [minimi obbligatori GitHub file](https://github.com/OfficeDev/O365-EDU-Tools/tree/master/CSV%20Samples/SDS%20Format/Min%20Required%20Attributes).
   - Se si vuole automatizzare il estrazione dei file CSV dopo la sincronizzazione iniziale, leggere il [documento di automazione Sincronizzazione file CSV](/schooldatasync/csv-file-sync-automation).
-  - Per assistenza con la configurazione della sincronizzazione dei dati di SDS, contatta [il team di successo dei clienti](https://www.microsoft.com/fasttrack?rtc=1) o [apri un ticket di supporto](https://edusupport.microsoft.com/support?product_id=data_sync).
+  - Per assistenza nella configurazione della sincronizzazione dei dati di SDS, contatta [il team di successo dei clienti](https://www.microsoft.com/fasttrack?rtc=1) o [apri un ticket di supporto](https://edusupport.microsoft.com/support?product_id=data_sync).
 
-### <a name="teams-admin-center---policies"></a>interfaccia di amministrazione di Teams - Criteri
+### <a name="teams-admin-center-policies"></a>criteri dell'interfaccia di amministrazione di Teams
 
 - I proprietari del team di classe devono avere attivato Teams chat.
 - I proprietari del team di classe devono avere accesso esterno con **account Teams non gestiti da un'organizzazione** attivata.
   - Questa opzione deve essere attivata a livello di tenant e di utente. L'impostazione a livello di tenant è disponibile in **Utenti > Accesso esterno** nell'interfaccia di amministrazione di Teams. Questa impostazione è accessibile anche tramite PowerShell. I criteri di accesso esterno a livello di utente sono accessibili solo tramite PowerShell. Per altre indicazioni, vedere i comandi di PowerShell seguenti.
 
-> [!NOTE]
->I genitori e i tutori sono classificati come utenti esterni nella funzionalità Genitori, il che significa che non hanno diritti completi di tenant. Hanno accesso solo alla chat o alle chat a cui vengono aggiunte, nonché ai file, alle immagini e ad altri contenuti condivisi nella chat.
->
->Inoltre, gli utenti esterni possono vedere la presenza (offline, disponibile, occupato e così via) degli utenti dell'organizzazione, ma questa opzione può essere disattivata usando PowerShell per proteggere la privacy degli utenti. In PowerShell, utilizza [Set-CsPrivacyConfiguration](/powershell/module/skype/set-csprivacyconfiguration) e imposta ``EnablePrivacyMode=true``.
->
->Anche se genitori e tutori sono utenti esterni, il loro contributo alle chat è individuabile. Informazioni su come condurre un'indagine Teams eDiscovery leggendo [Condurre un'indagine eDiscovery sul contenuto in Microsoft Teams](ediscovery-investigation.md).
+#### <a name="parent-and-guardian-restrictions"></a>Restrizioni per genitori e tutori
+I genitori e i tutori vengono classificati come utenti esterni nella connessione Genitori, il che significa che non hanno diritti completi di tenant. Hanno accesso solo alla chat o alle chat a cui sono stati aggiunti, oltre a file, immagini e altri contenuti condivisi nella chat.
+
+Inoltre, gli utenti esterni possono vedere la presenza (offline, disponibile, occupato e così via) degli utenti dell'organizzazione, ma questa opzione può essere disattivata usando PowerShell per proteggere la privacy degli utenti. In PowerShell, utilizza [Set-CsPrivacyConfiguration](/powershell/module/skype/set-csprivacyconfiguration) e imposta ``EnablePrivacyMode=true``.
+
+Anche se genitori e tutori sono utenti esterni, il loro contributo alle chat è individuabile. Informazioni su come condurre un'indagine Teams eDiscovery leggendo [Condurre un'indagine eDiscovery sul contenuto in Microsoft Teams](ediscovery-investigation.md).
+
+#### <a name="blocking-a-parent-or-guardian-in-a-chat"></a>Bloccare un genitore o un tutore in una chat
+I docenti possono bloccare un tutore nella chat avviata nella connessione padre.
+
+Il proprietario della classe può:
+
+1. Apri la scheda del profilo del tutore, seleziona i puntini di sospensione e **Blocca utente**. 
+2. Quindi, rimuovi il tutore dalla chat. 
+
+L'utente bloccato non sarà in grado di avviare altre chat con il proprietario della classe.
 
 ## <a name="allow-external-access-with-teams-accounts-not-managed-by-an-organization"></a>Consentire l'accesso esterno con account Teams non gestiti da un'organizzazione
 

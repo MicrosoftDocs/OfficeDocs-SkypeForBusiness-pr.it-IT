@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Skype for Business Server 2015
-summary: Scopri come implementare Skype for Business Server 2015.
+title: documentazione di Skype for Business Server 2015
+summary: Informazioni su come implementare Skype for Business Server 2015.
 metadata:
-  title: Skype for Business Server 2015
-  description: Scopri come implementare Skype for Business Server 2015.
+  title: documentazione di Skype for Business Server 2015
+  description: Informazioni su come implementare Skype for Business Server 2015.
   ms.service: skype-for-business-online
   audience: ITPro
   ms.topic: landing-page
@@ -11,14 +11,14 @@ metadata:
   author: lanachin
   ms.author: v-lanac
   ms.date: 06/23/2020
-  ms.openlocfilehash: b4ebe6851e6ee92d5b43fd781a3111fd015ba062
-  ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+  ms.openlocfilehash: feaab2b9acf9fa7d76ae564233930a00fb243006
+  ms.sourcegitcommit: 0c7d199b2f7580dbfa8ce755eda97ec70bc86978
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 09/30/2021
-  ms.locfileid: "60014900"
+  ms.lasthandoff: 05/13/2022
+  ms.locfileid: "65393730"
 landingContent:
-- title: Informazioni Skype for Business Server 2015
+- title: Informazioni su Skype for Business Server 2015
   linkLists:
   - linkListType: overview
     links:
@@ -30,11 +30,7 @@ landingContent:
       url: https://support.office.com/article/what-is-a-skype-meeting-broadcast-c472c76b-21f1-4e4b-ab58-329a6c33757d
     - text: Diagrammi tecnici
       url: ./technical-diagrams.md
-  - linkListType: download
-    links:
-    - text: Scarica subito!
-      url: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server
-- title: Pianificare
+- title: Piano
   linkLists:
   - linkListType: overview
     links:
@@ -44,7 +40,7 @@ landingContent:
       url: /SkypeForBusiness/skype-for-business-hybrid-solutions/plan-hybrid-connectivity
     - text: Pianificare client e dispositivi
       url: ./plan-your-deployment/clients-and-devices/clients-and-devices.md
-    - text: Pianificare la VoIP aziendale soluzione
+    - text: Pianificare la soluzione VoIP aziendale
       url: ./plan-your-deployment/enterprise-voice-solution/enterprise-voice-solution.md
 - title: Installare e gestire
   linkLists:
@@ -68,7 +64,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Skype for Business Server 2019
+    - text: documentazione di Skype for Business Server 2019
       url: ../SfBServer2019/skype-for-business-server-2019.yml
     - text: Documentazione di Lync Server 2013
       url: /lyncserver/microsoft-lync-server-2013
