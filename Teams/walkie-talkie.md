@@ -1,5 +1,5 @@
 ---
-title: Applicazione Walkie-talkie in Microsoft Teams
+title: App Walkie-talkie in Microsoft Teams
 author: MicrosoftHeidi
 ms.author: heidip
 manager: serdars
@@ -18,24 +18,27 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 776f0f31d54788fbffd86bbcbedd44e30ada28a3
-ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
+ms.openlocfilehash: 29a632efc433a14d578eff80fdeb74a6f167dfc3
+ms.sourcegitcommit: a388fd72e399f6e205c34707dc92cc309997e737
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65186972"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65400232"
 ---
 # <a name="walkie-talkie-app-in-microsoft-teams"></a>App Walkie-talkie in Microsoft Teams
 
-L'app Walkie-talkie in Teams fornisce comunicazioni push-to-talk istantanee per il team ed è ora disponibile su Android & iOS. Walkie-talkie consente agli utenti di connettersi con il proprio team usando gli stessi canali sottostanti di cui sono membri. Solo gli utenti che si connettono a Walkie-talkie in un canale diventano partecipanti e possono comunicare tra loro tramite push-to-talk, uno alla volta.
+L'app Walkie-talkie in Teams fornisce comunicazioni push-to-talk istantanee per il team ed è ora disponibile in Android & iOS. Walkie-talkie consente agli utenti di connettersi con il proprio team usando gli stessi canali sottostanti di cui sono membri. Solo gli utenti che si connettono a Walkie-talkie in un canale diventano partecipanti e possono comunicare tra loro tramite push-to-talk, uno alla volta.
 
 Con Walkie-talkie in Teams, i dipendenti in prima linea possono ora comunicare in modo sicuro con un'esperienza PTT familiare senza dover trasportare radio ingombranti e Walkie Talkie funziona ovunque con wi-fi o connettività Internet cellulare.
+
+> [!NOTE]
+> Walkie-talkie non è attualmente disponibile in Cina.
 
 ## <a name="getting-started"></a>Introduzione
 
 ### <a name="deploying-walkie-talkie"></a>Distribuzione di Walkie-talkie
 
-Walkie-talkie è supportato nei dispositivi Android con dispositivi Google Servizi mobili (GMS) e iOS.
+Walkie-talkie è supportato su dispositivi Android con dispositivi Google Servizi mobili (GMS) e iOS.
 
 ### <a name="pin-walkie-talkie-to-teams"></a>Aggiungi Walkie-talkie a Teams
 
@@ -61,8 +64,8 @@ Walkie-talkie in Teams richiede la connettività Internet e al di sotto delle co
 
 |Metrica | Obbligatorio |
 |---|---|
-|Latenza (RTT) | < 300ms |
-|Jitter |< 30ms |
+|Latenza (RTT) | < 300 ms |
+|Jitter |< 30 ms |
 |Perdita pacchetti |< 1% |
 
 Come già accennato, la qualità dei supporti in tempo reale su una rete IP è notevolmente influenzata dalla qualità della connettività di rete, ma soprattutto dalla quantità di:
@@ -98,7 +101,7 @@ L'app Walkie-talkie è inclusa in tutte le licenze a pagamento di Teams negli [a
 
 ## <a name="further-information"></a>Ulteriori informazioni
 
-- Gli ITAdmin possono mantenere il controllo su chi usa Walkie-talkie tramite i criteri delle app.
+- Gli amministratori IT possono mantenere il controllo su chi usa Walkie Talkie tramite i criteri dell'app.
 - Se il frontline worker usa i dati mobili per comunicare tramite Teams, Walkie-talkie userà lo stesso metodo.
 - Walkie-talkie dovrebbe funzionare bene in situazioni di bassa larghezza di banda o situazioni in cui lo smartphone è connesso e funzionante. Walkie-talkie non funziona quando non c'è connettività affatto.
 
