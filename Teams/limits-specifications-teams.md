@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3a488d026a0879da29a448381e1f2b800a2d9504
-ms.sourcegitcommit: 56d529cdbd8d8733350625316082f339ae8d66c9
+ms.openlocfilehash: 94d59c27841e873c4e178a1b5c0d09df6942c1fc
+ms.sourcegitcommit: a388fd72e399f6e205c34707dc92cc309997e737
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294107"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65400242"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -124,9 +124,9 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 |------------|---------------|
 |Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 1000, include GCC, GCCH e DoD, ma non A1 (300). **Solo visualizzazione** consente a un massimo di 20.000 persone di partecipare in solo ascolto a una riunione in cui l'organizzatore ha una licenza per lo SKU E3/E5/A3/A5, oltre al Governo (GCC, GCC High, DoD). L'esperienza di sola visualizzazione sarà disponibile prossimamente anche per i webinar. Altre informazioni sull'[esperienza di sola visualizzazione](view-only-meeting-experience.md).<sup>1,2</sup>|
 |Numero di persone in un video o una chiamata audio dalla chat | 20 |
-|Numero di chiamate attive simultanee | 4 |
 |Dimensione massima file di PowerPoint | 2 GB|
 |Teams conserva le [registrazioni delle riunioni](cloud-recording.md) che non vengono caricate in Microsoft Stream, disponibili per il download locale | 20 giorni |
+| Lunghezza massima registrazione riunione | 4 ore o 1,5 GB. Quando viene raggiunto questo limite, la registrazione terminerà e verrà riavviato automaticamente.
   
 <sup>1</sup> Per un'esperienza ottimale nei webinar, negli eventi live e nelle riunioni di grandi dimensioni, Microsoft consiglia di usare l'ultima versione del client desktop di Teams o dei client per dispositivi mobili di Teams.
 
