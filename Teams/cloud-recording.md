@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aab8f71ec8c9eb5ad1e984a68985a8a425e21f16
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: 72ad8b9349681dbb10c3df848f99cc0250711543
+ms.sourcegitcommit: cd9a1f7afaaf053741c81022e7052bf6f8008fcc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922667"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65370819"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -147,8 +147,9 @@ Questa impostazione controlla la disponibilità di didascalie e funzionalità di
   
 Con l’attivazione di questa impostazione, viene creata una copia della trascrizione archiviata con la registrazione della riunione, che permette di eseguire **ricerche**, **CC** e **trascrizioni** nella registrazione della riunione.
 
+
 > [!NOTE]
-> La trascrizione per le riunioni registrate è al momento supportata solo per: inglese (Stati Uniti), inglese (Canada), inglese (India), inglese (Regno Unito), inglese (Australia), inglese (Nuova Zelanda), tedesco (Germania), portoghese (Brasile), olandese (Paesi Bassi), olandese (Belgio), francese (Francia), spagnolo (Spagna), giapponese (Giappone), francese (Canada), cinese (cantonese, tradizionale), cinese (mandarino, semplificato), hindi (India), italiano (Italia), coreano (Corea), spagnolo (Messico), svedese (Svezia), polacco (Polonia), arabo (Emirati Arabi Uniti), arabo (Arabia Saudita), danese (Danimarca), finlandese (Finlandia), norvegese (Norvegia) e russo (Russia). Le trascrizioni sono conservate insieme alle registrazioni delle riunioni nello spazio di archiviazione cloud in OneDrive for Business e SharePoint Online.
+> Tale trascrizione per le riunioni registrate è attualmente supportata solo per l'inglese (Stati Uniti), l'inglese (Canada), l'inglese (India), l'inglese (Regno Unito), l'inglese (Australia), l'inglese (Nuova Zelanda), l'arabo (Emirati Arabi Uniti), l'arabo (Arabia Saudita), il cinese (cantonese), il cinese (mandarino) ), il ceco (Repubblica Ceca), il danese (Danimarca), l’olandese (Belgio), l’olandese (Paesi Bassi), il francese (Canada), il francese (Francia), il finlandese (Finlandia), il tedesco (Germania), l’ebraico (Israele), l’hindi (India), l’italiano (Italia), il giapponese (Giappone), il coreano (Corea), il norvegese (Norvegia), il polacco (Polonia), il portoghese (Brasile), il portoghese (Portogallo), il russo (Russia), lo spagnolo (Messico), lo spagnolo (Spagna), lo svedese (Svezia), il thai (Thailandia), il turco (Turchia), il vietnamita (Vietnam). Vengono archiviati insieme alle registrazioni delle riunioni nello spazio di archiviazione nel cloud di OneDrive for Business e SharePoint Online.
 
 È possibile usare l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare un criterio per le riunioni di Teams con cui controllare se chi avvia la registrazione riceve l'opzione per trascriverne la registrazione.
 
