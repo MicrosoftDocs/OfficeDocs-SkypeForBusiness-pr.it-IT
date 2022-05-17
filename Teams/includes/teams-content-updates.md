@@ -3,6 +3,25 @@
 
 
 
+## <a name="week-of-may-09-2022"></a>Settimana del 9 maggio 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 5/9/2022 | [Abilitare gli utenti per il routing diretto](/MicrosoftTeams/direct-routing-enable-users) | Volta |
+| 5/9/2022 | [Configurare Connessione con operatore](/MicrosoftTeams/operator-connect-configure) | Volta |
+| 5/9/2022 | [Assegnare criteri in Teams](/MicrosoftTeams/policy-assignment-overview) | Volta |
+| 5/9/2022 | [Report cronologico della coda di chiamata & operatore automatico](/MicrosoftTeams/aa-cq-cqd-historical-reports) | Volta |
+| 5/10/2022 | [Pianificare l'instradamento basato sulla posizione per Instradamento diretto](/MicrosoftTeams/location-based-routing-plan) | Volta |
+| 5/10/2022 | [Criteri per le chiamate in Microsoft Teams: funzionalità di chiamata e inoltro di chiamata](/MicrosoftTeams/teams-calling-policy) | Volta |
+| 5/10/2022 | [Supporto della versione dell'app Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-lifecycle-support) | Volta |
+| 5/12/2022 | [Gestire i criteri della segreteria telefonica](/MicrosoftTeams/manage-voicemail-policies) | Volta |
+| 5/12/2022 | [Configurare gateway SIP](/MicrosoftTeams/sip-gateway-configure) | Volta |
+| 5/12/2022 | [Configurazione dell'amministratore dei genitori in Teams per l'istruzione](/MicrosoftTeams/edu-parents-app) | Volta |
+| 5/13/2022 | [App Walkie-talkie in Microsoft Teams](/MicrosoftTeams/walkie-talkie) | Volta |
+| 5/13/2022 | [Requisiti per Microsoft Teams Rooms](/MicrosoftTeams/rooms/requirements) | Volta |
+
+
 ## <a name="week-of-may-02-2022"></a>Settimana del 2 maggio 2022
 
 
@@ -33,7 +52,7 @@
 | 4/25/2022 | [Anteprima pubblica in Microsoft Teams](/MicrosoftTeams/public-preview-doc-updates) | Volta |
 | 4/26/2022 | [Panoramica dei componenti di Loop in Teams](/MicrosoftTeams/loop-components-in-teams) | Volta |
 | 4/26/2022 | Funzionalità di scadenza della registrazione delle riunioni | Rimosso |
-| 4/27/2022 | [Report sull'utilizzo delle audioconferenze in uscita](/MicrosoftTeams/audio-conferencing-dial-out-usage-report) | Aggiunto |
+| 4/27/2022 | [Audioconferenza report sull'utilizzo delle chiamate in uscita](/MicrosoftTeams/audio-conferencing-dial-out-usage-report) | Aggiunto |
 | 4/27/2022 | Considerazioni sull'aggiunta di domini Skype Room System | Rimosso |
 | 4/27/2022 | Eseguire la migrazione dei dispositivi Lync Room System a Microsoft Teams Rooms | Rimosso |
 | 4/27/2022 | [Autenticazione in Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-authentication) | Volta |
@@ -52,7 +71,7 @@
 | 4/25/2022 | [Anteprima pubblica in Microsoft Teams](/MicrosoftTeams/public-preview-doc-updates) | Volta |
 | 4/26/2022 | [Panoramica dei componenti di Loop in Teams](/MicrosoftTeams/loop-components-in-teams) | Volta |
 | 4/26/2022 | Funzionalità di scadenza della registrazione delle riunioni | Rimosso |
-| 4/27/2022 | [Report sull'utilizzo delle audioconferenze in uscita](/MicrosoftTeams/audio-conferencing-dial-out-usage-report) | Aggiunto |
+| 4/27/2022 | [Audioconferenza report sull'utilizzo delle chiamate in uscita](/MicrosoftTeams/audio-conferencing-dial-out-usage-report) | Aggiunto |
 | 4/27/2022 | Considerazioni sull'aggiunta di domini Skype Room System | Rimosso |
 | 4/27/2022 | Eseguire la migrazione dei dispositivi Lync Room System a Microsoft Teams Rooms | Rimosso |
 | 4/27/2022 | [Autenticazione in Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-authentication) | Volta |
@@ -81,10 +100,10 @@
 | 4/19/2022 | [Musica in attesa](/MicrosoftTeams/music-on-hold) | Volta |
 | 4/19/2022 | [Teams il comportamento delle app in base ai tipi di utenti](/MicrosoftTeams/non-standard-users) | Volta |
 | 4/19/2022 | [Panoramica di sicurezza e conformità](/MicrosoftTeams/security-compliance-overview) | Volta |
-| 4/20/2022 | [Criteri per i numeri verdi per i servizi di audioconferenza](/MicrosoftTeams/audio-conferencing-toll-free-numbers-policy) | Aggiunto |
-| 4/20/2022 | [Modificare i numeri di telefono nel bridge di audioconferenza](/MicrosoftTeams/change-the-phone-numbers-on-your-audio-conferencing-bridge) | Volta |
+| 4/20/2022 | [Audioconferenza criteri per i numeri verdi](/MicrosoftTeams/audio-conferencing-toll-free-numbers-policy) | Aggiunto |
+| 4/20/2022 | [Modificare i numeri di telefono nel bridge di Audioconferenza](/MicrosoftTeams/change-the-phone-numbers-on-your-audio-conferencing-bridge) | Volta |
 | 4/20/2022 | [Disabilitazione dei numeri verdi per specifici utenti Teams](/MicrosoftTeams/disabling-toll-free-numbers-for-specific-teams-users) | Volta |
-| 4/20/2022 | [Gestire le impostazioni dei servizi di audioconferenza](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-my-organization-in-teams) | Volta |
+| 4/20/2022 | [Gestire le impostazioni di Audioconferenza](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-my-organization-in-teams) | Volta |
 | 4/20/2022 | [Impostare i numeri di telefono inclusi negli inviti](/MicrosoftTeams/set-the-phone-numbers-included-on-invites-in-teams) | Volta |
 | 4/20/2022 | [Configurare Audioconferenza per Microsoft Teams](/MicrosoftTeams/set-up-audio-conferencing-in-teams) | Volta |
 | 4/21/2022 | Microsoft StaffHub è stato ritirato | Rimosso |
