@@ -13,14 +13,14 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Questo articolo descrive come configurare l'organizzazione e Teams Rooms dispositivi per supportare la partecipazione a riunioni di terze parti a Cisco WebEx e Zoom.
-ms.openlocfilehash: 6defa9c9287b130eb5534f0aea158a78f2de8b18
-ms.sourcegitcommit: 480046a53dfb6e6cf867e1920f8fb43dda9d3774
+ms.openlocfilehash: 91b730f998a1c17ed41f42a1e2990c82045d3117
+ms.sourcegitcommit: 54cb804e6e8338f2d09499e53416e6d55ef1cc40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64846605"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65442002"
 ---
-# <a name="enable-teams-room-devices-to-join-third-party-meetings"></a>Abilitare Teams dispositivi sala per partecipare a riunioni di terze parti
+# <a name="enable-teams-rooms-devices-to-join-third-party-meetings"></a>Abilitare Teams Rooms dispositivi per partecipare a riunioni di terze parti
 
 > [!NOTE]
 > Questa funzionalità è attualmente disponibile solo in Teams Rooms in Windows.
@@ -65,8 +65,8 @@ Per abilitare l'esperienza di partecipazione con un tocco, le informazioni sul c
 
 Ecco alcune voci di esempio che potrebbe essere necessario aggiungere all'elenco Defender per Office 365 Cassaforte Collegamenti *non riscrivere* o all'elenco di eccezioni di riscrittura URL di terze parti:
 
-- **Cisco WebEx** `*.webex.com*`
-- **Zoom** `*.zoom.us*`, `*.zoom.com*``*.zoomgov.com*`
+- **Cisco WebEx** `*.webex.com/*`
+- **Zoom** `*.zoom.us/*`, `*.zoom.com/*``*.zoomgov.com/*`
 
 Per un elenco completo degli URL da aggiungere all'elenco collegamenti Defender per Office 365 Cassaforte *Non riscrivere* o all'elenco di eccezioni di riscrittura URL di terze parti, contattare il provider di servizi per riunioni di terze parti da cui accettare inviti alle riunioni.
 

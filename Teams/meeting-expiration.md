@@ -17,18 +17,18 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Informazioni su come usare le impostazioni dei criteri riunione per controllare la scadenza delle riunioni in Microsoft Teams.
-ms.openlocfilehash: 4496896cc86cfd64f175b9cab7c58c3798b9249f
-ms.sourcegitcommit: 20d44ce9a62ba2fb60f989d2e7bbc9333055e783
+ms.openlocfilehash: 74b47d296b06d2ef9462dfafec136a99ebff0a34
+ms.sourcegitcommit: 54cb804e6e8338f2d09499e53416e6d55ef1cc40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65063247"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65442022"
 ---
 # <a name="meeting-policies-and-meeting-expiration-in-microsoft-teams"></a>Criteri per le riunioni e scadenza delle riunioni in Microsoft Teams
 
-[I criteri per le riunioni](meeting-policies-overview.md) in Microsoft Teams vengono usati per controllare se gli utenti dell'organizzazione possono avviare e pianificare riunioni e le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. I criteri delle riunioni vengono gestiti nell'interfaccia di amministrazione di Microsoft Teams o tramite i cmdlet [PowerShell Get](/powershell/module/skype/get-csteamsmeetingpolicy), [New](/powershell/module/skype/new-csteamsmeetingpolicy), [Set](/powershell/module/skype/set-csteamsmeetingpolicy), [Remove](/powershell/module/skype/remove-csteamsmeetingpolicy), [Grant](/powershell/module/skype/grant-csteamsmeetingpolicy) -CsTeamsMeetingPolicy.
+[I criteri per le riunioni](meeting-policies-overview.md) in Microsoft Teams vengono usati per controllare se gli utenti dell'organizzazione possono avviare e pianificare le riunioni e le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. I criteri delle riunioni vengono gestiti nell'interfaccia di amministrazione di Microsoft Teams o tramite i cmdlet [PowerShell Get](/powershell/module/skype/get-csteamsmeetingpolicy), [New](/powershell/module/skype/new-csteamsmeetingpolicy), [Set](/powershell/module/skype/set-csteamsmeetingpolicy), [Remove](/powershell/module/skype/remove-csteamsmeetingpolicy), [Grant](/powershell/module/skype/grant-csteamsmeetingpolicy) -CsTeamsMeetingPolicy.
 
-Le impostazioni dei criteri riunione che controllano se gli utenti possono avviare e pianificare riunioni e anche controllare la scadenza delle riunioni pianificate dagli utenti. Quando scade il collegamento per l'accesso alla riunione e l'ID conferenza per una riunione, nessuno può partecipare alla riunione. Le impostazioni dei criteri di riunione seguenti determinano se gli utenti possono avviare e pianificare riunioni in Teams. In questo articolo vengono illustrate le impostazioni delle riunioni.
+Le impostazioni dei criteri riunione che controllano se gli utenti possono avviare e pianificare le riunioni e anche la scadenza delle riunioni pianificate dagli utenti. Quando scade il collegamento per l'accesso alla riunione e l'ID conferenza per una riunione, nessuno può partecipare alla riunione. Le impostazioni dei criteri di riunione seguenti determinano se gli utenti possono avviare e pianificare riunioni in Teams. In questo articolo vengono illustrate le impostazioni delle riunioni.
 
 - [Riunione immediata nei canali](meeting-policies-in-teams-general.md#meet-now-in-channels): controlla se un utente può avviare una riunione estemporanea in un canale.
 - [Pianificazione delle riunioni del canale](meeting-policies-in-teams-general.md#channel-meeting-scheduling): controlla se un utente può pianificare una riunione in un canale.
@@ -48,13 +48,13 @@ Quando il collegamento per l'accesso alla riunione e l'ID conferenza per una riu
 
 ### <a name="switch-a-meeting-policy-setting-from-on-to-off"></a>Attivare o disattivare un'impostazione dei criteri riunione
 
-Quando un'impostazione dei criteri riunione è impostata su **Attivato**, gli utenti a cui è assegnato il criterio possono avviare o pianificare riunioni di quel tipo e tutti possono partecipare. Quando si imposta il criterio riunione su **Disattivato**, gli utenti a cui è assegnato il criterio non possono avviare o pianificare nuove riunioni di questo tipo e i collegamenti di partecipazione alle riunioni e gli ID conferenza delle riunioni esistenti pianificate in precedenza dall'utente sono scaduti.
+Quando un'impostazione dei criteri riunione è impostata su **Attivato**, gli utenti a cui è assegnato il criterio possono avviare o pianificare riunioni di quel tipo e tutti possono partecipare. Quando si imposta il criterio riunione su **Disattivato**, gli utenti a cui è assegnato il criterio non possono avviare o pianificare nuove riunioni di quel tipo e i collegamenti di partecipazione alla riunione e gli ID conferenza delle riunioni esistenti pianificate in precedenza dall'utente sono scaduti.
 
 Tenere presente che l'utente può comunque partecipare alle riunioni organizzate da altre persone.
 
 ### <a name="switch-a-meeting-policy-setting-from-off-to-on"></a>Impostare un criterio riunione da disattivato ad attivato
 
-Quando si imposta un criterio riunione da **Disattivato** ad **Attivato**, gli utenti a cui sono assegnati i criteri possono avviare o pianificare riunioni di quel tipo. Se un'impostazione dei criteri riunione è disattivata e quindi di nuovo attivata per un utente, tutte le riunioni pianificate in precedenza (e scadute) organizzate dall'utente diventano attive e le persone possono parteciparvi usando il collegamento per partecipare alla riunione o tramite telefono.  
+Quando si imposta un criterio riunione da **Disattivato** ad **Attivato**, gli utenti a cui è assegnato il criterio possono avviare o pianificare riunioni di quel tipo. Se un'impostazione dei criteri riunione è disattivata e quindi di nuovo attivata per un utente, tutte le riunioni pianificate in precedenza (e scadute) organizzate dall'utente diventano attive e le persone possono parteciparvi usando il collegamento per partecipare alla riunione o tramite telefono.  
 
 ## <a name="meeting-expiration-scenarios"></a>Scenari di scadenza delle riunioni
 
@@ -181,3 +181,5 @@ Il file verrà eliminato entro cinque giorni dalla data di scadenza, anche se qu
 [Assegnare i criteri agli utenti in Teams](policy-assignment-overview.md)
 
 [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
+
+[Limiti e specifiche per Microsoft Teams](/microsoftteams/limits-specifications-teams)

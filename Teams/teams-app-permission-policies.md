@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 2a4862b1daedd90dce4d486ed1517efbfeaca336
-ms.sourcegitcommit: f3c380f745af4c3aaa2720234860b45696a0c333
+ms.openlocfilehash: a7276c2a538eacefc579a7233bb99fb7882afb8f
+ms.sourcegitcommit: 54cb804e6e8338f2d09499e53416e6d55ef1cc40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64737578"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65442042"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione app in Microsoft Teams
 
@@ -87,14 +87,9 @@ Se si vuole controllare le app disponibili per diversi gruppi di utenti dell'org
 
 ## <a name="manage-org-wide-app-settings-for-microsoft-365-government"></a>Gestire impostazioni app a livello di organizzazione per Government di Microsoft 365  
 
-In una distribuzione Microsoft 365 Government - GCCH e DoD di Teams, è importante conoscere quanto segue sulle impostazioni delle app di terze parti, che sono univoche per GCCH e DoD.
+In un Microsoft 365 government - distribuzione GCC, GCCH e DoD di Teams, tutte le app di terze parti vengono bloccate per impostazione predefinita. Nei cloud GCCH e DOD le app di terze parti non sono disponibili. Inoltre, in GCC viene visualizzata la nota seguente sulla gestione di app di terze parti nella pagina criteri di autorizzazione dell'app nell'interfaccia di amministrazione di Microsoft Teams.
 
-Nelle distribuzioni GCC, GCCH e DoD, tutte le app di terze parti sono bloccate per impostazione predefinita. Inoltre, in GCC viene visualizzata la nota seguente sulla gestione di app di terze parti nella pagina criteri di autorizzazione dell'app nell'interfaccia di amministrazione di Microsoft Teams.
-
-:::image type="content" source="media/app-permission-policies-gcc-trimmed.png" alt-text="Screenshot dei criteri di autorizzazione per le app in GCCH e DoD." lightbox="media/app-permission-policies-gcc.png":::
-
-> [!NOTE]
-> Nei cloud GCCH e DOD le app di terze parti non sono disponibili.
+:::image type="content" source="media/app-permission-policies-gcc.png" alt-text="Screenshot dei criteri di autorizzazione per le app in GCCH e DoD.":::
 
 Usare le impostazioni app a livello di organizzazione per controllare se gli utenti possono installare le app di terze parti. Le impostazioni app a livello di organizzazione disciplinano il comportamento di tutti gli utenti e sostituiscono qualsiasi criterio di autorizzazione app assegnato agli utenti. È possibile usarle per controllare eventuali app dannose o problematiche.
 
