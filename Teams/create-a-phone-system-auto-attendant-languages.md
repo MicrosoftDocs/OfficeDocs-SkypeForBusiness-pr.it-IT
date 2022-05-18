@@ -1,7 +1,7 @@
 ---
-title: Microsoft Teams lingue supportate dall'operatore automatico
-ms.author: mikeplum
-author: MikePlumleyMSFT
+title: Lingue supportate dall'operatore automatico Microsoft Teams
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: colongma
 ms.topic: article
@@ -20,23 +20,23 @@ f1.keywords:
 - CSH
 ms.custom:
 - Phone System
-description: Microsoft Teams lingue supportate dall'operatore automatico
-ms.openlocfilehash: 52dc175b5c8d7379d538c3a80b28b763279c7c41
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Lingue supportate dall'operatore automatico Microsoft Teams
+ms.openlocfilehash: 0a513e31f94052abc07707ddd57bc116c4768aff
+ms.sourcegitcommit: 2c3c067cccd7b84064b5619a0b5f87242af52984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58605835"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65462040"
 ---
-# <a name="microsoft-teams-auto-attendant-supported-languages"></a>Microsoft Teams lingue supportate dall'operatore automatico
+# <a name="microsoft-teams-auto-attendant-supported-languages"></a>Lingue supportate dall'operatore automatico Microsoft Teams
 
-L'operatore automatico supporta le lingue seguenti per sintesi vocale (TTS) e riconoscimento vocale:
+L'operatore automatico supporta le lingue seguenti per sintesi vocale e riconoscimento vocale:
 
-|Lingua                                |Sintesi vocale (TTS)     |Riconoscimento vocale                     |
+|Lingua                                |Sintesi vocale     |Riconoscimento vocale                     |
 |:---------------------------------------|:-----------------------:|:-------------------------------------:|
 |Arabo (Egitto)                          |S                        |                                       |
 |Catalano (catalano)                       |S                        |S                                      |
-|Cinese (semplificato, RPC)               |S                        |S                                      |
+|Cinese (semplificato, Repubblica popolare cinese)               |S                        |S                                      |
 |Cinese (tradizionale, Hong Kong)        |S                        |                                       |
 |Cinese (tradizionale, Taiwan)           |S                        |                                       |    
 |Croato (Croazia)                      |S                        |                                       |    
@@ -74,7 +74,7 @@ L'operatore automatico supporta le lingue seguenti per sintesi vocale (TTS) e ri
 |Vietnamita (Vietnam)                    |S                        |                                       |    
 
 > [!NOTE]
-> Se si sceglie una lingua che non supporta il riconoscimento vocale, l'opzione di input vocale verrà disabilitata all'interno del menu e la composizione per nome sarà limitata all'uso solo della tastiera (DTMF). Per altre informazioni, fare riferimento alla voce Chiamata per nome [- Tastiera (DTMF).](dial-voice-reference.md#dial-by-name---keypad-dtmf-entry)
+> La scelta di una lingua che non supporta Riconoscimento vocale disabiliterà l'opzione relativa agli input vocali all'interno del menu e la chiamata per nome sarà limitata all'uso solo della voce della tastiera (DTMF). Per altre informazioni, vedere [Chiamata per nome - voce del tastierino numerico (DTMF](dial-voice-reference.md#dial-by-name---keypad-dtmf-entry) ).
 
 > [!NOTE]
-> Quando si usa La sintesi vocale, il testo deve essere immesso nella lingua selezionata perché il sistema non esegue la traduzione.
+> Quando si usa la sintesi vocale, il testo deve essere immesso nella lingua selezionata perché il sistema non esegue la traduzione.
