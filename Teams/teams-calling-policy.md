@@ -20,12 +20,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5097586825b231decd220a30bdde85bf258e27fc
-ms.sourcegitcommit: d847256fca80e4e8954f767863c880dc8472ca04
+ms.openlocfilehash: 6a52b30e1ced457377d7dd1c820192cb856827ba
+ms.sourcegitcommit: 3b86e55787c34da76428d6915964ac4f3c6239fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65313108"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65601645"
 ---
 # <a name="calling-and-call-forwarding-in-teams"></a>Chiamate e inoltro di chiamata in Teams
 
@@ -99,7 +99,7 @@ Occupato su occupato (Opzioni occupato) consente di configurare come vengono ges
 
 Questa impostazione consente agli utenti di chiamare numeri PSTN usando il client Web Teams.
 
-### <a name="incoming-meeting-invites-are-automatically-answered"></a>Gli inviti alle riunioni in arrivo ricevono automaticamente una risposta
+### <a name="automatically-answer-incoming-meeting-invites"></a>Rispondere automaticamente agli inviti alle riunioni in arrivo
 
 Questa impostazione controlla se gli inviti alle riunioni in arrivo ricevono automaticamente una risposta. Per impostazione predefinita l'opzione è disattivata. Tenere presente che questa impostazione si applica solo agli inviti alle riunioni in arrivo. Non si applica ad altri tipi di chiamate.
 
