@@ -25,12 +25,12 @@ ms.custom:
 - Direct Routing
 - seo-marvel-mar2020
 description: Informazioni sulle chiamate di emergenza, incluse le informazioni su indirizzi di emergenza, routing delle chiamate di emergenza e chiamate di emergenza dinamiche.
-ms.openlocfilehash: f059f55281df2925511b85941fefbb675d781852
-ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
+ms.openlocfilehash: 2806499e81b524168944e6cca2e9a6acb4d0b6a7
+ms.sourcegitcommit: 4435ac0efcb95e4e5e1f21289e46761e79482ab5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125451"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65624130"
 ---
 # <a name="manage-emergency-calling"></a>Gestire le chiamate di emergenza
 
@@ -275,9 +275,6 @@ Durante una chiamata di emergenza, un security desk viene collegato alla chiamat
 ### <a name="custom-emergency-disclaimer"></a>Dichiarazione di non responsabilità personalizzata per gli interventi di emergenza
 
 Gli amministratori hanno la possibilità di aggiungere un banner personalizzato nel tenant per consentire agli utenti di abilitare E911. Gli utenti possono chiudere il banner quando confermano il proprio indirizzo e ricomparirà quando Teams viene riavviato. Per abilitare questa funzionalità, impostare la **dichiarazione di non responsabilità per i servizi di emergenza** in base ai criteri per le chiamate di emergenza Teams e immettere un messaggio stringa da visualizzare agli utenti. Questo campo è facoltativo quando si configurano criteri personalizzati e il campo stringa è limitato a 250 caratteri.
-
-> [!NOTE]
-> Attualmente è configurabile usando PowerShell con il criterio EnhancedEmergencyServicesDisclaimer. In futuro questa operazione sarà configurabile anche nell'interfaccia di amministrazione di Teams.
 
     
 ## <a name="related-topics"></a>Argomenti correlati

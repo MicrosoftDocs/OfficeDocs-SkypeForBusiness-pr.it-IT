@@ -1,5 +1,5 @@
 ---
-title: Teams lingue per i messaggi di saluto e i messaggi della segreteria telefonica
+title: Teams lingue per i messaggi e i saluti della segreteria telefonica
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -20,75 +20,75 @@ f1.keywords:
 ms.custom:
 - Phone System
 - seo-marvel-apr2020
-description: Informazioni sulle lingue che è possibile impostare in Skype for Business per i messaggi di sistema predefiniti e i messaggi di saluto della segreteria telefonica.
-ms.openlocfilehash: 8393e8a50913548a8e6ec64bcf26154e0af5b148
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+description: Scopri quali lingue puoi impostare in Skype for Business per i messaggi di sistema predefiniti e i messaggi di saluto della segreteria telefonica.
+ms.openlocfilehash: 2a9b33e26bde9017be29412bb96086c708a150c1
+ms.sourcegitcommit: 4435ac0efcb95e4e5e1f21289e46761e79482ab5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60011940"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65624140"
 ---
-# <a name="teams-languages-for-voicemail-greetings-and-messages"></a>Teams lingue per i messaggi di saluto e i messaggi della segreteria telefonica
+# <a name="teams-languages-for-voicemail-greetings-and-messages"></a>Teams lingue per i messaggi e i saluti della segreteria telefonica
 
-Teams supporta le lingue seguenti per i messaggi di saluto della segreteria telefonica.
+Teams supporta le lingue seguenti per i saluti della segreteria telefonica.
   
 
 
-|Lingua  |Paese/area geografica |Disponibile da mostrare agli utenti in una e-mail? |Disponibile quando l'utente chiama? |Trascrizione disponibile?  |
-|:-------------|:------------------|:--------------------------------------------|:-------------------------------------|:-----------------------------|
-|Arabo        |Egitto              |Sì                                          |Sì                                   |No  |
-|Arabo        |Arabia Saudita       |Sì, ma viene usato l'arabo (Egitto).             |No                                    |No  |
-|Bulgaro     |Bulgaria           |Sì                                          |Sì                                   |No  |
-|Catalano       |Catalano            |Sì                                          |Sì                                   |No  |
-|Cinese (semplificato)   |Cina     |Sì                                          |Sì                                   |Sì |
-|Cinese (Hong Kong)    |Cina     |Sì, ma viene usato il cinese (tradizionale).      |Sì                                   |Sì, ma viene usato il cinese (tradizionale). |
-|Cinese (tradizionale)  |Taiwan    |Sì                                          |Sì                                   |No  |
-|Croato      |Croazia            |Sì                                          |Sì                                   |No  |
-|Ceco         |Repubblica Ceca     |Sì                                          |Sì                                   |No  |
-|Danese        |Danimarca            |Sì                                          |Sì                                   |No  |
-|Olandese         |Belgio            |Sì, ma viene usato olandese (Paesi Bassi).        |Sì                                   |No  |
-|Olandese         |Paesi Bassi        |Sì                                          |Sì                                   |No  |
-|Inglese       |Australia          |Sì, ma viene usato l'inglese (Stati Uniti).    |Sì                                   |Sì, ma viene usato l'inglese (Stati Uniti). |
-|Inglese       |Canada             |Sì, ma viene usato l'inglese (Stati Uniti).    |Sì                                   |Sì, ma viene usato l'inglese (Stati Uniti). |
-|Inglese       |India              |Sì, ma viene usato l'inglese (Stati Uniti).    |Sì                                   |Sì, ma viene usato l'inglese (Stati Uniti). |
-|Inglese       |Irlanda            |Sì, ma viene usato l'inglese (Stati Uniti).    |Sì                                   |No  |
-|Inglese       |Filippine        |Sì, ma viene usato l'inglese (Stati Uniti).    |No                                    |No  |
-|Inglese       |Sudafrica       |Sì, ma viene usato l'inglese (Stati Uniti).    |No                                    |No  |
-|Inglese       |Gran Bretagna      |Sì                                          |Sì                                   |Sì |
-|Inglese       |Stati Uniti      |Sì                                          |Sì                                   |Sì |
-|Estone      |Estonia            |Sì                                          |Sì                                   |No  |
-|Finlandese       |Finlandia            |Sì                                          |Sì                                   |No  |
-|Francese        |Belgio            |Sì, ma viene usato il francese (Francia).            |Sì                                   |No  |
-|Francese        |Canada             |Sì                                          |Sì                                   |Sì, ma viene usato il francese (Francia).   |
-|Francese        |Francia             |Sì                                          |Sì                                   |Sì |
-|Francese        |Svizzera        |Sì, ma viene usato il francese (Francia).            |Sì                                   |Sì |
-|Tedesco        |Austria            |Sì, ma viene usato il tedesco (Germania).           |Sì                                   |No  |
-|Tedesco        |Germania            |Sì                                          |Sì                                   |Sì |
-|Tedesco        |Svizzera        |Sì, ma viene usato il tedesco (Germania).           |Sì                                   |No  |
-|Greco         |Grecia             |Sì                                          |Sì                                   |No  |
-|Ebraico        |Israele             |Sì                                          |No                                    |No  |
-|Hindi         |India              |Sì                                          |No                                    |No  |
-|Ungherese     |Ungheria            |Sì                                          |No                                    |No  |
-|Indonesiano    |Indonesia          |Sì                                          |Sì                                   |No  |
-|Italiano       |Italia              |Sì                                          |Sì                                   |Sì |
-|Giapponese      |Giappone              |Sì                                          |Sì                                   |Sì |
-|Coreano        |Coreano             |Sì                                          |Sì                                   |No  |
-|Lettone       |Lettonia             |Sì                                          |Sì                                   |No  |
-|Lituano    |Lituania          |Sì                                          |Sì                                   |No  |
-|Norvegese (Bokmål)   |Norvegia      |Sì                                          |Sì                                   |No  |
-|Polacco        |Polonia             |Sì                                          |Sì                                   |No  |
-|Portoghese    |Brasile             |Sì, ma viene usato portoghese (Portogallo).      |Sì                                   |Sì |
-|Portoghese    |Portogallo           |Sì                                          |Sì                                   |Sì, ma viene usato il portoghese (Brasile).  |
-|Rumeno      |Romania            |Sì                                          |Sì                                   |No  |
-|Russo       |Russia             |Sì                                          |Sì                                   |No  |
-|Slovacco        |Slovacchia           |Sì                                          |Sì                                   |No  |
-|Sloveno     |Slovenia           |Sì                                          |Sì                                   |No  |
-|Spagnolo       |Spagna              |Sì                                          |Sì                                   |Sì |
-|Spagnolo       |Messico             |Sì                                          |Sì                                   |Sì, ma viene usato lo spagnolo (Spagna).   |
-|Svedese       |Svezia             |Sì                                          |Sì                                   |No  |
-|Tailandese          |Thailandia           |Sì                                          |Sì                                   |No  |
-|Turco       |Turchia             |Sì                                          |Sì                                   |No  |
-|Vietnamita    |Vietnam            |Sì                                          |Sì                                   |No  |
-|Gallese         |Galles              |Sì                                          |Sì                                   |No  |
+|Lingua      |Paese/area geografica     |Id     |Disponibile da mostrare agli utenti in una e-mail?     |Disponibile quando l'utente chiama?     |Trascrizione disponibile?      |
+|:-------------|:------------------|:------|:--------------------------------------------|:-------------------------------------|:-----------------------------|
+|Arabo        |Egitto              |ar-EG  |Sì                                          |Sì                                   |No  |
+|Arabo        |Arabia Saudita       |ar-SA  |Sì, ma viene usato l'arabo (Egitto).             |No                                    |No  |
+|Bulgaro     |Bulgaria           |bg-BG  |Sì                                          |Sì                                   |No  |
+|Catalano       |Catalano            |ca-ES  |Sì                                          |Sì                                   |No  |
+|Cinese (semplificato)   |Cina     |zh-CN  |Sì                                          |Sì                                   |Sì |
+|Cinese (Hong Kong)    |Cina     |zh-HK  |Sì, ma viene usato il cinese (tradizionale).      |Sì                                   |Sì, ma viene usato il cinese (tradizionale). |
+|Cinese (tradizionale)  |Taiwan    |zh-TW  |Sì                                          |Sì                                   |No  |
+|Croato      |Croazia            |hr-HR  |Sì                                          |Sì                                   |No  |
+|Ceco         |Repubblica Ceca     |cs-CZ  |Sì                                          |Sì                                   |No  |
+|Danese        |Danimarca            |da-DK  |Sì                                          |Sì                                   |No  |
+|Olandese         |Belgio            |nl-BE  |Sì, ma viene usato l'olandese (Paesi Bassi).        |Sì                                   |No  |
+|Olandese         |Paesi Bassi        |nl-NL  |Sì                                          |Sì                                   |No  |
+|Inglese       |Australia          |en-AU  |Sì, ma viene usato l'inglese (Stati Uniti).    |Sì                                   |Sì, ma viene usato l'inglese (Stati Uniti). |
+|Inglese       |Canada             |en-CA  |Sì, ma viene usato l'inglese (Stati Uniti).    |Sì                                   |Sì, ma viene usato l'inglese (Stati Uniti). |
+|Inglese       |India              |en-IN  |Sì, ma viene usato l'inglese (Stati Uniti).    |Sì                                   |Sì, ma viene usato l'inglese (Stati Uniti). |
+|Inglese       |Irlanda            |en-IE  |Sì, ma viene usato l'inglese (Stati Uniti).    |Sì                                   |No  |
+|Inglese       |Filippine        |en-PH  |Sì, ma viene usato l'inglese (Stati Uniti).    |No                                    |No  |
+|Inglese       |Sudafrica       |en-ZA  |Sì, ma viene usato l'inglese (Stati Uniti).    |No                                    |No  |
+|Inglese       |Regno Unito      |en-GB  |Sì                                          |Sì                                   |Sì |
+|Inglese       |Stati Uniti      |en-US  |Sì                                          |Sì                                   |Sì |
+|Estone      |Estonia            |et-edizione Enterprise  |Sì                                          |Sì                                   |No  |
+|Finlandese       |Finlandia            |fi-FI  |Sì                                          |Sì                                   |No  |
+|Francese        |Belgio            |fr-BE  |Sì, ma viene usato il francese (Francia).            |Sì                                   |No  |
+|Francese        |Canada             |fr-CA  |Sì                                          |Sì                                   |Sì, ma viene usato il francese (Francia).   |
+|Francese        |Francia             |fr-FR  |Sì                                          |Sì                                   |Sì |
+|Francese        |Svizzera        |fr-CH  |Sì, ma viene usato il francese (Francia).            |Sì                                   |Sì |
+|Tedesco        |Austria            |de-AT  |Sì, ma viene usato il tedesco (Germania).           |Sì                                   |No  |
+|Tedesco        |Germania            |de-DE  |Sì                                          |Sì                                   |Sì |
+|Tedesco        |Svizzera        |de-CH  |Sì, ma viene usato il tedesco (Germania).           |Sì                                   |No  |
+|Greco         |Grecia             |el-GR  |Sì                                          |Sì                                   |No  |
+|Ebraico        |Israele             |he-IL  |Sì                                          |No                                    |No  |
+|Hindi         |India              |hi-IN  |Sì                                          |No                                    |No  |
+|Ungherese     |Ungheria            |hu-HU  |Sì                                          |No                                    |No  |
+|Indonesiano    |Indonesia          |id-ID  |Sì                                          |Sì                                   |No  |
+|Italiano       |Italia              |it-IT  |Sì                                          |Sì                                   |Sì |
+|Giapponese      |Giappone              |ja-JP  |Sì                                          |Sì                                   |Sì |
+|Coreano        |Coreano             |ko-KR  |Sì                                          |Sì                                   |No  |
+|Lettone       |Lettonia             |lv-LV  |Sì                                          |Sì                                   |No  |
+|Lituano    |Lituania          |lt-LT  |Sì                                          |Sì                                   |No  |
+|Norvegese (Bokmål)   |Norvegia      |nb-NO  |Sì                                          |Sì                                   |No  |
+|Polacco        |Polonia             |pl-PL  |Sì                                          |Sì                                   |No  |
+|Portoghese    |Brasile             |pt-BR  |Sì, ma viene usato il portoghese (Portogallo).      |Sì                                   |Sì |
+|Portoghese    |Portogallo           |pt-PT  |Sì                                          |Sì                                   |Sì, ma viene usato il portoghese (Brasile).  |
+|Rumeno      |Romania            |ro-RO  |Sì                                          |Sì                                   |No  |
+|Russo       |Russia             |ru-RU  |Sì                                          |Sì                                   |No  |
+|Slovacco        |Slovacchia           |sk-SK  |Sì                                          |Sì                                   |No  |
+|Sloveno     |Slovenia           |sl-SL  |Sì                                          |Sì                                   |No  |
+|Spagnolo       |Spagna              |es-ES  |Sì                                          |Sì                                   |Sì |
+|Spagnolo       |Messico             |es-MX  |Sì                                          |Sì                                   |Sì, ma viene usato lo spagnolo (Spagna).   |
+|Svedese       |Svezia             |sv-SE  |Sì                                          |Sì                                   |No  |
+|Tailandese          |Thailandia           |TH-TH  |Sì                                          |Sì                                   |No  |
+|Turco       |Turchia             |tr-TR  |Sì                                          |Sì                                   |No  |
+|Vietnamita    |Vietnam            |vi-VN  |Sì                                          |Sì                                   |No  |
+|Gallese         |Galles              |cy-GB  |Sì                                          |Sì                                   |No  |
 
  
