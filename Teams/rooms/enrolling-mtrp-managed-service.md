@@ -1,7 +1,7 @@
 ---
-title: Registrare un Teams Rooms dispositivo nel servizio Microsoft Teams Rooms Premium gestito
-author: v-smandalika
-ms.author: v-smandalika
+title: Registrare un dispositivo Teams Rooms nel servizio gestito Microsoft Teams Rooms Premium
+author: donnah007
+ms.author: v-donnahill
 manager: serdars
 ms.reviewer: ''
 ms.topic: article
@@ -15,32 +15,32 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come registrare Microsoft Teams Rooms account nel servizio Microsoft Teams Rooms Premium gestito.
+description: Informazioni su come registrare Microsoft Teams Rooms account in Microsoft Teams Rooms Premium servizio gestito.
 f1keywords: ''
-ms.openlocfilehash: d00c4f84447e8ba41f0328cca9b907db45e8fdb7
-ms.sourcegitcommit: de6eb0478a79e178c5d02cdab8cca44a88beb853
+ms.openlocfilehash: c64fcaf6e817eb57be2915f4f7b6d8684f2ae49b
+ms.sourcegitcommit: d425748a50964ebc78e5d38fce564a444a449f43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "63070415"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65635454"
 ---
-# <a name="enroll-a-device-in-the-microsoft-teams-rooms-premium-managed-service"></a>Registrare un dispositivo nel servizio Microsoft Teams Rooms Premium gestito
+# <a name="enroll-a-device-in-the-microsoft-teams-rooms-premium-managed-service"></a>Registrare un dispositivo nel servizio gestito Microsoft Teams Rooms Premium
 
-Per registrare un dispositivo Microsoft Teams Rooms nel servizio gestito di Teams Rooms Premium, è necessario assegnare uno o più utenti all'amministratore del servizio gestito e quindi completare i passaggi di registrazione usando tale utente.
+Per registrare un dispositivo Microsoft Teams Rooms nel servizio gestito Teams Rooms Premium, è necessario assegnare uno o più utenti all'amministratore del servizio gestito e quindi completare i passaggi di registrazione usando tale utente.
 
 ## <a name="assign-users-to-the-managed-service-administrator-role"></a>Assegnare utenti al ruolo di amministratore del servizio gestito
 
-Completare la procedura seguente per assegnare gli utenti al ruolo di amministratore del servizio gestito:
+Completare la procedura seguente per assegnare agli utenti il ruolo di amministratore del servizio gestito:
 
-1. Accedere al portale [Teams Rooms Premium con](https://portal.rooms.microsoft.com/) gli stessi privilegi di amministratore usati per accedere al interfaccia di amministrazione di Microsoft 365.
-2. Passare a **Impostazioni** >  **Impostazioni** >  **Roles** e quindi selezionare **Amministratore servizio gestito**.
-3. In **Amministratore servizio gestito** selezionare la **scheda Attività** e quindi selezionare **Aggiungi**.
-4. Seguire la procedura guidata per assegnare un nome all'attività e selezionare gli utenti da aggiungere. L'attività verrà applicata a tutte le chat room e i gruppi di chat room.
-5. Al termine della procedura guidata per l'assegnazione, selezionare **Aggiungi attività**.
+1. Accedere al [portale di Teams Rooms Premium](https://portal.rooms.microsoft.com/) con gli stessi privilegi di amministratore usati per accedere al interfaccia di amministrazione di Microsoft 365.
+2. Passare a **Impostazioni** >  **Impostazioni** >  **Roles** e quindi selezionare **Amministratore del servizio gestito**.
+3. In **Amministratore del servizio gestito** seleziona la scheda **Assegnazioni** e quindi **aggiungi**.
+4. Seguire la procedura guidata per assegnare un nome all'attività e selezionare gli utenti da aggiungere. L'assegnazione verrà applicata a tutti i gruppi di sale e gruppi di sale.
+5. Al termine dell'assegnazione guidata, selezionare **Aggiungi attività**.
 
-Gli utenti a cui è assegnato il ruolo di amministratore del servizio gestito sono responsabili della gestione quotidiana e del monitoraggio del portale Teams Rooms Premium servizi gestiti.
+Gli utenti a cui è assegnato il ruolo di amministratore del servizio gestito sono responsabili della gestione quotidiana e del monitoraggio del portale del servizio gestito Teams Rooms Premium.
 
-Dopo aver assegnato gli utenti al ruolo di amministratore del servizio gestito, continuare a registrare un dispositivo [Teams Rooms](enroll-a-device.md) per aggiungere un dispositivo di Teams Rooms al portale dei servizi gestiti.
+Dopo aver assegnato agli utenti il ruolo Amministratore del servizio gestito, passare a [Registra un dispositivo Teams Rooms](enroll-a-device.md) per aggiungere un dispositivo Teams Rooms al portale del servizio gestito.
 
 <!-- ## Enroll a Teams Rooms device
 

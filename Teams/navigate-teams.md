@@ -1,7 +1,7 @@
 ---
 title: Spostarsi tra Microsoft Teams
-author: Benny-54
-ms.author: v-bshilpa
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: reference
 ms.service: msteams
@@ -13,16 +13,16 @@ ms.localizationpriority: medium
 search.appverid: ''
 ms.collection: ''
 ms.custom: ''
-ms.openlocfilehash: 5c87bca0eacfdc85ca39d997488a97faedaf0824
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: 9bf52e68f8db5ecacfb4683b0a4809437a860d77
+ms.sourcegitcommit: d425748a50964ebc78e5d38fce564a444a449f43
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922677"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65635244"
 ---
 # <a name="navigate-microsoft-teams"></a>Spostarsi Microsoft Teams
 
-Ora che si comprende chiaramente il percorso e le esigenze specifiche dell'organizzazione, è il momento di iniziare a collaborare con Microsoft Teams. Usare la sezione seguente per informazioni su come esplorare le funzionalità di Kaziala complimentate all'interno di Teams.
+Ora che si comprende chiaramente il percorso e le esigenze specifiche dell'organizzazione, è il momento di iniziare a collaborare con Microsoft Teams. Usare la sezione seguente per informazioni su come esplorare le funzionalità di Kaizala complimentate all'interno di Teams.
 
 | Da Kaizala | Per Teams |
 |---------|-----------------------|
@@ -42,7 +42,7 @@ Ora che si comprende chiaramente il percorso e le esigenze specifiche dell'organ
 | | [Per gli utenti finali](#end-user-guidance) |
 | Kaizala gruppo di dissoluzione| [Kaizala gruppo di dissoluzione](#kaizala-group-dissolution) |
 | esportazione di dati tenant Kaizala| [Esportare Kaizala dati del tenant](#export-kaizala-tenant-data)  |
-| Collaborazione con utenti esterni (fornitori/partner)| [Uso di Teams per il lavoro e Teams per l'interoperabilità dell'uso personale](#collaborating-with-external-usersvendorssupplierspartners) |
+| Collaborazione con utenti esterni (fornitori/partner)| [Aggiungere o invitare persone esterne all'organizzazione Teams a una chat](#collaborating-with-external-usersvendorssupplierspartners) |
 
 ## <a name="getting-started"></a>Introduzione
 
@@ -185,6 +185,7 @@ Creare un annuncio per informare i membri del team di notizie o azioni important
 - Digitare un titolo, modificarne il colore di sfondo o aggiungere un'immagine di sfondo per l'area del titolo.
 
 - Digitare l'oggetto dell'annuncio nell'area Aggiungi un sottotitolo, quindi il corpo del messaggio e selezionare il pulsante Invia.
+
     ![Annuncio per dispositivi mobili](media/kaizala-to-teams-image10.png)
 
 **Passaggio 3**: Selezionare i canali per la trasmissione di messaggi.
@@ -202,7 +203,7 @@ Microsoft Teams offre diverse funzionalità e soluzioni per le schede azione fuo
 
 ![Coinvolgere le persone con Teams](media/kaizala-to-teams-image12.png)
 
-La piattaforma Teams consente di usare gli strumenti dell'organizzazione esistenti tramite l'integrazione in Microsoft Teams insieme ad applicazioni Microsoft 365 pronte per l'uso e app di terze parti. In Microsoft Teams sono ora disponibili oltre 300 applicazioni esterne.
+La piattaforma Teams consente di usare gli strumenti dell'organizzazione esistenti tramite l'integrazione in Microsoft Teams insieme ad applicazioni Microsoft 365 pronte per l'uso e app di terze parti. In Microsoft Teams sono attualmente disponibili oltre 800 applicazioni esterne.
 
 ### <a name="polls-surveys-and-checklists-in-teams"></a>Sondaggi, sondaggi ed elenchi di controllo in Teams
 
@@ -212,7 +213,7 @@ La piattaforma Teams consente di usare gli strumenti dell'organizzazione esisten
 
 ![Modello di app Sondaggi in Teams](media/polltemplatecompose.gif)
 
-**Sondaggio** consente agli utenti di creare un sondaggio in una chat o in un canale per porre una serie di domande e ottenere informazioni utili e fruibili. Usa sondaggio per: registrazioni, iscrizioni, feedback, testimonianze, acquisizione di lead, segnalazione, reclami e valutazioni. L'app Sondaggio è supportata in tutte le piattaforme, Teams desktop, browser, iOS e client Android. È pronto per la distribuzione nell'ambito dell'abbonamento a Microsoft 365 esistente.
+**Sondaggio** consente agli utenti di creare un sondaggio in una chat o in un canale per porre una serie di domande e ottenere informazioni utili e fruibili. Usa sondaggio per: registrazioni, iscrizioni, feedback, testimonianze, acquisizione di lead, segnalazione, reclami e valutazioni. L'app Sondaggio è supportata in tutte le piattaforme: Teams desktop, browser, iOS e client Android. È pronto per la distribuzione nell'ambito dell'abbonamento a Microsoft 365 esistente.
 
 ![Modello di app Sondaggio in Teams](media/surveytemplatecompose.gif)
 
@@ -242,7 +243,7 @@ Creare e inviare messaggi destinati a più team o a un numero elevato di dipende
 
 ### <a name="photo-check-ins"></a>Check-in con foto
 
-Usare la Teams Smart Camera per acquisire e condividere un'immagine annotata con il team. Condividi facilmente la tua posizione con precisione per tenere informato il tuo team. È necessario avere altre informazioni per comunicare come vengono mappate le caratteristiche di Kaizala a Teams. Sicuramente avere il maggior numero di informazioni dalla presentazione come possiamo nel documento.
+Usare Teams Smart Fotocamera per acquisire e condividere un'immagine annotata con il team. Condividi facilmente la tua posizione con precisione per tenere informato il tuo team. È necessario avere altre informazioni per comunicare come vengono mappate le caratteristiche di Kaizala a Teams. Sicuramente avere il maggior numero di informazioni dalla presentazione come possiamo nel documento.
 
 Usare il modello di app [Check-in](/microsoftteams/platform/samples/app-templates#staff-check-ins) per personale per consentire al personale in prima linea di fornire facilmente informazioni temporali critiche e aggiornamenti di stato su base pianificata o ad hoc direttamente da Teams. L'app supporta la posizione in tempo reale, foto, note, notifiche di promemoria e flussi di lavoro automatizzati.
 
@@ -282,29 +283,29 @@ Segui questo approccio in tre passaggi per ottenere le soluzioni per Microsoft T
 
 3. Esplora i seguenti approcci per frequenza di utilizzo e complessità.
 
-    - Esplorare soluzioni alternative con [funzionalità native di Microsoft Teams](/microsoftteams/platform/concepts/capabilities-overview)
+    - Sfruttare le funzionalità di Microsoft Teams native
 
-    - Usare [integrazioni di app 3P](deploy-apps-microsoft-teams-landing-page.md)
+    - Usare [l'integrazione di app di terze parti ed esplorare l'App Store](deploy-apps-microsoft-teams-landing-page.md)
 
-    - Scopri [i modelli di app](/microsoftteams/platform/samples/app-templates)
+    - Individuare [i modelli di app](/microsoftteams/platform/samples/app-templates)
 
-    - Sviluppo di [soluzioni personalizzate](/microsoftteams/platform/overview)
+    - Creare [app personalizzate con la piattaforma Teams](/microsoftteams/platform/overview)
 
 ## <a name="management-in-microsoft-teams"></a>Gestione in Microsoft Teams
 
 ### <a name="it-professionals"></a>Professionisti IT
 
-Eseguire la transizione amministrativa dal portale di gestione Kaizala all'interfaccia di amministrazione di Microsoft Teams. L'interfaccia di amministrazione di Teams serve principalmente per l'uso dei ruoli di amministratore.
+Eseguire la transizione amministrativa dal portale di gestione Kaizala al Centro Microsoft Teams Amministrazione. L'interfaccia di amministrazione di Teams serve principalmente per l'uso dei ruoli di amministratore.
 
 Gli amministratori possono gestire l'intero carico di lavoro di Teams o avere autorizzazioni delegate per risolvere i problemi di qualità delle chiamate o gestire le esigenze di telefonia dell'organizzazione.
 
-Per spostarsi nell'interfaccia di amministrazione, visitare [Microsoft Teams interfaccia di amministrazione](https://admin.teams.microsoft.com/).
+Per spostarsi nell'interfaccia di amministrazione, visitare [Microsoft Teams Amministrazione Center](https://admin.teams.microsoft.com/).
 
-È possibile monitorare la sicurezza e la conformità dell'organizzazione in Microsoft 365 con il portale di [conformità Microsoft Purview](/microsoft-365/compliance/microsoft-365-compliance-center) e il [Centro sicurezza Microsoft](/microsoft-365/security/defender/overview-security-center).
+È possibile monitorare la sicurezza e la conformità dell'organizzazione in Microsoft 365 [con Portale di conformità di Microsoft Purview e](/microsoft-365/compliance/microsoft-365-compliance-center) [Centro sicurezza Microsoft](/microsoft-365/security/defender/overview-security-center).
 
 Proteggere l'azienda e consentire agli utenti di usare [l'interfaccia di amministrazione di Azure Active Directory](https://aad.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/private/c7736064-7b28-4f3d-b366-2740a8d48020), in cui è possibile esaminare i gruppi, l'identità, le licenze e l'accesso in Microsoft 365.
 
-## <a name="kaizala-management-portal-to-teams-admin-center"></a>Portale di gestione Kaizala all'interfaccia di amministrazione di Teams
+## <a name="kaizala-management-portal-to-teams-admin-center"></a>Portale di gestione Kaizala al Centro Teams Amministrazione
 
 ### <a name="end-user-guidance"></a>Linee guida per l'utente finale
 
@@ -315,12 +316,12 @@ Usare la tabella seguente per spostarsi tra le funzionalità corrispondenti in M
 | Creare gruppi (connessi all'organizzazione) | **Creare team** tramite l'app Desktop o per dispositivi mobili |
 | Aggiunta di utenti in blocco | Per aggiungere utenti in blocco al team, è consigliabile creare un team tramite gruppi di Office 365, elenchi di distribuzione di Office 365 o gruppi di sicurezza |
 | Directory | Cerca chiunque all'interno dell'organizzazione tramite la **barra di ricerca** nei team. I risultati della ricerca restituiscono anche file, messaggi e post |
-| Analisi (schede azione) | **Sondaggi****, sondaggi e** liste di controllo **hanno incorporato report con dati scaricabili. I processi possono anche essere assegnati con l'aiuto diAttivitàin** **planner. Anche altre app di terze parti** comeTrello,Wrike** possono essere usate con facilità in Microsoft Teams |
+| Analisi (schede azione) | **Sondaggi**, **sondaggi** ed **elenchi di controllo sono incorporati** nei report con dati scaricabili. I processi possono anche essere assegnati con l'aiuto dell'app Attività in Teams, disponibile per gli utenti. Per altri scenari, le app di terze parti come **Trello**, **Asana** possono anche essere esplorate per essere usate all'interno di Teams. |
 | Estensioni - Connettori | Usare l'opzione **Connettori** del menu (...) per qualsiasi canale per cui è necessario il connettore. |
-| Report sull'adozione di analisi (utilizzo), report sull'utilizzo, report attività | I proprietari dei team possono accedere ai report per i propri team dal menu (...) per **gestire** **Teamanalytics** > . |
+| [Report sull'adozione di analisi (utilizzo),](teams-analytics-and-reports/view-analytics.md) [report sull'utilizzo](teams-analytics-and-reports/teams-usage-report.md), [report attività](teams-analytics-and-reports/user-activity-report.md) | I proprietari dei team possono accedere ai report per i propri team dal menu (...) per **gestire** **Teamanalytics** > . |
 
 > [!NOTE]
-> Teams gli utenti finali possono usare Teams su desktop o dispositivi mobili per gestire i singoli team e canali e non dovranno accedere all'interfaccia di amministrazione di Teams.
+> Teams gli utenti finali possono usare Teams su desktop o dispositivi mobili per gestire i singoli team e canali e non dovranno accedere al centro Teams Amministrazione.
 
 ## <a name="kaizala-group-dissolution"></a>Kaizala gruppo di dissoluzione
 
@@ -415,20 +416,27 @@ Durante l'uso di Teams, è comunque possibile mantenere il controllo dei dati az
 
 ## <a name="collaborating-with-external-usersvendorssupplierspartners"></a>Collaborazione con utenti esterni (fornitori/partner)
 
-Collaborare con fornitori, partner e altri utenti esterni è più facile che mai in Microsoft Teams. Con Teams, gli utenti hanno la possibilità di aggiungere utenti esterni con numeri di telefono. Questa funzionalità è supportata con Microsoft Teams Connect. Gli utenti all'interno dell'organizzazione possono comunicare con utenti esterni usando Teams per il lavoro e Teams per l'interoperabilità degli account personali. La collaborazione con utenti esterni in Teams può essere eseguita anche con l'accesso guest usando un indirizzo di posta elettronica personale o ufficiale. La pubblicazione di annunci tra team e canali è supportata con Teams. Ad esempio: i fornitori e i fornitori possono inviare annunci a vicenda Teams canali o team separati. Per altre informazioni sul supporto di Teams, vedere [Inviare un annuncio a un canale](https://support.microsoft.com/office/send-an-announcement-to-a-channel-8f244ea6-235a-4dcc-9143-9c5b801b4992).
+Microsoft Teams offre soluzioni sicure per la collaborazione con parti esterne e con Microsoft Teams Connect è ancora più facile lavorare con chiunque all'esterno dell'organizzazione. Teams consente agli utenti commerciali di chattare con utenti commerciali esterni, ovvero con utenti commerciali di altre organizzazioni. Sulla base di questo privilegio, ti stiamo consentendo di chattare con i membri del team all'esterno dell'organizzazione, anche se usano un Teams account personale. Questi account vengono utilizzati spesso da SMB e quindi questa nuova funzionalità consente di rafforzare la relazione con i partner esterni.
 
-## <a name="what-is-external-access-in-teams"></a>Che cos'è l'accesso esterno in Teams?
+Come annunciato in precedenza in [Ignite](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-ignite-fall-2021-innovations-coming-to-microsoft-teams/ba-p/2824127), puoi invitare qualsiasi utente Teams chattando l'indirizzo e-mail completo o il numero di telefono che vuoi raggiungere e avviando una chat uno-a-uno o di gruppo con chiunque abbia un account Microsoft personale, senza cambio di tenant richiesto.
 
-L'accesso esterno consente agli utenti di Teams appartenenti a un intero dominio esterno di trovare, contattare, chattare e configurare riunioni con la propria organizzazione in Teams. Per altre informazioni sulla gestione dell'accesso esterno, vedere [Gestire l'accesso esterno](/microsoftteams/manage-external-access).
+Chattare con utenti esterni senza dover cambiare tenant consente di ottenere i risultati desiderati più velocemente. Diamo un'occhiata più da vicino su come funziona.
 
-## <a name="what-is-guest-access-in-teams"></a>Che cos'è l'accesso guest in Teams?
+A seconda delle impostazioni amministrative dell'organizzazione e dell'utente dell'account personale Teams, è possibile avviare conversazioni con utenti esterni Teams personali e utenti esterni Teams account personale possono avviare conversazioni con Teams utenti in ufficio.
 
-Con [l'accesso guest](/MicrosoftTeams/guest-access), è possibile fornire l'accesso a team, documenti in canali, risorse, chat e applicazioni a persone esterne all'organizzazione, mantenendo il controllo sui dati aziendali. Non è richiesta alcuna licenza aggiuntiva per aggiungere guest in Teams.
+Teams gli utenti gestiti da un'organizzazione possono invitare Teams utenti dell'account personale con cui vogliono chattare immettendo l'indirizzo e-mail o il numero di telefono completo. Teams gli utenti personali possono immettere l'indirizzo e-mail dell'organizzazione esatto dell'utente che vogliono raggiungere e tentare di avviare una chat.
 
-## <a name="who-can-be-a-guest-in-teams"></a>Who può essere un Guest in Teams?
+Se le persone con cui si vuole chattare non sono già Teams utenti, riceveranno un messaggio di posta elettronica o un SMS che li invita a partecipare alla conversazione con un account personale. Quando si registra e accede al proprio account Teams personale, potrà partecipare alla chat.
 
-Un guest è una persona che non è un dipendente o un membro dell'organizzazione. Non hanno un account aziendale con l'organizzazione. Ad esempio, gli utenti guest possono includere partner, fornitori o consulenti.
-Chiunque non fa parte dell'organizzazione può essere [aggiunto come guest in Teams](/MicrosoftTeams/guest-access#how-a-guest-becomes-a-member-of-a-team). Questo significa che chiunque abbia un account aziendale (ossia un account di Azure Active Directory) o un account di posta elettronica consumer (ad esempio outlook.com, gmail.com così via) può partecipare come guest a Teams con accesso a team e esperienze di canale.
+Dopo che le persone invitate avranno accettato l'invito, è possibile avviare una nuova chat tra due persone o di gruppo oppure aggiungerle a una chat di gruppo esterna esistente. Questo thread di chat verrà visualizzato insieme alle altre chat, senza che sia necessario cambiare tenant per visualizzare la chat.
+
+Nell'ambito della chat, è possibile esprimere se stessi inviando e ricevendo rich messaggi, GIF ed elementi multimediali.
+
+È possibile scegliere di rimanere solo nelle conversazioni a cui si vuole partecipare. È possibile bloccare i messaggi provenienti da utenti esterni o uscire da una chat di gruppo.
+
+Teams gli utenti gestiti da un'organizzazione e Teams account personale hanno la possibilità di rifiutare un invito esterno. È possibile inviare messaggi a un utente esterno fino a 10 volte prima che accettino, ma se dopo 10 messaggi non viene accettata alcuna accettazione, non sarà possibile inviare altri messaggi a questo utente.
+
+Visualizzare la [pagina del supporto](https://support.microsoft.com/en-us/office/add-or-invite-people-outside-your-teams-org-to-a-chat-6897ab47-9f60-4db6-8b95-18599714fe57) e leggere il [blog](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-users-can-now-chat-with-any-teams-user-outside/ba-p/3070832) per altre informazioni su come Teams consente di collaborare facilmente con clienti e partner esterni nell'ambito della sicurezza e della sicurezza dell'area di lavoro di Teams attendibile.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
