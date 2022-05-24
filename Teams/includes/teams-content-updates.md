@@ -3,6 +3,23 @@
 
 
 
+## <a name="week-of-may-16-2022"></a>Settimana del 16 maggio 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 5/17/2022 | [Usare il componente aggiuntivo Riunione di Microsoft Teams in Outlook](/MicrosoftTeams/teams-add-in-for-outlook) | Volta |
+| 5/18/2022 | [Parcheggio di chiamata e recupero in Microsoft Teams](/MicrosoftTeams/call-park-and-retrieve) | Volta |
+| 5/18/2022 | [Appuntamenti virtuali con Teams - Integrazione in Epic EHR](/MicrosoftTeams/expand-teams-across-your-org/healthcare/ehr-admin) | Volta |
+| 5/19/2022 | [Turni connettori](/MicrosoftTeams/expand-teams-across-your-org/shifts/shifts-connectors) | Volta |
+| 5/20/2022 | [Pianificare Teams operatori automatici e code di chiamata](/MicrosoftTeams/plan-auto-attendant-call-queue) | Volta |
+| 5/20/2022 | [Modificare la lingua predefinita per i messaggi di saluto e le e-mail](/MicrosoftTeams/change-the-default-language-for-greetings-and-emails) | Volta |
+| 5/20/2022 | [Teams lingue per i messaggi e i saluti della segreteria telefonica](/MicrosoftTeams/languages-for-voicemail-greetings-and-messages) | Volta |
+| 5/20/2022 | [Gestire i criteri di routing delle chiamate di emergenza per il routing diretto](/MicrosoftTeams/manage-emergency-call-routing-policies) | Volta |
+| 5/20/2022 | [Gestire i criteri per le chiamate di emergenza in Microsoft Teams](/MicrosoftTeams/manage-emergency-calling-policies) | Volta |
+| 5/20/2022 | [Note sulla versione di Microsoft Teams PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | Volta |
+
+
 ## <a name="week-of-may-09-2022"></a>Settimana del 9 maggio 2022
 
 
@@ -17,7 +34,7 @@
 | 5/10/2022 | [Supporto della versione dell'app Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-lifecycle-support) | Volta |
 | 5/12/2022 | [Gestire i criteri della segreteria telefonica](/MicrosoftTeams/manage-voicemail-policies) | Volta |
 | 5/12/2022 | [Configurare gateway SIP](/MicrosoftTeams/sip-gateway-configure) | Volta |
-| 5/12/2022 | [Configurazione dell'amministratore dei genitori in Teams per l'istruzione](/MicrosoftTeams/edu-parents-app) | Volta |
+| 5/12/2022 | [Amministrazione configurazione di Genitori in Teams per l'istruzione](/MicrosoftTeams/edu-parents-app) | Volta |
 | 5/13/2022 | [App Walkie-talkie in Microsoft Teams](/MicrosoftTeams/walkie-talkie) | Volta |
 | 5/13/2022 | [Requisiti per Microsoft Teams Rooms](/MicrosoftTeams/rooms/requirements) | Volta |
 
@@ -29,7 +46,7 @@
 |------|------------|--------|
 | 5/2/2022 | [Microsoft Teams report utilizzo PSTN](/MicrosoftTeams/teams-analytics-and-reports/pstn-usage-report) | Volta |
 | 5/3/2022 | [Disponibilità dell'applicazione Approvazioni in Teams](/MicrosoftTeams/approval-admin) | Volta |
-| 5/3/2022 | [Configurazione dell'amministratore dei genitori in Teams per l'istruzione](/MicrosoftTeams/edu-parents-app) | Volta |
+| 5/3/2022 | [Amministrazione configurazione di Genitori in Teams per l'istruzione](/MicrosoftTeams/edu-parents-app) | Volta |
 | 5/3/2022 | [Gestire l'app Turni per l'organizzazione](/MicrosoftTeams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams) | Volta |
 | 5/3/2022 | [Gestire l'app Tasks per l'organizzazione in Microsoft Teams](/MicrosoftTeams/manage-tasks-app) | Volta |
 | 5/3/2022 | [Applicazione Walkie-talkie in Microsoft Teams](/MicrosoftTeams/walkie-talkie) | Volta |
@@ -87,28 +104,3 @@
 | 4/29/2022 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | Volta |
 | 4/29/2022 | [Gestire pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | Volta |
 | 4/29/2022 | [Panoramica della certificazione delle app da parte di Microsoft](/MicrosoftTeams/overview-of-app-certification) | Volta |
-
-
-## <a name="week-of-april-18-2022"></a>Settimana del 18 aprile 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 4/18/2022 | [Panoramica della certificazione delle app da parte di Microsoft](/MicrosoftTeams/overview-of-app-certification) | Volta |
-| 4/18/2022 | Pianificare i gruppi di Microsoft 365 durante la creazione di team | Rimosso |
-| 4/18/2022 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | Volta |
-| 4/19/2022 | [Musica in attesa](/MicrosoftTeams/music-on-hold) | Volta |
-| 4/19/2022 | [Teams il comportamento delle app in base ai tipi di utenti](/MicrosoftTeams/non-standard-users) | Volta |
-| 4/19/2022 | [Panoramica di sicurezza e conformità](/MicrosoftTeams/security-compliance-overview) | Volta |
-| 4/20/2022 | [Audioconferenza criteri per i numeri verdi](/MicrosoftTeams/audio-conferencing-toll-free-numbers-policy) | Aggiunto |
-| 4/20/2022 | [Modificare i numeri di telefono nel bridge di Audioconferenza](/MicrosoftTeams/change-the-phone-numbers-on-your-audio-conferencing-bridge) | Volta |
-| 4/20/2022 | [Disabilitazione dei numeri verdi per specifici utenti Teams](/MicrosoftTeams/disabling-toll-free-numbers-for-specific-teams-users) | Volta |
-| 4/20/2022 | [Gestire le impostazioni di Audioconferenza](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-my-organization-in-teams) | Volta |
-| 4/20/2022 | [Impostare i numeri di telefono inclusi negli inviti](/MicrosoftTeams/set-the-phone-numbers-included-on-invites-in-teams) | Volta |
-| 4/20/2022 | [Configurare Audioconferenza per Microsoft Teams](/MicrosoftTeams/set-up-audio-conferencing-in-teams) | Volta |
-| 4/21/2022 | Microsoft StaffHub è stato ritirato | Rimosso |
-| 4/21/2022 | Impostazioni di amministrazione per le app in Microsoft Teams | Rimosso |
-| 4/21/2022 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | Volta |
-| 4/21/2022 | [Condurre un'indagine di eDiscovery sul contenuto](/MicrosoftTeams/ediscovery-investigation) | Volta |
-| 4/22/2022 | [Kaizala e Microsoft Teams](/MicrosoftTeams/get-started-kaizala-teams) | Volta |
-| 4/22/2022 | [Spostarsi tra Microsoft Teams](/MicrosoftTeams/navigate-teams) | Volta |
