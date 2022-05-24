@@ -1,20 +1,20 @@
 ---
 title: Gestire l'app Complimenti nell'interfaccia di amministrazione di Teams
-author: guptaashish
-ms.author: guptaashish
-manager: prkosh
+author: mkbond007
+ms.author: mabond
+manager: serdars
 ms.reviewer: rjam
 audience: admin
 ms.topic: article
 ms.service: msteams
 ms.localizationpriority: medium
 description: Informazioni su come gestire l'app Complimenti nell'interfaccia di amministrazione di Microsoft Teams.
-ms.openlocfilehash: ff9985025146136ae78d8e822dd5b61903443605
-ms.sourcegitcommit: 73df40ce6fbd1d305fd381140f293a2feb0d27bf
+ms.openlocfilehash: e9da2a1903c53f469d6a64c6773715bfe1697743
+ms.sourcegitcommit: 9532eb79310cd653010565607fa394f2b8dd182d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65359776"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65646275"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimenti nell'interfaccia di amministrazione di Microsoft Teams
 

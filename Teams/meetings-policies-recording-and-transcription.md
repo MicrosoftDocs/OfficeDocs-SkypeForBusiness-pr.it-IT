@@ -1,7 +1,7 @@
 ---
 title: Gestire i criteri delle riunioni per la registrazione e la trascrizione
-author: KarliStites
-ms.author: kastites
+author: mkbond007
+ms.author: mabond
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,29 +17,29 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.recordingandtranscription
-description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per la registrazione e la trascrizione.
-ms.openlocfilehash: ee558ae87d7bea781cae3d2bc267f82bc1fdb18a
-ms.sourcegitcommit: faeb8976299375e7658499ff31d25e8ef6003144
+description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per la registrazione e la trascrizione.
+ms.openlocfilehash: da7a5d43231abcb00339f2ffc2c57c7e90ff2d2e
+ms.sourcegitcommit: 9532eb79310cd653010565607fa394f2b8dd182d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2022
-ms.locfileid: "62224073"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65646365"
 ---
-# <a name="meeting-policy-settings-for-recording--transcription"></a>Impostazioni dei criteri di riunione per la registrazione & trascrizione
+# <a name="meeting-policy-settings-for-recording--transcription"></a>Impostazioni dei criteri riunione per la registrazione & trascrizione
 
 Questo articolo descrive le impostazioni dei criteri di riunione specifiche per la registrazione e la trascrizione, tra cui:
 
 - [Consenti la trascrizione](#allow-transcription)
 - [Consenti registrazione cloud](#allow-cloud-recording)
-- [Archiviare registrazioni al di fuori del paese o dell'area geografica](#store-recordings-outside-of-your-country-or-region)
+- [Archiviare le registrazioni al di fuori del paese o dell'area geografica](#store-recordings-outside-of-your-country-or-region)
 
 ## <a name="allow-transcription"></a>Consenti la trascrizione
 
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. La persona che ha avviato la registrazione ha bisogno di questa impostazione attivata per usare queste funzionalità con la registrazione.
+Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. La persona che ha avviato la registrazione deve attivare questa impostazione per permettere alle funzionalità di operare in fase di registrazione.
 
-Se si attiva questa impostazione, viene creata una copia della trascrizione archiviata con la registrazione della riunione, che consente di eseguire **ricerche,** **CC** e **trascrizioni** nella registrazione della riunione.
+Con l’attivazione di questa impostazione, viene creata una copia della trascrizione archiviata con la registrazione della riunione, che permette di eseguire **ricerche**, **CC** e **trascrizioni** nella registrazione della riunione.
 
-La trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che impostano la lingua o parlano inglese nelle riunioni Teams riunioni.
+La trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che impostano la lingua o parlano inglese nelle riunioni Teams.
 
 ## <a name="allow-cloud-recording"></a>Consenti la registrazione cloud
 
@@ -58,18 +58,18 @@ Osserviamo l'esempio seguente.
 |Luca (utente esterno) | Non applicabile | Non applicabile|
 
 - Le riunioni organizzate da Daniela non possono essere registrate.
-- Non è possibile registrare le riunioni organizzate da Daniela.
+- Amanda non riesce a registrare le riunioni organizzate da Daniela.
 - Le riunioni organizzate da Amanda possono essere registrate.
 - Daniela non può registrare le riunioni organizzate da Amanda.
-- Giovanni non può registrare le riunioni organizzate da Amanda.
+- John non riesce a registrare le riunioni organizzate da Amanda.
 
 Per altre informazioni sulla registrazione di una riunione cloud, vedere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
-## <a name="store-recordings-outside-of-your-country-or-region"></a>Archiviare registrazioni al di fuori del paese o dell'area geografica
+## <a name="store-recordings-outside-of-your-country-or-region"></a>Archiviare le registrazioni al di fuori del paese o dell'area geografica
 
-Questo criterio controlla se i record delle riunioni possono essere archiviati in modo permanente in un altro paese o area geografica. Se è abilitato, non è possibile eseguire la migrazione delle registrazioni. Per altre informazioni sulle riunioni nel cloud e sulla posizione in cui sono archiviate le registrazioni, vedere Teams [registrazione delle riunioni cloud.](cloud-recording.md)
+Questo criterio controlla se i record delle riunioni possono essere archiviati in modo permanente in un altro paese o area geografica. Se è abilitata, non è possibile eseguire la migrazione delle registrazioni. Per altre informazioni sulle riunioni sul cloud e sulla posizione in cui vengono archiviate le registrazioni, vedere [Teams registrazione di riunioni cloud](cloud-recording.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Assegnare criteri agli utenti in Teams](policy-assignment-overview.md)
-- [Registrazione delle riunioni nel cloud](cloud-recording.md)
+- [Registrazione di riunioni nel cloud](cloud-recording.md)

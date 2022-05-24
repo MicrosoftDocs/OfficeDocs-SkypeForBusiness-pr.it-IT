@@ -1,9 +1,9 @@
 ---
 title: Disponibilità dell'applicazione Approvazioni in Teams
-author: guptaashish
-ms.author: guptaashish
+author: mkbond007
+ms.author: mabond
 ms.reviewer: farhazk
-manager: prkosh
+manager: serdars
 ms.topic: article
 audience: admin
 ms.service: msteams
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 205f0869e699384c9a37590db50e690b5b8bd804
-ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
+ms.openlocfilehash: f31df258558e052e887a679321dd6ed2db48f344
+ms.sourcegitcommit: 9532eb79310cd653010565607fa394f2b8dd182d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65186982"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65646255"
 ---
 # <a name="teams-approvals-app-availability"></a>Disponibilità dell'app Approvazioni in Teams
 
@@ -102,7 +102,7 @@ Autorizzazioni per i modelli di approvazione
 - Quando un amministratore crea un modello per l'intera organizzazione per la prima volta, crea automaticamente un nuovo gruppo di Azure Active Directory (AAD) per tutti gli amministratori del tenant, inclusi gli amministratori globali e Teams del servizio. Questi amministratori vengono aggiunti come proprietari del gruppo, in modo che possano co-gestire i modelli dell'organizzazione. Gli amministratori che non hanno più accesso all'organizzazione dopo la creazione del team devono essere aggiunti manualmente come proprietari del gruppo in modo che abbiano le stesse autorizzazioni per gestire i modelli a livello di organizzazione.
 
 > [!Note]
-> Se un amministratore elimina il gruppo, è necessario un mese per ripristinarlo nel portale di Azure Active Directory (AAD) per ripristinare tutti i dati correlati. Dopo un mese o se l'amministratore elimina questo gruppo nel Cestino, si perderanno tutti i dati correlati.
+> Se un amministratore elimina il gruppo, hai un mese per ripristinarlo nel portale di Azure Active Directory (AAD) per ripristinare tutti i dati correlati. Dopo un mese o se l'amministratore elimina questo gruppo nel Cestino, si perderanno tutti i dati correlati.
 
 ## <a name="disable-the-approvals-app"></a>Disabilitare l'app Approvazioni
 
@@ -114,7 +114,7 @@ L'app Approvazioni è disponibile per impostazione predefinita. È possibile dis
 
   3. Cercare l'app Approvazioni.
 
-     ![mostra la struttura di spostamento dell'interfaccia di amministrazione con Teams App > Gestisci app evidenziato.](media/manage-approval-apps.png)
+     ![mostra la struttura di spostamento centrale Amministrazione con Teams App > Gestisci app evidenziato.](media/manage-approval-apps.png)
 
   4. Selezionare **Approvazioni**.
 

@@ -1,8 +1,8 @@
 ---
-title: Modelli di team per piccole e medie imprese create con Microsoft Graph
-author: serdarsoysal
-ms.author: serdars
-manager: serdars
+title: Modelli di team per piccole e medie imprese creati con Microsoft Graph
+author: LanaChin
+ms.author: v-lanachin
+manager: samanro
 audience: ITPro
 ms.topic: conceptual
 ms.service: msteams
@@ -15,36 +15,36 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.reviewer: lavenkat
-description: Usare Microsoft Teams predefiniti predefiniti di Microsoft Graph creare rapidamente e facilmente team per le piccole e medie imprese.
+description: Usare Microsoft Teams modelli predefiniti predefiniti predefiniti di Microsoft Graph per creare team per piccole e medie imprese in modo semplice e rapido.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 324470ffc3366750777c75776e4ae4e783dbb17f
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: 5317b989bd7fe77f34743b6554cd356c226c2fa8
+ms.sourcegitcommit: 9532eb79310cd653010565607fa394f2b8dd182d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60045682"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65646305"
 ---
-# <a name="team-templates-built-in-microsoft-graph-for-small-and-medium-businesses"></a>Modelli di team incorporati in Microsoft Graph per piccole e medie imprese
+# <a name="team-templates-built-in-microsoft-graph-for-small-and-medium-businesses"></a>Modelli di team predefiniti di Microsoft Graph per piccole e medie imprese
 
 I modelli di Microsoft Teams consentono di creare team in modo rapido e semplice fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
-Per le piccole e medie imprese, i modelli possono essere particolarmente efficaci, perché consentono di distribuire rapidamente Teams all'interno dell'organizzazione. I modelli aiutano anche gli utenti a orientarsi su come usare in modo efficace Teams. Questo articolo è utile se si è responsabili della pianificazione, della distribuzione e della gestione di più team all'interno dell'organizzazione.
+Per le piccole e medie imprese, i modelli possono essere particolarmente potenti, perché consentono di distribuire rapidamente Teams all'interno dell'organizzazione. I modelli consentono anche agli utenti di orientarsi nell'uso efficace di Teams. Questo articolo è rivolto agli utenti responsabili della pianificazione, della distribuzione e della gestione di più team all'interno dell'organizzazione.
 
-Attualmente sono disponibili tre modelli predefiniti per le piccole e medie imprese che è possibile usare per varie situazioni. Tutti i modelli creano *team* privati. Dopo aver creato i team e essere pronti per l'implementazione nell'organizzazione, è possibile impostare la privacy su *A* livello di organizzazione o *Pubblico,* in base alle esigenze.
+Attualmente sono disponibili tre modelli predefiniti per piccole e medie imprese che è possibile usare in diverse situazioni. Tutti i modelli creano team *privati* . Dopo aver creato i team ed essere pronti per l'implementazione nell'organizzazione, è possibile impostare la privacy su *A livello di organizzazione* o *Pubblico*, in base alle esigenze.
 
-Per altre informazioni sui modelli di team in generale, vedere Introduzione ai modelli [di team con Microsoft Graph](get-started-with-teams-templates.md).
+Per altre informazioni sui modelli di team in generale, vedere [Attività iniziali con i modelli di team che usano Microsoft Graph](get-started-with-teams-templates.md).
 
 ## <a name="company-wide-template"></a>Company-Wide modello
 
-Il Company-Wide è pensato per la comunicazione e la collaborazione per l'intera azienda. È possibile usare il canale Generale per annunci aziendali, notizie di settore o post esecutivi. Il canale Risorse umane è un'ottima posizione per consolidare tutte le attività correlate alle risorse umane, come post di lavoro, onboarding di nuovi dipendenti, formazione e sviluppo. Il canale Cose divertenti offre una piattaforma social per tutti i post casuali e divertenti.
+Il modello Company-Wide è pensato per la comunicazione e la collaborazione per l'intera azienda. È possibile usare il canale Generale per gli annunci a livello aziendale, le notizie del settore o i post dei dirigenti. Il canale Risorse umane è il luogo ideale per consolidare tutte le attività correlate alle risorse umane, come post di lavoro, onboarding di nuovi dipendenti, formazione e sviluppo. Il canale Fun Stuff offre una piattaforma social per tutti i post casuali e divertenti.
 
 | Tipo di modello  | TemplateId | Proprietà del modello |
 | :------------------ | :-------------- | :----------------------------------------------------- | 
-| SMB - <br>A livello aziendale | `https://graph.microsoft.com/beta/`<br>` teamsTemplates('SmallBusinessOrgWide')`| Canali <ul><li>Generale\*</li><li>Risorse umane\*</li><li>Cose divertenti\*</li></ul><br> App<ul><li>Portale aziendale (sito Web aggiunto al **canale Risorse** umane) </li> </UL><br>Proprietà del team <ul><li>Visibilità del team impostata su Private</li></ul> |
+| SMB - <br>A livello aziendale | `https://graph.microsoft.com/beta/`<br>` teamsTemplates('SmallBusinessOrgWide')`| Canali <ul><li>Generale\*</li><li>Risorse umane\*</li><li>Cose divertenti\*</li></ul><br> App<ul><li>Portale aziendale (sito Web aggiunto al canale **Risorse umane**) </li> </UL><br>Proprietà del team <ul><li>Visibilità del team impostata su Private</li></ul> |
 
 *Canali preferiti automaticamente 
 
-Per creare il team Company-Wide usando le impostazioni predefinite dal modello predefinito, specificare la rappresentazione JSON dell'oggetto team nel corpo della richiesta. Per altre informazioni su come distribuire i modelli di team, vedere l'articolo microsoft Graph [sulla creazione di un team.](/graph/api/team-post?view=graph-rest-beta)
+Per creare il team Company-Wide prendendo le impostazioni predefinite dal modello predefinito, fornire la rappresentazione JSON dell'oggetto team nel corpo della richiesta. Per altre informazioni su come distribuire i modelli di team, vedere l'articolo di Microsoft Graph [sulla creazione di un team](/graph/api/team-post?view=graph-rest-beta).
 
 #### <a name="request"></a>Richiesta 
 ```http 
@@ -58,17 +58,17 @@ Content-Type: application/json
 }
 ```
 
-## <a name="executive-team-template"></a>Modello Team per dirigenti
+## <a name="executive-team-template"></a>Modello Team di dirigenti
 
-Il modello Executive Team è ideale per creare un team in cui i dirigenti aziendali possano comunicare e collaborare a iniziative aziendali come priorità annuali, budget fiscali, iniziative strategiche e clienti principali. Questo modello viene fornito con un *canale privato* per invitare utenti selezionati per argomenti specifici.
+Il modello Team dirigenziale è ideale per creare un team che i dirigenti aziendali possono comunicare e collaborare su iniziative aziendali come priorità annuali, budget fiscali, iniziative strategiche e clienti principali. Questo modello include un canale *privato* per invitare utenti selezionati per argomenti specifici.
 
 | Tipo di modello  | TemplateId | Proprietà del modello |
 | :------------------ | :-------------- | :----------------------------------------------------- | 
-| SMB - <br>Team dirigenti | `https://graph.microsoft.com/beta/`<br>` teamsTemplates('SmallBusinessExecutive')` | Canali <ul><li>Generale\*</li><li>Privato \*</li></ul> App<ul><li>OneNote (aggiunto al **canale** privato)</li> <li>Planner (aggiunto al **canale** privato) </li></ul><br>Proprietà del team <ul><li>Visibilità del team impostata su Private</li></ul> | 
+| SMB - <br>Team dei dirigenti | `https://graph.microsoft.com/beta/`<br>` teamsTemplates('SmallBusinessExecutive')` | Canali <ul><li>Generale\*</li><li>Privato \*</li></ul> App<ul><li>OneNote (aggiunto al canale **Privato**)</li> <li>Planner (aggiunto al canale **Privato** ) </li></ul><br>Proprietà del team <ul><li>Visibilità del team impostata su Private</li></ul> | 
 
 *Canali preferiti automaticamente<br>
 
-Per creare il team dirigenti prendendo le impostazioni predefinite dal modello predefinito, specificare la rappresentazione JSON dell'oggetto team nel corpo della richiesta. Per altre informazioni su come distribuire i modelli di team, vedere l'articolo microsoft Graph [sulla creazione di un team.](/graph/api/team-post?view=graph-rest-beta)
+Per creare il team dirigenti prendendo le impostazioni predefinite dal modello predefinito, fornire la rappresentazione JSON dell'oggetto team nel corpo della richiesta. Per altre informazioni su come distribuire i modelli di team, vedere l'articolo di Microsoft Graph [sulla creazione di un team](/graph/api/team-post?view=graph-rest-beta).
 
 #### <a name="request"></a>Richiesta 
 ```http 
@@ -84,17 +84,17 @@ Content-Type: application/json
 
 ## <a name="departmental-team-template"></a>Modello Team di reparto
 
-Il modello team reparto può essere usato per creare un team per singoli reparti o per progetti. Il modello di team Finance è ideale per tutti i post, gli annunci e la collaborazione e le comunicazioni quotidiane all'interno dei membri del team Finance e dei membri del team di dirigenti, se appropriato. Il modello viene fornito con un *canale privato* per invitare utenti selezionati per argomenti specifici.
+Il modello Team di reparto può essere usato per creare un team per singoli reparti o progetti. Il modello del team Finance è ideale per tutti i post, gli annunci, la collaborazione e la comunicazione quotidiana all'interno dei membri del team Finance e dei membri del team dirigenziario in base alle esigenze. Il modello include un canale *privato* per invitare utenti selezionati per argomenti specifici.
 
-Forniamo anche lo script seguente per il team Finance che può essere usato per estendere il modello ad altri reparti o progetti specifici aggiungendo, eliminando o modificando a proprio piacimento. Ad esempio, se si ha un reparto *Marketing,* lo script può essere adattato rinominando il team da *Finanze* a *Marketing* per creare un nuovo team di marketing
+È inoltre disponibile lo script seguente per il team finance che può essere usato per estendere il modello ad altri reparti o progetti specifici aggiungendo, eliminando o modificando a proprio piacimento. Ad esempio, se si ha un reparto *Marketing* , lo script può essere adattato rinominando il team da *Finanza* a *Marketing* per creare un nuovo team di marketing
 
 | Tipo di modello | TemplateId | Proprietà del modello |
 |:------------------ | :-------------- | :----------------------------------------------------- | 
-| SMB - <br>Finanze  | `https://graph.microsoft.com/beta/`<br>` teamsTemplates('SmallBusinessFinance')`| Canali <ul><li>Generale\*</li><li>Privato \*</li></ul><br> App<ul><li>OneNote (aggiunto al **canale** privato)</li> <li>Planner (aggiunto al **canale** privato) </li> </ul><br>Proprietà del team <ul><li>Visibilità del team impostata su Private</li></ul> | 
+| SMB - <br>Finanze  | `https://graph.microsoft.com/beta/`<br>` teamsTemplates('SmallBusinessFinance')`| Canali <ul><li>Generale\*</li><li>Privato \*</li></ul><br> App<ul><li>OneNote (aggiunto al canale **Privato**)</li> <li>Planner (aggiunto al canale **Privato** ) </li> </ul><br>Proprietà del team <ul><li>Visibilità del team impostata su Private</li></ul> | 
 
 *Canali preferiti automaticamente
 
-Per creare il team Finance prendendo le impostazioni predefinite dal modello predefinito, specificare la rappresentazione JSON dell'oggetto team nel corpo della richiesta. Per altre informazioni su come distribuire i modelli di team, vedere l'articolo microsoft Graph [sulla creazione di un team.](/graph/api/team-post?view=graph-rest-beta)
+Per creare il team Finance utilizzando le impostazioni predefinite dal modello predefinito, fornire la rappresentazione JSON dell'oggetto team nel corpo della richiesta. Per altre informazioni su come distribuire i modelli di team, vedere l'articolo di Microsoft Graph [sulla creazione di un team](/graph/api/team-post?view=graph-rest-beta).
 
 #### <a name="request"></a>Richiesta 
 ```http 
@@ -108,7 +108,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-finance-team-template-extension-script"></a>Esempio: script di estensione del modello Finance Team
+### <a name="example-finance-team-template-extension-script"></a>Esempio: Script di estensione modello Team finanziario
 
 ```powershell
 {
