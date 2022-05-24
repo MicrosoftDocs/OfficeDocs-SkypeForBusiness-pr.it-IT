@@ -16,16 +16,16 @@ ms.collection:
 - m365initiative-meetings
 - m365initiative-meetings-enabler
 - enabler-strategic
-description: Configurare gli eventi live in Teams, tra cui configurare la rete, assegnare licenze, abilitare le funzionalità e la pianificazione degli eventi live e le soluzioni di distribuzione video.
+description: Configurare gli eventi live in Teams, tra cui configurare la rete, assegnare licenze, abilitare le funzionalità e la pianificazione degli eventi live e soluzioni di distribuzione video.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5911ee829284917e5d16a6e254004ad7c49f8660
-ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
+ms.openlocfilehash: a2e7061252afc5c485da01c3c1c30e9625bd07cc
+ms.sourcegitcommit: 3f046142c40b3b776165e964f2b8718e2fe55df3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61205446"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65661667"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi live in Microsoft Teams
 
@@ -44,13 +44,13 @@ Assicurarsi di aver assegnato correttamente le licenze per [chi può creare e pi
 I criteri per gli eventi live consentono di controllare chi nell'organizzazione può organizzare eventi live e le funzionalità disponibili negli eventi creati. È possibile usare il criterio predefinito o creare uno o più criteri personalizzati per gli eventi live. Dopo aver creato un criterio personalizzato, assegnarlo a un utente o a un gruppo di utenti dell'organizzazione.
 
 > [!NOTE]
-> Gli utenti dell'organizzazione otterrà il criterio globale (impostazione predefinita a livello di organizzazione) a meno che non si creino e assegnino criteri personalizzati. Per impostazione predefinita, nel criterio globale la pianificazione di eventi live per gli utenti di Teams è abilitata, le didascalie e i sottotitoli in tempo reale sono disattivati, chiunque all'interno dell'organizzazione può partecipare agli eventi live e l'impostazione di registrazione è configurata in modo da registrare sempre.
+> Gli utenti dell'organizzazione otterranno i criteri globali (predefiniti a livello di organizzazione) a meno che non vengano creati e assegnati criteri personalizzati. Per impostazione predefinita, nel criterio globale la pianificazione di eventi live per gli utenti di Teams è abilitata, le didascalie e i sottotitoli in tempo reale sono disattivati, chiunque all'interno dell'organizzazione può partecipare agli eventi live e l'impostazione di registrazione è configurata in modo da registrare sempre.
 
 ### <a name="create-or-edit-a-live-events-policy"></a>Creare o modificare un criterio per gli eventi live
 
 <a name="bkcreatepolicy"> </a>
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare alla **scheda** Criteri gestione eventi  >  **live**  >   riunioni.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare alla scheda **Gestione criteri** per **gli** >  eventi  > **in tempo** reale.
 2. Eseguire una delle opzioni seguenti:
 
     - Se si vuole modificare il criterio predefinito esistente, scegliere **Globale (predefinito a livello di organizzazione)**.
@@ -70,7 +70,7 @@ I criteri per gli eventi live consentono di controllare chi nell'organizzazione 
 |**Chi può aggiungere eventi live pianificati**    |Scegliere una delle opzioni seguenti.<br><br>**Tutti** Gli utenti possono creare eventi live a cui può partecipare chiunque, incluse persone esterne all'organizzazione. Questa impostazione abilita il tipo di autorizzazione **Pubblico** in Teams quando un utente pianifica un evento live.<br> **Tutti gli utenti dell'organizzazione** Gli utenti possono creare eventi live a cui possono partecipare le persone dell'organizzazione, compresi gli [utenti guest](../add-guests.md) aggiunti all'organizzazione. Gli utenti non possono creare eventi live aperti agli utenti anonimi. Questa impostazione abilita il tipo di autorizzazione **A livello di organizzazione** in Teams quando un utente pianifica un evento live.<br> **Utenti o gruppi specifici** Gli utenti possono creare eventi live a cui possono partecipare solo utenti o gruppi specifici dell'organizzazione. Gli utenti non possono creare eventi live aperti a tutte le persone dell'organizzazione o a utenti anonimi. Questa impostazione abilita il tipo di autorizzazione **Persone e gruppi** in Teams quando un utente pianifica un evento live.       |
 |**Impostazione della registrazione**  <br>     | Questa impostazione può essere applicata solo agli eventi prodotti in Teams. Scegliere una delle opzioni seguenti. <br><br> **Registra sempre** Gli eventi live creati dagli utenti vengono sempre registrati. Una volta terminato l'evento, i membri del team dell'evento possono scaricare la registrazione e i partecipanti possono guardare l'evento. <br> **Non registrare mai** Gli eventi live creati dagli utenti non vengono mai registrati. <br>**L'organizzatore può registrare o meno** Gli utenti possono decidere se registrare l'evento live. Se viene registrato, i membri del team dell'evento possono scaricare la registrazione e i partecipanti possono guardare l'evento.
 
-È anche possibile eseguire questa operazione usando Windows PowerShell. Per altre informazioni, vedere [Usare PowerShell per impostare i criteri degli eventi live in Microsoft Teams](set-teams-live-events-policies-using-powershell.md).
+È anche possibile farlo usando Windows PowerShell e, attualmente, GCC clienti High e DoD devono usare questo metodo. Per altre informazioni, vedere [Usare PowerShell per impostare i criteri degli eventi live in Microsoft Teams](set-teams-live-events-policies-using-powershell.md).
 
 ### <a name="assign-a-live-events-policy-to-users"></a>Assegnare un criterio per gli eventi live agli utenti
 
@@ -78,12 +78,12 @@ Se è stato creato un criterio personalizzato per gli eventi live, assegnarlo ag
 
 ### <a name="enable-users-to-schedule-events-that-were-produced-with-an-external-app-or-device"></a>Consentire agli utenti di pianificare eventi prodotti con un'app o un dispositivo esterno
 
-Per consentire agli utenti di pianificare eventi prodotti con un'app o un dispositivo esterno, è necessario eseguire anche la procedura seguente:
+Per consentire agli utenti di pianificare gli eventi prodotti con un'app o un dispositivo esterno, è necessario eseguire anche le operazioni seguenti:
 
-1. Abilitare Microsoft Stream per gli utenti dell'organizzazione. Stream è disponibile come parte di abbonamenti Microsoft 365 o Office 365 o come servizio autonomo. Stream non è incluso nei piani Business Essentials o Business Premium. Per altre informazioni, vedere la [Panoramica sulle licenze di Stream](/stream/license-overview).
+1. Abilitare Microsoft Stream per gli utenti dell'organizzazione. Stream è disponibile come parte di abbonamenti a Microsoft 365 o Office 365 idonei o come servizio autonomo. Stream non è incluso nei piani Business Essentials o Business Premium. Per altre informazioni, vedere la [Panoramica sulle licenze di Stream](/stream/license-overview).
 
    >[!Note]
-   > Il passaggio dall’uso di Microsoft Stream all’uso di [OneDrive for Business e SharePoint per le registrazioni delle riunioni](../tmr-meeting-recording-change.md) avverrà in modo graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni. Altre informazioni su come assegnare [**licenze agli utenti in**](https://support.office.com/article/Assign-licenses-to-users-in-Office-365-for-business-997596B5-4173-4627-B915-36ABAC6786DC) modo che gli utenti possano accedere a Stream. Assicurarsi che Stream non sia bloccato per gli utenti come definito in [**questo articolo.**](/stream/disable-user-organization)
+   > Il passaggio dall’uso di Microsoft Stream all’uso di [OneDrive for Business e SharePoint per le registrazioni delle riunioni](../tmr-meeting-recording-change.md) avverrà in modo graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni. Altre informazioni su come [**assegnare licenze agli utenti in**](https://support.office.com/article/Assign-licenses-to-users-in-Office-365-for-business-997596B5-4173-4627-B915-36ABAC6786DC) modo che gli utenti possano accedere a Stream. Verificare che Stream non sia bloccato per gli utenti, come definito in [**questo articolo**](/stream/disable-user-organization).
 
 2. Assicurarsi che gli utenti abbiano le autorizzazioni per la creazione di eventi live in Stream. Per impostazione predefinita, gli amministratori possono creare eventi con un'app o un dispositivo esterno. L'amministratore di Stream può [abilitare altri utenti per la creazione di eventi live](/stream/live-event-administration#restrict-who-can-create-events) in Stream.
 
@@ -93,17 +93,17 @@ Per consentire agli utenti di pianificare eventi prodotti con un'app o un dispos
 
 Per la riproduzione di video di eventi live viene usato lo streaming a bitrate adattivo (ABR), ma si tratta di un flusso unicast, vale a dire che ogni spettatore riceve un proprio flusso video da Internet. Quando si trasmettono video o eventi live a moltissimi utenti dell'organizzazione, la larghezza di banda Internet usata dagli spettatori può essere considerevole. Per le organizzazioni che vogliono ridurre il traffico Internet per gli eventi live, le soluzioni per gli eventi live sono integrate con le offerte di reti definite dal software (SDN) o reti per la distribuzione di contenuti aziendali (eCDN) dei partner di fiducia di Microsoft. Queste piattaforme SDN/eCDN consentono alle organizzazioni di ottimizzare la larghezza di banda della rete senza sacrificare le esperienze di visualizzazione degli utenti finali. I partner possono contribuire a garantire una distribuzione più scalabile ed efficiente dei video nell'intera rete aziendale.
 
-**Acquistare e configurare una soluzione all'esterno di Teams** I partner di fiducia di Microsoft del settore offrono consulenza esperta per il ridimensionamento della distribuzione di video. Prima di poter abilitare un provider di distribuzione video per l'uso con Teams, è necessario acquistare e configurare la soluzione SDN/eCDN all'esterno e separata da Teams.
+**Acquistare e configurare una soluzione all'esterno di Teams** I partner di fiducia di Microsoft del settore offrono consulenza esperta per il ridimensionamento della distribuzione di video. Prima di poter abilitare l'uso di un provider di servizi di recapito video con Teams, è necessario acquistare e configurare la soluzione SDN/eCDN all'esterno e separata da Teams.
 
 Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate per l'uso con Stream.
 
 - **Hive Streaming** offre una soluzione semplice e potente per la distribuzione di video aziendali live e su richiesta. Hive è una soluzione basata su software che non richiede ulteriore hardware o larghezza di banda e offre un modo sicuro per abilitare migliaia di visualizzatori simultanei senza alcun impatto sulla rete. Per i clienti che vogliono comprendere l'impatto del video sulla propria rete prima di acquistare una soluzione SDN/eCDN, Hive Streaming offre anche una soluzione di analisi basata su browser per i clienti Microsoft. [Altre informazioni](https://www.hivestreaming.com/partners/integration-partners/microsoft/).
 
-- **Kollective** è una piattaforma di distribuzione basata sul peering intelligente, che sfrutta l'infrastruttura di rete esistente per distribuire contenuti in forme diverse (video in streaming live, video on demand, aggiornamenti software, patch di sicurezza e così via) in modo più veloce, più affidabile e con meno larghezza di banda. La nostra piattaforma sicura è considerata attendibile dagli istituti finanziari più grandi del mondo e, senza bisogno di ulteriore hardware, la configurazione e la manutenzione sono facili. [Altre informazioni](https://kollective.com/microsoft-pilot/).
+- **Kollective** è una piattaforma di distribuzione smart peering basata sul cloud che sfrutta l'infrastruttura di rete esistente per offrire contenuti in molte forme (live streaming video, video su richiesta, aggiornamenti software, patch di sicurezza e altro ancora) più velocemente, in modo più affidabile e con meno larghezza di banda. La nostra piattaforma sicura è considerata attendibile dagli istituti finanziari più grandi del mondo e, senza bisogno di ulteriore hardware, la configurazione e la manutenzione sono facili. [Altre informazioni](https://kollective.com/microsoft-pilot/).
 
 - **Ramp OmniCache** offre distribuzione in rete di nuova generazione e assicura la trasmissione ininterrotta di contenuti video nelle WAN globali, aiutando i produttori di eventi a ottimizzare la larghezza di banda della rete e supportare lo streaming di eventi live e on demand. Il supporto di Ramp OmniCache per gli eventi live prodotti in Teams sarà disponibile a breve. [Altre informazioni](https://rampecdn.com).
 
-- **Riverbed,** lo standard di settore nell'ottimizzazione della rete, estende le soluzioni di accelerazione a Microsoft Teams e Stream.  Ora Microsoft 365 clienti possono accelerare in tutta sicurezza il traffico a 365, tra cui Teams e Stream, insieme a una grande quantità di altri servizi SaaS aziendali leader per aumentare la produttività della forza lavoro ovunque ci si trovi. Teams e l'accelerazione stream possono essere abilitate con una configurazione senza sforzo, fornita con tutta la garanzia del supporto di livello mondiale di Riverbed e degli investimenti in corso.
+- **Riverbed**, lo standard industriale nell'ottimizzazione della rete, sta estendendo le sue soluzioni di accelerazione a Microsoft Teams e Stream.  Ora Microsoft 365 clienti possono accelerare con sicurezza il traffico 365, tra cui Teams e Stream, insieme a una vasta gamma di altri servizi SaaS aziendali leader per aumentare la produttività della forza lavoro ovunque ci si trovi. Teams e l'accelerazione stream possono essere abilitate attraverso una configurazione senza sforzo che viene fornita con tutta la garanzia del sostegno di livello mondiale di Riverbed e degli investimenti continuativi.
 
 > [!NOTE]
 > La soluzione SDN o eCDN scelta è soggetta ai **termini di servizio e all'informativa sulla privacy del provider di terze parti scelto**, che disciplineranno l'uso della soluzione del provider. L'uso della soluzione del provider non sarà soggetto alle condizioni dei servizi online o dei contratti multilicenza Microsoft. Se non accettano i **termini del provider di terze parti** la soluzione non verrà abilitata in Teams.
