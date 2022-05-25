@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e da conferenza sono certificati per Microsoft Teams per produrre risultati ottimali.
-ms.openlocfilehash: b63adbf126936bf7a4fcf004ab18338351b09565
-ms.sourcegitcommit: 4b0bd129af9cd487123ef6a5dc19ace0ec5a6c41
+ms.openlocfilehash: 43e408defc9f1202cb31d6d46cccbc8df7704254
+ms.sourcegitcommit: c53c22069b1babce7a2364de631057ff501ca1c0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65406392"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65671782"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>dispositivi Android certificati Microsoft Teams
 
@@ -45,9 +45,11 @@ I seguenti dispositivi sono certificati ai sensi del Programma di certificazione
 
 |Modello di dispositivo    | Versione firmware    | Data di fine certificazione corrente | Android versione del sistema operativo                               |
 |:---------------------------------------|:-----------------------------------------|:-----------------------------|-----------------------------------|
+| AudioCodes C450HD                      | `1.17.443`                                                  |    5 agosto 2023              | 9 |
+| AudioCodes C448HD(solo modalità CAP)       |  `1.17.443`                                                   | 5 agosto 2023            | 9 |
 | Yealink CP965    | `143.15.0.7 `          | 3 settembre 2025     | 11 |
-| AudioCodes C450HD                      | `C450HD_TEAMS_0.225`                                                  | 22 aprile 2022               | 7,1x |
-| AudioCodes C448HD(solo modalità CAP)       | `C450HD_TEAMS_0.225`                                                  | 22 aprile 2022               | 7,1x |
+| AudioCodes C450HD                      | `C450HD_TEAMS_0.225`                                                  | 22 aprile 2022               | 7.1.x |
+| AudioCodes C448HD(solo modalità CAP)       | `C450HD_TEAMS_0.225`                                                  | 22 aprile 2022               | 7.1.x |
 | Crestron UC-P10/T/CT                   | `1.0.0.80`       | 5 agosto 2023            | 9 |
 | Crestron UC-P8/T /CT                   | `1.0.0.56`       | 5 agosto 2023            | 9 |
 | Audiocodes C470HD                      | `1.8.293   `                                               | 5 agosto 2023               | 9 |
@@ -115,7 +117,7 @@ Di seguito sono riportate le ultime versioni dell'app del telefono Teams e del f
 
 #### <a name="app-versions"></a>Versioni delle app
 
-| Versione del prodotto | Data di rilascio  | versione dell'app Microsoft Teams | versione Portale aziendale | Versione dell'agente di amministrazione |
+| Versione del prodotto | Data di rilascio  | versione dell'app Microsoft Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:--------------|:----------------------------|:-----------------------|:--------------------|
 | Aggiornamento 2022 #2A  | 13 aprile 2022   | `1449/1.0.94.2022041102` |`5.0.5304.0` | `322` |
 | 2022 Aggiornamento n. 2   | 21 marzo 2022   | `1449/1.0.94.2022030501` |`5.0.5304.0` | `322` |
@@ -137,7 +139,7 @@ Di seguito sono riportate le ultime versioni dell'app del telefono Teams e del f
 
 #### <a name="firmware-versions"></a>Versioni del firmware
 
-Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni installate corrispondenti dell'app Microsoft Teams, Portale aziendale e dell'agente di amministrazione. Trova il rilascio del prodotto nella colonna **Versione prodotto inclusa** , quindi cerca il rilascio del prodotto nella tabella **delle versioni delle app** precedente.
+Quando installi una nuova versione del firmware nel tuo dispositivo, puoi determinare le versioni installate corrispondenti dell'app Microsoft Teams, Portale aziendale e Amministrazione Agent. Trova il rilascio del prodotto nella colonna **Versione prodotto inclusa** , quindi cerca il rilascio del prodotto nella tabella **delle versioni delle app** precedente.
 
 | Modello di dispositivo  | Versione firmware  | Versione del prodotto inclusa  |
 |:----------------|:--------------|:----------------------------|
@@ -227,7 +229,7 @@ Di seguito sono riportati i Teams Rooms più recenti sulle versioni di app e fir
 
 #### <a name="app-versions"></a>Versioni delle app
 
-| Versione del prodotto| Data di rilascio | versione dell'app Microsoft Teams | versione Portale aziendale | Versione dell'agente di amministrazione |
+| Versione del prodotto| Data di rilascio | versione dell'app Microsoft Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
 | 2022 Aggiornamento n. 1  | 24 febbraio 2022 |`1449/1.0.96.2022011305`| `5.0.5304.0` | `1.0.0.202112100118.product version code : 322` |
 | Aggiornamento #2A 2021 | 15 luglio 2021  |`1449/1.0.96.2021070803`|  `5.0.5088.0` |  `1.0.0.202104280345.product version code: 262` |
@@ -240,7 +242,7 @@ Di seguito sono riportati i Teams Rooms più recenti sulle versioni di app e fir
 
 #### <a name="firmware-versions"></a>Versioni del firmware
 
-Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni dell'app Microsoft Teams, Portale aziendale e dell'agente di amministrazione corrispondenti installate individuando il rilascio del prodotto nella colonna **Rilascio prodotto incluso**. Cerca quindi il rilascio del prodotto nella tabella **delle versioni delle app** riportata sopra.
+Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni dell'app Microsoft Teams, Portale aziendale e Amministrazione Agent corrispondenti installate individuando il rilascio del prodotto nella colonna **Rilascio prodotto incluso**. Cerca quindi il rilascio del prodotto nella tabella **delle versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Versione del prodotto inclusa |
 |:--------------|:-----------------|:-------------------------|
@@ -298,7 +300,7 @@ Di seguito sono riportate le versioni più recenti Microsoft Teams Visualizza le
 
 #### <a name="app-versions"></a>Versioni delle app
 
-|Versione del prodotto| Data di rilascio | versione dell'app Microsoft Teams | versione Portale aziendale | Versione dell'agente di amministrazione |
+|Versione del prodotto| Data di rilascio | versione dell'app Microsoft Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
 |2021 Aggiornamento n. 4  |5 gennaio 2022 |`1449/1.0.95.2021736401`    |`5.0.5304.0`            |  `1.0.0.202110130735.product (298)`
 |2021 Aggiornamento n. 3  |8 dicembre 2021 |`1449/1.0.95.2021111203`    |`5.0.5304.0`            |  `1.0.0.202110130735.product (298)`|
@@ -308,7 +310,7 @@ Di seguito sono riportate le versioni più recenti Microsoft Teams Visualizza le
 
 #### <a name="firmware-versions"></a>Versioni del firmware
 
-Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni dell'app Microsoft Teams, Portale aziendale e dell'agente di amministrazione corrispondenti installate individuando il rilascio del prodotto nella colonna **Rilascio prodotto incluso**. Cerca quindi il rilascio del prodotto nella tabella **delle versioni delle app** riportata sopra.
+Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni dell'app Microsoft Teams, Portale aziendale e Amministrazione Agent corrispondenti installate individuando il rilascio del prodotto nella colonna **Rilascio prodotto incluso**. Cerca quindi il rilascio del prodotto nella tabella **delle versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Versione del prodotto inclusa|
 |:--------------|:-----------------|:-------------------------|
@@ -322,7 +324,7 @@ Di seguito sono riportate le versioni più recenti dell'app Pannelli Microsoft T
 
 #### <a name="app-versions"></a>Versioni delle app
 
-|Versione del prodotto| Data di rilascio | versione dell'app Microsoft Teams | versione Portale aziendale | Versione dell'agente di amministrazione |
+|Versione del prodotto| Data di rilascio | versione dell'app Microsoft Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
 |2022 Aggiornamento n. 2  | 25 aprile 2022 | `1449/1.0.97.2022733702` | `5.0.5304.0`  | `322` |
 |Aggiornamento 2022 #1A | 25 febbraio 2022 | `1449/1.0.97.2022730007` | `5.0.5304.0`  | `322` |
@@ -331,7 +333,7 @@ Di seguito sono riportate le versioni più recenti dell'app Pannelli Microsoft T
 
 #### <a name="firmware-versions"></a>Versioni del firmware
 
-Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni dell'app Microsoft Teams, Portale aziendale e dell'agente di amministrazione corrispondenti installate individuando il rilascio del prodotto nella colonna **Rilascio prodotto incluso**. Cerca quindi il rilascio del prodotto nella tabella **delle versioni delle app** riportata sopra.
+Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni dell'app Microsoft Teams, Portale aziendale e Amministrazione Agent corrispondenti installate individuando il rilascio del prodotto nella colonna **Rilascio prodotto incluso**. Cerca quindi il rilascio del prodotto nella tabella **delle versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Versione del prodotto inclusa|
 |:--------------|:-----------------|:-------------------------|
