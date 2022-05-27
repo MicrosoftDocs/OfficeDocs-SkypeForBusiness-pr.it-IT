@@ -1,5 +1,5 @@
 ---
-title: Risorse di formazione per amministratori - Microsoft Teams
+title: risorse di formazione Amministrazione - Microsoft Teams
 ms.reviewer: jhwang
 author: SerdarSoysal
 ms.author: serdars
@@ -19,12 +19,12 @@ ms.custom:
 description: Video di formazione, PowerPoint presentazioni, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5cf197ac9ceca799a7df683e6a655acac1e85b56
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: 0bc4841e67606f467bc13940755a7de77038d7b6
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922487"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65675588"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori per Microsoft Teams
 
@@ -79,17 +79,17 @@ Usare le risorse di formazione per educare se stessi su Teams, insegnare ad altr
 | Istruzioni di partecipazione con un tocco |  | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-8b-one-touch-join-instructions.pdf?raw=true)  |
 | Introduzione a Microsoft Teams Rooms Managed Services |  | [Ponte](https://download.microsoft.com/download/c/e/a/cead2658-d64d-43b7-a728-b4512b325fb8/module-7b-Teams-Managed-Rooms-intro.pdf)  |
 
-<h2>Teams dispositivi Android</h2>
+<h2>Teams Android dispositivi</h2>
 
-<p>La tabella seguente contiene collegamenti a una formazione completa, con presentazioni PowerPoint (in formato PDF), su dispositivi Android Microsoft Teams che includono schermi Teams, telefoni Teams, Teams Rooms per Android e pannelli Teams.  
+<p>La tabella seguente contiene collegamenti a una formazione completa, con presentazioni PowerPoint (in formato PDF), su dispositivi Microsoft Teams Android che includono schermi Teams, telefoni Teams, Teams Rooms per Android e Teams Pannelli.  
 
 | Modulo | PowerPoint presentazione (PDF)  |
 | ------------| -------------------- |
-| Modulo 1: Introduzione a Microsoft Teams dispositivi Android  |[Ponte](https://download.microsoft.com/download/8/0/2/8020c233-8989-4def-b3ea-fb06365c663a/%281%29%20Introduction%20to%20Microsoft%20Teams%20Android%20Devices.pdf) |
-| Modulo 2: Pianificazione Microsoft Teams dispositivi Android|[Ponte](https://download.microsoft.com/download/f/8/f/f8f94605-9545-449b-b5d3-f24efc55f966/Planning%20Microsoft%20Teams%20Android%20Devices.pdf) |
-|Modulo 3: Funzionalità di Microsoft Teams dispositivi Android |[Ponte](https://download.microsoft.com/download/c/9/9/c9922544-7e27-40af-bf19-dbdc8516f0c1/Module%203-%20Features%20of%20Microsoft%20Teams%20Android%20Devices.pdf)|
-|Modulo 4: Gestione di Microsoft Teams dispositivi Android|[Ponte](https://download.microsoft.com/download/c/e/b/ceb686ff-9be2-495c-9e2e-80047765e5b4/(4)%20Managing%20Microsoft%20Teams%20Android%20Devices.pdf)|
-|Modulo 5: Microsoft Teams dispositivi Android - Risoluzione dei problemi |[Ponte](https://download.microsoft.com/download/d/3/7/d3728209-5caa-4bfb-b46a-3b840e80142a/Microsoft%20Teams%20Android%20Devices%20-%20Troubleshooting.pdf)|
+| Modulo 1: Introduzione ai dispositivi Microsoft Teams Android  |[Ponte](https://download.microsoft.com/download/8/0/2/8020c233-8989-4def-b3ea-fb06365c663a/%281%29%20Introduction%20to%20Microsoft%20Teams%20Android%20Devices.pdf) |
+| Modulo 2: Pianificazione Microsoft Teams Android dispositivi|[Ponte](https://download.microsoft.com/download/f/8/f/f8f94605-9545-449b-b5d3-f24efc55f966/Planning%20Microsoft%20Teams%20Android%20Devices.pdf) |
+|Modulo 3: Funzionalità dei dispositivi Microsoft Teams Android |[Ponte](https://download.microsoft.com/download/c/9/9/c9922544-7e27-40af-bf19-dbdc8516f0c1/Module%203-%20Features%20of%20Microsoft%20Teams%20Android%20Devices.pdf)|
+|Modulo 4: Gestione dei dispositivi Microsoft Teams Android|[Ponte](https://download.microsoft.com/download/c/e/b/ceb686ff-9be2-495c-9e2e-80047765e5b4/(4)%20Managing%20Microsoft%20Teams%20Android%20Devices.pdf)|
+|Modulo 5: dispositivi Microsoft Teams Android - Risoluzione dei problemi |[Ponte](https://download.microsoft.com/download/d/3/7/d3728209-5caa-4bfb-b46a-3b840e80142a/Microsoft%20Teams%20Android%20Devices%20-%20Troubleshooting.pdf)|
 
 <h2>Guide interattive</h2>
 
@@ -98,18 +98,18 @@ Usare le risorse di formazione per educare se stessi su Teams, insegnare ad altr
 | Gestione delle identità e degli accessi & Threat Protection per Teams                   | Informazioni su come usare le interfacce di amministrazione Microsoft e PowerShell per configurare i criteri di accesso e identità e abilitare Office 365 Advanced Threat Protection per Teams                                                            | [guida alla sicurezza di Teams](https://aka.ms/teamsesecurityinteractiveguide)         |
 | Criteri di prevenzione della perdita dei dati di Microsoft Purview per Microsoft Teams                     | Informazioni su come aggiungere Microsoft Teams a un criterio di prevenzione della perdita dei dati esistente e come creare un nuovo criterio, in base a un modello o completamente personalizzato in base alle esigenze di protezione dei dati dell'organizzazione.                        | [Teams guida alla prevenzione della perdita dei dati](https://aka.ms/teamsdlpguide)         |
 | Gestione della conformità in Teams                                                | Usare le interfacce di amministrazione Sicurezza di Microsoft 365, Conformità Microsoft 365 e Microsoft Teams, nonché Windows PowerShell per gestire e configurare i criteri di Microsoft Teams di un'organizzazione Office 365 e le impostazioni. | [Gestione della conformità in Teams guida](https://aka.ms/complianceinteamsinteractiveguide)      |
-| Teams Advisor: distribuzione di chat, team, canali e app in Microsoft Teams | Scopri come usare Teams advisor per valutare l'ambiente e creare un piano per la distribuzione di chat, team, canali e app.                                                                                         |  [guida Teams Advisor](https://aka.ms/MicrosoftTeamsAdvisorInteractiveguide)  |
+| Teams Assistente: Distribuzione di chat, team, canali e app in Microsoft Teams | Scopri come usare Teams advisor per valutare l'ambiente e creare un piano per la distribuzione di chat, team, canali e app.                                                                                         |  [guida Teams Assistente](https://aka.ms/MicrosoftTeamsAdvisorInteractiveguide)  |
 | Semplificare l'amministrazione Teams con PowerShell e i gruppi dinamici        | Convertire un gruppo di Office 365 dall'appartenenza statica in dinamico e usare Windows PowerShell per assegnare un nuovo criterio di autorizzazione per le app a tutti i membri.                                                                         |  [Guida all'amministrazione di Teams per la semplificazione](https://aka.ms/StreamliningTeamsadminInteractiveGuide) |
 | Gestione di Teams e accesso guest nell'interfaccia di amministrazione di Microsoft Teams         | Informazioni su come configurare e gestire l'accesso Microsoft Teams e guest per l'organizzazione.                                                                                                                              | [Guida alla gestione di Teams e accesso guest](https://aka.ms/TeamsandGuestAccessInteractiveGuide)    |
 | Configurare Teams Sistema telefonico: Operatore automatico & coda di chiamata                   | Esamina il processo di creazione e distribuzione di una coda di chiamata e di un operatore automatico nell'ambito delle chiamate Microsoft Teams tramite l'interfaccia di amministrazione di Microsoft Teams.                                                          |  [Configurare Teams guida al sistema telefonico](https://aka.ms/TeamsPhoneInteractiveGuide)             |
 | Configurare il routing diretto: connessione di SBC e routing vocale                 | Utilizza Telefono di Microsoft Teams System Direct Routing per integrare l'infrastruttura di telefonia esistente.                                                                                                              | [Configurare la guida al routing diretto](https://aka.ms/DirectRoutingInteractiveGuide)          |
 | Configurare la governance in Microsoft Teams                                     | Informazioni su come creare criteri di conservazione della messaggistica Teams per l'organizzazione e come archiviare, eliminare e ripristinare singoli Teams                                                                                   |  [Configurare la governance in Microsoft Teams guida](https://aka.ms/TeamsGovernanceInteractiveGuide)        |
 | Configurazione e distribuzione di riunioni Microsoft Teams                          | Esaminare il processo di distribuzione del carico di lavoro delle riunioni per Microsoft Teams.                                                                                                                                       |  [Guida alla configurazione e alla distribuzione di Microsoft Teams riunioni](https://aka.ms/TeamsMeetingsInteractiveGuide)          |
-| Configurare le audioconferenze per Microsoft Teams                            | Scopri le funzionalità delle audioconferenze in Teams e scopri come assegnare bridge di conferenza e numeri di telefono per l'accesso esterno.                                                                                          |  [Configurazione delle audioconferenze per Microsoft Teams guida](https://aka.ms/AudioConferencingInteractiveGuide)      |
+| Configurare Audioconferenza per Microsoft Teams                            | Scopri le funzionalità di Audioconferenza in Teams e come assegnare bridge di conferenza e numeri di telefono per l'accesso esterno.                                                                                          |  [Configurazione delle audioconferenze per Microsoft Teams guida](https://aka.ms/AudioConferencingInteractiveGuide)      |
 | Configurazione di Microsoft Teams per gli operatori sul campo                           | Informazioni su come configurare e distribuire l'ambiente di Microsoft Teams corretto per la forza lavoro sul campo.                                                                                                                  | [Guida alla configurazione di Microsoft Teams per operatori sul campo](https://aka.ms/ConfigFLWInteractiveGuide)              |
 | Identità per la forza lavoro in prima linea: responsabili, IT e dipendenti in prima linea                    | Scopri come integrare Microsoft Teams con sistemi HR esistenti, configurare una gestione delle identità delegata leggera e configurare l'accesso semplificato e transizioni fluide per gli utenti di dispositivi condivisi.                                                                                                                  | [Guida all'identità dei frontline worker](https://aka.ms/FLWIdentityIG)              |
 | Distribuzione di Microsoft Teams Rooms                           | Informazioni su come creare e configurare un account da usare con Microsoft Teams Rooms e gestire il dispositivo nell'interfaccia di amministrazione di Microsoft Teams.                                                                                                                  | [Distribuzione di Microsoft Teams Rooms](https://aka.ms/teamsroomslab)              |
-|Utilizzo di dispositivi Android certificati Teams|Informazioni su come gestire e aggiornare Microsoft Teams telefoni, schermi Microsoft Teams, Microsoft Teams Rooms e pannelli Microsoft Teams.|[Uso di dispositivi Android certificati Microsoft Teams](https://aka.ms/teamsandroiddeviceslab)|
+|Uso dei dispositivi Android certificati Teams|Informazioni su come gestire e aggiornare Microsoft Teams telefoni, schermi Microsoft Teams, Microsoft Teams Rooms e pannelli Microsoft Teams.|[Uso dei dispositivi Android certificati Microsoft Teams](https://aka.ms/teamsandroiddeviceslab)|
 
 <h2>Guide introduttive</h2>
 

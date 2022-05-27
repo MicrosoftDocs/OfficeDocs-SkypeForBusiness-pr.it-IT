@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ad0f7e84dcd65f844e457d4821717ff7593593ce
-ms.sourcegitcommit: 2ce3e95401ac06c0370a54862372a94ec6291d01
+ms.openlocfilehash: 22e8307f386d6dba93812f77b668ec5578542136
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64976020"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65674478"
 ---
 # <a name="use-powershell-to-connect-shifts-to-blue-yonder-workforce-management"></a>Usare PowerShell per connettere Turni alla gestione della forza lavoro Blue Yonder
 
@@ -30,11 +30,11 @@ Usa il [connettore Microsoft Teams Turni per Blue Yonder](shifts-connectors.md#m
 
 In questo articolo viene illustrato come usare PowerShell per configurare il connettore per integrare Turni con Blue Yonder WFM.
 
-Per configurare la connessione, eseguire uno script di PowerShell. Lo script configura il connettore, applica le impostazioni di sincronizzazione, crea la connessione e associa i siti WFM Blue Yonder ai team. Le impostazioni di sincronizzazione determinano le funzionalità abilitate in Turni e le informazioni di pianificazione sincronizzate tra Blue Yonder WFM e Turni. I mapping definiscono la relazione di sincronizzazione tra i siti WFM Blue Yonder e i team in Teams. È possibile eseguire il mapping a team esistenti e nuovi team.
+Per configurare la connessione, eseguire uno script di PowerShell. Lo script configura il connettore, applica le impostazioni di sincronizzazione, crea la connessione e associa i siti WFM Blue Yonder ai team. Le impostazioni di sincronizzazione determinano le funzionalità abilitate in Turni e le informazioni pianificare sincronizzate tra Blue Yonder WFM e Turni. I mapping definiscono la relazione di sincronizzazione tra i siti WFM Blue Yonder e i team in Teams. È possibile eseguire il mapping a team esistenti e nuovi team.
 
 Microsoft fornisce due script. È possibile usare uno script, a seconda che si voglia eseguire il mapping a team esistenti o creare nuovi team a cui eseguire il mapping.
 
-È possibile configurare più connessioni, ognuna con impostazioni di sincronizzazione diverse. Ad esempio, se l'organizzazione ha più posizioni con requisiti di pianificazione diversi, creare una connessione con impostazioni di sincronizzazione univoche per ogni posizione. Tenere presente che un sito WFM Blue Yonder può essere mappato a un solo team in un determinato momento. Se un sito è già mappato a un team, non può essere mappato a un altro team.
+È possibile configurare più connessioni, ognuna con impostazioni di sincronizzazione diverse. Ad esempio, se l'organizzazione ha più posizioni con requisiti di pianificare diversi, creare una connessione con impostazioni di sincronizzazione univoche per ogni posizione. Tenere presente che un sito WFM Blue Yonder può essere mappato a un solo team in un determinato momento. Se un sito è già mappato a un team, non può essere mappato a un altro team.
 
 Con Blue Yonder WFM come sistema di registrazione, i dipendenti in prima linea possono visualizzare e scambiare turni, gestire la loro disponibilità e richiedere permessi in Turni sui propri dispositivi. I responsabili in prima linea possono continuare a usare Blue Yonder WFM per configurare le pianificazioni.
 
@@ -47,7 +47,7 @@ Con Blue Yonder WFM come sistema di registrazione, i dipendenti in prima linea p
 
 [!INCLUDE [shifts-connector-prerequisites](../../includes/shifts-connector-prerequisites.md)]
 
-### <a name="admin-role-to-manage-the-connector-using-powershell"></a>Ruolo di amministratore per gestire il connettore con PowerShell
+### <a name="admin-role-to-manage-the-connector-using-powershell"></a>Amministrazione ruolo per gestire il connettore con PowerShell
 
 [!INCLUDE [shifts-connector-admin-role](../../includes/shifts-connector-admin-role.md)]
 
@@ -75,7 +75,7 @@ Nella portale di Azure passare alla pagina [Tutti i gruppi](https://ms.portal.az
 Prendere nota dei TeamId dei team da mappare. Lo script chiederà di immettere queste informazioni.
 
 > [!NOTE]
-> Se uno o più team hanno una pianificazione esistente, lo script rimuoverà le pianificazioni da tali team. In caso contrario, verranno visualizzati turni duplicati.
+> Se uno o più team hanno un pianificare esistente, lo script rimuoverà le pianificazioni da tali team. In caso contrario, verranno visualizzati turni duplicati.
 
 ## <a name="run-the-script"></a>Eseguire lo script
 
@@ -88,18 +88,18 @@ Lo script esegue le azioni seguenti. Verrà richiesto di immettere i dettagli di
 
 1. Verifica e verifica la connessione a WFM Blue Yonder utilizzando le credenziali dell'account del servizio Blue Yonder WFM e gli URL del servizio immessi.
 1. Configura il connettore Turni.
-1. Applica le impostazioni di sincronizzazione. Queste impostazioni includono la frequenza di sincronizzazione (in minuti) e i dati di pianificazione sincronizzati tra Blue Yonder WFM e Turni. I dati di pianificazione sono definiti nei seguenti parametri:
+1. Applica le impostazioni di sincronizzazione. Queste impostazioni includono la frequenza di sincronizzazione (in minuti) e i dati di pianificare sincronizzati tra WFM Blue Yonder e Turni. I dati di pianificazione sono definiti nei seguenti parametri:
 
     - Il parametro **enabledConnectorScenarios definisce i** dati sincronizzati da Blue Yonder WFM a Turni. Le opzioni sono `Shift`, `SwapRequest`, `UserShiftPreferences`, `OpenShift`, `OpenShiftRequest`, `TimeOff`, `TimeOffRequest`.
     - Il parametro **enabledWfiScenarios definisce i** dati sincronizzati da Turni a Blue Yonder WFM. Le opzioni sono `SwapRequest`, `OpenShiftRequest`, `TimeOffRequest`, `UserShiftPreferences`.
 
-    Per ulteriori informazioni, vedi [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance?view=teams-ps). Per visualizzare l'elenco delle opzioni di sincronizzazione supportate per ogni parametro, esegui [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector?view=teams-ps).
+    Per ulteriori informazioni, vedi [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance). Per visualizzare l'elenco delle opzioni di sincronizzazione supportate per ogni parametro, esegui [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector).
 
     > [!IMPORTANT]
     > Lo script abilita la sincronizzazione per tutte queste opzioni. Se si vogliono modificare le impostazioni di sincronizzazione, è possibile farlo dopo aver configurato la connessione. Per altre informazioni, vedere [Usare PowerShell per gestire la connessione Turni alla gestione della forza lavoro di Blue Yonder](shifts-connector-powershell-manage.md).
 
 1. Crea la connessione.
-1. Mappe siti WFM Blue Yonder ai team. I mapping sono basati sugli ID del sito WFM Blue Yonder e sugli ID team immessi o sui nuovi team creati, a seconda dello script eseguito. Se un team ha una pianificazione esistente, lo script rimuove i dati di pianificazione per l'intervallo di date e ore specificato.
+1. Mappe siti WFM Blue Yonder ai team. I mapping sono basati sugli ID del sito WFM Blue Yonder e sugli ID team immessi o sui nuovi team creati, a seconda dello script eseguito. Se un team ha un pianificare esistente, lo script rimuove pianificare dati per l'intervallo di date e ore specificato.
 
 Un messaggio Di successo sullo schermo indica che la connessione è stata configurata correttamente.
 
@@ -136,7 +136,7 @@ $blueYonder = $connectors | where {$_.Id -match $BlueYonderId}
 $enabledConnectorScenario = $blueYonder.SupportedScenario
 $wfiSupportedScenario = $blueYonder.wfiSupportedScenario
 
-#Prompt for entering of WFM username and password 
+#Prompt for entering of WFM username and password
 $WfmUserName = Read-Host -Prompt 'Input your WFM super user name'
 $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
@@ -150,7 +150,7 @@ $essApiUrl = Read-Host -Prompt 'Input ess api url'
 $federatedAuthUrl = Read-Host -Prompt 'Input federated authorization url'
 $retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
 $siteManagerUrl = Read-Host -Prompt 'Input site manager url'
-$testResult = Test-CsTeamsShiftsConnectionValidate -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName 
+$testResult = Test-CsTeamsShiftsConnectionValidate -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName
 if ($testResult.Code -ne $NULL) {
     write $testResult
     throw "Validation failed, conflict found"
@@ -198,7 +198,7 @@ else {
     throw "The WfmTeamId list is null or empty"
 }
 
-#Retrieve the list of WFM users and their roles 
+#Retrieve the list of WFM users and their roles
 Write-Host "Listing WFM users and roles"
 $WFMUsers = Get-CsTeamsShiftsConnectionWfmUser -ConnectorInstanceId $InstanceId -WfmTeamId $WfmTeamId
 write $WFMUsers
@@ -240,7 +240,7 @@ $RequestBody = @{
 $teamUpdateUrl="https://graph.microsoft.com/v1.0/teams/"+$TeamsTeamId+"/schedule"
 $Schedule = Invoke-MgGraphRequest -Uri $teamUpdateUrl -Method PUT -Body $RequestBody
 
-#Create a mapping of the new team to the site 
+#Create a mapping of the new team to the site
 Write-Host "Create a mapping of the new team to the site"
 $TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
 $teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone $TimeZone -WfmTeamId $WfmTeamId
@@ -279,7 +279,7 @@ try {
 #Connect to MS Graph
 Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 
-#List connector types available (comment out if not implemented for preview) 
+#List connector types available (comment out if not implemented for preview)
 Write-Host "Listing connector types available"
 $BlueYonderId = "6A51B888-FF44-4FEA-82E1-839401E9CD74"
 $connectors = Get-CsTeamsShiftsConnectionConnector
@@ -288,7 +288,7 @@ $blueYonder = $connectors | where {$_.Id -match $BlueYonderId}
 $enabledConnectorScenario = $blueYonder.SupportedScenario
 $wfiSupportedScenario = $blueYonder.wfiSupportedScenario
 
-#Prompt for entering of WFM username and password 
+#Prompt for entering of WFM username and password
 $WfmUserName = Read-Host -Prompt 'Input your WFM super user name'
 $WfmPwd = Read-Host -Prompt 'Input your WFM password' -AsSecureString
 $plainPwd =[Runtime.InteropServices.Marshal]::PtrToStringAuto([Runtime.InteropServices.Marshal]::SecureStringToBSTR($WfmPwd))
@@ -302,7 +302,7 @@ $essApiUrl = Read-Host -Prompt 'Input ess api url'
 $federatedAuthUrl = Read-Host -Prompt 'Input federated authorization url'
 $retailWebApiUrl = Read-Host -Prompt 'Input retail web api url'
 $siteManagerUrl = Read-Host -Prompt 'Input site manager url'
-$testResult = Test-CsTeamsShiftsConnectionValidate -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName 
+$testResult = Test-CsTeamsShiftsConnectionValidate -Name $InstanceName -ConnectorId $BlueYonderId -ConnectorSpecificSettingAdminApiUrl $adminApiUrl -ConnectorSpecificSettingCookieAuthUrl $cookieAuthUrl -ConnectorSpecificSettingEssApiUrl $essApiUrl -ConnectorSpecificSettingFederatedAuthUrl $federatedAuthUrl -ConnectorSpecificSettingRetailWebApiUrl $retailWebApiUrl -ConnectorSpecificSettingSiteManagerUrl $siteManagerUrl -ConnectorSpecificSettingLoginPwd $plainPwd -ConnectorSpecificSettingLoginUserName $WfmUserName
 if ($testResult.Code -ne $NULL) {
     write $testResult
     throw "Validation failed, conflict found"
@@ -351,7 +351,7 @@ else {
     throw "The WfmTeamId list is null or empty"
 }
 
-#Retrieve the list of WFM users and their roles 
+#Retrieve the list of WFM users and their roles
 Write-Host "Listing WFM users and roles"
 $WFMUsers = Get-CsTeamsShiftsConnectionWfmUser -ConnectorInstanceId $InstanceId -WfmTeamId $WfmTeamId
 write $WFMUsers
@@ -373,7 +373,7 @@ $entityType = $entityType.Trim()
 $entityType = $entityType.Split('',[System.StringSplitOptions]::RemoveEmptyEntries)
 Remove-CsTeamsShiftsScheduleRecord -TeamId $TeamsTeamId -DateRangeStartDate $startTime -DateRangeEndDate $endTime -ClearSchedulingGroup:$True -EntityType $entityType -DesignatedActorId $$teamsUserId
 
-#Create a mapping of the new team to the site 
+#Create a mapping of the new team to the site
 Write-Host "Create a mapping of the existing team to the site"
 $TimeZone = Read-Host -Prompt "Input the time zone of team mapping"
 $teamMappingResult = New-CsTeamsShiftsConnectionTeamMap -ConnectorInstanceId $InstanceId -TeamId $TeamsTeamId -TimeZone $TimeZone -WfmTeamId $WfmTeamId
@@ -394,23 +394,23 @@ Disconnect-MgGraph
 
 ## <a name="shifts-connector-cmdlets"></a>Cmdlet del connettore Turni
 
-Per assistenza con i cmdlet del connettore Turni, inclusi i cmdlet usati negli script, cercare **CsTeamsShiftsConnection** nel riferimento ai [cmdlet di PowerShell Teams](/powershell/teams/intro?view=teams-ps). Ecco i collegamenti ad alcuni cmdlet di uso comune.
+Per assistenza con i cmdlet del connettore Turni, inclusi i cmdlet usati negli script, cercare **CsTeamsShiftsConnection** nel riferimento ai [cmdlet di PowerShell Teams](/powershell/teams/intro). Ecco i collegamenti ad alcuni cmdlet di uso comune.
 
-- [Get-CsTeamsShiftsConnectionOperation](/powershell/module/teams/get-csteamsshiftsconnectionoperation?view=teams-ps)
-- [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance?view=teams-ps)
-- [Get-CsTeamsShiftsConnectionInstance](/powershell/module/teams/get-csteamsshiftsconnectioninstance?view=teams-ps)
-- [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance?view=teams-ps)
-- [Remove-CsTeamsShiftsConnectionInstance](/powershell/module/teams/remove-csteamsshiftsconnectioninstance?view=teams-ps)
-- [Test-CsTeamsShiftsConnectionValidate](/powershell/module/teams/test-csteamsshiftsconnectionvalidate?view=teams-ps)
-- [New-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/new-csteamsshiftsconnectionteammap?view=teams-ps)
-- [Get-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/get-csteamsshiftsconnectionteammap?view=teams-ps)
-- [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap?view=teams-ps)
-- [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector?view=teams-ps)
-- [Get-CsTeamsShiftsConnectionSyncResult](/powershell/module/teams/get-csteamsshiftsconnectionsyncresult?view=teams-ps)
-- [Get-CsTeamsShiftsConnectionWfmUser](/powershell/module/teams/get-csteamsshiftsconnectionwfmuser?view=teams-ps)
-- [Get-CsTeamsShiftsConnectionWfmTeam](/powershell/module/teams/get-csteamsshiftsconnectionwfmteam?view=teams-ps)
-- [Get-CsTeamsShiftsConnectionErrorReport](/powershell/module/teams/get-csteamsshiftsconnectionerrorreport?view=teams-ps)
-- [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord?view=teams-ps)
+- [Get-CsTeamsShiftsConnectionOperation](/powershell/module/teams/get-csteamsshiftsconnectionoperation)
+- [New-CsTeamsShiftsConnectionInstance](/powershell/module/teams/new-csteamsshiftsconnectioninstance)
+- [Get-CsTeamsShiftsConnectionInstance](/powershell/module/teams/get-csteamsshiftsconnectioninstance)
+- [Set-CsTeamsShiftsConnectionInstance](/powershell/module/teams/set-csteamsshiftsconnectioninstance)
+- [Remove-CsTeamsShiftsConnectionInstance](/powershell/module/teams/remove-csteamsshiftsconnectioninstance)
+- [Test-CsTeamsShiftsConnectionValidate](/powershell/module/teams/test-csteamsshiftsconnectionvalidate)
+- [New-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/new-csteamsshiftsconnectionteammap)
+- [Get-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/get-csteamsshiftsconnectionteammap)
+- [Remove-CsTeamsShiftsConnectionTeamMap](/powershell/module/teams/remove-csteamsshiftsconnectionteammap)
+- [Get-CsTeamsShiftsConnectionConnector](/powershell/module/teams/get-csteamsshiftsconnectionconnector)
+- [Get-CsTeamsShiftsConnectionSyncResult](/powershell/module/teams/get-csteamsshiftsconnectionsyncresult)
+- [Get-CsTeamsShiftsConnectionWfmUser](/powershell/module/teams/get-csteamsshiftsconnectionwfmuser)
+- [Get-CsTeamsShiftsConnectionWfmTeam](/powershell/module/teams/get-csteamsshiftsconnectionwfmteam)
+- [Get-CsTeamsShiftsConnectionErrorReport](/powershell/module/teams/get-csteamsshiftsconnectionerrorreport)
+- [Remove-CsTeamsShiftsScheduleRecord](/powershell/module/teams/remove-csteamsshiftsschedulerecord)
 
 ## <a name="related-articles"></a>Articoli correlati
 
@@ -418,4 +418,4 @@ Per assistenza con i cmdlet del connettore Turni, inclusi i cmdlet usati negli s
 - [Usare PowerShell per gestire la connessione di Turni alla gestione della forza lavoro Blue Yonder](shifts-connector-powershell-manage.md)
 - [Gestire l'app Turni](manage-the-shifts-app-for-your-organization-in-teams.md)
 - [Panoramica di PowerShell per Teams](../../teams-powershell-overview.md)
-- [riferimento ai cmdlet di Teams PowerShell](/powershell/teams/intro?view=teams-ps)
+- [riferimento ai cmdlet di Teams PowerShell](/powershell/teams/intro)

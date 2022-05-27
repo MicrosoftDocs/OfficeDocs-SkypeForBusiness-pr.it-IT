@@ -14,17 +14,17 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: Informazioni su come configurare il supporto per gli utenti di provider federati SIP.
-ms.openlocfilehash: b6a28714ec3ad81470f362f49605d0be4805dbe2
-ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+description: Informazioni su come configurare il supporto per gli utenti dei provider federati SIP.
+ms.openlocfilehash: dbbf01de2c1538c0761550b073ace573cde44eb7
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2022
-ms.locfileid: "62392558"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65676208"
 ---
 # <a name="manage-sip-federated-providers-for-your-organization-in-skype-for-business-server"></a>Gestire i provider federati SIP per l'organizzazione in Skype for Business Server
 
-Per configurare il supporto per gli utenti di provider federati SIP, è necessario eseguire le operazioni seguenti:
+Per configurare il supporto per gli utenti dei provider federati SIP, è necessario eseguire le operazioni seguenti:
 
   - Configurare uno o più criteri di accesso utente esterno per supportare la comunicazione con i contatti del provider federato SIP
 
@@ -34,20 +34,20 @@ Per configurare il supporto per gli utenti di provider federati SIP, è necessar
 
 ## <a name="create-or-edit-public-sip-federated-providers-in-skype-for-business-server"></a>Creare o modificare provider federati SIP pubblici in Skype for Business Server
 
-La connettività di messaggistica istantanea pubblica consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider pubblici.
+La connettività di messaggistica istantanea pubblica consente agli utenti dell'organizzazione di usare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider pubblici.
 
-Skype for Business Server sono disponibili configurazioni del provider pubblico per la messaggistica istantanea. Ogni provider pubblico è configurato con il nome di dominio completo del server perimetrale del provider e il livello di verifica predefinito Consenti agli utenti di comunicare solo con gli utenti del proprio elenco contatti che utilizzano **questo provider**.
+Skype for Business Server dispone di configurazioni del provider pubblico per la messaggistica istantanea. Ogni provider pubblico è configurato con il nome di dominio completo del server Perimetrale del provider e il livello di verifica predefinito **Consente agli utenti di comunicare solo con gli utenti nell'elenco Contatti che usano questo provider**.
 
-Come impostazione predefinita, nessuno dei provider pubblici è abilitato. Prima di abilitare i provider pubblici, è consigliabile completare il contratto di licenza e il provisioning. Puoi abilitare il provider prima di completare le attività di licenza e provisioning. Gli utenti non saranno in grado di comunicare con i contatti di tali provider fino al completamento del lavoro necessario. Per informazioni dettagliate sulle licenze e sul provisioning dei provider pubblici, vedere [Configure policies to control public user acces](../external-access-policies/configure-policies-to-control-public-user-access.md).
+Come impostazione predefinita, nessuno dei provider pubblici è abilitato. È necessario completare il contratto di licenza e il provisioning prima di abilitare i provider pubblici. È possibile abilitare il provider prima di completare il lavoro di gestione delle licenze e del provisioning. Gli utenti non saranno in grado di comunicare con i contatti su tali provider fino al completamento del lavoro prerequisito. Per informazioni dettagliate sulle licenze e sul provisioning dei provider pubblici, vedere [Configurare i criteri per controllare gli accessi degli utenti pubblici](../external-access-policies/configure-policies-to-control-public-user-access.md).
 
-Utilizzare la procedura seguente per creare o modificare provider pubblici.
+Utilizzare la procedura seguente per creare o modificare i provider pubblici.
 
 
 ### <a name="to-create-or-edit-public-providers"></a>Per creare o modificare provider pubblici:
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server pannello di controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL Amministrazione per aprire il Skype for Business Server Pannello di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Federazione e accesso esterno** e quindi su **Provider federati SIP**.
 
@@ -71,17 +71,17 @@ Utilizzare la procedura seguente per creare o modificare provider pubblici.
 
 ## <a name="create-or-edit-hosted-sip-federated-providers-in-skype-for-business-server"></a>Creare o modificare provider federati SIP ospitati in Skype for Business Server
 
-La connettività di messaggistica istantanea del provider ospitato consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider ospitati.
+La connettività di messaggistica istantanea del provider ospitato consente agli utenti dell'organizzazione di usare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider ospitati.
 
 Ogni provider ospitato è configurato con il nome di dominio completo del server perimetrale del provider e il livello di verifica predefinito **Consenti agli utenti di comunicare solo con le persone incluse nell'elenco Contatti che usano questo provider**.
 
-Utilizzare la procedura seguente per creare o modificare provider ospitati.
+Usare la procedura seguente per creare o modificare provider ospitati.
 
 ### <a name="to-create-or-edit-hosted-providers"></a>Per creare o modificare provider gestiti
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server pannello di controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL Amministrazione per aprire il Skype for Business Server Pannello di controllo. 
 
 3.  Nella barra di spostamento sinistra fare clic su **Federazione e accesso esterno** e quindi su **Provider federati SIP**.
 
@@ -107,7 +107,7 @@ Utilizzare la procedura seguente per creare o modificare provider ospitati.
 ## <a name="see-also"></a>Vedere anche
 
 
-[Configurare i criteri per controllare gli acces degli utenti pubblici](../external-access-policies/configure-policies-to-control-public-user-access.md)
+[Configurare i criteri per controllare gli accessi degli utenti pubblici](../external-access-policies/configure-policies-to-control-public-user-access.md)
 
 [Abilitare o disabilitare la federazione e la connettività per la messaggistica istantanea pubblica](../access-edge/enable-or-disable-federation-and-public-im-connectivity.md)
 

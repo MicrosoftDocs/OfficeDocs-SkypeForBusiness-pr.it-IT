@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ce8e702682ebcc4b05e94f077882d51f09aac0ff
-ms.sourcegitcommit: 4435ac0efcb95e4e5e1f21289e46761e79482ab5
+ms.openlocfilehash: 5b85befa685458f5460ab21bb962af3f0df4f004
+ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65624150"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65681587"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -101,6 +101,9 @@ Per ottenere i requisiti e le istruzioni più recenti su come configurare l'otti
 Per un'installazione persistente dedicata, l'installazione per computer e per utente funzionerà. Tuttavia, per una configurazione non persistente, Teams richiede un'installazione per macchina per funzionare in modo efficiente. Vedere la sezione [Configurazione non persistente](#non-persistent-setup) .
 
 Con l'installazione per computer, gli aggiornamenti automatici vengono disabilitati. Ciò significa che per aggiornare l'app Teams, è necessario disinstallare la versione corrente per eseguire l'aggiornamento a una versione più recente. Con l'installazione per utente, gli aggiornamenti automatici sono abilitati.
+
+> [!IMPORTANT]
+> Mantenere aggiornata l'app desktop Teams nell'ambiente VDI. Teams versioni delle app desktop con date di rilascio che risalgono a più di 90 giorni prima della [data di rilascio della versione corrente](/officeupdates/teams-app-versioning) non sono supportate. Le versioni delle app desktop Teams non supportate mostrano una pagina di blocco agli utenti e richiedono l'aggiornamento dell'app.
 
 Per la maggior parte delle distribuzioni VDI, è consigliabile distribuire Teams usando l'installazione per computer. Per eseguire l'aggiornamento all'ultima versione Teams, iniziare con la procedura di disinstallazione seguita dall'ultima distribuzione della versione Teams.
 
@@ -299,8 +302,8 @@ Per assegnare un criterio a più utenti contemporaneamente:
 Si può anche procedere nel modo seguente:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams passare al criterio da assegnare. Ad esempio:
-    - Passare a Criteri **di chiamata vocale** >  e quindi fare clic su **DisallowCalling**.
-    - Passare a **Criteri** >  **riunione** e quindi fare clic su **AllOff**.
+    - Vai a **Criteri per le chiamate** **vocali** >  e quindi fai clic su **Non consentireCalling**.
+    - Passare a Criteri **riunione** **riunioni** >  e quindi fare clic su **AllOff**.
 2. Scegliere **Gestisci utenti**.
 3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 4. Dopo aver aggiunto tutti gli utenti, fare clic su **Salva**.
@@ -355,8 +358,8 @@ Per assegnare un criterio a più utenti contemporaneamente:
 Si può anche procedere nel modo seguente:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams passare al criterio da assegnare. Ad esempio:
-    - Passare a Criteri **di chiamata vocale** >  e quindi fare clic su **Consentichiamato**.
-    - Passare a **RiunioniI** >  **criteri di riunione** e quindi fare clic su **AllOn**.
+    - Passare a **Criteri per le chiamate** **vocali** >  e quindi fare clic su **Consentichiamata**.
+    - Passare a **Criteri riunione riunioni** >  e quindi fare clic su **AllOn**.
 2. Scegliere **Gestisci utenti**.
 3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 4. Dopo aver aggiunto tutti gli utenti, fare clic su **Salva**.

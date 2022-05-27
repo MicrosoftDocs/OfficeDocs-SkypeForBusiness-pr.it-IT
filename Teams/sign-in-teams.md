@@ -17,18 +17,18 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a00561f10e78a18acc146df4ed8a76b103c937c9
-ms.sourcegitcommit: dafe48cea1643e1bd79390482da9b002d7e9e0bb
+ms.openlocfilehash: b6fb93bf7f8e3278ba4fba16604769c6f8f10e36
+ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63514567"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65681607"
 ---
 # <a name="sign-in-to-microsoft-teams"></a>Accedere a Microsoft Teams
 
 ## <a name="windows-users"></a>Utenti di Windows
 
-Microsoft consiglia alle organizzazioni di usare le versioni recenti di Windows 10 con configurazione Hybrid Domain Join o Azure AD Join. Usando le versioni recenti, gli account degli utenti vengono inseriti in Gestione account Web di Windows, il che a sua volta abilita l'accesso Single Sign-On a Teams e ad altre applicazioni Microsoft. Il Single Sign-On offre un'esperienza utente migliore, grazie all'accesso automatico, e un livello di sicurezza superiore.
+Microsoft consiglia alle organizzazioni di usare le versioni recenti di Windows 10 con configurazione di aggiunta a dominio ibrido o aggiunta ad Azure AD. Con le versioni recenti, gli account degli utenti vengono inseriti in Gestione account Web di Windows, il che a sua volta abilita l'accesso Single Sign-On a Teams e ad altre applicazioni Microsoft. Il single Sign-On consente di migliorare l'esperienza utente, grazie all'accesso automatico, e un livello di sicurezza superiore.
 
 Microsoft Teams usa l'autenticazione moderna per mantenere l'esperienza di accesso più semplice e sicura. Per scoprire in che modo gli utenti accedono a Teams, leggere [Accedere a Teams](https://support.office.com/article/sign-in-to-teams-ea4b1443-d11b-4791-8ae1-9977e7723055).
 
@@ -84,7 +84,7 @@ Le immagini seguenti mostrano il modo in cui gli utenti possono aggiungere più 
 
 ## <a name="restrict-sign-in-to-teams"></a>Limitare l'accesso a Teams
 
-L'organizzazione può voler limitare l'uso delle app approvate dall'azienda nei dispositivi gestiti, ad esempio per limitare la capacità degli studenti o dei dipendenti di accedere ai dati di altre organizzazioni oppure di usare app approvate dall'azienda per scenari personali. Queste restrizioni possono essere applicate impostando criteri per i dispositivi riconosciuti dalle applicazioni Teams.
+L'organizzazione può voler limitare l'uso delle app approvate dall'azienda nei dispositivi gestiti, ad esempio per limitare la capacità degli studenti o dei dipendenti di accedere ai dati di altre organizzazioni, oppure di usare app approvate dall'azienda per scenari personali. Queste restrizioni possono essere applicate impostando criteri per i dispositivi riconosciuti dalle applicazioni Teams.
 
 ### <a name="how-to-restrict-sign-in-on-mobile-devices"></a>Come limitare l'accesso nei dispositivi mobili
 

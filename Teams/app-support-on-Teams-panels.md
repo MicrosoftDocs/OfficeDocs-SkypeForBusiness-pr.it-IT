@@ -20,12 +20,12 @@ f1.keywords:
 ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2bf4066675755e0f93844644a6a59404af678a38
-ms.sourcegitcommit: d425748a50964ebc78e5d38fce564a444a449f43
+ms.openlocfilehash: 1f9d2e3b17f852dcd020dc11c323bbc24c2dfc30
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65635414"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65675908"
 ---
 # <a name="microsoft-teams-appsline-of-business-lob-app-support-on-teams-panels"></a>supporto per app Microsoft Teams/line-of-business su pannelli Teams
 
@@ -36,7 +36,7 @@ Teams pannelli aggiunge il supporto per [app Teams o app line-of-business](/micr
 
 ## <a name="teams-app-experience-on-teams-panels"></a>Teams'esperienza dell'app nei pannelli Teams
 
-![Screenshot dell'interfaccia di amministrazione di Teams che mostra quale sezione consentirà agli utenti di passare alle app.](media/tac1update.png) 
+![Screenshot dell'interfaccia di amministrazione di Teams che mostra quale sezione consentirà agli utenti di passare alle app.](media/tac1update.png)
 
 *La schermata iniziale dei pannelli Teams include le opzioni di spostamento dell'app, indicate nello screenshot in rosso. Si noti che queste sono icone di esempio e potrebbero non essere disponibili per l'uso.*
 
@@ -44,7 +44,7 @@ Teams pannelli aggiunge il supporto per [app Teams o app line-of-business](/micr
 
 *Quando un utente tocca una delle icone dell'app, vedrà la schermata dell'app Teams visualizzata nello screenshot precedente. Il rettangolo grigio nello screenshot è la posizione in cui le app vengono visualizzate nel Pannello di Teams. La barra dell'app è fissa e parte dell'app Teams pannelli.*
 
-## <a name="set-up-and-manage-teams-panels-apps-in-teams-admin-center"></a>Configurare e gestire le app Teams pannelli nell Teams interfaccia di amministrazione 
+## <a name="set-up-and-manage-teams-panels-apps-in-teams-admin-center"></a>Configurare e gestire le app Teams pannelli nell Teams interfaccia di amministrazione
 
 Microsoft Teams app portano informazioni chiave, strumenti comuni e processi attendibili in cui le persone si riuniscono, imparano e lavorano. Teams le app [funzionano con funzionalità integrate](/microsoftteams/platform/concepts/capabilities-overview). Ora, gli amministratori IT possono scegliere quali app includere nel dispositivo dei pannelli di Teams dell'organizzazione e personalizzare le autorizzazioni tramite [l'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com/).
 
@@ -62,11 +62,11 @@ Dopo aver configurato le app, è possibile usare i [criteri di autorizzazione de
 
 Poiché Teams offre la possibilità di visualizzare un'ampia gamma di app, gli amministratori possono decidere quali app sono più essenziali per l'organizzazione e aggiungerle solo per la schermata **iniziale** dei pannelli Teams per un accesso rapido. Se sono presenti più di cinque app aggiunte o quelle rimosse, verranno visualizzate sotto la schermata **Altro** . Microsoft consiglia di creare criteri di configurazione delle app personalizzati specifici per i pannelli Teams.
 
-![Screenshot dell'interfaccia utente della pagina dei criteri di configurazione dell'app.](media/appsetup1.png) 
+![Screenshot dell'interfaccia utente della pagina dei criteri di configurazione dell'app.](media/appsetup1.png)
 
 Per gestire le app aggiunte visualizzate nei pannelli Teams, accedere all'interfaccia di amministrazione di Teams dell'organizzazione e passare alle **app** \> Teams **Criteri di configurazione** \> **Selezionare o creare un nuovo criterio** \> **App aggiunte**.
 
-![Screenshot della sezione app aggiunte all'interno dell'interfaccia utente.](media/appsetup2.png) 
+![Screenshot della sezione app aggiunte all'interno dell'interfaccia utente.](media/appsetup2.png)
 
 *Le app incluse in questa immagine sono solo esempi e potrebbero non essere disponibili per l'uso.*
 
@@ -74,7 +74,7 @@ Microsoft consiglia di disattivare **Upload app personalizzate** e **l'aggiunta 
 
 Per altre informazioni sull'aggiunta di app, vedere [Gestire i criteri di configurazione delle app](/microsoftteams/teams-app-setup-policies).
 
-## <a name="manage-apps-display-order-in-teams-panels"></a>Gestire l'ordine di visualizzazione delle app nei pannelli Teams 
+## <a name="manage-apps-display-order-in-teams-panels"></a>Gestire l'ordine di visualizzazione delle app nei pannelli Teams
 
 ![Screenshot della sezione delle app all'interno dell'interfaccia utente.](media/appsetup3.png)
 
@@ -122,6 +122,6 @@ Non tutte le app possono essere aggiunte a Teams tramite un criterio di configur
 
 ![Screenshot della sezione dei criteri di configurazione all'interno dell'interfaccia utente con una finestra popup che conferma che l'aggiunta dell'utente è attiva.](media/appsetup4.png)
 
-*Le app incluse in questa immagine sono solo esempi e potrebbero non essere disponibili per l'uso.* 
+*Le app incluse in questa immagine sono solo esempi e potrebbero non essere disponibili per l'uso.*
 
 Questo comportamento è previsto per un dispositivo in uno spazio condiviso e contribuisce a prevenire l'aggiunta accidentale di app.

@@ -13,12 +13,12 @@ f1.keywords:
 description: Panoramica della soluzione CCaaS (Integrated Contact Center as a Service) per Microsoft Teams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8f3a6e792d4754c064e32035813cbee681607bdb
-ms.sourcegitcommit: bc73017b4a3fe6271830bc8c5044bfd43eec80c0
+ms.openlocfilehash: 97d12974a96afa6c60188a09f66ff885cd30bcb2
+ms.sourcegitcommit: de0233e51364b7730c4b307fd41a2166eda3c3fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65266869"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65741888"
 ---
 # <a name="contact-center-integrations-for-microsoft-teams"></a>Integrazioni del Centro contatti per Microsoft Teams
 
@@ -82,5 +82,7 @@ I provider seguenti offrono soluzioni di centro contatti integrate in Teams util
 | `Novomind` | https://www.novomind.com/en/customer-service-software-call-center/microsoft-teams/                             |
 | `Puzzel` | https://www.puzzel.com/microsoft-teams                            |
 | `Talkdesk` | https://www.talkdesk.com/cloud-contact-center/integrations/microsoft-teams/                                  |
+| `Vonage` |  https://www.vonage.com/contact-centers/integrations/microsoft-teams/                                 |
+| `GuardRec` | https://www.guardrec.com/en/teams-compliance-recording                          |
 
 Questo elenco verrà aggiornato man mano che altri provider di soluzioni si uniranno e soddisfano i criteri di certificazione.

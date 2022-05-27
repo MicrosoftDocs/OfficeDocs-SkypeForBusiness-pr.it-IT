@@ -1,6 +1,6 @@
 ---
-title: Gestire 9-1-1 avanzato e il servizio di posizione
-ms.reviewer: null
+title: Gestire il servizio avanzato 9-1-1 e il servizio location
+ms.reviewer: ''
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -8,31 +8,35 @@ audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
-description: 'Skype for Business Server supporta chiamate enhanced 9-1-1 (E9-1-1) da Skype for Business client. Quando si configura Skype for Business Server per E9-1-1, le chiamate di emergenza effettuate da Skype for Business includono le informazioni ERL (Emergency Response Location) dal database del servizio informazioni sulla posizione.'
+description: Skype for Business Server supporta chiamate avanzate 9-1-1 (E9-1-1) da client Skype for Business. Quando si configura Skype for Business Server per E9-1-1, le chiamate di emergenza effettuate da Skype for Business includono informazioni sulla posizione di risposta di emergenza (ERL) dal database del servizio Informazioni sulla posizione.
+ms.openlocfilehash: 5b002e4043cb400b5f22a4b11bc70941a88abc2a
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65676008"
 ---
+# <a name="manage-enhanced-9-1-1-and-the-location-service-in-skype-for-busines-server"></a>Gestire il servizio avanzato 9-1-1 e il servizio location in Skype per Busines Server
 
-
-# <a name="manage-enhanced-9-1-1-and-the-location-service-in-skype-for-busines-server"></a>Gestire 9-1-1 avanzato e il servizio di posizione in Skype per Busines Server
-
-Skype for Business Server supporta chiamate enhanced 9-1-1 (E9-1-1) da Skype for Business client. Quando si configura Skype for Business Server per E9-1-1, le chiamate di emergenza effettuate da Skype for Business includono le informazioni ERL (Emergency Response Location) dal database del servizio informazioni sulla posizione. Utilizzare le procedure descritte in questo articolo per gestire i criteri percorso.
+Skype for Business Server supporta chiamate avanzate 9-1-1 (E9-1-1) da client Skype for Business. Quando si configura Skype for Business Server per E9-1-1, le chiamate di emergenza effettuate da Skype for Business includono informazioni sulla posizione di risposta di emergenza (ERL) dal database del servizio Informazioni sulla posizione. Usare le procedure descritte in questo articolo per gestire i criteri di posizione.
 
 > [!Note]
-> Per informazioni dettagliate sulla distribuzione di funzionalità VoIP aziendale avanzate, ad esempio E9-1-1 e il servizio Informazioni percorso, vedere [Deploy advanced VoIP aziendale features](../deploy/deploy-enterprise-voice/deploy-advanced-enterprise-voice-features.md).
+> Per informazioni dettagliate sulla distribuzione di funzionalità avanzate di VoIP aziendale, ad esempio E9-1-1 e il servizio Informazioni sulla posizione, vedere [Distribuire funzionalità avanzate di VoIP aziendale](../deploy/deploy-enterprise-voice/deploy-advanced-enterprise-voice-features.md).
 
-In Skype for Business Server, è possibile utilizzare i criteri percorso per applicare le impostazioni relative alla funzionalità Enhanced 9-1-1 (E9-1-1) e alle impostazioni di posizione per utenti o contatti. I criteri di posizione determinano se un utente è abilitato per E9-1-1 e in questo caso il funzionamento di una chiamata di emergenza. Ad esempio, è possibile usare i criteri di posizione per definire il numero di emergenza (ad esempio il 113 in Italia), se la sicurezza aziendale deve essere automaticamente notificata e come instradare la chiamata.
+In Skype for Business Server, è possibile usare i criteri di posizione per applicare le impostazioni correlate alla funzionalità Avanzata 9-1-1 (E9-1-1) e alle impostazioni di posizione per utenti o contatti. I criteri di posizione determinano se un utente è abilitato per E9-1-1 e in questo caso il funzionamento di una chiamata di emergenza. Ad esempio, è possibile usare i criteri di posizione per definire il numero di emergenza (ad esempio il 113 in Italia), se la sicurezza aziendale deve essere automaticamente notificata e come instradare la chiamata.
 
-È possibile configurare i criteri percorso dal **gruppo Configurazione di** rete nel Pannello Skype for Business Server di controllo. Dal Pannello Skype for Business Server controllo è possibile visualizzare, creare, modificare o eliminare i criteri percorso. Utilizzare la seguente procedura per visualizzare informazioni sui criteri percorso. 
+È possibile configurare i criteri di percorso dal gruppo **Configurazione di rete** nel Skype for Business Server Pannello di controllo. Dal Skype for Business Server Pannello di controllo è possibile visualizzare, creare, modificare o eliminare i criteri di percorso. Utilizzare la seguente procedura per visualizzare informazioni sui criteri percorso. 
 
 
-## <a name="view-location-policy-information"></a>Visualizzare le informazioni sui criteri percorso 
+## <a name="view-location-policy-information"></a>Visualizzare le informazioni sui criteri di posizione 
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL Amministrazione per aprire il Skype for Business Server Pannello di controllo. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di** rete e quindi su **Criteri percorso**.
+3.  Nella barra di spostamento a sinistra fare clic su **Configurazione di rete** e quindi su **Criteri percorso**.
 
 4.  Nella pagina **Criteri percorso** selezionare il criterio percorso che si desidera modificare.
 
@@ -46,16 +50,16 @@ Per impostazione predefinita, esiste un solo criterio, denominato Globale, e non
 
 ## <a name="create-or-modify-a-location-policy"></a>Creare o modificare un criterio percorso 
 
-In Skype for Business Server, è possibile ignorare la quantità di tempo predefinita tra le richieste client per un aggiornamento della posizione dal servizio informazioni percorso. Il valore predefinito è 4 ore. Per ignorare il valore predefinito, utilizzare il cmdlet **Set-CsLocationPolicy** con il parametro LocationRefreshInterval.
+In Skype for Business Server, è possibile sostituire la quantità di tempo predefinita tra le richieste client per un aggiornamento della posizione dal servizio Informazioni sulla posizione. Il valore predefinito è 4 ore. Per ignorare il valore predefinito, utilizzare il cmdlet **Set-CsLocationPolicy** con il parametro LocationRefreshInterval.
 
 
-### <a name="to-create-a-new-location-policy-in-the-skype-for-business-server-control-panel"></a>Per creare un nuovo criterio percorso nel Pannello Skype for Business Server di controllo
+### <a name="to-create-a-new-location-policy-in-the-skype-for-business-server-control-panel"></a>Per creare un nuovo criterio percorso nel Skype for Business Server Pannello di controllo
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL Amministrazione per aprire il Skype for Business Server Pannello di controllo. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di** rete e quindi su **Criteri percorso**.
+3.  Nella barra di spostamento a sinistra fare clic su **Configurazione di rete** e quindi su **Criteri percorso**.
 
 4.  Nella pagina **Criteri percorso** fare clic su **Nuovo** e quindi selezionare il tipo di criterio che si desidera creare:
     
@@ -65,7 +69,7 @@ In Skype for Business Server, è possibile ignorare la quantità di tempo predef
 
 5.  Completare i campi restanti come indicato di seguito:
     
-      - **Abilitare servizi di emergenza avanzato**   Selezionare questa casella di controllo per abilitare gli utenti associati a questo criterio per E9-1-1. Quando i servizi di emergenza sono abilitati, Skype for Business Server i client recuperano le informazioni sulla posizione al momento della registrazione e includono queste informazioni quando viene effettuata una chiamata di emergenza.
+      - **Abilitare servizi di emergenza avanzati**   Selezionare questa casella di controllo per abilitare gli utenti associati a questo criterio per E9-1-1. Quando i servizi di emergenza sono abilitati, Skype for Business Server client recupereranno le informazioni sulla posizione durante la registrazione e includeranno tali informazioni quando viene effettuata una chiamata di emergenza.
     
       - **Percorso**   Specificare uno dei valori seguenti:
         
@@ -73,10 +77,10 @@ In Skype for Business Server, è possibile ignorare la quantità di tempo predef
         
           - **Non richiesto**   All'utente non verrà richiesto di immettere la posizione. Quando viene effettuata una chiamata senza informazioni sulla posizione, il provider dei servizi di emergenza risponderà alla chiamata e richiederà la posizione.
         
-          - **Dichiarazione di non responsabilità**   Questa opzione è uguale a **Obbligatorio** , tranne per il fatto che l'utente non può ignorare il prompt senza immettere le informazioni sulla posizione. L'utente può comunque effettuare una chiamata di emergenza, ma non è possibile effettuare altre chiamate senza immettere le informazioni. Viene inoltre visualizzato il testo della dichiarazione di non responsabilità per comunicare all'utente le conseguenze derivanti dal rifiuto di immettere le informazioni sulla posizione. Per impostare il testo della dichiarazione di non responsabilità, è necessario utilizzare Skype for Business Server Management Shell per eseguire il cmdlet **Set-CsLocationPolicy** o **il cmdlet New-CsLocationPolicy** con il parametro EnhancedEmergencyServiceDisclaimer. Per informazioni dettagliate, [vedere Set-CsLocationPolicy](/powershell/module/skype/Set-CsLocationPolicy) o [New-CsLocationPolicy](/powershell/module/skype/New-CsLocationPolicy).
+          - **Disclaimer**   Questa opzione è identica a **Obbligatoria** , ad eccezione del fatto che l'utente non può ignorare la richiesta senza immettere informazioni sulla posizione. L'utente può comunque effettuare una chiamata di emergenza, ma non è possibile effettuare altre chiamate senza immettere le informazioni. Viene inoltre visualizzato il testo della dichiarazione di non responsabilità per comunicare all'utente le conseguenze derivanti dal rifiuto di immettere le informazioni sulla posizione. Per impostare il testo della dichiarazione di non responsabilità, è necessario usare Skype for Business Server Management Shell per eseguire il cmdlet **Set-CsLocationPolicy** o il cmdlet **New-CsLocationPolicy** con il parametro EnhancedEmergencyServiceDisclaimer. Per informazioni dettagliate, vedere [Set-CsLocationPolicy](/powershell/module/skype/Set-CsLocationPolicy) o [New-CsLocationPolicy](/powershell/module/skype/New-CsLocationPolicy).
           
     
-      - **Usa la posizione solo per** i servizi di Skype for Business le informazioni sulla posizione per vari motivi (ad esempio, per informare i membri del team della posizione corrente). Selezionare questa casella di controllo per verificare che le informazioni sulla posizione siano disponibili solo per l'utilizzo con una chiamata di emergenza.
+      - **Usare la posizione per i servizi di emergenza solo** Skype for Business possono usare le informazioni sulla posizione per vari motivi, ad esempio per notificare ai colleghi la posizione corrente. Selezionare questa casella di controllo per assicurarsi che le informazioni sulla posizione siano disponibili solo per l'uso con una chiamata di emergenza.
     
       - **Utilizzo PSTN**   L'utilizzo PSTN (Public Switched Telephone Network) che verrà impiegato per determinare la route vocale utilizzata per instradare le chiamate di emergenza dai client che utilizzano questo profilo. La route associata a tale utilizzo deve puntare a un trunk SIP dedicato alle chiamate di emergenza o a un gateway ELIN (Emergency Location Identification Number) che instrada le chiamate di emergenza al punto di raccolta PSAP più vicino.
     
@@ -103,16 +107,16 @@ In Skype for Business Server, è possibile ignorare la quantità di tempo predef
 
 
     > [!IMPORTANT]  
-    > Quando si crea un criterio utente, inizialmente tale criterio non si applica ad alcun utente o sito di rete. Per applicare il criterio a un utente, fare clic **su Utenti** nella barra di spostamento sinistra. Individuare l'utente a cui si desidera applicare il criterio. Scegliere **Mostra dettagli** dal menu **Modifica**. Nella pagina **Modifica utente server** selezionare il nuovo criterio percorso nell'elenco a  discesa Criteri percorso e quindi fare clic su **Commit**.<BR>Per applicare il criterio a un sito di rete, fare clic su **Configurazione di rete** sulla barra di spostamento sinistra, fare clic su **Sito**, individuare il sito di rete a cui applicare il criterio, scegliere **Mostra dettagli** dal menu **Modifica** e in **Modifica sito** selezionare il nuovo criterio percorso nell'elenco a discesa **Criteri percorso**, quindi fare clic su **Commit**.
+    > Quando si creano criteri utente, inizialmente tali criteri non si applicano ad utenti o siti di rete. Per applicare i criteri a un utente, fare clic su **Utenti** nella barra di spostamento sinistra. Trovare l'utente a cui si desidera applicare i criteri. Scegliere **Mostra dettagli** dal menu **Modifica**. Nella pagina **Modifica utente server** selezionare il nuovo criterio percorso dall'elenco a discesa **Criteri percorso** e quindi fare clic su **Commit**.<BR>Per applicare il criterio a un sito di rete, fare clic su **Configurazione di rete** sulla barra di spostamento sinistra, fare clic su **Sito**, individuare il sito di rete a cui applicare il criterio, scegliere **Mostra dettagli** dal menu **Modifica** e in **Modifica sito** selezionare il nuovo criterio percorso nell'elenco a discesa **Criteri percorso**, quindi fare clic su **Commit**.
 
 
-### <a name="to-modify-a-location-policy-in-the-skype-for-business-server-control-panel"></a>Per modificare un criterio percorso nel Pannello Skype for Business Server di controllo
+### <a name="to-modify-a-location-policy-in-the-skype-for-business-server-control-panel"></a>Per modificare i criteri di posizione nel Skype for Business Server Pannello di controllo
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL Amministrazione per aprire il Skype for Business Server Pannello di controllo. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di** rete e quindi su **Criteri percorso**.
+3.  Nella barra di spostamento a sinistra fare clic su **Configurazione di rete** e quindi su **Criteri percorso**.
 
 4.  Nella pagina **Criteri percorso** selezionare il criterio percorso che si desidera modificare.
 
@@ -128,9 +132,9 @@ In Skype for Business Server, è possibile ignorare la quantità di tempo predef
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL Amministrazione per aprire il Skype for Business Server Pannello di controllo. 
 
-3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di** rete e quindi su **Criteri percorso**.
+3.  Nella barra di spostamento a sinistra fare clic su **Configurazione di rete** e quindi su **Criteri percorso**.
 
 4.  Nella pagina  **Criteri percorso** selezionare il criterio percorso che si desidera eliminare.
    

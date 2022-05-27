@@ -22,12 +22,12 @@ appliesto:
 ms.reviewer: acolonna
 description: Scopri come un utente con stato Assente o Non disturbare può impostare esplicitamente un altro utente come delegato nel proprio messaggio di stato.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fd1b11038d4dbd0f1ea773065628170d7f55a33c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 14f58861074ed8b9291ca725f60ff1612534f4dc
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596190"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65674208"
 ---
 # <a name="message-delegation"></a>Delega messaggi
 
@@ -62,7 +62,7 @@ Un utente può impostare una nota in Teams solo se la modalità è TeamsOnly o I
   
 Non vi è alcuna indicazione visiva che sia stata impostata una nota da Skype for Business.
 
-Skype for Business non applica un limite di caratteri alle note di stato. Microsoft Teams visualizzerà solo i primi 280 caratteri di un set di note da Skype for Business. Un'ellisse (…) alla fine di una nota indica il troncamento.
+Skype for Business non applica un limite di caratteri alle note di stato. Microsoft Teams visualizzerà solo i primi 280 caratteri di un set di note da Skype for Business. I puntini di sospensione (...) alla fine di una nota indicano il troncamento.
   
 Skype for Business non supporta i tempi di scadenza per le note.
 

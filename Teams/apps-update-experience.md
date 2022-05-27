@@ -18,16 +18,16 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Scopri come aggiornare le app in Microsoft Teams.
-ms.openlocfilehash: ce788bcdfb690aec305b71ec881a865385c895c2
-ms.sourcegitcommit: c7b95254dec4420ba0a697fd49d11b448364c919
+ms.openlocfilehash: ed9a1de2e182088a20721758c63f8b6d83cc36df
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2022
-ms.locfileid: "63442282"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65674998"
 ---
 # <a name="update-apps-in-microsoft-teams"></a>Aggiornare le app in Microsoft Teams
 
-Nella maggior parte dei casi, dopo che gli sviluppatori di app pubblicano un aggiornamento dell'app, la nuova versione viene visualizzata automaticamente per gli utenti. Esistono tuttavia alcuni aggiornamenti del manifesto di Microsoft Teams [che](/microsoftteams/platform/resources/schema/manifest-schema) richiedono l'accettazione dell'utente per il completamento:
+Nella maggior parte dei casi, dopo che gli sviluppatori di app hanno pubblicato un aggiornamento dell'app, la nuova versione viene visualizzata automaticamente per gli utenti. Tuttavia, ci sono alcuni aggiornamenti al [manifesto Microsoft Teams](/microsoftteams/platform/resources/schema/manifest-schema) che richiedono l'accettazione dell'utente per completare:
 
 * Un bot è stato aggiunto o rimosso
 * La proprietà "botId" di un bot esistente è stata modificata
@@ -42,7 +42,7 @@ Nella maggior parte dei casi, dopo che gli sviluppatori di app pubblicano un agg
 ![opzione di aggiornamento per un'app.](media/manage-your-custom-apps-update2.png)
 
 > [!NOTE]
-> Il processo di aggiornamento si applica a tutti gli aggiornamenti delle app Microsoft, alle app personalizzate e alle app di terze parti.
+> Il processo di aggiornamento si applica a tutti gli aggiornamenti delle app Microsoft, delle app personalizzate e delle app di terze parti.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

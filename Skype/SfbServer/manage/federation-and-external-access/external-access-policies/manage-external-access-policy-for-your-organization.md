@@ -1,9 +1,9 @@
 ---
 title: Gestire i criteri di accesso esterno per l'organizzazione
-ms.reviewer: null
-'ms:assetid': 5571811e-34c8-443a-b94c-1ab5d4275581
-'ms:mtpsurl': 'https://technet.microsoft.com/en-us/library/Gg520995(v=OCS.15)'
-'ms:contentKeyID': 48184160
+ms.reviewer: ''
+ms:assetid: 5571811e-34c8-443a-b94c-1ab5d4275581
+ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg520995(v=OCS.15)
+ms:contentKeyID: 48184160
 mtps_version: v=OCS.15
 ms.author: serdars
 author: SerdarSoysal
@@ -12,12 +12,16 @@ audience: ITPro
 ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
-description: 'Dopo avere distribuito uno o più server Edge Server, è necessario abilitare i tipi di accesso esterno da supportare per l''organizzazione.'
+description: Dopo avere distribuito uno o più server Edge Server, è necessario abilitare i tipi di accesso esterno da supportare per l'organizzazione.
+ms.openlocfilehash: 6134d2d6f5e2a204a18fdbda3360d39f00ed46f2
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65674588"
 ---
-
-
 # <a name="manage-external-access-policy-for-your-organization"></a>Gestire i criteri di accesso esterno per l'organizzazione
 
 Dopo avere distribuito uno o più server Edge Server, è necessario abilitare i tipi di accesso esterno da supportare per l'organizzazione.
@@ -37,12 +41,12 @@ Per impostazione predefinita, non vi sono criteri configurati per supportare l'a
 
 Queste opzioni includono i tipi di accesso esterno seguenti:
 
-  - **Abilitare le comunicazioni con utenti federati**   Abilitare questa opzione se si desidera supportare l'accesso degli utenti ai domini partner federati. Questa impostazione consente di configurare la possibilità per gli utenti di comunicare con altri domini federati SIP, nonché con provider ospitati come Microsoft 365 o Office 365. 
+  - **Abilitare le comunicazioni con gli utenti federati**   Abilita questa opzione se vuoi supportare l'accesso degli utenti ai domini partner federati. Questa impostazione consente agli utenti di comunicare con altri domini federati SIP, nonché con provider ospitati come Microsoft 365 o Office 365. 
 
 
-  - **Abilitare le comunicazioni con utenti remoti**   Abilitare questa opzione se si desidera che gli utenti dell'organizzazione esterni al firewall, ad esempio i telelavoratori e gli utenti in viaggio, possano connettersi a Skype for Business Server tramite Internet.
+  - **Abilitare le comunicazioni con gli utenti remoti**   Abilitare questa opzione se si vuole che gli utenti dell'organizzazione che si trovano all'esterno del firewall, ad esempio i telecomunicazioni e gli utenti che viaggiano, possano connettersi a Skype for Business Server tramite Internet.
 
-  - **Abilitare le comunicazioni con utenti pubblici**   Abilitare questa opzione se si desidera che gli utenti interni siano in grado di comunicare con i contatti del provider di messaggistica istantanea pubblica.
+  - **Abilitare le comunicazioni con gli utenti pubblici**   Abilitare questa opzione se si vuole che gli utenti interni siano in grado di comunicare con i contatti del provider di messaggistica istantanea pubblica.
    
 
 > [!NOTE]  

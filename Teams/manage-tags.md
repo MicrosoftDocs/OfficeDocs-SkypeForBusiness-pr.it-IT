@@ -16,12 +16,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire l'uso dei tag nell'organizzazione in Microsoft Teams.
-ms.openlocfilehash: 0fa615f2bbcdd7965777925b2413717779ad4a7a
-ms.sourcegitcommit: 54cb804e6e8338f2d09499e53416e6d55ef1cc40
+ms.openlocfilehash: 62ac77c6467a17da10fdc3ba66350383d7c8016c
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65442012"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65675548"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 
@@ -35,7 +35,7 @@ Come accennato in precedenza, ci sono due tipi di tag in Teams.
 - **Aggiunta di tag tramite turno**: con questa funzionalità, alle persone vengono automaticamente assegnati tag che corrispondono al nome del gruppo pianificare e turno [nell'app Turni](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6#bkmk_openshiftsappdesktop) in Teams. Ad esempio, il tag "EngineerOnCall" raggiunge tutti i tecnici che sono pianificati in Turni per lavorare nel momento in cui il tag viene utilizzato in una chat o un post di canale. Con l'aggiunta di tag con il turno, Teams elimina i tentativi di conoscere il nome del personale in turno quando gli utenti devono inoltrare rapidamente le informazioni. L'aggiunta di tag tramite turno può anche essere supportata dai principali sistemi di gestione della forza lavoro come JDA, Kronos e AMiON integrandoli con Turni in Teams. Per altre informazioni su come configurare questa funzionalità, vedere [Configurare l'aggiunta di tag tramite turno](#set-up-tagging-by-shift).
 
 > [!NOTE]
-> I tag non sono supportati in canali privati o condivisi.  
+> I tag non sono supportati in canali privati o condivisi.
 
 ## <a name="how-tags-work"></a>Funzionamento dei tag
 
@@ -55,7 +55,7 @@ Gli amministratori possono controllare il modo in cui i tag vengono usati nell'i
 
 ![Screenshot delle impostazioni di tagging nell'interfaccia di amministrazione di Microsoft Teams.](media/manage-tags-admin-settings.png)
 
-Un team può avere fino a 100 tag, a un tag possono essere assegnati fino a 200 membri del team e fino a 25 tag nello stesso team a un singolo utente. 
+Un team può avere fino a 100 tag, a un tag possono essere assegnati fino a 200 membri del team e fino a 25 tag nello stesso team a un singolo utente.
 
 ### <a name="set-who-can-add-custom-tags"></a>Impostare chi può aggiungere tag personalizzati
 
@@ -91,15 +91,15 @@ Ecco come aggiungere tag personalizzati e configurare i tag tramite maiusc (se u
 
 ### <a name="create-and-assign-custom-tags"></a>Creare e assegnare tag personalizzati
 
-Per creare e assegnare tag personalizzati, selezionare **Teams** sul lato sinistro dell'app e quindi trovare il team nell'elenco. Seleziona **̇ ̇ ̇ Altre opzioni**, quindi scegli **Gestisci tag**. Qui è possibile creare tag e assegnarli alle persone del team.
+Per creare e assegnare tag personalizzati, selezionare **Teams** sul lato sinistro dell'app e quindi trovare il team nell'elenco. Seleziona **... Altre opzioni** e quindi scegliere **Gestisci contrassegni**. Qui è possibile creare tag e assegnarli alle persone del team.
 
 ![Screenshot che illustra come applicare contrassegni nel client Teams.](media/manage-tags-teams.png)
 
-Per eliminare un tag, seleziona **̇ ̇ ̇ Altre opzioni** accanto al tag, quindi seleziona **Elimina contrassegno**.
+Per eliminare un tag, seleziona **... Altre opzioni** accanto al contrassegno e quindi selezionare **Elimina contrassegno**.
 
 ### <a name="set-up-tagging-by-shift"></a>Configurare l'aggiunta di tag tramite maiusc
 
-L'aggiunta di tag tramite turno consente agli utenti di raggiungere le persone in turno in tempo reale. Teams assegna automaticamente agli utenti tag corrispondenti al nome del gruppo pianificare e turno dall'app Turni, abilitando la messaggistica dinamica basata sui ruoli. Le notifiche vengono inviate solo alle persone che sono in turno nel momento in cui viene usato un tag per avviare una chat o in un post del canale. 
+L'aggiunta di tag tramite turno consente agli utenti di raggiungere le persone in turno in tempo reale. Teams assegna automaticamente agli utenti tag corrispondenti al nome del gruppo pianificare e turno dall'app Turni, abilitando la messaggistica dinamica basata sui ruoli. Le notifiche vengono inviate solo alle persone che sono in turno nel momento in cui viene usato un tag per avviare una chat o in un post del canale.
 
 1. In Teams passare [all'app Turni](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6#bkmk_openshiftsappdesktop).
 2. Creare [gruppi di turni](https://support.microsoft.com/office/fill-out-a-schedule-in-shifts-2d58df9b-1c6c-4c84-b0c3-835de7ad13ea#bkmk_organizeshiftsbygroup) e denominarli dopo un attributo, ad esempio un ruolo. Ad esempio, EngineerOnCall. Il nome del gruppo di turni sarà il nome del tag.

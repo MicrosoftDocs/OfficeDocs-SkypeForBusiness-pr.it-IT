@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come cercare numeri di telefono che è possibile assegnare agli utenti in base al paese o all'area geografica e alla città e specificare la quantità di numeri necessaria.
-ms.openlocfilehash: 46bdc54f892993b9a161690a5d42692fe66b9f5a
-ms.sourcegitcommit: 4847f24e8c644336d2b2f48aa09e2cf91360e4dd
+ms.openlocfilehash: 4cb30e6ef03e50c3524ccd9b5c36ae10fb8b5ab2
+ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64686373"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65681797"
 ---
 # <a name="search-for-telephone-numbers-for-users"></a>Cercare numeri di telefono per gli utenti
 
@@ -34,7 +34,7 @@ Quando si impostano gli utenti dell'organizzazione per effettuare e ricevere chi
   
 Prima di assegnare numeri di telefono forniti da Microsoft agli utenti, è necessario utilizzare la pagina **Ottieni nuovi numeri** per cercare i numeri di telefono disponibili. È possibile eseguire una ricerca per **Paese (mercato),** **tipo di numero** e **località**. Verrà quindi visualizzato un elenco di operatori che forniscono numeri in quel paese.
 
-Se si seleziona Microsoft come operatore, è possibile acquisire i numeri dall'interfaccia di amministrazione di Teams immettendo la quantità di numeri di telefono necessari per gli utenti.La pagina limiterà automaticamente la quantità in base al numero ancora disponibile per l'acquisto. Se selezioni un operatore di Connessione con operatore, verrai indirizzato alla pagina di destinazione dell'operatore selezionato per completare l'ordine numerico.
+Se si seleziona Microsoft come operatore, è possibile acquisire i numeri dall'interfaccia di amministrazione di Teams immettendo la quantità di numeri di telefono necessari per gli utenti. La pagina limiterà automaticamente la quantità in base al numero ancora disponibile per l'acquisto. Se selezioni un operatore di Connessione con operatore, verrai indirizzato alla pagina di destinazione dell'operatore selezionato per completare l'ordine numerico.
 
 La modalità di acquisizione e gestione dei numeri di telefono varia in base all'opzione di connettività PSTN: Piani per chiamate Microsoft, Connessione con operatore o Routing diretto.
 
@@ -46,10 +46,10 @@ Per cercare i numeri di telefono degli utenti:
   
 1. Passare **all'interfaccia di amministrazione di Microsoft Teams**.
 
-2. Nel riquadro di spostamento sinistro selezionare **Voce** >  **Telefono** **numeriOttenere** >  nuovi numeri.
+2. Nel riquadro di spostamento sinistro seleziona **Voce** >  **Telefono numeri** > **Ottieni nuovi numeri**.
   
     > [!IMPORTANT]
-    > Per visualizzare l'opzione **Voce** nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams, è necessario acquistare almeno una **licenza per i componenti aggiuntivi Enterprise E5 o E3**, una **Sistema telefonico** una licenza per i componenti aggiuntivi o una licenza per i componenti aggiuntivi per **i servizi di audioconferenza**.  
+    > Per visualizzare l'opzione **Voce** nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams, è necessario acquistare almeno una **licenza Enterprise E5 o E3**, una **Sistema telefonico** una licenza per i componenti aggiuntivi o una **Audioconferenza** licenza per i componenti aggiuntivi.  
 
 3. Nella pagina **Seleziona località e quantità** selezionare una località dall'elenco a discesa **Paese (mercato** ).
 
@@ -75,10 +75,10 @@ Per cercare i numeri di telefono degli utenti:
 
 1. Passare **all'interfaccia di amministrazione di Microsoft Teams**.
 
-2. Nel riquadro di spostamento sinistro selezionare **Voce** >  **Telefono** **numeriOttenere** >  nuovi numeri.
+2. Nel riquadro di spostamento sinistro seleziona **Voce** >  **Telefono numeri** > **Ottieni nuovi numeri**.
   
     > [!IMPORTANT]
-    > Per visualizzare l'opzione **Voce** nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams, è necessario acquistare almeno una **licenza per i componenti aggiuntivi Enterprise E5 o E3**, una **Sistema telefonico** una licenza per i componenti aggiuntivi o una licenza per i componenti aggiuntivi per **i servizi di audioconferenza**.  
+    > Per visualizzare l'opzione **Voce** nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams, è necessario acquistare almeno una **licenza Enterprise E5 o E3**, una **Sistema telefonico** una licenza per i componenti aggiuntivi o una **Audioconferenza** licenza per i componenti aggiuntivi.  
 
 3. Nella pagina **Seleziona località e quantità** selezionare una località dall'elenco a discesa **Paese (mercato** ).
 

@@ -12,14 +12,14 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
-description: L'amministratore può leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
+description: Amministrazione possibile leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f91c286f08046d1a521d3758f1fc297bf2aa0d59
-ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
+ms.openlocfilehash: 03a23ecb47fb0efca19ce3a7085a1fcc41b80dc3
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187022"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65674198"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
@@ -95,9 +95,9 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 
 Introdotto in questo aggiornamento:
 - Gli amministratori IT possono registrare un dispositivo Teams sale per ricevere le funzionalità di anteprima pubblica tramite l'impostazione XML. Dopo la registrazione, il dispositivo inizierà a ricevere le funzionalità beta. Tutte le funzionalità disponibili per i test beta vengono annunciate in [Microsoft Teams Public Preview - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-teams-public-preview/bd-p/MicrosoftTeamsPublicPreview) <sup>1,2</sup>  
-- L'amministratore IT può impostare la risoluzione dello schermo della sala e il ridimensionamento in remoto tramite le impostazioni <sup>XML2</sup>
-- L'amministratore IT può disabilitare l'eliminazione del rumore microsoft tramite l'impostazione <sup>XML3</sup> 
-- L'amministratore IT può ignorare la pulizia della cartella di download nel dispositivo tramite l'impostazione della chiave del Registro di <sup>sistema4</sup>
+- L'amministratore IT può impostare la risoluzione dello schermo della sala e il ridimensionamento in remoto tramite le impostazioni XML<sup>2</sup>
+- L'amministratore IT può disabilitare l'eliminazione del rumore microsoft tramite l'impostazione XML<sup>3</sup> 
+- L'amministratore IT può ignorare la pulizia della cartella di download nel dispositivo tramite l'impostazione<sup>4</sup> della chiave del Registro di sistema
 - Consentire agli utenti di partecipare a Teams riunione ospitata in un altro cloud (ad esempio, il cliente GCCH può partecipare a riunioni Teams ospitate nel cloud commerciale e viceversa) 
 - Teams rooms ora blocca l'avvio del browser Edge dagli URL in PowerPoint Live come misura di sicurezza aggiuntiva per Teams sale con touchscreen 
 - L'esperienza Riunione immediata è stata migliorata per aggiungere istruzioni agli utenti per invitare gli utenti alla sala 
@@ -125,21 +125,21 @@ Introdotto in questo aggiornamento:
 
 Introdotto in questo aggiornamento:
 - Layout Front Row (Anteprima) per MTR in Windows <sup>1</sup> 
-- Impostazione amministratore per impostare il layout Front row come predefinito  
-- Aggiornamento dell'app Riunione immediata e chiamata solo per Teams, Teams modalità client <sup>predefinite1,2</sup>
-- Passare da una videocamera all'altra in Teams <sup>riunioni1</sup> 
+- Amministrazione impostazione per impostare il layout Prima riga come predefinito  
+- Aggiornamento dell'app Riunione immediata e chiama solo per Teams, Teams modalità client predefinite<sup>1,2</sup>
+- Passare da una videocamera all'altra in Teams riunioni<sup>1</sup> 
 - Impostazione predefinita della videocamera 
 - Cortana aggiornamento dell'icona push-to-talk nella console MTR 
 - Inclusione di una licenza di Azure AD Premium 1 in SKU Room Standard e Premium 
-- supporto dei criteri di accesso condizionale AAD <sup>3</sup> 
+- I criteri di accesso condizionale di AAD supportano<sup>3</sup> 
 - Cortana attivazione vocale abilitata per impostazione predefinita nella Configurazione guidata
-- Supporto per i controlli PTZ <sup>remoti4</sup>
+- I controlli PTZ remoti supportano<sup>4</sup>
 
 > <sup>1</sup> Queste funzionalità verranno distribuite con Teams client Web e l'implementazione verrà completata nelle prossime due settimane. Per altre informazioni, vedere [Teams aggiornamenti](../teams-client-update.md).
 > 
 > <sup>2</sup> sale Teams su Windows in esecuzione solo in Microsoft Teams o Skype for Business e Microsoft Teams (impostazione predefinita) vengono aggiornate con le nuove esperienze riunione e chiamata, tuttavia altre modalità non sono interessate da questo aggiornamento.
 > 
-> <sup>3</sup> Vedere altri dettagli sulla configurazione [di AAD criteri di accesso condizionale](../rooms/rooms-authentication.md#azure-ad-conditional-access) per Teams Rooms.
+> <sup>3</sup> Vedere altri dettagli sulla configurazione dei criteri di [accesso condizionale AAD](../rooms/rooms-authentication.md#azure-ad-conditional-access) per Teams Rooms.
 > 
 > <sup>4</sup> Per questa funzionalità è necessario che gli amministratori IT configurino Teams'app controlli PTZ remoti del client desktop.
 > 
@@ -265,7 +265,7 @@ Introdotto in questo aggiornamento:
 Introdotto in questo aggiornamento:
 
 - Partecipare a riunioni Cisco WebEx da Teams Rooms con partecipazione diretta degli utenti guest
-- abilitare e registrazione automatica dell'interfaccia di amministrazione di Teams
+- abilitazione e registrazione automatica del Centro Teams Amministrazione
 - Supporto per i rilasci di Windows 10 1909
 - Passare al layout della raccolta video anche quando il contenuto è presente
 - Supporto virtuale per alzare le mani per i partecipanti e controlli per il relatore
@@ -321,7 +321,7 @@ Introdotto in questo aggiornamento:
 Introdotto in questo aggiornamento:
 
 - Risposta automatica alle chiamate basate sulla prossimità e impostazione dell'amministratore per controllare
-- Aggiornamento dell'interfaccia utente Impostazioni dell'amministratore del dispositivo con l'aggiunta della configurazione del dispositivo nella scheda Informazioni
+- Aggiornamento dell'interfaccia utente Amministrazione Impostazioni dispositivo con l'aggiunta della configurazione del dispositivo nella scheda Informazioni
 - Controllo sala torna alla schermata principale
 - Sala riunioni SKU disponibile in GCC
 - Supporto della fotocamera contenuto per il sistema basato su Surface Pro (build minima dell'app richiesta: 4.2.4.0)
@@ -350,9 +350,9 @@ Introdotto in questo aggiornamento:
 - Skype room system store app rebrand to "Microsoft Teams Rooms"
 - interfaccia utente della console Microsoft Teams Rooms riallineata a Microsoft Teams
 - Aggiornamento del tema: mantieni l'immagine di sfondo personalizzata solo sulla parte anteriore degli schermi della sala, rendendo lo sfondo della console un colore neutro per garantire che i controlli dell'interfaccia utente della console soddisfino il contrasto dei colori( requisiti di accessibilità
-- Barra universale per i controlli delle chiamate in riunione per chiamate/riunioni Teams per garantire un'esperienza coerente con Microsoft Teams client PC/Web/<sup>mobile1</sup>
-- Valutazione del feedback sulla qualità delle chiamate dopo Teams chiamate/<sup>riunioni1</sup>
-- Ricevere/eseguire il rendering di Microsoft Whiteboard Microsoft Teams Rooms visualizzazione della sala quando vengono condivisi da PC/Web/client Teams <sup>mobile1</sup> <sup>2</sup>
+- Barra universale per i controlli delle chiamate in riunione per chiamate/riunioni Teams per garantire un'esperienza coerente con Microsoft Teams client PC/Web/mobile<sup>1</sup>
+- Valutazione del feedback sulla qualità delle chiamate dopo Teams chiamate/riunioni<sup>1</sup>
+- Ricevere/eseguire il rendering di Microsoft Whiteboard sul Microsoft Teams Rooms schermo della sala quando viene condiviso da PC/Web/client Teams mobile<sup>1</sup> <sup>2</sup>
 - Rimosso il supporto per gli aggiornamenti di Windows 10 versione 1809 a causa di problemi di compatibilità con Microsoft Teams Rooms client. il supporto per Windows 10 versione 19H1 verrà aggiunto nelle versioni future
 
 <sup>1</sup> implementazione del servizio Microsoft Teams con circuiti Teams. Questa funzionalità può essere disponibile prima o dopo l'aggiornamento del client 4.0.105.0
@@ -521,7 +521,7 @@ Introdotto in questo aggiornamento:
 - Possibilità di inviare feedback per le build pubbliche
 - Miglioramento della telemetria per l'affidabilità dell'accesso alle riunioni
 - Segnalazione OMS migliorata
-- Possibilità per l'amministratore IT di configurare i dispositivi in remoto
+- Possibilità per Amministrazione IT di configurare i dispositivi in remoto
 
 ### <a name="2020-03152017"></a>2.0.2.0 (03/15/2017)
 

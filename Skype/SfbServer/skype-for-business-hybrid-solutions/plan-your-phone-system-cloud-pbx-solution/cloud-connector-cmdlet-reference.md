@@ -12,61 +12,61 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 ms.assetid: 072b4bdc-0f1e-4fce-a41e-5c60d24556d5
-description: Nella tabella seguente sono elencati Skype for Business Cloud Connector Edition cmdlet con una breve descrizione e collegamenti a ulteriori informazioni.
-ms.openlocfilehash: 19fc33912075e7737a4fa7fc242e74dd1de92289
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Nella tabella seguente sono elencati i cmdlet Skype for Business Cloud Connector Edition con una breve descrizione e collegamenti ad altre informazioni.
+ms.openlocfilehash: efe4a048e939b6491acc93b7ccd4717ffc9aca8b
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58583730"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65676168"
 ---
 # <a name="cloud-connector-cmdlet-reference"></a>Informazioni di riferimento sui cmdlet di Cloud Connector
- 
-> [!Important]
-> Cloud Connector Edition andrà in pensione il 31 luglio 2021 insieme a Skype for Business Online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto](/MicrosoftTeams/direct-routing-landing-page).
 
-Nella tabella seguente sono elencati Skype for Business Cloud Connector Edition cmdlet con una breve descrizione e collegamenti a ulteriori informazioni.
+> [!Important]
+> Cloud Connector Edition ritirerà il 31 luglio 2021 insieme a Skype for Business Online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete telefonica locale a Teams tramite [routing diretto](/MicrosoftTeams/direct-routing-landing-page).
+
+Nella tabella seguente sono elencati i cmdlet Skype for Business Cloud Connector Edition con una breve descrizione e collegamenti ad altre informazioni.
   
 > [!NOTE]
-> È necessario eseguire tutti i cmdlet nel computer host del connettore cloud ed eseguire la sessione di PowerShell come amministratore. 
+> È necessario eseguire tutti i cmdlet nel computer host del connettore cloud ed è necessario eseguire la sessione di PowerShell come amministratore. 
   
-|**Nome cmdlet**|**Descrizione**|
-|:-----|:-----|
-|[Backup-CcCertificationAuthority](backup-cccertificationauthority.md) <br/> Versione 1.4.2 e successive  <br/> |Consente di eseguire il backup del servizio Autorità di certificazione in un file e di salvarlo nella cartella CA nella directory della condivisione del sito.     <br/> |
-|[Convert-CcIsoToVhdx](convert-ccisotovhdx.md) <br/> |Crea un file del disco rigido virtuale di base (VHDX) utilizzando un file ISO Windows Server 2012 R2 fornito dal cliente. Il file VHDX verrà utilizzato durante la distribuzione diCloud Connector.  <br/> |
-|[Enter-CcUpdate](enter-ccupdate.md) <br/> |Prepara il server host Cloud Connector per il processo di aggiornamento mettendolo in modalità manutenzione. L'appliance è "svuotata"; in altri, tutte le chiamate esistenti verranno completate, ma le nuove chiamate verranno rifiutate.  <br/> |
-|[Exit-CcUpdate](exit-ccupdate.md) <br/> |Esce dalla modalità di manutenzione degli aggiornamenti nel server host cloud Connector.  <br/> |
-|[Export-CcConfiguration](export-ccconfiguration.md) <br/> | Esporta una Skype for Business Cloud Connector Edition in un file locale nel server host Skype for Business Cloud Connector Edition locale. <br/> |
-|[Export-CcConfigurationSampleFile](export-ccconfigurationsamplefile.md) <br/> |Esporta un file di configurazione di esempio del connettore cloud (.ini) nella directory appliance di un dispositivo Cloud Connector. È possibile modificare e rinominare il file da utilizzare per la distribuzione.  <br/> |
-|[Export-CcRootCertificate](export-ccrootcertificate.md) <br/> Versione 1.4.2 e successive  <br/> |Esporta il certificato della CA radice in un file locale nel server host Cloud Connector.  <br/> |
-|[Get-CcApplianceDirectory](get-ccappliancedirectory.md) <br/> |Recupera la directory di lavoro nel server host Cloud Connector. Tutti i file di distribuzione vengono archiviati in questa directory.  <br/> |
-|[Get-CcApplianceLogDirectory](get-ccappliancelogdirectory.md) <br/> |Mostra la directory corrente in cui sono archiviati i registri per un'appliance Cloud Connector.  <br/> |
-|[Get-CcApplianceStatus](get-ccappliancestatus.md) <br/> Versione 2.1 e successive  <br/> |Fornisce informazioni di diagnostica per l'appliance Cloud Connector.  <br/> |
-|[Get-CcCredential](get-cccredential.md) <br/> |Restituisce le credenziali della distribuzione corrente di Cloud Connector.  <br/> |
-|[Get-CcExternalCertificateFilePath](get-ccexternalcertificatefilepath.md) <br/> |Restituisce il percorso del file di certificato esterno per la distribuzione del connettore cloud. L'utente prepara il certificato.  <br/> |
-|[Get-CcSiteDirectory](get-ccsitedirectory.md) <br/> |Visualizza la directory corrente in cui sono archiviati i file di configurazione a livello di sito. La cartella contiene i file di installazione del disco rigido virtuale e del connettore cloud di base. Questa cartella deve essere condivisa con tutte le altre appliance di un sito Cloud Connector.  <br/> |
-|[Get-CcSiteLogDirectory](get-ccsitelogdirectory.md) <br/> |Visualizza la directory corrente in cui sono archiviati i registri a livello di sito per Cloud Connector.  <br/> |
-|[Get-CcVersion](get-ccversion.md) <br/> Versione 2.0 e successive  <br/> |Restituisce la versione nell'istanza di Cloud Connector. Get-CCVersion può essere usato solo nel computer host di Cloud Connector.  <br/> |
-|[Import-CcConfiguration](import-ccconfiguration.md) <br/> Versione 2.0 e successive  <br/> |Importa la Skype for Business Cloud Connector Edition configurazione da un file locale al server host Cloud Connector.  <br/> |
-|[Install-CcAppliance](install-ccappliance.md) <br/> |Installa l'appliance Cloud Connector, incluse le macchine virtuali AD, Central Management Store, Mediation Server e Edge Server, nel server host.  <br/> |
-|[Publish-CcAppliance](publish-ccappliance.md) <br/> | Ottiene informazioni sulla disponibilità elevata dalla configurazione tenant online e le pubblica nell'appliance Cloud Connector nel server host. <br/> |
-|[Register-CcAppliance](register-ccappliance.md) <br/> | Registra le informazioni sull'appliance in un sito PSTN in una configurazione tenant online. Un'appliance deve essere registrata prima di poter essere distribuita e gestita dal servizio di gestione del connettore cloud. <br/> |
-|[Remove-CcCertificationAuthorityFile](remove-cccertificationauthorityfile.md) <br/> Versione 1.4.2 e successive  <br/> |Rimuove il file di backup del servizio autorità di certificazione " \<SiteRootDirectory\> \CA\SfB CCE Root.p12" nella cartella CA nella directory della condivisione del sito per Cloud Connector.  <br/> |
-|[Remove-CcLegacyServerCertificate](remove-cclegacyservercertificate.md) <br/> Versione 1.4.2 e successive  <br/> |Rimuove i certificati server legacy nell'archivio di gestione centrale, nel Mediation Server e nel server perimetrale dopo aver eseguito i cmdlet Renew-CcCACertificate o Renew CcServerCertificate.  <br/> |
-|[Renew-CcCACertificate](renew-cccacertificate.md) <br/> Solo versione 1.4.2  <br/> |Reinstalla il server AD Server del servizio Autorità di certificazione per creare un nuovo certificato CA radice.  <br/> |
-|[Renew-CcServerCertificate](renew-ccservercertificate.md) <br/> Solo versione 1.4.2  <br/> |Rinnova i certificati per Cloud Connector quando sono prossimi alla scadenza o sono già scaduti.  <br/> |
-|[Reset-CcCACertificate](reset-cccacertificate.md) <br/> Versione 1.4.2 e successive  <br/> |Reimposta i server dell'autorità di certificazione per installare un nuovo certificato dell'autorità di certificazione.  <br/> |
-|[Restore-CcCredentials](restore-cccredentials.md) <br/> Versione 2.1 e successive  <br/> |Pulisce le credenziali e richiede di immettere di nuovo tutte le credenziali utilizzate per la distribuzione corrente di Cloud Connector.  <br/> |
-|[Search-CcLog](search-cclog.md) <br/> |Cerca nei registri delle chiamate in ingresso e in uscita nella directory di registro dell'appliance Cloud Connector  <br/> |
-|[Set-CcApplianceDirectory](set-ccappliancedirectory.md) <br/> |Imposta la directory di lavoro nel server host Cloud Connector. Tutti i file di distribuzione vengono archiviati in questa directory.  <br/> |
-|[Set-CcCredential](set-cccredential.md) <br/> |Imposta le credenziali della distribuzione corrente di Cloud Connector.  <br/> |
-|[Set-CcExternalCertificateFilePath](set-ccexternalcertificatefilepath.md) <br/> |Specifica il percorso in cui è archiviato il certificato per mediation server o server perimetrale  <br/> |
-|[Set-CcSiteDirectory](set-ccsitedirectory.md) <br/> |Imposta la directory in cui verranno archiviati i file di configurazione a livello di sito per Cloud Connector. La cartella conterrà il disco rigido virtuale di base e i file di configurazione del connettore cloud.  <br/> |
-|[Start-CcDownload](start-ccdownload.md) <br/> |Scarica i bit del connettore cloud e il file msi in modo sincrono.  <br/> |
-|[Start-CcLogging](start-cclogging.md) <br/> |Genera il registro delle chiamate in ingresso e in uscita per un'appliance Cloud Connector.  <br/> |
-|[Stop-CcLogging](stop-cclogging.md) <br/> |Interrompe la generazione del registro delle chiamate in ingresso e in uscita per un'appliance Cloud Connector.  <br/> |
-|[Switch-CcVersion](switch-ccversion.md) <br/> |Disconnette l'appliance in esecuzione e passa a un'appliance appena distribuita o di backup.  <br/> |
-|[Uninstall-CcAppliance](uninstall-ccappliance.md) <br/> |Disinstalla l'appliance Cloud Connector in esecuzione dal server host.  <br/> |
-|[Unregister-CcAppliance](unregister-ccappliance.md) <br/> |Annulla la registrazione dell'appliance Cloud Connector corrente da un sito PSTN nella configurazione tenant online.  <br/> |
-|[Update-CcCACertificate](update-cccacertificate.md) <br/> Versione 2.0 e successive  <br/> |Reinstalla il server AD Server del servizio Autorità di certificazione per creare un nuovo certificato CA radice.  <br/> |
-|[Update-CcServerCertificate](update-ccservercertificate.md) <br/> Versione 2.0 e successive  <br/> |Rinnova i certificati per Cloud Connector quando sono prossimi alla scadenza o sono già scaduti.  <br/> |
+|Nome cmdlet**|Descrizione|
+|---|---|
+|[Backup-CcCertificationAuthority](backup-cccertificationauthority.md) <p> Versione 1.4.2 e successive|Esegue il backup del servizio autorità di certificazione in un file e lo salva nella cartella CA nella directory della condivisione del sito.|
+|[Convert-CcIsoToVhdx](convert-ccisotovhdx.md)|Crea un file del disco rigido virtuale di base (VHDX) usando un cliente fornito Windows Server 2012 file ISO R2. Il file VHDX verrà usato durante la distribuzione di Connettore Cloud.|
+|[Enter-CcUpdate](enter-ccupdate.md)|Prepara il server host del connettore cloud per il processo di aggiornamento inserendolo in modalità di manutenzione. L'appliance è "svuotata"; Ovvero, tutte le chiamate esistenti verranno completate, ma le nuove chiamate vengono rifiutate.|
+|[Exit-CcUpdate](exit-ccupdate.md)|Esce dalla modalità di manutenzione dell'aggiornamento nel server host del connettore cloud.|
+|[Export-CcConfiguration](export-ccconfiguration.md)|Esporta una configurazione Skype for Business Cloud Connector Edition in un file locale nel server host Skype for Business Cloud Connector Edition.|
+|[Export-CcConfigurationSampleFile](export-ccconfigurationsamplefile.md)|Esporta un file di configurazione di esempio di Cloud Connector (.ini) nella directory dell'appliance di un'appliance Cloud Connector. È possibile modificare e rinominare il file da usare per la distribuzione.|
+|[Export-CcRootCertificate](export-ccrootcertificate.md) <p> Versione 1.4.2 e successive|Esporta il certificato CA radice in un file locale nel server host del connettore cloud.|
+|[Get-CcApplianceDirectory](get-ccappliancedirectory.md)|Recupera la directory di lavoro nel server host del connettore cloud. Tutti i file di distribuzione vengono archiviati in questa directory.|
+|[Get-CcApplianceLogDirectory](get-ccappliancelogdirectory.md)|Mostra la directory corrente in cui vengono archiviati i log per un'appliance Cloud Connector.|
+|[Get-CcApplianceStatus](get-ccappliancestatus.md) <p> Versione 2.1 e successive|Fornisce informazioni di diagnostica per l'appliance Cloud Connector.|
+|[Get-CcCredential](get-cccredential.md)|Restituisce le credenziali della distribuzione corrente del connettore cloud.|
+|[Get-CcExternalCertificateFilePath](get-ccexternalcertificatefilepath.md)|Restituisce il percorso del file del certificato esterno per la distribuzione del connettore cloud. L'utente prepara questo certificato.|
+|[Get-CcSiteDirectory](get-ccsitedirectory.md)|Mostra la directory corrente in cui sono archiviati i file di configurazione a livello di sito. La cartella contiene i file di installazione del disco rigido virtuale di base e del connettore cloud. Questa cartella deve essere condivisa con tutte le altre appliance di un sito di Cloud Connector.|
+|[Get-CcSiteLogDirectory](get-ccsitelogdirectory.md)|Mostra la directory corrente in cui sono archiviati i log a livello di sito per Cloud Connector.|
+|[Get-CcVersion](get-ccversion.md) <p> Versione 2.0 e successive|Restituisce la versione nell'istanza di Cloud Connector. Get-CCVersion può essere usato solo nel computer host di Cloud Connector.|
+|[Import-CcConfiguration](import-ccconfiguration.md) <p> Versione 2.0 e successive|Importa la configurazione Skype for Business Cloud Connector Edition da un file locale al server host del connettore cloud.|
+|[Install-CcAppliance](install-ccappliance.md)|Installa l'appliance Cloud Connector, incluse le macchine virtuali AD, Central Management Store, Mediation Server e Edge Server, nel server host.|
+|[Publish-CcAppliance](publish-ccappliance.md)|Ottiene informazioni a disponibilità elevata dalla configurazione del tenant online e le pubblica nell'appliance Cloud Connector nel server host.|
+|[Register-CcAppliance](register-ccappliance.md)|Registra le informazioni sull'appliance in un sito PSTN in una configurazione del tenant online. Un'appliance deve essere registrata prima di poter essere distribuita e gestita dal servizio di gestione del connettore cloud.|
+|[Remove-CcCertificationAuthorityFile](remove-cccertificationauthorityfile.md) <p> Versione 1.4.2 e successive|Rimuove il file di backup del servizio autorità di certificazione "\<SiteRootDirectory\>\CA\SfB CCE Root.p12" nella cartella CA nella directory di condivisione del sito per Cloud Connector.|
+|[Remove-CcLegacyServerCertificate](remove-cclegacyservercertificate.md) <p> Versione 1.4.2 e successive|Rimuove i certificati del server legacy nell'archivio di gestione centrale, nel Mediation Server e nel server perimetrale dopo aver eseguito i cmdlet Renew-CcCACertificate o Renew CcServerCertificate.|
+|[Renew-CcCACertificate](renew-cccacertificate.md) <p> Solo versione 1.4.2|Reinstalla il server AD del servizio Autorità di certificazione per creare un nuovo certificato CA radice.|
+|[Renew-CcServerCertificate](renew-ccservercertificate.md) <p> Solo versione 1.4.2|Rinnova i certificati per Cloud Connector quando sono prossimi alla scadenza o sono già scaduti.|
+|[Reset-CcCACertificate](reset-cccacertificate.md) <p> Versione 1.4.2 e successive|Reimposta i server dell'autorità di certificazione per installare un nuovo certificato dell'autorità di certificazione.|
+|[Restore-CcCredentials](restore-cccredentials.md) <p> Versione 2.1 e successive|Pulisce le credenziali e richiede di immettere nuovamente tutte le credenziali usate per la distribuzione corrente di Cloud Connector.|
+|[Search-CcLog](search-cclog.md)|Cerca i log delle chiamate in ingresso e in uscita nella directory di log dell'appliance Cloud Connector|
+|[Set-CcApplianceDirectory](set-ccappliancedirectory.md)|Imposta la directory di lavoro nel server host del connettore cloud. Tutti i file di distribuzione vengono archiviati in questa directory.|
+|[Set-CcCredential](set-cccredential.md)|Imposta le credenziali della distribuzione corrente del connettore cloud.|
+|[Set-CcExternalCertificateFilePath](set-ccexternalcertificatefilepath.md)|Specifica il percorso in cui è archiviato il certificato per mediation server o server perimetrale|
+|[Set-CcSiteDirectory](set-ccsitedirectory.md)|Imposta la directory in cui verranno archiviati i file di configurazione a livello di sito per Cloud Connector. La cartella conterrà i file di configurazione del disco rigido virtuale di base e del connettore cloud.|
+|[Start-CcDownload](start-ccdownload.md)|Scarica i bit e il file msi del connettore cloud in modo sincrono.|
+|[Start-CcLogging](start-cclogging.md)|Genera il log delle chiamate in ingresso e in uscita per un'appliance Cloud Connector.|
+|[Stop-CcLogging](stop-cclogging.md)|Interrompe la generazione del log delle chiamate in ingresso e in uscita per un'appliance Cloud Connector.|
+|[Switch-CcVersion](switch-ccversion.md)|Disconnette l'appliance in esecuzione e passa a un'appliance appena distribuita o di backup.|
+|[Uninstall-CcAppliance](uninstall-ccappliance.md)|Disinstalla l'appliance Cloud Connector in esecuzione dal server host.|
+|[Unregister-CcAppliance](unregister-ccappliance.md)|Annulla la registrazione dell'appliance Cloud Connector corrente da un sito PSTN nella configurazione del tenant online.|
+|[Update-CcCACertificate](update-cccacertificate.md) <p> Versione 2.0 e successive|Reinstalla il server AD del servizio Autorità di certificazione per creare un nuovo certificato CA radice.|
+|[Update-CcServerCertificate](update-ccservercertificate.md) <p> Versione 2.0 e successive|Rinnova i certificati per Cloud Connector quando sono prossimi alla scadenza o sono già scaduti.|

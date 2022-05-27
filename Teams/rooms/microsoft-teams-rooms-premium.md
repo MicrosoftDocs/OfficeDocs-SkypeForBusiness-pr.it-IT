@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams Rooms gestito
+title: servizio gestito Microsoft Teams Rooms
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -15,129 +15,135 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni sul servizio Microsoft Teams Rooms gestito.
+description: Informazioni sul servizio gestito Microsoft Teams Rooms.
 f1keywords: ''
-ms.openlocfilehash: 2c0131f76146c27e259198baca826cedaddc6426
-ms.sourcegitcommit: c8951fe3504c1776d7aec14b79605aaf5d317e7f
+ms.openlocfilehash: 432e09204ae157ece03b2dd0c1f4ac3336adec52
+ms.sourcegitcommit: de0233e51364b7730c4b307fd41a2166eda3c3fc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "61331107"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65741878"
 ---
-# <a name="microsoft-teams-rooms-managed-service"></a>Microsoft Teams Rooms gestito
+# <a name="microsoft-teams-rooms-managed-service"></a>servizio gestito Microsoft Teams Rooms
 
-Il servizio Microsoft Teams Rooms gestito da Microsoft Teams Rooms è un servizio di gestione e monitoraggio IT basato sul cloud che mantiene aggiornati e monitorati proattivamente i dispositivi Microsoft Teams Rooms e le relative periferiche, supportando un ambiente ottimizzato per un'esperienza utente ottimale.
+Il servizio gestito Microsoft Teams Rooms è un servizio di gestione e monitoraggio IT basato sul cloud che mantiene aggiornati i dispositivi Microsoft Teams Rooms e le relative periferiche e monitora in modo proattivo, supportando un ambiente ottimizzato per un'esperienza utente ottimale.
 
-Il Microsoft Teams Rooms gestito è per le organizzazioni che cercano di migliorare l'esperienza della sala riunioni e di scalare rapidamente l'ingombro offrendo una gestione proattiva per Microsoft Teams Rooms dispositivi. Il servizio consente alle organizzazioni di risparmiare tempo, denaro e competenze che altrimenti verrebbero spesi per la gestione delle chat room "fai da te".  
+Il servizio gestito Microsoft Teams Rooms è destinato alle organizzazioni che vogliono migliorare l'esperienza delle sale riunioni e ridimensionare rapidamente il proprio footprint offrendo una gestione proattiva per Microsoft Teams Rooms dispositivi. Il servizio consente alle organizzazioni di risparmiare tempo, denaro e competenze che altrimenti verrebbero spesi per la gestione delle sale.  
 
-Il Microsoft Teams Rooms gestito è basato su una solida base dell'esperienza di Microsoft nella gestione abilitata per il software di punti finali, apprendimento automatico e automazione intelligente. Il Microsoft Teams Rooms gestito consente alle organizzazioni di offrire un'esperienza di alta qualità in più siti remoti e può supportare qualsiasi ritmo di crescita che un'organizzazione potrebbe richiedere.
+Il servizio gestito Microsoft Teams Rooms si basa su una solida base della competenza di Microsoft nella gestione dei punti finali abilitati al software, nell'apprendimento automatico e nell'automazione intelligente. Il servizio gestito Microsoft Teams Rooms consente alle organizzazioni di offrire un'esperienza di alta qualità in più siti remoti e di soddisfare qualsiasi ritmo di crescita richiesto da un'organizzazione.
 
-Questi sono tre aspetti chiave del servizio:  
+Ecco tre aspetti chiave del servizio:  
 
 - Operazioni intelligenti  
 
-   Software e apprendimento automatico che automatizza gli aggiornamenti, il rilevamento dei problemi, la risoluzione dei problemi Microsoft Teams Rooms.  
+   Software e apprendimento automatico che automatizzano gli aggiornamenti, il rilevamento dei problemi, la risoluzione dei problemi per Microsoft Teams Rooms.  
 
 
 
 - Esperti dedicati  
 
-   Un team di esperti che forniscono operazioni di servizio 24x7, supporto a più livelli e assistenza per la risoluzione degli incidenti.  
+   Un team di esperti che forniscono operazioni di servizio 24 ore su 24, 7 giorni su 7, supporto a più livelli e assistenza per la risoluzione degli incidenti.  
 
 
 
-- Approfondimenti migliorati  
+- Approfondimenti avanzati  
 
-   Analisi avanzate, creazione di report e apprendimenti comprovati su vasta scala per molti clienti.  
+   Analisi avanzate, creazione di report e esperienze comprovate su vasta scala in molti clienti.  
 
 
 ## <a name="service-capabilities"></a>Funzionalità del servizio
 
-Ecco una panoramica delle funzionalità del servizio Microsoft Teams Rooms gestito.
+Ecco una panoramica delle funzionalità del servizio gestito Microsoft Teams Rooms.
 
 |Capacità  |Descrizione  |
 |---------|---------|
-|**Pianificazione e implementazione delle chat room**   |Funzionalità di pianificazione delle chat room che consentono di comprendere l'inventario delle apparecchiature della sala e di prendere decisioni sugli standard delle apparecchiature per le nuove distribuzioni di chat room.         |
-|**Monitoraggio e risoluzione dei problemi**  |Monitoraggio dell'integrità delle chat room che rileva i problemi con il sistema e le periferiche della sala e fornisce una risposta proattiva alla gestione degli incidenti guidata da Microsoft.         |
-|**Gestione degli aggiornamenti**    |Gestione e distribuzione degli aggiornamenti delle applicazioni e del firmware per i sistemi delle chat room e le relative periferiche eseguite da Microsoft.         |
-|**Insights e consigli**     |Insights l'integrità dei clienti, l'utilizzo, l'utilizzo e l'affidabilità delle apparecchiature.         |
-|**Conformità e certificazioni**   |Soddisfa tutti gli standard applicabili per Microsoft Online Services.         |
-|**Supporto tecnico**   |Supporto dei ticket 24x7x365 tramite il servizio Microsoft Teams Rooms service operation center (SOC) dedicato. Escalation per conto dell'utente ad altri fornitori primari, se applicabile. Per altre informazioni, vedere [Supporto tecnico.](#customer-support)|
-|**Dispositivi supportati**    |Sistemi Microsoft Teams Rooms certificati e relative periferiche.<br>*Surface Hub supporto tecnico in arrivo nella seconda metà del 2021*        |
-|**Aree geografiche supportate**    |Vedere [Aree geografiche supportate.](#supported-regions)        |
-|**Integrazione**    |Integrazione disponibile con service now ospitato dal cliente.         |
+|**Pianificazione e implementazione delle sale**   |Funzionalità di pianificazione delle sale che consentono di comprendere l'inventario delle attrezzature della sala e prendere decisioni sugli standard di attrezzatura per le nuove distribuzioni di sale.         |
+|**Monitoraggio e risoluzione dei problemi**  |Monitoraggio dell'integrità della sala che rileva problemi con il sistema e le periferiche della sala e fornisce una risposta proattiva alla gestione degli eventi imprevisti guidata da Microsoft.         |
+|**Gestione degli aggiornamenti**    |Gestione e distribuzione degli aggiornamenti di applicazioni e firmware per i sistemi di sala e le relative periferiche eseguiti da Microsoft.         |
+|**Insights e consigli**     |Insights l'integrità, l'utilizzo, l'utilizzo e l'affidabilità delle apparecchiature per i clienti.         |
+|**Conformità e certificazioni**   |Soddisfa tutti gli standard applicabili per i Servizi online Microsoft.         |
+|**Supporto tecnico**   |Supporto dei ticket 24x7x365 tramite il centro operativo del servizio gestito (SOC) dedicato Microsoft Teams Rooms. Escalation per conto dell'utente ad altri fornitori primari, se applicabile. Per altre informazioni, vedi [Supporto tecnico](#customer-support).|
+|**Dispositivi supportati**    |Sistemi di Microsoft Teams Rooms certificati e relative periferiche.<br>*Surface Hub supporto in arrivo nel secondo semestre del 2021*        |
+|**Aree geografiche supportate**    |Vedere [Aree geografiche supportate](#supported-regions).        |
+|**Integrazione**    |Integrazione disponibile con Service Now ospitato dal cliente.         |
 
 ## <a name="service-features"></a>Caratteristiche del servizio
 
-Ecco un riepilogo delle funzionalità importanti fornite dal servizio Microsoft Teams Rooms gestito per supportare le funzionalità precedenti.
+Ecco un riepilogo delle caratteristiche importanti fornite dal servizio gestito Microsoft Teams Rooms per supportare le funzionalità precedenti.
 
 |Funzionalità  |Descrizione  |
 |---------|---------|
-|**Gestione dell'inventario**   |Rilevamento dell'inventario delle chat room con un'opzione di esportazione in blocco che elenca i dispositivi, le periferiche, le apparecchiature e i modelli della sala.         |
-|**Registrazione sala**   |Facile onboarding con l'autoregistrazione dei dispositivi della chat room al Microsoft Teams Rooms gestito.          |
-|**Amministrazione chat room**     |Portale clienti per funzionalità di servizi gestiti, approfondimenti, impostazioni amministrative e gestione dei gruppi di chat room.         |
-|**Monitoraggio**    |Monitoraggio dell'integrità di applicazioni, sistemi operativi, periferiche e firmware. Rilevamento automatico degli eventi imprevisti per problemi che interessano le esperienze di riunione a causa di problemi come l'integrità periferica. Panoramica dell'integrità dell'intero spazio immobiliare e degli incidenti tramite il portale Microsoft Teams Rooms servizi gestiti.|
-|**Risoluzione dei problemi e correzione**     |Diagnostica automatizzata e correzione automatica, se applicabile. Microsoft Teams Rooms degli incidenti assistiti da SOC del servizio gestito per i casi non automatizzati. Integrazione service now per il coordinamento degli incidenti.         |
-|**Gestione degli aggiornamenti**   |Orchestrazione automatizzata dell'aggiornamento firmware e dell'applicazione per le riunioni in base a anelli di distribuzione configurabili dal cliente         |
-|**Insights e consigli**   |Utilizzo, eventi imprevisti, integrità e report complessivi (visualizzazioni cronologiche)         |
+|**Gestione dell'inventario**   |Monitoraggio dell'inventario delle sale con un'opzione di esportazione in blocco che elenca i dispositivi della sala, le periferiche, le marche e i modelli.         |
+|**Registrazione sala**   |Facile onboarding con l'autoregistrazione dei dispositivi della sala al servizio gestito Microsoft Teams Rooms.          |
+|**Amministrazione chat room**     |Portale per i clienti per funzionalità del servizio gestito, informazioni dettagliate, impostazioni amministrative e gestione dei gruppi di chat room.         |
+|**Monitoraggio**    |Monitoraggio dell'integrità di applicazioni, sistemi operativi, periferiche e firmware. Rilevamento automatico degli eventi imprevisti per i problemi che influiscono sulle esperienze delle riunioni a causa di problemi come l'integrità delle periferiche. Panoramica dell'integrità dell'intero immobile e degli eventi imprevisti tramite il portale dei servizi gestiti Microsoft Teams Rooms.|
+|**Risoluzione dei problemi e correzione**     |Diagnostica automatica e correzione automatica, se applicabile. Microsoft Teams Rooms correzione degli eventi imprevisti assistiti da SOC del servizio gestito per i casi non automatizzati. Integrazione di Service Now per il coordinamento degli eventi imprevisti.         |
+|**Gestione degli aggiornamenti**   |Orchestrazione automatizzata dell'applicazione riunione e dell'aggiornamento del firmware in base agli anelli di distribuzione configurabili dal cliente         |
+|**Insights e consigli**   |Utilizzo, incidenti, integrità e report generale (visualizzazioni storiche)         |
 
 ## <a name="service-prerequisites"></a>Prerequisiti del servizio
 
-Perché il servizio gestito da Microsoft Teams Rooms mantenga la qualità del servizio, le sale registrate devono essere [Microsoft Teams Rooms](requirements.md#hardware-requirements)dispositivi supportati ed è necessario preparare l'ambiente con tutti gli URL e gli intervalli di indirizzi [IP Office 365](/office365/enterprise/urls-and-ip-address-ranges) necessari completamente consentiti e raggiungibili dai dispositivi delle sale riunioni. Per altre informazioni, vedere [Preparare l'ambiente](rooms-prep.md) nella Microsoft Teams Rooms documentazione.
+Per mantenere la qualità del servizio gestito Microsoft Teams Rooms, le sale registrate devono essere [Microsoft Teams Rooms dispositivi supportati](requirements.md#hardware-requirements) ed è necessario preparare l'ambiente con tutti gli [URL e gli intervalli di indirizzi IP Office 365 necessari](/office365/enterprise/urls-and-ip-address-ranges), completamente consentiti e raggiungibili dai dispositivi delle sale riunioni. Per altre informazioni, vedere [Preparare l'ambiente](rooms-prep.md) nella documentazione di Microsoft Teams Rooms.
 
-In qualità di provider di un servizio gestito, Microsoft deve collaborare con stakeholder responsabili per le sale dell'organizzazione per mantenere le sale sane e recuperare i problemi. L'utente è responsabile dei dispositivi non certificati usati nelle sale riunioni, del software di terze parti o personalizzato scelto per la distribuzione nei dispositivi delle sale riunioni e dell'aderenza alle procedure di gestione delle modifiche consigliate da Microsoft.
+In qualità di provider di un servizio gestito, Microsoft deve collaborare con parti interessate responsabili per le chat room dell'organizzazione per mantenere le stanze integro e recuperare da eventuali problemi. L'utente è responsabile dei dispositivi non certificati usati nelle sale riunioni, di software di terze parti o personalizzati che si è scelto di distribuire nei dispositivi delle sale riunioni e di aderendo alle procedure di gestione delle modifiche consigliate da Microsoft.
 
-L'organizzazione o un partner contratto dall'organizzazione devono essere preparati a correggere i problemi dell'ultimo chilometro rilevati dal servizio.
+L'organizzazione o un partner contrattato dall'organizzazione deve essere pronto a correggere i problemi dell'ultimo miglio rilevati dal servizio.
 
 ## <a name="customer-support"></a>Supporto tecnico
 
-Il Microsoft Teams Rooms gestito è supportato tramite un SOC dedicato Microsoft Teams Rooms servizio gestito. La modalità principale per le comunicazioni dal Microsoft Teams Rooms soc del servizio gestito ai clienti è tramite il portale Microsoft Teams Rooms servizi gestiti. Il Microsoft Teams Rooms soC del servizio gestito fornisce la prima risposta e l'escalation appropriata sui ticket generati dal sistema o dall'organizzazione.
+Il servizio gestito Microsoft Teams Rooms è supportato tramite un SOC dedicato Microsoft Teams Rooms gestito. La modalità principale di comunicazione dal soc del servizio gestito Microsoft Teams Rooms ai clienti è tramite il portale del servizio gestito Microsoft Teams Rooms. Il soc del servizio gestito Microsoft Teams Rooms fornisce la prima risposta e l'escalation appropriata sui ticket generati dal sistema o dall'organizzazione.
 
 |  | Descrizione |
 |---------|---------|
-|**Ambito**   |Gli eventi correlati all'app della sala riunioni, ai dispositivi della sala e alle periferiche sono inclusi nel Microsoft Teams Rooms del servizio gestito.|
-|**Gruppo di destinatari**  |Solo operazioni IT         |
+|**Ambito**   |Gli eventi imprevisti relativi all'app della sala riunioni, ai dispositivi della sala e alle periferiche sono inclusi nel supporto del servizio gestito Microsoft Teams Rooms.|
+|**Pubblico**  |Solo operazioni IT         |
 |**Lingue supportate**    |Inglese         |
 |**Disponibilità del supporto tramite il portale**   | 24X7      |
-|**Tempo di risposta iniziale per il Microsoft Teams Rooms SOC del servizio gestito**   |  4 ore       |
-|**Chiusura automatica dei ticket in caso di inattività dei clienti**    |Ticket avviati dal cliente: 3 giorni lavorativi<br>Ticket avviati dal sistema: 15 giorni lavorativi</li>   </ul>      |
-|**Reindirizzamento al supporto Microsoft più ampio**   |I problemi relativi a un altro prodotto Microsoft esterno all'ambito Microsoft Teams Rooms servizio gestito vengono indirizzati al team di supporto appropriato.         |
-|**Reindirizzamento al supporto OEM (Original Equipment Manufacturer)**    |Il Microsoft Teams Rooms soC del servizio gestito aiuta a comprendere il problema e, se applicabile, aiuta a coordinare il supporto con l'OEM. In alcuni casi, l'utente potrebbe essere responsabile dell'impegno diretto con l'OEM.         |
+|**Tempo di risposta iniziale per il SOC del servizio gestito Microsoft Teams Rooms**   |  4 ore       |
+|**Chiusura automatica dei biglietti in caso di inattività del cliente**    |Ticket avviati dal cliente: 3 giorni lavorativi<br>Ticket avviati dal sistema: 15 giorni lavorativi</li>   </ul>      |
+|**Reindirizzamento a supporto tecnico Microsoft più ampie**   |I problemi relativi a un altro prodotto Microsoft al di fuori dell'ambito del servizio gestito Microsoft Teams Rooms vengono indirizzati al team di supporto appropriato.         |
+|**Reindirizzamento al supporto OEM (Original Equipment Manufacturer)**    |Il soc del servizio gestito Microsoft Teams Rooms funziona per comprendere il problema e, se applicabile, aiuta a coordinare il supporto con l'OEM. In alcuni casi, l'utente potrebbe essere responsabile di interagire direttamente con l'OEM.         |
 
-Tenere inoltre presente che il Microsoft Teams Rooms soc del servizio gestito assisterà le operazioni IT nell'organizzazione e non sostituirà i servizi di help desk per gli utenti finali.
+Tenere inoltre presente che il soc del servizio gestito Microsoft Teams Rooms assisterà le operazioni IT nell'organizzazione e non sostituirà i servizi di help desk per gli utenti finali.
 
-Per altre informazioni sulla copertura del Microsoft Teams Rooms del supporto dei servizi gestiti, vedere [Inclusioni ed esclusioni del supporto.](#support-inclusions-and-exclusions)
+Per altri dettagli sulla copertura del supporto del servizio gestito Microsoft Teams Rooms, vedi [Inclusioni ed esclusioni del supporto](#support-inclusions-and-exclusions).
 
 ## <a name="supported-regions"></a>Aree geografiche supportate
 
-La Microsoft Teams Rooms Premium è disponibile in tutti i paesi e le aree geografiche in Microsoft 365 disponibili. Per un elenco completo dei paesi e delle aree geografiche, vedere Microsoft 365 [disponibilità internazionale.](https://www.microsoft.com/microsoft-365/business/international-availability)
+La licenza Microsoft Teams Rooms Premium è disponibile nei seguenti paesi con audioconferenza:
+
+- Australia, Austria, Belgio, Brasile, Bulgaria, Canada, Croazia, Cipro, Danimarca, Estonia, Finlandia, Francia, Germania, Grecia, Ras di Hong Kong, Irlanda, Italia, Giappone, Lettonia, Lituania, Lussemburgo, Malta, Messico, Monaco, Paesi Bassi, Nuova Zelanda, Norvegia, Polonia, Portogallo, Romania, Russia, Singapore, Slovacchia, Slovenia, Sudafrica, Spagna, Svezia, Svizzera, Taiwan, Regno Unito, Stati Uniti.
+
+La licenza Microsoft Teams Rooms Premium è disponibile nei paesi seguenti senza audioconferenza:
+
+- Azzorre, Isola Bouvet, Isola Christmas, Isole Cocos (Keeling), Isole Cook, Isole Fær Øer, Figi, Gibilterra, Groenlandia, Isole Heard e McDonald, Islanda, India, Kiribati, Lesotho, Liechtenstein, Macao R.A.S., Isole Marshall, Micronesia, Nauru, Niue, Isola Norfolk, Isole Marianne settentrionali, Palau, Papua Nuova Guinea, Isole Pitcairn, Saint Pierre e Miquelon, Samoa, San Marino, Isole Salomone, Hawaii, Tokelau, Tonga, Tuvalu,  Vanuatu, Città del Vaticano, Wallis e Futuna.
 
 ## <a name="support-inclusions-and-exclusions"></a>Supportare inclusioni ed esclusioni
 
 
-|Elementi inclusi |Elementi esclusi |Canali di supporto per gli elementi esclusi  |
+|Contenuto |Elementi esclusi |Canali di supporto per gli elementi esclusi  |
 |---------|---------|---------|
 |**Configurazione del servizio**   |         |         |
-|Analisi e indicazioni per la configurazione Microsoft Teams Rooms Windows, tra cui le Microsoft Teams Rooms delle app, la configurazione di rete di prima parte, la configurazione del software di prima parte e le impostazioni e la configurazione consigliate per l'alimentazione.     |Eventuali configurazioni e indagini di software di terze parti che non fanno direttamente parte dell'app Microsoft Teams Room. Inoltre, tutte le configurazioni specifiche dell'OEM che richiedono la configurazione all'esterno delle finestre di terze parti o Microsoft Teams impostazioni dell'app Room.         |Canali di supporto standard di terze parti         |
+|Analisi e indicazioni per la configurazione Microsoft Teams Rooms Windows, tra cui le impostazioni delle app Microsoft Teams Rooms, la configurazione di rete di prima parte, la configurazione software di prima parte e le impostazioni di risparmio energia consigliate e la configurazione.     |Eventuali configurazioni software di terze parti e indagini che non fanno direttamente parte dell'app Microsoft Teams Room. Inoltre, eventuali configurazioni specifiche di OEM che richiedono la configurazione all'esterno delle finestre di prima parte o Microsoft Teams impostazioni dell'app Sala.         |Canali di supporto standard di terze parti         |
 |**Configurazione dell'account della sala**    |         |         |
-|Orientamento alla documentazione disponibile per la configurazione dell'account della sala su richiesta. Per i problemi di accesso o di configurazione dell'account, viene eseguita un'indagine iniziale.     |Esecuzione di correzioni consigliate o problemi con l'esecuzione di correzioni consigliate, la configurazione di provider di autenticazione di terze parti e la configurazione delle funzionalità per singoli account.        |Supporto mainstream Microsoft e supporto di provider di autenticazione di terze parti         |
+|Indicazioni per la documentazione disponibile per la configurazione dell'account della sala su richiesta. Per i problemi di accesso o di configurazione dell'account, viene eseguita l'indagine iniziale.     |Esecuzione di correzioni consigliate o problemi di esecuzione della correzione consigliata, configurazione di provider di autenticazione di terze parti e configurazione delle funzionalità per singoli account.        |Supporto Mainstream Microsoft e supporto del provider di autenticazione di terze parti         |
 |**Supporto per le periferiche**    |         |         |
-|Le indagini iniziali vengono eseguite per le periferiche certificate, ad esempio fotocamere, microfoni e altoparlanti.    |Problemi che non vengono risolti applicando configurazioni standard o che coinvolgono un'applicazione di terze parti.         |Supporto OEM         |
-|**RMA e sostituzione di dispositivi**   |         |         |
-|Le indagini iniziali vengono eseguite per le periferiche certificate, ad esempio fotocamere, microfoni e altoparlanti. La consegna al supporto OEM viene eseguita per l'OEM per soddisfare la richiesta di sostituzione o garanzia.    |Approvvigionamento, spedizione o installazione di sostituzioni.         |Supporto OEM         |
-|**Analisi delle cause radice**     |         |         |
-|Tutte le cause principali dei problemi riscontrati nell'esperienza della sala riunioni vengono fornite quando sono disponibili, ma vengono eseguite in modo ottimale.     |Non è inclusa l'analisi delle cause principali per problemi di software di terze parti.         |Canali di supporto standard di terze parti         |
+|Le indagini iniziali vengono eseguite per periferiche certificate, ad esempio fotocamere, microfoni e altoparlanti.    |Problemi che non vengono risolti applicando configurazioni standard o che coinvolgono un'applicazione di terze parti.         |Supporto OEM         |
+|**RMA e sostituzione del dispositivo**   |         |         |
+|Le indagini iniziali vengono eseguite per periferiche certificate, ad esempio fotocamere, microfoni e altoparlanti. Il trasferimento al supporto OEM viene eseguito per l'OEM per soddisfare la richiesta di sostituzione o garanzia.    |Approvvigionamento, spedizione o installazione di sostituzioni.         |Supporto OEM         |
+|**Analisi delle cause principali**     |         |         |
+|Tutte le cause principali dei problemi riscontrati nell'esperienza della sala riunioni vengono fornite quando disponibili, ma vengono eseguite in base alle capacità.     |L'analisi delle cause radice per i problemi software di terze parti non è inclusa.         |Canali di supporto standard di terze parti         |
 |**Esperienza di riunione**   |         |         |
-|L'analisi dei problemi all'interno delle impostazioni della riunione nell'app Microsoft Teams Rooms e le indicazioni per configurare correttamente la qualità del servizio nel dispositivo vengono fornite su richiesta.      |L'analisi delle cause radice o le indagini per problemi di qualità delle chiamate o problemi correlati alla rete sono esclusi da questo ambito.         |Supporto mainstream Microsoft         |
-|**Correzione, onboarding e in corso**     |         |         |
-|I clienti ricevono indicazioni per portare le proprie sale a standard consigliati Microsoft Teams Rooms servizio gestito all'onboarding    |Le indagini relative a immagini software personalizzate all'interno o non conformi alle indicazioni sulla versione del software consigliate Microsoft Teams Rooms non sono nell'ambito del servizio gestito.   | |       
+|L'analisi dei problemi nelle impostazioni della riunione in Microsoft Teams Rooms'app e le indicazioni per la configurazione corretta della qualità del servizio nel dispositivo vengono fornite su richiesta.      |Le indagini o l'analisi della causa radice per problemi di qualità delle chiamate o di rete sono escluse da questo ambito.         |Supporto Mainstream Microsoft         |
+|**Correzioni, onboarding e in corso**     |         |         |
+|I clienti ricevono indicazioni per applicare gli standard consigliati dal servizio gestito Microsoft Teams Rooms all'onboarding    |Le indagini relative alle immagini software personalizzate interne o non conformi alle indicazioni sulle versioni del software consigliate di Microsoft Teams Rooms servizio gestito non rientrano nell'ambito.   | |       
 
 ## <a name="data-collection"></a>Raccolta dei dati
 
-Il Microsoft Teams Rooms gestito monitora i dispositivi, raccoglie i dati dei dispositivi e consente a Microsoft di accedere e gestire in remoto i dispositivi della sala. Il Microsoft Teams Rooms gestito non accede al contenuto live di una riunione.
+Il servizio gestito Microsoft Teams Rooms monitora i dispositivi, raccoglie i dati dei dispositivi e consente a Microsoft di accedere e gestire in remoto i dispositivi della sala. Il servizio gestito Microsoft Teams Rooms non accede al contenuto live di una riunione.
 
-I dati raccolti sono specifici di un account della chat room, non di un singolo utente. I riferimenti incidentali a un singolo utente possono essere presenti nel log attività durante l'uso del dispositivo. I dati raccolti vengono elaborati da Microsoft in conformità [all'Informativa sulla privacy Microsoft.](https://aka.ms/privacy)  
+I dati raccolti sono specifici di un account della chat room, non di un singolo utente. Riferimenti accidentali a un singolo utente possono essere presenti nel log attività durante l'uso del dispositivo. I dati raccolti vengono elaborati da Microsoft in conformità [all'Informativa sulla privacy di Microsoft](https://aka.ms/privacy).  
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Microsoft Teams Rooms gestito](https://rooms.microsoft.com)
+- [servizio gestito Microsoft Teams Rooms](https://rooms.microsoft.com)

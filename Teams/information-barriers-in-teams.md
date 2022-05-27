@@ -16,16 +16,16 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e57686e2decb5b2d663f75f1ad7884220a9ff4c2
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: 38698179e2a3b4c6ca402190c98f89f329820d6e
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922807"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65675408"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Ostacoli all'informazione in Microsoft Teams
 
-[Microsoft Purview Information Barriers](/microsoft-365/compliance/information-barriers) (IB) sono criteri che un amministratore può configurare per impedire a singoli utenti o gruppi di comunicare tra loro. Gli indirizzi IB sono utili, ad esempio, se un reparto gestisce informazioni che non devono essere condivise con altri reparti. Gli indirizzi IB sono utili anche quando un gruppo deve essere isolato o impedito di comunicare con chiunque all'esterno di tale gruppo. I canali condivisi in Microsoft Teams sono supportati da barriere informative. A seconda del tipo di condivisione, i criteri sugli ostacoli alle informazioni possono limitare la condivisione in determinati modi. Per altre informazioni sul comportamento degli ostacoli ai canali condivisi e alle informazioni, vedere [Barriere alle informazioni e Canali condivisi](information-barriers-shared-channels.md).
+[Microsoft Purview barriere informative](/microsoft-365/compliance/information-barriers) sono criteri che un amministratore può configurare per impedire a singoli utenti o gruppi di comunicare tra loro. Gli indirizzi IB sono utili, ad esempio, se un reparto gestisce informazioni che non devono essere condivise con altri reparti. Gli indirizzi IB sono utili anche quando un gruppo deve essere isolato o impedito di comunicare con chiunque all'esterno di tale gruppo. I canali condivisi in Microsoft Teams sono supportati da barriere informative. A seconda del tipo di condivisione, i criteri sugli ostacoli alle informazioni possono limitare la condivisione in determinati modi. Per altre informazioni sul comportamento degli ostacoli ai canali condivisi e alle informazioni, vedere [Barriere alle informazioni e Canali condivisi](information-barriers-shared-channels.md).
 
 Per Microsoft Teams, gli ostacoli alle informazioni possono determinare e impedire i seguenti tipi di collaborazione non autorizzata:
 
@@ -67,14 +67,14 @@ Il servizio di valutazione dei criteri information barrier determina se una comu
 
 ## <a name="managing-information-barrier-policies"></a>Gestione dei criteri di barriera delle informazioni
 
-I criteri IB vengono gestiti nel portale di conformità Di Microsoft Purview (SCC) usando i cmdlet di PowerShell. Per altre informazioni, vedere [Definire i criteri per gli ostacoli alle informazioni](/office365/securitycompliance/information-barriers-policies).
+I criteri IB vengono gestiti nel Portale di conformità di Microsoft Purview (SCC) usando i cmdlet di PowerShell. Per altre informazioni, vedere [Definire i criteri per gli ostacoli alle informazioni](/office365/securitycompliance/information-barriers-policies).
 
 >[!IMPORTANT]
 >Prima di configurare o definire criteri, è necessario abilitare la ricerca nella directory con ambito in Microsoft Teams. Attendere almeno alcune ore dopo aver abilitato la ricerca nella directory con ambito prima di configurare o definire i criteri per le barriere informative. Per altre informazioni, vedere [Definire criteri di barriera delle informazioni](/office365/securitycompliance/information-barriers-policies#prerequisites).
 
 ## <a name="information-barriers-administrator-role"></a>Ruolo di amministratore degli ostacoli alle informazioni
 
-Il ruolo Gestione conformità IB è responsabile della gestione dei criteri IB. Per altre informazioni su questo ruolo, vedere [Autorizzazioni nel portale di conformità Microsoft Purview](/office365/securitycompliance/permissions-in-the-security-and-compliance-center).
+Il ruolo Gestione conformità IB è responsabile della gestione dei criteri IB. Per altre informazioni su questo ruolo, vedere [Autorizzazioni nel Portale di conformità di Microsoft Purview](/office365/securitycompliance/permissions-in-the-security-and-compliance-center).
 
 ## <a name="information-barrier-triggers"></a>Attivazioni di barriere informative
 

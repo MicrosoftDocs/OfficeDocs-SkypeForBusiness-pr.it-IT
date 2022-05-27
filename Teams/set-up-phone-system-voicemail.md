@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare Cloud Voicemail per gli utenti.
-ms.openlocfilehash: 96c96f85625d0cda7e6d7a28a59d6c9415f2bb79
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: 6a75856954da509677a1c9ccdb54e34055f171ed
+ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922627"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65681407"
 ---
 # <a name="set-up-cloud-voicemail"></a>Configurare Cloud Voicemail
 
@@ -67,7 +67,7 @@ Per gestire le funzionalità di Cloud Voicemail per gruppi di utenti, utilizzare
 È possibile configurare e assegnare criteri di segreteria telefonica esistenti o nuovi per funzionalità come le regole di risposta alle chiamate, la trascrizione della segreteria telefonica, il mascheramento delle trascrizioni, la traduzione della trascrizione e il linguaggio prompt del sistema. Per ulteriori informazioni, vedi [New-CsOnlineVoicemailPolicy](/powershell/module/skype/new-csonlinevoicemailpolicy).
 
 Per gestire le impostazioni di Cloud Voicemail per singoli utenti, utilizza il cmdlet [Set-CsOnlineVoicemailUserSettings](/powershell/module/skype/set-csonlinevoicemailusersettings). Cloud Voicemail impostazioni che è possibile applicare ai singoli utenti includono le regole di risposta alle chiamate, la lingua prompt, l'impostazione predefinita per il testo in sintesi vocale e il messaggio di saluto delle vacanze. Per ulteriori informazioni, vedi [Set-CsOnlineVoicemailUserSettings](/powershell/module/skype/set-csonlinevoicemailusersettings).
-Si noti che gli utenti finali possono anche configurare queste impostazioni nel client Teams passando a **Impostazioni** ->  **CallsConfigure** ->  **Voicemail**.
+Gli utenti finali possono anche configurare queste impostazioni nel client Teams accedendo a **Impostazioni** ->  **Calls** -> **Configure Voicemail**.
 
 Puoi anche disabilitare Cloud Voicemail per un utente utilizzando il cmdlet [Set-CsOnlineVoicemailUserSettings](/powershell/module/skype/set-csonlinevoicemailusersettings) e impostando il parametro VoicemailEnabled su $false. Questa impostazione garantisce che Cloud Voicemail non possa più registrare un messaggio vocale per l'utente.
 
@@ -75,7 +75,7 @@ Puoi anche disabilitare Cloud Voicemail per un utente utilizzando il cmdlet [Set
 
 L'impostazione predefinita per tutti gli utenti di cui è stato eseguito il provisioning per Cloud Voicemail è consentire il routing delle chiamate a Cloud Voicemail e consentire agli utenti di inoltrare le chiamate a Cloud Voicemail.
 
-È possibile controllare se il routing delle chiamate a Cloud Voicemail è consentito agli utenti Teams usando il cmdlet Set-CsTeamsCallingPolicy con il parametro AllowVoicemail. Per ulteriori informazioni,  [vedereSet-CsTeamsCallingPolicy](/powershell/module/skype/set-csteamscallingpolicy).
+È possibile controllare se il routing delle chiamate a Cloud Voicemail è consentito agli utenti Teams usando il cmdlet Set-CsTeamsCallingPolicy con il parametro AllowVoicemail. Per ulteriori informazioni, vedere [Set-CsTeamsCallingPolicy](/powershell/module/skype/set-csteamscallingpolicy).
 
 - Se si imposta AllowVoicemail su AlwaysDisabled, le chiamate non vengono mai indirizzate alla segreteria telefonica, indipendentemente dalle impostazioni di inoltro di chiamata o senza risposta per un utente. La segreteria telefonica non è disponibile come impostazione di inoltro di chiamata o senza risposta in Teams.
 
@@ -99,36 +99,34 @@ Le informazioni seguenti riguardano la configurazione di Cloud Voicemail per l'u
 
 ## <a name="enable-protected-voicemail-in-your-organization"></a>Abilitare la segreteria telefonica protetta nell'organizzazione
 
-Quando un utente lascia un messaggio della segreteria telefonica per un utente dell'organizzazione, il messaggio viene recapitato alla cassetta postale dell'utente come allegato di un messaggio di posta elettronica. 
+Quando un utente lascia un messaggio della segreteria telefonica per un utente dell'organizzazione, il messaggio viene recapitato alla cassetta postale dell'utente come allegato di un messaggio di posta elettronica.
 
-Usando Microsoft Purview Information Protection, è possibile crittografare i messaggi vocali lasciati dai chiamanti interni ed esterni. È anche possibile impedire all'utente di inoltrare questi messaggi. Questa caratteristica è supportata per gli utenti con cassette postali Exchange Online.
+Usando Microsoft Purview Information Protection, è possibile crittografare i messaggi della segreteria telefonica lasciati dai chiamanti sia interni che esterni. È anche possibile impedire all'utente di inoltrare questi messaggi. Questa caratteristica è supportata per gli utenti con cassette postali Exchange Online.
 
-Per crittografare il messaggio della segreteria telefonica, è possibile creare un'etichetta di riservatezza. Con la funzionalità di etichettatura automatica, è possibile fare in modo che l'etichetta venga applicata automaticamente ai messaggi della segreteria telefonica in arrivo. 
+Per crittografare il messaggio della segreteria telefonica, è possibile creare un'etichetta di riservatezza. Con la funzionalità di etichettatura automatica, è possibile fare in modo che l'etichetta venga applicata automaticamente ai messaggi della segreteria telefonica in arrivo.
 
 Quando si abilita la segreteria telefonica protetta, gli utenti possono ascoltare i messaggi della segreteria telefonica protetti chiamando nella propria cassetta postale della segreteria telefonica o aprendo il messaggio in Outlook, Outlook sul web o Outlook per Android o iOS. I messaggi della segreteria telefonica protetti non possono essere aperti in Microsoft Teams o Skype for Business.
 
-Per creare un'etichetta di riservatezza per la segreteria telefonica, vedere [Usare le etichette di riservatezza](/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#let-users-assign-permissions). Nella sezione **Crittografia** scegliere **Consenti agli utenti di assegnare le autorizzazioni quando applicano l'etichetta**. Selezionare **In Outlook applicare una delle limitazioni seguenti** e quindi selezionare l'opzione **Non inoltrare**.
+Per creare un'etichetta di riservatezza per la segreteria telefonica, vedere [Usare le etichette di riservatezza](/microsoft-365/compliance/encryption-sensitivity-labels#let-users-assign-permissions). Nella sezione **Crittografia** scegliere **Consenti agli utenti di assegnare le autorizzazioni quando applicano l'etichetta**. Selezionare **In Outlook applicare una delle limitazioni seguenti** e quindi selezionare l'opzione **Non inoltrare**.
 
-Per creare il criterio di etichettatura automatica per applicare un'etichetta di riservatezza alla segreteria telefonica, vedere [Come configurare i criteri di etichettatura automatica](/microsoft-365/compliance/apply-sensitivity-label-automatically?view=o365-worldwide#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) e specificare le impostazioni specifiche seguenti:
+Per creare il criterio di etichettatura automatica per applicare un'etichetta di riservatezza alla segreteria telefonica, vedere [Come configurare i criteri di etichettatura automatica](/microsoft-365/compliance/apply-sensitivity-label-automatically#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) e specificare le impostazioni specifiche seguenti:
 
--   Per **Scegliere le informazioni a cui si vuole applicare l'etichetta**, selezionare **Criteri personalizzati**.
+- Per **Scegliere le informazioni a cui si vuole applicare l'etichetta**, selezionare **Criteri personalizzati**.
 
--   Per **Scegliere i percorsi in cui applicare l'etichetta**, selezionare **Posizioni: Exchange per tutti gli utenti**.
+- Per **Scegliere i percorsi in cui applicare l'etichetta**, selezionare **Posizioni: Exchange per tutti gli utenti**.
 
--   In  **Configura regole comuni o avanzate** seleziona **Regole avanzate**.
+- In  **Configura regole comuni o avanzate** seleziona **Regole avanzate**.
 
 - Exchange regole:
-    - Condizioni:<br>
-        - **Intestazione corrisponde a schema:**<br>
-              Content-Class = Voice-CA
-       -  **L'indirizzo IP del mittente è:**<br>
-               13.107.64.0/18, 52.112.0.0/14, 52.120.0.0/14, 52.238.119.141/32, 52.244.160.207/32
+  - Condizioni:
+    - **Schema delle corrispondenze dell'intestazione**: Content-Class = Voice-CA
+    - **L'indirizzo IP del mittente è**: 13.107.64.0/18, 52.112.0.0/14, 52.120.0.0/14, 52.238.119.141/32, 52.244.160.207/32
 
 - Per **Scegli un'etichetta da applicare automaticamente**, seleziona l'etichetta di riservatezza creata per la segreteria telefonica nel passaggio precedente.
 
-- Per **altre impostazioni per la posta elettronica**, selezionare **Applica crittografia ai messaggi ricevuti dall'esterno dell'organizzazione** e specificare il proprietario di Rights Management.
+- Per **altre impostazioni per la posta elettronica**, selezionare **Applica crittografia ai messaggi ricevuti dall'esterno dell'organizzazione** e specificare il proprietario Rights Management.
 
-Gli intervalli IP V4 specificati in Indirizzo IP mittente si basano sull'elenco in ID 12 in [Office 365 URL e intervalli di indirizzi IP](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams).
+Gli intervalli IP V4 specificati in Indirizzo IP mittente si basano sull'elenco in ID 12 in [Office 365 URL e intervalli di indirizzi IP](/microsoft-365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
 
 Per altre informazioni sulla crittografia dei messaggi, vedere [Definire le regole del flusso di posta elettronica per crittografare i messaggi di posta elettronica](/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
 

@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 207164f3e16768b7643d2bba2177d52d6b3940f3
-ms.sourcegitcommit: 7d5266ae7e4a440ee45ab1873a30f4056bdcca1f
+ms.openlocfilehash: a89f2ac8fc94505ec0d97bb426bc8fc92901aa52
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2022
-ms.locfileid: "65031921"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65675308"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Condurre un'indagine di eDiscovery sul contenuto in Microsoft Teams
 
@@ -36,27 +36,26 @@ La eDiscovery dei messaggi e dei file nei [canali privati](private-channels.md) 
 
 Non tutto il contenuto Teams è eDiscoverable. La tabella seguente mostra i tipi di contenuto che è possibile cercare con gli strumenti di Microsoft eDiscovery:
 
-| Tipo di contenuto | eDiscoverable | Note |
-|:--- | :--- |:--- |
-|Registrazioni audio | No | |
+|Tipo di contenuto|eDiscoverable|Note|
+|---|---|---|
+|Registrazioni audio|No||
 |Contenuto della scheda|Sì|Per altre informazioni, vedere [Cercare contenuto della scheda](#search-for-card-content) .|
-|Collegamenti chat | Sì | |
-|Messaggi in chat | Sì |Sono inclusi i contenuti nei canali Teams standard, le chat 1:1, le chat di gruppo 1:N e le chat con i partecipanti degli utenti guest.  |
-|Frammenti di codice | No | |
-|Messaggi modificati | Sì | Se l'utente ha un blocco, vengono mantenute anche le versioni precedenti dei messaggi modificati. |
-|Emoji, GIF e adesivi | Sì | |
-|Notifiche di feed | No | |
-|Immagini incorporate | Sì | |
-|Loop componenti| Sì|Il contenuto di un componente di ciclo viene salvato in un file .fluid archiviato nell'account OneDrive for Business dell'utente che invia il componente di ciclo. Questo significa che è necessario includere OneDrive come origine dati durante la ricerca di contenuto nei componenti di ciclo. |
-|Conversazioni istantanee della riunione | Sì | |
-|Metadati della <sup>riunione1</sup> | Sì |  |
-|Nome del canale | Sì | |
-|Messaggi di chat del canale privato e condiviso | Sì | |
-|Citazioni | Sì | Il contenuto tra virgolette è ricercabile. Tuttavia, i risultati della ricerca non indicano che il contenuto è stato citato. |
-|Reazioni (come Mi piace, cuori e altre reazioni) | No | |
-|Oggetto | Sì | |
-|Tabelle | Sì | |
-||||
+|Collegamenti chat|Sì||
+|Messaggi in chat|Sì|Sono inclusi i contenuti nei canali Teams standard, le chat 1:1, le chat di gruppo 1:N e le chat con i partecipanti degli utenti guest.|
+|Frammenti di codice|No||
+|Messaggi modificati|Sì|Se l'utente ha un blocco, vengono mantenute anche le versioni precedenti dei messaggi modificati.|
+|Emoji, GIF e adesivi|Sì||
+|Notifiche di feed|No||
+|Immagini incorporate|Sì||
+|Loop componenti|Sì|Il contenuto di un componente di ciclo viene salvato in un file .fluid archiviato nell'account OneDrive for Business dell'utente che invia il componente di ciclo. Questo significa che è necessario includere OneDrive come origine dati durante la ricerca di contenuto nei componenti di ciclo.|
+|Conversazioni istantanee della riunione|Sì||
+|Metadati della riunione<sup>1</sup>|Sì||
+|Nome del canale|Sì||
+|Messaggi di chat del canale privato e condiviso|Sì||
+|Citazioni|Sì|Il contenuto tra virgolette è ricercabile. Tuttavia, i risultati della ricerca non indicano che il contenuto è stato citato.|
+|Reazioni (come Mi piace, cuori e altre reazioni)|No||
+|Oggetto|Sì||
+|Tabelle|Sì||
 
 <sup>1</sup> I metadati di una riunione (e chiamata) includono quanto segue:
 
@@ -174,9 +173,9 @@ Prima di eseguire questa procedura, [installare SharePoint Online Management She
 
 Per cercare contenuto per gli utenti guest:
 
-1. Connessione a Azure AD PowerShell. Per istruzioni, vedere la sezione "Connessione con Azure Active Directory PowerShell" in [Connessione per Microsoft 365 con PowerShell](/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module). Assicurarsi di completare i passaggi 1 e 2 dell'articolo precedente.
+1. Connessione ad Azure AD PowerShell. Per istruzioni, vedere la sezione "Connessione con Azure Active Directory PowerShell" in [Connessione per Microsoft 365 con PowerShell](/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module). Assicurarsi di completare i passaggi 1 e 2 dell'articolo precedente.
 
-2. Dopo la connessione a Azure AD PowerShell, eseguire il comando seguente per visualizzare il nome dell'entità utente (UPN) per tutti gli utenti guest dell'organizzazione. È necessario usare l'UPN dell'utente guest quando si crea la ricerca nel passaggio 4.
+2. Dopo la connessione a PowerShell di Azure AD, eseguire il comando seguente per visualizzare il nome dell'entità utente (UPN) per tutti gli utenti guest dell'organizzazione. È necessario usare l'UPN dell'utente guest quando si crea la ricerca nel passaggio 4.
 
    ```powershell
    Get-AzureADUser -Filter "userType eq 'Guest'" -All $true | FL UserPrincipalName
@@ -207,7 +206,7 @@ Per cercare contenuto per gli utenti guest:
    Start-ComplianceSearch <search name>
    ```
 
-6. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e quindi fare clic su **Mostra ricerca contenuto** > **.**
+6. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e quindi fare clic su **Mostra tutta la** > **ricerca contenuto**.
 
 7. Nell'elenco delle ricerche selezionare la ricerca creata nel passaggio 4 per visualizzare la pagina a comparsa.
 
@@ -234,11 +233,11 @@ Quando si visualizza il contenuto della scheda nei risultati della ricerca conte
 ![Contenuto della scheda nel messaggio di Teams canale.](media/CardContentTeams.png)
 
 ### <a name="card-content-in-search-results"></a>Contenuto della scheda nei risultati della ricerca
-  
+
 ![Stesso contenuto della scheda nei risultati di una ricerca contenuto.](media/CardContentEdiscoverySearchResults.png)
 
 > [!NOTE]
-> Per visualizzare immagini dal contenuto della scheda nei risultati della ricerca in questo momento (ad esempio i segni di spunta nello screenshot precedente), è necessario accedere a Teams (https://teams.microsoft.com)in una scheda diversa nella stessa sessione del browser usata per visualizzare i risultati della ricerca. In caso contrario, vengono visualizzati i segnaposto per le immagini.
+> Per visualizzare immagini dal contenuto della scheda nei risultati della ricerca in questo momento (ad esempio i segni di spunta nello screenshot precedente), è necessario accedere a Teams (in <https://teams.microsoft.com>) in una scheda diversa nella stessa sessione del browser usata per visualizzare i risultati della ricerca. In caso contrario, vengono visualizzati i segnaposto per le immagini.
 
 ## <a name="ediscovery-in-federated-and-non-federated-environments"></a>eDiscovery in ambienti federati e non federati
 

@@ -1,5 +1,5 @@
 ---
-title: Configurazione dell'amministratore dei genitori in Teams per l'istruzione
+title: Amministrazione configurazione di Genitori in Teams per l'istruzione
 author: DaniEASmith
 ms.author: danismith
 manager: serdars
@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1f08ddd68d036d18e4ea18073dd0711e32e0c91e
-ms.sourcegitcommit: 0c7d199b2f7580dbfa8ce755eda97ec70bc86978
+ms.openlocfilehash: ccc69a07d523b046298643ad387e31e25138096f
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393870"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65676128"
 ---
 # <a name="set-up-parent-connection-in-microsoft-teams-for-education"></a>Configurare la connessione padre in Microsoft Teams per l'istruzione
 
@@ -102,8 +102,8 @@ I docenti possono bloccare un tutore nella chat avviata nella connessione padre.
 
 Il proprietario della classe può:
 
-1. Apri la scheda del profilo del tutore, seleziona i puntini di sospensione e **Blocca utente**. 
-2. Quindi, rimuovi il tutore dalla chat. 
+1. Apri la scheda del profilo del tutore, seleziona i puntini di sospensione e **Blocca utente**.
+2. Quindi, rimuovi il tutore dalla chat.
 
 L'utente bloccato non sarà in grado di avviare altre chat con il proprietario della classe.
 

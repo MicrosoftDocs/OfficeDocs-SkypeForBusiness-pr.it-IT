@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: jastark, kojika
 audience: admin
-description: Informazioni sulla preparazione della rete delL’organizzazione per Microsoft Teams, tra cui requisiti di rete, ottimizzazione della rete e requisiti di larghezza di banda.
+description: Informazioni sulla preparazione della rete dell’organizzazione per Microsoft Teams, tra cui requisiti di rete, ottimizzazione della rete e requisiti di larghezza di banda.
 ms.localizationpriority: high
 search.appverid: MET150
 ms.collection:
@@ -19,20 +19,20 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: 8a8e8b21bb3b224586ef7e74f971059070d0a74c
-ms.sourcegitcommit: bd05783dfb33a63e0eb083a2135f97d110dc81a3
+ms.openlocfilehash: d530cc3947c738753f053d126ded1dd77b815009
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2022
-ms.locfileid: "65059297"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65676398"
 ---
-# <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
+# <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams
 
 ## <a name="network-requirements"></a>Requisiti di rete
 
 Se la rete è già [ottimizzata per Microsoft 365 o Office 365](/Office365/Enterprise/assessing-network-connectivity), è probabile che sia pronta per Microsoft Teams. In ogni caso, e soprattutto se stai implementando rapidamente Teams come primo carico di lavoro di Microsoft 365 o Office 365 per supportare i **lavoratori remoti**, verifica quanto segue prima di iniziare a implementare Microsoft Teams:
 
-1.  Le sedi della tua organizzazione hanno accesso a Internet (in modo che possano connettersi a Microsoft 365 o Office 365)? Oltre al normale traffico Web, verifica di aver aperto le porte TCP e gli indirizzi IP elencati per Teams negli [gli URL e gli intervalli di indirizzi IP di Office 365](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
+1. Le sedi della tua organizzazione hanno accesso a Internet (in modo che possano connettersi a Microsoft 365 o Office 365)? Oltre al normale traffico Web, verifica di aver aperto le porte TCP e gli indirizzi IP elencati per Teams negli [gli URL e gli intervalli di indirizzi IP di Office 365](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
 
     > [!IMPORTANT]
     > Se è necessario attuare la federazione con Skype for Business, sia locale che online, è necessario configurare un record DNS aggiuntivo.
@@ -40,14 +40,14 @@ Se la rete è già [ottimizzata per Microsoft 365 o Office 365](/Office365/Enter
     >|Record DNS  |Servizio  |Protocol  |Priority  |Peso  |Port  |Target  |
     >|---------|---------|---------|---------|---------|---------|---------|
     >|SRV     |sipfederationtls     |TCP     |100     |1     |5061     |sipfed.online.lync.com     |
-    
-2.  Si dispone di un dominio verificato per Microsoft 365 o Office 365 (ad esempio, contoso.com)?
-    
+
+2. Si dispone di un dominio verificato per Microsoft 365 o Office 365 (ad esempio, contoso.com)?
+
     - Se l’organizzazione non ha implementato Microsoft 365 o Office 365, consulta la [Guida introduttiva](/microsoft-365/admin/admin-overview/get-started-with-office-365).
     - Se l’organizzazione non ha aggiunto o configurato un dominio verificato per Microsoft 365 o Office 365, consulta le [Domande frequenti sui domini](/microsoft-365/admin/setup/domains-faq).
 
-3.  L’organizzazione ha implementato Exchange Online e Microsoft SharePoint Online?
-    
+3. L’organizzazione ha implementato Exchange Online e Microsoft SharePoint Online?
+
     - Se l’organizzazione non ha implementato Exchange Online, vedi [Informazioni su come interagiscono Exchange e Microsoft Teams](exchange-teams-interact.md).
     - Se l’organizzazione non ha implementato SharePoint Online, vedi [Informazioni su come Microsoft SharePoint Online e Microsoft OneDrive for Business interagiscono con Microsoft Teams](sharepoint-onedrive-interact.md).
 
@@ -55,12 +55,12 @@ Dopo aver verificato che i requisiti di rete siano soddisfatti, è possibile [im
 
 > [!IMPORTANT]
 > **Per gli istituti di istruzione**: se l’organizzazione è un istituto di istruzione e si utilizza un sistema informativo degli studenti (SIS), [implementare School Data Sync](/schooldatasync/) prima di implementare Microsoft Teams.
->  
+>
 > **Esecuzione in locale di Skype for Business Server**: se l'organizzazione esegue Skype for Business Server (o Lync Server) in locale, è necessario [configurare Azure AD Connect](/skypeforbusiness/hybrid/configure-azure-ad-connect) per sincronizzare la directory locale con Microsoft 365 o Microsoft Office 365.
 
-### <a name="best-practice-monitor-your-network-using-cqd-and-call-analytics"></a>Procedura consigliata: monitorare la rete utilizzando Dashboard Qualità della chiamata e Analisi delle chiamate 
+### <a name="best-practice-monitor-your-network-using-cqd-and-call-analytics"></a>Procedura consigliata: monitorare la rete utilizzando Dashboard Qualità della chiamata e Analisi delle chiamate
 
-Utilizzare [Dashboard Qualità della chiamata (DQC)](turning-on-and-using-call-quality-dashboard.md) per ottenere informazioni dettagliate sulla qualità delle chiamate e delle riunioni in Microsoft Teams. DQC consente di ottimizzare la rete mantenendo sotto controllo la qualità, l’affidabilità e l’esperienza utente. DQC esamina la telemetria aggregata per un’intera organizzazione nella quale è possibile rilevare modelli generali che consentono di identificare i problemi e pianificare le correzioni. Inoltre, DQC fornisce report dettagliati sulle metriche per informazioni dettagliate sulla qualità, l’affidabilità e l’esperienza utente complessive. 
+Utilizzare [Dashboard Qualità della chiamata (DQC)](turning-on-and-using-call-quality-dashboard.md) per ottenere informazioni dettagliate sulla qualità delle chiamate e delle riunioni in Microsoft Teams. DQC consente di ottimizzare la rete mantenendo sotto controllo la qualità, l’affidabilità e l’esperienza utente. DQC esamina la telemetria aggregata per un’intera organizzazione nella quale è possibile rilevare modelli generali che consentono di identificare i problemi e pianificare le correzioni. Inoltre, DQC fornisce report dettagliati sulle metriche per informazioni dettagliate sulla qualità, l’affidabilità e l’esperienza utente complessive.
 
 [Analisi delle chiamate](set-up-call-analytics.md) consente di indagare i problemi relativi alle chiamate e alle riunioni per un singolo utente.
 
@@ -70,9 +70,9 @@ Le attività seguenti sono facoltative e non sono necessarie per l’implementaz
 
 È consigliabile eseguire un’ulteriore ottimizzazione della rete se:
 
-  - L’esecuzione di Microsoft Teams è lenta (ad esempio la larghezza di banda è insufficiente)
-  - Le chiamate si interrompono (probabilmente a causa di blocchi del firewall o del proxy)
-  - Si riscontrano interferenze o distorsioni durante le chiamate oppure riproduzioni audio robotiche (a causa di instabilità o perdita di pacchetti)
+- L’esecuzione di Microsoft Teams è lenta (ad esempio la larghezza di banda è insufficiente)
+- Le chiamate si interrompono (probabilmente a causa di blocchi del firewall o del proxy)
+- Si riscontrano interferenze o distorsioni durante le chiamate oppure riproduzioni audio robotiche (a causa di instabilità o perdita di pacchetti)
 
 Per informazioni dettagliate sull’ottimizzazione della rete, incluse indicazioni per l’identificazione e la correzione di eventuali problemi di rete, consulta [Principi di connettività di rete di Microsoft 365 e Microsoft Office 365](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles).
 
@@ -117,9 +117,9 @@ Per informazioni dettagliate sull’ottimizzazione della rete, incluse indicazio
 <td><p>È consigliabile specificare un percorso alternativo per il traffico di Microsoft Teams che ignori la rete privata virtuale (VPN), comunemente nota come <a href="/windows/security/identity-protection/vpn/vpn-routing">Split tunnelling per VPN</a>. Lo split tunnelling per VPN consente di inviare il traffico di Microsoft 365 o Office 365 non alla VPN ma direttamente a Microsoft 365 o Office 365. Ignorare la VPN influisce positivamente sulla qualità di Microsoft Teams e riduce il carico nei dispositivi VPN e nella rete dell’organizzazione. Per implementare lo split tunneling per VPN, contatta il fornitore VPN.</p>
 <p>Altri motivi per cui è consigliabile ignorare la VPN:
 <ul>
-<li><p>Le VPN in genere non sono progettate o configurate per supportare il traffico multimediale in tempo reale.</p></li> 
-<li><p>È inoltre possibile che alcune VPN non supportino l’UDP (necessario per Microsoft Teams).</p></li> 
-<li><p>Le VPN introducono anche un livello di crittografia aggiuntivo al traffico multimediale già crittografato.</p></li> 
+<li><p>Le VPN in genere non sono progettate o configurate per supportare il traffico multimediale in tempo reale.</p></li>
+<li><p>È inoltre possibile che alcune VPN non supportino l’UDP (necessario per Microsoft Teams).</p></li>
+<li><p>Le VPN introducono anche un livello di crittografia aggiuntivo al traffico multimediale già crittografato.</p></li>
 <li><p>La connettività a Microsoft Teams potrebbe non essere efficiente a causa dell’hairpinning del traffico tramite un dispositivo VPN.</p></li></td>
 </tr>
 <tr class="odd">
@@ -144,7 +144,7 @@ Per informazioni dettagliate sull’ottimizzazione della rete, incluse indicazio
 
 Microsoft Teams è progettato per offrire esperienze audio, video e di condivisione contenuti eccezionali, a prescindere dalle condizioni di rete. Tuttavia, se la larghezza di banda è insufficiente, Microsoft Teams assegna la priorità alla qualità audio sulla qualità video.
 
-Se la larghezza di banda non è limitata, Microsoft Teams ottimizza la qualità multimediale, audio di alta fedeltà, inclusa una risoluzione video massima di 1080p, fino a 30fps (fotogrammi al secondo) per video e contenuto.
+Se la larghezza di banda non è limitata, Teams ottimizza la qualità multimediale, inclusi audio di alta fedeltà, una risoluzione video massima di 1080p e fino a 30fps (fotogrammi al secondo) per video e contenuti.
 
 Questa tabella descrive le modalità di utilizzo della larghezza di banda da parte di Teams. Teams fa un utilizzo moderato della larghezza di banda ed è in grado di garantire una qualità video ad alta definizione in meno di 1,5 Mbps. Il consumo effettivo della larghezza di banda in ogni chiamata audio/video o riunione varia in base a diversi fattori, ad esempio il layout video, la risoluzione video e i fotogrammi video al secondo. Quando sarà disponibile una maggiore larghezza di banda, la qualità e l'utilizzo aumenteranno per offrire la migliore esperienza.
 
@@ -153,7 +153,7 @@ Questa tabella descrive le modalità di utilizzo della larghezza di banda da par
       **Modalità**
    :::column-end:::
    :::column span="3":::
-      **Requisiti di larghezza di banda (bitrate Kb/s su/giù)**    
+      **Requisiti di larghezza di banda (bitrate Kb/s su/giù)**
    :::column-end:::
 :::row-end:::
 :::row:::
@@ -304,13 +304,13 @@ Questa tabella descrive le modalità di utilizzo della larghezza di banda da par
 
 I requisiti **minimi**, **consigliati** e **le prestazioni migliori** della larghezza di banda sono basati sull'utilizzo per endpoint. In genere, è presente un endpoint per utente, come un computer o un dispositivo mobile. Tuttavia, se un utente partecipa a una riunione di Teams in *sia* un computer *che* un dispositivo mobile, a tale utente vengono associati due endpoint.
 
-- I requisiti **minimi** della larghezza di banda per le videochiamate sono fino a una risoluzione di 240p, la frequenza dei fotogrammi del contenuto di condivisione dello schermo adattiva da 1,875 a 7,5 fps e i video in modalità Insieme/Raccolta grande fino a una risoluzione di 540p.  
+- I requisiti **minimi** della larghezza di banda per le videochiamate sono fino a una risoluzione di 240p, la frequenza dei fotogrammi del contenuto di condivisione dello schermo adattiva da 1,875 a 7,5 fps e i video in modalità Insieme/Raccolta grande fino a una risoluzione di 540p.
 
-- I requisiti **consigliati** per la larghezza di banda per le videochiamate sono fino a 1080p di risoluzione <sup>\*</sup>, frequenza dei fotogrammi del contenuto di condivisione dello schermo adattivi da 7,5 a 30 fps e video in modalità Insieme/Raccolta grande fino a una risoluzione di 1080p <sup>\*</sup>.  
+- I requisiti **consigliati** per la larghezza di banda per le videochiamate sono fino a 1080p di risoluzione <sup>\*</sup>, frequenza dei fotogrammi del contenuto di condivisione dello schermo adattivi da 7,5 a 30 fps e video in modalità Insieme/Raccolta grande fino a una risoluzione di 1080p <sup>\*</sup>.
 
 - **Prestazioni ottimali** Guidance consente una maggiore fedeltà di video per riunioni con partecipanti di grandi dimensioni, ambienti con perdita elevata e contenuti di movimento più elevati con frequenze dei fotogrammi del contenuto di condivisione dello schermo adattive da 15 a 30 fps.
 
-<sup>\*</sup>È prevista una qualità fino a 1080p, ma a seconda delle condizioni della rete, la risoluzione e la qualità del video verranno ottimizzate di conseguenza.  
+<sup>\*</sup>È prevista una qualità fino a 1080p, ma a seconda delle condizioni della rete, la risoluzione e la qualità del video verranno ottimizzate di conseguenza.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

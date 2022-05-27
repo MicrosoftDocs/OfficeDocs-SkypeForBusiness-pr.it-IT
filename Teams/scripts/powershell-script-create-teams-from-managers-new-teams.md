@@ -1,5 +1,5 @@
 ---
-title: Esempio di script di PowerShell - Creare nuovi team di gestione delle persone
+title: Esempio di script di PowerShell - Creare nuovi team di gestione persone
 author: SerdarSoysal
 ms.author: serdars
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: article
 ms.reviewer: brandber
 ms.service: msteams
 audience: admin
-description: Usare questo script di PowerShell per creare un team per ogni responsabile con i propri diretti come membri del team.
+description: Usare questo script di PowerShell per creare un team per ogni manager con i propri diretti come membri del team.
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
@@ -16,39 +16,36 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f30bab1e96fc16b135b178a1933bbfd08289e861
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 05f5a53974444341ecc7da8431525b69bc8f1923
+ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58577797"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65681557"
 ---
-# <a name="powershell-script-sample---create-new-people-manager-teams"></a>Esempio di script di PowerShell - Creare nuovi team di gestione delle persone
+# <a name="powershell-script-sample---create-new-people-manager-teams"></a>Esempio di script di PowerShell - Creare nuovi team di gestione persone
 
-Usare questo script di PowerShell per creare un team per ogni responsabile con i propri diretti come membri del team. Prima di eseguire questo script, eseguire lo script Export [managers](powershell-script-create-teams-from-managers-export-managers.md) per esportare (da Active Directory) un elenco di responsabili e i relativi indirizzi per l'organizzazione.
+Usare questo script di PowerShell per creare un team per ogni manager con i propri diretti come membri del team. Prima di eseguire questo script, eseguire lo script [di Export manager](powershell-script-create-teams-from-managers-export-managers.md) per esportare (da Active Directory) un elenco di responsabili e i relativi indirizzi per l'organizzazione.
 
 Per informazioni su questo script di PowerShell, vedere [Creare team di gestione persone](../create-manager-directs-teams.md).
 
-Se non si ha di nuovo PowerShell e serve aiuto per iniziare, vedere [Panoramica di Azure PowerShell](/powershell/azure/overview?view=azurermps-5.1.1).
+Se non si ha familiarità con PowerShell e serve aiuto per iniziare, vedere [Panoramica di Azure PowerShell](/powershell/azure/overview).
 
-
-## <a name="create-new-people-manager-teams"></a>Creare nuovi team di gestione delle persone 
+## <a name="create-new-people-manager-teams"></a>Creare nuovi team di responsabili delle persone
 
 ```powershell
-<# 
-.SYNOPSIS 
-  Name: New-TeamsFromManagers.ps1 
-  This sample script creates a new team for each people manager that includes the manager and their direct reports, based off the ExportedManagerDirects.txt file. 
-   
-.DESCRIPTION 
+<#
+.SYNOPSIS
+  Name: New-TeamsFromManagers.ps1
+  This sample script creates a new team for each people manager that includes the manager and their direct reports, based off the ExportedManagerDirects.txt file.
+
+.DESCRIPTION
  This sample script create new Teams based on the tab delimited .txt file you provide of managers and direct reports.
- 
-.NOTES 
-  &copy; 2020 Microsoft Corporation.  All rights reserved.  This document is provided 
-    "as-is." Information and views expressed in this document, including URL and 
-    other Internet Web site references, may change without notice.
- 
-.EXAMPLE 
+
+.NOTES
+  &copy; 2020 Microsoft Corporation.  All rights reserved.  This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice.
+
+.EXAMPLE
   New-TeamsFromManagers.ps1 -Input .\TeamsToCreate.txt
 #>
 
@@ -112,7 +109,7 @@ Function ProcessData ($Managers) {
                     $person.TeamsEnabled = IsTeamsEnabled $person.UserPrincipalName
                     if ($person.TeamsEnabled -eq $false) {
                         $countNonEnabled++
-                        Write-Verbose "$(Get-Timestamp) Warning: $($person.UserPrincipalName) is not enabled for Teams."                        
+                        Write-Verbose "$(Get-Timestamp) Warning: $($person.UserPrincipalName) is not enabled for Teams."
                     }
                     $boss.DirectReports.Add($person)
                 }
@@ -211,5 +208,4 @@ foreach ($Manager in $Managers) {
 Write-Host -ForegroundColor Green "$(Get-Timestamp) Info: Step 3: Completed."
 Write-Host -ForegroundColor Green "$(Get-Timestamp) Info: Exiting.."
 #endregion
-
 ```

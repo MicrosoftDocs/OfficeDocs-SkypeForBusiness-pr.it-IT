@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4f717672c4cb297d7f3d2e95ceaa038eeceaa2ee
-ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
+ms.openlocfilehash: b59753e1ad1e5a0be36ed8a0d924d7fa6d6658a2
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187122"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65675518"
 ---
 # <a name="tailor-teams-apps-for-your-frontline-workers"></a>Personalizzare le app Teams per i dipendenti in prima linea
 
@@ -55,7 +55,7 @@ Le app vengono aggiunte alla barra dell'app, ovvero la barra nella parte inferio
 
 :::image type="content" source="media/tailored-teams-apps-desktop.png" alt-text="L'esperienza dell'app in prima linea personalizzata su Teams desktop" lightbox="media/tailored-teams-apps-desktop.png"::: 
 
-## <a name="admin-controls"></a>Controlli di amministrazione
+## <a name="admin-controls"></a>controlli Amministrazione
 
 > [!NOTE]
 > **Per rendere** effettiva questa funzionalità, l'impostazione per [l'aggiunta dell'utente](teams-app-setup-policies.md) deve essere attivata nei criteri di configurazione delle app globali (impostazione predefinita a livello di organizzazione).
@@ -66,7 +66,7 @@ Tenere presente che tutti i [criteri di configurazione delle app](teams-app-setu
 
 Questa funzionalità è attivata per impostazione predefinita. Tuttavia, se non desideri l'esperienza dell'app frontline personalizzata fornita da Microsoft, puoi disattivare la funzionalità. Per attivare o disattivare la funzionalità:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Teams** **appGesti** >  app e quindi selezionare **Impostazioni app a livello di organizzazione**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Teams app** > **Gestisci app** e quindi selezionare **Impostazioni app a livello di organizzazione**.
 2. In **App personalizzate** imposta **l'interruttore Mostra app personalizzate** su **Disattivato** o **Attivato**.
 
     :::image type="content" source="media/tailored-teams-apps-admin-center.png" alt-text="Screenshot dell'impostazione Mostra app personalizzate nella pagina Gestisci app dell'interfaccia di amministrazione di Teams" lightbox="media/tailored-teams-apps-admin-center.png":::

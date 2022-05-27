@@ -15,12 +15,12 @@ description: Usare queste indicazioni per implementare Microsoft Teams come prim
 ROBOTS: NOINDEX, NOFOLLOW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f6dba57003aaa58b9d0b72e7e866da261bed578e
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: 2621ea94e2a35e7de9eed3dac2994f9b1932b0bb
+ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922687"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65681727"
 ---
 # <a name="roll-out-microsoft-teams-first"></a>Esegui prima Microsoft Teams
 
@@ -39,8 +39,8 @@ Per iniziare a usare Teams Prima distribuzione, è necessario soddisfare almeno 
 
 1.  Un Microsoft 365 o un'organizzazione Office 365 configurata con il nome di dominio
 
-2.  Azure Active Directory la connettività (AAD connettersi) o una soluzione di sincronizzazione delle identità cloud simile, con tutti gli attributi necessari sincronizzati con il tenant  
-    Per comprendere gli attributi sincronizzati con AAD sincronizzazione, leggere [Azure AD Connessione sincronizzazione: Attributi sincronizzati con Azure Active Directory](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)
+2.  Azure Active Directory connettività (AAD Connect) o una soluzione di sincronizzazione delle identità cloud simile, con tutti gli attributi necessari sincronizzati con il tenant  
+    Per comprendere gli attributi sincronizzati con la sincronizzazione AAD, leggere [Azure AD Connessione la sincronizzazione: Attributi sincronizzati con Azure Active Directory](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)
 
 3.  Licenze utente appropriate assegnate per Teams  
     Per informazioni sulle licenze Teams, leggere [Microsoft Teams descrizione del servizio](/office365/servicedescriptions/teams-service-description).
@@ -111,7 +111,7 @@ Questo punto di partenza presuppone che l'organizzazione non utilizzi attualment
 <tr class="odd">
 <td>Creare e visualizzare riunioni in Teams</td>
 <td><p>Possibilità di creare riunioni interne ed esterne tramite Outlook componente aggiuntivo.</p>
-<p>La funzionalità Dial in e Dialout PSTN è disponibile con le licenze per i servizi di audioconferenza.</p>
+<p>La funzionalità Chiamate in entrata e uscita PSTN è disponibile con le licenze di Audioconferenza.</p>
 <p>Teams l'accesso al calendario richiede Exchange 2016 CU3+ in locale distribuito con Exchange distribuzione ibrida stabilita: <a href="/exchange/hybrid-deployment/deploy-hybrid">Creare una distribuzione ibrida con la procedura guidata Configurazione ibrida.</a> </p>
 
 Oltre a Exchange configurazione ibrida, stabilire Exchange autenticazione OAuth: [Configurare l'autenticazione OAuth tra Exchange e organizzazioni Exchange Online](/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help). 
@@ -136,7 +136,7 @@ VoIP/PSTN in Teams</td>
 <tr class="odd">
 <td>Piattaforma delle applicazioni</td>
 <td>Gli utenti potranno usare le app designate disponibili in base ai criteri aziendali.<br />
-Altre informazioni sono disponibili qui: <a href="/microsoftteams/admin-settings">Impostazioni di amministrazione per le app in Teams</a></td>
+Altre informazioni sono disponibili qui: <a href="/microsoftteams/admin-settings">Amministrazione impostazioni per le app in Teams</a></td>
 </tr>
 <tr class="even">
 <td>Caratteristiche di sicurezza e conformità</td>
@@ -190,7 +190,7 @@ Questo punto di partenza presuppone che l'organizzazione utilizzi Skype for Busi
 <tr class="odd">
 <td>Creare e visualizzare riunioni in Teams</td>
 <td><p>Possibilità di creare riunioni interne ed esterne tramite Outlook componente aggiuntivo.</p>
-<p>La funzionalità Dial in e Dialout PSTN è disponibile con le licenze per i servizi di audioconferenza.</p>
+<p>La funzionalità Chiamate in entrata e uscita PSTN è disponibile con le licenze di Audioconferenza.</p>
 <p>Teams l'accesso al calendario richiede Exchange 2016 CU3+ in locale distribuito con Exchange configurazione ibrida:<br />
 <a href="/exchange/hybrid-deployment/deploy-hybrid">Creare una distribuzione ibrida con la Configurazione ibrida guidata.</a></p>
 <p>L'amministratore può controllare il componente aggiuntivo Skype for Business Outlook tramite l'attributo PreferredMeetingProviderForIslandsMode del criterio di riunione Teams:<a href="/powershell/module/skype/set-csteamsmeetingpolicy"> set-csteamsmeetingpolicy</a>.</p> 
@@ -214,7 +214,7 @@ VoIP/PSTN in Teams</td>
 <tr class="odd">
 <td>Piattaforma delle applicazioni</td>
 <td>Gli utenti potranno usare le app designate disponibili in base ai criteri aziendali.<br />
-Altre informazioni sono disponibili qui: <a href="/microsoftteams/admin-settings">Impostazioni di amministrazione per le app in Teams</a></td>
+Altre informazioni sono disponibili qui: <a href="/microsoftteams/admin-settings">Amministrazione impostazioni per le app in Teams</a></td>
 </tr>
 <tr class="even">
 <td>Caratteristiche di sicurezza e conformità</td>

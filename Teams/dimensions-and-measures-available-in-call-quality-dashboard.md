@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottenere informazioni dettagliate sulle dimensioni e le misure utilizzate da Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: 01159d64a1c9fdb48321bdb82b6199d6861c4bfa
-ms.sourcegitcommit: 2c3c067cccd7b84064b5619a0b5f87242af52984
+ms.openlocfilehash: f5614f7f0d14aa0053a613f5f471ae5e5315f1cf
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65462050"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65675938"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili in Call Quality Dashboard (CQD)
 
@@ -753,7 +753,7 @@ Molti valori di misura possono essere usati anche come filtri. La tabella seguen
 |P50 Packet Loss Rate | Percentuale | Il 50% delle richieste deve essere inferiore alla percentuale di perdita pacchetti specificata.|
 |Ritardo post chiamata pstn in uscita| Millisecondi | Il ritardo che si verifica per le chiamate in uscita misurate dal momento in cui un numero è stato comporre finché il chiamante o il chiamante non sente squillare.|
 |Ritardo post chiamata pstn in arrivo | Millisecondi | Il tempo o il ritardo che si verifica sulle chiamate in arrivo misurate dal momento in cui un numero è stato comporre finché il chiamante o il mittente chiamato non sente squillare.|
-|PSTN NER Good Percentage | Percentuale | Il NER misura la capacità di una rete di effettuare chiamate misurando il numero di chiamate inviate e il numero di chiamate inviate a un destinatario.<br/>NER = (Risposte alle chiamate + Utente occupato + Nessuna risposta + Crisi di rifiuto terminale)/ Chiamate al tentativo totale x 100.C'è un errore fino allo 0,2% per questa misura. Per informazioni dettagliate, vedere la nota seguente.|
+|PSTN NER Good Percentage | Percentuale | Il NER misura la capacità di una rete di effettuare chiamate misurando il numero di chiamate inviate e il numero di chiamate inviate a un destinatario.<br/>NER = (Chiamate con risposta + Utente occupato + Nessuna risposta + Crisi di rifiuto terminale) / Chiamate al tentativo totale x 100. Si verifica un errore fino allo 0,2% per questa misura. Per informazioni dettagliate, vedere la nota seguente.|
 | Avg Auto Attendant Chain Duration Seconds | Numero intero | La durata media che gli utenti trascorrono in Operatore automatico, misurata in secondi. |
 | Avg Call Queue Duration Seconds | Numero intero | La durata media che gli utenti attendono che una coda di chiamata risponda da un agente, misurata in secondi. |
 

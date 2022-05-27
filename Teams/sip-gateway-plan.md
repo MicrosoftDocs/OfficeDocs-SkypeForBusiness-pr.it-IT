@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 77d33d29a51fe32fff6901fdcb8ba33ecad107f7
-ms.sourcegitcommit: cd9a1f7afaaf053741c81022e7052bf6f8008fcc
+ms.openlocfilehash: 0a1a178c279a418c0555f100c48a63c9efe71717
+ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65370899"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65681787"
 ---
 # <a name="plan-for-sip-gateway"></a>Pianificare il Gateway SIP
 
@@ -47,8 +47,7 @@ Gateway SIP connette dispositivi SIP compatibili a Teams per consentire agli ute
 - **Multifrequenza a doppio tono:** Gli utenti di dispositivi SIP possono premere i tasti numerici per fornire input durante le chiamate di risposta vocale interattive.
 - **riunioni Teams:** un utente del dispositivo SIP può partecipare a una riunione Teams componendo il numero di accesso alla riunione. I partecipanti alla riunione possono aggiungere un utente del dispositivo SIP alla riunione componendo il numero di telefono dell'utente o semplicemente aggiungendo un partecipante facendo clic su "Richiedi di partecipare" avviserà anche il dispositivo SIP dell'utente. Gli utenti guest di un'altra organizzazione possono essere aggiunti a una riunione Teams da un partecipante che esegue la chiamata in uscita al numero di un utente guest per includere tale guest.
 - **Trasferimenti di chiamata:** Gli utenti di dispositivi SIP possono trasferire le chiamate. Sip Gateway supporta i trasferimenti non vedenti e consultivi.
-- **Inoltro di chiamata locale:** Un utente del dispositivo SIP può impostare regole di inoltro (sempre in caso di timeout e occupato) per il dispositivo. Se il dispositivo è connesso al Gateway SIP, la chiamata verrà reindirizzata all'indirizzo di destinazione in base alla regola impostata dall'utente del dispositivo. Per eseguire l'inoltro di chiamata locale, l'amministratore deve impostare l'attributo `AllowCallRedirect` in su `Set-CsTeamsCallingPolicy` `Enabled`. 
-
+- **Inoltro di chiamata locale:** Un utente del dispositivo SIP può impostare regole di inoltro (sempre in caso di timeout e occupato) per il dispositivo. Se il dispositivo è connesso al Gateway SIP, la chiamata verrà reindirizzata all'indirizzo di destinazione in base alla regola impostata dall'utente del dispositivo. Per eseguire l'inoltro di chiamata locale, l'amministratore deve impostare l'attributo `AllowCallRedirect` in su `Set-CsTeamsCallingPolicy` `Enabled`.
 
 ## <a name="requirements-to-use-sip-gateway"></a>Requisiti per l'uso del Gateway SIP
 
@@ -56,7 +55,8 @@ Teams gli utenti devono avere un numero di telefono con le chiamate PSTN abilita
 
 ### <a name="hardware-software-and-licenses"></a>Hardware, software e licenze
 
-Se si dispone di un dispositivo 3PIP o SIP, è necessario disporre di: 
+Se si dispone di un dispositivo 3PIP o SIP, è necessario disporre di:
+
 - Una licenza per Sistema telefonico (tramite E5 o una licenza autonoma)
 - Abilitazione PSTN (ad esempio un numero di telefono) tramite un piano per chiamate Microsoft Teams, routing diretto o Connessione con operatore
 - Una licenza Telefono Area comune per qualsiasi dispositivo dell'area comune

@@ -1,5 +1,5 @@
 ---
-title: Esempio di script di PowerShell - Esportare i responsabili e i relativi diretti
+title: "Esempio di script di PowerShell : responsabili dell'esportazione e loro responsabili dell'esportazione"
 author: SerdarSoysal
 ms.author: serdars
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: article
 ms.reviewer: brandber
 ms.service: msteams
 audience: admin
-description: Usare questo script di PowerShell per esportare un elenco di responsabili e le relative dirette per l'organizzazione, in preparazione per la creazione di un team per ogni responsabile con i propri diretti come membri del team.
+description: Usare questo script di PowerShell per creare un team per ogni responsabile con i propri dipendenti diretti come membri del team.
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
@@ -16,41 +16,38 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a25e743f1f8191db8323b29bf33c3fed75261fa1
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 436f9566031a2cd9bc3b06a23df7b3b7346d3bec
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58577820"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65674178"
 ---
-# <a name="powershell-script-sample---export-managers-and-their-directs"></a>Esempio di script di PowerShell - Esportare i responsabili e i relativi diretti
+# <a name="powershell-script-sample---export-managers-and-their-directs"></a>Esempio di script di PowerShell : responsabili dell'esportazione e loro responsabili dell'esportazione
 
-Usare questo script di PowerShell per esportare un elenco di responsabili e le relative dirette per l'organizzazione, in preparazione per la creazione di un team di responsabili di persone per ogni responsabile con i propri diretti come membri del team.
+Usare questo script di PowerShell per esportare un elenco di responsabili e i relativi indirizzi per l'organizzazione. Usare questo script per prepararsi a creare un team di responsabili delle persone per ogni responsabile con i propri dipendenti diretti come membri del team.
 
 Per informazioni su questo script di PowerShell, vedere [Creare team di gestione persone](../create-manager-directs-teams.md).
 
-Se non si ha di nuovo PowerShell e serve aiuto per iniziare, vedere [Panoramica di Azure PowerShell.](/powershell/azure/overview?view=azurermps-5.1.1)
-
+Se non si ha familiarità con PowerShell e serve aiuto per iniziare, vedere [Panoramica di Azure PowerShell](/powershell/azure/overview).
 
 ## <a name="export-managers-script"></a>Export-Managers script
 
 ```powershell
-<# 
-.SYNOPSIS 
-  Name: Export-ManagersDirectsFromAAD.ps1 
+<#
+.SYNOPSIS
+  Name: Export-ManagersDirectsFromAAD.ps1
   The purpose of this sample script is to build a list of managers and direct reports to use with the New-TeamsFromManagers.ps1 to create a team for each people manager and their directs.
-   
-.DESCRIPTION 
+
+.DESCRIPTION
  This sample script create new Teams based on the tab delimited .txt file you provide of managers and direct reports. It assumes that DisplayName is not null.
- 
-.NOTES 
-  &copy; 2020 Microsoft Corporation. All rights reserved. This document is provided 
-    "as-is." Information and views expressed in this document, including URL and 
-    other Internet Web site references, may change without notice.
- 
-.EXAMPLE 
+
+.NOTES
+  &copy; 2020 Microsoft Corporation. All rights reserved. This document is provided "as-is." Information and views expressed in this document, including URL and other Internet Web site references, may change without notice.
+
+.EXAMPLE
   Export-ManagersDirectsFromAAD.ps1
-#> 
+#>
 
 #Also create a type that validated the users licenses to ease the create-team burden
 #also add checks to see if the types are appropriately in place.
@@ -103,7 +100,7 @@ foreach ($user in $AllAADUsers) {
                     $manager.DirectReports.Add($directReport)
                 }
                 $Managers.Add($manager)
-                
+
             }
         Write-Host "$(Get-Timestamp) Info: Added Manager: $($manager.UserPrincipalName)"
         $i++
@@ -124,7 +121,7 @@ foreach ($manager in $Managers) {
     }
     $directs = $directs.Substring(0,$directs.Length-1)
     $row = "$($manager.UserPrincipalName)`t$($manager.DisplayName)`t$($directs)"
-    $output.Add($row) 
+    $output.Add($row)
 }
 
 #If Output File already exists from a previous run, it will be replaced.
@@ -138,7 +135,4 @@ foreach ($line in $output) {
 }
 Write-Host -ForegroundColor Green "$(Get-Timestamp) Exported tab delimited output to $($OutputFile). `n"
 #endregion
-
-
-
 ```

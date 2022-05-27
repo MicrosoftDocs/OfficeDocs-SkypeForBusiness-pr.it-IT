@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams supportate dalla coda di chiamata
+title: lingue supportate dalla coda di chiamata Microsoft Teams
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -20,23 +20,23 @@ f1.keywords:
 - CSH
 ms.custom:
 - Phone System
-description: Microsoft Teams supportate dalla coda di chiamata
-ms.openlocfilehash: 54d9a49dc3671a2b7148ba964c20dcb50def0622
-ms.sourcegitcommit: e7f6125d348b6f14eeba28e09d5f1975ad4fde69
+description: lingue supportate dalla coda di chiamata Microsoft Teams
+ms.openlocfilehash: c33745aaa5a1b0ddbfb3c7438fdc8bf72c8af592
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "60249548"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65674718"
 ---
-# <a name="microsoft-teams-call-queue-supported-languages"></a>Microsoft Teams supportate dalla coda di chiamata
+# <a name="microsoft-teams-call-queue-supported-languages"></a>lingue supportate dalla coda di chiamata Microsoft Teams
 
-La coda di chiamata supporta le lingue seguenti per la sintesi vocale :The call queue supports the following languages for Text to Speech (TTS):
+La coda di chiamata supporta le seguenti lingue per la sintesi vocale:
 
 |Lingua                                |
 |:---------------------------------------|
 |Arabo (Egitto)                          |
 |Catalano (catalano)                       |
-|Cinese (semplificato, RPC)               |
+|Cinese (semplificato, Repubblica popolare cinese)               |
 |Cinese (tradizionale, Hong Kong)        |
 |Cinese (tradizionale, Taiwan)           |
 |Croato (Croazia)                      |
@@ -74,4 +74,4 @@ La coda di chiamata supporta le lingue seguenti per la sintesi vocale :The call 
 |Vietnamita (Vietnam)                    |
 
 > [!NOTE]
-> Quando si usa La sintesi vocale, il testo deve essere immesso nella lingua selezionata perché il sistema non esegue la traduzione.
+> Quando si usa la sintesi vocale, il testo deve essere immesso nella lingua selezionata perché il sistema non esegue la traduzione.

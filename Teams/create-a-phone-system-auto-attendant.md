@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per le organizzazioni di grandi dimensioni in Microsoft Teams.
-ms.openlocfilehash: a0b50a83e54059dca68562c2140ece6253448dd0
-ms.sourcegitcommit: bd05783dfb33a63e0eb083a2135f97d110dc81a3
+ms.openlocfilehash: 5f4b4f21f2e1cca8c8bbc350541cdd861b1bda3f
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2022
-ms.locfileid: "65059097"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65674368"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -128,7 +128,7 @@ Se non hai assegnato i tasti di chiamata, scegli un'opzione per **la ricerca nel
 
 **Chiamata per estensione** - Se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'interno del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale usando Skype for Business Server, è un utente idoneo e può essere trovato con **Chiamata per estensione**. È possibile impostare chi è o non è incluso nella directory nella pagina [Ambito](#dial-scope) chiamata.
 
-Gli utenti che desideri rendere disponibili per Chiamata per estensione devono avere un'estensione specificata come parte di uno dei seguenti attributi telefonici definiti in Active Directory (e sincronizzati tramite Azure AD Connessione) o Azure Active Directory. Per altre informazioni, vedere [Aggiungere utenti singolarmente o in blocco](/microsoft-365/admin/add-users/add-users) .
+Gli utenti che si desidera rendere disponibili per Chiamata per estensione devono avere un'estensione specificata come parte di uno dei seguenti attributi telefonici definiti in Active Directory (e sincronizzati tramite Azure AD Connessione) o Azure Active Directory. Per altre informazioni, vedere [Aggiungere utenti singolarmente o in blocco](/microsoft-365/admin/add-users/add-users) .
 
 - OfficePhone/TelephoneNumber (AD e Azure AD)
 - HomePhone (AD)
@@ -318,7 +318,7 @@ Per una guida dettagliata alla creazione di operatori automatici con PowerShell,
 
 Se sei un amministratore, puoi usare il seguente strumento di diagnostica per verificare che un operatore automatico sia in grado di ricevere chiamate:
 
-1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’interfaccia Amministrazione Microsoft 365. 
+1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’Admin Centre di Microsoft 365. 
 
    > [!div class="nextstepaction"]
    > [Esegui test: operatore automatico Teams](https://aka.ms/TeamsAADiag)

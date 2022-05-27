@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire i modelli di team nell'interfaccia di amministrazione
-ms.openlocfilehash: c753a92205844ebade9a713a8442837039232339
-ms.sourcegitcommit: 140c34f20f9cd48d7180ff03fddd60f5d1d3459f
+ms.openlocfilehash: 46b59d42ae464a5f09e9f24ecc91378bd6464034
+ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65248938"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65681397"
 ---
 # <a name="manage-team-templates-in-the-admin-center"></a>Gestire i modelli di team nell'interfaccia di amministrazione
 
@@ -106,7 +106,7 @@ R: I modelli eliminati non saranno più presenti nei criteri dei modelli.
 
 R: Sì.
 
-1. Nell'interfaccia di amministrazione di Teams passare a **UtentiGesti** >  utenti.
+1. Nell'interfaccia di amministrazione di Teams passare a **Gestisci utenti** > .
 1. Nell'elenco degli utenti selezionare gli utenti da assegnare ai criteri dei modelli.
 1. Selezionare **Modifica impostazioni**, quindi in **Criteri modelli** scegliere il criterio da assegnare.
 1. Scegliere **Applica**.
@@ -117,7 +117,7 @@ Per altre informazioni, vedere [Assegnare criteri ai singoli utenti](assign-poli
 
 R: Nell'interfaccia di amministrazione di Teams:
 
-1. Passare a **UtentiGesti** >  **gli utenti**.
+1. Passare a **Gestione utenti** > .
 2. Selezionare **Filtro**, impostare un filtro per i criteri dei modelli e quindi scegliere **Applica**.
 
     ![Criteri dei modelli selezionati e visualizzazione utenti.](media/template-policies-5.png)

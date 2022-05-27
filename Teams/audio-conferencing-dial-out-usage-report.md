@@ -1,5 +1,5 @@
 ---
-title: Report sull'utilizzo delle audioconferenze in uscita
+title: Audioconferenza report sull'utilizzo delle chiamate in uscita
 ms.author: heidip
 author: MicrosoftHeidi
 manager: serdars
@@ -21,28 +21,28 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: Scopri quali paesi e aree geografiche hanno i numeri di conferenza telefonica con accesso esterno e come vengono assegnati automaticamente.
-ms.openlocfilehash: 16cdae3a377d5ce87c218affc4944051f14f2631
-ms.sourcegitcommit: 0967f725aad0a7b9c430b2e30a37ea333007558a
+ms.openlocfilehash: 067ff702478e6b7bae38db458a7088021386e6ec
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65106444"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65675428"
 ---
-# <a name="audio-conferencing-dial-out-usage-report"></a>Report sull'utilizzo delle audioconferenze in uscita
+# <a name="audio-conferencing-dial-out-usage-report"></a>Audioconferenza report sull'utilizzo delle chiamate in uscita
 
-Il report sull'utilizzo delle chiamate in uscita per i servizi di audioconferenza nell'interfaccia di amministrazione di Teams offre una panoramica dell'utilizzo e dei dollari spesi per il servizio di chiamata in uscita per i servizi di audioconferenza. Questo report consente agli amministratori di utilizzare i dati a livello utente in termini di crediti comunicazioni spesi e minuti di chiamata in uscita utilizzati. Aiuterà gli amministratori a determinare i futuri crediti per le comunicazioni necessari da qualsiasi momento in poi.
+Il Audioconferenza report sull'utilizzo delle chiamate in uscita nell'interfaccia di amministrazione di Teams offre una panoramica dell'utilizzo e dei dollari spesi per il servizio di chiamata in uscita per i servizi di audioconferenza. Questo report consente agli amministratori di utilizzare i dati a livello utente in termini di crediti comunicazioni spesi e minuti di chiamata in uscita utilizzati. Aiuterà gli amministratori a determinare i futuri crediti per le comunicazioni necessari da qualsiasi momento in poi.
 
-## <a name="view-the-audio-conferencing-dial-out-usage-report"></a>Visualizzare il report sull'utilizzo delle chiamate in uscita per i servizi di audioconferenza
+## <a name="view-the-audio-conferencing-dial-out-usage-report"></a>Visualizzare il report sull'utilizzo delle chiamate in uscita Audioconferenza
 
-Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams  **selezionareAnalytics &**  **reportUsa** > report. Nella  **schedaVisualizza report** ,  **inReport**, seleziona il **report sull'utilizzo delle chiamate in uscita per le audioconferenze**.
+Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams selezionare **Analisi & report** \> **Utilizzo report**. Nella scheda **Visualizza report**, in **Report**, selezionare il **Audioconferenza report sull'utilizzo delle chiamate in uscita**.
 
-In  **Intervallo di** date è possibile selezionare un intervallo predefinito di 7 o 28 giorni oppure impostare un intervallo personalizzato.
+In **Intervallo di date** è possibile selezionare un intervallo predefinito di 7 o 28 giorni oppure impostare un intervallo personalizzato.
 
- **InCountry Previsioned** selezionare un paese preferito oppure selezionare tutto e quindi selezionare  **Esegui report**.
+In **Paese previsioned** selezionare un paese preferito oppure selezionare tutto e quindi **selezionare Esegui report**.
 
 ## <a name="report-details"></a>Dettagli report
 
-Il report sull'utilizzo delle chiamate in uscita per i servizi di audioconferenza include tre schede principali che visualizzano le informazioni in un formato grafico in base all'intervallo selezionato negli elenchi a discesa sopra di esso:
+Il report sull'utilizzo delle chiamate in uscita Audioconferenza include tre schede principali che visualizzano le informazioni in un formato grafico in base all'intervallo selezionato negli elenchi a discesa sopra di esso:
 
 - La scheda **Costo** mostra i crediti comunicazioni spesi nel periodo selezionato e la tabella seguente fornisce dettagli a livello di utente.
 - La scheda **Minuti di utilizzo** mostra il totale dei minuti di chiamata in uscita nel periodo selezionato e la tabella sotto i dettagli a livello di utente forniti.

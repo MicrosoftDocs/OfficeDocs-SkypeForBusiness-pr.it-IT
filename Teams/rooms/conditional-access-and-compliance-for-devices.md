@@ -1,5 +1,5 @@
 ---
-title: Procedure consigliate per l'accesso condizionale e la conformità Microsoft Teams Rooms
+title: Procedure consigliate per l'accesso condizionale e la conformità per Microsoft Teams Rooms
 ms.author: czawideh
 author: cazawideh
 ms.reviewer: sohailta
@@ -11,67 +11,67 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
-description: Informazioni sulle procedure consigliate per l'accesso condizionale e i criteri di conformità dei dispositivi intune e le procedure consigliate per Microsoft Teams Rooms.
-ms.openlocfilehash: 1f4bec9d47b73be1638b1740afeb879b4dfb4026
-ms.sourcegitcommit: dafe48cea1643e1bd79390482da9b002d7e9e0bb
+description: Informazioni sui criteri consigliati di accesso condizionale e Intune conformità dei dispositivi e sulle procedure consigliate per Microsoft Teams Rooms.
+ms.openlocfilehash: b4e1d3cb91ff68e664d590c8e180e55211ca93b0
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "63689142"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65675488"
 ---
-# <a name="conditional-access-and-intune-compliance-for-microsoft-teams-rooms"></a>Accesso condizionale e conformità di Intune per Microsoft Teams Rooms
+# <a name="conditional-access-and-intune-compliance-for-microsoft-teams-rooms"></a>Accesso condizionale e conformità Intune per Microsoft Teams Rooms
 
-Questo articolo fornisce i requisiti e le procedure consigliate per l'accesso condizionale e i criteri di conformità dei dispositivi intune per Microsoft Teams Rooms usati negli spazi condivisi.
+Questo articolo fornisce i requisiti e le procedure consigliate per l'accesso condizionale e Intune criteri di conformità dei dispositivi per Microsoft Teams Rooms usati negli spazi condivisi.
 
 ## <a name="requirements"></a>Requisiti
 
-Teams Rooms deve essere già distribuito nei dispositivi a cui si vogliono assegnare i criteri di accesso condizionale. Se non è ancora stata distribuita Teams Rooms, vedere Creare account delle risorse per le chat room e i dispositivi [Teams](with-office-365.md) condivisi e Distribuire Microsoft Teams Rooms in [Android](../devices/collab-bar-deploy.md) per altre informazioni.
+Teams Rooms deve essere già distribuita nei dispositivi a cui si vogliono assegnare criteri di accesso condizionale. Se non è ancora stata distribuita Teams Rooms, vedere [Creare account di risorse per sale e dispositivi di Teams condivisi](with-office-365.md) e [Distribuire Microsoft Teams Rooms in Android](../devices/collab-bar-deploy.md) per altre informazioni.
 
-Per usare l'accesso condizionale è necessario un piano di servizio Azure Active Directory P1. È incluso nella licenza Microsoft Teams Rooms licenza.
+Per usare l'accesso condizionale è necessario un piano di servizio Azure Active Directory P1. È incluso nella licenza di Microsoft Teams Rooms.
 
-## <a name="teams-rooms-conditional-access-best-practices"></a>Teams Rooms procedure consigliate per l'accesso condizionale
+## <a name="teams-rooms-conditional-access-best-practices"></a>procedure consigliate per l'accesso condizionale Teams Rooms
 
-I criteri di accesso condizionale possono proteggere il processo di accesso nei dispositivi in spazi condivisi e usati da più persone. Per una panoramica dell'accesso condizionale in Azure Active Directory (Azure AD), vedere Che cos'è [l'accesso condizionale in Azure Active Directory?](/azure/active-directory/conditional-access/overview).
+I criteri di accesso condizionale possono proteggere il processo di accesso nei dispositivi che si trovano in spazi condivisi e usati da più persone. Per una panoramica dell'accesso condizionale in Azure Active Directory (Azure AD), vedere [Che cos'è l'accesso condizionale in Azure Active Directory?](/azure/active-directory/conditional-access/overview).
 
 Quando si usa l'accesso condizionale per proteggere Teams Rooms, prendere in considerazione le procedure consigliate seguenti:
 
--   Per semplificare la distribuzione e la gestione, includere Microsoft 365 account delle risorse della chat room associati Teams Rooms in un unico gruppo di utenti.
+-   Per semplificare la distribuzione e la gestione, includere tutti gli account Microsoft 365 risorse sala associati a Teams Rooms in un unico gruppo di utenti.
 
--   Avere uno standard di denominazione per tutti gli account Teams Rooms risorse. Ad esempio, i nomi di account "mtr-room1@contoso.com" e "mtr-room2@contoso.com" iniziano entrambi con il prefisso "mtr-".
-    Quando i nomi degli account sono standardizzati, è possibile usare i gruppi dinamici in Azure AD per applicare automaticamente i criteri di accesso condizionale a tutti questi account contemporaneamente. Per [altre informazioni sui gruppi dinamici,](/azure/active-directory/enterprise-users/groups-dynamic-membership) vedere Regole per l'appartenenza a gruppi popolati dinamicamente.
+-   Disporre di uno standard di denominazione per tutti gli account delle risorse Teams Rooms. Ad esempio, i nomi di account 'mtr-room1@contoso.com' e 'mtr-room2@contoso.com' iniziano entrambi con il prefisso 'mtr-'.
+    Quando i nomi degli account sono standardizzati, è possibile usare i gruppi dinamici in Azure AD per applicare automaticamente i criteri di accesso condizionale a tutti questi account contemporaneamente. Per altre informazioni sui gruppi dinamici, vedere [Regole per l'appartenenza ai gruppi popolata in modo dinamico](/azure/active-directory/enterprise-users/groups-dynamic-membership) .
 
-Per un elenco delle assegnazioni di accesso condizionale supportate per Teams Rooms, vedere [Criteri di accesso condizionale supportati](supported-ca-and-compliance-policies.md#supported-conditional-access-policies).
+Per un elenco delle assegnazioni di accesso condizionale supportate per Teams Rooms, vedere Criteri di [accesso condizionale supportati](supported-ca-and-compliance-policies.md#supported-conditional-access-policies).
 
-## <a name="example-conditional-access-policy"></a>Criteri di accesso condizionale di esempio
+## <a name="example-conditional-access-policy"></a>Esempio di criteri di accesso condizionale
 
 Nell'esempio seguente i criteri di accesso condizionale funzionano come segue:
 
-1.  L'account che accede deve essere membro di un gruppo di utenti specifico, in questo esempio il gruppo "Dispositivi condivisi".
+1.  L'account che esegue l'accesso deve essere membro di un gruppo di utenti specifico, in questo esempio il gruppo "Dispositivi condivisi".
 
-2.  L'account che accede deve solo provare ad accedere a Exchange Online, Microsoft Teams o SharePoint Online. I tentativi di accesso a qualsiasi altra app client verranno rifiutati.
+2.  L'account che accede deve provare ad accedere solo a Exchange Online, Microsoft Teams o SharePoint Online. I tentativi di accesso a qualsiasi altra app client verranno rifiutati.
 
-3.  L'account della risorsa deve accedere alla piattaforma Windows dispositivo.
+3.  L'account della risorsa deve eseguire l'accesso nella piattaforma del dispositivo Windows.
 
-4.  L'account della risorsa deve anche accedere da un percorso attendibile noto.
+4.  L'account della risorsa deve effettuare l'accesso anche da un percorso attendibile noto.
 
-Se queste condizioni vengono soddisfatte correttamente e l'utente immette il nome utente e la password corretti, l'account della risorsa accederà Teams.
+Se queste condizioni vengono soddisfatte correttamente e l'utente immette il nome utente e la password corretti, l'account della risorsa accederà a Teams.
 
-## <a name="conditional-access-with-microsoft-intune-compliance-for-teams-rooms"></a>Accesso condizionale con Microsoft Intune conformità per Teams Rooms
+## <a name="conditional-access-with-microsoft-intune-compliance-for-teams-rooms"></a>Accesso condizionale con conformità Microsoft Intune per Teams Rooms
 
-I requisiti di conformità sono regole definite che i dispositivi devono soddisfare per essere contrassegnati come conformi, ad esempio la versione minima del sistema operativo. I dispositivi devono essere considerati conformi prima di poter essere usati per accedere a un account delle risorse.
+I requisiti di conformità sono regole definite che i dispositivi devono soddisfare per essere contrassegnate come conformi, ad esempio la versione minima del sistema operativo. I dispositivi devono essere considerati conformi prima di poter essere usati per accedere a un account delle risorse.
 
-Per un elenco dei criteri di conformità di Intune supportati per Teams Rooms, vedere [Criteri di conformità dei dispositivi supportati](supported-ca-and-compliance-policies.md#supported-device-compliance-policies).
+Per un elenco dei criteri di conformità Intune supportati per Teams Rooms, vedere [Criteri di conformità dei dispositivi supportati](supported-ca-and-compliance-policies.md#supported-device-compliance-policies).
 
-Per altre informazioni sulla configurazione di Intune Teams dispositivi Android, vedere Configurare Intune per registrare Teams [dispositivi basati su Android](../devices/phones-displays-deploy.md#configure-intune-to-enroll-teams-android-based-devices).
+Per altre informazioni sulla configurazione di Intune con dispositivi Teams Android, vedere [Configurare Intune per la registrazione di dispositivi basati su Teams Android](../devices/phones-displays-deploy.md#configure-intune-to-enroll-teams-android-based-devices).
 
-## <a name="example-windows-only-conditional-access-with-intune-device-compliance"></a>Esempio (solo Windows: Accesso condizionale con conformità dei dispositivi Intune
+## <a name="example-windows-only-conditional-access-with-intune-device-compliance"></a>Esempio (solo Windows): Accesso condizionale con conformità Intune dispositivo
 
-In questo esempio per Teams Rooms in Windows
+In questo esempio per Teams Rooms su Windows
 
-1. Richiedere che un firewall sia in esecuzione Teams Rooms in Windows.
+1. Impostare l'esecuzione di un firewall su Teams Rooms in Windows.
 
-2. Richiedi che Microsoft Defender sia in esecuzione in Teams Rooms.
+2. Richiedi che Microsoft Defender sia in esecuzione su Teams Rooms.
 
-3. Se una Teams room non soddisfa uno di questi requisiti, non verrà contrassegnata come conforme e i dispositivi non effettuano l'accesso.
+3. Se una Teams Room non soddisfa questi requisiti, non verrà contrassegnata come conforme e i dispositivi non accederanno.
 
 Questo criterio di conformità si applica a tutti gli utenti, non solo Teams account delle risorse.

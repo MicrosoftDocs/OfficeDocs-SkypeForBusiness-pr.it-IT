@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 222ea1852ef4336c21cfb24c977c20665a667ff3
-ms.sourcegitcommit: 9968ef7d58c526e35cb58174db3535fd6b2bd1db
+ms.openlocfilehash: 8d3b56a7935f31413829c89285fc81ee70023ab4
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65284071"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65675768"
 ---
 # <a name="configure-operator-connect"></a>Configurare Connessione con operatore
 
@@ -71,7 +71,7 @@ Per acquisire numeri per nuovi utenti di Teams, procedere come segue:
 4. **Assegna numeri.** Una volta completato l'ordine, l'operatore caricherà i numeri nel tenant. Puoi visualizzare i numeri e il provider nell'interfaccia di amministrazione di Teams passando a **Numeri di > Telefono vocali**. Assegnare numeri agli utenti dall'interfaccia di amministrazione di Teams o tramite PowerShell. Per altre informazioni, vedere [Assegnare numeri](#assign-numbers).
 
 > [!NOTE]
-> Oltre a  [dimenticare i numeri di telefono per gli utenti](getting-phone-numbers-for-your-users.md), puoi ottenere numeri a pagamento o numeri verdi per servizi come i servizi di audioconferenza (per il bridge delle conferenze), gli operatori automatici e le code di chiamata (chiamati anche numeri di servizio). I numeri di servizio hanno una capacità di chiamate contemporanee superiore ai numeri di telefono per utenti o abbonati. Ad esempio, un numero di servizio può gestire centinaia di chiamate contemporaneamente, mentre il numero di telefono di un utente può gestire solo alcune chiamate contemporaneamente. Per ottenere i numeri di servizio, contatta il tuo operatore.
+> Oltre a [ottenere numeri di telefono per gli utenti](getting-phone-numbers-for-your-users.md), puoi ottenere numeri a pagamento o numeri verdi per servizi come Audioconferenza (per bridge delle conferenze), operatori automatici e code di chiamata (chiamati anche numeri di servizio). I numeri di servizio hanno una capacità di chiamate contemporanee superiore ai numeri di telefono per utenti o abbonati. Ad esempio, un numero di servizio può gestire centinaia di chiamate contemporaneamente, mentre il numero di telefono di un utente può gestire solo alcune chiamate contemporaneamente. Per ottenere i numeri di servizio, contatta il tuo operatore.
 
 ### <a name="emergency-addresses"></a>Indirizzi di emergenza
 

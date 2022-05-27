@@ -18,18 +18,17 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Dati del nodo reporting per l'integrità e l'utilizzo dei report
 f1keywords: ''
-ms.openlocfilehash: 400da9dca104bb5ff743a8c032d3997bd282e25a
-ms.sourcegitcommit: b70f01d7eae2e3e6f7495c685518a2037aaece31
+ms.openlocfilehash: f3c8ceec383d801c5992b0e8275cfe5360ef5bfe
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64757127"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65674818"
 ---
 # <a name="health-and-usage-reports"></a>Report sull'integrità e sull'utilizzo
 
-Il nodo di creazione di report contiene i dati relativi all'integrità e all'utilizzo delle chat room gestite Microsoft e delle informazioni dettagliate sui servizi. **Il pulsante 
+Il nodo di creazione di report contiene i dati relativi all'integrità e all'utilizzo delle chat room gestite Microsoft e delle informazioni dettagliate sui servizi. La **panoramica** mostra le tendenze sanitarie a livello di tenant delle chat room. La scheda **Integrità** visualizza un elenco di sale con i dati sanitari corrispondenti. **L'utilizzo** delle sale in base alle informazioni del calendario e ai dati sulla qualità delle chiamate sono visibili nella scheda Utilizzo.
 
-**Panoramica** mostra le tendenze sanitarie a livello di tenant delle chat room. La scheda **Integrità** visualizza un elenco di sale con i dati sanitari corrispondenti. **L'utilizzo** delle sale in base alle informazioni del calendario e ai dati sulla qualità delle chiamate sono visibili nella scheda Utilizzo.
 ## <a name="navigating-reports"></a>Spostamento tra i report
 
 <!--![A screenshot of active tickets bar graph](../media/health-and-usage-002new.png)-->
@@ -58,6 +57,7 @@ Nel riquadro a comparsa è possibile filtrare l'elenco dei biglietti in base all
 Per tornare indietro, fare clic sulla ciambella o fare clic sul percorso di navigazione in alto a sinistra.
 
 Per passare a un ticket specifico in questa visualizzazione elenco, fai clic sul link sotto la **colonna Ticket di supporto**.
+
 ### <a name="ticket-history"></a>Cronologia dei biglietti
 
 Il grafico della cronologia dei ticket mostra un confronto degli eventi assegnati a te o a Microsoft nel periodo di tempo specificato.
@@ -66,17 +66,21 @@ Il grafico della cronologia dei ticket mostra un confronto degli eventi assegnat
 > Se un biglietto cambia proprietario in un giorno, chi è il proprietario dell'attività per la maggior parte di quel giorno avrà il biglietto conteggiato nei loro confronti. Ad esempio, se si assegna il ticket a Microsoft all'inizio della giornata, il ticket viene conteggiato per **Assegnato a Microsoft** per il giorno.
 
 <!--![A screen shot of Tickets history by different periods](../media/health-and-usage-009.png)-->
+
 ### <a name="health-history"></a>Cronologia della salute
 
 Questo grafico mostra l'integrità media (definizione nella sezione Integrità) per tutte le chat room nel tenant e la salute media di tutti i clienti MMR giorno per giorno. È possibile visualizzare la salute media per un massimo di 90 giorni.
 
 <!--!![A screenshot of rooms health and average health](../media/health-and-usage-010.png)-->
-### <a name="most-reliableleast-reliable-rooms"></a>Camere più affidabili/meno affidabili:
+
+### <a name="most-reliableleast-reliable-rooms"></a>Camere più affidabili/meno affidabili
 
 Due tabelle mostrano le stanze più affidabili e meno affidabili in base all'integrità. Per la visualizzazione elenco completo, selezionare Integrità, quindi ordinare l'elenco in base alla colonna Integrità.
 
-### <a name="rooms-history"></a>Cronologia delle sale: 
+### <a name="rooms-history"></a>Cronologia delle camere
+
 Fornisce una visualizzazione cronologica delle chat room registrate nel servizio e fornisce una visualizzazione comparata delle chat room che erano integro o non monitorato nello stesso periodo di tempo.
+
 ## <a name="health"></a>Salute
 
 Per passare al report di integrità per tutte le sale, selezionare Report, quindi selezionare  **Integrità**.
@@ -121,26 +125,27 @@ I titoli forniscono alcuni dati analitici:
 - Numero totale di riunioni prenotate tramite scambio
 - Percentuale di riunioni prenotate che includevano un collegamento Skype o Teams
 - Totale chiamate con partecipazione in chat room
--   Aggregate call performance score from all calls classified with "Good" quality to all calls. 
+- Aggregate call performance score from all calls classified with "Good" quality to all calls. 
 
 Sotto le metriche del titolo c'è una tabella di sale con metriche corrispondenti. Selezionare una sala per visualizzare altri dettagli sull'utilizzo. Le metriche nella tabella sono descritte nella tabella seguente.
 
-| Colonna |  Descrizione |
-|--------| -------------------|
-| Utilizzo   | Percentuale di tempo in cui la camera è stata prenotata durante l'orario di ufficio nel periodo selezionato. Ad esempio, Periodo di tempo impostato su 7 giorni. Utilizzo dell'80% dei mezzi la camera è stata prenotata per 32/40 ore |
-| Prenotato online |   Delle riunioni prenotate, la percentuale delle quali è stata abilitata con Teams. Ad esempio, Sono state prenotate 10 riunioni. Di questo, 8 aveva un collegamento Teams. Prenotato online = 80% |
-| Riunioni pianificate | Numero assoluto di riunioni pianificate nella sala |
-| Totale chiamate | Numero assoluto di chiamate con la chat room come partecipante. |
-Prestazioni delle chiamate |  Percentuale di chiamate con valutazione "Buona". Ogni chiamata viene valutata e riceve una valutazione Buona, Scarsa, Sconosciuta. Questa metrica viene calcolata da Chiamate buone/Chiamate totali |
+|Colonna|Descrizione|
+|---|---|
+|Utilizzo|Percentuale di tempo in cui la camera è stata prenotata durante l'orario di ufficio nel periodo selezionato. Ad esempio, Periodo di tempo impostato su 7 giorni. Utilizzo dell'80% dei mezzi la camera è stata prenotata per 32/40 ore|
+|Prenotato online|Delle riunioni prenotate, la percentuale delle quali è stata abilitata con Teams. Ad esempio, Sono state prenotate 10 riunioni. Di questo, 8 aveva un collegamento Teams. Prenotato online = 80%|
+|Riunioni pianificate|Numero assoluto di riunioni pianificate nella sala|
+|Totale chiamate|Numero assoluto di chiamate con la chat room come partecipante.|
+Prestazioni delle chiamate|Percentuale di chiamate con valutazione "Buona". Ogni chiamata viene valutata e riceve una valutazione Buona, Scarsa, Sconosciuta. Questa metrica viene calcolata da Chiamate buone/Chiamate totali|
 
 L'utilizzo viene calcolato alla fine di ogni giorno a mezzanotte (00:00) ora locale del dispositivo della sala riunioni. L'utilizzo viene calcolato in base all'orario totale prenotato per la riunione per tale giorno diviso per 8 ore.
+
 ## <a name="usage-details-of-a-room"></a>Dettagli di utilizzo di una chat room
- 
+
 Se si fa clic su una sala nella visualizzazione elenco, viene visualizzato un riquadro a comparsa con informazioni più approfondite. Nella scheda Utilizzo del riquadro a comparsa è presente un grafico che mostra le ore di utilizzo degli ultimi cinque giorni lavorativi. Per ogni giorno ci sono due barre: blu rappresenta l'orario della riunione prenotato; viola rappresenta l'ora pianificata delle riunioni abilitate per Teams/Skype. Nella parte inferiore vengono calcolati la durata media delle prenotazioni e delle riunioni degli ultimi cinque giorni lavorativi.
 
 <!--![A screenshot of utilization by hours per day](../media/health-and-usage-012.png)-->
 
-La tabella **Chiamate** mostra le riunioni in cui la sala ha partecipato a una chiamata Teams. La qualità audio della sala viene valutata solo per la chat room, non per tutti i partecipanti. Per visualizzare la qualità della chiamata per tutti i partecipanti di una chiamata specifica, selezionare una chiamata facendo clic sull'ora di inizio. 
+La tabella **Chiamate** mostra le riunioni in cui la sala ha partecipato a una chiamata Teams. La qualità audio della sala viene valutata solo per la chat room, non per tutti i partecipanti. Per visualizzare la qualità della chiamata per tutti i partecipanti di una chiamata specifica, selezionare una chiamata facendo clic sull'ora di inizio.
 
 <!--!![A screenshot of room audio quality](../media/health-and-usage-016.png)-->
 

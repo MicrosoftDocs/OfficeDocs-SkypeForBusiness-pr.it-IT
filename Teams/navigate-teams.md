@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 search.appverid: ''
 ms.collection: ''
 ms.custom: ''
-ms.openlocfilehash: 9bf52e68f8db5ecacfb4683b0a4809437a860d77
-ms.sourcegitcommit: d425748a50964ebc78e5d38fce564a444a449f43
+ms.openlocfilehash: 2455d386e9bdf297995880f679e5db74b299e64d
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65635244"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65674838"
 ---
 # <a name="navigate-microsoft-teams"></a>Spostarsi Microsoft Teams
 
@@ -89,7 +89,7 @@ Esistono due modi per spostare i Kaizala gruppi piatti in Teams:
 
 - Opzione 2: passare da un gruppo piatto Kaizala a un team Teams
 
-**Opzione 1: passare da un gruppo Kaizala piatto a una chat di gruppo in Teams**
+**Opzione 1: passare da un gruppo Kaizala piatto a una chat di gruppo in Teams**:
 
 È possibile creare una Teams chat di gruppo per tenere conversazioni rapide e transitoria con un massimo di 250 partecipanti. Le chat di gruppo consentono agli utenti dell'organizzazione di avere una posizione centrale per le conversazioni aperte in cui chiunque può essere aggiunto alla chat.
 
@@ -102,23 +102,23 @@ Esistono due modi per spostare i Kaizala gruppi piatti in Teams:
 2. Aggiungere persone alla conversazione.
 
     ![Aggiungere persone alla conversazione](media/kaizala-to-teams-image5.png)
-    
+
    Quando si aggiunge qualcuno a una chat di gruppo (non uno-a-uno), è possibile includere la **cronologia della chat** e **la durata della cronologia** che si vuole condividere con loro.
 
 3. Gestire la chat di gruppo.
   
     ![Gestire chat di gruppo](media/manage-groupchats.png)
-    
+
    Per vedere chi è in una chat di gruppo, passare il puntatore del mouse sul numero di partecipanti nell'intestazione della chat per visualizzare un elenco dei nomi di tutti.
 
-**Opzione 2: passare da un gruppo piatto Kaizala a un team Teams**
-   
+**Opzione 2: passare da un gruppo Kaizala piatto a un team Teams**:
+
 Per le comunicazioni di gruppo di grandi dimensioni mirate, è possibile creare un team per un gruppo piatto. È possibile aggiungere fino a 25.000 membri per avviare comunicazioni strutturate con conversazioni in thread. Questo tipo di comunicazione consente di ruoli di moderazione e amministrazione per garantire il corretto funzionamento delle attività.
 
 1. Creare un team: per essere subito operativi in Teams, è consigliabile creare un team, aggiungere persone e aggiungere canali. Per altre informazioni, vedere [i primi team](get-started-with-teams-create-your-first-teams-and-channels.md).
 2. Rivedere la guida per i proprietari del team:
 
-Il [proprietario del team](https://support.microsoft.com/office/go-to-guide-for-team-owners-92d238e6-0ae2-447e-af90-40b1052c4547?ui=en-us&rs=en-us&ad=us) può aggiungere nuovi membri e guest, cambiare i membri in proprietari, gestire canali e impostazioni e archiviare un team non più in uso.
+   Il [proprietario del team](https://support.microsoft.com/office/go-to-guide-for-team-owners-92d238e6-0ae2-447e-af90-40b1052c4547?ui=en-us&rs=en-us&ad=us) può aggiungere nuovi membri e guest, cambiare i membri in proprietari, gestire canali e impostazioni e archiviare un team non più in uso.
 
 3. Aggiungere membri in blocco a un team:
 
@@ -318,7 +318,7 @@ Usare la tabella seguente per spostarsi tra le funzionalità corrispondenti in M
 | Directory | Cerca chiunque all'interno dell'organizzazione tramite la **barra di ricerca** nei team. I risultati della ricerca restituiscono anche file, messaggi e post |
 | Analisi (schede azione) | **Sondaggi**, **sondaggi** ed **elenchi di controllo sono incorporati** nei report con dati scaricabili. I processi possono anche essere assegnati con l'aiuto dell'app Attività in Teams, disponibile per gli utenti. Per altri scenari, le app di terze parti come **Trello**, **Asana** possono anche essere esplorate per essere usate all'interno di Teams. |
 | Estensioni - Connettori | Usare l'opzione **Connettori** del menu (...) per qualsiasi canale per cui è necessario il connettore. |
-| [Report sull'adozione di analisi (utilizzo),](teams-analytics-and-reports/view-analytics.md) [report sull'utilizzo](teams-analytics-and-reports/teams-usage-report.md), [report attività](teams-analytics-and-reports/user-activity-report.md) | I proprietari dei team possono accedere ai report per i propri team dal menu (...) per **gestire** **Teamanalytics** > . |
+| [Report sull'adozione di analisi (utilizzo),](teams-analytics-and-reports/view-analytics.md) [report sull'utilizzo](teams-analytics-and-reports/teams-usage-report.md), [report attività](teams-analytics-and-reports/user-activity-report.md) | I proprietari dei team possono accedere ai report per i propri team dal menu (...) per gestire **l'analisi** **del team** > . |
 
 > [!NOTE]
 > Teams gli utenti finali possono usare Teams su desktop o dispositivi mobili per gestire i singoli team e canali e non dovranno accedere al centro Teams Amministrazione.

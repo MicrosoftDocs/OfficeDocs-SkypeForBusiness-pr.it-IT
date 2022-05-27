@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f31df258558e052e887a679321dd6ed2db48f344
-ms.sourcegitcommit: 9532eb79310cd653010565607fa394f2b8dd182d
+ms.openlocfilehash: 93b0a74feb2d9333d634b9a7858ff6136ca5b5ec
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65646255"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65676498"
 ---
 # <a name="teams-approvals-app-availability"></a>Disponibilità dell'app Approvazioni in Teams
 
@@ -65,7 +65,7 @@ Il common data model (CDM) è il linguaggio dei dati condiviso usato dalle appli
 
 Altre informazioni sui [flussi di lavoro di Approvazioni](/power-automate/modern-approvals).
 
-Approvazioni create da un modello archiviano comunque i dati in Microsoft Dataverse, ad esempio il titolo, i dettagli, l'ID modello e altro ancora. Le risposte inviate nella richiesta di approvazione vengono archiviate in Forms. Altre informazioni  [sull'archiviazione dei dati per Microsoft Forms](https://support.microsoft.com/office/data-storage-for-microsoft-forms-97a34e2e-98e1-4dc2-b6b4-7a8444cb1dc3#:~:text=Where%20data%20is%20stored%20for%20Microsoft%20Forms.%20Microsoft,European-based%20tenants%20is%20stored%20on%20servers%20in%20Europe).
+Approvazioni create da un modello archiviano comunque i dati in Microsoft Dataverse, ad esempio il titolo, i dettagli, l'ID modello e altro ancora. Le risposte inviate nella richiesta di approvazione vengono archiviate in Forms. Altre informazioni [sull'archiviazione dei dati per Microsoft Forms](https://support.microsoft.com/office/data-storage-for-microsoft-forms-97a34e2e-98e1-4dc2-b6b4-7a8444cb1dc3#:~:text=Where%20data%20is%20stored%20for%20Microsoft%20Forms.%20Microsoft,European-based%20tenants%20is%20stored%20on%20servers%20in%20Europe).
 
 >[!Note]
 >Se si elimina il modello di modulo nel sito Microsoft Forms, il modello di approvazione verrà interrotto e gli utenti non saranno in grado di avviare la richiesta. Gli utenti ricevono un errore "CDB TableNotFound" quando provano ad aprire un modello di approvazione eliminato in Microsoft Forms.
@@ -223,7 +223,7 @@ Per usare la funzionalità Approvazioni firma elettronica dell'app, è necessari
 
 È possibile usare l'interfaccia di amministrazione di Teams per controllare quali provider di firma elettronica di terze parti sono disponibili per gli utenti nell'app Approvazioni. Per impostazione predefinita, i provider di firma elettronica sono abilitati nell'app Approvazioni. Quando si disabilita un provider di firme elettronica, gli utenti non avranno accesso a tale provider quando creano approvazioni. Inoltre, gli utenti non potranno visualizzare le richieste di firma elettronica create con tale provider.
 
-1. Nel riquadro sinistro dell'interfaccia di amministrazione di Teams passare a **Teams** **appGesti** >  app.
+1. Nel riquadro sinistro dell'interfaccia di amministrazione di Teams passare a **Teams app** > **Gestisci app**.
 2. Cerca l'app Approvazioni e quindi selezionala.
 3. Passare alla scheda **Impostazioni** e quindi eseguire una o più delle operazioni seguenti:
 

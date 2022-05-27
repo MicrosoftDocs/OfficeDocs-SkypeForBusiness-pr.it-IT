@@ -19,12 +19,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4f37e364450104b07adfe6a48c8cc29bab607470
-ms.sourcegitcommit: 480046a53dfb6e6cf867e1920f8fb43dda9d3774
+ms.openlocfilehash: 7123d45819f6e956ecf562fd321e7762b50e5ae6
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "61545007"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65674658"
 ---
 # <a name="how-to-provision-teams-at-scale-for-frontline-workers"></a>Come eseguire il provisioning di Microsoft Teams su vasta scala per gli operatori sul campo
 
@@ -214,8 +214,8 @@ Le app vengono aggiunte alla barra dell'app. Questa barra si trova sul lato del 
 
 Le impostazioni seguenti possono essere personalizzate in base alle esigenze aziendali. Le opzioni consigliate sono state scelte in base alle procedure consigliate e per semplificare l'onboarding di nuovi utenti su vasta scala. Per altre informazioni, fare clic [qui](teams-app-setup-policies.md).
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di configurazione**.
-2. Fare clic su  **Aggiungi**.  
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **App di Teams** > **Criteri di configurazione**.
+2. Fare clic su **Aggiungi**.  
 3. Immettere un nome e una descrizione per il criterio. Ad esempio, Criteri di installazione app per i manager sul campo.
     :::image type="content" source="media/flw-flm-app-setup-policy.png" alt-text="Screenshot del nome e della descrizione di esempio per i criteri di installazione app per i manager sul campo.":::
 
@@ -227,7 +227,7 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
     :::image type="content" source="media/flw-add-pinned-apps.png" alt-text="Screenshot della schermata Aggiungi app bloccate, con il pulsante Aggiungi per l'app Turni":::
 
 7. Rimuovere Chiamata, se presente. Quando questa funzionalità viene rimossa, non viene disabilitata per l'utente ma si impedisce che venga visualizzata sulla barra delle app, per semplificare l'esperienza dell'utente finale.
-8. Disporre le app nell'ordine seguente per specificare l'ordine in cui vengono visualizzate sulla barra delle app di Teams, quindi fare clic su  **Salva**.
+8. Disporre le app nell'ordine seguente per specificare l'ordine in cui vengono visualizzate sulla barra delle app di Teams, quindi fare clic su **Salva**.
 
     - Attività
     - Chat
@@ -241,8 +241,8 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
 
 Le impostazioni seguenti possono essere personalizzate in base alle esigenze aziendali. Le opzioni consigliate sono state scelte in base alle procedure consigliate e per semplificare l'onboarding di nuovi utenti su vasta scala. Per altre informazioni, fare clic [qui](teams-app-setup-policies.md).
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di configurazione**.
-2. Fare clic su  **Aggiungi**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **App di Teams** > **Criteri di configurazione**.
+2. Fare clic su **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio. Ad esempio, Criterio di configurazione app per gli operatori sul campo.
     :::image type="content" source="media/flw-flw-app-setup-policy.png" alt-text="Screenshot del nome e della descrizione di esempio per i criteri di installazione app per gli operatori sul campo.":::
 
@@ -255,7 +255,7 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
     :::image type="content" source="media/flw-add-pinned-apps.png" alt-text="Screenshot della schermata Aggiungi app bloccate, con il pulsante Aggiungi per l'app Turni":::
 
 7. Rimuovere Riunioni e Chiamata, se presenti. Quando queste funzionalità vengono rimosse, non vengono disabilitate per l'utente ma si impedisce che vengano visualizzate sulla barra delle app, per semplificare l'esperienza dell'utente finale.
-8. Disporre le app nell'ordine seguente per specificare l'ordine in cui vengono visualizzate sulla barra delle app di Teams, quindi fare clic su  **Salva**.
+8. Disporre le app nell'ordine seguente per specificare l'ordine in cui vengono visualizzate sulla barra delle app di Teams, quindi fare clic su **Salva**.
     - Attività
     - Chat
     - Teams
@@ -273,31 +273,31 @@ Gli amministratori possono usare i criteri di autorizzazione app per controllare
 
 Le impostazioni seguenti possono essere personalizzate in base alle esigenze aziendali. Queste sono opzioni raccomandate in base alle procedure consigliate che possono semplificare l'onboarding di nuovi utenti su vasta scala. Per altre informazioni, fare clic [qui](teams-app-permission-policies.md).
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di autorizzazione**.
-2. Fare clic su  **Aggiungi**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Criteri di autorizzazione**.
+2. Fare clic su **Aggiungi**.
 
     :::image type="content" source="media/flw-add-app-permission-policy.png" alt-text="Screenshot della pagina Aggiungi i criteri di autorizzazione app.":::
 
 3. Immettere un nome e una descrizione per il criterio. Ad esempio, Criterio di autorizzazione app per manager sul campo.
-4. In  **App Microsoft**, selezionare **Consenti tutte le app**.
-5. In  **App di terze parti**, selezionare **Consenti tutte le app**.
+4. In **Apps Microsoft**, selezionare **Consenti tutte le app**.
+5. In **App di terze parti**, selezionare **Consenti tutte le app**.
 6. In **App personalizzate**, selezionare **Consenti tutte le app**.
-7. Fare clic su  **Salva**.
+7. Fare clic su **Salva**.
 
 #### <a name="create-the-frontline-worker-app-permission-policy"></a>Creare i criteri di autorizzazione app per gli operatori sul campo
 
 Le impostazioni seguenti possono essere personalizzate in base alle esigenze aziendali. Queste sono opzioni raccomandate in base alle procedure consigliate che possono semplificare l'onboarding di nuovi utenti su vasta scala. Per altre informazioni, fare clic [qui](teams-app-permission-policies.md).
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di autorizzazione**.
-2. Fare clic su  **Aggiungi**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Criteri di autorizzazione**.
+2. Fare clic su **Aggiungi**.
 
     :::image type="content" source="media/flw-add-app-permission-policy.png" alt-text="Screenshot della pagina Aggiungi i criteri di autorizzazione app.":::
 
 3. Immettere un nome e una descrizione per il criterio. Ad esempio, Criterio di autorizzazione app per operatori sul campo.
-4. In  **App Microsoft**, selezionare **Consenti tutte le app**.
-5. In  **App di terze parti**, selezionare **Blocca tutte le app**.
+4. In **Apps Microsoft**, selezionare **Consenti tutte le app**.
+5. In **App di terze parti**, selezionare **Blocca tutte le app**.
 6. In **App personalizzate**, selezionare **Consenti tutte le app**.
-7. Fare clic su  **Salva**.
+7. Fare clic su **Salva**.
 
 ## <a name="users-and-security-groups"></a>Utenti e gruppi di sicurezza
 

@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d061fa0cda1620980e7da68a345fc13acb6fc12a
-ms.sourcegitcommit: bf0071417188b33fc23e2a420187da5024d4bd40
+ms.openlocfilehash: 67be704ae81379a122a9c205305da1c4d4a5dcbd
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "62362982"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65675648"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -106,12 +106,12 @@ I criteri di Teams consentono di gestire le opzioni disponibili per utenti o gru
 
 ### <a name="create-class-teams-for-secure-classroom-use"></a>Creare team di classe per un uso sicuro delle classi
 
-Microsoft Teams per l’istruzione offre   [tipi di team specifici](https://support.office.com/article/choose-a-team-type-to-collaborate-in-microsoft-teams-0a971053-d640-4555-9fd7-f785c2b99e67)  per finalità didattiche. Il [team di classe](https://support.office.com/article/create-a-class-team-in-microsoft-teams-fae422eb-58b7-4431-9ff2-a4b9b6ae7c5b) è concepito per l'uso didattico e offre funzionalità specifiche che supportano le esigenze delle classi scolastiche, tra cui:  
+Microsoft Teams per l'istruzione offre [tipi di team specifici](https://support.office.com/article/choose-a-team-type-to-collaborate-in-microsoft-teams-0a971053-d640-4555-9fd7-f785c2b99e67) per finalità didattiche. Il [team di classe](https://support.office.com/article/create-a-class-team-in-microsoft-teams-fae422eb-58b7-4431-9ff2-a4b9b6ae7c5b) è concepito per l'uso didattico e offre funzionalità specifiche che supportano le esigenze delle classi scolastiche, tra cui:  
 
 - Attività
 - Voti
 - Blocco appunti di OneNote per la classe  
-- [Cartella Materiali della classe](https://support.office.com/article/Use-folders-to-create-read-only-files-for-students-or-other-team-members-0e7791d7-8c9c-4749-9bca-984289477988)  per proteggere i contenuti di sola lettura per gli studenti
+- [Cartella Materiali della classe](https://support.office.com/article/Use-folders-to-create-read-only-files-for-students-or-other-team-members-0e7791d7-8c9c-4749-9bca-984289477988) per proteggere i contenuti di sola lettura per gli studenti
 - [Insights](./class-insights.md) fornisce dati in tempo reale riguardanti il coinvolgimento, gli esercizi e il benessere degli studenti per ogni aula. 
 - [Accesso anticipato del docente](https://support.microsoft.com/article/activate-early-access-class-teams-created-with-school-data-sync-0d154696-66ab-4fcf-b22f-c3d9a82aaf78) per configurare la classe prima di aggiungere gli studenti 
 - La possibilità di disattivare l'audio degli studenti che disturbano, e altre autorizzazioni speciali  
@@ -249,7 +249,7 @@ Nel [tipo di risorsa del team](/graph/api/resources/team?view=graph-rest-beta&pr
 
 ##### <a name="how-do-i-activate-a-class-for-an-educator"></a>Come si attiva un corso per un docente?
 
-Usare [Update Team API](/graph/api/team-update?tabs=http&view=graph-rest-beta&preserve-view=true) e impostare la ```isMembershipLimitedToOwners``` proprietà su false per disattivare il team per conto del docente. Si noti che la disattivazione di un team non potrà essere annullata.
+Usare l’[API Aggiorna Team](/graph/api/team-update?tabs=http&view=graph-rest-beta&preserve-view=true) e impostare la proprietà ```isMembershipLimitedToOwners``` su false per attivare il team per conto del docente. Si noti che la disattivazione di un team non potrà essere annullata.
 
 ### <a name="create-staff-teams-for-staff-communication-and-collaboration"></a>Creare team del personale per la comunicazione e la collaborazione
 

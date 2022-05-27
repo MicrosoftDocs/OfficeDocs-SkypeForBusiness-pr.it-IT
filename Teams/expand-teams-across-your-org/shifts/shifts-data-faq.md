@@ -22,12 +22,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d4fc6e36c0c78bdf86e1384fe6269f292f20deb7
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: 35447b432118737821f578ddaee364e780f18e0d
+ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922827"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65675348"
 ---
 # <a name="shifts-data-faq"></a>Domande frequenti su Turni
 
@@ -45,9 +45,9 @@ Quando si configura Teams per la prima volta, si sceglie un paese o un'area geog
 
 ## <a name="can-i-access-and-export-or-delete-a-users-personal-data-in-shifts"></a>È possibile accedere ed esportare o eliminare i dati personali di un utente in Turni?
 
-Turni è conforme al Regolamento generale sulla protezione dei dati (GDPR).Una richiesta formale da parte di una persona (nota come soggetto dei dati) di intraprendere un'azione sui propri dati personali è chiamata richiesta dell'interessato (DSR). È possibile trovare e agire sui dati personali in Turni in risposta a un DSR.
+Turni è conforme al Regolamento generale sulla protezione dei dati (GDPR). Una richiesta formale da parte di una persona (nota come soggetto dei dati) di intraprendere un'azione sui propri dati personali è chiamata richiesta dell'interessato (DSR). È possibile trovare e agire sui dati personali in Turni in risposta a un DSR.
 
-È possibile usare lo strumento Ricerca contenuto eDiscovery nel portale di conformità Microsoft Purview per cercare ed esportare i dati di pianificazione e orologio da Excel. Per tutti gli altri dati di Turni, è possibile acquisire screenshot dei dati.
+È possibile usare lo strumento Ricerca contenuto di eDiscovery nel Portale di conformità di Microsoft Purview per cercare ed esportare pianificare e dati dell'orologio da Excel. Per tutti gli altri dati di Turni, è possibile acquisire screenshot dei dati.
 
 Per altre informazioni, vedere [Office 365 richieste dell'interessato per il GDPR e il CCPA](/microsoft-365/compliance/gdpr-dsr-office365).
 
@@ -57,13 +57,13 @@ La disattivazione di Turni nell'organizzazione *non* elimina i dati. Se si disat
 
 Se si elimina il tenant, tutti i dati di Turni vengono eliminati al termine del periodo di conservazione.
 
-Non è possibile eliminare solo i dati di Turni. Se si elimina un team in Teams, i dati della pianificazione di Turni associati al team vengono eliminati al termine del periodo di conservazione. Per altre informazioni, vedere [Conservazione, eliminazione e distruzione dei dati in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
+Non è possibile eliminare solo i dati di Turni. Se si elimina un team in Teams, Turni pianificare i dati associati al team vengono eliminati al termine del periodo di conservazione. Per altre informazioni, vedere [Conservazione, eliminazione e distruzione dei dati in Microsoft 365](/compliance/assurance/assurance-data-retention-deletion-and-destruction-overview).
 
-## <a name="can-i-recover-a-shifts-schedule-that-was-deleted"></a>È possibile recuperare una pianificazione di Turni eliminata?
+## <a name="can-i-recover-a-shifts-schedule-that-was-deleted"></a>È possibile recuperare un pianificare Turni eliminato?
 
-È possibile recuperare una pianificazione eliminata se il gruppo di Microsoft 365 che lo esegue il backup (o il team in Teams) viene ripristinata.
+È possibile recuperare un pianificare eliminato se il gruppo di Microsoft 365 che lo esegue il backup (o il team in Teams) viene ripristinato.
 
-Per impostazione predefinita, un gruppo di Microsoft 365 viene mantenuto per 30 giorni. Questo periodo di 30 giorni è denominato "eliminazione soft" perché è comunque possibile ripristinare il gruppo. Per altre informazioni, vedere [Ripristinare un gruppo di Microsoft 365 eliminato](/microsoft-365/admin/create-groups/restore-deleted-group?view=o365-worldwide&tabs=admin-center).
+Per impostazione predefinita, un gruppo di Microsoft 365 viene mantenuto per 30 giorni. Questo periodo di 30 giorni è denominato "eliminazione soft" perché è comunque possibile ripristinare il gruppo. Per altre informazioni, vedere [Ripristinare un gruppo di Microsoft 365 eliminato](/microsoft-365/admin/create-groups/restore-deleted-group?tabs=admin-center).
 
 ## <a name="can-i-use-custom-retention-policies-for-shifts-data"></a>È possibile usare criteri di conservazione personalizzati per i dati di Turni?
 
@@ -77,7 +77,7 @@ Oggi non offriamo la possibilità di recuperare i dati per un utente la cui lice
 
 ## <a name="what-type-of-encryption-does-shifts-use-for-data-at-rest-and-in-transit"></a>Quale tipo di crittografia usa Turni per i dati archiviati e in transito?
 
-I dati turni vengono crittografati inattivi da Azure Cosmos DB e Azure Archiviazione. Per altre informazioni, vedere [Crittografia dei dati di Azure inattivi](/azure/security/fundamentals/encryption-atrest) e [Crittografia dei dati in Azure Cosmos DB](/azure/cosmos-db/database-encryption-at-rest).
+I dati di Turni vengono crittografati inattivi da Azure Cosmos DB e Archiviazione di Azure. Per altre informazioni, vedere [Crittografia dei dati di Azure inattivi](/azure/security/fundamentals/encryption-atrest) e [Crittografia dei dati in Azure Cosmos DB](/azure/cosmos-db/database-encryption-at-rest).
 
 Turni segue Microsoft 365 linee guida per la crittografia dei dati in transito. Per altre informazioni, vedere [Crittografia dei dati in transito](/compliance/assurance/assurance-encryption-in-transit).
 
@@ -85,7 +85,7 @@ La crittografia dei dati a turni inattivi e in transito viene verificata annualm
 
 ## <a name="can-i-access-immutable-copies-of-shifts-data"></a>È possibile accedere a copie non modificabili dei dati di Turni?
 
-Non archiviamo copie non modificabili dei dati di Turni. Ad esempio, un responsabile può apportare modifiche a una programmazione, ad esempio aggiungere note, modificare gli orari dei turni, assegnare attività e così via.
+Non archiviamo copie non modificabili dei dati di Turni. Ad esempio, un responsabile può apportare modifiche a un pianificare, ad esempio aggiungere note, modificare gli orari dei turni, assegnare attività e così via.
 
 ## <a name="can-shifts-data-be-edited"></a>I dati di Turni possono essere modificati?
 
