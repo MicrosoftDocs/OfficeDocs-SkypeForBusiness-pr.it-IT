@@ -12,12 +12,12 @@ ms.collection:
 description: Informazioni sulle versioni supportate dal modulo Teams PowerShell, usato per l'amministrazione di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 80465e1685ea05d6f49c6119110ddf2004098055
-ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
+ms.openlocfilehash: 6915448d76de64a65a9ac50e5c66e3ca41e051ef
+ms.sourcegitcommit: 8ce73ea99be607f5cdccb22a5366bc96e8fb09c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65681917"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65758314"
 ---
 # <a name="teams-powershell-module---supported-versions"></a>Modulo di PowerShell Teams - Versioni supportate
 
@@ -29,11 +29,11 @@ Le organizzazioni che hanno appena avviato l'onboarding a Teams potranno usare T
 
 ## <a name="current-organizations-non-tpm-active"></a>Organizzazioni correnti (non TPM attivo)
 
-Le organizzazioni che non hanno usato Teams modulo di PowerShell negli ultimi tre mesi (22 gennaio - 22 marzo), potranno usare Teams modulo di PowerShell solo nella serie 4.x.x o versione successiva a partire dal 1° aprile 2022.
+Le organizzazioni che non hanno usato Teams modulo di PowerShell dal 22 gennaio al 22 marzo potranno usare Teams modulo di PowerShell solo nella serie 4.x.x o successiva a partire dal 1° aprile 2022.
 
 ## <a name="current-organizations-tpm-active"></a>Organizzazioni correnti (TPM attivo)
 
-Le organizzazioni che usano Teams modulo di PowerShell negli ultimi tre mesi (22 gennaio - 22 marzo), potranno usare Teams modulo di PowerShell solo nella serie 4.x.x o successiva a partire dal 15 giugno 2022. Post del Centro messaggi per riferimento - MC350371.
+Le organizzazioni che hanno usato Teams modulo di PowerShell durante il periodo compreso tra il 22 gennaio e il 22 marzo potranno usare Teams modulo PowerShell solo nella serie 4.x.x o successiva a partire dal 15 giugno 2022. Post del Centro messaggi per riferimento - MC350371.
 
 ## <a name="important-notes"></a>Note importanti
 
@@ -54,7 +54,9 @@ Le organizzazioni che usano Teams modulo di PowerShell negli ultimi tre mesi (22
 
   - Modifiche in arrivo per Telefono assegnazione di numeri: maggiori dettagli in [Set-CsUser](/powershell/module/skype/set-csuser), [Set-CsOnlineVoiceUser](/powershell/module/skype/set-csonlinevoiceuser), [Set-CsOnlineApplicationInstance](/powershell/module/skype/set-csonlineapplicationinstance) & [Set-CsOnlineVoiceApplicationInstance](/powershell/module/skype/set-csonlinevoiceapplicationinstance) (post del Centro messaggi - MC316139).
 
-  - Modifiche al parametro in Get-CsTenant - maggiori dettagli in [Get-CsTenant](/powershell/module/skype/get-cstenant).
+  - Modifiche dei parametri in Get-CsTenant - maggiori dettagli in [Get-CsTenant](/powershell/module/skype/get-cstenant) (post del Centro messaggi - MC365397).
+  
+  - Se gli script usano cmdlet new/set di criteri o di configurazione con i parametri del tipo PSListModifier, è consigliabile usare la versione più recente (4.2.0 o successiva).
 
 - Durante l'uso di TPM 4.x.x o versione successiva, è consigliabile non usare i cmdlet deprecati o non supportati indicati [di seguito](#deprecated-cmdlets).
 
@@ -77,7 +79,7 @@ Le organizzazioni che usano Teams modulo di PowerShell negli ultimi tre mesi (22
   - [Grant| Ottieni| Imposta| Novità| Remove]-CsClientPolicy
   - [Grant| Get]-CsHostedVoicemailPolicy
   - [Grant| Ottieni| Imposta| Novità| Remove]-CsMobilityPolicy
-  - [Grant| Get] CsVoiceRoutingPolicy
+  - [Grant| Get]-CsVoiceRoutingPolicy
   - [Grant| Get]-CsBroadcastMeetingPolicy
   - [Grant| Get]-CsCloudMeetingPolicy
   - [Grant| Get]-CsGraphPolicy
@@ -96,7 +98,7 @@ Le organizzazioni che usano Teams modulo di PowerShell negli ultimi tre mesi (22
   - Get-CsHostingProvider
   - [Ottieni| Imposta| Registrati| Unregister]-CsHybridPSTNAppliance
   - [Ottieni| Imposta| Novità| Rimuovi]-CsHybridPSTNSite
-  - [Ottieni| Set]- CsHybridMediationServer
+  - [Ottieni| Set]-CsHybridMediationServer
   - [Ottieni| Imposta| Novità| Rimuovi]-CsTenantUpdateTimeWindow
   - Get-CsUserLocationStatus
   - Invoke-CsUcsRollback

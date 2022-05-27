@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: Amministrazione possibile leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 03a23ecb47fb0efca19ce3a7085a1fcc41b80dc3
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: eadeea6648da5ef2a5b5210b45bb3c884a1cabe8
+ms.sourcegitcommit: 55926815f13efce42fb45f63d95515a5765e0d40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65674198"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753059"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
@@ -39,6 +39,7 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 
 |Rilascio |Pubblicato su <br/> Microsoft Store |
 |--- |--- |
+|4.12.138.0 |5/26/2022 |
 |4.12.126.0 |4/27/2022 |
 |4.11.17.0 |3/3/2022 |
 |4.11.12.0 |1/24/2022 |
@@ -90,6 +91,13 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 |RTM (1.0.8) |12/7/2016 |
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Microsoft Teams Rooms introduzione delle funzionalità e risoluzione dei problemi
+
+### <a name="4121380-5262022"></a>4.12.138.0 (5/26/2022)
+
+Introdotto in questo aggiornamento:
+- Correzione di bug per Jabra Panacast 50
+- Correzione di bug per l'accesso a una riunione anonima tra cloud
+- Correzioni di qualità e affidabilità
 
 ### <a name="4121260-4272022"></a>4.12.126.0 (4/27/2022)
 
