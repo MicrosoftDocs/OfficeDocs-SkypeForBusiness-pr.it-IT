@@ -1,7 +1,7 @@
 ---
 title: Dispositivi per Teams
-ms.author: czawideh
-author: cazawideh
+ms.author: dstrome
+author: dstrome
 manager: serdars
 ms.reviewer: divank
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e da conferenza sono certificati per Microsoft Teams per produrre risultati ottimali.
-ms.openlocfilehash: 6506c4820791cbea68630ce60c5c35c6e644e894
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 7ad570697609c8e2f6d2cd13cb26c0e147822afa
+ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675948"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65760938"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>dispositivi Android certificati Microsoft Teams
 
@@ -48,8 +48,6 @@ I seguenti dispositivi sono certificati ai sensi del Programma di certificazione
 | AudioCodes C450HD                      | `1.17.443`                                                  |    5 agosto 2023              | 9 |
 | AudioCodes C448HD(solo modalità CAP)       |  `1.17.443`                                                   | 5 agosto 2023            | 9 |
 | Yealink CP965    | `143.15.0.7 `          | 3 settembre 2025     | 11 |
-| AudioCodes C450HD                      | `C450HD_TEAMS_0.225`                                                  | 22 aprile 2022               | 7.1.x |
-| AudioCodes C448HD(solo modalità CAP)       | `C450HD_TEAMS_0.225`                                                  | 22 aprile 2022               | 7.1.x |
 | Crestron UC-P10/T/CT                   | `1.0.0.80`       | 5 agosto 2023            | 9 |
 | Crestron UC-P8/T /CT                   | `1.0.0.56`       | 5 agosto 2023            | 9 |
 | Audiocodes C470HD                      | `1.8.293   `                                               | 5 agosto 2023               | 9 |
@@ -231,6 +229,7 @@ Di seguito sono riportati i Teams Rooms più recenti sulle versioni di app e fir
 
 | Versione del prodotto| Data di rilascio | versione dell'app Microsoft Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
+| 2022 Aggiornamento n. 2  | 25 maggio 2022 |`1449/1.0.96.2022051102`| `5.0.5304.0` | `1.0.0.202112100118.product version code : 322` |
 | 2022 Aggiornamento n. 1  | 24 febbraio 2022 |`1449/1.0.96.2022011305`| `5.0.5304.0` | `1.0.0.202112100118.product version code : 322` |
 | Aggiornamento #2A 2021 | 15 luglio 2021  |`1449/1.0.96.2021070803`|  `5.0.5088.0` |  `1.0.0.202104280345.product version code: 262` |
 | 2021 Aggiornamento n. 2 | 28 giugno 2021  |`1449/1.0.96.2021051904`|  `5.0.5088.0` |  `1.0.0.202104280345.product version code: 262` |
