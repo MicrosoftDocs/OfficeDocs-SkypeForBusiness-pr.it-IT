@@ -1,7 +1,7 @@
 ---
-title: Teams dispositivo
-ms.author: czawideh
-author: cazawideh
+title: Teams store di dispositivi
+ms.author: dstrome
+author: dstrome
 manager: serdars
 ms.reviewer: rahulimi
 ms.topic: article
@@ -15,55 +15,55 @@ ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
-description: Informazioni su come esplorare e acquistare dispositivi nell'Teams dell'interfaccia di amministrazione
-ms.openlocfilehash: f83fd22192a8145167ff04a2bd73b88746dd3ce7
-ms.sourcegitcommit: 39378888464ade3cb45879a449143f40f202f3e9
+description: Scopri come esplorare e acquistare dispositivi nello store dei dispositivi dell'interfaccia di amministrazione di Teams
+ms.openlocfilehash: da520b6396fa7e47288f4fdaa6b9f028ba16b3dd
+ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64457079"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65761448"
 ---
-# <a name="purchase-devices-in-the-teams-device-store"></a>Acquistare dispositivi nello store Teams dispositivi
+# <a name="purchase-devices-in-the-teams-device-store"></a>Acquistare dispositivi nello store dei dispositivi Teams
 
 >[!NOTE]
->L Teams archivio dispositivi è attualmente disponibile solo **nell'anteprima pubblica**. L'anteprima pubblica consente di testare le funzionalità imminenti e fornire feedback. Le funzionalità incluse nell'anteprima pubblica potrebbero non essere complete, potrebbero subire modifiche e non sono supportate in Office 365 Government Cloud.
+>L'archivio Teams dispositivi è attualmente disponibile solo in **anteprima pubblica**. L'anteprima pubblica consente di testare le funzionalità imminenti e fornire feedback. Le funzionalità incluse nell'anteprima pubblica potrebbero non essere complete, potrebbero essere soggette a modifiche e non sono supportate in Office 365 Government Cloud.
 
-L'archivio dispositivi nell'Teams di amministrazione consente di esplorare, acquistare ed eseguire il provisioning di dispositivi certificati per Microsoft Teams.  
+Lo store dei dispositivi nell'interfaccia di amministrazione di Teams consente di esplorare, acquistare ed effettuare il provisioning dei dispositivi certificati per Microsoft Teams.  
 
- Per usare l'archivio dispositivi nell'Teams di amministrazione, passare **a Dispositivi > Store**.
+ Per usare l'archivio dispositivi nell'interfaccia di amministrazione di Teams, vai a **Dispositivi > Store**.
 
 ## <a name="requirements"></a>Requisiti
 
-Per usare l'archivio dispositivi, è necessario essere un amministratore globale, un amministratore Teams o un amministratore Teams dispositivo.
+Per usare l'archivio dispositivi, è necessario essere un amministratore globale, un amministratore Teams o un amministratore del dispositivo Teams.
 
-## <a name="browse-the-store"></a>Esplorare lo store
+## <a name="browse-the-store"></a>Esplora lo Store
 
-L'archivio dispositivi include tutti i dispositivi certificati per Teams, inclusi cuffie, videocamere Web e dispositivi Teams come Teams Rooms, telefoni da tavolo e schermi Teams. È possibile ordinare, filtrare o cercare il dispositivo necessario per l'organizzazione.
+L'archivio dispositivi include tutti i dispositivi certificati per Teams, inclusi auricolari, fotocamere Web e dispositivi Teams come Teams Rooms, telefoni da tavolo e schermi Teams. È possibile ordinare, filtrare o eseguire ricerche per trovare il dispositivo necessario all'organizzazione.
 
-## <a name="purchase-devices"></a>Acquistare dispositivi
+## <a name="purchase-devices"></a>Acquista dispositivi
 
-Quando si acquistano dispositivi dallo store di dispositivi, il pagamento e l'adempimento, incluse le spedizioni e la consegna, vengono gestiti da UnifiedCommunications.com, un partner microsoft di terze parti.  
+Quando si acquistano dispositivi dallo store del dispositivo, il pagamento e l'evasione dei pagamenti, inclusa la spedizione e la consegna, vengono gestiti da UnifiedCommunications.com, un partner di evasione dei dati di terze parti Microsoft.  
 
-È possibile pagare con una carta di credito o un ordine di acquisto. Il pagamento dell'ordine di acquisto richiede l'installazione una sola volta con il provider di adempimento.
+Puoi pagare con una carta di credito o un ordine d'acquisto. Il pagamento dell'ordine di acquisto richiede la configurazione una tantum con il provider di evasione ordini.
 
 Tutti gli ordini possono essere restituiti fino a 30 giorni dopo la consegna.
 
 ## <a name="data-handling-and-sharing"></a>Gestione e condivisione dei dati
 
-L'archivio Teams dispositivo deve condividere le informazioni di base su utenti e società, inclusi i GUID utente e tenant, con UnifiedCommunications.com per abilitare gli acquisti nell'interfaccia di amministrazione Teams lavoro.
+L'archivio Teams dispositivi deve condividere le informazioni di base su utenti e società, inclusi i GUID di utenti e tenant, con UnifiedCommunications.com per consentire l'acquisto nell'interfaccia di amministrazione di Teams.
 
-La condivisione dei dati è disattivata per impostazione predefinita. Per abilitarlo, vai all'Teams dispositivi mobili, seleziona l'icona delle impostazioni e attiva l'impostazione.  
+La condivisione dei dati è disattivata per impostazione predefinita. Per abilitarla, vai all'archivio Teams dispositivi, seleziona l'icona delle impostazioni e attiva l'impostazione.  
 
-Quando questa impostazione è disattivata, i dati non verranno condivisi ed è possibile esplorare l'archivio Teams dispositivi, ma non è possibile effettuare acquisti. I dati raccolti e condivisi con il provider di adempimento mentre l'impostazione era attivata vengono elaborati come specificato nell'informativa sulla privacy.
+Quando questa impostazione è disattivata, i dati non verranno condivisi e potrai esplorare lo store dei dispositivi Teams, ma non potrai effettuare acquisti. I dati raccolti e condivisi con il provider di evasione dei dati mentre l'impostazione era attivata vengono elaborati come specificato nella loro informativa sulla privacy.
 
-## <a name="order-tracking-and-history"></a>Tracciabilità e cronologia degli ordini
+## <a name="order-tracking-and-history"></a>Monitoraggio e cronologia degli ordini
 
-Per visualizzare la cronologia degli ordini, accedere a **Store > Cronologia ordini**, che include tutti gli ordini effettuati dall'utente e da altri amministratori dell'organizzazione. La cronologia degli ordini include anche lo stato di spedizione degli ordini. Per domande sulla tracciabilità, i resi o i rimborsi degli ordini, contattare UnifiedCommunications.com. Le informazioni di contatto sono disponibili nella pagina Cronologia ordini.
+Puoi visualizzare la cronologia degli ordini in **Store > Cronologia ordini**, che include tutti gli ordini effettuati da te e da altri amministratori dell'organizzazione. La cronologia ordini include anche lo stato della spedizione dei tuoi ordini. Per domande su verifica dell'ordine, resi o rimborsi, contatta UnifiedCommunications.com. Le informazioni di contatto sono disponibili nella pagina Cronologia ordini.
 
-Gli ordini effettuati nell'archivio Teams dispositivo e tutti i dati ad essi associati vengono classificati come ordini di tenant e dati del tenant.
+Gli ordini effettuati nell'archivio Teams dispositivo e i dati associati vengono classificati come ordini tenant e dati del tenant.
 
-## <a name="provision-devices"></a>Eseguire il provisioning dei dispositivi
+## <a name="provision-devices"></a>Effettuare il provisioning dei dispositivi
 
-Quando si acquistano dispositivi che supportano il provisioning remoto, l'indirizzo MAC di tali dispositivi viene aggiunto automaticamente all'interfaccia di amministrazione di Teams quando il dispositivo viene spedito. A seconda dell'ordine e della data di spedizione, l'indirizzo MAC può richiedere circa 5 giorni nell'interfaccia Teams di amministrazione.
+Quando si acquistano dispositivi che supportano il provisioning remoto, l'indirizzo MAC di tali dispositivi viene aggiunto automaticamente all'interfaccia di amministrazione di Teams quando il dispositivo viene spedito. A seconda dell'ordine e della data di spedizione, possono essere necessari circa 5 giorni prima che l'indirizzo MAC venga visualizzato nell'interfaccia di amministrazione di Teams.
 
-Dopo il recapito dei dispositivi, vedere Eseguire il [provisioning](remote-provision-remote-login.md#generate-a-verification-code) remoto dei dispositivi per completare il provisioning e il processo di accesso.
+Una volta forniti i dispositivi, vedi [Effettuare il provisioning remoto dei dispositivi](remote-provision-remote-login.md#generate-a-verification-code) per completare il processo di provisioning e accesso.

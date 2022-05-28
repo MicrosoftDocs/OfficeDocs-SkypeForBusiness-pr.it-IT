@@ -1,7 +1,7 @@
 ---
 title: Gestire Microsoft Teams Rooms.
-ms.author: czawideh
-author: cazawideh
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come sviluppare ed eseguire interventi di manutenzione e operazioni continuativi per garantire che i sistemi Microsoft Teams Rooms siano disponibili per gli utenti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 47f1c170fd0c41331dfaffa2d81386ac3c2fb722
-ms.sourcegitcommit: 0967f725aad0a7b9c430b2e30a37ea333007558a
+ms.openlocfilehash: 0252d44b073353aea43fec838f439ecb2233c43f
+ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65106271"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65761298"
 ---
 # <a name="manage-microsoft-teams-rooms"></a>Gestire Microsoft Teams Rooms.
 
@@ -100,8 +100,8 @@ Se si selezionano più impostazioni, le impostazioni che supportano la modifica 
 | **Altoparlante predefinito**                                          | Elenco degli altoparlanti disponibili                             | No                 |
 | **Volume predefinito**                                           | 0-100                                                  | No                 |
 | **Fotocamera contenuto**                                           | Elenco delle fotocamere disponibili                              | No                 |
-| **Miglioramenti apportati alla fotocamera contenuto**                              | Attivato<br>Disattivato                                              | No                 |
-| **Ruotare la fotocamera del contenuto di 180 gradi**                        | Attivato<br>Disattivato                                              | No                 |
+| **Miglioramenti Fotocamera contenuto**                              | Attivato<br>Disattivato                                              | No                 |
+| **Ruotare il contenuto di Fotocamera di 180 gradi**                        | Attivato<br>Disattivato                                              | No                 |
 | *Temi*                                                    |                                                        |                    |
 |                                                              | Predefinito<br>Nessun tema<br>Personalizzato<br>Elenco di temi predefiniti   | Sì                |
 

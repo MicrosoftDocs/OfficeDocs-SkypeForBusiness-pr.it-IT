@@ -1,7 +1,7 @@
 ---
 title: Autenticazione in Microsoft Teams Rooms
-ms.author: czawideh
-author: cazawideh
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -14,18 +14,18 @@ ms.assetid: ''
 ms.collection:
 - M365-collaboration
 description: Informazioni su come configurare l'autenticazione moderna per Microsoft Teams Rooms
-ms.openlocfilehash: de1487cce0c8a79d2a6c672f5cb729e247966c50
-ms.sourcegitcommit: 0967f725aad0a7b9c430b2e30a37ea333007558a
+ms.openlocfilehash: 5667b4bc2ab356ff9776282a6142a22abd33caa1
+ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65106301"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65760878"
 ---
 # <a name="authentication-in-microsoft-teams-rooms"></a>Autenticazione in Microsoft Teams Rooms
 
 La gestione degli account per Microsoft Teams Rooms viene gestita a livello di applicazione. L'applicazione si connette a Microsoft Teams, Skype for Business e Exchange per ottenere risorse per l'account delle risorse per abilitare le esperienze di chiamata e riunione. Teams Rooms usa un account di risorse dedicato per consentire funzionalità sempre attivate, scenari di chiamata (per i dispositivi configurati con un piano di chiamata) e meccanismi di blocco personalizzati. Ciò significa che l'autenticazione per Teams Rooms avviene in modo diverso rispetto ai dispositivi degli utenti finali.  
 
-L'autenticazione moderna è consigliata a tutti i clienti che usano Microsoft Teams Rooms con Microsoft 365 o Office 365. Se si dispone di una distribuzione locale del server Exchange o del server Skype for Business, configurare [l'autenticazione moderna ibrida](/office365/enterprise/hybrid-modern-auth-overview) con Azure Active Directory (Azure AD) per abilitare l'uso dell'autenticazione moderna.
+L'autenticazione moderna è consigliata a tutti i clienti che usano Microsoft Teams Rooms con Microsoft 365 o Office 365. Se si ha una distribuzione locale di Exchange server o Skype for Business server, configurare [l'autenticazione moderna ibrida](/office365/enterprise/hybrid-modern-auth-overview) con Azure Active Directory (Azure AD) per abilitare l'uso dell'autenticazione moderna.
 
 L'autenticazione moderna è supportata in Microsoft Teams Rooms versione 4.4.25.0 e successive.
 
@@ -61,7 +61,7 @@ Per applicare l'impostazione, vedere [Gestire in remoto le impostazioni di una c
 
 ## <a name="prepare-your-environment-for-modern-authentication"></a>Preparare l'ambiente per l'autenticazione moderna
 
-Prima di iniziare, assicurarsi di comprendere i modelli di identità da usare con Office 365 e Azure AD. Per altre informazioni[, vedere modelli di identità Office 365 e Azure Active Directory](/Office365/Enterprise/about-office-365-identity) e [Sincronizzazione ibrida delle identità e della directory per Microsoft 365 o Office 365](/Office365/Enterprise/plan-for-directory-synchronization).
+Prima di iniziare, assicurarsi di conoscere i modelli di identità da usare con Office 365 e Azure AD. Per altre informazioni[, vedere modelli di identità Office 365 e Azure Active Directory](/Office365/Enterprise/about-office-365-identity) e [Sincronizzazione ibrida delle identità e della directory per Microsoft 365 o Office 365](/Office365/Enterprise/plan-for-directory-synchronization).
 
 ### <a name="enable-modern-authentication-in-microsoft-365-or-office-365"></a>Abilitare l'autenticazione moderna in Microsoft 365 o Office 365
 
@@ -73,7 +73,7 @@ Per altre informazioni sulla disabilitazione dell'autenticazione di base in Exch
 
 ## <a name="hybrid-modern-authentication"></a>Autenticazione moderna ibrida
 
-Per eseguire correttamente l'autenticazione nel server Exchange locale e/o nel server Skype for Business, è necessario verificare che l'account delle risorse usato con Microsoft Teams Rooms sia configurato per ottenere l'autorizzazione da Azure AD.
+Per garantire la corretta autenticazione nel server Exchange locale e/o Skype for Business server, è necessario verificare che l'account della risorsa usato con Microsoft Teams Rooms sia configurato per ottenere l'autorizzazione da Azure AD.
 
 Teams Rooms flussi di autenticazione variano a seconda della configurazione dell'autenticazione. Per i clienti che usano un dominio gestito, Teams Rooms usa [le credenziali della password del proprietario della risorsa di OAuth 2.0](/azure/active-directory/develop/v2-oauth-ropc) con Azure Active Directory. Tuttavia, per i clienti che usano un dominio federato, viene usato [OAuth 2.0 SAML Bearer Assertion Flow](/azure/active-directory/develop/v2-saml-bearer-assertion).
 
@@ -106,7 +106,7 @@ Per abilitare l'autenticazione moderna ibrida con Skype for Business Server, ved
 
 Se la configurazione non consente l'autenticazione moderna ibrida o se è necessario rimuovere o disabilitare l'autenticazione moderna ibrida per Exchange o Skype for Business, vedere [Rimozione o disabilitazione dell'autenticazione moderna ibrida da Skype for Business e Exchange](/Office365/Enterprise/remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha).
 
-### <a name="azure-ad-conditional-access"></a>Azure AD accesso condizionale
+### <a name="azure-ad-conditional-access"></a>Accesso condizionale di Azure AD
 
 È possibile configurare un account delle risorse usato con Microsoft Teams Rooms per l'accesso basato su IP o sulla posizione. Per altre informazioni, vedere [Accesso condizionale: bloccare l'accesso in base alla posizione](/azure/active-directory/conditional-access/howto-conditional-access-policy-location).
 

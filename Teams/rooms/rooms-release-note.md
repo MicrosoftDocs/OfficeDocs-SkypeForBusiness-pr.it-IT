@@ -1,7 +1,7 @@
 ---
 title: Note sulla versione per Microsoft Teams Rooms (Windows)
-ms.author: czawideh
-author: cazawideh
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: Amministrazione possibile leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eadeea6648da5ef2a5b5210b45bb3c884a1cabe8
-ms.sourcegitcommit: 55926815f13efce42fb45f63d95515a5765e0d40
+ms.openlocfilehash: cbf840eb8abc60cbdc53325e41b3d9f95e6b4713
+ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753059"
+ms.locfileid: "65761108"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
@@ -95,8 +95,8 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 ### <a name="4121380-5262022"></a>4.12.138.0 (5/26/2022)
 
 Introdotto in questo aggiornamento:
-- Correzione di bug per Jabra Panacast 50
-- Correzione di bug per l'accesso a una riunione anonima tra cloud
+- Correzione di bug per più flussi video simultanei da Jabra Panacast 50 (video riunione, video videocamera contenuto)
+- Le riunioni tra cloud ora possono usare il dispositivo audio di conferenza predefinito
 - Correzioni di qualità e affidabilità
 
 ### <a name="4121260-4272022"></a>4.12.126.0 (4/27/2022)

@@ -1,7 +1,7 @@
 ---
 title: Gestire in remoto le impostazioni del dispositivo di Microsoft Teams Rooms
-ms.author: czawideh
-author: cazawideh
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 description: Gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft Teams Rooms, tra cui l'applicazione di un tema personalizzato e la creazione di un file di impostazioni master.
-ms.openlocfilehash: c363dce55df4d9bdcf125492c2ca92b3b20feba7
-ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
+ms.openlocfilehash: 15cedb921657d9be646fcd1aef94f15f989eec4f
+ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125461"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65761138"
 ---
 # <a name="manage-a-microsoft-teams-rooms-console-settings-remotely-with-an-xml-configuration-file"></a>Gestire in remoto le impostazioni di una console Microsoft Teams Rooms con un file di configurazione XML
 

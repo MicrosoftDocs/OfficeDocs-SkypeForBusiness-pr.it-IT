@@ -1,7 +1,7 @@
 ---
 title: Creare account delle risorse per sale e dispositivi di Teams condivisi
-ms.author: czawideh
-author: cazawideh
+ms.author: dstrome
+author: dstrome
 manager: serdars
 audience: ITPro
 ms.reviewer: sohailta
@@ -15,16 +15,16 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Leggere questo articolo per informazioni su come creare account di risorse per sale e dispositivi condivisi, tra cui Microsoft Teams Rooms, Teams Rooms su Surface Hub e hot desking su schermi Teams.
-ms.openlocfilehash: e788ca2086faf86f602ef0938d520ea03dce4ef4
-ms.sourcegitcommit: 5bfd2e210617e4388241500eeda7b50d5f2a0ba3
+ms.openlocfilehash: 53d69a5dd91e012bc948bad1b9d7350afcbbb1b2
+ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "64885024"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65760888"
 ---
 # <a name="create-and-configure-resource-accounts-for-rooms-and-shared-teams-devices"></a>Creare e configurare account di risorse per sale e dispositivi di Teams condivisi
 
-Questo articolo illustra la procedura per creare account di risorse per gli spazi e i dispositivi condivisi e include la procedura per configurare gli account delle risorse per Microsoft Teams Rooms in Windows, Teams Rooms in Android, Teams Rooms in Surface Hub e hot desking su Teams visualizzato.
+Questo articolo illustra la procedura per creare gli account delle risorse per gli spazi e i dispositivi condivisi e include la procedura per configurare gli account delle risorse per Microsoft Teams Rooms in Windows, Teams Rooms in Android, Teams Rooms in Surface Hub e hot desking su schermi Teams.
 
 Microsoft 365 account delle risorse sono cassette postali e Teams account dedicati a risorse specifiche, ad esempio una sala o un proiettore. Questi account delle risorse possono rispondere automaticamente agli inviti alle riunioni usando le regole definite al momento della creazione. Ad esempio, se si ha una risorsa comune, ad esempio una sala riunioni, è possibile configurare un account di risorsa per la sala riunioni che accetta o rifiuta automaticamente gli inviti alle riunioni in base alla disponibilità del calendario. 
 
@@ -62,7 +62,7 @@ Prima di creare un account della risorsa Microsoft 365, verificare il tipo di li
 
 - **Chiamate PSTN** Se si vuole che la risorsa effettui o riceva chiamate da o verso un numero di telefono esterno, ossia una chiamata PSTN o Public Switched Telephone Network, è necessaria una licenza Microsoft 365 Sistema telefonico o Microsoft 365 Business Voice. È sufficiente completare il passaggio 1 nella panoramica seguente. Per altre informazioni, vedere [Microsoft Teams licenze per componenti](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md) aggiuntivi.
 
-- Se si usa solo un account della risorsa per prenotare una risorsa&mdash;, invitare la risorsa alla riunione e chiedere che accetti o rifiuti automaticamente l'invito&mdash;, non è necessario assegnare una licenza all'account della risorsa ed è sufficiente completare il passaggio 1 nella panoramica seguente.  
+- Se si usa solo un account della risorsa per prenotare una risorsa&mdash;, invitare la risorsa alla riunione e chiedere che accetti o rifiuti automaticamente l'invito&mdash;che non è necessario assegnare una licenza all'account della risorsa ed è sufficiente completare il passaggio 1 nella panoramica seguente.  
 
 ## <a name="overview"></a>Panoramica
 
@@ -104,9 +104,9 @@ Creare un account della risorsa usando un metodo da una delle schede seguenti:
       - Durata massima (ore): 24
     - Accettare automaticamente le convocazioni riunione
 
-    Se vuoi modificarle, seleziona **Imposta opzioni di pianificazione** prima di selezionare **Chiudi**. Se si vogliono modificare in un secondo momento, passare a **Sale Risorse** >  **& apparecchiature**, selezionare l'account della risorsa. In **Opzioni di prenotazione** selezionare **Modifica**.
+    Se vuoi modificarle, seleziona **Imposta opzioni di pianificazione** prima di selezionare **Chiudi**. Se si vogliono modificare in un secondo momento, passare a **Sale risorse** > **& apparecchiature**, selezionare l'account della risorsa. In **Opzioni di prenotazione** selezionare **Modifica**.
 
-6. Passare a **UtentiUtenti** >  attivi e selezionare la chat room creata per aprire il riquadro delle proprietà.
+6. Passare a **Utenti** > **attivi** e selezionare la chat room creata per aprire il riquadro delle proprietà.
 
 7. Assegnare quindi una password all'account della risorsa. Nel riquadro, seleziona **Reimposta password**.
  
@@ -202,7 +202,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, vedere [New-Mailbox
 > [!IMPORTANT]
 > Se si usa questo account della risorsa solo per prenotare spazio e accettare o rifiutare automaticamente gli inviti, la configurazione è stata completata. Se si usa questo account di risorse per le chiamate PSTN, vedere [Microsoft Teams licenze per componenti aggiuntivi](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md) per determinare la licenza necessaria.
 >
-> Passare alla sezione successiva solo se l'account della risorsa è destinato a un Teams Rooms in Windows, Teams Rooms in Android, Teams Rooms in Surface Hub o a un display Teams con hot desking.
+> Passare alla sezione successiva solo se l'account della risorsa è destinato a un Teams Rooms in Windows, Teams Rooms in Android, Teams Rooms in Surface Hub o un display Teams con hot desking.
 
 ## <a name="configure-mailbox-properties"></a>Configurare le proprietà della cassetta postale
 
@@ -310,12 +310,12 @@ Per accedere a Microsoft Teams, l'account della risorsa deve avere una licenza M
 > [!NOTE]
 > Microsoft Teams Rooms Standard e Microsoft Teams Rooms Premium sono i due SKU disponibili per i dispositivi delle sale riunioni condivise, tra cui Teams Rooms. Per gli schermi Teams con hot desking è necessaria una licenza per la sala riunioni. Per altre informazioni, vedere [Teams licenze per le sale riunioni](rooms-licensing.md).
 
-Per assegnare licenze usando il interfaccia di amministrazione di Microsoft 365, vedere [Assegnare licenze agli utenti](/microsoft-365/admin/manage/assign-licenses-to-users). Per assegnare licenze usando Azure AD, vedere una delle schede seguenti:
+Per assegnare licenze usando il interfaccia di amministrazione di Microsoft 365, vedere [Assegnare licenze agli utenti](/microsoft-365/admin/manage/assign-licenses-to-users). Per assegnare licenze con Azure AD, vedere una delle schede seguenti:
 
 #### <a name="active-directory-20"></a>[**Active Directory 2.0**](#tab/active-directory2-license/)
 
 
-1. Connessione a Azure AD
+1. Connessione ad Azure AD
   
     ```PowerShell
     Connect-AzureAD

@@ -1,7 +1,7 @@
 ---
 title: Preparare l'ambiente
-ms.author: czawideh
-author: cazawideh
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come preparare l'infrastruttura per la distribuzione di Microsoft Teams Rooms in modo da poter sfruttare tutte le caratteristiche.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b04ecd5b10f82e3f331bc2e888f59927de52e18c
-ms.sourcegitcommit: 9bee7cb9433bfc687387647a102f814dc52c8591
+ms.openlocfilehash: 4e479a3bc51cdab49a742d9084601505f13020d8
+ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64838997"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65761248"
 ---
 # <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
@@ -79,7 +79,7 @@ I certificati verranno installati come per qualsiasi altro client Windows.
 Microsoft Teams Rooms è progettato per ereditare le impostazioni proxy dal sistema operativo Windows. Accedere al sistema operativo Windows nel modo seguente:
   
 1. Nell'interfaccia utente Microsoft Teams Rooms fai clic sull'icona a forma di ingranaggio Impostazioni in cui ti verrà richiesta la password amministratore locale nel dispositivo (la password predefinita è **sfb**).
-2. Tocca **Impostazioni** quindi tocca il pulsante **Vai a Windows** e quindi tocca il pulsante **Vai ad Accesso** amministratore e quindi fai clic sul pulsante **Amministratore** (se il computer fa parte di un dominio **, scegli Altro utente,** usa .\admin come nome utente).
+2. Tocca **Impostazioni** quindi tocca il pulsante **Vai a Windows** e quindi tocca vai **a Amministrazione pulsante Accedi** e quindi fai clic sul pulsante **Amministratore** (se il computer fa parte di un dominio **, scegli Altro utente,** quindi usa .\admin come nome utente).
 3. Nella casella **Cerca Windows** in basso a sinistra digitare regedit (premere a lungo lo schermo o fare clic con il pulsante destro del mouse e scegliere **Esegui come amministratore**).
 4. Fare clic sulla cartella HKEY_USERS (verrà visualizzato un elenco di SID utente computer) assicurarsi che la cartella radice HKEY_USERS sia selezionata.
        
@@ -116,7 +116,7 @@ Microsoft Teams Rooms è progettato per ereditare le impostazioni proxy dal sist
     
 Per informazioni dettagliate su FQDN, porte e intervalli di indirizzi IP necessari per Microsoft Teams Rooms, vedere l'articolo [Sicurezza](./security.md#network-security) della rete.
   
-### <a name="admin-group-management"></a>Gestione dei gruppi di amministratori
+### <a name="admin-group-management"></a>gestione dei gruppi di Amministrazione
 
 Se si sceglie di aggiungersi a un dominio (Azure Active Directory o Active Directory), è possibile usare Microsoft Endpoint Manager, Criteri di gruppo o Gestione computer locale per impostare un gruppo di sicurezza come amministratore locale come per un PC Windows nel dominio. Chiunque sia membro di quel gruppo di sicurezza può immettere le proprie credenziali e sbloccare Impostazioni.
   
@@ -129,16 +129,16 @@ Se si sceglie di aggiungersi a un dominio (Azure Active Directory o Active Direc
 
 Teams Rooms include un account locale senza password denominato "Skype". Questo account viene usato per accedere a Windows per avviare l'app Teams Rooms. Non è supportato l'applicazione di una password a questo account. Per altre informazioni, vedere [Microsoft Teams Rooms Security](security.md).
   
-### <a name="admin---local-administrator-account"></a>"Amministratore" - Account amministratore locale
+### <a name="admin---local-administrator-account"></a>"Amministrazione" - Account amministratore locale
 
-Microsoft Teams Rooms password predefinita è impostata su "sfb". La password può essere modificata in locale tramite la modalità di amministrazione o nel file AutoUnattend.xml (usare Windows System Image Manager di ADK per apportare la modifica al file xml).
+Microsoft Teams Rooms password predefinita è impostata su "sfb". La password può essere modificata localmente tramite la modalità Amministrazione o nel file di AutoUnattend.xml (usare Windows System Image Manager di ADK per apportare la modifica al file xml).
   
 > [!CAUTION]
 > Assicurati di cambiare la password Microsoft Teams Rooms il prima possibile. 
   
 La password dell'amministratore locale non è inclusa come scelta durante l'installazione.
 
-Per altre informazioni sull'account amministratore, vedere l'articolo [Microsoft Teams Rooms Security](security.md).
+Per altre informazioni sull'account di Amministrazione, vedere l'articolo [sulla sicurezza di Microsoft Teams Rooms](security.md).
   
 ### <a name="machine-account"></a>Account computer
 

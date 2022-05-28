@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams Rooms la manutenzione e le operazioni
-ms.author: czawideh
-author: cazawideh
+ms.author: dstrome
+author: dstrome
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Informazioni sulla gestione di Microsoft Teams Rooms.
-ms.openlocfilehash: d57f84aa07c90b6a75693f0cbf739402a6e90a4c
-ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
+ms.openlocfilehash: df9760694bd8e0c650be25eec7d435efcae02127
+ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125471"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65761058"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Microsoft Teams Rooms la manutenzione e le operazioni
  
@@ -30,7 +30,7 @@ Microsoft Teams Rooms è la soluzione per conferenze di Microsoft progettata per
 
 Per raccogliere i log nell Teams interfaccia di amministrazione, passare a **Teams dispositivi > Teams Rooms in Windows**. Selezionare il nome visualizzato del dispositivo per cui si vogliono eseguire i log. Nel riquadro superiore selezionare "Scarica registri dispositivi". Dopo la conferma, i log saranno pronti per il download nella scheda Cronologia dopo alcuni minuti.
 
-È anche possibile usare PowerShell per raccogliere i log. È necessario richiamare lo script di raccolta log fornito con l'app Microsoft Teams Rooms. In [modalità amministratore](rooms-operations.md) avviare un prompt dei comandi con privilegi elevati ed eseguire il comando seguente:
+È anche possibile usare PowerShell per raccogliere i log. È necessario richiamare lo script di raccolta log fornito con l'app Microsoft Teams Rooms. In [modalità Amministrazione](rooms-operations.md) avviare un prompt dei comandi con privilegi elevati ed eseguire il comando seguente:
   
 ```PowerShell
 powershell -ExecutionPolicy unrestricted c:\rigel\x64\scripts\provisioning\ScriptLaunch.ps1 CollectSrsV2Logs.ps1
@@ -96,11 +96,11 @@ La tabella seguente riepiloga le possibili operazioni remote e i metodi che è p
 
 |Gruppo|Non aggiunto a un dominio|Aggiunta a un dominio|
 |:-----|:-----|:-----|
-|Riavviare  <br/> |interfaccia di amministrazione di Teams  <br/> Desktop remoto  <br/> Remote PowerShell  <br/> | <br/>Desktop remoto (richiede un'ulteriore configurazione)  <br/> Remote PowerShell (richiede ulteriori configurazioni)  <br/> Configuration Manager  <br/> |
+|Riavviare  <br/> |Interfaccia di amministrazione di Teams  <br/> Desktop remoto  <br/> Remote PowerShell  <br/> | <br/>Desktop remoto (richiede un'ulteriore configurazione)  <br/> Remote PowerShell (richiede ulteriori configurazioni)  <br/> Configuration Manager  <br/> |
 |Aggiornare il sistema operativo  <br/> |Windows Update  <br/> |Windows Update  <br/> WSUS  <br/> |
 |Aggiornamento dell'app  <br/> |Windows Store  <br/> |Windows Store  <br/> Configuration Manager  <br/> |
-|Configurazione account  <br/> |interfaccia di amministrazione di Teams  <br/> |interfaccia di amministrazione di Teams  <br/> |
-|Log di Access  <br/> |interfaccia di amministrazione di Teams  <br/> PowerShell  <br/> |interfaccia di amministrazione di Teams <br/> PowerShell  <br/>  |
+|Configurazione account  <br/> |Interfaccia di amministrazione di Teams  <br/> |Interfaccia di amministrazione di Teams  <br/> |
+|Log di Access  <br/> |Interfaccia di amministrazione di Teams  <br/> PowerShell  <br/> |Interfaccia di amministrazione di Teams <br/> PowerShell  <br/>  |
    
 ## <a name="configuring-group-policy-for-microsoft-teams-rooms"></a>Configurazione di Criteri di gruppo per Microsoft Teams Rooms
 <a name="GroupPolicy"> </a>
@@ -159,10 +159,10 @@ Quando si aggiunge Microsoft Teams Rooms a un dominio, assicurarsi che i criteri
   
 Ad esempio, è possibile abilitare Remote PowerShell come segue:
   
-1. Accedere come amministratore in un dispositivo Microsoft Teams Rooms.
+1. Accedi come Amministrazione su un dispositivo Microsoft Teams Rooms.
 2. Aprire un prompt dei comandi con privilegi elevati di PowerShell.
 3. Immettere il comando seguente: `Enable-PSRemoting -SkipNetworkProfileCheck -Force`
-4. Aprire i criteri di sicurezza locali e aggiungere il gruppo di sicurezza *Administrators* a **Security Impostazioni** >  **Local PoliciesUser** >  **Rights AssignmentAccessare** >  **il computer dalla rete**.
+4. Aprire i Criteri di sicurezza locali e aggiungere il gruppo di sicurezza *Administrators* **all'assegnazione** >  >  **dei diritti** >  utente criteri locali Impostazioni Accesso a **questo computer dalla rete**.
 
 Per eseguire un'operazione di gestione:
   
@@ -227,17 +227,17 @@ Microsoft Teams Rooms si connette a Windows Update per recuperare gli aggiorname
 
 Se è necessario gestire manualmente gli aggiornamenti delle applicazioni, ma non è possibile seguire la normale procedura per [Microsoft Store per le aziende](https://businessstore.microsoft.com/store) [distribuire le app offline](/microsoft-store/distribute-offline-apps), è possibile acquisire pacchetti di aggiornamento Teams Rooms per eseguire gli aggiornamenti delle app nei sistemi operativi supportati. Il rilascio dell'aggiornamento potrebbe essere in ritardo rispetto al rilascio dello Store e potrebbe non corrispondere sempre all'ultima build disponibile. Per altre informazioni, vedi [Aggiornare manualmente un dispositivo Microsoft Teams Rooms](manual-update.md).
 
-## <a name="admin-mode-and-device-management"></a>Modalità di amministrazione e gestione dei dispositivi
+## <a name="admin-mode-and-device-management"></a>modalità Amministrazione e gestione dei dispositivi
 <a name="AdminMode"> </a>
 
-Alcune funzioni di gestione, come l'installazione manuale di un certificato CA privato, richiedono l'inserimento di Teams Rooms in modalità amministratore. 
+Alcune funzioni di gestione, come l'installazione manuale di un certificato CA privato, richiedono l'inserimento di Teams Rooms in modalità Amministrazione. 
   
-### <a name="switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-is-running"></a>Passaggio alla modalità amministratore e ripristino quando l'app Microsoft Teams Rooms è in esecuzione
+### <a name="switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-is-running"></a>Passaggio alla modalità Amministrazione e ritorno quando l'app Microsoft Teams Rooms è in esecuzione
 
 1. Riaggancia le chiamate in corso e torna alla schermata iniziale.
 2. Seleziona l'icona a forma di ingranaggio e visualizza il menu (le opzioni sono **Impostazioni**, **Accessibilità** e **Riavvia dispositivo**).
 3. Selezionare **Impostazioni**.
-4. Immettere la password dell'amministratore. Verrà visualizzata la schermata Configurazione.  Se il dispositivo non fa parte di un dominio, l'account amministrativo locale (nome utente "Amministratore") verrà usato per impostazione predefinita. La password predefinita per questo account è 'sfb'. Cambia questa password il prima possibile. Se il computer fa parte di un dominio, è possibile accedere con un account di dominio con privilegi appropriati.
+4. Immettere la password dell'amministratore. Verrà visualizzata la schermata Configurazione.  Se il dispositivo non fa parte di un dominio, l'account amministrativo locale (nome utente "Amministrazione") verrà usato per impostazione predefinita. La password predefinita per questo account è 'sfb'. Cambia questa password il prima possibile. Se il computer fa parte di un dominio, è possibile accedere con un account di dominio con privilegi appropriati.
 5. Selezionare **Windows Impostazioni** nella colonna sinistra.
 6. Accedere al desktop con le credenziali amministrative. Avrai i privilegi necessari per gestire il dispositivo.
 7. Eseguire le attività amministrative necessarie.
@@ -245,7 +245,7 @@ Alcune funzioni di gestione, come l'installazione manuale di un certificato CA p
     
 La console è tornata in modalità di funzionamento normale. La procedura seguente richiede di collegare una tastiera al dispositivo, se non è già collegata. 
   
-### <a name="switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-crashes"></a>Passaggio alla modalità di amministrazione e ripristino quando l'app Microsoft Teams Rooms si arresta in modo anomalo
+### <a name="switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-crashes"></a>Passaggio alla modalità Amministrazione e ritorno quando l'app Microsoft Teams Rooms si arresta in modo anomalo
 
 1. Premere il tasto Windows cinque volte in rapida successione. Verrà visualizzata la schermata di accesso Windows. 
 2. Accedere al desktop con le credenziali amministrative.
