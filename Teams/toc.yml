@@ -1640,6 +1640,8 @@ items:
         items:
           - name: Introduzione a Teams per gli operatori sul campo
             href: flw-landing-page.md
+          - name: Inizia con una versione di valutazione in prima linea.
+            href: flw-trial.md
           - name: Opzioni di licenza per gli operatori sul campo
             href: flw-licensing-options.md
           - name: Guida introduttiva per gli operatori sul campo
