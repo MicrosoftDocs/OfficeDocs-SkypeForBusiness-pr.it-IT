@@ -19,49 +19,41 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 7c00a5e70684a93f31a11d48ac542920fca3b697
-ms.sourcegitcommit: 9f7372f7568b4275169590510d2b7a0c0ad7577b
+ms.openlocfilehash: 05e70d9b1e69ff72eda8e984af1cb1228842f5da
+ms.sourcegitcommit: e8a78c24fda7e56c7b217a843a8a5f1c30aa95f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65171732"
+ms.lasthandoff: 05/31/2022
+ms.locfileid: "65786006"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
-Gli amministratori possono usare i criteri di configurazione delle app per installare e aggiungere app per promuovere le app più usate nell'organizzazione e per decidere se caricare app personalizzate in Teams.
+Gli amministratori usano i criteri di configurazione delle app per installare e aggiungere app e consentire agli utenti di caricare app personalizzate. L'aggiunta consente di promuovere l'adozione di app pertinenti nell'organizzazione.
 
-- **Aggiungere app:** I criteri di configurazione delle app consentono di scegliere le app da aggiungere, impostare l'ordine in cui vengono visualizzate per gli utenti nella barra dell'app Teams o nell'area di composizione dei messaggi e controllare se gli utenti possono o meno aggiungere le proprie app. Per altre informazioni, vedi [Aggiungere app](#pin-apps).
-- **Installa app:** I criteri di configurazione delle app consentono di installare le app per conto degli utenti quando iniziano Teams e durante le riunioni. Per altre informazioni, vedi [Installare le app](#install-apps).
-- **Upload app personalizzate: i** criteri di configurazione delle app consentono agli utenti di caricare app personalizzate in Teams. Per altre informazioni, vedere [Upload app personalizzate](#upload-custom-apps).
+* **Aggiungere app:** I criteri di configurazione delle app consentono di scegliere le app da aggiungere, impostare l'ordine di visualizzazione delle app per gli utenti nella barra dell'app Teams o nell'area di composizione dei messaggi. Gli amministratori possono anche controllare se gli utenti finali possono aggiungere o meno le proprie app. Vedi [Aggiungere app](#pin-apps).
+* **Installa app:** I criteri di configurazione delle app consentono di installare le app per conto degli utenti quando iniziano Teams e durante le riunioni. Per altre informazioni, vedi [Installare le app](#install-apps).
+* **Upload app personalizzate: i** criteri di configurazione delle app consentono agli utenti di caricare app personalizzate in Teams. Per altre informazioni, vedere [Upload app personalizzate](#upload-custom-apps).
 
 ## <a name="pin-apps"></a>Aggiungere app
 
-> [!NOTE]
-> Per gli operatori in prima linea nell'organizzazione, è consigliabile usare l'esperienza app frontline personalizzata. Questa funzionalità aggiunge le app più rilevanti in Teams per gli utenti che hanno una [licenza F](https://www.microsoft.com/en-us/microsoft-365/enterprise/frontline?rtc=1#office-SKUChooser-0dbn8nt). Per altre informazioni, vedere [Personalizzare le app Teams per i dipendenti in prima linea](pin-teams-apps-based-on-license.md).
+L'aggiunta di app consente di evidenziare le app di cui gli utenti dell'organizzazione hanno più bisogno. L'aggiunta funziona per le app fornite da Microsoft, dalle aziende isv e dagli sviluppatori all'interno dell'organizzazione. L'aggiunta di un'app tramite un criterio di configurazione dell'app consente anche di installarla. Usando i criteri di configurazione delle app, è possibile eseguire le attività seguenti:
 
-L'aggiunta di app consente di mostrare le app di cui hanno bisogno gli utenti dell'organizzazione, incluse le app create da terze parti o dagli sviluppatori dell'organizzazione.
+* Personalizzare Teams in modo da evidenziare le app più importanti per gli utenti. Scegli le app da aggiungere e impostare l'ordine in cui vengono visualizzate.
+* Controlla se gli utenti possono o meno aggiungere app.
 
-Usando i criteri di configurazione delle app, è possibile eseguire le attività seguenti:
-
-- Personalizzare Teams in modo da evidenziare le app più importanti per gli utenti. Scegli le app da aggiungere e impostare l'ordine in cui vengono visualizzate.
-- Controllare se gli utenti possono aggiungere app a Teams.
-
-Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato sinistro del client desktop Teams e nella parte inferiore della Teams client mobili (iOS e Android).
+Le app vengono aggiunte alla barra dell'app sul lato sinistro del client desktop Teams e nella parte inferiore del Teams client per dispositivi mobili.
 
 |Client desktop di Teams  |Client per dispositivi mobili di Teams |
 |---------|---------|
-|![Client desktop Teams.](media/app-setup-policies-desktop-app-bar.png).  |   ![Client per dispositivi mobili Teams](media/mobile-app-ui.png)      |
+|![Barra dell'app nel client desktop Teams.](media/app-setup-policies-desktop-app-bar.png).  |   ![Barra dell'app nel client per dispositivi mobili Teams.](media/mobile-app-ui.png)      |
 
 Le estensioni di messaggistica sono disponibili nella parte inferiore dell'area di composizione dei messaggi.
-
-> [!NOTE]
-> Se hai Teams per l'istruzione, è importante sapere che l'app Attività è stata aggiunta per impostazione predefinita ai criteri globali, anche se attualmente non è elencata nei criteri globali.
 
 Per creare un criterio di configurazione delle app per aggiungere app, procedere come segue:
 
 1. Accedere all [Microsoft Teams interfaccia di amministrazione](https://admin.teams.microsoft.com).
 
-1. Nel riquadro sinistro passare a **Teams app** >  **Criteri di installazione**.
+1. Nel riquadro sinistro passare a Teams **criteri di configurazione** **delle app** > .
 
 1. Selezionare **Aggiungi**.
 
@@ -84,30 +76,33 @@ Per creare un criterio di configurazione delle app per aggiungere app, procedere
 
 1. Selezionare **Salva**.
 
-## <a name="install-apps"></a>Installare app
-
-È possibile scegliere quali app installare per impostazione predefinita per gli utenti nel proprio ambiente di Teams personale, installare le app come [estensioni di messaggistica](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions) e designare le app da installare nelle riunioni.
-
-Usando i criteri di configurazione delle app, è possibile eseguire le attività seguenti:
-
-- Installare le app per gli utenti nel proprio ambiente di Teams personale
-- Installare le app per gli utenti come estensioni di messaggistica
-- Installare app nelle riunioni per gli organizzatori delle riunioni
+> [!NOTE]
+> In Teams per l'istruzione, l'app Attività viene aggiunta per impostazione predefinita ai criteri globali, anche se non è elencata nel criterio globale.
 
 > [!NOTE]
-> Gli utenti possono comunque installare le app autonomamente se il [criterio di autorizzazione dell'app](teams-app-permission-policies.md) assegnato lo consente.
+> Per gli operatori in prima linea nell'organizzazione, è consigliabile usare l'esperienza app frontline personalizzata. Questa funzionalità aggiunge le app più rilevanti in Teams per gli utenti che hanno una [licenza F](https://www.microsoft.com/en-us/microsoft-365/enterprise/frontline?rtc=1#office-SKUChooser-0dbn8nt). Per altre informazioni, vedere [Personalizzare le app Teams per i dipendenti in prima linea](pin-teams-apps-based-on-license.md).
+
+## <a name="install-apps"></a>Installare app
+
+Usando i criteri di configurazione delle app, un amministratore può eseguire le attività seguenti:
+
+* Installare le app per gli utenti finali nel proprio ambiente di Teams personale, per impostazione predefinita.
+* Installare le app per gli utenti finali come [estensioni di messaggistica](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions).
+* Installa le app nelle riunioni per gli organizzatori delle riunioni.
+
+Gli utenti finali possono installare le app autonomamente se il [criterio di autorizzazione dell'app](teams-app-permission-policies.md) lo consente.
 
 Per creare un criterio di configurazione delle app per installare le app, procedere come segue:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Teams app** >  **Criteri di configurazione**.
+1. Accedere all Teams interfaccia di amministrazione e accedere **ai criteri di configurazione di Teams app** > .
 
 2. Selezionare **Aggiungi**.
 
-3. Immettere un nome e una descrizione per il criterio.
+3. Specificare un nome e una descrizione per il criterio.
 
 4. In **App installate** seleziona **Aggiungi app**.
 
-5. Nel riquadro **Aggiungi app installate** cerca le app che vuoi installare automaticamente per gli utenti. Puoi anche filtrare le app in base ai criteri di autorizzazione delle app.
+5. Nel riquadro **Aggiungi app installate** cercare gli utenti nelle app da installare. Puoi anche filtrare le app in base ai criteri di autorizzazione delle app.
 
 6. Selezionare **Aggiungi**.
 
@@ -118,34 +113,32 @@ Per creare un criterio di configurazione delle app per installare le app, proced
 
 ## <a name="upload-custom-apps"></a>Upload app personalizzate
 
-È possibile usare l'interfaccia di amministrazione di Microsoft Teams per creare un criterio personalizzato che consente agli utenti di caricare app personalizzate in Teams.
+Per creare criteri personalizzati che consentano agli utenti di caricare app personalizzate, seguire questa procedura:
 
-Per creare criteri di configurazione delle app che consentano agli utenti di caricare app personalizzate in Teams, procedere come segue:
-
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Teams app** >  **Criteri di configurazione**.
+1. Accedere all Teams interfaccia di amministrazione e accedere **ai criteri di configurazione di Teams app** > .
 
 2. Selezionare **Aggiungi**.
 
-3. Immettere un nome e una descrizione per il criterio.
+3. Specificare un nome e una descrizione per il criterio.
 
-4. Attivare o disattivare **Upload app personalizzate**, a seconda che si voglia consentire agli utenti di caricare app personalizzate in Teams.
+4. Attivare o disattivare **Upload app personalizzate**.
 
 > [!NOTE]
-> Non puoi modificare questa impostazione se **le app di terze parti** sono disattivate nelle [impostazioni delle app a livello di organizzazione](manage-apps.md#manage-org-wide-app-settings).
+> Per modificare questa impostazione, [le impostazioni dell'app a livello di organizzazione](manage-apps.md#manage-org-wide-app-settings) del tenant devono consentire le **app di terze parti**.
 
 ## <a name="manage-app-setup-policies"></a>Gestire i criteri di configurazione delle app
 
-I criteri di configurazione delle app vengono gestiti nell'interfaccia di amministrazione di Microsoft Teams. Usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati.  Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato. Per gestire questi criteri, è necessario essere un amministratore globale o un amministratore del servizio Teams.
+I criteri di configurazione delle app vengono gestiti nell'interfaccia di amministrazione di Microsoft Teams. Usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. Gli utenti finali ottengono i criteri globali. Se si crea un criterio personalizzato, viene eseguito l'override del criterio globale. Questi criteri possono essere gestiti da un amministratore globale o da un amministratore dei servizi di Teams.
 
 È possibile modificare le impostazioni nel criterio globale per includere le app desiderate. Per personalizzare Teams per diversi gruppi di utenti dell'organizzazione, creare e assegnare uno o più criteri personalizzati.
 
-![pagina Criteri di configurazione delle app.](media/app-setup-policies-update.png)
+![Pagina Criteri di configurazione delle app per gestire i criteri o aggiungere nuovi criteri.](media/app-setup-policies-update.png)
 
 ### <a name="edit-an-app-setup-policy"></a>Modificare i criteri di configurazione delle app
 
 È possibile usare l'interfaccia di amministrazione di Microsoft Teams per modificare un criterio, inclusi i criteri globali (predefiniti a livello di organizzazione) e i criteri personalizzati creati.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Teams app** >  **Criteri di configurazione**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **App di Teams** > **Criteri di configurazione**.
 
 2. Scegliere il criterio da modificare e quindi selezionare **Modifica**.
 
@@ -157,15 +150,18 @@ I criteri di configurazione delle app vengono gestiti nell'interfaccia di ammini
 
 Per altre informazioni sull'assegnazione di criteri a utenti e gruppi, vedere [Assegnare criteri a utenti e gruppi](assign-policies-users-and-groups.md).
 
-## <a name="faq"></a>Domande frequenti
+## <a name="faqs"></a>Faq
+
+<!--- TBD: Incorporate these pointers in the content itself.
+--->
 
 ### <a name="working-with-app-setup-policies"></a>Utilizzo dei criteri di configurazione delle app
 
 #### <a name="what-built-in-app-setup-policies-are-included-in-the-microsoft-teams-admin-center"></a>Quali criteri di configurazione delle app predefiniti sono inclusi nell'interfaccia di amministrazione di Microsoft Teams
 
-- **Globale (impostazione predefinita a livello di organizzazione):** questo criterio predefinito si applica a tutti gli utenti dell'organizzazione, a meno che non si assegni un altro criterio. Modificare i criteri globali per aggiungere app più importanti per gli utenti.
+* **Globale (impostazione predefinita a livello di organizzazione):** questo criterio predefinito si applica a tutti gli utenti dell'organizzazione, a meno che non si assegni un altro criterio. Modificare i criteri globali per aggiungere app più importanti per gli utenti.
 
-- **FrontlineWorker**: questo criterio è per gli operatori in prima linea. È possibile assegnarla agli operatori in prima linea nell'organizzazione. È importante sapere che, come i criteri personalizzati creati dall'utente, è necessario assegnarli agli utenti affinché le impostazioni siano attive. Per altre informazioni, vedere la sezione [Assegnare criteri di configurazione delle app personalizzate agli utenti](#assign-a-custom-app-setup-policy-to-users-and-groups) di questo articolo.
+* **FrontlineWorker**: questo criterio è per gli operatori in prima linea. È possibile assegnarla agli operatori in prima linea nell'organizzazione. È importante sapere che, come i criteri personalizzati creati dall'utente, è necessario assegnarli agli utenti affinché le impostazioni siano attive. Per altre informazioni, vedere la sezione [Assegnare criteri di configurazione delle app personalizzate agli utenti](#assign-a-custom-app-setup-policy-to-users-and-groups) di questo articolo.
 
 #### <a name="why-cant-i-find-an-app-in-the-add-pinned-apps-pane"></a>Perché non riesco a trovare un'app nel riquadro Aggiungi app aggiunte
 
@@ -179,7 +175,7 @@ L'app Chiamate non è disponibile in Teams per l'istruzione. Quando crei un nuov
 
 #### <a name="how-many-pinned-apps-can-be-added-to-a-policy"></a>Quante app aggiunte possono essere aggiunte a un criterio
 
-È necessario aggiungere almeno due app al Teams client per dispositivi mobili (iOS e Android). Se un criterio include meno di due app, i client mobili non rifletteranno le impostazioni dei criteri e continueranno a usare la configurazione esistente.
+È necessario aggiungere almeno due app ai client per dispositivi mobili Teams (iOS e Android). Se un criterio include meno di due app, i client mobili non rifletteranno le impostazioni dei criteri e continueranno a usare la configurazione esistente.
 
 Non esistono limiti al numero di app aggiunte che è possibile aggiungere a un criterio.
 
@@ -212,7 +208,7 @@ Gli utenti possono modificare l'ordine delle app aggiunte in Teams client deskto
 
 #### <a name="does-user-pinning-take-precedence"></a>Il blocco dell'utente ha la precedenza?
 
-I pin dell'amministratore hanno sempre la precedenza. Se l'opzione **Blocco utente** è attivata, gli utenti mantengono le app aggiunte sotto le app aggiunte dall'amministratore. Se l'opzione **Blocco utente** è disattivata, gli utenti perderanno i pin preesistenti e nella barra dell'app saranno presenti solo le app aggiunte dall'amministratore.
+Amministrazione i pin hanno sempre la precedenza. Se l'opzione **Blocco utente** è attivata, gli utenti mantengono le app aggiunte sotto le app aggiunte dall'amministratore. Se l'opzione **Blocco utente** è disattivata, gli utenti perderanno i pin preesistenti e nella barra dell'app saranno presenti solo le app aggiunte dall'amministratore.
 
 ### <a name="custom-teams-apps"></a>App Teams personalizzate
 
@@ -220,8 +216,7 @@ I pin dell'amministratore hanno sempre la precedenza. Se l'opzione **Blocco uten
 
 Assicurati di seguire le linee guida per il logo prima di inviare l'app. Per altre informazioni, vedi [Elenco di controllo per l'invio di dashboard venditori](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/overview).
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="see-also"></a>Vedere anche
 
-[Impostazioni di amministrazione per le app in Teams](admin-settings.md)
-
-[Assegnare i criteri agli utenti in Teams](assign-policies-users-and-groups.md)
+* [Impostazioni di amministrazione per le app in Teams](admin-settings.md)
+* [Assegnare criteri agli utenti finali in Teams](assign-policies-users-and-groups.md)

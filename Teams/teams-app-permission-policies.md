@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 4872cb6222d8841bb2efe6be0e19fa17d3557e33
-ms.sourcegitcommit: b8098d6ea36f10ee3a630a230ebd84bc2d96e37a
+ms.openlocfilehash: 20993aea7665893d71be1fd1094df9f0d1acdc91
+ms.sourcegitcommit: e8a78c24fda7e56c7b217a843a8a5f1c30aa95f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/31/2022
-ms.locfileid: "65780642"
+ms.locfileid: "65785956"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione app in Microsoft Teams
 
@@ -55,7 +55,7 @@ Usare uno o più criteri di autorizzazione personalizzati per le app, se si vogl
 1. Nel riquadro sinistro passare a **Teams app** > **Criteri di autorizzazione**.
 1. Selezionare **Aggiungi**.
 
-    ![Screenshot dei nuovi criteri di autorizzazione per le app.](media/app-permission-policies-new-policy.png)
+   ![Screenshot dei nuovi criteri di autorizzazione per le app.](media/app-permission-policies-new-policy.png)
 
 1. Specificare un nome e una descrizione per il criterio.
 1. In **App Microsoft**, **App di terze parti** e **App personalizzate**, selezionare una delle seguenti opzioni:
@@ -102,7 +102,7 @@ Usare le impostazioni app a livello di organizzazione per controllare se gli ute
 
 1. Nella pagina **Gestisci app** seleziona **Impostazioni app a livello di organizzazione**. È possibile quindi configurare le impostazioni desiderate nel pannello.
 
-  ![Screenshot delle impostazioni delle app a livello di organizzazione in GCC.](media/app-permission-policies-gcc-org-wide.png)
+   ![Screenshot delle impostazioni delle app a livello di organizzazione in GCC.](media/app-permission-policies-gcc-org-wide.png)
 
 1. In **App di terze parti**, disattivare o attivare queste impostazioni per controllare l'accesso alle app di terze parti:
 
@@ -119,7 +119,7 @@ Per consentire le app di terze parti, modificare e usare il criterio globale (im
 
 1. Nella pagina **Criteri di autorizzazione**, selezionare **Impostazioni app a livello di organizzazione**. È possibile quindi configurare le impostazioni desiderate nel pannello.
 
-  ![Screenshot delle impostazioni delle app a livello di organizzazione in GCCH e DoD.](media/app-permission-policies-gcch-dod-org-wide.png)
+   ![Screenshot delle impostazioni delle app a livello di organizzazione in GCCH e DoD.](media/app-permission-policies-gcch-dod-org-wide.png)
 
 1. In **App bloccate**, aggiungere le app che si desidera bloccare nell'organizzazione. In una distribuzione Microsoft 365 Government - GCCH e DoD di Teams, tutte le app di terze parti vengono aggiunte a questo elenco per impostazione predefinita. Quando si blocca un'app a livello di organizzazione, l'app viene bloccata automaticamente per tutti gli utenti, indipendentemente dal fatto che sia consentita nei criteri di autorizzazione dell'app.
 1. Seleziona **Salva** per rendere effettive le impostazioni delle app a livello di organizzazione.
