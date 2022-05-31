@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 648150f67471f1721a035e2fd19fded274ecd05e
-ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
+ms.openlocfilehash: 4872cb6222d8841bb2efe6be0e19fa17d3557e33
+ms.sourcegitcommit: b8098d6ea36f10ee3a630a230ebd84bc2d96e37a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65681597"
+ms.lasthandoff: 05/31/2022
+ms.locfileid: "65780642"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione app in Microsoft Teams
 
@@ -59,12 +59,13 @@ Usare uno o più criteri di autorizzazione personalizzati per le app, se si vogl
 
 1. Specificare un nome e una descrizione per il criterio.
 1. In **App Microsoft**, **App di terze parti** e **App personalizzate**, selezionare una delle seguenti opzioni:
-   - **Consenti tutte le app**
-   - **Consenti app specifiche e blocca tutte le altre**
-   - **Blocca app specifiche e consenti tutte le altre**
-   - **Blocca tutte le app**
 
-1. Se si seleziona **Consenti app specifiche e blocca le altre**, aggiungere le app che si desidera consentire:
+    * Consenti tutte le app
+    * Consenti app specifiche e blocca tutte le altre
+    * Blocca app specifiche e consenti tutte le altre
+    * Blocca tutte le app
+
+1. Se hai selezionato **Consenti app specifiche e blocca tutte le altre**, aggiungi le app che vuoi consentire:
 
     1. Selezionare **Consenti app**.
     1. Cerca le app che vuoi consentire e quindi seleziona **Aggiungi**. I risultati della ricerca vengono filtrati in base al server di pubblicazione dell'app (**app Microsoft**, **app di terze parti** o **app personalizzate**).
@@ -104,8 +105,9 @@ Usare le impostazioni app a livello di organizzazione per controllare se gli ute
   ![Screenshot delle impostazioni delle app a livello di organizzazione in GCC.](media/app-permission-policies-gcc-org-wide.png)
 
 1. In **App di terze parti**, disattivare o attivare queste impostazioni per controllare l'accesso alle app di terze parti:
-   - **Consenti app di terze parti**: questa opzione controlla se gli utenti possono usare app di terze parti. Se si disattiva questa impostazione, gli utenti non potranno installare o usare qualsiasi app di terze parti. In una distribuzione Microsoft 365 Government - GCCH e DoD di Teams, questa impostazione è disattivata per impostazione predefinita.
-   - **Consenti nuove app di terze parti pubblicate nello Store per impostazione predefinita**: questa opzione controlla se le nuove app di terze parti pubblicate nell'app store Teams diventano automaticamente disponibili in Teams. È possibile impostare questa opzione solo se si consentono le app di terze parti.
+
+    * **Consenti app di terze parti**: questa opzione controlla se gli utenti possono usare app di terze parti. Se si disattiva questa impostazione, gli utenti non potranno installare o usare qualsiasi app di terze parti. In una distribuzione Microsoft 365 Government - GCCH e DoD di Teams, questa impostazione è disattivata per impostazione predefinita.
+    * **Consenti nuove app di terze parti pubblicate nello Store per impostazione predefinita**: questa opzione controlla se le nuove app di terze parti pubblicate nell'app store Teams diventano automaticamente disponibili in Teams. È possibile impostare questa opzione solo se si consentono le app di terze parti.
 
 1. In **App bloccate**, aggiungere le app che si desidera bloccare nell'organizzazione. In una distribuzione Microsoft 365 Government - GCCH e DoD di Teams, tutte le app di terze parti vengono aggiunte a questo elenco per impostazione predefinita. Per qualsiasi app di terze parti che si desidera consentire nell'organizzazione, rimuovere l'app da questo elenco delle app bloccate. Quando si blocca un'app a livello di organizzazione, l'app viene bloccata automaticamente per tutti gli utenti, indipendentemente dal fatto che sia consentita nei criteri di autorizzazione dell'app.
 
@@ -156,12 +158,12 @@ Gli utenti non possono interagire con un'app bloccata o con le sue funzionalità
 
 Ad esempio, quando un'app viene bloccata, gli utenti non possono eseguire le attività seguenti:
 
-- Aggiungere l'app personalmente a una chat o a un team
-- Inviare messaggi al bot dell'app
-- Eseguire azioni pulsante che rimandano informazioni all'app, come messaggi interattivi  
-- Visualizzare la scheda dell'app
-- Configurare connettori per ricevere notifiche
-- Usare l'estensione di messaggistica dell'app
+* Aggiungere l'app personalmente a una chat o a un team
+* Inviare messaggi al bot dell'app
+* Eseguire azioni pulsante che rimandano informazioni all'app, come messaggi interattivi  
+* Visualizzare la scheda dell'app
+* Configurare connettori per ricevere notifiche
+* Usare l'estensione di messaggistica dell'app
 
 Il portale legacy consentiva di bloccare le app a livello di organizzazione, che significa che quando un'app è bloccata, è bloccata per tutti gli utenti nell'organizzazione. Il blocco di un'app nella pagina [Gestisci app](manage-apps.md) funziona esattamente allo stesso modo.
 
@@ -169,6 +171,6 @@ Per i criteri di autorizzazione app assegnati a utenti specifici, se un'app con 
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Impostazioni di amministrazione per le app in Teams](admin-settings.md)
-- [Assegnare i criteri agli utenti in Teams](policy-assignment-overview.md)
-- [confronto Teams disponibilità delle funzionalità](/office365/servicedescriptions/teams-service-description#feature-availability)
+* [Impostazioni di amministrazione per le app in Teams](admin-settings.md)
+* [Assegnare i criteri agli utenti in Teams](policy-assignment-overview.md)
+* [confronto Teams disponibilità delle funzionalità](/office365/servicedescriptions/teams-service-description#feature-availability)
