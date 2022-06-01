@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 search.appverid: ''
 ms.collection: ''
 ms.custom: ''
-ms.openlocfilehash: 4416fa65f38ad3489d05312382cce55b4a21898f
-ms.sourcegitcommit: d425748a50964ebc78e5d38fce564a444a449f43
+ms.openlocfilehash: c65b51b34de54f419db341d5e1328a93746f0984
+ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65635394"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65823311"
 ---
 # <a name="planning-for-a-successful-transition-from-kaizala-to-microsoft-teams"></a>Pianificazione di una transizione riuscita da Kaizala a Microsoft Teams
 
@@ -70,7 +70,7 @@ Dopo aver seguito il framework consigliato per la pianificazione di una transizi
 
 ### <a name="get-ready"></a>Preparati
 
- 1. Assicurarsi che siano disponibili licenze di Teams per tutti. Consultare [Piani di Teams](/microsoft-teams/compare-microsoft-teams-options?rtc=1) e [Descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description).
+ 1. Assicurarsi che siano disponibili licenze di Teams per tutti. Consultare [Piani di Teams](https://www.microsoft.com/microsoft-teams/compare-microsoft-teams-options?activetab=pivot%3aprimaryr1) e [Descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description).
 
  2. Usare [le indicazioni di Microsoft Teams Adoption](https://adoption.microsoft.com/microsoft-teams/#get-started) per distribuire Teams all'interno dell'organizzazione.
 

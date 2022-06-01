@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come preparare l'infrastruttura per la distribuzione di Microsoft Teams Rooms in modo da poter sfruttare tutte le caratteristiche.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4e479a3bc51cdab49a742d9084601505f13020d8
-ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
+ms.openlocfilehash: 0bedb70ade23f92424a14e4bea3f1462fc2cbccf
+ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65761248"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65823055"
 ---
 # <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
@@ -32,8 +32,8 @@ Questa sezione contiene una panoramica dei passaggi necessari per preparare l'am
   
 3. Per migliorare la tua esperienza, Microsoft raccoglie i dati. Per consentire a Microsoft di raccogliere dati, consenti questi siti:
 
-   - Endpoint client di telemetria: https://vortex.data.microsoft.com/
-   - Endpoint delle impostazioni di telemetria: https://settings.data.microsoft.com/
+   - Endpoint client di telemetria: `https://vortex.data.microsoft.com/`
+   - Endpoint delle impostazioni di telemetria:` https://settings.data.microsoft.com/`
     
 ### <a name="create-and-test-a-resource-account"></a>Creare e testare un account di risorsa
 
@@ -144,7 +144,7 @@ Per altre informazioni sull'account di Amministrazione, vedere l'articolo [sulla
 
 Analogamente a qualsiasi dispositivo Windows, il nome del computer può essere rinominato facendo clic con il pulsante destro del mouse in **Impostazioni** \> **Informazioni su** \> **Rinomina PC**.
   
-Per rinominare il computer dopo averlo unito a un dominio, usare [Rinomina-Computer](/powershell/module/microsoft.powershell.management/rename-computer?view=powershell-7.2), un comando di PowerShell seguito dal nuovo nome del computer.
+Per rinominare il computer dopo averlo unito a un dominio, usare [Rinomina-Computer](/powershell/module/microsoft.powershell.management/rename-computer), un comando di PowerShell seguito dal nuovo nome del computer.
   
 ## <a name="related-topics"></a>Argomenti correlati
 

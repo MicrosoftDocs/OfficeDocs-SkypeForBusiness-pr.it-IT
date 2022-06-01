@@ -1,5 +1,5 @@
 ---
-title: Teams piano di aggiornamento del case study Contoso vocale
+title: Teams piano di aggiornamento di case study di Contoso vocale
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -13,29 +13,29 @@ ms.reviewer: jowrig
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: "Teams case study vocale per multinazionali: Pianificazione dell'aggiornamento."
+description: "Teams case study vocale per società multinazionali: pianificazione dell'aggiornamento."
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2c2d64e93e8f9ab53cd2a696af69de4b7f0d4f7348fec27a189b60896ee1ec02
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 39cfd66f0ff34fb0f8792871ddfdcceebb2b9961
+ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54350178"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65822985"
 ---
-# <a name="contoso-case-study-teams-upgrade-plan"></a>Case study contoso: Teams di aggiornamento
+# <a name="contoso-case-study-teams-upgrade-plan"></a>Case study contoso: piano di aggiornamento Teams
 
-Nella decisione di eseguire la migrazione da Skype for Business a Teams, Contoso ha voluto offrire un'esperienza di transizione semplice per gli utenti finali. Invece di passare tutti alla Teams contemporaneamente, hanno deciso di configurare la connettività ibrida e di usare il metodo delle funzionalità sovrapposte per spostare gli utenti in Teams. In questo modo gli utenti Teams e Skype for Business locali di condividere la presenza e comunicare. Quando gli utenti entravano nel progetto pilota per Sistema telefonico, venivano spostati in Teams modalità Solo utenti.
+Nella decisione di eseguire la migrazione da Skype for Business a Teams, Contoso voleva offrire un'esperienza di transizione semplice per gli utenti finali. Invece di consentire a tutti di Teams contemporaneamente, hanno deciso di configurare la connettività ibrida e di usare il metodo delle funzionalità sovrapposte per spostare gli utenti in Teams. Ciò ha consentito agli utenti in Teams e Skype for Business locale di condividere la presenza e comunicare. Quando gli utenti sono entrati nel progetto pilota per Sistema telefonico, sono stati spostati nella modalità solo Teams.
 
-Per comprendere i concetti fondamentali sull'aggiornamento, i metodi e le modalità, Contoso leggere gli articoli seguenti:
+Per comprendere i concetti fondamentali sull'aggiornamento, i metodi e le modalità, Contoso legge gli articoli seguenti:
 
 - [Guida introduttiva all'aggiornamento di Microsoft Teams](upgrade-start-here.md)
 - [Strategie di aggiornamento per gli amministratori IT](upgrade-to-teams-on-prem-implement.md) 
-- [Guida alla migrazione e all'interoperabilità](migration-interop-guidance-for-teams-with-skype.md)
+- [Linee guida per la migrazione e l'interoperabilità](migration-interop-guidance-for-teams-with-skype.md)
  
-Contoso ha partecipato anche alla sessione Ignite 2019 Progettazione del percorso da [Skype for Business a Teams](https://myignite.techcommunity.microsoft.com/sessions/81820?source=sessions). Contoso ha appreso di:
+Contoso ha partecipato anche alla sessione di progettazione del percorso di Ignite 2019 [da Skype for Business a Teams](https://myignite.microsoft.com/archives/IG20-OD251). Contoso ha appreso quanto:
 
-- Concetti fondamentali come l'interoperabilità, la federazione e il comportamento di aggiornamento 
+- Concetti fondamentali come interoperabilità, federazione e comportamento di aggiornamento 
 
 - Modalità di coesistenza e gestione basate su TeamsUpgradePolicy 
 
@@ -45,16 +45,16 @@ Contoso ha partecipato anche alla sessione Ignite 2019 Progettazione del percors
 
   - Pianificazione delle riunioni 
 
-  - Disponibilità delle funzionalità di collaborazione nei Teams client 
+  - Disponibilità delle funzionalità di collaborazione nei client Teams 
 
-Per pianificare e configurare la connettività ibrida, il primo passaggio per [](/SkypeForBusiness/hybrid/plan-hybrid-connectivity) spostare l'ambiente locale nel cloud, Contoso ha letto Pianificare la connettività ibrida e Configurare la connettività ibrida per comprendere come: [](/SkypeForBusiness/hybrid/configure-hybrid-connectivity) 
+Per pianificare e configurare la connettività ibrida, il primo passaggio per spostare l'ambiente locale nel cloud, Contoso legge [Pianificare la connettività ibrida](/SkypeForBusiness/hybrid/plan-hybrid-connectivity) e [Configurare la connettività ibrida](/SkypeForBusiness/hybrid/configure-hybrid-connectivity) per informazioni su come: 
 
-  - Configurare il servizio dell'ambiente locale per la federazione con Office 365. 
+  - Configurare il servizio di ambiente locale per la federazione con Office 365. 
 
-  - Configurare l'ambiente locale in modo da considerare attendibile Office 365 e abilitare lo spazio degli indirizzi SIP condiviso con Office 365 
+  - Configurare l'ambiente locale in modo che consideri attendibile Office 365 e abiliti lo spazio degli indirizzi SIP condiviso con Office 365 
 
-  - Abilitare lo spazio degli indirizzi SIP condiviso nel tenant Office 365.
+  - Abilitare lo spazio di indirizzi SIP condiviso nel tenant di Office 365.
 
   - Usare la modalità Isole durante il progetto pilota tecnico.
 
-  - Passare alla modalità TeamsOnly dopo che l'utente è abilitato per Sistema telefonico. La modalità TeamsOnly è obbligatoria per Piano chiamate e Instradamento diretto.
+  - Passare alla modalità TeamsOnly dopo che l'utente è abilitato per Sistema telefonico. La modalità TeamsOnly è necessaria per il piano per chiamate e il routing diretto.

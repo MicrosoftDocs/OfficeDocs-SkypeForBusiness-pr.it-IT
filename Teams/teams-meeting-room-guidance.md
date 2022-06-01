@@ -20,12 +20,12 @@ f1.keywords:
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4fb3eb61de1372012f2a530be86d394ca46893a6
-ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
+ms.openlocfilehash: 8df4740d6f5facc427900e7af760b11a9c8cb43f
+ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65681747"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65823401"
 ---
 # <a name="meeting-room-guidance-for-teams"></a>Indicazioni per le sale riunioni per Teams
 
@@ -83,7 +83,7 @@ Preparare gli utenti a eseguire questa operazione in più fasi per ottimizzare l
 
 È possibile iniziare con questo piano indirizzando tutti gli spazi riunione non AV o non dotati di collaborazione. È comunque possibile sfruttare Teams nelle sale riunioni, anche se tali sale riunioni non hanno ancora installato dispositivi Teams.
 
-*Audio:* Un ottimo ponte per una sala Teams completa consiste nel pianificare la tecnologia per le riunioni fornendo ai singoli utenti dispositivi audio certificati Teams per sale e gruppi più piccoli oppure distribuendoli in sale prima di una soluzione completa Teams Rooms per gli spazi più grandi destinati a gruppi più grandi in cui un piccolo dispositivo non lo tagli.
+*Audio:* Un ottimo ponte per un Teams Rooms completo consiste nel pianificare la tecnologia per le riunioni fornendo ai singoli utenti dispositivi audio certificati Teams per sale e gruppi più piccoli oppure distribuendoli in sale prima di una soluzione completa Teams Rooms per gli spazi più grandi destinati a gruppi più grandi in cui un piccolo dispositivo non lo tagli.
 
 *Dei video:* Quando si usano queste sale, i singoli utenti possono portare i propri dispositivi da condividere nel Teams contenuto della riunione e acquisire le loro espressioni con le singole fotocamere. Gli utenti possono quindi designare qualcuno come unica origine audio per il gruppo locale, connettendo il dispositivo personale al dispositivo audio certificato, in modo che tutti (sia locali che remoti) abbiano un'esperienza positiva con l'audio della riunione.
 

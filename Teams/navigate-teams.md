@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 search.appverid: ''
 ms.collection: ''
 ms.custom: ''
-ms.openlocfilehash: 2455d386e9bdf297995880f679e5db74b299e64d
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: cbea53abb94bc3cb591d98781187ac2f4cb68dfd
+ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65674838"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65823461"
 ---
 # <a name="navigate-microsoft-teams"></a>Spostarsi Microsoft Teams
 
@@ -259,7 +259,7 @@ Test è [un'estensione di messaggistica Teams](/microsoftteams/platform/messagin
 
 [Usa il](/microsoftteams/platform/samples/app-templates#staff-check-ins) modello di app Checkins del personale per consentire al personale in prima linea di fornire facilmente informazioni temporali critiche e aggiornamenti di stato su base pianificata o ad hoc direttamente da Teams. L'app supporta la posizione in tempo reale, foto, note, notifiche di promemoria e flussi di lavoro automatizzati.
 
-Usare Teams per semplificare la formazione per l'organizzazione. Formazione è un'app di [estensione di messaggistica Teams](/microsoftteams/platform/what-are-messaging-extensions) personalizzata che consente agli utenti di pubblicare una formazione all'interno di una chat o di un canale per la condivisione offline delle conoscenze e l'upskilling. L'app è supportata in più client della piattaforma Teams, ad esempio desktop, browser, iOS e Android. L'app è pronta per la distribuzione nell'ambito dell'abbonamento a Microsoft 365.
+Usare Teams per semplificare la formazione per l'organizzazione. Formazione è un'app di [estensione di messaggistica Teams](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions?tabs=dotnet) personalizzata che consente agli utenti di pubblicare una formazione all'interno di una chat o di un canale per la condivisione offline delle conoscenze e l'upskilling. L'app è supportata in più client della piattaforma Teams, ad esempio desktop, browser, iOS e Android. L'app è pronta per la distribuzione nell'ambito dell'abbonamento a Microsoft 365.
 
 [Scaricalo su GitHub](https://github.com/OfficeDev/microsoft-teams-apps-training)
 

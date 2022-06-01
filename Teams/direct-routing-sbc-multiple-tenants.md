@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un controller dei confini di sessione (SBC) per servire più tenant per i partner Microsoft e/o i gestori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7a465945a55482c84b9d6373240bc89850b80e3a
-ms.sourcegitcommit: 3f046142c40b3b776165e964f2b8718e2fe55df3
+ms.openlocfilehash: be75743752f34024baf7b2fd017557c2f0044ba6
+ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65661677"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65823687"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -52,7 +52,7 @@ Di seguito sono riportati i passaggi di implementazione tecnica per configurare 
 2. Attivare il nome del sottodominio.
 3. Configurare il trunk dal gestore al tenant del cliente ed eseguire il provisioning degli utenti.
 
-*Assicurarsi di conoscere le nozioni di base sul DNS e come viene gestito il nome di dominio in Microsoft 365. Vedere [Ottenere assistenza per Microsoft 365 domini](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef) prima di procedere.*
+*Assicurarsi di conoscere le nozioni di base sul DNS e come viene gestito il nome di dominio in Microsoft 365. Vedere [Ottenere assistenza per Microsoft 365 domini](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) prima di procedere.*
 
 ## <a name="deploy-and-configure-the-sbc"></a>Distribuire e configurare SBC
 
@@ -83,7 +83,7 @@ I sottodomini **DEVONO** corrispondere al nome FQDN del trunk che verrà configu
 
 Quando una chiamata arriva al Microsoft 365'interfaccia Routing diretto, l'interfaccia usa l'intestazione Contatto per trovare il tenant in cui l'utente deve essere cercato. Il routing diretto non usa la ricerca del numero di telefono nell'opzione Invita, perché alcuni clienti potrebbero avere numeri non DID che possono sovrapporsi in diversi tenant. Di conseguenza, il nome FQDN nell'intestazione Contatto è necessario per identificare il tenant esatto in cui cercare l'utente in base al numero di telefono.
 
-*Per altre informazioni sulla creazione di nomi di dominio in organizzazioni Microsoft 365, vedere [Ottenere assistenza per Microsoft 365 domini](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef).*
+*Per altre informazioni sulla creazione di nomi di dominio in organizzazioni Microsoft 365, vedere [Ottenere assistenza per Microsoft 365 domini](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).*
 
 Il diagramma seguente riepiloga i requisiti per il dominio di base, i sottodomini e l'intestazione contatto.
 
@@ -139,7 +139,7 @@ Dopo aver registrato un nome di dominio, è necessario attivarlo aggiungendo alm
 > [!NOTE]
 > Il tenant vettore deve mantenere almeno una licenza Sistema telefonico assegnata al tenant per evitare la rimozione della configurazione Skype for Business. 
 
-*Per altre informazioni sull'aggiunta di utenti nelle organizzazioni Microsoft 365, vedere [Ottenere assistenza per Microsoft 365 domini](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef).*
+*Per altre informazioni sull'aggiunta di utenti nelle organizzazioni Microsoft 365, vedere [Ottenere assistenza per Microsoft 365 domini](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).*
 
 Ad esempio: test@customers.adatum.biz
 
@@ -196,7 +196,7 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
 Dopo aver registrato un nome di dominio, è necessario attivarlo aggiungendo almeno un utente e assegnando un indirizzo SIP con la parte FQDN dell'indirizzo SIP corrispondente al sottodominio creato nel tenant del cliente. 
 
-*Per altre informazioni sull'aggiunta di utenti in organizzazioni Microsoft 365, vedere [Ottenere assistenza per Microsoft 365](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef).*
+*Per altre informazioni sull'aggiunta di utenti in organizzazioni Microsoft 365, vedere [Ottenere assistenza per Microsoft 365](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).*
 
 Ad esempio: test@sbc1.customers.adatum.biz
 
