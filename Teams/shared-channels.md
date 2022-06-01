@@ -1,5 +1,5 @@
 ---
-title: Canali condivisi in Microsoft Teams (anteprima)
+title: Canali condivisi in Microsoft Teams
 author: MikePlumleyMSFT
 ms.author: mikeplum
 manager: serdars
@@ -17,15 +17,15 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
 search.appverid: MET150
-description: Informazioni su come usare e gestire i canali condivisi in Microsoft Teams (anteprima).
-ms.openlocfilehash: 1f222d8994c435c315a91deaba77e383b55cba42
-ms.sourcegitcommit: 0c7d199b2f7580dbfa8ce755eda97ec70bc86978
+description: Scopri come utilizzare e gestire i canali condivisi in Microsoft Teams.
+ms.openlocfilehash: afaae423b09b36845b0eeadd9276de1356d0fca0
+ms.sourcegitcommit: e8a78c24fda7e56c7b217a843a8a5f1c30aa95f6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393880"
+ms.lasthandoff: 05/31/2022
+ms.locfileid: "65785986"
 ---
-# <a name="shared-channels-in-microsoft-teams-preview"></a>Canali condivisi in Microsoft Teams (anteprima)
+# <a name="shared-channels-in-microsoft-teams"></a>Canali condivisi in Microsoft Teams
 
 I canali condivisi in Microsoft Teams creano spazi di collaborazione dove è possibile invitare persone che non fanno parte del team. Solo gli utenti proprietari o membri del canale condiviso possono accedervi. Anche se gli utenti guest (persone con account guest di Azure Active Directory nell’organizzazione) non possono essere aggiunti a un canale condiviso, è possibile invitare le persone esterne all'organizzazione a partecipare a un canale condiviso usando connessione diretta B2B di Azure AD.
 
@@ -36,12 +36,6 @@ Solo i membri dei canali condivisi possono visualizzare e partecipare ai canali 
 Quando viene creato un canale condiviso, viene collegato al team padre e non può essere spostato in un altro team. Inoltre, i canali condivisi non possono essere convertiti in canali standard e viceversa.
 
 [Confronta i canali condivisi con altri tipi di canali](/microsoftteams/teams-channels-overview#channel-feature-comparison).
-
-## <a name="best-practices-for-the-shared-channels-preview"></a>Procedure consigliate per l'anteprima dei canali condivisi
-
-I canali condivisi sono in anteprima e richiedono la configurazione di [Anteprima pubblica in Microsoft Teams](/MicrosoftTeams/public-preview-doc-updates). Se si prevede di condividere i canali con altre organizzazioni, è necessario che anche queste abbiano configurato l'anteprima pubblica di Teams.
-
-È consigliabile abilitare l'anteprima per tutti gli utenti. Gli utenti per i quali l'anteprima non è abilitata non possono creare canali condivisi, ma possono comunque essere aggiunti ai canali condivisi. L'abilitazione dell'anteprima per tutti gli utenti consente di garantire un'esperienza coerente.
 
 ## <a name="getting-started-with-shared-channels"></a>Introduzione ai canali condivisi
 
@@ -141,14 +135,14 @@ Gli articoli seguenti possono essere utili nel caso di utilizzo dei canali condi
 
 [Ruoli di proprietario e membro del canale condiviso in Teams](https://support.microsoft.com/office/75b379f4-8e9c-4202-acf1-6ffc3878a2d7)
 
-## <a name="limits-for-shared-channels-preview"></a>Limiti per i canali condivisi (anteprima)
+## <a name="limits-for-shared-channels"></a>Limiti per i canali condivisi
 
 La tabella seguente descrive il numero massimo di canali e di membri.
 
 |Numero massimo di...|Valore|Note|
 |:---------|:----|:----|
 |Membri di un team|25.000|Include tutti gli utenti del team e i membri diretti nei canali condivisi.|
-|Canali condivisi per team|50|Ospitato e condiviso con il team. (Include i canali eliminati durante il periodo di ripristino di 30 giorni).|
+|Canali condivisi per team|200|Ospitato e condiviso con il team. (Include i canali eliminati durante il periodo di ripristino di 30 giorni).|
 |Teams un canale può essere condiviso con|50|Esclusione del team padre|
 |Membri in un canale condiviso|5.000 membri diretti, fino a 50 team. (Ogni team con cui viene condiviso il canale viene conteggiato come un membro ai fini di tale limite.)|Gli aggiornamenti in tempo reale sono disponibili solo per 25.000 utenti alla volta e solo 25.000 utenti appariranno nella lista dei canali.|
 
@@ -156,7 +150,7 @@ Si applicano anche le limitazioni seguenti:
 
 - I canali condivisi supportano le schede tranne Stream, Planner e Forms.
 
-- Le app LOB, i bot, i connettori e le estensioni dei messaggi non sono supportati per l'anteprima pubblica.
+- Le applicazioni LOB, i bot, i connettori e le estensioni dei messaggi non sono supportati.
 
 - Quando si crea un team da un team esistente, qualsiasi canale condiviso nel team esistente non verrà copiato.
 

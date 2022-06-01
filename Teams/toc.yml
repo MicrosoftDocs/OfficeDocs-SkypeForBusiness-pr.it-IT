@@ -1495,7 +1495,9 @@ items:
             href: approval-admin.md
           - name: Gestire l'app Turni
             href: expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md
-      - name: Amministrare app di terze parti
+          - name: Gestire l'app Aggiornamenti
+            href: manage-updates-app.md
+      - name: Gestire app di terze parti
         items:
           - name: Comprendere le app di terze parti
             href: overview-third-party-apps.md
@@ -1509,9 +1511,9 @@ items:
             href: purchase-third-party-apps.md
       - name: Modelli di app per Teams
         href: /microsoftteams/platform/samples/app-templates?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fMicrosoftTeams%2ftoc.json
-      - name: Gestire le app line-of-business personalizzate
+      - name: Gestione di applicazioni line-of-business personalizzate
         items:
-          - name: Gestire le app di Power Platform nell'interfaccia di amministrazione di Microsoft Teams
+          - name: Gestire le app di Power Platform nel centro di amministrazione di Teams
             href: manage-power-platform-apps.md
           - name: Pubblicare app personalizzate nello Store dell'organizzazione
             href: submit-approve-custom-apps.md
@@ -1521,7 +1523,7 @@ items:
             href: customize-apps.md
           - name: Personalizzare l'App Store dell'organizzazione
             href: customize-your-app-store.md
-      - name: Controlli di amministrazione e governance delle app
+      - name: Controlli amministrativi per gestire le app
         items:
           - name: Panoramica della gestione delle app per gli amministratori
             href: manage-apps.md
@@ -1537,11 +1539,11 @@ items:
                 href: teams-custom-app-policies-and-settings.md
           - name: Personalizzare le app di Teams per gli operatori sul campo
             href: pin-teams-apps-based-on-license.md
-          - name: Esaminare le autorizzazioni Azure AD e concedere il consenso dell'amministratore
+          - name: Informazioni sulle autorizzazioni di Azure AD e sul consenso degli amministratori
             href: app-permissions-admin-center.md
           - name: Gestire il consenso specifico delle risorse per l'organizzazione
             href: resource-specific-consent.md
-          - name: Informazioni sulle autorizzazioni per le app e sull'accesso alle risorse
+          - name: Comprendere le autorizzazioni delle app e l'accesso alle risorse
             href: app-permissions.md
           - name: Comportamento dell'app in base ai tipi di utenti
             href: non-standard-users.md
