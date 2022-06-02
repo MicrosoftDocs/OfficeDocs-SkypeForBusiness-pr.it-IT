@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Scopri come utilizzare e gestire i canali condivisi in Microsoft Teams.
-ms.openlocfilehash: afaae423b09b36845b0eeadd9276de1356d0fca0
-ms.sourcegitcommit: e8a78c24fda7e56c7b217a843a8a5f1c30aa95f6
+ms.openlocfilehash: 72701d71712a553c9a02cf9ab41ce0ced0597c3a
+ms.sourcegitcommit: c74c83fdb3fdbf1a5ebc9398bf0379d33f888d1b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2022
-ms.locfileid: "65785986"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65795638"
 ---
 # <a name="shared-channels-in-microsoft-teams"></a>Canali condivisi in Microsoft Teams
 
@@ -155,6 +155,73 @@ Si applicano anche le limitazioni seguenti:
 - Quando si crea un team da un team esistente, qualsiasi canale condiviso nel team esistente non verrà copiato.
 
 - Le notifiche dai canali condivisi non sono incluse nei messaggi di posta elettronica di attività perse.
+
+## <a name="supported-apps-in-shared-channels"></a>App supportate nei canali condivisi
+
+Per informazioni su come preparare l'app per i canali condivisi, vedere [Come aprire l'app per la collaborazione tra organizzazioni con Microsoft Teams Connect](https://mybuild.microsoft.com/sessions/4d84d73c-08de-4f56-990b-2a73b2037df1).
+
+Le app seguenti sono supportate per l'uso nei canali condivisi. 
+
+- Attività
+- Adobe Acrobat Sign
+- Asana
+- Calendario
+- Calendario Pro
+- Chiamate
+- Chat
+- Codice di Vivani
+- Conceptboard
+- Excel
+- FileBrowser
+- File
+- Flipgrid
+- Freehand by InVision
+- HeyTaco
+- Jira Cloud
+- Kahoot!
+- Elenchi
+- Lucidchart
+- Lumio
+- MeisterTask
+- MindMeister
+- Mindomo
+- Miro
+- Monday.com
+- MURAL
+- Nearpod
+- OneNote
+- PDF
+- Pear Deck
+- PowerPoint
+- Priority Matrix
+- Quicklinks
+- Quizlet
+- Salvato
+- Scrum-Poker
+- Eseguire una ricerca
+- SharePoint
+- Pagine SharePoint
+- Slido
+- Smartsheet
+- SurveyMonkey
+- Attività in una casella
+- Teams
+- Teams Manager
+- TeamViewer
+- Lavoro in team
+- Testportal
+- TrackingTime
+- Trello
+- Vevox
+- Visio
+- VSTS
+- Wakelet
+- Web
+- Wooclap
+- Word
+- YouTube
+- Zendesk
+- Zoho Projects
 
 ## <a name="related-topics"></a>Argomenti correlati
 
