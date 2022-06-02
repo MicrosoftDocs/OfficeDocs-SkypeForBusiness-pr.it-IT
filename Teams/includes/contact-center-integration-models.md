@@ -8,7 +8,7 @@ I provider di soluzioni del centro contatti possono scegliere tra tre modelli pe
 
 - Se vuoi usare i bot di Azure e le API di comunicazione di Microsoft Graph per consentire ai provider di soluzioni di creare app Teams, vedi il [modello Extend](?tabs=extend#steps).
 
-- Se desideri utilizzare un SDK che consenta ai provider di soluzioni di immettere esperienze native Teams nell'app, vedi il [modello Power](?tabs=power#steps). Le soluzioni di risparmio energia saranno possibili quando l'SDK sarà disponibile verso la fine del 2021.
+- Se desideri utilizzare un SDK che consenta ai provider di soluzioni di immettere esperienze native Teams nell'app, vedi il [modello Power](?tabs=power#steps). Le soluzioni di risparmio energia saranno possibili quando l'SDK sarà disponibile. Prossimamente.
 
 ### <a name="the-connect-model"></a>[**Modello Connessione**](#tab/connect)
 
@@ -64,17 +64,6 @@ Anche se queste funzionalità non sono un elenco completo delle funzionalità pe
 
 Il modello Power consente ai provider di soluzioni di creare applicazioni vocali native basate su Azure usando l'infrastruttura per le chiamate Teams e la piattaforma client per offrire soluzioni moderne e intelligenti per la connessione collaborativa di clienti e agenti. L'obiettivo del modello Power è fornire un'esperienza di centro contatti con un'app e una sola schermata.
 
-**Caratteristiche in evidenza:**
-
-Anche se queste funzionalità non sono un elenco completo delle funzionalità per questo modello di integrazione, le aree di interesse includono:
-
-- Esperienze di agenti formali abilitate in modo nativo per la comunicazione omnicanale tramite Teams SDK
-
-- Usare Teams servizi di collaborazione per la collaborazione dell'agente e le interazioni con i clienti
-
-- Provisioning rapido dei servizi cloud, distribuzione ovunque
-
-- Controllo diretto delle conversazioni e interazione con gli utenti durante Teams conversazioni
 
 > [!NOTE]
-> Il modello Power sarà disponibile verso la fine del 2021.
+> Prossimamente.
