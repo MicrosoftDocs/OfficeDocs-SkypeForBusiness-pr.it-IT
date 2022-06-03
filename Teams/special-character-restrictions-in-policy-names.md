@@ -21,31 +21,31 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.policies.naming.error
 - seo-marvel-mar2020
-description: Vedere quali problemi si verificano con caratteri speciali nei nomi dei criteri e cosa è possibile fare per risolverli.
-ms.openlocfilehash: c06c5053452c1c55c9e8de09d6b18dd5e97deaca
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Informazioni sui problemi relativi ai caratteri speciali nei nomi dei criteri e sulle operazioni che è possibile eseguire per risolverli.
+ms.openlocfilehash: c304e292aa10508e7c8b02fe2825b83897f22e38
+ms.sourcegitcommit: 1788f852508208a01f230f6f68a5a81ec8594c47
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589608"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65860079"
 ---
-# <a name="what-are-the-special-character-restrictions-in-teams-policies"></a>Quali sono le restrizioni speciali per i caratteri nei Teams criteri?
+# <a name="what-are-the-special-character-restrictions-in-teams-policies"></a>Quali sono le limitazioni dei caratteri speciali nei criteri di Teams?
 
-Non è possibile creare o modificare criteri (per messaggistica, riunioni e così via) con un carattere speciale nel nome **nell'Microsoft Teams di amministrazione.** 
+**Non è possibile creare o modificare criteri (per messaggi, riunioni e così via) con un carattere speciale nel nome nell'interfaccia di amministrazione di Microsoft Teams**. 
 
-Se il nome di un criterio contiene caratteri speciali, la gestione di questi criteri sarà limitata nell'interfaccia Microsoft Teams di amministrazione. **Di conseguenza, è consigliabile che i nomi dei criteri non includano caratteri speciali.** 
+Se un nome di criterio contiene caratteri speciali, la gestione di questi criteri sarà limitata nell'interfaccia di amministrazione di Microsoft Teams. **Di conseguenza, è consigliabile che i nomi dei criteri non includano caratteri speciali**. 
 
-I nomi dei criteri creati con PowerShell per le riunioni e la messaggistica Teams possono contenere caratteri speciali come @,#,$. Tuttavia, se si vuole apportare modifiche ai criteri nell'interfaccia di amministrazione di Microsoft Teams, non sarà possibile. 
+I nomi dei criteri creati con PowerShell per le riunioni e la messaggistica in Teams possono contenere caratteri speciali come @,#,$. Tuttavia, se si vogliono apportare modifiche ai criteri nell'interfaccia di amministrazione di Microsoft Teams, non sarà possibile. 
 
 Se si hanno criteri con caratteri speciali, è necessario modificare il criterio usando Windows PowerShell (per sempre) o creare un nuovo criterio nell'interfaccia di amministrazione di Microsoft Teams con le stesse impostazioni del criterio precedente e assegnarlo allo stesso gruppo di utenti.
 
 ## <a name="to-remove-special-characters"></a>Per rimuovere caratteri speciali
 
-**Passaggio 1 - Stabilire una connessione remota con PowerShell.**
+**Passaggio 1 - Effettuare una connessione remota con PowerShell.**
 > [!NOTE]
-> Skype for Business Online Connector fa attualmente parte dell'ultima versione Teams modulo di PowerShell.
+> Skype for Business Online Connector fa attualmente parte dell'ultima versione del modulo di PowerShell di Teams.
 >
-> Se si usa la versione pubblica più [recente Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
+> Se si usa l'ultima [versione pubblica di Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/), non è necessario installare Skype for Business Online Connector.
 
 ```powershell
   # When using Teams PowerShell Module
@@ -56,21 +56,21 @@ Se si hanno criteri con caratteri speciali, è necessario modificare il criterio
 ```
 
 
-**Passaggio 2: ottenere le impostazioni per il criterio precedente e acquisire l'output.**
+**Passaggio 2 - Ottenere le impostazioni per il criterio precedente e acquisire l'output.**
 
 > [!NOTE]
-> Questo esempio è per i criteri [di](/powershell/module/skype/get-csteamsmessagingpolicy?view=skype-ps) messaggistica.  La procedura sarebbe la stessa per altri tipi di criteri, ma è necessario usare il cmdlet corretto. 
+> Questo esempio riguarda i [criteri di messaggistica](/powershell/module/skype/get-csteamsmessagingpolicy) .  La procedura è la stessa per altri tipi di criteri, ma è necessario usare il cmdlet corretto. 
 
   ```PowerShell
   Get-CsTeamsMessagingPolicy -id <old_policy_name>
   ```
 
 
-**Passaggio 3- Creare un nuovo criterio.**
+**Passaggio 3 - Creare un nuovo criterio.**
 
-È possibile creare il nuovo criterio con la stessa impostazione usando l'interfaccia di amministrazione Microsoft Teams o PowerShell.
+È possibile creare il nuovo criterio con la stessa impostazione usando l'interfaccia di amministrazione di Microsoft Teams o PowerShell.
 
-Se si esegue questa operazione, verrà creato automaticamente un nuovo criterio, ma sarà necessario aggiungere le impostazioni corrette facendo clic su [Set-CsTeamsMessagingPolicy](/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps) e quindi eseguendolo:
+Eseguendo questo verrà creato un nuovo criterio per te, ma dovrai aggiungere le impostazioni corrette visualizzando [Set-CsTeamsMessagingPolicy](/powershell/module/skype/set-csteamsmessagingpolicy) e quindi eseguendolo:
 
   ```PowerShell
   Set-CsTeamsMessagingPolicy -id <new_policy_name>
@@ -79,30 +79,30 @@ Se si esegue questa operazione, verrà creato automaticamente un nuovo criterio,
  ```PowerShell
 Grant-CsTeamsMessagingPolicy -Policy <new_policy_name>
  ```
-Per altre informazioni su questo cmdlet, vedere [Grant-CsTeamsMessagingPolicy.](/powershell/module/skype/grant-csteamsmessagingpolicy?view=skype-ps)
+Per altre informazioni su questo cmdlet, vedere [Grant-CsTeamsMessagingPolicy](/powershell/module/skype/grant-csteamsmessagingpolicy) .
 
-**Passaggio 5- Eliminare il criterio precedente.**
+**Passaggio 5 - Eliminare i criteri precedenti.**
 
 Il criterio precedente verrà eliminato con i caratteri speciali.
   ```PowerShell
   Remove-CsTeamsMessagingPolicy -identity <old_policy_name>
   ```
-Per altre informazioni su questo cmdlet, vedere [Remove-CsTeamsMessagingPolicy.](/powershell/module/skype/remove-csteamsmessagingpolicy?view=skype-ps)
+Per ulteriori informazioni su questo cmdlet, vedere [Remove-CsTeamsMessagingPolicy](/powershell/module/skype/remove-csteamsmessagingpolicy) .
 
-Se il comando ha esito positivo, il comando è completato. Se il comando precedente restituisce un errore, il criterio precedente è assegnato agli utenti, quindi è necessario eseguire per rimuovere tutti gli utenti assegnati dal criterio:
+Se il comando ha esito positivo, la procedura è completata. Se il comando precedente restituisce un errore, è perché il criterio precedente è assegnato agli utenti, quindi è necessario eseguire per rimuovere tutti gli utenti assegnati dal criterio:
 
 ```PowerShell
 Grant-CsMessagingPolicy -Policy <old_policy_name> $null
 ```
 ### <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che può semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
+Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che semplifica il lavoro quotidiano quando si hanno più attività da svolgere. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     
   - [Perché è necessario usare Office 365 PowerShell?](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
     
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto solo all'uso del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+- Windows PowerShell offre molti vantaggi in fatto di velocità, semplicità e produttività rispetto all'uso della interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
     
   - [Introduzione a Windows Powershell e Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
     
@@ -111,4 +111,4 @@ Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazio
   - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
     
     > [!NOTE]
-    > Il Windows PowerShell per Skype for Business Online consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business Online e Microsoft Teams. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft nel [modulo Windows PowerShell per Skype for Business Online.](https://go.microsoft.com/fwlink/?LinkId=294688)
+    > Il modulo Windows PowerShell per Skype for Business Online consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business Online e Microsoft Teams. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft nel [modulo Windows PowerShell per Skype for Business Online.](/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-the-skype-for-business-online-connector)
