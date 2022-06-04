@@ -455,6 +455,8 @@ items:
             href: teams-analytics-and-reports/information-protection-license-report.md
           - name: Report sull'utilizzo delle visite virtuali di Teams
             href: teams-analytics-and-reports/virtual-visits-usage-report.md
+          - name: Report Appuntamenti virtuali del connettore EHR di Teams
+            href: expand-teams-across-your-org/healthcare/ehr-admin-reports.md
       - name: 'File di log, integrità dei servizi e supporto'
         items:
           - name: Usare i file di log per monitorare e risolvere i problemi di Teams
@@ -1693,7 +1695,7 @@ items:
                 href: expand-teams-across-your-org/healthcare/ehr-admin-cerner.md
               - name: Appuntamenti virtuali con Teams - Integrazione in Epic EHR
                 href: expand-teams-across-your-org/healthcare/ehr-admin.md
-              - name: Sincronizzare report di amministrazione EHR
+              - name: Report Appuntamenti virtuali del connettore EHR di Teams
                 href: expand-teams-across-your-org/healthcare/ehr-admin-reports.md
               - name: Visite virtuali con Teams e Bookings
                 href: expand-teams-across-your-org/bookings-virtual-visits.md

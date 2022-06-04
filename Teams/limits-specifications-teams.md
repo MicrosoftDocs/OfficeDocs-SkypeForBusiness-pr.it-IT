@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 94d59c27841e873c4e178a1b5c0d09df6942c1fc
-ms.sourcegitcommit: a388fd72e399f6e205c34707dc92cc309997e737
+ms.openlocfilehash: 16ca31652f3b5b9daa0216e683d80e6d9b0c809d
+ms.sourcegitcommit: e3931446943684db155bb3edf7d7e52d41775013
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65400242"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65886633"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -97,6 +97,8 @@ Gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat in T
 |Dimensioni di ogni file allegato | Meno di 10 MB |
 |Numero di immagini incorporate<sup>2</sup> |50   |
 
+> [!NOTE]
+> Esiste un limite di limitazione per il numero di messaggi di posta elettronica che è possibile inviare a un canale. Il limite è di sei messaggi di posta elettronica per dieci secondi per canale per utente e otto messaggi di posta elettronica per dieci secondi per tenant per ogni utente.
 <sup>1</sup> Se il messaggio supera questo limite viene generato un messaggio di anteprima e all'utente viene chiesto di scaricare e visualizzare il messaggio di posta elettronica originale dal collegamento fornito.
 
 <sup>2</sup> Se il numero di allegati o immagini supera questo limite, viene visualizzato un messaggio di errore.
