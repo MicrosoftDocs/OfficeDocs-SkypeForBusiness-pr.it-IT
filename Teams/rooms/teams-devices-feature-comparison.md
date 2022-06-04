@@ -1,9 +1,9 @@
 ---
-title: confronto delle funzionalità dei dispositivi Teams per spazi condivisi tra Windows e Android
+title: Confronto delle funzionalità dei dispositivi Teams per Spazi condivisi tra Windows e Android
 author: dstrome
 ms.author: dstrome
 manager: jsarrasin
-ms.date: 10/07/2021
+ms.date: 06/03/2022
 ms.topic: conceptual
 audience: ITPro
 ms.service: msteams
@@ -20,24 +20,24 @@ f1.keywords:
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: de089e5c87615f039e91832d95310faa8ff41ac6
-ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
+ms.openlocfilehash: 46ea03016b329801b5cdd4b422192ff35496dbdd
+ms.sourcegitcommit: e3931446943684db155bb3edf7d7e52d41775013
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65761078"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65886703"
 ---
-# <a name="teams-devices-for-shared-spaces-feature-comparison-between-windows-and-android"></a>confronto delle funzionalità dei dispositivi Teams per gli spazi condivisi tra Windows e Android 
-Microsoft Teams Rooms esperienze sono progettate pensando ai clienti. Ogni cliente ha esigenze specifiche ed è per questo che Microsoft offre un'ampia gamma di opzioni, tra cui Teams Rooms su Windows e su Android. 
+# <a name="teams-devices-for-shared-spaces-feature-comparison-between-windows-and-android"></a>Confronto delle funzionalità dei dispositivi Teams per gli spazi condivisi tra Windows e Android 
+Le esperienze di Microsoft Teams Rooms sono progettate pensando ai clienti. Ogni cliente ha esigenze specifiche, motivo per cui Microsoft offre un'ampia gamma di opzioni, tra cui Teams Rooms su Windows e Android. 
 
 Le funzionalità di base sono disponibili su entrambe le piattaforme, in modo che gli utenti finali possano sempre avere esperienze audio e video eccezionali, usare un join con un tocco per partecipare alle riunioni e accedere a funzionalità inclusive come i sottotitoli in tempo reale e alzare la mano. 
 
-Poiché Microsoft porta nuove funzionalità a Teams e a Teams Rooms, ci sforziamo di portarle in tutte le piattaforme, ma le funzionalità possono essere distribuite in momenti diversi a causa di una serie di fattori, tra cui elementi come la fattibilità tecnica e il feedback dei clienti per ogni piattaforma. Ciò significa che alcune funzionalità potrebbero essere distribuite in Windows prima che vengano distribuite nella piattaforma Android. 
+Poiché Microsoft porta nuove funzionalità in Teams e in Teams Rooms, ci sforziamo di portarle in tutte le piattaforme, ma le funzionalità possono essere distribuite in momenti diversi a causa di una serie di fattori, tra cui elementi come fattibilità tecnica e feedback dei clienti per ogni piattaforma. Ciò significa che alcune funzionalità potrebbero essere distribuite in Windows prima che vengano distribuite nella piattaforma Android. 
 
-Per guidarti su quali funzionalità sono disponibili su piattaforme diverse, puoi fare riferimento al grafico seguente, che verrà aggiornato periodicamente. Non tutte le funzionalità Teams Rooms saranno incluse in questo elenco, quindi continua a consultare la [roadmap Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) e i rappresentanti di vendita Microsoft per ulteriori dettagli.    
+Per guidarti su quali funzionalità sono disponibili su piattaforme diverse, puoi fare riferimento al grafico seguente, che verrà aggiornato periodicamente. Non tutte le funzionalità di Teams Rooms saranno incluse in questo elenco, quindi continua a consultare la [roadmap di Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) e i rappresentanti di vendita Microsoft per ulteriori dettagli.    
 
-## <a name="teams-devices-for-shared-spaces"></a>Teams dispositivi per gli spazi condivisi
-### <a name="feature-comparison-between-windows-and-android"></a>Confronto delle caratteristiche tra Windows e Android
+## <a name="teams-devices-for-shared-spaces"></a>Dispositivi di Teams per gli spazi condivisi
+### <a name="feature-comparison-between-windows-and-android"></a>Confronto delle funzionalità tra Windows e Android
 (marzo 2022) 
 
 | &ensp; | Funzionalità |Windows|Android|
@@ -45,7 +45,7 @@ Per guidarti su quali funzionalità sono disponibili su piattaforme diverse, puo
 |**Partecipare a una riunione**|One-touch-join |Disponibile  |Disponibile |
 ||Join di prossimità |Disponibile  |Disponibile |
 ||Riunione immediata |Disponibile  |Disponibile |
-||Partecipazione guest diretta |Disponibile  |Prossimamente |
+||Partecipazione guest diretta |Disponibile  |Disponibile |
 |**Coinvolgimento e collaborazione nelle riunioni**|Esperienza app intuitiva e appositamente costruita |Disponibile  |Disponibile |
 ||Layout video e contenuto (ad esempio modalità Insieme, raccolta di grandi dimensioni, solo raccolta, raccolta e contenuto) |Disponibile  |Disponibile |
 ||Bolle di chat|Disponibile |Prossimamente |
@@ -64,11 +64,11 @@ Per guidarti su quali funzionalità sono disponibili su piattaforme diverse, puo
 ||Trasmissione da dispositivo mobile |Disponibile  |Disponibile |
 ||Risoluzione di video e contenuti: 1080p, 30 FPS |Disponibile  |Disponibile |
 ||Elenco dei partecipanti alla riunione |Disponibile  |Disponibile |
-||Cortana capacità di voce |Disponibile  |Prossimamente |
+||Funzionalità vocali di Cortana |Disponibile  |Prossimamente |
 ||Supporto per il doppio schermo |Disponibile  |Disponibile |
 |**Sicurezza**|Montaggio sicuro, slot per blocco di sicurezza (Kensington lock), accesso alle porte di I/O |Disponibile  |Disponibile |
-||Sistema operativo |Windows 10  |Android 8,1+ |
-||Funzionalità di sicurezza del sistema operativo |TPM 2.0, disabilitare porte specifiche, avvio protetto, Credential Guard, controllo dell'impostazione della Configurazione guidata, protezione dell'accesso diretto alla memoria, sicurezza di rete |Android crittografia completa dei dischi, funzionalità specifiche per OEM |
+||Sistema operativo |Windows 10  |Android 8.1+ |
+||Funzionalità di sicurezza del sistema operativo |TPM 2.0, disabilitare porte specifiche, avvio protetto, Credential Guard, controllo dell'impostazione della Configurazione guidata, protezione dell'accesso diretto alla memoria, sicurezza di rete |Crittografia completa del disco Android, funzionalità specifiche per OEM |
 ||Modalità tutto schermo |Disponibile  |Disponibile |
 |**Gestione e amministrazione**|Delegare in modo sicuro l'accesso di gestione a un partner |Disponibile  |Disponibile |
 ||Controllo dell'accesso basato sui ruoli |Disponibile  |Disponibile |
