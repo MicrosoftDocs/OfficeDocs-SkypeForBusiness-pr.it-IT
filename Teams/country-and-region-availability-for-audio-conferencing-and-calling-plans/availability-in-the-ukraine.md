@@ -24,19 +24,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Ucraina.
-ms.openlocfilehash: 90009ddb0d35e920c13389caa5acfb838204adbb
-ms.sourcegitcommit: 9ef6e36eeba7db70971f4eb1a45f0ded394b1fe6
+description: Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Ucraina.
+ms.openlocfilehash: 27fa2f6985eaadc345cc8b8e52148603feb9da7c
+ms.sourcegitcommit: 1ac37cc27d4ccb3e1dae20ca1929214e17be2075
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "62191447"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65913404"
 ---
-# <a name="availability-in-the-ukraine"></a>Disponibilità in Ucraina
+# <a name="availability-in-ukraine"></a>Disponibilità in Ucraina
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Ucraina.
+Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Ucraina.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -44,7 +44,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |I numeri di telefono non sono associati a una località o a una città specifica. Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).  <br/> |
-|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti di comunicazione  <br/> |
+|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti comunicazioni  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
 
@@ -63,7 +63,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
 
-Se Piani chiamate non sono disponibili per l'acquisto, vedere Opzioni di connettività [PSTN](../pstn-connectivity.md) per tutte le opzioni disponibili.
+Se i Piani per chiamate non sono disponibili per l'acquisto, vedi [Opzioni di connettività PSTN](../pstn-connectivity.md) per tutte le opzioni disponibili.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
