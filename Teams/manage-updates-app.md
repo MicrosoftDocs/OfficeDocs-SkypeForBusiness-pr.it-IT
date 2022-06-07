@@ -19,20 +19,20 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 39b0e358e57a8780918c6969a562b28d9e3fe49d
-ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
+ms.openlocfilehash: 393793e5c0a5c4a305f26427951968c5614c052f
+ms.sourcegitcommit: 5640e8264b61c1f8cf8eb212315eeba1a794e494
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65823727"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65928859"
 ---
 # <a name="manage-the-updates-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Aggiornamenti per l'organizzazione in Microsoft Teams
 
 ## <a name="what-is-the-updates-app"></a>Che cos'è l'app Aggiornamenti
 
-L'app Aggiornamenti in Microsoft Teams offre ai membri dell'organizzazione una posizione centralizzata in cui creare, rivedere e inviare gli aggiornamenti. Creando modelli, è possibile usare l'app Aggiornamenti per tenere traccia di tutto ciò di cui l'organizzazione ha bisogno. Gli aggiornamenti sono disponibili sia per il desktop che per i dispositivi mobili.
+Gli aggiornamenti nell'app Microsoft Teams offrono ai membri dell'organizzazione un posto centralizzato in cui creare, rivedere e inviare gli aggiornamenti. Creando modelli, è possibile usare l'app Aggiornamenti per tenere traccia di tutto ciò di cui l'organizzazione ha bisogno. Gli aggiornamenti sono disponibili sia per il desktop che per i dispositivi mobili.
 
-In Teams gli utenti possono scaricare gli aggiornamenti dall'app store Teams. Tutti gli aggiornamenti che devono inviare verranno visualizzati nella pagina **Invia** .
+In Teams, gli utenti possono ottenere gli aggiornamenti dall'app store di Teams. Tutti gli aggiornamenti che devono inviare verranno visualizzati nella pagina **Invia** .
 
 [![Immagine della pagina Invia in Teams per desktop.](media/updates-submit-small.png)](media/updates-submit.png#lightbox)
 
@@ -68,7 +68,7 @@ Per distribuire gli aggiornamenti, è necessaria l'autorizzazione per gli elemen
 
 - Licenza per Power Automate, Office 365 o Dynamics 365.
 
-- Per configurare nuovi modelli è necessaria una licenza per Microsoft Forms.
+- La licenza per Microsoft Forms è necessaria per consentire agli utenti di configurare nuovi modelli.
 
 ## <a name="storage-with-microsoft-dataverse"></a>Archiviazione con Microsoft Dataverse
 
@@ -77,11 +77,11 @@ Il common data model (CDM) è il linguaggio dei dati condiviso usato dalle appli
 Gli aggiornamenti creati da un modello archiviano comunque i dati in Microsoft Dataverse, ad esempio il titolo, i dettagli, l'ID modello e altro ancora. Altre informazioni  [sull'archiviazione dei dati per Microsoft Forms](https://support.microsoft.com/office/data-storage-for-microsoft-forms-97a34e2e-98e1-4dc2-b6b4-7a8444cb1dc3#:~:text=Where%20data%20is%20stored%20for%20Microsoft%20Forms.%20Microsoft,European-based%20tenants%20is%20stored%20on%20servers%20in%20Europe).
 
 >[!Note]
->Se si elimina il modello di modulo nel sito Microsoft Forms, verrà interrotto il modello Aggiornamenti e gli utenti non saranno in grado di inviare l'aggiornamento. Gli utenti ricevono un errore "CDB TableNotFound" quando provano ad aprire un modello eliminato in Microsoft Forms.
+>Se si elimina il modello di modulo nel sito Microsoft Forms, il modello Aggiornamenti verrà interrotto e gli utenti non saranno in grado di inviare l'aggiornamento. Gli utenti ricevono un errore "CDB TableNotFound" quando provano ad aprire un modello eliminato in Microsoft Forms.
 
-## <a name="updates-teams-app-permissions"></a>Aggiornamenti Teams autorizzazioni per le app
+## <a name="updates-teams-app-permissions"></a>Aggiornamento delle autorizzazioni per le app Teams
 
-L'app Updates Teams consente di accedere alle caratteristiche seguenti:
+L'app Aggiornamenti di Teams consente di accedere alle seguenti funzionalità:
 
 - Ricevere messaggi e dati forniti dall'utente.
 
@@ -112,7 +112,7 @@ L'app Aggiornamenti è disponibile per impostazione predefinita. È possibile di
 
   3. Cerca l'app Aggiornamenti.
 
-     [![Screenshot della struttura di spostamento centrale Amministrazione con Teams App > Gestisci app evidenziato.](media/manage-updates-small.png)](media/manage-updates.png#lightbox)
+     [![Screenshot della struttura di spostamento dell'interfaccia di amministrazione con l'opzione App di Teams > Gestisci app evidenziata.](media/manage-updates-small.png)](media/manage-updates.png#lightbox)
 
   4. Seleziona **Aggiornamenti**.
 
@@ -121,17 +121,7 @@ L'app Aggiornamenti è disponibile per impostazione predefinita. È possibile di
 
 ## <a name="pin-updates-to-teams"></a>Aggiungere aggiornamenti a Teams
 
-### <a name="use-the-tailored-frontline-app-experience-to-pin-updates-and-other-apps-to-teams"></a>Usa l'esperienza App in prima linea personalizzate per aggiungere aggiornamenti e altre app a Teams
-
-L'esperienza delle app in prima linea personalizzate in Teams aggiunge le app più rilevanti in Teams per gli utenti che hanno una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt). Le app aggiunte includono Aggiornamenti, Approvazioni, Walkie-talkie, Attività e Turni. Per impostazione predefinita, questa funzionalità è attivata e offre ai dipendenti in prima linea un'esperienza personalizzata in base alle loro esigenze.
-
-Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore del Teams client per dispositivi mobili, in cui gli utenti possono accedervi in modo semplice e rapido.
-
-Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri delle app impostati, vedere [Personalizzare le app Teams per i dipendenti in prima linea](pin-teams-apps-based-on-license.md).
-
-### <a name="use-an-app-setup-policy-to-pin-updates-to-teams"></a>Usare i criteri di configurazione delle app per aggiungere aggiornamenti a Teams
-
-I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere app più importanti per gli utenti.
+I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere app più importanti per gli utenti degli utenti. Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore dei client mobili di Teams, dove gli utenti possono accedervi rapidamente e facilmente.
 
 Per aggiungere l'app Aggiornamenti per gli utenti, è possibile modificare il criterio globale (impostazione predefinita a livello di organizzazione) o creare e assegnare criteri di configurazione dell'app personalizzati. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
 
@@ -147,11 +137,11 @@ Attualmente, l'app Aggiornamenti in Teams non supporta i criteri di accesso cond
 
 ## <a name="data-limitations"></a>Limitazioni dei dati
 
-Ogni utente può creare al massimo 400 modelli di aggiornamenti e ogni modello può raccogliere un massimo di 50.000 richieste in base alla funzionalità corrente di Microsoft Forms.
+Ogni utente può creare al massimo 400 modelli di aggiornamenti e ogni modello può raccogliere un massimo di 50.000 richieste in base alla funzionalità corrente in Microsoft Forms.
 
 ## <a name="security"></a>Sicurezza
 
-Dall'app aggiornamenti di Teams, gli utenti hanno accesso per creare nuovi aggiornamenti e visualizzare gli aggiornamenti inviati e ricevuti. Gli utenti non avranno accesso agli aggiornamenti creati da altri utenti, a meno che non siano visualizzatori della richiesta.
+Dall'app Aggiornamenti di Teams, gli utenti hanno accesso per creare nuovi aggiornamenti e visualizzare gli aggiornamenti che hanno inviato e ricevuto. Gli utenti non avranno accesso agli aggiornamenti creati da altri utenti, a meno che non siano visualizzatori della richiesta.
 
 > [!Note]
 > A un utente viene assegnato il ruolo di visualizzatore di una richiesta se fa parte della chat o del canale in cui è stato creato il report di aggiornamento o se l'autore del modello li aggiunge manualmente come visualizzatore. Non potranno intervenire sulla richiesta se al momento della creazione del report non è stato assegnato quel ruolo.
