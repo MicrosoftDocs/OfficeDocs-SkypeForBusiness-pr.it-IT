@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8415ee8dc79c8c67189ae801b1287c56115e6d72
-ms.sourcegitcommit: 2c3c067cccd7b84064b5619a0b5f87242af52984
+ms.openlocfilehash: 03a2501236cd8dfa708790e49719d8103a187783
+ms.sourcegitcommit: 5640e8264b61c1f8cf8eb212315eeba1a794e494
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65462030"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65928829"
 ---
 # <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 
@@ -39,11 +39,14 @@ Il componente aggiuntivo Riunione di Teams viene installato automaticamente per 
 ![Screenshot del componente aggiuntivo Riunione di Teams sulla barra multifunzione di Outlook.](media/Teams-add-in-for-Outlook.png)
 
 > [!NOTE]
+>
+>
 > - Non sono presenti **URL diretti** che portino al componente aggiuntivo di Teams.
 > - Sono da prendere in considerazione elementi aggiuntivi se l'organizzazione esegue sia Teams che Skype for Business. In alcune circostanza, il componente aggiuntivo Teams non è disponibile in Outlook. Vedere [Aggiornare da Skype for Business a Teams](upgrade-to-Teams-on-prem-tools.md) per ulteriori informazioni.
 > - Le autorizzazioni utente per eseguire il file Regsvr32.exe sono un requisito minimo per installare il componente aggiuntivo Riunione di Teams nel computer.
 > - Se gli utenti non vedono il componente aggiuntivo Riunione di Teams, puoi chiedere loro di chiudere Outlook e Teams, quindi di riavviare prima il client Team, poi di accedere a Teams e infine di riavviare il client Outlook nell’ordine appena esposto.
 > - Se si usa un'installazione di Office Outlook da Microsoft Store, il componente aggiuntivo Riunione di Teams non è supportato. Gli utenti che richiedono questo componente aggiuntivo possono installare la versione a portata di clic di Office, come descritto nell’articolo [Office su Windows 10 in modalità S](https://support.office.com/article/faq-office-on-windows-10-in-s-mode-717193b5-ff9f-4388-84c0-277ddf07fe3f).
+> - Sarà necessaria l'installazione di [Webview2](/microsoft-edge/webview2/concepts/distribution) per la funzionalità del componente aggiuntivo Riunione di Teams, le opzioni di riunione incorporate. Se WebView2 non è installato, gli utenti verranno reindirizzati al browser, che può offrire un'esperienza ridotta soprattutto al momento della creazione della riunione.
 
 ## <a name="teams-meeting-add-in-in-outlook-for-mac"></a>Componente aggiuntivo Riunione di Teams in Outlook per Mac
 
