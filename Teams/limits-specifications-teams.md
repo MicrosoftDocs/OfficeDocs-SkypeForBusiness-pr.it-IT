@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cdbae6cacd861602baea69ec9682f8069dc720a0
-ms.sourcegitcommit: 1ac37cc27d4ccb3e1dae20ca1929214e17be2075
+ms.openlocfilehash: 2d31474233057d930ccdbc0bdfea27262cc5dc04
+ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65913434"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66046005"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -45,8 +45,8 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 |Numero di canali per team    | 200 (include i canali eliminati)<sup>4</sup>        |
 |Numero di canali privati per team    |30 (include i canali eliminati)<sup>4</sup>        |
 |Numero di membri in un canale privato    |250|
-|Dimensioni massime della lista di distribuzione, del gruppo di sicurezza o del gruppo di Office 365 che è possibile importare in un team    |3.500|
-|Numero massimo di membri in un gruppo di Office 365 che possono essere trasformati in un team    |10.000<sup>6</sup>     |
+|Dimensioni massime della lista di distribuzione, del gruppo di sicurezza o del gruppo di Microsoft 365 che è possibile importare in un team    |3.500|
+|Numero massimo di membri in un gruppo di Microsoft 365 che possono essere trasformati in un team    |10.000<sup>6</sup>     |
 |Dimensione post di conversazione sul canale | Circa 28 KB per post<sup>5</sup> |
 
 <sup>1</sup> Qualsiasi oggetto di directory di Azure Active Directory conta rispetto a questo limite. Gli amministratori globali sono esentati da questo limite, così come le app che chiamano Microsoft Graph usando le [autorizzazioni dell'applicazione](/graph/permissions-reference).
@@ -62,7 +62,7 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 <sup>6</sup> I membri dei canali condivisi esterni al team vengono conteggiati in base a questo limite. Si noti inoltre che le menzioni dei team/canali sono bloccate nei team con più di 10.000 membri.
 
 > [!NOTE]
-> Per i limiti per l'anteprima dei canali condivisi, vedere [Limiti per i canali condivisi (anteprima)](/MicrosoftTeams/shared-channels#limits-for-shared-channels-preview).
+> Per i limiti dei canali condivisi, vedere [Limiti per i canali condivisi](/MicrosoftTeams/shared-channels#limits-for-shared-channels).
 
 ## <a name="messaging"></a>Messaggistica
 
