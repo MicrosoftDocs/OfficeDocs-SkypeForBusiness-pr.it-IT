@@ -1,7 +1,7 @@
 ---
 title: Configurare Microsoft Teams nella piccole imprese
-author: dstrome
-ms.author: dstrome
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 audience: admin
@@ -18,19 +18,19 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: bdf55403f807ddb8929da71d082adffcbcb7877d
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: c3afa62cfaca28c0c428c15b44868e7237973955
+ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61767149"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66045445"
 ---
 # <a name="set-up-microsoft-teams-in-your-small-business"></a>Configurare Microsoft Teams nella piccole imprese
 
 È possibile personalizzare Teams in diversi modi. Le sezioni seguenti mostrano come configurare ogni carico di lavoro Teams: **chat, team e canali**; **riunioni e conferenze**; e **soluzioni vocali**. L'ordine in cui si configura ciascun carico di lavoro dipende dall’utente. Anche se è consigliabile configurare prima il carico di lavoro di chat, team e canali, è possibile iniziare con le riunioni e le conferenze o anche con il cloud voice. La scelta sta all'utente.
 
 > [!NOTE]
-> Se tutto ciò è già stato fatto, è consigliabile iniziare la distribuzione di Teams attraverso una distribuzione pilota. Una distribuzione pilota consentirà all’utente e agli early adopter di acquisire familiarità con Teams e le sue funzionalità prima della pianificazione e della distribuzione finale. Per altre informazioni su come avviare la distribuzione pilota, vedere [Introduzione a Microsoft Teams](get-started-with-teams-quick-start.md).
+> Se non si è già stato fatto, è consigliabile iniziare la distribuzione di Teams attraverso una distribuzione pilota. La distribuzione pilota consentirà all’utente e agli early adopter di acquisire familiarità con Teams e le relative funzionalità prima della pianificazione e della distribuzione finale. Per altre informazioni su come avviare la distribuzione pilota, vedere [Introduzione a Microsoft Teams](get-started-with-teams-quick-start.md).
 
 Prima di implementare Teams su larga scala, assicurarsi che l'organizzazione sia pronta esaminando gli elementi in [Assicurarsi di essere pronti](get-started-with-teams-quick-start.md#make-sure-youre-ready).
 
@@ -86,7 +86,7 @@ Per altre informazioni su Servizi telefonici Teams con piano per chiamate per le
 
 ## <a name="deploy-clients"></a>Distribuire i client
 
-Quando gli utenti iniziano a usare Teams possono installare il client Teams sul proprio PC Windows, Mac o Linux o sul proprio dispositivo Android o iOS. Gli utenti possono scaricare il client Teams direttamente da <https://teams.microsoft.com/downloads>.
+Quando gli utenti sono pronti per iniziare a usare Teams, possono installare il client Teams sul proprio PC Windows, Mac o Linux o sul dispositivo Android o iOS. Gli utenti possono scaricare il client Teams direttamente da <https://teams.microsoft.com/downloads>.
 
 Assicurarsi che tutti gli utenti che usano Teams abbiano una licenza di Teams. Per altre informazioni sull'assegnazione di una licenza di Teams, vedere [Gestire l'accesso degli utenti a Teams](user-access.md#using-the-microsoft-365-admin-center).
 

@@ -1,7 +1,7 @@
 ---
 title: Poster di soluzioni voce e architettura IT di Microsoft Teams
-ms.author: serdars
-author: SerdarSoysal
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 audience: ITPro
 ms.topic: landing-page
@@ -16,12 +16,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: "Riepilogo: informazioni sull'architettura logica dei servizi di produttività in Microsoft 365, con Microsoft Teams. Sono disponibili inoltre informazioni sulle soluzioni voce per Teams."
-ms.openlocfilehash: 6ac6f7f88ec838b445d382dbc6ba8d5ee4ec1bcf
-ms.sourcegitcommit: 204e4654f2c3977db260670f3ee1784d1ad6ed17
+ms.openlocfilehash: 5e53d82aff2ad67ca97acd151e5cbc9d2ed75810
+ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64866191"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66045425"
 ---
 # <a name="microsoft-teams-it-architecture-and-voice-solutions-posters"></a>Poster di soluzioni voce e architettura IT di Microsoft Teams
 

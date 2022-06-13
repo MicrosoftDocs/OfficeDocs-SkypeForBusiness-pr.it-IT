@@ -16,12 +16,12 @@ search.appverid: MET150
 f1.keywords:
 - CSH
 description: Scopri come esplorare e acquistare dispositivi nello store dei dispositivi dell'interfaccia di amministrazione di Teams
-ms.openlocfilehash: da520b6396fa7e47288f4fdaa6b9f028ba16b3dd
-ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
+ms.openlocfilehash: e5cedb84d50111d90d90d47802f667fb6fdbc106
+ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65761448"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66045645"
 ---
 # <a name="purchase-devices-in-the-teams-device-store"></a>Acquistare dispositivi nello store dei dispositivi Teams
 
@@ -34,7 +34,7 @@ Lo store dei dispositivi nell'interfaccia di amministrazione di Teams consente d
 
 ## <a name="requirements"></a>Requisiti
 
-Per usare l'archivio dispositivi, è necessario essere un amministratore globale, un amministratore Teams o un amministratore del dispositivo Teams.
+Per usare l'archivio dispositivi, è necessario essere un amministratore globale o un amministratore Teams.
 
 ## <a name="browse-the-store"></a>Esplora lo Store
 

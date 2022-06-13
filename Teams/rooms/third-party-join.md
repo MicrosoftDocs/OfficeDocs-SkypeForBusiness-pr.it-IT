@@ -12,20 +12,26 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: Questo articolo descrive come configurare l'organizzazione e Teams Rooms dispositivi per supportare la partecipazione a riunioni di terze parti a Cisco WebEx e Zoom.
-ms.openlocfilehash: a9421d234981343d268e74a2f03a949f3761ae0f
-ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
+description: Questo articolo illustra come configurare l'organizzazione e Teams Rooms dispositivi per supportare la partecipazione a riunioni di terze parti a Cisco Webex e Zoom.
+ms.openlocfilehash: 93b853e8b9d0a692062bb0c81d670c42701ca415
+ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65761418"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66045415"
 ---
 # <a name="enable-teams-rooms-devices-to-join-third-party-meetings"></a>Abilitare Teams Rooms dispositivi per partecipare a riunioni di terze parti
 
-> [!NOTE]
-> Questa funzionalità è attualmente disponibile solo in Teams Rooms in Windows.
+Microsoft Teams Rooms dispositivi supportano un'esperienza con un tocco per partecipare a riunioni online di terze parti, dette anche partecipazione diretta degli utenti guest. Se abilitata, è possibile usare Teams Rooms per partecipare a riunioni ospitate su Cisco Webex e Zoom con la facilità con cui è possibile partecipare a riunioni ospitate in Microsoft Teams.
 
-Microsoft Teams Rooms dispositivi supportano un'esperienza con un tocco per partecipare a riunioni online di terze parti, dette anche partecipazione diretta degli utenti guest. Se abilitata, è possibile usare Teams Rooms per partecipare a riunioni ospitate su Cisco WebEx e Zoom con la facilità con cui è possibile partecipare a riunioni ospitate in Microsoft Teams.
+Dispositivi e servizi supportati:
+
+- MTR su Windows, tutti i modelli certificati – Zoom, Cisco WebEx
+
+- MTR su modelli certificati Android, Poly, Yealink e Logitech - Zoom
+
+> [!NOTE]
+> Per partecipare a una riunione Cisco WebEx da un dispositivo Teams Rooms, la riunione Cisco deve essere ospitata in Riunioni WebEx Pro con l'applicazione Web Cisco WebEx versione WBS 40.7 o successiva. 
 
 Prima di partecipare a riunioni di terze parti da Teams Rooms, è necessario eseguire le operazioni seguenti:
 
@@ -33,13 +39,13 @@ Prima di partecipare a riunioni di terze parti da Teams Rooms, è necessario ese
 2. Assicurarsi che l'organizzazione non abbia criteri che impediscano la connessione ai servizi per riunioni di terze parti.
 3. Configurare Teams Rooms per consentire riunioni di terze parti.
 
-Le sezioni seguenti illustrano come eseguire ognuna di queste operazioni.
+Le sezioni seguenti illustrano come completare ognuno di questi passaggi.
 
 ## <a name="step-1-allow-calendar-invite-processing-for-third-party-meetings"></a>Passaggio 1: Consentire l'elaborazione degli inviti al calendario per le riunioni di terze parti
 
-La prima cosa da fare per abilitare un'esperienza di partecipazione con un tocco da Gruppi di team è impostare le regole di elaborazione del calendario per la cassetta postale della sala Exchange Online del dispositivo. La cassetta postale della sala deve consentire le riunioni esterne e mantenere il corpo e l'oggetto del messaggio in modo che possa vedere l'URL necessario per partecipare alla riunione di terze parti. Per impostare queste opzioni della cassetta postale della sala utilizzando il cmdlet [Set-CalendarProcessing](/powershell/module/exchange/set-calendarprocessing?view=exchange-ps.) , eseguire le operazioni seguenti:
+La prima cosa da fare per abilitare un'esperienza di partecipazione con un tocco da Gruppi di team è impostare le regole di elaborazione del calendario per la cassetta postale della sala Exchange Online del dispositivo. La cassetta postale della sala deve consentire le riunioni esterne e mantenere il corpo e l'oggetto del messaggio in modo che possa vedere l'URL necessario per partecipare alla riunione di terze parti. Per impostare queste opzioni della cassetta postale della sala utilizzando il cmdlet [Set-CalendarProcessing](/powershell/module/exchange/set-calendarprocessing.) , eseguire le operazioni seguenti:
 
-1. Connessione a Exchange Online PowerShell. Per altre informazioni, vedere [Connessione a Exchange Online PowerShell con autenticazione di base](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps) o [Connessione per Exchange Online PowerShell con l'autenticazione a più](/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps) fattori, a seconda del metodo di autenticazione.
+1. Connessione a Exchange Online PowerShell. Per altre informazioni, vedere [Connessione a Exchange Online PowerShell con autenticazione di base](/powershell/exchange/connect-to-exchange-online-powershell) o [Connessione per Exchange Online PowerShell con l'autenticazione a più](/powershell/exchange/mfa-connect-to-exchange-online-powershell) fattori, a seconda del metodo di autenticazione.
 
 2. Ottenere il nome dell'entità utente (UPN) della cassetta postale della sala, se non lo si conosce eseguendo il comando seguente:
 
@@ -55,17 +61,17 @@ La prima cosa da fare per abilitare un'esperienza di partecipazione con un tocco
     Set-CalendarProcessing <UserPrincipalName> -ProcessExternalMeetingMessages $True -DeleteComments $False -DeleteSubject $False
     ```
 
-Altre informazioni su [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell?view=exchange-ps).
+Altre informazioni su [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell).
 
 ## <a name="step-2-configure-office-365-threat-protection-and-link-rewrite"></a>Passaggio 2: Configurare Office 365 Threat Protection e riscrivere i collegamenti
 
-Per abilitare l'esperienza di partecipazione con un tocco, le informazioni sul collegamento di partecipazione alla riunione di terze parti devono essere presenti e leggibili nell'invito alla riunione. Se l'organizzazione usa la funzionalità [Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/safe-links?view=o365-worldwide) collegamenti sicuri o se si usa una soluzione di terze parti che analizza tutti gli URL in arrivo e in uscita alla ricerca di minacce, potrebbe modificare gli URL di partecipazione alla riunione e rendere la riunione non riconoscibile dal dispositivo Teams Rooms. Per assicurarsi che ciò non accada, è necessario aggiungere gli URL del servizio di riunione di terze parti a Defender for [Office 365 Cassaforte Links **Non riscrivere** elenco o l'elenco di eccezioni di riscrittura](/microsoft-365/security/office-365-security/safe-links?view=o365-worldwide) URL di terze parti.
+Per abilitare l'esperienza di partecipazione con un tocco, le informazioni sul collegamento di partecipazione alla riunione di terze parti devono essere presenti e leggibili nell'invito alla riunione. Se l'organizzazione usa la funzionalità [Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/safe-links) collegamenti sicuri o se si usa una soluzione di terze parti che analizza tutti gli URL in arrivo e in uscita alla ricerca di minacce, potrebbe modificare gli URL di partecipazione alla riunione e rendere la riunione non riconoscibile dal dispositivo Teams Rooms. Per assicurarsi che ciò non accada, è necessario aggiungere gli URL del servizio di riunione di terze parti a Defender for [Office 365 Cassaforte Links **Non riscrivere** elenco o l'elenco di eccezioni di riscrittura](/microsoft-365/security/office-365-security/safe-links) URL di terze parti.
 
  Se si usa una soluzione di terze parti, vedere le istruzioni per la soluzione per aggiungere URL al relativo elenco di eccezioni di riscrittura URL.
 
 Ecco alcune voci di esempio che potrebbe essere necessario aggiungere all'elenco Defender per Office 365 Cassaforte Collegamenti *non riscrivere* o all'elenco di eccezioni di riscrittura URL di terze parti:
 
-- **Cisco WebEx** `*.webex.com/*`
+- **Cisco Webex** `*.webex.com/*`
 - **Zoom** `*.zoom.us/*`, `*.zoom.com/*``*.zoomgov.com/*`
 
 Per un elenco completo degli URL da aggiungere all'elenco collegamenti Defender per Office 365 Cassaforte *Non riscrivere* o all'elenco di eccezioni di riscrittura URL di terze parti, contattare il provider di servizi per riunioni di terze parti da cui accettare inviti alle riunioni.
@@ -73,17 +79,17 @@ Per un elenco completo degli URL da aggiungere all'elenco collegamenti Defender 
 > [!CAUTION]
 > Aggiungere solo gli URL attendibili all'elenco collegamenti di Microsoft Defender per Office 365 Cassaforte *Non riscrivere* o all'elenco di eccezioni di riscrittura URL di terze parti.
 
-## <a name="step-3-enable-third-party-meetings-on-teams-rooms"></a>Passaggio 3: Abilitare le riunioni di terze parti in Teams Rooms
+## <a name="step-3a-enable-third-party-meetings-on-teams-rooms-on-windows"></a>Passaggio 3a: Abilitare le riunioni di terze parti su Teams Rooms in Windows
 
-L'ultimo passaggio da eseguire è consentire a Teams Rooms di partecipare a riunioni di terze parti. Le riunioni di terze parti richiedono un nome utente e un indirizzo di posta elettronica per partecipare. Se il nome utente e l'indirizzo di posta elettronica da usare sono diversi dalla cassetta postale della sala del dispositivo, è necessario aggiungerli al dispositivo. È possibile eseguire questa operazione nelle impostazioni di Teams Rooms o nel file di configurazione XML.
+L'ultimo passaggio da eseguire è consentire a Teams Rooms di partecipare a riunioni di terze parti. Le riunioni di terze parti richiedono un nome utente e un indirizzo di posta elettronica per partecipare. Se il nome utente e l'indirizzo di posta elettronica da usare sono diversi dalla cassetta postale della sala del dispositivo, è necessario aggiungerli al dispositivo. È possibile eseguire questa operazione nelle impostazioni di Teams Rooms o nel file di configurazione XML. È possibile eseguire questa operazione nelle impostazioni di Teams Rooms in qualsiasi Teams Rooms che supporta o nel file di configurazione XML per Teams Rooms su Windows.
 
 ### <a name="use-device-settings"></a>Usare le impostazioni del dispositivo
 
-Per configurare Teams Rooms utilizzando la console touchscreen, esegui le operazioni seguenti:
+Per configurare Teams Rooms in Windows con la console touchscreen, esegui le operazioni seguenti:
 
-1. Nella console Microsoft Teams Rooms seleziona **Altro ...**.
+1. Nella console Microsoft Teams Rooms seleziona **Altro**.
 2. Seleziona **Impostazioni** e quindi immetti il nome utente e la password dell'amministratore del dispositivo.
-3. Vai alla scheda **Riunioni** e seleziona **Cisco WebEx**, **Zoom** o entrambi.
+3. Vai alla scheda **Riunioni** e seleziona un provider di riunioni di terze parti che desideri abilitare (ad esempio **Webex**, **Zoom** e così via).
 4. Per partecipare alle riunioni con il nome utente e l'indirizzo di posta elettronica associati alla cassetta postale della sala, selezionare **Partecipa con le informazioni sulla sala**.
 5. Se vuoi partecipare alle riunioni con un nome utente alternativo e un indirizzo e-mail, seleziona **Partecipa con info personalizzate** e immetti il nome utente e l'indirizzo e-mail che vuoi usare.
 6. Seleziona **Salva e chiudi**. Il dispositivo verrà riavviato.
@@ -92,10 +98,10 @@ Per configurare Teams Rooms utilizzando la console touchscreen, esegui le operaz
 
 È possibile aggiungere le impostazioni seguenti al `SkypeSettings.xml` file che si trova in `C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState`. Per altre informazioni sul `SkypeSettings.xml` file, vedere [Gestire in remoto le impostazioni di una console Microsoft Teams Rooms con un file di configurazione XML](xml-config-file.md).
 
-Per abilitare le riunioni di Cisco WebEx, impostare l'elemento `WebExMeetingsEnabled` XML su **True**, come indicato di seguito.
+Per abilitare le riunioni di Cisco Webex, impostare l'elemento `WebexMeetingsEnabled` XML su **True**, come indicato di seguito.
 
 ```xml
-<WebExMeetingsEnabled>True</WebExMeetingsEnabled>
+<WebexMeetingsEnabled>True</WebexMeetingsEnabled>
 ```
 
 Per abilitare le riunioni con zoom, impostare l'elemento `ZoomMeetingsEnabled` XML su **True**, come indicato di seguito.
@@ -113,6 +119,19 @@ Per abilitare le riunioni con zoom, impostare l'elemento `ZoomMeetingsEnabled` X
 
 <CustomDisplayEmailForThirdPartyMeetings>guest@contoso.com</CustomDisplayEmailForThirdPartyMeetings>
 ```
+## <a name="step-3b-enable-third-party-meetings-on-teams-rooms-on-android"></a>Passaggio 3b: Abilitare le riunioni di terze parti in Teams Rooms in Android
 
-> [!NOTE]
-> Per partecipare a una riunione Cisco WebEx da un dispositivo Teams Rooms, la riunione Cisco deve essere ospitata in Riunioni WebEx Pro con l'applicazione Web Cisco WebEx versione WBS 40.7 o successiva. 
+Per configurare Teams Rooms su Android utilizzando la console touchscreen o lo schermo front-of-room, procedere come segue:
+
+1.  Sul Microsoft Teams Rooms console o sullo schermo anteriore della sala, seleziona **Altro**.
+2.  Selezionare **Impostazioni** e:
+    -   Se si usa un account personale, ad esempio un account con una licenza E5, scegliere **l'opzione Riunioni** .
+    -   Se si usa un account condiviso ,ad esempio un account di risorse con una licenza di Teams Rooms, scegliere **Impostazioni dispositivo**, individuare **Teams Impostazioni amministratore**, immettere una password di amministratore e scegliere un'opzione **Riunioni**.
+      > [!NOTE]
+      > Alcuni produttori di dispositivi richiedono una password amministrativa per poter accedere alle **impostazioni del dispositivo** .
+
+    ![Impostazioni delle riunioni per MTR in Android](..\media\mtrandroid.png)
+
+3.  Selezionare un provider di riunioni di terze parti da abilitare.
+4.  Se si vuole partecipare a riunioni con un nome utente e un indirizzo di posta elettronica personalizzati, selezionare **Partecipa con nome e indirizzo di posta elettronica personalizzati**. Per aggiornare le informazioni personali personalizzate, premi **Modifica info personalizzate** e inserisci il nome preferito e l'indirizzo e-mail.
+

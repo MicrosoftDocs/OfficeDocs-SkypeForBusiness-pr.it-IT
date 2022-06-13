@@ -1,8 +1,8 @@
 ---
-title: risorse di formazione Amministrazione - Microsoft Teams
+title: Risorse di formazione per amministratori - Microsoft Teams
 ms.reviewer: jhwang
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -19,12 +19,12 @@ ms.custom:
 description: Video di formazione, PowerPoint presentazioni, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0bc4841e67606f467bc13940755a7de77038d7b6
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 3cda81a54bce9310454cd6b0607e943eb7c2bb37
+ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675588"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66045855"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori per Microsoft Teams
 
@@ -105,7 +105,7 @@ Usare le risorse di formazione per educare se stessi su Teams, insegnare ad altr
 | Configurare il routing diretto: connessione di SBC e routing vocale                 | Utilizza Telefono di Microsoft Teams System Direct Routing per integrare l'infrastruttura di telefonia esistente.                                                                                                              | [Configurare la guida al routing diretto](https://aka.ms/DirectRoutingInteractiveGuide)          |
 | Configurare la governance in Microsoft Teams                                     | Informazioni su come creare criteri di conservazione della messaggistica Teams per l'organizzazione e come archiviare, eliminare e ripristinare singoli Teams                                                                                   |  [Configurare la governance in Microsoft Teams guida](https://aka.ms/TeamsGovernanceInteractiveGuide)        |
 | Configurazione e distribuzione di riunioni Microsoft Teams                          | Esaminare il processo di distribuzione del carico di lavoro delle riunioni per Microsoft Teams.                                                                                                                                       |  [Guida alla configurazione e alla distribuzione di Microsoft Teams riunioni](https://aka.ms/TeamsMeetingsInteractiveGuide)          |
-| Configurare Audioconferenza per Microsoft Teams                            | Scopri le funzionalità di Audioconferenza in Teams e come assegnare bridge di conferenza e numeri di telefono per l'accesso esterno.                                                                                          |  [Configurazione delle audioconferenze per Microsoft Teams guida](https://aka.ms/AudioConferencingInteractiveGuide)      |
+| Configurare le audioconferenze per Microsoft Teams                            | Scopri le funzionalità delle audioconferenze in Teams e scopri come assegnare bridge di conferenza e numeri di telefono per l'accesso esterno.                                                                                          |  [Configurazione delle audioconferenze per Microsoft Teams guida](https://aka.ms/AudioConferencingInteractiveGuide)      |
 | Configurazione di Microsoft Teams per gli operatori sul campo                           | Informazioni su come configurare e distribuire l'ambiente di Microsoft Teams corretto per la forza lavoro sul campo.                                                                                                                  | [Guida alla configurazione di Microsoft Teams per operatori sul campo](https://aka.ms/ConfigFLWInteractiveGuide)              |
 | Identità per la forza lavoro in prima linea: responsabili, IT e dipendenti in prima linea                    | Scopri come integrare Microsoft Teams con sistemi HR esistenti, configurare una gestione delle identità delegata leggera e configurare l'accesso semplificato e transizioni fluide per gli utenti di dispositivi condivisi.                                                                                                                  | [Guida all'identità dei frontline worker](https://aka.ms/FLWIdentityIG)              |
 | Distribuzione di Microsoft Teams Rooms                           | Informazioni su come creare e configurare un account da usare con Microsoft Teams Rooms e gestire il dispositivo nell'interfaccia di amministrazione di Microsoft Teams.                                                                                                                  | [Distribuzione di Microsoft Teams Rooms](https://aka.ms/teamsroomslab)              |

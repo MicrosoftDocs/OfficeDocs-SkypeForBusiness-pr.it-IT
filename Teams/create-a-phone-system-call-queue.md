@@ -22,13 +22,13 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
-description: Informazioni su come configurare code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams, che fornisce un messaggio di saluto, tenere musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: 7678d132b8711ea828bf643201df5501323ab77e
-ms.sourcegitcommit: 18a26d07a335184dbcda71908452e82a6ddc3158
+description: Informazioni su come configurare code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams. Le code di chiamata forniscono un messaggio di saluto, tengono musica, reindirizzamento chiamate e altre funzionalità.
+ms.openlocfilehash: d6dd0d7211f9e430dbb716ff905c82443d5f4830
+ms.sourcegitcommit: 193aec6f3f6b6ac14b07e778b3485eed813f5e99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840988"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66046438"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -39,23 +39,17 @@ Le code di chiamata forniscono un metodo per instradare i chiamanti a persone de
 
 Le code di chiamata forniscono:
 
-- Messaggio di saluto.
+- Messaggio di saluto
 
-- Musica mentre le persone sono in attesa in attesa in coda.
+- Musica mentre le persone sono in attesa in attesa in coda
 
-- Instradamento chiamate - nell'ordine *First In, First Out* (FIFO) - agli agenti.
+- Instradamento delle chiamate - nell'ordine *First In, First Out* (FIFO) - agli agenti
 
-- Gestione delle opzioni per overflow e timeout della coda.
+- Gestione delle opzioni per overflow e timeout della coda
 
-Assicurati di aver letto [Piano per Teams operatori automatici e code di chiamata](plan-auto-attendant-call-queue.md) e segui i [passaggi iniziali](plan-auto-attendant-call-queue.md#getting-started) prima di seguire le procedure descritte in questo articolo.
+Prima di seguire le procedure descritte in questo articolo, assicurarsi di aver letto [Plan for Teams operatori automatici e code di chiamata](plan-auto-attendant-call-queue.md) e di seguire la [procedura introduttiva](plan-auto-attendant-call-queue.md#getting-started).
 
 **Per altre informazioni, vedere la matrice di [compatibilità delle funzionalità della coda](#call-queue-feature-compatibility) di chiamata riportata di seguito.**
-
-## <a name="video-demonstration"></a>Dimostrazione video
-
-Questo video mostra un esempio di base su come creare una coda di chiamata in Teams.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCF23?autoplay=false]
 
 ## <a name="create-the-call-queue"></a>Creare la coda di chiamata
 
@@ -77,13 +71,13 @@ Per altre informazioni, vedere [Gestire Teams account delle risorse](manage-reso
 
 **Disponibile per Teams utenti desktop per chiamate di canale/collaborative e Teams utenti client mobili con code di chiamata standard**
 
-È possibile assegnare numeri di ID chiamante in uscita agli agenti specificando uno o più account delle risorse con un numero di telefono. Gli agenti possono selezionare il numero ID chiamante in uscita da usare con ogni chiamata in uscita effettuata.
+È possibile assegnare numeri di ID chiamante in uscita agli agenti specificando uno o più account delle risorse con un numero di telefono. Gli agenti possono selezionare il numero ID chiamante in uscita da usare con ogni chiamata in uscita effettuata. All'interno dell'app Chiamate, gli agenti possono utilizzare il proprio numero di coda di chiamata (CQ) / Operatore automatico (AA) o il proprio direct inward dial personale (DID).
 
 Fare clic su **Aggiungi**, cercare gli account delle risorse che si desidera consentire agli agenti di usare ai fini dell'ID chiamante durante le chiamate in uscita, fare clic su **Aggiungi** e quindi su **Aggiungi**.
 
 **Code di chiamata standard**
 
-Per Teams utenti desktop e code di chiamata standard valutare l'impostazione diretta dell'ID chiamante per i membri della coda di chiamata sul numero di servizio della coda di chiamata o dell'operatore automatico appropriato. Per altre informazioni, vedere [Gestire i criteri ID chiamante in Microsoft Teams](caller-id-policies.md).
+Per Teams utenti desktop e code di chiamata standard, è consigliabile impostare l'ID chiamante per i membri della coda di chiamata sul numero di servizio della coda di chiamata o sull'operatore automatico appropriato. Per altre informazioni, vedere [Gestire i criteri ID chiamante in Microsoft Teams](caller-id-policies.md).
 
 > [!NOTE]
 > L'account della risorsa usato per gli scopi dell'ID chiamante deve avere una licenza utente virtuale di sistema Telefono di Microsoft Teams e una delle seguenti assegnazioni:
@@ -118,7 +112,7 @@ Esaminare i [prerequisiti per l'aggiunta di agenti a una coda di chiamata](plan-
 
 ##### <a name="teams-channel"></a>canale Teams
 
-È possibile aggiungere fino a 200 agenti tramite un canale di Teams. Devi essere un membro del team o il creatore o un proprietario del canale per aggiungere un canale alla coda.
+È possibile aggiungere fino a 200 agenti tramite un canale di Teams. Devi essere un membro del team o il creatore o il proprietario del canale per aggiungere un canale alla coda.
 
 Se si vuole [usare un canale Teams per gestire la coda](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e), selezionare l'opzione **Scegli un team** e fare clic su **Aggiungi canale**. Cercare il team che si vuole usare, selezionarlo e fare clic su **Aggiungi**. Selezionare il canale da usare (sono supportati solo i canali standard) e fare clic su **Applica**. 
 
@@ -129,12 +123,14 @@ Quando si utilizza un canale di Teams per le code di chiamata, sono supportati i
 
 > [!NOTE]
 > Se si usa questa opzione, possono essere richieste fino a 24 ore prima che la coda di chiamata sia pienamente operativa.
+>
+> Se ci sono più di 200 membri nel team, solo i primi 200 membri, in ordine alfabetico, verranno aggiunti come agenti alla coda di chiamata.
 
 ##### <a name="users-and-groups"></a>Utenti e gruppi
 
 È possibile aggiungere fino a 20 agenti singolarmente e fino a 200 agenti tramite gruppi.
 
-Per aggiungere singoli utenti o gruppi alla coda, selezionare l'opzione **Scegli utenti e gruppi** . 
+Per aggiungere singoli utenti o gruppi alla coda, selezionare **Scegli utenti e gruppi**. 
 
 Per aggiungere un utente alla coda, fare clic su **Aggiungi utenti**, cercare l'utente, fare clic su **Aggiungi** e quindi su **Aggiungi**.
 
@@ -142,17 +138,19 @@ Per aggiungere un gruppo alla coda, fare clic su **Aggiungi gruppi**, cercare il
 
 > [!NOTE]
 > I nuovi utenti aggiunti a un gruppo possono richiedere fino a otto ore per l'arrivo della prima chiamata.
+>
+> Se ci sono più di 200 membri nel gruppo, solo i primi 200 membri, in ordine alfabetico, verranno aggiunti come agenti alla coda di chiamata.
 
 ## <a name="call-routing"></a>Routing delle chiamate
 
 ![Screenshot delle impostazioni relative alla modalità conferenza e al metodo di routing.](media/call-queue-conference-mode-routing-method.png)
 
-**La modalità conferenza** riduce significativamente la quantità di tempo necessaria per la connessione di un chiamante a un agente, dopo che l'agente accetta la chiamata. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono utilizzare uno dei client seguenti:
+**La modalità conferenza** riduce la quantità di tempo necessaria per la connessione di un chiamante a un agente dopo che l'agente accetta la chiamata. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono utilizzare uno dei client seguenti:
 
   - L'ultima versione del client desktop Microsoft Teams, dell'app Android o dell'app iOS
   - Telefono di Microsoft Teams versione 1449/1.0.94.2020051601 o successiva
   
-Gli account Teams agenti devono essere impostati sulla modalità di sola Teams. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate. È consigliabile abilitare la modalità conferenza per le code di chiamata se gli agenti usano tutti client compatibili.
+Gli account Teams agenti devono essere impostati sulla modalità TeamsOnly. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate. È consigliabile abilitare la modalità conferenza per le code di chiamata se gli agenti usano client compatibili.
 
 > [!NOTE]
 > La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da un gateway di routing diretto abilitato per il routing basato sulla posizione.
@@ -180,7 +178,7 @@ Gli account Teams agenti devono essere impostati sulla modalità di sola Teams. 
 > 
 > Quando si utilizza **Long idle** e quando ci sono meno chiamate in coda rispetto agli agenti disponibili, solo i primi due agenti inattivi più lunghi verranno presentati con chiamate dalla coda.
 > 
-> Quando si utilizza **l'inattività Più lunga** , a volte un agente riceve una chiamata dalla coda poco dopo essere diventato non disponibile o un breve ritardo nella ricezione di una chiamata dalla coda dopo essere diventato disponibile.
+> Quando si usa **l'inattività più lunga**, a volte un agente riceve una chiamata dalla coda poco dopo la non disponibilità o un breve ritardo nella ricezione di una chiamata dalla coda dopo essere diventato disponibile.
 > 
 > La presentazione delle chiamate in coda di chiamata agli agenti potrebbe essere in conflitto con le restrizioni di routing basato sulla posizione. In questo caso, l'agente riceverà un avviso popup di chiamata, ma non sarà in grado di rispondere alla chiamata. Questa condizione continuerà fino a quando un altro agente non sarà disponibile a rispondere alla chiamata, il chiamante si disconnette o si verifica la condizione di timeout della coda di chiamata.  
 
@@ -196,9 +194,9 @@ Se un agente rifiuta esplicitamente di ricevere chiamate, non verrà incluso nel
 > [!NOTE]
 > Quando l'opzione **Inattività più lunga** è selezionata come metodo di routing, il routing basato sulla presenza è obbligatorio e abilitato automaticamente anche se l'interruttore routing basato sulla presenza sarà **disattivato** e disattivato.
 >
-> Se il routing basato sulla presenza non è abilitato e ci sono più chiamate in coda, il sistema presenterà contemporaneamente queste chiamate agli agenti indipendentemente dal loro stato presenza. Ciò comporta più notifiche di chiamata agli agenti, in particolare se alcuni agenti non rispondono alla chiamata iniziale presentata loro.
+> Se il routing basato sulla presenza non è abilitato e sono presenti più chiamate in coda, il sistema presenterà contemporaneamente queste chiamate agli agenti indipendentemente dal loro stato presenza. Questa azione genererà notifiche di chiamata multiple agli agenti, in particolare se alcuni agenti non rispondono alla chiamata iniziale presentata.
 >
-> Quando si usa il **routing basato sulla presenza** , a volte un agente riceve una chiamata dalla coda poco dopo la non disponibilità o un breve ritardo nella ricezione di una chiamata dalla coda dopo essere diventato disponibile.
+> Quando si usa il **routing basato sulla presenza**, a volte un agente riceve una chiamata dalla coda poco dopo la non disponibilità o un breve ritardo nella ricezione di una chiamata dalla coda dopo essere diventato disponibile.
 > 
 > Gli agenti che usano il client Skype for Business non sono inclusi nell'elenco di routing delle chiamate quando è abilitato il routing basato sulla presenza. Se ci sono agenti che usano Skype for Business, non abilitare il routing delle chiamate basato sulla presenza.
 
@@ -252,42 +250,41 @@ Sono consigliate le impostazioni seguenti:
 
 ## <a name="call-queue-feature-compatibility"></a>Compatibilità delle funzionalità delle code di chiamata
 
-|Funzionalità                          |Teams Desktop<sup>1</sup> |Teams Mobile<sup>2</sup> |Lync |Telefoni IP | Code di chiamata standard |Code di chiamata basate sui canali | Commento |
-|:--------------------------------|:------------------------:|:-----------------------:|:---:|:--------:|:--------------------:|:------------------------:|:-------------|
-|**Metodi di routing dell'agente**        |                          |                         |     |          |                      |                          |              |
-|`Attendant Routing`              |S                         |S                        |S    |S         |S                     |S                         |*Predefinito*     |
-|`Longest Idle`<sup>3</sup>       |S                         |S                        |N    |S         |S                     |S                         |*Consigliata* |
-|`Round Robin`                    |S                         |S                        |S    |S         |S                     |S                         |*Consigliata* |
-|`Serial`                         |S                         |S                        |S    |S         |Y<sup>4</sup>         |Y<sup>4</sup>             |              |
-|**Opzioni routing agente**        |                          |                         |     |          |                      |                          |              |
-|`Presence Based Routing`<sup>3</sup>|S                        |S                        |N    |S         |S                     |S                         |*Consigliata* |
-|`Agents can Opt-out`               |S                         |S                        |Y<sup>7</sup>|Y<sup>7</sup>|S          |S                         |*Predefinito*     |
-|**Modalità di trasferimento**               |                          |                         |     |          |                      |                          |              |
-|`Conference Mode`<sup>5</sup>    |S                         |S                        |N    |Y<sup>6</sup>|S                  |S                         |*Consigliata* |
-|`Transfer Mode`                  |S                         |S                        |S    |S         |S                     |S                         |*Predefinito*              |
-|**Chiamate collaborative**        |                          |                         |     |          |                      |                          |              |
-|`Channel Based Queues`             |S                         |N                        |N    |N         |n/d                   |Y<sup>8</sup>             |              |
-|**ID chiamante dinamico**            |                          |                         |     |          |                      |                          |              |
-|`Standard call queue`            |N                         |S                        |N    |N         |S                     |n/d                       |              |
-|`Channel based call queue`       |S                         |n/d                      |n/d  |n/d       |n/d                   |S                         |              |
-|**Metodi di connettività PSTN**    |                          |                         |     |          |                      |                          |Vedi Nota 10   |
-|`Calling Plans`                  |S                         |S                        |S    |S         |S                     |S                         |              |
-|`Direct Routing`                 |S                         |S                        |N    |N         |S                     |S                         |              |
-|`Operator Connect`               |S                         |S                        |     |          |S                     |S                         |              |
-|**Varie**    |                          |                         |     |          |                      |                          |Vedi Nota 10   |
-|`Call toast shows Resource Account Name` |Y<sup>9</sup>       |S                        |S    |          |S                     |S                         |              |
+|Funzionalità                          |Teams Desktop<sup>1</sup> |Teams Web | Teams Mobile<sup>2</sup> |Lync |Telefoni IP | Code di chiamata standard |Code di chiamata basate sui canali | Commento |
+|:--------------------------------|:------------------------:|:--------:|:--------------:|:---:|:--------:|:--------------------:|:------------------------:|:--------|
+|**Metodi di routing dell'agente**        |                          |          |                |     |          |                      |                          |   |
+|`Attendant Routing`              |S                         |S         |S               |S    |S         |S                     |S                         |*Predefinito*     |
+|`Longest Idle`<sup>3</sup>       |S                         |S         |S               |N    |S         |S                     |S                         |*Consigliata* |
+|`Round Robin`                    |S                         |S         |S               |S    |S         |S                     |S                         |*Consigliata* |
+|`Serial`                         |S                         |S         |S               |S    |S         |Y<sup>4</sup>         |Y<sup>4</sup>             |   |
+|**Opzioni routing agente**        |                          |          |                |     |          |                      |                          |   |
+|`Presence Based Routing`<sup>3</sup>|S                      |S         |S               |N    |S         |S                     |S                         |*Consigliata* |
+|`Agents can Opt-out`               |S                       |S         |S               |Y<sup>7</sup>|Y<sup>7</sup>|S          |S                         |*Predefinito*     |
+|**Modalità di trasferimento**               |                          |          |                |     |          |                      |                          |   |
+|`Conference Mode`<sup>5</sup>    |S                         |S         |S               |N    |Y<sup>6</sup>|S                  |S                         |*Consigliata* |
+|`Transfer Mode`                  |S                         |S         |S               |S    |S         |S                     |S                         |*Predefinito*              |
+|**Chiamate collaborative**        |                          |          |                |     |          |                      |                          |   |
+|`Channel Based Queues`             |S                       |N         |N               |N    |N         |n/d                   |Y<sup>8</sup>             |   |
+|**ID chiamante dinamico**            |                          |          |                |     |          |                      |                          |   |
+|`Standard call queue`            |N                         |N         |S               |N    |N         |S                     |n/d                       |   |
+|`Channel based call queue`       |S                         |n/d       |n/d             |n/d  |n/d       |n/d                   |S                         |   |
+|**Metodi di connettività PSTN**    |                          |          |                |     |          |                      |                          |Vedere la nota 9   |
+|`Calling Plans`                  |S                         |S         |S               |S    |S         |S                     |S                         |   |
+|`Direct Routing`                 |S                         |S         |S               |N    |N         |S                     |S                         |   |
+|`Operator Connect`               |S                         |S         |S               |     |          |S                     |S                         |   |
+|**Varie**                |                          |          |                |     |          |                      |                          |   |
+|`Call toast shows Resource Account Name` |S                 |N         |S               |S    |          |S                     |S                         |              |
 
 Note:
-1. client Microsoft Teams Windows, client Microsoft Teams Mac Microsoft Teams su Virtualized Desktop Infrastructure Microsoft Teams client Web.
+1. client Microsoft Teams Windows, client Microsoft Teams Mac Microsoft Teams su Virtualized Desktop Infrastructure.
 2. Microsoft Teams iPhone'app Microsoft Teams Android.
 3. Se si seleziona Inattività più lunga per il metodo di routing dell'agente, verrà automaticamente abilitato il routing basato sulla presenza.
 4. Può impostare l'ordine solo quando si aggiungono singoli utenti come parte di code di chiamata standard. Quando si usa una lista di distribuzione o Teams Channel, l'ordine sarà alfabetico.
 5. La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da un gateway di routing diretto abilitato per il routing basato sulla posizione.
-6. Microsoft Teams solo telefono.
-7. Tramite la pagina portale Impostazioni utenti all'indirizzohttps://aka.ms/vmsettings
+6. solo Telefono di Microsoft Teams.
+7. Tramite la pagina User Impostazioni Portal all'indirizzo https://aka.ms/vmsettings.
 8. Sono supportati solo i canali pubblici.
-9. Esclusione di Teams client Web.
-10. Gli operatori automatici e le code di chiamata non possono trasferire le chiamate tra i metodi di connettività PSTN.
+9. Gli operatori automatici e le code di chiamata non possono trasferire le chiamate tra i metodi di connettività PSTN.
 
 
 ## <a name="supported-clients"></a>Client supportati
@@ -308,7 +305,7 @@ Per gli agenti di chiamata in una coda di chiamata sono supportati i client segu
   - app Microsoft Teams Android
 
     > [!NOTE]
-    > Le code di chiamata assegnate a un numero di routing diretto non supportano Skype for Business client, client Lync o telefoni IP Skype for Business come agenti. Il client Teams è supportato solo con una [modalità di coesistenza di solo Teams](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
+    > Le code di chiamata assegnate a un numero di routing diretto non supportano client Skype for Business, client Lync o telefoni IP Skype for Business come agenti. Il client Teams è supportato solo con una [modalità di coesistenza di TeamsOnly](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
 
 ## <a name="call-queue-cmdlets"></a>Cmdlet della coda di chiamata
 
