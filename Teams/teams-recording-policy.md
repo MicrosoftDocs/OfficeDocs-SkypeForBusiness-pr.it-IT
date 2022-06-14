@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6a86535c701b38b65d1610dc3aa8af2b5616d4a3
-ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
+ms.openlocfilehash: b6fb06062902ee5bb0b3ab3f41f25a712933dd37
+ms.sourcegitcommit: e38776625a3623216b0d5f092fffaff67519b1a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65823005"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66056926"
 ---
 # <a name="introduction-to-teams-policy-based-recording-for-callings--meetings"></a>Introduzione alla registrazione basata su criteri Teams per le chiamate & le riunioni
 
@@ -55,7 +55,7 @@ Ognuna delle categorie prevede requisiti diversi per la modalità di avvio delle
 
 | Tipo                   | Comodità (registrazione Teams regolare) | Organizzazione - Regolamentata (registrazione di conformità) |
 | ---------------------- | ------------------ | --------------- |
-| Iniziatore              | Utente               | Amministrazione (sistema)  |
+| Iniziatore              | Utente               | Amministratore (sistema)  |
 | Target                 | Per chiamata/riunione | Per utente        |
 | proprietario Archiviazione          | Utente               | Conformità      |
 | È necessaria una notifica? | Sì                | Sì             |
@@ -240,6 +240,7 @@ I partner seguenti stanno certificando la loro soluzione per Microsoft Teams.<br
 
 |Partner|Sito Web della soluzione |
 |:--|:--|
+|GuardRec |[https://www.guardrec.com/en/teams-compliance-recording/](https://www.guardrec.com/en/teams-compliance-recording/) |
 |Landis Technologies |[https://landistechnologies.com/](https://landistechnologies.com/) |
 |Luware |[https://luware.com/en/solution/microsoft-teams-recording/](https://luware.com/en/solution/microsoft-teams-recording/) |
 

@@ -6,23 +6,20 @@ manager: serdars
 ms.topic: article
 ms.service: msteams
 audience: admin
-f1.keywords:
-- NOCSH
 ms.localizationpriority: medium
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
-- m365initiative-voice
 search.appverid: MET150
 description: Informazioni su come modificare le licenze Business Voice in licenze di Teams Telefono.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 39e374175b4ba0a7613405305c4db3baa0e69171
-ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
+ms.openlocfilehash: e9e973d00761e62e62a3c749163f9e6dcaa8a636
+ms.sourcegitcommit: e38776625a3623216b0d5f092fffaff67519b1a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/13/2022
-ms.locfileid: "66046190"
+ms.locfileid: "66057096"
 ---
 # <a name="move-from-business-voice-to-teams-phone-licenses"></a>Passare da Business Voice a licenze di Teams Telefono
 
@@ -38,6 +35,11 @@ I clienti Business Voice esistenti non verranno automaticamente convertiti nel n
 
 Questo articolo è rivolto agli amministratori IT che devono modificare le licenze Business Voice per Telefono di Microsoft Teams e le licenze di Audioconferenza mantenendo le stesse funzionalità.
 
+> [!WARNING]
+> Seguire attentamente le istruzioni di questo articolo. Se le istruzioni indicano di NON selezionare il pulsante **Salva** , non selezionare il pulsante **Salva** .
+>
+> Il salvataggio anticipato può comportare la perdita delle assegnazioni dei numeri di telefono, dei piani di chiamata, degli operatori automatici e delle code di chiamata.
+
 ## <a name="acquire-new-licenses"></a>Acquisire nuove licenze
 
 Prima di sostituire le licenze Business Voice, è necessario acquistare licenze sostitutive per gli utenti.
@@ -52,18 +54,17 @@ Usare la tabella seguente per determinare le licenze da acquistare in base alle 
 
 | Vecchio piano di licenza | Piano di licenza consigliato | Descrizione |
 | ---------------- | ------------------------ | ----------- |
-| Business Voice con Piano per chiamate | Servizi telefonici con piano per chiamate | Fornisce funzionalità di Sistema telefonico basate sul cloud e un piano per le chiamate nazionali con Microsoft come provider PSTN. |
-| Voce aziendale senza piano per chiamate | Teams Telefono Standard | Offre funzionalità di Sistema telefonico basate sul cloud che possono essere combinate con un [piano per chiamate tramite un provider PSTN di terze parti utilizzando Connessione con operatore o Direct Routing](pstn-connectivity.md) |
-| Voce aziendale (qualsiasi versione) | Microsoft Team Audio Conferencing seleziona chiamata in uscita o Audioconferenza | Offre funzionalità di accesso in entrata e in uscita ai partecipanti alla riunione organizzati da un utente con licenza |
+| Business Voice con Piano per chiamate | Teams Telefono con piano per chiamate e audioconferenza di Microsoft Teams con chiamata in uscita verso USA/CAN | Offre funzionalità di Sistema telefonico basate sul cloud, un piano per le chiamate nazionali con Microsoft come provider PSTN e funzionalità di accesso in entrata e in uscita per i partecipanti alle riunioni organizzate da un utente con licenza. |
+| Voce aziendale senza piano per chiamate | Teams Telefono Le audioconferenze Standard e Microsoft Teams con accesso esterno in uscita verso USA/CAN | Offre funzionalità di Sistema telefonico basate sul cloud che possono essere combinate con [un piano per chiamate di terze parti con un provider PSTN che usa funzionalità di routing Connessione con operatore diretto](pstn-connectivity.md) e accesso in entrata e in uscita per le riunioni organizzate da un utente con licenza. |
 
 ## <a name="how-to-update-licenses"></a>Come aggiornare le licenze
 
 Sono disponibili quattro modi per aggiornare le licenze:
 
-- Aggiornamento della licenza per singolo utente tramite interfaccia di amministrazione di Microsoft 365.
-- Aggiornamento della licenza utente in blocco tramite interfaccia di amministrazione di Microsoft 365.
-- Aggiornamento della licenza utente in blocco con uno script di PowerShell.
-- Aggiornamento della licenza utente in blocco con licenze basate su gruppo di Azure.
+- Aggiornamento della licenza per singolo utente tramite interfaccia di amministrazione di Microsoft 365
+- Aggiornamento delle licenze utente in blocco tramite interfaccia di amministrazione di Microsoft 365
+- Aggiornamento della licenza utente in blocco con uno script di PowerShell
+- Aggiornamento della licenza utente in blocco con licenze basate su gruppo di Azure
 
 # <a name="option-1-single-user-in-admin-center"></a>[Opzione 1: singolo utente nell'interfaccia di amministrazione](#tab/single-user)
 

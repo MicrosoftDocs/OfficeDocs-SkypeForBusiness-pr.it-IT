@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni sui log di debug, multimediali e desktop prodotti da Microsoft Teams, dove sono disponibili e su come possono essere utili per il monitoraggio e la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4d8e3ab079498ecfca11a7d2ba48736aaf457329
-ms.sourcegitcommit: bd05783dfb33a63e0eb083a2135f97d110dc81a3
+ms.openlocfilehash: 178e89ff91de4638f6a9ff56a4dcb935d18f6f91
+ms.sourcegitcommit: e38776625a3623216b0d5f092fffaff67519b1a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2022
-ms.locfileid: "65059107"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66056946"
 ---
 # <a name="use-log-files-to-monitor-and-troubleshoot-microsoft-teams"></a>Usare i file di log per monitorare e risolvere Microsoft Teams
 
@@ -95,12 +95,16 @@ I log di debug mostrano i flussi di dati seguenti:
 -   Chiamata/conversazione
 
 Per raccogliere i log per Linux:
-- Scelta rapida da tastiera: <kbd>CTRLAltShift1</kbd> + <kbd></kbd> + <kbd></kbd> + <kbd></kbd>  
+- Scelta rapida da tastiera: <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>MAIUSC</kbd> + <kbd>1</kbd>  
 - I file saranno disponibili in `~/Downloads`
 
 Per raccogliere i log per Browser e Windows:
-- Scelta rapida da tastiera: <kbd>CTRLAltShift1</kbd> + <kbd></kbd> + <kbd></kbd> + <kbd></kbd>  
+- Scelta rapida da tastiera: <kbd>CTRL</kbd> + <kbd>ALT</kbd> + <kbd>MAIUSC</kbd> + <kbd>1</kbd>  
 - I file saranno disponibili in `%userprofile%\Downloads`
+
+Per raccogliere i log per Mac:
+- Scelta rapida da tastiera:<kbd>COMANDO</kbd> +  <kbd>OPZIONE</kbd> + <kbd>MAIUSC</kbd> + <kbd>1</kbd>  
+- I file saranno disponibili in `~/Downloads`
 
 ## <a name="media-logs"></a>Registri multimediali
 
@@ -153,7 +157,11 @@ Per istruzioni su Windows e Mac, vedere la sezione _Raccogliere e abilitare la r
 Per raccogliere i log per Linux:
 - Fare clic sull'icona Microsoft Teams sulla barra delle applicazioni e selezionare **Ottieni log**.
 - I file saranno disponibili in `~/.config/Microsoft/Microsoft Teams/logs.txt`.
-  
+
+Per raccogliere i log per Mac:
+- Fare clic sul menu ? in Microsoft Teams e selezionare **Raccogli file di supporto**.
+- Il `logs.txt` file si troverà nella cartella Desktop all'interno della cartella _del log \<local date and time>di diagnostica di MSTeams_.
+
 Per raccogliere i log per Windows:
 - Fai clic sull'icona Microsoft Teams sulla barra delle applicazioni e seleziona **Raccogli file di supporto**.
 - Il `logs.txt` file verrà aperto automaticamente in Blocco note.

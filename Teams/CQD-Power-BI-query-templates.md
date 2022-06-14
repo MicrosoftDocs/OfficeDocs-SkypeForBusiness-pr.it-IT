@@ -1,5 +1,5 @@
 ---
-title: Usare Power BI per analizzare i dati di CQD per Microsoft Teams
+title: Usare Power BI per analizzare i dati di Call Quality Dashboard per Microsoft Teams
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -15,42 +15,42 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-description: Usare Power BI per analizzare i dati CQD per Microsoft Teams.
-ms.openlocfilehash: 4a96a53454f1f4d89feed3ea87342a7991d7975c
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+description: Usare Power BI per analizzare i dati di Call Quality Dashboard per Microsoft Teams.
+ms.openlocfilehash: 7d951c0e96f98c343a388e536311bf00890e5302
+ms.sourcegitcommit: e38776625a3623216b0d5f092fffaff67519b1a6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60013770"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66056956"
 ---
-# <a name="use-power-bi-to-analyze-cqd-data-for-microsoft-teams"></a>Usare Power BI per analizzare i dati di CQD per Microsoft Teams
+# <a name="use-power-bi-to-analyze-cqd-data-for-microsoft-teams"></a>Usare Power BI per analizzare i dati di Call Quality Dashboard per Microsoft Teams
 
-Novità di gennaio 2020: [Scaricare Power BI di query per CQD](https://www.microsoft.com/download/details.aspx?id=102291). Modelli Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati CQD.
+Novità di gennaio 2020: [Scaricare Power BI modelli di query per Call Quality Dashboard](https://www.microsoft.com/download/details.aspx?id=102291). Modelli di Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati di Call Quality Dashboard.
 
-Per i report CQD (Call Quality Dashboard) in Teams, se si preferisce usare Power BI per eseguire query e segnalare i dati, scaricare i modelli Power BI CQD. Quando si aprono i modelli in Power BI, verrà richiesto di accedere con le credenziali di amministratore di CQD. È possibile personalizzare questi modelli di query e distribuirli a chiunque nell'organizzazione abbia una licenza Power BI e autorizzazioni di amministratore di CQD.
+Per i report di Call Quality Dashboard (CQD) in Teams, se si preferisce usare Power BI per eseguire query e segnalare i dati, scaricare i modelli di Power BI di Call Quality Dashboard. Quando si aprono i modelli in Power BI, viene chiesto di accedere con le credenziali di amministratore di Call Quality Dashboard. È possibile personalizzare questi modelli di query e distribuirli a chiunque nell'organizzazione abbia una licenza di Power BI e le autorizzazioni di amministratore di Call Quality Dashboard.
 
-Prima di poter usare questi file PBIT, è necessario installare il connettore Power BI per [Microsoft CQD](CQD-Power-BI-connector.md) usando il file *MicrosoftCallQuality.pqx* incluso nel [download.](https://www.microsoft.com/download/details.aspx?id=102291) 
+Prima di usare questi file PBIT, è necessario [installare Power BI Connector per Microsoft CQD](CQD-Power-BI-connector.md) usando il file *MicrosoftCallQuality.pqx* incluso nel [download](https://www.microsoft.com/download/details.aspx?id=102291). 
 
-Assicurarsi di avere il ruolo [di accesso CQD](turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd) giusto per accedere ai Power BI report. 
+Assicurarsi di avere il ruolo di [accesso a Call Quality Dashboard](turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd) corretto per accedere ai report di Power BI. 
 
-|&nbsp;|&nbsp;|
-|---------|---------|
-|<strong>(Nuovo!)</strong> Report cronologico Teams Operatore automatico & coda di chiamata.pbit     |  Questo modello fornisce i tre report seguenti:</p><li>Operatore automatico: mostra l'analisi delle chiamate in arrivo nei tuoi operatori automatici.</li><li>Coda di chiamata: mostra l'analisi delle chiamate in arrivo nelle code di chiamata.</li><li>Sequenza temporale agente: mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.</li><br>Per altre informazioni, vedere report [Operatore automatico & cronologia della coda di chiamata.](aa-cq-cqd-historical-reports.md)        |
-|Report helpdesk CQD.pbit     |Integrando i dati di edificio e EUII, questo report è progettato per consentire di eseguire il drill-up da un singolo utente per trovare la causa radice a monte della scarsa qualità delle chiamate per tale utente (ad esempio, l'utente si trova in un edificio in cui si verificano problemi di rete).         |
-|CQD Location Enhanced Report.pbit     | Ri-immaginando i report sulla posizione di CQD SPD. Include 9 report, che forniscono informazioni sulla qualità delle chiamate, l'edificio WiFi, l'affidabilità e la tariffa delle chiamate personali (RMC) con ulteriori drill-thrus per edificio o per utente.  Assicurarsi di caricare i dati dell'edificio per ottimizzare l'esperienza di creazione di report.        |
-|CQD Mobile Device Report.pbit     | Fornisce informazioni specifiche per gli utenti di dispositivi mobili, tra cui qualità delle chiamate, affidabilità e tariffa chiamata. Visualizza i report sulla rete mobile, la rete WiFi e il sistema operativo mobile (Android, iOS).        |
-|Report di routing diretto PSTN CQD.pbit     |Fornisce informazioni dettagliate specifiche per le chiamate PSTN che passano attraverso il routing diretto. Per altre informazioni, vedere [Uso del report di routing diretto PSTN CQD.](CQD-PSTN-report.md)         |
-|Report di riepilogo CQD.pbit     |Visualizzazioni migliori, presentazione migliorata, maggiore densità di informazioni e date di distribuzione. Questi report semplificano l'identificazione degli outlier. Eseguire il drill-into della qualità delle chiamate in base alla posizione con una mappa interattiva facile da usare. 9 nuovi report:</p>- Qualità generale<br>- Affidabilità generale<br>- RMC (Rate My Call) Overall<br>- Qualità conferenza<br>- Qualità P2P<br>- Affidabilità delle conferenze<br>- Affidabilità P2P<br>- RMC conferenza<br>- RMC P2P         |
-|<strong>(Nuovo!)</strong> Report utilizzo Teams CQD.pbit     | Mostra come gli utenti dell'organizzazione usano Teams e quanto. Assicurarsi di caricare i dati dell'edificio per ottimizzare l'esperienza di creazione di report. Per altre informazioni, vedere [Usare il report Power BI CQD per visualizzare Microsoft Teams utilizzo.](CQD-teams-utilization-report.md)        |
-|Report CQD User Feedback (Rate My Call)     | Mostra i dati valuta le chiamate personali in un modo che è possibile usare facilmente per supportare le chiamate per l'organizzazione. Riferimento incrociato con verbatims per identificare le opportunità di formazione degli utenti finali.        |
+|Pbit |Descrizione |
+|:----------|:---------|
+|<strong>(Novità)</strong> QER.pbit     |  Il modello QER (Quality of Experience Report) consente ai clienti di identificare proattivamente i problemi che influiscono sull'esperienza di chiamata e riunione Teams prima dell'escalation. Vengono inoltre forniti report per consentire agli amministratori di rispondere rapidamente all'escalation dei problemi e contribuire a rispondere alla domanda "Cosa è successo durante la riunione?"  Questo modello fornisce i report seguenti:</p><li>Ricerca: consente la ricerca in base all'URL della riunione, all'ID conferenza, alla subnet o all'UPN.</li><li>Dettagli sull'integrità delle riunioni: metriche dettagliate per una singola riunione.</li><li>Dettagli integrità utente: metriche dettagliate per un singolo utente.</li><li>Media Health - Panoramica di alto livello degli indicatori di integrità chiave (KHI) per l'integrità generale delle chiamate e delle riunioni tenant.</li><li>Configurazione supporti: analizza gli errori di configurazione dei supporti.</li><li>Affidabilità dei supporti: analizzare i problemi di affidabilità dei supporti.</li><li>Integrità audio/video/condivisione: verifica l'integrità delle schede KHI di livello intermedio per l'audio, il video o la condivisione.</li><li>Dettagli sull'integrità audio/video/condivisione: esamina metriche dettagliate su audio, video o integrità della condivisione.</li><li>VPN: esamina l'impatto della VPN sull'integrità delle riunioni. (VPN stimata o mappata)</li><li>Primi 10 report: identificare le aree problematiche nel tenant.</li><li>Dailies : rivedi il rapporto giornaliero degli KHI.</li><li>Utilizzo: uso generale delle chiamate e delle riunioni.</li><li>Feedback degli utenti: consente di esaminare il feedback dei sondaggi degli utenti, noto anche come Valuta la mia chiamata.</li><li>Trasporto: identificare le reti che bloccano UDP.</li><li>Dispositivi: esamina l'impatto dei dispositivi.</li><li>Client: esaminare le metriche basate sul client.</li><li>Creazione di dati: esaminare il file di dati dell'edificio in Call Quality Dashboard.</li><li>Integrità PSTN e Dettagli utente: due report che forniscono un riepilogo generale e l'integrità dei singoli utenti per le chiamate basate su PSTN.</li><li>Metriche di rete: due report che visualizzano i dettagli delle metriche di rete non elaborate per instabilità, perdita di pacchetti e latenza.</li>  |
+|Call Quality Dashboard Teams Operatore automatico & Call Queue Historical Report.pbit     |  Questo modello fornisce i tre report seguenti:</p><li>Operatore automatico: mostra i dati analitici per le chiamate in arrivo agli operatori automatici.</li><li>Coda di chiamata, che mostra i dati analitici per le chiamate in arrivo nelle code di chiamata.</li><li>Sequenza temporale agente: mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.</li><br>Per saperne di più, leggi [Operatore automatico & Rapporto storico coda di chiamata](aa-cq-cqd-historical-reports.md). |
+|Call Quality Dashboard Helpdesk Report.pbit     |Integrando dati building ed EUII, questo report è progettato per consentire di eseguire il drill-up da un singolo utente per trovare la causa radice upstream di bassa qualità delle chiamate per l'utente (ad esempio, l'utente si trova in un edificio che presenta problemi di rete). |
+|CQD Location Enhanced Report.pbit     | Ricreare i report sulla posizione di CQD SPD. Include 9 report, con informazioni aggiuntive sulla qualità delle chiamate, sulla creazione di wi-fi, sull'affidabilità e sulla tariffa delle chiamate (RMC, Rate My Call) con ulteriori drill-thrus per edificio o per utente. Assicurarsi di caricare i dati dell'edificio per ottimizzare l'esperienza di creazione dei report. |
+|CQD Mobile Device Report.pbit     | Fornisce informazioni dettagliate appositamente ottimizzate per gli utenti di dispositivi mobili, tra cui Qualità chiamata, Affidabilità e Valuta la mia chiamata. Visualizza i report sulla rete mobile, sulla rete WiFi e sul sistema operativo per dispositivi mobili (Android, iOS). |
+|CQD PSTN Direct Routing Report.pbit     |Fornisce informazioni dettagliate specifiche per le chiamate PSTN che passano attraverso il routing diretto. Per altre informazioni, vedere [Uso del report routing diretto PSTN CQD](CQD-PSTN-report.md). |
+|Call Quality Dashboard - Riepilogo Report.pbit     |Visualizzazioni migliori, presentazioni migliorate, maggiore densità di informazioni e date di distribuzione. Questi report semplificano l'identificazione dei valori anomali. Analizzare la qualità delle chiamate in base alla posizione con una mappa interattiva facile da usare. Nove nuovi report:</p>- Qualità complessiva<br>- Affidabilità complessiva<br>- RMC (Valuta la mia chiamata) in generale<br>- Qualità conferenza<br>- Qualità P2P<br>- Affidabilità delle conferenze<br>- Affidabilità P2P<br>- Conference RMC<br>- P2P RMC         |
+|Call Quality Dashboard Teams Utilization Report.pbit     | Mostra in che modo gli utenti dell'organizzazione usano Teams e quanto. Assicurarsi di caricare i dati dell'edificio per ottimizzare l'esperienza di creazione dei report. Per altre informazioni, vedere [Usare call quality dashboard Power BI report per visualizzare Microsoft Teams utilizzo](CQD-teams-utilization-report.md). |
+|CQD User Feedback (Rate My Call) Report.pbit     | Mostra i dati di Valuta chiamata personale in un modo che è possibile usare facilmente per supportare le chiamate per l'organizzazione. Riferimento incrociato con verbatims per identificare le opportunità di formazione degli utenti finali. |
 
 > [!TIP]
-> Dopo aver configurato i report Power BI per i dati CQD, aggiungerli come scheda a un canale. Dopo aver selezionato **+** in un canale, selezionare **Power BI** e quindi trovare il report. Per altre informazioni, vedere [Incorpora report con la scheda](/power-bi/service-embed-report-microsoft-teams)Power BI per Teams . Tenere presente che solo le persone con una Power BI e le credenziali di amministratore di CQD possono accedere a questi report.
-
+> Dopo aver configurato i report di Power BI per i dati di Call Quality Dashboard, aggiungerli come scheda a un canale. Dopo aver selezionato **+** il report in un canale, seleziona **Power BI** quindi trova il report. Per altre informazioni, vedere [Incorporare il report con la scheda Power BI per Teams](/power-bi/service-embed-report-microsoft-teams). Tenere presente che solo le persone con una licenza di Power BI e le credenziali di amministratore di Call Quality Dashboard possono accedere a questi report.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Dimensioni e misure disponibili in Dashboard Qualità della chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md)
+[Dimensioni e misure disponibili in Call Quality Dashboard](dimensions-and-measures-available-in-call-quality-dashboard.md)
 
 [Classificazione del flusso in Dashboard Qualità della chiamata](stream-classification-in-call-quality-dashboard.md)
 
