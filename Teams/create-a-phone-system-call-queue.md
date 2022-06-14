@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
 description: Informazioni su come configurare code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams. Le code di chiamata forniscono un messaggio di saluto, tengono musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: d6dd0d7211f9e430dbb716ff905c82443d5f4830
-ms.sourcegitcommit: 193aec6f3f6b6ac14b07e778b3485eed813f5e99
+ms.openlocfilehash: 0d871572f1b1c9b3baa727d35e66f21d93be1f58
+ms.sourcegitcommit: cd34cb3082392d4ca3390b2ecf5bcfe1db7d1046
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66046438"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66068681"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -155,6 +155,8 @@ Gli account Teams agenti devono essere impostati sulla modalità TeamsOnly. Gli 
 > [!NOTE]
 > La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da un gateway di routing diretto abilitato per il routing basato sulla posizione.
 >
+> La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da Skype for Business Server.
+> 
 > La modalità conferenza è necessaria se Teams utenti devono consultare/trasferire chiamate con code di chiamata.
 
 > [!TIP]
