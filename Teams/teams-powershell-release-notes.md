@@ -13,12 +13,12 @@ ms.collection:
 description: Informazioni sulle ultime modifiche apportate in Teams PowerShell.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 55b942cb3bf57c169d0f278a90e94d9792c315eb
-ms.sourcegitcommit: e8a78c24fda7e56c7b217a843a8a5f1c30aa95f6
+ms.openlocfilehash: 87f3a65821b243372dcf990071b3bf1a2eb3b484
+ms.sourcegitcommit: 39fc58109da6b4628ffb658f2c6b94099e0ab604
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2022
-ms.locfileid: "65785996"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66103223"
 ---
 # <a name="microsoft-teams-powershell-release-notes"></a>Note sulla versione di Microsoft Teams PowerShell
 
@@ -31,6 +31,7 @@ Questa pagina contiene le ultime Teams registro delle modifiche di PowerShell si
 
 | Data | Versione | Aggiornamenti |
 |------- | -------------------- | ------------------------------ |
+| Giugno 2022 | [4.4.3-anteprima](https://www.powershellgallery.com/packages/MicrosoftTeams/4.4.3-preview) |<li>Supporta il parametro IncludeResources per il cmdlet Get-CsAutoAttendantStatus.</li><li>Supporta il parametro SoftDeletedUsers per il cmdlet Get-CsOnlineUser.</li><li>Rilascia i cmdlet [Get\|Grant]-CsTeamsMediaLoggingPolicy.</li><li>Supporta il parametro facoltativo AuthorizedUsers per i cmdlet [New\|Set]-CsAutoAttendant & [New\|Set]-CsCallQueue.</li><li>Corregge i parametri di prompt della segreteria telefonica condivisa in cui non è stato possibile cambiare il tipo di prompt dopo che sono stati impostati per Set-CsCallQueue cmdlet.</li><li> Fixes [New\|Set]-CsOnlineSchedule cmdlets to work in the European date-time format.</li>
 | Maggio 2022 | [4.4.1](https://www.powershellgallery.com/packages/MicrosoftTeams/4.4.1) |<li>Miglioramenti alle dimensioni del modulo.</li><li>I parametri non supportati nella versione modernizzata di tutti i cmdlet recheranno un errore.</li><li>Corregge la gestione degli errori per i cmdlet [Get\|Set]-CsOnlineDialInConferencingUser, Get-CsOnlineDialInConferencingBridge, [Get\|Set\|Register\|Unregister]-CsOnlineDialInConferencingServiceNumber & Get-CsOnlineDialInConferencingLanguagesSupported.</li><li>Depreca Test-CsOnlineLisCivicAddress cmdlet.</li><li>L'UPN (User Principal Name) & GUID può essere ora utilizzato come identità nei cmdlet modernizzati [Get\|Remove]-CsOnlineApplicationInstanceAssociation.</li><li> [BREAKING CHANGE] Get-CsOnlineUser : gli attributi dei criteri nell'output saranno ora Null se a un utente non è assegnato quel criterio. Questi attributi erano oggetti UserPolicyDefinition vuoti nelle versioni precedenti (da 3.0.0 a 4.3.1).</li><li>Corregge Set-CsCallQueue per consentire valori null o vuoti nei parametri di input.</li><li>Get-CsPhoneNumberAssignment : gli attributi City & IsoSubdivision vengono aggiunti all'output.</li>
 | Maggio 2022 | [4.3.1-anteprima](https://www.powershellgallery.com/packages/MicrosoftTeams/4.3.1-preview) |<li>Miglioramenti alle dimensioni del modulo.</li><li>I parametri non supportati nella versione modernizzata di tutti i cmdlet recheranno un errore.</li><li>Corregge la gestione degli errori per i cmdlet [Get\|Set]-CsOnlineDialInConferencingUser, Get-CsOnlineDialInConferencingBridge, [Get\|Set\|Register\|Unregister]-CsOnlineDialInConferencingServiceNumber & Get-CsOnlineDialInConferencingLanguagesSupported.</li><li>Rilascia i cmdlet di distribuzione su scala in anteprima - New-CsBatchTeamsDeployment & Get-CsBatchTeamsDeploymentStatus.</li><li>L'UPN (User Principal Name) & GUID può essere ora utilizzato come identità nei cmdlet modernizzati [Get\|Remove]-CsOnlineApplicationInstanceAssociation.</li>
 | Maggio 2022 | [4.3.0](https://www.powershellgallery.com/packages/MicrosoftTeams/4.3.0) |<li>Corregge le gestizioni degli errori per i cmdlet [Set\|Remove]-CsPhoneNumberAssignment.</li><li>[Ottieni\| Set\|Remove]-CsOnlineLisSubnet - correzioni per il parametro Subnet nei cmdlet modernizzati.</li><li>[Ottieni\| Set]-CsOnlineLisLocation & [Get\|Set]-CsOnlineLisCivicAddress : correzioni relative ai parametri supportati nei cmdlet modernizzati (maggiori dettagli nelle rispettive documentazione pubbliche).</li>

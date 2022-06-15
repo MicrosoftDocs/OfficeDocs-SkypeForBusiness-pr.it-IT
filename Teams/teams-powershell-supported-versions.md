@@ -12,28 +12,19 @@ ms.collection:
 description: Informazioni sulle versioni supportate dal modulo Teams PowerShell, usato per l'amministrazione di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6915448d76de64a65a9ac50e5c66e3ca41e051ef
-ms.sourcegitcommit: 8ce73ea99be607f5cdccb22a5366bc96e8fb09c8
+ms.openlocfilehash: ad20cc285a9e882c45d2d158601ebcc90236dbf5
+ms.sourcegitcommit: 39fc58109da6b4628ffb658f2c6b94099e0ab604
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65758314"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66103373"
 ---
 # <a name="teams-powershell-module---supported-versions"></a>Modulo di PowerShell Teams - Versioni supportate
 
-Microsoft Teams versioni del modulo PowerShell (TPM) della serie 4.x.x o successive saranno le uniche versioni supportate in futuro. Tutte le versioni precedenti sono nel percorso di ritiro. È consigliabile aggiornare Teams modulo di PowerShell alla versione più recente.
+Microsoft Teams versioni del modulo PowerShell (TPM) della serie 4.x.x o successive sono le uniche versioni supportate al momento. Tutte le versioni precedenti sono completamente ritirate dal 15 giugno 2022 & smetteranno di funzionare (post del Centro messaggi per riferimento - MC350371). 
 
-## <a name="new-organizations"></a>Nuove organizzazioni
+È consigliabile eseguire l'aggiornamento alla versione più recente Teams modulo di PowerShell.
 
-Le organizzazioni che hanno appena avviato l'onboarding a Teams potranno usare Teams modulo PowerShell solo nella serie 4.x.x o successiva a partire dall'1 aprile 2022.
-
-## <a name="current-organizations-non-tpm-active"></a>Organizzazioni correnti (non TPM attivo)
-
-Le organizzazioni che non hanno usato Teams modulo di PowerShell dal 22 gennaio al 22 marzo potranno usare Teams modulo di PowerShell solo nella serie 4.x.x o successiva a partire dal 1° aprile 2022.
-
-## <a name="current-organizations-tpm-active"></a>Organizzazioni correnti (TPM attivo)
-
-Le organizzazioni che hanno usato Teams modulo di PowerShell durante il periodo compreso tra il 22 gennaio e il 22 marzo potranno usare Teams modulo PowerShell solo nella serie 4.x.x o successiva a partire dal 15 giugno 2022. Post del Centro messaggi per riferimento - MC350371.
 
 ## <a name="important-notes"></a>Note importanti
 

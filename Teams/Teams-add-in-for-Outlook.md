@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 03a2501236cd8dfa708790e49719d8103a187783
-ms.sourcegitcommit: 5640e8264b61c1f8cf8eb212315eeba1a794e494
+ms.openlocfilehash: 1b7ae345e3d3d94d93bb7ccc0eeb5f284296c2d5
+ms.sourcegitcommit: 39fc58109da6b4628ffb658f2c6b94099e0ab604
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65928829"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66103263"
 ---
 # <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 
@@ -46,7 +46,7 @@ Il componente aggiuntivo Riunione di Teams viene installato automaticamente per 
 > - Le autorizzazioni utente per eseguire il file Regsvr32.exe sono un requisito minimo per installare il componente aggiuntivo Riunione di Teams nel computer.
 > - Se gli utenti non vedono il componente aggiuntivo Riunione di Teams, puoi chiedere loro di chiudere Outlook e Teams, quindi di riavviare prima il client Team, poi di accedere a Teams e infine di riavviare il client Outlook nell’ordine appena esposto.
 > - Se si usa un'installazione di Office Outlook da Microsoft Store, il componente aggiuntivo Riunione di Teams non è supportato. Gli utenti che richiedono questo componente aggiuntivo possono installare la versione a portata di clic di Office, come descritto nell’articolo [Office su Windows 10 in modalità S](https://support.office.com/article/faq-office-on-windows-10-in-s-mode-717193b5-ff9f-4388-84c0-277ddf07fe3f).
-> - Sarà necessaria l'installazione di [Webview2](/microsoft-edge/webview2/concepts/distribution) per la funzionalità del componente aggiuntivo Riunione di Teams, le opzioni di riunione incorporate. Se WebView2 non è installato, gli utenti verranno reindirizzati al browser, che può offrire un'esperienza ridotta soprattutto al momento della creazione della riunione.
+> - L'installazione di[Webview2](/microsoft-edge/webview2/concepts/distribution) e .Net 4.8 è necessaria per evitare un'esperienza degradata con il componente aggiuntivo Riunione di Teams.
 
 ## <a name="teams-meeting-add-in-in-outlook-for-mac"></a>Componente aggiuntivo Riunione di Teams in Outlook per Mac
 

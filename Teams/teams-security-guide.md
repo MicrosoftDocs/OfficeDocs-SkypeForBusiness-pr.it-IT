@@ -20,12 +20,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5ed354dfca3ac8600bd25122daa15d3ecf743e55
-ms.sourcegitcommit: 3beef904411a9d5787a73678464003a868630649
+ms.openlocfilehash: 6e5dcee1e45ec191853f088887e7ed36f8e3fbc6
+ms.sourcegitcommit: 39fc58109da6b4628ffb658f2c6b94099e0ab604
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64817787"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66103203"
 ---
 # <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
 
@@ -264,13 +264,13 @@ Un relatore può anche promuovere un partecipante al ruolo di relatore durante l
 
 I partecipanti alla riunione sono inoltre classificati per posizione e credenziali. È possibile utilizzare entrambe queste caratteristiche per decidere quali utenti possono accedere a riunioni specifiche. Gli utenti possono essere divisi in modo esteso nelle categorie seguenti:
 
-- **Utenti che appartengono al tenant**: questi utenti dispongono di credenziali in Azure Active Directory per il tenant.
+- **Utenti che appartengono al tenant**. Questi utenti hanno una credenziale in Azure Active Directory per il tenant.
 
     *Persone dell'organizzazione*: questi utenti dispongono di credenziali in Azure Active Directory per il tenant. *Persone dell'organizzazione* include gli account guest invitati.
 
     *Utenti remoti*: questi utenti partecipano dall'esterno della rete aziendale. Possono comprendere i dipendenti che lavorano da casa o in viaggio e altri, come dipendenti di fornitori affidabili, a cui sono state concesse credenziali aziendali per le rispettive condizioni d'uso. Gli utenti remoti possono creare e partecipare alle riunioni, anche come relatori.
 
-- **Utenti che non appartengono al tenant**: questi utenti non dispongono di credenziali in Azure Active Directory per il tenant.
+- **Utenti che non appartengono al tenant**. Questi utenti non hanno credenziali in Azure AD per il tenant.
 
     *Utenti federati*: gli utenti federati dispongono di credenziali valide con partner federati e vengono pertanto trattati come autenticati da Teams, ma rimangono comunque esterni per il tenant della riunione o dell'organizzatore. Gli utenti federati possono partecipare alle riunioni ed essere promossi a relatori dopo che hanno partecipato alla riunione, ma non possono creare riunioni in aziende con cui sono federati.
 
@@ -292,7 +292,7 @@ Gli organizzatori della riunione controllano se i partecipanti possono partecipa
 Le impostazioni predefinite sono:
 
 - *Persone dell'organizzazione*: chiunque esterno all'organizzazione attenderà nella sala di attesa finché non verrà ammesso.
-- *Persone dell'organizzazione e di organizzazioni attendibili*: gli utenti esterni e autenticati dei domini di Teams e Skype for Business, presenti nell'elenco degli utenti esterni consentiti, possono evitare la sala di attesa. Tutti gli altri utenti attenderanno nella sala di attesa fino all'ammissione.
+- *Persone dell' organizzazione, organizzazioni attendibili e ospiti* Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti di organizzazioni attendibili, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti anonimi attendono nella sala di attesa.
 - *Tutti*: tutti i partecipanti alla riunione evitano la sala di attesa dopo che un utente autenticato ha partecipato alla riunione.
 
 ### <a name="presenter-capabilities"></a>Funzioni del relatore
