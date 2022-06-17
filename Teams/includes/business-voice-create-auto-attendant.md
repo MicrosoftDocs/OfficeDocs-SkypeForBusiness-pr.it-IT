@@ -1,201 +1,186 @@
-#### <a name="video-demonstration"></a>Dimostrazione video
+## <a name="video-demonstration"></a>Dimostrazione video
 
-Questo video mostra un esempio di base di come creare un operatore automatico in Microsoft Teams.
+Questo video mostra un esempio di base su come creare un operatore automatico in Microsoft Teams.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEnCG?autoplay=false]
 
-#### <a name="before-you-begin"></a>Prima di iniziare
+### <a name="follow-these-steps-to-set-up-your-auto-attendant"></a>Segui questi passaggi per configurare l'operatore automatico
 
-Ottenere i numeri di servizio (i numeri di servizio sono un tipo speciale di numero di telefono usato dagli operatori automatici) necessari per gli operatori automatici a cui si vuole essere accessibili componendo direttamente dall'esterno dell'organizzazione. Questo può includere [il trasferimento di numeri da un altro provider o](../phone-number-calling-plans/transfer-phone-numbers-to-teams.md) [la richiesta di nuovi numeri di servizio](../getting-service-phone-numbers.md).
+# <a name="step-1---general-info"></a>[Passaggio 1 - Informazioni generali](#tab/general-info)
 
-A ogni operatore automatico deve essere assegnata una *licenza Microsoft Teams Telefono Standard - Utente* virtuale. Quando hai acquistato Teams Telefono Standard o Teams Telefono con le licenze del pacchetto Piano per chiamate, hai ricevuto anche una serie di licenze *Microsoft Teams Telefono Standard - Utente* virtuale, quindi probabilmente non devi richiederti altro. Tuttavia, se ne servono di più in futuro, è possibile ottenerli seguendo le istruzioni in Teams Telefono [licenza Standard - Utente virtuale](../teams-add-on-licensing/virtual-user.md).
+## <a name="general-info"></a>Informazioni generali
 
-Se si vuole che l'operatore automatico instradi le chiamate in [](../set-up-holidays-in-teams.md) modo diverso durante le festività, creare le festività da usare prima di creare l'operatore automatico.
+![Screenshot delle impostazioni dell'operatore automatico per il nome, l'operatore, il fuso orario, la lingua e gli input vocali.](../media/auto-attendant-general-info-page-new.png)
 
-<a name="steps"></a>
+1. Digita un nome per l'operatore automatico nella casella in alto.
 
-#### <a name="follow-these-steps-to-set-up-your-auto-attendant"></a>Seguire questa procedura per configurare l'operatore automatico
+2. Per designare un operatore, specificare la destinazione per le chiamate all'operatore. Questa designazione è facoltativa (ma consigliata). Impostare l'opzione **Operatore** per consentire ai chiamanti di uscire dai menu e parlare con una persona designata.
 
-# <a name="step-1---phone-number"></a>[Passaggio 1 - Telefono numero](#tab/phone-number)
+3. Specifica il fuso orario per questo operatore automatico. Il fuso orario viene usato per calcolare l'orario di ufficio se si [crea un flusso di chiamata separato per l'orario di chiusura](?tabs=after-hours).
+
+4. Specifica una [lingua supportata](../create-a-phone-system-auto-attendant-languages.md) per questo operatore automatico. Questo è il linguaggio che verrà utilizzato per i comandi vocali generati dal sistema.
+
+5. Scegli se abilitare gli input vocali. Se abilitata, il nome di ogni opzione di menu diventa una parola chiave di riconoscimento vocale. Ad esempio, i chiamanti possono dire "Uno" per selezionare l'opzione di menu mappata al tasto 1 oppure "Vendite" per selezionare l'opzione di menu denominata "Vendite".
+
+   > [!NOTE]
+   > Se si sceglie una lingua nel passaggio 4 che non supporta gli input vocali, questa opzione verrà disabilitata.
+
+6. Selezionare **Avanti**.
+
+# <a name="step-2---call-flow"></a>[Passaggio 2 - Flusso delle chiamate](#tab/call-flow)
+
+## <a name="call-flow"></a>Flusso delle chiamate
+
+![Screenshot delle impostazioni del messaggio di saluto.](../media/auto-attendant-call-flow-greeting-message.png)
+
+Scegli se vuoi riprodurre un messaggio di saluto quando l'operatore automatico risponde a una chiamata.
+
+Se si seleziona **Riproduci file audio**, è possibile usare il pulsante **Upload file** per caricare un messaggio di saluto registrato salvato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere di dimensioni superiori a 5 MB.
+
+Se selezioni **Digita un messaggio di saluto** , il sistema leggerà il testo digitato (fino a 1000 caratteri) quando l'operatore automatico risponde a una chiamata.
+
+![Screenshot delle impostazioni di routing delle chiamate.](../media/auto-attendant-call-flow-route-call-message.png)
+
+Scegliere come instradare la chiamata.
+
+Se selezioni **Disconnetti**, l'operatore automatico riaggancia la chiamata.
+
+Se selezioni **Reindirizza chiamata**, puoi scegliere una delle destinazioni per il routing delle chiamate.
+
+Se si seleziona **Riproduci opzioni menu**, è possibile scegliere **Riproduci file audio** o **Digitare un messaggio di saluto** e quindi scegliere tra le opzioni di menu e la ricerca nella directory.
+
+### <a name="menu-options"></a>Opzioni di menu
+
+![Screenshot delle opzioni dei tasti di chiamata.](../media/auto-attendant-call-flow-menu-options-complete.png)
+
+Per le opzioni di chiamata, assegnare i tasti da 0 a 9 sulla tastiera del telefono a una delle destinazioni di instradamento delle chiamate. (I tasti \* (asterisco) e \# (cancelletto) sono riservati dal sistema e non possono essere riassegnati. Premendo uno di questi tasti verrà ripetuto il menu corrente.
 
 > [!NOTE]
-> Se si sta seguendo la procedura per configurare il pacchetto Teams Sistema telefonico con piano chiamate per la prima volta e si è al passaggio **6:** Configurare un operatore automatico per il numero di telefono principale dell'azienda, i passaggi in questa scheda sono già stati completati. Passare alla scheda [successiva: Informazioni](?tabs=general-info#steps) generali sull'operatore automatico.
+> Il tasto # esegue solo il backup dell'operatore automatico più recente. Una volta superato il limite di un nuovo operatore automatico, il tasto # non sarà in grado di portarti a quello precedente.
 
-Ogni operatore automatico creato richiede un account della risorsa. È simile a un account utente, ad eccezione del fatto che l'account è associato a un operatore automatico o a una coda di chiamata invece che a una persona. In questo passaggio verrà creato l'account, verrà assegnato un Microsoft Teams Telefono *Standard - Licenza* utente virtuale e quindi verrà assegnato un numero di servizio.
+I mapping dei tasti non devono necessariamente essere continui. È possibile creare un menu con i tasti 0, 1 e 3 associati a opzioni, mentre il tasto numero 2 non viene usato.
 
-### <a name="create-a-resource-account"></a>Creare un account della risorsa
+Se ne hai configurato uno, ti consigliamo di associare il tasto zero all'operatore. Se l'operatore non è impostato su alcun tasto, viene disabilitato anche il comando vocale "Operatore".
 
-È possibile creare un account delle risorse nell'Teams di amministrazione.
+Per ogni opzione di menu, specificare le impostazioni seguenti:
 
-1. Nell'Teams di amministrazione espandere **Impostazioni a** livello di organizzazione e quindi fare clic su **Account risorse**.
+- **Tasto componi** : il tasto sulla tastiera del telefono per accedere a questa opzione. Se sono disponibili input vocali, i chiamanti possono anche pronunciare questo numero per accedere all'opzione.
 
-2. Fare clic su **Aggiungi**.
+- **Comando vocale** : definisce il comando vocale che un chiamante può fornire per accedere a questa opzione, se gli input vocali sono abilitati. Può contenere più parole, ad esempio "Servizio clienti" o "Operazioni e sedi". Ad esempio, il chiamante può premere 2, dire "due" o "Vendite" per selezionare l'opzione mappata ai due tasti. Questo testo viene anche visualizzato tramite sintesi vocale per la richiesta di conferma del servizio, che potrebbe essere qualcosa di simile a "Trasferimento della chiamata alle vendite".
 
-3. Nel riquadro **Aggiungi account risorsa** compilare **Nome visualizzato**, Nome **utente** e scegliere **Operatore automatico** per il **tipo di account risorsa**
+- **Reindirizza a** : la destinazione di instradamento delle chiamate usata quando i chiamanti scelgono questa opzione. Se stai reindirizzando a un operatore automatico o a una coda di chiamata, scegli l'account della risorsa associato.
 
-4. Fare clic su **Salva**.
+### <a name="directory-search"></a>Ricerca nella directory
 
-    Il nuovo account verrà visualizzato nell'elenco degli account.
+Se si assegnano tasti di chiamata alle destinazioni, è **consigliabile scegliere Nessuno** per **la ricerca nella directory**. Se un chiamante tenta di comporre un nome o un'estensione usando chiavi assegnate a destinazioni specifiche, potrebbe essere instradato in modo imprevisto a una destinazione prima di completare l'immissione del nome o dell'estensione. Ti consigliamo di creare un operatore automatico separato per la ricerca in elenco e di disporre del collegamento principale dell'operatore automatico con un tasto di chiamata.
 
-### <a name="assign-a-license"></a>Assegnare una licenza
+Se non hai assegnato i tasti di chiamata, scegli un'opzione per **la ricerca nella directory**.
 
-È necessario assegnare una *licenza Microsoft Teams Telefono Standard - Utente* virtuale all'account della risorsa.
+**Chiamata per nome** : se si abilita questa opzione, i chiamanti possono pronunciare il nome dell'utente o digitarlo sulla tastiera del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con Chiamata per nome. È possibile impostare chi è o non è incluso nella directory nella pagina [Ambito](?tabs=#dial-scope) chiamata.
 
-1. Nella finestra interfaccia di amministrazione di Microsoft 365 fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
+**Chiamata per estensione** - Se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'interno del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale usando Skype for Business Server, è un utente idoneo e può essere trovato con **Chiamata per estensione**. È possibile impostare chi è o non è incluso nella directory nella pagina [Ambito](?tabs=dial-scope) chiamata.
 
-2. Nella scheda **Licenze e app**, in **Licenze**, selezionare Microsoft Teams Telefono **Standard - Utente virtuale**.
+Gli utenti che si desidera rendere disponibili per Chiamata per estensione devono avere un'estensione specificata come parte di uno dei seguenti attributi telefonici definiti in Active Directory (e sincronizzati tramite Azure AD Connessione) o Azure Active Directory. Per altre informazioni, vedere [Aggiungere utenti singolarmente o in blocco](/microsoft-365/admin/add-users/add-users).
 
-3. Fare clic su **Salva modifiche**.
+- OfficePhone/TelephoneNumber (AD e Azure AD)
+- HomePhone (AD)
+- Mobile/MobilePhone (AD e Azure AD)
+- Altrotelefono (AD)
 
-### <a name="assign-a-service-number"></a>Assegnare un numero di servizio
+Il formato richiesto per immettere l'estensione nel campo del numero di telefono dell'utente può essere uno dei formati seguenti:
 
-Se è necessario che questo operatore automatico sia raggiungibile da un numero di telefono, assegnare tale numero all'account della risorsa.
+- *+\<phone number>;estensione=\<extension>*
+- *+\<phone number>X\<extension>*
+- *X\<extension>*
 
-1. Nella pagina Account risorse dell'interfaccia di amministrazione di Teams  selezionare l'account della risorsa a cui si vuole assegnare un numero di servizio e quindi fare clic su Assegna **/annulla assegnazione**.
+- Esempio 1: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+15555555678;ext=5678"
+- Esempio 2: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+1555555678x5678"
+- Esempio 3: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "x5678"
 
-2. **Nell'Telefono tipo di** numero scegliere il tipo di numero da usare.
+È possibile impostare l'estensione nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) o [nell'interfaccia di amministrazione di Azure Active Directory](https://aad.portal.azure.com). Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
 
-3. Nella casella **Numero di telefono assegnato** cercare il numero da usare e fare clic su **Aggiungi**.
+> [!NOTE]
+> Se desideri utilizzare sia le funzionalità **Chiamata per nome** che Chiamata per **estensione** , puoi assegnare un tasto di chiamata sull'operatore automatico principale per raggiungere un operatore automatico abilitato per **Chiamata per nome**. All'interno di quell'operatore automatico, puoi assegnare il tasto 1 (che non ha lettere associate) per raggiungere l'operatore automatico **Dial by extension** .
 
-4. Fare clic su **Salva**.
+Per altre informazioni, vedere [Comandi radiali e riferimenti vocali](../dial-voice-reference.md).
 
-> [!div class="nextstepaction"]
-> [Passaggio 2 - Informazioni generali sull'operatore >](?tabs=general-info#steps)
+Dopo aver selezionato un'opzione **di ricerca nella directory** , seleziona **Avanti**.
 
-# <a name="step-2---attendant-general-info"></a>[Passaggio 2 - Informazioni generali sull'operatore](#tab/general-info)
+# <a name="step-3---after-hours"></a>[Passaggio 3 - Fuori orario](#tab/after-hours)
 
-Per configurare un operatore automatico
+## <a name="call-flow-for-after-hours"></a>Flusso delle chiamate per fuori orario
 
-1. Nell'Teams di amministrazione espandere **Voce**, fare clic su **Operatori automatici** e quindi su **Aggiungi**.
+![Screenshot delle impostazioni del giorno e dell'ora fuori orario.](../media/auto-attendant-business-hours.png)
 
-2. Digitare un nome per l'operatore automatico nella casella in alto.
+L'orario di ufficio può essere impostato per ogni operatore automatico. Se l'orario di ufficio non è impostato, tutti i giorni e tutte le ore del giorno sono considerati orario di ufficio perché il programma 24/7 è impostato come predefinito. L'orario di ufficio può essere impostato con interruzioni durante il giorno e tutti gli orari che non sono impostati come orario di ufficio vengono considerati fuori orario. È possibile impostare diverse opzioni di gestione delle chiamate in arrivo e messaggi di saluto per l'orario di chiusura.
 
-3. Se si vuole designare un operatore, specificare la destinazione per le chiamate all'operatore. Questa opzione è facoltativa (ma consigliata). È possibile impostare **l'opzione Operatore** per consentire ai chiamanti di uscire dal menu e parlare con una persona designata.
+A seconda di come hai configurato gli operatori automatici e le code di chiamata, potrebbe essere necessario specificare solo il routing delle chiamate fuori orario per gli operatori automatici con numeri di telefono diretti.
 
-4. Specificare il fuso orario per questo operatore automatico. Il fuso orario viene usato per calcolare l'orario di ufficio se si crea un flusso di chiamata separato per le ore successive.
+Se si vuole separare il routing delle chiamate per i chiamanti in orario di chiusura, specificare l'orario di ufficio per ogni giorno. Selezionare **Aggiungi nuovo orario** per specificare più set di ore per un determinato giorno, ad esempio per specificare una pausa pranzo.
 
-5. Specificare una [lingua supportata per](../create-a-phone-system-auto-attendant-languages.md) questo operatore automatico. Questa è la lingua che verrà usata per le istruzioni vocali generate dal sistema.
+Dopo aver specificato l'orario di ufficio, scegliere le opzioni di instradamento delle chiamate per l'orario di chiusura. Le stesse opzioni sono disponibili per il routing delle chiamate in orario di ufficio specificato in precedenza.
 
-6. Scegliere se abilitare gli input vocali. Se abilitata, il nome di ogni opzione di menu diventa una parola chiave di riconoscimento vocale. Ad esempio, i chiamanti possono pronunciare "Uno" per selezionare l'opzione di menu mappata al tasto 1 oppure pronunciare "Vendite" per selezionare l'opzione di menu denominata "Vendite".
+Al **termine** , selezionare Avanti.
 
-7. Fare clic su **Avanti**.
+# <a name="step-4---holidays"></a>[Passaggio 4 - Festività](#tab/holidays)
 
-> [!div class="nextstepaction"]
-> [Passaggio 3 - Flusso di chiamate >](?tabs=call-flow#steps)
+## <a name="call-flows-during-holidays"></a>Flussi delle chiamate durante le festività
 
-# <a name="step-3---call-flow"></a>[Passaggio 3 - Flusso delle chiamate](#tab/call-flow)
+![Screenshot delle impostazioni di saluto per le festività e le festività.](../media/auto-attendant-holiday-greeting.png)
 
-Scegliere le opzioni del flusso di chiamata
+L'operatore automatico può avere un flusso delle chiamate per ogni [festività configurata](../set-up-holidays-in-teams.md). È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
 
-1. Scegliere se si vuole riprodurre un messaggio di saluto quando l'operatore automatico risponde a una chiamata.
+1. Nella pagina Impostazioni chiamata festività seleziona **Aggiungi**.
 
-    Se si seleziona **Riproduci un file audio**, è possibile usare il pulsante Upload **file per** caricare un messaggio di saluto registrato salvato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere superiore a 5 MB.
+2. Digitare un nome per l'impostazione delle festività.
 
-    Se si seleziona Digita un messaggio di saluto, il sistema leggerà il testo digitato (fino **a** 1000 caratteri) quando l'operatore automatico risponde a una chiamata.
-
-2. Scegli come instradare la chiamata.
-
-    Se si seleziona **Disconnetti**, l'operatore automatico riaggancia la chiamata.
-
-    Se si seleziona **Reindirizza chiamata**, è possibile scegliere una delle destinazioni di routing delle chiamate.
-
-    Se si seleziona **Opzioni del menu** Riproduci, è possibile scegliere Riproduci **un file audio** o Digitare **un** messaggio di saluto e quindi scegliere tra le opzioni di menu e la ricerca nella directory.
-
-3. Se si vuole che i chiamanti usino i tasti di chiamata per spostarsi, in Imposta opzioni **di menu** scegliere cosa si vuole fare quando i chiamanti premono un tasto di chiamata. Se si sta creando questo operatore automatico come elenco aziendale, lasciare vuote le opzioni dei tasti di composizione.
-
-    È possibile impostare uno dei tasti di chiamata per le destinazioni seguenti:
-
-    - **Persona dell'organizzazione** : una persona dell'organizzazione che è in grado di ricevere chiamate vocali.
-    - **App vocale** : un altro operatore automatico o una coda di chiamata.
-    - **Numero di telefono esterno** : qualsiasi numero di telefono. Usare questo formato: +[codice paese][codice area][numero di telefono]
-    - **Segreteria telefonica**: la cassetta postale vocale associata a Microsoft 365 gruppo specificato dall'utente. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lasciare un messaggio dopo il tono". richiesta di sistema.
-    - **Operatore** : l'operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. L'operatore può essere definito come qualsiasi altra destinazione in questo elenco.
-
-    È consigliabile impostare il tasto 0 sull'operatore.
-
-    Per ogni opzione di menu, specificare quanto segue:
-
-    - **Tasto di composizione** : il tasto sul tastierino del telefono per accedere a questa opzione.
-
-    - **Comando vocale** : definisce il comando vocale che un chiamante può fornire per accedere a questa opzione, se gli input vocali sono abilitati. Può contenere più parole, ad esempio "Servizio clienti" o "Operazioni e motivi". 
-
-    - **Reindirizza** a- dove vuoi che la chiamata vada quando i chiamanti scelgono questa opzione. Se si esegue il reindirizzamento a un operatore automatico o a una coda di chiamata, scegliere l'account della risorsa associato.
-
-4. Se si vuole usare questo operatore automatico come directory aziendale, in **Ricerca directory** selezionare **Chiama per nome**. Quando si abilita questa opzione, i chiamanti possono pronunciare il nome dell'utente o digitarlo sulla tastiera del telefono. Qualsiasi utente online con una Sistema telefonico licenza è un utente idoneo e può essere trovato con Chiama per nome.
-
-    È possibile scegliere Chiama **per interno**, tuttavia l'interno deve essere configurato in Azure Active Directory.
-
-5. Dopo aver selezionato un'opzione **di ricerca nella directory** , fare clic su **Avanti**.
-
-> [!div class="nextstepaction"]
-> [Passaggio 4 - Flusso di chiamate after hours >](?tabs=after-hours#steps)
-
-# <a name="step-4---after-hours"></a>[Passaggio 4 - Ore lavorative](#tab/after-hours)
-
-È possibile impostare l'orario di ufficio per ogni operatore automatico. Se l'orario di ufficio non è impostato, tutti i giorni e tutte le ore del giorno sono considerati orario di ufficio perché il programma 24/7 è impostato come predefinito. L'orario di ufficio può essere impostato con interruzioni di orario durante il giorno e tutte le ore non impostate come ore lavorative vengono considerate dopo l'orario. È possibile impostare diverse opzioni di gestione delle chiamate in arrivo e messaggi di saluto per le ore successive.
-
-A seconda di come sono stati configurati gli operatori automatici e le code di chiamata, potrebbe essere necessario specificare solo l'instradamento dopo l'orario di chiamata per gli operatori automatici con numeri di telefono diretti.
-
-Se si vuole un instradamento delle chiamate separato per i chiamanti non lavorativi, specificare l'orario di ufficio per ogni giorno. Fare **clic su Aggiungi nuova** ora per specificare più set di ore per un determinato giorno, ad esempio per specificare una pausa pranzo.
-
-Dopo aver specificato l'orario di ufficio, scegliere le opzioni di instradamento delle chiamate per le ore successive. Sono disponibili le stesse opzioni per il routing delle chiamate in orario di ufficio specificato nel **passaggio 3 - Flusso di chiamata**.
-
-Al **termine** , fare clic su Avanti.
-
-> [!div class="nextstepaction"]
-> [Passaggio 5 - Flusso delle chiamate natalizie >](?tabs=holidays#steps)
-
-# <a name="step-5---holidays"></a>[Passaggio 5 - Festività](#tab/holidays)
-
-Le chiamate all'operatore automatico possono essere instradati in modo diverso nei giorni festivi rispetto ad altri giorni. Se non si vuole avere un flusso di chiamate diverso per le festività, è possibile saltare questo passaggio.
-
-L'operatore automatico può avere un flusso di chiamate per ogni festività impostata. È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
-
-1. Nella pagina Impostazioni chiamata per le festività fare clic su **Aggiungi**.
-
-2. Digitare un nome per questa impostazione di festività.
-
-3. **Nell'elenco a** discesa Festività scegliere la festività da usare.
+3. Nell'elenco a discesa **Festività** scegliere la festività da usare.
 
 4. Scegliere il tipo di messaggio di saluto da usare.
 
-5. Scegliere se disconnettere **o** **reindirizzare** la chiamata.
+    ![Screenshot delle impostazioni delle azioni delle chiamate natalizie.](../media/auto-attendant-holiday-actions.png)
 
-6. Se si sceglie di reindirizzare la chiamata, scegliere la destinazione del routing delle chiamate per la chiamata.
+5. Scegliere se **disconnettere** o **reindirizzare** la chiamata.
 
-7. Fare clic su **Salva**.
+6. Se si sceglie di reindirizzare, scegliere la destinazione del routing delle chiamate per la chiamata.
 
-    Ripetere la procedura in base alle esigenze per ogni festività aggiuntiva.
+7. Selezionare **Salva**.
 
-    Dopo aver aggiunto tutte le festività, fare clic su **Avanti**.
+![Screenshot delle impostazioni delle festività con l'elenco delle festività.](../media/auto-attendant-holiday-call-settings.png)
 
-> [!div class="nextstepaction"]
-> [Passaggio 6 - Scegliere chi è nella directory >](?tabs=dial-scope#steps)
+Ripetere la procedura in base alle esigenze per ogni festività aggiuntiva.
 
-# <a name="step-6---directory-members"></a>[Passaggio 6 - Membri della directory](#tab/dial-scope)
+Dopo aver aggiunto tutte le festività, selezionare **Avanti**.
 
-*L'ambito di* chiamata definisce quali utenti sono disponibili nella directory quando un chiamante usa la chiamata per nome o la chiamata per interno. L'impostazione predefinita **di Tutti gli utenti online** include tutti gli utenti dell'organizzazione che hanno una licenza Teams Telefono online.
+# <a name="step-5---dial-scope"></a>[Passaggio 5 - Ambito di chiamata](#tab/dial-scope)
 
-È possibile includere o escludere utenti specifici selezionando Gruppo di utenti **personalizzato in Includi** o  Escludi e scegliendo uno o più gruppi Microsoft 365, liste di distribuzione o gruppi di sicurezza. Ad esempio, è possibile escludere i dirigenti dell'organizzazione dalla directory di composizione. Se un utente si trova in entrambi gli elenchi, verrà escluso dalla directory.
+## <a name="dial-scope"></a>Ambito di chiamata
+
+![Screenshot delle opzioni di inclusione ed esclusione dell'ambito di chiamata.](../media/auto-attendant-dial-scope.png)
+
+*L'ambito di chiamata* definisce quali utenti sono disponibili nella directory quando un chiamante usa l'opzione di chiamata per nome o dial-by-extension. Il valore predefinito **Tutti gli utenti online** include tutti gli utenti dell'organizzazione che sono utenti online o ospitati in locale tramite Skype for Business Server.
+
+È possibile includere o escludere utenti specifici selezionando **Gruppo di utenti personalizzati** in **Includi** o **Escludi** e scegliendo uno o più gruppi di Microsoft 365, liste di distribuzione o gruppi di sicurezza. Ad esempio, è consigliabile escludere i dirigenti dell'organizzazione dalla directory di chiamata. Se un utente è presente in entrambi gli elenchi, verrà escluso dalla directory.
 
 > [!NOTE]
-> L'elenco del nome di un nuovo utente nella directory potrebbe richiedere fino a 36 ore.
+> Potrebbero essere richieste fino a 36 ore prima che il nome di un nuovo utente sia elencato nella directory.
 
-Dopo aver impostato l'ambito di chiamata, fare clic su **Avanti**.
+Dopo aver impostato l'ambito di chiamata, selezionare **Avanti**.
 
-> [!div class="nextstepaction"]
-> [Passaggio 7 - Assegnare un account >](?tabs=resource-accounts#steps)
+# <a name="step-6---resource-accounts"></a>[Passaggio 6 - Account delle risorse](#tab/resource-accounts)
 
-# <a name="step-7---resource-accounts"></a>[Passaggio 7 - Account delle risorse](#tab/resource-accounts)
+## <a name="resource-accounts"></a>Account delle risorse
 
-A tutti gli operatori automatici deve essere associato un account di risorsa.  Gli operatori automatici di primo livello dovranno avere almeno un account della risorsa a cui è associato un numero di servizio. Se si vuole, è possibile assegnare più account delle risorse a un operatore automatico, ognuno con un numero di servizio distinto.
+Tutti gli operatori automatici devono avere un account di risorse associato.  Gli operatori automatici di primo livello avranno bisogno di almeno un account di risorse con un numero di servizio associato. Se lo desideri, puoi assegnare diversi account di risorse a un operatore automatico, ognuno con un numero di servizio separato.
 
-Per aggiungere un account della risorsa
+![Screenshot del pannello Aggiungi account per l'account della risorsa.](../media/auto-attendant-add-resource-account.png)
 
-1. Fare **clic** su Aggiungi e cercare l'account da aggiungere. Fare **clic su** Aggiungi e quindi su **Aggiungi**.
+Per aggiungere un account della risorsa, selezionare **Aggiungi account** e cercare l'account da aggiungere. Seleziona **Aggiungi** e quindi **Aggiungi**.
 
-2. Dopo aver aggiunto gli account del servizio, fare clic su **Invia**.
+![Screenshot dell'elenco di account delle risorse che mostra l'account della risorsa con il numero di servizio assegnato.](../media/auto-attendant-resource-account-assigned.png)
 
-    La configurazione dell'operatore automatico viene completata.
+Dopo aver aggiunto gli account delle risorse, seleziona **Invia** per completare la configurazione dell'operatore automatico.
+
+Per altre informazioni, vedere [Gestire Teams account delle risorse](../manage-resource-accounts.md).
 
 ---
