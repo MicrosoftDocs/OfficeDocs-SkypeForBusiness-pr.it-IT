@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Onboarding Teams Rooms dispositivi ai servizi gestiti
 f1keywords: ''
-ms.openlocfilehash: d40daed54a04ca7d9949ecc63f57c379aee6b666
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 901cf212d6eaeb7ca98b8a158de517b0687ba517
+ms.sourcegitcommit: 5bb00d639828c744951a39705fefe81ed6698efe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675788"
+ms.lasthandoff: 06/20/2022
+ms.locfileid: "66167320"
 ---
 # <a name="enroll-device-into-managed-service"></a>Registrare il dispositivo nel servizio gestito
 
@@ -85,10 +85,10 @@ Per accedere al dispositivo come amministratore (amministratore locale):
 > [!NOTE]
 > Se il computer fa *parte di un dominio*, scegliere **Altro utente**, quindi utilizzare **.\admin** o il nome utente dell'amministratore locale configurato nel dispositivo come nome utente.
 
-Per tornare all'app Microsoft Teams Room dopo aver eseguito le attività amministrative necessarie:
+Per tornare all'app Microsoft Teams Rooms dopo aver eseguito le attività amministrative necessarie:
 
 1. Dal ***menu Start Windows*** disconnettersi dall'account Amministrazione.
-1. Tornare a Microsoft Teams Sala selezionando l'icona dell'account utente all'estrema sinistra dello schermo e quindi selezionando **Skype**.
+1. Torna a Microsoft Teams Rooms selezionando l'icona dell'account utente all'estrema sinistra dello schermo e quindi selezionando **Skype**.
 
 > [!NOTE]
 > Se l'utente Skype non è elencato, seleziona Altro utente, immetti ***.\skype*** come nome utente, quindi accedi.

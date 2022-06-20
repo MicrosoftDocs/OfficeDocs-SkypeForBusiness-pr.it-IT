@@ -1,9 +1,9 @@
 ---
 title: Configurare ServiceNow per Teams Rooms
-author: dstrome
-ms.author: dstrome
+author: donnah007
+ms.author: v-donnahill
 manager: serdars
-ms.reviewer: ''
+ms.reviewer: ronmart
 ms.topic: article
 ms.service: msteams
 audience: Admin
@@ -12,18 +12,21 @@ appliesto:
 localization_priority: Normal
 description: Informazioni sulla configurazione di ServiceNow nel portale di Teams Rooms Premium
 f1keywords: ''
-ms.openlocfilehash: c11a4e3cf4f128c8043ad2451f7d0a7a2ffe1c2e
-ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
+ms.openlocfilehash: 6362d0bed4263ce374c1fb5cfd05d4d8815044c2
+ms.sourcegitcommit: 5bb00d639828c744951a39705fefe81ed6698efe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65761498"
+ms.lasthandoff: 06/20/2022
+ms.locfileid: "66167310"
 ---
 # <a name="configure-servicenow-for-teams-rooms"></a>Configurare ServiceNow per Teams Rooms
 
 Questo articolo descrive i prerequisiti e i passaggi per configurare l'ambiente ServiceNow nel portale di Teams Rooms Premium.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="watch-microsoft-teams-rooms--managed-services-service-now-integration"></a>Guarda: Microsoft Teams Rooms — Integrazione del servizio servizi gestiti ora
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ZK4B]
+
 
 ### <a name="teams-rooms-prerequisites"></a>Teams Rooms prerequisiti
 
@@ -74,7 +77,7 @@ Una volta superato il test, seleziona **Invia** per salvare le modifiche. Quando
 
 - **descrizione**: il campo della descrizione in ServiceNow è il primo valore nella cronologia delle conversazioni di un evento imprevisto ServiceNow. La descrizione equivale a Primo messaggio nel portale di Teams Rooms Premium.
 
-- **assignment_group**: il campo del gruppo di assegnazioni in ServiceNow viene usato per organizzare gli eventi imprevisti. Il gruppo di assegnazioni equivale ai gruppi di sale nel portale di Teams Rooms Premium. Per impostazione predefinita, esiste un gruppo di chat room e ne è possibile aggiungerne altri. È possibile decidere quanti gruppi sono presenti e come raggruppare gli eventi imprevisti. Ad esempio, è possibile scegliere di organizzare gli eventi imprevisti in base alla posizione.
+- **assignment_group**: il campo del gruppo di assegnazioni in ServiceNow viene usato per organizzare gli eventi imprevisti. I gruppi di assegnazioni equivalgono ai gruppi di sale nel portale di Teams Rooms Premium. Per impostazione predefinita, esiste un gruppo di chat room e ne è possibile aggiungerne altri. È possibile decidere quanti gruppi sono presenti e come raggruppare gli eventi imprevisti. Ad esempio, è possibile scegliere di organizzare gli eventi imprevisti in base alla posizione.
 
 - **gravità**: il campo di gravità in ServiceNow viene usato per organizzare gli incidenti in base alla priorità. I valori che designano la priorità sono personalizzabili. La gravità è equivalente al campo Anello nel portale di Teams Rooms Premium. Per personalizzare gli anelli nel portale di Teams Rooms Premium, vai a **Aggiornamenti** nel menu di spostamento a sinistra. Passa quindi alla scheda **Anelli** e seleziona **Aggiungi anello**.
 
