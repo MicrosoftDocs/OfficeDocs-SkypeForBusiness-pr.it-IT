@@ -1,7 +1,7 @@
 ---
 title: Panoramica della certificazione delle app da parte di Microsoft
 ms.reviewer: ''
-description: Comprendere i programmi di attestazione e certificazione delle app per le app di Teams.
+description: Informazioni sul programma di conformità dell’app Microsoft 365 per la sicurezza, la conformità e la privacy delle app di terze parti.
 ms.topic: article
 author: guptaashish
 ms.author: guptaashish
@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 85277e9948dac1e083eb587f9bfc3787be3644a6
-ms.sourcegitcommit: 836926a4914eb33fc3e0d8d6c84cee886cb1a5a7
+ms.openlocfilehash: 86da9e6284c5fd295a1fee8894ec61734b2ebe1e
+ms.sourcegitcommit: 9946c6c1faa78617ccd7bdf115457090ebce5619
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65137157"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190630"
 ---
 # <a name="microsoft-365-app-compliance-program-for-security-compliance-and-privacy-of-third-party-apps"></a>Il programma di conformità dell’app Microsoft 365 per la sicurezza, la conformità e la privacy delle app di terze parti
 

@@ -12,16 +12,16 @@ ms.collection:
 ms.reviewer: chhavib, vaibhava, nsuter
 search.appverid: MET150
 f1keywords: ''
-description: Informazioni su come acquistare app di terze parti per Teams nell'interfaccia di amministrazione di Microsoft Teams.
+description: Scopri come acquistare app di terze parti da Teams store usando una carta di credito, una carta di debito o tramite fatturazione.
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 52cab02898a2fd187c60d2348a42c3ce97de2a3b
-ms.sourcegitcommit: 836926a4914eb33fc3e0d8d6c84cee886cb1a5a7
+ms.openlocfilehash: 33d5faec0694c666b2f392713d235cb52ef8b0e8
+ms.sourcegitcommit: 9946c6c1faa78617ccd7bdf115457090ebce5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65137087"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190326"
 ---
 # <a name="purchase-third-party-apps-for-teams"></a>Acquistare app di terze parti per Teams
 
@@ -38,7 +38,7 @@ Qui è anche possibile acquistare licenze per i servizi offerti da app di terze 
 > [!IMPORTANT]
 > Quando abiliti l'acquisto di app, viene attivato anche l'acquisto in-app. Gli utenti possono vedere offerte di acquisto in-app controllate dall'ISV per la loro app. Se vuoi impedire ai tuoi utenti di acquistare un'app, devi bloccare l'app. Per altre informazioni su come bloccare un'app, vedere [Gestire i criteri delle app](app-policies.md) o [informazioni su come bloccare un'app a livello di organizzazione](manage-apps.md#allow-and-block-apps).
 
-1. Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Teams** **appGesti** >  app. Per accedere alla pagina è necessario essere un amministratore globale o Teams del servizio.
+1. Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Teams app** > **Gestisci app**. Per accedere alla pagina è necessario essere un amministratore globale o Teams del servizio.
 1. Cercare l'app desiderata. Per identificare le app con un abbonamento SaaS a pagamento, cercare nella colonna **Licenze** . Ogni app avrà uno dei valori seguenti:
     - **Acquisto**: l'app offre un abbonamento SaaS ed è disponibile per l'acquisto.  
     - **Acquistato**: l'app offre un abbonamento SaaS per cui sono state acquistate licenze.
@@ -72,7 +72,7 @@ Selezionare **Gestisci licenze** per passare alla interfaccia di amministrazione
 Gli amministratori globali possono aggiungere altre licenze, rimuovere licenze e annullare gli abbonamenti per gli acquisti effettuati da chiunque nell'organizzazione. Teams amministratori dei servizi possono eseguire le stesse azioni per gli acquisti effettuati da soli. Tuttavia, se un amministratore del servizio Teams ha anche il ruolo di amministratore fatturazione, può gestire gli acquisti effettuati da chiunque nell'organizzazione.
 
 > [!NOTE]
-> Se un amministratore globale vuole gestire un abbonamento acquistato da un altro amministratore globale, deve avere lo stesso account di fatturazione. È possibile concedere a un altro amministratore globale l'accesso a un abbonamento acquistato selezionando l'app nel interfaccia di amministrazione di Microsoft 365. Da qui, vai a **Visualizza profilo** >  di **fatturazioneSeleziona account** >  di **fatturazioneAssegnare ruoliAggiungere** >  **altri amministratori globali**.
+> Se un amministratore globale vuole gestire un abbonamento acquistato da un altro amministratore globale, deve avere lo stesso account di fatturazione. È possibile concedere a un altro amministratore globale l'accesso a un abbonamento acquistato selezionando l'app nel interfaccia di amministrazione di Microsoft 365. Da qui, vai a **Visualizza profilo** >  di fatturazione **Seleziona account** >  di fatturazione **Assegna ruoli** > **Aggiungi altri amministratori globali**.
 
 ### <a name="invoice-billing"></a>Fatturazione tramite fattura
 
@@ -91,5 +91,5 @@ Gli sviluppatori di app di terze parti possono accedere a [Creare un'offerta Saa
 
 - [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
 - [Creare un'offerta SaaS](/azure/marketplace/partner-center-portal/create-new-saas-offer)
-- [Azure AD ruoli predefiniti](/azure/active-directory/roles/permissions-reference)
+- [Ruoli predefiniti di Azure AD](/azure/active-directory/roles/permissions-reference)
 - [Microsoft 365 ruoli di amministratore](/microsoft-365/admin/add-users/about-admin-roles)

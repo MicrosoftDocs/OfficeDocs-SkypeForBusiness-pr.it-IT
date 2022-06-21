@@ -13,16 +13,16 @@ ms.reviewer: vaibhava
 search.appverid: MET150
 f1keywords:
 - ms.teamsadmincenter.manageapps.overview
-description: Informazioni su come gestire le app di Teams nella pagina Gestisci app dell'interfaccia di amministrazione di Microsoft Teams.
+description: Scopri come gestire Teams app. Scopri come consentire o bloccare le app, controllare lo stato e le proprietà delle app a livello di organizzazione, caricare app personalizzate e gestire le impostazioni delle app.
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: b73041f85abceeaa7eb6817fea040bd1912ba961
-ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
+ms.openlocfilehash: 8ff77c528f51fa1c3cf21e0fce636a664291d3ce
+ms.sourcegitcommit: 9946c6c1faa78617ccd7bdf115457090ebce5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66045975"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190517"
 ---
 # <a name="manage-teams-apps-in-the-microsoft-teams-admin-center"></a>Gestire Teams app nell'interfaccia di amministrazione di Microsoft Teams
 
