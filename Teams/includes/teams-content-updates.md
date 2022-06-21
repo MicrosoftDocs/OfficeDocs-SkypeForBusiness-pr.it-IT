@@ -3,6 +3,38 @@
 
 
 
+## <a name="week-of-june-13-2022"></a>Settimana del 13 giugno 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 6/13/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
+| 6/13/2022 | [Usare Power BI per analizzare i dati di Call Quality Dashboard per Microsoft Teams](/MicrosoftTeams/cqd-power-bi-query-templates) | Volta |
+| 6/13/2022 | [Passare da Business Voice a licenze di Teams Telefono](/MicrosoftTeams/business-voice-to-teams-phone-licenses) | Volta |
+| 6/13/2022 | [Usare i file di log nella risoluzione dei problemi di Microsoft Teams](/MicrosoftTeams/log-files) | Volta |
+| 6/13/2022 | [Dati e informazioni sulla privacy](/MicrosoftTeams/rooms/data-and-privacy-info) | Volta |
+| 6/13/2022 | [gestione degli aggiornamenti di Microsoft Teams Rooms](/MicrosoftTeams/rooms/update-management) | Volta |
+| 6/15/2022 | [Modulo di PowerShell Teams - Versioni supportate](/MicrosoftTeams/teams-powershell-supported-versions) | Volta |
+| 6/16/2022 | [Riferimento ai cmdlet di PowerShell per operatori automatici e code di chiamata](/MicrosoftTeams/call-queue-auto-attendant-cmdlets) | Aggiunto |
+| 6/16/2022 | [Pianificare il flusso di instradamento delle chiamate per Microsoft Teams](/MicrosoftTeams/plan-your-call-routing-flow) | Aggiunto |
+| 6/16/2022 | [Microsoft Teams le autorizzazioni e le considerazioni relative alle app](/MicrosoftTeams/app-permissions) | Volta |
+| 6/16/2022 | [Assegnare, modificare o rimuovere il numero di telefono di un utente](/MicrosoftTeams/assign-change-or-remove-a-phone-number-for-a-user) | Volta |
+| 6/16/2022 | Configurare un operatore automatico per Microsoft Teams - esercitazione per piccole imprese | Rimosso |
+| 6/16/2022 | Creare una coda di chiamata in Telefono di Microsoft Teams System - Esercitazione per le piccole imprese | Rimosso |
+| 6/16/2022 | [Assegnare Teams Sistema telefonico numeri di telefono agli utenti](/MicrosoftTeams/business-voice/set-up-assign-numbers) | Volta |
+| 6/16/2022 | Configurare un operatore automatico per il numero di telefono principale della società | Rimosso |
+| 6/16/2022 | [Configurare un account di risorse di sistema Telefono di Microsoft Teams](/MicrosoftTeams/business-voice/set-up-resource-account) | Volta |
+| 6/16/2022 | [Teams Sistema telefonico per le piccole e medie imprese](/MicrosoftTeams/business-voice/whats-business-voice) | Volta |
+| 6/16/2022 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant) | Volta |
+| 6/16/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
+| 6/16/2022 | [Modificare l'aspetto delle app nell'archivio Teams dell'organizzazione](/MicrosoftTeams/customize-apps) | Volta |
+| 6/16/2022 | [Comando radiale e riferimento per il riconoscimento vocale dell'operatore automatico e della coda di chiamata](/MicrosoftTeams/dial-voice-reference) | Volta |
+| 6/16/2022 | [Gestire gli account delle risorse in Teams](/MicrosoftTeams/manage-resource-accounts) | Volta |
+| 6/16/2022 | [Pianificare Teams operatori automatici e code di chiamata](/MicrosoftTeams/plan-auto-attendant-call-queue) | Volta |
+| 6/16/2022 | [Upload le app personalizzate nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/upload-custom-apps) | Volta |
+| 6/16/2022 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | Volta |
+
+
 ## <a name="week-of-june-06-2022"></a>Settimana del 6 giugno 2022
 
 
@@ -37,7 +69,7 @@
 | 6/1/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
 | 6/2/2022 | [Requisiti hardware per Microsoft Teams](/MicrosoftTeams/hardware-requirements-for-the-teams-app) | Volta |
 | 6/2/2022 | [Restrizioni per i caratteri speciali nei criteri di Teams](/MicrosoftTeams/special-character-restrictions-in-policy-names) | Volta |
-| 6/2/2022 | [Configurazione dell'amministratore dei genitori in Teams per l'istruzione](/MicrosoftTeams/edu-parents-app) | Volta |
+| 6/2/2022 | [Amministrazione configurazione di Genitori in Teams per l'istruzione](/MicrosoftTeams/edu-parents-app) | Volta |
 | 6/3/2022 | [Microsoft Teams report Appuntamenti virtuale connettore EHR](/MicrosoftTeams/expand-teams-across-your-org/healthcare/ehr-admin-reports) | Volta |
 
 
@@ -55,11 +87,11 @@
 | 5/25/2022 | [supporto per app Microsoft Teams/line-of-business su pannelli Teams](/MicrosoftTeams/app-support-on-teams-panels) | Volta |
 | 5/25/2022 | [Archiviare o eliminare un team in Microsoft Teams](/MicrosoftTeams/archive-or-delete-a-team) | Volta |
 | 5/25/2022 | [Assegnare, modificare o rimuovere il numero di telefono di un utente](/MicrosoftTeams/assign-change-or-remove-a-phone-number-for-a-user) | Volta |
-| 5/25/2022 | [Report sull'utilizzo delle audioconferenze in uscita](/MicrosoftTeams/audio-conferencing-dial-out-usage-report) | Volta |
-| 5/25/2022 | [Servizi di conferenza telefonica in rete per audioconferenze](/MicrosoftTeams/audio-conferencing-on-network) | Volta |
+| 5/25/2022 | [Audioconferenza report sull'utilizzo delle chiamate in uscita](/MicrosoftTeams/audio-conferencing-dial-out-usage-report) | Volta |
+| 5/25/2022 | [Servizi di conferenza on-network per Audioconferenza](/MicrosoftTeams/audio-conferencing-on-network) | Volta |
 | 5/25/2022 | [Cercare gli eventi nel log di controllo in Microsoft Teams](/MicrosoftTeams/audit-log-events) | Volta |
 | 5/25/2022 | [Bloccare le chiamate in ingresso in Microsoft Teams](/MicrosoftTeams/block-inbound-calls) | Volta |
-| 5/25/2022 | [Modificare i numeri di telefono nel bridge di audioconferenza](/MicrosoftTeams/change-the-phone-numbers-on-your-audio-conferencing-bridge) | Volta |
+| 5/25/2022 | [Modificare i numeri di telefono nel bridge di Audioconferenza](/MicrosoftTeams/change-the-phone-numbers-on-your-audio-conferencing-bridge) | Volta |
 | 5/25/2022 | [Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams](/MicrosoftTeams/class-insights) | Volta |
 | 5/25/2022 | [Configurare l'interoperabilità video cloud per Microsoft Teams](/MicrosoftTeams/cloud-video-interop-for-teams-set-up) | Volta |
 | 5/25/2022 | [Connessione Microsoft Teams Essentials (identità AAD) a un sistema di posta elettronica esistente con calendario](/MicrosoftTeams/connect-teams-essentials-to-email) | Volta |
@@ -77,7 +109,7 @@
 | 5/25/2022 | [Account utente in ambiente ibrido con PSTN](/MicrosoftTeams/direct-routing-user-accounts-in-a-hybrid-environment) | Volta |
 | 5/25/2022 | [Condurre un'indagine di eDiscovery sul contenuto](/MicrosoftTeams/ediscovery-investigation) | Volta |
 | 5/25/2022 | [Teams per l'istruzione Creazione guidata Criteri per applicare facilmente criteri per l'apprendimento sicuro](/MicrosoftTeams/easy-policy-setup-edu) | Volta |
-| 5/25/2022 | [Configurazione dell'amministratore dei genitori in Teams per l'istruzione](/MicrosoftTeams/edu-parents-app) | Volta |
+| 5/25/2022 | [Amministrazione configurazione di Genitori in Teams per l'istruzione](/MicrosoftTeams/edu-parents-app) | Volta |
 | 5/25/2022 | [Sincronizzare i dati del sistema informativo degli studenti (SIS) con Insights per l’istruzione](/MicrosoftTeams/education-insights-sis-data-sync) | Volta |
 | 5/25/2022 | [Attività per Teams](/MicrosoftTeams/expand-teams-across-your-org/assignments-in-teams) | Volta |
 | 5/25/2022 | [Usare PowerShell per connettere Turni alla gestione della forza lavoro Blue Yonder](/MicrosoftTeams/expand-teams-across-your-org/shifts/shifts-connector-blue-yonder-powershell-setup) | Volta |
@@ -153,22 +185,3 @@
 | 5/20/2022 | [Gestire i criteri di routing delle chiamate di emergenza per il routing diretto](/MicrosoftTeams/manage-emergency-call-routing-policies) | Volta |
 | 5/20/2022 | [Gestire i criteri per le chiamate di emergenza in Microsoft Teams](/MicrosoftTeams/manage-emergency-calling-policies) | Volta |
 | 5/20/2022 | [Note sulla versione di Microsoft Teams PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | Volta |
-
-
-## <a name="week-of-may-09-2022"></a>Settimana del 9 maggio 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 5/9/2022 | [Abilitare gli utenti per il routing diretto](/MicrosoftTeams/direct-routing-enable-users) | Volta |
-| 5/9/2022 | [Configurare Connessione con operatore](/MicrosoftTeams/operator-connect-configure) | Volta |
-| 5/9/2022 | [Assegnare criteri in Teams](/MicrosoftTeams/policy-assignment-overview) | Volta |
-| 5/9/2022 | [Report cronologico della coda di chiamata & operatore automatico](/MicrosoftTeams/aa-cq-cqd-historical-reports) | Volta |
-| 5/10/2022 | [Pianificare l'instradamento basato sulla posizione per Instradamento diretto](/MicrosoftTeams/location-based-routing-plan) | Volta |
-| 5/10/2022 | [Criteri per le chiamate in Microsoft Teams: funzionalità di chiamata e inoltro di chiamata](/MicrosoftTeams/teams-calling-policy) | Volta |
-| 5/10/2022 | [Supporto della versione dell'app Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-lifecycle-support) | Volta |
-| 5/12/2022 | [Gestire i criteri della segreteria telefonica](/MicrosoftTeams/manage-voicemail-policies) | Volta |
-| 5/12/2022 | [Configurare gateway SIP](/MicrosoftTeams/sip-gateway-configure) | Volta |
-| 5/12/2022 | [Configurazione dell'amministratore dei genitori in Teams per l'istruzione](/MicrosoftTeams/edu-parents-app) | Volta |
-| 5/13/2022 | [App Walkie-talkie in Microsoft Teams](/MicrosoftTeams/walkie-talkie) | Volta |
-| 5/13/2022 | [Requisiti per Microsoft Teams Rooms](/MicrosoftTeams/rooms/requirements) | Volta |
