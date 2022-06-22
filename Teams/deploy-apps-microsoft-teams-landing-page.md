@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1392678e77d96eb34445be1848a6cbfbb559bc5c
-ms.sourcegitcommit: 1ac37cc27d4ccb3e1dae20ca1929214e17be2075
+ms.openlocfilehash: bfb786c031acf0d07e67895416b724e24f4950da
+ms.sourcegitcommit: 9946c6c1faa78617ccd7bdf115457090ebce5619
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65913414"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66190296"
 ---
 # <a name="about-apps-in-microsoft-teams"></a>Informazioni sulle app in Microsoft Teams
 
@@ -48,7 +48,7 @@ I diversi tipi di app che gli utenti finali possono usare in Teams sono:
 
 ## <a name="core-apps"></a>App di base
 
-Alcune funzionalità predefinite come il feed attività, i canali, la chat, il calendario e le chiamate di Teams sono disponibili e aggiunte per impostazione predefinita per facilitare l'accesso agli utenti finali. Gli amministratori possono modificare il comportamento predefinito usando [i criteri di configurazione](/microsoftteams/teams-app-setup-policies).
+Alcune funzionalità predefinite, come il feed attività, i canali di Teams, le chat, il calendario e le chiamate, sono disponibili e aggiunte per impostazione predefinita per facilitare l'accesso agli utenti finali. Gli amministratori possono modificare il comportamento predefinito usando [i criteri di configurazione](/microsoftteams/teams-app-setup-policies).
 
 :::image type="content" source="media/core-apps-pinned1.png" alt-text="Le app di base sono costituite dalle app aggiunte in Teams per impostazione predefinita." lightbox="media/core-apps-pinned2.png":::
 
