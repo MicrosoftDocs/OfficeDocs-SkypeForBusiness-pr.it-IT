@@ -1487,7 +1487,7 @@ items:
             href: rooms/with-skype-for-business-server-2015.md
   - name: Gestire app
     items:
-      - name: Panoramica
+      - name: Informazioni sulle app in Teams
         href: deploy-apps-microsoft-teams-landing-page.md
       - name: Gestire le app fornite da Microsoft
         items:
@@ -1513,7 +1513,7 @@ items:
             href: overview-of-app-validation.md
           - name: 'Sicurezza, conformità e privacy delle app di terze parti'
             href: overview-of-app-certification.md
-          - name: Usare i connettori personalizzati e di Microsoft 365 o Office 365
+          - name: Gestire Microsoft 365 e i connettori personalizzati
             href: Office-365-custom-connectors.md
           - name: Acquistare app di terza parte per Teams
             href: purchase-third-party-apps.md
@@ -1533,7 +1533,7 @@ items:
             href: customize-your-app-store.md
       - name: Controlli amministrativi per gestire le app
         items:
-          - name: Panoramica della gestione delle app per gli amministratori
+          - name: Panoramica della gestione delle app
             href: manage-apps.md
           - name: Criteri delle app
             items:
@@ -1547,7 +1547,7 @@ items:
                 href: teams-custom-app-policies-and-settings.md
           - name: Personalizzare le app di Teams per gli operatori sul campo
             href: pin-teams-apps-based-on-license.md
-          - name: Informazioni sulle autorizzazioni di Azure AD e sul consenso degli amministratori
+          - name: Autorizzazioni grafiche e consenso degli amministratori in Azure AD
             href: app-permissions-admin-center.md
           - name: Gestire il consenso specifico delle risorse per l'organizzazione
             href: resource-specific-consent.md
@@ -1555,11 +1555,11 @@ items:
             href: app-permissions.md
           - name: Comportamento dell'app in base ai tipi di utenti
             href: non-standard-users.md
-          - name: Aggiornare le app alle versioni più recenti come utenti finali
+          - name: Aggiornamenti delle app e ruolo di amministratore
             href: apps-update-experience.md
           - name: Gestire gli accessi alle app di Teams in Microsoft 365
             href: manage-third-party-teams-apps.md
-      - name: Report sull'utilizzo delle app
+      - name: Report sull'utilizzo dell'app e analisi
         href: teams-analytics-and-reports/app-usage-report.md
   - name: Istruzioni per industrie ed enti pubblici
     items:
