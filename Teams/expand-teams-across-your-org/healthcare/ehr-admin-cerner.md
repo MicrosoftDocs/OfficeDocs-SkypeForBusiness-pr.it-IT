@@ -22,25 +22,25 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ansantam
-description: Informazioni su come integrare il connettore Teams EHR per consentire agli operatori sanitari dell'organizzazione di condurre appuntamenti virtuali con pazienti o altri provider in Teams direttamente dal sistema Cerner EHR.
-ms.openlocfilehash: 8caa80bca9a7b8278aff9133f81bfa807e6727ed
-ms.sourcegitcommit: 68162a8c9dee9a27af596353baabeda9b8fa64f3
+description: Informazioni su come integrare il connettore Teams EHR per consentire agli operatori sanitari dell'organizzazione di condurre appuntamenti virtuali con pazienti o altri provider in Teams direttamente dal sistema EHR di Cerner.
+ms.openlocfilehash: 990d1816d33fde527195faf81ff6153b6aa9ab8f
+ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64853297"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66494823"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-cerner-ehr"></a>Appuntamenti virtuali con Teams - Integrazione in Cerner EHR
 
-Il connettore EHR (Electronic Health Record) Microsoft Teams consente ai medici di lanciare un appuntamento virtuale con un paziente o di consultarsi con un altro fornitore in Microsoft Teams direttamente dal sistema Cerner EHR. Basato sul cloud Microsoft 365, Teams consente una collaborazione e una comunicazione semplici e sicure con strumenti di chat, video, voce e assistenza sanitaria in un unico hub che supporta la conformità con HIPAA, la certificazione HITECH e altro ancora.
+Il connettore EHR (Electronic Health Record) di Microsoft Teams consente ai medici di lanciare un appuntamento virtuale con un paziente o di consultarsi con un altro provider in Microsoft Teams direttamente dal sistema Cerner EHR. Basato sul cloud Microsoft 365, Teams consente una collaborazione e una comunicazione semplici e sicure con strumenti di chat, video, voce e assistenza sanitaria in un unico hub che supporta la conformità con HIPAA, la certificazione HITECH e altro ancora.
 
-La piattaforma di comunicazione e collaborazione di Teams consente ai medici di sgombrare facilmente il disordine di sistemi frammentati in modo che possano concentrarsi sulla fornitura della migliore assistenza possibile. Con il connettore Teams EHR è possibile:
+La piattaforma di comunicazione e collaborazione di Teams rende più facile per i medici sgombrare il disordine di sistemi frammentati in modo che possano concentrarsi sulla fornitura della migliore assistenza possibile. Con il connettore Teams EHR, è possibile:
 
-- Conduci Teams appuntamenti virtuali dal sistema Cerner EHR con un flusso di lavoro clinico integrato.
-- Consente ai pazienti di partecipare Teams appuntamenti virtuali da notifiche tramite posta elettronica o SMS.
+- Condurre appuntamenti virtuali di Teams dal sistema EHR cerner con un flusso di lavoro clinico integrato.
+- Consente ai pazienti di partecipare agli appuntamenti virtuali di Teams da notifiche tramite posta elettronica o SMS.
 - Visualizzare report sui dati di consumo e informazioni personalizzabili sulla qualità delle chiamate per gli appuntamenti connessi a EHR.
 
-Questo articolo descrive come configurare il connettore Teams EHR per l'integrazione con la piattaforma Cerner. Offre anche una panoramica dell'esperienza di appuntamenti virtuali Teams dal sistema Cerner EHR.
+Questo articolo descrive come configurare il connettore Teams EHR per l'integrazione con la piattaforma Cerner. Offre anche una panoramica dell'esperienza degli appuntamenti virtuali di Teams dal sistema EHR di Cerner.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -51,8 +51,8 @@ Questo articolo descrive come configurare il connettore Teams EHR per l'integraz
 
 Prima di integrare il connettore Teams EHR nell'organizzazione sanitaria, è necessario disporre di quanto segue:
 
-- Un abbonamento attivo a Microsoft Teams'offerta autonoma del connettore EHR (applicata solo durante il test in un ambiente EHR di produzione).
-- Gli utenti hanno una licenza appropriata per Microsoft 365 o Office 365 che include Teams riunioni.
+- Un abbonamento attivo a Microsoft Cloud for Healthcare o un abbonamento all'offerta autonoma del connettore EHR di Microsoft Teams.
+- Gli utenti hanno una licenza di Microsoft 365 o Office 365 appropriata che include le riunioni di Teams.
 - Teams è adottato e usato nell'organizzazione sanitaria.
 - I sistemi soddisfano tutti i [requisiti software e del browser](../../hardware-requirements-for-the-teams-app.md) per Teams.
 - Cerner versione novembre 2018 o successiva
@@ -67,17 +67,17 @@ Per la configurazione del connettore è necessario:
 - [Rivedere e completare la configurazione](ehr-admin-cerner.md#review-and-finish-the-configuration)
 
 > [!IMPORTANT]
-> Questi passaggi devono essere completati dall'amministratore globale Microsoft 365 dell'organizzazione.  
+> Questi passaggi devono essere completati dall'amministratore globale di Microsoft 365 dell'organizzazione.  
 
 ### <a name="launch-the-ehr-connector-configuration-portal"></a>Avviare il portale di configurazione del connettore EHR
 
-Per iniziare, l'amministratore Microsoft 365 avvia il portale di configurazione del [connettore EHR](https://ehrconnector.teams.microsoft.com) ed esegue l'accesso con le credenziali Microsoft.
+Per iniziare, l'amministratore di Microsoft 365 avvia il [portale di configurazione del connettore EHR](https://ehrconnector.teams.microsoft.com) ed esegue l'accesso con le credenziali Microsoft.
 
-L'amministratore Microsoft 365 può configurare un singolo reparto o più reparti per testare l'integrazione. Configurare l'URL di test e produzione nel portale di configurazione. Assicurarsi di testare l'integrazione dall'ambiente di test cerner prima di passare alla produzione.
+L'amministratore di Microsoft 365 può configurare un singolo reparto o più reparti per testare l'integrazione. Configurare l'URL di test e produzione nel portale di configurazione. Assicurarsi di testare l'integrazione dall'ambiente di test cerner prima di passare alla produzione.
 
 ### <a name="enter-configuration-information"></a>Immettere le informazioni di configurazione
 
-Quindi, per configurare l'integrazione, l'amministratore Microsoft 365 aggiunge un URL di base Fast Health Interoperability Resources (FHIR) da Cerner e specifica l'ambiente. Configurare tutti gli URL di base FHIR necessari, a seconda delle esigenze dell'organizzazione e degli ambienti da testare.
+Quindi, per configurare l'integrazione, l'amministratore di Microsoft 365 aggiunge un URL di base Fast Health Interoperability Resources (FHIR) da Cerner e specifica l'ambiente. Configurare tutti gli URL di base FHIR necessari, a seconda delle esigenze dell'organizzazione e degli ambienti da testare.
 
 :::image type="content" source="media/ehr-admin-cerner-configuration.png" alt-text="Screenshot della pagina Informazioni di configurazione del portale di configurazione del connettore Teams EHR." lightbox="media/ehr-admin-cerner-configuration.png":::
 
@@ -93,7 +93,7 @@ Selezionare **Avanti** per passare al passaggio successivo.
 
 Completare questo passaggio se l'organizzazione vuole che Microsoft gestisse le notifiche SMS per i pazienti. Quando si abilitano le notifiche SMS, i pazienti riceveranno messaggi di conferma e promemoria per gli appuntamenti pianificati.
 
-Per abilitare le notifiche SMS, l'amministratore Microsoft 365 esegue le operazioni seguenti:
+Per abilitare le notifiche SMS, l'amministratore di Microsoft 365 esegue le operazioni seguenti:
 
 1. Nella pagina Notifiche SMS seleziona entrambe le caselle di controllo per il consenso per:
 
@@ -110,7 +110,7 @@ Per abilitare le notifiche SMS, l'amministratore Microsoft 365 esegue le operazi
 
     Scegliere **Fine** e quindi **Avanti**.
 
-1. Per collegare il numero di telefono a un URL di base FHIR, selezionare il **numero in Telefono numero** nella sezione **configurazione SMS**. Eseguire questa operazione per ogni URL di base FHIR per cui si desidera abilitare le notifiche SMS.
+1. Per collegare il numero di telefono a un URL di base FHIR, selezionare il numero in **Numero di telefono** nella sezione **configurazione SMS** . Eseguire questa operazione per ogni URL di base FHIR per cui si desidera abilitare le notifiche SMS.
 
     :::image type="content" source="media/ehr-admin-cerner-link-phone-number.png" alt-text="Screenshot che mostra come collegare un numero di telefono a un URL di base FHIR." lightbox="media/ehr-admin-cerner-link-phone-number.png":::
 
@@ -120,35 +120,35 @@ Per abilitare le notifiche SMS, l'amministratore Microsoft 365 esegue le operazi
 
 ### <a name="review-and-finish-the-configuration"></a>Rivedere e completare la configurazione
 
-Verranno visualizzati i record di integrazione per il lancio di pazienti e fornitori. Questi record sono necessari per completare la configurazione degli appuntamenti virtuali a Cerner. Per ulteriori informazioni, vedi la guida Cerner-Microsoft Teams Telehealth Integration.
+Verranno visualizzati i record di integrazione per il lancio di pazienti e fornitori. Questi record sono necessari per completare la configurazione degli appuntamenti virtuali a Cerner. Per altre informazioni, vedere la guida all'integrazione telehealth di Cerner-Microsoft Teams.
 
 > [!NOTE]
-> In qualsiasi momento, l'amministratore Microsoft 365 può accedere al portale di configurazione per visualizzare i record di integrazione e modificare le impostazioni di configurazione, se necessario.
+> In qualsiasi momento, l'amministratore di Microsoft 365 può accedere al portale di configurazione per visualizzare i record di integrazione e modificare le impostazioni di configurazione, se necessario.
 
-## <a name="launch-teams-virtual-appointments"></a>Avviare Teams appuntamenti virtuali
+## <a name="launch-teams-virtual-appointments"></a>Avviare appuntamenti virtuali di Teams
 
 Dopo aver completato i passaggi del connettore EHR e i passaggi di configurazione di Cerner, l'organizzazione è pronta a supportare gli appuntamenti video con Teams.
 
 ### <a name="virtual-appointments-prerequisites"></a>Prerequisiti per appuntamenti virtuali
 
-- I sistemi devono soddisfare tutti i [requisiti software e del browser](../../hardware-requirements-for-the-teams-app.md) per Teams.
-- È stata completata la configurazione dell'integrazione tra l'organizzazione Cerner e l'organizzazione Microsoft 365.
+- I sistemi devono soddisfare tutti i [requisiti di software e browser](../../hardware-requirements-for-the-teams-app.md) per Teams.
+- È stata completata la configurazione dell'integrazione tra l'organizzazione Cerner e l'organizzazione di Microsoft 365.
 
 ### <a name="provider-experience"></a>Esperienza del provider
 
-Gli operatori sanitari dell'organizzazione possono partecipare agli appuntamenti usando Teams dal portale di PowerChart. Il fornitore deve accedere alla scheda del paziente, dove è disponibile l'opzione Teams.
+Gli operatori sanitari dell'organizzazione possono partecipare agli appuntamenti usando Teams dal portale di PowerChart. Il provider deve passare alla scheda del paziente in cui è disponibile l'opzione Teams.
 
 Da qui, il provider può visualizzare le informazioni sull'appuntamento, partecipare agli appuntamenti e inviare il collegamento alla riunione. Dopo l'accesso una tantum, il provider viene indirizzato direttamente all'appuntamento virtuale in Teams.
 
 Caratteristiche principali dell'esperienza del provider:
 
 - I provider possono partecipare agli appuntamenti usando i browser supportati o l'app Teams.
-- I provider possono usare tutte le funzionalità supportate per le riunioni Teams, tra cui la condivisione dello schermo, lo sfondo personalizzato e la registrazione.
+- I provider possono usare tutte le funzionalità supportate per le riunioni di Teams, tra cui la condivisione dello schermo, lo sfondo personalizzato e la registrazione.
 - I provider possono vedere gli aggiornamenti in tempo reale dei pazienti che si connettono a un appuntamento per un determinato appuntamento in PowerChart.
 - Le informazioni sul provider non sono visibili ai pazienti durante l'appuntamento.
 
 > [!NOTE]
-> Tutte le informazioni immesse nella chat della riunione necessarie per garantire la continuità o la conservazione delle cartelle cliniche devono essere scaricate, copiate e annoate dal provider del servizio sanitario. La chat non costituisce una cartella clinica legale o un record designato. I messaggi della chat vengono archiviati in base alle impostazioni create dall'amministratore Microsoft Teams.
+> Tutte le informazioni immesse nella chat della riunione necessarie per garantire la continuità o la conservazione delle cartelle cliniche devono essere scaricate, copiate e annoate dal provider del servizio sanitario. La chat non costituisce una cartella clinica legale o un record designato. I messaggi della chat vengono archiviati in base alle impostazioni create dall'amministratore di Microsoft Teams.
 
 ### <a name="patient-experience"></a>Esperienza del paziente
 
@@ -164,20 +164,20 @@ Caratteristiche principali dell'esperienza del paziente
 
 ## <a name="get-insight-into-virtual-appointments-usage"></a>Ottenere informazioni dettagliate sull'utilizzo degli appuntamenti virtuali
 
-Il [report Sull'utilizzo delle visite virtuali](../../teams-analytics-and-reports/virtual-visits-usage-report.md) nell'interfaccia di amministrazione di Microsoft Teams offre agli amministratori una panoramica delle attività Teams appuntamenti virtuali nell'organizzazione. Il report mostra analisi dettagliate per gli appuntamenti virtuali, tra cui Teams riunioni integrate con EHR eseguite dal sistema EHR.
+Il [report Sull'utilizzo delle visite virtuali](../../teams-analytics-and-reports/virtual-visits-usage-report.md) nell'interfaccia di amministrazione di Microsoft Teams offre agli amministratori una panoramica dell'attività relativa agli appuntamenti virtuali di Teams nell'organizzazione. Il report mostra analisi dettagliate per gli appuntamenti virtuali, tra cui riunioni integrate EHR di Teams condotte dal sistema EHR.
 
 È possibile visualizzare metriche chiave come il tempo di attesa della sala di attesa e la durata dell'appuntamento. Usare queste informazioni per ottenere informazioni approfondite sulle tendenze di utilizzo e ottimizzare gli appuntamenti virtuali per ottenere risultati aziendali migliori.
 
 ## <a name="privacy-and-location-of-data"></a>Privacy e posizione dei dati
 
-Teams l'integrazione nei sistemi EHR ottimizza la quantità di dati usati e archiviati durante l'integrazione e i flussi di appuntamenti virtuali. La soluzione segue i principi generali della privacy e della gestione dei dati di Teams e le linee guida descritte nell’informativa sulla privacy di Teams.
+L'integrazione di Teams nei sistemi EHR ottimizza la quantità di dati usati e archiviati durante l'integrazione e i flussi di appuntamenti virtuali. La soluzione segue i principi generali della privacy e della gestione dei dati di Teams e le linee guida descritte nell’informativa sulla privacy di Teams.
 
-Il connettore Teams EHR non archivia né trasferisce dati personali identificabili o record sanitari di pazienti o operatori sanitari dal sistema EHR. Gli unici dati archiviati dal connettore EHR sono l'ID univoco dell'utente EHR, usato durante Teams configurazione della riunione.
+Il connettore Teams EHR non archivia o trasferisce dati personali identificabili o record sanitari di pazienti o operatori sanitari dal sistema EHR. Gli unici dati archiviati dal connettore EHR sono l'ID univoco dell'utente EHR, usato durante la configurazione della riunione di Teams.
 
 L'ID univoco dell'utente CCE viene archiviato in una delle tre aree geografiche descritte in [Dove sono archiviati i dati dei clienti di Microsoft 365](/microsoft-365/enterprise/o365-data-locations). Tutte le chat, le registrazioni e altri dati condivisi in Teams dai partecipanti alla riunione vengono archiviati in base ai criteri di archiviazione esistenti. Per altre informazioni sulla posizione dei dati in Teams, vedere [Posizione dei dati in Teams](../../location-of-data-in-teams.md).
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [report sull'utilizzo delle visite virtuali Teams](../../teams-analytics-and-reports/virtual-visits-usage-report.md)
-- [report di amministrazione del connettore Teams EHR](ehr-admin-reports.md)
-- [Attività iniziali con Teams per le organizzazioni sanitarie](teams-in-hc.md)
+- [Report sull'utilizzo delle visite virtuali di Teams](../../teams-analytics-and-reports/virtual-visits-usage-report.md)
+- [Report di amministrazione del connettore EHR di Teams](ehr-admin-reports.md)
+- [Introduzione a Teams per le organizzazioni sanitarie](teams-in-hc.md)

@@ -17,23 +17,23 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Informazioni su come usare le impostazioni dei criteri riunione per controllare la scadenza delle riunioni in Microsoft Teams.
-ms.openlocfilehash: 08cdcd9b7d7f18dafa468bd33ca065dafb5768a6
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 08ca5a75b8dd470b006d44e562eb795f814faba6
+ms.sourcegitcommit: bdb919a6f53556f76dd4a71759412023e6e18fbb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675358"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66529688"
 ---
 # <a name="meeting-policies-and-meeting-expiration-in-microsoft-teams"></a>Criteri per le riunioni e scadenza delle riunioni in Microsoft Teams
 
-[I criteri per le riunioni](meeting-policies-overview.md) in Microsoft Teams vengono usati per controllare se gli utenti dell'organizzazione possono avviare e pianificare le riunioni e le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. I criteri delle riunioni vengono gestiti nell'interfaccia di amministrazione di Microsoft Teams o tramite i cmdlet [PowerShell Get](/powershell/module/skype/get-csteamsmeetingpolicy), [New](/powershell/module/skype/new-csteamsmeetingpolicy), [Set](/powershell/module/skype/set-csteamsmeetingpolicy), [Remove](/powershell/module/skype/remove-csteamsmeetingpolicy), [Grant](/powershell/module/skype/grant-csteamsmeetingpolicy) -CsTeamsMeetingPolicy.
+[I criteri per](meeting-policies-overview.md) le riunioni in Microsoft Teams vengono usati per controllare se gli utenti dell'organizzazione possono avviare e pianificare le riunioni e le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. È possibile gestire i criteri delle riunioni nell'interfaccia di amministrazione di Microsoft Teams o usando i cmdlet [PowerShell Get](/powershell/module/skype/get-csteamsmeetingpolicy), [New](/powershell/module/skype/new-csteamsmeetingpolicy), [Set](/powershell/module/skype/set-csteamsmeetingpolicy), [Remove](/powershell/module/skype/remove-csteamsmeetingpolicy), [Grant](/powershell/module/skype/grant-csteamsmeetingpolicy) -CsTeamsMeetingPolicy.
 
-Le impostazioni dei criteri riunione che controllano se gli utenti possono avviare e pianificare le riunioni e anche la scadenza delle riunioni pianificate dagli utenti. Quando scade il collegamento per l'accesso alla riunione e l'ID conferenza per una riunione, nessuno può partecipare alla riunione. Le impostazioni dei criteri di riunione seguenti determinano se gli utenti possono avviare e pianificare riunioni in Teams. In questo articolo vengono illustrate le impostazioni delle riunioni.
+Le impostazioni dei criteri riunione che controllano se gli utenti possono avviare e pianificare le riunioni e anche la scadenza delle riunioni pianificate dagli utenti. Quando scade il collegamento per l'accesso alla riunione e l'ID conferenza per una riunione, nessuno può partecipare alla riunione. Le impostazioni dei criteri di riunione seguenti determinano se gli utenti possono avviare e pianificare le riunioni in Teams. In questo articolo vengono illustrate le impostazioni delle riunioni.
 
 - [Riunione immediata nei canali](meeting-policies-in-teams-general.md#meet-now-in-channels): controlla se un utente può avviare una riunione estemporanea in un canale.
 - [Pianificazione delle riunioni del canale](meeting-policies-in-teams-general.md#channel-meeting-scheduling): controlla se un utente può pianificare una riunione in un canale.
 - [Pianificazione delle riunioni private](meeting-policies-in-teams-general.md#private-meeting-scheduling): controlla se un utente può pianificare una riunione privata in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
-- [Outlook componente aggiuntivo](meeting-policies-in-teams-general.md#outlook-add-in): controlla se un utente può pianificare una riunione privata da Outlook. Una riunione è privata quando non viene pubblicata in un canale in un team.
+- [Componente aggiuntivo di Outlook](meeting-policies-in-teams-general.md#outlook-add-in): controlla se un utente può pianificare una riunione privata da Outlook. Una riunione è privata quando non viene pubblicata in un canale in un team.
 - [Riunione immediata nelle riunioni private](meeting-policies-in-teams-general.md#meet-now-in-private-meetings): controlla se un utente può avviare una riunione privata estemporanea.
 
 Per impostazione predefinita, queste impostazioni sono attivate. Quando una di queste impostazioni è disattivata, qualsiasi utente a cui è assegnato il criterio non può avviare o pianificare nuove riunioni di quel tipo. Allo stesso tempo, i collegamenti di partecipazione alla riunione e gli ID conferenza di tutte le riunioni esistenti di quel tipo che l'utente ha iniziato o pianificato in precedenza scadono.
@@ -63,7 +63,7 @@ Ecco un riepilogo del funzionamento della scadenza delle riunioni per ognuna del
 |Se vuoi...&nbsp;&nbsp; |Esegui questa operazione&nbsp;&nbsp;&nbsp;&nbsp;  |Comportamento di partecipazione a una riunione&nbsp;&nbsp;&nbsp;&nbsp;  |
 |---------------------------|---------------------|---------|
 |Scadenza delle riunioni private Riunione immediata avviata da un utente&nbsp;&nbsp;|Disattiva **Riunione immediata nelle riunioni private**.&nbsp;&nbsp;|Nessuno può partecipare **alle riunioni riunione** immediata private avviate dall'utente.|
-|Scadenza delle riunioni private pianificate da un utente&nbsp;&nbsp;|Disattivare **la pianificazione delle riunioni private** _e_ **Outlook componente aggiuntivo**. &nbsp;&nbsp;|Nessuno può partecipare a riunioni private pianificate dall'utente. In questo modo si impedisce alle persone di partecipare alle riunioni seguenti:<ul><li>Riunioni private che si sono verificate in passato.</li><li>Riunioni private pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni private ricorrenti.</li></ul><br>Sia **la pianificazione delle riunioni private** che **Outlook componente aggiuntivo** devono essere disattivati per scadere le riunioni private pianificate da un utente. Se un'impostazione è disattivata e l'altra è attivata, i collegamenti di partecipazione alle riunioni e gli ID conferenza delle riunioni esistenti rimangono attivi e non saranno scaduti.|
+|Scadenza delle riunioni private pianificate da un utente&nbsp;&nbsp;|Disattivare **la pianificazione delle riunioni private** _e_ il **componente aggiuntivo Outlook**. &nbsp;&nbsp;|Nessuno può partecipare a riunioni private pianificate dall'utente. In questo modo si impedisce alle persone di partecipare alle riunioni seguenti:<ul><li>Riunioni private che si sono verificate in passato.</li><li>Riunioni private pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni private ricorrenti.</li></ul><br>Sia **la pianificazione delle riunioni private** che il **componente aggiuntivo di Outlook** devono essere disattivati per scadere le riunioni private pianificate da un utente. Se un'impostazione è disattivata e l'altra è attivata, i collegamenti di partecipazione alle riunioni e gli ID conferenza delle riunioni esistenti rimangono attivi e non saranno scaduti.|
 |Canale Scadenza **Riunioni immediata** avviate da un utente&nbsp;&nbsp;|Disattivare **Riunione immediata nei canali** _e_ disattivare **la pianificazione delle riunioni del canale**.&nbsp;&nbsp;|Nessuno può partecipare alle riunioni **Riunione immediata** del canale avviate dall'utente.|
 |Scadenza delle riunioni del canale pianificate da un utente&nbsp;&nbsp;|Disattivare **la pianificazione delle riunioni del canale**.&nbsp;&nbsp;|Nessuno può partecipare alle riunioni del canale pianificate dall'utente. In questo modo si impedisce alle persone di partecipare alle riunioni seguenti:<ul><li>Riunioni di canale che si sono verificati in passato.</li><li>Riunioni di canale pianificate per il futuro e che non si sono ancora verificate.</li><li>Istanze future di riunioni del canale ricorrente.</li></ul>|
 
@@ -77,14 +77,14 @@ Se si vuole consentire alle persone di accedere alle riunioni pianificate o avvi
 
 ## <a name="changes-to-meeting-expiration"></a>Modifiche alla scadenza della riunione
 
-Tutte le registrazioni delle riunioni Teams appena create avranno una scadenza predefinita di 120 giorni. Questa opzione è attivata per impostazione predefinita per tutti i tenant. Ciò significa che per impostazione predefinita, tutte le FUNZIONALITÀ create *dopo che questa funzionalità è stata attivata* verranno eliminate 120 giorni dopo la data di creazione. Gli amministratori possono anche impostare le riunioni in modo che **non scada mai automaticamente**. Il sistema OneDrive e SharePoint monitorerà la data di scadenza impostata in tutti i TMR e sposterà automaticamente ITR nel Cestino alla data di scadenza.
+Tutte le registrazioni delle riunioni di Teams appena create avranno una scadenza predefinita di 120 giorni. Questa opzione è attivata per impostazione predefinita per tutti i tenant. Ciò significa che per impostazione predefinita, tutte le FUNZIONALITÀ create *dopo che questa funzionalità è stata attivata* verranno eliminate 120 giorni dopo la data di creazione. Gli amministratori possono anche impostare le riunioni in modo che **non scada mai automaticamente**. Il sistema OneDrive e SharePoint monitorerà la data di scadenza impostata in tutti i TMR e sposterà automaticamente ITR nel Cestino alla data di scadenza.
 
 > [!NOTE]
-> Una copia della trascrizione della riunione viene salvata in OneDrive SharePoint e una seconda copia in Exchange in un archivio temporaneo. La copia OSDP scade alla scadenza automatica di TMR.
+> Una copia della trascrizione della riunione viene salvata in OneDrive SharePoint e una seconda copia viene salvata in Exchange in un archivio temporaneo. La copia OSDP scade alla scadenza automatica di TMR.
 
 La scadenza automatica delle riunioni è un meccanismo di pulizia leggero che consente di ridurre il disordine di archiviazione creato da regole di gestione dello spazio di archiviazione meno recenti. In media, in tutti i clienti, il 96% dei TMR non viene guardato dopo 60 giorni e il 99% non viene guardato dopo 110 giorni. Siamo convinti che quasi tutti i clienti beneficeranno della riduzione del carico di archiviazione nel proprio tenant rimuovendo le registrazioni che probabilmente non verranno controllate di nuovo dopo 60 giorni. Il nostro obiettivo è fornire un'esperienza il più pulita possibile per tutti i clienti per impostazione predefinita.
 
-Usare la scadenza delle riunioni per limitare i OneDrive o SharePoint per l'utilizzo di archiviazione cloud in base ai record Teams riunione. Una tipica registrazione di una riunione richiede circa 400 MB all'ora di registrazione.
+Usare la scadenza delle riunioni per limitare l'uso di OneDrive o SharePoint per l'archiviazione cloud basata sui record delle riunioni di Teams. Una tipica registrazione di una riunione richiede circa 400 MB all'ora di registrazione.
 
 > [!NOTE]
 > La data di scadenza predefinita massima per gli utenti A1 è di 30 giorni.
@@ -120,14 +120,14 @@ Set-CsTeamsMeetingPolicy -Identity Global -NewMeetingRecordingExpirationDays 50
 
 No, non è consigliabile affidarsi a questa opzione per la protezione legale in quanto gli utenti finali possono modificare la data di scadenza di tutte le registrazioni che controllano.
 
-#### <a name="will-a-retention-andor-deletion-policy-ive-set-in-the-security--compliance-center-override-the-teams-meeting-recording-expiration-setting"></a>I criteri di conservazione e/o di eliminazione impostati nel Centro sicurezza & conformità sostituiscono l'impostazione di scadenza della registrazione della riunione Teams?
+#### <a name="will-a-retention-andor-deletion-policy-ive-set-in-the-security--compliance-center-override-the-teams-meeting-recording-expiration-setting"></a>I criteri di conservazione e/o di eliminazione impostati nel Centro sicurezza & conformità sostituiscono l'impostazione di scadenza della registrazione delle riunioni di Teams?
 
 Sì, tutti i criteri impostati nel Centro conformità avranno la precedenza.
 
 Ad esempio:
 
-- Se è stato impostato un criterio che indica che tutti i file in un sito devono essere conservati per 100 giorni e l'impostazione di scadenza per una Teams la registrazione della riunione è di 30 giorni, la registrazione verrà mantenuta per 100 giorni.
-- Se sono presenti criteri di eliminazione che informano che tutte le registrazioni di Teams riunione verranno eliminate dopo cinque giorni e si ha un'impostazione di scadenza per una Teams registrazione di una riunione di 30 giorni, la registrazione verrà eliminata dopo cinque giorni.
+- Se hai un criterio che indica che tutti i file in un sito devono essere conservati per 100 giorni e l'impostazione di scadenza per la registrazione di una riunione di Teams è di 30 giorni, la registrazione verrà conservata per tutti i 100 giorni.
+- Se hai un criterio di eliminazione che indica che tutte le registrazioni delle riunioni di Teams verranno eliminate dopo cinque giorni e hai un'impostazione di scadenza per la registrazione di una riunione di Teams di 30 giorni, la registrazione verrà eliminata dopo cinque giorni.
 
 ### <a name="will-this-feature-enforce-file-retention"></a>Questa funzionalità implicherà la conservazione dei file?
 
@@ -142,15 +142,15 @@ No, i file non verranno conservati a causa di questa funzionalità o delle relat
 
 È consigliabile usare i criteri di conservazione e/o eliminazione della sicurezza e/o della conformità. Questa offerta è destinata a risolvere problemi legali amministrativi complessi e basati sul contratto di servizio.
 
-La funzione di scadenza automatica è esclusivamente pensata come un leggero meccanismo di pulizia per ridurre il disordine di archiviazione creato dalle vecchie registrazioni delle riunioni Teams.
+La funzionalità di scadenza automatica è esclusivamente pensata come un leggero meccanismo di pulizia per ridurre il disordine di archiviazione creato dalle vecchie registrazioni delle riunioni di Teams.
 
 ### <a name="will-future-tmrs-migrated-from-classic-stream-after-this-feature-is-released-have-auto-expiration-applied-to-them-too"></a>Le future richieste di registrazione migrate da Stream (versione classica) dopo il rilascio di questa funzionalità avranno anche la scadenza automatica?
 
 No, le registrazioni migrate non avranno una scadenza. Al contrario, si consiglia agli amministratori di eseguire la migrazione solo delle registrazioni che vogliono conservare. Verranno forniti maggiori dettagli nella documentazione sulla migrazione.
 
-### <a name="how-is-this-feature-different-from-the-expiration-message-i-see-when-a-tmr-upload-to-onedrive-and-sharepoint-fails"></a>Qual è la differenza tra questa funzionalità e il messaggio di scadenza visualizzato quando un TMR carica in OneDrive e SharePoint non riesce?
+### <a name="how-is-this-feature-different-from-the-expiration-message-i-see-when-a-tmr-upload-to-onedrive-and-sharepoint-fails"></a>Qual è la differenza tra questa funzionalità e il messaggio di scadenza visualizzato quando un caricamento TMR in OneDrive e SharePoint non riesce?
 
-Quando una registrazione non viene caricata in OneDrive o SharePoint, l'applicazione Teams visualizza un messaggio nella chat che gli utenti hanno fino a 21 giorni per scaricare il TMR prima che venga eliminato definitivamente dal server Teams. Questa esperienza di scadenza esistente a causa di caricamenti TMR non riusciti non è correlata alla OneDrive e SharePoint funzionalità di scadenza automatica discussa nel documento della Guida.
+Quando una registrazione non viene caricata in OneDrive o SharePoint, l'applicazione Teams visualizza un messaggio nella chat che gli utenti hanno fino a 21 giorni per scaricare il TMR prima che venga eliminato definitivamente dal server di Teams. Questa esperienza di scadenza esistente a causa di caricamenti TMR non riusciti non è correlata alla funzionalità di scadenza automatica di OneDrive e SharePoint illustrata nel documento della Guida.
 
 ### <a name="how-do-i-know-the-distribution-of-tmr-playbacks-so-i-know-what-the-optimal-auto-expiration-default-should-be-for-my-tenant"></a>Ricerca per categorie conosce la distribuzione delle riproduzioni TMR, quindi so quale dovrebbe essere l'impostazione predefinita ottimale per la scadenza automatica per il tenant?
 
@@ -167,7 +167,7 @@ Verranno visualizzate le statistiche dei file che mostrano:
 
 ### <a name="when-will-the-file-be-deleted"></a>Quando verrà eliminato il file?
 
-Il file verrà eliminato entro cinque giorni dalla data di scadenza, anche se questa non è una garanzia rigorosa. Il proprietario del file riceverà una notifica tramite posta elettronica alla scadenza della registrazione e verrà indirizzato al Cestino per recuperare la registrazione.
+La registrazione viene in genere eliminata entro un giorno dalla data di scadenza, ma in rari casi può richiedere fino a cinque giorni. Il proprietario del file riceverà una notifica tramite posta elettronica alla scadenza della registrazione e verrà indirizzato al Cestino per recuperare la registrazione.
 
 > [!NOTE]
 > Alla data di scadenza, la registrazione viene spostata nel Cestino e il campo della data di scadenza viene cancellato. Se si recupera la registrazione dal Cestino, non verrà eliminata di nuovo da questa funzionalità perché la data di scadenza è stata cancellata.
