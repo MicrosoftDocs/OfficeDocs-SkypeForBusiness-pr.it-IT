@@ -14,12 +14,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ad9b66b249bc907071b00e1c2fd9f7b1c2148def
-ms.sourcegitcommit: bf0071417188b33fc23e2a420187da5024d4bd40
+ms.openlocfilehash: 378467e9e540754023c4d69a53e50e6b1b403a1b
+ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64961299"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66241015"
 ---
 # <a name="get-started-with-teams-for-frontline-workers"></a>Introduzione a Teams per gli operatori sul campo
 
@@ -31,7 +31,7 @@ Contenuto della sezione:
 
 - [Guida introduttiva - Teams per Frontline Workers](flw-quickstart.yml)
 - [Usare l'onboarding guidato di Frontline Worker per rendere operativa la forza lavoro in prima linea](flw-onboarding-wizard.md)
-- [Come eseguire il provisioning di Microsoft Teams su vasta scala per gli operatori sul campo](flw-scripted-deployment.md)
+- [Distribuire i team su larga scala per i lavoratori in prima linea](deploy-teams-at-scale.md)
 - [Pacchetti di criteri per gli operatori sul campo e i manager](manage-policy-packages.md)
 - [Personalizzare le app Teams per i dipendenti in prima linea](pin-teams-apps-based-on-license.md)
 - [Accedere a Teams](sign-in-teams.md)

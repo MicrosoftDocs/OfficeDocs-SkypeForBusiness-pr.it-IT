@@ -19,12 +19,13 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7123d45819f6e956ecf562fd321e7762b50e5ae6
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 0c51c0e2225d73d140f424535f3dc1bd7a302afa
+ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65674658"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66240415"
 ---
 # <a name="how-to-provision-teams-at-scale-for-frontline-workers"></a>Come eseguire il provisioning di Microsoft Teams su vasta scala per gli operatori sul campo
 
@@ -105,7 +106,7 @@ Ad esempio: .\SetConfig.ps1 -tenantName contoso.onmicrosoft.com -rootPath "C:\da
 > [!IMPORTANT]
 > La modalità di gestione delle credenziali in questi script potrebbe non essere appropriata, pertanto può essere facilmente modificata in base alle esigenze dell'utente. Seguire sempre le norme e le procedure aziendali per la protezione degli account di servizio e delle identità gestite.
 
-Gli script usano le credenziali archiviate come file XML nel $ENV:LOCALAPPDATA\keys, ossia la cartella AppData\Local. La funzione helper **Set-Creds** nel modulo **BulkAddFunctions.psm1** deve essere chiamata per impostare le credenziali usate per l'esecuzione degli script. In questo modo si elimina la necessità di eseguire l'autenticazione in tutti gli endpoint di servizio, mantenendo le credenziali in un archivio locale. Dall'interno di ognuno degli script, le credenziali appropriate vengono lette con la funzione helper **GetCreds** e queste credenziali vengono usate per connettersi ai vari servizi.
+Gli script usano le credenziali archiviate come file XML nel `$ENV:LOCALAPPDATA\keys` $ENV:LOCALAPPDATA\keys, ossia la cartella AppData\Local. La funzione helper **Set-Creds** nel modulo **BulkAddFunctions.psm1** deve essere chiamata per impostare le credenziali usate per l'esecuzione degli script. In questo modo si elimina la necessità di eseguire l'autenticazione in tutti gli endpoint di servizio, mantenendo le credenziali in un archivio locale. Dall'interno di ognuno degli script, le credenziali appropriate vengono lette con la funzione helper **GetCreds** e queste credenziali vengono usate per connettersi ai vari servizi.
 
 Quando si chiama la funzione **Set-Creds**, viene chiesto di specificare un nome per il file XML che verrà scritto nel $ENV:LOCALAPPDATA\keys. Sono disponibili credenziali diverse per i vari servizi. Ad esempio, se si hanno credenziali diverse per MicrosoftTeams, AzureAD e MSonline, è possibile eseguire **SetCred** più volte, salvando ogni file delle credenziali con il relativo nome significativo.
 
