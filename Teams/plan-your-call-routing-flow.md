@@ -19,13 +19,13 @@ appliesto:
 ms.localizationpriority: medium
 ms.custom:
 - Phone System
-description: Scopri come pianificare il flusso del routing delle chiamate per gli operatori automatici e le code di chiamata in Microsoft Teams.
-ms.openlocfilehash: 3be72f17f876eb694d3b46293f039ccc07d65fbb
-ms.sourcegitcommit: e38dc23e3968f55625e90c8883884045f80d22ee
+description: Informazioni su come pianificare il flusso del routing delle chiamate per gli operatori automatici e le code di chiamata in Microsoft Teams.
+ms.openlocfilehash: 7788bbe07b33a133af04c8a7fe8333ba66f7f2df
+ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66124583"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66240985"
 ---
 # <a name="plan-your-call-routing-flow"></a>Pianificare il flusso di instradamento delle chiamate
 
@@ -47,8 +47,9 @@ Quando le chiamate vengono reindirizzate da un operatore automatico o da una cod
 
 - **Persona dell'organizzazione** : una persona dell'organizzazione che è in grado di ricevere chiamate vocali. Può trattarsi di un utente online o di un utente ospitato in locale usando Skype for Business Server.
 - **App vocale** : un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato alla destinazione.
-- **Numero di telefono esterno** : qualsiasi numero di telefono. (Vedere [i dettagli tecnici sul trasferimento esterno](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details)).
-- **Segreteria telefonica**: cassetta postale vocale associata a un gruppo di Microsoft 365 specificato. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lascia un messaggio dopo il tono". richiesta di sistema.
+- **Numero di telefono esterno** : qualsiasi numero di telefono. Vedere [i dettagli tecnici sul trasferimento esterno](create-a-phone-system-auto-attendant.md?tabs=additional-resources).
+
+- **Segreteria telefonica** : la cassetta postale vocale associata a un gruppo di Microsoft 365 specificata. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lascia un messaggio dopo il tono". richiesta di sistema.
 - **Operatore** (solo operatore automatico) - operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. Un operatore può essere una qualsiasi delle altre destinazioni in questo elenco.
 
 Gli operatori automatici offrono opzioni di instradamento delle chiamate separate per le chiamate ricevute al di fuori dell'orario di ufficio e nei giorni festivi.

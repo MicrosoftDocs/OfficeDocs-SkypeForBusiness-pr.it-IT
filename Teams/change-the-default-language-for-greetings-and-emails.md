@@ -1,7 +1,7 @@
 ---
 title: Modificare la lingua predefinita per i messaggi di saluto e le e-mail
-author: dstrome
-ms.author: dstrome
+author: crowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: jenstr
 ms.topic: article
@@ -22,13 +22,13 @@ f1.keywords:
 ms.custom:
 - Phone System
 - seo-marvel-mar2020
-description: Informazioni su come configurare Microsoft Teams e Skype for Business per l'uso di un'altra lingua per il messaggio di saluto predefinito della segreteria telefonica dell'organizzazione.
-ms.openlocfilehash: 5e486e94470fd6303d132fdaa9c23b0ca6f65b98
-ms.sourcegitcommit: 4435ac0efcb95e4e5e1f21289e46761e79482ab5
+description: Informazioni su come configurare Microsoft Teams e Skype for Business per usare un'altra lingua per il messaggio di saluto predefinito della segreteria telefonica dell'organizzazione.
+ms.openlocfilehash: 30e122c0d41c93326cdfa39de4c0ceb3a6d55cd2
+ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65624090"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66241125"
 ---
 # <a name="change-the-default-language-for-greetings-and-emails"></a>Modificare la lingua predefinita per i messaggi di saluto e le e-mail
 
@@ -59,17 +59,20 @@ Se abilitata dai criteri della segreteria telefonica online per l'utente chiamat
 Cloud Voicemail genererà il messaggio della segreteria telefonica usando un modello di lingua basato, in ordine di priorità, sulla lingua preferita specificata per l'utente o sulla lingua del tenant predefinita.
 
 ## <a name="setting-the-preferred-language-for-a-user"></a>Impostazione della lingua preferita per un utente
-È possibile impostare la lingua preferita per un utente che usa PowerShell in Azure Active Directory o nel Active Directory locale. Per altre informazioni, vedere [Come impostare le impostazioni di lingua e area geografica per Microsoft 365 o Office 365](/office365/troubleshoot/access-management/set-language-and-region).
+È possibile impostare la lingua preferita per un utente che usa PowerShell in Azure Active Directory o nel Active Directory locale. Per altre informazioni, vedere [Come impostare le impostazioni della lingua e dell'area geografica per Microsoft 365 o Office 365](/office365/troubleshoot/access-management/set-language-and-region).
 
-Gli utenti possono modificare la propria lingua preferita tramite le impostazioni dopo l'accesso. Per altre informazioni, vedere [Cambiare la lingua visualizzata e il fuso orario in Microsoft 365 for Business](https://support.office.com/article/change-your-display-language-and-time-zone-in-microsoft-365-for-business-6f238bff-5252-441e-b32b-655d5d85d15b?ui=en-US&rs=en-US&ad=US)
+Gli utenti possono modificare la propria lingua preferita tramite le impostazioni dopo l'accesso. Per altre informazioni, vedere [Cambiare la lingua visualizzata e il fuso orario in Microsoft 365 per le aziende](https://support.office.com/article/change-your-display-language-and-time-zone-in-microsoft-365-for-business-6f238bff-5252-441e-b32b-655d5d85d15b?ui=en-US&rs=en-US&ad=US)
 
 ## <a name="change-the-system-language-for-everyone-in-your-organization"></a>Cambiare la lingua di sistema per tutti i membri dell'organizzazione.
 
 1. Accedere con [l'account di amministratore globale all'indirizzo](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home).
 
-2. Nella interfaccia di amministrazione di Microsoft 365 scegliere **Impostazioni** >  **ImpostazioniOrgImpostazioniOrganizzazione** >  **profilo**.
+2. Nella interfaccia di amministrazione di Microsoft 365 scegliere **Impostazioni** > **impostazioni** >  organizzazione **Profilo organizzazione**.
+
 3. Scegliere **Informazioni sull'organizzazione**.
+
 4. Scegli una lingua dall'elenco **Lingua preferita** per tutti i membri dell'organizzazione.
+
 5. Scegli **Salva**.
 
 **Le lingue disponibili sono determinate dalla località dell'organizzazione**. Ad esempio, se la tua organizzazione si trova negli Stati Uniti, puoi impostare inglese o spagnolo come lingua predefinita. Se la tua organizzazione si trova in Canada, puoi scegliere fra inglese e francese.
@@ -79,13 +82,13 @@ Per un elenco delle lingue supportate in Cloud Voicemail per Microsoft Teams e S
   
 
 ## <a name="custom-greeting-recorded-by-a-user"></a>Messaggio di saluto personalizzato registrato da un utente
-Gli utenti possono registrare il proprio messaggio di saluto personalizzato e fuori sede. Vedi [Teams impostazioni del client desktop](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f) e [Controlla Skype for Business la segreteria telefonica e le opzioni](https://support.office.com/article/2deea7f8-831f-4e85-a0d4-b34da55945a8).
+Gli utenti possono registrare il proprio messaggio di saluto personalizzato e fuori sede. Vedere [Impostazioni del client desktop di Teams](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f) e [Controllare Skype for Business la segreteria telefonica e le opzioni](https://support.office.com/article/2deea7f8-831f-4e85-a0d4-b34da55945a8).
 
 ## <a name="custom-text-to-speech-greeting-specified-for-a-user"></a>Messaggio di saluto personalizzato per la sintesi vocale specificato per un utente
-L'amministratore del tenant può specificare il messaggio di saluto personalizzato per la sintesi vocale di testo e la lingua del prompt per un utente utilizzando il cmdlet [Set-CsOnlineVoicemailUserSettings](/powershell/module/skype/set-csonlinevoicemailusersettings) .
+L'amministratore del tenant può specificare il messaggio di saluto di sintesi vocale personalizzato e la lingua di richiesta per un utente utilizzando la scheda Segreteria telefonica nella pagina dei dettagli utente nell'interfaccia di amministrazione di Teams o usando il cmdlet [Set-CsOnlineVoicemailUserSettings](/powershell/module/skype/set-csonlinevoicemailusersettings) .
 
 ## <a name="custom-text-to-speech-greeting-specified-by-a-user"></a>Messaggio di saluto personalizzato per la sintesi vocale specificato da un utente
-Gli utenti possono specificare messaggi di saluto personalizzati per la sintesi vocale e la lingua usata per i saluti. Per Microsoft Teams - Gli utenti possono modificare il messaggio di saluto della segreteria telefonica dalle [impostazioni del client desktop Teams](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f). Per Skype for Business - [https://mysettings.lync.com/voicemail](https://mysettings.lync.com/voicemail) e scegliere una nuova lingua in **Lingua prompt**. 
+Gli utenti possono specificare messaggi di saluto personalizzati per la sintesi vocale e la lingua usata per i saluti. Per Microsoft Teams - Gli utenti possono modificare il messaggio di saluto della segreteria telefonica dalle [impostazioni del client desktop di Teams](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f). Per Skype for Business - [https://mysettings.lync.com/voicemail](https://mysettings.lync.com/voicemail) e scegliere una nuova lingua in **Lingua prompt**. 
 
 
 ## <a name="related-articles"></a>Articoli correlati

@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per partecipanti e guest.
-ms.openlocfilehash: f63056740ab42c3dde0e05e8b9321173ea20091f
-ms.sourcegitcommit: c73f27ee7a208ae73784edf5b23adc699cf69327
+ms.openlocfilehash: 5770c4d998a28edf2b8fc8131650b98420e826f9
+ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66130769"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66241135"
 ---
 # <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione - Partecipanti e ospiti
 
@@ -70,15 +70,15 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se le per
 |**Utenti dell’organizzazione e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, partecipano alla riunione direttamente senza attendere nella sala d'attesa. Gli utenti di organizzazioni attendibili e gli utenti anonimi attendono nella sala di attesa. Questa è l'impostazione predefinita.    |
 |**Utenti dell'organizzazione, organizzazioni attendibili e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e quelli di organizzazioni attendibili, partecipano alla riunione direttamente senza attendere nella sala di attesa.  Gli utenti anonimi attendono nella sala di attesa.   |
 |**Utenti dell’organizzazione**    |Gli utenti autenticati all'interno dell'organizzazione accedono alla riunione direttamente senza attendere nella sala d'attesa.  Gli utenti di organizzazioni attendibili, guest e utenti anonimi aspettano nella sala di attesa.          |
-|**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa. Nella pagina Teams opzioni riunione client viene visualizzato "Solo io".          |
-|**Solo utenti invitati**    |Solo gli utenti invitati e gli organizzatori della riunione possono partecipare alla riunione direttamente senza attendere nella sala d'attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa. Nella pagina Teams opzioni riunione client viene visualizzato "Persone invitate". Gli utenti aggiunti come parte di un gruppo di distribuzione dovranno passare attraverso la sala di attesa.      |
+|**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa. Nella pagina delle opzioni delle riunioni client di Teams, viene visualizzato come "Solo io".          |
+|**Solo utenti invitati**    |Solo gli utenti invitati e gli organizzatori della riunione possono partecipare alla riunione direttamente senza attendere nella sala d'attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa. Nella pagina delle opzioni delle riunioni client di Teams, viene visualizzato come "Persone invitate". Gli utenti aggiunti come parte di un gruppo di distribuzione dovranno passare attraverso la sala di attesa.      |
 
  > [!NOTE]
-> Le organizzazioni attendibili sono domini con cui si consentono comunicazioni federate in Teams. Se si abilita **Consenti tutti i domini esterni** per l'accesso esterno nell'interfaccia di amministrazione di Teams, qualsiasi utente autenticato all'interno di qualsiasi organizzazione Teams verrà considerato attendibile. Se si sceglie di specificare domini esterni consentiti e bloccarne tutti gli altri, i domini consentiti diventano organizzazioni attendibili. Qualsiasi dominio bloccato è considerato non un'organizzazione attendibile.
+> Le organizzazioni attendibili sono domini con cui si consentono comunicazioni federate in Teams. Se si abilita **Consenti tutti i domini esterni** per l'accesso esterno nell'interfaccia di amministrazione di Teams, qualsiasi utente autenticato all'interno di qualsiasi organizzazione teams verrà considerato attendibile. Se si sceglie di specificare domini esterni consentiti e bloccarne tutti gli altri, i domini consentiti diventano organizzazioni attendibili. Qualsiasi dominio bloccato è considerato non un'organizzazione attendibile.
 
 ## <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
 
-Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Per impostazione predefinita, questa impostazione è disattivata. Se questa impostazione è disattivata, gli utenti con accesso esterno attenderanno nella sala di attesa finché un utente dell'organizzazione non accede alla riunione con un client di Teams e consente loro di accedere. Quando questa impostazione è attivata, gli utenti connessi con accesso radiale parteciperanno automaticamente alla riunione quando un utente dell'organizzazione partecipa alla riunione con un client Teams.
+Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Per impostazione predefinita, questa impostazione è disattivata. Se questa impostazione è disattivata, gli utenti con accesso esterno attenderanno nella sala di attesa finché un utente dell'organizzazione non accede alla riunione con un client di Teams e consente loro di accedere. Quando questa impostazione è attivata, gli utenti connessi con accesso automatico parteciperanno alla riunione quando un utente dell'organizzazione partecipa alla riunione con un client di Teams.
 
 > [!NOTE]
 > Se un utente con accesso esterno partecipa a una riunione prima che un utente dell'organizzazione acceda alla riunione, verrà inserito nella sala di attesa finché un utente dell'organizzazione non accede alla riunione usando un client di Teams e gli consente di accedere. Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
@@ -110,9 +110,20 @@ Questa impostazione non si applica alle riunioni del canale. Dopo aver applicato
 
 <a name="bkparticipantsandguests"> </a>
 
+## <a name="qa-in-meetings"></a>Q&A nelle riunioni
+
+Questo è un criterio per organizzatore. Questa impostazione controlla se gli organizzatori possono aggiungere l'esperienza Q&A alle riunioni. Per impostazione predefinita, questa impostazione è disattivata. Altre informazioni su Q&A [sono disponibili qui](/manage-qna-for-meetings). 
+
+Per il parametro QnAEngagementMode controlla questo criterio in PowerShell e Q&A può essere modificato anche all'interno del portale di amministrazione.
+
+|Valore dell'impostazione |Comportamento  |
+|---------|---------|
+|**Abilitato**     | Gli organizzatori possono aggiungere domande&A durante la creazione di riunioni. |
+|**Disattiva**     | Gli organizzatori non avranno la possibilità di aggiungere Q&A durante la creazione di riunioni.  |
+
 ## <a name="enable-meeting-policy-settings"></a>Abilitare le impostazioni dei criteri riunione
 
-Per abilitare le impostazioni dei criteri di riunione, è possibile usare l'interfaccia di amministrazione [di Teams](https://admin.teams.microsoft.com/policies/meetings) (**Criteri riunione** > **Modifica un criterio** > **Partecipanti & guest**) o il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) in Teams PowerShell. 
+Per abilitare le impostazioni dei criteri di riunione, è possibile utilizzare [l'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com/policies/meetings) (**Criteri riunione** > **Modifica un criterio** > **Partecipanti & guest**) o il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) in PowerShell di Teams. 
 
 In questo esempio viene usato PowerShell per modificare i criteri globali per le riunioni e consentire a chiunque di avviare o partecipare a una riunione.
 

@@ -1,5 +1,5 @@
 ---
-title: Distribuire i team su vasta scala per gli operatori in prima linea in Microsoft Teams
+title: Distribuire team su vasta scala per gli operatori in prima linea in Microsoft Teams
 author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: rahuldey
@@ -15,18 +15,18 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 561eaf310201b99ada9cce4dde49746d58d77088
-ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
+ms.openlocfilehash: feffd8e6f651b4592e789cd24243f01417f1b966
+ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66046025"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66240733"
 ---
-# <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>Distribuire i team su vasta scala per gli operatori in prima linea in Microsoft Teams
+# <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>Distribuire team su vasta scala per gli operatori in prima linea in Microsoft Teams
 
 > [!NOTE]
-> Questa funzionalità è attualmente in anteprima privata. Se desideri partecipare all'anteprima privata, contattaci [all'dscale@microsoft.com](mailto:dscale@microsoft.com).
+> Questa funzionalità è attualmente in anteprima pubblica. Se desideri partecipare, contattaci [all dscale@microsoft.com](mailto:dscale@microsoft.com).
+
 
 ## <a name="overview"></a>Panoramica
  
@@ -66,7 +66,7 @@ Seguire questa procedura per distribuire un numero elevato di team alla volta.
     |**Nome team**|Il nome del team.|
     |**ID team esistente**|Se si stanno aggiungendo o rimuovendo utenti da un team esistente, specificare l'ID del team.|
     |**Visibilità**|Se il team è pubblico (chiunque nell'organizzazione può partecipare) o privato (gli utenti devono ottenere l'approvazione dei proprietari del team per partecipare). Le opzioni sono **Pubblico** e **Privato**.|
-    |**ID modello team**|Se si sta creando un team da un modello predefinito o personalizzato, specificare l'ID del modello di team. Per un elenco di modelli di team e ID predefiniti, vedere [Attività iniziali con i modelli di team nell'interfaccia di amministrazione di Teams](get-started-with-teams-templates-in-the-admin-console.md). Se si vuole usare il modello di team predefinito standard, lasciare vuoto questo modello.|
+    |**ID modello team**|Se si sta creando un team da un modello predefinito o personalizzato, specificare l'ID del modello di team. Vedere [Introduzione ai modelli di team nell'interfaccia di amministrazione di Teams](get-started-with-teams-templates-in-the-admin-console.md) per un elenco di modelli di team e ID predefiniti. Se si vuole usare il modello di team predefinito standard, lasciare vuoto questo modello.|
 
 - **Un file CSV che associa gli utenti che si stanno aggiungendo a ogni team**. Questo file deve contenere queste colonne obbligatorie, nell'ordine seguente, a partire dalla prima colonna:
 
@@ -120,16 +120,16 @@ Si usa il ```New-CsBatchTeamsDeployment``` cmdlet per inviare un batch di team d
 
 1. Installare PowerShell versione 7 o successiva. Per indicazioni dettagliate, vedere [Installazione di PowerShell in Windows](/powershell/scripting/install/installing-powershell-on-windows).
 1. Eseguire PowerShell in modalità amministratore.
-1. Eseguire le operazioni seguenti per disinstallare qualsiasi modulo di PowerShell installato in precedenza Teams.
+1. Eseguire quanto segue per disinstallare qualsiasi modulo di Teams PowerShell installato in precedenza.
 
     ```powershell
     Uninstall-module -Name MicrosoftTeams -Force -Allversions
     ```
 
     Se viene visualizzato un messaggio di errore, l'impostazione è già stata impostato. Procedere con il passaggio successivo.
-1. Scaricare e installare [l'ultima versione del modulo Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams).
+1. Scaricare e installare [l'ultima versione del modulo di Teams PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams).
 
-1. Eseguire le operazioni seguenti per connettersi a Teams.
+1. Eseguire quanto segue per connettersi a Teams.
 
     ```powershell
     Connect-MicrosoftTeams
@@ -137,7 +137,7 @@ Si usa il ```New-CsBatchTeamsDeployment``` cmdlet per inviare un batch di team d
 
     Quando richiesto, accedere con le credenziali di amministratore.
 
-1. Eseguire le operazioni seguenti per ottenere un elenco dei comandi nel modulo Teams PowerShell.
+1. Eseguire quanto segue per ottenere un elenco dei comandi nel modulo di PowerShell di Teams.
 
     ```powershell
     Get-Command -Module MicrosoftTeams
@@ -173,4 +173,4 @@ Invia [dscale@microsoft.com](mailto:dscale@microsoft.com) e includi l'ID di orch
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Panoramica di Teams PowerShell](teams-powershell-overview.md)
+- [Panoramica di PowerShell di Teams](teams-powershell-overview.md)

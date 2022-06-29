@@ -15,27 +15,27 @@ ms.collection:
 - M365-collaboration
 description: Informazioni sui requisiti per il supporto di Microsoft Teams Rooms, inclusa la scelta del dispositivo, dei microfoni, degli altoparlanti, delle fotocamere e degli schermi appropriati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e2f8ae10f19d59d9eefdc5f4f5fcf0eac4085eb0
-ms.sourcegitcommit: e3931446943684db155bb3edf7d7e52d41775013
+ms.openlocfilehash: f3bdfc24344f481a2846790ae13b6c964c69d4c2
+ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65886653"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66241025"
 ---
 # <a name="microsoft-teams-rooms-requirements"></a>Requisiti per Microsoft Teams Rooms
 
-Microsoft Teams Rooms può essere ridimensionato in base a diverse dimensioni della stanza. Teams Rooms utilizza un'ampia gamma di periferiche audio e video certificate in base alle dimensioni e all'uso della stanza. Selezionando il dispositivo e la console di base appropriati, in combinazione con microfoni, altoparlanti, fotocamere e schermi appropriati per lo spazio, è possibile distribuire Microsoft Teams Rooms in spazi di qualsiasi dimensione, da piccoli spazi rannicchiati attraverso grandi spazi per conferenze e sale riunioni.  Il set completo delle periferiche audio e video certificate che possono essere utilizzate per configurare la sala, è disponibile in [Presentazione dei dispositivi](https://products.office.com/microsoft-teams/across-devices).
+Microsoft Teams Rooms scala in base a diverse dimensioni della stanza. Teams Rooms utilizzare un'ampia gamma di periferiche audio e video certificate in base alle dimensioni e all'uso della stanza. Selezionando il dispositivo e la console di base appropriati, in combinazione con microfoni, altoparlanti, fotocamere e schermi appropriati per lo spazio, è possibile distribuire Microsoft Teams Rooms in spazi di qualsiasi dimensione, da piccoli spazi rannicchiati attraverso grandi spazi per conferenze e sale riunioni.  Il set completo delle periferiche audio e video certificate che possono essere utilizzate per configurare la sala, è disponibile in [Presentazione dei dispositivi](https://products.office.com/microsoft-teams/across-devices).
 
 In questo articolo vengono riepilogati i requisiti di configurazione e distribuzione dei dispositivi per il supporto di Microsoft Teams Rooms.
 
-La distribuzione implica la creazione di account delle risorse e la configurazione di Teams Rooms, come descritto in [Distribuire Microsoft Teams Rooms](rooms-deploy.md).
+La distribuzione implica la creazione di account delle risorse e la configurazione di Teams Rooms come descritto in [Distribuire Microsoft Teams Rooms](rooms-deploy.md).
 
 Fare riferimento a:
 
 - [Opzioni di licenza basate sul tuo piano: Microsoft Teams Rooms](rooms-licensing.md)
 
 > [!NOTE]
-> Microsoft Teams Rooms accede a Microsoft Teams, Skype for Business Server 2019 o Skype for Business Server 2015 e può partecipare a riunioni ospitate da uno di questi servizi.
+> Microsoft Teams Rooms accedere a Microsoft Teams, Skype for Business Server 2019 o Skype for Business Server 2015 e può partecipare a riunioni ospitate da uno di questi servizi.
 >
 > Le piattaforme precedenti, come Lync Server 2013, non sono supportate da Microsoft Teams Rooms. Microsoft Teams Rooms non è supportato in Microsoft 365 o Office 365 gestito da ambienti 21Vianet o DoD.
 >
@@ -121,7 +121,7 @@ Tutti gli attuali dispositivi e pacchetti per Sala riunioni di Microsoft Teams s
   |Surface Pro </br>(Quinta gen) |Core i5 |8 GB o 4 GB |128 GB o dimensioni superiori |
   |Surface Pro 4 |Core i5 |8 GB o 4 GB |128 GB o dimensioni superiori |
 
-- I dispositivi Surface Pro richiedono una delle seguenti opzioni dell'alloggiamento di espansione:
+- Surface Pro dispositivi richiedono una delle seguenti opzioni dell'alloggiamento di espansione:
 
   - [Logitech SmartDock](https://www.logitech.com/product/smartdock)
   - [Crestron SR](https://www.crestron.com/products/line/sr-for-skype-for-business-room-system )
@@ -182,6 +182,7 @@ Questi dispositivi sono disponibili in [Presentazione degli accessori per sistem
 |[Poly Trio C60](https://www.poly.com/us/en/products/phones/trio/trio-c60)  |5.9.5.3066|
 |[Barra video Poly Studio P15](https://www.poly.com/us/en/products/video-conferencing/studio-p/studio-p15)|1.2.0.000287 |
 |[Fotocamera Poly Studio E70](https://www.poly.com/us/en/products/video-conferencing/studio/studio-e70)|1.1|
+|[Poly Studio R30](https://www.poly.com/us/en/products/video-conferencing/studio/studio-r30)|2.0.0.001096|
 |[EPOS SP 220 MS](http://no-no.sennheiser.com/dual-speakerphones-sp-220-ms-uc)   |2.0.12.0   |
 |[EPOS SP20](https://www.eposaudio.com/en/us/enterprise/products/sp-20-ml-142ee5ca-speakerphone-1000226)   |1.2.15   |
 |[EPOS SP30](https://www.eposaudio.com/en/us/enterprise/products/sp-30-78c0cecc-bluetooth-speakerphone-1000223)   |2.1.52  |

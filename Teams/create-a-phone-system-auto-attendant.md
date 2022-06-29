@@ -19,28 +19,28 @@ appliesto:
 ms.localizationpriority: medium
 ms.custom:
 - Phone System
-description: Scopri come configurare e gestire gli operatori automatici in Microsoft Teams.
-ms.openlocfilehash: 7cfce516946d38f794e9803e5ecfb30c128cb149
-ms.sourcegitcommit: e38dc23e3968f55625e90c8883884045f80d22ee
+description: Informazioni su come configurare e gestire gli operatori automatici in Microsoft Teams.
+ms.openlocfilehash: 37326ec03c22c91de5f4c4edb94aaad67f52bde5
+ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66124171"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66240945"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
 Gli operatori automatici consentono alle persone di chiamare la tua organizzazione e di navigare in un sistema di menu per parlare con il reparto, la coda di chiamata, la persona o un operatore giusto. È possibile creare operatori automatici per l'organizzazione con l'interfaccia di amministrazione di Microsoft Teams o con PowerShell.
 
-Assicurati di aver letto [Piano per Teams operatori automatici e code di chiamata](plan-auto-attendant-call-queue.md) e segui i [passaggi iniziali](plan-auto-attendant-call-queue.md#getting-started) prima di seguire le procedure descritte in questo articolo.
+Assicurarsi di aver letto [Piano per gli operatori automatici e le code di chiamata di Teams](plan-auto-attendant-call-queue.md) e di aver seguito i [passaggi iniziali](plan-auto-attendant-call-queue.md#getting-started) prima di seguire le procedure in questo articolo.
 
 Gli operatori automatici possono indirizzare le chiamate, in base all'input dei chiamanti, a una delle seguenti destinazioni:
 
 - **Operatore** - l'operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. L'operatore può essere definito come una qualsiasi delle altre destinazioni in questo elenco.
 - **Persona dell'organizzazione** : una persona dell'organizzazione che può ricevere chiamate vocali. Questa persona può essere un utente online o un utente ospitato in locale usando Skype for Business Server.
 - **App vocale** : un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato all'operatore automatico o alla coda di chiamata quando si sceglie questa destinazione.
-- **Segreteria telefonica**: cassetta postale vocale associata a un gruppo di Microsoft 365 specificato. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lascia un messaggio dopo il tono". richiesta di sistema.
+- **Segreteria telefonica** : la cassetta postale vocale associata a un gruppo di Microsoft 365 specificata. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lascia un messaggio dopo il tono". richiesta di sistema.
   - In M365 Amministrazione Center abilitare l'opzione "Consenti agli utenti esterni all'organizzazione di inviare un messaggio di posta elettronica al team" per il gruppo di Microsoft 365 specificato
-- **Numero di telefono esterno** : qualsiasi numero di telefono. (Vedere [i dettagli tecnici sul trasferimento esterno](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details)).
+- **Numero di telefono esterno** : qualsiasi numero di telefono. Vedere [i dettagli tecnici sul trasferimento esterno](create-a-phone-system-auto-attendant.md?tabs=additional-resources).
 - **Annuncio (file audio):** riprodurre un file audio. Messaggio di annuncio registrato che viene caricato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere di dimensioni superiori a 5 MB. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
 - **Annuncio (digitato):** digitare un messaggio. Testo che si desidera venga letto dal sistema. È possibile immettere fino a 1000 caratteri. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
 
@@ -53,15 +53,15 @@ La procedura per aggiungere un operatore automatico è:
 1. Configurare l'ambito di chiamata.
 1. Configurare gli account delle risorse.
 
-I passaggi descritti nell'articolo creano operatori automatici usando l'interfaccia di amministrazione di Teams. Per istruzioni su **come creare operatori automatici con PowerShell**, vedi [Creazione di operatori automatici con i cmdlet di PowerShell](create-a-phone-system-auto-attendant-via-cmdlets.md).
+I passaggi descritti nell'articolo creano operatori automatici con l'interfaccia di amministrazione di Teams. Per istruzioni su **come creare operatori automatici con PowerShell**, vedi [Creazione di operatori automatici con i cmdlet di PowerShell](create-a-phone-system-auto-attendant-via-cmdlets.md).
 
 ## <a name="follow-these-steps-to-set-up-your-auto-attendant"></a>Segui questi passaggi per configurare l'operatore automatico
-
-Per configurare un operatore automatico, [nell'interfaccia di amministrazione di Teams](https://go.microsoft.com/fwlink/p/?linkid=2066851) espandi **Voce**, seleziona **Operatori** automatici e quindi seleziona **Aggiungi**.
 
 # <a name="step-1---general-info"></a>[Passaggio 1 - Informazioni generali](#tab/general-info)
 
 ## <a name="step-1---set-the-auto-attendants-general-information"></a>Passaggio 1 - Impostare le informazioni generali dell'operatore automatico
+
+Per configurare un operatore automatico, [nell'interfaccia di amministrazione di Teams](https://go.microsoft.com/fwlink/p/?linkid=2066851) espandi **Voce**, seleziona **Operatori automatici** e quindi **aggiungi**.
 
 1. Digita un nome per l'operatore automatico nella casella in alto.
 
@@ -78,13 +78,14 @@ Per configurare un operatore automatico, [nell'interfaccia di amministrazione di
 
 Dopo aver impostato le informazioni generali dell'operatore automatico, seleziona **Avanti**.
 
+
 # <a name="step-2---basic-call-flow"></a>[Passaggio 2 - Flusso delle chiamate di base](#tab/call-flow)
 
 ## <a name="step-2---set-up-the-basic-call-flow"></a>Passaggio 2 - Configurare il flusso delle chiamate di base
 
 ### <a name="set-a-greeting"></a>Impostare un messaggio di saluto
 
-- Se si seleziona **Riproduci file audio**, è possibile usare il pulsante **Upload file** per caricare un messaggio di saluto registrato salvato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere di dimensioni superiori a 5 MB.
+- Se si seleziona **Riproduci file audio** , è possibile usare il pulsante **Carica file** per caricare un messaggio di saluto registrato salvato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere di dimensioni superiori a 5 MB.
 
 - Se selezioni **Digita un messaggio di saluto** , il sistema leggerà il testo digitato (fino a 1000 caratteri) quando l'operatore automatico risponde a una chiamata.
 
@@ -200,7 +201,7 @@ Per aggiungere un account della risorsa, selezionare **Aggiungi account** e cerc
 
 Dopo aver aggiunto gli account delle risorse, selezionare **Avanti**.
 
-Per altre informazioni[, vedere Gestire Teams account delle risorse](manage-resource-accounts.md).
+Per altre informazioni, vedere [Gestire gli account delle risorse di Teams](manage-resource-accounts.md) .
 
 # <a name="additional-resources"></a>[Risorse aggiuntive](#tab/additional-resources)
 
@@ -210,13 +211,13 @@ Per altre informazioni[, vedere Gestire Teams account delle risorse](manage-reso
 
 Fai riferimento ai [Prerequisiti](plan-auto-attendant-call-queue.md#prerequisites) per consentire agli operatori automatici di trasferire le chiamate esternamente.  Inoltre:
 
-- Per un account di risorsa con una [licenza piano per chiamate](calling-plans-for-office-365.md) o [un numero di Connessione con operatore](operator-connect-plan.md), il numero di telefono di trasferimento esterno deve essere immesso nel formato E.164 (+[codice paese][prefisso][numero di telefono]).
+- Per un account di risorse con licenza [Piano per chiamate](calling-plans-for-office-365.md) o [Numero di connessione operatore](operator-connect-plan.md) , il numero di telefono di trasferimento esterno deve essere immesso nel formato E.164 (+[codice paese][prefisso][numero di telefono]).
 
 - Per un account delle risorse con un criterio di routing vocale online licenza Telefono di Microsoft Teams e routing diretto, il formato del numero di telefono per trasferimento esterno dipende dalle impostazioni [SBC (Session Border Controller).](direct-routing-connect-the-sbc.md)
 
 Il numero di telefono in uscita visualizzato viene determinato nel modo seguente:
 
-- Per Il Piano per chiamate e i numeri di Connessione con operatore, viene visualizzato il numero di telefono del chiamante originale.
+- Per i numeri del piano per chiamate e della connessione operatore, viene visualizzato il numero di telefono del chiamante originale.
 - Per i numeri di routing diretto, il numero inviato si basa sull'impostazione P-Asserted-Identity (PAI) in SBC, come indicato di seguito:
   - Se impostato su Disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
   - Se è impostato su Abilitato, viene visualizzato il numero di telefono dell'account della risorsa.
@@ -230,7 +231,7 @@ Se sei un amministratore, puoi usare il seguente strumento di diagnostica per ve
 1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’interfaccia Amministrazione Microsoft 365.
 
    > [!div class="nextstepaction"]
-   > [Esegui test: operatore automatico Teams](https://aka.ms/TeamsAADiag)
+   > [Eseguire test: Operatore automatico di Teams](https://aka.ms/TeamsAADiag)
 
 2. Nel riquadro Esegui diagnostica immettere l'account di risorsa nel campo **Nome utente o Posta elettronica** e quindi selezionare **Esegui test**.
 
@@ -240,7 +241,7 @@ Se sei un amministratore, puoi usare il seguente strumento di diagnostica per ve
 
 ### <a name="related-topics"></a>Argomenti correlati
 
-[Ecco cosa ottieni con Teams Telefono](./here-s-what-you-get-with-phone-system.md)
+[Ecco cosa ottieni con Teams Phone](./here-s-what-you-get-with-phone-system.md)
 
 [Ottenere numeri telefonici di servizio](./getting-service-phone-numbers.md).
 

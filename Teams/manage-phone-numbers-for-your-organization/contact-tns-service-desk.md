@@ -23,12 +23,12 @@ ms.custom:
 - Calling Plans
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quando si ottengono numeri di telefono o numeri di portabilità (trasferimento) per l'organizzazione, potrebbe essere necessario richiedere assistenza e supporto al service desk TNS.
-ms.openlocfilehash: aac4598bfcbf4a26cf20375b39dae8c79df82202
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: bd12ac951e6a0f23ffeebf7a9d2e7655ce73d906
+ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675628"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66240725"
 ---
 # <a name="telephone-number-services-tns---service-desk"></a>Telephone Number Services (TNS) - Service Desk
 
@@ -41,18 +41,16 @@ Per contattare il supporto tecnico:
 
 1. Accedere [all'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com).
 
-2. Nel riquadro sinistro seleziona **Voce** e quindi **Telefono numeri**.
+2. Nel riquadro sinistro seleziona **Voce** e quindi **Numeri di telefono**.
 
-3. Selezionare **Aggiungi** o **Porta**.
-
-4. Nella parte superiore della pagina selezionare **Ottenere il supporto per il numero di telefono**. Verrà visualizzato il Centro assistenza numeri di telefono.
+3. Nell'angolo in alto a destra della pagina fai clic su **Azioni**, quindi seleziona **Richiedi supporto per il numero di telefono**. Verrai trasferito al **Centro servizi numeri di telefono** (Service Desk Portal).
 
 > [!NOTE]
-> Solo un utente dello stesso tenant potrà creare un caso. Ovvero, un utente di @fabrikam.com non può creare un caso per conto di @contoso.com.
+> Solo un utente dello stesso tenant può creare un caso. Ad esempio, un utente di @fabrikam.com non può creare un caso per conto di @contoso.com.
 
 Dal Centro assistenza numeri di telefono è possibile creare nuovi casi, visualizzare casi esistenti, comunicare con il service desk e gestire il profilo utente. Ogni area è descritta in modo dettagliato nelle sezioni seguenti.
 
-- **Telefono Number Service Center**: passare alla home page del portale.
+- **Centro servizi numeri di telefono** : passa alla home page del portale.
 
 - **[Creare un nuovo caso](#create-a-new-case)** : inviare una nuova richiesta o richiesta generale.
 
@@ -134,7 +132,7 @@ Il tipo di caso può essere uno dei seguenti:
 
   - **Datetime preferito*** - Data e ora in cui si vuole modificare il tipo di inventario dei numeri. Per altre informazioni, vedere Data e ora.
 
-  - **Casella di verifica - Sono consapevole che per poter aggiornare il tipo di inventario, i miei numeri di – telefono devono essere non assegnati** - Microsoft non può elaborare le richieste di modifica del tipo di numero di telefono a meno che i numeri di telefono all'interno del tenant non siano assegnati. Se si richiede questa modifica per una data futura, sarà necessario assicurarsi che i numeri non siano assegnati prima della data e dell'ora richieste.
+  - **Casella di controllo: capisco che per poter aggiornare il tipo di inventario, è necessario annullare l'assegnazione dei numeri di telefono** . Microsoft non può elaborare le richieste di modifica del tipo di numero di telefono a meno che i numeri di telefono all'interno del tenant non siano assegnati. Se si richiede questa modifica per una data futura, sarà necessario assicurarsi che i numeri non siano assegnati prima della data e dell'ora richieste.
 
   - **Elenco dei numeri di telefono** - L'elenco dei numeri di telefono di cui si vuole modificare il tipo. Caricare un file CSV con l'elenco dei numeri di telefono.
 
@@ -142,7 +140,7 @@ Il tipo di caso può essere uno dei seguenti:
 
   - **Tipo di numero** - Selezionare il tipo per i numeri. Vedere [Tipi di numeri di telefono](../different-kinds-of-phone-numbers-used-for-calling-plans.md).
 
-  - **Hai provato a ottenere i numeri di telefono dal portale dell'interfaccia di amministrazione di Teams** - Hai provato ad acquistare questi numeri di telefono dal portale dell'interfaccia di amministrazione di Microsoft Teams, dove puoi usare la funzionalità self-service?
+  - **Hai provato a ottenere numeri di telefono dal portale di Teams Amministrazione Center** - Hai provato ad acquistare questi numeri di telefono da Microsoft Teams Amministrazione Center?
 
   - **Quantità di numeri di telefono necessari** - Il calcolo di numeri di telefono da acquistare.
 
@@ -158,7 +156,7 @@ Il tipo di caso può essere uno dei seguenti:
 
   - **Assegnare un nome all'ordine di portabilità** - specificare un nome facile da ricordare per la richiesta di portabilità.
 
-  - **Data/ora di portabilità richiesta*** - Data e ora in cui si desidera trasferire i numeri a Microsoft. Si noti che non si tratta di una data di portabilità garantita, poiché il proprietario del numero corrente deve prima approvare la richiesta di portabilità. Vedere Data e ora.
+  - **Data/ora di portabilità richiesta*** - Data e ora in cui si desidera trasferire i numeri a Microsoft. Questa non è una data di trasferimento garantita perché il proprietario del numero corrente deve prima approvare la nostra richiesta di trasferimento. Vedere Data e ora.
 
   - **Elenco dei numeri di portabilità** - Elenco dei numeri di telefono da convertire in Microsoft. Caricare un file CSV con l'elenco dei numeri di telefono.
 
@@ -195,7 +193,7 @@ Caricare eventuali documenti aggiuntivi per il caso.
 
 - **Filtrare i casi** selezionando **Casi aperti**,  **Tutti i casi** o **Casi chiusi**.
 
-- **Comunicare con il service desk TNS** relativamente al caso aprendo un caso esistente, scorrendo verso il basso e selezionando **Aggiungi commento**. Verrà visualizzata una nuova finestra. Immettere il messaggio nella casella del commento. Allegare tutti i documenti di supporto (se disponibili) che potrebbero essere utili per la richiesta e selezionare **Invia**.
+- **Comunicare con il service desk TNS** relativamente al caso aprendo un caso esistente, scorrendo verso il basso e selezionando **Aggiungi commento**. Verrà visualizzata una nuova finestra. Immettere il messaggio nella casella del commento. Allegare eventuali documenti di supporto (se disponibili) e quindi selezionare **Invia**.
 
   Le risposte del **service desk TNS** verranno visualizzate sotto la stessa sequenza temporale. Quando viene eseguito un aggiornamento del caso, si riceverà una notifica automatica tramite posta elettronica dell'aggiornamento.
 
@@ -209,7 +207,7 @@ Caricare eventuali documenti aggiuntivi per il caso.
 
 - Per sapere se l'audioconferenza è disponibile nel paese/area geografica di interesse, vedere [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
 
-- Per informazioni utili per selezionare i tipi appropriati di numeri di telefono per l'organizzazione, vedere [diversi tipi di numeri di telefono](../different-kinds-of-phone-numbers-used-for-calling-plans.md).
+- Per informazioni sui tipi di numeri di telefono appropriati per l'organizzazione, vedere [Diversi tipi di numeri di telefono](../different-kinds-of-phone-numbers-used-for-calling-plans.md).
 
 - Per informazioni sulla gestione dei numeri di telefono per l'organizzazione, vedere [Gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization.md).
 
