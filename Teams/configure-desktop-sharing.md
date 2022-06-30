@@ -1,7 +1,7 @@
 ---
 title: Configurare la condivisione desktop in Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.reviewer: jastark
 ms.date: 03/22/2019
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c5db10ce87dc98cfb793eefb1daa953385c95f6d
-ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
+ms.openlocfilehash: 6c94991255b7309e1510a934645f1f4cf0b7e049
+ms.sourcegitcommit: ff783fad2fb5d412e864e3af2ceaa8fedcd9da07
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61205287"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66562385"
 ---
 # <a name="configure-desktop-sharing-in-microsoft-teams"></a>Configurare la condivisione desktop in Microsoft Teams
 
@@ -56,12 +56,12 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
     ![Opzioni della modalità di condivisione.](media/configure-desktop-sharing-image3.png)
 
   > [!Note]
-  > Non è necessario abilitare il criterio di chiamata per consentire agli utenti di usare la condivisione dello schermo dalla chat. Tuttavia, l'audio viene disattivato finché non riattiva l'audio. Inoltre, l'utente che condivide lo schermo può fare clic **su Aggiungi audio** per abilitare l'audio. Se il criterio di chiamata è disabilitato, gli utenti non potranno aggiungere audio alla condivisione dello schermo da una sessione di chat.
+  > Non è necessario abilitare i criteri di chiamata per consentire agli utenti di usare la condivisione dello schermo dalla chat. Tuttavia, l'audio viene disattivato finché non si riattiva l'audio. Inoltre, l'utente che condivide lo schermo può fare clic su **Aggiungi audio** per abilitare l'audio. Se il criterio di chiamata è disabilitato, gli utenti non potranno aggiungere audio alla condivisione dello schermo da una sessione di chat.
 
 5. Abilitare o disabilitare le impostazioni seguenti:
 
     - **Consentire a un partecipante di concedere o richiedere il controllo**: consente ai membri del team di concedere o richiedere il controllo dell'applicazione o del desktop del relatore.
-    - **Consentire a un partecipante esterno di concedere o richiedere il controllo:** si tratta di un criterio per utente. Se un'organizzazione ha impostato questa opzione per un utente, non controlla cosa possono fare i partecipanti esterni, indipendentemente dall'impostazione configurata dall'organizzatore della riunione. Questo parametro controlla se i partecipanti esterni possono ricevere o richiedere il controllo dello schermo del relatore, a seconda delle impostazioni configurate dal relatore nei criteri di riunione dell'organizzazione.
+    - **Consentire a un partecipante esterno di concedere o richiedere il controllo** : si tratta di criteri per utente. Se un'organizzazione ha impostato questa opzione per un utente, non controlla cosa possono fare i partecipanti esterni, indipendentemente dall'impostazione configurata dall'organizzatore della riunione. Questo parametro controlla se i partecipanti esterni possono ricevere o richiedere il controllo dello schermo del relatore, a seconda delle impostazioni configurate dal relatore nei criteri di riunione dell'organizzazione.
     - **Consentire la condivisione di PowerPoint**: consente di creare riunioni nelle quali è possibile caricare e condividere le presentazioni di PowerPoint.
     - **Consentire la lavagna**: consente agli utenti di condividere una lavagna.
     - **Consentire le note condivise**: consente agli utenti di creare note condivise.

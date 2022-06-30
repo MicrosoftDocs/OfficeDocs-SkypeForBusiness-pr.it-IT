@@ -1,7 +1,7 @@
 ---
 title: Assegnare proprietari e membri dei team in Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: conceptual
 audience: admin
@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 76ca4a5dfd6d120b71e23d899ec9c7749db99827
-ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
+ms.openlocfilehash: 1a8993882bb281dc7c9bd6b8bde95387a183b637
+ms.sourcegitcommit: ff783fad2fb5d412e864e3af2ceaa8fedcd9da07
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125491"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66562765"
 ---
 # <a name="assign-team-owners-and-members-in-microsoft-teams"></a>Assegnare proprietari e membri dei team in Microsoft Teams
 
@@ -43,8 +43,8 @@ La tabella seguente mostra le differenze tra l'autorizzazione di un proprietario
 | ***Modifica il nome e la descrizione del canale privato** |    No     |    N/D|
 |        ***Eliminare un canale privato**         |    Sì     |    No|
 |          **Aggiungere un canale condiviso**          |    Sì     |    No|
-| **Modificare il nome/la descrizione del canale condiviso** |    No     |    <sup>No6</sup>|
-|        **Elimina canale condiviso**         |    Sì     |    <sup>No6</sup>|
+| **Modificare il nome/la descrizione del canale condiviso** |    No     |    N.<sup>6</sup>|
+|        **Elimina canale condiviso**         |    Sì     |    N.<sup>6</sup>|
 |          **Aggiunge membri**          |  Sì<sup>3</sup>   |     No<sup>4</sup>    |
 |          **Richiedere l'aggiunta di membri**          |  N/D   |     Sì<sup>5</sup>     |
 |           **Aggiunge app**            |    Sì     |    Sì<sup>2</sup>|

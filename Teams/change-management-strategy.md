@@ -1,8 +1,8 @@
 ---
 title: Creare una strategia di gestione delle modifiche
 ms.reviewer: ''
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.date: 09/25/2017
 ms.topic: article
@@ -15,12 +15,12 @@ description: Creare una strategia di gestione delle modifiche per Microsoft Team
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 65bd3c7c4ded22f2ca8286215171408f7d86b1e1
-ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
+ms.openlocfilehash: 589294402d093afef8686dd7a376f0d88d7025cb
+ms.sourcegitcommit: ff783fad2fb5d412e864e3af2ceaa8fedcd9da07
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65823245"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66562375"
 ---
 # <a name="create-a-change-management-strategy-for-microsoft-teams"></a>Creare una strategia di gestione delle modifiche per Microsoft Teams
 
@@ -59,8 +59,8 @@ La prima regola per un'adozione efficace è quella di creare un team dinamico co
 |Icona  |Descrizione  |
 |---------|---------|
 |![Icona Sponsor della direzione.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image1.png)     |**Gli Sponsor dirigenti** sono leader chiave all'interno dell'organizzazione e la loro partecipazione è essenziale per favorire l'adozione dei dipendenti. Hanno la maggiore influenza sulla cultura aziendale e possono comunicare attivamente il valore e i benefici di una nuova tecnologia e di un nuovo modo.         |
-|![Icona Proprietari del servizio.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image2.png)     |**I proprietari dei servizi** sono responsabili di garantire che le persone usino il servizio e ne otterrà valore. Impostare i proprietari dei servizi all'interno dell'organizzazione è importante per garantire che vengano realizzati gli obiettivi aziendali impostati per Microsoft 365 o Office 365.         |
-|![Icona campioni.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image3.png)     |Ottenere il buy-in da ogni utente in un'organizzazione è una sfida. **I campioni** possono aiutare ad alleviare questa sfida e svolgere un ruolo importante nell'adozione di Microsoft 365 o Office 365. Sono ben informati, impegnati a promuovere la loro esperienza e sono disposti a fornire assistenza e coaching peer. Aiutano a tradurre Microsoft 365 o Office 365 nella realtà del loro reparto o team.         |
+|![Icona Proprietari del servizio.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image2.png)     |**I proprietari dei servizi** sono responsabili di garantire che le persone usino il servizio e ne otterrà valore. L'impostazione dei proprietari dei servizi all'interno dell'organizzazione è importante per garantire la realizzazione degli obiettivi aziendali impostati per Microsoft 365 o Office 365.         |
+|![Icona campioni.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image3.png)     |Ottenere il buy-in da ogni utente in un'organizzazione è una sfida. **I campioni** possono aiutare ad alleviare questa sfida e svolgere un ruolo importante nell'adozione di Microsoft 365 o Office 365. Sono ben informati, impegnati a promuovere la loro esperienza e sono disposti a fornire assistenza e coaching peer. Aiutano a tradurre Microsoft 365 o Office 365 nella realtà del reparto o del team.         |
 
 È consigliabile una riunione periodica di queste parti interessate per mantenerle aggiornate sullo stato di avanzamento del programma. Avviare un "consiglio di collaborazione" per consentire feedback e discussioni può essere uno strumento utile a seconda della cultura aziendale.
 
@@ -114,7 +114,7 @@ Per le fasi pilota questi sono i passaggi minimi per il successo:
 
 -   Organizzare una normale riunione pianificata con gli stakeholder del progetto per gli aggiornamenti.
 
--   Selezionare un metodo di feedback per raccogliere informazioni dalle persone che partecipano al progetto pilota. Le organizzazioni più piccole possono usare un canale pubblico all'interno di Teams per consentire agli utenti di partecipare e fornire feedback. Nelle organizzazioni di grandi dimensioni, è consigliabile avviare una community di Yammer per fornire supporto per il prodotto.  
+-   Selezionare un metodo di feedback per raccogliere informazioni dalle persone che partecipano al progetto pilota. Le organizzazioni più piccole possono usare un canale pubblico all'interno di Teams per consentire agli utenti di partecipare e fornire feedback. Nelle organizzazioni di grandi dimensioni, è consigliabile avviare una community di Yammer per fornire supporto per i prodotti.  
 
 -   Rendere disponibile la documentazione di supporto in autonomia, inclusi i video del prodotto.
 
@@ -138,15 +138,15 @@ Come per qualsiasi comunicazione & campagna di adozione, è consigliabile identi
 
 ## <a name="measure-and-share-success"></a>Misurare e condividere il successo
 
-Nel team di progetto devono essere amministratori IT dell'organizzazione. Queste persone avranno accesso ai report sull'utilizzo Microsoft 365 o Office 365 Microsoft Teams integrati nell'esperienza di interfaccia di amministrazione di Microsoft 365. Queste informazioni possono mostrare l'uso di Microsoft Teams nell'azienda. È anche consigliabile ricevere feedback direttamente dagli utenti sulla loro esperienza con Teams e altre idee che hanno per l'uso. Condividere questi esempi reali all'interno della propria azienda è estremamente utile per ottenere un cambiamento costante nel tempo con la community di utenti.  
+Nel team di progetto devono essere amministratori IT dell'organizzazione. Queste persone avranno accesso ai report sull'utilizzo di Microsoft 365 o Office 365 Microsoft Teams integrati nell'esperienza di interfaccia di amministrazione di Microsoft 365. Queste informazioni possono mostrare l'utilizzo di Microsoft Teams nell'azienda. È anche consigliabile ricevere feedback direttamente dagli utenti sull'esperienza di Teams e su altre idee che hanno per l'uso. Condividere questi esempi reali all'interno della propria azienda è estremamente utile per ottenere un cambiamento costante nel tempo con la community di utenti.  
 
-Altre informazioni sui report sull'utilizzo di Microsoft Teams sono disponibili nei [report sull'utilizzo di Microsoft Teams interfaccia di amministrazione di Microsoft 365 in interfaccia di amministrazione di Microsoft 365](/microsoftteams/teams-analytics-and-reports/user-activity-report).
+Scopri di più sui report sull'utilizzo di Microsoft Teams nei [report sull'utilizzo di interfaccia di amministrazione di Microsoft 365 Microsoft Teams nella interfaccia di amministrazione di Microsoft 365](/microsoftteams/teams-analytics-and-reports/user-activity-report).
 
 > [!TIP]
-> Usare il team pubblico o Yammer community per raccogliere informazioni sull'utilizzo. Condividili con un tag di #TeamsStories per un facile recupero.  Condividere un #TeamsStory al mese nella Intranet per evidenziare i dipendenti che stanno adottando il cambiamento per aumentare la produttività e la collaborazione nel proprio ambiente.  
+> Usare il team pubblico o la community di Yammer per raccogliere informazioni sull'utilizzo. Condividili con un tag di #TeamsStories per un facile recupero.  Condividere un #TeamsStory al mese nella Intranet per evidenziare i dipendenti che stanno adottando il cambiamento per aumentare la produttività e la collaborazione nel proprio ambiente.  
 
 ## <a name="ongoing-adoption"></a>Adozione in corso
 
-La modifica apportata a un'organizzazione è un'attività in corso, non un evento. La riunione iniziale è solo l'inizio di consentire alle persone di collaborare in modo più efficace. È importante pianificare momenti in questo percorso che evidenzino i successi, introduca nuove funzionalità e si connettano con la strategia generale di Microsoft 365 o Office 365 servizio, che verrà realizzata dal reparto IT. Assicurarsi che gli utenti siano coinvolti piuttosto che sopraffatti ridurranno la fatica del cambiamento e li supporteranno nel lasciare andare le vecchie abitudini, come gli allegati di posta elettronica, per abbracciare qualcosa di nuovo, ad esempio archiviare i documenti nel cloud.
+La modifica apportata a un'organizzazione è un'attività in corso, non un evento. La riunione iniziale è solo l'inizio di consentire alle persone di collaborare in modo più efficace. È importante pianificare momenti in questo percorso che evidenzino i tuoi successi, introduca nuove funzionalità e connettiti alla tua strategia complessiva di servizio di Microsoft 365 o Office 365, che verrà creata dal reparto IT. Assicurarsi che gli utenti siano coinvolti piuttosto che sopraffatti ridurranno la fatica del cambiamento e li supporteranno nel lasciare andare le vecchie abitudini, come gli allegati di posta elettronica, per abbracciare qualcosa di nuovo, ad esempio archiviare i documenti nel cloud.
 
 Condividi le tue domande sull'adozione dei servizi di Teams e Microsoft 365 o Office 365 nella [community Driving Adoption](https://techcommunity.microsoft.com/t5/Driving-Adoption/ct-p/DrivingAdoption) nel sito Microsoft Technical Community. Vogliamo sempre ricevere il tuo supporto e aiutarti nel tuo percorso di adozione.

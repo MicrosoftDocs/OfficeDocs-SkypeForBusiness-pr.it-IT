@@ -637,6 +637,8 @@ items:
                 href: set-up-the-call-me-feature-for-your-users.md
               - name: Ottenere un report di partecipazione alle riunioni
                 href: teams-analytics-and-reports/meeting-attendance-report.md
+              - name: Gestire domande e risposte nelle riunioni di Teams
+                href: manage-qna-for-teams.md
               - name: Gestire la Lavagna in Teams
                 href: manage-whiteboard.md
               - name: Configurare il componente aggiuntivo delle riunioni di Teams per Google Workspace
@@ -785,10 +787,12 @@ items:
             href: set-up-common-area-phones.md
           - name: Messaggi vocali
             items:
-              - name: Configurare Cloud Voicemail
+              - name: Gestire Cloud Voicemail
                 href: set-up-phone-system-voicemail.md
               - name: Gestire i criteri per la segreteria telefonica
                 href: manage-voicemail-policies.md
+              - name: Gestire le impostazioni della casella vocale
+                href: manage-voicemail-settings.md
               - name: Modificare la lingua predefinita per la segreteria telefonica
                 href: change-the-default-language-for-greetings-and-emails.md
               - name: Lingue per messaggi e messaggi di saluto della segreteria telefonica
@@ -1658,8 +1662,8 @@ items:
             href: flw-quickstart.yml
           - name: Procedura guidata per l'onboarding degli operatori in prima linea
             href: flw-onboarding-wizard.md
-          - name: Distribuzione con script per gli operatori sul campo
-            href: flw-scripted-deployment.md
+          - name: Distribuire i team su larga scala per i lavoratori in prima linea
+            href: deploy-teams-at-scale.md
           - name: Personalizzare le app di Teams per gli operatori sul campo
             href: pin-teams-apps-based-on-license.md
           - name: Gestire l'app Turni
@@ -1743,8 +1747,8 @@ items:
             href: get-started-with-retail-teams-templates.md
           - name: Procedura guidata per l'onboarding degli operatori in prima linea
             href: flw-onboarding-wizard.md
-          - name: Distribuzione con script per gli operatori sul campo
-            href: flw-scripted-deployment.md
+          - name: Distribuire i team su larga scala per i lavoratori in prima linea
+            href: deploy-teams-at-scale.md
           - name: Turni per Teams
             items:
               - name: Turni per Teams

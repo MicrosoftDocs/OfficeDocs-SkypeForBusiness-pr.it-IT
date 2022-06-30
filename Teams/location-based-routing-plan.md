@@ -1,14 +1,14 @@
 ---
 title: Pianificare l'instradamento basato sulla posizione per Instradamento diretto
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
 ms.reviewer: roykuntz
 search.appverid: MET150
-description: Informazioni su come pianificare Location-Based routing per Teams Telefono direct routing.
+description: Informazioni su come pianificare Location-Based routing per il routing diretto telefonico di Teams.
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
@@ -16,18 +16,18 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4f156b287969303edbf195c0054b3bb1eb631db2
-ms.sourcegitcommit: d847256fca80e4e8954f767863c880dc8472ca04
+ms.openlocfilehash: d282a2cd9588c2e7104b3093d03da082e9cf388b
+ms.sourcegitcommit: ff783fad2fb5d412e864e3af2ceaa8fedcd9da07
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65303998"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66562625"
 ---
 # <a name="plan-location-based-routing-for-direct-routing"></a>Pianificare l'instradamento basato sulla posizione per Instradamento diretto
 
 In alcuni paesi e aree geografiche è illegale bypassare il provider PSTN (Public Switched Telephone Network) per ridurre i costi delle chiamate interurbane. 
 
-Questo articolo descrive cosa occorre sapere per usare Location-Based Routing per limitare il bypass a pagamento per Microsoft Teams gli utenti in base alla loro posizione geografica. Questo articolo si applica solo al routing diretto. Location-Based Routing non si applica al Piano per chiamate o al Connessione con operatore.
+Questo articolo descrive cosa occorre sapere per usare Location-Based Routing per limitare il bypass a pagamento per gli utenti di Microsoft Teams in base alla loro posizione geografica. Questo articolo si applica solo al routing diretto. Location-Based Routing non si applica al Piano per chiamate o alla Connessione operatore.
 
 Quando si è pronti per abilitare Location-Based Routing, vedere:
 
@@ -44,9 +44,9 @@ Location-Based Routing consente di limitare il bypass a pagamento per un utente 
 
 Location-Based Routing usa la topologia di rete definita per area di rete, sito e subnet. Quando il bypass a pagamento è limitato per una località, associare ogni subnet IP e ogni gateway PSTN per tale posizione a un sito di rete. 
 
-Al momento di una chiamata PSTN, la posizione di un utente è determinata dalla subnet IP a cui sono connessi gli endpoint Teams dell'utente. Se un utente ha più client Teams situati in siti diversi, Location-Based Routing applica il routing di ogni client separatamente a seconda della posizione degli endpoint Teams.
+Al momento di una chiamata PSTN, la posizione di un utente è determinata dalla subnet IP a cui sono connessi gli endpoint di Teams dell'utente. Se un utente ha più client di Teams situati in siti diversi, Location-Based Routing applica il routing di ogni client separatamente a seconda della posizione degli endpoint di Teams.
 
-Per altre informazioni sulle impostazioni di rete, vedere Impostazioni di rete [per le funzionalità vocali nel cloud in Teams](cloud-voice-network-settings.md).
+Per altre informazioni sulle impostazioni di rete, vedere [Impostazioni di rete per le funzionalità vocali nel cloud in Teams](cloud-voice-network-settings.md).
 
 Questo articolo presuppone che un sito di rete possa trovarsi in uno degli stati seguenti:
 
@@ -58,27 +58,27 @@ Questo articolo presuppone che un sito di rete possa trovarsi in uno degli stati
 
 ### <a name="toll-bypass-evaluation-and-outcome"></a>Valutazione e risultati di bypass a pedaggio
 
-Quando si utilizza Location-Based routing, viene valutata una chiamata tra un utente Teams e la rete PSTN per determinare se il bypass a pedaggio è limitato. A seconda dei risultati, la chiamata verrà completata o non verrà completata. 
+Quando si utilizza Location-Based routing, viene valutata una chiamata tra un utente di Teams e pstn per determinare se il bypass a pagamento è limitato. A seconda dei risultati, la chiamata verrà completata o non verrà completata. 
 
 Se un utente è abilitato per Location-Based Routing e l'utente si trova in un sito in cui sono in vigore Location-Based Restrizioni di routing, il bypass a pagamento è limitato per tale utente. Teams utilizza le seguenti informazioni per determinare se il bypass a pagamento è limitato: 
 
-- Se l'utente Teams è abilitato per Location-Based Routing, come definito nei criteri per le chiamate Teams dell'utente.
+- Se l'utente di Teams è abilitato per Location-Based Routing, come definito nei criteri per le chiamate di Teams dell'utente.
 
-- Il Teams percorso del sito di rete dell'endpoint dell'utente e se il sito è abilitato o meno per Location-Based Routing.
+- Percorso del sito di rete endpoint dell'utente di Teams e se il sito è abilitato o meno per Location-Based Routing.
 
 - Percorso del sito di rete del gateway PSTN usato dalla chiamata.
 
 - Se il gateway PSTN usato dalla chiamata è stato abilitato per Location-Based Routing.
 
-- Per gli scenari di trasferimento, il percorso della chiamata PSTN si basa sulle impostazioni di routing della persona che trasferisce la chiamata e sulle impostazioni di routing Location-Based dell'utente Teams a cui viene trasferita la chiamata.  
+- Per gli scenari di trasferimento, il percorso della chiamata PSTN si basa sulle impostazioni di routing della persona che trasferisce la chiamata e sulle impostazioni di routing Location-Based dell'utente di Teams a cui viene trasferita la chiamata.  
 
-- Per gli scenari di conferenze e chiamate di gruppo, sia che un utente Teams per il quale il bypass a pagamento è limitato sia o abbia fatto parte della chiamata.
+- Per gli scenari di conferenze e chiamate di gruppo, sia che un utente di Teams per cui il bypass a pagamento è limitato sia o sia stato parte della chiamata.
 
-Se una chiamata non viene completata, l'utente Teams riceve una notifica nel modo seguente:
+Se una chiamata non può essere completata, l'utente di Teams riceve una notifica come segue:
 
 - Per le chiamate PSTN in uscita, nella finestra della chiamata viene visualizzato il messaggio seguente: Chiamata non consentita a causa delle impostazioni dell'organizzazione.
 
-- Per le chiamate PSTN in ingresso, la chiamata viene instradata in base alle impostazioni di inoltro di chiamata senza risposta dell'utente chiamato Teams, in genere alla segreteria telefonica. Se l'utente Teams non ha configurato le impostazioni di chiamata senza risposta, la chiamata verrà disconnessa.
+- Per le chiamate PSTN in ingresso, la chiamata viene instradata in base alle impostazioni di inoltro di chiamata senza risposta dell'utente di Teams, in genere alla segreteria telefonica. Se l'utente di Teams non ha configurato le impostazioni di chiamata senza risposta, la chiamata si disconnetterà.
 
 ## <a name="apply-location-based-routing"></a>Applicare Location-Based routing
 
@@ -141,7 +141,7 @@ Inoltre, se si imposta GatewayLbrEnabledUserOverride su True, gli utenti abilita
 
 ## <a name="restriction-rules"></a>Regole di restrizione
 
-Le regole di restrizione dipendono dal fatto che un utente Teams sia abilitato o meno per Location-Based routing.
+Le regole di restrizione dipendono dal fatto che un utente di Teams sia o meno abilitato per Location-Based routing.
 
 ### <a name="user-is-enabled-for-location-based-routing"></a>L'utente è abilitato per Location-Based Routing
 
@@ -163,7 +163,7 @@ Quando un utente è abilitato per il routing Location-Based, si applica quanto s
 
    - In qualsiasi altro scenario, ad esempio se l'utente è in roaming, la chiamata non è consentita e viene instradata alle impostazioni di inoltro di chiamata senza risposta dell'utente (in genere la segreteria telefonica).  
    
-- **Per una chiamata VoIP 1:1 Teams e trasferimento a PSTN**, tenere presente quanto segue:
+- **Per una chiamata VoIP 1:1 teams e il trasferimento a PSTN**, tenere presente quanto segue:
 
   - Il routing della chiamata, ovvero il gateway PSTN a cui egressare la chiamata, si basa sulle impostazioni di routing dell'utente che trasferisce la chiamata.
 
@@ -175,7 +175,7 @@ Quando un utente è abilitato per il routing Location-Based, si applica quanto s
 
     Il trasferimento sarà consentito se l'utente trasferito è in grado di effettuare la chiamata PSTN nella posizione corrente usando lo stesso gateway PSTN.
 
-- **Per una chiamata PSTN in arrivo o in uscita e il trasferimento a un altro utente Teams**, il trasferimento dipende dal seguente:
+- **Per una chiamata PSTN in arrivo o in uscita e il trasferimento a un altro utente di Teams**, il trasferimento dipende dai seguenti:
 
    - Impostazioni di routing dell'utente che riceve la chiamata trasferita. 
    - Percorso del sito di rete dell'endpoint.
@@ -186,7 +186,7 @@ Quando un utente è abilitato per il routing Location-Based, si applica quanto s
 
 ### <a name="user-is-not-enabled-for-location-based-routing"></a>L'utente non è abilitato per Location-Based Routing
 
-Quando un utente Teams non è abilitato per Location-Based Routing, tutte le chiamate da e verso tale utente devono essere instradate tramite un gateway PSTN non abilitato per Location-Based Routing. Una chiamata in ingresso a un utente di questo tipo instradata attraverso un gateway PSTN abilitato per Location-Based Il routing verrà instradato alle impostazioni di inoltro di chiamata senza risposta dell'utente (in genere la segreteria telefonica).
+Quando un utente di Teams non è abilitato per Location-Based Routing, tutte le chiamate da e verso quell'utente devono essere instradate attraverso un gateway PSTN non abilitato per Location-Based Routing. Una chiamata in ingresso a un utente di questo tipo instradata attraverso un gateway PSTN abilitato per Location-Based Il routing verrà instradato alle impostazioni di inoltro di chiamata senza risposta dell'utente (in genere la segreteria telefonica).
 
 ### <a name="decision-flows-for-inbound-and-outbound-calls"></a>Flussi decisionali per le chiamate in entrata e in uscita
 
@@ -205,10 +205,10 @@ I diagrammi seguenti mostrano i flussi decisionali per le chiamate in ingresso e
 
 Questa sezione descrive diversi scenari per limitare il bypass a pagamento tramite Location-Based Routing. Gli scenari confrontano il modo in cui vengono instradate le chiamate per gli utenti che non sono abilitati per Location-Based Routing con utenti abilitati per Location-Based Routing.
 
-- [Teams utente effettua una chiamata in uscita alla rete PSTN](#teams-user-places-an-outbound-call-to-the-pstn)
-- [Teams utente riceve una chiamata in ingresso dalla rete PSTN](#teams-user-receives-an-inbound-call-from-the-pstn)
-- [Teams utente trasferisce o inoltra la chiamata a un altro utente Teams](#teams-user-transfers-or-forwards-call-to-another-teams-user)
-- [Teams utente trasferisce o inoltra la chiamata all'endpoint PSTN](#teams-user-transfers-or-forwards-call-to-pstn-endpoint)
+- [L'utente di Teams effettua una chiamata in uscita alla rete PSTN](#teams-user-places-an-outbound-call-to-the-pstn)
+- [L'utente di Teams riceve una chiamata in ingresso dalla rete PSTN](#teams-user-receives-an-inbound-call-from-the-pstn)
+- [L'utente di Teams trasferisce o inoltra la chiamata a un altro utente di Teams](#teams-user-transfers-or-forwards-call-to-another-teams-user)
+- [L'utente di Teams trasferisce o inoltra la chiamata all'endpoint PSTN](#teams-user-transfers-or-forwards-call-to-pstn-endpoint)
 - [Squillo simultaneo](#simultaneous-ringing)
 - [Delega](#delegation)
 
@@ -216,7 +216,7 @@ Il diagramma seguente mostra le restrizioni abilitate da Location-Based Routing 
 
 ![Diagramma che mostra scenari per il routing Location-Based.](media/lbr-direct-routing.png "Diagramma che mostra scenari per Location-Based Routing")
 
-### <a name="teams-user-places-an-outbound-call-to-the-pstn"></a>Teams utente effettua una chiamata in uscita alla rete PSTN
+### <a name="teams-user-places-an-outbound-call-to-the-pstn"></a>L'utente di Teams effettua una chiamata in uscita alla rete PSTN
 
 #### <a name="user-not-enabled-for-location-based-routing"></a>Utente non abilitato per Location-Based Routing
 
@@ -234,7 +234,7 @@ Il routing delle chiamate in uscita per gli utenti abilitati per Location-Based 
 |Rete interna sconosciuta (Posizione4)    |  Chiamate PSTN non consentite a meno che gateway non abbia GatewayLbrEnabledUserOverride impostato su True       |
 |Rete esterna sconosciuta (Posizione5)    | Chiamate PSTN non consentite a meno che gateway non abbia GatewayLbrEnabledUserOverride impostato su True       |
 
-### <a name="teams-user-receives-an-inbound-call-from-the-pstn"></a>Teams utente riceve una chiamata in ingresso dalla rete PSTN
+### <a name="teams-user-receives-an-inbound-call-from-the-pstn"></a>L'utente di Teams riceve una chiamata in ingresso dalla rete PSTN
 
 #### <a name="user-not-enabled-for-location-based-routing"></a>Utente non abilitato per Location-Based Routing
 
@@ -252,11 +252,11 @@ A confronto, gli utenti abilitati per Location-Based Routing possono ricevere ch
 |Rete interna sconosciuta (Posizione4)   | Chiamate non indirizzate agli endpoint in Posizione4        |
 |Rete esterna sconosciuta (Posizione5)     | Chiamate non indirizzate agli endpoint in Posizione5        |
 
-### <a name="teams-user-transfers-or-forwards-call-to-another-teams-user"></a>Teams utente trasferisce o inoltra la chiamata a un altro utente Teams
+### <a name="teams-user-transfers-or-forwards-call-to-another-teams-user"></a>L'utente di Teams trasferisce o inoltra la chiamata a un altro utente di Teams
 
 Quando è coinvolto un endpoint PSTN, Location-Based Routing analizza se uno o entrambi gli utenti sono abilitati per Location-Based Routing e determina se la chiamata deve essere trasferita o inoltrata a seconda della posizione di entrambi gli endpoint. 
  
-Il trasferimento di chiamata richiede che l'utente che avvia la chiamata risponda mentre l'inoltro di chiamata non richiede la risposta alla chiamata iniziale. Le chiamate possono essere inoltrate anche se l'utente 1 non è in una posizione per ricevere chiamate in ingresso (vedere la tabella nella [Teams l'utente riceve una chiamata in ingresso dalla sezione PSTN](#teams-user-receives-an-inbound-call-from-the-pstn)) e le chiamate non possono essere trasferite se l'utente1 non è in grado di ricevere la chiamata in ingresso. 
+Il trasferimento di chiamata richiede che l'utente che avvia la chiamata risponda mentre l'inoltro di chiamata non richiede la risposta alla chiamata iniziale. Le chiamate possono essere inoltrate anche se l'utente 1 non è in una posizione per ricevere chiamate in ingresso (vedere la tabella [dell'utente di Teams riceve una chiamata in ingresso dalla sezione PSTN](#teams-user-receives-an-inbound-call-from-the-pstn) ) e le chiamate non possono essere trasferite se l'Utente1 non è in grado di ricevere la chiamata in ingresso. 
 
 #### <a name="user-not-enabled-for-location-based-routing"></a>Utente non abilitato per Location-Based Routing
 
@@ -268,7 +268,7 @@ Analogamente, un utente non abilitato per Location-Based Routing può ricevere s
 
 Il trasferimento e l'inoltro di chiamate PSTN in ingresso da un gateway abilitato per Location-Based Routing è consentito solo se l'utente di destinazione è abilitato per Location-Based Routing e si trova nello stesso sito. In caso contrario, il trasferimento e l'inoltro di chiamate non sono consentiti. 
 
-La tabella seguente mostra se l'inoltro di chiamata e i trasferimenti di chiamata sono consentiti, a seconda della posizione dell'utente di destinazione. In questa tabella, User1, disponibile in Site1, avvia il trasferimento o l'inoltro ad altri utenti Teams abilitati anche per Location-Based Routing e che si trovano in posizioni diverse.  
+La tabella seguente mostra se l'inoltro di chiamata e i trasferimenti di chiamata sono consentiti, a seconda della posizione dell'utente di destinazione. In questa tabella, User1, che si trova in Site1, avvia il trasferimento o l'inoltro ad altri utenti di Teams che sono abilitati anche per Location-Based Routing e che si trovano in posizioni diverse.  
 
 |Posizione endpoint utente di destinazione|Utente1 avvia il trasferimento di chiamata |Utente1 avvia l'inoltro di chiamata|
 |---------|---------|---------|
@@ -278,7 +278,7 @@ La tabella seguente mostra se l'inoltro di chiamata e i trasferimenti di chiamat
 |Rete interna sconosciuta (Utente5)| Non consentito|Non consentito|
 |Rete esterna sconosciuta (Utente6)| Non consentito|Non consentito|
 
-### <a name="teams-user-transfers-or-forwards-call-to-pstn-endpoint"></a>Teams utente trasferisce o inoltra la chiamata all'endpoint PSTN
+### <a name="teams-user-transfers-or-forwards-call-to-pstn-endpoint"></a>L'utente di Teams trasferisce o inoltra la chiamata all'endpoint PSTN
 
 #### <a name="user-not-enabled-for-location-based-routing"></a>Utente non abilitato per Location-Based Routing
 
@@ -313,7 +313,7 @@ La tabella seguente mostra come Location-Based Routing influisca sul routing di 
 
 Quando un utente abilitato per Location-Based Routing riceve una chiamata e lo squillo simultaneo è abilitato, Location-Based Routing analizza la posizione del chiamante e gli endpoint delle parti chiamate per determinare se la chiamata deve essere instradata. Lo squillo simultaneo segue le stesse regole di Location-Based dei trasferimenti e degli inolti delle chiamate. 
 
-#### <a name="simultaneous-ringing-for-another-teams-user"></a>Squillo simultaneo per un altro utente Teams
+#### <a name="simultaneous-ringing-for-another-teams-user"></a>Squillo simultaneo per un altro utente di Teams
 
 La tabella seguente mostra se Location-Based Routing consente lo squillo simultaneo a utenti diversi per una chiamata PSTN in ingresso per User1.
 
@@ -350,11 +350,11 @@ L'inoltro di chiamata e lo squillo simultaneo agli utenti e PSTN sono consentiti
 
 ### <a name="delegation"></a>Delega
 
-Un utente Teams può scegliere delegati autorizzati a effettuare e ricevere chiamate per suo conto. Le funzionalità di delega in Teams sono interessate dal routing Location-Based come indicato di seguito: 
+Un utente di Teams può scegliere delegati che possono effettuare e ricevere chiamate per proprio conto. Le funzionalità di delega in Teams sono interessate dal routing Location-Based come segue: 
 
-- Per le chiamate in uscita da un delegato abilitato per il routing Location-Based per conto di un delegante, si applicano le stesse regole. Il routing delle chiamate si basa sui criteri di autorizzazione alle chiamate, sui criteri di routing vocale e sulla posizione del delegato. Per altre informazioni, vedere [Teams utente effettua una chiamata in uscita alla rete PSTN](#teams-user-places-an-outbound-call-to-the-pstn). 
+- Per le chiamate in uscita da un delegato abilitato per il routing Location-Based per conto di un delegante, si applicano le stesse regole. Il routing delle chiamate si basa sui criteri di autorizzazione alle chiamate, sui criteri di routing vocale e sulla posizione del delegato. Per altre informazioni, vedere [L'utente di Teams effettua una chiamata in uscita alla rete PSTN](#teams-user-places-an-outbound-call-to-the-pstn). 
 
-- Per le chiamate PSTN in ingresso a un delegante, le stesse regole di routing Location-Based che si applicano per l'inoltro di chiamata o lo squillo simultaneo ad altri utenti si applicano anche ai delegati. Per altre informazioni, vedere [Teams trasferimento o inoltro di chiamata a un altro utente Teams](#teams-user-transfers-or-forwards-call-to-another-teams-user), [Teams trasferimento o inoltro di chiamata all'endpoint PSTN da parte dell'utente](#teams-user-transfers-or-forwards-call-to-pstn-endpoint) e [Squillo simultaneo](#simultaneous-ringing). Quando un delegato imposta un endpoint PSTN come destinazione squillo simultaneo, il criterio di routing vocale del delegato viene usato per instradare la chiamata alla rete PSTN. 
+- Per le chiamate PSTN in ingresso a un delegante, le stesse regole di routing Location-Based che si applicano per l'inoltro di chiamata o lo squillo simultaneo ad altri utenti si applicano anche ai delegati. Per altre informazioni, vedere [Trasferimento o inoltro di chiamata a un altro utente di Teams da parte dell'utente di Teams](#teams-user-transfers-or-forwards-call-to-another-teams-user), [trasferimento o inoltro della chiamata all'endpoint PSTN](#teams-user-transfers-or-forwards-call-to-pstn-endpoint) e [Squillo simultaneo](#simultaneous-ringing). Quando un delegato imposta un endpoint PSTN come destinazione squillo simultaneo, il criterio di routing vocale del delegato viene usato per instradare la chiamata alla rete PSTN. 
 
 - Per la delega, Microsoft consiglia che il delegante e i delegati associati si trovino nello stesso sito di rete. 
 
@@ -370,20 +370,20 @@ Le subnet IPv4 e IPv6 sono supportate, tuttavia, IPv6 ha la precedenza durante i
 
 ### <a name="client-support-for-location-based-routing"></a>Supporto client per Location-Based Routing
 
-Sono supportati i client Teams seguenti:
-- Teams client desktop (Windows e Mac)
-- client per dispositivi mobili Teams (iOS e Android)
-- Teams telefoni IP
+Sono supportati i client di Teams seguenti:
+- Client desktop di Teams (Windows e Mac)
+- Client di Teams per dispositivi mobili (iOS e Android)
+- Telefoni IP di Teams
 
-Il client Web Teams e i client Skype for Business non sono supportati.
+Il client Web di Teams e i client Skype for Business non sono supportati.
 
 ### <a name="capabilities-not-supported-by-location-based-routing"></a>Funzionalità non supportate dal routing in base alla posizione
 
-Location-Based Routing non si applica ai tipi di interazioni seguenti. Location-Based Routing non viene applicato quando Teams endpoint interagiscono con gli endpoint PSTN negli scenari seguenti: 
+Location-Based Routing non si applica ai tipi di interazioni seguenti. Location-Based Routing non viene applicato quando gli endpoint di Teams interagiscono con gli endpoint PSTN negli scenari seguenti: 
 
 - Parcheggio di chiamata o recupero delle chiamate PSTN tramite Parcheggio di chiamata 
 
-- Un utente Skype for Business locale o un utente di Skype for Business Online chiama un utente Teams  
+- Un utente Skype for Business locale o un utente di Skype for Business Online chiama un utente di Teams  
 
 ### <a name="location-based-routing-for-conferencing"></a>Location-Based Routing per le conferenze
 
@@ -395,7 +395,7 @@ In una conferenza telefonica avviata da un utente senza licenza per i servizi di
 
 Se l'utente abilitato per il routing Location-Based partecipa alla conferenza telefonica da un sito interno non abilitato per Location-Based Routing, le restrizioni nel paragrafo precedente non vengono applicate. 
 
-I servizi di conferenza on-network per Audioconferenza NON devono essere distribuiti con apparecchiature di telefonia in India.
+I servizi di conferenza on-network per i servizi di audioconferenza NON devono essere distribuiti con apparecchiature di telefonia in India.
 
 
 ### <a name="media-bypass-requirement-for-location-based-routing"></a>Requisito per il bypass multimediale per il routing Location-Based
@@ -410,4 +410,4 @@ Direct Voice over IP (VoIP) non deve essere distribuito con alcun dispositivo di
 ## <a name="related-articles"></a>Articoli correlati
 
 - [Abilitare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-enable.md)
-- [Impostazioni di rete per le funzionalità vocali cloud in Teams](cloud-voice-network-settings.md)
+- [Impostazioni di rete per le funzionalità voce cloud in Teams](cloud-voice-network-settings.md)

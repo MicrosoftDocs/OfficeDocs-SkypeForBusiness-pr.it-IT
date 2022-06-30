@@ -1,8 +1,8 @@
 ---
-title: Creare team di gestione delle persone in Microsoft Teams
+title: Creare team di responsabili delle persone in Microsoft Teams
 ms.reviewer: pbethi
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -16,31 +16,31 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cad2ed4fdbcec7f13f5b2e932d34395fe4b4c339
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: bd880e58b2c6818b8738afd5fb4e5efaf78642d4
+ms.sourcegitcommit: ff783fad2fb5d412e864e3af2ceaa8fedcd9da07
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58628358"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66562585"
 ---
-# <a name="create-people-manager-teams-in-microsoft-teams"></a>Creare team di gestione delle persone in Microsoft Teams
+# <a name="create-people-manager-teams-in-microsoft-teams"></a>Creare team di responsabili delle persone in Microsoft Teams
 
 
-Quando si esegue l'Microsoft Teams, invece di avviarlo con una "lista vuota" (senza team o canali), è consigliabile configurare un framework di base di team e canali. In questo modo si evita la "espansione del team", in cui gli utenti creano numerosi team quando devono creare canali nei team esistenti. Per iniziare a usare una struttura di team e canali ben progettata, è stato creato uno script di PowerShell che crea un team per ogni responsabile della prima e della seconda riga, con i report diretti di ogni manager come membri del team. Si tratta di uno script "point-in-time" (non aggiorna automaticamente i team o i canali quando le persone vengono aggiunte o rimosse da un'organizzazione). Ma è uno strumento prezioso che è possibile usare per imporre un ordine alla struttura Teams struttura fin dall'inizio. Questo script legge Azure AD e ottiene un elenco di responsabili e dei relativi report diretti. Usa questo elenco per creare un team per ogni responsabile delle persone. 
+Quando si implementa Microsoft Teams, invece di lanciare con una "lista vuota" (nessun team o canale), si consiglia vivamente di configurare un framework di base di team e canali. Questo aiuta a prevenire "team tentacolare", in cui gli utenti creano numerosi team quando dovrebbero creare canali in team esistenti. Per aiutarti a iniziare con una struttura ben progettata di team e canali, abbiamo creato uno script di PowerShell che crea un team per ogni responsabile della prima e seconda riga, con i dipendenti diretti di ogni manager come membri del team. Questo è uno script "point-in-time" (non aggiorna automaticamente i team o i canali quando le persone vengono aggiunte o rimosse da un'organizzazione). Ma è uno strumento prezioso che puoi usare per imporre un certo ordine sulla struttura di Teams fin dall'inizio. Questo script legge Azure AD, ottiene un elenco di responsabili e i relativi dipendenti diretti. Usa questo elenco per creare un team per ogni responsabile delle persone. 
 
 ## <a name="how-to-use-the-powershell-script"></a>Come usare lo script di PowerShell 
 
-Per iniziare, eseguire i responsabili dell'esportazione e il relativo [script](scripts/powershell-script-create-teams-from-managers-export-managers.md) diretto, presupponendo che siano già stati eseguiti i moduli [di PowerShell Connessione-AzureAd](/powershell/module/azuread/connect-azuread?view=azureadps-2.0) e [Connessione-MicrosoftTeams).](/powershell/module/teams/connect-microsoftteams?view=teams-ps) Lo *script Export managers e directs* crea un file con valori delimitati da tabulazioni (ExportedManagerDirects.txt) che elenca tutti i responsabili con i loro report diretti. 
+Per iniziare, eseguire lo [script Export manager e il relativo script directs](scripts/powershell-script-create-teams-from-managers-export-managers.md) ( che presuppone che siano già stati eseguiti i moduli [Connect-AzureAd](/powershell/module/azuread/connect-azuread?view=azureadps-2.0) e [Connect-MicrosoftTeams](/powershell/module/teams/connect-microsoftteams?view=teams-ps) PowerShell). Lo script *Export manager e i relativi directs* crea un file con valori delimitati da tabulazioni (ExportedManagerDirects.txt) che elenca tutti i responsabili con i propri dipendenti diretti. 
 
-Eseguire quindi lo [script Create new people manager teams](scripts/powershell-script-create-teams-from-managers-new-teams.md). Questo script legge il file ExportedManagerDirects.txt e crea un team per ogni responsabile, con i report diretti di tale responsabile come membri. Se un manager o un diretto non è abilitato per Teams, lo script li ignora e non crea un team. Esaminare il report, quindi eseguire di nuovo lo script dopo aver attivato Teams per chiunque ne abbia bisogno. Lo script non crea un secondo team per qualsiasi responsabile per cui è già stato creato un team.
+Quindi, eseguire lo [script Crea nuovi team di gestione persone](scripts/powershell-script-create-teams-from-managers-new-teams.md). Questo script legge nel file ExportedManagerDirects.txt e crea un team per ogni responsabile, con i dipendenti diretti di quel responsabile come membri. Se un manager o un diretto non è abilitato per Teams, lo script li ignora e non crea un team. (Rivedere il report, quindi eseguire di nuovo lo script dopo aver attivato Teams per chiunque ne abbia bisogno. Lo script non crea un secondo team per nessun responsabile per cui ha già creato un team.
 
-Per ogni team, lo script crea un canale Generale e un canale "Solo per divertimento". 
+Per ogni team, lo script crea un canale Generale e "Solo per divertimento". 
 
 ## <a name="best-practices"></a>Procedure consigliate
 
-- Chiedere a ogni responsabile delle persone di aggiungere il sito Web per le comunicazioni di emergenza dell'organizzazione come scheda al canale Generale per ogni team. 
+- Chiedi a ciascun responsabile di aggiungere il sito Web di comunicazione delle crisi della tua organizzazione come scheda al canale Generale per ogni team. 
 
-- Controllare la nuova app Crisis Communications leggendo questo post di blog dell'8 marzo 2020: Coordinare le comunicazioni di emergenza [usando Microsoft Teams + Power Platform.](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/coordinate-crisis-communications-using-microsoft-teams-power/ba-p/1216715)
+- Scopri la nuova app Crisis Communications leggendo questo post di blog dell'8 marzo 2020: [Coordinare le comunicazioni di crisi usando Microsoft Teams e Power Platform](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/coordinate-crisis-communications-using-microsoft-teams-power/ba-p/1216715).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
