@@ -20,12 +20,12 @@ ms.localizationpriority: high
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 330faa00c2ba14f03e5219642fa274fc24eb8765
-ms.sourcegitcommit: 1ac37cc27d4ccb3e1dae20ca1929214e17be2075
+ms.openlocfilehash: f33ab77f2b615bcdd08f14512585b653027c38e8
+ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65913424"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66240975"
 ---
 # <a name="meetings-webinars-and-live-events"></a>Riunioni, webinar ed eventi live 
 
@@ -176,6 +176,8 @@ Per gestire un evento di successo, seguire le procedure descritte di seguito:
 ### <a name="guidelines-for-your-end-users"></a>Linee guida per gli utenti finali
 
 Gli organizzatori e i relatori dovranno applicare i seguenti consigli:
+
+- Per le riunioni con più di 10 partecipanti, usare [Q&A](/MicrosoftTeams/manage-qna-for-teams) per dare ai partecipanti l'opportunità di chiedere formalmente e ricevere risposte alle domande, nonché di partecipare a discussioni strutturate.
 
 - Per creare una riunione senza intoppi, gli organizzatori di eventi possono impostare relatori predefiniti. Dopo l'avvio di una riunione, i relatori possono promuovere anche altri partecipanti al ruolo di relatore.
 
