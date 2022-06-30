@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 01b51694b22d44ace9980f2b98fdb89a9150a12d
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: b96108f3bf548475cd19822967ba4e484fb26703
+ms.sourcegitcommit: b383b309dbdf9caac7ad7e4a94df8d89016dc485
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66240745"
+ms.locfileid: "66551203"
 ---
 # <a name="communication-compliance-with-microsoft-teams"></a>Conformità delle comunicazioni con Microsoft Teams
 
@@ -53,7 +53,7 @@ Gli amministratori di Teams possono configurare i criteri di conformità delle c
 >[!NOTE]
 >La disponibilità per i messaggi segnalati dall'utente per le organizzazioni con licenza e utilizzando [la conformità alle comunicazioni](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing) e Microsoft Teams è iniziata a maggio 2022. Questa funzionalità sarà disponibile entro il 31 agosto 2022 per tutte le organizzazioni con licenza e che usano la conformità alle comunicazioni fino a luglio 2022. Per le organizzazioni che iniziano a usare la conformità alle comunicazioni dopo luglio 2022, la disponibilità dei criteri per i messaggi segnalati dagli utenti può richiedere fino a 30 giorni dalla data della licenza e dal primo utilizzo della conformità alle comunicazioni.
 
-L'opzione *Segnala un problema* nei messaggi di chat interna di Teams è abilitata per impostazione predefinita e può essere controllata tramite i criteri di messaggistica di Teams [nell'interfaccia di amministrazione di Teams](/microsoftteams/manage-teams-in-modern-portal). In questo modo gli utenti dell'organizzazione possono inviare messaggi di chat interna inappropriati per la revisione da parte dei revisori della conformità delle comunicazioni per i criteri. Per altre informazioni sui messaggi segnalati dall'utente nella conformità alle comunicazioni, vedere [Criteri di conformità delle comunicazioni](/microsoft-365/compliance/communication-compliance-policies#user-reported-messages-policy).
+L'opzione *Segnala un problema* per i messaggi di chat personali e di gruppo di Teams è abilitata per impostazione predefinita e può essere controllata tramite i criteri di messaggistica di [Teams nell'interfaccia di amministrazione di Teams](/microsoftteams/manage-teams-in-modern-portal). In questo modo gli utenti dell'organizzazione possono inviare messaggi di chat interna inappropriati per la revisione da parte dei revisori della conformità delle comunicazioni per i criteri. Per altre informazioni sui messaggi segnalati dall'utente nella conformità alle comunicazioni, vedere [Criteri di conformità delle comunicazioni](/microsoft-365/compliance/communication-compliance-policies#user-reported-messages-policy).
 
 ![Segnala un menu di preoccupazione.](./media/communication-compliance-report-a-concern-full-menu.png)
 
