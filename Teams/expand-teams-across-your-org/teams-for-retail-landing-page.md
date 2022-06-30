@@ -22,12 +22,12 @@ searchScope:
 - Microsoft Cloud for Retail
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 03b68923ae47324525f192949d442e94e36685c2
-ms.sourcegitcommit: 55926815f13efce42fb45f63d95515a5765e0d40
+ms.openlocfilehash: f965e69e3dda921cf5fdf348a728db403fc26a84
+ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753049"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66494733"
 ---
 # <a name="get-started-with-teams-for-retail"></a>Introduzione a Teams per la vendita al dettaglio
 
@@ -127,7 +127,7 @@ Il personale al dettaglio è in genere una forza lavoro mobile: lavoratori e man
 
 Con un fatturato elevato, la possibilità di aggiungere e rimuovere rapidamente gli account e ottenere i criteri giusti assegnati è fondamentale. Introduzione alla procedura guidata di onboarding Frontline Worker nell’interfaccia di amministrazione di Microsoft 365. La procedura guidata configura un team per gli operatori in prima linea e assegna licenze e pacchetti di criteri a ogni membro del team. Per altre informazioni, vedere [Usare la procedura guidata di onboarding per gli operatori in prima linea nell’esercizio del loro lavoro](../flw-onboarding-wizard.md).
 
-Se si hanno molti utenti da aggiungere (più di 100), è possibile eseguire rapidamente il provisioning di utenti e team e assegnare tutti i criteri pertinenti con una [distribuzione con script per gli operatori in prima linea](../flw-scripted-deployment.md).
+Se i team da distribuire sono tanti, vedere [Distribuire i team su vasta scala per gli operatori in prima linea](../deploy-teams-at-scale.md).
 
 La presenza di operatori in prima linea è spesso meno prevedibile rispetto ad altri dipendenti, in quanto le ore lavorative in genere non sono uguali ogni giorno. Gli amministratori possono configurare Teams con l'accesso basato su turni (anteprima) in modo da visualizzare un set di stati di presenza basati su turni per gli operatori in prima linea dell'organizzazione per indicare quando sono al lavoro nel loro turno e quando non lo sono. È inoltre possibile gestire l'accesso a Teams quando gli operatori in prima linea non sono impegnati in un turno. Per altre informazioni, vedi [Gestire l'accesso basato sui turni per gli operatori in prima linea](shifts/manage-shift-based-access-flw.md).
 
