@@ -1,7 +1,7 @@
 ---
-title: Teams di criteri per enti pubblici
-author: serdars
-ms.author: serdars
+title: Pacchetti di criteri di Teams per enti pubblici
+ms.author: mabond
+author: mkbond007
 manager: serdars
 ms.reviewer: aaglick
 ms.topic: article
@@ -9,20 +9,25 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 ms.collection:
-  - M365-collaboration
+- M365-collaboration
 appliesto:
-  - Microsoft Teams
-f1.keywords: null
-ms.custom: null
+- Microsoft Teams
+f1.keywords: ''
+ms.custom: ''
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come usare e gestire i Teams dei criteri per l'organizzazione governativa.
+description: Informazioni su come usare e gestire i pacchetti di criteri di Teams per l'organizzazione governativa.
+ms.openlocfilehash: fdaacb8b551c1031d71c522dffdbc4afd9f551a8
+ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66564094"
 ---
-
-# <a name="teams-policy-packages-for-government"></a>Teams di criteri per enti pubblici
+# <a name="teams-policy-packages-for-government"></a>Pacchetti di criteri di Teams per enti pubblici
 
 > [!NOTE]
-> I pacchetti di criteri non sono attualmente disponibili nelle distribuzioni Microsoft 365 Government GCC High o DoD.
+> I pacchetti di criteri non sono attualmente disponibili nelle distribuzioni di Microsoft 365 Government GCC High o DoD.
 
 ## <a name="overview"></a>Panoramica
 
@@ -36,19 +41,19 @@ I pacchetti di criteri predefiniscono i criteri per gli elementi seguenti, a sec
 - Configurazione delle app
 - Eventi live
 
-Teams attualmente include i pacchetti di criteri per enti pubblici seguenti.
+Teams attualmente include i pacchetti di criteri seguenti per il governo.
 
 |Nome del pacchetto nell'interfaccia di amministrazione di Microsoft Teams|Ideale per|Descrizione |
 |---------|---------|---------|
 |Responsabile della sicurezza pubblica  |Responsabili della sicurezza pubblica nell'organizzazione governativa  |Crea un set di criteri e impostazioni dei criteri che si applicano ai responsabili della sicurezza pubblica nell'organizzazione. |
-|Frontline Manager  |Responsabili in prima linea nell'organizzazione governativa |Crea un set di criteri e applica tali impostazioni ai responsabili in prima linea dell'organizzazione.|
-|Operaio in prima linea  |Frontline Workers nell'organizzazione governativa |Crea un set di criteri e applica tali impostazioni ai Frontline Worker dell'organizzazione.|
+|Gestore in prima linea  |Frontline Manager nell'organizzazione governativa |Crea un set di criteri e applica tali impostazioni ai frontline manager dell'organizzazione.|
+|Frontline worker  |Operatori in prima linea nell'organizzazione governativa |Crea un set di criteri e applica tali impostazioni agli operatori in prima linea nell'organizzazione.|
 
 ![Screenshot dei pacchetti di criteri sanitari.](media/policy-packages-gov.png)
 
-A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare facilmente i criteri collegati a un determinato pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri per i funzionari della sicurezza pubblica agli utenti dell'organizzazione, viene creato un criterio denominato PublicSafety_Officer per ogni criterio nel pacchetto.
+A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare facilmente i criteri collegati a un determinato pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri di Responsabili della sicurezza pubblica agli utenti dell'organizzazione, viene creato un criterio denominato PublicSafety_Officer per ogni criterio del pacchetto.
 
-![Screenshot dei criteri nel pacchetto di operatori clinici del settore sanitario.](media/policy-packages-public-safety-officer.png)
+![Screenshot dei criteri nel pacchetto Operatori clinici sanitari.](media/policy-packages-public-safety-officer.png)
 
 ## <a name="manage-policy-packages"></a>Gestire i pacchetti di criteri
 

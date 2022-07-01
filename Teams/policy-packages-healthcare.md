@@ -1,7 +1,7 @@
 ---
 title: Pacchetti di criteri di Teams per il settore sanitario
-author: serdars
-ms.author: serdars
+ms.author: mabond
+author: mkbond007
 manager: serdars
 ms.reviewer: aaglick
 ms.topic: article
@@ -9,20 +9,25 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 ms.collection:
-  - M365-collaboration
-  - microsoftcloud-healthcare
+- M365-collaboration
+- microsoftcloud-healthcare
 appliesto:
-  - Microsoft Teams
-f1.keywords: null
-ms.custom: null
+- Microsoft Teams
+f1.keywords: ''
+ms.custom: ''
 ms.localizationpriority: medium
 search.appverid: MET150
 searchScope:
-  - Microsoft Teams
-  - Microsoft Cloud for Healthcare
+- Microsoft Teams
+- Microsoft Cloud for Healthcare
 description: Informazioni su come usare e gestire i pacchetti di criteri di Teams per l'organizzazione nel settore sanitario.
+ms.openlocfilehash: c4a1d6909cd6a2c7f58c3a30353a3d4398c4c70e
+ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563724"
 ---
-
 # <a name="teams-policy-packages-for-healthcare"></a>Pacchetti di criteri di Teams per il settore sanitario
 
 ## <a name="overview"></a>Panoramica
@@ -51,7 +56,7 @@ Teams attualmente include i pacchetti di criteri per il settore sanitario seguen
 
 A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare facilmente i criteri collegati a un determinato pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri per gli operatori sanitari nell'organizzazione, viene creato un criterio denominato Healthcare_ClinicalWorker per ogni criterio presente nel pacchetto.
 
-![Screenshot dei criteri nel pacchetto di operatori clinici del settore sanitario.](media/policy-packages-healthcare-clinical-worker.png)
+![Screenshot dei criteri nel pacchetto Operatori clinici sanitari.](media/policy-packages-healthcare-clinical-worker.png)
 
 ## <a name="get-started-with-policy-packages"></a>Introduzione ai pacchetti di criteri
 

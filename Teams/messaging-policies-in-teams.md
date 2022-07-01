@@ -1,7 +1,7 @@
 ---
 title: Gestire i criteri di messaggistica in Teams
-ms.author: serdars
-author: SerdarSoysal
+ms.author: mabond
+author: mkbond007
 manager: serdars
 ms.reviewer: jastark
 ms.topic: article
@@ -20,33 +20,33 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni sui criteri di messaggistica e su come possono essere usati per controllare la messaggistica chat in Teams.
-ms.openlocfilehash: 00146d35faac13ef511a06b6c442341832867bcc
-ms.sourcegitcommit: 2388838163812eeabcbd5331aaf680b79da3ccba
+ms.openlocfilehash: f74ae28176f147d768e8e551ac07d1bcf189836b
+ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64592791"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563964"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in Teams
 
 <!--- Add zone marker here--->
 
-I criteri di messaggistica vengono usati per controllare quali funzionalità di messaggistica di chat e canale sono disponibili per gli utenti [(proprietari](assign-roles-permissions.md) e membri) in Microsoft Teams. È possibile usare i criteri globali (impostazione predefinita a livello di organizzazione) creati automaticamente oppure creare e assegnare criteri di messaggistica personalizzati.
+I criteri di messaggistica vengono usati per controllare quali funzionalità di messaggistica di chat e canali sono disponibili per [gli utenti (proprietari e membri)](assign-roles-permissions.md) in Microsoft Teams. È possibile usare il criterio globale (predefinito a livello di organizzazione) creato automaticamente oppure creare e assegnare criteri di messaggistica personalizzati.
 
-Gli utenti dell'organizzazione riceveranno automaticamente i criteri globali, a meno che non si creino e assegnino criteri personalizzati. Modificare le impostazioni nei criteri globali oppure creare e assegnare uno o più criteri personalizzati per attivare o disattivare le caratteristiche desiderate.
+Gli utenti dell'organizzazione riceveranno automaticamente i criteri globali, a meno che non vengano creati e assegnati criteri personalizzati. Modificare le impostazioni nel criterio globale oppure creare e assegnare uno o più criteri personalizzati per attivare o disattivare le caratteristiche desiderate.
 
 > [!NOTE]
-> Per garantire la sincronizzazione dopo una modifica dei criteri, potrebbe essere necessario un riavvio per determinate istanze. 
+> Per garantire la sincronizzazione dopo una modifica dei criteri, potrebbe essere necessario un riavvio per alcune istanze. 
 
 ## <a name="create-a-custom-messaging-policy"></a>Creare criteri di messaggistica personalizzati
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a Criteri **di messaggistica**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Criteri di messaggistica**.
 2. Selezionare **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio.
 4. Scegliere le impostazioni desiderate.
 5. Selezionare **Salva**.
 
-Ad esempio, si vuole assicurarsi che i messaggi inviati non siano eliminati o modificati. Creare un nuovo criterio personalizzato denominato "Mantieni messaggi inviati" e disattivare le impostazioni seguenti:
+Ad esempio, si vuole assicurarsi che i messaggi inviati non vengano eliminati o modificati. Creare un nuovo criterio personalizzato denominato "Conserva messaggi inviati" e disattivare le impostazioni seguenti:
 
 - I proprietari possono eliminare i messaggi inviati
 - Gli utenti possono eliminare i messaggi inviati
@@ -54,11 +54,11 @@ Ad esempio, si vuole assicurarsi che i messaggi inviati non siano eliminati o mo
 
 Assegnare quindi il criterio agli utenti.
 
-## <a name="edit-a-messaging-policy"></a>Modificare un criterio di messaggistica
+## <a name="edit-a-messaging-policy"></a>Modificare i criteri di messaggistica
 
 È possibile modificare il criterio globale e i criteri personalizzati creati.
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a Criteri **di messaggistica**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Criteri di messaggistica**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi selezionare **Modifica**.
 3. Da lì, apportare le modifiche desiderate.
 4. Selezionare **Salva**.
@@ -78,43 +78,43 @@ A un utente può essere assegnato un solo criterio di messaggistica alla volta.
 
 Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 
-- **I proprietari possono eliminare i messaggi inviati**  Usare questa impostazione per consentire ai proprietari di eliminare i messaggi del canale o i post inviati dagli utenti.
+- **I proprietari possono eliminare i messaggi inviati**  Usare questa impostazione per consentire ai proprietari di eliminare i messaggi o i post del canale inviati dall'utente.
 - **Eliminare i messaggi inviati** Usare questa impostazione per consentire agli utenti di eliminare i messaggi inviati in chat.
-- **Eliminare la chat** Usare questa impostazione per consentire agli utenti di eliminare i messaggi inviati in chat.
+- **Eliminare una chat** Usare questa impostazione per consentire agli utenti di eliminare i messaggi inviati in chat.
 - **Modificare i messaggi inviati** Usare questa impostazione per consentire agli utenti di modificare i messaggi inviati in chat.
-- **Conferme di lettura** Le conferme di lettura consentono al mittente di un messaggio di chat di ricevere una notifica quando il messaggio è stato letto dal destinatario in 1:1 e le chat di gruppo 20 persone o meno. Le conferme di lettura dei messaggi eliminano incertezze sulla lettura di un messaggio e migliorano la comunicazione del team. Le conferme di lettura non vengono acquisite nei report di eDiscovery.  
-    - **Controllato dall'utente** Questo significa che gli utenti possono decidere se vogliono che le conferme di lettura siano ON o OFF. L'impostazione predefinita all'interno dell'app è ATTIVAta. Gli utenti possono quindi disattivarla.
-    - **Attivato per tutti** Questo significa che tutti gli utenti del tenant avranno la funzionalità ATTIVAta senza alcuna opzione per disattivarla. Quando si usa  l'impostazione Attivata per tutti, l'unico modo per impostare le conferme per l'intero tenant è avere un solo criterio di messaggistica per l'intero tenant (il criterio predefinito denominato "Globale (impostazione predefinita a livello di organizzazione)") oppure impostare tutti i criteri di messaggistica nel tenant con le stesse impostazioni per le ricevute. La caratteristica conferme di lettura è più efficace se è **abilitata per tutti**.
-    - **Disattivato per tutti** Questo significa che la caratteristica è disabilitata e nessuno nel tenant ha conferme di lettura né può attivarla.
+- **Conferme di lettura** Le conferme di lettura consentono al mittente di un messaggio di chat di ricevere una notifica quando il messaggio è stato letto dal destinatario in 1:1 e in chat di gruppo almeno 20 persone. Le conferme di lettura dei messaggi eliminano dubbi sul fatto che un messaggio sia stato letto e migliorano le comunicazioni del team. Le conferme di lettura non vengono acquisite nei report di eDiscovery.  
+    - **Controllo dell'utente** Questo significa che gli utenti possono decidere se attivare o disattivare le conferme di lettura. L'impostazione predefinita all'interno dell'app è ATTIVATA. Gli utenti possono quindi disattivarla.
+    - **Attivato per tutti gli utenti** Questo significa che tutti gli utenti del tenant avranno la funzionalità attivata senza la possibilità di disattivarla. Quando si usa l'impostazione **Attivato per tutti** , l'unico modo per impostare le ricevute per l'intero tenant consiste nell'avere un solo criterio di messaggistica per l'intero tenant (il criterio predefinito denominato "Globale (impostazione predefinita a livello di organizzazione)") oppure fare in modo che tutti i criteri di messaggistica nel tenant utilizzino le stesse impostazioni per le conferme. La caratteristica conferme di lettura è più efficace se è **abilitata per tutti**.
+    - **Disattivato per tutti gli utenti** Questo significa che la caratteristica è disabilitata e nessuno nel tenant ha conferme di lettura né può attivarla.
 <a name="bkchat"> </a>
 
 - **Chat**  Attivare questa impostazione se si vuole che gli utenti dell'organizzazione possano usare l'app Teams per chattare con altre persone.
-- *Usare Giphy nelle* conversazioni* Se si attiva Giphys, gli utenti possono includere Giphys nelle conversazioni in chat con altre persone. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una classificazione dei contenuti. Oltre a attivare questa impostazione, è necessario abilitare esperienze connesse facoltative per consentire a Giphys di accedere alle conversazioni.[](/deployoffice/privacy/manage-privacy-controls#policy-setting-for-optional-connected-experiences)
-- **Classificazione del contenuto Giphy**
-  - **Nessuna restrizione** Questo significa che gli utenti saranno in grado di inserire qualsiasi Giphy nelle chat, indipendentemente dalla classificazione del contenuto.
-  - **Moderato**  Questo significa che gli utenti saranno in grado di inserire Giphys nelle chat, ma saranno moderatamente limitati dai contenuti per adulti.
-  - **Strict**  Questo significa che gli utenti saranno in grado di inserire Giphys nelle chat, ma saranno strettamente limitati dai contenuti per adulti.
-- **Meme nelle conversazioni** Se attivi Memes, gli utenti possono includere Memes nelle conversazioni in chat con altre persone.
-- **Adesivi nelle conversazioni** Se si attiva questa opzione, gli utenti possono includere adesivi nelle conversazioni in chat con altre persone.
-- **Anteprime url** Usare questa impostazione per attivare o disattivare l'anteprima automatica degli URL nei messaggi.
-- **Tradurre i messaggi** Attivare questa impostazione per consentire agli utenti di tradurre Teams messaggi nella lingua specificata dalle impostazioni della lingua personale per Microsoft 365 o Office 365.
-- **Lettore immersivo per i messaggi** Attivare questa impostazione per consentire agli utenti di visualizzare i messaggi in Microsoft Strumento di lettura immersiva. Strumento di lettura immersiva è uno strumento di apprendimento che offre un'esperienza di lettura a schermo intero per aumentare la leggibilità del testo.
-- **Inviare messaggi urgenti usando le notifiche di priorità** Se si attiva questa opzione, gli utenti possono inviare messaggi usando le [notifiche di priorità](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462). Le notifiche di priorità notificano agli utenti ogni 2 minuti per 20 minuti o finché i messaggi contrassegnati come urgenti non vengono ricevuti e letti dal destinatario. Questa caratteristica aumenta la probabilità che il messaggio si agiti in modo appropriato. Non è possibile modificare un messaggio urgente dopo l'invio.
+- *Usare Giphy nelle conversazioni** Se si attiva Giphy, gli utenti possono includere Giphy nelle conversazioni in chat con altre persone. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una classificazione dei contenuti. Oltre ad attivare questa impostazione, è necessario abilitare [esperienze connesse facoltative](/deployoffice/privacy/manage-privacy-controls#policy-setting-for-optional-connected-experiences) per consentire giphy nelle conversazioni.
+- **Valutazione del contenuto Giphy**
+  - **Nessuna restrizione** Ciò significa che gli utenti saranno in grado di inserire qualsiasi Giphy in chat indipendentemente dalla classificazione del contenuto.
+  - **Moderata**  Questo significa che gli utenti saranno in grado di inserire Giphy in chat, ma sarà moderatamente limitato dal contenuto per adulti.
+  - **Rigorosa**  Ciò significa che i tuoi utenti saranno in grado di inserire Giphy in chat, ma sarà strettamente limitato dal contenuto per adulti.
+- **Meme nelle conversazioni** Se attivi Meme, gli utenti possono includere memi nelle conversazioni in chat con altre persone.
+- **Adesivi nelle conversazioni** Se si attiva questa opzione, gli utenti possono includere gli adesivi nelle conversazioni in chat con altre persone.
+- **Anteprime degli URL** Usare questa impostazione per attivare o disattivare l'anteprima automatica degli URL nei messaggi.
+- **Tradurre messaggi** Attivare questa impostazione per consentire agli utenti di tradurre automaticamente i messaggi di Teams nella lingua specificata dalle impostazioni personali della lingua per Microsoft 365 o Office 365.
+- **Strumento di lettura immersiva per i messaggi** Attivare questa impostazione per consentire agli utenti di visualizzare i messaggi in Microsoft Strumento di lettura immersiva. Strumento di lettura immersiva è uno strumento di apprendimento che offre un'esperienza di lettura a schermo intero per migliorare la leggibilità del testo.
+- **Inviare messaggi urgenti usando le notifiche di priorità** Se si attiva questa opzione, gli utenti possono inviare messaggi usando [le notifiche di priorità](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462). Le notifiche di priorità avvisano gli utenti ogni 2 minuti per 20 minuti o fino a quando i messaggi contrassegnati come *urgenti* non vengono raccolti e letti dal destinatario. Questa caratteristica aumenta la probabilità che il messaggio venga agito in modo tempestivo. Non è possibile modificare un messaggio urgente dopo averlo inviato.
 - **Creare messaggi vocali**
   > [!Important]
   > I messaggi audio non vengono acquisiti nei report di eDiscovery.
-  - **Consentito nelle chat e nei canali** Questo significa che gli utenti possono lasciare i messaggi audio sia nelle chat che nei canali.
+  - **Consentito nelle chat e nei canali** Questo significa che gli utenti possono lasciare messaggi audio sia in chat che in canali.
   - **Consentito solo nelle chat** Questo significa che gli utenti possono lasciare i messaggi audio nelle chat, ma non nei canali.
-  - **Non abilitato** Questo significa che gli utenti non possono creare messaggi audio nelle chat o nei canali.  
-- **Nei dispositivi mobili, visualizza i canali preferiti sopra le chat recenti** Abilitare questa impostazione per spostare i canali preferiti nella parte superiore dello schermo del dispositivo mobile in modo che un utente non sia necessario scorrere per trovarli.
-- **Rimuovere utenti dalle chat di gruppo** Attivare questa impostazione per consentire a un utente di rimuovere altri utenti da una chat di gruppo. Questa caratteristica consente di continuare una chat con un gruppo di persone più piccolo senza perdere la cronologia della chat.
-- **Previsioni di testo** Attivare questa impostazione per consentire a un utente di ottenere previsioni di testo per i messaggi di chat.
-- **Risposte suggerite**  Attivare questa impostazione per abilitare le risposte suggerite per i messaggi di chat.
+  - **Non abilitato** Questo significa che gli utenti non possono creare messaggi audio in chat o canali.  
+- **Nei dispositivi mobili, visualizza i canali preferiti sopra le chat recenti** Abilita questa impostazione per spostare i canali preferiti nella parte superiore dello schermo del dispositivo mobile in modo che un utente non debba scorrere per trovarli.
+- **Rimuovere utenti dalle chat di gruppo** Attivare questa impostazione per consentire a un utente di rimuovere altri utenti da una chat di gruppo. Questa funzionalità consente di continuare una chat con un gruppo più piccolo di persone senza perdere la cronologia della chat.
+- **Completamento del testo** Attiva questa impostazione per consentire a un utente di ottenere il completamento del testo per i messaggi di chat.
+- **Risposte suggerite**  Attiva questa impostazione per abilitare le risposte suggerite per i messaggi di chat.
 - **Ruolo di autorizzazione chat** Usare questa impostazione per definire il ruolo di chat supervisionato dell'utente. Altre informazioni sulla [chat supervisionata](supervise-chats-edu.md).
-- **Gli utenti con autorizzazioni di chat complete possono eliminare qualsiasi messaggio** Usare questa impostazione per consentire agli utenti con autorizzazioni complete di eliminare qualsiasi messaggio chat di gruppo o riunione.
+- **Gli utenti con autorizzazioni chat complete possono eliminare qualsiasi messaggio** Usare questa impostazione per consentire agli utenti con autorizzazioni complete di eliminare qualsiasi messaggio di gruppo o chat della riunione.
 
 > [!NOTE]
-> Alcune di queste impostazioni, ad esempio giphys, possono essere configurate anche a livello di team dai proprietari del team e a livello di canale privato o condiviso dai proprietari dei canali.
+> Alcune di queste impostazioni, ad esempio Giphy, possono anche essere configurate a livello di team dai proprietari del team e a livello di canale privato o condiviso dai proprietari del canale.
 
 ### <a name="related-topics"></a>Argomenti correlati
 

@@ -1,14 +1,14 @@
 ---
-title: Gestire Teams transizione alla nuova interfaccia di amministrazione di Teams
-author: SerdarSoysal
-ms.author: serdars
+title: Gestire la transizione di Teams alla nuova interfaccia di amministrazione di Teams
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 audience: admin
 ms.service: msteams
 ms.reviewer: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: Informazioni su come gestire le impostazioni a livello di tenant e utente per Teams durante la transizione da Teams nel interfaccia di amministrazione di Microsoft 365 alla nuova interfaccia di amministrazione di Teams.
+description: Informazioni su come gestire le impostazioni a livello tenant e utente per Teams durante la transizione da Teams nella interfaccia di amministrazione di Microsoft 365 alla nuova interfaccia di amministrazione di Teams.
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -21,12 +21,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Skype for Business Online
-ms.openlocfilehash: 83b65724099aa46bfe1f1719430e70d8da86ce33
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 39566c490a5de37adc699c39c049717525bd5821
+ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675088"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563954"
 ---
 # <a name="manage-teams-during-the-transition-to-the-new-microsoft-teams-admin-center"></a>Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams.
 
@@ -39,7 +39,7 @@ La nuova esperienza dell'interfaccia di amministrazione fornirà un'esperienza u
 
 ![Screenshot dell'interfaccia di amministrazione di Microsoft Teams.](media/manage-teams-skype-for-business-admin-center-portal.png)
 
-## <a name="settings-migrated-to-the-new-microsoft-teams-admin-center"></a>Impostazioni eseguita la migrazione alla nuova interfaccia di amministrazione di Microsoft Teams
+## <a name="settings-migrated-to-the-new-microsoft-teams-admin-center"></a>Migrazione delle impostazioni alla nuova interfaccia di amministrazione di Microsoft Teams
 
 La tabella seguente identifica le sezioni dell'esperienza di Teams di cui è stata eseguita la migrazione e mostra la relazione tra le impostazioni correnti e i criteri nel nuovo portale di amministrazione.
 
@@ -55,7 +55,7 @@ La tabella seguente identifica le sezioni dell'esperienza di Teams di cui è sta
 |Archiviazione cloud personalizzata     |Google Drive        |[TeamsClientConfiguration](/powershell/module/skype/set-csteamsclientconfiguration)         |Inquilino         |
 |Archiviazione cloud personalizzata     |ShareFile        |[TeamsClientConfiguration](/powershell/module/skype/set-csteamsclientconfiguration)         |Inquilino         |
 |Impostazioni per tipo di utente/licenza     |Attivare o disattivare Microsoft Teams per tutti gli utenti          |Deprecato<sup>1</sup>        |         |
-|Team e canali     |         |Reindirizza a Gestione Azure Active Directory gruppo (come nell'esperienza corrente).              |Utente         |
+|Team e canali     |         |Reindirizza a Gestione gruppi di Azure Active Directory (come nell'esperienza corrente).              |Utente         |
 |Team e canali     |         |Reindirizza a Gestione di gruppi AAD (come l'esperienza corrente).             |Utente          |
 |App|Abilitare le nuove app esterne per impostazione predefinita|Impostazioni delle app a livello di organizzazione|Inquilino|
 |App|Consenti app esterne|Impostazioni delle app a livello di organizzazione|Inquilino|
@@ -77,7 +77,7 @@ La tabella seguente identifica le sezioni dell'esperienza di Teams di cui è sta
 |Messaggistica     |Consentire agli utenti di eliminare i propri messaggi         |[TeamsMessagingPolicy](/powershell/module/skype/set-csteamsmessagingpolicy)         |Utente         |
 |Messaggistica     |Consente agli utenti di chattare in privato         |[TeamsMessagingPolicy](/powershell/module/skype/set-csteamsmessagingpolicy)         |Utente         |
 
-<sup>1</sup> Deprecato per i guest. L'abilitazione o la disabilitazione dei guest ora può essere gestita nell'interfaccia di amministrazione di Microsoft Teams. L'abilitazione/disabilitazione di Teams for Business Enterprise, Edu Student ed Edu Faculty sarà presto deprecata. Questa operazione deve essere gestita assegnando licenze nel interfaccia di amministrazione di Microsoft 365. Vedere [Gestire l'accesso degli utenti a Microsoft Teams](user-access.md).
+<sup>1</sup> Deprecato per i guest. L'abilitazione/disabilitazione dei guest ora può essere gestita nell'interfaccia di amministrazione di Microsoft Teams. L'abilitazione/disabilitazione di Teams for Business Enterprise, Edu Student e Edu Faculty sarà presto deprecata. Questa operazione deve essere gestita assegnando licenze nel interfaccia di amministrazione di Microsoft 365. Vedere [Gestire l'accesso degli utenti a Microsoft Teams](user-access.md).
 <br><br>
 <sup>2</sup> Il sideload è suddiviso nel modo seguente:
 
@@ -87,7 +87,7 @@ La tabella seguente identifica le sezioni dell'esperienza di Teams di cui è sta
 <sup>3</sup> Le app predefinite e le app esterne possono essere abilitate e disabilitate a livello di utente in TeamsAppPermissionPolicy. Inoltre, le app possono essere bloccate a livello di tenant nelle impostazioni delle app a livello di organizzazione che sostituiscono qualsiasi impostazione a livello di utente e tenant.
 
 > [!NOTE]
-> Si continuerà a usare il dashboard Gruppi nel interfaccia di amministrazione di Microsoft 365 per la configurazione correlata a Teams e canali. Impostazioni per le app rimarranno nell'area Teams del interfaccia di amministrazione di Microsoft 365 e la migrazione verrà eseguita in un secondo momento.
+> Si continuerà a usare il dashboard Gruppi nella interfaccia di amministrazione di Microsoft 365 per la configurazione correlata a Teams e ai canali. Le impostazioni per le app rimarranno nell'area teams del interfaccia di amministrazione di Microsoft 365 e verranno spostate in un secondo momento.
 
 ## <a name="manage-settings-during-the-migration"></a>Gestire le impostazioni durante la migrazione
 
@@ -95,23 +95,23 @@ La tabella seguente identifica le sezioni dell'esperienza di Teams di cui è sta
 
 La tabella seguente mostra dove è possibile gestire le caratteristiche durante la migrazione.
 
-|Funzionalità  |interfaccia di amministrazione di Microsoft Teams                      |Skype for Business interfaccia di amministrazione (legacy)  |interfaccia di amministrazione di Microsoft 365  |
+|Funzionalità  |Interfaccia di amministrazione di Microsoft Teams                      |Skype for Business interfaccia di amministrazione (legacy)  |interfaccia di amministrazione di Microsoft 365  |
 |---------|:---------:|:---------:|:---------:|
-|criteri messaggistica Teams, riunioni ed eventi live     |     X    |         |         |
-|criteri di aggiornamento di Teams     |    X     |         |         |
+|Criteri per messaggistica, riunioni ed eventi live di Teams     |     X    |         |         |
+|Criteri di aggiornamento di Teams     |    X     |         |         |
 |Impostazioni guest per messaggistica, riunioni e voce     |   X      |         |         |
-|Gestione del ciclo di vita Teams   |    X    |      |       |
-|Teams Impostazioni   |    X    |      |       |
+|Gestione del ciclo di vita di Teams   |    X    |      |       |
+|Impostazioni di Teams   |    X    |      |       |
 |Impostazioni di accesso esterno     |    X    |      |       |
 |Gestione utenti    |         |         |    X     |
 |Audioconferenza     |    X     |    X     |         |
 |Piani per chiamate     |    X    |    X     |         |
 |Sistema telefonico    |    X    |     X    |         |
-|gestione dei numeri di Telefono     |    X    |   X      |         |
+|Gestione dei numeri di telefono     |    X    |   X      |         |
 |Licenze per le funzionalità vocali del cloud     |         |         |    X     |
 |Operatori automatici     |    X    |          |         |
 |Code di chiamata     |    X    |          |         |
 
 ## <a name="manage-settings-after-the-migration"></a>Gestire le impostazioni dopo la migrazione
 
-Al termine della migrazione di queste impostazioni, verranno disabilitate nel interfaccia di amministrazione di Microsoft 365 e nell'interfaccia di amministrazione di Skype for Business e potranno quindi essere gestite nella nuova interfaccia di amministrazione di Microsoft Teams.
+Al termine della migrazione di queste impostazioni, verranno disabilitate nella interfaccia di amministrazione di Microsoft 365 e nell'interfaccia di amministrazione di Skype for Business e potranno quindi essere gestite nella nuova interfaccia di amministrazione di Microsoft Teams.

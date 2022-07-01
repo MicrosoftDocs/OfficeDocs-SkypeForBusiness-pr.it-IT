@@ -1,7 +1,7 @@
 ---
 title: Usare le chat supervisionate per i tenant non didattici
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.reviewer: angch
 ms.topic: article
@@ -14,13 +14,13 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni sulle chat supervisionate per i tenant non didattici nelle riunioni Microsoft Teams.
-ms.openlocfilehash: 4076a2dfa93a037912649bbac88c876c498f1586
-ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
+description: Informazioni sulle chat supervisionate per tenant non didattici nelle riunioni di Microsoft Teams.
+ms.openlocfilehash: a06aa7b9ae24e29a70b3c1a4fc74fae134616b6b
+ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65681567"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66564184"
 ---
 # <a name="supervised-chats-for-non-educational-tenants"></a>Chat supervisionate per tenant non didattici
 
@@ -54,13 +54,13 @@ I ruoli non possono essere assegnati a guest nel tenant. Ai guest viene assegnat
 
 ## <a name="allow-supervised-chat"></a>Consentire la chat supervisionata
 
-La chat supervisionata è disabilitata per impostazione predefinita per il tenant. Dopo aver impostato i ruoli di autorizzazione chat per gli utenti, è possibile abilitare la chat supervisionata all'interno del tenant passando a **Impostazioni** \> a livello di organizzazione **Teams Impostazioni** e impostando i criteri di **autorizzazioni chat basate sui** ruoli **su Attivato**. È anche possibile usare PowerShell per abilitare la chat supervisionata impostando AllowRoleBasedChatPermissions su True. Questo cmdlet si trova in [CsTeamsClientConfiguration](/powershell/module/skype/set-csteamsclientconfiguration).
+La chat supervisionata è disabilitata per impostazione predefinita per il tenant. Dopo aver impostato i ruoli di autorizzazione chat per gli utenti, è possibile abilitare la chat supervisionata all'interno del tenant accedendo alle **impostazioni** \> di **Teams** a livello di organizzazione e impostando il criterio **delle autorizzazioni chat basate sui ruoli su** **Attivato**. È anche possibile usare PowerShell per abilitare la chat supervisionata impostando AllowRoleBasedChatPermissions su True. Questo cmdlet si trova in [CsTeamsClientConfiguration](/powershell/module/skype/set-csteamsclientconfiguration).
 
 La chat supervisionata deve essere abilitata per tutti gli utenti nel tenant e non può essere abilitata solo per una parte degli utenti.
 
 **Abilitare la chat**:
 
-Abilitare la chat per tutti gli utenti usando i criteri di chat esistenti disponibili nell Teams interfaccia di amministrazione.
+Abilitare la chat per tutti gli utenti usando i criteri chat esistenti disponibili nell'interfaccia di amministrazione di Teams.
 
 **Gestire chat supervisionate**:
 

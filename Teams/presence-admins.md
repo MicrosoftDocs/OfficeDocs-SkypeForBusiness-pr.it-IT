@@ -1,7 +1,7 @@
 ---
 title: Presenza utente in Teams
-author: dmaguire
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8a928b532dcfb87a866f25502f4523078ce9cd48
-ms.sourcegitcommit: efd56988b22189dface73c156f6f8738f273fa61
+ms.openlocfilehash: 7e1c436e6bcd204eb383228a73a115a70ae29e08
+ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "60012960"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563764"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
@@ -48,7 +48,7 @@ La presenza fa parte del profilo utente in Microsoft Teams (e in tutto Microsoft
 |  ![Cerchio rosso con linea bianca, indica Non disturbare.](media/Presence_DND.png) Non disturbare ||
 || ![Cerchio rosso con linea bianca, indica Presentazione in corso.](media/Presence_DND.png) Presentazione|
 || ![Cerchio rosso con linea bianca, indica Occupato.](media/Presence_DND.png) Concentrato. Lo stato Concentrato si verifica quando gli utenti pianificano il tempo produttivo in MyAnalytics/Insights nei propri calendari.|
-| ![Icona orologio giallo, indica Assente.](media/Presence_Away.png) Non al computer| ![Icona orologio giallo, indica Assente.](media/Presence_Away.png) Assente|
+| ![Icona orologio giallo, indica Assente.](media/Presence_Away.png) Non al computer| ![Icona orologio giallo, indica Assente.](media/Presence_Away.png) Non al computer|
 || ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente, ultimo accesso *orario*|
 |![Icona orologio giallo, indica Assente, torno subito.](media/Presence_Away.png) Torno subito| |
 |![Cerchio grigio con una X, indica Offline.](media/Presence_Offline.png) Invisibile|![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Offline. Se gli utenti non effettuano l'accesso ad alcun dispositivo per alcuni minuti, risultano invisibili. |

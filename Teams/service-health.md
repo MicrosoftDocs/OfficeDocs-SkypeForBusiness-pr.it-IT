@@ -1,8 +1,8 @@
 ---
-title: Verificare l'integrità del servizio per Microsoft Teams
+title: Verificare l'integrità dei servizi per Microsoft Teams
 ms.reviewer: ''
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.date: 09/25/2017
 ms.topic: article
@@ -13,25 +13,25 @@ ms.collection:
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: È consigliabile verificare che il servizio Teams sia integro e che lo siano anche altri componenti di Microsoft 365 o Office 365, ad esempio Exchange, SharePoint e OneDrive for Business.
+description: È buona norma verificare che il servizio Teams sia integro e lo sono anche altri componenti di Microsoft 365 o Office 365 come Exchange, SharePoint e OneDrive for Business.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c7aebfec6aedd018580ddece9d3d7dac4e30ca731b91decf5d74bc0acf9c3e91
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a3f410a24d77a0ab18d94679896bae96b1fecdd8
+ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54316692"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563794"
 ---
-# <a name="verify-service-health-for-microsoft-teams"></a>Verificare l'integrità del servizio per Microsoft Teams
+# <a name="verify-service-health-for-microsoft-teams"></a>Verificare l'integrità dei servizi per Microsoft Teams
 
-L'integrità dei Microsoft Teams viene visualizzata nel interfaccia di amministrazione di Microsoft 365. Prima di risolvere i problemi, è consigliabile verificare che il servizio Teams integro. Passare alla console <a href=" https://admin.microsoft.com/adminportal/home?ref=servicehealth" target="_blank">Teams Integrità dei</a> servizi per verificare l'integrità del servizio.
+Integrità dei servizi per Microsoft Teams viene visualizzata nella interfaccia di amministrazione di Microsoft 365. Prima di risolvere i problemi, è buona norma verificare che il servizio Teams sia integro. Vai alla console <a href=" https://admin.microsoft.com/adminportal/home?ref=servicehealth" target="_blank">Integrità dei servizi di Teams</a> per controllare l'integrità dei servizi.
 
-Inoltre, tenere presente che Microsoft Teams è basato su altri servizi Microsoft 365 o Office 365, quindi quando si osserva Integrità dei servizi, ricordarsi di controllare anche lo stato di Exchange, SharePoint e OneDrive for Business. I problemi di integrità dei servizi per questi altri servizi non significano automaticamente che Teams sia interessato (ad esempio, i download della Rubrica in Exchange non sono disponibili), ma è consigliabile esaminare gli avvisi per i servizi interessati per determinare se c'è un impatto sull'Microsoft Teams.
+Tenere inoltre presente che Microsoft Teams è basato su altri servizi di Microsoft 365 o Office 365, quindi quando si esamina Integrità dei servizi, ricordarsi di controllare anche lo stato di Exchange, SharePoint e OneDrive for Business. I problemi di integrità dei servizi per questi altri servizi non significano automaticamente che Teams è interessato (ad esempio, i download della Rubrica in Exchange non sono disponibili), ma è consigliabile esaminare gli avvisi per i servizi interessati per determinare se c'è un impatto su Microsoft Teams.
 
 ![Screenshot della pagina Integrità dei servizi.](media/Verify_service_health_for_Microsoft_Teams_image1.png)
 
-![Screenshot che mostra che Microsoft Teams servizio è integro.](media/Verify_service_health_for_Microsoft_Teams_image2.png)
+![Screenshot che mostra che il servizio Microsoft Teams è integro.](media/Verify_service_health_for_Microsoft_Teams_image2.png)
 
 
 ## <a name="related-topics"></a>Argomenti correlati

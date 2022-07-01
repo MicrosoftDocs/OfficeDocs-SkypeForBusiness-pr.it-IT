@@ -1,7 +1,7 @@
 ---
 title: Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.reviewer: jastark
 ms.topic: article
@@ -21,13 +21,13 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come gestire le impostazioni per le caratteristiche di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams.
-ms.openlocfilehash: f3c79e40d55319af9a45063893bed285140c6d7f
-ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
+description: Informazioni su come gestire le impostazioni per le funzionalità di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams.
+ms.openlocfilehash: 06c5cc4a199a7b29f2db97159850583d6927fc13
+ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65681337"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66563704"
 ---
 # <a name="manage-skype-for-business-settings-in-the-microsoft-teams-admin-center"></a>Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -35,14 +35,14 @@ ms.locfileid: "65681337"
 <a name="sfb-settings"> </a>
 <!-- Do not remove the bookmark link above. -->
 
-L'interfaccia di amministrazione di Microsoft Teams consente agli amministratori di gestire le caratteristiche di Skype for Business per Skype for Business utenti dell'organizzazione. È possibile gestire le impostazioni [per l'organizzazione](#manage-skype-for-business-settings-for-your-organization) nella pagina **Skype for Business** e le impostazioni [per singoli utenti](#manage-skype-for-business-settings-for-individual-users) nella scheda **Skype for Business** delle pagine dettagli utente.
+L'interfaccia di amministrazione di Microsoft Teams consente agli amministratori di gestire le funzionalità di Skype for Business per Skype for Business utenti dell'organizzazione. È possibile gestire le impostazioni [per l'organizzazione](#manage-skype-for-business-settings-for-your-organization) nella pagina **Skype for Business** e le impostazioni [per singoli utenti](#manage-skype-for-business-settings-for-individual-users) nella scheda **Skype for Business** delle pagine dettagli utente.
 
-La pagina **Skype for Business** viene visualizzata solo se la modalità di coesistenza per l'organizzazione non è impostata **su solo Teams**. Analogamente, la scheda **Skype for Business** per un utente viene visualizzata solo se la modalità di coesistenza dell'utente non è **Teams solo**. Per altre informazioni sulle modalità di coesistenza, vedere [Informazioni su Teams e Skype for Business coesistenza e interoperabilità](teams-and-skypeforbusiness-coexistence-and-interoperability.md) e [Impostare le impostazioni di coesistenza e aggiornamento](setting-your-coexistence-and-upgrade-settings.md).
+La pagina **Skype for Business** viene visualizzata solo se la modalità di coesistenza per l'organizzazione non è impostata **su Solo Teams**. Analogamente, vedrai la scheda **Skype for Business** per un utente solo se la modalità di coesistenza dell'utente non è **solo teams**. Per altre informazioni sulle modalità di coesistenza, vedere [Informazioni su Teams e Skype for Business coesistenza e interoperabilità](teams-and-skypeforbusiness-coexistence-and-interoperability.md) e [Impostare le impostazioni di coesistenza e aggiornamento](setting-your-coexistence-and-upgrade-settings.md).
 
 > [!NOTE]
-> le impostazioni di Skype for Business in precedenza erano disponibili nel **portale legacy** nell'interfaccia di amministrazione di Microsoft Teams. Con il ritiro del portale legacy, le impostazioni sono state spostate in queste nuove posizioni nell'interfaccia di amministrazione di Teams per la gestione Skype for Business.
+> Skype for Business impostazioni erano in precedenza nel **portale legacy** nell'interfaccia di amministrazione di Microsoft Teams. Con il ritiro del portale legacy, abbiamo trasferito le impostazioni in queste nuove posizioni nell'interfaccia di amministrazione di Teams per la gestione Skype for Business.
 
-Per gestire le funzionalità di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams, è necessario avere il [ruolo di amministratore di Azure ACTIVE Directory](/azure/active-directory/roles/permissions-reference) di amministratore globale o amministratore Skype for Business.
+Per gestire le funzionalità di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams, è necessario avere il [ruolo di amministratore di Azure AD](/azure/active-directory/roles/permissions-reference) di amministratore globale o amministratore di Skype for Business.
 
 ## <a name="manage-skype-for-business-settings-for-your-organization"></a>Gestire le impostazioni di Skype for Business per l'organizzazione
 
@@ -80,7 +80,7 @@ Usare le impostazioni seguenti per gestire Skype for Business la privacy della p
 Per impostazione predefinita, Skype for Business utenti dell'organizzazione possono visualizzare lo stato presenza di altri utenti Skype for Business, ad esempio Disponibile, Occupato o Non al computer. Scegliere una delle opzioni seguenti per impostare chi può visualizzare la presenza degli utenti Skype for Business.
 
 - **Visualizzare automaticamente le informazioni sulla presenza**: qualsiasi Skype for Business utente dell'organizzazione che non è stato aggiunto all'elenco **di utenti esterni** o **bloccati** può vedere la presenza dell'utente.
-- **Visualizzare le informazioni sulla presenza solo ai contatti di un utente**: qualsiasi utente Skype for Business'elenco Contatti dell'utente che non è stato aggiunto all'elenco **Esterno** o **Bloccato** può vedere la presenza di quell'utente. Gli utenti possono ignorare questa impostazione in Skype for Business passando a **Opzioni di Impostazioni** >  **Tools** > .
+- **Visualizzare le informazioni sulla presenza solo ai contatti di un utente**: qualsiasi utente Skype for Business'elenco Contatti dell'utente che non è stato aggiunto all'elenco **Esterno** o **Bloccato** può vedere la presenza di quell'utente. Gli utenti possono ignorare questa impostazione in Skype for Business passando a **Opzioni** **strumenti** >  **impostazioni** > .
 
 #### <a name="mobile-notifications"></a>Notifiche per dispositivi mobili
 
@@ -93,7 +93,7 @@ Tenere presente quanto segue:
 - Quando disattivi le notifiche push, gli utenti non possono riattivarle. 
 
 > [!IMPORTANT]
-> Microsoft utilizza altre aziende per fornire notifiche in tempo reale Skype for Business per dispositivi mobili per utenti di Windows Phone, iPhone e iPad. Vedere la presente [Informativa sulla privacy](https://go.microsoft.com/fwlink/p/?linkid=247732).
+> Microsoft utilizza altre aziende per fornire notifiche in tempo reale Skype for Business per dispositivi mobili per gli utenti di Windows Phone, iPhone e iPad. Vedere la presente [Informativa sulla privacy](https://go.microsoft.com/fwlink/p/?linkid=247732).
 
 ## <a name="manage-skype-for-business-settings-for-individual-users"></a>Gestire le impostazioni di Skype for Business per singoli utenti
 
@@ -110,7 +110,7 @@ Per gestire le impostazioni di Skype for Business per singoli utenti, nel riquad
 È possibile consentire o bloccare in modo selettivo se un utente può comunicare con persone esterne all'organizzazione.
 
 - **Utenti Skype for Business esterni**: attivare questa opzione se si vuole consentire all'utente di comunicare con Skype for Business utenti nei domini federati.
-- **Utenti Skype esterni**: attivare questa opzione se si vuole consentire all'utente di comunicare con Skype utenti. 
+- **Utenti Skype esterni**: attiva questa opzione se vuoi consentire all'utente di comunicare con gli utenti Skype. 
 
 ### <a name="meeting-settings"></a>Impostazioni riunione
 
