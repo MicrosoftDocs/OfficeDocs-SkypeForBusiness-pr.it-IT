@@ -1,5 +1,5 @@
 ---
-title: Gestire i criteri delle riunioni per la condivisione di contenuti
+title: Gestire i criteri delle riunioni per la condivisione del contenuto
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -18,13 +18,13 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.contentsharing
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per la condivisione di contenuti.
-ms.openlocfilehash: dccf36a257cde5731c140f2000e3d0733d3366c3
-ms.sourcegitcommit: 42c355d3f4bbe52c063b8f2119baefc0b88f9563
+description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per la condivisione di contenuti.
+ms.openlocfilehash: cd493d21b774e260f2188ac8d174d1208cf4eba7
+ms.sourcegitcommit: 79ada2140b110239deff96e4854ebd5dd9b77881
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "64403987"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66605845"
 ---
 # <a name="meeting-policy-settings---content-sharing"></a>Impostazioni dei criteri di riunione - Condivisione di contenuti
 
@@ -56,7 +56,7 @@ Osserviamo l'esempio seguente.
 |Daniela  | Globale   | Schermo intero |
 |Amanda   | CriterioRiunionePosizione1  | Disattiva |
 
-Le riunioni ospitate da Daniela consentono ai partecipanti alla riunione di condividere l'intero schermo o una specifica applicazione. Se Amanda partecipa a una riunione di Daniela, non può condividere il suo schermo o una specifica applicazione, perché l'impostazione del suo criterio non lo consente. Nelle riunioni ospitate da Amanda nessuno può condividere lo schermo o una singola applicazione, indipendentemente dal criterio di condivisione dello schermo assegnati.  Di conseguenza, Daniela non può condividere lo schermo o una singola applicazione nelle riunioni di Amanda.  
+Le riunioni ospitate da Daniela consentono ai partecipanti alla riunione di condividere l'intero schermo o una specifica applicazione. Se Amanda partecipa a una riunione di Daniela, non può condividere il suo schermo o una specifica applicazione, perché l'impostazione del suo criterio non lo consente. Nelle riunioni ospitate da Amanda nessuno può condividere lo schermo o una singola applicazione, indipendentemente dal criterio di condivisione dello schermo assegnati.  Di conseguenza, Daniela non può condividere il suo schermo o una singola applicazione nelle riunioni di Amanda.  
 
 Al momento, gli utenti non possono riprodurre video o condividere il proprio schermo in una riunione di Teams se usano Google Chrome.
 
@@ -79,7 +79,7 @@ Osserviamo l'esempio seguente.
 |Daniela   | Globale   | Attivato       |
 |Pio    | CriterioRiunionePosizione1        | Disattivato   |
 
-Daniela può dare il controllo del desktop o della finestra condivisa ad altri partecipanti a una riunione organizzata da Babek. Tuttavia, Babek non può dare il controllo ad altri partecipanti.
+Daniela può dare il controllo del desktop condiviso o della finestra ad altri partecipanti a una riunione organizzata da Babek. Tuttavia, Babek non può dare il controllo ad altri partecipanti.
 
 Per usare PowerShell per controllare gli utenti autorizzati a concedere il controllo o accettare richieste di controllo, usare il cmdlet AllowParticipantGiveRequestControl.
 
@@ -88,7 +88,7 @@ Per usare PowerShell per controllare gli utenti autorizzati a concedere il contr
 
 ## <a name="allow-an-external-participant-to-give-or-request-control"></a>Consenti a un partecipante esterno di fornire o richiedere il controllo
 
-Questa impostazione è un criterio per utente. Se un'organizzazione ha impostato questo criterio per un utente, non controlla cosa possono fare i partecipanti esterni, indipendentemente da ciò che l'organizzatore della riunione ha impostato. Questo parametro controlla se i partecipanti esterni possono ricevere o richiedere il controllo dello schermo del relatore, a seconda delle impostazioni configurate dal relatore nei criteri di riunione dell'organizzazione. I partecipanti esterni nelle riunioni di Teams possono essere classificati come segue:  
+Questa impostazione è un criterio per utente. Se un'organizzazione ha impostato questo criterio per un utente, non controlla le operazioni consentite ai partecipanti esterni, indipendentemente da ciò che l'organizzatore della riunione ha impostato. Questo parametro controlla se i partecipanti esterni possono ricevere o richiedere il controllo dello schermo del relatore, a seconda delle impostazioni configurate dal relatore nei criteri di riunione dell'organizzazione. I partecipanti esterni nelle riunioni di Teams possono essere classificati come segue:  
 
 - Utente anonimo
 - Utenti guest  
@@ -123,7 +123,13 @@ Osserviamo l'esempio seguente.
 |Daniela   | Globale   | Attivato       |
 |Amanda   | CriterioRiunionePosizione1        | Disattivato   |
 
-Amanda non può condividere la lavagna in una riunione, anche se è l'organizzatrice della riunione. Daniela può condividere la lavagna anche se una riunione è organizzata da Amanda.  
+Amanda non può condividere la lavagna in una riunione, anche se è l'organizzatrice della riunione. Daniela può condividere la lavagna anche se una riunione è organizzata da Amanda.
+
+Per abilitare Whiteboard con PowerShell, impostare il cmdlet IsWBFluidEnabled su $true da [Set-SPOTenant.](/powershell/module/sharepoint-online/set-spotenant)
+
+### <a name="annotation"></a>Annotazione
+
+Quando la lavagna è abilitata, gli utenti avranno la possibilità di usare [l'annotazione](/office/use-annotation-while-sharing-your-screen-in-teams), una funzionalità che consente ai partecipanti di collaborare durante la condivisione dello schermo in una riunione di Teams. Se la lavagna è disabilitata, gli utenti non avranno accesso all'annotazione.
 
 ## <a name="shared-notes"></a>Note condivise
 

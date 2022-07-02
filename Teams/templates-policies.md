@@ -1,7 +1,7 @@
 ---
 title: Gestire i modelli di team nell'interfaccia di amministrazione
-author: serdars
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.reviewer: yinchang
 ms.topic: article
@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire i modelli di team nell'interfaccia di amministrazione
-ms.openlocfilehash: 46b59d42ae464a5f09e9f24ecc91378bd6464034
-ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
+ms.openlocfilehash: 9f2044f059414f9afe1ff335f8204cd26861164b
+ms.sourcegitcommit: 79ada2140b110239deff96e4854ebd5dd9b77881
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65681397"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66605905"
 ---
 # <a name="manage-team-templates-in-the-admin-center"></a>Gestire i modelli di team nell'interfaccia di amministrazione
 
@@ -38,7 +38,7 @@ Guardare questo breve video per informazioni su come gestire i criteri dei model
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Vai a **Teams** >  **Templates policies**.
+2. Passare ai **criteri dei modelli** di **Teams** > .
 
 3. Scegliere **Aggiungi**.
 
@@ -106,7 +106,7 @@ R: I modelli eliminati non saranno più presenti nei criteri dei modelli.
 
 R: Sì.
 
-1. Nell'interfaccia di amministrazione di Teams passare a **Gestisci utenti** > .
+1. Nell'interfaccia di amministrazione di Teams passare a **Gestisci utenti** > **.**
 1. Nell'elenco degli utenti selezionare gli utenti da assegnare ai criteri dei modelli.
 1. Selezionare **Modifica impostazioni**, quindi in **Criteri modelli** scegliere il criterio da assegnare.
 1. Scegliere **Applica**.
@@ -132,7 +132,7 @@ R: No, i criteri dei modelli per l'istruzione non sono supportati.
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Attività iniziali con i modelli di team nell'interfaccia di amministrazione](./get-started-with-teams-templates-in-the-admin-console.md)
+- [Introduzione ai modelli di team nell'interfaccia di amministrazione](./get-started-with-teams-templates-in-the-admin-console.md)
 
 - [Creare un modello di team personalizzato](./create-a-team-template.md)
 

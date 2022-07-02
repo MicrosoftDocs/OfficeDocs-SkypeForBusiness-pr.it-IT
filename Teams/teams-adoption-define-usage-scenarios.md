@@ -1,7 +1,7 @@
 ---
 title: Definire scenari di utilizzo per Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.date: 10/31/2018
 audience: Admin
@@ -10,25 +10,30 @@ ms.service: msteams
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come scegliere gli scenari di utilizzo più applicabili per la fase di sperimentazione della Teams adozione.
+description: Informazioni su come scegliere i migliori scenari di utilizzo applicabili per la fase di sperimentazione dell'adozione di Teams.
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - Adopt
-  - seo-marvel-apr2020
+- Adopt
+- seo-marvel-apr2020
 ms.collection:
-  - Teams_ITAdmin_Adopt
-  - M365-collaboration
+- Teams_ITAdmin_Adopt
+- M365-collaboration
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: e63fca2ac3b9dad300c6cb01f6f30acef618db58
+ms.sourcegitcommit: 79ada2140b110239deff96e4854ebd5dd9b77881
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66605665"
 ---
-
 # <a name="define-usage-scenarios-for-microsoft-teams"></a>Definire scenari di utilizzo per Microsoft Teams
 
-Assicurarsi di comprendere i progetti commerciali (scenari) che saranno nell'ambito di questa fase dell'implementazione. Esaminare questo elenco di scenari di esempio che sono ottimi candidati per un programma di adozione iniziale. È possibile iniziare a vincere facilmente, ad esempio:
+Assicurarsi di comprendere i progetti commerciali (scenari) che si troveranno nell'ambito per questa fase dell'implementazione. Esaminare questo elenco di scenari di esempio che sono ottimi candidati per un programma early adopter. Puoi iniziare con vincite semplici, ad esempio:
 
 - Produttività personale
-- Gestione moderna dei progetti
+- Gestione dei progetti moderna
 - Riunioni moderne
 
 ![Illustrazione dei tre scenari principali.](media/teams-adoption-modernizing-core-scenarios.png)
@@ -36,35 +41,35 @@ Assicurarsi di comprendere i progetti commerciali (scenari) che saranno nell'amb
 Altri scenari da considerare sono:
 
 - Coinvolgimento e comunicazione dei dipendenti
-- Portare le campagne sul mercato più velocemente
+- Introdurre le campagne sul mercato più velocemente
 - Aumentare la produttività delle vendite e aumentare i ricavi
-- Semplificare le revisioni aziendali
+- Semplificare le recensioni aziendali
 
-![Illustrazione di Teams casi d'uso per ogni scenario.](media/teams-adoption-use-cases.png)
+![Illustrazione dei casi d'uso di Teams per ogni scenario.](media/teams-adoption-use-cases.png)
 
-Il movimento di modernizzazione di questo scenario è un processo cumulativo: è possibile creare scenari più semplici per creare entusiasmo, familiarità e credibilità con questo nuovo modo di lavorare. Passare quindi ad aree di impatto più ambiziose. Più l'impatto con Microsoft Teams è dimostrato ai colleghi aziendali, più di essi si impegheranno e si crea un momento di forza. Per molti dei nostri clienti, una volta ottenuto questo processo, gli stakeholder aziendali si avvicinano a loro dopo aver appreso come i colleghi hanno ottenuto valore da Microsoft Teams.
+Questo movimento di modernizzazione dello scenario può essere considerato come un processo cumulativo: questo nuovo modo di lavorare consente di creare entusiasmo, familiarità e credibilità. Poi passa a aree di impatto più ambiziose. Man mano che si dimostra un maggiore impatto con Microsoft Teams ai colleghi aziendali, più di loro saranno coinvolti e si otterrà un maggiore impulso. Per molti dei nostri clienti, una volta avviato questo processo, scopriranno che gli stakeholder si avvicinano a loro dopo aver scoperto come i loro colleghi hanno ottenuto valore da Microsoft Teams.
 
-## <a name="interview-business-stakeholders"></a>Intervistare gli stakeholder aziendali
+## <a name="interview-business-stakeholders"></a>Intervista agli stakeholder dell'azienda
 
-Per confermare la selezione di questi progetti iniziali, è consigliabile incontrarsi direttamente con gli stakeholder identificati in precedenza in questo processo. Il tuo obiettivo a questo punto è ascoltare e ottenere altre informazioni sulla loro attività. Considerare le domande seguenti per guidare la conversazione:
+Per confermare la selezione di questi primi progetti, è consigliabile incontrarsi direttamente con le parti interessate identificate in precedenza in questo processo. L'obiettivo a questo punto è quello di ascoltare e ottenere altre informazioni sulla propria attività. Prendere in considerazione le domande seguenti per guidare la conversazione:
 
-- Quali sono alcune delle sfide o dei problemi dell'organizzazione correlati alla comunicazione e alla collaborazione?
+- Quali sono le difficoltà o i problemi dell'organizzazione in relazione alla comunicazione e alla collaborazione?
 - Quali sono le aree in cui l'organizzazione vuole migliorare?
-- Quali sono le iniziative strategiche dell'organizzazione o gli attuali progetti di trasformazione che Teams possono supportare?
-- Quali metodi di comunicazione e collaborazione sono in genere più ricevuti dall'organizzazione rispetto ad altri?
-- Qual è il processo per redigere, distribuire e condividere informazioni?
+- Quali sono le iniziative strategiche o gli attuali progetti di trasformazione dell'organizzazione che Teams può supportare?
+- Quali metodi di comunicazione e collaborazione sono in genere meglio ricevuti dall'organizzazione rispetto ad altri?
+- Qual è il processo di redazione, distribuzione e condivisione delle informazioni?
 
-## <a name="map-and-prioritize-business-scenarios"></a>Mappare e assegnare priorità a scenari aziendali
+## <a name="map-and-prioritize-business-scenarios"></a>Mappare e assegnare priorità agli scenari aziendali
 
-Per assicurarsi di avere le informazioni giuste sullo scenario aziendale, è consigliabile usare il formato seguente per documentare lo scenario dal punto di vista del dipendente che completa il lavoro e del proprietario aziendale del processo. Entrambe le prospettive sono necessarie per creare un percorso di successo.
+Per assicurarsi di avere le informazioni corrette sullo scenario aziendale, è consigliabile usare il formato seguente per documentare lo scenario dal punto di vista del dipendente che completa il lavoro e del proprietario aziendale del processo. Entrambi i punti di vista sono necessari per compiere un percorso positivo.
 
-![Illustrazione del framework per l'identificazione degli scenari.](media/teams-adoption-identify-scenarios.png)
+![Illustrazione del framework per l'identificazione di scenari.](media/teams-adoption-identify-scenarios.png)
 
-Dopo aver parlato con uno o più stakeholder aziendali, è possibile assegnare priorità agli scenari in base all'impatto e alle difficoltà. Gli scenari potrebbero essere in aggiunta agli scenari suggeriti in precedenza. I candidati appropriati per la fase di sperimentazione devono avere un impatto maggiore e difficoltà da basso a medio. In questo modo il progetto non sarà interessato da difficoltà tecniche o dall'ambito prima di poter mostrare il valore del lavoro. Di seguito è riportato un grafico di esempio.
+Dopo aver parlato con uno o più stakeholder dell'azienda, è possibile assegnare priorità agli scenari in base all'impatto e alla difficoltà. Gli scenari potrebbero essere in aggiunta agli scenari suggeriti in precedenza. I candidati appropriati per la fase di sperimentazione devono avere un impatto maggiore e difficoltà da bassa a media. In questo modo, il progetto non sarà influenzato da difficoltà tecniche o di scorrimento dell'ambito prima di poter mostrare il valore del lavoro. Di seguito è riportato un grafico di esempio.
 
 ![Illustrazione che mostra l'impatto dello scenario rispetto alla difficoltà.](media/teams-adoption-impact-difficulty.png)
 
 > [!Note]
-> Siamo sempre desiderosi di scoprire come i nostri clienti usano Teams nuovi modi innovativi. Condividi le tue #TeamsStories con noi nel forum di discussione [Driving Adoption](https://techcommunity.microsoft.com/t5/driving-adoption/ct-p/DrivingAdoption). Includere l'hashtag **#TeamsStories** nel post. Siamo sempre interessati a come si usa Teams nell'organizzazione.
+> Siamo sempre ansiosi di scoprire come i nostri clienti usano Teams in nuovi modi innovativi. Condividi il tuo #TeamsStories con noi nel [forum di discussione Driving Adoption](https://techcommunity.microsoft.com/t5/driving-adoption/ct-p/DrivingAdoption). Includere **l'hashtag #TeamsStories** nel post. Siamo sempre interessati a come usi Teams nella tua organizzazione.
 
-![Icona che rappresenta il passaggio successivo.](media/teams-adoption-next-icon.png) Successivo: [Onboard early adopters and gather feedback](teams-adoption-onboard-early-adopters.md).
+![Icona che rappresenta il passaggio successivo.](media/teams-adoption-next-icon.png) Successivo: [Onboard early adopters e raccogliere feedback](teams-adoption-onboard-early-adopters.md).

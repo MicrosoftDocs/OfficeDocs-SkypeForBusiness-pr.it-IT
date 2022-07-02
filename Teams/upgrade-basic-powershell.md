@@ -1,40 +1,45 @@
 ---
-title: PowerShell di aggiornamento di base| Microsoft Teams| Concedere i criteri di interoperabilità per l'aggiornamento
-author: SerdarSoysal
-ms.author: serdars
+title: PowerShell per l'aggiornamento di base| Microsoft Teams| Concedi criteri di interoperabilità per l'aggiornamento
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.service: msteams
 audience: admin
 ms.reviewer: landerl
-description: Informazioni su un stopgap per l'aggiornamento a Microsoft Teams se l'interfaccia di amministrazione non è stata accesa nel tenant.
+description: Informazioni su un stopgap per l'aggiornamento a Microsoft Teams se il Centro Amministrazione non si è acceso nel tenant.
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - Teams-upgrade-guidance
-  - seo-marvel-apr2020
+- Teams-upgrade-guidance
+- seo-marvel-apr2020
 ms.collection:
-  - Teams_ITAdmin_JourneyFromSfB
-  - M365-collaboration
+- Teams_ITAdmin_JourneyFromSfB
+- M365-collaboration
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: 02ba32e5b498639e93bc10757c51429871f5683a
+ms.sourcegitcommit: 79ada2140b110239deff96e4854ebd5dd9b77881
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66606035"
 ---
-
 # <a name="upgrading-your-users-from-skype-for-business-online-to-microsoft-teams"></a>Aggiornamento degli utenti da Skype for Business Online a Microsoft Teams
 
 > [!Note]
-> I comandi descritti in questo articolo sono progettati per essere usati nell'elenco [di controllo Aggiornamento di base](./upgrade-start-here.md) .
+> I comandi descritti in questo articolo sono progettati per essere usati come parte dell'elenco di controllo [Di base per l'aggiornamento](./upgrade-start-here.md) .
 
-Gli aspetti tecnici della migrazione dell'aggiornamento implicano la notifica agli utenti che Skype for Business verrà eseguito l'aggiornamento a Teams e quindi spostarli in una modalità **Teams solo** versione. Questa procedura può essere eseguita tramite una sessione Skype for Business remota Windows PowerShell o tramite l'Microsoft Teams di amministrazione.
+Gli aspetti tecnici della migrazione dell'aggiornamento implicano la notifica agli utenti che Skype for Business verrà aggiornato a Teams e quindi li sposterà in una modalità **solo teams**. Questi passaggi possono essere eseguiti tramite una sessione di Windows PowerShell remota Skype for Business o tramite l'interfaccia di amministrazione di Microsoft Teams.
 
-Stiamo implementazione attiva degli strumenti di aggiornamento nell'interfaccia Microsoft Teams di [amministrazione e dovrebbe](manage-teams-skypeforbusiness-admin-center.md) essere disponibile a breve nel tenant. Non appena sarà disponibile, è possibile trovare informazioni sulla migrazione degli utenti in Impostazione [delle impostazioni di coesistenza e aggiornamento](./setting-your-coexistence-and-upgrade-settings.md).
+Stiamo distribuendo attivamente gli strumenti di aggiornamento [nell'interfaccia di amministrazione di Microsoft Teams](manage-teams-skypeforbusiness-admin-center.md) e dovrebbero essere disponibili a breve nel tuo tenant. Non appena è disponibile, è possibile trovare informazioni sulla migrazione degli utenti in [Impostazione delle impostazioni di coesistenza e aggiornamento](./setting-your-coexistence-and-upgrade-settings.md).
 
-Se si è pronti per l'aggiornamento, è possibile usare i [comandi di PowerShell](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) elencati nella tabella seguente.
+Se si è pronti per l'aggiornamento oggi stesso, è possibile usare i comandi di [PowerShell](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell) elencati nella tabella seguente.
 
-| Passaggio di base dell'aggiornamento # | Modalità | Comando di PowerShell |
+| Passaggio di base sull'aggiornamento # | Modalità | Comando di PowerShell |
 |---|---|---|
-| [5](upgrade-basic.md#step-5) | Isole + Notifica all'Skype for Business utente<br>Usare questo comando se gli utenti sono attualmente in **modalità** Isole (impostazione predefinita)) | ```Grant-CsTeamsUpgradePolicy -PolicyName IslandsWithNotify -Identity $SipAddress```<br>*(ad esempio, $SipAddress='TestUser@contoso.com')* |
-| [5](upgrade-basic.md#step-5) | Skype for Business solo + Notifica all'Skype for Business utente <br>Usare questo comando se gli utenti sono attualmente in **Skype for Business modalità Solo** utenti) | ```Grant-CsTeamsUpgradePolicy -PolicyName SfBOnlyWithNotify -Identity $SipAddress```  |
-| [7](upgrade-basic.md#step-7) | Teams solo | ```Grant-CsTeamsUpgradePolicy -PolicyName UpgradeToTeams -Identity $SipAddress```  |
+| [5](upgrade-basic.md#step-5) | Islands + Notify the Skype for Business User<br>Usare questo comando se gli utenti sono attualmente in modalità **Isole** (impostazione predefinita)) | ```Grant-CsTeamsUpgradePolicy -PolicyName IslandsWithNotify -Identity $SipAddress```<br>*(ad esempio$ SipAddress='TestUser@contoso.com)* |
+| [5](upgrade-basic.md#step-5) | Skype for Business Only + Notify the Skype for Business User <br>Usare questo comando se gli utenti sono attualmente in modalità **solo Skype for Business**. | ```Grant-CsTeamsUpgradePolicy -PolicyName SfBOnlyWithNotify -Identity $SipAddress```  |
+| [7](upgrade-basic.md#step-7) | Solo teams | ```Grant-CsTeamsUpgradePolicy -PolicyName UpgradeToTeams -Identity $SipAddress```  |

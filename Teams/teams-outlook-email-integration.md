@@ -1,7 +1,7 @@
 ---
 title: Integrazione della posta elettronica di Teams e Outlook
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -9,29 +9,29 @@ ms.service: msteams
 ms.reviewer: kblevens
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni sulle funzionalità di integrazione di Teams e Outlook posta elettronica, incluse le funzionalità che consentono agli utenti di condividere informazioni tra la posta elettronica in Outlook e le conversazioni di chat o di canale in Teams.
+description: Informazioni sulle funzionalità di integrazione della posta elettronica di Teams e Outlook, incluse le funzionalità che consentono agli utenti di condividere informazioni tra la posta elettronica in Outlook e le conversazioni tramite chat o canale in Teams.
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cd1226cddb41ee40139029b64c65d6c151c3993b
-ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
+ms.openlocfilehash: 76a2ecf05a8769b51ffcb9827c0fe6ff75df7b18
+ms.sourcegitcommit: 79ada2140b110239deff96e4854ebd5dd9b77881
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65681757"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66606235"
 ---
 # <a name="teams-and-outlook-email-integration"></a>Integrazione della posta elettronica di Teams e Outlook
 
-Microsoft Teams include funzionalità che consentono agli utenti dell'organizzazione di condividere facilmente informazioni tra la posta elettronica in Outlook e le conversazioni tramite chat o canale in Teams e di tenere sotto controllo le conversazioni perse. Questo articolo offre una panoramica di queste caratteristiche e dei controlli di amministrazione applicabili.
+Microsoft Teams include funzionalità che consentono agli utenti dell'organizzazione di condividere facilmente informazioni tra la posta elettronica in Outlook e le conversazioni via chat o del canale in Teams e di tenere sotto controllo le conversazioni perse. Questo articolo offre una panoramica di queste caratteristiche e dei controlli di amministrazione applicabili.
 
-## <a name="share-to-outlook"></a>Condividi in Outlook
+## <a name="share-to-outlook"></a>Condividere in Outlook
 
-**Condividi con Outlook** consente agli utenti di condividere una copia di una conversazione Teams con un messaggio di posta elettronica in Outlook, senza dover uscire da Teams. Questa funzionalità è utile se gli utenti devono condividere conversazioni o aggiornamenti di stato con utenti esterni al team o persino all'organizzazione. Vai all'inizio della conversazione in Teams, seleziona **... Altre opzioni** e quindi seleziona **Condividi per Outlook**.  Per altre informazioni, vedere [Condividere Outlook da Teams](https://support.office.com/article/share-to-outlook-from-teams-f9dabbe9-9e9b-4e35-99dd-2eeeb67c4f6d).
+**Condividi in Outlook** consente agli utenti di condividere una copia di una conversazione di Teams in un messaggio di posta elettronica in Outlook, senza dover uscire da Teams. Questa funzionalità è utile se gli utenti devono condividere conversazioni o aggiornamenti di stato con utenti esterni al team o persino all'organizzazione. Vai all'inizio della conversazione in Teams, seleziona **... Altre opzioni** e quindi selezionare **Condividi in Outlook**.  Per altre informazioni, vedere [Condividere in Outlook da Teams](https://support.office.com/article/share-to-outlook-from-teams-f9dabbe9-9e9b-4e35-99dd-2eeeb67c4f6d).
 
-![Screenshot che mostra la funzionalità Condividi con Outlook in Teams.](media/share-to-outlook.png)
+![Screenshot che mostra la funzionalità Condividi in Outlook in Teams.](media/share-to-outlook.png)
 
-Per usare questa funzionalità, Outlook sul web deve essere attivata per l'utente. Se Outlook sul web è disattivata, l'opzione **Condividi con Outlook** non viene visualizzata in Teams per l'utente. Per la procedura per attivare e disattivare Outlook sul web, vedere [Abilitare o disabilitare Outlook sul web per una cassetta postale](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app).
+Per usare questa funzionalità, Outlook sul web deve essere attivata per l'utente. Se Outlook sul web è disattivata, l'opzione **Condividi in Outlook** non viene visualizzata in Teams per l'utente. Per la procedura per attivare e disattivare Outlook sul web, vedere [Abilitare o disabilitare Outlook sul web per una cassetta postale](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app).
 
 ## <a name="actionable-activity-emails"></a>Messaggi di posta elettronica attività su cui è possibile eseguire azioni
 
@@ -44,6 +44,6 @@ Gli utenti ricevono automaticamente messaggi di posta elettronica sulle attivit�
 
 ![Screenshot che mostra come rispondere a un messaggio e-mail di attività persa.](media/missed-activity-email-reply.png)
 
-È possibile usare il cmdlet [Set-OrganizationConfig](/powershell/module/exchange/organization/set-organizationconfig) insieme al parametro **SmtpActionableMessagesEnabled** per disattivare i messaggi di posta elettronica su cui è possibile eseguire azioni. Per impostazione predefinita, il parametro **SmtpActionableMessagesEnabled** è impostato su **true**. Se si imposta il parametro **su false**, i messaggi di posta elettronica su cui è possibile eseguire azioni vengono disattivati in Office 365. Per Teams utenti, questo significa che l'opzione **Rispondi** per rispondere direttamente in Outlook non è disponibile nei messaggi di posta elettronica per le attività perse. I messaggi di posta elettronica per le attività perse includono invece un'opzione **Rispondi in Teams** per consentire agli utenti di rispondere in Teams.
+È possibile usare il cmdlet [Set-OrganizationConfig](/powershell/module/exchange/organization/set-organizationconfig) insieme al parametro **SmtpActionableMessagesEnabled** per disattivare i messaggi di posta elettronica su cui è possibile eseguire azioni. Per impostazione predefinita, il parametro **SmtpActionableMessagesEnabled** è impostato su **true**. Se si imposta il parametro **su false**, i messaggi di posta elettronica su cui è possibile eseguire azioni vengono disattivati in Office 365. Per gli utenti di Teams, questo significa che l'opzione **Rispondi** per rispondere direttamente in Outlook non è disponibile nei messaggi di posta elettronica per le attività perse. Invece, i messaggi di posta elettronica per le attività perse includono un'opzione **Rispondi in Teams** per consentire agli utenti di rispondere in Teams.
 
 Vedere anche [Messaggi interattivi in Outlook e gruppi di Office 365](/outlook/actionable-messages/).
