@@ -1,5 +1,5 @@
 ---
-title: 'case study su Teams voce Contoso: operatori automatici e code di chiamata'
+title: 'Caso di studio teams voice Contoso: operatori automatici e code di chiamata'
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -13,19 +13,19 @@ ms.reviewer: jowrig
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: 'Teams case study vocale per società multinazionali: operatori automatici e code di chiamata'
+description: 'Case study su Teams voice per società multinazionali: operatori automatici e code di chiamata'
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6c0b6da7bf00fd4e62cf3e9b3b08074bf1b42788
-ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
+ms.openlocfilehash: 50d1ee2d384b200aeab6eefd6ca2de623015b6f2
+ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65681717"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66615842"
 ---
 # <a name="contoso-case-study-auto-attendants-and-call-queues"></a>Case study di Contoso: Operatori automatici e code di chiamata
 
-Contoso aveva familiarità con gli operatori automatici e le code di chiamata dalla distribuzione locale Skype for Business. Per capire come configurare gli operatori automatici cloud e le code di chiamata, hanno esaminato [il piano per Teams operatori automatici e code di chiamata](plan-auto-attendant-call-queue.md).
+Contoso aveva familiarità con gli operatori automatici e le code di chiamata dalla distribuzione locale Skype for Business. Per capire come configurare gli operatori automatici cloud e le code di chiamata, hanno esaminato [il piano per gli operatori automatici e le code di chiamata di Teams](plan-auto-attendant-call-queue.md).
 
 ## <a name="requirements-depending-on-site-type"></a>Requisiti a seconda del tipo di sito
 
@@ -33,11 +33,11 @@ A seconda del tipo di sito, Contoso aveva le seguenti esigenze:
 
 - Sito tipo A: sistemi di telefonia legacy tradizionali 
 
-  Sito Tipo A necessario per mantenere lo stesso numero di telefono associato all'addetto alla reception del numero per gli operatori automatici. I reparti principali di ognuno di questi siti hanno le proprie code di chiamata che verrebbero instradate ai membri del team. C'era una combinazione di siti che usavano Sistema telefonico con routing diretto e Sistema telefonico con piani per chiamate.  
+  Sito Tipo A necessario per mantenere lo stesso numero di telefono associato all'addetto alla reception del numero per gli operatori automatici. I reparti principali di ognuno di questi siti hanno le proprie code di chiamata che verrebbero instradate ai membri del team. C'era una combinazione di siti che usavano Sistema telefonico con Routing diretto e Sistema telefonico con Piani per chiamate.  
 
 - Tipo di sito B: Skype for Business VoIP aziendale 
 
-  Il sito di tipo B disponeva di operatori automatici e code di chiamata esistenti di cui era necessario eseguire la migrazione a Teams. Contoso deve mantenere i numeri di telefono associati agli operatori automatici. Contoso ha spostato la maggior parte di questi siti in Sistema telefonico con Piani per chiamate. Tuttavia, nelle poche posizioni in cui i Piani per chiamate non erano disponibili, Contoso ha spostato questi siti in una configurazione routing diretto.  
+  Il sito di tipo B disponeva di operatori automatici e code di chiamata esistenti, necessari per eseguire la migrazione a Teams. Contoso deve mantenere i numeri di telefono associati agli operatori automatici. Contoso ha spostato la maggior parte di questi siti in Sistema telefonico con Piani per chiamate. Tuttavia, nelle poche posizioni in cui i Piani per chiamate non erano disponibili, Contoso ha spostato questi siti in una configurazione routing diretto.  
 
 - Tipo di sito C: Skype for Business VoIP aziendale & sistema di telefonia legacy tradizionale 
 
@@ -57,29 +57,27 @@ A seconda del tipo di sito, Contoso aveva le seguenti esigenze:
   - D: Come determineremo quando un utente deve o non deve ricevere una chiamata? 
     R: Contoso ha deciso di usare le opzioni di gestione delle chiamate per determinare se l'agente è disponibile: routing basato sulla presenza. 
 
-
 ## <a name="configuration"></a>Configurazione
 
-I passaggi per configurare un operatore automatico e una coda di chiamata includono quanto segue, descritto in [Gestire gli account delle risorse](manage-resource-accounts.md): 
+I passaggi per configurare un operatore automatico e una coda di chiamata includono quanto segue, descritto in [Gestire gli account delle risorse](manage-resource-accounts.md):
 
-1. Ottenere un numero di servizio. 
+1. Ottenere un numero di servizio.
 
-2. Ottenere una licenza gratuita Sistema telefonico - Utente virtuale o una licenza a pagamento Sistema telefonico da usare con l'account della risorsa o con una licenza di Sistema telefonico.
+2. Ottenere una licenza gratuita **per l'account di risorsa Telefono di Microsoft Teams** o una licenza a pagamento sistema telefonico da usare con l'account della risorsa o una licenza Sistema telefonico.
 
-3. Creare l'account della risorsa. Per avere un account di risorsa associato, è necessario un operatore automatico o una coda di chiamata. 
+3. Creare l'account della risorsa. Per avere un account di risorsa associato, è necessario un operatore automatico o una coda di chiamata.
 
-4. Assegnare il Sistema telefonico o un Sistema telefonico - Licenza utente virtuale all'account della risorsa. Per altre informazioni, vedere [licenza Microsoft 365 Sistema telefonico - Utente virtuale](./teams-add-on-licensing/virtual-user.md).
+4. Assegnare **una licenza** **Teams Phone Standard o Telefono di Microsoft Teams account risorsa** all'account della risorsa. Per altre informazioni, vedere [Telefono di Microsoft Teams licenza Account risorse](./teams-add-on-licensing/virtual-user.md).
 
-5. Assegnare un numero di telefono di servizio all'account della risorsa a cui sono assegnate licenze. 
+5. Assegnare un numero di telefono di servizio all'account della risorsa a cui sono assegnate licenze.
 
-6. Creare una coda di chiamata o un operatore automatico Sistema telefonico 
+6. Crea una coda di chiamata o un operatore automatico sistema telefonico.
 
-7. Collega l'account della risorsa a una coda di chiamata o a un operatore automatico. 
+7. Collega l'account della risorsa a una coda di chiamata o a un operatore automatico.
 
+### <a name="sites-with-phone-system-with-direct-routing"></a>Siti con sistema telefonico con routing diretto
 
-### <a name="sites-with-phone-system-with-direct-routing"></a>Siti con Sistema telefonico con routing diretto 
-
-Contoso doveva configurare il numero di telefono fornito dal gestore locale come numero di servizio in Office 365. 
+Contoso doveva configurare il numero di telefono fornito dal gestore locale come numero di servizio in Office 365.
 
 - Per configurare un numero di telefono disponibile tramite Direct Routing, Contoso ha seguito le istruzioni disponibili in [Manage Resource Accounts](manage-resource-accounts.md). Poiché Office 365 non è a conoscenza dei numeri di telefono locali, Contoso ha usato PowerShell per completare la configurazione.   
 
@@ -88,11 +86,11 @@ Contoso doveva configurare il numero di telefono fornito dal gestore locale come
 - Per configurare una coda di chiamata cloud, Contoso ha seguito i passaggi descritti in [Creare una coda di chiamata cloud](create-a-phone-system-call-queue.md).  
 
 
-### <a name="sites-with-phone-system-with-calling-plan"></a>Siti con Sistema telefonico con piano per chiamate
+### <a name="sites-with-phone-system-with-calling-plan"></a>Siti con sistema telefonico con piano per chiamate
 
 Contoso doveva trasferire in Sistema telefonico di Office 365 il numero di telefono usato per Skype for Business VoIP aziendale gli operatori automatici. Ciò ha consentito l'assegnazione dello stesso numero come numero di servizio per l'uso come operatore automatico. 
 
-- Per trasferire il numero di telefono, Contoso ha seguito le istruzioni in [Trasferire i numeri di telefono a Teams](./phone-number-calling-plans/transfer-phone-numbers-to-teams.md) e ha ottenuto indicazioni aggiuntive in [Gestire i numeri di telefono per l'organizzazione](./manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
+- Per trasferire il numero di telefono, Contoso ha seguito le istruzioni in [Trasferire i numeri di telefono in Teams](./phone-number-calling-plans/transfer-phone-numbers-to-teams.md) e ha ottenuto indicazioni aggiuntive in [Gestire i numeri di telefono per l'organizzazione](./manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
 - Per configurare un operatore automatico cloud, Contoso ha seguito i passaggi descritti in [Configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md).
 

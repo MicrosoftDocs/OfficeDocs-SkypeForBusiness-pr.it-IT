@@ -20,12 +20,12 @@ ms.localizationpriority: medium
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e gestire gli operatori automatici in Microsoft Teams.
-ms.openlocfilehash: 37326ec03c22c91de5f4c4edb94aaad67f52bde5
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: 384c7aae5e11c938a6bf8ab5f82924d0379a83aa
+ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66240945"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66616112"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -57,9 +57,9 @@ I passaggi descritti nell'articolo creano operatori automatici con l'interfaccia
 
 ## <a name="follow-these-steps-to-set-up-your-auto-attendant"></a>Segui questi passaggi per configurare l'operatore automatico
 
-# <a name="step-1---general-info"></a>[Passaggio 1 - Informazioni generali](#tab/general-info)
+# <a name="step-1-general-info"></a>[Passaggio 1: Informazioni generali](#tab/general-info)
 
-## <a name="step-1---set-the-auto-attendants-general-information"></a>Passaggio 1 - Impostare le informazioni generali dell'operatore automatico
+## <a name="step-1-set-the-auto-attendants-general-information"></a>Passaggio 1: impostare le informazioni generali dell'operatore automatico
 
 Per configurare un operatore automatico, [nell'interfaccia di amministrazione di Teams](https://go.microsoft.com/fwlink/p/?linkid=2066851) espandi **Voce**, seleziona **Operatori automatici** e quindi **aggiungi**.
 
@@ -78,10 +78,9 @@ Per configurare un operatore automatico, [nell'interfaccia di amministrazione di
 
 Dopo aver impostato le informazioni generali dell'operatore automatico, seleziona **Avanti**.
 
+# <a name="step-2-basic-call-flow"></a>[Passaggio 2: Flusso delle chiamate di base](#tab/call-flow)
 
-# <a name="step-2---basic-call-flow"></a>[Passaggio 2 - Flusso delle chiamate di base](#tab/call-flow)
-
-## <a name="step-2---set-up-the-basic-call-flow"></a>Passaggio 2 - Configurare il flusso delle chiamate di base
+## <a name="step-2-set-up-the-basic-call-flow"></a>Passaggio 2: Configurare il flusso delle chiamate di base
 
 ### <a name="set-a-greeting"></a>Impostare un messaggio di saluto
 
@@ -131,9 +130,9 @@ Per ulteriori informazioni, consulta Il riferimento di [chiamata e la voce](dial
 
 Dopo aver impostato le opzioni di base per il flusso delle chiamate, selezionare **Avanti**.
 
-# <a name="step-3---after-hours-call-flow"></a>[Passaggio 3 - Flusso delle chiamate fuori orario](#tab/after-hours)
+# <a name="step-3-after-hours-call-flow"></a>[Passaggio 3: Flusso delle chiamate fuori orario](#tab/after-hours)
 
-## <a name="step-3---set-up-call-flow-for-after-hours-optional"></a>Passaggio 3 - Configurare il flusso delle chiamate per fuori orario (facoltativo)
+## <a name="step-3-set-up-call-flow-for-after-hours-optional"></a>Passaggio 3: Configurare il flusso delle chiamate per fuori orario (facoltativo)
 
 L'orario di ufficio può essere impostato per ogni operatore automatico.
 
@@ -151,9 +150,9 @@ Se si vuole separare il routing delle chiamate per i chiamanti in orario di chiu
 
 Dopo aver aggiunto il flusso delle chiamate fuori orario, seleziona **Avanti**.
 
-# <a name="step-4---holiday-call-flow"></a>[Passaggio 4 - Flusso delle chiamate festività](#tab/holidays)
+# <a name="step-4-holiday-call-flow"></a>[Passaggio 4: Flusso delle chiamate natalizie](#tab/holidays)
 
-## <a name="step-4---set-up-call-flows-for-holidays-optional"></a>Passaggio 4 - Impostare i flussi delle chiamate per le festività (facoltativo)
+## <a name="step-4-set-up-call-flows-for-holidays-optional"></a>Passaggio 4: Configurare i flussi delle chiamate per le festività (facoltativo)
 
 L'operatore automatico può avere un flusso delle chiamate per ogni [festività configurata](set-up-holidays-in-teams.md). È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
 
@@ -176,9 +175,9 @@ Ripetere la procedura in base alle esigenze per ogni festività aggiuntiva.
 
 Dopo aver aggiunto tutte le ore di festività, selezionare **Avanti**.
 
-# <a name="step-5---dial-scope"></a>[Passaggio 5 - Ambito di chiamata](#tab/dial-scope)
+# <a name="step-5-dial-scope"></a>[Passaggio 5: Ambito di chiamata](#tab/dial-scope)
 
-## <a name="step-5---set-up-dial-scope-optional"></a>Passaggio 5 - Configurare l'ambito di chiamata (facoltativo)
+## <a name="step-5-set-up-dial-scope-optional"></a>Passaggio 5: Configurare l'ambito di chiamata (facoltativo)
 
 *L'ambito di chiamata* definisce quali utenti sono disponibili nella directory quando un chiamante usa l'opzione di chiamata per nome o dial-by-extension. Il valore predefinito **Tutti gli utenti online** include tutti gli utenti dell'organizzazione che sono utenti online o ospitati in locale tramite Skype for Business Server.
 
@@ -191,9 +190,9 @@ Se un utente è presente in entrambi gli elenchi, verrà escluso dalla directory
 
 Dopo aver selezionato le opzioni **dell'ambito di chiamata** , selezionare **Avanti**.
 
-# <a name="step-6---resource-accounts"></a>[Passaggio 6 - Account delle risorse](#tab/resource-accounts)
+# <a name="step-6-resource-accounts"></a>[Passaggio 6: Account delle risorse](#tab/resource-accounts)
 
-## <a name="step-6---set-up-resource-accounts-optional"></a>Passaggio 6 - Configurare gli account delle risorse (facoltativo)
+## <a name="step-6-set-up-resource-accounts-optional"></a>Passaggio 6: Configurare gli account delle risorse (facoltativo)
 
 Tutti gli operatori automatici devono avere un account di risorse associato.  Gli operatori automatici di primo livello avranno bisogno di almeno un account di risorse con un numero di servizio associato. Se lo desideri, puoi assegnare diversi account di risorse a un operatore automatico, ognuno con un numero di servizio separato.
 
@@ -203,9 +202,9 @@ Dopo aver aggiunto gli account delle risorse, selezionare **Avanti**.
 
 Per altre informazioni, vedere [Gestire gli account delle risorse di Teams](manage-resource-accounts.md) .
 
-# <a name="additional-resources"></a>[Risorse aggiuntive](#tab/additional-resources)
+---
 
-## <a name="resources-for-more-complex-scenarios"></a>Risorse per scenari più complessi
+## <a name="resources-for-complex-scenarios"></a>Risorse per scenari complessi
 
 ### <a name="external-phone-number-transfers---technical-details"></a>Trasferimenti di numeri di telefono esterni - dettagli tecnici
 
@@ -236,8 +235,6 @@ Se sei un amministratore, puoi usare il seguente strumento di diagnostica per ve
 2. Nel riquadro Esegui diagnostica immettere l'account di risorsa nel campo **Nome utente o Posta elettronica** e quindi selezionare **Esegui test**.
 
 3. I test identificheranno le configurazioni di tenant, criteri o account delle risorse che impediscono all'operatore automatico di ricevere chiamate e forniscono i passaggi per risolvere eventuali problemi identificati.
-
----
 
 ### <a name="related-topics"></a>Argomenti correlati
 

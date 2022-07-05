@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata in Microsoft Teams. Le code di chiamata forniscono un messaggio di saluto, tengono musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: b90dc937d9df1b8578e80c34c96030caf2db5bad
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: cd5e0cc291b353b8bb46d82333275cc44ef860d3
+ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66494693"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66616172"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -96,7 +96,7 @@ Per altre informazioni, vedere [Gestire gli account delle risorse di Teams](mana
 È possibile assegnare numeri di ID chiamante in uscita agli agenti specificando uno o più account delle risorse con un numero di telefono. Gli agenti possono selezionare il numero ID chiamante in uscita da usare con ogni chiamata in uscita effettuata. All'interno dell'app Chiamate, gli agenti possono utilizzare il proprio numero di coda di chiamata (CQ) / Operatore automatico (AA) o il proprio direct inward dial personale (DID).
 
 > [!NOTE]
-> L'account della risorsa usato per i fini dell'ID chiamante deve avere una licenza **Sistema di Telefono di Microsoft Teams - Utente virtuale** e una delle seguenti assegnazioni:
+> L'account della risorsa usato per gli scopi dell'ID chiamante deve avere una licenza **account di Telefono di Microsoft Teams risorsa** e una delle seguenti assegnazioni:
 >
 > - Una licenza per un Piano per chiamate e un numero di telefono assegnato
 > - Numero di telefono Operator Connect assegnato
@@ -121,7 +121,7 @@ Se non si ha un account della risorsa con un numero di telefono assegnato:
 
 Dopo aver creato questo nuovo account della risorsa per l'ID chiamante, sarà comunque necessario:
 
-- Assegnare una [licenza Teams Phone Standard - Utente virtuale](manage-resource-accounts.md#assign-a-license)
+- Assegnare una [licenza per l'account di risorse di Teams Phone](manage-resource-accounts.md#assign-a-license)
 - Assegnare una licenza per un piano per chiamate Microsoft, assegnare un numero di telefono Operator Connect o assegnare un criterio di routing vocale online per il routing diretto
 - Assegna il [numero di telefono di servizio all'account della risorsa](manage-resource-accounts.md#assign-a-service-number), se usi il piano per chiamate Microsoft
 
@@ -133,7 +133,7 @@ Questa lingua verrà utilizzata per i comandi vocali generati dal sistema e per 
 
 Dopo aver selezionato una lingua, seleziona il pulsante **Avanti** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
-# <a name="step-2---greeting-and-music"></a>[Passaggio 2 - Saluto e musica](#tab/greeting-music)
+# <a name="step-2-greeting-and-music"></a>[Passaggio 2: Saluto e musica](#tab/greeting-music)
 
 ## <a name="step-2-add-a-greeting-and-on-hold-music"></a>Passaggio 2: Aggiungere un messaggio di saluto e musica in attesa
 
@@ -151,7 +151,7 @@ Teams fornisce musica predefinita ai chiamanti mentre sono *in attesa in coda*.
 
 Dopo aver selezionato un messaggio di saluto e la musica in attesa, seleziona il pulsante **Avanti** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
-# <a name="step-3---call-answering"></a>[Passaggio 3 - Risposta alle chiamate](#tab/call-answering)
+# <a name="step-3-call-answering"></a>[Passaggio 3: Risposta alle chiamate](#tab/call-answering)
 
 ## <a name="step-3-set-up-who-will-answer-incoming-calls"></a>Passaggio 3: Configurare chi risponderà alle chiamate in arrivo
 
@@ -223,7 +223,7 @@ Gli account di Teams degli agenti devono essere impostati sulla modalità TeamsO
 
 Dopo aver selezionato le opzioni di risposta alle chiamate, seleziona il pulsante **Avanti** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
-# <a name="step-4---agent-routing"></a>[Passaggio 4 - Routing dell'agente](#tab/agent-routing)
+# <a name="step-4-agent-routing"></a>[Passaggio 4: Routing dell'agente](#tab/agent-routing)
 
 ## <a name="step-4-select-your-agent-routing-options"></a>Passaggio 4: Selezionare le opzioni di routing dell'agente
 
@@ -285,7 +285,7 @@ Se un agente rifiuta esplicitamente di ricevere chiamate, non verrà incluso nel
 
 Dopo aver selezionato le opzioni di routing delle chiamate dell'agente, seleziona il pulsante **Avanti** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
-# <a name="step-5---call-overflow"></a>[Passaggio 5 - Overflow chiamata](#tab/call-overflow)
+# <a name="step-5-call-overflow"></a>[Passaggio 5: Overflow chiamata](#tab/call-overflow)
 
 ## <a name="step-5-set-how-to-handle-call-overflow"></a>Passaggio 5: Impostare come gestire l'overflow delle chiamate
 
@@ -308,7 +308,7 @@ Per i trasferimenti esterni, vedere [Prerequisiti](./plan-auto-attendant-call-qu
 
 Dopo aver selezionato le opzioni di timeout delle chiamate, selezionare il pulsante **Avanti** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
-# <a name="step-6---call-timeout"></a>[Passaggio 6 - Timeout chiamata](#tab/call-timeout)
+# <a name="step-6-call-timeout"></a>[Passaggio 6: Timeout chiamata](#tab/call-timeout)
 
 ## <a name="step-6-set-how-to-handle-call-timeouts"></a>Passaggio 6: Impostare come gestire i timeout delle chiamate
 
@@ -327,9 +327,11 @@ Per i trasferimenti esterni, vedere [Prerequisiti](./plan-auto-attendant-call-qu
 
 Dopo aver selezionato le opzioni di routing delle chiamate dell'agente, seleziona il pulsante **Invia** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
-# <a name="additional-resources"></a>[Risorse aggiuntive](#tab/additional-resources)
+---
 
-## <a name="summary-of-recommended-call-queue-settings"></a>Riepilogo delle impostazioni consigliate per la coda di chiamata
+## <a name="resources-for-complex-scenarios"></a>Risorse per scenari complessi
+
+### <a name="summary-of-recommended-call-queue-settings"></a>Riepilogo delle impostazioni consigliate per la coda di chiamata
 
 Sono consigliate le impostazioni seguenti:
 
@@ -338,7 +340,7 @@ Sono consigliate le impostazioni seguenti:
 - **Routing basato sulla presenza** su **Attivato**
 - **Tempo di avviso agente:** a **20 secondi**
 
-## <a name="call-queue-feature-compatibility"></a>Compatibilità delle funzionalità delle code di chiamata
+### <a name="call-queue-feature-compatibility"></a>Compatibilità delle funzionalità delle code di chiamata
 
 |Funzionalità                          |Teams Desktop<sup>1</sup> |Teams Web | Teams Mobile<sup>2</sup> |Lync |Telefoni IP | Code di chiamata standard |Code di chiamata basate sui canali | Commento |
 |:--------------------------------|:------------------------:|:--------:|:--------------:|:---:|:--------:|:--------------------:|:------------------------:|:--------|
@@ -356,7 +358,7 @@ Sono consigliate le impostazioni seguenti:
 |**Chiamate collaborative**        |                          |          |                |     |          |                      |                          |   |
 |`Channel Based Queues`             |S                       |N         |N               |N    |N         |n/d                   |Y<sup>8</sup>             |   |
 |**ID chiamante dinamico**            |                          |          |                |     |          |                      |                          |   |
-|`Standard call queue`            |N                         |N         |S               |N    |N         |S                     |n/d                       |   |
+|`Standard call queue`            |S                         |S         |S               |N    |N         |S                     |n/d                       |   |
 |`Channel based call queue`       |S                         |n/d       |n/d             |n/d  |n/d       |n/d                   |S                         |   |
 |**Metodi di connettività PSTN**    |                          |          |                |     |          |                      |                          |Vedere la nota 9   |
 |`Calling Plans`                  |S                         |S         |S               |S    |S         |S                     |S                         |   |
@@ -365,7 +367,7 @@ Sono consigliate le impostazioni seguenti:
 |**Varie**                |                          |          |                |     |          |                      |                          |   |
 |`Call toast shows Resource Account Name` |S                 |N         |S               |S    |          |S                     |S                         |              |
 
-### <a name="notes"></a>Note
+#### <a name="notes"></a>Note
 
 1. Client Windows di Microsoft Teams, client Mac di Microsoft Teams, Microsoft Teams sull'infrastruttura desktop virtualizzata.
 2. App Microsoft Teams per iPhone, app Microsoft Teams per Android.
@@ -377,7 +379,7 @@ Sono consigliate le impostazioni seguenti:
 8. Sono supportati solo i canali pubblici.
 9. Gli operatori automatici e le code di chiamata non possono trasferire le chiamate tra i metodi di connettività PSTN.
 
-## <a name="supported-clients"></a>Client supportati
+### <a name="supported-clients"></a>Client supportati
 
 Per gli agenti di chiamata in una coda di chiamata sono supportati i client seguenti:
 
@@ -397,7 +399,7 @@ Per gli agenti di chiamata in una coda di chiamata sono supportati i client segu
   > [!NOTE]
   > Le code di chiamata assegnate a un numero di routing diretto non supportano Skype for Business client, client Lync o telefoni IP Skype for Business come agenti. Il client Teams è supportato solo con una [modalità di coesistenza di Solo Teams](setting-your-coexistence-and-upgrade-settings.md).
 
-## <a name="call-queue-diagnostic-tool"></a>Strumento di diagnostica coda di chiamata
+### <a name="call-queue-diagnostic-tool"></a>Strumento di diagnostica coda di chiamata
 
 Se sei un amministratore, puoi usare il seguente strumento di diagnostica per verificare che una coda di chiamata sia in grado di ricevere chiamate:
 
@@ -410,9 +412,7 @@ Se sei un amministratore, puoi usare il seguente strumento di diagnostica per ve
 
 3. I test restituiscono i passaggi successivi migliori per risolvere eventuali configurazioni di tenant, criteri e account delle risorse per verificare che la coda di chiamata sia in grado di ricevere chiamate.
 
----
-
-## <a name="related-topics"></a>Argomenti correlati
+### <a name="related-topics"></a>Argomenti correlati
 
 [Ecco cosa ottieni con Telefono di Microsoft Teams](here-s-what-you-get-with-phone-system.md)
 

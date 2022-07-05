@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come instradare le chiamate a numeri non assegnati nell'organizzazione.
-ms.openlocfilehash: f092cf5501d723dabb4336d648387833dd376e9b
-ms.sourcegitcommit: d847256fca80e4e8954f767863c880dc8472ca04
+ms.openlocfilehash: 8874fc5a47ede1c35178cf16c7d3eded6f7826a7
+ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65304058"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66615732"
 ---
 # <a name="routing-calls-to-unassigned-numbers"></a>Routing delle chiamate a numeri non assegnati
 
@@ -40,7 +40,7 @@ L'amministratore può instradare le chiamate a numeri non assegnati nell'organiz
 
 ## <a name="configuration"></a>Configurazione
 
-Per instradare le chiamate a un numero non assegnato, usare il cmdlet New/Get/Set/Remove-CsTeamsUnassignedNumberTreatment disponibile in Teams modulo di PowerShell 2.5.1 o versione successiva.
+Per instradare le chiamate a un numero non assegnato, usare il cmdlet New/Get/Set/Remove-CsTeamsUnassignedNumberTreatment disponibile nel modulo Di PowerShell di Teams 2.5.1 o versione successiva.
 
 È necessario specificare il numero o l'intervallo di numeri chiamati e il routing associato per le chiamate a questi numeri. Ad esempio, il comando seguente specifica che tutte le chiamate al numero +1 (555) 222-3333 verranno instradate all'account della risorsa aa@contoso.com:
 
@@ -69,11 +69,11 @@ New-CsTeamsUnassignedNumberTreatment -Identity TR1 -Pattern "^\+1555333\d{4}$" -
 
 - Per instradare le chiamate a numeri di abbonati al Piano per chiamate Microsoft non assegnati, il tenant deve avere [crediti comunicazioni](what-are-communications-credits.md) disponibili.
 
-- Per instradare le chiamate a numeri di servizio del piano per chiamate Microsoft non assegnati, il tenant deve avere almeno un Sistema telefonico – Licenza utente virtuale.
+- Per instradare le chiamate a numeri di servizio del piano per chiamate Microsoft non assegnati, il tenant deve avere almeno un **Telefono di Microsoft Teams licenza Account risorsa**.
 
 - I formati supportati per i file audio personalizzati sono WAV (non compresso, PCM lineare con profondità di 16/8/32 bit in mono o stereo), WMA (solo mono) e MP3. Il contenuto del file audio non può essere superiore a 5 MB.
 
-- Per entrambe le chiamate in ingresso a chiamate Microsoft Teams e in uscita da Microsoft Teams il numero chiamato verrà confrontato con l'intervallo di numeri non assegnati.
+- Sia le chiamate in ingresso a Microsoft Teams che le chiamate in uscita da Microsoft Teams avranno il numero chiamato controllato rispetto all'intervallo di numeri non assegnati.
 
 - Se un modello/intervallo specificato contiene numeri di telefono assegnati a un account utente o di risorse nel tenant, le chiamate a questi numeri di telefono verranno indirizzate alla destinazione appropriata e non verranno indirizzate al trattamento dei numeri non assegnati specificati. Non ci sono altri controlli dei numeri nell'intervallo. Se l'intervallo contiene un numero di telefono esterno valido, le chiamate in uscita da Microsoft Teams a quel numero di telefono verranno instradate in base al trattamento.
 

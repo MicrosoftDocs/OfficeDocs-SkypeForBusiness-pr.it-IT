@@ -16,12 +16,12 @@ f1.keywords:
 description: Ottimizzazione multimediale locale per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 29f18234cb836634ec30bfe9751b667fbab4fdd0
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 4c33b8225f3bcde32428348e85166ff4d4463738
+ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675928"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66616092"
 ---
 # <a name="plan-for-local-media-optimization-for-direct-routing"></a>Pianificare Ottimizzazione multimediale locale per il routing diretto
 
@@ -29,15 +29,15 @@ La voce PSTN (Public Switched Telephone Network) è considerata un'applicazione 
 
 Ottimizzazione multimediale locale per routing diretto consente di gestire la qualità della voce:
 
-- Controllo del flusso del traffico multimediale tra i client Teams e i controller dei confini della sessione (SBC) del cliente.
+- Controllo del flusso del traffico multimediale tra i client di Teams e i controller dei confini della sessione (SBC) del cliente.
 - Mantenere i supporti locali entro i limiti delle subnet di rete aziendale.
-- Consentire flussi multimediali tra i client Teams e gli SBC anche se questi sono dietro firewall aziendali con IP privati e non sono visibili direttamente a Microsoft.
+- Consentire flussi multimediali tra i client di Teams e gli SBC anche se gli SBC sono dietro firewall aziendali con IP privati e non sono visibili direttamente a Microsoft.
 
 Ottimizzazione multimediale locale supporta due scenari:
 
 - Centralizzazione di tutti i trunk locali attraverso una SBC centralizzata connessa al trunk SIP (Session Initiation Protocol) principale, fornendo servizi di telefonia a tutte le filiali locali dell'azienda.
 
-- Creazione di una topologia di rete virtuale di SBC, in cui gli SBC nelle succursali locali sono connessi a un SBC proxy centralizzato visibile e con cui è possibile comunicare Telefono Microsoft Sistema tramite il relativo indirizzo IP esterno. In una topologia di rete virtuale, gli SBC a valle comunicano tramite ip interni e non sono direttamente visibili ai Sistema telefonico.
+- Creazione di una topologia di rete virtuale degli SBC, in cui gli SBC nelle succursali locali sono connessi a un SBC proxy centralizzato visibile a Microsoft Phone System e con cui comunicarlo tramite il relativo indirizzo IP esterno. In una topologia di rete virtuale, gli SBC a valle comunicano tramite IP interni e non sono direttamente visibili nel sistema telefonico.
 
 Questo articolo descrive le funzionalità e gli scenari e le soluzioni dei clienti. Per informazioni dettagliate sulla configurazione, vedi [Configurare Ottimizzazione multimediale locale](direct-routing-media-optimization-configure.md).
 
@@ -50,7 +50,7 @@ Per informazioni sui fornitori di SBC che supportano Ottimizzazione multimediale
 
 Per questa discussione, si supponga che Contoso gestisce più aziende in tutto il mondo come indicato di seguito. Si noti che le aree geografiche Europa e APAC sono utilizzate solo come esempi. Un'azienda potrebbe avere diverse aree geografiche con requisiti simili.
 
-- **In Europa**, Contoso ha uffici in circa 30 paesi. Ogni ufficio ha il proprio Private Branch Exchange (PBX).
+- **In Europa**, Contoso ha uffici in circa 30 paesi. Ogni ufficio ha un proprio PBX (Private Branch Exchange).
 
   A Contoso è stata offerta la possibilità di centralizzare i tronchi in un'unica posizione, Amsterdam, per tutti i 30 uffici europei. Contoso ha distribuito la SBC ad Amsterdam, ha fornito larghezza di banda sufficiente per eseguire chiamate attraverso la posizione centralizzata, connesso un trunk SIP centrale alla posizione centralizzata e ha iniziato a servire tutte le località europee da Amsterdam.
 
@@ -62,13 +62,13 @@ In base ai requisiti aziendali, Contoso ha implementato due soluzioni con Ottimi
 
 - **In Europa**, tutti i trunks sono centralizzati e flussi multimediali tra la SBC centrale e gli utenti, in base alla posizione dell'utente.
 
-  - Se un utente è connesso alla subnet locale di una rete aziendale, ovvero l'utente è interno, i flussi multimediali tra l'INDIRIZZO IP interno della scheda SBC centrale e il client Teams dell'utente.
+  - Se un utente è connesso alla subnet locale di una rete aziendale (ovvero l'utente è interno), i flussi multimediali tra l'INDIRIZZO IP interno della scheda SBC centrale e il client Teams dell'utente.
 
-  - Se un utente non rientra nei limiti della rete aziendale, ad esempio se usa una connessione Internet wireless pubblica, l'utente è considerato esterno. In questo caso, i flussi multimediali tra l'indirizzo IP esterno del client SBC centrale e il client Teams.
+  - Se un utente non rientra nei limiti della rete aziendale, ad esempio se usa una connessione Internet wireless pubblica, l'utente è considerato esterno. In questo caso, i flussi multimediali tra l'INDIRIZZO IP esterno della scheda SBC centrale e il client teams.
 
 - **Nell'area APAC**, un SBC proxy centralizzato viene associato a Microsoft Direct Routing, che indirizza i supporti tra l'interfaccia Direct Routing e gli SBC a valle nelle filiali locali.
 
-  Gli SBC a valle nelle filiali locali non sono direttamente visibili in Direct Routing in APAC, ma vengono associati utilizzando il cmdlet Set-CSOnlinePSTNGateway per creare una topologia di rete virtuale all'interno di Telefono Microsoft System. I supporti rimangono sempre locali quando possibile. Gli utenti esterni dispongono di supporti che attraversano il client Teams e l'indirizzo IP pubblico del proxy SBC.
+  Gli SBC a valle nelle filiali locali non sono direttamente visibili in Direct Routing in APAC, ma sono associati utilizzando il cmdlet Set-CSOnlinePSTNGateway per creare una topologia di rete virtuale all'interno di Microsoft Phone System. I supporti rimangono sempre locali quando possibile. Gli utenti esterni hanno supporti che attraversano il client Teams e l'indirizzo IP pubblico del proxy SBC.
 
 ## <a name="central-sbc-with-centralized-trunks"></a>SBC centrale con trunk centralizzati
 
@@ -95,11 +95,11 @@ Il diagramma seguente mostra il flusso del traffico quando un utente è connesso
 
 In locale, l'utente viene assegnato alla filiale locale in Germania. L'utente effettua una chiamata telefonica instradamento diretto tramite Teams.
 
-- Il client Teams dell'utente comunica ai Sistema telefonico direttamente tramite l'API REST, ma il supporto generato durante la chiamata passa all'indirizzo IP interno della SBC centrale.
+- Il client Teams dell'utente comunica al sistema telefonico direttamente tramite l'API REST, ma il supporto generato durante la chiamata passa all'indirizzo IP interno della SBC centrale.
 
 - SBC reindirizza il flusso a Sistema telefonico e alla rete PSTN connessa.
 
-- La scheda SBC centrale è visibile solo all'Sistema telefonico tramite l'indirizzo IP esterno.
+- La scheda SBC centrale è visibile solo al sistema telefonico tramite l'indirizzo IP esterno.
 
 Diagramma 1. Flusso del traffico quando l'utente si trova nel sito "home" con una scheda SBC centralizzata e un trunk SIP centralizzato connesso
 
@@ -110,11 +110,11 @@ Diagramma 1. Flusso del traffico quando l'utente si trova nel sito "home" con un
 
 Il diagramma seguente mostra il flusso del traffico quando un utente non è locale e non è connesso alla rete aziendale, ovvero il dispositivo dell'utente è connesso a Internet tramite un dispositivo mobile o una rete Wi-Fi pubblica. L'utente effettua una chiamata telefonica instradamento diretto tramite Teams:
 
-- Il client Teams dell'utente comunica ai Sistema telefonico direttamente tramite l'API REST, ma, in questo caso, il supporto generato durante la chiamata scorre verso l'indirizzo IP esterno della SBC centrale.
+- Il client Teams dell'utente comunica al sistema telefonico direttamente tramite l'API REST, ma, in questo caso, il supporto generato durante la chiamata scorre verso l'indirizzo IP esterno della SBC centrale.
 
 - SBC reindirizza il flusso a Sistema telefonico e alla rete PSTN connessa.
 
-- La scheda SBC centrale è visibile solo all'Sistema telefonico tramite l'indirizzo IP esterno.
+- La scheda SBC centrale è visibile solo al sistema telefonico tramite l'indirizzo IP esterno.
 
 In questo caso, il comportamento è simile se l'utente è locale per la succursale in Germania o per qualsiasi altra filiale. L'utente viene considerato esterno perché l'utente è al di fuori dei limiti della rete aziendale.
 
@@ -145,13 +145,13 @@ Tabella 2. Esempio di informazioni sulla rete SBC
 Il diagramma seguente mostra il flusso di traffico generale per lo scenario in cui un utente si trova all'interno dell'ufficio nell'area APAC.
 L'utente, che è assegnato a una filiale locale in Vietnam ed è in locale, effettua una chiamata telefonica direct routing tramite Teams.
 
-- Il client Teams dell'utente comunica con Sistema telefonico direttamente tramite l'API REST, ma il supporto generato durante il flusso della chiamata verso l'indirizzo IP interno di SBC locale.
+- Il client Teams dell'utente comunica con Sistema telefonico direttamente tramite l'API REST, ma i supporti generati durante la chiamata passano all'indirizzo IP interno di SBC locale.
 
 - L'SBC locale reindirizza il flusso al proxy SBC a Singapore e alla rete PSTN locale connessa.
 
--  Il proxy SBC è visibile per Sistema telefonico solo attraverso l'indirizzo IP esterno e indirizza il flusso dalla SBC a valle (in questo caso la SBC locale in Vietnam) a Sistema telefonico.
+-  Il proxy SBC è visibile al sistema telefonico solo attraverso l'indirizzo IP esterno e instrada il flusso dalla SBC a valle (in questo caso la SBC locale in Vietnam) al sistema telefonico.
 
-- La scheda SBC a valle nella filiale locale non è visibile ai Sistema telefonico direttamente, ma è mappata all'interno della topologia della rete virtuale definita dall'amministratore Contoso durante la configurazione di Ottimizzazione multimediale locale.
+- La scheda SBC a valle nella filiale locale non è visibile direttamente al sistema telefonico, ma viene mappata all'interno della topologia di rete virtuale definita dall'amministratore Contoso durante la configurazione di Ottimizzazione multimediale locale.
 
 > [!NOTE]
 > Il comportamento potrebbe essere diverso per gli utenti locali e non locali a seconda della modalità di ottimizzazione multimediale locale configurata.
@@ -160,21 +160,21 @@ Per ulteriori informazioni sulle possibili modalità e sul comportamento pertine
 
 Diagramma 3. Flusso di traffico quando l'utente si trova nella rete "domestica" con un SBC proxy e con SBC a valle connessi
 
-! [Diagramma che mostra di nuovo il flusso del traffico Ottimizzazione multimediale locale.] (supporti/direct-routing-media-op-3.png "Flusso del traffico in caso di SBC proxy con SBC a valle connessi quando l'utente si trova nella rete "domestica")
+![Diagramma che mostra di nuovo il flusso di traffico Ottimizzazione multimediale locale.](media/direct-routing-media-op-3.png "Traffic flow in case of proxy SBC with connected downstream SBCs when user is in the \"home\" network")
 
 ### <a name="external-user"></a>Utente esterno
 
-Il diagramma seguente mostra il flusso del traffico quando un utente è al di fuori dei confini della rete aziendale. L'utente non è locale (non rientra nei limiti della rete aziendale). L'utente effettua una chiamata telefonica instradamento diretto attraverso Teams a un numero di telefono in Vietnam.
+Il diagramma seguente mostra il flusso del traffico quando un utente è al di fuori dei confini della rete aziendale. L'utente non è locale (non rientra nei limiti della rete aziendale). L'utente effettua una chiamata telefonica instradamento diretto tramite Teams a un numero di telefono in Vietnam.
 
-- Il client Teams dell'utente comunica con Sistema telefonico direttamente tramite l'API REST, ma il supporto generato durante la chiamata scorre prima verso l'indirizzo IP esterno del proxy SBC a Singapore.
+- Il client Teams dell'utente comunica con sistema telefonico direttamente tramite l'API REST, ma il supporto generato durante la chiamata scorre prima verso l'indirizzo IP esterno del proxy SBC a Singapore.
 
 - In base ai criteri di configurazione e voce (vedere [Configurare Ottimizzazione multimediale locale](direct-routing-media-optimization-configure.md) per i dettagli), il proxy SBC reindirizza il flusso alla SBC a valle in Vietnam.
 
 - La SBC a valle in Vietnam reindirizza il flusso alla rete PSTN locale connessa.
 
-- Il server SBC proxy è visibile solo all'Sistema telefonico tramite l'indirizzo IP esterno.
+- L'SBC proxy è visibile solo al sistema telefonico tramite l'indirizzo IP esterno.
 
--  La scheda SBC a valle nella filiale locale non è visibile ai Sistema telefonico direttamente, ma viene mappata all'interno della topologia della rete virtuale definita dall'amministratore contoso durante la configurazione di Ottimizzazione multimediale locale. Nell'esempio l'utente viene considerato esterno perché non rientra nei limiti della rete aziendale.
+-  La scheda SBC a valle nella filiale locale non è visibile direttamente a Sistema telefonico, ma è mappata all'interno della topologia di rete virtuale definita dall'amministratore contoso durante la configurazione di Ottimizzazione multimediale locale. Nell'esempio l'utente viene considerato esterno perché non rientra nei limiti della rete aziendale.
 
 Diagramma 4. Flusso del traffico quando l'utente è esterno con un SBC proxy e con SBC a valle connessi
 
@@ -213,11 +213,11 @@ L'SBC di Amsterdam è configurato come proxy SBC per una SBC locale a valle in G
 
 Tabella 3. Configurazione di esempio per lo scenario 1
 
-| Posizione fisica dell'utente | Un utente effettua una chiamata a un numero | Criteri di routing vocale online | Modalità configurata per SBC | Flow multimediale |
+| Posizione fisica dell'utente | Un utente effettua una chiamata a un numero | Criteri di routing vocale online | Modalità configurata per SBC | Flusso multimediale |
 |:------------|:-------|:-------|:-------|:-------|
-| Germania | +49 1 437 2800 | Priorità 1: ^\+49(\d{8})$ -DEsbc.contoso.com<br>Priorità 2: .* - proxysbc.contoso.com| DEsbc.contoso.com - Ignora sempre <br>proxysbc.contoso.com - Ignora sempre | < utente Teams-> DEsbc.contoso.com |
+| Germania | +49 1 437 2800 | Priorità 1: ^\+49(\d{8})$ -DEsbc.contoso.com<br>Priorità 2: .* - proxysbc.contoso.com| DEsbc.contoso.com - Ignora sempre <br>proxysbc.contoso.com - Ignora sempre | <-> DEsbc.contoso.com utenti di Teams |
 
-Il diagramma seguente mostra il flusso di traffico elevato per l'utente interno in Germania che effettua una chiamata di instradamento diretto tramite Teams al numero in Germania.
+Il diagramma seguente mostra il flusso di traffico ad alto livello per l'utente interno in Germania che effettua una chiamata telefonica direct routing attraverso Teams al numero in Germania.
 
 - Il client Teams dell'utente comunica con Sistema telefonico direttamente tramite l'API REST.
 
@@ -225,9 +225,9 @@ Il diagramma seguente mostra il flusso di traffico elevato per l'utente interno 
 
 - La SBC locale reindirizza il flusso al proxy SBC di Amsterdam e alla rete PSTN locale connessa.
 
-- Il proxy SBC è visibile per Sistema telefonico solo attraverso l'indirizzo IP esterno e indirizza il flusso dalla SBC a valle (in questo caso, la SBC locale in Germania) a Sistema telefonico.
+- Il proxy SBC è visibile al sistema telefonico solo attraverso l'indirizzo IP esterno e indirizza il flusso dalla SBC a valle (in questo caso, la SBC locale in Germania) al sistema telefonico.
 
-- La scheda SBC a valle nella filiale locale non è visibile ai Sistema telefonico direttamente, ma è mappata all'interno della topologia della rete virtuale definita dall'amministratore Contoso durante la configurazione di Ottimizzazione multimediale locale.
+- La scheda SBC a valle nella filiale locale non è visibile direttamente al sistema telefonico, ma viene mappata all'interno della topologia di rete virtuale definita dall'amministratore Contoso durante la configurazione di Ottimizzazione multimediale locale.
 
 
 Diagramma 5.  Flusso del traffico con modalità "Bypass sempre" e l'utente si trova nel sito "home"
@@ -241,11 +241,11 @@ L'SBC di Amsterdam è configurato come proxy SBC per una SBC locale a valle in G
 
 Tabella 4. Configurazione di esempio per lo scenario 2
 
-| Posizione fisica dell'utente | Un utente effettua una chiamata a un numero | Criteri di routing vocale online | Modalità configurata per SBC | Flow multimediale |
+| Posizione fisica dell'utente | Un utente effettua una chiamata a un numero | Criteri di routing vocale online | Modalità configurata per SBC | Flusso multimediale |
 |:------------|:-------|:-------|:-------|:-------|
-| Francia | +49 1 437 2800 | Priorità 1: ^\+49(\d{8})$ -DEsbc.contoso.com <br>Priorità 2: .* - proxysbc.contoso.com |  DEsbc.contoso.com - Bypassare sempre proxysbc.contoso.com - Bypassare sempre | < utente Teams- > DEsbc.contoso.com  |
+| Francia | +49 1 437 2800 | Priorità 1: ^\+49(\d{8})$ -DEsbc.contoso.com <br>Priorità 2: .* - proxysbc.contoso.com |  DEsbc.contoso.com - Bypassare sempre proxysbc.contoso.com - Bypassare sempre | < utenti di Teams- > DEsbc.contoso.com  |
 
-Il diagramma seguente mostra il flusso del traffico ad alto livello quando l'utente tedesco interno in Francia effettua una chiamata telefonica instradamento diretto attraverso Teams al numero in Germania.
+Il diagramma seguente mostra il flusso di traffico ad alto livello quando l'utente tedesco interno in Francia effettua una chiamata telefonica di instradamento diretto attraverso Teams al numero in Germania.
 
 - Il client Teams dell'utente comunica con Sistema telefonico direttamente tramite l'API REST.
 
@@ -277,11 +277,11 @@ Si supponga che la SBC a Singapore sia configurata come SBC proxy per gli SBC lo
 
 Tabella 5. Configurazione di esempio per lo scenario 1 della modalità "Solo per utenti locali"
 
-| Posizione fisica dell'utente | Un utente effettua una chiamata a un numero | Criteri di routing vocale online | Modalità configurata per SBC | Flow multimediale |
+| Posizione fisica dell'utente | Un utente effettua una chiamata a un numero | Criteri di routing vocale online | Modalità configurata per SBC | Flusso multimediale |
 |:------------|:-------|:-------|:-------|:-------|
-| Vietnam | +84 4 3926 3000 | Priorità 1: ^\+84(\d{9})$ -VNsbc.contoso.com <br>Priorità 2: .* - proxysbc.contoso.com | VNsbc.contoso.com - Solo per utenti locali <br> proxysbc.contoso.com - Ignora sempre | < utente Teams-> VNsbc.contoso.com |
+| Vietnam | +84 4 3926 3000 | Priorità 1: ^\+84(\d{9})$ -VNsbc.contoso.com <br>Priorità 2: .* - proxysbc.contoso.com | VNsbc.contoso.com - Solo per utenti locali <br> proxysbc.contoso.com - Ignora sempre | < utenti di Teams- > VNsbc.contoso.com |
 
-Nel diagramma seguente, un utente assegnato alla filiale locale in Vietnam, mentre è in locale, effettua una chiamata telefonica di instradamento diretto tramite Teams.
+Nel diagramma seguente, un utente assegnato alla filiale locale in Vietnam, mentre è in locale, effettua una chiamata telefonica direct routing tramite Teams.
 
 - Il client Teams dell'utente comunica con Sistema telefonico direttamente tramite l'API REST.
 
@@ -289,9 +289,9 @@ Nel diagramma seguente, un utente assegnato alla filiale locale in Vietnam, ment
 
 - L'SBC locale reindirizza il flusso al proxy SBC a Singapore e alla rete PSTN locale connessa.
 
-- Il proxy SBC è visibile per Sistema telefonico solo attraverso l'indirizzo IP esterno e indirizza il flusso dalla SBC a valle (in questo caso, la SBC locale in Vietnam) a Sistema telefonico.
+- Il proxy SBC è visibile al sistema telefonico solo attraverso l'indirizzo IP esterno e instrada il flusso dalla SBC a valle (in questo caso, la SBC locale in Vietnam) a Sistema telefonico.
 
-- La scheda SBC a valle nella filiale locale non è visibile ai Sistema telefonico direttamente, ma è mappata all'interno della topologia della rete virtuale.
+- L'SBC a valle nella filiale locale non è visibile direttamente a Sistema telefonico, ma è mappato all'interno della topologia della rete virtuale.
 
 Diagramma 7. Flusso del traffico con modalità "Solo per utenti locali" e l'utente è nel sito "home"
 
@@ -304,12 +304,12 @@ Si supponga che la SBC a Singapore sia configurata come SBC proxy per gli SBC lo
 
 Tabella 6. Configurazione utente
 
-| Posizione fisica dell'utente | Un utente effettua una chiamata a un numero | Criteri di routing vocale online | Modalità configurata per SBC | Flow multimediale |
+| Posizione fisica dell'utente | Un utente effettua una chiamata a un numero | Criteri di routing vocale online | Modalità configurata per SBC | Flusso multimediale |
 |:------------|:-------|:-------|:-------|:-------|
-| Indonesia | +84 4 3926 3000 | Priorità 1: ^\+84(\d{9})$ -VNsbc.contoso.com <br> Priorità 2: .* - proxysbc.contoso.com |VNsbc.contoso.com - Solo per utenti locali <br> proxysbc.contoso.com - Ignora sempre | Teams < utente > proxysbc.contoso.com <-> VNsbc.contoso.com |
+| Indonesia | +84 4 3926 3000 | Priorità 1: ^\+84(\d{9})$ -VNsbc.contoso.com <br> Priorità 2: .* - proxysbc.contoso.com |VNsbc.contoso.com - Solo per utenti locali <br> proxysbc.contoso.com - Ignora sempre | < utenti di Teams- > proxysbc.contoso.com < - > VNsbc.contoso.com |
 
 
-Nel diagramma seguente, l'utente interno, mentre si trova nella filiale indonesiana, effettua una chiamata telefonica direct routing attraverso Teams a un numero in Vietnam.
+Nel diagramma seguente, l'utente interno, mentre si trova nella filiale indonesiana, effettua una chiamata telefonica di instradamento diretto attraverso Teams a un numero in Vietnam.
 
 - Il client Teams dell'utente comunica con Sistema telefonico direttamente tramite l'API REST.
 
@@ -319,9 +319,9 @@ Nel diagramma seguente, l'utente interno, mentre si trova nella filiale indonesi
 
 - La SBC a valle in Vietnam instrada il flusso alla rete PSTN locale connessa.
 
-- Il server SBC proxy è visibile solo all'Sistema telefonico tramite l'indirizzo IP esterno.
+- L'SBC proxy è visibile solo al sistema telefonico tramite l'indirizzo IP esterno.
 
-- Gli SBC a valle nelle filiali locali non sono visibili ai Sistema telefonico direttamente, ma sono mappati all'interno della topologia della rete virtuale.
+- Gli SBC a valle nelle filiali locali non sono visibili direttamente nel sistema telefonico, ma sono mappati all'interno della topologia della rete virtuale.
 
 Diagramma 8.  Flusso del traffico con modalità "Solo per utenti locali" e l'utente non è nel sito "home" ma nella rete interna
 
@@ -333,9 +333,9 @@ Di seguito è riportato un elenco dei problemi noti attualmente presenti in Otti
 
 | Problema | Soluzione |
 | :--- | :--- |
-| Teams client non viene identificato come **interno** quando l'IP pubblico del client Teams corrisponde all'elenco IP attendibile del cliente. | Ottimizzazione multimediale locale richiede che la subnet client Teams corrisponda a una subnet di [rete](/powershell/module/skype/new-cstenantnetworksubnet) configurata dal tenant|
-| Le escalation delle chiamate provocano l'caduta delle chiamate quando il client Teams viene identificato come interno.| Disabilitare Ottimizzazione multimediale locale in Direct Routing SBC.|
+| Il client Teams non viene identificato come **interno** quando l'IP pubblico del client Teams corrisponde all'elenco IP attendibile del cliente. | Ottimizzazione multimediale locale richiede che la subnet client di Teams corrisponda a una [subnet di rete](/powershell/module/skype/new-cstenantnetworksubnet) configurata dal tenant|
+| Le riassegnazioni delle chiamate provocano l'caduta delle chiamate quando il client teams viene identificato come interno.| Disabilitare Ottimizzazione multimediale locale in Direct Routing SBC.|
 | Le riassegnazioni delle chiamate da 1 a 1 chiamata tra i clienti interni a una chiamata a più parti con cliente esterno/risorsa provocano chiamate interrotte | Lavora in corso per una correzione. In alternativa, disabilitare Ottimizzazione multimediale locale in Direct Routing SBC.|
-| Teams'utente mette la chiamata in attesa. Musica viene riprodotto da PSTN e Ottimizzazione multimediale locale funziona. L Teams utentino riprende la chiamata. La chiamata a PSTN riprende ma Ottimizzazione multimediale locale non funziona e la chiamata continua tramite SBC centrale (proxy) | Quando un utente effettua una chiamata per avviare una musica in attesa (MoH), viene inoltrata da 1:1 a una chiamata multiparty da parte del controller di chiamata per richiamare Media Controller e Media Processor (che funge da mixer AVMCU) attraverso il quale MoH raggiunge un utente che è stato messo in attesa. L'escalation a una chiamata 1:1 dopo il curriculum della chiamata non avviene mai come da progettazione. Disabilitare Ottimizzazione multimediale locale in Direct Routing SBC.|
+| L'utente di Teams mette la chiamata in attesa. La musica viene riprodotta da PSTN e Ottimizzazione multimediale locale funziona. L'utente di Teams riprende la chiamata. La chiamata a PSTN riprende ma Ottimizzazione multimediale locale non funziona e la chiamata continua tramite SBC centrale (proxy) | Quando un utente effettua una chiamata per avviare una musica in attesa (MoH), viene inoltrata da 1:1 a una chiamata multiparty da parte del controller di chiamata per richiamare Media Controller e Media Processor (che funge da mixer AVMCU) attraverso il quale MoH raggiunge un utente che è stato messo in attesa. L'escalation a una chiamata 1:1 dopo il curriculum della chiamata non avviene mai come da progettazione. Disabilitare Ottimizzazione multimediale locale in Direct Routing SBC.|
 |Mentre viene stabilita una chiamata per alcuni secondi, l'utente potrebbe sentire il silenzio.| A causa della complessità dell'architettura di Ottimizzazione multimediale locale, questo può verificarsi in alcuni casi.Due to the complexity of Local Media Optimization architecture, this might occur in some cases.|
 |Le app vocali (ad esempio Operatore automatico, Coda di chiamata) non funzionano.| LMO non supporta le app vocali, perché risiedono nel cloud e richiedono la connettività esterna. Per il momento non è disponibile alcuna soluzione alternativa.|

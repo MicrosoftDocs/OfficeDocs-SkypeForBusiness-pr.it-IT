@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4b5a0ca0cb52c4b444769b7bfc25b17cab80a02b
-ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
+ms.openlocfilehash: ac4aa6e8182342f36da0434aaf78123937d6d8ce
+ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563944"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66616412"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Condurre un'indagine eDiscovery sul contenuto in Microsoft Teams
 
@@ -52,7 +52,7 @@ Non tutti i contenuti di Teams sono eDiscoverable. La tabella seguente mostra i 
 |Metadati della riunione<sup>1</sup>|Sì||
 |Nome del canale|Sì||
 |Citazioni|Sì|Il contenuto tra virgolette è ricercabile. Tuttavia, i risultati della ricerca non indicano che il contenuto è stato citato.|
-|Reazioni (come Mi piace, cuori e altre reazioni)|Sì||
+|Reazioni (come Mi piace, cuori e altre reazioni)|Sì|Le reazioni sono supportate per tutti i clienti commerciali dopo il 1° giugno 2022. Le reazioni precedenti a questa data non sono disponibili per eDiscovery. È previsto il supporto per il cloud per enti pubblici. Non esiste alcun supporto legale per le reazioni.|
 |Oggetto|Sì||
 |Tabelle|Sì||
 

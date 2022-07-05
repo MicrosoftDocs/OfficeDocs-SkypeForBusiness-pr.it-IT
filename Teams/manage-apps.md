@@ -5,6 +5,8 @@ ms.author: guptaashish
 manager: prkosh
 ms.topic: article
 ms.service: msteams
+ms.subservice: teams-apps
+ms.custom: intro-get-started
 audience: admin
 ms.collection:
 - Teams_ITAdmin_Help
@@ -17,18 +19,18 @@ description: Informazioni su come gestire le app di Teams. Scopri come consentir
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 25e540a7709ab12b73a97cc94b1350630c302197
-ms.sourcegitcommit: bdb919a6f53556f76dd4a71759412023e6e18fbb
+ms.openlocfilehash: 82ab9372f925e40beac41d4075b49b34118f8851
+ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66529728"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66616052"
 ---
 # <a name="manage-teams-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app di Teams nell'interfaccia di amministrazione di Microsoft Teams
 
 Le app per l'organizzazione sono gestite nella pagina **Delle app di Teams** nel portale dell'interfaccia di amministrazione di Teams. Usare la pagina Gestisci app per visualizzare e gestire tutte le app di Teams nel catalogo app dell'organizzazione.
 
-![Screenshot della pagina Gestisci app.](media/manage-apps.png)
+:::image type="content" source="media/manage-apps.png" alt-text="Screenshot della pagina Gestisci app." lightbox="media/manage-apps.png":::
 
 Per usare l'interfaccia di amministrazione di Teams, è necessario avere un ruolo di Amministrazione globale o amministratore di Teams. Per informazioni dettagliate, vedere gli articoli della Guida seguenti:
 
@@ -156,7 +158,7 @@ Si usa il pulsante **Aggiungi al team** per installare un'app in un team. Questa
 1. Cerca un'app in base al nome e seleziona l'app. Non aprire la pagina dei dettagli dell'app.
 1. Selezionare **Aggiungi al team**.
 
-   :::image type="content" source="media/manage-apps-add-app-team-trimmed.png" alt-text="Screenshot dell'opzione Aggiungi al team per l'app che può essere aggiunta all'ambito del team." lightbox="media/manage-apps-add-app-team.png":::
+   :::image type="content" source="media/manage-apps-add-app-team-trimmed.png" alt-text="Screenshot dell'opzione Aggiungi al team per l'app che può essere aggiunta all'ambito del team.":::
 
 1. Nel riquadro **Aggiungi al team** cercare il team a cui si vuole aggiungere l'app, selezionare il team e quindi selezionare **Applica**.
 

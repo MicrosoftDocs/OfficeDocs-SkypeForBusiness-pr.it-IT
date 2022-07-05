@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un controller dei confini di sessione (SBC) per servire più tenant per i partner Microsoft e/o i gestori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48a045ea84cabf34ec6f95b4aa0f605a3155d50e
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: 9221414053b0ee92b87553e0f81c23b41b23f0fb
+ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66240665"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66616342"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -139,7 +139,7 @@ Dopo aver registrato un nome di dominio, è necessario attivarlo aggiungendo alm
 - Account utente con Office 365 E1/E3/E5/A3/A5 o Microsoft 365 E3/E5/A3/A5
 - Account utente con Office 365 F1/F3 o Microsoft 365 F1/F3
 - Account utente con telefono area comune
-- Account di risorsa con licenza utente virtuale
+- Account risorsa con licenza **Account risorsa Telefono di Microsoft Teams**
 
 Inoltre, l'UPN dell'account (nome dell'entità utente) o Skype for Business'indirizzo SIP locale deve usare lo stesso FQDN del dominio appena creato.
 
@@ -189,22 +189,22 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
 10. Selezionare **Fine** nella pagina **Aggiorna impostazioni DNS** .
 
-11. Verificare che lo stato sia **Installazione completata**. 
-    
+11. Verificare che lo stato sia **Installazione completata**.
+
     ![Screenshot della pagina che mostra lo stato dell'installazione completata.](media/direct-routing-12-sbc-setup-complete.png)
-    
+
 > [!NOTE]
 > L'URL di base e il sottodominio per il singolo client devono trovarsi nello stesso tenant per consentire l'aggiunta di un trunk _di route diretta_ .
 
 ### <a name="activate-the-subdomain-name"></a>Attivare il nome del sottodominio
 
 Dopo aver registrato un nome di sottodominio, è necessario attivarlo aggiungendo almeno un account utente o risorsa con licenza di Teams. Gli account accettabili verranno concessi in licenza con uno degli SKU seguenti:
- 
+
 -   Account utente con Office 365 E1/E3/E5/A3/A5 o Microsoft 365 E3/E5/A3/A5
 -   Account utente con Office 365 F1/F3 o Microsoft 365 F1/F3
 -   Account utente con telefono area comune
--   Account di risorsa con licenza utente virtuale
- 
+-   Account della risorsa con licenza **Account risorse Telefono di Microsoft Teams**
+
 Inoltre, l'UPN dell'account (nome dell'entità utente) o Skype for Business'indirizzo SIP locale deve usare lo stesso FQDN del sottodominio appena creato.
 
 Per altre informazioni sull'aggiunta di utenti nelle organizzazioni di Microsoft 365, vedere [Ottenere assistenza per Microsoft 365](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
