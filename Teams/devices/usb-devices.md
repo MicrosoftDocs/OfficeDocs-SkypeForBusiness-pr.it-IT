@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Scopri quali periferiche e dispositivi USB (ad esempio cuffie, altoparlanti, webcam e monitor) sono certificati per Microsoft Teams.
-ms.openlocfilehash: a2f106b71cc6494594ad34b9aa8dbfb61789a67a
-ms.sourcegitcommit: 79ada2140b110239deff96e4854ebd5dd9b77881
+ms.openlocfilehash: 7df6ca32a359931a62935d68257583c4d499aa93
+ms.sourcegitcommit: 90f03a841f8ca33092dce65c543357c7c2f7b82a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66605705"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66647658"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -149,8 +149,8 @@ Se sei un produttore e vuoi partecipare al programma di certificazione, vedi [Co
 |Lenovo               |Cuffie stereo VoIP cablate Pro                              |12/21/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
 |Poli                 |Savi Office 7320                                           |12/18/2020      |Certificato per Microsoft Teams                           |
 |Poli                 |Savi Office 7310                                           |12/18/2020      |Certificato per Microsoft Teams                           |
-|Jabra                |Visore VR Evolve 75e/SE                                         |12/16/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
-|Jabra                |Visore VR Evolve 65e/SE                                         |12/16/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
+|Jabra                |Cuffie Evolve 75e                                         |12/16/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
+|Jabra                |Visore VR Evolve 65e                                         |12/16/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
 |Dell                 |C3422WE Monitor                                            |12/11/2020      |Certificato per Microsoft Teams                           |
 |Dell                 |C2722DE Monitor                                            |12/11/2020      |Certificato per Microsoft Teams                           |
 |Dell                 |C2422HE Monitor                                            |12/11/2020      |Certificato per Microsoft Teams                           |
@@ -167,8 +167,8 @@ Se sei un produttore e vuoi partecipare al programma di certificazione, vedi [Co
 |EPOS/Sennheiser      |Impact SC 660 con connettore USB-ED CC 01 MS               |8/20/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
 |EPOS/Sennheiser      |Impact SC 630 con connettore USB-ED CC 01 MS               |8/20/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
 |EPOS/Sennheiser      |Impact SC 260 con connettore USB-ED CC 01 MS               |8/20/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
-|Jabra                |Visore VR Evolve 75                                          |7/31/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
-|Jabra                |Visore VR Evolve 65                                          |7/31/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
+|Jabra                |Visore VR Evolve 75/SE                                          |7/31/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
+|Jabra                |Visore VR Evolve 65/SE                                          |7/31/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
 |Jabra                |Engage 50 Headset                                          |7/31/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
 |Avocor               |WCD- AVW-6555                                              |7/30/2020       |Certificato per Microsoft Teams                           |
 |Jabra                |Visore VR Evolve2 85                                         |7/17/2020       |Certificato per Microsoft Teams                           |

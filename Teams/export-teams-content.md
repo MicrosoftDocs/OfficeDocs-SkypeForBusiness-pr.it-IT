@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ffbea482ac15d1362eabc720fe2c05a8b5954954
-ms.sourcegitcommit: ff783fad2fb5d412e864e3af2ceaa8fedcd9da07
+ms.openlocfilehash: b508b368629ce716a1269380eb1fffe2137620c8
+ms.sourcegitcommit: 90f03a841f8ca33092dce65c543357c7c2f7b82a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66562645"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66647648"
 ---
 # <a name="export-content-with-the-microsoft-teams-export-apis"></a>Esportare contenuto con le API di esportazione di Microsoft Teams
 
@@ -43,10 +43,9 @@ Ecco alcuni esempi su come usare queste API di esportazione:
 - **Ambiente ibrido:** Esportare i messaggi di supporto delle API inviati dagli utenti di cui è stato eseguito il provisioning in ambiente ibrido (Exchange locale e Teams). Tutti i messaggi inviati da utenti configurati per l'ambiente ibrido saranno accessibili usando esporta API.
 - **Messaggi eliminati dall'utente:** I messaggi eliminati dagli utenti dal client Teams sono accessibili usando le API di esportazione fino a 21 giorni dal momento dell'eliminazione.
 - **Allegati dei messaggi:** Le API di esportazione includono i collegamenti agli allegati inviati come parte dei messaggi. Con l'opzione Esporta API è possibile recuperare i file allegati nei messaggi.
+- **Reazioni:** Le API di esportazione supportano le reazioni initatate da un utente in un messaggio di Teams. Le reazioni attualmente supportate sono cuore, rabbia, tipo, tristezza, sorpresa e risata.
 - **Proprietà dei messaggi di chat:** Fai riferimento all'elenco completo delle proprietà supportate da Teams Export API [qui](/graph/api/resources/chatmessage#properties).
 
-> [!NOTE]
-> Le API di esportazione non supportano *le reazioni*.
 
 ## <a name="how-to-access-teams-export-apis"></a>Come accedere alle API di esportazione di Teams
 
