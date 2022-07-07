@@ -18,16 +18,16 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b13793222a6a53ec7c7c271578da31465044afde
-ms.sourcegitcommit: 9946c6c1faa78617ccd7bdf115457090ebce5619
+ms.openlocfilehash: 687d628c3f3f59cc9a584f2f673d3ef7d469b605
+ms.sourcegitcommit: f608811288c82a6348a6af1671246a93ed06e578
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66190503"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66661022"
 ---
 # <a name="overview-of-third-party-apps-in-microsoft-teams"></a>Panoramica delle app di terze parti in Microsoft Teams
 
-Molti forniscono app nello Store di Teams. Queste app vengono create dagli sviluppatori di app e Microsoft convalida le funzionalità di base, l'usabilità e la sicurezza di base delle app. Solo dopo la convalida, Microsoft rende disponibili le app nello Store di Teams. Per consentire agli utenti finali di trarre vantaggio dall'ecosistema di app avanzato, la governance delle app da parte degli amministratori è un passaggio fondamentale. In qualità di amministratore, impostare un processo di governance delle app che bilancia i requisiti di app di ampia portata degli utenti finali e le limitazioni dei criteri IT interni, degli standard e dei profili di rischio.
+Teams Store fornisce molte app utili create da sviluppatori e fornitori di software di terze parti, oltre alle app fornite da Microsoft. Anche se queste app sono create da provider di terze parti, Microsoft esegue una convalida rigorosa della funzionalità, dell'usabilità e della sicurezza di queste app. Solo dopo la convalida, Microsoft rende disponibili le app nello Store di Teams. Per consentire agli utenti finali di trarre vantaggio dall'ecosistema di app avanzato, la governance delle app da parte degli amministratori è un passaggio fondamentale. In qualità di amministratore, impostare un processo di governance delle app che bilancia i requisiti di app di ampia portata degli utenti finali e le limitazioni dei criteri IT interni, degli standard e dei profili di rischio.
 
 Le app di terze parti in Microsoft Teams non sono controllate o di proprietà di Microsoft e non sono regolate dalla Contratto di abbonamento Microsoft Online. L'uso di ogni app di terze parti da parte dell'organizzazione è soggetto ai termini e condizioni e all'informativa sulla privacy di tali app. L'interfaccia di amministrazione di Teams consente di verificare tutte le autorizzazioni di un'app, le informative sulla privacy e le condizioni per l'utilizzo prima di consentirne l'uso. Come sempre, è possibile consentire l'uso di un'app per alcuni utenti specifici o per tutti gli utenti. Per le app di terze parti, come per le app personalizzate, Microsoft Teams consente agli amministratori di consentire, non consentire, gestire e analizzare l'uso delle app.
 
