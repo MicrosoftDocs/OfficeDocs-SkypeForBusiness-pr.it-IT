@@ -14,20 +14,20 @@ f1.keywords:
 - NOCSH
 ms.reviewer: crowe
 search.appverid: MET150
-description: Determinare quale Telefono Microsoft piano per le chiamate di sistema sarà più appropriato per l'organizzazione in Cloud Voice in Teams.
+description: Determinare il piano per le chiamate del sistema telefonico Microsoft più adatto alla tua organizzazione in Cloud Voice in Teams.
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 798d119be837e5ab2aafbd26676dd7e26b641db6
-ms.sourcegitcommit: 4847f24e8c644336d2b2f48aa09e2cf91360e4dd
+ms.openlocfilehash: e11c6f6cbb53808ba259afd90420ac9855c9731d
+ms.sourcegitcommit: d87991ed2d3e4d70edb048378763a17ff689b710
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64686303"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66682475"
 ---
 # <a name="which-calling-plan-is-right-for-you"></a>Qual è il piano di chiamata adatto alle proprie esigenze?
 
-Il [Attività iniziali](get-started-with-teams-quick-start.md) è stato completato. Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). Forse hai distribuito [riunioni & conferenze](deploy-meetings-microsoft-teams-landing-page.md). Ora sei pronto per aggiungere carichi di lavoro voce cloud e hai deciso di usare Telefono Microsoft Sistema con piano per chiamate per connetterti alla rete PSTN (Public Switched Telephone Network).
+Hai completato la [guida introduttiva](get-started-with-teams-quick-start.md). Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). Forse hai distribuito [riunioni & conferenze](deploy-meetings-microsoft-teams-landing-page.md). Ora sei pronto per aggiungere carichi di lavoro vocali cloud e hai deciso di usare Microsoft Phone System con piano per chiamate per connetterti alla rete PSTN (Public Switched Telephone Network).
 
 Questo articolo descrive le decisioni di distribuzione di base per i piani per chiamate, oltre a considerazioni aggiuntive che può essere necessario configurare in base alle esigenze dell'organizzazione. È anche consigliabile leggere [Cloud Voice in Microsoft Teams](cloud-voice-landing-page.md) per altre informazioni sulle offerte di voce cloud di Microsoft.
 
@@ -41,25 +41,24 @@ Negli articoli seguenti vengono fornite ulteriori informazioni sulla distribuzio
 
 ## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione
 
-Per utilizzare Microsoft come gestore di telefonia, devi ottenere le licenze per il Piano per chiamate e assegnarle agli utenti Sistema telefonico.
+Per utilizzare Microsoft come gestore di telefonia, devi ottenere le licenze per il Piano per chiamate e assegnarle agli utenti del Sistema telefonico.
 
-Sono disponibili tre tipi di Piani per chiamate:
+Sono disponibili due tipi di Piani per chiamate:
 
 - Piani per chiamate nazionali
 - Piani per chiamate internazionali
-- Piani per chiamate nazionali e internazionali
 
 |Chiedersi|Azione |
 |------------|-------|
 |I Piani per chiamate sono disponibili nella mia area? Quali posizioni degli utenti avranno il servizio Piano per chiamate? | Per ulteriori informazioni, vedi [Disponibilità del paese e dell'area geografica per i piani per audioconferenze e chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). |
-Gli utenti hanno bisogno di chiamate internazionali? | Per ulteriori informazioni, vedi [Piani per chiamate per Microsoft 365 o Office 365](calling-plans-for-office-365.md). |
+Gli utenti hanno bisogno di chiamate internazionali? | Per altre informazioni, vedere [Piani per chiamate per Microsoft 365 o Office 365](calling-plans-for-office-365.md). |
 Gli utenti hanno licenze per Piani per chiamate? | Per acquistare e assegnare licenze, vedere [Passaggio 2: Acquistare e assegnare licenze](set-up-calling-plans.md#step-2-buy-and-assign-licenses). |
 Ognuno dei miei utenti ha un numero di telefono di chiamata diretta verso l'interno (DID)? | Per ottenere i numeri di telefono, vedi [Passaggio 3: Ottenere numeri di telefono](set-up-calling-plans.md#step-3-get-phone-numbers). |
 |||
 
 ### <a name="transfer-phone-numbers-to-microsoft-365-or-office-365"></a>Trasferire numeri di telefono in Microsoft 365 o Office 365
 
-È facile trasferire i numeri di telefono dal provider di servizi corrente a Teams. Dopo il trasferimento dei numeri di telefono in Teams, Microsoft diventa il tuo provider di servizi e ti addebita i numeri di telefono. Per altre informazioni, vedi [Trasferire numeri di telefono a Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
+È facile trasferire i numeri di telefono dal provider di servizi corrente a Teams. Dopo il trasferimento dei numeri di telefono in Teams, Microsoft diventa il tuo provider di servizi e ti addebiterà i numeri di telefono. Per altre informazioni, vedere [Trasferire numeri di telefono in Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
 
 ### <a name="phone-numbers-and-emergency-locations"></a>Numeri di telefono e posizioni di emergenza
 

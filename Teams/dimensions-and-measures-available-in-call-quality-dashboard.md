@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottieni informazioni dettagliate sulle dimensioni e le misure utilizzate da Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: 27b7800efd8835254c5f093781881296b4db2464
-ms.sourcegitcommit: b383b309dbdf9caac7ad7e4a94df8d89016dc485
+ms.openlocfilehash: bc2289f06641e206f3188c865b936962e5f1b1f5
+ms.sourcegitcommit: d87991ed2d3e4d70edb048378763a17ff689b710
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66551223"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66682535"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili in Call Quality Dashboard (CQD)
 
@@ -551,6 +551,9 @@ La tabella seguente elenca le dimensioni attualmente disponibili in Call Quality
 |Coda di chiamata coinvolta|Boolean|Se True, una coda di chiamata è stata coinvolta in una determinata chiamata o flusso. ||
 |**Riunione**||||
 |ID app origine pianificazione|Stringa |Id app del client di pianificazione della prima o di terze parti che ha prenotato la riunione.|Il client di pianificazione non ha fornito questo parametro tramite la telemetria.|
+|**Comune**||||
+| First ACS Resource ID |Stringa |Identificatore di risorsa non modificabile del servizio di comunicazione di Azure associato al primo endpoint. <br/> **Esempio:** 000000000-0000-0000-0000-00000000000000 | L'endpoint non usa le API Servizi di comunicazione di Azure|
+| Second ACS Resource ID |Stringa |Identificatore di risorsa non modificabile del servizio di comunicazione di Azure associato al secondo endpoint. <br/> **Esempio:** 000000000-0000-0000-0000-00000000000000 | L'endpoint non usa le API Servizi di comunicazione di Azure|
 |**Datapair**||||
 | Network Connection Detail Pair  | Coppia enumerata <br/>**Valori possibili:** <br/> WiFi : WiFi <br/> WiFi : cablata <br/> Cablata : WiFi <br/> Cablata : Cablata <br/> MobileBB : MobileBB <br/> MobileBB : Altro <br/> MobileBB : Tunnel <br/> MobileBB : WiFi <br/> MobileBB : Cablata <br/> Altro : Altro <br/> Altro : WiFi <br/> Altro : Cablata <br/> Tunnel : Tunnel <br/> Tunnel : WiFi <br/> Tunnel : Cablata <br/> : MobileBB <br/> : Altro <br/> : Tunnel <br/> : WiFi <br/> : Cablata <br/> :  | Coppia dei dettagli di connessione di rete del primo e del secondo endpoint.  | &bull; Il tipo di connettività di rete dell'endpoint era sconosciuto. Può accadere se non è stato possibile stabilire la chiamata.   |
 | User Agent Category Pair  | Coppia enumerata  | Coppia della categoria agente utente per il primo e il secondo endpoint. <br/> **Valore di esempio:** AV-MCU : OC  | &bull; L'agente utente dell'endpoint non era un tipo noto  |
