@@ -14,14 +14,15 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
+- m365initiative-edu
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7ff797e0793373d0cb7b476b31411ccdf377639c
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 2694981d18bfbee7f75ea8157fb656d77675a71d
+ms.sourcegitcommit: 90f03a841f8ca33092dce65c543357c7c2f7b82a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65674378"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66647688"
 ---
 # <a name="it-admin-guide-to-education-insights-in-microsoft-teams"></a>Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams
 
@@ -78,7 +79,7 @@ Docenti e responsabili dell'istruzione possono accedere a Insights in modi diver
 
 I docenti possono usare questi due metodi:
 
-- [App personale](https://support.microsoft.com/office/747fd8d9-00b0-43e6-bacc-a1bf030b1867): nella barra delle app a sinistra di Teams è disponibile una panoramica di tutte le classi attive, con la possibilità di eseguire il drill-down dei dati della classe.
+- [App personale](https://support.microsoft.com/office/747fd8d9-00b0-43e6-bacc-a1bf030b1867): nella barra delle app sinistra di Teams è disponibile una panoramica di tutte le classi attive, con la possibilità di approfondire i dati di una classe.
 - [Schede](https://support.microsoft.com/office/1386d1b4-3641-4a23-9b9c-0c6c774c2b6c): Insights per classi specifiche di cui sono proprietari è disponibile in una scheda dal menu di spostamento in alto di un team di classe. Questa scheda consente ai docenti di accedere direttamente ai dati pertinenti quando si trova in tale classe in Teams per vedere i dati nel contesto della classe.
 
 Insights mostra i dati sulle attività da tutti i canali in un team di classe, ma può essere aggiunto solo come scheda ai canali pubblici. La scheda riflette le attività dei membri del team di classe che non sono proprietari, inclusi i docenti che non sono proprietari del team di classe.
@@ -250,17 +251,19 @@ Per impostazione predefinita, Insights è attivato, consentendo di raccogliere d
 :::image type="content" source="media/insights-settings.png" alt-text="Screenshot della pagina dell'interfaccia di amministrazione di SDS in cui è disponibile un'opzione di impostazioni per attivare o disattivare Insights.":::
 
 > [!NOTE]
-> Se Insights è stato disattivato, i dati raccolti vengono eliminati. I dati eliminati in seguito al rifiuto esplicito non possono essere ripristinati in un secondo momento, anche se Insights viene riabilitato.
+> Se Insights è stato disattivato, i dati raccolti vengono eliminati. I dati eliminati in seguito a un rifiuto esplicito non possono essere ripristinati in un secondo momento, anche se Insights viene riabilitato.
 
-### <a name="turn-machine-learning-in-insights-on-or-off"></a>Attivare o disattivare l’apprendimento automatico in Insights
+### <a name="turn-on-and-off-advanced-inferences-in-insights"></a>Attivare e disattivare le inferenze avanzate in Insights
 
-Per impostazione predefinita, le esperienze basate sull’apprendimento automatico della macchina in Insights sono disattivate. Per consentire queste informazioni dettagliate, devi **consentire Insights basato sull’apprendimento automatico**. Attivando questo pulsante, non verranno raccolti altri dati oltre ai dati già raccolti da Insights per l'istruzione.
+Quando l'interruttore **Consentire inferenze avanzate** per Insights per l'istruzione è attivato, può presentare a studenti, docenti e responsabili di istruzione inferenze avanzate sulle attività di apprendimento (ad esempio avvisi sul coinvolgimento). Queste inferenze consentono ai docenti di fornire un supporto maggiormente personalizzato agli studenti. L'interruttore controlla anche l'uso dei dati del tenant per la modellazione.
+
+Attivando questo pulsante, non verranno raccolti altri dati oltre ai dati già raccolti da Insights per l'istruzione.
 
 - Per modificare questa impostazione, apri [l'interfaccia di amministrazione di SDS](https://sds.microsoft.com/) e passa a **Impostazioni** > **Gestisci Insights per l'istruzione**.
-- Modificare l’attivazione o la disattivazione di **Consenti Insights basato sull’apprendimento automatico**.
+- Modificare l’interruttore **Consentire inferenze avanzate** su attivato o disattivato.
 
 > [!NOTE]
-> Questa commutazione dipende da **Raccogli dati attività per Insights**. La disattivazione di **Raccogli dati attività per Insights** disabiliterà anche il pulsante **Consenti Insights basato sull’apprendimento automatico**.
+> Questa commutazione dipende da **Raccogli dati attività per Insights**. La disattivazione di **Raccogliere dati attività per Insights** disabiliterà anche l’interruttore **Consentire inferenze avanzate**.
 
 ### <a name="turn-sds-for-insights-on-or-off"></a>Disattivare o attivare SDS
 
