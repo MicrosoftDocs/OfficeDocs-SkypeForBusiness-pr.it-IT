@@ -15,14 +15,14 @@ description: Informazioni su come controllare le attività dell'app Teams di ute
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: d75773db33f1648e3fff0c7bf06944da133f0604
-ms.sourcegitcommit: 4be2a5db44972b35bdde5752eea0d74cf831607a
+ms.openlocfilehash: 77c7ac5d80304e82f1309e3a22b21c17d106a58c
+ms.sourcegitcommit: 90f03a841f8ca33092dce65c543357c7c2f7b82a
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642888"
+ms.locfileid: "66647833"
 ---
-# <a name="search-the-audit-logs-for-app-events"></a>Cercare gli eventi dell'app nei log di controllo
+# <a name="audit-for-app-management-activities-and-events"></a>Audit per le attività e gli eventi di gestione delle app
 
 Microsoft Purview Audit (Standard) in Microsoft 365 consente di cercare i record di controllo delle attività eseguite nei vari servizi di Microsoft 365 da utenti finali e amministratori.
 
@@ -32,7 +32,7 @@ Prima di eseguire una ricerca di controllo, assicurarsi di completare i prerequi
 * [Attivare il controllo nel Portale di conformità di Microsoft Purview](/microsoft-365/compliance/turn-audit-log-search-on-or-off).
 * [Assegnare autorizzazioni per la ricerca nel log di controllo](/microsoft-365/compliance/set-up-basic-audit).
 
-## <a name="audit-logs-for-app-events-in-teams"></a>Log di controllo per gli eventi delle app in Teams
+## <a name="search-the-audit-logs-for-app-events-in-teams"></a>Cercare gli eventi dell'app nei log di controllo in Teams
 
 I log di controllo per gli eventi delle app in Teams consentono di analizzare azioni specifiche. Anche se è possibile cercare nei log un'ampia gamma di azioni, la tabella seguente elenca alcune delle azioni dell'app Teams registrate. È anche possibile eseguire ricerche in attività correlate a connettori, bot, schede e così via.
 
