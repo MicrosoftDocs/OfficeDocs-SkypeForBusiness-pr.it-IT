@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Scopri come Microsoft Direct Routing consente di connettere un controller SBC (Session Border Controller) supportato dal cliente al sistema telefonico.
-ms.openlocfilehash: a5ccb8534ed8772124ae6e2506af81e5b63134d0
-ms.sourcegitcommit: d87991ed2d3e4d70edb048378763a17ff689b710
+ms.openlocfilehash: fd5f2733fc11511e6cfc2e646c0bb78aff26b522
+ms.sourcegitcommit: 15ec17eff4ad4c962d00b8683513f9b269d82917
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66682515"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695059"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -160,6 +160,9 @@ Dopo aver aggiunto il nome di dominio, è necessario anche creare un utente con 
 
 SBC richiede un solo FQDN e può richiedere assistenza agli utenti da qualsiasi spazio di indirizzi nel tenant associato. Ad esempio, una SBC con il nome sbc1.contoso.com può ricevere e inviare il traffico PSTN per gli utenti con indirizzi user@contoso.com e user@fabrikam.com a condizione che questi spazi di indirizzi SIP siano registrati nello stesso tenant.  
 
+ > [!NOTE]
+ > L'FQDN SBC in Servizi di comunicazione di Azure routing diretto deve essere diverso dall'FQDN SBC nel routing diretto di Teams.
+  
 ## <a name="public-trusted-certificate-for-the-sbc"></a>Certificato pubblico attendibile per SBC
 
 Microsoft consiglia di richiedere il certificato per SBC generando una richiesta di firma di certificazione (CSR). Per istruzioni specifiche sulla generazione di una CSR per un'SBC, consulta le istruzioni di interconnessione o la documentazione fornita dai fornitori di SBC. 

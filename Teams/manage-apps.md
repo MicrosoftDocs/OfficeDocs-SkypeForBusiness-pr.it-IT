@@ -19,12 +19,12 @@ description: Informazioni su come gestire le app di Teams. Scopri come consentir
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 92f7c6d69fbc9f680c204f0210aaa80742dd6384
-ms.sourcegitcommit: 90f03a841f8ca33092dce65c543357c7c2f7b82a
+ms.openlocfilehash: f9bf05364ae990930da89a64643fa86b2b0467c4
+ms.sourcegitcommit: 15ec17eff4ad4c962d00b8683513f9b269d82917
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66647748"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695069"
 ---
 # <a name="manage-teams-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app di Teams nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -119,7 +119,7 @@ Puoi visualizzare le richieste di rendere disponibile un'app bloccata per l'uso.
 
  1. Accedere all'interfaccia di amministrazione di Teams e selezionare [Gestisci app](https://admin.teams.microsoft.com/policies/manage-apps)
 
-    :::image type="content" source="media/requested-apps1.png" alt-text="Richiesta da parte degli utenti" lightbox="media/requested-apps.png" border="true":::
+    :::image type="content" source="media/requested-apps1.png" alt-text="Le richieste degli utenti finali per le app bloccate vengono visualizzate nell'interfaccia di amministrazione di Teams nella colonna Intitolato Richieste da parte degli utenti." lightbox="media/requested-apps.png":::
 
  1. Per visualizzare e controllare il numero di richieste per ogni app, ordinare le richieste nella colonna **Richieste per utente** .
  1. Seleziona il nome dell'app che vuoi sbloccare e apre la pagina dei dettagli dell'app.
