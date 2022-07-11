@@ -15,16 +15,16 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 description: Informazioni su come gli amministratori IT possono configurare, usare e gestire le domande&A in Q&A di Teams per un approccio strutturato alla raccolta di domande, all'organizzazione delle discussioni, all'eliminazione di singoli messaggi, all'uso delle lingue disponibili e alla comprensione del ciclo di vita dei dati, nonché dei criteri di conservazione ed eliminazione dei dati.
-ms.openlocfilehash: 17de45280809ae6c5fffdce64067fe97020965ec
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: 387f66967a4448ff15374d6765e10ae25a72d7c0
+ms.sourcegitcommit: 8d7a926758971bee491d24f23b1ad14f5e5c6f7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66494843"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66713444"
 ---
 # <a name="manage-qa-in-teams-meetings"></a>Gestire domande&A nelle riunioni di Teams
 
-Q&A è un'esperienza di riunione integrata che offre ai partecipanti l'opportunità di chiedere formalmente e ricevere risposte alle domande e di partecipare a discussioni strutturate. Questa esperienza è una procedura consigliata per le riunioni con più di 10 partecipanti.
+Q&A consente ai relatori di rispondere in tempo reale alle domande dei partecipanti. Questa funzionalità è ideale per grandi riunioni strutturate, come il Municipio, i Webinar, All Hands e i corsi di formazione.
 
 Questo articolo descrive come gestire i criteri Q&A e a livello utente, che determinano se un organizzatore può abilitare Le domande&A di Teams nelle riunioni.
 
@@ -46,9 +46,6 @@ D&A può essere utilizzata dai tipi di utente seguenti:
 - Utente normale: utente con credenziali Microsoft 365 nel tuo tenant.
 - Utente federato: utente con credenziali Microsoft 365 in un tenant diverso.
 - Utente guest: qualsiasi guest aggiunto a Microsoft Teams, SharePoint o Azure Active Directory.
-
-> [!NOTE]
-> Q&A al momento non supporta utenti anonimi.
 
 Quando gli amministratori abilitano Q&A, gli utenti con il ruolo organizzatore possono attivare Q&A durante la creazione o l'aggiornamento di riunioni. Tramite le opzioni delle riunioni di Teams e Outlook, gli organizzatori possono anche rimuovere Q&A dalle riunioni in cui è stato precedentemente aggiunto per impedire ai partecipanti di usare la funzionalità.
 
@@ -113,6 +110,7 @@ eDiscovery per Q&A funzionerà come eDiscovery per qualsiasi altro contenuto di 
 - Se si usa Teams Q&A nell'applicazione Teams del tenant, questo contenuto sarà disponibile in eDiscovery indipendentemente dalla configurazione o dall'esistenza della rete Yammer. Per usare eDiscovery per il contenuto standard di Yammer, la rete Yammer deve essere in [modalità nativa](/yammer/configure-your-yammer-network/overview-native-mode).
 - Quando si esegue eDiscovery, è possibile determinare se i messaggi sono stati generati in Yammer o tramite domande&A in Teams. Nella sezione Metadati file queste informazioni sono disponibili nel campo Classe elemento.
 - Se l'organizzazione usa la Q&A di Teams, con tecnologia Yammer, il contenuto generato da Domande&A è considerato contenuto di Yammer e sarà individuabile. Per altre informazioni su eDiscovery nelle app di Microsoft 365, vedere [Soluzioni eDiscovery in Microsoft 365.](/microsoft-365/compliance/ediscovery)
+- Se l'organizzatore della riunione abilita la pubblicazione anonima, le domande pubblicate dai partecipanti verranno inserite nella cassetta postale dell'organizzatore per eDiscovery.
 
 ## <a name="data-storage"></a>Archiviazione dei dati
 

@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6015c7b7cf1e7be5bc6b9b3e1fe0577a7f707377
-ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
+ms.openlocfilehash: 5b9c049942808da9b2df97d031ff850949bca211
+ms.sourcegitcommit: 8d7a926758971bee491d24f23b1ad14f5e5c6f7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66564144"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66713314"
 ---
 # <a name="implement-quality-of-service-qos-in-microsoft-teams"></a>Implementare la qualità del servizio (QoS) in Microsoft Teams
 
@@ -151,7 +151,7 @@ Quando si usano queste impostazioni, tenere presente quanto segue:
 
 - Tutti i client, inclusi i client mobili e i dispositivi Teams, utilizzeranno questi intervalli di porte e saranno interessati da eventuali criteri DSCP implementati che usano questi intervalli di porte di origine. Gli unici client che continueranno a usare le porte dinamiche sono i client basati su browser, ovvero client che consentono ai partecipanti di partecipare alle riunioni tramite i browser.
 
-- Sebbene il client Mac usi gli stessi intervalli di porte, usa anche valori hardcoded per audio (EF) e video (AF41). Questi valori non sono configurabili.
+- Sebbene il client Mac usi gli stessi intervalli di porte, usa anche valori hardcoded per audio (EF) e video e condivisione applicazioni/schermo (AF41). Questi valori non sono configurabili.
 
 - Se in seguito è necessario modificare gli intervalli di porte per migliorare l'esperienza utente, gli intervalli di porte non possono sovrapporsi e devono essere adiacenti.
 

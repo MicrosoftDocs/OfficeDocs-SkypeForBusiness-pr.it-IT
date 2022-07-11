@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per partecipanti e guest.
-ms.openlocfilehash: 5770c4d998a28edf2b8fc8131650b98420e826f9
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: 7f9cb76e12671425ee2b7b0543263195796e04d5
+ms.sourcegitcommit: 8d7a926758971bee491d24f23b1ad14f5e5c6f7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66241135"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66713354"
 ---
 # <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione - Partecipanti e ospiti
 
@@ -112,9 +112,11 @@ Questa impostazione non si applica alle riunioni del canale. Dopo aver applicato
 
 ## <a name="qa-in-meetings"></a>Q&A nelle riunioni
 
-Questo è un criterio per organizzatore. Questa impostazione controlla se gli organizzatori possono aggiungere l'esperienza Q&A alle riunioni. Per impostazione predefinita, questa impostazione è disattivata. Altre informazioni su Q&A [sono disponibili qui](/manage-qna-for-meetings). 
+Questo è un criterio per organizzatore. Questa impostazione consente agli amministratori del tenant di Microsoft 365 di abilitare o disabilitare l'esperienza Domande & Risposte (Q&A).
 
-Per il parametro QnAEngagementMode controlla questo criterio in PowerShell e Q&A può essere modificato anche all'interno del portale di amministrazione.
+L'impostazione viene applicata quando una riunione viene creata o aggiornata dagli organizzatori. Per impostazione predefinita, questa impostazione è disattivata. Altre informazioni su Q&A [sono disponibili qui](/manage-qna-for-meetings).
+
+Il parametro QnAEngagementMode controlla questo criterio in PowerShell. Q&A possono essere modificati anche all'interno del portale di amministrazione.
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
