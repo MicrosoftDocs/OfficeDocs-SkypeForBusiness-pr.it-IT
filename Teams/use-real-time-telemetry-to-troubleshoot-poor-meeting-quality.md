@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.users.activity.audioqualitycolumn
 - Reporting
 description: Usare la telemetria in tempo reale con dettagli su dispositivi, reti e connettività per risolvere i problemi degli utenti con le riunioni pianificate di Microsoft Teams.
-ms.openlocfilehash: c7bc5ee0415a289782cad1dd7daa5c13bdaf7364
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: 794c0097c3bdcc757e0a469cb0f65b5eb4e6c285
+ms.sourcegitcommit: ce1cbdcfce8c785c66f6a51ef8e84092124f3ef0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66494723"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66716802"
 ---
 # <a name="use-real-time-telemetry-to-troubleshoot-poor-meeting-quality"></a>Usare i dati di telemetria in tempo reale per risolvere problemi di scarsa qualità delle riunioni
 
@@ -153,6 +153,9 @@ I segnali dell'utente identificano quando un utente sta partecipando attivamente
 - I dati di telemetria in tempo reale sono disponibili per una riunione in **Riunioni recenti** per 24 ore dopo la fine della riunione. Dopo 24 ore, non è possibile accedere ai dati e la riunione passa alle **riunioni passate**. Se una riunione dura più di 3 ore, la telemetria in tempo reale sarà disponibile solo per le *ultime 3 ore*.
 - La telemetria non è disponibile in tempo reale quando si usano versioni precedenti di Teams. Se non sono disponibili dati di telemetria, provare ad aggiornare il client.
 - Se i partecipanti esterni o gli utenti anonimi partecipano a una riunione, il loro nome visualizzato risulta **non disponibile** per mantenere la privacy tra tenant.
+
+> [!NOTE]
+> Nell'ambito di un'anteprima pubblica a tempo limitato, i dati di telemetria in tempo reale sono attualmente disponibili per **7 giorni** dopo la fine di una riunione. I limiti indicati verranno applicati una volta conclusa l'anteprima pubblica.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
