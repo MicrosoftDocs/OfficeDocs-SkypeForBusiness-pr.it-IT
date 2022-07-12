@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Scopri come configurare gli operatori automatici tramite i cmdlet
-ms.openlocfilehash: a3f669a6540e42cd0ff4a016da0215ca79f3bd22
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 4dccd4e5026d78dada222cedf98659cdcd5ce6e5
+ms.sourcegitcommit: 6fb15729b2ff5ca142cb90605f3c98112cb36804
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65676616"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66744322"
 ---
 # <a name="create-an-auto-attendant-via-cmdlets"></a>Creare un operatore automatico tramite cmdlet
 
@@ -52,7 +52,7 @@ ms.locfileid: "65676616"
 3. Hai acquistato Telefono di Microsoft Teams
 4. Le code di chiamata indicate di seguito sono già state configurate in seguito alla guida [alla creazione di code di chiamata con i cmdlet di PowerShell](create-a-phone-system-call-queue-via-cmdlets.md) .
 
-**Nota**: alcuni dei cmdlet a cui si fa riferimento di seguito potrebbero far parte della versione di anteprima pubblica di Teams modulo di PowerShell. Per altre informazioni, vedere [Installare Teams'anteprima pubblica di PowerShell](teams-powershell-install.md) e vedere [Microsoft Teams Note sulla versione di PowerShell](teams-powershell-release-notes.md).
+**Nota**: alcuni dei cmdlet a cui si fa riferimento di seguito potrebbero far parte della versione di anteprima pubblica del modulo di PowerShell di Teams. Per altre informazioni, vedere [Installare l'anteprima pubblica di PowerShell di Teams](teams-powershell-install.md) e vedere anche [Note sulla versione di Microsoft Teams PowerShell](teams-powershell-release-notes.md).
 
 Gli utenti che hanno già installato il modulo MicrosoftTeams devono `Update-Module MicrosoftTeams` assicurarsi che sia installata la versione più aggiornata.
 
@@ -85,7 +85,7 @@ Informazioni aggiuntive sulla configurazione:
 
 ## <a name="login"></a>Login
 
-Verrà richiesto di immettere le credenziali di amministratore Teams.
+Verrà richiesto di immettere le credenziali di amministratore di Teams.
 
 ```PowerShell
 $credential = Get-Credential
@@ -113,7 +113,7 @@ Get-MsolAccountSku
 
 ### <a name="create-and-assign-resource-account"></a>Creare e assegnare un account di risorsa
 
-**Nota**: Telefono numero non è necessario perché la coda di chiamata è front-end terminata da un operatore automatico
+**Nota**: il numero di telefono non è necessario perché la coda di chiamata è front-end terminata da un operatore automatico
 
 - Applicationid
   - Operatore automatico: ce933385-9390-45d1-9512-c8d228074e07
@@ -143,7 +143,7 @@ $dtr = New-CsOnlineDateTimeRange -Start "01/01/2022" -End "02/01/2022"
 $newyearSchedule = New-CsOnlineSchedule -Name "New Year" -FixedSchedule -DateTimeRanges @($dtr)
 ```
 
-### <a name="create-address-fax-and-email-information-prompt"></a>Richiesta di informazioni su indirizzo, fax e posta elettronica
+### <a name="create-address-fax-and-email-information-prompt"></a>Creazione di una richiesta di informazioni su indirizzo, fax e Email
 
 ```PowerShell
 $addressPrompt = New-CsAutoAttendantPrompt -TextToSpeechPrompt "To repeat this information at any time press the * key. Our mailing address is: 123 Main Street, Any town, Any Place, County. Our email address is: info@contoso.com. Our fax number is: 929-555-0151"
@@ -211,7 +211,7 @@ $dialbynameAAMenuOption3 = New-CsAutoAttendantMenuOption -Action TransferCallToT
 $afterHoursMenuOption4 = New-CsAutoAttendantMenuOption -Action Announcement -DtmfResponse Tone4 -Prompt $addressPrompt
 ```
 
-### <a name="create-after-hours-menu-and-call-flow"></a>Crea menu Fuori orario e chiama Flow
+### <a name="create-after-hours-menu-and-call-flow"></a>Creare il menu Fuori orario e il flusso delle chiamate
 
 ```PowerShell
 $afterHoursMenu = New-CsAutoAttendantMenu -Name "After Hours Menu" -MenuOptions @($afterHoursMenuOption1, $afterHoursMenuOption2, $dialbynameAAMenuOption3, $afterHoursMenuOption4) -Prompt $afterHoursMenuPrompt
@@ -288,7 +288,7 @@ New-CsOnlineApplicationInstanceAssociation -Identities @($applicationInstanceID)
 ### <a name="get-list-of-unassigned-service-numbers"></a>Ottenere l'elenco dei numeri di servizio non assegnati
 
 ```PowerShell
-Get-CsOnlineTelephoneNumber -IsNotAssigned -InventoryType Service
+Get-CsPhoneNumberAssignment -PstnAssignmentStatus Unassigned -CapabilitiesContain VoiceApplicationAssignment
 ```
 
 #### <a name="assign-available-phone-number"></a>Assegnare il numero di telefono disponibile
