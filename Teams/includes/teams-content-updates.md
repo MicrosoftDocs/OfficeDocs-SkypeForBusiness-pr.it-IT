@@ -3,6 +3,30 @@
 
 
 
+## <a name="week-of-july-04-2022"></a>Settimana del 4 luglio 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 7/5/2022 | [Riferimento ai cmdlet di PowerShell per operatori automatici e code di chiamata](/MicrosoftTeams/call-queue-auto-attendant-cmdlets) | Volta |
+| 7/5/2022 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant) | Volta |
+| 7/5/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
+| 7/5/2022 | [Riunioni e conferenze in Microsoft Teams](/MicrosoftTeams/deploy-meetings-microsoft-teams-landing-page) | Volta |
+| 7/5/2022 | [Configurare il controller dei confini della sessione - Più tenant](/MicrosoftTeams/direct-routing-sbc-multiple-tenants) | Volta |
+| 7/5/2022 | [Pianificare gli operatori automatici di Teams e le code di chiamata](/MicrosoftTeams/plan-auto-attendant-call-queue) | Volta |
+| 7/5/2022 | [Riunioni, webinar ed eventi live](/MicrosoftTeams/quick-start-meetings-live-events) | Volta |
+| 7/5/2022 | [licenze dell'account risorse di Telefono di Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/virtual-user) | Volta |
+| 7/5/2022 | [Caso di studio teams voice Contoso: operatori automatici e code di chiamata](/MicrosoftTeams/voice-case-study-call-queues) | Volta |
+| 7/5/2022 | [Cercare gli eventi di gestione delle app nei log di controllo](/MicrosoftTeams/audit-app-management-activities) | Aggiunto |
+| 7/6/2022 | [Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams](/MicrosoftTeams/class-insights) | Volta |
+| 7/6/2022 | [Usare PowerShell per connettere Turni a Blue Yonder Workforce Management](/MicrosoftTeams/expand-teams-across-your-org/shifts/shifts-connector-blue-yonder-powershell-setup) | Volta |
+| 7/6/2022 | [Usare la procedura guidata connettore Turni per connettere Turni a blue yonder Workforce Management](/MicrosoftTeams/expand-teams-across-your-org/shifts/shifts-connector-wizard) | Volta |
+| 7/6/2022 | [Come usare l'ID chiamante nella tua organizzazione](/MicrosoftTeams/how-can-caller-id-be-used-in-your-organization) | Volta |
+| 7/7/2022 | Comprendere le chiamate su Microsoft Teams | Rimosso |
+| 7/7/2022 | [Piani per chiamate per Microsoft 365](/MicrosoftTeams/calling-plans-for-office-365) | Volta |
+| 7/8/2022 | [Visite virtuali con Microsoft Teams e l’app Bookings](/MicrosoftTeams/expand-teams-across-your-org/bookings-virtual-visits) | Volta |
+
+
 ## <a name="week-of-june-27-2022"></a>Settimana del 27 giugno 2022
 
 
@@ -85,22 +109,3 @@
 | 6/10/2022 | [Distribuire team su vasta scala per gli operatori in prima linea in Microsoft Teams](/MicrosoftTeams/deploy-teams-at-scale) | Volta |
 | 6/10/2022 | [Passare da Business Voice alle licenze di Teams Phone](/MicrosoftTeams/business-voice-to-teams-phone-licenses) | Aggiunto |
 | 6/10/2022 | [Abilitare Teams Rooms dispositivi per partecipare a riunioni di terze parti](/MicrosoftTeams/rooms/third-party-join) | Volta |
-
-
-## <a name="week-of-may-30-2022"></a>Settimana del 30 maggio 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 5/31/2022 | [Gestire l'app Aggiornamenti per l'organizzazione](/MicrosoftTeams/manage-updates-app) | Aggiunto |
-| 5/31/2022 | [Personalizzare l'app store in Teams](/MicrosoftTeams/customize-your-app-store) | Volta |
-| 5/31/2022 | [Gestire i criteri di autorizzazione app in Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies) | Volta |
-| 5/31/2022 | [Canali condivisi in Microsoft Teams](/MicrosoftTeams/shared-channels) | Volta |
-| 5/31/2022 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | Volta |
-| 6/1/2022 | [Session Border Controller certificati per l'instradamento diretto](/MicrosoftTeams/direct-routing-border-controllers) | Volta |
-| 6/1/2022 | [Indirizzi di emergenza per posizioni remote](/MicrosoftTeams/emergency-calling-dispatchable-location) | Volta |
-| 6/1/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
-| 6/2/2022 | [Requisiti hardware per Microsoft Teams](/MicrosoftTeams/hardware-requirements-for-the-teams-app) | Volta |
-| 6/2/2022 | [Restrizioni per i caratteri speciali nei criteri di Teams](/MicrosoftTeams/special-character-restrictions-in-policy-names) | Volta |
-| 6/2/2022 | [Amministrazione configurazione di Genitori in Teams per l'istruzione](/MicrosoftTeams/edu-parents-app) | Volta |
-| 6/3/2022 | [Report Appuntamenti virtuali connettore EHR di Microsoft Teams](/MicrosoftTeams/expand-teams-across-your-org/healthcare/ehr-admin-reports) | Volta |
