@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8dc80503c2b949fb77cc8d593ba5a8dd71e68654
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: 90e577f9d6ef7567387fbc7a26a944d20e976f66
+ms.sourcegitcommit: 8fc2d6a824e1e119f54ea2347bc5c10cc076956d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66240445"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773705"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -176,8 +176,6 @@ Per altre informazioni su Teams e Microsoft 365 Apps for enterprise, vedere [Com
 
     > [!NOTE]
     > Per i cloud per enti pubblici, vedere [Installazione in blocco di Teams con Windows Installer (MSI)](msi-deployment.md) per i collegamenti al download dei file MSI.
-
-    La versione minima dell'app desktop Teams richiesta è la versione 1.3.00.4461. Il blocco PSTN non è supportato nelle versioni precedenti.
 
 2. Installa MSI nella macchina virtuale VDI eseguendo uno dei comandi seguenti:
 
