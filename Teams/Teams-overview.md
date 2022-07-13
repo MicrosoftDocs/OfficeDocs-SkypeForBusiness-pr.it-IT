@@ -34,7 +34,7 @@ Se si è un nuovo utente di Teams e si desiderano ulteriori informazioni, vedere
 
 È disponibile anche un video Benvenuto in Teams per amministratori di più di 3 minuti:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE47cdp]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vAJJ]
 
 Se si sta cercando la Guida di Teams per utenti finali, fare clic su **Guida** sul lato sinistro dell'app oppure passare al [Centro assistenza di Microsoft Teams](https://support.office.com/teams). Per accedere alle risorse di formazione, passare a [Formazione su Microsoft Teams](training-microsoft-teams-landing-page.md). 
 
