@@ -1,7 +1,7 @@
 ---
 title: Dati e report in Call Quality Dashboard (CQD)
-ms.author: serdars
-author: SerdarSoysal
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: mikedav, siunies, gageames
 ms.topic: article
@@ -22,12 +22,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni sui dati e i report disponibili in Microsoft Call Quality Dashboard (CQD).
-ms.openlocfilehash: c30840ea4bf1de02572300044964211c5668056f
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: ba30be8d63dab1f5720be5637ea0a28c26d5d877
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675008"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66789811"
 ---
 # <a name="data-and-reports-in-call-quality-dashboard-cqd"></a>Dati e report in Call Quality Dashboard (CQD)
 
@@ -39,9 +39,9 @@ Microsoft Call Quality Dashboard (CQD) utilizza un feed di dati NRT (Near Real-T
 
 |&nbsp;|&nbsp;|
 |---|---|
-|Teams interfaccia di amministrazione [(https://admin.teams.microsoft.com)](https://admin.teams.microsoft.com)|Call Quality Dashboard è incluso nella pagina **Utenti** dell'interfaccia di amministrazione di Teams, che mostra i dati più comuni in un formato di facile lettura. Non è possibile personalizzare i dati di Call Quality Dashboard disponibili in **Utenti**.|
+|Interfaccia di amministrazione di Teams [(https://admin.teams.microsoft.com)](https://admin.teams.microsoft.com)|Call Quality Dashboard è incluso nella pagina **Utenti** dell'interfaccia di amministrazione di Teams, che mostra i dati più comuni in un formato di facile lettura. Non è possibile personalizzare i dati di Call Quality Dashboard disponibili in **Utenti**.|
 |Call Quality Dashboard [(https://cqd.teams.microsoft.com)](https://cqd.teams.microsoft.com)|Riepilogo completo e report dettagliati che soddisfano le più esigenze, con il filtro drill-through. È anche possibile personalizzare i report nel portale di Call Quality Dashboard. <br><br>Ottenere due [modelli di report di Call Quality Dashboard](#import-the-cqd-report-templates) per analizzare i dati nel portale di Call Quality Dashboard.|
-|Power BI|Usare le query dirette per visualizzare i dati di Call Quality Dashboard in Power BI usando [modelli di Power BI personalizzabili](CQD-Power-BI-query-templates.md). [Scaricare Power BI modelli di query per Call Quality Dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true).<br><br>È anche possibile [usare l'API REST per accedere ai dati di Call Quality Dashboard](/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power BI. Usare questo metodo se si vogliono scaricare i dati di Call Quality Dashboard in modo da potervi lavorare offline. Il vantaggio di usare questo metodo è prestazioni migliori, particolarmente utili per set di dati di grandi dimensioni che si arrestano in Power BI quando si è online.|
+|Power BI|Usare le query dirette per visualizzare i dati di Call Quality Dashboard in Power BI usando [modelli di Power BI personalizzabili](CQD-Power-BI-query-templates.md). [Scaricare i modelli di query di Power BI per Call Quality Dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true).<br><br>È anche possibile [usare l'API REST per accedere ai dati di Call Quality Dashboard](/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power BI. Usare questo metodo se si vogliono scaricare i dati di Call Quality Dashboard in modo da potervi lavorare offline. L'uso di questo metodo offre prestazioni migliori, particolarmente utili per set di dati di grandi dimensioni che si arrestano in Power BI quando si è online.|
 |API di Microsoft Graph|Accedi ai dati sulla qualità delle chiamate manualmente usando il [API Graph](/graph/api/resources/callrecords-api-overview). Questo è il metodo più complesso, ma offre il maggior controllo e la massima flessibilità nell'analisi dei dati sulla qualità delle chiamate. Ad esempio, se è necessario aggiungerli ad altri dati per l'organizzazione, è possibile usare il API Graph per creare un modello di dati e incorporare i dati sulla qualità delle chiamate.|
 
 ## <a name="import-the-cqd-report-templates"></a>Importare i modelli di report call quality dashboard
@@ -73,7 +73,7 @@ Per motivi di conformità, i dati identificativi dell'utente finale (INFORMAZION
 - Nome endpoint computer
 - Feedback degli utenti verbali
 - ID oggetto (ID oggetto Active Directory dell'utente dell'endpoint)
-- numero Telefono
+- Numero di telefono
 
 ### <a name="admin-roles-with-and-without-euii-access"></a>Amministrazione ruoli con e senza accesso EUII
 
@@ -81,7 +81,7 @@ Questi ruoli [RBAC](/azure/role-based-access-control/overview) **hanno** accesso
 
 - Amministrazione globale
 - Amministrazione del servizio Teams
-- Amministrazione Teams Communications
+- Teams Communications Amministrazione
 - Tecnico supporto comunicazioni Teams
 - Lettore globale
 - Skype for Business Amministrazione
@@ -115,7 +115,7 @@ Per impostazione predefinita, il giorno corrente del mese viene usato come ultim
 
 Il riepilogo predefinito e i report dettagliati di Call Quality Dashboard possono essere tutto ciò che serve per gestire la qualità delle chiamate per l'organizzazione. Se necessario, è possibile [creare report personalizzati](#create-custom-detailed-reports).
 
-Se si vuole usare Power BI per analizzare i dati di Call Quality Dashboard, vedere [Usare Power BI per analizzare i dati di Call Quality Dashboard per Teams](CQD-Power-BI-query-templates.md).
+Se si vuole usare Power BI per analizzare i dati di Call Quality Dashboard, vedere [Usare Power BI per analizzare i dati CQD per Teams](CQD-Power-BI-query-templates.md).
 
 |Funzionalità|Report di riepilogo|Report dettagliati|
 |:---|:---|:---|
@@ -131,16 +131,16 @@ Se si vuole usare Power BI per analizzare i dati di Call Quality Dashboard, vede
 |Metriche di condivisione dello schermo basata su video|No|Sì|
 |Metriche video|No|Sì|
 |Quantità di dati disponibili|Ultimi 12 mesi|Ultimi 12 mesi|
-|Microsoft Teams dati|Sì|Sì|
+|Dati di Microsoft Teams|Sì|Sì|
 
 ### <a name="select-product-data-to-see-in-reports"></a>Selezionare i dati del prodotto da visualizzare nei report
 
-In Riepilogo e report di Location-Enhanced è possibile usare l'elenco a discesa **Filtro prodotti** per visualizzare tutti i dati sui prodotti, solo Microsoft Teams dati o solo Skype for Business dati online.
+Nel riepilogo e nei report di Location-Enhanced, è possibile usare l'elenco a discesa **Filtro prodotti** per visualizzare tutti i dati di prodotto, solo i dati di Microsoft Teams o solo Skype for Business dati online.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot: mostra le opzioni di controllo Filtro prodotti.](media/206ad818-0f72-4c8e-b25e-3cc8fcfbef05.png)
 
-Nei report dettagliati è possibile usare la dimensione **Is Teams** per filtrare i dati in modo da Microsoft Teams o Skype for Business dati online.
+Nei report dettagliati è possibile usare la dimensione **È Teams** per filtrare i dati in base a Microsoft Teams o Skype for Business dati online.
 
 ## <a name="summary-reports"></a>Report di riepilogo
 
@@ -160,7 +160,7 @@ Usare i dati in questa scheda per valutare lo stato e le tendenze della qualità
 > [!div class="mx-imgBorder"]
 > ![Screenshot: visualizzare la scheda Qualità chiamata.](media/c8d183b1-6592-49b0-a81d-35cc0568d5f0.png)
 
-Flussi vengono classificati in tre gruppi: Buono, Insufficiente e Non classificato. Sono anche stati calcolati valori  *poor %*  che forniscono il rapporto tra flussi classificati come *scadenti*  e il numero totale di flussi classificati. Poiché *% scarsa = flussi scadenti/(flussi scadenti + flussi buoni) \* 100*, la *percentuale scarsa* non è interessata dalla presenza di più flussi *non classificati*  . Per vedere cosa classifica un flusso come scadente o buono, consulta [Classificazione flusso nel dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md).
+I flussi sono classificati in tre gruppi: Buono, Scadente e Non classificato. Sono anche stati calcolati valori  *poor %*  che forniscono il rapporto tra flussi classificati come *scadenti*  e il numero totale di flussi classificati. Poiché *% scarsa = flussi scadenti/(flussi scadenti + flussi buoni) \* 100*, la *percentuale scarsa* non è interessata dalla presenza di più flussi *non classificati*  . Per vedere cosa classifica un flusso come scadente o buono, consulta [Classificazione flusso nel dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md).
 
 Usare la scala a sinistra per misurare i valori del conteggio dei flussi.
 
@@ -214,13 +214,13 @@ Come indicano i nomi, i criteri di classificazione si basano sul tipo di conness
 
 ## <a name="tenant-data-information"></a>Informazioni sui dati del tenant
 
-Il dashboard Report di riepilogo di Call Quality Dashboard include una pagina **Upload Dati tenant**, accessibile selezionando **Dati tenant Upload** dal menu impostazioni nell'angolo in alto a destra. Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio:
+Il dashboard Report di riepilogo di Call Quality Dashboard include una pagina **Caricamento dati tenant** , accessibile selezionando **Caricamento dati tenant** dal menu delle impostazioni nell'angolo in alto a destra. Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio:
 
 - Mappa dell'indirizzo IP e delle informazioni geografiche.
 - Mappa di ogni AP wireless e del relativo indirizzo MAC.
 - Mappa dell'endpoint alla creazione/modello/tipo dell'endpoint e così via.
 
-È consigliabile caricare i dati relativi a tenant, edificio e posizione in modo che Call Quality Dashboard possa includere queste informazioni nei report. Se questi dati non sono ancora stati caricati, leggere [Upload tenant e i dati dell'edificio](CQD-upload-tenant-building-data.md).
+È consigliabile caricare i dati relativi a tenant, edificio e posizione in modo che Call Quality Dashboard possa includere queste informazioni nei report. Se questi dati non sono ancora stati caricati, leggere Caricare i [dati del tenant e dell'edificio](CQD-upload-tenant-building-data.md).
 
 ## <a name="detailed-reports"></a>Report dettagliati
 
@@ -238,7 +238,7 @@ Il dashboard Report di riepilogo di Call Quality Dashboard include una pagina **
 
 ## <a name="create-custom-detailed-reports"></a>Creare report dettagliati personalizzati
 
-Se i report CQD predefiniti non soddisfano le proprie esigenze, usare queste istruzioni per creare un report personalizzato. Oppure, a partire da gennaio 2020, [usare Power BI per i report di Call Quality Dashboard](cqd-power-bi-query-templates.md).
+Se i report CQD predefiniti non soddisfano le proprie esigenze, usare queste istruzioni per creare un report personalizzato. In alternativa, a partire da gennaio 2020 [, usare Power BI per i report di Call Quality Dashboard ](cqd-power-bi-query-templates.md).
 
 Nell'elenco a discesa dei report nella parte superiore della schermata visualizzata all'accesso\(, nella schermata\) **Report di riepilogo** selezionare **Report dettagliati** e quindi **Nuovo**. Fare clic su **Modifica** in un report per visualizzare il Editor di query. Ogni report è supportato da una query nel cubo. Un report è una visualizzazione dei dati restituiti dalla query. La Editor di query consente di modificare queste query e le opzioni di visualizzazione del report.
 
@@ -335,7 +335,7 @@ Per aggiungere un filtro a livello di dashboard a un URL, tale filtro deve esser
 
 `filter/DATA_MODEL_NAME|VALUE`
 
-Ad esempio, per applicare un valore di filtro Prodotto di Microsoft Teams, aggiungere quanto segue:
+Ad esempio, per applicare un valore di filtro prodotto di Microsoft Teams, aggiungeresti quanto segue:
 
 `filter/[AllStreams].[Is%20Teams]|[True]`
 
@@ -361,7 +361,7 @@ Se si specifica un nome o un valore non valido, il filtro URL non verrà applica
 
 L'ID tenant in Call Quality Dashboard corrisponde all'ID directory in Azure. Se non conosci l'ID directory, puoi trovarlo nel portale di Azure:
 
-1. Accedere al portale di Microsoft Azure:<https://portal.azure.com>
+1. Accedi al portale di Azure Microsoft:<https://portal.azure.com>
 
 2. Selezionare **Azure Active Directory**.
 
@@ -373,14 +373,14 @@ L'ID tenant in Call Quality Dashboard corrisponde all'ID directory in Azure. Se 
 Login-AzureRmAccount
 ```
 
-## <a name="comparing-teams-and-skype-for-business-cqd-data"></a>Confronto tra Teams e dati di Call Quality Dashboard Skype for Business
+## <a name="comparing-teams-and-skype-for-business-cqd-data"></a>Confronto tra i dati di Teams e call quality dashboard di Skype for Business
 
 Durante la revisione dei dati, potrebbero verificarsi differenze nei dati tra Teams e Skype for Business. Alcuni motivi:
 
 - Differenze nei meccanismi per garantire prestazioni e affidabilità:
-  - Teams dispone di connessione automatica e roaming rapido. Skype for Business no.
-  - Teams dispone di una gestione dinamica della larghezza di banda. Skype for Business no.
-- Differenze negli [intervalli di indirizzi IP](Office-365-URLs-IP-address-ranges.md) tra Teams e Skype for Business. Gli intervalli IP Teams sono più recenti e ciò potrebbe causare problemi di connettività nel firewall.
+  - Teams ha la riconnessione automatica e il roaming rapido. Skype for Business no.
+  - Teams offre una gestione dinamica della larghezza di banda. Skype for Business no.
+- Differenze negli [intervalli di indirizzi IP](Office-365-URLs-IP-address-ranges.md) tra Teams e Skype for Business. Gli intervalli IP di Teams sono più recenti, il che potrebbe causare problemi di connettività nel firewall.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -390,7 +390,7 @@ Durante la revisione dei dati, potrebbero verificarsi differenze nei dati tra Te
 
 [Configurare Call Quality Dashboard (CQD)](turning-on-and-using-call-quality-dashboard.md)
 
-[Upload dati del tenant e dell'edificio](CQD-upload-tenant-building-data.md)
+[Caricare i dati di tenant e building](CQD-upload-tenant-building-data.md)
 
 [Usare Call Quality Dashboard per gestire la qualità delle chiamate e delle riunioni](quality-of-experience-review-guide.md)
 

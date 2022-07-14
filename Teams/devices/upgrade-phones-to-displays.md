@@ -1,7 +1,7 @@
 ---
-title: Aggiornare Teams telefoni a Teams display
-author: serdarsoysal
-ms.author: serdars
+title: Aggiornare i telefoni di Teams agli schermi di Teams
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: weizxue
 ms.topic: reference
@@ -15,74 +15,74 @@ ms.collection:
 - M365-voice
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Informazioni su come aggiornare Teams telefoni Teams visualizzati nell'Microsoft Teams di amministrazione.
-ms.openlocfilehash: b090522f93d8d41e9bf0e5a188030fd694672a5c
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+description: Informazioni su come aggiornare i telefoni di Teams agli schermi di Teams nell'interfaccia di amministrazione di Microsoft Teams.
+ms.openlocfilehash: cd087f4eb270abeb832fe54356b099cedba2d1cb
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60045842"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66789211"
 ---
-# <a name="upgrade-teams-phones-to-teams-displays"></a>Aggiornare Teams telefoni a Teams display
+# <a name="upgrade-teams-phones-to-teams-displays"></a>Aggiornare i telefoni di Teams agli schermi di Teams
 
 > [!IMPORTANT]
-> L'aggiornamento Teams display è disponibile solo nei dispositivi Lenovo ThinkSmart View. Le informazioni contenute in questo articolo si applicano solo a questo modello di dispositivo.  
+> L'aggiornamento agli schermi di Teams è disponibile solo sui dispositivi Lenovo ThinkSmart View. Le informazioni contenute in questo articolo si applicano solo a questo modello di dispositivo.  
 
-Questo articolo offre una panoramica su come aggiornare i telefoni Teams a Teams dispositivi di visualizzazione nell'interfaccia Microsoft Teams di amministrazione. In questo modo i dispositivi possono offrire agli utenti un'esperienza utente Teams dispositivi di visualizzazione.
+Questo articolo offre una panoramica su come aggiornare i telefoni di Teams ai dispositivi video di Teams nell'interfaccia di amministrazione di Microsoft Teams. In questo modo i dispositivi possono offrire agli utenti un'esperienza completa come dispositivi di visualizzazione di Teams.
 
-Teams display sono una categoria di dispositivi Teams dedicati all-in-one con touchscreen ambient e un'esperienza senza mani basata su Cortana. Teams display sono l'evoluzione Teams telefoni. Oltre alle funzionalità supportate dai telefoni [Teams,](phones-for-teams.md#features-supported-by-teams-phones)i display Teams includono caratteristiche come uno schermo sempre disponibile in cui tutte le opzioni di Teams attività e collaborazione sono sempre disponibili. Per altre informazioni sulle caratteristiche specifiche per Teams, vedere Microsoft Teams [display](teams-displays.md).
+I display di Teams sono una categoria di dispositivi Teams dedicati all-in-one con touchscreen ambientale e un'esperienza vivavoce con tecnologia Cortana. I display di Teams sono l'evoluzione dei telefoni di Teams. Oltre alle [funzionalità supportate dai telefoni di Teams](phones-for-teams.md#features-supported-by-teams-phones), gli schermi di Teams includono funzionalità come una visualizzazione sempre attiva in cui tutte le opzioni di attività e collaborazione di Teams sono sempre disponibili. Per altre informazioni sulle funzionalità esclusive degli schermi di Teams, vedere [Schermi di Microsoft Teams](teams-displays.md).
 
-## <a name="what-you-need-to-know-about-upgrading-to-teams-displays"></a>Informazioni sull'aggiornamento a Teams display
+## <a name="what-you-need-to-know-about-upgrading-to-teams-displays"></a>Informazioni utili sull'aggiornamento agli schermi di Teams
 
-### <a name="which-teams-phones-can-be-upgraded"></a>Quali Teams telefoni possono essere aggiornati?
+### <a name="which-teams-phones-can-be-upgraded"></a>Quali telefoni di Teams possono essere aggiornati?
 
-I dispositivi Lenovo ThinkSmart View possono essere aggiornati a Teams display.
+I dispositivi Lenovo ThinkSmart View possono essere aggiornati agli schermi di Teams.
 
 ### <a name="how-can-i-prepare-users"></a>Come si preparano gli utenti?
 
-Per prepararsi agli utenti, condividi Introduzione ai Teams [con](https://support.microsoft.com/office/get-started-with-teams-displays-ff299825-7f13-4528-96c2-1d3437e6d4e6) gli utenti per aiutarli a familiarizzare con Teams display. È consigliabile eseguire questa operazione con largo anticipo prima dell'aggiornamento.
+Per preparare gli utenti, condividere [Informazioni di base sugli schermi di Teams](https://support.microsoft.com/office/get-started-with-teams-displays-ff299825-7f13-4528-96c2-1d3437e6d4e6) con gli utenti per aiutarli a familiarizzare con l'uso degli schermi di Teams. È consigliabile eseguire questa operazione con largo anticipo rispetto all'aggiornamento.
 
-Fagli sapere che non ci sono modifiche ai dati o alle preferenze dopo l'aggiornamento. Ad esempio, gli utenti possono accedere a tutte le riunioni, le chiamate perse e i messaggi vocali Teams display. 
+Informarli che dopo l'aggiornamento non sono presenti modifiche ai dati o alle preferenze. Ad esempio, gli utenti possono accedere a tutte le riunioni, alle chiamate perse e ai messaggi vocali negli schermi di Teams. 
 
 ### <a name="what-happens-after-the-upgrade"></a>Cosa succede dopo l'aggiornamento?
 
-Dopo l'aggiornamento di un telefono Teams a un dispositivo di visualizzazione  Teams, il dispositivo è elencato nella pagina Teams visualizza nella sezione **Dispositivi Teams** dell'interfaccia di amministrazione di Microsoft Teams. Puoi gestirlo nello stesso modo in cui gestisci qualsiasi altro dispositivo Teams dispositivo. Per altre informazioni, vedere [Gestire i dispositivi in Teams.](device-management.md)
+Dopo l'aggiornamento di un telefono Teams a un dispositivo di visualizzazione di Teams, il dispositivo è elencato nella pagina **Teams visualizzata** nella sezione **Dispositivi di Teams** dell'interfaccia di amministrazione di Microsoft Teams. Lo gestisci nello stesso modo in cui gestisci qualsiasi altro dispositivo Teams. Per altre informazioni, vedere [Gestire i dispositivi in Teams](device-management.md).
 
-Tenere presente che dopo l'aggiornamento di un telefono Teams a un dispositivo Teams display, l'azione non può essere annullata. Prima di aggiornare l'intera organizzazione, è consigliabile eseguire un progetto pilota con un gruppo di primi utenti. 
+Tenere presente che dopo l'aggiornamento di un telefono teams a un dispositivo di visualizzazione di Teams, l'azione non può essere annullata. È consigliabile eseguire un progetto pilota con un gruppo di early adopter prima di aggiornare l'intera organizzazione. 
 
-## <a name="upgrade-your-teams-phones-to-teams-displays"></a>Aggiornare i Teams telefoni a Teams display
+## <a name="upgrade-your-teams-phones-to-teams-displays"></a>Aggiornare i telefoni di Teams agli schermi di Teams
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a **Teams**  >  **dispositivi telefoni**.
-2. Selezionare i Teams telefoni da aggiornare e quindi selezionare **Aggiorna**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Telefoni per dispositivi** >  di Teams.
+2. Seleziona i telefoni Di Teams che vuoi aggiornare, quindi seleziona **Aggiorna**.
 
-    :::image type="content" source="../media/upgrade-phones-to-displays-select-new.png" alt-text="Screenshot che mostra Teams telefoni selezionati per l'aggiornamento Teams display." lightbox="../media/upgrade-phones-to-displays-select-new.png":::
+    :::image type="content" source="../media/upgrade-phones-to-displays-select-new.png" alt-text="Screenshot che mostra i telefoni di Teams selezionati per l'aggiornamento agli schermi di Teams." lightbox="../media/upgrade-phones-to-displays-select-new.png":::
 
-3. Nella finestra di dialogo Aggiorna a  Teams **visualizzazione** selezionare Pianifica aggiornamento per impostare una data e un'ora per l'aggiornamento o Aggiorna **adesso.**
+3. Nella finestra di dialogo **Aggiorna a Teams,** selezionare **Pianifica l'aggiornamento** per impostare una data e un'ora per l'aggiornamento o **Aggiorna ora**.
 
-    :::image type="content" source="../media/upgrade-phones-to-displays-upgrade.png" alt-text="Screenshot che mostra la finestra di dialogo Teams di visualizzazione.":::
+    :::image type="content" source="../media/upgrade-phones-to-displays-upgrade.png" alt-text="Screenshot che mostra la finestra di dialogo Aggiorna a Teams.":::
 
 > [!NOTE]
-> Se viene visualizzato un messaggio che indica che i telefoni selezionati non [](#which-teams-phones-can-be-upgraded)possono essere aggiornati, verificare di aver selezionato i telefoni che supportano l'aggiornamento, quindi riprovare.
+> Se ricevi un messaggio che indica che non è possibile aggiornare i telefoni selezionati, verifica di aver selezionato [i telefoni che supportano l'aggiornamento](#which-teams-phones-can-be-upgraded) e quindi riprova.
 
-Durante il processo di aggiornamento, il firmware del dispositivo viene aggiornato a un dispositivo Teams display, il dispositivo viene riavviato ed è pronto per l'uso. Al termine dell'aggiornamento, il dispositivo sarà elencato nella pagina Teams **nell'interfaccia** di amministrazione Microsoft Teams di amministrazione.
+Durante il processo di aggiornamento, il firmware del dispositivo viene aggiornato a un dispositivo di visualizzazione di Teams, il dispositivo viene riavviato ed è pronto per l'uso. Una volta completato l'aggiornamento, vedrai il dispositivo elencato nella pagina **Schermi di Teams** nell'interfaccia di amministrazione di Microsoft Teams.
 
-Il completamento dell'aggiornamento può richiedere fino a un'ora. Se il processo non è stato completato dopo un'ora, ripetere l'aggiornamento. È anche possibile passare alla **scheda Cronologia** della pagina dei dettagli del dispositivo per visualizzare lo stato.
+Il completamento dell'aggiornamento può richiedere fino a un'ora. Se il processo non viene completato dopo un'ora, riprovare l'aggiornamento. Puoi anche passare alla scheda **Cronologia** della pagina dei dettagli del dispositivo per visualizzare lo stato.
 
 ## <a name="known-issues"></a>Problemi noti
 
-### <a name="teams-displays-have-the-default-theme-instead-of-the-dark-theme"></a>Teams visualizzati hanno il tema Predefinito invece del tema Scuro
+### <a name="teams-displays-have-the-default-theme-instead-of-the-dark-theme"></a>Gli schermi di Teams hanno il tema Predefinito invece del tema scuro
 
-Il supporto del tema scuro Teams schermi sarà disponibile in un aggiornamento futuro. Teams telefoni che usano il tema Scuro otterrà il tema Predefinito dopo l'aggiornamento a Teams visualizzati.
+Il supporto del tema scuro sugli schermi di Teams sarà disponibile in un aggiornamento futuro. I telefoni di Teams che usano il tema scuro riceveranno il tema Predefinito dopo l'aggiornamento alle visualizzazioni di Teams.
 
-### <a name="some-apps-are-missing-from-the-home-screen"></a>Alcune app non sono presenti nella schermata Home
+### <a name="some-apps-are-missing-from-the-home-screen"></a>Alcune app non sono presenti nella schermata iniziale
 
-Se alcune app non sono presenti nella schermata Home dopo l'aggiornamento, disconnettersi e accedere di nuovo. La correzione per questo problema sarà disponibile in un aggiornamento futuro.
+Se alcune app non sono presenti nella schermata iniziale dopo l'aggiornamento, disconnettiti ed esegui di nuovo l'accesso. La correzione per questo problema sarà disponibile in un aggiornamento futuro.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Introduzione ai Microsoft Teams visualizzati](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-microsoft-teams-displays/ba-p/1505437)
+[Introduzione agli schermi di Microsoft Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-microsoft-teams-displays/ba-p/1505437)
 
-[Teams display](teams-displays.md)
+[Visualizzazioni di Teams](teams-displays.md)
 
 [Teams Marketplace](https://office.com/teamsdevices)
 
@@ -90,4 +90,4 @@ Se alcune app non sono presenti nella schermata Home dopo l'aggiornamento, disco
 
 [Telefoni IP certificati per Microsoft Teams](teams-ip-phones.md)
 
-[Cortana'assistenza vocale in Teams](../cortana-in-teams.md)
+[Assistenza vocale di Cortana in Teams](../cortana-in-teams.md)

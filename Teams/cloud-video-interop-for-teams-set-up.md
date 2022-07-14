@@ -1,7 +1,7 @@
 ---
 title: Configurare l'interoperabilità video cloud per Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1b76e7c5e79b3928c7fb19ad9c5f5fb8f241b29a
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: f9ae7d59a97989d7f0677bf56b46c0a3d51f3e49
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65674738"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66789331"
 ---
 # <a name="set-up-cloud-video-interop-for-microsoft-teams"></a>Configurare l'interoperabilità video cloud per Microsoft Teams
 
@@ -32,7 +32,7 @@ Dopo aver [scelto i partner Cloud Video Interop](cloud-video-interop.md), sarà 
 
 ## <a name="plan"></a>Piano
 
-Per informazioni sull'identificazione di un partner o partner da usare nell'organizzazione, vedere [Cloud Video Interop for Microsoft Teams](cloud-video-interop.md).
+Vedere [Cloud Video Interop per Microsoft Teams per](cloud-video-interop.md) informazioni sull'identificazione di un partner o partner da usare nell'organizzazione.
 
 Per pianificare l'abilitazione a livello di sito basata su utenti,simultanei/siti:
 
@@ -78,7 +78,7 @@ Sarà necessario eseguire i cmdlet seguenti per eseguire il provisioning della c
 
 Sarà necessario fornire il consenso di autorizzazione per i dispositivi di teleconferenza video (VTC) per partecipare alle riunioni dell'organizzazione tramite il servizio partner. Questo collegamento per il consenso verrà fornito anche dal partner.
 
-Una volta completata questa procedura, gli utenti abilitati singolarmente tramite il cmdlet Grant precedente o tutti gli utenti dell'organizzazione, se il tenant è abilitato, avranno le coordinate VTC in tutte le riunioni Teams che pianificare. Qualsiasi VTC può partecipare a queste riunioni tramite tali coordinate.
+Una volta completata questa procedura, gli utenti abilitati singolarmente tramite il cmdlet Grant precedente o tutti gli utenti dell'organizzazione, se il tenant è abilitato, avranno le coordinate VTC in tutte le riunioni di Teams che pianificare. Qualsiasi VTC può partecipare a queste riunioni tramite tali coordinate.
 
 |Nome|Descrizione breve dell'autorizzazione per l'applicazione| Descrizione|
 |---|---|---|
@@ -89,21 +89,21 @@ Una volta completata questa procedura, gli utenti abilitati singolarmente tramit
 
 ## <a name="schedule"></a>Programma
 
-Successivamente, pianificare Teams riunione con le coordinate di interoperabilità video. L'utente abilitato può pianificare le riunioni dei team tramite:
+Successivamente, pianificare riunione di Teams con le coordinate di interoperabilità video. L'utente abilitato può pianificare le riunioni dei team tramite:
 
-- [Teams componente aggiuntivo Riunione per Outlook](teams-add-in-for-outlook.md)
-- Teams desktop client e dispositivi mobili
+- [Componente aggiuntivo Riunione di Teams per Outlook](teams-add-in-for-outlook.md)
+- Desktop e dispositivi mobili client di Teams
 
 ## <a name="join"></a>Unirsi
 
-È possibile partecipare a riunioni Teams con i dispositivi VTC nei modi seguenti:
+È possibile partecipare alle riunioni di Teams con i dispositivi VTC nei modi seguenti:
 
 - IVR (Risposta vocale interattiva)
   - Puoi accedere all'IVR del partner tramite l'tenantkey@domain.
-  - Una volta entrato nell'IVR partner, ti verrà chiesto di immettere il VTC conferenceId, che ti connetterà alla riunione Teams.
+  - Una volta entrato nell'IVR partner, ti verrà chiesto di immettere il VTC conferenceId, che ti connetterà alla riunione di Teams.
 - Telefono diretto
-  - È possibile accedere direttamente alla riunione Teams senza interagire con l'IVR del partner usando la funzionalità di composizione diretta usando la stringa completa di chiave tenant. ConferenceId@domain VTC.
+  - È possibile accedere direttamente alla riunione di Teams senza interagire con l'IVR del partner usando la funzione di composizione diretta usando la stringa completa di chiave tenant. ConferenceId@domain VTC.
 - Comando radiale con un tocco
-  - Se disponi di una sala di Teams integrata, puoi usare le funzionalità di chiamata con un tocco offerte dal tuo partner (senza dover digitare alcuna stringa di chiamata).
+  - Se hai una sala riunioni di Teams integrata, puoi usare le funzionalità di chiamata one-touch offerte dal tuo partner (senza dover digitare alcuna stringa di chiamata).
 
-Infine, collaborare con Teams utenti alle riunioni usando l'audio, il video e la condivisione di contenuti.
+Infine, collaborare con gli utenti di Teams alle riunioni usando l'audio, il video e la condivisione di contenuti.

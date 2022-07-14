@@ -1,7 +1,7 @@
 ---
 title: Gestire i dispositivi con unità amministrative
-author: mahoffman
-ms.author: serdars
+author: CarolynRowe
+ms.author: crowe
 ms.reviewer: prasad.ghlove
 manager: serdars
 ms.topic: article
@@ -16,55 +16,55 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 63579e7e9b6b2f7a7456349c489d4f544eb67cc1
-ms.sourcegitcommit: 9e868a155bcd20dd5dafdedcff091ff77ca7398b
+ms.openlocfilehash: 5afbc4acd33acf7e950218e7cf2e30383b3b1d12
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64584311"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66790431"
 ---
-# <a name="manage-devices-in-the-teams-admin-center-with-administrative-units"></a>Gestire i dispositivi nell'Teams di amministrazione con unità amministrative
+# <a name="manage-devices-in-the-teams-admin-center-with-administrative-units"></a>Gestire i dispositivi nell'interfaccia di amministrazione di Teams con unità amministrative
 
-Le unità amministrative nell'Teams di amministrazione forniscono un accesso dettagliato e basato sui ruoli per la gestione Teams dispositivi. Le unità amministrative concedono Teams'accesso a risorse specifiche, ma limitano l'accesso di tale amministratore ad altre risorse. Questa opzione è particolarmente utile se si hanno amministratori locali Teams in diversi paesi o aree geografiche.
+Le unità amministrative nell'interfaccia di amministrazione di Teams forniscono un accesso dettagliato basato sui ruoli per la gestione dei dispositivi Teams. Le unità amministrative concedono l'accesso di amministratore di Teams a risorse specifiche, ma limitano l'accesso di tale amministratore ad altre risorse. Questa funzionalità è particolarmente utile se si hanno amministratori di Teams locali in paesi o aree geografiche diversi.
 
-Ad esempio, Contoso ha operazioni in tutto il mondo. Alice è un amministratore IT globale con sede a Londra, mentre Prashant è un amministratore IT locale con sede a Bangalore, India. Oggi, quando Prashant accede all'interfaccia Teams di amministrazione come amministratore di dispositivi, può vedere Teams dispositivi in tutto il mondo. Alice vuole limitare l'accesso di Prashant ai Teams solo a Bangalore. Le unità amministrative le consentono di eseguire questa operazione. Per altre informazioni, vedere [Unità amministrative in Azure Active Directory](/azure/active-directory/roles/administrative-units).
+Ad esempio, Contoso ha operazioni in tutto il mondo. Alice è un amministratore IT globale con sede a Londra, mentre Prashant è un amministratore IT locale con sede a Bangalore, India. Oggi, quando Prashant accede all'interfaccia di amministrazione di Teams come amministratore dei dispositivi, può vedere i dispositivi Teams in tutto il mondo. Alice vuole limitare l'accesso di Prashant ai dispositivi Teams solo in Bangalore. Le unità amministrative le permettono di farlo. Per altre informazioni, vedere [Unità amministrative in Azure Active Directory](/azure/active-directory/roles/administrative-units).
 
 > [!NOTE]
-> Le unità amministrative sono attualmente disponibili nell'Teams di amministrazione solo per il ruolo di amministratore Teams dispositivi mobili.
+> Le unità amministrative sono attualmente disponibili nell'interfaccia di amministrazione di Teams solo per il ruolo di amministratore dei dispositivi Teams.
 
 ## <a name="add-administrative-units"></a>Aggiungere unità amministrative
 
-Per aggiungere unità amministrative, è necessario essere un amministratore globale. Per informazioni, vedere [Aggiungere un'unità amministrativa](/azure/active-directory/roles/admin-units-manage#add-an-administrative-unit).
+È necessario essere un amministratore globale per aggiungere unità amministrative. Per informazioni sulla procedura, vedere [Aggiungere un'unità amministrativa](/azure/active-directory/roles/admin-units-manage#add-an-administrative-unit).
 
 ## <a name="assign-admins-to-administrative-units"></a>Assegnare amministratori alle unità amministrative
 
-È anche necessario essere amministratori globali per assegnare unità amministrative. È possibile assegnare unità amministrative usando portale di Azure, PowerShell o Microsoft API Graph. Per altre informazioni, vedere [Assegnare ruoli Azure AD con ambito di unità amministrative](/azure/active-directory/roles/admin-units-assign-roles).
+È anche necessario essere amministratore globale per assegnare unità amministrative. È possibile assegnare unità amministrative usando portale di Azure, PowerShell o l'API Graph Microsoft. Per altre informazioni, vedere [Assegnare ruoli di Azure AD con ambito di unità di amministrazione](/azure/active-directory/roles/admin-units-assign-roles).
 
 ## <a name="select-administrative-units"></a>Selezionare le unità amministrative
 
-Gli amministratori dei dispositivi Teams, dopo che un amministratore globale ti ha assegnato a un'unità amministrativa, puoi accedere all'interfaccia di amministrazione di Teams per gestire i dispositivi. Se si è assegnati a una sola unità amministrativa, verranno visualizzati solo i dispositivi assegnati a tale unità amministrativa. Se si è assegnati a più unità amministrative, è possibile passare da una unità amministrativa all'altro senza uscire dall'Teams di amministrazione. 
+Se sei un amministratore dei dispositivi di Teams, dopo che un amministratore globale ti ha assegnato a un'unità amministrativa, puoi accedere all'interfaccia di amministrazione di Teams per gestire i dispositivi. Se si è assegnati a una sola unità amministrativa, verranno visualizzati solo i dispositivi assegnati a tale unità amministrativa. Se si è assegnati a più unità amministrative, è possibile passare da un'unità amministrativa all'altra senza disconnettersi dall'interfaccia di amministrazione di Teams. 
 
-1. Accedere all'interfaccia [Teams di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+1. Accedere [all'interfaccia di amministrazione di Teams](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
-2. Nella finestra **di dialogo Unità amministrative** eseguire una delle operazioni seguenti:
+2. Nella finestra di dialogo **Unità amministrative** eseguire una di queste operazioni:
     - Selezionare l'unità amministrativa da gestire oppure 
-    - Selezionare **Tutti i dispositivi** se si ha l'autorizzazione per gestire tutti i dispositivi per l'organizzazione.
+    - Selezionare **Tutti i dispositivi** se si dispone dell'autorizzazione per gestire tutti i dispositivi per l'organizzazione.
 
 3. Selezionare **Salva**.
 
 ## <a name="switch-administrative-units"></a>Cambiare unità amministrative
 
-Se si è un amministratore Teams dispositivi mobili, è possibile passare da un'unità amministrativa all'altro se è stato eseguito l'accesso all'interfaccia di amministrazione Teams di amministrazione. Per passare a un'unità amministrativa diversa:
+Gli amministratori di dispositivi Teams possono passare da un'unità amministrativa all'altra se si è connessi all'interfaccia di amministrazione di Teams. Per passare a un'unità amministrativa diversa:
 
-1. Accedere all'interfaccia [Teams di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+1. Accedere [all'interfaccia di amministrazione di Teams](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
-2. Nel riquadro di spostamento sinistro selezionare Teams **dispositivi**.
+2. Nella barra di spostamento sinistra selezionare **Dispositivi di Teams**.
 
-3. Nel riquadro destro, in alto a sinistra, selezionare l'unità amministrativa visualizzata.
+3. Nel riquadro destro, in alto a sinistra, selezionare l'unità di amministrazione visualizzata.
 
-4. Nella finestra **di dialogo Unità amministrative** eseguire una delle operazioni seguenti:
+4. Nella finestra di dialogo **Unità amministrative** eseguire una di queste operazioni:
     - Selezionare l'unità amministrativa da gestire oppure 
-    - Selezionare **Tutti i dispositivi** se si ha l'autorizzazione per gestire tutti i dispositivi per l'organizzazione.
+    - Selezionare **Tutti i dispositivi** se si dispone dell'autorizzazione per gestire tutti i dispositivi per l'organizzazione.
 
 5. Selezionare **Salva**.
 

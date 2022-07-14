@@ -1,7 +1,7 @@
 ---
 title: Domande frequenti sulla governance di Microsoft Education per amministratori
-author: SerdarSoysal
-ms.author: serdars
+author: DaniEASmith
+ms.author: danismith
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -11,85 +11,90 @@ description: Risposte alle domande frequenti degli amministratori dei gruppi di 
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.collection:
-  - M365-collaboration
+- M365-collaboration
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: fe9c0b19e5ba586ac8bfe430295de459c3d836d2
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66790181"
 ---
-
 # <a name="microsoft-education-governance-faq-for-admins"></a>Domande frequenti sulla governance di Microsoft Education per amministratori
 
 > [!Tip]
-> Guardare la sessione seguente per altre informazioni sulla gestione in Microsoft Teams: [Governance, gestione e ciclo di vita in Microsoft Teams](https://aka.ms/teams-governance)
+> Guarda la sessione seguente per saperne di più sulla gestione in Microsoft Teams: [Governance, gestione e ciclo di vita in Microsoft Teams](https://aka.ms/teams-governance)
 
-## <a name="how-do-i-control-team-creation-im-worried-students-are-going-to-create-inappropriate-teams"></a>Come si controlla la creazione di team? Sono preoccupata che gli studenti creino team inappropriati.
+## <a name="how-do-i-control-team-creation-im-worried-students-are-going-to-create-inappropriate-teams"></a>Ricerca per categorie la creazione di team di controllo? Temo che gli studenti creeranno team inappropriati.
 
-Per evitare nomi inappropriati o fuorvianti o semplicemente per fornire una maggiore struttura per la modalità di denominazione dei team, è possibile usare il criterio di denominazione gruppi di Microsoft 365 (attualmente in anteprima):
+Per evitare nomi inappropriati o fuorvianti o semplicemente per fornire una struttura più struttura per il nome dei team, è possibile usare i criteri di denominazione Gruppi di Microsoft 365 (attualmente in anteprima):
 
--   **Criteri di denominazione prefisso-suffisso** È possibile usare prefissi o suffissi per definire la convenzione di denominazione dei team (gruppi), ad **esempio GRP_US_My Group_Engineering.** I prefissi e i suffissi possono essere stringhe fisse o attributi utente (ad esempio **[Reparto]**) che vengono aggiunti al nome in base all'utente che crea il team.
--   **Parole bloccate personalizzate** È possibile caricare un set di parole che gli utenti di un'organizzazione specifica non possono usare nei nomi dei team creati. Ad esempio, è possibile bloccare l'uso dei termini **CEO**, **Retribuzioni** e Risorse umane nei nomi dei team per i gruppi a cui non si applicano.
--   **Classificazione** È possibile creare classificazioni che gli utenti dell'organizzazione possono impostare quando creano un Microsoft 365 gruppo. 
+-   **Criteri di denominazione dei prefissi e dei suffissi** È possibile usare prefissi o suffissi per definire la convenzione di denominazione dei team (gruppi), ad esempio **GRP_US_My Group_Engineering**. I prefissi e suffissi possono essere stringhe fisse o attributi utente (ad esempio **[Department]**) che vengono aggiunti al nome in base all'utente che sta creando il team.
+-   **Parole bloccate personalizzate** È possibile caricare un set di parole che gli utenti di un'organizzazione specifica non possono usare nei nomi dei team creati. Ad esempio, è possibile bloccare l'uso dei termini **CEO**, **Payroll** e **HR** nei nomi dei team per i gruppi a cui non si applicano.
+-   **Classificazione** È possibile creare classificazioni che gli utenti dell'organizzazione possono impostare quando creano un gruppo di Microsoft 365. 
 
 > [!IMPORTANT]
-> L'uso Microsoft 365 criteri di denominazione dei gruppi di Azure Active Directory Premium P1 richiede licenze Azure Active Directory Premium P1 o licenze EDU di base Azure AD per ogni utente univoco membro di uno o più Microsoft 365 gruppi.
+> L'uso dei criteri di denominazione di Gruppi di Microsoft 365 richiede licenze di Azure Active Directory Premium P1 o licenze EDU di Azure AD Basic per ogni utente univoco membro di uno o più gruppi di Microsoft 365.
 
-Per istruzioni dettagliate, vedere criteri di denominazione [Office gruppi.](https://support.office.com/article/office-365-groups-naming-policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552)
+Per istruzioni dettagliate, vedere [Criteri di denominazione dei gruppi di Office](https://support.office.com/article/office-365-groups-naming-policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552).
 
 > [!Note]
-> Se i team vengono creati automaticamente usando l'input di un altro sistema, ad esempio School Data Sync, verificare che i dati di input siano conforme ai criteri di denominazione configurati, in caso contrario, la creazione del team avrà esito negativo.
+> Se i team vengono creati automaticamente usando l'input da un altro sistema (ad esempio School Data Sync), verifica che i dati di input siano conformi ai criteri di denominazione configurati; in caso contrario, la creazione di team non riuscirà.
 
 ## <a name="can-i-see-who-created-a-team"></a>È possibile vedere chi ha creato un team?
 
-Per scoprire chi ha creato un team specifico, vedere Cercare gli eventi nel [log di controllo in Microsoft Teams](audit-log-events.md).
+Per scoprire chi ha creato un team specifico, vedere [Cercare gli eventi in Microsoft Teams nel log di controllo](audit-log-events.md).
 
 ## <a name="can-i-control-who-can-create-teams"></a>È possibile controllare chi può creare team?
 
-In generale, è consigliabile evitare che chiunque crei team. Se tutti possono creare team, Teams è più probabile che siano ampiamente adottati. Docenti, docenti o studenti possono usare i Teams per creare gruppi di studio o gruppi di interesse speciali. In questo modo Teams essere accettati all'interno e all'esterno dell'aula.
+In generale, è consigliabile evitare di impedire a chiunque di creare team. Se tutti possono creare team, è più probabile che Teams sia ampiamente adottato. Docenti, insegnanti o studenti possono usare Teams per creare gruppi di studio o gruppi di interesse speciali. In questo modo Teams sarà accettato all'interno e all'esterno della classe.
 
-Nella nostra esperienza, l'istruzione degli utenti contribuisce a garantire un utilizzo Teams responsabile. Non appena gli utenti comprendono che la creazione di team non è anonima, comprendono le implicazioni di crearli con disaffezioni e tendono a non utilizzare in modo utilmente lo strumento.
+Nella nostra esperienza, la formazione degli utenti contribuisce a garantire un utilizzo responsabile di Teams. Non appena gli utenti comprendono che la creazione di team non è anonima, comprendono le implicazioni della loro creazione noncurante e tendono a evitare di usare erroneamente lo strumento.
 
-Se si è certi di voler controllare chi può creare team, vedere Gestire gli utenti che [possono creare Microsoft 365 gruppi](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618).
+Se si è certi di voler controllare chi può creare team, vedere [Gestire chi può creare Gruppi di Microsoft 365](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618).
 
-## <a name="how-do-i-automatically-create-a-team-for-each-course-at-the-beginning-of-the-semester-or-quarter"></a>Come si crea automaticamente un team per ogni corso all'inizio del semestre o del trimestre?
+## <a name="how-do-i-automatically-create-a-team-for-each-course-at-the-beginning-of-the-semester-or-quarter"></a>Ricerca per categorie creare automaticamente un team per ogni corso all'inizio del semestre o del trimestre?
 
-All'inizio di ogni semestre o trimestre, sono necessari diversi nuovi team. Può essere opportuno adottare un approccio automatizzato per creare automaticamente questi team, popolarli con gli utenti giuste e impostare le autorizzazioni appropriate:
+All'inizio di ogni semestre o trimestre, avrai bisogno di un certo numero di nuovi team. Può essere utile adottare un approccio automatizzato per creare automaticamente questi team, popolare i team con gli utenti giusti e impostare le autorizzazioni appropriate:
 
--   School Data Sync creare gruppi Microsoft 365 per Exchange Online e SharePoint Online, team di classe per Microsoft Teams e OneNote  Blocchi appunti della classe, gruppi dell'istituto di istruzione per Intune per l'istruzione e integrazione di elenco e Single Sign-On (SSO) per molte altre applicazioni di terze parti. Per altre informazioni, [vedere Panoramica di School Data Sync](/schooldatasync/overview-of-school-data-sync).
--   Con PowerShell è possibile creare team e canali e configurare automaticamente le impostazioni. Per [altre Microsoft Teams, vedere PowerShell](/powershell/module/teams/?view=teams-ps).
--   È possibile usare l'API microsoft Graph (attualmente in versione beta) per creare, configurare, clonare e archiviare team. Per [altre informazioni, vedere Usare l'API](/graph/api/resources/teams-api-overview) di Graph Microsoft Microsoft Teams per altre informazioni.
+-   School Data Sync può creare Gruppi di Microsoft 365 per Exchange Online e SharePoint Online, team di classe per i blocchi appunti di Microsoft Teams e OneNote per la classe, gruppi scolastici per Intune per l'istruzione e integrazione dei registri e Single Sign-On (SSO) per molte altre applicazioni di terze parti. Per altre informazioni [, vedere Panoramica di School Data Sync](/schooldatasync/overview-of-school-data-sync).
+-   Con PowerShell è possibile creare team e canali e configurare automaticamente le impostazioni. Per altre informazioni, vedere [Microsoft Teams PowerShell](/powershell/module/teams/?view=teams-ps) .
+-   È possibile usare Microsoft API Graph (attualmente nella versione beta) per creare, configurare, clonare e archiviare team. Per altre informazioni, vedere [Usare Microsoft API Graph per lavorare con Microsoft Teams](/graph/api/resources/teams-api-overview).
 
 > [!TIP]
-> School Data Sync crea un gruppo di Microsoft 365 per ogni classe sincronizzata e abilita l'appartenenza [](https://techcommunity.microsoft.com/t5/School-Data-Sync/HiddenGroupMembershipEnabled-SDS-setting/td-p/159945) ai gruppi nascosti in modo che solo gli insegnanti e gli studenti all'interno della classe possano vedere i membri della classe. Se si usa un processo diverso per creare gruppi di classi, usare il parametro HiddenGroupMembershipEnabled del cmdlet New-UnifiedGroup per soddisfare gli stessi requisiti di privacy.
+> School Data Sync crea un gruppo di Microsoft 365 per ogni classe sincronizzata e [abilita l'appartenenza nascosta al gruppo](https://techcommunity.microsoft.com/t5/School-Data-Sync/HiddenGroupMembershipEnabled-SDS-setting/td-p/159945) in modo che solo i docenti e gli studenti all'interno della classe possano vedere i membri del corso. Se si usa un processo diverso per creare gruppi di classi, usare il parametro HiddenGroupMembershipEnabled del cmdlet New-UnifiedGroup per soddisfare gli stessi requisiti di privacy.
 
-## <a name="how-do-i-deal-with-teams-when-the-semester-or-quarter-ends"></a>Come posso gestire i team al termine del semestre o del trimestre?
+## <a name="how-do-i-deal-with-teams-when-the-semester-or-quarter-ends"></a>Ricerca per categorie gestire i team alla fine del semestre o del trimestre?
 
-È consigliabile prima di tutto pensare a come gestire i dati Teams quando il semestre o il trimestre scolastico è terminato: se eliminarli o tenerli disponibili per gli studenti anche dopo aver completato il corso. È necessario tenere presente il calendario dell'istituto di istruzione in modo che i criteri impostati non in conflitto con le festività. Per implementare la strategia, è possibile usare gli strumenti seguenti:
+Ti consigliamo di pensare a come gestire i dati di Teams quando il semestre o il trimestre scolastico è finito: se eliminarli o mantenerli disponibili per gli studenti anche dopo aver completato il corso. È consigliabile tenere presente il calendario dell'istituto di istruzione in modo che i criteri impostati non vengano in conflitto con le festività. È possibile utilizzare gli strumenti seguenti per implementare la strategia:
 
--   **Criteri di conservazione:** Usa questa opzione per eliminare tutti i dati più vecchi di un'età specificata per assicurarti che i vecchi dati siano rimossi dalle chat (per tutti o per alcuni utenti) e dai canali. È anche possibile configurare Teams per conservare il contenuto in modo che non possa essere eliminato. Per altre informazioni, vedere [Criteri di conservazione per Microsoft Teams](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Retention-policies-for-Microsoft-Teams/ba-p/178011).
--   **Criteri di scadenza:** Configurare i team in modo che scada dopo un determinato numero di giorni. Trenta giorni prima della scadenza, a tutti i proprietari di un team viene notificato che il team deve essere rinnovato, altrimenti verrà eliminato (anche se un amministratore può recuperare i team eliminati per altri 30 giorni). Questa impostazione è molto utile per assicurarsi che i team inutilizzati siano al tramonto. Per altre informazioni, [Microsoft 365 criteri di scadenza del gruppo](https://support.office.com/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733).
+-   **Criteri di conservazione:** Usa questa opzione per eliminare tutti i dati più vecchi di un'età specificata per assicurarti che i vecchi dati vengano rimossi dalle chat (per tutti o alcuni utenti) e dai canali. È anche possibile configurare Teams in modo da conservare il contenuto in modo che non possa essere eliminato. Per altre informazioni, vedere [Criteri di conservazione per Microsoft Teams](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Retention-policies-for-Microsoft-Teams/ba-p/178011).
+-   **Criteri di scadenza:** Configurare la scadenza dei team dopo un determinato numero di giorni. Trenta giorni prima della scadenza, tutti i proprietari di un team ricevono una notifica che il team deve essere rinnovato, altrimenti verrà eliminato (anche se un amministratore può recuperare i team eliminati per altri 30 giorni). Questa impostazione è molto utile per fare in modo che i team inutilizzati siano al tramonto. Per altre informazioni, vedere [Criteri di scadenza dei gruppi di Microsoft 365](https://support.office.com/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733).
 
--   **Team di archiviazione:** Questa impostazione attiva la modalità di sola lettura per i team. Possono comunque essere esplorati e cercati, ma nessuno può aggiungere nuovi post. [L'opzione Archivia o ripristina un team](https://support.office.com/article/archive-or-restore-a-team-dc161cfd-b328-440f-974b-5da5bd98b5a7) descrive in che modo i proprietari del team possono archiviare un team. I proprietari del team possono anche usare [l'API Graph (beta)](/graph/api/resources/teams-api-overview) per archiviare o ripristinare un team.
+-   **Team di archiviazione:** Questa impostazione attiva la modalità di sola lettura per i team. Possono comunque essere sfogliati e cercati, ma nessuno può aggiungere nuovi post. [Archivia o ripristina un team](https://support.office.com/article/archive-or-restore-a-team-dc161cfd-b328-440f-974b-5da5bd98b5a7) descrive come i proprietari del team possono archiviare un team; I proprietari dei team possono anche usare la [API Graph (beta)](/graph/api/resources/teams-api-overview) per archiviare o ripristinare un team.
  
 > [!IMPORTANT]
-> L'uso Microsoft 365 criteri di scadenza dei gruppi Azure Active Directory Premium P1 licenze per ogni utente univoco membro di uno o più gruppi Microsoft 365 utenti.
+> L'uso dei criteri di scadenza Gruppi di Microsoft 365 richiede licenze Azure Active Directory Premium P1 per ogni utente univoco membro di uno o più gruppi di Microsoft 365.
 
-## <a name="are-there-team-templates-for-my-faculty-members-to-use-when-creating-a-team"></a>Sono disponibili modelli di team da usare per i docenti durante la creazione di un team?
+## <a name="are-there-team-templates-for-my-faculty-members-to-use-when-creating-a-team"></a>Esistono modelli di team che i membri dell'istituto di istruzione possono usare per creare un team?
 
-Sì. Gli utenti possono selezionare Crea **team** da un modello esistente durante la creazione di un nuovo team e i proprietari di Teams possono anche usare [l'API di Graph (beta)](/graph/api/resources/teams-api-overview) per creare un nuovo team dai modelli disponibili.
+Sì. Gli utenti possono selezionare **Crea team da un modello esistente** quando creano un nuovo team e i proprietari di Teams possono anche usare la [API Graph (beta)](/graph/api/resources/teams-api-overview) per creare un nuovo team dai modelli disponibili.
 
 ## <a name="what-tasks-can-i-automate-via-powershell-or-graph"></a>Quali attività è possibile automatizzare tramite PowerShell o Graph?
 
-Microsoft [Graph API (beta)](/graph/api/resources/teams-api-overview) può eseguire le operazioni seguenti:
+Microsoft [API Graph (beta)](/graph/api/resources/teams-api-overview) può eseguire le operazioni seguenti:
 
 -   Creare un team.
 -   Aggiungere membri e proprietari.
 -   Aggiungere canali.
--   Aggiungere app.
--   Per creare un collegamento a questi passaggi, clona un team esistente e ottieni anche le relative schede.
--   Assegnare all'utente un collegamento al team appena creato.
--   Rimuovere membri, proprietari, canali e app quando non sono più necessari.
+-   Aggiungi app.
+-   È possibile creare collegamenti a questi passaggi clonando un team esistente e scaricando anche le relative schede.
+-   Fornire all'utente un collegamento al team appena creato.
+-   Rimuovi membri, proprietari, canali e app quando non sono più necessari.
 -   Archiviare il team quando non è più attivo. 
 -   Eliminare il team.
 -   Creare un thread di canale
@@ -103,37 +108,37 @@ Microsoft [Graph API (beta)](/graph/api/resources/teams-api-overview) può esegu
 -   Eliminare il team.
 
 > [!TIP]
-> L Graph API e i cmdlet di PowerShell aggiungono continuamente funzionalità. Assicurarsi di controllare spesso gli [articoli sull'API di Microsoft Graph (beta)](/graph/api/resources/teams-api-overview) e [PowerShell](/powershell/module/teams/?view=teams-ps) per i miglioramenti apportati alle funzionalità.  
+> I cmdlet API Graph e PowerShell aggiungono costantemente funzionalità. Assicurati di controllare spesso gli articoli [di Microsoft API Graph (beta)](/graph/api/resources/teams-api-overview) e [PowerShell](/powershell/module/teams/?view=teams-ps) per i miglioramenti delle funzionalità.  
 
 
-## <a name="can-i-control-what-teams-features-my-faculty-and-students-have-access-to"></a>È possibile controllare Teams funzionalità a cui i docenti e gli studenti hanno accesso?
+## <a name="can-i-control-what-teams-features-my-faculty-and-students-have-access-to"></a>È possibile controllare a quali funzionalità di Teams hanno accesso docenti e studenti?
 
-Sì. È possibile usare i criteri per controllare specifiche funzionalità di messaggistica, riunione, chiamata ed evento live a cui gli utenti hanno accesso. È possibile usare le impostazioni a livello di tenant per applicare le stesse impostazioni a tutti o, se necessario, applicare criteri a livello di utente. 
+Sì. È possibile usare i criteri per controllare funzionalità specifiche di messaggistica, riunioni, chiamate ed eventi live a cui gli utenti hanno accesso. È possibile usare le impostazioni a livello di tenant per applicare le stesse impostazioni a tutti o applicare criteri a livello di utente, se necessario. 
 
-Per altre informazioni sui criteri Teams, vedere Gestire le Microsoft Teams [per l'organizzazione](enable-features-office-365.md).
+Per altri dettagli sui criteri di Teams, vedere [Gestire le impostazioni di Microsoft Teams per l'organizzazione](enable-features-office-365.md).
  
-## <a name="can-i-control-what-external-parties-my-faculty-and-students-collaborate-with"></a>È possibile controllare con quali parti esterne collaborano docenti e studenti?
+## <a name="can-i-control-what-external-parties-my-faculty-and-students-collaborate-with"></a>È possibile controllare con quali parti esterne docenti e studenti collaborano?
 
-È possibile usare l'accesso guest per invitare utenti esterni al tenant, che possono essere utili per la collaborazione alla ricerca o per le lezioni guest:
+È possibile usare l'accesso guest per invitare utenti esterni al tenant, che possono essere utili per la collaborazione di ricerca o per le lezioni guest:
 
--   Usare un elenco di domini consentiti per consentire o bloccare guest in base al dominio.
--   Attivare e disattivare l'accesso guest per Microsoft 365 gruppi e team specifici, per controllare quali team possono (e non possono) invitare guest.
+-   Usare un elenco di domini consentiti per consentire o bloccare i guest in base al dominio.
+-   Attivare e disattivare l'accesso guest per particolari Gruppi di Microsoft 365 e team, per controllare quali team possono (e non possono) invitare guest.
 -   Usare il log di controllo per vedere quali avvisi sono stati inviati ai guest invitati.
 
-Per altre informazioni, vedere [Accesso guest in Microsoft 365 gruppi](https://support.office.com/article/Guest-access-in-Office-365-Groups-bfc7a840-868f-4fd6-a390-f347bf51aff6#PickTab=Manage).
+Per altre informazioni, vedere [Accesso guest in Gruppi di Microsoft 365](https://support.office.com/article/Guest-access-in-Office-365-Groups-bfc7a840-868f-4fd6-a390-f347bf51aff6#PickTab=Manage).
 
 ## <a name="what-information-can-i-review-about-existing-teams"></a>Quali informazioni è possibile esaminare sui team esistenti?
 
 È possibile controllare i log di controllo per visualizzare:
 
--   Who è stato invitato come guest a quale team.
--   Who creato il team.
+-   Chi è stato invitato come guest a quale team.
+-   Chi ha creato il team.
 
-Per altre informazioni, vedere [Cercare eventi nel log di controllo in Microsoft Teams](audit-log-events.md).
+Per altre informazioni, vedere [Cercare eventi in Microsoft Teams nel log di controllo](audit-log-events.md).
 
-## <a name="teams-evolves-so-quickly-how-can-i-stay-up-to-date"></a>Teams si evolve così rapidamente. Come si può rimanere aggiornati?
+## <a name="teams-evolves-so-quickly-how-can-i-stay-up-to-date"></a>Teams si evolve così rapidamente. Come posso rimanere aggiornato?
 
-È consigliabile usare le risorse seguenti per ottenere gli aggiornamenti più recenti Teams:
+Consigliamo le risorse seguenti per ottenere gli aggiornamenti più recenti su Teams:
 
 -   [Novità di Microsoft Teams](https://support.office.com/article/What-s-new-in-Microsoft-Teams-d7092a6d-c896-424c-b362-a472d5f105de)
--   [Microsoft Teams blog](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/bg-p/MicrosoftTeamsBlog)
+-   [Blog di Microsoft Teams](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/bg-p/MicrosoftTeamsBlog)

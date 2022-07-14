@@ -23,4 +23,4 @@ Teams supporta completamente i browser Internet seguenti, con le eccezioni segna
 > [!NOTE]
 > L’esecuzione di Teams in un browser è supportata nei PC e nei Mac che soddisfano i requisiti minimi di [hardware per Microsoft Teams](../hardware-requirements-for-the-teams-app.md). Ad esempio, eseguendo Firefox nel sistema operativo Linux è possibile usare Teams.
 >
-> Nei dispositivi mobili è consigliabile usare l'app Teams. L’app Teams è disponibile negli store Android e iOS. L'esecuzione di Teams in un browser sui dispositivi mobili è supportata, ma molte funzionalità non sono disponibili.
+> Nei dispositivi mobili è consigliabile usare l'app Teams. L’app Teams è disponibile negli store Android e iOS.

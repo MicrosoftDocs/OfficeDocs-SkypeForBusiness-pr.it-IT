@@ -1,7 +1,7 @@
 ---
 title: Alzare la mano nelle riunioni di Teams
-author: SerdarSoysal
-ms.author: serdars
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: raramaia
 ms.topic: article
@@ -9,17 +9,22 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
 ms.collection:
-  - M365-collaboration
-  - Teams_ITAdmin_Help
+- M365-collaboration
+- Teams_ITAdmin_Help
 f1.keywords:
-  - NOCSH
+- NOCSH
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sulla funzione di alzare la mano nelle riunioni di Microsoft Teams.
+ms.openlocfilehash: 35a6133c66b1f4a8d6b7a2315b76e2bc7e0f84c7
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66789131"
 ---
-
 # <a name="raise-your-hand-option-in-teams-meetings"></a>Opzione alzare la mano nelle riunioni di Teams
 
 Durante una riunione di Microsoft Teams, un partecipante può usare l’opzione **Alzare la mano** per attirare l'attenzione del relatore e del moderatore.

@@ -1,27 +1,32 @@
 ---
 title: Problemi di ricezione di messaggi e chiamate su sistemi legacy in Teams
-ms.reviewer: null
-author: SerdarSoysal
-ms.author: serdars
+ms.reviewer: ''
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.date: 05/29/2020
 ms.topic: troubleshooting
 ms.service: msteams
 audience: admin
 ms.collection:
-  - M365-collaboration
+- M365-collaboration
 search.appverid: MET150
 f1.keywords:
-  - NOCSH
-description: Risolvere i problemi relativi alla ricezione di messaggi e chiamate in sistemi legacy
+- NOCSH
+description: Risolvere i problemi relativi alla ricezione di messaggi e chiamate nei sistemi legacy
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 56499af9534c3559cdfa3311a360caa60d06d3d7
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66789521"
 ---
+# <a name="issues-receiving-messages-and-calls-on-legacy-systems"></a>Problemi di ricezione di messaggi e chiamate su sistemi legacy
 
-# <a name="issues-receiving-messages-and-calls-on-legacy-systems"></a>Problemi di ricezione di messaggi e chiamate in sistemi legacy
-
-Gli utenti potrebbero avere problemi a ricevere messaggi o chiamate se usano versioni precedenti di Teams o se hanno eseguito l'accesso con altre applicazioni.
+Gli utenti potrebbero avere problemi a ricevere messaggi o chiamate se usano versioni precedenti di Teams o hanno eseguito l'accesso con altre applicazioni.
 
 ## <a name="legacy-adu-setups"></a>Configurazioni ADU legacy
 
@@ -34,11 +39,11 @@ Gli utenti potrebbero avere problemi a ricevere messaggi o chiamate se usano ver
 > [!NOTE]
 > La precompilazione del nome utente per i nomi che terminano in ".local" o ".corp" è disattivata per impostazione predefinita, non è necessario impostare una chiave del Registro di sistema allo scopo.
 
-Per [altre informazioni, vedere Accedere Microsoft Teams con l'autenticazione](sign-in-teams.md) moderna.
+Per altre informazioni, vedere [Accedere a Microsoft Teams con l'autenticazione moderna](sign-in-teams.md) .
 
-## <a name="skype-token-revocation"></a>Skype revoca del token
+## <a name="skype-token-revocation"></a>Revoca del token skype
 
-Quando si modifica o si reimposta una password, i client meno recenti non riceveranno messaggi e chiamate fino a un'ora. Per risolvere il problema, riavviare l'app o passare ai client più nuovi.
+Quando si modifica o si reimposta una password, i client meno recenti non riceveranno messaggi e chiamate per un massimo di un'ora. Per risolvere questo problema, riavviare l'app o passare ai client più recenti.
 
 
 ## <a name="related-topics"></a>Argomenti correlati

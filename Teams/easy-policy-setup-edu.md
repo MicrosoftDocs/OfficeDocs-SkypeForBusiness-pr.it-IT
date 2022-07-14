@@ -1,7 +1,7 @@
 ---
 title: Teams per l'istruzione Creazione guidata Criteri per applicare facilmente criteri per l'apprendimento sicuro
-author: serdars
-ms.author: serdars
+author: DaniEASmith
+ms.author: danismith
 manager: serdars
 ms.reviewer: shajohri, angch
 ms.topic: article
@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare la procedura guidata per i criteri di Teams per l'istruzione per applicare facilmente criteri per studenti e docenti per mantenere sicuro l'ambiente di apprendimento.
 f1keywords: ''
-ms.openlocfilehash: 245739f06d86459f119d9f5d0a37e67ac4098953
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 833e4b16ca617d06fcc3ace770e2548f6e05a0bb
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675918"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66790231"
 ---
 # <a name="use-the-teams-for-education-policy-wizard-to-easily-apply-policies-for-a-safe-learning-environment"></a>Usare la Creazione guidata Criteri di Teams per l'istruzione per applicare facilmente criteri per un ambiente di apprendimento sicuro
 
@@ -30,9 +30,9 @@ ms.locfileid: "65675918"
 
 La procedura guidata Microsoft Teams per l'istruzione criteri semplifica la gestione dei criteri per studenti e docenti. Usarla per applicare in modo semplice e rapido il set di criteri più importante per la creazione di un'esperienza di apprendimento sicura e produttiva.
 
-I criteri in Teams consentono di controllare il comportamento di Teams nell'ambiente e le caratteristiche disponibili per gli utenti. Ad esempio, esistono criteri di chiamata, criteri di riunione e criteri di messaggistica, per citarne alcuni, e ogni area dei criteri può essere personalizzata in base alle esigenze dell'organizzazione.
+I criteri in Teams consentono di controllare il comportamento di Teams nell'ambiente e le funzionalità disponibili per gli utenti. Ad esempio, esistono criteri di chiamata, criteri di riunione e criteri di messaggistica, per citarne alcuni, e ogni area dei criteri può essere personalizzata in base alle esigenze dell'organizzazione.
 
-Per mantenere un ambiente di apprendimento sicuro e concentrato, è importante impostare criteri per controllare le operazioni che gli studenti possono eseguire in Teams. Ad esempio, è possibile usare i criteri per controllare chi può usare la chat privata e le chiamate private, chi può pianificare le riunioni e quali tipi di contenuto possono essere condivisi. È anche possibile usare i criteri per attivare Teams caratteristiche che arricchiscono l'esperienza di apprendimento.
+Per mantenere un ambiente di apprendimento sicuro e concentrato, è importante impostare criteri per controllare le operazioni che gli studenti possono eseguire in Teams. Ad esempio, è possibile usare i criteri per controllare chi può usare la chat privata e le chiamate private, chi può pianificare le riunioni e quali tipi di contenuto possono essere condivisi. È anche possibile usare i criteri per attivare le funzionalità di Teams che arricchiscono l'esperienza di apprendimento.
 
 Per mantenere sicura l'esperienza di apprendimento, è necessario modificare i criteri sia per gli studenti che per i docenti. I criteri per gli studenti devono essere più restrittivi per ridurre il rischio di ricevere livelli di accesso inappropriati. I docenti e il personale hanno bisogno di un set di criteri separato che può essere più permissivo per consentire loro di avere successo. Ad esempio, consentire ai docenti di pianificare le riunioni e impedire agli studenti di farlo.
 
@@ -56,7 +56,7 @@ La procedura guidata configura i criteri in base al tipo di istituto di istruzio
 
 È sufficiente eseguire la procedura guidata una sola volta. Ai nuovi studenti vengono automaticamente applicate le definizioni dei criteri globali (predefiniti a livello di organizzazione) dalla procedura guidata e ai nuovi membri del personale aggiunti al gruppo selezionato vengono assegnati automaticamente i criteri personalizzati.
 
-Inoltre, ogni volta che viene aggiunta una nuova funzionalità a Teams, il valore predefinito appropriato per l'istruzione obbligatoria dei criteri per tale caratteristica verrà aggiunto automaticamente al valore globale (impostazione predefinita a livello di organizzazione) senza richiedere alcun intervento da parte dell'amministratore. In questo modo è possibile garantire che siano attivati i criteri corretti per mantenere gli studenti al sicuro e impegnati.
+Inoltre, ogni volta che viene aggiunta una nuova funzionalità a Teams, il valore predefinito appropriato per l'istruzione EDU del criterio per tale funzionalità verrà aggiunto automaticamente alla funzionalità Globale (impostazione predefinita a livello di organizzazione) senza richiedere alcun intervento da parte dell'amministratore. In questo modo è possibile garantire che siano attivati i criteri corretti per mantenere gli studenti al sicuro e impegnati.
 
 > [!NOTE]
 > Per un elenco dettagliato delle definizioni dei criteri applicate dalla procedura guidata, vedere [Criteri applicati dalla procedura guidata](#policies-applied-by-the-wizard) .
@@ -69,7 +69,7 @@ Ora, iniziamo!
 
 Seguire questa procedura per eseguire la procedura guidata.
 
-1. Se non si ha familiari Teams, viene avviata automaticamente la procedura guidata. In caso contrario, è possibile avviare la procedura guidata in qualsiasi momento dal dashboard. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Home** e quindi nel riquadro **Configurazione dei criteri semplici per un ambiente di apprendimento sicuro** selezionare **Configurazione rapida**.
+1. Se non si ha familiarita' con Teams, la procedura guidata viene avviata automaticamente. In caso contrario, è possibile avviare la procedura guidata in qualsiasi momento dal dashboard. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Home** e quindi nel riquadro **Configurazione dei criteri semplici per un ambiente di apprendimento sicuro** selezionare **Configurazione rapida**.
 
     :::image type="content" source="media/easy-policy-setup-quick-setup.png" alt-text="Screenshot della procedura guidata nel dashboard.":::
 
@@ -97,9 +97,9 @@ Seguire questa procedura per eseguire la procedura guidata.
 ### <a name="step-1-remove-existing-policy-assignments-that-conflict-with-policies-applied-by-the-wizard"></a>Passaggio 1: Rimuovere le assegnazioni dei criteri esistenti in conflitto con i criteri applicati dalla procedura guidata
 
 > [!IMPORTANT]
-> **Completare questo passaggio solo se sono stati assegnati criteri esistenti a studenti o docenti e personale *prima* di eseguire la procedura guidata**. Se non si ha familiari Teams e non si hanno criteri diversi dai criteri creati dalla procedura guidata, ignorare questa procedura e andare al passaggio 2.
+> **Completare questo passaggio solo se sono stati assegnati criteri esistenti a studenti o docenti e personale *prima* di eseguire la procedura guidata**. Se non si ha familiarita' con Teams e non ci sono criteri diversi dai criteri creati dalla procedura guidata, ignorare questo passaggio e andare al passaggio 2.
 
-In Teams, per un determinato settore dei criteri, un criterio può essere applicato a un utente nei modi seguenti:
+In Teams, per un determinato settore di criteri, un criterio può essere applicato a un utente nei modi seguenti:
 
 - Assegnazione diretta all'utente
 - Assegnazione a un gruppo di cui l'utente è membro
@@ -131,7 +131,7 @@ Ad esempio, è stato assegnato un criterio riunione direttamente ai docenti e gl
 
 La procedura guidata modifica e applica automaticamente [questi criteri](#policies-applied-by-the-wizard). Esistono poche misure aggiuntive che è consigliabile adottare in base alle esigenze dell'istituto per la sicurezza.
 
-Per altri suggerimenti sulla sicurezza, vedere [Proteggere gli studenti durante l'uso di Teams per l'apprendimento a distanza](https://support.microsoft.com/office/keeping-students-safe-while-using-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8#ID0EBBAAA).
+Per altri suggerimenti sulla sicurezza, vedere [Proteggere gli studenti durante l'uso di Teams per l'apprendimento a distanza](https://support.microsoft.com/office/keeping-students-safe-while-using-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8#ID0EBBAAA) .
 
 <a name="polwiz_mc"> </a>
 
@@ -139,7 +139,7 @@ Per altri suggerimenti sulla sicurezza, vedere [Proteggere gli studenti durante 
 
 Attualmente, la procedura guidata applica i criteri consigliati quando viene eseguito. È importante sapere che quando nuovi criteri diventano disponibili in Teams, le impostazioni globali (predefinite a livello di organizzazione) per la sicurezza degli studenti vengono aggiornate automaticamente dalla procedura guidata.
 
-Controllare spesso il [Centro](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter) messaggi (nel interfaccia di amministrazione di Microsoft 365) per mantenersi aggiornati sulle nuove caratteristiche e sulle relative impostazioni dei criteri e dei criteri in Teams.
+Controllare spesso il [Centro messaggi](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter) (nel interfaccia di amministrazione di Microsoft 365) per mantenersi aggiornati sulle nuove funzionalità e sui criteri e le impostazioni dei criteri in Teams.
 
 ## <a name="make-changes-in-the-wizard"></a>Apportare modifiche nella procedura guidata
 
@@ -147,7 +147,7 @@ Controllare spesso il [Centro](https://admin.microsoft.com/AdminPortal/Home?#/Me
 
 Se è necessario apportare modifiche dopo aver eseguito la procedura guidata, è possibile eseguirla di nuovo e modificare le selezioni.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Home** e quindi nel riquadro **Configurazione dei criteri semplici per un ambiente di apprendimento sicuro** selezionare **Cambia**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Home** e quindi nel riquadro **Configurazione dei criteri semplificata per un ambiente di apprendimento sicuro** selezionare **Cambia**.
 2. Da qui, continuare in ogni pagina della procedura guidata per apportare le modifiche. È possibile cambiare il tipo di istituto, i gruppi di docenti e personale a cui assegnare i criteri o entrambi.
 
 La tabella seguente riepiloga cosa accade quando si apporta una modifica alla procedura guidata.
@@ -210,7 +210,7 @@ Ecco un elenco delle definizioni dei criteri globali (predefinite a livello di o
 |||Consenti la pianificazione delle riunioni di canale|Disattivato|Attivato|
 |||Consenti la pianificazione di riunioni private|Disattivato|Attivato|
 |||Consenti registrazione riunione|Attivato|Attivato|
-|||Who possibile registrarsi|Tutti gli utenti dell'organizzazione|Tutti gli utenti dell'organizzazione|
+|||Chi può registrarsi|Tutti gli utenti dell'organizzazione|Tutti gli utenti dell'organizzazione|
 ||Audio & video|Trascrizione|Attivato|Attivato|
 |||Registrazione cloud|Disattivato|Attivato|
 |||Modalità per audio IP|Audio in uscita e in arrivo abilitato|Audio in uscita e in arrivo abilitato|
@@ -221,7 +221,7 @@ Ecco un elenco delle definizioni dei criteri globali (predefinite a livello di o
 ||Condivisione di contenuti|Modalità condivisione schermo|Schermo intero|Schermo intero|
 |||Consenti a un partecipante di fornire o richiedere il controllo|Attivato|Attivato|
 |||Consenti a un partecipante esterno di fornire o richiedere il controllo|Attivato|Attivato|
-|||condivisione PowerPoint|Attivato|Attivato|
+|||Condivisione di PowerPoint|Attivato|Attivato|
 |||Whiteboard|Attivato|Attivato|
 |||Note condivise|Attivato|Attivato|
 ||Partecipanti & guest|Consenti alle persone anonime di avviare una riunione|Disattivato|Attivato|
@@ -234,7 +234,7 @@ Ecco un elenco delle definizioni dei criteri globali (predefinite a livello di o
 |Criteri per gli eventi live||Pianificazione di eventi live|Disattivato|Disattivato|
 |||Trascrizione per i partecipanti|Attivato|Attivato|
 |||Chi può aggiungere eventi live pianificati|Tutti gli utenti dell'organizzazione|Tutti gli utenti dell'organizzazione|
-|||Who possibile registrare un evento|Sempre|Sempre|
+|||Chi può registrare un evento|Sempre|Sempre|
 |Criteri di messaggistica||I proprietari possono eliminare i messaggi inviati|Disattivato|Attivato|
 |||Eliminare i messaggi inviati|Disattivato|Attivato|
 |||Modificare i messaggi inviati|Disattivato|Attivato|
@@ -254,10 +254,10 @@ Ecco un elenco delle definizioni dei criteri globali (predefinite a livello di o
 |Criteri di autorizzazione per le app||App Microsoft|Bloccare app specifiche e consentire a tutti gli altri > Walkie-talkie bloccato|Consenti tutte le app|
 |||App di terze parti|Consenti tutte le app|Consenti tutte le app|
 |||App personalizzate|Consenti tutte le app|Consenti tutte le app|
-|Criteri di configurazione delle app||Upload app personalizzate|Disattivato|Disattivato|
+|Criteri di configurazione delle app||Caricare app personalizzate|Disattivato|Disattivato|
 |||Aggiunta da parte dell'utente|Attivato|Attivato|
 |||App installate|Nessuno|Nessuno|
-|||App aggiunte|Attività, Calendario Teams|Attività, Chat, Teams, Calendario, Chiamate, File
+|||App aggiunte|Attività, Calendario, Teams|Attività, chat, team, calendario, chiamate, file
 |Criteri di chiamata||Effettuare chiamate private|Disattivato|Attivato|
 |||Inoltro di chiamata e squillo simultaneo alle persone dell'organizzazione|Disattivato|Attivato|
 |||Inoltro di chiamata e squillo simultaneo a numeri di telefono esterni|Disattivato|Attivato|
@@ -283,7 +283,7 @@ Ecco un elenco delle definizioni dei criteri personalizzati assegnate ai docenti
 |||Consenti la pianificazione delle riunioni di canale|Attivato|Attivato|
 |||Consenti la pianificazione di riunioni private|Attivato|Attivato|
 |||Consenti registrazione riunione|Attivato|Attivato|
-|||Who possibile registrarsi|Tutti gli utenti dell'organizzazione|Tutti gli utenti dell'organizzazione|
+|||Chi può registrarsi|Tutti gli utenti dell'organizzazione|Tutti gli utenti dell'organizzazione|
 ||Audio & video|Trascrizione|Attivato|Attivato|
 |||Registrazione cloud|Attivato|Attivato|
 |||Modalità per audio IP|Audio in uscita e in arrivo abilitato|Audio in uscita e in arrivo abilitato|
@@ -294,7 +294,7 @@ Ecco un elenco delle definizioni dei criteri personalizzati assegnate ai docenti
 ||Condivisione di contenuti|Modalità condivisione schermo|Schermo intero|Schermo intero|
 |||Consenti a un partecipante di fornire o richiedere il controllo|Attivato|Attivato|
 |||Consenti a un partecipante esterno di fornire o richiedere il controllo|Attivato|Attivato|
-|||condivisione PowerPoint|Attivato|Attivato|
+|||Condivisione di PowerPoint|Attivato|Attivato|
 |||Whiteboard|Attivato|Attivato|
 |||Note condivise|Attivato|Attivato|
 ||Partecipanti & guest|Consenti alle persone anonime di avviare una riunione|Attivato|Attivato|
@@ -307,7 +307,7 @@ Ecco un elenco delle definizioni dei criteri personalizzati assegnate ai docenti
 |Criteri per gli eventi live||Pianificazione di eventi live|Attivato|Attivato|
 |||Trascrizione per i partecipanti|Attivato|Attivato|
 |||Chi può aggiungere eventi live pianificati|Tutti gli utenti dell'organizzazione|Tutti gli utenti dell'organizzazione|
-|||Who possibile registrare un evento|Registra sempre|Registra sempre|
+|||Chi può registrare un evento|Registra sempre|Registra sempre|
 |Criteri di messaggistica||I proprietari possono eliminare i messaggi inviati|Attivato|Attivato|
 |||Eliminare i messaggi inviati|Attivato|Attivato|
 |||Modificare i messaggi inviati|Attivato|Attivato|

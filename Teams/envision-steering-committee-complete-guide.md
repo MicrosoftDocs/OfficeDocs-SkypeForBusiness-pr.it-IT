@@ -1,7 +1,7 @@
 ---
 title: Comitato di orientamento per la distribuzione voce cloud
-author: SerdarSoysal
-ms.author: serdars
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.date: 03/13/2018
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0aee75ce49734dad37d4e75b77c224fa82301f0b
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 46fc7550e5ee1e29b603d4124ffc5d6fe9b45951
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65674678"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66789551"
 ---
 # <a name="steering-committee"></a>Comitato di direzione
 
@@ -66,16 +66,16 @@ Ogni comitato di orientamento ha bisogno di una leadership forte e di ruoli e re
 > [!NOTE]
 > Modificare ruoli e responsabilità in base alla progettazione del team di progetto e dell'organizzazione. Nelle organizzazioni più piccole questi ruoli possono sovrapporsi.
 
-| Titolo | Ruolo | Contattare | Posta elettronica |
+| Titolo | Ruolo | Contattare | Email |
 |----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-----------|
 | Sponsor esecutivo | Sostenere il progetto, assicurarsi che la sua direzione rimanga in linea con la visione dell'organizzazione. Servire come autorità definitiva per prendere decisioni su cui il comitato non può essere d'accordo. | | |
 | Responsabili delle decisioni aziendali | Sostenere il progetto, assicurarsi che la sua direzione rimanga in linea con la visione dell'organizzazione | | |
 | Architetto | Assicurarsi che le decisioni tecnologiche siano raggiungibili e allineate ai risultati di business concordati. | | |
-| Core Project Team | Fornire dettagli su qualsiasi componente specifico, tecnico o non tecnico (ad esempio l'adozione e la gestione delle modifiche) | | |
+| Team di progetto principale | Fornire dettagli su qualsiasi componente specifico, tecnico o non tecnico (ad esempio l'adozione e la gestione delle modifiche) | | |
 | Quality Champion | Essere responsabili di mettere insieme metriche di qualità. | | |
-| Program/Project Manager | Assumere la responsabilità della presentazione e della raccolta di feedback da incorporare nel progetto. | | |
+| Programma/Project Manager | Assumere la responsabilità della presentazione e della raccolta di feedback da incorporare nel progetto. | | |
 | Partner Account Team | Fornire feedback dal punto di vista del partner da una prospettiva più ampia, da altre attività dei partner. | | |
-| Team Project partner | Fornire feedback dal punto di vista del partner in merito alla consegna del progetto | | |
+| Team di progetto partner | Fornire feedback dal punto di vista del partner in merito alla consegna del progetto | | |
 
 ## <a name="schedule-steering-committee-meetings"></a>Pianificare riunioni del comitato di direzione 
 
@@ -88,13 +88,13 @@ Quando si pianifica una riunione di comitato, prendere in considerazione la freq
 
 ### <a name="prepare-for-the-meeting"></a>Prepararsi per la riunione
 
-Per sfruttare al meglio il tempo di tutti, è necessario prepararsi per la riunione. Il team di base può iniziare a preparare il materiale per la riunione del comitato di direzione. È possibile creare una presentazione PowerPoint per prepararsi alla riunione.
+Per sfruttare al meglio il tempo di tutti, è necessario prepararsi per la riunione. Il team di base può iniziare a preparare il materiale per la riunione del comitato di direzione. È possibile creare una presentazione di PowerPoint per prepararsi alla riunione.
 
 Le risorse seguenti devono essere completate e incluse nella presentazione per la riunione:
 
 -   Follow-up sulle attività precedenti del comitato direttivo
 
--   Comitato di orientamento PowerPoint, relazione sullo stato dei progetti di alto livello
+-   Comitato di orientamento PowerPoint, rapporto di stato generale del progetto
 
     -   Esaminare il progetto a partire da una revisione di tipo mensile,trimestrale/annuale.
 
@@ -128,7 +128,7 @@ Le risorse seguenti devono essere completate e incluse nella presentazione per l
 
         -   Identificare i passaggi successivi e l'assistenza che potrebbe essere richiesta ai membri del comitato.
 
--   Panoramica sulla qualità: usare le indicazioni [di Preparare la rete per Teams](prepare-network.md).
+-   Panoramica sulla qualità: usare le indicazioni di [Preparare la rete per Teams](prepare-network.md).
 
     -   Preparati a spiegare in modo approfondito i risultati di questi report di qualità e a includere consigli per correggere eventuali problemi rilevati.
 

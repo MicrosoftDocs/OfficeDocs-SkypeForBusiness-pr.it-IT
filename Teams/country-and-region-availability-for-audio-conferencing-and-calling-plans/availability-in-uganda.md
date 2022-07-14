@@ -1,7 +1,7 @@
 ---
 title: Disponibilità in Uganda
-author: SerdarSoysal
-ms.author: serdars
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: fafan
 ms.topic: reference
@@ -23,19 +23,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Uganda.
-ms.openlocfilehash: b7c9dc0f5d785fc5e301682926784b88d0daeb09
-ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+description: Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Uganda.
+ms.openlocfilehash: 4e08fc79479db944188acf9e7516a5b999aa65e6
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2022
-ms.locfileid: "62389710"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66789971"
 ---
 # <a name="availability-in-uganda"></a>Disponibilità in Uganda
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Uganda.
+Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Uganda.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -43,7 +43,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì. Solo pagamento al minuto.  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> | No |
-|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> | Richiede crediti di comunicazione <br/> |
+|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> | Richiede crediti comunicazioni <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
 
@@ -62,17 +62,17 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
 
-Se Piani chiamate non sono disponibili per l'acquisto, vedere [Opzioni di connettività PSTN](../pstn-connectivity.md) per tutte le opzioni disponibili.
+Se i Piani per chiamate non sono disponibili per l'acquisto, vedi [Opzioni di connettività PSTN](../pstn-connectivity.md) per tutte le opzioni disponibili.
    
-## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri a pedaggio e a numero verde per i servizi
+## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Non geografiche. I numeri di telefono non sono associati a una località o a una città specifica. <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Non geografiche ([su richiesta](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)) <br/> |
-|Sono disponibili numeri a numero verde?  <br/> |No  <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Non geografico. I numeri di telefono non sono associati a una località o a una città specifica. <br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |Non geografico ([su richiesta](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)) <br/> |
+|Sono disponibili numeri verdi?  <br/> |No  <br/> |
    
- Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere numeri di telefono di servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
+ Se vuoi ottenere numeri verdi e a pagamento per audioconferenze, operatori automatici e code di chiamata, vedi [Recupero di numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

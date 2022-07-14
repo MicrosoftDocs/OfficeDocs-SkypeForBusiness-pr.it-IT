@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Scopri come utilizzare e gestire i canali condivisi in Microsoft Teams.
-ms.openlocfilehash: 11abe6245dea7ee72bc2f71b412addbed5aa6e30
-ms.sourcegitcommit: e38776625a3623216b0d5f092fffaff67519b1a6
+ms.openlocfilehash: 9a547963854f981e723d29b1472c2bda808b90c2
+ms.sourcegitcommit: 8fc2d6a824e1e119f54ea2347bc5c10cc076956d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057056"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773765"
 ---
 # <a name="shared-channels-in-microsoft-teams"></a>Canali condivisi in Microsoft Teams
 
@@ -94,7 +94,7 @@ La tabella seguente illustra le azioni che i proprietari, i membri e gli utenti 
 
 ## <a name="shared-channel-sharepoint-sites"></a>Siti di SharePoint del canale condiviso
 
-Ogni canale condiviso ha [il proprio sito di SharePoint](/SharePoint/teams-connected-sites). Il sito separato serve a garantire che l'accesso ai file del canale condiviso sia limitato ai soli membri del canale condiviso. Questi siti vengono creati con una raccolta documenti per impostazione predefinita e possono essere facilmente migliorate per ottenere siti completi tramite l'[interfaccia di gestione dei siti](https://support.office.com/article/A2F2A5C2-093D-4897-8B7F-37F86D83DF04). Ogni sito viene creato nella stessa area geografica del sito del team padre. Questi siti semplificati hanno un ID modello personalizzato, "TEAMCHANNEL#0", per semplificare la gestione con PowerShell e API Graph. 
+Ogni canale condiviso ha [il proprio sito di SharePoint](/SharePoint/teams-connected-sites). Il sito separato serve a garantire che l'accesso ai file del canale condiviso sia limitato ai soli membri del canale condiviso. Questi siti vengono creati con una raccolta documenti per impostazione predefinita e possono essere facilmente migliorate per ottenere siti completi tramite l'[interfaccia di gestione dei siti](https://support.office.com/article/A2F2A5C2-093D-4897-8B7F-37F86D83DF04). Ogni sito viene creato nella stessa area geografica del sito del team padre. Questi siti semplificati hanno un ID modello personalizzato, "TEAMCHANNEL#1", per semplificare la gestione con PowerShell e API Graph. 
 
 Un sito di canale condiviso eredita l'etichetta di riservatezza del team padre. Questo vale anche se il canale viene condiviso direttamente con un altro team.
 

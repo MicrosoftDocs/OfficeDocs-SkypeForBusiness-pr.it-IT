@@ -1,7 +1,7 @@
 ---
 title: Bloccare le chiamate in ingresso in Microsoft Teams
-ms.author: serdars
-author: SerdarSoysal
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.topic: article
 ms.tgt.pltfrm: cloud
@@ -15,18 +15,18 @@ appliesto:
 ms.localizationpriority: medium
 ms.custom: ''
 description: Informazioni su come usare PowerShell per gestire il blocco delle chiamate in ingresso.
-ms.openlocfilehash: 25b271cbcf62acd732463e9dd34d4189479d2417
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 217a4fe6770d916e9013acf7f90ebf6a5556b837
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65674388"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66789601"
 ---
 # <a name="block-inbound-calls"></a>Bloccare le chiamate in ingresso
 
-Piani per chiamate Microsoft, Routing diretto e Connessione con operatore supportano il blocco delle chiamate in ingresso dalla rete PSTN (Public Switched Telephone Network). Questa caratteristica consente all'amministratore di definire un elenco di modelli numerici a livello globale tenant in modo che l'ID chiamante di ogni chiamata PSTN in arrivo al tenant possa essere confrontato con l'elenco per individuare una corrispondenza. Se viene effettuata una corrispondenza, una chiamata in arrivo viene rifiutata.
+I piani per chiamate Microsoft, il routing diretto e la connessione operatore supportano il blocco delle chiamate in ingresso dalla rete PSTN (Public Switched Telephone Network). Questa caratteristica consente all'amministratore di definire un elenco di modelli numerici a livello globale tenant in modo che l'ID chiamante di ogni chiamata PSTN in arrivo al tenant possa essere confrontato con l'elenco per individuare una corrispondenza. Se viene effettuata una corrispondenza, una chiamata in arrivo viene rifiutata.
 
-Questa funzionalità di blocco delle chiamate in ingresso funziona solo per le chiamate in ingresso provenienti dalla rete PSTN e funziona solo a livello globale tenant. I singoli utenti Teams non possono manipolare questo elenco. Il client Teams consente ai singoli utenti di bloccare le chiamate PSTN. Per informazioni su come gli utenti finali possono implementare il blocco delle chiamate, vedere [Gestire le impostazioni delle chiamate in Teams](https://support.microsoft.com/office/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f).
+Questa funzionalità di blocco delle chiamate in ingresso funziona solo per le chiamate in ingresso provenienti dalla rete PSTN e funziona solo a livello globale tenant. I singoli utenti di Teams non possono manipolare questo elenco. Il client Teams consente ai singoli utenti di bloccare le chiamate PSTN. Per informazioni su come gli utenti finali possono implementare il blocco delle chiamate, vedere [Gestire le impostazioni delle chiamate in Teams](https://support.microsoft.com/office/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f).
 
 > [!NOTE]
 > I chiamanti bloccati possono riscontrare comportamenti leggermente diversi quando sono stati bloccati. Il comportamento si basa sul modo in cui il gestore del chiamante bloccato gestisce la notifica che la chiamata non può essere completata correttamente. Alcuni esempi possono includere un messaggio del corriere che indica che la chiamata non può essere completata come chiamata effettuata o semplicemente che è stata annullata.

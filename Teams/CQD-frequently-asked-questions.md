@@ -1,7 +1,7 @@
 ---
 title: Call Quality Dashboard (CQD) Domande frequenti
-ms.author: serdars
-author: SerdarSoysal
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: mikedav, siunies, gageames
 ms.topic: article
@@ -20,13 +20,13 @@ f1.keywords:
 ms.custom:
 - Reporting
 - seo-marvel-apr2020
-description: Leggi le domande frequenti e le risposte su Microsoft Teams Call Quality Dashboard (CQD).
-ms.openlocfilehash: f320bab549ee322c1254babd0feb49cc24419215
-ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
+description: Leggi le domande frequenti e le risposte su Call Quality Dashboard (CQD) di Microsoft Teams.
+ms.openlocfilehash: 862967138321b1855f2fdc5b0c8b6ce6caca887f
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65823205"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66789391"
 ---
 # <a name="call-quality-dashboard-cqd-frequently-asked-questions-faq"></a>Call Quality Dashboard (CQD) Domande frequenti
 
@@ -40,13 +40,13 @@ ms.locfileid: "65823205"
 
 [Sto provando a usare Call Quality Dashboard per i report sul tipo di utilizzo e trovo che alcuni dei dati sono incompleti. Perché?](#im-trying-to-use-cqd-for-usage-type-reports-and-find-that-some-of-the-data-is-incomplete----why-is-that)
 
-[Perché vengono visualizzate informazioni Skype for Business in Call Quality Dashboard quando si filtra solo per Teams?](#why-am-i-seeing-skype-for-business-information-in-cqd-when-ive-filtered-for-teams-only)
+[Perché vengono visualizzate Skype for Business informazioni in Call Quality Dashboard quando si filtra solo per Teams?](#why-am-i-seeing-skype-for-business-information-in-cqd-when-ive-filtered-for-teams-only)
 
 [Perché i report personalizzati restituiscono un massimo di 10.000 righe solo quando è necessario aggiungere più voci?](#why-do-my-custom-reports-only-return-a-maximum-of-10000-rows-when-i-know-there-should-be-more-entries)
 
 [Perché Wi-Fi connessioni VPN vengono visualizzate come cablate anziché come Wi-Fi?](#why-do-wi-fi-vpn-connections-show-as-wired-instead-of-wi-fi)
 
-[Ho attivato la registrazione basata su criteri in Teams e ora le chiamate peer-to-peer vengono contrassegnate come Conferenze: cosa è successo?](#i-turned-on-policy-based-recording-in-teams-and-now-peer-to-peer-calls-are-being-marked-as-conferences----what-happened)
+[Ho attivato la registrazione basata sui criteri in Teams e ora le chiamate peer-to-peer vengono contrassegnate come Conferenze: cosa è successo?](#i-turned-on-policy-based-recording-in-teams-and-now-peer-to-peer-calls-are-being-marked-as-conferences----what-happened)
 
 ### <a name="why-does-cqd-mark-a-call-as-good-if-one-or-more-meeting-participants-had-a-poor-experience"></a>Perché Call Quality Dashboard contrassegna una chiamata come "Buona" se uno o più partecipanti alla riunione hanno avuto un'esperienza scadente?
 
@@ -83,20 +83,20 @@ Per calcolare il numero di chiamate e le misure di conteggio utenti, viene esegu
 
 Questi ruoli di amministratore possono accedere a Call Quality Dashboard, ma non possono visualizzare euii (informazioni identificabili per l'utente finale):
 
-- Microsoft 365 Lettore di report
+- Lettore di report di Microsoft 365
 - Specialista del supporto tecnico per le comunicazioni di Teams
 
 Per altre informazioni sui ruoli che possono accedere a Call Quality Dashboard, incluso EUII, vedere [Assegnare ruoli per l'accesso a Call Quality Dashboard](turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd).
 
 ### <a name="im-trying-to-use-cqd-for-usage-type-reports-and-find-that-some-of-the-data-is-incomplete----why-is-that"></a>Sto provando a usare Call Quality Dashboard per i report sul tipo di utilizzo e trovo che alcuni dei dati sono incompleti. Perché?
 
-Gli strumenti di gestione della qualità delle chiamate, come Call Analytics, CallRecord API Graph e Analisi in tempo reale, si basano sulla telemetria diagnostica. Le informazioni mostrate in Teams strumenti di gestione della qualità delle chiamate sono complete solo quanto i dati di telemetria ricevuti dai client che partecipano a una chiamata. Esistono diversi motivi per cui potrebbe non ricevere la telemetria completa, ad esempio interruzioni di rete o [configurazioni non corrette del firewall o del proxy](/microsoft-365/enterprise/urls-and-ip-address-ranges). Stiamo continuando a lavorare per migliorare l'affidabilità e la resilienza con cui Teams client forniscono telemetria al servizio.
+Gli strumenti di gestione della qualità delle chiamate, come Call Analytics, CallRecord API Graph e Analisi in tempo reale, si basano sulla telemetria diagnostica. Le informazioni visualizzate negli strumenti di gestione della qualità delle chiamate di Teams sono complete solo quanto i dati di telemetria ricevuti dai clienti che partecipano a una chiamata. Esistono diversi motivi per cui potrebbe non ricevere la telemetria completa, ad esempio interruzioni di rete o [configurazioni non corrette del firewall o del proxy](/microsoft-365/enterprise/urls-and-ip-address-ranges). Stiamo continuando a lavorare per migliorare l'affidabilità e la resilienza con cui i client di Teams forniscono telemetria al servizio.
 
-Tenendo presente questo aspetto, non supportiamo l'uso di strumenti di gestione della qualità delle chiamate per la creazione di report sull'utilizzo. Non sono progettati per supportare né sono destinati a questi tipi di scenari di creazione di report e molte statistiche di utilizzo non lo sono e non saranno disponibili all'interno di questi strumenti. Teams Amministrazione Center offre una serie di [report sull'utilizzo](teams-analytics-and-reports/teams-reporting-reference.md) e un [report presenze alle riunioni](teams-analytics-and-reports/meeting-attendance-report.md) è disponibile direttamente dal client Teams.
+Tenendo presente questo aspetto, non supportiamo l'uso di strumenti di gestione della qualità delle chiamate per la creazione di report sull'utilizzo. Non sono progettati per supportare né sono destinati a questi tipi di scenari di creazione di report e molte statistiche di utilizzo non lo sono e non saranno disponibili all'interno di questi strumenti. Teams Amministrazione Center offre una serie di [report sull'utilizzo](teams-analytics-and-reports/teams-reporting-reference.md) e un [report presenze alle riunioni](teams-analytics-and-reports/meeting-attendance-report.md) è disponibile direttamente dal client teams.
 
-### <a name="why-am-i-seeing-skype-for-business-information-in-cqd-when-ive-filtered-for-teams-only"></a>Perché vengono visualizzate informazioni Skype for Business in Call Quality Dashboard quando si filtra solo per Teams?
+### <a name="why-am-i-seeing-skype-for-business-information-in-cqd-when-ive-filtered-for-teams-only"></a>Perché vengono visualizzate Skype for Business informazioni in Call Quality Dashboard quando si filtra solo per Teams?
 
-Quando si filtra per Teams solo nei report di Call Quality Dashboard (isTeams = 1), si filtrano per tutte le chiamate in cui il *primo endpoint* è Teams. Se il *secondo endpoint* è Skype for Business, tali informazioni verranno visualizzate nel report di Call Quality Dashboard. A seconda degli scenari dei clienti, Call Quality Dashboard può includere chiamate Skype for Business Server 2019 quando è configurato [Call Data Connector](/skypeforbusiness/hybrid/plan-call-data-connector). Può anche includere Skype chiamate Bot (AA, CVI, VDI), eventi live e chiamate PSTN.
+Quando si filtra per Teams solo nei report di Call Quality Dashboard (isTeams = 1), si filtrano per tutte le chiamate in cui il *primo endpoint* è Teams. Se il *secondo endpoint* è Skype for Business, tali informazioni verranno visualizzate nel report di Call Quality Dashboard. A seconda degli scenari dei clienti, Call Quality Dashboard può includere chiamate Skype for Business Server 2019 quando è configurato [Call Data Connector](/skypeforbusiness/hybrid/plan-call-data-connector). Possono anche includere chiamate Bot Skype (AA, CVI, VDI), eventi live e chiamate PSTN.
 
 È possibile rimuovere Skype for Business informazioni dalle query filtrando in base a dimensioni come *First User Agent Category* e *Second User Agent Category*. È anche possibile usare *la coppia di categorie agente utente* , che combina le dimensioni Primo e Secondo in un singolo filtro.
 
@@ -108,9 +108,9 @@ Call Quality Dashboard è progettato per le query di dati riepilogate e non è p
 
 Si tratta di un comportamento previsto. Il fornitore di VPN ha creato una scheda Ethernet virtuale che viene trattata come una connessione cablata. Poiché non è etichettato correttamente, il sistema operativo non sa che si tratta di una connessione Wi-Fi e la segnala come cablata.
 
-### <a name="i-turned-on-policy-based-recording-in-teams-and-now-peer-to-peer-calls-are-being-marked-as-conferences----what-happened"></a>Ho attivato la registrazione basata su criteri in Teams e ora le chiamate peer-to-peer vengono contrassegnate come Conferenze: cosa è successo?
+### <a name="i-turned-on-policy-based-recording-in-teams-and-now-peer-to-peer-calls-are-being-marked-as-conferences----what-happened"></a>Ho attivato la registrazione basata sui criteri in Teams e ora le chiamate peer-to-peer vengono contrassegnate come Conferenze: cosa è successo?
 
-Si tratta di un comportamento previsto quando la registrazione basata su criteri è abilitata in Microsoft Teams. La registrazione basata su criteri usa un bot di registratore Teams distribuito in Microsoft Azure per acquisire il contenuto della riunione ai fini della conformità. Nella gestione della qualità delle chiamate, "peer-to-peer" è una descrizione del flusso del traffico multimediale, non dell'interazione tra gli utenti. Poiché un bot registratore è a sua volta parte della chiamata, la chiamata non è più peer-to-peer, ma una chiamata a più parti. Le chiamate a più parti vengono classificate come Conferenze per Microsoft Teams, quindi verranno indicate come tali quando si visualizzano queste chiamate in Call Quality Dashboard e in altri strumenti per la qualità delle chiamate.
+Si tratta di un comportamento previsto quando è abilitata la registrazione basata su criteri in Microsoft Teams. La registrazione basata su criteri usa un bot registratore di Teams distribuito in Microsoft Azure per acquisire i contenuti delle riunioni ai fini della conformità. Nella gestione della qualità delle chiamate, "peer-to-peer" è una descrizione del flusso del traffico multimediale, non dell'interazione tra gli utenti. Poiché un bot registratore è a sua volta parte della chiamata, la chiamata non è più peer-to-peer, ma una chiamata a più parti. Le chiamate multi-party vengono classificate come conferenze da Microsoft Teams, quindi verranno indicate come tali quando si visualizzano queste chiamate in Call Quality Dashboard e in altri strumenti per la qualità delle chiamate.
 
 ## <a name="related-articles"></a>Articoli correlati
 
@@ -120,7 +120,7 @@ Si tratta di un comportamento previsto quando la registrazione basata su criteri
 
 [Configurare Call Quality Dashboard (CQD)](turning-on-and-using-call-quality-dashboard.md)
 
-[Upload dati del tenant e dell'edificio](CQD-upload-tenant-building-data.md)
+[Caricare i dati di tenant e building](CQD-upload-tenant-building-data.md)
 
 [Call Quality Dashboard - Dati e report](CQD-data-and-reports.md)
 

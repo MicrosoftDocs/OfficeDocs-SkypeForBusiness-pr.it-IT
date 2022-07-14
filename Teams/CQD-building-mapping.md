@@ -1,7 +1,7 @@
 ---
 title: Creare una mappa dell'edificio per Call Quality Dashboard (CQD)
-ms.author: serdars
-author: SerdarSoysal
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: mikedav, siunies, gageames
 ms.topic: article
@@ -19,29 +19,29 @@ f1.keywords:
 ms.custom:
 - Reporting
 - seo-marvel-apr2020
-description: Informazioni su come creare una mappa dell'edificio che è possibile usare per caricare i dati del tenant e della creazione in Call Quality Dashboard (CQD).
-ms.openlocfilehash: a119324090d05b593eb1ed66f41efbb7a5bd7a0a
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Informazioni su come creare una mappa dell'edificio che è possibile usare per caricare i dati del tenant e dell'edificio in Call Quality Dashboard (CQD).
+ms.openlocfilehash: 71d1872bbd81769f9a49f4ca9f6ac9aae641252f
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58634100"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66789821"
 ---
 # <a name="create-a-building-map-for-call-quality-dashboard-cqd"></a>Creare una mappa dell'edificio per Call Quality Dashboard (CQD)
 
-In una Microsoft Teams o Skype for Business online, tutti i client sono esterni. Di conseguenza, per impostazione predefinita, tutti i client vengono segnalati come esterni in Call Quality Dashboard (CQD), indipendentemente dal fatto che il client sia connesso a una rete aziendale interna.
+In una distribuzione di Microsoft Teams o Skype for Business Online, tutti i client sono esterni. Di conseguenza, per impostazione predefinita, tutti i client vengono segnalati come esterni in Call Quality Dashboard (CQD), indipendentemente dal fatto che il client sia connesso a una rete aziendale interna.
 
-Quando si lavora con CQD, è necessario conoscere la posizione di un endpoint e se è stato connesso a una rete che è possibile gestire o a una rete che non è possibile gestire, presupponendo che sia possibile migliorare solo le reti che è possibile gestire. Caricando le informazioni sulla subnet e l'edificio in CQD, si abilita CQD per determinare se l'endpoint era connesso a una rete interna (gestita) o a una rete esterna (non gestita). Ecco perché è importante creare una mappa dell'edificio per l'organizzazione e [caricarla in CQD.](CQD-upload-tenant-building-data.md)
+Quando si lavora con Call Quality Dashboard, è necessario conoscere la posizione di un endpoint e sapere se è stato connesso a una rete gestibile o non gestibile, presupponendo che sia possibile migliorare solo le reti che è possibile gestire. Caricando le informazioni su subnet e building in Call Quality Dashboard, si abilita Call Quality Dashboard per determinare se l'endpoint era connesso a una rete interna (gestita) o a una rete esterna (non gestita). Ecco perché è importante creare una mappa di creazione per l'organizzazione e [caricarla in Call Quality Dashboard](CQD-upload-tenant-building-data.md).
 
-## <a name="building-mapping-tools"></a>Strumenti di mappatura dell'edificio
+## <a name="building-mapping-tools"></a>Creazione di strumenti di mapping
 
-Esistono molti modi per mappare le subnet dell'organizzazione. Se serve assistenza, è possibile usare il modulo di PowerShell CQDTools descritto in questo [post di blog.](https://aka.ms/cqdtools) Questi strumenti si basano su PowerShell e usano Siti e servizi di Active Directory (AD) e i servizi MICROSOFT DHCP per precompilare il file di edificio. Questi strumenti consentono di eseguire le attività seguenti:
+Esistono molti modi per eseguire il mapping delle subnet dell'organizzazione. Se hai bisogno di aiuto, puoi usare il modulo powershell CQDTools descritto in questo [post di blog](https://aka.ms/cqdtools). Questi strumenti sono basati su PowerShell e usano siti e servizi di Active Directory (AD) e servizi DHCP Microsoft per pre-popolare il file di compilazione. Questi strumenti aiuteranno a eseguire le attività seguenti:
 
-1. Eseguire query su Siti e servizi di Active Directory e creare un file di edificio in base alle informazioni contenute all'interno.
-1. Eseguire una query su uno o più server MICROSOFT DHCP per estrarre le informazioni sulla subnet e creare automaticamente un file di edificio.
-1. Convalidare un file di edificio esistente, verificando la presenza di duplicati e sovrapposizioni.
-1. Trovare subnet non mappate in CQD.
+1. Eseguire query su siti e servizi active directory e creare un file di creazione basato sulle informazioni contenute in.
+1. Eseguire una query su uno o più server DHCP Microsoft per estrarre le informazioni sulla subnet e creare automaticamente un file di edificio.
+1. Convalidare un file di compilazione esistente, verificando la presenza di duplicati e sovrapposizioni.
+1. Trovare subnet non mappate in Call Quality Dashboard.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Upload tenant e di creazione dati in CQD](CQD-upload-tenant-building-data.md)
+[Caricare i dati del tenant e dell'edificio in Call Quality Dashboard](CQD-upload-tenant-building-data.md)
