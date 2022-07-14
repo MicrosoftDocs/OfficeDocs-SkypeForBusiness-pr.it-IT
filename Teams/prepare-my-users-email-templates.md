@@ -1,14 +1,14 @@
 ---
-title: Modelli di messaggio di posta elettronica di notifica utente per l'implementazione del sistema telefonico online
-author: SerdarSoysal
-ms.author: serdars
+title: Modelli di messaggi e-mail di notifica utente per l'implementazione del sistema telefonico online
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.date: 03/31/2018
 ms.topic: article
 ms.service: msteams
 ms.reviewer: rowille
 audience: admin
-description: Usare i modelli per inviare messaggi di posta elettronica agli utenti mentre si implementano le funzionalità vocali cloud in Teams o Skype for Business.
+description: Usare i modelli per inviare messaggi di posta elettronica agli utenti quando si implementano funzionalità vocali cloud in Teams o Skype for Business.
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
@@ -16,20 +16,20 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d709dbbf52746c5eb3a264f6423133ac26b3c744
-ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+ms.openlocfilehash: 515dcd3438db958eb09554671ad1fd28195c720d
+ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2022
-ms.locfileid: "62393469"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66794574"
 ---
 # <a name="facilitate-user-adoption-of-your-new-online-phone-system"></a>Facilitare l'adozione da parte degli utenti del nuovo sistema telefonico online
 
-Un telefono può essere la linea di vita di un utente. Il passaggio da un sistema telefonico tradizionale a un sistema telefonico online rappresenta un cambiamento significativo nel modo in cui gli utenti lavorano e può influire negativamente sulla produttività. Il tempo necessario per informare, guidare e supportare gli utenti attraverso questa modifica può contribuire a garantire un'esperienza utente positiva e massimizzare il ritorno sull'investimento.
+Un telefono può essere la linea di vita di un utente. Il passaggio da un sistema telefonico tradizionale a un sistema telefonico online rappresenta un cambiamento significativo nel modo di lavorare degli utenti e può influire negativamente sulla produttività. Prendersi del tempo per informare, guidare e supportare gli utenti attraverso questo cambiamento può contribuire a garantire un'esperienza utente positiva e massimizzare il ritorno sugli investimenti.
 
-Questo articolo contiene modelli di posta elettronica personalizzabili per informare gli utenti del nuovo sistema telefonico. Personalizzare e inviare i messaggi di posta elettronica appropriati per allinearsi alla distribuzione vocale specifica. Abbiamo usato le parentesi quadre per indicare le sezioni per semplificare la personalizzazione, ma è consigliabile aggiungere messaggi specifici dell'organizzazione per rendere l'annuncio più pertinente per gli utenti. Se applicabile per la distribuzione, sostituire tutti i riferimenti a "Teams" con "Skype for Business".
+Questo articolo contiene modelli di posta elettronica personalizzabili per informare gli utenti del nuovo sistema telefonico. Personalizzare e inviare i messaggi di posta elettronica appropriati per allinearsi alla distribuzione vocale specifica. Abbiamo usato le parentesi quadre per indicare sezioni per semplificare la personalizzazione, ma è consigliabile aggiungere messaggi specifici dell'organizzazione per rendere l'annuncio più pertinente per gli utenti. Se applicabile per la distribuzione, sostituire tutti i riferimenti a "Teams" con "Skype for Business".
 
-## <a name="email-number-1-send-three-weeks-before-launch"></a>Numero di posta elettronica 1: Inviare tre settimane prima del lancio
+## <a name="email-number-1-send-three-weeks-before-launch"></a>Email numero 1: inviare tre settimane prima del lancio
 
 Riga dell'oggetto:
 
@@ -94,7 +94,7 @@ If you have questions concerning this change, contact <INSERT NAME/EMAIL>.
 <INSERT NAME OF EXECUTIVE SPONSOR>
 ```
 
-## <a name="email-number-2-send-one-week-before-launch"></a>Numero di posta elettronica 2: Inviare una settimana prima del lancio
+## <a name="email-number-2-send-one-week-before-launch"></a>Email numero 2: Inviare una settimana prima del lancio
 
 Riga dell'oggetto:
 
@@ -138,7 +138,7 @@ Regards,
 <INSERT NAME OF DEPARTMENT MANAGER>
 ```
 
-## <a name="email-number-3-send-on-launch-day"></a>Numero di posta elettronica 3: Invia il giorno del lancio
+## <a name="email-number-3-send-on-launch-day"></a>Email numero 3: Invia il giorno del lancio
 
 Riga dell'oggetto:
 
@@ -175,7 +175,7 @@ Regards,
 <INSERT NAME OF DEPARTMENT MANAGER OR EXECUTIVE SPONSOR>
 ```
 
-## <a name="email-number-4-send-two-weeks-after-launch"></a>Numero di posta elettronica 4: Inviare due settimane dopo il lancio
+## <a name="email-number-4-send-two-weeks-after-launch"></a>Email numero 4: Inviare due settimane dopo il lancio
 
 Riga dell'oggetto:
 

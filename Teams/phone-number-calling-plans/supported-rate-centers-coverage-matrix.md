@@ -1,32 +1,37 @@
 ---
-title: Centri tariffari e copertura supportati per i piani per chiamate
-ms.author: serdars
-author: SerdarSoysal
+title: Centri tariffe supportati e copertura per i piani per chiamate
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
-ms.reviewer: 'davlick, julienp'
+ms.reviewer: davlick, julienp
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 search.appverid: MET150
 audience: Admin
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 ms.localizationpriority: medium
 f1.keywords:
-  - CSH
+- CSH
 ms.custom:
-  - Calling Plans
-description: Elenca i centri tariffari e la copertura supportati per i piani per chiamate.
+- Calling Plans
+description: Elenca i centri di tariffa e la copertura supportati per i piani per chiamate.
+ms.openlocfilehash: cd991c55c62eeba620d7a8d7f9f75cb7344507a9
+ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66794104"
 ---
+# <a name="supported-rate-centers-and-coverage-for-calling-plans"></a>Centri tariffe supportati e copertura per i piani per chiamate
 
-# <a name="supported-rate-centers-and-coverage-for-calling-plans"></a>Centri tariffari e copertura supportati per i piani per chiamate
+Questo articolo elenca i centri tariffe supportati e la copertura per i Piani per chiamate in America del Nord. Un centro tariffe è il termine di settore per un'area geografica che tradizionalmente definisce i limiti per le chiamate locali, le tariffe di fatturazione e l'assegnazione di numeri di telefono per la rete PSTN (Public Switched Telephone Network). In molti casi, con l'industria che passa a piani inclusivi o gruppi di minuti, il centro tariffe è diventato meno importante per la fatturazione, ma è ancora usato da alcuni.
 
-Questo articolo elenca i centri tariffari e la copertura supportati per i piani per chiamate in Nord America. Un centro tariffe è il termine di settore per un'area geografica che definisce tradizionalmente i limiti per le chiamate locali, le tariffe di fatturazione e l'assegnazione di numeri di telefono per la rete PSTN (Public Switched Telephone Network). In molti casi, con il passaggio del settore a piani o pacchetti di minuti inclusivi, il centro tariffaria è diventato meno importante per la fatturazione, ma è ancora usato da alcuni.
+La [matrice dei centri di tariffa e copertura supportati per America del Nord](https://www.microsoft.com/download/details.aspx?id=102534) foglio di calcolo elenca i centri tariffe supportati. Quando ricevi nuovi numeri di telefono o trasferisci numeri di telefono dal provider esistente a Teams, scarica il foglio di calcolo e usalo per cercare i centri tariffe. Se non conosci il tuo centro tariffe, puoi cercarlo su Internet in base ai tuoi prefisso (NXX) e ai prefissi (NXX).
+Se ricevi nuovi numeri e non abbiamo i numeri richiesti, cercheremo di offrirti numeri dallo stesso centro tariffe.
 
-Il [foglio di calcolo Centri tariffa supportati e la matrice di copertura per il Nord America](https://www.microsoft.com/download/details.aspx?id=102534) elenca i centri di tariffa supportati. Quando si stanno ricevendo nuovi numeri di telefono o quando si trasferiscono numeri di telefono dal provider esistente a Teams, scaricare il foglio di calcolo e usarlo per cercare i centri tariffa. Se non si conosce il centro tariffa, è possibile cercarlo su Internet in base ai codici di area (NPA) e ai prefissi (NXX).
-Se si stanno ricevendo nuovi numeri e non sono disponibili i numeri richiesti, si tenterà di offrirti numeri dallo stesso centro tariffa.
-
-Se si stanno ricevendo nuovi numeri e non sono disponibili i numeri richiesti, verranno offerti numeri dallo stesso centro tariffa.
+Se ricevi nuovi numeri e non abbiamo i numeri richiesti, ti offriremo numeri dallo stesso centro tariffe.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

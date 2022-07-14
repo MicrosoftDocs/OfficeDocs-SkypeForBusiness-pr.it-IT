@@ -1,48 +1,53 @@
 ---
-title: Microsoft Teams riunioni in browser non supportati
-author: SerdarSoysal
-ms.author: serdars
+title: Riunioni di Microsoft Teams su browser non supportati
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
 MS.collection:
-  - M365-collaboration
+- M365-collaboration
 ms.reviewer: nakulm
 f1.keywords:
-  - NOCSH
+- NOCSH
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Scopri come Teams audio e video nei browser non supportati.
+description: Informazioni su come Teams supporta audio e video in browser non supportati.
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
+ms.openlocfilehash: 134700ad29dac89174e5c05db697dd46911a86f9
+ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66794124"
 ---
+# <a name="microsoft-teams-meetings-on-unsupported-browsers"></a>Riunioni di Microsoft Teams su browser non supportati
 
-# <a name="microsoft-teams-meetings-on-unsupported-browsers"></a>Microsoft Teams riunioni in browser non supportati
-
-Alcuni browser, ad esempio Internet Explorer 11, Safari e Firefox, supportano l'app Web Microsoft Teams, ma non supportano alcune delle funzionalità Teams chiamate e riunioni. Per aggirare questa limitazione, l'app Web Teams consente agli utenti di ricevere l'audio tramite una connessione PSTN e di visualizzare il contenuto presentato (condivisione dello schermo) a una velocità di visualizzazione ridotta.
+Alcuni browser, come Internet Explorer 11, Safari e Firefox, supportano l'app Web di Microsoft Teams, ma non supportano alcune delle funzionalità per chiamate e riunioni di Teams. Per ovviare a questa limitazione, l'app Web di Teams consente agli utenti di ricevere audio tramite una connessione PSTN e consente loro di visualizzare il contenuto presentato (condivisione dello schermo) a una velocità di visualizzazione ridotta.
 
 > [!Note]
-> Microsoft 365 le app e i servizi non supporteranno Internet Explorer 11 a partire dal 17 agosto 2021 (Microsoft Teams non supporterà Internet Explorer 11 in precedenza, a partire dal 30 novembre 2020). [Altre informazioni](https://aka.ms/AA97tsw). Si noti che Internet Explorer 11 rimarrà un browser supportato. Internet Explorer 11 è un componente del sistema operativo Windows e segue i criteri relativi al [](/lifecycle/faq/internet-explorer-microsoft-edge) ciclo di vita per il prodotto in cui è installato.
+> Le app e i servizi microsoft 365 non supporteranno Internet Explorer 11 a partire dal 17 agosto 2021 (Microsoft Teams non supporterà Internet Explorer 11 prima, a partire dal 30 novembre 2020). [Altre informazioni](https://aka.ms/AA97tsw). Si noti che Internet Explorer 11 rimarrà un browser supportato. Internet Explorer 11 è un componente del sistema operativo Windows e [segue i criteri relativi al ciclo di vita](/lifecycle/faq/internet-explorer-microsoft-edge) per il prodotto su cui è installato.
 
-Quando Teams rileva un browser non supportato, viene visualizzato automaticamente un messaggio che spiega il problema e le limitazioni della sessione. Il messaggio fornisce altre istruzioni per accedere all'audio della riunione, ad esempio per consigliare all'utente di lasciare un numero di chiamata in modo che Teams possa chiamare l'utente o indicare all'utente di chiamare il numero della conferenza incluso nell'invito alla riunione. Il messaggio incoraggia anche l'utente a scaricare e usare il [client desktop](https://teams.microsoft.com/downloads) Teams per l'esperienza Teams completa.
+Quando Teams rileva un browser non supportato, visualizza automaticamente un messaggio che spiega il problema e le limitazioni della sessione. Il messaggio fornisce ulteriori istruzioni per accedere all'audio della riunione, ad esempio avvisare l'utente di lasciare un numero di richiamata in modo che Teams possa chiamare l'utente o indicare all'utente di chiamare il numero di conferenza incluso nell'invito alla riunione. Il messaggio invita anche l'utente a scaricare e usare il [client desktop di Teams](https://teams.microsoft.com/downloads) per l'esperienza completa di Teams.
 
-Se PSTN non è disponibile, l'utente non visualizza le istruzioni per accedere alla riunione e non potrà partecipare alla riunione.
+Se PSTN non è disponibile, l'utente non vedrà le istruzioni per accedere alla riunione e non potrà partecipare alla riunione.
 
 ## <a name="browser-limitations"></a>Limitazioni del browser
 
-Le persone che usano Teams web app nei browser non supportati avranno le limitazioni seguenti:
+Gli utenti che usano l'app Web di Teams su browser non supportati riscontreranno le limitazioni seguenti:
 
 - L'audio è disponibile solo tramite una connessione PSTN. Gli utenti non possono usare il microfono.
-- Gli utenti non possono condividere la fotocamera o vedere i video di altri partecipanti, ma possono visualizzare il contenuto presentato tramite la condivisione dello schermo basata su immagini.
+- Gli utenti non possono condividere la fotocamera o vedere i video degli altri partecipanti, ma possono visualizzare il contenuto presentato tramite la condivisione dello schermo basata su immagine.
 - Gli utenti non possono condividere lo schermo, anche se possono vedere uno schermo condiviso da un altro partecipante alla riunione.
 - Gli utenti non possono assumere il controllo durante una sessione di condivisione dello schermo.
-- Gli utenti non riceveranno notifiche di chiamata in arrivo.
+- Gli utenti non riceveranno le notifiche di chiamata in arrivo.
 - Se la chiamata viene interrotta, la riunione non si riconnette automaticamente.
 - Gli utenti non possono avviare riunioni.
 
-Per altre informazioni sul supporto del browser in Teams, vedere [Limiti e specifiche per Teams](./limits-specifications-teams.md#browsers).
+Per altre informazioni sul supporto dei browser in Teams, vedere [Limiti e specifiche per Teams](./limits-specifications-teams.md#browsers).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Partecipare a Teams riunione in un browser non supportato](https://support.office.com/article/daafdd3c-ac7a-4855-871b-9113bad15907)
+- [Partecipare a una riunione di Teams in un browser non supportato](https://support.office.com/article/daafdd3c-ac7a-4855-871b-9113bad15907)

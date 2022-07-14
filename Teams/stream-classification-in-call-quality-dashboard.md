@@ -1,7 +1,7 @@
 ---
 title: Classificazione del flusso in Call Quality Dashboard (CQD)
-ms.author: serdars
-author: lolaj
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: gageames
 ms.topic: article
@@ -20,20 +20,20 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: Scopri come viene classificata la qualità del flusso nel Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: 5ee2575cf952eb9d7e78f14b2b8ba7693cd3f878
-ms.sourcegitcommit: bd05783dfb33a63e0eb083a2135f97d110dc81a3
+ms.openlocfilehash: 9b17cf115759e96edbccdb85369ac42fd5861ff7
+ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/26/2022
-ms.locfileid: "65059257"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66794294"
 ---
 # <a name="stream-classification-in-call-quality-dashboard-cqd"></a>Classificazione flusso in Call Quality Dashboard (CQD)
 
-Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online consente di ottenere informazioni approfondite sulla qualità delle chiamate effettuate con Microsoft Teams e servizi di Skype for Business. Questo argomento fornisce informazioni dettagliate sulla classificazione di qualità delle trasmissione multimediali. Per altre informazioni su Call Quality Dashboard e su come configurarlo, vedi [Configurare Call Quality Dashboard](turning-on-and-using-call-quality-dashboard.md).
+Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online consente di ottenere informazioni approfondite sulla qualità delle chiamate effettuate utilizzando Microsoft Teams e i servizi di Skype for Business. Questo argomento fornisce informazioni dettagliate sulla classificazione di qualità delle trasmissione multimediali. Per altre informazioni su Call Quality Dashboard e su come configurarlo, vedi [Configurare Call Quality Dashboard](turning-on-and-using-call-quality-dashboard.md).
 
 ## <a name="classifier-definitions"></a>Definizioni di classificatore
 
-Flussi in Call Quality Dashboard vengono classificate come _Buone_, _Scadenti_ o _Non classificate_ in base ai valori delle metriche di qualità chiave disponibili. Le metriche e le condizioni usate per classificare il flusso vengono visualizzate nelle tabelle successive. Le dimensioni "Poor Due To" di Call Quality Dashboard possono essere usate per capire quale metrica è responsabile di una classificazione _scadente_ . Per ulteriori informazioni su queste dimensioni, vedere [Dimensioni e misure disponibili in Call Quality Dashboard](dimensions-and-measures-available-in-call-quality-dashboard.md).
+I flussi in CQD vengono classificati come _buoni_, _scadenti_ o _non classificati_ in base ai valori delle metriche di qualità chiave disponibili. Le metriche e le condizioni usate per classificare il flusso vengono visualizzate nelle tabelle successive. Le dimensioni "Poor Due To" di Call Quality Dashboard possono essere usate per capire quale metrica è responsabile di una classificazione _scadente_ . Per ulteriori informazioni su queste dimensioni, vedere [Dimensioni e misure disponibili in Call Quality Dashboard](dimensions-and-measures-available-in-call-quality-dashboard.md).
 
 ### <a name="audio-classifier"></a>Classificatore audio
 
@@ -48,7 +48,7 @@ Se vengono soddisfatte una o più delle condizioni seguenti e Utilizzo pacchetti
 
 ### <a name="video-classifier-due-to-freeze"></a>Classificatore video a causa del blocco
 
-Il flusso video è contrassegnato come  _Buono_ o _Scadente_ in base al valore di un punteggio di classificatore generato per stimare che l'utente finale abbia provato Video bloccato. Questo classificatore è disponibile solo per Microsoft Teams prodotto.
+Il flusso video è contrassegnato come  _Buono_ o _Scadente_ in base al valore di un punteggio di classificatore generato per stimare che l'utente finale abbia provato Video bloccato. Questo classificatore è disponibile solo per il prodotto Microsoft Teams.
 
 |Passaggio #|Metrica|Scenario|Condizione |Classificazione se la condizione è vera |Classificazione se la condizione è falsa |Classificazione se la metrica non è disponibile |Spiegazione |
 |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |
@@ -119,7 +119,7 @@ Se la connettività ICE è riuscita per un flusso _non classificato_ , è probab
 
 [Configurare Call Quality Dashboard (CQD)](turning-on-and-using-call-quality-dashboard.md)
 
-[Upload dati del tenant e dell'edificio](CQD-upload-tenant-building-data.md)
+[Caricare i dati di tenant e building](CQD-upload-tenant-building-data.md)
 
 [Call Quality Dashboard - Dati e report](CQD-data-and-reports.md)
 

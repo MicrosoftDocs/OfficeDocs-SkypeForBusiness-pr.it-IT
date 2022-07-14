@@ -1,7 +1,7 @@
 ---
 title: Configurare le impostazioni degli eventi live in Microsoft Teams
-author: serdarsoysal
-ms.author: serdars
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.date: 03/11/2019
 ms.topic: article
@@ -15,38 +15,38 @@ ms.collection:
 - m365initiative-meetings
 - m365initiative-meetings-enabler
 - enabler-strategic
-description: Informazioni su come gestire le impostazioni per Teams eventi live che si svolgono nell'organizzazione.
+description: Informazioni su come gestire le impostazioni per gli eventi live di Teams tenuti nell'organizzazione.
 f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.liveevents.settings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ac7558f2177ab468043e624d6230106179f79a6e
-ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
+ms.openlocfilehash: 8ac5bf29fbbe61b2e2224aeccb2082e31742816b
+ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61205236"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66794164"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi live in Microsoft Teams
 
-Usare Teams eventi live per configurare le impostazioni per gli eventi live che si svolgono nell'organizzazione. È possibile configurare un URL di supporto e un provider di distribuzione video di terze parti. Queste impostazioni si applicano a tutti gli eventi live creati nell'organizzazione.
+Usare le impostazioni degli eventi live di Teams per configurare le impostazioni per gli eventi live che si svolgono nell'organizzazione. È possibile configurare un URL di supporto e un provider di distribuzione video di terze parti. Queste impostazioni si applicano a tutti gli eventi live creati nell'organizzazione.
 
-È possibile gestire facilmente queste impostazioni nell'Microsoft Teams di amministrazione. Nel riquadro di spostamento sinistro passare a **Impostazioni eventi**  >  **live riunioni.**
+È possibile gestire facilmente queste impostazioni nell'interfaccia di amministrazione di Microsoft Teams. Nel riquadro di spostamento sinistro passare alle **impostazioni degli eventi** di **Riunioni** >  in tempo reale.
 
-![Schermata delle impostazioni Teams eventi live.](../media/teams-live-events-settings-new.png "Schermata delle impostazioni Teams eventi live che è possibile configurare nell'interfaccia Microsoft Teams di amministrazione")
+![Screenshot delle impostazioni degli eventi live di Teams.](../media/teams-live-events-settings-new.png "Schermata delle impostazioni degli eventi live di Teams che è possibile configurare nell'interfaccia di amministrazione di Microsoft Teams")
 
 ## <a name="set-up-event-support-url"></a>Configurare l'URL di supporto per gli eventi
 
-Questo URL viene visualizzato per i partecipanti all'evento live. Aggiungere l'URL di supporto per l'organizzazione per offrire ai partecipanti un modo per contattare il supporto durante un evento live.
+Questo URL viene visualizzato per i partecipanti all'evento live. Aggiungere l'URL del supporto per l'organizzazione per consentire ai partecipanti di contattare il supporto durante un evento live.
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro passare a **Impostazioni evento live**  >  **riunioni.**
-2. In **URL supporto** immettere l'URL di supporto dell'organizzazione.
+1. Nel riquadro di spostamento sinistro passare a **Impostazioni evento riunioni** >  in tempo reale.
+2. In **URL supporto** immetti l'URL di supporto della tua organizzazione.
 
-    ![Impostazione dell'URL di supporto per gli eventi live nell'interfaccia di amministrazione.](../media/teams-live-events-settings-supporturl.png "Schermata dell'impostazione dell'URL di supporto per Teams eventi live")
+    ![Impostazione DELL'URL di supporto per gli eventi live nell'interfaccia di amministrazione.](../media/teams-live-events-settings-supporturl.png "Schermata dell'impostazione dell'URL del supporto per gli eventi live di Teams")
 
 ### <a name="using-windows-powershell"></a>Uso di Windows PowerShell
 
@@ -55,24 +55,24 @@ Esegui il seguente comando:
 ```PowerShell
 Set-CsTeamsMeetingBroadcastConfiguration -SupportURL “{your URL}”
 ```
-Per altre informazioni, vedere [Set-CsTeamsMeetingBroadcastConfiguration](/powershell/module/skype/set-csteamsmeetingbroadcastconfiguration?view=skype-ps&preserve-view=true).
+Per ulteriori informazioni, vedi [Set-CsTeamsMeetingBroadcastConfiguration](/powershell/module/skype/set-csteamsmeetingbroadcastconfiguration?view=skype-ps&preserve-view=true).
 ## <a name="configure-a-third-party-video-distribution-provider"></a>Configurare un provider di distribuzione video di terze parti 
 
-Se è stata acquistata e configurata una soluzione SDN (Software Defined Network) o una soluzione eCDN (Enterprise Content Delivery Network) tramite un partner microsoft per la distribuzione di video, configurare il provider per gli eventi live in Teams. 
+Se hai acquistato e configurato una soluzione SDN (Software Defined Network) o una soluzione eCDN (Enterprise Content Delivery Network) tramite un partner per la distribuzione di video Microsoft, configura il provider per gli eventi live in Teams. 
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro passare a **Impostazioni evento live**  >  **riunioni.**
-2. In **Provider di distribuzione video di terze parti** completare le operazioni seguenti: 
+1. Nel riquadro di spostamento sinistro passare a **Impostazioni evento riunioni** >  in tempo reale.
+2. In **Provider di distribuzione video di terze parti** completa quanto segue: 
 
     ![Impostazioni del provider di distribuzione video di terze parti nell'interfaccia di amministrazione.](../media/teams-live-events-settings-distribution-provider-new.png "Schermata delle impostazioni del provider di distribuzione video di terze parti per gli eventi live")
 
-    - **Provider di distribuzione di terze parti** Attivare questa opzione per abilitare il provider di distribuzione video di terze parti.
-    - **Nome provider SDN** Scegliere il provider in uso.
-    - **Configurazione SDN** Immettere i dettagli di Configurazione SDN.
+    - **Provider di distribuzione di terze parti** Attiva questa opzione per abilitare il provider di distribuzione di video di terze parti.
+    - **Nome provider SDN** Scegli il provider che stai usando.
+    - **Configurazione SDN** Immettere i dettagli sulla configurazione SDN.
         
 ### <a name="using-windows-powershell"></a>Uso di Windows PowerShell
-Ottenere l'ID licenza o il token API e il modello API dal contatto del provider e quindi eseguire una delle operazioni seguenti, a seconda del provider in uso:
+Ottenere l'ID licenza o il modello di API e token API dal contatto del provider, quindi eseguire una delle operazioni seguenti, a seconda del provider in uso:
 
 **Hive** 
 ```PowerShell
@@ -95,16 +95,16 @@ Set-CsTeamsMeetingBroadcastConfiguration -AllowSdnProviderForBroadcastMeeting $T
 Set-CsTeamsMeetingBroadcastConfiguration -AllowSdnProviderForBroadcastMeeting $True -SdnProviderName peer5 -SdnLicenseId {peer5CustomerId}
 ```
 
-Per altre informazioni, vedere [Set-CsTeamsMeetingBroadcastConfiguration](/powershell/module/skype/set-csteamsmeetingbroadcastconfiguration?view=skype-ps&preserve-view=true).
+Per ulteriori informazioni, vedi [Set-CsTeamsMeetingBroadcastConfiguration](/powershell/module/skype/set-csteamsmeetingbroadcastconfiguration?view=skype-ps&preserve-view=true).
 
 > [!NOTE]
-> Se si prevede di creare eventi live con un'app o un dispositivo esterno, sarà necessario configurare anche il [provider eCDN con Microsoft Stream.](/stream/network-caching) 
+> Se prevedi di creare eventi live usando un'app o un dispositivo esterno, dovrai anche [configurare il provider eCDN con Microsoft Stream](/stream/network-caching). 
 
 >[!Note]
 > Il passaggio dall'utilizzo di Microsoft Stream a [ OneDrive for Business e SharePoint per le registrazioni delle riunioni ](../tmr-meeting-recording-change.md) sarà graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
 
 >[!Note]
-> La soluzione eCDN scelta è soggetta alle condizioni di servizio e all'informativa sulla privacy del provider di terze parti selezionato, che regolano l'uso della soluzione del provider eCDN. L'uso della soluzione del provider eCDN non sarà soggetto alle condizioni per i contratti multilicenza Microsoft o ai Termini dei Servizi online. Se non si accettano le condizioni del provider di terze parti, non abilitare la soluzione eCDN in Microsoft Teams.
+> La soluzione eCDN scelta è soggetta alle condizioni del servizio e all'informativa sulla privacy del provider di terze parti selezionate, che regoleranno l'uso della soluzione del provider di eCDN. L'uso della soluzione del provider di eCDN non sarà soggetto alle condizioni dei contratti multilicenza o dei servizi online Microsoft. Se non accetti le condizioni del provider di terze parti, non abilitare la soluzione eCDN in Microsoft Teams.
 
 ### <a name="related-topics"></a>Argomenti correlati
 - [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)

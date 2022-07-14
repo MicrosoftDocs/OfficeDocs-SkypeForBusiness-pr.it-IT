@@ -1,7 +1,7 @@
 ---
-title: Microsoft Teams Report pool di minuti PSTN
-author: serdarsoysal
-ms.author: serdars
+title: Report pool di minuti PSTN di Microsoft Teams
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -13,38 +13,38 @@ ms.localizationpriority: medium
 search.appverid: MET150
 MS.collection:
 - M365-voice
-description: Come usare il report Teams pool di minuti PSTN nell'interfaccia di amministrazione di Microsoft Teams per visualizzare i minuti consumati all'interno dell'organizzazione durante il mese corrente.
+description: Come usare il report pool di minuti PSTN di Teams nell'interfaccia di amministrazione di Microsoft Teams per visualizzare i minuti consumati all'interno dell'organizzazione durante il mese corrente.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef2e207352bf4ad7ee3d0f6c8fae674c4022e0b0
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: 3aafc45cebab24f5524a4d3120dd0c03083d0c6c
+ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60045992"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66794354"
 ---
-# <a name="microsoft-teams-pstn-minute-pools-report"></a>Microsoft Teams Report pool di minuti PSTN
+# <a name="microsoft-teams-pstn-minute-pools-report"></a>Report pool di minuti PSTN di Microsoft Teams
 
-Il report Teams pool di minuti PSTN nell'interfaccia di amministrazione di Microsoft Teams offre una panoramica delle attività di audioconferenza e chiamate nell'organizzazione mostrando il numero di minuti consumati durante il mese corrente. È possibile visualizzare una suddivisione delle attività, tra cui la licenza usata per le chiamate, i minuti totali disponibili, i minuti usati e l'utilizzo delle licenze in base alla posizione.
+Il report Pool di minuti PSTN di Teams nell'interfaccia di amministrazione di Microsoft Teams offre una panoramica delle audioconferenze e delle attività di chiamata nell'organizzazione mostrando il numero di minuti consumati durante il mese corrente. È possibile visualizzare un'analisi delle attività, inclusa la licenza usata per le chiamate, i minuti totali disponibili, i minuti usati e l'utilizzo delle licenze in base alla posizione.
 
 ## <a name="view-the-pstn-minute-pools-report"></a>Visualizzare il report pool di minuti PSTN
 
-Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Analisi & report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare Minuti PSTN e **pool SMS(anteprima)** e quindi fare clic su **Esegui report.**
+Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams fare clic su **Analisi & report** > **utilizzo**. Nella scheda **Visualizza report** , in **Report**, selezionare **Pool di minuti PSTN e SMS (anteprima),** quindi fare clic su **Esegui report**.
 
-![Screenshot del report Teams pool di minuti PSTN nell'interfaccia di amministrazione.](../media/teams-reports-pstn-minute-pools-with-callouts.png "Screenshot del report Teams pool di minuti PSTN nell'interfaccia Microsoft Teams di amministrazione con callout numerati")
+![Screenshot del report pool di minuti PSTN di Teams nell'interfaccia di amministrazione.](../media/teams-reports-pstn-minute-pools-with-callouts.png "Screenshot del report pool di minuti PSTN di Teams nell'interfaccia di amministrazione di Microsoft Teams con callout numerati")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 
 |Callout |Descrizione  |
 |--------|-------------|
-|**1**   |Ogni report ha una data in cui è stato generato. In genere, i report presentano una latenza di 24-48 ore dal momento dell'attività. |
-|**2**   |Fare clic su una funzionalità (licenza) per visualizzare le attività per tale funzionalità. |
-|**3**   |L'asse X è il paese o l'area geografica. L'asse Y è il numero di minuti. <br>Posizionare il puntatore del mouse su una barra del grafico per visualizzare l'attività per la posizione di utilizzo.  |
-|**4**   |È possibile filtrare gli elementi visualizzati nel grafico facendo clic su un elemento nella legenda. Ad esempio, fare **clic su Inutilizzati**  , **Utenti nazionali** **,** Nessun dato o Internazionale per visualizzare solo le informazioni correlate a ognuno di essi. |
-|**5**   |La tabella fornisce una suddivisione dei pool di minuti in base alla capacità e alla posizione di utilizzo. <ul><li>**Paese o area geografica** è il luogo di utilizzo. </li><li>**Descrizione funzionalità** è la descrizione della licenza usata per la chiamata.  Le descrizioni delle funzionalità che è possibile visualizzare in questo report includono: <ul><li>Piano per chiamate nazionali e internazionali (1200 minuti nazionali)</li><li>Piano per chiamate nazionali e internazionali (3000 minuti nazionali)</li><li>Piano per chiamate nazionali e internazionali (600 minuti internazionali)</li></ul></li><br><li>**Totale minuti** è il numero totale di minuti disponibili per il mese.</li><li>**Minuti usati** è il numero di minuti usati ogni mese</li> <li>**Minuti disponibili** è il numero di minuti rimanenti per il mese.</li><li>**Capacità** è la licenza usata per la chiamata. Le licenze che potresti vedere includono:<ul><li>**MCOPSTN1** - Piano per chiamate nazionali (3000 min piani UE per gli Stati Uniti/ 1200 min)</li><li>**MCOPSTN2** - Piano per chiamate internazionali</li><li>**MCOPSTN5** - Piano per chiamate nazionali (piano per chiamate da 120 minuti)</li><li>**MCOPSTN6** - Piano per chiamate nazionali (piano per chiamate di 240 minuti)</li><li>**MCOMEETADD** - Audioconferenza</li></ul></li> </ul> Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella.|
+|**1**   |Ogni report ha una data per la generazione. In genere, i report presentano una latenza di 24-48 ore dal momento dell'attività. |
+|**2**   |Fare clic su una funzionalità (licenza) per visualizzare le attività relative a tale funzionalità. |
+|**3**   |L'asse X è il paese o l'area geografica. L'asse Y è il numero di minuti. <br>Passare il puntatore del mouse su una barra nel grafico per visualizzare l'attività relativa alla posizione di utilizzo.  |
+|**4**   |È possibile filtrare gli elementi visualizzati nel grafico facendo clic su un elemento nella legenda. Ad esempio, fare clic su **Inutilizzati**, **Utenti nazionali**, **Nessun dato** o **Dati internazionali usati** per visualizzare solo le informazioni pertinenti. |
+|**5**   |La tabella fornisce un'analisi dei pool di minuti per funzionalità e posizione di utilizzo. <ul><li>**Il paese o l'area geografica** è la posizione di utilizzo. </li><li>**La descrizione della funzionalità** è la descrizione della licenza usata per la chiamata.  Le descrizioni delle funzionalità che possono essere visualizzate in questo report includono: <ul><li>Piano per chiamate nazionali e internazionali (1200 minuti di chiamate nazionali)</li><li>Piano per chiamate nazionali e internazionali (3000 minuti di chiamate nazionali)</li><li>Piano per chiamate nazionali e internazionali (600 minuti di chiamate internazionali)</li></ul></li><br><li>**Il totale dei minuti** è il numero totale di minuti disponibili per il mese.</li><li>**Minuti utilizzati** è il numero di minuti utilizzati ogni mese</li> <li>**Minuti disponibili** è il numero di minuti rimanenti per il mese.</li><li>**Capacità** è la licenza usata per la chiamata. Le licenze visualizzate includono:<ul><li>**MCOPSTN1** - Piano per chiamate nazionali (piani per 3000 min USA/1200 min UE)</li><li>**MCOPSTN2** - Piano per chiamate internazionali</li><li>**MCOPSTN5** - Piano per chiamate nazionali (piano per chiamate da 120 minuti)</li><li>**MCOPSTN6** - Piano per chiamate nazionali (piano per chiamate da 240 minuti)</li><li>**MCOMEETADD** - Audioconferenza</li></ul></li> </ul> Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella.|
 |**6**   |Selezionare **Modifica colonne** per aggiungere o rimuovere colonne nella tabella.|
-|**7**   |Selezionare **Schermo intero** per visualizzare il report in modalità a schermo intero.|
+|**7**   |Selezionare **Schermo intero** per visualizzare il report in modalità schermo intero.|
 
 ## <a name="related-topics"></a>Argomenti correlati
 

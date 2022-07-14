@@ -1,7 +1,7 @@
 ---
 title: Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate
-ms.author: serdars
-author: SerdarSoysal
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: mikedav, vkorlep
 ms.topic: article
@@ -21,17 +21,17 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.callanalytics
 - ms.teamsadmincenter.users.activity.audioqualitycolumn
 - Reporting
-description: Usa i dettagli di Call Analytics per utente su dispositivi, reti e connettività per risolvere i problemi degli utenti relativi a chiamate e riunioni Microsoft Teams.
-ms.openlocfilehash: 47b60eb979c36508ed1911a70f531695c03533e5
-ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
+description: Usare i dettagli di Call Analytics per utente su dispositivi, reti e connettività per risolvere i problemi degli utenti relativi a chiamate e riunioni di Microsoft Teams.
+ms.openlocfilehash: 38636d911be55648ec17628bcec7d4cee21358c5
+ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125651"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66794314"
 ---
 # <a name="use-call-analytics-to-troubleshoot-poor-call-quality"></a>Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate
 
-Questo articolo spiega come usare Call Analytics per risolvere problemi di scarsa qualità delle chiamate o delle riunioni Microsoft Teams per i singoli utenti, se si ha il ruolo di ingegnere del supporto per le comunicazioni di Teams, specialista del supporto Teams per le comunicazioni o Teams ruolo di ingegnere del supporto tecnico per le comunicazioni.
+Questo articolo spiega come usare Call Analytics per risolvere problemi di scarsa qualità delle chiamate o delle riunioni di Microsoft Teams per i singoli utenti se si svolge il ruolo di amministratore di Teams, specialista del supporto per le comunicazioni di Teams o ingegnere del supporto per le comunicazioni di Teams.
 
 ## <a name="call-analytics-permissions"></a>Autorizzazioni di Call Analytics
 
@@ -39,11 +39,11 @@ Questo articolo presuppone che Call Analytics sia già stato configurato. In cas
 
 ## <a name="introduction-to-call-analytics"></a>Introduzione a Call Analytics
 
-Call Analytics mostra informazioni dettagliate su Teams chiamate e riunioni per ogni utente dell'account Office 365. Include informazioni su dispositivi, reti, connettività e qualità delle chiamate (uno di questi può essere un fattore di scarsa qualità delle chiamate o delle riunioni). Se si caricano informazioni su edifici, siti e tenant, queste informazioni verranno visualizzate anche per ogni chiamata e riunione. Usare Call Analytics per capire perché un utente ha avuto un'esperienza di chiamata o riunione scadente.
+Call Analytics mostra informazioni dettagliate sulle chiamate e le riunioni di Teams per ogni utente nell'account Office 365. Include informazioni su dispositivi, reti, connettività e qualità delle chiamate (uno di questi può essere un fattore di scarsa qualità delle chiamate o delle riunioni). Se si caricano informazioni su edifici, siti e tenant, queste informazioni verranno visualizzate anche per ogni chiamata e riunione. Usare Call Analytics per capire perché un utente ha avuto un'esperienza di chiamata o riunione scadente.
 
-Call Analytics mostra ogni parte di una chiamata o riunione, ad esempio da un partecipante a un secondo partecipante. Analizzando questi dettagli, un amministratore Teams può isolare le aree problematiche e identificare la causa principale della scarsa qualità.
+Call Analytics mostra ogni parte di una chiamata o riunione, ad esempio da un partecipante a un secondo partecipante. Analizzando questi dettagli, un amministratore di Teams può isolare le aree problematiche e identificare la causa principale della scarsa qualità.
 
-L'amministratore Teams ottiene l'accesso completo a tutti i dati di Call Analytics per ogni utente. Inoltre, è possibile assegnare Azure Active Directory ruoli per il supporto del personale. Per altre informazioni su questi ruoli, vedere [Concedere l'autorizzazione al supporto e al personale helpdesk](set-up-call-analytics.md#give-permission-to-support-and-helpdesk-staff). Non perderti [cosa fa ogni ruolo di supporto Teams?](#what-does-each-teams-support-role-do) di seguito.
+L'amministratore di Teams ottiene l'accesso completo a tutti i dati di Call Analytics per ogni utente. È anche possibile assegnare ruoli di Azure Active Directory al supporto del personale. Per altre informazioni su questi ruoli, vedere [Concedere l'autorizzazione al supporto e al personale helpdesk](set-up-call-analytics.md#give-permission-to-support-and-helpdesk-staff). Non perderti [cosa fa ogni ruolo di supporto di Teams?](#what-does-each-teams-support-role-do) di seguito.
 
 ## <a name="where-to-find-per-user-call-analytics"></a>Dove trovare Call Analytics per utente
 
@@ -55,11 +55,11 @@ Per ottenere informazioni aggiuntive su una determinata sessione, incluse statis
 
 ![Screenshot dei dati della sessione utente di analisi delle chiamate.](media/teams-difference-between-call-analytics-and-call-quality-dashboard-image2.png)
 
-## <a name="what-does-each-teams-support-role-do"></a>Cosa fa ogni ruolo di supporto Teams?
+## <a name="what-does-each-teams-support-role-do"></a>Cosa fa ogni ruolo di supporto di Teams?
 
-Lo **specialista del supporto per le comunicazioni Teams** (supporto di Livello 1) gestisce i problemi di base relativi alla qualità delle chiamate. Non esaminano i problemi relativi alle riunioni. Vengono invece raccolte informazioni correlate e quindi inoltrate a un tecnico del supporto per le comunicazioni Teams.
+Lo **specialista del supporto per le comunicazioni di Teams** (supporto di Livello 1) gestisce i problemi di base relativi alla qualità delle chiamate. Non esaminano i problemi relativi alle riunioni. Vengono invece raccolte informazioni correlate e quindi inoltrate a un tecnico del supporto per le comunicazioni di Teams.
 
-Il **tecnico del supporto per le comunicazioni di Teams** (supporto di Livello 2) visualizza le informazioni nei registri delle chiamate dettagliati nascosti allo specialista del supporto tecnico per le comunicazioni Teams. La tabella seguente elenca le informazioni disponibili per ogni Teams ruolo di supporto per le comunicazioni.
+Il **tecnico del supporto per le comunicazioni di Teams** (supporto di Livello 2) vede le informazioni nei registri delle chiamate dettagliati nascosti allo specialista del supporto per le comunicazioni di Teams. La tabella seguente elenca le informazioni disponibili per ogni ruolo di supporto per le comunicazioni di Teams.
 
 La tabella seguente indica quali informazioni per utente sono disponibili per ogni ruolo di supporto per le comunicazioni.
 
@@ -81,7 +81,7 @@ La tabella seguente indica quali informazioni per utente sono disponibili per og
 
 ## <a name="troubleshoot-user-call-quality-problems"></a>Risolvere i problemi di qualità delle chiamate degli utenti
 
-1. Aprire l'interfaccia di amministrazione di Teams (<https://admin.teams.microsoft.com>) e accedere con il supporto per le comunicazioni Teams o con le credenziali di amministratore Teams.
+1. Aprire l'interfaccia di amministrazione di Teams (<https://admin.teams.microsoft.com>) e accedere con le credenziali del supporto per le comunicazioni di Teams o dell'amministratore di Teams.
 
 2. Nel **dashboard**, in **Ricerca utente**, iniziare a digitare il nome o l'indirizzo SIP dell'utente di cui si vogliono risolvere i problemi di chiamata oppure selezionare **Visualizza utenti** per visualizzare un elenco di utenti.
 

@@ -1,7 +1,7 @@
 ---
-title: Criteri di registrazione degli eventi live
-author: SerdarSoysal
-ms.author: serdars
+title: Criteri per la registrazione di eventi live
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -9,39 +9,44 @@ ms.reviewer: christi.balaki
 audience: admin
 search.appverid: MET150
 f1.keywords:
-  - CSH
+- CSH
 ms.localizationpriority: medium
 ms.collection:
-  - M365-collaboration
-description: Informazioni sui criteri di registrazione degli eventi live.
+- M365-collaboration
+description: Informazioni sui criteri di registrazione di eventi live.
 appliesto:
-  - Microsoft Teams
+- Microsoft Teams
 ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 5ae98255edf26843e59839192a9f20096182bfa2
+ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66794114"
 ---
+# <a name="live-event-recording-policies-in-microsoft-teams"></a>Criteri di registrazione di eventi live in Microsoft Teams
 
-# <a name="live-event-recording-policies-in-microsoft-teams"></a>Criteri di registrazione degli eventi live in Microsoft Teams
+Sono disponibili diverse opzioni per la registrazione di un evento live di Microsoft Teams. Le opzioni di registrazione vengono impostate usando i criteri di registrazione. Questo articolo descrive le varie impostazioni.
 
-Sono disponibili diverse opzioni per registrare un evento Microsoft Teams live. Le opzioni di registrazione vengono impostate usando i criteri di registrazione. Questo articolo descrive le varie impostazioni.
+Le opzioni di registrazione vengono impostate utilizzando il comando di PowerShell [Set-CsTeamsMeetingBroadcastPolicy](/powershell/module/skype/set-csteamsmeetingbroadcastpolicy).
 
-Le opzioni di registrazione vengono impostate usando il comando di PowerShell [Set-CsTeamsMeetingBroadcastPolicy](/powershell/module/skype/set-csteamsmeetingbroadcastpolicy).
+## <a name="scheduling-and-option-behaviors"></a>Comportamento di pianificazione e opzioni
 
-## <a name="scheduling-and-option-behaviors"></a>Comportamenti di pianificazione e opzioni
-
-Durante la pianificazione di una registrazione di un evento live sono disponibili due opzioni per l'organizzatore:
+Sono disponibili due opzioni per gli organizzatori durante la pianificazione della registrazione di un evento live:
 
 - Registrazione disponibile per produttori e relatori
 
-  - File di registrazione: fornisce un file di registrazione che i produttori e i relatori possono scaricare al termine dell'evento.
+  - File di registrazione: fornisce un file di registrazione che i produttori e i relatori possono scaricare dopo la fine dell'evento.
 
 - Registrazione disponibile per i partecipanti
 
-  - DVR: un videoregistratore digitale (DVR) consente ai partecipanti di riavvolgere e mettere in pausa durante l'evento
+  - DVR: un registratore video digitale (DVR) consente ai partecipanti di riavvolgere e sospendere durante l'evento
 
-  - VOD: un video su richiesta (VOD) consente ai partecipanti di guardare al termine dell'evento
+  - VOD: un video su richiesta (VOD) consente ai partecipanti di guardare dopo la fine dell'evento
 
-## <a name="broadcast-recording-policy-setting"></a>Impostazione dei criteri di registrazione broadcast
+## <a name="broadcast-recording-policy-setting"></a>Impostazione dei criteri di registrazione della trasmissione
 
-Nell'ambito dei criteri di trasmissione, è possibile attivare o disattivare la registrazione per un evento live.
+Nell'ambito dei criteri di trasmissione, è disponibile un'impostazione che consente di attivare o disattivare la registrazione per un evento live.
 
 | &nbsp;| Registrazione disponibile per produttori e relatori | Registrazione disponibile per i partecipanti |
 | ------------------------------- | ---------------------------------------------------- | ------------------------------------- |
@@ -49,14 +54,14 @@ Nell'ambito dei criteri di trasmissione, è possibile attivare o disattivare la 
 | L'organizzatore può registrare o meno | Abilitato e selezionato per impostazione predefinita                  | Abilitato e selezionato per impostazione predefinita   |
 | Non registrare mai               | Disabilitato e non selezionato                            | Disabilitato e non selezionato      |
 
-## <a name="storage-and-persistence-behavior"></a>Archiviazione e persistenza
+## <a name="storage-and-persistence-behavior"></a>Comportamento di archiviazione e persistenza
 
 | Opzione                                       | Stato   | DVR                                                   | VOD                                                     | Registrazione                |
 | ------------------------------------------------ | ------------ | --------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------- |
-| Registrazione disponibile per i partecipanti | Selezionato     | DVR è disponibile e la risorsa Servizi multimediali di Azure (AMS) viene archiviata per 180 giorni | Il partecipante può accedere e guardare l'evento                     |                              |
-|                                                  | Non selezionato | DVR è disponibile e la risorsa AMS viene archiviata per 180 giorni | Il partecipante non ottiene l'accesso all'evento al termine |                              |
-||Disabilitato (non selezionato)|DVR è disponibile e la risorsa AMS viene eliminata dopo l'evento|Il partecipante non ottiene l'accesso all'evento al termine||
-| Registrazione disponibile per produttori e relatori | Selezionato     |                                                           |                                                             | Un MP4 viene creato e archiviato per 180 giorni |
+| Registrazione disponibile per i partecipanti | Selezionato     | DVR è disponibile e la risorsa di Azure Media Services (AMS) viene archiviata per 180 giorni | Il partecipante può accedere e guardare l'evento                     |                              |
+|                                                  | Non selezionato | DVR è disponibile e la risorsa AMS viene archiviata per 180 giorni | Il partecipante non otterrà accesso all'evento dopo la fine |                              |
+||Disabilitato (non selezionato)|DVR è disponibile e la risorsa AMS viene eliminata dopo l'evento|Il partecipante non otterrà accesso all'evento dopo la fine||
+| Registrazione disponibile per produttori e relatori | Selezionato     |                                                           |                                                             | Viene creato e archiviato un MP4 per 180 giorni |
 |                                                  | Non selezionato |                                                           |                                                             | Non viene creato alcun file           |
 
 ### <a name="related-topics"></a>Argomenti correlati
@@ -64,4 +69,4 @@ Nell'ambito dei criteri di trasmissione, è possibile attivare o disattivare la 
 - [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)
 - [Pianificare gli eventi live di Teams](plan-for-teams-live-events.md)
 - [Configurare le impostazioni degli eventi live in Teams](configure-teams-live-events.md)
-- [Teams delle riunioni in cloud](../cloud-recording.md)
+- [Registrazione di riunioni di Teams cloud](../cloud-recording.md)

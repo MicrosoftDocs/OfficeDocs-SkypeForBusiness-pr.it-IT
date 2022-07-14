@@ -1,29 +1,35 @@
 ---
-title: Formazione per amministratori per Microsoft Teams
-ms.reviewer: null
-description: Ottenere la formazione e il supporto dell'amministratore necessari per gestire i Microsoft Teams all'interno dell'organizzazione.
-author: SerdarSoysal
+title: formazione Amministrazione per Microsoft Teams
+ms.reviewer: ''
+description: Ottenere la formazione e il supporto per gli amministratori necessari per gestire Microsoft Teams nell'organizzazione.
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 audience: admin
 ms.date: 01/22/2018
 layout: LandingPage
-ms.assetid: null
+ms.assetid: ''
 ms.service: msteams
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.collection:
-  - M365-collaboration
+- M365-collaboration
 ms.custom:
-  - seo-marvel-mar2020
+- seo-marvel-mar2020
 f1.keywords:
-  - NOCSH
+- NOCSH
 search.appverid: MET150
 ms.topic: landing-page
-ms.author: serdars
+ms.openlocfilehash: 83185e267f1a3aa44158c5e6252e5b964868af5f
+ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66794284"
 ---
-# <a name="admin-training-for-microsoft-teams"></a>Formazione per amministratori per Microsoft Teams
+# <a name="admin-training-for-microsoft-teams"></a>formazione Amministrazione per Microsoft Teams
 
-Informazioni su come gestire i Teams per l'organizzazione.
+Informazioni su come gestire Teams per l'organizzazione.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -37,7 +43,7 @@ Informazioni su come gestire i Teams per l'organizzazione.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>NOVITÀ: Formazione con istruttore per Teams</h3>
+                        <h3>NUOVO: Formazione con docente per Teams</h3>
                     </div>
                 </div>
             </div>
