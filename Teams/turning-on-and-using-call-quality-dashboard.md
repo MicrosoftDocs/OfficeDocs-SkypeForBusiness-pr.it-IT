@@ -1,7 +1,7 @@
 ---
-title: Configurare call quality dashboard (CQD)
-ms.author: serdars
-author: SerdarSoysal
+title: Configurare Call Quality Dashboard (CQD)
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: mikedav, siunies, gageames
 ms.topic: article
@@ -22,61 +22,61 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
-description: Informazioni su come attivare e usare il dashboard della qualità delle chiamate e ottenere report di riepilogo sulla qualità delle chiamate.
-ms.openlocfilehash: 5a220ac01965623417354df35a9052648652f607
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+description: Informazioni su come attivare e usare call quality dashboard e ottenere report di riepilogo sulla qualità delle chiamate.
+ms.openlocfilehash: 052b38634d17aa6d0086c80ed2a638a7818a729f
+ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60081617"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66797381"
 ---
-# <a name="set-up-call-quality-dashboard"></a>Configurare il dashboard della qualità delle chiamate
+# <a name="set-up-call-quality-dashboard"></a>Configurare Call Quality Dashboard
 
-Aprire microsoft Call Quality Dashboard (CQD) all'indirizzo [https://cqd.teams.microsoft.com](https://cqd.teams.microsoft.com) (accedere con le credenziali di amministratore). Oppure passare all'interfaccia Teams di amministrazione e selezionare Analisi & **report**  >  **Call Quality Dashboard**.
+Aprire Microsoft Call Quality Dashboard (CQD) all'indirizzo [https://cqd.teams.microsoft.com](https://cqd.teams.microsoft.com) (accedere con le credenziali di amministratore). Oppure passare all'interfaccia di amministrazione di Teams e selezionare **Analytics & report** > **Call Quality Dashboard**.
 
-:::image type="content" source="media/turning-on-and-using-call-quality-dashboard3.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'Teams di amministrazione.":::
+:::image type="content" source="media/turning-on-and-using-call-quality-dashboard3.png" alt-text="Screenshot del pulsante Call quality dashboard nell'interfaccia di amministrazione di Teams.":::
 
-Nella pagina visualizzata fare clic su **Accedi e** immettere l'account amministratore globale o le Microsoft Teams dell'account amministratore. Dopo la prima volta che si accede, CQD inizierà a raccogliere ed elaborare i dati. Tenere presente che potrebbero essere sufficienti una o più ore per elaborare dati sufficienti per visualizzare risultati significativi nei report.
+Nella pagina visualizzata fare clic su **Accedi** e immettere le informazioni sull'account amministratore globale o amministratore di Microsoft Teams. Dopo il primo accesso, Call Quality Dashboard inizierà a raccogliere ed elaborare i dati. Tenere presente che l'elaborazione di dati sufficienti per visualizzare risultati significativi nei report può richiedere una o più ore.
 
-CQD mostra la qualità delle chiamate e delle riunioni, a livello di organizzazione, per Microsoft Teams, Skype for Business Online e Skype for Business Server 2019. 
+Call Quality Dashboard mostra la qualità delle chiamate e delle riunioni, a livello di organizzazione, per Microsoft Teams, Skype for Business Online e Skype for Business Server 2019. 
 
 > [!IMPORTANT]
-> Per usare CQD con Skype for Business Server 2019, è necessario [configurare Call Data Connector.](/skypeforbusiness/hybrid/configure-call-data-connector) Prima [di iniziare, vedere Pianificare call data connector.](/skypeforbusiness/hybrid/plan-call-data-connector)
+> Per usare Call Quality Dashboard con Skype for Business Server 2019, è necessario [configurare Call Data Connector](/skypeforbusiness/hybrid/configure-call-data-connector). Vedere [Plan Call Data Connector](/skypeforbusiness/hybrid/plan-call-data-connector) prima di iniziare.
 
 
-## <a name="assign-admin-roles-for-access-to-cqd"></a>Assegnare ruoli di amministratore per l'accesso a CQD
+## <a name="assign-admin-roles-for-access-to-cqd"></a>Assegnare ruoli di amministratore per l'accesso a Call Quality Dashboard
 
-Assegnare [ruoli](/microsoft-365/admin/add-users/about-admin-roles) per l'accesso a CQD alle persone che devono usarlo.
+Assegnare [ruoli](/microsoft-365/admin/add-users/about-admin-roles) per l'accesso a Call Quality Dashboard alle persone che ne hanno bisogno.
 
-Se si vuole che gli utenti non amministratori, ad esempio tecnici del supporto tecnico e agenti helpdesk, usino call quality dashboard, è possibile assegnare a tali utenti uno dei ruoli seguenti, che consente l'accesso a CQD. 
+Se si vuole che gli utenti non amministratori, ad esempio tecnici del supporto e agenti helpdesk, utilizzino Call Quality Dashboard, è possibile assegnare a tali utenti uno dei ruoli seguenti, che consente l'accesso a Call Quality Dashboard. 
 
 
-|&nbsp;  |Visualizzare i report  |Visualizzare i campi EUII  |Creare report  |Upload di costruzione  |
+|&nbsp;  |Visualizzare i report  |Visualizzare i campi EUII  |Creare report  |Caricare dati di tipo building  |
 |---------|:-------:|:-------:|:-------:|:-------:|
 |Amministratore globale     |Sì         |Sì         |Sì         |Sì         |
 |Amministratore di Teams     |Sì         |Sì         |Sì         |Sì         |
 |Amministratore comunicazioni Teams     |Sì         |Sì         |Sì         |Sì         |
 |Tecnico supporto comunicazioni Teams     |Sì         |Sì         |Sì         |No         |
-|Teams Specialista del supporto per le comunicazioni     |Sì         |No         |Sì         |No         |
-|Skype for Business Amministratore     |Sì         |Sì         |Sì         |Sì         |
+|Specialista del supporto tecnico per le comunicazioni di Teams     |Sì         |No         |Sì         |No         |
+|amministratore Skype for Business     |Sì         |Sì         |Sì         |Sì         |
 |Lettore globale |Sì         |Sì         |Sì         |No         |
-|Lettore report<sup>1</sup>     |Sì         |No         |Sì         |No         |
+|Lettore di report<sup>1</sup>     |Sì         |No         |Sì         |No         |
 
-<sup>1</sup> Oltre a leggere i report CQD, [](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) l'utilità per la lettura dei report può visualizzare tutti i report attività nell'interfaccia di amministrazione e tutti i report del [pacchetto di contenuto Microsoft 365 Adoption.](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f)
+<sup>1</sup> Oltre a leggere i report di Call Quality Dashboard, il lettore di report può visualizzare tutti i [report attività](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) nell'interfaccia di amministrazione e tutti i report del [pacchetto di contenuto Microsoft 365 Adoption](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f).
 
 > [!NOTE]
-> Se l'interfaccia [EUII (informazioni](CQD-data-and-reports.md#euii-data) identificabili dall'utente finale) non è visualizzata e si ha uno dei ruoli autorizzati a visualizzare queste informazioni, tenere presente che CQD mantiene EUII solo per 28 giorni. Qualsiasi elemento più vecchio di 28 giorni viene eliminato.
+> Se non vedi [EUII (informazioni identificabili per l'utente finale)](CQD-data-and-reports.md#euii-data) e hai uno dei ruoli a cui è consentito visualizzare queste informazioni, ricorda che Call Quality Dashboard conserva l'interfaccia utente ue solo per 28 giorni. Tutto ciò che supera i 28 giorni viene eliminato.
 
-Per altre informazioni su questi ruoli, vedere Informazioni [sui Office 365 di amministratore.](/office365/admin/add-users/about-admin-roles)
+Per altre informazioni su questi ruoli, vedere [Informazioni sui ruoli di amministratore Office 365](/office365/admin/add-users/about-admin-roles).
 
 
-Dopo la prima volta che si accede, CQD inizierà a raccogliere ed elaborare i dati.
+Dopo il primo accesso, Call Quality Dashboard inizierà a raccogliere ed elaborare i dati.
 
-## <a name="use-power-bi-to-analyze-cqd-data"></a>Usare Power BI per analizzare i dati CQD
+## <a name="use-power-bi-to-analyze-cqd-data"></a>Usare Power BI per analizzare i dati di Call Quality Dashboard
 
-Novità di gennaio 2020: [Scaricare Power BI di query per CQD](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). Modelli Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati CQD.
+Novità di gennaio 2020: [Scaricare i modelli di query di Power BI per Call Quality Dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). Modelli di Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati di Call Quality Dashboard.
 
-Leggere [Usare Power BI per analizzare i dati CQD](CQD-Power-BI-query-templates.md) per altre informazioni.
+Per altre informazioni, vedere [Usare Power BI per analizzare i dati di Call Quality Dashboard](CQD-Power-BI-query-templates.md) .
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -84,14 +84,14 @@ Leggere [Usare Power BI per analizzare i dati CQD](CQD-Power-BI-query-templates.
 
 [Che cos'è CQD?](CQD-what-is-call-quality-dashboard.md)
 
-[Upload tenant e edificio](CQD-upload-tenant-building-data.md)
+[Caricare i dati di tenant e building](CQD-upload-tenant-building-data.md)
 
-[Dati e report CQD](CQD-data-and-reports.md)
+[Call Quality Dashboard - Dati e report](CQD-data-and-reports.md)
 
-[Usare CQD per gestire la qualità delle chiamate e delle riunioni](quality-of-experience-review-guide.md)
+[Usare Call Quality Dashboard per gestire la qualità delle chiamate e delle riunioni](quality-of-experience-review-guide.md)
 
 [Dimensioni e misure disponibili in CQD](dimensions-and-measures-available-in-call-quality-dashboard.md)
 
-[Classificazione dei flussi in CQD](stream-classification-in-call-quality-dashboard.md)
+[Classificazione del flusso in Call Quality Dashboard](stream-classification-in-call-quality-dashboard.md)
 
-[Usare Power BI per analizzare i dati CQD](CQD-Power-BI-query-templates.md)
+[Usare Power BI per analizzare i dati di Call Quality Dashboard](CQD-Power-BI-query-templates.md)
