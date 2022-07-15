@@ -1,7 +1,7 @@
 ---
-title: "Esempio di script di PowerShell : responsabili dell'esportazione e loro responsabili dell'esportazione"
-author: SerdarSoysal
-ms.author: serdars
+title: "Esempio di script di PowerShell : responsabili dell'esportazione e relativi report diretti"
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.reviewer: brandber
@@ -16,16 +16,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 436f9566031a2cd9bc3b06a23df7b3b7346d3bec
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: fbd1758c0de6d0cb7751b4a447e21ab386f823ba
+ms.sourcegitcommit: 4c4f2f220832cae3efb3f6f3c74795300d661295
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65674178"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66825670"
 ---
-# <a name="powershell-script-sample---export-managers-and-their-directs"></a>Esempio di script di PowerShell : responsabili dell'esportazione e loro responsabili dell'esportazione
+# <a name="powershell-script-sample---export-managers-and-their-direct-reports"></a>Esempio di script di PowerShell : responsabili dell'esportazione e relativi report diretti
 
-Usare questo script di PowerShell per esportare un elenco di responsabili e i relativi indirizzi per l'organizzazione. Usare questo script per prepararsi a creare un team di responsabili delle persone per ogni responsabile con i propri dipendenti diretti come membri del team.
+Usare questo script di PowerShell per esportare un elenco di responsabili e i relativi dipendenti diretti per l'organizzazione. Usare questo script per prepararsi a creare un team di responsabili delle persone per ogni responsabile con i propri dipendenti diretti come membri del team.
 
 Per informazioni su questo script di PowerShell, vedere [Creare team di gestione persone](../create-manager-directs-teams.md).
 

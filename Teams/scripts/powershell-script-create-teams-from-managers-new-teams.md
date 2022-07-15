@@ -1,13 +1,13 @@
 ---
 title: Esempio di script di PowerShell - Creare nuovi team di gestione persone
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.reviewer: brandber
 ms.service: msteams
 audience: admin
-description: Usare questo script di PowerShell per creare un team per ogni manager con i propri diretti come membri del team.
+description: Usare questo script di PowerShell per creare un team per ogni responsabile con i propri dipendenti diretti come membri del team.
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
@@ -16,16 +16,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 05f5a53974444341ecc7da8431525b69bc8f1923
-ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
+ms.openlocfilehash: 0b8eb4f60b5bf15e54821181ffedc584d9202669
+ms.sourcegitcommit: 4c4f2f220832cae3efb3f6f3c74795300d661295
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65681557"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66825660"
 ---
 # <a name="powershell-script-sample---create-new-people-manager-teams"></a>Esempio di script di PowerShell - Creare nuovi team di gestione persone
 
-Usare questo script di PowerShell per creare un team per ogni manager con i propri diretti come membri del team. Prima di eseguire questo script, eseguire lo script [di Export manager](powershell-script-create-teams-from-managers-export-managers.md) per esportare (da Active Directory) un elenco di responsabili e i relativi indirizzi per l'organizzazione.
+Usare questo script di PowerShell per creare un team per ogni responsabile con i propri dipendenti diretti come membri del team. Prima di eseguire questo script, eseguire lo script [di Export manager](powershell-script-create-teams-from-managers-export-managers.md) per esportare (da Active Directory) un elenco di responsabili e i relativi dipendenti diretti per l'organizzazione.
 
 Per informazioni su questo script di PowerShell, vedere [Creare team di gestione persone](../create-manager-directs-teams.md).
 

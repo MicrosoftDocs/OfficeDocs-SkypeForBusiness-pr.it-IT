@@ -1,7 +1,7 @@
 ---
-title: Restrizioni di composizione a numero verde in Svizzera
-ms.author: serdars
-author: SerdarSoysal
+title: Restrizioni alle chiamate verdi in Svizzera
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: davlick, krkilaru
 ms.topic: reference
@@ -21,27 +21,27 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Questo ti aiuterà a scoprire come comporre numeri a numero verde in ogni paese/area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli specifici, restrizioni e limiti per la disponibilità di servizi gratuiti in cui è disponibile il servizio a pagamento. Il formato o i formati di composizione mostrano i codici di accesso necessari in ogni paese o area geografica per comporre il numero verde.
-ms.openlocfilehash: 1de9d614a214727319d11a0540b44977ab9951c7
-ms.sourcegitcommit: 59d209ed669c13807e38196dd2a2c0a4127d3621
+description: Questo ti aiuterà a scoprire come comporre numeri verdi in ogni paese/area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli specifici, restrizioni e limiti per la disponibilità di servizi verdi in cui è disponibile il servizio gratuito. Il formato o i formati di chiamata mostrano i codici di accesso necessari all'interno di ogni paese o area geografica per comporre il numero verde.
+ms.openlocfilehash: dc68a225ee5baf36065dc7b471bc3ee9ba5da979
+ms.sourcegitcommit: 4c4f2f220832cae3efb3f6f3c74795300d661295
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2022
-ms.locfileid: "62400800"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66825490"
 ---
-# <a name="toll-free-dialing-restrictions-in-switzerland"></a>Restrizioni di composizione a numero verde in Svizzera
+# <a name="toll-free-dialing-restrictions-in-switzerland"></a>Restrizioni alle chiamate verdi in Svizzera
 
-[Trova un altro paese o area geografica](../toll-free-dialing-limitations-and-restrictions.md) o scopri di più sulle limitazioni e le restrizioni di composizione a numero verde.
+[Trova un altro paese o area geografica](../toll-free-dialing-limitations-and-restrictions.md) o scopri di più sulle limitazioni e restrizioni per le chiamate a numeri verdi.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|Sono disponibili chiamate a numero verde?  <br/> |Sì  <br/> |
-|Formati di composizione  <br/> | 0800 <br>|
-|Codice ISO del paese/area geografica  <br/> |CH  <br/> |
+|Sono disponibili chiamate verdi?  <br/> |Sì  <br/> |
+|Formati di chiamata  <br/> | 0800 <br>|
+|Codice ISO paese/area geografica  <br/> |CH  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> | Non applicabile  <br/>  |
-|Disponibilità linea cablata/fissa  <br/> |Sì  <br/> |
+|Disponibilità di linee cablate/fisse  <br/> |Sì  <br/> |
 |Disponibilità rete mobile  <br/> | Sì (alcuni numeri potrebbero essere premium) <br/> |
 |Commenti, restrizioni e problemi di accesso  <br/> |Nessuno  <br/> |
 

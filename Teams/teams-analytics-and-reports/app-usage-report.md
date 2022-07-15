@@ -1,7 +1,7 @@
 ---
-title: Microsoft Teams report sull'utilizzo delle app
-author: SerdarSoysal
-ms.author: serdars
+title: Report utilizzo app Microsoft Teams
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -13,32 +13,32 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare il report sull'utilizzo delle app Teams nell'interfaccia di amministrazione di Microsoft Teams.
+description: Informazioni su come usare il report sull'utilizzo dell'app Teams nell'interfaccia di amministrazione di Microsoft Teams.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8ef86a0387c3966b795c323d1c28d0e1ca788e1
-ms.sourcegitcommit: e102d72e67ab1c440c29ae6a048fc2cf8545fe01
+ms.openlocfilehash: 6fb738bc1b1fd068196d1b7c3238c139426eac73
+ms.sourcegitcommit: 4c4f2f220832cae3efb3f6f3c74795300d661295
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217950"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66825680"
 ---
-# <a name="microsoft-teams-app-usage-report"></a>Microsoft Teams report sull'utilizzo delle app
+# <a name="microsoft-teams-app-usage-report"></a>Report utilizzo app Microsoft Teams
 
-Il report sull'utilizzo delle app Teams nell'interfaccia di amministrazione di Microsoft Teams fornisce informazioni sulle app usate dagli utenti in Teams.  
+Il report Utilizzo app Teams nell'interfaccia di amministrazione di Microsoft Teams fornisce informazioni sulle app usate dagli utenti in Teams.  
 
 ## <a name="view-the-app-usage-report"></a>Visualizzare il report Utilizzo app
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione in <https://admin.teams.microsoft.com>fare clic su **Analytics &** **reportUsa** >  report.<br><br>![Screenshot della voce di menu Report utilizzo.](media/app-usage-report1.png "Screenshot della voce di menu Report utilizzo.")
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione in <https://admin.teams.microsoft.com>fare clic su **Analisi & report** > **utilizzo**.<br><br>![Screenshot della voce di menu Report utilizzo.](media/app-usage-report1.png "Screenshot della voce di menu Report utilizzo.")
 2. Nella scheda **Visualizza report** , in **Report**, selezionare **Utilizzo app**.
 
-3. In **Intervallo di date** selezionare un intervallo e quindi fare clic su **Esegui report**. Il report sull'utilizzo di Teams app può essere visualizzato per le tendenze degli ultimi 7, 30 o 90 giorni.<br><br>![Screenshot del report Utilizzo app.](media/app-usage-report2.png "Screenshot del report Utilizzo app.")
+3. In **Intervallo di date** selezionare un intervallo e quindi fare clic su **Esegui report**. Il report Utilizzo app Teams può essere visualizzato per le tendenze degli ultimi 7, 30 o 90 giorni.<br><br>![Screenshot del report Utilizzo app.](media/app-usage-report2.png "Screenshot del report Utilizzo app.")
 
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 
-:::image type="content" alt-text="Screenshot del report sull'utilizzo delle app Teams nell'interfaccia di amministrazione di Teams con callout." source="media/app-usage-report5.png" lightbox="media/app-usage-report5.png":::
+:::image type="content" alt-text="Screenshot del report utilizzo app Teams nell'interfaccia di amministrazione di Teams con callout." source="media/app-usage-report5.png" lightbox="media/app-usage-report5.png":::
 
 Ogni report ha una data in alto a sinistra che indica la data di creazione del report. I report in genere riflettono una latenza di 24 ore rispetto all'apertura di un'app.
 
@@ -64,13 +64,13 @@ La tabella nella parte inferiore del report (6) mostra gli utenti attivi e i tea
 
 Per aggiungere o rimuovere colonne nella tabella, nell'angolo in alto a destra fare clic sull'icona **Modifica colonne** (7), nella scheda **Modifica colonne** selezionare nuovi criteri e quindi fare clic su **Applica**.
 
-Per esportare il report in un file CSV per l'analisi offline, nell'angolo in alto a destra selezionare l'icona **Esporta in Excel** (8), quindi nella scheda **Download** in **Stato** fare clic su **Scarica**.
+Per esportare il report in un file CSV per l'analisi offline, nell'angolo in alto a destra selezionare l'icona **Esporta in Excel** (8) e quindi nella scheda **Download** in **Stato** fare clic su **Scarica**.
 
    :::image type="content" alt-text="Screenshot del riquadro Download." source="media/app-usage-report7.png" lightbox="media/app-usage-report7.png":::
 
-Quando si visualizza il report in Excel, viene visualizzata anche una colonna **Id**, che rappresenta l'ID dell'app, in genere una stringa alfanumerica. Se **l'ID** è **\n**, significa che un utente ha chiesto di eliminare le informazioni.
+Quando si visualizza il report in Excel, viene visualizzata anche una colonna **Id** , che rappresenta l'ID dell'app, in genere una stringa alfanumerica. Se **l'ID** è **\n**, significa che un utente ha chiesto di eliminare le informazioni.
 
-   ![Screenshot del report Excel scaricato.](media/app-usage-report8.png "Screenshot del report Excel scaricato.")
+   ![Screenshot del report di Excel scaricato.](media/app-usage-report8.png "Screenshot del report di Excel scaricato.")
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -7,8 +7,8 @@ metadata:
   audience: IT Pro
   level: Intermediate
   displayType: one-column
-  ms.author: serdars
-  author: SerdarSoysal
+  ms.author: mikeplum
+  author: MikePlumleyMSFT
   ms.reviewer: shalenc
   manager: serdars
   ms.service: msteams
@@ -20,16 +20,16 @@ metadata:
   - Teams_ITAdmin_RemoteWorkers
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: 3ada1b46f057c4c1f6f7d715c038c78e1e0eecd1
-  ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
+  ms.openlocfilehash: 101be689ff6fba7facf7a550d3affd31cf423d5a
+  ms.sourcegitcommit: 4c4f2f220832cae3efb3f6f3c74795300d661295
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 06/01/2022
-  ms.locfileid: "65823015"
+  ms.lasthandoff: 07/15/2022
+  ms.locfileid: "66825530"
 items:
 - durationInMinutes: 1
   content: >
-    In questa formazione verranno presentate le riunioni in Microsoft Teams. Verranno trattato le funzionalità delle riunioni in Teams oltre a considerazioni sui requisiti e sulla pianificazione per Teams.
+    In questa formazione verranno presentate le riunioni in Microsoft Teams. Verranno trattato le funzionalità delle riunioni in Teams, oltre a considerazioni sui requisiti e sulla pianificazione per Teams.
 
 
     [!INCLUDE [tutorial-disclaimer-note](includes/tutorial-disclaimer-note.md)]
@@ -67,7 +67,7 @@ items:
     -   Pubblica nella sezione commenti nella parte inferiore della pagina "Passaggi successivi" di questa esercitazione.
 
 
-    Per inviare feedback sui prodotti relativi a Teams, ad esempio idee per nuove funzionalità, visitare [Teams portale di feedback](https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472).
+    Per inviare feedback sui prodotti su Teams, ad esempio idee per nuove funzionalità, visitare il [portale di feedback di Teams](https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472).
 - title: Riunioni in Teams
   durationInMinutes: 16
   content: "\nPer comprendere come funzionano le riunioni in Teams, vedere quanto segue:\n-   \"Organizzare riunioni\" in [Riunioni e chiamate](https://support.office.com/article/Meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8) (tempo di lettura stimato 6 minuti)\n\n-   [Riunione immediata](https://support.office.com/article/Video-Meet-now-26e06837-853d-4df1-a729-06bf700d4ecf) video (1:45 minuti)\n\n-   [Riunioni programmate](https://support.office.com/article/Video-Scheduled-meetings-ba44d0fd-da3c-4541-a3eb-a868f5e2b137) video (1:45 minuti)\n\n-   [9 suggerimenti per le riunioni con Microsoft Teams](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/9-tips-for-meeting-with-Microsoft-Teams/ba-p/151444) per informazioni sulla sala di attesa, su come partecipare alle riunioni in modo anonimo e altro ancora (tempo di lettura stimato 6 minuti).\n"
@@ -108,7 +108,7 @@ items:
 
     2.  Inviare un feedback:
         - pubblicare nella sezione commenti di questa esercitazione nella parte inferiore di questa pagina
-        - Per inviare Teams feedback sui prodotti o richiedere una nuova funzionalità, vai a [Teams Portale di feedback](https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472).
+        - Per inviare feedback sui prodotti Teams o richiedere una nuova funzionalità, vai al [portale feedback di Teams](https://feedbackportal.microsoft.com/feedback/forum/ad198462-1c1c-ec11-b6e7-0022481f8472).
     3.  Rimanere aggiornati:
         - seguire il [blog di Teams](https://aka.ms/teamsblog)
         - leggere la [roadmap di Teams](https://aka.ms/O365Roadmap)
