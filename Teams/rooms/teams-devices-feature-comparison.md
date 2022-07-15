@@ -20,21 +20,21 @@ f1.keywords:
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 46ea03016b329801b5cdd4b422192ff35496dbdd
-ms.sourcegitcommit: e3931446943684db155bb3edf7d7e52d41775013
+ms.openlocfilehash: c7b61ebcc5fa650e7282b48d45862b2649783af7
+ms.sourcegitcommit: 2871c05e00458a0cc76d919ff822b0b354bd1f72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65886703"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810168"
 ---
 # <a name="teams-devices-for-shared-spaces-feature-comparison-between-windows-and-android"></a>Confronto delle funzionalità dei dispositivi Teams per gli spazi condivisi tra Windows e Android 
-Le esperienze di Microsoft Teams Rooms sono progettate pensando ai clienti. Ogni cliente ha esigenze specifiche, motivo per cui Microsoft offre un'ampia gamma di opzioni, tra cui Teams Rooms su Windows e Android. 
+Microsoft Teams Rooms esperienze sono progettate pensando ai clienti. Ogni cliente ha esigenze specifiche ed è per questo che Microsoft offre un'ampia gamma di opzioni, tra cui Teams Rooms su Windows e Android. 
 
 Le funzionalità di base sono disponibili su entrambe le piattaforme, in modo che gli utenti finali possano sempre avere esperienze audio e video eccezionali, usare un join con un tocco per partecipare alle riunioni e accedere a funzionalità inclusive come i sottotitoli in tempo reale e alzare la mano. 
 
-Poiché Microsoft porta nuove funzionalità in Teams e in Teams Rooms, ci sforziamo di portarle in tutte le piattaforme, ma le funzionalità possono essere distribuite in momenti diversi a causa di una serie di fattori, tra cui elementi come fattibilità tecnica e feedback dei clienti per ogni piattaforma. Ciò significa che alcune funzionalità potrebbero essere distribuite in Windows prima che vengano distribuite nella piattaforma Android. 
+Poiché Microsoft porta nuove funzionalità in Teams e per Teams Rooms, ci sforziamo di portarle in tutte le piattaforme, ma le funzionalità possono essere distribuite in momenti diversi a causa di una serie di fattori, tra cui elementi come fattibilità tecnica e feedback dei clienti per ogni piattaforma. Ciò significa che alcune funzionalità potrebbero essere distribuite in Windows prima che vengano distribuite nella piattaforma Android. 
 
-Per guidarti su quali funzionalità sono disponibili su piattaforme diverse, puoi fare riferimento al grafico seguente, che verrà aggiornato periodicamente. Non tutte le funzionalità di Teams Rooms saranno incluse in questo elenco, quindi continua a consultare la [roadmap di Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) e i rappresentanti di vendita Microsoft per ulteriori dettagli.    
+Per guidarti su quali funzionalità sono disponibili su piattaforme diverse, puoi fare riferimento al grafico seguente, che verrà aggiornato periodicamente. Non tutte le funzionalità Teams Rooms saranno incluse in questo elenco, quindi continuare a consultare la [roadmap di Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) e i rappresentanti delle vendite Microsoft per ulteriori dettagli.    
 
 ## <a name="teams-devices-for-shared-spaces"></a>Dispositivi di Teams per gli spazi condivisi
 ### <a name="feature-comparison-between-windows-and-android"></a>Confronto delle funzionalità tra Windows e Android
@@ -77,10 +77,11 @@ Per guidarti su quali funzionalità sono disponibili su piattaforme diverse, puo
 ||Monitoraggio dell'integrità periferica connesso |Disponibile  |Prossimamente |
 ||Configurazione remota (riavvio, impostazioni, raccolta log) |Disponibile  |Disponibile |
 ||Aggiornamenti automatici delle app Teams |Disponibile  |Disponibile |
-||Registrazione automatica dispositivi |Disponibile |Prossimamente |
+||Registrazione automatica dispositivi |Disponibile |Disponibile |
 ||Analisi della qualità delle chiamate |Disponibile  |Disponibile |
 |**Buono per / Spazio**|Focus (2-4 persone) |Disponibile  |Disponibile |
 ||Piccola (4-6 persone) |Disponibile  |Disponibile |
 ||Medio (6-12 persone) |Disponibile  |Disponibile |
 ||Grande (12-16 persone) |Disponibile  |Disponibile |
 ||Stanza multiuso (più di 16 persone) |Disponibile  |Non disponibile |
+

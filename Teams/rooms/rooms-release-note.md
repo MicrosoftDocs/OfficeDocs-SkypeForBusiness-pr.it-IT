@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: Amministrazione possibile leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d4ac16e7214a6340eb74f1c154661f78a50992ee
-ms.sourcegitcommit: bdb919a6f53556f76dd4a71759412023e6e18fbb
+ms.openlocfilehash: 07b4661df5df7ac766c17a07c2bdd940b3d2cb6b
+ms.sourcegitcommit: 2871c05e00458a0cc76d919ff822b0b354bd1f72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66529698"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810108"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
@@ -27,18 +27,19 @@ Questo articolo descrive i miglioramenti cumulativi in Microsoft Teams Rooms.
 
 Esistono due tipi di aggiornamenti per Teams Rooms: aggiornamenti delle app Teams Rooms e client Web di Teams. 
 
-Teams Rooms gli aggiornamenti delle app avvengono tramite Microsoft Store o tramite [l'aggiornamento manuale](manual-update.md). In questo modo viene aggiornata l'applicazione piattaforma UWP (Universal Windows Platform) (UWP) installata localmente nel dispositivo.
+Teams Rooms gli aggiornamenti delle app avvengono tramite Microsoft Store o tramite [l'aggiornamento manuale](manual-update.md). Aggiornamenti vengono applicati all'applicazione piattaforma UWP (Universal Windows Platform) (UWP) installata localmente nel dispositivo.
 
-Gli aggiornamenti di Teams web-client si verificano tramite i servizi di recapito delle app Web di Teams. Si tratta di un servizio basato sul cloud che non richiede un aggiornamento dell'applicazione UWP locale installata nel dispositivo.
+Gli aggiornamenti del client Web di Teams si verificano tramite i servizi di recapito delle app Web di Teams. Il client Web di Teams è un servizio basato sul cloud che non richiede un aggiornamento dell'applicazione UWP locale installata nel dispositivo.
 
 Per altre informazioni sulla modalità di aggiornamento di Teams, vedere [Processo di aggiornamento di Teams](../teams-client-update.md)
 
-Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per altre informazioni, vedere [Processo di aggiornamento di Teams](../teams-client-update.md#servicing-agreement) .
+Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per altre informazioni, vedere [Processo di aggiornamento di Teams](../teams-client-update.md#servicing-agreement).
 
 ## <a name="version-history"></a>Cronologia versioni
 
 |Rilascio |Pubblicato su <br/> Microsoft Store |
 |--- |--- |
+|4.12.139.0 |7/14/2022 |
 |4.12.138.0 |5/26/2022 |
 |4.12.126.0 |4/27/2022 |
 |4.11.17.0 |3/3/2022 |
@@ -92,6 +93,15 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Microsoft Teams Rooms introduzione delle funzionalità e risoluzione dei problemi
 
+### <a name="4121390-7142022"></a>4.12.139.0 (7/14/2022)
+
+Introdotto in questo aggiornamento:
+
+- Modifica il numero di versione per consentire ai sistemi interessati da [Windows KB5013942](https://support.microsoft.com/topic/may-10-2022-kb5013942-os-builds-19042-1706-19043-1706-and-19044-1706-60b51119-85be-4a34-9e21-8954f6749504) di registrare nuovamente l'app in modo che possa avviarla. Non ci sono modifiche funzionali in questa versione dell'app dalla 4.1.2.138.0.
+
+> [!NOTE]
+> Per altre informazioni, vedi "Teams Rooms'app non viene avviata dopo l'aggiornamento" in [Problemi noti di Teams Rooms e dispositivi](/microsoftteams/troubleshoot/teams-rooms-and-devices/rooms-known-issues).
+
 ### <a name="4121380-5262022"></a>4.12.138.0 (5/26/2022)
 
 Introdotto in questo aggiornamento:
@@ -102,7 +112,7 @@ Introdotto in questo aggiornamento:
 ### <a name="4121260-4272022"></a>4.12.126.0 (4/27/2022)
 
 Introdotto in questo aggiornamento:
-- Gli amministratori IT possono registrare un dispositivo delle sale di Teams per ricevere le funzionalità di anteprima pubblica tramite l'impostazione XML. Dopo la registrazione, il dispositivo inizierà a ricevere le funzionalità beta. Tutte le funzionalità che vanno ai test beta vengono annunciate in [Microsoft Teams Public Preview - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-teams-public-preview/bd-p/MicrosoftTeamsPublicPreview)<sup>1,2</sup>  
+- Gli amministratori IT possono registrare un dispositivo delle sale di Teams per ricevere le funzionalità di anteprima pubblica tramite l'impostazione XML. Dopo la registrazione, il dispositivo inizierà a ricevere le funzionalità beta. Tutte le funzionalità che vanno ai test beta vengono annunciate in [Anteprima pubblica di Microsoft Teams - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/microsoft-teams-public-preview/bd-p/MicrosoftTeamsPublicPreview) <sup>1,2</sup>  
 - L'amministratore IT può impostare la risoluzione dello schermo della sala e il ridimensionamento in remoto tramite le impostazioni XML<sup>2</sup>
 - L'amministratore IT può disabilitare l'eliminazione del rumore microsoft tramite l'impostazione XML<sup>3</sup> 
 - L'amministratore IT può ignorare la pulizia della cartella di download nel dispositivo tramite l'impostazione<sup>4</sup> della chiave del Registro di sistema

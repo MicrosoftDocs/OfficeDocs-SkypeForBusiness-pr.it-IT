@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.users.activity.audioqualitycolumn
 - Reporting
 description: Usare la telemetria in tempo reale con dettagli su dispositivi, reti e connettività per risolvere i problemi degli utenti con le riunioni pianificate di Microsoft Teams.
-ms.openlocfilehash: e1f9b445917a0bfd8ba06a736444fc532aa1a0b7
-ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
+ms.openlocfilehash: 203f16d83d211a4a85f3217992d509bccba5dea3
+ms.sourcegitcommit: 2871c05e00458a0cc76d919ff822b0b354bd1f72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66794344"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66810178"
 ---
 # <a name="use-real-time-telemetry-to-troubleshoot-poor-meeting-quality"></a>Usare i dati di telemetria in tempo reale per risolvere problemi di scarsa qualità delle riunioni
 
@@ -137,10 +137,10 @@ I segnali dell'utente identificano quando un utente sta partecipando attivamente
 
 ## <a name="teams-devices-with-support-for-real-time-telemetry"></a>Dispositivi Teams con supporto per la telemetria in tempo reale
 
-- MTR - Surface Hub
-- MTR - Teams Display
-- MTR - Barra di collaborazione
-- Dispositivi telefono IP
+- Visualizzazione di Teams
+- Telefono di Teams
+- Teams Rooms
+- Teams Rooms su Surface Hub
 
 > [!NOTE]
 > I dispositivi che hanno eseguito l'accesso alla riunione con soluzioni Cloud Video Interop (CVI) non sono supportati in Real-Time Analytics.
