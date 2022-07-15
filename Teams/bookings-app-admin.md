@@ -1,8 +1,8 @@
 ---
 title: Gestire l'app Bookings in Microsoft Teams
-author: mkbond007
-ms.author: mabond
-manager: serdars
+author: LanaChin
+ms.author: v-lanachin
+manager: samanro
 audience: ITPro
 ms.topic: article
 ms.service: msteams
@@ -21,16 +21,16 @@ ms.collection:
 - m365solution-scenario
 ms.reviewer: ''
 description: Informazioni su come gestire l'app Bookings in Teams per gli utenti dell'organizzazione.
-ms.openlocfilehash: 45ce6c29cd7bfbaedf53c1b75178142a925157cb
-ms.sourcegitcommit: 15ec17eff4ad4c962d00b8683513f9b269d82917
+ms.openlocfilehash: f11739784dcb9897bf9a3fcbffdadc8aea00d3e0
+ms.sourcegitcommit: c4ec82b7d8a820362b6b0276470b0dea95a628df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695039"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66819291"
 ---
 # <a name="manage-the-bookings-app-in-microsoft-teams"></a>Gestire l'app Bookings in Microsoft Teams
 
-L'app Bookings in Microsoft Teams offre un modo semplice per pianificare appuntamenti di persona e virtuali. Ad esempio, visite mediche, consulenze finanziarie, interviste, supporto tecnico e orari di ufficio per l'istruzione. Per altre informazioni, vedere [Appuntamenti virtuali con Teams e l'app Bookings](expand-teams-across-your-org/bookings-virtual-visits.md).
+L'app Bookings in Microsoft Teams offre un modo semplice per pianificare appuntamenti di persona e virtuali. Ad esempio, visite mediche, consulenze finanziarie, interviste, supporto tecnico e orari di ufficio per l'istruzione. Per altre informazioni, vedere [Appuntamenti virtuali con Teams e l'app Bookings](/microsoft-365/frontline/bookings-virtual-visits).
 
 Gli scheduler possono gestire più calendari e comunicazioni di reparto e del personale con partecipanti interni ed esterni, da un'unica esperienza. Gli appuntamenti virtuali si svolgono tramite riunioni di Microsoft Teams che offrono solide funzionalità di videoconferenza.
 
@@ -100,7 +100,7 @@ Per inviare feedback, selezionare l'opzione **Guida** nella parte inferiore dell
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Gestire l'esperienza di partecipazione per gli appuntamenti virtuali di Teams nei browser](expand-teams-across-your-org/browser-join.md)
+[Gestire l'esperienza di partecipazione per gli appuntamenti virtuali di Teams nei browser](/microsoft-365/frontline/browser-join)
 
 
   [Documentazione di Bookings per gli utenti finali](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?ui=en-US&rs=en-US&ad=US#PickTab=Bookings)

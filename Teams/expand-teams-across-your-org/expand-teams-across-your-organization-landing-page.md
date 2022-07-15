@@ -1,6 +1,6 @@
 ---
-title: Espandere Microsoft Teams all'interno dell'organizzazione
-description: Informazioni sulle risorse disponibili per la creazione della distribuzione Teams standard per ottenere il massimo Teams specifici tipi di organizzazione.
+title: Espandere Microsoft Teams nell'organizzazione
+description: Informazioni sulle risorse disponibili per la compilazione della distribuzione standard di Teams per sfruttare al meglio Teams per tipi di organizzazione specifici.
 ms.topic: conceptual
 author: LanaChin
 ms.author: v-lanachin
@@ -15,27 +15,22 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0890e27bf4da98224edad9675ea44f7abd513c10
-ms.sourcegitcommit: 5ca04ee10e3f254e1b24506de116591fdfd51d18
+ms.openlocfilehash: 89e6012d1476a829b3ad7405e4a087931e31293a
+ms.sourcegitcommit: c4ec82b7d8a820362b6b0276470b0dea95a628df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "62929221"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66819301"
 ---
-# <a name="expand-microsoft-teams-across-your-organization"></a>Espandere Microsoft Teams all'interno dell'organizzazione
+# <a name="expand-microsoft-teams-across-your-organization"></a>Espandere Microsoft Teams nell'organizzazione
 
-Queste risorse si basano sulle linee guida standard Teams distribuzione e sono progettate per consentire di ottenere il massimo Teams specifici tipi di organizzazione. Se non è ancora stata Teams distribuzione, vedere il percorso consigliato per Teams in [Come implementare](../deploy-overview.md) Microsoft Teams.
+Queste risorse si basano sulle linee guida standard per la distribuzione di Teams e sono progettate per aiutarti a ottenere il massimo da Teams per tipi di organizzazione specifici. Se Teams non è ancora stato distribuito, vedere il percorso consigliato per Teams in [Come implementare Microsoft Teams](../deploy-overview.md).
 
-Scopri cosa puoi fare con i Teams per:
+Scopri cosa puoi fare con Teams per:
 
-- [Istruzione](./teams-for-education-landing-page.md)
-- [Lavoratori in prima linea](../flw-landing-page.md)
-- [Governo](./teams-for-government-landing-page.md)
-- [Sanità](./teams-for-healthcare-landing-page.md)
-- [Organizzazione no profit](./teams-for-nonprofit-landing-page.md)
-- [Vendita al dettaglio](./teams-for-retail-landing-page.md)
-
-Oppure altre informazioni su queste app e funzionalità disponibili per tutti i settori:
-
-- [Turni per Teams](./shifts-for-teams-landing-page.md)
-- [Prenotazioni in Teams](../bookings-app-admin.md)
+- [Istruzione](teams-for-education-landing-page.md)
+- [Operatori in prima linea](../flw-landing-page.md)
+- [Governo](teams-for-government-landing-page.md)
+- [Sanità](/microsoft-365/frontline/teams-in-hc?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json)
+- [Lucro](teams-for-nonprofit-landing-page.md)
+- [Commercio al dettaglio](/microsoft-365/frontline/teams-for-retail-landing-page?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json)

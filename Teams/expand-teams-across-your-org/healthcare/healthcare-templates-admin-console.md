@@ -22,12 +22,12 @@ appliesto:
 ms.reviewer: yinchang
 description: Informazioni su come gestire e usare i modelli del team sanitario nell'interfaccia di amministrazione di Teams e con Microsoft Graph per creare rapidamente e facilmente team per l'organizzazione sanitaria.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 78269b393c384af82e48284e3ffefe8785013975
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: 831e4e257277ce2fca6dc007ac5f3bfe963bca35
+ms.sourcegitcommit: c4ec82b7d8a820362b6b0276470b0dea95a628df
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60046002"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66819441"
 ---
 # <a name="use-healthcare-team-templates"></a>Usare i modelli di team per il settore sanitario
 
@@ -48,7 +48,7 @@ La gestione e l'utilizzo dei modelli di team dipendono dal fatto che si sia ammi
 
 Gli amministratori possono gestire i modelli di team nell'interfaccia di amministrazione di Microsoft Teams. Qui è possibile visualizzare i dettagli su ogni modello. È anche possibile [creare e assegnare criteri di modelli](../../templates-policies.md) al personale per controllare i modelli visualizzati in Teams per la creazione di [team](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b).
 
-Per altre informazioni sui modelli di team in generale, vedere Introduzione ai modelli [di team nell'interfaccia di amministrazione di Teams.](../../get-started-with-teams-templates-in-the-admin-console.md)
+Per altre informazioni sui modelli di team in generale, vedere Introduzione ai modelli [di team nell'Teams di amministrazione.](../../get-started-with-teams-templates-in-the-admin-console.md)
 
 Attualmente sono disponibili i modelli di team sanitari predefiniti seguenti. Per visualizzarli, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare a modelli **Teams**  >  **team.**
 ### <a name="patient-care"></a>Assistenza ai pazienti
@@ -73,7 +73,7 @@ Questo modello mira a semplificare le comunicazioni e la collaborazione tra più
 &sup1; App aggiunta al canale come scheda
 ## <a name="use-team-templates-with-microsoft-graph"></a>Usare i modelli di Teams con Microsoft Graph
 
-Gli sviluppatori possono usare Microsoft Graph per creare team dai modelli di team predefiniti. Per altre informazioni sull'uso dei modelli di team con Microsoft Graph, vedere [Introduzione ai modelli di team con Microsoft Graph](../../get-started-with-teams-templates.md), [Panoramica dell'API Microsoft Teams](/graph/teams-concept-overview?view=graph-rest-1.0) e [Tipo di risorsa teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-1.0).
+Gli sviluppatori possono usare Microsoft Graph per creare team dai modelli di team predefiniti. Per altre informazioni sull'uso dei modelli di team con Microsoft Graph, vedere [Introduzione ai modelli di team con Microsoft Graph](../../get-started-with-teams-templates.md), [Panoramica dell'API Microsoft Teams](/graph/teams-concept-overview) e [Tipo di risorsa teamsTemplate](/graph/api/resources/teamstemplate).
 
 Ecco i modelli predefiniti del team sanitario.
 ### <a name="ward"></a>Reparto
@@ -102,7 +102,7 @@ Ad esempio, se si ha un reparto di *endocrinologia,* ma non è necessario un can
 
 ### <a name="how-to-use-team-templates-with-microsoft-graph"></a>Come usare i modelli di team con Microsoft Graph
 
-Per usare questi modelli, modificare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" ai TemplateID precedenti. Per altre informazioni su come distribuire i modelli di team, vedere l'articolo Microsoft Graph su come [creare un team.](/graph/api/team-post?view=graph-rest-beta)
+Per usare questi modelli, modificare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" ai TemplateID precedenti. Per altre informazioni su come distribuire i modelli di team, vedere l'articolo microsoft Graph su come [creare un team.](/graph/api/team-post?view=graph-rest-beta)
 
 > [!NOTE]
 > I canali nel modello verranno creati automaticamente nella **scheda** Generale.
@@ -214,4 +214,4 @@ Per usare questi modelli, modificare la proprietà "template@odata.bind" nel cor
 - [Creare un team da un modello](https://support.microsoft.com/office/create-a-team-with-team-templates-702a2977-e662-4038-bef5-bdf8ee47b17b)
 - [Introduzione ai modelli di team nell'interfaccia Teams di amministrazione](../../get-started-with-teams-templates-in-the-admin-console.md)
 - [Introduzione ai modelli di team con Microsoft Graph](../../get-started-with-teams-templates.md)
-- [Guida introduttiva a Teams per le organizzazioni del settore sanitario](teams-in-hc.md)
+- [Guida introduttiva a Teams per le organizzazioni del settore sanitario](/microsoft-365/frontline/teams-in-hc?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json)
