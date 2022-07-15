@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d31474233057d930ccdbc0bdfea27262cc5dc04
-ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
+ms.openlocfilehash: 30938e8175c12802339767ba0f2e6324cae3b871
+ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66046005"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66789421"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -228,7 +228,7 @@ Un team di classe può supportare più di 300 membri. Se si prevede di usare l'a
 |---------|---------|
 |Numero di tag per team    | 100        |
 |Numero di tag predefiniti consigliati per ogni team    | 25        |
-|Numero di membri del team assegnati a un tag    |100         |
+|Numero di membri del team assegnati a un tag    |200         |
 |Numero di tag assegnati a un utente per team    |25         |
 
 ## <a name="contacts"></a>Contatti
