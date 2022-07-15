@@ -1,9 +1,9 @@
 ---
 title: Gestire l'app Turni per l'organizzazione
-author: mkbond007
-ms.author: mabond
+author: LanaChin
+ms.author: v-lanachin
 ms.reviewer: aaku
-manager: serdars
+manager: samanro
 ms.topic: article
 audience: admin
 ms.service: msteams
@@ -24,12 +24,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4c4b76bb4f2f63ffadc0a98d00a8f2d10ec8ef91
-ms.sourcegitcommit: 9532eb79310cd653010565607fa394f2b8dd182d
+ms.openlocfilehash: e97e90a3a6e97bd2637d63cf3ee0d0bceb57dc15
+ms.sourcegitcommit: c4ec82b7d8a820362b6b0276470b0dea95a628df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65646265"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66819411"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Turni per l'organizzazione in Microsoft Teams
 
@@ -50,7 +50,7 @@ L'app Turni in Microsoft Teams mantiene gli operatori in prima linea connessi e 
 Turni è disponibile in tutte le SKU Enterprise dove Teams è disponibile.
 
 > [!NOTE]
-> Turni è disponibile in ambienti Government Community Cloud (GCC), ma non in ambienti GCC High o DoD.
+> Turni è disponibile negli ambienti Government Community Cloud (GCC), ma non negli ambienti GCC High o DoD.
 
 ## <a name="location-of-shifts-data"></a>Posizione dei dati di Turni
 
@@ -71,15 +71,15 @@ Turni è abilitato per impostazione predefinita per tutti gli utenti di Teams ne
 
 Per consentire o bloccare l'uso di Turni da parte di utenti specifici dell'organizzazione, verificare che Turni sia attivato per l'organizzazione nella pagina [Gestisci app](../../manage-apps.md) . Creare quindi un criterio di autorizzazione per le app personalizzato e assegnarlo a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](../../teams-app-permission-policies.md).
 
-### <a name="pin-shifts-to-teams"></a>Aggiungi turni a Teams
+### <a name="pin-shifts-to-teams"></a>Aggiungere turni a Teams
 
-#### <a name="use-the-tailored-frontline-app-experience-to-pin-shifts-and-other-apps-to-teams"></a>Usa l'esperienza app in prima linea personalizzata per aggiungere Turni e altre app a Teams
+#### <a name="use-the-tailored-frontline-app-experience-to-pin-shifts-and-other-apps-to-teams"></a>Usare l'esperienza delle app in prima linea personalizzate per aggiungere Turni e altre app a Teams
 
-L'esperienza delle app in prima linea personalizzate in Teams aggiunge le app più rilevanti in Teams per gli utenti che hanno una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt). Le app aggiunte includono Turni, Walkie-talkie, attività e Approvazioni. Per impostazione predefinita, questa funzionalità è attivata e offre ai dipendenti in prima linea un'esperienza personalizzata in base alle loro esigenze.
+L'esperienza personalizzata per le app in prima linea in Teams aggiunge le app più rilevanti in Teams per gli utenti che hanno una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt). Le app aggiunte includono Turni, Walkie-talkie, attività e approvazioni. Per impostazione predefinita, questa funzionalità è attivata e offre ai dipendenti in prima linea un'esperienza personalizzata in base alle loro esigenze.
 
-Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore del Teams client per dispositivi mobili, in cui gli utenti possono accedervi in modo semplice e rapido.
+Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore dei client mobili di Teams, dove gli utenti possono accedervi rapidamente e facilmente.
 
-Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri delle app impostati, vedere [Personalizzare le app Teams per i dipendenti in prima linea](../../pin-teams-apps-based-on-license.md).  
+Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri delle app impostati, vedere [Personalizzare le app di Teams per i dipendenti in prima linea](/microsoft-365/frontline/pin-teams-apps-based-on-license?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json).  
 
 #### <a name="use-an-app-setup-policy-to-pin-shifts-to-teams"></a>Usare i criteri di configurazione delle app per aggiungere Turni a Teams
 
@@ -87,7 +87,7 @@ I criteri di configurazione delle app consentono di personalizzare Teams per agg
 
 È possibile creare criteri di [configurazione delle app personalizzati](../../teams-app-setup-policies.md) aggiungendo l'app Turni e quindi [assegnandoli](../../assign-policies-users-and-groups.md) agli utenti. In alternativa, è possibile usare i criteri di configurazione dell'app che fanno parte dei pacchetti dei criteri Frontline Worker e Frontline Manager.
 
-Un [pacchetto](../../manage-policy-packages.md) di criteri in Teams è una raccolta di criteri e impostazioni dei criteri predefiniti che è possibile assegnare agli utenti con ruoli simili nell'organizzazione. Il set di criteri nei pacchetti di criteri Frontline Worker e Frontline Manager include un criterio di configurazione dell'app che blocca l'app Turni e altre app che supportano le attività di comunicazione e collaborazione per quel ruolo.
+Un [pacchetto di criteri](../../manage-policy-packages.md) in Teams è una raccolta di criteri e impostazioni dei criteri predefiniti che è possibile assegnare agli utenti con ruoli simili nell'organizzazione. Il set di criteri nei pacchetti di criteri Frontline Worker e Frontline Manager include un criterio di configurazione dell'app che blocca l'app Turni e altre app che supportano le attività di comunicazione e collaborazione per quel ruolo.
 
 È consigliabile usare i pacchetti di criteri Frontline Worker e Frontline Manager in quanto semplificano, semplificano e aiutano a garantire la coerenza durante la gestione dei criteri per la forza lavoro in prima linea.
 
@@ -101,8 +101,8 @@ Prima di poter eseguire ricerche nel log di controllo, è necessario attivare il
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Turni per Teams](../shifts-for-teams-landing-page.md)
+- [Turni per Teams](/microsoft-365/frontline/shifts-for-teams-landing-page)
 - [Domande frequenti su Turni](shifts-data-faq.md)
-- [Turni connettori](shifts-connectors.md)
+- [Turni connettori](/microsoft-365/frontline/shifts-connectors)
 - [Guida di Turni per gli operatori in prima linea](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b)
 - [Assegnare i criteri agli utenti in Teams](../../policy-assignment-overview.md)

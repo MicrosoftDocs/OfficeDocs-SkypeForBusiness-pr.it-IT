@@ -1,16 +1,16 @@
 ---
-title: Disponibilità dell'applicazione Approvazioni in Teams
-author: mkbond007
-ms.author: mabond
+title: Gestire l'app Approvazioni in Microsoft Teams
+author: LanaChin
+ms.author: v-lanachin
 ms.reviewer: farhazk
-manager: serdars
+manager: samanro
 ms.topic: article
 audience: admin
 ms.service: msteams
 searchScope:
 - Microsoft Teams
 search.appverid: MET150
-description: Informazioni sulla disponibilità dell'applicazione Approvazioni in Microsoft Teams.
+description: Informazioni su come gestire l'app Approvazioni per l'organizzazione in Microsoft Teams.
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 93b0a74feb2d9333d634b9a7858ff6136ca5b5ec
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 888bd2a3cc9b53595625f43e04ab3b1603645944
+ms.sourcegitcommit: c4ec82b7d8a820362b6b0276470b0dea95a628df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65676498"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66819281"
 ---
-# <a name="teams-approvals-app-availability"></a>Disponibilità dell'app Approvazioni in Teams
+# <a name="manage-the-approvals-app-in-microsoft-teams"></a>Gestire l'app Approvazioni in Microsoft Teams
 
 L'app Approvazioni è disponibile come app personale per tutti gli utenti di Microsoft Teams.
 Offre un modo semplice per ottenere controlli, conformità, rendicontazione e flussi di lavoro delle approvazioni strutturate e non strutturate in Teams.
@@ -36,12 +36,12 @@ Gli utenti possono aggiungere l'app Approvazioni e salvarla nella barra dei menu
 
  ![mostra l'app approvazioni con l'opzione aggiungi.](media/approvalApp-pin.png)
 
-La prima approvazione creata dall'app Approvazioni attiverà il provisioning della soluzione approvazione nell'ambiente predefinito Microsoft Dataverse. Approvazioni creati dall'app Approvazioni verranno archiviati nell'ambiente Microsoft Dataverse predefinito.
+La prima approvazione creata dall'app Approvazioni attiverà il provisioning della soluzione approvazione nell'ambiente predefinito Microsoft Dataverse. Le approvazioni create dall'app Approvazioni verranno archiviate nell'ambiente predefinito Microsoft Dataverse.
 
 Questo articolo descrive i ruoli e i requisiti dell'app Approvazioni.
 
 > [!NOTE]
-> Questa funzionalità non è ancora stata rilasciata per Government Community Cloud utenti high (GCCH) e del Dipartimento della difesa (DOD).
+> Questa funzionalità non è ancora stata rilasciata agli utenti di Government Community Cloud High (GCCH) e Department of Defense (DOD).
 
 ## <a name="required-permissions-and-licenses"></a>Autorizzazioni e licenze richieste
 
@@ -57,7 +57,7 @@ Per distribuire l'app Approvazioni, è necessaria l'autorizzazione per gli eleme
 
 - Agli utenti è necessaria una licenza per Microsoft Forms per configurare nuovi modelli di approvazione.
 
-Per usare l'app Approvazioni, è necessaria una licenza per Power Automate e l'account viene aggiunto automaticamente al ruolo utente Approvazioni nell'ambiente di destinazione alla prima assegnazione di approvazione.
+Per usare l'app Approvazioni, è necessaria una licenza per Power Automate e l'account viene aggiunto automaticamente al ruolo Utente Approvazioni nell'ambiente di destinazione alla prima assegnazione di approvazione.
 
 ## <a name="storage-with-microsoft-dataverse"></a>Archiviazione con Microsoft Dataverse
 
@@ -65,7 +65,7 @@ Il common data model (CDM) è il linguaggio dei dati condiviso usato dalle appli
 
 Altre informazioni sui [flussi di lavoro di Approvazioni](/power-automate/modern-approvals).
 
-Approvazioni create da un modello archiviano comunque i dati in Microsoft Dataverse, ad esempio il titolo, i dettagli, l'ID modello e altro ancora. Le risposte inviate nella richiesta di approvazione vengono archiviate in Forms. Altre informazioni [sull'archiviazione dei dati per Microsoft Forms](https://support.microsoft.com/office/data-storage-for-microsoft-forms-97a34e2e-98e1-4dc2-b6b4-7a8444cb1dc3#:~:text=Where%20data%20is%20stored%20for%20Microsoft%20Forms.%20Microsoft,European-based%20tenants%20is%20stored%20on%20servers%20in%20Europe).
+Le approvazioni create da un modello archiviano comunque i dati in Microsoft Dataverse, ad esempio il titolo, i dettagli, l'ID modello e altro ancora. Le risposte inviate nella richiesta di approvazione vengono archiviate in Forms. Altre informazioni [sull'archiviazione dei dati per Microsoft Forms](https://support.microsoft.com/office/data-storage-for-microsoft-forms-97a34e2e-98e1-4dc2-b6b4-7a8444cb1dc3#:~:text=Where%20data%20is%20stored%20for%20Microsoft%20Forms.%20Microsoft,European-based%20tenants%20is%20stored%20on%20servers%20in%20Europe).
 
 >[!Note]
 >Se si elimina il modello di modulo nel sito Microsoft Forms, il modello di approvazione verrà interrotto e gli utenti non saranno in grado di avviare la richiesta. Gli utenti ricevono un errore "CDB TableNotFound" quando provano ad aprire un modello di approvazione eliminato in Microsoft Forms.
@@ -99,7 +99,7 @@ Autorizzazioni per i modelli di approvazione
 
 - Tutti i proprietari del team possono creare un modello di approvazione per i team di cui sono proprietari.
 
-- Quando un amministratore crea un modello per l'intera organizzazione per la prima volta, crea automaticamente un nuovo gruppo di Azure Active Directory (AAD) per tutti gli amministratori del tenant, inclusi gli amministratori globali e Teams del servizio. Questi amministratori vengono aggiunti come proprietari del gruppo, in modo che possano co-gestire i modelli dell'organizzazione. Gli amministratori che non hanno più accesso all'organizzazione dopo la creazione del team devono essere aggiunti manualmente come proprietari del gruppo in modo che abbiano le stesse autorizzazioni per gestire i modelli a livello di organizzazione.
+- Quando un amministratore crea un modello per l'intera organizzazione per la prima volta, crea automaticamente un nuovo gruppo di Azure Active Directory (AAD) per tutti gli amministratori del tenant, inclusi gli amministratori globali e del servizio Teams. Questi amministratori vengono aggiunti come proprietari del gruppo, in modo che possano co-gestire i modelli dell'organizzazione. Gli amministratori che non hanno più accesso all'organizzazione dopo la creazione del team devono essere aggiunti manualmente come proprietari del gruppo in modo che abbiano le stesse autorizzazioni per gestire i modelli a livello di organizzazione.
 
 > [!Note]
 > Se un amministratore elimina il gruppo, hai un mese per ripristinarlo nel portale di Azure Active Directory (AAD) per ripristinare tutti i dati correlati. Dopo un mese o se l'amministratore elimina questo gruppo nel Cestino, si perderanno tutti i dati correlati.
@@ -114,7 +114,7 @@ L'app Approvazioni è disponibile per impostazione predefinita. È possibile dis
 
   3. Cercare l'app Approvazioni.
 
-     ![mostra la struttura di spostamento centrale Amministrazione con Teams App > Gestisci app evidenziato.](media/manage-approval-apps.png)
+     ![mostra la struttura di spostamento centrale Amministrazione con l'opzione App di Teams > Gestisci app evidenziata.](media/manage-approval-apps.png)
 
   4. Selezionare **Approvazioni**.
 
@@ -122,25 +122,25 @@ L'app Approvazioni è disponibile per impostazione predefinita. È possibile dis
 
      :::image type="content" alt-text="mostra i dettagli per l'app Approvazioni." source="media/approvals-details-new.png" lightbox="media/approvals-details-new.png":::
 
-## <a name="pin-approvals-to-teams"></a>Aggiungere Approvazioni a Teams
+## <a name="pin-approvals-to-teams"></a>Aggiungere approvazioni a Teams
 
-### <a name="use-the-tailored-frontline-app-experience-to-pin-approvals-and-other-apps-to-teams"></a>Usa l'esperienza app in prima linea personalizzata per aggiungere Approvazioni e altre app a Teams
+### <a name="use-the-tailored-frontline-app-experience-to-pin-approvals-and-other-apps-to-teams"></a>Usare l'esperienza app in prima linea personalizzata per aggiungere approvazioni e altre app a Teams
 
-L'esperienza delle app in prima linea personalizzate in Teams aggiunge le app più rilevanti in Teams per gli utenti che hanno una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt). Le app aggiunte includono Approvazioni, Walkie-talkie, attività e turni. Per impostazione predefinita, questa funzionalità è attivata e offre ai dipendenti in prima linea un'esperienza personalizzata in base alle loro esigenze.
+L'esperienza personalizzata per le app in prima linea in Teams aggiunge le app più rilevanti in Teams per gli utenti che hanno una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt). Le app aggiunte includono Approvazioni, Walkie-talkie, attività e turni. Per impostazione predefinita, questa funzionalità è attivata e offre ai dipendenti in prima linea un'esperienza personalizzata in base alle loro esigenze.
 
-Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore del Teams client per dispositivi mobili, in cui gli utenti possono accedervi in modo semplice e rapido.
+Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore dei client mobili di Teams, dove gli utenti possono accedervi rapidamente e facilmente.
 
-Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri delle app impostati, vedere [Personalizzare le app Teams per i dipendenti in prima linea](pin-teams-apps-based-on-license.md).
+Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri delle app impostati, vedere [Personalizzare le app di Teams per i dipendenti in prima linea](/microsoft-365/frontline/pin-teams-apps-based-on-license?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json).
 
-### <a name="use-an-app-setup-policy-to-pin-approvals-to-teams"></a>Usare i criteri di configurazione delle app per aggiungere Approvazioni a Teams
+### <a name="use-an-app-setup-policy-to-pin-approvals-to-teams"></a>Usare i criteri di configurazione delle app per aggiungere approvazioni a Teams
 
-I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere app più importanti per gli utenti.
+I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere app più importanti per gli utenti degli utenti.
 
-Per aggiungere l'app Approvazioni per gli utenti, è possibile modificare il criterio globale (impostazione predefinita a livello di organizzazione) o creare e assegnare criteri di configurazione delle app personalizzati. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
+Per aggiungere l'app Approvazioni per gli utenti, è possibile modificare il criterio globale (impostazione predefinita a livello di organizzazione) o creare e assegnare criteri di configurazione dell'app personalizzati. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
 
 ## <a name="retention-policy"></a>Criteri di conservazione
 
-Approvazioni creati dall'app Approvazioni vengono archiviati nell'ambiente predefinito Microsoft Dataverse, che al momento non supporta i backup. Altre informazioni su come eseguire il [Backup e il ripristino di ambienti - Power Platform \|Microsoft Docs](/power-platform/admin/backup-restore-environments).
+Le approvazioni create dall'app Approvazioni vengono archiviate nell'ambiente predefinito Microsoft Dataverse, che al momento non supporta i backup. Altre informazioni su come eseguire il [Backup e il ripristino di ambienti - Power Platform \|Microsoft Docs](/power-platform/admin/backup-restore-environments).
 
 I dati archiviati in Forms non verranno eliminati finché i proprietari del team non lo puliranno dalla scheda **moduli eliminati** nell'app Web Microsoft Forms.
 
@@ -196,7 +196,7 @@ L'app Approvazioni registra gli eventi di controllo all'interno del Centro sicur
 
 - Modello visualizzato
 
-Per accedere ad altre approvazioni di controllo all'interno di Power Automate, abilitare e configurare il controllo nell'ambiente predefinito per le entità di approvazione primarie Approvazione, Richiesta di approvazione e Risposta approvazione. Le operazioni di creazione, aggiornamento ed eliminazione sono eventi controllabili per i record di approvazione. Per altre informazioni, vedere [Dati di controllo e attività degli utenti per la sicurezza e la conformità - Power Platform \| Microsoft Docs](/power-platform/admin/audit-data-user-activity).
+Per accedere ad altre approvazioni di controllo in Power Automate, abilitare e configurare il controllo nell'ambiente predefinito per le entità di approvazione primarie Approvazione, Richiesta di approvazione e Risposta approvazione. Le operazioni di creazione, aggiornamento ed eliminazione sono eventi controllabili per i record di approvazione. Per altre informazioni, vedere [Dati di controllo e attività degli utenti per la sicurezza e la conformità - Power Platform \| Microsoft Docs](/power-platform/admin/audit-data-user-activity).
 
 Il controllo può essere personalizzato ulteriormente nel [Centro sicurezza e conformità di Microsoft 365](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US).
 
@@ -215,15 +215,15 @@ Tramite l'app Approvazioni di Teams, gli utenti hanno accesso alla creazione di 
 > [!Note]
 > A un utente viene assegnato il ruolo di visualizzatore di una richiesta se fa parte della chat o del canale in cui è stata creata l'approvazione. Non è possibile intervenire sulla richiesta se al momento della creazione dell'approvazione non è stato assegnato il ruolo specifico.
 
-## <a name="approvals-e-signature-integration"></a>integrazione della firma elettronica Approvazioni
+## <a name="approvals-e-signature-integration"></a>Integrazione delle firme e-mail di approvazione
 
-Per usare la funzionalità Approvazioni firma elettronica dell'app, è necessaria una licenza per il provider di firma elettronica specifico che si vuole usare. Per ottenere una licenza per l'organizzazione, è necessario accedere al sito del provider.
+Per usare la funzionalità di firma elettronica dell'app Approvazioni, è necessaria una licenza per il provider di firma elettronica specifico che si vuole usare. Per ottenere una licenza per l'organizzazione, è necessario accedere al sito del provider.
 
 ### <a name="enable-or-disable-e-signature-providers"></a>Abilitare o disabilitare i provider di firme elettronica
 
-È possibile usare l'interfaccia di amministrazione di Teams per controllare quali provider di firma elettronica di terze parti sono disponibili per gli utenti nell'app Approvazioni. Per impostazione predefinita, i provider di firma elettronica sono abilitati nell'app Approvazioni. Quando si disabilita un provider di firme elettronica, gli utenti non avranno accesso a tale provider quando creano approvazioni. Inoltre, gli utenti non potranno visualizzare le richieste di firma elettronica create con tale provider.
+È possibile usare l'interfaccia di amministrazione di Teams per controllare quali provider di firma elettronica di terze parti sono disponibili per gli utenti nell'app Approvazioni. Per impostazione predefinita, i provider di firme elettronica sono abilitati nell'app Approvazioni. Quando si disabilita un provider di firme elettronica, gli utenti non avranno accesso a tale provider quando creano approvazioni. Inoltre, gli utenti non potranno visualizzare le richieste di firma elettronica create con tale provider.
 
-1. Nel riquadro sinistro dell'interfaccia di amministrazione di Teams passare a **Teams app** > **Gestisci app**.
+1. Nel riquadro sinistro dell'interfaccia di amministrazione di Teams passare alle app  > **di Teams****Gestire le app**.
 2. Cerca l'app Approvazioni e quindi selezionala.
 3. Passare alla scheda **Impostazioni** e quindi eseguire una o più delle operazioni seguenti:
 
