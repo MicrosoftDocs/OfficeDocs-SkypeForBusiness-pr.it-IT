@@ -1,7 +1,7 @@
 ---
 title: Configurare gli eventi live in Microsoft Teams
-author: serdarsoysal
-ms.author: serdars
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -20,12 +20,12 @@ description: Configurare gli eventi live in Teams, tra cui configurare la rete, 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a2e7061252afc5c485da01c3c1c30e9625bd07cc
-ms.sourcegitcommit: 3f046142c40b3b776165e964f2b8718e2fe55df3
+ms.openlocfilehash: f972fa2a78796a2768c62d191a95e68f41a91a5e
+ms.sourcegitcommit: 4c4f2f220832cae3efb3f6f3c74795300d661295
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65661667"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66825910"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi live in Microsoft Teams
 
@@ -50,7 +50,7 @@ I criteri per gli eventi live consentono di controllare chi nell'organizzazione 
 
 <a name="bkcreatepolicy"> </a>
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare alla scheda **Gestione criteri** per **gli** >  eventi  > **in tempo** reale.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare alla scheda **Gestione** > **criteri** **per gli eventi** >  in tempo reale.
 2. Eseguire una delle opzioni seguenti:
 
     - Se si vuole modificare il criterio predefinito esistente, scegliere **Globale (predefinito a livello di organizzazione)**.
@@ -70,7 +70,7 @@ I criteri per gli eventi live consentono di controllare chi nell'organizzazione 
 |**Chi può aggiungere eventi live pianificati**    |Scegliere una delle opzioni seguenti.<br><br>**Tutti** Gli utenti possono creare eventi live a cui può partecipare chiunque, incluse persone esterne all'organizzazione. Questa impostazione abilita il tipo di autorizzazione **Pubblico** in Teams quando un utente pianifica un evento live.<br> **Tutti gli utenti dell'organizzazione** Gli utenti possono creare eventi live a cui possono partecipare le persone dell'organizzazione, compresi gli [utenti guest](../add-guests.md) aggiunti all'organizzazione. Gli utenti non possono creare eventi live aperti agli utenti anonimi. Questa impostazione abilita il tipo di autorizzazione **A livello di organizzazione** in Teams quando un utente pianifica un evento live.<br> **Utenti o gruppi specifici** Gli utenti possono creare eventi live a cui possono partecipare solo utenti o gruppi specifici dell'organizzazione. Gli utenti non possono creare eventi live aperti a tutte le persone dell'organizzazione o a utenti anonimi. Questa impostazione abilita il tipo di autorizzazione **Persone e gruppi** in Teams quando un utente pianifica un evento live.       |
 |**Impostazione della registrazione**  <br>     | Questa impostazione può essere applicata solo agli eventi prodotti in Teams. Scegliere una delle opzioni seguenti. <br><br> **Registra sempre** Gli eventi live creati dagli utenti vengono sempre registrati. Una volta terminato l'evento, i membri del team dell'evento possono scaricare la registrazione e i partecipanti possono guardare l'evento. <br> **Non registrare mai** Gli eventi live creati dagli utenti non vengono mai registrati. <br>**L'organizzatore può registrare o meno** Gli utenti possono decidere se registrare l'evento live. Se viene registrato, i membri del team dell'evento possono scaricare la registrazione e i partecipanti possono guardare l'evento.
 
-È anche possibile farlo usando Windows PowerShell e, attualmente, GCC clienti High e DoD devono usare questo metodo. Per altre informazioni, vedere [Usare PowerShell per impostare i criteri degli eventi live in Microsoft Teams](set-teams-live-events-policies-using-powershell.md).
+È anche possibile farlo usando Windows PowerShell e, attualmente, i clienti GCC High e DoD devono usare questo metodo. Per altre informazioni, vedere [Usare PowerShell per impostare i criteri degli eventi live in Microsoft Teams](set-teams-live-events-policies-using-powershell.md).
 
 ### <a name="assign-a-live-events-policy-to-users"></a>Assegnare un criterio per gli eventi live agli utenti
 
@@ -93,7 +93,7 @@ Per consentire agli utenti di pianificare gli eventi prodotti con un'app o un di
 
 Per la riproduzione di video di eventi live viene usato lo streaming a bitrate adattivo (ABR), ma si tratta di un flusso unicast, vale a dire che ogni spettatore riceve un proprio flusso video da Internet. Quando si trasmettono video o eventi live a moltissimi utenti dell'organizzazione, la larghezza di banda Internet usata dagli spettatori può essere considerevole. Per le organizzazioni che vogliono ridurre il traffico Internet per gli eventi live, le soluzioni per gli eventi live sono integrate con le offerte di reti definite dal software (SDN) o reti per la distribuzione di contenuti aziendali (eCDN) dei partner di fiducia di Microsoft. Queste piattaforme SDN/eCDN consentono alle organizzazioni di ottimizzare la larghezza di banda della rete senza sacrificare le esperienze di visualizzazione degli utenti finali. I partner possono contribuire a garantire una distribuzione più scalabile ed efficiente dei video nell'intera rete aziendale.
 
-**Acquistare e configurare una soluzione all'esterno di Teams** I partner di fiducia di Microsoft del settore offrono consulenza esperta per il ridimensionamento della distribuzione di video. Prima di poter abilitare l'uso di un provider di servizi di recapito video con Teams, è necessario acquistare e configurare la soluzione SDN/eCDN all'esterno e separata da Teams.
+**Acquistare e configurare una soluzione all'esterno di Teams** I partner di fiducia di Microsoft del settore offrono consulenza esperta per il ridimensionamento della distribuzione di video. Prima di poter abilitare l'uso di un provider di video delivery con Teams, è necessario acquistare e configurare la soluzione SDN/eCDN all'esterno e separata da Teams.
 
 Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate per l'uso con Stream.
 
@@ -103,7 +103,7 @@ Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate pe
 
 - **Ramp OmniCache** offre distribuzione in rete di nuova generazione e assicura la trasmissione ininterrotta di contenuti video nelle WAN globali, aiutando i produttori di eventi a ottimizzare la larghezza di banda della rete e supportare lo streaming di eventi live e on demand. Il supporto di Ramp OmniCache per gli eventi live prodotti in Teams sarà disponibile a breve. [Altre informazioni](https://rampecdn.com).
 
-- **Riverbed**, lo standard industriale nell'ottimizzazione della rete, sta estendendo le sue soluzioni di accelerazione a Microsoft Teams e Stream.  Ora Microsoft 365 clienti possono accelerare con sicurezza il traffico 365, tra cui Teams e Stream, insieme a una vasta gamma di altri servizi SaaS aziendali leader per aumentare la produttività della forza lavoro ovunque ci si trovi. Teams e l'accelerazione stream possono essere abilitate attraverso una configurazione senza sforzo che viene fornita con tutta la garanzia del sostegno di livello mondiale di Riverbed e degli investimenti continuativi.
+- **Riverbed**, lo standard di settore nell'ottimizzazione della rete, sta estendendo le sue soluzioni di accelerazione a Microsoft Teams e Stream.  Ora i clienti di Microsoft 365 possono accelerare il traffico di 365 persone, tra cui Teams e Stream, insieme a un'ampia gamma di altri servizi SaaS aziendali leader per aumentare la produttività della forza lavoro ovunque ci si trovi. L'accelerazione di Teams e Stream può essere abilitata attraverso una configurazione senza sforzo che viene fornita con tutta la garanzia del supporto di livello mondiale di Riverbed e degli investimenti continuativi.
 
 > [!NOTE]
 > La soluzione SDN o eCDN scelta è soggetta ai **termini di servizio e all'informativa sulla privacy del provider di terze parti scelto**, che disciplineranno l'uso della soluzione del provider. L'uso della soluzione del provider non sarà soggetto alle condizioni dei servizi online o dei contratti multilicenza Microsoft. Se non accettano i **termini del provider di terze parti** la soluzione non verrà abilitata in Teams.

@@ -1,7 +1,7 @@
 ---
 title: Supporto per i lavoratori remoti degli enti pubblici con Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare i lavoratori degli enti pubblici che lavorano da remoto a essere produttivi con Microsoft Teams, in particolare se lavorano da casa in risposta all'epidemia di COVID-19 (Coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 42d4b94a23bb2e3b9003f62a467c07eaf9c328e6
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d245055d84025867705c1d83391510324ca7a22f
+ms.sourcegitcommit: 4c4f2f220832cae3efb3f6f3c74795300d661295
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608983"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66825750"
 ---
 # <a name="support-remote-government-workers-using-microsoft-teams"></a>Supporto per i lavoratori remoti degli enti pubblici con Microsoft Teams
 
