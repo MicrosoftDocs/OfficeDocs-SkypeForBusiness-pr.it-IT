@@ -454,9 +454,9 @@ items:
           - name: Report sulla licenza di Teams Information Protection
             href: teams-analytics-and-reports/information-protection-license-report.md
           - name: Report sull'utilizzo delle visite virtuali di Teams
-            href: teams-analytics-and-reports/virtual-visits-usage-report.md
+            href: /microsoft-365/frontline/virtual-visits-usage-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json
           - name: Report Appuntamenti virtuali del connettore EHR di Teams
-            href: expand-teams-across-your-org/healthcare/ehr-admin-reports.md
+            href: /microsoft-365/frontline/ehr-connector-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json
       - name: 'File di log, integrità dei servizi e supporto'
         items:
           - name: Usare i file di log per monitorare e risolvere i problemi di Teams
@@ -1471,6 +1471,8 @@ items:
                 href: devices/phones-displays-deploy.md
               - name: Dispositivi video e audio USB
                 href: devices/usb-devices.md
+              - name: RealWear per Microsoft Teams
+                href: flw-realwear.md
               - name: Monitoraggio
                 items:
                   - name: Avvisi e monitoraggio in Teams
@@ -1503,10 +1505,12 @@ items:
             href: manage-tasks-app.md
           - name: Gestire l'app Complimenti
             href: manage-praise-app.md
-          - name: Gestire l'app Approvazioni di Teams
+          - name: Gestire l'app Approvazioni
             href: approval-admin.md
           - name: Gestire l'app Turni
             href: expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md
+          - name: Domande frequenti sui turni dati
+            href: expand-teams-across-your-org/shifts/shifts-data-faq.md
           - name: Gestire l'app Aggiornamenti
             href: manage-updates-app.md
       - name: Gestire app di terze parti
@@ -1550,7 +1554,7 @@ items:
               - name: Gestire i criteri e le impostazioni delle app personalizzate
                 href: teams-custom-app-policies-and-settings.md
           - name: Personalizzare le app di Teams per gli operatori sul campo
-            href: pin-teams-apps-based-on-license.md
+            href: /microsoft-365/frontline/pin-teams-apps-based-on-license?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json
           - name: Autorizzazioni grafiche e consenso degli amministratori in Azure AD
             href: app-permissions-admin-center.md
           - name: Gestire il consenso specifico delle risorse per l'organizzazione
@@ -1571,40 +1575,6 @@ items:
     items:
       - name: Panoramica
         href: expand-teams-across-your-org/expand-teams-across-your-organization-landing-page.md
-      - name: Tutti i settori
-        items:
-          - name: Bookings in Teams
-            items:
-              - name: Visite virtuali con Teams e Bookings
-                href: expand-teams-across-your-org/bookings-virtual-visits.md
-              - name: Gestire l'app Bookings
-                href: bookings-app-admin.md
-              - name: Gestire l'esperienza di partecipazione nei browser
-                href: expand-teams-across-your-org/browser-join.md
-              - name: Report sull'utilizzo delle visite virtuali
-                href: teams-analytics-and-reports/virtual-visits-usage-report.md
-              - name: Consentire ai clienti di usare gli appuntamenti virtuali
-                href: expand-teams-across-your-org/virtual-appointments-toolkit.md
-          - name: Turni per Teams
-            items:
-              - name: Introduzione a Turni
-                href: expand-teams-across-your-org/shifts-for-teams-landing-page.md
-              - name: Gestire l'app Turni
-                href: expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md
-              - name: Gestire i proprietari pianificazione per la gestione dei turni
-                href: expand-teams-across-your-org/shifts/schedule-owner-for-shift-management.md
-              - name: Connettori turni
-                items:
-                  - name: Panoramica
-                    href: expand-teams-across-your-org/shifts/shifts-connectors.md
-                  - name: Usare la procedura guidata del connettore Turni per configurare la connessione a Workforce Management di Blue Yonder
-                    href: expand-teams-across-your-org/shifts/shifts-connector-wizard.md
-                  - name: Usare PowerShell per configurare una connessione a Workforce Management di Blue Yonder
-                    href: expand-teams-across-your-org/shifts/shifts-connector-blue-yonder-powershell-setup.md
-                  - name: Usare PowerShell per gestire la connessione di Turni a Workforce Management di Blue Yonder
-                    href: expand-teams-across-your-org/shifts/shifts-connector-powershell-manage.md
-              - name: Domande frequenti sui turni dati
-                href: expand-teams-across-your-org/shifts/shifts-data-faq.md
       - name: Teams per l'istruzione
         href: expand-teams-across-your-org/teams-for-education-landing-page.md
         items:
@@ -1656,28 +1626,8 @@ items:
         items:
           - name: Introduzione a Teams per gli operatori sul campo
             href: flw-landing-page.md
-          - name: Inizia con una versione di valutazione in prima linea.
-            href: flw-trial.md
-          - name: Opzioni di licenza per gli operatori sul campo
-            href: flw-licensing-options.md
-          - name: Guida introduttiva per gli operatori sul campo
-            href: flw-quickstart.yml
-          - name: Procedura guidata per l'onboarding degli operatori in prima linea
-            href: flw-onboarding-wizard.md
-          - name: Distribuire i team su larga scala per i lavoratori in prima linea
-            href: deploy-teams-at-scale.md
-          - name: Personalizzare le app di Teams per gli operatori sul campo
-            href: pin-teams-apps-based-on-license.md
-          - name: Gestire l'app Turni
-            href: expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md
-          - name: Gestire l'accesso basato su turni per gli operatori sul campo
-            href: expand-teams-across-your-org/shifts/manage-shift-based-access-flw.md
-          - name: Gestire i proprietari pianificazione per la gestione dei turni
-            href: expand-teams-across-your-org/shifts/schedule-owner-for-shift-management.md
-          - name: RealWear per Microsoft Teams
-            href: flw-realwear.md
-          - name: Walkie-talkie
-            href: walkie-talkie.md
+          - name: 'Pacchetti di criteri per i lavoratori in prima linea '
+            href: policy-packages-flw.md
       - name: Teams per enti pubblici
         href: expand-teams-across-your-org/teams-for-government-landing-page.md
         items:
@@ -1700,77 +1650,22 @@ items:
       - name: Teams per il settore sanitario
         items:
           - name: Guida introduttiva a Teams per le organizzazioni del settore sanitario
-            href: expand-teams-across-your-org/healthcare/teams-in-hc.md
-          - name: Appuntamenti virtuali
-            items:
-              - name: Appuntamenti virtuali con Teams - Integrazione in Cerner EHR
-                href: expand-teams-across-your-org/healthcare/ehr-admin-cerner.md
-              - name: Appuntamenti virtuali con Teams - Integrazione in Epic EHR
-                href: expand-teams-across-your-org/healthcare/ehr-admin.md
-              - name: Report Appuntamenti virtuali del connettore EHR di Teams
-                href: expand-teams-across-your-org/healthcare/ehr-admin-reports.md
-              - name: Visite virtuali con Teams e Bookings
-                href: expand-teams-across-your-org/bookings-virtual-visits.md
-              - name: Report sull'utilizzo delle visite virtuali
-                href: teams-analytics-and-reports/virtual-visits-usage-report.md
-              - name: Gestire l'esperienza di partecipazione nei browser
-                href: expand-teams-across-your-org/browser-join.md
-          - name: Visualizzare e assegnare pacchetti di criteri
+            href: /microsoft-365/frontline/teams-in-hc?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json
+          - name: Pacchetti di criteri per il settore sanitario
             href: policy-packages-healthcare.md
-          - name: Messaggistica protetta
-            items:
-              - name: Messaggistica protetta
-                href: expand-teams-across-your-org/healthcare/messaging-policies-hc.md
-              - name: Delega messaggi
-                href: expand-teams-across-your-org/healthcare/hc-delegates.md
           - name: Usare i modelli di team per il settore sanitario
             href: expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md
-          - name: Gestire l'app Approvazioni
-            href: approval-admin.md
-          - name: Gestire l'app Elenchi
-            href: manage-lists-app.md
-          - name: Gestire l'app Turni
-            href: expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md
-          - name: Gestire l'app Attività
-            href: manage-tasks-app.md
       - name: Teams per organizzazioni no profit
         href: expand-teams-across-your-org/teams-for-nonprofit-landing-page.md
         items:
           - name: Usare i modelli no profit di team
             href: team-templates-nonprofit.md
       - name: Teams per la vendita al dettaglio
-        href: expand-teams-across-your-org/teams-for-retail-landing-page.md
         items:
-          - name: Collaborazione del team di vendita al dettaglio
-            href: expand-teams-across-your-org/retail-team-collaboration.md
-          - name: Semplifica i processi aziendali nel settore della vendita al dettaglio
-            href: expand-teams-across-your-org/retail-business-processes.md
+          - name: Introduzione a Teams per la vendita al dettaglio
+            href: /microsoft-365/frontline/teams-for-retail-landing-page?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json
           - name: Usare i modelli di team per il settore della vendita al dettaglio
             href: get-started-with-retail-teams-templates.md
-          - name: Procedura guidata per l'onboarding degli operatori in prima linea
-            href: flw-onboarding-wizard.md
-          - name: Distribuire i team su larga scala per i lavoratori in prima linea
-            href: deploy-teams-at-scale.md
-          - name: Turni per Teams
-            items:
-              - name: Turni per Teams
-                href: expand-teams-across-your-org/shifts-for-teams-landing-page.md
-              - name: Gestire l'app Turni
-                href: expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md
-              - name: Gestire l'accesso basato sui turni
-                href: expand-teams-across-your-org/shifts/manage-shift-based-access-flw.md
-          - name: Walkie-talkie
-            href: walkie-talkie.md
-          - name: RealWear
-            href: flw-realwear.md
-          - name: Gestire l'app Complimenti
-            href: manage-praise-app.md
-          - name: Gestire l'app Attività
-            href: manage-tasks-app.md
-          - name: Gestire l'app Elenchi
-            href: manage-lists-app.md
-          - name: Gestire l'app Approvazioni
-            href: approval-admin.md
   - name: Riferimenti
     items:
       - name: Limiti e specifiche per Teams
