@@ -18,19 +18,19 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Estensione dell'applicazione per dispositivi mobili per Teams Rooms
 f1keywords: Microsoft Teams Rooms Managed Service mobile app extension
-ms.openlocfilehash: cfeb5573ce164ea136ba3617fe73661f8ac4ca97
-ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
+ms.openlocfilehash: 939ac7d5bd61f51a229400b2c1aee1bd38047369
+ms.sourcegitcommit: ea9cbb8e32b7f23c17930eadc0a1dcbd906449ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66046132"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66842322"
 ---
 # <a name="teams-rooms-mobile-client-application-features"></a>Funzionalità delle applicazioni client per dispositivi mobili Teams Rooms
 
 A volte può essere necessario gestire Teams Rooms Managed Services (MTMS) dal dispositivo mobile. L'app per dispositivi mobili offre molte funzionalità che è possibile gestire dal dispositivo mobile o tablet.
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Per usare l'app per dispositivi mobili Teams Rooms, è necessario essere un amministratore di un'organizzazione Microsoft 365.
+Per usare l'app per dispositivi mobili Teams Rooms, è necessario essere un amministratore di un'organizzazione di Microsoft 365.
 Scarica l'app per dispositivi mobili Teams Rooms dal [App Store Apple](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8) o dal [Google Play Store](https://play.google.com/store/search?q=Microsoft%20Teams%20Rooms&c=apps).
 
 **Per ottenere l'app MTMS per dispositivi mobili**
@@ -52,7 +52,7 @@ Ecco alcune delle funzionalità disponibili nell'app per dispositivi mobili per 
 
 La pagina Eventi imprevisti mostra i tipi di eventi imprevisti aperti.
 
-![Schermata della pagina degli incidenti relativi alle applicazioni mobili MTMS](../media/mtms-extended-app-001.png)<!-- Immagine approvata da Microsoft per autore.>
+![Schermata della pagina degli incidenti relativi alle applicazioni mobili MTMS](../media/mtms-extended-app-001.png)
 
 ## <a name="managing-tickets"></a>Gestione dei ticket
 Ecco alcune delle funzionalità disponibili nell'app per dispositivi mobili per la gestione dei ticket.
@@ -99,7 +99,7 @@ Di seguito sono riportate le risposte alle domande frequenti.
 
 **Cosa devo fare per poter usare l'app?**
 
-Per usare l'app è necessario disporre delle autorizzazioni di amministratore e di un abbonamento valido Microsoft 365.
+Per usare l'app è necessario disporre delle autorizzazioni di amministratore e di un abbonamento valido a Microsoft 365.
 
 
 **Quali lingue sono supportate dall'app?**
@@ -116,7 +116,7 @@ Per usare l'app è necessario disporre delle autorizzazioni di amministratore e 
 Puoi provare alcuni passaggi comuni per la risoluzione dei problemi relativi alle app per dispositivi mobili:
 - Chiudere e riaprire l'app.
 - Disinstalla e reinstalla l'app. Assicurati di avere la versione più recente dell'app.
-- Se nel dispositivo è installata Microsoft Authenticator o l'app portale aziendale, prova a reinstallarla o ad aggiornare alla versione più recente. Se non funziona, puoi inviarci un'e-mail all feedback365@microsoft.com per comunicarcelo.
+- Se nel dispositivo è installata l'app Microsoft Authenticator o il portale aziendale, prova a reinstallarlo o ad aggiornare alla versione più recente. Se non funziona, puoi inviarci un'e-mail all feedback365@microsoft.com per comunicarcelo.
 
 **Cosa fare se non viene trovata una risposta alla domanda?**
 
@@ -127,5 +127,5 @@ Il client mobile offre funzionalità di creazione di ticket e di gestione degli 
 **Per usare l'app per dispositivi mobili Teams Rooms**
 
 1. Scarica l'app [dall'App Store Apple]() o dal [Google Play Store]()
-1. Verificare di avere un abbonamento valido Microsoft 365.
+1. Verificare di avere un abbonamento a Microsoft 365 valido.
 1. Usare le credenziali di lavoro usate per accedere all'app desktop Teams Rooms.

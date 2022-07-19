@@ -1,9 +1,9 @@
 ---
 title: Gestire l'app Elenchi per l'organizzazione
-author: mkbond007
-ms.author: mabond
+author: LanaChin
+ms.author: v-lanachin
 ms.reviewer: anach,v-jasuk
-manager: serdars
+manager: samanro
 ms.topic: article
 audience: admin
 ms.service: msteams
@@ -24,12 +24,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 6c756fcdf8251bc2b468be1f89c98b1f069a1779
-ms.sourcegitcommit: 9532eb79310cd653010565607fa394f2b8dd182d
+ms.openlocfilehash: efb9f2ce1f96dbddef049166e34fd999a5ed987e
+ms.sourcegitcommit: ea9cbb8e32b7f23c17930eadc0a1dcbd906449ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65646495"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66842232"
 ---
 # <a name="manage-the-lists-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Elenchi per l'organizzazione in Microsoft Teams
 
@@ -60,7 +60,7 @@ Un ufficio postale locale è responsabile dello smistamento e della consegna del
 
 Dopo la riunione, i postini prelevano la posta e iniziano il percorso di consegna. Lungo il percorso possono verificarsi degli incidenti, ad esempio un incidente automobilistico, un problema legato ai cani o una protesta con disordini sociali. Quando i postini incontrano un incidente, usano Teams sui propri dispositivi mobili per registrare i dettagli dell'incidente, che vengono monitorati in un elenco nel canale del team. Tutte le persone del team, inclusi i postini sul campo, possono visualizzare queste informazioni ed essere sempre informati.
 
-Prima di passare a Teams, gli operatori di posta hanno dovuto tornare all'ufficio postale per completare un modulo cartaceo per segnalare un incidente, che è stato quindi immesso in un foglio di calcolo di Excel. Teams offre ai postini un'esperienza mobile first, in cui possono usare Elenchi per segnalare gli incidenti sul campo mentre si verificano, condividere i dettagli degli incidenti con i membri del team, avere conversazioni su di essi sul canale e contribuire alla risoluzione degli incidenti.
+Prima di passare a Teams, i corrieri di posta dovevano tornare all'ufficio postale per completare un modulo cartaceo per segnalare un incidente, che è stato poi immesso in un foglio di calcolo di Excel. Teams offre ai postini un'esperienza mobile first, in cui possono usare Elenchi per segnalare gli incidenti sul campo mentre si verificano, condividere i dettagli degli incidenti con i membri del team, avere conversazioni su di essi sul canale e contribuire alla risoluzione degli incidenti.
 
 ## <a name="what-you-need-to-know-about-lists"></a>Cosa c'è da sapere su Elenchi
 
@@ -95,7 +95,7 @@ Se gli utenti dell'organizzazione hanno creato elenchi usando l'app SharePoint, 
 
 Elenchi è abilitata per impostazione predefinita per tutti gli utenti di Teams nell’organizzazione. È possibile disattivare o attivare l'app a livello di organizzazione nella pagina [Gestisci app](manage-apps.md) nell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Teams** **appGesti** >  app.
+1. Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft Teams passare alle app  > **di Teams****Gestire le app**.
 2. Eseguire una delle operazioni seguenti:
 
     - Per disattivare Elenchi per l'organizzazione, cercare l'app Elenchi, selezionarla e quindi selezionare **Blocca**.
@@ -119,7 +119,7 @@ Elenchi supporta [Power Automate](/power-automate/flow-types) per i flussi di la
 
 ## <a name="give-feedback-or-report-an-issue"></a>Fornire un feedback o segnalare un problema
   
-Per inviare feedback o segnalare un problema, seleziona **Guida** nella parte inferiore del riquadro sinistro in Teams e quindi seleziona **Segnala un problema**. Selezionare **Elenchi** e quindi immettere il proprio feedback o i dettagli sul problema che si è verificato.
+Per inviare feedback o segnalare un problema, selezionare **Guida** nella parte inferiore del riquadro sinistro in Teams, quindi selezionare **Segnala un problema**. Selezionare **Elenchi** e quindi immettere il proprio feedback o i dettagli sul problema che si è verificato.
 
 ## <a name="related-articles"></a>Articoli correlati
 

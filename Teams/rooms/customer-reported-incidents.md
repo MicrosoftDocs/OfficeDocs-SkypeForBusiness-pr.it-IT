@@ -2,7 +2,7 @@
 title: Microsoft Teams Rooms eventi imprevisti segnalati dal cliente
 author: donnah007
 ms.author: v-donnahill
-ms.date: 06/27/2022
+ms.date: 07/08/2022
 manager: serdars
 ms.reviewer: dstrome
 ms.topic: article
@@ -17,12 +17,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: I partner/clienti possono chiudere manualmente gli incidenti e garantire una segnalazione accurata dell'integrità della sala in MTRP.
-ms.openlocfilehash: 3f765627e2d18d52a6b3db8abbdd2ad59cee7019
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: f28462c6fab02a2a6b8e7db00b1f89ff30b80da1
+ms.sourcegitcommit: ea9cbb8e32b7f23c17930eadc0a1dcbd906449ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66494677"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66842305"
 ---
 # <a name="customer-reported-incident-tickets"></a>Ticket di eventi imprevisti segnalati dal cliente
 
@@ -31,6 +31,11 @@ Per qualsiasi tipo di incidente non contrassegnato da Microsoft o per domande su
 ![screenshot del report eventi imprevisti->](../media/customer-reported-incidents-001.png)
 
 Nel campo Descrizione descrivere il più possibile il problema per cui è necessaria l'assistenza di Microsoft. È possibile aggiungere una o più sale.
+
+Verificare  **l'impatto elevato** se l'evento imprevisto causa un peggioramento significativo dell'integrità del servizio o di una sala critica. Per consentire a Microsoft di assegnare correttamente la priorità alla richiesta, descrivere in dettaglio il motivo per cui si tratta di un impatto elevato.
+
+> [!NOTE]
+> Non usare questo campo per domande generali, chat room e/o problemi che non hanno una mitigazione disponibile.
 
 ![screenshot delle sale di report degli incidenti interessate](../media/customer-reported-incidents-002.png)
 

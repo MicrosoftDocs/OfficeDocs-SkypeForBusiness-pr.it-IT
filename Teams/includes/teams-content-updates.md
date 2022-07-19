@@ -3,6 +3,51 @@
 
 
 
+## <a name="week-of-july-11-2022"></a>Settimana dell'11 luglio 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 7/13/2022 | [Musica in attesa](/MicrosoftTeams/music-on-hold) | Volta |
+| 7/14/2022 | [Pianificare gateway SIP](/MicrosoftTeams/sip-gateway-plan) | Volta |
+| 7/15/2022 | [Note sulla versione per Microsoft Teams Rooms (Windows)](/MicrosoftTeams/rooms/rooms-release-note) | Volta |
+| 7/15/2022 | [Pacchetti di criteri di Teams per il personale in prima linea](/MicrosoftTeams/policy-packages-flw) | Aggiunto |
+| 7/15/2022 | [Gestire l'app Approvazioni in Microsoft Teams](/MicrosoftTeams/approval-admin) | Volta |
+| 7/15/2022 | [Gestire l'app Bookings in Microsoft Teams](/MicrosoftTeams/bookings-app-admin) | Volta |
+| 7/15/2022 | Distribuire team su vasta scala per gli operatori in prima linea in Microsoft Teams | Rimosso |
+| 7/15/2022 | Visite virtuali con Microsoft Teams e l’app Bookings | Rimosso |
+| 7/15/2022 | Gestire l'esperienza di partecipazione per gli appuntamenti virtuali di Teams nei browser | Rimosso |
+| 7/15/2022 | [Espandere Microsoft Teams nell'organizzazione](/MicrosoftTeams/expand-teams-across-your-org/expand-teams-across-your-organization-landing-page) | Volta |
+| 7/15/2022 | Appuntamenti virtuali con Teams - Integrazione in Cerner EHR | Rimosso |
+| 7/15/2022 | Report Appuntamenti virtuali connettore EHR di Microsoft Teams | Rimosso |
+| 7/15/2022 | Appuntamenti virtuali con Teams - Integrazione in Epic EHR | Rimosso |
+| 7/15/2022 | Delega messaggi | Rimosso |
+| 7/15/2022 | Messaggistica protetta per le organizzazioni del settore sanitario che usano Microsoft Teams | Rimosso |
+| 7/15/2022 | Guida introduttiva a Teams per le organizzazioni del settore sanitario | Rimosso |
+| 7/15/2022 | Semplifica i processi aziendali negli ambienti di vendita al dettaglio | Rimosso |
+| 7/15/2022 | Collaborazione del team di vendita al dettaglio | Rimosso |
+| 7/15/2022 | Turni per Teams | Rimosso |
+| 7/15/2022 | Gestire l'accesso basato sui turni per gli operatori in prima linea in Teams | Rimosso |
+| 7/15/2022 | [Gestire l'app Turni per l'organizzazione](/MicrosoftTeams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams) | Volta |
+| 7/15/2022 | Gestire i proprietari di pianificare per la gestione dei turni | Rimosso |
+| 7/15/2022 | Usare PowerShell per connettere Turni a Blue Yonder Workforce Management | Rimosso |
+| 7/15/2022 | Usare PowerShell per gestire la connessione turni a Blue Yonder Workforce Management | Rimosso |
+| 7/15/2022 | Usare la procedura guidata connettore Turni per connettere Turni a blue yonder Workforce Management | Rimosso |
+| 7/15/2022 | Turni connettori | Rimosso |
+| 7/15/2022 | Teams per la vendita al dettaglio | Rimosso |
+| 7/15/2022 | Aiutare clienti e clienti a usare gli appuntamenti virtuali | Rimosso |
+| 7/15/2022 | [Introduzione a Teams per gli operatori sul campo](/MicrosoftTeams/flw-landing-page) | Volta |
+| 7/15/2022 | Informazioni sui tipi di utenti e sulle licenze per gli operatori sul campo | Rimosso |
+| 7/15/2022 | Usare l'onboarding guidato di Frontline Worker per rendere operativa la forza lavoro in prima linea | Rimosso |
+| 7/15/2022 | Guida introduttiva di Frontline Worker | Rimosso |
+| 7/15/2022 | Gestire la versione di valutazione in prima linea in Teams | Rimosso |
+| 7/15/2022 | Personalizzare le app Teams per i dipendenti in prima linea | Rimosso |
+| 7/15/2022 | [Pacchetti di criteri di Teams per il settore sanitario](/MicrosoftTeams/policy-packages-healthcare) | Volta |
+| 7/15/2022 | Report sull'utilizzo delle visite virtuali di Microsoft Teams | Rimosso |
+| 7/15/2022 | [Esempio di script di PowerShell : responsabili dell'esportazione e relativi report diretti](/MicrosoftTeams/scripts/powershell-script-create-teams-from-managers-export-managers) | Volta |
+| 7/15/2022 | [Esempio di script di PowerShell - Creare nuovi team di gestione persone](/MicrosoftTeams/scripts/powershell-script-create-teams-from-managers-new-teams) | Volta |
+
+
 ## <a name="week-of-july-04-2022"></a>Settimana del 4 luglio 2022
 
 
@@ -90,22 +135,3 @@
 | 6/16/2022 | [Pianificare gli operatori automatici di Teams e le code di chiamata](/MicrosoftTeams/plan-auto-attendant-call-queue) | Volta |
 | 6/16/2022 | [Caricare le app personalizzate nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/upload-custom-apps) | Volta |
 | 6/16/2022 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | Volta |
-
-
-## <a name="week-of-june-06-2022"></a>Settimana del 6 giugno 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 6/6/2022 | [Gestire l'accesso alle app Teams in Microsoft 365](/MicrosoftTeams/manage-third-party-teams-apps) | Volta |
-| 6/7/2022 | [Gestire l'app Aggiornamenti per l'organizzazione](/MicrosoftTeams/manage-updates-app) | Volta |
-| 6/7/2022 | [Distribuire team su vasta scala per gli operatori in prima linea in Microsoft Teams](/MicrosoftTeams/deploy-teams-at-scale) | Aggiunto |
-| 6/8/2022 | [Abilitare Teams Rooms dispositivi per partecipare a riunioni di terze parti](/MicrosoftTeams/rooms/third-party-join) | Volta |
-| 6/9/2022 | [Comportamento delle app di Teams in base ai tipi di utenti](/MicrosoftTeams/non-standard-users) | Volta |
-| 6/9/2022 | [Configurare la licenza di Common Area Phone](/MicrosoftTeams/set-up-common-area-phones) | Volta |
-| 6/9/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
-| 6/9/2022 | [Configurare Credito per la comunicazione per la propria organizzazione](/MicrosoftTeams/set-up-communications-credits-for-your-organization) | Volta |
-| 6/10/2022 | [Estensione app per dispositivi mobili](/MicrosoftTeams/rooms/extended-mobile-app) | Aggiunto |
-| 6/10/2022 | [Distribuire team su vasta scala per gli operatori in prima linea in Microsoft Teams](/MicrosoftTeams/deploy-teams-at-scale) | Volta |
-| 6/10/2022 | [Passare da Business Voice alle licenze di Teams Phone](/MicrosoftTeams/business-voice-to-teams-phone-licenses) | Aggiunto |
-| 6/10/2022 | [Abilitare Teams Rooms dispositivi per partecipare a riunioni di terze parti](/MicrosoftTeams/rooms/third-party-join) | Volta |

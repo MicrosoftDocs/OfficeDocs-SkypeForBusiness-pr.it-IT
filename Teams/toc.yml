@@ -1525,8 +1525,6 @@ items:
             href: purchase-third-party-apps.md
           - name: Gestire Microsoft 365 e i connettori personalizzati
             href: Office-365-custom-connectors.md
-      - name: Modelli di app per Teams
-        href: /microsoftteams/platform/samples/app-templates?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fMicrosoftTeams%2ftoc.json
       - name: Gestione di applicazioni line-of-business personalizzate
         items:
           - name: Gestire le app di Power Platform nel centro di amministrazione di Teams

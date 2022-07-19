@@ -1,7 +1,7 @@
 ---
 title: Esempio di script di PowerShell - Creare gruppi di sicurezza per docenti e studenti dell'istituto di istruzione
-author: serdars
-ms.author: serdars
+author: DaniEASmith
+ms.author: danismith
 manager: serdars
 ms.topic: article
 ms.reviewer: angch
@@ -17,16 +17,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f46bd50e47640c575489788ccd3e5db0ce778564
-ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
+ms.openlocfilehash: 99c4e10cc37513323eb3dcfb8159977b269a667d
+ms.sourcegitcommit: 791d0a341ff873145fa893ece05055729b0b8d50
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65681547"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838791"
 ---
 # <a name="powershell-script-sample---create-security-groups-for-educators-and-students-in-your-school"></a>Esempio di script di PowerShell - Creare gruppi di sicurezza per docenti e studenti dell'istituto di istruzione
 
-Usare questo script di PowerShell per creare i gruppi di sicurezza necessari per gestire i criteri di Microsoft Teams dell'istituto di istruzione. La caratteristica assegnazione dei criteri [ai gruppi](../assign-policies-users-and-groups.md#assign-a-policy-to-a-group) in Teams consente di assegnare criteri a un gruppo di utenti, ad esempio un gruppo di sicurezza. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando vengono aggiunti o rimossi membri da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza.
+Usare questo script di PowerShell per creare i gruppi di sicurezza necessari per gestire i criteri di Microsoft Teams nell'istituto di istruzione. La funzionalità [di assegnazione dei criteri ai gruppi](../assign-policies-users-and-groups.md#assign-a-policy-to-a-group) in Teams consente di assegnare un criterio a un gruppo di utenti, ad esempio un gruppo di sicurezza. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando vengono aggiunti o rimossi membri da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza.
 
 Questo script di PowerShell crea due gruppi di sicurezza, uno per il personale e i docenti e un altro per gli studenti dell'istituto di istruzione, in base al tipo di licenza. È quindi possibile assegnare criteri ai gruppi di sicurezza creati. Per altre informazioni sull'uso di questo script, vedere [Assegnare criteri a grandi gruppi di utenti dell'istituto di](../batch-group-policy-assignment-edu.md) istruzione.
 
@@ -34,7 +34,7 @@ Questo script esegue le operazioni seguenti:
 
 - Identifica il personale e i docenti a cui è assegnato uno SKU per istituti di istruzione, crea un gruppo di sicurezza e quindi aggiunge personale e docenti al gruppo.
 - Identifica gli studenti a cui è assegnato uno SKU studente, crea un gruppo di sicurezza e quindi aggiunge gli studenti al gruppo.
-- Aggiorna l'appartenenza di ogni gruppo di sicurezza per aggiungere o rimuovere personale, docenti e studenti a seconda che abbiano o meno una licenza.
+- Aggiornamenti l'appartenenza di ogni gruppo di sicurezza per aggiungere o rimuovere personale, docenti e studenti a seconda che dispongano o meno di una licenza.
 
 È necessario eseguire regolarmente questo script per mantenere i gruppi di sicurezza aggiornati.
 
@@ -45,7 +45,7 @@ Questo script esegue le operazioni seguenti:
 
 Scaricare e installare il [modulo di PowerShell di Skype for Business Online](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell), quindi riavviare il computer se richiesto.
 
-Per altre informazioni, vedere [Gestire Skype for Business Online con Office 365 PowerShell](/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) e [Teams panoramica di PowerShell](../teams-powershell-overview.md).
+Per saperne di più, vedi [Panoramica su come gestire Skype for Business online con Office 365 PowerShell](/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) e [Teams](../teams-powershell-overview.md).
 
 
 ## <a name="sample-script"></a>Script di esempio
