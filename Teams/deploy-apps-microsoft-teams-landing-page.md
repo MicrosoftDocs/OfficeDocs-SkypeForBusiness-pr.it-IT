@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020; intro-overview; intro-hub-or-landing
-ms.openlocfilehash: f802506ff815745aaf555501e37171ebddfc7f91
-ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
+ms.openlocfilehash: 24115de31c06c38ff1f0217868cf19993aa24555
+ms.sourcegitcommit: 791d0a341ff873145fa893ece05055729b0b8d50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66615862"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838861"
 ---
 # <a name="about-apps-in-microsoft-teams"></a>Informazioni sulle app in Microsoft Teams
 
@@ -83,9 +83,15 @@ Gli sviluppatori possono trasferire localmente un'app per renderla disponibile a
 
 Se il trasferimento locale non è consentito, gli sviluppatori possono comunque testare le proprie app in un [tenant di test](/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant). Una volta completato lo sviluppo di app personalizzate, gli sviluppatori richiedono agli amministratori di distribuire l'app personalizzata agli utenti finali. Per informazioni dettagliate, vedere [come pubblicare un'app personalizzata](/microsoftteams/upload-custom-apps). Gli amministratori possono consentire o impedire l'uso di un'app personalizzata per utenti specifici.
 
-### <a name="about-app-templates"></a>Informazioni sui modelli di app
+## <a name="about-app-templates"></a>Informazioni sui modelli di app
 
-I modelli di app per Teams sono app di esempio funzionali pronte per la produzione create da Microsoft per illustrare casi d'uso comuni, per presentare procedure consigliate per lo sviluppo di app e per fornire app open source che gli sviluppatori estendono per creare app personalizzate. Gli sviluppatori personalizzano i modelli di app per le esigenze dell'organizzazione con semplici modifiche al codice disponibile in GitHub. L'amministratore offre queste app come app personalizzate agli utenti finali.
+I modelli di app per Teams sono app di esempio funzionali e pronte per la produzione create da Microsoft per:
+
+* Illustrare i casi d'uso più diffusi
+* Presentare le procedure consigliate per lo sviluppo di app
+* Fornire app open source che gli sviluppatori possono estendere per creare app personalizzate
+
+Gli sviluppatori dell'organizzazione personalizzano i modelli di app con semplici modifiche al codice disponibile in GitHub. Queste app vengono fornite come app personalizzate per gli utenti finali, per soddisfare qualsiasi esigenza dell'organizzazione.
 
 Per altre informazioni, vedere [Modelli di app di Microsoft Teams](https://adoption.microsoft.com/microsoft-teams/app-templates/).
 

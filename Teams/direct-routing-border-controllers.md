@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Scopri quali Session Border Controller (SBC) sono stati certificati per l'instradamento diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bb4363fec70a7bcf139929541a7dfe3686089937
-ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
+ms.openlocfilehash: 3a0db349d1e828a238a6b7a68d8f005e7389182b
+ms.sourcegitcommit: 791d0a341ff873145fa893ece05055729b0b8d50
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65823548"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "66838851"
 ---
 # <a name="session-border-controllers-certified-for-direct-routing"></a>Session Border Controller certificati per l'instradamento diretto
 
@@ -178,3 +178,6 @@ Nella tabella seguente sono elencati i dispositivi verificati per l'interoperabi
 La certificazione è concessa a una versione principale. Ciò significa che è supportato il firmware con qualsiasi numero nel firmware SBC che segue la versione principale.
 
 Per inviare feedback su Teams, ad esempio idee su nuove funzionalità, vedere il [portale sui feedback Microsoft](https://feedbackportal.microsoft.com/).
+
+> [!NOTE]
+> Il re-targeting dei supporti non è supportato. Durante una chiamata con instradamento diretto, se il SBC invia un nuovo indirizzo IP multimediale all'instradamento diretto di Teams, anche se viene negoziato nel segnale SIP, i supporti non vengono mai inviati al nuovo indirizzo IP dall'instradamento diretto di Teams.
