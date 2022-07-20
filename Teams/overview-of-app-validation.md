@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8172db3e67ad895427e90ed3821e1c6fb61f5df9
-ms.sourcegitcommit: 9946c6c1faa78617ccd7bdf115457090ebce5619
+ms.openlocfilehash: 43a75e22fd5d42af50651151cde2876474300c4b
+ms.sourcegitcommit: 89904ab4116294ad9e4fd407feba8d7e3eefef10
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66190483"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66880410"
 ---
 # <a name="validation-performed-by-microsoft-for-all-teams-apps"></a>Convalida eseguita da Microsoft per tutte le app di Teams
 
@@ -41,7 +41,7 @@ Per conoscere le linee guida dettagliate sulla convalida a cui aderiscono gli sv
 Eseguiamo più di 400 test case per ogni app prima che venga resa disponibile in Teams Store. I test garantiscono funzionalità, esperienza utente e sicurezza appropriate e assicurano che tutte le app siano conformi ai criteri CMO elencati pubblicamente. Di seguito sono riportati alcuni dei test eseguiti dal team di convalida delle app Microsoft per ogni app prima della pubblicazione:
 
 * Assicurarsi che le autorizzazioni graph richieste dall'app siano effettivamente quelle necessarie per la funzionalità dell'app e non le autorizzazioni aggiuntive. Le autorizzazioni graph per le app esistenti vengono controllate regolarmente per assicurarsi che non siano richieste autorizzazioni aggiuntive da un'app.
-* Le app che richiedono agli utenti di accedere hanno un'opzione di disconnessione.
+* Le applicazioni che richiedono l'accesso degli utenti hanno un'opzione di disconnessione.
 * Tutti gli autori di app vengono sottoposti a un processo di verifica dettagliato su Microsoft Partner Center. La verifica include la verifica tramite posta elettronica, la verifica aziendale e altro ancora. Per altre informazioni sulla pubblicazione di app, vedi [In che modo gli sviluppatori creano un account del Centro per i partner](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/create-partner-center-dev-account), [Guida per l'invio per gli sviluppatori](/office/dev/store/add-in-submission-guide) e [Modalità di pubblicazione delle app da parte degli sviluppatori](https://aka.ms/PublishToTeamsStore).
 * Solo le app degli autori verificati possono cercare le autorizzazioni Graph dagli utenti finali.
 * Nessuna app può scaricare un file eseguibile.

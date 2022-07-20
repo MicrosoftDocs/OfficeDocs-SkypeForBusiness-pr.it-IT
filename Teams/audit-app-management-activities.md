@@ -15,12 +15,12 @@ description: Informazioni su come controllare le attività dell'app Teams di ute
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 77c7ac5d80304e82f1309e3a22b21c17d106a58c
-ms.sourcegitcommit: 90f03a841f8ca33092dce65c543357c7c2f7b82a
+ms.openlocfilehash: 54cf634fb8da78081023fad3940daf4ef33450c2
+ms.sourcegitcommit: 89904ab4116294ad9e4fd407feba8d7e3eefef10
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66647833"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66880400"
 ---
 # <a name="audit-for-app-management-activities-and-events"></a>Audit per le attività e gli eventi di gestione delle app
 
@@ -72,6 +72,7 @@ Dopo aver cercato il segno di controllo nel portale di conformità, è possibile
 
 ## <a name="see-also"></a>Vedere anche
 
+* [Utilizzare i registri di audit per indagare sull'attività di installazione di Microsoft Power Platform](manage-power-platform-apps.md#use-audit-logs-to-investigate-microsoft-power-platform-installation-activity)
 * [Cercare il segno di controllo nel portale di conformità](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 * [Panoramica di Microsoft Purview Audit Premium](/microsoft-365/compliance/advanced-audit).
 * [Attivare o disattivare il controllo](/microsoft-365/compliance/turn-audit-log-search-on-or-off).
