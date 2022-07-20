@@ -17,12 +17,12 @@ f1.keywords:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire l'accesso alle app personalizzate create con Microsoft Power Platform nell'interfaccia di amministrazione di Teams.
-ms.openlocfilehash: bf75d65f9ebc84ec836dd64839b3e6178d828867
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: 85aa9904b22dd03e1056b353bf91904909c11f59
+ms.sourcegitcommit: 89904ab4116294ad9e4fd407feba8d7e3eefef10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66240525"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66880260"
 ---
 # <a name="manage-microsoft-power-platform-apps-in-the-teams-admin-center"></a>Gestire le app Microsoft Power Platform nell'interfaccia di amministrazione di Teams
 
@@ -39,7 +39,7 @@ Le app di Microsoft Power Platform create dagli sviluppatori dell'organizzazione
 
 Quando viene creata o condivisa un'app Microsoft Power Platform, gli utenti possono visualizzarla e installarla nella pagina App in **Built with Power Platform**. Potrebbero essere necessari alcuni minuti prima che un'app venga creata o condivisa per essere visualizzata qui.
 
-:::image type="content" source="media/manage-power-platform-apps-apps-page.png" alt-text="Screenshot della pagina App che mostra le app di Microsoft Power Platform elencate in Built with Power Platform":::
+:::image type="content" source="media/manage-power-platform-apps-apps-page.png" alt-text="Screenshot della pagina App che mostra le app di Microsoft Power Platform elencate in Built with Power Platform.":::
 
 Gli utenti finali vedono un'app in **Built with Power Platform** se l'app soddisfa una delle condizioni seguenti.
 
@@ -69,10 +69,10 @@ Per impostazione predefinita, le **app Power Apps condivise** e le **app agente 
 1. Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft Teams passare alle app  > **di Teams****Gestire le app**. Per accedere alla pagina è necessario essere un amministratore globale o un amministratore del servizio Teams.
 2. Nell'elenco delle app esegui una delle operazioni seguenti.
 
-    :::image type="content" source="media/manage-power-platform-apps-manage-apps.png" alt-text="Screenshot della pagina Gestisci app che mostra le app condivise di Microsoft Power Platform":::
+    :::image type="content" source="media/manage-power-platform-apps-manage-apps.png" alt-text="Screenshot della pagina Gestisci app che mostra le app condivise di Microsoft Power Platform.":::
 
-    - Per bloccare le app create in Power Apps o Power Virtual Agents per tutti gli utenti dell'organizzazione, cercare **App power apps condivise** o **App agente virtuale di power condiviso**, selezionarle e quindi fare clic su **Blocca**.
-    - Per consentire le app create in Power Apps o Power Virtual Agents per tutti gli utenti dell'organizzazione, cercare **App power apps condivise** o **App agente virtuale di power condiviso**, selezionarle e quindi fare clic su **Consenti**.
+    * Per bloccare le app create in Power Apps o Power Virtual Agents per tutti gli utenti dell'organizzazione, cercare **Power Apps condivise** o **App agente virtuale di power condiviso**, selezionarle e quindi selezionare **Blocca**.
+    * Per consentire le app create in Power Apps o Power Virtual Agents per tutti gli utenti dell'organizzazione, cercare **App power apps condivise** o **App agente virtuale di power condiviso**, selezionarle e quindi selezionare **Consenti**.
 
 ### <a name="allow-or-block-microsoft-power-platform-apps-for-specific-users"></a>Consentire o bloccare le app di Microsoft Power Platform per utenti specifici
 
@@ -91,10 +91,10 @@ Ad esempio, per impedire a utenti specifici di accedere alle app create in Power
 > [!NOTE]
 > È possibile esportare i record di controllo in formato CSV per semplificare l'applicazione di filtri.
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-articles"></a>Articoli correlati
 
-- [Condividere un'app canvas in Power Apps](/powerapps/maker/canvas-apps/share-app)
-- [Condividere il bot con altri utenti](/power-virtual-agents/admin-share-bots)
-- [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
-- [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)
-- [Pubblicare un'app personalizzata inviata tramite l'API di invio dell'app Teams](submit-approve-custom-apps.md)
+* [Condividere un'app canvas in Power Apps](/powerapps/maker/canvas-apps/share-app)
+* [Condividere il bot con altri utenti](/power-virtual-agents/admin-share-bots)
+* [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
+* [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)
+* [Pubblicare un'app personalizzata inviata tramite l'API di invio dell'app Teams](submit-approve-custom-apps.md)

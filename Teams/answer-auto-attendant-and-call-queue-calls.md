@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1a9058dbd583c9d795d04f27b43995c75095e80d
-ms.sourcegitcommit: 90f03a841f8ca33092dce65c543357c7c2f7b82a
+ms.openlocfilehash: fb621661ab8b5b8ace8a965e77513cd72966cf23
+ms.sourcegitcommit: 89904ab4116294ad9e4fd407feba8d7e3eefef10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66647668"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66880370"
 ---
 # <a name="answer-auto-attendant-and-call-queue-calls-directly-from-teams"></a>Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams
 
@@ -49,7 +49,7 @@ Una volta risposto a una chiamata in coda o a un operatore automatico, l'utente 
 > [!NOTE] 
 > Le chiamate in coda di chiamata non vengono inoltrate in base alla configurazione delle regole di risposta alle chiamate dell'utente. Questo per garantire che i chiamanti rimangano in coda fino a quando un agente non può rispondere alla chiamata e il chiamante non viene inoltrato in modo imprevisto.
 >
-> Gli utenti che ricevono chiamate da operatori automatici e code di chiamata riceveranno il nome del chiamante solo se fornito dalla rete PSTN o se il numero del chiamante corrisponde ai contatti client del team locale dell'utente di destinazione.
+> Gli utenti che ricevono chiamate da code di chiamata riceveranno il nome del chiamante solo se viene fornito dalla rete PSTN o se il numero del chiamante corrisponde ai contatti client del team locale dell'utente di destinazione.
 >
 > Gli agenti non ricevono alcuna notifica delle chiamate perse o dei messaggi vocali per le chiamate in coda di chiamata.
 

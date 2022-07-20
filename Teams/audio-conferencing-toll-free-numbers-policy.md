@@ -21,21 +21,21 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - ms.teamsadmincenter.audioconferencing.overview
-description: Scopri come i servizi di audioconferenza in Microsoft 365 o Office 365 consentono agli utenti di accedere alle riunioni tramite telefono.
-ms.openlocfilehash: 11e1e493db38b5e830b3334f659d23f86b6b56ba
-ms.sourcegitcommit: 296fbefe0481c0b8b94aee925118474375cdf138
+description: Informazioni su come i servizi di audioconferenza in Microsoft 365 o Office 365 consentono agli utenti di accedere alle riunioni tramite telefono.
+ms.openlocfilehash: 1a03faf129a40d61605474e95c759067ce20841e
+ms.sourcegitcommit: 312ff79ecab91412918793ec882bfc6e0143d30a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65017000"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66884905"
 ---
 # <a name="audio-conferencing-policy-settings-for-toll-and-toll-free-numbers"></a>Impostazioni dei criteri per i servizi di audioconferenza per i numeri verdi e a pagamento
 
-## <a name="teams-audio-conferencing-policy"></a>criteri di audioconferenza di Teams
+## <a name="teams-audio-conferencing-policy"></a>Criteri per i servizi di audioconferenza di Teams
 
-Usare i criteri per i servizi di audioconferenza per gestire i numeri verdi e a pagamento per i servizi di audioconferenza da visualizzare negli inviti alle riunioni creati dagli utenti all'interno dell'organizzazione. È possibile usare uno dei due criteri creati automaticamente oppure creare e assegnare criteri personalizzati. I due criteri creati automaticamente sono globali (impostazione predefinita a livello di organizzazione) e AllowTollFreeDialinFalse (assegnati a tutti gli utenti esistenti all'interno dell'organizzazione che non sono abilitati per i numeri verdi di accesso esterno). I criteri per i servizi di audioconferenza vengono gestiti nell'interfaccia di amministrazione di Microsoft Teams o tramite [PowerShell](teams-powershell-overview.md).
+Usare i criteri per i servizi di audioconferenza per gestire i numeri verdi e a pagamento per i servizi di audioconferenza da visualizzare negli inviti alle riunioni creati dagli utenti all'interno dell'organizzazione. È possibile usare uno dei due criteri creati automaticamente oppure creare e assegnare criteri personalizzati. I due criteri creati automaticamente sono globali (impostazione predefinita a livello di organizzazione) e AllowTollFreeDialinFalse (assegnati a tutti gli utenti esistenti all'interno dell'organizzazione che non sono abilitati per i numeri verdi di accesso esterno). I criteri di audioconferenza vengono gestiti nell'interfaccia di amministrazione di Microsoft Teams o tramite [PowerShell](teams-powershell-overview.md).
 
-- L'impostazione per AllowTollFreeDialin non può più essere gestita per un singolo utente tramite Teams'interfaccia di amministrazione o PowerShell. Gli amministratori tenant potranno gestire questa impostazione solo tramite i nuovi criteri per i servizi di audioconferenza.
+- L'impostazione per AllowTollFreeDialin non può più essere gestita per un singolo utente tramite l'interfaccia di amministrazione di Teams o PowerShell. Gli amministratori tenant potranno gestire questa impostazione solo tramite i nuovi criteri per i servizi di audioconferenza.
 - I criteri globali non possono essere modificati dall'interfaccia di amministrazione di Teams.
 
 Quando un criterio di audioconferenza di Teams è abilitato nel tenant, nel tenant saranno disponibili due criteri creati automaticamente. I due criteri creati automaticamente e le relative impostazioni predefinite sono:
@@ -43,9 +43,9 @@ Quando un criterio di audioconferenza di Teams è abilitato nel tenant, nel tena
 ### <a name="global-org-wide-default"></a>Globale (impostazione predefinita a livello di organizzazione)
 
 In questo criterio il valore di **AllowTollfreedialin** sarà impostato su ON e non ci saranno numeri di telefono definiti nel criterio. Questo sarà il criterio predefinito per tutti gli utenti del tenant che al momento del lancio hanno **AllowTollfreedialin** impostato su **Attivato**.
-Poiché i criteri non hanno numeri di telefono definiti, quando gli utenti di questo criterio creano una riunione Teams, i numeri di telefono disponibili nella riunione saranno gli stessi numeri di telefono degli utenti che avevano prima del criterio. Questi numeri di telefono in genere vengono impostati come predefiniti per il paese/sede dell'utente, a meno che non siano stati modificati dall'amministratore del tenant per i singoli utenti.
+Poiché i criteri non hanno numeri di telefono definiti, quando gli utenti di questo criterio creano una riunione di Teams, i numeri di telefono disponibili nella riunione saranno gli stessi numeri di telefono che avevano gli utenti prima dei criteri. Questi numeri di telefono in genere vengono impostati come predefiniti per il paese/sede dell'utente, a meno che non siano stati modificati dall'amministratore del tenant per i singoli utenti.
 
-Ad esempio, se a un utente con sede in Germania erano assegnati numeri verdi e a pagamento germania prima del lancio dei criteri per le audioconferenze, all'utente al momento dell'avvio verranno assegnati i criteri globali e i numeri di telefono che continueranno a visualizzare nell'invito alla riunione saranno gli stessi di prima dell'applicazione dei criteri, ovvero  numeri verdi e a pagamento tedeschi). Un utente finale non vedrà alcuna modifica all'avvio del criterio. Se, tuttavia, un amministratore tenant modifica i criteri globali e include numeri di telefono specifici nei criteri diversi da prima, tutti gli utenti del criterio vedranno solo i numeri di telefono inclusi nei criteri in tutte le riunioni pianificate.
+Ad esempio, se a un utente con sede in Germania erano assegnati numeri verdi e a pagamento germania prima del lancio dei criteri per le audioconferenze, all'utente al momento dell'avvio verranno assegnati i criteri globali e i numeri di telefono che continueranno a visualizzare nell'invito alla riunione saranno gli stessi di prima dell'applicazione dei criteri, ovvero  numeri verdi e a pagamento tedeschi). Un utente finale non vedrà alcuna modifica all'avvio del criterio. Se, tuttavia, un amministratore tenant modifica i criteri globali e include numeri di telefono specifici nei criteri diversi da prima, tutti gli utenti del criterio vedranno solo i numeri di telefono inclusi nei criteri in tutte le riunioni pianificare.
 
 > [!NOTE]
 > Se invece di Modificare il criterio globale un amministratore tenant crea un criterio personalizzato e lo applica agli utenti, le impostazioni definite nel criterio personalizzato saranno ciò che gli utenti finali vedranno negli inviti alle riunioni.
@@ -58,13 +58,13 @@ In questo criterio il valore di **AllowTollfreedialin** verrà impostato su **Di
 
 Poiché i criteri non hanno numeri di telefono definiti, quando gli utenti di questo criterio creano una riunione del team, i numeri di telefono che saranno disponibili nella riunione saranno gli stessi numeri di telefono che avevano gli utenti prima del criterio. Questi numeri di telefono in genere vengono impostati come predefiniti per il paese, l'area geografica o la posizione dell'utente, a meno che non sia stato modificato dall'amministratore del tenant per i singoli utenti.
 
-Ad esempio, se a un utente con sede in Germania era assegnato un numero di telefono a pagamento Germania prima del lancio di un criterio di audioconferenza, all'utente al momento dell'avvio verranno assegnati i criteri "AllowTollfreedialinFalse" e i numeri di telefono che continueranno a visualizzare nell'invito alla riunione saranno gli stessi di prima (vale a dire, il numero a pagamento Germania). Un utente finale non vedrà alcuna modifica all'avvio del criterio. Se, tuttavia, un amministratore tenant modifica il criterio **AllowTollfreedialinFalse** e include numeri di telefono specifici nel criterio, tutti gli utenti dei criteri vedranno solo i numeri di telefono inclusi nei criteri in tutte le riunioni pianificate.
+Ad esempio, se a un utente con sede in Germania era assegnato un numero di telefono a pagamento Germania prima del lancio di un criterio di audioconferenza, all'utente al momento dell'avvio verranno assegnati i criteri "AllowTollfreedialinFalse" e i numeri di telefono che continueranno a visualizzare nell'invito alla riunione saranno gli stessi di prima (vale a dire, il numero a pagamento Germania). Un utente finale non vedrà alcuna modifica all'avvio del criterio. Se, tuttavia, un amministratore tenant modifica il criterio **AllowTollfreedialinFalse** e include numeri di telefono specifici nel criterio, tutti gli utenti dei criteri vedranno solo i numeri di telefono inclusi nei criteri in tutte le riunioni pianificare.
 
 ## <a name="create-a-custom-audio-conferencing-policy"></a>Creare criteri personalizzati per i servizi di audioconferenza
 
 Panoramica dei passaggi:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams vai a Riunioni > Audioconferenza.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a Riunioni > Audioconferenza.
 1. Selezionare Aggiungi.
 1. Immettere il nome e la descrizione del criterio. Il nome non può contenere caratteri speciali o più di 64 caratteri.
 1. Scegliere le impostazioni desiderate.
@@ -76,7 +76,7 @@ In questo modo i numeri di telefono selezionati per Canada, Fruit e Singapore ve
 
 ### <a name="step-by-step-instructions-on-creating-a-custom-policy-based-on-the-example"></a>Istruzioni dettagliate sulla creazione di criteri personalizzati basati sull'esempio
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **RiunioniConferenze** >  audio.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, vai a **Riunioni** > **Audioconferenza**.
 2. Selezionare **Aggiungi**.
 3. Immettere il nome e la descrizione del criterio. Il nome non può contenere caratteri speciali o più di 64 caratteri.
 4. Scegliere se includere o meno i numeri verdi nelle riunioni create dagli utenti di questo criterio. Impostando questa opzione **su Attivato** potrai aggiungere numeri verdi in questo criterio.
@@ -94,9 +94,9 @@ In questo modo i numeri di telefono selezionati per Canada, Fruit e Singapore ve
 
 ## <a name="edit-a-meeting-policy"></a>Modificare un criterio di riunione
 
-È possibile modificare i criteri personalizzati creati. Nota: i criteri globali non possono essere modificati dall'interfaccia di amministrazione di Teams
+È possibile modificare i criteri personalizzati creati. (Nota: i criteri globali non possono essere modificati dall'interfaccia di amministrazione di Teams)
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **RiunioniConferenze** >  audio.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, vai a **Riunioni** > **Audioconferenza**.
 1. Scegliere il criterio da modificare selezionando a sinistra del nome del criterio e quindi selezionando **Modifica**.
 1. Apportare modifiche.
 1. Selezionare **Salva**.
@@ -116,6 +116,9 @@ Per informazioni sui diversi modi in cui è possibile assegnare criteri agli ute
 > [!NOTE]
 > A un utente può essere assegnato un solo criterio di audioconferenza alla volta.
 
+> [!IMPORTANT]
+> La visualizzazione dei numeri di telefono assegnati nell'invito alla riunione può richiedere fino a 24 ore. Se i numeri aggiornati non vengono visualizzati, attendi almeno 24 ore prima di contattare il supporto tecnico.
+
 ### <a name="known-issue"></a>Problema noto
 
-Quando si avvia una riunione usando l'opzione **Riunione immediata** da Microsoft Teams > Calendario > Riunione immediata, se si selezionano i puntini di sospensione ... e quindi Info riunione, si verifica un problema con la parte inferiore della sezione **in Chiamata in (solo audio).** Verranno visualizzati tutti i numeri di telefono definiti nel criterio, ma l'allineamento dei numeri rende difficile la lettura.
+Quando si avvia una riunione con l'opzione **Riunione immediata** di Microsoft Teams > Calendario > Riunione a sinistra, se poi si selezionano i puntini di sospensione ... e quindi Info riunione, si verifica un problema con la parte inferiore della sezione **in Chiamata in (solo audio).** Verranno visualizzati tutti i numeri di telefono definiti nel criterio, ma l'allineamento dei numeri rende difficile la lettura.

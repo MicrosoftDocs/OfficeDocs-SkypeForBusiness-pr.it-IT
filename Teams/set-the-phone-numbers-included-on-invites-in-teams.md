@@ -21,17 +21,17 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: Seguire questa procedura per creare un numero di telefono predefinito per consentire ai chiamanti di partecipare a una riunione Microsoft Teams.
-ms.openlocfilehash: 7f22f86a020940caf663b671c81ab7958230db21
-ms.sourcegitcommit: 296fbefe0481c0b8b94aee925118474375cdf138
+description: Seguire questa procedura per creare un numero di telefono predefinito per consentire ai chiamanti di partecipare a una riunione di Microsoft Teams.
+ms.openlocfilehash: f0956007d5df72c1fd6c6ae905433e73bd855a56
+ms.sourcegitcommit: 312ff79ecab91412918793ec882bfc6e0143d30a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65016578"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66884845"
 ---
 # <a name="set-the-phone-numbers-included-on-invites-in-microsoft-teams"></a>Impostare i numeri di telefono inclusi negli inviti in Microsoft Teams
 
-I servizi di audioconferenza in Microsoft 365 e Office 365 consentono agli utenti dell'organizzazione di creare riunioni Microsoft Teams e quindi consentire agli utenti di accedere alle riunioni con un numero di telefono.
+I servizi di audioconferenza in Microsoft 365 e Office 365 consentono agli utenti dell'organizzazione di creare riunioni di Microsoft Teams e quindi di accedere alle riunioni con un numero di telefono.
 
 Un ponte per conferenze offre un insieme di numeri di telefono di accesso esterno per l'organizzazione. Tutti questi numeri possono essere utilizzati per accedere alle riunioni create dall'organizzatore, ma è possibile selezionare quelli che verranno inclusi negli inviti alle riunioni.
 
@@ -49,11 +49,14 @@ I numeri di telefono inclusi negli inviti alle riunioni degli utenti abilitati p
 
 Come indicato in precedenza, oltre ai numeri di telefono, ogni invito alla riunione contiene un collegamento che apre l'elenco completo di tutti i numeri di telefono per l'accesso esterno che possono essere utilizzati per partecipare a una determinata riunione.
 
+> [!IMPORTANT]
+> La visualizzazione dei numeri di telefono assegnati nell'invito alla riunione può richiedere fino a 24 ore. Se i numeri aggiornati non vengono visualizzati, attendi almeno 24 ore prima di contattare il supporto tecnico.
+
 ### <a name="new-users"></a>Nuovi utenti
 
 I numeri verdi e a pagamento inclusi negli inviti alle riunioni per i nuovi utenti sono definiti anche dal *TeamsAudioconferencingPolicy* assegnato a tali utenti. Per impostazione predefinita, a tutti i nuovi utenti viene assegnato il Global *TeamsAudioconferencingPolicy*. I criteri globali non prevedono l'aggiunta di numeri di telefono, a meno che non vengano modificati dall'amministratore del tenant. In questo caso, i numeri di telefono inclusi negli inviti alle riunioni degli utenti abilitati per le audioconferenze sono definiti dal numero di telefono a pagamento predefinito per i servizi di conferenza e dal numero verde predefinito per le conferenze disponibili nelle impostazioni di ciascun utente.
 
-Per un nuovo utente, i numeri a tariffa predefiniti per le conferenze vengono assegnati in base alla posizione di utilizzo impostata nell'interfaccia di amministrazione Microsoft 365 dell'utente quando l'utente è abilitato per il servizio di audioconferenza. Se nel bridge di conferenza è presente un numero a tariffa corrispondente al paese dell'utente, tale numero verrà assegnato automaticamente come numero a tariffa predefinito dell'utente. In caso contrario, il numero definito come numero a pagamento predefinito del bridge di conferenza verrà assegnato come numero a pagamento predefinito dell'utente.  
+Per un nuovo utente, i numeri a pagamento predefiniti per i servizi di conferenza vengono assegnati in base alla posizione di utilizzo impostata nell'interfaccia di amministrazione di Microsoft 365 dell'utente quando l'utente è abilitato per il servizio di audioconferenza. Se nel bridge di conferenza è presente un numero a tariffa corrispondente al paese dell'utente, tale numero verrà assegnato automaticamente come numero a tariffa predefinito dell'utente. In caso contrario, il numero definito come numero a pagamento predefinito del bridge di conferenza verrà assegnato come numero a pagamento predefinito dell'utente.  
 
 Dopo aver abilitato l'utente per il servizio Di audioconferenza, i numeri verdi e a tariffa predefiniti dell'utente possono essere modificati dall'amministratore del tenant in base ai valori iniziali in base alle esigenze.
 
@@ -80,7 +83,7 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 5. Usa i campi **Numero a pagamento** o **Numero verde** per immettere i numeri per l'utente.
 
 > [!IMPORTANT]
-> Quando si modificano le impostazioni dei servizi di audioconferenza di un utente, le riunioni Microsoft Teams ricorrenti e future devono essere aggiornate e inviate ai partecipanti.
+> Quando si modificano le impostazioni dei servizi di audioconferenza di un utente, le riunioni ricorrenti e future di Microsoft Teams devono essere aggiornate e inviate ai partecipanti.
 
 > [!NOTE]
 > I numeri di telefono immessi in questa impostazione vengono utilizzati solo se il *criterio TeamsAudioConferencingPolicy* assegnato all'utente non ha alcun numero di telefono aggiunto.
@@ -93,7 +96,7 @@ Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazio
 
 - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
 
-Per impostare o modificare il numero di telefono predefinito dei servizi di audioconferenza per un organizzatore o un utente della riunione utilizzando [Microsoft Teams PowerShell](/powershell/module/teams/?view=teams-ps), imposta i **`ServiceNumber`** parametri o **`TollFreeServiceNumber`** del cmdlet [Set-CsOnlineDialInConferencingUser](/powershell/module/skype/set-CsOnlineDialInConferencingUser?view=skype-ps) su uno dei numeri disponibili.
+Per impostare o modificare il numero di telefono predefinito per i servizi di audioconferenza per un organizzatore o un utente della riunione utilizzando [Microsoft Teams PowerShell](/powershell/module/teams/?view=teams-ps), imposta i **`ServiceNumber`** parametri o **`TollFreeServiceNumber`** del cmdlet [Set-CsOnlineDialInConferencingUser](/powershell/module/skype/set-CsOnlineDialInConferencingUser?view=skype-ps) su uno dei numeri disponibili.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
