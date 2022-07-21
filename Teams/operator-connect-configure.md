@@ -1,7 +1,7 @@
 ---
 title: Configurare Operator Connect
-author: cazawideh
-ms.author: czawideh
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.date: 09/30/2021
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c37c6e52eac53e2cf3e43e45566243a6c83025a7
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: e9a773e7c8767164480374826a2410050681505a
+ms.sourcegitcommit: 5a8a077b30a0eab2342afc422869adaa682a015b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66240505"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66915194"
 ---
 # <a name="configure-operator-connect"></a>Configurare Operator Connect
 
@@ -91,18 +91,15 @@ Per ulteriori informazioni sulle chiamate di emergenza, vedi [Gestire le chiamat
 
 1. Contatta l'operatore per trasferire i numeri in Operator Connect. Vedi [la directory Microsoft 365 Operator Connect](https://cloudpartners.transform.microsoft.com/practices/microsoft-365-for-operators/directory) per trovare il sito Web del tuo operatore.
 
-2. Dopo che l'operatore ha completato l'ordine di trasferimento, puoi annullare l'assegnazione dei numeri di telefono del piano per chiamate degli utenti e rimuovere la licenza per il piano per chiamate. L'operatore potrà quindi caricare i numeri nel tenant.
+2. Dopo che l'operatore avrà completato l'ordine di trasferimento, l'operatore caricherà i numeri nel tenant.
 
 3. Assegnare numeri Operator Connect agli utenti usando l'interfaccia di amministrazione di Teams o PowerShell. Per altre informazioni, vedere [Assegnare numeri](#assign-numbers).
 
 ### <a name="move-numbers-from-direct-routing-to-operator-connect"></a>Spostare i numeri dal routing diretto alla connessione operatore
 
-Per spostare i numeri da Direct Routing a Operator Connect, il numero di routing diretto esistente caricato nel tenant dall'operatore deve essere rimosso dall'utente a cui è assegnato. Quindi, dopo aver eseguito la migrazione del numero a Operator Connect, è possibile assegnarlo di nuovo all'utente. Per passare dal routing diretto all'operatore Connettiti con numeri di telefono locali o online, segui i passaggi seguenti:
+Per passare dal routing diretto all'operatore Connettiti con numeri di telefono locali o online, segui i passaggi seguenti:
 
->[!IMPORTANT]
-> Il numero di telefono non sarà più in servizio durante la migrazione, quindi coordinati con l'operatore Operator Connect prima di iniziare.
-
-#### <a name="step-1---remove-existing-direct-routing-numbers"></a>Passaggio 1 - Rimuovere i numeri di routing diretto esistenti.
+#### <a name="step-1---identify-if-the-existing-direct-routing-numbers-are-assigned-online-or-on-premises"></a>Passaggio 1 - Identificare se i numeri di direct routing esistenti sono assegnati online o in locale.
 
 Verificare che all'utente sia assegnato un numero di routing diretto eseguendo il comando modulo PowerShell di Teams:
 
@@ -119,9 +116,13 @@ Get-CsOnlineUser -Identity <user> | fl RegistrarPool, OnPremLineURI, LineURI
 ```
 
 Se `OnPremLineUri` viene popolato con un numero di telefono E.164, il numero di telefono è stato assegnato in locale e sincronizzato con Microsoft 365.
-    
-**Per rimuovere i numeri di routing diretto assegnati in locale,** eseguire il comando di PowerShell Skype for Business Server seguente:
-    
+
+**Per eseguire la migrazione dei numeri direct routing assegnati online a Operator Connect**, contatta l'operatore. Per trovare il sito Web del tuo operatore, vedi [Directory Microsoft 365 Operator Connect](https://cloudpartners.transform.microsoft.com/practices/microsoft-365-for-operators/directory). In base alla data e all'ora stabilite, l'operatore eseguirà la migrazione dei numeri da Direct Routing a Operator Connect.
+
+**Per eseguire la migrazione dei numeri di routing diretto assegnati in locale a Operator Connect**, eseguire il comando Skype for Business Server PowerShell seguente:
+>[!IMPORTANT]
+> Il numero di telefono non sarà più in servizio durante la migrazione, quindi coordinati con l'operatore Operator Connect prima di iniziare.
+
 ```PowerShell
 Set-CsUser -Identity <user> -LineURI $null 
 ```
@@ -140,7 +141,7 @@ OnPremLineURI                        :
 LineURI                              : 
 ```
 
-<br> **Per rimuovere i numeri di routing diretto online assegnati online,** eseguire il comando modulo PowerShell di Teams seguente:
+
 
 
 ```PowerShell
