@@ -17,12 +17,12 @@ f1.keywords:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come caricare le app personalizzate nell'app store dell'organizzazione nell'interfaccia di amministrazione di Microsoft Teams.
-ms.openlocfilehash: 5ef5992e01b5de4e2f4feaed51b50e2d0f16c0d8
-ms.sourcegitcommit: 4be2a5db44972b35bdde5752eea0d74cf831607a
+ms.openlocfilehash: 8f7968a53b70ac8ffa871d03adacd648ec047c52
+ms.sourcegitcommit: 70185cd963c5a9d539e65e302d4230018209ecae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642761"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66958051"
 ---
 # <a name="publish-a-custom-app-by-uploading-an-app-package"></a>Pubblicare un'app personalizzata caricando un pacchetto dell'app
 
@@ -57,20 +57,20 @@ Per consentire a utenti attendibili di caricare app personalizzate, seguire ques
 1. Attiva l'impostazione **Consenti interazione con app personalizzate** a livello di organizzazione. Procedi come segue.
 
     1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passare alle app  > **di Teams****Gestire le app** e quindi fare clic su **Impostazioni app a livello di organizzazione**.
-    
-    2. In **App personalizzate** attiva **Consenti interazione con le app personalizzate** e quindi fai clic su **Salva**.
-    
+
+    1. In **App personalizzate** attiva **Consenti interazione con le app personalizzate** e quindi fai clic su **Salva**.
+
 1. Disattiva l'impostazione **Carica app personalizzate** nei criteri di configurazione delle app globali. Procedi come segue.
 
     1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passare a **Criteri di configurazione** **delle app** >  di Teams e quindi fare clic sul criterio **globale (predefinito a livello di organizzazione**).
-    
-    2. Disattivare **Carica app personalizzate** e quindi fare clic su **Salva**.
-    
+
+    1. Disattivare **Carica app personalizzate** e quindi fare clic su **Salva**.
+
 1. Creare un nuovo criterio di configurazione delle app che consente di caricare app personalizzate e assegnarle al set di utenti attendibili. Procedi come segue.
 
     1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passare a **Criteri di configurazione** **delle app** >  di Teams e quindi fare clic su **Aggiungi**. Assegnare un nome e una descrizione al nuovo criterio, attivare **Carica app personalizzate** e quindi fare clic su **Salva**.
-    
-    2. Selezionare il nuovo criterio creato e quindi fare clic su **Gestisci utenti**. Cercare un utente, fare clic su **Aggiungi** e quindi su **Applica**. Ripetere questo passaggio per assegnare il criterio a tutti gli utenti attendibili.
+
+    1. Selezionare il nuovo criterio creato e quindi fare clic su **Gestisci utenti**. Cercare un utente, fare clic su **Aggiungi** e quindi su **Applica**. Ripetere questo passaggio per assegnare il criterio a tutti gli utenti attendibili.
 
        ![Screenshot della pagina "Aggiungi criteri di configurazione app"](media/manage-your-lob-apps-new-app-setup-policy.png)
 
@@ -119,7 +119,17 @@ Per aggiornare un'app, gli sviluppatori seguono i passaggi descritti nelle sezio
 
 Nella maggior parte dei casi, dopo aver completato un aggiornamento dell'app, la nuova versione viene visualizzata automaticamente per gli utenti finali. Per altre informazioni, vedi [Esperienza di aggiornamento per l'utente finale](apps-update-experience.md).
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="remove"></a>Rimuovi
+
+Per rimuovere un'app, procedere come segue:
+
+1. Passare all'interfaccia di amministrazione di Teams.
+1. Accedi alla pagina **[Gestisci app](https://admin.teams.microsoft.com/policies/manage-apps)** **delle app delle app** >  di Teams.
+1. Fai clic sul nome dell'app per aprire la pagina dei dettagli dell'app.
+1. Accanto al banner dell'app selezionare **Azioni** > **Elimina**.
+1. Nella finestra di dialogo selezionare **Elimina**.
+
+## <a name="related-articles"></a>Articoli correlati
 
 * [Pubblicare un'app personalizzata inviata tramite l'API di invio dell'app Teams](submit-approve-custom-apps.md)
 * [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
