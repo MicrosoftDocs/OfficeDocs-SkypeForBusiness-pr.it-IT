@@ -1513,6 +1513,8 @@ items:
             href: expand-teams-across-your-org/shifts/shifts-data-faq.md
           - name: Gestire l'app Aggiornamenti
             href: manage-updates-app.md
+          - name: Gestire l'app Walkie Talkie
+            href: walkie-talkie.md
       - name: Gestire app di terze parti
         items:
           - name: Comprendere le app di terze parti

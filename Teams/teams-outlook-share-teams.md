@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: db4b3adabecf147f5adf9cadb9891892b5a82e5a
-ms.sourcegitcommit: 79ada2140b110239deff96e4854ebd5dd9b77881
+ms.openlocfilehash: e2ac9a38e16000829b391e77dffdd718ed349299
+ms.sourcegitcommit: f5546acf02ec644225f6d0fb41f38b1912da6adf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66606225"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66952760"
 ---
 # <a name="share-to-teams-from-outlook"></a>Condividere in Teams da Outlook
 
@@ -30,9 +30,9 @@ La condivisione in Teams da Outlook (Condividi a Teams) consente agli utenti di 
 La funzionalità Condividi in Teams richiede un componente aggiuntivo per Outlook. Questo componente aggiuntivo viene installato automaticamente ogni volta che un utente accede all'app Web di Teams o al client desktop di Teams.
 
 > [!NOTE]
-> Assicurarsi di esaminare [i componenti aggiuntivi per Outlook in regole di accesso client e Exchange Online](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook) [in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) per assicurarsi che i componenti aggiuntivi per Outlook funzionino correttamente. Inoltre, la disabilitazione delle esperienze connesse può impedire il corretto funzionamento dei componenti aggiuntivi per Outlook. Per altre informazioni, vedere [Esperienze connesse in Office](https://support.microsoft.com/topic/connected-experiences-in-office-8d2c04f7-6428-4e6e-ac58-5828d4da5b7c) .  
+> Assicurarsi di esaminare [i componenti aggiuntivi per Outlook in regole di accesso client e Exchange Online](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook) [in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) per assicurarsi che i componenti aggiuntivi per Outlook funzionino correttamente. Inoltre, la disabilitazione delle esperienze connesse può impedire il corretto funzionamento dei componenti aggiuntivi per Outlook. Per altre informazioni, vedere [Esperienze connesse in Office](https://support.microsoft.com/topic/connected-experiences-in-office-8d2c04f7-6428-4e6e-ac58-5828d4da5b7c) . Le cassette postali condivise non sono supportate dal componente aggiuntivo. 
 
-La condivisione con Teams usa lo stesso meccanismo di trasporto usato quando un utente invia un'e-mail a un canale. Per la condivisione in chat, i messaggi di posta elettronica (inclusi gli allegati) vengono copiati nel OneDrive del mittente. Per la condivisione nei canali, i messaggi di posta elettronica e gli allegati vengono copiati nella cartella **Messaggi di posta elettronica** in SharePoint.
+La condivisione con Teams usa lo stesso meccanismo di trasporto usato quando un utente invia un'e-mail a un canale. Per la condivisione in chat, i messaggi di posta elettronica (inclusi gli allegati) vengono copiati nel OneDrive del mittente. Per la condivisione nei canali, i messaggi di posta elettronica e gli allegati vengono copiati nella cartella **dei messaggi di Email** in SharePoint.
 
 Il componente aggiuntivo di Outlook per Condividi in Teams usa il set di requisiti 1.7, come descritto [nella documentazione dei componenti aggiuntivi per Outlook](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook), che include dettagli sui componenti aggiuntivi per Outlook, requisiti di ambiente per i componenti aggiuntivi di Outlook e client di Outlook specifici supportati con il set di requisiti 1.7.
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5df52ff5de4db994cb049db1dde2b27c2465dce5
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 0e6fdb36148f87ce243fff044a08a3bdcdd28d58
+ms.sourcegitcommit: f5546acf02ec644225f6d0fb41f38b1912da6adf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675758"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66952770"
 ---
 # <a name="it-admin-guide-to-reflect-in-microsoft-teams"></a>Guida per gli amministratori a Reflect in Microsoft Teams
 
@@ -29,15 +29,15 @@ Questo documento fornisce informazioni relative a [Reflect](https://aka.ms/refle
 
 Questa app utilizza emoji e granularità emotiva basata sulla ricerca per supportare i docenti introducendo elementi di apprendimento sociale ed emotivo nella loro routine impegnativa.
 
-
 ## <a name="privacy-and-security"></a>Privacy e sicurezza
+
 Reflect applica gli stessi standard di sicurezza e riservatezza di [Insights per l'istruzione](class-insights.md) per proteggere i dati sensibili degli studenti.
 
 Riflettere, come parte di Microsoft 365, rispetta le normative nazionali, regionali e specifiche del settore per la raccolta e l'uso dei dati, tra cui [GDPR](/compliance/regulatory/gdpr) e il [Family Educational Rights and Privacy Act (FERPA)](/compliance/regulatory/offering-ferpa) che protegge la privacy dei record di istruzione degli studenti.
 
 I dati appartengono all'istituto e Microsoft si limita solo a raccoglierli e ad archiviarli. Il personale Microsoft non può accedere ai dati o visualizzarli, se non per quanto consentito dalla conformità in modo controllato per gestire il servizio, ad esempio per il recupero dei dati.
 
-Gli studenti *non vedono mai* i nomi degli altri studenti, ma solo il modo in cui rispondono.  Anche se possono vedere la distribuzione delle risposte, *non possono* vedere i nomi associati a ogni riflessione. 
+Gli studenti *non vedono mai* i nomi degli altri studenti, ma solo il modo in cui rispondono.  Anche se possono vedere la distribuzione delle risposte, *non possono* vedere i nomi associati a ogni riflessione.
 
 > [!NOTE]
 > Se rispondono meno di cinque studenti, nessun dato viene mostrato agli studenti. In questo modo viene minimizzata la capacità degli studenti di identificare le risposte dei compagni.
@@ -51,9 +51,9 @@ I dati appartengono all'istituto di istruzione, e Microsoft si limita solo a rac
 
 I dati vengono archiviati in Education Insights. Per impostazione predefinita, Education Insights è attivato. Quando si sceglie di non usare il servizio, **tutti i dati raccolti per Reflect verranno eliminati**. Se si riattiva Education Insights, la raccolta dei dati inizierà dal momento in cui il servizio viene riattivato.
 
-Nella [Guida per gli amministratori a Education Insights](class-insights.md), puoi leggere il funzionamento di Education Insights (inclusi percorsi di archiviazione) e [come attivare o disattivare Education Insights](class-insights.md#turn-insights-on-or-off) quando vuoi cancellare i dati o abilitare il servizio.
+Nella [Guida per gli amministratori a Education Insights](class-insights.md), puoi leggere il funzionamento di Education Insights (inclusi percorsi di archiviazione) e [come attivare o disattivare Education Insights](class-insights.md#turn-on-and-off-insights) quando vuoi cancellare i dati o abilitare il servizio.
 
-I dati sono raccolti dagli studenti in Reflect, anche se i dati degli utenti guest non vengono raccolti. **Se uno studente viene definito come un utente guest, i dati non vengono raccolti.** 
+I dati sono raccolti dagli studenti in Reflect, anche se i dati degli utenti guest non vengono raccolti. **Se uno studente viene definito come un utente guest, i dati non vengono raccolti.**
 
 ## <a name="enable-reflect"></a>Abilita Reflect
 Se gestisci i criteri di configurazione delle app per il tuo istituto, assicurai che Reflect sia *consentito* nel tuo tenant. Puoi anche aggiungere Reflect ai team di classe rilevanti dall'interfaccia di amministrazione di Teams.
