@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Scopri quali periferiche e dispositivi USB (ad esempio cuffie, altoparlanti, webcam e monitor) sono certificati per Microsoft Teams.
-ms.openlocfilehash: 956034bff42cdf3694c648306caf218057bca1da
-ms.sourcegitcommit: 89904ab4116294ad9e4fd407feba8d7e3eefef10
+ms.openlocfilehash: 63813ca51626ae16903b57e56de9b47345f44c10
+ms.sourcegitcommit: 911fdb6df0511b4a4d9e4705799877045a09113c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66880390"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66972781"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -41,6 +41,12 @@ Gli utenti non devono sostituire i dispositivi certificati in precedenza quando 
 - **Certificato per Microsoft Teams** I dispositivi certificati a questo livello indicano i dispositivi più recenti certificati, per un'esperienza teams senza compromessi. Questi dispositivi offrono tutti i vantaggi della certificazione precedente e includono anche un pulsante Teams dedicato con indicatore LED. Con la maggior parte dei fattori di forma, il pulsante Teams sarà un pulsante tattile facile da trovare con il logo di Teams. Microsoft continua a collaborare con i produttori di dispositivi per offrire nuovi valori tramite gli aggiornamenti del firmware nel corso del tempo.
 
 ### <a name="special-usage-designations"></a>Designazioni d'uso speciali
+
+- **Periferiche audio certificate Bluetooth native**  La maggior parte degli auricolari e degli altoparlanti Bluetooth certificati per Microsoft Teams è progettata per essere utilizzata con un adattatore USB per la connettività a PC e host Mac. Molti utenti hanno chiesto l'opzione per associare direttamente il dispositivo all'host, perché non dispongono di porte USB sufficienti o non vogliono ricordarsi di portare l'adattatore USB con loro quando lavorano in luoghi diversi.
+
+    I dispositivi certificati Bluetooth nativi, inclusi auricolari e vivavoci, sono supportati nei PC Windows (MacOS potrebbe essere supportato in futuro). I dispositivi sono testati per prestazioni audio, controllo delle chiamate e integrazione dei pulsanti di Teams, sia con che senza l'uso di un adattatore USB.
+
+    Le prestazioni in modalità Bluetooth nativa sono interessate dalla radio Bluetooth nel PC host, quindi consigliamo di installare gli ultimi aggiornamenti del firmware per i dispositivi e la radio Bluetooth. Una piccola parte di utenti potrebbe dover continuare a usare l'adattatore USB, ad esempio quando lavora in un ambiente radio ad alta densità, se il Bluetooth del PC è usato in modo pesante da più dispositivi associati o con determinati PC dotati di radio Bluetooth di scarsa qualità.
 
 - **Microfono Premium per l'apertura di Office** Tutti gli auricolari sono testati per fornire audio chiaro, ma l'ufficio aperto e altri ambienti rumorosi rappresentano una sfida maggiore. Le cuffie con questa designazione rilevano la voce dell'utente del visore VR, ma non trasmettono il suono dei loro vicini.
 - **Dimensioni della sala riunioni** I dispositivi condivisi, ad esempio vivavoci e fotocamere, hanno una distanza di utilizzo supportata. Le distanze consigliate possono essere diverse a seconda del produttore. Per fornire ai clienti indicazioni chiare, tutti i dispositivi condivisi vengono testati con la certificazione in base a dimensioni e ambienti rumorosi ben definiti.
