@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Scopri come utilizzare e gestire i canali condivisi in Microsoft Teams.
-ms.openlocfilehash: 2c15567c78000de187877477554c233b59c5e58f
-ms.sourcegitcommit: 312ff79ecab91412918793ec882bfc6e0143d30a
+ms.openlocfilehash: 8bd0fe39031fdae6d47e7c738a1c883b6b066f7d
+ms.sourcegitcommit: 1398570f56d5918d309f95fb734a2e8c5b4981b5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66884915"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66968907"
 ---
 # <a name="shared-channels-in-microsoft-teams"></a>Canali condivisi in Microsoft Teams
 
@@ -149,6 +149,8 @@ La tabella seguente descrive il numero massimo di canali e di membri.
 |Membri in un canale condiviso|5.000 membri diretti, fino a 50 team. (Ogni team con cui viene condiviso il canale viene conteggiato come un membro ai fini di tale limite.)|Gli aggiornamenti in tempo reale sono disponibili solo per 25.000 utenti alla volta e solo 25.000 utenti appariranno nella lista dei canali.|
 
 Si applicano anche le limitazioni seguenti:
+
+- Solo gli account aziendali o dell'istituto di istruzione di Azure AD sono supportati per i partecipanti esterni.
 
 - I canali condivisi supportano le schede tranne Stream, Planner e Forms.
 
