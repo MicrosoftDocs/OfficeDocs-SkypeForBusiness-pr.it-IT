@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-edu
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2694981d18bfbee7f75ea8157fb656d77675a71d
-ms.sourcegitcommit: 90f03a841f8ca33092dce65c543357c7c2f7b82a
+ms.openlocfilehash: 02a425d325721dc732e0bd06aa3aee8fd3973dda
+ms.sourcegitcommit: f5546acf02ec644225f6d0fb41f38b1912da6adf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66647688"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66952780"
 ---
 # <a name="it-admin-guide-to-education-insights-in-microsoft-teams"></a>Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams
 
@@ -99,13 +99,13 @@ I dati degli studenti vengono aggregati a livello di classe, dipartimento, istit
 
 **Per aggiungere l'app Insights in Teams:**
 
-- Fare clic su "**...**" sulla barra dell'app.
+- Selezionare "**...**" sulla barra dell'app.
 - Cercare **Insights** e selezionarlo.
-- Verrà aperta una schermata di descrizione. Fare clic su **Aggiungi**.
+- Si aprirà una schermata con una descrizione. Selezionare **Aggiungi**.
 
   :::image type="content" source="media/insights-add-personal-app.png" alt-text="Aggiungere Insights a Teams.":::
 
-- Fai clic con il pulsante destro del mouse sull'icona Insights e selezionare **Aggiungi**.
+- Fare clic con il pulsante destro del mouse sull'icona Insights e scegliere **Aggiungi**.
 
   :::image type="content" source="media/insights-pin-app.png" alt-text="Aggiungere l’app Insights.":::
 
@@ -125,7 +125,7 @@ Insights supporta le community di apprendimento in tutto **il ciclo di apprendim
 
 ## <a name="how-insights-works"></a>Come funziona Insights?
 
-Insights produce potenti strumenti di analisi per aiutare i docenti a migliorare i risultati di apprendimento. L’operazione viene eseguita analizzando l'attività degli studenti all'interno di Teams e, facoltativamente, sfruttando i dati del Sistema informativo degli studenti (SIS) forniti per contestualizzare e raggruppare l'attività.
+Insights produce potenti strumenti di analisi per aiutare i docenti a migliorare i risultati di apprendimento. L'operazione viene eseguita analizzando l'attività degli studenti all'interno di Teams e, facoltativamente, usando i dati del Sistema informativo degli studenti (SIS) forniti per contestualizzare e raggruppare l'attività.
 
 Prima di iniziare a distribuire Insights per il proprio istituto, esaminare rapidamente il funzionamento di Insights, il nostro impegno per l'etica dei dati e le licenze richieste.
 
@@ -166,9 +166,10 @@ I dati appartengono all'istituto e Microsoft si limita solo a raccoglierli e ad 
 > - Visita [offerte di conformità Microsoft](/compliance/regulatory/offering-home) per scoprire in che modo Microsoft 365 aiuta l'istituto a soddisfare gli standard di conformità alle normative.
 
 ### <a name="performance-and-reliability"></a>Prestazioni e affidabilità
+
 Insights è studiato per gestire un volume elevato di dati raccolti da Teams con prestazioni e affidabilità ottimali. Microsoft non può garantire la disponibilità al 100%, ma si impegna a essere disponibile quanto più possibile per raggiungere tale obiettivo.
 
-Il processo di raccolta dei dati avviene in server distinti dall'installazione della scheda Insights in Teams. La scheda o l’app personale Insights non influisce sulle prestazioni delle applicazioni o sulla larghezza di banda di rete dei docenti e degli studenti che usano altre funzionalità di Teams.
+Il processo di raccolta dei dati avviene in server distinti dall'installazione della scheda Insights in Teams. La scheda o l'app personale Insights non influisce sulle prestazioni delle applicazioni o sulla larghezza di banda di rete dei docenti e degli studenti che usano altre funzionalità di Teams.
 
 > [!TIP]
 > Per altre informazioni, vedere [Indicazioni per le situazioni di larghezza di banda ridotta per Teams per l'istruzione](edu-remote-low-bandwidth.md).
@@ -187,7 +188,7 @@ Microsoft ha creato Insights da zero per garantire la protezione dei dati. Siamo
 
 Insights mette in evidenza l'apprendimento degli studenti e il coinvolgimento digitale. I dati supportano l'apprendimento e mostrano il livello di coinvolgimento degli studenti sulla piattaforma di apprendimento digitale. Sebbene sia possibile eseguire il drill-down al singolo livello per le attività di classe, Microsoft **non assegna alcun valore positivo o negativo** a queste azioni. Lo scopo dei dati raccolti è supportare studenti e docenti per ottenere il massimo.
 
-I docenti conoscono e comprendono meglio i loro studenti. Le informazioni presentate in Insights possono essere utili per **fornire supporto agli studenti** in uno scenario di apprendimento digitale. Replica le informazioni in genere disponibili in un'esperienza di persona. Si supponga ad esempio che uno studente non sia stato attivo durante un periodo specifico o non abbia completato in tempo tutte le attività la settimana scorsa. I dati vengono mostrati al docente per fornire i giusti stimoli o per controllare lo studente. Il docente rimane responsabile dell’interazione con lo studente o la relativa famiglia, o i relativi tutori, per determinare il motivo per cui è stata o non è stata rilevata una determinata attività.
+I docenti conoscono e comprendono meglio i loro studenti. Le informazioni presentate in Insights possono essere utili per **fornire supporto agli studenti** in uno scenario di apprendimento digitale. Replica le informazioni disponibili in un'esperienza di persona. Si supponga ad esempio che uno studente non sia stato attivo durante un periodo specifico o non abbia completato in tempo tutte le attività la settimana scorsa. I dati vengono mostrati al docente per fornire i giusti stimoli o per controllare lo studente. Il docente rimane responsabile dell’interazione con lo studente o la relativa famiglia, o i relativi tutori, per determinare il motivo per cui è stata o non è stata rilevata una determinata attività.
 
 Insights è stato progettato per supportare studenti e docenti nel sistema dell'ambiente di apprendimento digitale. Insights **non acquisisce direttamente i dati relativi ai docenti**. Oltre ai dati dei singoli studenti, fornisce aggregazioni delle attività degli studenti e dei risultati per uno specifico docente per consentire ai responsabili dell'istruzione di supportare studenti e docenti.
 
@@ -195,7 +196,7 @@ Insights è stato progettato per supportare studenti e docenti nel sistema dell'
 
 Per accedere a Insights, gli utenti devono avere una licenza A1, A3 o A5 per Microsoft 365 per istituti di istruzione.
 
-*Insights per l'istruzione Premium* è un aggiornamento a pagamento che offre ai responsabili dell'istruzione una visualizzazione a livello aziendale dei dati Insights per l'istruzione e un accesso esteso alle visualizzazioni dei dati cronologici per i docenti. Gli istituti di istruzione idonei possono acquistare una licenza per il componente aggiuntivo *Insights per l'istruzione Premium* tramite Enrollment for Education Solutions (EES), Microsoft Cloud Service Provider (CSP) e l'interfaccia di amministrazione di Microsoft 365 (web direct).
+*Insights per l'istruzione Premium* è un aggiornamento a pagamento che offre ai responsabili dell'istruzione una visualizzazione a livello di organizzazione dei dati Insights per l'istruzione e un accesso esteso alle visualizzazioni dei dati cronologici per i docenti. Gli istituti di istruzione idonei possono acquistare una licenza per il componente aggiuntivo *Insights per l'istruzione Premium* tramite Enrollment for Education Solutions (EES), Microsoft Cloud Service Provider (CSP) e l'interfaccia di amministrazione di Microsoft 365 (web direct).
 
 Il componente aggiuntivo di Insights per l'istruzione Premium sarà disponibile per le organizzazioni in base all'acquisto delle licenze per tutti gli studenti digitalmente attivi nel tenant.
 
@@ -240,15 +241,28 @@ Distribuire ai **docenti** il materiale seguente:
 - Infine, vedere [questo blog](https://techcommunity.microsoft.com/t5/education-blog/6-ways-to-be-insight-ful-and-support-student-engagement/ba-p/1903091) dedicato a Insights.
 
 Materiale per i **responsabili dell'istruzione**:
+
 - [Pagina di supporto di Insights per le organizzazioni nel settore dell'istruzione](https://support.microsoft.com/office/8738d1b1-4e1c-49bd-9e8d-b5292474c347).
 
-### <a name="turn-insights-on-or-off"></a>Disattivare o attivare Insights
+### <a name="turn-on-and-off-insights"></a>Attivare e disattivare Insights
 
-Per impostazione predefinita, Insights è attivato, consentendo di raccogliere dati analitici sulle attività degli studenti all'interno di Teams per usarli in Insights. È possibile decidere di rifiutare esplicitamente Insights, nel qual caso *tutti i dati raccolti per Insights vengono eliminati* e la raccolta dei dati viene interrotta. Se si riattiva Insights, la raccolta dei dati inizierà dal momento in cui il servizio viene riattivato.
+Per impostazione predefinita, Insights è attivato, consentendo l'analisi delle attività degli studenti all'interno di Teams per usarle in Insights. È possibile rifiutare esplicitamente Insights, nel qual caso *tutti i dati raccolti per Insights vengono eliminati* e la raccolta dei dati viene interrotta. Se si riattiva Insights, la raccolta dei dati inizierà dal momento in cui il servizio viene riattivato.
 
-- Per attivare o disattivare Insights nello stesso posto, aprire l'[interfaccia di amministrazione di SDS](https://sds.microsoft.com/) e passare a **Impostazioni** > **Gestisci Insights per l'istruzione**. Attivare/disattivare **Raccogli dati attività per Insights** per abilitare/disabilitare Insights.
+Esistono due posizioni in cui è possibile controllare *Insights per l'istruzione*. Entrambe le opzioni hanno lo stesso risultato. Per i clienti che hanno eseguito la transizione da *SDS (versione classica)* a *SDS per il provisioning*, è disponibile solo l'opzione client di Teams.
 
-:::image type="content" source="media/insights-settings.png" alt-text="Screenshot della pagina dell'interfaccia di amministrazione di SDS in cui è disponibile un'opzione di impostazioni per attivare o disattivare Insights.":::
+#### <a name="turn-on-and-off-insights-from-the-sds-admin-center"></a>Attivare e disattivare Insights dall'interfaccia di amministrazione di SDS
+
+1. Aprire l'[interfaccia di amministrazione di SDS](https://sds.microsoft.com/).
+1. Passare a **Impostazioni** > **Gestisci Insights per l'istruzione**.
+1. Attivare o disattivare l'opzione **Raccogli i dati delle attività per Insights**.
+
+![Screenshot degli interruttori dell'interfaccia di amministrazione di SDS per attivare e disattivare Insights](media/manage-insights-toggles.png)
+
+#### <a name="turn-on-and-off-insights-from-the-teams-client"></a>Attivare e disattivare Insights dal client Teams
+
+1. Se l'app personale *Insights per l'istruzione* non è stata aggiunta, seguire [queste istruzioni](class-insights.md#education-leaders) per aggiungerla.
+1. Con un account amministratore di Microsoft 365, aprire la pagina delle **impostazioni di amministrazione** usando l'icona con i puntini di sospensione nell'angolo in alto a destra di *Insights per l'istruzione*.
+1. Attivare o disattivare l'opzione **Raccogli i dati delle attività per Insights**.
 
 > [!NOTE]
 > Se Insights è stato disattivato, i dati raccolti vengono eliminati. I dati eliminati in seguito a un rifiuto esplicito non possono essere ripristinati in un secondo momento, anche se Insights viene riabilitato.
@@ -257,10 +271,21 @@ Per impostazione predefinita, Insights è attivato, consentendo di raccogliere d
 
 Quando l'interruttore **Consentire inferenze avanzate** per Insights per l'istruzione è attivato, può presentare a studenti, docenti e responsabili di istruzione inferenze avanzate sulle attività di apprendimento (ad esempio avvisi sul coinvolgimento). Queste inferenze consentono ai docenti di fornire un supporto maggiormente personalizzato agli studenti. L'interruttore controlla anche l'uso dei dati del tenant per la modellazione.
 
-Attivando questo pulsante, non verranno raccolti altri dati oltre ai dati già raccolti da Insights per l'istruzione.
+Attivando questo interruttore, non verranno raccolti altri dati oltre ai dati già raccolti da Insights per l'istruzione.
 
-- Per modificare questa impostazione, apri [l'interfaccia di amministrazione di SDS](https://sds.microsoft.com/) e passa a **Impostazioni** > **Gestisci Insights per l'istruzione**.
-- Modificare l’interruttore **Consentire inferenze avanzate** su attivato o disattivato.
+Esistono due posizioni in cui è possibile controllare le *inferenze avanzate*. Entrambe le opzioni hanno lo stesso risultato. Per i clienti che hanno eseguito la transizione da *SDS (versione classica)* a *SDS per il provisioning*, è disponibile solo l'opzione client di Teams.  
+
+#### <a name="turn-on-and-off-advanced-inferences-from-the-sds-admin-center"></a>Attivare e disattivare le inferenze avanzate dall'interfaccia di amministrazione di SDS
+
+1. Aprire l'[interfaccia di amministrazione di SDS](https://sds.microsoft.com/).
+1. Passare a **Impostazioni** > **Gestisci Insights per l'istruzione**.
+1. Attivare o disattivare l'opzione **Consenti inferenze avanzate**.
+
+#### <a name="turn-on-and-off-advanced-inferences-from-the-teams-client"></a>Attivare e disattivare le inferenze avanzate dal client di Teams
+
+1. Se l'app personale *Insights per l'istruzione* non è stata aggiunta, seguire [queste istruzioni](class-insights.md#education-leaders) per aggiungerla.
+1. Con un account amministratore di Microsoft 365, aprire la pagina delle **impostazioni di amministrazione** usando l'icona con i puntini di sospensione nell'angolo in alto a destra di *Insights per l'istruzione*.
+1. Attivare o disattivare l'opzione **Consenti inferenze avanzate**.
 
 > [!NOTE]
 > Questa commutazione dipende da **Raccogli dati attività per Insights**. La disattivazione di **Raccogliere dati attività per Insights** disabiliterà anche l’interruttore **Consentire inferenze avanzate**.
@@ -271,11 +296,12 @@ School Data Sync (SDS) consente di automatizzare il processo di importazione e s
 
 L'uso di Insights *non* richiede l'uso di SDS. Tuttavia, è possibile scegliere di non usare Insights in qualsiasi momento.
 
-- Per disattivare l'uso di Insights di School Data Sync seguire le istruzioni in [Disabilitazione di SDS for Insights](/schooldatasync/how-to-deploy-sds-for-insights#disabling-sds-for-insights).
+- Per disattivare l'uso di Insights di School Data Sync seguire le istruzioni in [Disabilitazione di SDS per Insights](/schooldatasync/how-to-deploy-sds-for-insights#disabling-sds-for-insights).
 
 - Per riattivarlo, seguire le istruzioni in [Come distribuire SDS per Insights](/schooldatasync/how-to-deploy-sds-for-insights).
 
 ### <a name="how-to-delete-user-data-from-education-insights"></a>Come eliminare i dati degli utenti da Insights per l'istruzione
+
 Insights archivia le attività degli studenti e dei docenti eseguite in Microsoft Teams per l'istruzione.
 
 Esistono due tipi di dati raccolti dalle informazioni dettagliate:
@@ -288,7 +314,7 @@ I dati completi raccolti dai dati statistici sono elencati[qui](class-insights.m
 Per fornire completezza e integrità dei dati per gli intervalli di tempo passati ai docenti e ai responsabili dell'istruzione, per impostazione predefinita Insights non elimina automaticamente i dati dal servizio quando vengono chiusi gli account utente di studenti o docenti. L'amministratore IT dell'organizzazione può richiedere l'eliminazione manuale dei dati di un utente (docente o studente) seguendo questa procedura:
 
 - Aprire un [ticket di supporto](https://aka.ms/edusupport). Il ticket di supporto deve indicare chiaramente la richiesta di eliminazione DSR ai sensi del GDPR e contenere l'ID dell’oggetto utente da eliminare.
-Non c'è alcuna possibilità di limitare il set di dati o la finestra temporale per l’eliminazione.
+Non c'è alcuna possibilità di limitare il set di dati o la finestra temporale per l'eliminazione.
 - Nella richiesta l'amministratore IT deve indicare chiaramente il tipo di dati da eliminare per l'utente, tra le opzioni seguenti:
   - Tutti i dati (in arrivo e privati)
   - Tutti i dati privati
@@ -302,7 +328,7 @@ Non c'è alcuna possibilità di limitare il set di dati o la finestra temporale 
 
 Se si tratta di un *nuovo* tenant e non sono *mai* stati visibili dati in Insights, controllare che il tenant sia **verificato come tenant per l'istruzione** per accedere a Insights. Contattare l'account manager Microsoft e chiedere di verificare che il tenant sia configurato correttamente.
 
-Se non si ha un account manager, aprire un ticket. Passare all'[interfaccia di amministrazione di Office 365](https://admin.microsoft.com/AdminPortal/) > **Supporto** > **Nuova richiesta di assistenza**.  Nel titolo del ticket scrivere: "Serve assistenza per la verifica per l'istruzione".
+Se non si ha un account manager, aprire un ticket. Passare all'[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/AdminPortal/) > **Supporto** > **Nuova richiesta di assistenza**.  Nel titolo del ticket scrivere: "Serve assistenza per la verifica per l'istruzione".
 
 Verificare anche che la raccolta dei dati per Insights sia abilitata. Anche se è attivata per impostazione predefinita, l'amministratore IT potrebbe aver disattivato il servizio e quindi eliminato tutti i dati conservati in Insights.
 
@@ -312,7 +338,7 @@ Se è disattivato, riattivarlo. Insights inizierà a raccogliere dati, ma per ve
 
 ### <a name="why-do-i-see-data-for-some-students-or-classes-not-all"></a>Perché vengono visualizzati solo i dati di alcuni studenti o classi e non tutti?
 
-Raccogliamo dati solo per *studenti con licenza* , quindi il motivo più probabile è che gli studenti guest che partecipano alle lezioni e i loro dati non vengono raccolti. È possibile che venga visualizzato il nome, ma senza dati.
+I dati vengono raccolti solo per gli studenti *con licenza*, quindi il motivo più probabile è che si abbiano studenti guest che partecipano alle lezioni e i loro dati non vengono raccolti. È possibile che ne venga visualizzato il nome, ma senza dati.
 
 Controllare lo stato degli studenti per assicurarsi che tutti dispongano di licenze per studenti.
 
@@ -320,7 +346,7 @@ Controllare lo stato degli studenti per assicurarsi che tutti dispongano di lice
 
 La visualizzazione dei dati delle riunioni nei report di Insights può richiedere fino a 24 ore. Quindi, verificare che sia trascorso tempo sufficiente.
 
-Verificare anche che gli studenti *non* [abbiano partecipato alla riunione della classe senza un account di Teams](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508). In uno scenario di questo tipo, l'attività degli studenti non viene raccolta.
+Verificare anche che gli studenti non* abbiano [partecipato alla riunione della classe senza un account di Teams](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508). In uno scenario di questo tipo, l'attività degli studenti non viene raccolta.
 
 > [!TIP]
 > Per i docenti che vogliono tenere traccia della partecipazione degli studenti, si può consigliare di inviare un messaggio durante la riunione chiedendo agli studenti di rispondere. In questo modo, entro pochi minuti la partecipazione verrà registrata.
