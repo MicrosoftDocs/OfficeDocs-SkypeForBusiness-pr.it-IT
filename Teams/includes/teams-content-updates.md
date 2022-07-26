@@ -3,6 +3,28 @@
 
 
 
+## <a name="week-of-july-18-2022"></a>Settimana del 18 luglio 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 7/18/2022 | [Informazioni sulle app in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | Volta |
+| 7/18/2022 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | Volta |
+| 7/18/2022 | Provisioning di Microsoft Teams su vasta scala per gli operatori sul campo | Rimosso |
+| 7/19/2022 | [Gestire Microsoft 365 e connettori personalizzati](/MicrosoftTeams/office-365-custom-connectors) | Volta |
+| 7/19/2022 | [Informazioni sulle app in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | Volta |
+| 7/19/2022 | [Gestire le app Microsoft Power Platform nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-power-platform-apps) | Volta |
+| 7/19/2022 | [Gestire domande&A nelle riunioni di Teams](/MicrosoftTeams/manage-qna-for-teams) | Volta |
+| 7/19/2022 | [Panoramica della certificazione delle app da parte di Microsoft](/MicrosoftTeams/overview-of-app-certification) | Volta |
+| 7/19/2022 | [Acquistare app di terze parti per Teams](/MicrosoftTeams/purchase-third-party-apps) | Volta |
+| 7/20/2022 | [Configurare Operator Connect](/MicrosoftTeams/operator-connect-configure) | Volta |
+| 7/21/2022 | [Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams](/MicrosoftTeams/class-insights) | Volta |
+| 7/21/2022 | [Esperienza di aggiornamento delle app in Microsoft Teams](/MicrosoftTeams/apps-update-experience) | Volta |
+| 7/21/2022 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | Volta |
+| 7/21/2022 | [Usare l'API di invio delle app di Teams per inviare e approvare le app personalizzate](/MicrosoftTeams/submit-approve-custom-apps) | Volta |
+| 7/21/2022 | [Caricare le app personalizzate nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/upload-custom-apps) | Volta |
+
+
 ## <a name="week-of-july-11-2022"></a>Settimana dell'11 luglio 2022
 
 
@@ -103,35 +125,3 @@
 | 6/23/2022 | [Acquistare, configurare e abilitare Assistente alla carriera per Microsoft Teams per l'istruzione](/MicrosoftTeams/career-coach) | Volta |
 | 6/23/2022 | [Configurare Operator Connect](/MicrosoftTeams/operator-connect-configure) | Volta |
 | 6/24/2022 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | Volta |
-
-
-## <a name="week-of-june-13-2022"></a>Settimana del 13 giugno 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 6/13/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
-| 6/13/2022 | [Usare Power BI per analizzare i dati di Call Quality Dashboard per Microsoft Teams](/MicrosoftTeams/cqd-power-bi-query-templates) | Volta |
-| 6/13/2022 | [Passare da Business Voice alle licenze di Teams Phone](/MicrosoftTeams/business-voice-to-teams-phone-licenses) | Volta |
-| 6/13/2022 | [Usare i file di log nella risoluzione dei problemi di Microsoft Teams](/MicrosoftTeams/log-files) | Volta |
-| 6/13/2022 | [Dati e informazioni sulla privacy](/MicrosoftTeams/rooms/data-and-privacy-info) | Volta |
-| 6/13/2022 | [gestione degli aggiornamenti di Microsoft Teams Rooms](/MicrosoftTeams/rooms/update-management) | Volta |
-| 6/15/2022 | [Modulo di Teams PowerShell - Versioni supportate](/MicrosoftTeams/teams-powershell-supported-versions) | Volta |
-| 6/16/2022 | [Riferimento ai cmdlet di PowerShell per operatori automatici e code di chiamata](/MicrosoftTeams/call-queue-auto-attendant-cmdlets) | Aggiunto |
-| 6/16/2022 | [Pianificare il flusso di instradamento delle chiamate per Microsoft Teams](/MicrosoftTeams/plan-your-call-routing-flow) | Aggiunto |
-| 6/16/2022 | [Autorizzazioni e considerazioni per le app di Microsoft Teams](/MicrosoftTeams/app-permissions) | Volta |
-| 6/16/2022 | [Assegnare, modificare o rimuovere il numero di telefono di un utente](/MicrosoftTeams/assign-change-or-remove-a-phone-number-for-a-user) | Volta |
-| 6/16/2022 | Configurare un operatore automatico per Microsoft Teams - Esercitazione per le piccole imprese | Rimosso |
-| 6/16/2022 | Creare una coda di chiamata in Telefono di Microsoft Teams System - Esercitazione per le piccole imprese | Rimosso |
-| 6/16/2022 | [Assegnare i numeri di telefono di Sistema telefonico di Teams agli utenti](/MicrosoftTeams/business-voice/set-up-assign-numbers) | Volta |
-| 6/16/2022 | Configurare un operatore automatico per il numero di telefono principale della società | Rimosso |
-| 6/16/2022 | [Configurare un account di risorse di sistema Telefono di Microsoft Teams](/MicrosoftTeams/business-voice/set-up-resource-account) | Volta |
-| 6/16/2022 | [Linee guida di Teams Phone System per piccole e medie imprese](/MicrosoftTeams/business-voice/whats-business-voice) | Volta |
-| 6/16/2022 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant) | Volta |
-| 6/16/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
-| 6/16/2022 | [Modificare l'aspetto delle app nello store Teams dell'organizzazione](/MicrosoftTeams/customize-apps) | Volta |
-| 6/16/2022 | [Comando radiale e riferimento per il riconoscimento vocale dell'operatore automatico e della coda di chiamata](/MicrosoftTeams/dial-voice-reference) | Volta |
-| 6/16/2022 | [Gestire gli account delle risorse in Teams](/MicrosoftTeams/manage-resource-accounts) | Volta |
-| 6/16/2022 | [Pianificare gli operatori automatici di Teams e le code di chiamata](/MicrosoftTeams/plan-auto-attendant-call-queue) | Volta |
-| 6/16/2022 | [Caricare le app personalizzate nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/upload-custom-apps) | Volta |
-| 6/16/2022 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | Volta |
