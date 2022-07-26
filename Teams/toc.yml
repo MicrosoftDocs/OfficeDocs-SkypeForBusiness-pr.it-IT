@@ -459,8 +459,10 @@ items:
             href: /microsoft-365/frontline/ehr-connector-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json
       - name: 'File di log, integrità dei servizi e supporto'
         items:
-          - name: Usare i file di log per monitorare e risolvere i problemi di Teams
+          - name: Configurare i file di log per il monitoraggio e la risoluzione dei problemi in Teams
             href: log-files.md
+          - name: Log del browser e traccia per Teams
+            href: browser-logs-and-tracing-for-teams.md
           - name: Verifica dell'integrità dei servizi per Teams
             href: service-health.md
           - name: Come cercare il PIN di supporto
@@ -977,6 +979,8 @@ items:
             href: operator-connect-configure.md#set-up-phone-numbers
           - name: Gestire i numeri di telefono per l'instradamento diretto
             href: direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice
+          - name: Gestione delle licenze e dei numeri di telefono
+            href: phone-numbers-licensing-changes.md
       - name: Dial plan e instradamento
         items:
           - name: Panoramica
@@ -1525,6 +1529,8 @@ items:
             href: overview-of-app-certification.md
           - name: Acquistare app di terza parte per Teams
             href: purchase-third-party-apps.md
+          - name: Adobe Acrobat come visualizzatore PDF predefinito in Teams
+            href: adobe-acrobat-pdf-viewer-teams.md
           - name: Gestire Microsoft 365 e i connettori personalizzati
             href: Office-365-custom-connectors.md
       - name: Gestione di applicazioni line-of-business personalizzate
