@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un controller dei confini di sessione (SBC) per servire più tenant per i partner Microsoft e/o i gestori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9221414053b0ee92b87553e0f81c23b41b23f0fb
-ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
+ms.openlocfilehash: 8880f912ae21af3bf269e86469241f345bc33f74
+ms.sourcegitcommit: f5d784df59a8010b390691bbb20c4ea66c46280b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616342"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67005356"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -60,7 +60,7 @@ Per la procedura dettagliata su come distribuire e configurare le schede SBC per
 
 - **Audiocodes:** Vedere [Le note sulla configurazione del routing diretto](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-Microsoft-Teams) per la configurazione dello scenario di hosting SBC, come descritto in "Connecting AudioCodes SBC to Microsoft Teams Direct Routing Hosting Model Configuration Note". 
 - **Oracle:** Vedere [Note sulla configurazione del routing diretto](https://www.oracle.com/technetwork/indexes/documentation/acme-packet-2228107.html) per la configurazione dello scenario di hosting SBC, come descritto nella sezione "Microsoft". 
-- **Comunicazioni sulla barra multifunzione:** Per la documentazione su come configurare le schede SBC della serie core della [barra multifunzione, vedere La guida alla configurazione di Microsoft Teams di base per le comunicazioni sulla barra multifunzione](https://support.sonus.net/display/IOT/PBXs+-+SBC+5k7kSWe) . Vedere anche [Procedure consigliate sulla barra multifunzione - Configurazione dei gestori per Microsoft Teams Direct Routing SBC Edge](https://support.sonus.net/display/UXDOC81/Connect+SBC+Edge+to+Microsoft+Teams+Direct+Routing+to+Support+Direct+Routing+Carrier)
+- **Comunicazioni sulla barra multifunzione:** Per la documentazione su come configurare le schede SBC della serie core della [barra multifunzione, vedere La guida alla configurazione di Microsoft Teams di base per le comunicazioni sulla barra multifunzione](https://support.sonus.net/display/ALLDOC/SBC+8.2+-+MS+Teams+Solution+Guide) . Vedere anche [Procedure consigliate sulla barra multifunzione - Configurazione dei gestori per Microsoft Teams Direct Routing SBC Edge](https://support.sonus.net/display/UXDOC81/Connect+SBC+Edge+to+Microsoft+Teams+Direct+Routing+to+Support+Direct+Routing+Carrier)
 - **TE-Systems (anynode):** Per la documentazione e gli esempi su come configurare anynode SBC per più tenant, eseguire la registrazione nel sito della [community di TE-Systems](https://community.te-systems.de/) .
 - **Metaswitch:** Registrati nel sito della [pagina della community metaswitch](https://manuals.metaswitch.com/MAN39555) per la documentazione su come abilitare Perimeta SBC per più tenant.
 

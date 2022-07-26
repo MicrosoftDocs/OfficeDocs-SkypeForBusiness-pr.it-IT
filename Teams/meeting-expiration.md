@@ -17,12 +17,12 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Informazioni su come usare le impostazioni dei criteri riunione per controllare la scadenza delle riunioni in Microsoft Teams.
-ms.openlocfilehash: 08ca5a75b8dd470b006d44e562eb795f814faba6
-ms.sourcegitcommit: bdb919a6f53556f76dd4a71759412023e6e18fbb
+ms.openlocfilehash: 3d79041cf6e8e16ed4ebd680cf5f4370e04cd62a
+ms.sourcegitcommit: f5d784df59a8010b390691bbb20c4ea66c46280b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66529688"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67005336"
 ---
 # <a name="meeting-policies-and-meeting-expiration-in-microsoft-teams"></a>Criteri per le riunioni e scadenza delle riunioni in Microsoft Teams
 
@@ -101,8 +101,8 @@ Gli amministratori possono modificare l'impostazione di scadenza predefinita in 
 Il valore della data di scadenza può essere impostato nel modo seguente:
 
 - Valore minimo: **1 giorno**
-- Valore massimo: **99.999 giorni**
-- Puoi anche impostare la data di scadenza su **-1** in modo che le registrazioni non scada mai.
+- Valore massimo: **99999 giorni**
+- Puoi anche impostare la data di scadenza su **-1** in PowerShell in modo che le registrazioni non scada mai.
 
 Esempio di comando di PowerShell:
 
@@ -114,24 +114,19 @@ Set-CsTeamsMeetingPolicy -Identity Global -NewMeetingRecordingExpirationDays 50
 
 ![Amministrazione screenshot del centro dei criteri di scadenza delle riunioni.](media/meeting-expiration-policy.jpg)
 
-### <a name="security-and-compliance"></a>Sicurezza e conformità
+### <a name="compliance"></a>Conformità
 
-#### <a name="should-i-rely-on-this-feature-for-strict-security-and-compliance-adherence"></a>Devo fare affidamento su questa funzionalità per una stretta adesione alla sicurezza e alla conformità?
+Non è consigliabile affidarsi alle impostazioni di scadenza TMR per la protezione legale perché gli utenti finali possono modificare la data di scadenza di tutte le registrazioni che controllano.
 
-No, non è consigliabile affidarsi a questa opzione per la protezione legale in quanto gli utenti finali possono modificare la data di scadenza di tutte le registrazioni che controllano.
+#### <a name="teams-meeting-recording-expiration-settings-and-microsoft-365-retention-policies-in-microsoft-purview"></a>Impostazioni di scadenza della registrazione delle riunioni di Teams e criteri di conservazione di Microsoft 365 in Microsoft Purview
 
-#### <a name="will-a-retention-andor-deletion-policy-ive-set-in-the-security--compliance-center-override-the-teams-meeting-recording-expiration-setting"></a>I criteri di conservazione e/o di eliminazione impostati nel Centro sicurezza & conformità sostituiscono l'impostazione di scadenza della registrazione delle riunioni di Teams?
+La conservazione dei file ha la precedenza sull'eliminazione dei file. La registrazione di una riunione con un criterio di conservazione Purview non può essere eliminata da un criterio di scadenza TMR fino al termine del periodo di conservazione. Ad esempio, se hai un criterio di noleggio di Purview che dice che un file verrà conservato per cinque anni e un criterio di scadenza TMR impostato per 60 giorni, il criterio di scadenza TMR eliminerà la registrazione dopo cinque anni.  
 
-Sì, tutti i criteri impostati nel Centro conformità avranno la precedenza.
+Se si hanno criteri di scadenza TMR e criteri di eliminazione con date di eliminazione diverse, il file verrà eliminato al più presto. Ad esempio, se si ha un criterio di eliminazione di Purview che indica che un file verrà eliminato dopo un anno e una scadenza TMR impostata per 120 giorni, l'impostazione di scadenza TMR eliminerà il file dopo 120 giorni.
 
-Ad esempio:
+### <a name="enforcement-of-file-retention-with-the-teams-meeting-recording-expiration-setting"></a>Applicazione della conservazione dei file con l'impostazione di scadenza della registrazione della riunione di Teams
 
-- Se hai un criterio che indica che tutti i file in un sito devono essere conservati per 100 giorni e l'impostazione di scadenza per la registrazione di una riunione di Teams è di 30 giorni, la registrazione verrà conservata per tutti i 100 giorni.
-- Se hai un criterio di eliminazione che indica che tutte le registrazioni delle riunioni di Teams verranno eliminate dopo cinque giorni e hai un'impostazione di scadenza per la registrazione di una riunione di Teams di 30 giorni, la registrazione verrà eliminata dopo cinque giorni.
-
-### <a name="will-this-feature-enforce-file-retention"></a>Questa funzionalità implicherà la conservazione dei file?
-
-No, i file non verranno conservati a causa di questa funzionalità o delle relative impostazioni. Se un utente con autorizzazioni di eliminazione tenta di eliminare un TMR con un'impostazione di scadenza, verrà eseguita l'azione di eliminazione dell'utente.
+I file non verranno conservati a causa di questa funzionalità o delle relative impostazioni. Se un utente con autorizzazioni di eliminazione tenta di eliminare un TMR con un'impostazione di scadenza, verrà eseguita l'azione di eliminazione dell'utente.
 
 ### <a name="what-skus-are-required-for-this-feature"></a>Quali SKU sono necessari per questa funzionalità?
 
