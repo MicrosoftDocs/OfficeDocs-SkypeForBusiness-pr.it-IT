@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ac4aa6e8182342f36da0434aaf78123937d6d8ce
-ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
+ms.openlocfilehash: 1d548149f978764bbfbe3d0cd3475704ad6a76c2
+ms.sourcegitcommit: 9b08e2826b5b210abd9daa2ef40d4693a5000e33
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616412"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67039643"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Condurre un'indagine eDiscovery sul contenuto in Microsoft Teams
 
@@ -69,16 +69,13 @@ Ecco un esempio di conversazione in chat tra partecipanti durante una riunione.
 
 ![Conversazione tra partecipanti in Teams.](media/MeetingIMConversations.png)
 
-[!div class="mx-imgBorder"]
-
 Ecco un esempio della copia di conformità della stessa conversazione in chat visualizzata in uno strumento eDiscovery.
 
 ![Conversazione tra partecipanti nei risultati della ricerca eDiscovery.](media/MeetingImConversation2.png)
 
 Ecco un esempio dei metadati della riunione.
 
-  > [!div class="mx-imgBorder"]
-  > ![Metadati della riunione dalla copia di conformità.](media/conversationOption3.png)
+![Metadati della riunione dalla copia di conformità.](media/conversationOption3.png)
 
 Per altre informazioni su come condurre un'indagine di eDiscovery, vedere Introduzione a eDiscovery (Standard).For more information about conducting an eDiscovery investigation, see [Get started with eDiscovery (Standard)](/microsoft-365/compliance/get-started-core-ediscovery).
 
