@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-scenario
 ms.reviewer: ''
 description: Informazioni su come gestire l'app Bookings in Teams per gli utenti dell'organizzazione.
-ms.openlocfilehash: f11739784dcb9897bf9a3fcbffdadc8aea00d3e0
-ms.sourcegitcommit: c4ec82b7d8a820362b6b0276470b0dea95a628df
+ms.openlocfilehash: e7b8cbabd7c013c47d0d3d75982eb879ccc23e98
+ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66819291"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67023787"
 ---
 # <a name="manage-the-bookings-app-in-microsoft-teams"></a>Gestire l'app Bookings in Microsoft Teams
 
@@ -75,7 +75,7 @@ Questa funzionalità verrà distribuita gradualmente in tutto il mondo per i cli
 
 Quando si configura una cassetta postale di Bookings, viene usato il dominio di posta elettronica predefinito dell'organizzazione di Microsoft 365 o Office 365. Tuttavia, il dominio predefinito può causare problemi durante l'invio di inviti alle riunioni a destinatari esterni. Ad esempio, l'invito potrebbe essere contrassegnato come posta indesiderata e spostato nella cartella Posta indesiderata del destinatario, in modo che il destinatario non veda mai l'invito.
 
-È consigliabile modificare il dominio predefinito prima di creare la cassetta postale di Bookings. Vedere le [domande frequenti sui domini](/microsoft-365/admin/setup/domains-faq#how-do-i-set-or-change-the-default-domain-in-office-365).
+È consigliabile modificare il dominio predefinito prima di creare la cassetta postale di Bookings. Vedere le [domande frequenti sui domini](/microsoft-365/admin/setup/domains-faq#how-do-i-set-or-change-the-default-domain-in-microsoft-365).
 
 Se è necessario cambiare il dominio predefinito dopo aver creato la cassetta postale di Bookings, usare PowerShell.
 

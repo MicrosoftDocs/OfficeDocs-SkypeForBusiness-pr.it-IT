@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un controller dei confini di sessione (SBC) per servire più tenant per i partner Microsoft e/o i gestori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8880f912ae21af3bf269e86469241f345bc33f74
-ms.sourcegitcommit: f5d784df59a8010b390691bbb20c4ea66c46280b
+ms.openlocfilehash: 9d7ee3960f88b1c6ed4ee140b4f291162e37da30
+ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/26/2022
-ms.locfileid: "67005356"
+ms.locfileid: "67024019"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -246,7 +246,7 @@ Sono state introdotte due nuove entità:
 Esempi:
 - Customers.adatum.biz : il trunk del corriere che deve essere creato nel tenant del vettore.
 
-- Sbc1.customers.adatum.biz: il trunk derivato in un tenant del cliente. È possibile aggiungere il nome del trunk derivato nel tenant del cliente nei criteri di routing vocale online senza crearlo.
+- Sbc1.customers.adatum.biz: il trunk derivato in un tenant del cliente. È possibile aggiungere il nome del trunk derivato nel tenant del cliente nelle route vocali senza crearlo.
 
 - Il gestore telefonico dovrà configurare il record DNS che risolve l'FQDN del trunk derivato nell'indirizzo IP SBC del gestore.
 

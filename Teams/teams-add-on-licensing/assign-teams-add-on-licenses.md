@@ -16,12 +16,12 @@ ms.reviewer: mikedav
 description: Informazioni su come assegnare licenze per i componenti aggiuntivi di Teams agli utenti per funzionalità come Audioconferenza, Sistema telefonico e Piani per chiamate.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 380abec55466d831722c76c9e552055378ecf1df
-ms.sourcegitcommit: 791d0a341ff873145fa893ece05055729b0b8d50
+ms.openlocfilehash: 07196e26f38042b6046d6761bd60dfad64f89c7d
+ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "66838821"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67023677"
 ---
 # <a name="assign-teams-add-on-licenses-to-users"></a>Assegnare licenze per i componenti aggiuntivi di Teams agli utenti
 
@@ -64,18 +64,10 @@ Usare PowerShell per assegnare licenze agli utenti in blocco. Per altre informaz
 
 Ecco un esempio di come usare uno script per assegnare licenze agli utenti.
 
-1. Installare la versione a 64 bit dell'Assistente per l'accesso [ai Microsoft Online Services per professionisti IT RTW](/collaborate/connect-redirect?DownloadID=59185).
-2. Installare il modulo Microsoft Azure Active Directory per Windows PowerShell:
-    1. Aprire un prompt dei comandi con privilegi elevati Windows PowerShell (eseguire Windows PowerShell come amministratore).
-    2. Eseguire il comando seguente:
-        ```powershell
-        Install-Module MSOnline
-        ```
-    3. Se viene richiesto di installare il provider NuGet, digitare **Y** e quindi premere INVIO.
-    4. Se viene richiesto di installare il modulo da PSGallery, digitare **Y** e quindi premere INVIO.
-3. Al prompt dei comandi di Windows PowerShell eseguire lo script seguente per assegnare licenze agli utenti, dove \<CompanyName:License> si trova il nome dell'organizzazione e l'identificatore della licenza da assegnare. Ad esempio, litwareinc:MCOMEETADV.
+1. [Installare il modulo Microsoft Azure Active Directory per Windows PowerShell](/powershell/azure/active-directory/install-msonlinev1).
+2. Al prompt dei comandi di Windows PowerShell eseguire lo script seguente per assegnare licenze agli utenti, dove `CompanyName:License` si trova il nome dell'organizzazione e l'identificatore della licenza da assegnare. Ad esempio, `litwareinc:MCOMEETADV`.
 
-    L'identificatore è diverso dal nome descrittivo della licenza. Ad esempio, l'identificatore per le audioconferenze è MCOMEETADV. Per altre informazioni, vedere [Nomi di prodotto e identificatori SKU per le licenze](#product-names-and-sku-identifiers-for-licensing).
+    L'identificatore è diverso dal nome descrittivo della licenza. Ad esempio, l'identificatore per i servizi di audioconferenza è `MCOMEETADV`. Per altre informazioni, vedere [Nomi di prodotto e identificatori SKU per le licenze](#product-names-and-sku-identifiers-for-licensing).
 
     ```powershell
     #Create a text file with a single column that lists the user principal names (UPNs) of users to assign licenses to. The MSOL service uses the UPN to license user accounts.

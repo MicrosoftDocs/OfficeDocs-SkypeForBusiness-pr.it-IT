@@ -21,23 +21,25 @@ ms.custom:
 - Reporting
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
-description: Informazioni su come utilizzare call quality dashboard Power BI report per visualizzare i dati cronologici di Operatore automatico e Coda di chiamata.
-ms.openlocfilehash: e2d71410d10fb809debd1699afcf452c71a6e088
-ms.sourcegitcommit: 193aec6f3f6b6ac14b07e778b3485eed813f5e99
+description: Informazioni su come usare il report di Power BI di Call Quality Dashboard per visualizzare i dati cronologici di Operatore automatico e Coda di chiamata.
+ms.openlocfilehash: b9bb3cf0990058cd16ed35d52d07f63be6cd90fb
+ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66046448"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67024009"
 ---
 # <a name="auto-attendant--call-queue-historical-report"></a>Report cronologico della coda di chiamata & operatore automatico
 
-Il modello Power BI & Rapporto storico coda di chiamata Teams Operatore automatico fornisce i tre report seguenti:
+Il modello Power BI di Power BI Operatore automatico & coda di chiamata fornisce i tre report seguenti:
 
 - [Operatore automatico](media/cqd-teams-aa-cq-historical-report-sample-aa.png) : mostra i dati analitici per le chiamate in arrivo agli operatori automatici.
 - [Coda di chiamata](media/cqd-teams-aa-cq-historical-report-sample-cq.png) , che mostra i dati analitici per le chiamate in arrivo nelle code di chiamata.
 - [Sequenza temporale agente](media/cqd-teams-aa-cq-historical-report-sample-at.png) : mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.
 
 Questi report usano i dati dell'archivio dati [Call Quality Dashboard](CQD-Power-BI-query-templates.md) . I report consentono alle organizzazioni di segnalare il numero di chiamate elaborate da operatori automatici e code di chiamata.  I report forniscono anche informazioni dettagliate sulle prestazioni dell'agente nelle code di chiamata.
+
+### <a name="v160-published-on-july-22-2022"></a>V1.60 pubblicato il 22 luglio 2022
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -52,15 +54,15 @@ L'account usato per visualizzare il report cronologico deve avere le autorizzazi
 
 ## <a name="installation"></a>Installazione 
 
-I passaggi seguenti presuppongono che siano già stati installati Power BI Desktop nel computer e che l'account disponga delle autorizzazioni necessarie per accedere alla pipeline di dati di Call Quality Dashboard.
+I passaggi seguenti presuppongono che nel computer sia già installato Power BI Desktop e che l'account disponga delle autorizzazioni necessarie per accedere alla pipeline di dati di Call Quality Dashboard.
 
 Eseguire le operazioni seguenti:
 
-- Scaricare call [quality dashboard Power BI modelli di query](https://www.microsoft.com/download/details.aspx?id=102291) e salvare il file ZIP in una directory del computer.
+- Scaricare i [modelli di query di Power BI di Call Quality Dashboard](https://www.microsoft.com/download/details.aspx?id=102291) e salvare il file ZIP in una directory del computer.
 
 - Fare doppio clic sul file ZIP per aprirlo.
 
-- Fare doppio clic sul file di modello "CQ e AA combined Analytics 20201105.pbit". Il Power BI Desktop dovrebbe avviarsi.
+- Fai doppio clic sul file modello "CQD Teams Auto Attendant & Call Queue Historical Report V1.60.pbit". Il Power BI Desktop dovrebbe avviarsi.
 
 - Verrà richiesto di selezionare l'area della pipeline di dati di Call Quality Dashboard. Selezionare l'area geografica in cui si trova il tenant.
 
@@ -83,23 +85,23 @@ Eseguire le operazioni seguenti:
 
    :::image type="content" source="media/cqd-teams-aa-cq-historical-report-02.png" alt-text="Screenshot che seleziona l'opzione di aggiornamento.":::
 
-- Verrà quindi richiesto di eseguire l'accesso. Seleziona **Account organizzazione** e quindi **seleziona Accedi**.
+- Verrà richiesto di eseguire l'accesso. Seleziona **Account aziendale** e quindi **seleziona Accedi**.
 
   :::image type="content" source="media/cqd-teams-aa-cq-historical-report-03.png" alt-text="Screenshot che mostra l'accesso.":::
 
-- Selezionare **Connessione** e osservare l'aggiornamento dati.
+- Selezionare **Connetti** e osservare l'aggiornamento dei dati.
 
 ## <a name="data-latency-and-aa--cq-analytics"></a>Latenza dei dati e analisi di AA & CQ
 
-I dati saranno disponibili nella pipeline di dati di Call Quality Dashboard entro 30 minuti.
+I dati sono in genere disponibili entro 30 minuti dal completamento della chiamata; in alcuni casi, tuttavia, la visualizzazione dei dati può richiedere diverse ore. 
 
-Sarà necessario aggiornare i dati per visualizzare i nuovi dati di analisi. 
+Sarà necessario aggiornare i dati per visualizzare i nuovi dati.
 
 ## <a name="customization"></a>Personalizzazione 
 
 È possibile personalizzare alcuni aspetti della visualizzazione dei report, ad esempio l'aggiunta o la rimozione di campi da visualizzare nelle varie visualizzazioni, la modifica del tipo di grafico e così via.
 
-Non è possibile aggiungere altri campi dati al report.
+Il report contiene tutte le metriche dei dati attualmente disponibili.
 
 ### <a name="change-color-schema"></a>Modificare lo schema dei colori 
 
@@ -306,6 +308,15 @@ Eseguire le operazioni seguenti:
 
 - Solo 28 giorni di cronologia sono disponibili nel dashboard in quanto i dati della coda di chiamata/dell'operatore automatico sono considerati dati personali ed è soggetto a criteri di conservazione della privacy dei dati.
 
-- In alcuni scenari, l'agente ha risposto al numero di chiamate nel rapporto Sequenza temporale agente coda di chiamata cloud può essere diverso rispetto al numero di chiamate mostrate nella cronologia delle chiamate client Teams. La cronologia delle chiamate del client Teams è corretta. Il supporto è in fase di analisi, ma al momento non è disponibile alcun tempo stimato per la riparazione.
+- In alcuni scenari, l'agente ha risposto al numero di chiamate nel rapporto Sequenza temporale agente coda di chiamata cloud può essere diverso rispetto al numero di chiamate mostrate nella cronologia chiamate client di Teams. La cronologia delle chiamate del client di Teams è corretta. Il supporto è in fase di analisi, ma al momento non è disponibile alcun tempo stimato per la riparazione.
 
 - <sup>1</sup> **L'origine della chiamata in arrivo** nell'operatore automatico e nei grafici della coda di chiamata mostra l'origine finale della coda di chiamata anziché l'origine iniziale della coda di chiamata. Ad esempio, se un operatore automatico riceve una chiamata esterna e trasferisce la chiamata a un altro operatore automatico o coda di chiamata, **l'origine della chiamata in arrivo** verrà segnalata come Interna.
+
+## <a name="version-history"></a>Cronologia versioni
+|Versione  |Data di pubblicazione     |Filename                                                           |Descrizione                                         |
+|:--------|:------------------|:------------------------------------------------------------------|:---------------------------------------------------|
+|1.60     |22 luglio 2022      |CQD Teams Auto Attendant & Call Queue Historical Report V1.60.pbit |Fare riferimento a:<br>CQD Teams Auto Attendant & Call Queue Historical Reports - Change Log.docx in the downloaded zip file for a list of changes                                                                             |
+|1.00     |5 novembre 2020   |CQ e AA combinati Analytics 20201105.pbit                         |Rilascio iniziale                                     |
+
+
+

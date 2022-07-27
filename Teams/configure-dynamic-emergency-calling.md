@@ -18,12 +18,12 @@ description: Scopri come configurare la funzionalità chiamate di emergenza dina
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9da8f8f082812063de7d2fb81c7d5b716ad1e07a
-ms.sourcegitcommit: 911fdb6df0511b4a4d9e4705799877045a09113c
+ms.openlocfilehash: bc7fb0ae87cda84dfbf7b164d38b709b7ef2eef9
+ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66972791"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67023697"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -51,9 +51,9 @@ Per le chiamate di emergenza dinamiche, è necessario che si verifichi quanto se
 
 La possibilità di eseguire il routing automatico al punto di risposta per la sicurezza pubblica (PSAP) appropriato varia a seconda del paese di utilizzo dell'utente di Teams.
 
-I Piani per chiamate Microsoft e i partner Operator Connect includono servizi di routing di emergenza dinamici per gli utenti del Estados Unidos e del Canada.
+I Piani per chiamate Microsoft e i partner Operator Connect includono servizi di routing di emergenza dinamici per gli utenti del Stati Uniti e del Canada.
 
-Per il routing diretto, tuttavia, è necessaria una configurazione aggiuntiva per il routing delle chiamate di emergenza ed eventualmente per la connettività dei partner. L'amministratore deve assicurarsi che il gateway PSTN instradare la chiamata di emergenza sia stato configurato per aggiungere informazioni sulla posizione all'invito in uscita (impostando il parametro PidfloSupported su True nell'oggetto gateway PSTN online. Inoltre, l'amministratore deve configurare la connessione a un provider del servizio di routing di emergenza (ERS) (Estados Unidos e Canada) **OPPURE** configurare il controller dei confini della sessione (SBC) per un'applicazione ELIN (Emergency Location Identification Number). Per informazioni sui provider ERS, vedere [Session Border Controllers certified for Direct Routing](direct-routing-border-controllers.md).
+Per il routing diretto, tuttavia, è necessaria una configurazione aggiuntiva per il routing delle chiamate di emergenza ed eventualmente per la connettività dei partner. L'amministratore deve assicurarsi che il gateway PSTN instradare la chiamata di emergenza sia stato configurato per aggiungere informazioni sulla posizione all'invito in uscita (impostando il parametro PidfloSupported su True nell'oggetto gateway PSTN online. Inoltre, l'amministratore deve configurare la connessione a un provider del servizio di routing di emergenza (ERS) (Stati Uniti e Canada) **OPPURE** configurare il controller dei confini della sessione (SBC) per un'applicazione ELIN (Emergency Location Identification Number). Per informazioni sui provider ERS, vedere [Session Border Controllers certified for Direct Routing](direct-routing-border-controllers.md).
 
 Questo articolo contiene le sezioni seguenti.
 
@@ -109,9 +109,9 @@ Puoi assegnare gli indirizzi per gli interventi di emergenza come segue:
 
 - Agli identificatori di rete necessari per ottenere dinamicamente una posizione. 
 
-Per supportare il routing automatico delle chiamate di emergenza all'interno del Estados Unidos, è necessario assicurarsi che le posizioni per gli interventi di emergenza assegnate agli identificatori di rete includano i codici geografici associati. Gli indirizzi di emergenza senza codici geografici non possono essere assegnati agli identificatori di rete necessari per le posizioni dinamiche.
+Per supportare il routing automatico delle chiamate di emergenza all'interno del Stati Uniti, è necessario assicurarsi che le posizioni per gli interventi di emergenza assegnate agli identificatori di rete includano i codici geografici associati. Gli indirizzi di emergenza senza codici geografici non possono essere assegnati agli identificatori di rete necessari per le posizioni dinamiche.
 
-Azure Maps viene utilizzato per i servizi basati sulla posizione. Quando immetti un indirizzo per gli interventi di emergenza tramite l'interfaccia di amministrazione di Microsoft Teams, Teams verifica Azure Maps l'indirizzo:
+Mappe di Azure viene utilizzato per i servizi basati sulla posizione. Quando si immette un indirizzo per gli interventi di emergenza tramite l'interfaccia di amministrazione di Microsoft Teams, Teams verifica Mappe di Azure l'indirizzo:
 
 - Se viene trovata una corrispondenza, i codici geografici vengono inclusi automaticamente.
 
@@ -156,7 +156,7 @@ Si noti che la propagazione di alcune modifiche alle impostazioni di rete (ad es
 
 - Se è necessaria l'abilitazione dinamica delle chiamate di emergenza o la configurazione dinamica della notifica security desk, è necessario configurare sia gli indirizzi IP attendibili che i siti di rete.
 
-- Se sono necessarie solo posizioni dinamiche, è necessario configurare solo gli indirizzi IP attendibili; non è necessario configurare le impostazioni metwork.
+- Se sono necessarie solo posizioni dinamiche, è necessario configurare solo gli indirizzi IP attendibili; non è necessario configurare le impostazioni di rete.
 
 - Se nessuna delle due impostazioni è necessaria, non è necessario configurare le impostazioni di rete.
 
@@ -234,11 +234,11 @@ Se è stato assegnato un criterio di chiamata di emergenza a un sito di rete e a
 
 ## <a name="test-emergency-calling"></a>Testare le chiamate di emergenza
 
-Alcuni provider di servizi di routing di emergenza (ERSP) nel Estados Unidos offrono un bot per il test di chiamata di emergenza.
+Alcuni provider di servizi di routing di emergenza (ERSP) nel Stati Uniti offrono un bot per il test di chiamata di emergenza.
 
-- **Gli utenti con piano di chiamata e operatore di connessione nel Estados Unidos o in Canada** possono utilizzare il numero di emergenza di test predefinito 933 per convalidare la configurazione delle chiamate di emergenza. Questo numero viene instradato a un bot, che quindi richiama il numero di telefono del chiamante (ID della linea di chiamata), l'indirizzo o la posizione per gli interventi di emergenza e indica se la chiamata verrebbe instradata automaticamente al PSAP o prima visualizzata.
+- **Gli utenti del piano di chiamata e della connessione operatore nel Stati Uniti o in Canada** possono utilizzare il numero di emergenza di test predefinito 933 per convalidare la configurazione delle chiamate di emergenza. Questo numero viene instradato a un bot, che quindi richiama il numero di telefono del chiamante (ID della linea di chiamata), l'indirizzo o la posizione per gli interventi di emergenza e indica se la chiamata verrebbe instradata automaticamente al PSAP o prima visualizzata.
 
-- **I clienti di Direct Routing nel Estados Unidos** devono coordinarsi con il proprio ERSP per un servizio di test.
+- **I clienti di Direct Routing nel Stati Uniti** devono coordinarsi con il proprio ERSP per un servizio di test.
 
 ## <a name="government-support"></a>Supporto governativo
 
