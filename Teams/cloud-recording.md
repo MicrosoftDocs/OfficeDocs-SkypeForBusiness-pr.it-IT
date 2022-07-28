@@ -19,20 +19,20 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72ad8b9349681dbb10c3df848f99cc0250711543
-ms.sourcegitcommit: cd9a1f7afaaf053741c81022e7052bf6f8008fcc
+ms.openlocfilehash: 7e68c0563420ad2c4e2d53421dc8dfaecfc23cd1
+ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65370819"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67023979"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
-In Microsoft Teams, gli utenti possono registrare le riunioni e le chiamate di gruppo per acquisire audio, video e attività di condivisione dello schermo. È anche disponibile un'opzione per la trascrizione automatica delle registrazioni, che consente agli utenti di riprodurre le registrazioni delle riunioni con sottotitoli ed esaminare gli elementi di discussione importanti nella trascrizione. La registrazione avviene nel cloud e viene salvata in Microsoft OneDrive for Business e Microsoft SharePoint Online, in modo che gli utenti possano condividerla in tutta sicurezza nell'organizzazione.
+In Microsoft Teams, gli utenti possono registrare le riunioni e le chiamate di gruppo per acquisire audio, video e attività di condivisione dello schermo. È anche disponibile un'opzione per la trascrizione automatica delle registrazioni, che consente agli utenti di riprodurre le registrazioni delle riunioni con sottotitoli ed esaminare gli elementi di discussione importanti nella trascrizione. La registrazione avviene nel cloud e viene salvata in OneDrive o SharePoint, in modo che gli utenti possano condividerla in modo sicuro all'interno dell'organizzazione.
 
 Dopo la registrazione, una riunione viene automaticamente:
 
-- Caricata in OneDrive for Business o SharePoint Online
+- Caricato in OneDrive o SharePoint
 - Autorizzata per le persone invitate alla riunione
 - Collegata nella chat per la riunione
 - Visualizzata nella scheda Registrazioni e trascrizioni per la riunione nel calendario di Teams
@@ -42,18 +42,18 @@ Dopo la registrazione, una riunione viene automaticamente:
 Argomenti correlati: [documentazione per gli utenti finali sulla registrazione delle riunioni di Teams](https://support.microsoft.com/en-us/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24)
 
 >[!Note]
-> Il passaggio dall’uso di Microsoft Stream (classico) all’uso di OneDrive for Business e SharePoint Online per le registrazioni delle riunioni avverrà automaticamente nel mese di agosto 2021. Per informazioni dettagliate, vedere [Usare OneDrive for Business e SharePoint o Stream per registrare le riunioni](tmr-meeting-recording-change.md).
+> Il passaggio dall’uso di Microsoft Stream (classico) all’uso di OneDrive e SharePoint per le registrazioni delle riunioni avverrà automaticamente nel mese di agosto 2021. Per informazioni dettagliate, vedere [Usare OneDrive e SharePoint o Stream per registrare le riunioni](tmr-meeting-recording-change.md).
 
 > [!NOTE]
 > Per informazioni sull'uso dei ruoli nelle riunioni di Teams, e su come modificare i ruoli degli utenti, vedere [Ruoli nelle riunioni di Teams](https://support.microsoft.com/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019). Per le opzioni di registrazione degli eventi live, vedere [Criteri di registrazione degli eventi live in Teams](teams-live-events/live-events-recording-policies.md).
 
 ## <a name="prerequisites-for-teams-cloud-meeting-recording"></a>Prerequisiti per la registrazione delle riunioni di Teams nel cloud
 
-Per registrare le riunioni di un utente di Teams, è necessario abilitare OneDrive for Business e SharePoint Online per il tenant. Sono inoltre necessari i prerequisiti seguenti sia per l'organizzatore della riunione che per la persona che avvia la registrazione:
+Per registrare le riunioni di un utente di Teams, è necessario abilitare OneDrive e SharePoint per il tenant. Sono inoltre necessari i prerequisiti seguenti sia per l'organizzatore della riunione che per la persona che avvia la registrazione:
 
-- L'utente ha spazio di archiviazione sufficiente in OneDrive for Business per salvare le registrazioni delle riunioni non di canale.
+- L'utente dispone di spazio di archiviazione sufficiente in OneDrive per salvare le registrazioni delle riunioni non di canale.
 
-- Il canale di Teams ha spazio di archiviazione sufficiente in SharePoint Online per salvare le registrazioni delle riunioni del canale.
+- Il canale di Teams dispone di spazio di archiviazione sufficiente in SharePoint per salvare le registrazioni delle riunioni del canale.
 
 - L'utente ha impostato `CsTeamsMeetingPolicy -AllowCloudRecording` su true per registrare riunioni e chiamate di gruppo.
 
@@ -67,7 +67,7 @@ Per registrare le riunioni di un utente di Teams, è necessario abilitare OneDri
 
 > [!IMPORTANT]
 >
-> Gli utenti non dovranno abilitare OneDrive for Business o SharePoint Online se vogliono solo salvare e scaricare le registrazioni. Questo significa che le registrazioni non vengono archiviate in OneDrive for Business o SharePoint Online, bensì in uno spazio di archiviazione temporaneo di Teams, con un limite di 21 giorni prima dell'eliminazione. Al momento l'amministratore non può controllare, gestire o eliminare questa impostazione.
+> Gli utenti non dovranno abilitare OneDrive o SharePoint se vogliono solo salvare e scaricare le registrazioni. Questo significa che le registrazioni non vengono archiviate in OneDrive o SharePoint, bensì in uno spazio di archiviazione temporaneo di Teams, con un limite di 21 giorni prima dell'eliminazione. Al momento l'amministratore non può controllare, gestire o eliminare questa impostazione.
 >
 > Per altre [informazioni sul funzionamento dell'archiviazione temporanea della registrazione delle riunioni](#temp-storage), vedere di seguito.  
 
@@ -115,7 +115,7 @@ Questa impostazione controlla se le riunioni del canale vengono salvate in una c
 
 I due valori per questa impostazione sono:
 
-- **Consenti** (impostazione predefinita): salva le registrazioni delle riunioni del canale in una cartella "Registrazioni" nel canale. Le autorizzazioni per i file di registrazione saranno basate sulle autorizzazioni di SharePoint Online nel canale. Ciò vale anche per qualsiasi altro file caricato per il canale.
+- **Consenti** (impostazione predefinita): salva le registrazioni delle riunioni del canale in una cartella "Registrazioni" nel canale. Le autorizzazioni per i file di registrazione saranno basate sulle autorizzazioni di SharePoint nel canale. Ciò vale anche per qualsiasi altro file caricato per il canale.
 
 - **Blocca** : salva le registrazioni delle riunioni del canale in una cartella "Registrazioni\Solo visualizzazione" nel canale. I proprietari dei canali avranno diritti completi sulle registrazioni in questa cartella, ma i membri del canale avranno accesso in lettura senza possibilità di download.
 
@@ -149,7 +149,7 @@ Con l’attivazione di questa impostazione, viene creata una copia della trascri
 
 
 > [!NOTE]
-> Tale trascrizione per le riunioni registrate è attualmente supportata solo per l'inglese (Stati Uniti), l'inglese (Canada), l'inglese (India), l'inglese (Regno Unito), l'inglese (Australia), l'inglese (Nuova Zelanda), l'arabo (Emirati Arabi Uniti), l'arabo (Arabia Saudita), il cinese (cantonese), il cinese (mandarino) ), il ceco (Repubblica Ceca), il danese (Danimarca), l’olandese (Belgio), l’olandese (Paesi Bassi), il francese (Canada), il francese (Francia), il finlandese (Finlandia), il tedesco (Germania), l’ebraico (Israele), l’hindi (India), l’italiano (Italia), il giapponese (Giappone), il coreano (Corea), il norvegese (Norvegia), il polacco (Polonia), il portoghese (Brasile), il portoghese (Portogallo), il russo (Russia), lo spagnolo (Messico), lo spagnolo (Spagna), lo svedese (Svezia), il thai (Thailandia), il turco (Turchia), il vietnamita (Vietnam). Vengono archiviati insieme alle registrazioni delle riunioni nello spazio di archiviazione nel cloud di OneDrive for Business e SharePoint Online.
+> Tale trascrizione per le riunioni registrate è attualmente supportata solo per: inglese (Stati Uniti), inglese (Canada), inglese (India), inglese (Regno Unito), inglese (Australia), inglese (Nuova Zelanda), arabo (Emirati Arabi Uniti), arabo (Arabia Saudita), cinese (semplificato, Cina), cinese (tradizionale, Ras di Hong Kong), cinese (tradizionale, Taiwan), ceco (Repubblica Ceca), danese (Danimarca), olandese (Belgio), olandese (Paesi Bassi), francese (Canada), francese (Francia), finlandese (Finlandia), tedesco (Germania), greco (Grecia), ebraico (Israele), hindi (India), ungherese (Ungheria), italiano (Italia), giapponese (Giappone), coreano (Corea), norvegese (Norvegia), polacco (Polonia), portoghese (Brasile), portoghese (Portogallo), romeno (Romania), russo (Russia), slovacco (Slovacchia), spagnolo (Messico), spagnolo (Spagna), svedese (Svezia), thai (Thailandia), turco (Turchia), ucraino (Ucraina), vietnamita (Vietnam). Vengono archiviati insieme alle registrazioni delle riunioni nello spazio di archiviazione nel cloud di OneDrive e SharePoint.
 
 È possibile usare l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare un criterio per le riunioni di Teams con cui controllare se chi avvia la registrazione riceve l'opzione per trascriverne la registrazione.
 
@@ -202,15 +202,15 @@ Dopo aver aggiunto l'URL dell'informativa sulla privacy, l'informativa sulla pri
 
 ## <a name="permissions-and-storage"></a>Autorizzazioni e archiviazione
 
-Le registrazioni delle riunioni vengono archiviate nello spazio di archiviazione nel cloud di OneDrive for Business e SharePoint Online. La posizione e le autorizzazioni dipendono dal tipo di riunione e dal ruolo dell'utente nella riunione. Le autorizzazioni predefinite applicate alla registrazione sono elencate di seguito. Gli utenti con diritti di modifica completi sul file di registrazione video possono modificare le autorizzazioni e condividerle in un secondo momento con altri utenti in base alle esigenze.
+Le registrazioni delle riunioni vengono archiviate in OneDrive e SharePoint. La posizione e le autorizzazioni dipendono dal tipo di riunione e dal ruolo dell'utente nella riunione. Le autorizzazioni predefinite applicate alla registrazione sono elencate di seguito. Gli utenti con diritti di modifica completi sul file di registrazione video possono modificare le autorizzazioni e condividerle in un secondo momento con altri utenti in base alle esigenze.
 
 ### <a name="non-channel-meetings"></a>Riunioni non di canale
 
-- La registrazione viene archiviata in una cartella denominata **Registrazioni** nello spazio di OneDrive for Business dell'utente che ha fatto clic su Registra. 
+- La registrazione viene archiviata in una cartella denominata **Registrazioni** in OneDrive dell'utente che ha fatto clic su Registra. 
 
-  Esempio: <i>OneDrive for Business di chi registra</i>/**Registrazioni**
+  Esempio: <i>Registrazioni di OneDrive</i>/**del registratore**
 
-- Alle persone invitate alla riunione, ad eccezione degli utenti esterni, verrà automaticamente concessa l'autorizzazione per il file di registrazione con accesso in visualizzazione senza possibilità di download.
+- Alle persone invitate alla riunione, ad eccezione dei partecipanti esterni, verrà automaticamente concessa l'autorizzazione per il file di registrazione con accesso in visualizzazione senza possibilità di download.
 
 - Il proprietario della riunione e la persona che ha fatto clic su Registra otterranno l'accesso completo alle modifiche con la possibilità di modificare le autorizzazioni e condividere con altre persone.
 
@@ -224,7 +224,7 @@ Se `Set-CsTeamsMeetingPolicy -ChannelRecordingDownload` è impostato su Consenti
 
 - Il membro che ha fatto clic su Registra ha i diritti di modifica per la registrazione.
 
-- Le autorizzazioni di ogni altro membro sono basate sulle autorizzazioni di SharePoint Online nel canale.
+- Le autorizzazioni di ogni altro membro sono basate sulle autorizzazioni di SharePoint nel canale.
 
 Se `Set-CsTeamsMeetingPolicy -ChannelRecordingDownload` è impostato su Blocca:
 
@@ -240,27 +240,27 @@ Per altre informazioni su tipi di riunione specifici, vedere la tabella seguente
 
 | Tipo di riunione  | Chi ha fatto clic su Registra?| Dove viene salvata la registrazione? | Chi può accedere? R/W, R o condivisione  |
 |-------------|-----------------------|------------------------|------------------------|
-|Chiamata 1:1 con parti interne             |Chiamante                 |Account di OneDrive for Business del chiamante                        |Il chiamante è proprietario e ha i diritti completi. <br /><br />Il destinatario della chiamata (se nello stesso tenant) ha accesso in sola lettura. Nessun accesso di condivisione. <br /><br /> Il destinatario della chiamata (se in un tenant diverso) non ha accesso. Il chiamante deve condividerlo con il destinatario della chiamata.|
-|Chiamata 1:1 con parti interne             |Destinatario della chiamata                 |Account di OneDrive for Business del destinatario della chiamata                        |Il destinatario della chiamata è proprietario e ha i diritti completi. <br /><br />Il chiamante (se nello stesso tenant) ha accesso in sola lettura. Nessun accesso di condivisione. <br /><br />Il chiamante (se in un tenant diverso) non ha accesso. Il destinatario della chiamata deve condividerlo con il chiamante.|
-|Chiamata 1:1 con una chiamata esterna             |Chiamante                 |Account di OneDrive for Business del chiamante                        |Il chiamante è proprietario e ha i diritti completi.<br /> <br />Il destinatario della chiamata non ha accesso. Il chiamante deve condividerlo con il destinatario della chiamata.|
-|Chiamata 1:1 con una chiamata esterna             |Destinatario della chiamata                 |Account di OneDrive for Business del destinatario della chiamata                        |Il destinatario della chiamata è proprietario e ha i diritti completi.<br /><br />Il chiamante non ha accesso. Il destinatario della chiamata deve condividerlo con il chiamante.|
-|Chiamata di gruppo                                 |Qualsiasi membro della chiamata |Account di OneDrive for Business del membro del gruppo che ha fatto clic su Registra  |Il membro che ha fatto clic su Registra ha diritti completi. <br /><br /> Gli altri membri dello stesso tenant hanno diritti di lettura. <br /><br /> Gli altri membri del gruppo di tenant diversi non hanno alcun diritto.|
-|Riunione ad hoc/pianificata                    |Organizzatore              |Account di OneDrive for Business dell’organizzatore                     |L'organizzatore ha i diritti completi per la registrazione. <br /><br /> Tutti gli altri membri della riunione hanno accesso in lettura senza possibilità di download.|
+|Chiamata 1:1 con parti interne             |Chiamante                 |Account di OneDrive del chiamante                        |Il chiamante è proprietario e ha i diritti completi. <br /><br />Il destinatario della chiamata (se nello stesso tenant) ha accesso in sola lettura. Nessun accesso di condivisione. <br /><br /> Il destinatario della chiamata (se in un tenant diverso) non ha accesso. Il chiamante deve condividerlo con il destinatario della chiamata.|
+|Chiamata 1:1 con parti interne             |Destinatario della chiamata                 |Account di OneDrive del destinatario della chiamata                        |Il destinatario della chiamata è proprietario e ha i diritti completi. <br /><br />Il chiamante (se nello stesso tenant) ha accesso in sola lettura. Nessun accesso di condivisione. <br /><br />Il chiamante (se in un tenant diverso) non ha accesso. Il destinatario della chiamata deve condividerlo con il chiamante.|
+|Chiamata 1:1 con una chiamata esterna             |Chiamante                 |Account di OneDrive del chiamante                        |Il chiamante è proprietario e ha i diritti completi.<br /> <br />Il destinatario della chiamata non ha accesso. Il chiamante deve condividerlo con il destinatario della chiamata.|
+|Chiamata 1:1 con una chiamata esterna             |Destinatario della chiamata                 |Account di OneDrive del destinatario della chiamata                        |Il destinatario della chiamata è proprietario e ha i diritti completi.<br /><br />Il chiamante non ha accesso. Il destinatario della chiamata deve condividerlo con il chiamante.|
+|Chiamata di gruppo                                 |Qualsiasi membro della chiamata |Account di OneDrive del membro del gruppo che ha fatto clic su Registra  |Il membro che ha fatto clic su Registra ha diritti completi. <br /><br /> Gli altri membri dello stesso tenant hanno diritti di lettura. <br /><br /> Gli altri membri del gruppo di tenant diversi non hanno alcun diritto.|
+|Riunione ad hoc/pianificata                    |Organizzatore              |Account di OneDrive dell'organizzatore                     |L'organizzatore ha i diritti completi per la registrazione. <br /><br /> Tutti gli altri membri della riunione hanno accesso in lettura senza possibilità di download.|
 |Riunione ad hoc/pianificata                    |Altro membro della riunione   |Membro della riunione che ha fatto clic su Registra                                  |Il membro che ha fatto clic su Registra ha diritti completi sulla registrazione. <br /><br />L'organizzatore ha diritti di modifica e può condividere.<br /><br /> Tutti gli altri membri della riunione hanno accesso in lettura senza possibilità di download.|
-|Riunione ad hoc/pianificata con utenti esterni|Organizzatore              |Account di OneDrive for Business dell’organizzatore                     |L'organizzatore ha i diritti completi per la registrazione.<br /> <br /> Tutti gli altri membri della riunione provenienti dallo stesso tenant dell’organizzatore hanno accesso in lettura senza possibilità di download. <br /><br /> Tutti gli altri membri esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
-|Riunione ad hoc/pianificata con utenti esterni|Altro membro della riunione   |Membro che ha fatto clic su Registra                                  |Il membro che ha fatto clic su Registra ha diritti completi sulla registrazione. L'organizzatore ha diritti di modifica e può condividere. <br /><br /> Tutti gli altri membri della riunione provenienti dallo stesso tenant dell’organizzatore hanno accesso in lettura senza possibilità di download. <br /><br />Tutti gli altri membri esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
-|Riunione di canale                            |Membro del canale         |Posizione in SharePoint Online di Teams per quel canale                   |Se Set-CsTeamsMeetingPolicy -ChannelRecordingDownload è impostato su Consenti (impostazione predefinita), il membro che ha fatto clic su Registra ha i diritti di modifica per la registrazione. Le autorizzazioni di ogni altro membro sono basate sulle autorizzazioni di SharePoint Online nel canale.<Br><Br>Se Set-CsTeamsMeetingPolicy -ChannelRecordingDownload è impostato su Blocca, i proprietari dei canali avranno diritti completi sulla registrazione, ma i membri del canale avranno accesso in lettura senza possibilità di download.|
+|Riunione ad hoc/pianificata con partecipanti esterni|Organizzatore              |Account di OneDrive dell'organizzatore                     |L'organizzatore ha i diritti completi per la registrazione.<br /> <br /> Tutti gli altri membri della riunione provenienti dallo stesso tenant dell’organizzatore hanno accesso in lettura senza possibilità di download. <br /><br /> Tutti gli altri membri esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
+|Riunione ad hoc/pianificata con partecipanti esterni|Altro membro della riunione   |Membro che ha fatto clic su Registra                                  |Il membro che ha fatto clic su Registra ha diritti completi sulla registrazione. L'organizzatore ha diritti di modifica e può condividere. <br /><br /> Tutti gli altri membri della riunione provenienti dallo stesso tenant dell’organizzatore hanno accesso in lettura senza possibilità di download. <br /><br />Tutti gli altri membri esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
+|Riunione di canale                            |Membro del canale         |Posizione in SharePoint di Teams per quel canale                   |Se Set-CsTeamsMeetingPolicy -ChannelRecordingDownload è impostato su Consenti (impostazione predefinita), il membro che ha fatto clic su Registra ha i diritti di modifica per la registrazione. Le autorizzazioni di ogni altro membro sono basate sulle autorizzazioni di SharePoint nel canale.<Br><Br>Se Set-CsTeamsMeetingPolicy -ChannelRecordingDownload è impostato su Blocca, i proprietari dei canali avranno diritti completi sulla registrazione, ma i membri del canale avranno accesso in lettura senza possibilità di download.|
 
 <a name="temp-storage"></a>
-### <a name="temporary-storage-when-unable-to-upload-to-onedrive-for-business-and-sharepoint-online"></a>Archiviazione temporanea quando non è possibile caricare in OneDrive for Business e SharePoint Online
+### <a name="temporary-storage-when-unable-to-upload-to-onedrive-and-sharepoint"></a>Archiviazione temporanea quando non è possibile caricare in OneDrive e SharePoint
 
-Se non è possibile caricare una registrazione della riunione in OneDrive for Business e SharePoint Online, sarà temporaneamente disponibile per il download da Teams per 21 giorni prima che venga eliminata. Al momento, l'amministratore non può controllare o gestire questo aspetto, inclusa la capacità di eliminazione.
+Se non è possibile caricare una registrazione della riunione in OneDrive e SharePoint, sarà temporaneamente disponibile per il download da Teams per 21 giorni prima che venga eliminata. Al momento, l'amministratore non può controllare o gestire questo aspetto, inclusa la capacità di eliminazione.
 
 Le registrazioni delle riunioni potrebbero finire in questa risorsa di archiviazione temporanea per i motivi seguenti:
 
-- Per le riunioni non di canale se la registrazione dell'utente non ha una configurazione per OneDrive for Business o se lo spazio in OneDrive for Business ha esaurito la quota di archiviazione
-- Per una riunione di canale se il sito di SharePoint Online ha esaurito la quota di archiviazione o se non è stato ancora effettuato il provisioning del sito
-- Se sono abilitati specifici criteri di OneDrive for Business e SharePoint Online che impediscono agli utenti di caricare file quando non sono compresi in intervalli IP specifici e così via.
+- Per le riunioni non di canale, se la registrazione dell'utente non ha una configurazione per OneDrive o se lo spazio in OneDrive ha raggiunto la quota di archiviazione
+- Per una riunione di canale, se il sito di SharePoint ha raggiunto la quota di archiviazione o se non è stato ancora effettuato il provisioning del sito
+- Se sono abilitati specifici criteri di OneDrive e SharePoint che impediscono agli utenti di caricare file quando non sono compresi in intervalli IP specifici e così via.
 
 La conservazione della registrazione per questa archiviazione temporanea è interessata dal messaggio di chat stesso. Di conseguenza, qualsiasi eliminazione del messaggio di chat originale per la registrazione impedirà agli utenti di accedere alla registrazione. Esistono due scenari che possono influire su questo problema:
 
@@ -270,7 +270,7 @@ La conservazione della registrazione per questa archiviazione temporanea è inte
 
 ### <a name="planning-for-storage"></a>Pianificazione dell'archiviazione
 
-Le dimensioni di una registrazione di 1 ora sono pari a 400 MB. Assicurarsi di aver compreso la capacità necessaria per i file registrati e di avere spazio di archiviazione sufficiente in OneDrive for Business e SharePoint Online.  Leggere [Impostare lo spazio di archiviazione predefinito per OneDrive for Business](/onedrive/set-default-storage-space) e [Gestire i limiti di archiviazione dei siti di SharePoint Online](/sharepoint/manage-site-collection-storage-limits) per comprendere lo spazio di archiviazione di base incluso nella sottoscrizione e come acquistare spazio di archiviazione aggiuntivo.
+Le dimensioni di una registrazione di 1 ora sono pari a 400 MB. Assicurarsi di aver compreso la capacità necessaria per i file registrati e di avere spazio di archiviazione sufficiente in OneDrive e SharePoint.  Leggere [Impostare lo spazio di archiviazione predefinito per OneDrive](/onedrive/set-default-storage-space) e [Gestire i limiti di archiviazione dei siti di SharePoint](/sharepoint/manage-site-collection-storage-limits) per comprendere lo spazio di archiviazione di base incluso nella sottoscrizione e come acquistare spazio di archiviazione aggiuntivo.
 
  <a name="auto-expiration"></a>
 ### <a name="auto-expiration-of-teams-meeting-recordings"></a>Scadenza automatica delle registrazioni delle riunioni di Teams
@@ -283,9 +283,9 @@ Altre informazioni su come gli utenti finali possono gestire la scadenza delle r
   
 ## <a name="manage-meeting-recordings"></a>Gestire le registrazioni delle riunioni
 
-Le registrazioni delle riunioni vengono archiviate come file video in OneDrive for Business e SharePoint Online e seguono le opzioni di gestione e governance disponibili in tali piattaforme. Per altre informazioni, vedere [Panoramica sulla governance di SharePoint Online](/sharepoint/governance-overview), [Guida di OneDrive for Business per le aziende](/onedrive/plan-onedrive-enterprise) o [Guida di OneDrive for Business per le piccole imprese](/onedrive/one-drive-quickstart-small-business).
+Le registrazioni delle riunioni vengono archiviate come file video in OneDrive e SharePoint e seguono le opzioni di gestione e governance disponibili in tali piattaforme. Per altre informazioni, vedere [Panoramica della governance di SharePoint](/sharepoint/governance-overview).
 
-Per le riunioni non di canale, le registrazioni vengono archiviate nello spazio di OneDrive for Business del registratore, in modo che la gestione della proprietà e della conservazione dopo che un dipendente lascia l'organizzazione segua il normale [processo di OneDrive for Business e SharePoint Online](/onedrive/retention-and-deletion#the-onedrive-deletion-process).
+Per le riunioni non di canale, le registrazioni vengono archiviate nello spazio di OneDrive del registratore, in modo che la gestione della proprietà e della conservazione dopo che un dipendente lascia l'organizzazione segua il normale [processo di OneDrive e SharePoint](/onedrive/retention-and-deletion#the-onedrive-deletion-process).
 
 ## <a name="closed-captions-for-recordings"></a>Sottotitoli codificati per le registrazioni
 
@@ -293,7 +293,7 @@ I sottotitoli codificati per le registrazioni delle riunioni di Teams saranno di
 
 I sottotitoli consentono di creare contenuto inclusivo per i visualizzatori di tutte le capacità. In qualità di proprietario, è possibile nascondere i sottotitoli nella registrazione della riunione, anche se la trascrizione della riunione sarà ancora disponibile in Teams, a meno che non venga eliminata.
 
-Oggi i sottotitoli codificati per il file video di registrazione sono collegati alla trascrizione della riunione di Teams. Questo collegamento rimarrà per tutta la durata del file nella maggior parte dei casi, ma può essere interrotto se il file video viene copiato all'interno dello stesso sito di OneDrive for Business o SharePoint Online, con conseguente mancata disponibilità dei sottotitoli nel file video copiato.
+Oggi i sottotitoli codificati per il file video di registrazione sono collegati alla trascrizione della riunione di Teams. Questo collegamento rimarrà per tutta la durata del file nella maggior parte dei casi, ma può essere interrotto se il file video viene copiato all'interno dello stesso sito di OneDrive o SharePoint, con conseguente mancata disponibilità dei sottotitoli nel file video copiato.
 
 Eventuali modifiche future al collegamento tra la trascrizione in Teams e la registrazione verranno chiarite qui e nelle notifiche del Centro messaggi. In caso di modifiche future, assicurarsi che i file di registrazione con meno di 60 giorni contengano la trascrizione della riunione in forma di sottotitoli.
 
@@ -304,9 +304,9 @@ Eventuali modifiche future al collegamento tra la trascrizione in Teams e la reg
 
 ### <a name="ediscovery"></a>eDiscovery
 
-Le registrazioni delle riunioni vengono archiviate in OneDrive for Business e SharePoint Online, che sono conformi a Microsoft 365 e Office 365 Tier-D. Per supportare le richieste di e-Discovery per gli amministratori di conformità interessati alle registrazioni delle riunioni o delle chiamate, il messaggio di registrazione completata è disponibile nella funzionalità di ricerca contenuto per la conformità per Microsoft Teams. Gli amministratori di conformità possono cercare la parola chiave "registrazione" nella riga dell'oggetto dell'elemento nell'anteprima della ricerca di contenuto per la conformità e individuare le registrazioni di riunioni e chiamate nell'organizzazione.
+Le registrazioni delle riunioni vengono archiviate in OneDrive e SharePoint, che sono conformi a Microsoft 365 e Office 365 Tier-D. Per supportare le richieste di e-Discovery per gli amministratori di conformità interessati alle registrazioni delle riunioni o delle chiamate, il messaggio di registrazione completata è disponibile nella funzionalità di ricerca contenuto per la conformità per Microsoft Teams. Gli amministratori di conformità possono cercare la parola chiave "registrazione" nella riga dell'oggetto dell'elemento nell'anteprima della ricerca di contenuto per la conformità e individuare le registrazioni di riunioni e chiamate nell'organizzazione.
 
-Inoltre, il file video di registrazione delle riunioni è disponibile tramite ricerche di eDiscovery per i file in SharePoint Online e OneDrive for Business.
+Inoltre, il file video della registrazione della riunione è disponibile tramite ricerche di eDiscovery per i file in SharePoint e OneDrive.
 
 Per altre informazioni su eDiscovery, vedere l'articolo [Soluzioni di eDiscovery per Microsoft 365](/microsoft-365/compliance/ediscovery)
 
@@ -316,7 +316,7 @@ Per altre informazioni su eDiscovery, vedere l'articolo [Soluzioni di eDiscovery
 
 ### <a name="microsoft-purview-data-loss-prevention-dlp-policies"></a>Criteri di Prevenzione della perdita dei dati Microsoft Purview(DLP)
 
-È possibile applicare i criteri di prevenzione della perdita dei dati ai file di registrazione delle riunioni anche tramite la proprietà ProgID. Nella regola DLP per i file in SharePoint Online e OneDrive for Business impostare le condizioni seguenti:
+È possibile applicare i criteri di prevenzione della perdita dei dati ai file di registrazione delle riunioni anche tramite la proprietà ProgID. Nella regola di prevenzione della perdita dei dati per i file in SharePoint e OneDrive impostare le condizioni seguenti:
 
 - Proprietà documento = *ProgID*
 - Valore = *Media.Meeting*

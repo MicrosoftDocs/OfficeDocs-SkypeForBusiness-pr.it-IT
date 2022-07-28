@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
 description: Informazioni su come telefonare, chattare, trovare e aggiungere utenti esterni all'organizzazione in Microsoft Teams usando l'accesso esterno e l'accesso guest.
-ms.openlocfilehash: c2cf4a3820cceacf1f84401161d130995ecbc98f
-ms.sourcegitcommit: d16fb01f752d186445893ea8e3b0d4450a4a0e67
+ms.openlocfilehash: 829f763c77578fdc9e17a29386ebad30e52f4986
+ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65125481"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67023989"
 ---
 # <a name="use-guest-access-and-external-access-to-collaborate-with-people-outside-your-organization"></a>Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione
 
@@ -42,6 +42,11 @@ Per impostazione predefinita, l'accesso esterno è abilitato per tutti i domini.
 
 ![Screenshot delle impostazioni per l'accesso esterno.](media/external-access-federation-settings.png)
 
+L'accesso esterno è disponibile per i tenant seguenti:
+
+- Tra Commerciale, GCC e GCC High
+- Solo tra DOD
+
 Per configurare l'accesso esterno, vedere [Gestire l'accesso esterno](manage-external-access.md). 
 
 >[!NOTE]
@@ -52,6 +57,12 @@ Per configurare l'accesso esterno, vedere [Gestire l'accesso esterno](manage-ext
 Usare l'accesso guest per aggiungere una persona esterna all'organizzazione a un team, in cui potrà chattare, chiamare, partecipare alle riunioni e collaborare ai file. Un utente guest può usufruire di quasi tutte le stesse funzionalità di Teams di un membro del team nativo. Per altre informazioni, vedere [Esperienza guest in Teams](guest-experience.md).
 
 Gli utenti guest vengono aggiunti all'istanza di Azure Active Directory dell'organizzazione come utenti B2B e devono accedere a Teams usando l'account guest. Questo significa che per accedere all'organizzazione potrebbero doversi disconnettere dalla propria organizzazione.
+
+L'accesso guest è disponibile per i tenant seguenti:
+
+- Tra Commerciale e GCC
+- Solo tra GCC High
+- Solo tra DOD
 
 Per configurare l'accesso guest per Teams, vedere [Collaborare con gli utenti guest in un team](/microsoft-365/solutions/collaborate-as-team).
 

@@ -17,12 +17,12 @@ description: Ottieni un report sulle presenze alle riunioni dall'interno di Team
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: ff591bbb48a194dd7924aa329248fb56d7369cee
-ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
+ms.openlocfilehash: dd3ee2b46af430be271e5c257132f9b6cc8087eb
+ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66794474"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67023757"
 ---
 # <a name="microsoft-teams-meeting-attendance-report"></a>Report sulle presenze alle riunioni di Microsoft Teams
 
@@ -32,7 +32,7 @@ Gli organizzatori di riunioni possono visualizzare e scaricare report sulle pres
 
 Per i tenant di formazione questo report è utile per tenere traccia delle presenze degli studenti alle lezioni online. Ad esempio, l'insegnante può scaricare il report sulle presenze all'inizio della lezione come un modo semplice per fare l’appello. Per altre informazioni, leggi [Download dei report delle presenze in Teams](https://support.office.com/article/download-attendance-reports-in-teams-ae7cf170-530c-47d3-84c1-3aedac74d310).
 
-In qualità di amministratore, puoi determinare se gli organizzatori delle riunioni possono scaricare i report sulle presenze alle riunioni impostando un criterio per le riunioni di Teams. Per impostazione predefinita, la possibilità di scaricare il report è disattivata. Per i passi necessari ad attivare questa funzionalità, vedere [Impostazioni dei criteri di riunione - Consenti report sull'interazione](../meeting-policies-in-teams-general.md#engagement-report).
+In qualità di amministratore, puoi determinare se gli organizzatori delle riunioni possono scaricare i report sulle presenze alle riunioni impostando un criterio per le riunioni di Teams. Per impostazione predefinita, la possibilità di scaricare il report è attivata. Per i passaggi necessari per disattivare questa funzionalità, vedere [Impostazioni dei criteri di riunione - Consenti report sull'interazione](../meeting-policies-in-teams-general.md#engagement-report).
 
 Se gli organizzatori della riunione hanno la necessità di accedere a dati sulle presenze maggiori rispetto a quelli reperibili dal report della riunione, puoi assegnare loro il ruolo di *Report reader* in modo che possano accedere autonomamente ai report amministrativi di Teams. Per altre informazioni, leggi [Chi può accedere ai report di attività di Teams](../teams-activity-reports.md#who-can-access-the-teams-activity-reports). 
 

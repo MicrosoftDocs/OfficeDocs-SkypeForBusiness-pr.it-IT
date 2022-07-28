@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 735fc17c7e82c1c2362b235508b28b9b4a392439
-ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
+ms.openlocfilehash: d99dacdd0580d2ee9eaf775d843c5c46a0960259
+ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563974"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67023999"
 ---
 # <a name="manage-teams-in-the-microsoft-teams-admin-center"></a>Gestire i team nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -58,7 +58,7 @@ Nella griglia vengono mostrate le seguenti proprietà:
 - **Privacy**: visibilità/tipo di accesso del gruppo Microsoft 365 di supporto.
 - **Stato**: lo stato archiviato o attivo del team. Altre informazioni sull'archiviazione dei team in [Archiviare o ripristinare un team](https://support.office.com/article/archive-or-restore-a-team-dc161cfd-b328-440f-974b-5da5bd98b5a7).
 - **Descrizione**: la descrizione del gruppo di Microsoft 365 di supporto.
-- **Classificazione**: la classificazione (se usata nell'organizzazione) assegnata al gruppo di Microsoft 365 di supporto. Per altre informazioni sulle classificazioni, vedere [Creare le classificazioni per i gruppi di Office all'interno dell'organizzazione](/office365/enterprise/powershell/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization).
+- **Classificazione**: la classificazione (se usata nell'organizzazione) assegnata al gruppo di Microsoft 365 di supporto. Per altre informazioni sulle classificazioni, vedere [Creare le classificazioni per i gruppi di Microsoft 365 all'interno dell'organizzazione](/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell#create-classifications-for-microsoft-365-groups-in-your-organization).
 - **GroupID**: l'ID gruppo univoco del gruppo di Microsoft 365 di supporto.
 
 > [!NOTE]
