@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 508f10c07a25bb2dc3cef7af84d7dacc62989f28
-ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
+ms.openlocfilehash: 000c279c32237fd7477a375bf9968db03ec5376d
+ms.sourcegitcommit: 644374fcad6372494e87d729de690af4c060f635
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67023687"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67054927"
 ---
 # <a name="manage-retention-policies-for-microsoft-teams"></a>Gestire i criteri di conservazione per Microsoft Teams
 
@@ -42,7 +42,7 @@ Teams supporta i criteri di conservazione di Teams per i messaggi di chat e cana
 
 Per altre informazioni sulle soluzioni di conservazione in Microsoft 365, vedere [Informazioni sui criteri e le etichette di conservazione](/microsoft-365/compliance/retention).
 
-Gli utenti soggetti a criteri di conservazione per Teams devono avere una licenza appropriata, ad esempio Office 365 E3 o Office 365 A3. Per altre opzioni di licenza per questi criteri di conservazione, vedere la sezione [Governance delle informazioni](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) da [Linee guida sulle licenze per la sicurezza e la conformità di Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance). Per altre informazioni sulle licenze per Teams, vedere [Descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description).
+Gli utenti soggetti a criteri di conservazione per Teams devono avere una licenza appropriata, ad esempio Office 365 E3 o Office 365 A3. Per altre opzioni di licenza per questi criteri di conservazione, vedere la sezione [Gestione del ciclo di vita dei dati di Microsoft Purview](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management) di [Microsoft 365 licensing guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance). Per altre informazioni sulle licenze per Teams, vedere [Descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description).
 
 ## <a name="how-teams-retention-policies-support-retain-and-delete-actions"></a>Come si criteri di conservazione di Teams conservano ed eliminano azioni
 
