@@ -22,22 +22,22 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sulle opzioni operatore automatico e coda di chiamata e riconoscimento vocale in Teams.
-ms.openlocfilehash: 784dcbf16c5122c165dc1a949fa237769c9837d3
-ms.sourcegitcommit: e38dc23e3968f55625e90c8883884045f80d22ee
+ms.openlocfilehash: 93a20be62f09ed7b636c593ecac48927d70e237f
+ms.sourcegitcommit: 55ba3ed53421da6619724a360d15e80262241079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66124191"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67070727"
 ---
 # <a name="auto-attendant-and-call-queue-dialing-and-voice-recognition-reference"></a>Comando radiale e riferimento per il riconoscimento vocale dell'operatore automatico e della coda di chiamata
 
-Chiamata per nome o estensione è una funzione dell'operatore automatico che consente ai chiamanti di raggiungere Teams utenti dell'organizzazione. I chiamanti della tastiera del telefono o della voce possono pronunciare o immettere il nome completo o parziale o l'estensione della persona che vogliono raggiungere. L'operatore automatico cercherà nell'elenco aziendale, individua la persona e quindi trasferirà il chiamante a tale persona.  Chiamata per nome o Chiamata per estensione sono opzioni [configurate quando configuri le impostazioni del flusso delle chiamate in un operatore automatico](create-a-phone-system-auto-attendant.md?tabs=call-flow).
+Chiamata per nome o estensione è una funzione di operatore automatico che consente ai chiamanti di raggiungere gli utenti di Teams nell'organizzazione. I chiamanti della tastiera del telefono o della voce possono pronunciare o immettere il nome completo o parziale o l'estensione della persona che vogliono raggiungere. L'operatore automatico cercherà nell'elenco aziendale, individua la persona e quindi trasferirà il chiamante a tale persona.  Chiamata per nome o Chiamata per estensione sono opzioni [configurate quando configuri le impostazioni del flusso delle chiamate in un operatore automatico](create-a-phone-system-auto-attendant.md?tabs=call-flow).
 
 ## <a name="searching-for-users"></a>Ricerca di utenti
 
-Teams utenti raggiungibili tramite Chiamata per nome **non devono avere un numero di telefono o avere piani per chiamate assegnati, ma devono essere VoIP aziendale abilitati per Skype for Business Server utenti**. Per le organizzazioni multinazionali, Chiamata per nome troverà e trasferirà i chiamanti a Microsoft Teams utenti che si trovano in paesi o aree geografiche diverse.
+Gli utenti di Teams raggiungibili con Chiamata per nome **non devono avere un numero di telefono o avere piani per chiamate assegnati, ma devono essere VoIP aziendale abilitati per Skype for Business Server utenti**. Per le organizzazioni multinazionali, Chiamata per nome troverà e trasferirà i chiamanti agli utenti di Microsoft Teams che si trovano in paesi o aree geografiche diverse.
 
-Teams utenti raggiungibili tramite Chiamata per estensione **non devono avere un numero di telefono o avere piani per chiamate assegnati, ma devono essere VoIP aziendale abilitati per Skype for Business Server utenti**. È anche necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. Per le organizzazioni multinazionali, Chiamata per estensione troverà e trasferirà i chiamanti a Microsoft Teams utenti che si trovano in paesi o aree geografiche diverse.
+Gli utenti di Teams raggiungibili tramite Chiamata per estensione **non devono avere un numero di telefono o avere piani per chiamate assegnati, ma devono essere VoIP aziendale abilitati per Skype for Business Server utenti**. È anche necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. Per le organizzazioni multinazionali, Chiamata per estensione troverà e trasferirà i chiamanti agli utenti di Microsoft Teams che si trovano in paesi o aree geografiche diverse.
 
 Considerando i prerequisiti coinvolti, Chiamata per nome o estensione deve essere abilitata esplicitamente quando si configura un operatore automatico.
 
@@ -90,7 +90,7 @@ Ci sono diversi caratteri speciali che vengono utilizzati per la ricerca di pers
 
 Le persone possono cercare altre persone nella propria organizzazione con la propria voce (riconoscimento vocale). Possono anche raggiungere chiunque in Active Directory pronunciando il nome completo o parziale della persona che stanno cercando. L'uso degli input vocali riconosce i nomi in vari formati, tra cui Nome, Cognome, Nome + Cognome o Cognome + Nome.
   
-Puoi abilitare il riconoscimento vocale per un operatore automatico, ma l'immissione da tastiera del telefono (DTMF) non è disabilitata. Telefono voce della tastiera può essere usata in qualsiasi momento, anche se il riconoscimento vocale è abilitato sull'operatore automatico.
+Puoi abilitare il riconoscimento vocale per un operatore automatico, ma l'immissione da tastiera del telefono (DTMF) non è disabilitata. L'immissione della tastiera del telefono può essere usata in qualsiasi momento, anche se il riconoscimento vocale è abilitato nell'operatore automatico.
   
 Come per l'immissione della tastiera del telefono, se vengono trovati più nomi, la persona che chiama sente un elenco di nomi tra cui selezionare.
 
@@ -113,11 +113,11 @@ I chiamanti possono pronunciare i nomi nei seguenti formati:
 
 ### <a name="dial-by-extension"></a>Chiamata per estensione
 
-Gli utenti che si desidera rendere disponibili per **Chiamata per estensione** devono avere un'estensione specificata come parte di uno dei seguenti attributi telefonici definiti in Active Directory (e sincronizzati tramite Azure AD Connessione) o Azure Active Directory. Per altre informazioni, vedere [Aggiungere utenti singolarmente o in blocco](/microsoft-365/admin/add-users/add-users) .
+Gli utenti che si desidera rendere disponibili per **Chiamata per estensione** devono avere un'estensione specificata come parte di uno dei seguenti attributi telefonici definiti in Active Directory (e sincronizzati tramite Azure AD Connect) o Azure Active Directory. Per altre informazioni, vedere [Aggiungere utenti singolarmente o in blocco](/microsoft-365/admin/add-users/add-users) .
 
-- OfficePhone/TelephoneNumber (AD e Azure AD)
+- TelephoneNumber (AD e Azure AD)
 - HomePhone (AD)
-- Mobile/MobilePhone (AD e Azure AD)
+- Dispositivi mobili (AD e Azure AD)
 - Altrotelefono (AD)
 
 Il formato richiesto per immettere l'estensione nel campo del numero di telefono dell'utente può essere uno dei formati seguenti:
@@ -131,6 +131,10 @@ Il formato richiesto per immettere l'estensione nel campo del numero di telefono
 - Esempio 3: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "x5678"
 
 È possibile impostare l'estensione nel [interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) o [nell'interfaccia di amministrazione di Azure Active Directory](https://aad.portal.azure.com). Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
+
+> [!NOTE]
+>  Se si usa il campo TelephoneNumber per definire l'estensione, Microsoft consiglia di utilizzare il formato *+\<phone number>;ext=\<extension>*. Se all'utente è assegnato anche un numero di telefono di Teams, è consigliabile definire entrambi i numeri allo stesso modo.
+
 
 ## <a name="language-support"></a>Supporto per le lingue
 

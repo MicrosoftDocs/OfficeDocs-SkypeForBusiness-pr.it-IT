@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su operatori automatici e code di chiamata e su come usarli per aiutare i chiamanti a spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 1f439ca0a6eb9ff3487582253cdd0aad7b2fad6c
-ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
+ms.openlocfilehash: 218377b2082d1a057f503abbf83d37ff78686986
+ms.sourcegitcommit: 55ba3ed53421da6619724a360d15e80262241079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616082"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67070737"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare gli operatori automatici di Teams e le code di chiamata
 
@@ -69,7 +69,7 @@ Per ogni coda di chiamata, è possibile specificare se gli agenti in coda posson
 
 Per configurare gli operatori automatici e le code di chiamata, sono necessarie le risorse seguenti:
 
-- Un account di risorsa per ogni operatore automatico e ogni coda di chiamata
+- Un [account di risorsa](manage-resource-accounts.md) per ogni operatore automatico e coda di chiamata
 - Una licenza gratuita Telefono di Microsoft Teams Resource Account per ogni account di risorsa che sarà direttamente raggiungibile da utenti di Teams o numeri di telefono esterni
 - Almeno un [numero di servizio Microsoft](getting-service-phone-numbers.md), un numero di connessione operatore, un numero di routing diretto o un numero ibrido per ogni account di risorsa che desideri sia direttamente componibile da numeri di telefono esterni
   - Il numero di servizio può essere un numero a pagamento o numero verde
