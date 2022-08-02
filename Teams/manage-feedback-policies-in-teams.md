@@ -17,12 +17,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare i criteri di feedback per controllare se gli utenti di Teams nell'organizzazione possono inviare feedback su Teams a Microsoft.
-ms.openlocfilehash: 7fcfa1738f7dbbc0f7c70afec86e9e2f181d6d21
-ms.sourcegitcommit: 8d7a926758971bee491d24f23b1ad14f5e5c6f7f
+ms.openlocfilehash: f9d001fba9503f6d5f2e482a437bc8f38c8ffc7d
+ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66713344"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67156524"
 ---
 # <a name="manage-feedback-policies-in-microsoft-teams"></a>Gestire i criteri di feedback in Microsoft Teams
 
@@ -46,7 +46,7 @@ Accedere al feedback sui dispositivi mobili usando **la Guida di** **Impostazion
 
 
 
-**Sondaggi**
+**Rilevazioni**
 
 Gli utenti possono anche valutare la loro esperienza con Teams e inviarci i dettagli sulla valutazione che assegnano. Questo sondaggio popup viene visualizzato di tanto in tanto dagli utenti in Teams. Quando un utente seleziona **Invia feedback** nella notifica, il sondaggio viene visualizzato per il completamento.
 
@@ -60,7 +60,7 @@ Gli amministratori possono controllare se gli utenti dell'organizzazione possono
 
 Si supponi, ad esempio, di voler consentire a tutti gli utenti dell'organizzazione di inviare feedback e ricevere sondaggi, ad eccezione dei nuovi assunti in formazione. In questo scenario si crea un criterio personalizzato per disattivare entrambe le caratteristiche e assegnarle ai nuovi assunti. Tutti gli altri utenti dell'organizzazione ottengono i criteri globali con le caratteristiche attivate.  
 
-I criteri di feedback vengono gestiti con PowerShell. Utilizzare il [cmdlet **New-CsTeamsFeedbackPolicy**](/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) per creare un criterio personalizzato. Utilizzare il cmdlet **Grant-CsTeamsFeedbackPolicy** per assegnarlo a uno o più utenti o gruppi di utenti, ad esempio un gruppo di sicurezza o un gruppo di distribuzione. Utilizzare **Set-CsTeamsFeedbackPolicy** per impostare flag specifici.
+I criteri di feedback vengono gestiti con PowerShell. Utilizzare il [cmdlet **New-CsTeamsFeedbackPolicy**](/powershell/module/skype/new-csteamsfeedbackpolicy) per creare un criterio personalizzato. Utilizzare il cmdlet **Grant-CsTeamsFeedbackPolicy** per assegnarlo a uno o più utenti o gruppi di utenti, ad esempio un gruppo di sicurezza o un gruppo di distribuzione. Utilizzare **Set-CsTeamsFeedbackPolicy** per impostare flag specifici.
 
 Per disattivare e attivare le funzionalità, impostare i seguenti parametri:
 
@@ -68,7 +68,7 @@ Per disattivare e attivare le funzionalità, impostare i seguenti parametri:
 
  - **Sondaggi**: impostare il parametro **receiveSurveysMode** su **abilitato** per consentire agli utenti a cui sono assegnati i criteri di ricevere il sondaggio. Per fare in modo che gli utenti ricevano il sondaggio e consentano loro di rifiutare esplicitamente, impostare il parametro **su enabledUserOverride**. In Teams, gli utenti possono quindi passare a **Impostazioni** > **Privacy** e scegliere se vogliono partecipare ai sondaggi. Se si imposta il parametro su disabilitata, la caratteristica viene **disattivata** e gli utenti a cui sono assegnati i criteri non riceveranno il sondaggio.
 
- - **Posta elettronica**: usare il flag **AllowEmailCollection** per aggiungere un campo di posta elettronica.
+ - **Email**: usare il flag **AllowEmailCollection** per aggiungere un campo di posta elettronica.
  - **Raccolta log**: usare il flag **AllowLogCollection** per aggiungere il consenso esplicito per la raccolta di log per gli utenti. La raccolta log è attualmente abilitata solo nei dispositivi mobili. Per altre informazioni sui dati condivisi tramite i log, [vedere altre informazioni](https://go.microsoft.com/fwlink/?linkid=2168178).
 
 ## <a name="create-a-custom-feedback-policy"></a>Creare criteri di feedback personalizzati

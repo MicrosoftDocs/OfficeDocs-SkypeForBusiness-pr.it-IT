@@ -29,45 +29,47 @@ ms.custom:
 - O365P_SFBVoiceCredit
 - O365P_SFBVoiceCreditAether
 - Licensing
-description: 'Scopri come pagare i crediti di comunicazione (Consumo PSTN) per i servizi Skype for Business e vedere i piani per mantenere gli utenti con accesso continuo al sistema telefonico. '
-ms.openlocfilehash: 3d2b6eb0a1f487794cc93f9639e49e9557ca4fcd
-ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
+description: 'Scopri come pagare i Crediti comunicazioni (Consumi PSTN) per i servizi di Skype for Business e i piani per mantenere gli utenti con accesso continuo al sistema telefonico. '
+ms.openlocfilehash: 0e8c737f8ed1ac4537c4453d77cc284719fb8086
+ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942049"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67156644"
 ---
 # <a name="add-funds-and-manage-communications-credits"></a>Aggiungere fondi e gestire Credito per la comunicazione
 
-I Crediti comunicazioni sono un modo pratico per pagare i piani Sistema telefonico e per le chiamate in Microsoft 365 o Office 365. I Crediti comunicazioni assicurano che tu e i tuoi utenti non vengano mai catturati senza essere in grado di:
+I Crediti comunicazioni sono un pratico metodo di pagamento per sistema telefonico e piani per chiamate in Microsoft 365 o Office 365. Crediti comunicazioni assicura che tu e i tuoi utenti non siete mai presi senza essere in grado di:
   
-- Accedere alle riunioni di audioconferenza usando numeri di telefono con accesso esterno a numero verde.
+- Accedi alle riunioni dei servizi di audioconferenza utilizzando numeri verdi per l'accesso esterno.
 
-- Effettuare chiamate in uscita da una riunione di audioconferenza per aggiungere un altro utente da qualsiasi parte del mondo.
+- Puoi effettuare una chiamata in uscita da una riunione in audioconferenza per aggiungere un altro utente da qualsiasi parte del mondo.
 
-- Effettuare chiamate in uscita da una riunione di audioconferenza al telefono cellulare con l'app Skype for Business o Microsoft Teams installata.
+- Effettuare una chiamata in uscita da una riunione di audioconferenza al telefono cellulare con l'app Skype for Business o Microsoft Teams installata.
 
-- Comporre un numero di telefono internazionale quando si ha un **piano per chiamate nazionali.**
+- Componi qualsiasi numero di telefono internazionale quando hai un **piano per chiamate nazionali**.
 
-- Effettuare chiamate in uscita e pagare al minuto dopo aver esaurito l'assegnazione mensile dei minuti.
+- Effettuare chiamate in uscita e pagare al minuto dopo aver esaurito i minuti mensili assegnati.
+
+- Effettuare chiamate in uscita e pagare al minuto per tutte le chiamate in uscita, se si ha un piano per chiamate con pagamento in base all'uso.
 
 > [!NOTE]
-> Se ti stai chiedendo quanto è e le tariffe, vedi la tabella tariffe nella [pagina Piani per chiamate.](https://go.microsoft.com/fwlink/p/?LinkId=799523)
+> Se ti stai chiedendo quanto è e quali sono le tariffe, consulta la tabella tariffe nella pagina [Piani per chiamate](https://go.microsoft.com/fwlink/p/?LinkId=799523) .
   
-L'amministratore può aggiungere fondi manualmente oppure configurare l'auto-ricarica, che è **consigliabile.**
+Come amministratore, puoi aggiungere fondi manualmente oppure configurare l'autoricarica, cosa che **ti consigliamo**.
   
 L'autoricarica consente di aggiungere automaticamente fondi al saldo quando scende al di sotto dell'importo configurato. È consigliabile utilizzare l'autoricarica per non dover ogni volta ricordarsi di aggiungere fondi manualmente. Quando il tuo saldo raggiunge l'importo configurato, i fondi vengono aggiunti automaticamente. Se non scegli di utilizzare l'autoricarica, corri il rischio che il tuo saldo scenda al di sotto dello zero. Se il saldo scende al di sotto dello zero, tu e i tuoi utenti non sarete in grado di effettuare chiamate ai numeri verdi o chiamate internazionali.
   
-Puoi aggiornare le opzioni di pagamento in qualsiasi momento. Nella pagina **Abbonamenti** selezionare **Crediti comunicazioni** e apportare gli aggiornamenti.
+Puoi aggiornare le opzioni di pagamento in qualsiasi momento. Nella pagina **Abbonamenti** seleziona **Crediti comunicazioni** e apporta gli aggiornamenti.
   
-I fondi verranno applicati solo ai Crediti comunicazioni alle tariffe pubblicate da Microsoft quando vengono usati i servizi. Eventuali fondi non utilizzati entro 12 mesi dalla data di acquisto andranno persi.
+I fondi verranno applicati solo ai Crediti comunicazioni alle tariffe pubblicate di Microsoft quando i servizi vengono utilizzati. Eventuali fondi non utilizzati entro 12 mesi dalla data di acquisto andranno persi.
   
 > [!TIP]
-> Ti invieremo notifiche tramite e-mail quando i fondi vengono aggiunti tramite l'ricarica automatica, quando l'ricarica automatica non riesce (ad esempio, quando scade una carta di credito) e quando il saldo raggiunge lo zero.
+> Ti invieremo notifiche tramite e-mail quando i fondi vengono aggiunti tramite ricarica automatica, quando l'autoricarica non riesce (ad esempio quando scade una carta di credito) e quando il saldo raggiunge lo zero.
   
-Per altre informazioni, vedere [Che cosa sono i crediti comunicazioni?](what-are-communications-credits.md)
+Per ulteriori informazioni, vedi [Che cosa sono i Crediti comunicazioni?](what-are-communications-credits.md)
   
-## <a name="want-to-know-about-plans-and-pricing"></a>Informazioni sui piani e sui prezzi
+## <a name="want-to-know-about-plans-and-pricing"></a>Informazioni su piani e prezzi
 
 Per consultare piani e prezzi, consultare uno di questi link:
   
@@ -75,16 +77,16 @@ Per consultare piani e prezzi, consultare uno di questi link:
 
 - [Piani di audioconferenza](https://go.microsoft.com/fwlink/?LinkId=799762 )
 
-- [Sistema telefonico piani](https://go.microsoft.com/fwlink/?LinkId=799763)
+- [Piani sistema telefonico](https://go.microsoft.com/fwlink/?LinkId=799763)
 
-È anche possibile visualizzare le informazioni accedendo al interfaccia di amministrazione di Microsoft 365 e selezionando Abbonamenti  >  **fatturazione**  >  **Aggiungi abbonamenti**.
+Per visualizzare informazioni, è anche possibile accedere al interfaccia di amministrazione di Microsoft 365 e passare a **Fatturazione** > **abbonamenti** > **Aggiungi abbonamenti**.
   
-Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere Microsoft Teams [licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere Licenze per i [componenti aggiuntivi di Microsoft Teams](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
   
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-articles"></a>Articoli correlati
 
 - [Configurare Skype for Business online](/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
 
 - [Configurare Cloud Voicemail - Guida per gli amministratori](set-up-phone-system-voicemail.md)
 
-- [Configurare piani per chiamate e](set-up-calling-plans.md) piani per chiamate per Microsoft 365 o [Office 365](calling-plans-for-office-365.md)
+- [Configurare piani per chiamate](set-up-calling-plans.md) e [piani per chiamate per Microsoft 365 o Office 365](calling-plans-for-office-365.md)

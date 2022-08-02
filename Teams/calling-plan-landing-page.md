@@ -18,18 +18,18 @@ description: Determinare il piano per le chiamate del sistema telefonico Microso
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e11c6f6cbb53808ba259afd90420ac9855c9731d
-ms.sourcegitcommit: d87991ed2d3e4d70edb048378763a17ff689b710
+ms.openlocfilehash: 0040814b12e98c4f44d1dff5939651938580fa4d
+ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66682475"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67156554"
 ---
 # <a name="which-calling-plan-is-right-for-you"></a>Qual è il piano di chiamata adatto alle proprie esigenze?
 
 Hai completato la [guida introduttiva](get-started-with-teams-quick-start.md). Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). Forse hai distribuito [riunioni & conferenze](deploy-meetings-microsoft-teams-landing-page.md). Ora sei pronto per aggiungere carichi di lavoro vocali cloud e hai deciso di usare Microsoft Phone System con piano per chiamate per connetterti alla rete PSTN (Public Switched Telephone Network).
 
-Questo articolo descrive le decisioni di distribuzione di base per i piani per chiamate, oltre a considerazioni aggiuntive che può essere necessario configurare in base alle esigenze dell'organizzazione. È anche consigliabile leggere [Cloud Voice in Microsoft Teams](cloud-voice-landing-page.md) per altre informazioni sulle offerte di voce cloud di Microsoft.
+Questo articolo descrive le decisioni di distribuzione di base per i Piani per chiamate e altre considerazioni da configurare in base alle esigenze dell'organizzazione. È anche consigliabile leggere [Cloud Voice in Microsoft Teams](cloud-voice-landing-page.md) per altre informazioni sulle offerte di voce cloud di Microsoft.
 
 ## <a name="learn-more-about-calling-plans"></a>Scopri di più sui Piani per chiamate
 
@@ -43,18 +43,19 @@ Negli articoli seguenti vengono fornite ulteriori informazioni sulla distribuzio
 
 Per utilizzare Microsoft come gestore di telefonia, devi ottenere le licenze per il Piano per chiamate e assegnarle agli utenti del Sistema telefonico.
 
-Sono disponibili due tipi di Piani per chiamate:
+Sono disponibili tre tipi di Piani per chiamate:
 
 - Piani per chiamate nazionali
 - Piani per chiamate internazionali
+- Piani per chiamate con pagamento in base al costo
 
-|Chiedersi|Azione |
-|------------|-------|
-|I Piani per chiamate sono disponibili nella mia area? Quali posizioni degli utenti avranno il servizio Piano per chiamate? | Per ulteriori informazioni, vedi [Disponibilità del paese e dell'area geografica per i piani per audioconferenze e chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). |
-Gli utenti hanno bisogno di chiamate internazionali? | Per altre informazioni, vedere [Piani per chiamate per Microsoft 365 o Office 365](calling-plans-for-office-365.md). |
-Gli utenti hanno licenze per Piani per chiamate? | Per acquistare e assegnare licenze, vedere [Passaggio 2: Acquistare e assegnare licenze](set-up-calling-plans.md#step-2-buy-and-assign-licenses). |
-Ognuno dei miei utenti ha un numero di telefono di chiamata diretta verso l'interno (DID)? | Per ottenere i numeri di telefono, vedi [Passaggio 3: Ottenere numeri di telefono](set-up-calling-plans.md#step-3-get-phone-numbers). |
-|||
+| Chiedersi | Azione |
+|--------------|--------|
+| I Piani per chiamate sono disponibili nella mia area? Quali posizioni degli utenti avranno il servizio Piano per chiamate? | Per ulteriori informazioni, vedi [Disponibilità del paese e dell'area geografica per i piani per audioconferenze e chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). |
+| Gli utenti hanno bisogno di chiamate internazionali? | Per altre informazioni, vedere [Piani per chiamate per Microsoft 365 o Office 365](calling-plans-for-office-365.md). |
+| Se alcuni dei miei utenti non fanno un numero significativo di chiamate in uscita, il piano per chiamate con pagamento in base al metodo di pagamento è l'opzione più economica per loro? | Per altre informazioni, vedere [Piani per chiamate per Microsoft 365 o Office 365](calling-plans-for-office-365.md). |
+| Gli utenti hanno licenze per Piani per chiamate? | Per acquistare e assegnare licenze, vedere [Passaggio 2: Acquistare e assegnare licenze](set-up-calling-plans.md#step-2-buy-and-assign-licenses). |
+| Ognuno dei miei utenti ha un numero di telefono di chiamata diretta verso l'interno (DID)? | Per ottenere i numeri di telefono, vedi [Passaggio 3: Ottenere numeri di telefono](set-up-calling-plans.md#step-3-get-phone-numbers). |
 
 ### <a name="transfer-phone-numbers-to-microsoft-365-or-office-365"></a>Trasferire numeri di telefono in Microsoft 365 o Office 365
 

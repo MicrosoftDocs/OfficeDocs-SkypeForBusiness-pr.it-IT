@@ -17,12 +17,12 @@ description: Informazioni su come usare il report sull'utilizzo dell'app Teams n
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6fb738bc1b1fd068196d1b7c3238c139426eac73
-ms.sourcegitcommit: 4c4f2f220832cae3efb3f6f3c74795300d661295
+ms.openlocfilehash: f9dadab5ee29a15e939a120cddcd3e889d524d88
+ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66825680"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67156724"
 ---
 # <a name="microsoft-teams-app-usage-report"></a>Report utilizzo app Microsoft Teams
 
@@ -30,11 +30,15 @@ Il report Utilizzo app Teams nell'interfaccia di amministrazione di Microsoft Te
 
 ## <a name="view-the-app-usage-report"></a>Visualizzare il report Utilizzo app
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione in <https://admin.teams.microsoft.com>fare clic su **Analisi & report** > **utilizzo**.<br><br>![Screenshot della voce di menu Report utilizzo.](media/app-usage-report1.png "Screenshot della voce di menu Report utilizzo.")
-2. Nella scheda **Visualizza report** , in **Report**, selezionare **Utilizzo app**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Teams selezionare **Analisi & report** > **[utilizzo](https://admin.teams.microsoft.com/analytics/reports)**.
 
-3. In **Intervallo di date** selezionare un intervallo e quindi fare clic su **Esegui report**. Il report Utilizzo app Teams può essere visualizzato per le tendenze degli ultimi 7, 30 o 90 giorni.<br><br>![Screenshot del report Utilizzo app.](media/app-usage-report2.png "Screenshot del report Utilizzo app.")
+   :::image type="content" source="media/app-usage-report1.png" alt-text="Screenshot della voce di menu Report utilizzo.":::
 
+1. Nella scheda **Visualizza report** , in **Report**, selezionare **Utilizzo app**.
+
+1. In **Intervallo di date** selezionare un intervallo e quindi **selezionare Esegui report**. È possibile visualizzare il report Utilizzo app di Teams per le tendenze degli ultimi 7, 30 o 90 giorni.
+
+   :::image type="content" source="media/app-usage-report2-trimmed.png" alt-text="Screenshot dell'interfaccia del report Utilizzo app." lightbox="media/app-usage-report2.png":::
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 
@@ -42,13 +46,13 @@ Il report Utilizzo app Teams nell'interfaccia di amministrazione di Microsoft Te
 
 Ogni report ha una data in alto a sinistra che indica la data di creazione del report. I report in genere riflettono una latenza di 24 ore rispetto all'apertura di un'app.
 
-L'asse Y nel grafico è il numero di utenti che per la data selezionata passando il puntatore del mouse sul grafico sono considerati utenti attivi perché hanno aperto un'app almeno una volta.
+L'asse Y del grafico è il numero di utenti che per la data selezionata passando il puntatore del mouse sul grafico sono considerati utenti attivi. Gli utenti che aprono un'app almeno una volta vengono considerati utenti attivi.
 
 L'asse X del grafico corrisponde all'intervallo di date selezionato per il report.
 
 Passa il puntatore del mouse sul punto (4) che rappresenta l'utilizzo di un'app in qualsiasi data per visualizzare il numero totale di utenti attivi dell'app in tale data.
 
-Per selezionare altre app, nell'angolo in alto a destra fare clic sull'icona **Filtro** (5), selezionare o digitare nuovi criteri e quindi fare clic su **Applica**.
+Per selezionare altre app, nell'angolo in alto a destra seleziona l'icona **Filtro** (5), seleziona o digita nuovi criteri e quindi seleziona **Applica**.
 
 La tabella nella parte inferiore del report (6) mostra gli utenti attivi e i team in base al nome dell'app.
 
@@ -56,22 +60,22 @@ La tabella nella parte inferiore del report (6) mostra gli utenti attivi e i tea
    - **Utenti attivi** è il numero di utenti che hanno aperto l'app almeno una volta durante il periodo di tempo specificato.
    - **Il tipo di app** è un valore statico di "Microsoft" o "Terze parti".
    - **Team attivi** è il numero di team che hanno aperto l'app da almeno un membro del team e durante i periodi di tempo specificati.
-   - **Publisher** è l'autore del software dell'app.
-   - **La versione** è la versione software dell'app, dell'autore dell'app.
+   - **Publisher** è lo sviluppatore del software dell'app.
+   - **La versione** è la versione software dell'app, dallo sviluppatore dell'app.
 
    > [!NOTE]
    > **Gli utenti attivi** e **i team attivi** vengono calcolati solo per le app usate nei canali.
 
-Per aggiungere o rimuovere colonne nella tabella, nell'angolo in alto a destra fare clic sull'icona **Modifica colonne** (7), nella scheda **Modifica colonne** selezionare nuovi criteri e quindi fare clic su **Applica**.
+Per aggiungere o rimuovere colonne nella tabella, nell'angolo in alto a destra selezionare l'icona **Modifica colonne** (7), nella scheda **Modifica colonne** selezionare nuovi criteri e quindi **applica**.
 
-Per esportare il report in un file CSV per l'analisi offline, nell'angolo in alto a destra selezionare l'icona **Esporta in Excel** (8) e quindi nella scheda **Download** in **Stato** fare clic su **Scarica**.
+Per esportare il report in un file CSV per l'analisi offline, nell'angolo in alto a destra selezionare l'icona **Esporta in Excel** (8) e quindi nella scheda **Download** in **Stato** selezionare **Scarica**.
 
    :::image type="content" alt-text="Screenshot del riquadro Download." source="media/app-usage-report7.png" lightbox="media/app-usage-report7.png":::
 
-Quando si visualizza il report in Excel, viene visualizzata anche una colonna **Id** , che rappresenta l'ID dell'app, in genere una stringa alfanumerica. Se **l'ID** è **\n**, significa che un utente ha chiesto di eliminare le informazioni.
+Quando si visualizza il report in Microsoft Excel, viene visualizzata anche una `Id` colonna, che rappresenta l'ID app, in genere una stringa alfanumerica. Se il valore di `Id` è **\n**, significa che un utente ha chiesto di eliminare le informazioni.
 
-   ![Screenshot del report di Excel scaricato.](media/app-usage-report8.png "Screenshot del report di Excel scaricato.")
+   :::image type="content" source="media/app-usage-report8.png" alt-text="Screenshot del report di Excel scaricato.":::
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-articles"></a>Articoli correlati
 
 - [Analisi e creazione dei report di Teams](teams-reporting-reference.md).

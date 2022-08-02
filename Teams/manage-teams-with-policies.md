@@ -15,38 +15,41 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 932fed6b2a735aabee0511b6f1c6b863e01e403c
-ms.sourcegitcommit: 9532eb79310cd653010565607fa394f2b8dd182d
+ms.openlocfilehash: b56e617321cea25fe677b7d9a7a00afba0940b07
+ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65646485"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67156534"
 ---
 # <a name="manage-teams-with-policies"></a>Gestire Teams con i criteri
 
-I criteri sono una parte importante della gestione delle Teams. Usare questo articolo per informazioni su come usare i criteri a vantaggio dell'organizzazione.
+I criteri sono una parte importante della gestione di Teams. Usare questo articolo per informazioni su come usare i criteri a vantaggio dell'organizzazione.
 
 ## <a name="what-you-use-policies-for"></a>Cosa si usano i criteri per
 
-I criteri vengono usati per eseguire molte attività nell'organizzazione in aree diverse, ad esempio messaggistica, riunioni e applicazioni. È anche possibile consentire agli utenti di pianificare riunioni in un canale di teams, consentire agli utenti di modificare i messaggi inviati e controllare se gli utenti possono aggiungere app alla barra dell'app Teams.
+I criteri vengono usati per eseguire molte attività nell'organizzazione in aree diverse, ad esempio messaggistica, riunioni e applicazioni. Alcune delle cose che puoi fare includono consentire agli utenti di pianificare riunioni in un canale di teams, consentire agli utenti di modificare i messaggi inviati e controllare se gli utenti possono aggiungere app alla barra dell'app Teams.
 
 ## <a name="how-to-assign-policies"></a>Come assegnare i criteri
 
-I criteri possono essere assegnati in diversi modi, a seconda delle operazioni che l'organizzazione sta tentando di eseguire. È possibile creare e visualizzare le attività nell'interfaccia di amministrazione di Teams.
+I criteri possono essere assegnati in diversi modi, a seconda delle operazioni che l'organizzazione sta tentando di eseguire. È possibile effettuare e visualizzare le attività nell'interfaccia di amministrazione di Teams.
 
 ![Screenshot dell'assegnazione di Criteri di gruppo.](media/group-policy-assignment.png)
 
 Altre informazioni sull'assegnazione dei criteri [sono disponibili qui](policy-assignment-overview.md).
 
+> [!NOTE]
+> Per annullare l'assegnazione dei criteri, è possibile rimuovere le assegnazioni in blocco per tutti gli utenti direttamente assegnati a un criterio. Per altre informazioni, vedere [Annullare l'assegnazione di criteri in blocco](assign-policies-users-and-groups.md#unassign-policies-in-bulk).
+
 ## <a name="how-to-manage-policies"></a>Come gestire i criteri
 
-I criteri vengono gestiti con l'interfaccia di amministrazione di Microsoft Teams o [con PowerShell](./teams-powershell-managing-teams.md#manage-policies-via-powershell).
+I criteri vengono gestiti con l'interfaccia di amministrazione di Microsoft Teams o [tramite PowerShell](./teams-powershell-managing-teams.md#manage-policies-via-powershell).
 
-Ad esempio, un criterio di configurazione delle app può consentire agli utenti di caricare app personalizzate, installare app per conto degli utenti e aggiungere app alla barra dell'app Teams. Questi criteri sono configurati nell'interfaccia di amministrazione di Teams.
+Ad esempio, un criterio di configurazione delle app può consentire agli utenti di caricare app personalizzate, installare app per conto degli utenti e aggiungere app alla barra delle app di Teams. Questi criteri sono configurati nell'interfaccia di amministrazione di Teams.
 
 ![Screenshot dei criteri di configurazione delle app.](media/app-setup-policy.png)
 
-Inoltre, è possibile usare criteri riunione per controllare le impostazioni audio e video in Teams riunioni come trascrizioni, registrazioni cloud e audio/video IP.
+Inoltre, i criteri per le riunioni possono essere usati per controllare le impostazioni audio e video nelle riunioni di Teams, ad esempio trascrizioni, registrazioni cloud e audio/video IP.
 
 ![Screenshot dei criteri riunione.](media/engineering-meeting-policy.png)
 

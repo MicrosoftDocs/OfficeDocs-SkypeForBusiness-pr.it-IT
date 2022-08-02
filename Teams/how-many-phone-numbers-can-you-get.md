@@ -23,16 +23,16 @@ ms.custom:
 - ms.teamsadmincenter.voice.phonenumbers.searchacquire.tooltip.quantity
 - seo-marvel-mar2020
 description: Informazioni sul numero di numeri di telefono disponibili in Microsoft Teams in base al tipo di numero e al numero di licenze disponibili.
-ms.openlocfilehash: e4b5c6db17ea6a1f50b7c7d3b53a221ac49b3fe1
-ms.sourcegitcommit: d87991ed2d3e4d70edb048378763a17ff689b710
+ms.openlocfilehash: 053a1772ed14b09c1bed159973f50bc47125c58e
+ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66682455"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67156774"
 ---
 # <a name="how-many-telephone-numbers-can-you-get"></a>Quanti numeri di telefono puoi ottenere?
 
-Quando si cercano e si ottengono i numeri di telefono forniti da Microsoft per l'organizzazione, è possibile ottenere un numero di numeri di telefono superiore a quello assegnato alle licenze. Dipende però dai tipi di numeri di telefono e di licenze acquistate e assegnate.
+Quando si cercano e si ottengono i numeri di telefono forniti da Microsoft per l'organizzazione, è possibile ottenere un numero di numeri di telefono superiore a quello assegnato alle licenze. Dipende però dai tipi di numeri di telefono e di licenze acquistati e assegnati.
 
 La modalità di acquisizione e gestione dei numeri di telefono varia in base all'opzione di connettività PSTN: Piani per chiamate Microsoft, Operator Connect o Routing diretto. Per altre informazioni, vedere [Gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-landing-page.md).
 
@@ -45,14 +45,14 @@ Puoi vedere la quantità di numeri di telefono che puoi ottenere da Microsoft du
 
 |Ecco il tipo di numero di telefono |Come ottieni i numeri di telefono totali? |Ecco un esempio |
 |:-----|:-----|:-----|
-|Numero dell'utente (abbonato)   |Il numero di numeri di telefono è uguale al numero totale di licenze per **piani per chiamate nazionali** e/o **piani per chiamate internazionali** moltiplicato per 1,1 + 10 numeri di telefono aggiuntivi.  |Se ho 50 utenti in totale con un Piano per chiamate nazionali o Piano per chiamate internazionali, puoi acquisire **65** numeri **di telefono (50 x 1.1 + 10)**.  |
+|Numero dell'utente (abbonato)   |Il numero di numeri di telefono è uguale al numero totale di licenze per **piani per chiamate nazionali** e/o **piani per chiamate internazionali** moltiplicato per 1,1 + 10 numeri di telefono aggiuntivi. Se disponi di licenze con pagamento in base al consumo, puoi acquisire solo 1 numero di telefono per licenza. |Se ho 50 utenti in totale con 30 di essi su un piano per chiamate nazionali o internazionali e 20 di essi su un piano con pagamento in base al consumo, puoi acquisire **63** numeri **di telefono (30 x 1,1 + 10) + 20**. |
 |Numero di servizio a pagamento   | Il numero di numeri di telefono è uguale al numero totale di licenze **Sistema telefonico** e **Audioconferenza** e utilizza quanto segue: <br/>  Se sono disponibili **da 1 a 25 licenze** vengono assegnati **5** numeri di telefono. <br/>  Se sono disponibili **da 26 a 49 licenze** vengono assegnati **10** numeri di telefono. <br/>  Se sono disponibili **da 50 a 99 licenze** vengono assegnati **20** numeri di telefono. <br/>  Se sono disponibili **da 100 a 149 licenze** vengono assegnati **30** numeri di telefono. <br/>  Se sono disponibili **da 150 a 199 licenze** vengono assegnati **40** numeri di telefono. <br/>  Se sono disponibili **da 200 a 499 licenze** vengono assegnati **65** numeri di telefono. <br/>  Se sono disponibili **da 500 a 749 licenze** vengono assegnati **90** numeri di telefono. <br/>  Se sono disponibili **da 750 a 999 licenze** vengono assegnati **110** numeri di telefono. <br/>  Se sono disponibili **da 1000 a 1249 licenze** vengono assegnati **125** numeri di telefono. <br/>  Se sono disponibili **da 1.250 a 1.499 licenze** vengono assegnati **135** numeri di telefono. <br/>  Se sono disponibili **da 1500 a 1999 licenze** vengono assegnati **160** numeri di telefono. <br/>  Se sono disponibili **da 2000 a 2999 licenze** vengono assegnati **210** numeri di telefono. <br/>  Se sono disponibili **da 3000 a 6999 licenze** vengono assegnati **420** numeri di telefono. <br/>  Se sono disponibili **da 7000 a 9999 licenze** vengono assegnati **500** numeri di telefono. <br/>  Se sono disponibili **da 10.000 a 14.999 licenze** vengono assegnati **600** numeri di telefono. <br/>  Se sono disponibili **da 15.000 a 19.999 licenze** vengono assegnati **700** numeri di telefono. <br/>  Se sono disponibili **da 20.000 a 49.999 licenze** vengono assegnati **1000** numeri di telefono. <br/>  Se sono disponibili **più di 50.000 licenze** vengono assegnati **1500** numeri di telefono.  |Se hai un totale di **51** licenze sistema **telefonico** e **audioconferenza** , puoi ottenere **20** numeri di servizio a pagamento.  |
 |Numero di servizio gratuito   | Il numero di numeri di telefono è uguale al numero totale di licenze **Sistema telefonico** e **Audioconferenza** e utilizza quanto segue: <br/>  Se sono disponibili **da 1 a 25 licenze** vengono assegnati **5** numeri di telefono. <br/>  Se sono disponibili **da 26 a 49 licenze** vengono assegnati **10** numeri di telefono. <br/>  Se sono disponibili **da 50 a 99 licenze** vengono assegnati **20** numeri di telefono. <br/>  Se sono disponibili **da 100 a 149 licenze** vengono assegnati **30** numeri di telefono. <br/>  Se sono disponibili **da 150 a 199 licenze** vengono assegnati **40** numeri di telefono. <br/>  Se sono disponibili **da 200 a 499 licenze** vengono assegnati **65** numeri di telefono. <br/>  Se sono disponibili **da 500 a 749 licenze** vengono assegnati **90** numeri di telefono. <br/>  Se sono disponibili **da 750 a 999 licenze** vengono assegnati **110** numeri di telefono. <br/>  Se sono disponibili **da 1000 a 1249 licenze** vengono assegnati **125** numeri di telefono. <br/>  Se sono disponibili **da 1.250 a 1.499 licenze** vengono assegnati **135** numeri di telefono. <br/>  Se sono disponibili **da 1500 a 1999 licenze** vengono assegnati **160** numeri di telefono. <br/>  Se sono disponibili **da 2000 a 2999 licenze** vengono assegnati **210** numeri di telefono. <br/>  Se sono disponibili **da 3000 a 6999 licenze** vengono assegnati **420** numeri di telefono. <br/>  Se sono disponibili **da 7000 a 9999 licenze** vengono assegnati **500** numeri di telefono. <br/>  Se sono disponibili **da 10.000 a 14.999 licenze** vengono assegnati **600** numeri di telefono. <br/>  Se sono disponibili **da 15.000 a 19.999 licenze** vengono assegnati **700** numeri di telefono. <br/>  Se sono disponibili **da 20.000 a 49.999 licenze** vengono assegnati **1000** numeri di telefono. <br/>  Se sono disponibili **più di 50.000 licenze** vengono assegnati **1500** numeri di telefono.  |Se disponi di un totale di **1001** licenze sistema **telefonico** e **audioconferenza** , puoi ottenere **125** numeri di servizio gratuiti. <br/> <br/> **Importante:** la [fatturazione dei Crediti comunicazioni](set-up-communications-credits-for-your-organization.md) è obbligatoria per prenotare e utilizzare numeri verdi.          |
 
 > [!NOTE]
 > Se hai bisogno di ottenere più numeri di telefono, contatta il [Centro assistenza numeri di telefono](https://pstnsd.powerappsportals.com/).
   
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-articles"></a>Articoli correlati
 
 [Gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-landing-page.md)
 

@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Scopri come ottenere numeri nuovi, trasferiti o trasferire numeri esistenti per Teams e come mostrare le modifiche agli utenti.
-ms.openlocfilehash: 18dd5a84110dc25721d9f8c027dffe861d29cbd1
-ms.sourcegitcommit: d87991ed2d3e4d70edb048378763a17ff689b710
+ms.openlocfilehash: b0ed990cd16a7e4878c2819a95fac29f46a9d770
+ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66682545"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67156544"
 ---
 # <a name="getting-phone-numbers-for-your-users"></a>Recupero di numeri di telefono per gli utenti
 
@@ -42,31 +42,34 @@ Esistono tre modi per ottenere i numeri utente:
   
 > [!NOTE]
 > Se hai bisogno di aiuto per configurare i numeri di telefono per la tua organizzazione, [contatta il contatto di supporto per i prodotti per le aziende - Amministrazione Guida](/microsoft-365/admin/contact-support-for-business-products).
+
 ## <a name="get-new-phone-numbers-for-your-users"></a>Ottenere numeri di telefono per gli utenti
 
- **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+**Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 Per apportare queste modifiche, è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](./using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
 1. Passare a Microsoft Teams Amministrazione Center.
 
-2. Nel riquadro di spostamento sinistro passa a **Numeri di telefono** **vocale** >  e quindi fai clic su **Aggiungi**.
+2. Nel riquadro di spostamento sinistro vai a **Numeri di telefono** **vocale** >  e quindi seleziona **Aggiungi**.
 
 3. Immettere un nome per l'ordine e aggiungere una descrizione.
 
 4. Nella pagina Posizione e quantità eseguire le operazioni seguenti:
     1. In **Paese o area geografica** selezionare un paese o un'area geografica.
     2. In **Tipo di numero** selezionare **Utente (abbonato).**
-    3. In **Posizione** seleziona una posizione. Se è necessario creare una nuova posizione, fare clic su **Aggiungi una posizione**.
+    3. In **Posizione** seleziona una posizione. Se devi creare una nuova posizione, seleziona **Aggiungi una posizione**.
     4. In **Prefisso** selezionare un prefisso.
-    5. In **Quantità** immettere il numero di numeri desiderato per l'organizzazione e quindi fare clic su **Avanti** per selezionare i numeri.
+    5. In **Quantità** immettere il numero di numeri desiderato per l'organizzazione e quindi selezionare **Avanti** per selezionare i numeri.
 
 5. Selezionare i numeri desiderati. Hai 10 minuti di tempo per selezionare i numeri di telefono ed effettuare l'ordine. Se si impiegano più di 10 minuti, i numeri di telefono verranno restituiti nel pool di numeri.
 
-6. Quando sei pronto per effettuare l'ordine, fai clic su **Effettua ordine**.
+6. Quando sei pronto per effettuare l'ordine, seleziona **Effettua ordine**.
 
     > [!IMPORTANT]
-    > Il numero di numeri di telefono per gli utenti (abbonati) è uguale al numero totale di licenze per **Piano per chiamate nazionali** e **Piano per chiamate internazionali** assegnate moltiplicato per 1,1 più 10 numeri di telefono aggiuntivi. Ad esempio, se hai 50 utenti in totale con un Piano per chiamate nazionali e/o Un Piano per chiamate internazionali, puoi acquisire **65** numeri di telefono **(50 x 1,1 + 10).For example, you can acquire 65 phone numbers (50 x 1.1 + 10)**. Per informazioni dettagliate, vedi [Quanti numeri di telefono puoi ottenere?](./how-many-phone-numbers-can-you-get.md). Se hai bisogno di ottenere più numeri di telefono, [contatta il contatto di supporto tecnico per i prodotti per le aziende - Amministrazione Guida](/microsoft-365/admin/contact-support-for-business-products).
+    > Il numero di numeri di telefono per gli utenti (abbonati) è uguale al numero totale di licenze per **Piano per chiamate nazionali** e **Piano per chiamate internazionali** assegnate moltiplicato per 1,1 più 10 numeri di telefono aggiuntivi. Ad esempio, se hai 50 utenti in totale con un Piano per chiamate nazionali e/o Un Piano per chiamate internazionali, puoi acquisire **65** numeri di telefono **(50 x 1,1 + 10).For example, you can acquire 65 phone numbers (50 x 1.1 + 10)**. Se disponi di un piano per chiamate con pagamento in base al consumo, puoi acquisire solo 1 numero di telefono per licenza assegnata.
+    >
+    > Per informazioni dettagliate, vedi [Quanti numeri di telefono puoi ottenere?](./how-many-phone-numbers-can-you-get.md). Se hai bisogno di ottenere più numeri di telefono, [contatta il contatto di supporto tecnico per i prodotti per le aziende - Amministrazione Guida](/microsoft-365/admin/contact-support-for-business-products).
   
 ## <a name="port-or-transfer-phone-numbers-from-your-service-provider-or-phone-carrier"></a>Trasferire numeri di telefono dal provider di servizi o dal gestore di telefonia
   
@@ -76,7 +79,7 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 
 ## <a name="view-the-phone-numbers-for-your-organization"></a>Visualizzare i numeri di telefono per l'organizzazione
 
- **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
+**Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione passare a **Numeri di telefono** **vocale** >  per visualizzare i numeri dell'organizzazione, tra cui posizione, tipo di numero e informazioni sullo stato.
   
@@ -87,7 +90,7 @@ Dopo aver ottenuto i numeri di telefono, dovrai assegnare un numero a ogni utent
 > [!NOTE]
 > Se hai bisogno di ottenere più numeri di telefono, [contatta il contatto di supporto tecnico per i prodotti per le aziende - Amministrazione Guida](/microsoft-365/admin/contact-support-for-business-products).
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-articles"></a>Articoli correlati
 
 [Domande comuni sul trasferimento dei numeri di telefono](./phone-number-calling-plans/port-order-overview.md)
 
