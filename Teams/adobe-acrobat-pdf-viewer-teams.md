@@ -16,42 +16,37 @@ description: Informazioni su come impostare Adobe Acrobat come visualizzatore PD
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: fd74ece7ba59b437fcd8b47bd184cdcfd150438d
-ms.sourcegitcommit: 4708fc1c2b8523e1074aed06b1dd6950c039f200
+ms.openlocfilehash: 913081ee0efc87d66ed304f3de5e9f00b69232fa
+ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67002339"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67156744"
 ---
-# <a name="adobe-acrobat-as-a-default-pdf-viewer-in-teams"></a>Adobe Acrobat come visualizzatore pdf predefinito in Teams
+# <a name="adobe-acrobat-as-a-default-pdf-viewer-in-microsoft-teams"></a>Adobe Acrobat come visualizzatore pdf predefinito in Microsoft Teams
 
 > [!NOTE]
-> Adobe Acrobat come esperienza PDF predefinita in Teams è attualmente disponibile solo in anteprima pubblica. Prima di usare questa caratteristica, [abilitare l'anteprima pubblica](public-preview-doc-updates.md#enable-public-preview) per il tenant. Assicurarsi che gli utenti finali modifichino la versione client di Teams in anteprima pubblica per provare Adobe Acrobat come visualizzatore PDF in Teams.
+> Adobe Acrobat come esperienza PDF predefinita in Microsoft Teams è attualmente disponibile solo in anteprima pubblica. Per usare questa funzionalità, gli amministratori devono [abilitare l'anteprima pubblica](public-preview-doc-updates.md#enable-public-preview) per il proprio tenant e assicurarsi che gli utenti finali cambino la versione client di Teams in anteprima pubblica.
 
-Gli amministratori possono impostare Adobe Acrobat come app predefinita per visualizzare e modificare i file PDF in Microsoft Teams. Gli utenti finali non hanno bisogno di un abbonamento Adobe Acrobat o di un Adobe ID per visualizzare, cercare, commentare e annotare i file PDF.
+Gli amministratori possono impostare Adobe Acrobat come app predefinita per visualizzare e modificare i file PDF in Microsoft Teams. Gli utenti finali possono visualizzare, cercare, commentare e annotare i file PDF senza un abbonamento Adobe Acrobat o un Adobe ID.
 
 ## <a name="set-up-adobe-acrobat-app"></a>Configurare l'app Adobe Acrobat
 
-Per configurare Adobe Acrobat come app predefinita per la visualizzazione dei file PDF, attenersi alla seguente procedura:
+Prima di configurare l'app, assicurarsi di consentire l'uso delle app nel tenant, di aver consentito in modo specifico l'app Adobe Acrobat e che i criteri di autorizzazione dell'app lo consentano. Per configurare Adobe Acrobat come app predefinita per i file PDF, seguire questa procedura:
 
 1. Accedere all'interfaccia di amministrazione di Teams e passare **all'app** >  Teams **[Gestisci app](https://admin.teams.microsoft.com/policies/manage-apps)**.
 
-1. Cercare l'app Adobe Acrobat e selezionare **l'app Adobe Acrobat** .
-
-   > [!NOTE]
-   >
-   > * Assicurati che lo stato dell'app Adobe Acrobat sia impostato su **Consentito**. Altrimenti, abilita l'interruttore **Consentito** .
-   > * Se è presente un'impostazione di amministratore esistente nei criteri di autorizzazione dell'app o nelle impostazioni dell'app a livello di organizzazione che ha bloccato l'app, assicurarsi di consentire l'app nei criteri [di autorizzazione dell'app](teams-app-permission-policies.md) o nelle [impostazioni dell'app a livello di organizzazione](teams-app-permission-policies.md).
+1. Cerca l'app Adobe Acrobat e selezionala.
 
 1. Nella scheda **Autorizzazioni** selezionare **Rivedi autorizzazione**.
 
-1. Selezionare **Accetta**.
-
    :::image type="content" source="media/permission-policy.png" alt-text="Screenshot dell'autorizzazione dell'app nell'interfaccia di amministrazione di Teams." lightbox="media/teams-app-adobe-acrobat-permission.png":::
+
+1. Selezionare **Accetta**.
 
 ## <a name="install-adobe-acrobat-app-for-all-users"></a>Installare l'app Adobe Acrobat per tutti gli utenti
 
-È possibile utilizzare il criterio globale (impostazione predefinita a livello di organizzazione) per assegnare e rendere l'app Adobe Acrobat disponibile per tutti gli utenti. Questo passaggio attiva un segnale in Teams per impostare l'app come gestore di file predefinito per i file PDF. Per assegnare l'app Adobe Acrobat a tutti gli utenti, attenersi alla seguente procedura:
+Per assegnare e rendere l'app Adobe Acrobat disponibile per tutti gli utenti, attenersi alla seguente procedura:
 
 1. Nell'interfaccia di amministrazione di Teams passare a [**Criteri di configurazione**](https://admin.teams.microsoft.com/policies/app-setup) **delle app** >  di Teams.
 
@@ -67,27 +62,17 @@ Per configurare Adobe Acrobat come app predefinita per la visualizzazione dei fi
 
 1. Selezionare **Salva**.
 
-Dopo aver selezionato Salva, l'app Adobe Acrobat è configurata con Teams per aprire tutti i file PDF nell'app Adobe Acrobat dall'app chat, canale o file.
+Dopo aver selezionato Salva, Teams usa l'app Adobe Acrobat come gestore di file predefinito per i file PDF.
 
-Se si vuole consentire in modo selettivo l'app Adobe Acrobat per alcuni utenti specifici o per un gruppo, è possibile assegnare criteri di [autorizzazione per le app personalizzate](teams-app-permission-policies.md).
+Se si vuole consentire in modo selettivo l'app Adobe Acrobat per alcuni utenti o per un gruppo, è possibile assegnare criteri di [autorizzazione dell'app personalizzati](teams-app-permission-policies.md).
 
 Conoscere le informazioni seguenti su questa funzionalità:
 
 * Dopo aver configurato i criteri, in genere sono necessarie [alcune ore](teams-app-setup-policies.md) prima che l'app sia disponibile per gli utenti.
-Dopo aver configurato i criteri, l'app installata sarà disponibile per gli utenti dopo alcune ore.
-* La visualizzazione dei file PDF aggiunti nei canali come scheda e la visualizzazione dei file PDF nell'app attività continua a essere basata sull'esperienza nativa di Teams.
+* Dopo aver configurato i criteri, l'app installata sarà disponibile per gli utenti dopo alcune ore.
+* La visualizzazione dei file PDF aggiunti nei canali come scheda e la visualizzazione dei file PDF nell'app Attività continua a essere basata sull'esperienza nativa di Teams.
 * Adobe Acrobat come visualizzatore PDF predefinito in Teams funziona solo su client desktop e Web. Non è supportato nel client per dispositivi mobili.
-* Gli utenti hanno bisogno di un piano Adobe Acrobat per usare strumenti premium come Esporta PDF, Organizza pagine, Combina file, Comprimi PDF e Proteggi PDF.
-
-> [!NOTE]
-> Dal client desktop di Teams, se si verificano problemi durante l'accesso all'app Adobe Acrobat, è possibile aprire Teams nel browser ed effettuare l'accesso. Si tratta di problemi noti che saranno risolti entro settembre 2022.
-
-## <a name="faqs"></a>Faq
-
-* Come rimuovere l'app Adobe Acrobat dal client teams?
-  
-  Gli utenti finali possono disinstallare l'app dal client Teams e l'amministratore può rimuovere l'app Adobe Acrobat dai criteri di configurazione.
-
-* Gli amministratori possono bloccare l'app Adobe Acrobat una volta impostata come gestore predefinito?
-  
-  Sì, ma prima che l'amministratore blocchi l'app, rimuovere i criteri di configurazione per assicurarsi che gli utenti finali vengano ripristinati in modo sicuro nell'esperienza predefinita di Teams.
+* Gli utenti hanno bisogno di un piano Adobe Acrobat per usare gli strumenti premium come Esporta PDF, Organizza pagine, Combina file, Comprimi PDF e Proteggi PDF.
+* Per disinstallare l'app, gli utenti finali possono rimuovere l'app dal client Teams. Amministrazione possibile rimuovere l'app Adobe Acrobat usando i criteri di configurazione.
+* Se blocchi l'app Adobe Acrobat, rimuovila dai criteri di configurazione. Garantisce che l'esperienza utente finale venga ripristinata usando il visualizzatore di file PDF nativo.
+* Dal client desktop di Teams, se si verificano problemi durante l'accesso all'app Adobe Acrobat, usare Teams nel browser per accedere.

@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Scopri quali periferiche e dispositivi USB (ad esempio cuffie, altoparlanti, webcam e monitor) sono certificati per Microsoft Teams.
-ms.openlocfilehash: 63813ca51626ae16903b57e56de9b47345f44c10
-ms.sourcegitcommit: 911fdb6df0511b4a4d9e4705799877045a09113c
+ms.openlocfilehash: 003a532331ad7a1c3e88addad3f2f73a8b5b1f61
+ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66972781"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67156944"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -44,7 +44,7 @@ Gli utenti non devono sostituire i dispositivi certificati in precedenza quando 
 
 - **Periferiche audio certificate Bluetooth native**  La maggior parte degli auricolari e degli altoparlanti Bluetooth certificati per Microsoft Teams è progettata per essere utilizzata con un adattatore USB per la connettività a PC e host Mac. Molti utenti hanno chiesto l'opzione per associare direttamente il dispositivo all'host, perché non dispongono di porte USB sufficienti o non vogliono ricordarsi di portare l'adattatore USB con loro quando lavorano in luoghi diversi.
 
-    I dispositivi certificati Bluetooth nativi, inclusi auricolari e vivavoci, sono supportati nei PC Windows (MacOS potrebbe essere supportato in futuro). I dispositivi sono testati per prestazioni audio, controllo delle chiamate e integrazione dei pulsanti di Teams, sia con che senza l'uso di un adattatore USB.
+    I dispositivi certificati Per Bluetooth nativi, inclusi auricolari e vivavoci, sono supportati nei PC Windows (macOS potrebbe essere supportato in futuro). I dispositivi sono testati per prestazioni audio, controllo delle chiamate e integrazione dei pulsanti di Teams, sia con che senza l'uso di un adattatore USB.
 
     Le prestazioni in modalità Bluetooth nativa sono interessate dalla radio Bluetooth nel PC host, quindi consigliamo di installare gli ultimi aggiornamenti del firmware per i dispositivi e la radio Bluetooth. Una piccola parte di utenti potrebbe dover continuare a usare l'adattatore USB, ad esempio quando lavora in un ambiente radio ad alta densità, se il Bluetooth del PC è usato in modo pesante da più dispositivi associati o con determinati PC dotati di radio Bluetooth di scarsa qualità.
 
@@ -85,15 +85,15 @@ Se sei un produttore e vuoi partecipare al programma di certificazione, vedi [Co
 > [!NOTE]
 > Il formato della data è MMDDYYYY.
 
-| Produttore        | Modello                                                     | Qualificato      | Programma certificato                                      |
+| Fabbricante        | Modello                                                     | Qualificato      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
 |Logi                 |Dock Speakerphone                                          |7/13/2022       |Certificato per Microsoft Teams                           |
-|Dell                 |Fotocamera WB5023                                              |6/29/2022       |Certificato per Microsoft Teams                           |
+|Valletta                 |Fotocamera WB5023                                              |6/29/2022       |Certificato per Microsoft Teams                           |
 |EPOS                 |Headset ADAPT 560 II                                       |6/22/2022       |Certificato per Microsoft Teams                           |
 |EPOS                 |Cuffie serie C10/C20/C50                                |5/31/2022       |Certificato per Microsoft Teams                           |
 |Jabra                |Engage55 Mono/Stereo Headset                               |5/25/2022       |Certificato per Microsoft Teams                           |
 |EPOS                 |EXPAND 40T Speakerphone                                    |5/24/2022       |Certificato per Microsoft Teams                           | 
-|Dell                 |U3223QZ Monitor                                            |5/24/2022       |Certificato per Microsoft Teams                           |
+|Valletta                 |U3223QZ Monitor                                            |5/24/2022       |Certificato per Microsoft Teams                           |
 |Poli                 |Studio P21 Monitor                                         |5/12/2022       |Certificato per Microsoft Teams                           |
 |Yealink              |UH38 Headset                                               |5/2/2022        |Certificato per Microsoft Teams                           |   
 |Yealink              |BH72 Headset                                               |5/2/2022        |Certificato per Microsoft Teams                           |
@@ -102,8 +102,9 @@ Se sei un produttore e vuoi partecipare al programma di certificazione, vedi [Co
 |EPOS                 |ADAPT 661                                                  |3/11/2022       |Certificato per Microsoft Teams                           |
 |EPOS                 |ADAPT 461T                                                 |3/11/2022       |Certificato per Microsoft Teams                           |
 |EPOS                 |ADAPT 361                                                  |3/11/2022       |Certificato per Microsoft Teams                           |
-|Dell                 |Speakerphone SP3022                                        |2/7/2022        |Certificato per Microsoft Teams                           |
-|Dell                 |Slim Conferencing Soundbar SB522A                          |1/25/2022       |Certificato per Microsoft Teams                           | 
+|Valletta                 |Speakerphone SP3022                                        |2/7/2022        |Certificato per Microsoft Teams                           |
+|Valletta                 |Slim Conferencing Soundbar SB522A                          |1/25/2022       |Certificato per Microsoft Teams                           |
+|Poli                 |Sincronizzazione 10                                                    |1/18/2022       |Certificato per Microsoft Teams                           |
 |Lenovo               |Go Wired ANC Headset                                       |1/12/2022       |Certificato per Microsoft Teams                           |
 |Lenovo               |Passa al vivavoce cablato                                      |1/10/2022       |Certificato per Microsoft Teams                           |
 |EPOS                 |IMPATTO SDW 5066T                                           |12/1/2021       |Certificato per Microsoft Teams                           |
@@ -122,15 +123,15 @@ Se sei un produttore e vuoi partecipare al programma di certificazione, vedi [Co
 |Poli                 |Voyager 4320                                               |8/6/2021        |Certificato per Microsoft Teams                           |
 |Poli                 |Voyager 4310                                               |8/6/2021        |Certificato per Microsoft Teams                           |
 |EPOS/Sennheiser      |ADAPT 160T ANC                                             |6/24/2021       |Certificato per Microsoft Teams                           |
-|Dell                 |Ultrasharp Webcam WB7022                                   |6/16/2021       |Certificato per Microsoft Teams                           |
-|NEC                  |Display per la collaborazione windows WD551                        |5/21/2021       |Certificato per Microsoft Teams                           |
+|Valletta                 |Ultrasharp Webcam WB7022                                   |6/16/2021       |Certificato per Microsoft Teams                           |
+|Nec                  |Display per la collaborazione windows WD551                        |5/21/2021       |Certificato per Microsoft Teams                           |
 |Poli                 |EncorePro 520 e DA85-M                                   |4/26/2021       |Certificato per Microsoft Teams                           |
 |Poli                 |EncorePro 510 e DA85-M                                   |4/26/2021       |Certificato per Microsoft Teams                           |
 |Poli                 |EncorePro 525-M                                            |4/26/2021       |Certificato per Microsoft Teams                           |
 |Poli                 |EncorePro 515-M                                            |4/26/2021       |Certificato per Microsoft Teams                           |
-|Dell                 |Cuffie ANC wireless WL7022 Premier                        |4/22/2021       |Certificato per Microsoft Teams                           |
-|Dell                 |Cuffie wireless WL5022 Pro                                |4/22/2021       |Certificato per Microsoft Teams                           |
-|Dell                 |Cuffie cablate WH3022 Pro                                   |4/22/2021       |Certificato per Microsoft Teams                           |
+|Valletta                 |Cuffie ANC wireless WL7022 Premier                        |4/22/2021       |Certificato per Microsoft Teams                           |
+|Valletta                 |Cuffie wireless WL5022 Pro                                |4/22/2021       |Certificato per Microsoft Teams                           |
+|Valletta                 |Cuffie cablate WH3022 Pro                                   |4/22/2021       |Certificato per Microsoft Teams                           |
 |Logitech             |C920e Webcam                                               |4/22/2021       |Certificato per Microsoft Teams                           |
 |Poli                 |Studio P5 Webcam                                           |4/22/2021       |Certificato per Microsoft Teams                           |
 |Jabra                |Biz 2400 II                                                |4/22/2021       |Skype for Business con aggiornamento a Microsoft Teams      |
@@ -154,16 +155,16 @@ Se sei un produttore e vuoi partecipare al programma di certificazione, vedi [Co
 |Yealink              |Visore DECT WH63                                          |12/23/2020      |Certificato per Microsoft Teams                           |
 |Yealink              |Cuffie DECT dual/mono WH62                                |12/23/2020      |Certificato per Microsoft Teams                           |
 |EPOS/Sennheiser      |Adattatore cuffie serie 100                                  |12/22/2020      |Certificato per Microsoft Teams                           |
-|Dell                 |Cuffie stereo Pro - UC350                                 |12/21/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
-|Dell                 |Cuffie stereo Pro - UC150                                 |12/21/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
+|Valletta                 |Cuffie stereo Pro - UC350                                 |12/21/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
+|Valletta                 |Cuffie stereo Pro - UC150                                 |12/21/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
 |Lenovo               |Cuffie stereo VoIP cablate Pro                              |12/21/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
 |Poli                 |Savi Office 7320                                           |12/18/2020      |Certificato per Microsoft Teams                           |
 |Poli                 |Savi Office 7310                                           |12/18/2020      |Certificato per Microsoft Teams                           |
 |Jabra                |Cuffie Evolve 75e                                         |12/16/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
 |Jabra                |Visore VR Evolve 65e                                         |12/16/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
-|Dell                 |C3422WE Monitor                                            |12/11/2020      |Certificato per Microsoft Teams                           |
-|Dell                 |C2722DE Monitor                                            |12/11/2020      |Certificato per Microsoft Teams                           |
-|Dell                 |C2422HE Monitor                                            |12/11/2020      |Certificato per Microsoft Teams                           |
+|Valletta                 |C3422WE Monitor                                            |12/11/2020      |Certificato per Microsoft Teams                           |
+|Valletta                 |C2722DE Monitor                                            |12/11/2020      |Certificato per Microsoft Teams                           |
+|Valletta                 |C2422HE Monitor                                            |12/11/2020      |Certificato per Microsoft Teams                           |
 |Poli                 |Sincronizza 20 + vivavoce con l'adattatore USB Poly BT600          |11/9/2020       |Certificato per Microsoft Teams                           |
 |Poli                 |Sincronizzare 20 vivavoce                                       |11/9/2020       |Certificato per Microsoft Teams                           |
 |Jabra                |Visore VR Da 65t Evolve                                         |10/31/2020      |Skype for Business con aggiornamento a Microsoft Teams      |
@@ -232,7 +233,7 @@ Se sei un produttore e vuoi partecipare al programma di certificazione, vedi [Co
 | Poli                | Blackwire 3310-M                                          | 03/05/2020     | Certificato per Microsoft Teams                          |
 | Poli                | Blackwire 3315-M                                          | 03/03/2020     | Certificato per Microsoft Teams                          |
 | Poli                | Blackwire 3320-M                                          | 03/05/2020     | Certificato per Microsoft Teams                          |
-| Poli                | Blackwire 3325-M                                          | 03/05/2020     | Certificato per Microsoft Teams                          |
+| poli                | Blackwire 3325-M                                          | 03/05/2020     | Certificato per Microsoft Teams                          |
 | Poli                | Calisto 3200 M                                            | 01/27/2020     | Certificato per Microsoft Teams                          |
 | Crestron            | CCS-UCA-MIC                                               | 12/18/2019     | Certificato per Microsoft Teams                          |
 | Sennheiser          | SP 30T                                                    | 12/05/2019     | Certificato per Microsoft Teams                          |
