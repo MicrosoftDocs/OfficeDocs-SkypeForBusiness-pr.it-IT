@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: Amministrazione possibile leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 07b4661df5df7ac766c17a07c2bdd940b3d2cb6b
-ms.sourcegitcommit: 2871c05e00458a0cc76d919ff822b0b354bd1f72
+ms.openlocfilehash: b5630636ce5dc8f26d430e6d883bff0dc2bcc71f
+ms.sourcegitcommit: a64574da14969a33a77c7d979ffde452b5b3a531
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66810108"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175850"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
@@ -39,6 +39,7 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 
 |Rilascio |Pubblicato su <br/> Microsoft Store |
 |--- |--- |
+|4.13.132.0 |8/2/2022 |
 |4.12.139.0 |7/14/2022 |
 |4.12.138.0 |5/26/2022 |
 |4.12.126.0 |4/27/2022 |
@@ -92,6 +93,29 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 |RTM (1.0.8) |12/7/2016 |
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Microsoft Teams Rooms introduzione delle funzionalità e risoluzione dei problemi
+
+### <a name="4131320-822022"></a>4.13.132.0 (8/2/2022)
+
+Introdotto in questo aggiornamento:
+
+- Partecipare a una riunione di Teams usando l'ID riunione
+- Crittografia end-to-end per le chiamate teams uno-a-uno<sup>1</sup> 
+- Eliminazione del rumore nelle riunioni<sup>di Teams 2</sup>
+- Aggiornamento dell'esperienza di condivisione nell'area di notifica
+- Attivare e disattivare l'audio dello stato del video della chat room
+- impostazione Amministrazione per il layout solo del contenuto predefinita  
+- L'autenticazione moderna è attivata per impostazione predefinita
+
+ <sup>1</sup> Prima di poter attivare la crittografia end-to-end per le chiamate da un dispositivo Teams Room, è necessario configurare i criteri per l'account utente del dispositivo. È possibile aggiornare i criteri dell'utente dall'interfaccia di amministrazione di Teams o usando PowerShell di Teams. Per altre informazioni, vedere [Configurare i criteri per l'account utente di Teams Room.](../teams-end-to-end-encryption.md)
+
+ <sup>2</sup> Teams Rooms aggiunto il supporto per l'eliminazione del rumore nella versione 4.12 con override amministratore.
+
+> [!IMPORTANT]
+> Con questo aggiornamento, i nuovi dispositivi Teams Rooms ora usano l'autenticazione moderna per impostazione predefinita quando si connettono a Microsoft Teams e Exchange Online.
+>
+> È consigliabile testare i dispositivi Teams Rooms prima della fine di agosto attivando l'autenticazione moderna per gli account della chat room.
+>
+> Questa modifica aiuta a prepararsi per il prossimo aggiornamento di Exchange Online per disattivare l'autenticazione di base a partire dal 1° ottobre 2022. Per altre informazioni, vedere [Deprecazione dell'autenticazione di base in Exchange Online - Aggiornamento di maggio 2022](https://techcommunity.microsoft.com/t5/exchange-team-blog/basic-authentication-deprecation-in-exchange-online-may-2022/ba-p/3301866).  
 
 ### <a name="4121390-7142022"></a>4.12.139.0 (7/14/2022)
 

@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Scopri quali periferiche e dispositivi USB (ad esempio cuffie, altoparlanti, webcam e monitor) sono certificati per Microsoft Teams.
-ms.openlocfilehash: 003a532331ad7a1c3e88addad3f2f73a8b5b1f61
-ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
+ms.openlocfilehash: 3df5c2e8a9b3ce27967a8b061c444daccd4cace5
+ms.sourcegitcommit: a64574da14969a33a77c7d979ffde452b5b3a531
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/02/2022
-ms.locfileid: "67156944"
+ms.locfileid: "67176090"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -80,13 +80,15 @@ Se sei un produttore e vuoi partecipare al programma di certificazione, vedi [Co
 
 ## <a name="certified-devices"></a>Dispositivi certificati
 
-*Tabella aggiornata a luglio 2022*
+*Tabella aggiornata ad agosto 2022*
 
 > [!NOTE]
 > Il formato della data è MMDDYYYY.
 
 | Fabbricante        | Modello                                                     | Qualificato      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Jabra                |Engage 50 II                                               |7/29/2022       |Certificato per Microsoft Teams                           | 
+|Jabra                |Engage 40                                                  |7/29/2022       |Certificato per Microsoft Teams                           |
 |Logi                 |Dock Speakerphone                                          |7/13/2022       |Certificato per Microsoft Teams                           |
 |Valletta                 |Fotocamera WB5023                                              |6/29/2022       |Certificato per Microsoft Teams                           |
 |EPOS                 |Headset ADAPT 560 II                                       |6/22/2022       |Certificato per Microsoft Teams                           |

@@ -20,12 +20,12 @@ ms.localizationpriority: medium
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e gestire gli operatori automatici in Microsoft Teams.
-ms.openlocfilehash: 384c7aae5e11c938a6bf8ab5f82924d0379a83aa
-ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
+ms.openlocfilehash: e54ffdeac8db21ebcc6cc00f51893769e0d194bb
+ms.sourcegitcommit: a64574da14969a33a77c7d979ffde452b5b3a531
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616112"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67176100"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -33,16 +33,19 @@ Gli operatori automatici consentono alle persone di chiamare la tua organizzazio
 
 Assicurarsi di aver letto [Piano per gli operatori automatici e le code di chiamata di Teams](plan-auto-attendant-call-queue.md) e di aver seguito i [passaggi iniziali](plan-auto-attendant-call-queue.md#getting-started) prima di seguire le procedure in questo articolo.
 
-Gli operatori automatici possono indirizzare le chiamate, in base all'input dei chiamanti, a una delle seguenti destinazioni:
+Gli operatori automatici possono reindirizzare le chiamate, in base all'input dei chiamanti, a una delle seguenti destinazioni:
 
 - **Operatore** - l'operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. L'operatore può essere definito come una qualsiasi delle altre destinazioni in questo elenco.
 - **Persona dell'organizzazione** : una persona dell'organizzazione che può ricevere chiamate vocali. Questa persona può essere un utente online o un utente ospitato in locale usando Skype for Business Server.
 - **App vocale** : un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato all'operatore automatico o alla coda di chiamata quando si sceglie questa destinazione.
 - **Segreteria telefonica** : la cassetta postale vocale associata a un gruppo di Microsoft 365 specificata. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lascia un messaggio dopo il tono". richiesta di sistema.
   - In M365 Amministrazione Center abilitare l'opzione "Consenti agli utenti esterni all'organizzazione di inviare un messaggio di posta elettronica al team" per il gruppo di Microsoft 365 specificato
-- **Numero di telefono esterno** : qualsiasi numero di telefono. Vedere [i dettagli tecnici sul trasferimento esterno](create-a-phone-system-auto-attendant.md?tabs=additional-resources).
+- **Numero di telefono esterno** : qualsiasi numero di telefono. Vedere [i dettagli tecnici sul trasferimento esterno](create-a-phone-system-auto-attendant.md?tabs=general-info#external-phone-number-transfers---technical-details).
 - **Annuncio (file audio):** riprodurre un file audio. Messaggio di annuncio registrato che viene caricato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere di dimensioni superiori a 5 MB. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
 - **Annuncio (digitato):** digitare un messaggio. Testo che si desidera venga letto dal sistema. È possibile immettere fino a 1000 caratteri. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
+
+> [!NOTE]
+> Quando si reindirizzano le chiamate a una **Persona nell'organizzazione**, tale persona deve essere abilitata per la voce. Per informazioni dettagliate sull'abilitazione della voce, vedere [Assegnare licenze per i componenti aggiuntivi di Teams agli utenti](teams-add-on-licensing/assign-teams-add-on-licenses.md).
 
 La procedura per aggiungere un operatore automatico è:
 
@@ -227,12 +230,12 @@ In un ambiente ibrido Skype for Business, per trasferire una chiamata di operato
 
 Se sei un amministratore, puoi usare il seguente strumento di diagnostica per verificare che un operatore automatico sia in grado di ricevere chiamate:
 
-1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’interfaccia Amministrazione Microsoft 365.
+1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’Admin Centre di Microsoft 365.
 
    > [!div class="nextstepaction"]
    > [Eseguire test: Operatore automatico di Teams](https://aka.ms/TeamsAADiag)
 
-2. Nel riquadro Esegui diagnostica immettere l'account di risorsa nel campo **Nome utente o Posta elettronica** e quindi selezionare **Esegui test**.
+2. Nel riquadro Di diagnostica Esegui immettere l'account della risorsa nel campo **Nome utente o Email** e quindi selezionare **Esegui test**.
 
 3. I test identificheranno le configurazioni di tenant, criteri o account delle risorse che impediscono all'operatore automatico di ricevere chiamate e forniscono i passaggi per risolvere eventuali problemi identificati.
 
