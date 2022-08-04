@@ -117,8 +117,6 @@ items:
         items:
           - name: Formazione amministratori per Teams
             href: itadmin-readiness.md
-          - name: Sessioni Teams in Ignite
-            href: ignite-2020-landing-page.md
           - name: Formazione utenti finali per Teams
             href: instructor-led-training-teams-landing-page.yml
   - name: Aggiornamento da Skype for Business
