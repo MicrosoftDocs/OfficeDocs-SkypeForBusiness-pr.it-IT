@@ -9,41 +9,42 @@ ms.topic: article
 ms.service: msteams
 ms.collection:
 - M365-collaboration
+- Teams_ITAdmin_Rooms
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Informazioni sul supporto del ciclo di vita per Microsoft Teams Rooms, inclusa la struttura del supporto dinamico e le relative fasi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8348db0129b31920335351f2ebde4ed5db8a3d36
-ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
+ms.openlocfilehash: 8814ee9190ff6036345b4aa4607191d3486a369e
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65761068"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268211"
 ---
 # <a name="microsoft-teams-rooms-app-version-support"></a>Supporto della versione dell'app Microsoft Teams Rooms
  
-L'app Microsoft Teams Rooms riceve gli aggiornamenti tramite l'Windows Store. Microsoft Teams'app Room usa un ciclo di vita del prodotto sempre valido e in un determinato momento sono supportate solo la versione corrente e la versione più recente dell'app. L'app Microsoft Teams Room include una versione specifica dell'app desktop Teams modificata per l'uso della sala. L'app desktop Teams viene aggiornata ogni due settimane. Altre informazioni sul [processo di aggiornamento Teams](../teams-client-update.md). Ciò significa che Teams Rooms app versione 1 corrente può avere un massimo di sei Teams aggiornamenti dell'app desktop, quindi è consigliabile mantenere l'applicazione sala Teams aggiornata alla versione più recente dell'app Teams Rooms in qualsiasi momento. 
+L'app Microsoft Teams Rooms ottiene gli aggiornamenti tramite Windows Store. L'app Microsoft Teams Room usa un ciclo di vita del prodotto sempre valido e in un determinato momento sono supportate solo la versione più recente e quella più recente dell'app. L'app Microsoft Teams Room include una versione specifica dell'app desktop Teams che viene modificata per l'uso della sala. L'app desktop Teams viene aggiornata ogni due settimane. Altre informazioni sul [processo di aggiornamento di Teams](../teams-client-update.md). Ciò significa che Teams Rooms app versione 1 corrente può avere un massimo di sei aggiornamenti delle app desktop di Teams, quindi è consigliabile mantenere l'applicazione Teams Room aggiornata all'ultima versione dell'app Teams Rooms in qualsiasi momento. 
 
 La struttura di supporto per Teams Rooms è dinamica e dipende dalla disponibilità della versione più recente. Quando si verifica un difetto di codice in una versione dell'applicazione che non è la più recente, è necessario installare l'ultima versione per ricevere una correzione.
 
 Tutte le versioni sono elencate nelle [note sulla versione Microsoft Teams Rooms](rooms-release-note.md).
 
 > [!IMPORTANT]
-> Quando si installa un nuovo dispositivo fornito con una versione precedente dell'applicazione sala Teams, è consigliabile [aggiornare manualmente l'applicazione dopo aver impostato l'account](manual-update.md), prima di scaricare gli aggiornamenti Windows. In questo modo si garantisce la corretta versione del sistema operativo e Windows aggiornamenti vengono installati nel dispositivo.  
+> Quando si installa un nuovo dispositivo fornito con una versione precedente dell'applicazione sala teams, si consiglia di [aggiornare manualmente l'applicazione dopo aver impostato l'account](manual-update.md) , prima di scaricare gli aggiornamenti di Windows. In questo modo vengono installati la versione corretta del sistema operativo e gli aggiornamenti di Windows nel dispositivo.  
 
 ## <a name="windows-10-release-support"></a>supporto per i rilasci di Windows 10
 
 Microsoft Teams Rooms richiede gli SKU Windows 10 IoT Enterprise o Windows 10 Enterprise nelle opzioni di manutenzione di Semi-Annual Channel. Queste altre edizioni Windows 10 non sono supportate:
 
 - Windows 10 Enterprise edizioni LTSB (Long-Term Servicing Branch) /Long Term Servicing Channel (LTSC)
-- Windows 10 internet delle cose (IoT) Enterprise edizioni LTSB/LTSC
-- qualsiasi altra edizione di Windows come Windows 10 Pro o Home Edition
+- Windows 10 edizioni LTSB /LTSC Enterprise Internet of Things (IoT)
+- qualsiasi altra edizione di Windows, ad esempio Windows 10 Pro o Home Edition
 
-I nuovi aggiornamenti delle funzionalità di Windows 10 non sono disponibili immediatamente nei dispositivi Microsoft Teams Rooms. Si verifica un ritardo intenzionale fino a sei mesi o più dopo la data di disponibilità generale pubblicata nella pagina [Windows 10 informazioni sulla versione](/windows/release-information/). Questa volta viene utilizzata per convalidare la compatibilità delle versioni di Windows 10 per l'app Microsoft Teams Rooms, l'hardware del dispositivo e le periferiche audio video certificate. La convalida inizia e continua durante lo sviluppo attivo di ogni versione principale di Windows 10. È necessario più tempo per verificare che tutti i produttori di dispositivi abbiano creato immagini aggiornate per i propri dispositivi e che Microsoft certifica e test tali immagini. Durante il periodo di convalida, l'app Sala Microsoft Teams usa i [criteri di gruppo di Windows Update for Business per](/windows/deployment/update/waas-manage-updates-wufb) posticipare Windows 10 aggiornamenti delle funzionalità. Dopo aver rilevato e risolto eventuali problemi di compatibilità, il blocco viene rimosso tramite l'aggiornamento dei criteri di gruppo tramite una nuova versione dell'app in Windows Store. I dispositivi che eseguono l'app Microsoft Teams Rooms vengono aggiornati automaticamente a un rilascio Windows 10 appropriato durante il riavvio notturno della manutenzione. Viene resa disponibile una versione MSI per i clienti che devono gestire manualmente gli aggiornamenti.  
+I nuovi aggiornamenti delle funzionalità di Windows 10 non sono disponibili immediatamente nei dispositivi Microsoft Teams Rooms. Si verifica un ritardo intenzionale fino a sei mesi o più dopo la data di disponibilità generale pubblicata nella pagina [Windows 10 informazioni sulla versione](/windows/release-information/). Questa volta viene utilizzata per convalidare la compatibilità delle versioni di Windows 10 per l'app Microsoft Teams Rooms, l'hardware del dispositivo e le periferiche audio video certificate. La convalida inizia e continua durante lo sviluppo attivo di ogni versione principale di Windows 10. È necessario più tempo per verificare che tutti i produttori di dispositivi abbiano creato immagini aggiornate per i propri dispositivi e che Microsoft certifica e test tali immagini. Durante il periodo di convalida, l'app Chat room di Microsoft Teams usa i [criteri di gruppo di Windows Update for Business per](/windows/deployment/update/waas-manage-updates-wufb) posticipare Windows 10 aggiornamenti delle funzionalità. Dopo aver rilevato e risolto eventuali problemi di compatibilità, il blocco viene rimosso tramite l'aggiornamento dei criteri di gruppo tramite una nuova versione dell'app in Windows Store. I dispositivi che eseguono l'app Microsoft Teams Rooms vengono aggiornati automaticamente a un rilascio Windows 10 appropriato durante il riavvio notturno della manutenzione. Viene resa disponibile una versione MSI per i clienti che devono gestire manualmente gli aggiornamenti.  
 
 > [!IMPORTANT]
-> Durante il periodo di convalida, Microsoft Teams Rooms dispositivi **non** devono essere aggiornati con alcun mezzo alla prossima versione di Windows 10. Ciò include l'override dei criteri di gruppo in atto o l'uso di System Center o altri servizi di gestione dei dispositivi di terze parti. Uno di questi problemi può causare problemi per l'app Sala Microsoft Teams o lasciare i dispositivi inutilizzabili.  
+> Durante il periodo di convalida, Microsoft Teams Rooms dispositivi **non** devono essere aggiornati con alcun mezzo alla prossima versione di Windows 10. Ciò include l'override dei criteri di gruppo in atto o l'uso di System Center o di altri servizi di gestione dei dispositivi di terze parti. Uno di questi può causare problemi per l'app Microsoft Teams Room o lasciare i dispositivi inutilizzabili.  
 
 La tabella seguente mostra le versioni consigliate e supportate di Windows 10 verificate per supportare Microsoft Teams Rooms. Tutte le date sono elencate nel formato ISO 8601: AAAA-MM-GG.
 

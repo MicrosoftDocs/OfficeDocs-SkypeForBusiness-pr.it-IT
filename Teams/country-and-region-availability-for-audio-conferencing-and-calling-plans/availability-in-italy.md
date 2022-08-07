@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Questi sono i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Italia.
-ms.openlocfilehash: a9a7a67c46dd73e8f55d680e1cb05061d4641d3f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4388ead2eba8c698db3ab8991db8d19f32b5abbc
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58584770"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67271021"
 ---
 # <a name="availability-in-italy"></a>Disponibilità in Italia
 
@@ -59,8 +59,8 @@ Questi sono i servizi di Microsoft 365 e Office 365 per Skype for Business e Mic
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali da 120 minuti </li><li>Piano per chiamate nazionali da 240 minuti</li></li><li>Piano per chiamate nazionali da 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti per chiamate nazionali O 600 minuti per chiamate internazionali (a seconda di quale venga prima nel mese di calendario)</li></li></ul>[Tariffa trasparenza (IT)](https://www.microsoft.com/download/details.aspx?id=102426)<br>[Tariff Transparency (EN)](https://www.microsoft.com/download/details.aspx?id=102426) |
+|I Piani per chiamate sono disponibili per l'acquisto?  |Sì          |   
+|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li>Piano per chiamate pay-as-you-go </li><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 1200 minuti </li><li> Piano per chiamate internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti viene raggiunto per primo nel mese di calendario)</li></ul> [Tariffa trasparenza (IT)](https://www.microsoft.com/download/details.aspx?id=102426)<br>[Tariff Transparency (EN)](https://www.microsoft.com/download/details.aspx?id=102426) |
 |È possibile effettuare chiamate in uscita verso numeri premium?  <br/> | Al momento non supportato. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
 

@@ -24,19 +24,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Lettonia.
-ms.openlocfilehash: dac4a1294020414e01c901d2593180d16beacfb3
-ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
+description: Microsoft 365 e servizi di Office 365 per Skype for Business e Microsoft Teams disponibili per la Lettonia.
+ms.openlocfilehash: d67549ca300caa4be08825278e6dacf0320c3c26
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60733047"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67271861"
 ---
 # <a name="availability-in-latvia"></a>Disponibilità in Lettonia
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Lettonia.
+Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Lettonia.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -44,7 +44,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |I numeri di telefono non sono associati a una località o a una città specifica. Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).  <br/> |
-|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti di comunicazione  <br/> |
+|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti comunicazioni  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
 
@@ -59,8 +59,8 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti per chiamate nazionali O 600 minuti per chiamate internazionali (a seconda di quale venga prima nel mese di calendario)</li></li></ul>|
+|I Piani per chiamate sono disponibili per l'acquisto?  |Sì          |   
+|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li>Piano per chiamate pay-as-you-go </li><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 1200 minuti </li><li> Piano per chiamate internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti viene raggiunto per primo nel mese di calendario)</li></ul>|
 |È possibile effettuare chiamate in uscita verso numeri premium?  <br/> | Al momento non supportato. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | [A 196 paesi o aree geografiche](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
@@ -72,7 +72,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)) <br/> |
    
-Per ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere numeri di telefono di servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
+Per ottenere numeri verdi e a pagamento per audioconferenze, operatori automatici e code di chiamata, vedi [Recupero di numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

@@ -16,12 +16,14 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 46fc7550e5ee1e29b603d4124ffc5d6fe9b45951
-ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.collection:
+- M365-voice
+ms.openlocfilehash: 541bf822e357d1d679b377a5f5de130729eb9acd
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66789551"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67269021"
 ---
 # <a name="steering-committee"></a>Comitato di direzione
 
@@ -81,10 +83,10 @@ Ogni comitato di orientamento ha bisogno di una leadership forte e di ruoli e re
 
 Anche se ogni organizzazione e ogni team di progetto sono strutturati in modi leggermente diversi, la riunione del comitato di direzione non dovrebbe mai diventare solo un'altra riunione di supporto del progetto. Considerare gli obiettivi della riunione del comitato direttivo: è l'opportunità di mantenere il progetto in linea raccogliendo il supporto e la direzione dallo sponsor esecutivo o dalla leadership dell'esecutivo. Assicurarsi che tutti partecipino a questa riunione in modo che ci sia un messaggio diretto tra l'intero team di progetto e lo sponsor esecutivo o la dirigenza e non vi siano errori di comunicazione quando il messaggio viene inoltrato.
 
-Quando si pianifica una riunione di comitato, prendere in considerazione la frequenza del progetto e dell'organizzazione. Provare a pianificare settimanalmente o ogni due settimane, in base alle preferenze degli sponsor della direzione e al ritmo dell'organizzazione.
+Quando si pianifica una riunione di comitato, prendere in considerazione la frequenza del progetto e dell'organizzazione. Provare a programmarlo settimanalmente o ogni due settimane, in base alle preferenze degli sponsor della direzione e al ritmo dell'organizzazione.
 
 > [!TIP]
-> Se il proprio ambiente è in movimento, non lasciare passare troppo tempo tra una riunione e l'altra, il che può portare a problemi che potrebbero essere stati evitati dalle riunioni più frequentemente. Tuttavia, in un ambiente più lento, tenere una riunione ogni settimana può portare a fatica, il che potrebbe ridurre l'efficacia del comitato di direzione. Usare l'esperienza e il giudizio per determinare la frequenza appropriata e tenere sempre presente che è possibile modificare il pianificare. Non incontrarti solo per il bene della riunione.
+> Se il proprio ambiente è in movimento, non lasciare passare troppo tempo tra una riunione e l'altra, il che può portare a problemi che potrebbero essere stati evitati dalle riunioni più frequentemente. Tuttavia, in un ambiente più lento, tenere una riunione ogni settimana può portare a fatica, il che potrebbe ridurre l'efficacia del comitato di direzione. Usare l'esperienza e il giudizio per determinare la frequenza appropriata e tenere sempre presente che è possibile modificare la pianificazione. Non incontrarti solo per il bene della riunione.
 
 ### <a name="prepare-for-the-meeting"></a>Prepararsi per la riunione
 
@@ -140,7 +142,7 @@ Le risorse seguenti devono essere completate e incluse nella presentazione per l
 
         -   Lo stato di qualità dei siti abilitati di recente in base allo stato di avanzamento del progetto
 
-Successivamente, pianificare una chiamata per preparare la riunione del comitato direttivo. Questa chiamata dovrebbe includere solo i membri del team critici del team di progetto principale, ad esempio risorse di rete, desktop, operazioni o altri team che hanno elementi che verranno affrontati durante la riunione del comitato. I membri principali del team di progetto non devono mai essere presi alla sprovvista da qualsiasi materiale che si prevede di trattare durante la chiamata al comitato direttivo.
+Successivamente, pianifica una chiamata per preparare la riunione del comitato di direzione. Questa chiamata dovrebbe includere solo i membri del team critici del team di progetto principale, ad esempio risorse di rete, desktop, operazioni o altri team che hanno elementi che verranno affrontati durante la riunione del comitato. I membri principali del team di progetto non devono mai essere presi alla sprovvista da qualsiasi materiale che si prevede di trattare durante la chiamata al comitato direttivo.
 
 Questo invito preparatorio è un ottimo modo per eseguire la sincronizzazione prima della riunione del comitato di orientamento. È anche il momento di garantire che tutti gli elementi aperti, i disaccordi o le lagnanze tra il team di progetto vengano portati alla luce. Questo è pensato per favorire la comunicazione aperta e impedire a chiunque di essere spiacevolmente sorpreso durante la riunione.
 

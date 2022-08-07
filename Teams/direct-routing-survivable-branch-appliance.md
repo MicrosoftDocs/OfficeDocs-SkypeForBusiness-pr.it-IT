@@ -9,7 +9,6 @@ ms.service: msteams
 audience: admin
 ms.collection:
 - M365-voice
-- m365initiative-voice
 ms.reviewer: crowe
 search.appverid: MET150
 f1.keywords:
@@ -21,21 +20,21 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f087498d3a9d679ea10ba2c8cc9505ab772d85ab
-ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
+ms.openlocfilehash: cc250b0506614ef658ade9a491c5561a65b98800
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65823647"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67269671"
 ---
 # <a name="survivable-branch-appliance-sba-for-direct-routing"></a>Survivable Branch Appliance (SBA) per routing diretto
 
 
-In alcuni casi, un sito del cliente che usa il routing diretto per connettersi a Telefono Microsoft Sistema potrebbe riscontrare un'interruzione di Internet.
+In alcuni casi, un sito del cliente che usa l'instradamento diretto per connettersi a Microsoft Phone System potrebbe riscontrare un'interruzione di Internet.
 
 Si supponga che il sito del cliente, denominato ramo, non sia temporaneamente in grado di connettersi al cloud Microsoft tramite routing diretto. Tuttavia, la intranet all'interno del ramo è ancora completamente funzionante e gli utenti possono connettersi al session border controller (SBC) che fornisce la connettività PSTN.
 
-In questo articolo viene descritto come utilizzare un Survivable Branch Appliance (SBA) per consentire a Telefono Microsoft System di continuare a effettuare e ricevere chiamate PSTN (Public Switched Telephone Network) in caso di interruzione del servizio.
+Questo articolo descrive come usare un Survivable Branch Appliance (SBA) per consentire a Microsoft Phone System di continuare a effettuare e ricevere chiamate PSTN (Public Switched Telephone Network) in caso di interruzione del servizio.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -43,7 +42,7 @@ L'SBA è codice distribuibile fornito da Microsoft ai fornitori di SBC che incor
 
 Per ottenere l'ultimo firmware session border controller con il Survivable Branch Appliance incorporato, contatta il fornitore SBC. Inoltre, è necessario quanto segue:
 
-- SBC deve essere configurato per Media Bypass per garantire che il client Microsoft Teams nel sito di succursale possa avere supporti che fluiscono direttamente con SBC. 
+- La scheda SBC deve essere configurata per Media Bypass per garantire che il client Microsoft Teams nel sito di succursale possa avere supporti che fluiscono direttamente con SBC. 
 
 - TLS1.2 deve essere abilitato nel sistema operativo SBA VM.
 - Le porte 3443, 4444 e 8443 vengono utilizzate da Microsoft SBA Server per comunicare con il client Teams e devono essere consentite sul firewall. 
@@ -52,21 +51,21 @@ Per ottenere l'ultimo firmware session border controller con il Survivable Branc
 - La porta 443 viene utilizzata da Microsoft SBA Server per comunicare con Microsoft 365 e deve essere consentita nel firewall.
 - Gli intervalli IP e i tag di servizio di Azure per il cloud pubblico devono essere definiti in base alle linee guida descritte in: https://www.microsoft.com/download/details.aspx?id=56519
 
-## <a name="supported-teams-clients"></a>Client Teams supportati
+## <a name="supported-teams-clients"></a>Client di Teams supportati
 
-La funzionalità SBA è supportata nei client Microsoft Teams seguenti: 
+La funzionalità SBA è supportata nei client di Microsoft Teams seguenti: 
 
 - Microsoft Teams Windows desktop 
 
 - Microsoft Teams macOS desktop
 - Teams per dispositivi mobili 
-- telefoni Teams
+- Telefoni di Teams
 
 ## <a name="how-it-works"></a>Come funziona
 
-Durante un'interruzione di Internet, il client Teams dovrebbe passare automaticamente all'SBA e le chiamate in corso dovrebbero continuare senza interruzioni. Non è richiesta alcuna azione da parte dell'utente. Non appena il client Teams rileva che Internet è attivo e tutte le chiamate in uscita sono finite, il client tornerà alla modalità di funzionamento normale e si connetterà ad altri servizi di Teams. L'SBA caricherà i record dei dati delle chiamate raccolti nel cloud e la cronologia delle chiamate verrà aggiornata in modo che queste informazioni siano disponibili per la revisione da parte dell'amministratore del tenant. 
+Durante un'interruzione di Internet, il client Teams dovrebbe passare automaticamente all'SBA e le chiamate in corso dovrebbero continuare senza interruzioni. Non è richiesta alcuna azione da parte dell'utente. Non appena il client teams rileva che Internet è attivo e tutte le chiamate in uscita sono finite, il client tornerà alla normale modalità operativa e si connetterà ad altri servizi di Teams. L'SBA caricherà i record dei dati delle chiamate raccolti nel cloud e la cronologia delle chiamate verrà aggiornata in modo che queste informazioni siano disponibili per la revisione da parte dell'amministratore del tenant. 
 
-Quando il client Microsoft Teams è in modalità offline, sono disponibili le seguenti funzionalità correlate alle chiamate: 
+Quando il client Microsoft Teams è in modalità offline, sono disponibili le seguenti funzionalità relative alle chiamate: 
 
 - Effettuare chiamate PSTN tramite SBA/SBC locale con elementi multimediali che attraversano la rete SBC.
 
@@ -76,12 +75,12 @@ Quando il client Microsoft Teams è in modalità offline, sono disponibili le se
 
 ## <a name="configuration"></a>Configurazione
 
-Per il funzionamento della funzionalità SBA, il client Teams deve sapere quali AA sono disponibili in ogni sito di succursale e quali CA sono assegnate agli utenti del sito. I passaggi di configurazione sono i seguenti:
+Per il funzionamento della funzionalità SBA, il client di Teams deve sapere quali CA sono disponibili in ogni sito di succursale e quali SBA sono assegnate agli utenti del sito. I passaggi di configurazione sono i seguenti:
 
 1. Creare gli SBA.
 2. Creare i criteri di sopravvivenza del ramo Teams.
 3. Assegnare il criterio agli utenti.
-4. Registra un'applicazione per L'SBA con Azure Active Directory.
+4. Registrare un'applicazione per l'SBA con Azure Active Directory.
 
 Tutta la configurazione viene eseguita usando i cmdlet di PowerShell di Skype for Business Online. L'interfaccia di amministrazione di Teams non supporta ancora la funzionalità SBA routing diretto. 
 
@@ -156,9 +155,9 @@ C:\> Grant-CsTeamsSurvivableBranchAppliancePolicy -PolicyName CPH -Identity user
 C:\> Grant-CsTeamsSurvivableBranchAppliancePolicy -PolicyName $Null -Identity user@contoso.com 
 ```
 
-### <a name="register-an-application-for-the-sba-with-azure-active-directory"></a>Registra un'applicazione per l'SBA con Azure Active Directory
+### <a name="register-an-application-for-the-sba-with-azure-active-directory"></a>Registrare un'applicazione per l'SBA con Azure Active Directory
 
-Per consentire ai diversi amministratori di database usati all'interno del tenant di leggere i dati richiesti da Microsoft 365, è necessario registrare un'applicazione per l'SBA con Azure Active Directory. 
+To allow different SBAs used within your tenant to read required data from Microsoft 365, you need to register an application for the SBA with Azure Active Directory. 
 
 Per ulteriori informazioni sulla registrazione della domanda, vedere:
 
@@ -179,7 +178,7 @@ Per l'applicazione SBA, tenere presente quanto segue:
 - Tipi di account supportati = Account solo in questa directory organizzativa. 
 - Uri di reindirizzamento Web = https://login.microsoftonline.com/common/oauth2/nativeclient.
 - Token di concessione implicita = token di accesso e token ID. 
-- Autorizzazioni API = Skype e Teams Tenant Amministrazione Access -> Autorizzazioni applicazione -> application_access_custom_sba_appliance.
+- Autorizzazioni API = Skype and Teams Tenant Amministrazione Access -> Autorizzazioni applicazione -> application_access_custom_sba_appliance.
 - Segreto client: puoi usare qualsiasi descrizione e scadenza. 
 - Ricordarsi di copiare il segreto client subito dopo averlo creato. 
 - L'ID applicazione (client) viene visualizzato nella scheda Panoramica.

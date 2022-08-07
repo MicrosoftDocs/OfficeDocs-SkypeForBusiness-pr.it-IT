@@ -24,19 +24,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Belgio.
-ms.openlocfilehash: 1aeb19d2cf8f423f3af9fd207771f47e419961de
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Belgio.
+ms.openlocfilehash: 31277c977f35f1ff07fce42708edccee69b380c2
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607833"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268641"
 ---
 # <a name="availability-in-belgium"></a>Disponibilità in Belgio
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Belgio.
+Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Belgio.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -59,8 +59,8 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
     
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali da 120 minuti </li><li>Piano per chiamate nazionali da 240 minuti</li></li><li>Piano per chiamate nazionali da 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti per chiamate nazionali O 600 minuti per chiamate internazionali (a seconda di quale venga prima nel mese di calendario)</li></li> |
+|I Piani per chiamate sono disponibili per l'acquisto?  |Sì          |   
+|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li>Piano per chiamate pay-as-you-go </li><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 1200 minuti </li><li> Piano per chiamate internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti viene raggiunto per primo nel mese di calendario)</li></ul>|
 |È possibile effettuare chiamate in uscita verso numeri premium?  <br/> | Al momento non supportato. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
@@ -72,7 +72,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
- Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatore automatico e code di [chiamata,](../getting-service-phone-numbers.md)vedere Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams .
+ Se desideri ottenere numeri verdi e a pagamento per le audioconferenze, l'operatore automatico e le code di chiamata, consulta [Recupero dei numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

@@ -8,7 +8,6 @@ ms.topic: article
 ms.service: msteams
 ms.collection:
 - M365-collaboration
-- Teams_ITAdmin_RemoteWorkers
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -16,12 +15,12 @@ ms.reviewer: mikedav
 description: Informazioni su come assegnare licenze per i componenti aggiuntivi di Teams agli utenti per funzionalità come Audioconferenza, Sistema telefonico e Piani per chiamate.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1bef1464b94f736a10cc184a2bdb88e2cdf6df88
-ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
+ms.openlocfilehash: 3b482781ee29094986c310158fe74f02662f790d
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67156974"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268171"
 ---
 # <a name="assign-teams-add-on-licenses-to-users"></a>Assegnare licenze per i componenti aggiuntivi di Teams agli utenti
 
@@ -132,7 +131,7 @@ Per altre informazioni, vedere [Visualizzare licenze e servizi con PowerShell](/
 | Microsoft Enterprise E1 | STANDARDPACK |
 | Microsoft 365 Business Basic | O365_BUSINESS_ESSENTIALS|
 | Microsoft 365 Business Standard | O365_BUSINESS_PREMIUM|
-| Microsoft 365 Business | SPB|
+| Microsoft 365 Business | Spb|
 | Audioconferenza | MCOMEETADV |
 | Audioconferenza con tariffa al minuto (pagamento a consumo) Richiede la configurazione e l'abilitazione dei Crediti comunicazioni.* | MCOMEETACPEA |
 | Teams Phone Standard | MCOEV |

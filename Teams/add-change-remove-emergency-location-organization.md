@@ -10,80 +10,81 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
+- m365initiative-voice
 audience: Admin
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: "Informazioni su come aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza per l'organizzazione. "
+description: Informazioni su come aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza per l'organizzazione.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4d9c7c56b4e2b2fd14f703d51b4c07cfc173dfa3
-ms.sourcegitcommit: 197debacdcd1f7902f6e16940ef9bec8b07641af
+ms.openlocfilehash: bcbe811ecdb7ac9377e4798a2cdcb7334188aa1e
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60634855"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67267601"
 ---
 # <a name="add-change-or-remove-an-emergency-location-for-your-organization"></a>Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
 
-Indipendentemente dall'opzione di connettività [PSTN,](pstn-connectivity.md) è possibile associare un numero di telefono a piani per chiamate Microsoft, Connessione con operatore o percorsi di emergenza in routing &mdash; &mdash; diretto.
+Indipendentemente [dall'opzione di connettività PSTN](pstn-connectivity.md) , è possibile associare&mdash;a un numero di telefono le posizioni per gli interventi di emergenza Microsoft Calling Plans, Operator Connect o Direct Routing&mdash;.
 
-Tuttavia, a seconda dell'opzione di connettività PSTN, la modalità di gestione delle posizioni e dei requisiti di posizione per gli interventi di emergenza può variare. Per altre informazioni, vedere [Gestire le chiamate di emergenza.](what-are-emergency-locations-addresses-and-call-routing.md)
+Tuttavia, a seconda dell'opzione di connettività PSTN, la modalità di gestione delle posizioni di emergenza e dei requisiti di posizione può variare. Per ulteriori informazioni, vedi [Gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md).
 
 Questo articolo descrive come aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza per l'organizzazione. 
 
-Questo articolo si applica a Piani per chiamate Microsoft, Connessione con operatore e Routing diretto.
+Questo articolo si applica ai Piani per chiamate Microsoft, Operator Connect e Routing diretto.
 
-È possibile gestire le posizioni di emergenza per l'organizzazione nell'Microsoft Teams di amministrazione o usando PowerShell.
+Gestisci le posizioni per gli interventi di emergenza per la tua organizzazione nell'interfaccia di amministrazione di Microsoft Teams o tramite PowerShell.
 
-Per assegnare una località di emergenza, gli utenti, i numeri di telefono e le posizioni di emergenza devono essere tutti nello stesso paese. Per altre informazioni, vedere Assegnare o modificare una posizione per gli [interventi di emergenza per un utente.](assign-change-emergency-location-user.md)
+Per assegnare una posizione per gli interventi di emergenza, gli utenti, i numeri di telefono e le posizioni per gli interventi di emergenza devono trovarsi nello stesso paese. Per altre informazioni, vedi [Assegnare o modificare una posizione per gli interventi di emergenza per un utente](assign-change-emergency-location-user.md).
   
-## <a name="add-an-emergency-location"></a>Aggiungere una posizione per gli interventi di emergenza
+## <a name="add-an-emergency-location"></a>Aggiungi una posizione per gli interventi di emergenza
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Posizioni indirizzi**  >  **di emergenza.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams fare clic su **Indirizzi di emergenza** **posizioni** > .
 2. Fare clic su **Aggiungi**.
-3. Immettere un nome e una descrizione per la posizione.
-4. Selezionare il paese o l'area geografica e quindi immettere l'indirizzo.
+3. Immettere un nome e una descrizione per il luogo.
+4. Seleziona il paese o l'area geografica e quindi immetti l'indirizzo.
 
    > [!NOTE]
-   > In Belgio, Francia, Germania, Irlanda, Paesi Bassi e Spagna, è importante comprendere che per attivare correttamente un numero di telefono in Microsoft 365, l'indirizzo configurato nella posizione di emergenza, usata per acquisire il numero, deve corrispondere al codice di area del numero di telefono.
+   > In Belgio, Francia, Germania, Irlanda, Paesi Bassi e Spagna, è importante capire che per attivare correttamente un numero di telefono in Microsoft 365, l'indirizzo configurato nella posizione per gli interventi di emergenza, usato per acquisire il numero, deve corrispondere al prefisso del numero di telefono.
 
-5. Se l'indirizzo non viene trovato e si vuole modificarlo manualmente, attivare **Modifica l'indirizzo manualmente.**
+5. Se l'indirizzo non viene trovato e si vuole modificare manualmente l'indirizzo, attivare **Modifica manualmente l'indirizzo**.
 6. Fare clic su **Salva**.
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-Vedere [New-CsOnlineLisCivicAddress](/powershell/module/skype/new-csonlineliscivicaddress).
+Vedi [New-CsOnlineLisCivicAddress](/powershell/module/skype/new-csonlineliscivicaddress).
     
 ## <a name="change-an-emergency-location"></a>Modificare la posizione per gli interventi di emergenza
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Posizioni indirizzi**  >  **di emergenza.**
-2. Nell'elenco selezionare il percorso da modificare e quindi fare clic su **Modifica.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams fare clic su **Indirizzi di emergenza** **posizioni** > .
+2. Nell'elenco selezionare il percorso da modificare e quindi fare clic su **Modifica**.
 3. Apportare le modifiche desiderate.
 4. Fare clic su **Salva**.
 
 > [!NOTE]
-> È possibile modificare le informazioni sull'indirizzo per una località solo se l'indirizzo non è convalidato. Se l'indirizzo è già convalidato ed è necessario modificare l'indirizzo, eliminare la posizione e quindi creare una nuova posizione con l'indirizzo corretto.
+> È possibile modificare le informazioni relative all'indirizzo per una località solo se l'indirizzo non è convalidato. Se l'indirizzo è già convalidato ed è necessario cambiarlo, eliminarlo e quindi creare una nuova posizione con l'indirizzo corretto.
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-Vedere [Set-CsOnlineLisCivicAddress](/powershell/module/skype/set-csonlineliscivicaddress).
+Vedi [Set-CsOnlineLisCivicAddress](/powershell/module/skype/set-csonlineliscivicaddress).
     
 ## <a name="remove-an-emergency-location"></a>Rimuovere una posizione per gli interventi di emergenza
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Posizioni indirizzi**  >  **di emergenza.**
-2. Nell'elenco selezionare il percorso da rimuovere e quindi fare clic su **Elimina.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams fare clic su **Indirizzi di emergenza** **posizioni** > .
+2. Nell'elenco selezionare il percorso da rimuovere e quindi fare clic su **Elimina**.
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-Vedere [Remove-CsOnlineLisCivicAddress](/powershell/module/skype/remove-csonlineliscivicaddress).
+Vedi [Remove-CsOnlineLisCivicAddress](/powershell/module/skype/remove-csonlineliscivicaddress).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

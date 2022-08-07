@@ -12,22 +12,23 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
+- Teams_ITAdmin_Rooms
 ms.custom: seo-marvel-apr2020
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni su come distribuire Microsoft Teams Rooms, incluse le fasi di distribuzione.
-ms.openlocfilehash: 0111e8723d70b753c2d8de64350387252db8f8f7
-ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
+ms.openlocfilehash: 9dbb45581467cb0f948ce7b5fb62dcfea1186918
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65760918"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67271781"
 ---
 # <a name="deployment-overview"></a>Panoramica della distribuzione
 
 La distribuzione di Microsoft Teams Rooms essenzialmente suddivide in fasi:
 
 - Confermando che le posizioni di distribuzione (spazi) soddisfano le dipendenze di distribuzione
-- Creazione di Microsoft Teams o Skype for Business e Exchange account e assegnazione a Teams Rooms (vedere [Configurare gli account per Microsoft Teams Rooms](rooms-configure-accounts.md))
+- Creazione di microsoft teams o account di Skype for Business ed Exchange e assegnazione a Teams Rooms (vedere [Configurare gli account per Microsoft Teams Rooms](rooms-configure-accounts.md))
 - (Facoltativo) Configurazione di Monitoraggio di Azure per i sistemi (vedere [Distribuire la gestione Microsoft Teams Rooms con Monitoraggio di Azure](azure-monitor-deploy.md)
 - Configurazione di Teams Rooms negli spazi per le riunioni e connessione dei dispositivi periferici necessari (vedere la documentazione OEM per il set di dispositivi in uso)
 
@@ -41,7 +42,7 @@ Per altre informazioni su queste dipendenze, vedere i collegamenti alle linee gu
 -   [Certificati](rooms-prep.md#certificates)
 -   [Proxy](rooms-prep.md#proxy)
 
-**Pro Suggerimento**: se è necessario usare i server proxy per fornire l'accesso a Teams, [leggere prima di tutto questo articolo](../proxy-servers-for-skype-for-business-online.md). Quando si tratta di Microsoft Teams traffico multimediale in tempo reale sui server proxy, è consigliabile bypassare del tutto i server proxy. Microsoft Teams traffico è già crittografato, quindi i server proxy non lo rendono più sicuro e aggiungono latenza al traffico in tempo reale. Nell'ambito di una distribuzione più ampia, è consigliabile seguire le indicazioni in [Preparare la rete per Teams](../prepare-network.md) per la pianificazione della larghezza di banda e valutare l'idoneità della rete per il traffico in tempo reale.
+**Suggerimento per** professionisti - Se è necessario usare i server proxy per fornire l'accesso a Teams, [consultare prima di tutto questo articolo](../proxy-servers-for-skype-for-business-online.md). Per quanto riguarda il traffico multimediale in tempo reale su server proxy di Microsoft Teams, è consigliabile ignorare del tutto i server proxy. Il traffico di Microsoft Teams è già crittografato, quindi i server proxy non lo rendono più sicuro e aggiungono latenza al traffico in tempo reale. Nell'ambito di una distribuzione più ampia, è consigliabile seguire le indicazioni in [Preparare la rete per Teams per](../prepare-network.md) la pianificazione della larghezza di banda e valutare l'idoneità della rete per il traffico in tempo reale.
 
 |  &nbsp;  | &nbsp;    |
 |-----------|------------|
@@ -53,7 +54,7 @@ Per altre informazioni su queste dipendenze, vedere i collegamenti alle linee gu
 Per prepararsi alla distribuzione Microsoft Teams Rooms, eseguire le attività principali principali seguenti:
 
 -   Definire Microsoft Teams Rooms account delle risorse.
--   Se si aggiunge Teams Rooms a Azure Active Directory, preparare un gruppo di Azure AD con appartenenza dinamica per bloccare tutti gli account delle risorse Teams Rooms. In questo modo si semplifica la gestione futura, ad esempio l'applicazione dei criteri di accesso condizionale. Per sfruttare più facilmente i gruppi dinamici di Azure AD, determinare una convenzione di denominazione che identificherà in modo univoco gli account delle risorse Teams Rooms.
+-   Se si aggiunge Teams Rooms ad Azure Active Directory, preparare un gruppo di Azure AD con appartenenza dinamica per bloccare tutti gli account delle risorse Teams Rooms. In questo modo si semplifica la gestione futura, ad esempio l'applicazione dei criteri di accesso condizionale. Per sfruttare più facilmente i gruppi dinamici di Azure AD, determinare una convenzione di denominazione che identificherà in modo univoco gli account delle risorse Teams Rooms.
 -   Se si unisce Teams Rooms ad Active Directory, preparare un'unità organizzativa e un gruppo di Active Directory per tenere gli account di computer e risorse Microsoft Teams Rooms e, facoltativamente, preparare Criteri di gruppo oggetti (GPO) per abilitare la comunicazione remota di PowerShell.
 
 ### <a name="define-microsoft-teams-rooms-resource-account-features"></a>Definire Microsoft Teams Rooms caratteristiche dell'account delle risorse 
@@ -63,8 +64,8 @@ A seconda degli scenari di collaborazione che si è deciso di abilitare con la d
 | **Scenario** | **Descrizione** | **Microsoft Teams Rooms funzionalità dell'account del servizio** |
 |---------- |------------- | --- |
 | Riunioni interattive            | Uso di voce, video e condivisione dello schermo; rendendo il Microsoft Teams Rooms una risorsa prenotabile                     | Abilitato per Microsoft Teams o Skype for Business; abilitato per Exchange (cassetta postale delle risorse) |
-| Chiamate in conferenza            | Disporre di un numero di telefono per i servizi di audioconferenza quando si tocca "Nuova riunione" sulla console | Abilitato per Audioconferenza                                          |
-| Chiamate PSTN in uscita/in ingresso | Abilitare la console Microsoft Teams Rooms per effettuare e ricevere chiamate PSTN                                         | Abilitato per Sistema telefonico                                                |
+| Chiamate in conferenza            | Disporre di un numero di telefono per i servizi di audioconferenza quando si tocca "Nuova riunione" sulla console | Abilitato per i servizi di audioconferenza                                          |
+| Chiamate PSTN in uscita/in ingresso | Abilitare la console Microsoft Teams Rooms per effettuare e ricevere chiamate PSTN                                         | Abilitato per sistema telefonico                                                |
 
 Per altre informazioni su Microsoft Teams Rooms account, vedere [Configurare gli account per Microsoft Teams Rooms](rooms-configure-accounts.md).
 
@@ -79,15 +80,15 @@ _Tabella di pianificazione dei conti delle risorse Microsoft Teams Rooms di esem
 
 | **Sito**  | **Nome chat room** | **Tipo di sala** | **Funzionalità future per le chat room**                                                 | **Funzionalità dell'account Microsoft Teams Rooms**                                                                                         |
 |-----------|---------------|---------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Sede centrale di Londra | Curie         | Media.        | 1 schermo, audio e video più presentazione <br>Accesso ai servizi di conferenza telefonica con accesso esterno<br> Accesso PSTN  | Abilitato per Exchange (cassetta postale delle risorse) <br>Abilitato per Audioconferenza <br>Abilitato per Sistema telefonico |
-| Sede centrale di Sydney | Collina          | Grande         | 2 Schermi, audio e video più presentazione<br>Accesso ai servizi di conferenza telefonica con accesso esterno<br> Accesso PSTN  | Abilitato per Skype for Business <br>Abilitato per Exchange (cassetta postale delle risorse)<br> Abilitato per Audioconferenza <br>Abilitato per Sistema telefonico |
+| Sede centrale di Londra | Curie         | Media.        | 1 schermo, audio e video più presentazione <br>Accesso ai servizi di conferenza telefonica con accesso esterno<br> Accesso PSTN  | Abilitato per Exchange (cassetta postale delle risorse) <br>Abilitato per i servizi di audioconferenza <br>Abilitato per sistema telefonico |
+| Sede centrale di Sydney | Collina          | Grande         | 2 Schermi, audio e video più presentazione<br>Accesso ai servizi di conferenza telefonica con accesso esterno<br> Accesso PSTN  | Abilitato per Skype for Business <br>Abilitato per Exchange (cassetta postale delle risorse)<br> Abilitato per i servizi di audioconferenza <br>Abilitato per sistema telefonico |
 
 
 ### <a name="prepare-to-host-microsoft-teams-rooms-and-resource-accounts-optional"></a>Preparare l'host degli account di Microsoft Teams Rooms e delle risorse (facoltativo)
 
-Per consentire la gestione e la creazione di report sugli account di Microsoft Teams Rooms e delle risorse, preparare il Active Directory locale o Azure Active Directory (Azure AD). 
+Per consentire la gestione e la creazione di report sugli account di Microsoft Teams Rooms e risorse, preparare il Active Directory locale o Azure Active Directory (Azure AD). 
 
-Definire un Active Directory locale o un gruppo di Azure Active Directory a cui aggiungere tutti gli account delle risorse Microsoft Teams Rooms. Se si usa Azure Active Directory, è consigliabile usare un gruppo dinamico per aggiungere e rimuovere automaticamente gli account delle risorse dal gruppo.
+Definire un Active Directory locale o un gruppo di Azure Active Directory a cui aggiungere tutti gli account di risorse Microsoft Teams Rooms. Se si usa Azure Active Directory, è consigliabile usare un gruppo dinamico per aggiungere e rimuovere automaticamente gli account delle risorse dal gruppo.
 
 Definire un'unità organizzativa nella gerarchia di Active Directory locale per contenere tutti gli account Microsoft Teams Rooms computer (se fanno parte del dominio) e un'unità organizzativa per contenere tutti gli account utente Microsoft Teams Rooms. Disabilitare Criteri di gruppo'ereditarietà per assicurarsi di applicare solo i criteri che si intende applicare al Microsoft Teams Rooms aggiunto a un dominio.
 
@@ -113,9 +114,9 @@ La pianificazione della configurazione e dell'implementazione riguarda le seguen
 
 ### <a name="resource-account-provisioning"></a>Provisioning dell'account delle risorse 
 
-Ogni dispositivo Microsoft Teams Rooms richiede un account di risorse dedicato e univoco che deve essere abilitato sia per Microsoft Teams che per Skype for Business e Exchange. Questo account deve avere una cassetta postale della sala ospitata in Exchange. L'elaborazione del calendario deve essere configurata in modo che il dispositivo possa accettare automaticamente le convocazioni riunione in arrivo. Per altre informazioni sulla creazione di questi account, vedere [Configurare gli account per Microsoft Teams Rooms](rooms-configure-accounts.md). 
+Ogni dispositivo Microsoft Teams Rooms richiede un account di risorse dedicato e univoco che deve essere abilitato sia per Microsoft Teams che per Skype for Business ed Exchange. Questo account deve avere una cassetta postale della sala ospitata in Exchange. L'elaborazione del calendario deve essere configurata in modo che il dispositivo possa accettare automaticamente le convocazioni riunione in arrivo. Per altre informazioni sulla creazione di questi account, vedere [Configurare gli account per Microsoft Teams Rooms](rooms-configure-accounts.md). 
 
-**Pro suggerimento**: ogni Microsoft Teams Rooms deve avere un nome di computer valido e univoco nella rete. Molti sistemi di monitoraggio e avviso visualizzano il nome della macchina come identificatore chiave, quindi è importante sviluppare una convenzione di denominazione per le distribuzioni di Microsoft Teams Rooms che consenta al personale di supporto di individuare facilmente i Microsoft Teams Rooms contrassegnati come necessari per un'azione. Un esempio può essere l'uso di un modello *MTR-Site*-*Room Name* (MTR-LON-CURIE). 
+**Suggerimento per** professionisti: ogni Microsoft Teams Rooms deve avere un nome di computer valido e univoco nella rete. Molti sistemi di monitoraggio e avviso visualizzano il nome della macchina come identificatore chiave, quindi è importante sviluppare una convenzione di denominazione per le distribuzioni di Microsoft Teams Rooms che consenta al personale di supporto di individuare facilmente i Microsoft Teams Rooms contrassegnati come necessari per un'azione. Un esempio può essere l'uso di un modello *MTR-Site*-*Room Name* (MTR-LON-CURIE). 
 
 |  &nbsp;  | &nbsp;    |
 |-----------|------------|
@@ -127,7 +128,7 @@ Ogni dispositivo Microsoft Teams Rooms richiede un account di risorse dedicato e
 
 Teams Rooms viene fornito preinstallo dall'OEM (Original Equipment Manufacturer).
 
-Vengono fornite indicazioni su come usare [Microsoft Azure Monitor](/skypeforbusiness/plan-your-deployment/clients-and-devices/azure-monitor) per monitorare la distribuzione Microsoft Teams Rooms e segnalare la disponibilità, gli errori hardware/software e Microsoft Teams Rooms versione dell'applicazione. Se si decide di usare Microsoft Operations Management Suite, è consigliabile installare l'agente operations management suite nell'ambito del processo di installazione del software e configurare le informazioni di connessione dell'area di lavoro per l'area di lavoro. 
+Vengono fornite indicazioni su come usare [Monitor di Microsoft Azure](/skypeforbusiness/plan-your-deployment/clients-and-devices/azure-monitor) per monitorare la distribuzione Microsoft Teams Rooms e segnalare la disponibilità, gli errori hardware/software e Microsoft Teams Rooms versione dell'applicazione. Se si decide di usare Microsoft Operations Management Suite, è consigliabile installare l'agente operations management suite nell'ambito del processo di installazione del software e configurare le informazioni di connessione dell'area di lavoro per l'area di lavoro. 
 
 Un ulteriore aspetto da considerare è se il Microsoft Teams Rooms verrà aggiunto a un dominio. Per informazioni sui vantaggi dell'aggiunta a un dominio, vedere [Configurazione di Criteri di gruppo per Microsoft Teams Rooms](rooms-operations.md#configuring-group-policy-for-microsoft-teams-rooms). 
 
@@ -156,7 +157,7 @@ _Tabella di distribuzione di esempio_
 
 ### <a name="microsoft-teams-rooms-application-and-peripheral-device-configuration"></a>Microsoft Teams Rooms configurazione di applicazioni e periferiche 
 
-Dopo che ogni sistema Microsoft Teams Rooms è stato distribuito fisicamente e le periferiche supportate sono connesse, dovrai configurare l'applicazione Microsoft Teams Rooms per assegnare l'account della risorsa Microsoft Teams Rooms e la password per abilitare Teams Rooms per accedere a Microsoft Teams o Skype for Business e Exchange.
+Dopo che ogni sistema Microsoft Teams Rooms è stato distribuito fisicamente e le periferiche supportate sono connesse, è necessario configurare l'applicazione Microsoft Teams Rooms per assegnare l'account della risorsa Microsoft Teams Rooms e la password per abilitare Teams Rooms  per accedere a Microsoft Teams o Skype for Business ed Exchange.
 
 È possibile configurare manualmente ogni Microsoft Teams Rooms sistema. In alternativa, è possibile usare un file di configurazione XML archiviato centralmente per Teams Rooms per gestire le impostazioni dell'applicazione.
 
@@ -171,9 +172,9 @@ Per altre informazioni su come usare il file di configurazione XML, vedere [Gest
 
 ### <a name="testing"></a> Test
 
-Dopo aver distribuito Teams Rooms, è consigliabile testarlo. Verificare che le funzionalità elencate in [Microsoft Teams Rooms Guida](https://support.microsoft.com/en-us/office/microsoft-teams-rooms-help-e667f40e-5aab-40c1-bd68-611fe0002ba2?ui=en-us&rs=en-us&ad=us) funzionino nel dispositivo distribuito. È consigliabile che il team di distribuzione verifichi che Microsoft Teams Rooms venga visualizzato nell Teams interfaccia di amministrazione. È anche importante effettuare una serie di chiamate e riunioni di test per controllare la qualità. Per altre informazioni, vedere questo [utile elenco di controllo per la distribuzione](console.md#microsoft-teams-rooms-deployment-checklist).
+Dopo aver distribuito Teams Rooms, è consigliabile testarlo. Verificare che le funzionalità elencate in [Microsoft Teams Rooms Guida](https://support.microsoft.com/en-us/office/microsoft-teams-rooms-help-e667f40e-5aab-40c1-bd68-611fe0002ba2?ui=en-us&rs=en-us&ad=us) funzionino nel dispositivo distribuito. È consigliabile che il team di distribuzione verifichi che Microsoft Teams Rooms compaiano nell'interfaccia di amministrazione di Teams. È anche importante effettuare una serie di chiamate e riunioni di test per controllare la qualità. Per altre informazioni, vedere questo [utile elenco di controllo per la distribuzione](console.md#microsoft-teams-rooms-deployment-checklist).
 
-Nell'ambito dell'implementazione generale Teams o Skype for Business, è consigliabile configurare la creazione di file per Call Quality Dashboard (CQD), monitorare le tendenze della qualità e partecipare al processo di verifica della qualità dell'esperienza. Per altre informazioni, vedere [Migliorare e monitorare la qualità delle chiamate per Teams](../monitor-call-quality-qos.md). 
+Nell'ambito dell'implementazione generale di Teams o Skype for Business, è consigliabile configurare la creazione di file per Call Quality Dashboard (CQD), monitorare le tendenze della qualità e partecipare al processo di verifica della qualità dell'esperienza. Per altre informazioni, vedere [Migliorare e monitorare la qualità delle chiamate per Teams](../monitor-call-quality-qos.md). 
 
 ### <a name="asset-management"></a>Gestione asset
 

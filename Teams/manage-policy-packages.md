@@ -20,12 +20,12 @@ ms.custom:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft Teams per semplificare, semplificare e garantire la coerenza durante la gestione dei criteri per gruppi di utenti.
-ms.openlocfilehash: 7ba8f21014f892d2170684a8a4cccdfce21cee91
-ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
+ms.openlocfilehash: 10c7eaad9342d1c005c6290ebc957c3580db3962
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66572164"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67270851"
 ---
 # <a name="manage-policy-packages-for-microsoft-teams"></a>Gestire pacchetti di criteri per Microsoft Teams
 
@@ -33,7 +33,7 @@ Un Pacchetto di criteri in Microsoft Teams è una raccolta di criteri e impostaz
 
 È possibile usare i [pacchetti di criteri inclusi in Teams](#policy-packages-included-in-teams) o [creare pacchetti di criteri personalizzati](#custom-policy-packages).
 
-:::image type="content" source="media/policy-packages-admin-center.png" alt-text="Screenshot della pagina Pacchetti di criteri nell'interfaccia di amministrazione.":::
+:::image type="content" source="media/policy-packages-admin-center.png" alt-text="Screenshot della pagina Pacchetti di criteri nell'interfaccia di amministrazione." lightbox="media/policy-packages-admin-center.png":::
 
 È possibile personalizzare le impostazioni dei criteri in un pacchetto di criteri in base alle esigenze degli utenti. Quando si modificano le impostazioni dei criteri in un pacchetto, tutte le impostazioni vengono aggiornate per tutti gli utenti assegnati al pacchetto. È possibile gestire i pacchetti di criteri usando l'interfaccia di amministrazione di Microsoft Teams o PowerShell.
 
@@ -64,14 +64,14 @@ Teams attualmente include i pacchetti di criteri seguenti.
 |Istruzione (docente)    |Crea un set di criteri e impostazioni dei criteri che si applicano agli insegnanti.      |
 |Istruzione (insegnante della scuola primaria che usa l'apprendimento remoto)    |Crea una serie di criteri che si applicano agli insegnanti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza.      |
 |Istruzione (studente della scuola primaria che usa l'apprendimento remoto)    |Crea una serie di criteri che si applicano agli studenti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza.      |
-|Gestore in prima linea |Crea un set di criteri e applica tali impostazioni ai responsabili della prima linea dell'organizzazione. |
-|Frontline worker |Crea un set di criteri e applica tali impostazioni ai frontline worker dell'organizzazione. |
+|Responsabile in prima linea |Crea un set di criteri e applica tali impostazioni ai responsabili della prima linea dell'organizzazione. |
+|Personale in prima linea |Crea un set di criteri e applica tali impostazioni ai frontline worker dell'organizzazione. |
 |Operatore sanitario  |Creare un set e impostazioni di criteri che forniscano agli operatori sanitari, ad esempio infermieri, medici e operatori sociali accesso completo alle chat, alle chiamate, alla gestione dei turni e alle riunioni. |
 |Operatore dell'informazione sanitaria  |Crea un set di criteri e impostazioni di criteri che forniscono agli operatori dell'informazione, ad esempio personale in ambito IT e finanziario, responsabili della conformità, accesso completo alle chat, alle chiamate e alle riunioni.|
-|Sale per i pazienti nell'organizzazione sanitaria  |Crea un set di criteri e impostazioni di criteri da applicare alle sale dei pazienti nell'organizzazione sanitaria.|
-|Utente di piccole e medie imprese (pacchetto Sistema telefonico Teams con piano per chiamate) |Crea un criterio di configurazione dell'app che include le app per un sistema telefonico Teams con l'esperienza bundle del piano per chiamate.|
-|Utente di piccole e medie imprese (senza il pacchetto Teams Phone System with Calling Plan) |Crea un criterio di configurazione delle app rilevante per gli utenti di Teams di piccole e medie dimensioni (sistema telefonico non Teams con bundle di piani per chiamate).
+|Sale per i pazienti nell'organizzazione sanitaria  |Crea un set di criteri e impostazioni di criteri da applicare alle sale dei pazienti nell'organizzazione sanitaria. |
 |Responsabile della sicurezza pubblica   |Crea un set di criteri e impostazioni dei criteri che si applicano ai responsabili della sicurezza pubblica nell'organizzazione.|
+|Utente di piccole e medie imprese (Business Voice) |Crea un criterio di configurazione dell'app che include le app per un'esperienza vocale aziendale per gli utenti.|
+|Utente di piccole e medie imprese (senza Business Voice) |Crea criteri di configurazione delle app rilevanti per gli utenti di Teams aziendali di piccole e medie dimensioni senza funzionalità vocali aziendali.
 
 > [!NOTE]
 > Verranno aggiunti altri pacchetti di criteri nelle versioni future di Teams, quindi controllare di nuovo la disponibilità di informazioni più aggiornate.  
@@ -79,7 +79,7 @@ Teams attualmente include i pacchetti di criteri seguenti.
 A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare facilmente i criteri collegati a un determinato pacchetto di criteri.
 Ad esempio, quando si assegna il pacchetto di criteri Istruzione (docenti) agli insegnanti dell'istituto di istruzione, viene creato un criterio denominato Education_Teacher per ogni criterio nel pacchetto.
 
-![Screenshot del pacchetto di criteri Istruzione (docenti).](media/policy-packages-education_teacher.png)
+:::image type="content" source="media/teams-policy-packages-education.png" alt-text="Screenshot del pacchetto di criteri Istruzione (docenti)." lightbox="media/teams-policy-packages-education.png":::
 
 ## <a name="custom-policy-packages"></a>Pacchetti di criteri personalizzati
 
@@ -89,11 +89,11 @@ Per creare un nuovo pacchetto di criteri personalizzato:
 
 1. Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft Teams selezionare **Pacchetti criteri** e quindi fare clic su **Aggiungi**.
 
-    :::image type="content" source="media/policy-packages-add.png" alt-text="Screenshot del pulsante Aggiungi nella pagina Pacchetti di criteri nell'interfaccia di amministrazione.":::
+    :::image type="content" source="media/policy-packages-add.png" alt-text="Screenshot del pulsante Aggiungi nella pagina Pacchetti di criteri nell'interfaccia di amministrazione." lightbox="media/policy-packages-add.png":::
 
 2. Immetti un nome e una descrizione per il pacchetto.
 
-    :::image type="content" source="media/policy-packages-add-custom.png" alt-text="Screenshot dell'aggiunta di un nuovo pacchetto di criteri personalizzato.":::
+    :::image type="content" source="media/policy-packages-add-custom.png" alt-text="Screenshot dell'aggiunta di un nuovo pacchetto di criteri personalizzato." lightbox="media/policy-packages-add-custom.png":::
 
 3. Selezionare i tipi di criteri e i nomi dei criteri da includere nel pacchetto.
 

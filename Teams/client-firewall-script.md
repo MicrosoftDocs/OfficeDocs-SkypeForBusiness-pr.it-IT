@@ -1,5 +1,5 @@
 ---
-title: Script di esempio - Microsoft Teams di PowerShell del firewall
+title: Script di esempio - Script di PowerShell del firewall di Microsoft Teams
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -8,23 +8,22 @@ ms.topic: article
 ms.service: msteams
 ms.collection:
 - M365-collaboration
-- m365initiative-deployteams
 ms.reviewer: harij, rafarhi
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Uno script di esempio che può essere usato per configurare Windows per consentire Teams connessioni tramite Windows Firewall.
+description: Uno script di esempio che può essere usato per configurare Windows per consentire le connessioni di Teams tramite Windows Firewall.
 f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1131868af2b81b1d786bd760518f56633ec8aa83
-ms.sourcegitcommit: a9a056b93b4add3a4d978bb341ea4b66a042b4d0
+ms.openlocfilehash: b15c8e141f8a3cd5cde1915901d3dbcd9e29b23a
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62893759"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67269401"
 ---
-# <a name="sample-script---microsoft-teams-firewall-powershell-script"></a>Script di esempio - Microsoft Teams di PowerShell del firewall
+# <a name="sample-script---microsoft-teams-firewall-powershell-script"></a>Script di esempio - Script di PowerShell del firewall di Microsoft Teams
 
 Questo script di esempio, che deve essere eseguito nei computer client nel contesto di un account amministratore con privilegi elevati, creerà una nuova regola del firewall in entrata per ogni cartella utente trovata in c:\Users. Questa regola impedisce all'applicazione di chiedere agli utenti di creare regole del firewall quando effettuano la loro prima chiamata da Teams.
 

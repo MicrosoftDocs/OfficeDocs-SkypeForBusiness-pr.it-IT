@@ -12,7 +12,6 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - M365-collaboration
-- m365initiative-meetings
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -22,13 +21,13 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: Vedi Microsoft Teams procedura per assegnare una licenza per i servizi di conferenza telefonica con accesso esterno e un ID conferenza a un utente e a molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno.
-ms.openlocfilehash: 6d8270d21c90d363ebb74089ce0b37e6c558ecb1
-ms.sourcegitcommit: 0967f725aad0a7b9c430b2e30a37ea333007558a
+description: Consulta i passaggi di Microsoft Teams per assegnare una licenza per i servizi di conferenza telefonica con accesso esterno e un ID conferenza a un utente e a molte altre impostazioni di conferenza telefonica con accesso esterno.
+ms.openlocfilehash: 4bfb813b6e7b472ad7a9ab58e6403b92f60fd039
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65106331"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67271221"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-your-organization-in-microsoft-teams"></a>Gestire le impostazioni di audioconferenza per l'organizzazione in Microsoft Teams
 
@@ -40,27 +39,27 @@ Potrebbe essere più facile visualizzare tutte le impostazioni dei servizi di au
 ## <a name="assign-an-audio-conferencing-license"></a>Assegnare una licenza per i servizi di audioconferenza
 
 > [!NOTE]
-> Non è possibile assegnare licenze usando Teams. È necessario usare il interfaccia di amministrazione di Microsoft 365. Vedere [Assegnare licenze per Microsoft Teams componenti aggiuntivi](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+> Non è possibile assegnare licenze con Teams. È necessario usare il interfaccia di amministrazione di Microsoft 365. Vedere [Assegnare licenze per i componenti aggiuntivi di Microsoft Teams](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
 ### <a name="to-assign-a-license-for-a-user"></a>To assign a license for a user
 
 1. Accedere a Microsoft 365 con l'account aziendale o dell'istituto di istruzione.
 
-2. Nel riquadro di spostamento sinistro del **interfaccia di amministrazione di Microsoft 365** passare a **Utentiattivi** >  e quindi selezionare uno o più utenti dall'elenco degli utenti disponibili.
+2. Nel riquadro di spostamento sinistro del **interfaccia di amministrazione di Microsoft 365** passare a **Utenti** > **attivi** e quindi selezionare uno o più utenti dall'elenco degli utenti disponibili.
 
     > [!NOTE]
     > Per assegnare licenze a un massimo di 20 utenti contemporaneamente, puoi ricorrere all'elenco a discesa **Selezionare una visualizzazione** e scegliere una delle opzioni oppure creare una visualizzazione personalizzata. Quindi fai clic su **Modifica**, due volte su **Avanti**, seleziona la licenza e fai clic su **Invia**.  
   
 3. Nel riquadro Azioni, in **Licenze prodotti**, fai clic su **Modifica**.
 
-4. Nella pagina **Licenze per i prodotti**, attiva **Servizi di Audioconferenza** e quindi fai clic su **Salva**. Per altre informazioni sulle licenze, vedere [Licenze per Microsoft Teams componenti aggiuntivi](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+4. Nella pagina **Licenze per i prodotti**, attiva **Servizi di Audioconferenza** e quindi fai clic su **Salva**. Per altre informazioni sulle licenze, vedere Licenze per i [componenti aggiuntivi di Microsoft Teams](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
    > [!NOTE]
    > Dopo aver assegnato la licenza, Microsoft potrebbe non comparire inizialmente nell'elenco come provider di servizi di audioconferenza. In questo caso, disconnettersi dall'interfaccia di amministrazione o premere CTRL+F5 per aggiornare la finestra del browser.
   
 ## <a name="enable-or-disable-emails-sent-to-audio-conferencing-users"></a>Abilitare o disabilitare i messaggi di posta elettronica inviati agli utenti dei servizi di audioconferenza
 
-### <a name="enable-or-disable-using-the-microsoft-teams-admin-center"></a>Abilitare o disabilitare l'uso dell'interfaccia di amministrazione di Microsoft Teams
+### <a name="enable-or-disable-using-the-microsoft-teams-admin-center"></a>Abilitare o disabilitare l'interfaccia di amministrazione di Microsoft Teams
 
 1. Nel riquadro di spostamento sinistro, passare a **Riunioni** > **Bridge di conferenza**.
 
@@ -72,7 +71,7 @@ Potrebbe essere più facile visualizzare tutte le impostazioni dei servizi di au
 
 ### <a name="enable-or-disable-using-windows-powershell"></a>Abilitare o disabilitare l'uso di Windows PowerShell
 
-Per altre informazioni, vedere Microsoft Teams [informazioni di riferimento su PowerShell](/powershell/module/teams/?view=teams-ps).
+Per altre informazioni, vedere le [informazioni di riferimento su PowerShell di Microsoft Teams](/powershell/module/teams/?view=teams-ps) .
   
 ## <a name="reset-the-meeting-conference-id"></a>Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
 
@@ -90,7 +89,7 @@ See [Reset a conference ID for a user](reset-a-conference-id-for-a-user-in-teams
 
 A ogni riunione che un utente pianifica viene assegnato un ID conferenza univoco. Anche se un ID conferenza verrà creato e assegnato automaticamente a un utente, in alcuni casi l'utente potrebbe non voler usare questo ID e vuoi impostarlo su un determinato numero oppure gli utenti non riescono a ricordare o hanno perso l'ID conferenza.
 
-### <a name="reset-a-conference-organizers-pin-using-the-microsoft-teams-admin-center"></a>Reimpostare il PIN di un organizzatore di conferenze tramite l'interfaccia di amministrazione di Microsoft Teams
+### <a name="reset-a-conference-organizers-pin-using-the-microsoft-teams-admin-center"></a>Reimpostare il PIN di un organizzatore di conferenze usando l'interfaccia di amministrazione di Microsoft Teams
 
 1. Nel riquadro di spostamento sinistro fare clic su **Utenti** e quindi selezionare l'utente dall'elenco di utenti disponibili.
 
@@ -117,14 +116,14 @@ See [Send an email to a user with their Audio Conferencing information](send-an-
 
 ### <a name="set-invite-phone-numbers-using-the-microsoft-teams-admin-center"></a>Impostare i numeri di telefono di invito tramite l'interfaccia di amministrazione di Microsoft Teams
 
-Consulta [Impostare i numeri di telefono inclusi negli inviti in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md).
+Vedere [Impostare i numeri di telefono inclusi negli inviti in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md).
 
 > [!NOTE]
-> È anche possibile impostare i numeri di telefono aggiungendoli al *criterio TeamsAudioconferencing* e assegnando il criterio agli utenti. I numeri verdi e a tariffa aggiunti ai criteri hanno la precedenza sui numeri di telefono impostati singolarmente per gli utenti tramite il riquadro delle impostazioni dei servizi di audioconferenza. Se non vengono aggiunti numeri di telefono al *criterio Teamsaudioconferencing*, il numero di telefono impostato singolarmente per gli utenti tramite il riquadro delle impostazioni dei servizi di audioconferenza verrà visualizzato nelle convocazioni di riunione Microsoft Teams. Ulteriori informazioni sono disponibili [nelle impostazioni dei criteri per i servizi di audioconferenza per i numeri verdi e a pagamento](audio-conferencing-toll-free-numbers-policy.md).
+> È anche possibile impostare i numeri di telefono aggiungendoli al *criterio TeamsAudioconferencing* e assegnando il criterio agli utenti. I numeri verdi e a tariffa aggiunti ai criteri hanno la precedenza sui numeri di telefono impostati singolarmente per gli utenti tramite il riquadro delle impostazioni dei servizi di audioconferenza. Se non vengono aggiunti numeri di telefono al *criterio Teamsaudioconferencing*, il numero di telefono impostato singolarmente per gli utenti tramite il riquadro delle impostazioni dei servizi di audioconferenza verrà visualizzato nelle convocazioni di riunione di Microsoft Teams. Ulteriori informazioni sono disponibili [nelle impostazioni dei criteri per i servizi di audioconferenza per i numeri verdi e a pagamento](audio-conferencing-toll-free-numbers-policy.md).
 
 ## <a name="choose-audio-conferencing-bridge-settings"></a>Scegli le impostazioni del bridge per i servizi di audioconferenza
 
-### <a name="set-the-meeting-experience-when-callers-join-a-meeting-using-the-microsoft-teams-admin-center"></a>Impostare l'esperienza della riunione quando i chiamanti partecipano a una riunione utilizzando l'interfaccia di amministrazione di Microsoft Teams
+### <a name="set-the-meeting-experience-when-callers-join-a-meeting-using-the-microsoft-teams-admin-center"></a>Impostare l'esperienza della riunione quando i chiamanti partecipano a una riunione usando l'interfaccia di amministrazione di Microsoft Teams
 
 1. Nel riquadro di spostamento sinistro, passare a **Riunioni** > **Bridge di conferenza**.
 
@@ -173,7 +172,7 @@ See [Send an email to a user with their Audio Conferencing information](send-an-
 
 ## <a name="see-and-set-the-primary-default-and-secondary-alternate-languages-on-an-audio-conferencing-bridge"></a>Visualizzare e impostare le lingue primaria (predefinita) e secondaria (alternativa) in un bridge di audioconferenza
 
-### <a name="see-primary-and-secondary-languages-using-the-microsoft-teams-admin-center"></a>Visualizzare le lingue primaria e secondaria usando l'interfaccia di amministrazione di Microsoft Teams
+### <a name="see-primary-and-secondary-languages-using-the-microsoft-teams-admin-center"></a>Visualizzare le lingue primaria e secondaria con l'interfaccia di amministrazione di Microsoft Teams
 
 1. Nel riquadro di spostamento sinistro, passare a **Riunioni** > **Bridge di conferenza**.
 

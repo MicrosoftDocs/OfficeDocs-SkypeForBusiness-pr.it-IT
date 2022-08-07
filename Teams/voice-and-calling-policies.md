@@ -7,24 +7,21 @@ ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: ''
 search.appverid: ''
-description: Informazioni sui criteri di Teams voce e chiamate.
+description: Informazioni sui criteri vocali e di chiamata di Teams.
 audience: admin
 ms.localizationpriority: medium
-MS.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
-appliesto:
-- Microsoft Teams
-ms.openlocfilehash: 8a63aa772d94a4a385301315d1c1bd3b6488fa3b
-ms.sourcegitcommit: 9532eb79310cd653010565607fa394f2b8dd182d
+ms.collection:
+- M365-voice
+ms.openlocfilehash: 5a6676d29a439ed978385d096c6e8b0584049557
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65646465"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67270291"
 ---
 # <a name="manage-voice-and-calling-policies-in-microsoft-teams"></a>Gestire i criteri vocali e di chiamata in Microsoft Teams
 
-I criteri vocali e di chiamata vengono usati per controllare la voce e le chiamate in Microsoft Teams.
+I criteri vocali e di chiamata vengono usati per controllare le chiamate e i comandi vocali in Microsoft Teams.
 
 ## <a name="emergency-calling-policies"></a>Criteri per le chiamate di emergenza
 
@@ -34,7 +31,7 @@ I criteri [per le chiamate di emergenza](manage-emergency-calling-policies.md) c
 
 ## <a name="emergency-call-routing-policies"></a>Criteri di routing delle chiamate di emergenza
 
-Se l'organizzazione ha distribuito **Sistema telefonico Routing diretto**, è possibile utilizzare i [criteri di routing delle chiamate di emergenza](manage-emergency-call-routing-policies.md) per determinare dove vengono instradate le chiamate di emergenza, se sono abilitati i servizi di emergenza avanzati e quali numeri vengono utilizzati per i servizi di emergenza. Questi criteri vengono gestiti tramite PowerShell o nell'interfaccia di amministrazione di Microsoft Teams.
+Se l'organizzazione ha distribuito il **routing diretto del sistema telefonico**, puoi utilizzare i [criteri di routing delle chiamate di emergenza](manage-emergency-call-routing-policies.md) per determinare dove vengono instradate le chiamate di emergenza, se i servizi di emergenza avanzati sono abilitati e quali numeri vengono utilizzati per i servizi di emergenza. Questi criteri vengono gestiti tramite PowerShell o nell'interfaccia di amministrazione di Microsoft Teams.
 
 ![Screenshot dei criteri di routing delle chiamate di emergenza.](media/emergency-call-routing-policy.png)
 
@@ -46,7 +43,7 @@ Se l'organizzazione ha distribuito **Sistema telefonico Routing diretto**, è po
 
 ## <a name="voice-routing-policies"></a>Criteri di routing vocale
 
-Un [criterio di routing vocale](manage-voice-routing-policies.md) è un contenitore per i record di utilizzo PSTN (Public Switched Telephone Network). È possibile usare questi criteri se l'organizzazione ha distribuito **Sistema telefonico Direct Routing**. I criteri di routing vocale possono essere gestiti con PowerShell o nell'interfaccia di amministrazione di Teams.
+Un [criterio di routing vocale](manage-voice-routing-policies.md) è un contenitore per i record di utilizzo PSTN (Public Switched Telephone Network). È possibile usare questi criteri se l'organizzazione ha distribuito **il routing diretto del sistema telefonico**. I criteri di routing vocale possono essere gestiti con PowerShell o nell'interfaccia di amministrazione di Teams.
 
 ![Screenshot dei criteri di routing vocale.](media/voice-routing-policy.png)
 

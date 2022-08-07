@@ -24,19 +24,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per i Paesi Bassi.
-ms.openlocfilehash: f5dad27a387e73cb1792409ae3a28fa41083d435
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per i Paesi Bassi.
+ms.openlocfilehash: df7465334a8383e7af86e3cde8c0b1c0704412f4
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58624738"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67267991"
 ---
 # <a name="availability-in-the-netherlands"></a>Disponibilità nei Paesi Bassi
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per i Paesi Bassi.
+Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per i Paesi Bassi.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -59,8 +59,8 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
     
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali da 120 minuti </li><li>Piano per chiamate nazionali da 240 minuti</li></li><li>Piano per chiamate nazionali da 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti di chiamate nazionali -OR- 600 minuti di chiamate internazionali (a seconda di quale sia stata raggiunta per prima nel mese di calendario)</li></li> 
+|I Piani per chiamate sono disponibili per l'acquisto?  |Sì          |   
+|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li>Piano per chiamate pay-as-you-go </li><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 1200 minuti </li><li> Piano per chiamate internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti viene raggiunto per primo nel mese di calendario)</li></ul>| 
 |È possibile effettuare chiamate in uscita verso numeri premium? <br/> | Al momento non supportato. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    

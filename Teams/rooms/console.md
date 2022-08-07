@@ -12,15 +12,16 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
+- Teams_ITAdmin_Rooms
 ms.custom: seo-marvel-apr2020
 ms.assetid: dae1bfb6-7262-4030-bf53-dc3b3fe971ea
 description: Questo articolo descrive come configurare la console Microsoft Teams Rooms e le relative periferiche.
-ms.openlocfilehash: d3c4f534fbd5395c7e0cda8e095b5a6d7a2b8def
-ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
+ms.openlocfilehash: 2a38154ebca1dfae282722fdb64e76389627ca15
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65761258"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67270111"
 ---
 # <a name="build-a-microsoft-teams-rooms-image"></a>Creare un'immagine Microsoft Teams Rooms
 
@@ -29,7 +30,7 @@ Questo articolo descrive come creare un'immagine Microsoft Teams Rooms per la di
 > [!NOTE]
 > I passaggi seguenti devono essere usati solo quando si crea [un'immagine basata su WIM](/windows-hardware/manufacture/desktop/capture-and-apply-an-image) per la distribuzione di massa. Se stai recuperando singoli dispositivi, contatta l'OEM (Original Equipment Manufacturer) per ricevere supporto.
 
-È consigliabile eseguire questi passaggi solo se gli account Microsoft Teams o Skype for Business e Exchange necessari sono già stati creati e testati come descritto in [Distribuire Microsoft Teams Rooms](rooms-deploy.md). Saranno necessari l'hardware e il software descritti in [Microsoft Teams Rooms requisiti](requirements.md). Questo argomento contiene le sezioni seguenti:
+È consigliabile eseguire questi passaggi solo se gli account di Microsoft Teams o Skype for Business ed Exchange necessari sono già stati creati e testati, come descritto in [Distribuire Microsoft Teams Rooms](rooms-deploy.md). Saranno necessari l'hardware e il software descritti in [Microsoft Teams Rooms requisiti](requirements.md). Questo argomento contiene le sezioni seguenti:
   
 - [Preparare il supporto di installazione](console.md#Prep_Media)
 - [Installare un certificato CA privato nella console](console.md#Certs)
@@ -46,7 +47,7 @@ L'installazione dell'app console Microsoft Teams Rooms richiede un dispositivo d
 > Se non si crea il supporto di installazione di Microsoft Teams Rooms in base a queste istruzioni, è probabile che si verifichi un comportamento imprevisto.
 
 > [!NOTE]
-> La procedura seguente consente di creare il supporto di installazione per l'immagine di nuovi dispositivi Microsoft Teams Rooms. Per impostazione predefinita, i dispositivi esistenti vengono aggiornati automaticamente da Windows Update e dall'Windows Store.
+> La procedura seguente consente di creare il supporto di installazione per l'immagine di nuovi dispositivi Microsoft Teams Rooms. Per impostazione predefinita, i dispositivi esistenti vengono aggiornati automaticamente da Windows Update e Da Windows Store.
 
 > [!IMPORTANT]
 > Il computer Windows 10 usato per creare il supporto di installazione Microsoft Teams Rooms deve trovarsi nella stessa versione o versione successiva di Windows del supporto di installazione di destinazione.
@@ -91,7 +92,7 @@ Ora è necessario applicare il supporto di configurazione creato. Il dispositivo
 
     b. Premi e rilascia il pulsante di alimentazione.
 
-    C. Dopo aver avviato Windows configurazione, rilascia il pulsante di riduzione del volume (-).
+    C. Dopo aver avviato l'installazione di Windows, rilascia il pulsante di riduzione del volume (-).
 
 8. Il sistema verrà arrestato al termine dell'installazione.
     
@@ -111,9 +112,9 @@ In Creator's Update, dovrai usare lo script ApplyCurrentRegionAndLanguage.ps1 in
 
 1. Passare alla modalità Amministrazione.
     
-2. Selezionare il menu Start.
+2. Seleziona il menu Start.
     
-3. Seleziona l'icona dell'ingranaggio per avviare l'app **Impostazioni**.
+3. Seleziona l'icona dell'ingranaggio per avviare l'app **Impostazioni** .
     
 4. Selezionare **Lingua ora&amp;**.
     
@@ -125,7 +126,7 @@ In Creator's Update, dovrai usare lo script ApplyCurrentRegionAndLanguage.ps1 in
     
 8. Installare le funzionalità per la lingua.
     
-9. Non selezionare Imposta come lingua di visualizzazione Windows.
+9. Non selezionare Imposta come lingua di visualizzazione di Windows.
     
 10. Seleziona **Installa**.
     
@@ -152,9 +153,9 @@ La lingua desiderata è ora applicata alla console Microsoft Teams Rooms.
 ## <a name="initial-set-up-of-the-console"></a>Configurazione iniziale della console
 <a name="Initial"> </a>
 
-Dopo aver installato Windows, l'app Microsoft Teams Rooms passerà al processo di configurazione iniziale.
+Dopo l'installazione di Windows, l'app Microsoft Teams Rooms passerà al processo di installazione iniziale.
   
-1. Viene visualizzata la schermata Account utente. Immettere l'indirizzo di accesso all'account microsoft Exchange della risorsa (nel formato user@domain) dell'account della chat room da utilizzare con la console.
+1. Viene visualizzata la schermata Account utente. Immettere l'indirizzo di accesso all'account di risorse di Microsoft Exchange (nel formato user@domain) dell'account della chat room da usare con la console.
     
 2. Immettere la password dell'account della chat room e immetterla di nuovo per verificarla.
    
@@ -162,12 +163,12 @@ Dopo aver installato Windows, l'app Microsoft Teams Rooms passerà al processo d
 
 4. Selezionare **Avanti**.
     
-5. Se si usa Skype for Business e se il dominio SIP Skype for Business è diverso dal dominio Exchange dell'utente, impostare l'FQDN per il Skype for Business Server nella sezione Avanzate. Se non si usa Skype for Business o se il dominio SIP corrisponde al dominio Exchange, lasciare vuota questa sezione.
+5. Se si usa Skype for Business e se il dominio SIP Skype for Business è diverso dal dominio di Exchange dell'utente, impostare l'FQDN per il Skype for Business Server nella sezione Avanzate. Se non si usa Skype for Business o il dominio SIP corrisponde al dominio di Exchange, lasciare vuota questa sezione.
 6. Selezionare **Avanti**.
     
 7. Selezionare **Fine**.
     
-L'app Microsoft Teams Rooms deve accedere a Microsoft Teams o Skype for Business Server con le credenziali immesse in precedenza e dovrebbe anche iniziare a sincronizzare il calendario con Exchange usando le stesse credenziali. Per informazioni dettagliate sull'uso di Teams Rooms, vedere la [Guida di Microsoft Teams Rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).
+L'app Microsoft Teams Rooms deve accedere a Microsoft Teams o Skype for Business Server con le credenziali immesse sopra e dovrebbe anche iniziare a sincronizzare il calendario con Exchange usando le stesse credenziali. Per informazioni dettagliate sull'uso di Teams Rooms, vedere la [Guida di Microsoft Teams Rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).
   
 > [!IMPORTANT]
 > Microsoft Teams Rooms si basa sulla presenza di hardware per console certificato. Anche un'immagine creata correttamente contenente l'app console Microsoft Teams Rooms non verrà avviata oltre la procedura di configurazione iniziale, a meno che non sia stato rilevato l'hardware della console. Per Surface Pro soluzioni basate, il Surface Pro deve essere collegato all'hardware del dock associato per superare questo controllo.
@@ -180,7 +181,7 @@ L'app Microsoft Teams Rooms deve accedere a Microsoft Teams o Skype for Business
 > [!NOTE]
 > Quanto segue si applica solo se ci si connette Teams Rooms a Skype for Business.
 
-Microsoft Teams Rooms deve considerare attendibili i certificati usati dai server a cui si connette. Se l'Autorità di certificazione è privata, ad esempio una distribuzione locale con Active Directory e l'autorità di certificazione Windows, è possibile aggiungere il certificato a Microsoft Teams Rooms in due modi:
+Microsoft Teams Rooms deve considerare attendibili i certificati usati dai server a cui si connette. Se l'Autorità di certificazione è privata, ad esempio una distribuzione locale con Active Directory e l'Autorità di certificazione Windows, è possibile aggiungere il certificato a Microsoft Teams Rooms in due modi:
   
 - È possibile unire la console ad Active Directory e che aggiungerà automaticamente i certificati necessari dato che l'autorità di certificazione è pubblicata in Active Directory (opzione di distribuzione normale).
     
@@ -188,7 +189,7 @@ Microsoft Teams Rooms deve considerare attendibili i certificati usati dai serve
     
 ### <a name="to-manually-install-the-certificate"></a>Per installare manualmente il certificato
 
-1. Scaricare il certificato CA nel computer e salvarlo in "C:\Skype Room Systems\x64\Scripts\Provisioning\CAcertificate.cer".
+1. Scarica il certificato CA nel computer e salvalo in "C:\Skype Room Systems\x64\Scripts\Provisioning\CAcertificate.cer".
     
 2. Posiziona la console in modalità di amministrazione (vedi [modalità Amministrazione e gestione dei dispositivi](rooms-operations.md#AdminMode)).
     
@@ -233,7 +234,7 @@ Utilizza l'elenco di controllo seguente mentre esegui una verifica finale che la
 |Completato |Verifica |
 |:-----:|:-----|
 |☐   |Il nome dell'account della sala e il numero di telefono (se PSTN è abilitato) vengono visualizzati correttamente   |
-|☐   |Windows nome del computer è impostato correttamente (utile per l'amministrazione remota)   |
+|☐   |Il nome del computer Windows è impostato correttamente (utile per l'amministrazione remota)   |
 |☐   |Password dell'account amministratore impostata e verificata   |
 |☐   |Tutti gli aggiornamenti del firmware sono stati applicati   |
    
@@ -241,7 +242,7 @@ Utilizza l'elenco di controllo seguente mentre esegui una verifica finale che la
 
 |Completato |Verifica |
 |:-----:|:-----|
-|☐   |Fotocamera versione del firmware per le periferiche è corretta (se applicabile)   |
+|☐   |La versione del firmware della periferica della fotocamera è corretta (se applicabile)   |
 |☐   |Fotocamera funzionale e posizionata in modo ottimale   |
 |☐   |Impostazioni per il dispositivo predefinito di riproduzione e il dispositivo di comunicazione predefinito per la riproduzione impostati sulla periferica audio prevista   |
 |☐   |Impostazioni per la registrazione del dispositivo di comunicazione predefinito impostato sulla periferica audio prevista   |

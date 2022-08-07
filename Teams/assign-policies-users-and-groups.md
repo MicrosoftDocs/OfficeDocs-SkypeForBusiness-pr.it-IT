@@ -18,12 +18,12 @@ description: Scopri i diversi modi per assegnare criteri a utenti e gruppi in Mi
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: d3a77082fe3fb2e1f070c11f1ff85e6d883b2704
-ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
+ms.openlocfilehash: 9d286d4451ce143a54beda6e457c12ba059832b3
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67156564"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67267581"
 ---
 # <a name="assign-policies-to-users-and-groups"></a>Assegnare criteri a utenti e gruppi
 
@@ -41,7 +41,7 @@ Per assegnare un criterio a un utente:
 2. Selezionare l'utente facendo clic a sinistra del nome utente e quindi selezionare **Modifica impostazioni**.
 3. Selezionare il criterio da assegnare e quindi selezionare **Applica**.
 
-![Assegnare un criterio a un utente nell'interfaccia di amministrazione di Teams.](media/assign-policy-user.png)
+    :::image type="content" source="media/assign-policies-users-edit-settings.png"  alt-text="Screenshot del riquadro Modifica impostazioni in Gestisci utenti." lightbox="media/assign-policies-users-edit-settings-expanded.png":::
 
 > [!NOTE]
 > Per annullare l'assegnazione di criteri specializzati da un utente, è possibile impostare ogni criterio su **Globale (impostazione predefinita a livello di organizzazione).** È anche possibile rimuovere le assegnazioni dei criteri in blocco per tutti gli utenti assegnati direttamente a un criterio. Per altre informazioni, vedere [Annullare l'assegnazione di criteri in blocco](#unassign-policies-in-bulk).
@@ -50,11 +50,11 @@ Per assegnare un criterio a un utente:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare alla pagina dei criteri.
 2. Selezionare il criterio da assegnare facendo clic a sinistra del nome del criterio.
-3. Scegliere **Gestisci utenti**.
+3. Selezionare **Assegna utenti**.
 4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 5. Dopo aver aggiunto tutti gli utenti, selezionare **Applica**.
 
-![Assegnare un criterio a un utente nell'interfaccia di amministrazione di Teams tramite un secondo metodo.](media/assign-policy-user2.png)
+    :::image type="content" source="media/assign-policies-user-example.png" alt-text="Screenshot che mostra come assegnare un criterio a un utente nell'interfaccia di amministrazione di Teams tramite un secondo metodo." lightbox="media/assign-policies-user-example-expanded.png":::
 
 ### <a name="use-powershell"></a>Usare PowerShell
 
@@ -142,7 +142,7 @@ Se non si specifica una classificazione, all'assegnazione dei criteri viene asse
     3. Selezionare il criterio da assegnare.
     4. Selezionare **Applica**.
 
-![Assegnare un criterio a un gruppo nell'interfaccia di amministrazione di Teams.](media/assign-policy-group.png)
+        :::image type="content" source="media/assign-policies-groups-messaging.png" alt-text="Screenshot che mostra come assegnare un criterio a un gruppo nell'interfaccia di amministrazione di Teams." lightbox="media/assign-policies-groups-messaging-expanded.png":::
 
 Per rimuovere un'assegnazione di Criteri di gruppo, nella scheda **Assegnazione criteri di gruppo** della pagina dei criteri selezionare l'assegnazione di gruppo e quindi **selezionare Rimuovi**.
 

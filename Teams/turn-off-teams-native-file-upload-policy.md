@@ -1,5 +1,5 @@
 ---
-title: Disattivare Teams criteri di Upload file nativi
+title: Disattivare i criteri di caricamento di file nativi di Teams
 author: danieasmith
 ms.author: danismith
 manager: serdars
@@ -7,26 +7,25 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: ''
 search.appverid: ''
-description: Informazioni su come creare, impostare, assegnare e modificare i criteri di Teams file con PowerShell.
+description: Informazioni su come creare, impostare, assegnare e modificare i criteri per i file di Teams con PowerShell.
 audience: admin
 ms.localizationpriority: medium
-MS.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2b6089e93b4754fa35edaa9befb5cfa6bb176238
-ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
+ms.collection:
+- M365-collaboration
+ms.openlocfilehash: 1993371099d0712d21106987f21575e85e181ad7
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65681907"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268928"
 ---
-# <a name="turn-off-teams-native-file-upload-policy"></a>Disattivare Teams criteri di Upload file nativi
+# <a name="turn-off-teams-native-file-upload-policy"></a>Disattivare i criteri di caricamento di file nativi di Teams
 
 Microsoft Teams usa OneDrive e SharePoint per archiviare e condividere contenuti, ma alcune organizzazioni e utenti potrebbero preferire l'uso di provider di archiviazione di terze parti.  
 
-Se l'organizzazione sceglie una terza parte per l'archiviazione del contenuto, è necessario disattivare il `NativeFileEntryPoints` parametro nei criteri File di Teams. Questo parametro è abilitato per impostazione predefinita, che mostra l'opzione per caricare contenuto da OneDrive o SharePoint a chat o canali Teams.
+Se l'organizzazione sceglie una terza parte per l'archiviazione dei contenuti, è necessario disattivare il `NativeFileEntryPoints` parametro nei criteri File di Teams. Questo parametro è abilitato per impostazione predefinita, che mostra l'opzione per caricare contenuti da OneDrive o SharePoint alle chat o ai canali di Teams.
 
 Questo articolo illustra come creare, impostare, assegnare e rimuovere il `NativeFileEntryPoints` parametro con PowerShell.
 
@@ -37,17 +36,17 @@ Questo articolo illustra come creare, impostare, assegnare e rimuovere il `Nativ
 
 ### <a name="set-up-microsoft-powershell"></a>Configurare Microsoft PowerShell
 
-Attualmente, questo criterio non può essere modificato nell'interfaccia di amministrazione di Teams. L'amministratore Microsoft 365 tenant dell'organizzazione dovrà apportare le modifiche usando i cmdlet di PowerShell descritti più avanti in questo articolo.
+Attualmente, questo criterio non può essere modificato nell'interfaccia di amministrazione di Teams. L'amministratore del tenant di Microsoft 365 dell'organizzazione dovrà apportare le modifiche usando i cmdlet di PowerShell descritti più avanti in questo articolo.
 
-Per informazioni su come installare il modulo di Teams di PowerShell con PowerShell Gallery, vedere [Installare Microsoft Teams modulo di PowerShell](teams-powershell-install.md).
+Informazioni su come installare il modulo Di Teams di PowerShell usando PowerShell Gallery leggendo [Installare il modulo PowerShell di Microsoft Teams](teams-powershell-install.md).
 
-Per installare o scaricare il modulo Teams PowerShell, vedere [PowerShell Gallery for Microsoft Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/3.0.0).
+Per installare o scaricare il modulo PowerShell di Teams, vedere [PowerShell Gallery per Microsoft Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/3.0.0).
 
-Per altre informazioni su come configurare PowerShell per la gestione Teams, vedere [Gestire Teams con Microsoft Teams PowerShell](teams-powershell-managing-teams.md).
+Per altre informazioni su come configurare PowerShell per la gestione di Teams, vedere [Gestire Teams con Microsoft Teams PowerShell](teams-powershell-managing-teams.md).
 
-### <a name="allow-third-party-apps-in-teams-admin-center"></a>Consenti app di terze parti nel Centro Teams Amministrazione
+### <a name="allow-third-party-apps-in-teams-admin-center"></a>Consentire app di terze parti in Teams Amministrazione Center
 
-Questo passaggio non è necessario per modificare i criteri file Teams, ma è necessario quando si è pronti per integrare il provider di archiviazione di terze parti nell'esperienza Teams degli utenti.
+Questo passaggio non è necessario per modificare i criteri file di Teams, ma è necessario quando si è pronti per integrare il provider di archiviazione di terze parti nell'esperienza di Teams degli utenti.
 
 L'amministratore del tenant di Microsoft 365 dovrà abilitare i criteri "Consenti app di terze parti" nell'interfaccia di amministrazione di Teams.
 
@@ -67,7 +66,7 @@ Set-CsTeamsFilesPolicy -Identity Global -NativeFileEntryPoints Disabled
 
 ### <a name="check-the-status-of-your-tenant"></a>Controllare lo stato del tenant  
 
-Per visualizzare lo stato corrente dei criteri file Teams del tenant, usare il `Get-CsTeamsFilesPolicy` cmdlet.
+Per visualizzare lo stato corrente dei criteri per i file di Teams del tenant, usare il `Get-CsTeamsFilesPolicy` cmdlet.
 
 ```powershell
 Get-CsTeamsFilesPolicy -Identity Global
@@ -87,7 +86,7 @@ Set-CsTeamsFilesPolicy -Identity Global -NativeFileEntryPoints Disabled
 
 ### <a name="remove-the-policy-for-your-users"></a>Rimuovere i criteri per gli utenti
 
-Per rimuovere il criterio file Teams per gli utenti, usare il `Remove-CsTeamsFilesPolicy` cmdlet.
+Per rimuovere i criteri File di Teams per gli utenti, usare il `Remove-CsTeamsFilesPolicy` cmdlet.
 
 ```powershell
 Remove-CsTeamsFilesPolicy -Identity Global
@@ -95,7 +94,7 @@ Remove-CsTeamsFilesPolicy -Identity Global
 
 ## <a name="turn-off-nativefileentrypoints-for-specific-users"></a>Disattivare NativeFileEntryPoints per utenti specifici
 
-È anche possibile aggiornare il criterio file Teams per utenti specifici creando una nuova stringa di criteri `-Identity` File di Teams e assegnando il criterio appena creato agli utenti.
+È anche possibile aggiornare i criteri File di Teams per utenti specifici creando una nuova stringa di criteri `-Identity` File di Teams e assegnando il criterio appena creato agli utenti.
 
 ### <a name="sample-powershell-policy-cmdlet-for-specific-users"></a>Esempio di cmdlet dei criteri di PowerShell per utenti specifici
 
@@ -117,7 +116,7 @@ Grant-CsTeamsFilesPolicy  -identity "user email id" -PolicyName UserPolicy
 
 ### <a name="update-the-policy"></a>Aggiornare i criteri
 
-Se è necessario modificare l'impostazione del nuovo criterio file `UserPolicy`di Teams, usare il `Set-CsTeamsFilePolicy` cmdlet.
+Se è necessario modificare l'impostazione dei nuovi criteri per i file `UserPolicy`di Teams, usare il `Set-CsTeamsFilePolicy` cmdlet.
 
 ```powershell
 Set-CsTeamsFilesPolicy -Identity UserPolicy -NativeFileEntryPoints Enabled
@@ -125,10 +124,10 @@ Set-CsTeamsFilesPolicy -Identity UserPolicy -NativeFileEntryPoints Enabled
 
 ### <a name="remove-the-policy-for-the-complete-list-of-users"></a>Rimuovere il criterio per l'elenco completo degli utenti
 
-Per rimuovere il criterio da tutti gli utenti assegnati al criterio `UserPolicy`file di Teams, usare il `Remove-CsTeamsFilesPolicy` cmdlet.
+Per rimuovere il criterio da tutti gli utenti assegnati al criterio `UserPolicy`File di Teams, usare il `Remove-CsTeamsFilesPolicy` cmdlet.
 
 ```powershell
 Remove-CsTeamsFilesPolicy -Identity UserPolicy
 ```
 >[!NOTE]
-> Dopo aver apportato modifiche al criterio, consentire fino a 12 ore per la visualizzazione delle modifiche nei client Teams degli utenti.
+> Dopo aver apportato modifiche al criterio, consenti fino a 12 ore per la visualizzazione delle modifiche nei client di Teams degli utenti.

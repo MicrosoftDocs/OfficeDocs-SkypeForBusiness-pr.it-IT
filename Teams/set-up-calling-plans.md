@@ -13,6 +13,7 @@ ms.collection:
 - M365-voice
 - m365solution-voice
 - m365solution-scenario
+- m365initiative-voice
 audience: Admin
 appliesto:
 - Skype for Business
@@ -25,12 +26,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Scopri come configurare i Piani per chiamate, inclusi i piani disponibili nella tua area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi per gli interventi di emergenza & posizioni.
-ms.openlocfilehash: ddf2cc5559ae61a741de24e5b2157826617e5ca2
-ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
+ms.openlocfilehash: a4acb51bad8e8ad309357fcd497c1554fc568928
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67156674"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67271571"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
 

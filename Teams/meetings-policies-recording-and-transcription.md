@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.recordingandtranscription
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per la registrazione e la trascrizione.
-ms.openlocfilehash: da7a5d43231abcb00339f2ffc2c57c7e90ff2d2e
-ms.sourcegitcommit: 9532eb79310cd653010565607fa394f2b8dd182d
+ms.openlocfilehash: 12f8be910c713a9ce023ac17c956ef50f5889792
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65646365"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268981"
 ---
 # <a name="meeting-policy-settings-for-recording--transcription"></a>Impostazioni dei criteri riunione per la registrazione & trascrizione
 
@@ -39,7 +39,7 @@ Questa è una combinazione di criterio per organizzatore e criterio per utente. 
 
 Con l’attivazione di questa impostazione, viene creata una copia della trascrizione archiviata con la registrazione della riunione, che permette di eseguire **ricerche**, **CC** e **trascrizioni** nella registrazione della riunione.
 
-La trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che impostano la lingua o parlano inglese nelle riunioni Teams.
+La trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che impostano la lingua o parlano inglese nelle riunioni di Teams.
 
 ## <a name="allow-cloud-recording"></a>Consenti la registrazione cloud
 
@@ -67,9 +67,10 @@ Per altre informazioni sulla registrazione di una riunione cloud, vedere [Regist
 
 ## <a name="store-recordings-outside-of-your-country-or-region"></a>Archiviare le registrazioni al di fuori del paese o dell'area geografica
 
-Questo criterio controlla se i record delle riunioni possono essere archiviati in modo permanente in un altro paese o area geografica. Se è abilitata, non è possibile eseguire la migrazione delle registrazioni. Per altre informazioni sulle riunioni sul cloud e sulla posizione in cui vengono archiviate le registrazioni, vedere [Teams registrazione di riunioni cloud](cloud-recording.md).
+Questo criterio controlla se i record delle riunioni possono essere archiviati in modo permanente in un altro paese o area geografica. Se è abilitata, non è possibile eseguire la migrazione delle registrazioni. Per altre informazioni sulle riunioni sul cloud e sulla posizione in cui vengono archiviate le registrazioni, vedere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Assegnare criteri agli utenti in Teams](policy-assignment-overview.md)
 - [Registrazione di riunioni nel cloud](cloud-recording.md)
+- [Criteri per le riunioni e scadenza delle riunioni in Microsoft Teams](meeting-expiration.md)

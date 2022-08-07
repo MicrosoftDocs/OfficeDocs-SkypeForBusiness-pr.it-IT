@@ -11,19 +11,19 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-collaboration
-- m365initiative-meetings
+- Teams_ITAdmin_MTRP
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Dati e informazioni sulla privacy
 f1keywords: Microsoft Teams Rooms Managed Service Data and Privacy Information
-ms.openlocfilehash: 3fa24a1009c5480c308dfc35306286d470178820
-ms.sourcegitcommit: e38776625a3623216b0d5f092fffaff67519b1a6
+ms.openlocfilehash: 5799288005a5d30152a6f810c0aa40d451198390
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057086"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67270301"
 ---
 # <a name="approach"></a>Approccio
 
@@ -37,7 +37,7 @@ La tecnologia segue i processi di privacy per assicurarsi che rispetti le promes
 > [!Note]
 > Riferimenti accidentali a un singolo utente possono essere presenti nel log attività durante l'uso del dispositivo.
 
-## <a name="who-can-access-data"></a>Who possibile accedere ai dati
+## <a name="who-can-access-data"></a>Chi può accedere ai dati
 
 I servizi gestiti adottano misure efficaci per proteggere i dati dei clienti da accessi o utilizzi non appropriati da parte di persone non autorizzate. Tali misure includono la limitazione dell'accesso da parte di personale e subcontraenti Microsoft.
 
@@ -74,7 +74,7 @@ I servizi gestiti non monitorano né registrano contenuti audio, video, multimed
 |Categoria|Dettagli|Motivo della query|
 | :- | :- | :- |
 |Raccolta e gestione dei dati in corso|Indirizzo IP, identità dell'account della chat room (Exchange, Skype for Business e/o Teams), coordinate della posizione, e-mail e comunicazione all'interno del portale con Microsoft o software|Identificare e connettersi al sistema in gestione; identificare, diagnosticare e mitigare i guasti; tenere traccia dell'utilizzo, dell'analisi e dei dati analitici; stato della connettività di query e ripristino|
-|Raccolta e gestione dei dati ad hoc|Informazioni sul registro eventi, attività utente/identità dell'utente della chat room, file di log connesso insieme a informazioni di diagnostica, query di sistema Windows (esempi: Elenco di dispositivi USB, stato di alimentazione e così via)|Identificare, diagnosticare e ridurre gli errori e per l'utilizzo, l'analisi e le informazioni dettagliate|
+|Raccolta e gestione dei dati ad hoc|Informazioni sul registro eventi, attività utente/identità dall'utente della chat room connesso al file di log insieme alle informazioni di diagnostica, query di sistema di Windows (esempi: elenco di dispositivi USB, stato di alimentazione e così via)|Identificare, diagnosticare e ridurre gli errori e per l'utilizzo, l'analisi e le informazioni dettagliate|
 
 Alcuni dati sensibili nel log attività dispositivo vengono oscurati localmente (non raccolti dai servizi gestiti):
 
@@ -100,4 +100,4 @@ I servizi gestiti forniscono supporto regionale per la residenza dei dati tramit
 
 ## <a name="more-resources"></a>Altre risorse
 
-Microsoft Teams Rooms Sicurezza:/microsoftteams/rooms/security Informativa sulla privacy di Microsoft: https://aka.ms/privacy Gestione dei dati presso Microsoft: https://www.microsoft.com/trust-center/privacy/data-management Descrizione del servizio Servizi gestiti: [Microsoft Teams Servizio gestito in sala](microsoft-teams-rooms-premium.md)
+Microsoft Teams Rooms Sicurezza:/microsoftteams/rooms/security Informativa sulla privacy di Microsoft: https://aka.ms/privacy Gestione dei dati presso Microsoft: https://www.microsoft.com/trust-center/privacy/data-management Descrizione del servizio Servizi gestiti: [Servizio gestito da sala di Microsoft Teams](microsoft-teams-rooms-premium.md)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams Rooms riferimento
+title: riferimento Microsoft Teams Rooms
 author: donnah007
 ms.author: v-donnahill
 manager: serdars
@@ -10,37 +10,36 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-collaboration
-- m365initiative-meetings
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Materiale di riferimento
 f1keywords: ''
-ms.openlocfilehash: 5f3b23078f29cba82809b5ef22440dd0ddf838fb
-ms.sourcegitcommit: 268660f101609852f02f3f9d1a8436f2a99dade7
+ms.openlocfilehash: e75742cb209018030ca9d6600c518e210b396386
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62071024"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268411"
 ---
-# <a name="managing-room-software-stack"></a>Gestione dello stack di software room  
-In ogni stanza, diverse parti dello stack del software lavorano tutte insieme per offrire l'esperienza. A un livello elevato, possono essere riepilogate nel modo seguente: 
+# <a name="managing-room-software-stack"></a>Gestione dello stack di software per sale  
+In ogni stanza, diverse parti dello stack software lavorano tutte insieme per offrire l'esperienza. Ad alto livello, possono essere riassunti nel modo seguente: 
 
 ![Screenshot del riepilogo dello stack di software](../media/update-management-006.jpg)
 
-Per garantire un'esperienza di riunione positiva ogni giorno in ogni sala, è importante **standardizzare** ogni componente software in esecuzione in ognuna delle sale e implementare le correzioni nelle chat room a seconda della configurazione. È anche comune vedere i clienti configurare il proprio processo di convalida per acquisire confidenza su eventuali correzioni in sospeso, verificando che risolve davvero un problema che potrebbero riscontrare o visualizza in anteprima le caratteristiche per rendere l'organizzazione pronta per la modifica.  
+Per garantire un'esperienza di riunione positiva ogni giorno in ogni sala, è importante **standardizzare ogni componente software** in esecuzione in ognuna delle sale e implementare le correzioni nelle sale a seconda della configurazione. È anche comune che i clienti configurino il proprio processo di convalida per acquisire fiducia su eventuali correzioni in sospeso verificando che risolve davvero un problema che potrebbero riscontrare o le funzionalità di anteprima per preparare l'organizzazione per la modifica.  
 
-Managed Services per Microsoft Teams Rooms gestisce tutto quanto sopra, in modo da non doversi preoccupare di ottenere un aggiornamento o di risolvere i problemi relativi a un aggiornamento. In questa sezione verrà descritto il funzionamento degli aggiornamenti software gestiti.  
+Managed Services for Microsoft Teams Rooms gestisce tutti gli elementi precedenti in modo da non doversi preoccupare di ottenere un aggiornamento o risolvere i problemi relativi a un aggiornamento. In questa sezione verrà descritto il funzionamento degli aggiornamenti software gestiti.  
 
-## <a name="managing-to-a-good-state"></a>Gestione di uno stato valido 
-L'obiettivo principale è mantenere le sale in esecuzione e disponibili per l'organizzazione. Gli esperti di Servizi gestiti lavorano costantemente per conto dell'utente per curare, convalidare e distribuire gli aggiornamenti nelle sale di produzione. In alcuni casi, può essere necessario assegnare priorità all'integrità delle chat room rispetto alle nuove funzionalità e alle nuove versioni da convalidare prima della loro implementazione.
+## <a name="managing-to-a-good-state"></a>Gestione di uno stato di buono stato 
+Il nostro obiettivo principale è mantenere le sale in esecuzione e disponibili per la tua organizzazione. Gli esperti di Servizi gestiti lavorano costantemente per conto dell'utente per curare, convalidare e distribuire gli aggiornamenti nelle sale di produzione. In alcuni casi, è possibile che l'integrità della stanza venga assegnata in ordine di priorità rispetto alle nuove funzionalità e versioni da convalidare prima che vengano distribuite.
 
-Soprattutto, significa che non è necessario preoccuparsi di investire tempo per conoscere i dettagli di questi aggiornamenti e convalidarli manualmente. In caso di problemi relativi a un aggiornamento specifico e a una chat room specifica, microsoft continuerà a collaborare per risolverli e risolverli.  
+Soprattutto, significa che non devi preoccuparti di investire tempo per imparare i dettagli di questi aggiornamenti e convalidarli manualmente. Se si verificano problemi con un aggiornamento specifico e con qualsiasi chat room specifica, microsoft collaborerà per risolverli.  
 
-Il processo di distribuzione degli aggiornamenti, pertanto, può essere suddiviso in quanto segue:
+Di conseguenza, il processo di distribuzione degli aggiornamenti può essere suddiviso in:
 
-- Il team di Servizi gestiti identificherà in modo proattivo gli aggiornamenti, li convaliderà e quindi li promuoverà per il rilascio nell'ambiente.
-- Gli aggiornamenti recapitati nelle chat room verranno ordinati per evitare conflitti e interazioni e quindi pianificati per evitare orari di funzionamento regolari.
-- Il sistema ad anello offre la possibilità di essere sempre al corrente degli aggiornamenti applicati alle stanze senza dover eseguire alcun lavoro a gambe.
-- Managed Services monitora gli aggiornamenti e avvisa automaticamente il centro operativo della sala per il monitoraggio dei problemi e lavora con l'utente per risolverli.
+- Il team di Servizi gestiti identificherà in modo proattivo gli aggiornamenti, li convaliderà e li promuovi per il rilascio nell'ambiente.
+- Aggiornamenti consegnate ai gruppi verranno ordinate per evitare conflitti e interazioni pianificate per evitare le normali ore di attività.
+- Il sistema di anello offre la possibilità di essere a conoscenza degli aggiornamenti applicati alle stanze senza che tu faccia alcun lavoro.
+- I servizi gestiti monitoreranno gli aggiornamenti e avviseranno automaticamente il centro operativo della sala per il monitoraggio dei problemi e collaboreranno con l'utente per risolverli.

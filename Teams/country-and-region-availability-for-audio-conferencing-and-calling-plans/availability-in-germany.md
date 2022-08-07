@@ -24,26 +24,26 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Germania.
-ms.openlocfilehash: 5d0ef40f401643b15ffce62a94fc1685161480ee
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Germania.
+ms.openlocfilehash: 831fff27c34d0ab9d86463932871c8586700c83d
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58633320"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268621"
 ---
 # <a name="availability-in-germany"></a>Disponibilità in Germania
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Germania.
+Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Germania.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Monaco di Baviera</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Monaco</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibile  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -59,8 +59,8 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
     
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali da 120 minuti </li><li>Piano per chiamate nazionali da 240 minuti</li></li><li>Piano per chiamate nazionali da 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti di chiamate nazionali O 600 minuti di chiamate internazionali (a seconda di quale viene raggiunto per primo entro un mese di calendario)</li></li>|
+|I Piani per chiamate sono disponibili per l'acquisto?  |Sì          |   
+|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li>Piano per chiamate pay-as-you-go </li><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 1200 minuti </li><li> Piano per chiamate internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti viene raggiunto per primo nel mese di calendario)</li></ul>|
 |È possibile effettuare chiamate in uscita verso numeri premium? <br/> | Al momento non supportato. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
@@ -68,7 +68,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul> <li>Francoforte  <li> Monaco di Baviera </ul> <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul> <li>Francoforte  <li> Monaco </ul> <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    

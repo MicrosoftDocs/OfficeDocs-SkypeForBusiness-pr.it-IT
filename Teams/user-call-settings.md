@@ -11,23 +11,21 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
-- m365initiative-voice
 audience: Admin
-appliesto:
-- Microsoft Teams
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
-- ms.teamsadmincenter.callqueues.overview"
-- Phone System - seo-marvel-apr2020
+- ms.teamsadmincenter.callqueues.overview
+- Phone System
+- seo-marvel-apr2020
 description: Informazioni su come configurare le impostazioni utente per l'inoltro di chiamata e la delega.
-ms.openlocfilehash: 41d954f468166fd8600601f98ea98d5be129eccd
-ms.sourcegitcommit: cc6a3b30696bf5d254a3662d8d2b328cbb1fa9d1
+ms.openlocfilehash: 64907043448f44ff861ede026d0a4343899ad98b
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65681997"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67272231"
 ---
 # <a name="configure-call-settings-for-your-users"></a>Configurare le impostazioni di chiamata per gli utenti
 
@@ -37,9 +35,9 @@ Questo articolo descrive come l'amministratore può modificare le impostazioni d
 - È necessario esaminare le impostazioni di inoltro di chiamata per tutti gli utenti di un reparto e correggerle potenzialmente nel modo appropriato.
 - È stato impiegato un nuovo assistente ed è necessario aggiungerlo come delegato per un gruppo di dipendenti.
 
-È possibile usare l'interfaccia di amministrazione di Teams o Teams cmdlet di PowerShell per visualizzare e modificare le impostazioni delle chiamate per gli utenti.
+È possibile usare l'interfaccia di amministrazione di Teams o i cmdlet di Teams PowerShell per visualizzare e modificare le impostazioni delle chiamate per gli utenti.
 
-Per impostare le impostazioni di chiamata per un utente, all'utente deve essere assegnata una licenza di sistema Telefono Microsoft.
+Per impostare le impostazioni di chiamata per un utente, all'utente deve essere assegnata una licenza Sistema telefonico Microsoft.
 
 ## <a name="use-the-teams-admin-center"></a>Usare l'interfaccia di amministrazione di Teams
 
@@ -47,7 +45,7 @@ Per impostare le impostazioni di chiamata per un utente, all'utente deve essere 
 
 Per configurare le impostazioni di inoltro di chiamata immediata:
 
-1. Nell'interfaccia di amministrazione di Teams passare a **Gestisci utenti** >  e selezionare un utente.
+1. Nell'interfaccia di amministrazione di Teams passare a **Utenti** > **Gestisci utenti** e selezionare un utente.
 
 2. Nella pagina dei dettagli dell'utente passare alla scheda **Voce** .
 
@@ -61,7 +59,7 @@ La configurazione della delega delle chiamate e del ritiro delle chiamate di gru
 
 ## <a name="use-powershell"></a>Usare PowerShell
 
-È possibile usare PowerShell per configurare le impostazioni di inoltro di chiamata e delega per gli utenti.  Verranno usati i cmdlet seguenti, disponibili in Teams modulo di PowerShell versione 4.0 o successiva:
+È possibile usare PowerShell per configurare le impostazioni di inoltro di chiamata e delega per gli utenti.  Si useranno i cmdlet seguenti, disponibili nel modulo Di Teams PowerShell versione 4.0 o successiva:
 
 - [Get-CsUserCallingSettings](/powershell/module/teams/get-csusercallingsettings) : mostra le impostazioni di inoltro di chiamata, i delegati e le informazioni sul delegante per un utente.
 - [Set-CsUserCallingSettings](/powershell/module/teams/set-csusercallingsettings) : imposta le impostazioni di inoltro di chiamata per un utente.

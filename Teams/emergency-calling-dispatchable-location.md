@@ -10,6 +10,7 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
+- m365initiative-voice
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -18,16 +19,16 @@ f1.keywords:
 - NOCSH
 description: Scopri come Microsoft supporta le informazioni sulla posizione inviabili per supportare le chiamate di emergenza.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e45b5a18d8acd09714ebedd40a722bcbd152fc3c
-ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
+ms.openlocfilehash: 9efa5f6e9ad5b5f2434efb95265f58c9a603fdd5
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65823538"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67272071"
 ---
 # <a name="emergency-addresses-for-remote-locations"></a>Indirizzi di emergenza per posizioni remote
 
-Questo articolo descrive il supporto di Microsoft per le informazioni sulla posizione delle chiamate di emergenza 911 nel Stati Uniti. Questo supporto garantisce che le informazioni sulla posizione di emergenza più precise possibili vengano fornite per Teams utenti che effettuano chiamate di emergenza. Indipendentemente dalla posizione del chiamante, in loco o da casa, le informazioni sulla posizione del chiamante inviate al PSAP (Public Safety Answering Point) devono essere accurate.
+Questo articolo descrive il supporto di Microsoft per le informazioni sulla posizione delle chiamate di emergenza 911 nel Stati Uniti. Questo supporto garantisce che le informazioni sulla posizione di emergenza più precise possibili vengano fornite agli utenti di Teams che effettuano chiamate di emergenza. Indipendentemente dalla posizione del chiamante, in loco o da casa, le informazioni sulla posizione del chiamante inviate al PSAP (Public Safety Answering Point) devono essere accurate.
 
 Questo articolo include informazioni sulla conformità di Microsoft alla legge RAY BAUM per i sistemi mlts (Multi Line Telephone Systems). La legge RAY BAUM estende i requisiti di Legge di Kari, entrati in vigore all'inizio del 2021. Per ulteriori informazioni sulla LEGGE DI RAY BAUM e sulla Legge Kari, vedi [Località di recapito per 911 chiamate](https://www.fcc.gov/911-dispatchable-location) e [sistemi telefonici multiriga - Legge di Kari e Ray BAUM's Act 911 Direct Dialing, Notification, and Dispatchable Location Requirements](https://www.fcc.gov/mlts-911-requirements). 
 
@@ -46,12 +47,12 @@ Questo articolo contiene le sezioni seguenti:
 
 ## <a name="support-for-emergency-calling-location-information"></a>Supporto per le informazioni sulla posizione delle chiamate di emergenza
 
-Per supportare questi requisiti, Teams utilizza i servizi di posizione forniti dal rispettivo sistema operativo per suggerire un indirizzo, se concesso dall'amministratore o dall'utente. L'utente finale può confermare la posizione di un indirizzo suggerito, modificarlo o immetterne manualmente uno nuovo. Un indirizzo confermato, modificato o immesso manualmente viene quindi salvato nel client Teams in modo che l'indirizzo confermato dall'utente venga usato automaticamente quando il client è connesso a tale rete. Gli indirizzi salvati dall'utente vengono cancellati automaticamente quando il client Teams viene disconnesse.
+Per supportare questi requisiti, Teams usa i servizi di posizione forniti dal rispettivo sistema operativo per suggerire un indirizzo, se concesso dall'amministratore o dall'utente. L'utente finale può confermare la posizione di un indirizzo suggerito, modificarlo o immetterne manualmente uno nuovo. Un indirizzo confermato, modificato o immesso manualmente viene quindi salvato nel client di Teams in modo che l'indirizzo confermato dall'utente venga utilizzato automaticamente quando il client è connesso a tale rete. Gli indirizzi salvati dall'utente vengono cancellati automaticamente quando il client Teams viene disconnesse.
 
 
 ## <a name="location-precedence"></a>Precedenza delle posizioni
 
-Gli indirizzi di emergenza per Teams possono essere classificati in base a tipi diversi. L'elenco seguente mostra la precedenza delle posizioni utilizzata per la chiamata di un numero di emergenza:
+Gli indirizzi di emergenza per Teams possono essere classificati in base a diversi tipi. L'elenco seguente mostra la precedenza delle posizioni utilizzata per la chiamata di un numero di emergenza:
 
 1. Indirizzo acquisito dinamicamente definito dal tenant che amministra nel servizio informazioni sulla posizione.
 
@@ -64,7 +65,7 @@ Gli indirizzi di emergenza per Teams possono essere classificati in base a tipi 
 
 ## <a name="emergency-address-classification-and-routing"></a>Classificazione e instradamento degli indirizzi di emergenza
 
-La tabella seguente mostra i tipi di indirizzi per gli interventi di emergenza e i metodi di routing associati per ogni tipo: se la chiamata viene automaticamente instradata al PSAP che serve o schermata per accuratezza prima del trasferimento al PSAP che serve. Questo comportamento di routing è supportato nel Stati Uniti per tutti gli utenti del Piano per chiamate, i partner Connessione con operatore e i provider di servizi di chiamata di emergenza certificati per Direct Routing.
+La tabella seguente mostra i tipi di indirizzi per gli interventi di emergenza e i metodi di routing associati per ogni tipo: se la chiamata viene automaticamente instradata al PSAP che serve o schermata per accuratezza prima del trasferimento al PSAP che serve. Questo comportamento di routing è supportato nel Stati Uniti per tutti gli utenti del piano per chiamate, i partner Operator Connect e i provider di servizi di chiamata di emergenza certificati per Direct Routing.
 
 
 | Tipo di indirizzo per gli interventi di emergenza | Metodo di instradamento di emergenza |
@@ -82,7 +83,7 @@ La tabella seguente mostra i tipi di indirizzi per gli interventi di emergenza e
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Criteri di emergenza** **vocale** > .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, vai a **Criteri di emergenza** **vocale** > .
 2. Selezionare **Aggiungi**.
 3. Immetti un nome per i criteri per le chiamate di emergenza, ad esempio "E911WFH".
 4. Attivare la **modalità di ricerca della posizione esterna**.
@@ -107,9 +108,9 @@ Grant-CsTeamsEmergencyCallingPolicy -PolicyName E911WFH -Identity user@contoso.c
 
 Dopo aver abilitato questa funzionalità per gli utenti finali, nella scheda Chiamate l'utente può aggiungere, modificare o confermare un indirizzo per gli interventi di emergenza e visualizzare l'indirizzo dopo averlo impostato. Per altre informazioni su come gli utenti finali possono impostare i servizi di posizione, vedi [Emergenza domestica 911: abilitare i servizi di posizione](https://support.microsoft.com/office/work-from-home-emergency-911-enable-location-services-583dd649-87fc-4b23-aed6-f4e2279297f9?storagetype=live).
 
-In Windows, è possibile gestire il servizio di posizione Windows e se le applicazioni hanno accesso alla posizione, usando Criteri di gruppo o la [gestione di dispositivi mobili](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesslocation).
+In Windows è possibile gestire il servizio di posizione di Windows e verificare se le applicazioni hanno accesso alla posizione, tramite Criteri di gruppo o tramite [gestione di dispositivi mobili](/windows/client-management/mdm/policy-csp-privacy#privacy-letappsaccesslocation).
 
-Per altre informazioni sui servizi di posizione di Windows, vedi [Windows servizio di posizione e privacy](https://support.microsoft.com/windows/windows-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088).
+Per altre informazioni sui servizi di posizione di Windows, vedi [Servizi di posizione di Windows e privacy](https://support.microsoft.com/windows/windows-location-service-and-privacy-3a8eee0a-5b0b-dc07-eede-2a5ca1c49088).
 
 
 
@@ -117,11 +118,11 @@ Per altre informazioni sui servizi di posizione di Windows, vedi [Windows serviz
 
 Tenere presente quanto segue:
 
-- L'esperienza di lavoro da casa descritta è per Teams desktop in Windows e Mac.
+- L'esperienza di lavoro da casa descritta è per teams desktop su Windows e Mac.
 
-- Teams telefoni non supportano l'esperienza di lavoro da casa.
+- I telefoni di Teams non supportano l'esperienza di lavoro da casa.
 
-- Teams dispositivo mobile supporta il rilevamento automatico della posizione, ma non l'esperienza immessa dall'utente descritta.
+- Teams Mobile supporta il rilevamento automatico della posizione, ma non l'esperienza immessa dall'utente descritta.
 
 - Le impostazioni di privacy possono essere in conflitto con il rilevamento automatico della posizione: è possibile usare sistemi di Gestione dispositivi per dispositivi mobili.
 

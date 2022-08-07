@@ -11,7 +11,6 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - M365-collaboration
-- m365initiative-meetings
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -20,13 +19,13 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
-description: 'Informazioni su come impostare le audioconferenze nelle piccole o medie imprese per le persone che devono usare un telefono per partecipare alle riunioni tramite telefono. '
-ms.openlocfilehash: b7b5fbc958c67aa966619c961e011cda9450faf3
-ms.sourcegitcommit: 312ff79ecab91412918793ec882bfc6e0143d30a
+description: Informazioni su come impostare le audioconferenze nelle piccole o medie imprese per le persone che devono usare un telefono per partecipare alle riunioni tramite telefono.
+ms.openlocfilehash: b3b3514e2d33abe53da940759ddacefea29b961a
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66884825"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67270661"
 ---
 # <a name="set-up-audio-conferencing-for-small-and-medium-businesses"></a>Configurare audioconferenze per piccole e medie imprese
 
@@ -83,7 +82,7 @@ Assegnare una licenza a ogni persona che dirigerà le riunioni. Usare la interfa
 
 ## <a name="schedule-teams-meetings-in-outlook"></a>Pianificare riunioni di Teams in Outlook
 
-Gli organizzatori delle riunioni possono ora pianificare le riunioni in Outlook. In Outlook passare a **Calendario** e quindi selezionare il pulsante **Nuova riunione di Teams** . I numeri di accesso esterno della riunione e l'ID conferenza vengono aggiunti automaticamente all'invito alla riunione inviato ai partecipanti alla riunione. Per altre informazioni, vedere [Pianificare una riunione di Teams in Outlook](https://support.microsoft.com/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f).
+Gli organizzatori delle riunioni possono ora pianificare riunioni in Outlook. In Outlook passare a **Calendario** e quindi selezionare il pulsante **Nuova riunione di Teams** . I numeri di accesso esterno della riunione e l'ID conferenza vengono aggiunti automaticamente all'invito alla riunione inviato ai partecipanti alla riunione. Per altre informazioni, vedere [Pianificare una riunione di Teams in Outlook](https://support.microsoft.com/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f).
 
 > [!NOTE]
 > Se si vuole, è possibile personalizzare gli inviti alle riunioni per aggiungere il logo della società, i collegamenti al sito Web di supporto e la dichiarazione di non responsabilità legale e un piè di pagina di solo testo. Per altre informazioni, vedere [Personalizzare gli inviti alle riunioni](meeting-settings-in-teams.md#customize-meeting-invitations).

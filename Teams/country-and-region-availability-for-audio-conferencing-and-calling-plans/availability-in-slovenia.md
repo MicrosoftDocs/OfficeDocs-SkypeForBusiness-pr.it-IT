@@ -24,19 +24,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Slovenia.
-ms.openlocfilehash: 35c529a3953e6798ad4a05ba85c0f6705319d38e
-ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
+description: Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Slovenia.
+ms.openlocfilehash: 717812a2c5bc8e896c7a82c8ef81f7b1c794e542
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59941849"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268601"
 ---
 # <a name="availability-in-slovenia"></a>Disponibilità in Slovenia
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Slovenia.
+Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Slovenia.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -59,8 +59,8 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti per chiamate nazionali O 600 minuti per chiamate internazionali (a seconda di quale venga prima nel mese di calendario)</li></li></ul>|
+|I Piani per chiamate sono disponibili per l'acquisto?  |Sì          |   
+|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li>Piano per chiamate pay-as-you-go </li><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 1200 minuti </li><li> Piano per chiamate internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti viene raggiunto per primo nel mese di calendario)</li></ul>|
 |È possibile effettuare chiamate in uscita verso numeri premium?  <br/> | Al momento non supportato. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | A 196 paesi o aree geografiche, inclusi [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> 
    
@@ -68,7 +68,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul><li>Celie <li>  Lubiana <li>  Città di Maribor </ul> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul><li>Celie <li>  Lubiana <li>  Maribor City </ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    

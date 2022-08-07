@@ -10,17 +10,16 @@ search.appverid: ''
 description: Informazioni sui criteri di Teams.
 audience: admin
 ms.localizationpriority: medium
-MS.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b56e617321cea25fe677b7d9a7a00afba0940b07
-ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
+ms.collection:
+- M365-collaboration
+ms.openlocfilehash: acaa1280e00ad2e86a49c2bbd8e7f4464bd0c0e7
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67156534"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268761"
 ---
 # <a name="manage-teams-with-policies"></a>Gestire Teams con i criteri
 
@@ -34,7 +33,7 @@ I criteri vengono usati per eseguire molte attività nell'organizzazione in aree
 
 I criteri possono essere assegnati in diversi modi, a seconda delle operazioni che l'organizzazione sta tentando di eseguire. È possibile effettuare e visualizzare le attività nell'interfaccia di amministrazione di Teams.
 
-![Screenshot dell'assegnazione di Criteri di gruppo.](media/group-policy-assignment.png)
+:::image type="content" source="media/group-policy-assignment.png" alt-text="Screenshot dell'assegnazione di Criteri di gruppo di Teams." lightbox="media/group-policy-assignment.png":::
 
 Altre informazioni sull'assegnazione dei criteri [sono disponibili qui](policy-assignment-overview.md).
 
@@ -47,17 +46,17 @@ I criteri vengono gestiti con l'interfaccia di amministrazione di Microsoft Team
 
 Ad esempio, un criterio di configurazione delle app può consentire agli utenti di caricare app personalizzate, installare app per conto degli utenti e aggiungere app alla barra delle app di Teams. Questi criteri sono configurati nell'interfaccia di amministrazione di Teams.
 
-![Screenshot dei criteri di configurazione delle app.](media/app-setup-policy.png)
+:::image type="content" source="media/app-setup-policy.png" alt-text="Screenshot dei criteri di configurazione delle app." lightbox="media/app-setup-policy.png":::
 
 Inoltre, i criteri per le riunioni possono essere usati per controllare le impostazioni audio e video nelle riunioni di Teams, ad esempio trascrizioni, registrazioni cloud e audio/video IP.
 
-![Screenshot dei criteri riunione.](media/engineering-meeting-policy.png)
+:::image type="content" source="media/engineering-meeting-policy.png" alt-text="Screenshot dei criteri riunione." lightbox="media/engineering-meeting-policy.png":::
 
 ### <a name="teams-for-education"></a>Teams per l'istruzione
 
 È anche possibile usare la [procedura guidata Teams per l'istruzione](easy-policy-setup-edu.md) criteri per configurare e gestire facilmente i criteri per l'ambiente di apprendimento.
 
-![Screenshot della procedura guidata Teams per l'istruzione criteri.](media/easy-policy-setup-quick-setup.png)
+:::image type="content" source="media/easy-policy-setup-quick-setup.png" alt-text="Screenshot della procedura guidata Teams per l'istruzione criteri." lightbox="media/easy-policy-setup-quick-setup.png":::
 
 ## <a name="types-of-policies"></a>Tipi di criteri
 

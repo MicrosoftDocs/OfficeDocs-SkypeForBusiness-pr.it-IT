@@ -10,26 +10,26 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-collaboration
-- m365initiative-meetings
+- Teams_ITAdmin_MTRP
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Registrazione di controllo per TRM.
 f1keywords: ''
-ms.openlocfilehash: 3681f50f0e15a7688a944c14e69907ba53dd2817
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: de7f01a3c93dc31ff10c9e00cb3d0f3ef5806cb3
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65676611"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67269106"
 ---
 # <a name="audit-logging-in-the-teams-rooms-managed-service"></a>Registrazione di controllo nel servizio gestito Teams Rooms
 
 Il controllo in Teams Rooms servizio gestito (TRM) consente di cercare record di controllo per le attività eseguite nel portale da utenti e amministratori. Questa funzionalità è abilitata per impostazione predefinita. Solo l'amministratore del servizio gestito ha l'autorizzazione per esportare e quindi visualizzare i log.
 
 > [!NOTE]
-> Le azioni eseguite nel servizio TRM non vengono registrate Microsoft 365 o Office 365 controllo 
+> Le azioni eseguite nel servizio TRM non vengono registrate in Microsoft 365 o nel controllo Office 365 
 
 ## <a name="exporting-logs"></a>Esportazione dei log
 
@@ -37,7 +37,7 @@ Quando si esportano tutti i risultati di una ricerca nel log di controllo, i dat
 
 **Per scaricare i log** 
 
-1. Passare a **Impostazioni > Log di controllo di > generali**.
+1. Passare a **Impostazioni > Generale > Log di controllo**.
 1. Per definire l'intervallo di date per i log di interesse, immettere la **data di inizio** e la **data di fine.**
 
    > [!NOTE]

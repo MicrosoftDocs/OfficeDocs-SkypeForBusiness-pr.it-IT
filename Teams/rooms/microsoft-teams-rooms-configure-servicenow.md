@@ -12,12 +12,15 @@ appliesto:
 localization_priority: Normal
 description: Informazioni sulla configurazione di ServiceNow nel portale di Teams Rooms Premium
 f1keywords: ''
-ms.openlocfilehash: 6362d0bed4263ce374c1fb5cfd05d4d8815044c2
-ms.sourcegitcommit: 5bb00d639828c744951a39705fefe81ed6698efe
+ms.collection:
+- M365-collaboration
+- Teams_ITAdmin_MTRP
+ms.openlocfilehash: 920d31a350914115623a83f018815d8bebe94f6a
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2022
-ms.locfileid: "66167310"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67272381"
 ---
 # <a name="configure-servicenow-for-teams-rooms"></a>Configurare ServiceNow per Teams Rooms
 
@@ -37,14 +40,14 @@ Questo articolo descrive i prerequisiti e i passaggi per configurare l'ambiente 
 - Un accesso con autorizzazione di base oppure un accesso [OAuth](https://docs.servicenow.com/bundle/rome-platform-administration/page/administer/security/concept/c_OAuthApplications.html) . Per altre informazioni, vedere [Creazione di credenziali](https://developer.servicenow.com/dev.do#!/learn/learning-plans/rome/servicenow_application_developer/app_store_learnv2_rest_rome_creating_credentials) in ServiceNow.
 - Un'istanza ServiceNow e il relativo nome host di istanza e URI API
 - Ruolo di incident_manager o superiore
-- Una versione software di ServiceNow che supporta API Tabella
+- Una versione software di ServiceNow che supporta Table API
 
 ## <a name="configure-your-environment"></a>Configurare l'ambiente
 
 La configurazione dell'ambiente è altamente personalizzabile e dipenderà dalle esigenze dell'organizzazione. I passaggi seguenti illustrano come copiare la configurazione esistente in ServiceNow nel portale di Teams Rooms Premium.
 
-1. Aprire l'istanza di ServiceNow da copiare. È necessario fare riferimento a questo quando si completa il modulo di configurazione nel portale di Teams Rooms Premium.
-2. In una nuova scheda del browser passare al [portale di Teams Rooms Premium](https://portal.rooms.microsoft.com/) e passare a **Impostazioni**. Quindi, seleziona **ServiceNow** nel menu di spostamento a sinistra per aprire il modulo di configurazione.
+1. Aprire l'istanza di ServiceNow da copiare. Quando si completa il modulo di configurazione nel portale di Teams Rooms Premium, sarà necessario farvi riferimento.
+2. In una nuova scheda del browser vai al [portale di Teams Rooms Premium](https://portal.rooms.microsoft.com/) e vai a **Impostazioni**. Quindi, seleziona **ServiceNow** nel menu di spostamento a sinistra per aprire il modulo di configurazione.
 3. Selezionare un metodo di autenticazione per accedere e immettere l'URI API e l'host istanza ServiceNow.
 4. Tutti gli elementi obbligatori nella colonna ServiceNow Field della sezione Mapping campi devono essere precompilati. La tabella seguente contiene ogni campo ServiceNow e il relativo campo Microsoft Teams Rooms corrispondente. Completare l'azione per ogni riga della sezione Mapping campi. Per le definizioni di ogni campo ServiceNow, vedere [ServiceNow field definitions](#servicenow-field-definitions).
 
@@ -54,7 +57,7 @@ La configurazione dell'ambiente è altamente personalizzabile e dipenderà dalle
 | Descrizione | Primo messaggio | Non è necessaria alcuna azione. Il campo Teams Rooms viene riempito automaticamente. |
 | assignment_group | Gruppo di sale | Copiare il valore assignment_group nell'istanza di ServiceNow e incollarlo nel campo Valore ServiceNow nel modulo di configurazione. Se sono presenti più assignment_group, selezionare **Aggiungi gruppo di sale** per ogni valore personalizzato aggiuntivo. |
 | Gravità | Anelli | Gravità è un valore personalizzato in ServiceNow. Si tratta del quarto elemento nella seconda colonna dell'istanza di ServiceNow. Copiare il valore e incollarlo nel campo ServiceNow value nel modulo di configurazione. Se hai più di un valore di gravità, seleziona **Aggiungi anello** per ogni valore personalizzato aggiuntivo. |
-| Commenti (facoltativi) | Valore personalizzato* | Per aggiungere un campo commenti al modulo di configurazione, selezionare **Aggiungi** nella parte superiore della sezione di mapping dei campi. Copiare il valore del commento nell'istanza di ServiceNow e incollarlo nel campo ServiceNow nel modulo di configurazione. Assegnargli un Microsoft Teams campo Sala dal menu a discesa e copiare e incollare il valore ServiceNow. |
+| Commenti (facoltativi) | Valore personalizzato* | Per aggiungere un campo commenti al modulo di configurazione, selezionare **Aggiungi** nella parte superiore della sezione di mapping dei campi. Copiare il valore del commento nell'istanza di ServiceNow e incollarlo nel campo ServiceNow nel modulo di configurazione. Assegnare un campo Sala di Microsoft Teams dal menu a discesa e copiare e incollare il valore ServiceNow. |
 | stato (risolto) | Valore personalizzato* | Copiare lo stato di risoluzione dall'istanza di ServiceNow e incollarlo nel campo valore ServiceNow nel modulo di configurazione. |
 | close_code | Valore personalizzato* | Nella scheda **Informazioni sulla risoluzione** dell'istanza di ServiceNow copiare il codice di chiusura e incollarlo nel campo valore ServiceNow nel modulo di configurazione. |
 
@@ -81,7 +84,7 @@ Una volta superato il test, seleziona **Invia** per salvare le modifiche. Quando
 
 - **gravità**: il campo di gravità in ServiceNow viene usato per organizzare gli incidenti in base alla priorità. I valori che designano la priorità sono personalizzabili. La gravità è equivalente al campo Anello nel portale di Teams Rooms Premium. Per personalizzare gli anelli nel portale di Teams Rooms Premium, vai a **Aggiornamenti** nel menu di spostamento a sinistra. Passa quindi alla scheda **Anelli** e seleziona **Aggiungi anello**.
 
-- **commenti**: Commenti è un campo facoltativo in ServiceNow usato per includere campi obbligatori personalizzati dell'istanza ServiceNow nella configurazione del portale di Teams Rooms Premium. L'equivalente dei commenti è un valore personalizzato nel portale di Teams Rooms Premium.
+- **commenti**: Commenti è un campo facoltativo in ServiceNow usato per includere campi obbligatori personalizzati dell'istanza ServiceNow nella configurazione del portale Teams Rooms Premium. L'equivalente dei commenti è un valore personalizzato nel portale di Teams Rooms Premium.
 
 - **stato (risolto)**: il campo stato (risolto) in ServiceNow viene usato per indicare come è stato risolto un evento imprevisto ed è necessario per chiudere un evento imprevisto. Il valore dello stato (risolto) è personalizzabile. L'equivalente di stato (risolto) è un valore personalizzato nel portale di Teams Rooms Premium.
 

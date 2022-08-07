@@ -11,19 +11,19 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-collaboration
-- m365initiative-meetings
+- Teams_ITAdmin_MTRP
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Gestione clienti Mult-tenant per partner.
 f1keywords: ''
-ms.openlocfilehash: 23b0460d5f59830ea00522ac001b7f7524ad2f45
-ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
+ms.openlocfilehash: 37ba5cfc12229685bbe4ac8cf188301e9fa7b1f7
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67024119"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67269107"
 ---
 # <a name="multi-tenant-customer-management-for-partners"></a>Gestione clienti multi-tenant per partner
 
@@ -148,7 +148,7 @@ I partner possono creare ruoli personalizzati in base alle proprie esigenze oper
 |Rapporti|Visualizzare|&#10004;|&#10004;||&#10004;|
 ||Crea evento imprevisto del cliente|&#10004;|&#10004;|&#10004;|&#10004;|
 |Gestione biglietti|Visualizzare|&#10004;|&#10004;|&#10004;|&#10004;|
-||Update|&#10004;|&#10004;|&#10004;|&#10004;|
+||Aggiornamento|&#10004;|&#10004;|&#10004;|&#10004;|
 |Impostazioni MMR|Visualizzare|&#10004;||||
 ||Modificare|&#10004;||||
 |Gestione dei ruoli|Visualizzare |&#10004;|||&#10004;|

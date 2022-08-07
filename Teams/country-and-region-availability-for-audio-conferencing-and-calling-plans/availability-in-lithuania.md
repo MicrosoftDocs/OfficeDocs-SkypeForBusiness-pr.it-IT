@@ -24,19 +24,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Lituania.
-ms.openlocfilehash: 0eb3979986546f9b99437bba568a1d9cd9e69460
-ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
+description: Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Lituania.
+ms.openlocfilehash: 194e633a8e441ed30d32d684f39498d1b4b4d491
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "59942069"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67271011"
 ---
 # <a name="availability-in-lithuania"></a>Disponibilità in Lituania
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Lituania.
+Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Lituania.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -44,7 +44,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Vilnius</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).  <br/> |
-|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti di comunicazione  <br/> |
+|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti comunicazioni  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
 
@@ -59,8 +59,8 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti per chiamate nazionali O 600 minuti per chiamate internazionali (a seconda di quale venga prima nel mese di calendario)</li></li></ul>|
+|I Piani per chiamate sono disponibili per l'acquisto?  |Sì          |   
+|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li>Piano per chiamate pay-as-you-go </li><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 1200 minuti </li><li> Piano per chiamate internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti viene raggiunto per primo nel mese di calendario)</li></ul>|
 |È possibile effettuare chiamate in uscita verso numeri premium?  <br/> | Al momento non supportato. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | A 196 paesi o aree geografiche, inclusi [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    

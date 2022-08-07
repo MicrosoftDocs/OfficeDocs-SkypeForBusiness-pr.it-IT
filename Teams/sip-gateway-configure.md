@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 72fdabd1ba25254876bc3d4506c889d50cbc6613
-ms.sourcegitcommit: cd9a1f7afaaf053741c81022e7052bf6f8008fcc
+ms.openlocfilehash: d33573d86f2bcb485f6a7e7cfc550ea1f3184223
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65370889"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67270491"
 ---
 # <a name="configure-sip-gateway"></a>Configurare gateway SIP
 
@@ -36,7 +36,7 @@ Prima di configurare il Gateway SIP, eseguire le operazioni seguenti:
 
 - **Ripristina le impostazioni predefinite dei dispositivi SIP.** L'utente o gli utenti dell'organizzazione devono ripristinare le impostazioni predefinite di fabbrica di ogni dispositivo SIP usato con Gateway SIP. Per scoprire come farlo, vedi le istruzioni del produttore.
 
-- **Apri il firewall per Microsoft 365 e Teams.** Aprire il firewall della rete per Microsoft 365 e Teams traffico come descritto in [URL e intervalli di indirizzi IP Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges). Le regole del firewall sono necessarie solo per il traffico in uscita.
+- **Apri il firewall a Microsoft 365 e Teams.** Aprire il firewall della rete per il traffico di Microsoft 365 e Teams come descritto in [URL e intervalli di indirizzi IP Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges). Le regole del firewall sono necessarie solo per il traffico in uscita.
 
 - **Verificare che i dispositivi SIP non siano dietro un proxy.** Assicurarsi che il traffico http/s bypassi qualsiasi proxy http/s aziendale.
 
@@ -60,7 +60,6 @@ Prima di configurare il Gateway SIP, eseguire le operazioni seguenti:
   - https://httpblobsdgnoam.blob.core.windows.net
 
 
-
 Le sezioni seguenti descrivono le operazioni da eseguire come amministratore per configurare il Gateway SIP.
 
 - [Verificare che gateway SIP sia disponibile per l'organizzazione](#verify-that-sip-gateway-is-available-for-your-organization).
@@ -73,7 +72,6 @@ Questo articolo descrive anche come:
 
 - [Registra i dispositivi SIP singolarmente o in batch per motivi di praticità](#provision-and-enroll-sip-devices-as-common-area-phones).  
 
-
 - [Visualizza e monitora i dispositivi SIP.](#view-and-monitor-sip-devices)
 
 - [Abilita il supporto per un'interfaccia utente multi-lingua.](#set-a-sip-devices-ui-language)
@@ -82,15 +80,15 @@ Questo articolo descrive anche come:
 
 1. Accedere [all'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com/).
 
-2. A sinistra seleziona **Teams dispositivi** e verifica se la scheda **Dispositivi SIP** è visibile. In caso affermativo, il servizio Gateway SIP è abilitato per l'organizzazione.
+2. A sinistra, selezionare **Dispositivi di Teams** e vedere se la scheda **Dispositivi SIP** è visibile. In caso affermativo, il servizio Gateway SIP è abilitato per l'organizzazione.
 
 ## <a name="enable-sip-gateway-for-the-users-in-your-organization"></a>Abilitare gateway SIP per gli utenti dell'organizzazione
 
 È possibile abilitare gateway SIP per l'organizzazione in due modi: usando l'interfaccia di amministrazione di Teams o un cmdlet di PowerShell.
 
-### <a name="by-using-teams-admin-center"></a>Usando Teams'interfaccia di amministrazione
+### <a name="by-using-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Teams
 
-Per abilitare Gateway SIP nell'interfaccia di amministrazione di Teams, seguire questa procedura:
+Per abilitare gateway SIP nell'interfaccia di amministrazione di Teams, seguire questa procedura:
 
 1. Passare [all'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com/)
 
@@ -122,7 +120,7 @@ Per ogni dispositivo SIP, impostare uno degli URL del server di provisioning del
 - Americas: `http://noam.ipp.sdg.teams.microsoft.com`
 - APAC: `http://apac.ipp.sdg.teams.microsoft.com`
 
-Aggiungere dispositivi SIP all'organizzazione Teams configurando l'URL del server di provisioning del Gateway SIP indicato sopra nel server DHCP. Per altre informazioni sul server DHCP, vedi [Distribuire e gestire DHCP](/learn/modules/deploy-manage-dynamic-host-configuration-protocol). Inoltre, è possibile usare l'opzione DHCP 42 per specificare il server NTP (Network Time Protocol) e l'opzione DHCP 2 per specificare l'offset da UTC (Coordinated Universal Time) in pochi secondi. I dispositivi dell'organizzazione verranno instradati al server di provisioning del Gateway SIP. Se il provisioning dei telefoni SIP è stato completato correttamente, verranno visualizzati il logo Teams e un pulsante soft per l'accesso.
+Aggiungere dispositivi SIP all'organizzazione di Teams configurando l'URL del server di provisioning del Gateway SIP indicato sopra nel server DHCP. Per altre informazioni sul server DHCP, vedi [Distribuire e gestire DHCP](/learn/modules/deploy-manage-dynamic-host-configuration-protocol). Inoltre, è possibile usare l'opzione DHCP 42 per specificare il server NTP (Network Time Protocol) e l'opzione DHCP 2 per specificare l'offset da UTC (Coordinated Universal Time) in pochi secondi. I dispositivi dell'organizzazione verranno instradati al server di provisioning del Gateway SIP. Il provisioning dei telefoni SIP verrà eseguito correttamente con il logo di Teams e un pulsante soft per l'accesso.
 
 Verifica che i dispositivi SIP siano nella versione firmware minima supportata per l'onboarding. Durante l'onboarding, gateway SIP eseguirà il push dell'interfaccia utente di autenticazione e configurazione predefinita nel dispositivo. Per informazioni sulla versione del firmware necessaria per i dispositivi SIP, vedere [Pianificare il Gateway SIP](sip-gateway-plan.md).
 
@@ -130,11 +128,11 @@ Verifica che i dispositivi SIP siano nella versione firmware minima supportata p
 
 Gli utenti che lavorano in remoto devono configurare manualmente l'URL del server di provisioning nel dispositivo SIP utilizzando la procedura seguente:
 
-1. Apri **Impostazioni** sul dispositivo e ottieni l'indirizzo IP del dispositivo.
+1. Apri **Impostazioni** nel dispositivo e ottieni l'indirizzo IP del dispositivo.
 
 2. Aprire una finestra del browser, immettere l'indirizzo IP del dispositivo, accedere (se necessario) e configurare l'URL del server di provisioning nell'utilità Web del dispositivo.
 
-3. In **Impostazioni** o **Impostazioni avanzate** dell'utilità Web immetti l'URL del server di provisioning mostrato sopra.
+3. In **Impostazioni** o **Impostazioni avanzate** nell'utilità Web immetti l'URL del server di provisioning mostrato sopra.
 
 > [!NOTE]
 > - È possibile eseguire l'onboarding di solo dispositivi SIP compatibili nel Gateway SIP. 
@@ -146,7 +144,7 @@ Gli utenti che lavorano in remoto devono configurare manualmente l'URL del serve
 
 ## <a name="configure-conditional-access"></a>Configurare l'accesso condizionale
 
-L'accesso condizionale è una funzionalità di Azure Active Directory (Azure AD) che consente di garantire che i dispositivi che accedono alle risorse Microsoft 365 siano gestiti e protetti correttamente. Gateway SIP autentica i dispositivi SIP con Azure AD, quindi se l'organizzazione usa l'accesso condizionale per i dispositivi della rete aziendale, deve escludere i seguenti indirizzi IP:
+L'accesso condizionale è una funzionalità di Azure Active Directory (Azure AD) che consente di garantire che i dispositivi che accedono alle risorse di Microsoft 365 siano gestiti e protetti correttamente. Gateway SIP autentica i dispositivi SIP con Azure AD, quindi se l'organizzazione usa l'accesso condizionale per i dispositivi della rete aziendale, deve escludere i seguenti indirizzi IP:
 
 - America del Nord:
     - Stati Uniti orientali: 52.170.38.140
@@ -160,8 +158,8 @@ L'accesso condizionale è una funzionalità di Azure Active Directory (Azure AD)
 
 Per altre informazioni, vedere [Intervalli di indirizzi IP](/azure/active-directory/conditional-access/location-condition#ip-address-ranges).
 
-
 ## <a name="provision-and-enroll-sip-devices-as-common-area-phones"></a>Provisioning e registrazione di dispositivi SIP come telefoni dell'area comune
+
 > [!NOTE]
 > Per poter essere registrato, è necessario eseguire l'onboarding di un dispositivo SIP in Gateway SIP.
 
@@ -169,9 +167,9 @@ Per semplificare le attività, è possibile registrare i dispositivi SIP nell'in
 
 1. Accedere [**all'interfaccia di amministrazione di Teams**](https://admin.teams.microsoft.com).
 
-2. Seleziona **Teams** **dispositiviSIP** >  dispositivi.
+2. Selezionare **Dispositivi** >  di Teams **Dispositivi SIP**.
 
-3. In alto a destra seleziona **ActionsProvision**  >  devices e segui uno di questi passaggi:
+3. Nell'angolo in alto a destra seleziona **Azioni** > **Esegui provisioning dei dispositivi** e segui uno di questi passaggi:
 
   - **Per eseguire il provisioning di un dispositivo:**
 
@@ -185,19 +183,19 @@ Per semplificare le attività, è possibile registrare i dispositivi SIP nell'in
 
    - **Per eseguire il provisioning di molti dispositivi:**
 
-     a. In **In attesa dell'attivazione**, a destra, seleziona **Esporta** (l'icona Microsoft Excel).
+     a. In **In attesa dell'attivazione**, a destra, selezionare **Esporta** (icona di Microsoft Excel).
      
-     b. Nel riquadro **Provisioning dei dispositivi**, in **Upload più indirizzi MAC**, selezionare **scarica un modello**.
+     b. Nel riquadro **Provisioning dei dispositivi** , in **Carica più indirizzi MAC**, selezionare **scarica un modello**.
      
      C. Salvare **Template_Provisioning.csv** nel computer e compilare i campi **ID MAC** e **Posizione** .
     
-     D. Nel riquadro **Provisioning dei dispositivi** selezionare **Upload più indirizzi MAC**. 
+     D. Nel riquadro **Provisioning dei dispositivi** selezionare **Carica più indirizzi MAC**. 
 
-     e. A destra del riquadro **Upload indirizzi MAC** selezionare **Seleziona un file** e quindi selezionare il file **Template_Provisioning.csv** che contiene i dati.
+     e. A destra del riquadro **Carica indirizzi MAC** selezionare **Seleziona un file** e quindi selezionare il **fileTemplate_Provisioning.csv** che contiene i dati.
 
      F. Nel riquadro **Provisioning dei dispositivi** , in **In attesa dell'attivazione**, seleziona un dispositivo e quindi seleziona **Genera codice di verifica** per generare un codice di verifica una tantum per ogni dispositivo di cui è stato effettuato il provisioning. Prendere nota del codice di verifica per ogni dispositivo SIP.
 
-4. Nel dispositivo SIP comporre il codice della funzionalità di registrazione seguito dal codice di verifica. Nel dispositivo SIP comporre il codice \*funzionalità di registrazione 55* (usato dal Gateway SIP per la convalida del codice di verifica una tantum), seguito dal codice di verifica generato nell'interfaccia di amministrazione di Teams per questo particolare dispositivo. Ad esempio, se il codice di verifica è 123456, comporre \*il numero 55\* 123456 per registrare il dispositivo.
+4. Nel dispositivo SIP comporre il codice della funzionalità di registrazione seguito dal codice di verifica. Sul dispositivo SIP comporre il codice \*funzionalità di registrazione 55* (usato dal Gateway SIP per la convalida del codice di verifica una tantum), seguito dal codice di verifica generato in Teams Amministrazione Center per questo particolare dispositivo. Ad esempio, se il codice di verifica è 123456, comporre \*55\*123456 per registrare il dispositivo.
 
 5.  Nel riquadro **Provisioning dei dispositivi** , **in In attesa dell'accesso**, seleziona **Disconnetti**.
 
@@ -205,19 +203,19 @@ Per semplificare le attività, è possibile registrare i dispositivi SIP nell'in
 
 7. Vai a [https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)e in **Immetti il codice** immetti il codice di associazione del dispositivo SIP, quindi seleziona **Avanti**.
 
-8. Nella pagina Microsoft **Sign in** immettere l'indirizzo di posta elettronica del dispositivo SIP nel campo **E-mail o telefono** e quindi selezionare **Avanti**.
+8. Nella pagina Microsoft **Sign in**, nel campo **Email o telefono**, immetti l'indirizzo e-mail per il dispositivo SIP e quindi seleziona **Avanti**.
 
 9. Nella pagina **Password** immettere la password per l'indirizzo di posta elettronica del dispositivo SIP e quindi selezionare **Accedi**.
 
-10. Nella pagina **Stai tentando di accedere a Teams gateway di dispositivi SIP**, seleziona **Continua**.
+10. Nella pagina **Si sta provando ad accedere al gateway dei dispositivi SIP di Teams** , selezionare **Continua**.
 
 ## <a name="how-to-sign-in-and-sign-out"></a>Come accedere e disconnettersi
 
-Solo l'accesso locale è supportato per i dispositivi personali degli utenti. Per disconnettersi da un dispositivo dall'interfaccia di amministrazione, procedere come segue:
+Solo l'accesso locale è supportato per i dispositivi personali degli utenti. Per disconnettersi da un dispositivo dal centro Amministrazione, procedere come segue:
 
 1. Accedere [**all'interfaccia di amministrazione di Teams**](https://admin.teams.microsoft.com).
 
-2. Seleziona **Teams** **dispositiviSIP** >  dispositivi.
+2. Selezionare **Dispositivi** >  di Teams **Dispositivi SIP**.
 
 3. A destra seleziona un dispositivo SIP e quindi **disconnetti**.
 
@@ -233,7 +231,7 @@ Per associare un dispositivo SIP dopo l'autenticazione dell'utente con le creden
 3. Immetti il codice di associazione visualizzato nel telefono SIP nell'app di autenticazione Web per associare il telefono SIP all'account dell'utente. In caso di accesso riuscito, che potrebbe richiedere del tempo, il telefono SIP visualizzerà il numero di telefono e il nome utente, se supportati dal dispositivo.
 
 > [!NOTE]
-> La posizione del dispositivo visualizzata nell'app di autenticazione Web Azure Active Directory è il data center Gateway SIP a cui è connesso il dispositivo. I telefoni SIP nell'ambito non supportano OAuth, quindi il Gateway SIP autentica l'utente tramite l'app di autenticazione Web e quindi associa il dispositivo alle credenziali dell'utente. Altre informazioni sono disponibili qui: [Microsoft Identity Platform e il flusso di concessione delle autorizzazioni per i dispositivi OAuth 2.0](/azure/active-directory/develop/v2-oauth2-device-code).
+> La posizione del dispositivo visualizzata nell'app di autenticazione Web di Azure Active Directory è il data center del Gateway SIP a cui è connesso il dispositivo. I telefoni SIP nell'ambito non supportano OAuth, quindi il Gateway SIP autentica l'utente tramite l'app di autenticazione Web e quindi associa il dispositivo alle credenziali dell'utente. Altre informazioni sono disponibili qui: [Microsoft Identity Platform e il flusso di concessione delle autorizzazioni per i dispositivi OAuth 2.0](/azure/active-directory/develop/v2-oauth2-device-code).
 
 ### <a name="sign-out"></a>Disconnessione
 
@@ -245,7 +243,7 @@ Per disconnettersi da un dispositivo nell'interfaccia di amministrazione di Team
 
 1. Accedere [**all'interfaccia di amministrazione di Teams**](https://admin.teams.microsoft.com).
 
-2. Seleziona **Teams** **dispositiviSIP** >  dispositivi.
+2. Selezionare **Dispositivi** >  di Teams **Dispositivi SIP**.
 
 3. A destra, nel riquadro **Dispositivi SIP** , selezionare il dispositivo.
 
@@ -253,24 +251,24 @@ Per disconnettersi da un dispositivo nell'interfaccia di amministrazione di Team
 
 ## <a name="view-and-monitor-sip-devices"></a>Visualizzare e monitorare i dispositivi SIP
 
-Puoi visualizzare e monitorare l'inventario dei dispositivi SIP nell'interfaccia di amministrazione di Teams dopo che gli utenti dei dispositivi hanno eseguito l'accesso almeno una volta. Ecco come:
+È possibile visualizzare e monitorare l'inventario dei dispositivi SIP nell'interfaccia di amministrazione di Teams dopo che gli utenti dei dispositivi hanno eseguito l'accesso almeno una volta. Ecco come:
 
 1. Accedere [all'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com/).
 
-2. Seleziona **Teams** **dispositiviSIP** >  dispositivi. Tutti i dispositivi SIP connessi sono elencati a destra.
+2. Selezionare **Dispositivi** >  di Teams **Dispositivi SIP**. Tutti i dispositivi SIP connessi sono elencati a destra.
 
 ## <a name="restart-a-sip-device"></a>Riavviare un dispositivo SIP
 
 1. Accedere [all'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com).
 
-2. Seleziona **Teams** **dispositiviSIP** >  dispositivi. 
+2. Selezionare **Dispositivi** >  di Teams **Dispositivi SIP**. 
 
 3. A destra seleziona il dispositivo SIP che vuoi riavviare e quindi **seleziona Riavvia**.
 
 
 > [!NOTE]
 > - La rimozione di un dispositivo SIP dal tenant non è attualmente disponibile nell'interfaccia di amministrazione di Teams. 
-> - L'esecuzione del comando dipende dalla disponibilità del dispositivo e potrebbe non corrispondere allo stato di esecuzione visualizzato nell'interfaccia di amministrazione di Teams. Se si tenta di abilitare il gateway SIP in un dispositivo che non lo supporta, il comando non verrà eseguito.
+> - L'esecuzione del comando dipende dalla disponibilità del dispositivo e potrebbe non corrispondere allo stato di esecuzione mostrato nell'interfaccia di amministrazione di Teams. Se si tenta di abilitare il gateway SIP in un dispositivo che non lo supporta, il comando non verrà eseguito.
 
 ## <a name="sync-policy-changes-to-sip-devices-to-enforce-policies"></a>Modifiche dei criteri di sincronizzazione nei dispositivi SIP per applicare i criteri
 
@@ -310,11 +308,11 @@ Come impostare il giapponese per i telefoni Cisco:
 
 ## <a name="microsoft-teams-and-ipv6"></a>Microsoft Teams e IPv6
 
-Gateway SIP supporta solo IPv4. Microsoft Teams servizio e client supportano sia IPv4 che IPv6. Per controllare le comunicazioni con Microsoft Teams, usare gli intervalli di indirizzi IP in [url e intervalli di indirizzi IP Microsoft 365](/microsoft-365/enterprise/urls-and-ip-address-ranges).
+Gateway SIP supporta solo IPv4. Il servizio e il supporto client di Microsoft Teams supportano sia IPv4 che IPv6. Se si vogliono controllare le comunicazioni con Microsoft Teams, usare gli intervalli di indirizzi IP in [URL e intervalli di indirizzi IP di Microsoft 365](/microsoft-365/enterprise/urls-and-ip-address-ranges).
 
 ## <a name="emergency-calling"></a>Chiamate di emergenza
 
-Gateway SIP supporta solo indirizzi di emergenza statici, denominati anche registrati. Attualmente, gli indirizzi registrati non sono supportati per gli scenari di routing diretto. Per altre informazioni sulle chiamate di emergenza, vedi [Pianificare e gestire le chiamate di emergenza](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing).
+Gateway SIP supporta le chiamate di emergenza dinamiche (dynamic E911) per i dispositivi SIP compatibili che condividono attributi di rete via cavo. Questi attributi vengono forniti nell'interfaccia di amministrazione di Teams e possono essere una combinazione di lunghezza ip locale e subnet o ID chassis e numero di porta di rete. Per i dispositivi che non condividono attributi di posizione o se la posizione non viene risolta dinamicamente per qualsiasi motivo, gateway SIP continuerà a supportare le chiamate di emergenza in base agli indirizzi registrati. Attualmente, gli indirizzi registrati non sono supportati per gli scenari di routing diretto. Per altre informazioni sulle chiamate di emergenza, vedi [Pianificare e gestire le chiamate di emergenza](/microsoftteams/what-are-emergency-locations-addresses-and-call-routing).
 
 ## <a name="report-problems-to-microsoft"></a>Segnalare problemi a Microsoft
 

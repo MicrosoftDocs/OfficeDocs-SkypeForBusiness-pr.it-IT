@@ -10,28 +10,28 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-collaboration
-- Teams_ITAdmin_Help
+- Teams_ITAdmin_Devices
 f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Scopri come eseguire l'accesso e la disconnessione in remoto dai dispositivi Teams Android
-ms.openlocfilehash: 5688ed8b7edf49e3048cb8b36b7e033030c09d5b
-ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
+description: Informazioni su come accedere e disconnettersi in remoto dai dispositivi Teams Android
+ms.openlocfilehash: 9da10d25c0dfccff3917dfa949966b5e460ea2a3
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65761428"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67271581"
 ---
 # <a name="remote-sign-in-and-sign-out-for-teams-android-devices"></a>Accesso remoto e disconnessione per dispositivi Teams Android
 
-Questo articolo descrive come eseguire l'accesso remoto e disconnettersi Teams Android dispositivi dall'interfaccia di amministrazione di Teams. Se non hai ancora eseguito il provisioning di un dispositivo o se è stato eseguito il provisioning del dispositivo ma non hai mai eseguito l'accesso, vedi [Provisioning remoto e accesso per Teams Android dispositivi](remote-provision-remote-login.md).
+Questo articolo descrive come eseguire l'accesso remoto e disconnettere i dispositivi Android di Teams dall'interfaccia di amministrazione di Teams. Se non è stato ancora eseguito il provisioning di un dispositivo o se è stato eseguito il provisioning del dispositivo ma non è mai stato eseguito l'accesso, vedere [Provisioning remoto e accesso per i dispositivi Teams Android](remote-provision-remote-login.md).
 
 ## <a name="remote-sign-in"></a>Accesso remoto
 
-Dopo il provisioning e l'accesso di un dispositivo per la prima volta, verrà visualizzato nella pagina corrispondente nel nodo **dispositivi Teams** dell'interfaccia di amministrazione di Teams .
+Dopo il provisioning e l'accesso di un dispositivo per la prima volta, verrà visualizzato nella pagina corrispondente nel nodo **Dispositivi di Teams** dell'interfaccia di amministrazione di Teams.
 
 Per accedere a un dispositivo che è stato disconnenne, vai alla pagina del dispositivo corrispondente.
 
@@ -49,4 +49,4 @@ Per accedere a un dispositivo che è stato disconnenne, vai alla pagina del disp
 
 - [Provisioning remoto e accesso per dispositivi Teams Android](remote-provision-remote-login.md)
 - [Gestire i dispositivi in Teams](device-management.md)
-- [Aggiornare Teams dispositivi in remoto](remote-update.md)
+- [Aggiornare i dispositivi Teams in remoto](remote-update.md)

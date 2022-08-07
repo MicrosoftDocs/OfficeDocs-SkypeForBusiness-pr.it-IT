@@ -11,29 +11,30 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
+- Teams_ITAdmin_Rooms
 description: Informazioni sui criteri di accesso condizionale supportati e consigliati e Intune conformità dei dispositivi per Microsoft Teams Rooms.
-ms.openlocfilehash: 8492f94106423498c7e301e48c8f4d046d569674
-ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
+ms.openlocfilehash: b6f54e2bee4e77f794f03255ef51623bbe220342
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65761468"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67271911"
 ---
-# <a name="supported-conditional-access-and-intune-device-compliance-policies-for-microsoft-teams-rooms-and-teams-android-devices"></a>Criteri di conformità di accesso condizionale e Intune dei dispositivi supportati per Microsoft Teams Rooms e dispositivi Teams Android
+# <a name="supported-conditional-access-and-intune-device-compliance-policies-for-microsoft-teams-rooms-and-teams-android-devices"></a>Criteri di conformità di accesso condizionale e Intune dei dispositivi supportati per dispositivi Android Microsoft Teams Rooms e Teams
 
 Questo articolo fornisce criteri di accesso condizionale supportati e Intune conformità dei dispositivi per Microsoft Teams Rooms. Per procedure consigliate e criteri di esempio, vedere [Accesso condizionale e procedure consigliate per la conformità Intune per Microsoft Teams Rooms](conditional-access-and-compliance-for-devices.md).
 
 > [!NOTE]
-> Teams Rooms deve essere già distribuita nei dispositivi a cui si vogliono assegnare criteri di accesso condizionale. Se non è ancora stata distribuita Teams Rooms, vedere [Creare account di risorse per sale e dispositivi di Teams condivisi](with-office-365.md) e [Distribuire Microsoft Teams Rooms in Android](../devices/collab-bar-deploy.md) per altre informazioni.
+> Teams Rooms deve essere già distribuita nei dispositivi a cui si vogliono assegnare criteri di accesso condizionale. Se non è ancora stato distribuito Teams Rooms, vedere [Creare account di risorse per sale e dispositivi Teams condivisi](with-office-365.md) e [Distribuire Microsoft Teams Rooms su Android](../devices/collab-bar-deploy.md) per altre informazioni.
 
 ## <a name="supported-conditional-access-policies"></a>Criteri di accesso condizionale supportati  
 
-L'elenco seguente include i criteri di accesso condizionale supportati per Teams Rooms su Windows e Android e per i criteri su Teams pannelli, telefoni e schermi.
+L'elenco seguente include i criteri di accesso condizionale supportati per Teams Rooms in Windows e Android e per i criteri su pannelli, telefoni e schermi di Teams.
 
-| Assegnazione                               | Teams Rooms Windows                                                                                                                                                                              | Teams Rooms su Android e pannelli                                                                                                                                                                              | Teams telefoni e schermi                                                                                                                                                    |
+| Assegnazione                               | Teams Rooms in Windows                                                                                                                                                                              | Teams Rooms su Android e pannelli                                                                                                                                                                              | Telefoni e schermi di Teams                                                                                                                                                    |
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Identità utente o carico di lavoro              | Supportati                                                                                                                                                                            | Supportati                                                                                                                                                                            | Supportati                                                                                                                                                            |
-| Azioni o app cloud                    | Supportati <br><br> Teams Rooms deve accedere alle tre app Cloud seguenti in modalità solo Teams: Office 365 Exchange Online, Office 365 SharePoint Online e Microsoft Teams | Supportati <br><br> Teams Rooms deve accedere alle tre app Cloud seguenti in modalità solo Teams: Office 365 Exchange Online, Office 365 SharePoint Online e Microsoft Teams | Supportati<br><br>Teams Android dispositivi devono accedere alle tre app cloud seguenti: Office 365 Exchange Online, Office 365 SharePoint Online e Microsoft Teams |
+| Azioni o app cloud                    | Supportati <br><br> Teams Rooms deve accedere alle tre app Cloud seguenti in modalità solo Teams: Office 365 Exchange Online, Office 365 SharePoint Online e Microsoft Teams | Supportati <br><br> Teams Rooms deve accedere alle tre app Cloud seguenti in modalità solo Teams: Office 365 Exchange Online, Office 365 SharePoint Online e Microsoft Teams | Supportati<br><br>I dispositivi Android di Teams devono accedere alle tre app Cloud seguenti: Office 365 Exchange Online, Office 365 SharePoint Online e Microsoft Teams |
 | **Condizioni**                           | ---                                                                                                                                                                                  | ---                                                                                                                                                                                  | ---                                                                                                                                                                  |
 | Rischio utente                                | Supportati                                                                                                                                                                            | Supportati                                                                                                                                                                            | Supportati                                                                                                                                                            |
 | Rischio di accesso                             | Supportati                                                                                                                                                                            | Supportati                                                                                                                                                                            | Supportati                                                                                                                                                            |
@@ -62,9 +63,9 @@ L'elenco seguente include i criteri di accesso condizionale supportati per Teams
 
 ## <a name="supported-device-compliance-policies"></a>Criteri di conformità dei dispositivi supportati 
 
-Microsoft Teams Rooms su Windows e Teams Rooms in Android supportano criteri di conformità diversi per i dispositivi.
+Microsoft Teams Rooms in Windows e Teams Rooms su Android supportano criteri di conformità diversi per i dispositivi.
 
-#### <a name="teams-rooms-on-windows"></a>[Teams Rooms Windows](#tab/mtr-w)
+#### <a name="teams-rooms-on-windows"></a>[Teams Rooms in Windows](#tab/mtr-w)
 
 Di seguito è riportata una tabella delle impostazioni di conformità dei dispositivi e i suggerimenti per l'uso con Teams Rooms.  
 
@@ -81,7 +82,7 @@ Di seguito è riportata una tabella delle impostazioni di conformità dei dispos
 | [**Conformità Configuration Manager**](/mem/intune/protect/compliance-policy-create-windows#device-properties)              | --             | --                                                                                                                                          |
 | Richiedere la conformità del dispositivo da Configuration Manager                                                                        | Supportati      |                                                                                                                                             |
 | [**Sicurezza del sistema**](/mem/intune/protect/compliance-policy-create-windows#system-security)                                 | --             | --                                                                                                                                          |
-| Tutti i criteri per le password                                                                                                       | Non supportato  | I criteri password possono impedire all'account Skype locale di eseguire automaticamente l'accesso.                                                        |
+| Tutti i criteri per le password                                                                                                       | Non supportato  | I criteri per le password possono impedire l'accesso automatico all'account Skype locale.                                                        |
 | Richiedi crittografia dell'archiviazione dei dati nel dispositivo.                                                                               | Supportati      | Da usare solo se è stata abilitata la crittografia dell'archiviazione dei dati in Teams Rooms.                                                               |
 | Firewall                                                                                                                    | Supportati      | Il firewall è già un requisito per Teams Rooms                                                                                           |
 | Trusted Platform Module (TPM)                                                                                               | Supportati      | Trusted Platform Module (TPM) è già un requisito per Teams Rooms.                                                                     |
@@ -94,7 +95,7 @@ Di seguito è riportata una tabella delle impostazioni di conformità dei dispos
 | [**Microsoft Defender per endpoint**](/mem/intune/protect/compliance-policy-create-windows#microsoft-defender-for-endpoint) | --             | --                                                                                                                                          |
 | Richiedere che il dispositivo sia al o sotto il punteggio di rischio della macchina.                                                                | Supportati      |                                                                                                                                             |
 
-#### <a name="teams-rooms-on-android"></a>[Teams Rooms Android](#tab/mtr-a)
+#### <a name="teams-rooms-on-android"></a>[Teams Rooms su Android](#tab/mtr-a)
 
 Di seguito è riportata una tabella delle impostazioni di conformità dei dispositivi e i suggerimenti per l'uso con Teams Rooms.  
 
@@ -103,11 +104,11 @@ Di seguito è riportata una tabella delle impostazioni di conformità dei dispos
 | [**Microsoft Defender per endpoint**](/mem/intune/protect/compliance-policy-create-android#microsoft-defender-for-endpoint)             | --            | --                                                                            |
 | Richiedere che il dispositivo sia al o sotto il punteggio di rischio della macchina                                                                             | Non supportato |                                                                               |
 | [**Integrità del dispositivo**](/mem/intune/protect/compliance-policy-create-android#device-health)                                                 | --            | --                                                                            |
-| Dispositivo gestito con l'amministratore del dispositivo                                                                                                | Obbligatorio      | Teams Android gestione dei dispositivi richiede l'abilitazione dell'amministratore del dispositivo. |
+| Dispositivo gestito con l'amministratore del dispositivo                                                                                                | Obbligatorio      | La gestione dei dispositivi Android di Teams richiede l'abilitazione dell'amministratore del dispositivo. |
 | Dispositivi rooted                                                                                                                          | Supportati     |                                                                               |
 | Richiedere che il dispositivo sia a livello o sotto il livello di minaccia del dispositivo                                                                            | Non supportato |                                                                               |
-| [**Google Play Proteggi**](/mem/intune/protect/compliance-policy-create-android#device-health)                                           | --            | --                                                                            |
-| Google Play Services è configurato                                                                                                      | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
+| [**Google Play Protect**](/mem/intune/protect/compliance-policy-create-android#device-health)                                           | --            | --                                                                            |
+| Servizi Google Play è configurato                                                                                                      | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
 | Provider di sicurezza aggiornato                                                                                                            | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
 | Analisi delle minacce nelle app                                                                                                                     | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
 | Attestazione dispositivo SafetyNet                                                                                                            | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
@@ -116,7 +117,7 @@ Di seguito è riportata una tabella delle impostazioni di conformità dei dispos
 | [**Sicurezza del sistema**](/mem/intune/protect/compliance-policy-create-android#system-security)                                             | --            | --                                                                            |
 | Richiedi crittografia dell'archiviazione dei dati nel dispositivo.                                                                                           | Supportati     |                                                                               |
 | [**Sicurezza del dispositivo**](/mem/intune/protect/compliance-policy-create-android#device-security)                                             | --            | --                                                                            |
-| Bloccare le app provenienti da origini sconosciute                                                                                                         | Non supportato | Solo gli amministratori Teams installano app o strumenti OEM                                   |
+| Bloccare le app provenienti da origini sconosciute                                                                                                         | Non supportato | Solo gli amministratori di Teams installano le app o gli strumenti OEM                                   |
 | integrità del runtime dell'app Portale aziendale                                                                                                    | Supportati     |                                                                               |
 | App con restrizioni                                                                                                                         | Non supportato |                                                                               |
 | Blocco del debug USB nel dispositivo                                                                                                           | Supportati     |                                                                               |
@@ -127,20 +128,20 @@ Di seguito è riportata una tabella delle impostazioni di conformità dei dispos
 | [**Android 9 e versioni precedenti o Samsung Knox**](/mem/intune/protect/compliance-policy-create-android#android-9-and-earlier-or-samsung-knox) | --            | --                                                                            |
 | Tipo di password richiesta                                                                                                                  | Non supportato |                                                                               |
 
-#### <a name="teams-phones-and-displays"></a>[Teams telefoni e schermi](#tab/phones)
+#### <a name="teams-phones-and-displays"></a>[Telefoni e schermi di Teams](#tab/phones)
 
-Di seguito è riportata una tabella delle impostazioni di conformità dei dispositivi e dei consigli per l'uso con Teams telefoni e schermi.  
+Di seguito è riportata una tabella delle impostazioni di conformità dei dispositivi e suggerimenti per l'uso con i telefoni e gli schermi di Teams.  
 
 | Criterio                                                                                                                                  | Disponibilità  | Note                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------|
 | [**Microsoft Defender per endpoint**](/mem/intune/protect/compliance-policy-create-android#microsoft-defender-for-endpoint)             | --            | --                                                                            |
 | Richiedere che il dispositivo sia al o sotto il punteggio di rischio della macchina                                                                             | Non supportato |                                                                               |
 | [**Integrità del dispositivo**](/mem/intune/protect/compliance-policy-create-android#device-health)                                                 | --            | --                                                                            |
-| Dispositivo gestito con l'amministratore del dispositivo                                                                                                | Obbligatorio      | Teams Android gestione dei dispositivi richiede l'abilitazione dell'amministratore del dispositivo. |
+| Dispositivo gestito con l'amministratore del dispositivo                                                                                                | Obbligatorio      | La gestione dei dispositivi Android di Teams richiede l'abilitazione dell'amministratore del dispositivo. |
 | Dispositivi rooted                                                                                                                          | Supportati     |                                                                               |
 | Richiedere che il dispositivo sia a livello o sotto il livello di minaccia del dispositivo                                                                            | Non supportato |                                                                               |
-| [**Google Play Proteggi**](/mem/intune/protect/compliance-policy-create-android#device-health)                                           | --            | --                                                                            |
-| Google Play Services è configurato                                                                                                      | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
+| [**Google Play Protect**](/mem/intune/protect/compliance-policy-create-android#device-health)                                           | --            | --                                                                            |
+| Servizi Google Play è configurato                                                                                                      | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
 | Provider di sicurezza aggiornato                                                                                                            | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
 | Analisi delle minacce nelle app                                                                                                                     | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
 | Attestazione dispositivo SafetyNet                                                                                                            | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
@@ -149,7 +150,7 @@ Di seguito è riportata una tabella delle impostazioni di conformità dei dispos
 | [**Sicurezza del sistema**](/mem/intune/protect/compliance-policy-create-android#system-security)                                             | --            | --                                                                            |
 | Richiedi crittografia dell'archiviazione dei dati nel dispositivo.                                                                                           | Supportati     | I produttori potrebbero configurare gli attributi di crittografia nei loro dispositivi in modo che Intune non riconoscano. In questo caso, Intune contrassegna il dispositivo come non conforme.<br><br>Il modo in cui i produttori configurano questi attributi di crittografia può variare a seconda del modello del dispositivo. Per ulteriori informazioni su un modello specifico, contatta il produttore del dispositivo. |
 | [**Sicurezza del dispositivo**](/mem/intune/protect/compliance-policy-create-android#device-security)                                             | --            | --                                                                            |
-| Bloccare le app provenienti da origini sconosciute                                                                                                         | Non supportato | Solo gli amministratori Teams installano app o strumenti OEM                                   |
+| Bloccare le app provenienti da origini sconosciute                                                                                                         | Non supportato | Solo gli amministratori di Teams installano le app o gli strumenti OEM                                   |
 | integrità del runtime dell'app Portale aziendale                                                                                                    | Supportati     |                                                                               |
 | App con restrizioni                                                                                                                         | Non supportato |                                                                               |
 | Blocco del debug USB nel dispositivo                                                                                                           | Supportati     |                                                                               |
@@ -162,20 +163,20 @@ Di seguito è riportata una tabella delle impostazioni di conformità dei dispos
 
 
 
-#### <a name="teams-panels"></a>[Teams pannelli](#tab/panels)
+#### <a name="teams-panels"></a>[Pannelli di Teams](#tab/panels)
 
-Di seguito è riportata una tabella delle impostazioni di conformità dei dispositivi e dei consigli per l'uso con i pannelli Teams.  
+Di seguito è riportata una tabella delle impostazioni di conformità dei dispositivi e suggerimenti per l'uso con i pannelli di Teams.  
 
 | Criterio                                                                                                                                  | Disponibilità  | Note                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------|---------------|-------------------------------------------------------------------------------|
 | [**Microsoft Defender per endpoint**](/mem/intune/protect/compliance-policy-create-android#microsoft-defender-for-endpoint)             | --            | --                                                                            |
 | Richiedere che il dispositivo sia al o sotto il punteggio di rischio della macchina                                                                             | Non supportato |                                                                               |
 | [**Integrità del dispositivo**](/mem/intune/protect/compliance-policy-create-android#device-health)                                                 | --            | --                                                                            |
-| Dispositivo gestito con l'amministratore del dispositivo                                                                                                | Obbligatorio      | Teams Android gestione dei dispositivi richiede l'abilitazione dell'amministratore del dispositivo. |
+| Dispositivo gestito con l'amministratore del dispositivo                                                                                                | Obbligatorio      | La gestione dei dispositivi Android di Teams richiede l'abilitazione dell'amministratore del dispositivo. |
 | Dispositivi rooted                                                                                                                          | Supportati     |                                                                               |
 | Richiedere che il dispositivo sia a livello o sotto il livello di minaccia del dispositivo                                                                            | Non supportato |                                                                               |
-| [**Google Play Proteggi**](/mem/intune/protect/compliance-policy-create-android#device-health)                                           | --            | --                                                                            |
-| Google Play Services è configurato                                                                                                      | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
+| [**Google Play Protect**](/mem/intune/protect/compliance-policy-create-android#device-health)                                           | --            | --                                                                            |
+| Servizi Google Play è configurato                                                                                                      | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
 | Provider di sicurezza aggiornato                                                                                                            | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
 | Analisi delle minacce nelle app                                                                                                                     | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
 | Attestazione dispositivo SafetyNet                                                                                                            | Non supportato | Google Play non è installato nei dispositivi Teams Android.                         |
@@ -184,7 +185,7 @@ Di seguito è riportata una tabella delle impostazioni di conformità dei dispos
 | [**Sicurezza del sistema**](/mem/intune/protect/compliance-policy-create-android#system-security)                                             | --            | --                                                                            |
 | Richiedi crittografia dell'archiviazione dei dati nel dispositivo.                                                                                           | Supportati     |                                                                               |
 | [**Sicurezza del dispositivo**](/mem/intune/protect/compliance-policy-create-android#device-security)                                             | --            | --                                                                            |
-| Bloccare le app provenienti da origini sconosciute                                                                                                         | Non supportato | Solo gli amministratori Teams installano app o strumenti OEM                                   |
+| Bloccare le app provenienti da origini sconosciute                                                                                                         | Non supportato | Solo gli amministratori di Teams installano le app o gli strumenti OEM                                   |
 | integrità del runtime dell'app Portale aziendale                                                                                                    | Supportati     |                                                                               |
 | App con restrizioni                                                                                                                         | Non supportato |                                                                               |
 | Blocco del debug USB nel dispositivo                                                                                                           | Supportati     |                                                                               |

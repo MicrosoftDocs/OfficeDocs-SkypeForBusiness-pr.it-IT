@@ -8,7 +8,8 @@ ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 audience: Admin
-ms.collection: ''
+ms.collection:
+- M365-collaboration
 f1.keywords:
 - CSH
 - ms.teamsadmincenter.org-widesettings.skypeforbusiness.overview
@@ -22,12 +23,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire le impostazioni per le funzionalità di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams.
-ms.openlocfilehash: 06c5cc4a199a7b29f2db97159850583d6927fc13
-ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
+ms.openlocfilehash: 26b2ba51d42a7be227b513d72add3e34f07d0fcd
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563704"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67269761"
 ---
 # <a name="manage-skype-for-business-settings-in-the-microsoft-teams-admin-center"></a>Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -60,7 +61,7 @@ Usa le impostazioni seguenti per gestire [Riunione Skype Broadcast](https://supp
 
 - **Riunione Skype Broadcast**: attiva questa opzione per abilitare Riunione Skype Broadcast per la tua organizzazione. Dopo aver abilitato questa funzionalità, devi [configurare la rete per Riunione Skype Broadcast](/skypeforbusiness/set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast).
 - **Vedere le funzionalità di anteprima**: attivare questa opzione per accedere in anteprima alle nuove funzionalità.
-- **Gli organizzatori possono pianificare riunioni anonime**: attiva questa opzione se vuoi consentire agli organizzatori di creare eventi di trasmissione che consentano a chiunque all'esterno dell'organizzazione di partecipare senza dover eseguire l'accesso. 
+- **Gli organizzatori possono pianificare riunioni anonime**: attiva questa opzione se vuoi consentire agli organizzatori di creare eventi in broadcast che consentano a chiunque all'esterno dell'organizzazione di partecipare senza dover accedere. 
 - **Registrare Riunione Skype riunioni in broadcast**: attiva questa opzione per consentire agli organizzatori e ai relatori di registrare le riunioni.  
 - **URL di supporto helpdesk per i partecipanti**: immettere l'URL di supporto dell'organizzazione che i partecipanti alla riunione possono usare se hanno bisogno di aiuto durante una riunione.
 

@@ -1,5 +1,5 @@
 ---
-title: Disponibilità negli Stati Uniti (Stati Uniti)
+title: Disponibilità nel Stati Uniti (Stati Uniti)
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -24,19 +24,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per gli Stati Uniti.
-ms.openlocfilehash: e03c9c9a2499822a53aa0dc5d122771fda957488
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Stati Uniti.
+ms.openlocfilehash: 524050f9859f8aa2847ee4706705ec8c95399f15
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58620692"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268591"
 ---
-# <a name="availability-in-the-united-states-us"></a>Disponibilità negli Stati Uniti (Stati Uniti)
+# <a name="availability-in-the-united-states-us"></a>Disponibilità nel Stati Uniti (Stati Uniti)
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per gli Stati Uniti. Per [altre informazioni, vedere](../calling-plans-for-office-365.md) Come acquistare un piano per chiamate.
+Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Stati Uniti. Per altre informazioni, vedi [Come acquistare un piano per chiamate](../calling-plans-for-office-365.md) .
 
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -59,12 +59,12 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
 | **Funzionalità**                                       | **Dettagli**                                                                                                                                                                                                                                                                                                                     |
 |:--------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| I Piani per chiamate sono disponibili per l'acquisto?  <br/>   | Sì  <br/>                                                                                                                                                                                                                                                                                                                      |
-| Minuti disponibili per i Piani per chiamate.              | Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali di 120 minuti (la disponibilità è limitata)</li><li>Piano per chiamate nazionali di 240 minuti (la disponibilità è limitata)</li></li><li>Piano per chiamate nazionali di 3000 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 3000 minuti di chiamate nazionali -OR- 600 minuti di chiamate internazionali (a seconda di quale sia stata raggiunta per prima nel mese di calendario)</li></li> |
+|I Piani per chiamate sono disponibili per l'acquisto?  |Sì          |   
+|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li>Piano per chiamate pay-as-you-go </li><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 1200 minuti </li><li> Piano per chiamate internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti viene raggiunto per primo nel mese di calendario)</li></ul>|
 | È possibile effettuare chiamate in uscita verso numeri premium? <br/> | Al momento non supportato. <br/>                                                                                                                                                                                                                                                                                               |
 | Chiamate in uscita possibili verso...?  <br/>                | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/>                                                                                                                                                                                                                      |
 > [!Note]
-> Quando un utente del Piano per chiamate (nazionale o nazionale e internazionale) negli Stati Uniti compone un numero di telefono in Canada, verrà trattato come una chiamata nazionale. Questo è anche il caso in cui un utente in Canada compone un numero di telefono negli Stati Uniti. Tuttavia, se si usano anche i criteri del piano di chiamata per limitare la chiamata in uscita dell'utente solo "nazionale", un utente statunitense non sarà in grado di chiamare il Canada e, allo stesso modo, un utente canadese non sarà in grado di chiamare un utente statunitense.
+> Quando un utente di un Piano per chiamate (nazionale o nazionale e internazionale) compone un numero di telefono in Canada, verrà considerato come una chiamata nazionale. Questo è anche il caso in cui un utente in Canada compone un numero di telefono negli Stati Uniti. Tuttavia, se si usano anche i criteri del piano di chiamata per limitare la chiamata in uscita dell'utente a una chiamata "nazionale", un utente statunitense non potrà chiamare il Canada e, allo stesso modo, un utente canadese non potrà chiamare un utente statunitense.
 
 >[!Note]
 > Le chiamate nazionali negli Stati Uniti includono le chiamate a tutti i 50 Stati e a Portorico. Gli utenti a cui è assegnata la posizione di utilizzo della licenza degli Stati Uniti e/o a Portorico condividono lo stesso pool di minuti.

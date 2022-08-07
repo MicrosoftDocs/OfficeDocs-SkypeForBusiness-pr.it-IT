@@ -9,25 +9,24 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
 - M365-voice
-- Teams_ITAdmin_RemoteWorkers
 search.appverid: MET150
 audience: Admin
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 description: Usare i report di Power BI di utilizzo di Teams per accedere ai dati di Call Quality Dashboard (CQD) di Microsoft Teams per tenere traccia dell'utilizzo di Microsoft Teams nell'organizzazione.
-ms.openlocfilehash: 6e96f9dd06f872f2907d04aa335e2af2d7a75f2b
-ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.openlocfilehash: bd579fa3f57c6e3b50a363eb77523f577c750efb
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66790341"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67270691"
 ---
 # <a name="view-microsoft-teams-utilization-in-power-bi-using-cqd-data"></a>Visualizzare l'utilizzo di Microsoft Teams in Power BI con i dati di Call Quality Dashboard
 
-Novità di marzo 2020, abbiamo aggiunto un report utilizzo team ai [modelli di query di Power BI scaricabili per Call Quality Dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). 
+Il report Utilizzo team è disponibile come parte dei [modelli di query di Power BI scaricabili per Call Quality Dashboard](https://www.microsoft.com/download/details.aspx?id=102291). 
 
-Questo nuovo report Utilizzo team consente di vedere come (e quanto) gli utenti usano Microsoft Teams accedendo ai dati di Teams Call Quality Dashboard (CQD). Questi report hanno lo scopo di essere una posizione centralizzata a cui gli amministratori e i responsabili aziendali possono accedere rapidamente per questi dati.
+Questo report consente di vedere come (e quanto) gli utenti usano Microsoft Teams accedendo ai dati di Call Quality Dashboard (CQD) di Teams. Questi report hanno lo scopo di essere una posizione centralizzata a cui gli amministratori e i responsabili aziendali possono accedere rapidamente per questi dati. Si noti che [consigliamo di non basarsi su questi dati per numeri concreti a causa della natura della telemetria della qualità delle chiamate](CQD-frequently-asked-questions.md#im-trying-to-use-cqd-for-usage-type-reports-and-find-that-some-of-the-data-is-incomplete----why-is-that).
 
 Il report di Power BI utilizzo team è costituito da due report principali: **[Riepilogo numero chiamate](#call-count-summary-report)** e **[Riepilogo minuti audio](#audio-minutes-summary-report)**. I report [Utilizzo giornaliero](#daily-usage), [Dettagli audio internazionali](#regional-audio-details), [Dettagli conferenza](#conference-details) ed [Elenco utenti](#user-list) vengono riprodotti quando un utente sfrutta i report drill-down, indicati nelle descrizioni seguenti.
 

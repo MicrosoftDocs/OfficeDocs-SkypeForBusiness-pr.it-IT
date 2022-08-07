@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Scopri come Microsoft Direct Routing consente di connettere un controller SBC (Session Border Controller) supportato dal cliente al sistema telefonico.
-ms.openlocfilehash: fd5f2733fc11511e6cfc2e646c0bb78aff26b522
-ms.sourcegitcommit: 15ec17eff4ad4c962d00b8683513f9b269d82917
+ms.openlocfilehash: f3fe1e9f6f2244c7d33528488f07e66797509d2a
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695059"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67267781"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -256,8 +256,8 @@ Il sip.pstnhub.gov.teams.microsoft.us FQDN verrà risolto in un indirizzo IP dal
 
 |Traffico|Da|A|Porta di origine|Porta di destinazione|
 |:--- |:--- |:--- |:--- |:--- |
-|SIP/TLS|SIP Proxy|SBC|1024 – 65535|Definito su SBC (per Office 365 deve essere usata solo la porta 5061 GCC High/DoD)|
-SIP/TLS|SBC|SIP Proxy|Definito in SBC|5061|
+|SIP/TLS|SIP Proxy|Sbc|1024 – 65535|Definito su SBC (per Office 365 deve essere usata solo la porta 5061 GCC High/DoD)|
+SIP/TLS|Sbc|SIP Proxy|Definito in SBC|5061|
 ||||||
 
 ### <a name="failover-mechanism-for-sip-signaling"></a>Meccanismo di failover per il segnalazione SIP
@@ -268,8 +268,8 @@ La tabella seguente riepiloga le relazioni tra data center primario, secondario 
 
 |Se il data center principale è|EMEA|NOAM|ASIA|
 |:--- |:--- |:--- |:--- |
-|Data center secondario (sip2.pstnhub.microsoft.com)|NOI|UE|NOI|
-|Data center terziario (sip3.pstnhub.microsoft.com)|ASIA|ASIA|UE|
+|Data center secondario (sip2.pstnhub.microsoft.com)|Noi|Ue|Noi|
+|Data center terziario (sip3.pstnhub.microsoft.com)|ASIA|ASIA|Ue|
 |||||
 
 ## <a name="media-traffic-port-ranges"></a>Traffico multimediale: intervalli di porte
@@ -295,8 +295,8 @@ L'intervallo di porte dei processori multimediali è illustrato nella tabella se
 
 |Traffico|Da|A|Porta di origine|Porta di destinazione|
 |:--- |:--- |:--- |:--- |:--- |
-|UDP/SRTP|Media Processor|SBC|3478-3481 e 49152 – 53247|Definito in SBC|
-|UDP/SRTP|SBC|Media Processor|Definito in SBC|3478-3481 e 49152 – 53247|
+|UDP/SRTP|Media Processor|Sbc|3478-3481 e 49152 – 53247|Definito in SBC|
+|UDP/SRTP|Sbc|Media Processor|Definito in SBC|3478-3481 e 49152 – 53247|
 
   > [!NOTE]
   > Microsoft consiglia almeno due porte per chiamata simultanea in SBC.
@@ -334,7 +334,7 @@ Si applica solo al caso di bypass non multimediale. Con Media Bypass, i flussi m
 Sulla gamba tra cloud media processor e client Di Microsoft Teams, viene utilizzato SILK o G.722. La scelta del codec su questa gamba si basa sugli algoritmi Microsoft, che tengono in considerazione più parametri. 
 
   > [!NOTE]
-  > Il re-targeting dei supporti non è supportato. Durante una chiamata direct routing, se la SBC invia un nuovo indirizzo IP multimediale a Teams Direct Routing, anche se è negoziato nel segnale SIP, i supporti non vengono mai inviati al nuovo indirizzo IP da Teams Direct Routing.
+  > Il re-targeting dei supporti non è supportato. Durante una chiamata con instradamento diretto, se il SBC invia un nuovo indirizzo IP multimediale all'instradamento diretto di Teams, anche se viene negoziato nel segnale SIP, i supporti non vengono mai inviati al nuovo indirizzo IP dall'instradamento diretto di Teams.
 
 ## <a name="supported-session-border-controllers-sbcs"></a>Controller dei confini della sessione supportati
 
@@ -344,6 +344,8 @@ I dispositivi che sono stati convalidati sono elencati come Certificati per Team
 
 Per ulteriori informazioni sugli SBC supportati, vedi [Session Border Controllers certified for Direct Routing](direct-routing-border-controllers.md).
 
+## <a name="support-boundaries"></a>Limiti del supporto
+Microsoft supporta solo un sistema telefonico con instradamento diretto se usato con dispositivi certificati. In caso di problemi, è necessario contattare prima l'assistenza clienti del fornitore SBC. Se necessario, il fornitore SBC invierà il problema a Microsoft tramite canali interni. Microsoft si riserva il diritto di rifiutare i casi di supporto in cui un dispositivo non certificato è connesso al sistema telefonico tramite instradamento diretto. Se Microsoft determina che il problema di instradamento diretto di un cliente riguarda un dispositivo SBC di un fornitore, il cliente dovrà contattare nuovamente il fornitore SBC per ricevere supporto.
  
 ## <a name="see-also"></a>Vedere anche
 

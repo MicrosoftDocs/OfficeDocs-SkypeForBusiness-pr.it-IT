@@ -18,12 +18,12 @@ description: Scopri i diversi modi per assegnare criteri e pacchetti di criteri 
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: 3dec8bf23167c5166302942140fcfe49e9ea3720
-ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
+ms.openlocfilehash: e7cf7ba085c7bad22fea4b14f79b9eb3d4e6e2aa
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67156514"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268421"
 ---
 # <a name="assign-policies-in-teams--getting-started"></a>Assegnare criteri in Teams- Guida introduttiva
 
@@ -83,9 +83,9 @@ Seguire questa procedura per impostare i criteri globali (predefiniti a livello 
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare alla pagina dei criteri per il tipo di criterio da aggiornare. Ad esempio, criteri **di Teams** > , **criteri riunioni** > , **criteri di messaggistica** o **criteri per le chiamate** **vocali** > .
 2. Selezionare il criterio **globale (predefinito a livello di organizzazione)** per visualizzare le impostazioni correnti.
-3. Aggiornare il criterio in base alle esigenze e quindi selezionare **Applica**.
+3. Aggiornare il criterio in base alle esigenze e quindi selezionare **Salva**.
 
-![Aggiornare i criteri globali nell'interfaccia di amministrazione di Teams.](media/assign-globalpolicy.png)
+:::image type="content" source="media/teams-meetings-policies-global-general.png" alt-text="Screenshot che mostra i criteri globali di aggiornamento nell'interfaccia di amministrazione di Teams." lightbox="media/teams-meetings-policies-global-expanded.png":::
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
@@ -125,7 +125,7 @@ Set-CsTeamsMessagingPolicy -Identity Global -AllowUserEditMessage $false
 
 Quando si assegnano criteri agli utenti nell'interfaccia di amministrazione di Microsoft Teams, è possibile visualizzare lo stato di queste assegnazioni di criteri nel [log attività](https://admin.teams.microsoft.com/activitylog). Il log attività mostra le informazioni di caricamento dei record di rete, le operazioni dei criteri di gruppo dall'interfaccia di amministrazione di Teams e PowerShell e le operazioni dei criteri batch (per più di 20 utenti) dall'interfaccia di amministrazione di Teams, per gli ultimi 30 giorni.
 
-![Screenshot della pagina del log attività.](media/Activity_Log.png)
+:::image type="content" source="media/teams-activity-log.png" alt-text="Screenshot della pagina del log attività." lightbox="media/Activity_Log.png":::
 
 Per visualizzare le operazioni dei criteri nel log attività:
 

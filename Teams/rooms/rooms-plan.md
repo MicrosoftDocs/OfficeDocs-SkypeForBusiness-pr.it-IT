@@ -14,13 +14,14 @@ ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
+- Teams_ITAdmin_Rooms
 description: Questo articolo illustra le considerazioni rilevanti relative alla pianificazione per la distribuzione di Microsoft Teams Rooms, la nuova generazione di Skype Room Systems.
-ms.openlocfilehash: 392a14e3a72d60903db88b34d9b72152e1a8ec81
-ms.sourcegitcommit: 726df9ecac561bda18e349a5adab9bc85e52844d
+ms.openlocfilehash: fe973e7e6f3f6d84a4ddf1721ccc8c73fb5da928
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65761368"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67269751"
 ---
 # <a name="plan-microsoft-teams-rooms"></a>Pianificare Microsoft Teams Rooms
 
@@ -48,7 +49,7 @@ Microsoft Teams Rooms include i componenti chiave seguenti per offrire un'esperi
 
 È possibile ottenere questi componenti come bundle preinstallati da un certo numero di fornitori oppure acquistare singolarmente i componenti supportati seguendo i [requisiti descritti in questo articolo](requirements.md).
 
-È possibile distribuire Microsoft Teams Rooms con Microsoft Teams o Skype for Business distribuzioni locali.  Per informazioni sulle licenze necessarie, vedere Teams Sala riunioni [Licensing Update](rooms-licensing.md).
+È possibile distribuire Microsoft Teams Rooms con Microsoft Teams o Skype for Business distribuzioni locali.  Vedere [l'Aggiornamento delle licenze per le sale riunioni di Teams](rooms-licensing.md) per informazioni sulle licenze necessarie.
 
 | &nbsp;   |  &nbsp;   |
 |-----------|------------|
@@ -66,18 +67,18 @@ Iniziare con la comprensione di quali sale riunioni si dispone e immaginare cosa
 
 Potrebbe essere necessario coordinare queste attività in diversi team. Viene fornita una visualizzazione generale delle principali attività da trattare, oltre a suggerimenti per i team che sono tipicamente coinvolti nella distribuzione e gestione dei sistemi delle sale riunioni, per aiutare l'utente a decidere con chi lavorare.
 
-| Attività                       | Who potrebbe intraprendere l'attività           | Assegnato a | Collegamenti a questo contenuto |
+| Attività                       | Chi può intraprendere l'attività           | Assegnato a | Collegamenti a questo contenuto |
 |----------------------------|----------------------------------------|-------------|-----------------------|
-| Sale dell'inventario            | Strutture / team AV / Team Project IT |             | [Pianificazione dell'inventario delle sale e delle funzionalità](#room-inventory-and-capability-planning) |
-| Pianificare le funzionalità          | Team Project IT                        |             | [Pianificazione dell'inventario delle sale e delle funzionalità](#room-inventory-and-capability-planning) |
-| Selezione del dispositivo           | Team it Project/AV              |             | [Selezione del dispositivo](#device-selection) |
-| Appalti                | Team it Project/AV              |             | [Appalti](#procurement) |
-| Preparazione del sito             | Strutture / team AV / Team Project IT |             | [Preparazione del sito](rooms-deploy.md#site-readiness) |
-| Prontezza del servizio          | Team Project IT                        |             | [Prontezza del servizio](rooms-deploy.md#service-readiness) |
-| Configurazione              | Team Project IT                        |             | [Configurazione e distribuzione](rooms-deploy.md#configuration-and-deployment) |
-| Deployment                 | Strutture / team AV / Team Project IT |             | [Elenco di controllo per la distribuzione](console.md#microsoft-teams-rooms-deployment-checklist) |
-| Adozione                   | Strutture / team AV / Team Project IT |             | [Adozione](#plan-for-adoption-and-change-management) |
-| Manutenzione e operazioni | Team AV/team Project IT              |             | [Panoramica della gestione](rooms-manage.md) |
+| Sale dell'inventario            | Strutture/team AV/team di progetto IT |             | [Pianificazione dell'inventario delle sale e delle funzionalità](#room-inventory-and-capability-planning) |
+| Pianificare le funzionalità          | Team di progetto IT                        |             | [Pianificazione dell'inventario delle sale e delle funzionalità](#room-inventory-and-capability-planning) |
+| Selezione del dispositivo           | Team di progetto IT/ team AV              |             | [Selezione del dispositivo](#device-selection) |
+| Appalti                | Team di progetto IT/ team AV              |             | [Appalti](#procurement) |
+| Preparazione del sito             | Strutture/team AV/team di progetto IT |             | [Preparazione del sito](rooms-deploy.md#site-readiness) |
+| Prontezza del servizio          | Team di progetto IT                        |             | [Prontezza del servizio](rooms-deploy.md#service-readiness) |
+| Configurazione              | Team di progetto IT                        |             | [Configurazione e distribuzione](rooms-deploy.md#configuration-and-deployment) |
+| Deployment                 | Strutture/team AV/team di progetto IT |             | [Elenco di controllo per la distribuzione](console.md#microsoft-teams-rooms-deployment-checklist) |
+| Adozione                   | Strutture/team AV/team di progetto IT |             | [Adozione](#plan-for-adoption-and-change-management) |
+| Manutenzione e operazioni | Team AV/team di progetto IT              |             | [Panoramica della gestione](rooms-manage.md) |
 
 ## <a name="room-inventory-and-capability-planning"></a>Pianificazione dell'inventario delle sale e delle funzionalità
 
@@ -106,7 +107,7 @@ Per indicazioni sul tipo di sistema e dispositivi periferici in base al tipo e a
 
 In base al fornitore che si preferisce, usare le informazioni fornite nell'articolo sui requisiti per definire la configurazione dei dispositivi periferici Microsoft Teams Rooms e supportati per ogni tipo di chat room e usarla come modello per la distribuzione.
 
-**suggerimento Pro**: alcuni tipi di chat room potrebbero non essere applicabili per la distribuzione.
+**Suggerimento per** professionisti: alcuni tipi di chat room potrebbero non essere applicabili per la distribuzione.
 
 | &nbsp; | &nbsp; |
 |---|---|
@@ -122,7 +123,7 @@ _Esempio di modello di distribuzione Microsoft Teams Rooms per l'organizzazione_
 | Media 18' di 20'  | 6&ndash;12       |                              |                    |                 |
 | Grande 15' per 32'   | 12&ndash;16      |                              |                    |                 |
 
-**Pro suggerimento:** è il momento ideale per iniziare a raccogliere informazioni sulla soluzione Microsoft Teams Rooms scelta.
+**Suggerimento per professionisti -** È il momento ideale per iniziare a raccogliere informazioni sulla soluzione Microsoft Teams Rooms scelta.
 
 ## <a name="procurement"></a>Appalti
 
@@ -134,7 +135,7 @@ A seconda della scala e dell'approccio di distribuzione, si potrebbe decidere di
 
 | &nbsp; | &nbsp; |
 |---|---|
-| ![componenti della spedizione.](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>I componenti verranno spediti direttamente in un sito o in una struttura di gestione temporanea?</li><li>Who gestirà la struttura di preparazione (se decidete di utilizzarla)?</li></ul> |
+| ![componenti della spedizione.](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>I componenti verranno spediti direttamente in un sito o in una struttura di gestione temporanea?</li><li>Chi gestirà la struttura di gestione temporanea (se decidete di utilizzarla)?</li></ul> |
 | ![piano operativo.](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Pianificare le operazioni.</li><li>Pianificare l'adozione e la gestione delle modifiche.</li></ul> |
 
 ## <a name="plan-for-operations"></a>Pianificare le operazioni

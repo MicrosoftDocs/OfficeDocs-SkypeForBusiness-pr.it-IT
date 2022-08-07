@@ -11,19 +11,19 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-collaboration
-- m365initiative-meetings
+- Teams_ITAdmin_MTRP
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Dati del nodo reporting per l'integrità e l'utilizzo dei report
 f1keywords: ''
-ms.openlocfilehash: f3c8ceec383d801c5992b0e8275cfe5360ef5bfe
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 87a04860a69799bf00492691dc24498076bd4924
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65674818"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67271431"
 ---
 # <a name="health-and-usage-reports"></a>Report sull'integrità e sull'utilizzo
 
@@ -132,7 +132,7 @@ Sotto le metriche del titolo c'è una tabella di sale con metriche corrispondent
 |Colonna|Descrizione|
 |---|---|
 |Utilizzo|Percentuale di tempo in cui la camera è stata prenotata durante l'orario di ufficio nel periodo selezionato. Ad esempio, Periodo di tempo impostato su 7 giorni. Utilizzo dell'80% dei mezzi la camera è stata prenotata per 32/40 ore|
-|Prenotato online|Delle riunioni prenotate, la percentuale delle quali è stata abilitata con Teams. Ad esempio, Sono state prenotate 10 riunioni. Di questo, 8 aveva un collegamento Teams. Prenotato online = 80%|
+|Prenotato online|Delle riunioni prenotate, la percentuale delle quali è stata abilitata con Teams. Ad esempio, Sono state prenotate 10 riunioni. Di questo, 8 aveva un collegamento a Teams. Prenotato online = 80%|
 |Riunioni pianificate|Numero assoluto di riunioni pianificate nella sala|
 |Totale chiamate|Numero assoluto di chiamate con la chat room come partecipante.|
 Prestazioni delle chiamate|Percentuale di chiamate con valutazione "Buona". Ogni chiamata viene valutata e riceve una valutazione Buona, Scarsa, Sconosciuta. Questa metrica viene calcolata da Chiamate buone/Chiamate totali|
@@ -145,7 +145,7 @@ Se si fa clic su una sala nella visualizzazione elenco, viene visualizzato un ri
 
 <!--![A screenshot of utilization by hours per day](../media/health-and-usage-012.png)-->
 
-La tabella **Chiamate** mostra le riunioni in cui la sala ha partecipato a una chiamata Teams. La qualità audio della sala viene valutata solo per la chat room, non per tutti i partecipanti. Per visualizzare la qualità della chiamata per tutti i partecipanti di una chiamata specifica, selezionare una chiamata facendo clic sull'ora di inizio.
+La tabella **Chiamate** mostra le riunioni in cui la sala ha partecipato a una chiamata di Teams. La qualità audio della sala viene valutata solo per la chat room, non per tutti i partecipanti. Per visualizzare la qualità della chiamata per tutti i partecipanti di una chiamata specifica, selezionare una chiamata facendo clic sull'ora di inizio.
 
 <!--!![A screenshot of room audio quality](../media/health-and-usage-016.png)-->
 

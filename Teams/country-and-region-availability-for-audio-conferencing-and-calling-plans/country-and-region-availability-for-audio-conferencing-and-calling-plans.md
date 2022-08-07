@@ -26,12 +26,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Scopri se i servizi di audioconferenza, sistema telefonico, piani per chiamate, crediti comunicazioni e numeri verdi e a pagamento sono disponibili in un paese o in un'area geografica.
-ms.openlocfilehash: 7693ae0421d186d1ac230d48bf4df2369aa4e3f8
-ms.sourcegitcommit: d87991ed2d3e4d70edb048378763a17ff689b710
+ms.openlocfilehash: 0bc0013f27e890e56224dcc1c645afbaf94b699a
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66682465"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67269181"
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani di chiamata per Paese e area geografica
 
@@ -171,7 +171,7 @@ Dopo aver verificato se è disponibile uno dei servizi Skype for Business o Micr
 
 ### <a name="audio-conferencing"></a>Audioconferenza
 
-A volte le persone all’interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Skype for Business e Microsoft Teams includono la funzione di audioconferenza proprio per questa situazione! È possibile accedere alle riunioni utilizzando un telefono anziché le app Skype for Business e Microsoft Teams su un dispositivo mobile o un PC. Quando hai deciso di voler usare i servizi di audioconferenza per la tua organizzazione, acquista una licenza per i **servizi di audioconferenza** per ogni persona dell'organizzazione che intende pianificare/ospitare una riunione audio.
+A volte le persone all’interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Skype for Business e Microsoft Teams includono la funzione di audioconferenza proprio per questa situazione! È possibile accedere alle riunioni utilizzando un telefono anziché le app Skype for Business e Microsoft Teams su un dispositivo mobile o un PC. Quando hai deciso di voler usare i servizi di audioconferenza per la tua organizzazione, acquista una licenza per i **servizi di audioconferenza** per ogni persona dell'organizzazione che pianifica/ospiterà una riunione audio.
   
 Con le audioconferenze sono disponibili numeri verdi e a pagamento che possono essere utilizzati dagli utenti per accedere alle riunioni. I numeri a tariffa dei seguenti paesi o aree geografiche vengono assegnati automaticamente come numeri condivisi dei servizi di audioconferenza alle organizzazioni in cui è abilitata l’Audioconferenza. I numeri verdi e a tariffa dedicati possono essere assegnati alla tua organizzazione da altre città.
 
@@ -205,6 +205,11 @@ La disponibilità di numeri verdi a pagamento per alcune di queste località pu�
 Utilizza l'elenco a discesa in alto per cercare un paese o un’area geografica e sapere quali servizi sono disponibili.
 
 ### <a name="calling-plans"></a>Piani di chiamata
+
+|Funzionalità     |Dettagli  |
+|----------|-----------|
+|I Piani per chiamate sono disponibili per l'acquisto?  |Sì          |   
+|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li>Piano per chiamate pay-as-you-go </li><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 1200 minuti </li><li> Piano per chiamate internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti viene raggiunto per primo nel mese di calendario)</li></ul>|
 
 Unitamente al Sistema telefonico, un Piano per chiamate consente agli utenti di effettuare e ricevere telefonate. Ottieni innanzitutto un numero di telefono (abbonato) (non un numero di servizio) da assegnare all'utente e quindi assegna un piano per le chiamate. Sono disponibili due tipi di Piani per chiamate: **Nazionali** e **Internazionali**. Per altre informazioni, vedere [Sistema telefonico e piani per chiamate](../calling-plan-landing-page.md).
 

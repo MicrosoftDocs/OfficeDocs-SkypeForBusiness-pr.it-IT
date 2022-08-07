@@ -1,5 +1,5 @@
 ---
-title: Disponibilità a Portorico
+title: Disponibilità a PortoRico
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -24,19 +24,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per PortoRico.
-ms.openlocfilehash: 63c4ce78cb45483118c05d935fb6ade300d51d16
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per Portorico.
+ms.openlocfilehash: 00cd5b7068d6feaa14a78623c3c0c50269fead4e
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58605915"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67271871"
 ---
-# <a name="availability-in-puerto-rico"></a>Disponibilità a Portorico
+# <a name="availability-in-puerto-rico"></a>Disponibilità a PortoRico
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per PortoRico.
+Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per Portorico.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -59,8 +59,8 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |3000 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda del limite che viene raggiunto per primo per mese di calendario). Le chiamate nazionali negli Stati Uniti includono le chiamate a tutti i 50 Stati e a Portorico. Gli utenti a cui è assegnata la posizione di utilizzo della licenza degli Stati Uniti e/o a Portorico condividono lo stesso pool di minuti.  <br/> |
+|I Piani per chiamate sono disponibili per l'acquisto?  |Sì          |   
+|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li>Piano per chiamate pay-as-you-go </li><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 1200 minuti </li><li> Piano per chiamate internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti viene raggiunto per primo nel mese di calendario)</li></ul>|
 |È possibile effettuare chiamate in uscita verso numeri premium? <br/> | Al momento non supportato. <br/> |
 |Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).  <br/> |
    

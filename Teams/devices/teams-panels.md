@@ -13,15 +13,16 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-voice
+- Teams_ITAdmin_Devices
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Questo articolo fornisce una panoramica e le funzionalità supportate dai pannelli di Microsoft Teams.
-ms.openlocfilehash: 313d0b8abbf1dcd703bc617e52173fc7403cc743
-ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
+ms.openlocfilehash: 745e592e1c8451a47038c33a9f30d29a7a99d63c
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66794554"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268561"
 ---
 # <a name="microsoft-teams-panels"></a>Pannelli di Microsoft Teams
 
@@ -35,7 +36,7 @@ Questo articolo fornisce una panoramica dei pannelli di Teams e consente di pian
 
 I pannelli di Teams supportano le caratteristiche seguenti:
 
-- **Visualizzazione dedicata dell'area riunioni e dei dettagli della riunione.** Si ottengono dettagli immediatamente disponibili su un'area riunioni, inclusi il luogo e la disponibilità. Per un'area riunioni riservata, è possibile visualizzare i dettagli principali della riunione, ad esempio il titolo della riunione, il pianificare della riunione e l'organizzatore della riunione.
+- **Visualizzazione dedicata dell'area riunioni e dei dettagli della riunione.** Si ottengono dettagli immediatamente disponibili su un'area riunioni, inclusi il luogo e la disponibilità. Per un'area riunioni riservata, è possibile visualizzare i dettagli principali della riunione, ad esempio il titolo della riunione, la pianificazione della riunione e l'organizzatore della riunione.
 - **Prenotare spazi di riunione disponibili per riunioni ad hoc.** Usando il pannello touchscreen, è possibile prenotare un'area riunioni disponibile sul posto per una riunione ad hoc e _partecipare a_ tale riunione di Teams dai dispositivi Microsoft Teams Rooms o Surface Hub nella sala riunioni.
 - **Indicatori contraddistinti da colori per lo stato di disponibilità dello spazio.** Puoi vedere la disponibilità dell'area riunioni da lontano e da vicino con vivaci indicatori LED e schermata home. Verde indica che l'area riunioni è disponibile e, se necessario, è possibile prenotarla direttamente dai pannelli stessi. Il rosso o il viola indica che lo spazio per la riunione è riservato.
 - **Personalizza lo sfondo e l'indicatore di stato riservato.** Gli amministratori possono modificare l'aspetto predefinito dei pannelli tramite le impostazioni. Ad esempio, gli amministratori possono cambiare lo sfondo dello sfondo o cambiare il colore dell'indicatore di stato occupato.

@@ -11,7 +11,6 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
-- m365initiative-voice
 audience: Admin
 appliesto:
 - Skype for Business
@@ -20,16 +19,16 @@ ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
-- ms.teamsadmincenter.callqueues.overview"
+- ms.teamsadmincenter.callqueues.overview
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata tramite i cmdlet
-ms.openlocfilehash: 8d62d3648d35cc302e333c2efa552bb2094cb14d
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: b2439bf6b71fc7381494030c326db88660fa5eaf
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65674578"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268801"
 ---
 # <a name="create-a-call-queue-via-cmdlets"></a>Creare una coda di chiamata tramite cmdlet
 
@@ -51,9 +50,9 @@ ms.locfileid: "65674578"
 
 2. Hai i diritti di amministrazione tenant
 3. Hai acquistato Telefono di Microsoft Teams
-4. Gli agenti, le liste di distribuzione e i canali Teams indicati di seguito sono già stati creati
+4. Gli agenti, le liste di distribuzione e i canali di Teams indicati di seguito sono già stati creati
 
-Nota: il cmdlet Teams Channel usato di seguito fa parte della versione di anteprima pubblica di Teams modulo di PowerShell.  Per altre informazioni, vedere [Installare Teams'anteprima pubblica di PowerShell](teams-powershell-install.md) e vedere [Microsoft Teams Note sulla versione di PowerShell](teams-powershell-release-notes.md).
+Nota: il cmdlet Teams Channel usato di seguito fa parte della versione di anteprima pubblica del modulo PowerShell di Teams.  Per altre informazioni, vedere [Installare l'anteprima pubblica di PowerShell di Teams](teams-powershell-install.md) e vedere anche [Note sulla versione di Microsoft Teams PowerShell](teams-powershell-release-notes.md).
 
 Gli utenti che hanno già installato il modulo MicrosoftTeams devono `Update-Module MicrosoftTeams` assicurarsi che sia installata la versione più aggiornata.
 
@@ -129,7 +128,7 @@ Strutture Informazioni sulla coda di chiamata collaborativa:
 
 ## <a name="login"></a>Login
 
-Verrà richiesto di immettere le credenziali di amministratore Teams.
+Verrà richiesto di immettere le credenziali di amministratore di Teams.
 
 ```powershell
 $credential = Get-Credential
@@ -176,7 +175,7 @@ Get-MsolAccountSku
 
 ### <a name="create-and-assign-resource-account"></a>Creare e assegnare un account di risorsa
 
-Nota: Telefono numero non è necessario perché la coda di chiamata è front-end terminata da un operatore automatico
+Nota: il numero di telefono non è necessario perché la coda di chiamata è front-end terminata da un operatore automatico
 
 - Applicationid
   - Operatore automatico: ce933385-9390-45d1-9512-c8d228074e07
@@ -240,7 +239,7 @@ Get-MsolAccountSku
 
 ### <a name="create-and-assign-resource-account"></a>Creare e assegnare un account di risorsa
 
-Nota: Telefono numero non è necessario perché la coda di chiamata è front-ended da un operatore automatico
+Nota: il numero di telefono non è necessario qui perché la coda di chiamata è front-ended da un operatore automatico
 
 - Applicationid
   - Operatore automatico: ce933385-9390-45d1-9512-c8d228074e07
@@ -308,7 +307,7 @@ Get-MsolAccountSku
 
 ### <a name="create-and-assign-resource-account"></a>Creare e assegnare un account di risorsa
 
-**Nota**: Telefono numero non è necessario perché la coda di chiamata è front-end da un operatore automatico
+**Nota**: il numero di telefono non è necessario qui perché la coda di chiamata è front-ended da un operatore automatico
 
 - Applicationid
   - Operatore automatico: ce933385-9390-45d1-9512-c8d228074e07

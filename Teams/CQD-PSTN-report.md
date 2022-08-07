@@ -15,16 +15,16 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 description: Usare il report Routing diretto PSTN di Microsoft Teams Call Quality Dashboard (CQD)) per monitorare e risolvere i problemi relativi alle chiamate PSTN in Microsoft Teams.
-ms.openlocfilehash: 8d6e971adc3cd7e4ec9b4038356e744d4451146f
-ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.openlocfilehash: 7b7205658358cfa3aa90824718c03731fa33a534
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66789891"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67270711"
 ---
 # <a name="using-the-cqd-pstn-direct-routing-report"></a>Uso del report Routing diretto PSTN CQD
 
-Novità di marzo 2020, abbiamo aggiunto un report routing diretto PSTN di Microsoft Teams Call Quality Dashboard (CQD) ai [modelli di query di Power BI scaricabili per Call Quality Dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). 
+Il report Routing diretto PSTN di Microsoft Teams Call Quality Dashboard (CQD) è disponibile nei [modelli di query di Power BI scaricabili per Call Quality Dashboard.](https://www.microsoft.com/download/details.aspx?id=102291) 
 
 
 Il report CQD PSTN Direct Routing (CQD PSTN Direct Routing Report.pbit) consente di comprendere i modelli di utilizzo e la qualità dei servizi PSTN. Utilizza questo report per monitorare l'utilizzo del servizio, informazioni sul controller di frontiera della sessione (SBC), il servizio di telefonia, i parametri di rete e i dettagli del rapporto efficacia rete. Queste informazioni possono aiutare a identificare i problemi, incluso il motivo delle chiamate interrotte. Ad esempio, sarai in grado di vedere quando il volume diminuisce o quante chiamate vengono influenzate e per quale motivo.

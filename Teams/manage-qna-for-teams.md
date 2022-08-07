@@ -10,17 +10,16 @@ search.appverid: MET150
 ms.localizationpriority: medium
 ms.collection:
 - M365-voice
-- m365initiative-voice
 audience: Admin
 appliesto:
 - Microsoft Teams
 description: Informazioni su come gli amministratori IT possono configurare, usare e gestire le domande&A in Q&A di Teams per un approccio strutturato alla raccolta di domande, all'organizzazione delle discussioni, all'eliminazione di singoli messaggi, all'uso delle lingue disponibili e alla comprensione del ciclo di vita dei dati, nonché dei criteri di conservazione ed eliminazione dei dati.
-ms.openlocfilehash: 3ffdc4f48c43bef2d1d342983a63612c91bc40a9
-ms.sourcegitcommit: 89904ab4116294ad9e4fd407feba8d7e3eefef10
+ms.openlocfilehash: edcf1578b70bf39ccf330b7a328b7d0de7558263
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66880430"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268631"
 ---
 # <a name="manage-qa-in-teams-meetings"></a>Gestire domande&A nelle riunioni di Teams
 
@@ -34,6 +33,7 @@ Questo articolo descrive come gestire i criteri Q&A e a livello utente, che dete
 - Per consentire agli utenti dell'organizzazione di aggiungere domande&R alle riunioni di Teams, è necessario verificare che gli accessi per il servizio Office 365 Yammer siano abilitati in Azure Active Directory. Seguire questa procedura per verificare che gli accessi siano abilitati:
   - Passare **all'interfaccia di amministrazione** >  di Azure AD **Tutte le** > **applicazioni** >  Enterprise Office 365 **alle proprietà** di **Yammer** > .
   - Per l'opzione **Abilitato per l'accesso degli utenti?** selezionare **Sì** , se necessario.
+- Verificare di non aver bloccato l'app Q&A (nativa) nelle [app Teams](/MicrosoftTeams/manage-apps)
 
 ## <a name="who-can-use-qa"></a>Chi può usare Q&A
 

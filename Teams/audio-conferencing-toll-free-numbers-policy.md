@@ -10,7 +10,6 @@ ms.service: msteams
 ms.collection:
 - M365-voice
 - M365-collaboration
-- m365initiative-meetings
 search.appverid: MET150
 audience: admin
 appliesto:
@@ -22,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - ms.teamsadmincenter.audioconferencing.overview
 description: Informazioni su come i servizi di audioconferenza in Microsoft 365 o Office 365 consentono agli utenti di accedere alle riunioni tramite telefono.
-ms.openlocfilehash: 1a03faf129a40d61605474e95c759067ce20841e
-ms.sourcegitcommit: 312ff79ecab91412918793ec882bfc6e0143d30a
+ms.openlocfilehash: 7073fa9c870fc718b2d2c6e24e109878e0dd2d34
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66884905"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67269931"
 ---
 # <a name="audio-conferencing-policy-settings-for-toll-and-toll-free-numbers"></a>Impostazioni dei criteri per i servizi di audioconferenza per i numeri verdi e a pagamento
 
@@ -45,7 +44,7 @@ Quando un criterio di audioconferenza di Teams è abilitato nel tenant, nel tena
 In questo criterio il valore di **AllowTollfreedialin** sarà impostato su ON e non ci saranno numeri di telefono definiti nel criterio. Questo sarà il criterio predefinito per tutti gli utenti del tenant che al momento del lancio hanno **AllowTollfreedialin** impostato su **Attivato**.
 Poiché i criteri non hanno numeri di telefono definiti, quando gli utenti di questo criterio creano una riunione di Teams, i numeri di telefono disponibili nella riunione saranno gli stessi numeri di telefono che avevano gli utenti prima dei criteri. Questi numeri di telefono in genere vengono impostati come predefiniti per il paese/sede dell'utente, a meno che non siano stati modificati dall'amministratore del tenant per i singoli utenti.
 
-Ad esempio, se a un utente con sede in Germania erano assegnati numeri verdi e a pagamento germania prima del lancio dei criteri per le audioconferenze, all'utente al momento dell'avvio verranno assegnati i criteri globali e i numeri di telefono che continueranno a visualizzare nell'invito alla riunione saranno gli stessi di prima dell'applicazione dei criteri, ovvero  numeri verdi e a pagamento tedeschi). Un utente finale non vedrà alcuna modifica all'avvio del criterio. Se, tuttavia, un amministratore tenant modifica i criteri globali e include numeri di telefono specifici nei criteri diversi da prima, tutti gli utenti del criterio vedranno solo i numeri di telefono inclusi nei criteri in tutte le riunioni pianificare.
+Ad esempio, se a un utente con sede in Germania erano assegnati numeri verdi e a pagamento germania prima del lancio dei criteri per le audioconferenze, all'utente al momento dell'avvio verranno assegnati i criteri globali e i numeri di telefono che continueranno a visualizzare nell'invito alla riunione saranno gli stessi di prima dell'applicazione dei criteri, ovvero  numeri verdi e a pagamento tedeschi). Un utente finale non vedrà alcuna modifica all'avvio del criterio. Se, tuttavia, un amministratore tenant modifica i criteri globali e include numeri di telefono specifici nei criteri diversi da prima, tutti gli utenti del criterio vedranno solo i numeri di telefono inclusi nei criteri in tutte le riunioni pianificate.
 
 > [!NOTE]
 > Se invece di Modificare il criterio globale un amministratore tenant crea un criterio personalizzato e lo applica agli utenti, le impostazioni definite nel criterio personalizzato saranno ciò che gli utenti finali vedranno negli inviti alle riunioni.
@@ -58,7 +57,7 @@ In questo criterio il valore di **AllowTollfreedialin** verrà impostato su **Di
 
 Poiché i criteri non hanno numeri di telefono definiti, quando gli utenti di questo criterio creano una riunione del team, i numeri di telefono che saranno disponibili nella riunione saranno gli stessi numeri di telefono che avevano gli utenti prima del criterio. Questi numeri di telefono in genere vengono impostati come predefiniti per il paese, l'area geografica o la posizione dell'utente, a meno che non sia stato modificato dall'amministratore del tenant per i singoli utenti.
 
-Ad esempio, se a un utente con sede in Germania era assegnato un numero di telefono a pagamento Germania prima del lancio di un criterio di audioconferenza, all'utente al momento dell'avvio verranno assegnati i criteri "AllowTollfreedialinFalse" e i numeri di telefono che continueranno a visualizzare nell'invito alla riunione saranno gli stessi di prima (vale a dire, il numero a pagamento Germania). Un utente finale non vedrà alcuna modifica all'avvio del criterio. Se, tuttavia, un amministratore tenant modifica il criterio **AllowTollfreedialinFalse** e include numeri di telefono specifici nel criterio, tutti gli utenti dei criteri vedranno solo i numeri di telefono inclusi nei criteri in tutte le riunioni pianificare.
+Ad esempio, se a un utente con sede in Germania era assegnato un numero di telefono a pagamento Germania prima del lancio di un criterio di audioconferenza, all'utente al momento dell'avvio verranno assegnati i criteri "AllowTollfreedialinFalse" e i numeri di telefono che continueranno a visualizzare nell'invito alla riunione saranno gli stessi di prima (vale a dire, il numero a pagamento Germania). Un utente finale non vedrà alcuna modifica all'avvio del criterio. Se, tuttavia, un amministratore tenant modifica il criterio **AllowTollfreedialinFalse** e include numeri di telefono specifici nel criterio, tutti gli utenti dei criteri vedranno solo i numeri di telefono inclusi nei criteri in tutte le riunioni pianificate.
 
 ## <a name="create-a-custom-audio-conferencing-policy"></a>Creare criteri personalizzati per i servizi di audioconferenza
 

@@ -11,7 +11,6 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
-- m365initiative-voice
 audience: Admin
 appliesto:
 - Skype for Business
@@ -20,12 +19,12 @@ ms.localizationpriority: medium
 ms.custom:
 - Phone System
 description: Informazioni su come pianificare il flusso del routing delle chiamate per gli operatori automatici e le code di chiamata in Microsoft Teams.
-ms.openlocfilehash: 7788bbe07b33a133af04c8a7fe8333ba66f7f2df
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: c883d6e104d73bf4082f69128af141f489d7cf89
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66240985"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67270531"
 ---
 # <a name="plan-your-call-routing-flow"></a>Pianificare il flusso di instradamento delle chiamate
 

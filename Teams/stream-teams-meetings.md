@@ -17,22 +17,21 @@ f1.keywords:
 ms.custom: ''
 ms.collection:
 - M365-collaboration
-- m365initiative-meetings
-description: Informazioni su come configurare e gestire lo streaming per le riunioni Teams.
-ms.openlocfilehash: 352a0c2e7a0584640e466b5e46456906e4912d00
-ms.sourcegitcommit: 9532eb79310cd653010565607fa394f2b8dd182d
+description: Informazioni su come configurare e gestire lo streaming per le riunioni di Teams.
+ms.openlocfilehash: 5e1e84fc3b0b4ed2f81b3f3a8c84450dc3cee56c
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65646345"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67270181"
 ---
 # <a name="stream-teams-meetings"></a>Riunioni di Teams in streaming
 
-Questo articolo illustra come configurare lo streaming per Teams riunioni.
+Questo articolo illustra come configurare lo streaming per le riunioni di Teams.
 
 ## <a name="what-is-streaming-and-how-does-it-work"></a>Che cos'è lo streaming e come funziona?
 
-Lo streaming consente all'organizzazione di espandere la portata dell'utente e offre ai partecipanti altre opzioni per le riunioni. Quando si abilita lo streaming, gli organizzatori possono trasmettere riunioni e webinar in streaming a endpoint esterni fornendo un URL RTMP (Messaging Protocol) Real-Time e un codice per l'app di streaming personalizzata predefinita in Teams.
+Lo streaming consente all'organizzazione di espandere la portata dell'utente e offre ai partecipanti altre opzioni per le riunioni. Quando si abilita lo streaming, gli organizzatori possono trasmettere riunioni e webinar in streaming agli endpoint esterni fornendo un URL RTMP (Real-Time Messaging Protocol) e una chiave per l'app di streaming personalizzata integrata in Teams.
 
 > [!NOTE]
 > Non è possibile riprodurre in streaming eventi live.

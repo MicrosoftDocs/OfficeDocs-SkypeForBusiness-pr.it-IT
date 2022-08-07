@@ -10,19 +10,19 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-collaboration
-- m365initiative-meetings
+- Teams_ITAdmin_MTRP
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sul servizio gestito Microsoft Teams Rooms.
 f1keywords: ''
-ms.openlocfilehash: 432e09204ae157ece03b2dd0c1f4ac3336adec52
-ms.sourcegitcommit: de0233e51364b7730c4b307fd41a2166eda3c3fc
+ms.openlocfilehash: 322e67a0bc6e03db7960e64d2cd5e7a97b930dbc
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65741878"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67269581"
 ---
 # <a name="microsoft-teams-rooms-managed-service"></a>servizio gestito Microsoft Teams Rooms
 
@@ -60,10 +60,10 @@ Ecco una panoramica delle funzionalità del servizio gestito Microsoft Teams Roo
 |**Pianificazione e implementazione delle sale**   |Funzionalità di pianificazione delle sale che consentono di comprendere l'inventario delle attrezzature della sala e prendere decisioni sugli standard di attrezzatura per le nuove distribuzioni di sale.         |
 |**Monitoraggio e risoluzione dei problemi**  |Monitoraggio dell'integrità della sala che rileva problemi con il sistema e le periferiche della sala e fornisce una risposta proattiva alla gestione degli eventi imprevisti guidata da Microsoft.         |
 |**Gestione degli aggiornamenti**    |Gestione e distribuzione degli aggiornamenti di applicazioni e firmware per i sistemi di sala e le relative periferiche eseguiti da Microsoft.         |
-|**Insights e consigli**     |Insights l'integrità, l'utilizzo, l'utilizzo e l'affidabilità delle apparecchiature per i clienti.         |
+|**Approfondimenti e consigli**     |Informazioni approfondite sull'integrità, l'utilizzo, l'utilizzo e l'affidabilità delle apparecchiature dei clienti.         |
 |**Conformità e certificazioni**   |Soddisfa tutti gli standard applicabili per i Servizi online Microsoft.         |
 |**Supporto tecnico**   |Supporto dei ticket 24x7x365 tramite il centro operativo del servizio gestito (SOC) dedicato Microsoft Teams Rooms. Escalation per conto dell'utente ad altri fornitori primari, se applicabile. Per altre informazioni, vedi [Supporto tecnico](#customer-support).|
-|**Dispositivi supportati**    |Sistemi di Microsoft Teams Rooms certificati e relative periferiche.<br>*Surface Hub supporto in arrivo nel secondo semestre del 2021*        |
+|**Dispositivi supportati**    |Sistemi di Microsoft Teams Rooms certificati e relative periferiche.<br>*Supporto per Surface Hub disponibile nel secondo semestre del 2021*        |
 |**Aree geografiche supportate**    |Vedere [Aree geografiche supportate](#supported-regions).        |
 |**Integrazione**    |Integrazione disponibile con Service Now ospitato dal cliente.         |
 
@@ -79,7 +79,7 @@ Ecco un riepilogo delle caratteristiche importanti fornite dal servizio gestito 
 |**Monitoraggio**    |Monitoraggio dell'integrità di applicazioni, sistemi operativi, periferiche e firmware. Rilevamento automatico degli eventi imprevisti per i problemi che influiscono sulle esperienze delle riunioni a causa di problemi come l'integrità delle periferiche. Panoramica dell'integrità dell'intero immobile e degli eventi imprevisti tramite il portale dei servizi gestiti Microsoft Teams Rooms.|
 |**Risoluzione dei problemi e correzione**     |Diagnostica automatica e correzione automatica, se applicabile. Microsoft Teams Rooms correzione degli eventi imprevisti assistiti da SOC del servizio gestito per i casi non automatizzati. Integrazione di Service Now per il coordinamento degli eventi imprevisti.         |
 |**Gestione degli aggiornamenti**   |Orchestrazione automatizzata dell'applicazione riunione e dell'aggiornamento del firmware in base agli anelli di distribuzione configurabili dal cliente         |
-|**Insights e consigli**   |Utilizzo, incidenti, integrità e report generale (visualizzazioni storiche)         |
+|**Approfondimenti e consigli**   |Utilizzo, incidenti, integrità e report generale (visualizzazioni storiche)         |
 
 ## <a name="service-prerequisites"></a>Prerequisiti del servizio
 
@@ -124,7 +124,7 @@ La licenza Microsoft Teams Rooms Premium è disponibile nei paesi seguenti senza
 |Contenuto |Elementi esclusi |Canali di supporto per gli elementi esclusi  |
 |---------|---------|---------|
 |**Configurazione del servizio**   |         |         |
-|Analisi e indicazioni per la configurazione Microsoft Teams Rooms Windows, tra cui le impostazioni delle app Microsoft Teams Rooms, la configurazione di rete di prima parte, la configurazione software di prima parte e le impostazioni di risparmio energia consigliate e la configurazione.     |Eventuali configurazioni software di terze parti e indagini che non fanno direttamente parte dell'app Microsoft Teams Room. Inoltre, eventuali configurazioni specifiche di OEM che richiedono la configurazione all'esterno delle finestre di prima parte o Microsoft Teams impostazioni dell'app Sala.         |Canali di supporto standard di terze parti         |
+|Analisi e indicazioni per Microsoft Teams Rooms configurazione di Windows, tra cui le impostazioni delle app Microsoft Teams Rooms, la configurazione di rete di prima parte, la configurazione software di prima parte e le impostazioni di alimentazione e configurazione consigliate.     |Eventuali configurazioni software di terze parti e indagini che non fanno direttamente parte dell'app Microsoft Teams Room. Inoltre, tutte le configurazioni specifiche di OEM che richiedono la configurazione all'esterno delle finestre di prima parte o delle impostazioni dell'app Room di Microsoft Teams.         |Canali di supporto standard di terze parti         |
 |**Configurazione dell'account della sala**    |         |         |
 |Indicazioni per la documentazione disponibile per la configurazione dell'account della sala su richiesta. Per i problemi di accesso o di configurazione dell'account, viene eseguita l'indagine iniziale.     |Esecuzione di correzioni consigliate o problemi di esecuzione della correzione consigliata, configurazione di provider di autenticazione di terze parti e configurazione delle funzionalità per singoli account.        |Supporto Mainstream Microsoft e supporto del provider di autenticazione di terze parti         |
 |**Supporto per le periferiche**    |         |         |

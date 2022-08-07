@@ -1,5 +1,5 @@
 ---
-title: Controllo dell'accesso basato sui ruoli con il servizio Premium sala Microsoft Teams
+title: Controllo dell'accesso basato sui ruoli con il servizio Room Premium di Microsoft Teams
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -10,18 +10,19 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-collaboration
+- Teams_ITAdmin_MTRP
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sul controllo dell'accesso basato sui ruoli con il servizio gestito Microsoft Teams Rooms.
 f1keywords: ''
-ms.openlocfilehash: c7594a04dbb1a36b60f3105c663cff3934ffd3c1
-ms.sourcegitcommit: bf0071417188b33fc23e2a420187da5024d4bd40
+ms.openlocfilehash: 0edce289a23116ed76bf984bfc72724295fc5a5a
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "62248667"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67268361"
 ---
 # <a name="role-based-access-control-with-the-microsoft-teams-rooms-managed-service"></a>Controllo dell'accesso basato sui ruoli con il servizio gestito Microsoft Teams Rooms
 
@@ -68,7 +69,7 @@ La tabella seguente riepiloga le operazioni che ogni ruolo può eseguire.
 |Rapporti   |Visualizzare        |&#10004;           |&#10004;           ||
 |Gestione dei ticket   |Crea evento imprevisto del cliente         |&#10004;           |&#10004;           |&#10004;  |
 |    |Visualizzare         |&#10004;           |&#10004;           |&#10004;  |
-|    |Update         |&#10004;           |&#10004;           |&#10004;  |
+|    |Aggiornamento         |&#10004;           |&#10004;           |&#10004;  |
 |Microsoft Teams Rooms impostazioni del servizio gestito    |Visualizzare         |&#10004;           |         ||
 |    |Modificare        |&#10004;           |         ||
 |Gestione dei ruoli    |Visualizzare         |&#10004;           |         ||
@@ -78,7 +79,7 @@ La tabella seguente riepiloga le operazioni che ogni ruolo può eseguire.
 
 Se i ruoli predefiniti non soddisfano le esigenze dell'organizzazione, è possibile creare un ruolo e configurarne le autorizzazioni in base alle esigenze. Per creare un ruolo, è necessario essere un amministratore globale o un amministratore del servizio gestito. 
 
-1. Nel riquadro di spostamento sinistro del portale del servizio gestito Microsoft Teams Rooms passare a **Impostazioni** >  **Roles**.
+1. Nel riquadro di spostamento sinistro del portale del servizio gestito Microsoft Teams Rooms passare a **Ruoli** **impostazioni** > .
 2. Selezionare **Crea ruolo**.
 3. Nella pagina **Impostazioni generali** , in **Proprietà ruolo**, immettere un nome per il ruolo. In **Descrizione** immettere i dettagli su questo ruolo. Scegliere **Avanti**.
 4. Nella pagina **Autorizzazioni** , in **Autorizzazioni ruolo**, scegliere le autorizzazioni per questo ruolo selezionando le caselle di controllo appropriate. Scegliere **Avanti** per creare la prima assegnazione per questo ruolo.
@@ -91,12 +92,12 @@ Se i ruoli predefiniti non soddisfano le esigenze dell'organizzazione, è possib
 
 Per assegnare i ruoli, è necessario essere un amministratore globale o un amministratore del servizio gestito o avere un ruolo con autorizzazioni di gestione dei ruoli.
 
-1. Nel riquadro di spostamento sinistro del portale del servizio gestito Microsoft Teams Rooms passare a **Impostazioni** >  **Roles**.
+1. Nel riquadro di spostamento sinistro del portale del servizio gestito Microsoft Teams Rooms passare a **Ruoli** **impostazioni** > .
 
     :::image type="content" source="../media/microsoft-teams-rooms-premium-roles.png" alt-text="Screenshot della pagina di controllo di Access che mostra i ruoli.":::
 
 2. Selezionare il ruolo da assegnare.
-3. Nel riquadro dei ruoli selezionare **AssegnazioniAggiungi** > .
+3. Nel riquadro dei ruoli selezionare **Aggiungi assegnazioni** > .
 
     :::image type="content" source="../media/microsoft-teams-rooms-premium-role-assignments.png" alt-text="Screenshot dell'opzione Aggiungi per aggiungere un ruolo.":::
 

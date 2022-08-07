@@ -10,7 +10,6 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-collaboration
-- Teams_ITAdmin_Help
 f1.keywords:
 - NOCSH
 appliesto:
@@ -18,12 +17,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire i modelli di team nell'interfaccia di amministrazione
-ms.openlocfilehash: 9f2044f059414f9afe1ff335f8204cd26861164b
-ms.sourcegitcommit: 79ada2140b110239deff96e4854ebd5dd9b77881
+ms.openlocfilehash: cc8a0ff9fc6be26e4b1f6a963fb4f72f5669e88b
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66605905"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67269551"
 ---
 # <a name="manage-team-templates-in-the-admin-center"></a>Gestire i modelli di team nell'interfaccia di amministrazione
 
@@ -36,7 +35,7 @@ Guardare questo breve video per informazioni su come gestire i criteri dei model
 
 ## <a name="create-templates-policies-and-assign-available-templates"></a>Creare criteri di modelli e assegnare modelli disponibili
 
-1. Passare all'interfaccia di amministrazione di Teams.
+1. Accedere all'interfaccia di amministrazione di Teams.
 
 2. Passare ai **criteri dei modelli** di **Teams** > .
 

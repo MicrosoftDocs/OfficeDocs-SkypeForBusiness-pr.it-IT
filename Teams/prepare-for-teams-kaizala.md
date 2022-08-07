@@ -1,5 +1,5 @@
 ---
-title: Creare grafici delle Kaizala per Teams viaggio
+title: Creare grafici del percorso da Kaizala a Teams
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -11,18 +11,19 @@ description: Questo articolo descrive come prepararsi per il passaggio da Kaizal
 f1.keywords: ''
 ms.localizationpriority: medium
 search.appverid: ''
-ms.collection: ''
+ms.collection:
+- M365-collaboration
 ms.custom: ''
-ms.openlocfilehash: 913d8991678a4da384d9208378e359cec016f1b8
-ms.sourcegitcommit: d425748a50964ebc78e5d38fce564a444a449f43
+ms.openlocfilehash: 7256d91a8a306f88e7f40b728158747971497262
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65635404"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67271421"
 ---
-# <a name="charting-your-kaizala-to-teams-journey"></a>Creare grafici delle Kaizala per Teams viaggio
+# <a name="charting-your-kaizala-to-teams-journey"></a>Creare grafici del percorso da Kaizala a Teams
 
-Hai deciso di passare da Kaizala a Microsoft Teams.
+Si è deciso di passare da Kaizala a Microsoft Teams.
 
 Prima di iniziare, è importante rispondere a queste due domande:
 
@@ -32,7 +33,7 @@ Prima di iniziare, è importante rispondere a queste due domande:
 
 ## <a name="identify-user-groups"></a>Identificare i gruppi di utenti
 
-*Quali gruppi esistono nell'organizzazione? Who usa Teams e come? Quali esigenze sono richieste da questi gruppi per un lavoro in team efficace?* Per iniziare il percorso di Teams, identificare prima di tutto **i gruppi di utenti per la transizione.**  I gruppi di utenti sono un insieme di dipendenti all'interno della forza lavoro che lavorano in aree simili dell'azienda. 
+*Quali gruppi esistono nell'organizzazione? Chi usa Teams e come? Quali esigenze sono richieste da questi gruppi per un lavoro in team efficace?* Per iniziare il percorso verso Teams, **identificare prima di tutto i gruppi di utenti per la transizione.**  I gruppi di utenti sono un insieme di dipendenti all'interno della forza lavoro che lavorano in aree simili dell'azienda. 
 
 Sono stati identificati tre gruppi di utenti comuni che supportano l'identificazione delle esigenze di collaborazione. Ogni gruppo di utenti ha le proprie esigenze specifiche in termini di comunicazione. 
 
@@ -70,9 +71,9 @@ Gli utenti che si connettono con la forza lavoro in prima linea devono:
 
 Gli utenti che si connettono con utenti esterni (fornitori/fornitori) possono utilizzare:
 
-- [Microsoft Teams gli utenti possono chattare con qualsiasi Teams utenti esterni all'organizzazione](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-users-can-now-chat-with-any-teams-user-outside/ba-p/3070832)
+- [Gli utenti di Microsoft Teams possono chattare con qualsiasi utente di Teams esterno all'organizzazione](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-users-can-now-chat-with-any-teams-user-outside/ba-p/3070832)
 
-- [Aggiungere o invitare persone esterne all'organizzazione Teams a una chat](https://support.microsoft.com/en-us/office/add-or-invite-people-outside-your-teams-org-to-a-chat-6897ab47-9f60-4db6-8b95-18599714fe57)
+- [Aggiungere o invitare persone esterne all'organizzazione teams a una chat](https://support.microsoft.com/en-us/office/add-or-invite-people-outside-your-teams-org-to-a-chat-6897ab47-9f60-4db6-8b95-18599714fe57)
 
 ## <a name="determine-your-path"></a>Determinare il percorso
 
@@ -82,11 +83,11 @@ Il percorso può essere composto dall'utilizzo attuale dell'organizzazione:
 
 Per le organizzazioni **che non usano Teams**:
 
-![Percorso per le organizzazioni che non usano attualmente Teams](media/kaizala-not-using-teams.png)
+![Percorso per le organizzazioni che attualmente non usano Teams](media/kaizala-not-using-teams.png)
 
  1. Organizzare il lavoro in team per l'organizzazione
 
- 2. Teams pilota
+ 2. Team pilota
   
  3. Distribuire Teams
   
@@ -100,7 +101,7 @@ Per le organizzazioni **che non usano Teams**:
 
 Per le organizzazioni **che usano già Teams**:
 
-![Percorso per le organizzazioni che usano attualmente Teams](media/kaizala-using-teams.png)
+![Percorso per le organizzazioni che attualmente usano Teams](media/kaizala-using-teams.png)
 
  1. Pianificare la transizione
 
@@ -110,4 +111,4 @@ Per le organizzazioni **che usano già Teams**:
 
 <a name="ControlSyncThroughput"> </a>
 
-[Pianificare la riuscita della transizione a Microsoft Teams](/MicrosoftTeams/plan-your-move-kaizala)
+[Pianificare una transizione a Microsoft Teams riuscita](/MicrosoftTeams/plan-your-move-kaizala)

@@ -8,71 +8,70 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
-description: Questo articolo descrive le novità del routing diretto. Controllare spesso la disponibilità di aggiornamenti.
+description: Questo articolo descrive le novità di Direct Routing. Ricontrollare spesso per verificare la disponibilità di aggiornamenti.
 ms.localizationpriority: medium
-MS.collection:
-- Teams_ITAdmin_Help
-- M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 53a1c2730ebf6db06fb92ac2fc4e0873563c98ce
-ms.sourcegitcommit: 9e868a155bcd20dd5dafdedcff091ff77ca7398b
+ms.collection:
+- M365-voice
+ms.openlocfilehash: 8db0f0c4d29f786166098587aafc3ec1db256e38
+ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64584330"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67271461"
 ---
-# <a name="whats-new-for-direct-routing"></a>Novità del routing diretto
+# <a name="whats-new-for-direct-routing"></a>Novità per il routing diretto
 
-Questo articolo descrive le novità del routing diretto. Controllare spesso la disponibilità di aggiornamenti.
+Questo articolo descrive le novità di Direct Routing. Ricontrollare spesso per verificare la disponibilità di aggiornamenti.
 
 ## <a name="sip-support"></a>Supporto SIP
 
-Il 1° giugno 2022 Microsoft rimuoverà il supporto per sip-all.pstnhub.microsoft.com e sip-all.pstnhub.gov.teams.microsoft.us fqdn dalla configurazione di Routing diretto.
+Il 1° giugno 2022 Microsoft rimuoverà il supporto per sip-all.pstnhub.microsoft.com e gli FQDN sip-all.pstnhub.gov.teams.microsoft.us dalla configurazione del routing diretto.
 
-Se non vengono eseguite azioni prima del 1° giugno, gli utenti non potranno effettuare o ricevere chiamate tramite routing diretto.
+Se non vengono eseguite azioni prima del 1° giugno, gli utenti non saranno in grado di effettuare o ricevere chiamate tramite routing diretto.
 
 Per evitare l'impatto del servizio:
 
 - Usare le subnet consigliate: (52.112.0.0/14 e 52.120.0.0/14) per qualsiasi regola di classificazione o ACL.
-- Interrompere l'uso dell'FQDN sip-all durante la configurazione di Session Border Controls per il routing diretto.
+- Interrompere l'uso dell'FQDN sip-all quando si configurano i controlli bordo della sessione per il routing diretto.
 
 Per altre informazioni, vedere [Pianificare il routing diretto](direct-routing-plan.md).
 
 ## <a name="tls-certificates"></a>Certificati TLS
 
-Microsoft 365 sta aggiornando Teams e altri servizi in modo da usare un set diverso di Autorità di certificazione radice(CA).
+Microsoft 365 sta aggiornando Teams e altri servizi per utilizzare un diverso set di autorità di certificazione radice.
 
-Per altre informazioni e un elenco completo dei servizi interessati, vedere Modifiche ai certificati TLS per Microsoft 365 [servizi, inclusi](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/tls-certificate-changes-to-microsoft-365-services-including/ba-p/3249676) Microsoft Teams.
+Per altre informazioni e un elenco completo dei servizi interessati, vedere [Modifiche ai certificati TLS ai servizi Microsoft 365, incluso Microsoft Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/tls-certificate-changes-to-microsoft-365-services-including/ba-p/3249676).
 
 ## <a name="certificate-authorities"></a>Autorità di certificazione
 
-A partire dal 1° febbraio 2022, l'interfaccia SIP di routing diretto considera attendibili solo i certificati firmati da Autorità di certificazione (CA) che fanno parte del programma Microsoft Trusted Root Certificate Program. Eseguire la procedura seguente per evitare l'impatto del servizio:
+A partire dal 1° febbraio 2022, l'interfaccia SIP direct routing considererà attendibili solo i certificati firmati da autorità di certificazione (CA) che fanno parte del programma Microsoft Trusted Root Certificate Program. Esegui i passaggi seguenti per evitare l'impatto del servizio:
 
-- Verificare che il certificato SBC sia firmato da un'autorità di certificazione che fa parte del programma Microsoft Trusted Root Certificate Program.
-- Verificare che l'estensione EKU (Extended Key Usage) del certificato includa "Autenticazione server".
+- Verificare che il certificato SBC sia firmato da una CA che fa parte del programma Microsoft Trusted Root Certificate.
+- Verificare che l'estensione Utilizzo chiave estesa (EKU) del certificato includa "Autenticazione server".
 
 Per altre informazioni sul programma Microsoft Trusted Root Certificate, vedere [Requisiti del programma - Microsoft Trusted Root Program](/security/trusted-root/program-requirements).
 
-Per un elenco di CA attendibili, vedere [Elenco certificati CA inclusi Microsoft](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT).
+Per un elenco di CA attendibili, vedere [Elenco di certificati CA inclusi da Microsoft](https://ccadb-public.secure.force.com/microsoft/IncludedCACertificateReportForMSFT).
 
 ## <a name="replace-headers"></a>Sostituire le intestazioni
 
-A partire da aprile 2022, il routing diretto rifiuta le richieste SIP con intestazioni Replaces definite. Non ci sono modifiche ai flussi in cui Microsoft invia l'intestazione Replaces al Session Border Controller(SBC).
+A partire da aprile 2022, Direct Routing rifiuterà le richieste SIP con le intestazioni Sostituisci definite. Non ci sono modifiche ai flussi in cui Microsoft invia l'intestazione Sostituisci al session border controller (SBC).
 
-Controllare le configurazioni SBC e assicurarsi di non usare le intestazioni Replaces nelle richieste SIP.
+Controllare le configurazioni SBC e assicurarsi di non usare le intestazioni Sostituisci nelle richieste SIP.
 
 ## <a name="tls10-and-11"></a>TLS1.0 e 1.1
 
-Per fornire la crittografia più avanzata ai clienti, Microsoft prevede di deprecazione delle versioni 1.0 e 1.1 di Transport Layer Security (TLS). Il 3 aprile 2022 Microsoft forza l'utilizzo di TLS1.2 per l'interfaccia SIP di routing diretto.
+Per fornire la crittografia migliore della categoria ai clienti, Microsoft prevede di deprecare le versioni TLS (Transport Layer Security) 1.0 e 1.1. Il 3 aprile 2022 Microsoft forza l'uso di TLS1.2 per l'interfaccia SIP routing diretto.
 
-Per evitare qualsiasi impatto sul servizio, verificare che i SBC siano configurati per supportare TLS1.2 e possano connettersi usando una delle suite di crittografia seguenti:
+Per evitare qualsiasi impatto sul servizio, assicurarsi che gli SBC siano configurati per supportare TLS1.2 e possano connettersi usando uno dei pacchetti di crittografia seguenti:
 
-- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, ad esempio ECDHE-RSA-AES256-GCM-SHA384
-- TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, ad esempio ECDHE-RSA-AES128-GCM-SHA256
-- TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, ad esempio ECDHE-RSA-AES256-SHA384
-- TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, ad esempio ECDHE-RSA-AES128-SHA256
+- TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 ad esempio ECDHE-RSA-AES256-GCM-SHA384
+- TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 ad esempio ECDHE-RSA-AES128-GCM-SHA256
+- TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 ad esempio ECDHE-RSA-AES256-SHA384
+- TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 ad esempio ECDHE-RSA-AES128-SHA256
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Routing diretto - Protocollo SIP](direct-routing-protocols-sip.md)
+- [Direct Routing - Protocollo SIP](direct-routing-protocols-sip.md)
