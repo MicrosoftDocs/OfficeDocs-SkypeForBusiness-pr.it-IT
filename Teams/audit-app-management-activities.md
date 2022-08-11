@@ -1,6 +1,6 @@
 ---
 title: Cercare gli eventi di gestione delle app nei log di controllo
-author: guptaashish
+author: ashishguptaiitb
 ms.author: guptaashish
 manager: prkosh
 ms.topic: article
@@ -13,13 +13,13 @@ f1keywords: ''
 description: Informazioni su come controllare le attività dell'app Teams di utenti e amministratori dell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.localizationpriority: high
-ms.openlocfilehash: 0ad20fc8d5efd6c243ce29c3255b787bae322994
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.localizationpriority: medium
+ms.openlocfilehash: 5eb1ffe4a637c61efc8e64e970f25474933914a7
+ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269721"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67299255"
 ---
 # <a name="audit-for-app-management-activities-and-events"></a>Audit per le attività e gli eventi di gestione delle app
 
@@ -69,7 +69,7 @@ Dopo aver cercato il segno di controllo nel portale di conformità, è possibile
 > [!NOTE]
 > Quando una delle attività precedenti viene eseguita da un utente o un amministratore, Teams genera e archivia un record di controllo. In Audit (Standard), i record vengono conservati per 90 giorni, quindi è possibile cercare le attività che si sono verificate negli ultimi tre mesi.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-articles"></a>Articoli correlati
 
 * [Utilizzare i registri di audit per indagare sull'attività di installazione di Microsoft Power Platform](manage-power-platform-apps.md#use-audit-logs-to-investigate-microsoft-power-platform-installation-activity)
 * [Cercare il segno di controllo nel portale di conformità](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).

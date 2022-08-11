@@ -16,12 +16,12 @@ ms.collection:
 ms.topic: reference
 search.appverid: MET150
 description: Questo articolo fornisce indicazioni su come abilitare i dispositivi dei pannelli teams per il check-in e il rilascio delle sale.
-ms.openlocfilehash: 5f411979c9fb121bb80c999b102332b0208efb81
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 31cdab94ddb6a5c6fdc017b537f446e58aa1c2c5
+ms.sourcegitcommit: 6e677c7d0dfe9e380d70adaca748eea88ca95705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268221"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67298326"
 ---
 # <a name="check-in-and-room-release-on-microsoft-teams-panels"></a>Check-in e rilascio della sala sui pannelli di Microsoft Teams
 
@@ -29,7 +29,9 @@ Quando il check-in e il rilascio della sala sono abilitati, gli utenti accedono 
 
 ## <a name="requirements"></a>Requisiti 
 
-Questa funzionalità può essere usata in una distribuzione Pannello di Teams autonoma. È anche possibile associare i pannelli di Teams con Teams Rooms su Android con l'app versione 1449/1.0.96.2022011305 o successiva per altre funzionalità come le notifiche di check-in.  
+Questa funzionalità può essere usata in una distribuzione Pannello di Teams autonoma. È anche possibile associare i pannelli di Teams con Teams Rooms su Android con l'app versione 1449/1.0.96.2022011305 o successiva per altre funzionalità come le notifiche di check-in.
+
+Per il corretto funzionamento di questa caratteristica, la cassetta postale condivisa associata al Pannello di Teams deve avere il fuso orario corretto. Per informazioni su come impostare il fuso orario per le cassette postali condivise, vedere [Impostazioni del fuso orario per le cassette postali condivise in Outlook sul web](/exchange/troubleshoot/outlook-on-the-web-issues/shared-mailboxes-time-zone-setting).
 
 ## <a name="enable-check-in-and-room-release"></a>Abilitare il check-in e il rilascio della sala 
 
