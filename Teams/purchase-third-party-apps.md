@@ -15,12 +15,12 @@ description: Informazioni su come acquistare app di terze parti da Teams Store u
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 9da0b39582238f10fc3d76d7299afd0b004048fd
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 41882a241a911e7c482a2a9a16c9fa9cfd649e9d
+ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270831"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67299195"
 ---
 # <a name="purchase-third-party-apps-for-teams"></a>Acquistare app di terza parte per Teams
 
@@ -34,8 +34,7 @@ Qui è anche possibile acquistare licenze per i servizi offerti da app di terze 
 
 ## <a name="purchase-apps-in-the-teams-admin-center"></a>Acquistare app nell'interfaccia di amministrazione di Teams
 
-> [!IMPORTANT]
-> Quando si abilita l'acquisto di app, verrà attivato anche l'acquisto in-app. Gli utenti possono visualizzare le offerte di acquisto in-app controllate dall'ISV per la propria app. Se si vuole impedire agli utenti di acquistare un'app, è necessario bloccare l'app. Per altre informazioni su come bloccare un'app, vedere [Gestire i criteri delle app](app-policies.md) o [informazioni su come bloccare un'app a livello di organizzazione](manage-apps.md#allow-and-block-apps).
+Per acquistare app nell'interfaccia di amministrazione di Teams, seguire questa procedura: 
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **[Gestire app](https://admin.teams.microsoft.com/policies/manage-apps)**. Per accedere alla pagina, è necessario essere un amministratore globale o un amministratore del servizio Teams.
 
@@ -47,7 +46,7 @@ Qui è anche possibile acquistare licenze per i servizi offerti da app di terze 
 1. Quando si trova l'app, selezionare **Acquista** per passare alla scheda **Piani e prezzi** della pagina dei dettagli dell'app. Esaminare i piani e le informazioni sui prezzi per l'offerta SaaS per l'app. Se si ha bisogno di altre informazioni, selezionare **Altre informazioni** per passare alla pagina dell'app in [AppSource](https://appsource.microsoft.com/).
 
    > [!NOTE]
-   > I piani privati possono anche essere elencati per l'acquisto, che includono prezzi speciali che l'organizzazione ha precedentemente negoziato con un ISV. Questi piani avranno l'etichetta **Piano privato** sotto il nome del piano.
+   > I piani privati possono anche essere elencati per l'acquisto a un prezzo speciale che l'organizzazione ha precedentemente negoziato con uno sviluppatore app. Questi piani hanno l'etichetta **Piano privato** sotto il nome del piano.
 
 1. Per abbonarsi a un'app, scegliere il piano desiderato e selezionare **Acquista**. Il flusso di checkout si apre direttamente nell'interfaccia di amministrazione di Teams.
 
@@ -62,7 +61,7 @@ Qui è anche possibile acquistare licenze per i servizi offerti da app di terze 
 
 1. Selezionare **Esegui ordine**.
 
-1. Selezionare **Configura** per attivare l’abbonamento al sito Web dell'editore. Se non si configura l'abbonamento dopo l'acquisto, è possibile farlo in un secondo momento selezionando **Gestisci licenze**.
+1. Selezionare **Configura** per attivare l'abbonamento al sito Web dello sviluppatore dell'app. Se non si configura l'abbonamento dopo l'acquisto, è possibile farlo in un secondo momento selezionando **Gestisci licenze**.
 
 Dopo aver acquistato l'offerta SaaS associata all'app Teams, è possibile visualizzare i seguenti dettagli dell’acquisto nella scheda **Piani e prezzi** della pagina dei dettagli dell'app.
 
@@ -76,7 +75,10 @@ Per visualizzare e gestire le licenze acquistate, selezionare **Gestisci licenze
 Gli amministratori globali possono aggiungere altre licenze, rimuovere licenze e annullare gli abbonamenti acquistati da chiunque nell'organizzazione. Gli amministratori del servizio Teams possono eseguire le stesse azioni per gli acquisti effettuati autonomamente. Tuttavia, se un amministratore del servizio Teams ha anche il ruolo di amministratore fatturazione, può gestire gli acquisti effettuati da chiunque nell'organizzazione.
 
 > [!NOTE]
-> Se un Amministrazione globale vuole gestire un abbonamento acquistato da un altro Amministrazione globale, deve trovarsi nello stesso account di fatturazione. È possibile concedere a un altro Amministrazione globale l'accesso a un abbonamento acquistato selezionando l'app nell’[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com). Da qui, andare a **Visualizza profilo** >  di fatturazione **Seleziona account** >  di fatturazione **Assegna ruoli** > **Aggiungi altri amministratori globali**.
+> Se un Amministrazione globale vuole gestire un abbonamento acquistato da un altro Amministrazione globale, deve trovarsi nello stesso account di fatturazione. È possibile concedere a un altro Amministrazione globale l'accesso a un abbonamento acquistato selezionando l'app nell’[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com). Nell'interfaccia di amministrazione, accedere a **Visualizza profilo di fatturazione** > **Seleziona account di fatturazione** > **Assegna ruoli** > **Aggiungi altri amministratori globali**.
+
+> [!IMPORTANT]
+> Quando si abilita l'acquisto di app, verrà attivato anche l'acquisto in-app. Gli utenti possono visualizzare le offerte di acquisto in-app controllate dallo sviluppatore app per la propria app. Se si vuole impedire agli utenti di acquistare un'app, è necessario bloccare l'app.
 
 ### <a name="invoice-billing"></a>Emissione fattura
 

@@ -3,7 +3,6 @@ title: Modificare l'aspetto delle app nello store di Teams dell'organizzazione
 author: guptaashish
 ms.author: guptaashish
 manager: prkosh
-ms.reviewer: v-tbasra
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -14,15 +13,15 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.localizationpriority: high
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come modificare l'aspetto dell'app e ridefinire l’identità di marchio di un'app modificando i dettagli e i metadati dell'app.
-ms.openlocfilehash: 32c526e2cbbb4ef464e0daa777228e0a17dd391b
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 304aa0b5d8becae641f69b0c389ca41160ad2e2f
+ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269081"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67298885"
 ---
 # <a name="customize-appearance-of-apps-in-your-organizations-teams-store"></a>Personalizzare l'aspetto delle app nello store di Teams dell'organizzazione
 
@@ -102,13 +101,13 @@ Ora gli utenti finali di Teams possono vedere l'app personalizzata nel proprio c
 
 Notare i dettagli seguenti sulla personalizzazione di un'app:
 
-* Quando si personalizzano le app e qualsiasi descrizione correlata a un'app, assicurarsi di seguire le linee guida per la personalizzazione se fornite dall'autore dell'app nella documentazione o nelle condizioni d’uso. L'utente è inoltre tenuto a rispettare i diritti di altri utenti relativamente a immagini di terze parti che potrebbero essere usate.
+* Quando si personalizzano le app e qualsiasi descrizione correlata a un'app, assicurarsi di seguire le linee guida per la personalizzazione se fornite dallo sviluppatore dell'app nella documentazione o nelle condizioni d’uso. L'utente è inoltre tenuto a rispettare i diritti di altri utenti relativamente a immagini di terze parti che potrebbero essere usate.
 
 * I dati di personalizzazione forniti dall'amministratore vengono archiviati nell'area geografica più vicina.
 
 * L'utente è responsabile di assicurarsi che i collegamenti alle condizioni d'uso o all'informativa sulla privacy siano validi.
 
-* Nel caso in cui l'autore dell'app non consenta più la personalizzazione di un campo, verrà visualizzato un messaggio nella pagina dei dettagli dell'app che informa l'amministratore riguardo ai campi che non possono più essere personalizzati. Tutte le modifiche apportate al campo verranno ripristinate ai valori originali.
+* Nel caso in cui lo sviluppatore dell'app non consenta più la personalizzazione di un campo, verrà visualizzato un messaggio nella pagina dei dettagli dell'app che informa l'amministratore riguardo ai campi che non possono più essere personalizzati. Tutte le modifiche apportate al campo verranno ripristinate ai valori originali.
 
 * È consigliabile testare le modifiche alla personalizzazione delle app in un tenant di test di Teams prima di apportare queste modifiche nell'ambiente di produzione.
 

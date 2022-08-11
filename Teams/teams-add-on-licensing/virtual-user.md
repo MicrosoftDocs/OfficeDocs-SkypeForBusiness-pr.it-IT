@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni su come assegnare licenze gratuite dell'account telefonico di Teams o licenze utente a pagamento Teams Phone Standard agli account delle risorse nell'organizzazione.
-ms.openlocfilehash: 07b47b2ec5b24b1edbfb599dc5a61e96169a02a2
-ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
+ms.openlocfilehash: f8aaf7480fc228fc78879ed5905aaaf7092777ab
+ms.sourcegitcommit: 6e677c7d0dfe9e380d70adaca748eea88ca95705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66615402"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67298296"
 ---
 # <a name="microsoft-teams-phone-resource-account-licenses"></a>licenze dell'account risorse di Telefono di Microsoft Teams
 
@@ -34,7 +34,7 @@ Le organizzazioni con Teams Phone Standard o Teams Phone con piano per chiamate 
 Tutti gli operatori automatici e le code di chiamata richiedono un account di risorse associato. Gli account delle risorse che richiedono un numero di telefono devono avere una licenza gratuita *Telefono di Microsoft Teams Account risorse* o una licenza utente *a pagamento Teams Phone Standard* prima di poter applicare un numero di telefono all'account della risorsa.
 
 > [!TIP]
-> Non è necessaria alcuna licenza per gli account delle risorse che verranno usati con operatori automatici annidati o code di chiamata a cui non è assegnato un numero di telefono. Per informazioni di riferimento, vedere il diagramma seguente.
+> Non è necessaria alcuna licenza per gli account delle risorse che verranno usati con operatori automatici annidati o code di chiamata a cui non è assegnato un numero di telefono.
 
 ## <a name="resource-account-license-allocation"></a>Allocazione licenze account risorsa
 

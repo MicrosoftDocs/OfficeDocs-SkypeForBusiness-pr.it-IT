@@ -16,12 +16,12 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 description: Informazioni sui requisiti per il supporto di Microsoft Teams Rooms, inclusa la scelta del dispositivo, dei microfoni, degli altoparlanti, delle fotocamere e degli schermi appropriati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4222f0fa1b0e52634e0e12cede50d3d9c5d0bba8
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 1a6d04787c05642dd329626bab605566d90ffc12
+ms.sourcegitcommit: 976d49c8c1104282c205ac533ed10450a5371950
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268351"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67304085"
 ---
 # <a name="microsoft-teams-rooms-requirements"></a>Requisiti per Microsoft Teams Rooms
 
@@ -83,8 +83,8 @@ Tutti gli attuali dispositivi e pacchetti per Sala riunioni di Microsoft Teams s
   |[HP Elite Slice G2 per le sale riunioni ](https://www8.hp.com/us/en/elite-family/elite-slice-for-meetings.html) |Core i5 |8 GB |128 GB |
   |[HP Elite Slice G2 Audio predisposto per Microsoft Teams Rooms](https://store.hp.com/us/en/pdp/hp-elite-slice-for-meeting-rooms-g2-skype-room-systems-audio-ready?jumpid=cp_r12131_us/en/psg/elite_slice_for_meetings/product/shop-now-eliteslicemeeting-g2-audio) |Core i5 |8 GB |128 GB |
   |[HP Slice Partner Ready con Logitech TAP]( https://www.logitech.com/video-collaboration/partners/hp.html)|Core i5|8 GB|128 GB| 
-  |[Soluzione HP Presence Small Space Con Microsoft Teams Rooms](https://www.hp.com/us-en/solutions/presence.html)|Core i5|8 GB|128 GB|
-  |[Hp Presence Small Space Solution Plus AI Camera with Microsoft Teams Rooms](https://www.hp.com/us-en/solutions/presence.html)|Core i5|8 GB|128 GB|
+  |[Soluzione HP Presence Small Space Con Microsoft Teams Rooms](https://www.hp.com/us-en/solutions/presence.html)|Core i5/i7|8 GB/16 GB|256 GB|
+  |[Hp Presence Small Space Solution Plus AI Camera with Microsoft Teams Rooms](https://www.hp.com/us-en/solutions/presence.html)|Core i5/i7|8 GB/16 GB|256 GB|
   | Lenovo ThinkSmart Hub 500 |Core i5 |8 GB |128 GB |
   |[Lenovo ThinkSmart Hub](https://news.lenovo.com/pressroom/press-releases/new-thinksmart-hub-collaboration-solution-from-lenovo-helps-organizations-embrace-hybrid-working-model/) |Core i5 |8 GB |128 GB|
   |Lenovo ThinkSmart Core Kit |Core i5|8 GB|128 GB|

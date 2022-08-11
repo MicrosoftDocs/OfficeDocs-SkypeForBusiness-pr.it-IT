@@ -1,9 +1,8 @@
 ---
 title: Autorizzazioni e considerazioni per le app di Microsoft Teams
-author: guptaashish
+author: ashishguptaiitb
 ms.author: guptaashish
 manager: prkosh
-ms.date: 06/27/2019
 ms.topic: conceptual
 audience: admin
 ms.service: msteams
@@ -15,16 +14,16 @@ ms.reviewer: rowille
 description: L'amministratore può conoscere i dati e le autorizzazioni richiesti dalle app di Microsoft Teams all'organizzazione.
 f1.keywords:
 - NOCSH
-ms.localizationpriority: high
+ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2cb641bb8756802820cf6ec6a311e3328c3887ca
-ms.sourcegitcommit: a64574da14969a33a77c7d979ffde452b5b3a531
+ms.openlocfilehash: 05be32bff1069d11ea26d28e6eb5377ec04e65e9
+ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175670"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67299065"
 ---
 # <a name="microsoft-teams-apps-permissions-and-considerations"></a>Autorizzazioni e considerazioni per le app di Microsoft Teams
 
@@ -191,7 +190,7 @@ Nessuno
 
 * I webhook in uscita sono simili ai bot, ma hanno meno privilegi. Devono essere menzionati in modo esplicito, proprio come i bot.
 
-* Quando viene registrato un webhook in uscita, viene generato un segreto che consente al webhook in uscita di verificare che il mittente sia Microsoft Teams anziché un utente malintenzionato. Questo segreto deve rimanere un segreto; chiunque abbia accesso può rappresentare Microsoft Teams. Se il segreto viene compromesso, il webhook in uscita può essere eliminato e ricreato e verrà generato un nuovo segreto.
+* Quando viene registrato un webhook in uscita, viene generato un segreto che consente al webhook in uscita di verificare che il mittente sia Microsoft Teams anziché un utente malintenzionato. Questo segreto deve rimanere un segreto; chiunque abbia accesso può rappresentare Microsoft Teams. Se il segreto viene compromesso, eliminare e ricreare il webhook in uscita per generare un nuovo segreto.
 
 * Anche se è possibile creare un webhook in uscita che non convalida il segreto, è consigliabile contro di esso.
 

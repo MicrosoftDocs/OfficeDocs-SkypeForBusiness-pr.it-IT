@@ -3,7 +3,7 @@ title: Informazioni sulle app in Microsoft Teams
 ms.reviewer: ''
 description: Scoprire le app e decidere quali app consentire in Teams in base al profilo dell’organizzazione e ai requisiti aziendali.
 ms.topic: article
-author: guptaashish
+author: ashishguptaiitb
 ms.author: guptaashish
 manager: prkosh
 audience: admin
@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020; intro-overview; intro-hub-or-landing
-ms.openlocfilehash: 77d33fc464ab67945c8d3c588c4ce47366c2ba2d
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: b7e95c04a2a8632fbda566c322e474809703de03
+ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270261"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67298915"
 ---
 # <a name="understand-microsoft-teams-apps"></a>Informazioni sulle app di Microsoft Teams
 
@@ -49,7 +49,7 @@ Alcune funzionalità di Teams, come il feed attività, i canali, le chat, il cal
 
 ## <a name="microsoft-provided-apps"></a>App fornite da Microsoft
 
-Microsoft offre numerose app per migliorare la produttività e la collaborazione. Queste app possono essere individuate dall'utente e dagli utenti finali cercando Microsoft come autore nell'interfaccia di amministrazione o come Provider in Team Store.
+Microsoft offre numerose app per migliorare la produttività e la collaborazione. Queste app possono essere individuate dall'utente e dagli utenti finali cercando Microsoft come autore nell'interfaccia di amministrazione di Teams o come Provider nello store di Teams.
 
 Teams include un set di app predefinite, tra cui Elenchi, Tasks, Complimento, Approvazioni e altro ancora. Si consiglia di includere le app in evidenza, come Planner, nel lancio iniziale di Teams.
 
@@ -65,19 +65,11 @@ Oltre alle app fornite da Microsoft, è possibile usare app di terze parti conva
 
 Le app create dagli sviluppatori dell'organizzazione sono denominate app personalizzate. (o Line-of-business app). L'organizzazione può richiedere la creazione di app personalizzate per requisiti specifici dell'organizzazione. Hai il controllo per consentire o bloccare tali app per l'intera organizzazione o per utenti specifici. Gli sviluppatori nell'organizzazione possono compilare soluzioni personalizzate con basso impiego di codice usando l'integrazione di Teams con [Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions).
 
-Dopo che un amministratore consente l'uso di app personalizzate, gli utenti finali possono trovare tali app facendo clic su **Creato per l'organizzazione** nel riquadro di spostamento sinistro di Teams Store.
+Dopo che un amministratore consente l'uso di app personalizzate, gli utenti finali possono trovare tali app selezionando **Creato per l'organizzazione** nel riquadro di spostamento sinistro di Teams Store.
 
 :::image type="content" source="media/built-for-your-org1.png" alt-text="Schermata delle app personalizzate nello store di Teams nell'app desktop di Teams." lightbox="media/built-for-your-org2.png":::
 
-<!--- TBD - new article on custom app overview and sideloading. --->
-
-### <a name="understand-sideloading-of-custom-apps"></a>Informazioni sul trasferimento locale di app personalizzate
-
-Quando sviluppano applicazioni personalizzate e prima di distribuirle agli utenti finali, gli sviluppatori testano le applicazioni aggiungendole allo store per testarle da soli o con un team in cui caricano l'applicazione. Gli sviluppatori possono eseguire il test autonomamente o con un gruppo di utenti specificato, ma l'app non è disponibile per gli altri utenti finali dell'organizzazione. Questo metodo è detto trasferimento locale delle app e si applica solo alle app personalizzate.
-
-Gli sviluppatori possono caricare un'applicazione per renderla disponibile ai membri di un team specifico, in genere per testare un'applicazione in fase di sviluppo. L'uso di un'app in questo modo limita il suo utilizzo agli sviluppatori dell'app e non richiede l'approvazione dell'amministratore, purché quest'ultimo consenta il sideloading in Teams. Come amministratore, è possibile disabilitare il sideloading delle app per tutti gli sviluppatori.
-
-Se si disconosce il sideloading, gli sviluppatori possono comunque testare le loro applicazioni creando un [tenant di test separato](/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant). Una volta completato lo sviluppo di app personalizzate, gli sviluppatori richiedono agli amministratori di distribuire l'app personalizzata agli utenti finali. Per informazioni dettagliate, vedere [come pubblicare un'app personalizzata](/microsoftteams/upload-custom-apps). Gli amministratori possono consentire o impedire l'uso di un'app personalizzata per utenti specifici.
+Per altre informazioni, vedere [Comprendere e gestire le app personalizzate e trasferite localmente](custom-app-overview.md).
 
 ## <a name="about-app-templates"></a>Informazioni sui modelli di app
 

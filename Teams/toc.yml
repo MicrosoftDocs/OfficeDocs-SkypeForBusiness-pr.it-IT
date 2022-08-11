@@ -1533,14 +1533,18 @@ items:
             href: adobe-acrobat-pdf-viewer-teams.md
           - name: Gestire Microsoft 365 e i connettori personalizzati
             href: Office-365-custom-connectors.md
-      - name: Gestione di applicazioni line-of-business personalizzate
+      - name: Gestire le app personalizzate
         items:
+          - name: Gestire le app personalizzate e trasferite localmente
+            href: custom-app-overview.md
+          - name: Gestire i criteri e le impostazioni delle app personalizzate
+            href: teams-custom-app-policies-and-settings.md
+          - name: Pubblicare app personalizzate inviate tramite API
+            href: submit-approve-custom-apps.md
+          - name: Pubblicare un'app personalizzata inviata come pacchetto
+            href: upload-custom-apps.md
           - name: Gestire le app di Power Platform nel centro di amministrazione di Teams
             href: manage-power-platform-apps.md
-          - name: Pubblicare app personalizzate nello Store dell'organizzazione
-            href: submit-approve-custom-apps.md
-          - name: Pubblicare un'app personalizzata caricando un pacchetto dell'app
-            href: upload-custom-apps.md
       - name: Controlli amministrativi per gestire le app
         items:
           - name: Panoramica della gestione delle app
@@ -1557,7 +1561,7 @@ items:
                 href: teams-custom-app-policies-and-settings.md
           - name: Personalizzare le app di Teams per gli operatori sul campo
             href: /microsoft-365/frontline/pin-teams-apps-based-on-license?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json
-          - name: Autorizzazioni grafiche e consenso degli amministratori in Azure AD
+          - name: Esaminare le autorizzazioni Azure AD e concedere il consenso dell'amministratore
             href: app-permissions-admin-center.md
           - name: Gestire il consenso specifico delle risorse per l'organizzazione
             href: resource-specific-consent.md
