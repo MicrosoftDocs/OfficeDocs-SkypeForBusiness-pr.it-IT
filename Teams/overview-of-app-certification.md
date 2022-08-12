@@ -1,6 +1,5 @@
 ---
 title: Panoramica della certificazione delle app da parte di Microsoft
-ms.reviewer: ''
 description: Informazioni sul programma di conformità dell’app Microsoft 365 per la sicurezza, la conformità e la privacy delle app di terze parti.
 ms.topic: article
 author: guptaashish
@@ -18,12 +17,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b18e8e596fc1b8180a056c5a141b45e60bd7f889
-ms.sourcegitcommit: 89904ab4116294ad9e4fd407feba8d7e3eefef10
+ms.openlocfilehash: 9918c1ce81464f2fbe9a0c16bc0373e54858d79b
+ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66880420"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67299085"
 ---
 # <a name="microsoft-365-app-compliance-program-for-security-compliance-and-privacy-of-third-party-apps"></a>Il programma di conformità dell’app Microsoft 365 per la sicurezza, la conformità e la privacy delle app di terze parti
 
@@ -35,7 +34,7 @@ Il programma di conformità Microsoft controlla e verifica un'app in base ai con
 
 ## <a name="publisher-verification"></a>Verifica autore
 
-Prima che uno sviluppatore di app possa inviare la propria app a Microsoft, lo sviluppatore deve sottoporsi a una verifica. Un autore verifica la propria identità usando l'account Microsoft Partner Network (MPN) e associa questo account MPN alla registrazione dell'app. La verifica dell'autore consente agli amministratori e agli utenti finali di comprendere l'autenticità degli sviluppatori di applicazioni. La verifica dell'autore offre i vantaggi seguenti:
+Prima che uno sviluppatore di app possa inviare la propria app a Microsoft, lo sviluppatore deve sottoporsi a una verifica. Uno sviluppatore verifica la propria identità usando l'account Microsoft Partner Network (MPN) e associa questo account MPN alla registrazione dell'app. La verifica dell'autore consente agli amministratori e agli utenti finali di comprendere l'autenticità degli sviluppatori di applicazioni. La verifica dell'autore offre i vantaggi seguenti:
 
 * Maggiore trasparenza e riduzione dei rischi per i clienti: questa funzionalità consente ai clienti di comprendere quali app usate nelle organizzazioni vengono pubblicate dagli sviluppatori di cui si fidano.
 * Personalizzazione migliorata: viene visualizzato un `verified` badge nella richiesta di consenso di Azure Active Directory, nella pagina App aziendali e in altre interfacce utente usate da utenti finali e amministratori.
