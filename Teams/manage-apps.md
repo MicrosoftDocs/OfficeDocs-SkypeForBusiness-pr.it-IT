@@ -18,12 +18,12 @@ description: Informazioni su come gestire le app di Teams. Informazioni su come 
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: bda9146bf2f5fd8a4b321be498e50e39be8f5965
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: bbad8eb283fe3e27397b2ddd5d22a91fc6570394
+ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67271841"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67298865"
 ---
 # <a name="manage-teams-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app di Teams nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -42,7 +42,7 @@ Durante la creazione di un'app, gli sviluppatori creano e aggiungono un ID app a
 
 ## <a name="app-management-use-cases-and-the-available-interfaces"></a>Casi d'uso per la gestione delle app e le interfacce disponibili
 
-Le opzioni per eseguire la maggior parte dei casi di utilizzo di gestione delle app sono disponibili nell'interfaccia di amministrazione di Teams. Inoltre, alcune opzioni sono disponibili in altri portali o in pagine diverse dell'interfaccia di amministrazione nello stesso portale.
+Le opzioni per eseguire la maggior parte dei casi di utilizzo di gestione delle app sono disponibili nell'interfaccia di amministrazione di Teams. Inoltre, alcune opzioni sono disponibili in altri portali o in pagine diverse dell'interfaccia di amministrazione di Teams.
 
 | Casi d'uso per la gestione delle app | Collegamento all'interfaccia | Documentazione |
 |:----|:----|:----|
@@ -55,7 +55,7 @@ Le opzioni per eseguire la maggior parte dei casi di utilizzo di gestione delle 
 | Il report Utilizzo app Teams fornisce informazioni sulle app in uso, gli utenti attivi e altre informazioni sull'utilizzo delle app. | [Report sull'uso](https://admin.teams.microsoft.com/analytics/reports) | [Report sull’utilizzo dell’app Teams](teams-analytics-and-reports/app-usage-report.md) |
 | Gli utenti Teams possono aggiungere app quando tengono riunioni o chat con persone di altre organizzazioni. Possono inoltre usare app condivise da componenti di altre organizzazioni quando prendono parte a riunioni o chat tenute da quelle organizzazioni. Si applicano i criteri sui dati dell’organizzazione dell’utente ospitante, così come le pratiche di condivisione dei dati di tutte le app di terze parti condivise da quell’organizzazione. | [Accesso esterno](https://admin.teams.microsoft.com/company-wide-settings/external-communications) | [Comportamento dell'app a seconda dei tipi di utenti](non-standard-users.md) |
 | Tramite l’accesso guest, è possibile consentire l'accesso alle applicazioni e ad altre funzionalità di Teams a persone esterne all’organizzazione, pur mantenendo il totale controllo dei dati aziendali. | [Accesso guest](https://admin.teams.microsoft.com/company-wide-settings/guest-configuration) | [Accesso guest in Teams](guest-access.md) |
-| I criteri di aggiornamento vengono usati per gestire gli utenti di Teams e di anteprima Office che visualizzano funzionalità non definitive o di anteprima nell'app Teams.  | [Criteri di aggiornamento di Teams](https://admin.teams.microsoft.com/policies/updatemanagement) | [Anteprima pubblica di Teams](public-preview-doc-updates.md) |
+| I criteri di aggiornamento vengono usati per gestire gli utenti di Teams e di Office Preview che visualizzano funzionalità non definitive o di anteprima nell'app Teams. | [Criteri di aggiornamento di Teams](https://admin.teams.microsoft.com/policies/updatemanagement) | [Anteprima pubblica di Teams](public-preview-doc-updates.md) |
 | **Interfaccia di amministrazione di Teams esterna** | | |
 | Gestire licenze e abbonamenti di app di terze parti nell’interfaccia di amministrazione di Microsoft 365 | [Interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/#/licenses) | [Gestire gli abbonamenti alle app di terze parti](/microsoft-365/commerce/manage-saas-apps) |
 | Controllare gli eventi dell'app Teams nel Portale di conformità di Microsoft Purview. | [Audit](https://compliance.microsoft.com/auditlogsearch?viewid=Async%20Search) | [Attività di Teams](audit-app-management-activities.md) |
@@ -80,27 +80,27 @@ Quando si consente (o si blocca) un'app nella pagina [Gestisci app](https://admi
 
 Un utente può installare e usare un'app solo quando l'app è consentita tramite l'impostazione a livello di tenant e consentita per l'utente tramite criteri di autorizzazione.
 
-## <a name="manage-user-requests-to-unblock-apps"></a>Gestire le richieste degli utenti di sbloccare le app
+## <a name="manage-user-requests-to-allow-apps"></a>Gestire le richieste degli utenti di consentire le app
 
-È possibile visualizzare le richieste di rendere disponibile per l'uso un'app bloccata. La richiesta viene inviata all'amministratore IT, che può visualizzare e gestire le richieste utente nell'interfaccia di amministrazione di Teams.
+Gli utenti finali possono visualizzare, ma non usare, le app bloccate nel Teams Store. Per le app bloccate, è disponibile un'opzione per richiedere l'approvazione dell'amministratore. Queste richieste vengono fascicolate nell'interfaccia di amministrazione di Teams e gli amministratori possono visualizzarle e gestirle quando desiderano. È consigliabile effettuare una valutazione regolare per verificare la presenza di richieste da parte dell'utente finale.
 
-  :::image type="content" source="media/user-request.png" alt-text="Effettuare una richiesta di approvazione delle app bloccate":::
+  :::image type="content" source="media/user-request-blocked-apps.png" alt-text="Richiedere all'amministratore di approvare un'app bloccata selezionando l'opzione di approvazione della richiesta nel Teams Store.":::
 
 ### <a name="view-a-request"></a>Visualizzare una richiesta
 
- 1. Accedere all'interfaccia di amministrazione di Teams e selezionare [Gestisci app](https://admin.teams.microsoft.com/policies/manage-apps)
+ 1. Accedere all'interfaccia di amministrazione di Teams e selezionare **App di Teams** > **[Gestisci app](https://admin.teams.microsoft.com/policies/manage-apps)**.
 
     :::image type="content" source="media/requested-apps1.png" alt-text="Le richieste degli utenti finali per le app bloccate vengono visualizzate nell'interfaccia di amministrazione di Teams nella colonna intitolata Richieste degli utenti." lightbox="media/requested-apps.png":::
 
- 1. Per visualizzare e controllare il numero di richieste per ogni app, ordinare le richieste nella colonna **Richieste dell’utente**.
- 1. Selezionare il nome dell'app che si desidera sbloccare e si aprirà la pagina dei dettagli dell'app.
- 1. Selezionare **Gestisci richieste** e completare i passaggi visualizzati nella finestra di dialogo popup. La procedura per approvare un'app varia in base al metodo usato per bloccarla.
+ 1. Per visualizzare e controllare il numero di richieste per ogni app, ordinare le richieste nella colonna **Richieste dell’utente**. Non è possibile visualizzare il nome degli utenti che hanno richiesto un'app.
+ 1. Per consentire un'app, seleziona il nome dell'app e aprire la pagina dei dettagli dell'app.
+ 1. Selezionare **Gestisci richieste** e completare i passaggi visualizzati nella finestra di dialogo popup. In base al metodo usato per bloccare un'app, per sbloccarla sono necessari uno o più dei passaggi seguenti:
 
     * Se l'app è stata bloccata tramite criteri di autorizzazione, consentire l'app modificando i [criteri di autorizzazione](teams-app-permission-policies.md).
     * Se l'app è stata bloccata per tutti gli utenti, [consentire l'app](#allow-and-block-apps).
     * Se tutte le app sono state bloccate per tutti gli utenti, modificare le [impostazioni a livello di organizzazione](#manage-org-wide-app-settings).
 
- Se un amministratore consente un'app, non informa l'utente finale che la sua richiesta è stata presa in carico. L'utente deve visitare l'app nello Store per verificare se l'app è sbloccata o meno.
+ Se un amministratore consente un'app, Teams non informa l'utente finale che la sua richiesta è stata presa in carico. L'utente può visualizzare l'app nel Teams Store per verificare se può o meno aggiungere l'app al client di Teams. Se l'app viene approvata da un amministratore, gli utenti possono aggiungerla. In alternativa, se l'amministratore non approva la richiesta e la ignora, gli utenti finali possono richiederla di nuovo.
 
 ### <a name="dismiss-a-user-request"></a>Ignorare una richiesta utente
 
@@ -108,21 +108,23 @@ Un utente può installare e usare un'app solo quando l'app è consentita tramite
  1. Selezionare **Gestisci richieste** e quindi **Ignora tutte le richieste** nella finestra di dialogo.
  1. Quando una richiesta viene ignorata, le richieste dell'utente vengono azzerate.
 
-  :::image type="content" source="media/reject.png" alt-text="rifiuto di app bloccate."border="true":::
+  :::image type="content" source="media/reject.png" alt-text="Gli amministratori possono approvare una richiesta dell'utente consentendo un'app o ignorando la richiesta e non intraprendendo alcuna azione.":::
 
-Se un amministratore rifiuta una richiesta, non informa l'utente finale che la sua richiesta è stata presa in carico. L'utente deve visitare l'app nello Store per verificare se l'app è sbloccata o meno.
+Se un amministratore rifiuta una richiesta, non informa l'utente finale che la sua richiesta è stata presa in carico. Dopo che un amministratore ha ignorato una richiesta, l'utente finale può richiedere di nuovo l'app.
 
 ## <a name="allow-the-apps-that-are-blocked-by-the-developers"></a>Consentire le app bloccate dagli sviluppatori
 
-Quando uno sviluppatore pubblica un'app nell'App Store di Teams, può essere necessario che gli amministratori configurino o personalizzino l'esperienza dell'app. Gli amministratori rendono l'esperienza disponibile agli utenti finali quando l'app è configurata.
+Quando uno sviluppatore pubblica un'app nel Teams Store, può essere necessario che gli amministratori configurino l'app. Gli amministratori rendono l'app disponibile agli utenti finali quando l'app è configurata.
 
-Ad esempio, Contoso Electronics è un ISV che ha creato un'app help desk per Microsoft Teams. Contoso Electronics vuole che i clienti configurino alcune proprietà dell'app in modo che, quando interagiscono con l'app, funzioni come previsto. Prima che un amministratore possa consentire o bloccare l'applicazione, questa verrà visualizzata come **Bloccata dall'editore** nell'interfaccia di amministrazione di Teams e verrà nascosta agli utenti finali per impostazione predefinita. Dopo aver seguito le indicazioni dell'autore per configurare l'app, è possibile renderla disponibile agli utenti impostando lo stato su **Consentito**.
+Ad esempio, Contoso Electronics è uno sviluppatore di app che ha creato un'app help desk per Microsoft Teams. Contoso Electronics vuole che i clienti configurino alcune proprietà dell'app in modo che, quando interagiscono con l'app, funzioni come previsto. Prima che un amministratore consenta l'applicazione, questa verrà visualizzata come **Bloccata dall'editore** nell'interfaccia di amministrazione di Teams e verrà nascosta agli utenti finali per impostazione predefinita. Dopo aver seguito le indicazioni dell'autore per configurare l'app, è possibile renderla disponibile agli utenti impostando lo stato su **Consentito**.
 
 :::image type="content" source="media/blocked-by-publisher.png" alt-text="Screenshot dello stato Bloccato dall'autore nell'interfaccia di amministrazione di Teams.":::
 
+Per informazioni su come gli sviluppatori possono bloccare un'app per impostazione predefinita, vedere [Nascondere l'app finché l'amministratore non l'approva](/microsoftteams/platform/concepts/design/enable-app-customization#hide-teams-app-until-admin-approves).
+
 ## <a name="manage-org-wide-app-settings"></a>Gestire le impostazioni dell'app a livello di organizzazione
 
-Usare le impostazioni delle app a livello di organizzazione per controllare se gli utenti con una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt) ottengono l'esperienza personalizzata per le app in prima linea, se gli utenti possono installare app di terze parti e se gli utenti possono caricare o interagire con le app personalizzate nell'organizzazione. Le impostazioni app a livello di organizzazione disciplinano il comportamento di tutti gli utenti e sostituiscono qualsiasi criterio di autorizzazione app assegnato agli utenti. È possibile usarle per controllare eventuali app dannose o problematiche.
+Usare le impostazioni delle app a livello di organizzazione per controllare se gli utenti con una [licenza F](https://www.microsoft.com/microsoft-365/enterprise/frontline#office-SKUChooser-0dbn8nt) ottengono l'esperienza personalizzata per le app in prima linea, se gli utenti possono installare app di terze parti e se gli utenti possono caricare o interagire con le app personalizzate nell'organizzazione. Le impostazioni app a livello di organizzazione disciplinano il comportamento di tutti gli utenti e sostituiscono qualsiasi criterio di autorizzazione app assegnato agli utenti.
 
 > [!NOTE]
 > Per informazioni su come usare le impostazioni delle app a livello di organizzazione in Microsoft 365 Government - Government Community Cloud High GCCH e le distribuzioni DoD (Department of Defense) di Teams, vedere [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md).

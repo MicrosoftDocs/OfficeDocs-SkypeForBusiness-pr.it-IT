@@ -1,11 +1,10 @@
 ---
 title: Panoramica dei criteri delle app per gestire le app in Teams
-author: guptaashish
+author: ashishguptaiitb
 ms.author: guptaashish
 manager: prkosh
 ms.topic: conceptual
 ms.service: msteams
-ms.reviewer: ''
 search.appverid: ''
 description: Informazioni sui criteri di autorizzazione delle app, i criteri di configurazione delle app e i criteri delle app personalizzati usati per gestire le app in Microsoft Teams.
 audience: admin
@@ -14,38 +13,52 @@ appliesto:
 - Microsoft Teams
 ms.collection:
 - M365-collaboration
-ms.openlocfilehash: a4f70ab7efcd0c2d51063ef2b0466c99bd878cc8
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 5a377923412ad1835e4a0a3c099d31adf283267b
+ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270671"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67299035"
 ---
-# <a name="overview-of-app-policies-used-to-manage-apps"></a>Panoramica dei criteri delle app usati per gestire le app
+# <a name="overview-of-app-policies-used-to-manage-access-to-apps"></a>Panoramica dei criteri delle app usati per gestire l'accesso alle app
 
-I criteri delle app vengono usati per controllare l'accesso alle app e il comportamento di installazione in Microsoft Teams.
+Microsoft Teams usa i criteri per disciplinare l'accesso e il comportamento di installazione. I criteri consentono agli amministratori di Teams di controllare il comportamento dell'app seguente:
+
+* Configurare l'accesso delle app per gli utenti a livello granulare. Ciò consente a ogni utente finale di usare solo le app consentite dall'amministratore.
+
+* Aggiungere le app pertinenti per un utente specifico. Ciò consente agli utenti finali di iniziare facilmente e di accedere rapidamente alle app pertinenti, dal momento che le app aggiunte vengono installate automaticamente senza alcun intervento.
 
 ## <a name="app-permission-policies"></a>Criteri di autorizzazione delle app
 
-I **criteri di autorizzazione delle app** vengono usati per controllare quali app sono disponibili per gli utenti. Gli amministratori possono consentire o bloccare app specifiche installate dagli utenti dallo Store delle app di Teams. I [criteri di autorizzazione delle app](teams-app-permission-policies.md) vengono gestiti tramite l'interfaccia di amministrazione di Microsoft Teams.
+Con i criteri di autorizzazione per le app, l'amministratore di Teams può controllare quali app sono disponibili per gli utenti specifici dell'organizzazione. È possibile definire il mapping di accesso esatto tra l'app e l'utente o qualsiasi combinazione di entrambi. Ad esempio, è possibile consentire alcune app per tutti gli utenti, consentire alcune app per un gruppo specifico di utenti oppure consentire un'app specifica per un utente specifico.
 
-![Screenshot di criteri di autorizzazione delle app.](media/app-permission-policy.png)
+I criteri di autorizzazione per le app si applicano a tutti i tipi di app disponibili in Teams. Ad esempio, è possibile usare i criteri di autorizzazione per le app per distribuire gradualmente un'app di terze parti o un'app personalizzata, consentendola per utenti specifici.
+
+:::image type="content" source="media/app-permission-policy-trimmed.png" alt-text="Screenshot di criteri di autorizzazione delle app." lightbox="media/app-permission-policy.png":::
+
+Per altre informazioni, vedere [Gestire i criteri e le impostazioni app personalizzate](teams-app-permission-policies.md).
 
 ## <a name="app-setup-policies"></a>Criteri di configurazione delle app
 
-I **criteri di configurazione delle app** consentono di aggiungere e installare applicazioni per conto degli utenti e controllare queste impostazioni per l'organizzazione. I [criteri di configurazione delle app](teams-app-setup-policies.md) vengono gestiti nell'interfaccia di amministrazione di Teams.
+I criteri di configurazione delle app consentono di personalizzare l'esperienza dell'app per gli utenti. È possibile scegliere le app che si desidera aggiungere alla barra dell'app nei client di Teams e l'ordine in cui vengono visualizzate nei client Web, desktop e per dispositivi mobili.
 
-![Screenshot dei criteri di configurazione delle app nell’interfaccia di amministrazione di Microsoft Teams.](media/app-setup-policy.png)
+Ecco alcuni esempi di come usare i criteri di configurazione delle app:
+
+* Installare le applicazioni per gli utenti finali nel loro ambiente personale di Teams. Ciò aiuta a favorire la consapevolezza e l'adozione delle app desiderate. Ad esempio, è possibile aggiungere un'app personalizzata di selezione del personale e gestione dei ruoli per i membri del team delle risorse umane.
+* Aggiungere in modo selettivo le app di base, come Chat, Teams e Chiamate.
+
+:::image type="content" source="media/app-setup-policy-trimmed.png" alt-text="Screenshot dei criteri di configurazione delle app nell’interfaccia di amministrazione di Microsoft Teams." lightbox="media/app-setup-policy.png":::
+
+Per altre informazioni, vedere [come gestire i criteri di configurazione delle app](teams-app-setup-policies.md).
 
 ## <a name="custom-app-policies"></a>Criteri delle app personalizzate
 
-È possibile controllare chi può caricare app personalizzate in Teams con **criteri delle app personalizzate**. Le [impostazioni e i criteri delle app personalizzate](teams-custom-app-policies-and-settings.md) vengono gestiti tramite l'interfaccia di amministrazione di Microsoft Teams.
+Teams consente agli sviluppatori all'interno dell'organizzazione di creare, testare e distribuire app personalizzate per gli utenti interni dell'organizzazione. Gli sviluppatori possono inviare le loro app personalizzate tramite Teams per l'approvazione da parte degli amministratori. È possibile usare i criteri di configurazione delle app per controllare chi nell'organizzazione può caricare app personalizzate. Gli amministratori possono consentire agli utenti finali dell'organizzazione di usare app personalizzate e gli sviluppatori possono caricare app personalizzate, usando le impostazioni delle app a livello di organizzazione.
 
-![Screenshot di criteri delle app personalizzate.](media/custom-app-policy.png)
+:::image type="content" source="media/custom-app-policy-trimmed.png" alt-text="Screenshot che mostra come consentire le app personalizzate nell'organizzazione nel riquadro delle impostazioni a livello di organizzazione." lightbox="media/custom-app-policy.png":::
+
+Per altre informazioni, vedere [come gestire i criteri e le impostazioni delle app personalizzate](teams-custom-app-policies-and-settings.md).
 
 ## <a name="related-articles"></a>Articoli correlati
 
-* [Gestire le impostazioni e i criteri delle app personalizzate in Teams](teams-custom-app-policies-and-settings.md)
-* [Gestire i criteri di configurazione delle app in Teams](teams-app-setup-policies.md)
-* [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)
 * [Gestire Teams con i criteri](manage-teams-with-policies.md)
