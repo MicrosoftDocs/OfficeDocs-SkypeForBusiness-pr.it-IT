@@ -32,6 +32,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "ocv-translation-feedback": true,
       "searchScope": ["Microsoft Teams"],      
       "breadcrumb_path": "/microsoftteams/breadcrumb/toc.json",
        "extendBreadcrumb": "true"
