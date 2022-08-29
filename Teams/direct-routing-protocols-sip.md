@@ -16,12 +16,12 @@ f1.keywords:
 description: Protocolli di routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0a4ba1715ccf7b1ea2f0dbf12b58fd5aa6556b24
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 00df395ab67ea3e268cb31f202dd59cba4d4148b
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67271261"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396317"
 ---
 # <a name="direct-routing---sip-protocol"></a>Direct Routing - Protocollo SIP
 
@@ -42,7 +42,7 @@ Prima di elaborare una chiamata in arrivo o in uscita, i messaggi OPTIONS vengon
 | Intestazione contatto | Contattare: <sip:sbc1.adatum.biz:50588;transport=tls> |
 
 > [!NOTE]
-> Le intestazioni SIP non contengono userinfo nell'URI SIP in uso. Come da [RFC 3261, sezione 19.1.1](https://tools.ietf.org/html/rfc3261#section-19.1.1), la parte userinfo di un URI è facoltativa e può essere assente quando l'host di destinazione non ha una nozione di utenti o quando il hosst stesso è la risorsa identificata. Se il segno @ è presente in un URI SIP, il campo utente NON DEVE essere vuoto.
+> Le intestazioni SIP non contengono userinfo nell'URI SIP in uso. Come da [RFC 3261, sezione 19.1.1](https://tools.ietf.org/html/rfc3261#section-19.1.1), la parte userinfo di un URI è facoltativa e può essere assente quando l'host di destinazione non ha una nozione di utenti o quando l'host stesso è la risorsa identificata. Se il segno @ è presente in un URI SIP, il campo utente NON DEVE essere vuoto.
 > Tenere presente che l'URI SIPS non deve essere usato con il routing diretto perché non è supportato.
 > Controllare la configurazione del controller dei confini della sessione e assicurarsi di non utilizzare le intestazioni "Sostituisci" nelle richieste SIP. Direct Routing rifiuterà le richieste SIP in cui sono definite le intestazioni Sostituisci.
 

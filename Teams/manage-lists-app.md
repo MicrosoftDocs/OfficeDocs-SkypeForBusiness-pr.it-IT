@@ -21,15 +21,16 @@ ms.collection:
 - microsoftcloud-healthcare
 - microsoftcloud-retail
 - m365initiative-lists
+- m365-frontline
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: efb9f2ce1f96dbddef049166e34fd999a5ed987e
-ms.sourcegitcommit: ea9cbb8e32b7f23c17930eadc0a1dcbd906449ae
+ms.openlocfilehash: 39d44feb46fa20cb27755792e7f2236ed16b051f
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842232"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396277"
 ---
 # <a name="manage-the-lists-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Elenchi per l'organizzazione in Microsoft Teams
 
@@ -95,7 +96,7 @@ Se gli utenti dell'organizzazione hanno creato elenchi usando l'app SharePoint, 
 
 Elenchi è abilitata per impostazione predefinita per tutti gli utenti di Teams nell’organizzazione. È possibile disattivare o attivare l'app a livello di organizzazione nella pagina [Gestisci app](manage-apps.md) nell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro sinistro dell'interfaccia di amministrazione di Microsoft Teams passare alle app  > **di Teams****Gestire le app**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestire app**.
 2. Eseguire una delle operazioni seguenti:
 
     - Per disattivare Elenchi per l'organizzazione, cercare l'app Elenchi, selezionarla e quindi selezionare **Blocca**.

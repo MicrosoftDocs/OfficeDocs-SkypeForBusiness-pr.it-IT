@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
 description: Informazioni su come telefonare, chattare, trovare e aggiungere utenti esterni all'organizzazione in Microsoft Teams usando l'accesso esterno e l'accesso guest.
-ms.openlocfilehash: 829f763c77578fdc9e17a29386ebad30e52f4986
-ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
-ms.translationtype: HT
+ms.openlocfilehash: 14b1bee39caacc6465c64dbb2151cbeed936b3ff
+ms.sourcegitcommit: 0592f9d2696fe8c840a4ed3e7f99e55ca0c9c3e6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67023989"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67418465"
 ---
 # <a name="use-guest-access-and-external-access-to-collaborate-with-people-outside-your-organization"></a>Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione
 
@@ -43,9 +43,17 @@ Per impostazione predefinita, l'accesso esterno è abilitato per tutti i domini.
 ![Screenshot delle impostazioni per l'accesso esterno.](media/external-access-federation-settings.png)
 
 L'accesso esterno è disponibile per i tenant seguenti:
-
-- Tra Commerciale, GCC e GCC High
-- Solo tra DOD
+- Account aziendali gestiti
+     - Tra solo commerciale
+     - Solo tra GCC
+     - Solo tra GCC High
+     - Solo tra DOD
+- Account non gestiti (Personale)
+     - Solo tra account commerciali e personali
+- Skype for Business interoperabilità
+     - Tra commerciale, GCC, GCC High e DoD
+- Interoperabilità di Skype
+     - Tra commerciale e solo Skype
 
 Per configurare l'accesso esterno, vedere [Gestire l'accesso esterno](manage-external-access.md). 
 
@@ -56,7 +64,7 @@ Per configurare l'accesso esterno, vedere [Gestire l'accesso esterno](manage-ext
 
 Usare l'accesso guest per aggiungere una persona esterna all'organizzazione a un team, in cui potrà chattare, chiamare, partecipare alle riunioni e collaborare ai file. Un utente guest può usufruire di quasi tutte le stesse funzionalità di Teams di un membro del team nativo. Per altre informazioni, vedere [Esperienza guest in Teams](guest-experience.md).
 
-Gli utenti guest vengono aggiunti all'istanza di Azure Active Directory dell'organizzazione come utenti B2B e devono accedere a Teams usando l'account guest. Questo significa che per accedere all'organizzazione potrebbero doversi disconnettere dalla propria organizzazione.
+I guest vengono aggiunti ad Azure Active Directory dell'organizzazione come utenti di collaborazione B2B e devono accedere a Teams con il proprio account guest. Questo significa che per accedere all'organizzazione potrebbero doversi disconnettere dalla propria organizzazione.
 
 L'accesso guest è disponibile per i tenant seguenti:
 

@@ -20,12 +20,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare le impostazioni utente per l'inoltro di chiamata e la delega.
-ms.openlocfilehash: 64907043448f44ff861ede026d0a4343899ad98b
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: c9d085027ed1b365e8aa47b5908c946c4234e5ca
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67272231"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67397357"
 ---
 # <a name="configure-call-settings-for-your-users"></a>Configurare le impostazioni di chiamata per gli utenti
 
@@ -56,6 +56,10 @@ Per configurare lo squillo simultaneo, nella stessa pagina selezionare **Fai squ
 Per configurare le impostazioni senza risposta, nella stessa pagina selezionare l'impostazione appropriata nell'elenco a discesa **Se senza risposta** . Nell'elenco a discesa **Durata squilli per molti secondi prima del reindirizzamento** specificare il numero di secondi da attendere.
 
 La configurazione della delega delle chiamate e del ritiro delle chiamate di gruppo viene integrata nelle impostazioni di inoltro di chiamata e senza risposta selezionando il tipo appropriato. Ad esempio, per configurare che le chiamate debbano squillare anche ai delegati dell'utente, nella stessa pagina selezionare **Delega chiamate** in **Consenti anche**. Quindi aggiungere i delegati appropriati selezionando **Aggiungi persone** e facendo clic su **Salva**.
+
+Questo video mostra la procedura per visualizzare e modificare le impostazioni vocali per un utente.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE546F7?autoplay=false]
 
 ## <a name="use-powershell"></a>Usare PowerShell
 

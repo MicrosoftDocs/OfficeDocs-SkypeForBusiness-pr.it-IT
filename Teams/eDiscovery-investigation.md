@@ -16,12 +16,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 28605ac0f691083151fbb84c73c2ffcfa92ca3b4
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: c77cb7cda26b6061ee1e4fce05bf5ff326b7116b
+ms.sourcegitcommit: 72b6f7ab2a44dec395622bfe64119a48094960bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269061"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67283117"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Condurre un'indagine eDiscovery sul contenuto in Microsoft Teams
 
@@ -35,25 +35,24 @@ La eDiscovery dei messaggi e dei file nei [canali privati](private-channels.md) 
 
 Non tutti i contenuti di Teams sono eDiscoverable. La tabella seguente mostra i tipi di contenuto che è possibile cercare con gli strumenti di Microsoft eDiscovery:
 
-|Tipo di contenuto|eDiscoverable|Note|
-|---|---|---|
-|Registrazioni audio|Sì||
-|Contenuto della scheda|Sì|Per altre informazioni, vedere [Cercare contenuto della scheda](#search-for-card-content) .|
-|Collegamenti chat|Sì||
-|Messaggi in chat|Sì|Sono inclusi i contenuti nei canali standard di Teams, le chat 1:1, le chat di gruppo 1:N e le chat con i partecipanti degli utenti guest.|
-|Frammenti di codice|No||
-|Messaggi modificati|Sì|Se l'utente ha un blocco, vengono mantenute anche le versioni precedenti dei messaggi modificati.|
-|Emoji, GIF e adesivi|Sì||
-|Notifiche di feed|No||
-|Immagini incorporate|Sì||
-|Componenti a ciclo continuo|Sì|Il contenuto di un componente di ciclo viene salvato in un file .fluid archiviato nell'account OneDrive for Business dell'utente che invia il componente di ciclo. Questo significa che è necessario includere OneDrive come origine dati durante la ricerca di contenuto nei componenti di ciclo.|
-|Conversazioni istantanee della riunione|Sì||
-|Metadati della riunione<sup>1</sup>|Sì||
-|Nome del canale|Sì||
-|Citazioni|Sì|Il contenuto tra virgolette è ricercabile. Tuttavia, i risultati della ricerca non indicano che il contenuto è stato citato.|
-|Reazioni (come Mi piace, cuori e altre reazioni)|Sì|Le reazioni sono supportate per tutti i clienti commerciali dopo il 1° giugno 2022. Le reazioni precedenti a questa data non sono disponibili per eDiscovery. È previsto il supporto per il cloud per enti pubblici. Non esiste alcun supporto legale per le reazioni.|
-|Oggetto|Sì||
-|Tabelle|Sì||
+|Tipo di contenuto|Note|
+|---|---|
+|Registrazioni audio||
+|Contenuto della scheda|Per altre informazioni, vedere [Cercare contenuto della scheda](#search-for-card-content) .|
+|Collegamenti chat||
+|Messaggi in chat|Sono inclusi i contenuti nei canali standard di Teams, le chat 1:1, le chat di gruppo 1:N e le chat con i partecipanti degli utenti guest.|
+|Frammenti di codice||
+|Messaggi modificati|Se l'utente ha un blocco, vengono mantenute anche le versioni precedenti dei messaggi modificati.|
+|Emoji, GIF e adesivi||
+|Immagini incorporate||
+|Componenti a ciclo continuo|Il contenuto di un componente di ciclo viene salvato in un file .fluid archiviato nell'account OneDrive for Business dell'utente che invia il componente di ciclo. Questo significa che è necessario includere OneDrive come origine dati durante la ricerca di contenuto nei componenti di ciclo.|
+|Conversazioni istantanee della riunione||
+|Metadati della riunione<sup>1</sup>||
+|Nome del canale||
+|Citazioni|Il contenuto tra virgolette è ricercabile. Tuttavia, i risultati della ricerca non indicano che il contenuto è stato citato.|
+|Reazioni (come Mi piace, cuori e altre reazioni)|Le reazioni sono supportate per tutti i clienti commerciali dopo il 1° giugno 2022. Le reazioni precedenti a questa data non sono disponibili per eDiscovery. È previsto il supporto per il cloud per enti pubblici. Non esiste alcun supporto legale per le reazioni.|
+|Oggetto||
+|Tabelle||
 
 <sup>1</sup> I metadati di una riunione (e chiamata) includono quanto segue:
 

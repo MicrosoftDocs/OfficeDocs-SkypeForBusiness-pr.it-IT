@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni sui criteri di messaggistica e su come possono essere usati per controllare la messaggistica chat in Teams.
-ms.openlocfilehash: f74ae28176f147d768e8e551ac07d1bcf189836b
-ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
+ms.openlocfilehash: 1975262b6fdd404d9314c3644ebba79b6cb5bd9a
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563964"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396517"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in Teams
 
@@ -112,6 +112,7 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 - **Risposte suggerite**  Attiva questa impostazione per abilitare le risposte suggerite per i messaggi di chat.
 - **Ruolo di autorizzazione chat** Usare questa impostazione per definire il ruolo di chat supervisionato dell'utente. Altre informazioni sulla [chat supervisionata](supervise-chats-edu.md).
 - **Gli utenti con autorizzazioni chat complete possono eliminare qualsiasi messaggio** Usare questa impostazione per consentire agli utenti con autorizzazioni complete di eliminare qualsiasi messaggio di gruppo o chat della riunione.
+- **Messaggi video** Attivare questa impostazione se si vuole che gli utenti dell'organizzazione possano usare l'app Teams per inviare messaggi video ad altre persone in Chat.
 
 > [!NOTE]
 > Alcune di queste impostazioni, ad esempio Giphy, possono anche essere configurate a livello di team dai proprietari del team e a livello di canale privato o condiviso dai proprietari del canale.

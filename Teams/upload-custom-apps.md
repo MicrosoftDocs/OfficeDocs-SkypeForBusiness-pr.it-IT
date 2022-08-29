@@ -16,12 +16,12 @@ f1.keywords:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come caricare le app personalizzate nell'app store dell'organizzazione nell'interfaccia di amministrazione di Microsoft Teams.
-ms.openlocfilehash: 52977d9663f5dbee915e2227075127fe1c6575ad
-ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
-ms.translationtype: HT
+ms.openlocfilehash: d95635546da7337c9c18ee0fddf7b40a5bf061c3
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67299025"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67397117"
 ---
 # <a name="publish-a-custom-app-by-uploading-an-app-package"></a>Pubblicare un'app personalizzata caricando un pacchetto dell'app
 
@@ -55,23 +55,23 @@ Per consentire ad utenti attendibili di caricare app personalizzate, seguire que
 
 1. Attiva l'impostazione a livello di organizzazione **Consenti interazione con app personalizzate**. Procedere come segue.
 
-    1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app** e quindi fare clic su **Impostazioni app a livello di organizzazione**.
+    1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passare alle app  > **di Teams****Gestire le app** e quindi selezionare **Impostazioni app a livello di organizzazione**.
 
-    1. In **App personalizzate** attivare **Consenti interazione con app personalizzate** e quindi fare clic su **Salva**.
+    1. In **App personalizzate** attiva **Consenti l'interazione con le app personalizzate** e quindi seleziona **Salva**.
 
 1. Disattivare l'impostazione **Carica app personalizzate** nei criteri di configurazione delle app globali. Procedere come segue.
 
-    1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare a **App di Teams** > **Imposta criteri** e quindi fare clic sul criterio **globale (predefinito a livello di organizzazione)**.
+    1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passare a **Criteri di configurazione** **delle app** >  di Teams e quindi selezionare il criterio **globale (predefinito a livello di organizzazione).**
 
-    1. Disattivare **Carica app personalizzate** e quindi fare clic su **Salva**.
+    1. Disattiva **Carica app personalizzate** e quindi seleziona **Salva**.
 
 1. Creare un nuovo criterio di configurazione delle app che consente di caricare app personalizzate e assegnarle al set di utenti attendibili. Procedere come segue.
 
-    1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **App di Teams** > **Criteri di configurazione** e quindi fare clic su **Aggiungi**. Assegnare un nome e una descrizione al nuovo criterio, attivare **Carica app personalizzate** e quindi fare clic su **Salva**.
+    1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passare a **Criteri di configurazione** **delle app** >  di Teams e quindi selezionare **Aggiungi**. Assegnare un nome e una descrizione al nuovo criterio, attivare **Carica app personalizzate** e quindi selezionare **Salva**.
 
-    1. Selezionare il nuovo criterio creato e quindi fare clic su **Gestisci utenti**. Cercare un utente, fare clic su **Aggiungi** e quindi su **Applica**. Ripetere questo passaggio per assegnare il criterio a tutti gli utenti attendibili.
+    1. Selezionare il nuovo criterio creato e quindi selezionare **Gestisci utenti**. Cerca un utente, seleziona **Aggiungi** e quindi **seleziona Applica**. Ripetere questo passaggio per assegnare il criterio a tutti gli utenti attendibili.
 
-       ![Screenshot della pagina "Aggiungi criteri di configurazione delle app"](media/manage-your-lob-apps-new-app-setup-policy.png)
+       :::image type="content" source="media/manage-your-lob-apps-new-app-setup-policy.png" alt-text="Screenshot della pagina Aggiungi criteri di configurazione app.":::
 
 Questi utenti possono ora caricare il manifesto dell'app per verificare che l'app funzioni correttamente nel tenant di produzione.
 
@@ -80,9 +80,10 @@ Questi utenti possono ora caricare il manifesto dell'app per verificare che l'ap
 Per rendere l'app disponibile agli utenti nell'app store dell'organizzazione, carica l'app.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **[Gestisci app](https://admin.teams.microsoft.com/policies/manage-apps)**.
-1. Selezionare **Carica**, fare clic su **Carica**, selezionare il pacchetto dell'app ricevuto dallo sviluppatore e selezionare **Apri**.
 
-   ![Screenshot del caricamento di un'app nell'interfaccia di amministrazione.](media/manage-your-lob-apps-upload-new-app.png)
+1. Seleziona **Carica**, **carica**, seleziona il pacchetto dell'app ricevuto dallo sviluppatore e seleziona **Apri**.
+
+   ![Screenshot del caricamento di app personalizzate nell'interfaccia di amministrazione.](media/manage-your-lob-apps-upload-new-app.png)
 
 ## <a name="set-up-and-manage"></a>Configurazione e gestione
 
@@ -92,7 +93,7 @@ Per impostazione predefinita, tutti gli utenti dell'organizzazione possono acced
 
 ### <a name="pin-and-install-the-app-for-users-to-discover"></a>Aggiungere e installare l'app per consentire l’individuazione da parte degli utenti
 
-Per impostazione predefinita, gli utenti devono accedere all'app store dell'organizzazione per trovare l’app. Per consentire agli utenti di accedere facilmente all'app, è possibile aggiungere l'app alla barra dell'app in Teams. A questo scopo, creare un criterio di configurazione dell'app e assegnarlo agli utenti. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
+Per impostazione predefinita, gli utenti devono accedere all'app store dell'organizzazione per trovare l’app. Per consentire agli utenti di accedere facilmente all'app, è possibile aggiungere l'app alla barra dell'app in Teams. Per aggiungere l'app, creare un criterio di configurazione dell'app e assegnarlo agli utenti. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
 
 ### <a name="search-the-audit-log-for-teams-app-events"></a>Cercare i log di audit per gli eventi dell'app di Teams
 
@@ -108,24 +109,24 @@ Gli utenti finali che dispongono delle autorizzazioni per l'app possono trovarla
 
 Se è stato creato e assegnato un criterio di configurazione delle app, l'app viene aggiunta alla barra delle app in Teams per facilitare l'accesso agli utenti a cui sono stati assegnati i criteri.
 
-## <a name="update"></a>Aggiornamento
+## <a name="update-a-custom-app"></a>Aggiornare un'app personalizzata
 
 Per aggiornare un'app, gli sviluppatori seguono i passaggi descritti nelle sezioni [Creazione di un’app personale](#create-your-app) e [Convalida](#validate).
 
-È possibile aggiornare l'app nella pagina Gestisci app nell'interfaccia di amministrazione di Microsoft Teams. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**. Fare clic sul nome dell'app e quindi su **Aggiorna**. In questo modo l'app esistente viene sostituita e tutti i criteri di autorizzazione e di configurazione delle app rimangono applicati per l'app aggiornata.
+È possibile aggiornare l'app nella pagina Gestisci app nell'interfaccia di amministrazione di Microsoft Teams. Per aggiornare l'app, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare alle app  > **di Teams****Gestire le app**. seleziona il nome dell'app e **quindi aggiorna.** L'aggiornamento dell'app sostituisce l'app esistente e tutti i criteri di autorizzazione e i criteri di configurazione dell'app rimangono applicati per l'app aggiornata.
 
 ### <a name="end-user-update-experience"></a>Esperienza di aggiornamento per l'utente finale
 
 Nella maggior parte dei casi, dopo aver completato un aggiornamento dell'app, la nuova versione viene visualizzata automaticamente per gli utenti finali. Per altre informazioni, vedere [Esperienza di aggiornamento per l'utente finale](apps-update-experience.md).
 
-## <a name="remove"></a>Rimozione
+## <a name="remove-a-custom-app-from-your-organizations-store"></a>Rimuovere un'app personalizzata dallo store dell'organizzazione
 
 Per rimuovere un'app, procedere come segue:
 
 1. Passare all'interfaccia di amministrazione di Teams.
 1. Accedere alla pagina **App di Teams** > **[Gestisci app](https://admin.teams.microsoft.com/policies/manage-apps)**.
 1. Fare clic sul nome dell'app per aprire la pagina dei dettagli dell'app.
-1. Accanto al banner dell'app, selezionare **Azioni** > **Elimina**.
+1. Accanto al banner dell'app selezionare **Azioni** > **Elimina**.
 1. Nella finestra di dialogo selezionare **Elimina**.
 
 ## <a name="related-articles"></a>Articoli correlati

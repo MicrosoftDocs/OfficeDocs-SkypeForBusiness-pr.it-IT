@@ -16,12 +16,12 @@ description: Informazioni sulle funzionalità di avvisi e notifiche di Teams dis
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: c4acbbb085bbf47339b0b0b2bcb7000466953b70
-ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
+ms.openlocfilehash: 452bcbebeffa3936b9d05270626e11923caf5cda
+ms.sourcegitcommit: 72b6f7ab2a44dec395622bfe64119a48094960bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616292"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67283087"
 ---
 # <a name="microsoft-teams-monitoring-and-alerting"></a>Monitoraggio e avvisi di Microsoft Teams
 
@@ -33,11 +33,14 @@ L'organizzazione può usare il monitoraggio e gli avvisi di Teams per eseguire l
 - Ricevere un avviso se viene visualizzato qualcosa di imprevisto.
 - Eseguire azioni correttive per tenere traccia delle attività.
 
+> [!NOTE]
+> La funzionalità di avviso all'interno dell'interfaccia di amministrazione di Teams non è disponibile negli ambienti GCC/GCC-High.
+
 ## <a name="how-to-manage-monitoring-and-alerting"></a>Come gestire il monitoraggio e gli avvisi
 
  Per configurare le regole di avviso, è necessario essere un amministratore globale di Microsoft 365 o un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](../using-admin-roles.md) per saperne di più sui ruoli di amministratore di Teams e su quali report possono accedere ogni ruolo di amministratore.
 
-1. Passare all'interfaccia di amministrazione di Teams.
+1. Accedere all'interfaccia di amministrazione di Teams.
 2. Nel riquadro di spostamento sinistro seleziona **Notifiche & avvisi**.
 3. Scegliere la regola da configurare da **Regole**.
 

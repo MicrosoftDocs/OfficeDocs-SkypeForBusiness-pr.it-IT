@@ -11,6 +11,7 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
+- m365-frontline
 description: Informazioni sui modelli di team e su come gestirli nell'interfaccia di amministrazione di Microsoft Teams.
 f1.keywords:
 - CSH
@@ -18,12 +19,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0bff3c2c63b94df4c1e19a748d3e9e9912574faa
-ms.sourcegitcommit: c4ec82b7d8a820362b6b0276470b0dea95a628df
+ms.openlocfilehash: e4fb9c538335a50271bd0ae15249ec8aec7af95b
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66819357"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396727"
 ---
 # <a name="get-started-with-team-templates-in-the-teams-admin-center"></a>Introduzione ai modelli di team nell'interfaccia Teams di amministrazione
 
@@ -43,7 +44,7 @@ Un modello di team in Microsoft Teams è una definizione della struttura di un t
 Questo articolo offre una panoramica dell'uso dei modelli di team nell'interfaccia di amministrazione di Teams. Vengono fornite informazioni sulle proprietà supportate nei modelli, sui modelli predefiniti forniti da Microsoft, sui limiti di dimensioni dei modelli, su come creare e gestire i modelli e altro ancora.
 
 > [!NOTE]
-> Gli utenti possono [creare team da modelli di team predefiniti o personalizzati](https://support.microsoft.com/office/create-a-team-from-a-template-a90c30f3-9940-4897-ab5b-988e69e4cd9c) nell'app Teams. Gli sviluppatori possono anche creare team a livello di programmazione da modelli di team predefiniti usando Microsoft Graph. Per altre informazioni, vedere [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md).
+> Gli utenti possono [creare team da modelli di team predefiniti o personalizzati](https://support.microsoft.com/office/create-a-team-from-a-template-a90c30f3-9940-4897-ab5b-988e69e4cd9c) nell'app Teams. Gli sviluppatori possono anche creare team a livello di programmazione da modelli di team predefiniti o personalizzati usando Microsoft Graph. Per altre informazioni, vedere [Introduzione ai modelli di team con Microsoft Graph](get-started-with-teams-templates.md).
 
 ## <a name="team-template-capabilities"></a>Funzionalità dei modelli di team
 

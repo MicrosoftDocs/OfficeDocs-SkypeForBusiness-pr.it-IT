@@ -17,20 +17,20 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come gestire l'accesso alle app di Teams in Microsoft 365.
-ms.openlocfilehash: 114b16dad2a574b217ebc9bf815f42e579b740e8
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
-ms.translationtype: HT
+ms.openlocfilehash: 76385d60d185fd9ad522348e4e438ac06dd4e896
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67271411"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396897"
 ---
 # <a name="manage-access-to-teams-apps-across-microsoft-365"></a>Gestire gli accessi alle app di Teams in Microsoft 365
 
 Gli sviluppatori di app possono migliorare le app di Microsoft Teams per lavorare in Outlook e in Office.com, oltre all'app che lavora in Teams. Gli utenti finali possono usare le app avanzate in Teams, in Microsoft Outlook e Microsoft Office.com dopo il miglioramento. Attualmente, solo gli utenti finali in Targeted Release possono visualizzare e usare queste app specifiche in Teams, Outlook e Office.com. L'esperienza di amministrazione di Teams esistente si applica per controllare l'accesso a queste app. Una notifica relativa a questa modifica è disponibile nel [Centro messaggi](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC334280). Gli amministratori di Teams possono consentire a utenti finali specifici di usare le app avanzate o di gestire l'accesso alle app avanzate in Teams, in Outlook e in Office.com. Gli amministratori di Teams usano l'interfaccia di amministrazione di Teams per gestire l'accesso alle app.
 
-Per l'uso in Outlook e Office.com, un'app avanzata continua a usare le autorizzazioni esistenti concesse in Teams. Non sono previste [modifiche nelle autorizzazioni dell'app avanzata](https://devblogs.microsoft.com/microsoft365dev/ignite-2021-building-apps-for-collaboration-in-a-hybrid-world/#personal-tabs).
+Per l'uso in Outlook e Office.com, un'app avanzata continua a usare le autorizzazioni esistenti concesse in Teams. Non ci sono [modifiche alle autorizzazioni dell'app avanzata](https://devblogs.microsoft.com/microsoft365dev/ignite-2021-building-apps-for-collaboration-in-a-hybrid-world/#personal-tabs).
 
-Di seguito è riportato un elenco delle app avanzate:
+Le app avanzate sono elencate di seguito:
 
 * [Monday.com](https://teams.microsoft.com/l/app/eab2d3ce-6d6a-4415-abc4-5f40a8317b1f)
 * [Mural](https://teams.microsoft.com/l/app/c738b607-88dd-4f16-aefe-6a824c65d25d)

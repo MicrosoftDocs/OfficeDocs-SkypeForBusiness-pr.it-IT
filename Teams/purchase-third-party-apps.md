@@ -1,6 +1,6 @@
 ---
 title: Acquistare app di terza parte per Teams
-author: guptaashish
+author: ashishguptaiitb
 ms.author: guptaashish
 manager: prkosh
 ms.topic: article
@@ -15,12 +15,12 @@ description: Informazioni su come acquistare app di terze parti da Teams Store u
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 41882a241a911e7c482a2a9a16c9fa9cfd649e9d
-ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
-ms.translationtype: HT
+ms.openlocfilehash: 680f48fd75c85b219a4c1ed5b18289962637401b
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67299195"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396307"
 ---
 # <a name="purchase-third-party-apps-for-teams"></a>Acquistare app di terza parte per Teams
 
@@ -34,9 +34,9 @@ Qui è anche possibile acquistare licenze per i servizi offerti da app di terze 
 
 ## <a name="purchase-apps-in-the-teams-admin-center"></a>Acquistare app nell'interfaccia di amministrazione di Teams
 
-Per acquistare app nell'interfaccia di amministrazione di Teams, seguire questa procedura: 
+Per acquistare app nell'interfaccia di amministrazione di Teams, seguire questa procedura:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **[Gestire app](https://admin.teams.microsoft.com/policies/manage-apps)**. Per accedere alla pagina, è necessario essere un amministratore globale o un amministratore del servizio Teams.
+1. Accedere all'interfaccia di amministrazione di Teams e accedere alle app  > **di Teams****[Gestire le app](https://admin.teams.microsoft.com/policies/manage-apps)**. Per accedere alla pagina, è necessario essere un amministratore globale o un amministratore del servizio Teams.
 
 1. Cercare l'app desiderata in base al nome. Per identificare le app con un abbonamento SaaS a pagamento, vedere la colonna **Licenze**. Ogni app ha uno dei valori seguenti:
     * **Acquistare**: l'app offre un abbonamento SaaS ed è disponibile per l'acquisto.  

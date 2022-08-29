@@ -16,12 +16,12 @@ description: Informazioni su come impostare Adobe Acrobat come visualizzatore PD
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 9e8860c10e74d5dc06f73632b33b6c94ea792a09
-ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
-ms.translationtype: HT
+ms.openlocfilehash: b1c5654791dde3def8ec622880e26b07f693633f
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67299245"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396707"
 ---
 # <a name="adobe-acrobat-as-a-default-pdf-viewer-in-microsoft-teams"></a>Adobe Acrobat come visualizzatore PDF predefinito in Microsoft Teams
 
@@ -39,11 +39,11 @@ Per configurare l'app di Adobe Acrobat come gestore predefinito per i file PDF n
 
 Prima di configurare l'app, assicurarsi di aver consentito l'uso delle app nel tenant, di aver esplicitamente consento l'app di Adobe Acrobat e che i criteri di autorizzazione dell'app lo consentano. Per configurare Adobe Acrobat come app predefinita per i file PDF, seguire questa procedura:
 
-1. Accedere all'interfaccia di amministrazione di Teams e passare a **App di Teams** > **[Gestisci app](https://admin.teams.microsoft.com/policies/manage-apps)**.
+1. Accedere all'interfaccia di amministrazione di Teams e accedere **all'app** > **[Teams Gestire le app](https://admin.teams.microsoft.com/policies/manage-apps)**.
 
-1. Cercare l'app di Adobe Acrobat e selezionarla.
+1. Cercare l'app di Adobe Acrobat e selezionarla. Apre la pagina dei dettagli dell'app.
 
-1. Nella scheda **Autorizzazioni**, selezionare **Verifica autorizzazione**.
+1. Seleziona la scheda **Autorizzazioni** e quindi seleziona **Rivedi autorizzazione**.
 
    :::image type="content" source="media/permission-policy.png" alt-text="Screenshot dell'autorizzazione dell'app nell'interfaccia di amministrazione di Teams." lightbox="media/teams-app-adobe-acrobat-permission.png":::
 

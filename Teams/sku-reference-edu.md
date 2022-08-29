@@ -16,16 +16,18 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Elenca i piani di licenza per istituti di istruzione e studenti e gli ID SKU.
 f1keywords: ''
-ms.openlocfilehash: c6fe915950189dfe3ee46acc6187636fbe34da5a
-ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.openlocfilehash: f0b1f51b18ba7c43b4cb5eed9b7626100e9a950f
+ms.sourcegitcommit: c19ac3be42cc4b8409c8d512bbe3156736af0309
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66790171"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67426863"
 ---
 # <a name="education-sku-reference"></a>Informazioni di riferimento su SKU education
 
-Questo articolo elenca i piani di licenza per istituti di istruzione e studenti e gli ID SKU che è possibile usare come riferimento quando si usa PowerShell per identificare gli utenti dell'organizzazione in base al tipo di licenza.
+Questo articolo elenca i piani di licenza per istituti di istruzione e studenti e gli ID SKU.
+
+Usare questo riferimento quando si usa PowerShell per identificare gli utenti dell'organizzazione in base al tipo di licenza.
 
 ## <a name="faculty-licenses"></a>Licenze per istituti di istruzione
 

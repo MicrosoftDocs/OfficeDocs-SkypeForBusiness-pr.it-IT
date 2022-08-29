@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su operatori automatici e code di chiamata e su come usarli per aiutare i chiamanti a spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 218377b2082d1a057f503abbf83d37ff78686986
-ms.sourcegitcommit: 55ba3ed53421da6619724a360d15e80262241079
+ms.openlocfilehash: f97081e641574c0d2ea192820100861b39b48d9b
+ms.sourcegitcommit: 850038f2248c1ea412f7b5daca26c0598baffa3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67070737"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67443353"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare gli operatori automatici di Teams e le code di chiamata
 
@@ -175,6 +175,18 @@ Vedi gli articoli seguenti per informazioni su come creare operatori automatici 
 
 - [Configurare un operatore automatico](create-a-phone-system-auto-attendant.md)
 - [Creare una coda di chiamata](create-a-phone-system-call-queue.md)
+
+> [!IMPORTANT]
+> Il token GUID di Azure Active Directory (AAD) di un utente viene archiviato come parte della configurazione dell'operatore automatico o della coda di chiamata quando l'utente è configurato come:
+>
+>  - un operatore automatico o una coda di chiamata **Utente autorizzato**.
+>  - un **operatore** operatore automatico.
+>  - una Persona nel punto di trasferimento **dell'organizzazione** .
+>  - un singolo membro di una coda di chiamata.
+> 
+> Le configurazioni dell'operatore automatico e della coda di chiamata non vengono sincronizzate con gli eventi del ciclo di vita di AAD.  Gli amministratori di Teams devono aggiornare manualmente le configurazioni dell'operatore automatico e della coda di chiamata per rimuovere questi dati personali quando un utente incluso nella configurazione lascia l'organizzazione.
+>
+> Ciò non vale per le appartenenze agli agenti della coda di chiamata configurate tramite liste di distribuzione o canali. Inoltre, non si applica agli utenti raggiunti tramite la funzionalità Chiamata per **nome** o **Chiamata per numero** degli operatori automatici.
 
 Se sono necessarie funzionalità più estese, ad esempio l'integrazione con flussi di lavoro, bot e SMS, considerare [Servizi di comunicazione di Azure](/azure/communication-services/overview).
 

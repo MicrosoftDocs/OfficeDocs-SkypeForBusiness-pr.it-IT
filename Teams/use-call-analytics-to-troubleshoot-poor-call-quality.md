@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.users.activity.audioqualitycolumn
 - Reporting
 description: Usare i dettagli di Call Analytics per utente su dispositivi, reti e connettività per risolvere i problemi degli utenti relativi a chiamate e riunioni di Microsoft Teams.
-ms.openlocfilehash: 38636d911be55648ec17628bcec7d4cee21358c5
-ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
+ms.openlocfilehash: c83ecbad418dc471f1db2c9c71b88fa621fe4a11
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66794314"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67397097"
 ---
 # <a name="use-call-analytics-to-troubleshoot-poor-call-quality"></a>Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate
 
@@ -54,6 +54,10 @@ Per visualizzare tutte le informazioni e i dati delle chiamate per un utente, ac
 Per ottenere informazioni aggiuntive su una determinata sessione, incluse statistiche dettagliate su elementi multimediali e di rete, fare clic su una sessione per visualizzare i dettagli.
 
 ![Screenshot dei dati della sessione utente di analisi delle chiamate.](media/teams-difference-between-call-analytics-and-call-quality-dashboard-image2.png)
+
+Questo video mostra la procedura per visualizzare le riunioni e le informazioni di chiamata di un utente.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53x2e?autoplay=false]
 
 ## <a name="what-does-each-teams-support-role-do"></a>Cosa fa ogni ruolo di supporto di Teams?
 

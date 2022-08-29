@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams e usarle per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti.
-ms.openlocfilehash: ccfcb15cb5456a25b8bbad0383481f20d4c81e9b
-ms.sourcegitcommit: 7cc7e237b0da270c9cf4a3e535db16dd113e4300
+ms.openlocfilehash: 99c84f6c0dfcbd20824a90af49739eace200ecd2
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "61205536"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396547"
 ---
 # <a name="manage-meeting-policies-in-microsoft-teams"></a>Gestire i criteri delle riunioni in Microsoft Teams
 
@@ -44,7 +44,7 @@ I criteri riunione vengono usati per controllare le funzionalità disponibili pe
 |Tipo di implementazione  |Descrizione  |
 |---------|---------|
 |Per organizzatore    |Quando si implementa un criterio per organizzatore, tutti i partecipanti alla riunione ereditano il criterio dell'organizzatore. Ad esempio, **Ammetti automaticamente le persone** è un criterio per organizzatore e controlla se gli utenti accedono direttamente alla riunione oppure attendono nella sala di attesa per le riunioni pianificate dall'utente a cui è assegnato il criterio.          |
-|Per utente    |Quando si implementano criteri per utente, viene applicato solo il criterio per utente per limitare l'uso di determinate funzionalità da parte dell'organizzatore e/o dei partecipanti alla riunione. Ad esempio, **Meet now in channels** è un criterio per utente.     |
+|Per utente    |Quando si implementano criteri per utente, viene applicato solo il criterio per utente per limitare l'uso di determinate funzionalità da parte dell'organizzatore e/o dei partecipanti alla riunione. Ad esempio, **Riunione immediata nei canali** è un criterio per utente.     |
 |Per organizzatore e per utente     |Quando si implementa una combinazione di criteri per organizzatore e per utente, l'uso di alcune funzionalità da parte dei partecipanti alla riunione è limitato, in base ai criteri applicati al singolo utente e ai criteri dell'organizzatore. Ad esempio, **la registrazione cloud** è un criterio per organizzatore e per utente. Attivare questa impostazione per consentire all'organizzatore della riunione e ai partecipanti di avviare o interrompere una registrazione.
 
 È possibile modificare le impostazioni nel criterio globale o creare e assegnare uno o più criteri personalizzati. Se non si creano e assegnano criteri personalizzati, gli utenti riceveranno il criterio globale.
@@ -64,16 +64,20 @@ Ad esempio, si supponga di avere un gruppo di utenti e di voler limitare la larg
 
 In **Audio e video**:
 
-- Disattivare la registrazione cloud.
+- Disattiva Registrazione cloud.
 - Disattivare il video IP.
 
 In **Condivisione di contenuti**:
 
 - Disabilitare la modalità di condivisione dello schermo.
-- Disattivare Lavagna.
+- Disattiva Whiteboard.
 - Disattivare Note condivise.
 
 Assegnare poi il criterio agli utenti.
+
+Questo video mostra la procedura per creare e assegnare criteri di riunione personalizzati a un utente (o utenti).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53Wv0?autoplay=false]
 
 ## <a name="edit-a-meeting-policy"></a>Modificare un criterio di riunione
 
@@ -86,6 +90,10 @@ Assegnare poi il criterio agli utenti.
 
 > [!NOTE]
 > A ogni utente può essere assegnato un solo criterio di riunione per volta.
+
+Questo video mostra la procedura per modificare i criteri predefiniti per le riunioni a livello di organizzazione.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53MoG?autoplay=false]
 
 ## <a name="assign-a-meeting-policy-to-users"></a>Assegnare un criterio riunione agli utenti
 

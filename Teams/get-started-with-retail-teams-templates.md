@@ -9,6 +9,7 @@ ms.service: msteams
 ms.reviewer: yinchang
 ms.collection:
 - M365-collaboration
+- m365-frontline
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come gestire e usare i modelli di team di vendita al dettaglio nell'interfaccia di amministrazione di Teams e con Microsoft Graph per creare rapidamente e facilmente team per l'organizzazione di vendita al dettaglio.
@@ -19,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f3cf6d2e7eb23517477572775e7d18571463957b
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
-ms.translationtype: HT
+ms.openlocfilehash: 3e8d908a0c6183f4d305b0b622060cfd2ed78922
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60046342"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396297"
 ---
 # <a name="use-retail-team-templates"></a>Usare i modelli di team di vendita al dettaglio
 

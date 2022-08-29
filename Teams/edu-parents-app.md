@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 73f11abed8101031361e92d008c4edbd89b9a31c
-ms.sourcegitcommit: 903abff4ce79c10bf1fb936b8ad71f6315a43c18
+ms.openlocfilehash: 37de74db112dcbd5466659b385f1bb94d7c134aa
+ms.sourcegitcommit: 0592f9d2696fe8c840a4ed3e7f99e55ca0c9c3e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67278770"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67418625"
 ---
 # <a name="set-up-parent-connection-in-microsoft-teams-for-education"></a>Configurare la connessione padre in Microsoft Teams per l'istruzione
 
@@ -42,7 +42,7 @@ Ecco alcune risorse che gli amministratori IT possono condividere con tutori e d
 La connessione genitori consente a docenti e tutori di chattare, inviare e-mail e chiamare con Teams.
 
 - I docenti possono avviare chat con i tutori.
-  - Se il tutore non ha un account per utenti finali di Teams, riceverà il messaggio iniziale dal docente e un invito tramite posta elettronica a passare a Teams.
+  - Se il tutore non ha un account per utenti finali di Teams o non si è ancora unito a Teams, riceverà il messaggio dal docente insieme a un invito tramite posta elettronica a passare a Teams. Questo vale solo nei casi in cui non sono stati raggiunti i limiti dell'invito e la chat è una nuova chat o una chat esistente che è stata immessa nuovamente dalla connessione padre.
 - Funziona con la chat supervisionata. Per altre informazioni, vedere [Usare le chat supervisionate in Microsoft Teams](supervise-chats-edu.md).
   - Per impostazione predefinita, i tutori hanno autorizzazioni limitate, quindi non possono chattare con gli studenti o rimuovere utenti dalle chat.
   - Questa impostazione può essere modificata dall'amministratore del tenant.

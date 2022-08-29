@@ -18,12 +18,12 @@ ms.custom:
 description: Video di formazione, presentazioni powerpoint, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e4dc2bb1055853bdd5b06b85303ea6dceda934dc
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: cc931e442b5777c129482ad22e7698b9446e5695
+ms.sourcegitcommit: 10bb44fdd23d0b42a81229028d1b86515f88e7bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269301"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67435292"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori per Microsoft Teams
 
@@ -67,14 +67,14 @@ Usare le risorse di formazione per educare se stessi su Teams, insegnare agli al
 
 | Modulo | Video | Presentazione di PowerPoint (PDF)  |
 | ------------ | -------------------- | -------------------- |
-| Modulo 1: Introduzione alla Microsoft Teams Rooms (18:29 min) | [Video](https://www.youtube.com/watch?v=LpFQ24S8QlY) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-1-introduction-to-microsoft-teams-rooms.pdf?raw=true) |
-| Modulo 2: Rete di Microsoft Teams (34:10 min) | [Video](https://www.youtube.com/watch?v=CqQX4Mg0f1k) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-2-network-readiness.pdf?raw=true) |
-| Modulo 3: Scelta del dispositivo giusto per lo spazio giusto (18:45 min) | [Video](https://www.youtube.com/watch?v=jUac7mT7xP4) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-3-choosing-the-right-device.pdf?live=true) |
-| Modulo 4: Distribuzione di Microsoft Teams Rooms (56:36 min) | [Video](https://www.youtube.com/watch?v=IJZPczMAsEM) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-4-deployment.pdf?raw=true) |
-| Modulo 5: Configurazione e avvio Microsoft Teams Rooms (32:27 min) | [Video](https://www.youtube.com/watch?v=Q_6F6CNcpxI) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-5-starting-and-configuring-teams-rooms.pdf?raw=true) |
-| Modulo 6: Gestione Microsoft Teams Rooms, parte 1 (18:31 min) | [Video](https://www.youtube.com/watch?v=XMoZa9XGQfw) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-6-managing-teams-rooms-part-1.pdf?raw=true) |
-| Modulo 7: Gestione Microsoft Teams Rooms, parte 2 (41:06 min) | [Video](https://www.youtube.com/watch?v=vDCYM5sKylc) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-7-managing-teams-rooms-part-2.pdf?raw=true) |
-| Modulo 8: Microsoft Teams Rooms-- Suggerimenti, trucchi e risoluzione dei problemi (18:14 min)|[Video](https://www.youtube.com/watch?v=W3b-iRrFECA)  | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-8a-tips-tricks-troubleshooting.pdf?raw=true)|
+| Modulo 1: Introduzione alla Microsoft Teams Rooms (18:29 min) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-1-introduction-to-microsoft-teams-rooms.pdf?raw=true) |
+| Modulo 2: Rete di Microsoft Teams (34:10 min) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-2-network-readiness.pdf?raw=true) |
+| Modulo 3: Scelta del dispositivo giusto per lo spazio giusto (18:45 min) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-3-choosing-the-right-device.pdf?live=true) |
+| Modulo 4: Distribuzione di Microsoft Teams Rooms (56:36 min) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-4-deployment.pdf?raw=true) |
+| Modulo 5: Configurazione e avvio Microsoft Teams Rooms (32:27 min) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-5-starting-and-configuring-teams-rooms.pdf?raw=true) |
+| Modulo 6: Gestione Microsoft Teams Rooms, parte 1 (18:31 min) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-6-managing-teams-rooms-part-1.pdf?raw=true) |
+| Modulo 7: Gestione Microsoft Teams Rooms, parte 2 (41:06 min) | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-7-managing-teams-rooms-part-2.pdf?raw=true) |
+| Modulo 8: Microsoft Teams Rooms-- Suggerimenti, trucchi e risoluzione dei problemi (18:14 min)| [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-8a-tips-tricks-troubleshooting.pdf?raw=true)|
 | Istruzioni di partecipazione con un tocco |  | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-8b-one-touch-join-instructions.pdf?raw=true)  |
 | Introduzione a Microsoft Teams Rooms Managed Services |  | [Ponte](https://download.microsoft.com/download/c/e/a/cead2658-d64d-43b7-a728-b4512b325fb8/module-7b-Teams-Managed-Rooms-intro.pdf)  |
 

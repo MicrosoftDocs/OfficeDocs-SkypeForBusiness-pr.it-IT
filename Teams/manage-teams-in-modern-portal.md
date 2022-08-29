@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d99dacdd0580d2ee9eaf775d843c5c46a0960259
-ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
-ms.translationtype: HT
+ms.openlocfilehash: fca16f3b09fc153717b24161eb8717f419171677
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67023999"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396327"
 ---
 # <a name="manage-teams-in-the-microsoft-teams-admin-center"></a>Gestire i team nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -44,7 +44,7 @@ L'amministratore potrebbe dover visualizzare o aggiornare i team che l'organizza
 
 ## <a name="teams-overview-grid"></a>Griglia panoramica di Teams
 
-Gli strumenti di gestione per i team si trovano nel nodo di **Teams** nell'interfaccia di amministrazione di Microsoft Teams. Nell'interfaccia di amministrazione selezionare **Teams** > **Gestire i team**. Ogni team è supportato da un gruppo di Microsoft 365 e questo nodo offre una visualizzazione dei gruppi abilitati per Microsoft Teams nell'organizzazione.
+Gli strumenti di gestione per i team si trovano nel nodo **Teams** nell'Interfaccia di amministrazione di Microsoft Teams. Nell'interfaccia di amministrazione selezionare **Teams** >  **Gestire i team**. Ogni team è supportato da un gruppo di Microsoft 365 e questo nodo fornisce una visualizzazione dei gruppi abilitati per Microsoft Teams nell'organizzazione.
 
 ![Screenshot della griglia panoramica di Teams.](media/manage-teams-in-modern-portal-grid.png)  
 
@@ -54,7 +54,7 @@ Nella griglia vengono mostrate le seguenti proprietà:
 - **Canali**: conteggio di tutti i canali del team, incluso il canale generale predefinito.
 - **Membri del team**: un conteggio degli utenti totali, inclusi i proprietari, gli utenti guest e membri del tenant.
 - **Proprietari**: il conteggio dei proprietari del team.
-- **Guest**: il numero di utenti guest B2B Azure Active Directory membri del team.
+- **Guest** : numero di guest B2B di Azure Active Directory che sono membri del team.
 - **Privacy**: visibilità/tipo di accesso del gruppo Microsoft 365 di supporto.
 - **Stato**: lo stato archiviato o attivo del team. Altre informazioni sull'archiviazione dei team in [Archiviare o ripristinare un team](https://support.office.com/article/archive-or-restore-a-team-dc161cfd-b328-440f-974b-5da5bd98b5a7).
 - **Descrizione**: la descrizione del gruppo di Microsoft 365 di supporto.
@@ -71,9 +71,17 @@ Per aggiungere un nuovo team, fare clic su **Aggiungi**. Nel riquadro **Aggiungi
 > [!NOTE]
 > I team appena creati possono essere gestiti immediatamente nell'Interfaccia di amministrazione di Teams, a differenza dell'esperienza in altri client, ad esempio in Outlook.
 
+Questo video mostra i passaggi per creare un nuovo team e un canale per loro.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53TXG?autoplay=false]
+
 ### <a name="edit"></a>Modificare
 
 Per modificare le impostazioni specifiche del gruppo e del team, selezionare il team facendo clic a sinistra del nome del team e quindi selezionare **Modifica**.
+
+Questo video mostra la procedura per visualizzare e modificare i dettagli di un team esistente.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53JpG?autoplay=false]
 
 ### <a name="archive"></a>Archiviare
 

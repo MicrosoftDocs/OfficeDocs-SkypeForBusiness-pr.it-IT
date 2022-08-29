@@ -17,12 +17,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare i criteri di feedback per controllare se gli utenti di Teams nell'organizzazione possono inviare feedback su Teams a Microsoft.
-ms.openlocfilehash: f9d001fba9503f6d5f2e482a437bc8f38c8ffc7d
-ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
+ms.openlocfilehash: 933c6971058c107ab881cb48bb0f2a9dbd74900d
+ms.sourcegitcommit: 44fd07d8e6e5fcbe5051de2300e180f295eaaad3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67156524"
+ms.lasthandoff: 08/15/2022
+ms.locfileid: "67339800"
 ---
 # <a name="manage-feedback-policies-in-microsoft-teams"></a>Gestire i criteri di feedback in Microsoft Teams
 
@@ -46,7 +46,7 @@ Accedere al feedback sui dispositivi mobili usando **la Guida di** **Impostazion
 
 
 
-**Rilevazioni**
+**Sondaggi**
 
 Gli utenti possono anche valutare la loro esperienza con Teams e inviarci i dettagli sulla valutazione che assegnano. Questo sondaggio popup viene visualizzato di tanto in tanto dagli utenti in Teams. Quando un utente seleziona **Invia feedback** nella notifica, il sondaggio viene visualizzato per il completamento.
 
@@ -68,6 +68,7 @@ Per disattivare e attivare le funzionalità, impostare i seguenti parametri:
 
  - **Sondaggi**: impostare il parametro **receiveSurveysMode** su **abilitato** per consentire agli utenti a cui sono assegnati i criteri di ricevere il sondaggio. Per fare in modo che gli utenti ricevano il sondaggio e consentano loro di rifiutare esplicitamente, impostare il parametro **su enabledUserOverride**. In Teams, gli utenti possono quindi passare a **Impostazioni** > **Privacy** e scegliere se vogliono partecipare ai sondaggi. Se si imposta il parametro su disabilitata, la caratteristica viene **disattivata** e gli utenti a cui sono assegnati i criteri non riceveranno il sondaggio.
 
+ - **Screenshot**: usare il contrassegno **AllowScreenshotCollection** per aggiungere il consenso esplicito per la raccolta di screenshot per gli utenti.
  - **Email**: usare il flag **AllowEmailCollection** per aggiungere un campo di posta elettronica.
  - **Raccolta log**: usare il flag **AllowLogCollection** per aggiungere il consenso esplicito per la raccolta di log per gli utenti. La raccolta log è attualmente abilitata solo nei dispositivi mobili. Per altre informazioni sui dati condivisi tramite i log, [vedere altre informazioni](https://go.microsoft.com/fwlink/?linkid=2168178).
 

@@ -18,12 +18,12 @@ description: Scopri i diversi modi per assegnare criteri e pacchetti di criteri 
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: e7cf7ba085c7bad22fea4b14f79b9eb3d4e6e2aa
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 7c9855a56031d3eb22cdcbc1ac1b27dfa075db49
+ms.sourcegitcommit: 0592f9d2696fe8c840a4ed3e7f99e55ca0c9c3e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268421"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67418455"
 ---
 # <a name="assign-policies-in-teams--getting-started"></a>Assegnare criteri in Teams- Guida introduttiva
 
@@ -87,6 +87,9 @@ Seguire questa procedura per impostare i criteri globali (predefiniti a livello 
 
 :::image type="content" source="media/teams-meetings-policies-global-general.png" alt-text="Screenshot che mostra i criteri globali di aggiornamento nell'interfaccia di amministrazione di Teams." lightbox="media/teams-meetings-policies-global-expanded.png":::
 
+> [!NOTE]
+> Dopo aver inviato un'operazione di criteri, verrà visualizzata una finestra di dialogo popup per confermarla. Sono incluse le assegnazioni dei criteri, la modifica di un criterio esistente e la creazione di nuovi criteri personalizzati. È necessario confermare l'avvio dell'operazione dei criteri oppure è possibile annullarlo e tornare indietro in un secondo momento.
+
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
 Per impostare i criteri globali usando PowerShell, usare l'identificatore globale.  Prima di tutto esaminare i criteri globali correnti per determinare l'impostazione da modificare.
@@ -148,6 +151,10 @@ Per visualizzare le operazioni dei criteri nel log attività:
 
 > [!NOTE]
 > È anche possibile accedere al log attività dalla pagina **Utenti** . Dopo aver selezionato **Applica** per inviare un'assegnazione di criteri in blocco, nella parte superiore della pagina verrà visualizzato un banner. Selezionare il collegamento **Log attività** nel banner.
+
+Questo video illustra la procedura per visualizzare e gestire i criteri assegnati ed efficaci per un utente.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53x4E?autoplay=false]
 
 ## <a name="related-topics"></a>Argomenti correlati
 

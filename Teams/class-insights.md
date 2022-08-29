@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-edu
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 02a425d325721dc732e0bd06aa3aee8fd3973dda
-ms.sourcegitcommit: f5546acf02ec644225f6d0fb41f38b1912da6adf
-ms.translationtype: HT
+ms.openlocfilehash: 1f95f9c1a3ad6a65dbefa4d48c0c5277e01b65f2
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66952780"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67397273"
 ---
 # <a name="it-admin-guide-to-education-insights-in-microsoft-teams"></a>Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams
 
@@ -256,13 +256,15 @@ Esistono due posizioni in cui è possibile controllare *Insights per l'istruzion
 1. Passare a **Impostazioni** > **Gestisci Insights per l'istruzione**.
 1. Attivare o disattivare l'opzione **Raccogli i dati delle attività per Insights**.
 
-![Screenshot degli interruttori dell'interfaccia di amministrazione di SDS per attivare e disattivare Insights](media/manage-insights-toggles.png)
+![Screenshot dell'interruttore dell'interfaccia di amministrazione di SDS per attivare e disattivare Insights.](media/manage-insights-toggles.png)
 
 #### <a name="turn-on-and-off-insights-from-the-teams-client"></a>Attivare e disattivare Insights dal client Teams
 
 1. Se l'app personale *Insights per l'istruzione* non è stata aggiunta, seguire [queste istruzioni](class-insights.md#education-leaders) per aggiungerla.
 1. Con un account amministratore di Microsoft 365, aprire la pagina delle **impostazioni di amministrazione** usando l'icona con i puntini di sospensione nell'angolo in alto a destra di *Insights per l'istruzione*.
 1. Attivare o disattivare l'opzione **Raccogli i dati delle attività per Insights**.
+
+![Screenshot dell'interruttore del client Teams per attivare e disattivare Insights.](media/admin-settings-main-screen.png)
 
 > [!NOTE]
 > Se Insights è stato disattivato, i dati raccolti vengono eliminati. I dati eliminati in seguito a un rifiuto esplicito non possono essere ripristinati in un secondo momento, anche se Insights viene riabilitato.

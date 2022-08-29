@@ -21,12 +21,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: a82e6f57ca819194554c38bbd51504567bc65d37
-ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
-ms.translationtype: HT
+ms.openlocfilehash: e82dbc8ad122e3d427b86a52c39a10f89df88098
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67298905"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396837"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione app in Microsoft Teams
 
@@ -50,8 +50,7 @@ Se si volesse, ad esempio, consentire solo alcune app specifiche per il team HR 
 
 Usare uno o più criteri di autorizzazione app personalizzati, se si vogliono controllare le app disponibili per gruppi di utenti diversi. È possibile creare e assegnare criteri personalizzati in base a chi pubblica le app: Microsoft, terze parti o l'organizzazione. Dopo aver creato un criterio personalizzato, non è possibile cambiarlo se le app di terze parti sono disabilitate nelle impostazioni delle app a livello di organizzazione.
 
-1. Accedere all'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com/dashboard)
-1. Nel pannello sinistro passare a **App di Teams** > **Criteri di autorizzazione**.
+1. Accedere all'interfaccia di amministrazione di Teams e accedere ai **[criteri di autorizzazione](https://admin.teams.microsoft.com/policies/app-permission)** **delle app** >  di Teams.
 1. Selezionare **Aggiungi**.
 
    ![Screenshot di un nuovo criterio di autorizzazione app.](media/app-permission-policies-new-policy.png)
@@ -77,7 +76,7 @@ Usare uno o più criteri di autorizzazione app personalizzati, se si vogliono co
 
 È possibile usare l'interfaccia di amministrazione di Teams per modificare un criterio, inclusi il criterio globale e i criteri personalizzati creati.
 
-1. Nel pannello sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare a **App di Teams** > **Criteri di autorizzazione**.
+1. Accedere all'interfaccia di amministrazione di Teams e accedere ai **[criteri di autorizzazione](https://admin.teams.microsoft.com/policies/app-permission)** **delle app** >  di Teams.
 1. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi selezionare **Modifica**.
 1. Da lì, apportare le modifiche desiderate. È possibile gestire le impostazioni in base allo sviluppatore di app e aggiungere e rimuovere app in base all'impostazione consenti/blocca.
 1. Selezionare **Salva**.
@@ -99,7 +98,7 @@ Usare le impostazioni app a livello di organizzazione per controllare se gli ute
 
 ### <a name="for-gcc-clouds"></a>Per i Cloud GCC
 
-1. Nella pagina **Gestisci app** selezionare le **impostazioni app a livello di organizzazione**. È possibile quindi configurare le impostazioni desiderate nel pannello.
+1. Nella pagina **[Gestisci app](https://admin.teams.microsoft.com/policies/manage-apps)** **di** >  Teams selezionare **Impostazioni app a livello di organizzazione**. È possibile quindi configurare le impostazioni desiderate nel pannello.
 
    ![Screenshot delle impostazioni app a livello di organizzazione in GCC.](media/app-permission-policies-gcc-org-wide.png)
 
@@ -116,11 +115,12 @@ Per consentire le app di terze parti, modificare e usare il criterio globale, pr
 
 ### <a name="for-gcch-and-dod-clouds"></a>Per i Cloud GCCH e DoD
 
-1. Nella pagina **Criteri di autorizzazione**, selezionare **Impostazioni app a livello di organizzazione**. È possibile quindi configurare le impostazioni desiderate nel pannello.
+1. Accedere all'interfaccia di amministrazione di Teams e accedere ai **[criteri di autorizzazione](https://admin.teams.microsoft.com/policies/app-permission)** **per le app** >  di Teams.
 
-   ![Screenshot delle impostazioni app a livello di organizzazione in GCCH e DoD.](media/app-permission-policies-gcch-dod-org-wide.png)
+1. Seleziona **Impostazioni app a livello di organizzazione**. In **App bloccate**, aggiungere le app che si desidera bloccare nell'organizzazione. Nell'ambito della distribuzione di Microsoft 365 Government - GCC, GCCH e DoD di Teams, tutte le app di terze parti vengono aggiunte a questo elenco per impostazione predefinita. Quando si blocca un'app a livello di organizzazione, l'app viene bloccata automaticamente per tutti gli utenti, indipendentemente dal fatto che sia consentita da altri criteri di autorizzazione app.
 
-1. In **App bloccate**, aggiungere le app che si desidera bloccare nell'organizzazione. Nell'ambito della distribuzione di Microsoft 365 Government - GCC, GCCH e DoD di Teams, tutte le app di terze parti vengono aggiunte a questo elenco per impostazione predefinita. Quando si blocca un'app a livello di organizzazione, l'app viene bloccata automaticamente per tutti gli utenti, indipendentemente dal fatto che sia consentita da altri criteri di autorizzazione app.
+   :::image type="content" source="media/app-permission-policies-gcch-dod-org-wide.png" alt-text="Screenshot delle impostazioni app a livello di organizzazione in GCCH e DoD.":::
+
 1. Selezionare **Salvare** per le impostazioni dell'app a livello di organizzazione per avere effetto.
 
 ## <a name="faq"></a>Domande frequenti

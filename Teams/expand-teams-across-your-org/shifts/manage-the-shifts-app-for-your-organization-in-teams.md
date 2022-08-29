@@ -20,15 +20,16 @@ ms.collection:
 - M365-collaboration
 - microsoftcloud-healthcare
 - microsoftcloud-retail
+- m365-frontline
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ec51237ff9a3b0dff1894581364756afbfd6f5cf
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 759e0cb846b6bca404276e50ca00a1ff28d5725c
+ms.sourcegitcommit: 17f4baf85e1ac6a2af5f5c6ea2d5aae763efd917
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269011"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405138"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Turni per l'organizzazione in Microsoft Teams
 
@@ -89,6 +90,17 @@ I criteri di configurazione delle app consentono di personalizzare Teams per agg
 Un [pacchetto di criteri](../../manage-policy-packages.md) in Teams è una raccolta di criteri e impostazioni dei criteri predefiniti che è possibile assegnare agli utenti con ruoli simili nell'organizzazione. Il set di criteri nei pacchetti di criteri Frontline Worker e Frontline Manager include un criterio di configurazione dell'app che blocca l'app Turni e altre app che supportano le attività di comunicazione e collaborazione per quel ruolo.
 
 È consigliabile usare i pacchetti di criteri Frontline Worker e Frontline Manager in quanto semplificano, semplificano e aiutano a garantire la coerenza durante la gestione dei criteri per la forza lavoro in prima linea.
+
+### <a name="enable-shift-based-tags-in-teams"></a>Abilitare i tag basati sui turni in Teams
+
+[I tag](https://support.microsoft.com/office/using-tags-in-teams-667bd56f-32b8-4118-9a0b-56807c96d91e) in Teams consentono agli utenti di connettersi facilmente con un sottoinsieme di persone in un team. Con i tag basati sui turni, agli utenti vengono automaticamente assegnati tag che corrispondono al nome della programmazione e del gruppo di turno in Turni. Il tag può essere usato in @mentions nella riga **A** in una chat o in un post su qualsiasi canale standard del team.
+
+I tag basati sui turni consentono agli utenti di raggiungere le persone in turno in tempo reale. Le notifiche vengono inviate solo alle persone che sono in turno nel momento in cui il tag viene usato in una chat o in un post del canale. Ad esempio:
+
+- Un responsabile dello store usa il tag @Cashiers per pubblicare un annuncio in un canale per tutti i cassieri in turno.
+- Un infermiere usa il tag @CardiologistsOnCall per avviare una chat con tutti i cardiologi in chiamata.
+
+È possibile attivare o disattivare la funzionalità nell'interfaccia di amministrazione di Microsoft Teams. Per altre informazioni, vedere [Gestire i tag in Teams](../../manage-tags.md).
 
 ## <a name="search-the-audit-log-for-shifts-events"></a>Cercare nel log di controllo gli eventi di Turni
 

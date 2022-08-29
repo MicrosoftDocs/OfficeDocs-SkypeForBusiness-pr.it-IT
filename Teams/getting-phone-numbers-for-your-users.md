@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Scopri come ottenere numeri nuovi, trasferiti o trasferire numeri esistenti per Teams e come mostrare le modifiche agli utenti.
-ms.openlocfilehash: b0ed990cd16a7e4878c2819a95fac29f46a9d770
-ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
+ms.openlocfilehash: 4f3c06986943be42d6a39c22101645e1ff1b0058
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67156544"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396337"
 ---
 # <a name="getting-phone-numbers-for-your-users"></a>Recupero di numeri di telefono per gli utenti
 
@@ -89,6 +89,10 @@ Dopo aver ottenuto i numeri di telefono, dovrai assegnare un numero a ogni utent
 
 > [!NOTE]
 > Se hai bisogno di ottenere più numeri di telefono, [contatta il contatto di supporto tecnico per i prodotti per le aziende - Amministrazione Guida](/microsoft-365/admin/contact-support-for-business-products).
+
+Questo video mostra la procedura per assegnare un numero di telefono a un utente.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE54mbS?autoplay=false]
 
 ## <a name="related-articles"></a>Articoli correlati
 

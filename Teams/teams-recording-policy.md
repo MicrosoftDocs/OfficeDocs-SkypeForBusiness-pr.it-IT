@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e2e934e0dd9896c507e4d5818a77a1637cdcb2b3
-ms.sourcegitcommit: 5a8a077b30a0eab2342afc422869adaa682a015b
+ms.openlocfilehash: b23430398e213c7df9fcd72ccb9d32f88ee1ed1f
+ms.sourcegitcommit: 0592f9d2696fe8c840a4ed3e7f99e55ca0c9c3e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66915214"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67418485"
 ---
 # <a name="introduction-to-teams-policy-based-recording-for-callings--meetings"></a>Introduzione alla registrazione basata sui criteri di Teams per le chiamate & le riunioni
 
@@ -111,7 +111,7 @@ Teams offre varie funzionalità per la registrazione [pratica](./cloud-recording
 Le soluzioni di registrazione della conformità sono integrate con Teams, come illustrato nel diagramma seguente:
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot che mostra l'impostazione dell'app personalizzata del team.](media/hp-compliance-recording-for-teams-calling-and-meetings.jpg "Le immagini mostrano il flusso quando una riunione o una chiamata di Teams viene inviata e ricevuta.")
+> ![Screenshot che mostra le impostazioni app personalizzate del team.](media/hp-compliance-recording-for-teams-calling-and-meetings.jpg "Le immagini mostrano il flusso quando una riunione o una chiamata di Teams viene inviata e ricevuta.")
 
 > [!NOTE]
 > Questa soluzione è progettata specificamente per abilitare la registrazione della conformità basata su criteri con Teams. Qualsiasi altro uso di questa soluzione non sarà supportato.
@@ -244,7 +244,7 @@ I partner seguenti stanno certificando la loro soluzione per Microsoft Teams.<br
 |Landis Technologies |[https://landistechnologies.com/](https://landistechnologies.com/) |
 |Luware |[https://luware.com/en/solution/microsoft-teams-recording/](https://luware.com/en/solution/microsoft-teams-recording/) |
 |Mida Solutions |[https://www.midasolutions.com/recorder-for-teams/](https://www.midasolutions.com/recorder-for-teams/) |
-|Redwood Technologies |[https://www.contentguru.com/compliance-recording-for-microsoft-teams/](https://www.contentguru.com/compliance-recording-for-microsoft-teams/) |
+|Redwood Technologies |[https://www.contentguru.com/en-gb/solutions/needs/compliance-recording-MS-Teams/](https://www.contentguru.com/en-gb/solutions/needs/compliance-recording-MS-Teams/) |
 
 
 Questo elenco verrà aggiornato man mano che altri partner partecipano e soddisfano i criteri di certificazione.

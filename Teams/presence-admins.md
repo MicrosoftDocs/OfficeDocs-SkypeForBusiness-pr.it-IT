@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7e1c436e6bcd204eb383228a73a115a70ae29e08
-ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
-ms.translationtype: HT
+ms.openlocfilehash: 1b28dfccd79c99d633d56480963f06632cd758ae
+ms.sourcegitcommit: 72b6f7ab2a44dec395622bfe64119a48094960bd
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66563764"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67283097"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
@@ -91,7 +91,7 @@ Per impedire agli utenti di visualizzare uno stato che potrebbe non essere perti
 
 Le seguenti impostazioni di amministrazione di Skype for Business sono diverse da quelle di Teams:
 
-- In Teams, la condivisione della presenza è sempre abilitata per gli utenti dell'organizzazione. La configurazione della privacy, grazie alla quale è possibile stabilire chi può visualizzare la presenza, non è disponibile in Teams.
+- In Teams la condivisione della presenza è sempre abilitata per gli utenti dell'organizzazione, a meno che non sia abilitata la modalità Privacy. In modalità Privacy la presenza non è visibile agli utenti esterni.
 - La condivisione della presenza con tutti, inclusi i servizi federati, è sempre abilitata per gli utenti di Teams. L'elenco contatti, se presente in Skype for Business, è visibile in **Chat > Contatti** o in **Chiamate > Contatti**.
 - Le funzionalità client Non disturbare e Contatti sempre ammessi sono sempre abilitate per gli utenti di Teams.
 - L'integrazione del calendario, incluse le informazioni fuori sede e degli altri calendario, è sempre abilitata per gli utenti se Teams è integrato con Outlook.
