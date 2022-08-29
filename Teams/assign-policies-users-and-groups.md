@@ -18,12 +18,12 @@ description: Scopri i diversi modi per assegnare criteri a utenti e gruppi in Mi
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: 9d286d4451ce143a54beda6e457c12ba059832b3
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: a57c038242c06f4305410e68cff907aef6889841
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67267581"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396650"
 ---
 # <a name="assign-policies-to-users-and-groups"></a>Assegnare criteri a utenti e gruppi
 
@@ -147,6 +147,10 @@ Se non si specifica una classificazione, all'assegnazione dei criteri viene asse
 Per rimuovere un'assegnazione di Criteri di gruppo, nella scheda **Assegnazione criteri di gruppo** della pagina dei criteri selezionare l'assegnazione di gruppo e quindi **selezionare Rimuovi**.
 
 Per modificare la classificazione di un'assegnazione di gruppo, è necessario rimuovere prima l'assegnazione di Criteri di gruppo. Quindi, seguire la procedura precedente per assegnare i criteri a un gruppo.
+
+Questo video mostra la procedura per creare e assegnare criteri di riunione personalizzati a un gruppo.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53Ws0?autoplay=false]
 
 ### <a name="use-the-powershell-option"></a>Usare l'opzione PowerShell
 

@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - seo-marvel-mar2020
-ms.openlocfilehash: 45b6ec9809fe0c86f1a4acb69ef78c5c5f30f230
-ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
-ms.translationtype: HT
+ms.openlocfilehash: 7ff0a37d815b3118aea0eb63abc8a414c4a99bd5
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67299135"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67397247"
 ---
 # <a name="manage-custom-app-policies-and-settings-in-microsoft-teams"></a>Gestire le impostazioni e i criteri delle app personalizzate in Microsoft Teams
 
@@ -64,11 +64,11 @@ Se le impostazioni sono attivate:
 
 #### <a name="set-a-user-custom-app-policy"></a>Impostare criteri delle app personalizzate di utenti
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **App di Teams** > **Criteri di configurazione**.
-2. Fare clic su **Aggiungi**.
-3. Attivare o disattivare **Carica app personalizzate**.
-4. Scegliere le altre impostazioni desiderate per il criterio.
-5. Fare clic su **Salva**.
+1. Accedere all'interfaccia di amministrazione di Teams e accedere ai **[criteri di configurazione](https://admin.teams.microsoft.com/policies/app-setup)** **delle app** >  di Teams.
+1. Selezionare **Aggiungi**.
+1. Attivare o disattivare **Carica app personalizzate**.
+1. Scegliere le altre impostazioni desiderate per il criterio.
+1. Selezionare **Salva**.
 
 ### <a name="team-custom-app-setting"></a>Impostazioni app personalizzate di team
 
@@ -86,8 +86,8 @@ Se le impostazioni sono attivate:
 
 #### <a name="configure-the-team-custom-app-setting"></a>Configurare le impostazioni app personalizzate del team
 
-1. In Teams, passare al team, fare clic su **Altre opzioni ...** > **Gestisci team**.
-2. Fare clic su **Impostazioni** e quindi espandere **Autorizzazioni membro**.
+1. In Teams, passare a un team e selezionare **Altre opzioni ...** >  **Gestire il team**.
+2. Selezionare **Impostazioni** ed espandere **Autorizzazioni membro**.
 3. Selezionare o deselezionare la casella di controllo **Consenti ai membri di caricare app personalizzate**.
 
     ![Screenshot che mostra le impostazioni app personalizzate del team.](media/teams-custom-app-policy-and-settings-team.png)
@@ -98,9 +98,9 @@ Le impostazioni app a livello di organizzazione **Consenti interazione con app p
 
 #### <a name="configure-the-org-wide-custom-app-setting"></a>Configurare le impostazioni app personalizzate a livello di organizzazione
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**.
-2. Fare clic su **Impostazioni app a livello di organizzazione**.
-3. In **App personalizzate** attivare o disattivare **Consenti interazione con app personalizzate**.
+1. Accedere all'interfaccia di amministrazione di Teams e accedere alle app  > **di Teams****[Gestire le app](https://admin.teams.microsoft.com/policies/manage-apps)**.
+1. Seleziona **Impostazioni app a livello di organizzazione**.
+1. In **App personalizzate** attivare o disattivare **Consenti interazione con app personalizzate**.
 
     ![Screenshot che mostra le impostazioni app personalizzate a livello di organizzazione.](media/teams-custom-app-policy-and-settings-org-wide.png)
 
@@ -125,8 +125,7 @@ Se, ad esempio, si vuole consentire solo ai proprietari di team di caricare app 
 | Attivato     | Attivato     | Disattivato         | L'utente non può caricare app personalizzate.       |
 | Attivato    | Attivato        | Attivato        | L’utente può caricare app personalizzate nel team, che l'utente sia o meno proprietario del team. L'utente può caricare app personalizzate nel contesto personale.       |
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-articles"></a>Articoli correlati
 
-[Impostazioni di amministrazione per le app in Teams](admin-settings.md)
-
-[Assegnare i criteri agli utenti in Teams](assign-policies-users-and-groups.md)
+- [Amministrazione impostazioni per le app in Teams](admin-settings.md).
+- [Assegnare criteri agli utenti in Teams](assign-policies-users-and-groups.md).

@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per partecipanti e guest.
-ms.openlocfilehash: 7f9cb76e12671425ee2b7b0543263195796e04d5
-ms.sourcegitcommit: 8d7a926758971bee491d24f23b1ad14f5e5c6f7f
+ms.openlocfilehash: da04d38ce63e43414c1a560f92593fbd76ef5b0c
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66713354"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396507"
 ---
 # <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione - Partecipanti e ospiti
 
@@ -40,7 +40,7 @@ Queste impostazioni controllano quali partecipanti alla riunione devono attender
 - [Chattare nelle riunioni](#chat-in-meetings)
 
 > [!NOTE]
->Le opzioni per partecipare a una riunione variano in base alle impostazioni di ogni gruppo di Teams e al metodo di connessione. Se il gruppo ha le funzionalità di audioconferenza e le usa per la connessione, vedere [Audioconferenza](/microsoftteams/audio-conferencing-in-office-365). Se il gruppo di Teams non ha le funzionalità di audioconferenza, vedere [Partecipare a una riunione in Teams](https://support.office.com/article/join-a-meeting-in-teams-1613bb53-f3fa-431e-85a9-d6a91e3468c9).
+> Le opzioni per partecipare a una riunione variano in base alle impostazioni di ogni gruppo di Teams e al metodo di connessione. Se il gruppo ha le funzionalità di audioconferenza e le usa per la connessione, vedere [Audioconferenza](/microsoftteams/audio-conferencing-in-office-365). Se il gruppo di Teams non ha le funzionalità di audioconferenza, vedere [Partecipare a una riunione in Teams](https://support.office.com/article/join-a-meeting-in-teams-1613bb53-f3fa-431e-85a9-d6a91e3468c9).
 
 ## <a name="let-anonymous-people-join-a-meeting"></a>Consentire a persone anonime di partecipare a una riunione
 
@@ -71,7 +71,7 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se le per
 |**Utenti dell'organizzazione, organizzazioni attendibili e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e quelli di organizzazioni attendibili, partecipano alla riunione direttamente senza attendere nella sala di attesa.  Gli utenti anonimi attendono nella sala di attesa.   |
 |**Utenti dell’organizzazione**    |Gli utenti autenticati all'interno dell'organizzazione accedono alla riunione direttamente senza attendere nella sala d'attesa.  Gli utenti di organizzazioni attendibili, guest e utenti anonimi aspettano nella sala di attesa.          |
 |**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa. Nella pagina delle opzioni delle riunioni client di Teams, viene visualizzato come "Solo io".          |
-|**Solo utenti invitati**    |Solo gli utenti invitati e gli organizzatori della riunione possono partecipare alla riunione direttamente senza attendere nella sala d'attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa. Nella pagina delle opzioni delle riunioni client di Teams, viene visualizzato come "Persone invitate". Gli utenti aggiunti come parte di un gruppo di distribuzione dovranno passare attraverso la sala di attesa.      |
+|**Solo utenti invitati**    |Solo gli utenti invitati e gli organizzatori della riunione possono partecipare alla riunione direttamente senza attendere nella sala d'attesa. Tutti gli altri utenti, inclusi gli utenti autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa. Nella pagina delle opzioni delle riunioni client di Teams viene visualizzato come "Persone invito". Gli utenti aggiunti come parte di un gruppo di distribuzione dovranno passare attraverso la sala di attesa.      |
 
  > [!NOTE]
 > Le organizzazioni attendibili sono domini con cui si consentono comunicazioni federate in Teams. Se si abilita **Consenti tutti i domini esterni** per l'accesso esterno nell'interfaccia di amministrazione di Teams, qualsiasi utente autenticato all'interno di qualsiasi organizzazione teams verrà considerato attendibile. Se si sceglie di specificare domini esterni consentiti e bloccarne tutti gli altri, i domini consentiti diventano organizzazioni attendibili. Qualsiasi dominio bloccato è considerato non un'organizzazione attendibile.
@@ -98,15 +98,20 @@ Questa impostazione è un criterio per utente e si applica durante una riunione.
 
 ## <a name="chat-in-meetings"></a>Chattare nelle riunioni
 
-Questa impostazione è un'impostazione per partecipante. Questa impostazione determina se la chat della riunione è consentita nella riunione dell'utente.
-
-Questa impostazione non si applica alle riunioni del canale. Dopo aver applicato questo criterio di chat della riunione agli utenti, un organizzatore non può eseguire l'override di questo criterio tramite le opzioni della riunione.
+Si tratta di un criterio per utente e per organizzatore. Questa impostazione determina se la chat della riunione è consentita nella riunione dell'utente. Questa impostazione non si applica alle riunioni del canale.
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
 |**Attivala per tutti gli utenti**     | Tutti i partecipanti possono scrivere e visualizzare messaggi di chat. |
 |**Disattivala per tutti gli utenti**     | La chat della riunione è disattivata per tutti i partecipanti.  |
 |**Attivarlo per tutti gli utenti tranne gli utenti anonimi**     | L'accesso in scrittura alla chat della riunione è disattivato solo per i partecipanti anonimi.  |
+
+Dopo l'applicazione dei criteri **Chat nelle riunioni** agli utenti, un organizzatore non può eseguire l'override di questo criterio tramite **le opzioni riunione**.
+
+I criteri applicati all'organizzatore della riunione possono influire sugli altri utenti della riunione. Ad esempio:
+
+- Se l'organizzatore ha impostato **Chat in riunioni** **su Attiva l'opzione per tutti** gli utenti o **Attivala per tutti tranne gli utenti anonimi**, verranno applicati i criteri individuali di un utente e tutti gli utenti con **l'opzione Disattiva per tutti** gli utenti impostati non potranno chattare nella riunione.
+- Se l'organizzatore ha impostato **Chat nelle riunioni** **su Disattiva per tutti**, si applicano i criteri dell'organizzatore e nessuno potrà chattare nella riunione.
 
 <a name="bkparticipantsandguests"> </a>
 

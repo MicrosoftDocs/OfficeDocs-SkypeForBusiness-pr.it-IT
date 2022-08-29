@@ -14,31 +14,41 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
+- m365-frontline
 ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 27410562a32f620d8a20e058b0d460c1209e0121
-ms.sourcegitcommit: ea9cbb8e32b7f23c17930eadc0a1dcbd906449ae
+ms.openlocfilehash: 815d3c6b1e97ea75eaa7ae4e35d3e41dd3c6e9e4
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66842222"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67396447"
 ---
 # <a name="walkie-talkie-app-in-microsoft-teams"></a>App Walkie-talkie in Microsoft Teams
 
-L'app Walkie-talkie in Teams fornisce comunicazioni push-to-talk istantanee per il team ed è ora disponibile su Android & iOS. Walkie-talkie consente agli utenti di connettersi con il proprio team usando gli stessi canali sottostanti di cui sono membri. Solo gli utenti che si connettono a Walkie-talkie in un canale diventano partecipanti e possono comunicare tra loro tramite push-to-talk, uno alla volta.
+L'app Walkie-talkie in Teams fornisce comunicazioni push-to-talk istantanee per il team ed è disponibile su Android e iOS. Walkie-talkie consente agli utenti di connettersi con il proprio team usando gli stessi canali sottostanti di cui sono membri. Solo gli utenti che si connettono a Walkie-talkie in un canale diventano partecipanti e possono comunicare tra loro tramite push-to-talk, uno alla volta.
 
-Con Walkie-talkie in Teams, i dipendenti in prima linea possono ora comunicare in modo sicuro con un'esperienza PTT familiare senza dover trasportare radio ingombranti e Walkie Talkie funziona ovunque con wi-fi o connettività Internet cellulare.
+Con Walkie-talkie in Teams, i dipendenti in prima linea possono comunicare in modo sicuro con un'esperienza PTT familiare senza dover trasportare radio ingombranti e Walkie Talkie funziona ovunque con wi-fi o connettività Internet cellulare.
 
 > [!NOTE]
 > Walkie-talkie non è attualmente disponibile in Cina.
 
-## <a name="getting-started"></a>Introduzione
-
-### <a name="deploying-walkie-talkie"></a>Distribuzione di Walkie-talkie
+## <a name="deploying-walkie-talkie"></a>Distribuzione di Walkie-talkie
 
 Walkie-talkie è supportato su dispositivi Android con Google Mobile Services (GMS) e dispositivi iOS.
+
+### <a name="enable-or-disable-walkie-talkie-in-your-organization"></a>Abilitare o disabilitare Walkie-talkie nell'organizzazione
+
+Walkie-talkie è abilitato per impostazione predefinita per tutti gli utenti di Teams nell'organizzazione. È possibile disattivare o attivare l'app a livello di organizzazione nella pagina [Gestisci app](manage-apps.md) nell'interfaccia di amministrazione di Microsoft Teams.
+
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams passare alle **App di Teams** > **Gestisci app**.
+2. Nell'elenco delle app cerca l'app Walkie-talkie, selezionala e quindi imposta **l'interruttore Stato** su **Bloccato** o **Consentito**.
+
+### <a name="enable-or-disable-walkie-talkie-for-specific-users-in-your-organization"></a>Abilitare o disabilitare Walkie-talkie per utenti specifici dell'organizzazione
+
+Per consentire o bloccare l'uso di Walkie-talkie da parte di utenti specifici dell'organizzazione, assicurarsi che Walkie-talkie sia attivato per l'organizzazione nella pagina [Gestisci app](manage-apps.md) . Creare quindi un criterio di autorizzazione per le app personalizzato e assegnarlo a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
 
 ### <a name="pin-walkie-talkie-to-teams"></a>Aggiungere Walkie-talkie a Teams
 
@@ -58,9 +68,9 @@ Per aggiungere l'app Walkie-talkie per gli utenti, è possibile modificare il cr
 
 :::image type="content" source="media/deploy-walkie-talkie-2.png" alt-text="Screenshot che mostra l'aggiunta di Walkie-talkie all'elenco di app aggiunte nel riquadro Aggiungi app aggiunte." lightbox="media/deploy-walkie-talkie-2.png":::
 
-### <a name="network-documentation"></a>Documentazione di rete
+## <a name="network-documentation"></a>Documentazione di rete
 
-Walkie-talkie in Teams richiede la connettività Internet e al di sotto delle condizioni di rete sono necessarie per un'esperienza ottimale.
+Walkie-talkie in Teams richiede la connettività Internet. Per un'esperienza ottimale, sono necessarie le condizioni di rete seguenti.
 
 |Metrica | Obbligatorio |
 |---|---|
@@ -71,41 +81,49 @@ Walkie-talkie in Teams richiede la connettività Internet e al di sotto delle co
 Come già accennato, la qualità dei supporti in tempo reale su una rete IP è notevolmente influenzata dalla qualità della connettività di rete, ma soprattutto dalla quantità di:
 
 - **Latenza** : il tempo necessario per ottenere un pacchetto IP dal punto A al punto B della rete. Questo ritardo di propagazione della rete è essenzialmente legato alla distanza fisica tra i due punti e alla velocità della luce, tra cui un maggiore sovraccarico da parte dei vari router in mezzo. La latenza viene misurata come tempo di round trip (RTT).
-- **Instabilità tra** arrivi: rappresenta la variazione media del ritardo tra pacchetti successivi.
-- **Perdita pacchetti** : spesso viene definita come percentuale di pacchetti persi in un determinato intervallo di tempo. La perdita di pacchetti influisce direttamente sulla qualità audio: da pacchetti piccoli e singoli persi che non hanno quasi alcun impatto, a perdite burst back-to-back che causano l'interruzione completa dell'audio.
+- **Instabilità tra arrivi** : variazione media del ritardo tra pacchetti successivi.
+- **Perdita di pacchetti** : la perdita di pacchetti viene spesso definita come percentuale di pacchetti persi in un determinato intervallo di tempo. La perdita di pacchetti influisce direttamente sulla qualità audio, da piccoli pacchetti persi singoli che non hanno quasi alcun impatto, a perdite burst di tipo "back-to-back" che causano l'interruzione completa dell'audio.
 
 Il consumo di dati previsto da Walkie-talkie è di circa 20 KB/s quando si invia o si riceve audio. In caso di inattività, l'utilizzo previsto dei dati da Walkie-talkie è trascurabile.
 
-### <a name="walkie-talkie-devices"></a>Dispositivi Walkie-talkie
+## <a name="walkie-talkie-devices"></a>Dispositivi Walkie-talkie
 
 Gli operatori in prima linea spesso devono parlare e ricevere chiamate Walkie-talkie anche quando i loro telefoni sono bloccati. Questa esperienza è possibile tramite dispositivi specializzati con un pulsante PTT dedicato.
 
-- **Cuffie**
-  - Cuffie wireless (iOS & Android)
-    - [BlueParrott](https://www.blueparrott.com/microsoft-teams-walkie-talkie)
-  - Cuffie cablate (solo Android)
-    - [Klein Electronics](https://www.kleinelectronics.com/poc-accessories/mtwt/)
-- **Telefoni Android robusti**
-  - Samsung [Galaxy XCover Pro](https://www.samsung.com/us/business/products/mobile/phones/galaxy-xcover-pro/), [Galaxy XCover 5](https://www.samsung.com/de/smartphones/others/galaxy-xcover-5-black-64gb-sm-g525fzkdeeb/buy), [Galaxy Tab Active 3](https://www.samsung.com/us/business/tablets/galaxy-tab-active/buy/)
-    - Configurazione manuale - Con Teams installato, passare a Impostazioni > Funzioni avanzate > chiave XCover/Active. Attiva "Controllo tasto XCover con l'app" e seleziona "Teams"
-    - [Configurazione di MDM](https://docs.samsungknox.com/admin/knox-service-plugin/intune-teams.htm)
-  - Zebra [TC5x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc52-tc57-series-touch-computer.html), [TC7x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc72-tc77-series-touch-computer.html), [TC2x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc21-tc26.html), [EC5x](https://www.zebra.com/us/en/products/mobile-computers/handheld/ec50-ec55.html), [EC30](https://www.zebra.com/us/en/products/mobile-computers/handheld/ec30.html), [MC3300](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3300.html), [MC9300](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc9300.html) 
-    - Configurazione manuale - Con Teams installato, il pulsante PTT dedicato (LEFT_TRIGGER_2) funziona con Walkie-talkie per impostazione predefinita
-    
+#### <a name="headsets"></a>Cuffie
+
+- Cuffie wireless (iOS e Android)
+  - [BlueParrott](https://www.blueparrott.com/microsoft-teams-walkie-talkie)
+- Cuffie cablate (solo Android)
+  - [Klein Electronics](https://www.kleinelectronics.com/poc-accessories/mtwt/)
+
+#### <a name="rugged-android-phones"></a>Telefoni Android robusti
+
+- Crosscall [Core-X4](https://www.crosscall.com/en_FR/core-s4-1004010501053.html), [Core-M5](https://www.crosscall.com/en_FR/core-m5-1001011101114.html), [Action-X5](https://www.crosscall.com/en_FR/action-x5-1001020701220.html), [Core-X5](https://www.crosscall.com/en_FR/core-x5-1001010701695.html) e [Core-T5](https://www.crosscall.com/en_FR/core-t5-1003011401749.html)
+  - Configurazione manuale: con Teams installato, vai a **Pulsanti** **impostazioni** > . Sul pulsante Dedicato (1 o 2), selezionare **Pressione lunga** e quindi scegliere **App PTT**. Selezionare la rotellina blu accanto a **Personalizzato** e selezionare **Teams**.
+- Kyocera [DuraForce Ultra 5G](https://kyoceramobile.com/duraforce-ultra-5g/) e [DuraSport 5G](https://kyoceramobile.com/durasport-5g/)
+  - Configurazione manuale: con Teams installato, passare a **Impostazioni** > **Tasti programmabili**. Scegli **il tasto PTT** o **Tieni premuto** (a seconda del dispositivo) e seleziona **Teams**.
+- Samsung [Galaxy XCover Pro](https://www.samsung.com/us/business/products/mobile/phones/galaxy-xcover-pro/), [Galaxy XCover 5](https://www.samsung.com/de/smartphones/others/galaxy-xcover-5-black-64gb-sm-g525fzkdeeb/buy), [Galaxy Tab Active 3](https://www.samsung.com/us/business/tablets/galaxy-tab-active/buy/)
+  - Configurazione manuale: con Teams installato, passare a **Impostazioni** > **Funzionalità** >  avanzate **XCover/Tasto attivo**. Attivare **ctrl tasto XCover con l'app** e selezionare **Teams**.
+  - [Configurazione di MDM](https://docs.samsungknox.com/admin/knox-service-plugin/intune-teams.htm)
+- Sonim [XP8](https://www.sonimtech.com/products/devices/xp8/)
+  - Configurazione manuale: con Teams installato, vai a **Impostazioni** > **Tasti programmabili**. Scegliere **Select PTT Key app** e selezionare **Teams**.
+- Zebra [TC5x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc52-tc57-series-touch-computer.html), [TC7x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc72-tc77-series-touch-computer.html), [TC2x](https://www.zebra.com/us/en/products/mobile-computers/handheld/tc21-tc26.html), [EC5x](https://www.zebra.com/us/en/products/mobile-computers/handheld/ec50-ec55.html), [EC30](https://www.zebra.com/us/en/products/mobile-computers/handheld/ec30.html), [MC3300](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc3300.html), [MC9300](https://www.zebra.com/us/en/products/mobile-computers/handheld/mc9300.html) 
+  - Configurazione manuale: con Teams installato, il pulsante PTT dedicato (LEFT_TRIGGER_2) funziona con Walkie-talkie per impostazione predefinita.
+
 > [!NOTE]
 > Questi dispositivi non sono certificati da Teams. Sono stati convalidati per funzionare con Teams Walkie-talkie.
 
-### <a name="license-requirements"></a>Requisiti di licenza
+## <a name="license-requirements"></a>Requisiti di licenza
 
 L'app Walkie-talkie è inclusa in tutte le licenze a pagamento di Teams negli [abbonamenti Office 365](/office365/servicedescriptions/teams-service-description). Per altre informazioni su come ottenere Teams, vedere [Ricerca per categorie accedere a Microsoft Teams](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)?
 
-## <a name="further-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
-- Gli amministratori IT possono mantenere il controllo su chi usa Walkie Talkie tramite i criteri dell'app.
 - Se il tuo frontline worker usa i dati mobili per comunicare tramite Teams, Walkie Talkie userà lo stesso metodo.
 - Walkie-talkie dovrebbe funzionare bene in situazioni di bassa larghezza di banda o situazioni in cui lo smartphone è connesso e funzionante. Walkie-talkie non funziona quando non c'è connettività affatto.
 
-Per ulteriori informazioni sull'esperienza utente finale, vedere:
+Per altre informazioni sull'esperienza utente finale, vedere:
 
 - [Introduzione a Teams Walkie-talkie](https://support.microsoft.com/office/get-started-with-teams-walkie-talkie-25bdc3d5-bbb2-41b7-89bf-650fae0c8e0c)
 - [Comunicare con il team con Walkie-talkie](https://support.microsoft.com/office/communicate-with-your-team-in-walkie-talkie-e4342550-5516-4451-b9ec-93166b60f8a4)

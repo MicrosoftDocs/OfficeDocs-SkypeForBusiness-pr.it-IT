@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Leggere questo articolo per informazioni su come creare account di risorse per sale e dispositivi condivisi, tra cui Microsoft Teams Rooms, Teams Rooms su Surface Hub e hot desking sugli schermi di Teams.
-ms.openlocfilehash: eaa95efde1db01d3c7a346309f50eca2427af4e8
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 45cd61b476f10f673150653144bdb79a47604962
+ms.sourcegitcommit: 17f4baf85e1ac6a2af5f5c6ea2d5aae763efd917
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67271711"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405158"
 ---
 # <a name="create-and-configure-resource-accounts-for-rooms-and-shared-teams-devices"></a>Creare e configurare account di risorse per sale e dispositivi Teams condivisi
 
@@ -95,7 +95,7 @@ Creare un account della risorsa usando un metodo da una delle schede seguenti:
 
 3. Passare a **Risorse** nel riquadro sinistro e quindi selezionare **Sale & apparecchiature**. Se queste opzioni non sono disponibili nel riquadro sinistro, potrebbe essere necessario selezionare **Prima Mostra tutto** .
 
-4. Selezionare **Aggiungi una cassetta postale delle risorse** per creare un nuovo account della chat room. Immetti un nome visualizzato e un indirizzo e-mail per l'account, seleziona **Aggiungi** e quindi **chiudi**.
+4. Selezionare **Aggiungi risorsa** per creare un nuovo account della chat room. Immetti un nome visualizzato e un indirizzo e-mail per l'account, seleziona **Aggiungi** e quindi **chiudi**.
 
 5. Per impostazione predefinita, gli account delle risorse sono configurati con le impostazioni seguenti:
 
@@ -105,13 +105,13 @@ Creare un account della risorsa usando un metodo da una delle schede seguenti:
       - Durata massima (ore): 24
     - Accettare automaticamente le convocazioni riunione
 
-    Se vuoi modificarle, seleziona **Imposta opzioni di pianificazione** prima di selezionare **Chiudi**. Se si vogliono modificare in un secondo momento, passare a **Sale risorse** > **& apparecchiature**, selezionare l'account della risorsa. In **Opzioni di prenotazione** selezionare **Modifica**.
+    Se si vogliono modificare, selezionare **Modifica opzioni di prenotazione** prima di selezionare **Chiudi**. Se si vogliono modificare in un secondo momento, passare a **Sale risorse** > **& apparecchiature**, selezionare l'account della risorsa. In **Opzioni di prenotazione** selezionare **Modifica**.
 
 6. Passare a **Utenti** > **attivi** e selezionare la chat room creata per aprire il riquadro delle proprietà.
 
 7. Assegnare quindi una password all'account della risorsa. Nel riquadro, seleziona **Reimposta password**.
  
-8. La richiesta agli utenti di cambiare la password in un dispositivo condiviso causerà problemi di accesso. Deseleziona **Richiedi all'utente di cambiare la password al primo accesso** e seleziona **Reimposta**.
+8. La richiesta agli utenti di cambiare la password in un dispositivo condiviso causerà problemi di accesso. Deseleziona **Richiedi all'utente di cambiare la password al primo accesso** e seleziona **Reimposta password**.
 
 9. Nella sezione **Licenze e app** impostare **Seleziona posizione** sul paese o sull'area geografica in cui verrà installato il dispositivo. Selezionare quindi la licenza da assegnare, ad esempio Sala riunioni, e selezionare **Salva modifiche**. La licenza può variare a seconda dell'organizzazione.
 
@@ -250,7 +250,7 @@ Prima di tutto, connettersi a PowerShell di Active Directory:
    Connect-AzureAD
 ```
 
-Quindi, vedere [Impostare una password in modo che non scada mai](/microsoft-365/admin/add-users/set-password-to-never-expire?view=o365-worldwide#set-a-password-to-never-expire).
+Quindi, vedere [Impostare una password in modo che non scada mai](/microsoft-365/admin/add-users/set-password-to-never-expire#set-a-password-to-never-expire).
 
 In questo esempio la password dell'account ConferenceRoom01@contoso.com non scade mai.
 
@@ -288,7 +288,7 @@ Set-AzureADUser -ObjectID ConferenceRoom01@contoso.com -PasswordPolicies Disable
        Import-Module ActiveDirectory
     ```
     
-    Per informazioni dettagliate su PowerShell di Active Directory, vedere [ActiveDirectory](/powershell/module/activedirectory/?view=windowsserver2022-ps).
+    Per informazioni dettagliate su PowerShell di Active Directory, vedere [ActiveDirectory](/powershell/module/activedirectory/).
 
 2. Impostare la password in modo che non scada mai usando la sintassi seguente:
 

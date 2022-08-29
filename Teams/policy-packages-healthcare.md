@@ -11,6 +11,7 @@ audience: Admin
 ms.collection:
 - M365-collaboration
 - microsoftcloud-healthcare
+- m365-frontline
 appliesto:
 - Microsoft Teams
 f1.keywords: ''
@@ -21,12 +22,12 @@ searchScope:
 - Microsoft Teams
 - Microsoft Cloud for Healthcare
 description: Informazioni su come usare e gestire i pacchetti di criteri di Teams per l'organizzazione nel settore sanitario.
-ms.openlocfilehash: a4613716b1c5ce626e5a00ce2ed884cfb208f097
-ms.sourcegitcommit: c4ec82b7d8a820362b6b0276470b0dea95a628df
+ms.openlocfilehash: 29192cfeec6545cdbbb5528eeabc1298146e4577
+ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66819421"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67397257"
 ---
 # <a name="teams-policy-packages-for-healthcare"></a>Pacchetti di criteri di Teams per il settore sanitario
 
