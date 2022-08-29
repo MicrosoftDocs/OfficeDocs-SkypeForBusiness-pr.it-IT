@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata in Microsoft Teams. Le code di chiamata forniscono un messaggio di saluto, tengono musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: cd5e0cc291b353b8bb46d82333275cc44ef860d3
-ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
+ms.openlocfilehash: f14c0644c7a4be2a63e74ae59705bb7e3bc0cb76
+ms.sourcegitcommit: 850038f2248c1ea412f7b5daca26c0598baffa3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616172"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67443333"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -42,6 +42,14 @@ Le code di chiamata forniscono:
 - Gestione delle opzioni per overflow e timeout della coda.
 
 Prima di seguire le procedure descritte in questo articolo, assicurarsi di aver letto [Plan for Teams auto attendants and call queues](plan-auto-attendant-call-queue.md) e di seguire i [passaggi introduttivi](plan-auto-attendant-call-queue.md#getting-started).
+
+## <a name="whats-new-for-call-queues-in-the-past-6-months"></a>Novità per le code di chiamata degli ultimi 6 mesi
+
+- Agosto
+  - **L'aggiunta di un messaggio di saluto** (sintesi vocale) è ora supportata per il messaggio di saluto principale della coda di chiamata.
+  - I controlli per **ignorare** i messaggi di sistema della segreteria telefonica vengono ora esposti durante il routing alla segreteria telefonica condivisa, che si applica anche all'aggiunta di **messaggi di saluto**.
+
+## <a name="steps-to-create-a-call-queue"></a>Procedura per creare una coda di chiamata
 
 La procedura per configurare una coda di chiamata include:
 
@@ -137,9 +145,13 @@ Dopo aver selezionato una lingua, seleziona il pulsante **Avanti** nella parte i
 
 ## <a name="step-2-add-a-greeting-and-on-hold-music"></a>Passaggio 2: Aggiungere un messaggio di saluto e musica in attesa
 
+*Nuovo: **l'aggiunta di un messaggio di saluto** (sintesi vocale) è ora supportata per il messaggio di saluto principale della coda di chiamata.*
+
 Specificare se si vuole riprodurre un *messaggio di saluto* ai chiamanti quando arrivano in coda.
 
-Se si seleziona **Riproduci file audio**, è necessario caricare un file MP3, WAV o WMA contenente il messaggio di saluto da riprodurre. La registrazione caricata non può avere dimensioni superiori a 5 MB.
+- Se si seleziona **Riproduci file audio**, è necessario caricare un file MP3, WAV o WMA contenente il messaggio di saluto da riprodurre. La registrazione caricata non può avere dimensioni superiori a 5 MB.
+
+- Se selezioni **Digita un messaggio di saluto**, il sistema leggerà il testo digitato (fino a 1000 caratteri) quando la coda di chiamata risponde a una chiamata.
 
 Teams fornisce musica predefinita ai chiamanti mentre sono *in attesa in coda*.
 
@@ -299,14 +311,14 @@ Quando viene raggiunto questo limite, la chiamata viene gestita come specificato
 
 È ad esempio possibile che il chiamante lasci una segreteria telefonica per gli agenti in coda.
 
+*Nuovo: i controlli per **ignorare** i messaggi di sistema della segreteria telefonica vengono ora esposti durante il routing alla segreteria telefonica condivisa, che si applica anche all'aggiunta di **messaggi di saluto** .*
+
 Per i trasferimenti esterni, vedere [Prerequisiti](./plan-auto-attendant-call-queue.md#prerequisites) e [trasferimenti di numeri di telefono esterni - dettagli tecnici](create-a-phone-system-auto-attendant.md?tabs=additional-resources) per la formattazione dei numeri.
 
 > [!NOTE]
 > Se il numero massimo di chiamate è impostato su 0, il messaggio di saluto non verrà riprodotto.
->
-> Quando si reindirizza alla segreteria telefonica condivisa, assicurarsi che **l'opzione Consenti alle persone esterne all'organizzazione di inviare posta elettronica a questo team** sia abilitata per il team o il gruppo nel Centro Amministrazione Microsoft 365.
 
-Dopo aver selezionato le opzioni di timeout delle chiamate, selezionare il pulsante **Avanti** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
+Dopo aver selezionato le opzioni di gestione dell'overflow delle chiamate, seleziona il pulsante **Avanti** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
 # <a name="step-6-call-timeout"></a>[Passaggio 6: Timeout chiamata](#tab/call-timeout)
 
@@ -320,12 +332,11 @@ Dopo aver selezionato le opzioni di timeout delle chiamate, selezionare il pulsa
 
 È ad esempio possibile che il chiamante lasci una segreteria telefonica per gli agenti in coda.
 
+*Nuovo: i controlli per **ignorare** i messaggi di sistema della segreteria telefonica vengono ora esposti durante il routing alla segreteria telefonica condivisa, che si applica anche all'aggiunta di **messaggi di saluto** .*
+
 Per i trasferimenti esterni, vedere [Prerequisiti](./plan-auto-attendant-call-queue.md#prerequisites) e [trasferimenti di numeri di telefono esterni - dettagli tecnici](create-a-phone-system-auto-attendant.md?tabs=additional-resources) per la formattazione dei numeri.
 
-> [!NOTE]
-> Quando si reindirizza alla segreteria telefonica condivisa, assicurarsi che **l'opzione Consenti alle persone esterne all'organizzazione di inviare posta elettronica a questo team** sia abilitata per il team o il gruppo nel Centro Amministrazione Microsoft 365.
-
-Dopo aver selezionato le opzioni di routing delle chiamate dell'agente, seleziona il pulsante **Invia** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
+Dopo aver selezionato le opzioni di gestione dei timeout di chiamata, selezionare il pulsante **Invia** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
 ---
 
@@ -403,12 +414,12 @@ Per gli agenti di chiamata in una coda di chiamata sono supportati i client segu
 
 Se sei un amministratore, puoi usare il seguente strumento di diagnostica per verificare che una coda di chiamata sia in grado di ricevere chiamate:
 
-1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’interfaccia Amministrazione Microsoft 365.
+1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’Admin Centre di Microsoft 365.
 
    > [!div class="nextstepaction"]
    > [Esecuzione dei test: coda di chiamata di Teams](https://aka.ms/TeamsCallQueueDiag)
 
-2. Nel riquadro Esegui diagnostica immettere l'account di risorsa nel campo **Nome utente o Posta elettronica** e quindi selezionare **Esegui test**.
+2. Nel riquadro Di diagnostica Esegui immettere l'account della risorsa nel campo **Nome utente o Email** e quindi selezionare **Esegui test**.
 
 3. I test restituiscono i passaggi successivi migliori per risolvere eventuali configurazioni di tenant, criteri e account delle risorse per verificare che la coda di chiamata sia in grado di ricevere chiamate.
 

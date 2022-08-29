@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams. Usare tali impostazioni dei criteri per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti.
-ms.openlocfilehash: 651d6ec34a86ac7e8468aac8b8a94b8e0c5f18a5
-ms.sourcegitcommit: 3a8bec0445cee5cd776fb1991f093a0ec4351852
-ms.translationtype: HT
+ms.openlocfilehash: 1b5b173253ee457a6d966f9310987168d62a5299
+ms.sourcegitcommit: 0592f9d2696fe8c840a4ed3e7f99e55ca0c9c3e6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2021
-ms.locfileid: "60605242"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67418495"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestione dei criteri riunione in Teams
 
@@ -323,7 +323,7 @@ Per le riunioni che necessitano di un'esperienza video di qualità ottimale, ad 
 
 - [Modalità condivisione schermo](#screen-sharing-mode)
 - [Consenti a un partecipante di fornire o richiedere il controllo](#allow-a-participant-to-give-or-request-control)
-- [Consenti a un partecipante esterno di fornire o richiedere il controllo](#allow-an-external-participant-to-give-or-request-control)
+- [I partecipanti esterni possono concedere o richiedere il controllo](#external-participants-can-give-or-request-control)
 - [Consenti la condivisione di PowerPoint](#allow-powerpoint-sharing)
 - [Consenti la lavagna](#allow-whiteboard)
 - [Consenti note condivise](#allow-shared-notes)
@@ -333,7 +333,7 @@ Per le riunioni che necessitano di un'esperienza video di qualità ottimale, ad 
 > [!NOTE]
 > Questa caratteristica è ancora in fase di sviluppo. La condivisione dello schermo è un criterio per partecipante, tuttavia, può essere interessato dalle impostazioni di condivisione dello schermo dell'organizzatore, come descritto in questa sezione.
 
-Questa impostazione determina se la condivisione del desktop o della finestra è consentita nella riunione dell'utente. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi, guest, B2B e federati, ereditano i criteri dell'organizzatore della riunione.
+Questa impostazione determina se la condivisione del desktop o della finestra è consentita nella riunione dell'utente. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti esterni, ereditano i criteri dell'organizzatore della riunione.
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
@@ -378,22 +378,21 @@ Per usare PowerShell per controllare gli utenti autorizzati a concedere il contr
 > [!NOTE]
 > Per concedere e assumere il controllo del contenuto condiviso durante la condivisione, entrambe le parti devono usare il client desktop di Teams. Il controllo non è supportato se una delle parti esegue Teams in un browser. Ciò è dovuto a una limitazione tecnica che si prevede di risolvere.
 
-### <a name="allow-an-external-participant-to-give-or-request-control"></a>Consenti a un partecipante esterno di fornire o richiedere il controllo
+### <a name="external-participants-can-give-or-request-control"></a>I partecipanti esterni possono concedere o richiedere il controllo
 
 Questo è un criterio per utente. Se un'organizzazione ha impostato questa opzione per un utente, non controlla cosa possono fare i partecipanti esterni, indipendentemente dall'impostazione configurata dall'organizzatore della riunione. Questo parametro controlla se i partecipanti esterni possono ricevere o richiedere il controllo dello schermo del relatore, a seconda delle impostazioni configurate dal relatore nei criteri di riunione dell'organizzazione. I partecipanti esterni nelle riunioni di Teams possono essere classificati come segue:  
 
-- Utente anonimo
-- Utenti guest  
-- Utente B2B
-- Utente federato  
+- Partecipante anonimo
+- Utenti guest
+- Utente di accesso esterno  
 
-La possibilità per gli utenti federati di concedere il controllo a utenti esterni durante la condivisione è controllata dall'impostazione **Consenti a un partecipante esterno di fornire o richiedere il controllo** della loro organizzazione.
+Se gli utenti con accesso esterno possono concedere il controllo ad altri partecipanti esterni mentre la condivisione è controllata dai **partecipanti esterni possono concedere o richiedere** l'impostazione di controllo nella propria organizzazione.
 
 Per usare PowerShell per controllare i partecipanti esterni autorizzati a concedere il controllo o accettare richieste di controllo, usare il cmdlet AllowExternalParticipantGiveRequestControl.
 
 ### <a name="allow-powerpoint-sharing"></a>Consenti la condivisione di PowerPoint
 
-Questo è un criterio per utente. Questa impostazione controlla se l'utente può condividere le presentazioni di PowerPoint in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, guest e federati, ereditano i criteri dell'organizzatore della riunione.
+Questo è un criterio per utente. Questa impostazione controlla se l'utente può condividere le presentazioni di PowerPoint in una riunione. I partecipanti esterni, inclusi gli utenti anonimi, guest e di accesso esterno, ereditano i criteri dell'organizzatore della riunione.
 
 Osserviamo l'esempio seguente.
 
@@ -406,7 +405,7 @@ Amanda non può condividere le presentazioni di PowerPoint nelle riunioni, anche
 
 ### <a name="allow-whiteboard"></a>Consenti la lavagna
 
-Questo è un criterio per utente. Questa impostazione controlla se un utente può condividere la lavagna in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, B2B e federati, ereditano i criteri dell'organizzatore della riunione.
+Questo è un criterio per utente. Questa impostazione controlla se un utente può condividere la lavagna in una riunione. I partecipanti esterni, inclusi gli utenti anonimi, guest e di accesso esterno, ereditano i criteri dell'organizzatore della riunione.
 
 Osserviamo l'esempio seguente.
 
@@ -419,7 +418,7 @@ Amanda non può condividere la lavagna in una riunione, anche se è l'organizzat
 
 ### <a name="allow-shared-notes"></a>Consenti note condivise
 
-Questo è un criterio per utente. Questa impostazione controlla se un utente può creare e condividere note in una riunione. Gli utenti esterni, inclusi gli utenti anonimi, B2B e federati, ereditano i criteri dell'organizzatore della riunione. La scheda **Note riunione** è supportata nelle riunioni con un massimo di 100 partecipanti.
+Questo è un criterio per utente. Questa impostazione controlla se un utente può creare e condividere note in una riunione. I partecipanti esterni, inclusi gli utenti anonimi, guest e di accesso esterno, ereditano i criteri dell'organizzatore della riunione. La scheda **Note riunione** è supportata nelle riunioni con un massimo di 100 partecipanti.
 
 Osserviamo l'esempio seguente.
 
@@ -468,7 +467,7 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
   
 |Valore dell'impostazione  |Comportamento di partecipazione |
 |---------|---------|
-|**Tutti**   |Tutti i partecipanti accedono direttamente alla riunione senza passare dalla sala di attesa. Sono inclusi utenti autenticati, utenti esterni di organizzazioni attendibili (federati), guest e utenti anonimi.     |
+|**Tutti**   |Tutti i partecipanti accedono direttamente alla riunione senza passare dalla sala di attesa. Sono inclusi gli utenti autenticati, gli utenti con accesso esterno, gli utenti guest e gli utenti anonimi.     |
 |**Utenti dell'organizzazione, organizzazioni attendibili e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti di organizzazioni attendibili, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti anonimi attendono nella sala di attesa.   |
 |**Utenti dell’organizzazione e guest**    |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti di organizzazioni attendibili e gli utenti anonimi attendono nella sala di attesa. Questa è l'impostazione predefinita.           |
 |**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi quelli autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa.           |

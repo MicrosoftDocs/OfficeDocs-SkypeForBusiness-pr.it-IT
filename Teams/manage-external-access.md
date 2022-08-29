@@ -21,12 +21,12 @@ description: L'amministratore IT o di Teams può configurare riunioni esterne e 
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 7d45fea1b0b2fdb5d659f0a025b74473050b3616
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
-ms.translationtype: HT
+ms.openlocfilehash: 009d82d65a79bacfc0c5eca785cb595b5aebc793
+ms.sourcegitcommit: 0592f9d2696fe8c840a4ed3e7f99e55ca0c9c3e6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65674228"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67418515"
 ---
 # <a name="manage-external-meetings-and-chat-in-microsoft-teams"></a>Gestire riunioni esterne e chattare in Microsoft Teams
 
@@ -274,6 +274,13 @@ Gli amministratori possono usare il seguente strumento di diagnostica per verifi
 
 3. I test restituiranno i passaggi da attuare per risolvere eventuali configurazioni del tenant o di criteri che impediscono la comunicazione con l'utente federato.
 
+## <a name="user-level-controls"></a>Controlli a livello utente
+
+Quando gli utenti ricevono chat 1:1 da una persona esterna all'organizzazione, gli viene presentata un'esperienza a schermo intero in cui possono scegliere di **visualizzare in anteprima** il messaggio, **accettare** la chat o **bloccare** la persona che invia la chat.
+
+Il blocco delle persone esterne è disponibile in più posizioni all'interno di Teams, incluso il menu altro (**...**) nell'elenco delle chat e il menu altro (**...**) nella scheda persone. Gli utenti possono anche sbloccare le persone esterne tramite il menu altro (**...**) nell'elenco chat, il menu altro (**...**) nella scheda persone o visitando **Impostazioni** > **contatti** >  bloccati **Modifica contatti bloccati**. Il blocco è disponibile prima o dopo l'invio dei messaggi.
+
+Il blocco delle persone esterne impedisce loro di inviare messaggi nelle chat 1:1, aggiungere l'utente alle nuove chat di gruppo e visualizzarne la presenza. Mentre gli inviti alla chat di gruppo sono bloccati, gli utenti bloccati possono essere nelle stesse chat con gli utenti che li hanno bloccati perché la chat è stata avviata prima del blocco o l'invito alla chat di gruppo è stato inviato da un altro membro.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -17,12 +17,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c6ca0590f254a0567eec8946ae3c4323bf541f05
-ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
-ms.translationtype: HT
+ms.openlocfilehash: d7d705d09dc9ded8ee2b831e41ed18921fbb7381
+ms.sourcegitcommit: a4a65283e85d0c393c844dfd335df0d48e0e4105
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67299235"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67314008"
 ---
 # <a name="validation-performed-by-microsoft-for-all-teams-apps"></a>Convalida eseguita da Microsoft per tutte le app di Teams
 
@@ -41,14 +41,14 @@ Eseguiamo più di 400 test case per ogni app prima che venga resa disponibile in
 
 * Assicurarsi che le autorizzazioni graph richieste dall'app siano effettivamente quelle necessarie per la funzionalità dell'app e non le autorizzazioni aggiuntive. Le autorizzazioni graph per le app esistenti vengono controllate regolarmente per assicurarsi che non siano richieste autorizzazioni aggiuntive da un'app.
 * Le applicazioni che richiedono l'accesso degli utenti hanno un'opzione di disconnessione.
-* Tutti gli sviluppatori di app vengono sottoposti a un processo di verifica dettagliato nel Centro per i partner Microsoft. La verifica include la verifica tramite posta elettronica, la verifica aziendale e altro ancora. Per altre informazioni sulla pubblicazione di app, vedi [In che modo gli sviluppatori creano un account del Centro per i partner](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/create-partner-center-dev-account), [Guida per l'invio per gli sviluppatori](/office/dev/store/add-in-submission-guide) e [Modalità di pubblicazione delle app da parte degli sviluppatori](https://aka.ms/PublishToTeamsStore).
+* Gli sviluppatori di tutte le app sono sottoposti a un processo di verifica dettagliato nel Centro per i partner Microsoft. La verifica include la verifica tramite posta elettronica, la verifica aziendale e altro ancora. Per altre informazioni sulla pubblicazione di app, vedi [In che modo gli sviluppatori creano un account del Centro per i partner](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/create-partner-center-dev-account), [Guida per l'invio per gli sviluppatori](/office/dev/store/add-in-submission-guide) e [Modalità di pubblicazione delle app da parte degli sviluppatori](https://aka.ms/PublishToTeamsStore).
 * Solo le app di sviluppatori verificati possono cercare le autorizzazioni Graph dagli utenti finali.
 * Nessuna app può scaricare un file eseguibile.
 * Le app vengono testate per non contenere annunci e promozioni per altre app.
 * Le app vengono testate per funzionare in modo appropriato senza linguaggio offensivo, bot di attacco informatico, posta indesiderata o contenuti di phishing.
 * Tutti i collegamenti in un'app sono funzionali e correlati solo all'offerta dell'app.
 * Testiamo e valutiamo regolarmente tutte le app Teams pubblicate nell'ambito dei controlli di integrità dell'App Store.
-* L'Informativa sulla privacy e le Condizioni per l'utilizzo che coprono le app di Teams sono pubblicate dagli sviluppatori di app.
+* L'informativa sulla privacy e le Condizioni per l'utilizzo che coprono le app di Teams sono fornite dallo sviluppatore delle app.
 * I dettagli di contatto dello sviluppatore di app sono disponibili nell’inserzione dello Store e nelle rispettive [pagine di attestazione dell'autore](/microsoft-365-app-certification/teams/teams-apps).
 
 Inoltre, Microsoft incoraggia gli sviluppatori di app a partecipare al programma di conformità che è un approccio rigoroso a due livelli per garantire la qualità, la sicurezza e la conformità delle app. Teams Store include centinaia di app che vanno oltre il rispetto delle linee guida di convalida già dettagliate e la conformità a questi programmi.

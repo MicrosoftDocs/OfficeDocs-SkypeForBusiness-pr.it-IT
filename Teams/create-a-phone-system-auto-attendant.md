@@ -20,12 +20,12 @@ ms.localizationpriority: medium
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e gestire gli operatori automatici in Microsoft Teams.
-ms.openlocfilehash: e54ffdeac8db21ebcc6cc00f51893769e0d194bb
-ms.sourcegitcommit: a64574da14969a33a77c7d979ffde452b5b3a531
+ms.openlocfilehash: 913ac62ceb251f166852ec8c6d5ba84b7c0777ea
+ms.sourcegitcommit: 850038f2248c1ea412f7b5daca26c0598baffa3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67176100"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67443403"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -46,6 +46,15 @@ Gli operatori automatici possono reindirizzare le chiamate, in base all'input de
 
 > [!NOTE]
 > Quando si reindirizzano le chiamate a una **Persona nell'organizzazione**, tale persona deve essere abilitata per la voce. Per informazioni dettagliate sull'abilitazione della voce, vedere [Assegnare licenze per i componenti aggiuntivi di Teams agli utenti](teams-add-on-licensing/assign-teams-add-on-licenses.md).
+>
+> Durante la definizione di un **operatore** è facoltativo, è consigliabile.  Gli operatori automatici reindirizzano le chiamate all'operatore se il chiamante non effettua una selezione sui menu, seleziona ripetutamente le opzioni non valide o le chiamate per nome o numero ripetutamente non riescono.  Se non è definito un operatore, l'operatore automatico rilascerà la chiamata.
+
+## <a name="whats-new-for-auto-attendants-in-the-past-6-months"></a>Novità per gli operatori automatici degli ultimi 6 mesi
+ 
+ - Agosto - **Riproduci le opzioni del menu** in Flusso delle chiamate, Flusso delle chiamate per fuori orario e Flusso delle chiamate durante le festività ora supportano \* i tasti (asterisco) e \# (cancelletto).
+ - Luglio - Il flusso delle chiamate durante le festività ora supporta le **opzioni del menu Riproduci**.
+ 
+## <a name="steps-to-create-an-auto-attendant"></a>Procedura per creare un operatore automatico
 
 La procedura per aggiungere un operatore automatico è:
 
@@ -99,10 +108,9 @@ Dopo aver impostato le informazioni generali dell'operatore automatico, selezion
 
 #### <a name="play-menu-options"></a>Opzioni del menu Riproduci
 
-Per le opzioni di chiamata, assegnare i tasti da 0 a 9 sulla tastiera del telefono a una delle destinazioni di instradamento delle chiamate. I tasti \* (asterisco) e \# (cancelletto) sono riservati dal sistema e non possono essere riassegnati. Premendo uno di questi tasti verrà ripetuto il menu corrente.
+*I tasti Nuovi - \* (asterisco) e \# (cancelletto) ora possono essere utilizzati nelle opzioni di menu.*
 
-> [!NOTE]
-> Il tasto # esegue solo il backup dell'operatore automatico più recente. Una volta superato il limite di un nuovo operatore automatico, il tasto # non sarà in grado di portarti a quello precedente.
+Per le opzioni di chiamata, assegnare i tasti 0-9, \* (asterisco) e \# (cancelletto) sulla tastiera del telefono a una delle destinazioni di routing delle chiamate. 
 
 I mapping dei tasti non devono necessariamente essere continui. È possibile creare un menu con i tasti 0, 1 e 3 associati a opzioni, mentre il tasto numero 2 non viene usato.
 
@@ -159,6 +167,8 @@ Dopo aver aggiunto il flusso delle chiamate fuori orario, seleziona **Avanti**.
 
 L'operatore automatico può avere un flusso delle chiamate per ogni [festività configurata](set-up-holidays-in-teams.md). È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
 
+*Nuovo : **le opzioni del menu Riproduci** sono ora disponibili nei flussi delle chiamate per le festività.*
+
 1. Nella pagina Impostazioni chiamata festività seleziona **Aggiungi**.
 
 1. Digitare un nome per l'impostazione delle festività.
@@ -167,7 +177,7 @@ L'operatore automatico può avere un flusso delle chiamate per ogni [festività 
 
 1. Scegliere il tipo di messaggio di saluto da usare.
 
-1. Scegliere se **disconnettere** o **reindirizzare** la chiamata.
+1. Scegli se vuoi **disconnettere**, **Reindirizza** o **Riproduci menu opzioni** della chiamata.
 
     1. Se si sceglie di reindirizzare, scegliere la destinazione del routing delle chiamate per la chiamata.
     1. Se scegli di riprodurre le opzioni del menu, configura le **opzioni del menu Riproduci**.

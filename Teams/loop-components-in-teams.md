@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 041a2fbf54eb513c74348adf09df7452dabb4368
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: e468622d4aac30756e54127072045831374c5425
+ms.sourcegitcommit: 0592f9d2696fe8c840a4ed3e7f99e55ca0c9c3e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268121"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67418645"
 ---
 # <a name="overview-of-loop-components-in-teams"></a>Panoramica dei componenti loop in Teams
 
@@ -90,6 +90,6 @@ Se si disabilitano queste esperienze come descritto nella sezione [Gestione dell
 - Con le autorizzazioni predefinite per i file tenant impostate su *Utenti specifici* (solo le persone specificate dall'utente), la creazione di un componente live in Group Chat con più di 20 membri richiederà al mittente di selezionare manualmente le opzioni di autorizzazione per il componente.
 - La ricerca di componenti Loop nella ricerca di Teams restituirà un collegamento al componente in office.com, non al messaggio di chat stesso.
 - I componenti del ciclo sono disabilitati nelle chat federate.
-- I guest B2B non saranno in grado di collaborare su un componente in tempo reale condiviso con loro tramite Company Share Link. Impostare le autorizzazioni su **Persone attualmente presenti in questa chat** per condividere i componenti con i guest B2B.
+- I guest non saranno in grado di collaborare su un componente in tempo reale condiviso con loro tramite il collegamento di condivisione aziendale. Impostare le autorizzazioni per **Persone attualmente in questa chat** per condividere i componenti con i guest.
 - I componenti a ciclo continuo non sono supportati nei canali di Teams.
 - I componenti a ciclo continuo nella chat non verranno caricati solo se il file è stato spostato in un'altra libreria. Se il file viene spostato in un'altra cartella, continuerà a essere caricato in chat.

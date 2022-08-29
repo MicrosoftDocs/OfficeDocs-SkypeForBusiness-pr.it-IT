@@ -17,12 +17,12 @@ description: Informazioni su come usare il report sull'utilizzo dell'app Teams n
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9dadab5ee29a15e939a120cddcd3e889d524d88
-ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
+ms.openlocfilehash: 745761b80bd2507a31cb76cdadc015eac8e9f7fd
+ms.sourcegitcommit: a4a65283e85d0c393c844dfd335df0d48e0e4105
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67156724"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67313928"
 ---
 # <a name="microsoft-teams-app-usage-report"></a>Report utilizzo app Microsoft Teams
 
@@ -46,9 +46,7 @@ Il report Utilizzo app Teams nell'interfaccia di amministrazione di Microsoft Te
 
 Ogni report ha una data in alto a sinistra che indica la data di creazione del report. I report in genere riflettono una latenza di 24 ore rispetto all'apertura di un'app.
 
-L'asse Y del grafico è il numero di utenti che per la data selezionata passando il puntatore del mouse sul grafico sono considerati utenti attivi. Gli utenti che aprono un'app almeno una volta vengono considerati utenti attivi.
-
-L'asse X del grafico corrisponde all'intervallo di date selezionato per il report.
+Amministrazione centro fornisce un grafico degli utenti attivi e delle date. Utenti attivi è il numero di utenti che hanno aperto un'app almeno una volta durante il periodo di tempo selezionato.
 
 Passa il puntatore del mouse sul punto (4) che rappresenta l'utilizzo di un'app in qualsiasi data per visualizzare il numero totale di utenti attivi dell'app in tale data.
 
