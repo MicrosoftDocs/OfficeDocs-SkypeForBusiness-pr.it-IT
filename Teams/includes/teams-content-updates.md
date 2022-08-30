@@ -3,6 +3,36 @@
 
 
 
+## <a name="week-of-august-22-2022"></a>Settimana del 22 agosto 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 8/22/2022 | [Gestire l'app Turni per l'organizzazione](/MicrosoftTeams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams) | Volta |
+| 8/22/2022 | [Gestire i tag in Microsoft Teams](/MicrosoftTeams/manage-tags) | Volta |
+| 8/22/2022 | [Creare account di risorse per sale e dispositivi teams condivisi](/MicrosoftTeams/rooms/with-office-365) | Volta |
+| 8/23/2022 | [Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione](/MicrosoftTeams/communicate-with-users-from-other-organizations) | Volta |
+| 8/23/2022 | [Gestire i criteri delle riunioni per la condivisione del contenuto](/MicrosoftTeams/meeting-policies-content-sharing) | Volta |
+| 8/23/2022 | [Teams: gestire i criteri delle riunioni](/MicrosoftTeams/meeting-policies-in-teams) | Volta |
+| 8/24/2022 | [Guida introduttiva - Configurare Microsoft Teams per l'istruzione](/MicrosoftTeams/teams-quick-start-guide-edu) | Aggiunto |
+| 8/24/2022 | Guida introduttiva - amministratori Microsoft Teams per l'istruzione | Rimosso |
+| 8/24/2022 | [Risolvere i problemi relativi agli scenari con bassa larghezza di banda per Teams](/MicrosoftTeams/edu-remote-low-bandwidth) | Volta |
+| 8/24/2022 | [Teams per l'istruzione](/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page) | Volta |
+| 8/24/2022 | [Domande frequenti su Microsoft Education per amministratori IT](/MicrosoftTeams/plan-teams-governance-edu) | Volta |
+| 8/24/2022 | [Gestire i criteri e i pacchetti di criteri di Microsoft Teams per l'istruzione](/MicrosoftTeams/policy-packages-edu) | Volta |
+| 8/24/2022 | [Introduzione a Microsoft Teams per l'apprendimento a distanza](/MicrosoftTeams/remote-learning-edu) | Volta |
+| 8/24/2022 | [Condividere le risorse per l'adozione di Teams](/MicrosoftTeams/resources-teams-edu) | Volta |
+| 8/24/2022 | [Assegnare licenze di Microsoft Teams per l'istruzione](/MicrosoftTeams/teams-edu-licensing) | Volta |
+| 8/24/2022 | [Gestire l'uso di un numero di telefono](/MicrosoftTeams/manage-the-usage-of-a-phone-number) | Aggiunto |
+| 8/25/2022 | [risorse di formazione Amministrazione - Microsoft Teams](/MicrosoftTeams/itadmin-readiness) | Volta |
+| 8/26/2022 | [Report cronologico della coda di chiamata & operatore automatico](/MicrosoftTeams/aa-cq-cqd-historical-reports) | Volta |
+| 8/26/2022 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant-smb) | Volta |
+| 8/26/2022 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant) | Volta |
+| 8/26/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue-smb) | Volta |
+| 8/26/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
+| 8/26/2022 | [Pianificare gli operatori automatici di Teams e le code di chiamata](/MicrosoftTeams/plan-auto-attendant-call-queue) | Volta |
+
+
 ## <a name="week-of-august-15-2022"></a>Settimana del 15 agosto 2022
 
 
@@ -194,25 +224,3 @@
 | 7/26/2022 | [Gestione clienti multi-tenant per partner](/MicrosoftTeams/rooms/multi-tenant-management-partner) | Volta |
 | 7/26/2022 | [Assegnare licenze per i componenti aggiuntivi di Teams agli utenti](/MicrosoftTeams/teams-add-on-licensing/assign-teams-add-on-licenses) | Volta |
 | 7/29/2022 | [Gestire i numeri di telefono per la propria organizzazione](/MicrosoftTeams/manage-phone-numbers-landing-page) | Volta |
-
-
-## <a name="week-of-july-18-2022"></a>Settimana del 18 luglio 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 7/18/2022 | [Informazioni sulle app in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | Volta |
-| 7/18/2022 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | Volta |
-| 7/18/2022 | Provisioning di Microsoft Teams su vasta scala per gli operatori sul campo | Rimosso |
-| 7/19/2022 | [Gestire Microsoft 365 e i connettori personalizzati](/MicrosoftTeams/office-365-custom-connectors) | Volta |
-| 7/19/2022 | [Informazioni sulle app in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | Volta |
-| 7/19/2022 | [Gestire le app di Microsoft Power Platform nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-power-platform-apps) | Volta |
-| 7/19/2022 | [Gestire domande&A nelle riunioni di Teams](/MicrosoftTeams/manage-qna-for-teams) | Volta |
-| 7/19/2022 | [Panoramica della certificazione delle app da parte di Microsoft](/MicrosoftTeams/overview-of-app-certification) | Volta |
-| 7/19/2022 | [Acquistare app di terza parte per Teams](/MicrosoftTeams/purchase-third-party-apps) | Volta |
-| 7/20/2022 | [Configurare Operator Connect](/MicrosoftTeams/operator-connect-configure) | Volta |
-| 7/21/2022 | [Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams](/MicrosoftTeams/class-insights) | Volta |
-| 7/21/2022 | [Esperienza di aggiornamento delle app in Microsoft Teams](/MicrosoftTeams/apps-update-experience) | Volta |
-| 7/21/2022 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | Volta |
-| 7/21/2022 | [Usare l'API di presentazione delle app di Teams per inviare e approvare le app personalizzate.](/MicrosoftTeams/submit-approve-custom-apps) | Volta |
-| 7/21/2022 | [Caricare le app personalizzate nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/upload-custom-apps) | Volta |
