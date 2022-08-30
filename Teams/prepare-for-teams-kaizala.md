@@ -1,5 +1,5 @@
 ---
-title: Creare grafici del percorso da Kaizala a Teams
+title: Prepararsi per lo spostamento da Kaizala a Teams
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -14,17 +14,17 @@ search.appverid: ''
 ms.collection:
 - M365-collaboration
 ms.custom: ''
-ms.openlocfilehash: 73376cbc26708cc5ec810e13b710e057ba603a44
-ms.sourcegitcommit: 850038f2248c1ea412f7b5daca26c0598baffa3c
+ms.openlocfilehash: cecde847cb6d72f63dd51915084ba3c7c7349524
+ms.sourcegitcommit: d7a86b3a72005764c18acb60eedf5163523ffae3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67443473"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "67457266"
 ---
-# <a name="charting-your-kaizala-to-teams-journey"></a>Creare grafici del percorso da Kaizala a Teams
+# <a name="prepare-for-your-kaizala-to-teams-move"></a>Prepararsi per lo spostamento da Kaizala a Teams
 
 > [!Important]
-> Microsoft Kaizala verrà ritirato il 31 agosto 2023. È consigliabile eseguire l'aggiornamento a Microsoft Teams per continuare a usare le funzionalità di connessione, condivisione e collaborazione. Dopo la data di ritiro, l'accesso e il supporto per Kaizala verranno sospesi.
+> Microsoft Kaizala verrà ritirato il 31 agosto 2023. È consigliabile passare a Microsoft Teams per continuare a usare la connessione, la condivisione e la collaborazione. Dopo la data di ritiro, l'accesso e il supporto per Kaizala verranno sospesi.
 
 Si è deciso di passare da Kaizala a Microsoft Teams.
 

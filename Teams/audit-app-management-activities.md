@@ -14,12 +14,12 @@ description: Informazioni su come controllare le attività dell'app Teams di ute
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 5eb1ffe4a637c61efc8e64e970f25474933914a7
-ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
-ms.translationtype: HT
+ms.openlocfilehash: 33e308dec79163b2b3ccbc82870352555d0aa80f
+ms.sourcegitcommit: d7a86b3a72005764c18acb60eedf5163523ffae3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67299255"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "67457276"
 ---
 # <a name="audit-for-app-management-activities-and-events"></a>Audit per le attività e gli eventi di gestione delle app
 
@@ -68,6 +68,9 @@ Dopo aver cercato il segno di controllo nel portale di conformità, è possibile
 
 > [!NOTE]
 > Quando una delle attività precedenti viene eseguita da un utente o un amministratore, Teams genera e archivia un record di controllo. In Audit (Standard), i record vengono conservati per 90 giorni, quindi è possibile cercare le attività che si sono verificate negli ultimi tre mesi.
+
+> [!TIP]
+> Se l'amministratore vuole creare un report per utente per sapere se un utente ha bloccato o disattivato un bot, vedere [Capire chi ha bloccato, disattivato o disinstallato un bot](/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages?#understand-who-blocked-muted-or-uninstalled-a-bot).
 
 ## <a name="related-articles"></a>Articoli correlati
 

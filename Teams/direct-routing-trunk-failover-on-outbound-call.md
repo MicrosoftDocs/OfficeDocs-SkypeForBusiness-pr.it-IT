@@ -15,44 +15,45 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Leggere questo argomento per informazioni su come gestire i failover trunk sulle chiamate in uscita Teams al session border controller (SBC).
-ms.openlocfilehash: 83320e93df7cbf476d71b3b9165d50ca387292b9
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: Leggere questo argomento per informazioni su come gestire i failover del trunk per le chiamate in uscita da Teams al session border controller (SBC).
+ms.openlocfilehash: 0fa0d452a2611874be570f4e80a746bb07da0163
+ms.sourcegitcommit: d7a86b3a72005764c18acb60eedf5163523ffae3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58727865"
+ms.lasthandoff: 08/29/2022
+ms.locfileid: "67457136"
 ---
 # <a name="trunk-failover-on-outbound-calls"></a>Failover trunk sulle chiamate in uscita
 
-Questo argomento descrive come evitare il failover trunk sulle chiamate in uscita, dal Teams al Session Border Controller (SBC).
+Questo argomento descrive come evitare failover del trunk nelle chiamate in uscita, da Teams a SBC (Session Border Controller).
 
-## <a name="failover-on-network-errors"></a>Errori di failover in rete
+## <a name="failover-on-network-errors"></a>Errori di failover sulla rete
 
-Se non è possibile connettersi a un trunk per qualsiasi motivo, la connessione allo stesso trunk verrà provata da un altro data center Microsoft. Un trunk potrebbe non essere connesso, ad esempio se una connessione viene rifiutata, se c'è un timeout TLS o se ci sono altri problemi a livello di rete.
-Ad esempio, una connessione potrebbe non riuscire se un amministratore limita l'accesso a SBC solo da indirizzi IP noti, ma dimentica di inserire gli indirizzi IP di tutti i data center di Routing diretto Microsoft nell'elenco di controllo di accesso (ACL) del controller di dominio di accesso. 
+Se non è possibile connettere un trunk per qualsiasi motivo, la connessione allo stesso trunk verrà provata da un altro data center Microsoft. Il data center potrebbe trovarsi in un'area geografica diversa, al di fuori di quella corrente. Un trunk potrebbe non essere connesso se una connessione viene rifiutata, se c'è un timeout TLS o se ci sono altri problemi a livello di rete.
 
-## <a name="failover-of-specific-sip-codes-received-from-the-session-border-controller-sbc"></a>Failover di codici SIP specifici ricevuti da Session Border Controller (SBC)
+Ad esempio, una connessione potrebbe non riuscire se un amministratore limita l'accesso a SBC solo da indirizzi IP noti, ma dimentica di inserire gli indirizzi IP di tutti i data center di Microsoft Direct Routing nell'elenco Controllo di accesso (ACL) di SBC.For example, a connection might fail if an administrator limits access to the SBC only from well-known IP addresses, but forgets to put the IP addresses of all Microsoft Direct Routing datacenters on the Controllo di accesso List (ACL) of the SBC. 
 
-Se Routing diretto riceve codici di errore SIP 4xx o 6xx in risposta a un invito in uscita, la chiamata viene considerata completata per impostazione predefinita. In uscita si intende una chiamata da un client Teams alla rete PSTN (Public Switched Telephone Network) con il flusso di traffico seguente: Teams Client -> Direct Routing -> SBC -> Telephony network.
+## <a name="failover-of-specific-sip-codes-received-from-the-session-border-controller-sbc"></a>Failover di specifici codici SIP ricevuti dal session border controller (SBC)
 
-L'elenco dei codici SIP è disponibile in [SESSION Initiation Protocol (SIP) RFC](https://tools.ietf.org/html/rfc3261).
+Se il routing diretto riceve codici di errore SIP 4xx o 6xx in risposta a un invito in uscita, la chiamata viene considerata completata per impostazione predefinita. In uscita indica una chiamata da un client di Teams alla rete PSTN (Public Switched Telephone Network) con il flusso di traffico seguente: Client di Teams -> Direct Routing -> SBC -> Rete di telefonia.
 
-Si supponga una situazione in cui un SBC ha risposto a un invito in arrivo con il codice "Timeout richiesta 408: il server non è stato in grado di produrre una risposta entro un periodo di tempo adeguato, ad esempio se non è stato in grado di determinare la posizione dell'utente in tempo. Il client può ripetere la richiesta senza modifiche in un secondo momento".
+L'elenco dei codici SIP è disponibile in [Session Initiation Protocol (SIP) RFC](https://tools.ietf.org/html/rfc3261).
 
-Questo particolare SBC potrebbe avere difficoltà a connettersi al chiamato, ad esempio a causa di una configurazione errata della rete o di un altro errore. Tuttavia, c'è un altro SBC nel percorso che potrebbe essere in grado di raggiungere il chiamato.
+Si supponga che una SBC abbia risposto a un invito in arrivo con il codice "Timeout richiesta 408: il server non ha potuto produrre una risposta entro un periodo di tempo appropriato, ad esempio, se non è stato possibile determinare la posizione dell'utente nel tempo. Il cliente PUÒ ripetere la richiesta senza modifiche in qualsiasi momento".
 
-Nel diagramma seguente, quando un utente effettua una chiamata a un numero di telefono, nel percorso sono presenti due SBC che possono potenzialmente recapitare la chiamata. Inizialmente, SBC1.contoso.com per la chiamata, ma SBC1.contoso.com non è in grado di raggiungere una rete PTSN a causa di un problema di rete.
+Questo SBC particolare potrebbe avere difficoltà a connettersi al chiamante, ad esempio a causa di una configurazione errata della rete o di altri errori. Tuttavia, c'è un altro SBC nel percorso che potrebbe essere in grado di raggiungere il destinatario della chiamata.
+
+Nel diagramma seguente, quando un utente effettua una chiamata a un numero di telefono, ci sono due SBC nel percorso che possono potenzialmente recapitare la chiamata. Inizialmente, viene selezionato SBC1.contoso.com per la chiamata, ma SBC1.contoso.com non riesce a raggiungere una rete PTSN a causa di un problema di rete.
 Per impostazione predefinita, la chiamata verrà completata in questo momento. 
  
 ![Diagramma che mostra che SBC non riesce a raggiungere PSTN a causa di un problema di rete.](media/direct-routing-failover-response-codes1.png)
 
-Ma c'è un altro SBC nel percorso che potenzialmente può recapitare la chiamata.
-Se si configura il parametro , verrà provato il secondo `Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com -FailoverResponseCodes "408"` SBC, SBC2.contoso.com nel diagramma seguente:
+C'è un altro SBC nel percorso che può potenzialmente recapitare la chiamata.
+Se si configura il parametro `Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com -FailoverResponseCodes "408"`, verrà tentato il secondo SBC (SBC2.contoso.com nel diagramma seguente):
 
 ![Diagramma che mostra il routing al secondo SBC.](media/direct-routing-failover-response-codes2.png)
 
-L'impostazione del parametro -FailoverResponseCodes e la specifica dei codici consentono di ottimizzare il routing ed evitare potenziali problemi quando un SBC non può effettuare una chiamata a causa di problemi di rete o di altro tipo.
+L'impostazione del parametro -FailoverResponseCodes e l'impostazione dei codici consentono di ottimizzare il routing ed evitare potenziali problemi quando un'SBC non riesce a effettuare una chiamata a causa di problemi di rete o di altro livello.
 
 Valori predefiniti: 408, 503, 504
 
