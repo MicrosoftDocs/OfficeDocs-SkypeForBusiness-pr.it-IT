@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7a1f8aa97f43e70e2ec17e64cfa2a618b7a61af7
-ms.sourcegitcommit: a64574da14969a33a77c7d979ffde452b5b3a531
-ms.translationtype: HT
+ms.openlocfilehash: f1ec379a7f8d30738fc71b66d840752137ce72bf
+ms.sourcegitcommit: 7a1fb6e15c21368afa34cd212865437781f721e2
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175710"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67466014"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -39,7 +39,7 @@ Dopo la registrazione, una riunione viene automaticamente:
 - Aggiunta a vari elenchi di file in Microsoft 365: Condivisi con l'utente corrente, office.com, Consigliati, Recenti e così via.
 - Indicizzata per la ricerca di Microsoft 365
 
-Argomenti correlati: [documentazione per gli utenti finali sulla registrazione delle riunioni di Teams](https://support.microsoft.com/en-us/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24)
+Argomenti correlati: [documentazione per gli utenti finali sulla registrazione delle riunioni di Teams](https://support.microsoft.com/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24)
 
 >[!Note]
 > Il passaggio dall’uso di Microsoft Stream (classico) all’uso di OneDrive e SharePoint per le registrazioni delle riunioni avverrà automaticamente nel mese di agosto 2021. Per informazioni dettagliate, vedere [Usare OneDrive e SharePoint o Stream per registrare le riunioni](tmr-meeting-recording-change.md).
@@ -79,7 +79,7 @@ In questa sezione viene descritto come configurare e pianificare la registrazion
 
 È possibile usare l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare un criterio per le riunioni di Teams con cui controllare se le riunioni degli utenti possono essere registrate.
 
-Nell'interfaccia di amministrazione di Microsoft Teams, attivare o disattivare l'impostazione **Registrazione cloud** nei criteri della riunione. Per altre informazioni, vedere [Impostazioni dei criteri di riunioni per audio e video](meetings-policies-recording-and-transcription.md#allow-cloud-recording).
+Nell'interfaccia di amministrazione di Microsoft Teams, attivare o disattivare l'impostazione **Registrazione cloud** nei criteri della riunione. Per altre informazioni, vedere [Impostazioni dei criteri di riunioni per audio e video](meetings-policies-recording-and-transcription.md#cloud-recording).
 
 Con PowerShell, configurare l'opzione AllowCloudRecording in TeamsMeetingPolicy. Per altre informazioni, vedere [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) and [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy).
 
@@ -107,8 +107,8 @@ Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $true
 | Voglio che la registrazione sia completamente disabilitata. | <ol><li>Verificare che il criterio CsTeamsMeetingPolicy globale abbia AllowCloudRecording = False.<li>A tutti gli utenti è stato assegnato il criterio CsTeamsMeetingPolicy globale OPPURE uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = False. |
 | Voglio disattivare la registrazione per la maggior parte degli utenti, ma abilitare in modo selettivo la registrazione per utenti specifici. | <ol><li>Verificare che il criterio CsTeamsMeetingPolicy globale abbia AllowCloudRecording = False.<li>Alla maggior parte degli utenti è stato assegnato il criterio CsTeamsMeetingPolicy globale OPPURE uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = False.<li>A tutti gli altri utenti è stato assegnato uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = True. <ol> |
 
-
 <a name="bd-channel"></a>
+
 ### <a name="block-or-allow-download-of-channel-meeting-recordings"></a>Bloccare o consentire il download delle registrazioni delle riunioni del canale
 
 Questa impostazione controlla se le riunioni del canale vengono salvate in una cartella "Registrazioni" o in una cartella "Registrazioni\Solo visualizzazione" nel canale. L'impostazione si applica ai criteri dell'utente che seleziona la registrazione per la riunione del canale.
@@ -143,17 +143,17 @@ Set-CsTeamsMeetingPolicy -Identity Global -ChannelRecordingDownload Block
 >```
 
 ### <a name="turn-on-or-turn-off-recording-transcription"></a>Attivare o disattivare la trascrizione delle registrazioni
+
 Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. La persona che ha avviato la registrazione deve attivare questa impostazione per permettere alle funzionalità di operare in fase di registrazione.
   
 Con l’attivazione di questa impostazione, viene creata una copia della trascrizione archiviata con la registrazione della riunione, che permette di eseguire **ricerche**, **CC** e **trascrizioni** nella registrazione della riunione.
-
 
 > [!NOTE]
 > Tale trascrizione per le riunioni registrate è attualmente supportata solo per: inglese (Stati Uniti), inglese (Canada), inglese (India), inglese (Regno Unito), inglese (Australia), inglese (Nuova Zelanda), arabo (Emirati Arabi Uniti), arabo (Arabia Saudita), cinese (semplificato, Cina), cinese (tradizionale, Ras di Hong Kong), cinese (tradizionale, Taiwan), ceco (Repubblica Ceca), danese (Danimarca), olandese (Belgio), olandese (Paesi Bassi), francese (Canada), francese (Francia), finlandese (Finlandia), tedesco (Germania), greco (Grecia), ebraico (Israele), hindi (India), ungherese (Ungheria), italiano (Italia), giapponese (Giappone), coreano (Corea), norvegese (Norvegia), polacco (Polonia), portoghese (Brasile), portoghese (Portogallo), romeno (Romania), russo (Russia), slovacco (Slovacchia), spagnolo (Messico), spagnolo (Spagna), svedese (Svezia), thai (Thailandia), turco (Turchia), ucraino (Ucraina), vietnamita (Vietnam). Vengono archiviati insieme alle registrazioni delle riunioni nello spazio di archiviazione nel cloud di OneDrive e SharePoint.
 
 È possibile usare l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare un criterio per le riunioni di Teams con cui controllare se chi avvia la registrazione riceve l'opzione per trascriverne la registrazione.
 
-Nell'interfaccia di amministrazione di Microsoft Teams attivare o disattivare l'impostazione **Consenti la trascrizione** nel criterio di riunione. Per altre informazioni, vedere [Impostazioni dei criteri di riunioni per audio e video](meetings-policies-recording-and-transcription.md#allow-transcription).
+Nell'interfaccia di amministrazione di Microsoft Teams attivare o disattivare l'impostazione **Consenti la trascrizione** nel criterio di riunione. Per altre informazioni, vedere [Impostazioni dei criteri di riunioni per audio e video](meetings-policies-recording-and-transcription.md#transcription).
 
 Con PowerShell, configurare l'opzione AllowTranscription in TeamsMeetingPolicy. Per altre informazioni, vedere [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) and [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy).
 
@@ -171,9 +171,6 @@ Per modificare il valore di AllowCloudRecording nel criterio globale, usare il c
 Set-CsTeamsMeetingPolicy -Identity Global -AllowTranscription $false
 ```
 
-</br>
-</br>
-
 |Scenario|Passaggi |
 |---|---|
 |Voglio che tutti gli utenti dell'azienda possano generare la trascrizione quando avviano la registrazione di una riunione. |<ol><li>Verificare che il criterio CsTeamsMeetingPolicy globale abbia AllowTranscription = True. <li>Tutti gli utenti hanno il criterio csTeamsMeetingPolicy globale OPPURE uno dei criteri CsTeamsMeetingPolicy con AllowTranscription = True. </ol>|
@@ -182,6 +179,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -AllowTranscription $false
 |Voglio disabilitare la trascrizione per la maggior parte degli utenti, ma abilitare in modo selettivo la trascrizione per utenti specifici. |<ol><li>Verificare che il criterio CsTeamsMeetingPolicy globale abbia AllowCloudRecording = False. <li>Alla maggior parte degli utenti è stato assegnato il criterio CsTeamsMeetingPolicy globale OPPURE uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = False. <li>A tutti gli altri utenti è stato assegnato uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = True. </ol>|
 
 ### <a name="terms-of-use-acceptance"></a>Accettazione delle condizioni per l'utilizzo
+
 Se l'organizzazione dispone di un criterio di registrazione delle riunioni che si desidera che gli utenti accettino prima di registrare una riunione, utilizzare la funzionalità [Condizioni per l'utilizzo di Azure Active Directory](/azure/active-directory/conditional-access/terms-of-use). Questa funzionalità consente agli utenti di accettare i termini dei criteri utente dell'organizzazione prima di accedere a Microsoft Teams. Questa funzionalità non è specifica per fare clic sul pulsante di registrazione, ma è correlata all'uso di Teams o di altre app Microsoft 365 in generale. Si consiglia di aggiungere le informazioni sulla registrazione della riunione alle condizioni per l'utilizzo generali per l'uso di Teams o Microsoft 365.
 
 ### <a name="set-a-custom-privacy-policy-url"></a>Impostare un URL dell'informativa sulla privacy personalizzato
@@ -208,7 +206,7 @@ Le registrazioni delle riunioni vengono archiviate in OneDrive e SharePoint. La 
 
 - La registrazione viene archiviata in una cartella denominata **Registrazioni** in OneDrive dell'utente che ha fatto clic su Registra. 
 
-  Esempio: <i>Registrazioni di OneDrive</i>/**del registratore**
+  Esempio: *Registrazioni di OneDrive*/ del registratore
 
 - Alle persone invitate alla riunione, ad eccezione dei partecipanti esterni, verrà automaticamente concessa l'autorizzazione per il file di registrazione con accesso in visualizzazione senza possibilità di download.
 
@@ -220,7 +218,7 @@ Se `Set-CsTeamsMeetingPolicy -ChannelRecordingDownload` è impostato su Consenti
 
 - La registrazione viene archiviata nella raccolta della documentazione del sito di Teams in una cartella denominata **Registrazioni**.
 
-  Esempio: <i>Nome di Teams - Nome canale</i>/**Documenti**/**Registrazioni**
+  Esempio: *Nome team - Nome*/ canale **Documenti**/**Registrazioni**
 
 - Il membro che ha fatto clic su Registra ha i diritti di modifica per la registrazione.
 
@@ -230,7 +228,7 @@ Se `Set-CsTeamsMeetingPolicy -ChannelRecordingDownload` è impostato su Blocca:
 
 - La registrazione viene archiviata nella raccolta della documentazione del sito di Teams in una cartella denominata **Registrazioni/Solo visualizzazione**. 
 
-  Esempio: <i>Nome di Teams - Nome canale</i>/**Documenti/Registrazioni/Solo visualizzazione**
+  Esempio: *Nome team - Nome*/ canale **Documenti/Registrazioni/Solo visualizzazione**
 
 - I proprietari dei canali avranno diritti completi di modifica e download per le registrazioni in questa cartella.
 
@@ -252,6 +250,7 @@ Per altre informazioni su tipi di riunione specifici, vedere la tabella seguente
 |Riunione di canale                            |Membro del canale         |Posizione in SharePoint di Teams per quel canale                   |Se Set-CsTeamsMeetingPolicy -ChannelRecordingDownload è impostato su Consenti (impostazione predefinita), il membro che ha fatto clic su Registra ha i diritti di modifica per la registrazione. Le autorizzazioni di ogni altro membro sono basate sulle autorizzazioni di SharePoint nel canale.<Br><Br>Se Set-CsTeamsMeetingPolicy -ChannelRecordingDownload è impostato su Blocca, i proprietari dei canali avranno diritti completi sulla registrazione, ma i membri del canale avranno accesso in lettura senza possibilità di download.|
 
 <a name="temp-storage"></a>
+
 ### <a name="temporary-storage-when-unable-to-upload-to-onedrive-and-sharepoint"></a>Archiviazione temporanea quando non è possibile caricare in OneDrive e SharePoint
 
 Se non è possibile caricare una registrazione della riunione in OneDrive e SharePoint, sarà temporaneamente disponibile per il download da Teams per 21 giorni prima che venga eliminata. Al momento, l'amministratore non può controllare o gestire questo aspetto, inclusa la capacità di eliminazione.
@@ -271,21 +270,14 @@ La conservazione della registrazione per questa archiviazione temporanea è inte
 ### <a name="planning-for-storage"></a>Pianificazione dell'archiviazione
 
 Le dimensioni di una registrazione di 1 ora sono pari a 400 MB. Assicurarsi di aver compreso la capacità necessaria per i file registrati e di avere spazio di archiviazione sufficiente in OneDrive e SharePoint.  Leggere [Impostare lo spazio di archiviazione predefinito per OneDrive](/onedrive/set-default-storage-space) e [Gestire i limiti di archiviazione dei siti di SharePoint](/sharepoint/manage-site-collection-storage-limits) per comprendere lo spazio di archiviazione di base incluso nella sottoscrizione e come acquistare spazio di archiviazione aggiuntivo.
-
- <a name="auto-expiration"></a>
-### <a name="auto-expiration-of-teams-meeting-recordings"></a>Scadenza automatica delle registrazioni delle riunioni di Teams
-
-Vedere le domande frequenti per gli amministratori e gli utenti finali per raccogliere informazioni su come funzionerà la scadenza automatica delle registrazioni delle riunioni di Teams, quali azioni è possibile intraprendere ora e quali azioni sarà possibile eseguire dopo il lancio della funzionalità.
-  
-Altre informazioni sulle modifiche specifiche dell'amministratore sono disponibili [qui](meeting-expiration.md#changes-to-meeting-expiration).
-
-Altre informazioni su come gli utenti finali possono gestire la scadenza delle riunioni sono disponibili [qui](https://support.microsoft.com/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24#bkmk_view_change_expiration_date).
   
 ## <a name="manage-meeting-recordings"></a>Gestire le registrazioni delle riunioni
 
 Le registrazioni delle riunioni vengono archiviate come file video in OneDrive e SharePoint e seguono le opzioni di gestione e governance disponibili in tali piattaforme. Per altre informazioni, vedere [Panoramica della governance di SharePoint](/sharepoint/governance-overview).
 
 Per le riunioni non di canale, le registrazioni vengono archiviate nello spazio di OneDrive del registratore, in modo che la gestione della proprietà e della conservazione dopo che un dipendente lascia l'organizzazione segua il normale [processo di OneDrive e SharePoint](/onedrive/retention-and-deletion#the-onedrive-deletion-process).
+
+Le registrazioni delle riunioni hanno una scadenza predefinita di 120 giorni. È possibile disattivare l'impostazione Relativa alla scadenza automatica delle riunioni o modificare l'ora di scadenza predefinita. Altre informazioni sulle [registrazioni delle riunioni in scadenza automatica](meetings-policies-recording-and-transcription.md#meetings-automatically-expire).
 
 ## <a name="closed-captions-for-recordings"></a>Sottotitoli codificati per le registrazioni
 
@@ -324,11 +316,12 @@ Per altre informazioni su eDiscovery, vedere l'articolo [Soluzioni di eDiscovery
 Per altre informazioni sulla prevenzione della perdita dei dati, vedere l’articolo [Informazioni sulla prevenzione della perdita di dati](/microsoft-365/compliance/dlp-learn-about-dlp)
 
 ## <a name="meeting-recording-diagnostic-tools"></a>Strumenti di diagnostica per la registrazione delle riunioni
-  ### <a name="user-cannot-record-meetings"></a>L'utente non può registrare le riunioni
+
+### <a name="user-cannot-record-meetings"></a>L'utente non può registrare le riunioni
 
 Gli amministratori possono usare lo strumento di diagnostica seguente per verificare che l'utente sia configurato correttamente per registrare una riunione in Teams:
 
-1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’Admin Centre di Microsoft 365. 
+1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’Admin Centre di Microsoft 365.
 
    > [!div class="nextstepaction"]
    > [Eseguire test: Registrazione riunione](https://aka.ms/MeetingRecordingDiag)
@@ -337,16 +330,16 @@ Gli amministratori possono usare lo strumento di diagnostica seguente per verifi
 
 3. I test restituiranno i passaggi successivi migliori per risolvere eventuali configurazioni degli utenti o di criteri per verificare che l'utente sia configurato correttamente per registrare una riunione in Teams.
   
-  ### <a name="meeting-record-is-missing"></a>Registrazione riunione mancante
+### <a name="meeting-record-is-missing"></a>Registrazione riunione mancante
 
 Gli amministratori possono usare lo strumento di diagnostica seguente per verificare che la registrazione della riunione sia stata completata correttamente e che sia stata caricata in Stream o OneDrive, in base all'ID riunione e all'ora di inizio della registrazione:
 
-1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’Admin Centre di Microsoft 365. 
+1. Selezionare **Esegui test** di seguito, per popolare la diagnostica nell’Admin Centre di Microsoft 365.
 
    > [!div class="nextstepaction"]
    > [Esegui test: Registrazione riunione mancante](https://aka.ms/MissingRecordingDiag)
 
-2. Nel riquadro Esegui diagnostica, immettere l'URL della riunione nel campo **URL della riunione registrata** (in genere presente nell'invito alla riunione) e la data della riunione nel campo **Quando è stata registrata la riunione? **, quindi selezionare **Esegui il test**.
+2. Nel riquadro di diagnostica Esegui immettere l'URL della riunione **nell'URL della riunione registrata** (in genere presente nell'invito alla riunione) e nella data della riunione nel campo **Quando è stata registrata la riunione?** e quindi selezionare **Esegui test**.
 
 3. I test verificano che la registrazione della riunione sia stata completata correttamente e che sia stata caricata in Stream o OneDrive.
 

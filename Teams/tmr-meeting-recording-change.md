@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bc315353e1ece0b4d455937c1677e35e3c18d152
-ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
+ms.openlocfilehash: e78cbb4740b5839af7c6c2d09450220a080d036f
+ms.sourcegitcommit: 7a1fb6e15c21368afa34cd212865437781f721e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66794154"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67466115"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -49,7 +49,7 @@ I vantaggi dell'uso di OneDrive for Business e SharePoint per l'archiviazione de
 - Criteri di conservazione per la registrazione delle riunioni di Teams (TMR) (etichette di autoretenzione S+C E5)
 - Trarre vantaggio dalla governance delle informazioni di OneDrive for Business e SharePoint
 - Autorizzazioni e condivisioni facili da impostare
-- Condividere registrazioni con gli utenti guest (utenti esterni) solo con condivisione esplicita
+- Condividere le registrazioni con utenti guest solo con condivisione esplicita
 - Richiedere flusso di accesso
 - Fornire collegamenti condivisi OneDrive for Business e SharePoint
 - Le registrazioni delle riunioni sono disponibili più velocemente
@@ -67,7 +67,7 @@ Per altre informazioni, guardare il video "What's New for Microsoft Teams Meetin
 
 L'opzione di registrazione della riunione è un'impostazione a livello di criteri di Teams. Nell'esempio seguente viene illustrato come impostare il criterio globale. Assicurarsi di impostare l'opzione di registrazione delle riunioni per il criterio o i criteri assegnati agli utenti.
 
-> [!Note]
+> [!NOTE]
 > La propagazione delle modifiche ai criteri delle riunioni di Teams richiede qualche tempo. È necessario ricontrollare dopo alcune ore dall'impostazione, quindi disconnettersi e accedere di nuovo all'applicazione desktop di Teams o riavviare semplicemente il computer.
 
 1. Installa Teams PowerShell.
@@ -95,14 +95,13 @@ L'opzione di registrazione della riunione è un'impostazione a livello di criter
    Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "OneDriveForBusiness"
    ```
 
-> [!Note]
+> [!NOTE]
 > Se ad alcuni utenti è stato assegnato un criterio per organizzatore o per utente, è necessario impostare questa impostazione per questo criterio se si vuole che le registrazioni delle riunioni vengano archiviate anche in OneDrive for Business e SharePoint. Per altre informazioni, vedere [Gestire i criteri di riunione in Teams](meeting-policies-overview.md).
-
 
 ## <a name="permissions-or-role-based-access"></a>Autorizzazioni o accesso basato sui ruoli
 
-> [!Note]
-> È consigliabile che il destinatario sia un utente connesso quando condivide le registrazioni delle riunioni di Teams. Selezionare l'opzione **Persone in (L'organizzazione)** quando si condivide il file come documentato in [SharePoint file o cartelle](https://support.microsoft.com/office/share-sharepoint-files-or-folders-1fe37332-0f9a-4719-970e-d2578da4941c?redirectSourcePath=%25252fen-US%25252farticle%25252fShare-sites-or-documents-with-people-outside-your-organization-80E49744-E30F-44DB-8D51-16661B1D4232&ui=en-US&rs=en-US&ad=US). La condivisione esterna non è progettata per la distribuzione di file di grandi dimensioni o di un numero elevato di file. Per evitare scenari di frode e abuso, potrebbero verificarsi problemi durante la condivisione di una grande quantità di dati con utenti esterni.
+> [!NOTE]
+> È consigliabile che il destinatario sia un utente connesso quando condivide le registrazioni delle riunioni di Teams. Selezionare l'opzione **Persone in (Organizzazione)** quando si condivide il file come documentato in [file o cartelle di SharePoint](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c). La condivisione esterna non è progettata per la distribuzione di file di grandi dimensioni o di un numero elevato di file.
 
 |Tipo di riunione                               | Chi ha fatto clic su Registra?| Dove viene salvata la registrazione?                               |Chi può accedere? R/W, R o condivisione                                                                                                                                                                                                                                                     |
 |-------------------------------------------|-----------------------|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -113,9 +112,9 @@ L'opzione di registrazione della riunione è un'impostazione a livello di criter
 |Chiamata di gruppo                                 |Qualsiasi membro della chiamata |Account di OneDrive for Business del membro del gruppo che ha fatto clic su Registra  |Il membro che ha fatto clic su Registra ha diritti completi. <br /><br /> Gli altri membri del gruppo dallo stesso tenant hanno diritti di lettura. <br /><br /> Gli altri membri del gruppo di un tenant diverso non hanno alcun diritto.|
 |Riunione ad hoc/pianificata                    |Organizzatore              |Account di OneDrive for Business dell’organizzatore                     |L'organizzatore ha i diritti completi per la registrazione. <br /><br /> Tutti gli altri membri della riunione hanno accesso in lettura.|
 |Riunione ad hoc/pianificata                    |Altro membro della riunione   |Membro della riunione che ha fatto clic su Registra                                  |Il membro che ha fatto clic su Registra ha diritti completi sulla registrazione. <br /><br />L'organizzatore ha diritti di modifica e può condividere.<br /><br /> Tutti gli altri membri della riunione hanno accesso in lettura.|
-|Riunione ad hoc/pianificata con utenti esterni|Organizzatore              |Account di OneDrive for Business dell’organizzatore                     |L'organizzatore ha i diritti completi per la registrazione.<br /> <br /> Tutti gli altri membri della riunione dallo stesso tenant dell'organizzatore hanno accesso in lettura. <br /><br /> Tutti gli altri membri esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
-|Riunione ad hoc/pianificata con utenti esterni|Altro membro della riunione   |Membro che ha fatto clic su Registra                                  |Il membro che ha fatto clic su Registra ha diritti completi sulla registrazione. L'organizzatore ha diritti di modifica e può condividere. <br /><br /> Tutti gli altri membri della riunione dallo stesso tenant dell'organizzatore hanno accesso in lettura. <br /><br />Tutti gli altri membri esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
-|Riunione di canale                            |Membro del canale         |Posizione di Teams sharepoint per quel canale. **Nota**: il caricamento della registrazione di riunioni di canale in SharePoint non è supportato per restrizioni basate su IP. È [consigliabile usare l'accesso condizionale di Azure](/azure/active-directory/conditional-access/overview). |Il membro che ha fatto clic su Registra ha diritti di modifica per la registrazione. <br /> <br />Le autorizzazioni di ogni altro membro si basano sulle autorizzazioni di SharePoint per canale.|
+|Riunione ad hoc/pianificata con partecipanti esterni|Organizzatore              |Account di OneDrive for Business dell’organizzatore                     |L'organizzatore ha i diritti completi per la registrazione.<br /> <br /> Tutti gli altri membri della riunione dallo stesso tenant dell'organizzatore hanno accesso in lettura. <br /><br /> Tutti gli altri partecipanti esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
+|Riunione ad hoc/pianificata con partecipanti esterni|Altro membro della riunione   |Membro che ha fatto clic su Registra                                  |Il membro che ha fatto clic su Registra ha diritti completi sulla registrazione. L'organizzatore ha diritti di modifica e può condividere. <br /><br /> Tutti gli altri membri della riunione dallo stesso tenant dell'organizzatore hanno accesso in lettura. <br /><br />Tutti gli altri partecipanti esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
+|Riunione di canale                            |Membro del canale         |Posizione di Teams sharepoint per quel canale. **Nota**: il caricamento della registrazione di riunioni di canale in SharePoint non è supportato per restrizioni basate su IP. È [consigliabile usare l'accesso condizionale di Azure](/azure/active-directory/conditional-access/overview). |Il membro che ha fatto clic su Registra ha diritti di modifica per la registrazione. <br /> <br />Le autorizzazioni di ogni altro membro sono basate sulle autorizzazioni di SharePoint nel canale.|
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
@@ -123,11 +122,11 @@ L'opzione di registrazione della riunione è un'impostazione a livello di criter
 
 - Per le riunioni non di canale, la registrazione viene archiviata in una cartella denominata **Registrazioni** al livello principale del OneDrive for Business che appartiene alla persona che ha avviato la registrazione della riunione. Esempio:
 
-  OneDrive for Business /**Recordings** <i>del registratore</i>
+  OneDrive for Business /**Recordings** *del registratore*
 
 - Per le riunioni del canale, la registrazione viene archiviata nella raccolta della documentazione del sito di Teams in una cartella denominata **Registrazioni**. Esempio:
 
-  <i>Nome di Teams - Nome canale</i>/ **Documenti**/ **Registrazioni**
+  *Nome di Teams - Nome canale*/ **Documenti**/ **Registrazioni**
 
 **Quando i file di Stream (ad esempio le registrazioni) vengono archiviati in SharePoint/OneDrive, come si decide dove andare? L'amministratore ha la possibilità di cambiare la posizione in cui si trova?**
 
@@ -139,7 +138,7 @@ Poiché i video sono come qualsiasi altro file in OneDrive for Business e ShareP
 
 **Chi ha le autorizzazioni per visualizzare la registrazione della riunione?**
 
-- Per le riunioni non di canale, tutti gli invitati alla riunione, ad eccezione degli utenti esterni, riceveranno automaticamente un collegamento condiviso personalmente. Gli utenti esterni dovranno essere aggiunti in modo esplicito all'elenco condiviso dall'organizzatore della riunione o dalla persona che ha avviato la registrazione della riunione.
+- Per le riunioni non di canale, tutti gli invitati alla riunione, ad eccezione dei partecipanti esterni, riceveranno automaticamente un collegamento condiviso personalmente. I partecipanti esterni dovranno essere aggiunti in modo esplicito all'elenco condiviso dall'organizzatore della riunione o dalla persona che ha avviato la registrazione della riunione.
 
 - Per le riunioni di Canale, le autorizzazioni vengono ereditate dall'elenco dei proprietari e dei membri del canale.
 
@@ -148,7 +147,7 @@ Poiché i video sono come qualsiasi altro file in OneDrive for Business e ShareP
 
 **Come si gestiscono i sottotitoli?**
 
-I sottotitoli codificati per le registrazioni delle riunioni di Teams saranno disponibili durante la riproduzione solo se l'utente ha attivato la trascrizione al momento della registrazione. Gli amministratori devono [attivare la trascrizione della registrazione](meetings-policies-recording-and-transcription.md#allow-transcription) per assicurarsi che gli utenti abbiano la possibilità di registrare le riunioni con la trascrizione.
+I sottotitoli codificati per le registrazioni delle riunioni di Teams saranno disponibili durante la riproduzione solo se l'utente ha attivato la trascrizione al momento della registrazione. Gli amministratori devono [attivare la trascrizione della registrazione](meetings-policies-recording-and-transcription.md#transcription) per assicurarsi che gli utenti abbiano la possibilità di registrare le riunioni con la trascrizione.
 
 I sottotitoli consentono di creare contenuto inclusivo per i visualizzatori di tutte le capacità. In qualità di proprietario, è possibile nascondere i sottotitoli nella registrazione della riunione, anche se la trascrizione della riunione sarà ancora disponibile in Teams, a meno che non venga eliminata.
 

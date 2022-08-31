@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9052812a669a808536cbd0179d6c16b9228296c4
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 29a048ccc02082ec019bb64dca9e89b7f265ff83
+ms.sourcegitcommit: 7a1fb6e15c21368afa34cd212865437781f721e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270041"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67465974"
 ---
 # <a name="manage-voice-recognition-technology-controls-for-an-intelligent-speaker"></a>Gestire i controlli della tecnologia di riconoscimento vocale per un altoparlante intelligente
 
@@ -71,12 +71,12 @@ Un altoparlante intelligente deve essere posizionato a una distanza di almeno 20
 
    ![Configurazione dell'altoparlante intelligente con l'altoparlante che si connette direttamente alla console.](../media/intelligent-speakers2.png)
 
-> [!Note]
+> [!NOTE]
 > I dispositivi EPOS e Yealink devono avere il prefisso "EPOS" o "Yealink" e devono contenere "UAC2_RENDER" nel nome del relatore e "UAC2_TEAMS" nel nome del microfono. Se non trovi i nomi di microfono e altoparlanti nel menu a discesa, riavvia il dispositivo altoparlante intelligente.
 
 ## <a name="enable-an-intelligent-speaker-user-recognition"></a>Abilitare il riconoscimento utente di un altoparlante intelligente
 
-I dati del profilo vocale possono essere usati in qualsiasi riunione con un altoparlante intelligente. Per informazioni sulle impostazioni della riunione, vedere Criteri [per le riunioni di Teams](../meetings-policies-recording-and-transcription.md#allow-transcription) e cmdlet per [le riunioni di PowerShell](/powershell/module/skype/set-csteamsmeetingpolicy) .
+I dati del profilo vocale possono essere usati in qualsiasi riunione con un altoparlante intelligente. Per informazioni sulle impostazioni della riunione, vedere Criteri [per le riunioni di Teams](../meetings-policies-recording-and-transcription.md#transcription) e cmdlet per [le riunioni di PowerShell](/powershell/module/skype/set-csteamsmeetingpolicy) .
 
 I dati del profilo vocale dell'utente vengono creati quando il criterio è impostato per distinguere o quando un utente invitato non partecipa alla riunione entra durante la riunione. I dati del profilo vocale verranno ignorati alla fine della riunione.
 
@@ -163,4 +163,4 @@ Quando un utente finale si iscrive, la sua voce può essere riconosciuta durante
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Articolo del supporto: Usare gli altoparlanti intelligenti per identificare i partecipanti in sala ](https://support.microsoft.com/office/use-teams-intelligent-speakers-to-identify-in-room-participants-in-meeting-transcription-a075d6c0-30b3-44b9-b218-556a87fadc00)
+[Articolo del supporto: Usare gli altoparlanti intelligenti per identificare i partecipanti in sala](https://support.microsoft.com/office/use-teams-intelligent-speakers-to-identify-in-room-participants-in-meeting-transcription-a075d6c0-30b3-44b9-b218-556a87fadc00)

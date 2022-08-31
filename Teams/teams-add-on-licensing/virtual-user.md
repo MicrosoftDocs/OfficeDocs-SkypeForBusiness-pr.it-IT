@@ -18,57 +18,53 @@ ms.localizationpriority: medium
 ms.custom:
 - Licensing
 - LIL_Placement
-- seo-marvel-apr2020
-description: Informazioni su come assegnare licenze gratuite dell'account telefonico di Teams o licenze utente a pagamento Teams Phone Standard agli account delle risorse nell'organizzazione.
-ms.openlocfilehash: f8aaf7480fc228fc78879ed5905aaaf7092777ab
-ms.sourcegitcommit: 6e677c7d0dfe9e380d70adaca748eea88ca95705
+- admindeeplinkMAC
+description: Informazioni su come assegnare licenze Telefono di Microsoft Teams Account risorse agli account delle risorse per gli operatori automatici e le code di chiamata nell'organizzazione.
+ms.openlocfilehash: 348317ca659e03a9dacf8eaae603cff52a009912
+ms.sourcegitcommit: 7a1fb6e15c21368afa34cd212865437781f721e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67298296"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67465984"
 ---
 # <a name="microsoft-teams-phone-resource-account-licenses"></a>licenze dell'account risorse di Telefono di Microsoft Teams
 
-Le organizzazioni con Teams Phone Standard o Teams Phone con piano per chiamate con licenza possono assegnare una licenza gratuita *Telefono di Microsoft Teams Resource Account* o una licenza utente *Teams Phone Standard* a pagamento agli account delle risorse. Un piano per chiamate Microsoft non è sempre necessario (vedi [Pianificare l'operatore automatico di Teams e le code di chiamata](../plan-auto-attendant-call-queue.md#prerequisites) per i prerequisiti durante il trasferimento delle chiamate a un numero di telefono esterno).
+In Microsoft Teams, tutti gli operatori automatici e le code di chiamata richiedono un account di risorse associato. A ogni account di risorsa deve essere assegnata una licenza **Telefono di Microsoft Teams Account risorse** per assicurarsi che siano correttamente identificati dal sistema e funzionino correttamente, *indipendentemente dal fatto che all'account della risorsa venga assegnato un numero di telefono*. Alle organizzazioni con un abbonamento che include Teams Phone viene assegnato automaticamente un determinato numero di licenze **per l'account di risorse del telefono di Teams** senza costi aggiuntivi.  Un piano per chiamate Microsoft non è necessario a meno che non si voglia essere in grado di effettuare chiamate in uscita con tale account di risorsa. Per altre informazioni, vedere [Pianificare l'operatore automatico di Teams e le code di chiamata](../plan-auto-attendant-call-queue.md#prerequisites).
 
-Tutti gli operatori automatici e le code di chiamata richiedono un account di risorse associato. Gli account delle risorse che richiedono un numero di telefono devono avere una licenza gratuita *Telefono di Microsoft Teams Account risorse* o una licenza utente *a pagamento Teams Phone Standard* prima di poter applicare un numero di telefono all'account della risorsa.
-
-> [!TIP]
-> Non è necessaria alcuna licenza per gli account delle risorse che verranno usati con operatori automatici annidati o code di chiamata a cui non è assegnato un numero di telefono.
+> [!NOTE]
+> In precedenza, una licenza **per l'account di risorse del telefono di Teams** (una volta nota come licenza **utente virtuale** ) era necessaria solo quando si assegnava un numero di telefono a un account di risorse. Ora, a tutti gli account delle risorse deve essere assegnata una licenza **Account risorse di Teams Phone** , indipendentemente dal fatto che gli venga assegnato o meno un numero di telefono. Inoltre, non assegnare una licenza **di Teams Phone Standard** a un account della risorsa. Se gli account delle risorse sono configurati con licenze **di Teams Phone Standard**, è necessario passare a una licenza **Account di risorse di Teams Phone** come descritto di seguito.
+ 
 
 ## <a name="resource-account-license-allocation"></a>Allocazione licenze account risorsa
 
-All'organizzazione viene assegnata *Telefono di Microsoft Teams licenze per l'account delle* risorse, a seconda delle dimensioni complessive. Qualsiasi organizzazione che abbia almeno una licenza con le funzionalità di Sistema telefonico di Teams, inclusi Teams Phone Standard e Teams Phone con licenze piano per chiamate, ha 25 licenze di Account risorse disponibili gratuitamente. Quando aggiungi 10 Teams Phone Standard o Teams Phone con licenze utente per il piano per chiamate nella tua organizzazione, diventa disponibile un'altra *licenza Telefono di Microsoft Teams account risorse*.
+All'organizzazione sono assegnate licenze **per l'account di risorse del telefono di Teams** in base alle dimensioni complessive. A tutte le organizzazioni che hanno un abbonamento con funzionalità Sistema telefonico, ad esempio **Teams Phone Standard** e **Teams Phone con licenze per il piano per** chiamate, vengono assegnate 25 licenze **per l'account delle risorse del telefono di Teams** disponibili gratuitamente. 
 
-> [!NOTE]
-> Teams Phone Standard e Teams Phone con piano per chiamate sono licenze per componenti aggiuntivi disponibili per tutti gli abbonati a Microsoft 365. Teams Phone Standard licenze sono incluse anche nei piani di Microsoft 365 E5.
-
-Se l'organizzazione utilizza le licenze gratuite *per l'account di risorsa Telefono di Microsoft Teams* per la creazione di nodi dell'operatore automatico o della coda di chiamata, è comunque possibile usare le licenze *di Teams Phone Standard* a pagamento con un account di risorse. La maggior parte delle organizzazioni avrà licenze account risorse sufficienti in base al piano di ridimensionamento.
+Per ogni 10 licenze utente di **Teams Phone Standard** o **Teams Phone con piano per chiamate** nell'organizzazione, diventa disponibile un'altra licenza **Account risorse di Teams Phone**.  La maggior parte delle organizzazioni avrà un numero sufficiente di licenze **per l'account delle risorse del telefono di Teams** in base a questo piano di ridimensionamento. Nel caso in cui siano necessarie altre licenze **per l'account di risorse del telefono di Teams** , è possibile acquistare altre licenze **per l'account di risorse del telefono di Teams** oltre l'allocazione standard tramite il rappresentante dell'account Microsoft.
 
 ### <a name="license-allocation-example"></a>Esempio di assegnazione delle licenze
 
-Contoso, Inc. ha acquistato 600 licenze che includono Sistema telefonico (una per ogni dipendente). A Contoso viene assegnata una licenza iniziale di 25 più 60 *Telefono di Microsoft Teams account risorse*, di cui 85 in totale. L'organizzazione ha 90 code di chiamata e operatori automatici con numeri di telefono. Devono assegnare tutte le licenze *Telefono di Microsoft Teams Account risorse* e ottenere cinque licenze *Teams Phone Standard* a prezzo normale.
+Contoso, Inc. ha acquistato 600 licenze che includono Sistema telefonico (una per ogni dipendente). A Contoso viene assegnata una licenza iniziale di 25 più 60 **account di risorse di Teams Phone** , 85 in totale. L'organizzazione ha 90 code di chiamata e operatori automatici con numeri di telefono. Devono assegnare tutte le licenze **dell'account di risorse del telefono di Teams** e acquistare cinque licenze aggiuntive per **l'account di risorse del telefono di Teams** . 
 
-Contoso dovrebbe prendere in considerazione la riprogettazione del sistema dell'operatore automatico e della coda di chiamata. Se usano meno numeri di telefono e più nodi annidati che non richiedono un numero di telefono, semplificano l'implementazione e riducono i costi.
+## <a name="how-to-obtain-microsoft-teams-phone-resource-account-licenses"></a>Come ottenere licenze per Telefono di Microsoft Teams account risorse
 
-## <a name="how-to-buy-microsoft-teams-phone-resource-account-licenses"></a>Come acquistare licenze per Telefono di Microsoft Teams account delle risorse
-
-1. Accedere all'interfaccia di amministrazione di Microsoft 365.
-2. Passare a **Componenti aggiuntivi** **per l'acquisto di servizi** >  di **fatturazione** > .
+1. Accedere alla [interfaccia di amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+2. Passare a **Componenti aggiuntivi** [**per l'acquisto di servizi**](https://go.microsoft.com/fwlink/p/?linkid=868433) >  di **fatturazione** > .
 3. Scorrere per trovare la licenza **Telefono di Microsoft Teams Account risorse**. Seleziona **Acquista ora**.
 
    > [!NOTE]
-   > Tenere presente che è necessario **acquistare** la licenza anche se ha un costo pari a zero.
+   > Tenere presente che, anche se si è all'interno dell'allocazione, è comunque necessario **acquistare** la licenza anche se il costo è zero.
 
 ## <a name="change-an-existing-resource-account-to-use-a-microsoft-teams-phone-resource-account-license"></a>Modificare un account di risorse esistente per usare una licenza Telefono di Microsoft Teams Account risorse
 
-Se si decide di cambiare la licenza dell'account delle risorse da una licenza *di Teams Phone Standard* a una *licenza Telefono di Microsoft Teams account risorsa*:
+Se si hanno account di risorse esistenti che usano una licenza **di Teams Phone Standard**, è necessario passare a usare una licenza **Account risorse di Teams Phone**:
 
-1. Ottenere la nuova licenza *account di Telefono di Microsoft Teams risorsa*.
+1. Ottieni la nuova licenza **account di risorse di Teams Phone** .
 2. Seguire i passaggi collegati nella interfaccia di amministrazione di Microsoft 365 [spostare gli utenti in un abbonamento diverso](/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription).
 
 > [!WARNING]
-> Rimuovere sempre una licenza *di Teams Phone Standard* completa e assegnare la licenza *Telefono di Microsoft Teams Account risorse* nella stessa attività di licenza. Se si rimuove la licenza precedente, si salvano le modifiche dell'account, si aggiunge la nuova licenza e quindi si salvano di nuovo le impostazioni dell'account, l'account della risorsa potrebbe non funzionare più come previsto. In questo caso, è consigliabile creare un nuovo account per le risorse per la licenza *Account risorse di Telefono di Microsoft Teams* e rimuovere l'account delle risorse danneggiato.
+> Rimuovere sempre una licenza **di Teams Phone Standard** e assegnare la licenza **Account risorse del telefono di Teams** nella stessa attività di licenza. Se rimuovi la vecchia licenza, salvi le modifiche dell'account, aggiungi la nuova licenza e salvi di nuovo le impostazioni dell'account, l'account della risorsa potrebbe non funzionare più come previsto, come gli operatori automatici e le code di chiamata della tua organizzazione non funzionano più.
+>
+> In questo caso, è consigliabile creare un nuovo account di risorsa usando la licenza **Account risorse di Teams Phone** e rimuovere l'account delle risorse danneggiato.
 
 ## <a name="related-information"></a>Informazioni correlate
 
