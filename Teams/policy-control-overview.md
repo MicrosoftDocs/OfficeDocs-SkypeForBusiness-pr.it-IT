@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 ms.reviewer: majaisin
 description: Panoramica dei controlli dei criteri per Microsoft teams.
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ed0e5aa3a39147238bf0ade57df509a31f0f13e8
-ms.sourcegitcommit: 7579dda8018691eb1a724cb0311b53333dc3ae5a
-ms.translationtype: HT
+ms.openlocfilehash: 13b807d98b92deaac54ad8b755295b73e90c6548
+ms.sourcegitcommit: b4bc3b4c1d167a075a25180818f61758eb56cd6b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53142812"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "61041258"
 ---
 # <a name="policy-control-overview-for-microsoft-teams"></a>Panoramica sui controlli dei criteri di Microsoft Teams
 
@@ -87,9 +87,6 @@ I propri utenti non saranno in grado di modificare il livello di dati di diagnos
 Questi dati di diagnostica non includono i nomi degli utenti, i loro messaggi di posta elettronica o altri contenuti utente quali file Office condivisi in Teams, un messaggio di chat in Teams o un testo di un post pubblicato in un canale di Teams. Il sistema crea un ID univoco che si associa ai dati di diagnostica degli utenti. Alla ricezione di dati di diagnostica che mostrano l’arresto anomalo di Teams per 100 volte, questo ID univoco consente di determinare se si tratta di un singolo utente che ha subito l’arresto anomalo dell’app per 100 ore o se si tratta di 100 utenti diversi che hanno subito l’arresto anomalo dell’app una sola volta. Microsoft non usa l'ID univoco per identificare un utente specifico.
 
 Per visualizzare i dati di diagnostica inviati a Microsoft, è possibile usare il visualizzatore dati di diagnostica che può essere scaricato e installato da Microsoft Store. Per altre informazioni, vedere [Uso di Visualizzatore dati di diagnostica con Office](https://support.microsoft.com/topic/cf761ce9-d805-4c60-a339-4e07f3182855).
-
-> [!NOTE]
-> Il supporto per il Visualizzatore dati di diagnostica è disponibile per Teams nei dispositivi che eseguono Android. Il supporto per Teams nei dispositivi che eseguono Windows, macOS o iOS è in fase di sviluppo.
 
 ## <a name="required-service-data-for-connected-experiences"></a>Dati di servizio obbligatori per le esperienze connesse
 
