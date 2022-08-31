@@ -17,12 +17,12 @@ search.appverid: MET150
 f1.keywords:
 - CSH
 description: Informazioni su come esplorare e acquistare dispositivi nello store dei dispositivi dell'interfaccia di amministrazione di Teams
-ms.openlocfilehash: a6b68f6e1ffbde15f9f38dfcdeac881a7b3aabc1
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: d1e3d016f51c6113b6f09076f67647c32f7fd1fa
+ms.sourcegitcommit: 7a1fb6e15c21368afa34cd212865437781f721e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67267981"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67466214"
 ---
 # <a name="purchase-devices-in-the-teams-device-store"></a>Acquistare dispositivi nello Store dei dispositivi di Teams
 
@@ -32,7 +32,7 @@ Lo store dei dispositivi nell'interfaccia di amministrazione di Teams consente d
 
 ## <a name="requirements"></a>Requisiti
 
-Per usare l'archivio dispositivi, è necessario essere un amministratore globale o un amministratore di Teams.
+Per usare l'archivio dispositivi, è necessario essere un amministratore globale, un amministratore di Teams o un amministratore di dispositivi di Teams.
 
 ## <a name="browse-the-store"></a>Esplora lo Store
 
@@ -45,14 +45,6 @@ Quando si acquistano dispositivi dallo store del dispositivo, il pagamento e l'e
 Puoi pagare con una carta di credito o un ordine d'acquisto. Il pagamento dell'ordine di acquisto richiede la configurazione una tantum con il provider di evasione ordini.
 
 Tutti gli ordini possono essere restituiti fino a 30 giorni dopo la consegna.
-
-## <a name="data-handling-and-sharing"></a>Gestione e condivisione dei dati
-
-L'archivio dispositivi di Teams deve condividere le informazioni di base su utenti e società, inclusi i GUID di utenti e tenant, con UnifiedCommunications.com per consentire l'acquisto nell'interfaccia di amministrazione di Teams.
-
-La condivisione dei dati è disattivata per impostazione predefinita. Per abilitarla, passare allo store dei dispositivi di Teams, selezionare l'icona delle impostazioni e attivare l'impostazione.  
-
-Quando questa impostazione è disattivata, i dati non verranno condivisi e potrai esplorare lo store dei dispositivi di Teams, ma non potrai effettuare acquisti. I dati raccolti e condivisi con il provider di evasione dei dati mentre l'impostazione era attivata vengono elaborati come specificato nella loro informativa sulla privacy.
 
 ## <a name="order-tracking-and-history"></a>Monitoraggio e cronologia degli ordini
 
