@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni sui log debug, multimediali e desktop prodotti da Microsoft Teams, dove sono disponibili e su come possono essere utili per il monitoraggio e la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ae6e6eb0c84eae8293f141940842506fa3f54142
-ms.sourcegitcommit: 7a1fb6e15c21368afa34cd212865437781f721e2
+ms.openlocfilehash: 2ab00f7a1eedf2b1341819c7ec1c67abeb5f6e38
+ms.sourcegitcommit: 6b4dad9cea8fdad74c493ef62b085dbb9957235d
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/31/2022
-ms.locfileid: "67466034"
+ms.locfileid: "67486891"
 ---
 # <a name="configure-log-files-for-monitoring-and-troubleshooting-in-teams"></a>Configurare i file di log per il monitoraggio e la risoluzione dei problemi in Teams
 
@@ -118,7 +118,7 @@ Leggi [Grant-CsTeamsMediaLoggingPolicy](/powershell/module/teams/grant-csteamsme
 
 ### <a name="end-user-configuration"></a>Configurazione dell'utente finale
 
-Per consentire agli utenti finali di registrare i dati di diagnostica per le riunioni di Teams, devono attivare l'opzione nel client Teams. Verranno visualizzate **impostazioni** > **generali**, selezionare **Abilita log multimediali (dati di diagnostica per audio, video e condivisione dello schermo). Richiede il riavvio di Teams)** (richiede il riavvio di Teams) casella di controllo, riavviare Teams e riprodurre il problema. Per iniziare la registrazione, il client teams deve essere riavviato. Gli utenti possono riavviarlo facendo clic con il pulsante destro del mouse sull'icona nel dock (Mac) o nella barra delle applicazioni (Windows) e selezionando Esci. Dopo la chiusura, possono fare clic sull'icona dell'app per aprire di nuovo Teams.
+Per consentire agli utenti finali di registrare i dati di diagnostica per le riunioni di Teams, devono attivare l'opzione nel client Teams. Passeranno a **Impostazioni** > **generali**, selezioneranno la casella di controllo **Abilita log multimediali (dati di diagnostica per audio, video e condivisione dello schermo)** e riprodurranno il problema.
 
 > [!NOTE]
 > Quando gli utenti si disconnetteno da Teams, la registrazione multimediale viene reimpostata come predefinita.

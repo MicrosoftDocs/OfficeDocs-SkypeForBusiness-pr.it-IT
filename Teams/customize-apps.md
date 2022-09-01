@@ -1,6 +1,6 @@
 ---
 title: Modificare l'aspetto delle app nello store di Teams dell'organizzazione
-author: guptaashish
+author: ashishguptaiitb
 ms.author: guptaashish
 manager: prkosh
 ms.topic: article
@@ -16,16 +16,16 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come modificare l'aspetto dell'app e ridefinire l’identità di marchio di un'app modificando i dettagli e i metadati dell'app.
-ms.openlocfilehash: 304aa0b5d8becae641f69b0c389ca41160ad2e2f
-ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
-ms.translationtype: HT
+ms.openlocfilehash: 444cf5cda737b9d4b4c3dc7f4032b7eb0877f4aa
+ms.sourcegitcommit: 6b4dad9cea8fdad74c493ef62b085dbb9957235d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67298885"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67486921"
 ---
 # <a name="customize-appearance-of-apps-in-your-organizations-teams-store"></a>Personalizzare l'aspetto delle app nello store di Teams dell'organizzazione
 
-Microsoft Teams consente agli amministratori di personalizzare l'app di Teams per migliorare l'esperienza dello store e rispettare le linee guida di identità del marchio dell'organizzazione. Uno sviluppatore di app può consentire la personalizzazione della propria app da parte di un amministratore di Teams. È quindi possibile aggiornare le proprietà dell'app in base alle esigenze dell'organizzazione nella pagina Gestisci app nell'interfaccia di amministrazione di Teams. I dettagli che è possibile personalizzare sono:
+Microsoft Teams consente agli amministratori di personalizzare l'app Teams per migliorare l'esperienza dello Store e aderire al branding della propria organizzazione. Uno sviluppatore di app può consentire la personalizzazione della propria app da parte di un amministratore di Teams. È quindi possibile aggiornare le proprietà dell'app in base alle esigenze dell'organizzazione nella pagina Gestisci app nell'interfaccia di amministrazione di Teams. I dettagli che è possibile personalizzare sono:
 
 * Nome breve
 * Descrizione breve

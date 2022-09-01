@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Ecco alcune delle principali domande che riceviamo dai nostri clienti che vogliono usare le audioconferenze.
-ms.openlocfilehash: b6b14397282a365931dc58e6da20f2b3da3ab6c8
-ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
+ms.openlocfilehash: 1f2e45a68b1f964453645c1d06794f9016019beb
+ms.sourcegitcommit: 6b4dad9cea8fdad74c493ef62b085dbb9957235d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67023747"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67486981"
 ---
 # <a name="audio-conferencing-common-questions"></a>Domande ricorrenti sulle audioconferenze
 
@@ -142,18 +142,18 @@ Solo per gli organizzatori delle riunioni:
 | Nome comando                   | Tasti comando | Descrizione                                                 |
 |--------------------------------|--------------|-------------------------------------------------------------|
 | Ammetti tutto                      | \*21         | Premere \*21 per ammettere tutti i partecipanti in attesa nella sala di attesa.  |
-| Disattiva l'audio di tutti                       | \*22         | Premere \*21 per disattivare l'audio di tutti i partecipanti (eccetto l'organizzatore). |
+| Disattiva l'audio di tutti                       | \*22         | Premere \*22 per disattivare l'audio di tutti i partecipanti (eccetto l'organizzatore). |
 | Attivare/disattivare l'annuncio | \*23         | Premere \*23 per abilitare o disabilitare Invio/Uscita annuncio.    |
 
 ## <a name="can-attendees-dial-out-to-international-phone-numbers-when-they-are-in-a-skype-for-business-or-microsoft-teams-meeting"></a>I partecipanti possono effettuare chiamate in uscita con numeri di telefono internazionali durante una riunione di Skype for Business o Microsoft Teams?
 
 Sì, i partecipanti possono effettuare chiamate in uscita a livello internazionale e invitare altri chiamanti a una Skype for Business o a una riunione di Microsoft Teams. Vedere [Chiamata in uscita da una riunione di Microsoft Teams in modo che altre persone possano parteciparvi](dialing-out-from-a-teams-meeting-so-other-people-can-join-it.md) o [Chiamata in uscita da una riunione online Skype for Business in modo che altre persone possano parteciparvi](/SkypeForBusiness/audio-conferencing-in-office-365/dialing-out-from-a-meeting-so-other-people-can-join-it).
   
-## <a name="how-does-a-skype-for-business-or-microsoft-teams-user-schedule-a-meeting-with-audio-conferencing-meeting-details"></a>In che modo un utente di Skype for Business o Microsoft Teams pianificare una riunione con i dettagli della riunione di audioconferenza?
+## <a name="how-does-a-skype-for-business-or-microsoft-teams-user-schedule-a-meeting-with-audio-conferencing-meeting-details"></a>In che modo un utente di Skype for Business o Microsoft Teams pianifica una riunione con i dettagli della riunione di audioconferenza?
 
 Quando a un utente viene assegnata una licenza per **i servizi di audioconferenza** e l'utente crea una nuova riunione di Skype for Business o Microsoft Teams in Outlook o Outlook sul web, i numeri di telefono per l'accesso esterno e gli ID conferenza vengono aggiunti automaticamente all'invito alla riunione.
   
-## <a name="how-does-a-user-schedule-and-start-a-meeting-when-all-attendees-will-be-using-a-phone-to-dial-in"></a>In che modo un utente pianificare e avviare una riunione quando tutti i partecipanti utilizzano un telefono per accedere?
+## <a name="how-does-a-user-schedule-and-start-a-meeting-when-all-attendees-will-be-using-a-phone-to-dial-in"></a>In che modo un utente pianifica e avvia una riunione quando tutti i partecipanti usano un telefono per accedere?
 
 Pianificare una riunione a cui parteciperanno tutti i partecipanti che usano un telefono per accedere non è diverso dalla pianificazione di una normale riunione online. Esistono tuttavia due modi per avviare una riunione in cui tutti i partecipanti usano un telefono per accedere:
 

@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata in Microsoft Teams. Le code di chiamata forniscono un messaggio di saluto, tengono musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: f14c0644c7a4be2a63e74ae59705bb7e3bc0cb76
-ms.sourcegitcommit: 850038f2248c1ea412f7b5daca26c0598baffa3c
+ms.openlocfilehash: eaf165759e2310402fdec6147ba2153ec0ce792b
+ms.sourcegitcommit: 6b4dad9cea8fdad74c493ef62b085dbb9957235d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67443333"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67486761"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -361,11 +361,11 @@ Sono consigliate le impostazioni seguenti:
 |`Round Robin`                    |S                         |S         |S               |S    |S         |S                     |S                         |*Consigliata* |
 |`Serial`                         |S                         |S         |S               |S    |S         |Y<sup>4</sup>         |Y<sup>4</sup>             |   |
 |**Opzioni routing agente**        |                          |          |                |     |          |                      |                          |   |
-|`Presence Based Routing`<sup>3</sup>|S                      |S         |S               |N    |S         |S                     |S                         |*Consigliata* |
+|`Presence Based Routing`<sup>3</sup>|S                      |S         |S               |N    |S         |S                     |S                         |*Predefinito* |
 |`Agents can Opt-out`               |S                       |S         |S               |Y<sup>7</sup>|Y<sup>7</sup>|S          |S                         |*Predefinito*     |
 |**Modalità di trasferimento**               |                          |          |                |     |          |                      |                          |   |
-|`Conference Mode`<sup>5</sup>    |S                         |S         |S               |N    |Y<sup>6</sup>|S                  |S                         |*Consigliata* |
-|`Transfer Mode`                  |S                         |S         |S               |S    |S         |S                     |S                         |*Predefinito*              |
+|`Conference Mode`<sup>5</sup>    |S                         |S         |S               |N    |Y<sup>6</sup>|S                  |S                         |*Predefinito* |
+|`Transfer Mode`                  |S                         |S         |S               |S    |S         |S                     |S                         |   |
 |**Chiamate collaborative**        |                          |          |                |     |          |                      |                          |   |
 |`Channel Based Queues`             |S                       |N         |N               |N    |N         |n/d                   |Y<sup>8</sup>             |   |
 |**ID chiamante dinamico**            |                          |          |                |     |          |                      |                          |   |

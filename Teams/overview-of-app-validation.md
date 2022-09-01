@@ -2,7 +2,7 @@
 title: Panoramica della convalida delle app e dei test delle app da parte di Microsoft
 description: Informazioni sulle linee guida per la convalida delle app di Teams basate sui criteri di certificazione del marketplace. Informazioni sul modo in cui Microsoft garantisce che le app di Teams rispettino elevati standard di privacy e sicurezza.
 ms.topic: article
-author: guptaashish
+author: ashishguptaiitb
 ms.author: guptaashish
 manager: prkosh
 audience: admin
@@ -17,12 +17,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d7d705d09dc9ded8ee2b831e41ed18921fbb7381
-ms.sourcegitcommit: a4a65283e85d0c393c844dfd335df0d48e0e4105
+ms.openlocfilehash: 3ac3cc841c243558581ff1e3dfad3d3e2a8e4197
+ms.sourcegitcommit: 6b4dad9cea8fdad74c493ef62b085dbb9957235d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67314008"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67487111"
 ---
 # <a name="validation-performed-by-microsoft-for-all-teams-apps"></a>Convalida eseguita da Microsoft per tutte le app di Teams
 

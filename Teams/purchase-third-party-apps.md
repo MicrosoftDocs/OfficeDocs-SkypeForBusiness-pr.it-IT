@@ -15,12 +15,12 @@ description: Informazioni su come acquistare app di terze parti da Teams Store u
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 680f48fd75c85b219a4c1ed5b18289962637401b
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: 53a630fd887bd793f2b811e97e176cbd40ec1d0d
+ms.sourcegitcommit: 6b4dad9cea8fdad74c493ef62b085dbb9957235d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67396307"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67486721"
 ---
 # <a name="purchase-third-party-apps-for-teams"></a>Acquistare app di terza parte per Teams
 
@@ -28,7 +28,7 @@ Le app di Teams sono gratuite e alcune possono richiedere l’acquisto di sottos
 
 La pagina[Gestisci app](manage-apps.md) nell'interfaccia di amministrazione di Microsoft Teams consente di visualizzare e gestire tutte le app di Teams per l'organizzazione. Ad esempio, è possibile visualizzare lo stato e le proprietà delle app a livello di organizzazione, caricare nuove app personalizzate nell'app store dell'organizzazione, bloccare o consentire app a livello di organizzazione e gestire le impostazioni delle app a livello di organizzazione.
 
-Qui è anche possibile acquistare licenze per i servizi offerti da app di terze parti per gli utenti dell'organizzazione. La colonna **Licenze** nella tabella indica se un'app offre una sottoscrizione SaaS da acquistare.
+Qui è anche possibile acquistare licenze per i servizi offerti da app di terze parti per gli utenti dell'organizzazione. La colonna **Licenze** nella tabella indica se un'app offre una sottoscrizione SaaS da acquistare. Gli utenti finali possono acquistare app con una carta di credito, una carta di debito o con fatturazione.
 
 ![Screenshot della pagina di gestione delle app per l'acquisto di licenze.](media/manage-apps-new-page.png)
 

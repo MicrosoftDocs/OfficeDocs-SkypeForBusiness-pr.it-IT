@@ -1,6 +1,6 @@
 ---
 title: Gestire gli accessi alle app di Teams in Microsoft 365
-author: guptaashish
+author: ashishguptaiitb
 ms.author: guptaashish
 manager: prkosh
 ms.reviewer: v-tbasra
@@ -17,12 +17,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come gestire l'accesso alle app di Teams in Microsoft 365.
-ms.openlocfilehash: ee9f614fa3d33ecb9fb8e7e0985ef074440570d5
-ms.sourcegitcommit: d0cbc23e10219dd2889011421010215a5d246031
+ms.openlocfilehash: a555343fc8207a3c538b6b2d8901ad5a3602cf9f
+ms.sourcegitcommit: 6b4dad9cea8fdad74c493ef62b085dbb9957235d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2022
-ms.locfileid: "67460689"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67486971"
 ---
 # <a name="manage-access-to-teams-apps-across-microsoft-365"></a>Gestire gli accessi alle app di Teams in Microsoft 365
 
