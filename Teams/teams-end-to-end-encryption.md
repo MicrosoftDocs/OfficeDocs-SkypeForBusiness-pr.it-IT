@@ -19,12 +19,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d5865494b94c280295d13e0f99303bc76d1fc274
-ms.sourcegitcommit: 140c34f20f9cd48d7180ff03fddd60f5d1d3459f
-ms.translationtype: HT
+ms.openlocfilehash: e090c465b46370367d96a782e12f38161465ce33
+ms.sourcegitcommit: 479e236aa8a9a91df4894ed3cce4c287a1354d80
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65249008"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "67572086"
 ---
 # <a name="use-end-to-end-encryption-for-one-to-one-microsoft-teams-calls"></a>Usare la crittografia end-to-end per le chiamate uno-a-uno di Microsoft Teams
 
@@ -34,6 +34,8 @@ ms.locfileid: "65249008"
 La crittografia end-to-end, o E2EE, si verifica quando il contenuto viene crittografato prima che venga inviato e decrittografato solo dal destinatario previsto. Con la crittografia end-to-end, solo i due sistemi endpoint sono coinvolti nella crittografia e decrittografia dei dati della chiamata. Nessun'altra parte, inclusa Microsoft, ha accesso alla conversazione decrittografata.
 
 Con E2EE per le chiamate uno-a-uno non pianificate, solo per il flusso multimediale in tempo reale, ossia i dati video e voce, per le chiamate uno-a-uno di Teams viene usata la crittografia end-to-end. Entrambe le parti devono attivare questa impostazione per abilitare la crittografia end-to-end. [La crittografia in Microsoft 365](/microsoft-365/compliance/encryption) protegge la chat, la condivisione di file, la presenza e altri contenuti nella chiamata.
+
+Le chiamate crittografate end-to-end possono essere effettuate tra due parti quando: le parti usano l'ultima versione del client desktop di Teams per Windows o Mac, si trovano su un dispositivo mobile con l'aggiornamento più recente per iOS e Android o su un Teams Rooms su dispositivo Windows usando l'aggiornamento più recente.
 
 Se non si abilita la crittografia end-to-end, Teams una chiamata o una riunione usando la crittografia in base agli standard di settore. I dati scambiati durante le chiamate sono sempre sicuri mentre sono in transito e inattivi. Per altre informazioni, vedere [Crittografia multimediale per Teams](teams-security-guide.md#media-encryption).
 
