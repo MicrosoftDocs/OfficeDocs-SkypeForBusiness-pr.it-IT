@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 description: Gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft Teams Rooms, tra cui l'applicazione di un tema personalizzato e la creazione di un file di impostazioni master.
-ms.openlocfilehash: df9cc718ddcedb9745807dadd70c8e1a78748c6f
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 74ae005ceae3c17d64403990eda067e3d8bd7cfc
+ms.sourcegitcommit: 9a9168d5c40bbb0cceaf3ffd11eb104c137f26b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67272101"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590163"
 ---
 # <a name="manage-a-microsoft-teams-rooms-console-settings-remotely-with-an-xml-configuration-file"></a>Gestire in remoto le impostazioni di una console Microsoft Teams Rooms con un file di configurazione XML
 
@@ -52,7 +52,7 @@ Qualsiasi editor di testo può essere usato per creare un file di impostazioni. 
   <TeamsMeetingsEnabled>true</TeamsMeetingsEnabled>
   <SfbMeetingEnabled>true</SfbMeetingEnabled>
   <IsTeamsDefaultClient>true</IsTeamsDefaultClient>
-  <WebexMeetingsEnabled>true</WebexMeetingsEnabled>
+  <WebExMeetingsEnabled>true</WebExMeetingsEnabled>
   <ZoomMeetingsEnabled>true</ZoomMeetingsEnabled>
   <UseCustomInfoForThirdPartyMeetings>true</UseCustomInfoForThirdPartyMeetings>
   <CustomDisplayNameForThirdPartyMeetings>guestname</CustomDisplayNameForThirdPartyMeetings>
@@ -106,6 +106,8 @@ Qualsiasi editor di testo può essere usato per creare un file di impostazioni. 
       <ExtendedFoRDisplayResolution>1920,1080</ExtendedFoRDisplayResolution> 
       <ExtendedFoRDisplayScaling>100</ExtendedFoRDisplayScaling> 
   </ExtendedFoRDisplay>  
+  <EnableDeviceEndToEndEncryption>false</EnableDeviceEndToEndEncryption>
+  <SplitVideoLayoutsDisabled>false</SplitVideoLayoutsDisabled>
 </SkypeSettings>
 ```
 
@@ -169,12 +171,14 @@ Se un valore variabile è di tipo errato, gli elementi non sono ordinati, gli el
 | `<Video>`                                   | &#x2777; booleana            |                | Controlla la configurazione video in un dispositivo Teams Rooms. Questo elemento ha due attributi:<br><ul><li><b>Predefinito</b> Determina in quale dispositivo la fotocamera sarà attiva all'avvio di una riunione. Per un'esperienza ottimale, è consigliabile impostare `true` solo il Teams Rooms dispositivo, mentre tutti gli altri dispositivi sono impostati su `false`.</li><li><b>Abilitato</b> Determina se i partecipanti a una riunione possono attivare o disattivare la fotocamera. Puoi impostare questa `true` opzione su su qualsiasi altro dispositivo nei partecipanti all'evento che vogliono condividere prospettive video diverse (ad esempio se un partecipante usa la lavagna di Surface Hub). Se non si vuole che i partecipanti attivino o disattivino una fotocamera in un dispositivo, impostare questa `false`opzione su .<p> Se **l'impostazione predefinita Video** è impostata su `true`, l'impostazione **Video abilitato** viene ignorata e i partecipanti possono attivare o disattivare la fotocamera.</li></ul> |
 | `<Whiteboard>`                              | &#x2777; booleana            |                | Controlla la configurazione della lavagna in un dispositivo Teams Rooms. Questo elemento ha due attributi:<br><ul><li><b>Predefinito</b> Determina in quale dispositivo la lavagna sarà attiva all'avvio di una riunione. Per un'esperienza ottimale, ti consigliamo di impostare `false` il dispositivo Teams Rooms e di usare la lavagna su un Surface Hub.</li><li><b>Abilitato</b> Determina se i partecipanti a una riunione possono attivare o disattivare la lavagna. Se non vuoi che i partecipanti attivino o disabilitino la lavagna in un dispositivo, imposta questa `false`opzione su .<p> Se **l'impostazione predefinita lavagna** è impostata su `true`, l'impostazione **Abilitata per Lavagna** viene ignorata e i partecipanti possono attivare o disattivare la lavagna.</li></ul>                                                                                                                                                   |
 | `<EnableResolutionAndScalingSetting>` | &#x2777; booleana | Primo &#x2776; | Per impostazione predefinita, è disabilitata. Se vuoi modificare la risoluzione e il ridimensionamento della parte anteriore della sala, impostala su true. Se true, verranno applicate le impostazioni di risoluzione e scala dello schermo. Questa impostazione avrà effetto sia sul FoR principale che sul FoR esteso una volta abilitata questa impostazione. |
-| `<MainFoRDisplay>` | Contenitore | | Usa questo contenitore se il dispositivo usa la modalità di visualizzazione singola.<br><br>In modalità a doppio schermo, La parte anteriore principale della sala (FoR) è uno schermo con orologio (fuori riunione) e video in anteprima automatica (in riunione). `<MainFoRDisplayResolution>` e `<MainFoRDisplayScaling>` devono essere insieme alla volta. Se si usa solo uno `<MainFoRDisplayResolution>` o `<MainFoRDisplayScaling>`, verrà ignorato. |
+| `<MainFoRDisplay>` | Contenitore |Primo &#x2776; | Usa questo contenitore se il dispositivo usa la modalità di visualizzazione singola.<br><br>In modalità a doppio schermo, La parte anteriore principale della sala (FoR) è uno schermo con orologio (fuori riunione) e video in anteprima automatica (in riunione). `<MainFoRDisplayResolution>` e `<MainFoRDisplayScaling>` devono essere insieme alla volta. Se si usa solo uno `<MainFoRDisplayResolution>` o `<MainFoRDisplayScaling>`, verrà ignorato. |
 | `<MainFoRDisplayResolution>` | Stringa | | Valore numerico di input di Larghezza, Altezza (ad esempio 1920,1080). Verrà ignorato se il tuo FoR non lo supporta.|
 | `<MainFoRDisplayScaling>` | Numero | | Immettere il valore numerico di ridimensionamento. I valori validi sono 100 (scelta consigliata), 125, 150, 175, 200, 225, 250, 300, 350, 400, 450 e 500. Se inserisci 500 e il foR supporta fino a 300, verrà impostato su 300.|
-| `<ExtendedFoRDisplay>` | Contenitore | | In modalità a doppio schermo, La parte anteriore estesa della sala (FoR) è uno schermo in cui vengono visualizzati contenuti condivisi (in riunione).  `<ExtendedFoRDisplayResolution>` e `<ExtendedFoRDisplayScaling>` devono essere insieme alla volta. Se si usa solo uno `<ExtendedFoRDisplayResolution>` o `<ExtendedFoRDisplayScaling>`, verrà ignorato. |
+| `<ExtendedFoRDisplay>` | Contenitore |Primo &#x2776;| In modalità a doppio schermo, La parte anteriore estesa della sala (FoR) è uno schermo in cui vengono visualizzati contenuti condivisi (in riunione).  `<ExtendedFoRDisplayResolution>` e `<ExtendedFoRDisplayScaling>` devono essere insieme alla volta. Se si usa solo uno `<ExtendedFoRDisplayResolution>` o `<ExtendedFoRDisplayScaling>`, verrà ignorato. |
 | `<ExtendedFoRDisplayResolution>` | Stringa | |Valore numerico di input larghezza, altezza (ad esempio: 1920,1080). Un valore verrà ignorato se il FoR non lo supporta. |
 | `<ExtendedFoRDisplayScaling>` | Numero | | Immettere il valore numerico di ridimensionamento. I valori validi sono 100 (scelta consigliata), 125, 150, 175, 200, 225, 250, 300, 350, 400, 450 e 500. Se inserisci 500 e il foR supporta fino a 300, verrà impostato su 300. |
+| `<EnableDeviceEndToEndEncryption>` | &#x2777; booleana | | L'impostazione predefinita è `false`. Specificare `true` di abilitare la crittografia end-to-end per le chiamate uno-a-uno di Teams. Sia il chiamante che il destinatario devono avere la crittografia end-to-end abilitata per il funzionamento. |
+| `<SplitVideoLayoutsDisabled>` |  &#x2777; booleana | | L'impostazione predefinita è `false`. Questa impostazione è applicabile solo alle sale con doppio schermo. Specificare `true` di disabilitare la divisione della raccolta video in entrambi gli schermi. In questo modo verranno disabilitati anche il layout Prima riga e tutte le impostazioni associate al layout Prima riga. |
 
 &#x2776; Tutti gli elementi di primo livello sono facoltativi. Se un elemento di primo livello viene omesso, tutti i relativi parametri figlio rimangono invariati nel dispositivo.
   

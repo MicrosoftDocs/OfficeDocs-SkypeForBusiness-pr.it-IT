@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3c94b1c7f33de136eea33ec7905e1e37a9ceb0e2
-ms.sourcegitcommit: 8d7a926758971bee491d24f23b1ad14f5e5c6f7f
+ms.openlocfilehash: 6b3251160c0ce44b02fffe4ff50c078a529c5d00
+ms.sourcegitcommit: 9a9168d5c40bbb0cceaf3ffd11eb104c137f26b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66713364"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590203"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -86,7 +86,7 @@ Microsoft Teams è compatibile con diversi servizi Microsoft 365 e Office 365 pe
 - Per creare team in Microsoft Teams, gli utenti devono essere abilitati per la creazione di gruppi di Microsoft 365.
 
   > [!IMPORTANT]
-  > Se si disinstalla il client di Skype for Business dopo aver spostato un utente in modalità **Solo Teams**, l’icona di presenza potrebbe smettere di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Per risolvere il problema, selezionare l’immagine del profilo nell'angolo in alto a destra di Microsoft Teams e quindi selezionare **Impostazioni**. Nella scheda **Generali** in **Applicazione**, selezionare **Registra Teams come l'applicazione di chat per Office (richiede il riavvio delle applicazioni di Office)**. Dopo aver selezionato questa opzione, chiudere e riaprire tutte le app di Office, incluso Outlook. Dopo l’apertura di Outlook, le informazioni sulla presenza saranno disponibili.
+  > Se si disinstalla il client di Skype for Business dopo aver spostato un utente in modalità **Solo Teams**, l’icona di presenza potrebbe smettere di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Per risolvere il problema, seleziona il pulsante dei puntini di sospensione a sinistra dell'immagine del profilo nell'angolo in alto a destra di Microsoft Teams, quindi seleziona **Impostazioni**. Nella scheda **Generali** in **Applicazione**, selezionare **Registra Teams come l'applicazione di chat per Office (richiede il riavvio delle applicazioni di Office)**. Dopo aver selezionato questa opzione, chiudere e riaprire tutte le app di Office, incluso Outlook. Dopo l’apertura di Outlook, le informazioni sulla presenza saranno disponibili.
 
 ## <a name="requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises"></a>Requisiti per creare e visualizzare riunioni per le cassette postali ospitate in locale
 

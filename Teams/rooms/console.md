@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: dae1bfb6-7262-4030-bf53-dc3b3fe971ea
 description: Questo articolo descrive come configurare la console Microsoft Teams Rooms e le relative periferiche.
-ms.openlocfilehash: 2a38154ebca1dfae282722fdb64e76389627ca15
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 40d49597ab3354eeaacc8d7c562917fbf653e727
+ms.sourcegitcommit: 9a9168d5c40bbb0cceaf3ffd11eb104c137f26b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270111"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590173"
 ---
 # <a name="build-a-microsoft-teams-rooms-image"></a>Creare un'immagine Microsoft Teams Rooms
 
@@ -171,7 +171,7 @@ Dopo l'installazione di Windows, l'app Microsoft Teams Rooms passerà al process
 L'app Microsoft Teams Rooms deve accedere a Microsoft Teams o Skype for Business Server con le credenziali immesse sopra e dovrebbe anche iniziare a sincronizzare il calendario con Exchange usando le stesse credenziali. Per informazioni dettagliate sull'uso di Teams Rooms, vedere la [Guida di Microsoft Teams Rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).
   
 > [!IMPORTANT]
-> Microsoft Teams Rooms si basa sulla presenza di hardware per console certificato. Anche un'immagine creata correttamente contenente l'app console Microsoft Teams Rooms non verrà avviata oltre la procedura di configurazione iniziale, a meno che non sia stato rilevato l'hardware della console. Per Surface Pro soluzioni basate, il Surface Pro deve essere collegato all'hardware del dock associato per superare questo controllo.
+> Microsoft Teams Rooms si basa sulla presenza di hardware per console certificato. Anche un'immagine creata correttamente contenente l'app console Microsoft Teams Rooms non verrà avviata oltre la procedura di configurazione iniziale, a meno che non sia stato rilevato l'hardware della console. Per Surface Pro soluzioni basate, il Surface Pro deve essere collegato all'hardware del dock associato per superare questo controllo. Per altre informazioni sull'hardware supportato, vedere [requisiti di Microsoft Teams Rooms](requirements.md).
   
 > [!NOTE]
 > Alcuni utenti non in lingua inglese potrebbero aver bisogno di una tastiera fisica collegata alla console durante l'installazione iniziale nel caso in cui i simboli non siano supportati sulla tastiera virtuale.

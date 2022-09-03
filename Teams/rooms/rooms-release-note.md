@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 description: Amministrazione possibile leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9460694aec7a6b7f7c7f1648d8f9512ded4c01f7
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: d6cb8e8e01490f4c150ab77c1f4e6d896e6a2bce
+ms.sourcegitcommit: 9a9168d5c40bbb0cceaf3ffd11eb104c137f26b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270081"
+ms.lasthandoff: 09/03/2022
+ms.locfileid: "67590183"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
@@ -40,6 +40,7 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 
 |Rilascio |Pubblicato su <br/> Microsoft Store |
 |--- |--- |
+|4.14.24.0 |9/2/2022 |
 |4.13.132.0 |8/2/2022 |
 |4.12.139.0 |7/14/2022 |
 |4.12.138.0 |5/26/2022 |
@@ -94,6 +95,19 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 |RTM (1.0.8) |12/7/2016 |
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Microsoft Teams Rooms introduzione delle funzionalità e risoluzione dei problemi
+
+### <a name="414240-922022"></a>4.14.24.0 (9/2/2022)
+
+Introdotto in questo aggiornamento:
+
+- Aggiornamento <sup>dell'esperienza</sup> di layout front row 1 
+- Aggiungere e nascondere il video <sup>della sala 1</sup> 
+- Configurazione dell'amministratore per disattivare la raccolta divisa in dual display Teams Rooms <sup>1</sup>
+- La Teams Rooms a doppio schermo può ora visualizzare fino a 18 flussi video partecipanti <sup>2</sup>
+
+<sup>1 La</sup> configurazione dell'amministratore per disattivare la raccolta divisa tramite XML è disponibile in [Gestire in remoto le impostazioni di una console Microsoft Teams Rooms con un file di configurazione XML](../rooms/xml-config-file.md).
+
+<sup>2</sup> Questa funzionalità è in fase di distribuzione nel client Web di Teams e il completamento richiederà circa due settimane. Per altre informazioni, vedere [Aggiornamenti di Teams](../teams-client-update.md).
 
 ### <a name="4131320-822022"></a>4.13.132.0 (8/2/2022)
 
