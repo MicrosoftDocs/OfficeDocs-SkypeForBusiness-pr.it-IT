@@ -18,12 +18,12 @@ f1.keywords:
 ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7e7ba6b94466874a1e1ab07496ece0d3c4f34dfb
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 5dcab13a6ee0c54e9fc88901c2fe022f35309e88
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269351"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606855"
 ---
 # <a name="teams-devices-for-education"></a>Dispositivi Teams per l'istruzione
 
@@ -62,19 +62,19 @@ I sistemi non nativi e auto-costruiti che si basano su servizi esterni, o una co
 
 **Appositamente progettato per Teams**:
 
-Audio e video avanzati e condivisione
+Audio e video avanzati e condivisione.
 
 **Portafoglio di dispositivi espansivo per qualsiasi stanza**:
 
-Selezionare uno dei fattori di forma completamente modulari o integrati nei sistemi operativi Android o Windows
+Selezionare uno dei fattori di forma completamente modulari o integrati nei sistemi operativi Android o Windows.
 
 **Esperienze di sala rivisitata**:
 
-Partecipare alle riunioni di Teams senza attrito per partecipare a riunioni collaborative inclusive per studenti e docenti
+Partecipare alle riunioni di Teams senza attrito per partecipare a riunioni collaborative inclusive per studenti e docenti.
 
 **Facile gestione da un'unica posizione**:
 
-Gestisci completamente e mantieni i dispositivi aggiornati e pronti all'uso in Teams Amministrazione Center e abilita la gestione proattiva 24 ore su 2477 da Microsoft con Microsoft Teams Rooms Premium
+Gestisci completamente e mantieni i dispositivi aggiornati e pronti all'uso in Teams Amministrazione Center e abilita la gestione proattiva 24 ore su 2477 da Microsoft con Microsoft Teams Rooms Pro.
 
 ## <a name="space-considerations"></a>Considerazioni sulla spaziatura
 

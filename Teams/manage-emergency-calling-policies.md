@@ -16,24 +16,24 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come usare e gestire i criteri per le chiamate di emergenza in Microsoft Teams per definire cosa accade quando un utente Teams dell'organizzazione effettua una chiamata di emergenza.
+description: Informazioni su come usare e gestire i criteri per le chiamate di emergenza in Microsoft Teams per definire cosa accade quando un utente di Teams nell'organizzazione effettua una chiamata di emergenza.
 ms.custom:
 - seo-marvel-apr2020
 - ms.teamsadmincenter.voice.emergencycallingpolicies.overview
-ms.openlocfilehash: 66ff287911a22de8b65ed356cd07833a2bbbb0ca
-ms.sourcegitcommit: 4435ac0efcb95e4e5e1f21289e46761e79482ab5
+ms.openlocfilehash: 658e7191a821069d3fa9b13e02cc7cbcdfb29413
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65624100"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606555"
 ---
 # <a name="manage-emergency-calling-policies-in-microsoft-teams"></a>Gestire i criteri per le chiamate di emergenza in Microsoft Teams
 
-Se l'organizzazione utilizza piani per chiamate Microsoft, Connessione con operatore o Routing diretto come [opzione di connettività PSTN](pstn-connectivity.md), è possibile usare i criteri per le chiamate di emergenza in Microsoft Teams per definire cosa accade quando un utente di un Teams dell'organizzazione effettua una chiamata di emergenza.
+Se l'organizzazione utilizza Piani per chiamate Microsoft, Operator Connect, Connessione con operatore di telefonia mobile (versione di anteprima pubblica) o Routing diretto come [opzione di connettività PSTN](pstn-connectivity.md), è possibile usare i criteri per le chiamate di emergenza in Microsoft Teams per definire cosa accade quando un utente di Teams nell'organizzazione effettua una chiamata di emergenza.
 
 È possibile impostare chi deve inviare una notifica e come riceverla quando un utente a cui sono stati assegnati i criteri chiama i servizi di emergenza. Ad esempio, è possibile configurare le impostazioni dei criteri in modo da informare automaticamente il security desk dell'organizzazione e fare in modo che vengano ascoltate durante le chiamate di emergenza.  
 
-È possibile gestire i criteri per le chiamate di emergenza passando ai **criteri di emergenza VoiceEmergency**  >  nell'interfaccia di amministrazione di Microsoft Teams o usando Windows PowerShell. I criteri possono essere assegnati agli utenti e ai [siti di rete](cloud-voice-network-settings.md).
+Puoi gestire i criteri per le chiamate di emergenza accedendo ai **criteri di emergenza** **vocale** >  nell'interfaccia di amministrazione di Microsoft Teams o usando Windows PowerShell. I criteri possono essere assegnati agli utenti e ai [siti di rete](cloud-voice-network-settings.md).
 
 Per gli utenti, è possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. Gli utenti riceveranno automaticamente i criteri globali, a meno che non vengano creati e assegnati criteri personalizzati. Tenere presente che è possibile modificare le impostazioni nel criterio globale, ma non rinominarlo o eliminarlo. Per i siti di rete è possibile creare e assegnare criteri personalizzati.
 
@@ -43,18 +43,27 @@ Se hai assegnato un criterio di chiamata di emergenza a un sito di rete e a un u
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Criteri di emergenza VoiceE** > , quindi fare clic sulla scheda **Criteri per le chiamate**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, vai a **Criteri di emergenza** **vocale** >  e quindi fai clic sulla scheda **Criteri per le chiamate**.
+
 2. Fare clic su **Aggiungi**.
+
 3. Immettere un nome e una descrizione per il criterio.
+
 4. Impostare la **modalità di ricerca della posizione esterna** su attivato per consentire agli utenti finali di configurare il proprio indirizzo per gli interventi di emergenza quando lavorano da un percorso di rete esterno alla rete aziendale.
+
 5. Imposta la modalità di notifica alle persone dell'organizzazione, in genere il security desk, quando viene effettuata una chiamata di emergenza. A tale scopo, in **Modalità di notifica** seleziona una delle opzioni seguenti:
-    - **Invia solo notifica**: un messaggio di chat Teams viene inviato agli utenti e ai gruppi specificati.
-    - **Con conferenza disattivata e non è possibile riattivare l'audio**: un messaggio di chat Teams viene inviato agli utenti e ai gruppi specificati e possono ascoltare (ma non partecipare) alla conversazione tra il chiamante e l'operatore PSAP.
-    - **Con conferenza disattivata ma in grado di riattivare l'audio**: un messaggio di chat Teams viene inviato agli utenti e ai gruppi specificati e possono riattivare l'audio per ascoltare e partecipare alla conversazione tra il chiamante e l'operatore PSAP.
-5.  Imposta la **dichiarazione di non responsabilità per i servizi di emergenza** per visualizzare un banner per ricordare agli utenti finali di confermare la loro posizione per gli interventi di emergenza.
-6.  Se è stata selezionata una delle opzioni conferenza in modalità di notifica **disattivata** , nella casella **Numeri per comporre le notifiche per le chiamate di emergenza** , è possibile immettere un numero di telefono PSTN di un utente o di un gruppo per chiamare e partecipare alla chiamata di emergenza. Ad esempio, immettere il numero del desk di sicurezza dell'organizzazione, che riceverà una chiamata quando viene effettuata una chiamata di emergenza e potrà quindi ascoltarla. Non è possibile riattivare l'audio del telefono PSTN anche se la modalità è impostata su **Con conferenza disattivata, ma è possibile riattivarla**.
-7. Cerca e seleziona uno o più utenti o gruppi, ad esempio il security desk dell'organizzazione, per avvisare quando viene effettuata una chiamata di emergenza.  La notifica può essere inviata a indirizzi di posta elettronica di utenti, gruppi di distribuzione e gruppi di sicurezza. È possibile ricevere una notifica a un massimo di 50 utenti.
-8. Fare clic su **Applica**.
+
+    - **Invia solo notifica**: viene inviato un messaggio di chat di Teams agli utenti e ai gruppi specificati.
+    - **Con conferenza disattivata e non è possibile riattivare l'audio**: un messaggio di chat di Teams viene inviato agli utenti e ai gruppi specificati e possono ascoltare (ma non partecipare) alla conversazione tra il chiamante e l'operatore PSAP.
+    - **Con conferenza disattivata ma in grado di riattivare l'audio**: un messaggio di chat di Teams viene inviato agli utenti e ai gruppi specificati e possono riattivare l'audio per ascoltare e partecipare alla conversazione tra il chiamante e l'operatore PSAP.
+
+6.  Imposta la **dichiarazione di non responsabilità per i servizi di emergenza** per visualizzare un banner per ricordare agli utenti finali di confermare la loro posizione per gli interventi di emergenza.
+
+7.  Se è stata selezionata una delle opzioni conferenza in modalità di notifica **disattivata** , nella casella **Numeri per comporre le notifiche per le chiamate di emergenza** , è possibile immettere un numero di telefono PSTN di un utente o di un gruppo per chiamare e partecipare alla chiamata di emergenza. Ad esempio, immettere il numero del desk di sicurezza dell'organizzazione, che riceverà una chiamata quando viene effettuata una chiamata di emergenza e potrà quindi ascoltarla. Non è possibile riattivare l'audio del telefono PSTN anche se la modalità è impostata su **Con conferenza disattivata, ma è possibile riattivarla**.
+
+8. Cerca e seleziona uno o più utenti o gruppi, ad esempio il security desk dell'organizzazione, per avvisare quando viene effettuata una chiamata di emergenza.  La notifica può essere inviata a indirizzi di posta elettronica di utenti, gruppi di distribuzione e gruppi di sicurezza. È possibile ricevere una notifica a un massimo di 50 utenti.
+
+9. Fare clic su **Applica**.
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
@@ -66,7 +75,7 @@ Vedi [New-CsTeamsEmergencyCallingPolicy](/powershell/module/skype/new-csteamseme
 
 È possibile modificare i criteri globali o i criteri personalizzati creati.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Criteri di emergenza VoiceE** > , quindi fare clic sulla scheda **Criteri per le chiamate**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, vai a **Criteri di emergenza** **vocale** >  e quindi fai clic sulla scheda **Criteri per le chiamate**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi selezionare **Modifica**.
 3. Apportare le modifiche desiderate e quindi fare clic su **Applica**.
 
@@ -86,7 +95,7 @@ Vedere anche [Grant-CsTeamsEmergencyCallingPolicy](/powershell/module/skype/gran
 
 È possibile assegnare i criteri globali o i criteri personalizzati creati.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare alla **topologia LocationsNetwork** >  e fare clic sulla scheda **Siti di rete**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Topologia rete** **percorsi** >  e fare clic sulla scheda **Siti di rete**.
 2. Selezionare il sito facendo clic a sinistra del nome e quindi su **Modifica**.
 3. In **Criteri per le chiamate di emergenza** seleziona il criterio e quindi fai clic su **Salva**.
 

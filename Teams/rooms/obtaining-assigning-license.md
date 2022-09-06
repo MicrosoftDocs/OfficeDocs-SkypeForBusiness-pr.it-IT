@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come un account Microsoft Teams Rooms ottiene una licenza per accedere al servizio premium managed Microsoft Teams Rooms.
 f1keywords: ''
-ms.openlocfilehash: ddc154cd399a6ae1eaddd1ca352be9d2d9dbecde
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 01503e9c7d0e845b9b745ee62582ffc7575808f9
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270251"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606455"
 ---
 # <a name="getting-started-with-microsoft-teams-rooms-premium-managed-service"></a>Guida introduttiva al servizio gestito da Microsoft Teams Rooms Premium
 
@@ -30,7 +30,7 @@ I servizi gestiti Microsoft Teams Rooms Premium riducono la complessità per gli
 
 ## <a name="obtain-and-assign-a-license"></a>Ottenere e assegnare una licenza
 
-Microsoft Teams Rooms account delle risorse richiedono una licenza Microsoft Teams Rooms Premium per l'uso con il servizio gestito da Microsoft Teams Rooms Premium.
+Microsoft Teams Rooms account delle risorse richiedono una licenza Microsoft Teams Rooms Pro per l'uso con il servizio gestito da Microsoft Teams Rooms Premium.
 
 Per assegnare una licenza, eseguire le operazioni seguenti:
 
@@ -40,9 +40,9 @@ Per assegnare una licenza, eseguire le operazioni seguenti:
     > Questo tipo di amministratore viene a volte definito **amministratore globale**. Vedere Panoramica della [interfaccia di amministrazione di Microsoft 365](/microsoft-365/business-video/admin-center-overview).
 
 2. Scegliere **Fatturazione > Licenze** nel riquadro di spostamento sinistro.
-3. Selezionare il **Teams Rooms licenza Premium** appropriata per l'uso previsto (sono disponibili licenze a pagamento e di valutazione). Per un confronto tra SKU Microsoft Teams Rooms Standard e Premium, vedere Soluzioni di gestione [delle licenze per i dispositivi di comunicazione condivisi](rooms-licensing.md).
+3. Selezionare la licenza **Teams Rooms Pro** appropriata per l'uso previsto (sono disponibili licenze a pagamento e di valutazione). Vedere [Microsoft Teams Rooms licenze](rooms-licensing.md) per un confronto tra SKU Microsoft Teams Rooms Basic e Pro.
 4. Nella pagina **Account di fatturazione** selezionare **Assegna licenze**. Viene visualizzata la pagina **Assegna licenze agli utenti** .
-5. Immettere gli account **di Microsoft Teams Rooms** esistenti per **Teams Rooms'assegnazione di licenze Premium**. Per altre informazioni sulla configurazione o la convalida di account Microsoft Teams Rooms nuovi o esistenti, vedere [Creare account di risorse per sale e dispositivi Teams condivisi](with-office-365.md).
-6. Una volta completato l'invio dell'account, seleziona **Assegna** e quindi **Chiudi**. Le licenze **Microsoft Teams Rooms Premium** sono state assegnate ad **account Microsoft Teams Rooms**.
+5. Immettere gli account **di Microsoft Teams Rooms** esistenti per **l'assegnazione di licenze di Teams Rooms Pro**. Per altre informazioni sulla configurazione o la convalida di account Microsoft Teams Rooms nuovi o esistenti, vedere [Creare account di risorse per sale e dispositivi Teams condivisi](with-office-365.md).
+6. Una volta completato l'invio dell'account, seleziona **Assegna** e quindi **Chiudi**. Le licenze **Microsoft Teams Rooms Pro** sono state assegnate ad **account Microsoft Teams Rooms**.
 
 È ora possibile registrare gli account delle risorse e i dispositivi certificati Microsoft Teams Rooms associati nel servizio gestito da Microsoft Teams Rooms Premium. Per altre informazioni, vedere [Registrare un dispositivo nel servizio gestito Microsoft Teams Rooms Premium](enrolling-mtrp-managed-service.md).

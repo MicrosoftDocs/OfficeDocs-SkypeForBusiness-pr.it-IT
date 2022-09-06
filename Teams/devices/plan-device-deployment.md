@@ -1,7 +1,7 @@
 ---
 title: Pianificare la distribuzione per i dispositivi telefonici e gli schermi di Teams
-ms.author: czawideh
-author: cazawideh
+ms.author: dstrome
+author: dstrome
 manager: serdars
 ms.reviewer: tony.woodruff
 ms.topic: reference
@@ -12,16 +12,16 @@ appliesto:
 f1.keywords:
 - NOCSH
 search.appverid: MET150
-description: Questo articolo fornisce e fornisce una panoramica delle attività e dei passaggi per distribuire i telefoni e gli schermi di Teams nell'organizzazione.
+description: Questo articolo fornisce una panoramica delle attività e dei passaggi per distribuire i telefoni e gli schermi di Teams nell'organizzazione.
 ms.collection:
 - M365-voice
 - Teams_ITAdmin_Devices
-ms.openlocfilehash: 5172d230823088141c58e3d2b58e1c3b579268b3
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: fb9b560f56ece49ddae9f15899a118596a31c38f
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67272391"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606845"
 ---
 # <a name="plan-your-deployment-for-teams-phone-devices-and-displays"></a>Pianificare la distribuzione per i dispositivi telefonici e gli schermi di Teams
 
@@ -41,7 +41,7 @@ I telefoni e gli schermi di Teams si adattano a uno dei due utenti tipo:
 - Dispositivi personali
 - Dispositivi per lo spazio condiviso
 
-I dispositivi personali e condivisi hanno ruoli e utilizzi diversi. 
+I dispositivi personali e condivisi hanno ruoli e usi diversi. 
 
 **Dispositivi personali:** 
 
@@ -68,17 +68,17 @@ Ora che hai identificato i personaggi del dispositivo, devi determinare quali di
 - Quanti ambienti o spazi richiedono dispositivi condivisi? Ogni spazio avrà lo stesso tipo di dispositivo? 
 - I tuoi dispositivi dovranno soddisfare requisiti specifici?
     - Gli esempi includono le dimensioni dello schermo, il fattore di forma e il produttore o modello? Per un elenco di telefoni e schermi certificati, vedere [Dispositivi certificati per Microsoft Teams](teams-ip-phones.md).
--  Ti servono i telefoni o gli schermi di Teams? Per un elenco delle funzionalità supportate dai telefoni di Teams, vedere [Telefoni per Microsoft Teams](phones-for-teams.md#features-supported-by-teams-phones) e, per un elenco delle funzionalità supportate dagli schermi di Teams, vedere [Schermi di Microsoft Teams](teams-displays.md#features-supported-by-teams-displays).
+-  Ti servono i telefoni o gli schermi di Teams? Per un elenco delle funzionalità supportate dai telefoni di Teams, vedere [Telefoni per Microsoft Teams](phones-for-teams.md#features-supported-by-teams-phones). Per un elenco delle funzionalità supportate dagli schermi di Teams, vedere [Schermi di Microsoft Teams](teams-displays.md#features-supported-by-teams-displays).
 - Hai un numero di dispositivi sufficiente per i nuovi utenti o un processo per i nuovi ordini e la consegna?
-- Avrai a disposizione dispositivi di riserva per la manutenzione o in caso di problemi hardware? La possibilità di scambiare rapidamente un dispositivo impedisce interruzioni dell'esperienza utente.
+- Avrai a disposizione dispositivi di riserva per la manutenzione o se si verificano problemi hardware? La possibilità di scambiare rapidamente un dispositivo impedisce interruzioni dell'esperienza utente.
 
 ## <a name="task-2-what-are-your-licensing-requirements"></a>Attività 2: Quali sono i requisiti di licenza? 
 
 Ora che sai quanti dispositivi ti servono, il passaggio successivo consiste nel determinare quante licenze sono necessarie. I telefoni e gli schermi di Teams richiedono licenze per accedere a Microsoft Teams e Microsoft 365.
 
-I dispositivi condivisi e personali avranno bisogno di licenze diverse. Per i dispositivi personali, è possibile usare le licenze assegnate agli account utente. I dispositivi condivisi devono avere licenze specifiche per la loro funzione. Per telefoni e schermi, le licenze applicabili sono [la licenza Common Area Phone per Microsoft Teams](../set-up-common-area-phones.md#step-1---buy-the-licenses) e [la licenza Microsoft Teams Rooms Standard](../rooms/rooms-licensing.md#licensing-solutions-for-shared-communication-devices).
+I dispositivi condivisi e personali richiedono licenze diverse. Per i dispositivi personali, è possibile usare le licenze assegnate agli account utente. I dispositivi condivisi devono avere licenze specifiche per la loro funzione. Per telefoni e schermi, le licenze applicabili sono [la licenza Common Area Phone per Microsoft Teams](../set-up-common-area-phones.md#step-1---buy-the-licenses) e una [licenza di Microsoft Teams Rooms](../rooms/rooms-licensing.md).
 
-Per altre informazioni e per confrontare le opzioni di licenza, vedere [Piani di licenza di Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1). 
+Per altre informazioni e per confrontare le opzioni di licenza, vedere [Piani di licenza di Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1).
 
 ## <a name="task-3-what-are-your-dependencies"></a>Attività 3: Quali sono le dipendenze? 
 

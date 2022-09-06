@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Rooms
 description: Scopri come proteggere i dispositivi Microsoft Teams Rooms.
-ms.openlocfilehash: 4814bd5930bd311bf79fc749a1e736d1c3645165
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 231039324e15afb7b24f194623e54455d51e85c2
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270051"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606215"
 ---
 # <a name="microsoft-teams-rooms-security"></a>sicurezza Microsoft Teams Rooms
 
@@ -79,7 +79,7 @@ Teams Rooms dispositivi includono un account amministrativo denominato "Amminist
 L'account Amministrazione non è necessario per il corretto funzionamento di Teams Rooms dispositivi e può essere rinominato o anche eliminato. Tuttavia, prima di eliminare l'account Amministrazione, assicurati di configurare un account amministratore locale alternativo configurato prima di rimuovere quello fornito con Teams Rooms dispositivi. Per altre informazioni su come cambiare una password per un account Windows locale usando gli strumenti predefiniti di Windows o PowerShell, vedi:
 
 - [Cambiare o reimpostare la password di Windows](https://support.microsoft.com/windows/change-or-reset-your-windows-password-8271d17c-9f9e-443f-835a-8318c8f68b9c)
-- [Set-LocalUser](/powershell/module/microsoft.powershell.localaccounts/set-localuser?view=powershell-5.1#example-2--change-the-password-on-an-account)
+- [Set-LocalUser](/powershell/module/microsoft.powershell.localaccounts/set-localuser#example-2--change-the-password-on-an-account)
 
 È anche possibile importare account di dominio nel gruppo amministratore di Windows locale. È possibile eseguire questa operazione per gli account di Azure AD usando Intune. Per altre informazioni, vedere [Criteri CSP - RestrictedGroups.](/windows/client-management/mdm/policy-csp-restrictedgroups)
 
@@ -101,12 +101,12 @@ Se possibile, è consigliabile creare l'account delle risorse in Azure AD. Anche
 
 In generale, Teams Rooms ha gli stessi requisiti di rete di qualsiasi client di Microsoft Teams. L'accesso tramite firewall e altri dispositivi di sicurezza è lo stesso per Teams Rooms di qualsiasi altro client di Microsoft Teams. Specifiche per Teams Rooms, le categorie elencate come "obbligatorie" per Teams devono essere aperte nel firewall. Teams Rooms deve anche accedere a Windows Update, Microsoft Store e Microsoft Intune (se usi Microsoft Intune per gestire i tuoi dispositivi). Per l'elenco completo di INDIRIZZI IP e URL necessari per Microsoft Teams Rooms, vedere:
 
-- **Microsoft Teams** [Office 365 URL e intervalli di indirizzi IP](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#skype-for-business-online-and-microsoft-teams)
+- **Microsoft Teams** [Office 365 URL e intervalli di indirizzi IP](/microsoft-365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 - **Windows Update** [Configurare WSUS](/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#211-connection-from-the-wsus-server-to-the-internet)
 - Prerequisiti di **Microsoft Store** [per Microsoft Store per le aziende e formazione](/microsoft-store/prerequisites-microsoft-store-for-business#proxy-configuration)
 - **endpoint di** [rete Microsoft Intune per Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
 
-Se si usa il componente Microsoft Teams Rooms servizi gestiti di Microsoft Teams Rooms Premium, è necessario verificare anche che Teams Rooms possa accedere agli URL seguenti:
+Se si usa il componente Microsoft Teams Rooms servizi gestiti di Microsoft Teams Rooms Pro, è anche necessario assicurarsi che Teams Rooms possano accedere agli URL seguenti:
 
 - agent.rooms.microsoft.com
 - global.azure-devices-provisioning.net
@@ -120,11 +120,13 @@ Se si usa il componente Microsoft Teams Rooms servizi gestiti di Microsoft Teams
 - mmrprodnoamiot.azure-devices.net
 - mmrprodnoamstor.blob.core.windows.net
 
-Teams Rooms è configurato per mantenere automaticamente le patch con gli ultimi aggiornamenti di Windows, inclusi gli aggiornamenti della sicurezza. Teams Rooms installa tutti i giorni gli aggiornamenti in sospeso a partire alle 2:00 usando criteri locali predefiniti. Non è necessario usare altri strumenti per distribuire e applicare Windows Aggiornamenti. L'uso di strumenti aggiuntivi per distribuire e applicare gli aggiornamenti può ritardare l'installazione delle patch di Windows e quindi condurre a una distribuzione meno sicura. L'app Teams Rooms viene distribuita tramite Microsoft Store. Se i dispositivi sono concessi in licenza con Microsoft Teams Rooms Standard, le nuove versioni dell'app vengono installate automaticamente durante il processo di patch notturno. Se i dispositivi sono concessi in licenza con Microsoft Teams Rooms Premium e registrati nel servizio gestito Da Microsoft, vengono installate nuove versioni dell'app Teams Rooms in base al piano di implementazione definito.
+Teams Rooms è configurato per mantenere automaticamente le patch con gli ultimi aggiornamenti di Windows, inclusi gli aggiornamenti della sicurezza. Teams Rooms installa tutti i giorni gli aggiornamenti in sospeso a partire alle 2:00 usando criteri locali predefiniti. Non è necessario usare altri strumenti per distribuire e applicare Windows Aggiornamenti. L'uso di strumenti aggiuntivi per distribuire e applicare gli aggiornamenti può ritardare l'installazione delle patch di Windows e quindi condurre a una distribuzione meno sicura. L'app Teams Rooms viene distribuita tramite Microsoft Store.
+
+<!-- LICENSE-REVIEW If your devices are licensed with Microsoft Teams Rooms Standard, any new versions of the app are automatically installed during the nightly patching process. If your devices are licensed with Microsoft Teams Rooms Premium and enrolled in the Microsoft Managed Service, new versions of the Teams Rooms app are installed per your defined rollout plan. -->
 
 Teams Rooms i dispositivi funzionano con la maggior parte dei protocolli di sicurezza 802.1X o basati su rete. Tuttavia, non è possibile testare Teams Rooms con tutte le possibili configurazioni di sicurezza di rete. Pertanto, se si verificano problemi di prestazioni che possono essere rilevati da problemi di prestazioni di rete, potrebbe essere necessario disabilitare questi protocolli se sono configurati nell'organizzazione.
 
-Per ottenere prestazioni ottimali dai supporti in tempo reale, è consigliabile configurare il traffico multimediale di Teams in modo da ignorare i server proxy e altri dispositivi di sicurezza di rete. I supporti in tempo reale sono sensibili alla latenza e i server proxy e i dispositivi di sicurezza di rete possono ridurre significativamente la qualità audio e video degli utenti. Inoltre, poiché i contenuti multimediali di Teams sono già crittografati, non c'è alcun vantaggio tangibile nel passaggio del traffico attraverso un server proxy. Per altre informazioni, vedere [Networking up (to the cloud) — Punto di vista di un architetto](/microsoft-365/solutions/networking-design-principles?view=o365-worldwide) che discute i consigli di rete per migliorare le prestazioni dei supporti con Microsoft Teams e Microsoft Teams Rooms.
+Per ottenere prestazioni ottimali dai supporti in tempo reale, è consigliabile configurare il traffico multimediale di Teams in modo da ignorare i server proxy e altri dispositivi di sicurezza di rete. I supporti in tempo reale sono sensibili alla latenza e i server proxy e i dispositivi di sicurezza di rete possono ridurre significativamente la qualità audio e video degli utenti. Inoltre, poiché i contenuti multimediali di Teams sono già crittografati, non c'è alcun vantaggio tangibile nel passaggio del traffico attraverso un server proxy. Per altre informazioni, vedere [Networking up (to the cloud) — Punto di vista di un architetto](/microsoft-365/solutions/networking-design-principles) che discute i consigli di rete per migliorare le prestazioni dei supporti con Microsoft Teams e Microsoft Teams Rooms.
 
 > [!IMPORTANT]
 > Teams Rooms non supporta i server proxy autenticati.

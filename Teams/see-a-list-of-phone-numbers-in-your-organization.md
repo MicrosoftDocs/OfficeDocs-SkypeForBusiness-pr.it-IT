@@ -23,18 +23,18 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni su come usare l'interfaccia di amministrazione di Microsoft Teams per visualizzare un elenco di tutti i numeri di telefono dell'organizzazione e di tutti i numeri assegnati agli utenti o non assegnati.
-ms.openlocfilehash: 84162b3971b1730df114482d30820dcf7e86a684
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: ac7c63515b34b8c199f8050933b6c3ccbc6f8d33
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66494463"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606075"
 ---
 # <a name="see-a-list-of-telephone-numbers"></a>Visualizzare un elenco di numeri di telefono 
 
 Esistono diversi tipi di numeri di telefono che è possibile assegnare agli utenti o ad applicazioni vocali come [Audioconferenze](deploy-audio-conferencing-teams-landing-page.md) o [Code di chiamata](plan-auto-attendant-call-queue.md). Per altre informazioni, vedere [Gestire i numeri di telefono per l'organizzazione](/microsoftteams/manage-phone-numbers-landing-page).
 
-Questo articolo si applica ai Piani per chiamate e Operator Connect. Per informazioni sull'instradamento diretto, vedere [Configurare il numero di telefono e abilitare la voce aziendale](direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice).
+Questo articolo si applica ai Piani per chiamate, Operator Connect e Connessione con operatore di telefonia mobile (versione di anteprima pubblica). Per informazioni sull'instradamento diretto, vedere [Configurare il numero di telefono e abilitare la voce aziendale](direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice).
   
 ## <a name="to-see-all-telephone-numbers-in-your-organization"></a>Per visualizzare tutti i numeri di telefono dell'organizzazione
 

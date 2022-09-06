@@ -867,6 +867,12 @@ items:
                 href: operator-connect-plan.md
               - name: Configurare la connessione con operatore
                 href: operator-connect-configure.md
+          - name: Connessione con operatore di telefonia mobile
+            items:
+              - name: Pianificare Connessione con operatore di telefonia mobile
+                href: operator-connect-mobile-plan.md
+              - name: Configurare Connessione con operatore di telefonia mobile
+                href: operator-connect-mobile-configure.md
           - name: Instradamento diretto
             items:
               - name: Novità
@@ -977,6 +983,8 @@ items:
                 href: phone-number-calling-plans/supported-rate-centers-coverage-matrix.md
           - name: Gestire i numeri di telefono di Connessione con operatore
             href: operator-connect-configure.md#set-up-phone-numbers
+          - name: Gestire i numeri di telefono per Connessione con operatore di telefonia mobile
+            href: operator-connect-mobile-configure.md#set-up-phone-numbers
           - name: Gestire i numeri di telefono per l'instradamento diretto
             href: direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice
           - name: Gestione delle licenze e dei numeri di telefono
@@ -1321,6 +1329,10 @@ items:
             items:
               - name: Panoramica della pianificazione di Microsoft Teams Rooms
                 href: rooms/rooms-plan.md
+              - name: Panoramica delle licenze Teams Rooms
+                href: rooms/rooms-licensing.md
+              - name: licenze dell'interfaccia di amministrazione Teams Rooms
+                href: rooms/admin-center-license-overview.md
               - name: Confronto delle funzionalità dei dispositivi Teams in Windows e Android
                 href: rooms/teams-devices-feature-comparison.md
               - name: Guida per la sala riunioni in Teams
@@ -1335,8 +1347,6 @@ items:
                 href: rooms/requirements.md
               - name: Sicurezza
                 href: rooms/security.md
-              - name: Concessione di licenze online
-                href: rooms/rooms-licensing.md
               - name: Gestione dei piani con Monitoraggio di Azure
                 href: rooms/azure-monitor-plan.md
           - name: Distribuzione

@@ -18,16 +18,16 @@ description: Scopri come configurare la funzionalità chiamate di emergenza dina
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bc7fb0ae87cda84dfbf7b164d38b709b7ef2eef9
-ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
+ms.openlocfilehash: 9109f26abc953fd131e96440bd62d147cac8114f
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67023697"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606035"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
-Le chiamate di emergenza dinamiche per i piani per chiamate Microsoft, Operator Connect e Direct Routing offrono la possibilità di configurare e instradare le chiamate di emergenza e avvisare il personale di sicurezza in base alla posizione corrente del client Teams.  
+Chiamate di emergenza dinamiche per i piani per chiamate Microsoft, Operator Connect, Connessione con operatore di telefonia mobile (versione di anteprima pubblica) e Routing diretto offrono la possibilità di configurare e instradare le chiamate di emergenza e avvisare il personale di sicurezza in base alla posizione corrente del client Teams.  
 
 In base alla topologia di rete (elementi di rete associati agli indirizzi di emergenza) definita dall'amministratore del tenant, il client Teams fornisce informazioni sulla connettività di rete in una richiesta al servizio LIS (Location Information Service). Se esiste una corrispondenza, LIS restituisce una posizione al client.
 
@@ -42,7 +42,7 @@ Per le chiamate di emergenza dinamiche, è necessario che si verifichi quanto se
    - Se esiste una corrispondenza del sito delle impostazioni di rete, i criteri per le chiamate di emergenza vengono restituiti al client Teams da quel sito. Per altre informazioni sui criteri, vedere [Configurare i criteri di emergenza](#configure-emergency-policies).
 
    - Se c'è una corrispondenza LIS: una posizione per gli interventi di emergenza dall'elemento di rete a cui è connesso il client Teams viene restituita al client teams. La corrispondenza viene eseguita nell'ordine seguente con il primo risultato corrispondente restituito:
-       - WAP
+       - Wap
        - Switch/porta Ethernet
        - Interruttore Ethernet
        - Subnet
@@ -51,7 +51,7 @@ Per le chiamate di emergenza dinamiche, è necessario che si verifichi quanto se
 
 La possibilità di eseguire il routing automatico al punto di risposta per la sicurezza pubblica (PSAP) appropriato varia a seconda del paese di utilizzo dell'utente di Teams.
 
-I Piani per chiamate Microsoft e i partner Operator Connect includono servizi di routing di emergenza dinamici per gli utenti del Stati Uniti e del Canada.
+I Piani per chiamate Microsoft, i partner Operator Connect e i partner Connessione con operatore di telefonia mobile includono servizi di routing di emergenza dinamici per gli utenti del Stati Uniti e del Canada.
 
 Per il routing diretto, tuttavia, è necessaria una configurazione aggiuntiva per il routing delle chiamate di emergenza ed eventualmente per la connettività dei partner. L'amministratore deve assicurarsi che il gateway PSTN instradare la chiamata di emergenza sia stato configurato per aggiungere informazioni sulla posizione all'invito in uscita (impostando il parametro PidfloSupported su True nell'oggetto gateway PSTN online. Inoltre, l'amministratore deve configurare la connessione a un provider del servizio di routing di emergenza (ERS) (Stati Uniti e Canada) **OPPURE** configurare il controller dei confini della sessione (SBC) per un'applicazione ELIN (Emergency Location Identification Number). Per informazioni sui provider ERS, vedere [Session Border Controllers certified for Direct Routing](direct-routing-border-controllers.md).
 
@@ -105,7 +105,7 @@ Puoi assegnare gli indirizzi per gli interventi di emergenza come segue:
 
 - A Utenti del Piano per chiamate.
 
-- Per Operator Connect gli utenti&mdash;dipendono dalle funzionalità assegnate al numero quando il vettore li carica nell'inventario di un cliente.
+- Per Operator Connect e Connessione con operatore di telefonia mobile gli utenti&mdash;in base alle funzionalità assegnate al numero quando il gestore li carica nell'inventario di un cliente.
 
 - Agli identificatori di rete necessari per ottenere dinamicamente una posizione. 
 
@@ -144,7 +144,7 @@ Si noti che la propagazione di alcune modifiche alle impostazioni di rete (ad es
 
 
 
-**Per gli utenti con piano per chiamate e Operator Connect:**
+**Per gli utenti con piano per chiamate, Operator Connect e Connessione con operatore di telefonia mobile:**
 
 - Se è necessaria la configurazione dinamica della notifica security desk, è necessario configurare sia gli indirizzi IP attendibili che i siti di rete.
 
@@ -191,13 +191,13 @@ Utilizza i criteri seguenti per configurare le chiamate di emergenza. È possibi
 
 - **Criteri di routing delle chiamate di emergenza: si applica solo al routing diretto**. Questo criterio configura i numeri di emergenza, le maschere per numero, se lo si desidera, e la route PSTN per numero. È possibile assegnare questo criterio agli utenti, ai siti di rete o a entrambi. Per altre informazioni, vedere [Gestire i criteri di routing delle chiamate di emergenza per il routing diretto](manage-emergency-call-routing-policies.md).  
 
-   Gli utenti di Piani per chiamate e Operator Connect vengono automaticamente abilitati per le chiamate di emergenza con i numeri di emergenza del paese in base alla loro posizione di utilizzo di Microsoft 365 o Office 365.
+   (Gli utenti di Piani per chiamate, Operator Connect e Connessione con operatore di telefonia mobile vengono automaticamente abilitati per le chiamate di emergenza con i numeri di emergenza del paese in base alla loro posizione di utilizzo di Microsoft 365 o Office 365.
 
-- **Criteri per le chiamate di emergenza: si applica ai piani per chiamate, alla connessione operatore e al routing diretto.** Questo criterio configura l'esperienza di notifica del security desk quando viene effettuata una chiamata di emergenza. È possibile impostare le persone a cui inviare la notifica e la relativa modalità di notifica. Ad esempio, per informare automaticamente il security desk dell'organizzazione e fare in modo che ascoltino le chiamate di emergenza.  Questo criterio può essere assegnato agli utenti o ai siti di rete o a entrambi. Per altre informazioni, vedere [Gestire i criteri per le chiamate di emergenza in Teams](manage-emergency-calling-policies.md).
+- **Criteri per le chiamate di emergenza: si applica ai piani per chiamate, a Operator Connect, a Connessione con operatore di telefonia mobile e al routing diretto.** Questo criterio configura l'esperienza di notifica del security desk quando viene effettuata una chiamata di emergenza. È possibile impostare le persone a cui inviare la notifica e la relativa modalità di notifica. Ad esempio, per informare automaticamente il security desk dell'organizzazione e fare in modo che ascoltino le chiamate di emergenza.  Questo criterio può essere assegnato agli utenti o ai siti di rete o a entrambi. Per altre informazioni, vedere [Gestire i criteri per le chiamate di emergenza in Teams](manage-emergency-calling-policies.md).
 
 ## <a name="enable-users-and-sites"></a>Abilitare utenti e siti
 
-È possibile assegnare criteri di routing delle chiamate di emergenza e criteri per le chiamate di emergenza agli utenti e ai siti. Tenere presente che i criteri di routing delle chiamate di emergenza si applicano solo al routing diretto. Anche se è possibile assegnare questo criterio a un piano per chiamate o a un utente Connetti operatore, i criteri non avranno alcun effetto.
+È possibile assegnare criteri di routing delle chiamate di emergenza e criteri per le chiamate di emergenza agli utenti e ai siti. Tenere presente che i criteri di routing delle chiamate di emergenza si applicano solo al routing diretto. Anche se è possibile assegnare questo criterio a un piano per chiamate, a Una connessione operatore o a un utente Connessione con operatore di telefonia mobile, il criterio non avrà alcun effetto.
 
 I criteri vengono assegnati nell'interfaccia di amministrazione di Microsoft Teams o tramite PowerShell. Per altre informazioni, vedere:
 
@@ -236,7 +236,7 @@ Se è stato assegnato un criterio di chiamata di emergenza a un sito di rete e a
 
 Alcuni provider di servizi di routing di emergenza (ERSP) nel Stati Uniti offrono un bot per il test di chiamata di emergenza.
 
-- **Gli utenti del piano di chiamata e della connessione operatore nel Stati Uniti o in Canada** possono utilizzare il numero di emergenza di test predefinito 933 per convalidare la configurazione delle chiamate di emergenza. Questo numero viene instradato a un bot, che quindi richiama il numero di telefono del chiamante (ID della linea di chiamata), l'indirizzo o la posizione per gli interventi di emergenza e indica se la chiamata verrebbe instradata automaticamente al PSAP o prima visualizzata.
+- **Gli utenti di Piani per chiamate, Operator Connect e Connessione con operatore di telefonia mobile nel Stati Uniti o in Canada** possono utilizzare il numero di emergenza predefinito 933 per convalidare la configurazione delle chiamate di emergenza. Questo numero viene instradato a un bot, che quindi richiama il numero di telefono del chiamante (ID della linea di chiamata), l'indirizzo o la posizione per gli interventi di emergenza e indica se la chiamata verrebbe instradata automaticamente al PSAP o prima visualizzata.
 
 - **I clienti di Direct Routing nel Stati Uniti** devono coordinarsi con il proprio ERSP per un servizio di test.
 
@@ -247,7 +247,7 @@ La tabella seguente mostra il supporto per le chiamate di emergenza dinamiche ne
 | Cloud | Disponibilità |
 | :------------|:-------|
 | World Wide Multi Tenant | Disponibile in tutti i client di Teams |
-| GCC | Disponibile in tutti i client di Teams |
+| Gcc | Disponibile in tutti i client di Teams |
 | GCCH | -Disponibile su Teams desktop <br> -Disponibile nei client mobili di Teams <br> -Disponibile sui telefoni Teams, versione dell'app: 1449/1.0.94.2022061702 |
 | Dod | In sospeso |
 

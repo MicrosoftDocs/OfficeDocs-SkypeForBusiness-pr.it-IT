@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Questo articolo fornisce una panoramica delle funzionalità supportate dagli schermi di Microsoft Teams.
-ms.openlocfilehash: 18b8219a3eef391170c7321ae994d79f1b73f016
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 8b06078633dd8c7ee43c2ee98ad1f3e4751d3a51
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268771"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606025"
 ---
 # <a name="microsoft-teams-displays"></a>Schermi di Microsoft Teams
 
@@ -57,11 +57,11 @@ Per gestire i dispositivi di visualizzazione di Teams, nel riquadro di spostamen
 
 ## <a name="set-up-hot-desking-on-teams-displays"></a>Configurare l'hot desking sugli schermi di Teams
 
-L'hot desking consente agli utenti dell'organizzazione di prenotare in anticipo le aree di lavoro temporanee tramite Teams e Outlook o dal dispositivo stesso. Quando è abilitato l'hot desking, gli utenti accedono a Teams visualizzando le loro credenziali di Microsoft 365 per accedere a riunioni, chat e file. Quando si disconnettono, tutte le informazioni personali vengono rimosse dal dispositivo.
+L'hot desking consente agli utenti dell'organizzazione di prenotare in anticipo le aree di lavoro temporanee tramite Teams e Outlook o dal dispositivo stesso. Quando l'hot desking è abilitato, gli utenti accedono a Teams con le loro credenziali di Microsoft 365 per accedere a riunioni, chat e file. Quando si disconnettono, tutte le informazioni personali vengono rimosse dal dispositivo.
 
-Per iniziare, è necessario acquisire licenze di Microsoft Teams Rooms Standard e creare account di risorse per ogni visualizzazione di Teams. Vedere [Creare account di risorse per sale e dispositivi di Teams condivisi](../rooms/with-office-365.md) per creare account delle risorse.
+Per iniziare, è necessario acquisire [licenze di Microsoft Teams Rooms](../rooms/rooms-licensing.md) e creare account di risorse per ogni visualizzazione di Teams. Vedere [Creare account di risorse per sale e dispositivi di Teams condivisi](../rooms/with-office-365.md) per creare account delle risorse.
 
-Dopo aver creato gli account delle risorse, è possibile creare e assegnare un criterio per abilitare l'hot desking. Per ulteriori informazioni, vedi [New-CsTeamsIPPhonePolicy](/powershell/module/skype/new-csteamsipphonepolicy?view=skype-ps) .
+Dopo aver creato gli account delle risorse, è possibile creare e assegnare un criterio per abilitare l'hot desking. Per ulteriori informazioni, vedi [New-CsTeamsIPPhonePolicy](/powershell/module/skype/new-csteamsipphonepolicy) .
 
 > [!IMPORTANT]
 > Poiché gli schermi di Teams con hot desking vengono usati nelle aree di lavoro condivise da più persone, le regole di accesso condizionale e altre configurazioni di identità nell'ambiente, come l'autenticazione a più fattori, possono influire su questi dispositivi e causare problemi di accesso. Per indicazioni sulla protezione dei dispositivi condivisi, vedere [Procedure consigliate per l'autenticazione per i dispositivi Teams Android condivisi](authentication-best-practices-for-android-devices.md).

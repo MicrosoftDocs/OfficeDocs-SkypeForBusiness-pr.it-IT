@@ -24,12 +24,12 @@ search.appverid: MET150
 description: Altre informazioni sulle funzionalità vocali cloud di Microsoft Teams e sulle decisioni di distribuzione che verranno prese per l'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2b1f4b0756e640d9b93e235b2724ce7841b4f44f
-ms.sourcegitcommit: f2253162a23d0683e7424211da1a0a8760c8a91b
+ms.openlocfilehash: 40f2a4f56b9d1c174696265300226263eb41a9de
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66240825"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606065"
 ---
 # <a name="plan-your-teams-voice-solution"></a>Pianificare la soluzione vocale di Teams
 
@@ -49,6 +49,7 @@ Tuttavia, la situazione potrebbe essere più complessa. Ad esempio, potresti ave
 
 - Sistema telefonico con piano per chiamate
 - Sistema telefonico con il tuo operatore PSTN con Operator Connect
+- Sistema telefonico con il tuo operatore di telefonia mobile PSTN con Connessione con operatore di telefonia mobile (versione di anteprima pubblica)
 - Sistema telefonico con il tuo operatore PSTN con Direct Routing
 - Una soluzione combinata che usa sistema telefonico con piano per chiamate, sistema telefonico con Operator Connect e/o sistema telefonico con routing diretto
 
@@ -150,9 +151,12 @@ Sistema telefonico fornisce funzionalità PBX complete per la tua organizzazione
 
 - [**Sistema telefonico con piano per chiamate**](pstn-connectivity.md#phone-system-with-calling-plan). Una soluzione all-in-the-cloud con Microsoft come gestore PSTN.
 
-- [**Sistema telefonico con il tuo operatore PSTN tramite Operator Connect**](operator-connect-plan.md). Con Operator Connect, se l'operatore esistente partecipa al programma Microsoft Operator Connect, può gestire il servizio per portare le chiamate PSTN in Teams. Per informazioni sui vantaggi e i requisiti di Operator Connect, vedi [Plan Operator Connect](operator-connect-plan.md).
+- [**Sistema telefonico con il tuo operatore PSTN tramite Operator Connect**](operator-connect-plan.md). Con Operator Connect, se l'operatore esistente partecipa al programma Microsoft Operator Connect, può gestire il servizio per portare le chiamate PSTN in Teams. 
+
+- [**Sistema telefonico con il tuo operatore di telefonia mobile PSTN usando Connessione con operatore di telefonia mobile**](operator-connect-mobile-plan.md) **Versione pubblica di revisione**. Con Connessione con operatore di telefonia mobile, se il tuo operatore esistente partecipa al programma Microsoft Connessione con operatore di telefonia mobile, può gestire il servizio per l'uso dei numeri di cellulare abilitati per la SIM con Teams. 
 
 - [**Sistema telefonico con il proprio operatore PSTN tramite Direct Routing**](pstn-connectivity.md#phone-system-with-direct-routing) per connettere l'ambiente locale a Teams.
+
 
 È possibile scegliere una combinazione di opzioni che consente di progettare una soluzione per un ambiente complesso o di gestire una migrazione in più passaggi. Leggere altre informazioni sulla migrazione in un secondo momento.
 

@@ -27,12 +27,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Scopri come ottenere e gestire i numeri di telefono degli utenti (abbonati) e dei servizi (a pagamento e a numero verde) per Microsoft Teams per la tua organizzazione.
-ms.openlocfilehash: 15caaa7b5d21ae86d0b0079aeb743690294fd85b
-ms.sourcegitcommit: 3f6ae7946b64e857f6358019be2f0fdf19a207ad
+ms.openlocfilehash: 613a3f5f287615c6e18024d1afba1d94d0fea67c
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67074674"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606745"
 ---
 # <a name="manage-telephone-numbers-for-your-organization"></a>Gestire i numeri di telefono per l'organizzazione
 
@@ -54,7 +54,11 @@ La modalità di acquisizione e gestione dei numeri di telefono varia in base all
 
 - Per informazioni sulla gestione dei numeri di telefono per Operator Connect, vedi [Configurare i numeri di telefono con Operator Connect](operator-connect-configure.md#set-up-phone-numbers).
 
+- Per informazioni sulla gestione dei numeri di telefono per Connessione con operatore di telefonia mobile (versione di anteprima pubblica), vedere [Configurare i numeri di telefono con Connessione con operatore di telefonia mobile](operator-connect-mobile-configure.md#set-up-phone-numbers).
+
 - Per informazioni sulla gestione dei numeri di telefono per l'instradamento diretto, vedere [Configurare il numero di telefono e abilitare la voce aziendale](direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice).
+
+
 
 
 > [!NOTE]

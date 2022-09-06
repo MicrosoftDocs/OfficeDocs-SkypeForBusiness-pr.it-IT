@@ -9,7 +9,7 @@
 5. Per assegnare o modificare la posizione per gli interventi di emergenza associata, in Posizione per gli **interventi di emergenza** cerca e seleziona la posizione.
 
    > [!NOTE]
-   > Se stai assegnando numeri agli utenti Operator Connect, potresti o non essere in grado di assegnare o modificare la posizione per gli interventi di emergenza associata. Questa funzionalità dipenderà dall'operatore. Per altre informazioni, contatta il tuo operatore.
+   > Se stai assegnando numeri a Operator Connect o Connessione con operatore di telefonia mobile utenti, potresti o non essere in grado di assegnare o modificare la posizione per gli interventi di emergenza associata. Questa funzionalità dipenderà dall'operatore. Per altre informazioni, contatta il tuo operatore.
 
 6. A seconda che si voglia inviare un messaggio di posta elettronica all'utente con le informazioni sul numero di telefono, disattivare o attivare **Email utente con informazioni sul numero di telefono**. Per impostazione predefinita, questa opzione è attivata.
 7. Fare clic su **Salva**.

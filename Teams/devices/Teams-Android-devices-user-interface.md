@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Devices
 description: Informazioni su come impostare l'interfaccia utente nei dispositivi Teams Android.
-ms.openlocfilehash: 859c1d9d0f7a946f37b53ad81dc2a0637bb26621
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 830609d1bf02c38a2301c0d5a1b9e62ac836c908
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269321"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606835"
 ---
 # <a name="set-microsoft-teams-android-devices-user-interface"></a>Impostare l'interfaccia utente dei dispositivi Android di Microsoft Teams
 
@@ -49,7 +49,7 @@ In questa immagine all'account utente è stata assegnata una [licenza common are
 
 ## <a name="meeting-interface"></a>Interfaccia riunione
 
-Questa immagine mostra un account utente a [cui è assegnata una licenza di Microsoft Teams Rooms Standard](/MicrosoftTeams/rooms/rooms-licensing). Teams Rooms licenze sono progettate per essere usate nelle sale riunioni o negli spazi condivisi, quindi l'interfaccia utente cambia per semplificare l'accesso a una riunione mostrando la visualizzazione Calendario:
+Questa immagine mostra un account utente con una [licenza Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-licensing) assegnata. Teams Rooms licenze sono progettate per essere usate nelle sale riunioni o negli spazi condivisi, quindi l'interfaccia utente cambia per semplificare l'accesso a una riunione mostrando la visualizzazione Calendario:
 
 :::image type="content" source="../media/teams-android-devices-meeting.jpg" alt-text="Interfaccia riunione.":::
 
@@ -61,7 +61,7 @@ Questa immagine mostra un account utente a [cui è assegnata una licenza di Micr
 
 ## <a name="override-automatic-user-interface-detection"></a>Eseguire l'override del rilevamento automatico dell'interfaccia utente
 
-In alcuni casi, è possibile scegliere di assegnare una licenza a un account che non corrisponde all'uso previsto. Ad esempio, è possibile assegnare una licenza utente a un account destinato ad accedere a Teams Rooms su Android. Per impostazione predefinita, viene visualizzata l'interfaccia utente finale invece dell'interfaccia della sala riunioni. Per ignorare l'interfaccia predefinita, creare un nuovo [criterio telefonico IP di Teams](/powershell/module/skype/new-csteamsipphonepolicy?view=skype-ps) e applicarlo a tale account.
+In alcuni casi, è possibile scegliere di assegnare una licenza a un account che non corrisponde all'uso previsto. Ad esempio, è possibile assegnare una licenza utente a un account destinato ad accedere a Teams Rooms su Android. Per impostazione predefinita, viene visualizzata l'interfaccia utente finale invece dell'interfaccia della sala riunioni. Per ignorare l'interfaccia predefinita, creare un nuovo [criterio telefonico IP di Teams](/powershell/module/skype/new-csteamsipphonepolicy) e applicarlo a tale account.
 
 > [!NOTE]
 > La licenza assegnata all'account utente deve avere almeno gli stessi diritti di licenza dell'interfaccia utente desiderata. La licenza Common Area Phone consente solo l'interfaccia utente del telefono area comune. La licenza della sala riunioni consente le interfacce utente della sala riunioni e del telefono dell'area comune. Una licenza E3 o E5 supporta tutte le modalità di accesso.

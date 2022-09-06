@@ -16,16 +16,18 @@ ms.collection:
 ms.assetid: d86ff657-ee92-4b06-aee3-d4c43090bdcb
 description: Questo articolo illustra come distribuire il monitoraggio di Microsoft Teams Rooms in modo integrato e end-to-end usando Monitoraggio di Azure.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2b6d1931b0a1818b5146f6ac0e02c225fea3af52
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 5dbea45008024762f30d9555f4762c4377d2ed1f
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67267451"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606415"
 ---
 # <a name="deploy-no-loc-textmicrosoft-teams-rooms-monitoring-with-no-loc-textazure-monitor"></a>Distribuire il :::no-loc text="Microsoft Teams Rooms"::: monitoraggio con :::no-loc text="Azure Monitor":::
 
 In questo articolo viene illustrato come configurare e distribuire il monitoraggio integrato end-to-end dei :::no-loc text="Microsoft Teams Rooms"::: dispositivi tramite :::no-loc text="Azure Monitor":::.
+
+[!INCLUDE [teams-pro-license-requirement](../includes/teams-pro-license-requirement.md)]
 
 È possibile configurare :::no-loc text="Log Analytics"::: all'interno :::no-loc text="Azure Monitor"::: di per fornire telemetria di base e avvisi che aiuteranno a gestire :::no-loc text="Microsoft Teams Rooms":::. Quando la soluzione di gestione matura, si potrebbe decidere di distribuire ulteriori funzionalità di gestione e dati per creare una visualizzazione più dettagliata della disponibilità e delle prestazioni del dispositivo.
 

@@ -21,41 +21,43 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-may2020
 search.appverid: MET150
-description: Altre informazioni sulle opzioni di Teams chiamate (connettività PSTN) e sulle decisioni che verranno prese per l'organizzazione.
+description: Altre informazioni sulle opzioni per le chiamate di Teams (connettività PSTN) e sulle decisioni che verranno prese per l'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f37265a445a4b7361cdda8e6729944bb5250b029
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 4d30bc6b35f7f5e145e48b9dbf2793d5caa5d12c
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675808"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606585"
 ---
 # <a name="pstn-connectivity-options"></a>Opzioni di connettività PSTN
 
-Microsoft offre funzionalità PBX (Private Branch Exchange) complete per l'organizzazione tramite Sistema telefonico. Tuttavia, per consentire agli utenti di effettuare chiamate all'esterno dell'organizzazione, è necessario connettersi Sistema telefonico alla rete PSTN (Public Switched Telephone Network).
+Microsoft fornisce funzionalità PBX (Private Branch Exchange) complete per l'organizzazione tramite Sistema telefonico. Tuttavia, per consentire agli utenti di effettuare chiamate all'esterno dell'organizzazione, è necessario connettere Sistema telefonico alla rete PSTN (Public Switched Telephone Network).
 
-Questo articolo è incentrato sulle opzioni di connettività PSTN. Per altre informazioni sulle soluzioni vocali Microsoft, inclusi i dettagli sulle funzionalità di Sistema telefonico, vedi [Pianificare la soluzione Teams voce](cloud-voice-landing-page.md).
+Questo articolo è incentrato sulle opzioni di connettività PSTN. Per altre informazioni sulle soluzioni vocali Microsoft, inclusi i dettagli sulle funzionalità di Sistema [telefonico, vedere Pianificare la soluzione vocale di Teams](cloud-voice-landing-page.md).
 
-Per connettere Sistema telefonico a PSTN, è possibile scegliere una delle opzioni seguenti:
+Per connettere Sistema telefonico alla rete PSTN, è possibile scegliere una delle opzioni seguenti:
 
 - [**Piano per chiamate**](#phone-system-with-calling-plan). Una soluzione all-in-the-cloud con Microsoft come gestore PSTN.
 
-- [**Connessione con operatore**](#phone-system-with-operator-connect). Con Connessione con operatore, se il gestore esistente partecipa al programma Microsoft Connessione con operatore, potrà gestire le chiamate PSTN e i controller dei confini della sessione.
+- [**Operator Connect**](#phone-system-with-operator-connect). Con Operator Connect, se il gestore esistente partecipa al programma Microsoft Operator Connect, potrà gestire le chiamate PSTN e i controller dei confini della sessione.
 
-- [**Routing diretto**](#phone-system-with-direct-routing), che consente di usare il proprio gestore PSTN connettendo i controller SBC (Session Border Controller) a Sistema telefonico.
+- [**Connessione con operatore di telefonia mobile**](#phone-system-with-operator-connect-mobile). Con Connessione con operatore di telefonia mobile, il numero di telefono abilitato per la SIM di un utente è anche il numero di telefono di Teams. Se il gestore esistente partecipa al programma Microsoft Connessione con operatore di telefonia mobile, può gestire il servizio per portare le chiamate PSTN in Teams.  **Connessione con operatore di telefonia mobile è una versione di anteprima pubblica.**
+
+- [**Routing diretto**](#phone-system-with-direct-routing), che consente di usare il proprio gestore PSTN connettendo i controller SBC (Session Border Controller) al sistema telefonico.
 
 È anche possibile scegliere una combinazione di opzioni che consente di progettare una soluzione per un ambiente complesso o di gestire una migrazione in più passaggi.
 
-L'opzione o le opzioni scelte influiscono sulla configurazione di alcune caratteristiche Sistema telefonico. Per altre informazioni, vedere [Considerazioni sulla configurazione](#configuration-considerations) più avanti in questo articolo.
+L'opzione o le opzioni che scegli influiscono sulla configurazione di alcune funzionalità di Sistema telefonico. Per altre informazioni, vedere [Considerazioni sulla configurazione](#configuration-considerations) più avanti in questo articolo.
 
 ## <a name="phone-system-with-calling-plan"></a>Sistema telefonico con piano per chiamate
 
-Sistema telefonico con Piano per chiamate è la soluzione vocale all-in-the-cloud di Microsoft per gli utenti Teams. Questa soluzione è l'opzione più semplice che connette Sistema telefonico alla rete PSTN. Con questa opzione, Microsoft funge da gestore PSTN, come illustrato nel diagramma seguente:
+Sistema telefonico con piano per chiamate è la soluzione vocale all-in-the-cloud di Microsoft per gli utenti di Teams. Questa soluzione è l'opzione più semplice che connette Sistema telefonico al PSTN. Con questa opzione, Microsoft funge da gestore PSTN, come illustrato nel diagramma seguente:
 
-![Il diagramma 1 mostra Sistema telefonico con Il piano per chiamate.](media/voice-solutions-simple.png)
+![Il diagramma 1 mostra sistema telefonico con piano per chiamate.](media/voice-solutions-simple.png)
 
-Se rispondi sì a quanto segue, Sistema telefonico con Piano per chiamate è la soluzione giusta per te:
+Se rispondi sì a quanto segue, sistema telefonico con piano per chiamate è la soluzione giusta per te:
 
 - Il piano per chiamate è disponibile nella tua area geografica.
 - Non è necessario conservare l'attuale gestore PSTN.
@@ -63,9 +65,9 @@ Se rispondi sì a quanto segue, Sistema telefonico con Piano per chiamate è la 
 
 Con questa opzione:
 
-- Ottieni Sistema telefonico con piani per chiamate nazionali o internazionali aggiunti che consentono di chiamare i telefoni di tutto il mondo (a seconda del livello di servizio concesso in licenza).
+- Ottieni sistema telefonico con piani per chiamate nazionali o internazionali aggiunti che consentono di chiamare i telefoni di tutto il mondo (a seconda del livello di servizio concesso in licenza).
 
-- Non è necessaria la distribuzione o la manutenzione di una distribuzione&mdash;locale perché il piano per chiamate funziona fuori Microsoft 365.
+- Non è necessaria la distribuzione o la manutenzione di una distribuzione&mdash;locale perché il piano per chiamate funziona da Microsoft 365.
 
 - Nota: puoi connettere un session border controller (SBC) supportato tramite Direct Routing per l'interoperabilità con PBX di terze parti, dispositivi analogici e altri dispositivi di telefonia supportati da SBC.
 
@@ -78,40 +80,56 @@ Per ulteriori informazioni sul Piano per chiamate, vedi gli articoli seguenti:
 - [Disponibilità di Piano di chiamata in Paesi e aree geografiche](./country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 - [Configurare il piano per chiamate](set-up-calling-plans.md)
 
-## <a name="phone-system-with-operator-connect"></a>Sistema telefonico con Connessione con operatore
+## <a name="phone-system-with-operator-connect"></a>Sistema telefonico con Operator Connect
 
-Con Connessione con operatore, se il gestore telefonico esistente partecipa al programma Microsoft Connessione con operatore, potrà gestire il servizio per portare le chiamate PSTN a Teams. Il gestore gestisce i servizi di chiamata PSTN e i controller dei confini della sessione, consentendoti di risparmiare sull'acquisto e la gestione dell'hardware.
+Con Operator Connect, se il gestore esistente partecipa al programma Microsoft Operator Connect, può gestire il servizio per portare le chiamate PSTN in Teams. Il gestore gestisce i servizi di chiamata PSTN e i controller dei confini della sessione, consentendoti di risparmiare sull'acquisto e la gestione dell'hardware.
 
-Connessione con operatore potrebbe essere la soluzione giusta per l'organizzazione se:
+Operator Connect potrebbe essere la soluzione giusta per la tua organizzazione se:
 
 - Il piano per chiamate Microsoft non è disponibile nella tua posizione geografica.
-- Il gestore preferito è un partecipante al programma Microsoft Connessione con operatore.
-- Vuoi trovare un nuovo gestore telefonico per abilitare le chiamate in Teams.
+- Il tuo gestore preferito è un partecipante al programma Microsoft Operator Connect.
+- Si vuole trovare un nuovo operatore per abilitare le chiamate in Teams.
 
-Per informazioni sui vantaggi e i requisiti di Connessione con operatore e per un elenco dei vettori che partecipano a questo programma, vedi [Plan Connessione con operatore](operator-connect-plan.md). Per informazioni su come configurare Connessione con operatore, vedere [Configurare Connessione con operatore](operator-connect-configure.md).
+Per informazioni sui vantaggi e i requisiti di Operator Connect e per un elenco dei vettori che partecipano a questo programma, vedi [Plan Operator Connect](operator-connect-plan.md). Per informazioni su come configurare Operator Connect, vedi [Configurare Operator Connect](operator-connect-configure.md).
+
+## <a name="phone-system-with-operator-connect-mobile"></a>Sistema telefonico con Connessione con operatore di telefonia mobile
+
+**Connessione con operatore di telefonia mobile è una versione di anteprima pubblica.**
+
+Se il gestore esistente partecipa al programma Microsoft Connessione con operatore di telefonia mobile, può gestire il servizio per portare le chiamate PSTN in Teams. Con Connessione con operatore di telefonia mobile, il numero di telefono abilitato per la SIM di un utente è anche il numero di telefono di Teams.  Gli utenti possono usare un singolo numero di telefono in Microsoft Teams sia nelle linee di servizio per dispositivi mobili che in quello da tavolo.  
+
+È consigliabile scegliere una combinazione di servizi. Ad esempio, è possibile scegliere Connessione con operatore di telefonia mobile per le organizzazioni di vendita e di campo che richiedono supporto per dispositivi mobili, ma un'altra soluzione per l'organizzazione del call center in loco che si basa sui telefoni da tavolo. 
+
+Connessione con operatore di telefonia mobile potrebbe essere la soluzione giusta per l'organizzazione se:
+
+- Si vuole usare un numero di cellulare primario di proprietà dell'azienda abilitato per la SIM per Teams Phone come soluzione a numero singolo.
+- L'operatore preferito è un partecipante al programma Microsoft Connessione con operatore di telefonia mobile.
+- Si vuole trovare un nuovo operatore per abilitare le chiamate in Teams.
+
+Per informazioni sui vantaggi e i requisiti di Connessione con operatore di telefonia mobile e per i collegamenti ai gestori che partecipano a questo programma, vedi [Pianificare Connessione con operatore di telefonia mobile](operator-connect-mobile-plan.md). Per informazioni su come configurare Connessione con operatore di telefonia mobile, vedere [Configurare Connessione con operatore di telefonia mobile](operator-connect-mobile-configure.md).
 
 ## <a name="phone-system-with-direct-routing"></a>Sistema telefonico con routing diretto
 
-Questa opzione consente di connettere Sistema telefonico alla rete telefonica tramite direct routing, come illustrato nel diagramma seguente: 
+Questa opzione consente di connettere il sistema telefonico alla rete telefonica utilizzando l'instradamento diretto, come illustrato nel diagramma seguente: 
 
-![Il diagramma 5 mostra Sistema telefonico con routing diretto.](media/voice-solution-with-direct-routing.png)
+![Il diagramma 5 mostra sistema telefonico con routing diretto.](media/voice-solution-with-direct-routing.png)
 
-Se rispondi sì alle domande seguenti, Sistema telefonico con Direct Routing è la soluzione giusta per te:
+Se rispondi sì alle domande seguenti, sistema telefonico con routing diretto è la soluzione giusta per te:
 
-- Si vuole usare Teams con Sistema telefonico.
+- Si vuole usare Teams con sistema telefonico.
 - È necessario mantenere l'attuale gestore PSTN.
 - Vuoi combinare il routing, con alcune chiamate che passano attraverso il Piano per chiamate, alcune attraverso il tuo operatore.
 - È necessario interagire con PBX e/o apparecchiature di terze parti, ad esempio pager overhead, dispositivi analogici e così via.
 
 Con questa opzione:
 
-- È possibile connettere il proprio session border controller (SBC) supportato a Sistema telefonico senza la necessità di software locale aggiuntivo.
+- Puoi connettere il tuo session border controller (SBC) supportato al sistema telefonico senza la necessità di ulteriori software locali.
 
 - È possibile utilizzare praticamente qualsiasi operatore di telefonia con Sistema telefonico.
 
 - Puoi configurare e gestire questa opzione oppure può essere configurata e gestita dal gestore o dal partner (chiedi se il gestore o il partner fornisce questa opzione).
 
-- È possibile configurare l'interoperabilità tra dispositivi&mdash;di telefonia quali PBX di terze parti e dispositivi&mdash;analogici e Sistema telefonico.
+- È possibile configurare l'interoperabilità tra le apparecchiature&mdash;di telefonia, ad esempio un PBX di terze parti e dispositivi&mdash;analogici e Sistema telefonico.
 
 Questa opzione richiede quanto segue:
 
@@ -120,7 +138,7 @@ Questa opzione richiede quanto segue:
 - Distribuzione e gestione di una scheda SBC supportata.
 
 - Contratto con un vettore di terze parti.
-  A meno che non sia stato distribuito come opzione per fornire la connessione a PBX di terze parti, dispositivi analogici o altri dispositivi di telefonia per gli utenti che hanno Sistema telefonico con il piano per chiamate.
+  A meno che non sia stato distribuito come opzione per fornire la connessione a PBX di terze parti, dispositivi analogici o altri dispositivi di telefonia per gli utenti del sistema telefonico con piano per chiamate.
 
 Per altre informazioni sull'instradamento diretto, vedere gli articoli seguenti:
 
@@ -132,33 +150,37 @@ Per altre informazioni sull'instradamento diretto, vedere gli articoli seguenti:
 
 ## <a name="configuration-considerations"></a>Considerazioni sulla configurazione
 
-La maggior parte delle caratteristiche Sistema telefonico sono uguali indipendentemente dall'opzione di connettività PSTN scelta. Ad esempio, sono disponibili impostazioni di chiamata senza risposta e inoltro, trasferimento di chiamata, musica personalizzata in attesa, parcheggio di chiamata, linea condivisa e app vocali. Per un elenco completo delle funzionalità di Sistema telefonico, vedi [Ecco cosa ottieni con Sistema telefonico](here-s-what-you-get-with-phone-system.md).
+La maggior parte delle funzionalità di Sistema telefonico sono uguali indipendentemente dall'opzione di connettività PSTN scelta. Ad esempio, sono disponibili impostazioni di chiamata senza risposta e inoltro, trasferimento di chiamata, musica personalizzata in attesa, parcheggio di chiamata, linea condivisa e app vocali. Per un elenco completo delle funzionalità di Sistema telefonico, vedi [Ecco cosa ottieni con Sistema telefonico](here-s-what-you-get-with-phone-system.md).
 
-Esistono tuttavia alcune differenze nelle funzionalità che influiscono sulla configurazione di determinate caratteristiche di Sistema telefonico. Ad esempio, il routing diretto richiede passaggi aggiuntivi per configurare il routing delle chiamate. Come altro esempio, direct routing provides Location-Based-Routing (LBR). LBR consente di limitare il bypass a pedaggio in determinate aree geografiche in cui non è consentito. 
+Esistono tuttavia alcune differenze di funzionalità che influiscono sulla configurazione di determinate funzionalità di Sistema telefonico. Ad esempio, il routing diretto richiede passaggi aggiuntivi per configurare il routing delle chiamate. Come altro esempio, direct routing provides Location-Based-Routing (LBR). LBR consente di limitare il bypass a pedaggio in determinate aree geografiche in cui non è consentito. 
 
 La tabella seguente evidenzia le differenze di configurazione principali. Le sezioni che seguono la tabella forniscono collegamenti ad altre informazioni e dettagli.
 
-| Opzione | Descrizione | gestione dei numeri di Telefono | Routing delle chiamate | Disponibilità per le chiamate di emergenza |
+| Opzione | Descrizione | Gestione dei numeri di telefono | Routing delle chiamate | Disponibilità per le chiamate di emergenza |
 | :------------| :-------| :-------| :-------| :-------| 
 | Piani di chiamata | -Microsoft funge da gestore PSTN.<br>-Non è necessario acquistare o gestire le schede SBC.| Ottenuto tramite Microsoft.| -Gestito da Microsoft. <br> -Amministrazione configura i piani di chiamata utente per la traduzione dei numeri. | -Abilitato da Microsoft. <br> -Amministrazione registra gli indirizzi. <br> -Chiamate dinamiche supportate. |
-| Connessione con operatore | -Carrier gestisce la connettività PSTN e gli SBC. <br> -Non è necessario acquistare o gestire le schede SBC. | -Ottenuto tramite vettore. <br> - Numeri associati agli indirizzi di emergenza gestiti dal gestore telefonico. | -Gestito dal vettore. <br>-Amministrazione configura i piani di chiamata utente per la traduzione dei numeri. | -Abilitato dal vettore. <br> -Amministrazione registra gli indirizzi. <br> -Chiamate dinamiche supportate. |
-| Routing diretto | -Richiede la certificazione SBC acquistata da fornitori di terze parti.<br>-Connessione il tuo SBC a Sistema telefonico.<br> -Usare il gestore PSTN esistente. | Ottenuti tramite vettore. | -Richiede una configurazione aggiuntiva da parte dell'amministratore.<br>-Amministrazione configura i piani di chiamata trunk per la traduzione dei numeri. <br>-LBR disponibile per limitare il bypass a pagamento. | -Richiede una configurazione aggiuntiva da parte dell'amministratore. <br>-Indirizzi registrati non supportati. <br>-Chiamate dinamiche supportate ma richiede una configurazione aggiuntiva. |
+| Operator Connect | -Carrier gestisce la connettività PSTN e gli SBC. <br> -Non è necessario acquistare o gestire le schede SBC. | -Ottenuto tramite vettore. <br> - Numeri associati agli indirizzi di emergenza gestiti dal gestore telefonico. | -Gestito dal vettore. <br>-Amministrazione configura i piani di chiamata utente per la traduzione dei numeri. | -Abilitato dal vettore. <br> -Amministrazione registra gli indirizzi. <br> -Chiamate dinamiche supportate. |
+| Connessione con operatore di telefonia mobile | -Carrier gestisce SIM-Enabled numero di cellulare, connettività PSTN e SBC. <br> -Non è necessario acquistare o gestire le schede SBC. | -Ottenuto tramite vettore. <br> -Numeri associati agli indirizzi di emergenza gestiti dal gestore telefonico. | -Gestito dal vettore. <br> Amministrazione configura i piani di chiamata utente per la traduzione dei numeri. |- Abilitato dal vettore. <br> - Amministrazione registra gli indirizzi. <br> - Chiamate dinamiche supportate. <br> - Carrier supportava chiamate di emergenza native dialer. |
+| Routing diretto | -Richiede la certificazione SBC acquistata da fornitori di terze parti.<br>-Connetti il tuo SBC al sistema telefonico.<br> -Usare il gestore PSTN esistente. | Ottenuti tramite vettore. | -Richiede una configurazione aggiuntiva da parte dell'amministratore.<br>-Amministrazione configura i piani di chiamata trunk per la traduzione dei numeri. <br>-LBR disponibile per limitare il bypass a pagamento. | -Richiede una configurazione aggiuntiva da parte dell'amministratore. <br>-Indirizzi registrati non supportati. <br>-Chiamate dinamiche supportate ma richiede una configurazione aggiuntiva. |
 
-### <a name="phone-number-management"></a>gestione dei numeri di Telefono
 
-Microsoft dispone di due tipi di numeri di telefono disponibili: numeri abbonati (utente), che possono essere assegnati agli utenti dell'organizzazione, e numeri di servizio, disponibili come numeri di servizio a pagamento e gratuiti. I numeri di servizio hanno una capacità di chiamata simultanea superiore rispetto ai numeri degli abbonati e possono essere assegnati a servizi come Audioconferenza, operatori automatici o code di chiamata.
+### <a name="phone-number-management"></a>Gestione dei numeri di telefono
+
+Microsoft dispone di due tipi di numeri di telefono disponibili: numeri abbonati (utente), che possono essere assegnati agli utenti dell'organizzazione, e numeri di servizio, disponibili come numeri di servizio a pagamento e gratuiti. I numeri di servizio hanno una capacità di chiamata simultanea superiore rispetto ai numeri degli abbonati e possono essere assegnati a servizi come Audioconferenze, Operatori automatici o Code di chiamata.
 
 Dovrai decidere:
 
 - Quali posizioni degli utenti richiedono nuovi numeri di telefono da Microsoft?
 - Quale tipo di numero di telefono (abbonato o servizio) mi serve?
-- Ricerca per categorie trasferire i numeri di telefono esistenti in Teams?
+- Ricerca per categorie trasferire numeri di telefono esistenti in Teams?
 
 La modalità di acquisizione e gestione dei numeri di telefono varia in base all'opzione di connettività PSTN.
 
-- Per informazioni sulla gestione dei numeri di telefono per il Piano per chiamate, vedi [Gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
+- Per informazioni sulla gestione dei numeri di telefono per il Piano per chiamate, vedi [Gestire i numeri di telefono per i piani per chiamate](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
-- Per informazioni sulla gestione dei numeri di telefono con Connessione con operatore, vedi [Configurare i numeri di telefono con Connessione con operatore](operator-connect-configure.md#set-up-phone-numbers).
+- Per informazioni sulla gestione dei numeri di telefono con Operator Connect, vedi [Configurare i numeri di telefono con Operator Connect](operator-connect-configure.md#set-up-phone-numbers).
+
+- Per informazioni sulla gestione dei numeri di telefono con Connessione con operatore di telefonia mobile, vedi [Configurare i numeri di telefono con Connessione con operatore di telefonia mobile](operator-connect-mobile-configure.md#set-up-phone-numbers).
 
 - Per informazioni sulla gestione dei numeri di telefono per il routing diretto, vedi [Configurare il numero di telefono e abilitare la voce aziendale](direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice).
 
@@ -168,13 +190,13 @@ La configurazione del routing delle chiamate varia in base all'opzione di connet
 
 - Per i Piani per chiamate, la maggior parte del routing delle chiamate viene gestita dall'infrastruttura del piano per chiamate Microsoft. È possibile configurare piani di chiamata utente ai fini della traduzione del numero per l'autorizzazione delle chiamate e il routing delle chiamate. Per altre informazioni, vedere [Che cosa sono i piani di chiamata?](what-are-dial-plans.md).
 
-- Per Connessione con operatore, la maggior parte del routing delle chiamate viene gestita dal gestore telefonico.  È possibile configurare piani di chiamata utente ai fini della traduzione del numero per l'autorizzazione delle chiamate e il routing delle chiamate. Per altre informazioni, vedere [Che cosa sono i piani di chiamata?](what-are-dial-plans.md).
+- Per Operator Connect e Connessione con operatore di telefonia mobile, la maggior parte del routing delle chiamate è gestita dal gestore telefonico. È possibile configurare piani di chiamata utente ai fini della traduzione del numero per l'autorizzazione delle chiamate e il routing delle chiamate. Per altre informazioni, vedere [Che cosa sono i piani di chiamata?](what-are-dial-plans.md).
 
 - Per l'instradamento diretto, è necessario configurare il routing delle chiamate specificando le route vocali e assegnando criteri di routing vocale agli utenti. È possibile configurare piani di chiamata per la traduzione dei numeri a livello di trunk per garantire l'interoperabilità con i controller di session border (SBC). Per altre informazioni, vedere [Configurare il routing vocale per il routing diretto](direct-routing-voice-routing.md), [Gestire i criteri di routing vocale](manage-voice-routing-policies.md) e [Tradurre numeri di telefono](direct-routing-translate-numbers.md). 
 
 ### <a name="location-based-routing-for-direct-routing"></a>routing Location-Based per routing diretto
 
-In alcuni paesi e aree geografiche, è illegale bypassare il vettore PSTN per ridurre i costi delle chiamate interurbane. Location-Based Routing (LBR) per direct routing consente di limitare il bypass a pagamento per Teams utenti in base alla loro posizione geografica. Per ulteriori informazioni su come pianificare e configurare l'LBR, vedere gli articoli seguenti:
+In alcuni paesi e aree geografiche, è illegale bypassare il vettore PSTN per ridurre i costi delle chiamate interurbane. Location-Based Routing (LBR) per direct routing consente di limitare il bypass a pagamento per gli utenti di Teams in base alla loro posizione geografica. Per ulteriori informazioni su come pianificare e configurare l'LBR, vedere gli articoli seguenti:
 
 - [Pianificare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-plan.md)
 - [Configurare le impostazioni di rete per l'instradamento basato sulla posizione](location-based-routing-configure-network-settings.md)
@@ -186,11 +208,15 @@ In alcuni paesi e aree geografiche, è illegale bypassare il vettore PSTN per ri
 
 La configurazione delle chiamate di emergenza varia in base all'opzione di connettività PSTN.
 
-- Per il Piano per chiamate, ogni utente viene abilitato automaticamente per le chiamate di emergenza. L'utente deve avere un indirizzo di emergenza registrato associato al numero di telefono assegnato. Sono supportate le chiamate di emergenza dinamiche (in base alla posizione del client Teams).  
+- Per il Piano per chiamate, ogni utente viene abilitato automaticamente per le chiamate di emergenza. L'utente deve avere un indirizzo di emergenza registrato associato al numero di telefono assegnato. Sono supportate le chiamate di emergenza dinamiche (in base alla posizione del client Teams). Per ulteriori informazioni, vedi [Considerazioni per i piani per chiamate](what-are-emergency-locations-addresses-and-call-routing.md#considerations-for-calling-plans) 
 
-- Per Connessione con operatore, ogni utente viene abilitato automaticamente per le chiamate di emergenza. All'utente è richiesto di avere un indirizzo di emergenza registrato associato al numero di telefono assegnato,r, ma l'indirizzo può essere impostato solo dal partner del vettore. Sono supportate le chiamate di emergenza dinamiche (in base alla posizione del client Teams).
+- Per Operator Connect, ogni utente viene abilitato automaticamente per le chiamate di emergenza. All'utente deve essere associato un indirizzo di emergenza registrato al numero di telefono assegnato. Sono supportate le chiamate di emergenza dinamiche (in base alla posizione del client Teams). Per ulteriori informazioni, vedi [Considerazioni per Operator Connect](what-are-emergency-locations-addresses-and-call-routing.md#considerations-for-operator-connect). 
 
-- Per il routing diretto, è necessario definire criteri per le chiamate di emergenza per gli utenti utilizzando un criterio di routing delle chiamate di emergenza Teams (TeamsEmergencyCallRoutingPolicy). I criteri definiranno i numeri di emergenza e la destinazione di routing associata. Le posizioni registrate per gli interventi di emergenza non sono supportate per gli utenti di Direct Routing. Per le chiamate di emergenza dinamiche, è necessaria una configurazione aggiuntiva per l'instradamento delle chiamate di emergenza ed eventualmente per la connettività dei partner.
+- Per Connessione con operatore di telefonia mobile, ogni utente viene abilitato automaticamente per le chiamate di emergenza. Le chiamate di emergenza vengono instradate automaticamente al gestore Connessione con operatore di telefonia mobile per un determinato numero. Sono supportate le chiamate di emergenza dinamiche (in base alla posizione del client Teams). Per altre informazioni, vedere [Considerazioni per Connessione con operatore di telefonia mobile](what-are-emergency-locations-addresses-and-call-routing.md#considerations-for-operator-connect-mobile). 
+
+- Per il routing diretto, è necessario definire criteri per le chiamate di emergenza per gli utenti utilizzando un criterio di routing delle chiamate di emergenza di Teams (TeamsEmergencyCallRoutingPolicy). I criteri definiranno i numeri di emergenza e la destinazione di routing associata. Le posizioni registrate per gli interventi di emergenza non sono supportate per gli utenti di Direct Routing. Per le chiamate di emergenza dinamiche, è necessaria una configurazione aggiuntiva per l'instradamento delle chiamate di emergenza ed eventualmente per la connettività dei partner. Per altre informazioni, vedere [Considerazioni per il routing diretto](what-are-emergency-locations-addresses-and-call-routing.md#considerations-for-direct-routing).
+
+#### <a name="for-more-information"></a>Per altre informazioni
 
 Per ulteriori informazioni sui concetti e la terminologia relativi alle chiamate di emergenza e su come configurare le chiamate di emergenza e le chiamate di emergenza dinamiche, vedi gli articoli seguenti:
 

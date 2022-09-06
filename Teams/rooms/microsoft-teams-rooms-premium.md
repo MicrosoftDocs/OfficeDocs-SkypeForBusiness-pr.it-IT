@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sul servizio gestito Microsoft Teams Rooms.
 f1keywords: ''
-ms.openlocfilehash: 322e67a0bc6e03db7960e64d2cd5e7a97b930dbc
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 5e59312d3febe2dc6b4178874bae21fc27fe77d2
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269581"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606285"
 ---
 # <a name="microsoft-teams-rooms-managed-service"></a>servizio gestito Microsoft Teams Rooms
 
@@ -110,11 +110,11 @@ Per altri dettagli sulla copertura del supporto del servizio gestito Microsoft T
 
 ## <a name="supported-regions"></a>Aree geografiche supportate
 
-La licenza Microsoft Teams Rooms Premium è disponibile nei seguenti paesi con audioconferenza:
+La licenza Microsoft Teams Rooms Pro è disponibile nei paesi seguenti con audioconferenza:
 
 - Australia, Austria, Belgio, Brasile, Bulgaria, Canada, Croazia, Cipro, Danimarca, Estonia, Finlandia, Francia, Germania, Grecia, Ras di Hong Kong, Irlanda, Italia, Giappone, Lettonia, Lituania, Lussemburgo, Malta, Messico, Monaco, Paesi Bassi, Nuova Zelanda, Norvegia, Polonia, Portogallo, Romania, Russia, Singapore, Slovacchia, Slovenia, Sudafrica, Spagna, Svezia, Svizzera, Taiwan, Regno Unito, Stati Uniti.
 
-La licenza Microsoft Teams Rooms Premium è disponibile nei paesi seguenti senza audioconferenza:
+La licenza Microsoft Teams Rooms Pro è disponibile nei paesi seguenti senza audioconferenza:
 
 - Azzorre, Isola Bouvet, Isola Christmas, Isole Cocos (Keeling), Isole Cook, Isole Fær Øer, Figi, Gibilterra, Groenlandia, Isole Heard e McDonald, Islanda, India, Kiribati, Lesotho, Liechtenstein, Macao R.A.S., Isole Marshall, Micronesia, Nauru, Niue, Isola Norfolk, Isole Marianne settentrionali, Palau, Papua Nuova Guinea, Isole Pitcairn, Saint Pierre e Miquelon, Samoa, San Marino, Isole Salomone, Hawaii, Tokelau, Tonga, Tuvalu,  Vanuatu, Città del Vaticano, Wallis e Futuna.
 

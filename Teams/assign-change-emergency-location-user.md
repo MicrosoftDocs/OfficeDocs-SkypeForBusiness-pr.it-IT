@@ -16,46 +16,46 @@ appliesto:
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: In questo articolo viene spiegato come assegnare o modificare una posizione per gli interventi di emergenza per gli utenti dell'organizzazione.
+description: In questo articolo vengono fornite informazioni su come assegnare o modificare una posizione per gli interventi di emergenza per gli utenti dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 004635be112bb8d38b88277e89c24d263b21ec37
-ms.sourcegitcommit: bc686eedb37e565148d0c7a61ffa865aaca37d20
+ms.openlocfilehash: 2562661a08c98c15a24a5e7db6a0f31dee864573
+ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62180899"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67606605"
 ---
 # <a name="assign-or-change-an-emergency-location-for-a-user"></a>Assegnare o modificare una posizione di emergenza per un utente
 
-Indipendentemente dall'opzione di connettività [PSTN](pstn-connectivity.md) scelta, è necessario scegliere Piani per chiamate Microsoft, Connessione con operatore o Instradamento diretto a ogni numero di telefono o &mdash; &mdash; utente.
+Indipendentemente [dall'opzione di connettività PSTN](pstn-connectivity.md), scegli&mdash;Piani per chiamate Microsoft, Operator Connect, Connessione con operatore di telefonia mobile (versione di anteprima pubblica) o Instradamento&mdash;diretto a ogni numero di telefono o utente deve essere assegnata una posizione per gli interventi di emergenza.
 
-A seconda dell'opzione di connettività PSTN, tuttavia, la modalità di gestione e assegnazione delle posizioni di emergenza per un utente può variare. Per altre informazioni, vedere [Gestire le chiamate di emergenza.](what-are-emergency-locations-addresses-and-call-routing.md)
+A seconda dell'opzione di connettività PSTN, tuttavia, la modalità di gestione e assegnazione delle posizioni per gli interventi di emergenza per un utente può variare. Per ulteriori informazioni, vedi [Gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md).
 
 Questo articolo descrive come assegnare o modificare una posizione per gli interventi di emergenza per un utente. 
 
-Questo articolo si applica ai Piani per chiamate e Connessione con operatore.
+Questo articolo si applica ai Piani per chiamate, Operator Connect e Connessione con operatore di telefonia mobile (versione di anteprima pubblica).
   
-È possibile assegnare o modificare una posizione per gli interventi di emergenza per un utente nell'interfaccia di amministrazione Microsoft Teams o usando PowerShell.
+È possibile assegnare o modificare una posizione per gli interventi di emergenza per un utente nell'interfaccia di amministrazione di Microsoft Teams o usando PowerShell.
 
 ## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione fare clic su **Numeri**  >  **Telefono vocali**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams fare clic su **Numeri di telefono** **vocale** > .
 
-2. Nella pagina **Telefono numeri** fare clic sulla **scheda Numeri,** selezionare un numero utente nell'elenco e quindi fare clic su **Modifica.**
+2. Nella pagina **Numeri di telefono** fare clic sulla scheda **Numeri** , selezionare un numero utente nell'elenco e quindi fare clic su **Modifica**.
 
-3. Nel riquadro **Modifica,** in **Posizione emergenza,** eseguire una delle operazioni seguenti:
+3. Nel riquadro **Modifica** , in **Posizione per gli interventi di emergenza**, eseguire una delle operazioni seguenti:
 
-   - Per assegnare una posizione per gli interventi di emergenza, cercare e selezionare una posizione per gli interventi di emergenza.
+   - Per assegnare una posizione per gli interventi di emergenza, cerca e seleziona una posizione per gli interventi di emergenza.
 
-   - Per modificare la posizione di emergenza già assegnata all'utente, fare clic su **X** per rimuovere la posizione esistente e quindi cercare e selezionare la posizione da assegnare.
+   - Per modificare la posizione per gli interventi di emergenza già assegnata all'utente, fai clic su **X** per rimuovere la posizione esistente, quindi cerca e seleziona la posizione che vuoi assegnare.
 
-4. A seconda che si voglia inviare un messaggio di posta elettronica all'utente con le informazioni sul numero di telefono, disattivare o attivare l'utente di posta elettronica **con informazioni sul numero di telefono.** Per impostazione predefinita, questa opzione è impostata su .
+4. A seconda che si voglia inviare un messaggio di posta elettronica all'utente con le informazioni sul numero di telefono, disattivare o attivare **Email utente con informazioni sul numero di telefono**. Per impostazione predefinita, questa opzione è attivata.
 
-5. Fare clic **su Applica**.
+5. Fare clic su **Applica**.
 
 ## <a name="using-powershell"></a>Utilizzo di PowerShell
 
-Vedere [Set-CsPhoneNumberAssignment](/powershell/module/teams/set-csphonenumberassignment). 
+Vedi [Set-CsPhoneNumberAssignment](/powershell/module/teams/set-csphonenumberassignment). 
 
     
 ## <a name="related-topics"></a>Argomenti correlati
