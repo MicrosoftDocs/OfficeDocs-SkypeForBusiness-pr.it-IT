@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni sui criteri di messaggistica e su come possono essere usati per controllare la messaggistica chat in Teams.
-ms.openlocfilehash: 1975262b6fdd404d9314c3644ebba79b6cb5bd9a
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: 2b428f39624ce7e6fb82815c7cbba3872b2113c2
+ms.sourcegitcommit: 8005e7953fcb6dcc78ba406925aeaaa49f08d3d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67396517"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67609444"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in Teams
 
@@ -80,9 +80,8 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 
 - **I proprietari possono eliminare i messaggi inviati**  Usare questa impostazione per consentire ai proprietari di eliminare i messaggi o i post del canale inviati dall'utente.
 - **Eliminare i messaggi inviati** Usare questa impostazione per consentire agli utenti di eliminare i messaggi inviati in chat.
-- **Eliminare una chat** Usare questa impostazione per consentire agli utenti di eliminare i messaggi inviati in chat.
 - **Modificare i messaggi inviati** Usare questa impostazione per consentire agli utenti di modificare i messaggi inviati in chat.
-- **Conferme di lettura** Le conferme di lettura consentono al mittente di un messaggio di chat di ricevere una notifica quando il messaggio è stato letto dal destinatario in 1:1 e in chat di gruppo almeno 20 persone. Le conferme di lettura dei messaggi eliminano dubbi sul fatto che un messaggio sia stato letto e migliorano le comunicazioni del team. Le conferme di lettura non vengono acquisite nei report di eDiscovery.  
+- **Conferme di lettura** Le conferme di lettura consentono al mittente di un messaggio di chat di ricevere una notifica quando il messaggio è stato letto dal destinatario in 1:1 e in chat di gruppo almeno 20 persone. Le conferme di lettura dei messaggi eliminano l'incertezza sul fatto che un messaggio sia stato letto e migliorano le comunicazioni del team. Le conferme di lettura non vengono acquisite nei report di eDiscovery.  
     - **Controllo dell'utente** Questo significa che gli utenti possono decidere se attivare o disattivare le conferme di lettura. L'impostazione predefinita all'interno dell'app è ATTIVATA. Gli utenti possono quindi disattivarla.
     - **Attivato per tutti gli utenti** Questo significa che tutti gli utenti del tenant avranno la funzionalità attivata senza la possibilità di disattivarla. Quando si usa l'impostazione **Attivato per tutti** , l'unico modo per impostare le ricevute per l'intero tenant consiste nell'avere un solo criterio di messaggistica per l'intero tenant (il criterio predefinito denominato "Globale (impostazione predefinita a livello di organizzazione)") oppure fare in modo che tutti i criteri di messaggistica nel tenant utilizzino le stesse impostazioni per le conferme. La caratteristica conferme di lettura è più efficace se è **abilitata per tutti**.
     - **Disattivato per tutti gli utenti** Questo significa che la caratteristica è disabilitata e nessuno nel tenant ha conferme di lettura né può attivarla.

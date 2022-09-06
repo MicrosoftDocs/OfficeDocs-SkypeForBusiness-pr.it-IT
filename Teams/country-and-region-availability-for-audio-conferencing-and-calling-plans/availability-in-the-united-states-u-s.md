@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Stati Uniti.
-ms.openlocfilehash: b3d20d24e0c52538eba1f55f91d34a2b8d3107dd
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: 8934657313c9d5bed2eea49189311442c7c6e54d
+ms.sourcegitcommit: 8005e7953fcb6dcc78ba406925aeaaa49f08d3d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67396717"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "67609454"
 ---
 # <a name="availability-in-the-united-states-us"></a>Disponibilità nel Stati Uniti (Stati Uniti)
 
@@ -60,7 +60,7 @@ Ecco i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft 
 | **Funzionalità**                                       | **Dettagli**                                                                                                                                                                                                                                                                                                                     |
 |:--------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |I Piani per chiamate sono disponibili per l'acquisto?  |Sì          |   
-|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 1200 minuti </li><li> Piano per chiamate internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti viene raggiunto per primo nel mese di calendario)</li></ul>|
+|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 3.000 minuti </li><li> Piano per chiamate internazionali: 3.000 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti è stato raggiunto per primo nel mese solare)</li></ul>|
 | È possibile effettuare chiamate in uscita verso numeri premium? <br/> | Al momento non supportato. <br/>                                                                                                                                                                                                                                                                                               |
 | Chiamate in uscita possibili verso...?  <br/>                | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/>                                                                                                                                                                                                                      |
 > [!Note]
