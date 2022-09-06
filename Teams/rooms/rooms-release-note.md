@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 description: Amministrazione possibile leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4905c22f974e464ed0079bad572623c83782cfda
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: cb76ac9da50a55dbf8a5df10ddab4f65cfdebcc7
+ms.sourcegitcommit: 2ecf98862aae607d0675418a6177be91f56af1f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606235"
+ms.locfileid: "67607619"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
@@ -102,13 +102,13 @@ Introdotto in questo aggiornamento:
 
 - Aggiornamento <sup>dell'esperienza</sup> di layout front row 1 
 - Aggiungere e nascondere il video <sup>della sala 1</sup> 
-- Configurazione dell'amministratore per disattivare la raccolta divisa in dual display Teams Rooms <sup>1</sup>
-- La Teams Rooms a doppio schermo può ora visualizzare fino a 18 flussi video partecipanti <sup>2</sup>
-- Supporto per le licenze per Microsoft Teams Rooms Pro e Microsoft Teams Room Basic per le sale <sup>2</sup>
+- Configurazione dell'amministratore per disattivare la raccolta divisa in doppio schermo Teams Rooms <sup>2</sup>
+- La Teams Rooms a doppio schermo può ora visualizzare fino a 18 flussi video partecipanti <sup>1</sup>
+- Supporto per Microsoft Teams Rooms Pro e microsoft Teams Room Basic room licenses <sup>1</sup>
 
-<sup>1 La</sup> configurazione dell'amministratore per disattivare la raccolta divisa tramite XML è disponibile in [Gestire in remoto le impostazioni di una console Microsoft Teams Rooms con un file di configurazione XML](../rooms/xml-config-file.md).
+<sup>1</sup> Questa funzionalità è in fase di distribuzione al client Web di Teams e richiederà circa due settimane dalla data di rilascio dell'aggiornamento. Per altre informazioni, vedere [Aggiornamenti di Teams](../teams-client-update.md).
 
-<sup>2</sup> Questa funzionalità è in fase di distribuzione al client Web di Teams e richiederà circa due settimane dalla data in cui questo aggiornamento è stato rilasciato per il completamento. Per altre informazioni, vedere [Aggiornamenti di Teams](../teams-client-update.md).
+<sup>2 La</sup> configurazione dell'amministratore per disattivare la raccolta divisa tramite XML è disponibile in [Gestire in remoto le impostazioni di una console Microsoft Teams Rooms con un file di configurazione XML](../rooms/xml-config-file.md).
 
 ### <a name="4131320-822022"></a>4.13.132.0 (8/2/2022)
 
