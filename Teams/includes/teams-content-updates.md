@@ -3,6 +3,29 @@
 
 
 
+## <a name="week-of-august-29-2022"></a>Settimana del 29 agosto 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 8/29/2022 | [Failover trunk sulle chiamate in uscita](/MicrosoftTeams/direct-routing-trunk-failover-on-outbound-call) | Volta |
+| 8/29/2022 | [Pianificare il passaggio da Kaizala a Microsoft Teams](/MicrosoftTeams/plan-your-move-kaizala) | Volta |
+| 8/29/2022 | [Gestione dei numeri di telefono per il Messico](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-mexico) | Aggiunto |
+| 8/30/2022 | [Store di dispositivi di Teams](/MicrosoftTeams/devices/device-store) | Volta |
+| 8/30/2022 | [licenze dell'account risorse di Telefono di Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/virtual-user) | Volta |
+| 8/30/2022 | [Gestire chi può avviare riunioni immediate e pianificare riunioni](/MicrosoftTeams/manage-who-can-schedule-meetings) | Aggiunto |
+| 8/30/2022 | [Registrazione delle riunioni di Teams nel cloud](/MicrosoftTeams/cloud-recording) | Volta |
+| 8/30/2022 | Criteri per le riunioni e scadenza delle riunioni in Microsoft Teams | Rimosso |
+| 8/30/2022 | [Gestire i criteri delle riunioni per la registrazione e la trascrizione](/MicrosoftTeams/meetings-policies-recording-and-transcription) | Volta |
+| 8/30/2022 | [Usare OneDrive for Business e SharePoint per le registrazioni delle riunioni](/MicrosoftTeams/tmr-meeting-recording-change) | Volta |
+| 8/31/2022 | [risorse di formazione Amministrazione - Microsoft Teams](/MicrosoftTeams/itadmin-readiness) | Volta |
+| 8/31/2022 | [Risorse per l'integrazione di Assistente alla carriera in Microsoft Teams](/MicrosoftTeams/career-coach-resources) | Volta |
+| 8/31/2022 | [Personalizzare l'app store in Teams](/MicrosoftTeams/customize-your-app-store) | Volta |
+| 9/1/2022 | [Gestire Microsoft 365 per l'organizzazione con l'app Amministrazione in Microsoft Teams](/MicrosoftTeams/manage-admin-app) | Aggiunto |
+| 9/2/2022 | [Note sulla versione per Microsoft Teams Rooms (Windows)](/MicrosoftTeams/rooms/rooms-release-note) | Volta |
+| 9/2/2022 | [Gestire in remoto le impostazioni del dispositivo di Microsoft Teams Rooms](/MicrosoftTeams/rooms/xml-config-file) | Volta |
+
+
 ## <a name="week-of-august-22-2022"></a>Settimana del 22 agosto 2022
 
 
@@ -201,26 +224,3 @@
 | 8/4/2022 | [Estensione app per dispositivi mobili](/MicrosoftTeams/rooms/extended-mobile-app) | Volta |
 | 8/5/2022 | [Gestire i tag in Microsoft Teams](/MicrosoftTeams/manage-tags) | Volta |
 | 8/5/2022 | [Pianificare gateway SIP](/MicrosoftTeams/sip-gateway-plan) | Volta |
-
-
-## <a name="week-of-july-25-2022"></a>Settimana del 25 luglio 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 7/25/2022 | [Numeri di telefono e modifiche alle licenze](/MicrosoftTeams/phone-numbers-licensing-changes) | Aggiunto |
-| 7/25/2022 | [Criteri per le riunioni e scadenza delle riunioni in Microsoft Teams](/MicrosoftTeams/meeting-expiration) | Volta |
-| 7/25/2022 | [Registrare un dispositivo Teams Room nei servizi gestiti](/MicrosoftTeams/rooms/enroll-a-device) | Volta |
-| 7/25/2022 | [Log del browser e traccia per Teams](/MicrosoftTeams/browser-logs-and-tracing-for-teams) | Aggiunto |
-| 7/25/2022 | [Configurare i file di log per il monitoraggio e la risoluzione dei problemi in Teams](/MicrosoftTeams/log-files) | Volta |
-| 7/26/2022 | [Risorse per l'integrazione di Assistente alla carriera in Microsoft Teams](/MicrosoftTeams/career-coach-resources) | Aggiunto |
-| 7/26/2022 | [Configurare Assistente alla carriera per Microsoft Teams](/MicrosoftTeams/career-coach-set-up-steps) | Aggiunto |
-| 7/26/2022 | [Risolvere i problemi di Career Coach per Microsoft Teams](/MicrosoftTeams/career-coach-troubleshoot) | Aggiunto |
-| 7/26/2022 | [Errori dei canali condivisi in Microsoft Teams](/MicrosoftTeams/shared-channels-errors) | Aggiunto |
-| 7/26/2022 | [Introduzione a Career Coach per Microsoft Teams](/MicrosoftTeams/career-coach) | Volta |
-| 7/26/2022 | [Introduzione a Career Coach per Microsoft Teams](/MicrosoftTeams/cloud-recording) | Volta |
-| 7/26/2022 | [Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione](/MicrosoftTeams/communicate-with-users-from-other-organizations) | Volta |
-| 7/26/2022 | [Gestione partner per i clienti](/MicrosoftTeams/rooms/multi-tenant-management-customer) | Volta |
-| 7/26/2022 | [Gestione clienti multi-tenant per partner](/MicrosoftTeams/rooms/multi-tenant-management-partner) | Volta |
-| 7/26/2022 | [Assegnare licenze per i componenti aggiuntivi di Teams agli utenti](/MicrosoftTeams/teams-add-on-licensing/assign-teams-add-on-licenses) | Volta |
-| 7/29/2022 | [Gestire i numeri di telefono per la propria organizzazione](/MicrosoftTeams/manage-phone-numbers-landing-page) | Volta |
