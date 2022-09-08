@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - admindeeplinkMAC
 description: Informazioni su come assegnare licenze Telefono di Microsoft Teams Account risorse agli account delle risorse per gli operatori automatici e le code di chiamata nell'organizzazione.
-ms.openlocfilehash: 348317ca659e03a9dacf8eaae603cff52a009912
-ms.sourcegitcommit: 7a1fb6e15c21368afa34cd212865437781f721e2
+ms.openlocfilehash: 56b461c2de32f32dd51d72c5468e31f51b107310
+ms.sourcegitcommit: 09b77e83bc41914007606468e322d4ea47e2e8a4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67465984"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67630426"
 ---
 # <a name="microsoft-teams-phone-resource-account-licenses"></a>licenze dell'account risorse di Telefono di Microsoft Teams
 
@@ -43,7 +43,7 @@ Per ogni 10 licenze utente di **Teams Phone Standard** o **Teams Phone con piano
 
 ### <a name="license-allocation-example"></a>Esempio di assegnazione delle licenze
 
-Contoso, Inc. ha acquistato 600 licenze che includono Sistema telefonico (una per ogni dipendente). A Contoso viene assegnata una licenza iniziale di 25 più 60 **account di risorse di Teams Phone** , 85 in totale. L'organizzazione ha 90 code di chiamata e operatori automatici con numeri di telefono. Devono assegnare tutte le licenze **dell'account di risorse del telefono di Teams** e acquistare cinque licenze aggiuntive per **l'account di risorse del telefono di Teams** . 
+Contoso, Inc. ha acquistato 600 licenze che includono Sistema telefonico (una per ogni dipendente). A Contoso viene assegnata una licenza iniziale di 25 più 60 **account di risorse di Teams Phone** , 85 in totale. L'organizzazione ha 90 code di chiamata e operatori automatici. Devono assegnare tutte le licenze **dell'account di risorse del telefono di Teams** e acquistare cinque licenze aggiuntive per **l'account di risorse del telefono di Teams** . 
 
 ## <a name="how-to-obtain-microsoft-teams-phone-resource-account-licenses"></a>Come ottenere licenze per Telefono di Microsoft Teams account risorse
 
