@@ -22,12 +22,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni su e confrontare Teams Rooms le licenze e la disponibilità delle funzionalità nell'interfaccia di amministrazione di Teams.
-ms.openlocfilehash: f880f2878c98e739c0367faafed252f93f4cd3d5
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: d88e7a0c0a6c17fb22f1cc94fcd4de65a3ff79a2
+ms.sourcegitcommit: 732a7f3e120cfa221d42b4e8af2cf9ff623488a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606890"
+ms.lasthandoff: 09/08/2022
+ms.locfileid: "67633636"
 ---
 # <a name="microsoft-teams-rooms-license-overview-in-teams-admin-center"></a>Panoramica della licenza Microsoft Teams Rooms nell'interfaccia di amministrazione di Teams
 
@@ -37,11 +37,11 @@ Per altre informazioni sulle licenze di Microsoft Teams Rooms, vedere [licenze d
 
 ## <a name="see-which-licenses-are-assigned-to-teams-rooms-devices"></a>Vedere quali licenze sono assegnate ai dispositivi Teams Rooms
 
-È possibile vedere quale licenza hanno i dispositivi accedendo ai **dispositivi di Teams** nell'interfaccia di amministrazione di Teams e quindi selezionando la categoria di dispositivi che si vuole visualizzare. Ad esempio, se selezioni **dispositivi** >  Teams **Teams Rooms in Windows**, vedrai qualcosa di simile all'immagine seguente. La colonna **Licenza** mostra il Teams Rooms licenza assegnata a ogni dispositivo.
+È possibile vedere la licenza dei dispositivi accedendo ai dispositivi Teams nell'interfaccia di amministrazione di Teams e quindi selezionando la categoria di dispositivi (Teams Rooms in Windows, Teams Rooms su Android e Surface Hub) che si vuole visualizzare. Ad esempio, se selezioni **dispositivi** >  Teams **Teams Rooms in Windows**, vedrai qualcosa di simile all'immagine seguente. La colonna **Licenza** mostra il Teams Rooms licenza assegnata a ogni dispositivo.
 
 :::image type="content" source="../media/mtr-device-inventory-license-focus.png" alt-text="Teams Rooms elenco dell'inventario con lo stato attivo sulle licenze Standard, Pro e Pro (versione di valutazione).":::
 
-I dispositivi con licenze **Pro** o **Pro (versione di valutazione)** possono accedere a tutte le funzionalità dell'interfaccia di amministrazione di Teams. I dispositivi con altre licenze possono accedere a un sottoinsieme di tali funzionalità. È possibile vedere quali caratteristiche sono disponibili per ogni licenza in [Confronto tra Teams Rooms disponibilità delle funzionalità in base alla licenza](#comparison-of-teams-rooms-feature-availability-by-license).
+I dispositivi con licenza **Pro** possono accedere a tutte le funzionalità dell'interfaccia di amministrazione di Teams. I dispositivi con altre licenze possono accedere a un sottoinsieme di tali funzionalità. È possibile vedere quali caratteristiche sono disponibili per ogni licenza in [Confronto tra Teams Rooms disponibilità delle funzionalità in base alla licenza](#comparison-of-teams-rooms-feature-availability-by-license).
 
 > [!IMPORTANT]
 > Se si selezionano più dispositivi che includono licenze di Microsoft Teams Rooms Basic e Microsoft Teams Rooms Pro, le azioni che richiedono una licenza Microsoft Teams Rooms Pro verranno eseguite solo sui dispositivi a cui è stata assegnata la licenza. L'azione non verrà eseguita sui dispositivi a cui è assegnata la licenza Microsoft Teams Rooms Basic.
