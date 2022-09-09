@@ -1585,8 +1585,10 @@ items:
             href: customize-your-app-store.md
           - name: Gestire gli accessi alle app in Microsoft 365
             href: manage-third-party-teams-apps.md
-          - name: Comportamento dell'app in base ai tipi di utenti
+          - name: Comportamento dell'app per gli utenti esterni
             href: non-standard-users.md
+          - name: Gestire le richieste degli utenti per consentire le app
+            href: user-requests-approve-apps.md
           - name: Aggiornamenti delle app e ruolo di amministratore
             href: apps-update-experience.md
           - name: Controllare le attività di gestione delle app

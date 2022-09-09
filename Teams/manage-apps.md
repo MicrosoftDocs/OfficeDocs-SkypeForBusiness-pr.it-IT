@@ -19,12 +19,12 @@ description: Informazioni su come gestire le app di Teams. Informazioni su come 
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: beaa10343570624b6ce9b01dbaf9f4a0e962b191
-ms.sourcegitcommit: 6b4dad9cea8fdad74c493ef62b085dbb9957235d
+ms.openlocfilehash: ca49ca15b026048d2c495d30a51eac0f809244b5
+ms.sourcegitcommit: ebffec34c050421dc8d09a16907644657ce323f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67486881"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67637049"
 ---
 # <a name="manage-teams-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app di Teams nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -85,38 +85,6 @@ Quando si consente (o si blocca) un'app nella pagina [Gestisci app](https://admi
 
 Un utente può installare e usare un'app solo quando l'app è consentita tramite l'impostazione a livello di tenant e consentita per l'utente tramite criteri di autorizzazione.
 
-## <a name="manage-user-requests-to-allow-apps"></a>Gestire le richieste degli utenti di consentire le app
-
-Gli utenti finali possono visualizzare, ma non usare, le app bloccate nel Teams Store. Per le app bloccate, è disponibile un'opzione per richiedere l'approvazione dell'amministratore. Queste richieste vengono fascicolate nell'interfaccia di amministrazione di Teams e gli amministratori possono visualizzarle e gestirle quando desiderano. È consigliabile effettuare una valutazione regolare per verificare la presenza di richieste da parte dell'utente finale.
-
-  :::image type="content" source="media/user-request-blocked-apps.png" alt-text="Richiedere all'amministratore di approvare un'app bloccata selezionando l'opzione di approvazione della richiesta nel Teams Store.":::
-
-### <a name="view-a-request"></a>Visualizzare una richiesta
-
- 1. Accedere all'interfaccia di amministrazione di Teams e accedere alle **app** > **[di Teams Per gestire le app](https://admin.teams.microsoft.com/policies/manage-apps)**.
-
-    :::image type="content" source="media/requested-apps1.png" alt-text="Le richieste degli utenti finali per le app bloccate vengono visualizzate nell'interfaccia di amministrazione di Teams nella colonna intitolata Richieste degli utenti." lightbox="media/requested-apps.png":::
-
- 1. Per visualizzare e controllare il numero di richieste per ogni app, ordinare le richieste nella colonna **Richieste dell’utente**. Non è possibile visualizzare il nome degli utenti che hanno richiesto un'app.
- 1. Per consentire un'app, seleziona il nome dell'app e aprire la pagina dei dettagli dell'app.
- 1. Selezionare **Gestisci richieste** e completare i passaggi visualizzati nella finestra di dialogo popup. In base al metodo usato per bloccare un'app, per sbloccarla sono necessari uno o più dei passaggi seguenti:
-
-    * Se l'app è stata bloccata tramite criteri di autorizzazione, consentire l'app modificando i [criteri di autorizzazione](teams-app-permission-policies.md).
-    * Se l'app è stata bloccata per tutti gli utenti, [consentire l'app](#allow-and-block-apps).
-    * Se tutte le app sono state bloccate per tutti gli utenti, modificare le [impostazioni a livello di organizzazione](#manage-org-wide-app-settings).
-
- Se un amministratore consente un'app, Teams non informa l'utente finale che la sua richiesta è stata presa in carico. L'utente può visualizzare l'app nel Teams Store per verificare se può o meno aggiungere l'app al client di Teams. Se l'app viene approvata da un amministratore, gli utenti possono aggiungerla. In alternativa, se l'amministratore non approva la richiesta e la ignora, gli utenti finali possono richiederla di nuovo.
-
-### <a name="dismiss-a-user-request"></a>Ignorare una richiesta utente
-
- 1. Selezionare il nome dell'app per cui si desidera ignorare le richieste dell'utente.
- 1. Selezionare **Gestisci richieste** e quindi **Ignora tutte le richieste** nella finestra di dialogo.
- 1. Quando una richiesta viene ignorata, le richieste dell'utente vengono azzerate.
-
-  :::image type="content" source="media/reject.png" alt-text="Gli amministratori possono approvare una richiesta dell'utente consentendo un'app o ignorando la richiesta e non intraprendendo alcuna azione.":::
-
-Se un amministratore rifiuta una richiesta, non informa l'utente finale che la sua richiesta è stata presa in carico. Dopo che un amministratore ha ignorato una richiesta, l'utente finale può richiedere di nuovo l'app.
-
 ## <a name="allow-the-apps-that-are-blocked-by-the-developers"></a>Consentire le app bloccate dagli sviluppatori
 
 Quando uno sviluppatore pubblica un'app nel Teams Store, può essere necessario che gli amministratori configurino l'app. Gli amministratori rendono l'app disponibile agli utenti finali quando l'app è configurata.
@@ -159,3 +127,4 @@ Usare le impostazioni delle app a livello di organizzazione per controllare se g
 ## <a name="related-article"></a>Articolo correlato
 
 * [Gestire Teams durante la transizione dall’interfaccia di amministrazione di Skype for Business](manage-teams-skypeforbusiness-admin-center.md)
+* [Gestire le richieste degli utenti per consentire le app](user-requests-approve-apps.md).

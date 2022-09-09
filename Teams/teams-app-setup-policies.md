@@ -18,12 +18,12 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 67a6424d6fcde396ebdbb41b3c00fc4186e8e475
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: cfcd041fd755016ec04832f42c497e2b0ad51469
+ms.sourcegitcommit: ebffec34c050421dc8d09a16907644657ce323f4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67396697"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "67637009"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
@@ -92,7 +92,7 @@ Utilizzando un criterio di impostazione delle applicazioni, un amministratore pu
 * Installare le applicazioni per gli utenti finali nel loro ambiente personale di Teams.
 * Installare le app per gli utenti finali come [estensioni di messaggistica](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions).
 
-Gli utenti finali possono installare le app autonomamente se il [criterio di autorizzazione dell'app](teams-app-permission-policies.md) lo consente e l'app è consentita dall'amministratore di Teams. Se invece un'app viene bloccata per un utente o per un'organizzazione, gli utenti finali possono [richiedere l'approvazione dell'amministratore](manage-apps.md#manage-user-requests-to-allow-apps).
+Gli utenti finali possono installare le app autonomamente se il [criterio di autorizzazione dell'app](teams-app-permission-policies.md) lo consente e l'app è consentita dall'amministratore di Teams. Se invece un'app viene bloccata per un utente o per un'organizzazione, gli utenti finali possono [richiedere l'approvazione dell'amministratore](user-requests-approve-apps.md).
 
 Per installare le app usando un criterio di configurazione dell'app, procedere come segue:
 
