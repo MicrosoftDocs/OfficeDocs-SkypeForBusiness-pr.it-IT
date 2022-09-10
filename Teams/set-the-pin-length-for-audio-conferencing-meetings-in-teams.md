@@ -21,32 +21,32 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: Informazioni sui parametri per la lunghezza e i requisiti di un PIN e su come impostare la durata delle riunioni in Microsoft Teams.
-ms.openlocfilehash: c08be6e0bd66677c1459cb829dc21c749efceffd
-ms.sourcegitcommit: 8f999bd2e20f177c6c6d8b174ededbff43ff5076
+description: Informazioni sui parametri per la lunghezza e i requisiti di un PIN e su come impostare la lunghezza per le riunioni in Microsoft Teams.
+ms.openlocfilehash: e589a550eba48401612e183200e54f678f9890c4
+ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62055886"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67641957"
 ---
-# <a name="set-the-pin-length-for-audio-conferencing-meetings-in-microsoft-teams"></a>Impostare la lunghezza del PIN per le riunioni di audioconferenza in Microsoft Teams
+# <a name="set-the-pin-length-for-audio-conferencing-meetings-in-microsoft-teams"></a>Impostare la lunghezza del PIN per le riunioni di Audioconferenza in Microsoft Teams
 
-Quando si configurano le audioconferenze per Microsoft Teams, si otterrà un bridge di audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono. Il numero di telefono impostato verrà incluso nelle convocazioni di riunione per l Microsoft Teams app.
+Quando si configurano le audioconferenze per Microsoft Teams, si ottiene un bridge di audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono. Il numero di telefono impostato verrà incluso negli inviti alle riunioni per l'app Microsoft Teams.
   
-Il bridge di conferenza risponde a una chiamata di un utente che partecipa a una riunione utilizzando un telefono. Risponde al chiamante con le istruzioni vocali di un operatore automatico e quindi, a seconda delle impostazioni, può riprodurre notifiche e chiedere ai chiamanti di registrare il proprio nome. **Impostazioni bridge Microsoft** consentono di modificare le impostazioni per le notifiche di riunione e l'esperienza di iscrizione alla riunione e impostare la lunghezza del PIN che vengono utilizzati per gli organizzatori delle riunioni. Gli organizzatori della riunione usano i PIN per avviare le riunioni se non possono partecipare alla riunione usando l'app Microsoft Teams riunione.
+Il bridge di conferenza risponde a una chiamata di un utente che partecipa a una riunione utilizzando un telefono. Risponde al chiamante con i comandi vocali di un operatore automatico e quindi, a seconda delle impostazioni, può riprodurre notifiche e chiedere ai chiamanti di registrare il proprio nome. **Impostazioni bridge Microsoft** consentono di modificare le impostazioni per le notifiche di riunione e l'esperienza di iscrizione alla riunione e impostare la lunghezza del PIN che vengono utilizzati per gli organizzatori delle riunioni. Gli organizzatori delle riunioni usano pin per avviare le riunioni se non possono partecipare alla riunione con l'app Microsoft Teams.
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
   
 ## <a name="setting-the-pin-length"></a>Impostazione della lunghezza del PIN
 
-Uso dell'Microsoft Teams di amministrazione:
+Usando l'interfaccia di amministrazione di Microsoft Teams:
 
 1. Nel riquadro di spostamento sinistro, passare a **Riunioni** > **Bridge di conferenza**.
 
 2. Nella parte superiore della pagina **Bridge di conferenza** fare clic su **Impostazioni bridge**.
 
-3. Nel riquadro **Impostazioni bridge,** in **Lunghezza PIN,** selezionare il numero di cifre desiderato per il PIN.
+3. Nel riquadro **Impostazioni bridge** , in **Lunghezza PIN**, seleziona il numero di cifre desiderato per il PIN.
 
 4. Fare clic su **Salva**.
 
@@ -55,15 +55,15 @@ Uso dell'Microsoft Teams di amministrazione:
 
 ## <a name="want-to-know-more-about-pin-settings"></a>Vuoi saperne di più sulle impostazioni del PIN?
 
-- I PIN possono essere da 4 a 12 cifre. il valore predefinito è 5. Solo i numeri vengono utilizati quando si creano dei PIN. Lettere e caratteri speciali non vengono utilizzati.
+- I PIN possono essere da 4 a 12 cifre; il valore predefinito è 5. Solo i numeri vengono utilizati quando si creano dei PIN. Lettere e caratteri speciali non vengono utilizzati.
 
-- Un PIN è necessario per l'organizzatore della riunione solo quando Microsoft Teams'utente non ha ancora avviato la riunione. L'organizzatore della riunione ha bisogno di un PIN soltanto quando un utente di Skype for Business non ha già avviato la riunione.
+- Il PIN è necessario per l'organizzatore della riunione solo quando un utente di Microsoft Teams non ha già avviato la riunione. L'organizzatore della riunione ha bisogno di un PIN soltanto quando un utente di Skype for Business non ha già avviato la riunione.
 
 - Le impostazioni di sicurezza del PIN vengono applicate a tutti i numeri di telefono associati a un bridge Microsoft. Vengono applicate a tutte le riunioni che utilizzano i numeri di telefono associati a un ponte specificato.
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
 
-Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
+Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che semplifica il lavoro quotidiano quando si hanno più attività da svolgere. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
 
 - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
 
@@ -73,4 +73,4 @@ Per altre informazioni su Windows PowerShell, vedere [Riferimenti su PowerShell 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Provare o acquistare audioconferenze in Microsoft 365 o Office 365](/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)
+[Provare o acquistare i servizi di audioconferenza in Microsoft 365 per Microsoft Teams](try-or-purchase-audio-conferencing-in-office-365-for-teams.md)

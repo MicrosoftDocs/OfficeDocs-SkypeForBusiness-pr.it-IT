@@ -23,12 +23,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: "Informazioni sulla configurazione del servizio di conferenza telefonica con accesso esterno o del servizio Audioconferenza per gli utenti dell'organizzazione che devono usare il telefono per partecipare alle conferenze telefoniche. "
-ms.openlocfilehash: 701c1b4826a52400d91d18d4aa26f11aac07d266
-ms.sourcegitcommit: 312ff79ecab91412918793ec882bfc6e0143d30a
+ms.openlocfilehash: 04c29b6eaf13d12bee1395d913519c971c7a25d1
+ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66884835"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67642127"
 ---
 # <a name="set-up-audio-conferencing-for-microsoft-teams"></a>Configurare Audioconferenza per Microsoft Teams
 
@@ -105,8 +105,6 @@ Per altri dettagli, vedere [Modificare le impostazioni per un bridge del servizi
 ## <a name="step-7-assign-dial-in-phone-numbers-for-users-who-lead-meetings"></a>Passo 7: Assegnare i numeri di telefono con accesso esterno per gli utenti che conducono le riunioni
 
 Vedere [Impostare i numeri di telefono inclusi negli inviti in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md).
-
-Per ulteriori informazioni, consulta [Assegnare Microsoft come provider di servizi di audioconferenza](/skypeforbusiness/audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider).
 
 > [!NOTE]
 > È anche possibile impostare i numeri di telefono aggiungendoli al *criterio TeamsAudioconferencing* e assegnando il criterio agli utenti. I numeri verdi e a tariffa aggiunti ai criteri hanno la precedenza sui numeri di telefono impostati singolarmente per gli utenti tramite il riquadro delle impostazioni dei servizi di audioconferenza. Se non vengono aggiunti numeri di telefono al *criterio Teamsaudioconferencing*, il numero di telefono impostato singolarmente per gli utenti tramite il riquadro delle impostazioni dei servizi di audioconferenza verrà visualizzato nelle convocazioni di riunione di Microsoft Teams. Ulteriori informazioni sono disponibili [nelle impostazioni dei criteri per i servizi di audioconferenza per i numeri verdi e a pagamento](audio-conferencing-toll-free-numbers-policy.md).

@@ -13,7 +13,6 @@ ms.collection:
 - M365-collaboration
 audience: Admin
 appliesto:
-- Skype for Business
 - Microsoft Teams
 ms.localizationpriority: medium
 f1.keywords:
@@ -22,16 +21,16 @@ ms.custom:
 - Licensing
 - seo-marvel-mar2020
 description: I vantaggi di Chiamata in uscita e Chiamami al minuto. A partire dal 1° dicembre 2019, ogni abbonamento ai servizi di audioconferenza fornisce 60 minuti per utente al mese nei paesi della Zona A.
-ms.openlocfilehash: 18300c44c806689b601c8b14d8c871ecb0ff6ba4
-ms.sourcegitcommit: ad8447b683381bc07f993bf843a93a4bdb77d840
+ms.openlocfilehash: 6df0b6f2157f16da6e992d465b524a5b582e0a12
+ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187012"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67642147"
 ---
 # <a name="audio-conferencing-subscription-dial-outcall-me-at-minutes-benefit"></a>Vantaggi minuti abbonamento audioconferenza "Chiamata in uscita"/"Chiama"
 
-## <a name="microsoft-teams-and-skype-for-business-pstn-audio-conferencing"></a>Audioconferenza PSTN Microsoft Teams e Skype for Business
+## <a name="microsoft-teams-and-pstn-audio-conferencing"></a>Microsoft Teams e audioconferenze PSTN
 
 Ogni abbonamento standard per i servizi di audioconferenza fornisce 60 minuti al mese per l'utente, che possono essere utilizzati per effettuare chiamate in uscita con numeri non premium in qualsiasi paese della Zona A, come descritto in questo documento. Questo vantaggio si applica alle licenze *mensili di audioconferenza* e non si estende alle licenze con audioconferenza con tariffa al minuto.
 
@@ -74,16 +73,15 @@ Si consideri l'esempio seguente. Un cliente ha acquistato 115 licenze di abbonam
 
 ## <a name="how-can-i-monitor-minute-my-pool-usage"></a>Come posso monitorare i minuti di utilizzo del pool?
 
-- È possibile monitorare l'utilizzo del pool di minuti di chiamata in uscita nell'interfaccia di amministrazione di Microsoft Teams. Nel riquadro di spostamento sinistro passare a **Analytics &** **reportUsare** >  report e quindi selezionare **Pool di minuti PSTN**. Il pool di minuti di chiamata in uscita Zona A verrà contrassegnato nel rapporto come "Chiamate in uscita verso i paesi della zona A".
-- Le notifiche tramite posta elettronica verranno inviate agli amministratori seguenti quando l'utilizzo del pool di minuti di chiamata in uscita dell'organizzazione raggiungerà l'80% e il 100%:
+- È possibile monitorare l'utilizzo rispetto al pool di minuti di chiamata in uscita nell'interfaccia di amministrazione di Microsoft Teams. Nel riquadro di spostamento sinistro passare a **Report di utilizzo di &** >  analytics e quindi selezionare **Pool di minuti PSTN**. Il pool di minuti di chiamata in uscita Zona A verrà contrassegnato nel rapporto come "Chiamate in uscita verso i paesi della zona A".
+- Email notifiche verranno inviate agli amministratori seguenti quando l'utilizzo del pool di minuti di chiamata in uscita dell'organizzazione raggiungerà l'80% e il 100%:
 
   - Amministratore fatturazione
-  - amministratore Skype for Business
   - Amministratore globale
   - Amministratore utente
   - Amministratore helpdesk
   - Amministratore del supporto tecnico
-  - Azure AD amministratore locale del dispositivo aggiunto
+  - Amministratore locale dispositivo aggiunto ad Azure AD
   - Amministratore applicazione
   - Amministratore licenze
   - Amministratore del dispositivo cloud

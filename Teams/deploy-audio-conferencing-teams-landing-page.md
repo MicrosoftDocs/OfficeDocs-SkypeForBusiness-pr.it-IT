@@ -20,12 +20,12 @@ ms.localizationpriority: high
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0c12891e2eb03aaca3f444a83bfd18ee752b8576
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
-ms.translationtype: HT
+ms.openlocfilehash: 1da45446c2ab1879dd8064537dc50dafd99ea013
+ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268811"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67641747"
 ---
 # <a name="learn-how-to-deploy-audio-conferencing-in-microsoft-teams"></a>Scopri come distribuire i servizi di audioconferenza in Microsoft Teams
 
@@ -35,7 +35,7 @@ Audioconferenza consente di partecipare a una riunione di Teams da un normale te
 
 Questo articolo è utile per decidere se modificare una o più impostazioni predefinite per l'audioconferenza in base al profilo o ai requisiti dell'organizzazione e illustra la procedura per ogni modifica. Le impostazioni sono state suddivise in due gruppi, a partire dal set di base di [modifiche più probabili](#core-deployment-decisions). Il secondo gruppo include le [impostazioni aggiuntive](#additional-deployment-decisions) che può essere utile configurare in base alle esigenze dell'organizzazione.
 
-È necessario soltanto configurare l'audioconferenza solo per gli utenti che intendono programmare o condurre riunioni. Le persone che partecipano alla riunione tramite telefono non hanno bisogno di altre impostazioni o che venga loro assegnata una licenza. Accedere alle riunioni tramite telefono è molto utile per gli utenti che sono in viaggio e non possono partecipare a una riunione usando l'app Skype for Business o Teams sul laptop o dispositivo mobile. 
+È necessario soltanto configurare l'audioconferenza solo per gli utenti che intendono programmare o condurre riunioni. Le persone che partecipano alla riunione tramite telefono non hanno bisogno di altre impostazioni o che venga loro assegnata una licenza. L'accesso esterno (chiamata) alle riunioni è molto utile per gli utenti che si trovano in viaggio e non possono partecipare a una riunione usando l'app Teams sul proprio portatile o dispositivo mobile.
 
 ## <a name="audio-conferencing-prerequisites"></a>Prerequisiti per l'audioconferenza
 
@@ -44,7 +44,7 @@ Prima di implementare l'audioconferenza per Teams, considerare quanto segue:
 |Chiedersi|Azione |
 |------------|-------|
 |Il servizio di audioconferenza è disponibile per il paese/area geografica?|Per sapere se l'audioconferenza è disponibile nel paese/area geografica di interesse, vedere [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).|
-|Gli utenti hanno la licenza appropriata per l'audioconferenza di Teams?|Le licenze per Audioconferenza sono disponibili come parte di un abbonamento a Microsoft 365 o Office 365 E5 o come componente aggiuntivo per un abbonamento a Microsoft 365 Business Standard, E1 o E3. <ul><li>Per ottenere e assegnare licenze, vedere [Provare o acquistare le audioconferenze in Microsoft 365 o Office 365](/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365) e [Assegnare o rimuovere licenze per Microsoft 365 Apps for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).</li><li> Per altre informazioni, vedere [Gestione delle licenze per i componenti aggiuntivi di Microsoft Teams](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md). </li><li>Per informazioni sulle funzionalità cloud incluse in ogni piano, vedere gli articoli sulle [Opzioni di licenza basate sul piano](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).</li></ul>|
+|Gli utenti hanno la licenza appropriata per l'audioconferenza di Teams?|Le licenze per Audioconferenza sono disponibili come parte di un abbonamento a Microsoft 365 o Office 365 E5 o come componente aggiuntivo per un abbonamento a Microsoft 365 Business Standard, E1 o E3. <ul><li>Per ottenere e assegnare licenze, vedere [Assegnare o rimuovere licenze per Microsoft 365 Apps for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).</li><li> Per altre informazioni, vedere [Gestione delle licenze per i componenti aggiuntivi di Microsoft Teams](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md). </li><li>Per informazioni sulle funzionalità cloud incluse in ogni piano, vedere gli articoli sulle [Opzioni di licenza basate sul piano](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).</li></ul>|
 |È necessario acquistare credito per la comunicazione per gli utenti a cui sono state assegnate licenze per Audioconferenza?|Per altre informazioni, vedere [Che cos'è Credito per la comunicazione?](what-are-communications-credits.md) e quindi leggere la sezione [Credito per la comunicazione](#communications-credits) più avanti.|
 |||
 
@@ -82,7 +82,7 @@ Il servizio di audioconferenza di Teams consente di configurare le lingue predef
 
 |Chiedersi|Azione |
 |------------|-------|
-| Quali lingue scegliere per i messaggi di saluto dell'operatore automatico? | Per scegliere le lingue, vedere [Impostare le lingue degli operatori automatici per le audioconferenze](/SkypeForBusiness/audio-conferencing-in-office-365/set-auto-attendant-languages-for-audio-conferencing?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fMicrosoftTeams%2ftoc.json).|
+| Quali lingue scegliere per i messaggi di saluto dell'operatore automatico? | Per scegliere le lingue, vedere [Impostare le lingue dell'operatore automatico per i servizi di audioconferenza in Microsoft Teams](set-auto-attendant-languages-for-audio-conferencing-in-teams.md).|
 |||
 
 ### <a name="conferencing-bridge-settings"></a>Impostazioni del bridge di conferenza

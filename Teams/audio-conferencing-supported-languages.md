@@ -14,7 +14,6 @@ ms.collection:
 - M365-collaboration
 audience: Admin
 appliesto:
-- Skype for Business
 - Microsoft Teams
 ms.localizationpriority: medium
 f1.keywords:
@@ -22,19 +21,19 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Trovare la lingua per i servizi di conferenza telefonica con accesso esterno per ogni paese o area geografica e l'ID cultura assegnato (en-US, da-DK, de-DE e così via)
-ms.openlocfilehash: 63cc7b7f20fd121801a00e43b95e1c7e33762d93
-ms.sourcegitcommit: 2b1290b763c73f64c84c7568b16962e4ae48acf6
+ms.openlocfilehash: 1f437aa1b2ec9d308989a725ef478921c28424bd
+ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65823451"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67642087"
 ---
 # <a name="audio-conferencing-supported-languages"></a>Lingue supportate per i servizi di audioconferenza
 
-Durante la configurazione e la configurazione di Audioconferenza in Microsoft 365 o Office 365, è possibile selezionare le lingue principale e secondaria (fino a 4) usate quando i chiamanti accedono a una riunione Skype for Business o Microsoft Teams. Ecco l'elenco delle lingue supportate per Audioconferenza:
+Quando si configurano e configurano le audioconferenze in Microsoft 365 o Office 365, è possibile selezionare le lingue principale e secondaria (fino a 4) usate quando i chiamanti accedono a una riunione di Microsoft Teams. Ecco l'elenco delle lingue supportate per le audioconferenze:
   
 > [!IMPORTANT]
-> Le lingue primaria e secondaria possono essere modificate solo sui numeri di telefono Audioconferenza dedicati.
+> Le lingue primaria e secondaria possono essere modificate solo con numeri di telefono dedicati per i servizi di audioconferenza.
   
 ## <a name="currently-supported-languages"></a>Lingue attualmente supportate
 
@@ -52,7 +51,7 @@ Durante la configurazione e la configurazione di Audioconferenza in Microsoft 36
 |Inglese  <br/> |Australia  <br/> |en-AU  <br/> |
 |Inglese  <br/> |Regno Unito  <br/> |en-GB  <br/> |
 |Inglese  <br/> |Stati Uniti  <br/> |en-US  <br/> |
-|Estone  <br/> |Estonia  <br/> |et-edizione Enterprise  <br/> |
+|Estone  <br/> |Estonia  <br/> |et-EE  <br/> |
 |Filippine  <br/> |Filippine  <br/> |fil-PH  <br/> |
 |Finlandese  <br/> |Finlandia  <br/> |fi-FL  <br/> |
 |Francese  <br/> |Canada  <br/> |fr-CA  <br/> |
@@ -85,9 +84,9 @@ Durante la configurazione e la configurazione di Audioconferenza in Microsoft 36
 |Turco  <br/> |Turchia  <br/> |tr-TR  <br/> |
 |Ucraino  <br/> |Ucraina  <br/> |uk-UA  <br/> |
 
-Se stai cercando paesi o aree geografiche in cui puoi acquistare Audioconferenza, vedi [Disponibilità di paesi e aree geografiche per Audioconferenza e Piani per chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
+Se stai cercando paesi o aree geografiche in cui puoi acquistare i servizi di audioconferenza, consulta Disponibilità di paesi e aree geografiche [per i servizi di audioconferenza e i piani per chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
   
-Se stai cercando paesi o aree geografiche specifici con numeri di telefono per Audioconferenza, vedi [numeri di Telefono per Audioconferenza in Microsoft Teams](phone-numbers-for-audio-conferencing-in-teams.md) o [numeri di Telefono per Audioconferenza in Skype for Business Online](/SkypeForBusiness/audio-conferencing-in-office-365/phone-numbers-for-audio-conferencing).
+Se stai cercando paesi o aree geografiche specifici con numeri di telefono per le [audioconferenze, consulta Numeri di telefono per i servizi di audioconferenza in Microsoft Teams](phone-numbers-for-audio-conferencing-in-teams.md).
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
@@ -101,15 +100,12 @@ Se stai cercando paesi o aree geografiche specifici con numeri di telefono per A
 
 - Windows PowerShell offre molti vantaggi in fatto di velocità, semplicità e produttività rispetto all'uso della interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
 
-  - [Introduzione a Windows Powershell e Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
+  - [Panoramica di PowerShell di Microsoft Teams](teams-powershell-overview.md)
 
-  - [Uso di Windows PowerShell per gestire Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
+  - [Installare il modulo PowerShell di Microsoft Teams](teams-powershell-install.md)
 
-  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
-
-    > [!NOTE]
-    > Il modulo Windows PowerShell per Skype for Business online consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft nel [modulo Windows PowerShell per Skype for Business online.](/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-windows-powershell-5-1)
+  - [Gestire Teams con Microsoft Teams PowerShell](teams-powershell-managing-teams.md)
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Prova o acquista Audioconferenza in Microsoft 365 o Office 365](/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)
+[Provare o acquistare i servizi di audioconferenza in Microsoft 365 per Microsoft Teams](try-or-purchase-audio-conferencing-in-office-365-for-teams.md)

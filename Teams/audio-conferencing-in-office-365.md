@@ -14,7 +14,6 @@ ms.collection:
 search.appverid: MET150
 audience: admin
 appliesto:
-- Skype for Business
 - Microsoft Teams
 ms.localizationpriority: medium
 f1.keywords:
@@ -23,33 +22,33 @@ ms.custom:
 - Audio Conferencing
 - ms.teamsadmincenter.audioconferencing.overview
 - seo-marvel-apr2020
-description: Informazioni su come i servizi di audioconferenza in Microsoft 365 o Office 365 consentono agli utenti di accedere alle riunioni tramite telefono.
-ms.openlocfilehash: 1a8ed17474bc3fbcf2a9f227be4010df70d6da64
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+description: Informazioni su come i servizi di audioconferenza in Microsoft 365 consentono agli utenti di accedere alle riunioni tramite telefono.
+ms.openlocfilehash: 1ac2842d219648c5a5deef0d687698cd7b5544dd
+ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67272031"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67641927"
 ---
 # <a name="audio-conferencing-in-microsoft-365"></a>Audioconferenza in Microsoft 365
 
-I servizi di audioconferenza in Microsoft 365 e Office 365 consentono agli utenti di accedere alle riunioni tramite telefono. Audioconferenza consente fino a 1000 partecipanti telefonici.
+I servizi di audioconferenza in Microsoft 365 consentono agli utenti di accedere alle riunioni dal proprio telefono. Audioconferenza consente fino a 1000 partecipanti telefonici.
 
 ## <a name="what-is-audio-conferencing"></a>Informazioni sulle audioconferenze
 
-Accedere alle riunioni tramite telefono è molto utile per gli utenti che sono in viaggio e non possono partecipare a una riunione usando le app Skype for Business o Microsoft Teams su laptop o dispositivi mobili. Esistono tuttavia altre situazioni in cui l'uso di un telefono per partecipare a una riunione di Skype for Business o Microsoft Teams può essere un'opzione migliore rispetto all'uso di un'app su un computer, ad esempio quando:
+L'accesso (accesso esterno) alle riunioni è molto utile per gli utenti che si trovano in viaggio e non possono partecipare a una riunione usando l'app Microsoft Teams sul proprio portatile o dispositivo mobile. Ma ci sono altri scenari in cui l'uso di un telefono per partecipare a una riunione di Teams può essere un'opzione migliore rispetto all'uso di un'app su un computer:
   
 - La connessione a Internet è limitata.
 - La riunione avviene solo con funzionalità audio.
-- L’utente ha provato a partecipare a una riunione di Skype for Business e non ci è riuscito.
+- La persona ha tentato di partecipare a una riunione di Teams e l'operazione non è riuscita.
 - La qualità della chiamata è migliore al telefono.
 - Gli utenti possono partecipare a una riunione in vivavoce usando i dispositivi Bluetooth.
 - Gli utenti trovano che sia più semplice e comodo per quella situazione specifica.
 
 You only need to set up Audio Conferencing for people who plan to schedule or lead meetings. Meeting attendees who dial in don't need any licenses assigned to them or other setup.
 
-Dopo aver iniziato una riunione, gli utenti possono anche contattare al telefono e invitare altri chiamanti a una riunione di Skype for Business o Microsoft Teams.
-Vedere [Chiamare da una riunione di Teams in modo che altre persone possano partecipare](dialing-out-from-a-teams-meeting-so-other-people-can-join-it.md) o [Chiamare da una riunione di Skype for Business in modo che altre persone possano partecipare](/SkypeForBusiness/audio-conferencing-in-office-365/dialing-out-from-a-meeting-so-other-people-can-join-it).
+Dopo che i partecipanti hanno effettuato l'accesso alla riunione, possono anche effettuare chiamate in uscita e invitare altri chiamanti a una riunione di Teams.
+Per altre informazioni, vedere [Chiamata in uscita da una riunione di Teams per consentire ad altre persone di parteciparvi](dialing-out-from-a-teams-meeting-so-other-people-can-join-it.md) .
 
 ## <a name="what-does-it-cost"></a>Quanto costa
 
@@ -65,9 +64,9 @@ Dopo aver deciso di adottare i servizi di Audioconferenza per la propria azienda
 
 ## <a name="how-do-conferencing-bridges-work"></a>Funzionamento dei bridge di conferenza
 
-Quando si imposta un'audioconferenza per Skype for Business o Microsoft Teams, si ottiene un bridge di audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono. Il numero di telefono impostato verrà incluso tra gli inviti alla riunione per le app Skype for Business e Microsoft Teams. È possibile [cambiare i numeri di telefono sui bridge di conferenza](change-the-phone-numbers-on-your-audio-conferencing-bridge.md) ed è anche possibile [cambiare le altre impostazioni dei bridge di audioconferenza](change-the-settings-for-an-audio-conferencing-bridge.md).
+Durante la configurazione delle audioconferenze per Teams, riceverai un bridge per audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono. Il numero di telefono impostato verrà incluso negli inviti alle riunioni per le app Teams. È possibile [cambiare i numeri di telefono sui bridge di conferenza](change-the-phone-numbers-on-your-audio-conferencing-bridge.md) ed è anche possibile [cambiare le altre impostazioni dei bridge di audioconferenza](change-the-settings-for-an-audio-conferencing-bridge.md).
 
-Il bridge di conferenza risponde a una chiamata di un utente che partecipa a una riunione utilizzando un telefono. Risponde al chiamante con indicazioni vocali di un operatore automatico e quindi, a seconda delle impostazioni, può riprodurre notifiche e chiedere ai chiamanti di registrare il proprio nome. Le **Impostazioni dei bridge di Microsoft** consentono di modificare le impostazioni per le notifiche di riunione e l'esperienza di partecipazione alla riunione, nonché di impostare la lunghezza dei PIN utilizzati dagli organizzatori delle riunioni [in Microsoft Teams](set-the-pin-length-for-audio-conferencing-meetings-in-teams.md) o in [Skype for Business Online](/SkypeForBusiness/audio-conferencing-in-office-365/set-the-pin-length-for-audio-conferencing-meetings). Gli organizzatori della riunione utilizzano i PIN per avviare le riunioni quando non riescono a partecipare utilizzando le app Skype for Business o Microsoft Teams.
+Il bridge di conferenza risponde a una chiamata di un utente che partecipa a una riunione utilizzando un telefono. Risponde al chiamante con indicazioni vocali di un operatore automatico e quindi, a seconda delle impostazioni, può riprodurre notifiche e chiedere ai chiamanti di registrare il proprio nome. **Le impostazioni bridge Microsoft** consentono di modificare le impostazioni per le notifiche delle riunioni e l'esperienza di partecipazione alla riunione e di impostare la lunghezza dei PIN utilizzati dagli organizzatori delle riunioni [in Microsoft Teams](set-the-pin-length-for-audio-conferencing-meetings-in-teams.md). Gli organizzatori delle riunioni usano pin per avviare le riunioni se non possono partecipare alla riunione con l'app Teams.
 
 ## <a name="dial-in-phone-numbers-set-on-an-audio-conferencing-bridge"></a>Numeri di telefono con accesso esterno impostati su un bridge di audioconferenza
 
@@ -75,11 +74,11 @@ Sono disponibili due tipi di numeri di telefono per l’audioconferenza che poss
   
  I **numeri di telefono dedicati** sono i numeri di telefono disponibili solo per gli utenti all'interno dell'organizzazione. Puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri. Sarà necessario avere un numero di telefono per questo tipo di servizio.
   
- **I numeri di telefono condivisi** sono i numeri di telefono che possono essere condivisi con altri microsoft 365 o Office 365. Non puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
+ **I numeri di telefono condivisi** sono i numeri di telefono che possono essere condivisi con altri microsoft 365. Non puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
   
 While the default audio conferencing number that is assigned to an organizer is only included in the meeting invite, a caller can use any of the phone numbers that are assigned to your conferencing bridge to join a meeting. The list of phone numbers that can be used to join a meeting is available using the **Find a local number** link that is included on every meeting invite.
 
-Per altre informazioni, vedere [Numeri di telefono per audioconferenze in Microsoft Teams](phone-numbers-for-audio-conferencing-in-teams.md) o [Numeri di telefono per audioconferenze in Skype for Business Online](/SkypeForBusiness/audio-conferencing-in-office-365/phone-numbers-for-audio-conferencing).
+Per ulteriori informazioni, vedere [Numeri di telefono per i servizi di audioconferenza in Microsoft Teams](phone-numbers-for-audio-conferencing-in-teams.md) .
 
 ## <a name="automatically-assigned-audio-conferencing-phone-numbers"></a>Assegnare automaticamente numeri di telefono per i servizi di audioconferenza
 
@@ -97,20 +96,16 @@ Per visualizzare un elenco di Paesi/aree geografiche che hanno numeri di telefon
 
 I numeri di telefono dedicati per le audioconferenze sono numeri di servizio che è possibile recuperare e quindi assegnare all'organizzazione. È possibile ottenere numeri di telefono a tariffa e numeri verdi dedicati per i bridge di conferenza in uno dei tre modi seguenti:
 
-- **Uso dell'interfaccia di amministrazione di Skype for Business**. In alcuni paesi/aree geografiche è possibile recuperare numeri di servizio per i bridge di conferenza usando l'interfaccia di amministrazione di Skype for Business. Vedere [Recupero dei numeri di telefono di servizio](./getting-service-phone-numbers.md).
+- **Usare l'interfaccia di amministrazione di Teams.** Per alcuni paesi/aree geografiche, è possibile ottenere numeri per i bridge delle conferenze usando l'interfaccia di amministrazione di Teams. Vedere [Recupero dei numeri di telefono di servizio](./getting-service-phone-numbers.md).
 
-- **Importa i tuoi numeri esistenti.** Puoi trasferire o trasferire numeri esistenti dal provider di servizi o dal gestore telefonico corrente a Microsoft 365 o Office 365. Per ulteriori informazioni su come eseguire questa operazione, vedere [Trasferire numeri di telefono in Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).  
+- **Importa i tuoi numeri esistenti.** Puoi trasferire o trasferire numeri esistenti dal provider di servizi o dal gestore telefonico corrente a Microsoft 365. Per ulteriori informazioni su come eseguire questa operazione, vedere [Trasferire numeri di telefono in Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).  
   
-- **Utilizzare un modulo di richiesta per nuovi numeri.** A volte (a seconda del paese/area geografica) non sarà possibile ottenere nuovi numeri di telefono tramite l'interfaccia di amministrazione di Skype for Business oppure serviranno numeri di telefono o prefissi specifici. In questo caso è necessario scaricare un modulo di richiesta, compilarlo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
+- **Utilizzare un modulo di richiesta per nuovi numeri.** A volte (a seconda del paese/area geografica) non potrai ottenere i nuovi numeri di telefono tramite l'interfaccia di amministrazione di Teams oppure ti serviranno numeri di telefono o prefisso specifici. In tal caso, dovrai scaricare un modulo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
 ## <a name="how-do-you-set-it-up"></a>Modalità di configurazione
 
-Dopo aver deciso di configurare le audioconferenze per gli utenti, vedere [Configurazione delle audioconferenze per Microsoft Teams](set-up-audio-conferencing-in-teams.md) o [Configurazione delle audioconferenze per Skype for Business Online](/SkypeForBusiness/audio-conferencing-in-office-365/set-up-audio-conferencing) per i passaggi da seguire.
+Dopo aver deciso di configurare le audioconferenze per gli utenti, vedi [Configurare le audioconferenze per Microsoft Teams](set-up-audio-conferencing-in-teams.md) per i passaggi da seguire.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Configurare Skype for Business online](/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
-  
 [Numeri di telefono per le audioconferenze in Microsoft Teams](phone-numbers-for-audio-conferencing-in-teams.md)
-
-[Numeri di telefono per le audioconferenze in Skype for Business Online](/SkypeForBusiness/audio-conferencing-in-office-365/phone-numbers-for-audio-conferencing)

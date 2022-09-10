@@ -23,16 +23,16 @@ ms.custom:
 - ms.lync.lac.CpcGettingStarted
 - seo-marvel-mar2020
 description: Scopri come provare o acquistare licenze per i servizi di audioconferenza (servizi di conferenza PSTN) per Microsoft 365 o Office 365 per configurare conferenze telefoniche a cui gli utenti possono accedere.
-ms.openlocfilehash: 861537c6c452612058d8e3ad8ae416b812d0bb32
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 5d93f9d81e2b70520d8c8044293f81aff2a36940
+ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67271441"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67641917"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-microsoft-365-for-microsoft-teams"></a>Provare o acquistare i servizi di audioconferenza in Microsoft 365 per Microsoft Teams
 
-A volte le persone all'interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Microsoft Teams include la funzione di audioconferenza proprio per questa situazione! Le persone possono accedere alle riunioni di Microsoft Teams usando un telefono, invece di usare l'app Microsoft Teams su un dispositivo mobile o pc.
+A volte le persone all'interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Microsoft Teams include la funzione di audioconferenza proprio per questa situazione! Persone possibile accedere alle riunioni di Microsoft Teams tramite telefono invece di usare l'app Microsoft Teams su un dispositivo mobile o pc.
 
 Devi configurare le audioconferenze solo per le persone che intendono pianificare o condurre riunioni. Le persone che partecipano alla riunione tramite telefono non hanno bisogno che le venga assegnata alcuna licenza o di altre impostazioni.
 
@@ -76,15 +76,15 @@ Se si è un cliente di licenze a volume, è possibile ottenere le licenze di Aud
 
 ## <a name="step-2-set-the-audio-conferencing-provider-for-people-who-lead-or-schedule-meetings"></a>Passo 2: Impostare il provider di servizi di audioconferenza per gli utenti che conducono o pianificano riunioni
 
-Quando assegni una licenza per **i servizi di audioconferenza** alle persone dell'organizzazione che non hanno Skype for Business integrato con un provider di servizi di audioconferenza di terze parti, sono tutti configurati e pronti all'uso. (Non è necessario impostare il provider di audioconferenza.)
+Quando assegni una licenza per **i servizi di audioconferenza** agli utenti dell'organizzazione che non hanno Teams integrato con un provider di servizi di audioconferenza di terze parti, sono tutti configurati e pronti all'uso. (Non è necessario impostare il provider di audioconferenza.)
 
-Se hai utenti abilitati con un provider di servizi di audioconferenza di terze parti, devi impostare il provider di tali utenti su Microsoft. Per modificare il provider per un utente, vedi [Assegnare Microsoft come provider di servizi di audioconferenza](/skypeforbusiness/audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider).
+Se hai utenti abilitati con un provider di servizi di audioconferenza di terze parti, devi impostare il provider di tali utenti su Microsoft. Per cambiare il provider per un utente, vedere [Assegnare licenze per i componenti aggiuntivi di Teams agli utenti](teams-add-on-licensing/assign-teams-add-on-licenses.md).
 
 ## <a name="step-3-other-admin-tasks"></a>Passo 3: Altri compiti dell'amministratore
 
 La procedura seguente è **facoltativa**, ma molti amministratori preferiscono eseguirla:
 
-1. [Personalizzare gli inviti alle riunioni](/skypeforbusiness/set-up-skype-for-business-online/customize-meeting-invitations). I numeri di accesso impostati per l'utente verranno aggiunti automaticamente agli inviti alle riunioni inviati ai partecipanti. Tuttavia, puoi aggiungere una guida o collegamenti legali personalizzati, un messaggio di testo e una piccola immagine aziendale.
+1. [Personalizzare gli inviti alle riunioni](meeting-settings-in-teams.md#customize-meeting-invitations). I numeri di accesso impostati per l'utente verranno aggiunti automaticamente agli inviti alle riunioni inviati ai partecipanti. Tuttavia, puoi aggiungere una guida o collegamenti legali personalizzati, un messaggio di testo e una piccola immagine aziendale.
 
 2. [Impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbers-included-on-invites-in-teams.md). Questo è il numero di telefono che verrà visualizzato nelle riunioni pianificate dall'utente.
 

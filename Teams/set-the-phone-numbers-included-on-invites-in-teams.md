@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Seguire questa procedura per creare un numero di telefono predefinito per consentire ai chiamanti di partecipare a una riunione di Microsoft Teams.
-ms.openlocfilehash: f0956007d5df72c1fd6c6ae905433e73bd855a56
-ms.sourcegitcommit: 312ff79ecab91412918793ec882bfc6e0143d30a
+ms.openlocfilehash: 27ff7040b27d2265bcdc5ab30f48cb919746471b
+ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66884845"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67642067"
 ---
 # <a name="set-the-phone-numbers-included-on-invites-in-microsoft-teams"></a>Impostare i numeri di telefono inclusi negli inviti in Microsoft Teams
 
@@ -100,6 +100,6 @@ Per impostare o modificare il numero di telefono predefinito per i servizi di au
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Prova o acquista i servizi di audioconferenza in Microsoft 365 o Office 365](/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)
+[Provare o acquistare i servizi di audioconferenza in Microsoft 365 per Microsoft Teams](try-or-purchase-audio-conferencing-in-office-365-for-teams.md)
 
 [Cambiare i numeri di telefono del bridge per i servizi di audioconferenza](change-the-phone-numbers-on-your-audio-conferencing-bridge.md)

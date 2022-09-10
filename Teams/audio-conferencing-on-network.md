@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Di seguito viene descritta la connessione in rete per i servizi di audioconferenza.
-ms.openlocfilehash: 222a89df39f1fe6b2decb21431f3475a148a1a6c
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 56e2addc3b924d7d73df7475ad217a999dc0aca0
+ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67267591"
+ms.lasthandoff: 09/10/2022
+ms.locfileid: "67641877"
 ---
 # <a name="on-network-conferencing-for-audio-conferencing"></a>Servizi di conferenza telefonica in rete per audioconferenze
 
@@ -54,7 +54,7 @@ Per instradare le chiamate telefoniche con accesso esterno effettuate dagli uten
 
 È necessario configurare l'apparecchiatura di telefonia dei siti per instradare le chiamate a qualsiasi numero di servizio del bridge di conferenza dell'organizzazione tramite un trunk routing diretto.
 
-Puoi trovare i numeri di servizio nell'interfaccia di amministrazione di Teams in **Riunioni -> Conferencing Bridge** o usando il cmdlet PowerShell di Skype for Business Online Get-CsOnlineDialInConferencingBridge. Per ulteriori informazioni, consulta un elenco dei [numeri di audioconferenza in Microsoft Teams](see-a-list-of-audio-conferencing-numbers-in-teams.md).
+Puoi trovare i numeri di servizio nell'interfaccia di amministrazione di Teams in **Riunioni -> Conferencing Bridges** o usando il cmdlet Teams PowerShell Get-CsOnlineDialInConferencingBridge. Per ulteriori informazioni, consulta un elenco dei [numeri di audioconferenza in Microsoft Teams](see-a-list-of-audio-conferencing-numbers-in-teams.md).
 
 > [!NOTE]
 > Questa funzionalità non è disponibile per gli utenti con licenza di audioconferenza con tariffa al minuto.
