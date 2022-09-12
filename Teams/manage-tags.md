@@ -15,21 +15,21 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire l'uso dei tag nell'organizzazione in Microsoft Teams.
-ms.openlocfilehash: 4f394d66521464e99c9492532cb1571931a8de27
-ms.sourcegitcommit: 0592f9d2696fe8c840a4ed3e7f99e55ca0c9c3e6
+ms.openlocfilehash: 9c2da438d3f88a172759ec13672aec663ae6add9
+ms.sourcegitcommit: 41a75f1ba5ceb09f8db7d468aa41b63a89ab9c30
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67418505"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67647430"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 
-I tag in Microsoft Teams consentono agli utenti di connettersi rapidamente e facilmente con un sottoinsieme di persone in un team. È possibile creare e assegnare tag personalizzati per categorizzare le persone in base ad attributi come ruolo, progetto, competenza o posizione. In alternativa, i tag possono essere assegnati automaticamente alle persone in base alla loro pianificazione e alle informazioni sui turni [nell'app Turni](https://support.microsoft.com/office/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b?#PickTab=Shifts). Dopo l'aggiunta di un tag a uno o più membri del team, può essere usato in @mentions da tutti i membri del team in un post di canale per notificare una conversazione solo alle persone a cui è stato assegnato.
+I tag in Microsoft Teams consentono agli utenti di connettersi rapidamente e facilmente con un sottoinsieme di persone in un team. È possibile creare e assegnare tag personalizzati per categorizzare le persone in base ad attributi come ruolo, progetto, competenza o posizione. In alternativa, i tag possono essere assegnati automaticamente alle persone in base alla loro pianificazione e alle informazioni sui turni [nell'app Turni](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6). Dopo l'aggiunta di un tag a uno o più membri del team, può essere usato in @mentions da tutti i membri del team in un post di canale per notificare una conversazione solo alle persone a cui è stato assegnato.
 
 Come accennato in precedenza, ci sono due tipi di tag in Teams.
 
 - **Tag personalizzati**: i proprietari e i membri del team (se hanno le autorizzazioni) possono creare e assegnare manualmente tag agli utenti. Ad esempio, un tag "Designer" o "Radiologist" raggiungerà questi gruppi di persone in un team senza doverne digitare i nomi.
-- **Aggiunta di tag tramite turno**: con questa funzionalità, alle persone vengono assegnati automaticamente tag che corrispondono al nome del gruppo di pianificazione e turno [nell'app Turni](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6#bkmk_openshiftsappdesktop) in Teams. Ad esempio, il tag "EngineerOnCall" raggiunge tutti i tecnici che sono pianificati in Turni per lavorare nel momento in cui il tag viene utilizzato in una chat o un post di canale. Con l'aggiunta di tag tramite turno, Teams elimina i tentativi di conoscere il nome del personale in turno quando gli utenti devono inoltrare rapidamente le informazioni.
+- **Aggiunta di tag tramite turno**: con questa funzionalità, alle persone vengono assegnati automaticamente tag che corrispondono al nome del gruppo di pianificazione e turno [nell'app Turni](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6#bkmk_usetags) in Teams. Ad esempio, il tag "EngineerOnCall" raggiunge tutti i tecnici che sono pianificati in Turni per lavorare nel momento in cui il tag viene utilizzato in una chat o un post di canale. Con l'aggiunta di tag tramite turno, Teams elimina i tentativi di conoscere il nome del personale in turno quando gli utenti devono inoltrare rapidamente le informazioni.
 
 > [!NOTE]
 > I tag non sono supportati in canali privati o condivisi.

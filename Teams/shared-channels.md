@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Scopri come utilizzare e gestire i canali condivisi in Microsoft Teams.
-ms.openlocfilehash: dd9edbe18a01ffc1a46a8cab76a383aed0bef5a4
-ms.sourcegitcommit: 09b77e83bc41914007606468e322d4ea47e2e8a4
+ms.openlocfilehash: 323d20c152af9595b6a738f917103a59ab4142ef
+ms.sourcegitcommit: 41a75f1ba5ceb09f8db7d468aa41b63a89ab9c30
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67630456"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67647550"
 ---
 # <a name="shared-channels-in-microsoft-teams"></a>Canali condivisi in Microsoft Teams
 
@@ -118,7 +118,7 @@ Per altre informazioni sull'esecuzione di una ricerca eDiscovery per i messaggi 
 
 ## <a name="considerations-around-file-access-in-shared-channels"></a>Considerazioni sull'accesso ai file nei canali condivisi
 
-I file, le cartelle e i blocchi appunti di OneNote in un canale condiviso possono essere condivisi con le persone esterne al canale tramite la [Condivisione file standard di SharePoint](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
+I file, le cartelle e i blocchi appunti di OneNote in un canale condiviso possono essere condivisi con persone esterne al canale (ma non all'esterno dell'organizzazione) usando la [condivisione di file standard di SharePoint](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).
 
 Se a un utente viene concesso l'accesso a un file, una cartella o un blocco appunti in un canale condiviso tramite SharePoint, la rimozione dell'utente dal team o dal canale condiviso non rimuoverà l'accesso dell'utente al file, alla cartella o al blocco appunti.
 

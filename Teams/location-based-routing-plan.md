@@ -1,7 +1,7 @@
 ---
 title: Pianificare l'instradamento basato sulla posizione per Instradamento diretto
-ms.author: mikeplum
-author: MikePlumleyMSFT
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -16,12 +16,12 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d282a2cd9588c2e7104b3093d03da082e9cf388b
-ms.sourcegitcommit: ff783fad2fb5d412e864e3af2ceaa8fedcd9da07
+ms.openlocfilehash: 795433f832d57767a7937be1a9d3e7f31e73f240
+ms.sourcegitcommit: 41a75f1ba5ceb09f8db7d468aa41b63a89ab9c30
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66562625"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67647440"
 ---
 # <a name="plan-location-based-routing-for-direct-routing"></a>Pianificare l'instradamento basato sulla posizione per Instradamento diretto
 
@@ -387,9 +387,9 @@ Location-Based Routing non si applica ai tipi di interazioni seguenti. Location-
 
 ### <a name="location-based-routing-for-conferencing"></a>Location-Based Routing per le conferenze
 
-Un utente abilitato per il routing Location-Based in una chiamata PSTN non è autorizzato ad avviare una conferenza con un altro utente o numero PSTN. È consentita la connessione agli operatori automatici o alle code di chiamata.
+Un utente abilitato per il routing Location-Based senza licenza per i servizi di audioconferenza in una chiamata PSTN non è autorizzato ad avviare una conferenza con un altro utente o numero PSTN. È consentita la connessione agli operatori automatici o alle code di chiamata.
 
-Se l'utente dispone di una licenza per i servizi di audioconferenza, l'utente deve avviare una conferenza con gli utenti interessati e chiamare la rete PSTN tramite il bridge di conferenza per avviare una conferenza telefonica.
+Se l'utente dispone di una licenza per i servizi di audioconferenza, l'utente deve avviare una conferenza con gli utenti interessati e chiamare la rete PSTN tramite il bridge di conferenza per avviare una conferenza telefonica. Se l'utente è già in una chiamata PSTN, può aggiungere un altro utente o un altro numero PSTN alla chiamata tramite l'escalation della chiamata utilizzando il bridge di conferenza per effettuare la chiamata in uscita.
 
 In una conferenza telefonica avviata da un utente senza licenza per i servizi di audioconferenza, l'aggiunta di partecipanti PSTN non è consentita se nella conferenza telefonica è presente o è stato almeno un utente abilitato per il routing Location-Based. Se almeno un partecipante PSTN partecipa a una conferenza telefonica o lo partecipava prima di qualsiasi Location-Based I partecipanti abilitati al routing sono stati invitati a partecipare alla chiamata, ad esempio Location-Based Non è possibile aggiungere alla chiamata partecipanti abilitati per il routing.
 
@@ -397,6 +397,7 @@ Se l'utente abilitato per il routing Location-Based partecipa alla conferenza te
 
 I servizi di conferenza on-network per i servizi di audioconferenza NON devono essere distribuiti con apparecchiature di telefonia in India.
 
+Un utente abilitato per il routing Location-Based in una chiamata PSTN non è autorizzato a unire la chiamata con un'altra chiamata.
 
 ### <a name="media-bypass-requirement-for-location-based-routing"></a>Requisito per il bypass multimediale per il routing Location-Based
 

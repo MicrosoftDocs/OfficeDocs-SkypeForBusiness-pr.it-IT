@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: 912a9f7f9330bcc8da167c7435048d1ec8c28284
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
-ms.translationtype: HT
+ms.openlocfilehash: 2f6dd23c5f15d2c96a1a5bb7cec6f4b9107f436c
+ms.sourcegitcommit: 41a75f1ba5ceb09f8db7d468aa41b63a89ab9c30
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269881"
+ms.lasthandoff: 09/12/2022
+ms.locfileid: "67647450"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -34,7 +34,7 @@ I canali privati di Microsoft Teams creano spazi dedicati per la collaborazione 
 Ad esempio, un canale privato è utile negli scenari seguenti:
 
 - Un gruppo di persone in un team desidera uno spazio mirato per collaborare senza dover creare un team distinto.
-- Un sottoinsieme di persone in un team vuole un canale privato per discutere di informazioni riservate, come budget, gestione delle risorse, posizionamento strategico e così via.
+- Un sottoinsieme di persone di un team vuole che un canale privato discuti di informazioni riservate, ad esempio budget, risorse, posizionamento strategico e così via.
 
 Un'icona a lucchetto indica un canale privato. Solo i membri dei canali privati possono visualizzare e partecipare ai canali privati a cui vengono aggiunti.
 
@@ -130,6 +130,8 @@ Non è possibile convertire un canale privato in un altro tipo di canale.
 Le notifiche dai canali privati non sono incluse nelle email di attività perse.
 
 Non è possibile pianificare le riunioni del canale.
+
+Non è possibile personalizzare le riunioni di canale con il titolo della riunione.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
