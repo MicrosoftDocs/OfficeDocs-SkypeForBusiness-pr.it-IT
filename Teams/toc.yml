@@ -1545,6 +1545,10 @@ items:
             href: adobe-acrobat-pdf-viewer-teams.md
           - name: Gestire Microsoft 365 e i connettori personalizzati
             href: Office-365-custom-connectors.md
+          - name: Personalizzare la personalizzazione dell'app usando la personalizzazione dell'app
+            href: customize-apps.md
+          - name: Gestire gli accessi alle app in Microsoft 365
+            href: manage-third-party-teams-apps.md
       - name: Gestire le app personalizzate
         items:
           - name: Gestire le app personalizzate e trasferite localmente
@@ -1579,13 +1583,11 @@ items:
             href: resource-specific-consent.md
           - name: Comprendere le autorizzazioni delle app e l'accesso alle risorse
             href: app-permissions.md
-          - name: Personalizzare l'aspetto e i metadati delle app
-            href: customize-apps.md
           - name: Personalizzare l'App Store dell'organizzazione
             href: customize-your-app-store.md
           - name: Gestire gli accessi alle app in Microsoft 365
             href: manage-third-party-teams-apps.md
-          - name: Comportamento dell'app per gli utenti esterni
+          - name: Usare le app come utenti esterni o guest
             href: non-standard-users.md
           - name: Gestire le richieste degli utenti per consentire le app
             href: user-requests-approve-apps.md
