@@ -1,5 +1,5 @@
 ---
-title: Richieste degli utenti per gli amministratori di consentire le app
+title: Richieste degli utenti per gli amministratori
 author: ashishguptaiitb
 ms.author: guptaashish
 manager: prkosh
@@ -18,53 +18,34 @@ description: Informazioni su come gestire e configurare le richieste degli utent
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 122d41de6f1cb5ea67a5ce85ba9f8f7d02e26339
-ms.sourcegitcommit: 41a75f1ba5ceb09f8db7d468aa41b63a89ab9c30
+ms.openlocfilehash: 62d34aae25ef1ebff585ea430aeb3db20856669a
+ms.sourcegitcommit: 9de6b0b03f433e71fe239d292387eed33c11b531
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67647540"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67657326"
 ---
 # <a name="manage-user-requests"></a>Gestire le richieste degli utenti
 
-Le app bloccate nell'organizzazione possono influire sulla produttività e la collaborazione degli utenti finali. Le app disponibili in Teams Store ma bloccate nell'organizzazione non possono essere usate dagli utenti finali. Tuttavia, per essere sempre informati, gli utenti finali possono visualizzare le app bloccate, visualizzare le informazioni dell'app e i relativi use case server. Gli utenti richiedono l'approvazione dell'amministratore in modo che usino queste app in Teams, dopo aver valutato la richiesta.
+Le app bloccate nell'organizzazione possono influire sulla produttività e la collaborazione degli utenti finali. Gli utenti finali non possono usare le app bloccate, ma visualizzare tali app e le loro informazioni in Teams Store e richiedere l'approvazione agli amministratori. Dopo aver valutato la richiesta, è possibile scegliere di consentire un'app o ignorare la richiesta.
 
-Questa funzionalità fornisce un segnale sulla richiesta di un'app all'interno dell'organizzazione. È possibile visualizzare facilmente il numero aggregato di richieste di app. Consente di prendere una decisione consapevole sulle app da valutare da consentire nell'organizzazione.
+Questa funzionalità fornisce un segnale sulla richiesta di un'app all'interno dell'organizzazione. È possibile visualizzare facilmente il numero aggregato di richieste per ogni app richiesta. Ti aiuta a prendere una decisione consapevole sulle app da valutare per consentirlo.
 
 L'utente mantiene il controllo completo delle app consentite o bloccate per gli utenti. Se scegli di consentire un'app, i controlli e l'interfaccia utente per gestire le app rimangono invariati.
 
-* L'opzione predefinita invia le richieste utente nell'interfaccia di amministrazione di Teams, dove è possibile [visualizzare le richieste degli utenti e consentire le app richieste](#view-user-requests).
+* L'opzione predefinita invia le richieste degli utenti all'interfaccia di amministrazione di Teams, dove è possibile [visualizzare le richieste degli utenti e consentire le app richieste](#view-user-requests-in-teams-admin-center).
 
    :::image type="content" source="media/user-request-blocked-apps.png" alt-text="Screenshot che mostra l'opzione per richiedere a un amministratore di approvare un'app bloccata.":::
 
-* Una personalizzazione consente di [configurare l'esperienza utente](#modify-the-default-setting-to-receive-end-user-requests) finale più adatta per l'organizzazione. È possibile fornire un'istruzione personalizzata visualizzata agli utenti finali sulle app bloccate nell'app store di Teams e indirizzare gli utenti a un sito interno per raccogliere le loro richieste.
+* Una personalizzazione consente di [configurare l'esperienza utente](#modify-the-default-setting-to-receive-end-user-requests) finale più adatta per l'organizzazione. È possibile fornire un'istruzione o un messaggio personalizzato visualizzato nell'app store di Teams e l'opzione di approvazione della richiesta indirizza gli utenti a un URL specifico dell'organizzazione per raccogliere le loro richieste.
 
-   :::image type="content" source="media/user-request-blocked-apps-redirected.png" alt-text="Screenshot che mostra l'esperienza utente finale per le app nello Store quando un amministratore reindirizza l'URL della richiesta di app consenti a un sito interno.":::
+   :::image type="content" source="media/user-request-blocked-apps-redirected.png" alt-text="Screenshot che mostra l'esperienza utente finale per le app nello Store quando un amministratore reindirizza l'URL della richiesta di app consenti a un URL specifico dell'organizzazione.":::
 
-## <a name="modify-the-default-setting-to-receive-end-user-requests"></a>Modificare l'impostazione predefinita per la ricezione delle richieste degli utenti finali
+## <a name="view-user-requests-in-teams-admin-center"></a>Visualizzare le richieste degli utenti nell'interfaccia di amministrazione di Teams
 
-Per configurare un messaggio personalizzato e reindirizzare gli utenti a un URL specifico dell'organizzazione per richiedere l'approvazione delle app, procedere come segue:
+Le richieste degli utenti finali ricevute con il metodo predefinito vengono visualizzate nell'interfaccia di amministrazione di Teams. È possibile visualizzare e gestire facilmente le richieste. È consigliabile valutare regolarmente la presenza di richieste degli utenti finali. Per visualizzare e consentire le app, seguire questa procedura:
 
-1. Accedere all'interfaccia di amministrazione di Teams e accedere alla pagina **[Gestisci app](https://admin.teams.microsoft.com/policies/manage-apps)** **delle app** >  di Teams.
-
-1. Seleziona Impostazioni app a livello di organizzazione.
-
-1. Per visualizzare un messaggio o un'istruzione personalizzata nell'archivio client di Teams, fornire un SMS nella configurazione Richieste utente.
-
-1. Per fornire un URL specifico dell'organizzazione per raccogliere le richieste degli utenti, eseguire le operazioni seguenti:
-
-   1. Impostare l'opzione Reindirizza le richieste a uno strumento esterno su Attivato.
-   1. Fornisci l'URL personalizzato specifico dell'organizzazione.
-
-      :::image type="content" source="media/user-request-config-org-wide-setting.png" alt-text="Screenshot per attivare o disattivare la personalizzazione dell'URL per la richiesta dell'utente di sbloccare l'app nell'interfaccia utente delle impostazioni a livello di organizzazione.":::
-
-1. Selezionare **Salva**.
-
-## <a name="view-user-requests"></a>Visualizzare le richieste degli utenti
-
-Le richieste degli utenti finali ricevute con il metodo predefinito vengono visualizzate nell'interfaccia di amministrazione di Teams. È possibile visualizzare e gestire facilmente le richieste. È consigliabile effettuare una valutazione regolare per verificare la presenza di richieste da parte dell'utente finale. Per visualizzare e consentire le app, procedere come segue:
-
-1. Accedere all'interfaccia di amministrazione di Teams e accedere alla pagina **[Gestisci app](https://admin.teams.microsoft.com/policies/manage-apps)** **delle app** >  di Teams.
+1. Accedere all'interfaccia di amministrazione di Teams e passare alle app  > **di Teams**[**Gestire le app**](https://admin.teams.microsoft.com/policies/manage-apps).
 
 1. Scegliere di visualizzare la colonna **Richieste per utenti** . È anche possibile ordinare la colonna.
 
@@ -82,22 +63,42 @@ Le richieste degli utenti finali ricevute con il metodo predefinito vengono visu
    * Se l'app è stata bloccata per tutti gli utenti, [consentire l'app](manage-apps.md#allow-and-block-apps).
    * Se tutte le app sono bloccate per tutti gli utenti, [modificare le impostazioni a livello di organizzazione](manage-apps.md#manage-org-wide-app-settings).
 
-1. Facoltativamente, per passare a una configurazione personalizzata all'URL specifico dell'organizzazione, selezionare il collegamento Configura richieste utente nella finestra di dialogo Gestisci richieste utente. Apre il riquadro Impostazioni app a livello di organizzazione in cui è possibile [configurare l'esperienza di richiesta per l'utente finale](#modify-the-default-setting-to-receive-end-user-requests).
+Gli utenti finali possono visualizzare l'opzione **Aggiungi** per un'app in Teams Store per verificare se l'app è consentita. Quando si consente un'app dopo aver ricevuto richieste nell'interfaccia di amministrazione di Teams, Teams non informa gli utenti finali che la loro richiesta viene agito su. Quando consenti un'app, il contatore delle richieste non viene reimpostato su zero.
 
-Se si consente un'app dopo aver ricevuto richieste nell'interfaccia di amministrazione di Teams, Teams non informa l'utente finale che la sua richiesta viene agito su. L'utente può controllare l'app in Teams Store per verificare se l'app è consentita. L'opzione Aggiungi l'app è disponibile per l'utente dopo averlo consentito. Se si consente a un'app dopo aver ricevuto richieste tramite il metodo specifico dell'organizzazione, si applicano i meccanismi interni per fornire l'aggiornamento dello stato all'utente finale.
+## <a name="modify-the-default-setting-to-receive-end-user-requests"></a>Modificare l'impostazione predefinita per la ricezione delle richieste degli utenti finali
 
-Per reimpostare il numero di richieste di app a zero, ignora le richieste. Se consenti semplicemente un'app, il contatore delle richieste non viene reimpostato su zero.
+Teams fornisce un messaggio predefinito per consentire agli utenti di richiedere l'approvazione di un'app. È possibile modificare l'impostazione predefinita per aggiungere un messaggio personalizzato con istruzioni, URL specifico dell'organizzazione o entrambi. Le modifiche vengono visualizzate per ogni app in Teams Store.
+
+Per configurare un messaggio personalizzato e reindirizzare gli utenti a un URL specifico dell'organizzazione, seguire questa procedura:
+
+1. Accedere all'interfaccia di amministrazione di Teams e passare alle app  > **di Teams**[**Gestire le app**](https://admin.teams.microsoft.com/policies/manage-apps).
+
+1. Nell'angolo in alto a destra seleziona **Impostazioni app a livello di organizzazione**.
+
+1. Per visualizzare un messaggio o un'istruzione personalizzata nell'archivio di Teams, immettere un SMS nel campo di testo in **Configurazione richieste utente**.
+
+1. Per fornire un URL specifico dell'organizzazione per raccogliere le richieste degli utenti, seguire questa procedura:
+
+   1. Attiva l'interruttore **Reindirizza le richieste a un collegamento esterno** .
+   1. Fornisci l'URL specifico dell'organizzazione.
+
+      :::image type="content" source="media/user-request-config-org-wide-setting.png" alt-text="Screenshot per attivare o disattivare la personalizzazione dell'URL per la richiesta dell'utente di sbloccare l'app nell'interfaccia utente delle impostazioni a livello di organizzazione.":::
+
+1. Selezionare **Salva**.
+
+I metodi per valutare e consentire le app richieste rimangono invariati.
 
 ## <a name="dismiss-user-requests"></a>Ignorare le richieste degli utenti
 
-Per ignorare le richieste di consentire l'app, seguire questa procedura:
+Per ignorare le richieste a un'app consenti, seguire questa procedura:
 
 1. Selezionare il nome dell'app per cui si desidera ignorare le richieste dell'utente.
-1. Selezionare **Gestisci richieste** e quindi **Ignora tutte le richieste** nella finestra di dialogo.
+1. Selezionare **Gestisci richieste**.
+1. Nella finestra di dialogo Gestisci richieste utente selezionare **Ignora tutte le richieste**.
 
    :::image type="content" source="media/dismiss-user-requests-apps.png" alt-text="Gli amministratori possono approvare una richiesta dell'utente consentendo un'app o ignorando la richiesta e non intraprendendo alcuna azione.":::
 
-Se si ignora una richiesta, questa non informa l'utente finale che la richiesta viene agito su di essa. Quando si ignora una richiesta di consentire un'app, il numero di richieste nell'interfaccia di amministrazione viene reimpostato su zero. Inoltre, dopo alcune ore di chiusura di una richiesta, gli utenti finali possono richiedere di nuovo che la stessa app sia consentita.
+Se si ignora una richiesta, questa non informa l'utente finale che la richiesta viene agito su di essa. Quando si ignora una richiesta di consentire un'app, il numero di richieste nell'interfaccia di amministrazione viene reimpostato su zero. Inoltre, dopo alcune ore di chiusura di una richiesta, gli utenti finali possono richiedere di nuovo l'autorizzazione alla stessa app.
 
 ## <a name="related-article"></a>Articolo correlato
 

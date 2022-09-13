@@ -1,5 +1,5 @@
 ---
-title: Monitorare e risolvere i problemi di Instradamento diretto
+title: Monitorare l'instradamento diretto
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -15,87 +15,78 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Informazioni su come monitorare e risolvere i problemi di configurazione del routing diretto, inclusi i controller dei bordi delle sessioni, i componenti di routing diretto e i trunk di Telecom.
+description: Informazioni su come monitorare e risolvere i problemi relativi alla configurazione del routing diretto, inclusi i controller dei confini della sessione, i componenti Direct Routing e i trunk telecom.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 97bc8afb3645fca4e06b859b765dfbf1e3fe1859
-ms.sourcegitcommit: 279ab5236431961c5181e2c01a69e5aa4290d381
+ms.openlocfilehash: 47a86e8dd98cdb86cd698b187b21453daa003b07
+ms.sourcegitcommit: 9de6b0b03f433e71fe239d292387eed33c11b531
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "60462320"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67657246"
 ---
-# <a name="monitor-and-troubleshoot-direct-routing"></a>Monitorare e risolvere i problemi di Instradamento diretto
+# <a name="monitor-direct-routing"></a>Monitorare l'instradamento diretto
 
 Questo articolo descrive come monitorare e risolvere i problemi relativi alla configurazione del routing diretto. 
 
-La possibilità di effettuare e ricevere chiamate tramite Routing diretto implica i componenti seguenti: 
+La possibilità di effettuare e ricevere chiamate utilizzando l'instradamento diretto prevede i componenti seguenti: 
 
 - Session Border Controller (SBC) 
-- Componenti di Routing diretto in Microsoft Cloud 
-- Tronchi di telecomunicazione 
+- Componenti di routing diretto in Microsoft Cloud 
+- Tronchi di telecomunicazioni 
 
-In caso di problemi di risoluzione dei problemi, è possibile aprire un caso di supporto con il fornitore SBC o Microsoft. 
+In caso di problemi di risoluzione dei problemi, è possibile aprire un caso di supporto con il fornitore di SBC o Microsoft. 
 
-Microsoft sta lavorando alla fornitura di altri strumenti per la risoluzione dei problemi e il monitoraggio. Controllare periodicamente la documentazione per gli aggiornamenti. 
+Microsoft sta lavorando per fornire altri strumenti per la risoluzione dei problemi e il monitoraggio. Consulta periodicamente la documentazione per gli aggiornamenti. 
 
-## <a name="direct-routing-diagnostic-tool"></a>Strumento di diagnostica routing diretto
+## <a name="troubleshoot-direct-routing"></a>Risolvere i problemi relativi al routing diretto
 
-Gli amministratori possono usare lo strumento di diagnostica seguente per verificare che un utente sia configurato correttamente per il routing diretto:
+Per risolvere i problemi relativi al routing diretto, vedere [Diagnosticare i problemi relativi al routing diretto](/MicrosoftTeams/troubleshoot/phone-system/direct-routing/diagnose-direct-routing-issues).
 
-1. Selezionare **Esegui test** di seguito, che popola la diagnostica nel centro Amministrazione Microsoft 365 dati. 
+## <a name="monitoring-availability-of-session-border-controllers-using-session-initiation-protocol-sip-options-messages"></a>Monitoraggio della disponibilità dei controller dei confini della sessione tramite i messaggi delle opzioni SIP (Session Initiation Protocol)
 
-   > [!div class="nextstepaction"]
-   > [Esegui test: Routing diretto](https://aka.ms/TeamsDirectRoutingDiag)
-
-2. Nel riquadro Esegui diagnostica immettere il messaggio di posta  elettronica dell'utente da testare nel campo Nome utente o Posta elettronica e quindi selezionare **Esegui test.**
-
-3. I test restituiranno i passaggi migliori per risolvere eventuali configurazioni di tenant, utenti o criteri per verificare che l'utente sia configurato correttamente per il routing diretto in Microsoft Teams.
-
-## <a name="monitoring-availability-of-session-border-controllers-using-session-initiation-protocol-sip-options-messages"></a>Monitoraggio della disponibilità dei session border controller tramite i messaggi di opzioni SIP (Session Initiation Protocol)
-
-Il routing diretto usa le opzioni SIP inviate dai session border controller per monitorare l'integrità di SBC. Non sono necessarie azioni da parte dell'amministratore tenant per abilitare il monitoraggio delle opzioni SIP. Le informazioni raccolte vengono prese in considerazione quando si prendono decisioni relative al routing. 
+Il routing diretto utilizza le opzioni SIP inviate dai controller dei confini della sessione per monitorare l'integrità di SBC. Non sono necessarie azioni da parte dell'amministratore del tenant per abilitare il monitoraggio delle opzioni SIP. Le informazioni raccolte vengono prese in considerazione quando vengono prese le decisioni di routing. 
 
 Ad esempio, se per un utente specifico sono disponibili diversi SBC per instradare una chiamata, Direct Routing considera le informazioni sulle opzioni SIP ricevute da ogni SBC per determinare il routing. 
 
-Il diagramma seguente mostra un esempio della configurazione: 
+Il diagramma seguente mostra un esempio di configurazione: 
 
 ![Esempio di configurazione delle opzioni SIP.](media/sip-options-config-example.png)
 
-Quando un utente effettua una chiamata al numero +1 425, \<any seven digits> Direct Routing valuta il percorso. Ci sono due SBC nel percorso: sbc1.contoso.com e sbc2.contoso.com. Entrambi i SBC hanno la stessa priorità nel percorso. Prima di scegliere un SBC, il meccanismo di routing valuta l'integrità degli SBC in base all'ultima volta in cui il servizio SBC ha inviato le opzioni SIP. 
+Quando un utente effettua una chiamata al numero +1 425 \<any seven digits>, il routing diretto valuta il percorso. Ci sono due SBC nel percorso: sbc1.contoso.com e sbc2.contoso.com. Entrambi gli SBC hanno la stessa priorità nel percorso. Prima di selezionare una scheda SBC, il meccanismo di routing valuta l'integrità degli SBC in base a quando l'SBC ha inviato le opzioni SIP l'ultima volta. 
 
-Un SBC è considerato integro se le statistiche al momento dell'invio della chiamata mostrano che SBC invia opzioni ogni minuto.  
+Un SBC è considerato integro se le statistiche al momento dell'invio della chiamata mostrano che il SBC invia opzioni ogni minuto.  
 
 Quando viene effettuata una chiamata, si applica la logica seguente:
 
-- Il valore SBC è stato associato alle 11:00.  
-- L'SBC invia le opzioni alle 11:01, alle 11:02 e così via.  
+- Il codice SBC è stato associato alle 11:00.  
+- La scheda SBC invia le opzioni alle 11:01, alle 11:02 e così via.  
 - Alle 11:15, un utente effettua una chiamata e il meccanismo di routing seleziona questo SBC. 
 
-Routing diretto accetta le opzioni di intervallo normale tre volte (l'intervallo normale è di un minuto). Se le opzioni sono state inviate negli ultimi tre minuti, il valore SBC è considerato integro.
+Il routing diretto accetta tre volte le opzioni relative all'intervallo regolare (l'intervallo regolare è di un minuto). Se le opzioni sono state inviate negli ultimi tre minuti, SBC è considerato integro.
 
-Se l'SBC nell'esempio ha inviato opzioni in qualsiasi periodo compreso tra le 11:12 e le 11:15 (ora in cui è stata effettuata la chiamata), viene considerato integro. In caso contrario, il valore SBC verrà abbassato di livello dal percorso. 
+Se la scheda SBC nell'esempio ha inviato opzioni in qualsiasi periodo compreso tra le 11:12 e le 11:15 (l'ora in cui è stata effettuata la chiamata), viene considerata integra. In caso contrario, l'SBC verrà abbassato di livello dal percorso. 
 
-L'abbassamento di livello indica che il valore SBC non verrà provato prima. Ad esempio, abbiamo sbc1.contoso.com e sbc2.contoso.com con la stessa priorità.  
+Abbassare di livello significa che la scheda SBC non verrà prima provata. Ad esempio, abbiamo sbc1.contoso.com e sbc2.contoso.com con uguale priorità.  
 
-Se sbc1.contoso.com le opzioni SIP non vengono inviate a intervalli regolari come descritto in precedenza, viene abbassata di livello. Quindi, sbc2.contoso.com la chiamata. Se sbc2.contoso.con non riesce a recapitare la chiamata, il sbc1.contoso.com (abbassato di livello) viene riprovato prima che venga generato un errore. 
+Se sbc1.contoso.com non invia le opzioni SIP a intervalli regolari come descritto in precedenza, viene abbassato di livello. Quindi, sbc2.contoso.com tenta la chiamata. Se sbc2.contoso.con non riesce a recapitare la chiamata, il sbc1.contoso.com (abbassato di livello) viene riprovato prima di generare un errore. 
 
-Se due (o più) SBC in un percorso sono considerati integri e uguali, viene applicato Fisher-Yates casuale per distribuire le chiamate tra gli SBC.
+Se due (o più) SBC in una route sono considerati integri e uguali, Fisher-Yates shuffle viene applicato per distribuire le chiamate tra gli SBC.
 
 ## <a name="monitor-call-quality-analytics-dashboard-and-sbc-logs"></a>Monitorare il dashboard di Call Quality Analytics e i log SBC 
  
-In alcuni casi, in particolare durante l'associazione iniziale, potrebbero verificarsi problemi relativi a una configurazione errata degli SBC o del servizio di routing diretto. 
+In alcuni casi, in particolare durante l'associazione iniziale, potrebbero verificarsi problemi relativi a una configurazione errata degli SBC o del servizio Di routing diretto. 
 
-Per monitorare la configurazione, è possibile usare gli strumenti seguenti:  
+È possibile utilizzare gli strumenti seguenti per monitorare la configurazione:  
  
 - Dashboard qualità delle chiamate 
-- Log SBC 
+- Registri SBC 
 
-Il servizio Routing diretto ha codici di errore molto descrittivi riportati nei log di Call Analytics o SBC. 
+Il servizio Direct Routing include codici di errore descrittivi segnalati a Call Analytics o ai log SBC.
 
-Il dashboard qualità chiamata fornisce informazioni sulla qualità e l'affidabilità delle chiamate. Per altre informazioni su come risolvere i problemi con Call Analytics, vedere Attivazione e uso di Call Quality Dashboard per Microsoft Teams e [Skype for Business Online](/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard) e Usare Call Analytics per risolvere i problemi di qualità scarsa delle [chiamate.](/SkypeForBusiness/using-call-quality-in-your-organization/use-call-analytics-to-troubleshoot-poor-call-quality) 
+Call Quality Dashboard fornisce informazioni sulla qualità e sull'affidabilità delle chiamate. Per altre informazioni su come risolvere i problemi relativi all'uso di Call Analytics, vedere [Attivazione e utilizzo di Call Quality Dashboard per Microsoft Teams e Skype for Business Online](/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard) e [Usare Call Analytics per risolvere problemi di bassa qualità delle chiamate](/SkypeForBusiness/using-call-quality-in-your-organization/use-call-analytics-to-troubleshoot-poor-call-quality). 
 
 In caso di errori di chiamata, Call Analytics fornisce codici SIP standard per facilitare la risoluzione dei problemi. 
 
-![Codice SIP di esempio per l'errore di chiamata.](media/failed-response-code.png)
+![Codice SIP di esempio per un errore di chiamata.](media/failed-response-code.png)
 
-Tuttavia, Call Analytics può essere utile solo quando le chiamate raggiungono i componenti interni di Direct Routing e non riescono. In caso di problemi con l'associazione SBC o problemi in cui "Invito" SIP è stato rifiutato (ad esempio, il nome dell'FQDN del trunk non è configurato correttamente), Call Analytics non aiuterà. In questo caso, fare riferimento ai log SBC. Il routing diretto invia una descrizione dettagliata dei problemi agli SBC; questi problemi possono essere letti dai log SBC.
+Tuttavia, Call Analytics può aiutare solo quando le chiamate raggiungono i componenti interni del routing diretto e non riescono. In caso di problemi di associazione SBC o di rifiuto di "Invito" SIP (ad esempio, il nome fqdn del trunk non è configurato correttamente), Call Analytics non consente di risolvere il problema. In questo caso, fare riferimento ai log SBC. Direct Routing invia una descrizione dettagliata dei problemi agli SBC; questi problemi possono essere letti dai log di SBC.

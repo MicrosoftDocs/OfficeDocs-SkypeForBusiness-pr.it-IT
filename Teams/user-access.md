@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8e78d5905eaed7d9302ffdbf071c3dcf93f00fea
-ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
+ms.openlocfilehash: 9affb1fc93bf79cd7f583f0e74b02bd06f604f0d
+ms.sourcegitcommit: 9de6b0b03f433e71fe239d292387eed33c11b531
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616262"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "67657256"
 ---
 # <a name="manage-user-access-to-teams"></a>Gestire l'accesso degli utenti a Teams
 
@@ -40,7 +40,7 @@ Le licenze di Teams possono essere gestite nel interfaccia di amministrazione di
 
 ## <a name="using-the-microsoft-365-admin-center"></a>Uso della interfaccia di amministrazione di Microsoft 365
 
-Le licenze a livello utente di Teams vengono gestite direttamente tramite le interfacce di gestione degli utenti interfaccia di amministrazione di Microsoft 365. Un amministratore può assegnare licenze ai nuovi utenti quando vengono creati nuovi account utente o a utenti con account esistenti. 
+Le licenze a livello utente di Teams vengono gestite direttamente tramite le interfacce di gestione degli utenti interfaccia di amministrazione di Microsoft 365. Un amministratore può assegnare licenze ai nuovi utenti quando vengono creati nuovi account utente o a utenti con account esistenti.
 
 > [!IMPORTANT]
 > Per gestire le licenze di Microsoft Teams, l'amministratore deve disporre dei privilegi di amministratore globale o amministratore gestione utenti.
