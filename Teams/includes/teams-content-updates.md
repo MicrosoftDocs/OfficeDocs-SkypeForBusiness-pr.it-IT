@@ -3,6 +3,41 @@
 
 
 
+## <a name="week-of-september-05-2022"></a>Settimana del 5 settembre 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 9/6/2022 | [Assegnare, modificare o rimuovere il numero di telefono di un utente](/MicrosoftTeams/assign-change-or-remove-a-phone-number-for-a-user) | Volta |
+| 9/6/2022 | [Configurare chiamate di emergenza dinamiche](/MicrosoftTeams/configure-dynamic-emergency-calling) | Volta |
+| 9/6/2022 | [Pianificare la distribuzione per i dispositivi telefonici e gli schermi di Teams](/MicrosoftTeams/devices/plan-device-deployment) | Volta |
+| 9/6/2022 | [Schermi di Microsoft Teams](/MicrosoftTeams/devices/teams-displays) | Volta |
+| 9/6/2022 | [Gestire i criteri per le chiamate di emergenza in Microsoft Teams](/MicrosoftTeams/manage-emergency-calling-policies) | Volta |
+| 9/6/2022 | [Configurare Operator Connect](/MicrosoftTeams/operator-connect-configure) | Volta |
+| 9/6/2022 | [Configurare Connessione con operatore di telefonia mobile](/MicrosoftTeams/operator-connect-mobile-configure) | Aggiunto |
+| 9/6/2022 | [Pianificare Connessione con operatore di telefonia mobile](/MicrosoftTeams/operator-connect-mobile-plan) | Aggiunto |
+| 9/6/2022 | [Pianificare Operator Connect](/MicrosoftTeams/operator-connect-plan) | Volta |
+| 9/6/2022 | [Opzioni di connettività PSTN](/MicrosoftTeams/pstn-connectivity) | Volta |
+| 9/6/2022 | [Panoramica della licenza Microsoft Teams Rooms nell'interfaccia di amministrazione di Teams](/MicrosoftTeams/rooms/admin-center-license-overview) | Aggiunto |
+| 9/6/2022 | [licenze Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-licensing) | Volta |
+| 9/6/2022 | [Piano per Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-plan) | Volta |
+| 9/6/2022 | [sicurezza Microsoft Teams Rooms](/MicrosoftTeams/rooms/security) | Volta |
+| 9/6/2022 | [Creare account di risorse per sale e dispositivi teams condivisi](/MicrosoftTeams/rooms/with-office-365) | Volta |
+| 9/6/2022 | [Pianificare e gestire le chiamate di emergenza](/MicrosoftTeams/what-are-emergency-locations-addresses-and-call-routing) | Volta |
+| 9/6/2022 | [Esperienza di aggiornamento delle app in Microsoft Teams](/MicrosoftTeams/apps-update-experience) | Volta |
+| 9/6/2022 | [Note sulla versione per Microsoft Teams Rooms (Windows)](/MicrosoftTeams/rooms/rooms-release-note) | Volta |
+| 9/9/2022 | [Richieste degli utenti per gli amministratori di consentire le app](/MicrosoftTeams/user-requests-approve-apps) | Aggiunto |
+| 9/9/2022 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | Volta |
+| 9/9/2022 | [Domande ricorrenti sulle audioconferenze](/MicrosoftTeams/audio-conferencing-common-questions) | Volta |
+| 9/9/2022 | [Audioconferenza in Microsoft 365](/MicrosoftTeams/audio-conferencing-in-office-365) | Volta |
+| 9/9/2022 | [Lingue supportate per i servizi di audioconferenza](/MicrosoftTeams/audio-conferencing-supported-languages) | Volta |
+| 9/9/2022 | [Audioconferenza con routing diretto, GCCH e DoD](/MicrosoftTeams/audio-conferencing-with-direct-routing-for-gcch-and-dod) | Volta |
+| 9/9/2022 | [Modificare le impostazioni per un bridge per audioconferenza](/MicrosoftTeams/change-the-settings-for-an-audio-conferencing-bridge) | Volta |
+| 9/9/2022 | [Periodo di accesso gratuito](/MicrosoftTeams/complimentary-dial-out-period) | Volta |
+| 9/9/2022 | [Disponibilità paese/area geografica - Audioconferenza, Piani per chiamate](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) | Volta |
+| 9/9/2022 | Uso dei gruppi di lavoro in Teams | Rimosso |
+
+
 ## <a name="week-of-august-29-2022"></a>Settimana del 29 agosto 2022
 
 
@@ -125,102 +160,3 @@
 | 8/12/2022 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant-smb) | Aggiunto |
 | 8/12/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue-smb) | Aggiunto |
 | 8/12/2022 | [App Walkie-talkie in Microsoft Teams](/MicrosoftTeams/walkie-talkie) | Volta |
-
-
-## <a name="week-of-august-01-2022"></a>Settimana del 1 agosto 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 8/1/2022 | [Adobe Acrobat come visualizzatore PDF predefinito in Teams](/MicrosoftTeams/adobe-acrobat-pdf-viewer-teams) | Volta |
-| 8/1/2022 | [Assegnare criteri a utenti e gruppi](/MicrosoftTeams/assign-policies-users-and-groups) | Volta |
-| 8/1/2022 | [Piani per chiamate in Microsoft Teams](/MicrosoftTeams/calling-plan-landing-page) | Volta |
-| 8/1/2022 | [Piani per chiamate per Microsoft 365](/MicrosoftTeams/calling-plans-for-office-365) | Volta |
-| 8/1/2022 | [Informazioni sulle app in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | Volta |
-| 8/1/2022 | [Recuperare numeri di telefono per gli utenti](/MicrosoftTeams/getting-phone-numbers-for-your-users) | Volta |
-| 8/1/2022 | [Configurare i piani per chiamate](/MicrosoftTeams/set-up-calling-plans) | Volta |
-| 8/1/2022 | [Configurare Credito per la comunicazione per la propria organizzazione](/MicrosoftTeams/set-up-communications-credits-for-your-organization) | Volta |
-| 8/1/2022 | [Report utilizzo app Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/app-usage-report) | Volta |
-| 8/1/2022 | [Cosa sono i Crediti comunicazioni?](/MicrosoftTeams/what-are-communications-credits) | Volta |
-| 8/1/2022 | [Informazioni approfondite per i suggerimenti di Valutazione della lettura](/MicrosoftTeams/insights-for-reading-progress) | Aggiunto |
-| 8/1/2022 | [Novità - Operator Connect](/MicrosoftTeams/operator-connect-whats-new) | Aggiunto |
-| 8/2/2022 | [Note sulla versione per Microsoft Teams Rooms (Windows)](/MicrosoftTeams/rooms/rooms-release-note) | Volta |
-| 8/3/2022 | [Aggiungere, modificare, rimuovere posizioni per gli interventi di emergenza](/MicrosoftTeams/add-change-remove-emergency-location-organization) | Volta |
-| 8/3/2022 | [Aggiungere, modificare e rimuovere i luoghi per gli interventi di emergenza](/MicrosoftTeams/add-change-remove-emergency-place-organization) | Volta |
-| 8/3/2022 | [Supporto delle app Microsoft Teams/Line of Business (LOB) nei pannelli di Teams](/MicrosoftTeams/app-support-on-teams-panels) | Volta |
-| 8/3/2022 | [Servizi di conferenza telefonica in rete per audioconferenze](/MicrosoftTeams/audio-conferencing-on-network) | Volta |
-| 8/3/2022 | [Dashboard qualità delle chiamate](/MicrosoftTeams/business-voice/analytics-dashboard) | Volta |
-| 8/3/2022 | [Qual è la differenza tra Business Voice e VoIP aziendale?](/MicrosoftTeams/business-voice/business-enterprise-comparison) | Volta |
-| 8/3/2022 | [Creare utenti di Microsoft 365, aggiungere Teams Phone con licenze bundle piano per chiamate e assegnare numeri di telefono](/MicrosoftTeams/business-voice/create-users) | Volta |
-| 8/3/2022 | [Personalizzare Telefono di Microsoft Teams sistema con il piano per chiamate in Microsoft Teams](/MicrosoftTeams/business-voice/customize-business-voice) | Volta |
-| 8/3/2022 | [Controllare la connessione Internet per Sistema telefonico teams](/MicrosoftTeams/business-voice/get-ready-internet) | Volta |
-| 8/3/2022 | [Gestire i dispositivi](/MicrosoftTeams/business-voice/manage-devices) | Volta |
-| 8/3/2022 | [Monitorare la qualità delle chiamate](/MicrosoftTeams/business-voice/monitor-quality) | Volta |
-| 8/3/2022 | [Gestire i pacchetti di criteri](/MicrosoftTeams/business-voice/policy-packages) | Volta |
-| 8/3/2022 | [Trasferire i numeri di telefono nel sistema telefonico di Teams con il piano per chiamate](/MicrosoftTeams/business-voice/port-phone-numbers) | Volta |
-| 8/3/2022 | [Ottenere assistenza da parte di un rivenditore o un partner Microsoft](/MicrosoftTeams/business-voice/reseller-partner-support) | Volta |
-| 8/3/2022 | [Assegnare i numeri di telefono di Sistema telefonico di Teams agli utenti](/MicrosoftTeams/business-voice/set-up-assign-numbers) | Volta |
-| 8/3/2022 | [Configurare Telefono di Microsoft Teams sistema con le posizioni per gli interventi di emergenza del piano di chiamata](/MicrosoftTeams/business-voice/set-up-emergency-locations) | Volta |
-| 8/3/2022 | [Sistema telefonico Teams completato con configurazione del piano per chiamate](/MicrosoftTeams/business-voice/set-up-finish) | Volta |
-| 8/3/2022 | [Assegnare licenze per Telefono di Microsoft Teams con piano per chiamate bundle](/MicrosoftTeams/business-voice/set-up-licenses) | Volta |
-| 8/3/2022 | [Configurare Telefono di Microsoft Teams sistema con piano per chiamate per piccole e medie imprese](/MicrosoftTeams/business-voice/set-up-overview) | Volta |
-| 8/3/2022 | [Configurare Telefono di Microsoft Teams sistema con i numeri di telefono del piano per chiamate](/MicrosoftTeams/business-voice/set-up-phone-numbers) | Volta |
-| 8/3/2022 | [Configurare i criteri](/MicrosoftTeams/business-voice/set-up-policies) | Volta |
-| 8/3/2022 | [Configurare un account di risorse di sistema Telefono di Microsoft Teams](/MicrosoftTeams/business-voice/set-up-resource-account) | Volta |
-| 8/3/2022 | [Operazioni da provare dopo la configurazione di Business Voice](/MicrosoftTeams/business-voice/things-to-try) | Volta |
-| 8/3/2022 | [Amministrazione autorizzazioni necessarie per acquistare Microsoft 365 Business Voice](/MicrosoftTeams/business-voice/ui/admin-perms-needed) | Volta |
-| 8/3/2022 | [Linee guida di Teams Phone System per piccole e medie imprese](/MicrosoftTeams/business-voice/whats-business-voice) | Volta |
-| 8/3/2022 | [Creare un operatore automatico tramite cmdlet](/MicrosoftTeams/create-a-phone-system-auto-attendant-via-cmdlets) | Volta |
-| 8/3/2022 | [Dispositivi Teams per l'istruzione](/MicrosoftTeams/devices-for-education) | Volta |
-| 8/3/2022 | [Procedure consigliate di autenticazione per la gestione dei dispositivi condivisi di Microsoft Teams dei dispositivi Android.](/MicrosoftTeams/devices/authentication-best-practices-for-android-devices) | Volta |
-| 8/3/2022 | [Provisioning remoto e accesso per dispositivi Teams Android](/MicrosoftTeams/devices/remote-provision-remote-login) | Volta |
-| 8/3/2022 | [Accesso remoto e disconnessione per dispositivi Teams Android](/MicrosoftTeams/devices/remote-sign-in-and-sign-out) | Volta |
-| 8/3/2022 | [Telefoni e dispositivi per Microsoft Teams](/MicrosoftTeams/devices/usb-devices) | Volta |
-| 8/3/2022 | [Gestire le notifiche di chiamata per il routing diretto](/MicrosoftTeams/direct-routing-call-notifications) | Volta |
-| 8/3/2022 | [Routing diretto](/MicrosoftTeams/direct-routing-landing-page) | Volta |
-| 8/3/2022 | [Panoramica del routing diretto del sistema telefonico](/MicrosoftTeams/direct-routing-protocols-media) | Volta |
-| 8/3/2022 | [Instradamento diretto di Sistema telefonico](/MicrosoftTeams/direct-routing-protocols-sip) | Volta |
-| 8/3/2022 | [Routing diretto del sistema telefonico di Teams: definizioni e standard RFC](/MicrosoftTeams/direct-routing-protocols) | Volta |
-| 8/3/2022 | [Direct Routing SBA](/MicrosoftTeams/direct-routing-survivable-branch-appliance) | Volta |
-| 8/3/2022 | [Novità del routing diretto](/MicrosoftTeams/direct-routing-whats-new) | Volta |
-| 8/3/2022 | [Favorire l'adozione da Kaizala a Microsoft Teams per i dipendenti in prima linea](/MicrosoftTeams/drive-adoption-optimize-kaizala) | Volta |
-| 8/3/2022 | [Indirizzi di emergenza per posizioni remote](/MicrosoftTeams/emergency-calling-dispatchable-location) | Volta |
-| 8/3/2022 | [Usare i modelli di team per il settore sanitario](/MicrosoftTeams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console) | Volta |
-| 8/3/2022 | [Kaizala e Microsoft Teams](/MicrosoftTeams/get-started-kaizala-teams) | Volta |
-| 8/3/2022 | [Effettuare la migrazione da Slack a Microsoft Teams](/MicrosoftTeams/migrate-slack-to-teams) | Volta |
-| 8/3/2022 | [Spostarsi in Microsoft Teams](/MicrosoftTeams/navigate-teams) | Volta |
-| 8/3/2022 | [Cos'è un ordine di portabilità?](/MicrosoftTeams/phone-number-calling-plans/port-order-overview) | Volta |
-| 8/3/2022 | [Qual è lo stato degli ordini di portabilità?](/MicrosoftTeams/phone-number-calling-plans/port-order-status) | Volta |
-| 8/3/2022 | [Centri tariffe supportati e copertura per i piani per chiamate](/MicrosoftTeams/phone-number-calling-plans/supported-rate-centers-coverage-matrix) | Volta |
-| 8/3/2022 | [Pianificare il passaggio da Kaizala a Microsoft Teams](/MicrosoftTeams/plan-your-move-kaizala) | Volta |
-| 8/3/2022 | [Criteri e pacchetti di criteri di Microsoft Teams per l'istruzione per amministratori](/MicrosoftTeams/policy-packages-edu) | Volta |
-| 8/3/2022 | [Creare grafici del percorso da Kaizala a Teams](/MicrosoftTeams/prepare-for-teams-kaizala) | Volta |
-| 8/3/2022 | [Canali privati in Microsoft Teams](/MicrosoftTeams/private-channels) | Volta |
-| 8/3/2022 | [Mascherare i numeri di telefono nelle riunioni di Microsoft Teams](/MicrosoftTeams/ptsn-mask-phone-numbers) | Volta |
-| 8/3/2022 | [Alzare la mano nelle riunioni di Teams](/MicrosoftTeams/raise-hand-meetings) | Volta |
-| 8/3/2022 | [Registrare un dispositivo Teams Room nei servizi gestiti](/MicrosoftTeams/rooms/enroll-a-device) | Volta |
-| 8/3/2022 | [Microsoft Teams Rooms](/MicrosoftTeams/rooms/index) | Volta |
-| 8/3/2022 | [Autenticazione in Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-authentication) | Volta |
-| 8/3/2022 | [Piano per Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-plan) | Volta |
-| 8/3/2022 | [Confronto delle funzionalità dei dispositivi Teams per Spazi condivisi tra Windows e Android](/MicrosoftTeams/rooms/teams-devices-feature-comparison) | Volta |
-| 8/3/2022 | [Canali condivisi in Microsoft Teams](/MicrosoftTeams/shared-channels) | Volta |
-| 8/3/2022 | [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings) | Volta |
-| 8/3/2022 | [Usare le chat supervisionate](/MicrosoftTeams/supervise-chats-edu) | Volta |
-| 8/3/2022 | [Usare le chat supervisionate per i tenant non didattici](/MicrosoftTeams/supervised-chat-non-edu) | Volta |
-| 8/3/2022 | [Report utenti PSTN bloccati di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/pstn-blocked-users-report) | Volta |
-| 8/3/2022 | [Report pool di minuti PSTN di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/pstn-minute-pools-report) | Volta |
-| 8/3/2022 | [Report utilizzo PSTN di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/pstn-usage-report) | Volta |
-| 8/3/2022 | [Visualizzare i dati analitici in Teams](/MicrosoftTeams/teams-analytics-and-reports/view-analytics) | Volta |
-| 8/3/2022 | [Indicazioni per le sale riunioni per Teams](/MicrosoftTeams/teams-meeting-room-guidance) | Volta |
-| 8/3/2022 | [Riunioni di Microsoft Teams su browser non supportati](/MicrosoftTeams/unsupported-browsers) | Volta |
-| 8/3/2022 | [Usare Advisor per Teams per distribuire Microsoft Teams](/MicrosoftTeams/use-advisor-teams-roll-out) | Volta |
-| 8/3/2022 | [Configurare le impostazioni delle chiamate per gli utenti](/MicrosoftTeams/user-call-settings) | Volta |
-| 8/3/2022 | [Panoramica dei componenti loop in Teams](/MicrosoftTeams/loop-components-in-teams) | Volta |
-| 8/4/2022 | [Assegnare pacchetti di criteri a utenti e gruppi](/MicrosoftTeams/assign-policy-packages) | Volta |
-| 8/4/2022 | [Gestire pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | Volta |
-| 8/4/2022 | [Guida per gli amministratori a Reflect in Microsoft Teams](/MicrosoftTeams/reflect) | Volta |
-| 8/4/2022 | [Usare Power BI per analizzare i dati di Call Quality Dashboard per Microsoft Teams](/MicrosoftTeams/cqd-power-bi-query-templates) | Volta |
-| 8/4/2022 | [Gestire Microsoft 365 e i connettori personalizzati](/MicrosoftTeams/office-365-custom-connectors) | Volta |
-| 8/4/2022 | [Estensione app per dispositivi mobili](/MicrosoftTeams/rooms/extended-mobile-app) | Volta |
-| 8/5/2022 | [Gestire i tag in Microsoft Teams](/MicrosoftTeams/manage-tags) | Volta |
-| 8/5/2022 | [Pianificare gateway SIP](/MicrosoftTeams/sip-gateway-plan) | Volta |
