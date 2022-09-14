@@ -23,34 +23,20 @@ ms.custom:
 - Calling Plans
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quando si ottengono numeri di telefono o numeri di portabilità (trasferimento) per l'organizzazione, potrebbe essere necessario richiedere assistenza e supporto al service desk TNS.
-ms.openlocfilehash: 8fd5bb73ebdf5aba4cbadeb885404e1a6a6b4fca
-ms.sourcegitcommit: 9175c6d542dd825ce965d0cb7c67264f22315202
+ms.openlocfilehash: b490552b9f6f06a70e017b13f120bbb777cb9131
+ms.sourcegitcommit: 46b5dc0519d487e264b1386e5074085c2d090e9a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687872"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67674407"
 ---
 # <a name="telephone-number-services-tns---service-desk"></a>Telephone Number Services (TNS) - Service Desk
 
-È previsto un nuovo processo di interazione con il service desk servizi di numeri di telefono (TNS). È ora possibile aprire i ticket, visualizzare i ticket e tenere traccia delle comunicazioni in un'unica posizione integrata con l'interfaccia di amministrazione di Teams. Questo articolo descrive tutto ciò che è necessario sapere per contattare il service desk.
-
 > [!NOTE]
-> A partire dal 22 luglio 2021, il sistema di posta elettronica corrente è stato ritirato.
+> A partire dal 22 luglio 2021, il sistema di posta elettronica precedente per contattare il service desk TNS è stato ritirato.
 
-Per contattare il supporto tecnico:
+Esiste un nuovo processo per interagire con il service desk TNS (Telephone Number Services) del nostro nuovo **[centro di assistenza per i numeri di telefono](https://pstnsd.powerappsportals.com)**. È ora possibile aprire i ticket, visualizzare i ticket e tenere traccia delle comunicazioni in un'unica posizione integrata con l'interfaccia di amministrazione di Teams. Ogni area è descritta in modo dettagliato nelle sezioni seguenti.
 
-1. Accedere [all'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com).
-
-2. Nel riquadro sinistro seleziona **Voce** e quindi **Numeri di telefono**.
-
-3. Nell'angolo in alto a destra della pagina fai clic su **Azioni**, quindi seleziona **Richiedi supporto per il numero di telefono**. L'utente verrà trasferito al [Centro servizi per numeri di telefono](https://pstnsd.powerappsportals.com/)
-
-> [!NOTE]
-> Solo un utente dello stesso tenant può creare un caso. Ad esempio, un utente di @fabrikam.com non può creare un caso per conto di @contoso.com.
-
-Dal Centro assistenza numeri di telefono è possibile creare nuovi casi, visualizzare casi esistenti, comunicare con il service desk e gestire il profilo utente. Ogni area è descritta in modo dettagliato nelle sezioni seguenti.
-
-- **Centro servizi numeri di telefono** : passa alla home page del portale.
 
 - **[Creare un nuovo caso](#create-a-new-case)** : inviare una nuova richiesta o richiesta generale.
 
@@ -60,15 +46,16 @@ Dal Centro assistenza numeri di telefono è possibile creare nuovi casi, visuali
 
 - **[Invia feedback](#view-and-manage-existing-cases)**: condividi il tuo feedback con noi.
 
-- **[Nome utente]** - Aggiorna la pagina del profilo.
-
 ## <a name="create-a-new-case"></a>Creare un nuovo caso
+
+> [!NOTE]
+> Solo un utente dello stesso tenant può creare un caso. Ad esempio, un utente di @fabrikam.com non può creare un caso per conto di @contoso.com.
 
 Per creare un nuovo caso, seguire questa procedura:
 
 1. Selezionare **Creare un nuovo caso** da una delle posizioni seguenti:
 
-   - Nella pagina **Centro assistenza numeri di telefono**, nella parte superiore della pagina o nel riquadro inferiore.
+   - Dalla home page di **Phone Number Service Center** , nella parte superiore della pagina o nel riquadro inferiore.
 
    - Nella pagina **Visualizza i casi esistenti**.
 
@@ -168,7 +155,7 @@ Il tipo di caso può essere uno dei seguenti:
 
   - **Elenco dei numeri di telefono** - Elenco dei numeri di telefono per cui si vuole modificare l'indirizzo di emergenza (immettere l'indirizzo desiderato nel campo Descrizione). Caricare un file CSV con l'elenco dei numeri di telefono.
 
-***Data e ora.** Se si seleziona Paese = Francia, data = 14/8/2021 e ora = 10:00, la richiesta verrà eseguita il 14/8/2021 alle 10:00. Ora francese.
+**Data e ora.** Se si seleziona Paese = Francia, data = 14/8/2021 e ora = 10:00, la richiesta verrà eseguita il 14/8/2021 alle 10:00. Ora francese.
 
 #### <a name="case-title"></a>Titolo del caso
 
