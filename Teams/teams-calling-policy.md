@@ -1,14 +1,14 @@
 ---
 title: 'Criteri per le chiamate in Microsoft Teams: funzionalità di chiamata e inoltro di chiamata'
-author: SerdarSoysal
-ms.author: tonysmit
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: jastark
 audience: admin
 search.appverid: MET150
-description: Informazioni su come creare, modificare e aggiungere utenti a criteri di chiamata personalizzati in Microsoft Teams, oltre a varie impostazioni dei criteri di chiamata.
+description: Informazioni su come creare, modificare e aggiungere utenti a criteri di chiamata personalizzati in Microsoft Teams, nonché a varie impostazioni dei criteri di chiamata.
 ms.localizationpriority: medium
 ms.collection:
 - M365-voice
@@ -20,16 +20,16 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6a52b30e1ced457377d7dd1c820192cb856827ba
-ms.sourcegitcommit: 3b86e55787c34da76428d6915964ac4f3c6239fc
+ms.openlocfilehash: 6c785a6860c1ea45200253e9d2530a80e9dd28f6
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65601645"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67708296"
 ---
 # <a name="calling-and-call-forwarding-in-teams"></a>Chiamate e inoltro di chiamata in Teams
 
-In Microsoft Teams, i criteri di chiamata controllano quali funzionalità di inoltro di chiamata e chiamata sono disponibili per gli utenti. I criteri per le chiamate determinano se un utente può effettuare chiamate private, usare l'inoltro di chiamata o lo squillo simultaneo ad altri utenti o numeri di telefono esterni, instradare le chiamate alla segreteria telefonica, inviare chiamate a gruppi di chiamate, usare la delega per le chiamate in ingresso e in uscita e così via.
+In Microsoft Teams, i criteri di chiamata controllano le funzionalità di chiamata e inoltro di chiamata disponibili per gli utenti. I criteri per le chiamate determinano se un utente può effettuare chiamate private, usare l'inoltro di chiamata o lo squillo simultaneo ad altri utenti o numeri di telefono esterni, instradare le chiamate alla segreteria telefonica, inviare chiamate a gruppi di chiamate, usare la delega per le chiamate in ingresso e in uscita e così via.
 
 È possibile usare il criterio globale (predefinito a livello di organizzazione) creato automaticamente o creare e assegnare criteri personalizzati.
 
@@ -37,7 +37,7 @@ In Microsoft Teams, i criteri di chiamata controllano quali funzionalità di ino
 
 Seguire questa procedura per creare criteri di chiamata personalizzati.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Criteri voiceCalling** > .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, vai a **Criteri per le chiamate** **vocali** > .
 2. Selezionare **Aggiungi**.
 3. Attiva o disattiva le funzionalità che vuoi usare nei criteri per le chiamate.
 4. Per controllare se gli utenti possono instradare le chiamate in ingresso alla segreteria telefonica, selezionare **Abilitato** o **Controllato dall'utente**. Per impedire il routing alla segreteria telefonica, selezionare **Disabilitato**.
@@ -47,7 +47,7 @@ Seguire questa procedura per creare criteri di chiamata personalizzati.
 
 Seguire questa procedura per modificare un criterio di chiamata esistente.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams selezionare **Criteri di chiamata vocale** > .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams selezionare **Criteri per le chiamate** **vocali** > .
 2. Fare clic accanto al criterio da modificare e quindi selezionare **Modifica**.
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva**.
 
@@ -97,7 +97,7 @@ Occupato su occupato (Opzioni occupato) consente di configurare come vengono ges
 
 ### <a name="web-pstn-calling"></a>Chiamate PSTN Web
 
-Questa impostazione consente agli utenti di chiamare numeri PSTN usando il client Web Teams.
+Questa impostazione consente agli utenti di chiamare numeri PSTN usando il client Web di Teams.
 
 ### <a name="automatically-answer-incoming-meeting-invites"></a>Rispondere automaticamente agli inviti alle riunioni in arrivo
 
