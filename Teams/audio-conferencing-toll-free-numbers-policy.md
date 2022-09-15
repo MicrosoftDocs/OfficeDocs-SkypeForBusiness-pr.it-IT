@@ -21,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - ms.teamsadmincenter.audioconferencing.overview
 description: Informazioni su come i servizi di audioconferenza in Microsoft 365 o Office 365 consentono agli utenti di accedere alle riunioni tramite telefono.
-ms.openlocfilehash: 7073fa9c870fc718b2d2c6e24e109878e0dd2d34
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 8fcc731f208dc3fecd42dd2c351714f67ad6a684
+ms.sourcegitcommit: 44d9f15f7f7c00b3651a11ff1e8b37dda1716a52
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269931"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67732405"
 ---
 # <a name="audio-conferencing-policy-settings-for-toll-and-toll-free-numbers"></a>Impostazioni dei criteri per i servizi di audioconferenza per i numeri verdi e a pagamento
 
@@ -36,6 +36,9 @@ Usare i criteri per i servizi di audioconferenza per gestire i numeri verdi e a 
 
 - L'impostazione per AllowTollFreeDialin non può più essere gestita per un singolo utente tramite l'interfaccia di amministrazione di Teams o PowerShell. Gli amministratori tenant potranno gestire questa impostazione solo tramite i nuovi criteri per i servizi di audioconferenza.
 - I criteri globali non possono essere modificati dall'interfaccia di amministrazione di Teams.
+
+> [!NOTE]
+> I criteri personalizzati per le audioconferenze non sono supportati per i clienti abilitati per Skype for Business riunioni con hosting regionale. I clienti abilitati per le riunioni con hosting regionale possono gestire le impostazioni di Audioconferenza degli utenti tramite le impostazioni predefinite. Le impostazioni predefinite per i servizi di audioconferenza degli utenti possono essere modificate nel Centro Amministrazione Teams passando a **Gestisci utenti** -> **utenti** ->  Seleziona **account** **utente** -> .
 
 Quando un criterio di audioconferenza di Teams è abilitato nel tenant, nel tenant saranno disponibili due criteri creati automaticamente. I due criteri creati automaticamente e le relative impostazioni predefinite sono:
 
